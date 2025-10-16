@@ -183,6 +183,7 @@ function DropCard({
   isFavorite: boolean
   onToggleFavorite: (mobId: number, mobName: string) => void
 }) {
+  const isDev = process.env.NODE_ENV === 'development'
   const [imageError, setImageError] = useState(false)
   const [itemImageError, setItemImageError] = useState(false)
   const chancePercent = (drop.chance * 100).toFixed(4)
@@ -246,9 +247,11 @@ function DropCard({
           <h3 className="text-lg font-bold text-gray-900 dark:text-white">
             {drop.mobName}
           </h3>
-          <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-            怪物 ID: {drop.mobId}
-          </p>
+          {isDev && (
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+              怪物 ID: {drop.mobId}
+            </p>
+          )}
         </div>
       </div>
 
@@ -302,9 +305,11 @@ function DropCard({
         </div>
 
         {/* 物品 ID */}
-        <div className="mt-3 text-xs text-gray-400 dark:text-gray-500">
-          物品 ID: {drop.itemId}
-        </div>
+        {isDev && (
+          <div className="mt-3 text-xs text-gray-400 dark:text-gray-500">
+            物品 ID: {drop.itemId}
+          </div>
+        )}
       </div>
     </div>
   )
@@ -326,6 +331,7 @@ function MonsterCard({
   isFavorite: boolean
   onToggleFavorite: (mobId: number, mobName: string) => void
 }) {
+  const isDev = process.env.NODE_ENV === 'development'
   const [imageError, setImageError] = useState(false)
 
   // 使用本地圖片，錯誤時使用預設圖示
@@ -379,9 +385,11 @@ function MonsterCard({
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
             {mobName}
           </h3>
-          <p className="text-xs text-gray-500 dark:text-gray-400">
-            怪物 ID: {mobId}
-          </p>
+          {isDev && (
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              怪物 ID: {mobId}
+            </p>
+          )}
         </div>
       </div>
 
@@ -426,6 +434,7 @@ function ItemCard({
   isFavorite: boolean
   onToggleFavorite: (itemId: number, itemName: string) => void
 }) {
+  const isDev = process.env.NODE_ENV === 'development'
   const [imageError, setImageError] = useState(false)
 
   // 使用本地圖片，錯誤時使用預設圖示
@@ -488,9 +497,11 @@ function ItemCard({
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
             {itemName}
           </h3>
-          <p className="text-xs text-gray-500 dark:text-gray-400">
-            物品 ID: {itemId}
-          </p>
+          {isDev && (
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              物品 ID: {itemId}
+            </p>
+          )}
         </div>
       </div>
 
@@ -535,6 +546,7 @@ function MonsterDropCard({
   onToggleFavorite: (mobId: number, mobName: string) => void
   onMonsterClick: (mobId: number, mobName: string) => void
 }) {
+  const isDev = process.env.NODE_ENV === 'development'
   const [monsterImageError, setMonsterImageError] = useState(false)
   const chancePercent = (drop.chance * 100).toFixed(4)
   const qtyRange =
@@ -591,9 +603,11 @@ function MonsterDropCard({
           <p className="font-semibold text-gray-900 dark:text-white">
             {drop.mobName}
           </p>
-          <p className="text-xs text-gray-500 dark:text-gray-400">
-            ID: {drop.mobId}
-          </p>
+          {isDev && (
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              ID: {drop.mobId}
+            </p>
+          )}
         </div>
       </div>
       <div className="flex gap-3 mt-2">
@@ -634,6 +648,7 @@ function DropItemCard({
   onToggleFavorite: (itemId: number, itemName: string) => void
   onItemClick: (itemId: number, itemName: string) => void
 }) {
+  const isDev = process.env.NODE_ENV === 'development'
   const [itemImageError, setItemImageError] = useState(false)
   const chancePercent = (drop.chance * 100).toFixed(4)
   const qtyRange =
@@ -697,9 +712,11 @@ function DropItemCard({
           <p className="font-semibold text-gray-900 dark:text-white">
             {drop.itemName}
           </p>
-          <p className="text-xs text-gray-500 dark:text-gray-400">
-            ID: {drop.itemId}
-          </p>
+          {isDev && (
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              ID: {drop.itemId}
+            </p>
+          )}
         </div>
       </div>
       <div className="flex gap-3 mt-2">
@@ -755,6 +772,7 @@ function MonsterDropsModal({
   onToggleItemFavorite,
   onItemClick,
 }: MonsterDropsModalProps) {
+  const isDev = process.env.NODE_ENV === 'development'
   const [monsterImageError, setMonsterImageError] = useState(false)
 
   // 過濾該怪物的所有掉落物品
@@ -810,7 +828,7 @@ function MonsterDropsModal({
                   {monsterName}
                 </h2>
                 <p className="text-blue-100 text-sm">
-                  怪物 ID: {monsterId} · 共 {monsterDrops.length} 種掉落物品
+                  {isDev && `怪物 ID: ${monsterId} · `}共 {monsterDrops.length} 種掉落物品
                 </p>
               </div>
             </div>
@@ -904,6 +922,7 @@ function ItemDropsModal({
   onToggleMonsterFavorite,
   onMonsterClick,
 }: ItemDropsModalProps) {
+  const isDev = process.env.NODE_ENV === 'development'
   const [itemImageError, setItemImageError] = useState(false)
 
   // 過濾該物品的所有掉落來源怪物
@@ -968,7 +987,7 @@ function ItemDropsModal({
                   {itemName}
                 </h2>
                 <p className="text-green-100 text-sm">
-                  物品 ID: {itemId} · 共 {itemDrops.length} 隻怪物掉落此物品
+                  {isDev && `物品 ID: ${itemId} · `}共 {itemDrops.length} 隻怪物掉落此物品
                 </p>
               </div>
             </div>
