@@ -39,3 +39,76 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# images and media files
+# /public/images/
+# /public/products/
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.bmp
+# *.tiff
+# *.webp
+# *.mp4
+# *.mov
+# *.avi
+# *.mkv
+# *.pdf
+
+# keep small icons and logos
+# !/public/icons/
+# !/public/logo.*
+# !/public/favicon.*
+
+# keep placeholder images
+!/public/**/placeholder.*
+!/public/**/sample.*
+
+# Claude Code 設定
+.claude/
+
+# Playwright MCP 相關
+.playwright-mcp/
+
+# 測試結果目錄
+test-results/
+
+# Playwright 測試結果和報告
+tests/e2e/reports/
+tests/e2e/results/
+tests/e2e/results.json
+tests/e2e/junit.xml
+
+# 臨時測試腳本
+test-*.js
+*-demo.js
+
+# 測試截圖和臨時圖片
+*-screenshot.png
+*-demo.png
+*-full.png
+
+# 測試固定資料
+tests/fixtures/
+
+# 臨時 SQL 腳本
+scripts/fix-*.sql
+
+# Supabase 臨時檔案
+supabase/.temp/
+.env*.local
+
+# 根目錄臨時腳本和除錯檔案
+/*.mjs
+/*.js
+# 保留重要的配置檔案
+!postcss.config.mjs
+!bundle-analyzer.mjs
+
+# MCP (Model Context Protocol) 配置
+.mcp.json
+
+# 臨時修復指南和設定文檔
+MCP_SETUP.md
+SCHEMA_REPAIR_GUIDE.md

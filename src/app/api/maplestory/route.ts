@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 import { promises as fs } from 'fs'
 import path from 'path'
+import { apiLogger } from '@/lib/logger'
 
 // 定義掉落資料類型
 export interface DropItem {
@@ -21,16 +22,16 @@ async function getDropData(): Promise<DropItem[]> {
     const data: DropItem[] = JSON.parse(fileContents)
     return data
   } catch (error) {
-    console.error('讀取掉落資料失敗:', error)
+    apiLogger.error('讀取掉落資料失敗', error)
     throw new Error('無法讀取掉落資料檔案')
   }
 }
 
 export async function GET() {
   try {
-    console.log('從本地 JSON 讀取掉落資料...')
+    apiLogger.info('從本地 JSON 讀取掉落資料...')
     const dropData = await getDropData()
-    console.log(`成功讀取 ${dropData.length} 筆掉落資料`)
+    apiLogger.info(`成功讀取 ${dropData.length} 筆掉落資料`)
 
     return NextResponse.json({
       success: true,
@@ -40,7 +41,7 @@ export async function GET() {
       message: '成功讀取楓之谷掉落資料',
     })
   } catch (error) {
-    console.error('API route 錯誤:', error)
+    apiLogger.error('API route 錯誤', error)
 
     return NextResponse.json(
       {
