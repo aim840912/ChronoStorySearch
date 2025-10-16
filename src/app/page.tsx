@@ -356,7 +356,7 @@ export default function Home() {
 
         // 為英文名稱建立索引（如果與中文名稱不同）
         // 使用 name 或 itemName（備援機制，處理 API 整合失敗的物品）
-        const englishName = (item as any).name || (item as any).itemName
+        const englishName = item.name || item.itemName
         if (englishName && typeof englishName === 'string') {
           const englishNameLower = englishName.toLowerCase()
           if (englishNameLower !== chineseNameLower) {

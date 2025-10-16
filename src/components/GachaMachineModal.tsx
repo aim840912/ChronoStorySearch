@@ -323,7 +323,7 @@ function ItemCard({ item }: { item: GachaItem }) {
             {item.category}
           </span>
         )}
-        {item.requiredStats?.level > 0 && (
+        {item.requiredStats?.level && item.requiredStats.level > 0 && (
           <span className="text-xs px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full">
             Lv.{item.requiredStats.level}
           </span>

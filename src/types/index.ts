@@ -74,22 +74,23 @@ export interface ItemVersion {
 
 // 轉蛋物品（整合 API 資料）
 export interface GachaItem {
-  // 轉蛋機特有欄位
+  // 轉蛋機特有欄位（必須）
   chineseName: string // 中文名稱
   probability: string // 機率百分比（顯示用，如: "0.07%"）
   chance: number // 機率數值（內部用，如: 12500）
-
-  // API 提供的欄位
   itemId: number // 物品 ID
-  name: string // 英文名稱
-  description?: string // 物品描述（可選）
-  category: string // 主分類（如: "Armor", "One-Handed Weapon"）
-  subcategory: string // 子分類（如: "Cape", "Earrings"）
-  overallCategory: string // 總分類（通常是 "Equip"）
-  availability: ItemAvailability // 可用性資訊
-  requiredStats: ItemRequiredStats // 需求屬性
-  stats: ItemStats // 物品屬性
-  version: ItemVersion // 版本資訊
+
+  // API 提供的欄位（可選 - 部分物品 API 整合失敗）
+  name?: string // 英文名稱
+  itemName?: string // 備用英文名稱（API 失敗時使用）
+  description?: string // 物品描述
+  category?: string // 主分類（如: "Armor", "One-Handed Weapon"）
+  subcategory?: string // 子分類（如: "Cape", "Earrings"）
+  overallCategory?: string // 總分類（通常是 "Equip"）
+  availability?: ItemAvailability // 可用性資訊
+  requiredStats?: ItemRequiredStats // 需求屬性
+  stats?: ItemStats // 物品屬性
+  version?: ItemVersion // 版本資訊
 }
 
 // 轉蛋機
