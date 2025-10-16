@@ -13,7 +13,7 @@ interface SearchBarProps {
   onKeyDown: (e: KeyboardEvent<HTMLInputElement>) => void
   focusedIndex: number
   onFocusedIndexChange: (index: number) => void
-  searchContainerRef: RefObject<HTMLDivElement>
+  searchContainerRef: RefObject<HTMLDivElement | null>
 }
 
 /**

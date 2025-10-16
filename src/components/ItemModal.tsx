@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { DropItem } from '@/types'
 import { MonsterDropCard } from './MonsterDropCard'
+import { clientLogger } from '@/lib/logger'
 
 interface ItemModalProps {
   isOpen: boolean
@@ -69,6 +70,7 @@ export function ItemModal({
       setShowToast(true)
       setTimeout(() => setShowToast(false), 3000)
     } catch (error) {
+      clientLogger.error('複製連結失敗', error)
       setToastMessage('複製失敗，請手動複製')
       setShowToast(true)
       setTimeout(() => setShowToast(false), 3000)
