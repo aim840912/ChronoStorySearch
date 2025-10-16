@@ -9,7 +9,7 @@ interface SearchBarProps {
   suggestions: SuggestionItem[]
   showSuggestions: boolean
   onFocus: () => void
-  onSelectSuggestion: (name: string) => void
+  onSelectSuggestion: (name: string, suggestion?: SuggestionItem) => void
   onKeyDown: (e: KeyboardEvent<HTMLInputElement>) => void
   focusedIndex: number
   onFocusedIndexChange: (index: number) => void
@@ -59,7 +59,7 @@ export function SearchBar({
           onChange={(e) => onSearchChange(e.target.value)}
           onFocus={onFocus}
           onKeyDown={onKeyDown}
-          placeholder="搜尋怪物名稱或物品名稱..."
+          placeholder="搜尋怪物、物品或轉蛋機內容物..."
           className="w-full pl-12 pr-12 py-4 text-gray-900 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400 dark:placeholder-gray-500 transition-all"
         />
 
@@ -86,7 +86,7 @@ export function SearchBar({
             {suggestions.map((suggestion, index) => (
               <div
                 key={`${suggestion.type}-${suggestion.name}`}
-                onClick={() => onSelectSuggestion(suggestion.name)}
+                onClick={() => onSelectSuggestion(suggestion.name, suggestion)}
                 onMouseEnter={() => onFocusedIndexChange(index)}
                 className={`flex items-center justify-between px-4 py-3 cursor-pointer transition-colors ${
                   focusedIndex === index
@@ -101,9 +101,13 @@ export function SearchBar({
                     <svg className="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd"/>
                     </svg>
-                  ) : (
+                  ) : suggestion.type === 'item' ? (
                     <svg className="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                    </svg>
+                  ) : (
+                    <svg className="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
                     </svg>
                   )}
                   <div>
@@ -111,7 +115,12 @@ export function SearchBar({
                       {suggestion.name}
                     </p>
                     <p className="text-xs text-gray-500 dark:text-gray-400">
-                      {suggestion.type === 'monster' ? '怪物' : '物品'} · {suggestion.count} 筆資料
+                      {suggestion.type === 'monster'
+                        ? `怪物 · ${suggestion.count} 筆資料`
+                        : suggestion.type === 'item'
+                        ? `物品 · ${suggestion.count} 筆資料`
+                        : `轉蛋 · ${suggestion.machineName || '未知轉蛋機'}`
+                      }
                     </p>
                   </div>
                 </div>

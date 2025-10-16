@@ -1,0 +1,2117 @@
+{
+  "machineId": 6,
+  "machineName": "鯨魚號轉蛋機",
+  "description": "鯨魚號轉蛋機，可獲得各種裝備道具",
+  "totalItems": 56,
+  "items": [
+    {
+      "chineseName": "黑色的航海帽",
+      "probability": "0.70%",
+      "chance": 50000,
+      "itemId": 1002646,
+      "name": "Black Polax Hat",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Hat",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 15000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 100,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 2,
+        "defense": 63,
+        "avoidability": 1,
+        "str": 4
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "紅色公爵套裝",
+      "probability": "0.70%",
+      "chance": 50000,
+      "itemId": 1052131,
+      "name": "Red Belly Duke",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Overall",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 27000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 100,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 3,
+        "defense": 105,
+        "avoidability": 2,
+        "str": 7
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "黑色公爵靴",
+      "probability": "0.70%",
+      "chance": 50000,
+      "itemId": 1072318,
+      "name": "Black Duke Barkin Shoes",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Shoes",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 20000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 100,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "defense": 58,
+        "str": 6
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "黑色斯卡洛伯爵手套",
+      "probability": "0.70%",
+      "chance": 50000,
+      "itemId": 1082213,
+      "name": "Black Skellduke",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Glove",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 29000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 100,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 4,
+        "defense": 40,
+        "str": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "itemId": 1202007,
+      "itemName": "Eternal Bullet",
+      "chineseName": "穿甲彈",
+      "probability": "0.70%",
+      "chance": 50000,
+      "inGame": true,
+      "applicableJobs": "海盜",
+      "requiredLevel": 110,
+      "requiredStats": "",
+      "equipStats": [
+        {
+          "stat": "攻擊力",
+          "value": "+20"
+        }
+      ],
+      "scrollSlots": 0
+    },
+    {
+      "chineseName": "王者毀滅拳套",
+      "probability": "0.70%",
+      "chance": 50000,
+      "itemId": 1482012,
+      "name": "King Cent",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Knuckle",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 47000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 100,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 74
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "死亡協奏曲",
+      "probability": "0.70%",
+      "chance": 50000,
+      "itemId": 1492012,
+      "name": "Concerto",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Gun",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 48000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 100,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 74
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "紅色勇者頭巾",
+      "probability": "0.85%",
+      "chance": 61111,
+      "itemId": 1002643,
+      "name": "Red Brave Hamal",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Hat",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 14000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 90,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 2,
+        "defense": 57,
+        "avoidability": 1,
+        "str": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "白色馬其尼套裝",
+      "probability": "0.85%",
+      "chance": 61111,
+      "itemId": 1052128,
+      "name": "White Marquini",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Overall",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 23000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 90,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 3,
+        "defense": 95,
+        "avoidability": 2,
+        "str": 6
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "黑色馬金斯靴",
+      "probability": "0.85%",
+      "chance": 61111,
+      "itemId": 1072315,
+      "name": "Black Markintz",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Shoes",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 16000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 90,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "defense": 52,
+        "avoidability": 1,
+        "str": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "紅色馬蒂爾手套",
+      "probability": "0.85%",
+      "chance": 61111,
+      "itemId": 1082210,
+      "name": "Red Martier",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Glove",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 26000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 90,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 4,
+        "defense": 36,
+        "str": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "吸血鬼之爪",
+      "probability": "0.85%",
+      "chance": 61111,
+      "itemId": 1482011,
+      "name": "White Fangz",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Knuckle",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 42000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 90,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 70
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "調停者",
+      "probability": "0.85%",
+      "chance": 61111,
+      "itemId": 1492011,
+      "name": "The Peacemaker",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Gun",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 43000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 90,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 70
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "藍色船型帽",
+      "probability": "1.04%",
+      "chance": 75000,
+      "itemId": 1002640,
+      "name": "Blue Sun Boat Hat",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Hat",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 12000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 80,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 2,
+        "defense": 51,
+        "str": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "白色潘尼爾套裝",
+      "probability": "1.04%",
+      "chance": 75000,
+      "itemId": 1052125,
+      "name": "White Pioneer",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Overall",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 21000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 80,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 2,
+        "hp": 15,
+        "defense": 85,
+        "str": 6
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "藍色伯爵靴",
+      "probability": "1.04%",
+      "chance": 75000,
+      "itemId": 1072312,
+      "name": "Blue Pageant",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Shoes",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 13000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 80,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 2,
+        "defense": 46,
+        "str": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "藍色伯爵手套",
+      "probability": "1.04%",
+      "chance": 75000,
+      "itemId": 1082207,
+      "name": "Blue Halfgloves",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Glove",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 23000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 80,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 1,
+        "hp": 10,
+        "defense": 32,
+        "str": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "紗羅毀滅拳套",
+      "probability": "1.04%",
+      "chance": 75000,
+      "itemId": 1482010,
+      "name": "Steel Renault",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Knuckle",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 38000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 80,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 66
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "因弗蒂之槍",
+      "probability": "1.04%",
+      "chance": 75000,
+      "itemId": 1492010,
+      "name": "Infinity's Wrath",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Gun",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 38000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 80,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 66
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "黑色海盜頭巾",
+      "probability": "1.29%",
+      "chance": 92857,
+      "itemId": 1002637,
+      "name": "Black Pirate's Bandana",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Hat",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 10000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 70,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 1,
+        "defense": 45,
+        "avoidability": 1,
+        "str": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "紅色威斯克套裝",
+      "probability": "1.29%",
+      "chance": 92857,
+      "itemId": 1052122,
+      "name": "Red Viska",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Overall",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 14000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 70,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 2,
+        "hp": 10,
+        "defense": 75,
+        "str": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "黑色航海靴",
+      "probability": "1.29%",
+      "chance": 92857,
+      "itemId": 1072309,
+      "name": "Black Voyson Shoes",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Shoes",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 11000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 70,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 1,
+        "defense": 40,
+        "avoidability": 1,
+        "str": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "黑色威斯克手套",
+      "probability": "1.29%",
+      "chance": 92857,
+      "itemId": 1082204,
+      "name": "Black Bisk ",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Glove",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 17000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 70,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 1,
+        "defense": 28,
+        "str": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "itemId": 1202006,
+      "itemName": "Shiny Bullet",
+      "chineseName": "高爆彈",
+      "probability": "1.29%",
+      "chance": 92857,
+      "inGame": true,
+      "applicableJobs": "海盜",
+      "requiredLevel": 90,
+      "requiredStats": "",
+      "equipStats": [
+        {
+          "stat": "攻擊力",
+          "value": "+18"
+        }
+      ],
+      "scrollSlots": 0
+    },
+    {
+      "chineseName": "拜爾毀滅拳套",
+      "probability": "1.29%",
+      "chance": 92857,
+      "itemId": 1482009,
+      "name": "Beia Crash",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Knuckle",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 33000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 70,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 62
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "深淵射手",
+      "probability": "1.29%",
+      "chance": 92857,
+      "itemId": 1492009,
+      "name": "Abyss Shooter",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Gun",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 34000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 70,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 62
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "紫色亞麻水手頭巾",
+      "probability": "1.62%",
+      "chance": 116667,
+      "itemId": 1002634,
+      "name": "Purple Cast Linen",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Hat",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 7300,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 60,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 1,
+        "defense": 39,
+        "str": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "紫色皇家套裝",
+      "probability": "1.62%",
+      "chance": 116667,
+      "itemId": 1052119,
+      "name": "Black Royal Barone",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Overall",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 12000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 60,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 1,
+        "hp": 10,
+        "defense": 65,
+        "str": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "黑色巴西里靴",
+      "probability": "1.62%",
+      "chance": 116667,
+      "itemId": 1072306,
+      "name": "Black Basile Boots",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Shoes",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 8500,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 60,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 3,
+        "defense": 34,
+        "str": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "黑色舒爾特手套",
+      "probability": "1.62%",
+      "chance": 116667,
+      "itemId": 1082201,
+      "name": "Black Schult",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Glove",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 13000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 60,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 1,
+        "defense": 24,
+        "str": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "itemId": 1202004,
+      "itemName": "Blaze Capsule",
+      "chineseName": "火焰膠囊",
+      "probability": "1.62%",
+      "chance": 116667,
+      "inGame": true,
+      "applicableJobs": "海盜",
+      "requiredLevel": 70,
+      "requiredStats": "",
+      "equipStats": [
+        {
+          "stat": "攻擊力",
+          "value": "+16"
+        }
+      ],
+      "scrollSlots": 0
+    },
+    {
+      "itemId": 1202005,
+      "itemName": "Glaze Capsule",
+      "chineseName": "寒冰膠囊",
+      "probability": "1.62%",
+      "chance": 116667,
+      "inGame": true,
+      "applicableJobs": "海盜",
+      "requiredLevel": 70,
+      "requiredStats": "",
+      "equipStats": [
+        {
+          "stat": "攻擊力",
+          "value": "+16"
+        }
+      ],
+      "scrollSlots": 0
+    },
+    {
+      "chineseName": "塞爾拉利刃拳套",
+      "probability": "1.62%",
+      "chance": 116667,
+      "itemId": 1482008,
+      "name": "Seraphims",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Knuckle",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 27000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 60,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 58
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "灼熱地獄",
+      "probability": "1.62%",
+      "chance": 116667,
+      "itemId": 1492008,
+      "name": "Burning Hell",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Gun",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 28000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 60,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 58
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褐色皮製遠洋帽",
+      "probability": "2.09%",
+      "chance": 150000,
+      "itemId": 1002631,
+      "name": "Brown Leather Ocean Hat",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Hat",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 5500,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 50,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 1,
+        "magicDefense": 0,
+        "defense": 33,
+        "str": 2,
+        "int": 0,
+        "luk": 0
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "綠色強化服",
+      "probability": "2.09%",
+      "chance": 150000,
+      "itemId": 1052116,
+      "name": "Green Plasteer",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Overall",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 11000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 50,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "defense": 55,
+        "avoidability": 1,
+        "str": 4
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褐色強化皮靴",
+      "probability": "2.09%",
+      "chance": 150000,
+      "itemId": 1072303,
+      "name": "Brown Double Boots",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Shoes",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 6700,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 50,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 1,
+        "defense": 28,
+        "str": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褐色羅伊斯手套",
+      "probability": "2.09%",
+      "chance": 150000,
+      "itemId": 1082198,
+      "name": "Brown Royce",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Glove",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 10000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 50,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "defense": 20,
+        "str": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "itemId": 1202003,
+      "itemName": "Vital Bullet",
+      "chineseName": "高等子彈",
+      "probability": "2.09%",
+      "chance": 150000,
+      "inGame": true,
+      "applicableJobs": "海盜",
+      "requiredLevel": 70,
+      "requiredStats": "",
+      "equipStats": [
+        {
+          "stat": "攻擊力",
+          "value": "+16"
+        }
+      ],
+      "scrollSlots": 0
+    },
+    {
+      "chineseName": "惡魔之爪",
+      "probability": "2.09%",
+      "chance": 150000,
+      "itemId": 1482007,
+      "name": "Fury Claw",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Knuckle",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 15000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 50,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 50
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "拉斯菲特之槍",
+      "probability": "2.09%",
+      "chance": 150000,
+      "itemId": 1492007,
+      "name": "Mr. Rasfelt",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Gun",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 16000,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 50,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 49
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "紅色皇家頭巾",
+      "probability": "2.79%",
+      "chance": 200000,
+      "itemId": 1002628,
+      "name": "Red Misty",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Hat",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 4300,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 40,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "hp": 20,
+        "defense": 27
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "紅色麻布衣",
+      "probability": "2.79%",
+      "chance": 200000,
+      "itemId": 1052113,
+      "name": "Red Barbay",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Overall",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 6700,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 40,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "hp": 10,
+        "defense": 45,
+        "str": 4
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褐色尖頭皮鞋",
+      "probability": "2.79%",
+      "chance": 200000,
+      "itemId": 1072300,
+      "name": "Brown Leather Krag",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Shoes",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 4900,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 40,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 1,
+        "defense": 22,
+        "avoidability": 1,
+        "str": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褐色瑞恩手腕",
+      "probability": "2.79%",
+      "chance": 200000,
+      "itemId": 1082195,
+      "name": "Brown Barbee",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Glove",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": true,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 5500,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 40,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 1,
+        "defense": 14
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "itemId": 1202002,
+      "itemName": "Mighty Bullet",
+      "chineseName": "強力子彈",
+      "probability": "2.79%",
+      "chance": 200000,
+      "inGame": true,
+      "applicableJobs": "海盜",
+      "requiredLevel": 50,
+      "requiredStats": "",
+      "equipStats": [
+        {
+          "stat": "攻擊力",
+          "value": "+14"
+        }
+      ],
+      "scrollSlots": 0
+    },
+    {
+      "chineseName": "尼奧札德毀滅拳套",
+      "probability": "2.79%",
+      "chance": 200000,
+      "itemId": 1482006,
+      "name": "Neozard",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Knuckle",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 7900,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 40,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 42
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "銀月神射",
+      "probability": "2.79%",
+      "chance": 200000,
+      "itemId": 1492006,
+      "name": "Lunar Shooter",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Gun",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 8500,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 40,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 40
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "海藍水手頭巾",
+      "probability": "3.28%",
+      "chance": 235714,
+      "itemId": 1002625,
+      "name": "Blue Den Marine",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Hat",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 3600,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 35,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "defense": 24,
+        "str": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "藍色緊身服",
+      "probability": "3.28%",
+      "chance": 235714,
+      "itemId": 1052110,
+      "name": "Blue Brace Look",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Overall",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 5200,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 35,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "hp": 10,
+        "defense": 40,
+        "str": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褐色洛卡特鞋",
+      "probability": "3.28%",
+      "chance": 235714,
+      "itemId": 1072297,
+      "name": "Brown Locote Shoes",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Shoes",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 2800,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 35,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "dex": 1,
+        "defense": 19,
+        "str": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褐色寶石手套",
+      "probability": "3.28%",
+      "chance": 235714,
+      "itemId": 1082192,
+      "name": "Brown Jeweled",
+      "description": "",
+      "category": "Armor",
+      "subcategory": "Glove",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 7500,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 35,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "defense": 12
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "利刃拳套",
+      "probability": "3.28%",
+      "chance": 235714,
+      "itemId": 1482005,
+      "name": "Silver Maiden",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Knuckle",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 5500,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 35,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 38
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "流星",
+      "probability": "3.28%",
+      "chance": 235714,
+      "itemId": 1492005,
+      "name": "Shooting Star",
+      "description": "",
+      "category": "Two-Handed Weapon",
+      "subcategory": "Gun",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 5500,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 35,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "attack": 36
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "紫雪鞋",
+      "probability": "3.95%",
+      "chance": 283333,
+      "itemId": 1072338,
+      "name": "Purple Snowshoes",
+      "description": "Put this on, and you won't be slipping around regardless of snow or ice.",
+      "category": "Armor",
+      "subcategory": "Shoes",
+      "overallCategory": "Equip",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 2200,
+        "durability": false
+      },
+      "requiredStats": {
+        "level": 30,
+        "gender": "any",
+        "jobTrees": [
+          "pirate"
+        ],
+        "str": 0,
+        "dex": 0,
+        "int": 0,
+        "luk": 0
+      },
+      "stats": {
+        "magicDefense": 5,
+        "defense": 18
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "itemId": 1202001,
+      "itemName": "Split Bullet",
+      "chineseName": "分裂子彈",
+      "probability": "3.95%",
+      "chance": 283333,
+      "inGame": true,
+      "applicableJobs": "海盜",
+      "requiredLevel": 30,
+      "requiredStats": "",
+      "equipStats": [
+        {
+          "stat": "攻擊力",
+          "value": "+12"
+        }
+      ],
+      "scrollSlots": 0
+    }
+  ]
+}

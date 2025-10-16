@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef, useMemo } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
-import type { DropItem, SuggestionItem, FilterMode, ClearModalType } from '@/types'
+import type { DropItem, SuggestionItem, FilterMode, ClearModalType, GachaMachine } from '@/types'
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 import { useFavoriteMonsters } from '@/hooks/useFavoriteMonsters'
 import { useFavoriteItems } from '@/hooks/useFavoriteItems'
@@ -16,6 +16,7 @@ import { MonsterModal } from '@/components/MonsterModal'
 import { ItemModal } from '@/components/ItemModal'
 import { BugReportModal } from '@/components/BugReportModal'
 import { ClearConfirmModal } from '@/components/ClearConfirmModal'
+import { GachaMachineModal } from '@/components/GachaMachineModal'
 import { clientLogger } from '@/lib/logger'
 import dropsData from '@/../public/data/drops.json'
 
@@ -42,6 +43,7 @@ export default function Home() {
   const router = useRouter()
 
   const [allDrops, setAllDrops] = useState<DropItem[]>([])
+  const [gachaMachines, setGachaMachines] = useState<GachaMachine[]>([])
   const [filteredDrops, setFilteredDrops] = useState<DropItem[]>([])
   const [searchTerm, setSearchTerm] = useState('')
   const [isLoading, setIsLoading] = useState(true)
@@ -60,6 +62,7 @@ export default function Home() {
   const [isBugReportModalOpen, setIsBugReportModalOpen] = useState(false)
   const [isClearModalOpen, setIsClearModalOpen] = useState(false)
   const [clearModalType, setClearModalType] = useState<ClearModalType>('monsters')
+  const [isGachaModalOpen, setIsGachaModalOpen] = useState(false)
 
   // 篩選模式：全部 or 最愛怪物 or 最愛物品
   const [filterMode, setFilterMode] = useState<FilterMode>('all')
@@ -111,6 +114,31 @@ export default function Home() {
     }
 
     loadDrops()
+  }, [])
+
+  // 載入轉蛋機資料
+  useEffect(() => {
+    async function loadGachaMachines() {
+      try {
+        clientLogger.info('開始載入轉蛋機資料...')
+        const machineIds = [1, 2, 3, 4, 5, 6, 7]
+        const machines = await Promise.all(
+          machineIds.map(async (id) => {
+            const response = await fetch(`/data/gacha/machine-${id}.json`)
+            if (!response.ok) {
+              throw new Error(`Failed to load machine ${id}`)
+            }
+            return response.json() as Promise<GachaMachine>
+          })
+        )
+        setGachaMachines(machines)
+        clientLogger.info(`成功載入 ${machines.length} 台轉蛋機`)
+      } catch (error) {
+        clientLogger.error('載入轉蛋機資料失敗', error)
+      }
+    }
+
+    loadGachaMachines()
   }, [])
 
   // 處理 URL 參數 - 自動開啟對應的 modal
@@ -277,6 +305,7 @@ export default function Home() {
   const nameIndex = useMemo(() => {
     const monsterMap = new Map<string, SuggestionItem>()
     const itemMap = new Map<string, SuggestionItem>()
+    const gachaMap = new Map<string, SuggestionItem>()
 
     allDrops.forEach((drop) => {
       // 建立怪物名稱索引
@@ -306,8 +335,50 @@ export default function Home() {
       }
     })
 
-    return { monsterMap, itemMap }
-  }, [allDrops])
+    // 建立轉蛋機物品索引
+    gachaMachines.forEach((machine) => {
+      machine.items.forEach((item) => {
+        // 為中文名稱建立索引
+        const chineseNameLower = item.chineseName.toLowerCase()
+        const existingChinese = gachaMap.get(chineseNameLower)
+        if (existingChinese) {
+          // 如果已存在，增加計數（可能同一物品在多台轉蛋機出現）
+          existingChinese.count++
+        } else {
+          gachaMap.set(chineseNameLower, {
+            name: item.chineseName, // 保留原始大小寫
+            type: 'gacha',
+            count: 1,
+            machineId: machine.machineId,
+            machineName: machine.machineName,
+          })
+        }
+
+        // 為英文名稱建立索引（如果與中文名稱不同）
+        // 使用 name 或 itemName（備援機制，處理 API 整合失敗的物品）
+        const englishName = (item as any).name || (item as any).itemName
+        if (englishName && typeof englishName === 'string') {
+          const englishNameLower = englishName.toLowerCase()
+          if (englishNameLower !== chineseNameLower) {
+            const existingEnglish = gachaMap.get(englishNameLower)
+            if (existingEnglish) {
+              existingEnglish.count++
+            } else {
+              gachaMap.set(englishNameLower, {
+                name: englishName, // 使用英文名稱
+                type: 'gacha',
+                count: 1,
+                machineId: machine.machineId,
+                machineName: machine.machineName,
+              })
+            }
+          }
+        }
+      })
+    })
+
+    return { monsterMap, itemMap, gachaMap }
+  }, [allDrops, gachaMachines])
 
   // 計算搜尋建議列表（使用索引優化效能，支援多關鍵字搜尋）
   const suggestions = useMemo(() => {
@@ -332,6 +403,13 @@ export default function Home() {
       }
     })
 
+    // 從轉蛋機物品索引中搜尋（支援多關鍵字匹配）
+    nameIndex.gachaMap.forEach((suggestion) => {
+      if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
+        results.push(suggestion)
+      }
+    })
+
     // 排序：優先第一個關鍵字在開頭匹配，其次按出現次數
     results.sort((a, b) => {
       const aNameLower = a.name.toLowerCase()
@@ -349,8 +427,18 @@ export default function Home() {
   }, [debouncedSearchTerm, nameIndex])
 
   // 選擇建議項目
-  const selectSuggestion = (suggestionName: string) => {
-    setSearchTerm(suggestionName)
+  const selectSuggestion = (suggestionName: string, suggestion?: SuggestionItem) => {
+    // 如果是轉蛋物品,開啟轉蛋機 Modal
+    if (suggestion && suggestion.type === 'gacha' && suggestion.machineId) {
+      // 找到對應的轉蛋機並開啟 modal
+      const machine = gachaMachines.find(m => m.machineId === suggestion.machineId)
+      if (machine) {
+        setIsGachaModalOpen(true)
+        setSearchTerm(suggestionName) // 也設定搜尋詞以便在 modal 中過濾
+      }
+    } else {
+      setSearchTerm(suggestionName)
+    }
     setShowSuggestions(false)
     setFocusedIndex(-1)
   }
@@ -410,7 +498,7 @@ export default function Home() {
       case 'Enter':
         e.preventDefault()
         if (focusedIndex >= 0 && focusedIndex < suggestions.length) {
-          selectSuggestion(suggestions[focusedIndex].name)
+          selectSuggestion(suggestions[focusedIndex].name, suggestions[focusedIndex])
         }
         break
       case 'Escape':
@@ -649,6 +737,37 @@ export default function Home() {
         type={clearModalType}
         count={clearModalType === 'monsters' ? favoriteCount : favoriteItemCount}
       />
+
+      {/* Gacha Machine Modal */}
+      <GachaMachineModal
+        isOpen={isGachaModalOpen}
+        onClose={() => setIsGachaModalOpen(false)}
+      />
+
+      {/* 浮動轉蛋機按鈕 */}
+      <button
+        onClick={() => setIsGachaModalOpen(true)}
+        className="fixed bottom-6 left-6 z-40 p-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        aria-label="轉蛋機圖鑑"
+      >
+        <div className="flex items-center gap-2">
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
+            />
+          </svg>
+          <span className="text-sm font-medium hidden group-hover:inline-block">轉蛋機圖鑑</span>
+        </div>
+      </button>
 
       {/* 浮動 Bug 回報按鈕 */}
       <button

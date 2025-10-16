@@ -1,0 +1,7709 @@
+{
+  "machineId": 7,
+  "machineName": "自由市場轉蛋機",
+  "description": "自由市場轉蛋機，可獲得各種裝備道具",
+  "totalItems": 247,
+  "items": [
+    {
+      "chineseName": "褲裙防禦卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040602,
+      "name": "Scroll for Bottomwear for DEF 10%",
+      "description": "Improves Defense on bottomwear armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Bottomwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 30,
+        "hp": 50,
+        "defense": 50
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褲裙防禦卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040600,
+      "name": "Scroll for Bottomwear for DEF 100%",
+      "description": "Improves Defense on bottomwear armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褲裙防禦卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040616,
+      "name": "Scroll for Bottomwear for DEF 15%",
+      "description": "Improves Defense on bottomwear armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Bottomwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 30,
+        "hp": 50,
+        "defense": 50
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褲裙防禦卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040601,
+      "name": "Scroll for Bottomwear for DEF 60%",
+      "description": "Improves Defense on bottomwear armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Bottomwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 10,
+        "defense": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褲裙敏捷卷軸 10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040627,
+      "name": "Scroll for Bottomwear for DEX 10%",
+      "description": "Improves Dexterity on bottomwear armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Bottomwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3,
+        "speed": 1,
+        "accuracy": 40
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褲裙敏捷卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040623,
+      "name": "Scroll for Bottomwear for DEX 100%",
+      "description": "Improves Dexterity on bottomwear armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Bottomwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褲裙敏捷卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040615,
+      "name": "Scroll for Bottomwear for DEF 65%",
+      "description": "Improves Defense on bottomwear armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Bottomwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 10,
+        "defense": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褲裙敏捷卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040613,
+      "name": "Scroll for Bottomwear for DEX 60%",
+      "description": "Improves dexterity on the bottomwear.\\nSuccess Rate 60%, DEX+2, speed+1. The success rate of this scroll can be enhanced by Vega's Spell.",
+      "category": "Armor Scroll",
+      "subcategory": "Bottomwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2,
+        "speed": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褲裙生命卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040619,
+      "name": "Scroll for Bottomwear for Jump 10%",
+      "description": "Improves Jump on bottomwear armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Bottomwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "jump": 4,
+        "avoidability": 40
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褲裙生命卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040617,
+      "name": "Scroll for Bottomwear for Jump 100%",
+      "description": "Improves Jump on lower armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Bottomwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "jump": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褲裙生命卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040620,
+      "name": "Scroll for Bottomwear for HP 100%",
+      "description": "Improves Max HP on bottomwear armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Bottomwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "hp": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "褲裙生命卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040618,
+      "name": "Scroll for Bottomwear for Jump 60%",
+      "description": "Improves Jump on bottomwear armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Bottomwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "jump": 2,
+        "avoidability": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "弓攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044502,
+      "name": "Scroll for Bow for ATT 10%",
+      "description": "Improves Weapon Attack on Bows.",
+      "category": "Weapon Scroll",
+      "subcategory": "Bow",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 1,
+        "accuracy": 60,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "弓攻擊卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044500,
+      "name": "Scroll for Bow for ATT 100%",
+      "description": "Improves Weapon Attack on Bows.",
+      "category": "Weapon Scroll",
+      "subcategory": "Polearm",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "弓攻擊卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044507,
+      "name": "Scroll for Bow for ATT 15%",
+      "description": "Improves Weapon Attack on Bows.",
+      "category": "Weapon Scroll",
+      "subcategory": "Bow",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 1,
+        "accuracy": 60,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "弓攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044501,
+      "name": "Scroll for Bow for ATT 60%",
+      "description": "Improves Weapon Attack on Bows.",
+      "category": "Weapon Scroll",
+      "subcategory": "Bow",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 20,
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風防禦卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041005,
+      "name": "Scroll for Cape for DEF 10%",
+      "description": "Improves DEF on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 30,
+        "hp": 50,
+        "defense": 50
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風防禦卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041003,
+      "name": "Scroll for Cape for DEF 100%",
+      "description": "Improves DEF on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風防禦卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041045,
+      "name": "Scroll for Cape for DEF 15%",
+      "description": "Improves DEF on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 30,
+        "hp": 50,
+        "defense": 50
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風防禦卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041004,
+      "name": "Scroll for Cape for DEF 60%",
+      "description": "Improves DEF on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 10,
+        "defense": 30
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風敏捷卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041020,
+      "name": "Scroll for Cape for DEX 10%",
+      "description": "Improves Dexterity on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風敏捷卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041018,
+      "name": "Scroll for Cape for DEX 100%",
+      "description": "Improves Dexterity on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風敏捷卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041055,
+      "name": "Scroll for Cape for DEX 15%",
+      "description": "Improves Dexterity on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風敏捷卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041019,
+      "name": "Scroll for Cape for DEX 60%",
+      "description": "Improves Dexterity on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風智力卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041017,
+      "name": "Scroll for Cape for INT 10%",
+      "description": "Improves Intelligence on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "int": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風智力卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041015,
+      "name": "Scroll for Cape for INT 100%",
+      "description": "Improves Intelligence on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "int": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風智力卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041053,
+      "name": "Scroll for Cape for INT 15%",
+      "description": "Improves Intelligence on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "int": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風智力卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041016,
+      "name": "Scroll for Cape for INT 60%",
+      "description": "Improves Intelligence on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "int": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風幸運卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041023,
+      "name": "Scroll for Cape for LUK 10%",
+      "description": "Improves Luck on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風幸運卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041021,
+      "name": "Scroll for Cape for LUK 100%",
+      "description": "Improves Luck on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風幸運卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041057,
+      "name": "Scroll for Cape for LUK 15%",
+      "description": "Improves Luck on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風幸運卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041022,
+      "name": "Scroll for Cape for LUK 60%",
+      "description": "Improves Luck on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風力量卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041014,
+      "name": "Scroll for Cape for STR 10%",
+      "description": "Improves Strength on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風力量卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041012,
+      "name": "Scroll for Cape for STR 100%",
+      "description": "Improves Strength on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風力量卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041051,
+      "name": "Scroll for Cape for STR 15%",
+      "description": "Improves Strength on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "披風力量卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2041013,
+      "name": "Scroll for Cape for STR 60%",
+      "description": "Improves Strength on capes.",
+      "category": "Armor Scroll",
+      "subcategory": "Cape",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "拳套攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044702,
+      "name": "Scroll for Claw for ATT 10%",
+      "description": "Improves Weapon Attack on Claws.",
+      "category": "Weapon Scroll",
+      "subcategory": "Claw",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 60,
+        "attack": 5,
+        "luk": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "拳套攻擊卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044700,
+      "name": "Scroll for Claw for ATT 100%",
+      "description": "Improves Weapon Attack on Claws.",
+      "category": "Weapon Scroll",
+      "subcategory": "Crossbow",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "拳套攻擊卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044707,
+      "name": "Scroll for Claw for ATT 15%",
+      "description": "Improves Weapon Attack on Claws.",
+      "category": "Weapon Scroll",
+      "subcategory": "Claw",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 60,
+        "attack": 5,
+        "luk": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "拳套攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044701,
+      "name": "Scroll for Claw for ATT 60%",
+      "description": "Improves Weapon Attack on Claws.",
+      "category": "Weapon Scroll",
+      "subcategory": "Claw",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 20,
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "弩攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044602,
+      "name": "Scroll for Crossbow for ATT 10%",
+      "description": "Improves Weapon Attack on crossbows.",
+      "category": "Weapon Scroll",
+      "subcategory": "Crossbow",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 1,
+        "accuracy": 60,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "弩攻擊卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044600,
+      "name": "Scroll for Crossbow for ATT 100%",
+      "description": "Improves Weapon Attack on Crossbows.",
+      "category": "Weapon Scroll",
+      "subcategory": "Bow",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "弩攻擊卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044607,
+      "name": "Scroll for Crossbow for ATT 15%",
+      "description": "Improves Weapon Attack on crossbows.",
+      "category": "Weapon Scroll",
+      "subcategory": "Crossbow",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 1,
+        "accuracy": 60,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "弩攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044601,
+      "name": "Scroll for Crossbow for ATT 60%",
+      "description": "Improves Weapon Attack on crossbows.",
+      "category": "Weapon Scroll",
+      "subcategory": "Crossbow",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 20,
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "短劍攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043302,
+      "name": "Scroll for Dagger for ATT 10%",
+      "description": "Improves Weapon Attack on Daggers.",
+      "category": "Weapon Scroll",
+      "subcategory": "Dagger",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "attack": 5,
+        "luk": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "短劍攻擊卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043300,
+      "name": "Scroll for Dagger for ATT 100%",
+      "description": "Improves Weapon Attack on Daggers.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed BW",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "短劍攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043307,
+      "name": "Scroll for Dagger for ATT 15%",
+      "description": "Improves Weapon Attack on Daggers.",
+      "category": "Weapon Scroll",
+      "subcategory": "Dagger",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "attack": 5,
+        "luk": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "短劍攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043301,
+      "name": "Scroll for Dagger for ATT 60%",
+      "description": "Improves Weapon Attack on Daggers.",
+      "category": "Weapon Scroll",
+      "subcategory": "Dagger",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 2,
+        "luk": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環防禦卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040310,
+      "name": "Scroll for Earring for DEF 10%",
+      "description": "Improves DEF on earrings.\\nSuccess Rate 10%, weapon defense+3, magic defense+3, Accuracy+1. The success rate of this scroll can be enhanced by Vega's Spell.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 3,
+        "defense": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環防禦卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040312,
+      "name": "Scroll for Earring for DEF 100%",
+      "description": "Improves DEF on earringsnSuccess Rate 100%, weapon defense+1",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環防禦卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040313,
+      "name": "Scroll for Earring for INT 65%",
+      "description": "Improves Intelligence on earrings.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicAttack": 2,
+        "int": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環防禦力卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040311,
+      "name": "Scroll for Earring for DEF 60%",
+      "description": "Improves DEF on earrings.\\nSuccess Rate 60%, weapon defense+1, magic defense+1. The success rate of this scroll can be enhanced by Vega's Spell.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 1,
+        "defense": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環敏捷卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040318,
+      "name": "Scroll for Earring for DEX 10%",
+      "description": "Improves Dexterity on earrings.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環敏捷卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040316,
+      "name": "Scroll for Earring for DEX 100%",
+      "description": "Improves Dexterity on earrings.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環敏捷卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040336,
+      "name": "Scroll for Earring for DEX 15%",
+      "description": "Improves Dexterity on earrings.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環敏捷卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040317,
+      "name": "Scroll for Earring for DEX 60%",
+      "description": "Improves Dexterity on earrings.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環智力卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040302,
+      "name": "Scroll for Earring for INT 10%",
+      "description": "Improves Intelligence on earrings.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 10,
+        "magicAttack": 5,
+        "int": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環智力卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040300,
+      "name": "Scroll for Earring for INT 100%",
+      "description": "Improves Intelligence on earrings.",
+      "category": "Armor Scroll",
+      "subcategory": "Eye",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicAttack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環智力卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040314,
+      "name": "Scroll for Earring for INT 15%",
+      "description": "Improves Intelligence on earrings.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 10,
+        "magicAttack": 5,
+        "int": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環智力卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040301,
+      "name": "Scroll for Earring for INT 60%",
+      "description": "Improves Intelligence on earrings.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicAttack": 2,
+        "int": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環幸運卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040323,
+      "name": "Scroll for Earring for LUK 10%",
+      "description": "Improves Luck on earrings.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環幸運卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040319,
+      "name": "Scroll for Earring for LUK 100%",
+      "description": "Improves Luck on earrings.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環幸運卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040338,
+      "name": "Scroll for Earring for LUK 15%",
+      "description": "Improves Luck on earrings.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環幸運卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040321,
+      "name": "Scroll for Earring for LUK 60%",
+      "description": "Improves Luck on earrings.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "itemId": 2040332,
+      "itemName": "Scroll for Earring for STR 10%",
+      "chineseName": "耳環力量卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "inGame": true,
+      "applicableJobs": "",
+      "requiredLevel": 0,
+      "requiredStats": "",
+      "equipStats": [],
+      "scrollSlots": 0
+    },
+    {
+      "chineseName": "耳環力量卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040328,
+      "name": "Scroll for Earring for HP 10%",
+      "description": "Improves Max HP on earrings.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "hp": 120
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環力量卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040333,
+      "name": "Scroll for Earring for INT 50%",
+      "description": "Improves INT on ear accessory.\\nSuccess rate:50%, magic attack +5, INT+3, magic def. +2",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 2,
+        "magicAttack": 5,
+        "int": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "耳環力量卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040330,
+      "name": "Scroll for Earring for INT 10%",
+      "description": "Improves Intelligence on earrings.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 10,
+        "magicAttack": 5,
+        "int": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套敏捷卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040802,
+      "name": "Scroll for Gloves for DEX 10%",
+      "description": "Improves Dexterity on gloves.",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3,
+        "avoidability": 20,
+        "accuracy": 100
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套敏捷卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040800,
+      "name": "Scroll for Gloves for DEX 100%",
+      "description": "Improves Dexterity on gloves.",
+      "category": "Armor Scroll",
+      "subcategory": "Shoes",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套敏捷卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040829,
+      "name": "Scroll for Gloves for DEX 100%",
+      "description": "Improves dexterity on gloves.\\nSuccess rate: 100%, accuracy+2, DEX+2",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套敏捷卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040801,
+      "name": "Scroll for Gloves for DEX 60%",
+      "description": "Improves Dexterity on gloves.",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 1,
+        "accuracy": 40
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040805,
+      "name": "Scroll for Gloves for ATT 10%",
+      "description": "Improves Attack on gloves.",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套攻擊卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040803,
+      "name": "Scroll for Gloves for ATT 100%",
+      "description": "Improves Attack on gloves.",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套攻擊卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040822,
+      "name": "Scroll for Gloves for ATT 15%",
+      "description": "Improves Attack on gloves.",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040804,
+      "name": "Scroll for Gloves for ATT 60%",
+      "description": "Improves Attack on gloves.",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套防禦卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040825,
+      "name": "Scroll for Gloves for HP 10%",
+      "description": "Improves Max HP on gloves.",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "hp": 120
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套防禦卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040823,
+      "name": "Scroll for Gloves for HP 100%",
+      "description": "Improves Max HP on gloves.",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "hp": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套防禦卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040826,
+      "name": "Scroll for Gloves for ATT 60%",
+      "description": "Improves Attack on gloves.",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套防禦卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040824,
+      "name": "Scroll for Gloves for HP 60%",
+      "description": "Improves Max HP on gloves.",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "hp": 60
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套魔力卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040816,
+      "name": "Scroll for Gloves for Magic Attack 10%",
+      "description": "Improves magic attack on the glove.\\nSuccess Rate 10%, magic defense+1, magic attack+3, INT+3. The success rate of this scroll can be enhanced by Vega's Spell.",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 1,
+        "magicAttack": 3,
+        "int": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套魔力卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040818,
+      "name": "Scroll for Gloves for Magic Attack 100%",
+      "description": "Improves magic attack on the glove.\\nSuccess Rate 100%, magic attack+1",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicAttack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套魔力卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040820,
+      "name": "Scroll for Gloves for DEX 15%",
+      "description": "Improves Dexterity on gloves.",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3,
+        "avoidability": 20,
+        "accuracy": 100
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "手套魔力卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040817,
+      "name": "Scroll for Gloves for Magic Attack 60%",
+      "description": "Improves magic attack on the glove.\\nSuccess Rate 60%, magic attack+1, INT+1. The success rate of this scroll can be enhanced by Vega's Spell.",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicAttack": 1,
+        "int": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "火槍攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044902,
+      "name": "Scroll for Gun for ATT 10%",
+      "description": "Improves Weapon Attack on Guns.",
+      "category": "Weapon Scroll",
+      "subcategory": "Gun",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 1,
+        "accuracy": 60,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "火槍攻擊卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044900,
+      "name": "Scroll for Gun for Attack 100%",
+      "description": "Improves Weapon Attack on Guns.",
+      "category": "Weapon Scroll",
+      "subcategory": "Knuckle",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "火槍攻擊卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044905,
+      "name": "[6th Anniversary] Scroll for Gun for ATT 40%",
+      "description": "Improves Attack on Maple Anniversary Guns.",
+      "category": "Weapon Scroll",
+      "subcategory": "Gun",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 40,
+        "attack": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "火槍攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044901,
+      "name": "Scroll for Gun for Attack 60%",
+      "description": "Improves Weapon Attack on Guns.",
+      "category": "Weapon Scroll",
+      "subcategory": "Gun",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 20,
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "頭盔命中卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040016,
+      "name": "Scroll for Helmet for Accuracy 10%",
+      "description": "Improves the helmet's accuracy option.\\nSuccess Rate 10%, Dex+2, Accuracy +4. The success rate of this scroll can be enhanced by Vega's Spell.",
+      "category": "Armor Scroll",
+      "subcategory": "Helmet",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "頭盔命中卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040018,
+      "name": "Scroll for Helmet for Accuracy 100%",
+      "description": "Improves the helmet's accuracy option.\\nSuccess Rate 100%, Accuracy +1",
+      "category": "Armor Scroll",
+      "subcategory": "Helmet",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "頭盔命中卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040034,
+      "name": "Scroll for Auf Haven Circlet for INT 60%",
+      "description": "A scroll that can only be used on Auf Haven Circlet. INT+3. If failed, the item will be destroyed at a 50% rate.",
+      "category": "Armor Scroll",
+      "subcategory": "Helmet",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "int": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "頭盔命中卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040017,
+      "name": "Scroll for Helmet for Accuracy 60%",
+      "description": "Improves the helmet's accuracy option.\\nSuccess Rate 60%, Dex+1, Accuracy +2. The success rate of this scroll can be enhanced by Vega's Spell.",
+      "category": "Armor Scroll",
+      "subcategory": "Helmet",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "頭盔防禦卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040002,
+      "name": "Scroll for Helmet for DEF 10%",
+      "description": "Improves Defense on helmets.",
+      "category": "Armor Scroll",
+      "subcategory": "Helmet",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 15,
+        "defense": 30,
+        "accuracy": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "頭盔防禦卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040000,
+      "name": "Scroll for Helmet for DEF 100%",
+      "description": "Improves Defense on helmets.",
+      "category": "Consumable",
+      "subcategory": "Teleport Item",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "頭盔防禦卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040001,
+      "name": "Scroll for Helmet for DEF 60%",
+      "description": "Improves Defense on helmets.",
+      "category": "Armor Scroll",
+      "subcategory": "Helmet",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 10,
+        "defense": 15
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "頭盔敏捷卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040031,
+      "name": "Scroll for Helmet for DEX 10%",
+      "description": "Improves Dexterity on helmets.",
+      "category": "Armor Scroll",
+      "subcategory": "Helmet",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "頭盔敏捷卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040027,
+      "name": "Scroll for Helmet for DEX 100%",
+      "description": "Improves Dexterity on helmets.",
+      "category": "Armor Scroll",
+      "subcategory": "Helmet",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "頭盔敏捷卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040044,
+      "name": "Scroll for Helmet for DEX 15%",
+      "description": "Improves Dexterity on helmets.",
+      "category": "Armor Scroll",
+      "subcategory": "Helmet",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "頭盔敏捷卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040029,
+      "name": "Scroll for Helmet for DEX 60%",
+      "description": "Improves Dexterity on helmets.",
+      "category": "Armor Scroll",
+      "subcategory": "Helmet",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "頭盔智力卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040026,
+      "name": "Scroll for Helmet for INT 10%",
+      "description": "Improves Intelligence on helmets.",
+      "category": "Armor Scroll",
+      "subcategory": "Helmet",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "int": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "頭盔智力卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040024,
+      "name": "Scroll for Helmet for INT 100%",
+      "description": "Improves Intelligence on helmets.",
+      "category": "Armor Scroll",
+      "subcategory": "Helmet",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "int": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "頭盔智力卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040036,
+      "name": "Scroll for Auf Haven Circlet for LUK 60%",
+      "description": "A scroll that can only be used on Auf Haven Circlet. LUK+3. If failed, the item will be destroyed at a 50% rate.",
+      "category": "Armor Scroll",
+      "subcategory": "Helmet",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "頭盔智力卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040025,
+      "name": "Scroll for Helmet for INT 60%",
+      "description": "Improves Intelligence on helmets.",
+      "category": "Armor Scroll",
+      "subcategory": "Helmet",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "int": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "指虎命中卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044809,
+      "name": "Scroll for Knuckle for Accuracy 10%",
+      "description": "Improves Accuracy on Knuckles.",
+      "category": "Weapon Scroll",
+      "subcategory": "Knuckle",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3,
+        "accuracy": 100,
+        "attack": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "指虎命中卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044805,
+      "name": "Scroll for Knuckle for Accuracy 100%",
+      "description": "Improves Accuracy on Knuckles.",
+      "category": "Weapon Scroll",
+      "subcategory": "Knuckle",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "指虎命中卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044810,
+      "name": "[6th Anniversary] Scroll for Knuckle for ATT 40%",
+      "description": "Improves Attack on Maple Anniversary Knuckles.",
+      "category": "Weapon Scroll",
+      "subcategory": "Knuckle",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 2,
+        "attack": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "指虎命中卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044807,
+      "name": "Scroll for Knuckle for Accuracy 60%",
+      "description": "Improves Accuracy on Knuckles.",
+      "category": "Weapon Scroll",
+      "subcategory": "Knuckle",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2,
+        "accuracy": 60,
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "指虎攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044802,
+      "name": "Scroll for Knuckle for ATT 10%",
+      "description": "Improves Weapon Attack on Knuckles.",
+      "category": "Weapon Scroll",
+      "subcategory": "Knuckle",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "指虎攻擊卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044800,
+      "name": "Scroll for Knuckle for Attack 100%",
+      "description": "Improves Weapon Attack on Knuckles.",
+      "category": "Weapon Scroll",
+      "subcategory": "Claw",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "指虎攻擊卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044812,
+      "name": "Scroll for Knuckles for ATT 15%",
+      "description": "Improves Weapon Attack on Knuckles.",
+      "category": "Weapon Scroll",
+      "subcategory": "Knuckle",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "指虎攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044801,
+      "name": "Scroll for Knuckle for Attack 60%",
+      "description": "Improves Weapon Attack on Knuckles.",
+      "category": "Weapon Scroll",
+      "subcategory": "Knuckle",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 1,
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手斧命中卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043114,
+      "name": "Scroll for One-Handed Axe for Accuracy 10%",
+      "description": "Improves Accuracy on One-Handed Axes.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed Axe",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3,
+        "accuracy": 100,
+        "attack": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手斧命中卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043110,
+      "name": "Scroll for One-Handed Axe for Accuracy 100%",
+      "description": "Improves Accuracy on One-Handed Axes.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed Axe",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "itemId": 2043115,
+      "itemName": "Scroll for One-Handed Axe for Accuracy 15%",
+      "chineseName": "單手斧命中卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "inGame": true,
+      "applicableJobs": "",
+      "requiredLevel": 0,
+      "requiredStats": "",
+      "equipStats": [],
+      "scrollSlots": 0
+    },
+    {
+      "chineseName": "單手斧命中卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043112,
+      "name": "Scroll for One-Handed Axe for Accuracy 60%",
+      "description": "Improves Accuracy on One-Handed Axes.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed Axe",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2,
+        "accuracy": 60,
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手斧攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043102,
+      "name": "Scroll for One-Handed Axe for ATT 10%",
+      "description": "Improves Weapon Attack on One-Handed Axes.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed Axe",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手斧攻擊卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043100,
+      "name": "Scroll for One-Handed Axe for ATT 100%",
+      "description": "Improves Weapon Attack on One-Handed Axes.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手斧攻擊卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043107,
+      "name": "Scroll for One-Handed Axe for ATT 15%",
+      "description": "Improves Weapon Attack on One-Handed Axes.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed Axe",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手斧攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043101,
+      "name": "Scroll for One-Handed Axe for ATT 60%",
+      "description": "Improves Weapon Attack on One-Handed Axes.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed Axe",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 1,
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手棍命中卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043214,
+      "name": "Scroll for One-Handed BW for Accuracy 10%",
+      "description": "Improves Accuracy on One-Handed Blunt weapons.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed BW",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3,
+        "accuracy": 100,
+        "attack": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手棍命中卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043210,
+      "name": "Scroll for One-Handed BW for Accuracy 100%",
+      "description": "Improves Accuracy on one-handed maces.\\nSuccess Rate: 100%, Accuracy +20",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed BW",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "itemId": 2043215,
+      "itemName": "Scroll for One-Handed BW for Accuracy 15%",
+      "chineseName": "單手棍命中卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "inGame": true,
+      "applicableJobs": "",
+      "requiredLevel": 0,
+      "requiredStats": "",
+      "equipStats": [],
+      "scrollSlots": 0
+    },
+    {
+      "chineseName": "單手棍命中卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043212,
+      "name": "Scroll for One-Handed BW for Accuracy 60%",
+      "description": "Improves Accuracy on One-Handed Blunt weapons.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed BW",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2,
+        "accuracy": 60,
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手棍攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043202,
+      "name": "Scroll for One-Handed BW for ATT 10%",
+      "description": "Improves Weapon Attack on One-Handed Blunt weapons.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed BW",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手棍攻擊卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043200,
+      "name": "Scroll for One-Handed BW for ATT 100%",
+      "description": "Improves Weapon Attack on One-Handed Blunt weapons.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed Axe",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手棍攻擊卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043207,
+      "name": "Scroll for One-Handed BW for ATT 15%",
+      "description": "Improves Weapon Attack on One-Handed Blunt weapons.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed BW",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手棍攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043201,
+      "name": "Scroll for One-Handed BW for ATT 60%",
+      "description": "Improves Weapon Attack on One-Handed Blunt weapons.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed BW",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 1,
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手劍命中卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043019,
+      "name": "Scroll for One-Handed Sword for Accuracy 10%",
+      "description": "Improves Accuracy on One-Handed Swords.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3,
+        "accuracy": 100,
+        "attack": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手劍命中卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043015,
+      "name": "Scroll for One-Handed Sword for Accuracy 100%",
+      "description": "Improves Accuracy on One-Handed Swords.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "itemId": 2043020,
+      "itemName": "Scroll for One-Handed Sword for Accuracy 15%",
+      "chineseName": "單手劍命中卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "inGame": true,
+      "applicableJobs": "",
+      "requiredLevel": 0,
+      "requiredStats": "",
+      "equipStats": [],
+      "scrollSlots": 0
+    },
+    {
+      "chineseName": "單手劍命中卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043017,
+      "name": "Scroll for One-Handed Sword for Accuracy 60%",
+      "description": "Improves Accuracy on One-Handed Swords.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2,
+        "accuracy": 60,
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手劍攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043002,
+      "name": "Scroll for One-Handed Sword for ATT 10%",
+      "description": "Improves Weapon Attack on One-Handed Swords.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手劍攻擊卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043000,
+      "name": "Scroll for One-Handed Sword for ATT 100%",
+      "description": "Improves Weapon Attack on One-Handed Swords.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手劍攻擊卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043012,
+      "name": "Scroll for One-Handed Sword for ATT 15%",
+      "description": "Improves Weapon Attack on One-Handed Swords.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "單手劍攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043001,
+      "name": "Scroll for One-Handed Sword for ATT 60%",
+      "description": "Improves Weapon Attack on One-Handed Swords.",
+      "category": "Weapon Scroll",
+      "subcategory": "One-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 1,
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服防禦卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040505,
+      "name": "Scroll for Overall Armor for DEF 10%",
+      "description": "Improves Defense on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 30,
+        "hp": 50,
+        "defense": 50
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服防禦卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040503,
+      "name": "Scroll for Overall Armor for DEF 100%",
+      "description": "Improves Defense on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服防禦卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040525,
+      "name": "Overall Armor Scroll for DEF 15%",
+      "description": "Improves Defense on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 30,
+        "hp": 50,
+        "defense": 50
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服防禦卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040504,
+      "name": "Scroll for Overall Armor for DEF 60%",
+      "description": "Improves Defense on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 10,
+        "defense": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服敏捷卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040502,
+      "name": "Scroll for Overall Armor for DEX 10%",
+      "description": "Improves Dexterity on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 5,
+        "speed": 1,
+        "accuracy": 60
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服敏捷卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040500,
+      "name": "Scroll for Overall Armor for DEX 100%",
+      "description": "Improves Dexterity on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Topwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服敏捷卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040523,
+      "name": "Scroll for Overall Armor for DEX 15%",
+      "description": "Improves Dexterity on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 5,
+        "speed": 1,
+        "accuracy": 60
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服敏捷卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040501,
+      "name": "Scroll for Overall Armor for DEX 60%",
+      "description": "Improves Dexterity on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2,
+        "accuracy": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服智力卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040514,
+      "name": "Scroll for Overall Armor for INT 10%",
+      "description": "Improves Intelligence on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 30,
+        "mp": 50,
+        "int": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服智力卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040512,
+      "name": "Scroll for Overall Armor for INT 100%",
+      "description": "Improves Intelligence on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "int": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服智力卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040527,
+      "name": "Scroll for Overall Armor for INT 15%",
+      "description": "Improves Intelligence on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 30,
+        "mp": 50,
+        "int": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服智力卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040513,
+      "name": "Scroll for Overall Armor for INT 60%",
+      "description": "Improves Intelligence on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 10,
+        "int": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服幸運卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040517,
+      "name": "Scroll for Overall Armor for LUK 10%",
+      "description": "Improves Luck on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "avoidability": 60,
+        "accuracy": 20,
+        "luk": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服幸運卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040515,
+      "name": "Scroll for Overall Armor for LUK 100%",
+      "description": "Improves Luck on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服幸運卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040529,
+      "name": "Scroll for Overall Armor for LUK 15%",
+      "description": "Improves Luck on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "avoidability": 60,
+        "accuracy": 20,
+        "luk": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服幸運卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040516,
+      "name": "Scroll for Overall Armor for LUK 60%",
+      "description": "Improves Luck on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "avoidability": 20,
+        "luk": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服力量卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040534,
+      "name": "Scroll for Overall for STR 10%",
+      "description": "Improves Strength on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "hp": 25,
+        "defense": 30,
+        "str": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服力量卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040530,
+      "name": "Scroll for Overall for STR 100%",
+      "description": "Improves Strength on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服力量卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040541,
+      "name": "Scroll for Overall Armor for STR 15%",
+      "description": "Improves Strength on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "hp": 25,
+        "defense": 30,
+        "str": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "套服力量卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040532,
+      "name": "Scroll for Overall for STR 60%",
+      "description": "Improves Strength on overall armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Overall",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "矛命中卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044414,
+      "name": "Scroll for Pole-Arm for Accuracy 10%",
+      "description": "Improves Accuracy on Polearms.",
+      "category": "Weapon Scroll",
+      "subcategory": "Polearm",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3,
+        "accuracy": 100,
+        "attack": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "矛命中卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044410,
+      "name": "Scroll for Pole-Arm for Accuracy 100%",
+      "description": "Improves Accuracy on Polearms.",
+      "category": "Weapon Scroll",
+      "subcategory": "Polearm",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "itemId": 2044415,
+      "itemName": "Scroll for Pole arm for Accuracy 15%",
+      "chineseName": "矛命中卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "inGame": true,
+      "applicableJobs": "",
+      "requiredLevel": 0,
+      "requiredStats": "",
+      "equipStats": [],
+      "scrollSlots": 0
+    },
+    {
+      "chineseName": "矛命中卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044412,
+      "name": "Scroll for Pole-Arm for Accuracy 60%",
+      "description": "Improves Accuracy on Polearms.",
+      "category": "Weapon Scroll",
+      "subcategory": "Polearm",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2,
+        "accuracy": 60,
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "矛攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044402,
+      "name": "Scroll for Pole Arm for ATT 10%",
+      "description": "Improves Weapon Attack on Polearms.",
+      "category": "Weapon Scroll",
+      "subcategory": "Polearm",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "矛攻擊卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044400,
+      "name": "Scroll for Pole Arm for ATT 100%",
+      "description": "Improves Weapon Attack on Polearms.",
+      "category": "Weapon Scroll",
+      "subcategory": "Spear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "矛攻擊卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044407,
+      "name": "Scroll for Pole Arm for ATT 15%",
+      "description": "Improves Weapon Attack on Polearms.",
+      "category": "Weapon Scroll",
+      "subcategory": "Polearm",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "矛攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044401,
+      "name": "Scroll for Pole Arm for ATT 60%",
+      "description": "Improves Weapon Attack on Polearms.",
+      "category": "Weapon Scroll",
+      "subcategory": "Polearm",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 1,
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040915,
+      "name": "Scroll for Shield for Weapon ATT 10%",
+      "description": "Improves weapon attack on the shield.\\nSuccess Rate 10%, W. attack+3, STR+2. The success rate of this scroll can be enhanced by Vega's Spell.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 2,
+        "attack": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌生命卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040928,
+      "name": "Scroll for Shield for HP 10%",
+      "description": "Improves Max HP on shields.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "hp": 120
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "itemId": 2040934,
+      "itemName": "Scroll for Shield for Weapon ATT 15%",
+      "chineseName": "盾牌攻擊卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "inGame": true,
+      "applicableJobs": "",
+      "requiredLevel": 0,
+      "requiredStats": "",
+      "equipStats": [],
+      "scrollSlots": 0
+    },
+    {
+      "chineseName": "盾牌攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040914,
+      "name": "Scroll for Shield for Weapon ATT 60%",
+      "description": "Improves weapon attack on the shield.\\nSuccess Rate 60%, W. attack+2, STR+1. The success rate of this scroll can be enhanced by Vega's Spell.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 1,
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌防禦卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040902,
+      "name": "Scroll for Shield for DEF 10%",
+      "description": "Improves Defense on shields.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 30,
+        "hp": 50,
+        "defense": 50
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌防禦卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040900,
+      "name": "Scroll for Shield for DEF 100%",
+      "description": "Improves Defense on shields.",
+      "category": "Armor Scroll",
+      "subcategory": "Gloves",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌防禦卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040911,
+      "name": "Scroll for Shield for DEF 15%",
+      "description": "Improves Defense on shields.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 30,
+        "hp": 50,
+        "defense": 50
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌防禦卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040901,
+      "name": "Scroll for Shield for DEF 60%",
+      "description": "Improves Defense on shields.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 10,
+        "defense": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌幸運卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040925,
+      "name": "Scroll for Shield for LUK 10%",
+      "description": "Improves Luck on shields.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌幸運卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040923,
+      "name": "Scroll for Shield for LUK 100%",
+      "description": "Improves Luck on shields.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌幸運卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040938,
+      "name": "Scroll for Shield for LUK 15%",
+      "description": "Improves Luck on shields.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌幸運卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040924,
+      "name": "Scroll for Shield for LUK 60%",
+      "description": "Improves Luck on shields.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌魔攻卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040920,
+      "name": "Scroll for Shield for Magic Attack 10%",
+      "description": "Improves magic attack on the shield.\\nSuccess Rate 10%, magic attack+3, INT+2. The success rate of this scroll can be enhanced by Vega's Spell.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicAttack": 3,
+        "int": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌魔攻卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040918,
+      "name": "Scroll for Shield for Magic Attack 100%",
+      "description": "Improves magic attack on the shield.\\nSuccess Rate 100%, magic attack+1",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicAttack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌生命卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040926,
+      "name": "Scroll for Shield for HP 100%",
+      "description": "Improves Max HP on shields.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "hp": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌魔力卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040919,
+      "name": "Scroll for Shield for Magic Attack 60%",
+      "description": "Improves magic attack on the shield.\\nSuccess Rate 60%, magic attack+2, INT+1. The success rate of this scroll can be enhanced by Vega's Spell.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicAttack": 2,
+        "int": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌力量卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040933,
+      "name": "Scroll for Shield for STR 10%",
+      "description": "Improves Strength on shields.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌力量卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040929,
+      "name": "Scroll for Shield for STR 100%",
+      "description": "Improves Strength on shields.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌力量卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040942,
+      "name": "Scroll for Shield for STR 15%",
+      "description": "Improves Strength on shields.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "盾牌力量卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040931,
+      "name": "Scroll for Shield for STR 60%",
+      "description": "Improves Strength on shields.",
+      "category": "Armor Scroll",
+      "subcategory": "Shield",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "鞋子敏捷卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040702,
+      "name": "Scroll for Shoes for Avoidability 10%",
+      "description": "Improves Avoidability on shoes.",
+      "category": "Armor Scroll",
+      "subcategory": "Shoes",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "speed": 1,
+        "avoidability": 100,
+        "accuracy": 60
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "鞋子敏捷卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040700,
+      "name": "Scroll for Shoes for Avoidability 100%",
+      "description": "Improves Avoidability on shoes.",
+      "category": "Armor Scroll",
+      "subcategory": "Bottomwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "avoidability": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "鞋子迴避卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040719,
+      "name": "Scroll for Shoes for DEX 15%",
+      "description": "Improves Dexterity on shoes.",
+      "category": "Armor Scroll",
+      "subcategory": "Shoes",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "speed": 1,
+        "avoidability": 100,
+        "accuracy": 60
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "鞋子敏捷卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040701,
+      "name": "Scroll for Shoes for Avoidability 60%",
+      "description": "Improves Avoidability on shoes.",
+      "category": "Armor Scroll",
+      "subcategory": "Shoes",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "avoidability": 40,
+        "accuracy": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "鞋子跳躍卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040705,
+      "name": "Scroll for Shoes for Jump 10%",
+      "description": "Improves Jump on shoes.",
+      "category": "Armor Scroll",
+      "subcategory": "Shoes",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3,
+        "speed": 1,
+        "jump": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "鞋子跳躍卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040703,
+      "name": "Scroll for Shoes for Jump 100%",
+      "description": "Improves Jump on shoes.",
+      "category": "Armor Scroll",
+      "subcategory": "Shoes",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "jump": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "鞋子跳躍卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040721,
+      "name": "Scroll for Shoes for Jump and DEX 15%",
+      "description": "Improves Jump on shoes.",
+      "category": "Armor Scroll",
+      "subcategory": "Shoes",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3,
+        "speed": 1,
+        "jump": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "鞋子跳躍卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040704,
+      "name": "Scroll for Shoes for Jump 60%",
+      "description": "Improves Jump on shoes.",
+      "category": "Armor Scroll",
+      "subcategory": "Shoes",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 1,
+        "jump": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "鞋子速度卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040708,
+      "name": "Scroll for Shoes for Speed 10%",
+      "description": "Improves Speed on shoes.",
+      "category": "Armor Scroll",
+      "subcategory": "Shoes",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "speed": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "鞋子速度卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040706,
+      "name": "Scroll for Shoes for Speed 100%",
+      "description": "Improves Speed on shoes.",
+      "category": "Armor Scroll",
+      "subcategory": "Shoes",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "speed": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "鞋子機動卷軸",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040723,
+      "name": "Scroll for Speed for DEX 15%",
+      "description": "Improves Speed on shoes.",
+      "category": "Armor Scroll",
+      "subcategory": "Shoes",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "speed": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "鞋子速度卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040707,
+      "name": "Scroll for Shoes for Speed 60%",
+      "description": "Improves Speed on shoes.",
+      "category": "Armor Scroll",
+      "subcategory": "Shoes",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "speed": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "槍命中卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044314,
+      "name": "Scroll for Spear for Accuracy 10%",
+      "description": "Improves Accuracy on Spears.",
+      "category": "Weapon Scroll",
+      "subcategory": "Spear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3,
+        "accuracy": 100,
+        "attack": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "槍命中卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044310,
+      "name": "Scroll for Spear for Accuracy 100%",
+      "description": "Improves Accuracy on Spears.",
+      "category": "Weapon Scroll",
+      "subcategory": "Spear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "itemId": 2044315,
+      "itemName": "Scroll for Spear for Accuracy 15%",
+      "chineseName": "槍命中卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "inGame": true,
+      "applicableJobs": "",
+      "requiredLevel": 0,
+      "requiredStats": "",
+      "equipStats": [],
+      "scrollSlots": 0
+    },
+    {
+      "chineseName": "槍命中卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044312,
+      "name": "Scroll for Spear for Accuracy 60%",
+      "description": "Improves Accuracy on Spears.",
+      "category": "Weapon Scroll",
+      "subcategory": "Spear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2,
+        "accuracy": 60,
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "槍攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044302,
+      "name": "Scroll for Spear for ATT 10%",
+      "description": "Improves Weapon Attack on Spears.",
+      "category": "Weapon Scroll",
+      "subcategory": "Spear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "槍攻擊卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044300,
+      "name": "Scroll for Spear for ATT 100%",
+      "description": "Improves Weapon Attack on Spears.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed BW",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "槍攻擊卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044307,
+      "name": "Scroll for Spear for ATT 15%",
+      "description": "Improves Weapon Attack on Spears.",
+      "category": "Weapon Scroll",
+      "subcategory": "Spear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "槍攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044301,
+      "name": "Scroll for Spear for ATT 60%",
+      "description": "Improves Weapon Attack on Spears.",
+      "category": "Weapon Scroll",
+      "subcategory": "Spear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 1,
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "長杖魔力卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043802,
+      "name": "Scroll for Staff for Magic Attack 10%",
+      "description": "Improves Magic Attack on Staves.",
+      "category": "Weapon Scroll",
+      "subcategory": "Staff",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 10,
+        "magicAttack": 5,
+        "int": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "長杖魔力卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043800,
+      "name": "Scroll for Staff for Magic Attack 100%",
+      "description": "Improves Magic Attack on Staves.",
+      "category": "Weapon Scroll",
+      "subcategory": "Wand",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicAttack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "長杖魔力卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043807,
+      "name": "Scroll for Staff for Magic Attack 15%",
+      "description": "Improves Magic Attack on Staves.",
+      "category": "Weapon Scroll",
+      "subcategory": "Staff",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 10,
+        "magicAttack": 5,
+        "int": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "長杖魔力卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043801,
+      "name": "Scroll for Staff for Magic Attack 60%",
+      "description": "Improves Magic Attack on Staves.",
+      "category": "Weapon Scroll",
+      "subcategory": "Staff",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicAttack": 2,
+        "int": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "上衣防禦卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040402,
+      "name": "Scroll for Topwear for DEF 10%",
+      "description": "Improves Defense on upper armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Topwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 30,
+        "hp": 50,
+        "defense": 50
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "上衣防禦卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040400,
+      "name": "Scroll for Topwear for DEF",
+      "description": "Improves Defense on upper armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Earrings",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "上衣防禦卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040416,
+      "name": "Scroll for Topwear for DEF 15%",
+      "description": "Improves Defense on upper armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Topwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 30,
+        "hp": 50,
+        "defense": 50
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "上衣防禦卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040401,
+      "name": "Scroll for Topwear for DEF 60%",
+      "description": "Improves Defense on upper armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Topwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 10,
+        "defense": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "上衣幸運卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040412,
+      "name": "Scroll for Topwear for LUK 10%",
+      "description": "Improves LUK on the topwear.\\nSuccess Rate 10%, LUK+3, avoidability+3. The success rate of this scroll can be enhanced by Vega's Spell.",
+      "category": "Armor Scroll",
+      "subcategory": "Topwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "上衣幸運卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040414,
+      "name": "Scroll for Topwear for LUK 100%",
+      "description": "Improves LUK on the topwear.\\nSuccess Rate 100%, LUK+1",
+      "category": "Armor Scroll",
+      "subcategory": "Topwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "上衣幸運卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040436,
+      "name": "Scroll for Topwear for LUK 15%",
+      "description": "Improves Luck on upper armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Topwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "上衣幸運卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040413,
+      "name": "Scroll for Topwear for LUK 60%",
+      "description": "Improves LUK on the topwear.\\nSuccess Rate 60%, LUK+2, avoidability+1. The success rate of this scroll can be enhanced by Vega's Spell.",
+      "category": "Armor Scroll",
+      "subcategory": "Topwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "luk": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "上衣力量卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040419,
+      "name": "Scroll for Topwear for STR 10%",
+      "description": "Improves Strength on upper armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Topwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "上衣力量卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040417,
+      "name": "Scroll for Topwear for STR 100%",
+      "description": "Improves Strength on upper armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Topwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "上衣力量卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040432,
+      "name": "Scroll for Topwear for STR 15%",
+      "description": "Improves Strength on upper armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Topwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "上衣力量卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2040418,
+      "name": "Scroll for Topwear for STR 60%",
+      "description": "Improves Strength on upper armors.",
+      "category": "Armor Scroll",
+      "subcategory": "Topwear",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手斧命中卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044114,
+      "name": "Scroll for Two-Handed Axe for Accuracy 10%",
+      "description": "Improves Accuracy on Two-Handed Axes.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Axe",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3,
+        "accuracy": 100,
+        "attack": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手斧命中卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044110,
+      "name": "Scroll for Two-Handed Axe for Accuracy 100%",
+      "description": "Improves Accuracy on Two-Handed Axes.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Axe",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "itemId": 2044115,
+      "itemName": "Scroll for Two-Handed Axe for Accuracy 15%",
+      "chineseName": "雙手斧命中卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "inGame": true,
+      "applicableJobs": "",
+      "requiredLevel": 0,
+      "requiredStats": "",
+      "equipStats": [],
+      "scrollSlots": 0
+    },
+    {
+      "chineseName": "雙手斧命中卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044112,
+      "name": "Scroll for Two-Handed Axe for Accuracy 60%",
+      "description": "Improves Accuracy on Two-Handed Axes.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Axe",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2,
+        "accuracy": 60,
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手斧攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044102,
+      "name": "Scroll for Two-handed Axe for ATT 10%",
+      "description": "Improves Weapon Attack on Two-Handed Axes.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Axe",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手斧攻擊卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044100,
+      "name": "Scroll for Two-handed Axe for ATT 100%",
+      "description": "Improves Weapon Attack on Two-Handed Axes.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手斧攻擊卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044107,
+      "name": "Scroll for Two-Handed Axe for ATT 15%",
+      "description": "Improves Weapon Attack on Two-Handed Axes.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Axe",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手斧攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044101,
+      "name": "Scroll for Two-handed Axe for ATT 60%",
+      "description": "Improves Weapon Attack on Two-Handed Axes.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Axe",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 1,
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手棍命中卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044214,
+      "name": "Scroll for Two-Handed BW for Accuracy 10%",
+      "description": "Improves Accuracy on Two-Handed Blunt weapons.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed BW",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3,
+        "accuracy": 100,
+        "attack": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手棍命中卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044210,
+      "name": "Scroll for Two-Handed BW for Accuracy 100%",
+      "description": "Improves Accuracy on Two-Handed Blunt weapons.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed BW",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "itemId": 2044215,
+      "itemName": "Scroll for Two-Handed BW for Accuracy 15%",
+      "chineseName": "雙手棍命中卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "inGame": true,
+      "applicableJobs": "",
+      "requiredLevel": 0,
+      "requiredStats": "",
+      "equipStats": [],
+      "scrollSlots": 0
+    },
+    {
+      "chineseName": "雙手棍命中卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044212,
+      "name": "Scroll for Two-Handed BW for Accuracy 60%",
+      "description": "Improves Accuracy on Two-Handed Blunt weapons.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed BW",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2,
+        "accuracy": 60,
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手棍攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044202,
+      "name": "Scroll for Two-handed BW for ATT 10%",
+      "description": "Improves Weapon Attack on Two-Handed Blunt weapons.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed BW",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手棍攻擊卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044200,
+      "name": "Scroll for Two-handed BW for ATT 100%",
+      "description": "Improves Weapon Attack on Two-Handed Blunt weapons.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Axe",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手棍攻擊卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044207,
+      "name": "Scroll for Two-Handed BW for ATT 15%",
+      "description": "Improves Weapon Attack on Two-Handed Blunt weapons.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed BW",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手棍攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044201,
+      "name": "Scroll for Two-handed BW for ATT 60%",
+      "description": "Improves Weapon Attack on Two-Handed Blunt weapons.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed BW",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 1,
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手劍命中卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044014,
+      "name": "Scroll for Two-Handed Sword for Accuracy 10%",
+      "description": "Improves Accuracy on Two-Handed Swords.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 3,
+        "accuracy": 100,
+        "attack": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手劍命中卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044010,
+      "name": "Scroll for Two-Handed Sword for Accuracy 100%",
+      "description": "Improves Accuracy on Two-Handed Swords.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "accuracy": 20
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手劍命中卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044015,
+      "name": "Scroll for Two-Handed Swords for ATT 10%",
+      "description": "Improves Weapon Attack on Two-Handed Swords.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手劍命中卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044012,
+      "name": "Scroll for Two-Handed Sword for Accuracy 60%",
+      "description": "Improves Accuracy on Two-Handed Swords.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "dex": 2,
+        "accuracy": 60,
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手劍攻擊卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044002,
+      "name": "Scroll for Two-handed Sword for ATT 10%",
+      "description": "Improves Weapon Attack on Two-Handed Swords.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手劍攻擊卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044000,
+      "name": "Scroll for Two-handed Sword for ATT 100%",
+      "description": "Improves Weapon Attack on Two-Handed Swords.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "attack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手劍攻擊卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044007,
+      "name": "Scroll for Two-Handed Sword for ATT 15%",
+      "description": "Improves Weapon Attack on Two-Handed Swords.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "defense": 10,
+        "str": 3,
+        "attack": 5
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "雙手劍攻擊卷軸60%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2044001,
+      "name": "Scroll for Two-handed Sword for ATT 60%",
+      "description": "Improves Weapon Attack on Two-Handed Swords.",
+      "category": "Weapon Scroll",
+      "subcategory": "Two-Handed Sword",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "str": 1,
+        "attack": 2
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "短杖魔力卷軸10%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043702,
+      "name": "Scroll for Wand for Magic Attack 10%",
+      "description": "Improves Magic Attack on Wands.",
+      "category": "Weapon Scroll",
+      "subcategory": "Wand",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 10,
+        "magicAttack": 5,
+        "int": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "短杖魔力卷軸100%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043700,
+      "name": "Scroll for Wand for Magic Attack 100%",
+      "description": "Improves Magic Attack on Wands.",
+      "category": "Weapon Scroll",
+      "subcategory": "Cane",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicAttack": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "短杖魔力卷軸15%",
+      "probability": "0.40%\r",
+      "chance": 1000000,
+      "itemId": 2043707,
+      "name": "Scroll for Wand for Magic Attack 15%",
+      "description": "Improves Magic Attack on Wands.",
+      "category": "Weapon Scroll",
+      "subcategory": "Wand",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": true,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicDefense": 10,
+        "magicAttack": 5,
+        "int": 3
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    },
+    {
+      "chineseName": "短杖魔力卷軸60%",
+      "probability": "0.40%",
+      "chance": 1000000,
+      "itemId": 2043701,
+      "name": "Scroll for Wand for Magic Attack 60%",
+      "description": "Improves Magic Attack on Wands.",
+      "category": "Weapon Scroll",
+      "subcategory": "Wand",
+      "overallCategory": "Use",
+      "availability": {
+        "cash": false,
+        "tradeable": false,
+        "exclusive": false,
+        "superior": false,
+        "bossDrop": false,
+        "shopPrice": 1,
+        "durability": false
+      },
+      "requiredStats": {
+        "gender": "any"
+      },
+      "stats": {
+        "magicAttack": 2,
+        "int": 1
+      },
+      "version": {
+        "version": 232,
+        "subversion": 1,
+        "locale": 0
+      }
+    }
+  ]
+}

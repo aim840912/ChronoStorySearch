@@ -1,0 +1,346 @@
+'use client'
+
+import { useState, useEffect, useMemo } from 'react'
+import type { GachaMachine, GachaItem } from '@/types'
+
+interface GachaMachineModalProps {
+  isOpen: boolean
+  onClose: () => void
+}
+
+type SortOption = 'probability-desc' | 'probability-asc' | 'level-desc' | 'level-asc' | 'name-asc'
+
+/**
+ * 轉蛋機圖鑑 Modal
+ * 顯示 7 台轉蛋機及其內容物
+ */
+export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
+  const [machines, setMachines] = useState<GachaMachine[]>([])
+  const [selectedMachine, setSelectedMachine] = useState<GachaMachine | null>(null)
+  const [searchTerm, setSearchTerm] = useState('')
+  const [sortOption, setSortOption] = useState<SortOption>('probability-desc')
+  const [isLoading, setIsLoading] = useState(false)
+
+  // 載入所有轉蛋機資料
+  useEffect(() => {
+    if (!isOpen || machines.length > 0) return
+
+    async function loadMachines() {
+      setIsLoading(true)
+      try {
+        const machineIds = [1, 2, 3, 4, 5, 6, 7]
+        const loadedMachines = await Promise.all(
+          machineIds.map(async (id) => {
+            const response = await fetch(`/data/gacha/machine-${id}.json`)
+            if (!response.ok) throw new Error(`Failed to load machine ${id}`)
+            return response.json() as Promise<GachaMachine>
+          })
+        )
+        setMachines(loadedMachines)
+      } catch (error) {
+        console.error('載入轉蛋機資料失敗:', error)
+      } finally {
+        setIsLoading(false)
+      }
+    }
+
+    loadMachines()
+  }, [isOpen, machines.length])
+
+  // 關閉 Modal 時重置狀態
+  useEffect(() => {
+    if (!isOpen) {
+      setSelectedMachine(null)
+      setSearchTerm('')
+      setSortOption('probability-desc')
+    }
+  }, [isOpen])
+
+  // ESC 鍵關閉 Modal
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        if (selectedMachine) {
+          setSelectedMachine(null)
+        } else {
+          onClose()
+        }
+      }
+    }
+    if (isOpen) {
+      window.addEventListener('keydown', handleEsc)
+      document.body.style.overflow = 'hidden'
+    }
+    return () => {
+      window.removeEventListener('keydown', handleEsc)
+      document.body.style.overflow = 'unset'
+    }
+  }, [isOpen, selectedMachine, onClose])
+
+  // 篩選和排序物品
+  const filteredAndSortedItems = useMemo(() => {
+    if (!selectedMachine) return []
+
+    let items = selectedMachine.items
+
+    // 搜尋過濾
+    if (searchTerm.trim()) {
+      const keywords = searchTerm.toLowerCase().trim().split(/\s+/)
+      items = items.filter((item) => {
+        const searchText = `${item.chineseName} ${item.name}`.toLowerCase()
+        return keywords.every((keyword) => searchText.includes(keyword))
+      })
+    }
+
+    // 排序
+    const sorted = [...items]
+    switch (sortOption) {
+      case 'probability-desc':
+        sorted.sort((a, b) => b.chance - a.chance)
+        break
+      case 'probability-asc':
+        sorted.sort((a, b) => a.chance - b.chance)
+        break
+      case 'level-desc':
+        sorted.sort(
+          (a, b) => (b.requiredStats?.level || 0) - (a.requiredStats?.level || 0)
+        )
+        break
+      case 'level-asc':
+        sorted.sort(
+          (a, b) => (a.requiredStats?.level || 0) - (b.requiredStats?.level || 0)
+        )
+        break
+      case 'name-asc':
+        sorted.sort((a, b) => a.chineseName.localeCompare(b.chineseName, 'zh-TW'))
+        break
+    }
+
+    return sorted
+  }, [selectedMachine, searchTerm, sortOption])
+
+  if (!isOpen) return null
+
+  const handleBackdropClick = () => {
+    if (selectedMachine) {
+      setSelectedMachine(null)
+    } else {
+      onClose()
+    }
+  }
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+      onClick={handleBackdropClick}
+    >
+      <div
+        className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-6xl max-h-[90vh] overflow-hidden flex flex-col"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Modal Header */}
+        <div className="bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-600 dark:to-purple-700 p-6 rounded-t-xl flex-shrink-0">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div>
+                <h2 className="text-2xl font-bold text-white">
+                  {selectedMachine ? selectedMachine.machineName : '轉蛋機圖鑑'}
+                </h2>
+                <p className="text-blue-100 text-sm mt-1">
+                  {selectedMachine
+                    ? `共 ${selectedMachine.totalItems} 件物品`
+                    : `共 ${machines.length} 台轉蛋機`}
+                </p>
+              </div>
+            </div>
+            {/* 關閉按鈕 */}
+            <button
+              onClick={() => (selectedMachine ? setSelectedMachine(null) : onClose())}
+              className="text-white hover:bg-white/20 rounded-full p-2 transition-colors"
+              aria-label={selectedMachine ? '返回' : '關閉'}
+            >
+              {selectedMachine ? (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                  />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Modal Content */}
+        <div className="flex-1 overflow-y-auto p-6">
+          {isLoading ? (
+            <div className="text-center py-12">
+              <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+              <p className="mt-4 text-gray-600 dark:text-gray-400">載入中...</p>
+            </div>
+          ) : selectedMachine ? (
+            <>
+              {/* 搜尋和排序控制 */}
+              <div className="mb-6 space-y-4">
+                {/* 搜尋框 */}
+                <input
+                  type="text"
+                  placeholder="搜尋物品（支援中英文、多關鍵字）..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+
+                {/* 排序選項 */}
+                <div className="flex flex-wrap gap-2">
+                  <select
+                    value={sortOption}
+                    onChange={(e) => setSortOption(e.target.value as SortOption)}
+                    className="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="probability-desc">機率：高到低</option>
+                    <option value="probability-asc">機率：低到高</option>
+                    <option value="level-desc">等級：高到低</option>
+                    <option value="level-asc">等級：低到高</option>
+                    <option value="name-asc">名稱：A-Z</option>
+                  </select>
+
+                  <div className="flex-1 text-right text-sm text-gray-500 dark:text-gray-400 flex items-center justify-end">
+                    顯示 {filteredAndSortedItems.length} / {selectedMachine.totalItems} 件
+                  </div>
+                </div>
+              </div>
+
+              {/* 物品列表 */}
+              {filteredAndSortedItems.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {filteredAndSortedItems.map((item, index) => (
+                    <ItemCard key={`${item.itemId}-${index}`} item={item} />
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-12">
+                  <div className="text-6xl mb-4">🔍</div>
+                  <p className="text-gray-600 dark:text-gray-400 text-lg font-medium">
+                    找不到符合的物品
+                  </p>
+                  <p className="text-gray-500 dark:text-gray-500 text-sm mt-2">
+                    試試搜尋其他關鍵字
+                  </p>
+                </div>
+              )}
+            </>
+          ) : (
+            /* 轉蛋機列表 */
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {machines.map((machine) => (
+                <MachineCard
+                  key={machine.machineId}
+                  machine={machine}
+                  onClick={() => setSelectedMachine(machine)}
+                />
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+/**
+ * 轉蛋機卡片元件
+ */
+function MachineCard({
+  machine,
+  onClick,
+}: {
+  machine: GachaMachine
+  onClick: () => void
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className="group p-6 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-700 dark:to-gray-600 rounded-xl border-2 border-gray-200 dark:border-gray-600 hover:border-blue-400 dark:hover:border-purple-400 hover:shadow-lg transition-all duration-300 text-left w-full"
+    >
+      <div className="flex-1">
+        <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1 group-hover:text-blue-600 dark:group-hover:text-purple-400 transition-colors">
+          {machine.machineName}
+        </h3>
+        <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
+          {machine.description}
+        </p>
+        <div className="flex items-center gap-2 text-sm">
+          <span className="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full font-medium">
+            {machine.totalItems} 件
+          </span>
+        </div>
+      </div>
+    </button>
+  )
+}
+
+/**
+ * 物品卡片元件
+ */
+function ItemCard({ item }: { item: GachaItem }) {
+  // 提取主要屬性（最多 5 個）
+  const mainStats = useMemo(() => {
+    if (!item.stats) return []
+    return Object.entries(item.stats)
+      .slice(0, 5)
+      .map(([key, value]) => ({ key, value }))
+  }, [item.stats])
+
+  return (
+    <div className="p-4 bg-gradient-to-br from-white to-gray-50 dark:from-gray-700 dark:to-gray-600 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-purple-400 dark:hover:border-purple-500 hover:shadow-md transition-all">
+      <div className="flex justify-between items-start mb-2">
+        <div className="flex-1">
+          <h4 className="font-bold text-gray-900 dark:text-white">{item.chineseName}</h4>
+          <p className="text-sm text-gray-600 dark:text-gray-300">{item.name}</p>
+        </div>
+        <div className="text-right ml-2">
+          <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">
+            {item.probability}
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-wrap gap-2 mb-2">
+        {item.category && (
+          <span className="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full">
+            {item.category}
+          </span>
+        )}
+        {item.requiredStats?.level > 0 && (
+          <span className="text-xs px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full">
+            Lv.{item.requiredStats.level}
+          </span>
+        )}
+      </div>
+
+      {mainStats.length > 0 && (
+        <div className="mt-2 pt-2 border-t border-gray-200 dark:border-gray-600">
+          <div className="grid grid-cols-2 gap-1 text-xs text-gray-600 dark:text-gray-400">
+            {mainStats.map(({ key, value }) => (
+              <div key={key}>
+                <span className="font-medium">{key}:</span> +{value}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
