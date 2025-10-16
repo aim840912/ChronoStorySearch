@@ -19,6 +19,24 @@ import { ClearConfirmModal } from '@/components/ClearConfirmModal'
 import { clientLogger } from '@/lib/logger'
 import dropsData from '@/../public/data/drops.json'
 
+/**
+ * 多關鍵字匹配函數
+ * 將搜尋詞按空格拆分，檢查所有關鍵字是否都存在於目標文字中
+ * @param text - 要搜尋的目標文字
+ * @param searchTerm - 搜尋詞（可包含多個空格分隔的關鍵字）
+ * @returns 是否所有關鍵字都匹配
+ * @example
+ * matchesAllKeywords("Scroll for Wand for Magic ATT 10%", "magic 10") // true
+ * matchesAllKeywords("Blue Mana Potion", "blue potion") // true
+ * matchesAllKeywords("Orange Mushroom", "red mushroom") // false (缺少 "red")
+ */
+function matchesAllKeywords(text: string, searchTerm: string): boolean {
+  const keywords = searchTerm.toLowerCase().trim().split(/\s+/)
+  const textLower = text.toLowerCase()
+
+  return keywords.every(keyword => textLower.includes(keyword))
+}
+
 export default function Home() {
   const searchParams = useSearchParams()
   const router = useRouter()
@@ -202,7 +220,7 @@ export default function Home() {
     return Array.from(itemMap.values())
   }, [filterMode, favoriteItems, allDrops])
 
-  // 最愛怪物搜尋過濾
+  // 最愛怪物搜尋過濾（支援多關鍵字搜尋）
   const filteredUniqueMonsters = useMemo(() => {
     if (filterMode !== 'favorite-monsters') return []
 
@@ -210,13 +228,12 @@ export default function Home() {
       return uniqueFavoriteMonsters
     }
 
-    const searchLower = debouncedSearchTerm.toLowerCase()
     return uniqueFavoriteMonsters.filter((monster) =>
-      monster.mobName.toLowerCase().includes(searchLower)
+      matchesAllKeywords(monster.mobName, debouncedSearchTerm)
     )
   }, [uniqueFavoriteMonsters, debouncedSearchTerm, filterMode])
 
-  // 最愛物品搜尋過濾
+  // 最愛物品搜尋過濾（支援多關鍵字搜尋）
   const filteredUniqueItems = useMemo(() => {
     if (filterMode !== 'favorite-items') return []
 
@@ -224,8 +241,9 @@ export default function Home() {
       return uniqueFavoriteItems
     }
 
-    const searchLower = debouncedSearchTerm.toLowerCase()
-    return uniqueFavoriteItems.filter((item) => item.itemName.toLowerCase().includes(searchLower))
+    return uniqueFavoriteItems.filter((item) =>
+      matchesAllKeywords(item.itemName, debouncedSearchTerm)
+    )
   }, [uniqueFavoriteItems, debouncedSearchTerm, filterMode])
 
   // 搜尋功能 - 即時搜尋（使用 debounced 值）+ 最愛篩選
@@ -241,15 +259,14 @@ export default function Home() {
       baseDrops = debouncedSearchTerm.trim() === '' ? initialRandomDrops : allDrops
     }
 
-    // 應用搜尋過濾
+    // 應用搜尋過濾（支援多關鍵字搜尋）
     if (debouncedSearchTerm.trim() === '') {
       setFilteredDrops(baseDrops)
     } else {
-      const searchLower = debouncedSearchTerm.toLowerCase()
       const filtered = baseDrops.filter((drop) => {
         return (
-          drop.mobName.toLowerCase().includes(searchLower) ||
-          drop.itemName.toLowerCase().includes(searchLower)
+          matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
+          matchesAllKeywords(drop.itemName, debouncedSearchTerm)
         )
       })
       setFilteredDrops(filtered)
@@ -292,35 +309,35 @@ export default function Home() {
     return { monsterMap, itemMap }
   }, [allDrops])
 
-  // 計算搜尋建議列表（使用索引優化效能）
+  // 計算搜尋建議列表（使用索引優化效能，支援多關鍵字搜尋）
   const suggestions = useMemo(() => {
     if (debouncedSearchTerm.trim() === '' || nameIndex.monsterMap.size === 0) {
       return []
     }
 
-    const searchLower = debouncedSearchTerm.toLowerCase()
     const results: SuggestionItem[] = []
+    const firstKeyword = debouncedSearchTerm.toLowerCase().trim().split(/\s+/)[0]
 
-    // 從怪物索引中搜尋（不遍歷 allDrops，直接搜尋索引）
-    nameIndex.monsterMap.forEach((suggestion, nameLower) => {
-      if (nameLower.includes(searchLower)) {
+    // 從怪物索引中搜尋（支援多關鍵字匹配）
+    nameIndex.monsterMap.forEach((suggestion) => {
+      if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
         results.push(suggestion)
       }
     })
 
-    // 從物品索引中搜尋
-    nameIndex.itemMap.forEach((suggestion, nameLower) => {
-      if (nameLower.includes(searchLower)) {
+    // 從物品索引中搜尋（支援多關鍵字匹配）
+    nameIndex.itemMap.forEach((suggestion) => {
+      if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
         results.push(suggestion)
       }
     })
 
-    // 排序：優先開頭匹配，其次按出現次數
+    // 排序：優先第一個關鍵字在開頭匹配，其次按出現次數
     results.sort((a, b) => {
       const aNameLower = a.name.toLowerCase()
       const bNameLower = b.name.toLowerCase()
-      const aStartsWith = aNameLower.startsWith(searchLower)
-      const bStartsWith = bNameLower.startsWith(searchLower)
+      const aStartsWith = aNameLower.startsWith(firstKeyword)
+      const bStartsWith = bNameLower.startsWith(firstKeyword)
 
       if (aStartsWith && !bStartsWith) return -1
       if (!aStartsWith && bStartsWith) return 1
