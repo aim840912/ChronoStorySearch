@@ -1,0 +1,13 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圓形 -->
+  <circle cx="16" cy="16" r="16" fill="#F3F4F6"/>
+
+  <!-- 箱子主體 -->
+  <rect x="8" y="12" width="16" height="12" rx="1" fill="#9CA3AF"/>
+
+  <!-- 箱子蓋子 -->
+  <path d="M8 12 L16 8 L24 12 L16 16 Z" fill="#6B7280"/>
+
+  <!-- 問號 -->
+  <text x="16" y="21" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">?</text>
+</svg>
