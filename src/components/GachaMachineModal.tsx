@@ -295,6 +295,8 @@ function MachineCard({
  * 物品卡片元件
  */
 function ItemCard({ item }: { item: GachaItem }) {
+  const [imageError, setImageError] = useState(false)
+
   // 提取主要屬性（最多 5 個）
   const mainStats = useMemo(() => {
     if (!item.stats) return []
@@ -303,16 +305,32 @@ function ItemCard({ item }: { item: GachaItem }) {
       .map(([key, value]) => ({ key, value }))
   }, [item.stats])
 
+  // 物品圖示 URL
+  const itemIconUrl = imageError
+    ? '/images/items/default.svg'
+    : `/images/items/${item.itemId}.png`
+
   return (
     <div className="p-4 bg-gradient-to-br from-white to-gray-50 dark:from-gray-700 dark:to-gray-600 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-purple-400 dark:hover:border-purple-500 hover:shadow-md transition-all">
-      <div className="flex justify-between items-start mb-2">
-        <div className="flex-1">
-          <h4 className="font-bold text-gray-900 dark:text-white">{item.chineseName}</h4>
-          <p className="text-sm text-gray-600 dark:text-gray-300">{item.name}</p>
-        </div>
-        <div className="text-right ml-2">
-          <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">
-            {item.probability}
+      <div className="flex gap-3 mb-2">
+        {/* 物品圖示 */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={itemIconUrl}
+          alt={item.chineseName}
+          className="w-12 h-12 object-contain flex-shrink-0"
+          onError={() => setImageError(true)}
+        />
+
+        <div className="flex justify-between items-start flex-1">
+          <div className="flex-1">
+            <h4 className="font-bold text-gray-900 dark:text-white">{item.chineseName}</h4>
+            <p className="text-sm text-gray-600 dark:text-gray-300">{item.name || item.itemName}</p>
+          </div>
+          <div className="text-right ml-2">
+            <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">
+              {item.probability}
+            </div>
           </div>
         </div>
       </div>
