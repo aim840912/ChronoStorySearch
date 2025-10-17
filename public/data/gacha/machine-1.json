@@ -1,6 +1,7 @@
 {
   "machineId": 1,
-  "machineName": "維多利亞港轉蛋機",
+  "machineName": "LithHarbor",
+  "chineseMachineName": "維多利亞港",
   "description": "維多利亞港轉蛋機，可獲得各種裝備道具",
   "totalItems": 114,
   "items": [

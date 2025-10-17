@@ -1,6 +1,7 @@
 {
   "machineId": 2,
-  "machineName": "弓箭手村轉蛋機",
+  "machineName": "Henesys",
+  "chineseMachineName": "弓箭手村",
   "description": "弓箭手村轉蛋機，可獲得各種裝備道具",
   "totalItems": 200,
   "items": [

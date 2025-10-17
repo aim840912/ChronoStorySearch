@@ -1,6 +1,7 @@
 {
   "machineId": 5,
-  "machineName": "魔法森林轉蛋機",
+  "machineName": "Ellinia",
+  "chineseMachineName": "魔法森林",
   "description": "魔法森林轉蛋機，可獲得各種裝備道具",
   "totalItems": 180,
   "items": [

@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
+import { getItemImageUrl } from '@/lib/image-utils'
 
 interface ItemCardProps {
   itemId: number
@@ -29,17 +30,11 @@ export function ItemCard({
 }: ItemCardProps) {
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
-  const [imageError, setImageError] = useState(false)
 
   // 獲取顯示名稱（支援中英文切換）
   const displayItemName = getItemDisplayName(itemName, chineseItemName, language)
 
-  const itemIconUrl =
-    itemId === 0
-      ? null
-      : imageError
-        ? '/images/items/default.svg'
-        : `/images/items/${itemId}.png`
+  const itemIconUrl = itemId === 0 ? null : getItemImageUrl(itemId)
 
   return (
     <div
@@ -82,7 +77,7 @@ export function ItemCard({
             src={itemIconUrl}
             alt={displayItemName}
             className="w-16 h-16 object-contain flex-shrink-0"
-            onError={() => setImageError(true)}
+            
           />
         ) : (
           <div className="w-16 h-16 flex items-center justify-center flex-shrink-0">

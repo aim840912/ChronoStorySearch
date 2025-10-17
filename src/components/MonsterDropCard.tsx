@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from 'react'
 import type { DropItem } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getMonsterDisplayName } from '@/lib/display-name'
+import { getMonsterImageUrl } from '@/lib/image-utils'
 
 interface MonsterDropCardProps {
   drop: DropItem
@@ -24,7 +24,6 @@ export function MonsterDropCard({
 }: MonsterDropCardProps) {
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
-  const [monsterImageError, setMonsterImageError] = useState(false)
 
   // 獲取顯示名稱（支援中英文切換）
   const displayMobName = getMonsterDisplayName(drop.mobName, drop.chineseMobName, language)
@@ -32,9 +31,7 @@ export function MonsterDropCard({
   const chancePercent = (drop.chance * 100).toFixed(4)
   const qtyRange =
     drop.minQty === drop.maxQty ? `${drop.minQty}` : `${drop.minQty}-${drop.maxQty}`
-  const monsterIconUrl = monsterImageError
-    ? '/images/monsters/default.svg'
-    : `/images/monsters/${drop.mobId}.png`
+  const monsterIconUrl = getMonsterImageUrl(drop.mobId)
 
   return (
     <div
@@ -76,7 +73,6 @@ export function MonsterDropCard({
           src={monsterIconUrl}
           alt={displayMobName}
           className="w-10 h-10 object-contain"
-          onError={() => setMonsterImageError(true)}
         />
         <div className="flex-1">
           <p className="font-semibold text-gray-900 dark:text-white">{displayMobName}</p>

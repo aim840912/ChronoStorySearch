@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getMonsterDisplayName } from '@/lib/display-name'
+import { getMonsterImageUrl } from '@/lib/image-utils'
 
 interface MonsterCardProps {
   mobId: number
@@ -29,14 +30,11 @@ export function MonsterCard({
 }: MonsterCardProps) {
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
-  const [imageError, setImageError] = useState(false)
 
   // 獲取顯示名稱（支援中英文切換）
   const displayMobName = getMonsterDisplayName(mobName, chineseMobName, language)
 
-  const monsterIconUrl = imageError
-    ? '/images/monsters/default.svg'
-    : `/images/monsters/${mobId}.png`
+  const monsterIconUrl = getMonsterImageUrl(mobId)
 
   return (
     <div
@@ -78,7 +76,7 @@ export function MonsterCard({
           src={monsterIconUrl}
           alt={displayMobName}
           className="w-16 h-16 object-contain flex-shrink-0"
-          onError={() => setImageError(true)}
+          
         />
         <div className="flex-1">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">

@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react'
 import type { DropItem } from '@/types'
 import { DropItemCard } from './DropItemCard'
 import { clientLogger } from '@/lib/logger'
+import { getMonsterImageUrl } from '@/lib/image-utils'
 
 interface MonsterModalProps {
   isOpen: boolean
@@ -36,7 +37,6 @@ export function MonsterModal({
   onItemClick,
 }: MonsterModalProps) {
   const isDev = process.env.NODE_ENV === 'development'
-  const [monsterImageError, setMonsterImageError] = useState(false)
   const [showToast, setShowToast] = useState(false)
   const [toastMessage, setToastMessage] = useState('')
 
@@ -79,9 +79,7 @@ export function MonsterModal({
 
   if (!isOpen || !monsterId) return null
 
-  const monsterIconUrl = monsterImageError
-    ? '/images/monsters/default.svg'
-    : `/images/monsters/${monsterId}.png`
+  const monsterIconUrl = getMonsterImageUrl(monsterId)
 
   return (
     <div
@@ -93,7 +91,7 @@ export function MonsterModal({
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
-        <div className="sticky top-0 bg-gradient-to-r from-blue-500 to-indigo-600 dark:from-blue-600 dark:to-indigo-700 p-6 rounded-t-xl">
+        <div className="sticky top-0 z-10 bg-gradient-to-r from-blue-500 to-indigo-600 dark:from-blue-600 dark:to-indigo-700 p-6 rounded-t-xl">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -101,7 +99,6 @@ export function MonsterModal({
                 src={monsterIconUrl}
                 alt={monsterName}
                 className="w-16 h-16 object-contain"
-                onError={() => setMonsterImageError(true)}
               />
               <div>
                 <h2 className="text-2xl font-bold text-white mb-1">{monsterName}</h2>

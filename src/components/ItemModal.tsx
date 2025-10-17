@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react'
 import type { DropItem } from '@/types'
 import { MonsterDropCard } from './MonsterDropCard'
 import { clientLogger } from '@/lib/logger'
+import { getItemImageUrl } from '@/lib/image-utils'
 
 interface ItemModalProps {
   isOpen: boolean
@@ -36,7 +37,6 @@ export function ItemModal({
   onMonsterClick,
 }: ItemModalProps) {
   const isDev = process.env.NODE_ENV === 'development'
-  const [itemImageError, setItemImageError] = useState(false)
   const [showToast, setShowToast] = useState(false)
   const [toastMessage, setToastMessage] = useState('')
 
@@ -79,12 +79,7 @@ export function ItemModal({
 
   if (!isOpen || (itemId === null && itemId !== 0)) return null
 
-  const itemIconUrl =
-    itemId === 0
-      ? null
-      : itemImageError
-        ? '/images/items/default.svg'
-        : `/images/items/${itemId}.png`
+  const itemIconUrl = itemId === 0 ? null : getItemImageUrl(itemId)
 
   return (
     <div
@@ -96,7 +91,7 @@ export function ItemModal({
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header - GREEN GRADIENT */}
-        <div className="sticky top-0 bg-gradient-to-r from-green-500 to-emerald-600 dark:from-green-600 dark:to-emerald-700 p-6 rounded-t-xl">
+        <div className="sticky top-0 z-10 bg-gradient-to-r from-green-500 to-emerald-600 dark:from-green-600 dark:to-emerald-700 p-6 rounded-t-xl">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               {itemIconUrl ? (
@@ -105,7 +100,6 @@ export function ItemModal({
                   src={itemIconUrl}
                   alt={itemName}
                   className="w-16 h-16 object-contain"
-                  onError={() => setItemImageError(true)}
                 />
               ) : (
                 <div className="w-16 h-16 flex items-center justify-center">

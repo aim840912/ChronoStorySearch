@@ -1,6 +1,7 @@
 {
   "machineId": 4,
-  "machineName": "墮落城市轉蛋機",
+  "machineName": "KerningCity",
+  "chineseMachineName": "墮落城市",
   "description": "墮落城市轉蛋機，可獲得各種裝備道具",
   "totalItems": 241,
   "items": [

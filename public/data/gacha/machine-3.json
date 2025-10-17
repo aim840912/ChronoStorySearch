@@ -1,6 +1,7 @@
 {
   "machineId": 3,
-  "machineName": "勇士之村轉蛋機",
+  "machineName": "Perion",
+  "chineseMachineName": "勇士之村",
   "description": "勇士之村轉蛋機，可獲得各種裝備道具",
   "totalItems": 268,
   "items": [

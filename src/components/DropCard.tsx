@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from 'react'
 import type { DropItem } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getMonsterDisplayName, getItemDisplayName } from '@/lib/display-name'
+import { getItemImageUrl, getMonsterImageUrl } from '@/lib/image-utils'
 
 interface DropCardProps {
   drop: DropItem
@@ -19,8 +19,6 @@ interface DropCardProps {
 export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite }: DropCardProps) {
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
-  const [imageError, setImageError] = useState(false)
-  const [itemImageError, setItemImageError] = useState(false)
   const chancePercent = (drop.chance * 100).toFixed(4)
   const qtyRange =
     drop.minQty === drop.maxQty ? `${drop.minQty}` : `${drop.minQty}-${drop.maxQty}`
@@ -29,18 +27,11 @@ export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite }: Dr
   const displayMobName = getMonsterDisplayName(drop.mobName, drop.chineseMobName, language)
   const displayItemName = getItemDisplayName(drop.itemName, drop.chineseItemName, language)
 
-  // 使用本地圖片，錯誤時使用預設圖示
-  const monsterIconUrl = imageError
-    ? '/images/monsters/default.svg'
-    : `/images/monsters/${drop.mobId}.png`
+  // 使用本地圖片，直接使用工具函數
+  const monsterIconUrl = getMonsterImageUrl(drop.mobId)
 
   // 物品圖示 URL（itemId = 0 是 Meso，不顯示圖示）
-  const itemIconUrl =
-    drop.itemId === 0
-      ? null
-      : itemImageError
-        ? '/images/items/default.svg'
-        : `/images/items/${drop.itemId}.png`
+  const itemIconUrl = drop.itemId === 0 ? null : getItemImageUrl(drop.itemId)
 
   return (
     <div
@@ -82,7 +73,7 @@ export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite }: Dr
           src={monsterIconUrl}
           alt={displayMobName}
           className="w-12 h-12 object-contain flex-shrink-0"
-          onError={() => setImageError(true)}
+          
         />
         <div className="flex-1">
           <h3 className="text-lg font-bold text-gray-900 dark:text-white">{displayMobName}</h3>
@@ -104,7 +95,7 @@ export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite }: Dr
               src={itemIconUrl}
               alt={displayItemName}
               className="w-8 h-8 object-contain flex-shrink-0"
-              onError={() => setItemImageError(true)}
+              
             />
           ) : (
             <span className="text-lg">💰</span>

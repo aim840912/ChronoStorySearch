@@ -1,6 +1,7 @@
 {
   "machineId": 7,
-  "machineName": "自由市場轉蛋機",
+  "machineName": "FreeMarket",
+  "chineseMachineName": "自由市場",
   "description": "自由市場轉蛋機，可獲得各種裝備道具",
   "totalItems": 247,
   "items": [

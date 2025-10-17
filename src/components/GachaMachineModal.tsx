@@ -1,7 +1,9 @@
 'use client'
 
 import { useState, useEffect, useMemo } from 'react'
+import { useLanguage } from '@/contexts/LanguageContext'
 import type { GachaMachine, GachaItem } from '@/types'
+import { getItemImageUrl } from '@/lib/image-utils'
 
 interface GachaMachineModalProps {
   isOpen: boolean
@@ -15,6 +17,7 @@ type SortOption = 'probability-desc' | 'probability-asc' | 'level-desc' | 'level
  * 顯示 7 台轉蛋機及其內容物
  */
 export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
+  const { language, t } = useLanguage()
   const [machines, setMachines] = useState<GachaMachine[]>([])
   const [selectedMachine, setSelectedMachine] = useState<GachaMachine | null>(null)
   const [searchTerm, setSearchTerm] = useState('')
@@ -139,17 +142,21 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
-        <div className="bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-600 dark:to-purple-700 p-6 rounded-t-xl flex-shrink-0">
+        <div className="sticky top-0 z-10 bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-600 dark:to-purple-700 p-6 rounded-t-xl flex-shrink-0">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div>
                 <h2 className="text-2xl font-bold text-white">
-                  {selectedMachine ? selectedMachine.machineName : '轉蛋機圖鑑'}
+                  {selectedMachine
+                    ? (language === 'zh-TW' && selectedMachine.chineseMachineName
+                        ? selectedMachine.chineseMachineName
+                        : selectedMachine.machineName)
+                    : t('gacha.title')}
                 </h2>
                 <p className="text-blue-100 text-sm mt-1">
                   {selectedMachine
-                    ? `共 ${selectedMachine.totalItems} 件物品`
-                    : `共 ${machines.length} 台轉蛋機`}
+                    ? `${t('gacha.total')} ${selectedMachine.totalItems} ${t('gacha.itemCount')}`
+                    : `${t('gacha.total')} ${machines.length} ${t('gacha.machineCount')}`}
                 </p>
               </div>
             </div>
@@ -157,7 +164,7 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
             <button
               onClick={() => (selectedMachine ? setSelectedMachine(null) : onClose())}
               className="text-white hover:bg-white/20 rounded-full p-2 transition-colors"
-              aria-label={selectedMachine ? '返回' : '關閉'}
+              aria-label={selectedMachine ? t('gacha.back') : t('gacha.close')}
             >
               {selectedMachine ? (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -187,7 +194,7 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
           {isLoading ? (
             <div className="text-center py-12">
               <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-              <p className="mt-4 text-gray-600 dark:text-gray-400">載入中...</p>
+              <p className="mt-4 text-gray-600 dark:text-gray-400">{t('loading')}</p>
             </div>
           ) : selectedMachine ? (
             <>
@@ -196,7 +203,7 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
                 {/* 搜尋框 */}
                 <input
                   type="text"
-                  placeholder="搜尋物品（支援中英文、多關鍵字）..."
+                  placeholder={t('gacha.searchPlaceholder')}
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -209,15 +216,15 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
                     onChange={(e) => setSortOption(e.target.value as SortOption)}
                     className="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   >
-                    <option value="probability-desc">機率：高到低</option>
-                    <option value="probability-asc">機率：低到高</option>
-                    <option value="level-desc">等級：高到低</option>
-                    <option value="level-asc">等級：低到高</option>
-                    <option value="name-asc">名稱：A-Z</option>
+                    <option value="probability-desc">{t('gacha.sortProbabilityDesc')}</option>
+                    <option value="probability-asc">{t('gacha.sortProbabilityAsc')}</option>
+                    <option value="level-desc">{t('gacha.sortLevelDesc')}</option>
+                    <option value="level-asc">{t('gacha.sortLevelAsc')}</option>
+                    <option value="name-asc">{t('gacha.sortNameAsc')}</option>
                   </select>
 
                   <div className="flex-1 text-right text-sm text-gray-500 dark:text-gray-400 flex items-center justify-end">
-                    顯示 {filteredAndSortedItems.length} / {selectedMachine.totalItems} 件
+                    {t('gacha.showing')} {filteredAndSortedItems.length} {t('gacha.of')} {selectedMachine.totalItems} {t('gacha.items')}
                   </div>
                 </div>
               </div>
@@ -226,17 +233,17 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
               {filteredAndSortedItems.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {filteredAndSortedItems.map((item, index) => (
-                    <ItemCard key={`${item.itemId}-${index}`} item={item} />
+                    <ItemCard key={`${item.itemId}-${index}`} item={item} language={language} />
                   ))}
                 </div>
               ) : (
                 <div className="text-center py-12">
                   <div className="text-6xl mb-4">🔍</div>
                   <p className="text-gray-600 dark:text-gray-400 text-lg font-medium">
-                    找不到符合的物品
+                    {t('gacha.noResults')}
                   </p>
                   <p className="text-gray-500 dark:text-gray-500 text-sm mt-2">
-                    試試搜尋其他關鍵字
+                    {t('gacha.tryOtherKeywords')}
                   </p>
                 </div>
               )}
@@ -249,6 +256,7 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
                   key={machine.machineId}
                   machine={machine}
                   onClick={() => setSelectedMachine(machine)}
+                  language={language}
                 />
               ))}
             </div>
@@ -265,25 +273,29 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
 function MachineCard({
   machine,
   onClick,
+  language,
 }: {
   machine: GachaMachine
   onClick: () => void
+  language: 'zh-TW' | 'en'
 }) {
+  // 根據語言選擇顯示名稱
+  const displayName = language === 'zh-TW' && machine.chineseMachineName
+    ? machine.chineseMachineName
+    : machine.machineName
+
   return (
     <button
       onClick={onClick}
       className="group p-6 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-700 dark:to-gray-600 rounded-xl border-2 border-gray-200 dark:border-gray-600 hover:border-blue-400 dark:hover:border-purple-400 hover:shadow-lg transition-all duration-300 text-left w-full"
     >
       <div className="flex-1">
-        <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1 group-hover:text-blue-600 dark:group-hover:text-purple-400 transition-colors">
-          {machine.machineName}
+        <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-purple-400 transition-colors">
+          {displayName}
         </h3>
-        <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
-          {machine.description}
-        </p>
         <div className="flex items-center gap-2 text-sm">
           <span className="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full font-medium">
-            {machine.totalItems} 件
+            {machine.totalItems} {language === 'zh-TW' ? '件' : 'items'}
           </span>
         </div>
       </div>
@@ -294,39 +306,31 @@ function MachineCard({
 /**
  * 物品卡片元件
  */
-function ItemCard({ item }: { item: GachaItem }) {
-  const [imageError, setImageError] = useState(false)
-
-  // 提取主要屬性（最多 5 個）
-  const mainStats = useMemo(() => {
-    if (!item.stats) return []
-    return Object.entries(item.stats)
-      .slice(0, 5)
-      .map(([key, value]) => ({ key, value }))
-  }, [item.stats])
+function ItemCard({ item, language }: { item: GachaItem; language: 'zh-TW' | 'en' }) {
+  // 根據語言選擇顯示名稱
+  const displayName = language === 'zh-TW' ? item.chineseName : (item.name || item.itemName || item.chineseName)
 
   // 物品圖示 URL
-  const itemIconUrl = imageError
-    ? '/images/items/default.svg'
-    : `/images/items/${item.itemId}.png`
+  const itemIconUrl = getItemImageUrl(item.itemId)
 
   return (
     <div className="p-4 bg-gradient-to-br from-white to-gray-50 dark:from-gray-700 dark:to-gray-600 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-purple-400 dark:hover:border-purple-500 hover:shadow-md transition-all">
-      <div className="flex gap-3 mb-2">
+      <div className="flex gap-3">
         {/* 物品圖示 */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={itemIconUrl}
-          alt={item.chineseName}
+          alt={displayName}
           className="w-12 h-12 object-contain flex-shrink-0"
-          onError={() => setImageError(true)}
         />
 
         <div className="flex justify-between items-start flex-1">
+          {/* 物品名稱 */}
           <div className="flex-1">
-            <h4 className="font-bold text-gray-900 dark:text-white">{item.chineseName}</h4>
-            <p className="text-sm text-gray-600 dark:text-gray-300">{item.name || item.itemName}</p>
+            <h4 className="font-bold text-gray-900 dark:text-white">{displayName}</h4>
           </div>
+
+          {/* 機率 */}
           <div className="text-right ml-2">
             <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">
               {item.probability}
@@ -335,28 +339,12 @@ function ItemCard({ item }: { item: GachaItem }) {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-2 mb-2">
-        {item.category && (
-          <span className="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full">
-            {item.category}
-          </span>
-        )}
-        {item.requiredStats?.level && item.requiredStats.level > 0 && (
+      {/* 等級標籤 */}
+      {item.requiredStats?.level && item.requiredStats.level > 0 && (
+        <div className="mt-2">
           <span className="text-xs px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full">
             Lv.{item.requiredStats.level}
           </span>
-        )}
-      </div>
-
-      {mainStats.length > 0 && (
-        <div className="mt-2 pt-2 border-t border-gray-200 dark:border-gray-600">
-          <div className="grid grid-cols-2 gap-1 text-xs text-gray-600 dark:text-gray-400">
-            {mainStats.map(({ key, value }) => (
-              <div key={key}>
-                <span className="font-medium">{key}:</span> +{value}
-              </div>
-            ))}
-          </div>
         </div>
       )}
     </div>

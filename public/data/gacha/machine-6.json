@@ -1,6 +1,7 @@
 {
   "machineId": 6,
-  "machineName": "鯨魚號轉蛋機",
+  "machineName": "Nautilus",
+  "chineseMachineName": "鯨魚號",
   "description": "鯨魚號轉蛋機，可獲得各種裝備道具",
   "totalItems": 56,
   "items": [

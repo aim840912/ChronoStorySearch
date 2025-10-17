@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from 'react'
 import type { DropItem } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
+import { getItemImageUrl } from '@/lib/image-utils'
 
 interface DropItemCardProps {
   drop: DropItem
@@ -24,7 +24,6 @@ export function DropItemCard({
 }: DropItemCardProps) {
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
-  const [itemImageError, setItemImageError] = useState(false)
 
   // 獲取顯示名稱（支援中英文切換）
   const displayItemName = getItemDisplayName(drop.itemName, drop.chineseItemName, language)
@@ -32,12 +31,7 @@ export function DropItemCard({
   const chancePercent = (drop.chance * 100).toFixed(4)
   const qtyRange =
     drop.minQty === drop.maxQty ? `${drop.minQty}` : `${drop.minQty}-${drop.maxQty}`
-  const itemIconUrl =
-    drop.itemId === 0
-      ? null
-      : itemImageError
-        ? '/images/items/default.svg'
-        : `/images/items/${drop.itemId}.png`
+  const itemIconUrl = drop.itemId === 0 ? null : getItemImageUrl(drop.itemId)
 
   return (
     <div
@@ -80,7 +74,6 @@ export function DropItemCard({
             src={itemIconUrl}
             alt={displayItemName}
             className="w-10 h-10 object-contain"
-            onError={() => setItemImageError(true)}
           />
         ) : (
           <span className="text-2xl">💰</span>
