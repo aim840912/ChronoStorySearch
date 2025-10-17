@@ -87,5 +87,15 @@
   "card.itemId": "物品 ID",
   "share.button": "分享",
   "share.success": "連結已複製到剪貼簿！",
-  "share.error": "無法複製連結"
+  "share.error": "無法複製連結",
+  "modal.monsterDropCount": "共 {count} 種掉落物品",
+  "modal.itemDropCount": "共 {count} 隻怪物掉落此物品",
+  "modal.monsterId": "怪物 ID",
+  "modal.itemId": "物品 ID",
+  "modal.favoriteAdd": "加入收藏",
+  "modal.favoriteRemove": "取消收藏",
+  "modal.share": "分享連結",
+  "modal.close": "關閉",
+  "modal.linkCopied": "連結已複製到剪貼簿",
+  "modal.copyFailed": "複製失敗，請手動複製"
 }

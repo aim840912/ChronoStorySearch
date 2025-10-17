@@ -5,6 +5,7 @@ import type { DropItem } from '@/types'
 import { DropItemCard } from './DropItemCard'
 import { clientLogger } from '@/lib/logger'
 import { getMonsterImageUrl } from '@/lib/image-utils'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 interface MonsterModalProps {
   isOpen: boolean
@@ -36,6 +37,7 @@ export function MonsterModal({
   onToggleItemFavorite,
   onItemClick,
 }: MonsterModalProps) {
+  const { t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
   const [showToast, setShowToast] = useState(false)
   const [toastMessage, setToastMessage] = useState('')
@@ -66,12 +68,12 @@ export function MonsterModal({
     try {
       const url = `${window.location.origin}${window.location.pathname}?monster=${monsterId}`
       await navigator.clipboard.writeText(url)
-      setToastMessage('連結已複製到剪貼簿')
+      setToastMessage(t('modal.linkCopied'))
       setShowToast(true)
       setTimeout(() => setShowToast(false), 3000)
     } catch (error) {
       clientLogger.error('複製連結失敗', error)
-      setToastMessage('複製失敗，請手動複製')
+      setToastMessage(t('modal.copyFailed'))
       setShowToast(true)
       setTimeout(() => setShowToast(false), 3000)
     }
@@ -103,7 +105,7 @@ export function MonsterModal({
               <div>
                 <h2 className="text-2xl font-bold text-white mb-1">{monsterName}</h2>
                 <p className="text-blue-100 text-sm">
-                  {isDev && `怪物 ID: ${monsterId} · `}共 {monsterDrops.length} 種掉落物品
+                  {isDev && `${t('modal.monsterId')}: ${monsterId} · `}{t('modal.monsterDropCount').replace('{count}', String(monsterDrops.length))}
                 </p>
               </div>
             </div>
@@ -116,7 +118,7 @@ export function MonsterModal({
                     ? 'bg-red-500 hover:bg-red-600 text-white'
                     : 'bg-white/20 hover:bg-white/30 text-white border border-white/30'
                 }`}
-                aria-label={isFavorite ? '取消收藏' : '加入收藏'}
+                aria-label={isFavorite ? t('modal.favoriteRemove') : t('modal.favoriteAdd')}
               >
                 <svg
                   className="w-6 h-6"
@@ -136,7 +138,7 @@ export function MonsterModal({
               <button
                 onClick={handleShare}
                 className="p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30"
-                aria-label="分享連結"
+                aria-label={t('modal.share')}
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
@@ -151,7 +153,7 @@ export function MonsterModal({
               <button
                 onClick={onClose}
                 className="text-white hover:bg-white/20 rounded-full p-2 transition-colors"
-                aria-label="關閉"
+                aria-label={t('modal.close')}
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
