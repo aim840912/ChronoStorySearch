@@ -1,9 +1,9 @@
 'use client'
 
+import { useLanguage } from '@/contexts/LanguageContext'
 import type { FilterMode } from '@/types'
 
 interface StatsDisplayProps {
-  message: string
   filterMode: FilterMode
   searchTerm: string
   filteredUniqueMonsterCount: number
@@ -19,7 +19,6 @@ interface StatsDisplayProps {
  * 根據篩選模式顯示不同的統計資訊
  */
 export function StatsDisplay({
-  message,
   filterMode,
   searchTerm,
   filteredUniqueMonsterCount,
@@ -29,24 +28,25 @@ export function StatsDisplay({
   filteredDropsCount,
   totalDropsCount,
 }: StatsDisplayProps) {
+  const { t } = useLanguage()
   // 生成統計文字
   const getStatsText = () => {
     if (filterMode === 'favorite-monsters') {
       return searchTerm
-        ? `搜尋結果: ${filteredUniqueMonsterCount} 隻怪物（從 ${favoriteMonsterCount} 隻最愛怪物中搜尋）`
-        : `我的最愛: ${filteredUniqueMonsterCount} 隻怪物`
+        ? `${t('stats.searchResult')}: ${filteredUniqueMonsterCount} ${t('stats.monsterUnit')}（${t('stats.from')} ${favoriteMonsterCount} ${t('stats.monsterUnit')}${t('stats.in')}）`
+        : `${t('stats.myFavorites')}: ${filteredUniqueMonsterCount} ${t('stats.monsterUnit')}`
     }
 
     if (filterMode === 'favorite-items') {
       return searchTerm
-        ? `搜尋結果: ${filteredUniqueItemCount} 個物品（從 ${favoriteItemCount} 個最愛物品中搜尋）`
-        : `我的最愛: ${filteredUniqueItemCount} 個物品`
+        ? `${t('stats.searchResult')}: ${filteredUniqueItemCount} ${t('stats.itemUnit')}（${t('stats.from')} ${favoriteItemCount} ${t('stats.itemUnit')}${t('stats.in')}）`
+        : `${t('stats.myFavorites')}: ${filteredUniqueItemCount} ${t('stats.itemUnit')}`
     }
 
     // filterMode === 'all'
     return searchTerm
-      ? `搜尋結果: ${filteredDropsCount} 筆掉落（從 ${totalDropsCount} 筆中搜尋）`
-      : `隨機顯示 ${filteredDropsCount} 筆（共 ${totalDropsCount} 筆掉落資料）`
+      ? `${t('stats.searchResult')}: ${filteredDropsCount} ${t('stats.dropUnit')}（${t('stats.from')} ${totalDropsCount} ${t('stats.dropUnit')}${t('stats.in')}）`
+      : `${t('stats.randomDisplay')} ${filteredDropsCount} ${t('stats.dropUnit')}（${t('stats.total')} ${totalDropsCount} ${t('stats.dropData')}）`
   }
 
   return (
@@ -67,11 +67,8 @@ export function StatsDisplay({
             />
           </svg>
           <div className="flex-1">
-            <p className="text-sm font-medium text-green-800 dark:text-green-200">
-              ✓ {message}
-            </p>
-            <p className="text-xs mt-1 text-green-600 dark:text-green-300">
-              {getStatsText()} | 資料來源: ChronoStory 掉落表
+            <p className="text-sm text-green-800 dark:text-green-200">
+              {getStatsText()} | {t('stats.dataSource')}
             </p>
           </div>
         </div>

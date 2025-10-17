@@ -2,8 +2,10 @@
 export interface DropItem {
   mobId: number
   mobName: string
+  chineseMobName?: string | null // 中文怪物名稱（可能為 null）
   itemId: number
   itemName: string
+  chineseItemName?: string | null // 中文物品名稱（可能為 null）
   chance: number // 實際機率 (0-1)
   minQty: number
   maxQty: number
@@ -14,6 +16,7 @@ export interface SuggestionItem {
   name: string
   type: 'monster' | 'item' | 'gacha'
   count: number // 該名稱在資料中出現的次數
+  id?: number // 怪物或物品的 ID（用於顯示圖片）
   // 轉蛋機專用欄位（可選）
   machineId?: number
   machineName?: string
@@ -108,3 +111,12 @@ export interface GachaSearchResult {
   machineId: number
   machineName: string
 }
+
+// 語言相關類型
+export type Language = 'zh-TW' | 'en'
+
+// 翻譯鍵值類型
+export type TranslationKey = string
+
+// 翻譯字典類型
+export type Translations = Record<string, string>

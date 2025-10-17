@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import type { DropItem } from '@/types'
+import { useLanguage } from '@/contexts/LanguageContext'
+import { getMonsterDisplayName, getItemDisplayName } from '@/lib/display-name'
 
 interface DropCardProps {
   drop: DropItem
@@ -15,12 +17,17 @@ interface DropCardProps {
  * 顯示怪物及其掉落物品的完整資訊
  */
 export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite }: DropCardProps) {
+  const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
   const [imageError, setImageError] = useState(false)
   const [itemImageError, setItemImageError] = useState(false)
   const chancePercent = (drop.chance * 100).toFixed(4)
   const qtyRange =
     drop.minQty === drop.maxQty ? `${drop.minQty}` : `${drop.minQty}-${drop.maxQty}`
+
+  // 獲取顯示名稱（支援中英文切換）
+  const displayMobName = getMonsterDisplayName(drop.mobName, drop.chineseMobName, language)
+  const displayItemName = getItemDisplayName(drop.itemName, drop.chineseItemName, language)
 
   // 使用本地圖片，錯誤時使用預設圖示
   const monsterIconUrl = imageError
@@ -37,21 +44,21 @@ export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite }: Dr
 
   return (
     <div
-      onClick={() => onCardClick(drop.mobId, drop.mobName)}
+      onClick={() => onCardClick(drop.mobId, displayMobName)}
       className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative"
     >
       {/* 最愛按鈕 - 右上角 */}
       <button
         onClick={(e) => {
           e.stopPropagation()
-          onToggleFavorite(drop.mobId, drop.mobName)
+          onToggleFavorite(drop.mobId, displayMobName)
         }}
         className={`absolute top-3 right-3 p-2 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 ${
           isFavorite
             ? 'bg-red-500 hover:bg-red-600 text-white'
             : 'bg-white dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-400 dark:text-gray-500 border border-gray-300 dark:border-gray-600'
         }`}
-        aria-label={isFavorite ? '取消收藏' : '加入收藏'}
+        aria-label={isFavorite ? t('card.unfavorite') : t('card.favorite')}
       >
         <svg
           className="w-5 h-5"
@@ -73,15 +80,15 @@ export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite }: Dr
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={monsterIconUrl}
-          alt={drop.mobName}
+          alt={displayMobName}
           className="w-12 h-12 object-contain flex-shrink-0"
           onError={() => setImageError(true)}
         />
         <div className="flex-1">
-          <h3 className="text-lg font-bold text-gray-900 dark:text-white">{drop.mobName}</h3>
+          <h3 className="text-lg font-bold text-gray-900 dark:text-white">{displayMobName}</h3>
           {isDev && (
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-              怪物 ID: {drop.mobId}
+              {t('card.monsterId')}: {drop.mobId}
             </p>
           )}
         </div>
@@ -95,7 +102,7 @@ export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite }: Dr
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={itemIconUrl}
-              alt={drop.itemName}
+              alt={displayItemName}
               className="w-8 h-8 object-contain flex-shrink-0"
               onError={() => setItemImageError(true)}
             />
@@ -103,9 +110,9 @@ export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite }: Dr
             <span className="text-lg">💰</span>
           )}
           <div className="flex-1 flex items-center gap-2">
-            <span className="text-sm font-medium text-gray-600 dark:text-gray-400">掉落:</span>
+            <span className="text-sm font-medium text-gray-600 dark:text-gray-400">{t('card.drop')}:</span>
             <span className="text-sm font-bold text-blue-600 dark:text-blue-400">
-              {drop.itemName}
+              {displayItemName}
             </span>
           </div>
         </div>
@@ -113,7 +120,7 @@ export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite }: Dr
         {/* 機率和數量 */}
         <div className="flex gap-3 mt-3">
           <div className="flex-1">
-            <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">掉落機率</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">{t('card.dropRate')}</div>
             <div className="bg-purple-50 dark:bg-purple-900/20 px-3 py-2 rounded">
               <span className="text-sm font-bold text-purple-700 dark:text-purple-300">
                 {chancePercent}%
@@ -121,7 +128,7 @@ export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite }: Dr
             </div>
           </div>
           <div className="flex-1">
-            <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">掉落數量</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">{t('card.dropQuantity')}</div>
             <div className="bg-green-50 dark:bg-green-900/20 px-3 py-2 rounded">
               <span className="text-sm font-bold text-green-700 dark:text-green-300">
                 {qtyRange}
@@ -133,7 +140,7 @@ export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite }: Dr
         {/* 物品 ID */}
         {isDev && (
           <div className="mt-3 text-xs text-gray-400 dark:text-gray-500">
-            物品 ID: {drop.itemId}
+            {t('card.itemId')}: {drop.itemId}
           </div>
         )}
       </div>

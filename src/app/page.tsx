@@ -6,6 +6,7 @@ import type { DropItem, SuggestionItem, FilterMode, ClearModalType, GachaMachine
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 import { useFavoriteMonsters } from '@/hooks/useFavoriteMonsters'
 import { useFavoriteItems } from '@/hooks/useFavoriteItems'
+import { useLanguage } from '@/contexts/LanguageContext'
 import { SearchBar } from '@/components/SearchBar'
 import { FilterButtons } from '@/components/FilterButtons'
 import { StatsDisplay } from '@/components/StatsDisplay'
@@ -17,6 +18,7 @@ import { ItemModal } from '@/components/ItemModal'
 import { BugReportModal } from '@/components/BugReportModal'
 import { ClearConfirmModal } from '@/components/ClearConfirmModal'
 import { GachaMachineModal } from '@/components/GachaMachineModal'
+import { LanguageToggle } from '@/components/LanguageToggle'
 import { clientLogger } from '@/lib/logger'
 import dropsData from '@/../public/data/drops.json'
 
@@ -41,13 +43,13 @@ function matchesAllKeywords(text: string, searchTerm: string): boolean {
 export default function Home() {
   const searchParams = useSearchParams()
   const router = useRouter()
+  const { t, language } = useLanguage()
 
   const [allDrops, setAllDrops] = useState<DropItem[]>([])
   const [gachaMachines, setGachaMachines] = useState<GachaMachine[]>([])
   const [filteredDrops, setFilteredDrops] = useState<DropItem[]>([])
   const [searchTerm, setSearchTerm] = useState('')
   const [isLoading, setIsLoading] = useState(true)
-  const [message, setMessage] = useState('')
   const [showSuggestions, setShowSuggestions] = useState(false)
   const [focusedIndex, setFocusedIndex] = useState(-1)
   const searchContainerRef = useRef<HTMLDivElement>(null)
@@ -100,13 +102,8 @@ export default function Home() {
 
         // 直接使用 imported JSON 資料
         setAllDrops(dropsData as DropItem[])
-        setMessage(
-          `成功載入楓之谷掉落資料${process.env.NODE_ENV === 'development' ? '（本地模式）' : ''}`
-        )
         clientLogger.info(`成功載入 ${dropsData.length} 筆掉落資料`)
       } catch (error) {
-        const errorMsg = error instanceof Error ? error.message : '載入資料失敗'
-        setMessage(errorMsg)
         clientLogger.error('載入掉落資料失敗', error)
       } finally {
         setIsLoading(false)
@@ -154,10 +151,12 @@ export default function Home() {
         // 從 allDrops 中查找怪物名稱
         const monster = allDrops.find((drop) => drop.mobId === monsterId)
         if (monster) {
+          // 使用顯示名稱（根據當前語言，有中文名稱且語言為中文時顯示中文，否則顯示英文）
+          const displayName = (language === 'zh-TW' && monster.chineseMobName) ? monster.chineseMobName : monster.mobName
           setSelectedMonsterId(monsterId)
-          setSelectedMonsterName(monster.mobName)
+          setSelectedMonsterName(displayName)
           setIsModalOpen(true)
-          clientLogger.info(`從 URL 參數開啟怪物 modal: ${monster.mobName} (${monsterId})`)
+          clientLogger.info(`從 URL 參數開啟怪物 modal: ${displayName} (${monsterId})`)
         }
       }
     } else if (itemIdParam) {
@@ -167,14 +166,16 @@ export default function Home() {
         // 從 allDrops 中查找物品名稱
         const item = allDrops.find((drop) => drop.itemId === parsedItemId)
         if (item) {
+          // 使用顯示名稱（根據當前語言，有中文名稱且語言為中文時顯示中文，否則顯示英文）
+          const displayName = (language === 'zh-TW' && item.chineseItemName) ? item.chineseItemName : item.itemName
           setSelectedItemId(parsedItemId)
-          setSelectedItemName(item.itemName)
+          setSelectedItemName(displayName)
           setIsItemModalOpen(true)
-          clientLogger.info(`從 URL 參數開啟物品 modal: ${item.itemName} (${parsedItemId})`)
+          clientLogger.info(`從 URL 參數開啟物品 modal: ${displayName} (${parsedItemId})`)
         }
       }
     }
-  }, [allDrops, searchParams])
+  }, [allDrops, searchParams, language])
 
   // 隨機選擇 100 筆資料（初始顯示用）- Fisher-Yates shuffle
   const initialRandomDrops = useMemo(() => {
@@ -198,7 +199,7 @@ export default function Home() {
     if (filterMode !== 'favorite-monsters' || favoriteMonsters.length === 0) return []
 
     const favMobIds = new Set(favoriteMonsters.map((fav) => fav.mobId))
-    const monsterMap = new Map<number, { mobId: number; mobName: string; dropCount: number }>()
+    const monsterMap = new Map<number, { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number }>()
 
     // 統計每個怪物的掉落物數量
     allDrops.forEach((drop) => {
@@ -207,6 +208,7 @@ export default function Home() {
           monsterMap.set(drop.mobId, {
             mobId: drop.mobId,
             mobName: drop.mobName,
+            chineseMobName: drop.chineseMobName, // 新增中文名稱
             dropCount: 0,
           })
         }
@@ -222,7 +224,7 @@ export default function Home() {
     if (filterMode !== 'favorite-items' || favoriteItems.length === 0) return []
 
     const favItemIds = new Set(favoriteItems.map((fav) => fav.itemId))
-    const itemMap = new Map<number, { itemId: number; itemName: string; monsterCount: number }>()
+    const itemMap = new Map<number, { itemId: number; itemName: string; chineseItemName?: string | null; monsterCount: number }>()
 
     // 統計每個物品被多少怪物掉落
     allDrops.forEach((drop) => {
@@ -231,6 +233,7 @@ export default function Home() {
           itemMap.set(drop.itemId, {
             itemId: drop.itemId,
             itemName: drop.itemName,
+            chineseItemName: drop.chineseItemName, // 新增中文名稱
             monsterCount: 0,
           })
         }
@@ -248,7 +251,7 @@ export default function Home() {
     return Array.from(itemMap.values())
   }, [filterMode, favoriteItems, allDrops])
 
-  // 最愛怪物搜尋過濾（支援多關鍵字搜尋）
+  // 最愛怪物搜尋過濾（支援多關鍵字搜尋 + 中英文搜尋）
   const filteredUniqueMonsters = useMemo(() => {
     if (filterMode !== 'favorite-monsters') return []
 
@@ -257,11 +260,12 @@ export default function Home() {
     }
 
     return uniqueFavoriteMonsters.filter((monster) =>
-      matchesAllKeywords(monster.mobName, debouncedSearchTerm)
+      matchesAllKeywords(monster.mobName, debouncedSearchTerm) ||
+      (monster.chineseMobName && matchesAllKeywords(monster.chineseMobName, debouncedSearchTerm))
     )
   }, [uniqueFavoriteMonsters, debouncedSearchTerm, filterMode])
 
-  // 最愛物品搜尋過濾（支援多關鍵字搜尋）
+  // 最愛物品搜尋過濾（支援多關鍵字搜尋 + 中英文搜尋）
   const filteredUniqueItems = useMemo(() => {
     if (filterMode !== 'favorite-items') return []
 
@@ -270,7 +274,8 @@ export default function Home() {
     }
 
     return uniqueFavoriteItems.filter((item) =>
-      matchesAllKeywords(item.itemName, debouncedSearchTerm)
+      matchesAllKeywords(item.itemName, debouncedSearchTerm) ||
+      (item.chineseItemName && matchesAllKeywords(item.chineseItemName, debouncedSearchTerm))
     )
   }, [uniqueFavoriteItems, debouncedSearchTerm, filterMode])
 
@@ -287,14 +292,16 @@ export default function Home() {
       baseDrops = debouncedSearchTerm.trim() === '' ? initialRandomDrops : allDrops
     }
 
-    // 應用搜尋過濾（支援多關鍵字搜尋）
+    // 應用搜尋過濾（支援多關鍵字搜尋 + 中英文搜尋）
     if (debouncedSearchTerm.trim() === '') {
       setFilteredDrops(baseDrops)
     } else {
       const filtered = baseDrops.filter((drop) => {
         return (
           matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
-          matchesAllKeywords(drop.itemName, debouncedSearchTerm)
+          matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
+          (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm)) ||
+          (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
         )
       })
       setFilteredDrops(filtered)
@@ -308,7 +315,7 @@ export default function Home() {
     const gachaMap = new Map<string, SuggestionItem>()
 
     allDrops.forEach((drop) => {
-      // 建立怪物名稱索引
+      // 建立怪物英文名稱索引
       const mobNameLower = drop.mobName.toLowerCase()
       const existingMonster = monsterMap.get(mobNameLower)
       if (existingMonster) {
@@ -318,10 +325,29 @@ export default function Home() {
           name: drop.mobName, // 保留原始大小寫
           type: 'monster',
           count: 1,
+          id: drop.mobId, // 記錄怪物 ID
         })
       }
 
-      // 建立物品名稱索引
+      // 建立怪物中文名稱索引（如果存在且與英文不同）
+      if (drop.chineseMobName) {
+        const chineseMobNameLower = drop.chineseMobName.toLowerCase()
+        if (chineseMobNameLower !== mobNameLower) {
+          const existingChineseMob = monsterMap.get(chineseMobNameLower)
+          if (existingChineseMob) {
+            existingChineseMob.count++
+          } else {
+            monsterMap.set(chineseMobNameLower, {
+              name: drop.chineseMobName, // 保留原始大小寫
+              type: 'monster',
+              count: 1,
+              id: drop.mobId, // 記錄怪物 ID
+            })
+          }
+        }
+      }
+
+      // 建立物品英文名稱索引
       const itemNameLower = drop.itemName.toLowerCase()
       const existingItem = itemMap.get(itemNameLower)
       if (existingItem) {
@@ -331,7 +357,26 @@ export default function Home() {
           name: drop.itemName, // 保留原始大小寫
           type: 'item',
           count: 1,
+          id: drop.itemId, // 記錄物品 ID
         })
+      }
+
+      // 建立物品中文名稱索引（如果存在且與英文不同）
+      if (drop.chineseItemName) {
+        const chineseItemNameLower = drop.chineseItemName.toLowerCase()
+        if (chineseItemNameLower !== itemNameLower) {
+          const existingChineseItem = itemMap.get(chineseItemNameLower)
+          if (existingChineseItem) {
+            existingChineseItem.count++
+          } else {
+            itemMap.set(chineseItemNameLower, {
+              name: drop.chineseItemName, // 保留原始大小寫
+              type: 'item',
+              count: 1,
+              id: drop.itemId, // 記錄物品 ID
+            })
+          }
+        }
       }
     })
 
@@ -533,10 +578,14 @@ export default function Home() {
         {/* Sticky Header - 固定搜尋區域 */}
         <div className="sticky top-0 z-40 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 backdrop-blur-sm pt-12 pb-6 shadow-md">
           {/* 標題區域 */}
-          <div className="text-center mb-8 pt-2">
+          <div className="relative text-center mb-8 pt-2">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-              ChronoStory
+              {t('app.title')}
             </h1>
+            {/* 語言切換按鈕 - 右上角 */}
+            <div className="absolute top-0 right-4">
+              <LanguageToggle />
+            </div>
           </div>
 
           {/* 搜尋列 */}
@@ -567,7 +616,6 @@ export default function Home() {
 
           {/* 資料統計 */}
           <StatsDisplay
-            message={message}
             filterMode={filterMode}
             searchTerm={searchTerm}
             filteredUniqueMonsterCount={filteredUniqueMonsters.length}
@@ -584,7 +632,7 @@ export default function Home() {
         {isLoading ? (
           <div className="text-center py-12 mt-8">
             <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-            <p className="mt-4 text-gray-600 dark:text-gray-400">載入中...</p>
+            <p className="mt-4 text-gray-600 dark:text-gray-400">{t('loading')}</p>
           </div>
         ) : (
           <>
@@ -597,6 +645,7 @@ export default function Home() {
                       key={monster.mobId}
                       mobId={monster.mobId}
                       mobName={monster.mobName}
+                      chineseMobName={monster.chineseMobName}
                       dropCount={monster.dropCount}
                       onCardClick={handleCardClick}
                       isFavorite={true}
@@ -608,12 +657,12 @@ export default function Home() {
                 <div className="text-center py-12 mt-8">
                   <div className="text-6xl mb-4">{searchTerm ? '🔍' : '💝'}</div>
                   <p className="text-gray-600 dark:text-gray-400 text-lg font-medium mb-2">
-                    {searchTerm ? '找不到符合的最愛怪物' : '還沒有收藏任何怪物'}
+                    {searchTerm ? t('empty.searchNoMatch') : t('empty.noFavoriteMonsters')}
                   </p>
                   <p className="text-gray-500 dark:text-gray-500 text-sm">
                     {searchTerm
-                      ? '試試搜尋其他關鍵字'
-                      : '點擊卡片上的愛心按鈕來收藏怪物吧！'}
+                      ? t('empty.tryOtherKeywords')
+                      : t('empty.clickToFavoriteMonster')}
                   </p>
                 </div>
               )
@@ -626,6 +675,7 @@ export default function Home() {
                       key={item.itemId}
                       itemId={item.itemId}
                       itemName={item.itemName}
+                      chineseItemName={item.chineseItemName}
                       monsterCount={item.monsterCount}
                       onCardClick={handleItemClick}
                       isFavorite={true}
@@ -637,12 +687,12 @@ export default function Home() {
                 <div className="text-center py-12 mt-8">
                   <div className="text-6xl mb-4">{searchTerm ? '🔍' : '💝'}</div>
                   <p className="text-gray-600 dark:text-gray-400 text-lg font-medium mb-2">
-                    {searchTerm ? '找不到符合的最愛物品' : '還沒有收藏任何物品'}
+                    {searchTerm ? t('empty.searchNoMatch') : t('empty.noFavoriteItems')}
                   </p>
                   <p className="text-gray-500 dark:text-gray-500 text-sm">
                     {searchTerm
-                      ? '試試搜尋其他關鍵字'
-                      : '點擊物品卡片上的愛心按鈕來收藏物品吧！'}
+                      ? t('empty.tryOtherKeywords')
+                      : t('empty.clickToFavoriteItem')}
                   </p>
                 </div>
               )
@@ -664,11 +714,11 @@ export default function Home() {
                 <div className="text-center py-12 mt-8">
                   <div className="text-6xl mb-4">🔍</div>
                   <p className="text-gray-600 dark:text-gray-400 text-lg font-medium mb-2">
-                    {searchTerm ? '找不到符合的結果' : '目前沒有掉落資料'}
+                    {searchTerm ? t('empty.noResults') : t('empty.noData')}
                   </p>
                   {searchTerm && (
                     <p className="text-gray-500 dark:text-gray-500 text-sm">
-                      試試搜尋其他關鍵字，例如：Snail、Meso、Potion
+                      {t('empty.tryOtherKeywords')}
                     </p>
                   )}
                 </div>
@@ -686,11 +736,11 @@ export default function Home() {
               rel="noopener noreferrer"
               className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline transition-colors"
             >
-              資料來源: ChronoStory 楓之谷私服掉落表
+              {t('footer.dataSource')}
             </a>
           </p>
           <p className="text-gray-400 dark:text-gray-500 text-xs mt-2">
-            掉落機率已轉換為百分比顯示 | 即時搜尋
+            {t('footer.note')}
           </p>
         </div>
       </div>
@@ -748,7 +798,7 @@ export default function Home() {
       <button
         onClick={() => setIsGachaModalOpen(true)}
         className="fixed bottom-6 left-6 z-40 p-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
-        aria-label="轉蛋機圖鑑"
+        aria-label={t('gacha.button')}
       >
         <div className="flex items-center gap-2">
           <svg
@@ -765,7 +815,7 @@ export default function Home() {
               d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
             />
           </svg>
-          <span className="text-sm font-medium hidden group-hover:inline-block">轉蛋機圖鑑</span>
+          <span className="text-sm font-medium hidden group-hover:inline-block">{t('gacha.button')}</span>
         </div>
       </button>
 
@@ -773,11 +823,11 @@ export default function Home() {
       <button
         onClick={() => setIsBugReportModalOpen(true)}
         className="fixed bottom-6 right-6 z-40 p-4 bg-gradient-to-r from-red-500 to-orange-600 hover:from-red-600 hover:to-orange-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
-        aria-label="回報問題"
+        aria-label={t('bug.report')}
       >
         <div className="flex items-center gap-2">
           <span className="text-2xl">🐛</span>
-          <span className="text-sm font-medium hidden group-hover:inline-block">回報問題</span>
+          <span className="text-sm font-medium hidden group-hover:inline-block">{t('bug.report')}</span>
         </div>
       </button>
     </div>

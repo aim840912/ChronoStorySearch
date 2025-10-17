@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+'use client'
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,11 +14,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "楓之谷角色列表 | MapleStory Characters",
-  description: "探索你的楓之谷冒險夥伴，查看角色資訊、職業、等級等詳細資料",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -24,10 +21,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-TW">
+      <head>
+        <title>楓之谷角色列表 | MapleStory Characters</title>
+        <meta name="description" content="探索你的楓之谷冒險夥伴，查看角色資訊、職業、等級等詳細資料" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

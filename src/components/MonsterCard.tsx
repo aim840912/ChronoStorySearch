@@ -1,10 +1,13 @@
 'use client'
 
 import { useState } from 'react'
+import { useLanguage } from '@/contexts/LanguageContext'
+import { getMonsterDisplayName } from '@/lib/display-name'
 
 interface MonsterCardProps {
   mobId: number
   mobName: string
+  chineseMobName?: string | null
   dropCount: number
   onCardClick: (mobId: number, mobName: string) => void
   isFavorite: boolean
@@ -18,13 +21,18 @@ interface MonsterCardProps {
 export function MonsterCard({
   mobId,
   mobName,
+  chineseMobName,
   dropCount,
   onCardClick,
   isFavorite,
   onToggleFavorite,
 }: MonsterCardProps) {
+  const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
   const [imageError, setImageError] = useState(false)
+
+  // 獲取顯示名稱（支援中英文切換）
+  const displayMobName = getMonsterDisplayName(mobName, chineseMobName, language)
 
   const monsterIconUrl = imageError
     ? '/images/monsters/default.svg'
@@ -32,21 +40,21 @@ export function MonsterCard({
 
   return (
     <div
-      onClick={() => onCardClick(mobId, mobName)}
+      onClick={() => onCardClick(mobId, displayMobName)}
       className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative"
     >
       {/* 最愛按鈕 - 右上角 */}
       <button
         onClick={(e) => {
           e.stopPropagation()
-          onToggleFavorite(mobId, mobName)
+          onToggleFavorite(mobId, displayMobName)
         }}
         className={`absolute top-3 right-3 p-2 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 ${
           isFavorite
             ? 'bg-red-500 hover:bg-red-600 text-white'
             : 'bg-white dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-400 dark:text-gray-500 border border-gray-300 dark:border-gray-600'
         }`}
-        aria-label={isFavorite ? '取消收藏' : '加入收藏'}
+        aria-label={isFavorite ? t('card.unfavorite') : t('card.favorite')}
       >
         <svg
           className="w-5 h-5"
@@ -68,17 +76,17 @@ export function MonsterCard({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={monsterIconUrl}
-          alt={mobName}
+          alt={displayMobName}
           className="w-16 h-16 object-contain flex-shrink-0"
           onError={() => setImageError(true)}
         />
         <div className="flex-1">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
-            {mobName}
+            {displayMobName}
           </h3>
           {isDev && (
             <p className="text-xs text-gray-500 dark:text-gray-400">
-              怪物 ID: {mobId}
+              {t('card.monsterId')}: {mobId}
             </p>
           )}
         </div>
@@ -92,17 +100,17 @@ export function MonsterCard({
               <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
             </svg>
             <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
-              掉落物品
+              {t('card.droppedItems')}
             </span>
           </div>
           <div className="bg-blue-50 dark:bg-blue-900/20 px-4 py-2 rounded-lg">
             <span className="text-lg font-bold text-blue-600 dark:text-blue-400">
-              {dropCount} 種
+              {dropCount} {t('card.itemTypes')}
             </span>
           </div>
         </div>
         <p className="text-xs text-gray-500 dark:text-gray-400 mt-3 text-center">
-          點擊查看所有掉落物品
+          {t('card.viewAllItems')}
         </p>
       </div>
     </div>

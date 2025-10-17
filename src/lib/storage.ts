@@ -4,12 +4,13 @@
  */
 
 import { storageLogger } from './logger'
-import type { FavoriteMonster, FavoriteItem } from '@/types'
+import type { FavoriteMonster, FavoriteItem, Language } from '@/types'
 
 // Storage keys
 export const STORAGE_KEYS = {
   FAVORITE_MONSTERS: 'chronostory-favorite-monsters',
   FAVORITE_ITEMS: 'chronostory-favorite-items',
+  LANGUAGE: 'chronostory-language',
 } as const
 
 /**
@@ -108,4 +109,12 @@ export function getFavoriteItems(): FavoriteItem[] {
 
 export function setFavoriteItems(items: FavoriteItem[]): boolean {
   return setStorageItem(STORAGE_KEYS.FAVORITE_ITEMS, items)
+}
+
+export function getLanguage(): Language {
+  return getStorageItem<Language>(STORAGE_KEYS.LANGUAGE, 'zh-TW')
+}
+
+export function setLanguage(language: Language): boolean {
+  return setStorageItem(STORAGE_KEYS.LANGUAGE, language)
 }
