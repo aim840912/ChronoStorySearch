@@ -7,8 +7,8 @@
     "chance": 0.4,
     "minQty": 1,
     "maxQty": 5,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "楓幣",
+    "chineseMobName": "箱子"
   },
   {
     "mobId": 2000,
@@ -19,7 +19,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "蘋果",
-    "chineseMobName": null
+    "chineseMobName": "箱子"
   },
   {
     "mobId": 2000,
@@ -30,7 +30,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "青蘋果",
-    "chineseMobName": null
+    "chineseMobName": "箱子"
   },
   {
     "mobId": 2000,
@@ -41,7 +41,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": null,
-    "chineseMobName": null
+    "chineseMobName": "箱子"
   },
   {
     "mobId": 2000,
@@ -51,8 +51,8 @@
     "chance": 1,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "木材",
+    "chineseMobName": "箱子"
   },
   {
     "mobId": 100100,
@@ -62,7 +62,7 @@
     "chance": 0.4,
     "minQty": 4,
     "maxQty": 6,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "嫩寶"
   },
   {
@@ -194,7 +194,7 @@
     "chance": 0.4,
     "minQty": 8,
     "maxQty": 12,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "藍寶"
   },
   {
@@ -359,8 +359,8 @@
     "chance": 0.4,
     "minQty": 400,
     "maxQty": 600,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "楓幣",
+    "chineseMobName": "嫩寶"
   },
   {
     "mobId": 100110,
@@ -370,8 +370,8 @@
     "chance": 0.001,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "綠色頭巾",
+    "chineseMobName": "嫩寶"
   },
   {
     "mobId": 100110,
@@ -382,7 +382,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "綠色冒險披風",
-    "chineseMobName": null
+    "chineseMobName": "嫩寶"
   },
   {
     "mobId": 100110,
@@ -392,8 +392,8 @@
     "chance": 0.007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "藍色冒險披風",
+    "chineseMobName": "嫩寶"
   },
   {
     "mobId": 100110,
@@ -403,8 +403,8 @@
     "chance": 0.007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "紅色冒險披風",
+    "chineseMobName": "嫩寶"
   },
   {
     "mobId": 100110,
@@ -414,8 +414,8 @@
     "chance": 0.007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "白色冒險披風",
+    "chineseMobName": "嫩寶"
   },
   {
     "mobId": 100110,
@@ -425,8 +425,8 @@
     "chance": 0.007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "黑色冒險披風",
+    "chineseMobName": "嫩寶"
   },
   {
     "mobId": 120100,
@@ -436,7 +436,7 @@
     "chance": 0.4,
     "minQty": 8,
     "maxQty": 12,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "菇菇仔"
   },
   {
@@ -579,7 +579,7 @@
     "chance": 0.4,
     "minQty": 12,
     "maxQty": 18,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "木妖"
   },
   {
@@ -777,7 +777,7 @@
     "chance": 0.4,
     "minQty": 12,
     "maxQty": 18,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "紅寶"
   },
   {
@@ -997,7 +997,7 @@
     "chance": 0.4,
     "minQty": 12,
     "maxQty": 18,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "綠水靈"
   },
   {
@@ -1272,7 +1272,7 @@
     "chance": 0.4,
     "minQty": 28,
     "maxQty": 42,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "綠菇菇"
   },
   {
@@ -1690,7 +1690,7 @@
     "chance": 0.4,
     "minQty": 20,
     "maxQty": 30,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "黑木妖"
   },
   {
@@ -1921,7 +1921,7 @@
     "chance": 0.4,
     "minQty": 24,
     "maxQty": 36,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "三眼章魚"
   },
   {
@@ -2108,7 +2108,7 @@
     "chance": 0.4,
     "minQty": 32,
     "maxQty": 48,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "斧木妖"
   },
   {
@@ -2394,7 +2394,7 @@
     "chance": 0.4,
     "minQty": 34,
     "maxQty": 47,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "發芽木妖"
   },
   {
@@ -2724,7 +2724,7 @@
     "chance": 0.4,
     "minQty": 14,
     "maxQty": 21,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "肥肥"
   },
   {
@@ -2933,7 +2933,7 @@
     "chance": 0.4,
     "minQty": 20,
     "maxQty": 30,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "緞帶肥肥"
   },
   {
@@ -3142,7 +3142,7 @@
     "chance": 0.4,
     "minQty": 16,
     "maxQty": 24,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "菇菇寶貝"
   },
   {
@@ -3318,7 +3318,7 @@
     "chance": 0.4,
     "minQty": 24,
     "maxQty": 36,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "藍水靈"
   },
   {
@@ -3604,7 +3604,7 @@
     "chance": 0.4,
     "minQty": 32,
     "maxQty": 48,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "奇怪的豬"
   },
   {
@@ -3693,7 +3693,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": null,
-    "chineseMobName": null
+    "chineseMobName": "天空城箱"
   },
   {
     "mobId": 2002011,
@@ -3704,7 +3704,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "橘色藥水",
-    "chineseMobName": null
+    "chineseMobName": "天空城箱"
   },
   {
     "mobId": 2002011,
@@ -3715,7 +3715,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍色藥水",
-    "chineseMobName": null
+    "chineseMobName": "天空城箱"
   },
   {
     "mobId": 2110200,
@@ -3725,7 +3725,7 @@
     "chance": 0.4,
     "minQty": 36,
     "maxQty": 54,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "刺菇菇"
   },
   {
@@ -4066,7 +4066,7 @@
     "chance": 0.4,
     "minQty": 40,
     "maxQty": 60,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "黑斧木妖"
   },
   {
@@ -4341,7 +4341,7 @@
     "chance": 0.4,
     "minQty": 33,
     "maxQty": 49,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "青蛇"
   },
   {
@@ -4539,7 +4539,7 @@
     "chance": 0.4,
     "minQty": 30,
     "maxQty": 70,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "紅寶王"
   },
   {
@@ -5155,7 +5155,7 @@
     "chance": 0.4,
     "minQty": 36,
     "maxQty": 54,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "藍菇菇"
   },
   {
@@ -5485,7 +5485,7 @@
     "chance": 0.4,
     "minQty": 48,
     "maxQty": 72,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "火獨眼獸"
   },
   {
@@ -5815,7 +5815,7 @@
     "chance": 0.4,
     "minQty": 44,
     "maxQty": 66,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "殭屍菇菇"
   },
   {
@@ -6189,7 +6189,7 @@
     "chance": 0.4,
     "minQty": 44,
     "maxQty": 66,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "黑肥肥"
   },
   {
@@ -6607,7 +6607,7 @@
     "chance": 0.4,
     "minQty": 64,
     "maxQty": 94,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "木面怪人"
   },
   {
@@ -6893,7 +6893,7 @@
     "chance": 0.4,
     "minQty": 66,
     "maxQty": 97,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "石面怪人"
   },
   {
@@ -7135,7 +7135,7 @@
     "chance": 0.4,
     "minQty": 146,
     "maxQty": 215,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "黑獨眼獸"
   },
   {
@@ -7454,7 +7454,7 @@
     "chance": 0.2,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
+    "chineseItemName": "黑獨眼獸尾巴",
     "chineseMobName": "黑獨眼獸"
   },
   {
@@ -7498,7 +7498,7 @@
     "chance": 0.4,
     "minQty": 32,
     "maxQty": 48,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "蝙蝠"
   },
   {
@@ -7773,7 +7773,7 @@
     "chance": 0.4,
     "minQty": 52,
     "maxQty": 78,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "石球"
   },
   {
@@ -8048,7 +8048,7 @@
     "chance": 0.4,
     "minQty": 74,
     "maxQty": 144,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "鱷魚"
   },
   {
@@ -8345,7 +8345,7 @@
     "chance": 0.4,
     "minQty": 76,
     "maxQty": 114,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "火肥肥"
   },
   {
@@ -8664,7 +8664,7 @@
     "chance": 0.4,
     "minQty": 80,
     "maxQty": 120,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "幼紅獨角獅"
   },
   {
@@ -9071,7 +9071,7 @@
     "chance": 0.4,
     "minQty": 80,
     "maxQty": 120,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "幼黃獨角獅"
   },
   {
@@ -9379,7 +9379,7 @@
     "chance": 0.4,
     "minQty": 80,
     "maxQty": 120,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "幼藍獨角獅"
   },
   {
@@ -9720,7 +9720,7 @@
     "chance": 0.4,
     "minQty": 88,
     "maxQty": 132,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "猴子"
   },
   {
@@ -10061,7 +10061,7 @@
     "chance": 0.4,
     "minQty": 285,
     "maxQty": 1400,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "樹妖王"
   },
   {
@@ -10666,7 +10666,7 @@
     "chance": 0.4,
     "minQty": 60,
     "maxQty": 90,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "風獨眼獸"
   },
   {
@@ -10985,7 +10985,7 @@
     "chance": 0.4,
     "minQty": 56,
     "maxQty": 84,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "小幽靈"
   },
   {
@@ -11249,7 +11249,7 @@
     "chance": 0.4,
     "minQty": 92,
     "maxQty": 138,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "紅螃蟹"
   },
   {
@@ -11645,7 +11645,7 @@
     "chance": 0.4,
     "minQty": 56,
     "maxQty": 84,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "星光精靈"
   },
   {
@@ -11986,7 +11986,7 @@
     "chance": 0.4,
     "minQty": 94,
     "maxQty": 144,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "幼魔精靈"
   },
   {
@@ -12096,7 +12096,7 @@
     "chance": 0.4,
     "minQty": 160,
     "maxQty": 240,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "土龍"
   },
   {
@@ -12426,7 +12426,7 @@
     "chance": 0.4,
     "minQty": 172,
     "maxQty": 258,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "黑食人花"
   },
   {
@@ -12723,7 +12723,7 @@
     "chance": 0.4,
     "minQty": 96,
     "maxQty": 144,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "冰獨眼獸"
   },
   {
@@ -13031,7 +13031,7 @@
     "chance": 0.4,
     "minQty": 104,
     "maxQty": 156,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "天使猴"
   },
   {
@@ -13361,7 +13361,7 @@
     "chance": 0.4,
     "minQty": 176,
     "maxQty": 246,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "大幽靈"
   },
   {
@@ -13658,7 +13658,7 @@
     "chance": 0.4,
     "minQty": 120,
     "maxQty": 180,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "鋼之肥肥"
   },
   {
@@ -13922,7 +13922,7 @@
     "chance": 0.4,
     "minQty": 176,
     "maxQty": 246,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "青螃蟹"
   },
   {
@@ -14230,7 +14230,7 @@
     "chance": 0.4,
     "minQty": 120,
     "maxQty": 180,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "食人花"
   },
   {
@@ -14505,7 +14505,7 @@
     "chance": 0.4,
     "minQty": 114,
     "maxQty": 216,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "月光精靈"
   },
   {
@@ -14857,7 +14857,7 @@
     "chance": 0.4,
     "minQty": 112,
     "maxQty": 168,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "獨眼蝙蝠"
   },
   {
@@ -15165,7 +15165,7 @@
     "chance": 0.4,
     "minQty": 132,
     "maxQty": 198,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "小獵犬"
   },
   {
@@ -15462,7 +15462,7 @@
     "chance": 0.4,
     "minQty": 128,
     "maxQty": 189,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "骷髏犬"
   },
   {
@@ -15726,7 +15726,7 @@
     "chance": 0.4,
     "minQty": 172,
     "maxQty": 258,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "木乃伊犬"
   },
   {
@@ -16034,7 +16034,7 @@
     "chance": 0.4,
     "minQty": 132,
     "maxQty": 195,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "鋼之黑肥肥"
   },
   {
@@ -16243,7 +16243,7 @@
     "chance": 0.4,
     "minQty": 800,
     "maxQty": 920,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "冥界幽靈"
   },
   {
@@ -16298,7 +16298,7 @@
     "chance": 0.4,
     "minQty": 330,
     "maxQty": 490,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "小雪球"
   },
   {
@@ -16639,8 +16639,8 @@
     "chance": 0.4,
     "minQty": 212,
     "maxQty": 381,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "楓幣",
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16651,7 +16651,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "綠黑太陽帽",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16662,7 +16662,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑貴族軟帽",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16673,7 +16673,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "紅和平之帽",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16684,7 +16684,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍板金鎧甲",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16695,7 +16695,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "深夜之影",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16706,7 +16706,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍色月光服",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16717,7 +16717,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑暗之褲",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16728,7 +16728,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍板金褲",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16738,8 +16738,8 @@
     "chance": 0.0008,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "黑暗之褲",
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16750,7 +16750,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "紅無痕之鞋",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16761,7 +16761,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "雪花標",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16772,7 +16772,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黃沙之劍",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16783,7 +16783,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "旋風錘",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16794,7 +16794,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "華氏短劍",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16805,7 +16805,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "拉斯菲特之槍",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16816,7 +16816,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "白色藥水",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16827,7 +16827,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍色藥水",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16838,7 +16838,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "耳環防禦力卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16849,7 +16849,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "披風防禦卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16860,7 +16860,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": null,
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16871,7 +16871,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "力量母礦",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16882,7 +16882,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "魔法石",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16893,7 +16893,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "鋼鐵母礦",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5100002,
@@ -16904,7 +16904,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "石榴石母礦",
-    "chineseMobName": null
+    "chineseMobName": "火精靈"
   },
   {
     "mobId": 5120000,
@@ -16914,7 +16914,7 @@
     "chance": 0.4,
     "minQty": 224,
     "maxQty": 336,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "日光精靈"
   },
   {
@@ -17310,7 +17310,7 @@
     "chance": 0.4,
     "minQty": 235,
     "maxQty": 348,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "紅獨角獅"
   },
   {
@@ -17640,7 +17640,7 @@
     "chance": 0.4,
     "minQty": 235,
     "maxQty": 348,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "黃獨角獅"
   },
   {
@@ -17948,7 +17948,7 @@
     "chance": 0.4,
     "minQty": 235,
     "maxQty": 348,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "藍獨角獅"
   },
   {
@@ -18168,7 +18168,7 @@
     "chance": 0.0007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
+    "chineseItemName": "救生圈",
     "chineseMobName": "藍獨角獅"
   },
   {
@@ -18355,7 +18355,7 @@
     "chance": 0.4,
     "minQty": 200,
     "maxQty": 300,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "青龍"
   },
   {
@@ -18751,7 +18751,7 @@
     "chance": 0.4,
     "minQty": 256,
     "maxQty": 348,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "石巨人"
   },
   {
@@ -19059,7 +19059,7 @@
     "chance": 0.4,
     "minQty": 280,
     "maxQty": 420,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "黑曜石巨人"
   },
   {
@@ -19433,7 +19433,7 @@
     "chance": 0.4,
     "minQty": 224,
     "maxQty": 336,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "黑鱷魚"
   },
   {
@@ -19719,7 +19719,7 @@
     "chance": 0.4,
     "minQty": 254,
     "maxQty": 386,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "野狼"
   },
   {
@@ -20027,7 +20027,7 @@
     "chance": 0.4,
     "minQty": 190,
     "maxQty": 280,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "黑色小雪球"
   },
   {
@@ -20379,7 +20379,7 @@
     "chance": 0.4,
     "minQty": 273,
     "maxQty": 408,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "殭屍"
   },
   {
@@ -20731,7 +20731,7 @@
     "chance": 0.4,
     "minQty": 196,
     "maxQty": 289,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "礦山殭屍"
   },
   {
@@ -21072,7 +21072,7 @@
     "chance": 0.4,
     "minQty": 280,
     "maxQty": 420,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "白狼"
   },
   {
@@ -21479,7 +21479,7 @@
     "chance": 0.4,
     "minQty": 296,
     "maxQty": 447,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "混種石巨人"
   },
   {
@@ -21809,7 +21809,7 @@
     "chance": 0.4,
     "minQty": 272,
     "maxQty": 408,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "骷髏士兵"
   },
   {
@@ -22117,7 +22117,7 @@
     "chance": 0.4,
     "minQty": 332,
     "maxQty": 500,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "冰之混種石巨人"
   },
   {
@@ -22403,7 +22403,7 @@
     "chance": 0.4,
     "minQty": 332,
     "maxQty": 498,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "火之混種石巨人"
   },
   {
@@ -22645,7 +22645,7 @@
     "chance": 0.4,
     "minQty": 60,
     "maxQty": 90,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "小石球"
   },
   {
@@ -22887,7 +22887,7 @@
     "chance": 0.4,
     "minQty": 64,
     "maxQty": 96,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "冰石球"
   },
   {
@@ -23118,7 +23118,7 @@
     "chance": 0.4,
     "minQty": 64,
     "maxQty": 96,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "火石球"
   },
   {
@@ -23360,7 +23360,7 @@
     "chance": 0.4,
     "minQty": 468,
     "maxQty": 2300,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "殭屍猴王"
   },
   {
@@ -23932,7 +23932,7 @@
     "chance": 0.4,
     "minQty": 68,
     "maxQty": 102,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "利堤"
   },
   {
@@ -24251,7 +24251,7 @@
     "chance": 0.4,
     "minQty": 72,
     "maxQty": 108,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "黑利堤"
   },
   {
@@ -24493,7 +24493,7 @@
     "chance": 0.4,
     "minQty": 251,
     "maxQty": 359,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "巫婆"
   },
   {
@@ -24812,8 +24812,8 @@
     "chance": 0.4,
     "minQty": 76,
     "maxQty": 114,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "楓幣",
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24824,7 +24824,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "諾曼頭盔",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24834,8 +24834,8 @@
     "chance": 0.001287,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "藍防風帽",
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24846,7 +24846,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "金龍衣",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24856,8 +24856,8 @@
     "chance": 0.0008,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "紅金寂靜之服",
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24867,8 +24867,8 @@
     "chance": 0.0008,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "綠守護之服",
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24879,7 +24879,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "祖母綠鎧甲",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24889,8 +24889,8 @@
     "chance": 0.0008,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "紅金寂靜之褲",
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24900,8 +24900,8 @@
     "chance": 0.0008,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "綠守護褲",
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24912,7 +24912,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "綠流星鞋",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24923,7 +24923,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "紅精靈手套",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24934,7 +24934,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "褐色寶石手套",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24945,7 +24945,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "青銅弓箭",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24956,7 +24956,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "青銅弩箭",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24967,7 +24967,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑色利刃",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24978,7 +24978,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "風輪長杖",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -24989,7 +24989,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "巨人錘",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -25000,7 +25000,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "大錘",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -25011,7 +25011,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "海神叉",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -25022,7 +25022,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "白色藥水",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -25033,7 +25033,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍色藥水",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -25044,7 +25044,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "長杖魔力卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -25055,7 +25055,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "指虎攻擊卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -25066,7 +25066,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "指虎攻擊詛咒卷軸70%",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -25077,7 +25077,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "指虎命中卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -25088,7 +25088,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "精力劑",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -25098,8 +25098,8 @@
     "chance": 0.6,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "小企鵝王的魚",
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -25110,7 +25110,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "幸運母礦",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -25121,7 +25121,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "魔法石",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -25132,7 +25132,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "朱礦石母礦",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 5400000,
@@ -25143,7 +25143,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍寶石母礦",
-    "chineseMobName": null
+    "chineseMobName": "小企鵝王"
   },
   {
     "mobId": 6090000,
@@ -25153,7 +25153,7 @@
     "chance": 0.4,
     "minQty": 1500,
     "maxQty": 2000,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "厄運死神"
   },
   {
@@ -25208,7 +25208,7 @@
     "chance": 0.4,
     "minQty": 700,
     "maxQty": 777,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "冰之女巫"
   },
   {
@@ -25274,7 +25274,7 @@
     "chance": 0.4,
     "minQty": 304,
     "maxQty": 456,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "赤龍"
   },
   {
@@ -25780,7 +25780,7 @@
     "chance": 0.4,
     "minQty": 800,
     "maxQty": 1196,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "蘑菇王"
   },
   {
@@ -26088,7 +26088,7 @@
     "chance": 0.4,
     "minQty": 217,
     "maxQty": 320,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "孤單企鵝王"
   },
   {
@@ -26407,7 +26407,7 @@
     "chance": 0.4,
     "minQty": 217,
     "maxQty": 320,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "企鵝王"
   },
   {
@@ -26726,7 +26726,7 @@
     "chance": 0.4,
     "minQty": 765,
     "maxQty": 3770,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "沼澤巨鱷"
   },
   {
@@ -26759,7 +26759,7 @@
     "chance": 0.01,
     "minQty": 1,
     "maxQty": 4,
-    "chineseItemName": null,
+    "chineseItemName": "槍命中詛咒卷軸30%",
     "chineseMobName": "沼澤巨鱷"
   },
   {
@@ -27254,7 +27254,7 @@
     "chance": 0.4,
     "minQty": 231,
     "maxQty": 341,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "魔龍"
   },
   {
@@ -27694,7 +27694,7 @@
     "chance": 0.4,
     "minQty": 325,
     "maxQty": 486,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "黑企鵝王"
   },
   {
@@ -28035,7 +28035,7 @@
     "chance": 0.4,
     "minQty": 325,
     "maxQty": 486,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "孤單黑企鵝王"
   },
   {
@@ -28376,7 +28376,7 @@
     "chance": 0.4,
     "minQty": 239,
     "maxQty": 353,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "幼黑格里芬"
   },
   {
@@ -28651,7 +28651,7 @@
     "chance": 0.4,
     "minQty": 324,
     "maxQty": 486,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "冰龍"
   },
   {
@@ -29069,7 +29069,7 @@
     "chance": 0.4,
     "minQty": 332,
     "maxQty": 498,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "黑龍"
   },
   {
@@ -29487,7 +29487,7 @@
     "chance": 0.4,
     "minQty": 328,
     "maxQty": 492,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "骷髏士官"
   },
   {
@@ -29861,7 +29861,7 @@
     "chance": 0.4,
     "minQty": 417,
     "maxQty": 548,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "雪吉拉"
   },
   {
@@ -30224,7 +30224,7 @@
     "chance": 0.4,
     "minQty": 417,
     "maxQty": 548,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "變形雪吉拉"
   },
   {
@@ -30598,7 +30598,7 @@
     "chance": 0.4,
     "minQty": 417,
     "maxQty": 548,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "孤單雪吉拉"
   },
   {
@@ -30961,7 +30961,7 @@
     "chance": 0.4,
     "minQty": 765,
     "maxQty": 3770,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "殭屍蘑菇王"
   },
   {
@@ -31313,7 +31313,7 @@
     "chance": 0.4,
     "minQty": 333,
     "maxQty": 493,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "黑吉拉"
   },
   {
@@ -31698,7 +31698,7 @@
     "chance": 0.4,
     "minQty": 333,
     "maxQty": 493,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "變形黑吉拉"
   },
   {
@@ -32083,8 +32083,8 @@
     "chance": 0.4,
     "minQty": 333,
     "maxQty": 493,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "楓幣",
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32095,7 +32095,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "銀製戰盔",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32106,7 +32106,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "白和平之帽",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32117,7 +32117,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "白弓羽",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32128,7 +32128,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "綠十字帽",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32139,7 +32139,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "赤龍頭盔",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32150,7 +32150,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "銀製耳環",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32161,7 +32161,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍鋼玉鎧甲",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32172,7 +32172,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑飛影之服",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32183,7 +32183,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍暴風甲",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32194,7 +32194,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "赤旋風甲",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32205,7 +32205,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "紅聖黨之服",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32216,7 +32216,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍鋼玉褲",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32227,7 +32227,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑飛影之褲",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32238,7 +32238,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍暴風褲",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32249,7 +32249,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "紫朱雀之褲",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32260,7 +32260,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "紫黃金風",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32271,7 +32271,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑飛魂鞋",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32282,7 +32282,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "綠箭魂鞋",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32293,7 +32293,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍意志手套",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32304,7 +32304,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黃金名譽手套",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32315,7 +32315,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "奇型刀",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32326,7 +32326,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "九龍刀",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32337,7 +32337,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "赤紅手甲",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32348,7 +32348,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "白色藥水",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32359,7 +32359,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "特殊藥水",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32370,7 +32370,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "披風幸運卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32381,7 +32381,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "動物皮",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32392,7 +32392,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑吉拉之角",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32403,7 +32403,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "冰塊",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32414,7 +32414,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "堅硬的羽毛",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32425,7 +32425,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "智慧母礦",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32436,7 +32436,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑暗母礦",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32447,7 +32447,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黃金母礦",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 6400002,
@@ -32458,7 +32458,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "祖母綠母礦",
-    "chineseMobName": null
+    "chineseMobName": "孤單黑吉拉"
   },
   {
     "mobId": 7130000,
@@ -32468,7 +32468,7 @@
     "chance": 0.4,
     "minQty": 332,
     "maxQty": 490,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "黑格里芬"
   },
   {
@@ -32853,8 +32853,8 @@
     "chance": 0.4,
     "minQty": 344,
     "maxQty": 516,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "楓幣",
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -32865,7 +32865,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "鋰礦戰盔",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -32876,7 +32876,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑和平之帽",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -32887,7 +32887,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "梅花耳環",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -32897,8 +32897,8 @@
     "chance": 0.001,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "金屬心型耳環",
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -32909,7 +32909,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "赤飛影之服",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -32920,7 +32920,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "粉紅朱雀之甲",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -32931,7 +32931,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "褐天上之衣",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -32941,8 +32941,8 @@
     "chance": 0.0007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "黑天上之衣",
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -32953,7 +32953,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "褐天上之衣",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -32964,7 +32964,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "赤飛影之褲",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -32975,7 +32975,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "粉紅朱雀之褲",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -32986,7 +32986,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "綠花精鞋",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -32996,8 +32996,8 @@
     "chance": 0.0008,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "黃箭魂鞋",
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33008,7 +33008,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑暗影手套",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33019,7 +33019,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑神眼手套",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33030,7 +33030,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "猛禽斧",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33041,7 +33041,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "雙翼刃",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33052,7 +33052,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "天使之翼",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33063,7 +33063,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "鳳凰短杖",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33073,8 +33073,8 @@
     "chance": 0.0007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "無極劍",
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33085,7 +33085,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "深淵射手",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33096,7 +33096,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "特殊藥水",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33107,7 +33107,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "活力藥水",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33118,7 +33118,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "褲裙跳躍卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33129,7 +33129,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "披風幸運卷軸100%",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33140,7 +33140,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "槍攻擊卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33151,7 +33151,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "解毒劑",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33161,8 +33161,8 @@
     "chance": 0.6,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "地獄獵犬的尖牙",
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33173,7 +33173,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "銀的母礦",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130001,
@@ -33184,7 +33184,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "鑽石母礦",
-    "chineseMobName": null
+    "chineseMobName": "地獄獵犬"
   },
   {
     "mobId": 7130100,
@@ -33194,7 +33194,7 @@
     "chance": 0.4,
     "minQty": 340,
     "maxQty": 500,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "月牙牛魔王"
   },
   {
@@ -33568,7 +33568,7 @@
     "chance": 0.4,
     "minQty": 409,
     "maxQty": 599,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "長槍牛魔王"
   },
   {
@@ -33942,7 +33942,7 @@
     "chance": 0.4,
     "minQty": 391,
     "maxQty": 578,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "雪吉拉戰車"
   },
   {
@@ -34569,7 +34569,7 @@
     "chance": 0.4,
     "minQty": 332,
     "maxQty": 490,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "骷髏指揮官"
   },
   {
@@ -34910,7 +34910,7 @@
     "chance": 0.4,
     "minQty": 417,
     "maxQty": 548,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "狼人"
   },
   {
@@ -35218,7 +35218,7 @@
     "chance": 0.00075,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
+    "chineseItemName": "耳環幸運詛咒卷軸10%",
     "chineseMobName": "狼人"
   },
   {
@@ -35328,7 +35328,7 @@
     "chance": 0.4,
     "minQty": 1621,
     "maxQty": 2387,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "巴洛古"
   },
   {
@@ -35790,7 +35790,7 @@
     "chance": 0.4,
     "minQty": 418,
     "maxQty": 617,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "白狼人"
   },
   {
@@ -36175,7 +36175,7 @@
     "chance": 0.4,
     "minQty": 446,
     "maxQty": 659,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "黑吉拉戰車"
   },
   {
@@ -36769,8 +36769,8 @@
     "chance": 0.4,
     "minQty": 640,
     "maxQty": 960,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "楓幣",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36780,8 +36780,8 @@
     "chance": 0.001287,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "黑龍頭盔",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36791,8 +36791,8 @@
     "chance": 0.001,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "玫瑰耳環",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36802,8 +36802,8 @@
     "chance": 0.0008,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "紅隱者之服",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36813,8 +36813,8 @@
     "chance": 0.0008,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "藍扣帶護甲",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36824,8 +36824,8 @@
     "chance": 0.0007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "黑天上之衣",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36835,8 +36835,8 @@
     "chance": 0.0007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "黑宮衣",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36846,8 +36846,8 @@
     "chance": 0.0007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "白色潘尼爾套裝",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36857,8 +36857,8 @@
     "chance": 0.0008,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "紅隱者之褲",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36868,8 +36868,8 @@
     "chance": 0.0008,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "藍色勇者褲",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36880,7 +36880,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑飛魂鞋",
-    "chineseMobName": null
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36891,7 +36891,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍箭魂鞋",
-    "chineseMobName": null
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36901,8 +36901,8 @@
     "chance": 0.0008,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "黑飛影鞋",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36912,8 +36912,8 @@
     "chance": 0.0008,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "紅扣帶靴",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36923,8 +36923,8 @@
     "chance": 0.0008,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "紅色艾倫鞋",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36935,7 +36935,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "銀名譽手套",
-    "chineseMobName": null
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36945,8 +36945,8 @@
     "chance": 0.001,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "綠天使手套",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36956,8 +36956,8 @@
     "chance": 0.001,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "馬爾斯黑拳套",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36967,8 +36967,8 @@
     "chance": 0.001,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "魔力綠手套",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36978,8 +36978,8 @@
     "chance": 0.001,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "綠色亞達夫手套",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -36990,7 +36990,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "銀尖刺護盾",
-    "chineseMobName": null
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -37001,7 +37001,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "梅之標",
-    "chineseMobName": null
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -37011,8 +37011,8 @@
     "chance": 0.0007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "花靈之斧",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -37023,7 +37023,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "華氏短劍",
-    "chineseMobName": null
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -37033,8 +37033,8 @@
     "chance": 0.0007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "可撒之劍",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -37044,8 +37044,8 @@
     "chance": 0.0005,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "黃金艾倫弓",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -37056,7 +37056,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "超級藥水",
-    "chineseMobName": null
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -37067,7 +37067,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "活力藥水",
-    "chineseMobName": null
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -37078,7 +37078,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": null,
-    "chineseMobName": null
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -37089,7 +37089,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "披風幸運卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -37100,7 +37100,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "雙手劍攻擊卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -37110,8 +37110,8 @@
     "chance": 0.6,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "煉獄獵犬的項鍊",
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -37122,7 +37122,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "柔軟的羽毛",
-    "chineseMobName": null
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -37133,7 +37133,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "力量母礦",
-    "chineseMobName": null
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -37144,7 +37144,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "紫水晶母礦",
-    "chineseMobName": null
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8140500,
@@ -37155,7 +37155,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "鑽石母礦",
-    "chineseMobName": null
+    "chineseMobName": "煉獄獵犬"
   },
   {
     "mobId": 8148008,
@@ -37165,7 +37165,7 @@
     "chance": 0.4,
     "minQty": 48,
     "maxQty": 72,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "紅蝙蝠"
   },
   {
@@ -37308,8 +37308,8 @@
     "chance": 0.4,
     "minQty": 2142,
     "maxQty": 10490,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "楓幣",
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37320,7 +37320,7 @@
     "minQty": 1,
     "maxQty": 4,
     "chineseItemName": null,
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37331,7 +37331,7 @@
     "minQty": 1,
     "maxQty": 4,
     "chineseItemName": null,
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37342,7 +37342,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "月牙標",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37353,7 +37353,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "頭盔防禦卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37364,7 +37364,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "頭盔敏捷卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37375,7 +37375,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "耳環智力卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37386,7 +37386,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "上衣防禦卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37397,7 +37397,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "上衣幸運卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37408,7 +37408,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "套服敏捷卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37419,7 +37419,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "套服防禦卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37430,7 +37430,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "褲裙防禦卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37441,7 +37441,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "鞋子敏捷卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37452,7 +37452,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "鞋子跳躍卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37463,7 +37463,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "鞋子速度卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37474,7 +37474,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "手套敏捷卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37485,7 +37485,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "手套攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37496,7 +37496,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "盾牌防禦卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37507,7 +37507,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "單手劍攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37518,7 +37518,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "單手斧攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37529,7 +37529,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "單手棍攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37540,7 +37540,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "單手棍命中卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37551,7 +37551,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "短劍攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37562,7 +37562,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "短杖魔力卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37573,7 +37573,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "長杖魔力卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37584,7 +37584,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "雙手劍攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37595,7 +37595,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "雙手劍命中卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37606,7 +37606,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "雙手斧攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37617,7 +37617,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "雙手棍攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37628,7 +37628,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "雙手棍命中卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37639,7 +37639,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "槍攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37650,7 +37650,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "矛攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37661,7 +37661,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "弓攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37672,7 +37672,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "弩攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37683,7 +37683,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "拳套攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37694,7 +37694,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "指虎攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8150000,
@@ -37705,7 +37705,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "火槍攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "地獄巴洛古"
   },
   {
     "mobId": 8220000,
@@ -37715,7 +37715,7 @@
     "chance": 0.4,
     "minQty": 500,
     "maxQty": 800,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "艾利傑"
   },
   {
@@ -38320,8 +38320,8 @@
     "chance": 0.4,
     "minQty": 700,
     "maxQty": 900,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "楓幣",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38332,7 +38332,7 @@
     "minQty": 1,
     "maxQty": 4,
     "chineseItemName": "套服智力卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38342,8 +38342,8 @@
     "chance": 0.01,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "玫瑰耳環",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38353,8 +38353,8 @@
     "chance": 0.007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "金圓盾",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38365,7 +38365,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "青銅弓箭",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38376,7 +38376,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "青銅弩箭",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38387,7 +38387,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "雪球",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38397,8 +38397,8 @@
     "chance": 0.007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "坲羅劍",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38408,8 +38408,8 @@
     "chance": 0.007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "雙利刃斧",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38419,8 +38419,8 @@
     "chance": 0.007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "毀滅之鎚",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38430,8 +38430,8 @@
     "chance": 0.005,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "霸傑之刃",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38442,7 +38442,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": null,
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38452,8 +38452,8 @@
     "chance": 0.007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "雙手鐳劍",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38463,8 +38463,8 @@
     "chance": 0.007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "格洛斧",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38474,8 +38474,8 @@
     "chance": 0.007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "鐳奧釘錘",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38485,8 +38485,8 @@
     "chance": 0.005,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "佛羅利刃",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38496,8 +38496,8 @@
     "chance": 0.007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "飛翔斧",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38507,8 +38507,8 @@
     "chance": 0.005,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "梅杜斯",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38518,8 +38518,8 @@
     "chance": 0.005,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "可撒之弩",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38529,8 +38529,8 @@
     "chance": 0.005,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "卡帝斯拳套",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38540,8 +38540,8 @@
     "chance": 0.005,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "吸血鬼之爪",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38551,8 +38551,8 @@
     "chance": 0.005,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "調停者",
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38563,7 +38563,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "特殊藥水",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38574,7 +38574,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "活力藥水",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38585,7 +38585,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "小豆粥",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38596,7 +38596,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": null,
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38607,7 +38607,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "頭盔智力卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38618,7 +38618,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "耳環幸運卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38629,7 +38629,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "套服敏捷卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38640,7 +38640,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "褲裙防禦卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38651,7 +38651,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "鞋子敏捷卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38662,7 +38662,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "手套敏捷卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38673,7 +38673,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "手套攻擊卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38684,7 +38684,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "盾牌防禦卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38695,7 +38695,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "盾牌防禦卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38706,7 +38706,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "披風防禦卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38717,7 +38717,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "披風防禦卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38728,7 +38728,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "披風智力卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38739,7 +38739,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "披風智力卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38750,7 +38750,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "短劍攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38761,7 +38761,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "短杖魔力卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38772,7 +38772,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "短杖魔力卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38783,7 +38783,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "長杖魔力卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38794,7 +38794,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "長杖魔力卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38805,7 +38805,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "槍命中卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38816,7 +38816,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "指虎攻擊卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38827,7 +38827,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "動物皮",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38838,7 +38838,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "雪吉拉之皮",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38849,7 +38849,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "雪吉拉之角",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38860,7 +38860,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "野狼之尾巴",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38871,7 +38871,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "敏捷母礦",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38882,7 +38882,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "銀的母礦",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 8220001,
@@ -38893,7 +38893,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "蛋白石母礦",
-    "chineseMobName": null
+    "chineseMobName": "雪毛怪人"
   },
   {
     "mobId": 9300018,
@@ -38914,8 +38914,8 @@
     "chance": 0.4,
     "minQty": 280,
     "maxQty": 420,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "楓幣",
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -38926,7 +38926,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黃黑太陽帽",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -38937,7 +38937,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "褐色皮製遠洋帽",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -38948,7 +38948,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑守護之服",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -38959,7 +38959,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍鋼玉鎧甲",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -38970,7 +38970,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "紅星光長袍",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -38980,8 +38980,8 @@
     "chance": 0.0007,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "綠星光長袍",
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -38992,7 +38992,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑星光長袍",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39003,7 +39003,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "青旋風甲",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39014,7 +39014,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "赤旋風甲",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39025,7 +39025,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "祖母綠鎧甲",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39036,7 +39036,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍寶石鎧甲",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39047,7 +39047,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "紅貴族禮服",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39058,7 +39058,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "綠色強化服",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39069,7 +39069,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑守護之褲",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39080,7 +39080,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍鋼玉褲",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39091,7 +39091,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍鋼玉裙",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39102,7 +39102,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "強力子彈",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39113,7 +39113,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "半月巨刀",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39124,7 +39124,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "拉斯菲特之槍",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39135,7 +39135,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "特殊藥水",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39146,7 +39146,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "巧克力",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39157,7 +39157,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "套服智力卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39168,7 +39168,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": null,
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39179,7 +39179,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑暗母礦",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39190,7 +39190,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黃金母礦",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300038,
@@ -39201,7 +39201,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑水晶母礦",
-    "chineseMobName": null
+    "chineseMobName": "鬼精靈"
   },
   {
     "mobId": 9300659,
@@ -39211,7 +39211,7 @@
     "chance": 0.4,
     "minQty": 28,
     "maxQty": 42,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "矮胖蝸牛"
   },
   {
@@ -39310,7 +39310,7 @@
     "chance": 0.4,
     "minQty": 60,
     "maxQty": 90,
-    "chineseItemName": null,
+    "chineseItemName": "楓幣",
     "chineseMobName": "海盜領主"
   },
   {
@@ -39442,8 +39442,8 @@
     "chance": 0.4,
     "minQty": 167,
     "maxQty": 245,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "楓幣",
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39454,7 +39454,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": null,
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39465,7 +39465,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "鋰礦諾曼頭盔",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39476,7 +39476,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "褐海盜頭巾",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39487,7 +39487,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "水黃金法冠",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39498,7 +39498,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑板金鎧甲",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39509,7 +39509,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "紅鋼玉鎧甲",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39520,7 +39520,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黃陽",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39531,7 +39531,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "赤月",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39542,7 +39542,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑妖精禮服",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39553,7 +39553,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "綠貴族禮服",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39564,7 +39564,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "褐色皮外套",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39575,7 +39575,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黃陽褲",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39586,7 +39586,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "褐色強化皮靴",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39597,7 +39597,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑賢者手套",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39608,7 +39608,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黃金勇氣手套",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39619,7 +39619,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑意志手套",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39630,7 +39630,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "褐色羅伊斯手套",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39641,7 +39641,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "古老木盾",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39652,7 +39652,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "鋁球棍",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39663,7 +39663,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "太陽之斧",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39674,7 +39674,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "天弓",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39685,7 +39685,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "白銀弩",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39696,7 +39696,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑手甲",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39707,7 +39707,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "活力藥水",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39718,7 +39718,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "清晨之露",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39729,7 +39729,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "手套攻擊卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39740,7 +39740,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "耳環智力卷軸10%",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39751,7 +39751,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "手套敏捷卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39762,7 +39762,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "冰塊",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39773,7 +39773,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "力量母礦",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9500148,
@@ -39784,7 +39784,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "召喚石",
-    "chineseMobName": null
+    "chineseMobName": "烏龜"
   },
   {
     "mobId": 9834151,
@@ -39794,8 +39794,8 @@
     "chance": 0.4,
     "minQty": 600,
     "maxQty": 900,
-    "chineseItemName": null,
-    "chineseMobName": "盾牌牛魔王??"
+    "chineseItemName": "楓幣",
+    "chineseMobName": "盾牌牛魔王"
   },
   {
     "mobId": 9834151,
@@ -39806,7 +39806,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "鍋蓋",
-    "chineseMobName": "盾牌牛魔王??"
+    "chineseMobName": "盾牌牛魔王"
   },
   {
     "mobId": 9834151,
@@ -39817,7 +39817,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "敏捷盾牌",
-    "chineseMobName": "盾牌牛魔王??"
+    "chineseMobName": "盾牌牛魔王"
   },
   {
     "mobId": 9834151,
@@ -39828,7 +39828,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "調色盤",
-    "chineseMobName": "盾牌牛魔王??"
+    "chineseMobName": "盾牌牛魔王"
   },
   {
     "mobId": 9834151,
@@ -39839,7 +39839,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "銀尖刺護盾",
-    "chineseMobName": "盾牌牛魔王??"
+    "chineseMobName": "盾牌牛魔王"
   },
   {
     "mobId": 9834151,
@@ -39850,7 +39850,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "金尖刺護盾",
-    "chineseMobName": "盾牌牛魔王??"
+    "chineseMobName": "盾牌牛魔王"
   },
   {
     "mobId": 9834151,
@@ -39861,7 +39861,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "鑽石護盾",
-    "chineseMobName": "盾牌牛魔王??"
+    "chineseMobName": "盾牌牛魔王"
   },
   {
     "mobId": 9834151,
@@ -39872,7 +39872,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "盾牌魔攻卷軸100%",
-    "chineseMobName": "盾牌牛魔王??"
+    "chineseMobName": "盾牌牛魔王"
   },
   {
     "mobId": 9834151,
@@ -39883,7 +39883,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "盾牌攻擊卷軸100%",
-    "chineseMobName": "盾牌牛魔王??"
+    "chineseMobName": "盾牌牛魔王"
   },
   {
     "mobId": 9834151,
@@ -39894,7 +39894,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "手套攻擊卷軸10%",
-    "chineseMobName": "盾牌牛魔王??"
+    "chineseMobName": "盾牌牛魔王"
   },
   {
     "mobId": 9834151,
@@ -39905,7 +39905,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": null,
-    "chineseMobName": "盾牌牛魔王??"
+    "chineseMobName": "盾牌牛魔王"
   },
   {
     "mobId": 9834151,
@@ -39916,7 +39916,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "敏捷母礦",
-    "chineseMobName": "盾牌牛魔王??"
+    "chineseMobName": "盾牌牛魔王"
   },
   {
     "mobId": 9834151,
@@ -39927,7 +39927,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "祖母綠母礦",
-    "chineseMobName": "盾牌牛魔王??"
+    "chineseMobName": "盾牌牛魔王"
   },
   {
     "mobId": 9834178,
@@ -39937,8 +39937,8 @@
     "chance": 0.4,
     "minQty": 329,
     "maxQty": 482,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "楓幣",
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -39949,7 +39949,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "企鵝王的嘴",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -39960,7 +39960,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "綠黑太陽帽",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -39971,7 +39971,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黃黑太陽帽",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -39982,7 +39982,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑忍者頭巾",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -39993,7 +39993,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "藍月耳環",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40004,7 +40004,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑暗之影",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40014,8 +40014,8 @@
     "chance": 0.002,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "紅隱者之服",
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40026,7 +40026,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑守護之服",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40037,7 +40037,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "深夜之影",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40048,7 +40048,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑妖精禮服",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40059,7 +40059,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "白妖精禮服",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40070,7 +40070,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "朱紅妖精禮服",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40081,7 +40081,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "白聖黨之服",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40092,7 +40092,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑聖黨之服",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40103,7 +40103,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑暗之褲",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40113,8 +40113,8 @@
     "chance": 0.002,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "紅隱者之褲",
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40125,7 +40125,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑守護褲",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40135,8 +40135,8 @@
     "chance": 0.002,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": null
+    "chineseItemName": "黑暗之褲",
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40147,7 +40147,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "白色魔法披風",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40158,7 +40158,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "雪球",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40169,7 +40169,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "樹靈之斧",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40180,7 +40180,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "魔靈之翼",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40191,7 +40191,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "刺槍",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40202,7 +40202,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "天弓",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40213,7 +40213,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "迪林格火槍",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40224,7 +40224,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "活力藥水",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40235,7 +40235,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "巧克力",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40246,7 +40246,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "披風智力卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40257,7 +40257,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "披風力量卷軸60%",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40268,7 +40268,7 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黃金母礦",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   },
   {
     "mobId": 9834178,
@@ -40279,6 +40279,6 @@
     "minQty": 1,
     "maxQty": 1,
     "chineseItemName": "黑水晶母礦",
-    "chineseMobName": null
+    "chineseMobName": "雪球企鵝王"
   }
 ]
