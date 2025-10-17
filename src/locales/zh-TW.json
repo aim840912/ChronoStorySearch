@@ -3,6 +3,7 @@
   "app.description": "探索你的楓之谷冒險夥伴，查看角色資訊、職業、等級等詳細資料",
   "search.placeholder": "搜尋怪物或物品...",
   "search.placeholder.detail": "支援中英文、多關鍵字搜尋",
+  "search.clear": "清除",
   "filter.all": "全部",
   "filter.favoriteMonsters": "我的最愛 - 怪物",
   "filter.favoriteItems": "我的最愛 - 物品",
@@ -83,5 +84,8 @@
   "card.viewAllItems": "點擊查看所有掉落物品",
   "card.viewAllMonsters": "點擊查看所有掉落怪物",
   "card.monsterId": "怪物 ID",
-  "card.itemId": "物品 ID"
+  "card.itemId": "物品 ID",
+  "share.button": "分享",
+  "share.success": "連結已複製到剪貼簿！",
+  "share.error": "無法複製連結"
 }

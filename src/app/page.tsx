@@ -20,6 +20,7 @@ import { ClearConfirmModal } from '@/components/ClearConfirmModal'
 import { GachaMachineModal } from '@/components/GachaMachineModal'
 import { LanguageToggle } from '@/components/LanguageToggle'
 import { ThemeToggle } from '@/components/ThemeToggle'
+import { Toast } from '@/components/Toast'
 import { clientLogger } from '@/lib/logger'
 import dropsData from '@/../public/data/drops.json'
 
@@ -66,6 +67,11 @@ export default function Home() {
   const [isClearModalOpen, setIsClearModalOpen] = useState(false)
   const [clearModalType, setClearModalType] = useState<ClearModalType>('monsters')
   const [isGachaModalOpen, setIsGachaModalOpen] = useState(false)
+
+  // Toast 狀態
+  const [isToastVisible, setIsToastVisible] = useState(false)
+  const [toastMessage, setToastMessage] = useState('')
+  const [toastType, setToastType] = useState<'success' | 'error' | 'info'>('success')
 
   // 篩選模式：全部 or 最愛怪物 or 最愛物品
   const [filterMode, setFilterMode] = useState<FilterMode>('all')
@@ -139,8 +145,15 @@ export default function Home() {
     loadGachaMachines()
   }, [])
 
-  // 處理 URL 參數 - 自動開啟對應的 modal
+  // 處理 URL 參數 - 搜尋詞和自動開啟對應的 modal
   useEffect(() => {
+    // 處理搜尋關鍵字參數
+    const searchQuery = searchParams.get('q')
+    if (searchQuery) {
+      setSearchTerm(decodeURIComponent(searchQuery))
+      clientLogger.info(`從 URL 參數載入搜尋詞: ${decodeURIComponent(searchQuery)}`)
+    }
+
     if (allDrops.length === 0) return // 等待資料載入完成
 
     const monsterIdParam = searchParams.get('monster')
@@ -528,6 +541,25 @@ export default function Home() {
     }
   }
 
+  // 分享處理函數
+  const handleShare = async () => {
+    if (!searchTerm.trim()) return
+
+    try {
+      const url = `${window.location.origin}${window.location.pathname}?q=${encodeURIComponent(searchTerm)}`
+      await navigator.clipboard.writeText(url)
+      setToastMessage(t('share.success'))
+      setToastType('success')
+      setIsToastVisible(true)
+      clientLogger.info(`分享連結已複製: ${url}`)
+    } catch (error) {
+      setToastMessage(t('share.error'))
+      setToastType('error')
+      setIsToastVisible(true)
+      clientLogger.error('複製連結失敗', error)
+    }
+  }
+
   // 鍵盤導航處理
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (!showSuggestions || suggestions.length === 0) return
@@ -602,6 +634,7 @@ export default function Home() {
             focusedIndex={focusedIndex}
             onFocusedIndexChange={setFocusedIndex}
             searchContainerRef={searchContainerRef}
+            onShare={handleShare}
           />
 
           {/* 篩選按鈕 */}
@@ -832,6 +865,14 @@ export default function Home() {
           <span className="text-sm font-medium hidden group-hover:inline-block">{t('bug.report')}</span>
         </div>
       </button>
+
+      {/* Toast 通知 */}
+      <Toast
+        message={toastMessage}
+        isVisible={isToastVisible}
+        onClose={() => setIsToastVisible(false)}
+        type={toastType}
+      />
     </div>
   )
 }

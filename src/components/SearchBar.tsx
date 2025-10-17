@@ -16,6 +16,7 @@ interface SearchBarProps {
   focusedIndex: number
   onFocusedIndexChange: (index: number) => void
   searchContainerRef: RefObject<HTMLDivElement | null>
+  onShare?: () => void
 }
 
 /**
@@ -33,6 +34,7 @@ export function SearchBar({
   focusedIndex,
   onFocusedIndexChange,
   searchContainerRef,
+  onShare,
 }: SearchBarProps) {
   const { t } = useLanguage()
 
@@ -81,14 +83,35 @@ export function SearchBar({
           onFocus={onFocus}
           onKeyDown={onKeyDown}
           placeholder={t('search.placeholder')}
-          className="w-full pl-12 pr-12 py-4 text-gray-900 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400 dark:placeholder-gray-500 transition-all"
+          className={`w-full pl-12 py-4 text-gray-900 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400 dark:placeholder-gray-500 transition-all ${
+            searchTerm ? 'pr-20' : 'pr-12'
+          }`}
         />
+
+        {/* 分享按鈕 */}
+        {searchTerm && onShare && (
+          <button
+            onClick={onShare}
+            className="absolute inset-y-0 right-12 flex items-center pr-3 text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            aria-label={t('share.button')}
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+              />
+            </svg>
+          </button>
+        )}
 
         {/* 清除按鈕 */}
         {searchTerm && (
           <button
             onClick={() => onSearchChange('')}
             className="absolute inset-y-0 right-0 flex items-center pr-4 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+            aria-label={t('search.clear')}
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path

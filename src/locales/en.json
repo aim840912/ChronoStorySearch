@@ -3,6 +3,7 @@
   "app.description": "Explore your MapleStory companions, view character details, jobs, levels and more",
   "search.placeholder": "Search monsters or items...",
   "search.placeholder.detail": "Supports multiple keywords",
+  "search.clear": "Clear",
   "filter.all": "All",
   "filter.favoriteMonsters": "Favorites - Monsters",
   "filter.favoriteItems": "Favorites - Items",
@@ -83,5 +84,8 @@
   "card.viewAllItems": "Click to view all dropped items",
   "card.viewAllMonsters": "Click to view all monsters",
   "card.monsterId": "Monster ID",
-  "card.itemId": "Item ID"
+  "card.itemId": "Item ID",
+  "share.button": "Share",
+  "share.success": "Link copied to clipboard!",
+  "share.error": "Failed to copy link"
 }
