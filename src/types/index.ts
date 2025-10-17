@@ -100,6 +100,7 @@ export interface GachaItem {
 export interface GachaMachine {
   machineId: number // 轉蛋機 ID
   machineName: string // 轉蛋機名稱
+  chineseMachineName?: string // 中文轉蛋機名稱（可選）
   description: string // 轉蛋機描述
   totalItems: number // 總物品數量
   items: GachaItem[] // 物品列表

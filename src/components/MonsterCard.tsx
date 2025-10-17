@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getMonsterDisplayName } from '@/lib/display-name'
 import { getMonsterImageUrl } from '@/lib/image-utils'

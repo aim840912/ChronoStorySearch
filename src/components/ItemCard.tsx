@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
 import { getItemImageUrl } from '@/lib/image-utils'
