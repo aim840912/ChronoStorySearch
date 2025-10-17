@@ -1,11 +1,13 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { DropItem } from '@/types'
+import type { DropItem, ItemAttributes } from '@/types'
 import { MonsterDropCard } from './MonsterDropCard'
+import { ItemAttributesCard } from './ItemAttributesCard'
 import { clientLogger } from '@/lib/logger'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
+import itemAttributesData from '@/../public/data/item-attributes.json'
 
 interface ItemModalProps {
   isOpen: boolean
@@ -48,6 +50,16 @@ export function ItemModal({
     return allDrops.filter((drop) => drop.itemId === itemId)
   }, [itemId, allDrops])
 
+  // 查找物品屬性資料
+  const itemAttributes = useMemo(() => {
+    if (!itemId && itemId !== 0) return null
+    return (
+      (itemAttributesData as ItemAttributes[]).find(
+        (attr) => attr.item_id === String(itemId)
+      ) || null
+    )
+  }, [itemId])
+
   // ESC 鍵關閉 modal
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
@@ -85,11 +97,11 @@ export function ItemModal({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+      className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
       onClick={onClose}
     >
       <div
-        className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto"
+        className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-6xl max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header - GREEN GRADIENT */}
@@ -174,18 +186,29 @@ export function ItemModal({
           </div>
         </div>
 
-        {/* Modal Content - 掉落來源怪物列表 */}
-        <div className="p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {itemDrops.map((drop, index) => (
-              <MonsterDropCard
-                key={`${drop.mobId}-${index}`}
-                drop={drop}
-                isFavorite={isMonsterFavorite(drop.mobId)}
-                onToggleFavorite={onToggleMonsterFavorite}
-                onMonsterClick={onMonsterClick}
-              />
-            ))}
+        {/* Modal Content - 左右分欄佈局（手機版上下堆疊） */}
+        <div className="p-6 flex flex-col lg:flex-row gap-6">
+          {/* 左側：物品屬性（桌面版固定位置） */}
+          <div className="lg:w-1/3 lg:sticky lg:top-32 lg:self-start">
+            <ItemAttributesCard attributes={itemAttributes} />
+          </div>
+
+          {/* 右側：掉落來源怪物列表（可滾動） */}
+          <div className="lg:w-2/3">
+            <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
+              {t('card.droppedBy')}
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {itemDrops.map((drop, index) => (
+                <MonsterDropCard
+                  key={`${drop.mobId}-${index}`}
+                  drop={drop}
+                  isFavorite={isMonsterFavorite(drop.mobId)}
+                  onToggleFavorite={onToggleMonsterFavorite}
+                  onMonsterClick={onMonsterClick}
+                />
+              ))}
+            </div>
           </div>
         </div>
 

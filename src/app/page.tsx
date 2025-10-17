@@ -537,6 +537,20 @@ export default function Home() {
     })
   }
 
+  // MonsterModal 中點擊裝備：不關閉 MonsterModal，直接在上方打開 ItemModal
+  const handleItemClickFromMonsterModal = (itemId: number, itemName: string) => {
+    // 不調用 modals.closeMonsterModal()
+    modals.openItemModal(itemId, itemName)
+  }
+
+  // ItemModal 中點擊怪物：關閉 ItemModal，顯示下方已打開的 MonsterModal
+  const handleMonsterClickFromItemModal = (mobId: number, mobName: string) => {
+    modals.closeItemModal() // 關閉 ItemModal
+    // 更新 MonsterModal 的內容（MonsterModal 保持開啟）
+    modals.setSelectedMonsterId(mobId)
+    modals.setSelectedMonsterName(mobName)
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 pb-12">
@@ -721,7 +735,7 @@ export default function Home() {
         onToggleFavorite={toggleFavorite}
         isItemFavorite={isItemFavorite}
         onToggleItemFavorite={toggleItemFavorite}
-        onItemClick={modals.openItemModal}
+        onItemClick={handleItemClickFromMonsterModal}
       />
 
       {/* Item Drops Modal */}
@@ -735,7 +749,7 @@ export default function Home() {
         onToggleFavorite={toggleItemFavorite}
         isMonsterFavorite={isFavorite}
         onToggleMonsterFavorite={toggleFavorite}
-        onMonsterClick={modals.openMonsterModal}
+        onMonsterClick={handleMonsterClickFromItemModal}
       />
 
       {/* Bug Report Modal */}

@@ -143,3 +143,64 @@ export interface MonsterStats {
   exp: number | null
   minimumPushDamage: number | null
 }
+
+// 物品屬性資料類型
+export interface ItemRequirements {
+  req_level: number | null
+  req_str: number | null
+  req_dex: number | null
+  req_int: number | null
+  req_luk: number | null
+  req_fam: number | null
+}
+
+export interface ItemClasses {
+  beginner: boolean | null
+  warrior: boolean | null
+  magician: boolean | null
+  bowman: boolean | null
+  thief: boolean | null
+  pirate: boolean | null
+}
+
+export interface ItemEquipmentStats {
+  attack_speed: number | null
+  str: number | null
+  dex: number | null
+  int: number | null
+  luk: number | null
+  watk: number | null
+  matk: number | null
+  accuracy: number | null
+  avoidability: number | null
+  speed: number | null
+  jump: number | null
+  hp: number | null
+  mp: number | null
+  wdef: number | null
+  mdef: number | null
+  upgrades: number | null
+}
+
+export interface ItemEquipment {
+  category: string
+  requirements: ItemRequirements
+  classes: ItemClasses
+  stats: ItemEquipmentStats
+  stat_variation?: Record<string, unknown>
+  stat_category_each_extra?: Record<string, unknown>
+  stat_category_max_extra?: Record<string, unknown>
+}
+
+export interface ItemAttributes {
+  item_id: string
+  item_name: string
+  item_type_id: number
+  sale_price: number | null
+  max_stack_count: number | null
+  untradeable: boolean | null
+  item_description: string | null
+  type: string
+  sub_type: string | null
+  equipment?: ItemEquipment
+}
