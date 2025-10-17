@@ -26,6 +26,8 @@ import { ThemeToggle } from '@/components/ThemeToggle'
 import { Toast } from '@/components/Toast'
 import { clientLogger } from '@/lib/logger'
 import dropsData from '@/../public/data/drops.json'
+import monsterStatsData from '@/../public/data/monster-stats.json'
+import type { MonsterStats } from '@/types'
 
 /**
  * 多關鍵字匹配函數
@@ -194,6 +196,18 @@ export default function Home() {
 
     return shuffled.slice(0, sampleSize)
   }, [allDrops])
+
+  // 建立怪物血量快速查詢 Map (mobId -> maxHP)
+  const monsterHPMap = useMemo(() => {
+    const hpMap = new Map<number, number | null>()
+    const stats = monsterStatsData as MonsterStats[]
+
+    stats.forEach((stat) => {
+      hpMap.set(stat.mobId, stat.maxHP)
+    })
+
+    return hpMap
+  }, [])
 
   // 計算去重的最愛怪物清單（每個怪物只出現一次）
   const uniqueFavoriteMonsters = useMemo(() => {
@@ -657,6 +671,7 @@ export default function Home() {
                       onCardClick={modals.openMonsterModal}
                       isFavorite={isFavorite(drop.mobId)}
                       onToggleFavorite={toggleFavorite}
+                      maxHP={monsterHPMap.get(drop.mobId)}
                     />
                   ))}
                 </div>

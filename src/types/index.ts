@@ -124,3 +124,22 @@ export type Translations = Record<string, string>
 
 // 主題相關類型
 export type Theme = 'light' | 'dark' | 'system'
+
+// 怪物屬性資料類型
+export interface MonsterStats {
+  mobId: number
+  name: string | null
+  chineseMobName: string | null
+  level: number | null
+  maxHP: number | null
+  maxMP: number | null
+  speed: number | null
+  physicalDamage: number | null
+  physicalDefense: number | null
+  magicDamage: number | null
+  magicDefense: number | null
+  accuracy: number | null
+  evasion: number | null
+  exp: number | null
+  minimumPushDamage: number | null
+}

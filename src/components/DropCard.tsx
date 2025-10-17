@@ -10,18 +10,17 @@ interface DropCardProps {
   onCardClick: (mobId: number, mobName: string) => void
   isFavorite: boolean
   onToggleFavorite: (mobId: number, mobName: string) => void
+  maxHP?: number | null // 怪物血量（可選，部分怪物沒有血量資料）
 }
 
 /**
  * 掉落資料卡片元件（用於全部模式）
  * 顯示怪物及其掉落物品的完整資訊
  */
-export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite }: DropCardProps) {
+export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite, maxHP }: DropCardProps) {
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
   const chancePercent = (drop.chance * 100).toFixed(4)
-  const qtyRange =
-    drop.minQty === drop.maxQty ? `${drop.minQty}` : `${drop.minQty}-${drop.maxQty}`
 
   // 獲取顯示名稱（支援中英文切換）
   const displayMobName = getMonsterDisplayName(drop.mobName, drop.chineseMobName, language)
@@ -108,7 +107,7 @@ export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite }: Dr
           </div>
         </div>
 
-        {/* 機率和數量 */}
+        {/* 機率和血量 */}
         <div className="flex gap-3 mt-3">
           <div className="flex-1">
             <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">{t('card.dropRate')}</div>
@@ -118,14 +117,16 @@ export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite }: Dr
               </span>
             </div>
           </div>
-          <div className="flex-1">
-            <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">{t('card.dropQuantity')}</div>
-            <div className="bg-green-50 dark:bg-green-900/20 px-3 py-2 rounded">
-              <span className="text-sm font-bold text-green-700 dark:text-green-300">
-                {qtyRange}
-              </span>
+          {maxHP !== null && maxHP !== undefined && (
+            <div className="flex-1">
+              <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">{t('monster.maxHP')}</div>
+              <div className="bg-red-50 dark:bg-red-900/20 px-3 py-2 rounded">
+                <span className="text-sm font-bold text-red-700 dark:text-red-300">
+                  {maxHP.toLocaleString()}
+                </span>
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         {/* 物品 ID */}

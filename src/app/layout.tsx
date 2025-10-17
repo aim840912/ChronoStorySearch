@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="zh-TW">
       <head>
-        <title>楓之谷角色列表 | MapleStory Characters</title>
+        <title>ChronoStory Search</title>
         <meta name="description" content="探索你的楓之谷冒險夥伴，查看角色資訊、職業、等級等詳細資料" />
       </head>
       <body

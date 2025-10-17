@@ -1,11 +1,13 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { DropItem } from '@/types'
+import type { DropItem, MonsterStats } from '@/types'
 import { DropItemCard } from './DropItemCard'
+import { MonsterStatsCard } from './MonsterStatsCard'
 import { clientLogger } from '@/lib/logger'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
+import monsterStatsData from '@/../public/data/monster-stats.json'
 
 interface MonsterModalProps {
   isOpen: boolean
@@ -48,6 +50,14 @@ export function MonsterModal({
     return allDrops.filter((drop) => drop.mobId === monsterId)
   }, [monsterId, allDrops])
 
+  // 查找怪物屬性資料
+  const monsterStats = useMemo(() => {
+    if (!monsterId) return null
+    return (
+      (monsterStatsData as MonsterStats[]).find((stats) => stats.mobId === monsterId) || null
+    )
+  }, [monsterId])
+
   // ESC 鍵關閉 modal
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
@@ -89,7 +99,7 @@ export function MonsterModal({
       onClick={onClose}
     >
       <div
-        className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto"
+        className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-6xl max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
@@ -168,18 +178,29 @@ export function MonsterModal({
           </div>
         </div>
 
-        {/* Modal Content - 掉落物品列表 */}
-        <div className="p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {monsterDrops.map((drop, index) => (
-              <DropItemCard
-                key={`${drop.itemId}-${index}`}
-                drop={drop}
-                isFavorite={isItemFavorite(drop.itemId)}
-                onToggleFavorite={onToggleItemFavorite}
-                onItemClick={onItemClick}
-              />
-            ))}
+        {/* Modal Content - 左右分欄佈局（手機版上下堆疊） */}
+        <div className="p-6 flex flex-col lg:flex-row gap-6">
+          {/* 左側：怪物屬性（桌面版固定位置） */}
+          <div className="lg:w-1/3 lg:sticky lg:top-32 lg:self-start">
+            <MonsterStatsCard stats={monsterStats} />
+          </div>
+
+          {/* 右側：掉落物品（可滾動） */}
+          <div className="lg:w-2/3">
+            <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
+              {t('monster.drops')}
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {monsterDrops.map((drop, index) => (
+                <DropItemCard
+                  key={`${drop.itemId}-${index}`}
+                  drop={drop}
+                  isFavorite={isItemFavorite(drop.itemId)}
+                  onToggleFavorite={onToggleItemFavorite}
+                  onItemClick={onItemClick}
+                />
+              ))}
+            </div>
           </div>
         </div>
 

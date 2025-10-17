@@ -97,5 +97,20 @@
   "modal.share": "Share link",
   "modal.close": "Close",
   "modal.linkCopied": "Link copied to clipboard",
-  "modal.copyFailed": "Failed to copy, please copy manually"
+  "modal.copyFailed": "Failed to copy, please copy manually",
+  "monster.level": "Level",
+  "monster.maxHP": "HP",
+  "monster.maxMP": "MP",
+  "monster.speed": "Speed",
+  "monster.physicalDamage": "Physical ATK",
+  "monster.physicalDefense": "Physical DEF",
+  "monster.magicDamage": "Magic ATK",
+  "monster.magicDefense": "Magic DEF",
+  "monster.accuracy": "Accuracy",
+  "monster.evasion": "Evasion",
+  "monster.exp": "EXP",
+  "monster.minimumPushDamage": "Min Push DMG",
+  "monster.stats": "Monster Stats",
+  "monster.noStats": "No stats available",
+  "monster.drops": "Dropped Items"
 }
