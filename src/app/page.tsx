@@ -1,12 +1,15 @@
 'use client'
 
-import { useState, useEffect, useRef, useMemo } from 'react'
-import { useSearchParams, useRouter } from 'next/navigation'
-import type { DropItem, SuggestionItem, FilterMode, ClearModalType, GachaMachine } from '@/types'
+import { useState, useEffect, useMemo } from 'react'
+import { useSearchParams } from 'next/navigation'
+import type { DropItem, SuggestionItem, FilterMode, GachaMachine } from '@/types'
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 import { useFavoriteMonsters } from '@/hooks/useFavoriteMonsters'
 import { useFavoriteItems } from '@/hooks/useFavoriteItems'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useToast } from '@/hooks/useToast'
+import { useModalManager } from '@/hooks/useModalManager'
+import { useSearchWithSuggestions } from '@/hooks/useSearchWithSuggestions'
 import { SearchBar } from '@/components/SearchBar'
 import { FilterButtons } from '@/components/FilterButtons'
 import { StatsDisplay } from '@/components/StatsDisplay'
@@ -44,40 +47,24 @@ function matchesAllKeywords(text: string, searchTerm: string): boolean {
 
 export default function Home() {
   const searchParams = useSearchParams()
-  const router = useRouter()
   const { t, language } = useLanguage()
 
+  // 資料狀態
   const [allDrops, setAllDrops] = useState<DropItem[]>([])
   const [gachaMachines, setGachaMachines] = useState<GachaMachine[]>([])
   const [filteredDrops, setFilteredDrops] = useState<DropItem[]>([])
-  const [searchTerm, setSearchTerm] = useState('')
   const [isLoading, setIsLoading] = useState(true)
-  const [showSuggestions, setShowSuggestions] = useState(false)
-  const [focusedIndex, setFocusedIndex] = useState(-1)
-  const searchContainerRef = useRef<HTMLDivElement>(null)
-
-  // Modal 狀態
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const [selectedMonsterId, setSelectedMonsterId] = useState<number | null>(null)
-  const [selectedMonsterName, setSelectedMonsterName] = useState('')
-  const [isItemModalOpen, setIsItemModalOpen] = useState(false)
-  const [selectedItemId, setSelectedItemId] = useState<number | null>(null)
-  const [selectedItemName, setSelectedItemName] = useState('')
-  const [isBugReportModalOpen, setIsBugReportModalOpen] = useState(false)
-  const [isClearModalOpen, setIsClearModalOpen] = useState(false)
-  const [clearModalType, setClearModalType] = useState<ClearModalType>('monsters')
-  const [isGachaModalOpen, setIsGachaModalOpen] = useState(false)
-
-  // Toast 狀態
-  const [isToastVisible, setIsToastVisible] = useState(false)
-  const [toastMessage, setToastMessage] = useState('')
-  const [toastType, setToastType] = useState<'success' | 'error' | 'info'>('success')
 
   // 篩選模式：全部 or 最愛怪物 or 最愛物品
   const [filterMode, setFilterMode] = useState<FilterMode>('all')
 
+  // 使用自定義 hooks
+  const toast = useToast()
+  const modals = useModalManager()
+  const search = useSearchWithSuggestions()
+
   // Debounced 搜尋詞 - 延遲 500ms 以減少計算頻率
-  const debouncedSearchTerm = useDebouncedValue(searchTerm, 500)
+  const debouncedSearchTerm = useDebouncedValue(search.searchTerm, 500)
 
   // 最愛怪物管理
   const {
@@ -150,7 +137,7 @@ export default function Home() {
     // 處理搜尋關鍵字參數
     const searchQuery = searchParams.get('q')
     if (searchQuery) {
-      setSearchTerm(decodeURIComponent(searchQuery))
+      search.setSearchTerm(decodeURIComponent(searchQuery))
       clientLogger.info(`從 URL 參數載入搜尋詞: ${decodeURIComponent(searchQuery)}`)
     }
 
@@ -167,9 +154,9 @@ export default function Home() {
         if (monster) {
           // 使用顯示名稱（根據當前語言，有中文名稱且語言為中文時顯示中文，否則顯示英文）
           const displayName = (language === 'zh-TW' && monster.chineseMobName) ? monster.chineseMobName : monster.mobName
-          setSelectedMonsterId(monsterId)
-          setSelectedMonsterName(displayName)
-          setIsModalOpen(true)
+          modals.setSelectedMonsterId(monsterId)
+          modals.setSelectedMonsterName(displayName)
+          modals.setIsMonsterModalOpen(true)
           clientLogger.info(`從 URL 參數開啟怪物 modal: ${displayName} (${monsterId})`)
         }
       }
@@ -182,14 +169,14 @@ export default function Home() {
         if (item) {
           // 使用顯示名稱（根據當前語言，有中文名稱且語言為中文時顯示中文，否則顯示英文）
           const displayName = (language === 'zh-TW' && item.chineseItemName) ? item.chineseItemName : item.itemName
-          setSelectedItemId(parsedItemId)
-          setSelectedItemName(displayName)
-          setIsItemModalOpen(true)
+          modals.setSelectedItemId(parsedItemId)
+          modals.setSelectedItemName(displayName)
+          modals.setIsItemModalOpen(true)
           clientLogger.info(`從 URL 參數開啟物品 modal: ${displayName} (${parsedItemId})`)
         }
       }
     }
-  }, [allDrops, searchParams, language])
+  }, [allDrops, searchParams, language, search, modals])
 
   // 隨機選擇 100 筆資料（初始顯示用）- Fisher-Yates shuffle
   const initialRandomDrops = useMemo(() => {
@@ -492,49 +479,17 @@ export default function Home() {
       // 找到對應的轉蛋機並開啟 modal
       const machine = gachaMachines.find(m => m.machineId === suggestion.machineId)
       if (machine) {
-        setIsGachaModalOpen(true)
-        setSearchTerm(suggestionName) // 也設定搜尋詞以便在 modal 中過濾
+        modals.openGachaModal()
+        search.setSearchTerm(suggestionName) // 也設定搜尋詞以便在 modal 中過濾
       }
     } else {
-      setSearchTerm(suggestionName)
+      search.selectSuggestion(suggestionName)
     }
-    setShowSuggestions(false)
-    setFocusedIndex(-1)
-  }
-
-  // Modal 處理函數
-  const handleCardClick = (mobId: number, mobName: string) => {
-    setSelectedMonsterId(mobId)
-    setSelectedMonsterName(mobName)
-    setIsModalOpen(true)
-  }
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false)
-    setSelectedMonsterId(null)
-    setSelectedMonsterName('')
-    // 清除 URL 參數
-    router.replace('/', { scroll: false })
-  }
-
-  // 物品點擊處理 - 開啟 ItemModal
-  const handleItemClick = (itemId: number, itemName: string) => {
-    setSelectedItemId(itemId)
-    setSelectedItemName(itemName)
-    setIsItemModalOpen(true)
-  }
-
-  const handleCloseItemModal = () => {
-    setIsItemModalOpen(false)
-    setSelectedItemId(null)
-    setSelectedItemName('')
-    // 清除 URL 參數
-    router.replace('/', { scroll: false })
   }
 
   // 清除最愛確認處理
   const handleClearConfirm = () => {
-    if (clearModalType === 'monsters') {
+    if (modals.clearModalType === 'monsters') {
       clearAllMonsters()
     } else {
       clearAllItems()
@@ -543,67 +498,30 @@ export default function Home() {
 
   // 分享處理函數
   const handleShare = async () => {
-    if (!searchTerm.trim()) return
+    if (!search.searchTerm.trim()) return
 
     try {
-      const url = `${window.location.origin}${window.location.pathname}?q=${encodeURIComponent(searchTerm)}`
+      const url = `${window.location.origin}${window.location.pathname}?q=${encodeURIComponent(search.searchTerm)}`
       await navigator.clipboard.writeText(url)
-      setToastMessage(t('share.success'))
-      setToastType('success')
-      setIsToastVisible(true)
+      toast.showToast(t('share.success'), 'success')
       clientLogger.info(`分享連結已複製: ${url}`)
     } catch (error) {
-      setToastMessage(t('share.error'))
-      setToastType('error')
-      setIsToastVisible(true)
+      toast.showToast(t('share.error'), 'error')
       clientLogger.error('複製連結失敗', error)
     }
   }
 
-  // 鍵盤導航處理
+  // 鍵盤導航處理 - 包裝 search.handleKeyDown 以處理轉蛋建議
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (!showSuggestions || suggestions.length === 0) return
-
-    switch (e.key) {
-      case 'ArrowDown':
-        e.preventDefault()
-        setFocusedIndex((prev) => (prev < suggestions.length - 1 ? prev + 1 : prev))
-        break
-      case 'ArrowUp':
-        e.preventDefault()
-        setFocusedIndex((prev) => (prev > 0 ? prev - 1 : -1))
-        break
-      case 'Enter':
-        e.preventDefault()
-        if (focusedIndex >= 0 && focusedIndex < suggestions.length) {
-          selectSuggestion(suggestions[focusedIndex].name, suggestions[focusedIndex])
+    search.handleKeyDown(e, suggestions, (suggestion) => {
+      if (suggestion.type === 'gacha' && suggestion.machineId) {
+        const machine = gachaMachines.find(m => m.machineId === suggestion.machineId)
+        if (machine) {
+          modals.openGachaModal()
         }
-        break
-      case 'Escape':
-        e.preventDefault()
-        setShowSuggestions(false)
-        setFocusedIndex(-1)
-        break
-    }
-  }
-
-  // 點擊外部關閉建議列表
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        searchContainerRef.current &&
-        !searchContainerRef.current.contains(event.target as Node)
-      ) {
-        setShowSuggestions(false)
-        setFocusedIndex(-1)
       }
-    }
-
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [])
+    })
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
@@ -624,16 +542,16 @@ export default function Home() {
 
           {/* 搜尋列 */}
           <SearchBar
-            searchTerm={searchTerm}
-            onSearchChange={setSearchTerm}
+            searchTerm={search.searchTerm}
+            onSearchChange={search.setSearchTerm}
             suggestions={suggestions}
-            showSuggestions={showSuggestions}
-            onFocus={() => setShowSuggestions(true)}
+            showSuggestions={search.showSuggestions}
+            onFocus={() => search.setShowSuggestions(true)}
             onSelectSuggestion={selectSuggestion}
             onKeyDown={handleKeyDown}
-            focusedIndex={focusedIndex}
-            onFocusedIndexChange={setFocusedIndex}
-            searchContainerRef={searchContainerRef}
+            focusedIndex={search.focusedIndex}
+            onFocusedIndexChange={search.setFocusedIndex}
+            searchContainerRef={search.searchContainerRef}
             onShare={handleShare}
           />
 
@@ -643,16 +561,13 @@ export default function Home() {
             onFilterChange={setFilterMode}
             favoriteMonsterCount={favoriteCount}
             favoriteItemCount={favoriteItemCount}
-            onClearClick={(type) => {
-              setClearModalType(type)
-              setIsClearModalOpen(true)
-            }}
+            onClearClick={modals.openClearModal}
           />
 
           {/* 資料統計 */}
           <StatsDisplay
             filterMode={filterMode}
-            searchTerm={searchTerm}
+            searchTerm={search.searchTerm}
             filteredUniqueMonsterCount={filteredUniqueMonsters.length}
             favoriteMonsterCount={favoriteCount}
             filteredUniqueItemCount={filteredUniqueItems.length}
@@ -682,7 +597,7 @@ export default function Home() {
                       mobName={monster.mobName}
                       chineseMobName={monster.chineseMobName}
                       dropCount={monster.dropCount}
-                      onCardClick={handleCardClick}
+                      onCardClick={modals.openMonsterModal}
                       isFavorite={true}
                       onToggleFavorite={toggleFavorite}
                     />
@@ -690,12 +605,12 @@ export default function Home() {
                 </div>
               ) : (
                 <div className="text-center py-12 mt-8">
-                  <div className="text-6xl mb-4">{searchTerm ? '🔍' : '💝'}</div>
+                  <div className="text-6xl mb-4">{search.searchTerm ? '🔍' : '💝'}</div>
                   <p className="text-gray-600 dark:text-gray-400 text-lg font-medium mb-2">
-                    {searchTerm ? t('empty.searchNoMatch') : t('empty.noFavoriteMonsters')}
+                    {search.searchTerm ? t('empty.searchNoMatch') : t('empty.noFavoriteMonsters')}
                   </p>
                   <p className="text-gray-500 dark:text-gray-500 text-sm">
-                    {searchTerm
+                    {search.searchTerm
                       ? t('empty.tryOtherKeywords')
                       : t('empty.clickToFavoriteMonster')}
                   </p>
@@ -712,7 +627,7 @@ export default function Home() {
                       itemName={item.itemName}
                       chineseItemName={item.chineseItemName}
                       monsterCount={item.monsterCount}
-                      onCardClick={handleItemClick}
+                      onCardClick={modals.openItemModal}
                       isFavorite={true}
                       onToggleFavorite={toggleItemFavorite}
                     />
@@ -720,12 +635,12 @@ export default function Home() {
                 </div>
               ) : (
                 <div className="text-center py-12 mt-8">
-                  <div className="text-6xl mb-4">{searchTerm ? '🔍' : '💝'}</div>
+                  <div className="text-6xl mb-4">{search.searchTerm ? '🔍' : '💝'}</div>
                   <p className="text-gray-600 dark:text-gray-400 text-lg font-medium mb-2">
-                    {searchTerm ? t('empty.searchNoMatch') : t('empty.noFavoriteItems')}
+                    {search.searchTerm ? t('empty.searchNoMatch') : t('empty.noFavoriteItems')}
                   </p>
                   <p className="text-gray-500 dark:text-gray-500 text-sm">
-                    {searchTerm
+                    {search.searchTerm
                       ? t('empty.tryOtherKeywords')
                       : t('empty.clickToFavoriteItem')}
                   </p>
@@ -739,7 +654,7 @@ export default function Home() {
                     <DropCard
                       key={`${drop.mobId}-${drop.itemId}-${index}`}
                       drop={drop}
-                      onCardClick={handleCardClick}
+                      onCardClick={modals.openMonsterModal}
                       isFavorite={isFavorite(drop.mobId)}
                       onToggleFavorite={toggleFavorite}
                     />
@@ -749,9 +664,9 @@ export default function Home() {
                 <div className="text-center py-12 mt-8">
                   <div className="text-6xl mb-4">🔍</div>
                   <p className="text-gray-600 dark:text-gray-400 text-lg font-medium mb-2">
-                    {searchTerm ? t('empty.noResults') : t('empty.noData')}
+                    {search.searchTerm ? t('empty.noResults') : t('empty.noData')}
                   </p>
-                  {searchTerm && (
+                  {search.searchTerm && (
                     <p className="text-gray-500 dark:text-gray-500 text-sm">
                       {t('empty.tryOtherKeywords')}
                     </p>
@@ -782,56 +697,56 @@ export default function Home() {
 
       {/* Monster Drops Modal */}
       <MonsterModal
-        isOpen={isModalOpen}
-        onClose={handleCloseModal}
-        monsterId={selectedMonsterId}
-        monsterName={selectedMonsterName}
+        isOpen={modals.isMonsterModalOpen}
+        onClose={modals.closeMonsterModal}
+        monsterId={modals.selectedMonsterId}
+        monsterName={modals.selectedMonsterName}
         allDrops={allDrops}
-        isFavorite={selectedMonsterId ? isFavorite(selectedMonsterId) : false}
+        isFavorite={modals.selectedMonsterId ? isFavorite(modals.selectedMonsterId) : false}
         onToggleFavorite={toggleFavorite}
         isItemFavorite={isItemFavorite}
         onToggleItemFavorite={toggleItemFavorite}
-        onItemClick={handleItemClick}
+        onItemClick={modals.openItemModal}
       />
 
       {/* Item Drops Modal */}
       <ItemModal
-        isOpen={isItemModalOpen}
-        onClose={handleCloseItemModal}
-        itemId={selectedItemId}
-        itemName={selectedItemName}
+        isOpen={modals.isItemModalOpen}
+        onClose={modals.closeItemModal}
+        itemId={modals.selectedItemId}
+        itemName={modals.selectedItemName}
         allDrops={allDrops}
-        isFavorite={selectedItemId !== null ? isItemFavorite(selectedItemId) : false}
+        isFavorite={modals.selectedItemId !== null ? isItemFavorite(modals.selectedItemId) : false}
         onToggleFavorite={toggleItemFavorite}
         isMonsterFavorite={isFavorite}
         onToggleMonsterFavorite={toggleFavorite}
-        onMonsterClick={handleCardClick}
+        onMonsterClick={modals.openMonsterModal}
       />
 
       {/* Bug Report Modal */}
       <BugReportModal
-        isOpen={isBugReportModalOpen}
-        onClose={() => setIsBugReportModalOpen(false)}
+        isOpen={modals.isBugReportModalOpen}
+        onClose={modals.closeBugReportModal}
       />
 
       {/* Confirm Clear Modal */}
       <ClearConfirmModal
-        isOpen={isClearModalOpen}
-        onClose={() => setIsClearModalOpen(false)}
+        isOpen={modals.isClearModalOpen}
+        onClose={modals.closeClearModal}
         onConfirm={handleClearConfirm}
-        type={clearModalType}
-        count={clearModalType === 'monsters' ? favoriteCount : favoriteItemCount}
+        type={modals.clearModalType}
+        count={modals.clearModalType === 'monsters' ? favoriteCount : favoriteItemCount}
       />
 
       {/* Gacha Machine Modal */}
       <GachaMachineModal
-        isOpen={isGachaModalOpen}
-        onClose={() => setIsGachaModalOpen(false)}
+        isOpen={modals.isGachaModalOpen}
+        onClose={modals.closeGachaModal}
       />
 
       {/* 浮動轉蛋機按鈕 */}
       <button
-        onClick={() => setIsGachaModalOpen(true)}
+        onClick={modals.openGachaModal}
         className="fixed bottom-6 left-6 z-40 p-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('gacha.button')}
       >
@@ -856,7 +771,7 @@ export default function Home() {
 
       {/* 浮動 Bug 回報按鈕 */}
       <button
-        onClick={() => setIsBugReportModalOpen(true)}
+        onClick={modals.openBugReportModal}
         className="fixed bottom-6 right-6 z-40 p-4 bg-gradient-to-r from-red-500 to-orange-600 hover:from-red-600 hover:to-orange-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('bug.report')}
       >
@@ -868,10 +783,10 @@ export default function Home() {
 
       {/* Toast 通知 */}
       <Toast
-        message={toastMessage}
-        isVisible={isToastVisible}
-        onClose={() => setIsToastVisible(false)}
-        type={toastType}
+        message={toast.message}
+        isVisible={toast.isVisible}
+        onClose={toast.hideToast}
+        type={toast.type}
       />
     </div>
   )
