@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 /**
  * 從 MapleStory API 獲取怪物屬性資料
- * 輸出到 public/data/monster-stats.json
+ * 輸出到 data/monster-stats.json
  */
 
 const fs = require('fs')

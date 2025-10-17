@@ -3,8 +3,8 @@ const fs = require('fs')
 const path = require('path')
 
 // 路徑設定
-const csvFilePath = path.join(__dirname, '../public/data/drops.csv')
-const jsonFilePath = path.join(__dirname, '../public/data/drops.json')
+const csvFilePath = path.join(__dirname, '../data/drops.csv')
+const jsonFilePath = path.join(__dirname, '../data/drops.json')
 
 console.log('開始轉換 CSV 到 JSON...')
 console.log('讀取檔案:', csvFilePath)

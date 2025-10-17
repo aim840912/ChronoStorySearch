@@ -17,7 +17,7 @@ export interface DropItem {
 // 從本地 JSON 檔案讀取掉落資料
 async function getDropData(): Promise<DropItem[]> {
   try {
-    const filePath = path.join(process.cwd(), 'public', 'data', 'drops.json')
+    const filePath = path.join(process.cwd(), 'data', 'drops.json')
     const fileContents = await fs.readFile(filePath, 'utf8')
     const data: DropItem[] = JSON.parse(fileContents)
     return data

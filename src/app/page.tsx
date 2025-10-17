@@ -25,8 +25,8 @@ import { LanguageToggle } from '@/components/LanguageToggle'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Toast } from '@/components/Toast'
 import { clientLogger } from '@/lib/logger'
-import dropsData from '@/../public/data/drops.json'
-import monsterStatsData from '@/../public/data/monster-stats.json'
+import dropsData from '@/../data/drops.json'
+import monsterStatsData from '@/../data/monster-stats.json'
 import type { MonsterStats } from '@/types'
 
 /**
@@ -117,7 +117,7 @@ export default function Home() {
         const machineIds = [1, 2, 3, 4, 5, 6, 7]
         const machines = await Promise.all(
           machineIds.map(async (id) => {
-            const response = await fetch(`/data/gacha/machine-${id}.json`)
+            const response = await fetch(`/api/gacha/${id}`)
             if (!response.ok) {
               throw new Error(`Failed to load machine ${id}`)
             }

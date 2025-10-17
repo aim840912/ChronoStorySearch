@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 /**
  * 從 ChronoStory API 獲取物品屬性資料
- * 輸出到 public/data/item-attributes.json
+ * 輸出到 data/item-attributes.json
  *
  * 此腳本會保留 API 回應的完整結構，包括：
  * - 基本資訊：item_id, item_name, type, sub_type, sale_price 等

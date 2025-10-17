@@ -4,7 +4,7 @@ const path = require('path')
 const https = require('https')
 
 // 路徑設定
-const gachaDir = path.join(__dirname, '../public/data/gacha')
+const gachaDir = path.join(__dirname, '../data/gacha')
 const outputDir = path.join(__dirname, '../public/images/items')
 
 // 確保輸出目錄存在

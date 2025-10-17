@@ -3,7 +3,7 @@
  * 提供圖片路徑獲取功能，避免載入不存在的圖片產生 404 錯誤
  */
 
-import imageManifest from '@/../public/data/available-images.json'
+import imageManifest from '@/../data/available-images.json'
 
 // 建立 Set 以加快查找速度
 const availableItemImages = new Set(imageManifest.items)

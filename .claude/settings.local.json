@@ -90,7 +90,16 @@
       "WebFetch(domain:docs.google.com)",
       "WebFetch(domain:doc-0s-3k-sheets.googleusercontent.com)",
       "Bash(npm run:*)",
-      "WebFetch(domain:api.maplestory.net)"
+      "WebFetch(domain:api.maplestory.net)",
+      "WebFetch(domain:doc-0k-c8-sheets.googleusercontent.com)",
+      "Bash(do echo \"Machine $i:\")",
+      "Bash(git restore:*)",
+      "Bash(jq:*)",
+      "Bash(chmod:*)",
+      "Bash(bash:*)",
+      "WebFetch(domain:maplestory.io)",
+      "WebFetch(domain:chronostory.onrender.com)",
+      "Bash(do sed -i \"s|public/data|data|g\" \"$file\")"
     ],
     "deny": [],
     "ask": []

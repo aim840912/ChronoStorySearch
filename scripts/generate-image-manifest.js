@@ -47,7 +47,7 @@ function main() {
   }
 
   // 寫入檔案
-  const outputPath = path.join(__dirname, '../public/data/available-images.json')
+  const outputPath = path.join(__dirname, '../data/available-images.json')
   fs.writeFileSync(outputPath, JSON.stringify(manifest, null, 2), 'utf-8')
 
   console.log(`📝 圖片清單已生成: ${outputPath}`)

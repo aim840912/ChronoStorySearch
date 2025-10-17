@@ -6,8 +6,8 @@ const path = require('path')
  * 將 itemName 為 "Meso" 且 chineseItemName 為 null 的項目改為 "楓幣"
  */
 
-const dropsPath = path.join(__dirname, '../public/data/drops.json')
-const backupPath = path.join(__dirname, '../public/data/drops.json.backup-meso')
+const dropsPath = path.join(__dirname, '../data/drops.json')
+const backupPath = path.join(__dirname, '../data/drops.json.backup-meso')
 
 console.log('📝 開始更新 Meso 中文名稱...\n')
 

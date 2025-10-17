@@ -4,7 +4,7 @@ const path = require('path')
 const https = require('https')
 
 // 路徑設定
-const dropsJsonPath = path.join(__dirname, '../public/data/drops.json')
+const dropsJsonPath = path.join(__dirname, '../data/drops.json')
 const outputDir = path.join(__dirname, '../public/images/items')
 
 // 確保輸出目錄存在

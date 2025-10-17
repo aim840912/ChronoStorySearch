@@ -34,7 +34,7 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
         const machineIds = [1, 2, 3, 4, 5, 6, 7]
         const loadedMachines = await Promise.all(
           machineIds.map(async (id) => {
-            const response = await fetch(`/data/gacha/machine-${id}.json`)
+            const response = await fetch(`/api/gacha/${id}`)
             if (!response.ok) throw new Error(`Failed to load machine ${id}`)
             return response.json() as Promise<GachaMachine>
           })

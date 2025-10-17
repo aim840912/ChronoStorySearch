@@ -7,7 +7,7 @@ import { ItemAttributesCard } from './ItemAttributesCard'
 import { clientLogger } from '@/lib/logger'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
-import itemAttributesData from '@/../public/data/item-attributes.json'
+import itemAttributesData from '@/../data/item-attributes.json'
 
 interface ItemModalProps {
   isOpen: boolean

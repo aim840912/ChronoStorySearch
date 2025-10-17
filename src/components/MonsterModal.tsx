@@ -7,7 +7,7 @@ import { MonsterStatsCard } from './MonsterStatsCard'
 import { clientLogger } from '@/lib/logger'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
-import monsterStatsData from '@/../public/data/monster-stats.json'
+import monsterStatsData from '@/../data/monster-stats.json'
 
 interface MonsterModalProps {
   isOpen: boolean

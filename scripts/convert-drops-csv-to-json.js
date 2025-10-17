@@ -4,7 +4,7 @@ const path = require('path')
 
 // CSV 檔案路徑（Windows 路徑）
 const csvPath = '/mnt/c/Users/aim84/Downloads/ChronoStory_items_tw(新增轉蛋&裝備浮動) - ChronosStory-掉落物查詢.csv'
-const outputPath = path.join(__dirname, '../public/data/drops-new.json')
+const outputPath = path.join(__dirname, '../data/drops-new.json')
 
 console.log('開始轉換 CSV 到 JSON...\n')
 

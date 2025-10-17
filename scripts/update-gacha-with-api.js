@@ -5,7 +5,7 @@
  * node scripts/update-gacha-with-api.js <json檔案路徑>
  *
  * 範例:
- * node scripts/update-gacha-with-api.js public/data/gacha/machine-1.json
+ * node scripts/update-gacha-with-api.js data/gacha/machine-1.json
  */
 
 const fs = require('fs')
@@ -89,7 +89,7 @@ async function main() {
 
   if (args.length < 1) {
     console.error('使用方式: node update-gacha-with-api.js <json檔案路徑>')
-    console.error('範例: node update-gacha-with-api.js public/data/gacha/machine-1.json')
+    console.error('範例: node update-gacha-with-api.js data/gacha/machine-1.json')
     process.exit(1)
   }
 
