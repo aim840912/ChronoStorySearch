@@ -112,3 +112,13 @@ supabase/.temp/
 # 臨時修復指南和設定文檔
 MCP_SETUP.md
 SCHEMA_REPAIR_GUIDE.md
+
+# 備份檔案和臨時資料
+*.backup
+*.backup.*
+*-backup.*
+error.md
+public/data/drops-new*.json
+scripts/*-fix-*.sh
+scripts/*-demo.*
+scripts/*-test.*
