@@ -19,6 +19,7 @@ import { BugReportModal } from '@/components/BugReportModal'
 import { ClearConfirmModal } from '@/components/ClearConfirmModal'
 import { GachaMachineModal } from '@/components/GachaMachineModal'
 import { LanguageToggle } from '@/components/LanguageToggle'
+import { ThemeToggle } from '@/components/ThemeToggle'
 import { clientLogger } from '@/lib/logger'
 import dropsData from '@/../public/data/drops.json'
 
@@ -582,8 +583,9 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
               {t('app.title')}
             </h1>
-            {/* 語言切換按鈕 - 右上角 */}
-            <div className="absolute top-0 right-4">
+            {/* 主題與語言切換按鈕 - 右上角 */}
+            <div className="absolute top-0 right-4 flex gap-2">
+              <ThemeToggle />
               <LanguageToggle />
             </div>
           </div>

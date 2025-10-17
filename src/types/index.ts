@@ -120,3 +120,6 @@ export type TranslationKey = string
 
 // 翻譯字典類型
 export type Translations = Record<string, string>
+
+// 主題相關類型
+export type Theme = 'light' | 'dark' | 'system'

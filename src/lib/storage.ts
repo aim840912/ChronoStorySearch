@@ -4,13 +4,14 @@
  */
 
 import { storageLogger } from './logger'
-import type { FavoriteMonster, FavoriteItem, Language } from '@/types'
+import type { FavoriteMonster, FavoriteItem, Language, Theme } from '@/types'
 
 // Storage keys
 export const STORAGE_KEYS = {
   FAVORITE_MONSTERS: 'chronostory-favorite-monsters',
   FAVORITE_ITEMS: 'chronostory-favorite-items',
   LANGUAGE: 'chronostory-language',
+  THEME: 'chronostory-theme',
 } as const
 
 /**
@@ -117,4 +118,12 @@ export function getLanguage(): Language {
 
 export function setLanguage(language: Language): boolean {
   return setStorageItem(STORAGE_KEYS.LANGUAGE, language)
+}
+
+export function getTheme(): Theme {
+  return getStorageItem<Theme>(STORAGE_KEYS.THEME, 'system')
+}
+
+export function setTheme(theme: Theme): boolean {
+  return setStorageItem(STORAGE_KEYS.THEME, theme)
 }

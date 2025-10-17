@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* 啟用 class-based 深色模式（Tailwind v4 必需） */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -12,11 +15,18 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* 支援系統偏好深色模式 */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not(.light) {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+/* 支援手動切換深色模式（透過 .dark class） */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 body {
