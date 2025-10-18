@@ -653,12 +653,10 @@ export default function Home() {
     modals.openItemModal(itemId, itemName)
   }
 
-  // ItemModal 中點擊怪物：關閉 ItemModal，顯示下方已打開的 MonsterModal
+  // ItemModal 中點擊怪物：關閉 ItemModal，打開 MonsterModal
   const handleMonsterClickFromItemModal = (mobId: number, mobName: string) => {
     modals.closeItemModal() // 關閉 ItemModal
-    // 更新 MonsterModal 的內容（MonsterModal 保持開啟）
-    modals.setSelectedMonsterId(mobId)
-    modals.setSelectedMonsterName(mobName)
+    modals.openMonsterModal(mobId, mobName) // 打開 MonsterModal 並設定資料
   }
 
   // 判斷搜尋上下文 - 決定「全部」模式的顯示策略
