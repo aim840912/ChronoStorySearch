@@ -77,6 +77,7 @@
   "card.dropChance": "Chance",
   "card.dropQuantity": "Drop Quantity",
   "card.quantity": "Quantity",
+  "card.hp": "HP",
   "card.droppedItems": "Dropped Items",
   "card.droppedBy": "Dropped By",
   "card.itemTypes": "types",

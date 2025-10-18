@@ -77,6 +77,7 @@
   "card.dropChance": "機率",
   "card.dropQuantity": "掉落數量",
   "card.quantity": "數量",
+  "card.hp": "血量",
   "card.droppedItems": "掉落物品",
   "card.droppedBy": "掉落怪物",
   "card.itemTypes": "種",

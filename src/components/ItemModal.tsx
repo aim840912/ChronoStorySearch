@@ -15,6 +15,7 @@ interface ItemModalProps {
   itemId: number | null
   itemName: string
   allDrops: DropItem[]
+  monsterHPMap: Map<number, number | null>
   isFavorite: boolean
   onToggleFavorite: (itemId: number, itemName: string) => void
   // 怪物相關 props
@@ -33,6 +34,7 @@ export function ItemModal({
   itemId,
   itemName,
   allDrops,
+  monsterHPMap,
   isFavorite,
   onToggleFavorite,
   isMonsterFavorite,
@@ -197,6 +199,7 @@ export function ItemModal({
                 <MonsterDropCard
                   key={`${drop.mobId}-${index}`}
                   drop={drop}
+                  monsterHPMap={monsterHPMap}
                   isFavorite={isMonsterFavorite(drop.mobId)}
                   onToggleFavorite={onToggleMonsterFavorite}
                   onMonsterClick={onMonsterClick}

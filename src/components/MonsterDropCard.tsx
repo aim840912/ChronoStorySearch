@@ -7,6 +7,7 @@ import { getMonsterImageUrl } from '@/lib/image-utils'
 
 interface MonsterDropCardProps {
   drop: DropItem
+  monsterHPMap: Map<number, number | null>
   isFavorite: boolean
   onToggleFavorite: (mobId: number, mobName: string) => void
   onMonsterClick: (mobId: number, mobName: string) => void
@@ -14,10 +15,11 @@ interface MonsterDropCardProps {
 
 /**
  * 怪物掉落卡片元件（用於 ItemModal）
- * 顯示掉落特定物品的怪物資訊，包含掉落率和數量
+ * 顯示掉落特定物品的怪物資訊，包含掉落率和血量
  */
 export function MonsterDropCard({
   drop,
+  monsterHPMap,
   isFavorite,
   onToggleFavorite,
   onMonsterClick,
@@ -25,8 +27,12 @@ export function MonsterDropCard({
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
   const chancePercent = (drop.chance * 100).toFixed(4)
-  const qtyRange =
-    drop.minQty === drop.maxQty ? `${drop.minQty}` : `${drop.minQty}-${drop.maxQty}`
+
+  // 計算怪物血量顯示值
+  const monsterHP = monsterHPMap.get(drop.mobId)
+  const hpDisplay = monsterHP !== undefined && monsterHP !== null
+    ? monsterHP.toLocaleString()
+    : 'N/A'
 
   // 獲取顯示名稱（支援中英文切換）
   const displayMobName = getMonsterDisplayName(drop.mobName, drop.chineseMobName, language)
@@ -86,7 +92,7 @@ export function MonsterDropCard({
         </div>
       </div>
 
-      {/* 掉落率和數量 */}
+      {/* 掉落率和血量 */}
       <div className="flex gap-3">
         <div className="flex-1">
           <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">
@@ -100,11 +106,11 @@ export function MonsterDropCard({
         </div>
         <div className="flex-1">
           <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">
-            {t('card.quantity')}
+            {t('card.hp')}
           </div>
-          <div className="bg-green-50 dark:bg-green-900/20 px-3 py-2 rounded">
-            <span className="text-sm font-bold text-green-700 dark:text-green-300">
-              {qtyRange}
+          <div className="bg-red-50 dark:bg-red-900/20 px-3 py-2 rounded">
+            <span className="text-sm font-bold text-red-700 dark:text-red-300">
+              {hpDisplay}
             </span>
           </div>
         </div>

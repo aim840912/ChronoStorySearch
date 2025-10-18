@@ -57,6 +57,7 @@ export default function Home() {
     isLoading,
     initialRandomDrops,
     itemAttributesMap,
+    monsterHPMap,
   } = useDataManagement()
 
   // 搜尋邏輯 Hook - 處理搜尋索引和建議
@@ -523,6 +524,7 @@ export default function Home() {
         itemId={modals.selectedItemId}
         itemName={modals.selectedItemName}
         allDrops={allDrops}
+        monsterHPMap={monsterHPMap}
         isFavorite={modals.selectedItemId !== null ? isItemFavorite(modals.selectedItemId) : false}
         onToggleFavorite={toggleItemFavorite}
         isMonsterFavorite={isFavorite}
