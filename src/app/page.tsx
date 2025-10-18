@@ -1,8 +1,8 @@
 'use client'
 
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
-import type { DropItem, SuggestionItem, FilterMode, GachaMachine, ItemAttributes, AdvancedFilterOptions } from '@/types'
+import type { FilterMode, AdvancedFilterOptions, SuggestionItem } from '@/types'
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 import { useFavoriteMonsters } from '@/hooks/useFavoriteMonsters'
 import { useFavoriteItems } from '@/hooks/useFavoriteItems'
@@ -10,11 +10,13 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { useToast } from '@/hooks/useToast'
 import { useModalManager } from '@/hooks/useModalManager'
 import { useSearchWithSuggestions } from '@/hooks/useSearchWithSuggestions'
+import { useDataManagement } from '@/hooks/useDataManagement'
+import { useSearchLogic } from '@/hooks/useSearchLogic'
+import { useFilterLogic } from '@/hooks/useFilterLogic'
 import { SearchBar } from '@/components/SearchBar'
 import { FilterButtons } from '@/components/FilterButtons'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
 import { StatsDisplay } from '@/components/StatsDisplay'
-import { DropCard } from '@/components/DropCard'
 import { MonsterCard } from '@/components/MonsterCard'
 import { ItemCard } from '@/components/ItemCard'
 import { MonsterModal } from '@/components/MonsterModal'
@@ -26,39 +28,11 @@ import { LanguageToggle } from '@/components/LanguageToggle'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Toast } from '@/components/Toast'
 import { clientLogger } from '@/lib/logger'
-import { getDefaultAdvancedFilter, applyAdvancedFilter } from '@/lib/filter-utils'
-import dropsData from '@/../data/drops.json'
-import mobInfoData from '@/../data/mob-info.json'
-import itemAttributesData from '@/../data/item-attributes.json'
-import type { MobInfo } from '@/types'
-
-/**
- * 多關鍵字匹配函數
- * 將搜尋詞按空格拆分，檢查所有關鍵字是否都存在於目標文字中
- * @param text - 要搜尋的目標文字
- * @param searchTerm - 搜尋詞（可包含多個空格分隔的關鍵字）
- * @returns 是否所有關鍵字都匹配
- * @example
- * matchesAllKeywords("Scroll for Wand for Magic ATT 10%", "magic 10") // true
- * matchesAllKeywords("Blue Mana Potion", "blue potion") // true
- * matchesAllKeywords("Orange Mushroom", "red mushroom") // false (缺少 "red")
- */
-function matchesAllKeywords(text: string, searchTerm: string): boolean {
-  const keywords = searchTerm.toLowerCase().trim().split(/\s+/)
-  const textLower = text.toLowerCase()
-
-  return keywords.every(keyword => textLower.includes(keyword))
-}
+import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
 
 export default function Home() {
   const searchParams = useSearchParams()
   const { t, language } = useLanguage()
-
-  // 資料狀態
-  const [allDrops, setAllDrops] = useState<DropItem[]>([])
-  const [gachaMachines, setGachaMachines] = useState<GachaMachine[]>([])
-  const [filteredDrops, setFilteredDrops] = useState<DropItem[]>([])
-  const [isLoading, setIsLoading] = useState(true)
 
   // 篩選模式：全部 or 最愛怪物 or 最愛物品
   const [filterMode, setFilterMode] = useState<FilterMode>('all')
@@ -74,6 +48,22 @@ export default function Home() {
 
   // Debounced 搜尋詞 - 延遲 500ms 以減少計算頻率
   const debouncedSearchTerm = useDebouncedValue(search.searchTerm, 500)
+
+  // 資料管理 Hook - 處理資料載入和索引
+  const {
+    allDrops,
+    gachaMachines,
+    isLoading,
+    initialRandomDrops,
+    itemAttributesMap,
+  } = useDataManagement()
+
+  // 搜尋邏輯 Hook - 處理搜尋索引和建議
+  const { suggestions } = useSearchLogic({
+    allDrops,
+    gachaMachines,
+    debouncedSearchTerm,
+  })
 
   // 最愛怪物管理
   const {
@@ -93,53 +83,26 @@ export default function Home() {
     clearAll: clearAllItems,
   } = useFavoriteItems()
 
-  // 載入資料（暫時使用本地 JSON）
-  useEffect(() => {
-    async function loadDrops() {
-      try {
-        setIsLoading(true)
-        clientLogger.info('開始載入掉落資料（本地 JSON）...')
-
-        // 模擬短暫載入延遲以維持用戶體驗
-        await new Promise(resolve => setTimeout(resolve, 300))
-
-        // 直接使用 imported JSON 資料
-        setAllDrops(dropsData as DropItem[])
-        clientLogger.info(`成功載入 ${dropsData.length} 筆掉落資料`)
-      } catch (error) {
-        clientLogger.error('載入掉落資料失敗', error)
-      } finally {
-        setIsLoading(false)
-      }
-    }
-
-    loadDrops()
-  }, [])
-
-  // 載入轉蛋機資料
-  useEffect(() => {
-    async function loadGachaMachines() {
-      try {
-        clientLogger.info('開始載入轉蛋機資料...')
-        const machineIds = [1, 2, 3, 4, 5, 6, 7]
-        const machines = await Promise.all(
-          machineIds.map(async (id) => {
-            const response = await fetch(`/api/gacha/${id}`)
-            if (!response.ok) {
-              throw new Error(`Failed to load machine ${id}`)
-            }
-            return response.json() as Promise<GachaMachine>
-          })
-        )
-        setGachaMachines(machines)
-        clientLogger.info(`成功載入 ${machines.length} 台轉蛋機`)
-      } catch (error) {
-        clientLogger.error('載入轉蛋機資料失敗', error)
-      }
-    }
-
-    loadGachaMachines()
-  }, [])
+  // 篩選邏輯 Hook - 處理最愛和搜尋過濾
+  const {
+    filteredUniqueMonsters,
+    filteredUniqueItems,
+    uniqueAllMonsters,
+    uniqueAllItems,
+    mixedCards,
+    filteredDrops,
+    shouldShowItems,
+    shouldShowMonsters,
+  } = useFilterLogic({
+    filterMode,
+    favoriteMonsters,
+    favoriteItems,
+    allDrops,
+    initialRandomDrops,
+    debouncedSearchTerm,
+    advancedFilter,
+    itemAttributesMap,
+  })
 
   // 處理 URL 參數 - 搜尋詞和自動開啟對應的 modal
   useEffect(() => {
@@ -186,418 +149,6 @@ export default function Home() {
       }
     }
   }, [allDrops, searchParams, language, search, modals])
-
-  // 隨機選擇 100 筆資料（初始顯示用）- Fisher-Yates shuffle
-  const initialRandomDrops = useMemo(() => {
-    if (allDrops.length === 0) return []
-
-    // 複製陣列避免修改原始資料
-    const shuffled = [...allDrops]
-
-    // Fisher-Yates shuffle 演算法（只 shuffle 前 100 個）
-    const sampleSize = Math.min(100, allDrops.length)
-    for (let i = 0; i < sampleSize; i++) {
-      const randomIndex = i + Math.floor(Math.random() * (shuffled.length - i))
-      ;[shuffled[i], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[i]]
-    }
-
-    return shuffled.slice(0, sampleSize)
-  }, [allDrops])
-
-  // 建立怪物血量快速查詢 Map (mobId -> max_hp)
-  const monsterHPMap = useMemo(() => {
-    const hpMap = new Map<number, number | null>()
-    const mobData = mobInfoData as MobInfo[]
-
-    mobData.forEach((info) => {
-      const mobId = parseInt(info.mob.mob_id, 10)
-      if (!isNaN(mobId)) {
-        hpMap.set(mobId, info.mob.max_hp)
-      }
-    })
-
-    return hpMap
-  }, [])
-
-  // 建立物品屬性快速查詢 Map (itemId -> ItemAttributes)
-  const itemAttributesMap = useMemo(() => {
-    const attrMap = new Map<number, ItemAttributes>()
-    const attributes = itemAttributesData as ItemAttributes[]
-
-    attributes.forEach((attr) => {
-      const itemId = parseInt(attr.item_id, 10)
-      if (!isNaN(itemId)) {
-        attrMap.set(itemId, attr)
-      }
-    })
-
-    clientLogger.info(`成功建立 ${attrMap.size} 筆物品屬性索引`)
-    return attrMap
-  }, [])
-
-  // 計算去重的最愛怪物清單（每個怪物只出現一次）
-  const uniqueFavoriteMonsters = useMemo(() => {
-    if (filterMode !== 'favorite-monsters' || favoriteMonsters.length === 0) return []
-
-    const favMobIds = new Set(favoriteMonsters.map((fav) => fav.mobId))
-    const monsterMap = new Map<number, { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number }>()
-
-    // 統計每個怪物的掉落物數量
-    allDrops.forEach((drop) => {
-      if (favMobIds.has(drop.mobId)) {
-        if (!monsterMap.has(drop.mobId)) {
-          monsterMap.set(drop.mobId, {
-            mobId: drop.mobId,
-            mobName: drop.mobName,
-            chineseMobName: drop.chineseMobName, // 新增中文名稱
-            dropCount: 0,
-          })
-        }
-        monsterMap.get(drop.mobId)!.dropCount++
-      }
-    })
-
-    return Array.from(monsterMap.values())
-  }, [filterMode, favoriteMonsters, allDrops])
-
-  // 計算去重的最愛物品清單（每個物品只出現一次）
-  const uniqueFavoriteItems = useMemo(() => {
-    if (filterMode !== 'favorite-items' || favoriteItems.length === 0) return []
-
-    const favItemIds = new Set(favoriteItems.map((fav) => fav.itemId))
-    const itemMap = new Map<number, { itemId: number; itemName: string; chineseItemName?: string | null; monsterCount: number }>()
-
-    // 統計每個物品被多少怪物掉落
-    allDrops.forEach((drop) => {
-      if (favItemIds.has(drop.itemId)) {
-        if (!itemMap.has(drop.itemId)) {
-          itemMap.set(drop.itemId, {
-            itemId: drop.itemId,
-            itemName: drop.itemName,
-            chineseItemName: drop.chineseItemName, // 新增中文名稱
-            monsterCount: 0,
-          })
-        }
-        // 統計獨特的怪物數量（避免重複計算同一怪物）
-        const uniqueMonsters = new Set<number>()
-        allDrops.forEach((d) => {
-          if (d.itemId === drop.itemId) {
-            uniqueMonsters.add(d.mobId)
-          }
-        })
-        itemMap.get(drop.itemId)!.monsterCount = uniqueMonsters.size
-      }
-    })
-
-    return Array.from(itemMap.values())
-  }, [filterMode, favoriteItems, allDrops])
-
-  // 最愛怪物搜尋過濾（支援多關鍵字搜尋 + 中英文搜尋）
-  const filteredUniqueMonsters = useMemo(() => {
-    if (filterMode !== 'favorite-monsters') return []
-
-    if (debouncedSearchTerm.trim() === '') {
-      return uniqueFavoriteMonsters
-    }
-
-    return uniqueFavoriteMonsters.filter((monster) =>
-      matchesAllKeywords(monster.mobName, debouncedSearchTerm) ||
-      (monster.chineseMobName && matchesAllKeywords(monster.chineseMobName, debouncedSearchTerm))
-    )
-  }, [uniqueFavoriteMonsters, debouncedSearchTerm, filterMode])
-
-  // 最愛物品搜尋過濾（支援多關鍵字搜尋 + 中英文搜尋）
-  const filteredUniqueItems = useMemo(() => {
-    if (filterMode !== 'favorite-items') return []
-
-    if (debouncedSearchTerm.trim() === '') {
-      return uniqueFavoriteItems
-    }
-
-    return uniqueFavoriteItems.filter((item) =>
-      matchesAllKeywords(item.itemName, debouncedSearchTerm) ||
-      (item.chineseItemName && matchesAllKeywords(item.chineseItemName, debouncedSearchTerm))
-    )
-  }, [uniqueFavoriteItems, debouncedSearchTerm, filterMode])
-
-  // 計算「全部」模式的唯一怪物清單（每個怪物只出現一次）
-  const uniqueAllMonsters = useMemo(() => {
-    if (filterMode !== 'all') return []
-
-    const monsterMap = new Map<number, { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number }>()
-
-    // 從 filteredDrops 統計每個怪物的掉落物數量
-    filteredDrops.forEach((drop) => {
-      if (!monsterMap.has(drop.mobId)) {
-        monsterMap.set(drop.mobId, {
-          mobId: drop.mobId,
-          mobName: drop.mobName,
-          chineseMobName: drop.chineseMobName,
-          dropCount: 0,
-        })
-      }
-      monsterMap.get(drop.mobId)!.dropCount++
-    })
-
-    return Array.from(monsterMap.values())
-  }, [filterMode, filteredDrops])
-
-  // 計算「全部」模式的唯一物品清單（每個物品只出現一次）
-  const uniqueAllItems = useMemo(() => {
-    if (filterMode !== 'all') return []
-
-    const itemMap = new Map<number, { itemId: number; itemName: string; chineseItemName?: string | null; monsterCount: number }>()
-
-    // 從 filteredDrops 統計每個物品被多少怪物掉落
-    filteredDrops.forEach((drop) => {
-      if (!itemMap.has(drop.itemId)) {
-        itemMap.set(drop.itemId, {
-          itemId: drop.itemId,
-          itemName: drop.itemName,
-          chineseItemName: drop.chineseItemName,
-          monsterCount: 0,
-        })
-      }
-    })
-
-    // 計算每個物品的獨特怪物數量
-    itemMap.forEach((item, itemId) => {
-      const uniqueMonsters = new Set<number>()
-      filteredDrops.forEach((drop) => {
-        if (drop.itemId === itemId) {
-          uniqueMonsters.add(drop.mobId)
-        }
-      })
-      item.monsterCount = uniqueMonsters.size
-    })
-
-    return Array.from(itemMap.values())
-  }, [filterMode, filteredDrops])
-
-  // 建立隨機混合的卡片資料（怪物 + 物品隨機排序）- 只在「全部」模式且無搜尋時使用
-  const mixedCards = useMemo(() => {
-    // 只在「全部」模式且無搜尋詞時計算
-    if (filterMode !== 'all' || debouncedSearchTerm.trim() !== '') return []
-
-    // 定義混合卡片資料結構
-    type MixedCard =
-      | { type: 'monster'; data: { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number } }
-      | { type: 'item'; data: { itemId: number; itemName: string; chineseItemName?: string | null; monsterCount: number } }
-
-    // 合併怪物和物品成混合陣列
-    const mixed: MixedCard[] = [
-      ...uniqueAllMonsters.map((m): MixedCard => ({ type: 'monster', data: m })),
-      ...uniqueAllItems.map((i): MixedCard => ({ type: 'item', data: i }))
-    ]
-
-    // Fisher-Yates shuffle 演算法進行隨機排序
-    for (let i = mixed.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1))
-      ;[mixed[i], mixed[j]] = [mixed[j], mixed[i]]
-    }
-
-    clientLogger.info(`建立隨機混合卡片: ${uniqueAllMonsters.length} 怪物 + ${uniqueAllItems.length} 物品 = ${mixed.length} 張卡片`)
-    return mixed
-  }, [filterMode, debouncedSearchTerm, uniqueAllMonsters, uniqueAllItems])
-
-  // 搜尋功能 - 即時搜尋（使用 debounced 值）+ 最愛篩選 + 進階篩選
-  useEffect(() => {
-    let baseDrops: DropItem[] = []
-
-    // 根據篩選模式選擇基礎資料
-    if (filterMode === 'favorite-monsters' || filterMode === 'favorite-items') {
-      // 最愛模式：不使用此 effect（由 filteredUniqueMonsters/filteredUniqueItems 處理）
-      return
-    } else {
-      // 全部模式
-      baseDrops = debouncedSearchTerm.trim() === '' ? initialRandomDrops : allDrops
-    }
-
-    // 應用搜尋過濾（支援多關鍵字搜尋 + 中英文搜尋）
-    let filtered: DropItem[]
-    if (debouncedSearchTerm.trim() === '') {
-      filtered = baseDrops
-    } else {
-      filtered = baseDrops.filter((drop) => {
-        return (
-          matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
-          matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
-          (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm)) ||
-          (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
-        )
-      })
-    }
-
-    // 應用進階篩選
-    if (advancedFilter.enabled) {
-      filtered = applyAdvancedFilter(filtered, advancedFilter, itemAttributesMap)
-    }
-
-    setFilteredDrops(filtered)
-  }, [debouncedSearchTerm, allDrops, initialRandomDrops, filterMode, favoriteMonsters, advancedFilter, itemAttributesMap])
-
-  // 預建名稱索引 - 只在資料載入時計算一次
-  const nameIndex = useMemo(() => {
-    const monsterMap = new Map<string, SuggestionItem>()
-    const itemMap = new Map<string, SuggestionItem>()
-    const gachaMap = new Map<string, SuggestionItem>()
-
-    allDrops.forEach((drop) => {
-      // 建立怪物英文名稱索引
-      const mobNameLower = drop.mobName.toLowerCase()
-      const existingMonster = monsterMap.get(mobNameLower)
-      if (existingMonster) {
-        existingMonster.count++
-      } else {
-        monsterMap.set(mobNameLower, {
-          name: drop.mobName, // 保留原始大小寫
-          type: 'monster',
-          count: 1,
-          id: drop.mobId, // 記錄怪物 ID
-        })
-      }
-
-      // 建立怪物中文名稱索引（如果存在且與英文不同）
-      if (drop.chineseMobName) {
-        const chineseMobNameLower = drop.chineseMobName.toLowerCase()
-        if (chineseMobNameLower !== mobNameLower) {
-          const existingChineseMob = monsterMap.get(chineseMobNameLower)
-          if (existingChineseMob) {
-            existingChineseMob.count++
-          } else {
-            monsterMap.set(chineseMobNameLower, {
-              name: drop.chineseMobName, // 保留原始大小寫
-              type: 'monster',
-              count: 1,
-              id: drop.mobId, // 記錄怪物 ID
-            })
-          }
-        }
-      }
-
-      // 建立物品英文名稱索引
-      const itemNameLower = drop.itemName.toLowerCase()
-      const existingItem = itemMap.get(itemNameLower)
-      if (existingItem) {
-        existingItem.count++
-      } else {
-        itemMap.set(itemNameLower, {
-          name: drop.itemName, // 保留原始大小寫
-          type: 'item',
-          count: 1,
-          id: drop.itemId, // 記錄物品 ID
-        })
-      }
-
-      // 建立物品中文名稱索引（如果存在且與英文不同）
-      if (drop.chineseItemName) {
-        const chineseItemNameLower = drop.chineseItemName.toLowerCase()
-        if (chineseItemNameLower !== itemNameLower) {
-          const existingChineseItem = itemMap.get(chineseItemNameLower)
-          if (existingChineseItem) {
-            existingChineseItem.count++
-          } else {
-            itemMap.set(chineseItemNameLower, {
-              name: drop.chineseItemName, // 保留原始大小寫
-              type: 'item',
-              count: 1,
-              id: drop.itemId, // 記錄物品 ID
-            })
-          }
-        }
-      }
-    })
-
-    // 建立轉蛋機物品索引
-    gachaMachines.forEach((machine) => {
-      machine.items.forEach((item) => {
-        // 為中文名稱建立索引
-        const chineseNameLower = item.chineseName.toLowerCase()
-        const existingChinese = gachaMap.get(chineseNameLower)
-        if (existingChinese) {
-          // 如果已存在，增加計數（可能同一物品在多台轉蛋機出現）
-          existingChinese.count++
-        } else {
-          gachaMap.set(chineseNameLower, {
-            name: item.chineseName, // 保留原始大小寫
-            type: 'gacha',
-            count: 1,
-            machineId: machine.machineId,
-            machineName: machine.machineName,
-          })
-        }
-
-        // 為英文名稱建立索引（如果與中文名稱不同）
-        // 使用 name 或 itemName（備援機制，處理 API 整合失敗的物品）
-        const englishName = item.name || item.itemName
-        if (englishName && typeof englishName === 'string') {
-          const englishNameLower = englishName.toLowerCase()
-          if (englishNameLower !== chineseNameLower) {
-            const existingEnglish = gachaMap.get(englishNameLower)
-            if (existingEnglish) {
-              existingEnglish.count++
-            } else {
-              gachaMap.set(englishNameLower, {
-                name: englishName, // 使用英文名稱
-                type: 'gacha',
-                count: 1,
-                machineId: machine.machineId,
-                machineName: machine.machineName,
-              })
-            }
-          }
-        }
-      })
-    })
-
-    return { monsterMap, itemMap, gachaMap }
-  }, [allDrops, gachaMachines])
-
-  // 計算搜尋建議列表（使用索引優化效能，支援多關鍵字搜尋）
-  const suggestions = useMemo(() => {
-    if (debouncedSearchTerm.trim() === '' || nameIndex.monsterMap.size === 0) {
-      return []
-    }
-
-    const results: SuggestionItem[] = []
-    const firstKeyword = debouncedSearchTerm.toLowerCase().trim().split(/\s+/)[0]
-
-    // 從怪物索引中搜尋（支援多關鍵字匹配）
-    nameIndex.monsterMap.forEach((suggestion) => {
-      if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
-        results.push(suggestion)
-      }
-    })
-
-    // 從物品索引中搜尋（支援多關鍵字匹配）
-    nameIndex.itemMap.forEach((suggestion) => {
-      if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
-        results.push(suggestion)
-      }
-    })
-
-    // 從轉蛋機物品索引中搜尋（支援多關鍵字匹配）
-    nameIndex.gachaMap.forEach((suggestion) => {
-      if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
-        results.push(suggestion)
-      }
-    })
-
-    // 排序：優先第一個關鍵字在開頭匹配，其次按出現次數
-    results.sort((a, b) => {
-      const aNameLower = a.name.toLowerCase()
-      const bNameLower = b.name.toLowerCase()
-      const aStartsWith = aNameLower.startsWith(firstKeyword)
-      const bStartsWith = bNameLower.startsWith(firstKeyword)
-
-      if (aStartsWith && !bStartsWith) return -1
-      if (!aStartsWith && bStartsWith) return 1
-      return b.count - a.count // 出現次數多的排前面
-    })
-
-    // 限制結果數量最多 10 個
-    return results.slice(0, 10)
-  }, [debouncedSearchTerm, nameIndex])
 
   // 選擇建議項目
   const selectSuggestion = (suggestionName: string, suggestion?: SuggestionItem) => {
@@ -661,24 +212,6 @@ export default function Home() {
     modals.closeItemModal() // 關閉 ItemModal
     modals.openMonsterModal(mobId, mobName) // 打開 MonsterModal 並設定資料
   }
-
-  // 判斷搜尋上下文 - 決定「全部」模式的顯示策略
-  const hasItemMatch = useMemo(() => {
-    if (filterMode !== 'all' || !debouncedSearchTerm.trim()) return false
-
-    // 檢查是否有物品名匹配
-    return filteredDrops.some(drop =>
-      matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
-      (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
-    )
-  }, [filterMode, debouncedSearchTerm, filteredDrops])
-
-  // 顯示策略：
-  // - 無搜尋詞 → 同時顯示物品 + 怪物
-  // - 有物品匹配 → 同時顯示物品 + 怪物
-  // - 只有怪物匹配 → 只顯示怪物
-  const shouldShowItems = filterMode === 'all' && (!debouncedSearchTerm.trim() || hasItemMatch)
-  const shouldShowMonsters = filterMode === 'all' // 永遠顯示怪物
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
