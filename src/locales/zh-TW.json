@@ -247,6 +247,7 @@
   "filter.levelRange": "等級範圍",
   "filter.levelRange.min": "最小等級",
   "filter.levelRange.max": "最大等級",
+  "filter.levelRange.error": "最高等級必須大於等於最低等級",
   "filter.logicOperator": "條件邏輯",
   "filter.multiSelect": "可多選",
   "filter.activeFilters": "已啟用的篩選條件",

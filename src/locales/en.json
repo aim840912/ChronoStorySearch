@@ -247,6 +247,7 @@
   "filter.levelRange": "Level Range",
   "filter.levelRange.min": "Min Level",
   "filter.levelRange.max": "Max Level",
+  "filter.levelRange.error": "Max level must be greater than or equal to min level",
   "filter.logicOperator": "Logic",
   "filter.multiSelect": "Multi-select",
   "filter.activeFilters": "Active Filters",
