@@ -1,0 +1,193 @@
+'use client'
+
+import { useMemo } from 'react'
+import type { DropItem, GachaMachine, SuggestionItem } from '@/types'
+import { matchesAllKeywords } from '@/lib/search-utils'
+
+interface UseSearchLogicParams {
+  allDrops: DropItem[]
+  gachaMachines: GachaMachine[]
+  debouncedSearchTerm: string
+}
+
+/**
+ * 搜尋邏輯 Hook
+ * 職責：
+ * - 建立名稱索引（monsters, items, gacha）
+ * - 計算搜尋建議列表
+ * - 優化搜尋效能
+ */
+export function useSearchLogic({
+  allDrops,
+  gachaMachines,
+  debouncedSearchTerm,
+}: UseSearchLogicParams) {
+  // 預建名稱索引 - 只在資料載入時計算一次
+  const nameIndex = useMemo(() => {
+    const monsterMap = new Map<string, SuggestionItem>()
+    const itemMap = new Map<string, SuggestionItem>()
+    const gachaMap = new Map<string, SuggestionItem>()
+
+    // 建立怪物和物品索引
+    allDrops.forEach((drop) => {
+      // 建立怪物英文名稱索引
+      const mobNameLower = drop.mobName.toLowerCase()
+      const existingMonster = monsterMap.get(mobNameLower)
+      if (existingMonster) {
+        existingMonster.count++
+      } else {
+        monsterMap.set(mobNameLower, {
+          name: drop.mobName, // 保留原始大小寫
+          type: 'monster',
+          count: 1,
+          id: drop.mobId, // 記錄怪物 ID
+        })
+      }
+
+      // 建立怪物中文名稱索引（如果存在且與英文不同）
+      if (drop.chineseMobName) {
+        const chineseMobNameLower = drop.chineseMobName.toLowerCase()
+        if (chineseMobNameLower !== mobNameLower) {
+          const existingChineseMob = monsterMap.get(chineseMobNameLower)
+          if (existingChineseMob) {
+            existingChineseMob.count++
+          } else {
+            monsterMap.set(chineseMobNameLower, {
+              name: drop.chineseMobName, // 保留原始大小寫
+              type: 'monster',
+              count: 1,
+              id: drop.mobId, // 記錄怪物 ID
+            })
+          }
+        }
+      }
+
+      // 建立物品英文名稱索引
+      const itemNameLower = drop.itemName.toLowerCase()
+      const existingItem = itemMap.get(itemNameLower)
+      if (existingItem) {
+        existingItem.count++
+      } else {
+        itemMap.set(itemNameLower, {
+          name: drop.itemName, // 保留原始大小寫
+          type: 'item',
+          count: 1,
+          id: drop.itemId, // 記錄物品 ID
+        })
+      }
+
+      // 建立物品中文名稱索引（如果存在且與英文不同）
+      if (drop.chineseItemName) {
+        const chineseItemNameLower = drop.chineseItemName.toLowerCase()
+        if (chineseItemNameLower !== itemNameLower) {
+          const existingChineseItem = itemMap.get(chineseItemNameLower)
+          if (existingChineseItem) {
+            existingChineseItem.count++
+          } else {
+            itemMap.set(chineseItemNameLower, {
+              name: drop.chineseItemName, // 保留原始大小寫
+              type: 'item',
+              count: 1,
+              id: drop.itemId, // 記錄物品 ID
+            })
+          }
+        }
+      }
+    })
+
+    // 建立轉蛋機物品索引
+    gachaMachines.forEach((machine) => {
+      machine.items.forEach((item) => {
+        // 為中文名稱建立索引
+        const chineseNameLower = item.chineseName.toLowerCase()
+        const existingChinese = gachaMap.get(chineseNameLower)
+        if (existingChinese) {
+          // 如果已存在，增加計數（可能同一物品在多台轉蛋機出現）
+          existingChinese.count++
+        } else {
+          gachaMap.set(chineseNameLower, {
+            name: item.chineseName, // 保留原始大小寫
+            type: 'gacha',
+            count: 1,
+            machineId: machine.machineId,
+            machineName: machine.machineName,
+          })
+        }
+
+        // 為英文名稱建立索引（如果與中文名稱不同）
+        // 使用 name 或 itemName（備援機制，處理 API 整合失敗的物品）
+        const englishName = item.name || item.itemName
+        if (englishName && typeof englishName === 'string') {
+          const englishNameLower = englishName.toLowerCase()
+          if (englishNameLower !== chineseNameLower) {
+            const existingEnglish = gachaMap.get(englishNameLower)
+            if (existingEnglish) {
+              existingEnglish.count++
+            } else {
+              gachaMap.set(englishNameLower, {
+                name: englishName, // 使用英文名稱
+                type: 'gacha',
+                count: 1,
+                machineId: machine.machineId,
+                machineName: machine.machineName,
+              })
+            }
+          }
+        }
+      })
+    })
+
+    return { monsterMap, itemMap, gachaMap }
+  }, [allDrops, gachaMachines])
+
+  // 計算搜尋建議列表（使用索引優化效能，支援多關鍵字搜尋）
+  const suggestions = useMemo(() => {
+    if (debouncedSearchTerm.trim() === '' || nameIndex.monsterMap.size === 0) {
+      return []
+    }
+
+    const results: SuggestionItem[] = []
+    const firstKeyword = debouncedSearchTerm.toLowerCase().trim().split(/\s+/)[0]
+
+    // 從怪物索引中搜尋（支援多關鍵字匹配）
+    nameIndex.monsterMap.forEach((suggestion) => {
+      if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
+        results.push(suggestion)
+      }
+    })
+
+    // 從物品索引中搜尋（支援多關鍵字匹配）
+    nameIndex.itemMap.forEach((suggestion) => {
+      if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
+        results.push(suggestion)
+      }
+    })
+
+    // 從轉蛋機物品索引中搜尋（支援多關鍵字匹配）
+    nameIndex.gachaMap.forEach((suggestion) => {
+      if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
+        results.push(suggestion)
+      }
+    })
+
+    // 排序：優先第一個關鍵字在開頭匹配，其次按出現次數
+    results.sort((a, b) => {
+      const aNameLower = a.name.toLowerCase()
+      const bNameLower = b.name.toLowerCase()
+      const aStartsWith = aNameLower.startsWith(firstKeyword)
+      const bStartsWith = bNameLower.startsWith(firstKeyword)
+
+      if (aStartsWith && !bStartsWith) return -1
+      if (!aStartsWith && bStartsWith) return 1
+      return b.count - a.count // 出現次數多的排前面
+    })
+
+    // 限制結果數量最多 10 個
+    return results.slice(0, 10)
+  }, [debouncedSearchTerm, nameIndex])
+
+  return {
+    nameIndex,
+    suggestions,
+  }
+}
