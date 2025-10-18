@@ -194,10 +194,20 @@ export function useFilterLogic({
       | { type: 'monster'; data: { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number } }
       | { type: 'item'; data: { itemId: number; itemName: string; chineseItemName?: string | null; monsterCount: number } }
 
+    // 根據進階篩選決定要包含哪些卡片
+    const shouldIncludeMonsters = !advancedFilter.enabled ||
+                                   advancedFilter.dataType === 'all' ||
+                                   advancedFilter.dataType === 'monster'
+
+    const shouldIncludeItems = !advancedFilter.enabled ||
+                                advancedFilter.dataType === 'all' ||
+                                advancedFilter.dataType === 'item' ||
+                                advancedFilter.dataType === 'gacha'
+
     // 合併怪物和物品成混合陣列
     const mixed: MixedCard[] = [
-      ...uniqueAllMonsters.map((m): MixedCard => ({ type: 'monster', data: m })),
-      ...uniqueAllItems.map((i): MixedCard => ({ type: 'item', data: i }))
+      ...(shouldIncludeMonsters ? uniqueAllMonsters.map((m): MixedCard => ({ type: 'monster', data: m })) : []),
+      ...(shouldIncludeItems ? uniqueAllItems.map((i): MixedCard => ({ type: 'item', data: i })) : [])
     ]
 
     // Fisher-Yates shuffle 演算法進行隨機排序
@@ -206,9 +216,11 @@ export function useFilterLogic({
       ;[mixed[i], mixed[j]] = [mixed[j], mixed[i]]
     }
 
-    clientLogger.info(`建立隨機混合卡片: ${uniqueAllMonsters.length} 怪物 + ${uniqueAllItems.length} 物品 = ${mixed.length} 張卡片`)
+    const monsterCount = shouldIncludeMonsters ? uniqueAllMonsters.length : 0
+    const itemCount = shouldIncludeItems ? uniqueAllItems.length : 0
+    clientLogger.info(`建立隨機混合卡片: ${monsterCount} 怪物 + ${itemCount} 物品 = ${mixed.length} 張卡片`)
     return mixed
-  }, [filterMode, debouncedSearchTerm, uniqueAllMonsters, uniqueAllItems])
+  }, [filterMode, debouncedSearchTerm, uniqueAllMonsters, uniqueAllItems, advancedFilter])
 
   // 搜尋功能 - 即時搜尋（使用 debounced 值）+ 最愛篩選 + 進階篩選
   useEffect(() => {
@@ -220,7 +232,10 @@ export function useFilterLogic({
       return
     } else {
       // 全部模式
-      baseDrops = debouncedSearchTerm.trim() === '' ? initialRandomDrops : allDrops
+      // 當有搜尋詞或啟用進階篩選時，使用全部資料；否則使用隨機資料
+      baseDrops = (debouncedSearchTerm.trim() === '' && !advancedFilter.enabled)
+        ? initialRandomDrops
+        : allDrops
     }
 
     // 應用搜尋過濾（支援多關鍵字搜尋 + 中英文搜尋）
@@ -258,8 +273,31 @@ export function useFilterLogic({
   }, [filterMode, debouncedSearchTerm, filteredDrops])
 
   // 顯示策略
-  const shouldShowItems = filterMode === 'all' && (!debouncedSearchTerm.trim() || hasItemMatch)
-  const shouldShowMonsters = filterMode === 'all'
+  const shouldShowItems = useMemo(() => {
+    if (filterMode !== 'all') return false
+
+    // 如果啟用進階篩選且選擇了特定資料類型
+    if (advancedFilter.enabled && advancedFilter.dataType !== 'all') {
+      // 只在選擇 'item' 或 'gacha' 時顯示物品
+      return advancedFilter.dataType === 'item' || advancedFilter.dataType === 'gacha'
+    }
+
+    // 預設邏輯：無搜尋詞時顯示，或有物品匹配時顯示
+    return !debouncedSearchTerm.trim() || hasItemMatch
+  }, [filterMode, advancedFilter, debouncedSearchTerm, hasItemMatch])
+
+  const shouldShowMonsters = useMemo(() => {
+    if (filterMode !== 'all') return false
+
+    // 如果啟用進階篩選且選擇了特定資料類型
+    if (advancedFilter.enabled && advancedFilter.dataType !== 'all') {
+      // 只在選擇 'monster' 時顯示怪物
+      return advancedFilter.dataType === 'monster'
+    }
+
+    // 預設邏輯：全部模式下總是顯示怪物
+    return true
+  }, [filterMode, advancedFilter])
 
   return {
     // 最愛模式資料

@@ -18,12 +18,10 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
   if (!attributes || !attributes.equipment) {
     return (
       <div className="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 shadow-lg">
-        <h3 className="text-xl font-bold text-gray-700 dark:text-gray-300 mb-4 flex items-center gap-2">
-          <span className="text-2xl">⚔️</span>
+        <h3 className="text-xl font-bold text-gray-700 dark:text-gray-300 mb-4">
           {t('item.attributes')}
         </h3>
         <div className="flex flex-col items-center justify-center py-8 text-gray-500 dark:text-gray-400">
-          <span className="text-6xl mb-4">🚫</span>
           <p className="text-lg font-medium">{t('item.noAttributes')}</p>
         </div>
       </div>
@@ -49,27 +47,26 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
 
   // 裝備屬性配置（過濾掉 null 和 0 的屬性）
   const equipmentStats = [
-    { key: 'watk', label: t('item.watk'), value: stats.watk, color: 'text-orange-600 dark:text-orange-400', icon: '⚔️' },
-    { key: 'matk', label: t('item.matk'), value: stats.matk, color: 'text-purple-600 dark:text-purple-400', icon: '🔮' },
-    { key: 'wdef', label: t('item.wdef'), value: stats.wdef, color: 'text-gray-600 dark:text-gray-400', icon: '🛡️' },
-    { key: 'mdef', label: t('item.mdef'), value: stats.mdef, color: 'text-indigo-600 dark:text-indigo-400', icon: '✨' },
-    { key: 'str', label: t('item.str'), value: stats.str, color: 'text-red-600 dark:text-red-400', icon: '💪' },
-    { key: 'dex', label: t('item.dex'), value: stats.dex, color: 'text-green-600 dark:text-green-400', icon: '🎯' },
-    { key: 'int', label: t('item.int'), value: stats.int, color: 'text-blue-600 dark:text-blue-400', icon: '📖' },
-    { key: 'luk', label: t('item.luk'), value: stats.luk, color: 'text-purple-600 dark:text-purple-400', icon: '🍀' },
-    { key: 'hp', label: t('item.hp'), value: stats.hp, color: 'text-rose-600 dark:text-rose-400', icon: '❤️' },
-    { key: 'mp', label: t('item.mp'), value: stats.mp, color: 'text-cyan-600 dark:text-cyan-400', icon: '💧' },
-    { key: 'accuracy', label: t('item.accuracy'), value: stats.accuracy, color: 'text-pink-600 dark:text-pink-400', icon: '🎪' },
-    { key: 'avoidability', label: t('item.avoidability'), value: stats.avoidability, color: 'text-teal-600 dark:text-teal-400', icon: '🌪️' },
-    { key: 'speed', label: t('item.speed'), value: stats.speed, color: 'text-lime-600 dark:text-lime-400', icon: '⚡' },
-    { key: 'jump', label: t('item.jump'), value: stats.jump, color: 'text-amber-600 dark:text-amber-400', icon: '🦘' },
-    { key: 'upgrades', label: t('item.upgrades'), value: stats.upgrades, color: 'text-yellow-600 dark:text-yellow-400', icon: '🔧' },
+    { key: 'watk', label: t('item.watk'), value: stats.watk, color: 'text-orange-600 dark:text-orange-400' },
+    { key: 'matk', label: t('item.matk'), value: stats.matk, color: 'text-purple-600 dark:text-purple-400' },
+    { key: 'wdef', label: t('item.wdef'), value: stats.wdef, color: 'text-gray-600 dark:text-gray-400' },
+    { key: 'mdef', label: t('item.mdef'), value: stats.mdef, color: 'text-indigo-600 dark:text-indigo-400' },
+    { key: 'str', label: t('item.str'), value: stats.str, color: 'text-red-600 dark:text-red-400' },
+    { key: 'dex', label: t('item.dex'), value: stats.dex, color: 'text-green-600 dark:text-green-400' },
+    { key: 'int', label: t('item.int'), value: stats.int, color: 'text-blue-600 dark:text-blue-400' },
+    { key: 'luk', label: t('item.luk'), value: stats.luk, color: 'text-purple-600 dark:text-purple-400' },
+    { key: 'hp', label: t('item.hp'), value: stats.hp, color: 'text-rose-600 dark:text-rose-400' },
+    { key: 'mp', label: t('item.mp'), value: stats.mp, color: 'text-cyan-600 dark:text-cyan-400' },
+    { key: 'accuracy', label: t('item.accuracy'), value: stats.accuracy, color: 'text-pink-600 dark:text-pink-400' },
+    { key: 'avoidability', label: t('item.avoidability'), value: stats.avoidability, color: 'text-teal-600 dark:text-teal-400' },
+    { key: 'speed', label: t('item.speed'), value: stats.speed, color: 'text-lime-600 dark:text-lime-400' },
+    { key: 'jump', label: t('item.jump'), value: stats.jump, color: 'text-amber-600 dark:text-amber-400' },
+    { key: 'upgrades', label: t('item.upgrades'), value: stats.upgrades, color: 'text-yellow-600 dark:text-yellow-400' },
   ].filter(stat => stat.value !== null && stat.value !== 0)
 
   return (
     <div className="bg-gradient-to-br from-green-50 to-emerald-100 dark:from-green-900/20 dark:to-emerald-900/30 rounded-xl p-6 shadow-lg border border-green-200 dark:border-green-800">
-      <h3 className="text-xl font-bold text-green-900 dark:text-green-100 mb-4 flex items-center gap-2">
-        <span className="text-2xl">⚔️</span>
+      <h3 className="text-xl font-bold text-green-900 dark:text-green-100 mb-4">
         {t('item.attributes')}
       </h3>
 
@@ -140,18 +137,15 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
             {t('item.stats')}
           </h4>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-            {equipmentStats.map(({ key, label, value, color, icon }) => (
+            {equipmentStats.map(({ key, label, value, color }) => (
               <div
                 key={key}
                 className="bg-white dark:bg-gray-800 rounded-lg p-2 shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="flex items-center gap-1">
-                  <span>{icon}</span>
-                  <div className="flex-1">
-                    <div className="text-xs text-gray-500 dark:text-gray-400">{label}</div>
-                    <div className={`text-base font-bold ${color}`}>
-                      {key === 'upgrades' ? value : `+${value}`}
-                    </div>
+                <div>
+                  <div className="text-xs text-gray-500 dark:text-gray-400">{label}</div>
+                  <div className={`text-base font-bold ${color}`}>
+                    {key === 'upgrades' ? value : `+${value}`}
                   </div>
                 </div>
               </div>

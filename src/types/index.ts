@@ -229,13 +229,60 @@ export type FilterLogicOperator = 'AND' | 'OR'
 // 資料類型篩選選項
 export type DataTypeFilter = 'all' | 'monster' | 'item' | 'gacha'
 
-// 物品類別群組
+// 物品分類分組類型
+export type CategoryGroupType =
+  | 'apparel'      // 穿著類
+  | 'weapon'       // 武器防具類
+  | 'accessory'    // 飾品類
+  | 'consumable'   // 消耗品類
+
+// 物品類別群組（基於 equipment.category）
 export type ItemCategoryGroup =
-  | 'weapon'      // 武器
-  | 'armor'       // 防具
-  | 'accessory'   // 飾品
-  | 'consume'     // 消耗品
-  | 'etc'         // 其他/材料
+  // 穿著類 (7)
+  | 'hat'          // 帽子
+  | 'top'          // 上衣
+  | 'bottom'       // 褲子/下身
+  | 'overall'      // 連身衣
+  | 'shoes'        // 鞋子
+  | 'gloves'       // 手套
+  | 'cape'         // 披風
+  // 武器防具類 (14)
+  | 'sword'        // 劍（單手+雙手）
+  | 'axe'          // 斧（單手+雙手）
+  | 'bw'           // 鈍器/鞭（單手+雙手）
+  | 'polearm'      // 矛
+  | 'spear'        // 槍
+  | 'dagger'       // 匕首
+  | 'claw'         // 爪
+  | 'bow'          // 弓
+  | 'crossbow'     // 弩
+  | 'wand'         // 魔杖
+  | 'staff'        // 法杖
+  | 'knuckle'      // 拳套
+  | 'gun'          // 槍械
+  | 'shield'       // 盾牌
+  // 飾品類 (2)
+  | 'earring'      // 耳環
+  | 'accessory'    // 飾品
+  // 消耗品類 (3)
+  | 'scroll'       // 卷軸
+  | 'potion'       // 藥水
+  | 'projectile'   // 投擲物
+
+// 職業類型
+export type JobClass =
+  | 'beginner'    // 初心者
+  | 'warrior'     // 戰士
+  | 'magician'    // 法師
+  | 'bowman'      // 弓手
+  | 'thief'       // 盜賊
+  | 'pirate'      // 海盜
+
+// 等級範圍
+export interface LevelRange {
+  min: number | null  // 最小等級
+  max: number | null  // 最大等級
+}
 
 // 進階篩選選項
 export interface AdvancedFilterOptions {
@@ -244,6 +291,12 @@ export interface AdvancedFilterOptions {
 
   // 物品類別篩選（多選）
   itemCategories: ItemCategoryGroup[]
+
+  // 職業篩選（多選）
+  jobClasses: JobClass[]
+
+  // 等級範圍篩選
+  levelRange: LevelRange
 
   // 邏輯運算子
   logicOperator: FilterLogicOperator

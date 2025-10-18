@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useSearchParams } from 'next/navigation'
 import type { FilterMode, AdvancedFilterOptions, SuggestionItem } from '@/types'
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
@@ -40,6 +40,9 @@ export default function Home() {
   // 進階篩選狀態
   const [advancedFilter, setAdvancedFilter] = useState<AdvancedFilterOptions>(getDefaultAdvancedFilter())
   const [isAdvancedFilterExpanded, setIsAdvancedFilterExpanded] = useState(false)
+
+  // 追蹤首次掛載，避免初始載入時觸發滾動
+  const isFirstMount = useRef(true)
 
   // 計算已啟用的進階篩選數量
   const advancedFilterCount = [
@@ -110,8 +113,10 @@ export default function Home() {
     itemAttributesMap,
   })
 
-  // 無限滾動 - 只在「全部」模式且有搜尋時啟用
-  const shouldUseInfiniteScroll = filterMode === 'all' && debouncedSearchTerm.trim() !== ''
+  // 無限滾動 - 在「全部」模式且（有搜尋 或 有進階篩選）時啟用
+  const shouldUseInfiniteScroll =
+    filterMode === 'all' &&
+    (debouncedSearchTerm.trim() !== '' || advancedFilter.enabled)
 
   const monstersInfiniteScroll = useInfiniteScroll({
     items: uniqueAllMonsters,
@@ -177,6 +182,20 @@ export default function Home() {
       }
     }
   }, [allDrops, searchParams, language, search, modals])
+
+  // 進階篩選變更時，滾動到頁面頂部以顯示結果
+  useEffect(() => {
+    // 跳過首次渲染
+    if (isFirstMount.current) {
+      isFirstMount.current = false
+      return
+    }
+
+    // 當進階篩選啟用時，平滑滾動到頁面頂部
+    if (advancedFilter.enabled) {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }, [advancedFilter])
 
   // 選擇建議項目
   const selectSuggestion = (suggestionName: string, suggestion?: SuggestionItem) => {
@@ -367,8 +386,8 @@ export default function Home() {
               /* 全部模式 - 顯示怪物和物品卡片 */
               uniqueAllMonsters.length > 0 || uniqueAllItems.length > 0 ? (
                 <>
-                  {/* 無搜尋詞：隨機混合顯示怪物和物品 */}
-                  {!debouncedSearchTerm.trim() && mixedCards.length > 0 ? (
+                  {/* 無搜尋詞且無進階篩選：隨機混合顯示怪物和物品 */}
+                  {!debouncedSearchTerm.trim() && !advancedFilter.enabled && mixedCards.length > 0 ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
                       {mixedCards.map((card, index) => {
                         if (card.type === 'monster') {

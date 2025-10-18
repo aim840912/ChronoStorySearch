@@ -68,6 +68,88 @@ export function matchesItemCategoryFilter(
 }
 
 /**
+ * 判斷掉落資料是否符合職業篩選
+ * @param itemId 物品 ID
+ * @param itemAttributes 物品屬性 Map
+ * @param filter 進階篩選選項
+ * @returns 是否符合篩選
+ */
+export function matchesJobClassFilter(
+  itemId: number,
+  itemAttributes: Map<number, ItemAttributes>,
+  filter: AdvancedFilterOptions
+): boolean {
+  // 未啟用篩選或未選擇任何職業
+  if (!filter.enabled || filter.jobClasses.length === 0) {
+    return true
+  }
+
+  // 取得物品屬性
+  const item = itemAttributes.get(itemId)
+  if (!item || !item.equipment) {
+    // 非裝備類物品，不符合職業篩選（職業篩選只針對裝備）
+    return false
+  }
+
+  // 檢查物品是否允許任一選中的職業使用
+  const { classes } = item.equipment
+  return filter.jobClasses.some((jobClass) => {
+    const classValue = classes[jobClass]
+
+    // 如果該職業明確可用，通過
+    if (classValue === true) return true
+
+    // 如果該職業明確不可用，不通過
+    if (classValue === false) return false
+
+    // classValue === null，檢查是否為全職業通用裝備
+    // 如果有任何職業是 true，表示有職業限制，null 表示不可用
+    const hasAnyJobRestriction = Object.values(classes).some((v) => v === true)
+    return !hasAnyJobRestriction  // 沒有職業限制時才通過
+  })
+}
+
+/**
+ * 判斷掉落資料是否符合等級範圍篩選
+ * @param itemId 物品 ID
+ * @param itemAttributes 物品屬性 Map
+ * @param filter 進階篩選選項
+ * @returns 是否符合篩選
+ */
+export function matchesLevelRangeFilter(
+  itemId: number,
+  itemAttributes: Map<number, ItemAttributes>,
+  filter: AdvancedFilterOptions
+): boolean {
+  const { min, max } = filter.levelRange
+
+  // 未啟用篩選或未設定任何等級範圍
+  if (!filter.enabled || (min === null && max === null)) {
+    return true
+  }
+
+  // 取得物品屬性
+  const item = itemAttributes.get(itemId)
+  if (!item || !item.equipment) {
+    // 非裝備類物品（無等級需求），預設通過篩選
+    return true
+  }
+
+  const reqLevel = item.equipment.requirements.req_level
+
+  // 如果物品沒有等級需求，預設通過
+  if (reqLevel === null) {
+    return true
+  }
+
+  // 檢查是否在範圍內
+  const meetsMin = min === null || reqLevel >= min
+  const meetsMax = max === null || reqLevel <= max
+
+  return meetsMin && meetsMax
+}
+
+/**
  * 應用進階篩選到掉落資料陣列
  * @param drops 掉落資料陣列
  * @param filter 進階篩選選項
@@ -91,17 +173,29 @@ export function applyAdvancedFilter(
     // 檢查物品類別篩選
     const matchesCategory = matchesItemCategoryFilter(drop.itemId, itemAttributes, filter)
 
+    // 檢查職業篩選
+    const matchesJobClass = matchesJobClassFilter(drop.itemId, itemAttributes, filter)
+
+    // 檢查等級範圍篩選
+    const matchesLevelRange = matchesLevelRangeFilter(drop.itemId, itemAttributes, filter)
+
     // 根據邏輯運算子決定最終結果
     if (filter.logicOperator === 'OR') {
       // OR 邏輯：只要符合任一條件即可
       // 如果沒有設定任何篩選條件，則全部通過
-      const hasAnyFilter = filter.dataType !== 'all' || filter.itemCategories.length > 0
+      const hasAnyFilter =
+        filter.dataType !== 'all' ||
+        filter.itemCategories.length > 0 ||
+        filter.jobClasses.length > 0 ||
+        filter.levelRange.min !== null ||
+        filter.levelRange.max !== null
+
       if (!hasAnyFilter) return true
 
-      return matchesDataType || matchesCategory
+      return matchesDataType || matchesCategory || matchesJobClass || matchesLevelRange
     } else {
       // AND 邏輯：必須同時符合所有條件
-      return matchesDataType && matchesCategory
+      return matchesDataType && matchesCategory && matchesJobClass && matchesLevelRange
     }
   })
 }
@@ -114,6 +208,8 @@ export function getDefaultAdvancedFilter(): AdvancedFilterOptions {
   return {
     dataType: 'all',
     itemCategories: [],
+    jobClasses: [],
+    levelRange: { min: null, max: null },
     logicOperator: 'AND',
     enabled: false,
   }

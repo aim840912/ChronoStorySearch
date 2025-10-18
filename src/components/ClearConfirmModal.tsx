@@ -54,8 +54,8 @@ export function ClearConfirmModal({
         className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-md"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Modal Header - 警告漸層 (橙色/紅色) */}
-        <div className="bg-gradient-to-r from-orange-500 to-red-600 dark:from-orange-600 dark:to-red-700 p-6 rounded-t-xl">
+        {/* Modal Header - 警告背景 (紅色) */}
+        <div className="bg-red-600 dark:bg-red-700 p-6 rounded-t-xl">
           <div className="flex items-center gap-3">
             <div className="text-4xl">⚠️</div>
             <div>
@@ -89,7 +89,7 @@ export function ClearConfirmModal({
                 onConfirm()
                 onClose()
               }}
-              className="flex-1 px-4 py-3 bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white rounded-lg font-medium transition-all shadow-md hover:shadow-lg"
+              className="flex-1 px-4 py-3 bg-red-600 hover:bg-red-700 dark:bg-red-600 dark:hover:bg-red-700 text-white rounded-lg font-medium transition-all shadow-md hover:shadow-lg"
             >
               確定清除
             </button>

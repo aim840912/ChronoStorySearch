@@ -1,102 +1,94 @@
 /**
  * 物品分類工具
  * 提供物品類別判斷與分類相關功能
+ * 基於 equipment.category 欄位，降級使用 sub_type
  */
 
-import type { ItemAttributes, ItemCategoryGroup } from '@/types'
-
-/**
- * 武器類別 - 包含所有武器的 equipment.category
- */
-export const WEAPON_CATEGORIES = [
-  'One Handed Sword',
-  'One Handed Axe',
-  'One Handed BW',
-  'Two Handed Sword',
-  'Two Handed SwordL',
-  'Two Handed SwordS',
-  'Two Handed Axe',
-  'Two Handed BW',
-  'Spear',
-  'Polearm',
-  'Bow',
-  'Crossbow',
-  'Claw',
-  'Dagger',
-  'Wand',
-  'Staff',
-  'Knuckle',
-  'Gun',
-] as const
+import type { ItemAttributes, ItemCategoryGroup, CategoryGroupType } from '@/types'
 
 /**
- * 防具類別 - 包含所有防具的 equipment.category
+ * equipment.category 到 ItemCategoryGroup 的對應表
+ * 合併相似武器類型（如單手劍+雙手劍 => 劍）
  */
-export const ARMOR_CATEGORIES = [
-  'Hat',
-  'Top',
-  'Bottom',
-  'Overall',
-  'Gloves',
-  'Shoes',
-  'Shield',
-] as const
+const EQUIPMENT_CATEGORY_MAP: Record<string, ItemCategoryGroup> = {
+  // 穿著類
+  'Hat': 'hat',
+  'Top': 'top',
+  'Bottom': 'bottom',
+  'Overall': 'overall',
+  'Shoes': 'shoes',
+  'Gloves': 'gloves',
+  'Cape': 'cape',
+
+  // 武器類（合併單手/雙手）
+  'One Handed Sword': 'sword',
+  'Two Handed Sword': 'sword',
+  'Two Handed SwordS': 'sword',
+  'Two Handed SwordL': 'sword',
+  'One Handed Axe': 'axe',
+  'Two Handed Axe': 'axe',
+  'One Handed BW': 'bw',
+  'Two Handed BW': 'bw',
+  'Polearm': 'polearm',
+  'Spear': 'spear',
+  'Dagger': 'dagger',
+  'Claw': 'claw',
+  'Bow': 'bow',
+  'Crossbow': 'crossbow',
+  'Wand': 'wand',
+  'Staff': 'staff',
+  'Knuckle': 'knuckle',
+  'Gun': 'gun',
+  'Shield': 'shield',
+
+  // 飾品類
+  'Earring': 'earring',
+  'Accessory': 'accessory',
+
+  // 投擲物（特殊：既是武器也是消耗品）
+  'Projectile': 'projectile',
+}
 
 /**
- * 飾品類別 - 包含所有飾品的 equipment.category
+ * sub_type 到 ItemCategoryGroup 的降級對應表
+ * 用於無 equipment 欄位的物品（如卷軸、藥水）
  */
-export const ACCESSORY_CATEGORIES = [
-  'Cape',
-  'Earring',
-  'Accessory',
-  'Projectile',
-] as const
+const SUB_TYPE_FALLBACK_MAP: Record<string, ItemCategoryGroup> = {
+  'Scroll': 'scroll',
+  'Potion': 'potion',
+  'Projectile': 'projectile',
+  // 舊版相容性（如果有物品仍使用舊的 sub_type）
+  'Cap': 'hat',
+  'Pants': 'bottom',
+  'Longcoat': 'overall',
+  'Glove': 'gloves',
+}
 
 /**
- * 物品類別群組對應的 equipment.category 集合
+ * 分組映射：每個分組包含哪些類別
  */
-export const CATEGORY_GROUP_MAP: Record<ItemCategoryGroup, readonly string[]> = {
-  weapon: WEAPON_CATEGORIES,
-  armor: ARMOR_CATEGORIES,
-  accessory: ACCESSORY_CATEGORIES,
-  consume: [], // 消耗品依據 type 判斷，不使用 category
-  etc: [], // 其他/材料依據 type 判斷，不使用 category
+export const CATEGORY_GROUP_MAP: Record<CategoryGroupType, ItemCategoryGroup[]> = {
+  apparel: ['hat', 'top', 'bottom', 'overall', 'shoes', 'gloves', 'cape'],
+  weapon: ['sword', 'axe', 'bw', 'polearm', 'spear', 'dagger', 'claw', 'bow', 'crossbow', 'wand', 'staff', 'knuckle', 'gun', 'shield'],
+  accessory: ['earring', 'accessory'],
+  consumable: ['scroll', 'potion', 'projectile'],
 }
 
 /**
  * 判斷物品屬於哪個類別群組
+ * 優先使用 equipment.category，降級使用 sub_type
  * @param item 物品屬性資料
  * @returns 物品類別群組，若無法判斷則返回 null
  */
 export function getItemCategoryGroup(item: ItemAttributes): ItemCategoryGroup | null {
-  // 消耗品判斷
-  if (item.type === 'Consume') {
-    return 'consume'
+  // 優先使用 equipment.category
+  if (item.equipment?.category && item.equipment.category in EQUIPMENT_CATEGORY_MAP) {
+    return EQUIPMENT_CATEGORY_MAP[item.equipment.category]
   }
 
-  // 其他/材料判斷
-  if (item.type === 'Etc') {
-    return 'etc'
-  }
-
-  // 裝備類別判斷
-  if (item.type === 'Eqp' && item.equipment?.category) {
-    const category = item.equipment.category
-
-    // 判斷武器
-    if (WEAPON_CATEGORIES.includes(category as typeof WEAPON_CATEGORIES[number])) {
-      return 'weapon'
-    }
-
-    // 判斷防具
-    if (ARMOR_CATEGORIES.includes(category as typeof ARMOR_CATEGORIES[number])) {
-      return 'armor'
-    }
-
-    // 判斷飾品
-    if (ACCESSORY_CATEGORIES.includes(category as typeof ACCESSORY_CATEGORIES[number])) {
-      return 'accessory'
-    }
+  // 降級：使用 sub_type
+  if (item.sub_type && item.sub_type in SUB_TYPE_FALLBACK_MAP) {
+    return SUB_TYPE_FALLBACK_MAP[item.sub_type]
   }
 
   // 無法判斷
@@ -150,4 +142,27 @@ export function isItemInAllCategoryGroups(
   if (categoryGroups.length > 1) return false // 物品不可能同時屬於多個群組
 
   return isItemInCategoryGroup(item, categoryGroups[0])
+}
+
+/**
+ * 獲取分組下的所有類別
+ * @param groupType 分組類型
+ * @returns 該分組下的所有類別
+ */
+export function getCategoriesInGroup(groupType: CategoryGroupType): ItemCategoryGroup[] {
+  return CATEGORY_GROUP_MAP[groupType] || []
+}
+
+/**
+ * 獲取類別所屬的分組
+ * @param category 類別
+ * @returns 所屬分組，若找不到則返回 null
+ */
+export function getCategoryGroup(category: ItemCategoryGroup): CategoryGroupType | null {
+  for (const [groupType, categories] of Object.entries(CATEGORY_GROUP_MAP)) {
+    if (categories.includes(category)) {
+      return groupType as CategoryGroupType
+    }
+  }
+  return null
 }
