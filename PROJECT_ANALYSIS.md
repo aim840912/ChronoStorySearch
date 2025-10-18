@@ -147,43 +147,12 @@ hpMap.set(mobId, info.mob.max_hp)          // snake_case 資料
 
 ---
 
-### 3. 測試缺失
-
-#### 問題 3.1: 零測試覆蓋率
-**現狀**:
-- ❌ 無單元測試檔案
-- ❌ 無整合測試
-- ❌ 無 E2E 測試
-- ❌ 關鍵業務邏輯未經驗證
-
-**風險**:
-- 🚨 重構風險極高（無測試保護網）
-- 🐛 Bug 難以及早發現
-- 😰 不敢大膽重構程式碼
-- 📉 程式碼品質難以保證
-
-**優先測試項目**:
-1. **搜尋功能** (`matchesAllKeywords`)
-2. **篩選邏輯** (`applyAdvancedFilter`)
-3. **最愛功能** (`useFavoriteMonsters`, `useFavoriteItems`)
-4. **資料處理** (去重、排序)
-
-**建議測試框架**:
-```bash
-npm install -D vitest @testing-library/react \
-                @testing-library/jest-dom \
-                @testing-library/user-event
-```
-
-**目標覆蓋率**: 80% (核心邏輯)
-
----
 
 ## 🟡 中優先級問題
 
-### 4. 程式碼品質
+### 3. 程式碼品質
 
-#### 問題 4.1: Console 殘留
+#### 問題 3.1: Console 殘留
 **位置**: `src/components/GachaMachineModal.tsx`
 
 ```typescript
@@ -194,7 +163,7 @@ console.error('載入轉蛋機資料失敗:', error)
 clientLogger.error('載入轉蛋機資料失敗', error)
 ```
 
-#### 問題 4.2: 程式碼重複
+#### 問題 3.2: 程式碼重複
 **重複模式**:
 - 怪物卡片和物品卡片邏輯高度相似（~80% 重複）
 - 最愛功能邏輯重複
@@ -219,7 +188,7 @@ function useEntityCard<T extends { id: number; name: string }>() {
 }
 ```
 
-#### 問題 4.3: 型別安全性不足
+#### 問題 3.3: 型別安全性不足
 **問題**:
 - 部分地方使用 `as` 斷言
 - 缺少 JSDoc 註解
@@ -240,7 +209,7 @@ function useEntityCard<T extends { id: number; name: string }>() {
 
 ---
 
-### 5. 依賴管理
+### 4. 依賴管理
 
 #### 需要更新的套件
 | 套件 | 當前版本 | 最新版本 | 更新類型 | 優先度 |
@@ -264,9 +233,9 @@ npm run type-check  # 檢查是否有錯誤
 
 ---
 
-### 6. 架構設計
+### 5. 架構設計
 
-#### 問題 6.1: 狀態管理分散
+#### 問題 5.1: 狀態管理分散
 **現狀**:
 - 20+ `useState` hooks
 - 15+ `useMemo` hooks
@@ -295,7 +264,7 @@ const searchTermAtom = atom('')
 const filterModeAtom = atom('all')
 ```
 
-#### 問題 6.2: Modal 管理複雜
+#### 問題 5.2: Modal 管理複雜
 **現狀**:
 - 5 個不同的 Modal
 - 每個 Modal 需要 2-4 個 state
@@ -327,7 +296,7 @@ const useModal = () => {
 
 ## 🟢 低優先級問題
 
-### 7. 文檔不足
+### 6. 文檔不足
 
 #### 缺少的文檔
 - ❌ API 端點文檔（`/api/gacha/*`）
@@ -368,7 +337,7 @@ export interface MobInfo {
 
 ---
 
-### 8. 開發體驗
+### 7. 開發體驗
 
 #### 缺少開發工具
 **需要新增**:
