@@ -242,7 +242,7 @@ export type ItemCategoryGroup =
   | 'hat'          // 帽子
   | 'top'          // 上衣
   | 'bottom'       // 褲子/下身
-  | 'overall'      // 連身衣
+  | 'overall'      // 套服
   | 'shoes'        // 鞋子
   | 'gloves'       // 手套
   | 'cape'         // 披風
