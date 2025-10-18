@@ -4,7 +4,7 @@ import path from 'path'
 import { apiLogger } from '@/lib/logger'
 
 export async function GET(
-  request: NextRequest,
+  _request: NextRequest,
   context: { params: Promise<{ id: string }> }
 ) {
   try {

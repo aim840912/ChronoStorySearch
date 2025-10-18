@@ -29,6 +29,7 @@ export function Toast({
 
       return () => clearTimeout(timer)
     }
+    return undefined
   }, [isVisible, duration, onClose])
 
   if (!isVisible) return null

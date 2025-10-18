@@ -30,7 +30,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   // 解析實際應用的主題（處理 system 模式）
   useEffect(() => {
-    if (!isClient) return
+    if (!isClient) return undefined
 
     const resolveTheme = (currentTheme: Theme): 'light' | 'dark' => {
       if (currentTheme === 'system') {
@@ -68,6 +68,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
         mediaQuery.removeEventListener('change', handleChange)
       }
     }
+    return undefined
   }, [theme, isClient])
 
   // 切換主題並儲存到 localStorage

@@ -12,12 +12,12 @@ import { isItemInAnyCategoryGroup, isItemInAllCategoryGroups } from './item-cate
 
 /**
  * 判斷掉落資料是否符合資料類型篩選
- * @param drop 掉落資料
+ * @param _drop 掉落資料（目前未使用，保留以維持函數簽名一致性）
  * @param dataType 資料類型篩選
  * @returns 是否符合篩選
  */
 export function matchesDataTypeFilter(
-  drop: DropItem,
+  _drop: DropItem,
   dataType: AdvancedFilterOptions['dataType']
 ): boolean {
   // 全部資料、怪物、物品篩選：顯示所有掉落資料
