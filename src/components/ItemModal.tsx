@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { DropItem, ItemAttributes, Language } from '@/types'
+import type { DropItem, ItemAttributes, Language, GachaMachine } from '@/types'
 import { MonsterDropCard } from './MonsterDropCard'
 import { ItemAttributesCard } from './ItemAttributesCard'
 import { clientLogger } from '@/lib/logger'
@@ -15,6 +15,7 @@ interface ItemModalProps {
   itemId: number | null
   itemName: string
   allDrops: DropItem[]
+  gachaMachines: GachaMachine[]
   monsterHPMap: Map<number, number | null>
   isFavorite: boolean
   onToggleFavorite: (itemId: number, itemName: string) => void
@@ -22,6 +23,8 @@ interface ItemModalProps {
   isMonsterFavorite: (mobId: number) => boolean
   onToggleMonsterFavorite: (mobId: number, mobName: string) => void
   onMonsterClick: (mobId: number, mobName: string) => void
+  // 轉蛋機相關 props
+  onGachaMachineClick: (machineId: number) => void
 }
 
 /**
@@ -34,12 +37,14 @@ export function ItemModal({
   itemId,
   itemName,
   allDrops,
+  gachaMachines,
   monsterHPMap,
   isFavorite,
   onToggleFavorite,
   isMonsterFavorite,
   onToggleMonsterFavorite,
   onMonsterClick,
+  onGachaMachineClick,
 }: ItemModalProps) {
   const { t, language, setLanguage } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
@@ -57,6 +62,32 @@ export function ItemModal({
     if (!itemId && itemId !== 0) return []
     return allDrops.filter((drop) => drop.itemId === itemId)
   }, [itemId, allDrops])
+
+  // 計算該物品來自哪些轉蛋機
+  const itemGachaSources = useMemo(() => {
+    if (!itemId && itemId !== 0) return []
+
+    const sources: Array<{
+      machineId: number
+      machineName: string
+      chineseMachineName?: string
+      probability: string
+    }> = []
+
+    gachaMachines.forEach((machine) => {
+      const gachaItem = machine.items.find((item) => item.itemId === itemId)
+      if (gachaItem) {
+        sources.push({
+          machineId: machine.machineId,
+          machineName: machine.machineName,
+          chineseMachineName: machine.chineseMachineName,
+          probability: gachaItem.probability,
+        })
+      }
+    })
+
+    return sources
+  }, [itemId, gachaMachines])
 
   // 從 allDrops 查找物品數據（用於獲取中英文名稱）
   const itemData = useMemo(() => {
@@ -230,23 +261,94 @@ export function ItemModal({
             <ItemAttributesCard attributes={itemAttributes} />
           </div>
 
-          {/* 右側：掉落來源怪物列表（可滾動） */}
+          {/* 右側：轉蛋機來源 + 掉落來源怪物列表（可滾動） */}
           <div className="lg:w-2/3">
-            <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-              {t('card.droppedBy')}
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {itemDrops.map((drop, index) => (
-                <MonsterDropCard
-                  key={`${drop.mobId}-${index}`}
-                  drop={drop}
-                  monsterHPMap={monsterHPMap}
-                  isFavorite={isMonsterFavorite(drop.mobId)}
-                  onToggleFavorite={onToggleMonsterFavorite}
-                  onMonsterClick={onMonsterClick}
-                />
-              ))}
-            </div>
+            {/* 轉蛋機來源區塊 */}
+            {itemGachaSources.length > 0 && (
+              <div className="mb-8">
+                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4 flex items-center gap-2">
+                  <svg className="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  {t('item.gachaSources')}
+                </h3>
+                <div className="space-y-3">
+                  {itemGachaSources.map((source) => {
+                    const displayMachineName = language === 'zh-TW' && source.chineseMachineName
+                      ? source.chineseMachineName
+                      : source.machineName
+
+                    return (
+                      <div
+                        key={source.machineId}
+                        onClick={() => onGachaMachineClick(source.machineId)}
+                        className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-lg p-4 border border-purple-200 dark:border-purple-700 cursor-pointer hover:shadow-lg hover:scale-[1.02] transition-all duration-200 active:scale-[0.98]"
+                      >
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-3">
+                            <div className="bg-purple-500 text-white rounded-full p-2">
+                              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
+                              </svg>
+                            </div>
+                            <div>
+                              <p className="font-semibold text-gray-900 dark:text-white">
+                                {displayMachineName}
+                              </p>
+                              {isDev && (
+                                <p className="text-xs text-gray-500 dark:text-gray-400">
+                                  {t('modal.machineId')}: {source.machineId}
+                                </p>
+                              )}
+                            </div>
+                          </div>
+                          <div className="bg-purple-100 dark:bg-purple-800 px-3 py-1 rounded-full">
+                            <span className="text-sm font-bold text-purple-700 dark:text-purple-200">
+                              {source.probability}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* 怪物掉落區塊 */}
+            {itemDrops.length > 0 && (
+              <div>
+                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
+                  {t('card.droppedBy')}
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {itemDrops.map((drop, index) => (
+                    <MonsterDropCard
+                      key={`${drop.mobId}-${index}`}
+                      drop={drop}
+                      monsterHPMap={monsterHPMap}
+                      isFavorite={isMonsterFavorite(drop.mobId)}
+                      onToggleFavorite={onToggleMonsterFavorite}
+                      onMonsterClick={onMonsterClick}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* 當沒有任何來源時顯示提示 */}
+            {itemDrops.length === 0 && itemGachaSources.length === 0 && (
+              <div className="text-center py-8">
+                <p className="text-gray-500 dark:text-gray-400">
+                  {t('item.noSources')}
+                </p>
+              </div>
+            )}
           </div>
         </div>
 

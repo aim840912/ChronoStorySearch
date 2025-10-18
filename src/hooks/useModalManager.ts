@@ -31,9 +31,16 @@ interface ClearModalData {
 }
 
 /**
+ * Gacha Modal 資料結構
+ */
+interface GachaModalData {
+  machineId?: number
+}
+
+/**
  * Modal 狀態的聯合類型
  */
-type ModalData = MonsterModalData | ItemModalData | ClearModalData | null
+type ModalData = MonsterModalData | ItemModalData | ClearModalData | GachaModalData | null
 
 /**
  * 統一的 Modal 狀態
@@ -94,14 +101,21 @@ export function useModalManager() {
   }, [closeWithRouter])
 
   // 開啟 Gacha Modal
-  const openGachaModal = useCallback(() => {
-    setModal({ type: 'gacha', data: null })
+  const openGachaModal = useCallback((machineId?: number) => {
+    setModal({
+      type: 'gacha',
+      data: machineId !== undefined ? { machineId } : null
+    })
   }, [])
 
   // 關閉 Gacha Modal
   const closeGachaModal = useCallback(() => {
     setModal({ type: null, data: null })
-  }, [])
+    // 延遲清除 URL，確保 React 狀態更新完成後再執行
+    setTimeout(() => {
+      closeWithRouter()
+    }, 0)
+  }, [closeWithRouter])
 
   // 開啟 Bug Report Modal
   const openBugReportModal = useCallback(() => {
@@ -183,6 +197,7 @@ export function useModalManager() {
   const monsterData = modal.type === 'monster' ? (modal.data as MonsterModalData) : null
   const itemData = modal.type === 'item' ? (modal.data as ItemModalData) : null
   const clearData = modal.type === 'clear' ? (modal.data as ClearModalData) : null
+  const gachaData = modal.type === 'gacha' ? (modal.data as GachaModalData | null) : null
 
   return {
     // 核心 API（新的簡化介面）
@@ -222,6 +237,7 @@ export function useModalManager() {
 
     // Gacha Machine Modal
     isGachaModalOpen: modal.type === 'gacha',
+    selectedGachaMachineId: gachaData?.machineId,
     openGachaModal,
     closeGachaModal,
   }

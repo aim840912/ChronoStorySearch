@@ -9,6 +9,7 @@ import { clientLogger } from '@/lib/logger'
 interface GachaMachineModalProps {
   isOpen: boolean
   onClose: () => void
+  initialMachineId?: number
 }
 
 type SortOption = 'probability-desc' | 'probability-asc' | 'level-desc' | 'level-asc' | 'name-asc'
@@ -17,13 +18,41 @@ type SortOption = 'probability-desc' | 'probability-asc' | 'level-desc' | 'level
  * 轉蛋機圖鑑 Modal
  * 顯示 7 台轉蛋機及其內容物
  */
-export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
-  const { language, t } = useLanguage()
+export function GachaMachineModal({ isOpen, onClose, initialMachineId }: GachaMachineModalProps) {
+  const { language, t, setLanguage } = useLanguage()
   const [machines, setMachines] = useState<GachaMachine[]>([])
   const [selectedMachine, setSelectedMachine] = useState<GachaMachine | null>(null)
   const [searchTerm, setSearchTerm] = useState('')
   const [sortOption, setSortOption] = useState<SortOption>('probability-desc')
   const [isLoading, setIsLoading] = useState(false)
+  const [showToast, setShowToast] = useState(false)
+  const [toastMessage, setToastMessage] = useState('')
+
+  // 語言切換函數
+  const toggleLanguage = () => {
+    const newLanguage: 'zh-TW' | 'en' = language === 'zh-TW' ? 'en' : 'zh-TW'
+    setLanguage(newLanguage)
+  }
+
+  // 分享功能 - 複製連結到剪貼簿
+  const handleShare = async () => {
+    try {
+      // 根據當前狀態生成 URL
+      const machineId = selectedMachine?.machineId || initialMachineId
+      const urlParam = machineId !== undefined ? `gacha=${machineId}` : 'gacha=list'
+      const url = `${window.location.origin}${window.location.pathname}?${urlParam}`
+
+      await navigator.clipboard.writeText(url)
+      setToastMessage(t('modal.linkCopied'))
+      setShowToast(true)
+      setTimeout(() => setShowToast(false), 3000)
+    } catch (error) {
+      clientLogger.error('複製連結失敗', error)
+      setToastMessage(t('modal.copyFailed'))
+      setShowToast(true)
+      setTimeout(() => setShowToast(false), 3000)
+    }
+  }
 
   // 載入所有轉蛋機資料
   useEffect(() => {
@@ -60,11 +89,26 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
     }
   }, [isOpen])
 
+  // 當有 initialMachineId 時，自動選擇對應的轉蛋機
+  useEffect(() => {
+    if (isOpen && initialMachineId !== undefined && machines.length > 0 && !selectedMachine) {
+      const targetMachine = machines.find((m) => m.machineId === initialMachineId)
+      if (targetMachine) {
+        setSelectedMachine(targetMachine)
+        clientLogger.info(`自動選擇轉蛋機: ${targetMachine.machineName} (ID: ${initialMachineId})`)
+      }
+    }
+  }, [isOpen, initialMachineId, machines, selectedMachine])
+
   // ESC 鍵關閉 Modal
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
-        if (selectedMachine) {
+        // 如果是通過 initialMachineId 自動選擇的，直接關閉整個 modal
+        if (initialMachineId !== undefined) {
+          onClose()
+        } else if (selectedMachine) {
+          // 手動選擇的情況：返回轉蛋機列表
           setSelectedMachine(null)
         } else {
           onClose()
@@ -79,7 +123,7 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
       window.removeEventListener('keydown', handleEsc)
       document.body.style.overflow = 'unset'
     }
-  }, [isOpen, selectedMachine, onClose])
+  }, [isOpen, selectedMachine, onClose, initialMachineId])
 
   // 篩選和排序物品
   const filteredAndSortedItems = useMemo(() => {
@@ -126,7 +170,11 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
   if (!isOpen) return null
 
   const handleBackdropClick = () => {
-    if (selectedMachine) {
+    // 如果是通過 initialMachineId 自動選擇的，直接關閉整個 modal
+    if (initialMachineId !== undefined) {
+      onClose()
+    } else if (selectedMachine) {
+      // 手動選擇的情況：返回轉蛋機列表
       setSelectedMachine(null)
     } else {
       onClose()
@@ -135,7 +183,7 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+      className="fixed inset-0 z-[70] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
       onClick={handleBackdropClick}
     >
       <div
@@ -161,13 +209,54 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
                 </p>
               </div>
             </div>
-            {/* 關閉按鈕 */}
-            <button
-              onClick={() => (selectedMachine ? setSelectedMachine(null) : onClose())}
-              className="text-white hover:bg-white/20 rounded-full p-2 transition-colors"
-              aria-label={selectedMachine ? t('gacha.back') : t('gacha.close')}
-            >
-              {selectedMachine ? (
+            <div className="flex items-center gap-2">
+              {/* 語言切換按鈕 */}
+              <button
+                onClick={toggleLanguage}
+                className="p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30"
+                aria-label={t('language.toggle')}
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </button>
+              {/* 分享按鈕 */}
+              <button
+                onClick={handleShare}
+                className="p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30"
+                aria-label={t('modal.share')}
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+                  />
+                </svg>
+              </button>
+              {/* 關閉按鈕 */}
+              <button
+                onClick={() => {
+                  // 如果是通過 initialMachineId 自動選擇的，直接關閉整個 modal
+                  if (initialMachineId !== undefined) {
+                    onClose()
+                  } else if (selectedMachine) {
+                    // 手動選擇的情況：返回轉蛋機列表
+                    setSelectedMachine(null)
+                  } else {
+                    onClose()
+                  }
+                }}
+                className="text-white hover:bg-white/20 rounded-full p-2 transition-colors"
+                aria-label={initialMachineId !== undefined ? t('gacha.close') : (selectedMachine ? t('gacha.back') : t('gacha.close'))}
+              >
+              {selectedMachine && initialMachineId === undefined ? (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
@@ -187,6 +276,7 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
                 </svg>
               )}
             </button>
+          </div>
           </div>
         </div>
 
@@ -263,6 +353,28 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
             </div>
           )}
         </div>
+
+        {/* Toast 通知 */}
+        {showToast && (
+          <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-60 animate-fade-in">
+            <div className="bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 px-6 py-3 rounded-lg shadow-lg flex items-center gap-2">
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="font-medium">{toastMessage}</span>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )

@@ -111,6 +111,7 @@ export default function Home() {
     debouncedSearchTerm,
     advancedFilter,
     itemAttributesMap,
+    gachaMachines,
   })
 
   // 無限滾動 - 在「全部」模式且（有搜尋 或 有進階篩選）時啟用
@@ -150,6 +151,7 @@ export default function Home() {
 
     const monsterIdParam = searchParams.get('monster')
     const itemIdParam = searchParams.get('item')
+    const gachaParam = searchParams.get('gacha')
 
     if (monsterIdParam) {
       const monsterId = parseInt(monsterIdParam, 10)
@@ -180,8 +182,23 @@ export default function Home() {
           clientLogger.info(`從 URL 參數開啟物品 modal: ${displayName} (${parsedItemId})`)
         }
       }
+    } else if (gachaParam && !modals.isGachaModalOpen) {
+      if (gachaParam === 'list') {
+        // 開啟轉蛋機列表
+        modals.openGachaModal()
+        clientLogger.info('從 URL 參數開啟轉蛋機列表 modal')
+      } else {
+        // 開啟特定轉蛋機
+        const machineId = parseInt(gachaParam, 10)
+        if (!isNaN(machineId) && machineId >= 1 && machineId <= 7) {
+          modals.openGachaModal(machineId)
+          clientLogger.info(`從 URL 參數開啟轉蛋機 modal: 機台 ${machineId}`)
+        }
+      }
     }
-  }, [allDrops, searchParams, language, search, modals])
+  // modals 和 search 的方法是穩定的 useCallback，不需要作為依賴
+  // 將它們放入依賴會導致 modal 狀態改變時觸發 useEffect，造成無限循環
+  }, [allDrops, searchParams, language]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // 進階篩選變更時，滾動到頁面頂部以顯示結果
   useEffect(() => {
@@ -263,6 +280,11 @@ export default function Home() {
   const handleMonsterClickFromItemModal = (mobId: number, mobName: string) => {
     modals.closeItemModal() // 關閉 ItemModal
     modals.openMonsterModal(mobId, mobName) // 打開 MonsterModal 並設定資料
+  }
+
+  // ItemModal 中點擊轉蛋機：不關閉 ItemModal，打開 GachaMachineModal 並選擇轉蛋機
+  const handleGachaMachineClick = (machineId: number) => {
+    modals.openGachaModal(machineId)
   }
 
   return (
@@ -420,6 +442,7 @@ export default function Home() {
                               onCardClick={modals.openItemModal}
                               isFavorite={isItemFavorite(card.data.itemId)}
                               onToggleFavorite={toggleItemFavorite}
+                              source={card.data.source}
                             />
                           )
                         }
@@ -471,6 +494,7 @@ export default function Home() {
                                 onCardClick={modals.openItemModal}
                                 isFavorite={isItemFavorite(item.itemId)}
                                 onToggleFavorite={toggleItemFavorite}
+                                source={item.source}
                               />
                             ))}
                           </div>
@@ -544,12 +568,14 @@ export default function Home() {
         itemId={modals.selectedItemId}
         itemName={modals.selectedItemName}
         allDrops={allDrops}
+        gachaMachines={gachaMachines}
         monsterHPMap={monsterHPMap}
         isFavorite={modals.selectedItemId !== null ? isItemFavorite(modals.selectedItemId) : false}
         onToggleFavorite={toggleItemFavorite}
         isMonsterFavorite={isFavorite}
         onToggleMonsterFavorite={toggleFavorite}
         onMonsterClick={handleMonsterClickFromItemModal}
+        onGachaMachineClick={handleGachaMachineClick}
       />
 
       {/* Bug Report Modal */}
@@ -571,11 +597,12 @@ export default function Home() {
       <GachaMachineModal
         isOpen={modals.isGachaModalOpen}
         onClose={modals.closeGachaModal}
+        initialMachineId={modals.selectedGachaMachineId}
       />
 
       {/* 浮動轉蛋機按鈕 */}
       <button
-        onClick={modals.openGachaModal}
+        onClick={() => modals.openGachaModal()}
         className="fixed bottom-6 left-6 z-40 p-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('gacha.button')}
       >

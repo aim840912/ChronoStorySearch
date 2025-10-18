@@ -7,7 +7,9 @@ import type {
   FavoriteMonster,
   FavoriteItem,
   AdvancedFilterOptions,
-  ItemAttributes
+  ItemAttributes,
+  GachaMachine,
+  ExtendedUniqueItem
 } from '@/types'
 import { matchesAllKeywords } from '@/lib/search-utils'
 import { applyAdvancedFilter } from '@/lib/filter-utils'
@@ -22,6 +24,7 @@ interface UseFilterLogicParams {
   debouncedSearchTerm: string
   advancedFilter: AdvancedFilterOptions
   itemAttributesMap: Map<number, ItemAttributes>
+  gachaMachines: GachaMachine[]
 }
 
 /**
@@ -41,6 +44,7 @@ export function useFilterLogic({
   debouncedSearchTerm,
   advancedFilter,
   itemAttributesMap,
+  gachaMachines,
 }: UseFilterLogicParams) {
   // 過濾後的掉落資料
   const [filteredDrops, setFilteredDrops] = useState<DropItem[]>([])
@@ -152,13 +156,13 @@ export function useFilterLogic({
     return Array.from(monsterMap.values())
   }, [filterMode, filteredDrops])
 
-  // 計算「全部」模式的唯一物品清單（每個物品只出現一次）
-  const uniqueAllItems = useMemo(() => {
+  // 計算「全部」模式的唯一物品清單（每個物品只出現一次，整合掉落和轉蛋）
+  const uniqueAllItems = useMemo((): ExtendedUniqueItem[] => {
     if (filterMode !== 'all') return []
 
-    const itemMap = new Map<number, { itemId: number; itemName: string; chineseItemName?: string | null; monsterCount: number }>()
+    const itemMap = new Map<number, ExtendedUniqueItem>()
 
-    // 從 filteredDrops 統計每個物品被多少怪物掉落
+    // 1. 從 filteredDrops 統計每個物品被多少怪物掉落
     filteredDrops.forEach((drop) => {
       if (!itemMap.has(drop.itemId)) {
         itemMap.set(drop.itemId, {
@@ -166,6 +170,10 @@ export function useFilterLogic({
           itemName: drop.itemName,
           chineseItemName: drop.chineseItemName,
           monsterCount: 0,
+          source: {
+            fromDrops: true,
+            fromGacha: false,
+          }
         })
       }
     })
@@ -181,8 +189,47 @@ export function useFilterLogic({
       item.monsterCount = uniqueMonsters.size
     })
 
+    // 2. 整合轉蛋物品
+    gachaMachines.forEach((machine) => {
+      machine.items.forEach((gachaItem) => {
+        const existing = itemMap.get(gachaItem.itemId)
+
+        if (existing) {
+          // 物品已存在（是掉落物品），合併轉蛋資訊
+          existing.source.fromGacha = true
+          if (!existing.source.gachaMachines) {
+            existing.source.gachaMachines = []
+          }
+          existing.source.gachaMachines.push({
+            machineId: machine.machineId,
+            machineName: machine.machineName,
+            chineseMachineName: machine.chineseMachineName,
+            probability: gachaItem.probability
+          })
+        } else {
+          // 純轉蛋物品（不是掉落物品）
+          itemMap.set(gachaItem.itemId, {
+            itemId: gachaItem.itemId,
+            itemName: gachaItem.name || gachaItem.itemName || '',
+            chineseItemName: gachaItem.chineseName || null,
+            monsterCount: 0,
+            source: {
+              fromDrops: false,
+              fromGacha: true,
+              gachaMachines: [{
+                machineId: machine.machineId,
+                machineName: machine.machineName,
+                chineseMachineName: machine.chineseMachineName,
+                probability: gachaItem.probability
+              }]
+            }
+          })
+        }
+      })
+    })
+
     return Array.from(itemMap.values())
-  }, [filterMode, filteredDrops])
+  }, [filterMode, filteredDrops, gachaMachines])
 
   // 建立隨機混合的卡片資料（怪物 + 物品隨機排序）- 只在「全部」模式且無搜尋時使用
   const mixedCards = useMemo(() => {
@@ -192,7 +239,7 @@ export function useFilterLogic({
     // 定義混合卡片資料結構
     type MixedCard =
       | { type: 'monster'; data: { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number } }
-      | { type: 'item'; data: { itemId: number; itemName: string; chineseItemName?: string | null; monsterCount: number } }
+      | { type: 'item'; data: ExtendedUniqueItem }
 
     // 根據進階篩選決定要包含哪些卡片
     const shouldIncludeMonsters = !advancedFilter.enabled ||

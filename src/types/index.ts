@@ -11,6 +11,27 @@ export interface DropItem {
   maxQty: number
 }
 
+// 物品來源資訊（掉落、轉蛋或兩者）
+export interface ItemSource {
+  fromDrops: boolean       // 是否有怪物掉落
+  fromGacha: boolean       // 是否來自轉蛋機
+  gachaMachines?: Array<{  // 轉蛋機列表（如有）
+    machineId: number
+    machineName: string
+    chineseMachineName?: string
+    probability: string
+  }>
+}
+
+// 擴展物品資料（包含來源資訊）
+export interface ExtendedUniqueItem {
+  itemId: number
+  itemName: string
+  chineseItemName?: string | null
+  monsterCount: number
+  source: ItemSource
+}
+
 // 搜尋建議項目類型
 export interface SuggestionItem {
   name: string
