@@ -1,13 +1,13 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { DropItem, MonsterStats } from '@/types'
+import type { DropItem, MobInfo } from '@/types'
 import { DropItemCard } from './DropItemCard'
 import { MonsterStatsCard } from './MonsterStatsCard'
 import { clientLogger } from '@/lib/logger'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
-import monsterStatsData from '@/../data/monster-stats.json'
+import mobInfoData from '@/../data/mob-info.json'
 
 interface MonsterModalProps {
   isOpen: boolean
@@ -50,11 +50,11 @@ export function MonsterModal({
     return allDrops.filter((drop) => drop.mobId === monsterId)
   }, [monsterId, allDrops])
 
-  // 查找怪物屬性資料
-  const monsterStats = useMemo(() => {
+  // 查找怪物詳細資訊
+  const mobInfo = useMemo(() => {
     if (!monsterId) return null
     return (
-      (monsterStatsData as MonsterStats[]).find((stats) => stats.mobId === monsterId) || null
+      (mobInfoData as MobInfo[]).find((info) => info.mob.mob_id === String(monsterId)) || null
     )
   }, [monsterId])
 
@@ -182,7 +182,7 @@ export function MonsterModal({
         <div className="p-6 flex flex-col lg:flex-row gap-6">
           {/* 左側：怪物屬性（桌面版固定位置） */}
           <div className="lg:w-1/3 lg:sticky lg:top-32 lg:self-start">
-            <MonsterStatsCard stats={monsterStats} />
+            <MonsterStatsCard mobInfo={mobInfo} />
           </div>
 
           {/* 右側：掉落物品（可滾動） */}

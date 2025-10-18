@@ -125,23 +125,40 @@ export type Translations = Record<string, string>
 // 主題相關類型
 export type Theme = 'light' | 'dark' | 'system'
 
-// 怪物屬性資料類型
+// 怪物屬性資料類型（來自 mob-info.json）
 export interface MonsterStats {
-  mobId: number
-  name: string | null
-  chineseMobName: string | null
+  mob_id: string
+  mob_name: string | null
+  released: number | null
+  max_hp: number | null
+  acc: number | null
+  avoid: number | null
   level: number | null
-  maxHP: number | null
-  maxMP: number | null
-  speed: number | null
-  physicalDamage: number | null
-  physicalDefense: number | null
-  magicDamage: number | null
-  magicDefense: number | null
-  accuracy: number | null
-  evasion: number | null
   exp: number | null
+  phys_def: number | null
+  mag_def: number | null
+  fire_weakness: number | null
+  ice_weakness: number | null
+  lightning_weakness: number | null
+  holy_weakness: number | null
+  poison_weakness: number | null
+  immune_to_poison_status: number | null
   minimumPushDamage: number | null
+}
+
+// 經驗值比率資料類型
+export interface ExpBar {
+  minExpHpRatio: number | null
+  maxExpHpRatio: number | null
+  mobExpHpRatio: number | null
+}
+
+// 怪物完整資訊類型（mob-info.json 的頂層結構）
+export interface MobInfo {
+  mob: MonsterStats
+  description: string
+  expBar: ExpBar
+  chineseMobName: string
 }
 
 // 物品屬性資料類型

@@ -1,0 +1,3753 @@
+[
+  {
+    "mob": {
+      "mob_id": "2000",
+      "mob_name": "Amherst Crate",
+      "released": 1,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": null,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "箱子"
+  },
+  {
+    "mob": {
+      "mob_id": "100100",
+      "mob_name": "Snail",
+      "released": 1,
+      "max_hp": 8,
+      "acc": 20,
+      "avoid": 0,
+      "level": 1,
+      "exp": 3,
+      "phys_def": 0,
+      "mag_def": 0,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": "Lv. :  1\\nForm : Mammal\\n\\nA small and vulnerable monster that is found all throughout Maple Island and Victoria Island. There are so many of these little monsters around that there's even a saying that goes, \"snail is as snail does\".\\nSnails are easy targets for beginners. There has never been any adventurer who's ever been defeated by the Snail, so if you're the kind of adventurer that likes to challenge yourself, it might not be such a bad idea to try and actually be defeated by this Snail!\\nA player who's reached Lv. 1 on the 3 Snail Skill could use the Snail's shell as a throwable weapon too.",
+    "expBar": {
+      "minExpHpRatio": 0,
+      "maxExpHpRatio": 8,
+      "mobExpHpRatio": 2.6666666666666665
+    },
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mob": {
+      "mob_id": "100101",
+      "mob_name": "Blue Snail",
+      "released": 1,
+      "max_hp": 15,
+      "acc": 20,
+      "avoid": 0,
+      "level": 2,
+      "exp": 4,
+      "phys_def": 0,
+      "mag_def": 0,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  2\\nForm : Mammal\\n\\nThe Blue Snail found all throughout Maple Island and Victoria Island. It's the bigger and badder version of the regular Snail with a bigger body frame as well as stronger attack strengths, but even with all its enhancements, it is still a monster that can easily be defeated by beginners. It's hard to say, however, why the Snail turned blue while it grew bigger!\\nA player who's reached Lv. 2 on the 3 Snail Skill could use the Blue Snail's shell as a throwable weapon too.",
+    "expBar": {
+      "minExpHpRatio": 0,
+      "maxExpHpRatio": 8,
+      "mobExpHpRatio": 3.75
+    },
+    "chineseMobName": "藍寶"
+  },
+  {
+    "mob": {
+      "mob_id": "100110",
+      "mob_name": "Bob",
+      "released": 1,
+      "max_hp": 13000,
+      "acc": 170,
+      "avoid": 20,
+      "level": 69,
+      "exp": 1400,
+      "phys_def": 205,
+      "mag_def": 250,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 9.285714285714286
+    },
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mob": {
+      "mob_id": "120100",
+      "mob_name": "Shroom",
+      "released": 1,
+      "max_hp": 20,
+      "acc": 30,
+      "avoid": 0,
+      "level": 2,
+      "exp": 5,
+      "phys_def": 0,
+      "mag_def": 0,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  2\\nForm : Plant\\n\\nA small mushroom monster that is often found in grassy areas. It is relatively fast for a low-level monster, but beginners could easily defeat these mushrooms with a little practice.\\nThese look a lot like the Orange Mushroom monsters but they actually have a much smaller frame and have much more mean-looking faces compared to the Orange Mushroom. It tends to disburse mushroom spores in the air, which is the single reason why there are so many mushroom monsters all throughout Maple World!",
+    "expBar": {
+      "minExpHpRatio": 0,
+      "maxExpHpRatio": 8,
+      "mobExpHpRatio": 4
+    },
+    "chineseMobName": "菇菇仔"
+  },
+  {
+    "mob": {
+      "mob_id": "130100",
+      "mob_name": "Stump",
+      "released": 1,
+      "max_hp": 40,
+      "acc": 30,
+      "avoid": 0,
+      "level": 4,
+      "exp": 8,
+      "phys_def": 0,
+      "mag_def": 10,
+      "fire_weakness": 1,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": "Lv. :  4\\nForm : Plant\\nSpecial Trait : Vulnerable to Fire Attribute Attacks.\\n\\nA monster that resembles a tree stump that is most often found in grassy areas and the highlands. Its short legs that used to be the tree's roots move very slowly and the tree stump can only make weak attacks, but it is also surprisingly strong which makes beginners have to spend a long time to defeat this monster.\\nThe eye on this Stump often scares people, but the single eye will apparently shed a tear from time to time. This rare occasion serves as the origination of the people of Perion referring to valuables as the Tear of Stump. ",
+    "expBar": {
+      "minExpHpRatio": 0,
+      "maxExpHpRatio": 8,
+      "mobExpHpRatio": 5
+    },
+    "chineseMobName": "木妖"
+  },
+  {
+    "mob": {
+      "mob_id": "130101",
+      "mob_name": "Red Snail",
+      "released": 1,
+      "max_hp": 45,
+      "acc": 35,
+      "avoid": 1,
+      "level": 4,
+      "exp": 8,
+      "phys_def": 3,
+      "mag_def": 10,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  4\\nForm : Mammal\\n\\nThere's apparently a rumor going around that says that the Blue Snails had turned red after leveling-up from their incessant combating, but such a rumor has not been confirmed.\\nThis monster can be spotted everywhere throughout Maple Island and Victoria Island. It has unbelievable speed and attack strengths, especially for a snail, which may make it somewhat of a challenging opponent for a beginner. A player who's reached Lv.3 on the 3 Snail Skill could use the Red Snail's shell as a throwable weapon too. ",
+    "expBar": {
+      "minExpHpRatio": 0,
+      "maxExpHpRatio": 8,
+      "mobExpHpRatio": 5.625
+    },
+    "chineseMobName": "紅寶"
+  },
+  {
+    "mob": {
+      "mob_id": "210100",
+      "mob_name": "Slime",
+      "released": 1,
+      "max_hp": 50,
+      "acc": 35,
+      "avoid": 1,
+      "level": 6,
+      "exp": 10,
+      "phys_def": 5,
+      "mag_def": 10,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": 1,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  6\\nForm : Spirit\\nSpecial Trait : Vulnerable to Electricity Attribute Attacks.\\n\\nA monster made of a gelatinous substance that uses its own viscosity to jump around everywhere. The cuteness of its look makes the Slime a beloved monster amongst adventurers, which is why you'll often come across all sorts of Slime paraphernalia such as hats and earrings that are being sold. When you hunt the Slime, you'll end up with small pockets of liquid which have a very pleasant apple scent. The scented liquid can be used in cooking as well! Sometimes, it will give the pompom on its head to the adventurers. ",
+    "expBar": {
+      "minExpHpRatio": 0,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 5
+    },
+    "chineseMobName": "綠水靈"
+  },
+  {
+    "mob": {
+      "mob_id": "1072000",
+      "mob_name": "Witchgrass",
+      "released": 1,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": null,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "神秘的植物"
+  },
+  {
+    "mob": {
+      "mob_id": "1110100",
+      "mob_name": "Green Mushroom",
+      "released": 1,
+      "max_hp": 250,
+      "acc": 45,
+      "avoid": 5,
+      "level": 15,
+      "exp": 26,
+      "phys_def": 12,
+      "mag_def": 40,
+      "fire_weakness": 0,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": -1,
+      "immune_to_poison_status": true,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  15\\nForm : Plant\\nSpecial Trait : Resistant to Poison Attribute Attacks.\\n\\nA Green Mushroom monster with a dull looking cap. Is a transformed version of the small poisonous mushrooms and is therefore immune to poison. These mushrooms are often spotted around construction sites or nearby dungeon entrances. These mushrooms are most likely poisonous so beware not to eat them no matter how hungry you are!",
+    "expBar": {
+      "minExpHpRatio": 6,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 9.615384615384615
+    },
+    "chineseMobName": "綠菇菇"
+  },
+  {
+    "mob": {
+      "mob_id": "1110101",
+      "mob_name": "Dark Stump",
+      "released": 1,
+      "max_hp": 250,
+      "acc": 42,
+      "avoid": 0,
+      "level": 10,
+      "exp": 18,
+      "phys_def": 20,
+      "mag_def": 10,
+      "fire_weakness": 1,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  10\\nForm : Plant\\nSpecial Trait : Vulnerable to Fire Attribute Attacks.\\n\\nA slightly darker version of Stump, the tree stump monster. These monsters are often spotted around mountain highlands. While they are very similar to the Stump in their dried-up appearance, but these Dark Stumps have some moisture left in their bodies, still growing leaves somewhere inside their body. The Dark Stump has a lot stronger attacks and defenses as compared to Stump, so be careful not to confuse the two, especially if you're a beginner!",
+    "expBar": {
+      "minExpHpRatio": 5,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 13.88888888888889
+    },
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mob": {
+      "mob_id": "1120100",
+      "mob_name": "Octopus",
+      "released": 1,
+      "max_hp": 200,
+      "acc": 40,
+      "avoid": 4,
+      "level": 12,
+      "exp": 24,
+      "phys_def": 10,
+      "mag_def": 40,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": 1,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": "Lv. :  12\\nForm : Mammal\\nSpecial Trait : Vulnerable to Electricity Attribute Attacks.\\n\\nHardly an octopus, this mutated octopus-like monster is a strange-looking creature that barely escaped the research lab of some outer space planet after being relentlessly tested on. There's apparently some people who like to cook friend meatballs with these octopus' legs. Often found around swamps and construction sites, Octopuses have been reportedly spotted more frequently around high altitude areas which seems to support the whole alien theory of their origins.   ",
+    "expBar": {
+      "minExpHpRatio": 5,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 8.333333333333334
+    },
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mob": {
+      "mob_id": "1130100",
+      "mob_name": "Axe Stump",
+      "released": 1,
+      "max_hp": 300,
+      "acc": 50,
+      "avoid": 5,
+      "level": 17,
+      "exp": 30,
+      "phys_def": 30,
+      "mag_def": 10,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  17\\nForm : Plant\\n\\nA monster from an unbelievable legendary story about a lumberjack who'd left his axe in a tree stump. The tree stump apparently was reborn into this monster as a result of its unresolved past life as a tree stump with an axe stuck into it. In any case, this Axe Stump seems perfect to use as firewood. Is extremely strong, just like all the Stump family of monsters. ",
+    "expBar": {
+      "minExpHpRatio": 7,
+      "maxExpHpRatio": 16,
+      "mobExpHpRatio": 10
+    },
+    "chineseMobName": "斧木妖"
+  },
+  {
+    "mob": {
+      "mob_id": "1140100",
+      "mob_name": "Ghost Stump",
+      "released": 1,
+      "max_hp": 330,
+      "acc": 55,
+      "avoid": 10,
+      "level": 19,
+      "exp": 33,
+      "phys_def": 40,
+      "mag_def": 15,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  19\\nForm : Plant\\n\\nA strange tree stump that's only found around Excavation Sites. According to some archaeologists, this very unique stump may be growing its leaf with the power of the ancient aura that is constantly emanating out of the Excavation Sites. It is questionable, though, as to whether any more leaves will actually grow out of this Ghost Stump.",
+    "expBar": {
+      "minExpHpRatio": 7,
+      "maxExpHpRatio": 16,
+      "mobExpHpRatio": 10
+    },
+    "chineseMobName": "發芽木妖"
+  },
+  {
+    "mob": {
+      "mob_id": "1210100",
+      "mob_name": "Pig",
+      "released": 1,
+      "max_hp": 75,
+      "acc": 40,
+      "avoid": 0,
+      "level": 7,
+      "exp": 15,
+      "phys_def": 5,
+      "mag_def": 20,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": "Lv. :  7\\nForm : Mammal\\n\\nA very speedy monster that attacks with its massive body. You'll need to do everything you can to get away from this guy, or else it'll come attacking you with massive strength. It is possible to catch one of these Pigs, though, and the Pig's head is apparently quite a delicacy in Maple World.",
+    "expBar": {
+      "minExpHpRatio": 3,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 5
+    },
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mob": {
+      "mob_id": "1210101",
+      "mob_name": "Ribbon Pig",
+      "released": 1,
+      "max_hp": 120,
+      "acc": 40,
+      "avoid": 2,
+      "level": 10,
+      "exp": 20,
+      "phys_def": 10,
+      "mag_def": 30,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  10\\nForm : Mammal\\n\\nThere's always a sense of order, even in the world of Pigs. The most powerful of them wear a bright red ribbon which symbolizes their overpowering strength over others, and are treated as royalty. You don't believe it? Just go and try to hunt one of these Ribbon Pigs. You'll see that Ribbon Pigs are much more powerful than ordinary Pigs.",
+    "expBar": {
+      "minExpHpRatio": 5,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 6
+    },
+    "chineseMobName": "緞帶肥肥"
+  },
+  {
+    "mob": {
+      "mob_id": "1210102",
+      "mob_name": "Orange Mushroom",
+      "released": 1,
+      "max_hp": 80,
+      "acc": 42,
+      "avoid": 1,
+      "level": 8,
+      "exp": 15,
+      "phys_def": 0,
+      "mag_def": 10,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  8\\nForm : Plant\\n\\nA mushroom monster spotted everywhere in Maple Island and Victoria Island. Tends to like to hide out in peoples' homes and eat up all their food, which will turn them into the powerful Mushmoms.",
+    "expBar": {
+      "minExpHpRatio": 5,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 5.333333333333333
+    },
+    "chineseMobName": "菇菇寶貝"
+  },
+  {
+    "mob": {
+      "mob_id": "1210103",
+      "mob_name": "Bubbling",
+      "released": 1,
+      "max_hp": 240,
+      "acc": 80,
+      "avoid": 10,
+      "level": 15,
+      "exp": 26,
+      "phys_def": 40,
+      "mag_def": 50,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": 0,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 30
+    },
+    "description": " Lv. :  15\\nForm : Spirit\\n\\nPart of the Slime family of monsters, the Bubbling lives in dark, underground regions. Is normally much faster than the regular Slime and has a much higher Avoidability which makes it a much more difficult target to hunt for beginners.",
+    "expBar": {
+      "minExpHpRatio": 6,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 9.23076923076923
+    },
+    "chineseMobName": "藍水靈"
+  },
+  {
+    "mob": {
+      "mob_id": "1210111",
+      "mob_name": "Alpha Ribbon Pig",
+      "released": 1,
+      "max_hp": 350,
+      "acc": 55,
+      "avoid": 8,
+      "level": 20,
+      "exp": 32,
+      "phys_def": 20,
+      "mag_def": 20,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "sprite_override": {
+        "id": "1210111",
+        "url": "https://maplestory.io/api/GMS/240/mob/1210111/render/stand",
+        "override_id": null
+      },
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 7,
+      "maxExpHpRatio": 16,
+      "mobExpHpRatio": 10.9375
+    },
+    "chineseMobName": "奇怪的豬"
+  },
+  {
+    "mob": {
+      "mob_id": "2002011",
+      "mob_name": null,
+      "released": null,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": null,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "天空城箱"
+  },
+  {
+    "mob": {
+      "mob_id": "2110200",
+      "mob_name": "Horny Mushroom",
+      "released": 1,
+      "max_hp": 300,
+      "acc": 55,
+      "avoid": 7,
+      "level": 22,
+      "exp": 35,
+      "phys_def": 30,
+      "mag_def": 0,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  22\\nForm : Plant\\n\\nA mushroom monster with a bunch of horns on its head. These mushrooms are most often spotted in dark areas such as underground dungeons or in tree dungeons. When the Green Mushroom doesn't get enough sunlight, it apparently loses its poison and starts to grow horns on its head. Remember though, that this doesn't mean that the Horny Mushrooms are without any poison. They can be just as poisonous so don't ever try to eat them! ",
+    "expBar": {
+      "minExpHpRatio": 7,
+      "maxExpHpRatio": 16,
+      "mobExpHpRatio": 8.571428571428571
+    },
+    "chineseMobName": "刺菇菇"
+  },
+  {
+    "mob": {
+      "mob_id": "2130100",
+      "mob_name": "Dark Axe Stump",
+      "released": 1,
+      "max_hp": 550,
+      "acc": 45,
+      "avoid": 7,
+      "level": 22,
+      "exp": 38,
+      "phys_def": 50,
+      "mag_def": 20,
+      "fire_weakness": 1,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  22\\nForm : Plant\\nSpecial Trait : Vulnerable to Fire Attribute Attacks.\\n\\nA monster with an incredible legend behind it. This Dark Axe Stump is apparently the deeply agitated form of the Axe Stump who'd had an unresolved past life as a tree stump with an axe left in it by some lumberjack. The Dark Axe Stump, just like all the other members of the Stump family of monsters, is extremely strong and is capable of extreme attacks, so all beginners should be very very careful.",
+    "expBar": {
+      "minExpHpRatio": 7,
+      "maxExpHpRatio": 16,
+      "mobExpHpRatio": 14.473684210526315
+    },
+    "chineseMobName": "黑斧木妖"
+  },
+  {
+    "mob": {
+      "mob_id": "2130103",
+      "mob_name": "Jr. Necki",
+      "released": 1,
+      "max_hp": 285,
+      "acc": 120,
+      "avoid": 25,
+      "level": 21,
+      "exp": 38,
+      "phys_def": 30,
+      "mag_def": 30,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": true,
+      "minimumPushDamage": 50
+    },
+    "description": " Lv. :  21\\nForm : Reptile\\nSpecial Trait : -50% Poison Attribute Damage.\\n\\nA small snake-like monster that is most often found in underground swamps that are damp and wet. Tends to move extremely fast and has a high level of Avoidability as well as Accuracy, which makes it a difficult target. If you're not confident about your Accuracy of attack, stay away from Jr. Necki. It's advised that you ignore Luke, the guard's request at the dungeon entrance until you've leveled-up high enough to handle this monster.   ",
+    "expBar": {
+      "minExpHpRatio": 7,
+      "maxExpHpRatio": 16,
+      "mobExpHpRatio": 7.5
+    },
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mob": {
+      "mob_id": "2220000",
+      "mob_name": "Mano",
+      "released": 1,
+      "max_hp": 2000,
+      "acc": 60,
+      "avoid": 8,
+      "level": 20,
+      "exp": 120,
+      "phys_def": 20,
+      "mag_def": 30,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  20\\nForm : Mammal\\n\\nThe oldest snail in Maple World. It has a huge body that has developed over the years and white mustache that suits his old age. He enjoys the morning dew, so one may frequently spot him wandering around to consume the dew on green leaves every morning. If fortunate enough, one can acquire a Rainbow-colored Snail Shell which is said to grant its owner a wish.",
+    "expBar": {
+      "minExpHpRatio": 7,
+      "maxExpHpRatio": 16,
+      "mobExpHpRatio": 16.666666666666668
+    },
+    "chineseMobName": "紅寶王"
+  },
+  {
+    "mob": {
+      "mob_id": "2220100",
+      "mob_name": "BlueMushroom",
+      "released": 1,
+      "max_hp": 350,
+      "acc": 55,
+      "avoid": 7,
+      "level": 20,
+      "exp": 32,
+      "phys_def": 10,
+      "mag_def": 60,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  20\\nForm : Plant\\n\\nA mushroom monster with a blue cap. Is the fattest looking mushroom of all the mushrooms in that family of monsters. For a mushroom, which are just about everywhere throughout Maple World, it is one of the rarer breeds. But go nearby Henesys and you'll find yourself entering into the Blue Mushroom Forest! These mushrooms will give up some gold at times, enriching the lives of many happy adventurers. ",
+    "expBar": {
+      "minExpHpRatio": 7,
+      "maxExpHpRatio": 16,
+      "mobExpHpRatio": 10.9375
+    },
+    "chineseMobName": "藍菇菇"
+  },
+  {
+    "mob": {
+      "mob_id": "2230100",
+      "mob_name": "Evil Eye",
+      "released": 1,
+      "max_hp": 720,
+      "acc": 60,
+      "avoid": 10,
+      "level": 27,
+      "exp": 50,
+      "phys_def": 35,
+      "mag_def": 70,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  27\\nForm : Reptile\\n\\nA lizard monster that is spotted around the depths of dungeons in large herds. Is as evil and ill-tempered as it looks, directing all sorts of aggression toward adventurers. Go into Sleepywood and you'll see the area that's been dominated by Evil Eyes. If you find yourself accidentally fallen in the Cave of Evil Eye, just stay calm and slowly extricate yourself from the situation! ",
+    "expBar": {
+      "minExpHpRatio": 6,
+      "maxExpHpRatio": 20,
+      "mobExpHpRatio": 14.4
+    },
+    "chineseMobName": "火獨眼獸"
+  },
+  {
+    "mob": {
+      "mob_id": "2230101",
+      "mob_name": "Zombie Mushroom",
+      "released": 1,
+      "max_hp": 500,
+      "acc": 50,
+      "avoid": 7,
+      "level": 24,
+      "exp": 42,
+      "phys_def": 20,
+      "mag_def": 30,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  24\\nForm : Immortal\\nSpecial Trait : Vulnerable to Sanctity Attribute Attack.\\n\\nA mushroom monster that was reincarnated from previously dead mushrooms that were destroyed by adventurers by attaching a charmed amulet on its head. Who knows why anyone would do such a thing? In any case, these mushrooms have strong attacks, defenses as well as speed, but are extremely vulnerable to light. ",
+    "expBar": {
+      "minExpHpRatio": 7,
+      "maxExpHpRatio": 16,
+      "mobExpHpRatio": 11.904761904761905
+    },
+    "chineseMobName": "殭屍菇菇"
+  },
+  {
+    "mob": {
+      "mob_id": "2230102",
+      "mob_name": "Wild Boar",
+      "released": 1,
+      "max_hp": 550,
+      "acc": 50,
+      "avoid": 8,
+      "level": 25,
+      "exp": 42,
+      "phys_def": 20,
+      "mag_def": 30,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  25\\nForm : Mammal\\n\\nPig monsters who'd started to question the class distinctions between regular Pigs and the Ribbon Pigs and decided to retreat into the highlands. These Pigs had to train themselves to adapt to the rough terrains of the highlands and have as a result turned into crazy powerful Wild Boars with incredible body strength and enormously scary teeth. ",
+    "expBar": {
+      "minExpHpRatio": 6,
+      "maxExpHpRatio": 16,
+      "mobExpHpRatio": 13.095238095238095
+    },
+    "chineseMobName": "黑肥肥"
+  },
+  {
+    "mob": {
+      "mob_id": "2230110",
+      "mob_name": "Wooden Mask",
+      "released": 1,
+      "max_hp": 500,
+      "acc": 55,
+      "avoid": 10,
+      "level": 23,
+      "exp": 42,
+      "phys_def": 30,
+      "mag_def": 40,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  23\\nForm : Devil\\n\\nA mysterious creature that wears a wooden mask over its head and plays pranks. Often spotted around Perion's Excavation Site. There is apparently a rumor that claims that the Wooden Mask is a monster that formed out of the Excavation Site and another rumor that says that it was a tree that was transformed into a monster as a result of the power emanating from the site. However, at this point, no one knows its origins for sure. Some scholars say that the Wooden Mask is a fairy that only lives in the highlands but not many are in support of that theory, especially considering how ugly this monster looks on the outside.  ",
+    "expBar": {
+      "minExpHpRatio": 7,
+      "maxExpHpRatio": 16,
+      "mobExpHpRatio": 11.904761904761905
+    },
+    "chineseMobName": "木面怪人"
+  },
+  {
+    "mob": {
+      "mob_id": "2230111",
+      "mob_name": "Rocky Mask",
+      "released": 1,
+      "max_hp": 600,
+      "acc": 55,
+      "avoid": 10,
+      "level": 24,
+      "exp": 45,
+      "phys_def": 35,
+      "mag_def": 40,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  24\\nForm : Devil\\n\\nA mysterious creature that wears a heavy stone mask over its head and plays pranks. Has a number of surrounding theories about its origins, just like the Wooden Mask, but no one knows anything about these creatures for sure. The Rocky Mask is very curious about many things and therefore tends to grab anything that it deems interesting, which means it steals peoples' belongings pretty frequently.",
+    "expBar": {
+      "minExpHpRatio": 7,
+      "maxExpHpRatio": 16,
+      "mobExpHpRatio": 13.333333333333334
+    },
+    "chineseMobName": "石面怪人"
+  },
+  {
+    "mob": {
+      "mob_id": "2230113",
+      "mob_name": "Dark Eye",
+      "released": 1,
+      "max_hp": 3000,
+      "acc": 150,
+      "avoid": 20,
+      "level": 48,
+      "exp": 160,
+      "phys_def": 120,
+      "mag_def": 150,
+      "fire_weakness": 0,
+      "ice_weakness": 0,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "sprite_override": {
+        "id": "2230113",
+        "url": "https://maplestory.io/api/GMS/240/mob/2230113/render/stand",
+        "override_id": null
+      },
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 18,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 18.75
+    },
+    "chineseMobName": "黑獨眼獸"
+  },
+  {
+    "mob": {
+      "mob_id": "2300100",
+      "mob_name": "Stirge",
+      "released": 1,
+      "max_hp": 300,
+      "acc": 80,
+      "avoid": 10,
+      "level": 20,
+      "exp": 33,
+      "phys_def": 20,
+      "mag_def": 20,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "sprite_override": {
+        "id": "2300100",
+        "url": "https://maplestory.io/api/gms/83/mob/2300100/render/fly",
+        "override_id": null
+      },
+      "minimumPushDamage": 30
+    },
+    "description": " Lv. :  20\\nForm : Mammal\\n\\nA monster that resembles a small bat. Doesn't like being exposed to light and is therefore usually spotted in dark and damp areas such as in underground subway tracks or in dungeons. Tends to fly at a high speed which makes it hard to attack from close by. It also has a high level of Avoidability, so it requires a certain amount of agility in order to bring it down.  ",
+    "expBar": {
+      "minExpHpRatio": 7,
+      "maxExpHpRatio": 16,
+      "mobExpHpRatio": 9.090909090909092
+    },
+    "chineseMobName": "蝙蝠"
+  },
+  {
+    "mob": {
+      "mob_id": "3000000",
+      "mob_name": "Sentinel",
+      "released": null,
+      "max_hp": 900,
+      "acc": 75,
+      "avoid": 12,
+      "level": 30,
+      "exp": 55,
+      "phys_def": 275,
+      "mag_def": 85,
+      "fire_weakness": null,
+      "ice_weakness": 1,
+      "lightning_weakness": -1,
+      "holy_weakness": -1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 10
+    },
+    "description": " Lv. :  30\\nForm : Enchanted\\nSpecial Trait : -50% Sanctity Attribute Damage. -50% Electricity Attribute Damage. Vulnerable to Ice Attribute Attacks.\\n\\nA round monster that can be frequently seen in the old tower near Orbis. It was created for the purpose of guarding the tower. Its body is covered in a firm layer comprised of stone, and its ability to quickly separate its body to use a hidden apparatus to shoot laser render it a challenging monster to defeat. It is resistant to attacks of sanctity and electricity attribute but vulnerable to attacks of ice attribute, so attack this monster using magic of ice attribute.",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 20,
+      "mobExpHpRatio": 16.363636363636363
+    },
+    "chineseMobName": "石球"
+  },
+  {
+    "mob": {
+      "mob_id": "3110100",
+      "mob_name": "Ligator",
+      "released": 1,
+      "max_hp": 1200,
+      "acc": 70,
+      "avoid": 12,
+      "level": 32,
+      "exp": 60,
+      "phys_def": 45,
+      "mag_def": 40,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  32\\nForm : Reptile\\nSpecial Trait : -50% Ice Attribute Damage. Vulnerable to Fire Attribute Attacks.\\n\\nA swamp monster in the form of an alligator. Ligator is found slowly crawling around the marshes with sleepy eyes. It may be able to cast some powerful attacks but it is extremely slow, on the other hand, as well as vulnerable to Fire Attribute Attacks. ",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 24,
+      "mobExpHpRatio": 20
+    },
+    "chineseMobName": "鱷魚"
+  },
+  {
+    "mob": {
+      "mob_id": "3210100",
+      "mob_name": "Fire Boar",
+      "released": 1,
+      "max_hp": 1000,
+      "acc": 60,
+      "avoid": 10,
+      "level": 32,
+      "exp": 60,
+      "phys_def": 40,
+      "mag_def": 40,
+      "fire_weakness": -1,
+      "ice_weakness": 1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  32\\nForm : Mammal\\nSpecial Trait : -50% Fire Attribute Damage. Vulnerable to Ice Attribute Attacks.\\n\\nThe Wild Boar was training hard in the mountain plateaus when it was inspired by the heated sunlight which caused a big spark on its back. The Boars' such a fighting spirit has become a great example for all the fighters of Perion. Once in a while, though, the overly zealous Wild Boar would spark too big of a fire on its back and turn itself into a piece of roasted barbecue, offering themselves as great meals for the fighters of Perion. ",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 24,
+      "mobExpHpRatio": 16.666666666666668
+    },
+    "chineseMobName": "火肥肥"
+  },
+  {
+    "mob": {
+      "mob_id": "3210200",
+      "mob_name": "Jr. Cellion",
+      "released": null,
+      "max_hp": 1100,
+      "acc": 95,
+      "avoid": 15,
+      "level": 33,
+      "exp": 65,
+      "phys_def": 60,
+      "mag_def": 80,
+      "fire_weakness": -1,
+      "ice_weakness": 1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  33\\nForm : Mammal\\nSpecial Trait : -50% Fire Attribute Damage. Vulnerable to Ice Attribute Attacks.\\n\\nA monster that lives in the Garden of Red in Orbis. Stay away from its inviting coat of soft white fur that is red at the tips, as it is deceivingly hot! It is still young to know how to attack with its small horn, but it has the attribute of fire which can be dangerous in the future.",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 24,
+      "mobExpHpRatio": 16.923076923076923
+    },
+    "chineseMobName": "幼紅獨角獅"
+  },
+  {
+    "mob": {
+      "mob_id": "3210201",
+      "mob_name": "Jr. Lioner",
+      "released": null,
+      "max_hp": 1100,
+      "acc": 95,
+      "avoid": 15,
+      "level": 33,
+      "exp": 65,
+      "phys_def": 60,
+      "mag_def": 80,
+      "fire_weakness": null,
+      "ice_weakness": 1,
+      "lightning_weakness": -1,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  33\\nForm : Mammal\\nSpecial Trait : -50% Electricity Attribute Damage. Vulnerable to Ice Attribute Attacks.\\n\\nA monster that lives in the Garden of Yellow in Orbis. Stay away from its inviting coat of soft white fur that is gold at the tips, as it is saturated with the attribute of electricity! It is still young to know how to attack with its small horn, but it has the attribute of lightning and is resistant to attacks of electricity attribute, so use attacks of ice attribute. ",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 24,
+      "mobExpHpRatio": 16.923076923076923
+    },
+    "chineseMobName": "幼黃獨角獅"
+  },
+  {
+    "mob": {
+      "mob_id": "3210202",
+      "mob_name": "Jr. Grupin",
+      "released": null,
+      "max_hp": 1100,
+      "acc": 95,
+      "avoid": 15,
+      "level": 33,
+      "exp": 65,
+      "phys_def": 60,
+      "mag_def": 80,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  33\\nForm : Mammal\\nSpecial Trait : -50% Ice Attribute Damage. Vulnerable to Fire Attribute Attacks.\\n\\nA monster that lives in the Garden of Green in Orbis. Stay away from its inviting coat of soft white fur that is green at the tips, as it is deceivingly cold! It is still young to know how to attack with its small horn, but it has the attribute of ice, hence resistant to attacks of said nature. ",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 24,
+      "mobExpHpRatio": 16.923076923076923
+    },
+    "chineseMobName": "幼藍獨角獅"
+  },
+  {
+    "mob": {
+      "mob_id": "3210800",
+      "mob_name": "Lupin",
+      "released": 1,
+      "max_hp": 1500,
+      "acc": 100,
+      "avoid": 20,
+      "level": 37,
+      "exp": 77,
+      "phys_def": 35,
+      "mag_def": 40,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  37\\nForm : Mammal\\n\\nA cute monkey monster that loves banana and toys. It apparently was influenced by the magic powers of Ellinia which would cause Lupin to inadvertently cast magic attacks once in a while. It's apparently an extremely stubborn monster that will, once agitated, throw its banana and go after an adventurer to the very end. If you have high magic defenses, then you'll be able to protect yourself from the banana that Lupin may throw at you. ",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 24,
+      "mobExpHpRatio": 19.48051948051948
+    },
+    "chineseMobName": "猴子"
+  },
+  {
+    "mob": {
+      "mob_id": "3220000",
+      "mob_name": "Stumpy",
+      "released": 1,
+      "max_hp": 3500,
+      "acc": 80,
+      "avoid": 12,
+      "level": 35,
+      "exp": 205,
+      "phys_def": 50,
+      "mag_def": 70,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  35\\nForm : Plant\\n\\nAccording to Winston, who has devoted a good chunk of his life to studying the plateaus of Perion, Perion in ancient times was not a dry and barren land. Rather, he suggests that it was a place of which bountiful forests rivaled those of current Ellinia. The soil in Perion had been saturated with moisture and nutrients in the past, supporting the necessary conditions for huge plants like Stumpy to grow. However, it has turned into a dry land, and Stumpy, which can be considered a legacy of ancient Perion, now survives on what, little, is left of the barren land.    ",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 24,
+      "mobExpHpRatio": 17.073170731707318
+    },
+    "chineseMobName": "樹妖王"
+  },
+  {
+    "mob": {
+      "mob_id": "3230100",
+      "mob_name": "Curse Eye",
+      "released": 1,
+      "max_hp": 1250,
+      "acc": 60,
+      "avoid": 10,
+      "level": 35,
+      "exp": 70,
+      "phys_def": 45,
+      "mag_def": 70,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": -1,
+      "immune_to_poison_status": true,
+      "minimumPushDamage": 1
+    },
+    "description": "Lv. :  35\\nForm : Reptile\\nSpecial Trait : -50% Poison Attribute Damage.\\n\\nThe Evil Eye monster that lives out on land. Once in open land, unlike the dark and damp areas of the marshes and underground regions where one Evil Eye can't be separated from another, the Evil Eyes had to find a way to camouflage themselves. The Curse Eye is the camouflaged version of the Evil Eye on land. ",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 24,
+      "mobExpHpRatio": 17.857142857142858
+    },
+    "chineseMobName": "風獨眼獸"
+  },
+  {
+    "mob": {
+      "mob_id": "3230101",
+      "mob_name": "Jr. Wraith",
+      "released": 1,
+      "max_hp": 1200,
+      "acc": 100,
+      "avoid": 17,
+      "level": 35,
+      "exp": 70,
+      "phys_def": 90,
+      "mag_def": 90,
+      "fire_weakness": 1,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 50
+    },
+    "description": " Lv. :  35\\nForm : Immortal\\nSpecial Trait : Vulnerable to Sanctity Attribute Attack. Vulnerable to Fire Attribute Attacks.\\n\\nA ghost monster that was formed from the dark shadows of the subways. It is a dead yet undead creature that wears a white cloth over its body while floating around the world. It is an Undead which makes it vulnerable to Sanctity Attribute Attacks and strong against Physical Attacks.",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 24,
+      "mobExpHpRatio": 17.142857142857142
+    },
+    "chineseMobName": "小幽靈"
+  },
+  {
+    "mob": {
+      "mob_id": "3230102",
+      "mob_name": "Lorang",
+      "released": 1,
+      "max_hp": 1950,
+      "acc": 85,
+      "avoid": 18,
+      "level": 37,
+      "exp": 80,
+      "phys_def": 100,
+      "mag_def": 200,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": 1,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  37\\nForm : Fish\\nSpecial Trait : Vulnerable to Electricity Attribute Attacks.\\n\\nA monster that appears in the sand near the sea. Its speed and high defense rate render this monster difficult to hunt, but since it lives by the water, use magic of lightning attribute to attack its vulnerability.",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 24,
+      "mobExpHpRatio": 24.375
+    },
+    "chineseMobName": "紅螃蟹"
+  },
+  {
+    "mob": {
+      "mob_id": "3230200",
+      "mob_name": "Star Pixie",
+      "released": null,
+      "max_hp": 1300,
+      "acc": 145,
+      "avoid": 21,
+      "level": 35,
+      "exp": 72,
+      "phys_def": 100,
+      "mag_def": 100,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": -1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 100
+    },
+    "description": " Lv. :  35\\nForm : Spirit\\nSpecial Trait : -50% Sanctity Attribute Damage.\\n\\nA cute little pixie that floats around wearing a red hat. When attacked, this monster uses its magic wand to summon small stars. Don't let this adorable pixie fool you, as it is not shy about boasting its strong resistance to attacks with sanctity attribute and high defense rate against magic. ",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 24,
+      "mobExpHpRatio": 18.055555555555557
+    },
+    "chineseMobName": "星光精靈"
+  },
+  {
+    "mob": {
+      "mob_id": "3230300",
+      "mob_name": "Jr. Boogie",
+      "released": 1,
+      "max_hp": 1700,
+      "acc": 150,
+      "avoid": 27,
+      "level": 35,
+      "exp": 150,
+      "phys_def": 120,
+      "mag_def": 155,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 500
+    },
+    "description": " Lv. :  35\\nForm : Spirit\\nSpecial Trait : -50% Sanctity Attribute Damage.\\n\\nA monster that has a unique appearance which resembles a round ball. It can cast deadly magic that weakens or temporarily disables its opponent's skills. A number of adventures have claimed that they were attacked by this monster while hunting Wild Bores, so keep that in mind and always remain alert if you're a Wild Bore hunter. Fortunately, this monster travels alone, so if you're of a certain level, you should be able to easily defeat this monster. ",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 24,
+      "mobExpHpRatio": 11.333333333333334
+    },
+    "chineseMobName": "幼魔精靈"
+  },
+  {
+    "mob": {
+      "mob_id": "4130100",
+      "mob_name": "Copper Drake",
+      "released": 1,
+      "max_hp": 2700,
+      "acc": 70,
+      "avoid": 18,
+      "level": 45,
+      "exp": 105,
+      "phys_def": 100,
+      "mag_def": 100,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 200
+    },
+    "description": " Lv. :  45\\nForm : Reptile\\n\\nA dragon monster that was banished from the dungeons. It is one of the weakest and the least intelligent of all dragons, making it closer to a monster than a dragon. But even then, it is a pretty powerful monster, no matter how weak of a dragon it may be. Is most often spotted around the mountainous highlands.",
+    "expBar": {
+      "minExpHpRatio": 10,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 25.714285714285715
+    },
+    "chineseMobName": "土龍"
+  },
+  {
+    "mob": {
+      "mob_id": "4130102",
+      "mob_name": "Dark Nependeath",
+      "released": null,
+      "max_hp": 2700,
+      "acc": 165,
+      "avoid": 15,
+      "level": 47,
+      "exp": 115,
+      "phys_def": 170,
+      "mag_def": 220,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 300
+    },
+    "description": " Lv. :  47\\nForm : Plant\\nSpecial Trait : Vulnerable to Sanctity Attribute Attacks.\\n\\nA carnivorous plant which evolved from Nependeath. It remains in one place, so travelers who can use long-distance attacks should capitalize on its stationary state. However, note that it will attack anyone within its attack range without exception. Although a plant, it is not vulnerable to attacks of fire attribute but surprisingly to attacks of sanctity attribute. ",
+    "expBar": {
+      "minExpHpRatio": 18,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 23.47826086956522
+    },
+    "chineseMobName": "黑食人花"
+  },
+  {
+    "mob": {
+      "mob_id": "4230100",
+      "mob_name": "Cold Eye",
+      "released": 1,
+      "max_hp": 2000,
+      "acc": 70,
+      "avoid": 15,
+      "level": 40,
+      "exp": 85,
+      "phys_def": 80,
+      "mag_def": 80,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": "Lv. :  40\\nForm : Reptile\\nSpecial Trait : -50% Ice Attribute Damage. Vulnerable to Fire Attribute Attack.\\n\\nThere are rumors about Evil Eyes that live in the depths of the dungeons of Sleepywood. In these dark marshes where not a single ray of sunlight is able to enter, Evil Eyes started losing their color turning more and more white over time. The magic aura emanating from the darkness of the abyss have also caused these Evil Eyes to transform into the more powerful Cold Eyes. Cold Eyes are spotted around with other monsters that are of the Boss Level. ",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 25,
+      "mobExpHpRatio": 23.529411764705884
+    },
+    "chineseMobName": "冰獨眼獸"
+  },
+  {
+    "mob": {
+      "mob_id": "4230101",
+      "mob_name": "Zombie Lupin",
+      "released": 1,
+      "max_hp": 1800,
+      "acc": 110,
+      "avoid": 25,
+      "level": 40,
+      "exp": 90,
+      "phys_def": 70,
+      "mag_def": 70,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 100
+    },
+    "description": " Lv. :  40\\nForm : Immortal\\nSpecial Trait : Vulnerable to Sanctity Attribute Attacks.\\n\\nThere was apparently a time when the Grand Magician Grendel had fallen down the wrong path. What could be worse than a great Magician falling for dark magic? A toy that was once cursed and got into Lupin's hands and was reincarnated as the Zombie Lupin. Grendel and the fairies of Ellinia tried everything in their power to rid Ellinia of this monster but the one mistake that was made a long time ago continues to have its effects on Ellinia. Zombie Lupin, an Undead monster that is being controlled by the cursed toy, is vulnerable to sanctity attribute. ",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 25,
+      "mobExpHpRatio": 20
+    },
+    "chineseMobName": "天使猴"
+  },
+  {
+    "mob": {
+      "mob_id": "4230102",
+      "mob_name": "Wraith",
+      "released": 1,
+      "max_hp": 2800,
+      "acc": 130,
+      "avoid": 20,
+      "level": 48,
+      "exp": 120,
+      "phys_def": 182,
+      "mag_def": 180,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 300
+    },
+    "description": " Lv. :  48\\nForm : Immortal\\nSpecial Trait : Vulnerable to Sanctity Attribute Attack.\\n\\nA ghost monster that was formed from the trenches of the dark shadows of the subways. The most advanced version of the Jr. Wraith that is dead yet undead. It wears a white cloth over its body while floating all around the world. It is an Undead which makes it vulnerable to Sanctity Attribute Attacks and strong against Physical Attacks. Unlike the Jr. Wraith, Wraith has the ability to self-recover.",
+    "expBar": {
+      "minExpHpRatio": 18,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 23.333333333333332
+    },
+    "chineseMobName": "大幽靈"
+  },
+  {
+    "mob": {
+      "mob_id": "4230103",
+      "mob_name": "Iron Hog",
+      "released": 1,
+      "max_hp": 2200,
+      "acc": 100,
+      "avoid": 18,
+      "level": 42,
+      "exp": 99,
+      "phys_def": 400,
+      "mag_def": 400,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 100
+    },
+    "description": " Lv. :  42\\nForm : Mammal\\n\\nThere are heroes even in the world of Pigs. Despite all the attacks being made on Pigs by humans and other animal opponents, some Pigs, such as these Iron Hogs, have survived, proving their heroic status. Its shiny iron armor symbolize the Iron Hog's undisputed heroic power. It actually doesn't have such high powered attacks, but has boss-level Physical Defenses and Magic Defenses, thanks to the iron-clad armor. ",
+    "expBar": {
+      "minExpHpRatio": 10,
+      "maxExpHpRatio": 25,
+      "mobExpHpRatio": 22.22222222222222
+    },
+    "chineseMobName": "鋼之肥肥"
+  },
+  {
+    "mob": {
+      "mob_id": "4230104",
+      "mob_name": "Clang",
+      "released": 1,
+      "max_hp": 3000,
+      "acc": 150,
+      "avoid": 20,
+      "level": 48,
+      "exp": 128,
+      "phys_def": 120,
+      "mag_def": 150,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": 1,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 400
+    },
+    "description": " Lv. :  48\\nForm : Fish\\nSpecial Trait : Vulnerable to Electricity Attribute Attacks.\\n\\nA crab monster that mainly lives near the sand by the sea. It is superior to Lorang in every aspect including speed and defense rate. It is encouraged that you don't attack this monster hastily, as it dashes through the seashore at the speed which rivals that of Lupin. But since it it lives near water like Lorang and is very vulnerable to lightning as a result, try attacking this monster using magic of electricity attribute.",
+    "expBar": {
+      "minExpHpRatio": 18,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 23.4375
+    },
+    "chineseMobName": "青螃蟹"
+  },
+  {
+    "mob": {
+      "mob_id": "4230105",
+      "mob_name": "Nependeath",
+      "released": null,
+      "max_hp": 2100,
+      "acc": 150,
+      "avoid": 10,
+      "level": 42,
+      "exp": 99,
+      "phys_def": 120,
+      "mag_def": 120,
+      "fire_weakness": 1,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 100
+    },
+    "description": " Lv. :  42\\nForm : Plant\\nSpecial Trait : Vulnerable to Fire Attribute Attacks.\\nA carnivorous plant known to feed on animals and insects. It remains in one place, so travelers who can use long-distance attacks should capitalize on its stationary state. However, note that it will attack anyone within its attack range without exception. This plant monster is vulnerable to attacks of fire attribute. ",
+    "expBar": {
+      "minExpHpRatio": 10,
+      "maxExpHpRatio": 25,
+      "mobExpHpRatio": 21.21212121212121
+    },
+    "chineseMobName": "食人花"
+  },
+  {
+    "mob": {
+      "mob_id": "4230106",
+      "mob_name": "Lunar Pixie",
+      "released": null,
+      "max_hp": 2500,
+      "acc": 165,
+      "avoid": 24,
+      "level": 45,
+      "exp": 105,
+      "phys_def": 145,
+      "mag_def": 160,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 200
+    },
+    "description": " Lv. :  45\\nForm : Spirit\\n\\nA cute little pixie that floats around wearing a purple hat. When attacked, this monster uses its magic wand to summon a blue moon. Unlike Star Pixie, it does not have any attributes, although it has high defense rate against magic. ",
+    "expBar": {
+      "minExpHpRatio": 10,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 23.80952380952381
+    },
+    "chineseMobName": "月光精靈"
+  },
+  {
+    "mob": {
+      "mob_id": "4230107",
+      "mob_name": "Flyeye",
+      "released": null,
+      "max_hp": 1600,
+      "acc": 160,
+      "avoid": 28,
+      "level": 41,
+      "exp": 95,
+      "phys_def": 90,
+      "mag_def": 110,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "sprite_override": {
+        "id": "4230107",
+        "url": "https://maplestory.io/api/gms/83/mob/4230107/render/fly",
+        "override_id": null
+      },
+      "minimumPushDamage": 500
+    },
+    "description": " Lv. :  41\\nForm : Mammal\\n\\nA monster that appears in the form of a bat which lives in the abandoned mine in El Nath. It degenerated into a one-eyed monster with huge wings due to its life in the darkness, completely devoid of light. It flies around the abandoned mine, prepared to attack the adventurers at all times.",
+    "expBar": {
+      "minExpHpRatio": 10,
+      "maxExpHpRatio": 25,
+      "mobExpHpRatio": 16.842105263157894
+    },
+    "chineseMobName": "獨眼蝙蝠"
+  },
+  {
+    "mob": {
+      "mob_id": "4230108",
+      "mob_name": "Jr. Cerebes",
+      "released": null,
+      "max_hp": 2300,
+      "acc": 155,
+      "avoid": 25,
+      "level": 43,
+      "exp": 102,
+      "phys_def": 290,
+      "mag_def": 150,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 300
+    },
+    "description": " Lv. :  43\\nForm : Mammal\\nSpecial Trait :Vulnerable to Poison Attribute Attacks.\\n\\nIt is neither a mammal nor a plant. This strange form of life that was created inside a beaker is muggy gray, perhaps because it was created by a mixture of chemicals. It likes to roam around with a beaker over its head.",
+    "expBar": {
+      "minExpHpRatio": 10,
+      "maxExpHpRatio": 25,
+      "mobExpHpRatio": 22.54901960784314
+    },
+    "chineseMobName": "小獵犬"
+  },
+  {
+    "mob": {
+      "mob_id": "4230125",
+      "mob_name": "Skeledog",
+      "released": 1,
+      "max_hp": 2450,
+      "acc": 120,
+      "avoid": 18,
+      "level": 44,
+      "exp": 107,
+      "phys_def": 170,
+      "mag_def": 190,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 100
+    },
+    "description": " Lv. :  44\\nForm : Immortal\\nSpecial Trait : Vulnerable to Sanctity Attribute Attacks.\\n\\nThe skeleton of a dog that has been brought to life by Ergoth's force of darkness. Some have claimed that it was owned by the Sharenian army. It is the first Undead monster you will encounter in the grave site. ",
+    "expBar": {
+      "minExpHpRatio": 10,
+      "maxExpHpRatio": 25,
+      "mobExpHpRatio": 22.897196261682243
+    },
+    "chineseMobName": "骷髏犬"
+  },
+  {
+    "mob": {
+      "mob_id": "4230126",
+      "mob_name": "Mummydog",
+      "released": 1,
+      "max_hp": 2750,
+      "acc": 130,
+      "avoid": 18,
+      "level": 47,
+      "exp": 117,
+      "phys_def": 175,
+      "mag_def": 195,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 100
+    },
+    "description": " Lv. :  47\\nForm : Immortal\\nSpecial Trait : Vulnerable to Sanctity Attribute Attacks.\\n\\nThe mummified skeleton of a dog that has been brought to life by Ergoth's force of darkness. Some have claimed that it was owned by the Sharenian army. The embalmment of the Mummydog has become dirty over time. ",
+    "expBar": {
+      "minExpHpRatio": 18,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 23.504273504273506
+    },
+    "chineseMobName": "木乃伊犬"
+  },
+  {
+    "mob": {
+      "mob_id": "4230400",
+      "mob_name": "Iron Boar",
+      "released": 1,
+      "max_hp": 2650,
+      "acc": 195,
+      "avoid": 20,
+      "level": 45,
+      "exp": 115,
+      "phys_def": 350,
+      "mag_def": 350,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1700
+    },
+    "description": " Lv. :  45\\nForm : Mammal\\n\\nA warrior boar in the highlands. The Iron Boars wear sturdy steel armor that is worn only by the chief even amongst the Iron Hogs. They come at you at a high speed and have high defense rate due to the steel armor they wear, making this monster a challenge for the adventurers to hunt.",
+    "expBar": {
+      "minExpHpRatio": 10,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 23.043478260869566
+    },
+    "chineseMobName": "鋼之黑肥肥"
+  },
+  {
+    "mob": {
+      "mob_id": "5090000",
+      "mob_name": "Shade",
+      "released": 1,
+      "max_hp": 25000,
+      "acc": 130,
+      "avoid": 20,
+      "level": 56,
+      "exp": 1250,
+      "phys_def": 150,
+      "mag_def": 180,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 400
+    },
+    "description": " Lv. :  56\\nForm : Immortal\\n\\nAn odd monster which originated from the shadow of an unknown figure. It is a superior Undead to Wraith, and hence has superior powers. Although it despises humans, it remains in the subway underneath the towns where humans abound. Perhaps this monster is a part of someone's lost shadow. It can't stand light, which explains why it disappears as soon as a small street lamp is lit.",
+    "expBar": {
+      "minExpHpRatio": 16,
+      "maxExpHpRatio": 32,
+      "mobExpHpRatio": 20
+    },
+    "chineseMobName": "冥界幽靈"
+  },
+  {
+    "mob": {
+      "mob_id": "5100000",
+      "mob_name": "Jr. Yeti",
+      "released": null,
+      "max_hp": 3700,
+      "acc": 120,
+      "avoid": 25,
+      "level": 50,
+      "exp": 135,
+      "phys_def": 170,
+      "mag_def": 180,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": "Lv. :  50\\nForm : Mammal\\n\\nA small yeti often spotted in the snowfield of Ossyria near El Nath. Is made to live in cold climates and can therefore withstand strong Ice Attribute Attacks while being vulnerable to Fire Attribute Attacks. Its small frame and slow movement makes it an easy target, but beware, as many a travellers have been badly injured by this cute little creature. The Jr. Yeti is capable of transforming into a giant yeti as well so watch out!  ",
+    "expBar": {
+      "minExpHpRatio": 18,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 27.40740740740741
+    },
+    "chineseMobName": "小雪球"
+  },
+  {
+    "mob": {
+      "mob_id": "5100001",
+      "mob_name": "Transforming Jr. Yeti",
+      "released": null,
+      "max_hp": 3700,
+      "acc": 120,
+      "avoid": 25,
+      "level": 50,
+      "exp": 0,
+      "phys_def": 170,
+      "mag_def": 180,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 18,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "小雪球"
+  },
+  {
+    "mob": {
+      "mob_id": "5100002",
+      "mob_name": "Firebomb",
+      "released": null,
+      "max_hp": 3600,
+      "acc": 155,
+      "avoid": 28,
+      "level": 51,
+      "exp": 142,
+      "phys_def": 255,
+      "mag_def": 205,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 500
+    },
+    "description": " Lv. :  51\\nForm : Spirit\\nSpecial Trait : -50% Fire Attribute Damage. Vulnerable to Ice Attribute Attacks.\\n\\nA ball of fire that can be found in the Lava Dungeon in El Nath. No one knows for what purpose it was created, but it attacks by self-exploding when in danger. Some adventurers speculate that the Firebomb is the follower of Zakum. It is highly resistant to attacks of fire attribute but vulnerable to attacks of ice attribute.",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "火精靈"
+  },
+  {
+    "mob": {
+      "mob_id": "5120000",
+      "mob_name": "Luster Pixie",
+      "released": null,
+      "max_hp": 4000,
+      "acc": 130,
+      "avoid": 22,
+      "level": 52,
+      "exp": 155,
+      "phys_def": 125,
+      "mag_def": 265,
+      "fire_weakness": -1,
+      "ice_weakness": -1,
+      "lightning_weakness": -1,
+      "holy_weakness": -1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 500
+    },
+    "description": " Lv. :  52\\nForm : Spirit\\nSpecial Trait : -50% Damage of All Attributes.\\n\\nA cute little pixie that floats around wearing a black hat. When attacked, this monster, which evolved from Lunar Pixie, uses its magic wand to summon a blazing sun. Unlike the Star Pixie and the Lunar Pixie, the Luster Pixie has no weaknesses you can attack, and is highly resistant to attacks with fire, cold air, electricity, and sanctity attributes. It is, however, relatively vulnerable to physical attacks, so use powerful weapons to defeat this monster.",
+    "expBar": {
+      "minExpHpRatio": 18,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 25.806451612903224
+    },
+    "chineseMobName": "日光精靈"
+  },
+  {
+    "mob": {
+      "mob_id": "5120001",
+      "mob_name": "Cellion",
+      "released": null,
+      "max_hp": 4200,
+      "acc": 150,
+      "avoid": 25,
+      "level": 53,
+      "exp": 160,
+      "phys_def": 170,
+      "mag_def": 210,
+      "fire_weakness": -1,
+      "ice_weakness": 1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 500
+    },
+    "description": " Lv. :  53\\nForm : Mammal\\nSpecial Trait : -50% Fire Attribute Damage. Vulnerable to Ice Attribute Attacks.\\n\\nA form that a full grown Jr. Cellion takes. It can be found in the Garden of Red in Orbis, and this mature Cellion charges all of its fire attribute, using the horn on its head to attack. It has fire attribute that allows this monster to be highly resistant to attacks of fire attribute. Let's try defeating the Cellion using attacks of ice attribute. ",
+    "expBar": {
+      "minExpHpRatio": 18,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 26.25
+    },
+    "chineseMobName": "紅獨角獅"
+  },
+  {
+    "mob": {
+      "mob_id": "5120002",
+      "mob_name": "Lioner",
+      "released": null,
+      "max_hp": 4200,
+      "acc": 150,
+      "avoid": 25,
+      "level": 53,
+      "exp": 160,
+      "phys_def": 170,
+      "mag_def": 210,
+      "fire_weakness": null,
+      "ice_weakness": 1,
+      "lightning_weakness": -1,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 500
+    },
+    "description": " Lv. :  53\\nForm : Mammal\\nSpecial Trait : -50% Electricity Attribute Damage. Vulnerable to Ice Attribute Attacks.\\n\\nA form that a full grown Jr. Lioner takes. It can be found in the Garden of Yellow in Orbis, and this mature Lioner charges all of its lightning attribute, using the horn on its head to attack. This monster is highly resistant to attacks of lightning attribute. Let's try defeating the Lioner using attacks of ice attribute. ",
+    "expBar": {
+      "minExpHpRatio": 18,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 26.25
+    },
+    "chineseMobName": "黃獨角獅"
+  },
+  {
+    "mob": {
+      "mob_id": "5120003",
+      "mob_name": "Grupin",
+      "released": null,
+      "max_hp": 4200,
+      "acc": 150,
+      "avoid": 25,
+      "level": 53,
+      "exp": 160,
+      "phys_def": 170,
+      "mag_def": 210,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 500
+    },
+    "description": " Lv. :  53\\nForm : Mammal\\nSpecial Trait : -50% Ice Attribute Damage. Vulnerable to Fire Attribute Attacks.\\n\\nA form that a full grown Jr. Grupin takes. It can be found in the Garden of Green in Orbis, and this mature Grupin, which changes from purple to green, charges all of its cold air attribute, using its horn on its head to attack. This monster is highly resistant to attacks of cold air attribute. Let's try defeating the Grupin monster using attacks of fire attribute.",
+    "expBar": {
+      "minExpHpRatio": 18,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 26.25
+    },
+    "chineseMobName": "藍獨角獅"
+  },
+  {
+    "mob": {
+      "mob_id": "5130100",
+      "mob_name": "Drake",
+      "released": 1,
+      "max_hp": 3200,
+      "acc": 75,
+      "avoid": 18,
+      "level": 50,
+      "exp": 135,
+      "phys_def": 110,
+      "mag_def": 150,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 500
+    },
+    "description": " Lv. :  50\\nForm : Reptile\\n\\nAn extremely scary dragon that hunts down adventurers. One of its shortcomings, though, is its low-level IQ which makes it not quite worthy of being called a dragon per se. Despite its slightly thickheaded appearance, though, its cohorts tend to go around in herds which makes being surrounded by a group of them a highly risky situation. Your run-of-the-mill adventurer will find oneself putting up his or her own tombstone if not extremely careful!",
+    "expBar": {
+      "minExpHpRatio": 18,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 23.703703703703702
+    },
+    "chineseMobName": "青龍"
+  },
+  {
+    "mob": {
+      "mob_id": "5130101",
+      "mob_name": "Stone Golem",
+      "released": 1,
+      "max_hp": 4000,
+      "acc": 80,
+      "avoid": 15,
+      "level": 55,
+      "exp": 170,
+      "phys_def": 130,
+      "mag_def": 100,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1000
+    },
+    "description": " Lv. :  55\\nForm : Enchanted\\n\\nA stone monster that's been enchanted by a forest spirit. It is the protector of the forest from which it was born, and will never launch an attack at an adventurer without provocation. But if you've indiscriminately entered into the forest without permission, you may be at the mercy of the Stone Golem's punch so be careful. ",
+    "expBar": {
+      "minExpHpRatio": 16,
+      "maxExpHpRatio": 32,
+      "mobExpHpRatio": 23.529411764705884
+    },
+    "chineseMobName": "石巨人"
+  },
+  {
+    "mob": {
+      "mob_id": "5130102",
+      "mob_name": "Dark Stone Golem",
+      "released": 1,
+      "max_hp": 4800,
+      "acc": 70,
+      "avoid": 18,
+      "level": 58,
+      "exp": 200,
+      "phys_def": 150,
+      "mag_def": 200,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1500
+    },
+    "description": " Lv. :  58\\nForm : Enchanted\\nSpecial Trait : Vulnerable to Sanctity Attribute Attacks.\\n\\nA Stone Golem monster which had been infected with an evil aura that had permeated throughout the depths of the forest, leaving the forest in ruins and annihilating the Stone Golems that were guarding the Stone Golem's Temple. The Dark Stone Golems who had inadvertently caused a detrimental effect on the Temple decided to finish their duties by going into Sleepywood. But it is said that some Dark Stone Golems frequently appear in the Golems' Temple.",
+    "expBar": {
+      "minExpHpRatio": 16,
+      "maxExpHpRatio": 32,
+      "mobExpHpRatio": 24
+    },
+    "chineseMobName": "黑曜石巨人"
+  },
+  {
+    "mob": {
+      "mob_id": "5130103",
+      "mob_name": "Croco",
+      "released": 1,
+      "max_hp": 3800,
+      "acc": 80,
+      "avoid": 20,
+      "level": 52,
+      "exp": 170,
+      "phys_def": 120,
+      "mag_def": 80,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 500
+    },
+    "description": " Lv. :  52\\nForm : Reptile\\n\\nA crocodile monster that lives in swampy regions. Although it's smaller than the Ligator, the Croco has higher attack rate and speed. It is popular amongst the hunters who are after its sturdy and prized hide.",
+    "expBar": {
+      "minExpHpRatio": 18,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 22.352941176470587
+    },
+    "chineseMobName": "黑鱷魚"
+  },
+  {
+    "mob": {
+      "mob_id": "5130104",
+      "mob_name": "Hector",
+      "released": null,
+      "max_hp": 4600,
+      "acc": 100,
+      "avoid": 20,
+      "level": 55,
+      "exp": 170,
+      "phys_def": 120,
+      "mag_def": 120,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 800
+    },
+    "description": " Lv. :  55\\nForm : Mammal\\n\\nA monster that appears in the form of a wolf near El Nath. It is a popular target amongst the hunters who are after its thick coat, which facilitates the Hector's survival in the cold weather of El Nath. When attacked, Hectors attack using magic of multiplicity, so it is highly encouraged that you quickly step back when you find yourself in a dangerous encounter with this monster.",
+    "expBar": {
+      "minExpHpRatio": 16,
+      "maxExpHpRatio": 32,
+      "mobExpHpRatio": 27.058823529411764
+    },
+    "chineseMobName": "野狼"
+  },
+  {
+    "mob": {
+      "mob_id": "5130105",
+      "mob_name": "Dark Jr. Yeti",
+      "released": null,
+      "max_hp": 4400,
+      "acc": 130,
+      "avoid": 27,
+      "level": 56,
+      "exp": 180,
+      "phys_def": 180,
+      "mag_def": 190,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 500
+    },
+    "description": " Lv. :  56\\nForm : Mammal\\nSpecial Trait : Vulnerable to Sanctity Attribute Attacks.\\n\\nA yeti often spotted in the canyons far away from El Nath. They say that the Dark Jr. Yeti is the evil form of the good Jr. Yeti. It is much faster than the Jr. Yeti and is more advanced in terms of attack powers, defense strength, etc.. It is also made of completely different attributes which makes it particularly vulnerable to forces of Sanctity. ",
+    "expBar": {
+      "minExpHpRatio": 16,
+      "maxExpHpRatio": 32,
+      "mobExpHpRatio": 24.444444444444443
+    },
+    "chineseMobName": "黑色小雪球"
+  },
+  {
+    "mob": {
+      "mob_id": "5130106",
+      "mob_name": "Transforming Dark Jr. Yeti",
+      "released": null,
+      "max_hp": 4400,
+      "acc": 130,
+      "avoid": 27,
+      "level": 56,
+      "exp": 0,
+      "phys_def": 180,
+      "mag_def": 190,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 500
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 16,
+      "maxExpHpRatio": 32,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "黑色小雪球"
+  },
+  {
+    "mob": {
+      "mob_id": "5130107",
+      "mob_name": "Coolie Zombie",
+      "released": null,
+      "max_hp": 4500,
+      "acc": 135,
+      "avoid": 25,
+      "level": 57,
+      "exp": 190,
+      "phys_def": 165,
+      "mag_def": 180,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": -1,
+      "immune_to_poison_status": true,
+      "minimumPushDamage": 800
+    },
+    "description": " Lv. :  57\\nForm : Immortal\\nSpecial Trait : Resistant to Poison Attribute Attacks. Vulnerable to Sanctity Attribute Attacks.\\n\\nUndead monsters that can be found in the Forest of Dead Trees in El Nath. When Riche's tomb formed the Forest of Dead Trees, the trees in the forest bewitched lifeless beings, turning them into zombies. Because the Coolie Zombies became zombies to protect the forest against their will, they possess nothing but hostility and hatred towards humans. These monsters, who walk with a severe limp, are the followers of Riche and are extremely dangerous as they orally emit potent poison. ",
+    "expBar": {
+      "minExpHpRatio": 16,
+      "maxExpHpRatio": 32,
+      "mobExpHpRatio": 23.68421052631579
+    },
+    "chineseMobName": "殭屍"
+  },
+  {
+    "mob": {
+      "mob_id": "5130108",
+      "mob_name": "Miner Zombie",
+      "released": 1,
+      "max_hp": 4500,
+      "acc": 135,
+      "avoid": 25,
+      "level": 57,
+      "exp": 190,
+      "phys_def": 165,
+      "mag_def": 180,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": -1,
+      "immune_to_poison_status": true,
+      "minimumPushDamage": 600
+    },
+    "description": " Lv. :  57\\nForm : Immortal\\nSpecial Trait : Resistant to Poison Attribute Attacks. Vulnerable to Sanctity Attribute Attacks.\\n\\nUndead monsters that can be found in the Forest of Dead Trees in El Nath. When Riche's tomb formed the Forest of Dead Trees, the trees in the forest bewitched lifeless beings, turning them into zombies. Whether it was due to an accident in the mine or simply a mutation, but the Miner Zombies have a severe limp and a nearly blind eye on one side.",
+    "expBar": {
+      "minExpHpRatio": 16,
+      "maxExpHpRatio": 32,
+      "mobExpHpRatio": 23.68421052631579
+    },
+    "chineseMobName": "礦山殭屍"
+  },
+  {
+    "mob": {
+      "mob_id": "5140000",
+      "mob_name": "White Fang",
+      "released": null,
+      "max_hp": 5800,
+      "acc": 150,
+      "avoid": 25,
+      "level": 58,
+      "exp": 220,
+      "phys_def": 200,
+      "mag_def": 220,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1000
+    },
+    "description": " Lv. :  58\\nForm : Mammal\\nSpecial Trait : -50% Ice Attribute Damage. Vulnerable to Fire Attribute Attacks.\\n\\nA monster that appears in the form of a wolf near El Nath. It is a popular target amongst the hunters who are after its thick coat, which facilitates the White Fang's survival in the cold weather of El Nath. However, its white fur blends in with the surroundings, making this monster more difficult for the hunters to spot than a Hector, not to mention its high attack rate and resistance to attacks of ice attribute.",
+    "expBar": {
+      "minExpHpRatio": 16,
+      "maxExpHpRatio": 32,
+      "mobExpHpRatio": 26.363636363636363
+    },
+    "chineseMobName": "白狼"
+  },
+  {
+    "mob": {
+      "mob_id": "5150000",
+      "mob_name": "Mixed Golem",
+      "released": 1,
+      "max_hp": 6000,
+      "acc": 100,
+      "avoid": 20,
+      "level": 59,
+      "exp": 210,
+      "phys_def": 160,
+      "mag_def": 200,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1100
+    },
+    "description": " Lv. :  59\\nForm : Enchanted\\n\\nThe remaining fragments of Stone Golems and Dark Stone Golems have formed this mutation, which possesses the characteristics of both golems; hence, it has even higher attack rate than regular golems. It can be found in dungeons as well as the deserted Golem's Temple, guarding the temple even after its rebirth. ",
+    "expBar": {
+      "minExpHpRatio": 11,
+      "maxExpHpRatio": 32,
+      "mobExpHpRatio": 28.571428571428573
+    },
+    "chineseMobName": "混種石巨人"
+  },
+  {
+    "mob": {
+      "mob_id": "5150001",
+      "mob_name": "Skeleton Soldier",
+      "released": 1,
+      "max_hp": 4600,
+      "acc": 135,
+      "avoid": 25,
+      "level": 57,
+      "exp": 190,
+      "phys_def": 160,
+      "mag_def": 160,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 500
+    },
+    "description": " Lv. :  57\\nForm : Immortal\\nSpecial Trait : Vulnerable to Sanctity Attribute Attacks.\\n\\nThe skeleton of a soldier that was brought to life by Ergoth's force of darkness. It once was a Sharenian guard, but died during the fall of the Sharenian empire and was revived without a soul. ",
+    "expBar": {
+      "minExpHpRatio": 16,
+      "maxExpHpRatio": 32,
+      "mobExpHpRatio": 24.210526315789473
+    },
+    "chineseMobName": "骷髏士兵"
+  },
+  {
+    "mob": {
+      "mob_id": "5150002",
+      "mob_name": "Cold Mixed Golem",
+      "released": 1,
+      "max_hp": 13000,
+      "acc": 170,
+      "avoid": 27,
+      "level": 68,
+      "exp": 275,
+      "phys_def": 205,
+      "mag_def": 250,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "sprite_override": {
+        "id": "5150002",
+        "url": "https://maplestory.io/api/GMS/240/mob/2600212/render/stand",
+        "override_id": null
+      },
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 47.27272727272727
+    },
+    "chineseMobName": "冰之混種石巨人"
+  },
+  {
+    "mob": {
+      "mob_id": "5150003",
+      "mob_name": "Hot Mixed Golem",
+      "released": 1,
+      "max_hp": 13000,
+      "acc": 170,
+      "avoid": 27,
+      "level": 68,
+      "exp": 275,
+      "phys_def": 205,
+      "mag_def": 250,
+      "fire_weakness": -1,
+      "ice_weakness": 1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "sprite_override": {
+        "id": "5150003",
+        "url": "https://maplestory.io/api/GMS/240/mob/2600213/render/stand",
+        "override_id": null
+      },
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 47.27272727272727
+    },
+    "chineseMobName": "火之混種石巨人"
+  },
+  {
+    "mob": {
+      "mob_id": "5200000",
+      "mob_name": "Jr. Sentinel",
+      "released": null,
+      "max_hp": 600,
+      "acc": 5,
+      "avoid": 8,
+      "level": 23,
+      "exp": 40,
+      "phys_def": 30,
+      "mag_def": 40,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 0
+    },
+    "description": " Lv. :  23\\nForm : Enchanted\\n\\nA round mechanical apparatus that is frequently seen in the tower near Orbis. It floats in the air and uses melee attacks. Some have said the Jr. Sentinels were built for the purpose of guarding the tower, but it has not been confirmed. ",
+    "expBar": {
+      "minExpHpRatio": 7,
+      "maxExpHpRatio": 16,
+      "mobExpHpRatio": 15
+    },
+    "chineseMobName": "小石球"
+  },
+  {
+    "mob": {
+      "mob_id": "5200001",
+      "mob_name": "Ice Sentinel",
+      "released": null,
+      "max_hp": 900,
+      "acc": 75,
+      "avoid": 12,
+      "level": 30,
+      "exp": 55,
+      "phys_def": 275,
+      "mag_def": 85,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 0
+    },
+    "description": " Lv. :  30\\nForm : Enchanted\\nSpecial Trait : -50% Ice Attribute Damage. Vulnerable to Fire Attribute Attacks.\\n\\nA round mechanical apparatus that is frequently seen in the tower near Orbis. Some have said the Ice Sentinels were built for the purpose of guarding the tower, but it has not been confirmed. It has a firm outer layer comprised of stone, and has the ability to quickly separate to shoot laser when attacked.  It is highly resistant to attacks of ice attribute yet vulnerable to attacks of fire attribute. ",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 20,
+      "mobExpHpRatio": 16.363636363636363
+    },
+    "chineseMobName": "冰石球"
+  },
+  {
+    "mob": {
+      "mob_id": "5200002",
+      "mob_name": "Fire Sentinel",
+      "released": null,
+      "max_hp": 900,
+      "acc": 75,
+      "avoid": 12,
+      "level": 30,
+      "exp": 55,
+      "phys_def": 275,
+      "mag_def": 85,
+      "fire_weakness": -1,
+      "ice_weakness": 1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 0
+    },
+    "description": " Lv. :  30\\nForm : Enchanted\\nSpecial Trait : -50% Fire Attribute Damage. Vulnerable to Ice Attribute Attacks.\\n\\nA round mechanical apparatus that is frequently seen in the tower near Orbis. It has a firm outer layer comprised of stone, and has the ability to quickly separate to shoot laser when attacked.  It is highly resistant to attacks of fire attribute yet vulnerable to attacks of ice attribute.",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 20,
+      "mobExpHpRatio": 16.363636363636363
+    },
+    "chineseMobName": "火石球"
+  },
+  {
+    "mob": {
+      "mob_id": "5220002",
+      "mob_name": "Faust",
+      "released": 1,
+      "max_hp": 9800,
+      "acc": 100,
+      "avoid": 20,
+      "level": 50,
+      "exp": 410,
+      "phys_def": 110,
+      "mag_def": 150,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 600
+    },
+    "description": " Lv. :  55\\nForm : Immortal\\n\\nLupin has endowed this monster with an evil spirit using its magic powers; hence, Faust surpasses Lupin in strength and size. It has also consumed the seed of magic of darkness that Grendel the Really Old once accidentally dropped, and strives to maintain the darkness of Ellinia Forest.",
+    "expBar": {
+      "minExpHpRatio": 18,
+      "maxExpHpRatio": 27,
+      "mobExpHpRatio": 23.902439024390244
+    },
+    "chineseMobName": "殭屍猴王"
+  },
+  {
+    "mob": {
+      "mob_id": "5300000",
+      "mob_name": "Leatty",
+      "released": null,
+      "max_hp": 1000,
+      "acc": 65,
+      "avoid": 13,
+      "level": 32,
+      "exp": 60,
+      "phys_def": 45,
+      "mag_def": 70,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  32\\nForm : Spirit\\nSpecial Trait : -50% Ice Attribute Damage. Vulnerable to Fire Attribute Attacks.\\n\\nA monster that was created by the snow and dust in El Nath, usually found in the tower and the field of El Nath. It is a white fur ball, light as a feather that can drift with the current of the wind.  ",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 24,
+      "mobExpHpRatio": 16.666666666666668
+    },
+    "chineseMobName": "利堤"
+  },
+  {
+    "mob": {
+      "mob_id": "5300001",
+      "mob_name": "Dark Leatty",
+      "released": null,
+      "max_hp": 1100,
+      "acc": 65,
+      "avoid": 15,
+      "level": 33,
+      "exp": 65,
+      "phys_def": 60,
+      "mag_def": 80,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": " Lv. :  33\\nForm : Spirit\\nSpecial Trait : Vulnerable to Sanctity Attribute Attacks.\\n\\nA monster that was created by the snow and dust in El Nath, blackened due to dirt and ashes in the tower. It is as light as a feather that can drift with the current of the wind.  ",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 24,
+      "mobExpHpRatio": 16.923076923076923
+    },
+    "chineseMobName": "黑利堤"
+  },
+  {
+    "mob": {
+      "mob_id": "5300100",
+      "mob_name": "Malady",
+      "released": 1,
+      "max_hp": 4000,
+      "acc": 150,
+      "avoid": 20,
+      "level": 55,
+      "exp": 175,
+      "phys_def": 100,
+      "mag_def": 200,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "sprite_override": {
+        "id": "5300100",
+        "url": "https://maplestory.io/api/gms/83/mob/5300100/render/fly",
+        "override_id": null
+      },
+      "minimumPushDamage": 500
+    },
+    "description": " Lv. :  55\\nForm : Devil\\nSpecial Trait : Vulnerable to Sanctity Attribute Attacks.\\n\\nMonsters that have turned evil due to the magic of darkness they have inherited from the demons. They are experimenting the forbidden magic, and can be seen riding their flying brooms around the deep forest to gather materials for their experiment. They are vulnerable to attacks of sanctity attribute.",
+    "expBar": {
+      "minExpHpRatio": 16,
+      "maxExpHpRatio": 32,
+      "mobExpHpRatio": 22.857142857142858
+    },
+    "chineseMobName": "巫婆"
+  },
+  {
+    "mob": {
+      "mob_id": "5400000",
+      "mob_name": "Jr. Pepe",
+      "released": null,
+      "max_hp": 1400,
+      "acc": 105,
+      "avoid": 18,
+      "level": 35,
+      "exp": 75,
+      "phys_def": 110,
+      "mag_def": 100,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1000
+    },
+    "description": " Lv. :  35\\nForm : Mammal\\nSpecial Trait : -50% Ice Attribute Damage. Vulnerable to Fire Attribute Attacks.\\n\\nA small penguin that appears in and near El Nath where the temperature is low. When you encounter Jr. Pepes, you can safely assume that you are almost in El Nath. They are highly adaptable to different conditions, although an appropriate temperature is a must for them. The Jr. Pepes, who have already adjusted to the snowfield of El Nath, move at a high speed even on ice so it is difficult to avoid them. ",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "小企鵝王"
+  },
+  {
+    "mob": {
+      "mob_id": "6090000",
+      "mob_name": "RIche",
+      "released": null,
+      "max_hp": 11000,
+      "acc": 150,
+      "avoid": 999,
+      "level": 10,
+      "exp": 255,
+      "phys_def": 200,
+      "mag_def": 400,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1000
+    },
+    "description": " Lv. :  65\\nForm : Immortal\\n\\nThere once lived a revered priest who had incredible powers. However, as he got older, he became more and more frightened at the thought of death, which led him to betray his faith and join the demons instead. Death was inevitable even for this powerful figure, however, for the fallen priest had infuriated the god whom he had once worshipped. After his death, his loyal followers buried him in the Forest of Dead Trees... and not too long after the burial, the forest somehow turned into a lair of zombies rising from the dead. Since then, many heroic adventurers have gathered in the forest to defeat the zombies. As heroic adventurers slowly began to overthrow the land of the zombies little by little, putting them at a disadvantage, the fallen priest was revived as the guardian of the zombies. ‘Riche' now protects the zombies as the ruler of the Forest of Dead Trees. Although Riche is an Undead monster, he was once an admired priest, hence he is highly resistant to attacks of sanctity attribute, not to mention his powerful magic and elimination skill. To defeat this challenging opponent, you must use strategic approach other than strength. ",
+    "expBar": {
+      "minExpHpRatio": 5,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 43.13725490196079
+    },
+    "chineseMobName": "厄運死神"
+  },
+  {
+    "mob": {
+      "mob_id": "6090001",
+      "mob_name": "Snow Witch",
+      "released": null,
+      "max_hp": 7700,
+      "acc": 140,
+      "avoid": 999,
+      "level": 10,
+      "exp": 250,
+      "phys_def": 190,
+      "mag_def": 230,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 800
+    },
+    "description": " Lv. :  64\\nForm : Spirit\\n\\nA mysterious witch of the snow mountain. According to the hunters in El Nath, the Snow Witch is the keeper of the El Nath Mountain, and one must seek her permission to hunt there. The hunters fear the Snow Witch more than they fear Yeti. Scadur, the expert hunter of El Nath, claims the wicked Snow Witch appears in the form of a gorgeous woman... \\nAnd it is said that you must give some drop items you've acquired from hunting as offerings if and when you encounter the witch near the El Nath Mountain. ",
+    "expBar": {
+      "minExpHpRatio": 5,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 30.8
+    },
+    "chineseMobName": "冰之女巫"
+  },
+  {
+    "mob": {
+      "mob_id": "6130100",
+      "mob_name": "Red Drake",
+      "released": 1,
+      "max_hp": 6000,
+      "acc": 150,
+      "avoid": 22,
+      "level": 60,
+      "exp": 220,
+      "phys_def": 190,
+      "mag_def": 220,
+      "fire_weakness": -1,
+      "ice_weakness": 1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1000
+    },
+    "description": " Lv. :  60\\nForm : Reptile\\nSpecial Trait : -50% Fire Attribute Damage. Vulnerable to Ice Attribute Attacks.\\n\\nA dragon that lives in mountainous desert highlands. Is from a very weak and unintelligent breed of dragons as compared to regular dragons of that family of monsters. The Red Drake used to have its nest set in Sleepywood, but was banished by the other dragons due to its weaknesses. It has since been training in the desert highlands, adjusting to the heat of the sun and practicing launching powerful fireballs into a far distance. There aren't very many adventurers who'll be able to hunt this thick-coated, fireball-throwing dragon known as Red Drake.   ",
+    "expBar": {
+      "minExpHpRatio": 11,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 27.272727272727273
+    },
+    "chineseMobName": "赤龍"
+  },
+  {
+    "mob": {
+      "mob_id": "6130101",
+      "mob_name": "Mushmom",
+      "released": 1,
+      "max_hp": 20000,
+      "acc": 150,
+      "avoid": 27,
+      "level": 60,
+      "exp": 1200,
+      "phys_def": 320,
+      "mag_def": 320,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1000
+    },
+    "description": " Lv. :  60\\nForm : Plant\\n\\nA gigantic mushroom. This monster is the mother figure to all mushrooms, and it has been said that a huge number of mushrooms in Victoria Island spored from the Mushmom. Although this is a dangerous monster that can shake the ground with a simple jump, some researchers claim that the Mushmom must be preserved as it plays a major role in the ecosystem. Mushmom has been found in a hidden area near Henesys with small mushrooms.",
+    "expBar": {
+      "minExpHpRatio": 11,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 16.666666666666668
+    },
+    "chineseMobName": "蘑菇王"
+  },
+  {
+    "mob": {
+      "mob_id": "6130102",
+      "mob_name": "Seperated Pepe",
+      "released": null,
+      "max_hp": 7200,
+      "acc": 200,
+      "avoid": 30,
+      "level": 60,
+      "exp": 420,
+      "phys_def": 210,
+      "mag_def": 225,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1000
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 11,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 17.142857142857142
+    },
+    "chineseMobName": "孤單企鵝王"
+  },
+  {
+    "mob": {
+      "mob_id": "6130103",
+      "mob_name": "Pepe",
+      "released": null,
+      "max_hp": 7200,
+      "acc": 200,
+      "avoid": 30,
+      "level": 60,
+      "exp": 220,
+      "phys_def": 210,
+      "mag_def": 225,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1000
+    },
+    "description": " Lv. :  60\\nForm : Mammal\\nSpecial Trait : -50% Ice Attribute Damage. Vulnerable to Fire Attribute Attacks.\\n\\nA monster that is occasionally found in the snowfield far from El Nath. It wears a golden crown, and can move with finesse even on ice as it has quickly adapted the surroundings of icy snowfield. Now, it can move faster in snowfield than any other monsters, so you should always be on the lookout should this monster begin to attack. Its dashing speed and subsequent attack render Pepe a difficult monster to avoid. Only found in snowfields, Pepes have a very close relationship with the Yetis, which explains why Yetis are occasionally found with a Pepe mounted on their heads, although no one has discovered how this phenomenon was started. ",
+    "expBar": {
+      "minExpHpRatio": 11,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 32.72727272727273
+    },
+    "chineseMobName": "企鵝王"
+  },
+  {
+    "mob": {
+      "mob_id": "6220000",
+      "mob_name": "Dyle\t",
+      "released": 1,
+      "max_hp": 31000,
+      "acc": 150,
+      "avoid": 30,
+      "level": 65,
+      "exp": 810,
+      "phys_def": 190,
+      "mag_def": 220,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1500
+    },
+    "description": " Lv. :  65\\nForm : Reptile\\n\\nA gigantic crocodile that hides in the swamp in Kerning City. Some say that it suddenly grew in size due to a strange substance in the waste water it consumed, although such claim has not been confirmed. While naturally docile, its simple-minded personality sometimes causes Mr. Alli to rashly become a ferocious monster when provoked. ",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 38.27160493827161
+    },
+    "chineseMobName": "沼澤巨鱷"
+  },
+  {
+    "mob": {
+      "mob_id": "6230100",
+      "mob_name": "Wild Kargo",
+      "released": 1,
+      "max_hp": 5500,
+      "acc": 100,
+      "avoid": 20,
+      "level": 62,
+      "exp": 240,
+      "phys_def": 180,
+      "mag_def": 130,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1500
+    },
+    "description": " Lv. :  62\\nForm : Reptile\\n\\nA monster with lots of contending rumors such as the one that claims that the Wild Kargo was once the pet cat of the ancient devil Balrog and the rumor that it was a cat that was left behind by some adventurer while exploring a dungeon. The only that has been confirmed was by one very courageous scholar who went around to get to the truth of this supposed cat and discovered that the Wild Kargo is in fact a reptile, not a cat. Its eyes, however, look so much like a cat's that everyone agrees that more research is required to get to the truth of this monster. It is one of the most powerful monsters that one will meet in Sleepywood.   ",
+    "expBar": {
+      "minExpHpRatio": 11,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 22.916666666666668
+    },
+    "chineseMobName": "魔龍"
+  },
+  {
+    "mob": {
+      "mob_id": "6230200",
+      "mob_name": "Dark Pepe",
+      "released": null,
+      "max_hp": 7800,
+      "acc": 210,
+      "avoid": 31,
+      "level": 64,
+      "exp": 700,
+      "phys_def": 220,
+      "mag_def": 240,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1500
+    },
+    "description": "Lv. :  64\\nForm : Mammal\\n\\nA penguin monster often spotted in the canyons far away from El Nath. Dark Pepe is a transformed form of Pepe, that's been endowed with evil powers. Is an advanced monster with powerful attacks and defenses, especially compared to its original form as Pepe. One thing that hasn't been changed is the characteristically fast speed of Pepe. Dark Pepe is vulnerable to forces of Sanctity. ",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 49,
+      "mobExpHpRatio": 11.142857142857142
+    },
+    "chineseMobName": "黑企鵝王"
+  },
+  {
+    "mob": {
+      "mob_id": "6230201",
+      "mob_name": "Separated Dark Pepe",
+      "released": null,
+      "max_hp": 7800,
+      "acc": 210,
+      "avoid": 31,
+      "level": 64,
+      "exp": 700,
+      "phys_def": 220,
+      "mag_def": 240,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1500
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "孤單黑企鵝王"
+  },
+  {
+    "mob": {
+      "mob_id": "6230401",
+      "mob_name": "Jr. Lucida",
+      "released": null,
+      "max_hp": 7600,
+      "acc": 170,
+      "avoid": 25,
+      "level": 63,
+      "exp": 245,
+      "phys_def": 190,
+      "mag_def": 220,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1200
+    },
+    "description": " Lv. :  63\\nForm : Mammal\\nSpecial Trait : Resistant to Poison Attribute Attacks. Vulnerable to Sanctity Attribute Attacks.\\n\\nA black monster that lives in the Stairway to the Sky in Orbis. Although it resembles the physical characteristics of Cellion, Lioner, and Grupin, the Jr. Lucida has a small horn and a pair of wings, not to mention its dark and brutal force that is reflected in its black coat of fur. When fully grown, Jr. Lucida becomes Lucida.",
+    "expBar": {
+      "minExpHpRatio": 11,
+      "maxExpHpRatio": 49,
+      "mobExpHpRatio": 31.020408163265305
+    },
+    "chineseMobName": "幼黑格里芬"
+  },
+  {
+    "mob": {
+      "mob_id": "6230600",
+      "mob_name": "Ice Drake",
+      "released": 1,
+      "max_hp": 7700,
+      "acc": 150,
+      "avoid": 25,
+      "level": 64,
+      "exp": 250,
+      "phys_def": 200,
+      "mag_def": 230,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1500
+    },
+    "description": " Lv. :  64\\nForm : Reptile\\nSpecial Trait : -50% Electricity Attribute Damage. Ice Attribute Attacks Repellent. Vulnerable to Sanctity Attribute Attacks.\\n\\nA monster dragon that lives deep in the dungeon. When compared to regular family of dragons, the Ice Drake is weaker and has a lower level of intelligence. However, it has acquired an ice attribute while adapting to the coldness of the dungeon, and you can become a block of ice when attacked by this monster. Even its bones are comprised of ice, therefore its attack of ice attribute could inflict a significant damage.",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 49,
+      "mobExpHpRatio": 30.8
+    },
+    "chineseMobName": "冰龍"
+  },
+  {
+    "mob": {
+      "mob_id": "6230601",
+      "mob_name": "Dark Drake",
+      "released": 1,
+      "max_hp": 13000,
+      "acc": 170,
+      "avoid": 27,
+      "level": 68,
+      "exp": 265,
+      "phys_def": 205,
+      "mag_def": 250,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 2000
+    },
+    "description": " Lv. :  68\\nForm : Reptile\\n\\nA dragon monster that lives in the depths of dungeons. Is from a very weak and unintelligent breed of dragons as compared to regular dragons of that family of monsters. The Dark Drake was endowed with an evil force in the cursed Temple and has grown a rather thick skin on its body. Its speed in the dark is uncontested.",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 49.056603773584904
+    },
+    "chineseMobName": "黑龍"
+  },
+  {
+    "mob": {
+      "mob_id": "6230602",
+      "mob_name": "Officer Skeleton",
+      "released": 1,
+      "max_hp": 7500,
+      "acc": 150,
+      "avoid": 25,
+      "level": 63,
+      "exp": 240,
+      "phys_def": 190,
+      "mag_def": 230,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 800
+    },
+    "description": " Lv. :  63\\nForm : Immortal\\nSpecial Trait : Vulnerable to Sanctity Attribute Attacks.\\n\\nThe skeleton of a Sharenian officer devoid of spirit. After the fall of the Sharenian empire, Ergoth has revived the Skelton with the force of darkness. ",
+    "expBar": {
+      "minExpHpRatio": 11,
+      "maxExpHpRatio": 49,
+      "mobExpHpRatio": 31.25
+    },
+    "chineseMobName": "骷髏士官"
+  },
+  {
+    "mob": {
+      "mob_id": "6300000",
+      "mob_name": "Yeti",
+      "released": null,
+      "max_hp": 11000,
+      "acc": 110,
+      "avoid": 24,
+      "level": 65,
+      "exp": 255,
+      "phys_def": 170,
+      "mag_def": 245,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 2000
+    },
+    "description": " Lv. :  65\\nForm : Mammal\\nSpecial Trait : -50% Ice Attribute Damage. Vulnerable to Fire Attribute Attacks.\\n\\nVulnerable to Fire Attribute Attacks.\\n\\nA gigantic snowman that appears in the snowfield far from El Nath. Although its speed of movement may seem sluggish, the power it illustrates when forcefully striking its two fists on the ground can inflict significant damage. Due to its thick coat of fur, it manages well in the cold but can't stand heat. This fundamentally mild-natured monster roams around with its close friend Pepe mounted on its back. It is a pet in popular demand, as it is loyal and obedient when raised by a human from a young age. ",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 43.13725490196079
+    },
+    "chineseMobName": "雪吉拉"
+  },
+  {
+    "mob": {
+      "mob_id": "6300001",
+      "mob_name": "Transformed Yeti",
+      "released": null,
+      "max_hp": 11000,
+      "acc": 110,
+      "avoid": 24,
+      "level": 65,
+      "exp": 390,
+      "phys_def": 170,
+      "mag_def": 245,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 2000
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 28.205128205128204
+    },
+    "chineseMobName": "變形雪吉拉"
+  },
+  {
+    "mob": {
+      "mob_id": "6300002",
+      "mob_name": "Seperated Yeti",
+      "released": null,
+      "max_hp": 11000,
+      "acc": 110,
+      "avoid": 24,
+      "level": 65,
+      "exp": 455,
+      "phys_def": 170,
+      "mag_def": 245,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 2000
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 24.175824175824175
+    },
+    "chineseMobName": "孤單雪吉拉"
+  },
+  {
+    "mob": {
+      "mob_id": "6300005",
+      "mob_name": "Zombie Mushmom",
+      "released": 1,
+      "max_hp": 35000,
+      "acc": 155,
+      "avoid": 30,
+      "level": 65,
+      "exp": 1500,
+      "phys_def": 350,
+      "mag_def": 400,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1500
+    },
+    "description": " Lv. :  65\\nForm : Immortal\\n\\nA mother figure to all Zombie Mushrooms. The Zombie Mushmom harbors a powerful force of darkness; the charm it possesses, which turned the Mushmom into an even more powerful monster, is believed to be the source of its power. It is occasionally found deep inside the Ant Tunnel, shaking the premise by jumping up and throwing its heavy body down to the ground, scaring the adventurers in the underground dungeon.",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 23.333333333333332
+    },
+    "chineseMobName": "殭屍蘑菇王"
+  },
+  {
+    "mob": {
+      "mob_id": "6400000",
+      "mob_name": "Dark Yeti",
+      "released": null,
+      "max_hp": 13000,
+      "acc": 130,
+      "avoid": 26,
+      "level": 68,
+      "exp": 265,
+      "phys_def": 190,
+      "mag_def": 270,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 2000
+    },
+    "description": " Lv. :  68\\nForm : Mammal\\nSpecial Trait : Vulnerable to Sanctity Attribute Attacks.\\n\\nA gigantic snowman that appears in the snowfield far from El Nath. This mutant Yeti that has been consumed by an evil force is faster, stronger, and superior to the mild-natured Yeti in every aspect; it has also maintained Yeti's signature fists that can inflict major damage, making this monster all the more dangerous. Try attacking this monster using sanctity attribute magic, as its attributes have completely changed and is now vulnerable to the force of sanctity.",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 49.056603773584904
+    },
+    "chineseMobName": "黑吉拉"
+  },
+  {
+    "mob": {
+      "mob_id": "6400001",
+      "mob_name": "Transformed Dark Yeti",
+      "released": null,
+      "max_hp": 13000,
+      "acc": 130,
+      "avoid": 26,
+      "level": 68,
+      "exp": 445,
+      "phys_def": 190,
+      "mag_def": 270,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 2000
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 29.213483146067414
+    },
+    "chineseMobName": "變形黑吉拉"
+  },
+  {
+    "mob": {
+      "mob_id": "6400002",
+      "mob_name": "Seperated Dark Yeti",
+      "released": null,
+      "max_hp": 13000,
+      "acc": 130,
+      "avoid": 26,
+      "level": 68,
+      "exp": 715,
+      "phys_def": 190,
+      "mag_def": 270,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 2000
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 18.181818181818183
+    },
+    "chineseMobName": "孤單黑吉拉"
+  },
+  {
+    "mob": {
+      "mob_id": "7130000",
+      "mob_name": "Lucida",
+      "released": null,
+      "max_hp": 15500,
+      "acc": 160,
+      "avoid": 28,
+      "level": 73,
+      "exp": 320,
+      "phys_def": 300,
+      "mag_def": 320,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1200
+    },
+    "description": "Lv. :  73\\nForm : Mammal\\nSpecial Trait : Resistant to Poison Attribute Attacks. Vulnerable to Sanctity Attribute Attacks.\\n\\nCreature living on the Stairway to the Sky, Lucida seems to resemble a black-furred devil. At first glance, it may look a lot like monsters made of Sanctity Attributes, such as Cellion, Lioner and Grupin, but Lucida is apparently a strong opponent against Poison Attacks, although it is vulnerable to Sanctity Attacks. Lucida seems so evil, going within a certain distance around Lucida seems to create sensations of evil right away, so be careful not to go hunting for Lucida without being amply prepared! It is a wonder if Lucida has always been so evil, though...  ",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 48.4375
+    },
+    "chineseMobName": "黑格里芬"
+  },
+  {
+    "mob": {
+      "mob_id": "7130001",
+      "mob_name": "Cerebes",
+      "released": null,
+      "max_hp": 15200,
+      "acc": 175,
+      "avoid": 30,
+      "level": 72,
+      "exp": 295,
+      "phys_def": 320,
+      "mag_def": 265,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1500
+    },
+    "description": " Lv. :  72\\nForm : Mammal\\n\\nA monster born in an ocean of lava in a cave. With its reddish eyes, monstrous teeth, and spiky collar, Cerebes threatens its enemies although it only  uses melee attacks. When Cerebes evolves into Bain, however, it will use powerful attacks of fire attribute, so beware. ",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "地獄獵犬"
+  },
+  {
+    "mob": {
+      "mob_id": "7130100",
+      "mob_name": "Tauromacis",
+      "released": 1,
+      "max_hp": 15000,
+      "acc": 120,
+      "avoid": 15,
+      "level": 70,
+      "exp": 270,
+      "phys_def": 250,
+      "mag_def": 250,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": -1,
+      "immune_to_poison_status": true,
+      "minimumPushDamage": 1000
+    },
+    "description": " Lv. :  70\\nForm : Devil\\nSpecial Trait : Resistant to Poison Attribute Attacks.\\n\\nA monster that guards the Sanctuary in the Sleepywood Dungeon, located in central Victoria Island. It is a warrior that has the head of an ox and the body of a human, and uses a crescent-shaped spear to generate a lightning to destroy everything nearby. It dashes towards its enemy at a high speed with its lethal lightning attack, so you should never hastily approach this monster. It blocks the naive travellers from entering the cursed Sanctuary. It is said that Tauromacis serves as an usher to the Sanctuary to pay for its past crime. However it remains unknown what crime it committed and from whom the punishment is coming from.",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 55.55555555555556
+    },
+    "chineseMobName": "月牙牛魔王"
+  },
+  {
+    "mob": {
+      "mob_id": "7130101",
+      "mob_name": "Taurospear",
+      "released": 1,
+      "max_hp": 18000,
+      "acc": 130,
+      "avoid": 30,
+      "level": 75,
+      "exp": 350,
+      "phys_def": 550,
+      "mag_def": 400,
+      "fire_weakness": -1,
+      "ice_weakness": null,
+      "lightning_weakness": -1,
+      "holy_weakness": null,
+      "poison_weakness": -1,
+      "immune_to_poison_status": true,
+      "minimumPushDamage": 1500
+    },
+    "description": " Lv. :  75\\nForm : Devil\\nSpecial Trait : -50% Fire Attribute Damage. -50% Electricity Attribute Damage.\\n\\nA monster that guards the Sanctuary in the Sleepywood Dungeon, located in central Victoria Island. It dashes towards the adventurers with a huge spear, and has extremely high defense and attack rate. Furthermore, it moves at a impressively high speed, which renders this monster a bigger challenge than the Jr. Balrog to some adventurers. It guards the entrance of the cursed Sanctuary to prevent adventurers from entering. Although there is a rumor that it became the gate keeper as a punishment for a crime it has committed, but no one knows what the crime was or by whom this monster is being punished.",
+    "expBar": {
+      "minExpHpRatio": 25,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 51.42857142857143
+    },
+    "chineseMobName": "長槍牛魔王"
+  },
+  {
+    "mob": {
+      "mob_id": "7130102",
+      "mob_name": "Yeti & Pepe",
+      "released": null,
+      "max_hp": 20000,
+      "acc": 145,
+      "avoid": 30,
+      "level": 78,
+      "exp": 0,
+      "phys_def": 600,
+      "mag_def": 450,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 2500
+    },
+    "description": " Lv. :  78\\nForm : Mammal\\nSpecial Trait : -50% Ice Attribute Damage. Vulnerable to Fire Attribute Attacks.\\n\\nAn odd couple found in the snowfield far from El Nath. Even a serious adventurer would find Yeti and Pepe strange yet hilarious, as they nonchalantly roam the snowfield. Many researchers have sought to discover the origination of this phenomenon for a number of years, but no one has found any evidential basis that can support this anomaly. In any case, the phrase ‘as close as Yeti and Pepe' was coined based on what people have witnessed.",
+    "expBar": {
+      "minExpHpRatio": 25,
+      "maxExpHpRatio": 51,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "雪吉拉戰車"
+  },
+  {
+    "mob": {
+      "mob_id": "7130103",
+      "mob_name": "Commander Skeleton",
+      "released": 1,
+      "max_hp": 15300,
+      "acc": 190,
+      "avoid": 32,
+      "level": 73,
+      "exp": 315,
+      "phys_def": 330,
+      "mag_def": 300,
+      "fire_weakness": null,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": -1,
+      "immune_to_poison_status": true,
+      "minimumPushDamage": 1500
+    },
+    "description": " Lv. :  73\\nForm : Immortal\\nSpecial Trait : Vulnerable to Sanctity Attribute Attacks. -50% Ice Attribute Damage. Resistant to Poison Attribute Attacks.\\n\\nThe skeleton of a Sharenian commander which was brought to life by Ergoth's force of darkness. After the fall of the Sharenian empire, the skeleton of the commander was revived, devoid of its soul.",
+    "expBar": {
+      "minExpHpRatio": 9,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 48.57142857142857
+    },
+    "chineseMobName": "骷髏指揮官"
+  },
+  {
+    "mob": {
+      "mob_id": "7130200",
+      "mob_name": "Werewolf",
+      "released": null,
+      "max_hp": 16000,
+      "acc": 160,
+      "avoid": 25,
+      "level": 75,
+      "exp": 350,
+      "phys_def": 800,
+      "mag_def": 290,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1500
+    },
+    "description": " Lv. :  75\\nForm : Mammal\\n\\nA monster that appears in the form of a wolf in the very deep end of the valley in the snowfield. It walks on two feet like a human, but attacks with sharp claws that remain hidden until provoked. There is a rumor that a person who gets bitten by this monster turns into a Werewolf.",
+    "expBar": {
+      "minExpHpRatio": 25,
+      "maxExpHpRatio": 55,
+      "mobExpHpRatio": 45.714285714285715
+    },
+    "chineseMobName": "狼人"
+  },
+  {
+    "mob": {
+      "mob_id": "8130100",
+      "mob_name": "Jr. Balrog",
+      "released": 1,
+      "max_hp": 50000,
+      "acc": 150,
+      "avoid": 30,
+      "level": 80,
+      "exp": 2000,
+      "phys_def": 420,
+      "mag_def": 450,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": -1,
+      "immune_to_poison_status": true,
+      "minimumPushDamage": 3000
+    },
+    "description": " Lv. :  80\\nForm : Devil\\nSpecial Trait : Resistant to Poison Attribute Attacks. Vulnerable to Sanctity Attribute Attacks.\\n\\nAn ancient evil spirit which possesses huge wings and sharp claws. It can be found in the Cursed Sanctuary located deep inside the Sleepywood Dungeon in central Victoria Island. It still remains unknown as to how the Jr. Balrog was released inside the dungeon, but it is no mystery that the Jr. Balrog has high attack rate as well as powerful magic skill that will well exceed your expectation, especially its lethal magic attack called Meteo Magic during which the Balrog drops meteorites it has summoned. It is the most challenging monster to defeat in Victoria Island. ",
+    "expBar": {
+      "minExpHpRatio": 25,
+      "maxExpHpRatio": 51,
+      "mobExpHpRatio": 25
+    },
+    "chineseMobName": "巴洛古"
+  },
+  {
+    "mob": {
+      "mob_id": "8140000",
+      "mob_name": "Lycanthrope",
+      "released": null,
+      "max_hp": 27000,
+      "acc": 140,
+      "avoid": 28,
+      "level": 80,
+      "exp": 850,
+      "phys_def": 650,
+      "mag_def": 520,
+      "fire_weakness": 1,
+      "ice_weakness": -1,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 5000
+    },
+    "description": " Lv. :  80\\nForm : Mammal\\nSpecial Trait : -50% Ice Attribute Damage. Vulnerable to Fire Attribute Attacks.\\n\\nA monster that appears in the form of a giant wolf, occasionally found deep inside the valley of the snowfield. It walks on two feet like a human, and attacks with its sharp claws. Furthermore, it has high defense rate against physical and magic attacks, not to mention its ability to summon Werewolves when it finds itself at a disadvantageous situation. It is resistant against cold air but vulnerable to fire, so it would be wise to attack with fire attribute when hunting Lycanthrope. ",
+    "expBar": {
+      "minExpHpRatio": 25,
+      "maxExpHpRatio": 51,
+      "mobExpHpRatio": 31.764705882352942
+    },
+    "chineseMobName": "白狼人"
+  },
+  {
+    "mob": {
+      "mob_id": "8140100",
+      "mob_name": "Dark Yeti & Pepe",
+      "released": null,
+      "max_hp": 29000,
+      "acc": 160,
+      "avoid": 30,
+      "level": 82,
+      "exp": 0,
+      "phys_def": 700,
+      "mag_def": 500,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 3000
+    },
+    "description": " Lv. :  82\\nForm : Mammal\\nSpecial Trait : Vulnerable to Sanctity Attribute Attacks.\\n\\nAn odd couple found in the snowfield far from El Nath. The blackened Yeti and Pepe who have been consumed by the force of evil boast more power in terms of attack, defense, and speed in comparison to that of regular Yeti and Pepe.",
+    "expBar": {
+      "minExpHpRatio": 25,
+      "maxExpHpRatio": 31,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "黑吉拉戰車"
+  },
+  {
+    "mob": {
+      "mob_id": "8140500",
+      "mob_name": "Bain",
+      "released": null,
+      "max_hp": 45000,
+      "acc": 195,
+      "avoid": 38,
+      "level": 90,
+      "exp": 1800,
+      "phys_def": 835,
+      "mag_def": 505,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 5000
+    },
+    "description": " Lv. :  90\\nForm : Mammal\\nSpecial Trait : -50% Fire Attribute Damage. Vulnerable to Ice Attribute Attacks.\\n\\nA monster born in an ocean of lava in a cave. It was originally a bulldog before completely absorbing the mysterious force in lava, evolving into its current monstrous state. It has fire attribute and, as the ruler of the lava, it attacks by emitting flame of blazing heat. ",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "煉獄獵犬"
+  },
+  {
+    "mob": {
+      "mob_id": "8148008",
+      "mob_name": "Crimson Stirge",
+      "released": 1,
+      "max_hp": 600,
+      "acc": 90,
+      "avoid": 14,
+      "level": 26,
+      "exp": 66,
+      "phys_def": 20,
+      "mag_def": 20,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "sprite_override": {
+        "id": "8148008",
+        "url": "https://maplestory.io/api/GMS/240/mob/8148008/render/fly",
+        "override_id": null
+      },
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 6,
+      "maxExpHpRatio": 16,
+      "mobExpHpRatio": 9.090909090909092
+    },
+    "chineseMobName": "紅蝙蝠"
+  },
+  {
+    "mob": {
+      "mob_id": "8150000",
+      "mob_name": "Crimson Balrog",
+      "released": null,
+      "max_hp": 100000,
+      "acc": 180,
+      "avoid": 40,
+      "level": 100,
+      "exp": 3500,
+      "phys_def": 800,
+      "mag_def": 800,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": 1,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 5000
+    },
+    "description": " Lv. :  100\\nForm : Devil\\nSpecial Trait : Resistant to Poison Attribute Attacks. Vulnerable to Sanctity Attribute Attacks.\\n\\nA monster that attacks the ship of adventurers near the continent of Ossyria. It looks similar to the Jr. Balrogs that are found near Victoria Island, but the Crimson Balrogs fly using their huge wings. Some say that the habitat of Crimson Balrogs is an island like Orbis, but such claim has not been confirmed. Due to its force of attack and magic skills that will surpass your expectation, it is suggested that you evade to a safe area rather than hastily attack back should you find yourself in the midst of their attack. They are vulnerable to sanctity attribute.",
+    "expBar": {
+      "minExpHpRatio": 28,
+      "maxExpHpRatio": 28,
+      "mobExpHpRatio": 28.571428571428573
+    },
+    "chineseMobName": "地獄巴洛古"
+  },
+  {
+    "mob": {
+      "mob_id": "8220000",
+      "mob_name": "Eliza",
+      "released": null,
+      "max_hp": 87000,
+      "acc": 150,
+      "avoid": 30,
+      "level": 83,
+      "exp": 2800,
+      "phys_def": 600,
+      "mag_def": 450,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 3000
+    },
+    "description": " Lv. :  83\\nForm : Mammal\\n\\nAn ancient creature that's been dormant for a long period of time. They say that Elliza used to be the beloved pet of a Goddess who ruled over Orbis. Unfortunately, the Pixies kidnapped the Goddess while Elliza was asleep, taking over Elliza's nesting place. The angry Elliza exploded in furor and created numerous doppelgangers as an expression of its rage. When Elliza is calm, it can actually be a pretty interesting conversationalist. Elliza enjoys listening to music, which often puts this creature to sleep.      ",
+    "expBar": {
+      "minExpHpRatio": 25,
+      "maxExpHpRatio": 31,
+      "mobExpHpRatio": 31.071428571428573
+    },
+    "chineseMobName": "艾利傑"
+  },
+  {
+    "mob": {
+      "mob_id": "8220001",
+      "mob_name": "Snowman",
+      "released": null,
+      "max_hp": 120000,
+      "acc": 195,
+      "avoid": 38,
+      "level": 90,
+      "exp": 5200,
+      "phys_def": 800,
+      "mag_def": 500,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 3000
+    },
+    "description": " Lv. :  90\\nForm : Mammal\\n\\nAccording to legend, this Snowman was born between a human and a Snow Spirit. It has the soul of a human but was born with the appearance of a monster which caused him much grief growing up as he was constantly taunted by other humans. The Snow Spirit, who watched Snowman's sad situation, froze up an entire mountain range for Snowman and called it El Nath. Snowman doesn't like humans and hence stays away from them as much as possible, but he'd never attack a human first on his own. However, it will mercilessly attack anyone who breaks the Fragment of the Snow Spirit.",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "雪毛怪人"
+  },
+  {
+    "mob": {
+      "mob_id": "9300018",
+      "mob_name": "Tutorial Jr. Sentinel",
+      "released": 1,
+      "max_hp": 8,
+      "acc": 30,
+      "avoid": 0,
+      "level": 1,
+      "exp": 1,
+      "phys_def": 0,
+      "mag_def": 0,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 1
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 0,
+      "maxExpHpRatio": 8,
+      "mobExpHpRatio": 8
+    },
+    "chineseMobName": null
+  },
+  {
+    "mob": {
+      "mob_id": "9300038",
+      "mob_name": "Ghost Pixie",
+      "released": null,
+      "max_hp": 9000,
+      "acc": 130,
+      "avoid": 25,
+      "level": 59,
+      "exp": 420,
+      "phys_def": 160,
+      "mag_def": 200,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 500
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "鬼精靈"
+  },
+  {
+    "mob": {
+      "mob_id": "9300659",
+      "mob_name": "Chunky Snail",
+      "released": 1,
+      "max_hp": 250,
+      "acc": 45,
+      "avoid": 5,
+      "level": 15,
+      "exp": 26,
+      "phys_def": 12,
+      "mag_def": 40,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "sprite_override": {
+        "id": "9300659",
+        "url": "https://maplestory.io/api/GMS/240/mob/9300659/render/stand",
+        "override_id": null
+      },
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 6,
+      "maxExpHpRatio": 43,
+      "mobExpHpRatio": 9.615384615384615
+    },
+    "chineseMobName": "矮胖蝸牛"
+  },
+  {
+    "mob": {
+      "mob_id": "9308021",
+      "mob_name": "Southperry Pirate Lord",
+      "released": 1,
+      "max_hp": 1250,
+      "acc": 60,
+      "avoid": 10,
+      "level": 35,
+      "exp": 700,
+      "phys_def": 45,
+      "mag_def": 70,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "sprite_override": {
+        "id": "9308021",
+        "url": "https://maplestory.io/api/GMS/240/mob/9601439/render/stand",
+        "override_id": null
+      },
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 1,
+      "maxExpHpRatio": 24,
+      "mobExpHpRatio": 1.7857142857142858
+    },
+    "chineseMobName": "海盜領主"
+  },
+  {
+    "mob": {
+      "mob_id": "9500148",
+      "mob_name": "Igloo Turtle",
+      "released": null,
+      "max_hp": 2600,
+      "acc": 110,
+      "avoid": 18,
+      "level": 45,
+      "exp": 110,
+      "phys_def": 130,
+      "mag_def": 130,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": 250
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "烏龜"
+  },
+  {
+    "mob": {
+      "mob_id": "9834151",
+      "mob_name": "Tauroshield",
+      "released": 1,
+      "max_hp": 27000,
+      "acc": 175,
+      "avoid": 28,
+      "level": 80,
+      "exp": 900,
+      "phys_def": 750,
+      "mag_def": 750,
+      "fire_weakness": -1,
+      "ice_weakness": 0,
+      "lightning_weakness": -1,
+      "holy_weakness": 0,
+      "poison_weakness": -1,
+      "immune_to_poison_status": true,
+      "sprite_override": {
+        "id": "9834151",
+        "url": "https://maplestory.io/api/jms/419/mob/9834151/render/stand",
+        "override_id": null
+      },
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": 25,
+      "maxExpHpRatio": 51,
+      "mobExpHpRatio": 30
+    },
+    "chineseMobName": "盾牌牛魔王"
+  },
+  {
+    "mob": {
+      "mob_id": "9834178",
+      "mob_name": null,
+      "released": null,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": null,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "mobExpHpRatio": null
+    },
+    "chineseMobName": "雪球企鵝王"
+  }
+]

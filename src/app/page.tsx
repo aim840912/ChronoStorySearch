@@ -28,9 +28,9 @@ import { Toast } from '@/components/Toast'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter, applyAdvancedFilter } from '@/lib/filter-utils'
 import dropsData from '@/../data/drops.json'
-import monsterStatsData from '@/../data/monster-stats.json'
+import mobInfoData from '@/../data/mob-info.json'
 import itemAttributesData from '@/../data/item-attributes.json'
-import type { MonsterStats } from '@/types'
+import type { MobInfo } from '@/types'
 
 /**
  * 多關鍵字匹配函數
@@ -204,13 +204,16 @@ export default function Home() {
     return shuffled.slice(0, sampleSize)
   }, [allDrops])
 
-  // 建立怪物血量快速查詢 Map (mobId -> maxHP)
+  // 建立怪物血量快速查詢 Map (mobId -> max_hp)
   const monsterHPMap = useMemo(() => {
     const hpMap = new Map<number, number | null>()
-    const stats = monsterStatsData as MonsterStats[]
+    const mobData = mobInfoData as MobInfo[]
 
-    stats.forEach((stat) => {
-      hpMap.set(stat.mobId, stat.maxHP)
+    mobData.forEach((info) => {
+      const mobId = parseInt(info.mob.mob_id, 10)
+      if (!isNaN(mobId)) {
+        hpMap.set(mobId, info.mob.max_hp)
+      }
     })
 
     return hpMap
