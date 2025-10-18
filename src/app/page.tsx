@@ -17,7 +17,6 @@ import { useInfiniteScroll } from '@/hooks/useInfiniteScroll'
 import { SearchBar } from '@/components/SearchBar'
 import { FilterButtons } from '@/components/FilterButtons'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
-import { StatsDisplay } from '@/components/StatsDisplay'
 import { MonsterCard } from '@/components/MonsterCard'
 import { ItemCard } from '@/components/ItemCard'
 import { MonsterModal } from '@/components/MonsterModal'
@@ -41,6 +40,12 @@ export default function Home() {
   // 進階篩選狀態
   const [advancedFilter, setAdvancedFilter] = useState<AdvancedFilterOptions>(getDefaultAdvancedFilter())
   const [isAdvancedFilterExpanded, setIsAdvancedFilterExpanded] = useState(false)
+
+  // 計算已啟用的進階篩選數量
+  const advancedFilterCount = [
+    advancedFilter.dataType !== 'all' ? 1 : 0,
+    advancedFilter.itemCategories.length > 0 ? 1 : 0,
+  ].reduce((a, b) => a + b, 0)
 
   // 使用自定義 hooks
   const toast = useToast()
@@ -92,7 +97,6 @@ export default function Home() {
     uniqueAllMonsters,
     uniqueAllItems,
     mixedCards,
-    filteredDrops,
     shouldShowItems,
     shouldShowMonsters,
   } = useFilterLogic({
@@ -276,6 +280,9 @@ export default function Home() {
             favoriteMonsterCount={favoriteCount}
             favoriteItemCount={favoriteItemCount}
             onClearClick={modals.openClearModal}
+            isAdvancedFilterExpanded={isAdvancedFilterExpanded}
+            onAdvancedFilterToggle={() => setIsAdvancedFilterExpanded(!isAdvancedFilterExpanded)}
+            advancedFilterCount={advancedFilterCount}
           />
 
           {/* 進階篩選面板 */}
@@ -284,18 +291,6 @@ export default function Home() {
             onFilterChange={setAdvancedFilter}
             isExpanded={isAdvancedFilterExpanded}
             onToggle={() => setIsAdvancedFilterExpanded(!isAdvancedFilterExpanded)}
-          />
-
-          {/* 資料統計 */}
-          <StatsDisplay
-            filterMode={filterMode}
-            searchTerm={search.searchTerm}
-            filteredUniqueMonsterCount={filteredUniqueMonsters.length}
-            favoriteMonsterCount={favoriteCount}
-            filteredUniqueItemCount={filteredUniqueItems.length}
-            favoriteItemCount={favoriteItemCount}
-            filteredDropsCount={filteredDrops.length}
-            totalDropsCount={allDrops.length}
           />
         </div>
         {/* End Sticky Header */}

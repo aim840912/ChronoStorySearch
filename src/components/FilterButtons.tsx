@@ -9,6 +9,9 @@ interface FilterButtonsProps {
   favoriteMonsterCount: number
   favoriteItemCount: number
   onClearClick: (type: ClearModalType) => void
+  isAdvancedFilterExpanded: boolean
+  onAdvancedFilterToggle: () => void
+  advancedFilterCount: number
 }
 
 /**
@@ -21,11 +24,40 @@ export function FilterButtons({
   favoriteMonsterCount,
   favoriteItemCount,
   onClearClick,
+  isAdvancedFilterExpanded,
+  onAdvancedFilterToggle,
+  advancedFilterCount,
 }: FilterButtonsProps) {
   const { t } = useLanguage()
   return (
     <div className="max-w-7xl mx-auto mb-4">
       <div className="flex items-center gap-3 flex-wrap">
+        {/* 進階篩選按鈕 */}
+        <button
+          onClick={onAdvancedFilterToggle}
+          className="flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium transition-all duration-200 bg-indigo-500 hover:bg-indigo-600 text-white shadow-md hover:shadow-lg"
+        >
+          <svg
+            className={`w-5 h-5 transition-transform duration-200 ${isAdvancedFilterExpanded ? 'rotate-180' : ''}`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+          <span>{t('filter.advanced')}</span>
+          {advancedFilterCount > 0 && (
+            <span className="px-2 py-0.5 text-xs font-bold bg-white/20 rounded-full">
+              {advancedFilterCount}
+            </span>
+          )}
+        </button>
+
         {/* 全部按鈕 */}
         <button
           onClick={() => onFilterChange('all')}
@@ -62,7 +94,7 @@ export function FilterButtons({
         {favoriteMonsterCount > 0 && (
           <button
             onClick={() => onClearClick('monsters')}
-            className="px-4 py-2.5 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white shadow-md hover:shadow-lg"
+            className="px-4 py-2.5 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white shadow-md hover:shadow-lg"
             title="清除所有最愛怪物"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -96,7 +128,7 @@ export function FilterButtons({
         {favoriteItemCount > 0 && (
           <button
             onClick={() => onClearClick('items')}
-            className="px-4 py-2.5 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white shadow-md hover:shadow-lg"
+            className="px-4 py-2.5 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white shadow-md hover:shadow-lg"
             title="清除所有最愛物品"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { DropItem, MobInfo } from '@/types'
+import type { DropItem, MobInfo, Language } from '@/types'
 import { DropItemCard } from './DropItemCard'
 import { MonsterStatsCard } from './MonsterStatsCard'
 import { clientLogger } from '@/lib/logger'
@@ -39,16 +39,42 @@ export function MonsterModal({
   onToggleItemFavorite,
   onItemClick,
 }: MonsterModalProps) {
-  const { t } = useLanguage()
+  const { t, language, setLanguage } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
   const [showToast, setShowToast] = useState(false)
   const [toastMessage, setToastMessage] = useState('')
+
+  // 語言切換函數
+  const toggleLanguage = () => {
+    const newLanguage: Language = language === 'zh-TW' ? 'en' : 'zh-TW'
+    setLanguage(newLanguage)
+  }
 
   // 過濾該怪物的所有掉落物品
   const monsterDrops = useMemo(() => {
     if (!monsterId) return []
     return allDrops.filter((drop) => drop.mobId === monsterId)
   }, [monsterId, allDrops])
+
+  // 從 allDrops 查找怪物數據（用於獲取中英文名稱）
+  const monsterData = useMemo(() => {
+    if (!monsterId) return null
+    return allDrops.find((drop) => drop.mobId === monsterId) || null
+  }, [monsterId, allDrops])
+
+  // 根據語言選擇顯示名稱
+  const displayMonsterName = useMemo(() => {
+    // 如果沒有找到 monsterData，才回退到 prop
+    if (!monsterData) return monsterName
+
+    // 總是從 monsterData 中取名稱（保證數據源一致）
+    if (language === 'zh-TW') {
+      // 中文模式：優先用中文，沒有就用英文
+      return monsterData.chineseMobName || monsterData.mobName
+    }
+    // 英文模式：直接用英文名稱
+    return monsterData.mobName
+  }, [language, monsterData, monsterName])
 
   // 查找怪物詳細資訊
   const mobInfo = useMemo(() => {
@@ -109,17 +135,32 @@ export function MonsterModal({
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={monsterIconUrl}
-                alt={monsterName}
+                alt={displayMonsterName}
                 className="w-16 h-16 object-contain"
               />
               <div>
-                <h2 className="text-2xl font-bold text-white mb-1">{monsterName}</h2>
+                <h2 className="text-2xl font-bold text-white mb-1">{displayMonsterName}</h2>
                 <p className="text-blue-100 text-sm">
                   {isDev && `${t('modal.monsterId')}: ${monsterId} · `}{t('modal.monsterDropCount').replace('{count}', String(monsterDrops.length))}
                 </p>
               </div>
             </div>
             <div className="flex items-center gap-2">
+              {/* 語言切換按鈕 */}
+              <button
+                onClick={toggleLanguage}
+                className="p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30"
+                aria-label={t('language.toggle')}
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </button>
               {/* 最愛按鈕 */}
               <button
                 onClick={() => monsterId && onToggleFavorite(monsterId, monsterName)}

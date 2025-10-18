@@ -63,6 +63,7 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
     { key: 'avoidability', label: t('item.avoidability'), value: stats.avoidability, color: 'text-teal-600 dark:text-teal-400', icon: '🌪️' },
     { key: 'speed', label: t('item.speed'), value: stats.speed, color: 'text-lime-600 dark:text-lime-400', icon: '⚡' },
     { key: 'jump', label: t('item.jump'), value: stats.jump, color: 'text-amber-600 dark:text-amber-400', icon: '🦘' },
+    { key: 'upgrades', label: t('item.upgrades'), value: stats.upgrades, color: 'text-yellow-600 dark:text-yellow-400', icon: '🔧' },
   ].filter(stat => stat.value !== null && stat.value !== 0)
 
   return (
@@ -81,31 +82,15 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
           <div>
             <span className="text-gray-500 dark:text-gray-400">{t('item.type')}:</span>
             <span className="ml-2 font-medium text-gray-900 dark:text-white">
-              {attributes.type}
+              {t(`item.type.${attributes.type}`)}
             </span>
           </div>
           <div>
             <span className="text-gray-500 dark:text-gray-400">{t('item.category')}:</span>
             <span className="ml-2 font-medium text-gray-900 dark:text-white">
-              {equipment.category}
+              {t(`item.category.${equipment.category}`)}
             </span>
           </div>
-          {attributes.sale_price !== null && attributes.sale_price > 0 && (
-            <div className="col-span-2">
-              <span className="text-gray-500 dark:text-gray-400">{t('item.salePrice')}:</span>
-              <span className="ml-2 font-medium text-gray-900 dark:text-white">
-                {attributes.sale_price.toLocaleString()} Meso
-              </span>
-            </div>
-          )}
-          {stats.upgrades !== null && stats.upgrades > 0 && (
-            <div className="col-span-2">
-              <span className="text-gray-500 dark:text-gray-400">{t('item.upgrades')}:</span>
-              <span className="ml-2 font-medium text-gray-900 dark:text-white">
-                {stats.upgrades}
-              </span>
-            </div>
-          )}
         </div>
       </div>
 
@@ -164,7 +149,9 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
                   <span>{icon}</span>
                   <div className="flex-1">
                     <div className="text-xs text-gray-500 dark:text-gray-400">{label}</div>
-                    <div className={`text-base font-bold ${color}`}>+{value}</div>
+                    <div className={`text-base font-bold ${color}`}>
+                      {key === 'upgrades' ? value : `+${value}`}
+                    </div>
                   </div>
                 </div>
               </div>
