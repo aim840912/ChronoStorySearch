@@ -93,7 +93,7 @@ export function ItemModal({
 
   if (!isOpen || (itemId === null && itemId !== 0)) return null
 
-  const itemIconUrl = itemId === 0 ? null : getItemImageUrl(itemId)
+  const itemIconUrl = getItemImageUrl(itemId)
 
   return (
     <div
@@ -108,18 +108,12 @@ export function ItemModal({
         <div className="sticky top-0 z-10 bg-gradient-to-r from-green-500 to-emerald-600 dark:from-green-600 dark:to-emerald-700 p-6 rounded-t-xl">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              {itemIconUrl ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={itemIconUrl}
-                  alt={itemName}
-                  className="w-16 h-16 object-contain"
-                />
-              ) : (
-                <div className="w-16 h-16 flex items-center justify-center">
-                  <span className="text-5xl">💰</span>
-                </div>
-              )}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={itemIconUrl}
+                alt={itemName}
+                className="w-16 h-16 object-contain"
+              />
               <div>
                 <h2 className="text-2xl font-bold text-white mb-1">{itemName}</h2>
                 <p className="text-green-100 text-sm">

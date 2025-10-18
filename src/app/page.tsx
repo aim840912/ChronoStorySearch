@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react'
 import { useSearchParams } from 'next/navigation'
-import type { DropItem, SuggestionItem, FilterMode, GachaMachine } from '@/types'
+import type { DropItem, SuggestionItem, FilterMode, GachaMachine, ItemAttributes, AdvancedFilterOptions } from '@/types'
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 import { useFavoriteMonsters } from '@/hooks/useFavoriteMonsters'
 import { useFavoriteItems } from '@/hooks/useFavoriteItems'
@@ -12,6 +12,7 @@ import { useModalManager } from '@/hooks/useModalManager'
 import { useSearchWithSuggestions } from '@/hooks/useSearchWithSuggestions'
 import { SearchBar } from '@/components/SearchBar'
 import { FilterButtons } from '@/components/FilterButtons'
+import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
 import { StatsDisplay } from '@/components/StatsDisplay'
 import { DropCard } from '@/components/DropCard'
 import { MonsterCard } from '@/components/MonsterCard'
@@ -25,8 +26,10 @@ import { LanguageToggle } from '@/components/LanguageToggle'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Toast } from '@/components/Toast'
 import { clientLogger } from '@/lib/logger'
+import { getDefaultAdvancedFilter, applyAdvancedFilter } from '@/lib/filter-utils'
 import dropsData from '@/../data/drops.json'
 import monsterStatsData from '@/../data/monster-stats.json'
+import itemAttributesData from '@/../data/item-attributes.json'
 import type { MonsterStats } from '@/types'
 
 /**
@@ -59,6 +62,10 @@ export default function Home() {
 
   // 篩選模式：全部 or 最愛怪物 or 最愛物品
   const [filterMode, setFilterMode] = useState<FilterMode>('all')
+
+  // 進階篩選狀態
+  const [advancedFilter, setAdvancedFilter] = useState<AdvancedFilterOptions>(getDefaultAdvancedFilter())
+  const [isAdvancedFilterExpanded, setIsAdvancedFilterExpanded] = useState(false)
 
   // 使用自定義 hooks
   const toast = useToast()
@@ -209,6 +216,22 @@ export default function Home() {
     return hpMap
   }, [])
 
+  // 建立物品屬性快速查詢 Map (itemId -> ItemAttributes)
+  const itemAttributesMap = useMemo(() => {
+    const attrMap = new Map<number, ItemAttributes>()
+    const attributes = itemAttributesData as ItemAttributes[]
+
+    attributes.forEach((attr) => {
+      const itemId = parseInt(attr.item_id, 10)
+      if (!isNaN(itemId)) {
+        attrMap.set(itemId, attr)
+      }
+    })
+
+    clientLogger.info(`成功建立 ${attrMap.size} 筆物品屬性索引`)
+    return attrMap
+  }, [])
+
   // 計算去重的最愛怪物清單（每個怪物只出現一次）
   const uniqueFavoriteMonsters = useMemo(() => {
     if (filterMode !== 'favorite-monsters' || favoriteMonsters.length === 0) return []
@@ -294,7 +317,87 @@ export default function Home() {
     )
   }, [uniqueFavoriteItems, debouncedSearchTerm, filterMode])
 
-  // 搜尋功能 - 即時搜尋（使用 debounced 值）+ 最愛篩選
+  // 計算「全部」模式的唯一怪物清單（每個怪物只出現一次）
+  const uniqueAllMonsters = useMemo(() => {
+    if (filterMode !== 'all') return []
+
+    const monsterMap = new Map<number, { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number }>()
+
+    // 從 filteredDrops 統計每個怪物的掉落物數量
+    filteredDrops.forEach((drop) => {
+      if (!monsterMap.has(drop.mobId)) {
+        monsterMap.set(drop.mobId, {
+          mobId: drop.mobId,
+          mobName: drop.mobName,
+          chineseMobName: drop.chineseMobName,
+          dropCount: 0,
+        })
+      }
+      monsterMap.get(drop.mobId)!.dropCount++
+    })
+
+    return Array.from(monsterMap.values())
+  }, [filterMode, filteredDrops])
+
+  // 計算「全部」模式的唯一物品清單（每個物品只出現一次）
+  const uniqueAllItems = useMemo(() => {
+    if (filterMode !== 'all') return []
+
+    const itemMap = new Map<number, { itemId: number; itemName: string; chineseItemName?: string | null; monsterCount: number }>()
+
+    // 從 filteredDrops 統計每個物品被多少怪物掉落
+    filteredDrops.forEach((drop) => {
+      if (!itemMap.has(drop.itemId)) {
+        itemMap.set(drop.itemId, {
+          itemId: drop.itemId,
+          itemName: drop.itemName,
+          chineseItemName: drop.chineseItemName,
+          monsterCount: 0,
+        })
+      }
+    })
+
+    // 計算每個物品的獨特怪物數量
+    itemMap.forEach((item, itemId) => {
+      const uniqueMonsters = new Set<number>()
+      filteredDrops.forEach((drop) => {
+        if (drop.itemId === itemId) {
+          uniqueMonsters.add(drop.mobId)
+        }
+      })
+      item.monsterCount = uniqueMonsters.size
+    })
+
+    return Array.from(itemMap.values())
+  }, [filterMode, filteredDrops])
+
+  // 建立隨機混合的卡片資料（怪物 + 物品隨機排序）- 只在「全部」模式且無搜尋時使用
+  const mixedCards = useMemo(() => {
+    // 只在「全部」模式且無搜尋詞時計算
+    if (filterMode !== 'all' || debouncedSearchTerm.trim() !== '') return []
+
+    // 定義混合卡片資料結構
+    type MixedCard =
+      | { type: 'monster'; data: { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number } }
+      | { type: 'item'; data: { itemId: number; itemName: string; chineseItemName?: string | null; monsterCount: number } }
+
+    // 合併怪物和物品成混合陣列
+    const mixed: MixedCard[] = [
+      ...uniqueAllMonsters.map((m): MixedCard => ({ type: 'monster', data: m })),
+      ...uniqueAllItems.map((i): MixedCard => ({ type: 'item', data: i }))
+    ]
+
+    // Fisher-Yates shuffle 演算法進行隨機排序
+    for (let i = mixed.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[mixed[i], mixed[j]] = [mixed[j], mixed[i]]
+    }
+
+    clientLogger.info(`建立隨機混合卡片: ${uniqueAllMonsters.length} 怪物 + ${uniqueAllItems.length} 物品 = ${mixed.length} 張卡片`)
+    return mixed
+  }, [filterMode, debouncedSearchTerm, uniqueAllMonsters, uniqueAllItems])
+
+  // 搜尋功能 - 即時搜尋（使用 debounced 值）+ 最愛篩選 + 進階篩選
   useEffect(() => {
     let baseDrops: DropItem[] = []
 
@@ -308,10 +411,11 @@ export default function Home() {
     }
 
     // 應用搜尋過濾（支援多關鍵字搜尋 + 中英文搜尋）
+    let filtered: DropItem[]
     if (debouncedSearchTerm.trim() === '') {
-      setFilteredDrops(baseDrops)
+      filtered = baseDrops
     } else {
-      const filtered = baseDrops.filter((drop) => {
+      filtered = baseDrops.filter((drop) => {
         return (
           matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
           matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
@@ -319,9 +423,15 @@ export default function Home() {
           (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
         )
       })
-      setFilteredDrops(filtered)
     }
-  }, [debouncedSearchTerm, allDrops, initialRandomDrops, filterMode, favoriteMonsters])
+
+    // 應用進階篩選
+    if (advancedFilter.enabled) {
+      filtered = applyAdvancedFilter(filtered, advancedFilter, itemAttributesMap)
+    }
+
+    setFilteredDrops(filtered)
+  }, [debouncedSearchTerm, allDrops, initialRandomDrops, filterMode, favoriteMonsters, advancedFilter, itemAttributesMap])
 
   // 預建名稱索引 - 只在資料載入時計算一次
   const nameIndex = useMemo(() => {
@@ -551,6 +661,24 @@ export default function Home() {
     modals.setSelectedMonsterName(mobName)
   }
 
+  // 判斷搜尋上下文 - 決定「全部」模式的顯示策略
+  const hasItemMatch = useMemo(() => {
+    if (filterMode !== 'all' || !debouncedSearchTerm.trim()) return false
+
+    // 檢查是否有物品名匹配
+    return filteredDrops.some(drop =>
+      matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
+      (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
+    )
+  }, [filterMode, debouncedSearchTerm, filteredDrops])
+
+  // 顯示策略：
+  // - 無搜尋詞 → 同時顯示物品 + 怪物
+  // - 有物品匹配 → 同時顯示物品 + 怪物
+  // - 只有怪物匹配 → 只顯示怪物
+  const shouldShowItems = filterMode === 'all' && (!debouncedSearchTerm.trim() || hasItemMatch)
+  const shouldShowMonsters = filterMode === 'all' // 永遠顯示怪物
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 pb-12">
@@ -590,6 +718,14 @@ export default function Home() {
             favoriteMonsterCount={favoriteCount}
             favoriteItemCount={favoriteItemCount}
             onClearClick={modals.openClearModal}
+          />
+
+          {/* 進階篩選面板 */}
+          <AdvancedFilterPanel
+            filter={advancedFilter}
+            onFilterChange={setAdvancedFilter}
+            isExpanded={isAdvancedFilterExpanded}
+            onToggle={() => setIsAdvancedFilterExpanded(!isAdvancedFilterExpanded)}
           />
 
           {/* 資料統計 */}
@@ -675,20 +811,83 @@ export default function Home() {
                 </div>
               )
             ) : (
-              /* 全部模式 - 顯示掉落卡片 */
-              filteredDrops.length > 0 ? (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
-                  {filteredDrops.map((drop, index) => (
-                    <DropCard
-                      key={`${drop.mobId}-${drop.itemId}-${index}`}
-                      drop={drop}
-                      onCardClick={modals.openMonsterModal}
-                      isFavorite={isFavorite(drop.mobId)}
-                      onToggleFavorite={toggleFavorite}
-                      maxHP={monsterHPMap.get(drop.mobId)}
-                    />
-                  ))}
-                </div>
+              /* 全部模式 - 顯示怪物和物品卡片 */
+              uniqueAllMonsters.length > 0 || uniqueAllItems.length > 0 ? (
+                <>
+                  {/* 無搜尋詞：隨機混合顯示怪物和物品 */}
+                  {!debouncedSearchTerm.trim() && mixedCards.length > 0 ? (
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
+                      {mixedCards.map((card, index) => {
+                        if (card.type === 'monster') {
+                          return (
+                            <MonsterCard
+                              key={`monster-${card.data.mobId}-${index}`}
+                              mobId={card.data.mobId}
+                              mobName={card.data.mobName}
+                              chineseMobName={card.data.chineseMobName}
+                              dropCount={card.data.dropCount}
+                              onCardClick={modals.openMonsterModal}
+                              isFavorite={isFavorite(card.data.mobId)}
+                              onToggleFavorite={toggleFavorite}
+                            />
+                          )
+                        } else {
+                          return (
+                            <ItemCard
+                              key={`item-${card.data.itemId}-${index}`}
+                              itemId={card.data.itemId}
+                              itemName={card.data.itemName}
+                              chineseItemName={card.data.chineseItemName}
+                              monsterCount={card.data.monsterCount}
+                              onCardClick={modals.openItemModal}
+                              isFavorite={isItemFavorite(card.data.itemId)}
+                              onToggleFavorite={toggleItemFavorite}
+                            />
+                          )
+                        }
+                      })}
+                    </div>
+                  ) : (
+                    /* 有搜尋詞：分區顯示怪物和物品 */
+                    <>
+                      {/* 怪物區塊 */}
+                      {shouldShowMonsters && uniqueAllMonsters.length > 0 && (
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
+                          {uniqueAllMonsters.map((monster) => (
+                            <MonsterCard
+                              key={monster.mobId}
+                              mobId={monster.mobId}
+                              mobName={monster.mobName}
+                              chineseMobName={monster.chineseMobName}
+                              dropCount={monster.dropCount}
+                              onCardClick={modals.openMonsterModal}
+                              isFavorite={isFavorite(monster.mobId)}
+                              onToggleFavorite={toggleFavorite}
+                            />
+                          ))}
+                        </div>
+                      )}
+
+                      {/* 物品區塊 */}
+                      {shouldShowItems && uniqueAllItems.length > 0 && (
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
+                          {uniqueAllItems.map((item) => (
+                            <ItemCard
+                              key={item.itemId}
+                              itemId={item.itemId}
+                              itemName={item.itemName}
+                              chineseItemName={item.chineseItemName}
+                              monsterCount={item.monsterCount}
+                              onCardClick={modals.openItemModal}
+                              isFavorite={isItemFavorite(item.itemId)}
+                              onToggleFavorite={toggleItemFavorite}
+                            />
+                          ))}
+                        </div>
+                      )}
+                    </>
+                  )}
+                </>
               ) : (
                 <div className="text-center py-12 mt-8">
                   <div className="text-6xl mb-4">🔍</div>

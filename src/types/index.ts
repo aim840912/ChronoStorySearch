@@ -204,3 +204,33 @@ export interface ItemAttributes {
   sub_type: string | null
   equipment?: ItemEquipment
 }
+
+// 進階篩選相關類型
+// 篩選邏輯運算子
+export type FilterLogicOperator = 'AND' | 'OR'
+
+// 資料類型篩選選項
+export type DataTypeFilter = 'all' | 'monster' | 'item' | 'gacha'
+
+// 物品類別群組
+export type ItemCategoryGroup =
+  | 'weapon'      // 武器
+  | 'armor'       // 防具
+  | 'accessory'   // 飾品
+  | 'consume'     // 消耗品
+  | 'etc'         // 其他/材料
+
+// 進階篩選選項
+export interface AdvancedFilterOptions {
+  // 資料類型篩選
+  dataType: DataTypeFilter
+
+  // 物品類別篩選（多選）
+  itemCategories: ItemCategoryGroup[]
+
+  // 邏輯運算子
+  logicOperator: FilterLogicOperator
+
+  // 是否啟用進階篩選
+  enabled: boolean
+}

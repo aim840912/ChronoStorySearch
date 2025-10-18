@@ -33,7 +33,7 @@ export function MonsterStatsCard({ stats }: MonsterStatsCardProps) {
     return (
       <div className="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 shadow-lg">
         <h3 className="text-xl font-bold text-gray-700 dark:text-gray-300 mb-4 flex items-center gap-2">
-          <span className="text-2xl">📊</span>
+          <span className="text-2xl"></span>
           {t('monster.stats')}
         </h3>
         <div className="flex flex-col items-center justify-center py-8 text-gray-500 dark:text-gray-400">
@@ -83,7 +83,7 @@ export function MonsterStatsCard({ stats }: MonsterStatsCardProps) {
   return (
     <div className="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/30 rounded-xl p-6 shadow-lg border border-blue-200 dark:border-blue-800">
       <h3 className="text-xl font-bold text-blue-900 dark:text-blue-100 mb-4 flex items-center gap-2">
-        <span className="text-2xl">📊</span>
+        <span className="text-2xl"></span>
         {t('monster.stats')}
       </h3>
 

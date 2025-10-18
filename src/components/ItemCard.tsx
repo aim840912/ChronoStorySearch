@@ -33,7 +33,7 @@ export function ItemCard({
   // 獲取顯示名稱（支援中英文切換）
   const displayItemName = getItemDisplayName(itemName, chineseItemName, language)
 
-  const itemIconUrl = itemId === 0 ? null : getItemImageUrl(itemId)
+  const itemIconUrl = getItemImageUrl(itemId)
 
   return (
     <div
@@ -70,19 +70,13 @@ export function ItemCard({
 
       {/* 物品資訊 */}
       <div className="flex items-center gap-3 mb-4">
-        {itemIconUrl ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={itemIconUrl}
-            alt={displayItemName}
-            className="w-16 h-16 object-contain flex-shrink-0"
-            
-          />
-        ) : (
-          <div className="w-16 h-16 flex items-center justify-center flex-shrink-0">
-            <span className="text-4xl">💰</span>
-          </div>
-        )}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={itemIconUrl}
+          alt={displayItemName}
+          className="w-16 h-16 object-contain flex-shrink-0"
+
+        />
         <div className="flex-1">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
             {displayItemName}
@@ -99,12 +93,9 @@ export function ItemCard({
       <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                clipRule="evenodd"
-              />
+            {/* 惡魔圖示 - 表示怪物掉落 */}
+            <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 640 512">
+              <path d="M320 64c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V96c0-17.7 14.3-32 32-32zm113.5 22.5l32-32c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-32 32c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3zm-227 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l32 32c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0l-32-32zM224 256c-35.3 0-64 28.7-64 64v64c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V320c0-35.3-28.7-64-64-64H224zm-32 120a24 24 0 1 1 0-48 24 24 0 1 1 0 48zm208-24a24 24 0 1 1-48 0 24 24 0 1 1 48 0z"/>
             </svg>
             <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
               {t('card.droppedBy')}

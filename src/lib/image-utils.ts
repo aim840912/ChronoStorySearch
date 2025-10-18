@@ -37,7 +37,6 @@ export function getItemImageUrl(
   itemId: number,
   fallback: string = '/images/items/default.svg'
 ): string {
-  if (itemId === 0) return fallback
   return hasItemImage(itemId) ? `/images/items/${itemId}.png` : fallback
 }
 

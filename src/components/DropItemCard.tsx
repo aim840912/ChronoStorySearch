@@ -31,8 +31,8 @@ export function DropItemCard({
   // 獲取顯示名稱（支援中英文切換）
   const displayItemName = getItemDisplayName(drop.itemName, drop.chineseItemName, language)
 
-  // 物品圖示 URL（itemId = 0 是 Meso，不顯示圖示）
-  const itemIconUrl = drop.itemId === 0 ? null : getItemImageUrl(drop.itemId)
+  // 物品圖示 URL
+  const itemIconUrl = getItemImageUrl(drop.itemId)
 
   return (
     <div
@@ -69,18 +69,12 @@ export function DropItemCard({
 
       {/* 物品資訊 */}
       <div className="flex items-center gap-3 mb-4">
-        {itemIconUrl ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={itemIconUrl}
-            alt={displayItemName}
-            className="w-16 h-16 object-contain flex-shrink-0"
-          />
-        ) : (
-          <div className="w-16 h-16 flex items-center justify-center flex-shrink-0">
-            <span className="text-4xl">💰</span>
-          </div>
-        )}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={itemIconUrl}
+          alt={displayItemName}
+          className="w-16 h-16 object-contain flex-shrink-0"
+        />
         <div className="flex-1">
           <h3 className="text-lg font-bold text-gray-900 dark:text-white">
             {displayItemName}

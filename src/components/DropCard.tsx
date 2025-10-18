@@ -29,8 +29,8 @@ export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite, maxH
   // 使用本地圖片，直接使用工具函數
   const monsterIconUrl = getMonsterImageUrl(drop.mobId)
 
-  // 物品圖示 URL（itemId = 0 是 Meso，不顯示圖示）
-  const itemIconUrl = drop.itemId === 0 ? null : getItemImageUrl(drop.itemId)
+  // 物品圖示 URL
+  const itemIconUrl = getItemImageUrl(drop.itemId)
 
   return (
     <div
@@ -88,17 +88,13 @@ export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite, maxH
       <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
         <div className="flex items-center gap-2 mb-2">
           {/* 物品圖示 */}
-          {itemIconUrl ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={itemIconUrl}
-              alt={displayItemName}
-              className="w-8 h-8 object-contain flex-shrink-0"
-              
-            />
-          ) : (
-            <span className="text-lg">💰</span>
-          )}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={itemIconUrl}
+            alt={displayItemName}
+            className="w-8 h-8 object-contain flex-shrink-0"
+
+          />
           <div className="flex-1 flex items-center gap-2">
             <span className="text-sm font-medium text-gray-600 dark:text-gray-400">{t('card.drop')}:</span>
             <span className="text-sm font-bold text-blue-600 dark:text-blue-400">
