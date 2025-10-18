@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import type { GachaMachine, GachaItem } from '@/types'
 import { getItemImageUrl } from '@/lib/image-utils'
+import { clientLogger } from '@/lib/logger'
 
 interface GachaMachineModalProps {
   isOpen: boolean
@@ -41,7 +42,7 @@ export function GachaMachineModal({ isOpen, onClose }: GachaMachineModalProps) {
         )
         setMachines(loadedMachines)
       } catch (error) {
-        console.error('載入轉蛋機資料失敗:', error)
+        clientLogger.error('載入轉蛋機資料失敗', error)
       } finally {
         setIsLoading(false)
       }
