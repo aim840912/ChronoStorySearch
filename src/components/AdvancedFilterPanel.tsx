@@ -79,17 +79,6 @@ export function AdvancedFilterPanel({
     })
   }
 
-  // 重置篩選
-  const handleReset = () => {
-    onFilterChange({
-      dataType: 'all',
-      itemCategories: [],
-      jobClasses: [],
-      levelRange: { min: null, max: null },
-      logicOperator: 'AND',
-      enabled: false,
-    })
-  }
 
   // 計算已啟用篩選數量
   const activeFilterCount = [
@@ -110,33 +99,20 @@ export function AdvancedFilterPanel({
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
           {/* 標題與邏輯運算子 */}
           <div className="mb-6">
-            {/* 標題列 - 包含清除按鈕和關閉按鈕 */}
+            {/* 標題列 - 包含標題和關閉按鈕 */}
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                 {t('filter.advancedTitle')}
               </h3>
-              <div className="flex items-center gap-2">
-                {activeFilterCount > 0 && (
-                  <button
-                    onClick={handleReset}
-                    className="px-4 py-1.5 rounded-lg font-medium text-sm transition-all bg-red-500 hover:bg-red-600 text-white shadow-sm flex items-center gap-1"
-                  >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                    清除篩選
-                  </button>
-                )}
-                <button
-                  onClick={onToggle}
-                  className="p-1.5 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-                  aria-label="關閉篩選面板"
-                >
-                  <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
+              <button
+                onClick={onToggle}
+                className="p-1.5 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                aria-label="關閉篩選面板"
+              >
+                <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
             </div>
 
             {/* 邏輯運算子切換 */}

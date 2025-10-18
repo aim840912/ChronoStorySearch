@@ -221,6 +221,11 @@ export default function Home() {
     }
   }
 
+  // 重置進階篩選
+  const handleResetAdvancedFilter = () => {
+    setAdvancedFilter(getDefaultAdvancedFilter())
+  }
+
   // 分享處理函數
   const handleShare = async () => {
     if (!search.searchTerm.trim()) return
@@ -302,6 +307,7 @@ export default function Home() {
             isAdvancedFilterExpanded={isAdvancedFilterExpanded}
             onAdvancedFilterToggle={() => setIsAdvancedFilterExpanded(!isAdvancedFilterExpanded)}
             advancedFilterCount={advancedFilterCount}
+            onResetAdvancedFilter={handleResetAdvancedFilter}
           />
 
           {/* 進階篩選面板 */}
