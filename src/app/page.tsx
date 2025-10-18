@@ -13,6 +13,7 @@ import { useSearchWithSuggestions } from '@/hooks/useSearchWithSuggestions'
 import { useDataManagement } from '@/hooks/useDataManagement'
 import { useSearchLogic } from '@/hooks/useSearchLogic'
 import { useFilterLogic } from '@/hooks/useFilterLogic'
+import { useInfiniteScroll } from '@/hooks/useInfiniteScroll'
 import { SearchBar } from '@/components/SearchBar'
 import { FilterButtons } from '@/components/FilterButtons'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
@@ -103,6 +104,28 @@ export default function Home() {
     advancedFilter,
     itemAttributesMap,
   })
+
+  // 無限滾動 - 只在「全部」模式且有搜尋時啟用
+  const shouldUseInfiniteScroll = filterMode === 'all' && debouncedSearchTerm.trim() !== ''
+
+  const monstersInfiniteScroll = useInfiniteScroll({
+    items: uniqueAllMonsters,
+    enabled: shouldUseInfiniteScroll,
+  })
+
+  const itemsInfiniteScroll = useInfiniteScroll({
+    items: uniqueAllItems,
+    enabled: shouldUseInfiniteScroll,
+  })
+
+  // 決定要顯示的資料（使用無限滾動或完整資料）
+  const displayedMonsters = shouldUseInfiniteScroll
+    ? monstersInfiniteScroll.displayedItems
+    : uniqueAllMonsters
+
+  const displayedItems = shouldUseInfiniteScroll
+    ? itemsInfiniteScroll.displayedItems
+    : uniqueAllItems
 
   // 處理 URL 參數 - 搜尋詞和自動開啟對應的 modal
   useEffect(() => {
@@ -385,39 +408,61 @@ export default function Home() {
                     /* 有搜尋詞：分區顯示怪物和物品 */
                     <>
                       {/* 怪物區塊 */}
-                      {shouldShowMonsters && uniqueAllMonsters.length > 0 && (
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
-                          {uniqueAllMonsters.map((monster) => (
-                            <MonsterCard
-                              key={monster.mobId}
-                              mobId={monster.mobId}
-                              mobName={monster.mobName}
-                              chineseMobName={monster.chineseMobName}
-                              dropCount={monster.dropCount}
-                              onCardClick={modals.openMonsterModal}
-                              isFavorite={isFavorite(monster.mobId)}
-                              onToggleFavorite={toggleFavorite}
-                            />
-                          ))}
-                        </div>
+                      {shouldShowMonsters && displayedMonsters.length > 0 && (
+                        <>
+                          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
+                            {displayedMonsters.map((monster) => (
+                              <MonsterCard
+                                key={monster.mobId}
+                                mobId={monster.mobId}
+                                mobName={monster.mobName}
+                                chineseMobName={monster.chineseMobName}
+                                dropCount={monster.dropCount}
+                                onCardClick={modals.openMonsterModal}
+                                isFavorite={isFavorite(monster.mobId)}
+                                onToggleFavorite={toggleFavorite}
+                              />
+                            ))}
+                          </div>
+                          {/* 無限滾動觸發器 */}
+                          {monstersInfiniteScroll.hasMore && (
+                            <div
+                              ref={monstersInfiniteScroll.observerTarget}
+                              className="h-20 flex items-center justify-center max-w-7xl mx-auto mt-4"
+                            >
+                              <div className="text-gray-500 dark:text-gray-400 text-sm">載入更多怪物...</div>
+                            </div>
+                          )}
+                        </>
                       )}
 
                       {/* 物品區塊 */}
-                      {shouldShowItems && uniqueAllItems.length > 0 && (
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
-                          {uniqueAllItems.map((item) => (
-                            <ItemCard
-                              key={item.itemId}
-                              itemId={item.itemId}
-                              itemName={item.itemName}
-                              chineseItemName={item.chineseItemName}
-                              monsterCount={item.monsterCount}
-                              onCardClick={modals.openItemModal}
-                              isFavorite={isItemFavorite(item.itemId)}
-                              onToggleFavorite={toggleItemFavorite}
-                            />
-                          ))}
-                        </div>
+                      {shouldShowItems && displayedItems.length > 0 && (
+                        <>
+                          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
+                            {displayedItems.map((item) => (
+                              <ItemCard
+                                key={item.itemId}
+                                itemId={item.itemId}
+                                itemName={item.itemName}
+                                chineseItemName={item.chineseItemName}
+                                monsterCount={item.monsterCount}
+                                onCardClick={modals.openItemModal}
+                                isFavorite={isItemFavorite(item.itemId)}
+                                onToggleFavorite={toggleItemFavorite}
+                              />
+                            ))}
+                          </div>
+                          {/* 無限滾動觸發器 */}
+                          {itemsInfiniteScroll.hasMore && (
+                            <div
+                              ref={itemsInfiniteScroll.observerTarget}
+                              className="h-20 flex items-center justify-center max-w-7xl mx-auto mt-4"
+                            >
+                              <div className="text-gray-500 dark:text-gray-400 text-sm">載入更多物品...</div>
+                            </div>
+                          )}
+                        </>
                       )}
                     </>
                   )}
