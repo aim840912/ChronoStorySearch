@@ -1,13 +1,28 @@
 /**
  * 圖片工具函數
  * 提供圖片路徑獲取功能，避免載入不存在的圖片產生 404 錯誤
- * 支援 Cloudflare R2 CDN 以降低 Vercel Edge Requests
+ * 強制使用 Cloudflare R2 CDN 以降低 Vercel Edge Requests
  */
 
 import imageManifest from '@/../data/available-images.json'
 
 // Cloudflare R2 Public URL（從環境變數讀取）
 const R2_PUBLIC_URL = process.env.NEXT_PUBLIC_R2_PUBLIC_URL
+
+// 檢查 R2 URL 是否已設置
+if (!R2_PUBLIC_URL) {
+  const errorMsg = '❌ 環境變數 NEXT_PUBLIC_R2_PUBLIC_URL 未設置！圖片將無法載入。'
+
+  if (process.env.NODE_ENV === 'production') {
+    // 生產環境：拋出錯誤
+    throw new Error(errorMsg)
+  } else {
+    // 開發環境：顯示警告
+    console.warn('⚠️ ' + errorMsg)
+    console.warn('請在 .env.local 中設置：')
+    console.warn('NEXT_PUBLIC_R2_PUBLIC_URL=https://pub-a1c4c32d4c65452098ab977db77e349e.r2.dev')
+  }
+}
 
 // 建立 Set 以加快查找速度
 const availableItemImages = new Set(imageManifest.items)
@@ -35,7 +50,7 @@ export function hasMonsterImage(mobId: number): boolean {
  * 取得物品圖片 URL
  * @param itemId 物品 ID
  * @param fallback 預設圖片路徑（可選）
- * @returns 圖片 URL（優先使用 R2 CDN）
+ * @returns 圖片 URL（強制使用 R2 CDN）
  */
 export function getItemImageUrl(
   itemId: number,
@@ -45,20 +60,20 @@ export function getItemImageUrl(
     return fallback
   }
 
-  // 如果設定了 R2 Public URL，使用 R2 CDN
-  if (R2_PUBLIC_URL) {
-    return `${R2_PUBLIC_URL}/images/items/${itemId}.png`
+  // 強制使用 R2 CDN（不再 fallback 到本地路徑）
+  if (!R2_PUBLIC_URL) {
+    console.error(`無法載入物品圖片 ${itemId}：R2_PUBLIC_URL 未設置`)
+    return fallback
   }
 
-  // 否則使用本地路徑（向後兼容）
-  return `/images/items/${itemId}.png`
+  return `${R2_PUBLIC_URL}/images/items/${itemId}.png`
 }
 
 /**
  * 取得怪物圖片 URL
  * @param mobId 怪物 ID
  * @param fallback 預設圖片路徑（可選）
- * @returns 圖片 URL（優先使用 R2 CDN）
+ * @returns 圖片 URL（強制使用 R2 CDN）
  */
 export function getMonsterImageUrl(
   mobId: number,
@@ -68,11 +83,11 @@ export function getMonsterImageUrl(
     return fallback
   }
 
-  // 如果設定了 R2 Public URL，使用 R2 CDN
-  if (R2_PUBLIC_URL) {
-    return `${R2_PUBLIC_URL}/images/monsters/${mobId}.png`
+  // 強制使用 R2 CDN（不再 fallback 到本地路徑）
+  if (!R2_PUBLIC_URL) {
+    console.error(`無法載入怪物圖片 ${mobId}：R2_PUBLIC_URL 未設置`)
+    return fallback
   }
 
-  // 否則使用本地路徑（向後兼容）
-  return `/images/monsters/${mobId}.png`
+  return `${R2_PUBLIC_URL}/images/monsters/${mobId}.png`
 }
