@@ -2,18 +2,30 @@
 
 import { useState, useEffect, useMemo } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
-import type { GachaMachine, GachaItem } from '@/types'
+import type { GachaMachine, GachaItem, EnhancedGachaItem } from '@/types'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { clientLogger } from '@/lib/logger'
+
+/**
+ * Enhanced JSON 的轉蛋機格式
+ */
+interface EnhancedGachaMachineRaw {
+  machineId: number
+  machineName: string
+  chineseMachineName?: string
+  description: string
+  totalItems: number
+  items: EnhancedGachaItem[]
+}
 
 /**
  * 正規化 Enhanced JSON 格式的轉蛋機資料
  * 將 Enhanced JSON 的欄位映射到 GachaMachine 型別
  */
-function normalizeGachaMachine(rawData: any): GachaMachine {
+function normalizeGachaMachine(rawData: EnhancedGachaMachineRaw): GachaMachine {
   return {
     ...rawData,
-    items: rawData.items.map((item: any) => ({
+    items: rawData.items.map((item) => ({
       // 先展開所有原始欄位
       ...item,
 
@@ -35,7 +47,7 @@ function normalizeGachaMachine(rawData: any): GachaMachine {
       category: item.equipment?.category || item.category,
       subcategory: item.subType || item.subcategory,
       overallCategory: item.type || item.overallCategory,
-    })),
+    } as GachaItem)),
   }
 }
 

@@ -53,14 +53,12 @@ export function ItemModal({
   // 懶加載物品屬性資料
   const {
     itemAttributesMap,
-    isLoading: _isLoadingAttributes,
     loadData: loadItemAttributes,
   } = useLazyItemAttributes()
 
   // 懶加載怪物資訊資料 (用於顯示怪物血量)
   const {
     monsterHPMap,
-    isLoading: _isLoadingMobInfo,
     loadData: loadMobInfo,
   } = useLazyMobInfo()
 

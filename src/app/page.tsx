@@ -72,7 +72,6 @@ export default function Home() {
   // 懶加載物品屬性資料 (用於進階篩選)
   const {
     itemAttributesMap,
-    isLoading: _isLoadingItemAttributes,
     loadData: loadItemAttributes,
   } = useLazyItemAttributes()
 

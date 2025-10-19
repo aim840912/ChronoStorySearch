@@ -1,4 +1,4 @@
-import type { GachaItem, ItemAttributes, ItemRequirements, ItemClasses, ItemEquipmentStats, ItemEquipment, StatVariation, ScrollInfo } from '@/types'
+import type { GachaItem, ItemAttributes, ItemRequirements, ItemClasses, ItemEquipmentStats, ItemEquipment, StatVariation, ScrollInfo, EnhancedGachaItem, EnhancedRequirements, EnhancedStats, EnhancedStatVariation } from '@/types'
 
 /**
  * 轉蛋物品屬性轉換工具
@@ -31,7 +31,7 @@ const STAT_FIELD_MAPPING: Record<string, keyof ItemEquipmentStats> = {
 /**
  * 將轉蛋物品的 stats 轉換為 ItemEquipmentStats 格式
  */
-function convertGachaStatsToEquipmentStats(gachaStats: Record<string, number> | undefined): ItemEquipmentStats {
+function convertGachaStatsToEquipmentStats(gachaStats: Record<string, number | undefined> | undefined): ItemEquipmentStats {
   const stats: ItemEquipmentStats = {
     attack_speed: null,
     str: null,
@@ -145,9 +145,9 @@ function convertGachaCategoryToEquipmentCategory(
  * 將轉蛋物品的 statVariation (camelCase) 轉換為 stat_variation (snake_case)
  * Enhanced JSON 使用 camelCase，item-attributes.json 使用 snake_case
  */
-function convertStatVariation(gachaItem: any): Record<string, StatVariation> | undefined {
+function convertStatVariation(gachaItem: GachaItem): Record<string, StatVariation> | undefined {
   // 檢查是否有 statVariation (camelCase from Enhanced JSON)
-  const variation = gachaItem.statVariation || gachaItem.stat_variation
+  const variation = (gachaItem as EnhancedGachaItem).equipment?.statVariation
 
   if (!variation || typeof variation !== 'object') {
     return undefined
@@ -156,7 +156,7 @@ function convertStatVariation(gachaItem: any): Record<string, StatVariation> | u
   // 確保所有欄位符合 StatVariation 介面
   const result: Record<string, StatVariation> = {}
 
-  Object.entries(variation).forEach(([key, value]: [string, any]) => {
+  Object.entries(variation).forEach(([key, value]) => {
     // 確保值有正確的結構
     if (value && typeof value === 'object' && ('min' in value || 'max' in value)) {
       result[key] = {
@@ -172,7 +172,7 @@ function convertStatVariation(gachaItem: any): Record<string, StatVariation> | u
 /**
  * 將 Enhanced JSON 的 requirements (camelCase) 標準化為 snake_case
  */
-function normalizeEnhancedRequirements(requirements: any): ItemRequirements {
+function normalizeEnhancedRequirements(requirements: EnhancedRequirements | undefined): ItemRequirements {
   if (!requirements) {
     return {
       req_level: null,
@@ -197,7 +197,7 @@ function normalizeEnhancedRequirements(requirements: any): ItemRequirements {
 /**
  * 將 Enhanced JSON 的 stats (camelCase) 標準化為 snake_case
  */
-function normalizeEnhancedStats(stats: any): ItemEquipmentStats {
+function normalizeEnhancedStats(stats: EnhancedStats | undefined): ItemEquipmentStats {
   if (!stats) {
     return {
       attack_speed: null,
@@ -242,14 +242,14 @@ function normalizeEnhancedStats(stats: any): ItemEquipmentStats {
 /**
  * 將 Enhanced JSON 的 statVariation (camelCase) 標準化為 stat_variation (snake_case)
  */
-function normalizeEnhancedStatVariation(statVariation: any): Record<string, StatVariation> | undefined {
+function normalizeEnhancedStatVariation(statVariation: EnhancedStatVariation | undefined): Record<string, StatVariation> | undefined {
   if (!statVariation || typeof statVariation !== 'object') {
     return undefined
   }
 
   const result: Record<string, StatVariation> = {}
 
-  Object.entries(statVariation).forEach(([key, value]: [string, any]) => {
+  Object.entries(statVariation).forEach(([key, value]) => {
     if (value && typeof value === 'object' && ('min' in value || 'max' in value)) {
       result[key] = {
         min: value.min ?? null,
@@ -266,7 +266,7 @@ function normalizeEnhancedStatVariation(statVariation: any): Record<string, Stat
  * Enhanced JSON 已經有完整的 equipment 或 scroll 資料，但使用 camelCase 命名
  */
 function normalizeEnhancedJSONToItemAttributes(
-  gachaItem: any,
+  gachaItem: EnhancedGachaItem,
   itemId: number
 ): ItemAttributes {
   // 條件性創建 equipment 物件（只在有 equipment 欄位時）
@@ -349,11 +349,12 @@ export function convertGachaItemToAttributes(
   }
 
   // 優先檢查 Enhanced JSON 格式（有 equipment 或 scroll 物件）
-  const hasEquipment = !!(gachaItem as any).equipment
-  const hasScroll = !!(gachaItem as any).scroll
+  const enhancedItem = gachaItem as EnhancedGachaItem
+  const hasEquipment = !!enhancedItem.equipment
+  const hasScroll = !!enhancedItem.scroll
 
   if (hasEquipment || hasScroll) {
-    const result = normalizeEnhancedJSONToItemAttributes(gachaItem, itemId)
+    const result = normalizeEnhancedJSONToItemAttributes(enhancedItem, itemId)
     return result
   }
 

@@ -338,7 +338,7 @@ export function useFilterLogic({
     }
 
     return items
-  }, [filterMode, filteredDrops, gachaMachines, debouncedSearchTerm, advancedFilter])
+  }, [filterMode, filteredDrops, gachaMachines, debouncedSearchTerm, advancedFilter, itemAttributesMap])
 
   // 建立隨機混合的卡片資料（怪物 + 物品隨機排序）- 只在「全部」模式且無搜尋時使用
   const mixedCards = useMemo(() => {

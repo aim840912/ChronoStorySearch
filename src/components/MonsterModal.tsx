@@ -47,7 +47,6 @@ export function MonsterModal({
   // 懶加載怪物資訊資料
   const {
     data: mobInfoData,
-    isLoading: _isLoadingMobInfo,
     loadData: loadMobInfo,
   } = useLazyMobInfo()
 

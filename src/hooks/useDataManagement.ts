@@ -1,18 +1,30 @@
 'use client'
 
 import { useState, useEffect, useMemo, useCallback } from 'react'
-import type { DropItem, GachaMachine } from '@/types'
+import type { DropItem, GachaMachine, GachaItem, EnhancedGachaItem } from '@/types'
 import { clientLogger } from '@/lib/logger'
 import dropsData from '@/../data/drops.json'
+
+/**
+ * Enhanced JSON 的轉蛋機格式
+ */
+interface EnhancedGachaMachineRaw {
+  machineId: number
+  machineName: string
+  chineseMachineName?: string
+  description: string
+  totalItems: number
+  items: EnhancedGachaItem[]
+}
 
 /**
  * 正規化 Enhanced JSON 格式的轉蛋機資料
  * 將 Enhanced JSON 的欄位映射到 GachaMachine 型別
  */
-function normalizeGachaMachine(rawData: any): GachaMachine {
+function normalizeGachaMachine(rawData: EnhancedGachaMachineRaw): GachaMachine {
   return {
     ...rawData,
-    items: rawData.items.map((item: any) => ({
+    items: rawData.items.map((item) => ({
       // 先展開所有原始欄位
       ...item,
 
@@ -34,7 +46,7 @@ function normalizeGachaMachine(rawData: any): GachaMachine {
       category: item.equipment?.category || item.category,
       subcategory: item.subType || item.subcategory,
       overallCategory: item.type || item.overallCategory,
-    })),
+    } as GachaItem)),
   }
 }
 

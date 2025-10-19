@@ -22,11 +22,13 @@ export function MonsterCard({
   mobId,
   mobName,
   chineseMobName,
-  dropCount: _dropCount,
+  dropCount,
   onCardClick,
   isFavorite,
   onToggleFavorite,
 }: MonsterCardProps) {
+  // dropCount is part of props but not used in this component
+  void dropCount
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
 

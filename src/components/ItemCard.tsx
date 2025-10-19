@@ -24,12 +24,14 @@ export function ItemCard({
   itemId,
   itemName,
   chineseItemName,
-  monsterCount: _monsterCount,
+  monsterCount,
   onCardClick,
   isFavorite,
   onToggleFavorite,
   source,
 }: ItemCardProps) {
+  // monsterCount is part of props but not used in this component
+  void monsterCount
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
 

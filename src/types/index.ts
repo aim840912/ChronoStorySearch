@@ -87,7 +87,7 @@ export interface ItemRequiredStats {
 }
 
 // 物品屬性（動態鍵值對）
-export type ItemStats = Record<string, number>
+export type ItemStats = Record<string, number | undefined>
 
 // 物品版本資訊
 export interface ItemVersion {
@@ -273,6 +273,90 @@ export interface ItemAttributes {
   sub_type: string | null
   equipment?: ItemEquipment
   scroll?: ScrollInfo
+}
+
+// Enhanced JSON 格式的類型定義（用於 gacha-utils.ts 轉換）
+// Enhanced JSON 使用 camelCase 命名，需要轉換為 snake_case
+
+export interface EnhancedRequirements {
+  reqLevel: number | null
+  reqStr: number | null
+  reqDex: number | null
+  reqInt: number | null
+  reqLuk: number | null
+  reqFam: number | null
+}
+
+export interface EnhancedStats {
+  attackSpeed: number | null
+  str: number | null
+  dex: number | null
+  int: number | null
+  luk: number | null
+  watk: number | null
+  matk: number | null
+  accuracy: number | null
+  avoidability: number | null
+  speed: number | null
+  jump: number | null
+  hp: number | null
+  mp: number | null
+  wdef: number | null
+  mdef: number | null
+  upgrades: number | null
+}
+
+export interface EnhancedStatVariation {
+  [key: string]: {
+    min: number | null
+    max: number | null
+  }
+}
+
+export interface EnhancedEquipment {
+  category: string
+  requirements: EnhancedRequirements
+  classes: ItemClasses
+  stats: EnhancedStats
+  statVariation?: EnhancedStatVariation
+}
+
+export interface EnhancedScroll {
+  category: string
+  successRate: number
+  destroyRate: number
+  stats: ScrollStats
+}
+
+export interface EnhancedGachaItem {
+  // 轉蛋機基本欄位
+  chineseName: string
+  probability: string
+  chance: number
+  itemId: string | number
+
+  // Enhanced JSON 特有欄位（camelCase）
+  itemName?: string
+  itemTypeId?: number
+  salePrice?: number | null
+  maxStackCount?: number | null
+  untradeable?: boolean | null
+  itemDescription?: string | null
+  type?: string
+  subType?: string | null
+  equipment?: EnhancedEquipment
+  scroll?: EnhancedScroll
+
+  // 舊格式欄位（向下兼容）
+  name?: string
+  description?: string
+  category?: string
+  subcategory?: string
+  overallCategory?: string
+  availability?: ItemAvailability
+  requiredStats?: Partial<ItemRequiredStats>  // 使用 Partial 允許部分屬性
+  stats?: ItemStats
+  version?: ItemVersion
 }
 
 // 進階篩選相關類型

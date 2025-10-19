@@ -20,7 +20,7 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
 
     // 過濾出非 null 的屬性
     const nonNullStats = Object.entries(scroll.stats)
-      .filter(([_, value]) => value !== null && value !== 0)
+      .filter(([, value]) => value !== null && value !== 0)
       .map(([key, value]) => ({ key, value: value as number }))
 
     return (
