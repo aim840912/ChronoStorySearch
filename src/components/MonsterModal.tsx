@@ -1,13 +1,13 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { DropItem, MobInfo, Language } from '@/types'
+import type { DropItem, Language } from '@/types'
 import { DropItemCard } from './DropItemCard'
 import { MonsterStatsCard } from './MonsterStatsCard'
 import { clientLogger } from '@/lib/logger'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
-import mobInfoData from '@/../data/mob-info.json'
+import { useLazyMobInfo } from '@/hooks/useLazyData'
 
 interface MonsterModalProps {
   isOpen: boolean
@@ -44,6 +44,13 @@ export function MonsterModal({
   const [showToast, setShowToast] = useState(false)
   const [toastMessage, setToastMessage] = useState('')
 
+  // 懶加載怪物資訊資料
+  const {
+    data: mobInfoData,
+    isLoading: _isLoadingMobInfo,
+    loadData: loadMobInfo,
+  } = useLazyMobInfo()
+
   // 語言切換函數
   const toggleLanguage = () => {
     const newLanguage: Language = language === 'zh-TW' ? 'en' : 'zh-TW'
@@ -78,11 +85,18 @@ export function MonsterModal({
 
   // 查找怪物詳細資訊
   const mobInfo = useMemo(() => {
-    if (!monsterId) return null
+    if (!monsterId || !mobInfoData) return null
     return (
-      (mobInfoData as MobInfo[]).find((info) => info.mob.mob_id === String(monsterId)) || null
+      mobInfoData.find((info) => info.mob.mob_id === String(monsterId)) || null
     )
-  }, [monsterId])
+  }, [monsterId, mobInfoData])
+
+  // 當 Modal 開啟時載入怪物資訊資料
+  useEffect(() => {
+    if (isOpen) {
+      loadMobInfo()
+    }
+  }, [isOpen, loadMobInfo])
 
   // ESC 鍵關閉 modal
   useEffect(() => {

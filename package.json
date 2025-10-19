@@ -12,7 +12,14 @@
     "type-check": "tsc --noEmit",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
-    "generate-images": "node scripts/generate-image-manifest.js"
+    "generate-images": "node scripts/generate-image-manifest.js",
+    "r2:upload": "bash scripts/upload-to-r2-wrangler.sh",
+    "r2:sync": "~/rclone copy public/images r2:maplestory-images/images --progress --transfers=16 --checkers=16",
+    "r2:list": "~/rclone ls r2:maplestory-images/images | head -20",
+    "r2:check": "~/rclone check public/images r2:maplestory-images/images",
+    "vercel:pause": "node scripts/vercel-manage.js pause",
+    "vercel:unpause": "node scripts/vercel-manage.js unpause",
+    "vercel:status": "node scripts/vercel-manage.js status"
   },
   "dependencies": {
     "next": "15.5.5",
@@ -30,6 +37,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.5",
     "tailwindcss": "^4",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "wrangler": "^4.43.0"
   }
 }

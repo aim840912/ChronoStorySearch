@@ -33,13 +33,21 @@ export async function GET() {
     const dropData = await getDropData()
     apiLogger.info(`成功讀取 ${dropData.length} 筆掉落資料`)
 
-    return NextResponse.json({
-      success: true,
-      data: dropData,
-      count: dropData.length,
-      timestamp: new Date().toISOString(),
-      message: '成功讀取楓之谷掉落資料',
-    })
+    return NextResponse.json(
+      {
+        success: true,
+        data: dropData,
+        count: dropData.length,
+        timestamp: new Date().toISOString(),
+        message: '成功讀取楓之谷掉落資料',
+      },
+      {
+        headers: {
+          // 快取 1 小時，CDN 快取 1 小時，過期後可使用舊資料並在背景重新驗證（24 小時內）
+          'Cache-Control': 'public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400',
+        },
+      }
+    )
   } catch (error) {
     apiLogger.error('API route 錯誤', error)
 

@@ -1,13 +1,13 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { DropItem, ItemAttributes, Language, GachaMachine } from '@/types'
+import type { DropItem, Language, GachaMachine } from '@/types'
 import { MonsterDropCard } from './MonsterDropCard'
 import { ItemAttributesCard } from './ItemAttributesCard'
 import { clientLogger } from '@/lib/logger'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
-import itemAttributesData from '@/../data/item-attributes.json'
+import { useLazyItemAttributes, useLazyMobInfo } from '@/hooks/useLazyData'
 
 interface ItemModalProps {
   isOpen: boolean
@@ -16,7 +16,6 @@ interface ItemModalProps {
   itemName: string
   allDrops: DropItem[]
   gachaMachines: GachaMachine[]
-  monsterHPMap: Map<number, number | null>
   isFavorite: boolean
   onToggleFavorite: (itemId: number, itemName: string) => void
   // 怪物相關 props
@@ -38,7 +37,6 @@ export function ItemModal({
   itemName,
   allDrops,
   gachaMachines,
-  monsterHPMap,
   isFavorite,
   onToggleFavorite,
   isMonsterFavorite,
@@ -50,6 +48,20 @@ export function ItemModal({
   const isDev = process.env.NODE_ENV === 'development'
   const [showToast, setShowToast] = useState(false)
   const [toastMessage, setToastMessage] = useState('')
+
+  // 懶加載物品屬性資料
+  const {
+    itemAttributesMap,
+    isLoading: _isLoadingAttributes,
+    loadData: loadItemAttributes,
+  } = useLazyItemAttributes()
+
+  // 懶加載怪物資訊資料 (用於顯示怪物血量)
+  const {
+    monsterHPMap,
+    isLoading: _isLoadingMobInfo,
+    loadData: loadMobInfo,
+  } = useLazyMobInfo()
 
   // 語言切換函數
   const toggleLanguage = () => {
@@ -112,12 +124,16 @@ export function ItemModal({
   // 查找物品屬性資料
   const itemAttributes = useMemo(() => {
     if (!itemId && itemId !== 0) return null
-    return (
-      (itemAttributesData as ItemAttributes[]).find(
-        (attr) => attr.item_id === String(itemId)
-      ) || null
-    )
-  }, [itemId])
+    return itemAttributesMap.get(itemId) || null
+  }, [itemId, itemAttributesMap])
+
+  // 當 Modal 開啟時載入物品屬性資料與怪物資訊資料
+  useEffect(() => {
+    if (isOpen) {
+      loadItemAttributes()
+      loadMobInfo()
+    }
+  }, [isOpen, loadItemAttributes, loadMobInfo])
 
   // ESC 鍵關閉 modal
   useEffect(() => {

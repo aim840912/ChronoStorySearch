@@ -14,6 +14,7 @@ import { useDataManagement } from '@/hooks/useDataManagement'
 import { useSearchLogic } from '@/hooks/useSearchLogic'
 import { useFilterLogic } from '@/hooks/useFilterLogic'
 import { useInfiniteScroll } from '@/hooks/useInfiniteScroll'
+import { useLazyItemAttributes } from '@/hooks/useLazyData'
 import { SearchBar } from '@/components/SearchBar'
 import { FilterButtons } from '@/components/FilterButtons'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
@@ -64,9 +65,15 @@ export default function Home() {
     gachaMachines,
     isLoading,
     initialRandomDrops,
-    itemAttributesMap,
-    monsterHPMap,
+    loadGachaMachines,
   } = useDataManagement()
+
+  // 懶加載物品屬性資料 (用於進階篩選)
+  const {
+    itemAttributesMap,
+    isLoading: _isLoadingItemAttributes,
+    loadData: loadItemAttributes,
+  } = useLazyItemAttributes()
 
   // 搜尋邏輯 Hook - 處理搜尋索引和建議
   const { suggestions } = useSearchLogic({
@@ -138,6 +145,20 @@ export default function Home() {
     ? itemsInfiniteScroll.displayedItems
     : uniqueAllItems
 
+  // 延遲載入轉蛋機 - 當使用者開始搜尋時才載入
+  useEffect(() => {
+    if (debouncedSearchTerm.trim() !== '') {
+      loadGachaMachines()
+    }
+  }, [debouncedSearchTerm, loadGachaMachines])
+
+  // 延遲載入物品屬性 - 當使用者啟用進階篩選時才載入
+  useEffect(() => {
+    if (advancedFilter.enabled) {
+      loadItemAttributes()
+    }
+  }, [advancedFilter.enabled, loadItemAttributes])
+
   // 處理 URL 參數 - 搜尋詞和自動開啟對應的 modal
   useEffect(() => {
     // 處理搜尋關鍵字參數
@@ -161,9 +182,7 @@ export default function Home() {
         if (monster) {
           // 使用顯示名稱（根據當前語言，有中文名稱且語言為中文時顯示中文，否則顯示英文）
           const displayName = (language === 'zh-TW' && monster.chineseMobName) ? monster.chineseMobName : monster.mobName
-          modals.setSelectedMonsterId(monsterId)
-          modals.setSelectedMonsterName(displayName)
-          modals.setIsMonsterModalOpen(true)
+          modals.openMonsterModal(monsterId, displayName)
           clientLogger.info(`從 URL 參數開啟怪物 modal: ${displayName} (${monsterId})`)
         }
       }
@@ -176,9 +195,7 @@ export default function Home() {
         if (item) {
           // 使用顯示名稱（根據當前語言，有中文名稱且語言為中文時顯示中文，否則顯示英文）
           const displayName = (language === 'zh-TW' && item.chineseItemName) ? item.chineseItemName : item.itemName
-          modals.setSelectedItemId(parsedItemId)
-          modals.setSelectedItemName(displayName)
-          modals.setIsItemModalOpen(true)
+          modals.openItemModal(parsedItemId, displayName)
           clientLogger.info(`從 URL 參數開啟物品 modal: ${displayName} (${parsedItemId})`)
         }
       }
@@ -569,7 +586,6 @@ export default function Home() {
         itemName={modals.selectedItemName}
         allDrops={allDrops}
         gachaMachines={gachaMachines}
-        monsterHPMap={monsterHPMap}
         isFavorite={modals.selectedItemId !== null ? isItemFavorite(modals.selectedItemId) : false}
         onToggleFavorite={toggleItemFavorite}
         isMonsterFavorite={isFavorite}

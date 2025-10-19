@@ -55,21 +55,38 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId }: GachaMa
   }
 
   // 載入所有轉蛋機資料
+  // 優化：使用動態 import 而非 API 呼叫，完全消除 Edge Requests
   useEffect(() => {
     if (!isOpen || machines.length > 0) return
 
     async function loadMachines() {
       setIsLoading(true)
       try {
-        const machineIds = [1, 2, 3, 4, 5, 6, 7]
-        const loadedMachines = await Promise.all(
-          machineIds.map(async (id) => {
-            const response = await fetch(`/api/gacha/${id}`)
-            if (!response.ok) throw new Error(`Failed to load machine ${id}`)
-            return response.json() as Promise<GachaMachine>
-          })
-        )
+        clientLogger.info('載入轉蛋機資料（靜態 import）...')
+
+        // 使用動態 import 載入所有轉蛋機資料（不產生 API 請求）
+        const [m1, m2, m3, m4, m5, m6, m7] = await Promise.all([
+          import('@/../data/gacha/machine-1.json'),
+          import('@/../data/gacha/machine-2.json'),
+          import('@/../data/gacha/machine-3.json'),
+          import('@/../data/gacha/machine-4.json'),
+          import('@/../data/gacha/machine-5.json'),
+          import('@/../data/gacha/machine-6.json'),
+          import('@/../data/gacha/machine-7.json'),
+        ])
+
+        const loadedMachines: GachaMachine[] = [
+          m1.default as unknown as GachaMachine,
+          m2.default as unknown as GachaMachine,
+          m3.default as unknown as GachaMachine,
+          m4.default as unknown as GachaMachine,
+          m5.default as unknown as GachaMachine,
+          m6.default as unknown as GachaMachine,
+          m7.default as unknown as GachaMachine,
+        ]
+
         setMachines(loadedMachines)
+        clientLogger.info(`成功載入 ${loadedMachines.length} 台轉蛋機（靜態資料）`)
       } catch (error) {
         clientLogger.error('載入轉蛋機資料失敗', error)
       } finally {
