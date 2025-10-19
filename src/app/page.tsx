@@ -44,6 +44,7 @@ export default function Home() {
 
   // 追蹤首次掛載，避免初始載入時觸發滾動
   const isFirstMount = useRef(true)
+  const isFirstSearchChange = useRef(true)
 
   // 計算已啟用的進階篩選數量
   const advancedFilterCount = [
@@ -115,13 +116,14 @@ export default function Home() {
     favoriteItems,
     allDrops,
     initialRandomDrops,
-    debouncedSearchTerm,
+    debouncedSearchTerm, // 延遲搜尋詞（已 debounce）
     advancedFilter,
     itemAttributesMap,
     gachaMachines,
   })
 
   // 無限滾動 - 在「全部」模式且（有搜尋 或 有進階篩選）時啟用
+  // 使用 debouncedSearchTerm 確保資料已過濾後才啟用，避免載入未過濾的全部資料
   const shouldUseInfiniteScroll =
     filterMode === 'all' &&
     (debouncedSearchTerm.trim() !== '' || advancedFilter.enabled)
@@ -145,12 +147,21 @@ export default function Home() {
     ? itemsInfiniteScroll.displayedItems
     : uniqueAllItems
 
-  // 延遲載入轉蛋機 - 當使用者開始搜尋時才載入
+  // 延遲載入轉蛋機 - 當使用者開始搜尋或選擇轉蛋物品篩選時才載入
   useEffect(() => {
-    if (debouncedSearchTerm.trim() !== '') {
+    // 當有搜尋詞或進階篩選選擇了轉蛋物品時，載入轉蛋機資料
+    const needsGachaData =
+      debouncedSearchTerm.trim() !== '' ||
+      (advancedFilter.enabled &&
+       (advancedFilter.dataType === 'all' ||
+        advancedFilter.dataType === 'item' ||
+        advancedFilter.dataType === 'gacha')) ||
+      modals.isGachaModalOpen  // 轉蛋 Modal 開啟時也載入資料
+
+    if (needsGachaData) {
       loadGachaMachines()
     }
-  }, [debouncedSearchTerm, loadGachaMachines])
+  }, [debouncedSearchTerm, advancedFilter.enabled, advancedFilter.dataType, loadGachaMachines, modals.isGachaModalOpen])
 
   // 延遲載入物品屬性 - 當使用者啟用進階篩選時才載入
   useEffect(() => {
@@ -231,16 +242,26 @@ export default function Home() {
     }
   }, [advancedFilter])
 
+  // 搜尋詞變更時，滾動到頁面頂部以顯示結果
+  useEffect(() => {
+    // 跳過首次變更（包括從 URL 載入搜尋詞）
+    if (isFirstSearchChange.current) {
+      isFirstSearchChange.current = false
+      return
+    }
+
+    // 當有搜尋詞時，平滑滾動到頁面頂部
+    // 使用即時搜尋詞，讓使用者一輸入就滾動，避免 debounce 延遲導致在底部先載入資料
+    if (search.searchTerm.trim() !== '') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }, [search.searchTerm])
+
   // 選擇建議項目
   const selectSuggestion = (suggestionName: string, suggestion?: SuggestionItem) => {
-    // 如果是轉蛋物品,開啟轉蛋機 Modal
-    if (suggestion && suggestion.type === 'gacha' && suggestion.machineId) {
-      // 找到對應的轉蛋機並開啟 modal
-      const machine = gachaMachines.find(m => m.machineId === suggestion.machineId)
-      if (machine) {
-        modals.openGachaModal()
-        search.setSearchTerm(suggestionName) // 也設定搜尋詞以便在 modal 中過濾
-      }
+    // 如果是轉蛋物品，開啟物品 Modal（而不是轉蛋機 Modal）
+    if (suggestion && suggestion.type === 'gacha' && suggestion.id) {
+      modals.openItemModal(suggestion.id, suggestionName)
     } else {
       search.selectSuggestion(suggestionName)
     }
@@ -354,7 +375,6 @@ export default function Home() {
             filter={advancedFilter}
             onFilterChange={setAdvancedFilter}
             isExpanded={isAdvancedFilterExpanded}
-            onToggle={() => setIsAdvancedFilterExpanded(!isAdvancedFilterExpanded)}
           />
         </div>
         {/* End Sticky Header */}
@@ -386,7 +406,20 @@ export default function Home() {
                 </div>
               ) : (
                 <div className="text-center py-12 mt-8">
-                  <div className="text-6xl mb-4">{search.searchTerm ? '🔍' : '💝'}</div>
+                  {search.searchTerm ? (
+                    <div className="text-6xl mb-4">🔍</div>
+                  ) : (
+                    <div className="mb-4 flex justify-center">
+                      <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                        />
+                      </svg>
+                    </div>
+                  )}
                   <p className="text-gray-600 dark:text-gray-400 text-lg font-medium mb-2">
                     {search.searchTerm ? t('empty.searchNoMatch') : t('empty.noFavoriteMonsters')}
                   </p>
@@ -416,7 +449,20 @@ export default function Home() {
                 </div>
               ) : (
                 <div className="text-center py-12 mt-8">
-                  <div className="text-6xl mb-4">{search.searchTerm ? '🔍' : '💝'}</div>
+                  {search.searchTerm ? (
+                    <div className="text-6xl mb-4">🔍</div>
+                  ) : (
+                    <div className="mb-4 flex justify-center">
+                      <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                        />
+                      </svg>
+                    </div>
+                  )}
                   <p className="text-gray-600 dark:text-gray-400 text-lg font-medium mb-2">
                     {search.searchTerm ? t('empty.searchNoMatch') : t('empty.noFavoriteItems')}
                   </p>
@@ -614,6 +660,10 @@ export default function Home() {
         isOpen={modals.isGachaModalOpen}
         onClose={modals.closeGachaModal}
         initialMachineId={modals.selectedGachaMachineId}
+        onItemClick={(itemId, itemName) => {
+          // 不關閉 GachaMachineModal，直接在上層打開 ItemModal
+          modals.openItemModal(itemId, itemName)
+        }}
       />
 
       {/* 浮動轉蛋機按鈕 */}

@@ -1,8 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback, useRef } from 'react'
-
-const ITEMS_PER_PAGE = 50
+import { useResponsiveItemsPerPage } from './useResponsiveItemsPerPage'
 
 interface UseInfiniteScrollParams<T> {
   items: T[]
@@ -15,14 +14,16 @@ interface UseInfiniteScrollParams<T> {
  * - 分頁顯示大量資料
  * - 使用 Intersection Observer 偵測滾動
  * - 自動載入下一頁資料
+ * - 根據螢幕寬度響應式調整每頁數量
  */
 export function useInfiniteScroll<T>({ items, enabled = true }: UseInfiniteScrollParams<T>) {
+  const itemsPerPage = useResponsiveItemsPerPage()
   const [displayedItems, setDisplayedItems] = useState<T[]>([])
   const [page, setPage] = useState(1)
   const [hasMore, setHasMore] = useState(true)
   const observerTarget = useRef<HTMLDivElement>(null)
 
-  // 重置分頁（當資料來源變更時）
+  // 重置分頁（當資料來源變更時或每頁數量改變時）
   useEffect(() => {
     if (!enabled) {
       setDisplayedItems(items)
@@ -30,24 +31,24 @@ export function useInfiniteScroll<T>({ items, enabled = true }: UseInfiniteScrol
       return
     }
 
-    const initialItems = items.slice(0, ITEMS_PER_PAGE)
+    const initialItems = items.slice(0, itemsPerPage)
     setDisplayedItems(initialItems)
     setPage(1)
-    setHasMore(items.length > ITEMS_PER_PAGE)
-  }, [items, enabled])
+    setHasMore(items.length > itemsPerPage)
+  }, [items, enabled, itemsPerPage])
 
   // 載入更多資料
   const loadMore = useCallback(() => {
     if (!hasMore || !enabled) return
 
     const nextPage = page + 1
-    const endIndex = nextPage * ITEMS_PER_PAGE
+    const endIndex = nextPage * itemsPerPage
     const nextItems = items.slice(0, endIndex)
 
     setDisplayedItems(nextItems)
     setPage(nextPage)
     setHasMore(endIndex < items.length)
-  }, [items, page, hasMore, enabled])
+  }, [items, page, hasMore, enabled, itemsPerPage])
 
   // Intersection Observer 設定
   useEffect(() => {

@@ -8,6 +8,7 @@ import { clientLogger } from '@/lib/logger'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useLazyItemAttributes, useLazyMobInfo } from '@/hooks/useLazyData'
+import { findGachaItemAttributes } from '@/lib/gacha-utils'
 
 interface ItemModalProps {
   isOpen: boolean
@@ -101,11 +102,36 @@ export function ItemModal({
     return sources
   }, [itemId, gachaMachines])
 
-  // 從 allDrops 查找物品數據（用於獲取中英文名稱）
+  // 從 allDrops 或 gachaMachines 查找物品數據（用於獲取中英文名稱）
   const itemData = useMemo(() => {
     if (!itemId && itemId !== 0) return null
-    return allDrops.find((drop) => drop.itemId === itemId) || null
-  }, [itemId, allDrops])
+
+    // 1. 優先從 allDrops 查找（怪物掉落物品）
+    const dropItem = allDrops.find((drop) => drop.itemId === itemId)
+    if (dropItem) return dropItem
+
+    // 2. 從 gachaMachines 查找（純轉蛋物品）
+    for (const machine of gachaMachines) {
+      const gachaItem = machine.items.find((item) => item.itemId === itemId)
+      if (gachaItem) {
+        // 轉換為 DropItem 格式（用於統一介面）
+        return {
+          itemId: gachaItem.itemId,
+          itemName: gachaItem.name || gachaItem.itemName || '',
+          chineseItemName: gachaItem.chineseName || null,
+          // 純轉蛋物品沒有怪物相關資料
+          mobId: 0,
+          mobName: '',
+          chineseMobName: null,
+          chance: 0,
+          minQty: 0,
+          maxQty: 0,
+        }
+      }
+    }
+
+    return null
+  }, [itemId, allDrops, gachaMachines])
 
   // 根據語言選擇顯示名稱
   const displayItemName = useMemo(() => {
@@ -121,11 +147,25 @@ export function ItemModal({
     return itemData.itemName
   }, [language, itemData, itemName])
 
-  // 查找物品屬性資料
+  // 查找物品屬性資料（優先使用 item-attributes.json，找不到則從轉蛋機資料查找）
   const itemAttributes = useMemo(() => {
     if (!itemId && itemId !== 0) return null
-    return itemAttributesMap.get(itemId) || null
-  }, [itemId, itemAttributesMap])
+
+    // 1. 優先從 item-attributes.json 查找
+    const attributesFromJson = itemAttributesMap.get(itemId)
+    if (attributesFromJson) {
+      return attributesFromJson
+    }
+
+    // 2. 如果找不到，嘗試從轉蛋機資料中查找並轉換
+    const attributesFromGacha = findGachaItemAttributes(itemId, gachaMachines)
+    if (attributesFromGacha) {
+      clientLogger.info(`物品 ${itemId} 使用轉蛋機資料作為屬性來源`)
+      return attributesFromGacha
+    }
+
+    return null
+  }, [itemId, itemAttributesMap, gachaMachines])
 
   // 當 Modal 開啟時載入物品屬性資料與怪物資訊資料
   useEffect(() => {

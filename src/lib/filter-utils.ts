@@ -8,7 +8,7 @@ import type {
   AdvancedFilterOptions,
   ItemAttributes,
 } from '@/types'
-import { isItemInAnyCategoryGroup, isItemInAllCategoryGroups } from './item-categories'
+import { isItemInAnyCategoryGroup } from './item-categories'
 
 /**
  * 判斷掉落資料是否符合資料類型篩選
@@ -57,14 +57,8 @@ export function matchesItemCategoryFilter(
     return true
   }
 
-  // 根據邏輯運算子判斷
-  if (filter.logicOperator === 'OR') {
-    // OR 邏輯：只要符合任一類別即可
-    return isItemInAnyCategoryGroup(item, filter.itemCategories)
-  } else {
-    // AND 邏輯：必須符合所有類別（實務上只會選一個類別）
-    return isItemInAllCategoryGroups(item, filter.itemCategories)
-  }
+  // 使用 OR 邏輯：只要符合任一類別即可（物品類別是多選的）
+  return isItemInAnyCategoryGroup(item, filter.itemCategories)
 }
 
 /**
@@ -179,24 +173,8 @@ export function applyAdvancedFilter(
     // 檢查等級範圍篩選
     const matchesLevelRange = matchesLevelRangeFilter(drop.itemId, itemAttributes, filter)
 
-    // 根據邏輯運算子決定最終結果
-    if (filter.logicOperator === 'OR') {
-      // OR 邏輯：只要符合任一條件即可
-      // 如果沒有設定任何篩選條件，則全部通過
-      const hasAnyFilter =
-        filter.dataType !== 'all' ||
-        filter.itemCategories.length > 0 ||
-        filter.jobClasses.length > 0 ||
-        filter.levelRange.min !== null ||
-        filter.levelRange.max !== null
-
-      if (!hasAnyFilter) return true
-
-      return matchesDataType || matchesCategory || matchesJobClass || matchesLevelRange
-    } else {
-      // AND 邏輯：必須同時符合所有條件
-      return matchesDataType && matchesCategory && matchesJobClass && matchesLevelRange
-    }
+    // 使用 AND 邏輯：必須同時符合所有條件
+    return matchesDataType && matchesCategory && matchesJobClass && matchesLevelRange
   })
 }
 
@@ -210,7 +188,6 @@ export function getDefaultAdvancedFilter(): AdvancedFilterOptions {
     itemCategories: [],
     jobClasses: [],
     levelRange: { min: null, max: null },
-    logicOperator: 'AND',
     enabled: false,
   }
 }

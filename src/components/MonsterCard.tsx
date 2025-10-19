@@ -22,7 +22,7 @@ export function MonsterCard({
   mobId,
   mobName,
   chineseMobName,
-  dropCount,
+  dropCount: _dropCount,
   onCardClick,
   isFavorite,
   onToggleFavorite,
@@ -69,13 +69,13 @@ export function MonsterCard({
       </button>
 
       {/* 怪物資訊 */}
-      <div className="flex items-center gap-3 mb-4">
+      <div className="flex items-center gap-3">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={monsterIconUrl}
           alt={displayMobName}
           className="w-16 h-16 object-contain flex-shrink-0"
-          
+
         />
         <div className="flex-1">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
@@ -87,28 +87,6 @@ export function MonsterCard({
             </p>
           )}
         </div>
-      </div>
-
-      {/* 掉落物數量資訊 */}
-      <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <svg className="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
-            </svg>
-            <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
-              {t('card.droppedItems')}
-            </span>
-          </div>
-          <div className="bg-blue-50 dark:bg-blue-900/20 px-4 py-2 rounded-lg">
-            <span className="text-lg font-bold text-blue-600 dark:text-blue-400">
-              {dropCount} {t('card.itemTypes')}
-            </span>
-          </div>
-        </div>
-        <p className="text-xs text-gray-500 dark:text-gray-400 mt-3 text-center">
-          {t('card.viewAllItems')}
-        </p>
       </div>
     </div>
   )

@@ -109,6 +109,7 @@ export function useSearchLogic({
             name: item.chineseName, // 保留原始大小寫
             type: 'gacha',
             count: 1,
+            id: item.itemId, // 物品 ID（用於打開 ItemModal）
             machineId: machine.machineId,
             machineName: machine.machineName,
           })
@@ -128,6 +129,7 @@ export function useSearchLogic({
                 name: englishName, // 使用英文名稱
                 type: 'gacha',
                 count: 1,
+                id: item.itemId, // 物品 ID（用於打開 ItemModal）
                 machineId: machine.machineId,
                 machineName: machine.machineName,
               })

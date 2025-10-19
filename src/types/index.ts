@@ -220,14 +220,45 @@ export interface ItemEquipmentStats {
   upgrades: number | null
 }
 
+// 屬性浮動值結構
+export interface StatVariation {
+  min: number | null
+  max: number | null
+}
+
 export interface ItemEquipment {
   category: string
   requirements: ItemRequirements
   classes: ItemClasses
   stats: ItemEquipmentStats
-  stat_variation?: Record<string, unknown>
+  stat_variation?: Record<string, StatVariation>  // 明確定義浮動值型別
   stat_category_each_extra?: Record<string, unknown>
   stat_category_max_extra?: Record<string, unknown>
+}
+
+// Scroll (卷軸) 相關類型定義
+export interface ScrollStats {
+  str: number | null
+  dex: number | null
+  int: number | null
+  luk: number | null
+  watk: number | null
+  matk: number | null
+  wdef: number | null
+  mdef: number | null
+  hp: number | null
+  mp: number | null
+  accuracy: number | null
+  avoidability: number | null
+  speed: number | null
+  jump: number | null
+}
+
+export interface ScrollInfo {
+  category: string
+  success_rate: number
+  destroy_rate: number
+  stats: ScrollStats
 }
 
 export interface ItemAttributes {
@@ -241,6 +272,7 @@ export interface ItemAttributes {
   type: string
   sub_type: string | null
   equipment?: ItemEquipment
+  scroll?: ScrollInfo
 }
 
 // 進階篩選相關類型
@@ -318,9 +350,6 @@ export interface AdvancedFilterOptions {
 
   // 等級範圍篩選
   levelRange: LevelRange
-
-  // 邏輯運算子
-  logicOperator: FilterLogicOperator
 
   // 是否啟用進階篩選
   enabled: boolean

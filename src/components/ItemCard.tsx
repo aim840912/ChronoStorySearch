@@ -24,7 +24,7 @@ export function ItemCard({
   itemId,
   itemName,
   chineseItemName,
-  monsterCount,
+  monsterCount: _monsterCount,
   onCardClick,
   isFavorite,
   onToggleFavorite,
@@ -43,36 +43,71 @@ export function ItemCard({
       onClick={() => onCardClick(itemId, displayItemName)}
       className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative"
     >
-      {/* 最愛按鈕 - 右上角 */}
-      <button
-        onClick={(e) => {
-          e.stopPropagation()
-          onToggleFavorite(itemId, displayItemName)
-        }}
-        className={`absolute top-3 right-3 p-2 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 ${
-          isFavorite
-            ? 'bg-red-500 hover:bg-red-600 text-white'
-            : 'bg-white dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-400 dark:text-gray-500 border border-gray-300 dark:border-gray-600'
-        }`}
-        aria-label={isFavorite ? t('card.unfavorite') : t('card.favorite')}
-      >
-        <svg
-          className="w-5 h-5"
-          fill={isFavorite ? 'currentColor' : 'none'}
-          stroke="currentColor"
-          viewBox="0 0 24 24"
+      {/* 右上角按鈕群組 */}
+      <div className="absolute top-3 right-3 flex items-center gap-2">
+        {/* 怪物掉落圖示 - 只在有怪物掉落時顯示 */}
+        {source?.fromDrops && (
+          <div className="p-2 rounded-full bg-green-500 text-white" title={t('card.monsterDrop')}>
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"
+              />
+            </svg>
+          </div>
+        )}
+        {/* 轉蛋機圖示 - 只在來自轉蛋機時顯示 */}
+        {source?.fromGacha && (
+          <div className="p-2 rounded-full bg-purple-500 text-white" title={t('card.gachaDrop')}>
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+        )}
+        {/* 最愛按鈕 */}
+        <button
+          onClick={(e) => {
+            e.stopPropagation()
+            onToggleFavorite(itemId, displayItemName)
+          }}
+          className={`p-2 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 ${
+            isFavorite
+              ? 'bg-red-500 hover:bg-red-600 text-white'
+              : 'bg-white dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-400 dark:text-gray-500 border border-gray-300 dark:border-gray-600'
+          }`}
+          aria-label={isFavorite ? t('card.unfavorite') : t('card.favorite')}
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-          />
-        </svg>
-      </button>
+          <svg
+            className="w-5 h-5"
+            fill={isFavorite ? 'currentColor' : 'none'}
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+            />
+          </svg>
+        </button>
+      </div>
 
       {/* 物品資訊 */}
-      <div className="flex items-center gap-3 mb-4">
+      <div className="flex items-center gap-3">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={itemIconUrl}
@@ -90,64 +125,6 @@ export function ItemCard({
             </p>
           )}
         </div>
-      </div>
-
-      {/* 來源資訊區域 */}
-      <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-        <div className="space-y-2">
-          {/* 轉蛋機來源 */}
-          {source?.fromGacha && (
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                  轉蛋
-                </span>
-              </div>
-              <div className="bg-purple-50 dark:bg-purple-900/20 px-4 py-2 rounded-lg">
-                <span className="text-sm font-bold text-purple-600 dark:text-purple-400">
-                  轉蛋機
-                </span>
-              </div>
-            </div>
-          )}
-
-          {/* 怪物掉落來源 */}
-          {monsterCount > 0 && (
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                {/* 惡魔圖示 - 表示怪物掉落 */}
-                <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 640 512">
-                  <path d="M320 64c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V96c0-17.7 14.3-32 32-32zm113.5 22.5l32-32c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-32 32c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3zm-227 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l32 32c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0l-32-32zM224 256c-35.3 0-64 28.7-64 64v64c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V320c0-35.3-28.7-64-64-64H224zm-32 120a24 24 0 1 1 0-48 24 24 0 1 1 0 48zm208-24a24 24 0 1 1-48 0 24 24 0 1 1 48 0z"/>
-                </svg>
-                <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                  {t('card.droppedBy')}
-                </span>
-              </div>
-              <div className="bg-green-50 dark:bg-green-900/20 px-4 py-2 rounded-lg">
-                <span className="text-lg font-bold text-green-600 dark:text-green-400">
-                  {monsterCount} {t('card.monsterCount')}
-                </span>
-              </div>
-            </div>
-          )}
-        </div>
-
-        {/* 提示文字 */}
-        <p className="text-xs text-gray-500 dark:text-gray-400 mt-3 text-center">
-          {source?.fromGacha && monsterCount > 0
-            ? t('card.viewAllSources')
-            : monsterCount > 0
-            ? t('card.viewAllMonsters')
-            : t('card.viewGachaSources')}
-        </p>
       </div>
     </div>
   )

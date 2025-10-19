@@ -6,10 +6,44 @@ import type { GachaMachine, GachaItem } from '@/types'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { clientLogger } from '@/lib/logger'
 
+/**
+ * 正規化 Enhanced JSON 格式的轉蛋機資料
+ * 將 Enhanced JSON 的欄位映射到 GachaMachine 型別
+ */
+function normalizeGachaMachine(rawData: any): GachaMachine {
+  return {
+    ...rawData,
+    items: rawData.items.map((item: any) => ({
+      // 先展開所有原始欄位
+      ...item,
+
+      // 然後覆蓋需要特殊處理的欄位（順序很重要！）
+      // 轉蛋機特有欄位
+      chineseName: item.chineseName,
+      probability: item.probability,
+      chance: item.chance,
+
+      // itemId: string → number（關鍵轉換，必須在 ...item 之後）
+      itemId: typeof item.itemId === 'string' ? parseInt(item.itemId, 10) : item.itemId,
+
+      // 映射欄位以相容現有型別定義
+      name: item.itemName || item.name,
+      itemName: item.itemName,
+      description: item.itemDescription || item.description || '',
+
+      // 從 equipment.category 映射到 category（如果存在）
+      category: item.equipment?.category || item.category,
+      subcategory: item.subType || item.subcategory,
+      overallCategory: item.type || item.overallCategory,
+    })),
+  }
+}
+
 interface GachaMachineModalProps {
   isOpen: boolean
   onClose: () => void
   initialMachineId?: number
+  onItemClick?: (itemId: number, itemName: string) => void
 }
 
 type SortOption = 'probability-desc' | 'probability-asc' | 'level-desc' | 'level-asc' | 'name-asc'
@@ -18,7 +52,7 @@ type SortOption = 'probability-desc' | 'probability-asc' | 'level-desc' | 'level
  * 轉蛋機圖鑑 Modal
  * 顯示 7 台轉蛋機及其內容物
  */
-export function GachaMachineModal({ isOpen, onClose, initialMachineId }: GachaMachineModalProps) {
+export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemClick }: GachaMachineModalProps) {
   const { language, t, setLanguage } = useLanguage()
   const [machines, setMachines] = useState<GachaMachine[]>([])
   const [selectedMachine, setSelectedMachine] = useState<GachaMachine | null>(null)
@@ -62,31 +96,32 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId }: GachaMa
     async function loadMachines() {
       setIsLoading(true)
       try {
-        clientLogger.info('載入轉蛋機資料（靜態 import）...')
+        clientLogger.info('載入轉蛋機資料（Enhanced JSON）...')
 
-        // 使用動態 import 載入所有轉蛋機資料（不產生 API 請求）
+        // 使用動態 import 載入所有轉蛋機資料（Enhanced 版本，包含完整物品資料）
         const [m1, m2, m3, m4, m5, m6, m7] = await Promise.all([
-          import('@/../data/gacha/machine-1.json'),
-          import('@/../data/gacha/machine-2.json'),
-          import('@/../data/gacha/machine-3.json'),
-          import('@/../data/gacha/machine-4.json'),
-          import('@/../data/gacha/machine-5.json'),
-          import('@/../data/gacha/machine-6.json'),
-          import('@/../data/gacha/machine-7.json'),
+          import('@/../data/gacha/machine-1-enhanced.json'),
+          import('@/../data/gacha/machine-2-enhanced.json'),
+          import('@/../data/gacha/machine-3-enhanced.json'),
+          import('@/../data/gacha/machine-4-enhanced.json'),
+          import('@/../data/gacha/machine-5-enhanced.json'),
+          import('@/../data/gacha/machine-6-enhanced.json'),
+          import('@/../data/gacha/machine-7-enhanced.json'),
         ])
 
+        // 正規化資料格式以符合 GachaMachine 型別
         const loadedMachines: GachaMachine[] = [
-          m1.default as unknown as GachaMachine,
-          m2.default as unknown as GachaMachine,
-          m3.default as unknown as GachaMachine,
-          m4.default as unknown as GachaMachine,
-          m5.default as unknown as GachaMachine,
-          m6.default as unknown as GachaMachine,
-          m7.default as unknown as GachaMachine,
+          normalizeGachaMachine(m1.default),
+          normalizeGachaMachine(m2.default),
+          normalizeGachaMachine(m3.default),
+          normalizeGachaMachine(m4.default),
+          normalizeGachaMachine(m5.default),
+          normalizeGachaMachine(m6.default),
+          normalizeGachaMachine(m7.default),
         ]
 
         setMachines(loadedMachines)
-        clientLogger.info(`成功載入 ${loadedMachines.length} 台轉蛋機（靜態資料）`)
+        clientLogger.info(`成功載入 ${loadedMachines.length} 台轉蛋機（Enhanced 資料）`)
       } catch (error) {
         clientLogger.error('載入轉蛋機資料失敗', error)
       } finally {
@@ -339,9 +374,14 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId }: GachaMa
 
               {/* 物品列表 */}
               {filteredAndSortedItems.length > 0 ? (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
                   {filteredAndSortedItems.map((item, index) => (
-                    <ItemCard key={`${item.itemId}-${index}`} item={item} language={language} />
+                    <ItemCard
+                      key={`${item.itemId}-${index}`}
+                      item={item}
+                      language={language}
+                      onItemClick={onItemClick}
+                    />
                   ))}
                 </div>
               ) : (
@@ -436,7 +476,15 @@ function MachineCard({
 /**
  * 物品卡片元件
  */
-function ItemCard({ item, language }: { item: GachaItem; language: 'zh-TW' | 'en' }) {
+function ItemCard({
+  item,
+  language,
+  onItemClick
+}: {
+  item: GachaItem
+  language: 'zh-TW' | 'en'
+  onItemClick?: (itemId: number, itemName: string) => void
+}) {
   // 根據語言選擇顯示名稱
   const displayName = language === 'zh-TW' ? item.chineseName : (item.name || item.itemName || item.chineseName)
 
@@ -444,8 +492,11 @@ function ItemCard({ item, language }: { item: GachaItem; language: 'zh-TW' | 'en
   const itemIconUrl = getItemImageUrl(item.itemId)
 
   return (
-    <div className="p-4 bg-gradient-to-br from-white to-gray-50 dark:from-gray-700 dark:to-gray-600 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-purple-400 dark:hover:border-purple-500 hover:shadow-md transition-all">
-      <div className="flex gap-3">
+    <div
+      onClick={() => onItemClick?.(item.itemId, displayName)}
+      className="p-2 bg-gradient-to-br from-white to-gray-50 dark:from-gray-700 dark:to-gray-600 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-purple-400 dark:hover:border-purple-500 hover:shadow-md transition-all cursor-pointer active:scale-[0.98]"
+    >
+      <div className="flex gap-2 items-center">
         {/* 物品圖示 */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -454,29 +505,18 @@ function ItemCard({ item, language }: { item: GachaItem; language: 'zh-TW' | 'en
           className="w-12 h-12 object-contain flex-shrink-0"
         />
 
-        <div className="flex justify-between items-start flex-1">
-          {/* 物品名稱 */}
-          <div className="flex-1">
-            <h4 className="font-bold text-gray-900 dark:text-white">{displayName}</h4>
-          </div>
+        {/* 物品名稱 */}
+        <div className="flex-1 min-w-0">
+          <h4 className="font-bold text-gray-900 dark:text-white truncate">{displayName}</h4>
+        </div>
 
-          {/* 機率 */}
-          <div className="text-right ml-2">
-            <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">
-              {item.probability}
-            </div>
+        {/* 機率 */}
+        <div className="text-right flex-shrink-0">
+          <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">
+            {item.probability}
           </div>
         </div>
       </div>
-
-      {/* 等級標籤 */}
-      {item.requiredStats?.level && item.requiredStats.level > 0 && (
-        <div className="mt-2">
-          <span className="text-xs px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full">
-            Lv.{item.requiredStats.level}
-          </span>
-        </div>
-      )}
     </div>
   )
 }

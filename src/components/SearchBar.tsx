@@ -83,7 +83,7 @@ export function SearchBar({
           onFocus={onFocus}
           onKeyDown={onKeyDown}
           placeholder={t('search.placeholder')}
-          className={`w-full pl-12 py-4 text-gray-900 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400 dark:placeholder-gray-500 transition-all ${
+          className={`w-full pl-12 py-3 text-gray-900 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400 dark:placeholder-gray-500 transition-all ${
             searchTerm ? 'pr-20' : 'pr-12'
           }`}
         />
@@ -132,7 +132,7 @@ export function SearchBar({
                 key={`${suggestion.type}-${suggestion.name}`}
                 onClick={() => onSelectSuggestion(suggestion.name, suggestion)}
                 onMouseEnter={() => onFocusedIndexChange(index)}
-                className={`flex items-center justify-between px-4 py-3 cursor-pointer transition-colors ${
+                className={`flex items-center justify-between px-4 py-2 cursor-pointer transition-colors ${
                   focusedIndex === index
                     ? 'bg-blue-50 dark:bg-blue-900/20'
                     : 'hover:bg-gray-50 dark:hover:bg-gray-700/50'

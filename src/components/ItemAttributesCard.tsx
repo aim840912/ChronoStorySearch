@@ -14,22 +14,173 @@ interface ItemAttributesCardProps {
 export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
   const { t } = useLanguage()
 
-  // 處理無屬性資料的情況
-  if (!attributes || !attributes.equipment) {
+  // 處理 Scroll (卷軸) 類型物品
+  if (attributes && attributes.sub_type === 'Scroll' && attributes.scroll) {
+    const { scroll } = attributes
+
+    // 過濾出非 null 的屬性
+    const nonNullStats = Object.entries(scroll.stats)
+      .filter(([_, value]) => value !== null && value !== 0)
+      .map(([key, value]) => ({ key, value: value as number }))
+
     return (
-      <div className="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 shadow-lg">
-        <h3 className="text-xl font-bold text-gray-700 dark:text-gray-300 mb-4">
-          {t('item.attributes')}
+      <div className="bg-gradient-to-br from-purple-50 to-pink-100 dark:from-purple-900/20 dark:to-pink-900/30 rounded-xl p-6 shadow-lg border border-purple-200 dark:border-purple-800">
+        <h3 className="text-xl font-bold text-purple-900 dark:text-purple-100 mb-4">
+          {t('item.scrollInfo')}
         </h3>
-        <div className="flex flex-col items-center justify-center py-8 text-gray-500 dark:text-gray-400">
-          <p className="text-lg font-medium">{t('item.noAttributes')}</p>
+
+        {/* 適用裝備類型 */}
+        <div className="mb-4 bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
+          <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+            {t('item.applicableEquipment')}
+          </h4>
+          <div className="inline-block bg-purple-500 dark:bg-purple-600 text-white text-sm font-medium px-4 py-2 rounded-full">
+            {t(`item.category.${scroll.category}`)}
+          </div>
+        </div>
+
+        {/* 成功率和破壞率 */}
+        <div className="mb-4 bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
+          <div className="grid grid-cols-2 gap-4">
+            {/* 成功率 */}
+            <div>
+              <div className="text-sm text-gray-500 dark:text-gray-400 mb-1">
+                {t('item.successRate')}
+              </div>
+              <div className="text-2xl font-bold text-green-600 dark:text-green-400">
+                {scroll.success_rate}%
+              </div>
+            </div>
+
+            {/* 破壞率 - 只在 > 0 時顯示 */}
+            {scroll.destroy_rate > 0 && (
+              <div>
+                <div className="text-sm text-gray-500 dark:text-gray-400 mb-1">
+                  {t('item.destroyRate')}
+                </div>
+                <div className="text-2xl font-bold text-red-600 dark:text-red-400">
+                  {scroll.destroy_rate}%
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* 屬性加成 */}
+        {nonNullStats.length > 0 && (
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
+            <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+              {t('item.statBonus')}
+            </h4>
+            <div className="grid grid-cols-2 gap-3">
+              {nonNullStats.map(({ key, value }) => (
+                <div key={key} className="flex justify-between items-center">
+                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                    {t(`item.${key}`)}:
+                  </span>
+                  <span className="text-lg font-bold text-blue-600 dark:text-blue-400">
+                    +{value}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {nonNullStats.length === 0 && (
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
+            <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
+              {t('item.noStatBonus')}
+            </p>
+          </div>
+        )}
+      </div>
+    )
+  }
+
+  // 處理無屬性資料的情況（非裝備類型：Etc、Consume 等）
+  if (!attributes || !attributes.equipment) {
+    // 如果完全沒有資料，顯示空狀態
+    if (!attributes) {
+      return (
+        <div className="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 shadow-lg">
+          <h3 className="text-xl font-bold text-gray-700 dark:text-gray-300 mb-4">
+            {t('item.attributes')}
+          </h3>
+          <div className="flex flex-col items-center justify-center py-8 text-gray-500 dark:text-gray-400">
+            <p className="text-lg font-medium">{t('item.noAttributes')}</p>
+          </div>
+        </div>
+      )
+    }
+
+    // 顯示非裝備類型的基本資訊
+    return (
+      <div className="bg-gradient-to-br from-green-50 to-emerald-100 dark:from-green-900/20 dark:to-emerald-900/30 rounded-xl p-6 shadow-lg border border-green-200 dark:border-green-800">
+        <h3 className="text-xl font-bold text-green-900 dark:text-green-100 mb-4">
+          {t('item.info')}
+        </h3>
+
+        {/* 基本資訊 */}
+        <div className="mb-4 bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
+          <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+            {t('item.basicInfo')}
+          </h4>
+          <div className="space-y-2 text-sm">
+            {/* 物品類型 */}
+            <div>
+              <span className="text-gray-500 dark:text-gray-400">{t('item.type')}:</span>
+              <span className="ml-2 font-medium text-gray-900 dark:text-white">
+                {t(`item.type.${attributes.type}`)}
+              </span>
+            </div>
+
+            {/* 賣價 - 重點顯示 */}
+            {attributes.sale_price !== null && attributes.sale_price > 0 && (
+              <div className="pt-2 border-t border-gray-200 dark:border-gray-700">
+                <span className="text-gray-500 dark:text-gray-400">{t('item.salePrice')}:</span>
+                <div className="mt-1">
+                  <span className="text-2xl font-bold text-yellow-600 dark:text-yellow-400">
+                    {attributes.sale_price.toLocaleString()}
+                  </span>
+                  <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">
+                    {t('item.mesos')}
+                  </span>
+                </div>
+              </div>
+            )}
+
+            {/* 堆疊數量 */}
+            {attributes.max_stack_count && attributes.max_stack_count > 1 && (
+              <div>
+                <span className="text-gray-500 dark:text-gray-400">{t('item.maxStack')}:</span>
+                <span className="ml-2 font-medium text-gray-900 dark:text-white">
+                  {attributes.max_stack_count.toLocaleString()}
+                </span>
+              </div>
+            )}
+
+            {/* 可交易性 */}
+            {attributes.untradeable !== null && (
+              <div>
+                <span className="text-gray-500 dark:text-gray-400">{t('item.tradeable')}:</span>
+                <span className="ml-2 font-medium">
+                  {attributes.untradeable ? (
+                    <span className="text-red-600 dark:text-red-400">🔒 {t('item.untradeable')}</span>
+                  ) : (
+                    <span className="text-green-600 dark:text-green-400">✅ {t('item.tradeableYes')}</span>
+                  )}
+                </span>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     )
   }
 
   const { equipment } = attributes
-  const { requirements, classes, stats } = equipment
+  const { requirements, classes, stats, stat_variation } = equipment
 
   // 職業列表（過濾出可用職業）
   const availableClasses = Object.entries(classes)
@@ -136,20 +287,52 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
           <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
             {t('item.stats')}
           </h4>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-            {equipmentStats.map(({ key, label, value, color }) => (
-              <div
-                key={key}
-                className="bg-white dark:bg-gray-800 rounded-lg p-2 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div>
-                  <div className="text-xs text-gray-500 dark:text-gray-400">{label}</div>
-                  <div className={`text-base font-bold ${color}`}>
-                    {key === 'upgrades' ? value : `+${value}`}
+          <div className="flex flex-col gap-2">
+            {equipmentStats.map(({ key, label, value }) => {
+              // 檢查是否有浮動值
+              const variation = stat_variation?.[key]
+              const hasVariation = variation && variation.max !== null && variation.max !== 0
+
+              // 直接使用 min 和 max（絕對值，非相對偏移）
+              const minValue = hasVariation ? variation.min : null
+              const maxValue = hasVariation ? variation.max : null
+
+              return (
+                <div
+                  key={key}
+                  className="bg-white dark:bg-gray-800 rounded-lg px-4 py-2 shadow-sm hover:shadow-md transition-shadow"
+                >
+                  <div className="flex justify-between items-center gap-4">
+                    {/* 屬性名稱（左側） */}
+                    <div className="text-sm text-gray-600 dark:text-gray-400 min-w-[80px]">
+                      {label}
+                    </div>
+
+                    {/* 數值顯示區域（右側） */}
+                    <div className="flex items-center gap-3">
+                      {/* 最低值 */}
+                      {hasVariation && minValue !== null && (
+                        <span className="text-sm text-red-500 dark:text-red-400 min-w-[40px] text-right">
+                          {key === 'upgrades' ? minValue : `+${minValue}`}
+                        </span>
+                      )}
+
+                      {/* 預設值 */}
+                      <div className="text-lg font-bold text-gray-900 dark:text-gray-100 min-w-[60px] text-center">
+                        {key === 'upgrades' ? value : `+${value}`}
+                      </div>
+
+                      {/* 最高值 */}
+                      {hasVariation && maxValue !== null && (
+                        <span className="text-sm text-green-500 dark:text-green-400 min-w-[40px] text-left">
+                          {key === 'upgrades' ? maxValue : `+${maxValue}`}
+                        </span>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       )}

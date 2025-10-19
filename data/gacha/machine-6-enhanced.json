@@ -1,0 +1,7014 @@
+{
+  "machineId": 6,
+  "machineName": "Nautilus",
+  "chineseMachineName": "鯨魚號",
+  "description": "鯨魚號轉蛋機，可獲得各種裝備道具",
+  "totalItems": 56,
+  "items": [
+    {
+      "chineseName": "黑色的航海帽",
+      "probability": "0.70%",
+      "chance": 50000,
+      "itemId": "1002646",
+      "itemName": "Black Polax Hat",
+      "itemTypeId": 7,
+      "salePrice": 130000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Cap",
+      "equipment": {
+        "category": "Hat",
+        "requirements": {
+          "reqLevel": 100,
+          "reqStr": 100,
+          "reqDex": 100,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 4,
+          "dex": 2,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": 1,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 63,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 9
+          },
+          "dex": {
+            "min": 0,
+            "max": 7
+          },
+          "int": {
+            "min": 0,
+            "max": 5
+          },
+          "luk": {
+            "min": 0,
+            "max": 5
+          },
+          "watk": {
+            "min": 0,
+            "max": 5
+          },
+          "matk": {
+            "min": 0,
+            "max": 5
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 10
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 11
+          },
+          "speed": {
+            "min": 0,
+            "max": 5
+          },
+          "jump": {
+            "min": 0,
+            "max": 3
+          },
+          "hp": {
+            "min": 0,
+            "max": 50
+          },
+          "mp": {
+            "min": 0,
+            "max": 50
+          },
+          "wdef": {
+            "min": 13,
+            "max": 113
+          },
+          "mdef": {
+            "min": 0,
+            "max": 50
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 5,
+          "attack": 5,
+          "speed": 5,
+          "jump": 3,
+          "accuracy": 10,
+          "defensive": 50
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 10,
+          "attack": 0,
+          "speed": 5,
+          "jump": 3,
+          "accuracy": 10,
+          "defensive": 50
+        }
+      }
+    },
+    {
+      "chineseName": "紅色公爵套裝",
+      "probability": "0.70%",
+      "chance": 50000,
+      "itemId": "1052131",
+      "itemName": "Red Belly Duke",
+      "itemTypeId": 11,
+      "salePrice": 240000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Longcoat",
+      "equipment": {
+        "category": "Overall",
+        "requirements": {
+          "reqLevel": 100,
+          "reqStr": 100,
+          "reqDex": 100,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 7,
+          "dex": 3,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": 2,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 105,
+          "mdef": null,
+          "upgrades": 10
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 17
+          },
+          "dex": {
+            "min": 0,
+            "max": 13
+          },
+          "int": {
+            "min": 0,
+            "max": 10
+          },
+          "luk": {
+            "min": 0,
+            "max": 10
+          },
+          "watk": {
+            "min": 0,
+            "max": 10
+          },
+          "matk": {
+            "min": 0,
+            "max": 10
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 20
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 22
+          },
+          "speed": {
+            "min": 0,
+            "max": 10
+          },
+          "jump": {
+            "min": 0,
+            "max": 5
+          },
+          "hp": {
+            "min": 0,
+            "max": 100
+          },
+          "mp": {
+            "min": 0,
+            "max": 100
+          },
+          "wdef": {
+            "min": 5,
+            "max": 205
+          },
+          "mdef": {
+            "min": 0,
+            "max": 100
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 10,
+          "attack": 10,
+          "speed": 10,
+          "jump": 5,
+          "accuracy": 20,
+          "defensive": 100
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 20,
+          "attack": 0,
+          "speed": 10,
+          "jump": 5,
+          "accuracy": 20,
+          "defensive": 100
+        }
+      }
+    },
+    {
+      "chineseName": "黑色公爵靴",
+      "probability": "0.70%",
+      "chance": 50000,
+      "itemId": "1072318",
+      "itemName": "Black Duke Barkin Shoes",
+      "itemTypeId": 14,
+      "salePrice": 170000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Shoes",
+      "equipment": {
+        "category": "Shoes",
+        "requirements": {
+          "reqLevel": 100,
+          "reqStr": 100,
+          "reqDex": 100,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 6,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 58,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 16
+          },
+          "dex": {
+            "min": 0,
+            "max": 10
+          },
+          "int": {
+            "min": 0,
+            "max": 10
+          },
+          "luk": {
+            "min": 0,
+            "max": 10
+          },
+          "watk": {
+            "min": 0,
+            "max": 5
+          },
+          "matk": {
+            "min": 0,
+            "max": 5
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 10
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 10
+          },
+          "speed": {
+            "min": 0,
+            "max": 5
+          },
+          "jump": {
+            "min": 0,
+            "max": 3
+          },
+          "hp": {
+            "min": 0,
+            "max": 50
+          },
+          "mp": {
+            "min": 0,
+            "max": 50
+          },
+          "wdef": {
+            "min": 8,
+            "max": 108
+          },
+          "mdef": {
+            "min": 0,
+            "max": 50
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 10,
+          "attack": 5,
+          "speed": 5,
+          "jump": 3,
+          "accuracy": 10,
+          "defensive": 50
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 10,
+          "attack": 0,
+          "speed": 5,
+          "jump": 3,
+          "accuracy": 0,
+          "defensive": 50
+        }
+      }
+    },
+    {
+      "chineseName": "黑色斯卡洛伯爵手套",
+      "probability": "0.70%",
+      "chance": 50000,
+      "itemId": "1082213",
+      "itemName": "Black Skellduke",
+      "itemTypeId": 10,
+      "salePrice": 265000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Glove",
+      "equipment": {
+        "category": "Gloves",
+        "requirements": {
+          "reqLevel": 100,
+          "reqStr": 100,
+          "reqDex": 100,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 3,
+          "dex": 4,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 40,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 8
+          },
+          "dex": {
+            "min": 0,
+            "max": 9
+          },
+          "int": {
+            "min": 0,
+            "max": 5
+          },
+          "luk": {
+            "min": 0,
+            "max": 5
+          },
+          "watk": {
+            "min": 0,
+            "max": 5
+          },
+          "matk": {
+            "min": 0,
+            "max": 5
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 10
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 10
+          },
+          "speed": {
+            "min": 0,
+            "max": 5
+          },
+          "jump": {
+            "min": 0,
+            "max": 3
+          },
+          "hp": {
+            "min": 0,
+            "max": 50
+          },
+          "mp": {
+            "min": 0,
+            "max": 50
+          },
+          "wdef": {
+            "min": 0,
+            "max": 90
+          },
+          "mdef": {
+            "min": 0,
+            "max": 50
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 5,
+          "attack": 5,
+          "speed": 5,
+          "jump": 3,
+          "accuracy": 10,
+          "defensive": 50
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 10,
+          "attack": 0,
+          "speed": 5,
+          "jump": 3,
+          "accuracy": 0,
+          "defensive": 50
+        }
+      }
+    },
+    {
+      "chineseName": "穿甲彈",
+      "probability": "0.70%",
+      "chance": 50000,
+      "itemId": "1202007",
+      "itemName": "Eternal Bullet",
+      "itemTypeId": 16,
+      "salePrice": 500000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Projectile",
+      "equipment": {
+        "category": "Projectile",
+        "requirements": {
+          "reqLevel": 10,
+          "reqStr": 0,
+          "reqDex": 0,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 20,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": null
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 20,
+            "max": 21
+          },
+          "matk": {
+            "min": 0,
+            "max": 1
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 1
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 1
+          },
+          "speed": {
+            "min": 0,
+            "max": 1
+          },
+          "jump": {
+            "min": 0,
+            "max": 0
+          },
+          "hp": {
+            "min": 0,
+            "max": 5
+          },
+          "mp": {
+            "min": 0,
+            "max": 5
+          },
+          "wdef": {
+            "min": 0,
+            "max": 5
+          },
+          "mdef": {
+            "min": 0,
+            "max": 5
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 1,
+          "speed": 1,
+          "jump": 0,
+          "accuracy": 1,
+          "defensive": 5
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 1,
+          "speed": 1,
+          "jump": 0,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "王者毀滅拳套",
+      "probability": "0.70%",
+      "chance": 50000,
+      "itemId": "1482012",
+      "itemName": "King Cent",
+      "itemTypeId": 15,
+      "salePrice": 440000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Knuckle",
+        "requirements": {
+          "reqLevel": 100,
+          "reqStr": 270,
+          "reqDex": 100,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 5,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 74,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 69,
+            "max": 79
+          },
+          "matk": {
+            "min": 0,
+            "max": 5
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 10
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 10
+          },
+          "speed": {
+            "min": 0,
+            "max": 5
+          },
+          "jump": {
+            "min": 0,
+            "max": 3
+          },
+          "hp": {
+            "min": 0,
+            "max": 50
+          },
+          "mp": {
+            "min": 0,
+            "max": 50
+          },
+          "wdef": {
+            "min": 0,
+            "max": 50
+          },
+          "mdef": {
+            "min": 0,
+            "max": 50
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 5,
+          "speed": 5,
+          "jump": 3,
+          "accuracy": 10,
+          "defensive": 50
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 5,
+          "speed": 5,
+          "jump": 3,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "死亡協奏曲",
+      "probability": "0.70%",
+      "chance": 50000,
+      "itemId": "1492012",
+      "itemName": "Concerto",
+      "itemTypeId": 15,
+      "salePrice": 450000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Gun",
+        "requirements": {
+          "reqLevel": 100,
+          "reqStr": 100,
+          "reqDex": 295,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 5,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 74,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 69,
+            "max": 79
+          },
+          "matk": {
+            "min": 0,
+            "max": 5
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 10
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 10
+          },
+          "speed": {
+            "min": 0,
+            "max": 5
+          },
+          "jump": {
+            "min": 0,
+            "max": 3
+          },
+          "hp": {
+            "min": 0,
+            "max": 50
+          },
+          "mp": {
+            "min": 0,
+            "max": 50
+          },
+          "wdef": {
+            "min": 0,
+            "max": 50
+          },
+          "mdef": {
+            "min": 0,
+            "max": 50
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 5,
+          "speed": 5,
+          "jump": 3,
+          "accuracy": 10,
+          "defensive": 50
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 5,
+          "speed": 5,
+          "jump": 3,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "紅色勇者頭巾",
+      "probability": "0.85%",
+      "chance": 61111,
+      "itemId": "1002643",
+      "itemName": "Red Brave Hamal",
+      "itemTypeId": 7,
+      "salePrice": 115000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Cap",
+      "equipment": {
+        "category": "Hat",
+        "requirements": {
+          "reqLevel": 90,
+          "reqStr": 90,
+          "reqDex": 90,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 3,
+          "dex": 2,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": 1,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 57,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 8
+          },
+          "dex": {
+            "min": 0,
+            "max": 7
+          },
+          "int": {
+            "min": 0,
+            "max": 5
+          },
+          "luk": {
+            "min": 0,
+            "max": 5
+          },
+          "watk": {
+            "min": 0,
+            "max": 5
+          },
+          "matk": {
+            "min": 0,
+            "max": 5
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 9
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 10
+          },
+          "speed": {
+            "min": 0,
+            "max": 5
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 45
+          },
+          "mp": {
+            "min": 0,
+            "max": 45
+          },
+          "wdef": {
+            "min": 12,
+            "max": 102
+          },
+          "mdef": {
+            "min": 0,
+            "max": 45
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 5,
+          "attack": 5,
+          "speed": 5,
+          "jump": 2,
+          "accuracy": 9,
+          "defensive": 45
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 9,
+          "attack": 0,
+          "speed": 5,
+          "jump": 2,
+          "accuracy": 9,
+          "defensive": 45
+        }
+      }
+    },
+    {
+      "chineseName": "白色馬其尼套裝",
+      "probability": "0.85%",
+      "chance": 61111,
+      "itemId": "1052128",
+      "itemName": "White Marquini",
+      "itemTypeId": 11,
+      "salePrice": 200000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Longcoat",
+      "equipment": {
+        "category": "Overall",
+        "requirements": {
+          "reqLevel": 90,
+          "reqStr": 90,
+          "reqDex": 90,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 6,
+          "dex": 3,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": 2,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 95,
+          "mdef": null,
+          "upgrades": 10
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 15
+          },
+          "dex": {
+            "min": 0,
+            "max": 12
+          },
+          "int": {
+            "min": 0,
+            "max": 9
+          },
+          "luk": {
+            "min": 0,
+            "max": 9
+          },
+          "watk": {
+            "min": 0,
+            "max": 9
+          },
+          "matk": {
+            "min": 0,
+            "max": 9
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 18
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 20
+          },
+          "speed": {
+            "min": 0,
+            "max": 9
+          },
+          "jump": {
+            "min": 0,
+            "max": 5
+          },
+          "hp": {
+            "min": 0,
+            "max": 90
+          },
+          "mp": {
+            "min": 0,
+            "max": 90
+          },
+          "wdef": {
+            "min": 5,
+            "max": 185
+          },
+          "mdef": {
+            "min": 0,
+            "max": 90
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 9,
+          "attack": 9,
+          "speed": 9,
+          "jump": 5,
+          "accuracy": 18,
+          "defensive": 90
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 18,
+          "attack": 0,
+          "speed": 9,
+          "jump": 5,
+          "accuracy": 18,
+          "defensive": 90
+        }
+      }
+    },
+    {
+      "chineseName": "黑色馬金斯靴",
+      "probability": "0.85%",
+      "chance": 61111,
+      "itemId": "1072315",
+      "itemName": "Black Markintz",
+      "itemTypeId": 14,
+      "salePrice": 140000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Shoes",
+      "equipment": {
+        "category": "Shoes",
+        "requirements": {
+          "reqLevel": 90,
+          "reqStr": 90,
+          "reqDex": 90,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 5,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": 1,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 52,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 14
+          },
+          "dex": {
+            "min": 0,
+            "max": 9
+          },
+          "int": {
+            "min": 0,
+            "max": 9
+          },
+          "luk": {
+            "min": 0,
+            "max": 9
+          },
+          "watk": {
+            "min": 0,
+            "max": 5
+          },
+          "matk": {
+            "min": 0,
+            "max": 5
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 9
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 10
+          },
+          "speed": {
+            "min": 0,
+            "max": 5
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 45
+          },
+          "mp": {
+            "min": 0,
+            "max": 45
+          },
+          "wdef": {
+            "min": 7,
+            "max": 97
+          },
+          "mdef": {
+            "min": 0,
+            "max": 45
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 9,
+          "attack": 5,
+          "speed": 5,
+          "jump": 2,
+          "accuracy": 9,
+          "defensive": 45
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 9,
+          "attack": 0,
+          "speed": 5,
+          "jump": 2,
+          "accuracy": 9,
+          "defensive": 45
+        }
+      }
+    },
+    {
+      "chineseName": "紅色馬蒂爾手套",
+      "probability": "0.85%",
+      "chance": 61111,
+      "itemId": "1082210",
+      "itemName": "Red Martier",
+      "itemTypeId": 10,
+      "salePrice": 230000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Glove",
+      "equipment": {
+        "category": "Gloves",
+        "requirements": {
+          "reqLevel": 90,
+          "reqStr": 90,
+          "reqDex": 90,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 2,
+          "dex": 4,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 36,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 7
+          },
+          "dex": {
+            "min": 0,
+            "max": 9
+          },
+          "int": {
+            "min": 0,
+            "max": 5
+          },
+          "luk": {
+            "min": 0,
+            "max": 5
+          },
+          "watk": {
+            "min": 0,
+            "max": 5
+          },
+          "matk": {
+            "min": 0,
+            "max": 5
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 9
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 9
+          },
+          "speed": {
+            "min": 0,
+            "max": 5
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 45
+          },
+          "mp": {
+            "min": 0,
+            "max": 45
+          },
+          "wdef": {
+            "min": 0,
+            "max": 81
+          },
+          "mdef": {
+            "min": 0,
+            "max": 45
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 5,
+          "attack": 5,
+          "speed": 5,
+          "jump": 2,
+          "accuracy": 9,
+          "defensive": 45
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 9,
+          "attack": 0,
+          "speed": 5,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 45
+        }
+      }
+    },
+    {
+      "chineseName": "吸血鬼之爪",
+      "probability": "0.85%",
+      "chance": 61111,
+      "itemId": "1482011",
+      "itemName": "White Fangz",
+      "itemTypeId": 15,
+      "salePrice": 390000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Knuckle",
+        "requirements": {
+          "reqLevel": 90,
+          "reqStr": 240,
+          "reqDex": 90,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 5,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 70,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 66,
+            "max": 75
+          },
+          "matk": {
+            "min": 0,
+            "max": 5
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 9
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 9
+          },
+          "speed": {
+            "min": 0,
+            "max": 5
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 45
+          },
+          "mp": {
+            "min": 0,
+            "max": 45
+          },
+          "wdef": {
+            "min": 0,
+            "max": 45
+          },
+          "mdef": {
+            "min": 0,
+            "max": 45
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 5,
+          "speed": 5,
+          "jump": 2,
+          "accuracy": 9,
+          "defensive": 45
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 5,
+          "speed": 5,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "調停者",
+      "probability": "0.85%",
+      "chance": 61111,
+      "itemId": "1492011",
+      "itemName": "The Peacemaker",
+      "itemTypeId": 15,
+      "salePrice": 400000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Gun",
+        "requirements": {
+          "reqLevel": 90,
+          "reqStr": 90,
+          "reqDex": 275,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 5,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 70,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 66,
+            "max": 75
+          },
+          "matk": {
+            "min": 0,
+            "max": 5
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 9
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 9
+          },
+          "speed": {
+            "min": 0,
+            "max": 5
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 45
+          },
+          "mp": {
+            "min": 0,
+            "max": 45
+          },
+          "wdef": {
+            "min": 0,
+            "max": 45
+          },
+          "mdef": {
+            "min": 0,
+            "max": 45
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 5,
+          "speed": 5,
+          "jump": 2,
+          "accuracy": 9,
+          "defensive": 45
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 5,
+          "speed": 5,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "藍色船型帽",
+      "probability": "1.04%",
+      "chance": 75000,
+      "itemId": "1002640",
+      "itemName": "Blue Sun Boat Hat",
+      "itemTypeId": 7,
+      "salePrice": 100000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Cap",
+      "equipment": {
+        "category": "Hat",
+        "requirements": {
+          "reqLevel": 80,
+          "reqStr": 80,
+          "reqDex": 80,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 3,
+          "dex": 2,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 51,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 7
+          },
+          "dex": {
+            "min": 0,
+            "max": 6
+          },
+          "int": {
+            "min": 0,
+            "max": 4
+          },
+          "luk": {
+            "min": 0,
+            "max": 4
+          },
+          "watk": {
+            "min": 0,
+            "max": 4
+          },
+          "matk": {
+            "min": 0,
+            "max": 4
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 8
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 8
+          },
+          "speed": {
+            "min": 0,
+            "max": 4
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 40
+          },
+          "mp": {
+            "min": 0,
+            "max": 40
+          },
+          "wdef": {
+            "min": 11,
+            "max": 91
+          },
+          "mdef": {
+            "min": 0,
+            "max": 40
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 4,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 8,
+          "defensive": 40
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 8,
+          "attack": 0,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 40
+        }
+      }
+    },
+    {
+      "chineseName": "白色潘尼爾套裝",
+      "probability": "1.04%",
+      "chance": 75000,
+      "itemId": "1052125",
+      "itemName": "White Pioneer",
+      "itemTypeId": 11,
+      "salePrice": 180000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Longcoat",
+      "equipment": {
+        "category": "Overall",
+        "requirements": {
+          "reqLevel": 80,
+          "reqStr": 80,
+          "reqDex": 80,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 6,
+          "dex": 2,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": 15,
+          "mp": null,
+          "wdef": 85,
+          "mdef": null,
+          "upgrades": 10
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 14
+          },
+          "dex": {
+            "min": 0,
+            "max": 10
+          },
+          "int": {
+            "min": 0,
+            "max": 8
+          },
+          "luk": {
+            "min": 0,
+            "max": 8
+          },
+          "watk": {
+            "min": 0,
+            "max": 8
+          },
+          "matk": {
+            "min": 0,
+            "max": 8
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 16
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 16
+          },
+          "speed": {
+            "min": 0,
+            "max": 8
+          },
+          "jump": {
+            "min": 0,
+            "max": 4
+          },
+          "hp": {
+            "min": 0,
+            "max": 95
+          },
+          "mp": {
+            "min": 0,
+            "max": 80
+          },
+          "wdef": {
+            "min": 5,
+            "max": 165
+          },
+          "mdef": {
+            "min": 0,
+            "max": 80
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 8,
+          "attack": 8,
+          "speed": 8,
+          "jump": 4,
+          "accuracy": 16,
+          "defensive": 80
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 16,
+          "attack": 0,
+          "speed": 8,
+          "jump": 4,
+          "accuracy": 0,
+          "defensive": 160
+        }
+      }
+    },
+    {
+      "chineseName": "藍色伯爵靴",
+      "probability": "1.04%",
+      "chance": 75000,
+      "itemId": "1072312",
+      "itemName": "Blue Pageant",
+      "itemTypeId": 14,
+      "salePrice": 110000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Shoes",
+      "equipment": {
+        "category": "Shoes",
+        "requirements": {
+          "reqLevel": 80,
+          "reqStr": 80,
+          "reqDex": 80,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 3,
+          "dex": 2,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 46,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 7
+          },
+          "dex": {
+            "min": 0,
+            "max": 6
+          },
+          "int": {
+            "min": 0,
+            "max": 4
+          },
+          "luk": {
+            "min": 0,
+            "max": 4
+          },
+          "watk": {
+            "min": 0,
+            "max": 4
+          },
+          "matk": {
+            "min": 0,
+            "max": 4
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 8
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 8
+          },
+          "speed": {
+            "min": 0,
+            "max": 4
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 40
+          },
+          "mp": {
+            "min": 0,
+            "max": 40
+          },
+          "wdef": {
+            "min": 6,
+            "max": 86
+          },
+          "mdef": {
+            "min": 0,
+            "max": 40
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 4,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 8,
+          "defensive": 40
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 8,
+          "attack": 0,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 40
+        }
+      }
+    },
+    {
+      "chineseName": "藍色伯爵手套",
+      "probability": "1.04%",
+      "chance": 75000,
+      "itemId": "1082207",
+      "itemName": "Blue Halfglove",
+      "itemTypeId": 10,
+      "salePrice": 200000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Glove",
+      "equipment": {
+        "category": "Gloves",
+        "requirements": {
+          "reqLevel": 80,
+          "reqStr": 80,
+          "reqDex": 80,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 2,
+          "dex": 1,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": 10,
+          "mp": null,
+          "wdef": 32,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 6
+          },
+          "dex": {
+            "min": 0,
+            "max": 5
+          },
+          "int": {
+            "min": 0,
+            "max": 4
+          },
+          "luk": {
+            "min": 0,
+            "max": 4
+          },
+          "watk": {
+            "min": 0,
+            "max": 4
+          },
+          "matk": {
+            "min": 0,
+            "max": 4
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 8
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 8
+          },
+          "speed": {
+            "min": 0,
+            "max": 4
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 50
+          },
+          "mp": {
+            "min": 0,
+            "max": 40
+          },
+          "wdef": {
+            "min": 0,
+            "max": 72
+          },
+          "mdef": {
+            "min": 0,
+            "max": 40
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 4,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 8,
+          "defensive": 40
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 8,
+          "attack": 0,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 80
+        }
+      }
+    },
+    {
+      "chineseName": "紗羅毀滅拳套",
+      "probability": "1.04%",
+      "chance": 75000,
+      "itemId": "1482010",
+      "itemName": "Steelno",
+      "itemTypeId": 15,
+      "salePrice": 350000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Knuckle",
+        "requirements": {
+          "reqLevel": 80,
+          "reqStr": 210,
+          "reqDex": 80,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 5,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 66,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 62,
+            "max": 70
+          },
+          "matk": {
+            "min": 0,
+            "max": 4
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 8
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 8
+          },
+          "speed": {
+            "min": 0,
+            "max": 4
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 40
+          },
+          "mp": {
+            "min": 0,
+            "max": 40
+          },
+          "wdef": {
+            "min": 0,
+            "max": 40
+          },
+          "mdef": {
+            "min": 0,
+            "max": 40
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 8,
+          "defensive": 40
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "因弗蒂之槍",
+      "probability": "1.04%",
+      "chance": 75000,
+      "itemId": "1492010",
+      "itemName": "Infinity's Wrath",
+      "itemTypeId": 15,
+      "salePrice": 350000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Gun",
+        "requirements": {
+          "reqLevel": 80,
+          "reqStr": 80,
+          "reqDex": 245,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 5,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 66,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 62,
+            "max": 70
+          },
+          "matk": {
+            "min": 0,
+            "max": 4
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 8
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 8
+          },
+          "speed": {
+            "min": 0,
+            "max": 4
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 40
+          },
+          "mp": {
+            "min": 0,
+            "max": 40
+          },
+          "wdef": {
+            "min": 0,
+            "max": 40
+          },
+          "mdef": {
+            "min": 0,
+            "max": 40
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 8,
+          "defensive": 40
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "黑色海盜頭巾",
+      "probability": "1.29%",
+      "chance": 92857,
+      "itemId": "1002637",
+      "itemName": "Black Pirate's Bandana",
+      "itemTypeId": 7,
+      "salePrice": 85000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Cap",
+      "equipment": {
+        "category": "Hat",
+        "requirements": {
+          "reqLevel": 70,
+          "reqStr": 70,
+          "reqDex": 70,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 3,
+          "dex": 1,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": 1,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 45,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 7
+          },
+          "dex": {
+            "min": 0,
+            "max": 5
+          },
+          "int": {
+            "min": 0,
+            "max": 4
+          },
+          "luk": {
+            "min": 0,
+            "max": 4
+          },
+          "watk": {
+            "min": 0,
+            "max": 4
+          },
+          "matk": {
+            "min": 0,
+            "max": 4
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 7
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 8
+          },
+          "speed": {
+            "min": 0,
+            "max": 4
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 35
+          },
+          "mp": {
+            "min": 0,
+            "max": 35
+          },
+          "wdef": {
+            "min": 10,
+            "max": 80
+          },
+          "mdef": {
+            "min": 0,
+            "max": 35
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 4,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 7,
+          "defensive": 35
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 7,
+          "attack": 0,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 7,
+          "defensive": 35
+        }
+      }
+    },
+    {
+      "chineseName": "紅色威斯克套裝",
+      "probability": "1.29%",
+      "chance": 92857,
+      "itemId": "1052122",
+      "itemName": "Red Viska",
+      "itemTypeId": 11,
+      "salePrice": 115000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Longcoat",
+      "equipment": {
+        "category": "Overall",
+        "requirements": {
+          "reqLevel": 70,
+          "reqStr": 70,
+          "reqDex": 70,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 5,
+          "dex": 2,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": 10,
+          "mp": null,
+          "wdef": 75,
+          "mdef": null,
+          "upgrades": 10
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 12
+          },
+          "dex": {
+            "min": 0,
+            "max": 9
+          },
+          "int": {
+            "min": 0,
+            "max": 7
+          },
+          "luk": {
+            "min": 0,
+            "max": 7
+          },
+          "watk": {
+            "min": 0,
+            "max": 7
+          },
+          "matk": {
+            "min": 0,
+            "max": 7
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 14
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 14
+          },
+          "speed": {
+            "min": 0,
+            "max": 7
+          },
+          "jump": {
+            "min": 0,
+            "max": 4
+          },
+          "hp": {
+            "min": 0,
+            "max": 80
+          },
+          "mp": {
+            "min": 0,
+            "max": 70
+          },
+          "wdef": {
+            "min": 5,
+            "max": 145
+          },
+          "mdef": {
+            "min": 0,
+            "max": 70
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 7,
+          "attack": 7,
+          "speed": 7,
+          "jump": 4,
+          "accuracy": 14,
+          "defensive": 70
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 14,
+          "attack": 0,
+          "speed": 7,
+          "jump": 4,
+          "accuracy": 0,
+          "defensive": 140
+        }
+      }
+    },
+    {
+      "chineseName": "黑色航海靴",
+      "probability": "1.29%",
+      "chance": 92857,
+      "itemId": "1072309",
+      "itemName": "Black Voyson Shoes",
+      "itemTypeId": 14,
+      "salePrice": 90000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Shoes",
+      "equipment": {
+        "category": "Shoes",
+        "requirements": {
+          "reqLevel": 70,
+          "reqStr": 70,
+          "reqDex": 70,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 3,
+          "dex": 1,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": 1,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 40,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 7
+          },
+          "dex": {
+            "min": 0,
+            "max": 5
+          },
+          "int": {
+            "min": 0,
+            "max": 4
+          },
+          "luk": {
+            "min": 0,
+            "max": 4
+          },
+          "watk": {
+            "min": 0,
+            "max": 4
+          },
+          "matk": {
+            "min": 0,
+            "max": 4
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 7
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 8
+          },
+          "speed": {
+            "min": 0,
+            "max": 4
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 35
+          },
+          "mp": {
+            "min": 0,
+            "max": 35
+          },
+          "wdef": {
+            "min": 5,
+            "max": 75
+          },
+          "mdef": {
+            "min": 0,
+            "max": 35
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 4,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 7,
+          "defensive": 35
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 7,
+          "attack": 0,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 7,
+          "defensive": 35
+        }
+      }
+    },
+    {
+      "chineseName": "黑色威斯克手套",
+      "probability": "1.29%",
+      "chance": 92857,
+      "itemId": "1082204",
+      "itemName": "Black Bisk",
+      "itemTypeId": 10,
+      "salePrice": 150000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Glove",
+      "equipment": {
+        "category": "Gloves",
+        "requirements": {
+          "reqLevel": 70,
+          "reqStr": 70,
+          "reqDex": 70,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 1,
+          "dex": 1,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 28,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 5
+          },
+          "dex": {
+            "min": 0,
+            "max": 5
+          },
+          "int": {
+            "min": 0,
+            "max": 4
+          },
+          "luk": {
+            "min": 0,
+            "max": 4
+          },
+          "watk": {
+            "min": 0,
+            "max": 4
+          },
+          "matk": {
+            "min": 0,
+            "max": 4
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 7
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 7
+          },
+          "speed": {
+            "min": 0,
+            "max": 4
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 35
+          },
+          "mp": {
+            "min": 0,
+            "max": 35
+          },
+          "wdef": {
+            "min": 0,
+            "max": 63
+          },
+          "mdef": {
+            "min": 0,
+            "max": 35
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 4,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 7,
+          "defensive": 35
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 7,
+          "attack": 0,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 35
+        }
+      }
+    },
+    {
+      "chineseName": "高爆彈",
+      "probability": "1.29%",
+      "chance": 92857,
+      "itemId": "1202006",
+      "itemName": "Shiny Bullet",
+      "itemTypeId": 16,
+      "salePrice": 250000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Projectile",
+      "equipment": {
+        "category": "Projectile",
+        "requirements": {
+          "reqLevel": 10,
+          "reqStr": 0,
+          "reqDex": 0,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 18,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": null
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 18,
+            "max": 19
+          },
+          "matk": {
+            "min": 0,
+            "max": 1
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 1
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 1
+          },
+          "speed": {
+            "min": 0,
+            "max": 1
+          },
+          "jump": {
+            "min": 0,
+            "max": 0
+          },
+          "hp": {
+            "min": 0,
+            "max": 5
+          },
+          "mp": {
+            "min": 0,
+            "max": 5
+          },
+          "wdef": {
+            "min": 0,
+            "max": 5
+          },
+          "mdef": {
+            "min": 0,
+            "max": 5
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 1,
+          "speed": 1,
+          "jump": 0,
+          "accuracy": 1,
+          "defensive": 5
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 1,
+          "speed": 1,
+          "jump": 0,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "拜爾毀滅拳套",
+      "probability": "1.29%",
+      "chance": 92857,
+      "itemId": "1482009",
+      "itemName": "Beia Crash",
+      "itemTypeId": 15,
+      "salePrice": 300000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Knuckle",
+        "requirements": {
+          "reqLevel": 70,
+          "reqStr": 180,
+          "reqDex": 70,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 5,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 62,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 59,
+            "max": 66
+          },
+          "matk": {
+            "min": 0,
+            "max": 4
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 7
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 7
+          },
+          "speed": {
+            "min": 0,
+            "max": 4
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 35
+          },
+          "mp": {
+            "min": 0,
+            "max": 35
+          },
+          "wdef": {
+            "min": 0,
+            "max": 35
+          },
+          "mdef": {
+            "min": 0,
+            "max": 35
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 7,
+          "defensive": 35
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "深淵射手",
+      "probability": "1.29%",
+      "chance": 92857,
+      "itemId": "1492009",
+      "itemName": "Abyss Shooter",
+      "itemTypeId": 15,
+      "salePrice": 310000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Gun",
+        "requirements": {
+          "reqLevel": 70,
+          "reqStr": 70,
+          "reqDex": 210,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 5,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 62,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 59,
+            "max": 66
+          },
+          "matk": {
+            "min": 0,
+            "max": 4
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 7
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 7
+          },
+          "speed": {
+            "min": 0,
+            "max": 4
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 35
+          },
+          "mp": {
+            "min": 0,
+            "max": 35
+          },
+          "wdef": {
+            "min": 0,
+            "max": 35
+          },
+          "mdef": {
+            "min": 0,
+            "max": 35
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 7,
+          "defensive": 35
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "紫色亞麻水手頭巾",
+      "probability": "1.62%",
+      "chance": 116667,
+      "itemId": "1002634",
+      "itemName": "Purple Cast Linen",
+      "itemTypeId": 7,
+      "salePrice": 55000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Cap",
+      "equipment": {
+        "category": "Hat",
+        "requirements": {
+          "reqLevel": 60,
+          "reqStr": 60,
+          "reqDex": 60,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 3,
+          "dex": 1,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 39,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 6
+          },
+          "dex": {
+            "min": 0,
+            "max": 4
+          },
+          "int": {
+            "min": 0,
+            "max": 3
+          },
+          "luk": {
+            "min": 0,
+            "max": 3
+          },
+          "watk": {
+            "min": 0,
+            "max": 3
+          },
+          "matk": {
+            "min": 0,
+            "max": 3
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 6
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 6
+          },
+          "speed": {
+            "min": 0,
+            "max": 3
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 30
+          },
+          "mp": {
+            "min": 0,
+            "max": 30
+          },
+          "wdef": {
+            "min": 9,
+            "max": 69
+          },
+          "mdef": {
+            "min": 0,
+            "max": 30
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 3,
+          "attack": 3,
+          "speed": 3,
+          "jump": 2,
+          "accuracy": 6,
+          "defensive": 30
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 6,
+          "attack": 0,
+          "speed": 3,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 30
+        }
+      }
+    },
+    {
+      "chineseName": "紫色皇家套裝",
+      "probability": "1.62%",
+      "chance": 116667,
+      "itemId": "1052119",
+      "itemName": "Black Royal Barone",
+      "itemTypeId": 11,
+      "salePrice": 100000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Longcoat",
+      "equipment": {
+        "category": "Overall",
+        "requirements": {
+          "reqLevel": 60,
+          "reqStr": 60,
+          "reqDex": 60,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 5,
+          "dex": 1,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": 10,
+          "mp": null,
+          "wdef": 65,
+          "mdef": null,
+          "upgrades": 10
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 11
+          },
+          "dex": {
+            "min": 0,
+            "max": 7
+          },
+          "int": {
+            "min": 0,
+            "max": 6
+          },
+          "luk": {
+            "min": 0,
+            "max": 6
+          },
+          "watk": {
+            "min": 0,
+            "max": 6
+          },
+          "matk": {
+            "min": 0,
+            "max": 6
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 12
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 12
+          },
+          "speed": {
+            "min": 0,
+            "max": 6
+          },
+          "jump": {
+            "min": 0,
+            "max": 3
+          },
+          "hp": {
+            "min": 0,
+            "max": 70
+          },
+          "mp": {
+            "min": 0,
+            "max": 60
+          },
+          "wdef": {
+            "min": 5,
+            "max": 125
+          },
+          "mdef": {
+            "min": 0,
+            "max": 60
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 6,
+          "attack": 6,
+          "speed": 6,
+          "jump": 3,
+          "accuracy": 12,
+          "defensive": 60
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 12,
+          "attack": 0,
+          "speed": 6,
+          "jump": 3,
+          "accuracy": 0,
+          "defensive": 120
+        }
+      }
+    },
+    {
+      "chineseName": "黑色巴西里靴",
+      "probability": "1.62%",
+      "chance": 116667,
+      "itemId": "1072306",
+      "itemName": "Black Basile Boots",
+      "itemTypeId": 14,
+      "salePrice": 65000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Shoes",
+      "equipment": {
+        "category": "Shoes",
+        "requirements": {
+          "reqLevel": 60,
+          "reqStr": 60,
+          "reqDex": 60,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 1,
+          "dex": 3,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 34,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 4
+          },
+          "dex": {
+            "min": 0,
+            "max": 6
+          },
+          "int": {
+            "min": 0,
+            "max": 3
+          },
+          "luk": {
+            "min": 0,
+            "max": 3
+          },
+          "watk": {
+            "min": 0,
+            "max": 3
+          },
+          "matk": {
+            "min": 0,
+            "max": 3
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 6
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 6
+          },
+          "speed": {
+            "min": 0,
+            "max": 3
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 30
+          },
+          "mp": {
+            "min": 0,
+            "max": 30
+          },
+          "wdef": {
+            "min": 4,
+            "max": 64
+          },
+          "mdef": {
+            "min": 0,
+            "max": 30
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 3,
+          "attack": 3,
+          "speed": 3,
+          "jump": 2,
+          "accuracy": 6,
+          "defensive": 30
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 6,
+          "attack": 0,
+          "speed": 3,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 30
+        }
+      }
+    },
+    {
+      "chineseName": "黑色舒爾特手套",
+      "probability": "1.62%",
+      "chance": 116667,
+      "itemId": "1082201",
+      "itemName": "Black Schult",
+      "itemTypeId": 10,
+      "salePrice": 110000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Glove",
+      "equipment": {
+        "category": "Gloves",
+        "requirements": {
+          "reqLevel": 60,
+          "reqStr": 60,
+          "reqDex": 60,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 1,
+          "dex": 1,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 24,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 4
+          },
+          "dex": {
+            "min": 0,
+            "max": 4
+          },
+          "int": {
+            "min": 0,
+            "max": 3
+          },
+          "luk": {
+            "min": 0,
+            "max": 3
+          },
+          "watk": {
+            "min": 0,
+            "max": 3
+          },
+          "matk": {
+            "min": 0,
+            "max": 3
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 6
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 6
+          },
+          "speed": {
+            "min": 0,
+            "max": 3
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 30
+          },
+          "mp": {
+            "min": 0,
+            "max": 30
+          },
+          "wdef": {
+            "min": 0,
+            "max": 54
+          },
+          "mdef": {
+            "min": 0,
+            "max": 30
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 3,
+          "attack": 3,
+          "speed": 3,
+          "jump": 2,
+          "accuracy": 6,
+          "defensive": 30
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 6,
+          "attack": 0,
+          "speed": 3,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 30
+        }
+      }
+    },
+    {
+      "chineseName": "火焰膠囊",
+      "probability": "1.62%",
+      "chance": 116667,
+      "itemId": "1202004",
+      "itemName": "Blaze Capsule",
+      "itemTypeId": 16,
+      "salePrice": 100000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Projectile",
+      "equipment": {
+        "category": "Projectile",
+        "requirements": {
+          "reqLevel": 70,
+          "reqStr": 0,
+          "reqDex": 0,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 16,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": null
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 13,
+            "max": 20
+          },
+          "matk": {
+            "min": 0,
+            "max": 4
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 7
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 7
+          },
+          "speed": {
+            "min": 0,
+            "max": 4
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 35
+          },
+          "mp": {
+            "min": 0,
+            "max": 35
+          },
+          "wdef": {
+            "min": 0,
+            "max": 35
+          },
+          "mdef": {
+            "min": 0,
+            "max": 35
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 7,
+          "defensive": 35
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "寒冰膠囊",
+      "probability": "1.62%",
+      "chance": 116667,
+      "itemId": "1202005",
+      "itemName": "Glaze Capsule",
+      "itemTypeId": 16,
+      "salePrice": 100000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Projectile",
+      "equipment": {
+        "category": "Projectile",
+        "requirements": {
+          "reqLevel": 70,
+          "reqStr": 0,
+          "reqDex": 0,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 16,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": null
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 13,
+            "max": 20
+          },
+          "matk": {
+            "min": 0,
+            "max": 4
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 7
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 7
+          },
+          "speed": {
+            "min": 0,
+            "max": 4
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 35
+          },
+          "mp": {
+            "min": 0,
+            "max": 35
+          },
+          "wdef": {
+            "min": 0,
+            "max": 35
+          },
+          "mdef": {
+            "min": 0,
+            "max": 35
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 7,
+          "defensive": 35
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "塞爾拉利刃拳套",
+      "probability": "1.62%",
+      "chance": 116667,
+      "itemId": "1482008",
+      "itemName": "Psycho Claw",
+      "itemTypeId": 15,
+      "salePrice": 240000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Knuckle",
+        "requirements": {
+          "reqLevel": 60,
+          "reqStr": 150,
+          "reqDex": 60,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 5,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 58,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 55,
+            "max": 61
+          },
+          "matk": {
+            "min": 0,
+            "max": 3
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 6
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 6
+          },
+          "speed": {
+            "min": 0,
+            "max": 3
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 30
+          },
+          "mp": {
+            "min": 0,
+            "max": 30
+          },
+          "wdef": {
+            "min": 0,
+            "max": 30
+          },
+          "mdef": {
+            "min": 0,
+            "max": 30
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 3,
+          "speed": 3,
+          "jump": 2,
+          "accuracy": 6,
+          "defensive": 30
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 3,
+          "speed": 3,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "灼熱地獄",
+      "probability": "1.62%",
+      "chance": 116667,
+      "itemId": "1492008",
+      "itemName": "Burning Hell",
+      "itemTypeId": 15,
+      "salePrice": 250000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Gun",
+        "requirements": {
+          "reqLevel": 60,
+          "reqStr": 60,
+          "reqDex": 175,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 5,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 58,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 55,
+            "max": 61
+          },
+          "matk": {
+            "min": 0,
+            "max": 3
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 6
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 6
+          },
+          "speed": {
+            "min": 0,
+            "max": 3
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 30
+          },
+          "mp": {
+            "min": 0,
+            "max": 30
+          },
+          "wdef": {
+            "min": 0,
+            "max": 30
+          },
+          "mdef": {
+            "min": 0,
+            "max": 30
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 3,
+          "speed": 3,
+          "jump": 2,
+          "accuracy": 6,
+          "defensive": 30
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 3,
+          "speed": 3,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "褐色皮製遠洋帽",
+      "probability": "2.09%",
+      "chance": 150000,
+      "itemId": "1002631",
+      "itemName": "Brown Leather Ocean Hat",
+      "itemTypeId": 7,
+      "salePrice": 40000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Cap",
+      "equipment": {
+        "category": "Hat",
+        "requirements": {
+          "reqLevel": 50,
+          "reqStr": 50,
+          "reqDex": 50,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 2,
+          "dex": 1,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 33,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 5
+          },
+          "dex": {
+            "min": 0,
+            "max": 4
+          },
+          "int": {
+            "min": 0,
+            "max": 3
+          },
+          "luk": {
+            "min": 0,
+            "max": 3
+          },
+          "watk": {
+            "min": 0,
+            "max": 3
+          },
+          "matk": {
+            "min": 0,
+            "max": 3
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 5
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 5
+          },
+          "speed": {
+            "min": 0,
+            "max": 3
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 25
+          },
+          "mp": {
+            "min": 0,
+            "max": 25
+          },
+          "wdef": {
+            "min": 8,
+            "max": 58
+          },
+          "mdef": {
+            "min": 0,
+            "max": 25
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 3,
+          "attack": 3,
+          "speed": 3,
+          "jump": 1,
+          "accuracy": 5,
+          "defensive": 25
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 5,
+          "attack": 0,
+          "speed": 3,
+          "jump": 1,
+          "accuracy": 0,
+          "defensive": 25
+        }
+      }
+    },
+    {
+      "chineseName": "綠色強化服",
+      "probability": "2.09%",
+      "chance": 150000,
+      "itemId": "1052116",
+      "itemName": "Green Plasteer",
+      "itemTypeId": 11,
+      "salePrice": 95000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Longcoat",
+      "equipment": {
+        "category": "Overall",
+        "requirements": {
+          "reqLevel": 50,
+          "reqStr": 50,
+          "reqDex": 50,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 4,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": 1,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 55,
+          "mdef": null,
+          "upgrades": 10
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 14
+          },
+          "dex": {
+            "min": 0,
+            "max": 10
+          },
+          "int": {
+            "min": 0,
+            "max": 10
+          },
+          "luk": {
+            "min": 0,
+            "max": 10
+          },
+          "watk": {
+            "min": 0,
+            "max": 5
+          },
+          "matk": {
+            "min": 0,
+            "max": 5
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 10
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 11
+          },
+          "speed": {
+            "min": 0,
+            "max": 5
+          },
+          "jump": {
+            "min": 0,
+            "max": 3
+          },
+          "hp": {
+            "min": 0,
+            "max": 50
+          },
+          "mp": {
+            "min": 0,
+            "max": 50
+          },
+          "wdef": {
+            "min": 5,
+            "max": 105
+          },
+          "mdef": {
+            "min": 0,
+            "max": 50
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 10,
+          "attack": 5,
+          "speed": 5,
+          "jump": 3,
+          "accuracy": 10,
+          "defensive": 50
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 10,
+          "attack": 0,
+          "speed": 5,
+          "jump": 3,
+          "accuracy": 10,
+          "defensive": 50
+        }
+      }
+    },
+    {
+      "chineseName": "褐色強化皮靴",
+      "probability": "2.09%",
+      "chance": 150000,
+      "itemId": "1072303",
+      "itemName": "Brown Double Boots",
+      "itemTypeId": 14,
+      "salePrice": 50000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Shoes",
+      "equipment": {
+        "category": "Shoes",
+        "requirements": {
+          "reqLevel": 50,
+          "reqStr": 50,
+          "reqDex": 50,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 2,
+          "dex": 1,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 28,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 5
+          },
+          "dex": {
+            "min": 0,
+            "max": 4
+          },
+          "int": {
+            "min": 0,
+            "max": 3
+          },
+          "luk": {
+            "min": 0,
+            "max": 3
+          },
+          "watk": {
+            "min": 0,
+            "max": 3
+          },
+          "matk": {
+            "min": 0,
+            "max": 3
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 5
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 5
+          },
+          "speed": {
+            "min": 0,
+            "max": 3
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 25
+          },
+          "mp": {
+            "min": 0,
+            "max": 25
+          },
+          "wdef": {
+            "min": 3,
+            "max": 53
+          },
+          "mdef": {
+            "min": 0,
+            "max": 25
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 3,
+          "attack": 3,
+          "speed": 3,
+          "jump": 1,
+          "accuracy": 5,
+          "defensive": 25
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 5,
+          "attack": 0,
+          "speed": 3,
+          "jump": 1,
+          "accuracy": 0,
+          "defensive": 25
+        }
+      }
+    },
+    {
+      "chineseName": "褐色羅伊斯手套",
+      "probability": "2.09%",
+      "chance": 150000,
+      "itemId": "1082198",
+      "itemName": "Brown Royce",
+      "itemTypeId": 10,
+      "salePrice": 85000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Glove",
+      "equipment": {
+        "category": "Gloves",
+        "requirements": {
+          "reqLevel": 50,
+          "reqStr": 50,
+          "reqDex": 50,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 1,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 20,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 6
+          },
+          "dex": {
+            "min": 0,
+            "max": 5
+          },
+          "int": {
+            "min": 0,
+            "max": 5
+          },
+          "luk": {
+            "min": 0,
+            "max": 5
+          },
+          "watk": {
+            "min": 0,
+            "max": 3
+          },
+          "matk": {
+            "min": 0,
+            "max": 3
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 5
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 5
+          },
+          "speed": {
+            "min": 0,
+            "max": 3
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 25
+          },
+          "mp": {
+            "min": 0,
+            "max": 25
+          },
+          "wdef": {
+            "min": 0,
+            "max": 45
+          },
+          "mdef": {
+            "min": 0,
+            "max": 25
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 5,
+          "attack": 3,
+          "speed": 3,
+          "jump": 1,
+          "accuracy": 5,
+          "defensive": 25
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 5,
+          "attack": 0,
+          "speed": 3,
+          "jump": 1,
+          "accuracy": 0,
+          "defensive": 25
+        }
+      }
+    },
+    {
+      "chineseName": "高等子彈",
+      "probability": "2.09%",
+      "chance": 150000,
+      "itemId": "1202003",
+      "itemName": "Vital Bullet",
+      "itemTypeId": 16,
+      "salePrice": 50000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Projectile",
+      "equipment": {
+        "category": "Projectile",
+        "requirements": {
+          "reqLevel": 10,
+          "reqStr": 0,
+          "reqDex": 0,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 16,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": null
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 16,
+            "max": 17
+          },
+          "matk": {
+            "min": 0,
+            "max": 1
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 1
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 1
+          },
+          "speed": {
+            "min": 0,
+            "max": 1
+          },
+          "jump": {
+            "min": 0,
+            "max": 0
+          },
+          "hp": {
+            "min": 0,
+            "max": 5
+          },
+          "mp": {
+            "min": 0,
+            "max": 5
+          },
+          "wdef": {
+            "min": 0,
+            "max": 5
+          },
+          "mdef": {
+            "min": 0,
+            "max": 5
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 1,
+          "speed": 1,
+          "jump": 0,
+          "accuracy": 1,
+          "defensive": 5
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 1,
+          "speed": 1,
+          "jump": 0,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "惡魔之爪",
+      "probability": "2.09%",
+      "chance": 150000,
+      "itemId": "1482007",
+      "itemName": "Fury Claw",
+      "itemTypeId": 15,
+      "salePrice": 130000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Knuckle",
+        "requirements": {
+          "reqLevel": 50,
+          "reqStr": 120,
+          "reqDex": 50,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 5,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 50,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 48,
+            "max": 53
+          },
+          "matk": {
+            "min": 0,
+            "max": 3
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 5
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 5
+          },
+          "speed": {
+            "min": 0,
+            "max": 3
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 25
+          },
+          "mp": {
+            "min": 0,
+            "max": 25
+          },
+          "wdef": {
+            "min": 0,
+            "max": 25
+          },
+          "mdef": {
+            "min": 0,
+            "max": 25
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 3,
+          "speed": 3,
+          "jump": 1,
+          "accuracy": 5,
+          "defensive": 25
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 3,
+          "speed": 3,
+          "jump": 1,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "拉斯菲特之槍",
+      "probability": "2.09%",
+      "chance": 150000,
+      "itemId": "1492007",
+      "itemName": "Mr. Rasfelt",
+      "itemTypeId": 15,
+      "salePrice": 140000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Gun",
+        "requirements": {
+          "reqLevel": 50,
+          "reqStr": 50,
+          "reqDex": 140,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 5,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 49,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 47,
+            "max": 52
+          },
+          "matk": {
+            "min": 0,
+            "max": 3
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 5
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 5
+          },
+          "speed": {
+            "min": 0,
+            "max": 3
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 25
+          },
+          "mp": {
+            "min": 0,
+            "max": 25
+          },
+          "wdef": {
+            "min": 0,
+            "max": 25
+          },
+          "mdef": {
+            "min": 0,
+            "max": 25
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 3,
+          "speed": 3,
+          "jump": 1,
+          "accuracy": 5,
+          "defensive": 25
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 3,
+          "speed": 3,
+          "jump": 1,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "紅色皇家頭巾",
+      "probability": "2.79%",
+      "chance": 200000,
+      "itemId": "1002628",
+      "itemName": "Red Misty",
+      "itemTypeId": 7,
+      "salePrice": 30000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Cap",
+      "equipment": {
+        "category": "Hat",
+        "requirements": {
+          "reqLevel": 40,
+          "reqStr": 40,
+          "reqDex": 40,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": 20,
+          "mp": null,
+          "wdef": 27,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 0,
+            "max": 2
+          },
+          "matk": {
+            "min": 0,
+            "max": 2
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 4
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 4
+          },
+          "speed": {
+            "min": 0,
+            "max": 2
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 40
+          },
+          "mp": {
+            "min": 0,
+            "max": 20
+          },
+          "wdef": {
+            "min": 7,
+            "max": 47
+          },
+          "mdef": {
+            "min": 0,
+            "max": 20
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 2,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 4,
+          "defensive": 20
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 0,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 0,
+          "defensive": 40
+        }
+      }
+    },
+    {
+      "chineseName": "紅色麻布衣",
+      "probability": "2.79%",
+      "chance": 200000,
+      "itemId": "1052113",
+      "itemName": "Red Barbay",
+      "itemTypeId": 11,
+      "salePrice": 50000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Longcoat",
+      "equipment": {
+        "category": "Overall",
+        "requirements": {
+          "reqLevel": 40,
+          "reqStr": 40,
+          "reqDex": 40,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 4,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": 10,
+          "mp": null,
+          "wdef": 40,
+          "mdef": null,
+          "upgrades": 10
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 12
+          },
+          "dex": {
+            "min": 0,
+            "max": 8
+          },
+          "int": {
+            "min": 0,
+            "max": 8
+          },
+          "luk": {
+            "min": 0,
+            "max": 8
+          },
+          "watk": {
+            "min": 0,
+            "max": 4
+          },
+          "matk": {
+            "min": 0,
+            "max": 4
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 8
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 8
+          },
+          "speed": {
+            "min": 0,
+            "max": 4
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 50
+          },
+          "mp": {
+            "min": 0,
+            "max": 40
+          },
+          "wdef": {
+            "min": 0,
+            "max": 80
+          },
+          "mdef": {
+            "min": 0,
+            "max": 40
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 8,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 8,
+          "defensive": 40
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 8,
+          "attack": 0,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 80
+        }
+      }
+    },
+    {
+      "chineseName": "褐色尖頭皮鞋",
+      "probability": "2.79%",
+      "chance": 200000,
+      "itemId": "1072300",
+      "itemName": "Brown Leather Krag",
+      "itemTypeId": 14,
+      "salePrice": 35000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Shoes",
+      "equipment": {
+        "category": "Shoes",
+        "requirements": {
+          "reqLevel": 40,
+          "reqStr": 40,
+          "reqDex": 40,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 1,
+          "dex": 1,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": 1,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 22,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 3
+          },
+          "dex": {
+            "min": 0,
+            "max": 3
+          },
+          "int": {
+            "min": 0,
+            "max": 2
+          },
+          "luk": {
+            "min": 0,
+            "max": 2
+          },
+          "watk": {
+            "min": 0,
+            "max": 2
+          },
+          "matk": {
+            "min": 0,
+            "max": 2
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 4
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 5
+          },
+          "speed": {
+            "min": 0,
+            "max": 2
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 20
+          },
+          "mp": {
+            "min": 0,
+            "max": 20
+          },
+          "wdef": {
+            "min": 2,
+            "max": 42
+          },
+          "mdef": {
+            "min": 0,
+            "max": 20
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 2,
+          "attack": 2,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 4,
+          "defensive": 20
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 4,
+          "attack": 0,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 4,
+          "defensive": 20
+        }
+      }
+    },
+    {
+      "chineseName": "褐色瑞恩手腕",
+      "probability": "2.79%",
+      "chance": 200000,
+      "itemId": "1082195",
+      "itemName": "Brown Barbee",
+      "itemTypeId": 10,
+      "salePrice": 40000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Glove",
+      "equipment": {
+        "category": "Gloves",
+        "requirements": {
+          "reqLevel": 40,
+          "reqStr": 40,
+          "reqDex": 40,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": null,
+          "dex": 1,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 14,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 4
+          },
+          "dex": {
+            "min": 0,
+            "max": 5
+          },
+          "int": {
+            "min": 0,
+            "max": 4
+          },
+          "luk": {
+            "min": 0,
+            "max": 4
+          },
+          "watk": {
+            "min": 0,
+            "max": 2
+          },
+          "matk": {
+            "min": 0,
+            "max": 2
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 4
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 4
+          },
+          "speed": {
+            "min": 0,
+            "max": 2
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 20
+          },
+          "mp": {
+            "min": 0,
+            "max": 20
+          },
+          "wdef": {
+            "min": 0,
+            "max": 34
+          },
+          "mdef": {
+            "min": 0,
+            "max": 20
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 4,
+          "attack": 2,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 4,
+          "defensive": 20
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 4,
+          "attack": 0,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 0,
+          "defensive": 20
+        }
+      }
+    },
+    {
+      "chineseName": "強力子彈",
+      "probability": "2.79%",
+      "chance": 200000,
+      "itemId": "1202002",
+      "itemName": "Mighty Bullet",
+      "itemTypeId": 16,
+      "salePrice": 10000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Projectile",
+      "equipment": {
+        "category": "Projectile",
+        "requirements": {
+          "reqLevel": 10,
+          "reqStr": 0,
+          "reqDex": 0,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 14,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": null
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 14,
+            "max": 15
+          },
+          "matk": {
+            "min": 0,
+            "max": 1
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 1
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 1
+          },
+          "speed": {
+            "min": 0,
+            "max": 1
+          },
+          "jump": {
+            "min": 0,
+            "max": 0
+          },
+          "hp": {
+            "min": 0,
+            "max": 5
+          },
+          "mp": {
+            "min": 0,
+            "max": 5
+          },
+          "wdef": {
+            "min": 0,
+            "max": 5
+          },
+          "mdef": {
+            "min": 0,
+            "max": 5
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 1,
+          "speed": 1,
+          "jump": 0,
+          "accuracy": 1,
+          "defensive": 5
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 1,
+          "speed": 1,
+          "jump": 0,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "尼奧札德毀滅拳套",
+      "probability": "2.79%",
+      "chance": 200000,
+      "itemId": "1482006",
+      "itemName": "Neozard",
+      "itemTypeId": 15,
+      "salePrice": 60000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Knuckle",
+        "requirements": {
+          "reqLevel": 40,
+          "reqStr": 90,
+          "reqDex": 40,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 6,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 42,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 40,
+            "max": 44
+          },
+          "matk": {
+            "min": 0,
+            "max": 2
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 4
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 4
+          },
+          "speed": {
+            "min": 0,
+            "max": 2
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 20
+          },
+          "mp": {
+            "min": 0,
+            "max": 20
+          },
+          "wdef": {
+            "min": 0,
+            "max": 20
+          },
+          "mdef": {
+            "min": 0,
+            "max": 20
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 2,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 4,
+          "defensive": 20
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 2,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "銀月神射",
+      "probability": "2.79%",
+      "chance": 200000,
+      "itemId": "1492006",
+      "itemName": "Lunar Shooter",
+      "itemTypeId": 15,
+      "salePrice": 65000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Gun",
+        "requirements": {
+          "reqLevel": 40,
+          "reqStr": 40,
+          "reqDex": 105,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 5,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 40,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 38,
+            "max": 42
+          },
+          "matk": {
+            "min": 0,
+            "max": 2
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 4
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 4
+          },
+          "speed": {
+            "min": 0,
+            "max": 2
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 20
+          },
+          "mp": {
+            "min": 0,
+            "max": 20
+          },
+          "wdef": {
+            "min": 0,
+            "max": 20
+          },
+          "mdef": {
+            "min": 0,
+            "max": 20
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 2,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 4,
+          "defensive": 20
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 2,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "海藍水手頭巾",
+      "probability": "3.28%",
+      "chance": 235714,
+      "itemId": "1002625",
+      "itemName": "Blue Den Marine",
+      "itemTypeId": 7,
+      "salePrice": 25000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Cap",
+      "equipment": {
+        "category": "Hat",
+        "requirements": {
+          "reqLevel": 35,
+          "reqStr": 35,
+          "reqDex": 35,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 1,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 24,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 5
+          },
+          "dex": {
+            "min": 0,
+            "max": 4
+          },
+          "int": {
+            "min": 0,
+            "max": 4
+          },
+          "luk": {
+            "min": 0,
+            "max": 4
+          },
+          "watk": {
+            "min": 0,
+            "max": 2
+          },
+          "matk": {
+            "min": 0,
+            "max": 2
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 4
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 4
+          },
+          "speed": {
+            "min": 0,
+            "max": 2
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 18
+          },
+          "mp": {
+            "min": 0,
+            "max": 18
+          },
+          "wdef": {
+            "min": 7,
+            "max": 42
+          },
+          "mdef": {
+            "min": 0,
+            "max": 18
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 4,
+          "attack": 2,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 4,
+          "defensive": 18
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 4,
+          "attack": 0,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 0,
+          "defensive": 18
+        }
+      }
+    },
+    {
+      "chineseName": "藍色緊身服",
+      "probability": "3.28%",
+      "chance": 235714,
+      "itemId": "1052110",
+      "itemName": "Blue Brace Look",
+      "itemTypeId": 11,
+      "salePrice": 37500,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Longcoat",
+      "equipment": {
+        "category": "Overall",
+        "requirements": {
+          "reqLevel": 35,
+          "reqStr": 35,
+          "reqDex": 35,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 3,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": 10,
+          "mp": null,
+          "wdef": 40,
+          "mdef": null,
+          "upgrades": 10
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 10
+          },
+          "dex": {
+            "min": 0,
+            "max": 7
+          },
+          "int": {
+            "min": 0,
+            "max": 7
+          },
+          "luk": {
+            "min": 0,
+            "max": 7
+          },
+          "watk": {
+            "min": 0,
+            "max": 4
+          },
+          "matk": {
+            "min": 0,
+            "max": 4
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 7
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 7
+          },
+          "speed": {
+            "min": 0,
+            "max": 4
+          },
+          "jump": {
+            "min": 0,
+            "max": 2
+          },
+          "hp": {
+            "min": 0,
+            "max": 45
+          },
+          "mp": {
+            "min": 0,
+            "max": 35
+          },
+          "wdef": {
+            "min": 5,
+            "max": 75
+          },
+          "mdef": {
+            "min": 0,
+            "max": 35
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 7,
+          "attack": 4,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 7,
+          "defensive": 35
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 7,
+          "attack": 0,
+          "speed": 4,
+          "jump": 2,
+          "accuracy": 0,
+          "defensive": 70
+        }
+      }
+    },
+    {
+      "chineseName": "褐色洛卡特鞋",
+      "probability": "3.28%",
+      "chance": 235714,
+      "itemId": "1072297",
+      "itemName": "Brown Locote Shoes",
+      "itemTypeId": 14,
+      "salePrice": 19000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Shoes",
+      "equipment": {
+        "category": "Shoes",
+        "requirements": {
+          "reqLevel": 35,
+          "reqStr": 35,
+          "reqDex": 35,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": 1,
+          "dex": 1,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 19,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": 3
+          },
+          "dex": {
+            "min": 0,
+            "max": 3
+          },
+          "int": {
+            "min": 0,
+            "max": 2
+          },
+          "luk": {
+            "min": 0,
+            "max": 2
+          },
+          "watk": {
+            "min": 0,
+            "max": 2
+          },
+          "matk": {
+            "min": 0,
+            "max": 2
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 4
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 4
+          },
+          "speed": {
+            "min": 0,
+            "max": 2
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 18
+          },
+          "mp": {
+            "min": 0,
+            "max": 18
+          },
+          "wdef": {
+            "min": 2,
+            "max": 37
+          },
+          "mdef": {
+            "min": 0,
+            "max": 18
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": 2,
+          "attack": 2,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 4,
+          "defensive": 18
+        },
+        "statCategoryMaxExtra": {
+          "attributes": 4,
+          "attack": 0,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 0,
+          "defensive": 18
+        }
+      }
+    },
+    {
+      "chineseName": "褐色寶石手套",
+      "probability": "3.28%",
+      "chance": 235714,
+      "itemId": "1082192",
+      "itemName": "Brown Jeweled",
+      "itemTypeId": 10,
+      "salePrice": 30000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Glove",
+      "equipment": {
+        "category": "Gloves",
+        "requirements": {
+          "reqLevel": 35,
+          "reqStr": 35,
+          "reqDex": 35,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 12,
+          "mdef": null,
+          "upgrades": 5
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 0,
+            "max": 2
+          },
+          "matk": {
+            "min": 0,
+            "max": 2
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 4
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 4
+          },
+          "speed": {
+            "min": 0,
+            "max": 2
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 18
+          },
+          "mp": {
+            "min": 0,
+            "max": 18
+          },
+          "wdef": {
+            "min": 0,
+            "max": 30
+          },
+          "mdef": {
+            "min": 0,
+            "max": 18
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 2,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 4,
+          "defensive": 18
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 0,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 0,
+          "defensive": 18
+        }
+      }
+    },
+    {
+      "chineseName": "利刃拳套",
+      "probability": "3.28%",
+      "chance": 235714,
+      "itemId": "1482005",
+      "itemName": "Silver Maiden",
+      "itemTypeId": 15,
+      "salePrice": 40000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Knuckle",
+        "requirements": {
+          "reqLevel": 35,
+          "reqStr": 75,
+          "reqDex": 35,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 6,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 38,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 36,
+            "max": 40
+          },
+          "matk": {
+            "min": 0,
+            "max": 2
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 4
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 4
+          },
+          "speed": {
+            "min": 0,
+            "max": 2
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 18
+          },
+          "mp": {
+            "min": 0,
+            "max": 18
+          },
+          "wdef": {
+            "min": 0,
+            "max": 18
+          },
+          "mdef": {
+            "min": 0,
+            "max": 18
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 2,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 4,
+          "defensive": 18
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 2,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "流星",
+      "probability": "3.28%",
+      "chance": 235714,
+      "itemId": "1492005",
+      "itemName": "Shooting Star",
+      "itemTypeId": 15,
+      "salePrice": 40000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Weapon",
+      "equipment": {
+        "category": "Gun",
+        "requirements": {
+          "reqLevel": 35,
+          "reqStr": 35,
+          "reqDex": 90,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": 6,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 36,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 34,
+            "max": 38
+          },
+          "matk": {
+            "min": 0,
+            "max": 2
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 4
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 4
+          },
+          "speed": {
+            "min": 0,
+            "max": 2
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 18
+          },
+          "mp": {
+            "min": 0,
+            "max": 18
+          },
+          "wdef": {
+            "min": 0,
+            "max": 18
+          },
+          "mdef": {
+            "min": 0,
+            "max": 18
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 2,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 4,
+          "defensive": 18
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 2,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    },
+    {
+      "chineseName": "紫雪鞋",
+      "probability": "3.95%",
+      "chance": 283333,
+      "itemId": "1072338",
+      "itemName": "Purple Snowshoes",
+      "itemTypeId": 14,
+      "salePrice": 14500,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Shoes",
+      "equipment": {
+        "category": "Shoes",
+        "requirements": {
+          "reqLevel": 30,
+          "reqStr": 0,
+          "reqDex": 0,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": null,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": 18,
+          "mdef": 5,
+          "upgrades": 7
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 0,
+            "max": 2
+          },
+          "matk": {
+            "min": 0,
+            "max": 2
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 3
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 3
+          },
+          "speed": {
+            "min": 0,
+            "max": 2
+          },
+          "jump": {
+            "min": 0,
+            "max": 1
+          },
+          "hp": {
+            "min": 0,
+            "max": 15
+          },
+          "mp": {
+            "min": 0,
+            "max": 15
+          },
+          "wdef": {
+            "min": 3,
+            "max": 33
+          },
+          "mdef": {
+            "min": 0,
+            "max": 20
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 2,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 3,
+          "defensive": 15
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 0,
+          "speed": 2,
+          "jump": 1,
+          "accuracy": 0,
+          "defensive": 30
+        }
+      }
+    },
+    {
+      "chineseName": "分裂子彈",
+      "probability": "3.95%",
+      "chance": 283333,
+      "itemId": "1202001",
+      "itemName": "Split Bullet",
+      "itemTypeId": 16,
+      "salePrice": 5000,
+      "maxStackCount": 1,
+      "untradeable": null,
+      "itemDescription": "",
+      "type": "Eqp",
+      "subType": "Projectile",
+      "equipment": {
+        "category": "Projectile",
+        "requirements": {
+          "reqLevel": 10,
+          "reqStr": 0,
+          "reqDex": 0,
+          "reqInt": 0,
+          "reqLuk": 0,
+          "reqFam": null
+        },
+        "classes": {
+          "beginner": null,
+          "warrior": null,
+          "magician": null,
+          "bowman": null,
+          "thief": null,
+          "pirate": true
+        },
+        "stats": {
+          "attackSpeed": null,
+          "str": null,
+          "dex": null,
+          "int": null,
+          "luk": null,
+          "watk": 12,
+          "matk": null,
+          "accuracy": null,
+          "avoidability": null,
+          "speed": null,
+          "jump": null,
+          "hp": null,
+          "mp": null,
+          "wdef": null,
+          "mdef": null,
+          "upgrades": null
+        },
+        "statVariation": {
+          "str": {
+            "min": 0,
+            "max": null
+          },
+          "dex": {
+            "min": 0,
+            "max": null
+          },
+          "int": {
+            "min": 0,
+            "max": null
+          },
+          "luk": {
+            "min": 0,
+            "max": null
+          },
+          "watk": {
+            "min": 12,
+            "max": 13
+          },
+          "matk": {
+            "min": 0,
+            "max": 1
+          },
+          "accuracy": {
+            "min": 0,
+            "max": 1
+          },
+          "avoidability": {
+            "min": 0,
+            "max": 1
+          },
+          "speed": {
+            "min": 0,
+            "max": 1
+          },
+          "jump": {
+            "min": 0,
+            "max": 0
+          },
+          "hp": {
+            "min": 0,
+            "max": 5
+          },
+          "mp": {
+            "min": 0,
+            "max": 5
+          },
+          "wdef": {
+            "min": 0,
+            "max": 5
+          },
+          "mdef": {
+            "min": 0,
+            "max": 5
+          }
+        },
+        "statCategoryEachExtra": {
+          "attributes": null,
+          "attack": 1,
+          "speed": 1,
+          "jump": 0,
+          "accuracy": 1,
+          "defensive": 5
+        },
+        "statCategoryMaxExtra": {
+          "attributes": null,
+          "attack": 1,
+          "speed": 1,
+          "jump": 0,
+          "accuracy": 0,
+          "defensive": 0
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "enhancedAt": "2025-10-19T11:51:39.171Z",
+    "apiSource": "https://chronostory.onrender.com/api/item-info",
+    "successRate": "56/56"
+  }
+}
