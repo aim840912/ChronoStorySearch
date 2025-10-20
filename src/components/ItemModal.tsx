@@ -212,8 +212,8 @@ export function ItemModal({
         className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-6xl max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Modal Header - GREEN GRADIENT */}
-        <div className="sticky top-0 z-10 bg-gradient-to-r from-green-500 to-emerald-600 dark:from-green-600 dark:to-emerald-700 p-6 rounded-t-xl">
+        {/* Modal Header */}
+        <div className="sticky top-0 z-10 bg-green-500 dark:bg-green-600 p-6 rounded-t-xl">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}

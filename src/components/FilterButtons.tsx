@@ -1,7 +1,7 @@
 'use client'
 
 import { useLanguage } from '@/contexts/LanguageContext'
-import type { FilterMode, ClearModalType } from '@/types'
+import type { FilterMode, ClearModalType, AdvancedFilterOptions } from '@/types'
 
 interface FilterButtonsProps {
   filterMode: FilterMode
@@ -13,6 +13,7 @@ interface FilterButtonsProps {
   onAdvancedFilterToggle: () => void
   advancedFilterCount: number
   onResetAdvancedFilter: () => void
+  advancedFilter: AdvancedFilterOptions
 }
 
 /**
@@ -29,8 +30,41 @@ export function FilterButtons({
   onAdvancedFilterToggle,
   advancedFilterCount,
   onResetAdvancedFilter,
+  advancedFilter,
 }: FilterButtonsProps) {
   const { t } = useLanguage()
+
+  // 生成篩選條件摘要
+  const getFilterSummary = (): string => {
+    const labels: string[] = []
+
+    // 物品類別
+    advancedFilter.itemCategories.forEach(cat => {
+      labels.push(t(`filter.itemCategory.${cat}`))
+    })
+
+    // 職業
+    advancedFilter.jobClasses.forEach(job => {
+      labels.push(t(`filter.jobClass.${job}`))
+    })
+
+    // 等級範圍
+    if (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null) {
+      const min = advancedFilter.levelRange.min ?? 0
+      const max = advancedFilter.levelRange.max ?? 200
+      labels.push(`Lv ${min}-${max}`)
+    }
+
+    // 限制顯示數量（最多3個），其餘用「...」表示
+    if (labels.length === 0) {
+      return ''
+    } else if (labels.length <= 3) {
+      return labels.join('、')
+    } else {
+      return labels.slice(0, 3).join('、') + '...'
+    }
+  }
+
   return (
     <div className="max-w-7xl mx-auto mb-4">
       <div className="flex items-center gap-3 flex-wrap">
@@ -52,19 +86,17 @@ export function FilterButtons({
               d="M19 9l-7 7-7-7"
             />
           </svg>
-          <span>{t('filter.advanced')}</span>
-          {advancedFilterCount > 0 && (
-            <span className="px-2 py-0.5 text-xs font-bold bg-white/20 rounded-full">
-              {advancedFilterCount}
-            </span>
-          )}
+          <span>
+            {t('filter.advanced')}
+            {advancedFilterCount > 0 && `: ${getFilterSummary()}`}
+          </span>
         </button>
 
         {/* 清除進階篩選按鈕 */}
         {advancedFilterCount > 0 && (
           <button
             onClick={onResetAdvancedFilter}
-            className="px-4 py-2.5 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white shadow-md hover:shadow-lg"
+            className="px-4 py-2.5 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 border-2 border-red-500 hover:border-red-600 text-red-500 hover:text-red-600 bg-white dark:bg-gray-800 shadow-md hover:shadow-lg"
             title="清除所有進階篩選條件"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -110,7 +142,7 @@ export function FilterButtons({
         {favoriteMonsterCount > 0 && (
           <button
             onClick={() => onClearClick('monsters')}
-            className="px-4 py-2.5 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white shadow-md hover:shadow-lg"
+            className="px-4 py-2.5 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 border-2 border-red-500 hover:border-red-600 text-red-500 hover:text-red-600 bg-white dark:bg-gray-800 shadow-md hover:shadow-lg"
             title="清除所有最愛怪物"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -144,7 +176,7 @@ export function FilterButtons({
         {favoriteItemCount > 0 && (
           <button
             onClick={() => onClearClick('items')}
-            className="px-4 py-2.5 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white shadow-md hover:shadow-lg"
+            className="px-4 py-2.5 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 border-2 border-red-500 hover:border-red-600 text-red-500 hover:text-red-600 bg-white dark:bg-gray-800 shadow-md hover:shadow-lg"
             title="清除所有最愛物品"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

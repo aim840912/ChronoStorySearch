@@ -10,7 +10,7 @@ import type { ItemAttributes, ItemCategoryGroup, CategoryGroupType } from '@/typ
  * equipment.category 到 ItemCategoryGroup 的對應表
  * 合併相似武器類型（如單手劍+雙手劍 => 劍）
  */
-const EQUIPMENT_CATEGORY_MAP: Record<string, ItemCategoryGroup> = {
+export const EQUIPMENT_CATEGORY_MAP: Record<string, ItemCategoryGroup> = {
   // 穿著類
   'Hat': 'hat',
   'Top': 'top',

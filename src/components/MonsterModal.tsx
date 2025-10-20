@@ -142,7 +142,7 @@ export function MonsterModal({
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
-        <div className="sticky top-0 z-10 bg-gradient-to-r from-blue-500 to-indigo-600 dark:from-blue-600 dark:to-indigo-700 p-6 rounded-t-xl">
+        <div className="sticky top-0 z-10 bg-blue-500 dark:bg-blue-600 p-6 rounded-t-xl">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}

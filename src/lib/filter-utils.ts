@@ -8,7 +8,7 @@ import type {
   AdvancedFilterOptions,
   ItemAttributes,
 } from '@/types'
-import { isItemInAnyCategoryGroup } from './item-categories'
+import { isItemInAnyCategoryGroup, EQUIPMENT_CATEGORY_MAP } from './item-categories'
 
 /**
  * 判斷掉落資料是否符合資料類型篩選
@@ -57,7 +57,33 @@ export function matchesItemCategoryFilter(
     return false
   }
 
-  // 使用 OR 邏輯：只要符合任一類別即可（物品類別是多選的）
+  // 檢測特殊情況：同時選擇「卷軸」+ 裝備類別
+  // 此時只保留 scroll.category 匹配選中裝備類別的卷軸
+  const hasScroll = filter.itemCategories.includes('scroll')
+  const hasEquipmentCategory = filter.itemCategories.some(
+    cat => cat !== 'scroll' && cat !== 'potion' && cat !== 'projectile'
+  )
+
+  if (hasScroll && hasEquipmentCategory) {
+    // 特殊邏輯：只保留匹配的卷軸
+    if (!item.scroll) {
+      return false  // 不是卷軸，過濾掉
+    }
+
+    // 檢查 scroll.category 是否匹配任一選中的裝備類別
+    const scrollCategory = item.scroll.category
+    // 將 scroll.category (如 "One Handed Sword") 映射為 ItemCategoryGroup (如 "oneHandedSword")
+    const scrollCategoryGroup = EQUIPMENT_CATEGORY_MAP[scrollCategory]
+
+    if (!scrollCategoryGroup) {
+      return false  // 無法映射的類別
+    }
+
+    // 檢查是否在選中的裝備類別中（直接檢查 filter.itemCategories）
+    return filter.itemCategories.includes(scrollCategoryGroup)
+  }
+
+  // 一般情況：使用 OR 邏輯（只要符合任一類別即可）
   return isItemInAnyCategoryGroup(item, filter.itemCategories)
 }
 

@@ -54,6 +54,8 @@ export default function Home() {
   // 計算已啟用的進階篩選數量
   const advancedFilterCount = [
     advancedFilter.itemCategories.length > 0 ? 1 : 0,
+    advancedFilter.jobClasses.length > 0 ? 1 : 0,
+    (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null) ? 1 : 0,
   ].reduce((a, b) => a + b, 0)
 
   // 使用自定義 hooks
@@ -382,6 +384,7 @@ export default function Home() {
             onAdvancedFilterToggle={() => setIsAdvancedFilterExpanded(!isAdvancedFilterExpanded)}
             advancedFilterCount={advancedFilterCount}
             onResetAdvancedFilter={handleResetAdvancedFilter}
+            advancedFilter={advancedFilter}
           />
 
           {/* 進階篩選面板 */}

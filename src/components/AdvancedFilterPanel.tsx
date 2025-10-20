@@ -60,13 +60,6 @@ export function AdvancedFilterPanel({
     })
   }
 
-  // 計算已啟用篩選數量
-  const activeFilterCount = [
-    filter.itemCategories.length > 0 ? 1 : 0,
-    filter.jobClasses.length > 0 ? 1 : 0,
-    (filter.levelRange.min !== null || filter.levelRange.max !== null) ? 1 : 0,
-  ].reduce((a, b) => a + b, 0)
-
   // 驗證等級範圍是否有效（最高等級必須 >= 最低等級）
   const isLevelRangeValid =
     filter.levelRange.min === null ||
@@ -279,43 +272,6 @@ export function AdvancedFilterPanel({
               )}
             </div>
           </div>
-
-          {/* 已選標籤顯示 */}
-          {activeFilterCount > 0 && (
-            <div className="mb-4 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-              <h5 className="text-sm font-semibold text-blue-900 dark:text-blue-200 mb-2">
-                {t('filter.activeFilters')}:
-              </h5>
-              <div className="flex flex-wrap gap-2">
-                {filter.dataType !== 'all' && (
-                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-100 rounded-full text-xs font-medium">
-                    {t('filter.dataType')}: {t(`filter.dataType.${filter.dataType}`)}
-                  </span>
-                )}
-                {filter.itemCategories.map((category) => (
-                  <span
-                    key={category}
-                    className="px-3 py-1 bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-100 rounded-full text-xs font-medium"
-                  >
-                    {t(`filter.itemCategory.${category}`)}
-                  </span>
-                ))}
-                {filter.jobClasses.map((jobClass) => (
-                  <span
-                    key={jobClass}
-                    className="px-3 py-1 bg-purple-100 dark:bg-purple-800 text-purple-800 dark:text-purple-100 rounded-full text-xs font-medium"
-                  >
-                    {t(`filter.jobClass.${jobClass}`)}
-                  </span>
-                ))}
-                {(filter.levelRange.min !== null || filter.levelRange.max !== null) && (
-                  <span className="px-3 py-1 bg-orange-100 dark:bg-orange-800 text-orange-800 dark:text-orange-100 rounded-full text-xs font-medium">
-                    {t('filter.levelRange')}: {filter.levelRange.min ?? 0} - {filter.levelRange.max ?? 200}
-                  </span>
-                )}
-              </div>
-            </div>
-          )}
         </div>
       </div>
     </div>
