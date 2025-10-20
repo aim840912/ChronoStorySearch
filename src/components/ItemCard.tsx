@@ -111,7 +111,7 @@ export function ItemCard({
           className="w-16 h-16 object-contain flex-shrink-0"
 
         />
-        <div className="flex-1">
+        <div className="flex-1 pr-28">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
             {displayItemName}
           </h3>
