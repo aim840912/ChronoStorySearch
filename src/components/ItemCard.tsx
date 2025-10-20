@@ -15,6 +15,7 @@ interface ItemCardProps {
   isFavorite: boolean
   onToggleFavorite: (itemId: number, itemName: string) => void
   source?: ItemSource
+  reqLevel?: number | null
 }
 
 /**
@@ -30,6 +31,7 @@ export function ItemCard({
   isFavorite,
   onToggleFavorite,
   source,
+  reqLevel,
 }: ItemCardProps) {
   // monsterCount is part of props but not used in this component
   void monsterCount
@@ -117,6 +119,14 @@ export function ItemCard({
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
             {displayItemName}
           </h3>
+          {/* 等級顯示 */}
+          {reqLevel !== null && reqLevel !== undefined && (
+            <div className="flex items-center gap-2 mb-1">
+              <span className="inline-flex items-center px-2 py-1 rounded-md bg-blue-500 text-white text-xs font-semibold">
+                Lv. {reqLevel}
+              </span>
+            </div>
+          )}
           {isDev && (
             <p className="text-xs text-gray-500 dark:text-gray-400">
               {t('card.itemId')}: {itemId}

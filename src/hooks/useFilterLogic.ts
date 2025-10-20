@@ -17,7 +17,8 @@ import {
   applyAdvancedFilter,
   matchesItemCategoryFilter,
   matchesJobClassFilter,
-  matchesLevelRangeFilter
+  matchesLevelRangeFilter,
+  matchesMonsterLevelRangeFilter
 } from '@/lib/filter-utils'
 import { findGachaItemAttributes } from '@/lib/gacha-utils'
 import { clientLogger } from '@/lib/logger'
@@ -32,6 +33,7 @@ interface UseFilterLogicParams {
   searchType: SearchTypeFilter // 搜尋類型篩選（怪物/物品/全部）
   advancedFilter: AdvancedFilterOptions
   itemAttributesMap: Map<number, ItemAttributes>
+  mobLevelMap: Map<number, number | null>
   gachaMachines: GachaMachine[]
   initialRandomGachaItems: Array<{
     itemId: number
@@ -62,6 +64,7 @@ export function useFilterLogic({
   searchType,
   advancedFilter,
   itemAttributesMap,
+  mobLevelMap,
   gachaMachines,
   initialRandomGachaItems,
 }: UseFilterLogicParams) {
@@ -220,8 +223,18 @@ export function useFilterLogic({
       monsterMap.get(drop.mobId)!.dropCount++
     })
 
-    return Array.from(monsterMap.values())
-  }, [filterMode, filteredDrops])
+    let monsters = Array.from(monsterMap.values())
+
+    // 應用怪物等級範圍篩選（當選擇「怪物」搜尋類型時）
+    if (searchType === 'monster' && advancedFilter.enabled &&
+        (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null)) {
+      monsters = monsters.filter(monster =>
+        matchesMonsterLevelRangeFilter(monster.mobId, mobLevelMap, advancedFilter)
+      )
+    }
+
+    return monsters
+  }, [filterMode, filteredDrops, searchType, advancedFilter, mobLevelMap])
 
   // 計算「全部」模式的唯一物品清單（每個物品只出現一次，整合掉落和轉蛋）
   const uniqueAllItems = useMemo((): ExtendedUniqueItem[] => {
@@ -482,8 +495,8 @@ export function useFilterLogic({
       const hasItemSpecificFilter =
         advancedFilter.itemCategories.length > 0 ||
         advancedFilter.jobClasses.length > 0 ||
-        advancedFilter.levelRange.min !== null ||
-        advancedFilter.levelRange.max !== null
+        // 在 'all' 模式下（能執行到這裡表示 searchType === 'all'），等級範圍視為物品專屬篩選
+        (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null)
 
       if (hasItemSpecificFilter) {
         return false  // 不顯示怪物

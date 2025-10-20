@@ -1,9 +1,11 @@
 'use client'
 
 import { useState, useEffect, useMemo, useCallback } from 'react'
-import type { DropItem, GachaMachine, GachaItem, EnhancedGachaItem } from '@/types'
+import type { DropItem, GachaMachine, GachaItem, EnhancedGachaItem, MobInfo, ItemAttributes } from '@/types'
 import { clientLogger } from '@/lib/logger'
 import dropsData from '@/../data/drops.json'
+import mobInfoData from '@/../data/mob-info.json'
+import itemAttributesData from '@/../data/item-attributes.json'
 
 /**
  * Enhanced JSON 的轉蛋機格式
@@ -187,6 +189,36 @@ export function useDataManagement() {
     return shuffled.slice(0, sampleSize)
   }, [gachaMachines])
 
+  // 建立怪物等級 Map (mobId -> level)
+  const mobLevelMap = useMemo(() => {
+    const levelMap = new Map<number, number | null>()
+    const mobInfoArray = mobInfoData as MobInfo[]
+
+    mobInfoArray.forEach((info) => {
+      const mobId = parseInt(info.mob.mob_id, 10)
+      if (!isNaN(mobId)) {
+        levelMap.set(mobId, info.mob.level)
+      }
+    })
+
+    return levelMap
+  }, [])
+
+  // 建立物品屬性 Map (itemId -> ItemAttributes)
+  const itemAttributesMap = useMemo(() => {
+    const attrMap = new Map<number, ItemAttributes>()
+    const itemAttributesArray = itemAttributesData as ItemAttributes[]
+
+    itemAttributesArray.forEach((attr) => {
+      const itemId = parseInt(attr.item_id, 10)
+      if (!isNaN(itemId)) {
+        attrMap.set(itemId, attr)
+      }
+    })
+
+    return attrMap
+  }, [])
+
   return {
     // 資料
     allDrops,
@@ -196,6 +228,10 @@ export function useDataManagement() {
     // 初始隨機資料
     initialRandomDrops,
     initialRandomGachaItems,
+
+    // 怪物與物品屬性資料
+    mobLevelMap,
+    itemAttributesMap,
 
     // 按需載入函數
     loadGachaMachines,

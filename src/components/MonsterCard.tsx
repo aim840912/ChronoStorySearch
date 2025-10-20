@@ -13,6 +13,7 @@ interface MonsterCardProps {
   onCardClick: (mobId: number, mobName: string) => void
   isFavorite: boolean
   onToggleFavorite: (mobId: number, mobName: string) => void
+  level?: number | null
 }
 
 /**
@@ -27,6 +28,7 @@ export function MonsterCard({
   onCardClick,
   isFavorite,
   onToggleFavorite,
+  level,
 }: MonsterCardProps) {
   // dropCount is part of props but not used in this component
   void dropCount
@@ -85,6 +87,14 @@ export function MonsterCard({
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
             {displayMobName}
           </h3>
+          {/* 等級顯示 */}
+          {level !== null && level !== undefined && (
+            <div className="flex items-center gap-2 mb-1">
+              <span className="inline-flex items-center px-2 py-1 rounded-md bg-blue-500 text-white text-xs font-semibold">
+                Lv. {level}
+              </span>
+            </div>
+          )}
           {isDev && (
             <p className="text-xs text-gray-500 dark:text-gray-400">
               {t('card.monsterId')}: {mobId}

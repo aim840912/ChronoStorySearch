@@ -1,13 +1,13 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { DropItem, Language, GachaMachine } from '@/types'
+import type { DropItem, Language, GachaMachine, ItemAttributes } from '@/types'
 import { MonsterDropCard } from './MonsterDropCard'
 import { ItemAttributesCard } from './ItemAttributesCard'
 import { clientLogger } from '@/lib/logger'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { useLazyItemAttributes, useLazyMobInfo } from '@/hooks/useLazyData'
+import { useLazyMobInfo } from '@/hooks/useLazyData'
 import { findGachaItemAttributes } from '@/lib/gacha-utils'
 
 interface ItemModalProps {
@@ -17,6 +17,7 @@ interface ItemModalProps {
   itemName: string
   allDrops: DropItem[]
   gachaMachines: GachaMachine[]
+  itemAttributesMap: Map<number, ItemAttributes>
   isFavorite: boolean
   onToggleFavorite: (itemId: number, itemName: string) => void
   // 怪物相關 props
@@ -38,6 +39,7 @@ export function ItemModal({
   itemName,
   allDrops,
   gachaMachines,
+  itemAttributesMap,
   isFavorite,
   onToggleFavorite,
   isMonsterFavorite,
@@ -49,12 +51,6 @@ export function ItemModal({
   const isDev = process.env.NODE_ENV === 'development'
   const [showToast, setShowToast] = useState(false)
   const [toastMessage, setToastMessage] = useState('')
-
-  // 懶加載物品屬性資料
-  const {
-    itemAttributesMap,
-    loadData: loadItemAttributes,
-  } = useLazyItemAttributes()
 
   // 懶加載怪物資訊資料 (用於顯示怪物血量)
   const {
@@ -168,10 +164,9 @@ export function ItemModal({
   // 當 Modal 開啟時載入物品屬性資料與怪物資訊資料
   useEffect(() => {
     if (isOpen) {
-      loadItemAttributes()
       loadMobInfo()
     }
-  }, [isOpen, loadItemAttributes, loadMobInfo])
+  }, [isOpen, loadMobInfo])
 
   // ESC 鍵關閉 modal
   useEffect(() => {

@@ -144,6 +144,40 @@ export function matchesLevelRangeFilter(
 }
 
 /**
+ * 判斷怪物是否符合等級範圍篩選
+ * @param mobId 怪物 ID
+ * @param mobLevelMap 怪物等級 Map
+ * @param filter 進階篩選選項
+ * @returns 是否符合篩選
+ */
+export function matchesMonsterLevelRangeFilter(
+  mobId: number,
+  mobLevelMap: Map<number, number | null>,
+  filter: AdvancedFilterOptions
+): boolean {
+  const { min, max } = filter.levelRange
+
+  // 未啟用篩選或未設定任何等級範圍
+  if (!filter.enabled || (min === null && max === null)) {
+    return true
+  }
+
+  // 取得怪物等級
+  const mobLevel = mobLevelMap.get(mobId)
+
+  // 如果怪物沒有等級資料，預設通過
+  if (mobLevel === null || mobLevel === undefined) {
+    return true
+  }
+
+  // 檢查是否在範圍內
+  const meetsMin = min === null || mobLevel >= min
+  const meetsMax = max === null || mobLevel <= max
+
+  return meetsMin && meetsMax
+}
+
+/**
  * 應用進階篩選到掉落資料陣列
  * @param drops 掉落資料陣列
  * @param filter 進階篩選選項

@@ -14,7 +14,6 @@ import { useDataManagement } from '@/hooks/useDataManagement'
 import { useSearchLogic } from '@/hooks/useSearchLogic'
 import { useFilterLogic } from '@/hooks/useFilterLogic'
 import { useInfiniteScroll } from '@/hooks/useInfiniteScroll'
-import { useLazyItemAttributes } from '@/hooks/useLazyData'
 import { SearchBar } from '@/components/SearchBar'
 import { FilterButtons } from '@/components/FilterButtons'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
@@ -72,14 +71,10 @@ export default function Home() {
     isLoading,
     initialRandomDrops,
     initialRandomGachaItems,
+    mobLevelMap,
+    itemAttributesMap,
     loadGachaMachines,
   } = useDataManagement()
-
-  // 懶加載物品屬性資料 (用於進階篩選)
-  const {
-    itemAttributesMap,
-    loadData: loadItemAttributes,
-  } = useLazyItemAttributes()
 
   // 搜尋邏輯 Hook - 處理搜尋索引和建議
   const { suggestions } = useSearchLogic({
@@ -126,6 +121,7 @@ export default function Home() {
     searchType,
     advancedFilter,
     itemAttributesMap,
+    mobLevelMap,
     gachaMachines,
     initialRandomGachaItems,
   })
@@ -169,13 +165,6 @@ export default function Home() {
       loadGachaMachines()
     }
   }, [debouncedSearchTerm, searchType, advancedFilter.enabled, advancedFilter.itemCategories, loadGachaMachines, modals.isGachaModalOpen])
-
-  // 延遲載入物品屬性 - 當使用者啟用進階篩選時才載入
-  useEffect(() => {
-    if (advancedFilter.enabled) {
-      loadItemAttributes()
-    }
-  }, [advancedFilter.enabled, loadItemAttributes])
 
   // 處理 URL 參數 - 搜尋詞和自動開啟對應的 modal
   useEffect(() => {
@@ -426,6 +415,7 @@ export default function Home() {
                       onCardClick={modals.openMonsterModal}
                       isFavorite={true}
                       onToggleFavorite={toggleFavorite}
+                      level={mobLevelMap.get(monster.mobId) ?? null}
                     />
                   ))}
                 </div>
@@ -469,6 +459,7 @@ export default function Home() {
                       onCardClick={modals.openItemModal}
                       isFavorite={true}
                       onToggleFavorite={toggleItemFavorite}
+                      reqLevel={itemAttributesMap.get(item.itemId)?.equipment?.requirements?.req_level ?? null}
                     />
                   ))}
                 </div>
@@ -517,6 +508,7 @@ export default function Home() {
                               onCardClick={modals.openMonsterModal}
                               isFavorite={isFavorite(card.data.mobId)}
                               onToggleFavorite={toggleFavorite}
+                              level={mobLevelMap.get(card.data.mobId) ?? null}
                             />
                           )
                         } else {
@@ -531,6 +523,7 @@ export default function Home() {
                               isFavorite={isItemFavorite(card.data.itemId)}
                               onToggleFavorite={toggleItemFavorite}
                               source={card.data.source}
+                              reqLevel={itemAttributesMap.get(card.data.itemId)?.equipment?.requirements?.req_level ?? null}
                             />
                           )
                         }
@@ -553,6 +546,7 @@ export default function Home() {
                                 onCardClick={modals.openMonsterModal}
                                 isFavorite={isFavorite(monster.mobId)}
                                 onToggleFavorite={toggleFavorite}
+                                level={mobLevelMap.get(monster.mobId) ?? null}
                               />
                             ))}
                           </div>
@@ -596,6 +590,7 @@ export default function Home() {
                                 isFavorite={isItemFavorite(item.itemId)}
                                 onToggleFavorite={toggleItemFavorite}
                                 source={item.source}
+                                reqLevel={itemAttributesMap.get(item.itemId)?.equipment?.requirements?.req_level ?? null}
                               />
                             ))}
                           </div>
@@ -683,6 +678,7 @@ export default function Home() {
         itemName={modals.selectedItemName}
         allDrops={allDrops}
         gachaMachines={gachaMachines}
+        itemAttributesMap={itemAttributesMap}
         isFavorite={modals.selectedItemId !== null ? isItemFavorite(modals.selectedItemId) : false}
         onToggleFavorite={toggleItemFavorite}
         isMonsterFavorite={isFavorite}
