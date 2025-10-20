@@ -122,3 +122,20 @@ public/data/drops-new*.json
 scripts/*-fix-*.sh
 scripts/*-demo.*
 scripts/*-test.*
+
+# Cloudflare Wrangler 建置目錄
+.wrangler/
+
+# 預覽和臨時 HTML 檔案
+preview.html
+*.preview.html
+
+# 測試和備份資料
+data/gacha/backup/
+data/gacha/*-test.json
+data/gacha/*-demo.json
+
+# 臨時文檔和筆記
+stat_calcu.md
+Magic\ Accuracy.md
+JSON_OPTIMIZATION_GUIDE.md
