@@ -666,6 +666,7 @@ export default function Home() {
         monsterId={modals.selectedMonsterId}
         monsterName={modals.selectedMonsterName}
         allDrops={allDrops}
+        itemAttributesMap={itemAttributesMap}
         isFavorite={modals.selectedMonsterId ? isFavorite(modals.selectedMonsterId) : false}
         onToggleFavorite={toggleFavorite}
         isItemFavorite={isItemFavorite}

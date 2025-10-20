@@ -267,6 +267,7 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
 
   // 裝備屬性配置（過濾掉 null 和 0 的屬性）
   const equipmentStats = [
+    { key: 'attack_speed', label: t('item.attack_speed'), value: stats.attack_speed, color: 'text-emerald-600 dark:text-emerald-400' },
     { key: 'watk', label: t('item.watk'), value: stats.watk, color: 'text-orange-600 dark:text-orange-400' },
     { key: 'matk', label: t('item.matk'), value: stats.matk, color: 'text-purple-600 dark:text-purple-400' },
     { key: 'wdef', label: t('item.wdef'), value: stats.wdef, color: 'text-gray-600 dark:text-gray-400' },

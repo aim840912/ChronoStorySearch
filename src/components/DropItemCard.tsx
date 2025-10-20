@@ -1,12 +1,13 @@
 'use client'
 
-import type { DropItem } from '@/types'
+import type { DropItem, ItemAttributes } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
 import { getItemImageUrl } from '@/lib/image-utils'
 
 interface DropItemCardProps {
   drop: DropItem
+  itemAttributesMap: Map<number, ItemAttributes>
   isFavorite: boolean
   onToggleFavorite: (itemId: number, itemName: string) => void
   onItemClick: (itemId: number, itemName: string) => void
@@ -18,6 +19,7 @@ interface DropItemCardProps {
  */
 export function DropItemCard({
   drop,
+  itemAttributesMap,
   isFavorite,
   onToggleFavorite,
   onItemClick,
@@ -33,6 +35,34 @@ export function DropItemCard({
 
   // 物品圖示 URL
   const itemIconUrl = getItemImageUrl(drop.itemId)
+
+  // 根據物品類型決定顯示內容
+  const itemAttributes = itemAttributesMap.get(drop.itemId)
+  const itemType = itemAttributes?.type
+  const itemSubType = itemAttributes?.sub_type
+
+  let label = t('card.quantity')
+  let value: string | number = qtyRange
+
+  if (itemType === 'Eqp' && itemAttributes?.equipment) {
+    // 裝備：type 是 'Eqp'，顯示等級
+    label = t('card.level')
+    const reqLevel = itemAttributes.equipment.requirements.req_level
+    value = reqLevel ? `Lv.${reqLevel}` : '-'
+  } else if (itemSubType === 'Potion' && itemAttributes?.potion) {
+    // 藥水：sub_type 是 'Potion'，顯示效果（HP 或 MP）
+    label = t('card.effect')
+    const hp = itemAttributes.potion.stats.hp
+    const mp = itemAttributes.potion.stats.mp
+    if (hp && hp > 0) {
+      value = `HP +${hp}`
+    } else if (mp && mp > 0) {
+      value = `MP +${mp}`
+    } else {
+      value = '-'
+    }
+  }
+  // 其他類型（包含卷軸）保持顯示數量
 
   return (
     <div
@@ -87,7 +117,7 @@ export function DropItemCard({
         </div>
       </div>
 
-      {/* 掉落率和數量 */}
+      {/* 掉落率和數量/等級/效果 */}
       <div className="flex gap-3">
         <div className="flex-1">
           <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">
@@ -101,11 +131,11 @@ export function DropItemCard({
         </div>
         <div className="flex-1">
           <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">
-            {t('card.quantity')}
+            {label}
           </div>
           <div className="bg-green-50 dark:bg-green-900/20 px-3 py-2 rounded">
             <span className="text-sm font-bold text-green-700 dark:text-green-300">
-              {qtyRange}
+              {value}
             </span>
           </div>
         </div>

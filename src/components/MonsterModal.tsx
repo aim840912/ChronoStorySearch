@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { DropItem, Language } from '@/types'
+import type { DropItem, Language, ItemAttributes } from '@/types'
 import { DropItemCard } from './DropItemCard'
 import { MonsterStatsCard } from './MonsterStatsCard'
 import { clientLogger } from '@/lib/logger'
@@ -15,6 +15,7 @@ interface MonsterModalProps {
   monsterId: number | null
   monsterName: string
   allDrops: DropItem[]
+  itemAttributesMap: Map<number, ItemAttributes>
   isFavorite: boolean
   onToggleFavorite: (mobId: number, mobName: string) => void
   // 物品相關 props
@@ -33,6 +34,7 @@ export function MonsterModal({
   monsterId,
   monsterName,
   allDrops,
+  itemAttributesMap,
   isFavorite,
   onToggleFavorite,
   isItemFavorite,
@@ -249,6 +251,7 @@ export function MonsterModal({
                 <DropItemCard
                   key={`${drop.itemId}-${index}`}
                   drop={drop}
+                  itemAttributesMap={itemAttributesMap}
                   isFavorite={isItemFavorite(drop.itemId)}
                   onToggleFavorite={onToggleItemFavorite}
                   onItemClick={onItemClick}
