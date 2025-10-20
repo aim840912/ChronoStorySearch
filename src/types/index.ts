@@ -60,6 +60,9 @@ export interface FavoriteItem {
 // 篩選模式類型
 export type FilterMode = 'all' | 'favorite-monsters' | 'favorite-items'
 
+// 搜尋類型篩選
+export type SearchTypeFilter = 'all' | 'monster' | 'item' | 'gacha'
+
 // 清除模態框類型
 export type ClearModalType = 'monsters' | 'items' | null
 

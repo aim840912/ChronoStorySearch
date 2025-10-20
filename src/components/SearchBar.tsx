@@ -3,11 +3,13 @@
 import { useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import type { RefObject, KeyboardEvent } from 'react'
-import type { SuggestionItem } from '@/types'
+import type { SuggestionItem, SearchTypeFilter } from '@/types'
 
 interface SearchBarProps {
   searchTerm: string
   onSearchChange: (value: string) => void
+  searchType: SearchTypeFilter
+  onSearchTypeChange: (type: SearchTypeFilter) => void
   suggestions: SuggestionItem[]
   showSuggestions: boolean
   onFocus: () => void
@@ -26,6 +28,8 @@ interface SearchBarProps {
 export function SearchBar({
   searchTerm,
   onSearchChange,
+  searchType,
+  onSearchTypeChange,
   suggestions,
   showSuggestions,
   onFocus,
@@ -56,10 +60,56 @@ export function SearchBar({
   }
 
   return (
-    <div className="max-w-2xl mx-auto mb-6">
-      <div className="relative" ref={searchContainerRef}>
-        {/* 搜尋圖示 */}
-        <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+    <div className="max-w-4xl mx-auto mb-6">
+      <div className="flex gap-3 items-center">
+        {/* 搜尋類型選擇器 */}
+        <div className="flex rounded-lg bg-gray-100 dark:bg-gray-700 p-1 flex-shrink-0">
+          <button
+            onClick={() => onSearchTypeChange('all')}
+            className={`px-3 py-2 text-sm font-medium rounded-md transition-all whitespace-nowrap ${
+              searchType === 'all'
+                ? 'bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 shadow-sm'
+                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+            }`}
+          >
+            {t('search.type.all')}
+          </button>
+          <button
+            onClick={() => onSearchTypeChange('monster')}
+            className={`px-3 py-2 text-sm font-medium rounded-md transition-all whitespace-nowrap ${
+              searchType === 'monster'
+                ? 'bg-white dark:bg-gray-800 text-red-600 dark:text-red-400 shadow-sm'
+                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+            }`}
+          >
+            {t('search.type.monster')}
+          </button>
+          <button
+            onClick={() => onSearchTypeChange('item')}
+            className={`px-3 py-2 text-sm font-medium rounded-md transition-all whitespace-nowrap ${
+              searchType === 'item'
+                ? 'bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 shadow-sm'
+                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+            }`}
+          >
+            {t('search.type.item')}
+          </button>
+          <button
+            onClick={() => onSearchTypeChange('gacha')}
+            className={`px-3 py-2 text-sm font-medium rounded-md transition-all whitespace-nowrap ${
+              searchType === 'gacha'
+                ? 'bg-white dark:bg-gray-800 text-purple-600 dark:text-purple-400 shadow-sm'
+                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+            }`}
+          >
+            {t('search.type.gacha')}
+          </button>
+        </div>
+
+        {/* 搜尋輸入框容器 */}
+        <div className="relative flex-1" ref={searchContainerRef}>
+          {/* 搜尋圖示 */}
+          <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
           <svg
             className="w-5 h-5 text-gray-400"
             fill="none"
@@ -195,7 +245,10 @@ export function SearchBar({
             ))}
           </div>
         )}
+        </div>
+        {/* 結束搜尋輸入框容器 */}
       </div>
+      {/* 結束 flex 容器 */}
     </div>
   )
 }

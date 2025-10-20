@@ -9,7 +9,8 @@ import type {
   AdvancedFilterOptions,
   ItemAttributes,
   GachaMachine,
-  ExtendedUniqueItem
+  ExtendedUniqueItem,
+  SearchTypeFilter
 } from '@/types'
 import { matchesAllKeywords } from '@/lib/search-utils'
 import {
@@ -28,6 +29,7 @@ interface UseFilterLogicParams {
   allDrops: DropItem[]
   initialRandomDrops: DropItem[]
   debouncedSearchTerm: string // 延遲搜尋詞（已 debounce）
+  searchType: SearchTypeFilter // 搜尋類型篩選（怪物/物品/全部）
   advancedFilter: AdvancedFilterOptions
   itemAttributesMap: Map<number, ItemAttributes>
   gachaMachines: GachaMachine[]
@@ -48,6 +50,7 @@ export function useFilterLogic({
   allDrops,
   initialRandomDrops,
   debouncedSearchTerm,
+  searchType,
   advancedFilter,
   itemAttributesMap,
   gachaMachines,
@@ -149,18 +152,34 @@ export function useFilterLogic({
       ? initialRandomDrops
       : allDrops
 
-    // 應用搜尋過濾（支援多關鍵字搜尋 + 中英文搜尋）
+    // 應用搜尋過濾（支援多關鍵字搜尋 + 中英文搜尋 + 搜尋類型篩選）
     let filtered: DropItem[]
     if (debouncedSearchTerm.trim() === '') {
       filtered = baseDrops
     } else {
       filtered = baseDrops.filter((drop) => {
-        return (
-          matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
-          matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
-          (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm)) ||
-          (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
-        )
+        // 根據 searchType 決定搜尋範圍
+        if (searchType === 'monster') {
+          // 只搜尋怪物名稱
+          return (
+            matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
+            (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm))
+          )
+        } else if (searchType === 'item') {
+          // 只搜尋物品名稱
+          return (
+            matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
+            (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
+          )
+        } else {
+          // 'all': 搜尋怪物和物品名稱
+          return (
+            matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
+            matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
+            (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm)) ||
+            (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
+          )
+        }
       })
     }
 
@@ -170,7 +189,7 @@ export function useFilterLogic({
     }
 
     return filtered
-  }, [filterMode, debouncedSearchTerm, allDrops, initialRandomDrops, advancedFilter, itemAttributesMap])
+  }, [filterMode, debouncedSearchTerm, searchType, allDrops, initialRandomDrops, advancedFilter, itemAttributesMap])
 
   // 計算「全部」模式的唯一怪物清單（每個怪物只出現一次）
   const uniqueAllMonsters = useMemo(() => {
@@ -227,19 +246,23 @@ export function useFilterLogic({
       item.monsterCount = uniqueMonsters.size
     })
 
-    // 2. 只在有搜尋或進階篩選（且不是僅怪物）時才整合轉蛋物品
+    // 2. 只在有搜尋或選擇了轉蛋/物品類型時才整合轉蛋物品
     // 避免在隨機顯示模式下加入所有轉蛋物品（1306個）
     // 使用 debouncedSearchTerm 確保與資料來源同步，避免過渡期資料爆炸
     const shouldIncludeGacha =
       debouncedSearchTerm.trim() !== '' ||
-      (advancedFilter.enabled &&
-       (advancedFilter.dataType === 'all' ||
-        advancedFilter.dataType === 'item' ||
-        advancedFilter.dataType === 'gacha'))
+      searchType === 'gacha' ||
+      searchType === 'item' ||
+      (advancedFilter.enabled && advancedFilter.itemCategories.length > 0)
 
     if (shouldIncludeGacha) {
       gachaMachines.forEach((machine) => {
       machine.items.forEach((gachaItem) => {
+        // 如果 searchType 為 'monster'，不包含轉蛋物品（轉蛋物品只是物品）
+        if (searchType === 'monster') {
+          return
+        }
+
         // 如果有搜尋詞，先檢查轉蛋物品是否匹配搜尋條件
         if (debouncedSearchTerm.trim() !== '') {
           const itemName = gachaItem.name || gachaItem.itemName || ''
@@ -295,8 +318,8 @@ export function useFilterLogic({
     // 3. 應用進階篩選到所有物品（包括轉蛋物品）
     let items = Array.from(itemMap.values())
 
-    // a) dataType 篩選
-    if (advancedFilter.enabled && advancedFilter.dataType === 'gacha') {
+    // a) searchType 篩選
+    if (searchType === 'gacha') {
       // 只保留來自轉蛋機的物品
       items = items.filter(item => item.source.fromGacha)
     }
@@ -338,7 +361,7 @@ export function useFilterLogic({
     }
 
     return items
-  }, [filterMode, filteredDrops, gachaMachines, debouncedSearchTerm, advancedFilter, itemAttributesMap])
+  }, [filterMode, filteredDrops, gachaMachines, debouncedSearchTerm, searchType, advancedFilter, itemAttributesMap])
 
   // 建立隨機混合的卡片資料（怪物 + 物品隨機排序）- 只在「全部」模式且無搜尋時使用
   const mixedCards = useMemo(() => {
@@ -351,15 +374,10 @@ export function useFilterLogic({
       | { type: 'monster'; data: { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number } }
       | { type: 'item'; data: ExtendedUniqueItem }
 
-    // 根據進階篩選決定要包含哪些卡片
-    const shouldIncludeMonsters = !advancedFilter.enabled ||
-                                   advancedFilter.dataType === 'all' ||
-                                   advancedFilter.dataType === 'monster'
+    // 根據 searchType 決定要包含哪些卡片
+    const shouldIncludeMonsters = searchType === 'all' || searchType === 'monster'
 
-    const shouldIncludeItems = !advancedFilter.enabled ||
-                                advancedFilter.dataType === 'all' ||
-                                advancedFilter.dataType === 'item' ||
-                                advancedFilter.dataType === 'gacha'
+    const shouldIncludeItems = searchType === 'all' || searchType === 'item' || searchType === 'gacha'
 
     // 合併怪物和物品成混合陣列
     const mixed: MixedCard[] = [
@@ -377,11 +395,14 @@ export function useFilterLogic({
     const itemCount = shouldIncludeItems ? uniqueAllItems.length : 0
     clientLogger.info(`建立隨機混合卡片: ${monsterCount} 怪物 + ${itemCount} 物品 = ${mixed.length} 張卡片`)
     return mixed
-  }, [filterMode, debouncedSearchTerm, uniqueAllMonsters, uniqueAllItems, advancedFilter])
+  }, [filterMode, debouncedSearchTerm, searchType, uniqueAllMonsters, uniqueAllItems])
 
   // 判斷搜尋上下文 - 決定「全部」模式的顯示策略
   const hasItemMatch = useMemo(() => {
     if (filterMode !== 'all' || !debouncedSearchTerm.trim()) return false
+
+    // 如果 searchType 是 'monster'，不匹配物品
+    if (searchType === 'monster') return false
 
     // 檢查 drops 中是否有物品名匹配
     const hasDropMatch = filteredDrops.some(drop =>
@@ -402,29 +423,29 @@ export function useFilterLogic({
     )
 
     return hasGachaMatch
-  }, [filterMode, debouncedSearchTerm, filteredDrops, gachaMachines])
+  }, [filterMode, debouncedSearchTerm, searchType, filteredDrops, gachaMachines])
 
   // 顯示策略
   const shouldShowItems = useMemo(() => {
     if (filterMode !== 'all') return false
 
-    // 如果啟用進階篩選且選擇了特定資料類型
-    if (advancedFilter.enabled && advancedFilter.dataType !== 'all') {
+    // 如果 searchType 選擇了特定類型
+    if (searchType !== 'all') {
       // 只在選擇 'item' 或 'gacha' 時顯示物品
-      return advancedFilter.dataType === 'item' || advancedFilter.dataType === 'gacha'
+      return searchType === 'item' || searchType === 'gacha'
     }
 
     // 預設邏輯：無搜尋詞時顯示，或有物品匹配時顯示
     return !debouncedSearchTerm.trim() || hasItemMatch
-  }, [filterMode, advancedFilter, debouncedSearchTerm, hasItemMatch])
+  }, [filterMode, searchType, debouncedSearchTerm, hasItemMatch])
 
   const shouldShowMonsters = useMemo(() => {
     if (filterMode !== 'all') return false
 
-    // 如果啟用進階篩選且選擇了特定資料類型
-    if (advancedFilter.enabled && advancedFilter.dataType !== 'all') {
+    // 如果 searchType 選擇了特定類型
+    if (searchType !== 'all') {
       // 只在選擇 'monster' 時顯示怪物
-      return advancedFilter.dataType === 'monster'
+      return searchType === 'monster'
     }
 
     // 如果啟用進階篩選且選擇了物品專屬篩選，不顯示怪物
@@ -442,7 +463,7 @@ export function useFilterLogic({
 
     // 預設邏輯：全部模式下總是顯示怪物
     return true
-  }, [filterMode, advancedFilter])
+  }, [filterMode, searchType, advancedFilter])
 
   return {
     // 最愛模式資料

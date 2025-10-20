@@ -1,13 +1,14 @@
 'use client'
 
 import { useMemo } from 'react'
-import type { DropItem, GachaMachine, SuggestionItem } from '@/types'
+import type { DropItem, GachaMachine, SuggestionItem, SearchTypeFilter } from '@/types'
 import { matchesAllKeywords } from '@/lib/search-utils'
 
 interface UseSearchLogicParams {
   allDrops: DropItem[]
   gachaMachines: GachaMachine[]
   debouncedSearchTerm: string
+  searchType: SearchTypeFilter
 }
 
 /**
@@ -21,6 +22,7 @@ export function useSearchLogic({
   allDrops,
   gachaMachines,
   debouncedSearchTerm,
+  searchType,
 }: UseSearchLogicParams) {
   // 預建名稱索引 - 只在資料載入時計算一次
   const nameIndex = useMemo(() => {
@@ -142,7 +144,7 @@ export function useSearchLogic({
     return { monsterMap, itemMap, gachaMap }
   }, [allDrops, gachaMachines])
 
-  // 計算搜尋建議列表（使用索引優化效能，支援多關鍵字搜尋）
+  // 計算搜尋建議列表（使用索引優化效能，支援多關鍵字搜尋和類型過濾）
   const suggestions = useMemo(() => {
     if (debouncedSearchTerm.trim() === '' || nameIndex.monsterMap.size === 0) {
       return []
@@ -151,26 +153,51 @@ export function useSearchLogic({
     const results: SuggestionItem[] = []
     const firstKeyword = debouncedSearchTerm.toLowerCase().trim().split(/\s+/)[0]
 
-    // 從怪物索引中搜尋（支援多關鍵字匹配）
-    nameIndex.monsterMap.forEach((suggestion) => {
-      if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
-        results.push(suggestion)
-      }
-    })
-
-    // 從物品索引中搜尋（支援多關鍵字匹配）
-    nameIndex.itemMap.forEach((suggestion) => {
-      if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
-        results.push(suggestion)
-      }
-    })
-
-    // 從轉蛋機物品索引中搜尋（支援多關鍵字匹配）
-    nameIndex.gachaMap.forEach((suggestion) => {
-      if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
-        results.push(suggestion)
-      }
-    })
+    // 根據 searchType 決定搜尋範圍
+    if (searchType === 'monster') {
+      // 只從怪物索引中搜尋
+      nameIndex.monsterMap.forEach((suggestion) => {
+        if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
+          results.push(suggestion)
+        }
+      })
+    } else if (searchType === 'item') {
+      // 只從物品和轉蛋索引中搜尋
+      nameIndex.itemMap.forEach((suggestion) => {
+        if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
+          results.push(suggestion)
+        }
+      })
+      nameIndex.gachaMap.forEach((suggestion) => {
+        if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
+          results.push(suggestion)
+        }
+      })
+    } else if (searchType === 'gacha') {
+      // 只從轉蛋索引中搜尋
+      nameIndex.gachaMap.forEach((suggestion) => {
+        if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
+          results.push(suggestion)
+        }
+      })
+    } else {
+      // 'all': 從所有索引中搜尋（原有邏輯）
+      nameIndex.monsterMap.forEach((suggestion) => {
+        if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
+          results.push(suggestion)
+        }
+      })
+      nameIndex.itemMap.forEach((suggestion) => {
+        if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
+          results.push(suggestion)
+        }
+      })
+      nameIndex.gachaMap.forEach((suggestion) => {
+        if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
+          results.push(suggestion)
+        }
+      })
+    }
 
     // 排序：優先第一個關鍵字在開頭匹配，其次按出現次數
     results.sort((a, b) => {
@@ -186,7 +213,7 @@ export function useSearchLogic({
 
     // 限制結果數量最多 10 個
     return results.slice(0, 10)
-  }, [debouncedSearchTerm, nameIndex])
+  }, [debouncedSearchTerm, nameIndex, searchType])
 
   return {
     nameIndex,

@@ -1,7 +1,7 @@
 'use client'
 
 import { useLanguage } from '@/contexts/LanguageContext'
-import type { AdvancedFilterOptions, DataTypeFilter, ItemCategoryGroup, JobClass } from '@/types'
+import type { AdvancedFilterOptions, ItemCategoryGroup, JobClass } from '@/types'
 
 interface AdvancedFilterPanelProps {
   filter: AdvancedFilterOptions
@@ -19,17 +19,6 @@ export function AdvancedFilterPanel({
   isExpanded,
 }: AdvancedFilterPanelProps) {
   const { t } = useLanguage()
-
-  // 處理資料類型變更（Toggle 模式）
-  const handleDataTypeChange = (dataType: DataTypeFilter) => {
-    // Toggle 模式：如果當前已選中，則切換為 'all'（取消選擇）
-    const newDataType = filter.dataType === dataType ? 'all' : dataType
-    onFilterChange({
-      ...filter,
-      dataType: newDataType,
-      enabled: true,
-    })
-  }
 
   // 處理物品類別變更（多選）
   const handleCategoryToggle = (category: ItemCategoryGroup) => {
@@ -73,7 +62,6 @@ export function AdvancedFilterPanel({
 
   // 計算已啟用篩選數量
   const activeFilterCount = [
-    filter.dataType !== 'all' ? 1 : 0,
     filter.itemCategories.length > 0 ? 1 : 0,
     filter.jobClasses.length > 0 ? 1 : 0,
     (filter.levelRange.min !== null || filter.levelRange.max !== null) ? 1 : 0,
@@ -94,25 +82,6 @@ export function AdvancedFilterPanel({
         }`}
       >
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
-          {/* 資料類型篩選 */}
-          <div className="mb-6">
-            <div className="flex flex-wrap gap-2">
-              {(['gacha'] as const).map((type) => (
-                <button
-                  key={type}
-                  onClick={() => handleDataTypeChange(type)}
-                  className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
-                    filter.dataType === type
-                      ? 'bg-blue-500 text-white shadow-md'
-                      : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                  }`}
-                >
-                  {t(`filter.dataType.${type}`)}
-                </button>
-              ))}
-            </div>
-          </div>
-
           {/* 物品類別篩選 - 分組顯示 */}
           <div className="mb-6">
             <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">

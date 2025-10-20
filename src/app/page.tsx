@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { useSearchParams } from 'next/navigation'
-import type { FilterMode, AdvancedFilterOptions, SuggestionItem } from '@/types'
+import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter } from '@/types'
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 import { useFavoriteMonsters } from '@/hooks/useFavoriteMonsters'
 import { useFavoriteItems } from '@/hooks/useFavoriteItems'
@@ -38,6 +38,9 @@ export default function Home() {
   // 篩選模式：全部 or 最愛怪物 or 最愛物品
   const [filterMode, setFilterMode] = useState<FilterMode>('all')
 
+  // 搜尋類型篩選：全部 or 怪物 or 物品
+  const [searchType, setSearchType] = useState<SearchTypeFilter>('all')
+
   // 進階篩選狀態
   const [advancedFilter, setAdvancedFilter] = useState<AdvancedFilterOptions>(getDefaultAdvancedFilter())
   const [isAdvancedFilterExpanded, setIsAdvancedFilterExpanded] = useState(false)
@@ -48,7 +51,6 @@ export default function Home() {
 
   // 計算已啟用的進階篩選數量
   const advancedFilterCount = [
-    advancedFilter.dataType !== 'all' ? 1 : 0,
     advancedFilter.itemCategories.length > 0 ? 1 : 0,
   ].reduce((a, b) => a + b, 0)
 
@@ -80,6 +82,7 @@ export default function Home() {
     allDrops,
     gachaMachines,
     debouncedSearchTerm,
+    searchType,
   })
 
   // 最愛怪物管理
@@ -116,6 +119,7 @@ export default function Home() {
     allDrops,
     initialRandomDrops,
     debouncedSearchTerm, // 延遲搜尋詞（已 debounce）
+    searchType,
     advancedFilter,
     itemAttributesMap,
     gachaMachines,
@@ -146,21 +150,20 @@ export default function Home() {
     ? itemsInfiniteScroll.displayedItems
     : uniqueAllItems
 
-  // 延遲載入轉蛋機 - 當使用者開始搜尋或選擇轉蛋物品篩選時才載入
+  // 延遲載入轉蛋機 - 當使用者開始搜尋或選擇轉蛋物品類型時才載入
   useEffect(() => {
-    // 當有搜尋詞或進階篩選選擇了轉蛋物品時，載入轉蛋機資料
+    // 當有搜尋詞、選擇了轉蛋/物品類型、或轉蛋 Modal 開啟時，載入轉蛋機資料
     const needsGachaData =
       debouncedSearchTerm.trim() !== '' ||
-      (advancedFilter.enabled &&
-       (advancedFilter.dataType === 'all' ||
-        advancedFilter.dataType === 'item' ||
-        advancedFilter.dataType === 'gacha')) ||
-      modals.isGachaModalOpen  // 轉蛋 Modal 開啟時也載入資料
+      searchType === 'gacha' ||
+      searchType === 'item' ||
+      modals.isGachaModalOpen ||
+      (advancedFilter.enabled && advancedFilter.itemCategories.length > 0)
 
     if (needsGachaData) {
       loadGachaMachines()
     }
-  }, [debouncedSearchTerm, advancedFilter.enabled, advancedFilter.dataType, loadGachaMachines, modals.isGachaModalOpen])
+  }, [debouncedSearchTerm, searchType, advancedFilter.enabled, advancedFilter.itemCategories, loadGachaMachines, modals.isGachaModalOpen])
 
   // 延遲載入物品屬性 - 當使用者啟用進階篩選時才載入
   useEffect(() => {
@@ -345,6 +348,8 @@ export default function Home() {
           <SearchBar
             searchTerm={search.searchTerm}
             onSearchChange={search.setSearchTerm}
+            searchType={searchType}
+            onSearchTypeChange={setSearchType}
             suggestions={suggestions}
             showSuggestions={search.showSuggestions}
             onFocus={() => search.setShowSuggestions(true)}
