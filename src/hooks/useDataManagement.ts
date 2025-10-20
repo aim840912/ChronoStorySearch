@@ -146,6 +146,46 @@ export function useDataManagement() {
     return shuffled.slice(0, sampleSize)
   }, [allDrops])
 
+  // 隨機選擇 15 個轉蛋物品（初始顯示用）- Fisher-Yates shuffle
+  const initialRandomGachaItems = useMemo(() => {
+    if (gachaMachines.length === 0) return []
+
+    // 收集所有轉蛋物品
+    const allGachaItems: Array<{
+      itemId: number
+      name: string
+      chineseName?: string
+      machineId: number
+      machineName: string
+      chineseMachineName?: string
+      probability: string
+    }> = []
+
+    gachaMachines.forEach((machine) => {
+      machine.items.forEach((item) => {
+        allGachaItems.push({
+          itemId: item.itemId,
+          name: item.name || item.itemName || '',
+          chineseName: item.chineseName,
+          machineId: machine.machineId,
+          machineName: machine.machineName,
+          chineseMachineName: machine.chineseMachineName,
+          probability: item.probability
+        })
+      })
+    })
+
+    // Fisher-Yates shuffle 演算法（只 shuffle 前 15 個）
+    const shuffled = [...allGachaItems]
+    const sampleSize = Math.min(15, allGachaItems.length)
+
+    for (let i = 0; i < sampleSize; i++) {
+      const randomIndex = i + Math.floor(Math.random() * (shuffled.length - i))
+      ;[shuffled[i], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[i]]
+    }
+
+    return shuffled.slice(0, sampleSize)
+  }, [gachaMachines])
 
   return {
     // 資料
@@ -155,6 +195,7 @@ export function useDataManagement() {
 
     // 初始隨機資料
     initialRandomDrops,
+    initialRandomGachaItems,
 
     // 按需載入函數
     loadGachaMachines,

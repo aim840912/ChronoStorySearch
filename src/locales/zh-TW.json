@@ -297,5 +297,7 @@
   "filter.multiSelect": "可多選",
   "filter.activeFilters": "已啟用的篩選條件",
   "filter.reset": "重置",
-  "filter.apply": "套用"
+  "filter.apply": "套用",
+  "scroll.maxReached": "已顯示 {count} 項結果，請使用搜尋或篩選進一步縮小範圍",
+  "scroll.backToTop": "返回頂部"
 }

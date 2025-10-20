@@ -33,6 +33,15 @@ interface UseFilterLogicParams {
   advancedFilter: AdvancedFilterOptions
   itemAttributesMap: Map<number, ItemAttributes>
   gachaMachines: GachaMachine[]
+  initialRandomGachaItems: Array<{
+    itemId: number
+    name: string
+    chineseName?: string
+    machineId: number
+    machineName: string
+    chineseMachineName?: string
+    probability: string
+  }>
 }
 
 /**
@@ -54,6 +63,7 @@ export function useFilterLogic({
   advancedFilter,
   itemAttributesMap,
   gachaMachines,
+  initialRandomGachaItems,
 }: UseFilterLogicParams) {
   // 計算去重的最愛怪物清單（每個怪物只出現一次）
   const uniqueFavoriteMonsters = useMemo(() => {
@@ -246,16 +256,15 @@ export function useFilterLogic({
       item.monsterCount = uniqueMonsters.size
     })
 
-    // 2. 只在有搜尋或選擇了轉蛋/物品類型時才整合轉蛋物品
+    // 2. 只在有搜尋或進階篩選時才整合所有轉蛋物品
     // 避免在隨機顯示模式下加入所有轉蛋物品（1306個）
     // 使用 debouncedSearchTerm 確保與資料來源同步，避免過渡期資料爆炸
-    const shouldIncludeGacha =
+    const shouldIncludeAllGacha =
       debouncedSearchTerm.trim() !== '' ||
-      searchType === 'gacha' ||
-      searchType === 'item' ||
       (advancedFilter.enabled && advancedFilter.itemCategories.length > 0)
 
-    if (shouldIncludeGacha) {
+    if (shouldIncludeAllGacha) {
+      // 載入所有轉蛋物品用於搜尋/篩選
       gachaMachines.forEach((machine) => {
       machine.items.forEach((gachaItem) => {
         // 如果 searchType 為 'monster'，不包含轉蛋物品（轉蛋物品只是物品）
@@ -313,6 +322,26 @@ export function useFilterLogic({
         }
       })
     })
+    } else if (searchType === 'gacha' && !advancedFilter.enabled) {
+      // 無搜尋詞且選擇「轉蛋」類型：使用隨機轉蛋物品
+      initialRandomGachaItems.forEach((gachaItem) => {
+        itemMap.set(gachaItem.itemId, {
+          itemId: gachaItem.itemId,
+          itemName: gachaItem.name,
+          chineseItemName: gachaItem.chineseName || null,
+          monsterCount: 0,
+          source: {
+            fromDrops: false,
+            fromGacha: true,
+            gachaMachines: [{
+              machineId: gachaItem.machineId,
+              machineName: gachaItem.machineName,
+              chineseMachineName: gachaItem.chineseMachineName,
+              probability: gachaItem.probability
+            }]
+          }
+        })
+      })
     }
 
     // 3. 應用進階篩選到所有物品（包括轉蛋物品）

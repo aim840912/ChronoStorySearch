@@ -49,6 +49,9 @@ export default function Home() {
   const isFirstMount = useRef(true)
   const isFirstSearchChange = useRef(true)
 
+  // 追蹤是否顯示「返回頂部」按鈕
+  const [showBackToTop, setShowBackToTop] = useState(false)
+
   // 計算已啟用的進階篩選數量
   const advancedFilterCount = [
     advancedFilter.itemCategories.length > 0 ? 1 : 0,
@@ -68,6 +71,7 @@ export default function Home() {
     gachaMachines,
     isLoading,
     initialRandomDrops,
+    initialRandomGachaItems,
     loadGachaMachines,
   } = useDataManagement()
 
@@ -123,6 +127,7 @@ export default function Home() {
     advancedFilter,
     itemAttributesMap,
     gachaMachines,
+    initialRandomGachaItems,
   })
 
   // 無限滾動 - 在「全部」模式且（有搜尋 或 有進階篩選）時啟用
@@ -259,6 +264,17 @@ export default function Home() {
     }
   }, [search.searchTerm])
 
+  // 監聽滾動事件，顯示/隱藏「返回頂部」按鈕
+  useEffect(() => {
+    const handleScroll = () => {
+      // 當使用者滾動超過 300px 時顯示按鈕
+      setShowBackToTop(window.scrollY > 300)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   // 選擇建議項目
   const selectSuggestion = (suggestionName: string, suggestion?: SuggestionItem) => {
     // 如果是轉蛋物品，開啟物品 Modal（而不是轉蛋機 Modal）
@@ -325,6 +341,11 @@ export default function Home() {
   // ItemModal 中點擊轉蛋機：不關閉 ItemModal，打開 GachaMachineModal 並選擇轉蛋機
   const handleGachaMachineClick = (machineId: number) => {
     modals.openGachaModal(machineId)
+  }
+
+  // 返回頂部
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   return (
@@ -544,6 +565,19 @@ export default function Home() {
                               <div className="text-gray-500 dark:text-gray-400 text-sm">載入更多怪物...</div>
                             </div>
                           )}
+                          {/* 上限提示訊息 */}
+                          {monstersInfiniteScroll.isMaxReached && (
+                            <div className="max-w-7xl mx-auto mt-4 p-4 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
+                              <div className="flex items-center gap-3">
+                                <svg className="w-6 h-6 text-yellow-600 dark:text-yellow-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <p className="text-yellow-800 dark:text-yellow-200 text-sm">
+                                  {t('scroll.maxReached').replace('{count}', displayedMonsters.length.toString())}
+                                </p>
+                              </div>
+                            </div>
+                          )}
                         </>
                       )}
 
@@ -572,6 +606,19 @@ export default function Home() {
                               className="h-20 flex items-center justify-center max-w-7xl mx-auto mt-4"
                             >
                               <div className="text-gray-500 dark:text-gray-400 text-sm">載入更多物品...</div>
+                            </div>
+                          )}
+                          {/* 上限提示訊息 */}
+                          {itemsInfiniteScroll.isMaxReached && (
+                            <div className="max-w-7xl mx-auto mt-4 p-4 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
+                              <div className="flex items-center gap-3">
+                                <svg className="w-6 h-6 text-yellow-600 dark:text-yellow-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <p className="text-yellow-800 dark:text-yellow-200 text-sm">
+                                  {t('scroll.maxReached').replace('{count}', displayedItems.length.toString())}
+                                </p>
+                              </div>
                             </div>
                           )}
                         </>
@@ -706,6 +753,30 @@ export default function Home() {
           <span className="text-sm font-medium hidden group-hover:inline-block">{t('bug.report')}</span>
         </div>
       </button>
+
+      {/* 返回頂部按鈕 */}
+      {showBackToTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-24 right-6 z-40 p-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+          aria-label={t('scroll.backToTop')}
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 10l7-7m0 0l7 7m-7-7v18"
+            />
+          </svg>
+        </button>
+      )}
 
       {/* Toast 通知 */}
       <Toast
