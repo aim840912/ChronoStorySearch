@@ -5,6 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import type { GachaMachine, GachaItem, EnhancedGachaItem } from '@/types'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { clientLogger } from '@/lib/logger'
+import { weightedRandomDraw } from '@/lib/gacha-utils'
 
 /**
  * Enhanced JSON 的轉蛋機格式
@@ -59,6 +60,7 @@ interface GachaMachineModalProps {
 }
 
 type SortOption = 'probability-desc' | 'probability-asc' | 'level-desc' | 'level-asc' | 'name-asc'
+type ViewMode = 'browse' | 'gacha'
 
 /**
  * 轉蛋機圖鑑 Modal
@@ -73,6 +75,13 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
   const [isLoading, setIsLoading] = useState(false)
   const [showToast, setShowToast] = useState(false)
   const [toastMessage, setToastMessage] = useState('')
+
+  // 抽獎模式相關狀態
+  const [viewMode, setViewMode] = useState<ViewMode>('browse')
+  // 為每次抽取添加唯一 ID，避免相同物品的圖片重複載入
+  const [gachaResults, setGachaResults] = useState<Array<GachaItem & { drawId: number }>>([])
+  const [drawCount, setDrawCount] = useState(0)
+  const MAX_DRAWS = 100
 
   // 語言切換函數
   const toggleLanguage = () => {
@@ -150,8 +159,38 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
       setSelectedMachine(null)
       setSearchTerm('')
       setSortOption('probability-desc')
+      // 重置抽獎狀態
+      setViewMode('browse')
+      setGachaResults([])
+      setDrawCount(0)
     }
   }, [isOpen])
+
+  // 抽獎處理函數
+  const handleDrawOnce = () => {
+    if (!selectedMachine || drawCount >= MAX_DRAWS) return
+
+    const drawnItem = weightedRandomDraw(selectedMachine.items)
+    const newDrawCount = drawCount + 1
+    // 為每次抽取添加唯一 ID，確保 React 不會重新創建相同物品的 DOM 元素
+    setGachaResults(prev => [{ ...drawnItem, drawId: newDrawCount }, ...prev]) // 新結果添加到頂部
+    setDrawCount(newDrawCount)
+  }
+
+  // 重置抽獎結果
+  const handleReset = () => {
+    setGachaResults([])
+    setDrawCount(0)
+  }
+
+  // 切換查看/抽獎模式
+  const toggleViewMode = () => {
+    if (viewMode === 'gacha') {
+      // 切換回查看模式時，重置抽獎結果
+      handleReset()
+    }
+    setViewMode(prev => prev === 'browse' ? 'gacha' : 'browse')
+  }
 
   // 當有 initialMachineId 時，自動選擇對應的轉蛋機
   useEffect(() => {
@@ -274,6 +313,30 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
               </div>
             </div>
             <div className="flex items-center gap-2">
+              {/* 模式切換按鈕（只在選中轉蛋機時顯示） */}
+              {selectedMachine && (
+                <button
+                  onClick={toggleViewMode}
+                  className="px-4 py-2 rounded-lg transition-all duration-200 bg-white/20 hover:bg-white/30 text-white border border-white/30 font-medium text-sm flex items-center gap-2"
+                  aria-label={viewMode === 'browse' ? t('gacha.gachaMode') : t('gacha.browseMode')}
+                >
+                  {viewMode === 'browse' ? (
+                    <>
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      </svg>
+                      {t('gacha.gachaMode')}
+                    </>
+                  ) : (
+                    <>
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                      </svg>
+                      {t('gacha.browseMode')}
+                    </>
+                  )}
+                </button>
+              )}
               {/* 語言切換按鈕 */}
               <button
                 onClick={toggleLanguage}
@@ -353,58 +416,134 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
             </div>
           ) : selectedMachine ? (
             <>
-              {/* 搜尋和排序控制 */}
-              <div className="mb-6 space-y-4">
-                {/* 搜尋框 */}
-                <input
-                  type="text"
-                  placeholder={t('gacha.searchPlaceholder')}
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-
-                {/* 排序選項 */}
-                <div className="flex flex-wrap gap-2">
-                  <select
-                    value={sortOption}
-                    onChange={(e) => setSortOption(e.target.value as SortOption)}
-                    className="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  >
-                    <option value="probability-desc">{t('gacha.sortProbabilityDesc')}</option>
-                    <option value="probability-asc">{t('gacha.sortProbabilityAsc')}</option>
-                    <option value="level-desc">{t('gacha.sortLevelDesc')}</option>
-                    <option value="level-asc">{t('gacha.sortLevelAsc')}</option>
-                    <option value="name-asc">{t('gacha.sortNameAsc')}</option>
-                  </select>
-
-                  <div className="flex-1 text-right text-sm text-gray-500 dark:text-gray-400 flex items-center justify-end">
-                    {t('gacha.showing')} {filteredAndSortedItems.length} {t('gacha.of')} {selectedMachine.totalItems} {t('gacha.items')}
-                  </div>
-                </div>
-              </div>
-
-              {/* 物品列表 */}
-              {filteredAndSortedItems.length > 0 ? (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
-                  {filteredAndSortedItems.map((item, index) => (
-                    <ItemCard
-                      key={`${item.itemId}-${index}`}
-                      item={item}
-                      language={language}
-                      onItemClick={onItemClick}
+              {viewMode === 'browse' ? (
+                <>
+                  {/* 搜尋和排序控制 */}
+                  <div className="mb-6 space-y-4">
+                    {/* 搜尋框 */}
+                    <input
+                      type="text"
+                      placeholder={t('gacha.searchPlaceholder')}
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
-                  ))}
-                </div>
+
+                    {/* 排序選項 */}
+                    <div className="flex flex-wrap gap-2">
+                      <select
+                        value={sortOption}
+                        onChange={(e) => setSortOption(e.target.value as SortOption)}
+                        className="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      >
+                        <option value="probability-desc">{t('gacha.sortProbabilityDesc')}</option>
+                        <option value="probability-asc">{t('gacha.sortProbabilityAsc')}</option>
+                        <option value="level-desc">{t('gacha.sortLevelDesc')}</option>
+                        <option value="level-asc">{t('gacha.sortLevelAsc')}</option>
+                        <option value="name-asc">{t('gacha.sortNameAsc')}</option>
+                      </select>
+
+                      <div className="flex-1 text-right text-sm text-gray-500 dark:text-gray-400 flex items-center justify-end">
+                        {t('gacha.showing')} {filteredAndSortedItems.length} {t('gacha.of')} {selectedMachine.totalItems} {t('gacha.items')}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 物品列表 */}
+                  {filteredAndSortedItems.length > 0 ? (
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+                      {filteredAndSortedItems.map((item, index) => (
+                        <ItemCard
+                          key={`${item.itemId}-${index}`}
+                          item={item}
+                          language={language}
+                          onItemClick={onItemClick}
+                        />
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="text-center py-12">
+                      <div className="text-6xl mb-4">🔍</div>
+                      <p className="text-gray-600 dark:text-gray-400 text-lg font-medium">
+                        {t('gacha.noResults')}
+                      </p>
+                      <p className="text-gray-500 dark:text-gray-500 text-sm mt-2">
+                        {t('gacha.tryOtherKeywords')}
+                      </p>
+                    </div>
+                  )}
+                </>
               ) : (
-                <div className="text-center py-12">
-                  <div className="text-6xl mb-4">🔍</div>
-                  <p className="text-gray-600 dark:text-gray-400 text-lg font-medium">
-                    {t('gacha.noResults')}
-                  </p>
-                  <p className="text-gray-500 dark:text-gray-500 text-sm mt-2">
-                    {t('gacha.tryOtherKeywords')}
-                  </p>
+                /* 抽獎模式 */
+                <div className="space-y-6">
+                  {/* 抽獎控制區 */}
+                  <div className="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-xl border-2 border-purple-200 dark:border-purple-700">
+                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                      {/* 抽獎次數顯示 */}
+                      <div className="text-center sm:text-left">
+                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">{t('gacha.drawCount')}</p>
+                        <p className="text-3xl font-bold text-purple-600 dark:text-purple-400">
+                          {drawCount} / {MAX_DRAWS}
+                        </p>
+                      </div>
+
+                      {/* 按鈕組 */}
+                      <div className="flex gap-3">
+                        {drawCount > 0 && (
+                          <button
+                            onClick={handleReset}
+                            className="px-6 py-4 rounded-xl font-bold text-lg transition-all duration-200 border-2 border-red-500 hover:border-red-600 text-red-500 hover:text-red-600 bg-white dark:bg-gray-800 hover:shadow-md active:scale-95 flex items-center gap-2"
+                          >
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                            </svg>
+                            {t('gacha.reset')}
+                          </button>
+                        )}
+
+                        <button
+                          onClick={handleDrawOnce}
+                          disabled={drawCount >= MAX_DRAWS}
+                          className={`px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 ${
+                            drawCount >= MAX_DRAWS
+                              ? 'bg-gray-300 dark:bg-gray-700 text-gray-500 dark:text-gray-500 cursor-not-allowed'
+                              : 'bg-purple-500 hover:bg-purple-600 text-white shadow-lg hover:shadow-xl active:scale-95'
+                          }`}
+                        >
+                          {drawCount >= MAX_DRAWS ? t('gacha.maxReached') : t('gacha.drawOnce')}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 抽獎結果列表 */}
+                  {gachaResults.length > 0 ? (
+                    <div>
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
+                        {t('gacha.results')}
+                      </h3>
+                      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-3 max-h-[500px] overflow-y-auto p-2">
+                        {gachaResults.map((item) => (
+                          <GachaResultCard
+                            key={`draw-${item.drawId}`}
+                            item={item}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="text-center py-12">
+                      <svg className="w-24 h-24 mx-auto mb-4 text-purple-400 dark:text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      </svg>
+                      <p className="text-gray-600 dark:text-gray-400 text-lg font-medium">
+                        {t('gacha.startDrawing')}
+                      </p>
+                      <p className="text-gray-500 dark:text-gray-500 text-sm mt-2">
+                        {t('gacha.clickDrawButton')}
+                      </p>
+                    </div>
+                  )}
                 </div>
               )}
             </>
@@ -469,7 +608,7 @@ function MachineCard({
   return (
     <button
       onClick={onClick}
-      className="group p-6 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-700 dark:to-gray-600 rounded-xl border-2 border-gray-200 dark:border-gray-600 hover:border-blue-400 dark:hover:border-purple-400 hover:shadow-lg transition-all duration-300 text-left w-full"
+      className="group p-6 bg-blue-50 dark:bg-gray-700 rounded-xl border-2 border-gray-200 dark:border-gray-600 hover:border-blue-400 dark:hover:border-purple-400 hover:shadow-lg transition-all duration-300 text-left w-full"
     >
       <div className="flex-1">
         <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-purple-400 transition-colors">
@@ -506,7 +645,7 @@ function ItemCard({
   return (
     <div
       onClick={() => onItemClick?.(item.itemId, displayName)}
-      className="p-2 bg-gradient-to-br from-white to-gray-50 dark:from-gray-700 dark:to-gray-600 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-purple-400 dark:hover:border-purple-500 hover:shadow-md transition-all cursor-pointer active:scale-[0.98]"
+      className="p-2 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-purple-400 dark:hover:border-purple-500 hover:shadow-md transition-all cursor-pointer active:scale-[0.98]"
     >
       <div className="flex gap-2 items-center">
         {/* 物品圖示 */}
@@ -529,6 +668,36 @@ function ItemCard({
           </div>
         </div>
       </div>
+    </div>
+  )
+}
+
+/**
+ * 抽獎結果卡片元件（純展示版 - 只顯示圖片和序號）
+ */
+function GachaResultCard({
+  item,
+}: {
+  item: GachaItem & { drawId: number }
+}) {
+  // 物品圖示 URL
+  const itemIconUrl = getItemImageUrl(item.itemId)
+
+  return (
+    <div className="relative bg-white dark:bg-gray-700 rounded-lg border-2 border-gray-200 dark:border-gray-600 p-1 aspect-square flex items-center justify-center">
+      {/* 抽取序號 */}
+      <div className="absolute top-0.5 left-0.5 bg-purple-500 text-white text-xs font-bold px-1.5 py-0.5 rounded-full z-10">
+        #{item.drawId}
+      </div>
+
+      {/* 物品圖示 */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={itemIconUrl}
+        alt={`Draw #${item.drawId}`}
+        loading="lazy"
+        className="w-full h-full object-contain p-1.5"
+      />
     </div>
   )
 }

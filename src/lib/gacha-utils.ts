@@ -8,6 +8,31 @@ import type { GachaItem, ItemAttributes, ItemRequirements, ItemClasses, ItemEqui
  */
 
 /**
+ * 加權隨機抽取算法
+ *
+ * @param items - 轉蛋機的物品列表
+ * @returns 隨機抽取的物品
+ */
+export function weightedRandomDraw(items: GachaItem[]): GachaItem {
+  // 計算總權重
+  const totalWeight = items.reduce((sum, item) => sum + item.chance, 0)
+
+  // 生成 0 到 totalWeight 之間的隨機數
+  let random = Math.random() * totalWeight
+
+  // 根據權重區間選擇物品
+  for (const item of items) {
+    random -= item.chance
+    if (random <= 0) {
+      return item
+    }
+  }
+
+  // 容錯：如果因為浮點數誤差沒有返回，返回最後一個物品
+  return items[items.length - 1]
+}
+
+/**
  * 屬性欄位名稱映射表
  * 將 maplestory.io API 的欄位名稱映射到內部格式
  */
