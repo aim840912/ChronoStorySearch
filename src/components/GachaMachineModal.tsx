@@ -255,7 +255,7 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
-        <div className="sticky top-0 z-10 bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-600 dark:to-purple-700 p-6 rounded-t-xl flex-shrink-0">
+        <div className="sticky top-0 z-10 bg-purple-500 dark:bg-purple-600 p-6 rounded-t-xl flex-shrink-0">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div>
@@ -266,7 +266,7 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
                         : selectedMachine.machineName)
                     : t('gacha.title')}
                 </h2>
-                <p className="text-blue-100 text-sm mt-1">
+                <p className="text-purple-100 text-sm mt-1">
                   {selectedMachine
                     ? `${t('gacha.total')} ${selectedMachine.totalItems} ${t('gacha.itemCount')}`
                     : `${t('gacha.total')} ${machines.length} ${t('gacha.machineCount')}`}

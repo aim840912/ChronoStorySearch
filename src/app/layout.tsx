@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="zh-TW">
       <head>
         <title>ChronoStory Search</title>
-        <meta name="description" content="探索你的楓之谷冒險夥伴，查看角色資訊、職業、等級等詳細資料" />
+        <meta name="description" content="查找裝備、怪物詳細資訊" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

@@ -20,15 +20,13 @@ const EQUIPMENT_CATEGORY_MAP: Record<string, ItemCategoryGroup> = {
   'Gloves': 'gloves',
   'Cape': 'cape',
 
-  // 武器類（合併單手/雙手）
-  'One Handed Sword': 'sword',
-  'Two Handed Sword': 'sword',
-  'Two Handed SwordS': 'sword',
-  'Two Handed SwordL': 'sword',
-  'One Handed Axe': 'axe',
-  'Two Handed Axe': 'axe',
-  'One Handed BW': 'bw',
-  'Two Handed BW': 'bw',
+  // 武器類（拆分單手/雙手劍、斧、棍）
+  'One Handed Sword': 'oneHandedSword',
+  'Two Handed Sword': 'twoHandedSword',
+  'One Handed Axe': 'oneHandedAxe',
+  'Two Handed Axe': 'twoHandedAxe',
+  'One Handed BW': 'oneHandedBW',
+  'Two Handed BW': 'twoHandedBW',
   'Polearm': 'polearm',
   'Spear': 'spear',
   'Dagger': 'dagger',
@@ -69,7 +67,7 @@ const SUB_TYPE_FALLBACK_MAP: Record<string, ItemCategoryGroup> = {
  */
 export const CATEGORY_GROUP_MAP: Record<CategoryGroupType, ItemCategoryGroup[]> = {
   apparel: ['hat', 'top', 'bottom', 'overall', 'shoes', 'gloves', 'cape'],
-  weapon: ['sword', 'axe', 'bw', 'polearm', 'spear', 'dagger', 'claw', 'bow', 'crossbow', 'wand', 'staff', 'knuckle', 'gun', 'shield'],
+  weapon: ['oneHandedSword', 'twoHandedSword', 'oneHandedAxe', 'twoHandedAxe', 'oneHandedBW', 'twoHandedBW', 'polearm', 'spear', 'dagger', 'claw', 'bow', 'crossbow', 'wand', 'staff', 'knuckle', 'gun', 'shield'],
   accessory: ['earring', 'accessory'],
   consumable: ['scroll', 'potion', 'projectile'],
 }

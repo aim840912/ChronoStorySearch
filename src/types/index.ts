@@ -261,6 +261,30 @@ export interface ScrollInfo {
   stats: ScrollStats
 }
 
+// Potion (藥水) 相關類型定義
+export interface PotionStats {
+  attack_speed: number | null
+  str: number | null
+  dex: number | null
+  int: number | null
+  luk: number | null
+  watk: number | null
+  matk: number | null
+  accuracy: number | null
+  avoidability: number | null
+  speed: number | null
+  jump: number | null
+  hp: number | null
+  mp: number | null
+  wdef: number | null
+  mdef: number | null
+}
+
+export interface PotionInfo {
+  duration: number | null
+  stats: PotionStats
+}
+
 export interface ItemAttributes {
   item_id: string
   item_name: string
@@ -273,6 +297,7 @@ export interface ItemAttributes {
   sub_type: string | null
   equipment?: ItemEquipment
   scroll?: ScrollInfo
+  potion?: PotionInfo
 }
 
 // Enhanced JSON 格式的類型定義（用於 gacha-utils.ts 轉換）
@@ -383,10 +408,13 @@ export type ItemCategoryGroup =
   | 'shoes'        // 鞋子
   | 'gloves'       // 手套
   | 'cape'         // 披風
-  // 武器防具類 (14)
-  | 'sword'        // 劍（單手+雙手）
-  | 'axe'          // 斧（單手+雙手）
-  | 'bw'           // 鈍器/鞭（單手+雙手）
+  // 武器防具類 (17)
+  | 'oneHandedSword'   // 單手劍
+  | 'twoHandedSword'   // 雙手劍
+  | 'oneHandedAxe'     // 單手斧
+  | 'twoHandedAxe'     // 雙手斧
+  | 'oneHandedBW'      // 單手棍
+  | 'twoHandedBW'      // 雙手棍
   | 'polearm'      // 矛
   | 'spear'        // 槍
   | 'dagger'       // 匕首

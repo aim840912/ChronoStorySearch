@@ -98,6 +98,75 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
     )
   }
 
+  // 處理 Potion (藥水) 類型物品
+  if (attributes && attributes.sub_type === 'Potion' && attributes.potion) {
+    const { potion } = attributes
+
+    // 過濾出非 null 且非 0 的屬性
+    const nonNullStats = Object.entries(potion.stats)
+      .filter(([, value]) => value !== null && value !== 0)
+      .map(([key, value]) => ({ key, value: value as number }))
+
+    return (
+      <div className="bg-gradient-to-br from-cyan-50 to-blue-100 dark:from-cyan-900/20 dark:to-blue-900/30 rounded-xl p-6 shadow-lg border border-cyan-200 dark:border-cyan-800">
+        <h3 className="text-xl font-bold text-cyan-900 dark:text-cyan-100 mb-4">
+          {t('item.potionInfo')}
+        </h3>
+
+        {/* 藥水效果 */}
+        {nonNullStats.length > 0 && (
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
+            <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+              {t('item.potionEffect')}
+            </h4>
+            <div className="grid grid-cols-2 gap-3">
+              {nonNullStats.map(({ key, value }) => {
+                // 特別處理 HP 和 MP，使用更顯眼的樣式
+                const isHP = key === 'hp'
+                const isMP = key === 'mp'
+                const isMainEffect = isHP || isMP
+
+                return (
+                  <div
+                    key={key}
+                    className={`flex justify-between items-center ${
+                      isMainEffect ? 'bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-2 rounded-lg' : ''
+                    }`}
+                  >
+                    <span className={`text-sm ${
+                      isMainEffect
+                        ? 'font-semibold text-gray-800 dark:text-gray-200'
+                        : 'text-gray-600 dark:text-gray-400'
+                    }`}>
+                      {t(`item.${key}`)}:
+                    </span>
+                    <span className={`font-bold ${
+                      isHP
+                        ? 'text-2xl text-red-600 dark:text-red-400'
+                        : isMP
+                        ? 'text-2xl text-blue-600 dark:text-blue-400'
+                        : 'text-lg text-green-600 dark:text-green-400'
+                    }`}>
+                      +{value}
+                    </span>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        )}
+
+        {nonNullStats.length === 0 && (
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
+            <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
+              {t('item.noStatBonus')}
+            </p>
+          </div>
+        )}
+      </div>
+    )
+  }
+
   // 處理無屬性資料的情況（非裝備類型：Etc、Consume 等）
   if (!attributes || !attributes.equipment) {
     // 如果完全沒有資料，顯示空狀態

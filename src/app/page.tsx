@@ -668,7 +668,7 @@ export default function Home() {
       {/* 浮動轉蛋機按鈕 */}
       <button
         onClick={() => modals.openGachaModal()}
-        className="fixed bottom-6 left-6 z-40 p-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        className="fixed bottom-6 left-6 z-40 p-4 bg-purple-500 hover:bg-purple-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('gacha.button')}
       >
         <div className="flex items-center gap-2">

@@ -53,8 +53,8 @@ export function matchesItemCategoryFilter(
   // 取得物品屬性
   const item = itemAttributes.get(itemId)
   if (!item) {
-    // 物品屬性不存在（如楓幣 itemId=0），預設通過篩選
-    return true
+    // 物品屬性不存在時，不符合任何類別篩選條件
+    return false
   }
 
   // 使用 OR 邏輯：只要符合任一類別即可（物品類別是多選的）
@@ -125,8 +125,8 @@ export function matchesLevelRangeFilter(
   // 取得物品屬性
   const item = itemAttributes.get(itemId)
   if (!item || !item.equipment) {
-    // 非裝備類物品（無等級需求），預設通過篩選
-    return true
+    // 非裝備類物品（無等級需求），不符合等級範圍篩選條件
+    return false
   }
 
   const reqLevel = item.equipment.requirements.req_level

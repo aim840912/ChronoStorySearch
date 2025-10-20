@@ -109322,7 +109322,7 @@
     "type": "Eqp",
     "sub_type": "Weapon",
     "equipment": {
-      "category": "Two Handed SwordS",
+      "category": "Two Handed Sword",
       "requirements": {
         "req_level": 10,
         "req_str": 0,
@@ -109444,7 +109444,7 @@
     "type": "Eqp",
     "sub_type": "Weapon",
     "equipment": {
-      "category": "Two Handed SwordS",
+      "category": "Two Handed Sword",
       "requirements": {
         "req_level": 30,
         "req_str": 100,
@@ -109566,7 +109566,7 @@
     "type": "Eqp",
     "sub_type": "Weapon",
     "equipment": {
-      "category": "Two Handed SwordS",
+      "category": "Two Handed Sword",
       "requirements": {
         "req_level": 50,
         "req_str": 155,
@@ -109688,7 +109688,7 @@
     "type": "Eqp",
     "sub_type": "Weapon",
     "equipment": {
-      "category": "Two Handed SwordL",
+      "category": "Two Handed Sword",
       "requirements": {
         "req_level": 80,
         "req_str": 250,
@@ -109810,7 +109810,7 @@
     "type": "Eqp",
     "sub_type": "Weapon",
     "equipment": {
-      "category": "Two Handed SwordS",
+      "category": "Two Handed Sword",
       "requirements": {
         "req_level": 35,
         "req_str": 115,
@@ -109932,7 +109932,7 @@
     "type": "Eqp",
     "sub_type": "Weapon",
     "equipment": {
-      "category": "Two Handed SwordS",
+      "category": "Two Handed Sword",
       "requirements": {
         "req_level": 40,
         "req_str": 130,
@@ -110054,7 +110054,7 @@
     "type": "Eqp",
     "sub_type": "Weapon",
     "equipment": {
-      "category": "Two Handed SwordS",
+      "category": "Two Handed Sword",
       "requirements": {
         "req_level": 0,
         "req_str": 0,
@@ -110176,7 +110176,7 @@
     "type": "Eqp",
     "sub_type": "Weapon",
     "equipment": {
-      "category": "Two Handed SwordS",
+      "category": "Two Handed Sword",
       "requirements": {
         "req_level": 30,
         "req_str": 0,
@@ -110298,7 +110298,7 @@
     "type": "Eqp",
     "sub_type": "Weapon",
     "equipment": {
-      "category": "Two Handed SwordL",
+      "category": "Two Handed Sword",
       "requirements": {
         "req_level": 60,
         "req_str": 190,
@@ -110420,7 +110420,7 @@
     "type": "Eqp",
     "sub_type": "Weapon",
     "equipment": {
-      "category": "Two Handed SwordL",
+      "category": "Two Handed Sword",
       "requirements": {
         "req_level": 70,
         "req_str": 220,
@@ -110542,7 +110542,7 @@
     "type": "Eqp",
     "sub_type": "Weapon",
     "equipment": {
-      "category": "Two Handed SwordL",
+      "category": "Two Handed Sword",
       "requirements": {
         "req_level": 90,
         "req_str": 280,
@@ -110664,7 +110664,7 @@
     "type": "Eqp",
     "sub_type": "Weapon",
     "equipment": {
-      "category": "Two Handed SwordS",
+      "category": "Two Handed Sword",
       "requirements": {
         "req_level": 15,
         "req_str": 35,

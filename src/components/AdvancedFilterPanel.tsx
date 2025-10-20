@@ -188,7 +188,7 @@ export function AdvancedFilterPanel({
                 {t('filter.categoryGroup.weapon')}
               </h5>
               <div className="flex flex-wrap gap-2">
-                {(['sword', 'axe', 'bw', 'polearm', 'spear', 'dagger', 'claw', 'bow', 'crossbow', 'wand', 'staff', 'knuckle', 'gun', 'shield'] as const).map((category) => (
+                {(['oneHandedSword', 'twoHandedSword', 'oneHandedAxe', 'twoHandedAxe', 'oneHandedBW', 'twoHandedBW', 'polearm', 'spear', 'dagger', 'claw', 'bow', 'crossbow', 'wand', 'staff', 'knuckle', 'gun', 'shield'] as const).map((category) => (
                   <button
                     key={category}
                     onClick={() => handleCategoryToggle(category)}
