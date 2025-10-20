@@ -522,7 +522,7 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
                       <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
                         {t('gacha.results')}
                       </h3>
-                      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-3 max-h-[500px] overflow-y-auto p-2">
+                      <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 2xl:grid-cols-14 gap-2 max-h-[500px] overflow-y-auto p-2">
                         {gachaResults.map((item) => (
                           <GachaResultCard
                             key={`draw-${item.drawId}`}
