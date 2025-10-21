@@ -113,7 +113,7 @@ export function setFavoriteItems(items: FavoriteItem[]): boolean {
 }
 
 export function getLanguage(): Language {
-  return getStorageItem<Language>(STORAGE_KEYS.LANGUAGE, 'zh-TW')
+  return getStorageItem<Language>(STORAGE_KEYS.LANGUAGE, 'en')
 }
 
 export function setLanguage(language: Language): boolean {

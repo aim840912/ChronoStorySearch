@@ -24,7 +24,7 @@ const translations: Record<Language, Translations> = {
  * 提供語言切換和翻譯功能
  */
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguageState] = useState<Language>('zh-TW')
+  const [language, setLanguageState] = useState<Language>('en')
   const [isClient, setIsClient] = useState(false)
 
   // 從 localStorage 載入語言偏好
@@ -48,8 +48,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   // 翻譯函數
   const t = (key: string): string => {
     if (!isClient) {
-      // SSR 時使用預設語言（繁體中文）
-      return translations['zh-TW'][key] || key
+      // SSR 時使用預設語言（英文）
+      return translations['en'][key] || key
     }
 
     const translation = translations[language][key]

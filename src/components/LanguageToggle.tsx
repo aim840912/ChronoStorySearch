@@ -18,11 +18,11 @@ export function LanguageToggle() {
   return (
     <button
       onClick={toggleLanguage}
-      className="p-2 sm:px-4 sm:py-2 rounded-full sm:rounded-lg font-medium transition-all duration-200 flex items-center gap-2 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 hover:border-blue-400 dark:hover:border-blue-500 shadow-sm hover:shadow-md"
+      className="relative p-3 sm:px-5 sm:py-3 rounded-full sm:rounded-lg font-bold transition-all duration-200 flex items-center gap-2 bg-pink-500 hover:bg-pink-600 dark:bg-pink-600 dark:hover:bg-pink-700 text-white shadow-lg hover:shadow-xl animate-pulse-scale hover:!scale-110 hover:!animate-none"
       aria-label="切換語言 / Switch Language"
     >
       {/* 地球圖標 */}
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path
           strokeLinecap="round"
           strokeLinejoin="round"

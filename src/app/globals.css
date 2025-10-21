@@ -34,3 +34,19 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* 自定義脈衝縮放動畫 - 用於語言切換按鈕 */
+@keyframes pulse-scale {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 8px rgba(236, 72, 153, 0);
+  }
+}
+
+.animate-pulse-scale {
+  animation: pulse-scale 2s ease-in-out infinite;
+}
