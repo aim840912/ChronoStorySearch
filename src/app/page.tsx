@@ -345,16 +345,16 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
-      <div className="container mx-auto px-4 pb-12">
+      <div className="container mx-auto px-4 pb-8 sm:pb-12">
         {/* Sticky Header - 固定搜尋區域 */}
-        <div className="sticky top-0 z-40 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 backdrop-blur-sm pt-12 pb-6 shadow-md">
+        <div className="sticky top-0 z-40 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 backdrop-blur-sm pt-8 sm:pt-12 pb-4 sm:pb-6 shadow-md">
           {/* 標題區域 */}
-          <div className="relative text-center mb-8 pt-2">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+          <div className="relative text-center mb-6 sm:mb-8 pt-2">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
               {t('app.title')}
             </h1>
             {/* 主題與語言切換按鈕 - 右上角 */}
-            <div className="absolute top-0 right-4 flex gap-2">
+            <div className="absolute top-0 right-2 sm:right-4 flex gap-2">
               <ThemeToggle />
               <LanguageToggle />
             </div>
@@ -411,7 +411,7 @@ export default function Home() {
             {filterMode === 'favorite-monsters' ? (
               /* 最愛怪物模式 - 顯示怪物卡片 */
               filteredUniqueMonsters.length > 0 ? (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto mt-6 sm:mt-8">
                   {filteredUniqueMonsters.map((monster) => (
                     <MonsterCard
                       key={monster.mobId}
@@ -429,7 +429,7 @@ export default function Home() {
               ) : (
                 <div className="text-center py-12 mt-8">
                   {search.searchTerm ? (
-                    <div className="text-6xl mb-4">🔍</div>
+                    <div className="text-5xl sm:text-6xl mb-4">🔍</div>
                   ) : (
                     <div className="mb-4 flex justify-center">
                       <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -473,7 +473,7 @@ export default function Home() {
               ) : (
                 <div className="text-center py-12 mt-8">
                   {search.searchTerm ? (
-                    <div className="text-6xl mb-4">🔍</div>
+                    <div className="text-5xl sm:text-6xl mb-4">🔍</div>
                   ) : (
                     <div className="mb-4 flex justify-center">
                       <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -542,7 +542,7 @@ export default function Home() {
                       {/* 怪物區塊 */}
                       {shouldShowMonsters && displayedMonsters.length > 0 && (
                         <>
-                          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
+                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto mt-6 sm:mt-8">
                             {displayedMonsters.map((monster) => (
                               <MonsterCard
                                 key={monster.mobId}
@@ -585,7 +585,7 @@ export default function Home() {
                       {/* 物品區塊 */}
                       {shouldShowItems && displayedItems.length > 0 && (
                         <>
-                          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
+                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto mt-6 sm:mt-8">
                             {displayedItems.map((item) => (
                               <ItemCard
                                 key={item.itemId}
@@ -630,7 +630,7 @@ export default function Home() {
                 </>
               ) : (
                 <div className="text-center py-12 mt-8">
-                  <div className="text-6xl mb-4">🔍</div>
+                  <div className="text-5xl sm:text-6xl mb-4">🔍</div>
                   <p className="text-gray-600 dark:text-gray-400 text-lg font-medium mb-2">
                     {search.searchTerm ? t('empty.noResults') : t('empty.noData')}
                   </p>
@@ -646,7 +646,7 @@ export default function Home() {
         )}
 
         {/* 底部資訊 */}
-        <div className="mt-16 text-center">
+        <div className="mt-12 sm:mt-16 text-center">
           <p className="text-gray-500 dark:text-gray-400 text-sm">
             <a
               href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpKuZGJQIFFxSi6kzYx4ALI0MQborpLEkh3J1qIGSd0Bw7U4NYg5CK-3ESzyK580z4D8NO59SUeC3k/pubhtml?gid=1888753114&single=true"
@@ -730,12 +730,12 @@ export default function Home() {
       {/* 浮動轉蛋機按鈕 */}
       <button
         onClick={() => modals.openGachaModal()}
-        className="fixed bottom-6 left-6 z-40 p-4 bg-purple-500 hover:bg-purple-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        className="fixed bottom-4 sm:bottom-6 left-4 sm:left-6 z-40 p-3 sm:p-4 bg-purple-500 hover:bg-purple-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('gacha.button')}
       >
         <div className="flex items-center gap-2">
           <svg
-            className="w-6 h-6"
+            className="w-5 h-5 sm:w-6 sm:h-6"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -755,11 +755,11 @@ export default function Home() {
       {/* 浮動命中率計算器按鈕 */}
       <button
         onClick={() => setIsAccuracyCalcOpen(true)}
-        className="fixed bottom-24 left-6 z-40 p-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        className="fixed bottom-20 sm:bottom-24 left-4 sm:left-6 z-40 p-3 sm:p-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label="命中率計算器"
       >
         <div className="flex items-center gap-2">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="10" strokeWidth="2"/>
             <circle cx="12" cy="12" r="6" strokeWidth="2"/>
             <circle cx="12" cy="12" r="2" fill="currentColor"/>
@@ -771,7 +771,7 @@ export default function Home() {
       {/* 浮動 Bug 回報按鈕 */}
       <button
         onClick={modals.openBugReportModal}
-        className="fixed bottom-6 right-6 z-40 p-4 bg-gradient-to-r from-red-500 to-orange-600 hover:from-red-600 hover:to-orange-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 z-40 p-3 sm:p-4 bg-red-500 hover:bg-red-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('bug.report')}
       >
         <div className="flex items-center gap-2">
@@ -784,11 +784,11 @@ export default function Home() {
       {showBackToTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-24 right-6 z-40 p-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+          className="fixed bottom-20 sm:bottom-24 right-4 sm:right-6 z-40 p-3 sm:p-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
           aria-label={t('scroll.backToTop')}
         >
           <svg
-            className="w-6 h-6"
+            className="w-5 h-5 sm:w-6 sm:h-6"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
