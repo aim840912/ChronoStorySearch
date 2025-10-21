@@ -144,12 +144,12 @@ export function MonsterModal({
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
-        <div className="sticky top-0 z-10 bg-blue-500 dark:bg-blue-600 p-6 rounded-t-xl">
+        <div className="sticky top-0 z-10 bg-blue-500 dark:bg-blue-600 p-4 sm:p-6 rounded-t-xl">
           <div className="flex items-center justify-between">
             <div className="flex-1"></div>
             <div className="text-center">
-              <h2 className="text-2xl font-bold text-white mb-1">{displayMonsterName}</h2>
-              <p className="text-blue-100 text-sm">
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-1">{displayMonsterName}</h2>
+              <p className="text-blue-100 text-xs sm:text-sm">
                 {isDev && `${t('modal.monsterId')}: ${monsterId} · `}{t('modal.monsterDropCount').replace('{count}', String(monsterDrops.length))}
               </p>
             </div>
@@ -157,10 +157,10 @@ export function MonsterModal({
               {/* 語言切換按鈕 */}
               <button
                 onClick={toggleLanguage}
-                className="p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30"
+                className="p-2 sm:p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30"
                 aria-label={t('language.toggle')}
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -172,7 +172,7 @@ export function MonsterModal({
               {/* 最愛按鈕 */}
               <button
                 onClick={() => monsterId && onToggleFavorite(monsterId, monsterName)}
-                className={`p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 ${
+                className={`p-2 sm:p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 ${
                   isFavorite
                     ? 'bg-red-500 hover:bg-red-600 text-white'
                     : 'bg-white/20 hover:bg-white/30 text-white border border-white/30'
@@ -180,7 +180,7 @@ export function MonsterModal({
                 aria-label={isFavorite ? t('modal.favoriteRemove') : t('modal.favoriteAdd')}
               >
                 <svg
-                  className="w-6 h-6"
+                  className="w-5 h-5 sm:w-6 sm:h-6"
                   fill={isFavorite ? 'currentColor' : 'none'}
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -196,10 +196,10 @@ export function MonsterModal({
               {/* 分享按鈕 */}
               <button
                 onClick={handleShare}
-                className="p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30"
+                className="p-2 sm:p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30"
                 aria-label={t('modal.share')}
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -211,10 +211,10 @@ export function MonsterModal({
               {/* 關閉按鈕 */}
               <button
                 onClick={onClose}
-                className="text-white hover:bg-white/20 rounded-full p-2 transition-colors"
+                className="text-white hover:bg-white/20 rounded-full p-2 sm:p-2 transition-colors"
                 aria-label={t('modal.close')}
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -228,7 +228,7 @@ export function MonsterModal({
         </div>
 
         {/* Modal Content - 左右分欄佈局（手機版上下堆疊） */}
-        <div className="p-6 flex flex-col lg:flex-row gap-6">
+        <div className="p-4 sm:p-6 flex flex-col lg:flex-row gap-4 sm:gap-6">
           {/* 左側：怪物屬性（桌面版固定位置） */}
           <div className="lg:w-1/3 lg:sticky lg:top-32 lg:self-start">
             {/* 怪物圖示 */}
@@ -237,7 +237,7 @@ export function MonsterModal({
               <img
                 src={monsterIconUrl}
                 alt={displayMonsterName}
-                className="w-32 h-32 object-contain"
+                className="w-24 h-24 sm:w-32 sm:h-32 object-contain"
               />
             </div>
             <MonsterStatsCard mobInfo={mobInfo} />
@@ -245,10 +245,10 @@ export function MonsterModal({
 
           {/* 右側：掉落物品（可滾動） */}
           <div className="lg:w-2/3">
-            <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4">
               {t('monster.drops')}
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {monsterDrops.map((drop, index) => (
                 <DropItemCard
                   key={`${drop.itemId}-${index}`}
