@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
 import { getItemImageUrl } from '@/lib/image-utils'
@@ -107,7 +106,8 @@ export function ItemCard({
 
       {/* 物品資訊 */}
       <div className="flex items-center gap-3">
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src={itemIconUrl}
           alt={displayItemName}
           width={64}

@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getMonsterDisplayName } from '@/lib/display-name'
 import { getMonsterImageUrl } from '@/lib/image-utils'
@@ -75,7 +74,8 @@ export function MonsterCard({
 
       {/* 怪物資訊 */}
       <div className="flex items-center gap-3">
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src={monsterIconUrl}
           alt={displayMobName}
           width={64}
