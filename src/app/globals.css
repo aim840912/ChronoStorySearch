@@ -50,3 +50,9 @@ body {
 .animate-pulse-scale {
   animation: pulse-scale 2s ease-in-out infinite;
 }
+
+/* 觸摸滾動優化 - 防止滾動穿透 */
+.touch-scroll-safe {
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+}

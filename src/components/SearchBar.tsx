@@ -135,7 +135,7 @@ export function SearchBar({
           onKeyDown={onKeyDown}
           placeholder={t('search.placeholder')}
           className={`w-full pl-12 py-3 text-gray-900 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400 dark:placeholder-gray-500 transition-all ${
-            searchTerm ? 'pr-20' : 'pr-12'
+            searchTerm ? 'pr-12 sm:pr-20' : 'pr-12'
           }`}
         />
 
@@ -143,7 +143,7 @@ export function SearchBar({
         {searchTerm && onShare && (
           <button
             onClick={onShare}
-            className="absolute inset-y-0 right-12 flex items-center pr-3 text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            className="absolute inset-y-0 right-12 hidden sm:flex items-center pr-3 text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             aria-label={t('share.button')}
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

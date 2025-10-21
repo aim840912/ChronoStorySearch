@@ -70,8 +70,8 @@ export function AdvancedFilterPanel({
     <div className="max-w-7xl mx-auto mb-4">
       {/* 篩選面板 */}
       <div
-        className={`overflow-y-auto transition-all duration-300 ease-in-out ${
-          isExpanded ? 'max-h-[800px] opacity-100 mt-4' : 'max-h-0 opacity-0'
+        className={`overflow-y-auto overscroll-contain touch-scroll-safe transition-all duration-300 ease-in-out ${
+          isExpanded ? 'max-h-[60vh] min-h-[400px] sm:max-h-[800px] opacity-100 mt-4' : 'max-h-0 opacity-0'
         }`}
       >
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
@@ -201,7 +201,7 @@ export function AdvancedFilterPanel({
           </div>
 
           {/* 職業篩選 + 等級範圍篩選 - 同一行 */}
-          <div className="mb-6 flex flex-col md:flex-row gap-6">
+          <div className="mb-0 flex flex-col md:flex-row gap-6">
             {/* 職業篩選 */}
             <div className="flex-1">
               <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
