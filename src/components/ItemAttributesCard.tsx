@@ -1,7 +1,9 @@
 'use client'
 
+import { useMemo } from 'react'
 import type { ItemAttributes } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { calculateMaxStatCombinations, formatStatName } from '@/lib/equipment-stats-utils'
 
 interface ItemAttributesCardProps {
   attributes: ItemAttributes | null
@@ -13,6 +15,11 @@ interface ItemAttributesCardProps {
  */
 export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
   const { t } = useLanguage()
+
+  // 計算最大屬性組合（必須在最頂層調用，符合 React Hooks 規則）
+  const maxStatCombinations = useMemo(() => {
+    return calculateMaxStatCombinations(attributes)
+  }, [attributes])
 
   // 處理 Scroll (卷軸) 類型物品
   if (attributes && attributes.sub_type === 'Scroll' && attributes.scroll) {
@@ -403,6 +410,64 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
                 </div>
               )
             })}
+          </div>
+        </div>
+      )}
+
+      {/* 最大屬性組合 */}
+      {maxStatCombinations && maxStatCombinations.length > 0 && (
+        <div className="mt-4">
+          <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+            {t('item.maxStatCombinations')}
+          </h4>
+          <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-800">
+            <div className="space-y-2">
+              {maxStatCombinations.map((combination, index) => {
+                const { maxedStat, maxedValue, otherStats } = combination
+
+                return (
+                  <div
+                    key={index}
+                    className="bg-white dark:bg-gray-800 rounded-lg p-3 shadow-sm"
+                  >
+                    <div className="flex flex-col gap-2">
+                      {/* 主要描述：當 X 達到最大值時 */}
+                      <div className="flex items-center gap-2 text-sm">
+                        <span className="text-gray-600 dark:text-gray-400">
+                          {t('item.when')}
+                        </span>
+                        <span className="font-bold text-blue-600 dark:text-blue-400">
+                          {formatStatName(maxedStat)}
+                        </span>
+                        <span className="text-gray-600 dark:text-gray-400">
+                          {t('item.reaches')}
+                        </span>
+                        <span className="font-bold text-blue-600 dark:text-blue-400">
+                          +{maxedValue}
+                        </span>
+                      </div>
+
+                      {/* 每個其他屬性獨立顯示 */}
+                      <div className="pl-6 space-y-1 border-l-2 border-gray-300 dark:border-gray-600">
+                        {otherStats.map(({ stat, maxPossible }) => (
+                          <div key={stat} className="flex items-center gap-2 text-sm">
+                            <span className="font-semibold text-gray-700 dark:text-gray-300">
+                              {formatStatName(stat)}
+                            </span>
+                            <span className="text-gray-600 dark:text-gray-400">
+                              {t('item.maxValue')}
+                            </span>
+                            <span className="font-bold text-green-600 dark:text-green-400">
+                              +{maxPossible}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
           </div>
         </div>
       )}
