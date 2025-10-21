@@ -86,7 +86,7 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
                     {t(`item.${key}`)}:
                   </span>
                   <span className="text-lg font-bold text-blue-600 dark:text-blue-400">
-                    +{value}
+                    {value}
                   </span>
                 </div>
               ))}
@@ -154,7 +154,7 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
                         ? 'text-2xl text-blue-600 dark:text-blue-400'
                         : 'text-lg text-green-600 dark:text-green-400'
                     }`}>
-                      +{value}
+                      {value}
                     </span>
                   </div>
                 )
@@ -390,19 +390,19 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
                       {/* 最低值 */}
                       {hasVariation && minValue !== null && (
                         <span className="text-sm text-red-500 dark:text-red-400 min-w-[40px] text-right">
-                          {key === 'upgrades' ? minValue : `+${minValue}`}
+                          {minValue}
                         </span>
                       )}
 
                       {/* 預設值 */}
                       <div className="text-lg font-bold text-gray-900 dark:text-gray-100 min-w-[60px] text-center">
-                        {key === 'upgrades' ? value : `+${value}`}
+                        {value}
                       </div>
 
                       {/* 最高值 */}
                       {hasVariation && maxValue !== null && (
                         <span className="text-sm text-green-500 dark:text-green-400 min-w-[40px] text-left">
-                          {key === 'upgrades' ? maxValue : `+${maxValue}`}
+                          {maxValue}
                         </span>
                       )}
                     </div>
