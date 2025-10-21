@@ -755,7 +755,7 @@ export default function Home() {
       {/* 浮動命中率計算器按鈕 */}
       <button
         onClick={() => setIsAccuracyCalcOpen(true)}
-        className="fixed bottom-24 left-6 z-40 p-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        className="fixed bottom-24 left-6 z-40 p-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label="命中率計算器"
       >
         <div className="flex items-center gap-2">

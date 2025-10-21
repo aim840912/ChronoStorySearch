@@ -244,7 +244,7 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
-        <div className="bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-600 dark:to-purple-700 p-6 rounded-t-xl sticky top-0 z-10">
+        <div className="bg-blue-500 dark:bg-blue-600 p-6 rounded-t-xl sticky top-0 z-10">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -528,7 +528,7 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
             disabled={!selectedMobId}
             className={`w-full py-3 text-white font-bold rounded-lg shadow-lg transition-all mb-6 flex items-center justify-center gap-2 ${
               selectedMobId
-                ? 'bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 cursor-pointer'
+                ? 'bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 cursor-pointer'
                 : 'bg-gray-400 dark:bg-gray-600 cursor-not-allowed opacity-60'
             }`}
           >
@@ -541,7 +541,7 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
 
           {/* 結果顯示 */}
           {result && (
-            <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-800 p-6 rounded-xl border-2 border-gray-200 dark:border-gray-600">
+            <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl border-2 border-gray-200 dark:border-gray-600">
               <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -567,7 +567,7 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
                 {/* 命中/Miss 百分比對比顯示 */}
                 <div className="grid grid-cols-2 gap-3">
                   {/* 命中率 */}
-                  <div className="p-4 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/20 rounded-lg border-2 border-green-300 dark:border-green-700">
+                  <div className="p-4 bg-green-50 dark:bg-green-900/30 rounded-lg border-2 border-green-300 dark:border-green-700">
                     <div className="flex items-center gap-2 mb-1">
                       <svg className="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -580,7 +580,7 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
                   </div>
 
                   {/* Miss 率 */}
-                  <div className="p-4 bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/30 dark:to-red-800/20 rounded-lg border-2 border-red-300 dark:border-red-700">
+                  <div className="p-4 bg-red-50 dark:bg-red-900/30 rounded-lg border-2 border-red-300 dark:border-red-700">
                     <div className="flex items-center gap-2 mb-1">
                       <svg className="w-6 h-6 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

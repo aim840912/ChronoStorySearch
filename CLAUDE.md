@@ -286,6 +286,64 @@ async function handleGET(
 
 - **錯誤自動記錄**: 使用 `withErrorHandler` 中間件時，錯誤會自動記錄到適當級別
 
+### UI/UX 設計規範
+
+**視覺設計原則**：
+
+- **禁止使用漸層** - 不使用 `bg-gradient-*` 類別
+  - ❌ `bg-gradient-to-r from-blue-500 to-purple-600`
+  - ✅ `bg-blue-500`
+  - 理由：保持視覺簡潔、提升效能、易於維護
+
+- **禁止使用 Emoji** - 不在 UI 中使用 emoji 字符
+  - ❌ `🎯` `✅` `❌` `📊` `🔍` `⚔️` `✨`
+  - ✅ 使用 SVG 圖示替代
+  - 理由：emoji 在不同平台顯示不一致、無法精確控制樣式、影響無障礙體驗
+
+- **使用 SVG 圖示** - 所有圖示使用 SVG
+  - 使用 inline SVG 或圖示庫（如 Heroicons）
+  - 確保 SVG 支援深色模式（使用 `currentColor`）
+  - 提供適當的 `aria-label` 以支援無障礙
+  - SVG 應具有適當的尺寸類別（如 `w-6 h-6`）
+
+**範例**：
+
+```tsx
+// ❌ 錯誤：使用 emoji 和漸層
+<div className="bg-gradient-to-r from-blue-500 to-purple-600">
+  🎯 命中率計算器
+</div>
+
+// ✅ 正確：使用 SVG 和純色
+<div className="bg-blue-500 flex items-center gap-2">
+  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" strokeWidth="2"/>
+    <circle cx="12" cy="12" r="6" strokeWidth="2"/>
+    <circle cx="12" cy="12" r="2" fill="currentColor"/>
+  </svg>
+  <span className="text-white">命中率計算器</span>
+</div>
+```
+
+```tsx
+// ❌ 錯誤：使用 emoji 表示狀態
+<div>{isSuccess ? '✅' : '❌'} 操作結果</div>
+
+// ✅ 正確：使用 SVG 圖示
+<div className="flex items-center gap-2">
+  {isSuccess ? (
+    <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+    </svg>
+  ) : (
+    <svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  )}
+  <span>操作結果</span>
+</div>
+```
+
 ### 依賴管理
 
 **新增依賴前必須執行**:
