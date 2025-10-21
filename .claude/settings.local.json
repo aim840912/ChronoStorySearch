@@ -40,7 +40,6 @@
       "Bash(kill:*)",
       "mcp__playwright__browser_press_key",
       "Read(//home/**)",
-      "Bash(git push:*)",
       "Bash(npm ls:*)",
       "mcp__playwright__browser_select_option",
       "mcp__playwright__browser_type",
@@ -118,10 +117,14 @@
       "Bash(do echo \"=== $f ===\")",
       "Bash(paste - -)",
       "Bash(~/rclone ls r2:maplestory-images/images/items)",
-      "Bash(~/rclone delete r2:maplestory-images/images/items --include \"*Zone.Identifier\" --verbose)"
+      "Bash(~/rclone delete r2:maplestory-images/images/items --include \"*Zone.Identifier\" --verbose)",
+      "Bash(ps:*)",
+      "WebFetch(domain:mrsoupman.github.io)"
     ],
     "deny": [],
-    "ask": []
+    "ask": [
+      "Bash(git push:*)"
+    ]
   },
   "outputStyle": "Explanatory"
 }
