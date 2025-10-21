@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { getMonsterImageUrl, getItemImageUrl } from '@/lib/image-utils'
 import type { RefObject, KeyboardEvent } from 'react'
 import type { SuggestionItem, SearchTypeFilter } from '@/types'
 
@@ -191,12 +192,12 @@ export function SearchBar({
                 }`}
               >
                 <div className="flex items-center gap-3 flex-1">
-                  {/* 怪物圖示 - 使用實際圖片 */}
+                  {/* 怪物圖示 - 使用 R2 CDN 圖片 */}
                   {suggestion.type === 'monster' ? (
                     suggestion.id !== undefined && !hasImageFailed('monster', suggestion.id) ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
-                        src={`/images/monsters/${suggestion.id}.png`}
+                        src={getMonsterImageUrl(suggestion.id)}
                         alt={suggestion.name}
                         className="w-8 h-8 object-contain flex-shrink-0"
                         onError={() => handleImageError('monster', suggestion.id!)}
@@ -207,11 +208,11 @@ export function SearchBar({
                       </svg>
                     )
                   ) : suggestion.type === 'item' ? (
-                    /* 物品圖示 - 使用實際圖片 */
+                    /* 物品圖示 - 使用 R2 CDN 圖片 */
                     suggestion.id !== undefined && !hasImageFailed('item', suggestion.id) ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
-                        src={`/images/items/${suggestion.id}.png`}
+                        src={getItemImageUrl(suggestion.id)}
                         alt={suggestion.name}
                         className="w-8 h-8 object-contain flex-shrink-0"
                         onError={() => handleImageError('item', suggestion.id!)}
