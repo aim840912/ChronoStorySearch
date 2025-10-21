@@ -296,23 +296,22 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
         {/* Modal Header */}
         <div className="sticky top-0 z-10 bg-purple-500 dark:bg-purple-600 p-6 rounded-t-xl flex-shrink-0">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div>
-                <h2 className="text-2xl font-bold text-white">
-                  {selectedMachine
-                    ? (language === 'zh-TW' && selectedMachine.chineseMachineName
-                        ? selectedMachine.chineseMachineName
-                        : selectedMachine.machineName)
-                    : t('gacha.title')}
-                </h2>
-                <p className="text-purple-100 text-sm mt-1">
-                  {selectedMachine
-                    ? `${t('gacha.total')} ${selectedMachine.totalItems} ${t('gacha.itemCount')}`
-                    : `${t('gacha.total')} ${machines.length} ${t('gacha.machineCount')}`}
-                </p>
-              </div>
+            <div className="flex-1"></div>
+            <div className="text-center">
+              <h2 className="text-2xl font-bold text-white">
+                {selectedMachine
+                  ? (language === 'zh-TW' && selectedMachine.chineseMachineName
+                      ? selectedMachine.chineseMachineName
+                      : selectedMachine.machineName)
+                  : t('gacha.title')}
+              </h2>
+              <p className="text-purple-100 text-sm mt-1">
+                {selectedMachine
+                  ? `${t('gacha.total')} ${selectedMachine.totalItems} ${t('gacha.itemCount')}`
+                  : `${t('gacha.total')} ${machines.length} ${t('gacha.machineCount')}`}
+              </p>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex-1 flex items-center gap-2 justify-end">
               {/* 模式切換按鈕（只在選中轉蛋機時顯示） */}
               {selectedMachine && (
                 <button

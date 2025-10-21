@@ -215,21 +215,14 @@ export function ItemModal({
         {/* Modal Header */}
         <div className="sticky top-0 z-10 bg-green-500 dark:bg-green-600 p-6 rounded-t-xl">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={itemIconUrl}
-                alt={displayItemName}
-                className="w-16 h-16 object-contain"
-              />
-              <div>
-                <h2 className="text-2xl font-bold text-white mb-1">{displayItemName}</h2>
-                <p className="text-green-100 text-sm">
-                  {isDev && `${t('modal.itemId')}: ${itemId} · `}{t('modal.itemDropCount').replace('{count}', String(itemDrops.length))}
-                </p>
-              </div>
+            <div className="flex-1"></div>
+            <div className="text-center">
+              <h2 className="text-2xl font-bold text-white mb-1">{displayItemName}</h2>
+              <p className="text-green-100 text-sm">
+                {isDev && `${t('modal.itemId')}: ${itemId} · `}{t('modal.itemDropCount').replace('{count}', String(itemDrops.length))}
+              </p>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex-1 flex items-center gap-2 justify-end">
               {/* 語言切換按鈕 */}
               <button
                 onClick={toggleLanguage}
@@ -307,6 +300,15 @@ export function ItemModal({
         <div className="p-6 flex flex-col lg:flex-row gap-6">
           {/* 左側：物品屬性（桌面版固定位置） */}
           <div className="lg:w-1/3 lg:sticky lg:top-32 lg:self-start">
+            {/* 物品圖示 */}
+            <div className="flex justify-center mb-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={itemIconUrl}
+                alt={displayItemName}
+                className="w-32 h-32 object-contain"
+              />
+            </div>
             <ItemAttributesCard attributes={itemAttributes} />
           </div>
 
