@@ -24,6 +24,7 @@ import { ItemModal } from '@/components/ItemModal'
 import { BugReportModal } from '@/components/BugReportModal'
 import { ClearConfirmModal } from '@/components/ClearConfirmModal'
 import { GachaMachineModal } from '@/components/GachaMachineModal'
+import { AccuracyCalculatorModal } from '@/components/AccuracyCalculatorModal'
 import { LanguageToggle } from '@/components/LanguageToggle'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Toast } from '@/components/Toast'
@@ -50,6 +51,9 @@ export default function Home() {
 
   // 追蹤是否顯示「返回頂部」按鈕
   const [showBackToTop, setShowBackToTop] = useState(false)
+
+  // 命中率計算器 Modal 狀態
+  const [isAccuracyCalcOpen, setIsAccuracyCalcOpen] = useState(false)
 
   // 計算已啟用的進階篩選數量
   const advancedFilterCount = [
@@ -717,6 +721,12 @@ export default function Home() {
         }}
       />
 
+      {/* Accuracy Calculator Modal */}
+      <AccuracyCalculatorModal
+        isOpen={isAccuracyCalcOpen}
+        onClose={() => setIsAccuracyCalcOpen(false)}
+      />
+
       {/* 浮動轉蛋機按鈕 */}
       <button
         onClick={() => modals.openGachaModal()}
@@ -739,6 +749,22 @@ export default function Home() {
             />
           </svg>
           <span className="text-sm font-medium hidden group-hover:inline-block">{t('gacha.button')}</span>
+        </div>
+      </button>
+
+      {/* 浮動命中率計算器按鈕 */}
+      <button
+        onClick={() => setIsAccuracyCalcOpen(true)}
+        className="fixed bottom-24 left-6 z-40 p-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        aria-label="命中率計算器"
+      >
+        <div className="flex items-center gap-2">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" strokeWidth="2"/>
+            <circle cx="12" cy="12" r="6" strokeWidth="2"/>
+            <circle cx="12" cy="12" r="2" fill="currentColor"/>
+          </svg>
+          <span className="text-sm font-medium hidden group-hover:inline-block">命中率</span>
         </div>
       </button>
 
