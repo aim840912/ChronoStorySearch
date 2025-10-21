@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 /**
  * 從 monster-stats.json 填補 mob-info.json 中為 null 的屬性欄位
  *

@@ -27,25 +27,41 @@ export interface AccuracyResult {
 }
 
 /**
- * 計算物理命中
- * 公式：需求命中 = (怪物等級 - 玩家等級) / 7.5 + 3.67 × 怪物迴避
+ * 計算物理命中（基於 mrsoupman 的公式）
+ * 公式：
+ * - diff = max(0, 怪物等級 - 玩家等級)
+ * - acc100 = (55.2 + 2.15 × diff) × (怪物迴避 / 15.0)
+ * - acc1 = acc100 × 0.5 + 1
+ * - 命中率 = 漸進式（0%-100%）
  */
 export function calculatePhysicalAccuracy(input: PhysicalAccuracyInput): AccuracyResult {
   const { playerLevel, monsterLevel, monsterAvoid, playerAccuracy } = input
 
-  // 計算需求命中
-  const levelDiff = monsterLevel - playerLevel
-  const requiredAccuracy = (levelDiff / 7.5 + 3.67) * monsterAvoid
+  // 計算等級差（不允許為負）
+  const diff = Math.max(0, monsterLevel - playerLevel)
 
-  // 判斷是否命中
-  const willMiss = playerAccuracy < requiredAccuracy
-  const hitRate = willMiss ? 0 : 100 // 物理命中是二元的（要麼100%要麼0%）
+  // 計算 100% 命中所需命中值
+  const acc100 = (55.2 + 2.15 * diff) * (monsterAvoid / 15.0)
+
+  // 計算 1% 命中所需命中值
+  const acc1 = acc100 * 0.5 + 1
+
+  // 計算命中率（漸進式）
+  let hitRate: number
+  if (playerAccuracy >= acc100) {
+    hitRate = 100
+  } else if (playerAccuracy <= acc1) {
+    hitRate = 0
+  } else {
+    const accRatio = ((playerAccuracy - acc100 * 0.5) / (acc100 * 0.5)) * 100
+    hitRate = Math.max(0, Math.min(100, accRatio))
+  }
 
   return {
-    requiredAccuracy: Math.ceil(requiredAccuracy),
+    requiredAccuracy: Math.ceil(acc100),
     actualAccuracy: playerAccuracy,
-    hitRate,
-    willMiss,
+    hitRate: Math.round(hitRate * 100) / 100,
+    willMiss: hitRate < 100,
   }
 }
 

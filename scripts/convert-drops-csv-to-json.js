@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 const fs = require('fs')
 const path = require('path')
 
@@ -46,17 +45,17 @@ for (let i = 1; i < records.length; i++) {
       dropperID,        // 1: DropperID
       mobName,          // 2: MobName
       enable,           // 3: Enable
-      questID,          // 4: QuestID
+      _questID,         // 4: QuestID
       itemID,           // 5: ItemID
       serverItemName,   // 6: ServerItemName
       chance,           // 7: Chance
-      percentChance,    // 8: Percent Chance
+      _percentChance,   // 8: Percent Chance
       minQTY,           // 9: MinQTY
       maxQTY,           // 10: MaxQTY
-      applicableJobs,   // 11: ApplicableJobs
-      requiredLevel,    // 12: RequiredLevel
-      requiredStats,    // 13: RequiredStats
-      equipStats        // 14: EquipStatsWithRange
+      _applicableJobs,  // 11: ApplicableJobs
+      _requiredLevel,   // 12: RequiredLevel
+      _requiredStats,   // 13: RequiredStats
+      _equipStats       // 14: EquipStatsWithRange
     ] = values
 
     // 過濾：只保留 InGame=TRUE 且 Enable=TRUE 的記錄

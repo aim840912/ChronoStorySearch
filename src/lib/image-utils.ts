@@ -5,22 +5,22 @@
  */
 
 import imageManifest from '@/../data/available-images.json'
+import { clientLogger } from './logger'
 
 // Cloudflare R2 Public URL（從環境變數讀取）
 const R2_PUBLIC_URL = process.env.NEXT_PUBLIC_R2_PUBLIC_URL
 
 // 檢查 R2 URL 是否已設置
 if (!R2_PUBLIC_URL) {
-  const errorMsg = '❌ 環境變數 NEXT_PUBLIC_R2_PUBLIC_URL 未設置！圖片將無法載入。'
+  const errorMsg = '環境變數 NEXT_PUBLIC_R2_PUBLIC_URL 未設置！圖片將無法載入'
 
   if (process.env.NODE_ENV === 'production') {
     // 生產環境：拋出錯誤
     throw new Error(errorMsg)
   } else {
-    // 開發環境：顯示警告
-    console.warn('⚠️ ' + errorMsg)
-    console.warn('請在 .env.local 中設置：')
-    console.warn('NEXT_PUBLIC_R2_PUBLIC_URL=https://pub-a1c4c32d4c65452098ab977db77e349e.r2.dev')
+    // 開發環境：使用 logger 記錄警告
+    clientLogger.warn(errorMsg)
+    clientLogger.warn('請在 .env.local 中設置：NEXT_PUBLIC_R2_PUBLIC_URL=https://pub-a1c4c32d4c65452098ab977db77e349e.r2.dev')
   }
 }
 
@@ -62,7 +62,7 @@ export function getItemImageUrl(
 
   // 強制使用 R2 CDN（不再 fallback 到本地路徑）
   if (!R2_PUBLIC_URL) {
-    console.error(`無法載入物品圖片 ${itemId}：R2_PUBLIC_URL 未設置`)
+    clientLogger.error(`無法載入物品圖片 ${itemId}：R2_PUBLIC_URL 未設置`)
     return fallback
   }
 
@@ -85,7 +85,7 @@ export function getMonsterImageUrl(
 
   // 強制使用 R2 CDN（不再 fallback 到本地路徑）
   if (!R2_PUBLIC_URL) {
-    console.error(`無法載入怪物圖片 ${mobId}：R2_PUBLIC_URL 未設置`)
+    clientLogger.error(`無法載入怪物圖片 ${mobId}：R2_PUBLIC_URL 未設置`)
     return fallback
   }
 

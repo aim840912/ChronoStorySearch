@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 /**
  * 從 ChronoStory API 獲取物品屬性資料
  * 輸出到 data/item-attributes.json
@@ -99,7 +98,7 @@ function loadExistingData() {
       const data = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf8'))
       console.log(`📂 找到現有資料：${data.length} 個物品`)
       return data
-    } catch (error) {
+    } catch (_error) {
       console.warn('⚠️  現有資料檔案損壞，將重新開始')
       return []
     }

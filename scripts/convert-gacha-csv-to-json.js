@@ -93,7 +93,7 @@ function parseCSV(csvFilePath) {
     // 檢查是簡化格式（5 欄位）還是完整格式（9 欄位）
     if (columns.length === 5) {
       // 簡化格式：InGame, Chance, ItemID, ServerItemName, Percent
-      const [inGame, chance, itemId, serverItemName, percent] = columns
+      const [inGame, chance, itemId, _serverItemName, percent] = columns
 
       items.push({
         itemId: parseInt(itemId, 10),
@@ -110,7 +110,7 @@ function parseCSV(csvFilePath) {
       })
     } else if (columns.length >= 9) {
       // 完整格式：InGame, Chance, ItemID, ServerItemName, Percent, ApplicableJobs, RequiredLevel, RequiredStats, EquipStatsWithRange
-      const [inGame, chance, itemId, serverItemName, percent, applicableJobs, requiredLevel, requiredStats, equipStatsText] = columns
+      const [inGame, chance, itemId, _serverItemName, percent, applicableJobs, requiredLevel, requiredStats, equipStatsText] = columns
 
       // 解析裝備屬性
       const { equipStats, scrollSlots } = parseEquipStats(equipStatsText)

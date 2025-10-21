@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 /**
  * 從 ChronoStory API 獲取怪物詳細資訊
  * 輸出到 data/mob-info.json
@@ -97,7 +96,7 @@ function loadExistingData() {
       const data = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf8'))
       console.log(`📂 找到現有資料：${data.length} 個怪物`)
       return data
-    } catch (error) {
+    } catch (_error) {
       console.warn('⚠️  現有資料檔案損壞，將重新開始')
       return []
     }

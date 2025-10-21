@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 /**
  * 將 monster-stats.json 中存在但 mob-info.json 缺少的怪物加入
  *

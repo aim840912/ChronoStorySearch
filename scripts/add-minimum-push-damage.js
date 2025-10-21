@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 /**
  * 將 minimumPushDamage 欄位從 monster-stats.json 合併到 mob-info.json
  *
