@@ -7,6 +7,10 @@ import {
   type AccuracyResult,
 } from '@/lib/accuracy-calculator'
 import { useLazyMobInfo } from '@/hooks/useLazyData'
+import {
+  getAccuracyCalculatorState,
+  setAccuracyCalculatorState,
+} from '@/lib/storage'
 
 interface AccuracyCalculatorModalProps {
   isOpen: boolean
@@ -176,6 +180,39 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
       loadMobInfo()
     }
   }, [isOpen, loadMobInfo])
+
+  // 當 Modal 開啟時，從 localStorage 載入上次保存的狀態
+  useEffect(() => {
+    if (isOpen) {
+      const savedState = getAccuracyCalculatorState()
+      if (savedState) {
+        setMode(savedState.mode)
+        setPlayerLevel(savedState.playerLevel)
+        setPlayerAccuracy(savedState.playerAccuracy)
+        setPlayerInt(savedState.playerInt)
+        setPlayerLuk(savedState.playerLuk)
+        setBonusAccuracy(savedState.bonusAccuracy)
+        if (savedState.selectedMobId !== null) {
+          setSelectedMobId(savedState.selectedMobId)
+        }
+      }
+    }
+  }, [isOpen])
+
+  // 當狀態變化時，自動保存到 localStorage
+  useEffect(() => {
+    if (isOpen) {
+      setAccuracyCalculatorState({
+        mode,
+        playerLevel,
+        playerAccuracy,
+        playerInt,
+        playerLuk,
+        bonusAccuracy,
+        selectedMobId,
+      })
+    }
+  }, [mode, playerLevel, playerAccuracy, playerInt, playerLuk, bonusAccuracy, selectedMobId, isOpen])
 
   // 點擊外部關閉下拉選單
   useEffect(() => {
@@ -454,6 +491,7 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
                     type="number"
                     value={playerLevel}
                     onChange={(e) => setPlayerLevel(Number(e.target.value))}
+                    onFocus={(e) => e.target.select()}
                     className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
@@ -465,6 +503,7 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
                     type="number"
                     value={playerAccuracy}
                     onChange={(e) => setPlayerAccuracy(Number(e.target.value))}
+                    onFocus={(e) => e.target.select()}
                     className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
@@ -482,6 +521,7 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
                     type="number"
                     value={playerLevel}
                     onChange={(e) => setPlayerLevel(Number(e.target.value))}
+                    onFocus={(e) => e.target.select()}
                     className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500"
                   />
                 </div>
@@ -493,6 +533,7 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
                     type="number"
                     value={bonusAccuracy}
                     onChange={(e) => setBonusAccuracy(Number(e.target.value))}
+                    onFocus={(e) => e.target.select()}
                     className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500"
                   />
                 </div>
@@ -504,6 +545,7 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
                     type="number"
                     value={playerInt}
                     onChange={(e) => setPlayerInt(Number(e.target.value))}
+                    onFocus={(e) => e.target.select()}
                     className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500"
                   />
                 </div>
@@ -515,6 +557,7 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
                     type="number"
                     value={playerLuk}
                     onChange={(e) => setPlayerLuk(Number(e.target.value))}
+                    onFocus={(e) => e.target.select()}
                     className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500"
                   />
                 </div>

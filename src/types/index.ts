@@ -149,6 +149,17 @@ export type Translations = Record<string, string>
 // 主題相關類型
 export type Theme = 'light' | 'dark' | 'system'
 
+// 命中率計算器狀態
+export interface AccuracyCalculatorState {
+  mode: 'physical' | 'magic'
+  playerLevel: number
+  playerAccuracy: number
+  playerInt: number
+  playerLuk: number
+  bonusAccuracy: number
+  selectedMobId: number | null
+}
+
 // 怪物屬性資料類型（來自 mob-info.json）
 export interface MonsterStats {
   mob_id: string

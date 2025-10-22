@@ -94,7 +94,7 @@ export function calculateMagicAccuracy(input: MagicAccuracyInput): AccuracyResul
     hitRate = 100
   } else {
     const x = mageAccuracy / requiredAccuracy
-    hitRate = -2.5795 * x * x + 5.2343 * x - 1.6749
+    hitRate = (-2.5795 * x * x + 5.2343 * x - 1.6749) * 100
     hitRate = Math.max(0, Math.min(100, hitRate)) // 限制在 0-100 之間
   }
 
