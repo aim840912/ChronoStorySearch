@@ -51,6 +51,13 @@ interface ModalState {
 }
 
 /**
+ * Modal 導航歷史狀態
+ */
+interface ModalHistoryState {
+  previous: ModalState | null
+}
+
+/**
  * Modal 管理 Hook
  *
  * 職責：
@@ -66,6 +73,7 @@ interface ModalState {
 export function useModalManager() {
   const router = useRouter()
   const [modal, setModal] = useState<ModalState>({ type: null, data: null })
+  const [history, setHistory] = useState<ModalHistoryState>({ previous: null })
 
   // 通用的關閉處理（清理 URL 參數）
   const closeWithRouter = useCallback(() => {
@@ -73,44 +81,65 @@ export function useModalManager() {
   }, [router])
 
   // 開啟 Monster Modal
-  const openMonsterModal = useCallback((mobId: number, mobName: string) => {
-    setModal({
-      type: 'monster',
-      data: { mobId, mobName }
+  const openMonsterModal = useCallback((mobId: number, mobName: string, saveHistory = false) => {
+    setModal(currentModal => {
+      // 如果需要保存歷史，且當前有開啟的 Modal，則保存
+      if (saveHistory && currentModal.type !== null) {
+        setHistory({ previous: currentModal })
+      }
+      return {
+        type: 'monster',
+        data: { mobId, mobName }
+      }
     })
   }, [])
 
   // 關閉 Monster Modal
   const closeMonsterModal = useCallback(() => {
     setModal({ type: null, data: null })
+    setHistory({ previous: null })
     closeWithRouter()
   }, [closeWithRouter])
 
   // 開啟 Item Modal
-  const openItemModal = useCallback((itemId: number, itemName: string) => {
-    setModal({
-      type: 'item',
-      data: { itemId, itemName }
+  const openItemModal = useCallback((itemId: number, itemName: string, saveHistory = false) => {
+    setModal(currentModal => {
+      // 如果需要保存歷史，且當前有開啟的 Modal，則保存
+      if (saveHistory && currentModal.type !== null) {
+        setHistory({ previous: currentModal })
+      }
+      return {
+        type: 'item',
+        data: { itemId, itemName }
+      }
     })
   }, [])
 
   // 關閉 Item Modal
   const closeItemModal = useCallback(() => {
     setModal({ type: null, data: null })
+    setHistory({ previous: null })
     closeWithRouter()
   }, [closeWithRouter])
 
   // 開啟 Gacha Modal
-  const openGachaModal = useCallback((machineId?: number) => {
-    setModal({
-      type: 'gacha',
-      data: machineId !== undefined ? { machineId } : null
+  const openGachaModal = useCallback((machineId?: number, saveHistory = false) => {
+    setModal(currentModal => {
+      // 如果需要保存歷史，且當前有開啟的 Modal，則保存
+      if (saveHistory && currentModal.type !== null) {
+        setHistory({ previous: currentModal })
+      }
+      return {
+        type: 'gacha',
+        data: machineId !== undefined ? { machineId } : null
+      }
     })
   }, [])
 
   // 關閉 Gacha Modal
   const closeGachaModal = useCallback(() => {
     setModal({ type: null, data: null })
+    setHistory({ previous: null })
     // 延遲清除 URL，確保 React 狀態更新完成後再執行
     setTimeout(() => {
       closeWithRouter()
@@ -125,6 +154,7 @@ export function useModalManager() {
   // 關閉 Bug Report Modal
   const closeBugReportModal = useCallback(() => {
     setModal({ type: null, data: null })
+    setHistory({ previous: null })
   }, [])
 
   // 開啟 Clear Confirm Modal
@@ -138,6 +168,7 @@ export function useModalManager() {
   // 關閉 Clear Confirm Modal
   const closeClearModal = useCallback(() => {
     setModal({ type: null, data: null })
+    setHistory({ previous: null })
   }, [])
 
   // 用於 URL 參數處理的 setters（向後相容）
@@ -193,6 +224,14 @@ export function useModalManager() {
     }
   }, [closeItemModal])
 
+  // 返回上一個 Modal
+  const goBack = useCallback(() => {
+    if (history.previous !== null) {
+      setModal(history.previous)
+      setHistory({ previous: null })
+    }
+  }, [history])
+
   // 提取當前 Modal 資料（帶型別安全）
   const monsterData = modal.type === 'monster' ? (modal.data as MonsterModalData) : null
   const itemData = modal.type === 'item' ? (modal.data as ItemModalData) : null
@@ -203,6 +242,10 @@ export function useModalManager() {
     // 核心 API（新的簡化介面）
     activeModal: modal.type,
     isOpen: (type: ModalType) => modal.type === type,
+
+    // 導航歷史
+    hasPreviousModal: history.previous !== null,
+    goBack,
 
     // Monster Modal
     isMonsterModalOpen: modal.type === 'monster',

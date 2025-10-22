@@ -256,7 +256,7 @@ function processMultipleSheets(gids) {
   for (const tempFile of tempFiles) {
     try {
       fs.unlinkSync(tempFile);
-    } catch (error) {
+    } catch (_error) {
       // 忽略清理錯誤
     }
   }

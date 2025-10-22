@@ -46,7 +46,7 @@ function createMobInfoFromStats(monsterData) {
     expBar: {
       minExpHpRatio: null,
       maxExpHpRatio: null,
-      mobExpHpRatio: null,
+      expEfficiency: null,
     },
     chineseMobName: monsterData.chineseMobName,
   }

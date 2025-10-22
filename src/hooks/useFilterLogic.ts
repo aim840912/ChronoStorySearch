@@ -233,6 +233,19 @@ export function useFilterLogic({
       )
     }
 
+    // 按等級排序（由低到高，null 值在最後）
+    monsters.sort((a, b) => {
+      const levelA = mobLevelMap.get(a.mobId) ?? null
+      const levelB = mobLevelMap.get(b.mobId) ?? null
+
+      // null 值排在最後
+      if (levelA === null && levelB === null) return 0
+      if (levelA === null) return 1
+      if (levelB === null) return -1
+
+      return levelA - levelB
+    })
+
     return monsters
   }, [filterMode, filteredDrops, searchType, advancedFilter, mobLevelMap])
 
@@ -402,8 +415,24 @@ export function useFilterLogic({
       )
     }
 
+    // 按需求等級排序（由低到高，null 值在最後）
+    items.sort((a, b) => {
+      const attrA = extendedAttributesMap.get(a.itemId)
+      const attrB = extendedAttributesMap.get(b.itemId)
+
+      const levelA = attrA?.equipment?.requirements?.req_level ?? null
+      const levelB = attrB?.equipment?.requirements?.req_level ?? null
+
+      // null 值排在最後
+      if (levelA === null && levelB === null) return 0
+      if (levelA === null) return 1
+      if (levelB === null) return -1
+
+      return levelA - levelB
+    })
+
     return items
-  }, [filterMode, filteredDrops, gachaMachines, debouncedSearchTerm, searchType, advancedFilter, itemAttributesMap])
+  }, [filterMode, filteredDrops, gachaMachines, debouncedSearchTerm, searchType, advancedFilter, itemAttributesMap, initialRandomGachaItems])
 
   // 建立隨機混合的卡片資料（怪物 + 物品隨機排序）- 只在「全部」模式且無搜尋時使用
   const mixedCards = useMemo(() => {
@@ -427,17 +456,39 @@ export function useFilterLogic({
       ...(shouldIncludeItems ? uniqueAllItems.map((i): MixedCard => ({ type: 'item', data: i })) : [])
     ]
 
-    // Fisher-Yates shuffle 演算法進行隨機排序
-    for (let i = mixed.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1))
-      ;[mixed[i], mixed[j]] = [mixed[j], mixed[i]]
-    }
+    // 按等級排序（由低到高，null 值在最後）
+    mixed.sort((a, b) => {
+      let levelA: number | null = null
+      let levelB: number | null = null
+
+      // 取得怪物或物品的等級
+      if (a.type === 'monster') {
+        levelA = mobLevelMap.get(a.data.mobId) ?? null
+      } else {
+        const attr = itemAttributesMap.get(a.data.itemId)
+        levelA = attr?.equipment?.requirements?.req_level ?? null
+      }
+
+      if (b.type === 'monster') {
+        levelB = mobLevelMap.get(b.data.mobId) ?? null
+      } else {
+        const attr = itemAttributesMap.get(b.data.itemId)
+        levelB = attr?.equipment?.requirements?.req_level ?? null
+      }
+
+      // null 值排在最後
+      if (levelA === null && levelB === null) return 0
+      if (levelA === null) return 1
+      if (levelB === null) return -1
+
+      return levelA - levelB
+    })
 
     const monsterCount = shouldIncludeMonsters ? uniqueAllMonsters.length : 0
     const itemCount = shouldIncludeItems ? uniqueAllItems.length : 0
-    clientLogger.info(`建立隨機混合卡片: ${monsterCount} 怪物 + ${itemCount} 物品 = ${mixed.length} 張卡片`)
+    clientLogger.info(`建立等級排序混合卡片: ${monsterCount} 怪物 + ${itemCount} 物品 = ${mixed.length} 張卡片`)
     return mixed
-  }, [filterMode, debouncedSearchTerm, searchType, uniqueAllMonsters, uniqueAllItems])
+  }, [filterMode, debouncedSearchTerm, searchType, uniqueAllMonsters, uniqueAllItems, mobLevelMap, itemAttributesMap])
 
   // 判斷搜尋上下文 - 決定「全部」模式的顯示策略
   const hasItemMatch = useMemo(() => {

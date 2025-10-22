@@ -31,6 +31,26 @@ function delay(ms) {
 }
 
 /**
+ * 計算經驗效率 (exp / max_hp)
+ * @param {number|null} exp - 經驗值
+ * @param {number|null} max_hp - 最大血量
+ * @returns {number|null} 經驗效率，數值越高越好
+ */
+function calculateExpEfficiency(exp, max_hp) {
+  // 處理 null、undefined 或 0 血量
+  if (exp == null || max_hp == null || max_hp === 0) {
+    return null
+  }
+
+  // 經驗為 0 的怪物（如箱子、道具）效率為 0
+  if (exp === 0) {
+    return 0
+  }
+
+  return exp / max_hp
+}
+
+/**
  * 帶超時的 fetch
  */
 async function fetchWithTimeout(url, options = {}, timeout = TIMEOUT_MS) {
@@ -177,6 +197,15 @@ async function main() {
     if (mobInfo) {
       // 新增 chineseMobName 欄位
       mobInfo.chineseMobName = chineseNameMap.get(mobId) || null
+
+      // 計算經驗效率（替代 API 的 mobExpHpRatio）
+      if (mobInfo.expBar) {
+        const expEfficiency = calculateExpEfficiency(mobInfo.mob?.exp, mobInfo.mob?.max_hp)
+        mobInfo.expBar.expEfficiency = expEfficiency
+        // 移除舊的 mobExpHpRatio 欄位（如果存在）
+        delete mobInfo.expBar.mobExpHpRatio
+      }
+
       mobInfoList.push(mobInfo)
       successCount++
       const mobName = mobInfo.mob?.mob_name || 'Unknown'

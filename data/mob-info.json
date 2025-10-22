@@ -23,7 +23,7 @@
     "expBar": {
       "minExpHpRatio": null,
       "maxExpHpRatio": null,
-      "mobExpHpRatio": null
+      "expEfficiency": null
     },
     "chineseMobName": "箱子"
   },
@@ -51,7 +51,7 @@
     "expBar": {
       "minExpHpRatio": 0,
       "maxExpHpRatio": 8,
-      "mobExpHpRatio": 2.6666666666666665
+      "expEfficiency": 0.75
     },
     "chineseMobName": "嫩寶"
   },
@@ -79,7 +79,7 @@
     "expBar": {
       "minExpHpRatio": 0,
       "maxExpHpRatio": 8,
-      "mobExpHpRatio": 3.75
+      "expEfficiency": 0.5333333333333333
     },
     "chineseMobName": "藍寶"
   },
@@ -107,7 +107,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 9.285714285714286
+      "expEfficiency": 0.2153846153846154
     },
     "chineseMobName": "嫩寶"
   },
@@ -135,7 +135,7 @@
     "expBar": {
       "minExpHpRatio": 0,
       "maxExpHpRatio": 8,
-      "mobExpHpRatio": 4
+      "expEfficiency": 0.5
     },
     "chineseMobName": "菇菇仔"
   },
@@ -163,7 +163,7 @@
     "expBar": {
       "minExpHpRatio": 0,
       "maxExpHpRatio": 8,
-      "mobExpHpRatio": 5
+      "expEfficiency": 0.4
     },
     "chineseMobName": "木妖"
   },
@@ -191,7 +191,7 @@
     "expBar": {
       "minExpHpRatio": 0,
       "maxExpHpRatio": 8,
-      "mobExpHpRatio": 5.625
+      "expEfficiency": 0.35555555555555557
     },
     "chineseMobName": "紅寶"
   },
@@ -219,7 +219,7 @@
     "expBar": {
       "minExpHpRatio": 0,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 5
+      "expEfficiency": 0.4
     },
     "chineseMobName": "綠水靈"
   },
@@ -247,7 +247,7 @@
     "expBar": {
       "minExpHpRatio": null,
       "maxExpHpRatio": null,
-      "mobExpHpRatio": null
+      "expEfficiency": null
     },
     "chineseMobName": "神秘的植物"
   },
@@ -275,7 +275,7 @@
     "expBar": {
       "minExpHpRatio": 6,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 9.615384615384615
+      "expEfficiency": 0.208
     },
     "chineseMobName": "綠菇菇"
   },
@@ -303,7 +303,7 @@
     "expBar": {
       "minExpHpRatio": 5,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 13.88888888888889
+      "expEfficiency": 0.144
     },
     "chineseMobName": "黑木妖"
   },
@@ -331,7 +331,7 @@
     "expBar": {
       "minExpHpRatio": 5,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 8.333333333333334
+      "expEfficiency": 0.24
     },
     "chineseMobName": "三眼章魚"
   },
@@ -359,7 +359,7 @@
     "expBar": {
       "minExpHpRatio": 7,
       "maxExpHpRatio": 16,
-      "mobExpHpRatio": 10
+      "expEfficiency": 0.2
     },
     "chineseMobName": "斧木妖"
   },
@@ -387,7 +387,7 @@
     "expBar": {
       "minExpHpRatio": 7,
       "maxExpHpRatio": 16,
-      "mobExpHpRatio": 10
+      "expEfficiency": 0.2
     },
     "chineseMobName": "發芽木妖"
   },
@@ -415,7 +415,7 @@
     "expBar": {
       "minExpHpRatio": 3,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 5
+      "expEfficiency": 0.4
     },
     "chineseMobName": "肥肥"
   },
@@ -443,7 +443,7 @@
     "expBar": {
       "minExpHpRatio": 5,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 6
+      "expEfficiency": 0.3333333333333333
     },
     "chineseMobName": "緞帶肥肥"
   },
@@ -471,7 +471,7 @@
     "expBar": {
       "minExpHpRatio": 5,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 5.333333333333333
+      "expEfficiency": 0.375
     },
     "chineseMobName": "菇菇寶貝"
   },
@@ -499,7 +499,7 @@
     "expBar": {
       "minExpHpRatio": 6,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 9.23076923076923
+      "expEfficiency": 0.21666666666666667
     },
     "chineseMobName": "藍水靈"
   },
@@ -532,7 +532,7 @@
     "expBar": {
       "minExpHpRatio": 7,
       "maxExpHpRatio": 16,
-      "mobExpHpRatio": 10.9375
+      "expEfficiency": 0.18285714285714286
     },
     "chineseMobName": "奇怪的豬"
   },
@@ -560,7 +560,7 @@
     "expBar": {
       "minExpHpRatio": null,
       "maxExpHpRatio": null,
-      "mobExpHpRatio": null
+      "expEfficiency": null
     },
     "chineseMobName": "天空城箱"
   },
@@ -588,7 +588,7 @@
     "expBar": {
       "minExpHpRatio": 7,
       "maxExpHpRatio": 16,
-      "mobExpHpRatio": 8.571428571428571
+      "expEfficiency": 0.23333333333333334
     },
     "chineseMobName": "刺菇菇"
   },
@@ -616,7 +616,7 @@
     "expBar": {
       "minExpHpRatio": 7,
       "maxExpHpRatio": 16,
-      "mobExpHpRatio": 14.473684210526315
+      "expEfficiency": 0.13818181818181818
     },
     "chineseMobName": "黑斧木妖"
   },
@@ -644,7 +644,7 @@
     "expBar": {
       "minExpHpRatio": 7,
       "maxExpHpRatio": 16,
-      "mobExpHpRatio": 7.5
+      "expEfficiency": 0.26666666666666666
     },
     "chineseMobName": "青蛇"
   },
@@ -672,7 +672,7 @@
     "expBar": {
       "minExpHpRatio": 7,
       "maxExpHpRatio": 16,
-      "mobExpHpRatio": 16.666666666666668
+      "expEfficiency": 0.12
     },
     "chineseMobName": "紅寶王"
   },
@@ -700,7 +700,7 @@
     "expBar": {
       "minExpHpRatio": 7,
       "maxExpHpRatio": 16,
-      "mobExpHpRatio": 10.9375
+      "expEfficiency": 0.18285714285714286
     },
     "chineseMobName": "藍菇菇"
   },
@@ -728,7 +728,7 @@
     "expBar": {
       "minExpHpRatio": 6,
       "maxExpHpRatio": 20,
-      "mobExpHpRatio": 14.4
+      "expEfficiency": 0.1388888888888889
     },
     "chineseMobName": "火獨眼獸"
   },
@@ -756,7 +756,7 @@
     "expBar": {
       "minExpHpRatio": 7,
       "maxExpHpRatio": 16,
-      "mobExpHpRatio": 11.904761904761905
+      "expEfficiency": 0.168
     },
     "chineseMobName": "殭屍菇菇"
   },
@@ -784,7 +784,7 @@
     "expBar": {
       "minExpHpRatio": 6,
       "maxExpHpRatio": 16,
-      "mobExpHpRatio": 13.095238095238095
+      "expEfficiency": 0.15272727272727274
     },
     "chineseMobName": "黑肥肥"
   },
@@ -812,7 +812,7 @@
     "expBar": {
       "minExpHpRatio": 7,
       "maxExpHpRatio": 16,
-      "mobExpHpRatio": 11.904761904761905
+      "expEfficiency": 0.168
     },
     "chineseMobName": "木面怪人"
   },
@@ -840,7 +840,7 @@
     "expBar": {
       "minExpHpRatio": 7,
       "maxExpHpRatio": 16,
-      "mobExpHpRatio": 13.333333333333334
+      "expEfficiency": 0.15
     },
     "chineseMobName": "石面怪人"
   },
@@ -873,7 +873,7 @@
     "expBar": {
       "minExpHpRatio": 18,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 18.75
+      "expEfficiency": 0.10666666666666667
     },
     "chineseMobName": "黑獨眼獸"
   },
@@ -906,7 +906,7 @@
     "expBar": {
       "minExpHpRatio": 7,
       "maxExpHpRatio": 16,
-      "mobExpHpRatio": 9.090909090909092
+      "expEfficiency": 0.22
     },
     "chineseMobName": "蝙蝠"
   },
@@ -934,7 +934,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 20,
-      "mobExpHpRatio": 16.363636363636363
+      "expEfficiency": 0.12222222222222222
     },
     "chineseMobName": "石球"
   },
@@ -962,7 +962,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 24,
-      "mobExpHpRatio": 20
+      "expEfficiency": 0.1
     },
     "chineseMobName": "鱷魚"
   },
@@ -990,7 +990,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 24,
-      "mobExpHpRatio": 16.666666666666668
+      "expEfficiency": 0.12
     },
     "chineseMobName": "火肥肥"
   },
@@ -1018,7 +1018,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 24,
-      "mobExpHpRatio": 16.923076923076923
+      "expEfficiency": 0.11818181818181818
     },
     "chineseMobName": "幼紅獨角獅"
   },
@@ -1046,7 +1046,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 24,
-      "mobExpHpRatio": 16.923076923076923
+      "expEfficiency": 0.11818181818181818
     },
     "chineseMobName": "幼黃獨角獅"
   },
@@ -1074,7 +1074,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 24,
-      "mobExpHpRatio": 16.923076923076923
+      "expEfficiency": 0.11818181818181818
     },
     "chineseMobName": "幼藍獨角獅"
   },
@@ -1102,7 +1102,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 24,
-      "mobExpHpRatio": 19.48051948051948
+      "expEfficiency": 0.10266666666666667
     },
     "chineseMobName": "猴子"
   },
@@ -1130,7 +1130,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 24,
-      "mobExpHpRatio": 17.073170731707318
+      "expEfficiency": 0.11714285714285715
     },
     "chineseMobName": "樹妖王"
   },
@@ -1158,7 +1158,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 24,
-      "mobExpHpRatio": 17.857142857142858
+      "expEfficiency": 0.112
     },
     "chineseMobName": "風獨眼獸"
   },
@@ -1186,7 +1186,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 24,
-      "mobExpHpRatio": 17.142857142857142
+      "expEfficiency": 0.11666666666666667
     },
     "chineseMobName": "小幽靈"
   },
@@ -1214,7 +1214,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 24,
-      "mobExpHpRatio": 24.375
+      "expEfficiency": 0.08205128205128205
     },
     "chineseMobName": "紅螃蟹"
   },
@@ -1242,7 +1242,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 24,
-      "mobExpHpRatio": 18.055555555555557
+      "expEfficiency": 0.11076923076923077
     },
     "chineseMobName": "星光精靈"
   },
@@ -1270,7 +1270,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 24,
-      "mobExpHpRatio": 11.333333333333334
+      "expEfficiency": 0.17647058823529413
     },
     "chineseMobName": "幼魔精靈"
   },
@@ -1298,7 +1298,7 @@
     "expBar": {
       "minExpHpRatio": 10,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 25.714285714285715
+      "expEfficiency": 0.07777777777777778
     },
     "chineseMobName": "土龍"
   },
@@ -1326,7 +1326,7 @@
     "expBar": {
       "minExpHpRatio": 18,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 23.47826086956522
+      "expEfficiency": 0.08518518518518518
     },
     "chineseMobName": "黑食人花"
   },
@@ -1354,7 +1354,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 25,
-      "mobExpHpRatio": 23.529411764705884
+      "expEfficiency": 0.085
     },
     "chineseMobName": "冰獨眼獸"
   },
@@ -1382,7 +1382,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 25,
-      "mobExpHpRatio": 20
+      "expEfficiency": 0.1
     },
     "chineseMobName": "天使猴"
   },
@@ -1410,7 +1410,7 @@
     "expBar": {
       "minExpHpRatio": 18,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 23.333333333333332
+      "expEfficiency": 0.08571428571428572
     },
     "chineseMobName": "大幽靈"
   },
@@ -1438,7 +1438,7 @@
     "expBar": {
       "minExpHpRatio": 10,
       "maxExpHpRatio": 25,
-      "mobExpHpRatio": 22.22222222222222
+      "expEfficiency": 0.09
     },
     "chineseMobName": "鋼之肥肥"
   },
@@ -1466,7 +1466,7 @@
     "expBar": {
       "minExpHpRatio": 18,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 23.4375
+      "expEfficiency": 0.08533333333333333
     },
     "chineseMobName": "青螃蟹"
   },
@@ -1494,7 +1494,7 @@
     "expBar": {
       "minExpHpRatio": 10,
       "maxExpHpRatio": 25,
-      "mobExpHpRatio": 21.21212121212121
+      "expEfficiency": 0.09428571428571429
     },
     "chineseMobName": "食人花"
   },
@@ -1522,7 +1522,7 @@
     "expBar": {
       "minExpHpRatio": 10,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 23.80952380952381
+      "expEfficiency": 0.084
     },
     "chineseMobName": "月光精靈"
   },
@@ -1555,7 +1555,7 @@
     "expBar": {
       "minExpHpRatio": 10,
       "maxExpHpRatio": 25,
-      "mobExpHpRatio": 16.842105263157894
+      "expEfficiency": 0.11875
     },
     "chineseMobName": "獨眼蝙蝠"
   },
@@ -1583,7 +1583,7 @@
     "expBar": {
       "minExpHpRatio": 10,
       "maxExpHpRatio": 25,
-      "mobExpHpRatio": 22.54901960784314
+      "expEfficiency": 0.08869565217391304
     },
     "chineseMobName": "小獵犬"
   },
@@ -1611,7 +1611,7 @@
     "expBar": {
       "minExpHpRatio": 10,
       "maxExpHpRatio": 25,
-      "mobExpHpRatio": 22.897196261682243
+      "expEfficiency": 0.08734693877551021
     },
     "chineseMobName": "骷髏犬"
   },
@@ -1639,7 +1639,7 @@
     "expBar": {
       "minExpHpRatio": 18,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 23.504273504273506
+      "expEfficiency": 0.08509090909090909
     },
     "chineseMobName": "木乃伊犬"
   },
@@ -1667,7 +1667,7 @@
     "expBar": {
       "minExpHpRatio": 10,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 23.043478260869566
+      "expEfficiency": 0.08679245283018867
     },
     "chineseMobName": "鋼之黑肥肥"
   },
@@ -1695,7 +1695,7 @@
     "expBar": {
       "minExpHpRatio": 16,
       "maxExpHpRatio": 32,
-      "mobExpHpRatio": 20
+      "expEfficiency": 0.1
     },
     "chineseMobName": "冥界幽靈"
   },
@@ -1723,7 +1723,7 @@
     "expBar": {
       "minExpHpRatio": 18,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 27.40740740740741
+      "expEfficiency": 0.07297297297297298
     },
     "chineseMobName": "小雪球"
   },
@@ -1751,7 +1751,7 @@
     "expBar": {
       "minExpHpRatio": 18,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": null
+      "expEfficiency": 0
     },
     "chineseMobName": "小雪球"
   },
@@ -1779,7 +1779,7 @@
     "expBar": {
       "minExpHpRatio": null,
       "maxExpHpRatio": null,
-      "mobExpHpRatio": null
+      "expEfficiency": 0.07888888888888888
     },
     "chineseMobName": "火精靈"
   },
@@ -1807,7 +1807,7 @@
     "expBar": {
       "minExpHpRatio": 18,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 25.806451612903224
+      "expEfficiency": 0.0775
     },
     "chineseMobName": "日光精靈"
   },
@@ -1835,7 +1835,7 @@
     "expBar": {
       "minExpHpRatio": 18,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 26.25
+      "expEfficiency": 0.0761904761904762
     },
     "chineseMobName": "紅獨角獅"
   },
@@ -1863,7 +1863,7 @@
     "expBar": {
       "minExpHpRatio": 18,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 26.25
+      "expEfficiency": 0.0761904761904762
     },
     "chineseMobName": "黃獨角獅"
   },
@@ -1891,7 +1891,7 @@
     "expBar": {
       "minExpHpRatio": 18,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 26.25
+      "expEfficiency": 0.0761904761904762
     },
     "chineseMobName": "藍獨角獅"
   },
@@ -1919,7 +1919,7 @@
     "expBar": {
       "minExpHpRatio": 18,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 23.703703703703702
+      "expEfficiency": 0.084375
     },
     "chineseMobName": "青龍"
   },
@@ -1947,7 +1947,7 @@
     "expBar": {
       "minExpHpRatio": 16,
       "maxExpHpRatio": 32,
-      "mobExpHpRatio": 23.529411764705884
+      "expEfficiency": 0.085
     },
     "chineseMobName": "石巨人"
   },
@@ -1975,7 +1975,7 @@
     "expBar": {
       "minExpHpRatio": 16,
       "maxExpHpRatio": 32,
-      "mobExpHpRatio": 24
+      "expEfficiency": 0.08333333333333333
     },
     "chineseMobName": "黑曜石巨人"
   },
@@ -2003,7 +2003,7 @@
     "expBar": {
       "minExpHpRatio": 18,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 22.352941176470587
+      "expEfficiency": 0.08947368421052632
     },
     "chineseMobName": "黑鱷魚"
   },
@@ -2031,7 +2031,7 @@
     "expBar": {
       "minExpHpRatio": 16,
       "maxExpHpRatio": 32,
-      "mobExpHpRatio": 27.058823529411764
+      "expEfficiency": 0.07391304347826087
     },
     "chineseMobName": "野狼"
   },
@@ -2059,7 +2059,7 @@
     "expBar": {
       "minExpHpRatio": 16,
       "maxExpHpRatio": 32,
-      "mobExpHpRatio": 24.444444444444443
+      "expEfficiency": 0.08181818181818182
     },
     "chineseMobName": "黑色小雪球"
   },
@@ -2087,7 +2087,7 @@
     "expBar": {
       "minExpHpRatio": 16,
       "maxExpHpRatio": 32,
-      "mobExpHpRatio": null
+      "expEfficiency": 0
     },
     "chineseMobName": "黑色小雪球"
   },
@@ -2115,7 +2115,7 @@
     "expBar": {
       "minExpHpRatio": 16,
       "maxExpHpRatio": 32,
-      "mobExpHpRatio": 23.68421052631579
+      "expEfficiency": 0.08444444444444445
     },
     "chineseMobName": "殭屍"
   },
@@ -2143,7 +2143,7 @@
     "expBar": {
       "minExpHpRatio": 16,
       "maxExpHpRatio": 32,
-      "mobExpHpRatio": 23.68421052631579
+      "expEfficiency": 0.08444444444444445
     },
     "chineseMobName": "礦山殭屍"
   },
@@ -2171,7 +2171,7 @@
     "expBar": {
       "minExpHpRatio": 16,
       "maxExpHpRatio": 32,
-      "mobExpHpRatio": 26.363636363636363
+      "expEfficiency": 0.07586206896551724
     },
     "chineseMobName": "白狼"
   },
@@ -2199,7 +2199,7 @@
     "expBar": {
       "minExpHpRatio": 11,
       "maxExpHpRatio": 32,
-      "mobExpHpRatio": 28.571428571428573
+      "expEfficiency": 0.07
     },
     "chineseMobName": "混種石巨人"
   },
@@ -2227,7 +2227,7 @@
     "expBar": {
       "minExpHpRatio": 16,
       "maxExpHpRatio": 32,
-      "mobExpHpRatio": 24.210526315789473
+      "expEfficiency": 0.08260869565217391
     },
     "chineseMobName": "骷髏士兵"
   },
@@ -2260,7 +2260,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 47.27272727272727
+      "expEfficiency": 0.04230769230769231
     },
     "chineseMobName": "冰之混種石巨人"
   },
@@ -2293,7 +2293,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 47.27272727272727
+      "expEfficiency": 0.04230769230769231
     },
     "chineseMobName": "火之混種石巨人"
   },
@@ -2321,7 +2321,7 @@
     "expBar": {
       "minExpHpRatio": 7,
       "maxExpHpRatio": 16,
-      "mobExpHpRatio": 15
+      "expEfficiency": 0.13333333333333333
     },
     "chineseMobName": "小石球"
   },
@@ -2349,7 +2349,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 20,
-      "mobExpHpRatio": 16.363636363636363
+      "expEfficiency": 0.12222222222222222
     },
     "chineseMobName": "冰石球"
   },
@@ -2377,7 +2377,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 20,
-      "mobExpHpRatio": 16.363636363636363
+      "expEfficiency": 0.12222222222222222
     },
     "chineseMobName": "火石球"
   },
@@ -2405,7 +2405,7 @@
     "expBar": {
       "minExpHpRatio": 18,
       "maxExpHpRatio": 27,
-      "mobExpHpRatio": 23.902439024390244
+      "expEfficiency": 0.0836734693877551
     },
     "chineseMobName": "殭屍猴王"
   },
@@ -2433,7 +2433,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 24,
-      "mobExpHpRatio": 16.666666666666668
+      "expEfficiency": 0.12
     },
     "chineseMobName": "利堤"
   },
@@ -2461,7 +2461,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 24,
-      "mobExpHpRatio": 16.923076923076923
+      "expEfficiency": 0.11818181818181818
     },
     "chineseMobName": "黑利堤"
   },
@@ -2494,7 +2494,7 @@
     "expBar": {
       "minExpHpRatio": 16,
       "maxExpHpRatio": 32,
-      "mobExpHpRatio": 22.857142857142858
+      "expEfficiency": 0.0875
     },
     "chineseMobName": "巫婆"
   },
@@ -2522,7 +2522,7 @@
     "expBar": {
       "minExpHpRatio": null,
       "maxExpHpRatio": null,
-      "mobExpHpRatio": null
+      "expEfficiency": 0.10714285714285714
     },
     "chineseMobName": "小企鵝王"
   },
@@ -2550,7 +2550,7 @@
     "expBar": {
       "minExpHpRatio": 5,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 43.13725490196079
+      "expEfficiency": 0.0051
     },
     "chineseMobName": "厄運死神"
   },
@@ -2578,7 +2578,7 @@
     "expBar": {
       "minExpHpRatio": 5,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 30.8
+      "expEfficiency": 0.03397849462365592
     },
     "chineseMobName": "冰之女巫"
   },
@@ -2606,7 +2606,7 @@
     "expBar": {
       "minExpHpRatio": 11,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 27.272727272727273
+      "expEfficiency": 0.07333333333333333
     },
     "chineseMobName": "赤龍"
   },
@@ -2634,7 +2634,7 @@
     "expBar": {
       "minExpHpRatio": 11,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 16.666666666666668
+      "expEfficiency": 0.12
     },
     "chineseMobName": "蘑菇王"
   },
@@ -2662,7 +2662,7 @@
     "expBar": {
       "minExpHpRatio": 11,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 17.142857142857142
+      "expEfficiency": 0.11666666666666667
     },
     "chineseMobName": "孤單企鵝王"
   },
@@ -2690,7 +2690,7 @@
     "expBar": {
       "minExpHpRatio": 11,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 32.72727272727273
+      "expEfficiency": 0.06111111111111111
     },
     "chineseMobName": "企鵝王"
   },
@@ -2718,7 +2718,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 38.27160493827161
+      "expEfficiency": 0.052258064516129035
     },
     "chineseMobName": "沼澤巨鱷"
   },
@@ -2746,7 +2746,7 @@
     "expBar": {
       "minExpHpRatio": 11,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 22.916666666666668
+      "expEfficiency": 0.08727272727272728
     },
     "chineseMobName": "魔龍"
   },
@@ -2774,7 +2774,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 49,
-      "mobExpHpRatio": 11.142857142857142
+      "expEfficiency": 0.1794871794871795
     },
     "chineseMobName": "黑企鵝王"
   },
@@ -2802,7 +2802,7 @@
     "expBar": {
       "minExpHpRatio": null,
       "maxExpHpRatio": null,
-      "mobExpHpRatio": null
+      "expEfficiency": 0.1794871794871795
     },
     "chineseMobName": "孤單黑企鵝王"
   },
@@ -2830,7 +2830,7 @@
     "expBar": {
       "minExpHpRatio": 11,
       "maxExpHpRatio": 49,
-      "mobExpHpRatio": 31.020408163265305
+      "expEfficiency": 0.06447368421052632
     },
     "chineseMobName": "幼黑格里芬"
   },
@@ -2858,7 +2858,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 49,
-      "mobExpHpRatio": 30.8
+      "expEfficiency": 0.06493506493506493
     },
     "chineseMobName": "冰龍"
   },
@@ -2886,7 +2886,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 49.056603773584904
+      "expEfficiency": 0.040769230769230766
     },
     "chineseMobName": "黑龍"
   },
@@ -2914,7 +2914,7 @@
     "expBar": {
       "minExpHpRatio": 11,
       "maxExpHpRatio": 49,
-      "mobExpHpRatio": 31.25
+      "expEfficiency": 0.064
     },
     "chineseMobName": "骷髏士官"
   },
@@ -2942,7 +2942,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 43.13725490196079
+      "expEfficiency": 0.046363636363636364
     },
     "chineseMobName": "雪吉拉"
   },
@@ -2970,7 +2970,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 28.205128205128204
+      "expEfficiency": 0.07090909090909091
     },
     "chineseMobName": "變形雪吉拉"
   },
@@ -2998,7 +2998,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 24.175824175824175
+      "expEfficiency": 0.08272727272727273
     },
     "chineseMobName": "孤單雪吉拉"
   },
@@ -3026,7 +3026,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 23.333333333333332
+      "expEfficiency": 0.08571428571428572
     },
     "chineseMobName": "殭屍蘑菇王"
   },
@@ -3054,7 +3054,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 49.056603773584904
+      "expEfficiency": 0.040769230769230766
     },
     "chineseMobName": "黑吉拉"
   },
@@ -3082,7 +3082,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 29.213483146067414
+      "expEfficiency": 0.06846153846153846
     },
     "chineseMobName": "變形黑吉拉"
   },
@@ -3110,7 +3110,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 18.181818181818183
+      "expEfficiency": 0.11
     },
     "chineseMobName": "孤單黑吉拉"
   },
@@ -3138,7 +3138,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 48.4375
+      "expEfficiency": 0.04129032258064516
     },
     "chineseMobName": "黑格里芬"
   },
@@ -3166,7 +3166,7 @@
     "expBar": {
       "minExpHpRatio": null,
       "maxExpHpRatio": null,
-      "mobExpHpRatio": null
+      "expEfficiency": 0.03881578947368421
     },
     "chineseMobName": "地獄獵犬"
   },
@@ -3194,7 +3194,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 55.55555555555556
+      "expEfficiency": 0.036
     },
     "chineseMobName": "月牙牛魔王"
   },
@@ -3222,7 +3222,7 @@
     "expBar": {
       "minExpHpRatio": 25,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 51.42857142857143
+      "expEfficiency": 0.03888888888888889
     },
     "chineseMobName": "長槍牛魔王"
   },
@@ -3250,7 +3250,7 @@
     "expBar": {
       "minExpHpRatio": 25,
       "maxExpHpRatio": 51,
-      "mobExpHpRatio": null
+      "expEfficiency": 0
     },
     "chineseMobName": "雪吉拉戰車"
   },
@@ -3278,7 +3278,7 @@
     "expBar": {
       "minExpHpRatio": 9,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 48.57142857142857
+      "expEfficiency": 0.041176470588235294
     },
     "chineseMobName": "骷髏指揮官"
   },
@@ -3306,7 +3306,7 @@
     "expBar": {
       "minExpHpRatio": 25,
       "maxExpHpRatio": 55,
-      "mobExpHpRatio": 45.714285714285715
+      "expEfficiency": 0.04375
     },
     "chineseMobName": "狼人"
   },
@@ -3334,7 +3334,7 @@
     "expBar": {
       "minExpHpRatio": 25,
       "maxExpHpRatio": 51,
-      "mobExpHpRatio": 25
+      "expEfficiency": 0.08
     },
     "chineseMobName": "巴洛古"
   },
@@ -3362,7 +3362,7 @@
     "expBar": {
       "minExpHpRatio": 25,
       "maxExpHpRatio": 51,
-      "mobExpHpRatio": 31.764705882352942
+      "expEfficiency": 0.06296296296296296
     },
     "chineseMobName": "白狼人"
   },
@@ -3390,7 +3390,7 @@
     "expBar": {
       "minExpHpRatio": 25,
       "maxExpHpRatio": 31,
-      "mobExpHpRatio": null
+      "expEfficiency": 0
     },
     "chineseMobName": "黑吉拉戰車"
   },
@@ -3418,7 +3418,7 @@
     "expBar": {
       "minExpHpRatio": null,
       "maxExpHpRatio": null,
-      "mobExpHpRatio": null
+      "expEfficiency": 0.08
     },
     "chineseMobName": "煉獄獵犬"
   },
@@ -3451,7 +3451,7 @@
     "expBar": {
       "minExpHpRatio": 6,
       "maxExpHpRatio": 16,
-      "mobExpHpRatio": 9.090909090909092
+      "expEfficiency": 0.22
     },
     "chineseMobName": "紅蝙蝠"
   },
@@ -3479,7 +3479,7 @@
     "expBar": {
       "minExpHpRatio": 28,
       "maxExpHpRatio": 28,
-      "mobExpHpRatio": 28.571428571428573
+      "expEfficiency": 0.07
     },
     "chineseMobName": "地獄巴洛古"
   },
@@ -3507,7 +3507,7 @@
     "expBar": {
       "minExpHpRatio": 25,
       "maxExpHpRatio": 31,
-      "mobExpHpRatio": 31.071428571428573
+      "expEfficiency": 0.06436781609195402
     },
     "chineseMobName": "艾利傑"
   },
@@ -3535,7 +3535,7 @@
     "expBar": {
       "minExpHpRatio": null,
       "maxExpHpRatio": null,
-      "mobExpHpRatio": null
+      "expEfficiency": 0.08666666666666667
     },
     "chineseMobName": "雪毛怪人"
   },
@@ -3563,7 +3563,7 @@
     "expBar": {
       "minExpHpRatio": 0,
       "maxExpHpRatio": 8,
-      "mobExpHpRatio": 8
+      "expEfficiency": 0.25
     },
     "chineseMobName": null
   },
@@ -3591,7 +3591,7 @@
     "expBar": {
       "minExpHpRatio": null,
       "maxExpHpRatio": null,
-      "mobExpHpRatio": null
+      "expEfficiency": 0.072
     },
     "chineseMobName": "鬼精靈"
   },
@@ -3624,7 +3624,7 @@
     "expBar": {
       "minExpHpRatio": 6,
       "maxExpHpRatio": 43,
-      "mobExpHpRatio": 9.615384615384615
+      "expEfficiency": 0.208
     },
     "chineseMobName": "矮胖蝸牛"
   },
@@ -3657,7 +3657,7 @@
     "expBar": {
       "minExpHpRatio": 1,
       "maxExpHpRatio": 24,
-      "mobExpHpRatio": 1.7857142857142858
+      "expEfficiency": 1.12
     },
     "chineseMobName": "海盜領主"
   },
@@ -3685,7 +3685,7 @@
     "expBar": {
       "minExpHpRatio": null,
       "maxExpHpRatio": null,
-      "mobExpHpRatio": null
+      "expEfficiency": 0.09297297297297297
     },
     "chineseMobName": "冰烏龜"
   },
@@ -3718,7 +3718,7 @@
     "expBar": {
       "minExpHpRatio": 25,
       "maxExpHpRatio": 51,
-      "mobExpHpRatio": 30
+      "expEfficiency": 0.06666666666666667
     },
     "chineseMobName": "盾牌牛魔王"
   },
@@ -3745,7 +3745,7 @@
     "expBar": {
       "minExpHpRatio": null,
       "maxExpHpRatio": null,
-      "mobExpHpRatio": null
+      "expEfficiency": 0.08620689655172414
     },
     "chineseMobName": "雪球企鵝王"
   }

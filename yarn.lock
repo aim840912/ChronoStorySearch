@@ -14,15 +14,15 @@
   dependencies:
     mime "^3.0.0"
 
-"@cloudflare/unenv-preset@2.7.7":
-  version "2.7.7"
-  resolved "https://registry.npmjs.org/@cloudflare/unenv-preset/-/unenv-preset-2.7.7.tgz"
-  integrity sha512-HtZuh166y0Olbj9bqqySckz0Rw9uHjggJeoGbDx5x+sgezBXlxO6tQSig2RZw5tgObF8mWI8zaPvQMkQZtAODw==
+"@cloudflare/unenv-preset@2.7.8":
+  version "2.7.8"
+  resolved "https://registry.npmjs.org/@cloudflare/unenv-preset/-/unenv-preset-2.7.8.tgz"
+  integrity sha512-Ky929MfHh+qPhwCapYrRPwPVHtA2Ioex/DbGZyskGyNRDe9Ru3WThYZivyNVaPy5ergQSgMs9OKrM9Ajtz9F6w==
 
-"@cloudflare/workerd-linux-64@1.20251008.0":
-  version "1.20251008.0"
-  resolved "https://registry.npmjs.org/@cloudflare/workerd-linux-64/-/workerd-linux-64-1.20251008.0.tgz"
-  integrity sha512-AjoQnylw4/5G6SmfhZRsli7EuIK7ZMhmbxtU0jkpciTlVV8H01OsFOgS1d8zaTXMfkWamEfMouy8oH/L7B9YcQ==
+"@cloudflare/workerd-linux-64@1.20251011.0":
+  version "1.20251011.0"
+  resolved "https://registry.npmjs.org/@cloudflare/workerd-linux-64/-/workerd-linux-64-1.20251011.0.tgz"
+  integrity sha512-BccMiBzFlWZyFghIw2szanmYJrJGBGHomw2y/GV6pYXChFzMGZkeCEMfmCyJj29xczZXxcZmUVJxNy4eJxO8QA==
 
 "@cspotcode/source-map-support@0.8.1":
   version "0.8.1"
@@ -239,6 +239,11 @@
   resolved "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-15.5.6.tgz"
   integrity sha512-3QnHGFWlnvAgyxFxt2Ny8PTpXtQD7kVEeaFat5oPAHHI192WKYB+VIKZijtHLGdBBvc16tiAkPTDmQNOQ0dyrA==
 
+"@next/swc-linux-x64-musl@15.5.6":
+  version "15.5.6"
+  resolved "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-15.5.6.tgz"
+  integrity sha512-OsGX148sL+TqMK9YFaPFPoIaJKbFJJxFzkXZljIgA9hjMjdruKht6xDCEv1HLtlLNfkx3c5w2GLKhj7veBQizQ==
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
@@ -330,6 +335,11 @@
   version "4.1.15"
   resolved "https://registry.npmjs.org/@tailwindcss/oxide-linux-x64-gnu/-/oxide-linux-x64-gnu-4.1.15.tgz"
   integrity sha512-+rzMVlvVgrXtFiS+ES78yWgKqpThgV19ISKD58Ck+YO5pO5KjyxLt7AWKsWMbY0R9yBDC82w6QVGz837AKQcHg==
+
+"@tailwindcss/oxide-linux-x64-musl@4.1.15":
+  version "4.1.15"
+  resolved "https://registry.npmjs.org/@tailwindcss/oxide-linux-x64-musl/-/oxide-linux-x64-musl-4.1.15.tgz"
+  integrity sha512-fPdEy7a8eQN9qOIK3Em9D3TO1z41JScJn8yxl/76mp4sAXFDfV4YXxsiptJcOwy6bGR+70ZSwFIZhTXzQeqwQg==
 
 "@tailwindcss/oxide@4.1.15":
   version "4.1.15"
@@ -1936,6 +1946,11 @@ lightningcss-linux-x64-gnu@1.30.2:
   resolved "https://registry.npmjs.org/lightningcss-linux-x64-gnu/-/lightningcss-linux-x64-gnu-1.30.2.tgz"
   integrity sha512-Cfd46gdmj1vQ+lR6VRTTadNHu6ALuw2pKR9lYq4FnhvgBc4zWY1EtZcAc6EffShbb1MFrIPfLDXD6Xprbnni4w==
 
+lightningcss-linux-x64-musl@1.30.2:
+  version "1.30.2"
+  resolved "https://registry.npmjs.org/lightningcss-linux-x64-musl/-/lightningcss-linux-x64-musl-1.30.2.tgz"
+  integrity sha512-XJaLUUFXb6/QG2lGIW6aIk6jKdtjtcffUT0NKvIqhSBY3hh9Ch+1LCeH80dR9q9LBjG3ewbDjnumefsLsP6aiA==
+
 lightningcss@1.30.2:
   version "1.30.2"
   resolved "https://registry.npmjs.org/lightningcss/-/lightningcss-1.30.2.tgz"
@@ -2004,10 +2019,10 @@ mime@^3.0.0:
   resolved "https://registry.npmjs.org/mime/-/mime-3.0.0.tgz"
   integrity sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==
 
-miniflare@4.20251008.0:
-  version "4.20251008.0"
-  resolved "https://registry.npmjs.org/miniflare/-/miniflare-4.20251008.0.tgz"
-  integrity sha512-sKCNYNzXG6l8qg0Oo7y8WcDKcpbgw0qwZsxNpdZilFTR4EavRow2TlcwuPSVN99jqAjhz0M4VXvTdSGdtJ2VfQ==
+miniflare@4.20251011.0:
+  version "4.20251011.0"
+  resolved "https://registry.npmjs.org/miniflare/-/miniflare-4.20251011.0.tgz"
+  integrity sha512-DlZ7vR5q/RE9eLsxsrXzfSZIF2f6O5k0YsFrSKhWUtdefyGtJt4sSpR6V+Af/waaZ6+zIFy9lsknHBCm49sEYA==
   dependencies:
     "@cspotcode/source-map-support" "0.8.1"
     acorn "8.14.0"
@@ -2017,7 +2032,7 @@ miniflare@4.20251008.0:
     sharp "^0.33.5"
     stoppable "1.1.0"
     undici "7.14.0"
-    workerd "1.20251008.0"
+    workerd "1.20251011.0"
     ws "8.18.0"
     youch "4.1.0-beta.10"
     zod "3.22.3"
@@ -2971,30 +2986,30 @@ word-wrap@^1.2.5:
   resolved "https://registry.npmjs.org/word-wrap/-/word-wrap-1.2.5.tgz"
   integrity sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==
 
-workerd@^1.20250927.0, workerd@1.20251008.0:
-  version "1.20251008.0"
-  resolved "https://registry.npmjs.org/workerd/-/workerd-1.20251008.0.tgz"
-  integrity sha512-HwaJmXO3M1r4S8x2ea2vy8Rw/y/38HRQuK/gNDRQ7w9cJXn6xSl1sIIqKCffULSUjul3wV3I3Nd/GfbmsRReEA==
+workerd@^1.20250927.0, workerd@1.20251011.0:
+  version "1.20251011.0"
+  resolved "https://registry.npmjs.org/workerd/-/workerd-1.20251011.0.tgz"
+  integrity sha512-Dq35TLPEJAw7BuYQMkN3p9rge34zWMU2Gnd4DSJFeVqld4+DAO2aPG7+We2dNIAyM97S8Y9BmHulbQ00E0HC7Q==
   optionalDependencies:
-    "@cloudflare/workerd-darwin-64" "1.20251008.0"
-    "@cloudflare/workerd-darwin-arm64" "1.20251008.0"
-    "@cloudflare/workerd-linux-64" "1.20251008.0"
-    "@cloudflare/workerd-linux-arm64" "1.20251008.0"
-    "@cloudflare/workerd-windows-64" "1.20251008.0"
+    "@cloudflare/workerd-darwin-64" "1.20251011.0"
+    "@cloudflare/workerd-darwin-arm64" "1.20251011.0"
+    "@cloudflare/workerd-linux-64" "1.20251011.0"
+    "@cloudflare/workerd-linux-arm64" "1.20251011.0"
+    "@cloudflare/workerd-windows-64" "1.20251011.0"
 
 wrangler@^4.43.0:
-  version "4.43.0"
-  resolved "https://registry.npmjs.org/wrangler/-/wrangler-4.43.0.tgz"
-  integrity sha512-IBNqXlYHSUSCNNWj/tQN4hFiQy94l7fTxEnJWETXyW69+cjUyjQ7MfeoId3vIV9KBgY8y5M5uf2XulU95OikJg==
+  version "4.44.0"
+  resolved "https://registry.npmjs.org/wrangler/-/wrangler-4.44.0.tgz"
+  integrity sha512-BLOUigckcWZ0r4rm7b5PuaTpb9KP9as0XeCRSJ8kqcNgXcKoUD3Ij8FlPvN25KybLnFnetaO0ZdfRYUPWle4qw==
   dependencies:
     "@cloudflare/kv-asset-handler" "0.4.0"
-    "@cloudflare/unenv-preset" "2.7.7"
+    "@cloudflare/unenv-preset" "2.7.8"
     blake3-wasm "2.1.5"
     esbuild "0.25.4"
-    miniflare "4.20251008.0"
+    miniflare "4.20251011.0"
     path-to-regexp "6.3.0"
     unenv "2.0.0-rc.21"
-    workerd "1.20251008.0"
+    workerd "1.20251011.0"
   optionalDependencies:
     fsevents "~2.3.2"
 

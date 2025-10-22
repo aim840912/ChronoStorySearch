@@ -17,8 +17,6 @@ import { useInfiniteScroll } from '@/hooks/useInfiniteScroll'
 import { SearchBar } from '@/components/SearchBar'
 import { FilterButtons } from '@/components/FilterButtons'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
-import { MonsterCard } from '@/components/MonsterCard'
-import { ItemCard } from '@/components/ItemCard'
 import { MonsterModal } from '@/components/MonsterModal'
 import { ItemModal } from '@/components/ItemModal'
 import { BugReportModal } from '@/components/BugReportModal'
@@ -28,6 +26,9 @@ import { AccuracyCalculatorModal } from '@/components/AccuracyCalculatorModal'
 import { LanguageToggle } from '@/components/LanguageToggle'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Toast } from '@/components/Toast'
+import { FavoriteMonstersList } from '@/components/lists/FavoriteMonstersList'
+import { FavoriteItemsList } from '@/components/lists/FavoriteItemsList'
+import { AllItemsView } from '@/components/lists/AllItemsView'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
 
@@ -321,21 +322,25 @@ export default function Home() {
     })
   }
 
-  // MonsterModal 中點擊裝備：不關閉 MonsterModal，直接在上方打開 ItemModal
+  // MonsterModal 中點擊裝備：不關閉 MonsterModal，直接在上方打開 ItemModal（保存導航歷史）
   const handleItemClickFromMonsterModal = (itemId: number, itemName: string) => {
     // 不調用 modals.closeMonsterModal()
-    modals.openItemModal(itemId, itemName)
+    modals.openItemModal(itemId, itemName, true) // saveHistory=true
   }
 
-  // ItemModal 中點擊怪物：關閉 ItemModal，打開 MonsterModal
+  // ItemModal 中點擊怪物：打開 MonsterModal（保存導航歷史）
   const handleMonsterClickFromItemModal = (mobId: number, mobName: string) => {
-    modals.closeItemModal() // 關閉 ItemModal
-    modals.openMonsterModal(mobId, mobName) // 打開 MonsterModal 並設定資料
+    modals.openMonsterModal(mobId, mobName, true) // saveHistory=true，不再關閉 ItemModal
   }
 
-  // ItemModal 中點擊轉蛋機：不關閉 ItemModal，打開 GachaMachineModal 並選擇轉蛋機
+  // ItemModal 中點擊轉蛋機：打開 GachaMachineModal（保存導航歷史）
   const handleGachaMachineClick = (machineId: number) => {
-    modals.openGachaModal(machineId)
+    modals.openGachaModal(machineId, true) // saveHistory=true
+  }
+
+  // GachaMachineModal 中點擊物品：打開 ItemModal（保存導航歷史）
+  const handleItemClickFromGachaModal = (itemId: number, itemName: string) => {
+    modals.openItemModal(itemId, itemName, true) // saveHistory=true
   }
 
   // 返回頂部
@@ -409,238 +414,48 @@ export default function Home() {
         ) : (
           <>
             {filterMode === 'favorite-monsters' ? (
-              /* 最愛怪物模式 - 顯示怪物卡片 */
-              filteredUniqueMonsters.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto mt-6 sm:mt-8">
-                  {filteredUniqueMonsters.map((monster) => (
-                    <MonsterCard
-                      key={monster.mobId}
-                      mobId={monster.mobId}
-                      mobName={monster.mobName}
-                      chineseMobName={monster.chineseMobName}
-                      dropCount={monster.dropCount}
-                      onCardClick={modals.openMonsterModal}
-                      isFavorite={true}
-                      onToggleFavorite={toggleFavorite}
-                      level={mobLevelMap.get(monster.mobId) ?? null}
-                    />
-                  ))}
-                </div>
-              ) : (
-                <div className="text-center py-12 mt-8">
-                  {search.searchTerm ? (
-                    <div className="text-5xl sm:text-6xl mb-4">🔍</div>
-                  ) : (
-                    <div className="mb-4 flex justify-center">
-                      <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                        />
-                      </svg>
-                    </div>
-                  )}
-                  <p className="text-gray-600 dark:text-gray-400 text-lg font-medium mb-2">
-                    {search.searchTerm ? t('empty.searchNoMatch') : t('empty.noFavoriteMonsters')}
-                  </p>
-                  <p className="text-gray-500 dark:text-gray-500 text-sm">
-                    {search.searchTerm
-                      ? t('empty.tryOtherKeywords')
-                      : t('empty.clickToFavoriteMonster')}
-                  </p>
-                </div>
-              )
+              /* 最愛怪物模式 */
+              <FavoriteMonstersList
+                monsters={filteredUniqueMonsters}
+                hasSearchTerm={!!search.searchTerm}
+                mobLevelMap={mobLevelMap}
+                onCardClick={modals.openMonsterModal}
+                onToggleFavorite={toggleFavorite}
+                t={t}
+              />
             ) : filterMode === 'favorite-items' ? (
-              /* 最愛物品模式 - 顯示物品卡片 */
-              filteredUniqueItems.length > 0 ? (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
-                  {filteredUniqueItems.map((item) => (
-                    <ItemCard
-                      key={item.itemId}
-                      itemId={item.itemId}
-                      itemName={item.itemName}
-                      chineseItemName={item.chineseItemName}
-                      monsterCount={item.monsterCount}
-                      onCardClick={modals.openItemModal}
-                      isFavorite={true}
-                      onToggleFavorite={toggleItemFavorite}
-                      reqLevel={itemAttributesMap.get(item.itemId)?.equipment?.requirements?.req_level ?? null}
-                    />
-                  ))}
-                </div>
-              ) : (
-                <div className="text-center py-12 mt-8">
-                  {search.searchTerm ? (
-                    <div className="text-5xl sm:text-6xl mb-4">🔍</div>
-                  ) : (
-                    <div className="mb-4 flex justify-center">
-                      <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                        />
-                      </svg>
-                    </div>
-                  )}
-                  <p className="text-gray-600 dark:text-gray-400 text-lg font-medium mb-2">
-                    {search.searchTerm ? t('empty.searchNoMatch') : t('empty.noFavoriteItems')}
-                  </p>
-                  <p className="text-gray-500 dark:text-gray-500 text-sm">
-                    {search.searchTerm
-                      ? t('empty.tryOtherKeywords')
-                      : t('empty.clickToFavoriteItem')}
-                  </p>
-                </div>
-              )
+              /* 最愛物品模式 */
+              <FavoriteItemsList
+                items={filteredUniqueItems}
+                hasSearchTerm={!!search.searchTerm}
+                itemAttributesMap={itemAttributesMap}
+                onCardClick={modals.openItemModal}
+                onToggleFavorite={toggleItemFavorite}
+                t={t}
+              />
             ) : (
-              /* 全部模式 - 顯示怪物和物品卡片 */
-              uniqueAllMonsters.length > 0 || uniqueAllItems.length > 0 ? (
-                <>
-                  {/* 無搜尋詞且無進階篩選：隨機混合顯示怪物和物品 */}
-                  {!debouncedSearchTerm.trim() && !advancedFilter.enabled && mixedCards.length > 0 ? (
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
-                      {mixedCards.map((card, index) => {
-                        if (card.type === 'monster') {
-                          return (
-                            <MonsterCard
-                              key={`monster-${card.data.mobId}-${index}`}
-                              mobId={card.data.mobId}
-                              mobName={card.data.mobName}
-                              chineseMobName={card.data.chineseMobName}
-                              dropCount={card.data.dropCount}
-                              onCardClick={modals.openMonsterModal}
-                              isFavorite={isFavorite(card.data.mobId)}
-                              onToggleFavorite={toggleFavorite}
-                              level={mobLevelMap.get(card.data.mobId) ?? null}
-                            />
-                          )
-                        } else {
-                          return (
-                            <ItemCard
-                              key={`item-${card.data.itemId}-${index}`}
-                              itemId={card.data.itemId}
-                              itemName={card.data.itemName}
-                              chineseItemName={card.data.chineseItemName}
-                              monsterCount={card.data.monsterCount}
-                              onCardClick={modals.openItemModal}
-                              isFavorite={isItemFavorite(card.data.itemId)}
-                              onToggleFavorite={toggleItemFavorite}
-                              source={card.data.source}
-                              reqLevel={itemAttributesMap.get(card.data.itemId)?.equipment?.requirements?.req_level ?? null}
-                            />
-                          )
-                        }
-                      })}
-                    </div>
-                  ) : (
-                    /* 有搜尋詞：分區顯示怪物和物品 */
-                    <>
-                      {/* 怪物區塊 */}
-                      {shouldShowMonsters && displayedMonsters.length > 0 && (
-                        <>
-                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto mt-6 sm:mt-8">
-                            {displayedMonsters.map((monster) => (
-                              <MonsterCard
-                                key={monster.mobId}
-                                mobId={monster.mobId}
-                                mobName={monster.mobName}
-                                chineseMobName={monster.chineseMobName}
-                                dropCount={monster.dropCount}
-                                onCardClick={modals.openMonsterModal}
-                                isFavorite={isFavorite(monster.mobId)}
-                                onToggleFavorite={toggleFavorite}
-                                level={mobLevelMap.get(monster.mobId) ?? null}
-                              />
-                            ))}
-                          </div>
-                          {/* 無限滾動觸發器 */}
-                          {monstersInfiniteScroll.hasMore && (
-                            <div
-                              ref={monstersInfiniteScroll.observerTarget}
-                              className="h-20 flex items-center justify-center max-w-7xl mx-auto mt-4"
-                            >
-                              <div className="text-gray-500 dark:text-gray-400 text-sm">載入更多怪物...</div>
-                            </div>
-                          )}
-                          {/* 上限提示訊息 */}
-                          {monstersInfiniteScroll.isMaxReached && (
-                            <div className="max-w-7xl mx-auto mt-4 p-4 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
-                              <div className="flex items-center gap-3">
-                                <svg className="w-6 h-6 text-yellow-600 dark:text-yellow-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <p className="text-yellow-800 dark:text-yellow-200 text-sm">
-                                  {t('scroll.maxReached').replace('{count}', displayedMonsters.length.toString())}
-                                </p>
-                              </div>
-                            </div>
-                          )}
-                        </>
-                      )}
-
-                      {/* 物品區塊 */}
-                      {shouldShowItems && displayedItems.length > 0 && (
-                        <>
-                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto mt-6 sm:mt-8">
-                            {displayedItems.map((item) => (
-                              <ItemCard
-                                key={item.itemId}
-                                itemId={item.itemId}
-                                itemName={item.itemName}
-                                chineseItemName={item.chineseItemName}
-                                monsterCount={item.monsterCount}
-                                onCardClick={modals.openItemModal}
-                                isFavorite={isItemFavorite(item.itemId)}
-                                onToggleFavorite={toggleItemFavorite}
-                                source={item.source}
-                                reqLevel={itemAttributesMap.get(item.itemId)?.equipment?.requirements?.req_level ?? null}
-                              />
-                            ))}
-                          </div>
-                          {/* 無限滾動觸發器 */}
-                          {itemsInfiniteScroll.hasMore && (
-                            <div
-                              ref={itemsInfiniteScroll.observerTarget}
-                              className="h-20 flex items-center justify-center max-w-7xl mx-auto mt-4"
-                            >
-                              <div className="text-gray-500 dark:text-gray-400 text-sm">載入更多物品...</div>
-                            </div>
-                          )}
-                          {/* 上限提示訊息 */}
-                          {itemsInfiniteScroll.isMaxReached && (
-                            <div className="max-w-7xl mx-auto mt-4 p-4 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
-                              <div className="flex items-center gap-3">
-                                <svg className="w-6 h-6 text-yellow-600 dark:text-yellow-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <p className="text-yellow-800 dark:text-yellow-200 text-sm">
-                                  {t('scroll.maxReached').replace('{count}', displayedItems.length.toString())}
-                                </p>
-                              </div>
-                            </div>
-                          )}
-                        </>
-                      )}
-                    </>
-                  )}
-                </>
-              ) : (
-                <div className="text-center py-12 mt-8">
-                  <div className="text-5xl sm:text-6xl mb-4">🔍</div>
-                  <p className="text-gray-600 dark:text-gray-400 text-lg font-medium mb-2">
-                    {search.searchTerm ? t('empty.noResults') : t('empty.noData')}
-                  </p>
-                  {search.searchTerm && (
-                    <p className="text-gray-500 dark:text-gray-500 text-sm">
-                      {t('empty.tryOtherKeywords')}
-                    </p>
-                  )}
-                </div>
-              )
+              /* 全部模式 */
+              <AllItemsView
+                mixedCards={mixedCards}
+                displayedMonsters={displayedMonsters}
+                displayedItems={displayedItems}
+                shouldShowMonsters={shouldShowMonsters}
+                shouldShowItems={shouldShowItems}
+                monstersInfiniteScroll={monstersInfiniteScroll}
+                itemsInfiniteScroll={itemsInfiniteScroll}
+                hasSearchOrFilter={debouncedSearchTerm.trim() !== '' || advancedFilter.enabled}
+                hasAnyData={uniqueAllMonsters.length > 0 || uniqueAllItems.length > 0}
+                hasSearchTerm={!!search.searchTerm}
+                mobLevelMap={mobLevelMap}
+                itemAttributesMap={itemAttributesMap}
+                onMonsterCardClick={modals.openMonsterModal}
+                onItemCardClick={modals.openItemModal}
+                isFavorite={isFavorite}
+                isItemFavorite={isItemFavorite}
+                onToggleFavorite={toggleFavorite}
+                onToggleItemFavorite={toggleItemFavorite}
+                t={t}
+              />
             )}
           </>
         )}
@@ -676,6 +491,8 @@ export default function Home() {
         isItemFavorite={isItemFavorite}
         onToggleItemFavorite={toggleItemFavorite}
         onItemClick={handleItemClickFromMonsterModal}
+        hasPreviousModal={modals.hasPreviousModal}
+        onGoBack={modals.goBack}
       />
 
       {/* Item Drops Modal */}
@@ -693,6 +510,8 @@ export default function Home() {
         onToggleMonsterFavorite={toggleFavorite}
         onMonsterClick={handleMonsterClickFromItemModal}
         onGachaMachineClick={handleGachaMachineClick}
+        hasPreviousModal={modals.hasPreviousModal}
+        onGoBack={modals.goBack}
       />
 
       {/* Bug Report Modal */}
@@ -715,10 +534,9 @@ export default function Home() {
         isOpen={modals.isGachaModalOpen}
         onClose={modals.closeGachaModal}
         initialMachineId={modals.selectedGachaMachineId}
-        onItemClick={(itemId, itemName) => {
-          // 不關閉 GachaMachineModal，直接在上層打開 ItemModal
-          modals.openItemModal(itemId, itemName)
-        }}
+        onItemClick={handleItemClickFromGachaModal}
+        hasPreviousModal={modals.hasPreviousModal}
+        onGoBack={modals.goBack}
       />
 
       {/* Accuracy Calculator Modal */}
@@ -748,7 +566,7 @@ export default function Home() {
               d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
             />
           </svg>
-          <span className="text-sm font-medium hidden group-hover:inline-block">{t('gacha.button')}</span>
+          <span className="text-sm font-medium hidden group-hover:inline-block lg:inline-block">{t('gacha.button')}</span>
         </div>
       </button>
 
@@ -764,7 +582,7 @@ export default function Home() {
             <circle cx="12" cy="12" r="6" strokeWidth="2"/>
             <circle cx="12" cy="12" r="2" fill="currentColor"/>
           </svg>
-          <span className="text-sm font-medium hidden group-hover:inline-block">命中率</span>
+          <span className="text-sm font-medium hidden group-hover:inline-block lg:inline-block">命中率</span>
         </div>
       </button>
 

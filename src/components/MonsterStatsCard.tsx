@@ -293,18 +293,21 @@ export function MonsterStatsCard({ mobInfo }: MonsterStatsCardProps) {
         </div>
       )}
 
-      {/* 經驗值比率 */}
-      {mobInfo.expBar?.mobExpHpRatio !== null && (
+      {/* 經驗效率 */}
+      {mobInfo.expBar?.expEfficiency !== null && (
         <div className="mt-4">
           <div className="bg-white dark:bg-gray-800 rounded-lg p-3 shadow-sm">
             <div className="flex items-center gap-2">
               <TrophyIcon className="w-5 h-5 text-amber-600 dark:text-amber-400" />
               <div className="flex-1">
                 <div className="text-xs text-gray-500 dark:text-gray-400">
-                  {t('monster.expHpRatio')}
+                  {t('monster.expEfficiency')}
                 </div>
                 <div className="text-lg font-bold text-amber-600 dark:text-amber-400">
-                  {mobInfo.expBar.mobExpHpRatio?.toFixed(2)}
+                  {mobInfo.expBar.expEfficiency?.toFixed(2)}{' '}
+                  <span className="text-sm text-gray-500 dark:text-gray-400 ml-1">
+                    (每點血 {mobInfo.expBar.expEfficiency?.toFixed(2)} 經驗)
+                  </span>
                 </div>
               </div>
             </div>

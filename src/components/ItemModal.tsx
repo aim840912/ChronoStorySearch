@@ -26,6 +26,9 @@ interface ItemModalProps {
   onMonsterClick: (mobId: number, mobName: string) => void
   // 轉蛋機相關 props
   onGachaMachineClick: (machineId: number) => void
+  // 導航相關 props
+  hasPreviousModal?: boolean
+  onGoBack?: () => void
 }
 
 /**
@@ -46,6 +49,8 @@ export function ItemModal({
   onToggleMonsterFavorite,
   onMonsterClick,
   onGachaMachineClick,
+  hasPreviousModal,
+  onGoBack,
 }: ItemModalProps) {
   const { t, language, setLanguage } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
@@ -217,7 +222,20 @@ export function ItemModal({
         {/* Modal Header */}
         <div className="sticky top-0 z-10 bg-green-500 dark:bg-green-600 p-4 sm:p-6 rounded-t-xl">
           <div className="flex items-center justify-between">
-            <div className="flex-1"></div>
+            <div className="flex-1 flex items-center">
+              {hasPreviousModal && onGoBack && (
+                <button
+                  onClick={onGoBack}
+                  className="p-3 min-h-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center gap-2"
+                  aria-label={t('modal.goBack')}
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                  <span className="text-sm font-medium hidden sm:inline">{t('modal.goBack')}</span>
+                </button>
+              )}
+            </div>
             <div className="text-center">
               <h2 className="text-xl sm:text-2xl font-bold text-white mb-1">{displayItemName}</h2>
               <p className="text-green-100 text-xs sm:text-sm">

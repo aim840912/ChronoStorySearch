@@ -181,11 +181,11 @@ export interface MonsterStats {
   minimumPushDamage: number | null
 }
 
-// 經驗值比率資料類型
+// 經驗值效率資料類型
 export interface ExpBar {
-  minExpHpRatio: number | null
-  maxExpHpRatio: number | null
-  mobExpHpRatio: number | null
+  minExpHpRatio: number | null       // 最小 HP/EXP 比率（統計用）
+  maxExpHpRatio: number | null       // 最大 HP/EXP 比率（統計用）
+  expEfficiency: number | null       // 經驗效率 (exp / max_hp)，數值越高越好
 }
 
 // 怪物完整資訊類型（mob-info.json 的頂層結構）
