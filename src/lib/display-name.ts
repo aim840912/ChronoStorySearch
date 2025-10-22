@@ -53,3 +53,14 @@ export function getItemDisplayName(
 ): string {
   return getDisplayName(itemName, chineseItemName, language)
 }
+
+/**
+ * 獲取地圖顯示名稱
+ */
+export function getMapDisplayName(
+  mapName: string,
+  chineseMapName: string | null | undefined,
+  language: Language
+): string {
+  return getDisplayName(mapName, chineseMapName, language)
+}

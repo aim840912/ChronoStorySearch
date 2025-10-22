@@ -56,3 +56,13 @@ body {
   touch-action: pan-y;
   -webkit-overflow-scrolling: touch;
 }
+
+/* 隱藏滾動條但保持可滾動功能 */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}

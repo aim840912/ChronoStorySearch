@@ -51,6 +51,8 @@ export function ItemModal({
   const isDev = process.env.NODE_ENV === 'development'
   const [showToast, setShowToast] = useState(false)
   const [toastMessage, setToastMessage] = useState('')
+  // 手機版 Tab 狀態（'info' = 物品資訊, 'sources' = 掉落來源）
+  const [mobileTab, setMobileTab] = useState<'info' | 'sources'>('info')
 
   // 懶加載怪物資訊資料 (用於顯示怪物血量)
   const {
@@ -205,11 +207,11 @@ export function ItemModal({
 
   return (
     <div
-      className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+      className="fixed inset-0 z-[60] flex items-center justify-center p-0 sm:p-4 bg-black/50 backdrop-blur-sm"
       onClick={onClose}
     >
       <div
-        className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-6xl max-h-[90vh] overflow-y-auto"
+        className="bg-white dark:bg-gray-800 rounded-none sm:rounded-xl shadow-2xl w-full max-w-6xl h-full sm:h-auto sm:max-h-[90vh] overflow-hidden flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
@@ -226,7 +228,7 @@ export function ItemModal({
               {/* 語言切換按鈕 */}
               <button
                 onClick={toggleLanguage}
-                className="p-2 sm:p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30"
+                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center"
                 aria-label={t('language.toggle')}
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -241,7 +243,7 @@ export function ItemModal({
               {/* 最愛按鈕 */}
               <button
                 onClick={() => itemId !== null && onToggleFavorite(itemId, itemName)}
-                className={`p-2 sm:p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 ${
+                className={`p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center ${
                   isFavorite
                     ? 'bg-red-500 hover:bg-red-600 text-white'
                     : 'bg-white/20 hover:bg-white/30 text-white border border-white/30'
@@ -265,7 +267,7 @@ export function ItemModal({
               {/* 分享按鈕 */}
               <button
                 onClick={handleShare}
-                className="p-2 sm:p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30"
+                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center"
                 aria-label={t('modal.share')}
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -280,7 +282,7 @@ export function ItemModal({
               {/* 關閉按鈕 */}
               <button
                 onClick={onClose}
-                className="text-white hover:bg-white/20 rounded-full p-2 sm:p-2 transition-colors"
+                className="p-3 min-h-[44px] min-w-[44px] text-white hover:bg-white/20 rounded-full transition-colors flex items-center justify-center"
                 aria-label={t('modal.close')}
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -296,10 +298,38 @@ export function ItemModal({
           </div>
         </div>
 
+        {/* 手機版 Tab 切換（只在手機版顯示） */}
+        <div className="lg:hidden border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+          <div className="flex">
+            <button
+              onClick={() => setMobileTab('info')}
+              className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
+                mobileTab === 'info'
+                  ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 bg-blue-50 dark:bg-blue-900/20'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+              }`}
+            >
+              {t('item.info') || '物品資訊'}
+            </button>
+            <button
+              onClick={() => setMobileTab('sources')}
+              className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
+                mobileTab === 'sources'
+                  ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 bg-blue-50 dark:bg-blue-900/20'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+              }`}
+            >
+              {t('item.dropSources') || '掉落來源'} ({itemDrops.length + itemGachaSources.length})
+            </button>
+          </div>
+        </div>
+
         {/* Modal Content - 左右分欄佈局（手機版上下堆疊） */}
-        <div className="p-4 sm:p-6 flex flex-col lg:flex-row gap-4 sm:gap-6">
-          {/* 左側：物品屬性（桌面版固定位置） */}
-          <div className="lg:w-1/3 lg:sticky lg:top-32 lg:self-start">
+        <div className="p-3 sm:p-6 flex flex-col lg:flex-row gap-3 sm:gap-6 flex-1 overflow-hidden">
+          {/* 左側：物品屬性（桌面版顯示 / 手機版根據 Tab 顯示） */}
+          <div className={`lg:w-1/3 space-y-4 overflow-y-auto scrollbar-hide ${
+            mobileTab === 'sources' ? 'hidden lg:block' : ''
+          }`}>
             {/* 物品圖示 */}
             <div className="flex justify-center mb-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -312,12 +342,14 @@ export function ItemModal({
             <ItemAttributesCard attributes={itemAttributes} />
           </div>
 
-          {/* 右側：轉蛋機來源 + 掉落來源怪物列表（可滾動） */}
-          <div className="lg:w-2/3">
+          {/* 右側：轉蛋機來源 + 掉落來源怪物列表（桌面版顯示 / 手機版根據 Tab 顯示） */}
+          <div className={`lg:w-2/3 overflow-y-auto scrollbar-hide ${
+            mobileTab === 'info' ? 'hidden lg:block' : ''
+          }`}>
             {/* 轉蛋機來源區塊 */}
             {itemGachaSources.length > 0 && (
               <div className="mb-8">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 flex items-center gap-2">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 flex items-center gap-2 hidden lg:flex">
                   <svg className="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
@@ -374,7 +406,7 @@ export function ItemModal({
             {/* 怪物掉落區塊 */}
             {itemDrops.length > 0 && (
               <div>
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden lg:block">
                   {t('card.droppedBy')}
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">

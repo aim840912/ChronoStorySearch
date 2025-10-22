@@ -407,7 +407,7 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
         </div>
 
         {/* Modal Content */}
-        <div className="flex-1 overflow-y-auto p-4 sm:p-6">
+        <div className="flex-1 overflow-y-auto scrollbar-hide p-4 sm:p-6">
           {isLoading ? (
             <div className="text-center py-12">
               <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
@@ -521,7 +521,7 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
                       <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
                         {t('gacha.results')}
                       </h3>
-                      <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 2xl:grid-cols-14 gap-2 max-h-[500px] overflow-y-auto p-2">
+                      <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 2xl:grid-cols-14 gap-2 max-h-[500px] overflow-y-auto scrollbar-hide p-2">
                         {gachaResults.map((item) => (
                           <GachaResultCard
                             key={`draw-${item.drawId}`}

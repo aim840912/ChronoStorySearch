@@ -4,10 +4,11 @@ import { useEffect, useMemo, useState } from 'react'
 import type { DropItem, Language, ItemAttributes } from '@/types'
 import { DropItemCard } from './DropItemCard'
 import { MonsterStatsCard } from './MonsterStatsCard'
+import { MonsterLocationsCard } from './MonsterLocationsCard'
 import { clientLogger } from '@/lib/logger'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { useLazyMobInfo } from '@/hooks/useLazyData'
+import { useLazyMobInfo, useLazyMapMonsterData } from '@/hooks/useLazyData'
 
 interface MonsterModalProps {
   isOpen: boolean
@@ -45,12 +46,20 @@ export function MonsterModal({
   const isDev = process.env.NODE_ENV === 'development'
   const [showToast, setShowToast] = useState(false)
   const [toastMessage, setToastMessage] = useState('')
+  // 手機版 Tab 狀態（'info' = 怪物資訊, 'drops' = 掉落物品）
+  const [mobileTab, setMobileTab] = useState<'info' | 'drops'>('info')
 
   // 懶加載怪物資訊資料
   const {
     data: mobInfoData,
     loadData: loadMobInfo,
   } = useLazyMobInfo()
+
+  // 懶加載地圖怪物資料
+  const {
+    monsterLocationsMap,
+    loadData: loadMapMonsterData,
+  } = useLazyMapMonsterData()
 
   // 語言切換函數
   const toggleLanguage = () => {
@@ -92,12 +101,20 @@ export function MonsterModal({
     )
   }, [monsterId, mobInfoData])
 
-  // 當 Modal 開啟時載入怪物資訊資料
+  // 查找怪物出沒地圖
+  const monsterLocations = useMemo(() => {
+    if (!monsterData || !monsterLocationsMap) return undefined
+    // 使用英文名稱查詢（資料庫中使用英文名稱）
+    return monsterLocationsMap.get(monsterData.mobName)
+  }, [monsterData, monsterLocationsMap])
+
+  // 當 Modal 開啟時載入怪物資訊資料和地圖資料
   useEffect(() => {
     if (isOpen) {
       loadMobInfo()
+      loadMapMonsterData()
     }
-  }, [isOpen, loadMobInfo])
+  }, [isOpen, loadMobInfo, loadMapMonsterData])
 
   // ESC 鍵關閉 modal
   useEffect(() => {
@@ -136,11 +153,11 @@ export function MonsterModal({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center p-0 sm:p-4 bg-black/50 backdrop-blur-sm"
       onClick={onClose}
     >
       <div
-        className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-6xl max-h-[90vh] overflow-y-auto"
+        className="bg-white dark:bg-gray-800 rounded-none sm:rounded-xl shadow-2xl w-full max-w-6xl h-full sm:h-auto sm:max-h-[90vh] overflow-hidden flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
@@ -157,7 +174,7 @@ export function MonsterModal({
               {/* 語言切換按鈕 */}
               <button
                 onClick={toggleLanguage}
-                className="p-2 sm:p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30"
+                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center"
                 aria-label={t('language.toggle')}
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -172,7 +189,7 @@ export function MonsterModal({
               {/* 最愛按鈕 */}
               <button
                 onClick={() => monsterId && onToggleFavorite(monsterId, monsterName)}
-                className={`p-2 sm:p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 ${
+                className={`p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center ${
                   isFavorite
                     ? 'bg-red-500 hover:bg-red-600 text-white'
                     : 'bg-white/20 hover:bg-white/30 text-white border border-white/30'
@@ -196,7 +213,7 @@ export function MonsterModal({
               {/* 分享按鈕 */}
               <button
                 onClick={handleShare}
-                className="p-2 sm:p-3 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30"
+                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center"
                 aria-label={t('modal.share')}
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -211,7 +228,7 @@ export function MonsterModal({
               {/* 關閉按鈕 */}
               <button
                 onClick={onClose}
-                className="text-white hover:bg-white/20 rounded-full p-2 sm:p-2 transition-colors"
+                className="p-3 min-h-[44px] min-w-[44px] text-white hover:bg-white/20 rounded-full transition-colors flex items-center justify-center"
                 aria-label={t('modal.close')}
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -227,10 +244,38 @@ export function MonsterModal({
           </div>
         </div>
 
+        {/* 手機版 Tab 切換（只在手機版顯示） */}
+        <div className="lg:hidden border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+          <div className="flex">
+            <button
+              onClick={() => setMobileTab('info')}
+              className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
+                mobileTab === 'info'
+                  ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 bg-blue-50 dark:bg-blue-900/20'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+              }`}
+            >
+              {t('monster.info') || '怪物資訊'}
+            </button>
+            <button
+              onClick={() => setMobileTab('drops')}
+              className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
+                mobileTab === 'drops'
+                  ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 bg-blue-50 dark:bg-blue-900/20'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+              }`}
+            >
+              {t('monster.drops') || '掉落物品'} ({monsterDrops.length})
+            </button>
+          </div>
+        </div>
+
         {/* Modal Content - 左右分欄佈局（手機版上下堆疊） */}
-        <div className="p-4 sm:p-6 flex flex-col lg:flex-row gap-4 sm:gap-6">
-          {/* 左側：怪物屬性（桌面版固定位置） */}
-          <div className="lg:w-1/3 lg:sticky lg:top-32 lg:self-start">
+        <div className="p-3 sm:p-6 flex flex-col lg:flex-row gap-3 sm:gap-6 flex-1 overflow-hidden">
+          {/* 左側：怪物屬性（桌面版顯示 / 手機版根據 Tab 顯示） */}
+          <div className={`lg:w-1/3 space-y-4 overflow-y-auto scrollbar-hide ${
+            mobileTab === 'drops' ? 'hidden lg:block' : ''
+          }`}>
             {/* 怪物圖示 */}
             <div className="flex justify-center mb-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -240,12 +285,21 @@ export function MonsterModal({
                 className="w-24 h-24 sm:w-32 sm:h-32 object-contain"
               />
             </div>
+            {/* 怪物屬性卡片 */}
             <MonsterStatsCard mobInfo={mobInfo} />
+            {/* 出沒地圖卡片 */}
+            <MonsterLocationsCard
+              monsterName={monsterData?.mobName || monsterName}
+              locations={monsterLocations}
+              mobInfoData={mobInfoData}
+            />
           </div>
 
-          {/* 右側：掉落物品（可滾動） */}
-          <div className="lg:w-2/3">
-            <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4">
+          {/* 右側：掉落物品（桌面版顯示 / 手機版根據 Tab 顯示） */}
+          <div className={`lg:w-2/3 overflow-y-auto scrollbar-hide ${
+            mobileTab === 'info' ? 'hidden lg:block' : ''
+          }`}>
+            <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden lg:block">
               {t('monster.drops')}
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
