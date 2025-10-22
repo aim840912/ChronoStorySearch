@@ -3,7 +3,7 @@
 import { useMemo } from 'react'
 import type { ItemAttributes } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { calculateMaxStatCombinations, formatStatName } from '@/lib/equipment-stats-utils'
+import { calculateMaxStatCombinations } from '@/lib/equipment-stats-utils'
 
 interface ItemAttributesCardProps {
   attributes: ItemAttributes | null
@@ -20,6 +20,42 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
   const maxStatCombinations = useMemo(() => {
     return calculateMaxStatCombinations(attributes)
   }, [attributes])
+
+  // 建立屬性到「當其他屬性最大時」最大值的映射
+  const maxStatByAttribute = useMemo(() => {
+    const map = new Map<string, {
+      maxValue: number
+      maxedStat: string
+      maxedStatAbsValue: number
+    }>()
+
+    if (!maxStatCombinations || maxStatCombinations.length === 0 || !attributes?.equipment?.stats) {
+      return map
+    }
+
+    const { stats } = attributes.equipment
+
+    // 從 maxStatCombinations 提取每個屬性的最大值及其對應的組合資訊
+    maxStatCombinations.forEach(combination => {
+      const maxedStatBase = stats[combination.maxedStat] || 0
+      const maxedStatAbsValue = maxedStatBase + combination.maxedValue
+
+      combination.otherStats.forEach(({ stat, maxPossible }) => {
+        const current = map.get(stat)
+
+        // 如果當前屬性沒有記錄，或新的 maxPossible 更大，則更新
+        if (!current || maxPossible > current.maxValue) {
+          map.set(stat, {
+            maxValue: maxPossible,
+            maxedStat: combination.maxedStat,
+            maxedStatAbsValue: maxedStatAbsValue
+          })
+        }
+      })
+    })
+
+    return map
+  }, [maxStatCombinations, attributes])
 
   // 處理 Scroll (卷軸) 類型物品
   if (attributes && attributes.sub_type === 'Scroll' && attributes.scroll) {
@@ -374,100 +410,73 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
               const minValue = hasVariation ? variation.min : null
               const maxValue = hasVariation ? variation.max : null
 
+              // 檢查是否為主屬性
+              const isMainStat = ['str', 'dex', 'int', 'luk'].includes(key)
+              const maxStatInfo = isMainStat ? maxStatByAttribute.get(key) : null
+
+              // maxStatInfo.maxValue 存儲的是增量，需要加上預設值得到絕對值
+              const absoluteMaxValue = maxStatInfo && value !== null
+                ? value + maxStatInfo.maxValue  // value 是預設值，maxStatInfo.maxValue 是增量
+                : null
+
               return (
                 <div
                   key={key}
                   className="bg-white dark:bg-gray-800 rounded-lg px-4 py-2 shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div className="flex justify-between items-center gap-4">
-                    {/* 屬性名稱（左側） */}
-                    <div className="text-sm text-gray-600 dark:text-gray-400 min-w-[80px]">
-                      {label}
-                    </div>
-
-                    {/* 數值顯示區域（右側） */}
-                    <div className="flex items-center gap-3">
-                      {/* 最低值 */}
-                      {hasVariation && minValue !== null && (
-                        <span className="text-sm text-red-500 dark:text-red-400 min-w-[40px] text-right">
-                          {minValue}
-                        </span>
-                      )}
-
-                      {/* 預設值 */}
-                      <div className="text-lg font-bold text-gray-900 dark:text-gray-100 min-w-[60px] text-center">
-                        {value}
+                  <div className="flex flex-col gap-1">
+                    {/* 第一行：原有的屬性顯示 */}
+                    <div className="flex justify-between items-center gap-4">
+                      {/* 屬性名稱（左側） */}
+                      <div className="text-sm text-gray-600 dark:text-gray-400 min-w-[80px]">
+                        {label}
                       </div>
 
-                      {/* 最高值 */}
-                      {hasVariation && maxValue !== null && (
-                        <span className="text-sm text-green-500 dark:text-green-400 min-w-[40px] text-left">
-                          {maxValue}
-                        </span>
-                      )}
+                      {/* 數值顯示區域（右側） */}
+                      <div className="flex items-center gap-3">
+                        {/* 最低值 */}
+                        {hasVariation && minValue !== null && (
+                          <span className="text-sm text-red-500 dark:text-red-400 min-w-[40px] text-right">
+                            {minValue}
+                          </span>
+                        )}
+
+                        {/* 預設值 */}
+                        <div className="text-lg font-bold text-gray-900 dark:text-gray-100 min-w-[60px] text-center">
+                          {value}
+                        </div>
+
+                        {/* 最高值 */}
+                        {hasVariation && maxValue !== null && (
+                          <span className="text-sm text-green-500 dark:text-green-400 min-w-[40px] text-left">
+                            {maxValue}
+                          </span>
+                        )}
+                      </div>
                     </div>
+
+                    {/* 第二行：主屬性的 Max Stat 提示 */}
+                    {absoluteMaxValue !== null && maxStatInfo && (
+                      <div className="flex items-center justify-end gap-1 text-xs text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 px-2 py-1 rounded">
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                        <span>
+                          {t('item.when')}{t(`item.${maxStatInfo.maxedStat}`)}{' '}
+                          <span className="text-green-500 dark:text-green-400 font-semibold">
+                            {maxStatInfo.maxedStatAbsValue}
+                          </span>
+                          {t('item.timeComma')}{label}{t('item.maxIs')}{' '}
+                          <span className="text-green-500 dark:text-green-400 font-semibold">
+                            {absoluteMaxValue}
+                          </span>
+                        </span>
+                      </div>
+                    )}
                   </div>
                 </div>
               )
             })}
-          </div>
-        </div>
-      )}
-
-      {/* 最大屬性組合 */}
-      {maxStatCombinations && maxStatCombinations.length > 0 && (
-        <div className="mt-4">
-          <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-            {t('item.maxStatCombinations')}
-          </h4>
-          <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-800">
-            <div className="space-y-2">
-              {maxStatCombinations.map((combination, index) => {
-                const { maxedStat, maxedValue, otherStats } = combination
-
-                return (
-                  <div
-                    key={index}
-                    className="bg-white dark:bg-gray-800 rounded-lg p-3 shadow-sm"
-                  >
-                    <div className="flex flex-col gap-2">
-                      {/* 主要描述：當 X 達到最大值時 */}
-                      <div className="flex items-center gap-2 text-sm">
-                        <span className="text-gray-600 dark:text-gray-400">
-                          {t('item.when')}
-                        </span>
-                        <span className="font-bold text-blue-600 dark:text-blue-400">
-                          {formatStatName(maxedStat)}
-                        </span>
-                        <span className="text-gray-600 dark:text-gray-400">
-                          {t('item.reaches')}
-                        </span>
-                        <span className="font-bold text-blue-600 dark:text-blue-400">
-                          +{maxedValue}
-                        </span>
-                      </div>
-
-                      {/* 每個其他屬性獨立顯示 */}
-                      <div className="pl-6 space-y-1 border-l-2 border-gray-300 dark:border-gray-600">
-                        {otherStats.map(({ stat, maxPossible }) => (
-                          <div key={stat} className="flex items-center gap-2 text-sm">
-                            <span className="font-semibold text-gray-700 dark:text-gray-300">
-                              {formatStatName(stat)}
-                            </span>
-                            <span className="text-gray-600 dark:text-gray-400">
-                              {t('item.maxValue')}
-                            </span>
-                            <span className="font-bold text-green-600 dark:text-green-400">
-                              +{maxPossible}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
           </div>
         </div>
       )}
