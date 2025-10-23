@@ -16859,7 +16859,7 @@
     "chance": 0.6,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
+    "chineseItemName": "火精靈的火精",
     "chineseMobName": "火精靈"
   },
   {
@@ -37077,7 +37077,7 @@
     "chance": 0.00075,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
+    "chineseItemName": "飾品智力卷軸100%",
     "chineseMobName": "煉獄獵犬"
   },
   {
@@ -37319,7 +37319,7 @@
     "chance": 0.01,
     "minQty": 1,
     "maxQty": 4,
-    "chineseItemName": null,
+    "chineseItemName": "頭盔敏捷詛咒卷軸30%",
     "chineseMobName": "地獄巴洛古"
   },
   {
@@ -37330,7 +37330,7 @@
     "chance": 0.01,
     "minQty": 1,
     "maxQty": 4,
-    "chineseItemName": null,
+    "chineseItemName": "火槍攻擊詛咒卷軸30%",
     "chineseMobName": "地獄巴洛古"
   },
   {
@@ -38595,7 +38595,7 @@
     "chance": 0.2,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": null,
+    "chineseItemName": "紅豆饅頭",
     "chineseMobName": "雪毛怪人"
   },
   {

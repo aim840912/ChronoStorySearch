@@ -79,6 +79,7 @@ tests/e2e/reports/
 tests/e2e/results/
 tests/e2e/results.json
 tests/e2e/junit.xml
+playwright-report/
 
 # 臨時測試腳本
 test-*.js
