@@ -68,15 +68,15 @@ export function GameCommandsModal({ isOpen, onClose }: GameCommandsModalProps) {
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-2 sm:p-4"
+      className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-2 sm:p-4"
       onClick={onClose}
     >
       <div
-        className="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-3xl w-full flex flex-col max-h-[95vh] sm:max-h-none"
+        className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-w-3xl w-full flex flex-col max-h-[90vh] overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="bg-green-500 dark:bg-green-600 text-white px-4 py-3 sm:px-6 sm:py-4">
+        <div className="sticky top-0 z-10 bg-green-500 dark:bg-green-600 text-white px-4 py-3 sm:px-6 sm:py-4 rounded-t-xl">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 sm:gap-3">
               <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -91,7 +91,7 @@ export function GameCommandsModal({ isOpen, onClose }: GameCommandsModalProps) {
             </div>
             <button
               onClick={onClose}
-              className="text-white hover:bg-green-600 dark:hover:bg-green-700 rounded-full p-1.5 sm:p-2 transition-colors"
+              className="text-white hover:bg-white/20 rounded-full p-3 min-h-[44px] min-w-[44px] transition-all duration-200 flex items-center justify-center"
               aria-label={t('commands.close')}
             >
               <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -119,7 +119,7 @@ export function GameCommandsModal({ isOpen, onClose }: GameCommandsModalProps) {
                   </div>
                   <button
                     onClick={() => copyCommand(cmd.command, cmd.parameters)}
-                    className="flex-shrink-0 bg-green-500 hover:bg-green-600 active:bg-green-700 dark:bg-green-600 dark:hover:bg-green-700 dark:active:bg-green-800 text-white px-4 py-2 sm:px-3 sm:py-1.5 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1.5 w-full sm:w-auto"
+                    className="flex-shrink-0 bg-green-500 hover:bg-green-600 active:bg-green-700 dark:bg-green-600 dark:hover:bg-green-700 dark:active:bg-green-800 text-white px-4 py-2 sm:px-3 sm:py-1.5 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1.5 w-full sm:w-auto min-h-[44px]"
                     aria-label={`${t('commands.copy')} ${cmd.command}`}
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
