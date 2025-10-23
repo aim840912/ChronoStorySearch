@@ -356,9 +356,9 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 pb-8 sm:pb-12">
         {/* Sticky Header - 固定搜尋區域 */}
-        <div className="sticky top-0 z-40 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 backdrop-blur-sm pt-8 sm:pt-12 pb-4 sm:pb-6 shadow-md">
+        <div className="sticky top-0 z-40 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 backdrop-blur-sm pt-4 sm:pt-6 pb-3 sm:pb-4 shadow-md">
           {/* 標題區域 */}
-          <div className="relative text-center mb-6 sm:mb-8 pt-2 pr-20 sm:pr-0">
+          <div className="relative text-center mb-4 sm:mb-6 pt-2 pr-20 sm:pr-0">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
               {t('app.title')}
             </h1>
