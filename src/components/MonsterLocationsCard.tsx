@@ -3,7 +3,7 @@
 import { useMemo } from 'react'
 import type { MapInfo, MobInfo } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { getMonsterDisplayName, getMapDisplayName } from '@/lib/display-name'
+import { getMonsterDisplayName } from '@/lib/display-name'
 
 interface MonsterLocationsCardProps {
   monsterName: string
@@ -124,7 +124,7 @@ export function MonsterLocationsCard({
                 />
               </svg>
               <span className="text-sm font-semibold text-gray-800 dark:text-gray-200">
-                {getMapDisplayName(location.name, location.chineseName, language)}
+                {location.name}
               </span>
             </div>
 
