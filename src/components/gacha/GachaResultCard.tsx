@@ -1,5 +1,6 @@
 'use client'
 
+import { memo } from 'react'
 import type { GachaItem } from '@/types'
 import { getItemImageUrl } from '@/lib/image-utils'
 
@@ -10,7 +11,7 @@ interface GachaResultCardProps {
 /**
  * 抽獎結果卡片元件（純展示版 - 只顯示圖片和序號）
  */
-export function GachaResultCard({ item }: GachaResultCardProps) {
+export const GachaResultCard = memo(function GachaResultCard({ item }: GachaResultCardProps) {
   // 物品圖示 URL
   const itemIconUrl = getItemImageUrl(item.itemId)
 
@@ -31,4 +32,4 @@ export function GachaResultCard({ item }: GachaResultCardProps) {
       />
     </div>
   )
-}
+})

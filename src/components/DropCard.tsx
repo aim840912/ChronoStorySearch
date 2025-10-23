@@ -1,5 +1,6 @@
 'use client'
 
+import { memo } from 'react'
 import type { DropItem } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getMonsterDisplayName, getItemDisplayName } from '@/lib/display-name'
@@ -16,8 +17,10 @@ interface DropCardProps {
 /**
  * 掉落資料卡片元件（用於全部模式）
  * 顯示怪物及其掉落物品的完整資訊
+ *
+ * 使用 React.memo 優化以避免不必要的重新渲染
  */
-export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite, maxHP }: DropCardProps) {
+export const DropCard = memo(function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite, maxHP }: DropCardProps) {
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
   const chancePercent = (drop.chance * 100).toFixed(4)
@@ -134,4 +137,4 @@ export function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite, maxH
       </div>
     </div>
   )
-}
+})

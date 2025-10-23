@@ -1,5 +1,6 @@
 'use client'
 
+import { memo } from 'react'
 import type { GachaItem } from '@/types'
 import { GachaResultCard } from './GachaResultCard'
 
@@ -8,7 +9,7 @@ interface GachaResultsGridProps {
   t: (key: string) => string
 }
 
-export function GachaResultsGrid({ results, t }: GachaResultsGridProps) {
+export const GachaResultsGrid = memo(function GachaResultsGrid({ results, t }: GachaResultsGridProps) {
   if (results.length === 0) {
     return (
       <div className="text-center py-12">
@@ -47,4 +48,4 @@ export function GachaResultsGrid({ results, t }: GachaResultsGridProps) {
       </div>
     </div>
   )
-}
+})

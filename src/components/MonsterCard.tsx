@@ -1,5 +1,6 @@
 'use client'
 
+import { memo } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getMonsterDisplayName } from '@/lib/display-name'
 import { getMonsterImageUrl } from '@/lib/image-utils'
@@ -18,8 +19,10 @@ interface MonsterCardProps {
 /**
  * 怪物卡片元件（用於最愛怪物模式）
  * 顯示怪物基本資訊和掉落物數量
+ *
+ * 使用 React.memo 優化以避免不必要的重新渲染
  */
-export function MonsterCard({
+export const MonsterCard = memo(function MonsterCard({
   mobId,
   mobName,
   chineseMobName,
@@ -104,4 +107,4 @@ export function MonsterCard({
       </div>
     </div>
   )
-}
+})

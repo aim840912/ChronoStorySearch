@@ -1,5 +1,6 @@
 'use client'
 
+import { memo } from 'react'
 import type { GachaItem } from '@/types'
 import { getItemImageUrl } from '@/lib/image-utils'
 
@@ -9,7 +10,7 @@ interface GachaItemCardProps {
   onItemClick?: (itemId: number, itemName: string) => void
 }
 
-export function GachaItemCard({ item, language, onItemClick }: GachaItemCardProps) {
+export const GachaItemCard = memo(function GachaItemCard({ item, language, onItemClick }: GachaItemCardProps) {
   // 根據語言選擇顯示名稱
   const displayName = language === 'zh-TW' ? item.chineseName : (item.name || item.itemName || item.chineseName)
 
@@ -44,4 +45,4 @@ export function GachaItemCard({ item, language, onItemClick }: GachaItemCardProp
       </div>
     </div>
   )
-}
+})

@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, memo } from 'react'
 import type { MobInfo } from '@/types'
 
 interface MonsterSelectorProps {
@@ -18,7 +18,7 @@ interface MonsterSelectorProps {
   t: (key: string, params?: Record<string, string | number>) => string
 }
 
-export function MonsterSelector({
+export const MonsterSelector = memo(function MonsterSelector({
   availableMonsters,
   selectedMobId,
   monsterSearchTerm,
@@ -160,4 +160,4 @@ export function MonsterSelector({
       )}
     </div>
   )
-}
+})

@@ -155,7 +155,6 @@ async function testImageCache() {
     console.log('');
 
     const cacheWorking = phase2Requests.length < phase1Requests.length;
-    const hitRateImproved = parseFloat(statsAfterOpen2.hitRate) > parseFloat(statsAfterOpen1.hitRate);
 
     console.log('┌─────────────────────────────────────────┐');
     console.log('│           快取效能比較                    │');

@@ -1,5 +1,6 @@
 'use client'
 
+import { memo } from 'react'
 import type { DropItem } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getMonsterDisplayName } from '@/lib/display-name'
@@ -16,8 +17,10 @@ interface MonsterDropCardProps {
 /**
  * 怪物掉落卡片元件（用於 ItemModal）
  * 顯示掉落特定物品的怪物資訊，包含掉落率和血量
+ *
+ * 使用 React.memo 優化以避免不必要的重新渲染
  */
-export function MonsterDropCard({
+export const MonsterDropCard = memo(function MonsterDropCard({
   drop,
   monsterHPMap,
   isFavorite,
@@ -117,4 +120,4 @@ export function MonsterDropCard({
       </div>
     </div>
   )
-}
+})

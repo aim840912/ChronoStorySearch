@@ -1,5 +1,6 @@
 'use client'
 
+import { memo } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
 import { getItemImageUrl } from '@/lib/image-utils'
@@ -20,8 +21,10 @@ interface ItemCardProps {
 /**
  * 物品卡片元件（用於最愛物品模式）
  * 顯示物品基本資訊和掉落怪物數量
+ *
+ * 使用 React.memo 優化以避免不必要的重新渲染
  */
-export function ItemCard({
+export const ItemCard = memo(function ItemCard({
   itemId,
   itemName,
   chineseItemName,
@@ -136,4 +139,4 @@ export function ItemCard({
       </div>
     </div>
   )
-}
+})

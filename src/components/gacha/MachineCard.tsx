@@ -1,5 +1,6 @@
 'use client'
 
+import { memo } from 'react'
 import type { GachaMachine } from '@/types'
 
 interface MachineCardProps {
@@ -8,7 +9,7 @@ interface MachineCardProps {
   language: 'zh-TW' | 'en'
 }
 
-export function MachineCard({ machine, onClick, language }: MachineCardProps) {
+export const MachineCard = memo(function MachineCard({ machine, onClick, language }: MachineCardProps) {
   // 根據語言選擇顯示名稱
   const displayName = language === 'zh-TW' && machine.chineseMachineName
     ? machine.chineseMachineName
@@ -31,4 +32,4 @@ export function MachineCard({ machine, onClick, language }: MachineCardProps) {
       </div>
     </button>
   )
-}
+})

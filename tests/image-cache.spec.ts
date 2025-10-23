@@ -1,5 +1,20 @@
 import { test, expect } from '@playwright/test';
 
+// 定義快取統計的類型
+interface ImageCacheStats {
+  hits: number;
+  misses: number;
+  cacheSize: number;
+  hitRate: string;
+}
+
+// 擴展 Window 介面以包含自定義快取 API
+declare global {
+  interface Window {
+    __IMAGE_CACHE_STATS__?: () => ImageCacheStats;
+  }
+}
+
 test.describe('圖片快取系統測試', () => {
   test('應該正確快取圖片並減少重複下載', async ({ page }) => {
     // 監聽所有圖片請求
@@ -50,7 +65,7 @@ test.describe('圖片快取系統測試', () => {
 
     // 檢查快取統計
     const cacheStatsAfterFirstOpen = await page.evaluate(() => {
-      return (window as any).__IMAGE_CACHE_STATS__?.();
+      return window.__IMAGE_CACHE_STATS__?.();
     });
 
     console.log('快取統計（首次開啟）:', cacheStatsAfterFirstOpen);
@@ -79,7 +94,7 @@ test.describe('圖片快取系統測試', () => {
 
     // 檢查快取統計
     const cacheStatsAfterSecondOpen = await page.evaluate(() => {
-      return (window as any).__IMAGE_CACHE_STATS__?.();
+      return window.__IMAGE_CACHE_STATS__?.();
     });
 
     console.log('快取統計（第二次開啟）:', cacheStatsAfterSecondOpen);
@@ -121,13 +136,13 @@ test.describe('圖片快取系統測試', () => {
     await page.waitForTimeout(1000);
 
     const cacheStatsAvailable = await page.evaluate(() => {
-      return typeof (window as any).__IMAGE_CACHE_STATS__ === 'function';
+      return typeof window.__IMAGE_CACHE_STATS__ === 'function';
     });
 
     expect(cacheStatsAvailable).toBe(true);
 
     const stats = await page.evaluate(() => {
-      return (window as any).__IMAGE_CACHE_STATS__();
+      return window.__IMAGE_CACHE_STATS__?.();
     });
 
     expect(stats).toHaveProperty('hits');

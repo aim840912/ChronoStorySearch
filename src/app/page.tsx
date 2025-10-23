@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { useSearchParams } from 'next/navigation'
 import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter } from '@/types'
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
@@ -14,22 +14,9 @@ import { useDataManagement } from '@/hooks/useDataManagement'
 import { useSearchLogic } from '@/hooks/useSearchLogic'
 import { useFilterLogic } from '@/hooks/useFilterLogic'
 import { useInfiniteScroll } from '@/hooks/useInfiniteScroll'
-import { SearchBar } from '@/components/SearchBar'
-import { FilterButtons } from '@/components/FilterButtons'
-import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
-import { MonsterModal } from '@/components/MonsterModal'
-import { ItemModal } from '@/components/ItemModal'
-import { BugReportModal } from '@/components/BugReportModal'
-import { ClearConfirmModal } from '@/components/ClearConfirmModal'
-import { GachaMachineModal } from '@/components/GachaMachineModal'
-import { AccuracyCalculatorModal } from '@/components/AccuracyCalculatorModal'
-import { GameCommandsModal } from '@/components/GameCommandsModal'
-import { LanguageToggle } from '@/components/LanguageToggle'
-import { ThemeToggle } from '@/components/ThemeToggle'
-import { Toast } from '@/components/Toast'
-import { FavoriteMonstersList } from '@/components/lists/FavoriteMonstersList'
-import { FavoriteItemsList } from '@/components/lists/FavoriteItemsList'
-import { AllItemsView } from '@/components/lists/AllItemsView'
+import { SearchHeader } from '@/components/SearchHeader'
+import { ContentDisplay } from '@/components/ContentDisplay'
+import { ModalManager } from '@/components/ModalManager'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
 
@@ -276,31 +263,31 @@ export default function Home() {
   }, [])
 
   // 選擇建議項目
-  const selectSuggestion = (suggestionName: string, suggestion?: SuggestionItem) => {
+  const selectSuggestion = useCallback((suggestionName: string, suggestion?: SuggestionItem) => {
     // 如果是轉蛋物品，開啟物品 Modal（而不是轉蛋機 Modal）
     if (suggestion && suggestion.type === 'gacha' && suggestion.id) {
       modals.openItemModal(suggestion.id, suggestionName)
     } else {
       search.selectSuggestion(suggestionName)
     }
-  }
+  }, [modals, search])
 
   // 清除最愛確認處理
-  const handleClearConfirm = () => {
+  const handleClearConfirm = useCallback(() => {
     if (modals.clearModalType === 'monsters') {
       clearAllMonsters()
     } else {
       clearAllItems()
     }
-  }
+  }, [modals.clearModalType, clearAllMonsters, clearAllItems])
 
   // 重置進階篩選
-  const handleResetAdvancedFilter = () => {
+  const handleResetAdvancedFilter = useCallback(() => {
     setAdvancedFilter(getDefaultAdvancedFilter())
-  }
+  }, [])
 
   // 分享處理函數
-  const handleShare = async () => {
+  const handleShare = useCallback(async () => {
     if (!search.searchTerm.trim()) return
 
     try {
@@ -312,10 +299,10 @@ export default function Home() {
       toast.showToast(t('share.error'), 'error')
       clientLogger.error('複製連結失敗', error)
     }
-  }
+  }, [search.searchTerm, toast, t])
 
   // 鍵盤導航處理 - 包裝 search.handleKeyDown 以處理轉蛋建議
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+  const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
     search.handleKeyDown(e, suggestions, (suggestion) => {
       if (suggestion.type === 'gacha' && suggestion.machineId) {
         const machine = gachaMachines.find(m => m.machineId === suggestion.machineId)
@@ -324,339 +311,138 @@ export default function Home() {
         }
       }
     })
-  }
+  }, [search, suggestions, gachaMachines, modals])
 
   // MonsterModal 中點擊裝備：不關閉 MonsterModal，直接在上方打開 ItemModal（保存導航歷史）
-  const handleItemClickFromMonsterModal = (itemId: number, itemName: string) => {
+  const handleItemClickFromMonsterModal = useCallback((itemId: number, itemName: string) => {
     // 不調用 modals.closeMonsterModal()
     modals.openItemModal(itemId, itemName, true) // saveHistory=true
-  }
+  }, [modals])
 
   // ItemModal 中點擊怪物：打開 MonsterModal（保存導航歷史）
-  const handleMonsterClickFromItemModal = (mobId: number, mobName: string) => {
+  const handleMonsterClickFromItemModal = useCallback((mobId: number, mobName: string) => {
     modals.openMonsterModal(mobId, mobName, true) // saveHistory=true，不再關閉 ItemModal
-  }
+  }, [modals])
 
   // ItemModal 中點擊轉蛋機：打開 GachaMachineModal（保存導航歷史）
-  const handleGachaMachineClick = (machineId: number) => {
+  const handleGachaMachineClick = useCallback((machineId: number) => {
     modals.openGachaModal(machineId, true) // saveHistory=true
-  }
+  }, [modals])
 
   // GachaMachineModal 中點擊物品：打開 ItemModal（保存導航歷史）
-  const handleItemClickFromGachaModal = (itemId: number, itemName: string) => {
+  const handleItemClickFromGachaModal = useCallback((itemId: number, itemName: string) => {
     modals.openItemModal(itemId, itemName, true) // saveHistory=true
-  }
+  }, [modals])
 
   // 返回頂部
-  const scrollToTop = () => {
+  const scrollToTop = useCallback(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+  }, [])
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 pb-8 sm:pb-12">
         {/* Sticky Header - 固定搜尋區域 */}
-        <div className="sticky top-0 z-40 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 backdrop-blur-sm pt-4 sm:pt-6 pb-3 sm:pb-4 shadow-md">
-          {/* 標題區域 */}
-          <div className="relative text-center mb-4 sm:mb-6 pt-2 pr-20 sm:pr-0">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-              {t('app.title')}
-            </h1>
-            {/* 主題與語言切換按鈕 - 右上角 */}
-            <div className="absolute top-0 right-2 sm:right-4 flex gap-1.5 sm:gap-2">
-              <ThemeToggle />
-              <LanguageToggle />
-            </div>
-          </div>
+        <SearchHeader
+          searchTerm={search.searchTerm}
+          onSearchChange={search.setSearchTerm}
+          searchType={searchType}
+          onSearchTypeChange={setSearchType}
+          suggestions={suggestions}
+          showSuggestions={search.showSuggestions}
+          onFocus={() => search.setShowSuggestions(true)}
+          onSelectSuggestion={selectSuggestion}
+          onKeyDown={handleKeyDown}
+          focusedIndex={search.focusedIndex}
+          onFocusedIndexChange={search.setFocusedIndex}
+          searchContainerRef={search.searchContainerRef}
+          onShare={handleShare}
+          filterMode={filterMode}
+          onFilterChange={setFilterMode}
+          favoriteMonsterCount={favoriteCount}
+          favoriteItemCount={favoriteItemCount}
+          onClearClick={modals.openClearModal}
+          isAdvancedFilterExpanded={isAdvancedFilterExpanded}
+          onAdvancedFilterToggle={() => setIsAdvancedFilterExpanded(!isAdvancedFilterExpanded)}
+          advancedFilterCount={advancedFilterCount}
+          onResetAdvancedFilter={handleResetAdvancedFilter}
+          advancedFilter={advancedFilter}
+          onAdvancedFilterChange={setAdvancedFilter}
+        />
 
-          {/* 搜尋列 */}
-          <SearchBar
-            searchTerm={search.searchTerm}
-            onSearchChange={search.setSearchTerm}
-            searchType={searchType}
-            onSearchTypeChange={setSearchType}
-            suggestions={suggestions}
-            showSuggestions={search.showSuggestions}
-            onFocus={() => search.setShowSuggestions(true)}
-            onSelectSuggestion={selectSuggestion}
-            onKeyDown={handleKeyDown}
-            focusedIndex={search.focusedIndex}
-            onFocusedIndexChange={search.setFocusedIndex}
-            searchContainerRef={search.searchContainerRef}
-            onShare={handleShare}
-          />
-
-          {/* 篩選按鈕 */}
-          <FilterButtons
-            filterMode={filterMode}
-            onFilterChange={setFilterMode}
-            favoriteMonsterCount={favoriteCount}
-            favoriteItemCount={favoriteItemCount}
-            onClearClick={modals.openClearModal}
-            isAdvancedFilterExpanded={isAdvancedFilterExpanded}
-            onAdvancedFilterToggle={() => setIsAdvancedFilterExpanded(!isAdvancedFilterExpanded)}
-            advancedFilterCount={advancedFilterCount}
-            onResetAdvancedFilter={handleResetAdvancedFilter}
-            advancedFilter={advancedFilter}
-          />
-
-          {/* 進階篩選面板 */}
-          <AdvancedFilterPanel
-            filter={advancedFilter}
-            onFilterChange={setAdvancedFilter}
-            isExpanded={isAdvancedFilterExpanded}
-          />
-        </div>
-        {/* End Sticky Header */}
-
-        {/* 載入中 */}
-        {isLoading ? (
-          <div className="text-center py-12 mt-8">
-            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-            <p className="mt-4 text-gray-600 dark:text-gray-400">{t('loading')}</p>
-          </div>
-        ) : (
-          <>
-            {filterMode === 'favorite-monsters' ? (
-              /* 最愛怪物模式 */
-              <FavoriteMonstersList
-                monsters={filteredUniqueMonsters}
-                hasSearchTerm={!!search.searchTerm}
-                mobLevelMap={mobLevelMap}
-                onCardClick={modals.openMonsterModal}
-                onToggleFavorite={toggleFavorite}
-                t={t}
-              />
-            ) : filterMode === 'favorite-items' ? (
-              /* 最愛物品模式 */
-              <FavoriteItemsList
-                items={filteredUniqueItems}
-                hasSearchTerm={!!search.searchTerm}
-                itemAttributesMap={itemAttributesMap}
-                onCardClick={modals.openItemModal}
-                onToggleFavorite={toggleItemFavorite}
-                t={t}
-              />
-            ) : (
-              /* 全部模式 */
-              <AllItemsView
-                mixedCards={mixedCards}
-                displayedMonsters={displayedMonsters}
-                displayedItems={displayedItems}
-                shouldShowMonsters={shouldShowMonsters}
-                shouldShowItems={shouldShowItems}
-                monstersInfiniteScroll={monstersInfiniteScroll}
-                itemsInfiniteScroll={itemsInfiniteScroll}
-                hasSearchOrFilter={debouncedSearchTerm.trim() !== '' || advancedFilter.enabled}
-                hasAnyData={uniqueAllMonsters.length > 0 || uniqueAllItems.length > 0}
-                hasSearchTerm={!!search.searchTerm}
-                mobLevelMap={mobLevelMap}
-                itemAttributesMap={itemAttributesMap}
-                onMonsterCardClick={modals.openMonsterModal}
-                onItemCardClick={modals.openItemModal}
-                isFavorite={isFavorite}
-                isItemFavorite={isItemFavorite}
-                onToggleFavorite={toggleFavorite}
-                onToggleItemFavorite={toggleItemFavorite}
-                t={t}
-              />
-            )}
-          </>
-        )}
-
-        {/* 底部資訊 */}
-        <div className="mt-12 sm:mt-16 text-center">
-          <p className="text-gray-500 dark:text-gray-400 text-sm">
-            <a
-              href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpKuZGJQIFFxSi6kzYx4ALI0MQborpLEkh3J1qIGSd0Bw7U4NYg5CK-3ESzyK580z4D8NO59SUeC3k/pubhtml?gid=1888753114&single=true"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline transition-colors"
-            >
-              {t('footer.dataSource')}
-            </a>
-          </p>
-          <p className="text-gray-400 dark:text-gray-500 text-xs mt-2">
-            {t('footer.note')}
-          </p>
-        </div>
+        {/* 內容顯示區域 */}
+        <ContentDisplay
+          isLoading={isLoading}
+          filterMode={filterMode}
+          hasSearchTerm={!!search.searchTerm}
+          filteredUniqueMonsters={filteredUniqueMonsters}
+          mobLevelMap={mobLevelMap}
+          onMonsterCardClick={modals.openMonsterModal}
+          onToggleFavorite={toggleFavorite}
+          isFavorite={isFavorite}
+          filteredUniqueItems={filteredUniqueItems}
+          itemAttributesMap={itemAttributesMap}
+          onItemCardClick={modals.openItemModal}
+          onToggleItemFavorite={toggleItemFavorite}
+          isItemFavorite={isItemFavorite}
+          mixedCards={mixedCards}
+          displayedMonsters={displayedMonsters}
+          displayedItems={displayedItems}
+          shouldShowMonsters={shouldShowMonsters}
+          shouldShowItems={shouldShowItems}
+          monstersInfiniteScroll={monstersInfiniteScroll}
+          itemsInfiniteScroll={itemsInfiniteScroll}
+          hasSearchOrFilter={debouncedSearchTerm.trim() !== '' || advancedFilter.enabled}
+          hasAnyData={uniqueAllMonsters.length > 0 || uniqueAllItems.length > 0}
+        />
       </div>
 
-      {/* Monster Drops Modal */}
-      <MonsterModal
-        isOpen={modals.isMonsterModalOpen}
-        onClose={modals.closeMonsterModal}
-        monsterId={modals.selectedMonsterId}
-        monsterName={modals.selectedMonsterName}
-        allDrops={allDrops}
-        itemAttributesMap={itemAttributesMap}
-        isFavorite={modals.selectedMonsterId ? isFavorite(modals.selectedMonsterId) : false}
-        onToggleFavorite={toggleFavorite}
-        isItemFavorite={isItemFavorite}
-        onToggleItemFavorite={toggleItemFavorite}
-        onItemClick={handleItemClickFromMonsterModal}
+      {/* Modal 和浮動按鈕管理器 */}
+      <ModalManager
+        isMonsterModalOpen={modals.isMonsterModalOpen}
+        isItemModalOpen={modals.isItemModalOpen}
+        isBugReportModalOpen={modals.isBugReportModalOpen}
+        isClearModalOpen={modals.isClearModalOpen}
+        isGachaModalOpen={modals.isGachaModalOpen}
+        selectedMonsterId={modals.selectedMonsterId ?? undefined}
+        selectedMonsterName={modals.selectedMonsterName}
+        selectedItemId={modals.selectedItemId}
+        selectedItemName={modals.selectedItemName}
+        selectedGachaMachineId={modals.selectedGachaMachineId ?? null}
+        clearModalType={modals.clearModalType}
         hasPreviousModal={modals.hasPreviousModal}
-        onGoBack={modals.goBack}
-      />
-
-      {/* Item Drops Modal */}
-      <ItemModal
-        isOpen={modals.isItemModalOpen}
-        onClose={modals.closeItemModal}
-        itemId={modals.selectedItemId}
-        itemName={modals.selectedItemName}
+        closeMonsterModal={modals.closeMonsterModal}
+        closeItemModal={modals.closeItemModal}
+        closeBugReportModal={modals.closeBugReportModal}
+        closeClearModal={modals.closeClearModal}
+        closeGachaModal={modals.closeGachaModal}
+        goBack={modals.goBack}
+        openGachaModal={modals.openGachaModal}
+        openBugReportModal={modals.openBugReportModal}
         allDrops={allDrops}
         gachaMachines={gachaMachines}
         itemAttributesMap={itemAttributesMap}
-        isFavorite={modals.selectedItemId !== null ? isItemFavorite(modals.selectedItemId) : false}
-        onToggleFavorite={toggleItemFavorite}
-        isMonsterFavorite={isFavorite}
-        onToggleMonsterFavorite={toggleFavorite}
-        onMonsterClick={handleMonsterClickFromItemModal}
-        onGachaMachineClick={handleGachaMachineClick}
-        hasPreviousModal={modals.hasPreviousModal}
-        onGoBack={modals.goBack}
-      />
-
-      {/* Bug Report Modal */}
-      <BugReportModal
-        isOpen={modals.isBugReportModalOpen}
-        onClose={modals.closeBugReportModal}
-      />
-
-      {/* Confirm Clear Modal */}
-      <ClearConfirmModal
-        isOpen={modals.isClearModalOpen}
-        onClose={modals.closeClearModal}
-        onConfirm={handleClearConfirm}
-        type={modals.clearModalType}
-        count={modals.clearModalType === 'monsters' ? favoriteCount : favoriteItemCount}
-      />
-
-      {/* Gacha Machine Modal */}
-      <GachaMachineModal
-        isOpen={modals.isGachaModalOpen}
-        onClose={modals.closeGachaModal}
-        initialMachineId={modals.selectedGachaMachineId}
-        onItemClick={handleItemClickFromGachaModal}
-        hasPreviousModal={modals.hasPreviousModal}
-        onGoBack={modals.goBack}
-      />
-
-      {/* Accuracy Calculator Modal */}
-      <AccuracyCalculatorModal
-        isOpen={isAccuracyCalcOpen}
-        onClose={() => setIsAccuracyCalcOpen(false)}
-      />
-
-      {/* Game Commands Modal */}
-      <GameCommandsModal
-        isOpen={isGameCommandsOpen}
-        onClose={() => setIsGameCommandsOpen(false)}
-      />
-
-      {/* 浮動轉蛋機按鈕 */}
-      <button
-        onClick={() => modals.openGachaModal()}
-        className="fixed bottom-4 sm:bottom-6 left-4 sm:left-6 z-40 p-3 sm:p-4 bg-purple-500 hover:bg-purple-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
-        aria-label={t('gacha.button')}
-      >
-        <div className="flex items-center gap-2">
-          <svg
-            className="w-5 h-5 sm:w-6 sm:h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
-            />
-          </svg>
-          <span className="text-sm font-medium hidden group-hover:inline-block lg:inline-block">{t('gacha.button')}</span>
-        </div>
-      </button>
-
-      {/* 浮動遊戲指令按鈕 */}
-      <button
-        onClick={() => setIsGameCommandsOpen(true)}
-        className="fixed bottom-36 sm:bottom-38 left-4 sm:left-6 z-40 p-3 sm:p-4 bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
-        aria-label={t('commands.button')}
-      >
-        <div className="flex items-center gap-2">
-          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-            />
-          </svg>
-          <span className="text-sm font-medium hidden group-hover:inline-block lg:inline-block">{t('commands.button')}</span>
-        </div>
-      </button>
-
-      {/* 浮動命中率計算器按鈕 */}
-      <button
-        onClick={() => setIsAccuracyCalcOpen(true)}
-        className="fixed bottom-20 sm:bottom-22 left-4 sm:left-6 z-40 p-3 sm:p-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
-        aria-label={t('accuracy.button')}
-      >
-        <div className="flex items-center gap-2">
-          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" strokeWidth="2"/>
-            <circle cx="12" cy="12" r="6" strokeWidth="2"/>
-            <circle cx="12" cy="12" r="2" fill="currentColor"/>
-          </svg>
-          <span className="text-sm font-medium hidden group-hover:inline-block lg:inline-block">{t('accuracy.buttonShort')}</span>
-        </div>
-      </button>
-
-      {/* 浮動 Bug 回報按鈕 */}
-      <button
-        onClick={modals.openBugReportModal}
-        className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 z-40 p-3 sm:p-4 bg-red-500 hover:bg-red-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
-        aria-label={t('bug.report')}
-      >
-        <div className="flex items-center gap-2">
-          <span className="text-2xl">🐛</span>
-          <span className="text-sm font-medium hidden group-hover:inline-block">{t('bug.report')}</span>
-        </div>
-      </button>
-
-      {/* 返回頂部按鈕 */}
-      {showBackToTop && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-20 sm:bottom-24 right-4 sm:right-6 z-40 p-3 sm:p-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
-          aria-label={t('scroll.backToTop')}
-        >
-          <svg
-            className="w-5 h-5 sm:w-6 sm:h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M5 10l7-7m0 0l7 7m-7-7v18"
-            />
-          </svg>
-        </button>
-      )}
-
-      {/* Toast 通知 */}
-      <Toast
-        message={toast.message}
-        isVisible={toast.isVisible}
-        onClose={toast.hideToast}
-        type={toast.type}
+        isFavorite={isFavorite}
+        toggleFavorite={toggleFavorite}
+        isItemFavorite={isItemFavorite}
+        toggleItemFavorite={toggleItemFavorite}
+        favoriteMonsterCount={favoriteCount}
+        favoriteItemCount={favoriteItemCount}
+        handleItemClickFromMonsterModal={handleItemClickFromMonsterModal}
+        handleMonsterClickFromItemModal={handleMonsterClickFromItemModal}
+        handleGachaMachineClick={handleGachaMachineClick}
+        handleItemClickFromGachaModal={handleItemClickFromGachaModal}
+        handleClearConfirm={handleClearConfirm}
+        isAccuracyCalcOpen={isAccuracyCalcOpen}
+        setIsAccuracyCalcOpen={setIsAccuracyCalcOpen}
+        isGameCommandsOpen={isGameCommandsOpen}
+        setIsGameCommandsOpen={setIsGameCommandsOpen}
+        showBackToTop={showBackToTop}
+        scrollToTop={scrollToTop}
+        toastMessage={toast.message}
+        toastIsVisible={toast.isVisible}
+        toastType={toast.type}
+        hideToast={toast.hideToast}
       />
     </div>
   )

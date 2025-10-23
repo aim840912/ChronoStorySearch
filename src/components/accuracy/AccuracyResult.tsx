@@ -1,5 +1,6 @@
 'use client'
 
+import { memo } from 'react'
 import type { AccuracyResult as AccuracyResultType } from '@/lib/accuracy-calculator'
 
 interface AccuracyResultProps {
@@ -13,7 +14,7 @@ interface AccuracyResultProps {
   t: (key: string, params?: Record<string, string | number>) => string
 }
 
-export function AccuracyResult({
+export const AccuracyResult = memo(function AccuracyResult({
   result,
   mode,
   playerInt = 0,
@@ -167,4 +168,4 @@ export function AccuracyResult({
       )}
     </div>
   )
-}
+})

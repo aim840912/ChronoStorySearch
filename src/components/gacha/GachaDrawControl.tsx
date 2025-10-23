@@ -1,5 +1,7 @@
 'use client'
 
+import { memo } from 'react'
+
 interface GachaDrawControlProps {
   drawCount: number
   maxDraws: number
@@ -8,7 +10,7 @@ interface GachaDrawControlProps {
   t: (key: string) => string
 }
 
-export function GachaDrawControl({
+export const GachaDrawControl = memo(function GachaDrawControl({
   drawCount,
   maxDraws,
   onDrawOnce,
@@ -60,4 +62,4 @@ export function GachaDrawControl({
       </div>
     </div>
   )
-}
+})
