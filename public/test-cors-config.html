@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CORS 配置驗證工具 - ChronoStory</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      padding: 40px;
+      max-width: 900px;
+      width: 100%;
+    }
+    h1 {
+      color: #667eea;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+    .subtitle {
+      color: #666;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+    .section {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f7fafc;
+      border-radius: 8px;
+      border-left: 4px solid #667eea;
+    }
+    .section h2 {
+      color: #2d3748;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .button-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    button {
+      flex: 1;
+      min-width: 200px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .btn-primary {
+      background: #667eea;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #5568d3;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4);
+    }
+    .btn-primary:disabled {
+      background: #cbd5e0;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .results {
+      margin-top: 20px;
+    }
+    .test-item {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .test-name {
+      font-weight: 600;
+      color: #2d3748;
+    }
+    .test-status {
+      padding: 6px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .status-pending {
+      background: #e2e8f0;
+      color: #4a5568;
+    }
+    .status-running {
+      background: #bee3f8;
+      color: #2c5282;
+      animation: pulse 2s infinite;
+    }
+    .status-success {
+      background: #c6f6d5;
+      color: #22543d;
+    }
+    .status-error {
+      background: #fed7d7;
+      color: #742a2a;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+    .summary {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .summary-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .summary-item:last-child {
+      border-bottom: none;
+    }
+    .summary-label {
+      color: #4a5568;
+      font-weight: 500;
+    }
+    .summary-value {
+      font-weight: 600;
+    }
+    .success-value {
+      color: #22543d;
+    }
+    .error-value {
+      color: #742a2a;
+    }
+    .log {
+      background: #1a202c;
+      color: #48bb78;
+      padding: 20px;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      max-height: 300px;
+      overflow-y: auto;
+      line-height: 1.6;
+    }
+    .log-entry {
+      margin-bottom: 5px;
+      display: flex;
+      align-items: flex-start;
+    }
+    .log-time {
+      color: #718096;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+    .log-success { color: #48bb78; }
+    .log-error { color: #f56565; }
+    .log-info { color: #4299e1; }
+    .log-warning { color: #ed8936; }
+    .instructions {
+      background: #fffbeb;
+      border: 1px solid #fbbf24;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .instructions h3 {
+      color: #92400e;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .instructions p {
+      color: #78350f;
+      font-size: 13px;
+      line-height: 1.8;
+      margin-bottom: 8px;
+    }
+    .instructions code {
+      background: #fef3c7;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 CORS 配置驗證工具</h1>
+    <p class="subtitle">Cloudflare R2 CORS Configuration Validator</p>
+
+    <div class="instructions">
+      <h3>📋 使用說明</h3>
+      <p>1. 請先按照 <code>docs/cloudflare-r2-cors-setup.md</code> 完成 CORS 配置</p>
+      <p>2. 點擊「開始驗證」按鈕執行測試</p>
+      <p>3. 查看測試結果和詳細日誌</p>
+      <p>4. 所有測試通過即表示 CORS 配置成功</p>
+    </div>
+
+    <div class="section">
+      <h2>🧪 測試項目</h2>
+      <div class="button-group">
+        <button class="btn-primary" id="startBtn" onclick="runAllTests()">🚀 開始驗證</button>
+      </div>
+      <div class="results" id="results"></div>
+    </div>
+
+    <div class="section" id="summarySection" style="display: none;">
+      <h2>📊 測試總結</h2>
+      <div class="summary" id="summary"></div>
+    </div>
+
+    <div class="section">
+      <h2>📝 詳細日誌</h2>
+      <div id="log" class="log">
+        <div class="log-entry">
+          <span class="log-time">[系統]</span>
+          <span class="log-info">等待開始測試...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // R2 公開 URL
+    const R2_PUBLIC_URL = 'https://pub-a1c4c32d4c65452098ab977db77e349e.r2.dev';
+
+    // 測試項目
+    const tests = [
+      {
+        id: 'fetch-image',
+        name: '測試 1：Fetch API 載入圖片',
+        fn: testFetchImage
+      },
+      {
+        id: 'blob-conversion',
+        name: '測試 2：Blob 轉換',
+        fn: testBlobConversion
+      },
+      {
+        id: 'cors-headers',
+        name: '測試 3：CORS 標頭驗證',
+        fn: testCorsHeaders
+      },
+      {
+        id: 'multiple-origins',
+        name: '測試 4：當前 Origin 測試',
+        fn: testCurrentOrigin
+      }
+    ];
+
+    let testResults = {
+      total: tests.length,
+      passed: 0,
+      failed: 0,
+      details: []
+    };
+
+    function log(message, type = 'info') {
+      const logEl = document.getElementById('log');
+      const time = new Date().toLocaleTimeString('zh-TW', { hour12: false });
+      const entry = document.createElement('div');
+      entry.className = 'log-entry';
+      entry.innerHTML = `
+        <span class="log-time">[${time}]</span>
+        <span class="log-${type}">${message}</span>
+      `;
+      logEl.appendChild(entry);
+      logEl.scrollTop = logEl.scrollHeight;
+    }
+
+    function updateTestStatus(testId, status) {
+      const testEl = document.getElementById(`test-${testId}`);
+      if (!testEl) return;
+
+      const statusEl = testEl.querySelector('.test-status');
+      statusEl.className = `test-status status-${status}`;
+
+      const statusText = {
+        'pending': '⏳ 待測試',
+        'running': '🔄 測試中',
+        'success': '✅ 通過',
+        'error': '❌ 失敗'
+      };
+      statusEl.textContent = statusText[status] || status;
+    }
+
+    function renderTestItems() {
+      const resultsEl = document.getElementById('results');
+      resultsEl.innerHTML = tests.map(test => `
+        <div class="test-item" id="test-${test.id}">
+          <span class="test-name">${test.name}</span>
+          <span class="test-status status-pending">⏳ 待測試</span>
+        </div>
+      `).join('');
+    }
+
+    async function testFetchImage() {
+      const testUrl = `${R2_PUBLIC_URL}/images/items/1062002.png`;
+      log(`正在測試 Fetch API：${testUrl}`, 'info');
+
+      const response = await fetch(testUrl, {
+        method: 'GET',
+        mode: 'cors'
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+
+      log(`✓ Fetch 請求成功：HTTP ${response.status}`, 'success');
+      return { success: true, status: response.status };
+    }
+
+    async function testBlobConversion() {
+      const testUrl = `${R2_PUBLIC_URL}/images/items/1062002.png`;
+      log('正在測試 Blob 轉換...', 'info');
+
+      const response = await fetch(testUrl, { mode: 'cors' });
+      const blob = await response.blob();
+
+      if (blob.size === 0) {
+        throw new Error('Blob 大小為 0');
+      }
+
+      const blobUrl = URL.createObjectURL(blob);
+      log(`✓ Blob 轉換成功：${blob.size} bytes, URL: ${blobUrl.substring(0, 50)}...`, 'success');
+      URL.revokeObjectURL(blobUrl);
+
+      return { success: true, blobSize: blob.size };
+    }
+
+    async function testCorsHeaders() {
+      const testUrl = `${R2_PUBLIC_URL}/images/items/1062002.png`;
+      log('正在檢查 CORS 標頭...', 'info');
+
+      const response = await fetch(testUrl, { mode: 'cors' });
+
+      const requiredHeaders = [
+        'access-control-allow-origin',
+        'content-type'
+      ];
+
+      const headers = {};
+      requiredHeaders.forEach(header => {
+        headers[header] = response.headers.get(header);
+      });
+
+      log(`✓ CORS 標頭：`, 'info');
+      Object.entries(headers).forEach(([key, value]) => {
+        log(`  - ${key}: ${value || '(未設定)'}`, value ? 'success' : 'warning');
+      });
+
+      if (!headers['access-control-allow-origin']) {
+        throw new Error('缺少 Access-Control-Allow-Origin 標頭');
+      }
+
+      return { success: true, headers };
+    }
+
+    async function testCurrentOrigin() {
+      const currentOrigin = window.location.origin;
+      log(`正在測試當前 Origin：${currentOrigin}`, 'info');
+
+      const testUrl = `${R2_PUBLIC_URL}/images/items/1062002.png`;
+      const response = await fetch(testUrl, { mode: 'cors' });
+
+      const allowOrigin = response.headers.get('access-control-allow-origin');
+
+      if (allowOrigin === '*' || allowOrigin === currentOrigin) {
+        log(`✓ 當前 Origin 已被允許`, 'success');
+        return { success: true, allowOrigin };
+      } else {
+        throw new Error(`Origin 不匹配：期望 ${currentOrigin}，實際 ${allowOrigin}`);
+      }
+    }
+
+    async function runAllTests() {
+      // 重置
+      testResults = {
+        total: tests.length,
+        passed: 0,
+        failed: 0,
+        details: []
+      };
+
+      const startBtn = document.getElementById('startBtn');
+      startBtn.disabled = true;
+      startBtn.textContent = '🔄 測試進行中...';
+
+      document.getElementById('summarySection').style.display = 'none';
+      renderTestItems();
+
+      log('=== 開始 CORS 配置驗證 ===', 'info');
+      log(`測試項目數：${tests.length}`, 'info');
+      log('', 'info');
+
+      for (const test of tests) {
+        updateTestStatus(test.id, 'running');
+        log(`▶ ${test.name}`, 'info');
+
+        try {
+          const result = await test.fn();
+          updateTestStatus(test.id, 'success');
+          log(`✅ ${test.name} - 通過`, 'success');
+
+          testResults.passed++;
+          testResults.details.push({
+            test: test.name,
+            status: 'success',
+            result
+          });
+        } catch (error) {
+          updateTestStatus(test.id, 'error');
+          log(`❌ ${test.name} - 失敗：${error.message}`, 'error');
+
+          testResults.failed++;
+          testResults.details.push({
+            test: test.name,
+            status: 'error',
+            error: error.message
+          });
+        }
+
+        log('', 'info');
+      }
+
+      // 顯示總結
+      showSummary();
+
+      startBtn.disabled = false;
+      startBtn.textContent = '🔄 重新測試';
+    }
+
+    function showSummary() {
+      const summarySection = document.getElementById('summarySection');
+      const summaryEl = document.getElementById('summary');
+
+      summarySection.style.display = 'block';
+
+      const passRate = ((testResults.passed / testResults.total) * 100).toFixed(0);
+      const allPassed = testResults.failed === 0;
+
+      summaryEl.innerHTML = `
+        <div class="summary-item">
+          <span class="summary-label">總測試數：</span>
+          <span class="summary-value">${testResults.total}</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">通過：</span>
+          <span class="summary-value success-value">${testResults.passed}</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">失敗：</span>
+          <span class="summary-value error-value">${testResults.failed}</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">通過率：</span>
+          <span class="summary-value ${allPassed ? 'success-value' : 'error-value'}">${passRate}%</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">測試結果：</span>
+          <span class="summary-value ${allPassed ? 'success-value' : 'error-value'}">
+            ${allPassed ? '✅ 全部通過' : '❌ 有測試失敗'}
+          </span>
+        </div>
+      `;
+
+      if (allPassed) {
+        log('', 'info');
+        log('🎉 恭喜！所有測試通過，CORS 配置正確！', 'success');
+        log('您現在可以正常使用圖片快取系統了。', 'success');
+      } else {
+        log('', 'info');
+        log('⚠️ 部分測試失敗，請檢查 CORS 配置。', 'warning');
+        log('請參考 docs/cloudflare-r2-cors-setup.md 進行配置。', 'warning');
+      }
+    }
+
+    // 初始化
+    renderTestItems();
+    log('CORS 驗證工具已就緒', 'success');
+    log(`當前 Origin：${window.location.origin}`, 'info');
+    log(`目標 R2 URL：${R2_PUBLIC_URL}`, 'info');
+    log('', 'info');
+  </script>
+</body>
+</html>

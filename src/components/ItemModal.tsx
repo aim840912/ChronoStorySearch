@@ -5,7 +5,7 @@ import type { DropItem, Language, GachaMachine, ItemAttributes } from '@/types'
 import { MonsterDropCard } from './MonsterDropCard'
 import { ItemAttributesCard } from './ItemAttributesCard'
 import { clientLogger } from '@/lib/logger'
-import { getItemImageUrl } from '@/lib/image-utils'
+import { getItemImageUrl, getMonsterImageUrl, preloadImages } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useLazyMobInfo } from '@/hooks/useLazyData'
 import { findGachaItemAttributes } from '@/lib/gacha-utils'
@@ -168,12 +168,32 @@ export function ItemModal({
     return null
   }, [itemId, itemAttributesMap, gachaMachines])
 
-  // 當 Modal 開啟時載入物品屬性資料與怪物資訊資料
+  // 當 Modal 開啟時載入物品屬性資料與怪物資訊資料，並預載入圖片
   useEffect(() => {
     if (isOpen) {
       loadMobInfo()
+
+      // 預載入所有要顯示的圖片（背景執行，不阻塞 UI）
+      const imagesToPreload: string[] = []
+
+      // 1. 物品圖示
+      if (itemId !== null) {
+        imagesToPreload.push(getItemImageUrl(itemId, undefined, false))
+      }
+
+      // 2. 掉落怪物圖示
+      itemDrops.forEach(drop => {
+        imagesToPreload.push(getMonsterImageUrl(drop.mobId, undefined, false))
+      })
+
+      // 執行批次預載入
+      if (imagesToPreload.length > 0) {
+        preloadImages(imagesToPreload).catch(error => {
+          clientLogger.warn('批次預載入圖片失敗', error)
+        })
+      }
     }
-  }, [isOpen, loadMobInfo])
+  }, [isOpen, loadMobInfo, itemId, itemDrops])
 
   // ESC 鍵關閉 modal
   useEffect(() => {

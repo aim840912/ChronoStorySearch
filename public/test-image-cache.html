@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>圖片快取測試工具 - ChronoStory</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      padding: 40px;
+      max-width: 800px;
+      width: 100%;
+    }
+    h1 {
+      color: #667eea;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+    .subtitle {
+      color: #666;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+    .section {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f7fafc;
+      border-radius: 8px;
+      border-left: 4px solid #667eea;
+    }
+    .section h2 {
+      color: #2d3748;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .stat-card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .stat-value {
+      font-size: 32px;
+      font-weight: bold;
+      color: #667eea;
+      margin-bottom: 5px;
+    }
+    .stat-label {
+      font-size: 12px;
+      color: #718096;
+      text-transform: uppercase;
+    }
+    .button-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    button {
+      flex: 1;
+      min-width: 150px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .btn-primary {
+      background: #667eea;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #5568d3;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4);
+    }
+    .btn-secondary {
+      background: #48bb78;
+      color: white;
+    }
+    .btn-secondary:hover {
+      background: #38a169;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(72, 187, 120, 0.4);
+    }
+    .btn-danger {
+      background: #f56565;
+      color: white;
+    }
+    .btn-danger:hover {
+      background: #e53e3e;
+    }
+    .log {
+      background: #1a202c;
+      color: #48bb78;
+      padding: 20px;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      max-height: 300px;
+      overflow-y: auto;
+      line-height: 1.6;
+    }
+    .log-entry {
+      margin-bottom: 5px;
+      display: flex;
+      align-items: flex-start;
+    }
+    .log-time {
+      color: #718096;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+    .log-success { color: #48bb78; }
+    .log-error { color: #f56565; }
+    .log-info { color: #4299e1; }
+    .log-warning { color: #ed8936; }
+    .status {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+    .status-idle {
+      background: #e2e8f0;
+      color: #4a5568;
+    }
+    .status-running {
+      background: #bee3f8;
+      color: #2c5282;
+      animation: pulse 2s infinite;
+    }
+    .status-success {
+      background: #c6f6d5;
+      color: #22543d;
+    }
+    .status-error {
+      background: #fed7d7;
+      color: #742a2a;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+    .instructions {
+      background: #fffbeb;
+      border: 1px solid #fbbf24;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .instructions h3 {
+      color: #92400e;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .instructions ol {
+      margin-left: 20px;
+      color: #78350f;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧪 圖片快取測試工具</h1>
+    <p class="subtitle">ChronoStory Image Cache Performance Test</p>
+
+    <div class="instructions">
+      <h3>📋 使用說明</h3>
+      <ol>
+        <li>點擊「開始測試」按鈕</li>
+        <li>測試將自動開啟主頁並模擬 Modal 操作</li>
+        <li>查看快取統計和測試日誌</li>
+        <li>測試完成後會顯示詳細報告</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2>
+        測試狀態
+        <span id="status" class="status status-idle">待測試</span>
+      </h2>
+      <div class="button-group">
+        <button class="btn-primary" onclick="runTest()">🚀 開始測試</button>
+        <button class="btn-secondary" onclick="checkCacheStats()">📊 查看快取統計</button>
+        <button class="btn-danger" onclick="clearCache()">🗑️ 清除快取</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📈 快取統計</h2>
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-value" id="cache-hits">0</div>
+          <div class="stat-label">快取命中</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="cache-misses">0</div>
+          <div class="stat-label">快取未命中</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="cache-size">0</div>
+          <div class="stat-label">快取大小</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="hit-rate">0%</div>
+          <div class="stat-label">命中率</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📝 測試日誌</h2>
+      <div id="log" class="log">
+        <div class="log-entry">
+          <span class="log-time">[系統]</span>
+          <span class="log-info">測試工具已就緒，點擊「開始測試」按鈕開始...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let testWindow = null;
+
+    function log(message, type = 'info') {
+      const logEl = document.getElementById('log');
+      const time = new Date().toLocaleTimeString('zh-TW', { hour12: false });
+      const entry = document.createElement('div');
+      entry.className = 'log-entry';
+      entry.innerHTML = `
+        <span class="log-time">[${time}]</span>
+        <span class="log-${type}">${message}</span>
+      `;
+      logEl.appendChild(entry);
+      logEl.scrollTop = logEl.scrollHeight;
+    }
+
+    function updateStatus(status, text) {
+      const statusEl = document.getElementById('status');
+      statusEl.className = `status status-${status}`;
+      statusEl.textContent = text;
+    }
+
+    function updateStats(stats) {
+      if (!stats) return;
+      document.getElementById('cache-hits').textContent = stats.hits || 0;
+      document.getElementById('cache-misses').textContent = stats.misses || 0;
+      document.getElementById('cache-size').textContent = stats.cacheSize || 0;
+      document.getElementById('hit-rate').textContent = stats.hitRate || '0%';
+    }
+
+    async function checkCacheStats() {
+      try {
+        log('正在查詢快取統計...', 'info');
+
+        // 嘗試從主頁面獲取統計
+        if (testWindow && !testWindow.closed) {
+          const stats = await testWindow.eval('window.__IMAGE_CACHE_STATS__ ? window.__IMAGE_CACHE_STATS__() : null');
+          if (stats) {
+            updateStats(stats);
+            log(`快取統計已更新 - 命中率: ${stats.hitRate}`, 'success');
+          } else {
+            log('無法獲取快取統計（功能未啟用）', 'warning');
+          }
+        } else {
+          log('請先開啟主頁面（點擊「開始測試」）', 'warning');
+        }
+      } catch (error) {
+        log(`獲取統計失敗: ${error.message}`, 'error');
+      }
+    }
+
+    function clearCache() {
+      log('清除快取功能需要在主頁面執行...', 'info');
+      log('請在主頁面 Console 執行: clearImageCache()', 'info');
+    }
+
+    async function runTest() {
+      updateStatus('running', '測試中...');
+      log('=== 開始圖片快取測試 ===', 'info');
+
+      try {
+        // 步驟 1：開啟主頁面
+        log('步驟 1/5: 開啟主頁面...', 'info');
+        testWindow = window.open('http://localhost:3000', '_blank');
+
+        if (!testWindow) {
+          throw new Error('無法開啟新視窗（請檢查彈出視窗封鎖設定）');
+        }
+
+        await sleep(3000);
+        log('✓ 頁面已載入', 'success');
+
+        // 步驟 2：等待使用者操作
+        log('步驟 2/5: 請在新視窗中執行以下操作：', 'info');
+        log('  1. 點擊任一物品卡片開啟 Modal', 'warning');
+        log('  2. 觀察 Network 面板（應該有圖片載入）', 'warning');
+        log('  3. 關閉 Modal', 'warning');
+        log('  4. 再次點擊同一張卡片', 'warning');
+        log('  5. 觀察 Network 面板（應該無新請求）', 'warning');
+        log('', 'info');
+        log('完成後點擊「查看快取統計」按鈕查看結果', 'info');
+
+        updateStatus('success', '測試進行中');
+
+      } catch (error) {
+        log(`測試失敗: ${error.message}`, 'error');
+        updateStatus('error', '測試失敗');
+      }
+    }
+
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    // 初始化：檢查開發環境
+    window.addEventListener('load', () => {
+      if (!window.location.hostname.includes('localhost')) {
+        log('警告：請在本地開發環境（localhost）中執行測試', 'warning');
+      }
+    });
+  </script>
+</body>
+</html>

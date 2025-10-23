@@ -6,7 +6,7 @@ import { DropItemCard } from './DropItemCard'
 import { MonsterStatsCard } from './MonsterStatsCard'
 import { MonsterLocationsCard } from './MonsterLocationsCard'
 import { clientLogger } from '@/lib/logger'
-import { getMonsterImageUrl } from '@/lib/image-utils'
+import { getMonsterImageUrl, getItemImageUrl, preloadImages } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useLazyMobInfo } from '@/hooks/useLazyData'
 
@@ -116,12 +116,32 @@ export function MonsterModal({
     return undefined
   }, [mobInfo])
 
-  // 當 Modal 開啟時載入怪物資訊資料
+  // 當 Modal 開啟時載入怪物資訊資料，並預載入圖片
   useEffect(() => {
     if (isOpen) {
       loadMobInfo()
+
+      // 預載入所有要顯示的圖片（背景執行，不阻塞 UI）
+      const imagesToPreload: string[] = []
+
+      // 1. 怪物圖示
+      if (monsterId !== null) {
+        imagesToPreload.push(getMonsterImageUrl(monsterId, undefined, false))
+      }
+
+      // 2. 掉落物品圖示
+      monsterDrops.forEach(drop => {
+        imagesToPreload.push(getItemImageUrl(drop.itemId, undefined, false))
+      })
+
+      // 執行批次預載入
+      if (imagesToPreload.length > 0) {
+        preloadImages(imagesToPreload).catch(error => {
+          clientLogger.warn('批次預載入圖片失敗', error)
+        })
+      }
     }
-  }, [isOpen, loadMobInfo])
+  }, [isOpen, loadMobInfo, monsterId, monsterDrops])
 
   // ESC 鍵關閉 modal
   useEffect(() => {

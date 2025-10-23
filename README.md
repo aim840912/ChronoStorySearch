@@ -56,6 +56,15 @@ npm install
 NEXT_PUBLIC_R2_PUBLIC_URL=https://your-r2-bucket.r2.dev
 ```
 
+### CORS 配置（開發環境必須）
+
+開發環境需要配置 Cloudflare R2 的 CORS 政策，以允許 localhost 進行跨域圖片請求：
+
+1. 請按照 [docs/cloudflare-r2-cors-setup.md](docs/cloudflare-r2-cors-setup.md) 完成 Cloudflare R2 CORS 配置
+2. 配置完成後，使用驗證工具測試：開啟 [http://localhost:3000/test-cors-config.html](http://localhost:3000/test-cors-config.html)
+
+> **注意：** 若未配置 CORS，開發環境的圖片快取系統將無法完整運作，但不影響圖片顯示。生產環境不受影響。
+
 ### 開發模式
 
 ```bash
@@ -110,6 +119,25 @@ npm run format
 - API 開發規範
 - 依賴管理規則
 - 技術債管理
+
+### 圖片快取系統
+
+專案實作了完整的圖片快取系統（`src/lib/image-utils.ts`）：
+
+- ✅ **Blob URL 快取** - 記憶體快取減少網路請求
+- ✅ **批次預載入** - Modal 開啟時自動預載入相關圖片
+- ✅ **快取統計** - 開發模式可查看快取效能
+
+查看快取統計（開發環境）：
+
+```javascript
+// 在 Console 中執行
+window.__IMAGE_CACHE_STATS__()
+```
+
+相關文件：
+- [CORS 配置指南](docs/cloudflare-r2-cors-setup.md)
+- [CORS 驗證工具](public/test-cors-config.html)
 
 ### 日誌系統
 
@@ -167,6 +195,16 @@ npm run r2:list
 # 驗證本地與 R2 一致性
 npm run r2:check
 ```
+
+### CORS 驗證
+
+開發環境首次設置後，建議執行 CORS 驗證：
+
+1. 開啟 [http://localhost:3000/test-cors-config.html](http://localhost:3000/test-cors-config.html)
+2. 點擊「開始驗證」按鈕
+3. 確認所有測試通過
+
+若測試失敗，請參考 [CORS 配置指南](docs/cloudflare-r2-cors-setup.md)。
 
 ## 📈 效能優化
 
