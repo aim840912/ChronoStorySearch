@@ -2832,22 +2832,22 @@
       {
         "map_id": null,
         "map_name": "Hidden Street - Monkey Swamp II",
-        "chinese_map_name": "Hidden Street - Monkey 沼澤 II"
+        "chinese_map_name": ""
       },
       {
         "map_id": null,
         "map_name": "Hidden Street - Monkey Swamp III",
-        "chinese_map_name": "Hidden Street - Monkey 沼澤 III"
+        "chinese_map_name": ""
       },
       {
         "map_id": null,
         "map_name": "Hidden Street - Monkey Forest I",
-        "chinese_map_name": "Hidden Street - Monkey 森林 I"
+        "chinese_map_name": ""
       },
       {
         "map_id": null,
         "map_name": "Hidden Street - Monkey Forest II",
-        "chinese_map_name": "Hidden Street - Monkey 森林 II"
+        "chinese_map_name": ""
       }
     ]
   },
@@ -3362,7 +3362,7 @@
       {
         "map_id": null,
         "map_name": "Watch Out for Icy Path I",
-        "chinese_map_name": "Watch Out for Icy 小徑 I"
+        "chinese_map_name": ""
       }
     ]
   },
@@ -3831,7 +3831,7 @@
       {
         "map_id": null,
         "map_name": "Cold Field I",
-        "chinese_map_name": "Cold 原野 I"
+        "chinese_map_name": ""
       }
     ]
   },
@@ -3866,7 +3866,7 @@
       {
         "map_id": null,
         "map_name": "Watch Out for Icy Path II",
-        "chinese_map_name": "Watch Out for Icy 小徑 II"
+        "chinese_map_name": ""
       }
     ]
   },
@@ -4015,7 +4015,7 @@
       {
         "map_id": null,
         "map_name": "Cold Field II",
-        "chinese_map_name": "Cold 原野 II"
+        "chinese_map_name": ""
       }
     ]
   },
@@ -4350,7 +4350,7 @@
       {
         "map_id": null,
         "map_name": "Hidden Street - The Forest of Evil II",
-        "chinese_map_name": "Hidden Street - The 森林 of Evil II"
+        "chinese_map_name": ""
       }
     ]
   },
@@ -4460,12 +4460,12 @@
       {
         "map_id": null,
         "map_name": "Hidden Street - The Forest of Evil I",
-        "chinese_map_name": "Hidden Street - The 森林 of Evil I"
+        "chinese_map_name": ""
       },
       {
         "map_id": null,
         "map_name": "Hidden Street - The Forest of Evil II",
-        "chinese_map_name": "Hidden Street - The 森林 of Evil II"
+        "chinese_map_name": ""
       }
     ]
   },
@@ -4564,7 +4564,7 @@
       {
         "map_id": null,
         "map_name": "Icy Cold Field",
-        "chinese_map_name": "Icy Cold 原野"
+        "chinese_map_name": ""
       }
     ]
   },
@@ -4828,7 +4828,7 @@
       {
         "map_id": null,
         "map_name": "Icy Cold Field",
-        "chinese_map_name": "Icy Cold 原野"
+        "chinese_map_name": ""
       }
     ]
   },
@@ -5676,7 +5676,7 @@
       {
         "map_id": null,
         "map_name": "Hidden Street - Cave Within the Cave",
-        "chinese_map_name": "Hidden Street - 洞穴 Within the 洞穴"
+        "chinese_map_name": ""
       },
       {
         "map_id": null,
@@ -6010,7 +6010,7 @@
       {
         "map_id": null,
         "map_name": "Hidden Street - Chill Field",
-        "chinese_map_name": "Hidden Street - Chill 原野"
+        "chinese_map_name": ""
       }
     ]
   },
