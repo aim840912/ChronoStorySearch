@@ -340,6 +340,31 @@ export interface ItemAttributes {
   potion?: PotionInfo
 }
 
+// Essential 資料類型（用於列表顯示，包含基本資訊和需求屬性）
+export interface ItemAttributesEssential {
+  item_id: string
+  item_name: string
+  type: string
+  sub_type: string | null
+  req_level: number | null
+  req_str: number
+  req_dex: number
+  req_int: number
+  req_luk: number
+}
+
+// Detailed 資料類型（用於 Modal 詳細顯示，包含完整屬性）
+export interface ItemAttributesDetailed {
+  item_type_id: number
+  sale_price: number | null
+  max_stack_count: number | null
+  untradeable: boolean | null
+  item_description: string | null
+  equipment?: ItemEquipment
+  scroll?: ScrollInfo
+  potion?: PotionInfo
+}
+
 // Enhanced JSON 格式的類型定義（用於 gacha-utils.ts 轉換）
 // Enhanced JSON 使用 camelCase 命名，需要轉換為 snake_case
 

@@ -1,71 +1,86 @@
 'use client'
 
-import { useState, useCallback, useMemo } from 'react'
-import type { ItemAttributes, MobInfo } from '@/types'
+import { useState, useEffect, useCallback, useMemo } from 'react'
+import type { ItemAttributesEssential, ItemAttributesDetailed, MobInfo } from '@/types'
 import { clientLogger } from '@/lib/logger'
+import essentialData from '@/../data/item-attributes-essential.json'
 
 /**
- * 懶加載物品屬性資料 Hook
+ * 預載入 Essential 物品資料 Hook
+ *
+ * 使用情境：
+ * - 頁面初始化時自動載入
+ * - 物品列表顯示和篩選
+ *
+ * 優化效果：
+ * - Essential 資料僅 275 KB（vs. 原始 2.5 MB）
+ * - 包含列表顯示所需的基本資訊和需求屬性
+ */
+export function useItemAttributesEssential() {
+  const essentialMap = useMemo(() => {
+    const map = new Map<number, ItemAttributesEssential>()
+    essentialData.forEach((item) => {
+      const itemId = parseInt(item.item_id, 10)
+      if (!isNaN(itemId)) {
+        map.set(itemId, item as ItemAttributesEssential)
+      }
+    })
+    clientLogger.info(`載入 ${essentialData.length} 筆 Essential 物品資料`)
+    return map
+  }, [])
+
+  return { essentialMap, isLoading: false }
+}
+
+/**
+ * 懶加載單一物品 Detailed 資料 Hook
  *
  * 使用情境：
  * - 開啟 ItemModal 時
- * - 啟用進階篩選時
+ * - 需要顯示物品完整屬性時
  *
- * 優化效果：減少 2.5MB 初始 Bundle 大小
+ * 優化效果：
+ * - 每個物品的 Detailed 資料僅 ~1.53 KB
+ * - 只在需要時載入，大幅減少流量（94.5% 節省）
+ *
+ * @param itemId - 要載入的物品 ID（null 表示不載入）
  */
-export function useLazyItemAttributes() {
-  const [data, setData] = useState<ItemAttributes[] | null>(null)
+export function useLazyItemDetailed(itemId: number | null) {
+  const [data, setData] = useState<ItemAttributesDetailed | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<Error | null>(null)
 
-  const loadData = useCallback(async () => {
-    // 如果已經載入過，直接返回
-    if (data !== null) return
-
-    // 如果正在載入中，不重複載入
-    if (isLoading) return
-
-    try {
-      setIsLoading(true)
-      setError(null)
-      clientLogger.info('開始懶加載物品屬性資料...')
-
-      // 動態 import JSON 資料
-      const dataModule = await import('@/../data/item-attributes.json')
-      const itemAttributes = dataModule.default as ItemAttributes[]
-
-      setData(itemAttributes)
-      clientLogger.info(`成功載入 ${itemAttributes.length} 筆物品屬性資料`)
-    } catch (err) {
-      const error = err instanceof Error ? err : new Error('載入物品屬性失敗')
-      setError(error)
-      clientLogger.error('載入物品屬性失敗', err)
-    } finally {
-      setIsLoading(false)
+  useEffect(() => {
+    if (!itemId) {
+      setData(null)
+      return
     }
-  }, [data, isLoading])
 
-  // 建立物品屬性 Map (itemId -> ItemAttributes)
-  const itemAttributesMap = useMemo(() => {
-    if (!data) return new Map<number, ItemAttributes>()
+    const loadData = async () => {
+      try {
+        setIsLoading(true)
+        setError(null)
+        clientLogger.info(`開始載入物品 ${itemId} 的 Detailed 資料...`)
 
-    const attrMap = new Map<number, ItemAttributes>()
-    data.forEach((attr) => {
-      const itemId = parseInt(attr.item_id, 10)
-      if (!isNaN(itemId)) {
-        attrMap.set(itemId, attr)
+        // 動態 import 單一物品的 Detailed JSON
+        const dataModule = await import(`@/../data/item-attributes-detailed/${itemId}.json`)
+        const detailedData = dataModule.default as ItemAttributesDetailed
+
+        setData(detailedData)
+        clientLogger.info(`成功載入物品 ${itemId} 的 Detailed 資料`)
+      } catch (err) {
+        const error = err instanceof Error ? err : new Error(`載入物品 ${itemId} 詳細資料失敗`)
+        setError(error)
+        clientLogger.error(`載入物品 ${itemId} 詳細資料失敗`, err)
+      } finally {
+        setIsLoading(false)
       }
-    })
-    return attrMap
-  }, [data])
+    }
 
-  return {
-    data,
-    itemAttributesMap,
-    isLoading,
-    error,
-    loadData,
-  }
+    loadData()
+  }, [itemId])
+
+  return { data, isLoading, error }
 }
 
 /**
@@ -130,4 +145,3 @@ export function useLazyMobInfo() {
     loadData,
   }
 }
-
