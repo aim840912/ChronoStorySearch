@@ -26,6 +26,9 @@ export default function RootLayout({
       <head>
         <title>ChronoStory Search</title>
         <meta name="description" content="查找裝備、怪物詳細資訊" />
+        <meta name="robots" content="index, follow" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <meta name="format-detection" content="telephone=no" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
