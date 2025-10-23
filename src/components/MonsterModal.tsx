@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { DropItem, Language, ItemAttributes } from '@/types'
+import type { DropItem, Language, ItemAttributesEssential } from '@/types'
 import { DropItemCard } from './DropItemCard'
 import { MonsterStatsCard } from './MonsterStatsCard'
 import { MonsterLocationsCard } from './MonsterLocationsCard'
@@ -16,7 +16,7 @@ interface MonsterModalProps {
   monsterId: number | null
   monsterName: string
   allDrops: DropItem[]
-  itemAttributesMap: Map<number, ItemAttributes>
+  itemAttributesMap: Map<number, ItemAttributesEssential>
   isFavorite: boolean
   onToggleFavorite: (mobId: number, mobName: string) => void
   // 物品相關 props

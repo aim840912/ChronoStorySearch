@@ -4,7 +4,10 @@
  * 基於 equipment.category 欄位，降級使用 sub_type
  */
 
-import type { ItemAttributes, ItemCategoryGroup, CategoryGroupType } from '@/types'
+import type { ItemAttributes, ItemAttributesEssential, ItemCategoryGroup, CategoryGroupType } from '@/types'
+
+// 統一的篩選資料介面（支援 Essential 和完整 Attributes）
+type FilterableItem = ItemAttributes | ItemAttributesEssential
 
 /**
  * equipment.category 到 ItemCategoryGroup 的對應表
@@ -78,10 +81,15 @@ export const CATEGORY_GROUP_MAP: Record<CategoryGroupType, ItemCategoryGroup[]> 
  * @param item 物品屬性資料
  * @returns 物品類別群組，若無法判斷則返回 null
  */
-export function getItemCategoryGroup(item: ItemAttributes): ItemCategoryGroup | null {
+export function getItemCategoryGroup(item: FilterableItem): ItemCategoryGroup | null {
+  // 支援 Essential (扁平化) 和 Attributes (嵌套) 兩種結構
+  const equipmentCategory = ('equipment_category' in item)
+    ? item.equipment_category
+    : item.equipment?.category
+
   // 優先使用 equipment.category
-  if (item.equipment?.category && item.equipment.category in EQUIPMENT_CATEGORY_MAP) {
-    return EQUIPMENT_CATEGORY_MAP[item.equipment.category]
+  if (equipmentCategory && equipmentCategory in EQUIPMENT_CATEGORY_MAP) {
+    return EQUIPMENT_CATEGORY_MAP[equipmentCategory]
   }
 
   // 降級：使用 sub_type
@@ -100,7 +108,7 @@ export function getItemCategoryGroup(item: ItemAttributes): ItemCategoryGroup | 
  * @returns 是否屬於該類別群組
  */
 export function isItemInCategoryGroup(
-  item: ItemAttributes,
+  item: FilterableItem,
   categoryGroup: ItemCategoryGroup
 ): boolean {
   const itemGroup = getItemCategoryGroup(item)
@@ -114,7 +122,7 @@ export function isItemInCategoryGroup(
  * @returns 是否屬於任一類別群組
  */
 export function isItemInAnyCategoryGroup(
-  item: ItemAttributes,
+  item: FilterableItem,
   categoryGroups: ItemCategoryGroup[]
 ): boolean {
   if (categoryGroups.length === 0) return true // 空陣列表示不篩選
@@ -133,7 +141,7 @@ export function isItemInAnyCategoryGroup(
  * @returns 是否屬於所有類別群組
  */
 export function isItemInAllCategoryGroups(
-  item: ItemAttributes,
+  item: FilterableItem,
   categoryGroups: ItemCategoryGroup[]
 ): boolean {
   if (categoryGroups.length === 0) return true // 空陣列表示不篩選

@@ -1,6 +1,6 @@
 'use client'
 
-import type { ItemAttributes } from '@/types'
+import type { ItemAttributesEssential } from '@/types'
 import { ItemCard } from '@/components/ItemCard'
 import { EmptyState } from './EmptyState'
 
@@ -9,7 +9,7 @@ type UniqueFavoriteItem = { itemId: number; itemName: string; chineseItemName?: 
 interface FavoriteItemsListProps {
   items: UniqueFavoriteItem[]
   hasSearchTerm: boolean
-  itemAttributesMap: Map<number, ItemAttributes>
+  itemAttributesMap: Map<number, ItemAttributesEssential>
   onCardClick: (itemId: number, itemName: string) => void
   onToggleFavorite: (itemId: number, itemName: string) => void
   t: (key: string) => string
@@ -48,7 +48,7 @@ export function FavoriteItemsList({
           onCardClick={onCardClick}
           isFavorite={true}
           onToggleFavorite={onToggleFavorite}
-          reqLevel={itemAttributesMap.get(item.itemId)?.equipment?.requirements?.req_level ?? null}
+          reqLevel={itemAttributesMap.get(item.itemId)?.req_level ?? null}
         />
       ))}
     </div>

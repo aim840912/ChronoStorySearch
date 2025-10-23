@@ -1,13 +1,13 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { DropItem, Language, GachaMachine, ItemAttributes } from '@/types'
+import type { DropItem, Language, GachaMachine, ItemAttributes, ItemAttributesEssential } from '@/types'
 import { MonsterDropCard } from './MonsterDropCard'
 import { ItemAttributesCard } from './ItemAttributesCard'
 import { clientLogger } from '@/lib/logger'
 import { getItemImageUrl, getMonsterImageUrl, preloadImages } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { useLazyMobInfo } from '@/hooks/useLazyData'
+import { useLazyMobInfo, useLazyItemDetailed } from '@/hooks/useLazyData'
 import { findGachaItemAttributes } from '@/lib/gacha-utils'
 
 interface ItemModalProps {
@@ -17,7 +17,7 @@ interface ItemModalProps {
   itemName: string
   allDrops: DropItem[]
   gachaMachines: GachaMachine[]
-  itemAttributesMap: Map<number, ItemAttributes>
+  itemAttributesMap: Map<number, ItemAttributesEssential>
   isFavorite: boolean
   onToggleFavorite: (itemId: number, itemName: string) => void
   // 怪物相關 props
@@ -64,6 +64,13 @@ export function ItemModal({
     monsterHPMap,
     loadData: loadMobInfo,
   } = useLazyMobInfo()
+
+  // 懶加載物品詳細資料 (用於顯示完整物品屬性)
+  const {
+    data: itemDetailed,
+    isLoading: isLoadingDetailed,
+    error: detailedError,
+  } = useLazyItemDetailed(itemId)
 
   // 語言切換函數
   const toggleLanguage = () => {
@@ -148,25 +155,63 @@ export function ItemModal({
     return itemData.itemName
   }, [language, itemData, itemName])
 
-  // 查找物品屬性資料（優先使用 item-attributes.json，找不到則從轉蛋機資料查找）
+  // 查找物品屬性資料（組合 Essential + Detailed 資料）
   const itemAttributes = useMemo(() => {
     if (!itemId && itemId !== 0) return null
 
-    // 1. 優先從 item-attributes.json 查找
-    const attributesFromJson = itemAttributesMap.get(itemId)
-    if (attributesFromJson) {
-      return attributesFromJson
+    // 1. 優先組合 Essential + Detailed 資料
+    const essentialData = itemAttributesMap.get(itemId)
+    if (essentialData && itemDetailed) {
+      // 組合成完整的 ItemAttributes
+      const combined: ItemAttributes = {
+        item_id: essentialData.item_id,
+        item_name: essentialData.item_name,
+        type: essentialData.type,
+        sub_type: essentialData.sub_type,
+        // 從 Detailed 資料補充完整屬性
+        item_type_id: itemDetailed.item_type_id,
+        sale_price: itemDetailed.sale_price,
+        max_stack_count: itemDetailed.max_stack_count,
+        untradeable: itemDetailed.untradeable,
+        item_description: itemDetailed.item_description,
+        equipment: itemDetailed.equipment,
+        scroll: itemDetailed.scroll,
+        potion: itemDetailed.potion,
+      }
+      return combined
     }
 
-    // 2. 如果找不到，嘗試從轉蛋機資料中查找並轉換
+    // 2. 如果 Detailed 資料還在載入中，僅使用 Essential 資料（部分顯示）
+    if (essentialData && isLoadingDetailed) {
+      clientLogger.info(`物品 ${itemId} Detailed 資料載入中，暫時使用 Essential 資料`)
+      // 返回部分資料（只有基本資訊）
+      return {
+        item_id: essentialData.item_id,
+        item_name: essentialData.item_name,
+        type: essentialData.type,
+        sub_type: essentialData.sub_type,
+        item_type_id: 0,
+        sale_price: null,
+        max_stack_count: null,
+        untradeable: null,
+        item_description: null,
+      } as ItemAttributes
+    }
+
+    // 3. 如果找不到，嘗試從轉蛋機資料中查找並轉換
     const attributesFromGacha = findGachaItemAttributes(itemId, gachaMachines)
     if (attributesFromGacha) {
       clientLogger.info(`物品 ${itemId} 使用轉蛋機資料作為屬性來源`)
       return attributesFromGacha
     }
 
+    // 4. 如果載入失敗，記錄錯誤
+    if (detailedError) {
+      clientLogger.error(`物品 ${itemId} Detailed 資料載入失敗`, detailedError)
+    }
+
     return null
-  }, [itemId, itemAttributesMap, gachaMachines])
+  }, [itemId, itemAttributesMap, itemDetailed, isLoadingDetailed, detailedError, gachaMachines])
 
   // 當 Modal 開啟時載入物品屬性資料與怪物資訊資料，並預載入圖片
   useEffect(() => {

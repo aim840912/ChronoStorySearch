@@ -1,7 +1,7 @@
 'use client'
 
 import { memo } from 'react'
-import type { DropItem, ItemAttributes, GachaMachine } from '@/types'
+import type { DropItem, ItemAttributesEssential, GachaMachine } from '@/types'
 import { MonsterModal } from '@/components/MonsterModal'
 import { ItemModal } from '@/components/ItemModal'
 import { BugReportModal } from '@/components/BugReportModal'
@@ -42,7 +42,7 @@ interface ModalManagerProps {
   // 資料
   allDrops: DropItem[]
   gachaMachines: GachaMachine[]
-  itemAttributesMap: Map<number, ItemAttributes>
+  itemAttributesMap: Map<number, ItemAttributesEssential>
 
   // 最愛相關
   isFavorite: (mobId: number) => boolean

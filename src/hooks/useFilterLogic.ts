@@ -8,10 +8,14 @@ import type {
   FavoriteItem,
   AdvancedFilterOptions,
   ItemAttributes,
+  ItemAttributesEssential,
   GachaMachine,
   ExtendedUniqueItem,
   SearchTypeFilter
 } from '@/types'
+
+// 統一的篩選資料介面（支援 Essential 和完整 Attributes）
+type FilterableItem = ItemAttributes | ItemAttributesEssential
 import { matchesAllKeywords } from '@/lib/search-utils'
 import {
   applyAdvancedFilter,
@@ -32,7 +36,7 @@ interface UseFilterLogicParams {
   debouncedSearchTerm: string // 延遲搜尋詞（已 debounce）
   searchType: SearchTypeFilter // 搜尋類型篩選（怪物/物品/全部）
   advancedFilter: AdvancedFilterOptions
-  itemAttributesMap: Map<number, ItemAttributes>
+  itemAttributesMap: Map<number, ItemAttributesEssential>
   mobLevelMap: Map<number, number | null>
   gachaMachines: GachaMachine[]
   initialRandomGachaItems: Array<{
@@ -381,7 +385,7 @@ export function useFilterLogic({
 
     // 3.5. 為轉蛋物品建立屬性 Map（用於後續篩選）
     // 因為轉蛋物品不在 item-attributes.json 中，需要動態生成屬性
-    const extendedAttributesMap = new Map(itemAttributesMap)
+    const extendedAttributesMap: Map<number, FilterableItem> = new Map(itemAttributesMap)
 
     items.forEach(item => {
       if (!extendedAttributesMap.has(item.itemId)) {
@@ -420,8 +424,13 @@ export function useFilterLogic({
       const attrA = extendedAttributesMap.get(a.itemId)
       const attrB = extendedAttributesMap.get(b.itemId)
 
-      const levelA = attrA?.equipment?.requirements?.req_level ?? null
-      const levelB = attrB?.equipment?.requirements?.req_level ?? null
+      // 支援 Essential (扁平化) 和 Attributes (嵌套) 兩種結構
+      const levelA = attrA && ('req_level' in attrA)
+        ? attrA.req_level
+        : attrA?.equipment?.requirements?.req_level ?? null
+      const levelB = attrB && ('req_level' in attrB)
+        ? attrB.req_level
+        : attrB?.equipment?.requirements?.req_level ?? null
 
       // null 值排在最後
       if (levelA === null && levelB === null) return 0
@@ -466,14 +475,16 @@ export function useFilterLogic({
         levelA = mobLevelMap.get(a.data.mobId) ?? null
       } else {
         const attr = itemAttributesMap.get(a.data.itemId)
-        levelA = attr?.equipment?.requirements?.req_level ?? null
+        // ItemAttributesEssential 有直接的 req_level 屬性
+        levelA = attr?.req_level ?? null
       }
 
       if (b.type === 'monster') {
         levelB = mobLevelMap.get(b.data.mobId) ?? null
       } else {
         const attr = itemAttributesMap.get(b.data.itemId)
-        levelB = attr?.equipment?.requirements?.req_level ?? null
+        // ItemAttributesEssential 有直接的 req_level 屬性
+        levelB = attr?.req_level ?? null
       }
 
       // null 值排在最後

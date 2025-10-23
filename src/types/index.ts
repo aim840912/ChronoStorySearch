@@ -340,7 +340,7 @@ export interface ItemAttributes {
   potion?: PotionInfo
 }
 
-// Essential 資料類型（用於列表顯示，包含基本資訊和需求屬性）
+// Essential 資料類型（用於列表顯示、篩選，包含基本資訊、需求屬性和篩選欄位）
 export interface ItemAttributesEssential {
   item_id: string
   item_name: string
@@ -351,6 +351,17 @@ export interface ItemAttributesEssential {
   req_dex: number
   req_int: number
   req_luk: number
+  // 篩選所需欄位
+  equipment_category: string | null  // equipment.category
+  equipment_classes: {               // equipment.classes
+    beginner: boolean | null
+    warrior: boolean | null
+    magician: boolean | null
+    bowman: boolean | null
+    thief: boolean | null
+    pirate: boolean | null
+  } | null
+  scroll_category: string | null     // scroll.category
 }
 
 // Detailed 資料類型（用於 Modal 詳細顯示，包含完整屬性）

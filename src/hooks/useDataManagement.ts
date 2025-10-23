@@ -1,11 +1,11 @@
 'use client'
 
 import { useState, useEffect, useMemo, useCallback } from 'react'
-import type { DropItem, GachaMachine, GachaItem, EnhancedGachaItem, MobInfo, ItemAttributes } from '@/types'
+import type { DropItem, GachaMachine, GachaItem, EnhancedGachaItem, MobInfo, ItemAttributesEssential } from '@/types'
 import { clientLogger } from '@/lib/logger'
 import dropsData from '@/../data/drops.json'
 import mobInfoData from '@/../data/mob-info.json'
-import itemAttributesData from '@/../data/item-attributes.json'
+import itemAttributesEssentialData from '@/../data/item-attributes-essential.json'
 
 /**
  * Enhanced JSON 的轉蛋機格式
@@ -204,10 +204,11 @@ export function useDataManagement() {
     return levelMap
   }, [])
 
-  // 建立物品屬性 Map (itemId -> ItemAttributes)
+  // 建立物品屬性 Map (itemId -> ItemAttributesEssential)
+  // 使用 Essential 資料（僅包含篩選所需的基本資訊和需求屬性）
   const itemAttributesMap = useMemo(() => {
-    const attrMap = new Map<number, ItemAttributes>()
-    const itemAttributesArray = itemAttributesData as ItemAttributes[]
+    const attrMap = new Map<number, ItemAttributesEssential>()
+    const itemAttributesArray = itemAttributesEssentialData as ItemAttributesEssential[]
 
     itemAttributesArray.forEach((attr) => {
       const itemId = parseInt(attr.item_id, 10)
@@ -216,6 +217,7 @@ export function useDataManagement() {
       }
     })
 
+    clientLogger.info(`建立 Essential 物品屬性 Map: ${attrMap.size} 項`)
     return attrMap
   }, [])
 

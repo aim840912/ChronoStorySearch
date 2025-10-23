@@ -1,6 +1,6 @@
 'use client'
 
-import type { ExtendedUniqueItem, ItemAttributes } from '@/types'
+import type { ExtendedUniqueItem, ItemAttributesEssential } from '@/types'
 import type { RefObject } from 'react'
 import { MonsterCard } from '@/components/MonsterCard'
 import { ItemCard } from '@/components/ItemCard'
@@ -43,7 +43,7 @@ interface AllItemsViewProps {
 
   // 資料映射
   mobLevelMap: Map<number, number | null>
-  itemAttributesMap: Map<number, ItemAttributes>
+  itemAttributesMap: Map<number, ItemAttributesEssential>
 
   // 回調函數
   onMonsterCardClick: (mobId: number, mobName: string) => void
@@ -124,7 +124,7 @@ export function AllItemsView({
                 isFavorite={isItemFavorite(card.data.itemId)}
                 onToggleFavorite={onToggleItemFavorite}
                 source={card.data.source}
-                reqLevel={itemAttributesMap.get(card.data.itemId)?.equipment?.requirements?.req_level ?? null}
+                reqLevel={itemAttributesMap.get(card.data.itemId)?.req_level ?? null}
               />
             )
           }
@@ -196,7 +196,7 @@ export function AllItemsView({
                 isFavorite={isItemFavorite(item.itemId)}
                 onToggleFavorite={onToggleItemFavorite}
                 source={item.source}
-                reqLevel={itemAttributesMap.get(item.itemId)?.equipment?.requirements?.req_level ?? null}
+                reqLevel={itemAttributesMap.get(item.itemId)?.req_level ?? null}
               />
             ))}
           </div>

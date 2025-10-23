@@ -16,7 +16,7 @@ if (!fs.existsSync(detailedDir)) {
   console.log(`✓ 建立資料夾：${detailedDir}`)
 }
 
-// 1. 生成 Essential 資料
+// 1. 生成 Essential 資料（包含基本資訊、需求屬性和篩選欄位）
 const essential = originalData.map(item => ({
   item_id: item.item_id,
   item_name: item.item_name,
@@ -27,6 +27,10 @@ const essential = originalData.map(item => ({
   req_dex: item.equipment?.requirements?.req_dex ?? 0,
   req_int: item.equipment?.requirements?.req_int ?? 0,
   req_luk: item.equipment?.requirements?.req_luk ?? 0,
+  // 篩選所需欄位
+  equipment_category: item.equipment?.category ?? null,
+  equipment_classes: item.equipment?.classes ?? null,
+  scroll_category: item.scroll?.category ?? null,
 }))
 
 // 寫入 Essential

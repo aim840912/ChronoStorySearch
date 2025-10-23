@@ -1,7 +1,7 @@
 'use client'
 
 import { memo } from 'react'
-import type { FilterMode, ItemAttributes } from '@/types'
+import type { FilterMode, ItemAttributesEssential } from '@/types'
 import { FavoriteMonstersList } from '@/components/lists/FavoriteMonstersList'
 import { FavoriteItemsList } from '@/components/lists/FavoriteItemsList'
 import { AllItemsView } from '@/components/lists/AllItemsView'
@@ -49,7 +49,7 @@ interface ContentDisplayProps {
     chineseItemName?: string | null
     monsterCount: number
   }>
-  itemAttributesMap: Map<number, ItemAttributes>
+  itemAttributesMap: Map<number, ItemAttributesEssential>
   onItemCardClick: (itemId: number, itemName: string) => void
   onToggleItemFavorite: (itemId: number, itemName: string) => void
   isItemFavorite: (itemId: number) => boolean

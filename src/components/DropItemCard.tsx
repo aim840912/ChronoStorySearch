@@ -1,13 +1,13 @@
 'use client'
 
-import type { DropItem, ItemAttributes } from '@/types'
+import type { DropItem, ItemAttributesEssential } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
 import { getItemImageUrl } from '@/lib/image-utils'
 
 interface DropItemCardProps {
   drop: DropItem
-  itemAttributesMap: Map<number, ItemAttributes>
+  itemAttributesMap: Map<number, ItemAttributesEssential>
   isFavorite: boolean
   onToggleFavorite: (itemId: number, itemName: string) => void
   onItemClick: (itemId: number, itemName: string) => void
@@ -39,29 +39,17 @@ export function DropItemCard({
   // 根據物品類型決定顯示內容
   const itemAttributes = itemAttributesMap.get(drop.itemId)
   const itemType = itemAttributes?.type
-  const itemSubType = itemAttributes?.sub_type
 
   let label = t('card.quantity')
   let value: string | number = qtyRange
 
-  if (itemType === 'Eqp' && itemAttributes?.equipment) {
-    // 裝備：type 是 'Eqp'，顯示等級
+  if (itemType === 'Eqp' && itemAttributes?.req_level !== undefined) {
+    // 裝備：type 是 'Eqp'，顯示等級（從 Essential 的 req_level 讀取）
     label = t('card.level')
-    const reqLevel = itemAttributes.equipment.requirements.req_level
+    const reqLevel = itemAttributes.req_level
     value = reqLevel ? `Lv.${reqLevel}` : '-'
-  } else if (itemSubType === 'Potion' && itemAttributes?.potion) {
-    // 藥水：sub_type 是 'Potion'，顯示效果（HP 或 MP）
-    label = t('card.effect')
-    const hp = itemAttributes.potion.stats.hp
-    const mp = itemAttributes.potion.stats.mp
-    if (hp && hp > 0) {
-      value = `HP +${hp}`
-    } else if (mp && mp > 0) {
-      value = `MP +${mp}`
-    } else {
-      value = '-'
-    }
   }
+  // 注意：藥水效果需要 Detailed 資料，Essential 中不包含，所以此處不顯示藥水效果
   // 其他類型（包含卷軸）保持顯示數量
 
   return (

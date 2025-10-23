@@ -7,8 +7,12 @@ import type {
   DropItem,
   AdvancedFilterOptions,
   ItemAttributes,
+  ItemAttributesEssential,
 } from '@/types'
 import { isItemInAnyCategoryGroup, EQUIPMENT_CATEGORY_MAP } from './item-categories'
+
+// 統一的篩選資料介面（支援 Essential 和完整 Attributes）
+type FilterableItem = ItemAttributes | ItemAttributesEssential
 
 /**
  * 判斷掉落資料是否符合資料類型篩選
@@ -42,7 +46,7 @@ export function matchesDataTypeFilter(
  */
 export function matchesItemCategoryFilter(
   itemId: number,
-  itemAttributes: Map<number, ItemAttributes>,
+  itemAttributes: Map<number, FilterableItem>,
   filter: AdvancedFilterOptions
 ): boolean {
   // 未啟用篩選或未選擇任何類別
@@ -66,12 +70,15 @@ export function matchesItemCategoryFilter(
 
   if (hasScroll && hasEquipmentCategory) {
     // 特殊邏輯：只保留匹配的卷軸
-    if (!item.scroll) {
+    // 支援 Essential (扁平化) 和 Attributes (嵌套) 兩種結構
+    const scrollCategory = ('scroll_category' in item)
+      ? item.scroll_category
+      : item.scroll?.category
+
+    if (!scrollCategory) {
       return false  // 不是卷軸，過濾掉
     }
 
-    // 檢查 scroll.category 是否匹配任一選中的裝備類別
-    const scrollCategory = item.scroll.category
     // 將 scroll.category (如 "One Handed Sword") 映射為 ItemCategoryGroup (如 "oneHandedSword")
     const scrollCategoryGroup = EQUIPMENT_CATEGORY_MAP[scrollCategory]
 
@@ -96,7 +103,7 @@ export function matchesItemCategoryFilter(
  */
 export function matchesJobClassFilter(
   itemId: number,
-  itemAttributes: Map<number, ItemAttributes>,
+  itemAttributes: Map<number, FilterableItem>,
   filter: AdvancedFilterOptions
 ): boolean {
   // 未啟用篩選或未選擇任何職業
@@ -106,13 +113,22 @@ export function matchesJobClassFilter(
 
   // 取得物品屬性
   const item = itemAttributes.get(itemId)
-  if (!item || !item.equipment) {
+  if (!item) {
+    // 物品屬性不存在，不符合職業篩選
+    return false
+  }
+
+  // 支援 Essential (扁平化) 和 Attributes (嵌套) 兩種結構
+  const classes = ('equipment_classes' in item)
+    ? item.equipment_classes
+    : item.equipment?.classes
+
+  if (!classes) {
     // 非裝備類物品，不符合職業篩選（職業篩選只針對裝備）
     return false
   }
 
   // 檢查物品是否允許任一選中的職業使用
-  const { classes } = item.equipment
   return filter.jobClasses.some((jobClass) => {
     const classValue = classes[jobClass]
 
@@ -138,7 +154,7 @@ export function matchesJobClassFilter(
  */
 export function matchesLevelRangeFilter(
   itemId: number,
-  itemAttributes: Map<number, ItemAttributes>,
+  itemAttributes: Map<number, FilterableItem>,
   filter: AdvancedFilterOptions
 ): boolean {
   const { min, max } = filter.levelRange
@@ -150,12 +166,19 @@ export function matchesLevelRangeFilter(
 
   // 取得物品屬性
   const item = itemAttributes.get(itemId)
-  if (!item || !item.equipment) {
-    // 非裝備類物品（無等級需求），不符合等級範圍篩選條件
+  if (!item) {
     return false
   }
 
-  const reqLevel = item.equipment.requirements.req_level
+  // 支援 Essential (扁平化) 和 Attributes (嵌套) 兩種結構
+  const reqLevel = ('req_level' in item)
+    ? item.req_level
+    : item.equipment?.requirements?.req_level
+
+  // 非裝備類物品（無等級需求），不符合等級範圍篩選條件
+  if (reqLevel === null || reqLevel === undefined) {
+    return false
+  }
 
   // 如果物品沒有等級需求，預設通過
   if (reqLevel === null) {
@@ -213,7 +236,7 @@ export function matchesMonsterLevelRangeFilter(
 export function applyAdvancedFilter(
   drops: DropItem[],
   filter: AdvancedFilterOptions,
-  itemAttributes: Map<number, ItemAttributes>
+  itemAttributes: Map<number, FilterableItem>
 ): DropItem[] {
   // 未啟用進階篩選，直接返回原資料
   if (!filter.enabled) {
