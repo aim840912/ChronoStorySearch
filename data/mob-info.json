@@ -2097,7 +2097,7 @@
       {
         "map_id": null,
         "map_name": "Orbis Tower <4th Floor>",
-        "chinese_map_name": "天空之塔&lt;4層&gt;"
+        "chinese_map_name": "天空之塔<4層>"
       }
     ]
   },
@@ -4245,7 +4245,7 @@
       {
         "map_id": null,
         "map_name": "Orbis Tower <5th Floor>",
-        "chinese_map_name": "天空之塔&lt;5層&gt;"
+        "chinese_map_name": "天空之塔<5層>"
       }
     ]
   },
@@ -4280,7 +4280,7 @@
       {
         "map_id": null,
         "map_name": "Orbis Tower <2nd Floor>",
-        "chinese_map_name": "天空之塔&lt;2層&gt;"
+        "chinese_map_name": "天空之塔<2層>"
       }
     ]
   },
@@ -4315,7 +4315,7 @@
       {
         "map_id": null,
         "map_name": "Orbis Tower <3rd Floor>",
-        "chinese_map_name": "天空之塔&lt;3層&gt;"
+        "chinese_map_name": "天空之塔<3層>"
       }
     ]
   },
@@ -4385,7 +4385,7 @@
       {
         "map_id": null,
         "map_name": "Orbis Tower <1st Floor>",
-        "chinese_map_name": "天空之塔&lt;1層&gt;"
+        "chinese_map_name": "天空之塔<1層>"
       }
     ]
   },
