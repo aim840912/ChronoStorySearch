@@ -1,0 +1,27 @@
+{
+  "item_type_id": 2,
+  "sale_price": 50,
+  "max_stack_count": 1000,
+  "untradeable": null,
+  "item_description": "A sweet, tasty orange.",
+  "potion": {
+    "duration": null,
+    "stats": {
+      "attack_speed": null,
+      "str": null,
+      "dex": null,
+      "int": null,
+      "luk": null,
+      "watk": null,
+      "matk": null,
+      "accuracy": null,
+      "avoidability": null,
+      "speed": null,
+      "jump": null,
+      "hp": null,
+      "mp": 50,
+      "wdef": null,
+      "mdef": null
+    }
+  }
+}

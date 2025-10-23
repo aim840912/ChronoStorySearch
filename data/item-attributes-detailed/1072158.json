@@ -1,0 +1,118 @@
+{
+  "item_type_id": 14,
+  "sale_price": 80000,
+  "max_stack_count": 1,
+  "untradeable": null,
+  "item_description": "",
+  "equipment": {
+    "category": "Shoes",
+    "requirements": {
+      "req_level": 70,
+      "req_str": 0,
+      "req_dex": 0,
+      "req_int": 218,
+      "req_luk": 73,
+      "req_fam": null
+    },
+    "classes": {
+      "beginner": null,
+      "warrior": null,
+      "magician": true,
+      "bowman": null,
+      "thief": null,
+      "pirate": null
+    },
+    "stats": {
+      "attack_speed": null,
+      "str": null,
+      "dex": null,
+      "int": 2,
+      "luk": 2,
+      "watk": null,
+      "matk": 1,
+      "accuracy": null,
+      "avoidability": null,
+      "speed": null,
+      "jump": null,
+      "hp": null,
+      "mp": null,
+      "wdef": 27,
+      "mdef": 13,
+      "upgrades": 5
+    },
+    "stat_variation": {
+      "str": {
+        "min": 0,
+        "max": 4
+      },
+      "dex": {
+        "min": 0,
+        "max": 4
+      },
+      "int": {
+        "min": 0,
+        "max": 6
+      },
+      "luk": {
+        "min": 0,
+        "max": 6
+      },
+      "watk": {
+        "min": 0,
+        "max": 4
+      },
+      "matk": {
+        "min": 0,
+        "max": 5
+      },
+      "accuracy": {
+        "min": 0,
+        "max": 7
+      },
+      "avoidability": {
+        "min": 0,
+        "max": 7
+      },
+      "speed": {
+        "min": 0,
+        "max": 4
+      },
+      "jump": {
+        "min": 0,
+        "max": 2
+      },
+      "hp": {
+        "min": 0,
+        "max": 35
+      },
+      "mp": {
+        "min": 0,
+        "max": 35
+      },
+      "wdef": {
+        "min": 0,
+        "max": 62
+      },
+      "mdef": {
+        "min": 0,
+        "max": 48
+      }
+    },
+    "stat_category_each_extra": {
+      "attributes": 4,
+      "attack": 4,
+      "speed": 4,
+      "jump": 2,
+      "accuracy": 7,
+      "defensive": 35
+    },
+    "stat_category_max_extra": {
+      "attributes": 7,
+      "attack": 4,
+      "speed": 4,
+      "jump": 2,
+      "accuracy": 0,
+      "defensive": 70
+    }
+  }
+}

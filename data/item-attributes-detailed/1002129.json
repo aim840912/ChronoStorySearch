@@ -1,0 +1,118 @@
+{
+  "item_type_id": 7,
+  "sale_price": 6000,
+  "max_stack_count": 1,
+  "untradeable": null,
+  "item_description": "",
+  "equipment": {
+    "category": "Hat",
+    "requirements": {
+      "req_level": 20,
+      "req_str": 0,
+      "req_dex": 40,
+      "req_int": 0,
+      "req_luk": 50,
+      "req_fam": null
+    },
+    "classes": {
+      "beginner": null,
+      "warrior": null,
+      "magician": null,
+      "bowman": null,
+      "thief": true,
+      "pirate": null
+    },
+    "stats": {
+      "attack_speed": null,
+      "str": null,
+      "dex": null,
+      "int": null,
+      "luk": null,
+      "watk": null,
+      "matk": null,
+      "accuracy": null,
+      "avoidability": null,
+      "speed": null,
+      "jump": null,
+      "hp": 5,
+      "mp": null,
+      "wdef": 15,
+      "mdef": null,
+      "upgrades": 7
+    },
+    "stat_variation": {
+      "str": {
+        "min": 0,
+        "max": null
+      },
+      "dex": {
+        "min": 0,
+        "max": null
+      },
+      "int": {
+        "min": 0,
+        "max": null
+      },
+      "luk": {
+        "min": 0,
+        "max": null
+      },
+      "watk": {
+        "min": 0,
+        "max": 1
+      },
+      "matk": {
+        "min": 0,
+        "max": 1
+      },
+      "accuracy": {
+        "min": 0,
+        "max": 2
+      },
+      "avoidability": {
+        "min": 0,
+        "max": 2
+      },
+      "speed": {
+        "min": 0,
+        "max": 1
+      },
+      "jump": {
+        "min": 0,
+        "max": 1
+      },
+      "hp": {
+        "min": 0,
+        "max": 15
+      },
+      "mp": {
+        "min": 0,
+        "max": 10
+      },
+      "wdef": {
+        "min": 5,
+        "max": 25
+      },
+      "mdef": {
+        "min": 0,
+        "max": 10
+      }
+    },
+    "stat_category_each_extra": {
+      "attributes": null,
+      "attack": 1,
+      "speed": 1,
+      "jump": 1,
+      "accuracy": 2,
+      "defensive": 10
+    },
+    "stat_category_max_extra": {
+      "attributes": null,
+      "attack": 0,
+      "speed": 1,
+      "jump": 1,
+      "accuracy": 0,
+      "defensive": 20
+    }
+  }
+}

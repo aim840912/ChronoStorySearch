@@ -1,0 +1,118 @@
+{
+  "item_type_id": 15,
+  "sale_price": 100000,
+  "max_stack_count": 1,
+  "untradeable": null,
+  "item_description": "",
+  "equipment": {
+    "category": "Two Handed Axe",
+    "requirements": {
+      "req_level": 40,
+      "req_str": 130,
+      "req_dex": 0,
+      "req_int": 0,
+      "req_luk": 0,
+      "req_fam": null
+    },
+    "classes": {
+      "beginner": null,
+      "warrior": true,
+      "magician": null,
+      "bowman": null,
+      "thief": null,
+      "pirate": null
+    },
+    "stats": {
+      "attack_speed": 7,
+      "str": null,
+      "dex": null,
+      "int": null,
+      "luk": null,
+      "watk": 62,
+      "matk": null,
+      "accuracy": null,
+      "avoidability": null,
+      "speed": null,
+      "jump": null,
+      "hp": null,
+      "mp": null,
+      "wdef": null,
+      "mdef": null,
+      "upgrades": 7
+    },
+    "stat_variation": {
+      "str": {
+        "min": 0,
+        "max": null
+      },
+      "dex": {
+        "min": 0,
+        "max": null
+      },
+      "int": {
+        "min": 0,
+        "max": null
+      },
+      "luk": {
+        "min": 0,
+        "max": null
+      },
+      "watk": {
+        "min": 60,
+        "max": 64
+      },
+      "matk": {
+        "min": 0,
+        "max": 2
+      },
+      "accuracy": {
+        "min": 0,
+        "max": 4
+      },
+      "avoidability": {
+        "min": 0,
+        "max": 4
+      },
+      "speed": {
+        "min": 0,
+        "max": 2
+      },
+      "jump": {
+        "min": 0,
+        "max": 1
+      },
+      "hp": {
+        "min": 0,
+        "max": 20
+      },
+      "mp": {
+        "min": 0,
+        "max": 20
+      },
+      "wdef": {
+        "min": 0,
+        "max": 20
+      },
+      "mdef": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    "stat_category_each_extra": {
+      "attributes": null,
+      "attack": 2,
+      "speed": 2,
+      "jump": 1,
+      "accuracy": 4,
+      "defensive": 20
+    },
+    "stat_category_max_extra": {
+      "attributes": null,
+      "attack": 2,
+      "speed": 2,
+      "jump": 1,
+      "accuracy": 0,
+      "defensive": 0
+    }
+  }
+}

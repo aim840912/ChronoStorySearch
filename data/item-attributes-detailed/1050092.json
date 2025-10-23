@@ -1,0 +1,118 @@
+{
+  "item_type_id": 11,
+  "sale_price": 200000,
+  "max_stack_count": 1,
+  "untradeable": null,
+  "item_description": "",
+  "equipment": {
+    "category": "Overall",
+    "requirements": {
+      "req_level": 88,
+      "req_str": 0,
+      "req_dex": 0,
+      "req_int": 265,
+      "req_luk": 90,
+      "req_fam": null
+    },
+    "classes": {
+      "beginner": null,
+      "warrior": null,
+      "magician": true,
+      "bowman": null,
+      "thief": null,
+      "pirate": null
+    },
+    "stats": {
+      "attack_speed": null,
+      "str": null,
+      "dex": null,
+      "int": 3,
+      "luk": 6,
+      "watk": null,
+      "matk": null,
+      "accuracy": null,
+      "avoidability": null,
+      "speed": null,
+      "jump": null,
+      "hp": null,
+      "mp": 40,
+      "wdef": 76,
+      "mdef": 38,
+      "upgrades": 10
+    },
+    "stat_variation": {
+      "str": {
+        "min": 0,
+        "max": 9
+      },
+      "dex": {
+        "min": 0,
+        "max": 9
+      },
+      "int": {
+        "min": 0,
+        "max": 12
+      },
+      "luk": {
+        "min": 0,
+        "max": 15
+      },
+      "watk": {
+        "min": 0,
+        "max": 9
+      },
+      "matk": {
+        "min": 0,
+        "max": 9
+      },
+      "accuracy": {
+        "min": 0,
+        "max": 18
+      },
+      "avoidability": {
+        "min": 0,
+        "max": 18
+      },
+      "speed": {
+        "min": 0,
+        "max": 9
+      },
+      "jump": {
+        "min": 0,
+        "max": 4
+      },
+      "hp": {
+        "min": 0,
+        "max": 88
+      },
+      "mp": {
+        "min": 0,
+        "max": 128
+      },
+      "wdef": {
+        "min": 0,
+        "max": 164
+      },
+      "mdef": {
+        "min": 0,
+        "max": 126
+      }
+    },
+    "stat_category_each_extra": {
+      "attributes": 9,
+      "attack": 9,
+      "speed": 9,
+      "jump": 4,
+      "accuracy": 18,
+      "defensive": 88
+    },
+    "stat_category_max_extra": {
+      "attributes": 18,
+      "attack": 0,
+      "speed": 9,
+      "jump": 4,
+      "accuracy": 0,
+      "defensive": 264
+    }
+  }
+}

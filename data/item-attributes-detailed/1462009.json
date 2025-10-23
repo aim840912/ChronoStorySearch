@@ -1,0 +1,118 @@
+{
+  "item_type_id": 15,
+  "sale_price": 300000,
+  "max_stack_count": 1,
+  "untradeable": null,
+  "item_description": "",
+  "equipment": {
+    "category": "Crossbow",
+    "requirements": {
+      "req_level": 70,
+      "req_str": 70,
+      "req_dex": 210,
+      "req_int": 0,
+      "req_luk": 0,
+      "req_fam": null
+    },
+    "classes": {
+      "beginner": null,
+      "warrior": null,
+      "magician": null,
+      "bowman": true,
+      "thief": null,
+      "pirate": null
+    },
+    "stats": {
+      "attack_speed": 6,
+      "str": null,
+      "dex": null,
+      "int": null,
+      "luk": null,
+      "watk": 82,
+      "matk": null,
+      "accuracy": null,
+      "avoidability": null,
+      "speed": null,
+      "jump": null,
+      "hp": null,
+      "mp": null,
+      "wdef": null,
+      "mdef": null,
+      "upgrades": 7
+    },
+    "stat_variation": {
+      "str": {
+        "min": 0,
+        "max": null
+      },
+      "dex": {
+        "min": 0,
+        "max": null
+      },
+      "int": {
+        "min": 0,
+        "max": null
+      },
+      "luk": {
+        "min": 0,
+        "max": null
+      },
+      "watk": {
+        "min": 79,
+        "max": 86
+      },
+      "matk": {
+        "min": 0,
+        "max": 4
+      },
+      "accuracy": {
+        "min": 0,
+        "max": 7
+      },
+      "avoidability": {
+        "min": 0,
+        "max": 7
+      },
+      "speed": {
+        "min": 0,
+        "max": 4
+      },
+      "jump": {
+        "min": 0,
+        "max": 2
+      },
+      "hp": {
+        "min": 0,
+        "max": 35
+      },
+      "mp": {
+        "min": 0,
+        "max": 35
+      },
+      "wdef": {
+        "min": 0,
+        "max": 35
+      },
+      "mdef": {
+        "min": 0,
+        "max": 35
+      }
+    },
+    "stat_category_each_extra": {
+      "attributes": null,
+      "attack": 4,
+      "speed": 4,
+      "jump": 2,
+      "accuracy": 7,
+      "defensive": 35
+    },
+    "stat_category_max_extra": {
+      "attributes": null,
+      "attack": 4,
+      "speed": 4,
+      "jump": 2,
+      "accuracy": 0,
+      "defensive": 0
+    }
+  }
+}
