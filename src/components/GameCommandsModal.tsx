@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useToast } from '@/hooks/useToast'
 
@@ -47,6 +48,21 @@ export function GameCommandsModal({ isOpen, onClose }: GameCommandsModalProps) {
       toast.showToast(t('commands.copyError'), 'error')
     }
   }
+
+  // ESC 鍵關閉 & 背景滾動鎖定
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose()
+    }
+    if (isOpen) {
+      window.addEventListener('keydown', handleEsc)
+      document.body.style.overflow = 'hidden'
+    }
+    return () => {
+      window.removeEventListener('keydown', handleEsc)
+      document.body.style.overflow = 'unset'
+    }
+  }, [isOpen, onClose])
 
   if (!isOpen) return null
 
