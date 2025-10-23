@@ -108,10 +108,23 @@ export function MonsterModal({
 
   // 查找怪物出沒地圖
   const monsterLocations = useMemo(() => {
+    // 優先使用 mobInfo.maps 資料（包含中文地圖名稱）
+    if (mobInfo?.maps && mobInfo.maps.length > 0) {
+      return mobInfo.maps.map(map => ({
+        name: map.map_name,
+        chineseName: map.chinese_map_name || undefined,
+        npcs: [],
+        monsters: [],
+        links: [],
+        regionName: '',
+        regionCode: ''
+      }))
+    }
+
+    // Fallback: 使用 map-monster-database 資料
     if (!monsterData || !monsterLocationsMap) return undefined
-    // 使用英文名稱查詢（資料庫中使用英文名稱）
     return monsterLocationsMap.get(monsterData.mobName)
-  }, [monsterData, monsterLocationsMap])
+  }, [mobInfo, monsterData, monsterLocationsMap])
 
   // 當 Modal 開啟時載入怪物資訊資料和地圖資料
   useEffect(() => {

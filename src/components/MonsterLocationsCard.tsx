@@ -38,6 +38,16 @@ export function MonsterLocationsCard({
     return nameMap
   }, [mobInfoData])
 
+  // 取得地圖顯示名稱（支援中英文切換）
+  const getMapDisplayName = (mapInfo: MapInfo) => {
+    // 中文模式且有中文名稱時顯示中文
+    if (language === 'zh-TW' && mapInfo.chineseName) {
+      return mapInfo.chineseName
+    }
+    // 否則顯示英文
+    return mapInfo.name
+  }
+
   // 如果沒有地圖資料，顯示提示訊息
   if (!locations || locations.length === 0) {
     return (
@@ -124,7 +134,7 @@ export function MonsterLocationsCard({
                 />
               </svg>
               <span className="text-sm font-semibold text-gray-800 dark:text-gray-200">
-                {location.name}
+                {getMapDisplayName(location)}
               </span>
             </div>
 

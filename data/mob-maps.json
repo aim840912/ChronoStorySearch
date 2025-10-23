@@ -1,0 +1,2852 @@
+{
+  "metadata": {
+    "source": "data/mob-info.json",
+    "generatedAt": "2025-10-22T18:48:32.015Z",
+    "totalMaps": 163,
+    "totalMobMapEntries": 340,
+    "description": "地圖與怪物的對應關係，按地圖分組"
+  },
+  "maps": [
+    {
+      "map_id": "30000",
+      "map_name": "East Entrance to Mushroom Town",
+      "chinese_map_name": "楓之島 : 嫩寶花園",
+      "monsters": [
+        {
+          "mob_id": "9300018",
+          "mob_name": "Tutorial Jr. Sentinel",
+          "chineseMobName": ""
+        }
+      ]
+    },
+    {
+      "map_id": "40000",
+      "map_name": "Snail Hunting Ground I",
+      "chinese_map_name": "楓之島 : 嫩寶狩獵場 I",
+      "monsters": [
+        {
+          "mob_id": "100100",
+          "mob_name": "Snail",
+          "chineseMobName": "嫩寶"
+        }
+      ]
+    },
+    {
+      "map_id": "40001",
+      "map_name": "Snail Hunting Ground II",
+      "chinese_map_name": "楓之島 : 嫩寶狩獵場 II",
+      "monsters": [
+        {
+          "mob_id": "100100",
+          "mob_name": "Snail",
+          "chineseMobName": "嫩寶"
+        },
+        {
+          "mob_id": "100101",
+          "mob_name": "Blue Snail",
+          "chineseMobName": "藍寶"
+        }
+      ]
+    },
+    {
+      "map_id": "40002",
+      "map_name": "Snail Hunting Ground III",
+      "chinese_map_name": "楓之島 : 嫩寶狩獵場 III",
+      "monsters": [
+        {
+          "mob_id": "100100",
+          "mob_name": "Snail",
+          "chineseMobName": "嫩寶"
+        },
+        {
+          "mob_id": "100101",
+          "mob_name": "Blue Snail",
+          "chineseMobName": "藍寶"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        }
+      ]
+    },
+    {
+      "map_id": "50000",
+      "map_name": "A Split Road",
+      "chinese_map_name": "楓之島 : 大菇菇",
+      "monsters": [
+        {
+          "mob_id": "100100",
+          "mob_name": "Snail",
+          "chineseMobName": "嫩寶"
+        },
+        {
+          "mob_id": "100101",
+          "mob_name": "Blue Snail",
+          "chineseMobName": "藍寶"
+        },
+        {
+          "mob_id": "120100",
+          "mob_name": "Shroom",
+          "chineseMobName": "菇菇仔"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        }
+      ]
+    },
+    {
+      "map_id": "50001",
+      "map_name": "The Field West of Southperry",
+      "chinese_map_name": "楓之島 : 楓之港西郊平原",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        },
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        },
+        {
+          "mob_id": "1210102",
+          "mob_name": "Orange Mushroom",
+          "chineseMobName": "菇菇寶貝"
+        }
+      ]
+    },
+    {
+      "map_id": "60002",
+      "map_name": "Pirate's Hideout",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "9308021",
+          "mob_name": "Southperry Pirate Lord",
+          "chineseMobName": "海盜領主"
+        }
+      ]
+    },
+    {
+      "map_id": "1000000",
+      "map_name": "The Field West of Amherst",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "100101",
+          "mob_name": "Blue Snail",
+          "chineseMobName": "藍寶"
+        },
+        {
+          "mob_id": "120100",
+          "mob_name": "Shroom",
+          "chineseMobName": "菇菇仔"
+        }
+      ]
+    },
+    {
+      "map_id": "1000001",
+      "map_name": "In a Small Forest",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "1000002",
+      "map_name": "Dangerous Forest",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "120100",
+          "mob_name": "Shroom",
+          "chineseMobName": "菇菇仔"
+        },
+        {
+          "mob_id": "1210102",
+          "mob_name": "Orange Mushroom",
+          "chineseMobName": "菇菇寶貝"
+        }
+      ]
+    },
+    {
+      "map_id": "1000004",
+      "map_name": "Snail Garden",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "100100",
+          "mob_name": "Snail",
+          "chineseMobName": "嫩寶"
+        },
+        {
+          "mob_id": "100101",
+          "mob_name": "Blue Snail",
+          "chineseMobName": "藍寶"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        }
+      ]
+    },
+    {
+      "map_id": "1000005",
+      "map_name": "Hunting Ground Middle of the Forest I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1210100",
+          "mob_name": "Pig",
+          "chineseMobName": "肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "1000006",
+      "map_name": "Hunting Ground Middle of the Forest II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "210100",
+          "mob_name": "Slime",
+          "chineseMobName": "綠水靈"
+        }
+      ]
+    },
+    {
+      "map_id": "1010000",
+      "map_name": "Amherst",
+      "chinese_map_name": "楓之島 : 冒險者修練場入口",
+      "monsters": [
+        {
+          "mob_id": "2000",
+          "mob_name": "Amherst Crate",
+          "chineseMobName": "箱子"
+        }
+      ]
+    },
+    {
+      "map_id": "1010002",
+      "map_name": "Amherst Townstreet",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2000",
+          "mob_name": "Amherst Crate",
+          "chineseMobName": "箱子"
+        }
+      ]
+    },
+    {
+      "map_id": "1010004",
+      "map_name": "Snail Field of Flowers",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "100100",
+          "mob_name": "Snail",
+          "chineseMobName": "嫩寶"
+        },
+        {
+          "mob_id": "100101",
+          "mob_name": "Blue Snail",
+          "chineseMobName": "藍寶"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        },
+        {
+          "mob_id": "9300659",
+          "mob_name": "Chunky Snail",
+          "chineseMobName": "矮胖蝸牛"
+        }
+      ]
+    },
+    {
+      "map_id": "1020000",
+      "map_name": "The Field East of Amherst",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        },
+        {
+          "mob_id": "210100",
+          "mob_name": "Slime",
+          "chineseMobName": "綠水靈"
+        },
+        {
+          "mob_id": "1210100",
+          "mob_name": "Pig",
+          "chineseMobName": "肥肥"
+        },
+        {
+          "mob_id": "1210101",
+          "mob_name": "Ribbon Pig",
+          "chineseMobName": "緞帶肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "1020001",
+      "map_name": "Tomato Field",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1210101",
+          "mob_name": "Ribbon Pig",
+          "chineseMobName": "緞帶肥肥"
+        },
+        {
+          "mob_id": "1210111",
+          "mob_name": "Alpha Ribbon Pig",
+          "chineseMobName": "奇怪的豬"
+        }
+      ]
+    },
+    {
+      "map_id": "100010000",
+      "map_name": "The Hill East of Henesys",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "120100",
+          "mob_name": "Shroom",
+          "chineseMobName": "菇菇仔"
+        },
+        {
+          "mob_id": "1210102",
+          "mob_name": "Orange Mushroom",
+          "chineseMobName": "菇菇寶貝"
+        }
+      ]
+    },
+    {
+      "map_id": "100020000",
+      "map_name": "The Rain-Forest East of Henesys",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1210100",
+          "mob_name": "Pig",
+          "chineseMobName": "肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "100020100",
+      "map_name": "Henesys Pig Farm",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1210101",
+          "mob_name": "Ribbon Pig",
+          "chineseMobName": "緞帶肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "100030000",
+      "map_name": "The Forest East of Henesys",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "210100",
+          "mob_name": "Slime",
+          "chineseMobName": "綠水靈"
+        },
+        {
+          "mob_id": "1210100",
+          "mob_name": "Pig",
+          "chineseMobName": "肥肥"
+        },
+        {
+          "mob_id": "1210101",
+          "mob_name": "Ribbon Pig",
+          "chineseMobName": "緞帶肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "100040000",
+      "map_name": "The Forest South of Ellinia",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "210100",
+          "mob_name": "Slime",
+          "chineseMobName": "綠水靈"
+        },
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        },
+        {
+          "mob_id": "1110101",
+          "mob_name": "Dark Stump",
+          "chineseMobName": "黑木妖"
+        },
+        {
+          "mob_id": "2110200",
+          "mob_name": "Horny Mushroom",
+          "chineseMobName": "刺菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "100040001",
+      "map_name": "Dungeon, Southern Forest I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "210100",
+          "mob_name": "Slime",
+          "chineseMobName": "綠水靈"
+        }
+      ]
+    },
+    {
+      "map_id": "100040002",
+      "map_name": "Dungeon, Southern Forest II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1110101",
+          "mob_name": "Dark Stump",
+          "chineseMobName": "黑木妖"
+        }
+      ]
+    },
+    {
+      "map_id": "100040003",
+      "map_name": "Dungeon, Southern Forest III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "100040004",
+      "map_name": "Dungeon, Southern Forest IV",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2110200",
+          "mob_name": "Horny Mushroom",
+          "chineseMobName": "刺菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "100040100",
+      "map_name": "The Forest of Wisdom",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "210100",
+          "mob_name": "Slime",
+          "chineseMobName": "綠水靈"
+        },
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        },
+        {
+          "mob_id": "3210800",
+          "mob_name": "Lupin",
+          "chineseMobName": "猴子"
+        }
+      ]
+    },
+    {
+      "map_id": "100050000",
+      "map_name": "The Field South of Ellinia",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "210100",
+          "mob_name": "Slime",
+          "chineseMobName": "綠水靈"
+        }
+      ]
+    },
+    {
+      "map_id": "101010000",
+      "map_name": "The Field Up North of Ellinia",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "210100",
+          "mob_name": "Slime",
+          "chineseMobName": "綠水靈"
+        }
+      ]
+    },
+    {
+      "map_id": "101010100",
+      "map_name": "The Tree That Grew I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "210100",
+          "mob_name": "Slime",
+          "chineseMobName": "綠水靈"
+        }
+      ]
+    },
+    {
+      "map_id": "101010101",
+      "map_name": "The Tree That Grew II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1110101",
+          "mob_name": "Dark Stump",
+          "chineseMobName": "黑木妖"
+        }
+      ]
+    },
+    {
+      "map_id": "101010102",
+      "map_name": "The Tree That Grew III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "101020002",
+      "map_name": "Tree Dungeon, Forest Up North I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "210100",
+          "mob_name": "Slime",
+          "chineseMobName": "綠水靈"
+        }
+      ]
+    },
+    {
+      "map_id": "101020003",
+      "map_name": "Tree Dungeon, Forest Up North II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1110101",
+          "mob_name": "Dark Stump",
+          "chineseMobName": "黑木妖"
+        }
+      ]
+    },
+    {
+      "map_id": "101020004",
+      "map_name": "Tree Dungeon, Forest Up North III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1120100",
+          "mob_name": "Octopus",
+          "chineseMobName": "三眼章魚"
+        }
+      ]
+    },
+    {
+      "map_id": "101020005",
+      "map_name": "Tree Dungeon, Forest Up North IV",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "101020006",
+      "map_name": "Tree Dungeon, Forest Up North V",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1210103",
+          "mob_name": "Bubbling",
+          "chineseMobName": "藍水靈"
+        }
+      ]
+    },
+    {
+      "map_id": "101020007",
+      "map_name": "Tree Dungeon, Forest Up North VI",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2230100",
+          "mob_name": "Evil Eye",
+          "chineseMobName": "火獨眼獸"
+        }
+      ]
+    },
+    {
+      "map_id": "101020008",
+      "map_name": "Tree Dungeon, Forest Up North VII",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "3230100",
+          "mob_name": "Curse Eye",
+          "chineseMobName": "風獨眼獸"
+        }
+      ]
+    },
+    {
+      "map_id": "101020009",
+      "map_name": "Tree Dungeon, Forest Up North VIII",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "4230100",
+          "mob_name": "Cold Eye",
+          "chineseMobName": "冰獨眼獸"
+        }
+      ]
+    },
+    {
+      "map_id": "101030000",
+      "map_name": "East Domain of Perion",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "1110101",
+          "mob_name": "Dark Stump",
+          "chineseMobName": "黑木妖"
+        },
+        {
+          "mob_id": "1130100",
+          "mob_name": "Axe Stump",
+          "chineseMobName": "斧木妖"
+        },
+        {
+          "mob_id": "2130100",
+          "mob_name": "Dark Axe Stump",
+          "chineseMobName": "黑斧木妖"
+        },
+        {
+          "mob_id": "2230102",
+          "mob_name": "Wild Boar",
+          "chineseMobName": "黑肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "101030100",
+      "map_name": "Rocky Road III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "1130100",
+          "mob_name": "Axe Stump",
+          "chineseMobName": "斧木妖"
+        },
+        {
+          "mob_id": "1140100",
+          "mob_name": "Ghost Stump",
+          "chineseMobName": "發芽木妖"
+        },
+        {
+          "mob_id": "2230102",
+          "mob_name": "Wild Boar",
+          "chineseMobName": "黑肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "101030101",
+      "map_name": "Excavation Site I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1140100",
+          "mob_name": "Ghost Stump",
+          "chineseMobName": "發芽木妖"
+        },
+        {
+          "mob_id": "2230110",
+          "mob_name": "Wooden Mask",
+          "chineseMobName": "木面怪人"
+        }
+      ]
+    },
+    {
+      "map_id": "101030102",
+      "map_name": "Excavation Site II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2230110",
+          "mob_name": "Wooden Mask",
+          "chineseMobName": "木面怪人"
+        },
+        {
+          "mob_id": "2230111",
+          "mob_name": "Rocky Mask",
+          "chineseMobName": "石面怪人"
+        }
+      ]
+    },
+    {
+      "map_id": "101030103",
+      "map_name": "Excavation Site III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2230110",
+          "mob_name": "Wooden Mask",
+          "chineseMobName": "木面怪人"
+        },
+        {
+          "mob_id": "2230111",
+          "mob_name": "Rocky Mask",
+          "chineseMobName": "石面怪人"
+        }
+      ]
+    },
+    {
+      "map_id": "101030105",
+      "map_name": "Remains <Tomb> I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "4230125",
+          "mob_name": "Skeledog",
+          "chineseMobName": "骷髏犬"
+        },
+        {
+          "mob_id": "4230126",
+          "mob_name": "Mummydog",
+          "chineseMobName": "木乃伊犬"
+        }
+      ]
+    },
+    {
+      "map_id": "101030106",
+      "map_name": "Remains <Tomb> II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "4230125",
+          "mob_name": "Skeledog",
+          "chineseMobName": "骷髏犬"
+        },
+        {
+          "mob_id": "4230126",
+          "mob_name": "Mummydog",
+          "chineseMobName": "木乃伊犬"
+        }
+      ]
+    },
+    {
+      "map_id": "101030107",
+      "map_name": "Remains <Tomb> III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "4230126",
+          "mob_name": "Mummydog",
+          "chineseMobName": "木乃伊犬"
+        },
+        {
+          "mob_id": "5150001",
+          "mob_name": "Skeleton Soldier",
+          "chineseMobName": "骷髏士兵"
+        },
+        {
+          "mob_id": "6230602",
+          "mob_name": "Officer Skeleton",
+          "chineseMobName": "骷髏士官"
+        }
+      ]
+    },
+    {
+      "map_id": "101030108",
+      "map_name": "Remains <Tomb> IV",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5150001",
+          "mob_name": "Skeleton Soldier",
+          "chineseMobName": "骷髏士兵"
+        },
+        {
+          "mob_id": "6230602",
+          "mob_name": "Officer Skeleton",
+          "chineseMobName": "骷髏士官"
+        },
+        {
+          "mob_id": "7130103",
+          "mob_name": "Commander Skeleton",
+          "chineseMobName": "骷髏指揮官"
+        }
+      ]
+    },
+    {
+      "map_id": "101030109",
+      "map_name": "Remains <Cliff>",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "7130103",
+          "mob_name": "Commander Skeleton",
+          "chineseMobName": "骷髏指揮官"
+        }
+      ]
+    },
+    {
+      "map_id": "101030110",
+      "map_name": "Camp 1",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5150001",
+          "mob_name": "Skeleton Soldier",
+          "chineseMobName": "骷髏士兵"
+        },
+        {
+          "mob_id": "6230602",
+          "mob_name": "Officer Skeleton",
+          "chineseMobName": "骷髏士官"
+        }
+      ]
+    },
+    {
+      "map_id": "101030111",
+      "map_name": "Camp 2",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5150001",
+          "mob_name": "Skeleton Soldier",
+          "chineseMobName": "骷髏士兵"
+        },
+        {
+          "mob_id": "6230602",
+          "mob_name": "Officer Skeleton",
+          "chineseMobName": "骷髏士官"
+        }
+      ]
+    },
+    {
+      "map_id": "101030112",
+      "map_name": "Camp 3",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "6230602",
+          "mob_name": "Officer Skeleton",
+          "chineseMobName": "骷髏士官"
+        },
+        {
+          "mob_id": "7130103",
+          "mob_name": "Commander Skeleton",
+          "chineseMobName": "骷髏指揮官"
+        }
+      ]
+    },
+    {
+      "map_id": "101030200",
+      "map_name": "Rocky Road II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        },
+        {
+          "mob_id": "1110101",
+          "mob_name": "Dark Stump",
+          "chineseMobName": "黑木妖"
+        },
+        {
+          "mob_id": "1130100",
+          "mob_name": "Axe Stump",
+          "chineseMobName": "斧木妖"
+        }
+      ]
+    },
+    {
+      "map_id": "101030300",
+      "map_name": "Rocky Road I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        },
+        {
+          "mob_id": "1110101",
+          "mob_name": "Dark Stump",
+          "chineseMobName": "黑木妖"
+        }
+      ]
+    },
+    {
+      "map_id": "101030400",
+      "map_name": "East Rocky Mountain I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        },
+        {
+          "mob_id": "1110101",
+          "mob_name": "Dark Stump",
+          "chineseMobName": "黑木妖"
+        }
+      ]
+    },
+    {
+      "map_id": "101030401",
+      "map_name": "East Rocky Mountain II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        }
+      ]
+    },
+    {
+      "map_id": "101030402",
+      "map_name": "East Rocky Mountain III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1110101",
+          "mob_name": "Dark Stump",
+          "chineseMobName": "黑木妖"
+        }
+      ]
+    },
+    {
+      "map_id": "101030403",
+      "map_name": "East Rocky Mountain IV",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1130100",
+          "mob_name": "Axe Stump",
+          "chineseMobName": "斧木妖"
+        }
+      ]
+    },
+    {
+      "map_id": "101030404",
+      "map_name": "East Rocky Mountain V",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1110101",
+          "mob_name": "Dark Stump",
+          "chineseMobName": "黑木妖"
+        },
+        {
+          "mob_id": "1130100",
+          "mob_name": "Axe Stump",
+          "chineseMobName": "斧木妖"
+        },
+        {
+          "mob_id": "3220000",
+          "mob_name": "Stumpy",
+          "chineseMobName": "樹妖王"
+        },
+        {
+          "mob_id": "4130100",
+          "mob_name": "Copper Drake",
+          "chineseMobName": "土龍"
+        }
+      ]
+    },
+    {
+      "map_id": "101030405",
+      "map_name": "East Rocky Mountain VI",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "4130100",
+          "mob_name": "Copper Drake",
+          "chineseMobName": "土龍"
+        },
+        {
+          "mob_id": "6130100",
+          "mob_name": "Red Drake",
+          "chineseMobName": "赤龍"
+        }
+      ]
+    },
+    {
+      "map_id": "101030406",
+      "map_name": "East Rocky Mountain VII",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "4130100",
+          "mob_name": "Copper Drake",
+          "chineseMobName": "土龍"
+        },
+        {
+          "mob_id": "6130100",
+          "mob_name": "Red Drake",
+          "chineseMobName": "赤龍"
+        }
+      ]
+    },
+    {
+      "map_id": "101040000",
+      "map_name": "Perion Street Corner",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "100100",
+          "mob_name": "Snail",
+          "chineseMobName": "嫩寶"
+        },
+        {
+          "mob_id": "100101",
+          "mob_name": "Blue Snail",
+          "chineseMobName": "藍寶"
+        },
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        },
+        {
+          "mob_id": "2230102",
+          "mob_name": "Wild Boar",
+          "chineseMobName": "黑肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "102010000",
+      "map_name": "West Street Corner of Perion",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "100101",
+          "mob_name": "Blue Snail",
+          "chineseMobName": "藍寶"
+        },
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        },
+        {
+          "mob_id": "1110101",
+          "mob_name": "Dark Stump",
+          "chineseMobName": "黑木妖"
+        },
+        {
+          "mob_id": "1130100",
+          "mob_name": "Axe Stump",
+          "chineseMobName": "斧木妖"
+        },
+        {
+          "mob_id": "2130100",
+          "mob_name": "Dark Axe Stump",
+          "chineseMobName": "黑斧木妖"
+        }
+      ]
+    },
+    {
+      "map_id": "102020000",
+      "map_name": "West Rocky Mountain I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        },
+        {
+          "mob_id": "1110101",
+          "mob_name": "Dark Stump",
+          "chineseMobName": "黑木妖"
+        },
+        {
+          "mob_id": "2130100",
+          "mob_name": "Dark Axe Stump",
+          "chineseMobName": "黑斧木妖"
+        },
+        {
+          "mob_id": "2230102",
+          "mob_name": "Wild Boar",
+          "chineseMobName": "黑肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "102020100",
+      "map_name": "West Rocky Mountain II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2130100",
+          "mob_name": "Dark Axe Stump",
+          "chineseMobName": "黑斧木妖"
+        },
+        {
+          "mob_id": "2230102",
+          "mob_name": "Wild Boar",
+          "chineseMobName": "黑肥肥"
+        },
+        {
+          "mob_id": "3210100",
+          "mob_name": "Fire Boar",
+          "chineseMobName": "火肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "102020200",
+      "map_name": "West Rocky Mountain III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2130100",
+          "mob_name": "Dark Axe Stump",
+          "chineseMobName": "黑斧木妖"
+        },
+        {
+          "mob_id": "2230102",
+          "mob_name": "Wild Boar",
+          "chineseMobName": "黑肥肥"
+        },
+        {
+          "mob_id": "3210100",
+          "mob_name": "Fire Boar",
+          "chineseMobName": "火肥肥"
+        },
+        {
+          "mob_id": "3210800",
+          "mob_name": "Lupin",
+          "chineseMobName": "猴子"
+        }
+      ]
+    },
+    {
+      "map_id": "102020300",
+      "map_name": "West Rocky Mountain IV",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "3210100",
+          "mob_name": "Fire Boar",
+          "chineseMobName": "火肥肥"
+        },
+        {
+          "mob_id": "3210800",
+          "mob_name": "Lupin",
+          "chineseMobName": "猴子"
+        }
+      ]
+    },
+    {
+      "map_id": "102030000",
+      "map_name": "West Domain of Perion",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        },
+        {
+          "mob_id": "1110101",
+          "mob_name": "Dark Stump",
+          "chineseMobName": "黑木妖"
+        },
+        {
+          "mob_id": "1120100",
+          "mob_name": "Octopus",
+          "chineseMobName": "三眼章魚"
+        }
+      ]
+    },
+    {
+      "map_id": "102040000",
+      "map_name": "Construction Site North of Kerning City",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "1130100",
+          "mob_name": "Axe Stump",
+          "chineseMobName": "斧木妖"
+        },
+        {
+          "mob_id": "1210102",
+          "mob_name": "Orange Mushroom",
+          "chineseMobName": "菇菇寶貝"
+        }
+      ]
+    },
+    {
+      "map_id": "102050000",
+      "map_name": "Sunset Sky",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "100101",
+          "mob_name": "Blue Snail",
+          "chineseMobName": "藍寶"
+        },
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        },
+        {
+          "mob_id": "1120100",
+          "mob_name": "Octopus",
+          "chineseMobName": "三眼章魚"
+        }
+      ]
+    },
+    {
+      "map_id": "103000102",
+      "map_name": "Transfer Area",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2300100",
+          "mob_name": "Stirge",
+          "chineseMobName": "蝙蝠"
+        }
+      ]
+    },
+    {
+      "map_id": "103000103",
+      "map_name": "Line 1 <Area 2>",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "8148008",
+          "mob_name": "Crimson Stirge",
+          "chineseMobName": "紅蝙蝠"
+        }
+      ]
+    },
+    {
+      "map_id": "103000104",
+      "map_name": "Line 1 <Area 3>",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "3230101",
+          "mob_name": "Jr. Wraith",
+          "chineseMobName": "小幽靈"
+        }
+      ]
+    },
+    {
+      "map_id": "103000105",
+      "map_name": "Line 1 <Area 4>",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "4230102",
+          "mob_name": "Wraith",
+          "chineseMobName": "大幽靈"
+        },
+        {
+          "mob_id": "5090000",
+          "mob_name": "Shade",
+          "chineseMobName": "冥界幽靈"
+        }
+      ]
+    },
+    {
+      "map_id": "103000200",
+      "map_name": "Line 2 <Area 1>",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "3230101",
+          "mob_name": "Jr. Wraith",
+          "chineseMobName": "小幽靈"
+        }
+      ]
+    },
+    {
+      "map_id": "103000201",
+      "map_name": "Line 2 <Area 2>",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "4230102",
+          "mob_name": "Wraith",
+          "chineseMobName": "大幽靈"
+        }
+      ]
+    },
+    {
+      "map_id": "103000202",
+      "map_name": "Line 2 <Area 3>",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5130108",
+          "mob_name": "Miner Zombie",
+          "chineseMobName": "礦山殭屍"
+        }
+      ]
+    },
+    {
+      "map_id": "103010000",
+      "map_name": "Kerning City Construction Site",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "1120100",
+          "mob_name": "Octopus",
+          "chineseMobName": "三眼章魚"
+        },
+        {
+          "mob_id": "1210102",
+          "mob_name": "Orange Mushroom",
+          "chineseMobName": "菇菇寶貝"
+        }
+      ]
+    },
+    {
+      "map_id": "103020000",
+      "map_name": "L Forest I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "210100",
+          "mob_name": "Slime",
+          "chineseMobName": "綠水靈"
+        },
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        },
+        {
+          "mob_id": "1210102",
+          "mob_name": "Orange Mushroom",
+          "chineseMobName": "菇菇寶貝"
+        },
+        {
+          "mob_id": "4230103",
+          "mob_name": "Iron Hog",
+          "chineseMobName": "鋼之肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "103020100",
+      "map_name": "L Forest II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "210100",
+          "mob_name": "Slime",
+          "chineseMobName": "綠水靈"
+        },
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        },
+        {
+          "mob_id": "1210102",
+          "mob_name": "Orange Mushroom",
+          "chineseMobName": "菇菇寶貝"
+        },
+        {
+          "mob_id": "4230103",
+          "mob_name": "Iron Hog",
+          "chineseMobName": "鋼之肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "103020200",
+      "map_name": "L Forest III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        },
+        {
+          "mob_id": "1210102",
+          "mob_name": "Orange Mushroom",
+          "chineseMobName": "菇菇寶貝"
+        },
+        {
+          "mob_id": "2110200",
+          "mob_name": "Horny Mushroom",
+          "chineseMobName": "刺菇菇"
+        },
+        {
+          "mob_id": "4230103",
+          "mob_name": "Iron Hog",
+          "chineseMobName": "鋼之肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "103030000",
+      "map_name": "Kerning City Middle Forest I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1210102",
+          "mob_name": "Orange Mushroom",
+          "chineseMobName": "菇菇寶貝"
+        },
+        {
+          "mob_id": "2110200",
+          "mob_name": "Horny Mushroom",
+          "chineseMobName": "刺菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "103030100",
+      "map_name": "Kerning City Middle Forest II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2110200",
+          "mob_name": "Horny Mushroom",
+          "chineseMobName": "刺菇菇"
+        },
+        {
+          "mob_id": "4230103",
+          "mob_name": "Iron Hog",
+          "chineseMobName": "鋼之肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "103030200",
+      "map_name": "Kerning City Middle Forest III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "4230103",
+          "mob_name": "Iron Hog",
+          "chineseMobName": "鋼之肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "104000100",
+      "map_name": "Right Around Lith Harbor",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "100100",
+          "mob_name": "Snail",
+          "chineseMobName": "嫩寶"
+        },
+        {
+          "mob_id": "100101",
+          "mob_name": "Blue Snail",
+          "chineseMobName": "藍寶"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        }
+      ]
+    },
+    {
+      "map_id": "104000200",
+      "map_name": "Thicket Around the Beach I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "100100",
+          "mob_name": "Snail",
+          "chineseMobName": "嫩寶"
+        }
+      ]
+    },
+    {
+      "map_id": "104000300",
+      "map_name": "Thicket Around the Beach II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "100101",
+          "mob_name": "Blue Snail",
+          "chineseMobName": "藍寶"
+        },
+        {
+          "mob_id": "1210101",
+          "mob_name": "Ribbon Pig",
+          "chineseMobName": "緞帶肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "104000400",
+      "map_name": "Thicket Around the Beach III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        },
+        {
+          "mob_id": "2220000",
+          "mob_name": "Mano",
+          "chineseMobName": "紅寶王"
+        }
+      ]
+    },
+    {
+      "map_id": "104010000",
+      "map_name": "3-Way Road-Split",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "120100",
+          "mob_name": "Shroom",
+          "chineseMobName": "菇菇仔"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        },
+        {
+          "mob_id": "210100",
+          "mob_name": "Slime",
+          "chineseMobName": "綠水靈"
+        },
+        {
+          "mob_id": "1210100",
+          "mob_name": "Pig",
+          "chineseMobName": "肥肥"
+        },
+        {
+          "mob_id": "1210101",
+          "mob_name": "Ribbon Pig",
+          "chineseMobName": "緞帶肥肥"
+        },
+        {
+          "mob_id": "1210102",
+          "mob_name": "Orange Mushroom",
+          "chineseMobName": "菇菇寶貝"
+        },
+        {
+          "mob_id": "3230102",
+          "mob_name": "Lorang",
+          "chineseMobName": "紅螃蟹"
+        }
+      ]
+    },
+    {
+      "map_id": "104020000",
+      "map_name": "Forest West of Henesys",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "100101",
+          "mob_name": "Blue Snail",
+          "chineseMobName": "藍寶"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        },
+        {
+          "mob_id": "210100",
+          "mob_name": "Slime",
+          "chineseMobName": "綠水靈"
+        },
+        {
+          "mob_id": "1210100",
+          "mob_name": "Pig",
+          "chineseMobName": "肥肥"
+        },
+        {
+          "mob_id": "1210101",
+          "mob_name": "Ribbon Pig",
+          "chineseMobName": "緞帶肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "104030000",
+      "map_name": "A Hill West of Henesys",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "120100",
+          "mob_name": "Shroom",
+          "chineseMobName": "菇菇仔"
+        },
+        {
+          "mob_id": "1210100",
+          "mob_name": "Pig",
+          "chineseMobName": "肥肥"
+        },
+        {
+          "mob_id": "1210101",
+          "mob_name": "Ribbon Pig",
+          "chineseMobName": "緞帶肥肥"
+        },
+        {
+          "mob_id": "1210102",
+          "mob_name": "Orange Mushroom",
+          "chineseMobName": "菇菇寶貝"
+        }
+      ]
+    },
+    {
+      "map_id": "104030001",
+      "map_name": "Mushroom Garden",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "120100",
+          "mob_name": "Shroom",
+          "chineseMobName": "菇菇仔"
+        }
+      ]
+    },
+    {
+      "map_id": "104040000",
+      "map_name": "Henesys Hunting Ground I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "100101",
+          "mob_name": "Blue Snail",
+          "chineseMobName": "藍寶"
+        },
+        {
+          "mob_id": "130101",
+          "mob_name": "Red Snail",
+          "chineseMobName": "紅寶"
+        },
+        {
+          "mob_id": "210100",
+          "mob_name": "Slime",
+          "chineseMobName": "綠水靈"
+        },
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        },
+        {
+          "mob_id": "1210102",
+          "mob_name": "Orange Mushroom",
+          "chineseMobName": "菇菇寶貝"
+        }
+      ]
+    },
+    {
+      "map_id": "104040001",
+      "map_name": "Henesys Hunting Ground II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "130100",
+          "mob_name": "Stump",
+          "chineseMobName": "木妖"
+        },
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        },
+        {
+          "mob_id": "1210100",
+          "mob_name": "Pig",
+          "chineseMobName": "肥肥"
+        },
+        {
+          "mob_id": "1210101",
+          "mob_name": "Ribbon Pig",
+          "chineseMobName": "緞帶肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "104040002",
+      "map_name": "Henesys Hunting Ground III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        },
+        {
+          "mob_id": "1210102",
+          "mob_name": "Orange Mushroom",
+          "chineseMobName": "菇菇寶貝"
+        }
+      ]
+    },
+    {
+      "map_id": "105030000",
+      "map_name": "Deep Forest",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        },
+        {
+          "mob_id": "1210103",
+          "mob_name": "Bubbling",
+          "chineseMobName": "藍水靈"
+        },
+        {
+          "mob_id": "2130100",
+          "mob_name": "Dark Axe Stump",
+          "chineseMobName": "黑斧木妖"
+        },
+        {
+          "mob_id": "3210800",
+          "mob_name": "Lupin",
+          "chineseMobName": "猴子"
+        },
+        {
+          "mob_id": "3230100",
+          "mob_name": "Curse Eye",
+          "chineseMobName": "風獨眼獸"
+        }
+      ]
+    },
+    {
+      "map_id": "105040000",
+      "map_name": "Swampy Land in a Deep Forest",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1110100",
+          "mob_name": "Green Mushroom",
+          "chineseMobName": "綠菇菇"
+        },
+        {
+          "mob_id": "2110200",
+          "mob_name": "Horny Mushroom",
+          "chineseMobName": "刺菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "105040100",
+      "map_name": "Hunting Ground in the Deep Forest I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "3230100",
+          "mob_name": "Curse Eye",
+          "chineseMobName": "風獨眼獸"
+        }
+      ]
+    },
+    {
+      "map_id": "105040200",
+      "map_name": "Hunting Ground in the Deep Forest II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "3210800",
+          "mob_name": "Lupin",
+          "chineseMobName": "猴子"
+        },
+        {
+          "mob_id": "3230100",
+          "mob_name": "Curse Eye",
+          "chineseMobName": "風獨眼獸"
+        }
+      ]
+    },
+    {
+      "map_id": "105040301",
+      "map_name": "Sleepy Dungeon I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "3230100",
+          "mob_name": "Curse Eye",
+          "chineseMobName": "風獨眼獸"
+        }
+      ]
+    },
+    {
+      "map_id": "105040302",
+      "map_name": "Sleepy Dungeon II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "4230100",
+          "mob_name": "Cold Eye",
+          "chineseMobName": "冰獨眼獸"
+        }
+      ]
+    },
+    {
+      "map_id": "105040303",
+      "map_name": "Sleepy Dungeon III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5130101",
+          "mob_name": "Stone Golem",
+          "chineseMobName": "石巨人"
+        }
+      ]
+    },
+    {
+      "map_id": "105040304",
+      "map_name": "Sleepy Dungeon IV",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5130102",
+          "mob_name": "Dark Stone Golem",
+          "chineseMobName": "黑曜石巨人"
+        }
+      ]
+    },
+    {
+      "map_id": "105040305",
+      "map_name": "Sleepy Dungeon V",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5130102",
+          "mob_name": "Dark Stone Golem",
+          "chineseMobName": "黑曜石巨人"
+        },
+        {
+          "mob_id": "5150000",
+          "mob_name": "Mixed Golem",
+          "chineseMobName": "混種石巨人"
+        }
+      ]
+    },
+    {
+      "map_id": "105040306",
+      "map_name": "The Forest of Golem",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5130102",
+          "mob_name": "Dark Stone Golem",
+          "chineseMobName": "黑曜石巨人"
+        },
+        {
+          "mob_id": "5150000",
+          "mob_name": "Mixed Golem",
+          "chineseMobName": "混種石巨人"
+        }
+      ]
+    },
+    {
+      "map_id": "105040320",
+      "map_name": "Golem's Castle Ruins",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5130102",
+          "mob_name": "Dark Stone Golem",
+          "chineseMobName": "黑曜石巨人"
+        }
+      ]
+    },
+    {
+      "map_id": "105050000",
+      "map_name": "Ant Tunnel I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2110200",
+          "mob_name": "Horny Mushroom",
+          "chineseMobName": "刺菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "105050100",
+      "map_name": "Ant Tunnel II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2110200",
+          "mob_name": "Horny Mushroom",
+          "chineseMobName": "刺菇菇"
+        },
+        {
+          "mob_id": "2230101",
+          "mob_name": "Zombie Mushroom",
+          "chineseMobName": "殭屍菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "105050101",
+      "map_name": "Cave of Mushrooms",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2230101",
+          "mob_name": "Zombie Mushroom",
+          "chineseMobName": "殭屍菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "105050200",
+      "map_name": "Ant Tunnel III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2110200",
+          "mob_name": "Horny Mushroom",
+          "chineseMobName": "刺菇菇"
+        },
+        {
+          "mob_id": "2230101",
+          "mob_name": "Zombie Mushroom",
+          "chineseMobName": "殭屍菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "105050300",
+      "map_name": "Ant Tunnel IV",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2110200",
+          "mob_name": "Horny Mushroom",
+          "chineseMobName": "刺菇菇"
+        },
+        {
+          "mob_id": "2230101",
+          "mob_name": "Zombie Mushroom",
+          "chineseMobName": "殭屍菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "105050400",
+      "map_name": "Dark Cave",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2300100",
+          "mob_name": "Stirge",
+          "chineseMobName": "蝙蝠"
+        }
+      ]
+    },
+    {
+      "map_id": "105060000",
+      "map_name": "Dangerous Steam",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "8148008",
+          "mob_name": "Crimson Stirge",
+          "chineseMobName": "紅蝙蝠"
+        }
+      ]
+    },
+    {
+      "map_id": "105060100",
+      "map_name": "Deep Ant Tunnel I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2230101",
+          "mob_name": "Zombie Mushroom",
+          "chineseMobName": "殭屍菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "105070000",
+      "map_name": "Deep Ant Tunnel II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2230100",
+          "mob_name": "Evil Eye",
+          "chineseMobName": "火獨眼獸"
+        },
+        {
+          "mob_id": "2230101",
+          "mob_name": "Zombie Mushroom",
+          "chineseMobName": "殭屍菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "105070001",
+      "map_name": "Ant Tunnel Park",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2230100",
+          "mob_name": "Evil Eye",
+          "chineseMobName": "火獨眼獸"
+        },
+        {
+          "mob_id": "2230101",
+          "mob_name": "Zombie Mushroom",
+          "chineseMobName": "殭屍菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "105070002",
+      "map_name": "The Grave of Mushmom",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "6300005",
+          "mob_name": "Zombie Mushmom",
+          "chineseMobName": "殭屍蘑菇王"
+        }
+      ]
+    },
+    {
+      "map_id": "105070100",
+      "map_name": "The Cave of Evil Eye",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2230100",
+          "mob_name": "Evil Eye",
+          "chineseMobName": "火獨眼獸"
+        }
+      ]
+    },
+    {
+      "map_id": "105070200",
+      "map_name": "The Cave of Curse Eye",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "3230100",
+          "mob_name": "Curse Eye",
+          "chineseMobName": "風獨眼獸"
+        }
+      ]
+    },
+    {
+      "map_id": "105070300",
+      "map_name": "The Cave of Cold Eye",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "4230100",
+          "mob_name": "Cold Eye",
+          "chineseMobName": "冰獨眼獸"
+        }
+      ]
+    },
+    {
+      "map_id": "105070400",
+      "map_name": "The Cave of Dark Eye",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2230113",
+          "mob_name": "Dark Eye",
+          "chineseMobName": "黑獨眼獸"
+        }
+      ]
+    },
+    {
+      "map_id": "105080000",
+      "map_name": "Drake Hunting Ground",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5130100",
+          "mob_name": "Drake",
+          "chineseMobName": "青龍"
+        }
+      ]
+    },
+    {
+      "map_id": "105090000",
+      "map_name": "The Tunnel That Lost Light I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "4230100",
+          "mob_name": "Cold Eye",
+          "chineseMobName": "冰獨眼獸"
+        },
+        {
+          "mob_id": "5130100",
+          "mob_name": "Drake",
+          "chineseMobName": "青龍"
+        }
+      ]
+    },
+    {
+      "map_id": "105090100",
+      "map_name": "The Tunnel That Lost Light II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "4230100",
+          "mob_name": "Cold Eye",
+          "chineseMobName": "冰獨眼獸"
+        },
+        {
+          "mob_id": "5130100",
+          "mob_name": "Drake",
+          "chineseMobName": "青龍"
+        }
+      ]
+    },
+    {
+      "map_id": "105090300",
+      "map_name": "Drake's Meal Table",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "100110",
+          "mob_name": "Bob",
+          "chineseMobName": "嫩寶"
+        },
+        {
+          "mob_id": "4230100",
+          "mob_name": "Cold Eye",
+          "chineseMobName": "冰獨眼獸"
+        },
+        {
+          "mob_id": "5130100",
+          "mob_name": "Drake",
+          "chineseMobName": "青龍"
+        },
+        {
+          "mob_id": "6230100",
+          "mob_name": "Wild Kargo",
+          "chineseMobName": "魔龍"
+        },
+        {
+          "mob_id": "6230600",
+          "mob_name": "Ice Drake",
+          "chineseMobName": "冰龍"
+        }
+      ]
+    },
+    {
+      "map_id": "105090301",
+      "map_name": "Wild Kargo Area I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "6230100",
+          "mob_name": "Wild Kargo",
+          "chineseMobName": "魔龍"
+        }
+      ]
+    },
+    {
+      "map_id": "105090302",
+      "map_name": "Wild Kargo Area II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "6230100",
+          "mob_name": "Wild Kargo",
+          "chineseMobName": "魔龍"
+        }
+      ]
+    },
+    {
+      "map_id": "105090310",
+      "map_name": "Drake Area",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5130100",
+          "mob_name": "Drake",
+          "chineseMobName": "青龍"
+        },
+        {
+          "mob_id": "6230600",
+          "mob_name": "Ice Drake",
+          "chineseMobName": "冰龍"
+        }
+      ]
+    },
+    {
+      "map_id": "105090311",
+      "map_name": "Cold Cradle",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "6230600",
+          "mob_name": "Ice Drake",
+          "chineseMobName": "冰龍"
+        },
+        {
+          "mob_id": "6230601",
+          "mob_name": "Dark Drake",
+          "chineseMobName": "黑龍"
+        }
+      ]
+    },
+    {
+      "map_id": "105090312",
+      "map_name": "Drake's Nest",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "6230601",
+          "mob_name": "Dark Drake",
+          "chineseMobName": "黑龍"
+        }
+      ]
+    },
+    {
+      "map_id": "105090320",
+      "map_name": "Drake's Blue Cave",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "6230600",
+          "mob_name": "Ice Drake",
+          "chineseMobName": "冰龍"
+        }
+      ]
+    },
+    {
+      "map_id": "105090400",
+      "map_name": "Another Path",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2230113",
+          "mob_name": "Dark Eye",
+          "chineseMobName": "黑獨眼獸"
+        }
+      ]
+    },
+    {
+      "map_id": "105090500",
+      "map_name": "Sanctuary Entrance I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5150002",
+          "mob_name": "Cold Mixed Golem",
+          "chineseMobName": "冰之混種石巨人"
+        }
+      ]
+    },
+    {
+      "map_id": "105090600",
+      "map_name": "Sanctuary Entrance II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "7130100",
+          "mob_name": "Tauromacis",
+          "chineseMobName": "月牙牛魔王"
+        }
+      ]
+    },
+    {
+      "map_id": "105090700",
+      "map_name": "Sanctuary Entrance III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "7130101",
+          "mob_name": "Taurospear",
+          "chineseMobName": "長槍牛魔王"
+        }
+      ]
+    },
+    {
+      "map_id": "105090800",
+      "map_name": "Sanctuary Entrance IV",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "9834151",
+          "mob_name": "Tauroshield",
+          "chineseMobName": "盾牌牛魔王"
+        }
+      ]
+    },
+    {
+      "map_id": "105090900",
+      "map_name": "The Cursed Sanctuary",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "8130100",
+          "mob_name": "Jr. Balrog",
+          "chineseMobName": "巴洛古"
+        }
+      ]
+    },
+    {
+      "map_id": "106000000",
+      "map_name": "Deep Valley I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1130100",
+          "mob_name": "Axe Stump",
+          "chineseMobName": "斧木妖"
+        },
+        {
+          "mob_id": "2130100",
+          "mob_name": "Dark Axe Stump",
+          "chineseMobName": "黑斧木妖"
+        },
+        {
+          "mob_id": "2230102",
+          "mob_name": "Wild Boar",
+          "chineseMobName": "黑肥肥"
+        },
+        {
+          "mob_id": "3210100",
+          "mob_name": "Fire Boar",
+          "chineseMobName": "火肥肥"
+        },
+        {
+          "mob_id": "4130100",
+          "mob_name": "Copper Drake",
+          "chineseMobName": "土龍"
+        }
+      ]
+    },
+    {
+      "map_id": "106000100",
+      "map_name": "Deep Valley II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2130100",
+          "mob_name": "Dark Axe Stump",
+          "chineseMobName": "黑斧木妖"
+        },
+        {
+          "mob_id": "2230102",
+          "mob_name": "Wild Boar",
+          "chineseMobName": "黑肥肥"
+        },
+        {
+          "mob_id": "3210100",
+          "mob_name": "Fire Boar",
+          "chineseMobName": "火肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "106000101",
+      "map_name": "The Burnt Land I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "3210100",
+          "mob_name": "Fire Boar",
+          "chineseMobName": "火肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "106000110",
+      "map_name": "The Burnt Land II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "3210100",
+          "mob_name": "Fire Boar",
+          "chineseMobName": "火肥肥"
+        },
+        {
+          "mob_id": "4230400",
+          "mob_name": "Iron Boar",
+          "chineseMobName": "鋼之黑肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "106000120",
+      "map_name": "The Burnt Land III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "4230400",
+          "mob_name": "Iron Boar",
+          "chineseMobName": "鋼之黑肥肥"
+        },
+        {
+          "mob_id": "6130100",
+          "mob_name": "Red Drake",
+          "chineseMobName": "赤龍"
+        }
+      ]
+    },
+    {
+      "map_id": "106000130",
+      "map_name": "The Burnt Land IV",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5150003",
+          "mob_name": "Hot Mixed Golem",
+          "chineseMobName": "火之混種石巨人"
+        },
+        {
+          "mob_id": "6130100",
+          "mob_name": "Red Drake",
+          "chineseMobName": "赤龍"
+        }
+      ]
+    },
+    {
+      "map_id": "106000140",
+      "map_name": "The Burnt Land V",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5150003",
+          "mob_name": "Hot Mixed Golem",
+          "chineseMobName": "火之混種石巨人"
+        }
+      ]
+    },
+    {
+      "map_id": "106000200",
+      "map_name": "Deep Valley III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2130100",
+          "mob_name": "Dark Axe Stump",
+          "chineseMobName": "黑斧木妖"
+        },
+        {
+          "mob_id": "3210100",
+          "mob_name": "Fire Boar",
+          "chineseMobName": "火肥肥"
+        },
+        {
+          "mob_id": "4230400",
+          "mob_name": "Iron Boar",
+          "chineseMobName": "鋼之黑肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "106000300",
+      "map_name": "Perion Dungeon Entrance",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2130100",
+          "mob_name": "Dark Axe Stump",
+          "chineseMobName": "黑斧木妖"
+        },
+        {
+          "mob_id": "3210100",
+          "mob_name": "Fire Boar",
+          "chineseMobName": "火肥肥"
+        },
+        {
+          "mob_id": "4230400",
+          "mob_name": "Iron Boar",
+          "chineseMobName": "鋼之黑肥肥"
+        }
+      ]
+    },
+    {
+      "map_id": "106010000",
+      "map_name": "The Road to the Dungeon",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2110200",
+          "mob_name": "Horny Mushroom",
+          "chineseMobName": "刺菇菇"
+        }
+      ]
+    },
+    {
+      "map_id": "106010100",
+      "map_name": "Henesys Dungeon Entrance",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2110200",
+          "mob_name": "Horny Mushroom",
+          "chineseMobName": "刺菇菇"
+        },
+        {
+          "mob_id": "5130101",
+          "mob_name": "Stone Golem",
+          "chineseMobName": "石巨人"
+        }
+      ]
+    },
+    {
+      "map_id": "106010102",
+      "map_name": "The Entrance of Golem's Temple",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5130101",
+          "mob_name": "Stone Golem",
+          "chineseMobName": "石巨人"
+        },
+        {
+          "mob_id": "5130102",
+          "mob_name": "Dark Stone Golem",
+          "chineseMobName": "黑曜石巨人"
+        },
+        {
+          "mob_id": "5150000",
+          "mob_name": "Mixed Golem",
+          "chineseMobName": "混種石巨人"
+        }
+      ]
+    },
+    {
+      "map_id": "106010103",
+      "map_name": "Golem's Temple I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5130101",
+          "mob_name": "Stone Golem",
+          "chineseMobName": "石巨人"
+        }
+      ]
+    },
+    {
+      "map_id": "106010104",
+      "map_name": "Golem's Temple II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5130102",
+          "mob_name": "Dark Stone Golem",
+          "chineseMobName": "黑曜石巨人"
+        }
+      ]
+    },
+    {
+      "map_id": "106010105",
+      "map_name": "Golem's Temple III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5150000",
+          "mob_name": "Mixed Golem",
+          "chineseMobName": "混種石巨人"
+        }
+      ]
+    },
+    {
+      "map_id": "106010106",
+      "map_name": "Golem's Temple IV",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5150003",
+          "mob_name": "Hot Mixed Golem",
+          "chineseMobName": "火之混種石巨人"
+        }
+      ]
+    },
+    {
+      "map_id": "106010107",
+      "map_name": "Golem's Temple V",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5150002",
+          "mob_name": "Cold Mixed Golem",
+          "chineseMobName": "冰之混種石巨人"
+        }
+      ]
+    },
+    {
+      "map_id": "107000000",
+      "map_name": "The Swamp of Despair I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2130103",
+          "mob_name": "Jr. Necki",
+          "chineseMobName": "青蛇"
+        },
+        {
+          "mob_id": "3110100",
+          "mob_name": "Ligator",
+          "chineseMobName": "鱷魚"
+        }
+      ]
+    },
+    {
+      "map_id": "107000100",
+      "map_name": "The Swamp of Despair II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2130103",
+          "mob_name": "Jr. Necki",
+          "chineseMobName": "青蛇"
+        },
+        {
+          "mob_id": "3110100",
+          "mob_name": "Ligator",
+          "chineseMobName": "鱷魚"
+        }
+      ]
+    },
+    {
+      "map_id": "107000200",
+      "map_name": "The Swamp of Despair III",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2130103",
+          "mob_name": "Jr. Necki",
+          "chineseMobName": "青蛇"
+        },
+        {
+          "mob_id": "3110100",
+          "mob_name": "Ligator",
+          "chineseMobName": "鱷魚"
+        },
+        {
+          "mob_id": "5130103",
+          "mob_name": "Croco",
+          "chineseMobName": "黑鱷魚"
+        }
+      ]
+    },
+    {
+      "map_id": "107000300",
+      "map_name": "Dangerous Croco I",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "5130103",
+          "mob_name": "Croco",
+          "chineseMobName": "黑鱷魚"
+        },
+        {
+          "mob_id": "6220000",
+          "mob_name": "Dyle\t",
+          "chineseMobName": "沼澤巨鱷"
+        }
+      ]
+    },
+    {
+      "map_id": "107000400",
+      "map_name": "Dangerous Croco II",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "2130103",
+          "mob_name": "Jr. Necki",
+          "chineseMobName": "青蛇"
+        },
+        {
+          "mob_id": "3210800",
+          "mob_name": "Lupin",
+          "chineseMobName": "猴子"
+        },
+        {
+          "mob_id": "4230104",
+          "mob_name": "Clang",
+          "chineseMobName": "青螃蟹"
+        },
+        {
+          "mob_id": "5130103",
+          "mob_name": "Croco",
+          "chineseMobName": "黑鱷魚"
+        }
+      ]
+    },
+    {
+      "map_id": "107000500",
+      "map_name": "Damp Tree-Forest",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1210103",
+          "mob_name": "Bubbling",
+          "chineseMobName": "藍水靈"
+        },
+        {
+          "mob_id": "3210800",
+          "mob_name": "Lupin",
+          "chineseMobName": "猴子"
+        }
+      ]
+    },
+    {
+      "map_id": "107000501",
+      "map_name": "Damp Forest",
+      "chinese_map_name": "",
+      "monsters": [
+        {
+          "mob_id": "1210103",
+          "mob_name": "Bubbling",
+          "chineseMobName": "藍水靈"
+        }
+      ]
+    }
+  ]
+}

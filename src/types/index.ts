@@ -188,12 +188,20 @@ export interface ExpBar {
   expEfficiency: number | null       // 經驗效率 (exp / max_hp)，數值越高越好
 }
 
+// 怪物地圖資訊（來自 mob-info.json）
+export interface MobMapInfo {
+  map_id: string
+  map_name: string
+  chinese_map_name: string
+}
+
 // 怪物完整資訊類型（mob-info.json 的頂層結構）
 export interface MobInfo {
   mob: MonsterStats
   description: string
   expBar: ExpBar
   chineseMobName: string
+  maps?: MobMapInfo[]  // 怪物出沒地圖列表（可選）
 }
 
 // 地圖怪物資料庫相關類型

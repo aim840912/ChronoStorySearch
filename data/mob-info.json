@@ -25,7 +25,19 @@
       "maxExpHpRatio": null,
       "expEfficiency": null
     },
-    "chineseMobName": "箱子"
+    "chineseMobName": "箱子",
+    "maps": [
+      {
+        "map_id": "1010000",
+        "map_name": "Amherst",
+        "chinese_map_name": "楓之島 : 冒險者修練場入口"
+      },
+      {
+        "map_id": "1010002",
+        "map_name": "Amherst Townstreet",
+        "chinese_map_name": ""
+      }
+    ]
   },
   {
     "mob": {
@@ -53,7 +65,54 @@
       "maxExpHpRatio": 8,
       "expEfficiency": 0.75
     },
-    "chineseMobName": "嫩寶"
+    "chineseMobName": "嫩寶",
+    "maps": [
+      {
+        "map_id": "104000100",
+        "map_name": "Right Around Lith Harbor",
+        "chinese_map_name": "維多利亞港郊外"
+      },
+      {
+        "map_id": "104000200",
+        "map_name": "Thicket Around the Beach I",
+        "chinese_map_name": "海岸草叢Ⅰ"
+      },
+      {
+        "map_id": "40000",
+        "map_name": "Snail Hunting Ground I",
+        "chinese_map_name": "小樹林"
+      },
+      {
+        "map_id": "40001",
+        "map_name": "Snail Hunting Ground II",
+        "chinese_map_name": "嫩寶狩獵場Ⅱ"
+      },
+      {
+        "map_id": "40002",
+        "map_name": "Snail Hunting Ground III",
+        "chinese_map_name": "嫩寶狩獵場Ⅲ"
+      },
+      {
+        "map_id": "50000",
+        "map_name": "A Split Road",
+        "chinese_map_name": "大菇菇"
+      },
+      {
+        "map_id": "1000004",
+        "map_name": "Snail Garden",
+        "chinese_map_name": "小嫩寶"
+      },
+      {
+        "map_id": "1010004",
+        "map_name": "Snail Field of Flowers",
+        "chinese_map_name": "嫩寶花園"
+      },
+      {
+        "map_id": "101040000",
+        "map_name": "Perion Street Corner",
+        "chinese_map_name": "猴子森林"
+      }
+    ]
   },
   {
     "mob": {
@@ -81,7 +140,74 @@
       "maxExpHpRatio": 8,
       "expEfficiency": 0.5333333333333333
     },
-    "chineseMobName": "藍寶"
+    "chineseMobName": "藍寶",
+    "maps": [
+      {
+        "map_id": "104040000",
+        "map_name": "Henesys Hunting Ground I",
+        "chinese_map_name": "弓箭手訓練場Ⅰ"
+      },
+      {
+        "map_id": "104020000",
+        "map_name": "Forest West of Henesys",
+        "chinese_map_name": "六條岔道"
+      },
+      {
+        "map_id": "102050000",
+        "map_name": "Sunset Sky",
+        "chinese_map_name": "墮落城市北入口"
+      },
+      {
+        "map_id": "104000100",
+        "map_name": "Right Around Lith Harbor",
+        "chinese_map_name": "維多利亞港郊外"
+      },
+      {
+        "map_id": "104000300",
+        "map_name": "Thicket Around the Beach II",
+        "chinese_map_name": "海岸草叢Ⅱ"
+      },
+      {
+        "map_id": "40001",
+        "map_name": "Snail Hunting Ground II",
+        "chinese_map_name": "嫩寶狩獵場Ⅱ"
+      },
+      {
+        "map_id": "40002",
+        "map_name": "Snail Hunting Ground III",
+        "chinese_map_name": "嫩寶狩獵場Ⅲ"
+      },
+      {
+        "map_id": "50000",
+        "map_name": "A Split Road",
+        "chinese_map_name": "大菇菇"
+      },
+      {
+        "map_id": "1000000",
+        "map_name": "The Field West of Amherst",
+        "chinese_map_name": "楓葉村"
+      },
+      {
+        "map_id": "1000004",
+        "map_name": "Snail Garden",
+        "chinese_map_name": "小嫩寶"
+      },
+      {
+        "map_id": "1010004",
+        "map_name": "Snail Field of Flowers",
+        "chinese_map_name": "嫩寶花園"
+      },
+      {
+        "map_id": "102010000",
+        "map_name": "West Street Corner of Perion",
+        "chinese_map_name": "勇士之村南部"
+      },
+      {
+        "map_id": "101040000",
+        "map_name": "Perion Street Corner",
+        "chinese_map_name": "猴子森林"
+      }
+    ]
   },
   {
     "mob": {
@@ -109,7 +235,14 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.2153846153846154
     },
-    "chineseMobName": "嫩寶"
+    "chineseMobName": "嫩寶",
+    "maps": [
+      {
+        "map_id": "105090300",
+        "map_name": "Drake's Meal Table",
+        "chinese_map_name": "龍穴"
+      }
+    ]
   },
   {
     "mob": {
@@ -137,7 +270,44 @@
       "maxExpHpRatio": 8,
       "expEfficiency": 0.5
     },
-    "chineseMobName": "菇菇仔"
+    "chineseMobName": "菇菇仔",
+    "maps": [
+      {
+        "map_id": "104030000",
+        "map_name": "A Hill West of Henesys",
+        "chinese_map_name": "弓箭手村西部小山"
+      },
+      {
+        "map_id": "100010000",
+        "map_name": "The Hill East of Henesys",
+        "chinese_map_name": "弓箭手村北邊山丘"
+      },
+      {
+        "map_id": "104010000",
+        "map_name": "3-Way Road-Split",
+        "chinese_map_name": "維多利亞港外圍"
+      },
+      {
+        "map_id": "50000",
+        "map_name": "A Split Road",
+        "chinese_map_name": "大菇菇"
+      },
+      {
+        "map_id": "1000000",
+        "map_name": "The Field West of Amherst",
+        "chinese_map_name": "楓葉村"
+      },
+      {
+        "map_id": "104030001",
+        "map_name": "Mushroom Garden",
+        "chinese_map_name": "菇菇山"
+      },
+      {
+        "map_id": "1000002",
+        "map_name": "Dangerous Forest",
+        "chinese_map_name": "楓葉村民家"
+      }
+    ]
   },
   {
     "mob": {
@@ -165,7 +335,114 @@
       "maxExpHpRatio": 8,
       "expEfficiency": 0.4
     },
-    "chineseMobName": "木妖"
+    "chineseMobName": "木妖",
+    "maps": [
+      {
+        "map_id": "101010000",
+        "map_name": "The Field Up North of Ellinia",
+        "chinese_map_name": "閃爍森林的通路"
+      },
+      {
+        "map_id": "100050000",
+        "map_name": "The Field South of Ellinia",
+        "chinese_map_name": "魔法森林南郊"
+      },
+      {
+        "map_id": "100040000",
+        "map_name": "The Forest South of Ellinia",
+        "chinese_map_name": "石巨人寺院入口"
+      },
+      {
+        "map_id": "104040001",
+        "map_name": "Henesys Hunting Ground II",
+        "chinese_map_name": "弓箭手訓練場Ⅱ"
+      },
+      {
+        "map_id": "100030000",
+        "map_name": "The Forest East of Henesys",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "102050000",
+        "map_name": "Sunset Sky",
+        "chinese_map_name": "墮落城市北入口"
+      },
+      {
+        "map_id": "102040000",
+        "map_name": "Construction Site North of Kerning City",
+        "chinese_map_name": "初期挖掘地區"
+      },
+      {
+        "map_id": "103010000",
+        "map_name": "Kerning City Construction Site",
+        "chinese_map_name": "小心墜落"
+      },
+      {
+        "map_id": "1020000",
+        "map_name": "The Field East of Amherst",
+        "chinese_map_name": "選擇岔道"
+      },
+      {
+        "map_id": "50001",
+        "map_name": "The Field West of Southperry",
+        "chinese_map_name": "楓之港西郊平原"
+      },
+      {
+        "map_id": "1000001",
+        "map_name": "In a Small Forest",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "102010000",
+        "map_name": "West Street Corner of Perion",
+        "chinese_map_name": "勇士之村南部"
+      },
+      {
+        "map_id": "102020000",
+        "map_name": "West Rocky Mountain I",
+        "chinese_map_name": "勇士之村北部"
+      },
+      {
+        "map_id": "102030000",
+        "map_name": "West Domain of Perion",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "101040000",
+        "map_name": "Perion Street Corner",
+        "chinese_map_name": "猴子森林"
+      },
+      {
+        "map_id": "101030400",
+        "map_name": "East Rocky Mountain I",
+        "chinese_map_name": "獨眼蜥蜴"
+      },
+      {
+        "map_id": "101030401",
+        "map_name": "East Rocky Mountain II",
+        "chinese_map_name": "東方岩石山Ⅱ"
+      },
+      {
+        "map_id": "101030300",
+        "map_name": "Rocky Road I",
+        "chinese_map_name": "小樹森林"
+      },
+      {
+        "map_id": "101030200",
+        "map_name": "Rocky Road II",
+        "chinese_map_name": "北部森林空地"
+      },
+      {
+        "map_id": "101030100",
+        "map_name": "Rocky Road III",
+        "chinese_map_name": "綠樹的藤條"
+      },
+      {
+        "map_id": "101030000",
+        "map_name": "East Domain of Perion",
+        "chinese_map_name": ""
+      }
+    ]
   },
   {
     "mob": {
@@ -193,7 +470,99 @@
       "maxExpHpRatio": 8,
       "expEfficiency": 0.35555555555555557
     },
-    "chineseMobName": "紅寶"
+    "chineseMobName": "紅寶",
+    "maps": [
+      {
+        "map_id": "104040000",
+        "map_name": "Henesys Hunting Ground I",
+        "chinese_map_name": "弓箭手訓練場Ⅰ"
+      },
+      {
+        "map_id": "104020000",
+        "map_name": "Forest West of Henesys",
+        "chinese_map_name": "六條岔道"
+      },
+      {
+        "map_id": "104000100",
+        "map_name": "Right Around Lith Harbor",
+        "chinese_map_name": "維多利亞港郊外"
+      },
+      {
+        "map_id": "104000400",
+        "map_name": "Thicket Around the Beach III",
+        "chinese_map_name": "海岸草叢Ⅲ"
+      },
+      {
+        "map_id": "104010000",
+        "map_name": "3-Way Road-Split",
+        "chinese_map_name": "維多利亞港外圍"
+      },
+      {
+        "map_id": "40002",
+        "map_name": "Snail Hunting Ground III",
+        "chinese_map_name": "嫩寶狩獵場Ⅲ"
+      },
+      {
+        "map_id": "50000",
+        "map_name": "A Split Road",
+        "chinese_map_name": "大菇菇"
+      },
+      {
+        "map_id": "1000004",
+        "map_name": "Snail Garden",
+        "chinese_map_name": "小嫩寶"
+      },
+      {
+        "map_id": "1010004",
+        "map_name": "Snail Field of Flowers",
+        "chinese_map_name": "嫩寶花園"
+      },
+      {
+        "map_id": "1020000",
+        "map_name": "The Field East of Amherst",
+        "chinese_map_name": "選擇岔道"
+      },
+      {
+        "map_id": "50001",
+        "map_name": "The Field West of Southperry",
+        "chinese_map_name": "楓之港西郊平原"
+      },
+      {
+        "map_id": "102010000",
+        "map_name": "West Street Corner of Perion",
+        "chinese_map_name": "勇士之村南部"
+      },
+      {
+        "map_id": "102020000",
+        "map_name": "West Rocky Mountain I",
+        "chinese_map_name": "勇士之村北部"
+      },
+      {
+        "map_id": "102030000",
+        "map_name": "West Domain of Perion",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "101040000",
+        "map_name": "Perion Street Corner",
+        "chinese_map_name": "猴子森林"
+      },
+      {
+        "map_id": "101030400",
+        "map_name": "East Rocky Mountain I",
+        "chinese_map_name": "獨眼蜥蜴"
+      },
+      {
+        "map_id": "101030300",
+        "map_name": "Rocky Road I",
+        "chinese_map_name": "小樹森林"
+      },
+      {
+        "map_id": "101030200",
+        "map_name": "Rocky Road II",
+        "chinese_map_name": "北部森林空地"
+      }
+    ]
   },
   {
     "mob": {
@@ -221,7 +590,84 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.4
     },
-    "chineseMobName": "綠水靈"
+    "chineseMobName": "綠水靈",
+    "maps": [
+      {
+        "map_id": "101010000",
+        "map_name": "The Field Up North of Ellinia",
+        "chinese_map_name": "閃爍森林的通路"
+      },
+      {
+        "map_id": "101010100",
+        "map_name": "The Tree That Grew I",
+        "chinese_map_name": "森林的起始點"
+      },
+      {
+        "map_id": "101020002",
+        "map_name": "Tree Dungeon, Forest Up North I",
+        "chinese_map_name": "北部森林訓練場Ⅰ"
+      },
+      {
+        "map_id": "100050000",
+        "map_name": "The Field South of Ellinia",
+        "chinese_map_name": "魔法森林南郊"
+      },
+      {
+        "map_id": "100040100",
+        "map_name": "The Forest of Wisdom",
+        "chinese_map_name": "石巨人的寺院1"
+      },
+      {
+        "map_id": "100040000",
+        "map_name": "The Forest South of Ellinia",
+        "chinese_map_name": "石巨人寺院入口"
+      },
+      {
+        "map_id": "100040001",
+        "map_name": "Dungeon, Southern Forest I",
+        "chinese_map_name": "南部森林訓練場Ⅰ"
+      },
+      {
+        "map_id": "104040000",
+        "map_name": "Henesys Hunting Ground I",
+        "chinese_map_name": "弓箭手訓練場Ⅰ"
+      },
+      {
+        "map_id": "104020000",
+        "map_name": "Forest West of Henesys",
+        "chinese_map_name": "六條岔道"
+      },
+      {
+        "map_id": "100030000",
+        "map_name": "The Forest East of Henesys",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "103020000",
+        "map_name": "L Forest I",
+        "chinese_map_name": "地鐵售票處"
+      },
+      {
+        "map_id": "103020100",
+        "map_name": "L Forest II",
+        "chinese_map_name": "沿著軌道"
+      },
+      {
+        "map_id": "104010000",
+        "map_name": "3-Way Road-Split",
+        "chinese_map_name": "維多利亞港外圍"
+      },
+      {
+        "map_id": "1020000",
+        "map_name": "The Field East of Amherst",
+        "chinese_map_name": "選擇岔道"
+      },
+      {
+        "map_id": "1000006",
+        "map_name": "Hunting Ground Middle of the Forest II",
+        "chinese_map_name": "草叢狩獵場Ⅱ"
+      }
+    ]
   },
   {
     "mob": {
@@ -249,7 +695,8 @@
       "maxExpHpRatio": null,
       "expEfficiency": null
     },
-    "chineseMobName": "神秘的植物"
+    "chineseMobName": "神秘的植物",
+    "maps": []
   },
   {
     "mob": {
@@ -277,7 +724,89 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.208
     },
-    "chineseMobName": "綠菇菇"
+    "chineseMobName": "綠菇菇",
+    "maps": [
+      {
+        "map_id": "101010102",
+        "map_name": "The Tree That Grew III",
+        "chinese_map_name": "大木林Ⅲ"
+      },
+      {
+        "map_id": "101020005",
+        "map_name": "Tree Dungeon, Forest Up North IV",
+        "chinese_map_name": "北部森林訓練場Ⅳ"
+      },
+      {
+        "map_id": "100040100",
+        "map_name": "The Forest of Wisdom",
+        "chinese_map_name": "石巨人的寺院1"
+      },
+      {
+        "map_id": "100040000",
+        "map_name": "The Forest South of Ellinia",
+        "chinese_map_name": "石巨人寺院入口"
+      },
+      {
+        "map_id": "100040003",
+        "map_name": "Dungeon, Southern Forest III",
+        "chinese_map_name": "南部森林訓練場Ⅲ"
+      },
+      {
+        "map_id": "104040000",
+        "map_name": "Henesys Hunting Ground I",
+        "chinese_map_name": "弓箭手訓練場Ⅰ"
+      },
+      {
+        "map_id": "104040001",
+        "map_name": "Henesys Hunting Ground II",
+        "chinese_map_name": "弓箭手訓練場Ⅱ"
+      },
+      {
+        "map_id": "104040002",
+        "map_name": "Henesys Hunting Ground III",
+        "chinese_map_name": "弓箭手訓練場Ⅲ"
+      },
+      {
+        "map_id": "102050000",
+        "map_name": "Sunset Sky",
+        "chinese_map_name": "墮落城市北入口"
+      },
+      {
+        "map_id": "103020000",
+        "map_name": "L Forest I",
+        "chinese_map_name": "地鐵售票處"
+      },
+      {
+        "map_id": "103020100",
+        "map_name": "L Forest II",
+        "chinese_map_name": "沿著軌道"
+      },
+      {
+        "map_id": "103020200",
+        "map_name": "L Forest III",
+        "chinese_map_name": "轉乘區"
+      },
+      {
+        "map_id": "50001",
+        "map_name": "The Field West of Southperry",
+        "chinese_map_name": "楓之港西郊平原"
+      },
+      {
+        "map_id": "1000001",
+        "map_name": "In a Small Forest",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "105030000",
+        "map_name": "Deep Forest",
+        "chinese_map_name": "另一扇門"
+      },
+      {
+        "map_id": "105040000",
+        "map_name": "Swampy Land in a Deep Forest",
+        "chinese_map_name": "黑森林通道"
+      }
+    ]
   },
   {
     "mob": {
@@ -305,7 +834,74 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.144
     },
-    "chineseMobName": "黑木妖"
+    "chineseMobName": "黑木妖",
+    "maps": [
+      {
+        "map_id": "101010101",
+        "map_name": "The Tree That Grew II",
+        "chinese_map_name": "大木林Ⅱ"
+      },
+      {
+        "map_id": "101020003",
+        "map_name": "Tree Dungeon, Forest Up North II",
+        "chinese_map_name": "北部森林訓練場Ⅱ"
+      },
+      {
+        "map_id": "100040000",
+        "map_name": "The Forest South of Ellinia",
+        "chinese_map_name": "石巨人寺院入口"
+      },
+      {
+        "map_id": "100040002",
+        "map_name": "Dungeon, Southern Forest II",
+        "chinese_map_name": "南部森林訓練場Ⅱ"
+      },
+      {
+        "map_id": "102010000",
+        "map_name": "West Street Corner of Perion",
+        "chinese_map_name": "勇士之村南部"
+      },
+      {
+        "map_id": "102020000",
+        "map_name": "West Rocky Mountain I",
+        "chinese_map_name": "勇士之村北部"
+      },
+      {
+        "map_id": "102030000",
+        "map_name": "West Domain of Perion",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "101030400",
+        "map_name": "East Rocky Mountain I",
+        "chinese_map_name": "獨眼蜥蜴"
+      },
+      {
+        "map_id": "101030402",
+        "map_name": "East Rocky Mountain III",
+        "chinese_map_name": "東方岩石山Ⅲ"
+      },
+      {
+        "map_id": "101030404",
+        "map_name": "East Rocky Mountain V",
+        "chinese_map_name": "東方岩石山Ⅴ"
+      },
+      {
+        "map_id": "101030300",
+        "map_name": "Rocky Road I",
+        "chinese_map_name": "小樹森林"
+      },
+      {
+        "map_id": "101030200",
+        "map_name": "Rocky Road II",
+        "chinese_map_name": "北部森林空地"
+      },
+      {
+        "map_id": "101030000",
+        "map_name": "East Domain of Perion",
+        "chinese_map_name": ""
+      }
+    ]
   },
   {
     "mob": {
@@ -333,7 +929,29 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.24
     },
-    "chineseMobName": "三眼章魚"
+    "chineseMobName": "三眼章魚",
+    "maps": [
+      {
+        "map_id": "101020004",
+        "map_name": "Tree Dungeon, Forest Up North III",
+        "chinese_map_name": "北部森林訓練場Ⅲ"
+      },
+      {
+        "map_id": "102050000",
+        "map_name": "Sunset Sky",
+        "chinese_map_name": "墮落城市北入口"
+      },
+      {
+        "map_id": "103010000",
+        "map_name": "Kerning City Construction Site",
+        "chinese_map_name": "小心墜落"
+      },
+      {
+        "map_id": "102030000",
+        "map_name": "West Domain of Perion",
+        "chinese_map_name": ""
+      }
+    ]
   },
   {
     "mob": {
@@ -361,7 +979,49 @@
       "maxExpHpRatio": 16,
       "expEfficiency": 0.2
     },
-    "chineseMobName": "斧木妖"
+    "chineseMobName": "斧木妖",
+    "maps": [
+      {
+        "map_id": "102040000",
+        "map_name": "Construction Site North of Kerning City",
+        "chinese_map_name": "初期挖掘地區"
+      },
+      {
+        "map_id": "102010000",
+        "map_name": "West Street Corner of Perion",
+        "chinese_map_name": "勇士之村南部"
+      },
+      {
+        "map_id": "101030403",
+        "map_name": "East Rocky Mountain IV",
+        "chinese_map_name": "東方岩石山Ⅳ"
+      },
+      {
+        "map_id": "101030404",
+        "map_name": "East Rocky Mountain V",
+        "chinese_map_name": "東方岩石山Ⅴ"
+      },
+      {
+        "map_id": "101030200",
+        "map_name": "Rocky Road II",
+        "chinese_map_name": "北部森林空地"
+      },
+      {
+        "map_id": "101030100",
+        "map_name": "Rocky Road III",
+        "chinese_map_name": "綠樹的藤條"
+      },
+      {
+        "map_id": "101030000",
+        "map_name": "East Domain of Perion",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "106000000",
+        "map_name": "Deep Valley I",
+        "chinese_map_name": "幽深的峽谷Ⅰ"
+      }
+    ]
   },
   {
     "mob": {
@@ -389,7 +1049,19 @@
       "maxExpHpRatio": 16,
       "expEfficiency": 0.2
     },
-    "chineseMobName": "發芽木妖"
+    "chineseMobName": "發芽木妖",
+    "maps": [
+      {
+        "map_id": "101030100",
+        "map_name": "Rocky Road III",
+        "chinese_map_name": "綠樹的藤條"
+      },
+      {
+        "map_id": "101030101",
+        "map_name": "Excavation Site I",
+        "chinese_map_name": "藤條巢穴1"
+      }
+    ]
   },
   {
     "mob": {
@@ -417,7 +1089,49 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.4
     },
-    "chineseMobName": "肥肥"
+    "chineseMobName": "肥肥",
+    "maps": [
+      {
+        "map_id": "104040001",
+        "map_name": "Henesys Hunting Ground II",
+        "chinese_map_name": "弓箭手訓練場Ⅱ"
+      },
+      {
+        "map_id": "104030000",
+        "map_name": "A Hill West of Henesys",
+        "chinese_map_name": "弓箭手村西部小山"
+      },
+      {
+        "map_id": "104020000",
+        "map_name": "Forest West of Henesys",
+        "chinese_map_name": "六條岔道"
+      },
+      {
+        "map_id": "100020000",
+        "map_name": "The Rain-Forest East of Henesys",
+        "chinese_map_name": "芽孢山丘"
+      },
+      {
+        "map_id": "100030000",
+        "map_name": "The Forest East of Henesys",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "104010000",
+        "map_name": "3-Way Road-Split",
+        "chinese_map_name": "維多利亞港外圍"
+      },
+      {
+        "map_id": "1020000",
+        "map_name": "The Field East of Amherst",
+        "chinese_map_name": "選擇岔道"
+      },
+      {
+        "map_id": "1000005",
+        "map_name": "Hunting Ground Middle of the Forest I",
+        "chinese_map_name": "草叢狩獵場Ⅰ"
+      }
+    ]
   },
   {
     "mob": {
@@ -445,7 +1159,54 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.3333333333333333
     },
-    "chineseMobName": "緞帶肥肥"
+    "chineseMobName": "緞帶肥肥",
+    "maps": [
+      {
+        "map_id": "104040001",
+        "map_name": "Henesys Hunting Ground II",
+        "chinese_map_name": "弓箭手訓練場Ⅱ"
+      },
+      {
+        "map_id": "104030000",
+        "map_name": "A Hill West of Henesys",
+        "chinese_map_name": "弓箭手村西部小山"
+      },
+      {
+        "map_id": "104020000",
+        "map_name": "Forest West of Henesys",
+        "chinese_map_name": "六條岔道"
+      },
+      {
+        "map_id": "100020100",
+        "map_name": "Henesys Pig Farm",
+        "chinese_map_name": "哼聲森林小徑"
+      },
+      {
+        "map_id": "100030000",
+        "map_name": "The Forest East of Henesys",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "104000300",
+        "map_name": "Thicket Around the Beach II",
+        "chinese_map_name": "海岸草叢Ⅱ"
+      },
+      {
+        "map_id": "104010000",
+        "map_name": "3-Way Road-Split",
+        "chinese_map_name": "維多利亞港外圍"
+      },
+      {
+        "map_id": "1020000",
+        "map_name": "The Field East of Amherst",
+        "chinese_map_name": "選擇岔道"
+      },
+      {
+        "map_id": "1020001",
+        "map_name": "Tomato Field",
+        "chinese_map_name": "番茄園"
+      }
+    ]
   },
   {
     "mob": {
@@ -473,7 +1234,74 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.375
     },
-    "chineseMobName": "菇菇寶貝"
+    "chineseMobName": "菇菇寶貝",
+    "maps": [
+      {
+        "map_id": "104040000",
+        "map_name": "Henesys Hunting Ground I",
+        "chinese_map_name": "弓箭手訓練場Ⅰ"
+      },
+      {
+        "map_id": "104040002",
+        "map_name": "Henesys Hunting Ground III",
+        "chinese_map_name": "弓箭手訓練場Ⅲ"
+      },
+      {
+        "map_id": "104030000",
+        "map_name": "A Hill West of Henesys",
+        "chinese_map_name": "弓箭手村西部小山"
+      },
+      {
+        "map_id": "100010000",
+        "map_name": "The Hill East of Henesys",
+        "chinese_map_name": "弓箭手村北邊山丘"
+      },
+      {
+        "map_id": "102040000",
+        "map_name": "Construction Site North of Kerning City",
+        "chinese_map_name": "初期挖掘地區"
+      },
+      {
+        "map_id": "103010000",
+        "map_name": "Kerning City Construction Site",
+        "chinese_map_name": "小心墜落"
+      },
+      {
+        "map_id": "103020000",
+        "map_name": "L Forest I",
+        "chinese_map_name": "地鐵售票處"
+      },
+      {
+        "map_id": "103020100",
+        "map_name": "L Forest II",
+        "chinese_map_name": "沿著軌道"
+      },
+      {
+        "map_id": "103020200",
+        "map_name": "L Forest III",
+        "chinese_map_name": "轉乘區"
+      },
+      {
+        "map_id": "103030000",
+        "map_name": "Kerning City Middle Forest I",
+        "chinese_map_name": "沼澤地"
+      },
+      {
+        "map_id": "104010000",
+        "map_name": "3-Way Road-Split",
+        "chinese_map_name": "維多利亞港外圍"
+      },
+      {
+        "map_id": "50001",
+        "map_name": "The Field West of Southperry",
+        "chinese_map_name": "楓之港西郊平原"
+      },
+      {
+        "map_id": "1000002",
+        "map_name": "Dangerous Forest",
+        "chinese_map_name": "楓葉村民家"
+      }
+    ]
   },
   {
     "mob": {
@@ -501,7 +1329,29 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.21666666666666667
     },
-    "chineseMobName": "藍水靈"
+    "chineseMobName": "藍水靈",
+    "maps": [
+      {
+        "map_id": "101020006",
+        "map_name": "Tree Dungeon, Forest Up North V",
+        "chinese_map_name": "北部森林訓練場Ⅴ"
+      },
+      {
+        "map_id": "107000500",
+        "map_name": "Damp Tree-Forest",
+        "chinese_map_name": "黑森林西入口"
+      },
+      {
+        "map_id": "107000501",
+        "map_name": "Damp Forest",
+        "chinese_map_name": "黑森林沼澤"
+      },
+      {
+        "map_id": "105030000",
+        "map_name": "Deep Forest",
+        "chinese_map_name": "另一扇門"
+      }
+    ]
   },
   {
     "mob": {
@@ -534,7 +1384,14 @@
       "maxExpHpRatio": 16,
       "expEfficiency": 0.18285714285714286
     },
-    "chineseMobName": "奇怪的豬"
+    "chineseMobName": "奇怪的豬",
+    "maps": [
+      {
+        "map_id": "1020001",
+        "map_name": "Tomato Field",
+        "chinese_map_name": "番茄園"
+      }
+    ]
   },
   {
     "mob": {
@@ -562,7 +1419,8 @@
       "maxExpHpRatio": null,
       "expEfficiency": null
     },
-    "chineseMobName": "天空城箱"
+    "chineseMobName": "天空城箱",
+    "maps": []
   },
   {
     "mob": {
@@ -590,7 +1448,69 @@
       "maxExpHpRatio": 16,
       "expEfficiency": 0.23333333333333334
     },
-    "chineseMobName": "刺菇菇"
+    "chineseMobName": "刺菇菇",
+    "maps": [
+      {
+        "map_id": "100040000",
+        "map_name": "The Forest South of Ellinia",
+        "chinese_map_name": "石巨人寺院入口"
+      },
+      {
+        "map_id": "100040004",
+        "map_name": "Dungeon, Southern Forest IV",
+        "chinese_map_name": "南部森林訓練場Ⅳ"
+      },
+      {
+        "map_id": "106010000",
+        "map_name": "The Road to the Dungeon",
+        "chinese_map_name": "迷宮通道"
+      },
+      {
+        "map_id": "106010100",
+        "map_name": "Henesys Dungeon Entrance",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "103020200",
+        "map_name": "L Forest III",
+        "chinese_map_name": "轉乘區"
+      },
+      {
+        "map_id": "103030000",
+        "map_name": "Kerning City Middle Forest I",
+        "chinese_map_name": "沼澤地"
+      },
+      {
+        "map_id": "103030100",
+        "map_name": "Kerning City Middle Forest II",
+        "chinese_map_name": "野生鱷魚沼地"
+      },
+      {
+        "map_id": "105040000",
+        "map_name": "Swampy Land in a Deep Forest",
+        "chinese_map_name": "黑森林通道"
+      },
+      {
+        "map_id": "105050000",
+        "map_name": "Ant Tunnel I",
+        "chinese_map_name": "螞蟻洞Ⅰ"
+      },
+      {
+        "map_id": "105050100",
+        "map_name": "Ant Tunnel II",
+        "chinese_map_name": "螞蟻洞Ⅱ"
+      },
+      {
+        "map_id": "105050200",
+        "map_name": "Ant Tunnel III",
+        "chinese_map_name": "螞蟻洞Ⅲ"
+      },
+      {
+        "map_id": "105050300",
+        "map_name": "Ant Tunnel IV",
+        "chinese_map_name": "螞蟻洞Ⅳ"
+      }
+    ]
   },
   {
     "mob": {
@@ -618,7 +1538,59 @@
       "maxExpHpRatio": 16,
       "expEfficiency": 0.13818181818181818
     },
-    "chineseMobName": "黑斧木妖"
+    "chineseMobName": "黑斧木妖",
+    "maps": [
+      {
+        "map_id": "102010000",
+        "map_name": "West Street Corner of Perion",
+        "chinese_map_name": "勇士之村南部"
+      },
+      {
+        "map_id": "102020000",
+        "map_name": "West Rocky Mountain I",
+        "chinese_map_name": "勇士之村北部"
+      },
+      {
+        "map_id": "102020100",
+        "map_name": "West Rocky Mountain II",
+        "chinese_map_name": "風塵山丘"
+      },
+      {
+        "map_id": "102020200",
+        "map_name": "West Rocky Mountain III",
+        "chinese_map_name": "小岩石路"
+      },
+      {
+        "map_id": "101030000",
+        "map_name": "East Domain of Perion",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "106000300",
+        "map_name": "Perion Dungeon Entrance",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "106000000",
+        "map_name": "Deep Valley I",
+        "chinese_map_name": "幽深的峽谷Ⅰ"
+      },
+      {
+        "map_id": "106000100",
+        "map_name": "Deep Valley II",
+        "chinese_map_name": "幽深的峽谷Ⅱ"
+      },
+      {
+        "map_id": "106000200",
+        "map_name": "Deep Valley III",
+        "chinese_map_name": "幽深峽谷Ⅲ"
+      },
+      {
+        "map_id": "105030000",
+        "map_name": "Deep Forest",
+        "chinese_map_name": "另一扇門"
+      }
+    ]
   },
   {
     "mob": {
@@ -646,7 +1618,29 @@
       "maxExpHpRatio": 16,
       "expEfficiency": 0.26666666666666666
     },
-    "chineseMobName": "青蛇"
+    "chineseMobName": "青蛇",
+    "maps": [
+      {
+        "map_id": "107000000",
+        "map_name": "The Swamp of Despair I",
+        "chinese_map_name": "沼澤地Ⅰ"
+      },
+      {
+        "map_id": "107000100",
+        "map_name": "The Swamp of Despair II",
+        "chinese_map_name": "沼澤地Ⅱ"
+      },
+      {
+        "map_id": "107000200",
+        "map_name": "The Swamp of Despair III",
+        "chinese_map_name": "沼澤地Ⅲ"
+      },
+      {
+        "map_id": "107000400",
+        "map_name": "Dangerous Croco II",
+        "chinese_map_name": "鱷魚潭Ⅱ"
+      }
+    ]
   },
   {
     "mob": {
@@ -674,7 +1668,14 @@
       "maxExpHpRatio": 16,
       "expEfficiency": 0.12
     },
-    "chineseMobName": "紅寶王"
+    "chineseMobName": "紅寶王",
+    "maps": [
+      {
+        "map_id": "104000400",
+        "map_name": "Thicket Around the Beach III",
+        "chinese_map_name": "海岸草叢Ⅲ"
+      }
+    ]
   },
   {
     "mob": {
@@ -702,7 +1703,8 @@
       "maxExpHpRatio": 16,
       "expEfficiency": 0.18285714285714286
     },
-    "chineseMobName": "藍菇菇"
+    "chineseMobName": "藍菇菇",
+    "maps": []
   },
   {
     "mob": {
@@ -730,7 +1732,29 @@
       "maxExpHpRatio": 20,
       "expEfficiency": 0.1388888888888889
     },
-    "chineseMobName": "火獨眼獸"
+    "chineseMobName": "火獨眼獸",
+    "maps": [
+      {
+        "map_id": "101020007",
+        "map_name": "Tree Dungeon, Forest Up North VI",
+        "chinese_map_name": "北部森林訓練場Ⅵ"
+      },
+      {
+        "map_id": "105070000",
+        "map_name": "Deep Ant Tunnel II",
+        "chinese_map_name": "幽深螞蟻洞Ⅱ"
+      },
+      {
+        "map_id": "105070001",
+        "map_name": "Ant Tunnel Park",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "105070100",
+        "map_name": "The Cave of Evil Eye",
+        "chinese_map_name": "火獨眼獸洞穴I"
+      }
+    ]
   },
   {
     "mob": {
@@ -758,7 +1782,44 @@
       "maxExpHpRatio": 16,
       "expEfficiency": 0.168
     },
-    "chineseMobName": "殭屍菇菇"
+    "chineseMobName": "殭屍菇菇",
+    "maps": [
+      {
+        "map_id": "105050100",
+        "map_name": "Ant Tunnel II",
+        "chinese_map_name": "螞蟻洞Ⅱ"
+      },
+      {
+        "map_id": "105050101",
+        "map_name": "Cave of Mushrooms",
+        "chinese_map_name": "菇菇生長之地"
+      },
+      {
+        "map_id": "105050200",
+        "map_name": "Ant Tunnel III",
+        "chinese_map_name": "螞蟻洞Ⅲ"
+      },
+      {
+        "map_id": "105050300",
+        "map_name": "Ant Tunnel IV",
+        "chinese_map_name": "螞蟻洞Ⅳ"
+      },
+      {
+        "map_id": "105060100",
+        "map_name": "Deep Ant Tunnel I",
+        "chinese_map_name": "幽深螞蟻洞Ⅰ"
+      },
+      {
+        "map_id": "105070000",
+        "map_name": "Deep Ant Tunnel II",
+        "chinese_map_name": "幽深螞蟻洞Ⅱ"
+      },
+      {
+        "map_id": "105070001",
+        "map_name": "Ant Tunnel Park",
+        "chinese_map_name": ""
+      }
+    ]
   },
   {
     "mob": {
@@ -786,7 +1847,49 @@
       "maxExpHpRatio": 16,
       "expEfficiency": 0.15272727272727274
     },
-    "chineseMobName": "黑肥肥"
+    "chineseMobName": "黑肥肥",
+    "maps": [
+      {
+        "map_id": "102020000",
+        "map_name": "West Rocky Mountain I",
+        "chinese_map_name": "勇士之村北部"
+      },
+      {
+        "map_id": "102020100",
+        "map_name": "West Rocky Mountain II",
+        "chinese_map_name": "風塵山丘"
+      },
+      {
+        "map_id": "102020200",
+        "map_name": "West Rocky Mountain III",
+        "chinese_map_name": "小岩石路"
+      },
+      {
+        "map_id": "101040000",
+        "map_name": "Perion Street Corner",
+        "chinese_map_name": "猴子森林"
+      },
+      {
+        "map_id": "101030100",
+        "map_name": "Rocky Road III",
+        "chinese_map_name": "綠樹的藤條"
+      },
+      {
+        "map_id": "101030000",
+        "map_name": "East Domain of Perion",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "106000000",
+        "map_name": "Deep Valley I",
+        "chinese_map_name": "幽深的峽谷Ⅰ"
+      },
+      {
+        "map_id": "106000100",
+        "map_name": "Deep Valley II",
+        "chinese_map_name": "幽深的峽谷Ⅱ"
+      }
+    ]
   },
   {
     "mob": {
@@ -814,7 +1917,24 @@
       "maxExpHpRatio": 16,
       "expEfficiency": 0.168
     },
-    "chineseMobName": "木面怪人"
+    "chineseMobName": "木面怪人",
+    "maps": [
+      {
+        "map_id": "101030101",
+        "map_name": "Excavation Site I",
+        "chinese_map_name": "藤條巢穴1"
+      },
+      {
+        "map_id": "101030102",
+        "map_name": "Excavation Site II",
+        "chinese_map_name": "遺跡發掘地Ⅱ"
+      },
+      {
+        "map_id": "101030103",
+        "map_name": "Excavation Site III",
+        "chinese_map_name": "遺跡發掘地Ⅲ"
+      }
+    ]
   },
   {
     "mob": {
@@ -842,7 +1962,19 @@
       "maxExpHpRatio": 16,
       "expEfficiency": 0.15
     },
-    "chineseMobName": "石面怪人"
+    "chineseMobName": "石面怪人",
+    "maps": [
+      {
+        "map_id": "101030102",
+        "map_name": "Excavation Site II",
+        "chinese_map_name": "遺跡發掘地Ⅱ"
+      },
+      {
+        "map_id": "101030103",
+        "map_name": "Excavation Site III",
+        "chinese_map_name": "遺跡發掘地Ⅲ"
+      }
+    ]
   },
   {
     "mob": {
@@ -875,7 +2007,19 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.10666666666666667
     },
-    "chineseMobName": "黑獨眼獸"
+    "chineseMobName": "黑獨眼獸",
+    "maps": [
+      {
+        "map_id": "105070400",
+        "map_name": "The Cave of Dark Eye",
+        "chinese_map_name": "火獨眼獸洞穴IV"
+      },
+      {
+        "map_id": "105090400",
+        "map_name": "Another Path",
+        "chinese_map_name": "寺院入口"
+      }
+    ]
   },
   {
     "mob": {
@@ -908,7 +2052,19 @@
       "maxExpHpRatio": 16,
       "expEfficiency": 0.22
     },
-    "chineseMobName": "蝙蝠"
+    "chineseMobName": "蝙蝠",
+    "maps": [
+      {
+        "map_id": "103000102",
+        "map_name": "Transfer Area",
+        "chinese_map_name": "轉乘區"
+      },
+      {
+        "map_id": "105050400",
+        "map_name": "Dark Cave",
+        "chinese_map_name": "黑暗通道"
+      }
+    ]
   },
   {
     "mob": {
@@ -936,7 +2092,14 @@
       "maxExpHpRatio": 20,
       "expEfficiency": 0.12222222222222222
     },
-    "chineseMobName": "石球"
+    "chineseMobName": "石球",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Orbis Tower <4th Floor>",
+        "chinese_map_name": "天空之塔&lt;4層&gt;"
+      }
+    ]
   },
   {
     "mob": {
@@ -964,7 +2127,24 @@
       "maxExpHpRatio": 24,
       "expEfficiency": 0.1
     },
-    "chineseMobName": "鱷魚"
+    "chineseMobName": "鱷魚",
+    "maps": [
+      {
+        "map_id": "107000000",
+        "map_name": "The Swamp of Despair I",
+        "chinese_map_name": "沼澤地Ⅰ"
+      },
+      {
+        "map_id": "107000100",
+        "map_name": "The Swamp of Despair II",
+        "chinese_map_name": "沼澤地Ⅱ"
+      },
+      {
+        "map_id": "107000200",
+        "map_name": "The Swamp of Despair III",
+        "chinese_map_name": "沼澤地Ⅲ"
+      }
+    ]
   },
   {
     "mob": {
@@ -992,7 +2172,54 @@
       "maxExpHpRatio": 24,
       "expEfficiency": 0.12
     },
-    "chineseMobName": "火肥肥"
+    "chineseMobName": "火肥肥",
+    "maps": [
+      {
+        "map_id": "102020100",
+        "map_name": "West Rocky Mountain II",
+        "chinese_map_name": "風塵山丘"
+      },
+      {
+        "map_id": "102020200",
+        "map_name": "West Rocky Mountain III",
+        "chinese_map_name": "小岩石路"
+      },
+      {
+        "map_id": "102020300",
+        "map_name": "West Rocky Mountain IV",
+        "chinese_map_name": "大岩石路"
+      },
+      {
+        "map_id": "106000300",
+        "map_name": "Perion Dungeon Entrance",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "106000000",
+        "map_name": "Deep Valley I",
+        "chinese_map_name": "幽深的峽谷Ⅰ"
+      },
+      {
+        "map_id": "106000100",
+        "map_name": "Deep Valley II",
+        "chinese_map_name": "幽深的峽谷Ⅱ"
+      },
+      {
+        "map_id": "106000101",
+        "map_name": "The Burnt Land I",
+        "chinese_map_name": "火焰之地Ⅰ"
+      },
+      {
+        "map_id": "106000110",
+        "map_name": "The Burnt Land II",
+        "chinese_map_name": "火焰之地Ⅱ"
+      },
+      {
+        "map_id": "106000200",
+        "map_name": "Deep Valley III",
+        "chinese_map_name": "幽深峽谷Ⅲ"
+      }
+    ]
   },
   {
     "mob": {
@@ -1020,7 +2247,19 @@
       "maxExpHpRatio": 24,
       "expEfficiency": 0.11818181818181818
     },
-    "chineseMobName": "幼紅獨角獅"
+    "chineseMobName": "幼紅獨角獅",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "The Road to Garden of 3 Colors",
+        "chinese_map_name": "前往三色庭園的路"
+      },
+      {
+        "map_id": null,
+        "map_name": "Garden of Red I",
+        "chinese_map_name": "紅光庭園1"
+      }
+    ]
   },
   {
     "mob": {
@@ -1048,7 +2287,19 @@
       "maxExpHpRatio": 24,
       "expEfficiency": 0.11818181818181818
     },
-    "chineseMobName": "幼黃獨角獅"
+    "chineseMobName": "幼黃獨角獅",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "The Road to Garden of 3 Colors",
+        "chinese_map_name": "前往三色庭園的路"
+      },
+      {
+        "map_id": null,
+        "map_name": "Garden of Yellow I",
+        "chinese_map_name": "黃光庭園1"
+      }
+    ]
   },
   {
     "mob": {
@@ -1076,7 +2327,19 @@
       "maxExpHpRatio": 24,
       "expEfficiency": 0.11818181818181818
     },
-    "chineseMobName": "幼藍獨角獅"
+    "chineseMobName": "幼藍獨角獅",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "The Road to Garden of 3 Colors",
+        "chinese_map_name": "前往三色庭園的路"
+      },
+      {
+        "map_id": null,
+        "map_name": "Garden of Blue I",
+        "chinese_map_name": "藍光庭園1"
+      }
+    ]
   },
   {
     "mob": {
@@ -1104,7 +2367,44 @@
       "maxExpHpRatio": 24,
       "expEfficiency": 0.10266666666666667
     },
-    "chineseMobName": "猴子"
+    "chineseMobName": "猴子",
+    "maps": [
+      {
+        "map_id": "100040100",
+        "map_name": "The Forest of Wisdom",
+        "chinese_map_name": "石巨人的寺院1"
+      },
+      {
+        "map_id": "107000400",
+        "map_name": "Dangerous Croco II",
+        "chinese_map_name": "鱷魚潭Ⅱ"
+      },
+      {
+        "map_id": "102020200",
+        "map_name": "West Rocky Mountain III",
+        "chinese_map_name": "小岩石路"
+      },
+      {
+        "map_id": "102020300",
+        "map_name": "West Rocky Mountain IV",
+        "chinese_map_name": "大岩石路"
+      },
+      {
+        "map_id": "107000500",
+        "map_name": "Damp Tree-Forest",
+        "chinese_map_name": "黑森林西入口"
+      },
+      {
+        "map_id": "105030000",
+        "map_name": "Deep Forest",
+        "chinese_map_name": "另一扇門"
+      },
+      {
+        "map_id": "105040200",
+        "map_name": "Hunting Ground in the Deep Forest II",
+        "chinese_map_name": "黑森林狩獵場II"
+      }
+    ]
   },
   {
     "mob": {
@@ -1132,7 +2432,14 @@
       "maxExpHpRatio": 24,
       "expEfficiency": 0.11714285714285715
     },
-    "chineseMobName": "樹妖王"
+    "chineseMobName": "樹妖王",
+    "maps": [
+      {
+        "map_id": "101030404",
+        "map_name": "East Rocky Mountain V",
+        "chinese_map_name": "東方岩石山Ⅴ"
+      }
+    ]
   },
   {
     "mob": {
@@ -1160,7 +2467,39 @@
       "maxExpHpRatio": 24,
       "expEfficiency": 0.112
     },
-    "chineseMobName": "風獨眼獸"
+    "chineseMobName": "風獨眼獸",
+    "maps": [
+      {
+        "map_id": "101020008",
+        "map_name": "Tree Dungeon, Forest Up North VII",
+        "chinese_map_name": "北部森林訓練場Ⅶ"
+      },
+      {
+        "map_id": "105040301",
+        "map_name": "Sleepy Dungeon I",
+        "chinese_map_name": "森林迷宮I"
+      },
+      {
+        "map_id": "105030000",
+        "map_name": "Deep Forest",
+        "chinese_map_name": "另一扇門"
+      },
+      {
+        "map_id": "105040100",
+        "map_name": "Hunting Ground in the Deep Forest I",
+        "chinese_map_name": "黑森林狩獵場I"
+      },
+      {
+        "map_id": "105040200",
+        "map_name": "Hunting Ground in the Deep Forest II",
+        "chinese_map_name": "黑森林狩獵場II"
+      },
+      {
+        "map_id": "105070200",
+        "map_name": "The Cave of Curse Eye",
+        "chinese_map_name": "火獨眼獸洞穴II"
+      }
+    ]
   },
   {
     "mob": {
@@ -1188,7 +2527,19 @@
       "maxExpHpRatio": 24,
       "expEfficiency": 0.11666666666666667
     },
-    "chineseMobName": "小幽靈"
+    "chineseMobName": "小幽靈",
+    "maps": [
+      {
+        "map_id": "103000104",
+        "map_name": "Line 1 <Area 3>",
+        "chinese_map_name": "地鐵一號線[地區03]"
+      },
+      {
+        "map_id": "103000200",
+        "map_name": "Line 2 <Area 1>",
+        "chinese_map_name": "地鐵二號線[01]"
+      }
+    ]
   },
   {
     "mob": {
@@ -1216,7 +2567,14 @@
       "maxExpHpRatio": 24,
       "expEfficiency": 0.08205128205128205
     },
-    "chineseMobName": "紅螃蟹"
+    "chineseMobName": "紅螃蟹",
+    "maps": [
+      {
+        "map_id": "104010000",
+        "map_name": "3-Way Road-Split",
+        "chinese_map_name": "維多利亞港外圍"
+      }
+    ]
   },
   {
     "mob": {
@@ -1244,7 +2602,19 @@
       "maxExpHpRatio": 24,
       "expEfficiency": 0.11076923076923077
     },
-    "chineseMobName": "星光精靈"
+    "chineseMobName": "星光精靈",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Cloud Park I",
+        "chinese_map_name": "雲彩公園1"
+      },
+      {
+        "map_id": null,
+        "map_name": "Cloud Park II",
+        "chinese_map_name": "雲彩公園2"
+      }
+    ]
   },
   {
     "mob": {
@@ -1272,7 +2642,14 @@
       "maxExpHpRatio": 24,
       "expEfficiency": 0.17647058823529413
     },
-    "chineseMobName": "幼魔精靈"
+    "chineseMobName": "幼魔精靈",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Hidden Street - Over the Wall",
+        "chinese_map_name": "Hidden Street - Over the Wall"
+      }
+    ]
   },
   {
     "mob": {
@@ -1300,7 +2677,29 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.07777777777777778
     },
-    "chineseMobName": "土龍"
+    "chineseMobName": "土龍",
+    "maps": [
+      {
+        "map_id": "101030404",
+        "map_name": "East Rocky Mountain V",
+        "chinese_map_name": "東方岩石山Ⅴ"
+      },
+      {
+        "map_id": "101030405",
+        "map_name": "East Rocky Mountain VI",
+        "chinese_map_name": "東方岩石山Ⅵ"
+      },
+      {
+        "map_id": "101030406",
+        "map_name": "East Rocky Mountain VII",
+        "chinese_map_name": "東方岩石山Ⅶ"
+      },
+      {
+        "map_id": "106000000",
+        "map_name": "Deep Valley I",
+        "chinese_map_name": "幽深的峽谷Ⅰ"
+      }
+    ]
   },
   {
     "mob": {
@@ -1328,7 +2727,19 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.08518518518518518
     },
-    "chineseMobName": "黑食人花"
+    "chineseMobName": "黑食人花",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Disposed Flower Garden",
+        "chinese_map_name": "Disposed Flower Garden"
+      },
+      {
+        "map_id": null,
+        "map_name": "Strolling Path II",
+        "chinese_map_name": "散步路2"
+      }
+    ]
   },
   {
     "mob": {
@@ -1356,7 +2767,39 @@
       "maxExpHpRatio": 25,
       "expEfficiency": 0.085
     },
-    "chineseMobName": "冰獨眼獸"
+    "chineseMobName": "冰獨眼獸",
+    "maps": [
+      {
+        "map_id": "101020009",
+        "map_name": "Tree Dungeon, Forest Up North VIII",
+        "chinese_map_name": "北部森林訓練場Ⅷ"
+      },
+      {
+        "map_id": "105040302",
+        "map_name": "Sleepy Dungeon II",
+        "chinese_map_name": "森林迷宮II"
+      },
+      {
+        "map_id": "105070300",
+        "map_name": "The Cave of Cold Eye",
+        "chinese_map_name": "火獨眼獸洞穴III"
+      },
+      {
+        "map_id": "105090000",
+        "map_name": "The Tunnel That Lost Light I",
+        "chinese_map_name": "冰獨眼獸洞穴Ⅰ"
+      },
+      {
+        "map_id": "105090100",
+        "map_name": "The Tunnel That Lost Light II",
+        "chinese_map_name": "冰獨眼獸洞穴Ⅱ"
+      },
+      {
+        "map_id": "105090300",
+        "map_name": "Drake's Meal Table",
+        "chinese_map_name": "龍穴"
+      }
+    ]
   },
   {
     "mob": {
@@ -1384,7 +2827,29 @@
       "maxExpHpRatio": 25,
       "expEfficiency": 0.1
     },
-    "chineseMobName": "天使猴"
+    "chineseMobName": "天使猴",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Hidden Street - Monkey Swamp II",
+        "chinese_map_name": "Hidden Street - Monkey 沼澤 II"
+      },
+      {
+        "map_id": null,
+        "map_name": "Hidden Street - Monkey Swamp III",
+        "chinese_map_name": "Hidden Street - Monkey 沼澤 III"
+      },
+      {
+        "map_id": null,
+        "map_name": "Hidden Street - Monkey Forest I",
+        "chinese_map_name": "Hidden Street - Monkey 森林 I"
+      },
+      {
+        "map_id": null,
+        "map_name": "Hidden Street - Monkey Forest II",
+        "chinese_map_name": "Hidden Street - Monkey 森林 II"
+      }
+    ]
   },
   {
     "mob": {
@@ -1412,7 +2877,19 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.08571428571428572
     },
-    "chineseMobName": "大幽靈"
+    "chineseMobName": "大幽靈",
+    "maps": [
+      {
+        "map_id": "103000105",
+        "map_name": "Line 1 <Area 4>",
+        "chinese_map_name": "地鐵一號線[地區04]"
+      },
+      {
+        "map_id": "103000201",
+        "map_name": "Line 2 <Area 2>",
+        "chinese_map_name": "地鐵二號線[地區02]"
+      }
+    ]
   },
   {
     "mob": {
@@ -1440,7 +2917,34 @@
       "maxExpHpRatio": 25,
       "expEfficiency": 0.09
     },
-    "chineseMobName": "鋼之肥肥"
+    "chineseMobName": "鋼之肥肥",
+    "maps": [
+      {
+        "map_id": "103020000",
+        "map_name": "L Forest I",
+        "chinese_map_name": "地鐵售票處"
+      },
+      {
+        "map_id": "103020100",
+        "map_name": "L Forest II",
+        "chinese_map_name": "沿著軌道"
+      },
+      {
+        "map_id": "103020200",
+        "map_name": "L Forest III",
+        "chinese_map_name": "轉乘區"
+      },
+      {
+        "map_id": "103030100",
+        "map_name": "Kerning City Middle Forest II",
+        "chinese_map_name": "野生鱷魚沼地"
+      },
+      {
+        "map_id": "103030200",
+        "map_name": "Kerning City Middle Forest III",
+        "chinese_map_name": "危險的黑鱷魚"
+      }
+    ]
   },
   {
     "mob": {
@@ -1468,7 +2972,14 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.08533333333333333
     },
-    "chineseMobName": "青螃蟹"
+    "chineseMobName": "青螃蟹",
+    "maps": [
+      {
+        "map_id": "107000400",
+        "map_name": "Dangerous Croco II",
+        "chinese_map_name": "鱷魚潭Ⅱ"
+      }
+    ]
   },
   {
     "mob": {
@@ -1496,7 +3007,19 @@
       "maxExpHpRatio": 25,
       "expEfficiency": 0.09428571428571429
     },
-    "chineseMobName": "食人花"
+    "chineseMobName": "食人花",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Strolling Path",
+        "chinese_map_name": "散步路"
+      },
+      {
+        "map_id": null,
+        "map_name": "Disposed Flower Garden",
+        "chinese_map_name": "Disposed Flower Garden"
+      }
+    ]
   },
   {
     "mob": {
@@ -1524,7 +3047,24 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.084
     },
-    "chineseMobName": "月光精靈"
+    "chineseMobName": "月光精靈",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Cloud Park II",
+        "chinese_map_name": "雲彩公園2"
+      },
+      {
+        "map_id": null,
+        "map_name": "Cloud Park III",
+        "chinese_map_name": "雲彩公園3"
+      },
+      {
+        "map_id": null,
+        "map_name": "Cloud Park IV",
+        "chinese_map_name": "雲彩公園4"
+      }
+    ]
   },
   {
     "mob": {
@@ -1557,7 +3097,34 @@
       "maxExpHpRatio": 25,
       "expEfficiency": 0.11875
     },
-    "chineseMobName": "獨眼蝙蝠"
+    "chineseMobName": "獨眼蝙蝠",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Dead Mine I",
+        "chinese_map_name": "廢棄礦坑1"
+      },
+      {
+        "map_id": null,
+        "map_name": "Dead Mine II",
+        "chinese_map_name": "廢棄礦坑2"
+      },
+      {
+        "map_id": null,
+        "map_name": "Dead Mine III",
+        "chinese_map_name": "廢棄礦坑3"
+      },
+      {
+        "map_id": null,
+        "map_name": "Dead Mine IV",
+        "chinese_map_name": "廢棄礦坑4"
+      },
+      {
+        "map_id": null,
+        "map_name": "The Passage",
+        "chinese_map_name": "通道"
+      }
+    ]
   },
   {
     "mob": {
@@ -1585,7 +3152,14 @@
       "maxExpHpRatio": 25,
       "expEfficiency": 0.08869565217391304
     },
-    "chineseMobName": "小獵犬"
+    "chineseMobName": "小獵犬",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "The Cave of Trial I",
+        "chinese_map_name": "試煉洞穴1"
+      }
+    ]
   },
   {
     "mob": {
@@ -1613,7 +3187,19 @@
       "maxExpHpRatio": 25,
       "expEfficiency": 0.08734693877551021
     },
-    "chineseMobName": "骷髏犬"
+    "chineseMobName": "骷髏犬",
+    "maps": [
+      {
+        "map_id": "101030105",
+        "map_name": "Remains <Tomb> I",
+        "chinese_map_name": "遺跡之墓Ⅰ"
+      },
+      {
+        "map_id": "101030106",
+        "map_name": "Remains <Tomb> II",
+        "chinese_map_name": "遺跡之墓Ⅱ"
+      }
+    ]
   },
   {
     "mob": {
@@ -1641,7 +3227,24 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.08509090909090909
     },
-    "chineseMobName": "木乃伊犬"
+    "chineseMobName": "木乃伊犬",
+    "maps": [
+      {
+        "map_id": "101030105",
+        "map_name": "Remains <Tomb> I",
+        "chinese_map_name": "遺跡之墓Ⅰ"
+      },
+      {
+        "map_id": "101030106",
+        "map_name": "Remains <Tomb> II",
+        "chinese_map_name": "遺跡之墓Ⅱ"
+      },
+      {
+        "map_id": "101030107",
+        "map_name": "Remains <Tomb> III",
+        "chinese_map_name": "遺跡之墓Ⅲ"
+      }
+    ]
   },
   {
     "mob": {
@@ -1669,7 +3272,29 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.08679245283018867
     },
-    "chineseMobName": "鋼之黑肥肥"
+    "chineseMobName": "鋼之黑肥肥",
+    "maps": [
+      {
+        "map_id": "106000300",
+        "map_name": "Perion Dungeon Entrance",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "106000110",
+        "map_name": "The Burnt Land II",
+        "chinese_map_name": "火焰之地Ⅱ"
+      },
+      {
+        "map_id": "106000120",
+        "map_name": "The Burnt Land III",
+        "chinese_map_name": "火焰之地Ⅲ"
+      },
+      {
+        "map_id": "106000200",
+        "map_name": "Deep Valley III",
+        "chinese_map_name": "幽深峽谷Ⅲ"
+      }
+    ]
   },
   {
     "mob": {
@@ -1697,7 +3322,14 @@
       "maxExpHpRatio": 32,
       "expEfficiency": 0.1
     },
-    "chineseMobName": "冥界幽靈"
+    "chineseMobName": "冥界幽靈",
+    "maps": [
+      {
+        "map_id": "103000105",
+        "map_name": "Line 1 <Area 4>",
+        "chinese_map_name": "地鐵一號線[地區04]"
+      }
+    ]
   },
   {
     "mob": {
@@ -1725,7 +3357,14 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.07297297297297298
     },
-    "chineseMobName": "小雪球"
+    "chineseMobName": "小雪球",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Watch Out for Icy Path I",
+        "chinese_map_name": "Watch Out for Icy 小徑 I"
+      }
+    ]
   },
   {
     "mob": {
@@ -1753,7 +3392,8 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0
     },
-    "chineseMobName": "小雪球"
+    "chineseMobName": "小雪球",
+    "maps": []
   },
   {
     "mob": {
@@ -1781,7 +3421,14 @@
       "maxExpHpRatio": null,
       "expEfficiency": 0.07888888888888888
     },
-    "chineseMobName": "火精靈"
+    "chineseMobName": "火精靈",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "The Cave of Trial I",
+        "chinese_map_name": "試煉洞穴1"
+      }
+    ]
   },
   {
     "mob": {
@@ -1809,7 +3456,19 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.0775
     },
-    "chineseMobName": "日光精靈"
+    "chineseMobName": "日光精靈",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Old Man's House",
+        "chinese_map_name": "老婆之屋"
+      },
+      {
+        "map_id": null,
+        "map_name": "Cloud Park V",
+        "chinese_map_name": "雲彩公園5"
+      }
+    ]
   },
   {
     "mob": {
@@ -1837,7 +3496,19 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.0761904761904762
     },
-    "chineseMobName": "紅獨角獅"
+    "chineseMobName": "紅獨角獅",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Garden of Red II",
+        "chinese_map_name": "紅光庭園2"
+      },
+      {
+        "map_id": null,
+        "map_name": "Stairway to the Sky I",
+        "chinese_map_name": "天空階梯1"
+      }
+    ]
   },
   {
     "mob": {
@@ -1865,7 +3536,19 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.0761904761904762
     },
-    "chineseMobName": "黃獨角獅"
+    "chineseMobName": "黃獨角獅",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Garden of Yellow II",
+        "chinese_map_name": "黃光庭園2"
+      },
+      {
+        "map_id": null,
+        "map_name": "Stairway to the Sky I",
+        "chinese_map_name": "天空階梯1"
+      }
+    ]
   },
   {
     "mob": {
@@ -1893,7 +3576,19 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.0761904761904762
     },
-    "chineseMobName": "藍獨角獅"
+    "chineseMobName": "藍獨角獅",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Garden of Blue II",
+        "chinese_map_name": "藍光庭園2"
+      },
+      {
+        "map_id": null,
+        "map_name": "Stairway to the Sky I",
+        "chinese_map_name": "天空階梯1"
+      }
+    ]
   },
   {
     "mob": {
@@ -1921,7 +3616,34 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.084375
     },
-    "chineseMobName": "青龍"
+    "chineseMobName": "青龍",
+    "maps": [
+      {
+        "map_id": "105080000",
+        "map_name": "Drake Hunting Ground",
+        "chinese_map_name": "龍族狩獵場"
+      },
+      {
+        "map_id": "105090000",
+        "map_name": "The Tunnel That Lost Light I",
+        "chinese_map_name": "冰獨眼獸洞穴Ⅰ"
+      },
+      {
+        "map_id": "105090100",
+        "map_name": "The Tunnel That Lost Light II",
+        "chinese_map_name": "冰獨眼獸洞穴Ⅱ"
+      },
+      {
+        "map_id": "105090300",
+        "map_name": "Drake's Meal Table",
+        "chinese_map_name": "龍穴"
+      },
+      {
+        "map_id": "105090310",
+        "map_name": "Drake Area",
+        "chinese_map_name": "龍族之地"
+      }
+    ]
   },
   {
     "mob": {
@@ -1949,7 +3671,29 @@
       "maxExpHpRatio": 32,
       "expEfficiency": 0.085
     },
-    "chineseMobName": "石巨人"
+    "chineseMobName": "石巨人",
+    "maps": [
+      {
+        "map_id": "106010100",
+        "map_name": "Henesys Dungeon Entrance",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "106010102",
+        "map_name": "The Entrance of Golem's Temple",
+        "chinese_map_name": "石人寺院入口"
+      },
+      {
+        "map_id": "106010103",
+        "map_name": "Golem's Temple I",
+        "chinese_map_name": "石人寺院Ⅰ"
+      },
+      {
+        "map_id": "105040303",
+        "map_name": "Sleepy Dungeon III",
+        "chinese_map_name": "森林迷宮III"
+      }
+    ]
   },
   {
     "mob": {
@@ -1977,7 +3721,39 @@
       "maxExpHpRatio": 32,
       "expEfficiency": 0.08333333333333333
     },
-    "chineseMobName": "黑曜石巨人"
+    "chineseMobName": "黑曜石巨人",
+    "maps": [
+      {
+        "map_id": "106010102",
+        "map_name": "The Entrance of Golem's Temple",
+        "chinese_map_name": "石人寺院入口"
+      },
+      {
+        "map_id": "106010104",
+        "map_name": "Golem's Temple II",
+        "chinese_map_name": "石人寺院Ⅱ"
+      },
+      {
+        "map_id": "105040304",
+        "map_name": "Sleepy Dungeon IV",
+        "chinese_map_name": "森林迷宮IV"
+      },
+      {
+        "map_id": "105040320",
+        "map_name": "Golem's Castle Ruins",
+        "chinese_map_name": "倒塌的石巨人聖地"
+      },
+      {
+        "map_id": "105040305",
+        "map_name": "Sleepy Dungeon V",
+        "chinese_map_name": "森林迷宮V"
+      },
+      {
+        "map_id": "105040306",
+        "map_name": "The Forest of Golem",
+        "chinese_map_name": "巨人之林"
+      }
+    ]
   },
   {
     "mob": {
@@ -2005,7 +3781,24 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.08947368421052632
     },
-    "chineseMobName": "黑鱷魚"
+    "chineseMobName": "黑鱷魚",
+    "maps": [
+      {
+        "map_id": "107000200",
+        "map_name": "The Swamp of Despair III",
+        "chinese_map_name": "沼澤地Ⅲ"
+      },
+      {
+        "map_id": "107000300",
+        "map_name": "Dangerous Croco I",
+        "chinese_map_name": "鱷魚潭Ⅰ"
+      },
+      {
+        "map_id": "107000400",
+        "map_name": "Dangerous Croco II",
+        "chinese_map_name": "鱷魚潭Ⅱ"
+      }
+    ]
   },
   {
     "mob": {
@@ -2033,7 +3826,14 @@
       "maxExpHpRatio": 32,
       "expEfficiency": 0.07391304347826087
     },
-    "chineseMobName": "野狼"
+    "chineseMobName": "野狼",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Cold Field I",
+        "chinese_map_name": "Cold 原野 I"
+      }
+    ]
   },
   {
     "mob": {
@@ -2061,7 +3861,14 @@
       "maxExpHpRatio": 32,
       "expEfficiency": 0.08181818181818182
     },
-    "chineseMobName": "黑色小雪球"
+    "chineseMobName": "黑色小雪球",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Watch Out for Icy Path II",
+        "chinese_map_name": "Watch Out for Icy 小徑 II"
+      }
+    ]
   },
   {
     "mob": {
@@ -2089,7 +3896,8 @@
       "maxExpHpRatio": 32,
       "expEfficiency": 0
     },
-    "chineseMobName": "黑色小雪球"
+    "chineseMobName": "黑色小雪球",
+    "maps": []
   },
   {
     "mob": {
@@ -2117,7 +3925,29 @@
       "maxExpHpRatio": 32,
       "expEfficiency": 0.08444444444444445
     },
-    "chineseMobName": "殭屍"
+    "chineseMobName": "殭屍",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Forest of Dead Trees I",
+        "chinese_map_name": "死亡森林1"
+      },
+      {
+        "map_id": null,
+        "map_name": "Forest of Dead Trees II",
+        "chinese_map_name": "死亡森林2"
+      },
+      {
+        "map_id": null,
+        "map_name": "Forest of Dead Trees III",
+        "chinese_map_name": "死亡森林3"
+      },
+      {
+        "map_id": null,
+        "map_name": "Forest of Dead Trees IV",
+        "chinese_map_name": "死亡森林4"
+      }
+    ]
   },
   {
     "mob": {
@@ -2145,7 +3975,14 @@
       "maxExpHpRatio": 32,
       "expEfficiency": 0.08444444444444445
     },
-    "chineseMobName": "礦山殭屍"
+    "chineseMobName": "礦山殭屍",
+    "maps": [
+      {
+        "map_id": "103000202",
+        "map_name": "Line 2 <Area 3>",
+        "chinese_map_name": "地鐵二號線[地區03]"
+      }
+    ]
   },
   {
     "mob": {
@@ -2173,7 +4010,14 @@
       "maxExpHpRatio": 32,
       "expEfficiency": 0.07586206896551724
     },
-    "chineseMobName": "白狼"
+    "chineseMobName": "白狼",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Cold Field II",
+        "chinese_map_name": "Cold 原野 II"
+      }
+    ]
   },
   {
     "mob": {
@@ -2201,7 +4045,29 @@
       "maxExpHpRatio": 32,
       "expEfficiency": 0.07
     },
-    "chineseMobName": "混種石巨人"
+    "chineseMobName": "混種石巨人",
+    "maps": [
+      {
+        "map_id": "106010102",
+        "map_name": "The Entrance of Golem's Temple",
+        "chinese_map_name": "石人寺院入口"
+      },
+      {
+        "map_id": "106010105",
+        "map_name": "Golem's Temple III",
+        "chinese_map_name": "石人寺院Ⅲ"
+      },
+      {
+        "map_id": "105040305",
+        "map_name": "Sleepy Dungeon V",
+        "chinese_map_name": "森林迷宮V"
+      },
+      {
+        "map_id": "105040306",
+        "map_name": "The Forest of Golem",
+        "chinese_map_name": "巨人之林"
+      }
+    ]
   },
   {
     "mob": {
@@ -2229,7 +4095,29 @@
       "maxExpHpRatio": 32,
       "expEfficiency": 0.08260869565217391
     },
-    "chineseMobName": "骷髏士兵"
+    "chineseMobName": "骷髏士兵",
+    "maps": [
+      {
+        "map_id": "101030110",
+        "map_name": "Camp 1",
+        "chinese_map_name": "第1軍營"
+      },
+      {
+        "map_id": "101030107",
+        "map_name": "Remains <Tomb> III",
+        "chinese_map_name": "遺跡之墓Ⅲ"
+      },
+      {
+        "map_id": "101030111",
+        "map_name": "Camp 2",
+        "chinese_map_name": "第2軍營"
+      },
+      {
+        "map_id": "101030108",
+        "map_name": "Remains <Tomb> IV",
+        "chinese_map_name": "遺跡之墓Ⅳ"
+      }
+    ]
   },
   {
     "mob": {
@@ -2262,7 +4150,19 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.04230769230769231
     },
-    "chineseMobName": "冰之混種石巨人"
+    "chineseMobName": "冰之混種石巨人",
+    "maps": [
+      {
+        "map_id": "106010107",
+        "map_name": "Golem's Temple V",
+        "chinese_map_name": ""
+      },
+      {
+        "map_id": "105090500",
+        "map_name": "Sanctuary Entrance I",
+        "chinese_map_name": "寺院通道Ⅰ"
+      }
+    ]
   },
   {
     "mob": {
@@ -2295,7 +4195,24 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.04230769230769231
     },
-    "chineseMobName": "火之混種石巨人"
+    "chineseMobName": "火之混種石巨人",
+    "maps": [
+      {
+        "map_id": "106010106",
+        "map_name": "Golem's Temple IV",
+        "chinese_map_name": "石人寺院Ⅳ"
+      },
+      {
+        "map_id": "106000130",
+        "map_name": "The Burnt Land IV",
+        "chinese_map_name": "火焰之地Ⅳ"
+      },
+      {
+        "map_id": "106000140",
+        "map_name": "The Burnt Land V",
+        "chinese_map_name": "火焰之地Ⅴ"
+      }
+    ]
   },
   {
     "mob": {
@@ -2323,7 +4240,14 @@
       "maxExpHpRatio": 16,
       "expEfficiency": 0.13333333333333333
     },
-    "chineseMobName": "小石球"
+    "chineseMobName": "小石球",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Orbis Tower <5th Floor>",
+        "chinese_map_name": "天空之塔&lt;5層&gt;"
+      }
+    ]
   },
   {
     "mob": {
@@ -2351,7 +4275,14 @@
       "maxExpHpRatio": 20,
       "expEfficiency": 0.12222222222222222
     },
-    "chineseMobName": "冰石球"
+    "chineseMobName": "冰石球",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Orbis Tower <2nd Floor>",
+        "chinese_map_name": "天空之塔&lt;2層&gt;"
+      }
+    ]
   },
   {
     "mob": {
@@ -2379,7 +4310,14 @@
       "maxExpHpRatio": 20,
       "expEfficiency": 0.12222222222222222
     },
-    "chineseMobName": "火石球"
+    "chineseMobName": "火石球",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Orbis Tower <3rd Floor>",
+        "chinese_map_name": "天空之塔&lt;3層&gt;"
+      }
+    ]
   },
   {
     "mob": {
@@ -2407,7 +4345,14 @@
       "maxExpHpRatio": 27,
       "expEfficiency": 0.0836734693877551
     },
-    "chineseMobName": "殭屍猴王"
+    "chineseMobName": "殭屍猴王",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Hidden Street - The Forest of Evil II",
+        "chinese_map_name": "Hidden Street - The 森林 of Evil II"
+      }
+    ]
   },
   {
     "mob": {
@@ -2435,7 +4380,14 @@
       "maxExpHpRatio": 24,
       "expEfficiency": 0.12
     },
-    "chineseMobName": "利堤"
+    "chineseMobName": "利堤",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Orbis Tower <1st Floor>",
+        "chinese_map_name": "天空之塔&lt;1層&gt;"
+      }
+    ]
   },
   {
     "mob": {
@@ -2463,7 +4415,14 @@
       "maxExpHpRatio": 24,
       "expEfficiency": 0.11818181818181818
     },
-    "chineseMobName": "黑利堤"
+    "chineseMobName": "黑利堤",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Snowy Hill",
+        "chinese_map_name": "Snowy Hill"
+      }
+    ]
   },
   {
     "mob": {
@@ -2496,7 +4455,19 @@
       "maxExpHpRatio": 32,
       "expEfficiency": 0.0875
     },
-    "chineseMobName": "巫婆"
+    "chineseMobName": "巫婆",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Hidden Street - The Forest of Evil I",
+        "chinese_map_name": "Hidden Street - The 森林 of Evil I"
+      },
+      {
+        "map_id": null,
+        "map_name": "Hidden Street - The Forest of Evil II",
+        "chinese_map_name": "Hidden Street - The 森林 of Evil II"
+      }
+    ]
   },
   {
     "mob": {
@@ -2524,7 +4495,14 @@
       "maxExpHpRatio": null,
       "expEfficiency": 0.10714285714285714
     },
-    "chineseMobName": "小企鵝王"
+    "chineseMobName": "小企鵝王",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Snowy Hill",
+        "chinese_map_name": "Snowy Hill"
+      }
+    ]
   },
   {
     "mob": {
@@ -2552,7 +4530,8 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.0051
     },
-    "chineseMobName": "厄運死神"
+    "chineseMobName": "厄運死神",
+    "maps": []
   },
   {
     "mob": {
@@ -2580,7 +4559,14 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.03397849462365592
     },
-    "chineseMobName": "冰之女巫"
+    "chineseMobName": "冰之女巫",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Icy Cold Field",
+        "chinese_map_name": "Icy Cold 原野"
+      }
+    ]
   },
   {
     "mob": {
@@ -2608,7 +4594,29 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.07333333333333333
     },
-    "chineseMobName": "赤龍"
+    "chineseMobName": "赤龍",
+    "maps": [
+      {
+        "map_id": "101030405",
+        "map_name": "East Rocky Mountain VI",
+        "chinese_map_name": "東方岩石山Ⅵ"
+      },
+      {
+        "map_id": "101030406",
+        "map_name": "East Rocky Mountain VII",
+        "chinese_map_name": "東方岩石山Ⅶ"
+      },
+      {
+        "map_id": "106000120",
+        "map_name": "The Burnt Land III",
+        "chinese_map_name": "火焰之地Ⅲ"
+      },
+      {
+        "map_id": "106000130",
+        "map_name": "The Burnt Land IV",
+        "chinese_map_name": "火焰之地Ⅳ"
+      }
+    ]
   },
   {
     "mob": {
@@ -2636,7 +4644,14 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.12
     },
-    "chineseMobName": "蘑菇王"
+    "chineseMobName": "蘑菇王",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Hidden Street - Someone Else's House",
+        "chinese_map_name": "Hidden Street - Someone Else's House"
+      }
+    ]
   },
   {
     "mob": {
@@ -2664,7 +4679,8 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.11666666666666667
     },
-    "chineseMobName": "孤單企鵝王"
+    "chineseMobName": "孤單企鵝王",
+    "maps": []
   },
   {
     "mob": {
@@ -2692,7 +4708,14 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.06111111111111111
     },
-    "chineseMobName": "企鵝王"
+    "chineseMobName": "企鵝王",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Hidden Street - The Crown-Flyer 1",
+        "chinese_map_name": "Hidden Street - The Crown-Flyer 1"
+      }
+    ]
   },
   {
     "mob": {
@@ -2720,7 +4743,14 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.052258064516129035
     },
-    "chineseMobName": "沼澤巨鱷"
+    "chineseMobName": "沼澤巨鱷",
+    "maps": [
+      {
+        "map_id": "107000300",
+        "map_name": "Dangerous Croco I",
+        "chinese_map_name": "鱷魚潭Ⅰ"
+      }
+    ]
   },
   {
     "mob": {
@@ -2748,7 +4778,24 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.08727272727272728
     },
-    "chineseMobName": "魔龍"
+    "chineseMobName": "魔龍",
+    "maps": [
+      {
+        "map_id": "105090300",
+        "map_name": "Drake's Meal Table",
+        "chinese_map_name": "龍穴"
+      },
+      {
+        "map_id": "105090301",
+        "map_name": "Wild Kargo Area I",
+        "chinese_map_name": "魔龍領土"
+      },
+      {
+        "map_id": "105090302",
+        "map_name": "Wild Kargo Area II",
+        "chinese_map_name": ""
+      }
+    ]
   },
   {
     "mob": {
@@ -2776,7 +4823,14 @@
       "maxExpHpRatio": 49,
       "expEfficiency": 0.1794871794871795
     },
-    "chineseMobName": "黑企鵝王"
+    "chineseMobName": "黑企鵝王",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Icy Cold Field",
+        "chinese_map_name": "Icy Cold 原野"
+      }
+    ]
   },
   {
     "mob": {
@@ -2804,7 +4858,8 @@
       "maxExpHpRatio": null,
       "expEfficiency": 0.1794871794871795
     },
-    "chineseMobName": "孤單黑企鵝王"
+    "chineseMobName": "孤單黑企鵝王",
+    "maps": []
   },
   {
     "mob": {
@@ -2832,7 +4887,14 @@
       "maxExpHpRatio": 49,
       "expEfficiency": 0.06447368421052632
     },
-    "chineseMobName": "幼黑格里芬"
+    "chineseMobName": "幼黑格里芬",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Stairway to the Sky II",
+        "chinese_map_name": "天空階梯2"
+      }
+    ]
   },
   {
     "mob": {
@@ -2860,7 +4922,29 @@
       "maxExpHpRatio": 49,
       "expEfficiency": 0.06493506493506493
     },
-    "chineseMobName": "冰龍"
+    "chineseMobName": "冰龍",
+    "maps": [
+      {
+        "map_id": "105090300",
+        "map_name": "Drake's Meal Table",
+        "chinese_map_name": "龍穴"
+      },
+      {
+        "map_id": "105090310",
+        "map_name": "Drake Area",
+        "chinese_map_name": "龍族之地"
+      },
+      {
+        "map_id": "105090311",
+        "map_name": "Cold Cradle",
+        "chinese_map_name": "冰冷的搖籃"
+      },
+      {
+        "map_id": "105090320",
+        "map_name": "Drake's Blue Cave",
+        "chinese_map_name": "龍族的藍色洞穴"
+      }
+    ]
   },
   {
     "mob": {
@@ -2888,7 +4972,19 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.040769230769230766
     },
-    "chineseMobName": "黑龍"
+    "chineseMobName": "黑龍",
+    "maps": [
+      {
+        "map_id": "105090311",
+        "map_name": "Cold Cradle",
+        "chinese_map_name": "冰冷的搖籃"
+      },
+      {
+        "map_id": "105090312",
+        "map_name": "Drake's Nest",
+        "chinese_map_name": "龍族之巢"
+      }
+    ]
   },
   {
     "mob": {
@@ -2916,7 +5012,34 @@
       "maxExpHpRatio": 49,
       "expEfficiency": 0.064
     },
-    "chineseMobName": "骷髏士官"
+    "chineseMobName": "骷髏士官",
+    "maps": [
+      {
+        "map_id": "101030110",
+        "map_name": "Camp 1",
+        "chinese_map_name": "第1軍營"
+      },
+      {
+        "map_id": "101030107",
+        "map_name": "Remains <Tomb> III",
+        "chinese_map_name": "遺跡之墓Ⅲ"
+      },
+      {
+        "map_id": "101030111",
+        "map_name": "Camp 2",
+        "chinese_map_name": "第2軍營"
+      },
+      {
+        "map_id": "101030108",
+        "map_name": "Remains <Tomb> IV",
+        "chinese_map_name": "遺跡之墓Ⅳ"
+      },
+      {
+        "map_id": "101030112",
+        "map_name": "Camp 3",
+        "chinese_map_name": "第3軍營"
+      }
+    ]
   },
   {
     "mob": {
@@ -2944,7 +5067,24 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.046363636363636364
     },
-    "chineseMobName": "雪吉拉"
+    "chineseMobName": "雪吉拉",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Ice Valley I",
+        "chinese_map_name": "Ice Valley I"
+      },
+      {
+        "map_id": null,
+        "map_name": "Hidden Street - Valley of Snowman",
+        "chinese_map_name": "Hidden Street - Valley of Snowman"
+      },
+      {
+        "map_id": null,
+        "map_name": "Ice Valley II",
+        "chinese_map_name": "Ice Valley II"
+      }
+    ]
   },
   {
     "mob": {
@@ -2972,7 +5112,8 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.07090909090909091
     },
-    "chineseMobName": "變形雪吉拉"
+    "chineseMobName": "變形雪吉拉",
+    "maps": []
   },
   {
     "mob": {
@@ -3000,7 +5141,8 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.08272727272727273
     },
-    "chineseMobName": "孤單雪吉拉"
+    "chineseMobName": "孤單雪吉拉",
+    "maps": []
   },
   {
     "mob": {
@@ -3028,7 +5170,14 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.08571428571428572
     },
-    "chineseMobName": "殭屍蘑菇王"
+    "chineseMobName": "殭屍蘑菇王",
+    "maps": [
+      {
+        "map_id": "105070002",
+        "map_name": "The Grave of Mushmom",
+        "chinese_map_name": "蘑菇王之墓"
+      }
+    ]
   },
   {
     "mob": {
@@ -3056,7 +5205,14 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.040769230769230766
     },
-    "chineseMobName": "黑吉拉"
+    "chineseMobName": "黑吉拉",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Sharp Cliff I",
+        "chinese_map_name": "尖銳懸崖1"
+      }
+    ]
   },
   {
     "mob": {
@@ -3084,7 +5240,8 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.06846153846153846
     },
-    "chineseMobName": "變形黑吉拉"
+    "chineseMobName": "變形黑吉拉",
+    "maps": []
   },
   {
     "mob": {
@@ -3112,7 +5269,8 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.11
     },
-    "chineseMobName": "孤單黑吉拉"
+    "chineseMobName": "孤單黑吉拉",
+    "maps": []
   },
   {
     "mob": {
@@ -3140,7 +5298,24 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.04129032258064516
     },
-    "chineseMobName": "黑格里芬"
+    "chineseMobName": "黑格里芬",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Stairway to the Sky II",
+        "chinese_map_name": "天空階梯2"
+      },
+      {
+        "map_id": null,
+        "map_name": "Garden of Darkness I",
+        "chinese_map_name": "黑光庭園1"
+      },
+      {
+        "map_id": null,
+        "map_name": "Garden of Darkness II",
+        "chinese_map_name": "黑光庭園2"
+      }
+    ]
   },
   {
     "mob": {
@@ -3168,7 +5343,14 @@
       "maxExpHpRatio": null,
       "expEfficiency": 0.03881578947368421
     },
-    "chineseMobName": "地獄獵犬"
+    "chineseMobName": "地獄獵犬",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "The Cave of Trial II",
+        "chinese_map_name": "試煉洞穴2"
+      }
+    ]
   },
   {
     "mob": {
@@ -3196,7 +5378,14 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.036
     },
-    "chineseMobName": "月牙牛魔王"
+    "chineseMobName": "月牙牛魔王",
+    "maps": [
+      {
+        "map_id": "105090600",
+        "map_name": "Sanctuary Entrance II",
+        "chinese_map_name": "寺院通道Ⅱ"
+      }
+    ]
   },
   {
     "mob": {
@@ -3224,7 +5413,14 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.03888888888888889
     },
-    "chineseMobName": "長槍牛魔王"
+    "chineseMobName": "長槍牛魔王",
+    "maps": [
+      {
+        "map_id": "105090700",
+        "map_name": "Sanctuary Entrance III",
+        "chinese_map_name": "寺院通道Ⅲ"
+      }
+    ]
   },
   {
     "mob": {
@@ -3252,7 +5448,8 @@
       "maxExpHpRatio": 51,
       "expEfficiency": 0
     },
-    "chineseMobName": "雪吉拉戰車"
+    "chineseMobName": "雪吉拉戰車",
+    "maps": []
   },
   {
     "mob": {
@@ -3280,7 +5477,24 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.041176470588235294
     },
-    "chineseMobName": "骷髏指揮官"
+    "chineseMobName": "骷髏指揮官",
+    "maps": [
+      {
+        "map_id": "101030108",
+        "map_name": "Remains <Tomb> IV",
+        "chinese_map_name": "遺跡之墓Ⅳ"
+      },
+      {
+        "map_id": "101030112",
+        "map_name": "Camp 3",
+        "chinese_map_name": "第3軍營"
+      },
+      {
+        "map_id": "101030109",
+        "map_name": "Remains <Cliff>",
+        "chinese_map_name": "遺跡之峭壁"
+      }
+    ]
   },
   {
     "mob": {
@@ -3308,7 +5522,24 @@
       "maxExpHpRatio": 55,
       "expEfficiency": 0.04375
     },
-    "chineseMobName": "狼人"
+    "chineseMobName": "狼人",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Wolf Territory I",
+        "chinese_map_name": "惡狼領域1"
+      },
+      {
+        "map_id": null,
+        "map_name": "Wolf Territory II",
+        "chinese_map_name": "惡狼領域2"
+      },
+      {
+        "map_id": null,
+        "map_name": "Wolf Territory III",
+        "chinese_map_name": "惡狼領域3"
+      }
+    ]
   },
   {
     "mob": {
@@ -3336,7 +5567,14 @@
       "maxExpHpRatio": 51,
       "expEfficiency": 0.08
     },
-    "chineseMobName": "巴洛古"
+    "chineseMobName": "巴洛古",
+    "maps": [
+      {
+        "map_id": "105090900",
+        "map_name": "The Cursed Sanctuary",
+        "chinese_map_name": "被詛咒的寺院"
+      }
+    ]
   },
   {
     "mob": {
@@ -3364,7 +5602,19 @@
       "maxExpHpRatio": 51,
       "expEfficiency": 0.06296296296296296
     },
-    "chineseMobName": "白狼人"
+    "chineseMobName": "白狼人",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Wolf Territory III",
+        "chinese_map_name": "惡狼領域3"
+      },
+      {
+        "map_id": null,
+        "map_name": "Wolf Territory IV",
+        "chinese_map_name": "惡狼領域4"
+      }
+    ]
   },
   {
     "mob": {
@@ -3392,7 +5642,8 @@
       "maxExpHpRatio": 31,
       "expEfficiency": 0
     },
-    "chineseMobName": "黑吉拉戰車"
+    "chineseMobName": "黑吉拉戰車",
+    "maps": []
   },
   {
     "mob": {
@@ -3420,7 +5671,19 @@
       "maxExpHpRatio": null,
       "expEfficiency": 0.08
     },
-    "chineseMobName": "煉獄獵犬"
+    "chineseMobName": "煉獄獵犬",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Hidden Street - Cave Within the Cave",
+        "chinese_map_name": "Hidden Street - 洞穴 Within the 洞穴"
+      },
+      {
+        "map_id": null,
+        "map_name": "The Cave of Trial III",
+        "chinese_map_name": "試煉洞穴3"
+      }
+    ]
   },
   {
     "mob": {
@@ -3453,7 +5716,19 @@
       "maxExpHpRatio": 16,
       "expEfficiency": 0.22
     },
-    "chineseMobName": "紅蝙蝠"
+    "chineseMobName": "紅蝙蝠",
+    "maps": [
+      {
+        "map_id": "103000103",
+        "map_name": "Line 1 <Area 2>",
+        "chinese_map_name": "地鐵一號線[地區02]"
+      },
+      {
+        "map_id": "105060000",
+        "map_name": "Dangerous Steam",
+        "chinese_map_name": "蝙蝠洞"
+      }
+    ]
   },
   {
     "mob": {
@@ -3481,7 +5756,8 @@
       "maxExpHpRatio": 28,
       "expEfficiency": 0.07
     },
-    "chineseMobName": "地獄巴洛古"
+    "chineseMobName": "地獄巴洛古",
+    "maps": []
   },
   {
     "mob": {
@@ -3509,7 +5785,14 @@
       "maxExpHpRatio": 31,
       "expEfficiency": 0.06436781609195402
     },
-    "chineseMobName": "艾利傑"
+    "chineseMobName": "艾利傑",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Stairway to the Sky II",
+        "chinese_map_name": "天空階梯2"
+      }
+    ]
   },
   {
     "mob": {
@@ -3537,7 +5820,14 @@
       "maxExpHpRatio": null,
       "expEfficiency": 0.08666666666666667
     },
-    "chineseMobName": "雪毛怪人"
+    "chineseMobName": "雪毛怪人",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Hidden Street - Valley of Snowman",
+        "chinese_map_name": "Hidden Street - Valley of Snowman"
+      }
+    ]
   },
   {
     "mob": {
@@ -3565,7 +5855,14 @@
       "maxExpHpRatio": 8,
       "expEfficiency": 0.25
     },
-    "chineseMobName": null
+    "chineseMobName": null,
+    "maps": [
+      {
+        "map_id": "30000",
+        "map_name": "East Entrance to Mushroom Town",
+        "chinese_map_name": ""
+      }
+    ]
   },
   {
     "mob": {
@@ -3593,7 +5890,14 @@
       "maxExpHpRatio": null,
       "expEfficiency": 0.072
     },
-    "chineseMobName": "鬼精靈"
+    "chineseMobName": "鬼精靈",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Cloud Park VI",
+        "chinese_map_name": "雲彩公園6"
+      }
+    ]
   },
   {
     "mob": {
@@ -3626,7 +5930,14 @@
       "maxExpHpRatio": 43,
       "expEfficiency": 0.208
     },
-    "chineseMobName": "矮胖蝸牛"
+    "chineseMobName": "矮胖蝸牛",
+    "maps": [
+      {
+        "map_id": "1010004",
+        "map_name": "Snail Field of Flowers",
+        "chinese_map_name": "嫩寶花園"
+      }
+    ]
   },
   {
     "mob": {
@@ -3659,7 +5970,14 @@
       "maxExpHpRatio": 24,
       "expEfficiency": 1.12
     },
-    "chineseMobName": "海盜領主"
+    "chineseMobName": "海盜領主",
+    "maps": [
+      {
+        "map_id": "60002",
+        "map_name": "Pirate's Hideout",
+        "chinese_map_name": ""
+      }
+    ]
   },
   {
     "mob": {
@@ -3687,7 +6005,14 @@
       "maxExpHpRatio": null,
       "expEfficiency": 0.09297297297297297
     },
-    "chineseMobName": "冰烏龜"
+    "chineseMobName": "冰烏龜",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Hidden Street - Chill Field",
+        "chinese_map_name": "Hidden Street - Chill 原野"
+      }
+    ]
   },
   {
     "mob": {
@@ -3720,7 +6045,14 @@
       "maxExpHpRatio": 51,
       "expEfficiency": 0.06666666666666667
     },
-    "chineseMobName": "盾牌牛魔王"
+    "chineseMobName": "盾牌牛魔王",
+    "maps": [
+      {
+        "map_id": "105090800",
+        "map_name": "Sanctuary Entrance IV",
+        "chinese_map_name": "寺院通道Ⅳ"
+      }
+    ]
   },
   {
     "mob": {
@@ -3747,6 +6079,13 @@
       "maxExpHpRatio": null,
       "expEfficiency": 0.08620689655172414
     },
-    "chineseMobName": "雪球企鵝王"
+    "chineseMobName": "雪球企鵝王",
+    "maps": [
+      {
+        "map_id": null,
+        "map_name": "Hidden Street - The Crown-Flyer 2",
+        "chinese_map_name": "Hidden Street - The Crown-Flyer 2"
+      }
+    ]
   }
 ]
