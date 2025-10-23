@@ -23,6 +23,7 @@ import { BugReportModal } from '@/components/BugReportModal'
 import { ClearConfirmModal } from '@/components/ClearConfirmModal'
 import { GachaMachineModal } from '@/components/GachaMachineModal'
 import { AccuracyCalculatorModal } from '@/components/AccuracyCalculatorModal'
+import { GameCommandsModal } from '@/components/GameCommandsModal'
 import { LanguageToggle } from '@/components/LanguageToggle'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Toast } from '@/components/Toast'
@@ -55,6 +56,9 @@ export default function Home() {
 
   // 命中率計算器 Modal 狀態
   const [isAccuracyCalcOpen, setIsAccuracyCalcOpen] = useState(false)
+
+  // 遊戲指令 Modal 狀態
+  const [isGameCommandsOpen, setIsGameCommandsOpen] = useState(false)
 
   // 計算已啟用的進階篩選數量
   const advancedFilterCount = [
@@ -545,6 +549,12 @@ export default function Home() {
         onClose={() => setIsAccuracyCalcOpen(false)}
       />
 
+      {/* Game Commands Modal */}
+      <GameCommandsModal
+        isOpen={isGameCommandsOpen}
+        onClose={() => setIsGameCommandsOpen(false)}
+      />
+
       {/* 浮動轉蛋機按鈕 */}
       <button
         onClick={() => modals.openGachaModal()}
@@ -570,11 +580,30 @@ export default function Home() {
         </div>
       </button>
 
+      {/* 浮動遊戲指令按鈕 */}
+      <button
+        onClick={() => setIsGameCommandsOpen(true)}
+        className="fixed bottom-36 sm:bottom-38 left-4 sm:left-6 z-40 p-3 sm:p-4 bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        aria-label={t('commands.button')}
+      >
+        <div className="flex items-center gap-2">
+          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+            />
+          </svg>
+          <span className="text-sm font-medium hidden group-hover:inline-block lg:inline-block">{t('commands.button')}</span>
+        </div>
+      </button>
+
       {/* 浮動命中率計算器按鈕 */}
       <button
         onClick={() => setIsAccuracyCalcOpen(true)}
-        className="fixed bottom-20 sm:bottom-24 left-4 sm:left-6 z-40 p-3 sm:p-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
-        aria-label="命中率計算器"
+        className="fixed bottom-20 sm:bottom-22 left-4 sm:left-6 z-40 p-3 sm:p-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        aria-label={t('accuracy.button')}
       >
         <div className="flex items-center gap-2">
           <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -582,7 +611,7 @@ export default function Home() {
             <circle cx="12" cy="12" r="6" strokeWidth="2"/>
             <circle cx="12" cy="12" r="2" fill="currentColor"/>
           </svg>
-          <span className="text-sm font-medium hidden group-hover:inline-block lg:inline-block">命中率</span>
+          <span className="text-sm font-medium hidden group-hover:inline-block lg:inline-block">{t('accuracy.buttonShort')}</span>
         </div>
       </button>
 
