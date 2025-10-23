@@ -8,7 +8,7 @@ import { MonsterLocationsCard } from './MonsterLocationsCard'
 import { clientLogger } from '@/lib/logger'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { useLazyMobInfo, useLazyMapMonsterData } from '@/hooks/useLazyData'
+import { useLazyMobInfo } from '@/hooks/useLazyData'
 
 interface MonsterModalProps {
   isOpen: boolean
@@ -60,12 +60,6 @@ export function MonsterModal({
     loadData: loadMobInfo,
   } = useLazyMobInfo()
 
-  // 懶加載地圖怪物資料
-  const {
-    monsterLocationsMap,
-    loadData: loadMapMonsterData,
-  } = useLazyMapMonsterData()
-
   // 語言切換函數
   const toggleLanguage = () => {
     const newLanguage: Language = language === 'zh-TW' ? 'en' : 'zh-TW'
@@ -106,9 +100,8 @@ export function MonsterModal({
     )
   }, [monsterId, mobInfoData])
 
-  // 查找怪物出沒地圖
+  // 查找怪物出沒地圖（僅使用 mobInfo.maps 資料）
   const monsterLocations = useMemo(() => {
-    // 優先使用 mobInfo.maps 資料（包含中文地圖名稱）
     if (mobInfo?.maps && mobInfo.maps.length > 0) {
       return mobInfo.maps.map(map => ({
         name: map.map_name,
@@ -120,19 +113,15 @@ export function MonsterModal({
         regionCode: ''
       }))
     }
+    return undefined
+  }, [mobInfo])
 
-    // Fallback: 使用 map-monster-database 資料
-    if (!monsterData || !monsterLocationsMap) return undefined
-    return monsterLocationsMap.get(monsterData.mobName)
-  }, [mobInfo, monsterData, monsterLocationsMap])
-
-  // 當 Modal 開啟時載入怪物資訊資料和地圖資料
+  // 當 Modal 開啟時載入怪物資訊資料
   useEffect(() => {
     if (isOpen) {
       loadMobInfo()
-      loadMapMonsterData()
     }
-  }, [isOpen, loadMobInfo, loadMapMonsterData])
+  }, [isOpen, loadMobInfo])
 
   // ESC 鍵關閉 modal
   useEffect(() => {

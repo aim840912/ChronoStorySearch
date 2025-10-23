@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useCallback, useMemo } from 'react'
-import type { ItemAttributes, MobInfo, MapMonsterDatabase, MapInfo } from '@/types'
+import type { ItemAttributes, MobInfo } from '@/types'
 import { clientLogger } from '@/lib/logger'
 
 /**
@@ -131,83 +131,3 @@ export function useLazyMobInfo() {
   }
 }
 
-/**
- * 懶加載地圖怪物資料 Hook
- *
- * 使用情境：
- * - 開啟 MonsterModal 時
- *
- * 優化效果：減少 116KB 初始 Bundle 大小
- */
-export function useLazyMapMonsterData() {
-  const [data, setData] = useState<MapMonsterDatabase | null>(null)
-  const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState<Error | null>(null)
-
-  const loadData = useCallback(async () => {
-    // 如果已經載入過，直接返回
-    if (data !== null) return
-
-    // 如果正在載入中，不重複載入
-    if (isLoading) return
-
-    try {
-      setIsLoading(true)
-      setError(null)
-      clientLogger.info('開始懶加載地圖怪物資料...')
-
-      // 動態 import JSON 資料
-      const dataModule = await import('@/../data/map-monster-database.json')
-      const mapMonsterData = dataModule.default as MapMonsterDatabase
-
-      setData(mapMonsterData)
-      clientLogger.info(`成功載入 ${mapMonsterData.regions.length} 個區域的地圖怪物資料`)
-    } catch (err) {
-      const error = err instanceof Error ? err : new Error('載入地圖怪物資料失敗')
-      setError(error)
-      clientLogger.error('載入地圖怪物資料失敗', err)
-    } finally {
-      setIsLoading(false)
-    }
-  }, [data, isLoading])
-
-  // 建立怪物位置索引 Map (怪物名稱 -> MapInfo[])
-  // 用於快速查找指定怪物出現在哪些地圖
-  const monsterLocationsMap = useMemo(() => {
-    if (!data) return new Map<string, Array<MapInfo & { regionName: string; regionCode: string }>>()
-
-    const locationsMap = new Map<string, Array<MapInfo & { regionName: string; regionCode: string }>>()
-
-    // 遍歷所有區域和地圖
-    data.regions.forEach((region) => {
-      region.maps.forEach((map) => {
-        // 遍歷地圖中的所有怪物
-        map.monsters.forEach((monster) => {
-          const monsterName = monster.name
-
-          // 獲取或初始化該怪物的地圖列表
-          if (!locationsMap.has(monsterName)) {
-            locationsMap.set(monsterName, [])
-          }
-
-          // 將地圖資訊加入該怪物的位置列表（包含區域資訊）
-          locationsMap.get(monsterName)!.push({
-            ...map,
-            regionName: region.name.replace(/\s*\([A-Z]\)$/, ''),
-            regionCode: region.code,
-          })
-        })
-      })
-    })
-
-    return locationsMap
-  }, [data])
-
-  return {
-    data,
-    monsterLocationsMap,
-    isLoading,
-    error,
-    loadData,
-  }
-}

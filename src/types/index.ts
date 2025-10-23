@@ -221,28 +221,6 @@ export interface MapInfo {
   links: string[]         // 連結地圖代碼列表
 }
 
-// 區域資訊
-export interface Region {
-  name: string            // 區域名稱（如：Maple Road - Mushroom Town (A)）
-  code: string            // 區域代碼（如：A）
-  maps: MapInfo[]         // 地圖列表
-}
-
-// 地圖怪物資料庫元資料
-export interface MapMonsterMetadata {
-  source: string          // 資料來源
-  sourceUrl: string       // 資料來源 URL
-  generatedAt: string     // 生成時間
-  totalRegions: number    // 總區域數
-  totalMaps: number       // 總地圖數
-  processedSheets: number // 處理的工作表數
-}
-
-// 地圖怪物資料庫（完整資料結構）
-export interface MapMonsterDatabase {
-  metadata: MapMonsterMetadata
-  regions: Region[]
-}
 
 // 物品屬性資料類型
 export interface ItemRequirements {
