@@ -119,7 +119,8 @@
       "Bash(~/rclone ls r2:maplestory-images/images/items)",
       "Bash(~/rclone delete r2:maplestory-images/images/items --include \"*Zone.Identifier\" --verbose)",
       "Bash(ps:*)",
-      "WebFetch(domain:mrsoupman.github.io)"
+      "WebFetch(domain:mrsoupman.github.io)",
+      "Bash(npx wrangler:*)"
     ],
     "deny": [],
     "ask": [

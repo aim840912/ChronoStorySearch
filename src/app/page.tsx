@@ -404,6 +404,7 @@ export default function Home() {
         isBugReportModalOpen={modals.isBugReportModalOpen}
         isClearModalOpen={modals.isClearModalOpen}
         isGachaModalOpen={modals.isGachaModalOpen}
+        isMerchantShopModalOpen={modals.isMerchantShopModalOpen}
         selectedMonsterId={modals.selectedMonsterId ?? undefined}
         selectedMonsterName={modals.selectedMonsterName}
         selectedItemId={modals.selectedItemId}
@@ -416,9 +417,11 @@ export default function Home() {
         closeBugReportModal={modals.closeBugReportModal}
         closeClearModal={modals.closeClearModal}
         closeGachaModal={modals.closeGachaModal}
+        closeMerchantShopModal={modals.closeMerchantShopModal}
         goBack={modals.goBack}
         openGachaModal={modals.openGachaModal}
         openBugReportModal={modals.openBugReportModal}
+        openMerchantShopModal={modals.openMerchantShopModal}
         allDrops={allDrops}
         gachaMachines={gachaMachines}
         itemAttributesMap={itemAttributesMap}

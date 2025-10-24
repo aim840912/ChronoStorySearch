@@ -5,7 +5,7 @@ import type { ClearModalType } from '@/types'
 /**
  * Modal 類型定義
  */
-type ModalType = 'monster' | 'item' | 'gacha' | 'bug' | 'clear'
+type ModalType = 'monster' | 'item' | 'gacha' | 'bug' | 'clear' | 'merchant'
 
 /**
  * Monster Modal 資料結構
@@ -171,6 +171,17 @@ export function useModalManager() {
     setHistory({ previous: null })
   }, [])
 
+  // 開啟 Merchant Shop Modal
+  const openMerchantShopModal = useCallback(() => {
+    setModal({ type: 'merchant', data: null })
+  }, [])
+
+  // 關閉 Merchant Shop Modal
+  const closeMerchantShopModal = useCallback(() => {
+    setModal({ type: null, data: null })
+    setHistory({ previous: null })
+  }, [])
+
   // 用於 URL 參數處理的 setters（向後相容）
   const setSelectedMonsterId = useCallback((mobId: number | null) => {
     if (mobId !== null && modal.type === 'monster') {
@@ -283,5 +294,10 @@ export function useModalManager() {
     selectedGachaMachineId: gachaData?.machineId,
     openGachaModal,
     closeGachaModal,
+
+    // Merchant Shop Modal
+    isMerchantShopModalOpen: modal.type === 'merchant',
+    openMerchantShopModal,
+    closeMerchantShopModal,
   }
 }

@@ -102,7 +102,7 @@ export function GameCommandsModal({ isOpen, onClose }: GameCommandsModalProps) {
         </div>
 
         {/* Commands List */}
-        <div className="px-3 py-3 sm:px-6 sm:py-4 overflow-y-auto">
+        <div className="px-3 py-3 sm:px-6 sm:py-4 overflow-y-auto scrollbar-hide">
           <div className="space-y-1.5 sm:space-y-2">
             {GAME_COMMANDS.map((cmd, index) => (
               <div

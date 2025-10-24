@@ -354,5 +354,15 @@
   "commands.mutesmegasEU": "Mute EU server megaphones",
   "commands.mutesmegasASIA1": "Mute ASIA1 server megaphones",
   "commands.mutesmegasASIA2": "Mute ASIA2 server megaphones",
-  "commands.mswavatar": "Allows you to wear your MSW Avatar (client-side only)"
+  "commands.mswavatar": "Allows you to wear your MSW Avatar (client-side only)",
+  "merchant.button": "Merchant Shop",
+  "merchant.title": "Merchant Shop - 100% Drops",
+  "merchant.description": "These scrolls have 100% drop rate at specific maps",
+  "merchant.mapTitle": "Map",
+  "merchant.itemCount": "{count} items",
+  "merchant.clickToExpand": "Click to view items",
+  "merchant.close": "Close",
+  "merchant.total": "Total",
+  "merchant.mapCount": "maps",
+  "merchant.itemUnit": "items"
 }

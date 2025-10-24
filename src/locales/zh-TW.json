@@ -354,5 +354,15 @@
   "commands.mutesmegasEU": "靜音歐洲伺服器擴音器",
   "commands.mutesmegasASIA1": "靜音亞洲1伺服器擴音器",
   "commands.mutesmegasASIA2": "靜音亞洲2伺服器擴音器",
-  "commands.mswavatar": "顯示 MSW 造型（僅自己可見）"
+  "commands.mswavatar": "顯示 MSW 造型（僅自己可見）",
+  "merchant.button": "商人專賣",
+  "merchant.title": "商人專賣 - 100% 掉落",
+  "merchant.description": "這些卷軸可以在特定地圖 100% 掉落取得",
+  "merchant.mapTitle": "地圖",
+  "merchant.itemCount": "{count} 個物品",
+  "merchant.clickToExpand": "點擊查看物品",
+  "merchant.close": "關閉",
+  "merchant.total": "總計",
+  "merchant.mapCount": "個地圖",
+  "merchant.itemUnit": "個物品"
 }

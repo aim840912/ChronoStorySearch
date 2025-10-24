@@ -219,6 +219,34 @@ export interface MobInfo {
   maps?: MobMapInfo[]  // 怪物出沒地圖列表（可選）
 }
 
+// mob-maps.json 相關類型
+// 地圖中的怪物資料（來自 mob-maps.json）
+export interface MobMapMonster {
+  mob_id: string
+  mob_name: string
+  chineseMobName: string
+}
+
+// 單個地圖的資料（來自 mob-maps.json）
+export interface MobMapEntry {
+  map_id: string
+  map_name: string
+  chinese_map_name: string
+  monsters: MobMapMonster[]
+}
+
+// mob-maps.json 頂層結構
+export interface MobMapsData {
+  metadata: {
+    source: string
+    generatedAt: string
+    totalMaps: number
+    totalMobMapEntries: number
+    description: string
+  }
+  maps: MobMapEntry[]
+}
+
 // 地圖怪物資料庫相關類型
 // 地圖中的怪物出現資訊
 export interface MonsterSpawn {
