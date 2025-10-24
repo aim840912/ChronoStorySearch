@@ -4,7 +4,7 @@
  */
 
 import type {
-  DropItem,
+  DropsEssential,
   AdvancedFilterOptions,
   ItemAttributes,
   ItemAttributesEssential,
@@ -21,7 +21,7 @@ type FilterableItem = ItemAttributes | ItemAttributesEssential
  * @returns 是否符合篩選
  */
 export function matchesDataTypeFilter(
-  _drop: DropItem,
+  _drop: DropsEssential,
   dataType: AdvancedFilterOptions['dataType']
 ): boolean {
   // 全部資料、怪物、物品篩選：顯示所有掉落資料
@@ -234,10 +234,10 @@ export function matchesMonsterLevelRangeFilter(
  * @returns 篩選後的掉落資料陣列
  */
 export function applyAdvancedFilter(
-  drops: DropItem[],
+  drops: DropsEssential[],
   filter: AdvancedFilterOptions,
   itemAttributes: Map<number, FilterableItem>
-): DropItem[] {
+): DropsEssential[] {
   // 未啟用進階篩選，直接返回原資料
   if (!filter.enabled) {
     return drops

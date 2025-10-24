@@ -1,4 +1,4 @@
-// 掉落資料類型
+// 掉落資料類型（完整版，包含掉落機率和數量）
 export interface DropItem {
   mobId: number
   mobName: string
@@ -7,6 +7,21 @@ export interface DropItem {
   itemName: string
   chineseItemName?: string | null // 中文物品名稱（可能為 null）
   chance: number // 實際機率 (0-1)
+  minQty: number
+  maxQty: number
+}
+
+// 掉落 Essential 資料類型（與 DropItem 相同，用於優化載入）
+// Note: 由於 MonsterDropCard 和 ItemModal 都需要顯示掉落率，
+// Essential 需包含完整資訊。優化主要來自 JSON 壓縮和按需載入策略。
+export interface DropsEssential {
+  mobId: number
+  mobName: string
+  chineseMobName?: string | null
+  itemId: number
+  itemName: string
+  chineseItemName?: string | null
+  chance: number
   minQty: number
   maxQty: number
 }

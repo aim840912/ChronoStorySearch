@@ -1,0 +1,200 @@
+[
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 0,
+    "itemName": "Meso",
+    "chance": 0.4,
+    "minQty": 33,
+    "maxQty": 49,
+    "chineseItemName": "楓幣",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 1002027,
+    "itemName": "Steel Sharp Helm",
+    "chance": 0.001287,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "鐵製尖頭具",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 1041021,
+    "itemName": "Brown Lamelle",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "褐十字軍甲",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 1041031,
+    "itemName": "Purple Split",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紫伽藍",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 1050005,
+    "itemName": "Blue Kendo Robe",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "藍劍道服",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 1061018,
+    "itemName": "Brown Ramel Skirt",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "褐十字軍裙",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 1061028,
+    "itemName": "White Split Skirt",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "白伽藍裙",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 1072069,
+    "itemName": "Red Jack Boots",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅皮製長靴",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 1332008,
+    "itemName": "Coconut Knife",
+    "chance": 0.0005,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "牙刀",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 1482002,
+    "itemName": "Double Tail Knuckler",
+    "chance": 0.0005,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "雙棘指虎",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 2000001,
+    "itemName": "Orange Potion",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "橘色藥水",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 2010003,
+    "itemName": "Orange",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "柳橙",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 2040617,
+    "itemName": "Scroll for Bottomwear for Mobility 100%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "褲裙跳躍卷軸10%",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 2040706,
+    "itemName": "Scroll for Shoes for Mobility 100%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "鞋子速度卷軸100%",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 2040902,
+    "itemName": "Scroll for Shield for Defense 10%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "盾牌防禦卷軸10%",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 4000034,
+    "itemName": "Jr. Necki Skin",
+    "chance": 0.6,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "蛇皮",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 4010002,
+    "itemName": "Mithril Ore",
+    "chance": 0.009,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "鋰礦石母礦",
+    "chineseMobName": "青蛇"
+  },
+  {
+    "mobId": 2130103,
+    "mobName": "Jr. Necki",
+    "itemId": 4020006,
+    "itemName": "Topaz Ore",
+    "chance": 0.009,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "黃晶母礦",
+    "chineseMobName": "青蛇"
+  }
+]

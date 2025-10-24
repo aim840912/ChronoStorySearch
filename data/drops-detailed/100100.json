@@ -1,0 +1,134 @@
+[
+  {
+    "mobId": 100100,
+    "mobName": "Snail",
+    "itemId": 0,
+    "itemName": "Meso",
+    "chance": 0.4,
+    "minQty": 4,
+    "maxQty": 6,
+    "chineseItemName": "楓幣",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100100,
+    "mobName": "Snail",
+    "itemId": 1002067,
+    "itemName": "Green Headband",
+    "chance": 0.001287,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "綠髮帶",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100100,
+    "mobName": "Snail",
+    "itemId": 1040002,
+    "itemName": "White Undershirt",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "白色汗衫",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100100,
+    "mobName": "Snail",
+    "itemId": 1052095,
+    "itemName": "Brown Rocky Suit",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "褐色洛基外衣",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100100,
+    "mobName": "Snail",
+    "itemId": 1302000,
+    "itemName": "Sword",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "劍",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100100,
+    "mobName": "Snail",
+    "itemId": 2000000,
+    "itemName": "Red Potion",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅色藥水",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100100,
+    "mobName": "Snail",
+    "itemId": 2010009,
+    "itemName": "Green Apple",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "青蘋果",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100100,
+    "mobName": "Snail",
+    "itemId": 2040002,
+    "itemName": "Scroll for Helmet for Defense 10%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "頭盔防禦卷軸10%",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100100,
+    "mobName": "Snail",
+    "itemId": 2041004,
+    "itemName": "Scroll for Cape for Defense 60%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "披風防禦卷軸60%",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100100,
+    "mobName": "Snail",
+    "itemId": 4000019,
+    "itemName": "Snail Shell",
+    "chance": 0.6,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "綠寶殼",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100100,
+    "mobName": "Snail",
+    "itemId": 4010000,
+    "itemName": "Bronze Ore",
+    "chance": 0.009,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "青銅母礦",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100100,
+    "mobName": "Snail",
+    "itemId": 4020000,
+    "itemName": "Garnet Ore",
+    "chance": 0.009,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "石榴石母礦",
+    "chineseMobName": "嫩寶"
+  }
+]

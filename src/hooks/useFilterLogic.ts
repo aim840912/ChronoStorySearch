@@ -2,7 +2,7 @@
 
 import { useMemo } from 'react'
 import type {
-  DropItem,
+  DropsEssential,
   FilterMode,
   FavoriteMonster,
   FavoriteItem,
@@ -31,8 +31,8 @@ interface UseFilterLogicParams {
   filterMode: FilterMode
   favoriteMonsters: FavoriteMonster[]
   favoriteItems: FavoriteItem[]
-  allDrops: DropItem[]
-  initialRandomDrops: DropItem[]
+  allDrops: DropsEssential[]  // 改為 Essential（只需要基本資訊）
+  initialRandomDrops: DropsEssential[]  // 改為 Essential
   debouncedSearchTerm: string // 延遲搜尋詞（已 debounce）
   searchType: SearchTypeFilter // 搜尋類型篩選（怪物/物品/全部）
   advancedFilter: AdvancedFilterOptions
@@ -170,7 +170,7 @@ export function useFilterLogic({
       : allDrops
 
     // 應用搜尋過濾（支援多關鍵字搜尋 + 中英文搜尋 + 搜尋類型篩選）
-    let filtered: DropItem[]
+    let filtered: DropsEssential[]
     if (debouncedSearchTerm.trim() === '') {
       filtered = baseDrops
     } else {

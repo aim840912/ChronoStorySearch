@@ -1,9 +1,9 @@
 'use client'
 
 import { useState, useEffect, useMemo, useCallback } from 'react'
-import type { DropItem, GachaMachine, GachaItem, EnhancedGachaItem, MobInfo, ItemAttributesEssential } from '@/types'
+import type { DropsEssential, GachaMachine, GachaItem, EnhancedGachaItem, MobInfo, ItemAttributesEssential } from '@/types'
 import { clientLogger } from '@/lib/logger'
-import dropsData from '@/../data/drops.json'
+import dropsEssentialData from '@/../data/drops-essential.json'
 import mobInfoData from '@/../data/mob-info.json'
 import itemAttributesEssentialData from '@/../data/item-attributes-essential.json'
 
@@ -55,34 +55,35 @@ function normalizeGachaMachine(rawData: EnhancedGachaMachineRaw): GachaMachine {
 /**
  * 資料管理 Hook
  * 職責：
- * - 載入核心資料（drops）
+ * - 載入核心資料（drops essential - 僅搜尋索引）
  * - 提供轉蛋機按需載入功能
  * - 提供初始隨機資料
  *
  * 優化：
+ * - drops 拆分為 Essential（預載入，用於搜尋）+ Detailed（按需載入，用於 Modal）
  * - item-attributes 和 mob-info 改為懶加載（使用 useLazyData Hook）
  * - gacha machines 改為延遲載入（使用者搜尋時才載入）
  * - 使用 Enhanced JSON 提供完整物品資料（equipment stats、stat variation 等）
  */
 export function useDataManagement() {
   // 資料狀態
-  const [allDrops, setAllDrops] = useState<DropItem[]>([])
+  const [allDrops, setAllDrops] = useState<DropsEssential[]>([])
   const [gachaMachines, setGachaMachines] = useState<GachaMachine[]>([])
   const [isLoading, setIsLoading] = useState(true)
 
-  // 載入掉落資料
+  // 載入掉落 Essential 資料（僅用於搜尋索引）
   useEffect(() => {
     async function loadDrops() {
       try {
         setIsLoading(true)
-        clientLogger.info('開始載入掉落資料（本地 JSON）...')
+        clientLogger.info('開始載入掉落 Essential 資料（搜尋索引用）...')
 
         // 模擬短暫載入延遲以維持用戶體驗
         await new Promise(resolve => setTimeout(resolve, 300))
 
-        // 直接使用 imported JSON 資料
-        setAllDrops(dropsData as DropItem[])
-        clientLogger.info(`成功載入 ${dropsData.length} 筆掉落資料`)
+        // 直接使用 imported Essential JSON 資料
+        setAllDrops(dropsEssentialData as DropsEssential[])
+        clientLogger.info(`成功載入 ${dropsEssentialData.length} 筆掉落 Essential 資料`)
       } catch (error) {
         clientLogger.error('載入掉落資料失敗', error)
       } finally {

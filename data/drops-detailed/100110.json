@@ -1,0 +1,79 @@
+[
+  {
+    "mobId": 100110,
+    "mobName": "Bob",
+    "itemId": 0,
+    "itemName": "Meso",
+    "chance": 0.4,
+    "minQty": 400,
+    "maxQty": 600,
+    "chineseItemName": "楓幣",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100110,
+    "mobName": "Bob",
+    "itemId": 1002391,
+    "itemName": "Green Bandana",
+    "chance": 0.001,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "綠色頭巾",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100110,
+    "mobName": "Bob",
+    "itemId": 1102000,
+    "itemName": "Green Napoleon",
+    "chance": 0.007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "綠色冒險披風",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100110,
+    "mobName": "Bob",
+    "itemId": 1102001,
+    "itemName": "Blue Napoleon",
+    "chance": 0.007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "藍色冒險披風",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100110,
+    "mobName": "Bob",
+    "itemId": 1102002,
+    "itemName": "Red Napoleon",
+    "chance": 0.007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅色冒險披風",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100110,
+    "mobName": "Bob",
+    "itemId": 1102003,
+    "itemName": "White Napoleon",
+    "chance": 0.007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "白色冒險披風",
+    "chineseMobName": "嫩寶"
+  },
+  {
+    "mobId": 100110,
+    "mobName": "Bob",
+    "itemId": 1102004,
+    "itemName": "Black Napoleon",
+    "chance": 0.007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "黑色冒險披風",
+    "chineseMobName": "嫩寶"
+  }
+]

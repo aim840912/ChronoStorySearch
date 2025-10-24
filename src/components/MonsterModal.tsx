@@ -1,21 +1,21 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { DropItem, Language, ItemAttributesEssential } from '@/types'
+import type { DropsEssential, Language, ItemAttributesEssential } from '@/types'
 import { DropItemCard } from './DropItemCard'
 import { MonsterStatsCard } from './MonsterStatsCard'
 import { MonsterLocationsCard } from './MonsterLocationsCard'
 import { clientLogger } from '@/lib/logger'
 import { getMonsterImageUrl, getItemImageUrl, preloadImages } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { useLazyMobInfo } from '@/hooks/useLazyData'
+import { useLazyMobInfo, useLazyDropsDetailed } from '@/hooks/useLazyData'
 
 interface MonsterModalProps {
   isOpen: boolean
   onClose: () => void
   monsterId: number | null
   monsterName: string
-  allDrops: DropItem[]
+  allDrops: DropsEssential[]  // 改為 Essential 資料（用於基本資訊）
   itemAttributesMap: Map<number, ItemAttributesEssential>
   isFavorite: boolean
   onToggleFavorite: (mobId: number, mobName: string) => void
@@ -60,17 +60,22 @@ export function MonsterModal({
     loadData: loadMobInfo,
   } = useLazyMobInfo()
 
+  // 懶加載該怪物的 Detailed 掉落資料（包含機率、數量等完整資訊）
+  const {
+    data: monsterDropsDetailed,
+  } = useLazyDropsDetailed(monsterId)
+
   // 語言切換函數
   const toggleLanguage = () => {
     const newLanguage: Language = language === 'zh-TW' ? 'en' : 'zh-TW'
     setLanguage(newLanguage)
   }
 
-  // 過濾該怪物的所有掉落物品
+  // 使用 Detailed 資料（包含完整掉落資訊）
+  // 用 useMemo 包裹以避免 useEffect 依賴變化
   const monsterDrops = useMemo(() => {
-    if (!monsterId) return []
-    return allDrops.filter((drop) => drop.mobId === monsterId)
-  }, [monsterId, allDrops])
+    return monsterDropsDetailed || []
+  }, [monsterDropsDetailed])
 
   // 從 allDrops 查找怪物數據（用於獲取中英文名稱）
   const monsterData = useMemo(() => {

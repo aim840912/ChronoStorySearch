@@ -1,0 +1,145 @@
+[
+  {
+    "mobId": 9834151,
+    "mobName": "Tauroshield",
+    "itemId": 0,
+    "itemName": "Meso",
+    "chance": 0.4,
+    "minQty": 600,
+    "maxQty": 900,
+    "chineseItemName": "楓幣",
+    "chineseMobName": "盾牌牛魔王"
+  },
+  {
+    "mobId": 9834151,
+    "mobName": "Tauroshield",
+    "itemId": 1092008,
+    "itemName": "Pan Lid",
+    "chance": 0.001,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "鍋蓋",
+    "chineseMobName": "盾牌牛魔王"
+  },
+  {
+    "mobId": 9834151,
+    "mobName": "Tauroshield",
+    "itemId": 1092020,
+    "itemName": "Jurgen Wristguard",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "敏捷盾牌",
+    "chineseMobName": "盾牌牛魔王"
+  },
+  {
+    "mobId": 9834151,
+    "mobName": "Tauroshield",
+    "itemId": 1092022,
+    "itemName": "Palette",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "調色盤",
+    "chineseMobName": "盾牌牛魔王"
+  },
+  {
+    "mobId": 9834151,
+    "mobName": "Tauroshield",
+    "itemId": 1092024,
+    "itemName": "Silver Aquila Shield",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "銀尖刺護盾",
+    "chineseMobName": "盾牌牛魔王"
+  },
+  {
+    "mobId": 9834151,
+    "mobName": "Tauroshield",
+    "itemId": 1092025,
+    "itemName": "Gold Aquila Shield",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "金尖刺護盾",
+    "chineseMobName": "盾牌牛魔王"
+  },
+  {
+    "mobId": 9834151,
+    "mobName": "Tauroshield",
+    "itemId": 1092029,
+    "itemName": "Esther Shield",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "鑽石護盾",
+    "chineseMobName": "盾牌牛魔王"
+  },
+  {
+    "mobId": 9834151,
+    "mobName": "Tauroshield",
+    "itemId": 2040918,
+    "itemName": "Scroll for Shield for Magic ATT 100%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "盾牌魔攻卷軸100%",
+    "chineseMobName": "盾牌牛魔王"
+  },
+  {
+    "mobId": 9834151,
+    "mobName": "Tauroshield",
+    "itemId": 2040928,
+    "itemName": "Scroll for Shield for ATT 100%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "盾牌攻擊卷軸100%",
+    "chineseMobName": "盾牌牛魔王"
+  },
+  {
+    "mobId": 9834151,
+    "mobName": "Tauroshield",
+    "itemId": 2040805,
+    "itemName": "Scroll for Gloves for ATT 10%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "手套攻擊卷軸10%",
+    "chineseMobName": "盾牌牛魔王"
+  },
+  {
+    "mobId": 9834151,
+    "mobName": "Tauroshield",
+    "itemId": 4000998,
+    "itemName": "Tauroshield Horn",
+    "chance": 0.6,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": null,
+    "chineseMobName": "盾牌牛魔王"
+  },
+  {
+    "mobId": 9834151,
+    "mobName": "Tauroshield",
+    "itemId": 4004002,
+    "itemName": "DEX Crystal Ore",
+    "chance": 0.01,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "敏捷母礦",
+    "chineseMobName": "盾牌牛魔王"
+  },
+  {
+    "mobId": 9834151,
+    "mobName": "Tauroshield",
+    "itemId": 4020003,
+    "itemName": "Emerald Ore",
+    "chance": 0.009,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "祖母綠母礦",
+    "chineseMobName": "盾牌牛魔王"
+  }
+]

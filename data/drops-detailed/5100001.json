@@ -1,0 +1,13 @@
+[
+  {
+    "mobId": 5100001,
+    "mobName": "Transforming Jr. Yeti",
+    "itemId": 2022001,
+    "itemName": "Red Bean Porridge",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "小豆粥",
+    "chineseMobName": "小雪球"
+  }
+]

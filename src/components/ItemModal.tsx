@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { DropItem, Language, GachaMachine, ItemAttributes, ItemAttributesEssential } from '@/types'
+import type { DropsEssential, Language, GachaMachine, ItemAttributes, ItemAttributesEssential } from '@/types'
 import { MonsterDropCard } from './MonsterDropCard'
 import { ItemAttributesCard } from './ItemAttributesCard'
 import { clientLogger } from '@/lib/logger'
@@ -15,7 +15,7 @@ interface ItemModalProps {
   onClose: () => void
   itemId: number | null
   itemName: string
-  allDrops: DropItem[]
+  allDrops: DropsEssential[]  // 改為 Essential（只需基本資訊）
   gachaMachines: GachaMachine[]
   itemAttributesMap: Map<number, ItemAttributesEssential>
   isFavorite: boolean
@@ -66,11 +66,15 @@ export function ItemModal({
   } = useLazyMobInfo()
 
   // 懶加載物品詳細資料 (用於顯示完整物品屬性)
+  // 只對存在於 itemAttributesMap 的物品載入 Detailed 資料
+  // 純轉蛋物品會直接使用轉蛋機資料，無需載入 Detailed（避免 console 錯誤）
+  const shouldLoadDetailed = itemId !== null && itemAttributesMap.has(itemId)
+
   const {
     data: itemDetailed,
     isLoading: isLoadingDetailed,
     error: detailedError,
-  } = useLazyItemDetailed(itemId)
+  } = useLazyItemDetailed(shouldLoadDetailed ? itemId : null)
 
   // 語言切換函數
   const toggleLanguage = () => {

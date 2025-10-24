@@ -1,0 +1,35 @@
+[
+  {
+    "mobId": 2002011,
+    "mobName": "Orbis Crate",
+    "itemId": 4031198,
+    "itemName": "Empty Potion Bottle",
+    "chance": 1,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": null,
+    "chineseMobName": "天空城箱"
+  },
+  {
+    "mobId": 2002011,
+    "mobName": "Orbis Crate",
+    "itemId": 2000001,
+    "itemName": "Orange Potion",
+    "chance": 0.4,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "橘色藥水",
+    "chineseMobName": "天空城箱"
+  },
+  {
+    "mobId": 2002011,
+    "mobName": "Orbis Crate",
+    "itemId": 2000003,
+    "itemName": "Blue Potion",
+    "chance": 0.4,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "藍色藥水",
+    "chineseMobName": "天空城箱"
+  }
+]

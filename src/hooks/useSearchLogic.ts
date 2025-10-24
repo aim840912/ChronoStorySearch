@@ -1,11 +1,11 @@
 'use client'
 
 import { useMemo } from 'react'
-import type { DropItem, GachaMachine, SuggestionItem, SearchTypeFilter } from '@/types'
+import type { DropsEssential, GachaMachine, SuggestionItem, SearchTypeFilter } from '@/types'
 import { matchesAllKeywords } from '@/lib/search-utils'
 
 interface UseSearchLogicParams {
-  allDrops: DropItem[]
+  allDrops: DropsEssential[]  // 改為 Essential（只需要基本資訊用於搜尋索引）
   gachaMachines: GachaMachine[]
   debouncedSearchTerm: string
   searchType: SearchTypeFilter

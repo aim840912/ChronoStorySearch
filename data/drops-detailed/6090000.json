@@ -1,0 +1,57 @@
+[
+  {
+    "mobId": 6090000,
+    "mobName": "Riche",
+    "itemId": 0,
+    "itemName": "Meso",
+    "chance": 0.4,
+    "minQty": 1500,
+    "maxQty": 2000,
+    "chineseItemName": "楓幣",
+    "chineseMobName": "厄運死神"
+  },
+  {
+    "mobId": 6090000,
+    "mobName": "Riche",
+    "itemId": 1302026,
+    "itemName": "Black Umbrella",
+    "chance": 0.008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "黑色雨傘",
+    "chineseMobName": "厄運死神"
+  },
+  {
+    "mobId": 6090000,
+    "mobName": "Riche",
+    "itemId": 2040347,
+    "itemName": "Scroll for Accessory for DEX 10%",
+    "chance": 0.003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "飾品敏捷卷軸10%",
+    "chineseMobName": "厄運死神"
+  },
+  {
+    "mobId": 6090000,
+    "mobName": "Riche",
+    "itemId": 2040353,
+    "itemName": "Dark Scroll for Accessory for INT 30%",
+    "chance": 0.003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "飾品敏捷詛咒卷軸30%",
+    "chineseMobName": "厄運死神"
+  },
+  {
+    "mobId": 6090000,
+    "mobName": "Riche",
+    "itemId": 4000336,
+    "itemName": "Bible of the Corrupt",
+    "chance": 0.6,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "墮者的聖經",
+    "chineseMobName": "厄運死神"
+  }
+]

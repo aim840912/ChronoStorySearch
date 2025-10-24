@@ -1,0 +1,145 @@
+[
+  {
+    "mobId": 120100,
+    "mobName": "Shroom",
+    "itemId": 0,
+    "itemName": "Meso",
+    "chance": 0.4,
+    "minQty": 8,
+    "maxQty": 12,
+    "chineseItemName": "楓幣",
+    "chineseMobName": "菇菇仔"
+  },
+  {
+    "mobId": 120100,
+    "mobName": "Shroom",
+    "itemId": 1002610,
+    "itemName": "Brown Rocky Bandana",
+    "chance": 0.001287,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "褐色洛基頭巾",
+    "chineseMobName": "菇菇仔"
+  },
+  {
+    "mobId": 120100,
+    "mobName": "Shroom",
+    "itemId": 1060007,
+    "itemName": "Jean Capris",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "藍馬褲",
+    "chineseMobName": "菇菇仔"
+  },
+  {
+    "mobId": 120100,
+    "mobName": "Shroom",
+    "itemId": 1061009,
+    "itemName": "Green Avelin Skirt",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "綠色旅行裙",
+    "chineseMobName": "菇菇仔"
+  },
+  {
+    "mobId": 120100,
+    "mobName": "Shroom",
+    "itemId": 1062000,
+    "itemName": "Ice Jeans",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "破爛牛仔褲",
+    "chineseMobName": "菇菇仔"
+  },
+  {
+    "mobId": 120100,
+    "mobName": "Shroom",
+    "itemId": 1312004,
+    "itemName": "Hand Axe",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "手斧",
+    "chineseMobName": "菇菇仔"
+  },
+  {
+    "mobId": 120100,
+    "mobName": "Shroom",
+    "itemId": 1332006,
+    "itemName": "Field Dagger",
+    "chance": 0.0005,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "戰鬥短刀",
+    "chineseMobName": "菇菇仔"
+  },
+  {
+    "mobId": 120100,
+    "mobName": "Shroom",
+    "itemId": 2000000,
+    "itemName": "Red Potion",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅色藥水",
+    "chineseMobName": "菇菇仔"
+  },
+  {
+    "mobId": 120100,
+    "mobName": "Shroom",
+    "itemId": 2010009,
+    "itemName": "Green Apple",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "青蘋果",
+    "chineseMobName": "菇菇仔"
+  },
+  {
+    "mobId": 120100,
+    "mobName": "Shroom",
+    "itemId": 2041004,
+    "itemName": "Scroll for Cape for Defense 60%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "披風防禦卷軸60%",
+    "chineseMobName": "菇菇仔"
+  },
+  {
+    "mobId": 120100,
+    "mobName": "Shroom",
+    "itemId": 4000011,
+    "itemName": "Mushroom Spore",
+    "chance": 0.6,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "蘑菇芽孢",
+    "chineseMobName": "菇菇仔"
+  },
+  {
+    "mobId": 120100,
+    "mobName": "Shroom",
+    "itemId": 4010002,
+    "itemName": "Mithril Ore",
+    "chance": 0.009,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "鋰礦石母礦",
+    "chineseMobName": "菇菇仔"
+  },
+  {
+    "mobId": 120100,
+    "mobName": "Shroom",
+    "itemId": 4020002,
+    "itemName": "AquaMarine Ore",
+    "chance": 0.009,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "海藍石母礦",
+    "chineseMobName": "菇菇仔"
+  }
+]

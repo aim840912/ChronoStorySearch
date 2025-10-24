@@ -1,7 +1,7 @@
 'use client'
 
 import { memo } from 'react'
-import type { DropItem, ItemAttributesEssential, GachaMachine } from '@/types'
+import type { DropsEssential, ItemAttributesEssential, GachaMachine } from '@/types'
 import { MonsterModal } from '@/components/MonsterModal'
 import { ItemModal } from '@/components/ItemModal'
 import { BugReportModal } from '@/components/BugReportModal'
@@ -40,7 +40,7 @@ interface ModalManagerProps {
   openBugReportModal: () => void
 
   // 資料
-  allDrops: DropItem[]
+  allDrops: DropsEssential[]  // 改為 Essential（只需基本資訊）
   gachaMachines: GachaMachine[]
   itemAttributesMap: Map<number, ItemAttributesEssential>
 

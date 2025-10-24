@@ -1,0 +1,90 @@
+[
+  {
+    "mobId": 1210111,
+    "mobName": "Alpha Ribbon Pig",
+    "itemId": 0,
+    "itemName": "Meso",
+    "chance": 0.4,
+    "minQty": 32,
+    "maxQty": 48,
+    "chineseItemName": "楓幣",
+    "chineseMobName": "奇怪的豬"
+  },
+  {
+    "mobId": 1210111,
+    "mobName": "Alpha Ribbon Pig",
+    "itemId": 1002012,
+    "itemName": "Red Baseball Cap",
+    "chance": 0.007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅色棒球帽",
+    "chineseMobName": "奇怪的豬"
+  },
+  {
+    "mobId": 1210111,
+    "mobName": "Alpha Ribbon Pig",
+    "itemId": 1002080,
+    "itemName": "Red Bandana",
+    "chance": 0.007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅頭巾",
+    "chineseMobName": "奇怪的豬"
+  },
+  {
+    "mobId": 1210111,
+    "mobName": "Alpha Ribbon Pig",
+    "itemId": 1002441,
+    "itemName": "Ribboned Pig Headband",
+    "chance": 0.01,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "緞帶肥肥髮帶",
+    "chineseMobName": "奇怪的豬"
+  },
+  {
+    "mobId": 1210111,
+    "mobName": "Alpha Ribbon Pig",
+    "itemId": 1082146,
+    "itemName": "Red Work Gloves",
+    "chance": 0.007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅色工作手套",
+    "chineseMobName": "奇怪的豬"
+  },
+  {
+    "mobId": 1210111,
+    "mobName": "Alpha Ribbon Pig",
+    "itemId": 1322012,
+    "itemName": "Red Brick",
+    "chance": 0.007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅色磚頭",
+    "chineseMobName": "奇怪的豬"
+  },
+  {
+    "mobId": 1210111,
+    "mobName": "Alpha Ribbon Pig",
+    "itemId": 2000003,
+    "itemName": "Blue Potion",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "藍色藥水",
+    "chineseMobName": "奇怪的豬"
+  },
+  {
+    "mobId": 1210111,
+    "mobName": "Alpha Ribbon Pig",
+    "itemId": 2010001,
+    "itemName": "Meat",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "肉",
+    "chineseMobName": "奇怪的豬"
+  }
+]

@@ -1,0 +1,211 @@
+[
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 0,
+    "itemName": "Meso",
+    "chance": 0.4,
+    "minQty": 14,
+    "maxQty": 21,
+    "chineseItemName": "楓幣",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 1002008,
+    "itemName": "Brown Skullcap",
+    "chance": 0.001287,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "褐色皮帽",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 1002610,
+    "itemName": "Brown Rocky Bandana",
+    "chance": 0.001287,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "褐色洛基頭巾",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 1040034,
+    "itemName": "Dark Nightshift",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "黑夜",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 1041012,
+    "itemName": "Red-Striped T-Shirt",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "黃紅短T",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 1041014,
+    "itemName": "Orange Lolica Armor",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "黃皮製鎧甲",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 1061028,
+    "itemName": "White Split Skirt",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "白伽藍裙",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 1062002,
+    "itemName": "Brown Hard Leather Pants",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "褐色皮製褲",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 1402018,
+    "itemName": "Wooden Samurai Sword",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "幻木劍",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 1422000,
+    "itemName": "Wooden Mallet",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "木錘",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 1472000,
+    "itemName": "Garnier",
+    "chance": 0.0005,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "拳套",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 2000000,
+    "itemName": "Red Potion",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅色藥水",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 2010009,
+    "itemName": "Green Apple",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "青蘋果",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 2040702,
+    "itemName": "Scroll for Shoes for Avoidability 10%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "鞋子敏捷卷軸10%",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 2041021,
+    "itemName": "Scroll for Cape for LUK 100%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "披風幸運卷軸100%",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 4000017,
+    "itemName": "Pig's Head",
+    "chance": 0.04,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "肥肥頭",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 4000021,
+    "itemName": "Leather",
+    "chance": 0.05,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "動物皮",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 4010006,
+    "itemName": "Gold Ore",
+    "chance": 0.009,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "黃金母礦",
+    "chineseMobName": "肥肥"
+  },
+  {
+    "mobId": 1210100,
+    "mobName": "Pig",
+    "itemId": 4020006,
+    "itemName": "Topaz Ore",
+    "chance": 0.009,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "黃晶母礦",
+    "chineseMobName": "肥肥"
+  }
+]

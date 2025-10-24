@@ -1,0 +1,145 @@
+[
+  {
+    "mobId": 8148008,
+    "mobName": "Crimson Stirge",
+    "itemId": 0,
+    "itemName": "Meso",
+    "chance": 0.4,
+    "minQty": 48,
+    "maxQty": 72,
+    "chineseItemName": "楓幣",
+    "chineseMobName": "紅蝙蝠"
+  },
+  {
+    "mobId": 8148008,
+    "mobName": "Crimson Stirge",
+    "itemId": 1002020,
+    "itemName": "Red Starry Bandana",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅星頭巾",
+    "chineseMobName": "紅蝙蝠"
+  },
+  {
+    "mobId": 8148008,
+    "mobName": "Crimson Stirge",
+    "itemId": 1002026,
+    "itemName": "Brown Bamboo Hat",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "褐色斗笠",
+    "chineseMobName": "紅蝙蝠"
+  },
+  {
+    "mobId": 8148008,
+    "mobName": "Crimson Stirge",
+    "itemId": 1002073,
+    "itemName": "Red Wizardry Hat",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅色法師帽",
+    "chineseMobName": "紅蝙蝠"
+  },
+  {
+    "mobId": 8148008,
+    "mobName": "Crimson Stirge",
+    "itemId": 1002089,
+    "itemName": "Green Bamboo Hat",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "綠色斗笠",
+    "chineseMobName": "紅蝙蝠"
+  },
+  {
+    "mobId": 8148008,
+    "mobName": "Crimson Stirge",
+    "itemId": 1002090,
+    "itemName": "Blue Bamboo Hat",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "藍色斗笠",
+    "chineseMobName": "紅蝙蝠"
+  },
+  {
+    "mobId": 8148008,
+    "mobName": "Crimson Stirge",
+    "itemId": 1004765,
+    "itemName": "Purple Bamboo Hat",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紫色斗笠",
+    "chineseMobName": "紅蝙蝠"
+  },
+  {
+    "mobId": 8148008,
+    "mobName": "Crimson Stirge",
+    "itemId": 1050011,
+    "itemName": "Black Dragon Robe",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "黑龍袍",
+    "chineseMobName": "紅蝙蝠"
+  },
+  {
+    "mobId": 8148008,
+    "mobName": "Crimson Stirge",
+    "itemId": 1051007,
+    "itemName": "Red Avenger",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅飛影甲",
+    "chineseMobName": "紅蝙蝠"
+  },
+  {
+    "mobId": 8148008,
+    "mobName": "Crimson Stirge",
+    "itemId": 1082032,
+    "itemName": "Bronze Mischief",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "青銅盜賊手套",
+    "chineseMobName": "紅蝙蝠"
+  },
+  {
+    "mobId": 8148008,
+    "mobName": "Crimson Stirge",
+    "itemId": 2040029,
+    "itemName": "Scroll for Helmet for DEX 60%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "頭盔敏捷卷軸60%",
+    "chineseMobName": "紅蝙蝠"
+  },
+  {
+    "mobId": 8148008,
+    "mobName": "Crimson Stirge",
+    "itemId": 4000999,
+    "itemName": "Crimson Stirge Wing",
+    "chance": 0.6,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅蝙蝠翅膀",
+    "chineseMobName": "紅蝙蝠"
+  },
+  {
+    "mobId": 8148008,
+    "mobName": "Crimson Stirge",
+    "itemId": 4003004,
+    "itemName": "Stiff Feather",
+    "chance": 0.2,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "堅硬的羽毛",
+    "chineseMobName": "紅蝙蝠"
+  }
+]

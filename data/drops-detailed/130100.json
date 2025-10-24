@@ -1,0 +1,200 @@
+[
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 0,
+    "itemName": "Meso",
+    "chance": 0.4,
+    "minQty": 12,
+    "maxQty": 18,
+    "chineseItemName": "楓幣",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 1041002,
+    "itemName": "White Tubetop",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "白色上衣",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 1061014,
+    "itemName": "Rookie Pants",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅皮甲褲",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 1072007,
+    "itemName": "Brown High Boots",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "褐旅行鞋",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 1072008,
+    "itemName": "Bronze Aroa Boots",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "褐短鞋",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 1082003,
+    "itemName": "Juno",
+    "chance": 0.001,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "腕甲",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 1322005,
+    "itemName": "Wooden Club",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "木棒",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 1332000,
+    "itemName": "Triangular Zamadar",
+    "chance": 0.0005,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "三角刃",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 1452003,
+    "itemName": "Composite Bow",
+    "chance": 0.0005,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "鋼鐵弓",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 1482001,
+    "itemName": "Leather Arms",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "加固皮護手",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 1492000,
+    "itemName": "Pistol",
+    "chance": 0.0005,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "火槍",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 2000000,
+    "itemName": "Red Potion",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅色藥水",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 2010009,
+    "itemName": "Green Apple",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "青蘋果",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 2040402,
+    "itemName": "Scroll for Topwear for Defense 10%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "上衣防禦卷軸10%",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 2041005,
+    "itemName": "Scroll for Cape for Defense 10%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "披風防禦卷軸10%",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 4000003,
+    "itemName": "Tree Branch",
+    "chance": 0.6,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "樹枝",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 4010003,
+    "itemName": "Adamantium Ore",
+    "chance": 0.009,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "朱礦石母礦",
+    "chineseMobName": "木妖"
+  },
+  {
+    "mobId": 130100,
+    "mobName": "Stump",
+    "itemId": 4020003,
+    "itemName": "Emerald Ore",
+    "chance": 0.009,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "祖母綠母礦",
+    "chineseMobName": "木妖"
+  }
+]

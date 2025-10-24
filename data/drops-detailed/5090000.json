@@ -1,0 +1,57 @@
+[
+  {
+    "mobId": 5090000,
+    "mobName": "Shade",
+    "itemId": 0,
+    "itemName": "Meso",
+    "chance": 0.4,
+    "minQty": 800,
+    "maxQty": 920,
+    "chineseItemName": "楓幣",
+    "chineseMobName": "冥界幽靈"
+  },
+  {
+    "mobId": 5090000,
+    "mobName": "Shade",
+    "itemId": 1302029,
+    "itemName": "Beige Umbrella",
+    "chance": 0.008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "褐色雨傘",
+    "chineseMobName": "冥界幽靈"
+  },
+  {
+    "mobId": 5090000,
+    "mobName": "Shade",
+    "itemId": 2040346,
+    "itemName": "Dark Scroll for Accessory for DEX 30%",
+    "chance": 0.003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "飾品敏捷詛咒卷軸30%",
+    "chineseMobName": "冥界幽靈"
+  },
+  {
+    "mobId": 5090000,
+    "mobName": "Shade",
+    "itemId": 2040352,
+    "itemName": "Scroll for Accessory for INT 60%",
+    "chance": 0.003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "飾品智力卷軸60%",
+    "chineseMobName": "冥界幽靈"
+  },
+  {
+    "mobId": 5090000,
+    "mobName": "Shade",
+    "itemId": 4000413,
+    "itemName": "Someone's Hat",
+    "chance": 0.2,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "某人的鞋子",
+    "chineseMobName": "冥界幽靈"
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "mobId": 1072000,
+    "mobName": "Witchgrass",
+    "itemId": 4031165,
+    "itemName": "Witchgrass Leaf",
+    "chance": 0.3,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "神秘的葉子",
+    "chineseMobName": "神秘的植物"
+  }
+]

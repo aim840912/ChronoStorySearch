@@ -1,0 +1,233 @@
+[
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 0,
+    "itemName": "Meso",
+    "chance": 0.4,
+    "minQty": 20,
+    "maxQty": 30,
+    "chineseItemName": "楓幣",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 1002039,
+    "itemName": "Bronze Helmet",
+    "chance": 0.001287,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "青銅帽",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 1002613,
+    "itemName": "Brown Lagger Cap",
+    "chance": 0.001287,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "灰色萊克帽",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 1032001,
+    "itemName": "Single Earring",
+    "chance": 0.001,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "單邊銀色耳環",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 1041018,
+    "itemName": "Green Arianne",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "綠錦絲緊身衣",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 1041061,
+    "itemName": "Yellow Avelin",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "黃旅行服",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 1061013,
+    "itemName": "Green Arianne Skirt",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "綠錦絲緊身裙",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 1061057,
+    "itemName": "Yellow Avelin Skirt",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "黃旅行裙",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 1092003,
+    "itemName": "Stolen Fence",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "木盾",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 1302006,
+    "itemName": "Machete",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "逆月刀",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 1382000,
+    "itemName": "Wooden Staff",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "木製長杖",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 1442000,
+    "itemName": "Pole Arm",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "鐵戟",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 1482000,
+    "itemName": "Steel Knuckler",
+    "chance": 0.0005,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "鐵指虎",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 2000000,
+    "itemName": "Red Potion",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅色藥水",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 2000001,
+    "itemName": "Orange Potion",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "橘色藥水",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 2000003,
+    "itemName": "Blue Potion",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "藍色藥水",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 2040802,
+    "itemName": "Scroll for Gloves for Accuracy 10%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "手套敏捷卷軸10%",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 4000005,
+    "itemName": "Leaf",
+    "chance": 0.6,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "葉子",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 4010001,
+    "itemName": "Steel Ore",
+    "chance": 0.009,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "鋼鐵母礦",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 4020000,
+    "itemName": "Garnet Ore",
+    "chance": 0.009,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "石榴石母礦",
+    "chineseMobName": "黑木妖"
+  },
+  {
+    "mobId": 1110101,
+    "mobName": "Dark Stump",
+    "itemId": 4031773,
+    "itemName": "Dry Branch",
+    "chance": 0.08,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "乾枯的樹枝",
+    "chineseMobName": "黑木妖"
+  }
+]

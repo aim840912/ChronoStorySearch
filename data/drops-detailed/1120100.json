@@ -1,0 +1,189 @@
+[
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 0,
+    "itemName": "Meso",
+    "chance": 0.4,
+    "minQty": 24,
+    "maxQty": 36,
+    "chineseItemName": "楓幣",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 1032001,
+    "itemName": "Single Earring",
+    "chance": 0.001,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "單邊銀色耳環",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 1040037,
+    "itemName": "Brown Corporal",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "青銅胸甲",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 1041026,
+    "itemName": "Yellow Arianne",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "黃錦絲緊身衣",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 1060027,
+    "itemName": "Brown Corporal Pants",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "褐色鐵板褲子",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 1061022,
+    "itemName": "Yellow Arianne Skirt",
+    "chance": 0.0008,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "黃錦絲緊身裙",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 1092000,
+    "itemName": "Steel Shield",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "鋼盾",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 1092007,
+    "itemName": "Battle Shield",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "戰鬥盾牌",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 1422000,
+    "itemName": "Wooden Mallet",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "木錘",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 1442013,
+    "itemName": "Aqua Snowboard",
+    "chance": 0.0007,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "深藍滑雪板",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 1482001,
+    "itemName": "Leather Arms",
+    "chance": 0.0005,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "加固皮護手",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 2000000,
+    "itemName": "Red Potion",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "紅色藥水",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 2000003,
+    "itemName": "Blue Potion",
+    "chance": 0.02,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "藍色藥水",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 2043002,
+    "itemName": "Scroll for One-Handed Sword for ATT 10%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "單手劍攻擊卷軸10%",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 4000006,
+    "itemName": "Octopus Leg",
+    "chance": 0.6,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "章魚腳",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 4010003,
+    "itemName": "Adamantium Ore",
+    "chance": 0.009,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "朱礦石母礦",
+    "chineseMobName": "三眼章魚"
+  },
+  {
+    "mobId": 1120100,
+    "mobName": "Octopus",
+    "itemId": 4020002,
+    "itemName": "AquaMarine Ore",
+    "chance": 0.009,
+    "minQty": 1,
+    "maxQty": 1,
+    "chineseItemName": "海藍石母礦",
+    "chineseMobName": "三眼章魚"
+  }
+]

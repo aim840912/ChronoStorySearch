@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback, useMemo } from 'react'
-import type { ItemAttributesEssential, ItemAttributesDetailed, MobInfo } from '@/types'
+import type { ItemAttributesEssential, ItemAttributesDetailed, MobInfo, DropItem } from '@/types'
 import { clientLogger } from '@/lib/logger'
 import essentialData from '@/../data/item-attributes-essential.json'
 
@@ -144,4 +144,55 @@ export function useLazyMobInfo() {
     error,
     loadData,
   }
+}
+
+/**
+ * 懶加載單一怪物的 Detailed 掉落資料 Hook
+ *
+ * 使用情境：
+ * - 開啟 MonsterModal 時
+ * - 需要顯示該怪物的完整掉落資訊（包含機率、數量）
+ *
+ * 優化效果：
+ * - 每個怪物的 Detailed 資料僅 ~6.81 KB
+ * - 只在需要時載入，大幅減少流量（~85-90% 節省）
+ *
+ * @param mobId - 要載入的怪物 ID（null 表示不載入）
+ */
+export function useLazyDropsDetailed(mobId: number | null) {
+  const [data, setData] = useState<DropItem[] | null>(null)
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState<Error | null>(null)
+
+  useEffect(() => {
+    if (!mobId) {
+      setData(null)
+      return
+    }
+
+    const loadData = async () => {
+      try {
+        setIsLoading(true)
+        setError(null)
+        clientLogger.info(`開始載入怪物 ${mobId} 的 Detailed 掉落資料...`)
+
+        // 動態 import 單一怪物的 Detailed JSON
+        const dataModule = await import(`@/../data/drops-detailed/${mobId}.json`)
+        const dropsData = dataModule.default as DropItem[]
+
+        setData(dropsData)
+        clientLogger.info(`成功載入怪物 ${mobId} 的 Detailed 掉落資料（${dropsData.length} 個物品）`)
+      } catch (err) {
+        const error = err instanceof Error ? err : new Error(`載入怪物 ${mobId} 掉落資料失敗`)
+        setError(error)
+        clientLogger.error(`載入怪物 ${mobId} 掉落資料失敗`, err)
+      } finally {
+        setIsLoading(false)
+      }
+    }
+
+    loadData()
+  }, [mobId])
+
+  return { data, isLoading, error }
 }
