@@ -15,13 +15,14 @@ import {
 
 interface MonsterStatsCardProps {
   mobInfo: MobInfo | null
+  onAccuracyClick?: () => void
 }
 
 /**
  * 怪物屬性卡片元件
  * 顯示怪物的完整屬性資料
  */
-export function MonsterStatsCard({ mobInfo }: MonsterStatsCardProps) {
+export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardProps) {
   const { t } = useLanguage()
 
   // 處理無屬性資料的情況
@@ -77,21 +78,47 @@ export function MonsterStatsCard({ mobInfo }: MonsterStatsCardProps) {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {statConfig.map(({ key, Icon, color }) => {
           const value = stats[key as keyof typeof stats]
+          const isAvoidField = key === 'avoid'
+          const isClickable = isAvoidField && onAccuracyClick && value !== null
+
           return (
             <div
               key={key}
-              className="bg-white dark:bg-gray-800 rounded-lg p-3 shadow-sm hover:shadow-md transition-shadow"
+              className={`bg-white dark:bg-gray-800 rounded-lg p-3 shadow-sm transition-all ${
+                isClickable
+                  ? 'cursor-pointer hover:shadow-lg hover:ring-2 hover:ring-cyan-500 hover:bg-cyan-50 dark:hover:bg-cyan-900/20 active:scale-95'
+                  : 'hover:shadow-md'
+              }`}
+              onClick={isClickable ? onAccuracyClick : undefined}
+              role={isClickable ? 'button' : undefined}
+              tabIndex={isClickable ? 0 : undefined}
+              onKeyDown={isClickable ? (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault()
+                  onAccuracyClick?.()
+                }
+              } : undefined}
             >
               <div className="flex items-center gap-2">
                 <Icon className={`w-5 h-5 ${color}`} />
                 <div className="flex-1">
-                  <div className="text-xs text-gray-500 dark:text-gray-400">
+                  <div className="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-1">
                     {t(`monster.${key}`)}
+                    {isClickable && (
+                      <svg className="w-3 h-3 text-cyan-600 dark:text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+                      </svg>
+                    )}
                   </div>
                   <div className={`text-lg font-bold ${color}`}>
                     {value !== null ? value : '-'}
                   </div>
                 </div>
+                {isClickable && (
+                  <svg className="w-5 h-5 text-cyan-600 dark:text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                )}
               </div>
             </div>
           )

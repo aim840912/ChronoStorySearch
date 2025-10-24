@@ -13,80 +13,26 @@ import {
 } from '@/lib/storage'
 import { MonsterSelector } from '@/components/accuracy/MonsterSelector'
 import { AccuracyResult as AccuracyResultDisplay } from '@/components/accuracy/AccuracyResult'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 interface AccuracyCalculatorModalProps {
   isOpen: boolean
   onClose: () => void
+  initialMonsterId?: number | null
 }
 
 type CalculatorMode = 'physical' | 'magic'
-
-// 翻譯資料
-const translations = {
-  'zh-TW': {
-    title: '命中率計算器',
-    subtitle: '不確定公式有沒有錯',
-    physical: '物理命中',
-    magic: '魔法命中',
-    playerLevel: '玩家等級',
-    selectMonster: '選擇怪物',
-    clearSelection: '清除選擇',
-    searchPlaceholder: '搜尋怪物名稱...',
-    calculate: '計算命中率',
-    close: '關閉',
-    result: '計算結果',
-    requiredAccuracy: '需求命中',
-    actualAccuracy: '實際命中',
-    hit: '命中',
-    miss: 'Miss',
-    willMiss: '會 MISS！',
-    wontMiss: '不會 MISS！',
-    foundMonsters: '找到 {count} 個怪物',
-    selectOption: '-- 請選擇怪物 --',
-    playerAccuracy: '玩家命中',
-    bonusAccuracy: '額外命中',
-    level: '等級',
-    avoid: '迴避',
-    physicalMissHint: '物理攻擊無法命中,需要至少 {required} 命中',
-    magicMissHint: '魔法攻擊命中率為 {rate}%，建議提升至 {required} 命中以達到 100%',
-  },
-  en: {
-    title: 'Accuracy Calculator',
-    subtitle: 'Formula accuracy not guaranteed',
-    physical: 'Physical Accuracy',
-    magic: 'Magic Accuracy',
-    playerLevel: 'Player Level',
-    selectMonster: 'Select Monster',
-    clearSelection: 'Clear Selection',
-    searchPlaceholder: 'Search monster name...',
-    calculate: 'Calculate Accuracy',
-    close: 'Close',
-    result: 'Result',
-    requiredAccuracy: 'Required Accuracy',
-    actualAccuracy: 'Actual Accuracy',
-    hit: 'Hit',
-    miss: 'Miss',
-    willMiss: 'Will Miss!',
-    wontMiss: "Won't Miss!",
-    foundMonsters: 'Found {count} monsters',
-    selectOption: '-- Select a monster --',
-    playerAccuracy: 'Player Accuracy',
-    bonusAccuracy: 'Bonus Accuracy',
-    level: 'Level',
-    avoid: 'Avoid',
-    physicalMissHint: 'Physical attack will miss, need at least {required} accuracy',
-    magicMissHint: 'Magic attack hit rate is {rate}%, recommend reaching {required} accuracy for 100%',
-  },
-} as const
 
 /**
  * 命中率計算器 Modal（僅開發環境）
  * 根據 accurate.md 和 Magic Accuracy.md 的公式計算命中率
  */
-export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorModalProps) {
+export function AccuracyCalculatorModal({ isOpen, onClose, initialMonsterId }: AccuracyCalculatorModalProps) {
   const [mode, setMode] = useState<CalculatorMode>('physical')
   const [result, setResult] = useState<AccuracyResult | null>(null)
-  const [language, setLanguage] = useState<'zh-TW' | 'en'>('zh-TW')
+
+  // 使用統一的語言系統
+  const { language, setLanguage, t: contextT } = useLanguage()
 
   // 怪物選擇
   const [selectedMobId, setSelectedMobId] = useState<number | null>(null)
@@ -107,9 +53,9 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
   // 載入怪物資料
   const { data: mobInfoData, loadData: loadMobInfo } = useLazyMobInfo()
 
-  // 翻譯函數
-  const t = (key: keyof typeof translations['zh-TW'], params?: Record<string, string | number>): string => {
-    let text: string = translations[language][key]
+  // 翻譯函數（支援參數替換）
+  const t = (key: string, params?: Record<string, string | number>): string => {
+    let text: string = contextT(`accuracy.${key}`)
     if (params) {
       Object.entries(params).forEach(([k, v]) => {
         text = text.replace(`{${k}}`, String(v))
@@ -120,7 +66,7 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
 
   // 語言切換函數
   const toggleLanguage = () => {
-    setLanguage((prev) => (prev === 'zh-TW' ? 'en' : 'zh-TW'))
+    setLanguage(language === 'zh-TW' ? 'en' : 'zh-TW')
   }
 
   // 過濾並排序怪物列表
@@ -200,6 +146,15 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
     }
   }, [isOpen])
 
+  // 當有初始怪物 ID 時，自動選擇該怪物
+  useEffect(() => {
+    if (isOpen && initialMonsterId && mobInfoData) {
+      setSelectedMobId(initialMonsterId)
+      // 清空結果以便重新計算
+      setResult(null)
+    }
+  }, [isOpen, initialMonsterId, mobInfoData])
+
   // 當狀態變化時，自動保存到 localStorage
   useEffect(() => {
     if (isOpen) {
@@ -276,24 +231,30 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
-        <div className="bg-blue-500 dark:bg-blue-600 p-6 rounded-t-xl sticky top-0 z-10">
+        <div className="bg-blue-500 dark:bg-blue-600 p-4 sm:p-6 rounded-t-xl sticky top-0 z-10">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10" strokeWidth="2"/>
-                <circle cx="12" cy="12" r="6" strokeWidth="2"/>
-                <circle cx="12" cy="12" r="2" fill="currentColor"/>
-              </svg>
-              <div>
-                <h2 className="text-2xl font-bold text-white">{t('title')}</h2>
-                <p className="text-blue-100 text-sm mt-1">{t('subtitle')}</p>
+            {/* 左側：佔位 */}
+            <div className="flex-1"></div>
+
+            {/* 中間：標題區域 */}
+            <div className="text-center">
+              <div className="flex items-center justify-center gap-2 mb-1">
+                <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" strokeWidth="2"/>
+                  <circle cx="12" cy="12" r="6" strokeWidth="2"/>
+                  <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                </svg>
+                <h2 className="text-xl sm:text-2xl font-bold text-white">{t('title')}</h2>
               </div>
+              <p className="text-blue-100 text-xs sm:text-sm">{t('subtitle')}</p>
             </div>
-            <div className="flex items-center gap-2">
+
+            {/* 右側：按鈕群組 */}
+            <div className="flex-1 flex items-center gap-2 justify-end">
               {/* 翻譯按鈕 */}
               <button
                 onClick={toggleLanguage}
-                className="p-2 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30"
+                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center"
                 aria-label="切換語言"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -308,10 +269,10 @@ export function AccuracyCalculatorModal({ isOpen, onClose }: AccuracyCalculatorM
               {/* 關閉按鈕 */}
               <button
                 onClick={onClose}
-                className="text-white hover:bg-white/20 rounded-full p-2 transition-colors"
+                className="p-3 min-h-[44px] min-w-[44px] text-white hover:bg-white/20 rounded-full transition-colors flex items-center justify-center"
                 aria-label="關閉"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"

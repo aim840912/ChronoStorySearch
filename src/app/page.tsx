@@ -421,12 +421,14 @@ export default function Home() {
         isClearModalOpen={modals.isClearModalOpen}
         isGachaModalOpen={modals.isGachaModalOpen}
         isMerchantShopModalOpen={modals.isMerchantShopModalOpen}
+        isAccuracyCalculatorOpen={modals.isAccuracyCalculatorOpen}
         selectedMonsterId={modals.selectedMonsterId ?? undefined}
         selectedMonsterName={modals.selectedMonsterName}
         selectedItemId={modals.selectedItemId}
         selectedItemName={modals.selectedItemName}
         selectedGachaMachineId={modals.selectedGachaMachineId ?? null}
         clearModalType={modals.clearModalType}
+        accuracyInitialMonsterId={modals.accuracyInitialMonsterId}
         hasPreviousModal={modals.hasPreviousModal}
         closeMonsterModal={modals.closeMonsterModal}
         closeItemModal={modals.closeItemModal}
@@ -434,10 +436,12 @@ export default function Home() {
         closeClearModal={modals.closeClearModal}
         closeGachaModal={modals.closeGachaModal}
         closeMerchantShopModal={modals.closeMerchantShopModal}
+        closeAccuracyCalculator={modals.closeAccuracyCalculator}
         goBack={modals.goBack}
         openGachaModal={modals.openGachaModal}
         openBugReportModal={modals.openBugReportModal}
         openMerchantShopModal={modals.openMerchantShopModal}
+        openAccuracyCalculator={modals.openAccuracyCalculator}
         allDrops={allDrops}
         gachaMachines={gachaMachines}
         itemAttributesMap={itemAttributesMap}

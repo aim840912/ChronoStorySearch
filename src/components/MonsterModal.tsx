@@ -26,6 +26,8 @@ interface MonsterModalProps {
   // 導航相關 props
   hasPreviousModal?: boolean
   onGoBack?: () => void
+  // 命中率計算器相關 props
+  onOpenAccuracyCalculator?: (monsterId: number) => void
 }
 
 /**
@@ -46,6 +48,7 @@ export function MonsterModal({
   onItemClick,
   hasPreviousModal,
   onGoBack,
+  onOpenAccuracyCalculator,
 }: MonsterModalProps) {
   const { t, language, setLanguage } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
@@ -359,7 +362,14 @@ export function MonsterModal({
               />
             </div>
             {/* 怪物屬性卡片 */}
-            <MonsterStatsCard mobInfo={mobInfo} />
+            <MonsterStatsCard
+              mobInfo={mobInfo}
+              onAccuracyClick={
+                monsterId && onOpenAccuracyCalculator
+                  ? () => onOpenAccuracyCalculator(monsterId)
+                  : undefined
+              }
+            />
             {/* 出沒地圖卡片 */}
             <MonsterLocationsCard
               monsterName={monsterData?.mobName || monsterName}

@@ -21,12 +21,14 @@ interface ModalManagerProps {
   isClearModalOpen: boolean
   isGachaModalOpen: boolean
   isMerchantShopModalOpen: boolean
+  isAccuracyCalculatorOpen: boolean
   selectedMonsterId: number | null | undefined
   selectedMonsterName: string
   selectedItemId: number | null
   selectedItemName: string
   selectedGachaMachineId: number | null
   clearModalType: 'monsters' | 'items'
+  accuracyInitialMonsterId: number | null | undefined
   hasPreviousModal: boolean
 
   // Modal 關閉函數
@@ -36,12 +38,14 @@ interface ModalManagerProps {
   closeClearModal: () => void
   closeGachaModal: () => void
   closeMerchantShopModal: () => void
+  closeAccuracyCalculator: () => void
   goBack: () => void
 
   // Modal 開啟函數
   openGachaModal: (machineId?: number) => void
   openBugReportModal: () => void
   openMerchantShopModal: () => void
+  openAccuracyCalculator: (initialMonsterId?: number | null) => void
 
   // 資料
   allDrops: DropsEssential[]  // 改為 Essential（只需基本資訊）
@@ -63,7 +67,7 @@ interface ModalManagerProps {
   handleItemClickFromGachaModal: (itemId: number, itemName: string) => void
   handleClearConfirm: () => void
 
-  // 工具 Modal 狀態
+  // 工具 Modal 狀態（舊的，僅用於 GameCommands）
   isAccuracyCalcOpen: boolean
   setIsAccuracyCalcOpen: (open: boolean) => void
   isGameCommandsOpen: boolean
@@ -93,12 +97,14 @@ export const ModalManager = memo(function ModalManager({
   isClearModalOpen,
   isGachaModalOpen,
   isMerchantShopModalOpen,
+  isAccuracyCalculatorOpen,
   selectedMonsterId,
   selectedMonsterName,
   selectedItemId,
   selectedItemName,
   selectedGachaMachineId,
   clearModalType,
+  accuracyInitialMonsterId,
   hasPreviousModal,
   closeMonsterModal,
   closeItemModal,
@@ -106,10 +112,12 @@ export const ModalManager = memo(function ModalManager({
   closeClearModal,
   closeGachaModal,
   closeMerchantShopModal,
+  closeAccuracyCalculator,
   goBack,
   openGachaModal,
   openBugReportModal,
   openMerchantShopModal,
+  openAccuracyCalculator,
   allDrops,
   gachaMachines,
   itemAttributesMap,
@@ -124,8 +132,8 @@ export const ModalManager = memo(function ModalManager({
   handleGachaMachineClick,
   handleItemClickFromGachaModal,
   handleClearConfirm,
-  isAccuracyCalcOpen,
-  setIsAccuracyCalcOpen,
+  isAccuracyCalcOpen: _isAccuracyCalcOpen, // eslint-disable-line @typescript-eslint/no-unused-vars
+  setIsAccuracyCalcOpen: _setIsAccuracyCalcOpen, // eslint-disable-line @typescript-eslint/no-unused-vars
   isGameCommandsOpen,
   setIsGameCommandsOpen,
   showBackToTop,
@@ -154,6 +162,7 @@ export const ModalManager = memo(function ModalManager({
         onItemClick={handleItemClickFromMonsterModal}
         hasPreviousModal={hasPreviousModal}
         onGoBack={goBack}
+        onOpenAccuracyCalculator={openAccuracyCalculator}
       />
 
       {/* Item Drops Modal */}
@@ -202,8 +211,9 @@ export const ModalManager = memo(function ModalManager({
 
       {/* Accuracy Calculator Modal */}
       <AccuracyCalculatorModal
-        isOpen={isAccuracyCalcOpen}
-        onClose={() => setIsAccuracyCalcOpen(false)}
+        isOpen={isAccuracyCalculatorOpen}
+        onClose={closeAccuracyCalculator}
+        initialMonsterId={accuracyInitialMonsterId ?? null}
       />
 
       {/* Game Commands Modal */}
@@ -278,7 +288,7 @@ export const ModalManager = memo(function ModalManager({
 
       {/* 浮動命中率計算器按鈕 */}
       <button
-        onClick={() => setIsAccuracyCalcOpen(true)}
+        onClick={() => openAccuracyCalculator()}
         className="fixed bottom-20 sm:bottom-22 left-4 sm:left-6 z-40 p-3 sm:p-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('accuracy.button')}
       >

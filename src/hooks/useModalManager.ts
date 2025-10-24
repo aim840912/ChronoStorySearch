@@ -5,7 +5,7 @@ import type { ClearModalType } from '@/types'
 /**
  * Modal 類型定義
  */
-type ModalType = 'monster' | 'item' | 'gacha' | 'bug' | 'clear' | 'merchant'
+type ModalType = 'monster' | 'item' | 'gacha' | 'bug' | 'clear' | 'merchant' | 'accuracy'
 
 /**
  * Monster Modal 資料結構
@@ -38,9 +38,16 @@ interface GachaModalData {
 }
 
 /**
+ * Accuracy Calculator Modal 資料結構
+ */
+interface AccuracyModalData {
+  initialMonsterId?: number | null
+}
+
+/**
  * Modal 狀態的聯合類型
  */
-type ModalData = MonsterModalData | ItemModalData | ClearModalData | GachaModalData | null
+type ModalData = MonsterModalData | ItemModalData | ClearModalData | GachaModalData | AccuracyModalData | null
 
 /**
  * 統一的 Modal 狀態
@@ -201,6 +208,20 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     setHistory({ previous: null })
   }, [])
 
+  // 開啟 Accuracy Calculator Modal
+  const openAccuracyCalculator = useCallback((initialMonsterId?: number | null) => {
+    setModal({
+      type: 'accuracy',
+      data: { initialMonsterId }
+    })
+  }, [])
+
+  // 關閉 Accuracy Calculator Modal
+  const closeAccuracyCalculator = useCallback(() => {
+    setModal({ type: null, data: null })
+    setHistory({ previous: null })
+  }, [])
+
   // 用於 URL 參數處理的 setters（向後相容）
   const setSelectedMonsterId = useCallback((mobId: number | null) => {
     if (mobId !== null && modal.type === 'monster') {
@@ -267,6 +288,7 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
   const itemData = modal.type === 'item' ? (modal.data as ItemModalData) : null
   const clearData = modal.type === 'clear' ? (modal.data as ClearModalData) : null
   const gachaData = modal.type === 'gacha' ? (modal.data as GachaModalData | null) : null
+  const accuracyData = modal.type === 'accuracy' ? (modal.data as AccuracyModalData | null) : null
 
   return {
     // 核心 API（新的簡化介面）
@@ -318,5 +340,14 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     isMerchantShopModalOpen: modal.type === 'merchant',
     openMerchantShopModal,
     closeMerchantShopModal,
+
+    // Accuracy Calculator Modal
+    isAccuracyCalculatorOpen: modal.type === 'accuracy',
+    accuracyInitialMonsterId: accuracyData?.initialMonsterId,
+    openAccuracyCalculator,
+    closeAccuracyCalculator,
+
+    // 暴露原始 modal 狀態（用於複雜條件判斷）
+    modal,
   }
 }
