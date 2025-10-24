@@ -16,7 +16,6 @@
       "Bash(npm run dev:*)",
       "Bash(rm:*)",
       "Read(//tmp/**)",
-      "Bash(git commit:*)",
       "mcp__playwright__browser_wait_for",
       "mcp__playwright__browser_resize",
       "Bash(identify:*)",
@@ -125,6 +124,7 @@
     ],
     "deny": [],
     "ask": [
+      "Bash(git commit:*)",
       "Bash(git push:*)"
     ]
   },

@@ -1,5 +1,4 @@
 import { useState, useCallback } from 'react'
-import { useRouter } from 'next/navigation'
 import type { ClearModalType } from '@/types'
 
 /**
@@ -91,14 +90,8 @@ interface UseModalManagerOptions {
  */
 export function useModalManager(options: UseModalManagerOptions = {}) {
   const { recordView } = options
-  const router = useRouter()
   const [modal, setModal] = useState<ModalState>({ type: null, data: null })
   const [history, setHistory] = useState<ModalHistoryState>({ previous: null })
-
-  // 通用的關閉處理（清理 URL 參數）
-  const closeWithRouter = useCallback(() => {
-    router.replace('/', { scroll: false })
-  }, [router])
 
   // 開啟 Monster Modal
   const openMonsterModal = useCallback((mobId: number, mobName: string, saveHistory = false) => {
@@ -115,14 +108,22 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
         data: { mobId, mobName }
       }
     })
+
+    // 使用 pushState 添加歷史記錄，URL 保持 /
+    window.history.pushState(
+      { modal: 'monster', id: mobId, name: mobName },
+      '',
+      '/'
+    )
   }, [recordView])
 
   // 關閉 Monster Modal
   const closeMonsterModal = useCallback(() => {
     setModal({ type: null, data: null })
     setHistory({ previous: null })
-    closeWithRouter()
-  }, [closeWithRouter])
+    // 使用 pushState 清除 state（返回首頁）
+    window.history.pushState(null, '', '/')
+  }, [])
 
   // 開啟 Item Modal
   const openItemModal = useCallback((itemId: number, itemName: string, saveHistory = false) => {
@@ -139,14 +140,22 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
         data: { itemId, itemName }
       }
     })
+
+    // 使用 pushState 添加歷史記錄，URL 保持 /
+    window.history.pushState(
+      { modal: 'item', id: itemId, name: itemName },
+      '',
+      '/'
+    )
   }, [recordView])
 
   // 關閉 Item Modal
   const closeItemModal = useCallback(() => {
     setModal({ type: null, data: null })
     setHistory({ previous: null })
-    closeWithRouter()
-  }, [closeWithRouter])
+    // 使用 pushState 清除 state（返回首頁）
+    window.history.pushState(null, '', '/')
+  }, [])
 
   // 開啟 Gacha Modal
   const openGachaModal = useCallback((machineId?: number, saveHistory = false) => {
@@ -160,17 +169,22 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
         data: machineId !== undefined ? { machineId } : null
       }
     })
+
+    // 使用 pushState 添加歷史記錄，URL 保持 /
+    window.history.pushState(
+      { modal: 'gacha', id: machineId },
+      '',
+      '/'
+    )
   }, [])
 
   // 關閉 Gacha Modal
   const closeGachaModal = useCallback(() => {
     setModal({ type: null, data: null })
     setHistory({ previous: null })
-    // 延遲清除 URL，確保 React 狀態更新完成後再執行
-    setTimeout(() => {
-      closeWithRouter()
-    }, 0)
-  }, [closeWithRouter])
+    // 使用 pushState 清除 state（返回首頁）
+    window.history.pushState(null, '', '/')
+  }, [])
 
   // 開啟 Bug Report Modal
   const openBugReportModal = useCallback(() => {

@@ -280,6 +280,7 @@ async function handleGET(
   - 使用專案日誌系統 (不用 console.log)
 
 - **提交前**：
+  - **先向使用者確認** - 展示變更檔案和 commit message 草稿
   - 運行格式化工具/linter
   - 自我審查變更
   - 確保提交訊息解釋「為什麼」
@@ -511,3 +512,15 @@ echo "Build time: $(date)"
 - **謹慎建立檔案** - 只在絕對必要時建立新檔案
 - **優先編輯現有檔案** - 永遠優先選擇編輯而非建立
 - **不主動建立文檔** - 除非使用者明確要求，否則不建立 *.md 或 README 檔案
+
+### Git 提交流程
+- **Commit 前必須詢問** - 在執行 `git commit` 前：
+  1. 展示變更的檔案列表 (`git status`, `git diff --stat`)
+  2. 展示完整的 commit message 草稿
+  3. 等待使用者明確確認後才執行 commit
+  4. 確認後才可執行 `git add` 和 `git commit`
+
+- **Push 前必須詢問** - commit 完成後：
+  1. 詢問使用者是否要推送到 remote
+  2. 等待使用者明確確認後才執行 `git push`
+  3. 永不自動執行 push 操作

@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { useSearchParams } from 'next/navigation'
 import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, ViewHistoryItem } from '@/types'
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 import { useFavoriteMonsters } from '@/hooks/useFavoriteMonsters'
@@ -22,7 +21,6 @@ import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
 
 export default function Home() {
-  const searchParams = useSearchParams()
   const { t, language } = useLanguage()
 
   // 篩選模式：全部 or 最愛怪物 or 最愛物品
@@ -166,63 +164,93 @@ export default function Home() {
     }
   }, [debouncedSearchTerm, searchType, advancedFilter.enabled, advancedFilter.itemCategories, loadGachaMachines, modals.isGachaModalOpen])
 
-  // 處理 URL 參數 - 搜尋詞和自動開啟對應的 modal
+  // 初始載入時處理分享連結（從 hash 參數開啟 modal）
   useEffect(() => {
-    // 處理搜尋關鍵字參數
-    const searchQuery = searchParams.get('q')
-    if (searchQuery) {
-      search.setSearchTerm(decodeURIComponent(searchQuery))
-      clientLogger.info(`從 URL 參數載入搜尋詞: ${decodeURIComponent(searchQuery)}`)
-    }
-
     if (allDrops.length === 0) return // 等待資料載入完成
 
-    const monsterIdParam = searchParams.get('monster')
-    const itemIdParam = searchParams.get('item')
-    const gachaParam = searchParams.get('gacha')
+    const hash = window.location.hash
+    if (!hash || hash === '#') return
 
+    // 解析 hash 參數
+    const params = new URLSearchParams(hash.slice(1))
+    const monsterIdParam = params.get('monster')
+    const itemIdParam = params.get('item')
+    const gachaParam = params.get('gacha')
+
+    // 立即清除 hash（使用 replaceState）
+    window.history.replaceState(null, '', '/')
+
+    // 根據參數開啟對應 Modal
     if (monsterIdParam) {
       const monsterId = parseInt(monsterIdParam, 10)
       if (!isNaN(monsterId)) {
-        // 從 allDrops 中查找怪物名稱
         const monster = allDrops.find((drop) => drop.mobId === monsterId)
         if (monster) {
-          // 使用顯示名稱（根據當前語言，有中文名稱且語言為中文時顯示中文，否則顯示英文）
-          const displayName = (language === 'zh-TW' && monster.chineseMobName) ? monster.chineseMobName : monster.mobName
+          const displayName = (language === 'zh-TW' && monster.chineseMobName)
+            ? monster.chineseMobName
+            : monster.mobName
           modals.openMonsterModal(monsterId, displayName)
-          clientLogger.info(`從 URL 參數開啟怪物 modal: ${displayName} (${monsterId})`)
+          clientLogger.info(`從分享連結開啟怪物 modal: ${displayName} (${monsterId})`)
         }
       }
     } else if (itemIdParam) {
       const itemId = parseInt(itemIdParam, 10)
       if (!isNaN(itemId) || itemIdParam === '0') {
         const parsedItemId = itemIdParam === '0' ? 0 : itemId
-        // 從 allDrops 中查找物品名稱
         const item = allDrops.find((drop) => drop.itemId === parsedItemId)
         if (item) {
-          // 使用顯示名稱（根據當前語言，有中文名稱且語言為中文時顯示中文，否則顯示英文）
-          const displayName = (language === 'zh-TW' && item.chineseItemName) ? item.chineseItemName : item.itemName
+          const displayName = (language === 'zh-TW' && item.chineseItemName)
+            ? item.chineseItemName
+            : item.itemName
           modals.openItemModal(parsedItemId, displayName)
-          clientLogger.info(`從 URL 參數開啟物品 modal: ${displayName} (${parsedItemId})`)
+          clientLogger.info(`從分享連結開啟物品 modal: ${displayName} (${parsedItemId})`)
         }
       }
-    } else if (gachaParam && !modals.isGachaModalOpen) {
+    } else if (gachaParam) {
       if (gachaParam === 'list') {
-        // 開啟轉蛋機列表
         modals.openGachaModal()
-        clientLogger.info('從 URL 參數開啟轉蛋機列表 modal')
+        clientLogger.info('從分享連結開啟轉蛋機列表 modal')
       } else {
-        // 開啟特定轉蛋機
         const machineId = parseInt(gachaParam, 10)
         if (!isNaN(machineId) && machineId >= 1 && machineId <= 7) {
           modals.openGachaModal(machineId)
-          clientLogger.info(`從 URL 參數開啟轉蛋機 modal: 機台 ${machineId}`)
+          clientLogger.info(`從分享連結開啟轉蛋機 modal: 機台 ${machineId}`)
         }
       }
     }
-  // modals 和 search 的方法是穩定的 useCallback，不需要作為依賴
-  // 將它們放入依賴會導致 modal 狀態改變時觸發 useEffect，造成無限循環
-  }, [allDrops, searchParams, language]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [allDrops, language]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // 監聽瀏覽器返回鍵（popstate 事件）
+  useEffect(() => {
+    const handlePopState = (event: PopStateEvent) => {
+      const state = event.state as { modal?: string; id?: number; name?: string } | null
+
+      if (state?.modal === 'monster' && state.id && state.name) {
+        modals.openMonsterModal(state.id, state.name)
+        clientLogger.debug('從返回鍵開啟怪物 Modal', { id: state.id, name: state.name })
+      } else if (state?.modal === 'item' && typeof state.id === 'number' && state.name) {
+        modals.openItemModal(state.id, state.name)
+        clientLogger.debug('從返回鍵開啟物品 Modal', { id: state.id, name: state.name })
+      } else if (state?.modal === 'gacha') {
+        modals.openGachaModal(state.id)
+        clientLogger.debug('從返回鍵開啟轉蛋機 Modal', { id: state.id })
+      } else {
+        // state 為 null 或不是 modal，關閉所有 modal
+        if (modals.isMonsterModalOpen) {
+          modals.setIsMonsterModalOpen(false)
+        }
+        if (modals.isItemModalOpen) {
+          modals.setIsItemModalOpen(false)
+        }
+        if (modals.isGachaModalOpen) {
+          modals.closeGachaModal()
+        }
+      }
+    }
+
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
+  }, [modals])
 
   // 進階篩選變更時，滾動到頁面頂部以顯示結果
   useEffect(() => {
