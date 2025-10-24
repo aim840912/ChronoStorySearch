@@ -70,43 +70,49 @@ export function BugReportModal({ isOpen, onClose }: BugReportModalProps) {
 
         {/* Modal Content */}
         <div className="p-6">
-          {/* Discord 聯絡資訊 */}
+          {/* Discord 頻道資訊 */}
           <div className="mb-6">
             <div className="flex items-center gap-3 mb-4">
               <svg className="w-8 h-8 text-indigo-500" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515a.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0a12.64 12.64 0 00-.617-1.25a.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057a19.9 19.9 0 005.993 3.03a.078.078 0 00.084-.028a14.09 14.09 0 001.226-1.994a.076.076 0 00-.041-.106a13.107 13.107 0 01-1.872-.892a.077.077 0 01-.008-.128a10.2 10.2 0 00.372-.292a.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127a12.299 12.299 0 01-1.873.892a.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028a19.839 19.839 0 006.002-3.03a.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z" />
               </svg>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white">Discord 聯絡方式</h3>
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white">Discord 回報頻道</h3>
             </div>
 
-            <div className="space-y-3">
-              <div className="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg border border-indigo-200 dark:border-indigo-800">
-                <p className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  方式 1：加好友
-                </p>
-                <div className="flex items-center gap-2">
-                  <code className="flex-1 bg-white dark:bg-gray-700 px-3 py-2 rounded border border-gray-300 dark:border-gray-600 text-indigo-600 dark:text-indigo-400 font-mono text-sm">
-                    tiencheng
-                  </code>
-                  <button
-                    onClick={() => {
-                      navigator.clipboard.writeText('tiencheng')
-                      alert('已複製到剪貼簿！')
-                    }}
-                    className="px-3 py-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded transition-colors text-sm"
-                  >
-                    複製
-                  </button>
-                </div>
-              </div>
+            <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
+              請在 Discord 頻道留言回報問題或提供建議
+            </p>
 
-              <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg border border-purple-200 dark:border-purple-800">
-                <p className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  方式 2：在群組標記
+            <div className="space-y-3">
+              {/* Discord 頻道連結 */}
+              <div className="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg border border-indigo-200 dark:border-indigo-800">
+                <p className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
+                  Discord 頻道連結
                 </p>
-                <code className="block bg-white dark:bg-gray-700 px-3 py-2 rounded border border-gray-300 dark:border-gray-600 text-purple-600 dark:text-purple-400 font-mono text-sm">
-                  @tiencheng
-                </code>
+                <div className="flex flex-col gap-2">
+                  <code className="bg-white dark:bg-gray-700 px-3 py-2 rounded border border-gray-300 dark:border-gray-600 text-indigo-600 dark:text-indigo-400 font-mono text-xs break-all">
+                    https://discord.com/channels/1326772066124566538/1428411907378774026
+                  </code>
+                  <div className="flex gap-2">
+                    <button
+                      onClick={() => {
+                        navigator.clipboard.writeText('https://discord.com/channels/1326772066124566538/1428411907378774026')
+                        alert('連結已複製到剪貼簿！')
+                      }}
+                      className="flex-1 px-3 py-2 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white rounded transition-colors text-sm font-medium"
+                    >
+                      複製連結
+                    </button>
+                    <button
+                      onClick={() => {
+                        window.open('https://discord.com/channels/1326772066124566538/1428411907378774026', '_blank')
+                      }}
+                      className="flex-1 px-3 py-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded transition-colors text-sm font-medium"
+                    >
+                      開啟頻道
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
