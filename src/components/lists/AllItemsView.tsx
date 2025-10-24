@@ -1,6 +1,6 @@
 'use client'
 
-import type { ExtendedUniqueItem, ItemAttributesEssential } from '@/types'
+import type { ExtendedUniqueItem, ItemAttributesEssential, ViewHistoryItem, DropsEssential } from '@/types'
 import type { RefObject } from 'react'
 import { MonsterCard } from '@/components/MonsterCard'
 import { ItemCard } from '@/components/ItemCard'
@@ -53,6 +53,10 @@ interface AllItemsViewProps {
   onToggleFavorite: (mobId: number, mobName: string) => void
   onToggleItemFavorite: (itemId: number, itemName: string) => void
 
+  // 瀏覽歷史（用於首頁顯示）
+  viewHistory: ViewHistoryItem[]
+  allDrops: DropsEssential[]
+
   // 翻譯函數
   t: (key: string) => string
 }
@@ -80,6 +84,8 @@ export function AllItemsView({
   isItemFavorite,
   onToggleFavorite,
   onToggleItemFavorite,
+  viewHistory,
+  allDrops,
   t,
 }: AllItemsViewProps) {
   // 沒有任何資料時顯示空狀態
@@ -93,44 +99,95 @@ export function AllItemsView({
     )
   }
 
-  // 無搜尋詞且無進階篩選：隨機混合顯示怪物和物品
-  if (!hasSearchOrFilter && mixedCards.length > 0) {
-    return (
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
-        {mixedCards.map((card, index) => {
-          if (card.type === 'monster') {
-            return (
-              <MonsterCard
-                key={`monster-${card.data.mobId}-${index}`}
-                mobId={card.data.mobId}
-                mobName={card.data.mobName}
-                chineseMobName={card.data.chineseMobName}
-                dropCount={card.data.dropCount}
-                onCardClick={onMonsterCardClick}
-                isFavorite={isFavorite(card.data.mobId)}
-                onToggleFavorite={onToggleFavorite}
-                level={mobLevelMap.get(card.data.mobId) ?? null}
-              />
-            )
-          } else {
-            return (
-              <ItemCard
-                key={`item-${card.data.itemId}-${index}`}
-                itemId={card.data.itemId}
-                itemName={card.data.itemName}
-                chineseItemName={card.data.chineseItemName}
-                monsterCount={card.data.monsterCount}
-                onCardClick={onItemCardClick}
-                isFavorite={isItemFavorite(card.data.itemId)}
-                onToggleFavorite={onToggleItemFavorite}
-                source={card.data.source}
-                reqLevel={itemAttributesMap.get(card.data.itemId)?.req_level ?? null}
-              />
-            )
-          }
-        })}
-      </div>
-    )
+  // 無搜尋詞且無進階篩選：優先顯示瀏覽歷史，沒有歷史時顯示隨機混合卡片
+  if (!hasSearchOrFilter) {
+    // 優先顯示瀏覽歷史
+    if (viewHistory.length > 0) {
+      return (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
+          {viewHistory.map((historyItem, index) => {
+            if (historyItem.type === 'monster') {
+              // 從 allDrops 查找怪物完整資料
+              const monsterData = allDrops.find(drop => drop.mobId === historyItem.id)
+              if (!monsterData) return null // 找不到資料時跳過
+
+              return (
+                <MonsterCard
+                  key={`history-monster-${historyItem.id}-${index}`}
+                  mobId={monsterData.mobId}
+                  mobName={monsterData.mobName}
+                  chineseMobName={monsterData.chineseMobName}
+                  dropCount={1} // 瀏覽歷史不顯示 dropCount，設為 1
+                  onCardClick={onMonsterCardClick}
+                  isFavorite={isFavorite(monsterData.mobId)}
+                  onToggleFavorite={onToggleFavorite}
+                  level={mobLevelMap.get(monsterData.mobId) ?? null}
+                />
+              )
+            } else {
+              // 從 allDrops 查找物品完整資料
+              const itemData = allDrops.find(drop => drop.itemId === historyItem.id)
+              if (!itemData) return null // 找不到資料時跳過
+
+              return (
+                <ItemCard
+                  key={`history-item-${historyItem.id}-${index}`}
+                  itemId={itemData.itemId}
+                  itemName={itemData.itemName}
+                  chineseItemName={itemData.chineseItemName}
+                  monsterCount={1} // 瀏覽歷史不顯示 monsterCount，設為 1
+                  onCardClick={onItemCardClick}
+                  isFavorite={isItemFavorite(itemData.itemId)}
+                  onToggleFavorite={onToggleItemFavorite}
+                  source={{ fromDrops: true, fromGacha: false }} // DropsEssential 來自掉落資料
+                  reqLevel={itemAttributesMap.get(itemData.itemId)?.req_level ?? null}
+                />
+              )
+            }
+          })}
+        </div>
+      )
+    }
+
+    // 沒有瀏覽歷史時，顯示隨機混合卡片
+    if (mixedCards.length > 0) {
+      return (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
+          {mixedCards.map((card, index) => {
+            if (card.type === 'monster') {
+              return (
+                <MonsterCard
+                  key={`monster-${card.data.mobId}-${index}`}
+                  mobId={card.data.mobId}
+                  mobName={card.data.mobName}
+                  chineseMobName={card.data.chineseMobName}
+                  dropCount={card.data.dropCount}
+                  onCardClick={onMonsterCardClick}
+                  isFavorite={isFavorite(card.data.mobId)}
+                  onToggleFavorite={onToggleFavorite}
+                  level={mobLevelMap.get(card.data.mobId) ?? null}
+                />
+              )
+            } else {
+              return (
+                <ItemCard
+                  key={`item-${card.data.itemId}-${index}`}
+                  itemId={card.data.itemId}
+                  itemName={card.data.itemName}
+                  chineseItemName={card.data.chineseItemName}
+                  monsterCount={card.data.monsterCount}
+                  onCardClick={onItemCardClick}
+                  isFavorite={isItemFavorite(card.data.itemId)}
+                  onToggleFavorite={onToggleItemFavorite}
+                  source={card.data.source}
+                  reqLevel={itemAttributesMap.get(card.data.itemId)?.req_level ?? null}
+                />
+              )
+            }
+          })}
+        </div>
+      )
+    }
   }
 
   // 有搜尋詞：分區顯示怪物和物品

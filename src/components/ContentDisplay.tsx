@@ -1,7 +1,7 @@
 'use client'
 
 import { memo } from 'react'
-import type { FilterMode, ItemAttributesEssential } from '@/types'
+import type { FilterMode, ItemAttributesEssential, ViewHistoryItem, DropsEssential } from '@/types'
 import { FavoriteMonstersList } from '@/components/lists/FavoriteMonstersList'
 import { FavoriteItemsList } from '@/components/lists/FavoriteItemsList'
 import { AllItemsView } from '@/components/lists/AllItemsView'
@@ -64,6 +64,10 @@ interface ContentDisplayProps {
   itemsInfiniteScroll: InfiniteScrollResult<ExtendedUniqueItem>
   hasSearchOrFilter: boolean
   hasAnyData: boolean
+
+  // 瀏覽歷史（用於首頁顯示）
+  viewHistory: ViewHistoryItem[]
+  allDrops: DropsEssential[]
 }
 
 /**
@@ -95,6 +99,8 @@ export const ContentDisplay = memo(function ContentDisplay({
   itemsInfiniteScroll,
   hasSearchOrFilter,
   hasAnyData,
+  viewHistory,
+  allDrops,
 }: ContentDisplayProps) {
   const { t } = useLanguage()
 
@@ -151,6 +157,8 @@ export const ContentDisplay = memo(function ContentDisplay({
           isItemFavorite={isItemFavorite}
           onToggleFavorite={onToggleFavorite}
           onToggleItemFavorite={onToggleItemFavorite}
+          viewHistory={viewHistory}
+          allDrops={allDrops}
           t={t}
         />
       )}

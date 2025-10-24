@@ -1,7 +1,7 @@
 'use client'
 
 import { memo } from 'react'
-import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode, ViewHistoryItem } from '@/types'
+import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode } from '@/types'
 import { SearchBar } from '@/components/SearchBar'
 import { FilterButtons } from '@/components/FilterButtons'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
@@ -39,11 +39,6 @@ interface SearchHeaderProps {
   onResetAdvancedFilter: () => void
   advancedFilter: AdvancedFilterOptions
   onAdvancedFilterChange: (filter: AdvancedFilterOptions) => void
-
-  // 瀏覽歷史相關（可選）
-  viewHistory?: ViewHistoryItem[]
-  onViewHistoryItemClick?: (item: ViewHistoryItem) => void
-  onClearViewHistory?: () => void
 }
 
 /**
@@ -77,9 +72,6 @@ export const SearchHeader = memo(function SearchHeader({
   onResetAdvancedFilter,
   advancedFilter,
   onAdvancedFilterChange,
-  viewHistory,
-  onViewHistoryItemClick,
-  onClearViewHistory,
 }: SearchHeaderProps) {
   const { t } = useLanguage()
 
@@ -126,9 +118,6 @@ export const SearchHeader = memo(function SearchHeader({
         advancedFilterCount={advancedFilterCount}
         onResetAdvancedFilter={onResetAdvancedFilter}
         advancedFilter={advancedFilter}
-        viewHistory={viewHistory}
-        onViewHistoryItemClick={onViewHistoryItemClick}
-        onClearViewHistory={onClearViewHistory}
       />
 
       {/* 進階篩選面板 */}

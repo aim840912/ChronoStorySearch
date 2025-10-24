@@ -3,7 +3,7 @@ import type { ViewHistoryItem } from '@/types'
 import { getViewHistory, setViewHistory } from '@/lib/storage'
 import { storageLogger } from '@/lib/logger'
 
-const MAX_HISTORY_ITEMS = 5 // 最多儲存 5 筆歷史記錄（與顯示數量一致）
+const MAX_HISTORY_ITEMS = 10 // 最多儲存 10 筆歷史記錄（與首頁顯示數量一致）
 
 /**
  * 瀏覽歷史管理 Hook

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef, useCallback } from 'react'
-import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, ViewHistoryItem } from '@/types'
+import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter } from '@/types'
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 import { useFavoriteMonsters } from '@/hooks/useFavoriteMonsters'
 import { useFavoriteItems } from '@/hooks/useFavoriteItems'
@@ -364,17 +364,6 @@ export default function Home() {
     modals.openItemModal(itemId, itemName, true) // saveHistory=true
   }, [modals])
 
-  // 處理瀏覽歷史項目點擊
-  const handleViewHistoryItemClick = useCallback((item: ViewHistoryItem) => {
-    if (item.type === 'monster') {
-      modals.openMonsterModal(item.id, item.name)
-      clientLogger.debug('從瀏覽歷史開啟怪物 Modal', { id: item.id, name: item.name })
-    } else {
-      modals.openItemModal(item.id, item.name)
-      clientLogger.debug('從瀏覽歷史開啟物品 Modal', { id: item.id, name: item.name })
-    }
-  }, [modals])
-
   // 返回頂部
   const scrollToTop = useCallback(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -409,9 +398,6 @@ export default function Home() {
           onResetAdvancedFilter={handleResetAdvancedFilter}
           advancedFilter={advancedFilter}
           onAdvancedFilterChange={setAdvancedFilter}
-          viewHistory={viewHistory.history}
-          onViewHistoryItemClick={handleViewHistoryItemClick}
-          onClearViewHistory={viewHistory.clearHistory}
         />
 
         {/* 內容顯示區域 */}
@@ -438,6 +424,8 @@ export default function Home() {
           itemsInfiniteScroll={itemsInfiniteScroll}
           hasSearchOrFilter={debouncedSearchTerm.trim() !== '' || advancedFilter.enabled}
           hasAnyData={uniqueAllMonsters.length > 0 || uniqueAllItems.length > 0}
+          viewHistory={viewHistory.history}
+          allDrops={allDrops}
         />
       </div>
 
