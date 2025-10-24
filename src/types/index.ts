@@ -72,6 +72,14 @@ export interface FavoriteItem {
   addedAt: number
 }
 
+// 瀏覽歷史項目介面
+export interface ViewHistoryItem {
+  type: 'monster' | 'item'
+  id: number
+  name: string
+  viewedAt: number
+}
+
 // 篩選模式類型
 export type FilterMode = 'all' | 'favorite-monsters' | 'favorite-items'
 

@@ -58,19 +58,32 @@ interface ModalHistoryState {
 }
 
 /**
+ * Modal 管理 Hook 參數
+ */
+interface UseModalManagerOptions {
+  /**
+   * 記錄瀏覽歷史的回調函數（可選）
+   * 當開啟 Monster 或 Item Modal 時會自動調用
+   */
+  recordView?: (type: 'monster' | 'item', id: number, name: string) => void
+}
+
+/**
  * Modal 管理 Hook
  *
  * 職責：
  * - 統一管理所有 Modal 的開啟/關閉狀態
  * - 簡化 Modal 相關資料的儲存和存取
  * - 提供一致的 API 介面
+ * - 自動記錄瀏覽歷史（如果提供 recordView callback）
  *
  * 優化：
  * - 從 13 個 state 變數減少為 1 個統一狀態
  * - 從 19 個 return 值減少為 8 個核心方法
  * - 使用 TypeScript 泛型確保型別安全
  */
-export function useModalManager() {
+export function useModalManager(options: UseModalManagerOptions = {}) {
+  const { recordView } = options
   const router = useRouter()
   const [modal, setModal] = useState<ModalState>({ type: null, data: null })
   const [history, setHistory] = useState<ModalHistoryState>({ previous: null })
@@ -82,6 +95,9 @@ export function useModalManager() {
 
   // 開啟 Monster Modal
   const openMonsterModal = useCallback((mobId: number, mobName: string, saveHistory = false) => {
+    // 記錄瀏覽歷史（如果提供了 recordView）
+    recordView?.('monster', mobId, mobName)
+
     setModal(currentModal => {
       // 如果需要保存歷史，且當前有開啟的 Modal，則保存
       if (saveHistory && currentModal.type !== null) {
@@ -92,7 +108,7 @@ export function useModalManager() {
         data: { mobId, mobName }
       }
     })
-  }, [])
+  }, [recordView])
 
   // 關閉 Monster Modal
   const closeMonsterModal = useCallback(() => {
@@ -103,6 +119,9 @@ export function useModalManager() {
 
   // 開啟 Item Modal
   const openItemModal = useCallback((itemId: number, itemName: string, saveHistory = false) => {
+    // 記錄瀏覽歷史（如果提供了 recordView）
+    recordView?.('item', itemId, itemName)
+
     setModal(currentModal => {
       // 如果需要保存歷史，且當前有開啟的 Modal，則保存
       if (saveHistory && currentModal.type !== null) {
@@ -113,7 +132,7 @@ export function useModalManager() {
         data: { itemId, itemName }
       }
     })
-  }, [])
+  }, [recordView])
 
   // 關閉 Item Modal
   const closeItemModal = useCallback(() => {

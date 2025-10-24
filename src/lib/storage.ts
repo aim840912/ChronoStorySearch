@@ -4,7 +4,7 @@
  */
 
 import { storageLogger } from './logger'
-import type { FavoriteMonster, FavoriteItem, Language, Theme, AccuracyCalculatorState } from '@/types'
+import type { FavoriteMonster, FavoriteItem, Language, Theme, AccuracyCalculatorState, ViewHistoryItem } from '@/types'
 
 // Storage keys
 export const STORAGE_KEYS = {
@@ -13,6 +13,7 @@ export const STORAGE_KEYS = {
   LANGUAGE: 'chronostory-language',
   THEME: 'chronostory-theme',
   ACCURACY_CALCULATOR: 'chronostory-accuracy-calculator',
+  VIEW_HISTORY: 'chronostory-view-history',
 } as const
 
 /**
@@ -138,4 +139,12 @@ export function getAccuracyCalculatorState(): AccuracyCalculatorState | null {
 
 export function setAccuracyCalculatorState(state: AccuracyCalculatorState): boolean {
   return setStorageItem(STORAGE_KEYS.ACCURACY_CALCULATOR, state)
+}
+
+export function getViewHistory(): ViewHistoryItem[] {
+  return getStorageItem<ViewHistoryItem[]>(STORAGE_KEYS.VIEW_HISTORY, [])
+}
+
+export function setViewHistory(history: ViewHistoryItem[]): boolean {
+  return setStorageItem(STORAGE_KEYS.VIEW_HISTORY, history)
 }

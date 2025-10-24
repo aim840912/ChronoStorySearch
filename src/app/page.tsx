@@ -2,13 +2,14 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { useSearchParams } from 'next/navigation'
-import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter } from '@/types'
+import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, ViewHistoryItem } from '@/types'
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 import { useFavoriteMonsters } from '@/hooks/useFavoriteMonsters'
 import { useFavoriteItems } from '@/hooks/useFavoriteItems'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useToast } from '@/hooks/useToast'
 import { useModalManager } from '@/hooks/useModalManager'
+import { useViewHistory } from '@/hooks/useViewHistory'
 import { useSearchWithSuggestions } from '@/hooks/useSearchWithSuggestions'
 import { useDataManagement } from '@/hooks/useDataManagement'
 import { useSearchLogic } from '@/hooks/useSearchLogic'
@@ -56,7 +57,8 @@ export default function Home() {
 
   // 使用自定義 hooks
   const toast = useToast()
-  const modals = useModalManager()
+  const viewHistory = useViewHistory()
+  const modals = useModalManager({ recordView: viewHistory.recordView })
   const search = useSearchWithSuggestions()
 
   // Debounced 搜尋詞 - 延遲 500ms 以減少計算頻率
@@ -334,6 +336,17 @@ export default function Home() {
     modals.openItemModal(itemId, itemName, true) // saveHistory=true
   }, [modals])
 
+  // 處理瀏覽歷史項目點擊
+  const handleViewHistoryItemClick = useCallback((item: ViewHistoryItem) => {
+    if (item.type === 'monster') {
+      modals.openMonsterModal(item.id, item.name)
+      clientLogger.debug('從瀏覽歷史開啟怪物 Modal', { id: item.id, name: item.name })
+    } else {
+      modals.openItemModal(item.id, item.name)
+      clientLogger.debug('從瀏覽歷史開啟物品 Modal', { id: item.id, name: item.name })
+    }
+  }, [modals])
+
   // 返回頂部
   const scrollToTop = useCallback(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -368,6 +381,9 @@ export default function Home() {
           onResetAdvancedFilter={handleResetAdvancedFilter}
           advancedFilter={advancedFilter}
           onAdvancedFilterChange={setAdvancedFilter}
+          viewHistory={viewHistory.history}
+          onViewHistoryItemClick={handleViewHistoryItemClick}
+          onClearViewHistory={viewHistory.clearHistory}
         />
 
         {/* 內容顯示區域 */}

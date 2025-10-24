@@ -1,7 +1,9 @@
 'use client'
 
+import { useState, useRef, useEffect } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
-import type { FilterMode, ClearModalType, AdvancedFilterOptions } from '@/types'
+import { ViewHistoryDropdown } from '@/components/ViewHistoryDropdown'
+import type { FilterMode, ClearModalType, AdvancedFilterOptions, ViewHistoryItem } from '@/types'
 
 interface FilterButtonsProps {
   filterMode: FilterMode
@@ -14,11 +16,15 @@ interface FilterButtonsProps {
   advancedFilterCount: number
   onResetAdvancedFilter: () => void
   advancedFilter: AdvancedFilterOptions
+  // 瀏覽歷史相關
+  viewHistory?: ViewHistoryItem[]
+  onViewHistoryItemClick?: (item: ViewHistoryItem) => void
+  onClearViewHistory?: () => void
 }
 
 /**
  * 篩選按鈕元件
- * 包含全部/最愛怪物/最愛物品的篩選按鈕和清除按鈕
+ * 包含全部/最愛怪物/最愛物品的篩選按鈕、清除按鈕和瀏覽歷史按鈕
  */
 export function FilterButtons({
   filterMode,
@@ -31,8 +37,35 @@ export function FilterButtons({
   advancedFilterCount,
   onResetAdvancedFilter,
   advancedFilter,
+  viewHistory = [],
+  onViewHistoryItemClick,
+  onClearViewHistory,
 }: FilterButtonsProps) {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
+
+  // 瀏覽歷史下拉選單狀態
+  const [isHistoryDropdownOpen, setIsHistoryDropdownOpen] = useState(false)
+  const historyButtonRef = useRef<HTMLDivElement>(null)
+
+  // 點擊外部關閉下拉選單
+  useEffect(() => {
+    if (!isHistoryDropdownOpen) return
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (historyButtonRef.current && !historyButtonRef.current.contains(event.target as Node)) {
+        setIsHistoryDropdownOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [isHistoryDropdownOpen])
+
+  // 處理歷史項目點擊
+  const handleHistoryItemClick = (item: ViewHistoryItem) => {
+    setIsHistoryDropdownOpen(false)
+    onViewHistoryItemClick?.(item)
+  }
 
   // 生成篩選條件摘要
   const getFilterSummary = (): string => {
@@ -184,6 +217,46 @@ export function FilterButtons({
             </svg>
             {t('filter.clear')}
           </button>
+        )}
+
+        {/* 瀏覽歷史按鈕 */}
+        {onViewHistoryItemClick && (
+          <div ref={historyButtonRef} className="relative ml-auto">
+            <button
+              onClick={() => setIsHistoryDropdownOpen(!isHistoryDropdownOpen)}
+              className={`px-6 py-2.5 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 ${
+                isHistoryDropdownOpen
+                  ? 'bg-purple-500 text-white shadow-md'
+                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700'
+              }`}
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>{language === 'zh-TW' ? '瀏覽歷史' : 'History'}</span>
+              {viewHistory.length > 0 && (
+                <span className={`px-2 py-0.5 text-xs font-bold rounded-full ${
+                  isHistoryDropdownOpen
+                    ? 'bg-white/20'
+                    : 'bg-purple-100 text-purple-800 dark:bg-purple-900/50 dark:text-purple-300'
+                }`}>
+                  {viewHistory.length}
+                </span>
+              )}
+            </button>
+
+            {/* 下拉選單 */}
+            {isHistoryDropdownOpen && (
+              <ViewHistoryDropdown
+                history={viewHistory}
+                onItemClick={handleHistoryItemClick}
+                onClearHistory={() => {
+                  onClearViewHistory?.()
+                  setIsHistoryDropdownOpen(false)
+                }}
+              />
+            )}
+          </div>
         )}
       </div>
     </div>
