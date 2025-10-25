@@ -27,6 +27,8 @@
     "vercel:status": "node scripts/vercel-manage.js status"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.76.1",
+    "@upstash/redis": "^1.35.6",
     "@vercel/analytics": "^1.5.0",
     "next": "^15.5.6",
     "react": "^19.2.0",
