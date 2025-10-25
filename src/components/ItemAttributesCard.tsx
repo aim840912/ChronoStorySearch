@@ -1,9 +1,7 @@
 'use client'
 
-import { useMemo } from 'react'
 import type { ItemAttributes } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { calculateMaxStatCombinations } from '@/lib/equipment-stats-utils'
 
 interface ItemAttributesCardProps {
   attributes: ItemAttributes | null
@@ -15,47 +13,6 @@ interface ItemAttributesCardProps {
  */
 export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
   const { t } = useLanguage()
-
-  // 計算最大屬性組合（必須在最頂層調用，符合 React Hooks 規則）
-  const maxStatCombinations = useMemo(() => {
-    return calculateMaxStatCombinations(attributes)
-  }, [attributes])
-
-  // 建立屬性到「當其他屬性最大時」最大值的映射
-  const maxStatByAttribute = useMemo(() => {
-    const map = new Map<string, {
-      maxValue: number
-      maxedStat: string
-      maxedStatAbsValue: number
-    }>()
-
-    if (!maxStatCombinations || maxStatCombinations.length === 0 || !attributes?.equipment?.stats) {
-      return map
-    }
-
-    const { stats } = attributes.equipment
-
-    // 從 maxStatCombinations 提取每個屬性的最大值及其對應的組合資訊
-    maxStatCombinations.forEach(combination => {
-      const maxedStatBase = stats[combination.maxedStat] || 0
-      const maxedStatAbsValue = maxedStatBase + combination.maxedValue
-
-      combination.otherStats.forEach(({ stat, maxPossible }) => {
-        const current = map.get(stat)
-
-        // 如果當前屬性沒有記錄，或新的 maxPossible 更大，則更新
-        if (!current || maxPossible > current.maxValue) {
-          map.set(stat, {
-            maxValue: maxPossible,
-            maxedStat: combination.maxedStat,
-            maxedStatAbsValue: maxedStatAbsValue
-          })
-        }
-      })
-    })
-
-    return map
-  }, [maxStatCombinations, attributes])
 
   // 處理 Scroll (卷軸) 類型物品
   if (attributes && attributes.sub_type === 'Scroll' && attributes.scroll) {
@@ -410,15 +367,6 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
               const minValue = hasVariation ? variation.min : null
               const maxValue = hasVariation ? variation.max : null
 
-              // 檢查是否為主屬性
-              const isMainStat = ['str', 'dex', 'int', 'luk'].includes(key)
-              const maxStatInfo = isMainStat ? maxStatByAttribute.get(key) : null
-
-              // maxStatInfo.maxValue 存儲的是增量，需要加上預設值得到絕對值
-              const absoluteMaxValue = maxStatInfo && value !== null
-                ? value + maxStatInfo.maxValue  // value 是預設值，maxStatInfo.maxValue 是增量
-                : null
-
               return (
                 <div
                   key={key}
@@ -454,25 +402,6 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
                         )}
                       </div>
                     </div>
-
-                    {/* 第二行：主屬性的 Max Stat 提示 */}
-                    {absoluteMaxValue !== null && maxStatInfo && (
-                      <div className="flex items-center justify-end gap-1 text-xs text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 px-2 py-1 rounded">
-                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                        </svg>
-                        <span>
-                          {t('item.when')}{t(`item.${maxStatInfo.maxedStat}`)}{' '}
-                          <span className="text-green-500 dark:text-green-400 font-semibold">
-                            {maxStatInfo.maxedStatAbsValue}
-                          </span>
-                          {t('item.timeComma')}{label}{t('item.maxIs')}{' '}
-                          <span className="text-green-500 dark:text-green-400 font-semibold">
-                            {absoluteMaxValue}
-                          </span>
-                        </span>
-                      </div>
-                    )}
                   </div>
                 </div>
               )
