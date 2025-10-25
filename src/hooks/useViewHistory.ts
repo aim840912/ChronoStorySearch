@@ -3,7 +3,7 @@ import type { ViewHistoryItem } from '@/types'
 import { getViewHistory, setViewHistory } from '@/lib/storage'
 import { storageLogger } from '@/lib/logger'
 
-const MAX_HISTORY_ITEMS = 10 // 最多儲存 10 筆歷史記錄（與首頁顯示數量一致）
+const MAX_HISTORY_ITEMS = 15 // 最多儲存 15 筆歷史記錄（與首頁顯示數量一致）
 
 /**
  * 瀏覽歷史管理 Hook
@@ -11,7 +11,7 @@ const MAX_HISTORY_ITEMS = 10 // 最多儲存 10 筆歷史記錄（與首頁顯�
  * 功能：
  * - 追蹤使用者最近瀏覽的怪物和物品
  * - 自動去重（相同項目只保留最新的瀏覽時間）
- * - 限制最多 5 筆記錄
+ * - 限制最多 15 筆記錄
  * - 使用 localStorage 持久化儲存
  */
 export function useViewHistory() {
@@ -25,7 +25,7 @@ export function useViewHistory() {
     if (savedHistory.length > MAX_HISTORY_ITEMS) {
       const migratedHistory = savedHistory
         .sort((a, b) => b.viewedAt - a.viewedAt)  // 按時間排序（最新的在前）
-        .slice(0, MAX_HISTORY_ITEMS)  // 只保留最新的 5 筆
+        .slice(0, MAX_HISTORY_ITEMS)  // 只保留最新的 15 筆
 
       setViewHistory(migratedHistory)  // 重新儲存到 localStorage
       setHistory(migratedHistory)
@@ -74,7 +74,7 @@ export function useViewHistory() {
       // 轉換回陣列，並按時間排序（最新的在前面）
       const updatedHistory = Array.from(historyMap.values())
         .sort((a, b) => b.viewedAt - a.viewedAt)
-        .slice(0, MAX_HISTORY_ITEMS) // 限制最多 5 筆
+        .slice(0, MAX_HISTORY_ITEMS) // 限制最多 15 筆
 
       // 儲存到 localStorage
       setViewHistory(updatedHistory)
