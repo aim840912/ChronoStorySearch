@@ -2,13 +2,18 @@
 
 import { useState, useEffect, useMemo } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useToast } from '@/hooks/useToast'
+import { useLanguageToggle } from '@/hooks/useLanguageToggle'
+import { useShare } from '@/hooks/useShare'
 import type { GachaMachine, GachaItem, EnhancedGachaItem } from '@/types'
 import { clientLogger } from '@/lib/logger'
 import { weightedRandomDraw } from '@/lib/gacha-utils'
+import { BaseModal } from '@/components/common/BaseModal'
 import { MachineCard } from '@/components/gacha/MachineCard'
 import { GachaItemCard } from '@/components/gacha/GachaItemCard'
 import { GachaDrawControl } from '@/components/gacha/GachaDrawControl'
 import { GachaResultsGrid } from '@/components/gacha/GachaResultsGrid'
+import { Toast } from '@/components/Toast'
 
 /**
  * Enhanced JSON 的轉蛋機格式
@@ -73,14 +78,15 @@ type ViewMode = 'browse' | 'gacha'
  * 顯示 7 台轉蛋機及其內容物
  */
 export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemClick, hasPreviousModal, onGoBack }: GachaMachineModalProps) {
-  const { language, t, setLanguage } = useLanguage()
+  const { language, t } = useLanguage()
+  const toast = useToast()
+  const toggleLanguage = useLanguageToggle()
+
   const [machines, setMachines] = useState<GachaMachine[]>([])
   const [selectedMachine, setSelectedMachine] = useState<GachaMachine | null>(null)
   const [searchTerm, setSearchTerm] = useState('')
   const [sortOption, setSortOption] = useState<SortOption>('probability-desc')
   const [isLoading, setIsLoading] = useState(false)
-  const [showToast, setShowToast] = useState(false)
-  const [toastMessage, setToastMessage] = useState('')
 
   // 抽獎模式相關狀態
   const [viewMode, setViewMode] = useState<ViewMode>('browse')
@@ -89,31 +95,13 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
   const [drawCount, setDrawCount] = useState(0)
   const MAX_DRAWS = 100
 
-  // 語言切換函數
-  const toggleLanguage = () => {
-    const newLanguage: 'zh-TW' | 'en' = language === 'zh-TW' ? 'en' : 'zh-TW'
-    setLanguage(newLanguage)
-  }
-
   // 分享功能 - 複製連結到剪貼簿
-  const handleShare = async () => {
-    try {
-      // 根據當前狀態生成 URL
-      const machineId = selectedMachine?.machineId || initialMachineId
-      const urlParam = machineId !== undefined ? `gacha=${machineId}` : 'gacha=list'
-      const url = `${window.location.origin}${window.location.pathname}?${urlParam}`
-
-      await navigator.clipboard.writeText(url)
-      setToastMessage(t('modal.linkCopied'))
-      setShowToast(true)
-      setTimeout(() => setShowToast(false), 3000)
-    } catch (error) {
-      clientLogger.error('複製連結失敗', error)
-      setToastMessage(t('modal.copyFailed'))
-      setShowToast(true)
-      setTimeout(() => setShowToast(false), 3000)
-    }
-  }
+  const handleShare = useShare(() => {
+    // 根據當前狀態生成 URL
+    const machineId = selectedMachine?.machineId || initialMachineId
+    const urlParam = machineId !== undefined ? `gacha=${machineId}` : 'gacha=list'
+    return `${window.location.origin}${window.location.pathname}?${urlParam}`
+  })
 
   // 載入所有轉蛋機資料
   // 優化：使用動態 import 而非 API 呼叫，完全消除 Edge Requests
@@ -209,30 +197,31 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
     }
   }, [isOpen, initialMachineId, machines, selectedMachine])
 
-  // ESC 鍵關閉 Modal
-  useEffect(() => {
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        // 如果是通過 initialMachineId 自動選擇的，直接關閉整個 modal
-        if (initialMachineId !== undefined) {
-          onClose()
-        } else if (selectedMachine) {
-          // 手動選擇的情況：返回轉蛋機列表
-          setSelectedMachine(null)
-        } else {
-          onClose()
-        }
-      }
+  // 自定義 ESC 鍵處理
+  const handleEscape = () => {
+    // 如果是通過 initialMachineId 自動選擇的，直接關閉整個 modal
+    if (initialMachineId !== undefined) {
+      onClose()
+    } else if (selectedMachine) {
+      // 手動選擇的情況：返回轉蛋機列表
+      setSelectedMachine(null)
+    } else {
+      onClose()
     }
-    if (isOpen) {
-      window.addEventListener('keydown', handleEsc)
-      document.body.style.overflow = 'hidden'
+  }
+
+  // 自定義背景點擊處理
+  const handleBackdropClick = () => {
+    // 如果是通過 initialMachineId 自動選擇的，直接關閉整個 modal
+    if (initialMachineId !== undefined) {
+      onClose()
+    } else if (selectedMachine) {
+      // 手動選擇的情況：返回轉蛋機列表
+      setSelectedMachine(null)
+    } else {
+      onClose()
     }
-    return () => {
-      window.removeEventListener('keydown', handleEsc)
-      document.body.style.overflow = 'unset'
-    }
-  }, [isOpen, selectedMachine, onClose, initialMachineId])
+  }
 
   // 篩選和排序物品
   const filteredAndSortedItems = useMemo(() => {
@@ -276,29 +265,14 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
     return sorted
   }, [selectedMachine, searchTerm, sortOption])
 
-  if (!isOpen) return null
-
-  const handleBackdropClick = () => {
-    // 如果是通過 initialMachineId 自動選擇的，直接關閉整個 modal
-    if (initialMachineId !== undefined) {
-      onClose()
-    } else if (selectedMachine) {
-      // 手動選擇的情況：返回轉蛋機列表
-      setSelectedMachine(null)
-    } else {
-      onClose()
-    }
-  }
-
   return (
-    <div
-      className="fixed inset-0 z-[70] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
-      onClick={handleBackdropClick}
+    <BaseModal
+      isOpen={isOpen}
+      onClose={onClose}
+      zIndex="z-[70]"
+      onEscape={handleEscape}
+      onBackdropClick={handleBackdropClick}
     >
-      <div
-        className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-6xl max-h-[90vh] overflow-hidden flex flex-col"
-        onClick={(e) => e.stopPropagation()}
-      >
         {/* Modal Header */}
         <div className="sticky top-0 z-10 bg-purple-500 dark:bg-purple-600 p-4 sm:p-6 rounded-t-xl flex-shrink-0">
           <div className="flex items-center justify-between">
@@ -523,28 +497,13 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
           )}
         </div>
 
-        {/* Toast 通知 */}
-        {showToast && (
-          <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-60 animate-fade-in">
-            <div className="bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 px-6 py-3 rounded-lg shadow-lg flex items-center gap-2">
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span className="font-medium">{toastMessage}</span>
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
+      {/* Toast 通知 */}
+      <Toast
+        message={toast.message}
+        isVisible={toast.isVisible}
+        onClose={toast.hideToast}
+        type={toast.type}
+      />
+    </BaseModal>
   )
 }

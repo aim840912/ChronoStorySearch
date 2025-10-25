@@ -1,13 +1,18 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import type { DropsEssential, Language, ItemAttributesEssential, MobMapMonster } from '@/types'
+import type { DropsEssential, ItemAttributesEssential, MobMapMonster } from '@/types'
 import { DropItemCard } from './DropItemCard'
 import { MonsterStatsCard } from './MonsterStatsCard'
 import { MonsterLocationsCard } from './MonsterLocationsCard'
+import { Toast } from './Toast'
+import { BaseModal } from './common/BaseModal'
 import { clientLogger } from '@/lib/logger'
 import { getMonsterImageUrl, getItemImageUrl, preloadImages } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useToast } from '@/hooks/useToast'
+import { useLanguageToggle } from '@/hooks/useLanguageToggle'
+import { useShare } from '@/hooks/useShare'
 import { useLazyMobInfo, useLazyDropsDetailed, useLazyMobMaps } from '@/hooks/useLazyData'
 
 interface MonsterModalProps {
@@ -50,10 +55,11 @@ export function MonsterModal({
   onGoBack,
   onOpenAccuracyCalculator,
 }: MonsterModalProps) {
-  const { t, language, setLanguage } = useLanguage()
+  const { t, language } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
-  const [showToast, setShowToast] = useState(false)
-  const [toastMessage, setToastMessage] = useState('')
+  const toast = useToast()
+  const toggleLanguage = useLanguageToggle()
+  const handleShare = useShare(() => `${window.location.origin}${window.location.pathname}?monster=${monsterId}`)
   // 手機版 Tab 狀態（'info' = 怪物資訊, 'drops' = 掉落物品）
   const [mobileTab, setMobileTab] = useState<'info' | 'drops'>('info')
 
@@ -73,12 +79,6 @@ export function MonsterModal({
   const {
     data: monsterDropsDetailed,
   } = useLazyDropsDetailed(monsterId)
-
-  // 語言切換函數
-  const toggleLanguage = () => {
-    const newLanguage: Language = language === 'zh-TW' ? 'en' : 'zh-TW'
-    setLanguage(newLanguage)
-  }
 
   // 使用 Detailed 資料（包含完整掉落資訊）
   // 用 useMemo 包裹以避免 useEffect 依賴變化
@@ -179,50 +179,15 @@ export function MonsterModal({
     }
   }, [isOpen, loadMobInfo, loadMobMaps, monsterId, monsterDrops])
 
-  // ESC 鍵關閉 modal
-  useEffect(() => {
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
-    }
-    if (isOpen) {
-      window.addEventListener('keydown', handleEsc)
-      document.body.style.overflow = 'hidden'
-    }
-    return () => {
-      window.removeEventListener('keydown', handleEsc)
-      document.body.style.overflow = 'unset'
-    }
-  }, [isOpen, onClose])
-
-  // 分享功能 - 複製連結到剪貼簿
-  const handleShare = async () => {
-    try {
-      const url = `${window.location.origin}${window.location.pathname}?monster=${monsterId}`
-      await navigator.clipboard.writeText(url)
-      setToastMessage(t('modal.linkCopied'))
-      setShowToast(true)
-      setTimeout(() => setShowToast(false), 3000)
-    } catch (error) {
-      clientLogger.error('複製連結失敗', error)
-      setToastMessage(t('modal.copyFailed'))
-      setShowToast(true)
-      setTimeout(() => setShowToast(false), 3000)
-    }
-  }
-
-  if (!isOpen || !monsterId) return null
+  if (!monsterId) return null
 
   const monsterIconUrl = getMonsterImageUrl(monsterId)
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-0 sm:p-4 bg-black/50 backdrop-blur-sm"
-      onClick={onClose}
+    <BaseModal
+      isOpen={isOpen}
+      onClose={onClose}
     >
-      <div
-        className="bg-white dark:bg-gray-800 rounded-none sm:rounded-xl shadow-2xl w-full max-w-6xl h-full sm:h-auto sm:max-h-[90vh] overflow-hidden flex flex-col"
-        onClick={(e) => e.stopPropagation()}
-      >
         {/* Modal Header */}
         <div className="sticky top-0 z-10 bg-blue-500 dark:bg-blue-600 p-4 sm:p-6 rounded-t-xl">
           <div className="flex items-center justify-between">
@@ -400,28 +365,13 @@ export function MonsterModal({
           </div>
         </div>
 
-        {/* Toast 通知 */}
-        {showToast && (
-          <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-60 animate-fade-in">
-            <div className="bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 px-6 py-3 rounded-lg shadow-lg flex items-center gap-2">
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span className="font-medium">{toastMessage}</span>
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
+      {/* Toast 通知 */}
+      <Toast
+        message={toast.message}
+        isVisible={toast.isVisible}
+        onClose={toast.hideToast}
+        type={toast.type}
+      />
+    </BaseModal>
   )
 }

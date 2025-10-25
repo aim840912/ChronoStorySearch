@@ -56,12 +56,10 @@ export const ItemCard = memo(function ItemCard({
         {source?.fromDrops && (
           <div className="p-2 rounded-full bg-green-500 text-white" title={t('card.monsterDrop')}>
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
-              />
+              <circle cx="9" cy="10" r="1.5" fill="currentColor"/>
+              <circle cx="15" cy="10" r="1.5" fill="currentColor"/>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3C7 3 3 7 3 12v2c0 1 0 2 1 3h2v3h12v-3h2c1-1 1-2 1-3v-2c0-5-4-9-9-9z"/>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 16h6M10 16v2m4-2v2"/>
             </svg>
           </div>
         )}
@@ -69,12 +67,13 @@ export const ItemCard = memo(function ItemCard({
         {source?.fromGacha && (
           <div className="p-2 rounded-full bg-purple-500 text-white" title={t('card.gachaDrop')}>
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
+              <circle cx="12" cy="10" r="7" strokeWidth={2}/>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10h14"/>
+              <rect x="8" y="16" width="8" height="5" rx="1" strokeWidth={2}/>
+              <circle cx="10" cy="8" r="1.5" strokeWidth={1.5}/>
+              <circle cx="14" cy="12" r="1.5" strokeWidth={1.5}/>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 10l2 2"/>
+              <rect x="10" y="18" width="4" height="1.5" rx="0.5" strokeWidth={1}/>
             </svg>
           </div>
         )}
