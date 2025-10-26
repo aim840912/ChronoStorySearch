@@ -1,0 +1,263 @@
+/**
+ * Token 加密工具單元測試
+ */
+
+import { encryptToken, decryptToken, isTokenEncrypted } from '../token-encryption'
+
+// 設定測試用的加密密鑰（256-bit = 64 hex characters）
+const TEST_ENCRYPTION_KEY = 'a'.repeat(64)
+
+describe('Token Encryption', () => {
+  beforeAll(() => {
+    // 設定測試環境變數
+    process.env.TOKEN_ENCRYPTION_KEY = TEST_ENCRYPTION_KEY
+  })
+
+  afterAll(() => {
+    // 清理環境變數
+    delete process.env.TOKEN_ENCRYPTION_KEY
+  })
+
+  describe('encryptToken', () => {
+    it('should encrypt a token successfully', async () => {
+      const originalToken = 'test_access_token_12345'
+      const encrypted = await encryptToken(originalToken)
+
+      // 加密後應該是 Base64 字串
+      expect(typeof encrypted).toBe('string')
+      expect(encrypted.length).toBeGreaterThan(0)
+
+      // 加密後應該與原文不同
+      expect(encrypted).not.toBe(originalToken)
+
+      // 應該是有效的 Base64
+      expect(() => Buffer.from(encrypted, 'base64')).not.toThrow()
+    })
+
+    it('should use different nonce each time (same input → different output)', async () => {
+      const token = 'same_token_value'
+
+      const encrypted1 = await encryptToken(token)
+      const encrypted2 = await encryptToken(token)
+
+      // 相同的明文，每次加密結果應該不同（因為 nonce 不同）
+      expect(encrypted1).not.toBe(encrypted2)
+    })
+
+    it('should handle empty string', async () => {
+      const encrypted = await encryptToken('')
+      expect(encrypted).toBeDefined()
+      expect(encrypted.length).toBeGreaterThan(0)
+    })
+
+    it('should handle long tokens', async () => {
+      const longToken = 'x'.repeat(1000)
+      const encrypted = await encryptToken(longToken)
+
+      expect(encrypted).toBeDefined()
+      expect(encrypted.length).toBeGreaterThan(longToken.length)
+    })
+
+    it('should handle special characters', async () => {
+      const tokenWithSpecialChars = 'token!@#$%^&*()_+-={}[]|\\:";\'<>?,./'
+      const encrypted = await encryptToken(tokenWithSpecialChars)
+
+      expect(encrypted).toBeDefined()
+      expect(() => Buffer.from(encrypted, 'base64')).not.toThrow()
+    })
+
+    it('should handle Unicode characters', async () => {
+      const unicodeToken = 'token_with_emoji_🔐_and_中文'
+      const encrypted = await encryptToken(unicodeToken)
+
+      expect(encrypted).toBeDefined()
+    })
+  })
+
+  describe('decryptToken', () => {
+    it('should decrypt an encrypted token correctly', async () => {
+      const originalToken = 'test_access_token_12345'
+
+      const encrypted = await encryptToken(originalToken)
+      const decrypted = await decryptToken(encrypted)
+
+      expect(decrypted).toBe(originalToken)
+    })
+
+    it('should handle empty string encryption/decryption', async () => {
+      const originalToken = ''
+
+      const encrypted = await encryptToken(originalToken)
+      const decrypted = await decryptToken(encrypted)
+
+      expect(decrypted).toBe(originalToken)
+    })
+
+    it('should handle long tokens encryption/decryption', async () => {
+      const originalToken = 'y'.repeat(1000)
+
+      const encrypted = await encryptToken(originalToken)
+      const decrypted = await decryptToken(encrypted)
+
+      expect(decrypted).toBe(originalToken)
+    })
+
+    it('should handle special characters encryption/decryption', async () => {
+      const originalToken = 'token!@#$%^&*()_+-={}[]|\\:";\'<>?,./'
+
+      const encrypted = await encryptToken(originalToken)
+      const decrypted = await decryptToken(encrypted)
+
+      expect(decrypted).toBe(originalToken)
+    })
+
+    it('should handle Unicode encryption/decryption', async () => {
+      const originalToken = 'token_with_emoji_🔐_and_中文'
+
+      const encrypted = await encryptToken(originalToken)
+      const decrypted = await decryptToken(encrypted)
+
+      expect(decrypted).toBe(originalToken)
+    })
+
+    it('should throw error on invalid Base64', async () => {
+      const invalidBase64 = 'not_valid_base64!@#$'
+
+      await expect(decryptToken(invalidBase64)).rejects.toThrow()
+    })
+
+    it('should throw error on tampered ciphertext', async () => {
+      const originalToken = 'test_token'
+      const encrypted = await encryptToken(originalToken)
+
+      // 篡改最後 4 個字元
+      const tampered = encrypted.slice(0, -4) + 'XXXX'
+
+      await expect(decryptToken(tampered)).rejects.toThrow('Token decryption failed')
+    })
+
+    it('should throw error on truncated ciphertext', async () => {
+      const originalToken = 'test_token'
+      const encrypted = await encryptToken(originalToken)
+
+      // 截斷（只取前一半）
+      const truncated = encrypted.slice(0, encrypted.length / 2)
+
+      await expect(decryptToken(truncated)).rejects.toThrow()
+    })
+
+    it('should throw error if ciphertext is too short', async () => {
+      // Base64 編碼的短字串（< 24 bytes after decode）
+      const tooShort = Buffer.from('short').toString('base64')
+
+      await expect(decryptToken(tooShort)).rejects.toThrow('Invalid encrypted token: too short')
+    })
+
+    it('should throw error if encryption key is missing', async () => {
+      // 暫時移除密鑰
+      delete process.env.TOKEN_ENCRYPTION_KEY
+
+      await expect(encryptToken('test')).rejects.toThrow(
+        'TOKEN_ENCRYPTION_KEY is not configured in environment variables'
+      )
+
+      // 恢復密鑰
+      process.env.TOKEN_ENCRYPTION_KEY = TEST_ENCRYPTION_KEY
+    })
+
+    it('should throw error if encryption key is invalid length', async () => {
+      // 設定錯誤長度的密鑰
+      process.env.TOKEN_ENCRYPTION_KEY = 'too_short'
+
+      await expect(encryptToken('test')).rejects.toThrow(
+        'TOKEN_ENCRYPTION_KEY must be a 64-character hex string (256-bit)'
+      )
+
+      // 恢復正確密鑰
+      process.env.TOKEN_ENCRYPTION_KEY = TEST_ENCRYPTION_KEY
+    })
+  })
+
+  describe('isTokenEncrypted', () => {
+    it('should return true for encrypted tokens', async () => {
+      const originalToken = 'test_token_value'
+      const encrypted = await encryptToken(originalToken)
+
+      expect(isTokenEncrypted(encrypted)).toBe(true)
+    })
+
+    it('should return false for plaintext tokens', () => {
+      const plaintextTokens = [
+        'ya29.a0AfH6SMBx...',  // Google OAuth token
+        'Bearer eyJhbGciOiJIUzI1NiIs...',  // JWT
+        'ghp_abc123...',  // GitHub token
+        'short',
+      ]
+
+      plaintextTokens.forEach((token) => {
+        expect(isTokenEncrypted(token)).toBe(false)
+      })
+    })
+
+    it('should return false for non-Base64 strings', () => {
+      const nonBase64Strings = [
+        'not!valid@base64',
+        'hello world',
+        'token with spaces',
+      ]
+
+      nonBase64Strings.forEach((str) => {
+        expect(isTokenEncrypted(str)).toBe(false)
+      })
+    })
+
+    it('should return false for empty string', () => {
+      expect(isTokenEncrypted('')).toBe(false)
+    })
+
+    it('should return false for short Base64 strings', () => {
+      // 雖然是有效的 Base64，但太短（< 50 characters）
+      const shortBase64 = Buffer.from('short').toString('base64')
+
+      expect(isTokenEncrypted(shortBase64)).toBe(false)
+    })
+  })
+
+  describe('Round-trip encryption/decryption', () => {
+    it('should handle multiple round-trips correctly', async () => {
+      let token = 'original_token'
+
+      for (let i = 0; i < 5; i++) {
+        const encrypted = await encryptToken(token)
+        const decrypted = await decryptToken(encrypted)
+
+        expect(decrypted).toBe(token)
+
+        // 下一輪使用加密後的字串（測試能否處理任意字串）
+        token = encrypted
+      }
+    })
+
+    it('should maintain data integrity across encrypt/decrypt', async () => {
+      const testCases = [
+        'simple_token',
+        '',
+        ' ',
+        'token with spaces',
+        'token\nwith\nnewlines',
+        'token\twith\ttabs',
+        'token_🔐_emoji',
+        '中文字符',
+        '{"json": "token"}',
+        'a'.repeat(10000),  // 長字串
+      ]
+
+      for (const testCase of testCases) {
+        const encrypted = await encryptToken(testCase)
+        const decrypted = await decryptToken(encrypted)
+
+        expect(decrypted).toBe(testCase)
+      }
+    })
+  })
+})
