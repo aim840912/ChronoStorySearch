@@ -3,8 +3,10 @@
 import { useState, useEffect } from 'react'
 import { BaseModal } from '@/components/common/BaseModal'
 import { ItemSearchInput } from './ItemSearchInput'
+import { ItemStatsInput } from './ItemStatsInput'
 import { ExtendedUniqueItem } from '@/types'
 import { useAuth } from '@/contexts/AuthContext'
+import type { ItemStats } from '@/types/item-stats'
 
 /**
  * 建立刊登 Modal
@@ -45,6 +47,7 @@ interface CreateListingRequest {
   wanted_item_id?: number
   wanted_quantity?: number
   webhook_url?: string
+  item_stats?: ItemStats
 }
 
 export function CreateListingModal({
@@ -64,6 +67,8 @@ export function CreateListingModal({
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [userModifiedContact, setUserModifiedContact] = useState(false)
+  const [itemStats, setItemStats] = useState<ItemStats | null>(null)
+  const [showStatsInput, setShowStatsInput] = useState(false)
 
   // 自動填充 Discord 聯絡資訊
   useEffect(() => {
@@ -129,6 +134,11 @@ export function CreateListingModal({
       requestBody.webhook_url = webhookUrl.trim()
     }
 
+    // 可選欄位：物品屬性
+    if (itemStats) {
+      requestBody.item_stats = itemStats
+    }
+
     // 3. 呼叫 API
     setIsSubmitting(true)
     try {
@@ -165,6 +175,8 @@ export function CreateListingModal({
       setContactInfo('')
       setWebhookUrl('')
       setUserModifiedContact(false) // 重置手動修改標記
+      setItemStats(null)
+      setShowStatsInput(false)
     } catch (err) {
       console.error('Failed to create listing:', err)
       setError('網路錯誤，請檢查您的連線')
@@ -175,7 +187,7 @@ export function CreateListingModal({
 
   return (
     <BaseModal isOpen={isOpen} onClose={onClose} maxWidth="max-w-2xl">
-      <div className="p-6">
+      <div className="p-6 overflow-y-auto max-h-[calc(90vh-2rem)]">
         <h2 className="text-2xl font-bold mb-4">建立刊登</h2>
 
         {/* 未登入提示 */}
@@ -255,6 +267,37 @@ export function CreateListingModal({
             />
           </div>
         )}
+
+        {/* 物品屬性 (可選) */}
+        <div className="mb-6">
+          <button
+            type="button"
+            onClick={() => setShowStatsInput(!showStatsInput)}
+            className="flex items-center gap-2 mb-2 font-semibold text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          >
+            <span className="text-sm">{showStatsInput ? '▼' : '▶'}</span>
+            物品屬性 (可選)
+            {itemStats && (
+              <span className="px-2 py-0.5 text-xs bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 rounded">
+                已填寫
+              </span>
+            )}
+          </button>
+
+          {showStatsInput && (
+            <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700">
+              <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                記錄物品的實際屬性，讓買家更清楚了解物品素質
+              </p>
+              <ItemStatsInput
+                value={itemStats}
+                onChange={setItemStats}
+                locale="zh-TW"
+                simpleMode={true}
+              />
+            </div>
+          )}
+        </div>
 
         {/* 數量和價格 */}
         <div className="grid grid-cols-2 gap-4 mb-6">

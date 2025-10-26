@@ -4,6 +4,8 @@ import { success } from '@/lib/api-response'
 import { ValidationError, NotFoundError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
+import { validateAndCalculateStats } from '@/lib/validation/item-stats'
+import type { ItemStats } from '@/types/item-stats'
 
 /**
  * GET /api/listings/[id] - 查詢單一刊登詳情
@@ -67,6 +69,10 @@ async function handleGET(
     interest_count: listing.interest_count,
     created_at: listing.created_at,
     updated_at: listing.updated_at,
+    // 物品屬性
+    item_stats: listing.item_stats || null,
+    stats_grade: listing.stats_grade || null,
+    stats_score: listing.stats_score || null,
     seller: {
       discord_username: listing.users?.discord_username || 'Unknown',
       reputation_score: listing.users?.discord_profiles?.reputation_score ?? 0
@@ -134,7 +140,8 @@ async function handlePATCH(
     'contact_method',
     'contact_info',
     'webhook_url',
-    'status'
+    'status',
+    'item_stats'
   ]
 
   const updates: Record<string, unknown> = {}
@@ -144,6 +151,38 @@ async function handlePATCH(
       throw new ValidationError(`欄位 ${key} 不可更新`)
     }
     updates[key] = data[key]
+  }
+
+  // 2.1 驗證並計算物品屬性（如果提供）
+  if (updates.item_stats !== undefined) {
+    if (updates.item_stats === null) {
+      // 允許清除物品屬性
+      updates.stats_grade = null
+      updates.stats_score = null
+    } else {
+      // 驗證並計算新的屬性
+      const validationResult = validateAndCalculateStats(updates.item_stats as ItemStats)
+
+      if (!validationResult.success) {
+        apiLogger.warn('物品屬性驗證失敗', {
+          user_id: user.id,
+          listing_id: id,
+          error: validationResult.error
+        })
+        throw new ValidationError(`物品屬性驗證失敗：${validationResult.error}`)
+      }
+
+      updates.item_stats = validationResult.data!.stats
+      updates.stats_grade = validationResult.data!.grade
+      updates.stats_score = validationResult.data!.score
+
+      apiLogger.debug('物品屬性更新驗證成功', {
+        user_id: user.id,
+        listing_id: id,
+        grade: validationResult.data!.grade,
+        score: validationResult.data!.score
+      })
+    }
   }
 
   // 3. 驗證業務邏輯

@@ -4,6 +4,8 @@ import { success, created } from '@/lib/api-response'
 import { ValidationError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
+import { validateAndCalculateStats } from '@/lib/validation/item-stats'
+import type { ItemStats } from '@/types/item-stats'
 
 /**
  * GET /api/listings - 查詢我的刊登
@@ -88,7 +90,8 @@ async function handlePOST(request: NextRequest, user: User) {
     wanted_quantity,
     contact_method,
     contact_info,
-    webhook_url
+    webhook_url,
+    item_stats
   } = data
 
   if (!trade_type || !['sell', 'buy', 'exchange'].includes(trade_type)) {
@@ -120,7 +123,34 @@ async function handlePOST(request: NextRequest, user: User) {
     }
   }
 
-  // 3. 檢查配額限制（每用戶最多 50 個 active listings）
+  // 3. 驗證物品屬性（如果提供）
+  let validatedStats: ItemStats | null = null
+  let statsGrade: string | null = null
+  let statsScore: number | null = null
+
+  if (item_stats) {
+    const validationResult = validateAndCalculateStats(item_stats)
+
+    if (!validationResult.success) {
+      apiLogger.warn('物品屬性驗證失敗', {
+        user_id: user.id,
+        error: validationResult.error
+      })
+      throw new ValidationError(`物品屬性驗證失敗：${validationResult.error}`)
+    }
+
+    validatedStats = validationResult.data!.stats
+    statsGrade = validationResult.data!.grade
+    statsScore = validationResult.data!.score
+
+    apiLogger.debug('物品屬性驗證成功', {
+      user_id: user.id,
+      grade: statsGrade,
+      score: statsScore
+    })
+  }
+
+  // 4. 檢查配額限制（每用戶最多 50 個 active listings）
   const { count: activeCount, error: countError } = await supabaseAdmin
     .from('listings')
     .select('*', { count: 'exact', head: true })
@@ -141,7 +171,7 @@ async function handlePOST(request: NextRequest, user: User) {
     throw new ValidationError('您已達到刊登配額上限（50 個），請先刪除或完成現有刊登')
   }
 
-  // 4. 插入刊登資料
+  // 5. 插入刊登資料
   const listingData = {
     user_id: user.id,
     trade_type,
@@ -155,7 +185,11 @@ async function handlePOST(request: NextRequest, user: User) {
     webhook_url: webhook_url || null,
     status: 'active',
     view_count: 0,
-    interest_count: 0
+    interest_count: 0,
+    // 物品屬性（如果提供）
+    item_stats: validatedStats,
+    stats_grade: statsGrade,
+    stats_score: statsScore
   }
 
   const { data: listing, error: insertError } = await supabaseAdmin

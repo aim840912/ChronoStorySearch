@@ -16,7 +16,8 @@ import { apiLogger } from '@/lib/logger'
  * - 查詢 status = 'active' 的刊登
  * - 支援搜尋：item_id, trade_type
  * - 支援價格範圍：min_price, max_price
- * - 支援排序：sort_by (created_at, price), order (asc, desc)
+ * - 支援物品屬性篩選：min_watk, min_matk, stats_grade
+ * - 支援排序：sort_by (created_at, price, stats_score), order (asc, desc)
  * - 支援分頁：page, limit (預設 20, 最大 50)
  * - JOIN users 和 discord_profiles 獲取賣家資訊
  *
@@ -35,17 +36,27 @@ async function handleGET(_request: NextRequest, user: User) {
   const min_price = searchParams.get('min_price')
   const max_price = searchParams.get('max_price')
 
+  // 2.1 解析物品屬性篩選參數
+  const min_watk = searchParams.get('min_watk')
+  const min_matk = searchParams.get('min_matk')
+  const stats_grade = searchParams.get('stats_grade')
+
   // 3. 解析排序參數
   const sort_by = searchParams.get('sort_by') || 'created_at' // 預設按建立時間排序
   const order = searchParams.get('order') || 'desc' // 預設降序
 
   // 驗證排序參數
-  if (!['created_at', 'price'].includes(sort_by)) {
-    throw new ValidationError('sort_by 必須是 created_at 或 price')
+  if (!['created_at', 'price', 'stats_score'].includes(sort_by)) {
+    throw new ValidationError('sort_by 必須是 created_at, price 或 stats_score')
   }
 
   if (!['asc', 'desc'].includes(order)) {
     throw new ValidationError('order 必須是 asc 或 desc')
+  }
+
+  // 驗證素質等級參數
+  if (stats_grade && !['S', 'A', 'B', 'C', 'D', 'F'].includes(stats_grade)) {
+    throw new ValidationError('stats_grade 必須是 S, A, B, C, D 或 F')
   }
 
   apiLogger.debug('市場搜尋請求', {
@@ -56,6 +67,9 @@ async function handleGET(_request: NextRequest, user: User) {
     item_id,
     min_price,
     max_price,
+    min_watk,
+    min_matk,
+    stats_grade,
     sort_by,
     order
   })
@@ -111,6 +125,28 @@ async function handleGET(_request: NextRequest, user: User) {
     query = query.lte('price', maxPriceNum)
   }
 
+  // 物品屬性篩選（使用 JSONB 查詢）
+  if (min_watk) {
+    const minWatkNum = parseInt(min_watk, 10)
+    if (isNaN(minWatkNum) || minWatkNum < 0) {
+      throw new ValidationError('min_watk 必須是非負數字')
+    }
+    // PostgreSQL JSONB 查詢：(item_stats->>'watk')::int >= minWatkNum
+    query = query.gte('item_stats->watk', minWatkNum)
+  }
+
+  if (min_matk) {
+    const minMatkNum = parseInt(min_matk, 10)
+    if (isNaN(minMatkNum) || minMatkNum < 0) {
+      throw new ValidationError('min_matk 必須是非負數字')
+    }
+    query = query.gte('item_stats->matk', minMatkNum)
+  }
+
+  if (stats_grade) {
+    query = query.eq('stats_grade', stats_grade)
+  }
+
   // 6. 應用排序
   const ascending = order === 'asc'
   query = query.order(sort_by, { ascending })
@@ -140,6 +176,10 @@ async function handleGET(_request: NextRequest, user: User) {
     interest_count: listing.interest_count,
     created_at: listing.created_at,
     updated_at: listing.updated_at,
+    // 物品屬性
+    item_stats: listing.item_stats || null,
+    stats_grade: listing.stats_grade || null,
+    stats_score: listing.stats_score || null,
     seller: {
       discord_username: listing.users?.discord_username || 'Unknown',
       reputation_score: listing.users?.discord_profiles?.reputation_score ?? 0
@@ -153,7 +193,17 @@ async function handleGET(_request: NextRequest, user: User) {
     user_id: user.id,
     count: formattedListings.length,
     total: count,
-    filters: { trade_type, item_id, min_price, max_price, sort_by, order }
+    filters: {
+      trade_type,
+      item_id,
+      min_price,
+      max_price,
+      min_watk,
+      min_matk,
+      stats_grade,
+      sort_by,
+      order
+    }
   })
 
   return successWithPagination(formattedListings, pagination, '搜尋成功')

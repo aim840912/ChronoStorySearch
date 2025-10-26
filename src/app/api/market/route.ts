@@ -93,6 +93,10 @@ async function handleGET(_request: NextRequest, user: User) {
     interest_count: listing.interest_count,
     created_at: listing.created_at,
     updated_at: listing.updated_at,
+    // 物品屬性
+    item_stats: listing.item_stats || null,
+    stats_grade: listing.stats_grade || null,
+    stats_score: listing.stats_score || null,
     seller: {
       discord_username: listing.users?.discord_username || 'Unknown',
       reputation_score: listing.discord_profiles?.reputation_score || 0
