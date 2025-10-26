@@ -117,6 +117,7 @@ class Logger {
 
 // 預定義的 logger 實例
 export const apiLogger = new Logger('API')
+export const dbLogger = new Logger('Database')
 export const clientLogger = new Logger('Client')
 export const storageLogger = new Logger('Storage')
 

@@ -10,6 +10,10 @@ import { GachaMachineModal } from '@/components/GachaMachineModal'
 import { AccuracyCalculatorModal } from '@/components/AccuracyCalculatorModal'
 import { GameCommandsModal } from '@/components/GameCommandsModal'
 import { MerchantShopModal } from '@/components/MerchantShopModal'
+import { CreateListingModal } from '@/components/trade/CreateListingModal'
+import { MyListingsModal } from '@/components/trade/MyListingsModal'
+import { MarketBrowserModal } from '@/components/trade/MarketBrowserModal'
+import { InterestsModal } from '@/components/trade/InterestsModal'
 import { Toast } from '@/components/Toast'
 import { useLanguage } from '@/contexts/LanguageContext'
 
@@ -22,6 +26,10 @@ interface ModalManagerProps {
   isGachaModalOpen: boolean
   isMerchantShopModalOpen: boolean
   isAccuracyCalculatorOpen: boolean
+  isCreateListingModalOpen: boolean
+  isMyListingsModalOpen: boolean
+  isMarketBrowserModalOpen: boolean
+  isInterestsModalOpen: boolean
   selectedMonsterId: number | null | undefined
   selectedMonsterName: string
   selectedItemId: number | null
@@ -39,6 +47,10 @@ interface ModalManagerProps {
   closeGachaModal: () => void
   closeMerchantShopModal: () => void
   closeAccuracyCalculator: () => void
+  closeCreateListingModal: () => void
+  closeMyListingsModal: () => void
+  closeMarketBrowserModal: () => void
+  closeInterestsModal: () => void
   goBack: () => void
 
   // Modal 開啟函數
@@ -46,6 +58,8 @@ interface ModalManagerProps {
   openBugReportModal: () => void
   openMerchantShopModal: () => void
   openAccuracyCalculator: (initialMonsterId?: number | null) => void
+  openCreateListingModal: () => void
+  openMyListingsModal: () => void
 
   // 資料
   allDrops: DropsEssential[]  // 改為 Essential（只需基本資訊）
@@ -98,6 +112,10 @@ export const ModalManager = memo(function ModalManager({
   isGachaModalOpen,
   isMerchantShopModalOpen,
   isAccuracyCalculatorOpen,
+  isCreateListingModalOpen,
+  isMyListingsModalOpen,
+  isMarketBrowserModalOpen,
+  isInterestsModalOpen,
   selectedMonsterId,
   selectedMonsterName,
   selectedItemId,
@@ -113,11 +131,17 @@ export const ModalManager = memo(function ModalManager({
   closeGachaModal,
   closeMerchantShopModal,
   closeAccuracyCalculator,
+  closeCreateListingModal,
+  closeMyListingsModal,
+  closeMarketBrowserModal,
+  closeInterestsModal,
   goBack,
   openGachaModal,
   openBugReportModal,
   openMerchantShopModal,
   openAccuracyCalculator,
+  openCreateListingModal,
+  openMyListingsModal,
   allDrops,
   gachaMachines,
   itemAttributesMap,
@@ -226,6 +250,38 @@ export const ModalManager = memo(function ModalManager({
       <MerchantShopModal
         isOpen={isMerchantShopModalOpen}
         onClose={closeMerchantShopModal}
+      />
+
+      {/* Create Listing Modal */}
+      <CreateListingModal
+        isOpen={isCreateListingModalOpen}
+        onClose={closeCreateListingModal}
+        onSuccess={() => {
+          closeCreateListingModal()
+          openMyListingsModal()
+        }}
+      />
+
+      {/* My Listings Modal */}
+      <MyListingsModal
+        isOpen={isMyListingsModalOpen}
+        onClose={closeMyListingsModal}
+        onCreateNew={() => {
+          closeMyListingsModal()
+          openCreateListingModal()
+        }}
+      />
+
+      {/* Market Browser Modal */}
+      <MarketBrowserModal
+        isOpen={isMarketBrowserModalOpen}
+        onClose={closeMarketBrowserModal}
+      />
+
+      {/* Interests Modal */}
+      <InterestsModal
+        isOpen={isInterestsModalOpen}
+        onClose={closeInterestsModal}
       />
 
       {/* 浮動轉蛋機按鈕 */}

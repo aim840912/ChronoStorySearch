@@ -4,7 +4,7 @@ import type { ClearModalType } from '@/types'
 /**
  * Modal 類型定義
  */
-type ModalType = 'monster' | 'item' | 'gacha' | 'bug' | 'clear' | 'merchant' | 'accuracy'
+type ModalType = 'monster' | 'item' | 'gacha' | 'bug' | 'clear' | 'merchant' | 'accuracy' | 'createListing' | 'myListings' | 'marketBrowser' | 'interests'
 
 /**
  * Monster Modal 資料結構
@@ -236,6 +236,50 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     setHistory({ previous: null })
   }, [])
 
+  // 開啟 Create Listing Modal
+  const openCreateListingModal = useCallback(() => {
+    setModal({ type: 'createListing', data: null })
+  }, [])
+
+  // 關閉 Create Listing Modal
+  const closeCreateListingModal = useCallback(() => {
+    setModal({ type: null, data: null })
+    setHistory({ previous: null })
+  }, [])
+
+  // 開啟 My Listings Modal
+  const openMyListingsModal = useCallback(() => {
+    setModal({ type: 'myListings', data: null })
+  }, [])
+
+  // 關閉 My Listings Modal
+  const closeMyListingsModal = useCallback(() => {
+    setModal({ type: null, data: null })
+    setHistory({ previous: null })
+  }, [])
+
+  // 開啟 Market Browser Modal
+  const openMarketBrowserModal = useCallback(() => {
+    setModal({ type: 'marketBrowser', data: null })
+  }, [])
+
+  // 關閉 Market Browser Modal
+  const closeMarketBrowserModal = useCallback(() => {
+    setModal({ type: null, data: null })
+    setHistory({ previous: null })
+  }, [])
+
+  // 開啟 Interests Modal
+  const openInterestsModal = useCallback(() => {
+    setModal({ type: 'interests', data: null })
+  }, [])
+
+  // 關閉 Interests Modal
+  const closeInterestsModal = useCallback(() => {
+    setModal({ type: null, data: null })
+    setHistory({ previous: null })
+  }, [])
+
   // 用於 URL 參數處理的 setters（向後相容）
   const setSelectedMonsterId = useCallback((mobId: number | null) => {
     if (mobId !== null && modal.type === 'monster') {
@@ -360,6 +404,26 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     accuracyInitialMonsterId: accuracyData?.initialMonsterId,
     openAccuracyCalculator,
     closeAccuracyCalculator,
+
+    // Create Listing Modal
+    isCreateListingModalOpen: modal.type === 'createListing',
+    openCreateListingModal,
+    closeCreateListingModal,
+
+    // My Listings Modal
+    isMyListingsModalOpen: modal.type === 'myListings',
+    openMyListingsModal,
+    closeMyListingsModal,
+
+    // Market Browser Modal
+    isMarketBrowserModalOpen: modal.type === 'marketBrowser',
+    openMarketBrowserModal,
+    closeMarketBrowserModal,
+
+    // Interests Modal
+    isInterestsModalOpen: modal.type === 'interests',
+    openInterestsModal,
+    closeInterestsModal,
 
     // 暴露原始 modal 狀態（用於複雜條件判斷）
     modal,

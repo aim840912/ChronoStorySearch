@@ -2,31 +2,41 @@ The orignal prompt is from: https://www.dzombak.com/blog/2025/08/getting-good-re
 
 # 開發指南
 
-## 🚀 快速參考
+## 📑 目錄
 
-### 5 個核心原則
-1. **使用繁體中文** - 所有溝通均使用繁體中文
-2. **避免不必要地建立檔案** - 優先編輯現有檔案
-3. **使用專案日誌系統** - 永不使用 console.log（使用 apiLogger、dbLogger 等）
-4. **執行開發前檢查清單** - 程式碼重用、依賴檢查、效能影響
-5. **對複雜任務使用 TodoWrite** - 通過狀態更新追蹤進度
+- [🚀 快速開始](#-快速開始)
+- [🤖 Claude 行為準則](#-claude-行為準則)
+- [📐 開發理念](#-開發理念)
+- [🔧 開發流程](#-開發流程)
+- [🌐 API 開發規範](#-api-開發規範)
+- [💎 程式碼品質標準](#-程式碼品質標準)
+- [🎨 UI/UX 設計規範](#-uiux-設計規範)
+- [✅ 品質閘門與維護](#-品質閘門與維護)
 
-### 關鍵規則
+---
+
+## 🚀 快速開始
+
+### 5 秒速查
+
 ```bash
-# 開發前必須執行
+# 開發前必做
 npm run type-check && npm run lint
 
-# 依賴管理
-npm ls | grep similar-package        # 檢查重複套件
-npx depcheck                         # 檢查未使用依賴
-
-# 技術債警告信號
-🔴 相同邏輯出現 3+ 次              → 抽取為共用函數
-🔴 元件 > 200 行 / 函數 > 30 行    → 拆分或簡化
-🔴 建置時間增加 > 30 秒            → 調查並優化
+# 常用指令
+npm run dev          # 啟動開發伺服器
+npm run type-check   # TypeScript 檢查
+npm run lint         # 程式碼品質檢查
 ```
 
+### 核心原則（3 條）
+
+1. **使用繁體中文** - 所有溝通均使用繁體中文
+2. **使用 TodoWrite 追蹤複雜任務** - 完成後立即標記 completed
+3. **遵循專案規範** - 使用日誌系統 (apiLogger/dbLogger)、統一錯誤處理、API 中間件
+
 ### 常用指令
+
 ```bash
 # 開發流程
 npm run dev                          # 啟動開發伺服器 (Turbopack)
@@ -37,14 +47,117 @@ npm run lint                         # 檢查程式碼品質
 rm -rf .next/cache                   # 清理建置快取
 npm audit                            # 安全性檢查
 npm run analyze                      # Bundle 大小分析
+
+# 依賴管理
+npm ls | grep package-name           # 檢查套件
+npx depcheck                         # 檢查未使用依賴
 ```
+
 ---
 
-## 開發理念
+## 🤖 Claude 行為準則
+
+### 執行原則
+
+- **精確執行** - 只做被要求的事，不多不少
+- **謹慎建立檔案** - 只在絕對必要時建立新檔案，優先編輯現有檔案
+- **不主動建立文檔** - 除非使用者明確要求，否則不建立 *.md 或 README 檔案
+
+### Git 提交流程
+
+- **Commit 前必須詢問**：
+  1. 展示變更的檔案列表 (`git status`, `git diff --stat`)
+  2. 展示完整的 commit message 草稿
+  3. 等待使用者明確確認後才執行 commit
+  4. 確認後才可執行 `git add` 和 `git commit`
+
+- **Push 前必須詢問**：
+  1. 詢問使用者是否要推送到 remote
+  2. 等待使用者明確確認後才執行 `git push`
+  3. 永不自動執行 push 操作
+
+### TodoWrite 使用規範
+
+#### 基本原則
+
+將複雜工作分解為 3-5 個階段，使用 TodoWrite 工具追蹤進度：
+
+```typescript
+TodoWrite({
+  todos: [
+    { content: "階段 1: [具體目標]", status: "pending", activeForm: "執行階段 1中" },
+    { content: "階段 2: [具體目標]", status: "pending", activeForm: "執行階段 2中" }
+  ]
+})
+```
+
+#### 狀態管理規則
+
+1. **狀態轉換順序**：
+   - pending (待處理) → in_progress (進行中) → completed (已完成)
+   - 永不跳過 in_progress 直接標記為 completed
+
+2. **一次只有一個 in_progress**：
+   - 同一時間只能有一個任務狀態為 `in_progress`
+   - 開始新任務前必須先完成當前任務
+
+3. **立即更新原則**：
+   - ✅ 開始任務時：**立即**標記為 `in_progress`
+   - ✅ 完成任務後：**立即**標記為 `completed`
+   - ❌ 不要批量處理多個任務的狀態更新
+
+4. **任務描述格式**：
+   - `content`: 命令式（例：「建立 API 目錄結構」）
+   - `activeForm`: 現在進行式（例：「建立 API 目錄結構中」）
+
+5. **完成條件要求**：
+   - **僅當任務完全完成時**才標記為 `completed`
+   - 如果遇到錯誤或阻塞，保持 `in_progress`
+   - 永不標記未完成的任務為 `completed`
+
+**何時不標記為 completed**：
+- 測試失敗時
+- 實作部分完成時
+- 遇到未解決的錯誤時
+- 找不到必要檔案或依賴時
+- 被阻塞無法繼續時
+
+#### Markdown 文檔任務清單同步
+
+**當專案包含實作路線圖或檢查清單文檔時**（如 `docs/architecture/交易系統/08-實作路線圖.md`），Claude 需要同時管理兩種任務清單：
+
+1. **TodoWrite（動態追蹤）**：
+   - 用於追蹤當前會話的執行進度
+   - 狀態：pending → in_progress → completed
+   - 會話結束後狀態消失
+
+2. **Markdown Task List（靜態記錄）**：
+   - 用於更新文檔中的永久記錄
+   - 格式：`- [ ]` → `- [x]`
+   - 永久保存在文檔中
+
+**同步規則**：
+
+- **開始任務時**：只更新 TodoWrite 為 in_progress，文檔保持 `[ ]`
+- **完成任務時**：同時更新 TodoWrite 為 completed **和**文檔為 `[x]`
+
+**適用情境**：
+- ✅ 當任務來自文檔中的檢查清單
+- ✅ 當實作路線圖明確列出任務清單
+- ❌ 當任務是臨時性的（不在文檔中）
+
+**注意事項**：
+- 僅更新**直接對應**的任務項目
+- 不要一次批量勾選多個未完成的任務
+- 完成任務後**立即**更新文檔，不要等到最後才批量更新
+
+---
+
+## 📐 開發理念
 
 ### 核心信念
 
-- **漸進式進展優於大爭霸式改變** - 小的變更能編譯並通過測試
+- **漸進式進展優於大爆炸式改變** - 小的變更能編譯並通過測試
 - **從現有程式碼中學習** - 在實作前先研究和規劃
 - **實用主義優於教條主義** - 適應專案現實
 - **清晰意圖優於巧妙程式碼** - 保持無趣和明顯
@@ -64,16 +177,32 @@ npm run analyze                      # Bundle 大小分析
 
 **始終**：
 - 漸進式提交可工作的程式碼
-- 隨時更新計劃文件
 - 從現有實作中學習
 - 3 次嘗試失敗後停止並重新評估
 - **執行開發前檢查清單** - 程式碼重用、依賴評估、架構一致性、效能影響
 - **監控技術債信號** - 建置時間增加、TypeScript 錯誤、ESLint 警告、重複程式碼
-- **適當記錄技術債** - 使用帶有 DEBT 標籤、分類和估計工作量的 TODO 註釋
-- **執行每週維護** - 快取清理、依賴檢查、安全稽核、套件分析
-- **追蹤效能指標** - 建置大小 < 200MB 快取、建置時間 < 5分鐘、套件 JS < 500KB
 
-## 開發流程
+### 決策框架
+
+當存在多種有效方法時，根據以下原則選擇：
+
+1. **可測試性** - 我能輕易測試這個嗎？
+2. **可讀性** - 6 個月後有人能理解這個嗎？
+3. **一致性** - 這是否符合專案模式？
+4. **簡潔性** - 這是否最簡單可行的解決方案？
+5. **可逆性** - 後續更改有多困難？
+6. **技術債影響** - 這會在後續產生技術債嗎？
+
+### 學習程式碼庫
+
+- 找到 3 個類似的功能/元件
+- 識別常見模式和慣例
+- 盡可能使用相同的函式庫/工具
+- 遵循現有的測試模式
+
+---
+
+## 🔧 開發流程
 
 ### 開發前檢查清單
 
@@ -105,23 +234,7 @@ npm run analyze                      # Bundle 大小分析
 npm run type-check && npm run lint
 ```
 
-### 1. 規劃與階段分割
-
-將複雜工作分解為 3-5 個階段。使用 TodoWrite 工具追蹤進度：
-
-```typescript
-TodoWrite({
-  todos: [
-    { content: "階段 1: [具體目標]", status: "pending", activeForm: "執行階段 1" },
-    { content: "階段 2: [具體目標]", status: "pending", activeForm: "執行階段 2" },
-    // ... 最多 5 個階段
-  ]
-})
-```
-- 隨著進度更新狀態 (pending → in_progress → completed)
-- 每個階段都要有明確的成功標準和可測試的結果
-
-### 2. 實作流程
+### 實作流程
 
 1. **理解** - 研究程式碼庫中的現有模式
 2. **實作** - 編寫功能程式碼
@@ -129,7 +242,7 @@ TodoWrite({
 4. **重構** - 在測試通過的情況下清理
 5. **提交** - 使用清晰的訊息解釋「為什麼」
 
-### 3. 遇到困難時（嘗試 3 次後）
+### 遇到困難時（嘗試 3 次後）
 
 **重要**：每個問題最多嘗試 3 次，然後停止。
 
@@ -152,7 +265,9 @@ TodoWrite({
    - 不同的架構模式？
    - 移除抽象而不是添加？
 
-## API 開發規範
+---
+
+## 🌐 API 開發規範
 
 ### Error Handling
 
@@ -161,11 +276,11 @@ TodoWrite({
 - **使用統一錯誤類別**: 從 `@/lib/errors` 匯入標準錯誤類別
 - **使用錯誤處理中間件**: 在 API 路由中使用 `withErrorHandler`
 - **使用統一回應格式**: 從 `@/lib/api-response` 匯入回應工具
-- **整合 logger 系統**: 所有錯誤自動記錄到適當的日誌級別
+- **整合 logger 系統**: 所有錯誤自動記錄到適當的日誌級別 (apiLogger)
 - **包含除錯上下文**: 每個錯誤都有追蹤 ID 和詳細上下文
 - **永不默默吐掉例外** - 所有例外都應適當處理和記錄
 
-#### 可用的錯誤類型
+**可用的錯誤類型**：
 
 - `ValidationError` - 輸入驗證失敗 (400)
 - `AuthorizationError` - 權限不足 (403)
@@ -178,19 +293,20 @@ TodoWrite({
 
 **專案已實施統一的中間件組合系統** - 請使用組合函數而非手動組合
 
-#### 可用的組合函數（推薦使用）
+**推薦使用的組合函數**：
 
 - `withAuthAndError` - 認證 + 錯誤處理（需要使用者登入）
 - `withAdminAndError` - 管理員認證 + 錯誤處理（需要管理員權限）
 - `withOptionalAuthAndError` - 可選認證 + 錯誤處理（公開 API 但可能需要使用者資訊）
 
+**範例**：
+
 ```typescript
-import { withAuthAndError, withAdminAndError, User } from '@/lib/middleware/api-middleware'
+import { withAuthAndError, User } from '@/lib/middleware/api-middleware'
 import { success } from '@/lib/api-response'
 
 // ✅ 正確：使用組合函數
 async function handlePOST(req: NextRequest, user: User) {
-  // user 已確保存在且已通過錯誤處理
   const data = await req.json()
   const result = await service.create(data, user.id)
   return success(result, '建立成功')
@@ -202,35 +318,13 @@ export const POST = withAuthAndError(handlePOST, {
 })
 
 // ❌ 錯誤：缺少錯誤處理
-export const POST = requireAuth(handlePOST)  // requireAuth 不包含 withErrorHandler
-
-// ❌ 錯誤：重複包裝
-export const POST = withErrorHandler(requireAuth(handlePOST), { module: 'API' })
+export const POST = requireAuth(handlePOST)
 ```
 
 **重要**：
 - `requireAuth`/`requireAdmin` 只負責認證，**不包含**錯誤處理
 - 處理函數必須接收 `(request: NextRequest, user: User)` 參數
 - 使用組合函數時，錯誤會自動記錄到 apiLogger
-
-#### 基礎中間件（僅在特殊情況使用）
-
-- `requireAuth` - 僅認證檢查
-- `requireAdmin` - 僅管理員檢查
-- `optionalAuth` - 僅可選認證
-- `withErrorHandler` - 僅錯誤處理
-
-**何時使用**：只在需要自定義中間件組合時才使用基礎中間件。
-
-### API 開發完成檢查清單
-
-- [ ] 使用適當的組合中間件 (withAuthAndError/withAdminAndError/withOptionalAuthAndError)
-- [ ] 所有錯誤使用標準錯誤類型 (ValidationError, NotFoundError, MethodNotAllowedError 等)
-- [ ] 動態路由參數正確使用 await (Next.js 15+)
-- [ ] 處理函數接收正確參數：`(request: NextRequest, user: User)` 或 `(request: NextRequest, user: User | null)`
-- [ ] 回應使用統一格式 (success, created, successWithPagination)
-- [ ] TypeScript 類型檢查通過
-- [ ] 處理不支援的 HTTP 方法時返回 MethodNotAllowedError
 
 ### Next.js 15 動態路由參數處理
 
@@ -248,21 +342,21 @@ async function handleGET(
 }
 
 export const GET = withAuthAndError(handleGET, { module: 'ProductAPI' })
-
-// ❌ 錯誤：直接使用 params
-async function handleGET(
-  request: NextRequest,
-  context: { params: { id: string } }  // 類型錯誤
-) {
-  const { id } = context.params  // 執行時錯誤
-}
 ```
 
-**參考範例**：
-- 查看 `src/app/api/admin/connection-pool/route.ts` 了解正確的中間件使用
-- 查看 `src/app/api/site-settings/route.ts` 了解組合函數的實際應用
+### API 開發完成檢查清單
 
-## 技術標準
+- [ ] 使用適當的組合中間件 (withAuthAndError/withAdminAndError/withOptionalAuthAndError)
+- [ ] 所有錯誤使用標準錯誤類型
+- [ ] 動態路由參數正確使用 await (Next.js 15+)
+- [ ] 處理函數接收正確參數：`(request: NextRequest, user: User)`
+- [ ] 回應使用統一格式 (success, created, successWithPagination)
+- [ ] TypeScript 類型檢查通過
+- [ ] 處理不支援的 HTTP 方法時返回 MethodNotAllowedError
+
+---
+
+## 💎 程式碼品質標準
 
 ### 架構原則
 
@@ -271,79 +365,43 @@ async function handleGET(
 - **明確優於隱含** - 清晰的資料流和依賴關係
 - **重視測試** - 永不停用測試，修復它們；新功能必須有測試
 
-### 程式碼品質
+### 程式碼品質要求
 
-- **每次提交必須**：
-  - 編譯成功
-  - 通過所有現有測試
-  - 遵循專案格式化/linting
-  - 使用專案日誌系統 (不用 console.log)
+**每次提交必須**：
+- 編譯成功
+- 通過所有現有測試
+- 遵循專案格式化/linting
+- 使用專案日誌系統 (apiLogger/dbLogger，不用 console.log)
 
-- **提交前**：
-  - **先向使用者確認** - 展示變更檔案和 commit message 草稿
-  - 運行格式化工具/linter
-  - 自我審查變更
-  - 確保提交訊息解釋「為什麼」
+**提交前**：
+- **先向使用者確認** - 展示變更檔案和 commit message 草稿
+- 運行格式化工具/linter
+- 自我審查變更
+- 確保提交訊息解釋「為什麼」
 
-- **錯誤自動記錄**: 使用 `withErrorHandler` 中間件時，錯誤會自動記錄到適當級別
+### 品質標準與技術債管理
 
-### UI/UX 設計規範
+**品質標準**（建議）:
+- 相同邏輯出現 **3+ 次** → 考慮抽取為共用函數
+- 元件建議 **< 200 行** / 函數建議 **< 30 行** / Props 建議 **< 7 個**
+- 巢狀層數建議 **< 3 層** / 參數數量建議 **< 5 個**
+- 避免在元件內直接調用 API (使用 custom hooks)
 
-**視覺設計原則**：
+**技術債信號**:
+- 🔴 建置時間增加 > 30 秒
+- 🔴 TypeScript/ESLint 錯誤或警告數量增加
+- 🔴 相似功能在多處重複實作
+- 🔴 依賴套件版本過舊或有安全漏洞
 
-- **禁止使用漸層** - 不使用 `bg-gradient-*` 類別
-  - ❌ `bg-gradient-to-r from-blue-500 to-purple-600`
-  - ✅ `bg-blue-500`
-  - 理由：保持視覺簡潔、提升效能、易於維護
+**技術債分類**:
+- 🔴 Critical - 影響系統穩定性、安全性或核心功能
+- 🟡 Major - 影響開發效率、用戶體驗或維護成本
+- 🟢 Minor - 程式碼整潔度、文檔或註解問題
 
-- **禁止使用 Emoji** - 不在 UI 中使用 emoji 字符
-  - ❌ `🎯` `✅` `❌` `📊` `🔍` `⚔️` `✨`
-  - ✅ 使用 SVG 圖示替代
-  - 理由：emoji 在不同平台顯示不一致、無法精確控制樣式、影響無障礙體驗
-
-- **使用 SVG 圖示** - 所有圖示使用 SVG
-  - 使用 inline SVG 或圖示庫（如 Heroicons）
-  - 確保 SVG 支援深色模式（使用 `currentColor`）
-  - 提供適當的 `aria-label` 以支援無障礙
-  - SVG 應具有適當的尺寸類別（如 `w-6 h-6`）
-
-**範例**：
-
-```tsx
-// ❌ 錯誤：使用 emoji 和漸層
-<div className="bg-gradient-to-r from-blue-500 to-purple-600">
-  🎯 命中率計算器
-</div>
-
-// ✅ 正確：使用 SVG 和純色
-<div className="bg-blue-500 flex items-center gap-2">
-  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <circle cx="12" cy="12" r="10" strokeWidth="2"/>
-    <circle cx="12" cy="12" r="6" strokeWidth="2"/>
-    <circle cx="12" cy="12" r="2" fill="currentColor"/>
-  </svg>
-  <span className="text-white">命中率計算器</span>
-</div>
-```
-
-```tsx
-// ❌ 錯誤：使用 emoji 表示狀態
-<div>{isSuccess ? '✅' : '❌'} 操作結果</div>
-
-// ✅ 正確：使用 SVG 圖示
-<div className="flex items-center gap-2">
-  {isSuccess ? (
-    <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-    </svg>
-  ) : (
-    <svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-    </svg>
-  )}
-  <span>操作結果</span>
-</div>
-```
+**遇到技術債信號時**：
+1. **記錄問題** - 使用 TODO 註釋和 DEBT 標籤
+2. **考慮重構** - 而不是增加問題
+3. **參考現有實作** - 尋找類似的模式
 
 ### 依賴管理
 
@@ -373,30 +431,6 @@ npx depcheck
 - **評估** 增加 bundle > 100KB 的套件影響（非核心功能需謹慎）
 - **必須** 在 commit message 說明為什麼需要新依賴
 
-### 程式碼品質保證與技術債管理
-
-**品質標準**（建議）:
-- 相同邏輯出現 **3+ 次** → 考慮抽取為共用函數
-- 元件建議 **< 200 行** / 函數建議 **< 30 行** / Props 建議 **< 7 個**
-- 巢狀層數建議 **< 3 層** / 參數數量建議 **< 5 個**
-- 避免在元件內直接調用 API (使用 custom hooks)
-
-**技術債信號**:
-- 🔴 建置時間增加 > 30 秒
-- 🔴 TypeScript/ESLint 錯誤或警告數量增加
-- 🔴 相似功能在多處重複實作
-- 🔴 依賴套件版本過舊或有安全漏洞
-
-**技術債分類**:
-- 🔴 Critical - 影響系統穩定性、安全性或核心功能
-- 🟡 Major - 影響開發效率、用戶體驗或維護成本
-- 🟢 Minor - 程式碼整潔度、文檔或註解問題
-
-**遇到技術債信號時**：
-1. **記錄問題** - 使用 TODO 註釋和 DEBT 標籤
-2. **考慮重構** - 而不是增加問題
-3. **參考現有實作** - 尋找類似的模式
-
 ### 測試指南
 
 - 測試行為而非實作
@@ -405,34 +439,52 @@ npx depcheck
 - 使用現有的測試工具/助手
 - 測試應該是確定性的
 
-## 決策與學習
+---
 
-### 決策框架
+## 🎨 UI/UX 設計規範
 
-當存在多種有效方法時，根據以下原則選擇：
+### 視覺設計原則
 
-1. **可測試性** - 我能輕易測試這個嗎？
-2. **可讀性** - 6 個月後有人能理解這個嗎？
-3. **一致性** - 這是否符合專案模式？
-4. **簡潔性** - 這是否最簡單可行的解決方案？
-5. **可逆性** - 後續更改有多困難？
-6. **技術債影響** - 這會在後續產生技術債嗎？
+1. **禁止使用漸層**
+   - ❌ `bg-gradient-to-r from-blue-500 to-purple-600`
+   - ✅ `bg-blue-500`
+   - 理由：保持視覺簡潔、提升效能、易於維護
 
-### 學習程式碼庫
+2. **禁止使用 Emoji**
+   - ❌ `🎯` `✅` `❌` `📊` `🔍`
+   - ✅ 使用 SVG 圖示替代
+   - 理由：emoji 在不同平台顯示不一致、無法精確控制樣式、影響無障礙體驗
 
-- 找到 3 個類似的功能/元件
-- 識別常見模式和慣例
-- 盡可能使用相同的函式庫/工具
-- 遵循現有的測試模式
+3. **使用 SVG 圖示**
+   - 使用 inline SVG 或圖示庫（如 Heroicons）
+   - 確保 SVG 支援深色模式（使用 `currentColor`）
+   - 提供適當的 `aria-label` 以支援無障礙
+   - SVG 應具有適當的尺寸類別（如 `w-6 h-6`）
 
-### 開發工具
+**範例**：
 
-- 使用專案現有的建置系統
-- 使用專案的測試框架
-- 使用專案的格式化器/linter 設定
-- 不要在沒有強烈理由的情況下引入新工具
+```tsx
+// ❌ 錯誤：使用 emoji
+<div>{isSuccess ? '✅' : '❌'} 操作結果</div>
 
-## 品質閣門
+// ✅ 正確：使用 SVG 圖示
+<div className="flex items-center gap-2">
+  {isSuccess ? (
+    <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+    </svg>
+  ) : (
+    <svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  )}
+  <span>操作結果</span>
+</div>
+```
+
+---
+
+## ✅ 品質閘門與維護
 
 ### 完成定義
 
@@ -442,8 +494,6 @@ npx depcheck
 - [ ] 提交訊息清晰
 - [ ] 實作符合計劃
 
-## 維護任務
-
 ### 重大變更的維護
 
 **執行重大變更時** 執行以下維護工作：
@@ -451,7 +501,6 @@ npx depcheck
 ```bash
 # 1. 清理建置快取
 rm -rf .next/cache
-echo "Cache size after cleanup: $(du -sh .next/ 2>/dev/null || echo "0B")"
 
 # 2. 檢查未使用的依賴
 npx depcheck
@@ -482,15 +531,10 @@ grep -r "TODO" src/ --include="*.ts" --include="*.tsx"
 npm outdated
 
 # 2. 檢查重複程式碼
-# 使用工具如 jscpd 或手動檢查常見模式
 grep -r "function.*{" src/ | sort | uniq -c | sort -nr
 
-# 3. 資料庫效能檢查
-# 檢查慢查詢日誌 (如果有的話)
-
-# 4. 效能基準測試
+# 3. 效能基準測試
 npm run build
-echo "Build time: $(date)"
 ```
 
 **版本發布檢查清單**：
@@ -500,27 +544,3 @@ echo "Build time: $(date)"
 - [ ] 運行完整的測試套件
 - [ ] 檢查系統效能指標
 - [ ] 更新文檔和 README
-
----
-
-## 🤖 Claude 行為準則
-
-以下是 Claude 在此專案中的核心行為準則：
-
-### 執行原則
-- **精確執行** - 只做被要求的事，不多不少
-- **謹慎建立檔案** - 只在絕對必要時建立新檔案
-- **優先編輯現有檔案** - 永遠優先選擇編輯而非建立
-- **不主動建立文檔** - 除非使用者明確要求，否則不建立 *.md 或 README 檔案
-
-### Git 提交流程
-- **Commit 前必須詢問** - 在執行 `git commit` 前：
-  1. 展示變更的檔案列表 (`git status`, `git diff --stat`)
-  2. 展示完整的 commit message 草稿
-  3. 等待使用者明確確認後才執行 commit
-  4. 確認後才可執行 `git add` 和 `git commit`
-
-- **Push 前必須詢問** - commit 完成後：
-  1. 詢問使用者是否要推送到 remote
-  2. 等待使用者明確確認後才執行 `git push`
-  3. 永不自動執行 push 操作

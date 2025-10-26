@@ -398,6 +398,10 @@ export default function Home() {
           onResetAdvancedFilter={handleResetAdvancedFilter}
           advancedFilter={advancedFilter}
           onAdvancedFilterChange={setAdvancedFilter}
+          onOpenCreateListing={modals.openCreateListingModal}
+          onOpenMyListings={modals.openMyListingsModal}
+          onOpenMarketBrowser={modals.openMarketBrowserModal}
+          onOpenInterests={modals.openInterestsModal}
         />
 
         {/* 內容顯示區域 */}
@@ -438,6 +442,10 @@ export default function Home() {
         isGachaModalOpen={modals.isGachaModalOpen}
         isMerchantShopModalOpen={modals.isMerchantShopModalOpen}
         isAccuracyCalculatorOpen={modals.isAccuracyCalculatorOpen}
+        isCreateListingModalOpen={modals.isCreateListingModalOpen}
+        isMyListingsModalOpen={modals.isMyListingsModalOpen}
+        isMarketBrowserModalOpen={modals.isMarketBrowserModalOpen}
+        isInterestsModalOpen={modals.isInterestsModalOpen}
         selectedMonsterId={modals.selectedMonsterId ?? undefined}
         selectedMonsterName={modals.selectedMonsterName}
         selectedItemId={modals.selectedItemId}
@@ -453,11 +461,17 @@ export default function Home() {
         closeGachaModal={modals.closeGachaModal}
         closeMerchantShopModal={modals.closeMerchantShopModal}
         closeAccuracyCalculator={modals.closeAccuracyCalculator}
+        closeCreateListingModal={modals.closeCreateListingModal}
+        closeMyListingsModal={modals.closeMyListingsModal}
+        closeMarketBrowserModal={modals.closeMarketBrowserModal}
+        closeInterestsModal={modals.closeInterestsModal}
         goBack={modals.goBack}
         openGachaModal={modals.openGachaModal}
         openBugReportModal={modals.openBugReportModal}
         openMerchantShopModal={modals.openMerchantShopModal}
         openAccuracyCalculator={modals.openAccuracyCalculator}
+        openCreateListingModal={modals.openCreateListingModal}
+        openMyListingsModal={modals.openMyListingsModal}
         allDrops={allDrops}
         gachaMachines={gachaMachines}
         itemAttributesMap={itemAttributesMap}

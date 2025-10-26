@@ -389,5 +389,13 @@
   "merchant.close": "關閉",
   "merchant.total": "總計",
   "merchant.mapCount": "個地圖",
-  "merchant.itemUnit": "個物品"
+  "merchant.itemUnit": "個物品",
+  "auth.loginWithDiscord": "使用 Discord 登入",
+  "auth.loginRequired": "需要登入",
+  "auth.loginDescription": "使用 Discord 帳號登入以使用交易功能",
+  "auth.redirecting": "跳轉中...",
+  "auth.loginNote": "登入後，您可以刊登物品、表達興趣並進行交易",
+  "auth.logout": "登出",
+  "auth.profile": "個人資料",
+  "auth.loading": "載入中..."
 }

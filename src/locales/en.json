@@ -389,5 +389,13 @@
   "merchant.close": "Close",
   "merchant.total": "Total",
   "merchant.mapCount": "maps",
-  "merchant.itemUnit": "items"
+  "merchant.itemUnit": "items",
+  "auth.loginWithDiscord": "Login with Discord",
+  "auth.loginRequired": "Login Required",
+  "auth.loginDescription": "Login with Discord to use trading features",
+  "auth.redirecting": "Redirecting...",
+  "auth.loginNote": "After logging in, you can post listings, express interest, and trade items",
+  "auth.logout": "Logout",
+  "auth.profile": "Profile",
+  "auth.loading": "Loading..."
 }
