@@ -29,13 +29,13 @@ export function MarketListItem({ listing, onClick }: MarketListItemProps) {
   const getItemName = (item: ListingWithUserInfo['item']) => {
     // 處理 item 為 null 或 undefined 的情況
     if (!item) {
-      return language === 'zh-TW' ? `物品 #${listing.item_id}` : `Item #${listing.item_id}`
+      return language === 'zh-TW' ? '未知物品' : 'Unknown Item'
     }
 
     if (language === 'zh-TW') {
-      return item.chineseItemName || item.itemName || `物品 #${listing.item_id}`
+      return item.chineseItemName || item.itemName || '未知物品'
     }
-    return item.itemName || `Item #${listing.item_id}`
+    return item.itemName || item.chineseItemName || 'Unknown Item'
   }
 
   // 格式化交易類型
@@ -88,53 +88,36 @@ export function MarketListItem({ listing, onClick }: MarketListItemProps) {
   return (
     <button
       onClick={onClick}
-      className="w-full flex items-center gap-4 p-4 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-750 border-b border-gray-200 dark:border-gray-700 transition-colors text-left"
+      className="w-full grid grid-cols-[70px_50px_1fr_60px_90px] md:grid-cols-[100px_80px_1fr_100px_140px_140px] gap-2 md:gap-4 items-center p-3 md:p-4 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-750 border-b border-gray-200 dark:border-gray-700 transition-colors text-left"
     >
-      {/* 物品圖片 */}
-      <div className="flex-shrink-0 w-12 h-12 relative">
-        <img
-          src={getItemImageUrl(listing.item_id)}
-          alt={getItemName(listing.item)}
-          className="w-full h-full object-contain"
-          onError={(e) => {
-            e.currentTarget.src = '/images/items/default.png'
-          }}
-        />
+      {/* 1. 交易模式 */}
+      <div className="flex items-center justify-center">
+        {getTradeTypeBadge()}
       </div>
 
-      {/* 主要資訊 */}
-      <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2 mb-1">
-          {getTradeTypeBadge()}
-          <h3 className="font-medium text-gray-900 dark:text-gray-100 truncate">
-            {getItemName(listing.item)}
-          </h3>
+      {/* 2. 物品圖片 */}
+      <div className="flex items-center justify-center">
+        <div className="w-12 h-12 md:w-16 md:h-16 relative">
+          <img
+            src={getItemImageUrl(listing.item_id)}
+            alt={getItemName(listing.item)}
+            className="w-full h-full object-contain"
+            onError={(e) => {
+              e.currentTarget.src = '/images/items/default.png'
+            }}
+          />
         </div>
+      </div>
 
-        <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
-          {/* 數量 */}
-          <span>
-            {t('listing.quantity')}: {listing.quantity}
-          </span>
-
-          {/* 價格 */}
-          {getPriceDisplay()}
-
-          {/* 賣家（僅桌面顯示） */}
-          <span className="hidden md:block truncate">
-            {listing.seller.discord_username || listing.seller.username}
-          </span>
-        </div>
-
+      {/* 3. 物品名稱 + 屬性 */}
+      <div className="min-w-0">
+        <h3 className="font-medium text-gray-900 dark:text-gray-100 truncate text-sm md:text-base">
+          {getItemName(listing.item)}
+        </h3>
         {/* 物品屬性摘要（如果有） */}
         {listing.item_stats && (
-          <div className="mt-1 flex items-center gap-1 text-xs text-indigo-600 dark:text-indigo-400">
-            {listing.stats_grade && (
-              <span className="px-1.5 py-0.5 bg-indigo-100 dark:bg-indigo-900 rounded">
-                {listing.stats_grade}
-              </span>
-            )}
-            <span className="truncate max-w-xs">
+          <div className="mt-1 text-xs text-indigo-600 dark:text-indigo-400">
+            <span className="truncate">
               {Object.entries(listing.item_stats)
                 .filter(([, value]) => value !== undefined && value !== null)
                 .slice(0, 3)
@@ -145,28 +128,20 @@ export function MarketListItem({ listing, onClick }: MarketListItemProps) {
         )}
       </div>
 
-      {/* 右側：瀏覽/意向數（僅桌面顯示） */}
-      <div className="hidden md:flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400">
-        <div className="flex items-center gap-1">
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-          </svg>
-          <span>{listing.view_count}</span>
-        </div>
-        <div className="flex items-center gap-1">
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-          </svg>
-          <span>{listing.interest_count}</span>
-        </div>
+      {/* 4. 數量 */}
+      <div className="text-center text-sm text-gray-600 dark:text-gray-400">
+        <span className="hidden md:inline">{t('listing.quantity')}: </span>
+        <span className="font-medium">{listing.quantity}</span>
       </div>
 
-      {/* 箭頭圖示 */}
-      <div className="flex-shrink-0">
-        <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
+      {/* 5. 價格 */}
+      <div className="text-center">
+        {getPriceDisplay()}
+      </div>
+
+      {/* 6. 發布者（僅桌面顯示） */}
+      <div className="hidden md:block text-center text-sm text-gray-600 dark:text-gray-400 truncate">
+        {listing.seller.discord_username || listing.seller.username}
       </div>
     </button>
   )

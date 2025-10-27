@@ -116,6 +116,28 @@ export function MarketListView({
         </p>
       </div>
 
+      {/* 表格頭部 - 欄位標題 */}
+      <div className="grid grid-cols-[70px_50px_1fr_60px_90px] md:grid-cols-[100px_80px_1fr_100px_140px_140px] gap-2 md:gap-4 items-center px-3 md:px-4 py-2 md:py-3 bg-gray-100 dark:bg-gray-900 border-b-2 border-gray-300 dark:border-gray-600">
+        <div className="text-center text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
+          {t('trade.type.label') || '類型'}
+        </div>
+        <div className="text-center text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
+          {t('market.item') || '物品'}
+        </div>
+        <div className="text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
+          {t('market.itemName') || '名稱'}
+        </div>
+        <div className="text-center text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
+          {t('listing.quantity') || '數量'}
+        </div>
+        <div className="text-center text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
+          {t('listing.price') || '價格'}
+        </div>
+        <div className="hidden md:block text-center text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
+          {t('listing.seller') || '發布者'}
+        </div>
+      </div>
+
       {/* 刊登列表 */}
       <div className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
         {listings.map((listing) => (

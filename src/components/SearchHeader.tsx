@@ -109,14 +109,7 @@ export const SearchHeader = memo(function SearchHeader({
           <ThemeToggle />
           <LanguageToggle />
           {/* 認證 UI：未登入顯示登入按鈕，已登入顯示用戶選單 */}
-          {!loading && (user ? (
-            <UserMenu
-              onOpenCreateListing={onOpenCreateListing}
-              onOpenMyListings={onOpenMyListings}
-              onOpenMarketBrowser={onOpenMarketBrowser}
-              onOpenInterests={onOpenInterests}
-            />
-          ) : <LoginButton />)}
+          {!loading && (user ? <UserMenu /> : <LoginButton />)}
         </div>
       </div>
 
@@ -161,10 +154,7 @@ export const SearchHeader = memo(function SearchHeader({
             <MarketDropdownMenu
               onCreateListing={onOpenCreateListing}
               onMyListings={onOpenMyListings}
-              onBrowseMarket={() => {
-                // 切換到市場刊登模式
-                onFilterChange('market-listings')
-              }}
+              onBrowseMarket={onOpenMarketBrowser}
               onInterests={onOpenInterests}
             />
           )}
