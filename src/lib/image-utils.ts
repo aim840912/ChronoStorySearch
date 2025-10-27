@@ -32,147 +32,6 @@ if (!R2_PUBLIC_URL) {
 const availableItemImages = new Set(imageManifest.items)
 const availableMonsterImages = new Set(imageManifest.monsters)
 
-// ==================== 圖片快取系統 ====================
-
-/**
- * 圖片快取 Map：儲存已載入的圖片 Blob URL
- * Key: 完整的圖片 URL
- * Value: Blob URL 或載入中的 Promise
- */
-const imageCache = new Map<string, string | Promise<string>>()
-
-/**
- * 快取統計（開發模式使用）
- */
-const cacheStats = {
-  hits: 0,
-  misses: 0,
-  errors: 0,
-}
-
-/**
- * 預載入圖片並快取為 Blob URL
- * @param url 圖片 URL
- * @returns Blob URL 或原始 URL（如果載入失敗）
- */
-async function preloadAndCacheImage(url: string): Promise<string> {
-  try {
-    const response = await fetch(url, {
-      mode: 'cors',
-      credentials: 'omit',
-    })
-
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`)
-    }
-
-    const blob = await response.blob()
-    const blobUrl = URL.createObjectURL(blob)
-
-    // 將 Blob URL 存入快取
-    imageCache.set(url, blobUrl)
-
-    if (process.env.NODE_ENV === 'development') {
-      clientLogger.info(`圖片已快取: ${url.split('/').pop()}`)
-    }
-
-    return blobUrl
-  } catch (error) {
-    cacheStats.errors++
-    clientLogger.warn(`圖片預載入失敗: ${url}`, error)
-
-    // 載入失敗時，快取原始 URL（避免重複嘗試）
-    imageCache.set(url, url)
-    return url
-  }
-}
-
-/**
- * 獲取圖片 URL（帶快取）
- * @param url 原始圖片 URL
- * @returns Blob URL 或原始 URL
- */
-export function getCachedImageUrl(url: string): string {
-  // 檢查快取
-  const cached = imageCache.get(url)
-
-  if (cached) {
-    if (typeof cached === 'string') {
-      // 已經載入完成
-      cacheStats.hits++
-      return cached
-    }
-    // 正在載入中，返回原始 URL（載入完成後會自動更新）
-    return url
-  }
-
-  // 快取未命中，開始預載入
-  cacheStats.misses++
-  const loadingPromise = preloadAndCacheImage(url)
-  imageCache.set(url, loadingPromise)
-
-  // 返回原始 URL（不阻塞渲染）
-  return url
-}
-
-/**
- * 批次預載入圖片
- * @param urls 圖片 URL 陣列
- */
-export async function preloadImages(urls: string[]): Promise<void> {
-  const uncachedUrls = urls.filter(url => !imageCache.has(url))
-
-  if (uncachedUrls.length === 0) return
-
-  if (process.env.NODE_ENV === 'development') {
-    clientLogger.info(`批次預載入 ${uncachedUrls.length} 張圖片`)
-  }
-
-  // 批次載入（限制並發數為 6，避免阻塞）
-  const CONCURRENT_LIMIT = 6
-  for (let i = 0; i < uncachedUrls.length; i += CONCURRENT_LIMIT) {
-    const batch = uncachedUrls.slice(i, i + CONCURRENT_LIMIT)
-    await Promise.allSettled(batch.map(url => preloadAndCacheImage(url)))
-  }
-}
-
-/**
- * 清除圖片快取（釋放記憶體）
- */
-export function clearImageCache(): void {
-  // 釋放所有 Blob URL
-  imageCache.forEach((value) => {
-    if (typeof value === 'string' && value.startsWith('blob:')) {
-      URL.revokeObjectURL(value)
-    }
-  })
-
-  imageCache.clear()
-
-  if (process.env.NODE_ENV === 'development') {
-    clientLogger.info('圖片快取已清除')
-  }
-}
-
-/**
- * 獲取快取統計（開發模式）
- */
-export function getImageCacheStats() {
-  return {
-    ...cacheStats,
-    cacheSize: imageCache.size,
-    hitRate: cacheStats.hits + cacheStats.misses > 0
-      ? ((cacheStats.hits / (cacheStats.hits + cacheStats.misses)) * 100).toFixed(2) + '%'
-      : '0%',
-  }
-}
-
-// 開發模式：將快取統計暴露到 window
-if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  ;(window as any).__IMAGE_CACHE_STATS__ = getImageCacheStats
-}
-
 // ==================== 圖片路徑工具函數 ====================
 
 /**
@@ -194,16 +53,14 @@ export function hasMonsterImage(mobId: number): boolean {
 }
 
 /**
- * 取得物品圖片 URL（帶快取）
+ * 取得物品圖片 URL
  * @param itemId 物品 ID
  * @param fallback 預設圖片路徑（可選）
- * @param useCache 是否使用快取（預設 true）
- * @returns 圖片 URL（強制使用 R2 CDN，帶記憶體快取）
+ * @returns 圖片 URL（使用 R2 CDN，依賴瀏覽器 HTTP 快取）
  */
 export function getItemImageUrl(
   itemId: number,
-  fallback: string = '/images/items/default.svg',
-  useCache: boolean = true
+  fallback: string = '/images/items/default.svg'
 ): string {
   if (!hasItemImage(itemId)) {
     return fallback
@@ -215,27 +72,18 @@ export function getItemImageUrl(
     return fallback
   }
 
-  const url = `${R2_PUBLIC_URL}/images/items/${itemId}.png`
-
-  // 使用快取系統（僅在瀏覽器環境）
-  if (useCache && typeof window !== 'undefined') {
-    return getCachedImageUrl(url)
-  }
-
-  return url
+  return `${R2_PUBLIC_URL}/images/items/${itemId}.png`
 }
 
 /**
- * 取得怪物圖片 URL（帶快取）
+ * 取得怪物圖片 URL
  * @param mobId 怪物 ID
  * @param fallback 預設圖片路徑（可選）
- * @param useCache 是否使用快取（預設 true）
- * @returns 圖片 URL（強制使用 R2 CDN，帶記憶體快取）
+ * @returns 圖片 URL（使用 R2 CDN，依賴瀏覽器 HTTP 快取）
  */
 export function getMonsterImageUrl(
   mobId: number,
-  fallback: string = '/images/monsters/default.svg',
-  useCache: boolean = true
+  fallback: string = '/images/monsters/default.svg'
 ): string {
   if (!hasMonsterImage(mobId)) {
     return fallback
@@ -247,12 +95,5 @@ export function getMonsterImageUrl(
     return fallback
   }
 
-  const url = `${R2_PUBLIC_URL}/images/monsters/${mobId}.png`
-
-  // 使用快取系統（僅在瀏覽器環境）
-  if (useCache && typeof window !== 'undefined') {
-    return getCachedImageUrl(url)
-  }
-
-  return url
+  return `${R2_PUBLIC_URL}/images/monsters/${mobId}.png`
 }
