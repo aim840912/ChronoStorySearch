@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react'
 import { BaseModal } from '@/components/common/BaseModal'
 import { ItemSearchInput } from './ItemSearchInput'
 import { ItemStatsInput } from './ItemStatsInput'
-import { ExtendedUniqueItem } from '@/types'
+import { ExtendedUniqueItem, TradeType } from '@/types'
 import { useAuth } from '@/contexts/AuthContext'
+import { useLanguage } from '@/contexts/LanguageContext'
 import type { ItemStats } from '@/types/item-stats'
 
 /**
@@ -34,7 +35,6 @@ interface CreateListingModalProps {
   onSuccess?: () => void
 }
 
-type TradeType = 'sell' | 'buy' | 'exchange'
 type ContactMethod = 'discord' | 'ingame'
 
 interface CreateListingRequest {
@@ -56,6 +56,7 @@ export function CreateListingModal({
   onSuccess
 }: CreateListingModalProps) {
   const { user } = useAuth()
+  const { t } = useLanguage()
   const [tradeType, setTradeType] = useState<TradeType>('sell')
   const [selectedItem, setSelectedItem] = useState<ExtendedUniqueItem | null>(null)
   const [wantedItem, setWantedItem] = useState<ExtendedUniqueItem | null>(null)
@@ -155,7 +156,18 @@ export function CreateListingModal({
 
       if (!response.ok || !data.success) {
         // 處理錯誤回應
-        setError(data.error || '建立刊登失敗，請稍後再試')
+        const errorMessage = data.error || '建立刊登失敗，請稍後再試'
+
+        // 針對特定錯誤提供更詳細的說明
+        if (errorMessage.includes('Discord 帳號年齡不足')) {
+          setError(`${errorMessage}\n\n提示：這是為了防止濫用刊登功能的安全措施。`)
+        } else if (errorMessage.includes('加入指定的 Discord 伺服器')) {
+          setError(`${errorMessage}\n\n請先加入我們的 Discord 社群後再建立刊登。`)
+        } else if (errorMessage.includes('刊登配額上限')) {
+          setError(`${errorMessage}\n\n提示：您可以刪除已完成或不再需要的刊登來釋放配額。`)
+        } else {
+          setError(errorMessage)
+        }
         return
       }
 
@@ -188,12 +200,12 @@ export function CreateListingModal({
   return (
     <BaseModal isOpen={isOpen} onClose={onClose} maxWidth="max-w-2xl">
       <div className="p-6 overflow-y-auto max-h-[calc(90vh-2rem)]">
-        <h2 className="text-2xl font-bold mb-4">建立刊登</h2>
+        <h2 className="text-2xl font-bold mb-4">{t('listing.create')}</h2>
 
         {/* 未登入提示 */}
         {!user && (
           <div className="mb-4 p-4 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
-            <p className="text-yellow-800 dark:text-yellow-200">請先登入才能建立刊登</p>
+            <p className="text-yellow-800 dark:text-yellow-200">{t('listing.loginToView')}</p>
           </div>
         )}
 
@@ -206,7 +218,7 @@ export function CreateListingModal({
 
         {/* 交易類型選擇 */}
         <div className="mb-6">
-          <label className="block mb-2 font-semibold">交易類型</label>
+          <label className="block mb-2 font-semibold">{t('listing.tradeType')}</label>
           <div className="flex gap-2">
             <button
               onClick={() => setTradeType('sell')}
@@ -216,7 +228,7 @@ export function CreateListingModal({
                   : 'bg-gray-200 dark:bg-gray-700'
               }`}
             >
-              出售
+              {t('trade.type.sell')}
             </button>
             <button
               onClick={() => setTradeType('buy')}
@@ -226,7 +238,7 @@ export function CreateListingModal({
                   : 'bg-gray-200 dark:bg-gray-700'
               }`}
             >
-              收購
+              {t('trade.type.buy')}
             </button>
             <button
               onClick={() => setTradeType('exchange')}
@@ -236,7 +248,7 @@ export function CreateListingModal({
                   : 'bg-gray-200 dark:bg-gray-700'
               }`}
             >
-              交換
+              {t('trade.type.exchange')}
             </button>
           </div>
         </div>
@@ -244,25 +256,25 @@ export function CreateListingModal({
         {/* 選擇物品 */}
         <div className="mb-6">
           <label className="block mb-2 font-semibold">
-            {tradeType === 'sell' && '我要販售的物品'}
-            {tradeType === 'buy' && '我要收購的物品'}
-            {tradeType === 'exchange' && '我有的物品'}
+            {tradeType === 'sell' && t('listing.itemToSell')}
+            {tradeType === 'buy' && t('listing.itemToBuy')}
+            {tradeType === 'exchange' && t('listing.itemIHave')}
           </label>
           <ItemSearchInput
             value={selectedItem}
             onSelect={setSelectedItem}
-            placeholder="搜尋物品名稱..."
+            placeholder={t('listing.searchItemPlaceholder')}
           />
         </div>
 
         {/* 交換模式 - 選擇想要的物品 */}
         {tradeType === 'exchange' && (
           <div className="mb-6">
-            <label className="block mb-2 font-semibold">我想要的物品</label>
+            <label className="block mb-2 font-semibold">{t('listing.wantedItemLabel')}</label>
             <ItemSearchInput
               value={wantedItem}
               onSelect={setWantedItem}
-              placeholder="搜尋想交換的物品..."
+              placeholder={t('listing.searchExchangeItemPlaceholder')}
               excludeItemId={selectedItem?.itemId}
             />
           </div>
@@ -276,10 +288,10 @@ export function CreateListingModal({
             className="flex items-center gap-2 mb-2 font-semibold text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             <span className="text-sm">{showStatsInput ? '▼' : '▶'}</span>
-            物品屬性 (可選)
+            {t('listing.itemStatsOptional')}
             {itemStats && (
               <span className="px-2 py-0.5 text-xs bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 rounded">
-                已填寫
+                {t('listing.itemStatsFilled')}
               </span>
             )}
           </button>
@@ -287,7 +299,7 @@ export function CreateListingModal({
           {showStatsInput && (
             <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700">
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                記錄物品的實際屬性，讓買家更清楚了解物品素質
+                {t('listing.itemStatsDescription')}
               </p>
               <ItemStatsInput
                 value={itemStats}
@@ -302,7 +314,7 @@ export function CreateListingModal({
         {/* 數量和價格 */}
         <div className="grid grid-cols-2 gap-4 mb-6">
           <div>
-            <label className="block mb-2 font-semibold">數量</label>
+            <label className="block mb-2 font-semibold">{t('listing.quantityLabel')}</label>
             <input
               type="number"
               min="1"
@@ -314,7 +326,7 @@ export function CreateListingModal({
           </div>
           {tradeType !== 'exchange' && (
             <div>
-              <label className="block mb-2 font-semibold">價格 (楓幣)</label>
+              <label className="block mb-2 font-semibold">{t('listing.priceLabel')}</label>
               <input
                 type="number"
                 min="0"
@@ -329,7 +341,7 @@ export function CreateListingModal({
 
         {/* 聯絡方式 */}
         <div className="mb-6">
-          <label className="block mb-2 font-semibold">聯絡方式</label>
+          <label className="block mb-2 font-semibold">{t('listing.contactMethodLabel')}</label>
           <select
             value={contactMethod}
             onChange={(e) => {
@@ -346,8 +358,8 @@ export function CreateListingModal({
             className="w-full px-4 py-2 border rounded-lg mb-2
                        dark:bg-gray-800 dark:border-gray-600"
           >
-            <option value="discord">Discord</option>
-            <option value="ingame">遊戲內</option>
+            <option value="discord">{t('listing.contactMethodDiscord')}</option>
+            <option value="ingame">{t('listing.contactMethodIngame')}</option>
           </select>
           <input
             type="text"
@@ -359,13 +371,39 @@ export function CreateListingModal({
             }}
             placeholder={
               contactMethod === 'discord'
-                ? '請輸入 Discord 用戶名稱 (例: username#1234)'
-                : '請輸入遊戲內角色名稱或私訊方式'
+                ? t('listing.contactInfoPlaceholderDiscord')
+                : t('listing.contactInfoPlaceholderIngame')
             }
             className="w-full px-4 py-2 border rounded-lg
                        dark:bg-gray-800 dark:border-gray-600"
           />
         </div>
+
+        {/* 錯誤訊息 */}
+        {error && (
+          <div className="p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+            <div className="flex items-start gap-3">
+              <svg
+                className="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <div className="flex-1">
+                <div className="text-sm font-medium text-red-800 dark:text-red-200 whitespace-pre-line">
+                  {error}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* 提交按鈕 */}
         <div className="flex justify-end gap-2">
@@ -374,7 +412,7 @@ export function CreateListingModal({
             className="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg
                        hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
           >
-            取消
+            {t('common.cancel')}
           </button>
           <button
             onClick={handleSubmit}
@@ -383,7 +421,7 @@ export function CreateListingModal({
                        hover:bg-blue-600 transition-colors
                        disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-blue-500"
           >
-            {isSubmitting ? '建立中...' : '建立刊登'}
+            {isSubmitting ? t('listing.submitting') : t('listing.create')}
           </button>
         </div>
       </div>

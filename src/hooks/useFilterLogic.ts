@@ -72,9 +72,12 @@ export function useFilterLogic({
   gachaMachines,
   initialRandomGachaItems,
 }: UseFilterLogicParams) {
+  // 市場模式檢查（不使用 early return，改用變數控制）
+  const isMarketMode = filterMode === 'market-listings'
+
   // 計算去重的最愛怪物清單（每個怪物只出現一次）
   const uniqueFavoriteMonsters = useMemo(() => {
-    if (filterMode !== 'favorite-monsters' || favoriteMonsters.length === 0) return []
+    if (isMarketMode || filterMode !== 'favorite-monsters' || favoriteMonsters.length === 0) return []
 
     const favMobIds = new Set(favoriteMonsters.map((fav) => fav.mobId))
     const monsterMap = new Map<number, { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number }>()
@@ -95,11 +98,11 @@ export function useFilterLogic({
     })
 
     return Array.from(monsterMap.values())
-  }, [filterMode, favoriteMonsters, allDrops])
+  }, [isMarketMode, filterMode, favoriteMonsters, allDrops])
 
   // 計算去重的最愛物品清單（每個物品只出現一次）
   const uniqueFavoriteItems = useMemo(() => {
-    if (filterMode !== 'favorite-items' || favoriteItems.length === 0) return []
+    if (isMarketMode || filterMode !== 'favorite-items' || favoriteItems.length === 0) return []
 
     const favItemIds = new Set(favoriteItems.map((fav) => fav.itemId))
     const itemMap = new Map<number, { itemId: number; itemName: string; chineseItemName?: string | null; monsterCount: number }>()
@@ -127,11 +130,11 @@ export function useFilterLogic({
     })
 
     return Array.from(itemMap.values())
-  }, [filterMode, favoriteItems, allDrops])
+  }, [isMarketMode, filterMode, favoriteItems, allDrops])
 
   // 最愛怪物搜尋過濾（支援多關鍵字搜尋 + 中英文搜尋）
   const filteredUniqueMonsters = useMemo(() => {
-    if (filterMode !== 'favorite-monsters') return []
+    if (isMarketMode || filterMode !== 'favorite-monsters') return []
 
     if (debouncedSearchTerm.trim() === '') {
       return uniqueFavoriteMonsters
@@ -141,11 +144,11 @@ export function useFilterLogic({
       matchesAllKeywords(monster.mobName, debouncedSearchTerm) ||
       (monster.chineseMobName && matchesAllKeywords(monster.chineseMobName, debouncedSearchTerm))
     )
-  }, [uniqueFavoriteMonsters, debouncedSearchTerm, filterMode])
+  }, [isMarketMode, uniqueFavoriteMonsters, debouncedSearchTerm, filterMode])
 
   // 最愛物品搜尋過濾（支援多關鍵字搜尋 + 中英文搜尋）
   const filteredUniqueItems = useMemo(() => {
-    if (filterMode !== 'favorite-items') return []
+    if (isMarketMode || filterMode !== 'favorite-items') return []
 
     if (debouncedSearchTerm.trim() === '') {
       return uniqueFavoriteItems
@@ -155,12 +158,12 @@ export function useFilterLogic({
       matchesAllKeywords(item.itemName, debouncedSearchTerm) ||
       (item.chineseItemName && matchesAllKeywords(item.chineseItemName, debouncedSearchTerm))
     )
-  }, [uniqueFavoriteItems, debouncedSearchTerm, filterMode])
+  }, [isMarketMode, uniqueFavoriteItems, debouncedSearchTerm, filterMode])
 
   // 計算過濾後的掉落資料（只在「全部」模式計算）
   const filteredDrops = useMemo(() => {
     // 只在「全部」模式計算
-    if (filterMode !== 'all') return []
+    if (isMarketMode || filterMode !== 'all') return []
 
     // 根據篩選模式選擇基礎資料
     // 使用 debouncedSearchTerm 確保資料來源和過濾邏輯同步
@@ -206,11 +209,11 @@ export function useFilterLogic({
     }
 
     return filtered
-  }, [filterMode, debouncedSearchTerm, searchType, allDrops, initialRandomDrops, advancedFilter, itemAttributesMap])
+  }, [isMarketMode, filterMode, debouncedSearchTerm, searchType, allDrops, initialRandomDrops, advancedFilter, itemAttributesMap])
 
   // 計算「全部」模式的唯一怪物清單（每個怪物只出現一次）
   const uniqueAllMonsters = useMemo(() => {
-    if (filterMode !== 'all') return []
+    if (isMarketMode || filterMode !== 'all') return []
 
     const monsterMap = new Map<number, { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number }>()
 
@@ -251,11 +254,11 @@ export function useFilterLogic({
     })
 
     return monsters
-  }, [filterMode, filteredDrops, searchType, advancedFilter, mobLevelMap])
+  }, [isMarketMode, filterMode, filteredDrops, searchType, advancedFilter, mobLevelMap])
 
   // 計算「全部」模式的唯一物品清單（每個物品只出現一次，整合掉落和轉蛋）
   const uniqueAllItems = useMemo((): ExtendedUniqueItem[] => {
-    if (filterMode !== 'all') return []
+    if (isMarketMode || filterMode !== 'all') return []
 
     const itemMap = new Map<number, ExtendedUniqueItem>()
 
@@ -441,13 +444,13 @@ export function useFilterLogic({
     })
 
     return items
-  }, [filterMode, filteredDrops, gachaMachines, debouncedSearchTerm, searchType, advancedFilter, itemAttributesMap, initialRandomGachaItems])
+  }, [isMarketMode, filterMode, filteredDrops, gachaMachines, debouncedSearchTerm, searchType, advancedFilter, itemAttributesMap, initialRandomGachaItems])
 
   // 建立隨機混合的卡片資料（怪物 + 物品隨機排序）- 只在「全部」模式且無搜尋時使用
   const mixedCards = useMemo(() => {
     // 只在「全部」模式且無搜尋詞時計算
     // 使用 debouncedSearchTerm 確保與資料來源同步
-    if (filterMode !== 'all' || debouncedSearchTerm.trim() !== '') return []
+    if (isMarketMode || filterMode !== 'all' || debouncedSearchTerm.trim() !== '') return []
 
     // 定義混合卡片資料結構
     type MixedCard =
@@ -499,11 +502,11 @@ export function useFilterLogic({
     const itemCount = shouldIncludeItems ? uniqueAllItems.length : 0
     clientLogger.info(`建立等級排序混合卡片: ${monsterCount} 怪物 + ${itemCount} 物品 = ${mixed.length} 張卡片`)
     return mixed
-  }, [filterMode, debouncedSearchTerm, searchType, uniqueAllMonsters, uniqueAllItems, mobLevelMap, itemAttributesMap])
+  }, [isMarketMode, filterMode, debouncedSearchTerm, searchType, uniqueAllMonsters, uniqueAllItems, mobLevelMap, itemAttributesMap])
 
   // 判斷搜尋上下文 - 決定「全部」模式的顯示策略
   const hasItemMatch = useMemo(() => {
-    if (filterMode !== 'all' || !debouncedSearchTerm.trim()) return false
+    if (isMarketMode || filterMode !== 'all' || !debouncedSearchTerm.trim()) return false
 
     // 如果 searchType 是 'monster'，不匹配物品
     if (searchType === 'monster') return false
@@ -527,11 +530,11 @@ export function useFilterLogic({
     )
 
     return hasGachaMatch
-  }, [filterMode, debouncedSearchTerm, searchType, filteredDrops, gachaMachines])
+  }, [isMarketMode, filterMode, debouncedSearchTerm, searchType, filteredDrops, gachaMachines])
 
   // 顯示策略
   const shouldShowItems = useMemo(() => {
-    if (filterMode !== 'all') return false
+    if (isMarketMode || filterMode !== 'all') return false
 
     // 如果 searchType 選擇了特定類型
     if (searchType !== 'all') {
@@ -541,10 +544,10 @@ export function useFilterLogic({
 
     // 預設邏輯：無搜尋詞時顯示，或有物品匹配時顯示
     return !debouncedSearchTerm.trim() || hasItemMatch
-  }, [filterMode, searchType, debouncedSearchTerm, hasItemMatch])
+  }, [isMarketMode, filterMode, searchType, debouncedSearchTerm, hasItemMatch])
 
   const shouldShowMonsters = useMemo(() => {
-    if (filterMode !== 'all') return false
+    if (isMarketMode || filterMode !== 'all') return false
 
     // 如果 searchType 選擇了特定類型
     if (searchType !== 'all') {
@@ -567,7 +570,7 @@ export function useFilterLogic({
 
     // 預設邏輯：全部模式下總是顯示怪物
     return true
-  }, [filterMode, searchType, advancedFilter])
+  }, [isMarketMode, filterMode, searchType, advancedFilter])
 
   return {
     // 最愛模式資料

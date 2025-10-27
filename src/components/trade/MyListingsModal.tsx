@@ -6,6 +6,7 @@ import { useDataManagement } from '@/hooks/useDataManagement'
 import { useItemsData } from '@/hooks/useItemsData'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useAuth } from '@/contexts/AuthContext'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 /**
  * 我的刊登 Modal
@@ -47,6 +48,7 @@ interface Listing {
 
 export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModalProps) {
   const { user } = useAuth()
+  const { t, language } = useLanguage()
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('active')
   const [listings, setListings] = useState<Listing[]>([])
   const [isLoading, setIsLoading] = useState(false)
@@ -98,7 +100,7 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
 
   // 刪除刊登
   const handleDelete = async (listingId: number) => {
-    if (!confirm('確定要刪除這個刊登嗎？')) return
+    if (!confirm(t('listing.deleteConfirm'))) return
 
     try {
       const response = await fetch(`/api/listings/${listingId}`, {
@@ -109,22 +111,22 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
       const data = await response.json()
 
       if (!response.ok || !data.success) {
-        alert(data.error || '刪除失敗')
+        alert(data.error || t('listing.deleteError'))
         return
       }
 
       // 重新載入列表
       setListings(prev => prev.filter(l => l.id !== listingId))
-      alert('刪除成功')
+      alert(t('listing.deleteSuccess'))
     } catch (err) {
       console.error('Failed to delete listing:', err)
-      alert('網路錯誤')
+      alert(t('common.error'))
     }
   }
 
   // 標記為已售出
   const handleMarkAsSold = async (listingId: number) => {
-    if (!confirm('確定要標記為已售出嗎？')) return
+    if (!confirm(t('listing.markAsSoldConfirm'))) return
 
     try {
       const response = await fetch(`/api/listings/${listingId}`, {
@@ -137,7 +139,7 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
       const data = await response.json()
 
       if (!response.ok || !data.success) {
-        alert(data.error || '更新失敗')
+        alert(data.error || t('listing.deleteError'))
         return
       }
 
@@ -145,25 +147,36 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
       setListings(prev => prev.map(l =>
         l.id === listingId ? { ...l, status: 'sold' } : l
       ))
-      alert('已標記為售出')
+      alert(t('listing.markAsSoldSuccess'))
     } catch (err) {
       console.error('Failed to update listing:', err)
-      alert('網路錯誤')
+      alert(t('common.error'))
     }
+  }
+
+  // 根據語言選擇物品名稱
+  const getDisplayItemName = (item: any, itemId?: number) => {
+    if (!item) {
+      return itemId ? (language === 'zh-TW' ? `物品 #${itemId}` : `Item #${itemId}`) : (language === 'zh-TW' ? '未知物品' : 'Unknown Item')
+    }
+    if (language === 'zh-TW') {
+      return item.chineseItemName || item.itemName || (itemId ? `物品 #${itemId}` : '未知物品')
+    }
+    return item.itemName || (itemId ? `Item #${itemId}` : 'Unknown Item')
   }
 
   return (
     <BaseModal isOpen={isOpen} onClose={onClose} maxWidth="max-w-4xl">
       <div className="p-6">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-2xl font-bold">我的刊登</h2>
+          <h2 className="text-2xl font-bold">{t('listing.myListingsTitle')}</h2>
           {onCreateNew && (
             <button
               onClick={onCreateNew}
               className="px-4 py-2 bg-blue-500 text-white rounded-lg
                          hover:bg-blue-600 transition-colors"
             >
-              + 建立刊登
+              {t('listing.createNewBtn')}
             </button>
           )}
         </div>
@@ -171,7 +184,7 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
         {/* 未登入提示 */}
         {!user && (
           <div className="mb-4 p-4 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
-            <p className="text-yellow-800 dark:text-yellow-200">請先登入才能查看刊登</p>
+            <p className="text-yellow-800 dark:text-yellow-200">{t('listing.loginToView')}</p>
           </div>
         )}
 
@@ -185,10 +198,10 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
         {/* 狀態篩選 */}
         <div className="flex gap-2 mb-4 flex-wrap">
           {[
-            { value: 'all', label: '全部' },
-            { value: 'active', label: '進行中' },
-            { value: 'sold', label: '已售出' },
-            { value: 'cancelled', label: '已取消' }
+            { value: 'all', label: t('listing.statusAll') },
+            { value: 'active', label: t('listing.statusActive') },
+            { value: 'sold', label: t('listing.statusSold') },
+            { value: 'cancelled', label: t('listing.statusCancelled') }
           ].map((tab) => (
             <button
               key={tab.value}
@@ -208,13 +221,13 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
         {isLoading ? (
           <div className="text-center py-10">
             <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
-            <p className="mt-2 text-gray-500 dark:text-gray-400">載入中...</p>
+            <p className="mt-2 text-gray-500 dark:text-gray-400">{t('common.loading')}</p>
           </div>
         ) : (
           <div className="space-y-4 max-h-[500px] overflow-y-auto">
             {listings.length === 0 ? (
               <div className="text-center py-10 text-gray-500 dark:text-gray-400">
-                {statusFilter === 'all' ? '目前沒有刊登' : `沒有${statusFilter === 'active' ? '進行中' : statusFilter === 'sold' ? '已售出' : '已取消'}的刊登`}
+                {statusFilter === 'all' ? t('listing.noListings') : t('listing.noListingsFiltered', { status: t(`listing.status${statusFilter.charAt(0).toUpperCase() + statusFilter.slice(1)}`) })}
               </div>
             ) : (
               listings.map((listing) => {
@@ -239,27 +252,27 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
                         />
                         <div className="flex-1 min-w-0">
                           <p className="font-semibold text-gray-900 dark:text-white">
-                            {item?.chineseItemName || item?.itemName || `物品 #${listing.item_id}`}
+                            {getDisplayItemName(item, listing.item_id)}
                           </p>
                           <p className="text-sm text-gray-500 dark:text-gray-400">
-                            數量: {listing.quantity}
+                            {t('listing.quantity')}: {listing.quantity}
                           </p>
 
                           {/* 價格或交換資訊 */}
                           {listing.trade_type === 'exchange' && wantedItem ? (
                             <p className="text-sm text-gray-600 dark:text-gray-300">
-                              交換: {wantedItem.chineseItemName || wantedItem.itemName}
+                              {t('listing.exchange')}: {getDisplayItemName(wantedItem)}
                             </p>
                           ) : (
                             <p className="text-lg font-bold text-blue-600 dark:text-blue-400">
-                              {listing.price?.toLocaleString()} 楓幣
+                              {listing.price?.toLocaleString()} {t('listing.meso')}
                             </p>
                           )}
 
                           {/* 統計資訊 */}
                           <div className="flex gap-4 text-xs text-gray-500 dark:text-gray-400 mt-1">
-                            <span>瀏覽: {listing.view_count}</span>
-                            <span>意向: {listing.interest_count}</span>
+                            <span>{t('listing.viewCount')}: {listing.view_count}</span>
+                            <span>{t('listing.interestCount')}: {listing.interest_count}</span>
                           </div>
                         </div>
                       </div>
@@ -271,7 +284,7 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
                           listing.status === 'sold' ? 'bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400' :
                           'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-400'
                         }`}>
-                          {listing.status === 'active' ? '進行中' : listing.status === 'sold' ? '已售出' : '已取消'}
+                          {listing.status === 'active' ? t('listing.statusActive') : listing.status === 'sold' ? t('listing.statusSold') : t('listing.statusCancelled')}
                         </span>
 
                         {/* 操作按鈕 */}
@@ -282,14 +295,14 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
                               className="px-3 py-1 text-sm bg-green-500 text-white rounded
                                          hover:bg-green-600 transition-colors"
                             >
-                              售出
+                              {t('listing.markAsSold')}
                             </button>
                             <button
                               onClick={() => handleDelete(listing.id)}
                               className="px-3 py-1 text-sm bg-red-500 text-white rounded
                                          hover:bg-red-600 transition-colors"
                             >
-                              刪除
+                              {t('listing.delete')}
                             </button>
                           </div>
                         )}

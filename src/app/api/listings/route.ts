@@ -6,6 +6,12 @@ import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
 import { validateAndCalculateStats } from '@/lib/validation/item-stats'
 import type { ItemStats } from '@/types/item-stats'
+import { checkAccountAge, checkServerMembershipWithCache } from '@/lib/services/discord-verification'
+
+// Discord 驗證配置
+const DISCORD_GUILD_ID = process.env.DISCORD_GUILD_ID // Discord 伺服器 ID（Guild ID）
+const MIN_ACCOUNT_AGE_DAYS = 365 // Discord 帳號必須滿 1 年
+const MAX_ACTIVE_LISTINGS = 5 // 每用戶最多 5 個活躍刊登
 
 /**
  * GET /api/listings - 查詢我的刊登
@@ -63,12 +69,14 @@ async function handleGET(request: NextRequest, user: User) {
  * POST /api/listings - 建立刊登
  *
  * 功能：
+ * - 驗證 Discord 帳號年齡（必須滿 1 年）
+ * - 驗證 Discord 伺服器成員資格
  * - 驗證 item_id, trade_type, price/wanted_item_id
- * - 檢查配額限制（每用戶最多 50 個 active listings）
+ * - 檢查配額限制（每用戶最多 5 個 active listings）
  * - 插入 listings 表
  * - 返回創建的刊登
  *
- * 認證要求：🔒 需要認證
+ * 認證要求：🔒 需要認證 + Discord 驗證
  * 參考文件：docs/architecture/交易系統/03-API設計.md
  */
 async function handlePOST(request: NextRequest, user: User) {
@@ -150,7 +158,51 @@ async function handlePOST(request: NextRequest, user: User) {
     })
   }
 
-  // 4. 檢查配額限制（每用戶最多 50 個 active listings）
+  // 4. Discord 帳號年齡驗證（必須滿 1 年）
+  const accountAgeResult = await checkAccountAge(user.id, MIN_ACCOUNT_AGE_DAYS)
+
+  if (!accountAgeResult.valid) {
+    apiLogger.warn('Discord 帳號年齡不足', {
+      user_id: user.id,
+      account_age_days: accountAgeResult.accountAge,
+      required_days: MIN_ACCOUNT_AGE_DAYS
+    })
+    throw new ValidationError(
+      `您的 Discord 帳號年齡不足（目前 ${accountAgeResult.accountAge} 天，需要 ${MIN_ACCOUNT_AGE_DAYS} 天）`
+    )
+  }
+
+  apiLogger.debug('Discord 帳號年齡驗證通過', {
+    user_id: user.id,
+    account_age_days: accountAgeResult.accountAge
+  })
+
+  // 5. Discord 伺服器成員驗證
+  if (!DISCORD_GUILD_ID) {
+    apiLogger.error('環境變數 DISCORD_GUILD_ID 未設定')
+    throw new ValidationError('系統配置錯誤，請聯繫管理員')
+  }
+
+  const membershipResult = await checkServerMembershipWithCache(
+    user.id,
+    user.access_token,
+    DISCORD_GUILD_ID
+  )
+
+  if (!membershipResult.isMember) {
+    apiLogger.warn('使用者不是 Discord 伺服器成員', {
+      user_id: user.id,
+      guild_id: DISCORD_GUILD_ID
+    })
+    throw new ValidationError('您必須加入指定的 Discord 伺服器才能建立刊登')
+  }
+
+  apiLogger.debug('Discord 伺服器成員驗證通過', {
+    user_id: user.id,
+    guild_id: DISCORD_GUILD_ID
+  })
+
+  // 6. 檢查配額限制（每用戶最多 5 個 active listings）
   const { count: activeCount, error: countError } = await supabaseAdmin
     .from('listings')
     .select('*', { count: 'exact', head: true })
@@ -163,12 +215,13 @@ async function handlePOST(request: NextRequest, user: User) {
     throw new ValidationError('檢查配額失敗')
   }
 
-  if (activeCount !== null && activeCount >= 50) {
+  if (activeCount !== null && activeCount >= MAX_ACTIVE_LISTINGS) {
     apiLogger.warn('刊登配額已滿', {
       user_id: user.id,
-      active_count: activeCount
+      active_count: activeCount,
+      max_listings: MAX_ACTIVE_LISTINGS
     })
-    throw new ValidationError('您已達到刊登配額上限（50 個），請先刪除或完成現有刊登')
+    throw new ValidationError(`您已達到刊登配額上限（${MAX_ACTIVE_LISTINGS} 個），請先刪除或完成現有刊登`)
   }
 
   // 5. 插入刊登資料

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef, useCallback } from 'react'
-import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter } from '@/types'
+import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, MarketFilterOptions } from '@/types'
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 import { useFavoriteMonsters } from '@/hooks/useFavoriteMonsters'
 import { useFavoriteItems } from '@/hooks/useFavoriteItems'
@@ -14,6 +14,8 @@ import { useDataManagement } from '@/hooks/useDataManagement'
 import { useSearchLogic } from '@/hooks/useSearchLogic'
 import { useFilterLogic } from '@/hooks/useFilterLogic'
 import { useInfiniteScroll } from '@/hooks/useInfiniteScroll'
+import { useMarketFilter } from '@/hooks/useMarketFilter'
+import { useMarketListings } from '@/hooks/useMarketListings'
 import { SearchHeader } from '@/components/SearchHeader'
 import { ContentDisplay } from '@/components/ContentDisplay'
 import { ModalManager } from '@/components/ModalManager'
@@ -32,6 +34,15 @@ export default function Home() {
   // 進階篩選狀態
   const [advancedFilter, setAdvancedFilter] = useState<AdvancedFilterOptions>(getDefaultAdvancedFilter())
   const [isAdvancedFilterExpanded, setIsAdvancedFilterExpanded] = useState(false)
+
+  // 市場篩選狀態
+  const [marketFilter, setMarketFilter] = useState<MarketFilterOptions>({
+    tradeTypes: [],
+    priceRange: { min: null, max: null },
+    itemStatsFilter: {},
+    sortBy: 'created_at',
+    sortOrder: 'desc'
+  })
 
   // 追蹤首次掛載，避免初始載入時觸發滾動
   const isFirstMount = useRef(true)
@@ -122,6 +133,17 @@ export default function Home() {
     mobLevelMap,
     gachaMachines,
     initialRandomGachaItems,
+  })
+
+  // 市場篩選 Hook - 處理市場物品篩選（將進階篩選轉換為物品 ID 列表）
+  const { getFilteredItemIds } = useMarketFilter({
+    advancedFilter,
+    itemAttributesMap
+  })
+
+  // 市場刊登 Hook - 處理市場刊登的載入和管理
+  const marketListings = useMarketListings({
+    enabled: filterMode === 'market-listings'
   })
 
   // 無限滾動 - 在「全部」模式且（有搜尋 或 有進階篩選）時啟用
@@ -316,6 +338,34 @@ export default function Home() {
     setAdvancedFilter(getDefaultAdvancedFilter())
   }, [])
 
+  // 模式切換到市場刊登時，載入市場資料
+  useEffect(() => {
+    if (filterMode === 'market-listings') {
+      // 取得篩選的物品 ID
+      const filteredItemIds = getFilteredItemIds()
+
+      // 載入市場刊登
+      marketListings.fetchListings({
+        page: 1,
+        filter: marketFilter,
+        itemIds: filteredItemIds.length > 0 ? filteredItemIds : undefined
+      })
+    }
+  }, [filterMode]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // 市場篩選變更時，重新載入資料
+  useEffect(() => {
+    if (filterMode === 'market-listings') {
+      const filteredItemIds = getFilteredItemIds()
+
+      marketListings.fetchListings({
+        page: 1,
+        filter: marketFilter,
+        itemIds: filteredItemIds.length > 0 ? filteredItemIds : undefined
+      })
+    }
+  }, [marketFilter, advancedFilter]) // eslint-disable-line react-hooks/exhaustive-deps
+
   // 分享處理函數
   const handleShare = useCallback(async () => {
     if (!search.searchTerm.trim()) return
@@ -402,6 +452,8 @@ export default function Home() {
           onOpenMyListings={modals.openMyListingsModal}
           onOpenMarketBrowser={modals.openMarketBrowserModal}
           onOpenInterests={modals.openInterestsModal}
+          marketFilter={marketFilter}
+          onMarketFilterChange={setMarketFilter}
         />
 
         {/* 內容顯示區域 */}
@@ -430,6 +482,19 @@ export default function Home() {
           hasAnyData={uniqueAllMonsters.length > 0 || uniqueAllItems.length > 0}
           viewHistory={viewHistory.history}
           allDrops={allDrops}
+          marketListings={marketListings.listings}
+          marketPagination={marketListings.pagination}
+          isMarketLoading={marketListings.isLoading}
+          marketError={marketListings.error}
+          onListingClick={(listingId: string) => {
+            // 從 listings 中找到對應的刊登
+            const listing = marketListings.listings.find(l => l.id === listingId)
+            if (listing) {
+              // 開啟刊登詳情 Modal（通過 ItemModal）
+              modals.openItemModal(listing.item_id, listing.item.itemName || `物品 #${listing.item_id}`)
+            }
+          }}
+          onMarketPageChange={marketListings.goToPage}
         />
       </div>
 

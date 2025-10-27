@@ -9,7 +9,7 @@ import en from '@/locales/en.json'
 interface LanguageContextType {
   language: Language
   setLanguage: (lang: Language) => void
-  t: (key: string) => string
+  t: (key: string, params?: Record<string, string | number>) => string
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
@@ -46,14 +46,25 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   }
 
   // 翻譯函數
-  const t = (key: string): string => {
+  const t = (key: string, params?: Record<string, string | number>): string => {
     if (!isClient) {
       // SSR 時使用預設語言（英文）
-      return translations['en'][key] || key
+      let text = translations['en'][key] || key
+      if (params) {
+        Object.entries(params).forEach(([k, v]) => {
+          text = text.replace(`{${k}}`, String(v))
+        })
+      }
+      return text
     }
 
-    const translation = translations[language][key]
-    return translation || key
+    let translation = translations[language][key] || key
+    if (params) {
+      Object.entries(params).forEach(([k, v]) => {
+        translation = translation.replace(`{${k}}`, String(v))
+      })
+    }
+    return translation
   }
 
   return (

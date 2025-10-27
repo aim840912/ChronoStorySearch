@@ -10,6 +10,7 @@ interface StatsComparisonCardProps {
   locale?: 'zh-TW' | 'en'
   className?: string
   showGrade?: boolean
+  showMaxValues?: boolean
   compact?: boolean
 }
 
@@ -30,6 +31,7 @@ export function StatsComparisonCard({
   locale = 'zh-TW',
   className = '',
   showGrade = true,
+  showMaxValues = true,
   compact = false
 }: StatsComparisonCardProps) {
   const labels = locale === 'zh-TW' ? STAT_LABELS_ZH : STAT_LABELS_EN
@@ -77,14 +79,20 @@ export function StatsComparisonCard({
             {label}
           </span>
           <span className="text-sm text-gray-600 dark:text-gray-400">
-            {actualValue ?? '-'} / {maxValue ?? '-'}
-            {percentage > 0 && (
-              <span className="ml-1 text-xs text-gray-500">({percentage}%)</span>
+            {showMaxValues ? (
+              <>
+                {actualValue ?? '-'} / {maxValue ?? '-'}
+                {percentage > 0 && (
+                  <span className="ml-1 text-xs text-gray-500">({percentage}%)</span>
+                )}
+              </>
+            ) : (
+              actualValue ?? '-'
             )}
           </span>
         </div>
-        {/* 進度條 */}
-        {percentage > 0 && (
+        {/* 進度條 (僅在 showMaxValues 為 true 時顯示) */}
+        {showMaxValues && percentage > 0 && (
           <div className="w-full h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
             <div
               className={`h-full ${barColor} transition-all duration-300`}

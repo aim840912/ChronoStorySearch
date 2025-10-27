@@ -38,8 +38,10 @@ export default function RootLayout({
         <AuthProvider>
           <ThemeProvider>
             <LanguageProvider>
-              {children}
-              <LoginModal />
+              <>
+                {children}
+                <LoginModal />
+              </>
             </LanguageProvider>
           </ThemeProvider>
         </AuthProvider>

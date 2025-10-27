@@ -27,7 +27,9 @@ const DISCORD_REDIRECT_URI = process.env.DISCORD_REDIRECT_URI
 const DISCORD_OAUTH_URL = 'https://discord.com/api/oauth2/authorize'
 
 // OAuth 參數
-const SCOPES = ['identify'] // 僅請求基本資訊（ID、username、avatar）
+// identify: 用戶基本資訊（ID、username、avatar）
+// guilds: 用戶加入的伺服器列表（用於驗證伺服器成員資格）
+const SCOPES = ['identify', 'guilds']
 const STATE_EXPIRY = 600 // 10 分鐘（秒）
 
 /**

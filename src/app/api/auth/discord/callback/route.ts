@@ -22,6 +22,7 @@ import { supabaseAdmin } from '@/lib/supabase/server'
 import { createSession } from '@/lib/auth/session-validator'
 import { apiLogger } from '@/lib/logger'
 import { ValidationError } from '@/lib/errors'
+import { parseSnowflakeTimestamp } from '@/lib/utils/discord-utils'
 
 // Discord OAuth2 配置
 const DISCORD_CLIENT_ID = process.env.DISCORD_CLIENT_ID
@@ -176,6 +177,39 @@ export async function GET(request: NextRequest) {
         })
         .eq('id', userId)
 
+      // 檢查並修正 discord_profiles 的 account_created_at（如果不正確）
+      const correctAccountCreatedAt = parseSnowflakeTimestamp(discordUser.id)
+
+      const { data: profile } = await supabaseAdmin
+        .from('discord_profiles')
+        .select('account_created_at')
+        .eq('user_id', userId)
+        .single()
+
+      if (profile) {
+        const storedTime = new Date(profile.account_created_at).getTime()
+        const correctTime = correctAccountCreatedAt.getTime()
+        const diffDays = Math.abs((storedTime - correctTime) / (1000 * 60 * 60 * 24))
+
+        // 如果時間差距超過 1 天，更新為正確時間
+        if (diffDays > 1) {
+          await supabaseAdmin
+            .from('discord_profiles')
+            .update({
+              account_created_at: correctAccountCreatedAt.toISOString(),
+              updated_at: new Date().toISOString()
+            })
+            .eq('user_id', userId)
+
+          apiLogger.info('Corrected account_created_at for existing user', {
+            user_id: userId,
+            old_time: profile.account_created_at,
+            new_time: correctAccountCreatedAt.toISOString(),
+            diff_days: Math.floor(diffDays)
+          })
+        }
+      }
+
       apiLogger.info('Existing user updated', { user_id: userId })
     } else {
       // 6.3 創建新用戶
@@ -200,13 +234,20 @@ export async function GET(request: NextRequest) {
       userId = newUser.id
 
       // 同時創建 discord_profiles 記錄
+      // 使用 parseSnowflakeTimestamp 解析 Discord ID 獲取真實帳號建立時間
+      const accountCreatedAt = parseSnowflakeTimestamp(discordUser.id)
+
       await supabaseAdmin.from('discord_profiles').insert({
         user_id: userId,
-        account_created_at: new Date().toISOString(),
+        account_created_at: accountCreatedAt.toISOString(),
         reputation_score: 0
       })
 
-      apiLogger.info('New user created', { user_id: userId, discord_id: discordUser.id })
+      apiLogger.info('New user created', {
+        user_id: userId,
+        discord_id: discordUser.id,
+        account_created_at: accountCreatedAt.toISOString()
+      })
     }
 
     // 7. 建立 session

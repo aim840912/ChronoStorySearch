@@ -19,7 +19,7 @@ import { NextRequest } from 'next/server'
 import jwt from 'jsonwebtoken'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { dbLogger } from '@/lib/logger'
-import { encryptToken } from './token-encryption'
+import { encryptToken, decryptToken } from './token-encryption'
 
 /**
  * 用戶資訊介面
@@ -35,6 +35,7 @@ export interface User {
   last_login_at: string
   created_at: string
   session_id: string // 當前 session ID（由 validateSession 提供）
+  access_token: string // Discord OAuth access token（用於 Discord API 呼叫）
 }
 
 /**
@@ -127,7 +128,7 @@ export async function validateSession(
     // 3. 查詢 Supabase sessions 表
     const { data: session, error: sessionError } = await supabaseAdmin
       .from('sessions')
-      .select('id, user_id, expires_at')
+      .select('id, user_id, expires_at, access_token')
       .eq('id', session_id)
       .single()
 
@@ -184,6 +185,16 @@ export async function validateSession(
         }
       })
 
+    // 解密 access_token（資料庫中是加密儲存的）
+    let decryptedAccessToken: string
+    try {
+      decryptedAccessToken = await decryptToken(session.access_token)
+    } catch (error) {
+      dbLogger.error('Failed to decrypt access_token', { session_id, error })
+      // 如果解密失敗，返回無效 session（可能是密鑰錯誤或資料損壞）
+      return { valid: false, user: null }
+    }
+
     // 返回驗證成功結果
     return {
       valid: true,
@@ -197,7 +208,8 @@ export async function validateSession(
         banned: user.banned,
         last_login_at: user.last_login_at,
         created_at: user.created_at,
-        session_id // 將 session_id 加入 User 物件
+        session_id, // 將 session_id 加入 User 物件
+        access_token: decryptedAccessToken // Discord OAuth access token（已解密）
       },
       session_id
     }

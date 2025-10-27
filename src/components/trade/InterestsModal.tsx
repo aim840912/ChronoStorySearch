@@ -6,6 +6,7 @@ import { useDataManagement } from '@/hooks/useDataManagement'
 import { useItemsData } from '@/hooks/useItemsData'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useAuth } from '@/contexts/AuthContext'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 /**
  * 購買意向管理 Modal
@@ -73,6 +74,7 @@ interface ReceivedInterest {
 
 export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
   const { user } = useAuth()
+  const { language } = useLanguage()
   const [activeTab, setActiveTab] = useState<InterestTab>('my-interests')
   const [myInterests, setMyInterests] = useState<MyInterest[]>([])
   const [receivedInterests, setReceivedInterests] = useState<ReceivedInterest[]>([])
@@ -150,6 +152,17 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
       case 'cancelled': return 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-400'
       default: return 'bg-gray-100 text-gray-800'
     }
+  }
+
+  // 根據語言選擇物品名稱
+  const getDisplayItemName = (item: any, itemId?: number) => {
+    if (!item) {
+      return itemId ? (language === 'zh-TW' ? `物品 #${itemId}` : `Item #${itemId}`) : (language === 'zh-TW' ? '未知物品' : 'Unknown Item')
+    }
+    if (language === 'zh-TW') {
+      return item.chineseItemName || item.itemName || (itemId ? `物品 #${itemId}` : '未知物品')
+    }
+    return item.itemName || (itemId ? `Item #${itemId}` : 'Unknown Item')
   }
 
   return (
@@ -235,7 +248,7 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
                             <div className="flex items-start justify-between">
                               <div>
                                 <p className="font-semibold text-gray-900 dark:text-white">
-                                  {item?.chineseItemName || item?.itemName || `物品 #${interest.listings.item_id}`}
+                                  {getDisplayItemName(item, interest.listings.item_id)}
                                 </p>
                                 <p className="text-sm text-gray-600 dark:text-gray-400">
                                   數量: {interest.listings.quantity}
@@ -315,7 +328,7 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
                             <div className="flex items-start justify-between">
                               <div>
                                 <p className="font-semibold text-gray-900 dark:text-white">
-                                  {item?.chineseItemName || item?.itemName || `物品 #${interest.listing.item_id}`}
+                                  {getDisplayItemName(item, interest.listing.item_id)}
                                 </p>
                                 <p className="text-sm text-gray-600 dark:text-gray-400">
                                   數量: {interest.listing.quantity}

@@ -1,10 +1,11 @@
 'use client'
 
 import { memo } from 'react'
-import type { FilterMode, ItemAttributesEssential, ViewHistoryItem, DropsEssential } from '@/types'
+import type { FilterMode, ItemAttributesEssential, ViewHistoryItem, DropsEssential, ListingWithUserInfo, Pagination } from '@/types'
 import { FavoriteMonstersList } from '@/components/lists/FavoriteMonstersList'
 import { FavoriteItemsList } from '@/components/lists/FavoriteItemsList'
 import { AllItemsView } from '@/components/lists/AllItemsView'
+import { MarketListView } from '@/components/trade/MarketListView'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 // 類型定義（與內部元件一致）
@@ -68,6 +69,14 @@ interface ContentDisplayProps {
   // 瀏覽歷史（用於首頁顯示）
   viewHistory: ViewHistoryItem[]
   allDrops: DropsEssential[]
+
+  // 市場刊登模式
+  marketListings: ListingWithUserInfo[]
+  marketPagination: Pagination | null
+  isMarketLoading: boolean
+  marketError: string | null
+  onListingClick: (listingId: string) => void
+  onMarketPageChange: (page: number) => void
 }
 
 /**
@@ -101,6 +110,12 @@ export const ContentDisplay = memo(function ContentDisplay({
   hasAnyData,
   viewHistory,
   allDrops,
+  marketListings,
+  marketPagination,
+  isMarketLoading,
+  marketError,
+  onListingClick,
+  onMarketPageChange,
 }: ContentDisplayProps) {
   const { t } = useLanguage()
 
@@ -116,7 +131,19 @@ export const ContentDisplay = memo(function ContentDisplay({
 
   return (
     <>
-      {filterMode === 'favorite-monsters' ? (
+      {filterMode === 'market-listings' ? (
+        /* 市場刊登模式 */
+        <div className="mt-8">
+          <MarketListView
+            listings={marketListings}
+            pagination={marketPagination}
+            isLoading={isMarketLoading}
+            error={marketError}
+            onListingClick={onListingClick}
+            onPageChange={onMarketPageChange}
+          />
+        </div>
+      ) : filterMode === 'favorite-monsters' ? (
         /* 最愛怪物模式 */
         <FavoriteMonstersList
           monsters={filteredUniqueMonsters}

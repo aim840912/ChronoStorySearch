@@ -6,6 +6,7 @@ import { useDataManagement } from '@/hooks/useDataManagement'
 import { useItemsData } from '@/hooks/useItemsData'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useAuth } from '@/contexts/AuthContext'
+import { useLanguage } from '@/contexts/LanguageContext'
 import { ListingDetailModal } from './ListingDetailModal'
 
 /**
@@ -62,6 +63,7 @@ export function ExchangeMatchModal({
   listingId
 }: ExchangeMatchModalProps) {
   const { user } = useAuth()
+  const { language } = useLanguage()
   const [myListing, setMyListing] = useState<MyListing | null>(null)
   const [matches, setMatches] = useState<Match[]>([])
   const [isLoading, setIsLoading] = useState(false)
@@ -138,6 +140,17 @@ export function ExchangeMatchModal({
     setDetailModalOpen(true)
   }
 
+  // 根據語言選擇物品名稱
+  const getDisplayItemName = (item: any, itemId?: number) => {
+    if (!item) {
+      return itemId ? (language === 'zh-TW' ? `物品 #${itemId}` : `Item #${itemId}`) : (language === 'zh-TW' ? '未知物品' : 'Unknown Item')
+    }
+    if (language === 'zh-TW') {
+      return item.chineseItemName || item.itemName || (itemId ? `物品 #${itemId}` : '未知物品')
+    }
+    return item.itemName || (itemId ? `Item #${itemId}` : 'Unknown Item')
+  }
+
   const myItem = myListing ? getItemById(myListing.item_id) : null
   const myWantedItem = myListing ? getItemById(myListing.wanted_item_id) : null
 
@@ -179,7 +192,7 @@ export function ExchangeMatchModal({
                 <div>
                   <p className="text-xs text-gray-600 dark:text-gray-400">我有</p>
                   <p className="font-semibold text-gray-900 dark:text-white">
-                    {myItem.chineseItemName || myItem.itemName}
+                    {getDisplayItemName(myItem)}
                   </p>
                   <p className="text-sm text-gray-600 dark:text-gray-400">× {myListing.quantity}</p>
                 </div>
@@ -206,7 +219,7 @@ export function ExchangeMatchModal({
                 <div>
                   <p className="text-xs text-gray-600 dark:text-gray-400">我想要</p>
                   <p className="font-semibold text-gray-900 dark:text-white">
-                    {myWantedItem.chineseItemName || myWantedItem.itemName}
+                    {getDisplayItemName(myWantedItem)}
                   </p>
                   <p className="text-sm text-gray-600 dark:text-gray-400">× {myListing.wanted_quantity || '任意'}</p>
                 </div>
@@ -291,7 +304,7 @@ export function ExchangeMatchModal({
                               <div className="flex-1 min-w-0">
                                 <p className="text-xs text-gray-500 dark:text-gray-400">對方有 (你想要)</p>
                                 <p className="font-semibold text-gray-900 dark:text-white truncate">
-                                  {matchItem?.chineseItemName || matchItem?.itemName || `物品 #${match.item_id}`}
+                                  {getDisplayItemName(matchItem, match.item_id)}
                                 </p>
                                 <p className="text-sm text-gray-600 dark:text-gray-400">× {match.quantity}</p>
                               </div>
@@ -315,7 +328,7 @@ export function ExchangeMatchModal({
                               <div className="flex-1 min-w-0">
                                 <p className="text-xs text-gray-500 dark:text-gray-400">對方想要 (你有)</p>
                                 <p className="font-semibold text-gray-900 dark:text-white truncate">
-                                  {matchWantedItem?.chineseItemName || matchWantedItem?.itemName || `物品 #${match.wanted_item_id}`}
+                                  {getDisplayItemName(matchWantedItem, match.wanted_item_id)}
                                 </p>
                                 <p className="text-sm text-gray-600 dark:text-gray-400">× {match.wanted_quantity || '任意'}</p>
                               </div>

@@ -1,10 +1,12 @@
 'use client'
 
 import { memo } from 'react'
-import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode } from '@/types'
+import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode, MarketFilterOptions } from '@/types'
 import { SearchBar } from '@/components/SearchBar'
 import { FilterButtons } from '@/components/FilterButtons'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
+import { MarketDropdownMenu } from '@/components/trade/MarketDropdownMenu'
+import { MarketFilterPanel } from '@/components/trade/MarketFilterPanel'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { LanguageToggle } from '@/components/LanguageToggle'
 import { LoginButton } from '@/components/auth/LoginButton'
@@ -48,6 +50,10 @@ interface SearchHeaderProps {
   onOpenMyListings: () => void
   onOpenMarketBrowser: () => void
   onOpenInterests: () => void
+
+  // 市場篩選相關
+  marketFilter: MarketFilterOptions
+  onMarketFilterChange: (filter: MarketFilterOptions) => void
 }
 
 /**
@@ -85,6 +91,8 @@ export const SearchHeader = memo(function SearchHeader({
   onOpenMyListings,
   onOpenMarketBrowser,
   onOpenInterests,
+  marketFilter,
+  onMarketFilterChange,
 }: SearchHeaderProps) {
   const { t } = useLanguage()
   const { user, loading } = useAuth()
@@ -129,26 +137,57 @@ export const SearchHeader = memo(function SearchHeader({
         onShare={onShare}
       />
 
-      {/* 篩選按鈕 */}
-      <FilterButtons
-        filterMode={filterMode}
-        onFilterChange={onFilterChange}
-        favoriteMonsterCount={favoriteMonsterCount}
-        favoriteItemCount={favoriteItemCount}
-        onClearClick={onClearClick}
-        isAdvancedFilterExpanded={isAdvancedFilterExpanded}
-        onAdvancedFilterToggle={onAdvancedFilterToggle}
-        advancedFilterCount={advancedFilterCount}
-        onResetAdvancedFilter={onResetAdvancedFilter}
-        advancedFilter={advancedFilter}
-      />
+      {/* 篩選按鈕與市場下拉選單 */}
+      <div className="max-w-7xl mx-auto mb-4">
+        <div className="flex items-center gap-3 flex-wrap">
+          {/* 左側：篩選按鈕 */}
+          <div className="flex-1">
+            <FilterButtons
+              filterMode={filterMode}
+              onFilterChange={onFilterChange}
+              favoriteMonsterCount={favoriteMonsterCount}
+              favoriteItemCount={favoriteItemCount}
+              onClearClick={onClearClick}
+              isAdvancedFilterExpanded={isAdvancedFilterExpanded}
+              onAdvancedFilterToggle={onAdvancedFilterToggle}
+              advancedFilterCount={advancedFilterCount}
+              onResetAdvancedFilter={onResetAdvancedFilter}
+              advancedFilter={advancedFilter}
+            />
+          </div>
 
-      {/* 進階篩選面板 */}
-      <AdvancedFilterPanel
-        filter={advancedFilter}
-        onFilterChange={onAdvancedFilterChange}
-        isExpanded={isAdvancedFilterExpanded}
-      />
+          {/* 右側：市場下拉選單（僅在登入時顯示） */}
+          {user && (
+            <MarketDropdownMenu
+              onCreateListing={onOpenCreateListing}
+              onMyListings={onOpenMyListings}
+              onBrowseMarket={() => {
+                // 切換到市場刊登模式
+                onFilterChange('market-listings')
+              }}
+              onInterests={onOpenInterests}
+            />
+          )}
+        </div>
+      </div>
+
+      {/* 進階篩選面板（非市場模式） */}
+      {filterMode !== 'market-listings' && (
+        <AdvancedFilterPanel
+          filter={advancedFilter}
+          onFilterChange={onAdvancedFilterChange}
+          isExpanded={isAdvancedFilterExpanded}
+        />
+      )}
+
+      {/* 市場篩選面板（市場模式） */}
+      {filterMode === 'market-listings' && (
+        <MarketFilterPanel
+          filter={marketFilter}
+          onFilterChange={onMarketFilterChange}
+          isExpanded={isAdvancedFilterExpanded}
+        />
+      )}
     </div>
   )
 })

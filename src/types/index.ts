@@ -81,7 +81,7 @@ export interface ViewHistoryItem {
 }
 
 // 篩選模式類型
-export type FilterMode = 'all' | 'favorite-monsters' | 'favorite-items'
+export type FilterMode = 'all' | 'favorite-monsters' | 'favorite-items' | 'market-listings'
 
 // 搜尋類型篩選
 export type SearchTypeFilter = 'all' | 'monster' | 'item' | 'gacha'
@@ -592,4 +592,90 @@ export interface AdvancedFilterOptions {
 
   // 是否啟用進階篩選
   enabled: boolean
+
+  // 市場篩選（僅在 market-listings 模式下使用）
+  marketFilter?: MarketFilterOptions
+}
+
+// ========== 市場相關類型 ==========
+
+// 交易類型
+export type TradeType = 'sell' | 'buy' | 'exchange'
+
+// 市場篩選選項
+export interface MarketFilterOptions {
+  // 交易類型篩選（多選）
+  tradeTypes: TradeType[]
+
+  // 價格範圍篩選
+  priceRange: {
+    min: number | null
+    max: number | null
+  }
+
+  // 物品屬性篩選
+  itemStatsFilter: {
+    min_watk?: number
+    min_matk?: number
+    min_wdef?: number
+    stats_grade?: import('./item-stats').StatsGrade[]
+  }
+
+  // 排序方式
+  sortBy: 'created_at' | 'price' | 'stats_score'
+  sortOrder: 'asc' | 'desc'
+}
+
+// 分頁資訊
+export interface Pagination {
+  page: number
+  limit: number
+  total: number
+  totalPages: number
+}
+
+// 市場刊登回應（含用戶資訊）
+export interface ListingWithUserInfo {
+  // 基本刊登資訊
+  id: string
+  user_id: string
+  item_id: number
+  quantity: number
+  price?: number
+  trade_type: TradeType
+  wanted_item_id?: number
+  wanted_quantity?: number
+  contact_method: string
+  webhook_url?: string
+  status: 'active' | 'sold' | 'cancelled'
+  view_count: number
+  interest_count: number
+  created_at: string
+  updated_at: string
+  deleted_at?: string | null
+
+  // 物品屬性資訊（來自 item_stats 表）
+  item_stats: import('./item-stats').ItemStats | null
+  stats_grade: import('./item-stats').StatsGrade | null
+  stats_score: number | null
+
+  // 賣家資訊（來自 API join）
+  seller: {
+    username: string
+    discord_username: string | null
+    discord_discriminator: string | null
+  }
+
+  // 物品資訊（需要從前端資料補充）
+  item: {
+    itemId: number
+    itemName: string
+    chineseItemName: string | null
+  }
+}
+
+// 市場刊登列表回應
+export interface MarketListingsResponse {
+  listings: ListingWithUserInfo[]
+  pagination: Pagination
 }

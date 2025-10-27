@@ -5,6 +5,7 @@ import { ExtendedUniqueItem } from '@/types'
 import { useDataManagement } from '@/hooks/useDataManagement'
 import { useItemsData } from '@/hooks/useItemsData'
 import { getItemImageUrl } from '@/lib/image-utils'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 /**
  * 物品搜尋輸入元件
@@ -37,6 +38,7 @@ export function ItemSearchInput({
   disabled = false,
   excludeItemId
 }: ItemSearchInputProps) {
+  const { language } = useLanguage()
   const [query, setQuery] = useState('')
   const [suggestions, setSuggestions] = useState<ExtendedUniqueItem[]>([])
   const [isOpen, setIsOpen] = useState(false)
@@ -84,6 +86,17 @@ export function ItemSearchInput({
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
+  // 根據語言選擇物品名稱
+  const getDisplayItemName = (item: any, itemId?: number) => {
+    if (!item) {
+      return itemId ? (language === 'zh-TW' ? `物品 #${itemId}` : `Item #${itemId}`) : (language === 'zh-TW' ? '未知物品' : 'Unknown Item')
+    }
+    if (language === 'zh-TW') {
+      return item.chineseItemName || item.itemName || (itemId ? `物品 #${itemId}` : '未知物品')
+    }
+    return item.itemName || (itemId ? `Item #${itemId}` : 'Unknown Item')
+  }
+
   return (
     <div className="relative" ref={inputRef}>
       {/* 已選擇的物品顯示 */}
@@ -101,7 +114,7 @@ export function ItemSearchInput({
           />
           <div className="flex-1">
             <p className="font-semibold">
-              {value.chineseItemName || value.itemName}
+              {getDisplayItemName(value)}
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-400">
               ID: {value.itemId}
@@ -164,11 +177,11 @@ export function ItemSearchInput({
                   />
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-gray-900 dark:text-white truncate">
-                      {item.chineseItemName || item.itemName}
+                      {getDisplayItemName(item, item.itemId)}
                     </p>
                     <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
-                      {item.itemName !== item.chineseItemName && item.itemName}
-                      {item.itemName !== item.chineseItemName && ' · '}
+                      {language === 'zh-TW' && item.itemName !== item.chineseItemName && item.itemName}
+                      {language === 'zh-TW' && item.itemName !== item.chineseItemName && ' · '}
                       ID: {item.itemId}
                     </p>
                   </div>

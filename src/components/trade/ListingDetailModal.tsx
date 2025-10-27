@@ -6,7 +6,10 @@ import { useDataManagement } from '@/hooks/useDataManagement'
 import { useItemsData } from '@/hooks/useItemsData'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useAuth } from '@/contexts/AuthContext'
+import { useLanguage } from '@/contexts/LanguageContext'
 import { ExchangeMatchModal } from './ExchangeMatchModal'
+import { StatsComparisonCard } from './StatsComparisonCard'
+import type { ItemStats, StatsGrade } from '@/types/item-stats'
 
 /**
  * 刊登詳情 Modal
@@ -51,6 +54,10 @@ interface ListingDetail {
     reputation_score: number
   }
   is_own_listing: boolean
+  // 裝備屬性
+  item_stats?: ItemStats | null
+  stats_grade?: StatsGrade | null
+  stats_score?: number | null
 }
 
 interface ContactInfo {
@@ -68,6 +75,7 @@ export function ListingDetailModal({
   zIndex = 'z-50'
 }: ListingDetailModalProps) {
   const { user } = useAuth()
+  const { language, t } = useLanguage()
   const [listing, setListing] = useState<ListingDetail | null>(null)
   const [contactInfo, setContactInfo] = useState<ContactInfo | null>(null)
   const [isLoadingListing, setIsLoadingListing] = useState(false)
@@ -170,11 +178,11 @@ export function ListingDetailModal({
       const data = await response.json()
 
       if (!response.ok || !data.success) {
-        setError(data.error || '登記購買意向失敗')
+        setError(data.error || t('listing.createError'))
         return
       }
 
-      alert('購買意向登記成功！賣家將會收到通知。')
+      alert(t('listing.registerInterestSuccess'))
       setInterestMessage('')
       onInterestRegistered?.()
       onClose()
@@ -193,16 +201,27 @@ export function ListingDetailModal({
   const item = listing ? getItemById(listing.item_id) : null
   const wantedItem = listing?.wanted_item_id ? getItemById(listing.wanted_item_id) : null
 
+  // 根據語言選擇物品名稱
+  const getDisplayItemName = (item: any, itemId?: number) => {
+    if (!item) {
+      return itemId ? (language === 'zh-TW' ? `物品 #${itemId}` : `Item #${itemId}`) : (language === 'zh-TW' ? '未知物品' : 'Unknown Item')
+    }
+    if (language === 'zh-TW') {
+      return item.chineseItemName || item.itemName || (itemId ? `物品 #${itemId}` : '未知物品')
+    }
+    return item.itemName || (itemId ? `Item #${itemId}` : 'Unknown Item')
+  }
+
   return (
     <>
     <BaseModal isOpen={isOpen} onClose={onClose} maxWidth="max-w-3xl" zIndex={zIndex}>
       <div className="p-6">
-        <h2 className="text-2xl font-bold mb-4">刊登詳情</h2>
+        <h2 className="text-2xl font-bold mb-4">{t('listing.detail')}</h2>
 
         {/* 未登入提示 */}
         {!user && (
           <div className="mb-4 p-4 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
-            <p className="text-yellow-800 dark:text-yellow-200">請先登入才能查看刊登詳情</p>
+            <p className="text-yellow-800 dark:text-yellow-200">{t('listing.loginToView')}</p>
           </div>
         )}
 
@@ -217,13 +236,13 @@ export function ListingDetailModal({
         {isLoadingListing ? (
           <div className="text-center py-10">
             <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
-            <p className="mt-2 text-gray-500 dark:text-gray-400">載入中...</p>
+            <p className="mt-2 text-gray-500 dark:text-gray-400">{t('common.loading')}</p>
           </div>
         ) : listing ? (
           <div className="space-y-6">
             {/* 物品資訊 */}
             <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
-              <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">物品資訊</h3>
+              <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.itemInfo')}</h3>
               <div className="flex items-center gap-4">
                 <img
                   src={getItemImageUrl(listing.item_id)}
@@ -235,31 +254,31 @@ export function ListingDetailModal({
                 />
                 <div className="flex-1">
                   <p className="text-xl font-semibold text-gray-900 dark:text-white">
-                    {item?.chineseItemName || item?.itemName || `物品 #${listing.item_id}`}
+                    {getDisplayItemName(item, listing.item_id)}
                   </p>
-                  <p className="text-gray-600 dark:text-gray-400">數量: {listing.quantity}</p>
+                  <p className="text-gray-600 dark:text-gray-400">{t('listing.quantity')}: {listing.quantity}</p>
 
                   {/* 價格或交換資訊 */}
                   {listing.trade_type === 'exchange' && wantedItem ? (
                     <div className="mt-2 p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
                       <div className="flex items-center gap-2 text-purple-700 dark:text-purple-300">
-                        <span className="font-medium">交換條件:</span>
+                        <span className="font-medium">{t('listing.exchangeFor')}:</span>
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                         </svg>
                       </div>
                       <p className="mt-1 font-semibold text-gray-900 dark:text-white">
-                        {wantedItem.chineseItemName || wantedItem.itemName}
+                        {getDisplayItemName(wantedItem)}
                       </p>
                       {listing.wanted_quantity && (
                         <p className="text-sm text-gray-600 dark:text-gray-400">
-                          數量: {listing.wanted_quantity}
+                          {t('listing.quantity')}: {listing.wanted_quantity}
                         </p>
                       )}
                     </div>
                   ) : (
                     <p className="mt-2 text-2xl font-bold text-blue-600 dark:text-blue-400">
-                      {listing.price?.toLocaleString()} 楓幣
+                      {listing.price?.toLocaleString()} {t('listing.meso')}
                     </p>
                   )}
 
@@ -270,22 +289,38 @@ export function ListingDetailModal({
                       listing.trade_type === 'buy' ? 'bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400' :
                       'bg-purple-100 text-purple-800 dark:bg-purple-900/20 dark:text-purple-400'
                     }`}>
-                      {listing.trade_type === 'sell' ? '販售' : listing.trade_type === 'buy' ? '收購' : '交換'}
+                      {listing.trade_type === 'sell' ? t('trade.type.sell') : listing.trade_type === 'buy' ? t('trade.type.buy') : t('trade.type.exchange')}
                     </span>
                   </div>
 
                   {/* 統計資訊 */}
                   <div className="flex gap-4 mt-2 text-sm text-gray-500 dark:text-gray-400">
-                    <span>瀏覽: {listing.view_count}</span>
-                    <span>意向: {listing.interest_count}</span>
+                    <span>{t('listing.viewCount')}: {listing.view_count}</span>
+                    <span>{t('listing.interestCount')}: {listing.interest_count}</span>
                   </div>
                 </div>
               </div>
             </div>
 
+            {/* 裝備屬性 */}
+            {listing.item_stats && (
+              <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
+                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.itemStats')}</h3>
+                <StatsComparisonCard
+                  stats={listing.item_stats}
+                  grade={listing.stats_grade}
+                  score={listing.stats_score}
+                  locale={language}
+                  showGrade={false}
+                  showMaxValues={false}
+                  compact={true}
+                />
+              </div>
+            )}
+
             {/* 賣家資訊 */}
             <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
-              <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">賣家資訊</h3>
+              <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.sellerInfo')}</h3>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center text-white text-lg font-semibold">
                   {listing.seller.discord_username.charAt(0).toUpperCase()}
@@ -299,7 +334,7 @@ export function ListingDetailModal({
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                     <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                      信譽分數: {listing.seller.reputation_score}
+                      {t('listing.reputationScore')}: {listing.seller.reputation_score}
                     </span>
                   </div>
                 </div>
@@ -309,16 +344,16 @@ export function ListingDetailModal({
             {/* 聯絡方式 */}
             {!listing.is_own_listing && (
               <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
-                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">聯絡方式</h3>
+                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.contactMethod')}</h3>
                 {contactInfo ? (
                   <div className="space-y-2">
                     <div className="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
-                      <p className="text-sm text-gray-600 dark:text-gray-400">聯絡方式:</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">{t('listing.contactMethod')}:</p>
                       <p className="font-semibold text-gray-900 dark:text-white">{contactInfo.contact_method}</p>
                       <p className="mt-1 text-gray-900 dark:text-white">{contactInfo.contact_info}</p>
                     </div>
                     <p className="text-xs text-gray-500 dark:text-gray-400">
-                      今日剩餘查看次數: {contactInfo.quota_remaining}/30
+                      {t('listing.quotaRemaining')}: {t('listing.quotaFormat', { remaining: contactInfo.quota_remaining })}
                     </p>
                   </div>
                 ) : (
@@ -329,7 +364,7 @@ export function ListingDetailModal({
                                hover:bg-green-600 transition-colors
                                disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    {isLoadingContact ? '載入中...' : '查看聯絡方式 (消耗配額)'}
+                    {isLoadingContact ? t('listing.loadingContact') : t('listing.viewContact')}
                   </button>
                 )}
               </div>
@@ -338,11 +373,11 @@ export function ListingDetailModal({
             {/* 登記購買意向 */}
             {!listing.is_own_listing && (
               <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
-                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">登記購買意向</h3>
+                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.registerInterest')}</h3>
                 <textarea
                   value={interestMessage}
                   onChange={(e) => setInterestMessage(e.target.value)}
-                  placeholder="留言給賣家 (選填)..."
+                  placeholder={t('listing.messageToSeller')}
                   className="w-full p-3 border rounded-lg dark:border-gray-600
                              bg-white dark:bg-gray-700 text-gray-900 dark:text-white
                              placeholder-gray-400 dark:placeholder-gray-500
@@ -351,7 +386,7 @@ export function ListingDetailModal({
                   maxLength={500}
                 />
                 <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                  {interestMessage.length}/500
+                  {t('listing.characterLimit', { current: interestMessage.length, max: 500 })}
                 </p>
                 <button
                   onClick={handleRegisterInterest}
@@ -360,7 +395,7 @@ export function ListingDetailModal({
                              hover:bg-blue-600 transition-colors
                              disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {isRegisteringInterest ? '登記中...' : '登記購買意向'}
+                  {isRegisteringInterest ? t('listing.registering') : t('listing.registerInterestBtn')}
                 </button>
               </div>
             )}
@@ -368,9 +403,9 @@ export function ListingDetailModal({
             {/* 交換匹配按鈕 */}
             {listing.trade_type === 'exchange' && !listing.is_own_listing && (
               <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
-                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">交換匹配</h3>
+                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.exchangeMatch')}</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                  尋找與您互補的交換刊登，系統會根據物品匹配度、數量和賣家信譽計算匹配分數
+                  {t('listing.exchangeMatchDesc')}
                 </p>
                 <button
                   onClick={() => setExchangeMatchOpen(true)}
@@ -381,7 +416,7 @@ export function ListingDetailModal({
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                   </svg>
-                  查看交換匹配
+                  {t('listing.viewExchangeMatch')}
                 </button>
               </div>
             )}
@@ -389,7 +424,7 @@ export function ListingDetailModal({
             {/* 自己的刊登提示 */}
             {listing.is_own_listing && (
               <div className="p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
-                <p className="text-blue-800 dark:text-blue-200">這是您自己的刊登</p>
+                <p className="text-blue-800 dark:text-blue-200">{t('listing.ownListing')}</p>
               </div>
             )}
 
