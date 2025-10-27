@@ -127,6 +127,10 @@ scripts/*-test.*
 # Cloudflare Wrangler 建置目錄
 .wrangler/
 
+# R2 臨時檔案
+.r2-sync-cache.txt
+.r2-usage.log
+
 # 預覽和臨時 HTML 檔案
 preview.html
 *.preview.html
