@@ -249,7 +249,7 @@ export const ModalManager = memo(function ModalManager({
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 10l2 2"/>
             <rect x="10" y="18" width="4" height="1.5" rx="0.5" strokeWidth={1}/>
           </svg>
-          <span className="text-sm font-medium hidden group-hover:inline-block lg:inline-block">{t('gacha.button')}</span>
+          <span className="text-sm font-medium hidden group-hover:inline-block">{t('gacha.button')}</span>
         </div>
       </button>
 
@@ -263,7 +263,7 @@ export const ModalManager = memo(function ModalManager({
           <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
           </svg>
-          <span className="text-sm font-medium hidden group-hover:inline-block lg:inline-block">{t('merchant.button')}</span>
+          <span className="text-sm font-medium hidden group-hover:inline-block">{t('merchant.button')}</span>
         </div>
       </button>
 
@@ -282,7 +282,7 @@ export const ModalManager = memo(function ModalManager({
               d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
             />
           </svg>
-          <span className="text-sm font-medium hidden group-hover:inline-block lg:inline-block">{t('commands.button')}</span>
+          <span className="text-sm font-medium hidden group-hover:inline-block">{t('commands.button')}</span>
         </div>
       </button>
 
@@ -298,7 +298,7 @@ export const ModalManager = memo(function ModalManager({
             <circle cx="12" cy="12" r="6" strokeWidth="2"/>
             <circle cx="12" cy="12" r="2" fill="currentColor"/>
           </svg>
-          <span className="text-sm font-medium hidden group-hover:inline-block lg:inline-block">{t('accuracy.buttonShort')}</span>
+          <span className="text-sm font-medium hidden group-hover:inline-block">{t('accuracy.buttonShort')}</span>
         </div>
       </button>
 
