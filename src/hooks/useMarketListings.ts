@@ -165,9 +165,9 @@ export function useMarketListings({
         count: data.data?.length || 0,
         pagination: data.pagination
       })
-    } catch (err: any) {
+    } catch (err: unknown) {
       // 忽略取消的請求
-      if (err.name === 'AbortError') {
+      if (err instanceof Error && err.name === 'AbortError') {
         clientLogger.info('[useMarketListings] Request aborted')
         return
       }

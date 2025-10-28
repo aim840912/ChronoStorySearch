@@ -25,14 +25,14 @@ export class BaseError extends Error {
   public readonly statusCode: number
   public readonly code: string
   public readonly isOperational: boolean
-  public readonly context?: Record<string, any>
+  public readonly context?: Record<string, unknown>
 
   constructor(
     message: string,
     statusCode: number,
     code: string,
     isOperational = true,
-    context?: Record<string, any>
+    context?: Record<string, unknown>
   ) {
     super(message)
     Object.setPrototypeOf(this, new.target.prototype)
@@ -58,7 +58,7 @@ export class BaseError extends Error {
  * ```
  */
 export class ValidationError extends BaseError {
-  constructor(message: string, context?: Record<string, any>) {
+  constructor(message: string, context?: Record<string, unknown>) {
     super(message, 400, 'VALIDATION_ERROR', true, context)
     this.name = 'ValidationError'
   }
@@ -76,7 +76,7 @@ export class ValidationError extends BaseError {
  * ```
  */
 export class UnauthorizedError extends BaseError {
-  constructor(message: string = '需要登入才能使用此功能', context?: Record<string, any>) {
+  constructor(message: string = '需要登入才能使用此功能', context?: Record<string, unknown>) {
     super(message, 401, 'UNAUTHORIZED', true, context)
     this.name = 'UnauthorizedError'
   }
@@ -94,7 +94,7 @@ export class UnauthorizedError extends BaseError {
  * ```
  */
 export class AuthorizationError extends BaseError {
-  constructor(message: string = '權限不足', context?: Record<string, any>) {
+  constructor(message: string = '權限不足', context?: Record<string, unknown>) {
     super(message, 403, 'FORBIDDEN', true, context)
     this.name = 'AuthorizationError'
   }
@@ -112,7 +112,7 @@ export class AuthorizationError extends BaseError {
  * ```
  */
 export class NotFoundError extends BaseError {
-  constructor(message: string = '找不到請求的資源', context?: Record<string, any>) {
+  constructor(message: string = '找不到請求的資源', context?: Record<string, unknown>) {
     super(message, 404, 'NOT_FOUND', true, context)
     this.name = 'NotFoundError'
   }
@@ -152,7 +152,7 @@ export class MethodNotAllowedError extends BaseError {
  * ```
  */
 export class ConflictError extends BaseError {
-  constructor(message: string = '資源衝突', context?: Record<string, any>) {
+  constructor(message: string = '資源衝突', context?: Record<string, unknown>) {
     super(message, 409, 'CONFLICT', true, context)
     this.name = 'ConflictError'
   }
@@ -170,7 +170,7 @@ export class ConflictError extends BaseError {
  * ```
  */
 export class RateLimitError extends BaseError {
-  constructor(message: string = '請求過於頻繁，請稍後再試', context?: Record<string, any>) {
+  constructor(message: string = '請求過於頻繁，請稍後再試', context?: Record<string, unknown>) {
     super(message, 429, 'RATE_LIMIT_EXCEEDED', true, context)
     this.name = 'RateLimitError'
   }
@@ -187,7 +187,7 @@ export class RateLimitError extends BaseError {
  * ```
  */
 export class DatabaseError extends BaseError {
-  constructor(message: string = '資料庫操作失敗', context?: Record<string, any>) {
+  constructor(message: string = '資料庫操作失敗', context?: Record<string, unknown>) {
     super(message, 500, 'DATABASE_ERROR', true, context)
     this.name = 'DatabaseError'
   }
@@ -210,12 +210,14 @@ export class ErrorFactory {
    * }
    * ```
    */
-  static fromSupabaseError(error: any): BaseError {
+  static fromSupabaseError(error: unknown): BaseError {
     // Supabase 錯誤代碼對應
     // 參考：https://supabase.com/docs/guides/api/rest/error-codes
 
-    const code = error.code || error.error_code || 'UNKNOWN'
-    const message = error.message || '資料庫操作失敗'
+    // 安全訪問錯誤屬性
+    const errorObj = error as Record<string, unknown>
+    const code = (errorObj.code as string) || (errorObj.error_code as string) || 'UNKNOWN'
+    const message = (errorObj.message as string) || '資料庫操作失敗'
 
     // 23505: unique_violation (重複鍵)
     if (code === '23505') {

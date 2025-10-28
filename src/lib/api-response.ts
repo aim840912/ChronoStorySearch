@@ -24,7 +24,7 @@ import { NextResponse } from 'next/server'
 /**
  * 成功回應格式
  */
-export interface SuccessResponse<T = any> {
+export interface SuccessResponse<T = unknown> {
   success: true
   data: T
   message?: string
@@ -39,7 +39,7 @@ export interface ErrorResponse {
   error: string
   code: string
   trace_id?: string
-  details?: Record<string, any>
+  details?: Record<string, unknown>
   timestamp: string
 }
 
@@ -58,7 +58,7 @@ export interface PaginationInfo {
 /**
  * 分頁回應格式
  */
-export interface PaginatedResponse<T = any> {
+export interface PaginatedResponse<T = unknown> {
   success: true
   data: T[]
   pagination: PaginationInfo
@@ -86,7 +86,7 @@ export interface PaginatedResponse<T = any> {
  * return success(null, '刊登已刪除')
  * ```
  */
-export function success<T = any>(
+export function success<T = unknown>(
   data: T,
   message?: string
 ): NextResponse<SuccessResponse<T>> {
@@ -118,7 +118,7 @@ export function success<T = any>(
  * return created({ interest_id: 789 }, '購買意向已登記')
  * ```
  */
-export function created<T = any>(
+export function created<T = unknown>(
   data: T,
   message?: string
 ): NextResponse<SuccessResponse<T>> {
@@ -167,7 +167,7 @@ export function error(
   code: string,
   status: number,
   trace_id?: string,
-  details?: Record<string, any>
+  details?: Record<string, unknown>
 ): NextResponse<ErrorResponse> {
   return NextResponse.json(
     {
@@ -208,7 +208,7 @@ export function error(
  * }, '查詢成功')
  * ```
  */
-export function successWithPagination<T = any>(
+export function successWithPagination<T = unknown>(
   data: T[],
   pagination: PaginationInfo,
   message?: string

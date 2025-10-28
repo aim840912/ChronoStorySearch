@@ -56,9 +56,9 @@ export type { User } from '@/lib/auth/session-validator'
  * ```
  */
 export function requireAuth(
-  handler: (request: NextRequest, user: User, ...args: any[]) => Promise<Response>
+  handler: (request: NextRequest, user: User, ...args: unknown[]) => Promise<Response>
 ) {
-  return async (request: NextRequest, ...args: any[]): Promise<Response> => {
+  return async (request: NextRequest, ...args: unknown[]): Promise<Response> => {
     try {
       // 1. 呼叫 validateSession
       const { valid, user } = await validateSession(request)
@@ -109,9 +109,9 @@ export function requireAuth(
  * ```
  */
 export function requireAdmin(
-  handler: (request: NextRequest, user: User, ...args: any[]) => Promise<Response>
+  handler: (request: NextRequest, user: User, ...args: unknown[]) => Promise<Response>
 ) {
-  return async (request: NextRequest, ...args: any[]): Promise<Response> => {
+  return async (request: NextRequest, ...args: unknown[]): Promise<Response> => {
     try {
       // 1. 先呼叫 requireAuth
       const { valid, user } = await validateSession(request)
@@ -195,9 +195,9 @@ export function requireAdmin(
  * ```
  */
 export function optionalAuth(
-  handler: (request: NextRequest, user: User | null, ...args: any[]) => Promise<Response>
+  handler: (request: NextRequest, user: User | null, ...args: unknown[]) => Promise<Response>
 ) {
-  return async (request: NextRequest, ...args: any[]): Promise<Response> => {
+  return async (request: NextRequest, ...args: unknown[]): Promise<Response> => {
     try {
       // 1. 呼叫 validateSession
       const { valid, user } = await validateSession(request)
@@ -237,7 +237,7 @@ export function optionalAuth(
  * ```
  */
 export function withAuthAndError(
-  handler: (request: NextRequest, user: User, ...args: any[]) => Promise<Response>,
+  handler: (request: NextRequest, user: User, ...args: unknown[]) => Promise<Response>,
   options: ErrorHandlerOptions
 ) {
   // 先套用 requireAuth，再套用 withErrorHandler
@@ -268,7 +268,7 @@ export function withAuthAndError(
  * ```
  */
 export function withAdminAndError(
-  handler: (request: NextRequest, user: User, ...args: any[]) => Promise<Response>,
+  handler: (request: NextRequest, user: User, ...args: unknown[]) => Promise<Response>,
   options: ErrorHandlerOptions
 ) {
   // 先套用 requireAdmin，再套用 withErrorHandler
@@ -301,7 +301,7 @@ export function withAdminAndError(
  * ```
  */
 export function withOptionalAuthAndError(
-  handler: (request: NextRequest, user: User | null, ...args: any[]) => Promise<Response>,
+  handler: (request: NextRequest, user: User | null, ...args: unknown[]) => Promise<Response>,
   options: ErrorHandlerOptions
 ) {
   // 先套用 optionalAuth，再套用 withErrorHandler

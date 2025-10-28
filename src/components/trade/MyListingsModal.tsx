@@ -155,7 +155,7 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
   }
 
   // 根據語言選擇物品名稱
-  const getDisplayItemName = (item: any, itemId?: number) => {
+  const getDisplayItemName = (item: Record<string, unknown>, itemId?: number) => {
     if (!item) {
       return itemId ? (language === 'zh-TW' ? `物品 #${itemId}` : `Item #${itemId}`) : (language === 'zh-TW' ? '未知物品' : 'Unknown Item')
     }

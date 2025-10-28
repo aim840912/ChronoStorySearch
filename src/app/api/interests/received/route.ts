@@ -60,7 +60,7 @@ async function handleGET(_request: NextRequest, user: User) {
   }
 
   // 轉換資料格式（扁平化 JOIN 結果）
-  const formattedInterests = (interests || []).map((interest: any) => ({
+  const formattedInterests = (interests || []).map((interest: Record<string, unknown>) => ({
     id: interest.id,
     listing_id: interest.listing_id,
     buyer_id: interest.buyer_id,

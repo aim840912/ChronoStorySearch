@@ -35,7 +35,7 @@ const itemsMap = new Map<number, ItemAttributesEssential>()
 // 建立掉落物品名稱 Map（最完整的中英文物品名稱來源）
 // 儲存 itemId -> {itemName, chineseItemName}，約 135KB
 const dropsItemsMap = new Map<number, { itemName: string; chineseItemName: string | null }>()
-;(dropsEssentialData as any[]).forEach((drop) => {
+;(dropsEssentialData as Record<string, unknown>[]).forEach((drop) => {
   const itemId = typeof drop.itemId === 'number' ? drop.itemId : parseInt(drop.itemId, 10)
   if (!isNaN(itemId) && drop.itemName) {
     // 只保留第一次出現的物品名稱（去重）
@@ -61,8 +61,8 @@ const allGachaMachines = [
   gachaMachine7,
 ]
 
-allGachaMachines.forEach((machine: any) => {
-  machine.items?.forEach((item: any) => {
+allGachaMachines.forEach((machine: Record<string, unknown>) => {
+  (machine.items as Record<string, unknown>[] | undefined)?.forEach((item: Record<string, unknown>) => {
     const itemId = typeof item.itemId === 'string' ? parseInt(item.itemId, 10) : item.itemId
     if (!isNaN(itemId) && item.itemName) {
       // 只保留第一次出現的物品名稱（去重）
@@ -272,7 +272,7 @@ async function handleGET(_request: NextRequest, user: User) {
   }
 
   // 9. 轉換資料格式（扁平化 JOIN 結果，並從三個資料來源查找物品中英文名稱）
-  const formattedListings = (listings || []).map((listing: any) => {
+  const formattedListings = (listings || []).map((listing: Record<string, unknown>) => {
     // 查找物品名稱（優先順序：drops → gacha → item-attributes）
     const dropsItem = dropsItemsMap.get(listing.item_id)
     const gachaItem = gachaItemsMap.get(listing.item_id)
@@ -294,7 +294,7 @@ async function handleGET(_request: NextRequest, user: User) {
       wanted_item_id: listing.wanted_item_id,
       wanted_quantity: listing.wanted_quantity,
       // 新欄位：想要物品陣列（從關聯表取得）
-      wanted_items: listing.listing_wanted_items?.map((item: any) => ({
+      wanted_items: (listing.listing_wanted_items as Record<string, unknown>[] | undefined)?.map((item: Record<string, unknown>) => ({
         item_id: item.item_id,
         quantity: item.quantity
       })) || [],

@@ -9,7 +9,6 @@
 
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
-import { calculateAccountAgeDays } from '@/lib/utils/discord-utils'
 
 /**
  * 驗證 Discord 帳號年齡

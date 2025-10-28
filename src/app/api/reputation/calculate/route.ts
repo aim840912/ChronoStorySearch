@@ -18,7 +18,7 @@ import { NextRequest, NextResponse } from 'next/server'
  * 認證要求: 🔒 需要認證 (withAuthAndError)
  * 參考文件: docs/architecture/交易系統/04-Discord整合.md
  */
-export async function POST(request: NextRequest) {
+export async function POST(_request: NextRequest) {
   return NextResponse.json(
     {
       success: false,

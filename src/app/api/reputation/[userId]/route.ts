@@ -14,8 +14,8 @@ import { NextRequest, NextResponse } from 'next/server'
  * 參考文件: docs/architecture/交易系統/04-Discord整合.md
  */
 export async function GET(
-  request: NextRequest,
-  context: { params: Promise<{ userId: string }> }
+  _request: NextRequest,
+  _context: { params: Promise<{ userId: string }> }
 ) {
   return NextResponse.json(
     {
