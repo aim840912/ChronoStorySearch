@@ -62,6 +62,7 @@ async function handleGET(
     wanted_item_id: listing.wanted_item_id,
     wanted_quantity: listing.wanted_quantity,
     contact_method: listing.contact_method,
+    seller_discord_id: listing.seller_discord_id || null,
     // 注意：contact_info 不在這裡返回，需要呼叫 /contact API
     webhook_url: listing.webhook_url,
     status: listing.status,

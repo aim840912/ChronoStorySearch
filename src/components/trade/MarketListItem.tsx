@@ -88,7 +88,7 @@ export function MarketListItem({ listing, onClick }: MarketListItemProps) {
   return (
     <button
       onClick={onClick}
-      className="w-full grid grid-cols-[70px_50px_1fr_60px_90px] md:grid-cols-[100px_80px_1fr_100px_140px_140px] gap-2 md:gap-4 items-center p-3 md:p-4 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-750 border-b border-gray-200 dark:border-gray-700 transition-colors text-left"
+      className="w-full grid grid-cols-[70px_50px_1fr_90px_60px_90px] md:grid-cols-[100px_80px_1fr_120px_100px_140px_140px] gap-2 md:gap-4 items-center p-3 md:p-4 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 border-b border-gray-200 dark:border-gray-700 transition-colors text-left"
     >
       {/* 1. 交易模式 */}
       <div className="flex items-center justify-center">
@@ -103,43 +103,45 @@ export function MarketListItem({ listing, onClick }: MarketListItemProps) {
             alt={getItemName(listing.item)}
             className="w-full h-full object-contain"
             onError={(e) => {
-              e.currentTarget.src = '/images/items/default.png'
+              e.currentTarget.src = '/images/items/default.svg'
             }}
           />
         </div>
       </div>
 
-      {/* 3. 物品名稱 + 屬性 */}
+      {/* 3. 物品名稱 */}
       <div className="min-w-0">
         <h3 className="font-medium text-gray-900 dark:text-gray-100 truncate text-sm md:text-base">
           {getItemName(listing.item)}
         </h3>
-        {/* 物品屬性摘要（如果有） */}
-        {listing.item_stats && (
-          <div className="mt-1 text-xs text-indigo-600 dark:text-indigo-400">
-            <span className="truncate">
-              {Object.entries(listing.item_stats)
-                .filter(([, value]) => value !== undefined && value !== null)
-                .slice(0, 3)
-                .map(([key, value]) => `${key}+${value}`)
-                .join(', ')}
-            </span>
-          </div>
+      </div>
+
+      {/* 4. 裝備素質 */}
+      <div className="text-center text-xs text-indigo-600 dark:text-indigo-400">
+        {listing.item_stats ? (
+          <span className="truncate md:whitespace-normal md:break-words block">
+            {Object.entries(listing.item_stats)
+              .filter(([, value]) => value !== undefined && value !== null)
+              .map(([key, value]) => `${key}+${value}`)
+              .join(', ')}
+          </span>
+        ) : (
+          <span className="text-gray-400 dark:text-gray-500">-</span>
         )}
       </div>
 
-      {/* 4. 數量 */}
+      {/* 5. 數量 */}
       <div className="text-center text-sm text-gray-600 dark:text-gray-400">
         <span className="hidden md:inline">{t('listing.quantity')}: </span>
         <span className="font-medium">{listing.quantity}</span>
       </div>
 
-      {/* 5. 價格 */}
+      {/* 6. 價格 */}
       <div className="text-center">
         {getPriceDisplay()}
       </div>
 
-      {/* 6. 發布者（僅桌面顯示） */}
+      {/* 7. 發布者（僅桌面顯示） */}
       <div className="hidden md:block text-center text-sm text-gray-600 dark:text-gray-400 truncate">
         {listing.seller.discord_username || listing.seller.username}
       </div>

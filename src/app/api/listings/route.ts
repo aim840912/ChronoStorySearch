@@ -235,6 +235,7 @@ async function handlePOST(request: NextRequest, user: User) {
     wanted_quantity: trade_type === 'exchange' ? (wanted_quantity || 1) : null,
     contact_method,
     contact_info: contact_info.trim(),
+    seller_discord_id: contact_method === 'discord' ? user.discord_id : null,
     webhook_url: webhook_url || null,
     status: 'active',
     view_count: 0,

@@ -5,7 +5,6 @@ import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMod
 import { SearchBar } from '@/components/SearchBar'
 import { FilterButtons } from '@/components/FilterButtons'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
-import { MarketDropdownMenu } from '@/components/trade/MarketDropdownMenu'
 import { MarketFilterPanel } from '@/components/trade/MarketFilterPanel'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { LanguageToggle } from '@/components/LanguageToggle'
@@ -130,36 +129,24 @@ export const SearchHeader = memo(function SearchHeader({
         onShare={onShare}
       />
 
-      {/* 篩選按鈕與市場下拉選單 */}
-      <div className="max-w-7xl mx-auto mb-4">
-        <div className="flex items-center gap-3 flex-wrap">
-          {/* 左側：篩選按鈕 */}
-          <div className="flex-1">
-            <FilterButtons
-              filterMode={filterMode}
-              onFilterChange={onFilterChange}
-              favoriteMonsterCount={favoriteMonsterCount}
-              favoriteItemCount={favoriteItemCount}
-              onClearClick={onClearClick}
-              isAdvancedFilterExpanded={isAdvancedFilterExpanded}
-              onAdvancedFilterToggle={onAdvancedFilterToggle}
-              advancedFilterCount={advancedFilterCount}
-              onResetAdvancedFilter={onResetAdvancedFilter}
-              advancedFilter={advancedFilter}
-            />
-          </div>
-
-          {/* 右側：市場下拉選單（僅在登入時顯示） */}
-          {user && (
-            <MarketDropdownMenu
-              onCreateListing={onOpenCreateListing}
-              onMyListings={onOpenMyListings}
-              onBrowseMarket={onOpenMarketBrowser}
-              onInterests={onOpenInterests}
-            />
-          )}
-        </div>
-      </div>
+      {/* 篩選按鈕 */}
+      <FilterButtons
+        filterMode={filterMode}
+        onFilterChange={onFilterChange}
+        favoriteMonsterCount={favoriteMonsterCount}
+        favoriteItemCount={favoriteItemCount}
+        onClearClick={onClearClick}
+        isAdvancedFilterExpanded={isAdvancedFilterExpanded}
+        onAdvancedFilterToggle={onAdvancedFilterToggle}
+        advancedFilterCount={advancedFilterCount}
+        onResetAdvancedFilter={onResetAdvancedFilter}
+        advancedFilter={advancedFilter}
+        user={user}
+        onOpenCreateListing={onOpenCreateListing}
+        onOpenMyListings={onOpenMyListings}
+        onOpenMarketBrowser={onOpenMarketBrowser}
+        onOpenInterests={onOpenInterests}
+      />
 
       {/* 進階篩選面板（非市場模式） */}
       {filterMode !== 'market-listings' && (

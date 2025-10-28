@@ -487,12 +487,8 @@ export default function Home() {
           isMarketLoading={marketListings.isLoading}
           marketError={marketListings.error}
           onListingClick={(listingId: string) => {
-            // 從 listings 中找到對應的刊登
-            const listing = marketListings.listings.find(l => l.id === listingId)
-            if (listing) {
-              // 開啟刊登詳情 Modal（通過 ItemModal）
-              modals.openItemModal(listing.item_id, listing.item.itemName || `物品 #${listing.item_id}`)
-            }
+            // 開啟刊登詳情 Modal（顯示完整資訊和購買意向功能）
+            modals.openListingDetailModal(parseInt(listingId, 10))
           }}
           onMarketPageChange={marketListings.goToPage}
         />
@@ -511,6 +507,8 @@ export default function Home() {
         isMyListingsModalOpen={modals.isMyListingsModalOpen}
         isMarketBrowserModalOpen={modals.isMarketBrowserModalOpen}
         isInterestsModalOpen={modals.isInterestsModalOpen}
+        isListingDetailModalOpen={modals.isListingDetailModalOpen}
+        selectedListingId={modals.selectedListingId}
         selectedMonsterId={modals.selectedMonsterId ?? undefined}
         selectedMonsterName={modals.selectedMonsterName}
         selectedItemId={modals.selectedItemId}
@@ -530,6 +528,7 @@ export default function Home() {
         closeMyListingsModal={modals.closeMyListingsModal}
         closeMarketBrowserModal={modals.closeMarketBrowserModal}
         closeInterestsModal={modals.closeInterestsModal}
+        closeListingDetailModal={modals.closeListingDetailModal}
         goBack={modals.goBack}
         openGachaModal={modals.openGachaModal}
         openBugReportModal={modals.openBugReportModal}

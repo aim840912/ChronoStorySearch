@@ -8,6 +8,73 @@ import {
 import { ValidationError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
+import itemsData from '@/../data/item-attributes-essential.json'
+import type { ItemAttributesEssential } from '@/types'
+
+// 匯入掉落資料（包含最完整的中英文物品名稱）
+import dropsEssentialData from '@/../data/drops-essential.json'
+
+// 匯入轉蛋機資料（用於查找轉蛋機專屬物品名稱）
+import gachaMachine1 from '@/../data/gacha/machine-1-enhanced.json'
+import gachaMachine2 from '@/../data/gacha/machine-2-enhanced.json'
+import gachaMachine3 from '@/../data/gacha/machine-3-enhanced.json'
+import gachaMachine4 from '@/../data/gacha/machine-4-enhanced.json'
+import gachaMachine5 from '@/../data/gacha/machine-5-enhanced.json'
+import gachaMachine6 from '@/../data/gacha/machine-6-enhanced.json'
+import gachaMachine7 from '@/../data/gacha/machine-7-enhanced.json'
+
+// 建立物品資料快取 Map（用於快速查找物品名稱）
+const itemsMap = new Map<number, ItemAttributesEssential>()
+;(itemsData as ItemAttributesEssential[]).forEach((item) => {
+  const itemId = parseInt(item.item_id, 10)
+  if (!isNaN(itemId)) {
+    itemsMap.set(itemId, item)
+  }
+})
+
+// 建立掉落物品名稱 Map（最完整的中英文物品名稱來源）
+// 儲存 itemId -> {itemName, chineseItemName}，約 135KB
+const dropsItemsMap = new Map<number, { itemName: string; chineseItemName: string | null }>()
+;(dropsEssentialData as any[]).forEach((drop) => {
+  const itemId = typeof drop.itemId === 'number' ? drop.itemId : parseInt(drop.itemId, 10)
+  if (!isNaN(itemId) && drop.itemName) {
+    // 只保留第一次出現的物品名稱（去重）
+    if (!dropsItemsMap.has(itemId)) {
+      dropsItemsMap.set(itemId, {
+        itemName: drop.itemName,
+        chineseItemName: drop.chineseItemName || null
+      })
+    }
+  }
+})
+
+// 建立轉蛋機物品名稱 Map（轉蛋機專屬物品）
+// 儲存 itemId -> {itemName, chineseName}，約 65KB
+const gachaItemsMap = new Map<number, { itemName: string; chineseName: string | null }>()
+const allGachaMachines = [
+  gachaMachine1,
+  gachaMachine2,
+  gachaMachine3,
+  gachaMachine4,
+  gachaMachine5,
+  gachaMachine6,
+  gachaMachine7,
+]
+
+allGachaMachines.forEach((machine: any) => {
+  machine.items?.forEach((item: any) => {
+    const itemId = typeof item.itemId === 'string' ? parseInt(item.itemId, 10) : item.itemId
+    if (!isNaN(itemId) && item.itemName) {
+      // 只保留第一次出現的物品名稱（去重）
+      if (!gachaItemsMap.has(itemId)) {
+        gachaItemsMap.set(itemId, {
+          itemName: item.itemName,
+          chineseName: item.chineseName || null
+        })
+      }
+    }
+  })
+})
 
 /**
  * GET /api/market/search - 市場搜尋/篩選
@@ -19,6 +86,10 @@ import { apiLogger } from '@/lib/logger'
  * - 支援物品屬性篩選：min_watk, min_matk, stats_grade
  * - 支援排序：sort_by (created_at, price, stats_score), order (asc, desc)
  * - 支援分頁：page, limit (預設 20, 最大 50)
+ * - 從三個資料來源獲取物品中英文名稱（優先順序）：
+ *   1. drops-essential.json（最完整，包含中英文）
+ *   2. gacha machine JSON（轉蛋機專屬，包含中英文）
+ *   3. item-attributes-essential.json（僅英文，備用）
  * - JOIN users 和 discord_profiles 獲取賣家資訊
  *
  * 認證要求：🔒 需要認證（防止 Bot 爬取）
@@ -162,29 +233,47 @@ async function handleGET(_request: NextRequest, user: User) {
     throw new ValidationError('市場搜尋失敗')
   }
 
-  // 9. 轉換資料格式（扁平化 JOIN 結果）
-  const formattedListings = (listings || []).map((listing: any) => ({
-    id: listing.id,
-    trade_type: listing.trade_type,
-    item_id: listing.item_id,
-    quantity: listing.quantity,
-    price: listing.price,
-    wanted_item_id: listing.wanted_item_id,
-    wanted_quantity: listing.wanted_quantity,
-    status: listing.status,
-    view_count: listing.view_count,
-    interest_count: listing.interest_count,
-    created_at: listing.created_at,
-    updated_at: listing.updated_at,
-    // 物品屬性
-    item_stats: listing.item_stats || null,
-    stats_grade: listing.stats_grade || null,
-    stats_score: listing.stats_score || null,
-    seller: {
-      discord_username: listing.users?.discord_username || 'Unknown',
-      reputation_score: listing.users?.discord_profiles?.reputation_score ?? 0
+  // 9. 轉換資料格式（扁平化 JOIN 結果，並從三個資料來源查找物品中英文名稱）
+  const formattedListings = (listings || []).map((listing: any) => {
+    // 查找物品名稱（優先順序：drops → gacha → item-attributes）
+    const dropsItem = dropsItemsMap.get(listing.item_id)
+    const gachaItem = gachaItemsMap.get(listing.item_id)
+    const itemData = itemsMap.get(listing.item_id)
+
+    // 英文名稱
+    const itemName = dropsItem?.itemName || gachaItem?.itemName || itemData?.item_name || null
+
+    // 中文名稱
+    const chineseItemName = dropsItem?.chineseItemName || gachaItem?.chineseName || null
+
+    return {
+      id: listing.id,
+      trade_type: listing.trade_type,
+      item_id: listing.item_id,
+      quantity: listing.quantity,
+      price: listing.price,
+      wanted_item_id: listing.wanted_item_id,
+      wanted_quantity: listing.wanted_quantity,
+      status: listing.status,
+      view_count: listing.view_count,
+      interest_count: listing.interest_count,
+      created_at: listing.created_at,
+      updated_at: listing.updated_at,
+      // 物品屬性
+      item_stats: listing.item_stats || null,
+      stats_grade: listing.stats_grade || null,
+      stats_score: listing.stats_score || null,
+      // 物品資料（從三個資料來源查找：drops → gacha → item-attributes）
+      item: {
+        itemName: itemName,
+        chineseItemName: chineseItemName
+      },
+      seller: {
+        discord_username: listing.users?.discord_username || 'Unknown',
+        reputation_score: listing.users?.discord_profiles?.reputation_score ?? 0
+      }
     }
-  }))
+  })
 
   // 10. 計算分頁資訊
   const pagination = calculatePagination(page, limit, count || 0)

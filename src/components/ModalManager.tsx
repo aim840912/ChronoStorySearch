@@ -14,6 +14,7 @@ import { CreateListingModal } from '@/components/trade/CreateListingModal'
 import { MyListingsModal } from '@/components/trade/MyListingsModal'
 import { MarketBrowserModal } from '@/components/trade/MarketBrowserModal'
 import { InterestsModal } from '@/components/trade/InterestsModal'
+import { ListingDetailModal } from '@/components/trade/ListingDetailModal'
 import { Toast } from '@/components/Toast'
 import { useLanguage } from '@/contexts/LanguageContext'
 
@@ -30,6 +31,8 @@ interface ModalManagerProps {
   isMyListingsModalOpen: boolean
   isMarketBrowserModalOpen: boolean
   isInterestsModalOpen: boolean
+  isListingDetailModalOpen: boolean
+  selectedListingId: number | null
   selectedMonsterId: number | null | undefined
   selectedMonsterName: string
   selectedItemId: number | null
@@ -51,6 +54,7 @@ interface ModalManagerProps {
   closeMyListingsModal: () => void
   closeMarketBrowserModal: () => void
   closeInterestsModal: () => void
+  closeListingDetailModal: () => void
   goBack: () => void
 
   // Modal 開啟函數
@@ -116,6 +120,8 @@ export const ModalManager = memo(function ModalManager({
   isMyListingsModalOpen,
   isMarketBrowserModalOpen,
   isInterestsModalOpen,
+  isListingDetailModalOpen,
+  selectedListingId,
   selectedMonsterId,
   selectedMonsterName,
   selectedItemId,
@@ -135,6 +141,7 @@ export const ModalManager = memo(function ModalManager({
   closeMyListingsModal,
   closeMarketBrowserModal,
   closeInterestsModal,
+  closeListingDetailModal,
   goBack,
   openGachaModal,
   openBugReportModal,
@@ -282,6 +289,13 @@ export const ModalManager = memo(function ModalManager({
       <InterestsModal
         isOpen={isInterestsModalOpen}
         onClose={closeInterestsModal}
+      />
+
+      {/* Listing Detail Modal */}
+      <ListingDetailModal
+        isOpen={isListingDetailModalOpen}
+        onClose={closeListingDetailModal}
+        listingId={selectedListingId}
       />
 
       {/* 浮動轉蛋機按鈕 */}

@@ -4,8 +4,9 @@
  * 強制使用 Cloudflare R2 CDN 以降低 Vercel Edge Requests
  *
  * ✨ 優化功能：
- * - 應用層記憶體快取：同一 session 內圖片只下載一次
- * - Blob URL 快取：減少網路請求，提升效能
+ * - 直接返回 R2 CDN URL
+ * - 依賴瀏覽器原生 HTTP 快取機制
+ * - 減少應用層複雜度和記憶體佔用
  */
 
 import imageManifest from '@/../data/available-images.json'

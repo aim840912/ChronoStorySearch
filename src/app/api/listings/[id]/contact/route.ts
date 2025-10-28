@@ -57,7 +57,7 @@ async function handleGET(
   // 3. 驗證刊登存在且為 active 狀態
   const { data: listing, error: fetchError } = await supabaseAdmin
     .from('listings')
-    .select('id, user_id, contact_method, contact_info, status, view_count')
+    .select('id, user_id, contact_method, contact_info, seller_discord_id, status, view_count')
     .eq('id', id)
     .is('deleted_at', null)
     .single()
@@ -77,6 +77,7 @@ async function handleGET(
       {
         contact_method: listing.contact_method,
         contact_info: listing.contact_info,
+        seller_discord_id: listing.seller_discord_id || null,
         is_own_listing: true
       },
       '查看成功（自己的刊登）'
@@ -105,6 +106,7 @@ async function handleGET(
     {
       contact_method: listing.contact_method,
       contact_info: listing.contact_info,
+      seller_discord_id: listing.seller_discord_id || null,
       quota_remaining: 30 - newCount,
       is_own_listing: false
     },

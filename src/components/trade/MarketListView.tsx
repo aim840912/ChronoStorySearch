@@ -117,7 +117,7 @@ export function MarketListView({
       </div>
 
       {/* 表格頭部 - 欄位標題 */}
-      <div className="grid grid-cols-[70px_50px_1fr_60px_90px] md:grid-cols-[100px_80px_1fr_100px_140px_140px] gap-2 md:gap-4 items-center px-3 md:px-4 py-2 md:py-3 bg-gray-100 dark:bg-gray-900 border-b-2 border-gray-300 dark:border-gray-600">
+      <div className="grid grid-cols-[70px_50px_1fr_90px_60px_90px] md:grid-cols-[100px_80px_1fr_120px_100px_140px_140px] gap-2 md:gap-4 items-center px-3 md:px-4 py-2 md:py-3 bg-gray-100 dark:bg-gray-900 border-b-2 border-gray-300 dark:border-gray-600">
         <div className="text-center text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
           {t('trade.type.label') || '類型'}
         </div>
@@ -126,6 +126,9 @@ export function MarketListView({
         </div>
         <div className="text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
           {t('market.itemName') || '名稱'}
+        </div>
+        <div className="text-center text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
+          {t('market.itemStats') || '裝備素質'}
         </div>
         <div className="text-center text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
           {t('listing.quantity') || '數量'}
