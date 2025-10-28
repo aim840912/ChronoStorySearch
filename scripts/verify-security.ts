@@ -81,7 +81,7 @@ async function verifyServiceRoleAccess() {
 
   for (const table of tables) {
     try {
-      const { data, error, count } = await serviceClient
+      const { error, count } = await serviceClient
         .from(table)
         .select('*', { count: 'exact', head: true })
 
@@ -133,7 +133,6 @@ async function verifyTokenEncryption() {
 
     for (const session of sessions) {
       const accessToken = session.access_token
-      const refreshToken = session.refresh_token
 
       // 檢查是否為 Base64 加密格式
       const isEncrypted =
