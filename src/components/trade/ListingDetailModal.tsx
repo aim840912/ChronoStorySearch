@@ -202,7 +202,8 @@ export function ListingDetailModal({
   const item = listing ? getItemById(listing.item_id) : null
 
   // 根據語言選擇物品名稱
-  const getDisplayItemName = (item: Record<string, unknown>, itemId?: number) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const getDisplayItemName = (item: any, itemId?: number) => {
     if (!item) {
       return itemId ? (language === 'zh-TW' ? `物品 #${itemId}` : `Item #${itemId}`) : (language === 'zh-TW' ? '未知物品' : 'Unknown Item')
     }

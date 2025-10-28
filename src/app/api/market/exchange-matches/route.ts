@@ -72,7 +72,8 @@ async function handleGET(request: NextRequest, user: User) {
   }
 
   // 提取我想要的物品 ID 列表
-  const myWantedItemIds = (myListing.listing_wanted_items as Record<string, unknown>[]).map((item: Record<string, unknown>) => item.item_id)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const myWantedItemIds = (myListing.listing_wanted_items as any[]).map((item: any) => item.item_id)
 
   // 2. 查詢候選匹配刊登
   // 第一步：找到所有有我想要物品的刊登（對方的 item_id 在我的 wanted_items 中）
@@ -112,13 +113,16 @@ async function handleGET(request: NextRequest, user: User) {
   }
 
   // 第二步：在代碼中過濾 - 對方的 wanted_items 必須包含我的 item_id
-  const validMatches = (candidateListings || []).filter((candidate: Record<string, unknown>) => {
-    const theirWantedItemIds = (candidate.listing_wanted_items as Record<string, unknown>[] | undefined)?.map((item: Record<string, unknown>) => item.item_id) || []
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const validMatches = (candidateListings || []).filter((candidate: any) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const theirWantedItemIds = (candidate.listing_wanted_items as any[] | undefined)?.map((item: any) => item.item_id) || []
     return theirWantedItemIds.includes(myListing.item_id)
   })
 
   // 3. 計算匹配分數並格式化結果
-  const formattedMatches = validMatches.map((match: Record<string, unknown>) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const formattedMatches = validMatches.map((match: any) => {
     // 計算匹配分數 (0-100)
     // 基礎分數 40 分（雙向匹配）
     let matchScore = 40
@@ -131,10 +135,12 @@ async function handleGET(request: NextRequest, user: User) {
 
     // 數量匹配度 (最高 10 分)
     // 找到對應的 wanted_item 數量
-    const myWantedItem = (myListing.listing_wanted_items as Record<string, unknown>[]).find((item: Record<string, unknown>) => item.item_id === match.item_id)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const myWantedItem = (myListing.listing_wanted_items as any[]).find((item: any) => item.item_id === match.item_id)
     const myWantedQuantity = myWantedItem?.quantity || 1
 
-    const theirWantedItem = (match.listing_wanted_items as Record<string, unknown>[] | undefined)?.find((item: Record<string, unknown>) => item.item_id === myListing.item_id)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const theirWantedItem = (match.listing_wanted_items as any[] | undefined)?.find((item: any) => item.item_id === myListing.item_id)
     const theirWantedQuantity = theirWantedItem?.quantity || 1
 
     const myQuantityRatio = Math.min(match.quantity / myWantedQuantity, 1)
@@ -158,7 +164,8 @@ async function handleGET(request: NextRequest, user: User) {
       interest_count: match.interest_count,
       created_at: match.created_at,
       // 對方想要的物品列表
-      wanted_items: (match.listing_wanted_items as Record<string, unknown>[] | undefined)?.map((item: Record<string, unknown>) => ({
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      wanted_items: (match.listing_wanted_items as any[] | undefined)?.map((item: any) => ({
         item_id: item.item_id,
         quantity: item.quantity
       })) || [],
@@ -185,7 +192,8 @@ async function handleGET(request: NextRequest, user: User) {
         id: myListing.id,
         item_id: myListing.item_id,
         quantity: myListing.quantity,
-        wanted_items: (myListing.listing_wanted_items as Record<string, unknown>[]).map((item: Record<string, unknown>) => ({
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        wanted_items: (myListing.listing_wanted_items as any[]).map((item: any) => ({
           item_id: item.item_id,
           quantity: item.quantity
         }))

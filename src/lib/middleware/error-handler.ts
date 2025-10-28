@@ -59,10 +59,10 @@ export interface ErrorHandlerOptions {
  * ```
  */
 export function withErrorHandler(
-  handler: (request: NextRequest, ...args: unknown[]) => Promise<Response>,
+  handler: (request: NextRequest, ...args: any[]) => Promise<Response>, // eslint-disable-line @typescript-eslint/no-explicit-any
   options: ErrorHandlerOptions
 ) {
-  return async (request: NextRequest, ...args: unknown[]): Promise<Response> => {
+  return async (request: NextRequest, ...args: any[]): Promise<Response> => { // eslint-disable-line @typescript-eslint/no-explicit-any
     // 1. 產生 trace_id（用於追蹤整個請求生命週期）
     const trace_id = uuidv4()
 

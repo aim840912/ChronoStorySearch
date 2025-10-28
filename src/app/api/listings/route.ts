@@ -303,7 +303,7 @@ async function handlePOST(request: NextRequest, user: User) {
         listing_id: listing.id
       })
 
-      throw new DatabaseError('建立想要物品失敗', wantedItemsError)
+      throw new DatabaseError('建立想要物品失敗', wantedItemsError as unknown as Record<string, unknown>)
     }
 
     apiLogger.debug('想要物品建立成功', {

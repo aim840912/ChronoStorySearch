@@ -47,7 +47,8 @@ async function handleGET() {
   }
 
   // 3. 轉換資料格式（扁平化 JOIN 結果）
-  const formattedListings = (listings || []).map((listing: Record<string, unknown>) => ({
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const formattedListings = (listings || []).map((listing: any) => ({
     id: listing.id,
     trade_type: listing.trade_type,
     item_id: listing.item_id,
