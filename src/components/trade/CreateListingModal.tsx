@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { BaseModal } from '@/components/common/BaseModal'
 import { ItemSearchInput } from './ItemSearchInput'
 import { ItemStatsInput } from './ItemStatsInput'
-import { ExtendedUniqueItem, TradeType } from '@/types'
+import { ExtendedUniqueItem, TradeType, WantedItem } from '@/types'
 import { useAuth } from '@/contexts/AuthContext'
 import { useLanguage } from '@/contexts/LanguageContext'
 import type { ItemStats } from '@/types/item-stats'
@@ -35,17 +35,13 @@ interface CreateListingModalProps {
   onSuccess?: () => void
 }
 
-type ContactMethod = 'discord' | 'ingame'
-
 interface CreateListingRequest {
   trade_type: TradeType
   item_id: number
   quantity: number
-  contact_method: ContactMethod
-  contact_info: string
+  ingame_name?: string | null  // 遊戲內角色名（選填）
   price?: number
-  wanted_item_id?: number
-  wanted_quantity?: number
+  wanted_items?: WantedItem[]
   webhook_url?: string
   item_stats?: ItemStats
 }
@@ -59,25 +55,18 @@ export function CreateListingModal({
   const { t } = useLanguage()
   const [tradeType, setTradeType] = useState<TradeType>('sell')
   const [selectedItem, setSelectedItem] = useState<ExtendedUniqueItem | null>(null)
-  const [wantedItem, setWantedItem] = useState<ExtendedUniqueItem | null>(null)
+  const [wantedItems, setWantedItems] = useState<Array<{ item: ExtendedUniqueItem; quantity: number }>>([])
   const [quantity, setQuantity] = useState(1)
   const [price, setPrice] = useState<number | null>(null)
-  const [contactMethod, setContactMethod] = useState<ContactMethod>('discord')
-  const [contactInfo, setContactInfo] = useState('')
+  const [ingameName, setIngameName] = useState('')  // 遊戲內角色名（選填）
   const [webhookUrl, setWebhookUrl] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [userModifiedContact, setUserModifiedContact] = useState(false)
   const [itemStats, setItemStats] = useState<ItemStats | null>(null)
   const [showStatsInput, setShowStatsInput] = useState(false)
 
-  // 自動填充 Discord 聯絡資訊
-  useEffect(() => {
-    // 當 user 載入完成，且 contactMethod 是 discord，且用戶尚未手動修改
-    if (user && contactMethod === 'discord' && !userModifiedContact) {
-      setContactInfo(user.discord_username)
-    }
-  }, [user, contactMethod, userModifiedContact])
+  // Discord 聯絡方式（唯讀，來自 OAuth）
+  const discordContact = user?.discord_username || user?.discord_id || ''
 
   const handleSubmit = async () => {
     // 重置錯誤訊息
@@ -85,31 +74,29 @@ export function CreateListingModal({
 
     // 1. 驗證必填欄位
     if (!selectedItem) {
-      setError('請選擇物品')
+      setError(t('listing.validation.selectItem'))
       return
     }
 
-    if (!contactInfo.trim()) {
-      setError('請輸入聯絡資訊')
-      return
-    }
+    // Discord 聯絡方式不需要驗證（自動填充且必定有值）
+    // ingame_name 是選填的，不需要驗證
 
     // 驗證交易類型特定欄位
     if (tradeType === 'exchange') {
-      if (!wantedItem) {
-        setError('交換模式需要選擇想要的物品')
+      if (wantedItems.length === 0) {
+        setError(t('listing.validation.selectAtLeastOneWantedItem'))
         return
       }
     } else {
       // sell 或 buy 模式需要價格
       if (!price || price <= 0) {
-        setError('請輸入有效的價格')
+        setError(t('listing.validation.enterValidPrice'))
         return
       }
     }
 
     if (quantity <= 0) {
-      setError('數量必須大於 0')
+      setError(t('listing.validation.quantityMustBePositive'))
       return
     }
 
@@ -118,14 +105,15 @@ export function CreateListingModal({
       trade_type: tradeType,
       item_id: selectedItem.itemId,
       quantity,
-      contact_method: contactMethod,
-      contact_info: contactInfo.trim()
+      ingame_name: ingameName.trim() || null  // Discord 由後端自動處理
     }
 
     // 根據交易類型添加對應欄位
     if (tradeType === 'exchange') {
-      requestBody.wanted_item_id = wantedItem!.itemId
-      requestBody.wanted_quantity = 1 // 預設為 1
+      requestBody.wanted_items = wantedItems.map(w => ({
+        item_id: w.item.itemId,
+        quantity: w.quantity
+      }))
     } else {
       requestBody.price = price!
     }
@@ -156,15 +144,15 @@ export function CreateListingModal({
 
       if (!response.ok || !data.success) {
         // 處理錯誤回應
-        const errorMessage = data.error || '建立刊登失敗，請稍後再試'
+        const errorMessage = data.error || t('listing.error.createFailed')
 
         // 針對特定錯誤提供更詳細的說明
         if (errorMessage.includes('Discord 帳號年齡不足')) {
-          setError(`${errorMessage}\n\n提示：這是為了防止濫用刊登功能的安全措施。`)
+          setError(`${errorMessage}${t('listing.error.discordAgeTip')}`)
         } else if (errorMessage.includes('加入指定的 Discord 伺服器')) {
-          setError(`${errorMessage}\n\n請先加入我們的 Discord 社群後再建立刊登。`)
+          setError(`${errorMessage}${t('listing.error.discordServerTip')}`)
         } else if (errorMessage.includes('刊登配額上限')) {
-          setError(`${errorMessage}\n\n提示：您可以刪除已完成或不再需要的刊登來釋放配額。`)
+          setError(`${errorMessage}${t('listing.error.quotaTip')}`)
         } else {
           setError(errorMessage)
         }
@@ -180,18 +168,16 @@ export function CreateListingModal({
       // 重置表單
       setTradeType('sell')
       setSelectedItem(null)
-      setWantedItem(null)
+      setWantedItems([])
       setQuantity(1)
       setPrice(null)
-      setContactMethod('discord')
-      setContactInfo('')
+      setIngameName('')
       setWebhookUrl('')
-      setUserModifiedContact(false) // 重置手動修改標記
       setItemStats(null)
       setShowStatsInput(false)
     } catch (err) {
       console.error('Failed to create listing:', err)
-      setError('網路錯誤，請檢查您的連線')
+      setError(t('listing.error.networkError'))
     } finally {
       setIsSubmitting(false)
     }
@@ -199,7 +185,7 @@ export function CreateListingModal({
 
   return (
     <BaseModal isOpen={isOpen} onClose={onClose} maxWidth="max-w-2xl">
-      <div className="p-6 overflow-y-auto max-h-[calc(90vh-2rem)]">
+      <div className="p-6 overflow-y-auto max-h-[calc(90vh-2rem)] scrollbar-hide">
         <h2 className="text-2xl font-bold mb-4">{t('listing.create')}</h2>
 
         {/* 未登入提示 */}
@@ -267,16 +253,78 @@ export function CreateListingModal({
           />
         </div>
 
-        {/* 交換模式 - 選擇想要的物品 */}
+        {/* 交換模式 - 選擇想要的物品（多個） */}
         {tradeType === 'exchange' && (
           <div className="mb-6">
-            <label className="block mb-2 font-semibold">{t('listing.wantedItemLabel')}</label>
-            <ItemSearchInput
-              value={wantedItem}
-              onSelect={setWantedItem}
-              placeholder={t('listing.searchExchangeItemPlaceholder')}
-              excludeItemId={selectedItem?.itemId}
-            />
+            <div className="flex items-center justify-between mb-2">
+              <label className="font-semibold">{t('listing.wantedItemsLabel')}</label>
+              {wantedItems.length > 0 && (
+                <span className="text-sm text-gray-600 dark:text-gray-400">
+                  {t('listing.wantedItemsCount', { count: wantedItems.length })}
+                </span>
+              )}
+            </div>
+
+            {/* 已選擇的想要物品列表 */}
+            {wantedItems.map((wantedItem, index) => (
+              <div key={index} className="mb-3 p-3 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700">
+                <div className="flex items-center gap-3">
+                  <div className="flex-1">
+                    <p className="font-medium text-gray-900 dark:text-white">
+                      {wantedItem.item.chineseItemName || wantedItem.item.itemName}
+                    </p>
+                    <div className="flex items-center gap-2 mt-1">
+                      <label className="text-sm text-gray-600 dark:text-gray-400">
+                        {t('listing.quantityLabel')}:
+                      </label>
+                      <input
+                        type="number"
+                        min="1"
+                        value={wantedItem.quantity}
+                        onChange={(e) => {
+                          const newQuantity = parseInt(e.target.value) || 1
+                          setWantedItems(prev =>
+                            prev.map((item, i) =>
+                              i === index ? { ...item, quantity: newQuantity } : item
+                            )
+                          )
+                        }}
+                        className="w-20 px-2 py-1 border rounded dark:bg-gray-700 dark:border-gray-600"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setWantedItems(prev => prev.filter((_, i) => i !== index))
+                    }}
+                    className="px-3 py-1 text-sm bg-red-100 text-red-700 dark:bg-red-900/20 dark:text-red-400 rounded hover:bg-red-200 dark:hover:bg-red-900/40 transition-colors"
+                  >
+                    {t('listing.removeWantedItem')}
+                  </button>
+                </div>
+              </div>
+            ))}
+
+            {/* 新增想要物品按鈕與搜尋框 */}
+            {wantedItems.length < 3 ? (
+              <ItemSearchInput
+                value={null}
+                onSelect={(item) => {
+                  if (item && !wantedItems.some(w => w.item.itemId === item.itemId)) {
+                    setWantedItems(prev => [...prev, { item, quantity: 1 }])
+                  }
+                }}
+                placeholder={t('listing.searchExchangeItemPlaceholder')}
+                excludeItemId={selectedItem?.itemId}
+              />
+            ) : (
+              <div className="p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
+                <p className="text-sm text-yellow-800 dark:text-yellow-200">
+                  {t('listing.maxWantedItemsReached')}
+                </p>
+              </div>
+            )}
           </div>
         )}
 
@@ -287,7 +335,14 @@ export function CreateListingModal({
             onClick={() => setShowStatsInput(!showStatsInput)}
             className="flex items-center gap-2 mb-2 font-semibold text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
-            <span className="text-sm">{showStatsInput ? '▼' : '▶'}</span>
+            <svg
+              className={`w-4 h-4 transition-transform ${showStatsInput ? 'rotate-90' : ''}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
             {t('listing.itemStatsOptional')}
             {itemStats && (
               <span className="px-2 py-0.5 text-xs bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 rounded">
@@ -339,44 +394,49 @@ export function CreateListingModal({
           )}
         </div>
 
-        {/* 聯絡方式 */}
+        {/* Discord 聯絡方式（唯讀） */}
+        <div className="mb-4">
+          <label className="block mb-2 font-semibold text-sm text-gray-700 dark:text-gray-300">
+            {t('listing.discordContactLabel')}
+            <span className="text-red-500 ml-1">*</span>
+          </label>
+          <div className="relative">
+            <input
+              type="text"
+              value={discordContact}
+              readOnly
+              disabled
+              className="w-full px-4 py-2 border rounded-lg bg-gray-100 dark:bg-gray-700
+                         dark:border-gray-600 cursor-not-allowed opacity-75 text-gray-700 dark:text-gray-300"
+            />
+            <span className="absolute right-3 top-2.5 text-xs text-gray-500 dark:text-gray-400">
+              {t('listing.autoFilled')}
+            </span>
+          </div>
+          <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+            {t('listing.discordContactHint')}
+          </p>
+        </div>
+
+        {/* 遊戲內角色名（選填） */}
         <div className="mb-6">
-          <label className="block mb-2 font-semibold">{t('listing.contactMethodLabel')}</label>
-          <select
-            value={contactMethod}
-            onChange={(e) => {
-              const newMethod = e.target.value as ContactMethod
-              setContactMethod(newMethod)
-              // 切換聯絡方式時，重置手動修改標記
-              setUserModifiedContact(false)
-              // 如果切換到遊戲內，清空聯絡資訊
-              if (newMethod === 'ingame') {
-                setContactInfo('')
-              }
-              // 如果切換到 Discord，會由 useEffect 自動填充
-            }}
-            className="w-full px-4 py-2 border rounded-lg mb-2
-                       dark:bg-gray-800 dark:border-gray-600"
-          >
-            <option value="discord">{t('listing.contactMethodDiscord')}</option>
-            <option value="ingame">{t('listing.contactMethodIngame')}</option>
-          </select>
+          <label className="block mb-2 font-semibold text-sm text-gray-700 dark:text-gray-300">
+            {t('listing.ingameNameLabel')}
+            <span className="text-gray-400 ml-1 text-xs">({t('listing.optional')})</span>
+          </label>
           <input
             type="text"
-            value={contactInfo}
-            onChange={(e) => {
-              setContactInfo(e.target.value)
-              // 用戶手動修改時，標記為已修改
-              setUserModifiedContact(true)
-            }}
-            placeholder={
-              contactMethod === 'discord'
-                ? t('listing.contactInfoPlaceholderDiscord')
-                : t('listing.contactInfoPlaceholderIngame')
-            }
+            value={ingameName}
+            onChange={(e) => setIngameName(e.target.value)}
+            placeholder={t('listing.ingameNamePlaceholder')}
+            maxLength={50}
             className="w-full px-4 py-2 border rounded-lg
-                       dark:bg-gray-800 dark:border-gray-600"
+                       dark:bg-gray-800 dark:border-gray-600
+                       focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           />
+          <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+            {t('listing.ingameNameHint')}
+          </p>
         </div>
 
         {/* 錯誤訊息 */}

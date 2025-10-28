@@ -39,7 +39,7 @@ export default function Home() {
   const [marketFilter, setMarketFilter] = useState<MarketFilterOptions>({
     tradeTypes: [],
     priceRange: { min: null, max: null },
-    itemStatsFilter: {},
+    itemStatsFilter: [],
     sortBy: 'created_at',
     sortOrder: 'desc'
   })
@@ -450,7 +450,6 @@ export default function Home() {
           onAdvancedFilterChange={setAdvancedFilter}
           onOpenCreateListing={modals.openCreateListingModal}
           onOpenMyListings={modals.openMyListingsModal}
-          onOpenMarketBrowser={modals.openMarketBrowserModal}
           onOpenInterests={modals.openInterestsModal}
           marketFilter={marketFilter}
           onMarketFilterChange={setMarketFilter}
@@ -505,7 +504,6 @@ export default function Home() {
         isAccuracyCalculatorOpen={modals.isAccuracyCalculatorOpen}
         isCreateListingModalOpen={modals.isCreateListingModalOpen}
         isMyListingsModalOpen={modals.isMyListingsModalOpen}
-        isMarketBrowserModalOpen={modals.isMarketBrowserModalOpen}
         isInterestsModalOpen={modals.isInterestsModalOpen}
         isListingDetailModalOpen={modals.isListingDetailModalOpen}
         selectedListingId={modals.selectedListingId}
@@ -526,7 +524,6 @@ export default function Home() {
         closeAccuracyCalculator={modals.closeAccuracyCalculator}
         closeCreateListingModal={modals.closeCreateListingModal}
         closeMyListingsModal={modals.closeMyListingsModal}
-        closeMarketBrowserModal={modals.closeMarketBrowserModal}
         closeInterestsModal={modals.closeInterestsModal}
         closeListingDetailModal={modals.closeListingDetailModal}
         goBack={modals.goBack}

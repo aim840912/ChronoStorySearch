@@ -1,8 +1,9 @@
 'use client'
 
 import { useLanguage } from '@/contexts/LanguageContext'
-import type { MarketFilterOptions, TradeType } from '@/types'
-import type { StatsGrade } from '@/types/item-stats'
+import type { MarketFilterOptions, TradeType, StatFilterKey, ItemStatFilter } from '@/types'
+import { STAT_FILTER_OPTIONS } from '@/types'
+import { ItemStatFilterRow } from './ItemStatFilterRow'
 
 interface MarketFilterPanelProps {
   filter: MarketFilterOptions
@@ -40,50 +41,56 @@ export function MarketFilterPanel({
     onFilterChange({ ...filter, tradeTypes: newTypes })
   }
 
-  // 處理價格範圍變更
-  const handlePriceChange = (type: 'min' | 'max', value: string) => {
-    const numValue = value === '' ? null : parseInt(value, 10)
+  // 添加新屬性篩選項
+  const handleAddStatFilter = () => {
+    const availableStats = getAvailableStats()
+    if (availableStats.length === 0) return
 
-    if (numValue !== null && isNaN(numValue)) return
+    const newFilter: ItemStatFilter = {
+      id: `stat_${Date.now()}`,
+      statKey: availableStats[0],
+      minValue: null,
+      maxValue: null
+    }
 
     onFilterChange({
       ...filter,
-      priceRange: {
-        ...filter.priceRange,
-        [type]: numValue
-      }
+      itemStatsFilter: [...filter.itemStatsFilter, newFilter]
     })
   }
 
-  // 處理物品屬性變更
-  const handleStatsChange = (key: 'min_watk' | 'min_matk' | 'min_wdef', value: string) => {
-    const numValue = value === '' ? undefined : parseInt(value, 10)
-
-    if (numValue !== undefined && isNaN(numValue)) return
-
+  // 更新屬性篩選項
+  const handleStatFilterChange = (id: string, updates: Partial<ItemStatFilter>) => {
     onFilterChange({
       ...filter,
-      itemStatsFilter: {
-        ...filter.itemStatsFilter,
-        [key]: numValue
-      }
+      itemStatsFilter: filter.itemStatsFilter.map(f =>
+        f.id === id ? { ...f, ...updates } : f
+      )
     })
   }
 
-  // 處理素質等級切換
-  const handleGradeToggle = (grade: StatsGrade) => {
-    const currentGrades = filter.itemStatsFilter.stats_grade || []
-    const newGrades = currentGrades.includes(grade)
-      ? currentGrades.filter(g => g !== grade)
-      : [...currentGrades, grade]
-
+  // 移除屬性篩選項
+  const handleRemoveStatFilter = (id: string) => {
     onFilterChange({
       ...filter,
-      itemStatsFilter: {
-        ...filter.itemStatsFilter,
-        stats_grade: newGrades.length > 0 ? newGrades : undefined
-      }
+      itemStatsFilter: filter.itemStatsFilter.filter(f => f.id !== id)
     })
+  }
+
+  // 清空所有屬性篩選項
+  const handleClearAllStats = () => {
+    onFilterChange({
+      ...filter,
+      itemStatsFilter: []
+    })
+  }
+
+  // 獲取可用屬性（排除已選擇的）
+  const getAvailableStats = (): StatFilterKey[] => {
+    const usedStats = new Set(filter.itemStatsFilter.map(f => f.statKey))
+    return (Object.keys(STAT_FILTER_OPTIONS) as StatFilterKey[]).filter(
+      key => !usedStats.has(key)
+    )
   }
 
   // 處理排序變更
@@ -100,167 +107,151 @@ export function MarketFilterPanel({
       >
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
 
-          {/* 交易類型篩選 */}
-          <div className="mb-6">
-            <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
-              {t('market.filters.tradeType')}
-              <span className="text-xs font-normal text-gray-500 dark:text-gray-400 ml-2">
-                ({t('filter.multiSelect')})
-              </span>
-            </h4>
-            <div className="flex flex-wrap gap-2">
-              {(['sell', 'buy', 'exchange'] as TradeType[]).map((type) => (
-                <button
-                  key={type}
-                  onClick={() => handleTradeTypeToggle(type)}
-                  className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
-                    filter.tradeTypes.includes(type)
-                      ? 'bg-purple-500 text-white shadow-md'
-                      : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                  }`}
-                >
-                  {t(`trade.type.${type}`)}
-                  {filter.tradeTypes.includes(type) && (
-                    <svg className="inline-block w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  )}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* 價格範圍篩選 */}
-          <div className="mb-6">
-            <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
-              {t('market.filters.priceRange')}
-            </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-xs text-gray-600 dark:text-gray-400 mb-1">
-                  {t('market.filters.minPrice')}
-                </label>
-                <input
-                  type="number"
-                  min="0"
-                  value={filter.priceRange.min || ''}
-                  onChange={(e) => handlePriceChange('min', e.target.value)}
-                  placeholder="0"
-                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                />
-              </div>
-              <div>
-                <label className="block text-xs text-gray-600 dark:text-gray-400 mb-1">
-                  {t('market.filters.maxPrice')}
-                </label>
-                <input
-                  type="number"
-                  min="0"
-                  value={filter.priceRange.max || ''}
-                  onChange={(e) => handlePriceChange('max', e.target.value)}
-                  placeholder="999999999"
-                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* 物品屬性篩選 */}
-          <div className="mb-6">
-            <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
-              {t('market.filters.itemStats')}
-            </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-3">
-              <div>
-                <label className="block text-xs text-gray-600 dark:text-gray-400 mb-1">
-                  {t('itemStats.filter.minWatk')}
-                </label>
-                <input
-                  type="number"
-                  min="0"
-                  value={filter.itemStatsFilter.min_watk || ''}
-                  onChange={(e) => handleStatsChange('min_watk', e.target.value)}
-                  placeholder="0"
-                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                />
-              </div>
-              <div>
-                <label className="block text-xs text-gray-600 dark:text-gray-400 mb-1">
-                  {t('itemStats.filter.minMatk')}
-                </label>
-                <input
-                  type="number"
-                  min="0"
-                  value={filter.itemStatsFilter.min_matk || ''}
-                  onChange={(e) => handleStatsChange('min_matk', e.target.value)}
-                  placeholder="0"
-                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                />
-              </div>
-              <div>
-                <label className="block text-xs text-gray-600 dark:text-gray-400 mb-1">
-                  {t('itemStats.filter.grade')}
-                </label>
-                <div className="flex flex-wrap gap-1">
-                  {(['S', 'A', 'B', 'C'] as StatsGrade[]).map((grade) => (
-                    <button
-                      key={grade}
-                      onClick={() => handleGradeToggle(grade)}
-                      className={`px-3 py-1 rounded text-xs font-medium transition-all ${
-                        filter.itemStatsFilter.stats_grade?.includes(grade)
-                          ? 'bg-indigo-500 text-white'
-                          : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
-                      }`}
-                    >
-                      {grade}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* 排序方式 */}
-          <div>
-            <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
-              {t('market.filters.sortBy')}
-            </h4>
-            <div className="flex flex-wrap gap-2">
-              {[
-                { value: 'created_at' as const, label: t('market.filters.sortBy.createdAt') },
-                { value: 'price' as const, label: t('market.filters.sortBy.price') },
-                { value: 'stats_score' as const, label: t('market.filters.sortBy.statsScore') }
-              ].map((option) => (
-                <div key={option.value} className="flex items-center gap-1">
+          {/* 交易類型 + 排序方式 (同一列) */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+            {/* 交易類型篩選 */}
+            <div>
+              <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                {t('market.filters.tradeType')}
+                <span className="text-xs font-normal text-gray-500 dark:text-gray-400 ml-2">
+                  ({t('filter.multiSelect')})
+                </span>
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {(['sell', 'buy', 'exchange'] as TradeType[]).map((type) => (
                   <button
-                    onClick={() => handleSortChange(option.value, filter.sortOrder)}
+                    key={type}
+                    onClick={() => handleTradeTypeToggle(type)}
                     className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
-                      filter.sortBy === option.value
-                        ? 'bg-blue-500 text-white shadow-md'
+                      filter.tradeTypes.includes(type)
+                        ? 'bg-purple-500 text-white shadow-md'
                         : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                     }`}
                   >
-                    {option.label}
-                  </button>
-                  {filter.sortBy === option.value && (
-                    <button
-                      onClick={() => handleSortChange(option.value, filter.sortOrder === 'asc' ? 'desc' : 'asc')}
-                      className="p-2 rounded-lg bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors"
-                      title={filter.sortOrder === 'asc' ? t('market.filters.sortOrder.asc') : t('market.filters.sortOrder.desc')}
-                    >
-                      <svg
-                        className={`w-4 h-4 transition-transform ${filter.sortOrder === 'desc' ? 'rotate-180' : ''}`}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                    {t(`trade.type.${type}`)}
+                    {filter.tradeTypes.includes(type) && (
+                      <svg className="inline-block w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                    </button>
-                  )}
-                </div>
-              ))}
+                    )}
+                  </button>
+                ))}
+              </div>
             </div>
+
+            {/* 排序方式 */}
+            <div>
+              <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                {t('market.filters.sortBy')}
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  { value: 'created_at' as const, label: t('market.filters.sortBy.createdAt') },
+                  { value: 'price' as const, label: t('market.filters.sortBy.price') }
+                ].map((option) => (
+                  <div key={option.value} className="flex items-center gap-1">
+                    <button
+                      onClick={() => handleSortChange(option.value, filter.sortOrder)}
+                      className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
+                        filter.sortBy === option.value
+                          ? 'bg-blue-500 text-white shadow-md'
+                          : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                      }`}
+                    >
+                      {option.label}
+                    </button>
+                    {filter.sortBy === option.value && (
+                      <button
+                        onClick={() => handleSortChange(option.value, filter.sortOrder === 'asc' ? 'desc' : 'asc')}
+                        className="p-2 rounded-lg bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors"
+                        title={filter.sortOrder === 'asc' ? t('market.filters.sortOrder.asc') : t('market.filters.sortOrder.desc')}
+                      >
+                        <svg
+                          className={`w-4 h-4 transition-transform ${filter.sortOrder === 'desc' ? 'rotate-180' : ''}`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                        </svg>
+                      </button>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* 物品屬性篩選 - 動態版本 */}
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                {t('market.filters.itemStats')}
+              </h4>
+              {filter.itemStatsFilter.length > 0 && (
+                <button
+                  onClick={handleClearAllStats}
+                  className="text-xs text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300
+                             font-medium transition-colors"
+                >
+                  {t('itemStats.clearAll')}
+                </button>
+              )}
+            </div>
+
+            {/* 已添加的篩選項 */}
+            {filter.itemStatsFilter.length > 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+                {filter.itemStatsFilter.map((statFilter) => {
+                  // 確保當前選擇的屬性在可用列表中
+                  const availableStats = getAvailableStats()
+                  const currentAvailableStats = [statFilter.statKey, ...availableStats]
+
+                  return (
+                    <ItemStatFilterRow
+                      key={statFilter.id}
+                      filter={statFilter}
+                      onChange={handleStatFilterChange}
+                      onRemove={handleRemoveStatFilter}
+                      availableStats={currentAvailableStats}
+                      statOptions={STAT_FILTER_OPTIONS}
+                    />
+                  )
+                })}
+              </div>
+            )}
+
+            {/* 添加新篩選項按鈕 */}
+            {filter.itemStatsFilter.length < 5 && (
+              <button
+                onClick={handleAddStatFilter}
+                disabled={getAvailableStats().length === 0}
+                className="w-full py-2 border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-lg
+                           text-sm font-medium text-gray-600 dark:text-gray-400
+                           hover:border-purple-500 hover:bg-purple-50 hover:text-purple-600
+                           dark:hover:border-purple-400 dark:hover:bg-purple-900/20 dark:hover:text-purple-400
+                           disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:border-gray-300
+                           dark:disabled:hover:border-gray-600 disabled:hover:bg-transparent
+                           transition-colors flex items-center justify-center gap-2"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                </svg>
+                {t('market.filters.addStatFilter')}
+                {filter.itemStatsFilter.length > 0 && (
+                  <span className="text-xs opacity-70">
+                    ({filter.itemStatsFilter.length}/5)
+                  </span>
+                )}
+              </button>
+            )}
+
+            {/* 達到上限提示 */}
+            {filter.itemStatsFilter.length >= 5 && (
+              <p className="text-xs text-gray-500 dark:text-gray-400 text-center mt-2">
+                {t('market.filters.maxFiltersReached')}
+              </p>
+            )}
           </div>
         </div>
       </div>

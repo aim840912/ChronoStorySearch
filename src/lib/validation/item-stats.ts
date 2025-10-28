@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import type { ItemStats, StatsGrade } from '@/types/item-stats'
+import type { ItemStats } from '@/types/item-stats'
 
 /**
  * 物品屬性驗證 Schema
@@ -105,95 +105,16 @@ export const ItemStatsSchema = z
   )
 
 /**
- * 計算物品素質等級
+ * 驗證物品屬性
  *
- * 演算法：
- * 1. 收集所有有效的「實際值/最大值」比例
- * 2. 計算平均比例（0-1）
- * 3. 轉換為百分比分數（0-100）
- * 4. 根據分數區間判定等級（S/A/B/C/D/F）
+ * 這個函數會驗證屬性是否符合 Schema
  *
  * @param stats 物品屬性
- * @returns 素質等級與分數
+ * @returns 驗證結果
  */
-export function calculateStatsGrade(stats: ItemStats): {
-  grade: StatsGrade
-  score: number
-} {
-  // 收集所有有效的屬性比例
-  const ratios: number[] = []
-
-  const statPairs = [
-    { actual: stats.watk, max: stats.watk_max },
-    { actual: stats.matk, max: stats.matk_max },
-    { actual: stats.wdef, max: stats.wdef_max },
-    { actual: stats.mdef, max: stats.mdef_max },
-    { actual: stats.str, max: stats.str_max },
-    { actual: stats.dex, max: stats.dex_max },
-    { actual: stats.int, max: stats.int_max },
-    { actual: stats.luk, max: stats.luk_max },
-    { actual: stats.hp, max: stats.hp_max },
-    { actual: stats.mp, max: stats.mp_max },
-    { actual: stats.acc, max: stats.acc_max },
-    { actual: stats.avoid, max: stats.avoid_max },
-    { actual: stats.speed, max: stats.speed_max },
-    { actual: stats.jump, max: stats.jump_max },
-  ]
-
-  for (const { actual, max } of statPairs) {
-    // 只計算同時有實際值和最大值的屬性
-    if (actual !== undefined && max !== undefined && max > 0) {
-      ratios.push(actual / max)
-    }
-  }
-
-  // 如果沒有任何有效屬性，返回 F 等級
-  if (ratios.length === 0) {
-    return { grade: 'F', score: 0 }
-  }
-
-  // 計算平均比例
-  const averageRatio = ratios.reduce((sum, r) => sum + r, 0) / ratios.length
-
-  // 轉換為百分比分數（四捨五入到整數）
-  const score = Math.round(averageRatio * 100)
-
-  // 根據分數判定等級
-  let grade: StatsGrade
-  if (score >= 95) {
-    grade = 'S'
-  } else if (score >= 85) {
-    grade = 'A'
-  } else if (score >= 70) {
-    grade = 'B'
-  } else if (score >= 50) {
-    grade = 'C'
-  } else if (score >= 30) {
-    grade = 'D'
-  } else {
-    grade = 'F'
-  }
-
-  return { grade, score }
-}
-
-/**
- * 驗證並計算物品屬性
- *
- * 這個函數會：
- * 1. 驗證屬性是否符合 Schema
- * 2. 自動計算素質等級和分數
- *
- * @param stats 物品屬性
- * @returns 驗證結果和計算後的等級/分數
- */
-export function validateAndCalculateStats(stats: ItemStats): {
+export function validateItemStats(stats: ItemStats): {
   success: boolean
-  data?: {
-    stats: ItemStats
-    grade: StatsGrade
-    score: number
-  }
+  data?: ItemStats
   error?: string
 } {
   // 驗證 Schema
@@ -206,15 +127,36 @@ export function validateAndCalculateStats(stats: ItemStats): {
     }
   }
 
-  // 計算等級和分數
-  const { grade, score } = calculateStatsGrade(result.data)
+  return {
+    success: true,
+    data: result.data,
+  }
+}
+
+/**
+ * 向後相容：保留舊的函數名稱
+ * @deprecated 請改用 validateItemStats
+ */
+export function validateAndCalculateStats(stats: ItemStats): {
+  success: boolean
+  data?: {
+    stats: ItemStats
+  }
+  error?: string
+} {
+  const result = validateItemStats(stats)
+
+  if (!result.success) {
+    return {
+      success: false,
+      error: result.error,
+    }
+  }
 
   return {
     success: true,
     data: {
-      stats: result.data,
-      grade,
-      score,
+      stats: result.data!,
     },
   }
 }

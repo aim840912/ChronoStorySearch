@@ -56,11 +56,17 @@ export function MarketListItem({ listing, onClick }: MarketListItemProps) {
   // 格式化價格或交換資訊
   const getPriceDisplay = () => {
     if (listing.trade_type === 'exchange') {
+      const wantedItemsCount = listing.wanted_items?.length || 0
       return (
         <div className="text-sm text-gray-600 dark:text-gray-400">
           <span className="font-medium text-purple-600 dark:text-purple-400">
             {t('listing.exchange')}
           </span>
+          {wantedItemsCount > 0 && (
+            <span className="text-xs text-gray-500 dark:text-gray-400 ml-1">
+              ({wantedItemsCount})
+            </span>
+          )}
         </div>
       )
     }

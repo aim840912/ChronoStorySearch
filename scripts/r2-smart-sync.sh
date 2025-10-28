@@ -74,6 +74,7 @@ START_TIME=$(date +%s)
 # --retries=3: 限制重試次數（避免無限重試）
 # --stats=10s: 每 10 秒顯示統計
 ~/rclone sync $IMAGES_DIR r2:maplestory-images/images \
+    --header "Cache-Control: public, max-age=31536000, immutable" \
     --size-only \
     --progress \
     --transfers=4 \

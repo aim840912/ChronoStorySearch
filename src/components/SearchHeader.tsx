@@ -47,7 +47,6 @@ interface SearchHeaderProps {
   // 交易系統 Modal 開啟函數
   onOpenCreateListing: () => void
   onOpenMyListings: () => void
-  onOpenMarketBrowser: () => void
   onOpenInterests: () => void
 
   // 市場篩選相關
@@ -88,7 +87,6 @@ export const SearchHeader = memo(function SearchHeader({
   onAdvancedFilterChange,
   onOpenCreateListing,
   onOpenMyListings,
-  onOpenMarketBrowser,
   onOpenInterests,
   marketFilter,
   onMarketFilterChange,
@@ -144,7 +142,6 @@ export const SearchHeader = memo(function SearchHeader({
         user={user}
         onOpenCreateListing={onOpenCreateListing}
         onOpenMyListings={onOpenMyListings}
-        onOpenMarketBrowser={onOpenMarketBrowser}
         onOpenInterests={onOpenInterests}
       />
 

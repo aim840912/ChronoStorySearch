@@ -1,9 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import type { ItemStats, StatsGrade } from '@/types/item-stats'
-import { STAT_LABELS_ZH, STAT_LABELS_EN, STATS_GRADE_INFO } from '@/types/item-stats'
-import { calculateStatsGrade } from '@/lib/validation/item-stats'
+import type { ItemStats } from '@/types/item-stats'
+import { STAT_LABELS_ZH, STAT_LABELS_EN } from '@/types/item-stats'
 
 interface ItemStatsInputProps {
   value: ItemStats | null
@@ -18,7 +17,6 @@ interface ItemStatsInputProps {
  *
  * 功能：
  * - 提供攻擊、防禦、基礎屬性等輸入欄位
- * - 實時計算並顯示素質等級 (S/A/B/C/D/F)
  * - 支援清空所有屬性
  * - 支援中英雙語
  */
@@ -30,40 +28,22 @@ export function ItemStatsInput({
   simpleMode = false
 }: ItemStatsInputProps) {
   const [stats, setStats] = useState<ItemStats>(value || {})
-  const [grade, setGrade] = useState<StatsGrade | null>(null)
-  const [score, setScore] = useState<number | null>(null)
 
   const labels = locale === 'zh-TW' ? STAT_LABELS_ZH : STAT_LABELS_EN
 
-  // 當 stats 改變時,重新計算等級
+  // 當 stats 改變時更新
   useEffect(() => {
     const hasValidStats = Object.keys(stats).some((key) => {
       const value = stats[key as keyof ItemStats]
       return typeof value === 'number' && value > 0
     })
 
-    if (simpleMode) {
-      // 簡易模式：不計算等級
-      if (hasValidStats) {
-        onChange(stats)
-      } else {
-        onChange(null)
-      }
-      return
-    }
-
-    // 完整模式：計算等級
     if (hasValidStats) {
-      const { grade: newGrade, score: newScore } = calculateStatsGrade(stats)
-      setGrade(newGrade)
-      setScore(newScore)
       onChange(stats)
     } else {
-      setGrade(null)
-      setScore(null)
       onChange(null)
     }
-  }, [stats, onChange, simpleMode])
+  }, [stats, onChange])
 
   // 更新單一屬性
   const updateStat = (key: keyof ItemStats, valueStr: string) => {
@@ -87,8 +67,6 @@ export function ItemStatsInput({
   // 清空所有屬性
   const clearAll = () => {
     setStats({})
-    setGrade(null)
-    setScore(null)
     onChange(null)
   }
 
@@ -165,42 +143,14 @@ export function ItemStatsInput({
         </button>
       </div>
 
-      {/* 素質等級顯示 - 僅完整模式 */}
-      {!simpleMode && grade && score !== null && (
-        <div className="p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50">
-          <div className="flex items-center gap-2">
-            <span className="text-sm text-gray-600 dark:text-gray-400">
-              {locale === 'zh-TW' ? '素質等級:' : 'Grade:'}
-            </span>
-            <span
-              className={`px-2 py-1 text-sm font-bold rounded ${STATS_GRADE_INFO[grade].color}`}
-            >
-              {grade}
-            </span>
-            <span className="text-sm text-gray-500 dark:text-gray-400">
-              ({score}% - {locale === 'zh-TW' ? STATS_GRADE_INFO[grade].label_zh : STATS_GRADE_INFO[grade].label_en})
-            </span>
-          </div>
-        </div>
-      )}
-
-      {/* 攻擊屬性 */}
+      {/* 攻擊/防禦屬性 */}
       <div>
         <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-          {locale === 'zh-TW' ? '攻擊屬性' : 'Attack'}
+          {locale === 'zh-TW' ? '攻擊/防禦屬性' : 'Attack/Defense'}
         </h4>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-4 gap-3">
           {renderStatPair('watk', 'watk_max', labels.watk)}
           {renderStatPair('matk', 'matk_max', labels.matk)}
-        </div>
-      </div>
-
-      {/* 防禦屬性 */}
-      <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-          {locale === 'zh-TW' ? '防禦屬性' : 'Defense'}
-        </h4>
-        <div className="grid grid-cols-2 gap-3">
           {renderStatPair('wdef', 'wdef_max', labels.wdef)}
           {renderStatPair('mdef', 'mdef_max', labels.mdef)}
         </div>
@@ -211,7 +161,7 @@ export function ItemStatsInput({
         <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
           {locale === 'zh-TW' ? '基礎屬性' : 'Primary Stats'}
         </h4>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-4 gap-3">
           {renderStatPair('str', 'str_max', labels.str)}
           {renderStatPair('dex', 'dex_max', labels.dex)}
           {renderStatPair('int', 'int_max', labels.int)}
@@ -219,45 +169,27 @@ export function ItemStatsInput({
         </div>
       </div>
 
-      {/* 生命/魔力 */}
+      {/* 生命/魔力/命中/迴避 */}
       <div>
         <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-          {locale === 'zh-TW' ? '生命/魔力' : 'HP/MP'}
+          {locale === 'zh-TW' ? '生命/魔力/命中/迴避' : 'HP/MP/Acc/Avoid'}
         </h4>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-4 gap-3">
           {renderStatPair('hp', 'hp_max', labels.hp)}
           {renderStatPair('mp', 'mp_max', labels.mp)}
-        </div>
-      </div>
-
-      {/* 命中/迴避 */}
-      <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-          {locale === 'zh-TW' ? '命中/迴避' : 'Accuracy/Avoid'}
-        </h4>
-        <div className="grid grid-cols-2 gap-3">
           {renderStatPair('acc', 'acc_max', labels.acc)}
           {renderStatPair('avoid', 'avoid_max', labels.avoid)}
         </div>
       </div>
 
-      {/* 移動/跳躍 */}
+      {/* 移動/跳躍/升級 */}
       <div>
         <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-          {locale === 'zh-TW' ? '移動/跳躍' : 'Speed/Jump'}
+          {locale === 'zh-TW' ? '移動/跳躍/升級' : 'Speed/Jump/Upgrade'}
         </h4>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-4 gap-3">
           {renderStatPair('speed', 'speed_max', labels.speed)}
           {renderStatPair('jump', 'jump_max', labels.jump)}
-        </div>
-      </div>
-
-      {/* 升級資訊 */}
-      <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-          {locale === 'zh-TW' ? '升級資訊' : 'Upgrade Info'}
-        </h4>
-        <div className="grid grid-cols-2 gap-3">
           <div className="flex flex-col gap-1">
             <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
               {labels.slots}
@@ -269,7 +201,7 @@ export function ItemStatsInput({
               value={(stats.slots as number) ?? ''}
               onChange={(e) => updateStat('slots', e.target.value)}
               placeholder="0"
-              className="w-20 px-2 py-1 text-sm border border-gray-300 rounded dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+              className="w-24 px-2 py-1 text-sm border border-gray-300 rounded dark:border-gray-600 dark:bg-gray-800 dark:text-white"
             />
           </div>
           <div className="flex flex-col gap-1">
@@ -283,7 +215,7 @@ export function ItemStatsInput({
               value={(stats.scrolled as number) ?? ''}
               onChange={(e) => updateStat('scrolled', e.target.value)}
               placeholder="0"
-              className="w-20 px-2 py-1 text-sm border border-gray-300 rounded dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+              className="w-24 px-2 py-1 text-sm border border-gray-300 rounded dark:border-gray-600 dark:bg-gray-800 dark:text-white"
             />
           </div>
         </div>

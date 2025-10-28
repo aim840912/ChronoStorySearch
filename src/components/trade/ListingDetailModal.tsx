@@ -9,7 +9,8 @@ import { useAuth } from '@/contexts/AuthContext'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { ExchangeMatchModal } from './ExchangeMatchModal'
 import { StatsComparisonCard } from './StatsComparisonCard'
-import type { ItemStats, StatsGrade } from '@/types/item-stats'
+import type { ItemStats } from '@/types/item-stats'
+import type { WantedItem } from '@/types'
 
 /**
  * 刊登詳情 Modal
@@ -42,9 +43,10 @@ interface ListingDetail {
   item_id: number
   quantity: number
   price?: number
-  wanted_item_id?: number
-  wanted_quantity?: number
-  contact_method: string
+  wanted_items?: WantedItem[]
+  discord_contact: string      // Discord 聯絡方式（必填）
+  ingame_name: string | null   // 遊戲內角色名（選填）
+  seller_discord_id: string | null  // Discord User ID（用於 Deep Link）
   status: string
   view_count: number
   interest_count: number
@@ -56,14 +58,12 @@ interface ListingDetail {
   is_own_listing: boolean
   // 裝備屬性
   item_stats?: ItemStats | null
-  stats_grade?: StatsGrade | null
-  stats_score?: number | null
 }
 
 interface ContactInfo {
-  contact_method: string
-  contact_info: string
-  seller_discord_id?: string | null
+  discord: string              // Discord 聯絡方式（必定有值）
+  ingame: string | null        // 遊戲內角色名（選填）
+  discordId?: string | null    // Discord User ID（用於 Deep Link）
   quota_remaining: number
   is_own_listing: boolean
 }
@@ -200,7 +200,6 @@ export function ListingDetailModal({
   }
 
   const item = listing ? getItemById(listing.item_id) : null
-  const wantedItem = listing?.wanted_item_id ? getItemById(listing.wanted_item_id) : null
 
   // 根據語言選擇物品名稱
   const getDisplayItemName = (item: any, itemId?: number) => {
@@ -241,67 +240,132 @@ export function ListingDetailModal({
           </div>
         ) : listing ? (
           <div className="space-y-6">
-            {/* 物品資訊 */}
-            <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
-              <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.itemInfo')}</h3>
-              <div className="flex items-center gap-4">
-                <img
-                  src={getItemImageUrl(listing.item_id)}
-                  alt={item?.itemName || String(listing.item_id)}
-                  className="w-20 h-20 object-contain"
-                  onError={(e) => {
-                    e.currentTarget.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="80" height="80"%3E%3Crect width="80" height="80" fill="%23ddd"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999"%3E?%3C/text%3E%3C/svg%3E'
-                  }}
-                />
-                <div className="flex-1">
-                  <p className="text-xl font-semibold text-gray-900 dark:text-white">
-                    {getDisplayItemName(item, listing.item_id)}
-                  </p>
-                  <p className="text-gray-600 dark:text-gray-400">{t('listing.quantity')}: {listing.quantity}</p>
+            {/* 交換模式：雙向箭頭顯示 */}
+            {listing.trade_type === 'exchange' ? (
+              <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
+                <h3 className="font-semibold mb-4 text-gray-900 dark:text-white">{t('listing.exchangeFor')}</h3>
 
-                  {/* 價格或交換資訊 */}
-                  {listing.trade_type === 'exchange' && wantedItem ? (
-                    <div className="mt-2 p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
-                      <div className="flex items-center gap-2 text-purple-700 dark:text-purple-300">
-                        <span className="font-medium">{t('listing.exchangeFor')}:</span>
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                        </svg>
-                      </div>
-                      <p className="mt-1 font-semibold text-gray-900 dark:text-white">
-                        {getDisplayItemName(wantedItem)}
-                      </p>
-                      {listing.wanted_quantity && (
-                        <p className="text-sm text-gray-600 dark:text-gray-400">
-                          {t('listing.quantity')}: {listing.wanted_quantity}
+                {/* 我提供的物品 */}
+                <div className="mb-4">
+                  <div className="flex items-center gap-2 mb-2 text-purple-700 dark:text-purple-300">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                    </svg>
+                    <span className="font-medium">{t('listing.iProvide')}</span>
+                  </div>
+                  <div className="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
+                    <div className="flex items-center gap-3">
+                      <img
+                        src={getItemImageUrl(listing.item_id)}
+                        alt={item?.itemName || String(listing.item_id)}
+                        className="w-16 h-16 object-contain"
+                        onError={(e) => {
+                          e.currentTarget.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="64" height="64"%3E%3Crect width="64" height="64" fill="%23ddd"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999"%3E?%3C/text%3E%3C/svg%3E'
+                        }}
+                      />
+                      <div className="flex-1">
+                        <p className="text-lg font-semibold text-gray-900 dark:text-white">
+                          {getDisplayItemName(item, listing.item_id)}
                         </p>
-                      )}
+                        <p className="text-sm text-gray-600 dark:text-gray-400">
+                          {t('listing.quantity')}: {listing.quantity}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 雙向箭頭 */}
+                <div className="flex justify-center my-3">
+                  <svg className="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                  </svg>
+                </div>
+
+                {/* 我想要的物品 */}
+                <div>
+                  <div className="flex items-center gap-2 mb-2 text-purple-700 dark:text-purple-300">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <span className="font-medium">{t('listing.iWant')}</span>
+                  </div>
+                  {listing.wanted_items && listing.wanted_items.length > 0 ? (
+                    <div className="space-y-2">
+                      {listing.wanted_items.map((wantedItem, index) => {
+                        const wantedItemData = getItemById(wantedItem.item_id)
+                        return (
+                          <div key={index} className="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                            <p className="font-semibold text-gray-900 dark:text-white">
+                              {getDisplayItemName(wantedItemData, wantedItem.item_id)}
+                            </p>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">
+                              {t('listing.quantity')}: {wantedItem.quantity}
+                            </p>
+                          </div>
+                        )
+                      })}
                     </div>
                   ) : (
-                    <p className="mt-2 text-2xl font-bold text-blue-600 dark:text-blue-400">
-                      {listing.price?.toLocaleString()} {t('listing.meso')}
-                    </p>
+                    <div className="p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-800">
+                      <p className="text-sm text-yellow-800 dark:text-yellow-200">
+                        {language === 'zh-TW' ? '此交換刊登尚未設定想要的物品' : 'No wanted items specified for this exchange listing'}
+                      </p>
+                    </div>
                   )}
+                </div>
 
-                  {/* 交易類型標籤 */}
-                  <div className="mt-2">
-                    <span className={`inline-block px-2 py-1 text-xs rounded ${
-                      listing.trade_type === 'sell' ? 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400' :
-                      listing.trade_type === 'buy' ? 'bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400' :
-                      'bg-purple-100 text-purple-800 dark:bg-purple-900/20 dark:text-purple-400'
-                    }`}>
-                      {listing.trade_type === 'sell' ? t('trade.type.sell') : listing.trade_type === 'buy' ? t('trade.type.buy') : t('trade.type.exchange')}
-                    </span>
-                  </div>
+                {/* 統計資訊 */}
+                <div className="flex gap-4 mt-4 pt-4 border-t border-gray-200 dark:border-gray-700 text-sm text-gray-500 dark:text-gray-400">
+                  <span>{t('listing.viewCount')}: {listing.view_count}</span>
+                  <span>{t('listing.interestCount')}: {listing.interest_count}</span>
+                </div>
+              </div>
+            ) : (
+              /* 買賣模式：一般物品資訊 */
+              <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
+                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.itemInfo')}</h3>
+                <div className="flex items-center gap-4">
+                  <img
+                    src={getItemImageUrl(listing.item_id)}
+                    alt={item?.itemName || String(listing.item_id)}
+                    className="w-20 h-20 object-contain"
+                    onError={(e) => {
+                      e.currentTarget.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="80" height="80"%3E%3Crect width="80" height="80" fill="%23ddd"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999"%3E?%3C/text%3E%3C/svg%3E'
+                    }}
+                  />
+                  <div className="flex-1">
+                    <p className="text-xl font-semibold text-gray-900 dark:text-white">
+                      {getDisplayItemName(item, listing.item_id)}
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-400">{t('listing.quantity')}: {listing.quantity}</p>
 
-                  {/* 統計資訊 */}
-                  <div className="flex gap-4 mt-2 text-sm text-gray-500 dark:text-gray-400">
-                    <span>{t('listing.viewCount')}: {listing.view_count}</span>
-                    <span>{t('listing.interestCount')}: {listing.interest_count}</span>
+                    {/* 價格 */}
+                    {listing.price && (
+                      <p className="mt-2 text-2xl font-bold text-blue-600 dark:text-blue-400">
+                        {listing.price.toLocaleString()} {t('listing.meso')}
+                      </p>
+                    )}
+
+                    {/* 交易類型標籤 */}
+                    <div className="mt-2">
+                      <span className={`inline-block px-2 py-1 text-xs rounded ${
+                        listing.trade_type === 'sell' ? 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400' :
+                        'bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400'
+                      }`}>
+                        {listing.trade_type === 'sell' ? t('trade.type.sell') : t('trade.type.buy')}
+                      </span>
+                    </div>
+
+                    {/* 統計資訊 */}
+                    <div className="flex gap-4 mt-2 text-sm text-gray-500 dark:text-gray-400">
+                      <span>{t('listing.viewCount')}: {listing.view_count}</span>
+                      <span>{t('listing.interestCount')}: {listing.interest_count}</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            )}
 
             {/* 裝備屬性 */}
             {listing.item_stats && (
@@ -309,10 +373,7 @@ export function ListingDetailModal({
                 <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.itemStats')}</h3>
                 <StatsComparisonCard
                   stats={listing.item_stats}
-                  grade={listing.stats_grade}
-                  score={listing.stats_score}
                   locale={language}
-                  showGrade={false}
                   showMaxValues={false}
                   compact={true}
                 />
@@ -347,44 +408,51 @@ export function ListingDetailModal({
               <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
                 <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.contactMethod')}</h3>
                 {contactInfo ? (
-                  <div className="space-y-2">
-                    <div className="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
-                      <p className="text-sm text-gray-600 dark:text-gray-400">{t('listing.contactMethod')}:</p>
-                      <p className="font-semibold text-gray-900 dark:text-white">{contactInfo.contact_method}</p>
-
-                      {/* Discord Deep Link 按鈕 */}
-                      {contactInfo.contact_method === 'discord' && contactInfo.seller_discord_id ? (
-                        <div className="mt-3 flex gap-2">
-                          {/* Desktop/Mobile App */}
-                          <a
-                            href={`discord://users/${contactInfo.seller_discord_id}`}
-                            className="flex-1 px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg text-center font-medium transition-colors flex items-center justify-center gap-2"
-                          >
-                            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
-                            </svg>
-                            <span className="hidden sm:inline">開啟 Discord App</span>
-                            <span className="sm:hidden">App</span>
-                          </a>
-
-                          {/* Web Fallback */}
-                          <a
-                            href={`https://discord.com/users/${contactInfo.seller_discord_id}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex-1 px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-lg text-center font-medium transition-colors flex items-center justify-center gap-2"
-                          >
-                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                            </svg>
-                            <span className="hidden sm:inline">開啟網頁版</span>
-                            <span className="sm:hidden">Web</span>
-                          </a>
-                        </div>
-                      ) : (
-                        <p className="mt-1 text-gray-900 dark:text-white">{contactInfo.contact_info}</p>
-                      )}
+                  <div className="space-y-3">
+                    {/* Discord 聯絡方式 */}
+                    <div className="flex items-start gap-3">
+                      <svg className="w-5 h-5 text-blue-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                      </svg>
+                      <div className="flex-1">
+                        <div className="text-sm text-gray-500 dark:text-gray-400">Discord</div>
+                        <div className="font-medium text-gray-900 dark:text-white">{contactInfo.discord}</div>
+                        {contactInfo.discordId && (
+                          <div className="mt-2 flex gap-2">
+                            <a
+                              href={`discord://users/${contactInfo.discordId}`}
+                              className="text-sm text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline"
+                            >
+                              {t('listing.openInDiscord')}
+                            </a>
+                            <span className="text-sm text-gray-400">|</span>
+                            <a
+                              href={`https://discord.com/users/${contactInfo.discordId}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-sm text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline"
+                            >
+                              {t('listing.openInWeb')}
+                            </a>
+                          </div>
+                        )}
+                      </div>
                     </div>
+
+                    {/* 遊戲內角色名（如果有） */}
+                    {contactInfo.ingame && (
+                      <div className="flex items-start gap-3 pt-2 border-t dark:border-gray-700">
+                        <svg className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+                        </svg>
+                        <div className="flex-1">
+                          <div className="text-sm text-gray-500 dark:text-gray-400">
+                            {t('listing.ingameName')}
+                          </div>
+                          <div className="font-medium text-gray-900 dark:text-white">{contactInfo.ingame}</div>
+                        </div>
+                      </div>
+                    )}
                     {/* 只有不是自己的刊登才顯示配額資訊 */}
                     {!contactInfo.is_own_listing && (
                       <p className="text-xs text-gray-500 dark:text-gray-400">

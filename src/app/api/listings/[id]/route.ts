@@ -30,7 +30,7 @@ async function handleGET(
     listing_id: id
   })
 
-  // 查詢刊登詳情（JOIN users 和 discord_profiles，使用嵌套語法）
+  // 查詢刊登詳情（JOIN users、discord_profiles 和 listing_wanted_items，使用嵌套語法）
   const { data: listing, error: fetchError } = await supabaseAdmin
     .from('listings')
     .select(`
@@ -40,6 +40,10 @@ async function handleGET(
         discord_profiles (
           reputation_score
         )
+      ),
+      listing_wanted_items (
+        item_id,
+        quantity
       )
     `)
     .eq('id', id)
@@ -59,8 +63,14 @@ async function handleGET(
     item_id: listing.item_id,
     quantity: listing.quantity,
     price: listing.price,
+    // 舊欄位（向後相容，deprecated）
     wanted_item_id: listing.wanted_item_id,
     wanted_quantity: listing.wanted_quantity,
+    // 新欄位：想要物品陣列（從關聯表取得）
+    wanted_items: listing.listing_wanted_items?.map((item: { item_id: number; quantity: number }) => ({
+      item_id: item.item_id,
+      quantity: item.quantity
+    })) || [],
     contact_method: listing.contact_method,
     seller_discord_id: listing.seller_discord_id || null,
     // 注意：contact_info 不在這裡返回，需要呼叫 /contact API
@@ -174,14 +184,10 @@ async function handlePATCH(
       }
 
       updates.item_stats = validationResult.data!.stats
-      updates.stats_grade = validationResult.data!.grade
-      updates.stats_score = validationResult.data!.score
 
       apiLogger.debug('物品屬性更新驗證成功', {
         user_id: user.id,
-        listing_id: id,
-        grade: validationResult.data!.grade,
-        score: validationResult.data!.score
+        listing_id: id
       })
     }
   }

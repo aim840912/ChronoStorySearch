@@ -126,7 +126,12 @@
       "WebFetch(domain:www.anthropic.com)",
       "WebFetch(domain:claudelog.com)",
       "Bash(test:*)",
-      "mcp__playwright__browser_network_requests"
+      "mcp__playwright__browser_network_requests",
+      "WebFetch(domain:developers.cloudflare.com)",
+      "WebFetch(domain:community.cloudflare.com)",
+      "Bash(dig:*)",
+      "Bash(xargs:*)",
+      "WebFetch(domain:randombits.dev)"
     ],
     "deny": [],
     "ask": [

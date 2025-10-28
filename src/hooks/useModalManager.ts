@@ -4,7 +4,7 @@ import type { ClearModalType } from '@/types'
 /**
  * Modal 類型定義
  */
-type ModalType = 'monster' | 'item' | 'gacha' | 'bug' | 'clear' | 'merchant' | 'accuracy' | 'createListing' | 'myListings' | 'marketBrowser' | 'interests' | 'listingDetail'
+type ModalType = 'monster' | 'item' | 'gacha' | 'bug' | 'clear' | 'merchant' | 'accuracy' | 'createListing' | 'myListings' | 'interests' | 'listingDetail'
 
 /**
  * Monster Modal 資料結構
@@ -265,17 +265,6 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     setHistory({ previous: null })
   }, [])
 
-  // 開啟 Market Browser Modal
-  const openMarketBrowserModal = useCallback(() => {
-    setModal({ type: 'marketBrowser', data: null })
-  }, [])
-
-  // 關閉 Market Browser Modal
-  const closeMarketBrowserModal = useCallback(() => {
-    setModal({ type: null, data: null })
-    setHistory({ previous: null })
-  }, [])
-
   // 開啟 Interests Modal
   const openInterestsModal = useCallback(() => {
     setModal({ type: 'interests', data: null })
@@ -433,11 +422,6 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     isMyListingsModalOpen: modal.type === 'myListings',
     openMyListingsModal,
     closeMyListingsModal,
-
-    // Market Browser Modal
-    isMarketBrowserModalOpen: modal.type === 'marketBrowser',
-    openMarketBrowserModal,
-    closeMarketBrowserModal,
 
     // Interests Modal
     isInterestsModalOpen: modal.type === 'interests',

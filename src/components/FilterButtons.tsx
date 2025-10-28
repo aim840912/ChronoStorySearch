@@ -19,7 +19,6 @@ interface FilterButtonsProps {
   user: User | null
   onOpenCreateListing: () => void
   onOpenMyListings: () => void
-  onOpenMarketBrowser: () => void
   onOpenInterests: () => void
 }
 
@@ -41,7 +40,6 @@ export function FilterButtons({
   user,
   onOpenCreateListing,
   onOpenMyListings,
-  onOpenMarketBrowser,
   onOpenInterests,
 }: FilterButtonsProps) {
   const { t } = useLanguage()
@@ -224,17 +222,6 @@ export function FilterButtons({
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
               {t('market.myListings')}
-            </button>
-
-            {/* 市場瀏覽 */}
-            <button
-              onClick={onOpenMarketBrowser}
-              className="px-4 py-2.5 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-purple-50 dark:hover:bg-gray-700 shadow-md hover:shadow-lg"
-            >
-              <svg className="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              {t('market.browseMarket')}
             </button>
 
             {/* 購買意向 */}

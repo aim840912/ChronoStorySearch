@@ -1,7 +1,7 @@
 import { NextRequest } from 'next/server'
 import { withAuthAndError, User } from '@/lib/middleware/api-middleware'
 import { success, created } from '@/lib/api-response'
-import { ValidationError } from '@/lib/errors'
+import { ValidationError, DatabaseError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
 import { validateAndCalculateStats } from '@/lib/validation/item-stats'
@@ -94,10 +94,8 @@ async function handlePOST(request: NextRequest, user: User) {
     item_id,
     quantity = 1,
     price,
-    wanted_item_id,
-    wanted_quantity,
-    contact_method,
-    contact_info,
+    wanted_items,  // 新：想要物品陣列
+    ingame_name,   // 新：遊戲內角色名（選填）
     webhook_url,
     item_stats
   } = data
@@ -110,20 +108,47 @@ async function handlePOST(request: NextRequest, user: User) {
     throw new ValidationError('item_id 必須是數字')
   }
 
-  if (!contact_method || !['discord', 'ingame'].includes(contact_method)) {
-    throw new ValidationError('contact_method 必須是 discord 或 ingame')
+  // 驗證 Discord 聯絡方式（必填，來自 OAuth）
+  const discord_contact = user.discord_username || user.discord_id
+  if (!discord_contact) {
+    apiLogger.error('無法取得 Discord 聯絡方式', { user_id: user.id })
+    throw new ValidationError('無法取得 Discord 聯絡方式，請重新登入')
   }
 
-  if (!contact_info || typeof contact_info !== 'string' || contact_info.trim() === '') {
-    throw new ValidationError('contact_info 不能為空')
+  // 驗證遊戲內角色名（選填）
+  if (ingame_name !== undefined && ingame_name !== null) {
+    if (typeof ingame_name !== 'string') {
+      throw new ValidationError('ingame_name 必須是字串')
+    }
+    // 允許空字串（使用者清空欄位）
   }
 
   // 2. 驗證交易類型特定邏輯
   if (trade_type === 'exchange') {
-    // 交換類型必須提供 wanted_item_id
-    if (!wanted_item_id || typeof wanted_item_id !== 'number') {
-      throw new ValidationError('交換類型必須提供 wanted_item_id')
+    // 交換類型必須提供至少一個想要物品
+    if (!wanted_items || !Array.isArray(wanted_items) || wanted_items.length === 0) {
+      throw new ValidationError('交換類型必須提供至少一個想要物品')
     }
+
+    // 限制最多 3 個想要物品
+    if (wanted_items.length > 3) {
+      throw new ValidationError('最多只能選擇 3 個想要物品')
+    }
+
+    // 驗證每個想要物品的結構
+    for (const wantedItem of wanted_items) {
+      if (!wantedItem.item_id || typeof wantedItem.item_id !== 'number') {
+        throw new ValidationError('想要物品的 item_id 必須是數字')
+      }
+      if (!wantedItem.quantity || typeof wantedItem.quantity !== 'number' || wantedItem.quantity < 1) {
+        throw new ValidationError('想要物品的數量必須是大於 0 的數字')
+      }
+    }
+
+    apiLogger.debug('交換刊登驗證通過', {
+      user_id: user.id,
+      wanted_items_count: wanted_items.length
+    })
   } else {
     // 買賣類型必須提供 price
     if (!price || typeof price !== 'number' || price <= 0) {
@@ -133,8 +158,6 @@ async function handlePOST(request: NextRequest, user: User) {
 
   // 3. 驗證物品屬性（如果提供）
   let validatedStats: ItemStats | null = null
-  let statsGrade: string | null = null
-  let statsScore: number | null = null
 
   if (item_stats) {
     const validationResult = validateAndCalculateStats(item_stats)
@@ -148,13 +171,9 @@ async function handlePOST(request: NextRequest, user: User) {
     }
 
     validatedStats = validationResult.data!.stats
-    statsGrade = validationResult.data!.grade
-    statsScore = validationResult.data!.score
 
     apiLogger.debug('物品屬性驗證成功', {
-      user_id: user.id,
-      grade: statsGrade,
-      score: statsScore
+      user_id: user.id
     })
   }
 
@@ -231,19 +250,17 @@ async function handlePOST(request: NextRequest, user: User) {
     item_id,
     quantity: quantity || 1,
     price: trade_type !== 'exchange' ? price : null,
-    wanted_item_id: trade_type === 'exchange' ? wanted_item_id : null,
-    wanted_quantity: trade_type === 'exchange' ? (wanted_quantity || 1) : null,
-    contact_method,
-    contact_info: contact_info.trim(),
-    seller_discord_id: contact_method === 'discord' ? user.discord_id : null,
+    // 移除舊的 wanted_item_id 和 wanted_quantity（改用關聯表）
+    // 新的聯絡方式欄位
+    discord_contact: discord_contact.trim(),  // 必填，來自 OAuth
+    ingame_name: ingame_name?.trim() || null, // 選填，可為 null
+    seller_discord_id: user.discord_id,       // 保留 Deep Link 功能
     webhook_url: webhook_url || null,
     status: 'active',
     view_count: 0,
     interest_count: 0,
     // 物品屬性（如果提供）
-    item_stats: validatedStats,
-    stats_grade: statsGrade,
-    stats_score: statsScore
+    item_stats: validatedStats
   }
 
   const { data: listing, error: insertError } = await supabaseAdmin
@@ -261,10 +278,46 @@ async function handlePOST(request: NextRequest, user: User) {
     throw new ValidationError('建立刊登失敗')
   }
 
+  // 6. 如果是交換類型，插入想要物品到關聯表
+  if (trade_type === 'exchange' && wanted_items && wanted_items.length > 0) {
+    const wantedItemsData = wanted_items.map((item: { item_id: number; quantity: number }) => ({
+      listing_id: listing.id,
+      item_id: item.item_id,
+      quantity: item.quantity
+    }))
+
+    const { error: wantedItemsError } = await supabaseAdmin
+      .from('listing_wanted_items')
+      .insert(wantedItemsData)
+
+    if (wantedItemsError) {
+      // 插入失敗：回滾 listing（刪除剛建立的刊登）
+      await supabaseAdmin
+        .from('listings')
+        .delete()
+        .eq('id', listing.id)
+
+      apiLogger.error('建立想要物品失敗（已回滾刊登）', {
+        error: wantedItemsError,
+        user_id: user.id,
+        listing_id: listing.id
+      })
+
+      throw new DatabaseError('建立想要物品失敗', wantedItemsError)
+    }
+
+    apiLogger.debug('想要物品建立成功', {
+      user_id: user.id,
+      listing_id: listing.id,
+      wanted_items_count: wanted_items.length
+    })
+  }
+
   apiLogger.info('刊登建立成功', {
     user_id: user.id,
     listing_id: listing.id,
-    trade_type: listing.trade_type
+    trade_type: listing.trade_type,
+    has_wanted_items: trade_type === 'exchange'
   })
 
   return created(listing, '刊登建立成功')

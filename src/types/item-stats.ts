@@ -151,87 +151,6 @@ export interface ItemStats {
 }
 
 /**
- * 物品素質等級
- *
- * 根據實際值/最大值的平均比例計算：
- * - S: >= 95% （完美）
- * - A: >= 85% （極品）
- * - B: >= 70% （優秀）
- * - C: >= 50% （中等）
- * - D: >= 30% （普通）
- * - F: < 30%  （極差）
- */
-export type StatsGrade = 'S' | 'A' | 'B' | 'C' | 'D' | 'F'
-
-/**
- * 素質等級資訊
- */
-export interface StatsGradeInfo {
-  /** 等級 */
-  grade: StatsGrade
-
-  /** 分數（0-100） */
-  score: number
-
-  /** 中文名稱 */
-  label_zh: string
-
-  /** 英文名稱 */
-  label_en: string
-
-  /** 顏色（Tailwind class） */
-  color: string
-}
-
-/**
- * 素質等級對應表
- */
-export const STATS_GRADE_INFO: Record<StatsGrade, StatsGradeInfo> = {
-  S: {
-    grade: 'S',
-    score: 95,
-    label_zh: '完美',
-    label_en: 'Perfect',
-    color: 'text-purple-600 bg-purple-50 dark:text-purple-400 dark:bg-purple-900/20',
-  },
-  A: {
-    grade: 'A',
-    score: 85,
-    label_zh: '極品',
-    label_en: 'Excellent',
-    color: 'text-blue-600 bg-blue-50 dark:text-blue-400 dark:bg-blue-900/20',
-  },
-  B: {
-    grade: 'B',
-    score: 70,
-    label_zh: '優秀',
-    label_en: 'Good',
-    color: 'text-green-600 bg-green-50 dark:text-green-400 dark:bg-green-900/20',
-  },
-  C: {
-    grade: 'C',
-    score: 50,
-    label_zh: '中等',
-    label_en: 'Average',
-    color: 'text-yellow-600 bg-yellow-50 dark:text-yellow-400 dark:bg-yellow-900/20',
-  },
-  D: {
-    grade: 'D',
-    score: 30,
-    label_zh: '普通',
-    label_en: 'Below Average',
-    color: 'text-orange-600 bg-orange-50 dark:text-orange-400 dark:bg-orange-900/20',
-  },
-  F: {
-    grade: 'F',
-    score: 0,
-    label_zh: '極差',
-    label_en: 'Poor',
-    color: 'text-red-600 bg-red-50 dark:text-red-400 dark:bg-red-900/20',
-  },
-}
-
-/**
  * 屬性鍵值對應（用於遍歷）
  */
 export const STAT_KEYS = [
@@ -312,7 +231,9 @@ export interface ListingWithStats {
   trade_type: 'sell' | 'exchange'
   wanted_item_id?: number
   wanted_quantity?: number
-  contact_method: string
+  discord_contact: string      // Discord 聯絡方式（必填，來自 OAuth）
+  ingame_name: string | null   // 遊戲內角色名（選填）
+  seller_discord_id: string | null  // Discord User ID（用於 Deep Link）
   webhook_url?: string
   status: 'active' | 'sold' | 'cancelled'
   view_count: number
@@ -323,6 +244,4 @@ export interface ListingWithStats {
 
   // 新增：物品屬性資訊
   item_stats: ItemStats | null
-  stats_grade: StatsGrade | null
-  stats_score: number | null
 }

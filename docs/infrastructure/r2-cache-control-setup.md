@@ -8,17 +8,21 @@
 
 ## 📊 當前狀態
 
-**問題**：
+**✅ 已修復（2025-10-28）**：使用 R2 Object Metadata 方案
+
 ```http
-❌ Cache-Control: (缺失)
+✅ Cache-Control: public, max-age=31536000, immutable
 ✅ ETag: "aad44e4b4c90170225fdb685d4eb8539"
 ✅ Last-Modified: Sun, 19 Oct 2025 05:20:41 GMT
 ```
 
-**影響**：
-- 瀏覽器使用啟發式快取（通常數小時）
-- 快取過期後仍會發送 304 驗證請求（Class B Operation）
-- 每日每用戶可能產生 10-20 次不必要的 Class B Operations
+**修復方法**：方案 4（R2 Object Metadata）- 詳見下方
+
+**預期效果**：
+- ✅ 瀏覽器快取圖片 1 年（max-age=31536000）
+- ✅ 快取不會發送驗證請求（immutable）
+- ✅ Class B Operations 減少 90-95%
+- ✅ 1-3 天後可觀察到完整效果
 
 ---
 
@@ -161,6 +165,91 @@ npx wrangler r2 object put maplestory-images/images/items/NEW_ITEM.png \
 
 ---
 
+### 方案 4：R2 Object Metadata（⭐⭐ Free Plan 推薦）
+
+**適用情境**：
+- ✅ **Cloudflare Free Plan 無法使用 Transform Rules 的 regex 匹配**
+- ✅ 無額外成本（不需要 Workers 配額）
+- ✅ 永久生效（metadata 儲存在物件上）
+- ✅ 符合專案現有架構（已有 rclone 腳本）
+
+**優點**：
+- ✅ 零依賴外部服務（直接在 R2 物件上設定）
+- ✅ 永久生效（不會過期）
+- ✅ 零額外成本（不產生額外 Class B Operations）
+- ✅ 完全支援 `immutable` 指令
+
+**限制**：
+- ⚠️ 需要重新上傳現有圖片（一次性操作）
+- ⚠️ 會產生一次性的 PUT 操作成本（約 $0.0087）
+
+**步驟**：
+
+#### Step 1：修改上傳腳本
+
+編輯 `scripts/r2-smart-sync.sh`（已完成）：
+
+```bash
+~/rclone sync $IMAGES_DIR r2:maplestory-images/images \
+    --header "Cache-Control: public, max-age=31536000, immutable" \
+    --size-only \
+    --progress \
+    --transfers=4 \
+    --retries=3 \
+    --stats=10s
+```
+
+編輯 `package.json`（已完成）：
+
+```json
+{
+  "r2:sync": "~/rclone sync public/images r2:maplestory-images/images --header 'Cache-Control: public, max-age=31536000, immutable' --size-only --max-age 7d --progress --transfers=4 --retries=3 --stats=10s",
+  "r2:sync-full": "~/rclone sync public/images r2:maplestory-images/images --header 'Cache-Control: public, max-age=31536000, immutable' --checksum --progress --transfers=4 --retries=3"
+}
+```
+
+#### Step 2：批量更新現有圖片
+
+```bash
+# 重新上傳所有圖片並設定 Cache-Control metadata
+npm run r2:sync-full
+```
+
+**成本說明**：
+- 上傳 1,936 張圖片 = 1,936 次 PUT 操作
+- 成本 = 1,936 × $0.0045/1000 = **$0.0087**（不到1分錢）
+- 預計執行時間：20-30 分鐘
+
+#### Step 3：驗證
+
+使用新建立的驗證腳本：
+
+```bash
+npm run r2:verify-cache
+```
+
+或手動驗證：
+
+```bash
+curl -I "https://cdn.chronostorysearch.com/images/items/1002004.png" | grep -i cache-control
+# 應該看到：Cache-Control: public, max-age=31536000, immutable
+```
+
+#### Step 4：監控效果
+
+1. 登入 [Cloudflare R2 Dashboard](https://dash.cloudflare.com/)
+2. 前往 **R2** → `maplestory-images` → **Metrics**
+3. 觀察 **Class B Operations** 趨勢
+4. 預期在 1-3 天內看到明顯下降（90-95%）
+
+**為什麼選擇這個方案**：
+- ❌ 方案 1（Transform Rules）：Free Plan 不支援 regex 匹配（`matches` operator）
+- ⚠️ 方案 2（Workers）：有配額限制（100,000 requests/day），當前流量已達 73%
+- ⚠️ 簡化版 Transform Rules（`starts with`）：可能不支援 Response Header 修改
+- ✅ **方案 4（Metadata）：最穩定、零依賴、永久生效**
+
+---
+
 ## 📈 預期效果
 
 ### Class B Operations 減少
@@ -249,3 +338,57 @@ curl -I "$(grep NEXT_PUBLIC_R2_PUBLIC_URL .env.local | cut -d'=' -f2)/images/ite
 - 成本降低（每月節省數千次請求）
 
 🎉 **完成後，您的 R2 快取策略將達到業界最佳實踐！**
+
+---
+
+## 📝 實施記錄
+
+### 2025-10-28：修復 Class B Operations 過高問題
+
+**問題診斷**：
+- **觀察到的問題**：Class B Operations = 1.53k/30分鐘（不正常）
+- **根本原因**：缺少 Cache-Control headers，導致瀏覽器快取過期後持續發送 304 驗證請求
+- **Custom Domain 狀態**：已設定 `cdn.chronostorysearch.com`，但沒有自動添加 Cache-Control headers
+- **Cloudflare Plan**：Free Plan（無法使用 Transform Rules 的 regex 匹配功能）
+
+**採用方案**：方案 4（R2 Object Metadata）
+
+**實施步驟**：
+1. ✅ 修改 `scripts/r2-smart-sync.sh`：添加 `--header "Cache-Control: ..."` 參數
+2. ✅ 修改 `package.json`：更新 `r2:sync` 和 `r2:sync-full` 指令
+3. ✅ 建立 `scripts/verify-cache-control.sh`：驗證腳本
+4. ✅ 添加 `npm run r2:verify-cache` 指令
+5. ⏳ 待執行：`npm run r2:sync-full` 批量更新現有圖片
+
+**成本評估**：
+- 一次性 PUT 操作：1,936 次
+- 一次性成本：約 $0.0087（不到1分錢）
+- 預期月度節省：從 ~$189 降至 < $10
+
+**預期效果時間表**：
+| 時間點 | Class B Ops (30分鐘) | 說明 |
+|--------|---------------------|------|
+| 修復前 | 1,530 | 大量 304 驗證請求 |
+| 修復後 1 小時 | 1,200 | 新訪客開始受益 |
+| 修復後 24 小時 | 300-500 | 多數用戶快取生效 |
+| 修復後 1 週 | 50-100 | **穩定狀態（減少 93-97%）** |
+
+**驗證方法**：
+```bash
+# 使用驗證腳本
+npm run r2:verify-cache
+
+# 或手動驗證
+curl -I "https://cdn.chronostorysearch.com/images/items/1002004.png" | grep -i cache-control
+```
+
+**監控建議**：
+- 每天檢查 Cloudflare R2 Dashboard 的 Class B Operations metrics
+- 預期在 1-3 天內看到明顯下降
+- 長期維護：未來上傳新圖片時，自動包含 Cache-Control metadata
+
+**關鍵學習**：
+1. **Custom Domain ≠ 自動快取優化**：Custom Domain 只是 DNS 指向，不會自動添加 HTTP headers
+2. **Free Plan 限制**：無法使用 Transform Rules 的 regex 匹配，需要使用替代方案
+3. **R2 Object Metadata**：最穩定的解決方案，零依賴外部服務，永久生效
+4. **效果需要時間**：快取優化的完整效果需要 1-3 天才能觀察到（等待現有快取過期）

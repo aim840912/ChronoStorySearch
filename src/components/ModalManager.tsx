@@ -12,7 +12,6 @@ import { GameCommandsModal } from '@/components/GameCommandsModal'
 import { MerchantShopModal } from '@/components/MerchantShopModal'
 import { CreateListingModal } from '@/components/trade/CreateListingModal'
 import { MyListingsModal } from '@/components/trade/MyListingsModal'
-import { MarketBrowserModal } from '@/components/trade/MarketBrowserModal'
 import { InterestsModal } from '@/components/trade/InterestsModal'
 import { ListingDetailModal } from '@/components/trade/ListingDetailModal'
 import { Toast } from '@/components/Toast'
@@ -29,7 +28,6 @@ interface ModalManagerProps {
   isAccuracyCalculatorOpen: boolean
   isCreateListingModalOpen: boolean
   isMyListingsModalOpen: boolean
-  isMarketBrowserModalOpen: boolean
   isInterestsModalOpen: boolean
   isListingDetailModalOpen: boolean
   selectedListingId: number | null
@@ -52,7 +50,6 @@ interface ModalManagerProps {
   closeAccuracyCalculator: () => void
   closeCreateListingModal: () => void
   closeMyListingsModal: () => void
-  closeMarketBrowserModal: () => void
   closeInterestsModal: () => void
   closeListingDetailModal: () => void
   goBack: () => void
@@ -118,7 +115,6 @@ export const ModalManager = memo(function ModalManager({
   isAccuracyCalculatorOpen,
   isCreateListingModalOpen,
   isMyListingsModalOpen,
-  isMarketBrowserModalOpen,
   isInterestsModalOpen,
   isListingDetailModalOpen,
   selectedListingId,
@@ -139,7 +135,6 @@ export const ModalManager = memo(function ModalManager({
   closeAccuracyCalculator,
   closeCreateListingModal,
   closeMyListingsModal,
-  closeMarketBrowserModal,
   closeInterestsModal,
   closeListingDetailModal,
   goBack,
@@ -277,12 +272,6 @@ export const ModalManager = memo(function ModalManager({
           closeMyListingsModal()
           openCreateListingModal()
         }}
-      />
-
-      {/* Market Browser Modal */}
-      <MarketBrowserModal
-        isOpen={isMarketBrowserModalOpen}
-        onClose={closeMarketBrowserModal}
       />
 
       {/* Interests Modal */}

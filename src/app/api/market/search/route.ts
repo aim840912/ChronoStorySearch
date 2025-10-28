@@ -83,7 +83,7 @@ allGachaMachines.forEach((machine: any) => {
  * - 查詢 status = 'active' 的刊登
  * - 支援搜尋：item_id, trade_type
  * - 支援價格範圍：min_price, max_price
- * - 支援物品屬性篩選：min_watk, min_matk, stats_grade
+ * - 支援物品屬性篩選：stat_N_key, stat_N_min, stat_N_max (動態), stats_grade
  * - 支援排序：sort_by (created_at, price, stats_score), order (asc, desc)
  * - 支援分頁：page, limit (預設 20, 最大 50)
  * - 從三個資料來源獲取物品中英文名稱（優先順序）：
@@ -107,9 +107,50 @@ async function handleGET(_request: NextRequest, user: User) {
   const min_price = searchParams.get('min_price')
   const max_price = searchParams.get('max_price')
 
-  // 2.1 解析物品屬性篩選參數
-  const min_watk = searchParams.get('min_watk')
-  const min_matk = searchParams.get('min_matk')
+  // 2.1 解析動態物品屬性篩選參數
+  const itemStatsFilters: Array<{
+    key: string
+    min?: number
+    max?: number
+  }> = []
+
+  // 尋找所有 stat_N_key 參數（最多支援 10 個）
+  for (let i = 0; i < 10; i++) {
+    const key = searchParams.get(`stat_${i}_key`)
+    if (!key) continue
+
+    const minValue = searchParams.get(`stat_${i}_min`)
+    const maxValue = searchParams.get(`stat_${i}_max`)
+
+    // 驗證屬性鍵
+    const validKeys = ['watk', 'matk', 'wdef', 'mdef', 'str', 'dex', 'int', 'luk', 'hp', 'mp', 'acc', 'avoid']
+    if (!validKeys.includes(key)) {
+      throw new ValidationError(`無效的屬性鍵: ${key}`)
+    }
+
+    // 驗證最小值
+    if (minValue) {
+      const minNum = parseInt(minValue, 10)
+      if (isNaN(minNum) || minNum < 0) {
+        throw new ValidationError(`${key} 的最小值必須是非負數字`)
+      }
+    }
+
+    // 驗證最大值
+    if (maxValue) {
+      const maxNum = parseInt(maxValue, 10)
+      if (isNaN(maxNum) || maxNum < 0) {
+        throw new ValidationError(`${key} 的最大值必須是非負數字`)
+      }
+    }
+
+    itemStatsFilters.push({
+      key,
+      min: minValue ? parseInt(minValue, 10) : undefined,
+      max: maxValue ? parseInt(maxValue, 10) : undefined
+    })
+  }
+
   const stats_grade = searchParams.get('stats_grade')
 
   // 3. 解析排序參數
@@ -138,14 +179,13 @@ async function handleGET(_request: NextRequest, user: User) {
     item_id,
     min_price,
     max_price,
-    min_watk,
-    min_matk,
+    itemStatsFilters,
     stats_grade,
     sort_by,
     order
   })
 
-  // 4. 建立查詢（JOIN users 和 discord_profiles，使用嵌套語法）
+  // 4. 建立查詢（JOIN users、discord_profiles 和 listing_wanted_items，使用嵌套語法）
   let query = supabaseAdmin
     .from('listings')
     .select(
@@ -156,6 +196,10 @@ async function handleGET(_request: NextRequest, user: User) {
         discord_profiles (
           reputation_score
         )
+      ),
+      listing_wanted_items (
+        item_id,
+        quantity
       )
     `,
       { count: 'exact' }
@@ -196,23 +240,17 @@ async function handleGET(_request: NextRequest, user: User) {
     query = query.lte('price', maxPriceNum)
   }
 
-  // 物品屬性篩選（使用 JSONB 查詢）
-  if (min_watk) {
-    const minWatkNum = parseInt(min_watk, 10)
-    if (isNaN(minWatkNum) || minWatkNum < 0) {
-      throw new ValidationError('min_watk 必須是非負數字')
+  // 物品屬性篩選（使用 JSONB 查詢）- 動態版本
+  itemStatsFilters.forEach(({ key, min, max }) => {
+    if (min !== undefined) {
+      // PostgreSQL JSONB 查詢：(item_stats->>'key')::int >= min
+      query = query.gte(`item_stats->${key}`, min)
     }
-    // PostgreSQL JSONB 查詢：(item_stats->>'watk')::int >= minWatkNum
-    query = query.gte('item_stats->watk', minWatkNum)
-  }
-
-  if (min_matk) {
-    const minMatkNum = parseInt(min_matk, 10)
-    if (isNaN(minMatkNum) || minMatkNum < 0) {
-      throw new ValidationError('min_matk 必須是非負數字')
+    if (max !== undefined) {
+      // PostgreSQL JSONB 查詢：(item_stats->>'key')::int <= max
+      query = query.lte(`item_stats->${key}`, max)
     }
-    query = query.gte('item_stats->matk', minMatkNum)
-  }
+  })
 
   if (stats_grade) {
     query = query.eq('stats_grade', stats_grade)
@@ -252,8 +290,14 @@ async function handleGET(_request: NextRequest, user: User) {
       item_id: listing.item_id,
       quantity: listing.quantity,
       price: listing.price,
+      // 舊欄位（deprecated，向後相容）
       wanted_item_id: listing.wanted_item_id,
       wanted_quantity: listing.wanted_quantity,
+      // 新欄位：想要物品陣列（從關聯表取得）
+      wanted_items: listing.listing_wanted_items?.map((item: any) => ({
+        item_id: item.item_id,
+        quantity: item.quantity
+      })) || [],
       status: listing.status,
       view_count: listing.view_count,
       interest_count: listing.interest_count,
@@ -287,8 +331,7 @@ async function handleGET(_request: NextRequest, user: User) {
       item_id,
       min_price,
       max_price,
-      min_watk,
-      min_matk,
+      itemStatsFilters,
       stats_grade,
       sort_by,
       order

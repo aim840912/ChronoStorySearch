@@ -602,6 +602,40 @@ export interface AdvancedFilterOptions {
 // 交易類型
 export type TradeType = 'sell' | 'buy' | 'exchange'
 
+// 可篩選的屬性鍵（用於市場篩選）
+export type StatFilterKey =
+  | 'watk' | 'matk' | 'wdef' | 'mdef'
+  | 'str' | 'dex' | 'int' | 'luk'
+  | 'hp' | 'mp' | 'acc' | 'avoid'
+
+// 單個屬性篩選項
+export interface ItemStatFilter {
+  id: string              // 唯一識別符（用於 React key）
+  statKey: StatFilterKey  // 屬性鍵
+  minValue: number | null // 最小值
+  maxValue: number | null // 最大值（可選）
+}
+
+// 屬性篩選選項元資料
+export const STAT_FILTER_OPTIONS: Record<StatFilterKey, {
+  labelZh: string
+  labelEn: string
+  placeholder: string
+}> = {
+  watk: { labelZh: '物理攻擊', labelEn: 'Physical ATK', placeholder: '例：50' },
+  matk: { labelZh: '魔法攻擊', labelEn: 'Magic ATK', placeholder: '例：30' },
+  wdef: { labelZh: '物理防禦', labelEn: 'Physical DEF', placeholder: '例：100' },
+  mdef: { labelZh: '魔法防禦', labelEn: 'Magic DEF', placeholder: '例：80' },
+  str: { labelZh: '力量', labelEn: 'STR', placeholder: '例：10' },
+  dex: { labelZh: '敏捷', labelEn: 'DEX', placeholder: '例：10' },
+  int: { labelZh: '智力', labelEn: 'INT', placeholder: '例：10' },
+  luk: { labelZh: '幸運', labelEn: 'LUK', placeholder: '例：10' },
+  hp: { labelZh: 'HP', labelEn: 'HP', placeholder: '例：100' },
+  mp: { labelZh: 'MP', labelEn: 'MP', placeholder: '例：100' },
+  acc: { labelZh: '命中率', labelEn: 'Accuracy', placeholder: '例：20' },
+  avoid: { labelZh: '迴避率', labelEn: 'Avoidability', placeholder: '例：20' }
+}
+
 // 市場篩選選項
 export interface MarketFilterOptions {
   // 交易類型篩選（多選）
@@ -613,16 +647,11 @@ export interface MarketFilterOptions {
     max: number | null
   }
 
-  // 物品屬性篩選
-  itemStatsFilter: {
-    min_watk?: number
-    min_matk?: number
-    min_wdef?: number
-    stats_grade?: import('./item-stats').StatsGrade[]
-  }
+  // 物品屬性篩選（改為動態陣列）
+  itemStatsFilter: ItemStatFilter[]
 
   // 排序方式
-  sortBy: 'created_at' | 'price' | 'stats_score'
+  sortBy: 'created_at' | 'price'
   sortOrder: 'asc' | 'desc'
 }
 
@@ -634,6 +663,12 @@ export interface Pagination {
   totalPages: number
 }
 
+// 想要物品項目（用於交換刊登）
+export interface WantedItem {
+  item_id: number
+  quantity: number
+}
+
 // 市場刊登回應（含用戶資訊）
 export interface ListingWithUserInfo {
   // 基本刊登資訊
@@ -643,9 +678,14 @@ export interface ListingWithUserInfo {
   quantity: number
   price?: number
   trade_type: TradeType
+  /** @deprecated Use wanted_items array instead */
   wanted_item_id?: number
+  /** @deprecated Use wanted_items array instead */
   wanted_quantity?: number
-  contact_method: string
+  wanted_items?: WantedItem[]  // 新增：想要物品陣列（用於交換刊登）
+  discord_contact: string      // Discord 聯絡方式（必填，來自 OAuth）
+  ingame_name: string | null   // 遊戲內角色名（選填）
+  seller_discord_id: string | null  // Discord User ID（用於 Deep Link）
   webhook_url?: string
   status: 'active' | 'sold' | 'cancelled'
   view_count: number
@@ -656,8 +696,6 @@ export interface ListingWithUserInfo {
 
   // 物品屬性資訊（來自 item_stats 表）
   item_stats: import('./item-stats').ItemStats | null
-  stats_grade: import('./item-stats').StatsGrade | null
-  stats_score: number | null
 
   // 賣家資訊（來自 API join）
   seller: {

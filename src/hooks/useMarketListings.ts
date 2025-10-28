@@ -73,18 +73,22 @@ export function useMarketListings({
       params.append('max_price', filter.priceRange.max.toString())
     }
 
-    // 物品屬性篩選
-    if (filter.itemStatsFilter.min_watk) {
-      params.append('min_watk', filter.itemStatsFilter.min_watk.toString())
-    }
-    if (filter.itemStatsFilter.min_matk) {
-      params.append('min_matk', filter.itemStatsFilter.min_matk.toString())
-    }
-    if (filter.itemStatsFilter.min_wdef) {
-      params.append('min_wdef', filter.itemStatsFilter.min_wdef.toString())
-    }
-    if (filter.itemStatsFilter.stats_grade && filter.itemStatsFilter.stats_grade.length > 0) {
-      params.append('stats_grade', filter.itemStatsFilter.stats_grade.join(','))
+    // 物品屬性篩選（動態版本 - 支援多個篩選項）
+    if (filter.itemStatsFilter && filter.itemStatsFilter.length > 0) {
+      filter.itemStatsFilter.forEach((statFilter, index) => {
+        // 最小值
+        if (statFilter.minValue !== null) {
+          params.append(`stat_${index}_key`, statFilter.statKey)
+          params.append(`stat_${index}_min`, statFilter.minValue.toString())
+        }
+        // 最大值（可選）
+        if (statFilter.maxValue !== null) {
+          if (!params.has(`stat_${index}_key`)) {
+            params.append(`stat_${index}_key`, statFilter.statKey)
+          }
+          params.append(`stat_${index}_max`, statFilter.maxValue.toString())
+        }
+      })
     }
 
     // 排序

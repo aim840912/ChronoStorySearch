@@ -98,11 +98,11 @@ export function BaseModal({
 
   return (
     <div
-      className={`fixed inset-0 ${zIndex} flex items-start justify-center pt-8 sm:pt-16 p-0 sm:px-4 sm:pb-4 bg-black/50 backdrop-blur-sm overflow-y-auto`}
+      className={`fixed inset-0 ${zIndex} flex items-start justify-center pt-8 sm:pt-16 p-0 sm:px-4 sm:pb-4 bg-black/50 backdrop-blur-sm overflow-y-auto scrollbar-hide`}
       onClick={handleBackdropClick}
     >
       <div
-        className={`bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full ${maxWidth} max-h-[90vh] overflow-hidden flex flex-col my-auto`}
+        className={`bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full ${maxWidth} max-h-[90vh] overflow-y-auto scrollbar-hide flex flex-col my-auto`}
         onClick={(e) => e.stopPropagation()}
       >
         {children}

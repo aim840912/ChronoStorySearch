@@ -1,15 +1,12 @@
 'use client'
 
-import type { ItemStats, StatsGrade } from '@/types/item-stats'
-import { STAT_LABELS_ZH, STAT_LABELS_EN, STATS_GRADE_INFO, STAT_KEYS } from '@/types/item-stats'
+import type { ItemStats } from '@/types/item-stats'
+import { STAT_LABELS_ZH, STAT_LABELS_EN, STAT_KEYS } from '@/types/item-stats'
 
 interface StatsComparisonCardProps {
   stats: ItemStats
-  grade?: StatsGrade | null
-  score?: number | null
   locale?: 'zh-TW' | 'en'
   className?: string
-  showGrade?: boolean
   showMaxValues?: boolean
   compact?: boolean
 }
@@ -19,18 +16,14 @@ interface StatsComparisonCardProps {
  *
  * 功能：
  * - 顯示物品的實際屬性與最大屬性
- * - 顯示素質等級 (S/A/B/C/D/F)
  * - 用進度條視覺化呈現屬性比例
  * - 支援精簡模式(僅顯示有值的屬性)
  * - 支援中英雙語
  */
 export function StatsComparisonCard({
   stats,
-  grade,
-  score,
   locale = 'zh-TW',
   className = '',
-  showGrade = true,
   showMaxValues = true,
   compact = false
 }: StatsComparisonCardProps) {
@@ -148,30 +141,6 @@ export function StatsComparisonCard({
 
   return (
     <div className={`space-y-4 ${className}`}>
-      {/* 素質等級 */}
-      {showGrade && grade && score !== null && (
-        <div className="p-3 rounded-lg bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800/50 dark:to-gray-800/30">
-          <div className="flex items-center justify-between">
-            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-              {locale === 'zh-TW' ? '素質等級' : 'Grade'}
-            </span>
-            <div className="flex items-center gap-2">
-              <span
-                className={`px-3 py-1 text-lg font-bold rounded ${STATS_GRADE_INFO[grade].color}`}
-              >
-                {grade}
-              </span>
-              <span className="text-sm text-gray-600 dark:text-gray-400">
-                {locale === 'zh-TW' ? STATS_GRADE_INFO[grade].label_zh : STATS_GRADE_INFO[grade].label_en}
-              </span>
-              <span className="text-xs text-gray-500 dark:text-gray-400">
-                ({score}%)
-              </span>
-            </div>
-          </div>
-        </div>
-      )}
-
       {/* 攻擊屬性 */}
       {renderStatGroup(
         locale === 'zh-TW' ? '攻擊屬性' : 'Attack',

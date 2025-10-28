@@ -7,7 +7,6 @@ import type {
   AdvancedFilterOptions,
   ItemAttributesEssential
 } from '@/types'
-import type { StatsGrade } from '@/types/item-stats'
 import {
   matchesItemCategoryFilter,
   matchesJobClassFilter,
@@ -40,7 +39,7 @@ export function useMarketFilter({
   const [marketFilter, setMarketFilter] = useState<MarketFilterOptions>({
     tradeTypes: [],
     priceRange: { min: null, max: null },
-    itemStatsFilter: {},
+    itemStatsFilter: [], // 改為空陣列
     sortBy: 'created_at',
     sortOrder: 'desc'
   })
@@ -123,27 +122,10 @@ export function useMarketFilter({
   }, [])
 
   /**
-   * 更新物品屬性篩選
-   */
-  const setItemStatsFilter = useCallback((
-    stats: {
-      min_watk?: number
-      min_matk?: number
-      min_wdef?: number
-      stats_grade?: StatsGrade[]
-    }
-  ) => {
-    setMarketFilter(prev => ({
-      ...prev,
-      itemStatsFilter: stats
-    }))
-  }, [])
-
-  /**
    * 更新排序方式
    */
   const setSorting = useCallback((
-    sortBy: 'created_at' | 'price' | 'stats_score',
+    sortBy: 'created_at' | 'price',
     sortOrder: 'asc' | 'desc'
   ) => {
     setMarketFilter(prev => ({ ...prev, sortBy, sortOrder }))
@@ -156,7 +138,7 @@ export function useMarketFilter({
     setMarketFilter({
       tradeTypes: [],
       priceRange: { min: null, max: null },
-      itemStatsFilter: {},
+      itemStatsFilter: [], // 改為空陣列
       sortBy: 'created_at',
       sortOrder: 'desc'
     })
@@ -170,7 +152,7 @@ export function useMarketFilter({
       marketFilter.tradeTypes.length > 0 ||
       marketFilter.priceRange.min !== null ||
       marketFilter.priceRange.max !== null ||
-      Object.keys(marketFilter.itemStatsFilter).length > 0
+      marketFilter.itemStatsFilter.length > 0 // 改為檢查陣列長度
     )
   }, [marketFilter])
 
@@ -179,7 +161,6 @@ export function useMarketFilter({
     setMarketFilter,
     setTradeTypes,
     setPriceRange,
-    setItemStatsFilter,
     setSorting,
     resetMarketFilter,
     getFilteredItemIds,

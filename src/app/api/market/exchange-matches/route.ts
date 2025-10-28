@@ -37,10 +37,21 @@ async function handleGET(request: NextRequest, user: User) {
     listing_id: listingIdNum
   })
 
-  // 1. 查詢我的刊登（驗證存在且為 exchange 類型）
+  // 1. 查詢我的刊登（驗證存在且為 exchange 類型，JOIN wanted_items）
   const { data: myListing, error: myListingError } = await supabaseAdmin
     .from('listings')
-    .select('id, user_id, trade_type, item_id, wanted_item_id, quantity, wanted_quantity, status')
+    .select(`
+      id,
+      user_id,
+      trade_type,
+      item_id,
+      quantity,
+      status,
+      listing_wanted_items (
+        item_id,
+        quantity
+      )
+    `)
     .eq('id', listingIdNum)
     .is('deleted_at', null)
     .single()
@@ -55,32 +66,32 @@ async function handleGET(request: NextRequest, user: User) {
     throw new ValidationError('只有交換類型的刊登才能查詢匹配')
   }
 
-  // 驗證有 wanted_item_id
-  if (!myListing.wanted_item_id) {
+  // 驗證有 wanted_items
+  if (!myListing.listing_wanted_items || myListing.listing_wanted_items.length === 0) {
     throw new ValidationError('交換刊登缺少想要的物品')
   }
 
-  // 2. 查詢匹配的刊登
-  // 匹配條件：
-  // - 對方有我想要的物品 (l2.item_id = l1.wanted_item_id)
-  // - 對方想要我有的物品 (l2.wanted_item_id = l1.item_id)
-  // - 雙方都是 exchange 類型
-  // - 雙方都是 active 狀態
-  // - 不是同一個用戶
-  const { data: matches, error: matchesError } = await supabaseAdmin
+  // 提取我想要的物品 ID 列表
+  const myWantedItemIds = myListing.listing_wanted_items.map((item: any) => item.item_id)
+
+  // 2. 查詢候選匹配刊登
+  // 第一步：找到所有有我想要物品的刊登（對方的 item_id 在我的 wanted_items 中）
+  const { data: candidateListings, error: matchesError } = await supabaseAdmin
     .from('listings')
     .select(`
       id,
       user_id,
       trade_type,
       item_id,
-      wanted_item_id,
       quantity,
-      wanted_quantity,
       status,
       view_count,
       interest_count,
       created_at,
+      listing_wanted_items (
+        item_id,
+        quantity
+      ),
       users!inner (
         discord_username
       ),
@@ -91,9 +102,8 @@ async function handleGET(request: NextRequest, user: User) {
     .eq('trade_type', 'exchange')
     .eq('status', 'active')
     .is('deleted_at', null)
-    .eq('item_id', myListing.wanted_item_id)
-    .eq('wanted_item_id', myListing.item_id)
-    .neq('user_id', myListing.user_id)
+    .in('item_id', myWantedItemIds)  // 對方有我想要的物品
+    .neq('user_id', myListing.user_id)  // 排除自己
     .order('created_at', { ascending: false })
 
   if (matchesError) {
@@ -101,16 +111,35 @@ async function handleGET(request: NextRequest, user: User) {
     throw new ValidationError('查詢匹配失敗')
   }
 
-  // 3. 計算匹配分數並格式化結果
-  const formattedMatches = (matches || []).map((match: any) => {
-    // 計算匹配分數 (0-100)
-    // 基礎分數 50 分（雙向匹配）
-    let matchScore = 50
+  // 第二步：在代碼中過濾 - 對方的 wanted_items 必須包含我的 item_id
+  const validMatches = (candidateListings || []).filter((candidate: any) => {
+    const theirWantedItemIds = candidate.listing_wanted_items?.map((item: any) => item.item_id) || []
+    return theirWantedItemIds.includes(myListing.item_id)
+  })
 
-    // 數量匹配度 (最高 30 分)
-    const myQuantityRatio = Math.min(match.quantity / (myListing.wanted_quantity || 1), 1)
-    const theirQuantityRatio = Math.min(myListing.quantity / (match.wanted_quantity || 1), 1)
-    const quantityScore = Math.round((myQuantityRatio + theirQuantityRatio) / 2 * 30)
+  // 3. 計算匹配分數並格式化結果
+  const formattedMatches = validMatches.map((match: any) => {
+    // 計算匹配分數 (0-100)
+    // 基礎分數 40 分（雙向匹配）
+    let matchScore = 40
+
+    // 匹配物品數量加分 (最高 30 分)
+    // 如果對方的物品匹配我的多個想要物品，加分更高
+    const matchedItemsCount = myWantedItemIds.filter(id => id === match.item_id).length
+    const itemMatchBonus = Math.min(matchedItemsCount * 10, 30)
+    matchScore += itemMatchBonus
+
+    // 數量匹配度 (最高 10 分)
+    // 找到對應的 wanted_item 數量
+    const myWantedItem = myListing.listing_wanted_items.find((item: any) => item.item_id === match.item_id)
+    const myWantedQuantity = myWantedItem?.quantity || 1
+
+    const theirWantedItem = match.listing_wanted_items.find((item: any) => item.item_id === myListing.item_id)
+    const theirWantedQuantity = theirWantedItem?.quantity || 1
+
+    const myQuantityRatio = Math.min(match.quantity / myWantedQuantity, 1)
+    const theirQuantityRatio = Math.min(myListing.quantity / theirWantedQuantity, 1)
+    const quantityScore = Math.round((myQuantityRatio + theirQuantityRatio) / 2 * 10)
     matchScore += quantityScore
 
     // 信譽加分 (最高 20 分)
@@ -123,13 +152,16 @@ async function handleGET(request: NextRequest, user: User) {
       user_id: match.user_id,
       trade_type: match.trade_type,
       item_id: match.item_id,
-      wanted_item_id: match.wanted_item_id,
       quantity: match.quantity,
-      wanted_quantity: match.wanted_quantity,
       status: match.status,
       view_count: match.view_count,
       interest_count: match.interest_count,
       created_at: match.created_at,
+      // 對方想要的物品列表
+      wanted_items: match.listing_wanted_items?.map((item: any) => ({
+        item_id: item.item_id,
+        quantity: item.quantity
+      })) || [],
       seller: {
         discord_username: match.users?.discord_username || 'Unknown',
         reputation_score: reputationScore
@@ -152,9 +184,11 @@ async function handleGET(request: NextRequest, user: User) {
       my_listing: {
         id: myListing.id,
         item_id: myListing.item_id,
-        wanted_item_id: myListing.wanted_item_id,
         quantity: myListing.quantity,
-        wanted_quantity: myListing.wanted_quantity
+        wanted_items: myListing.listing_wanted_items.map((item: any) => ({
+          item_id: item.item_id,
+          quantity: item.quantity
+        }))
       },
       matches: formattedMatches
     },
