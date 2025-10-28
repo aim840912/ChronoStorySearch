@@ -41,7 +41,9 @@ yarn-error.log*
 next-env.d.ts
 
 # images and media files
-# /public/images/
+# 圖片已遷移到 Cloudflare R2，本地只保留 fallback 用的 default.svg
+/public/images/items/*.png
+/public/images/monsters/*.png
 # /public/products/
 # *.jpg
 # *.jpeg
