@@ -11,7 +11,8 @@ import type {
   ItemAttributesEssential,
   GachaMachine,
   ExtendedUniqueItem,
-  SearchTypeFilter
+  SearchTypeFilter,
+  MobInfo
 } from '@/types'
 
 // 統一的篩選資料介面（支援 Essential 和完整 Attributes）
@@ -22,7 +23,8 @@ import {
   matchesItemCategoryFilter,
   matchesJobClassFilter,
   matchesLevelRangeFilter,
-  matchesMonsterLevelRangeFilter
+  matchesMonsterLevelRangeFilter,
+  matchesElementWeaknessFilter
 } from '@/lib/filter-utils'
 import { findGachaItemAttributes } from '@/lib/gacha-utils'
 import { clientLogger } from '@/lib/logger'
@@ -38,6 +40,7 @@ interface UseFilterLogicParams {
   advancedFilter: AdvancedFilterOptions
   itemAttributesMap: Map<number, ItemAttributesEssential>
   mobLevelMap: Map<number, number | null>
+  mobInfoMap: Map<number, MobInfo>  // 怪物資訊 Map（用於屬性弱點篩選）
   gachaMachines: GachaMachine[]
   initialRandomGachaItems: Array<{
     itemId: number
@@ -69,6 +72,7 @@ export function useFilterLogic({
   advancedFilter,
   itemAttributesMap,
   mobLevelMap,
+  mobInfoMap,
   gachaMachines,
   initialRandomGachaItems,
 }: UseFilterLogicParams) {
@@ -237,6 +241,13 @@ export function useFilterLogic({
       )
     }
 
+    // 應用屬性弱點篩選（當啟用進階篩選且選擇了屬性弱點時）
+    if (advancedFilter.enabled && advancedFilter.elementWeaknesses.length > 0) {
+      monsters = monsters.filter(monster =>
+        matchesElementWeaknessFilter(monster.mobId, mobInfoMap, advancedFilter)
+      )
+    }
+
     // 按等級排序（由低到高，null 值在最後）
     monsters.sort((a, b) => {
       const levelA = mobLevelMap.get(a.mobId) ?? null
@@ -251,7 +262,7 @@ export function useFilterLogic({
     })
 
     return monsters
-  }, [filterMode, filteredDrops, searchType, advancedFilter, mobLevelMap])
+  }, [filterMode, filteredDrops, searchType, advancedFilter, mobLevelMap, mobInfoMap])
 
   // 計算「全部」模式的唯一物品清單（每個物品只出現一次，整合掉落和轉蛋）
   const uniqueAllItems = useMemo((): ExtendedUniqueItem[] => {
@@ -553,12 +564,20 @@ export function useFilterLogic({
     }
 
     // 如果啟用進階篩選且選擇了物品專屬篩選，不顯示怪物
+    // 但如果選擇了屬性弱點（怪物專屬篩選），則顯示怪物
     if (advancedFilter.enabled) {
+      const hasMonsterSpecificFilter = advancedFilter.elementWeaknesses.length > 0
+
       const hasItemSpecificFilter =
         advancedFilter.itemCategories.length > 0 ||
         advancedFilter.jobClasses.length > 0 ||
         // 在 'all' 模式下（能執行到這裡表示 searchType === 'all'），等級範圍視為物品專屬篩選
         (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null)
+
+      // 如果有怪物專屬篩選，則顯示怪物（即使也有物品篩選）
+      if (hasMonsterSpecificFilter) {
+        return true
+      }
 
       if (hasItemSpecificFilter) {
         return false  // 不顯示怪物

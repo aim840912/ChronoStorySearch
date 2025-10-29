@@ -570,6 +570,14 @@ export type JobClass =
   | 'thief'       // 盜賊
   | 'pirate'      // 海盜
 
+// 元素屬性類型
+export type ElementType =
+  | 'fire'        // 火
+  | 'ice'         // 冰
+  | 'lightning'   // 雷
+  | 'holy'        // 神聖
+  | 'poison'      // 毒
+
 // 等級範圍
 export interface LevelRange {
   min: number | null  // 最小等級
@@ -586,6 +594,9 @@ export interface AdvancedFilterOptions {
 
   // 職業篩選（多選）
   jobClasses: JobClass[]
+
+  // 屬性弱點篩選（多選，僅適用於怪物）
+  elementWeaknesses: ElementType[]
 
   // 等級範圍篩選
   levelRange: LevelRange

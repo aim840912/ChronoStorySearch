@@ -121,7 +121,8 @@
       "WebFetch(domain:mrsoupman.github.io)",
       "Bash(npx wrangler:*)",
       "WebFetch(domain:maplestoryworlds-creators.nexon.com)",
-      "Bash(git mv:*)"
+      "Bash(git mv:*)",
+      "Bash(xargs:*)"
     ],
     "deny": [],
     "ask": [

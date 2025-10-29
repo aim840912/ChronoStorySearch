@@ -3,5 +3,26 @@
   "sale_price": 1,
   "max_stack_count": 1000,
   "untradeable": null,
-  "item_description": ""
+  "item_description": "",
+  "scroll": {
+    "category": "Two Handed Axe",
+    "success_rate": 100,
+    "destroy_rate": 0,
+    "stats": {
+      "str": null,
+      "dex": null,
+      "int": null,
+      "luk": null,
+      "watk": null,
+      "matk": null,
+      "accuracy": 1,
+      "avoidability": null,
+      "speed": null,
+      "jump": null,
+      "hp": null,
+      "mp": null,
+      "wdef": null,
+      "mdef": null
+    }
+  }
 }
