@@ -1,5 +1,6 @@
 import { NextRequest } from 'next/server'
 import { withAuthAndError, User } from '@/lib/middleware/api-middleware'
+import { requireTradingEnabled } from '@/lib/middleware/trading-middleware'
 import { successWithPagination, parsePaginationParams, calculatePagination } from '@/lib/api-response'
 import { ValidationError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
@@ -117,8 +118,10 @@ async function handleGET(_request: NextRequest, user: User) {
   return successWithPagination(formattedListings, pagination, '查詢成功')
 }
 
-// 🔒 需要認證：防止 Bot 大量爬取
-export const GET = withAuthAndError(handleGET, {
-  module: 'MarketAPI',
-  enableAuditLog: false
-})
+// 🔒 需要認證：防止 Bot 大量爬取 + 檢查交易系統開關
+export const GET = requireTradingEnabled(
+  withAuthAndError(handleGET, {
+    module: 'MarketAPI',
+    enableAuditLog: false
+  })
+)

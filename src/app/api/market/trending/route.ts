@@ -1,5 +1,6 @@
 import { NextRequest } from 'next/server'
 import { withBotDetection } from '@/lib/bot-detection/api-middleware'
+import { requireTradingEnabled } from '@/lib/middleware/trading-middleware'
 import { success } from '@/lib/api-response'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
@@ -77,13 +78,15 @@ async function handleGET(_request: NextRequest) {
   return success(formattedListings, '查詢成功')
 }
 
-// 🔓 公開端點 + 🛡️ Bot Detection
-// 使用 withBotDetection 整合錯誤處理和 Bot 防護
-export const GET = withBotDetection(handleGET, {
-  module: 'TrendingAPI',
-  botDetection: {
-    enableRateLimit: true,
-    enableBehaviorDetection: true,
-    rateLimit: DEFAULT_RATE_LIMITS.TRENDING, // 30次/小時（嚴格限制）
-  },
-})
+// 🔓 公開端點 + 🛡️ Bot Detection + 交易系統開關檢查
+// 使用 requireTradingEnabled 包裝 + withBotDetection 整合錯誤處理和 Bot 防護
+export const GET = requireTradingEnabled(
+  withBotDetection(handleGET, {
+    module: 'TrendingAPI',
+    botDetection: {
+      enableRateLimit: true,
+      enableBehaviorDetection: true,
+      rateLimit: DEFAULT_RATE_LIMITS.TRENDING, // 30次/小時（嚴格限制）
+    },
+  })
+)

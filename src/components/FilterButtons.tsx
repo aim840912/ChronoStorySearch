@@ -1,6 +1,7 @@
 'use client'
 
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useSystemStatus } from '@/hooks/useSystemStatus'
 import type { FilterMode, ClearModalType, AdvancedFilterOptions } from '@/types'
 import type { User } from '@/lib/auth/session-validator'
 
@@ -43,6 +44,7 @@ export function FilterButtons({
   onOpenInterests,
 }: FilterButtonsProps) {
   const { t } = useLanguage()
+  const { tradingEnabled } = useSystemStatus()
 
   // 生成篩選條件摘要
   const getFilterSummary = (): string => {
@@ -182,8 +184,8 @@ export function FilterButtons({
           )}
         </button>
 
-        {/* 市場刊登按鈕 - 僅已登入用戶可見 */}
-        {user && (
+        {/* 市場刊登按鈕 - 僅已登入用戶且交易系統啟用時可見 */}
+        {user && tradingEnabled && (
           <button
             onClick={() => onFilterChange('market-listings')}
             className={`px-6 py-2.5 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 ${
@@ -199,8 +201,8 @@ export function FilterButtons({
           </button>
         )}
 
-        {/* 市場功能按鈕 - 僅在市場模式且已登入時顯示 */}
-        {filterMode === 'market-listings' && user && (
+        {/* 市場功能按鈕 - 僅在市場模式、已登入且交易系統啟用時顯示 */}
+        {filterMode === 'market-listings' && user && tradingEnabled && (
           <>
             {/* 建立刊登 */}
             <button

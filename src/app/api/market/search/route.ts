@@ -1,6 +1,7 @@
 import { NextRequest } from 'next/server'
 import { User } from '@/lib/middleware/api-middleware'
 import { withAuthAndBotDetection } from '@/lib/bot-detection/api-middleware'
+import { requireTradingEnabled } from '@/lib/middleware/trading-middleware'
 import {
   successWithPagination,
   parsePaginationParams,
@@ -404,13 +405,15 @@ async function handleGET(_request: NextRequest, user: User) {
 }
 
 // 🔒 需要認證 + 🛡️ Bot Detection
-// 使用 withAuthAndBotDetection 整合認證、錯誤處理和 Bot 防護
-export const GET = withAuthAndBotDetection(handleGET, {
-  module: 'MarketSearchAPI',
-  enableAuditLog: false,
-  botDetection: {
-    enableRateLimit: true,
-    enableBehaviorDetection: true,
-    rateLimit: DEFAULT_RATE_LIMITS.SEARCH, // 40次/小時（中等限制）
-  },
-})
+// 使用 requireTradingEnabled 包裝 + withAuthAndBotDetection 整合認證、錯誤處理和 Bot 防護
+export const GET = requireTradingEnabled(
+  withAuthAndBotDetection(handleGET, {
+    module: 'MarketSearchAPI',
+    enableAuditLog: false,
+    botDetection: {
+      enableRateLimit: true,
+      enableBehaviorDetection: true,
+      rateLimit: DEFAULT_RATE_LIMITS.SEARCH, // 40次/小時（中等限制）
+    },
+  })
+)

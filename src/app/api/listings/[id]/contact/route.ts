@@ -1,5 +1,6 @@
 import { NextRequest } from 'next/server'
 import { withAuthAndError, User } from '@/lib/middleware/api-middleware'
+import { requireTradingEnabled } from '@/lib/middleware/trading-middleware'
 import { success } from '@/lib/api-response'
 import { ValidationError, NotFoundError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
@@ -124,12 +125,14 @@ function getSecondsUntilMidnight(): number {
   return Math.floor((midnight.getTime() - now.getTime()) / 1000)
 }
 
-// 🔒 需要認證
-export const GET = withAuthAndError(
-  async (request: NextRequest, user: User, context: { params: Promise<{ id: string }> }) =>
-    handleGET(request, user, context),
-  {
-    module: 'ListingContactAPI',
-    enableAuditLog: true
-  }
+// 🔒 需要認證：使用 requireTradingEnabled + withAuthAndError
+export const GET = requireTradingEnabled(
+  withAuthAndError(
+    async (request: NextRequest, user: User, context: { params: Promise<{ id: string }> }) =>
+      handleGET(request, user, context),
+    {
+      module: 'ListingContactAPI',
+      enableAuditLog: true
+    }
+  )
 )

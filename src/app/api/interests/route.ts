@@ -1,5 +1,6 @@
 import { NextRequest } from 'next/server'
 import { withAuthAndError, User } from '@/lib/middleware/api-middleware'
+import { requireTradingEnabled } from '@/lib/middleware/trading-middleware'
 import { success, created } from '@/lib/api-response'
 import { ValidationError, NotFoundError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
@@ -154,13 +155,17 @@ async function handlePOST(request: NextRequest, user: User) {
   return created(interest, '購買意向登記成功')
 }
 
-// 🔒 需要認證
-export const GET = withAuthAndError(handleGET, {
-  module: 'InterestAPI',
-  enableAuditLog: false
-})
+// 🔒 需要認證 + 交易系統開關檢查
+export const GET = requireTradingEnabled(
+  withAuthAndError(handleGET, {
+    module: 'InterestAPI',
+    enableAuditLog: false
+  })
+)
 
-export const POST = withAuthAndError(handlePOST, {
-  module: 'InterestAPI',
-  enableAuditLog: true
-})
+export const POST = requireTradingEnabled(
+  withAuthAndError(handlePOST, {
+    module: 'InterestAPI',
+    enableAuditLog: true
+  })
+)

@@ -1,19 +1,46 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import { useAuth } from '@/contexts/AuthContext'
 import { useLanguage } from '@/contexts/LanguageContext'
 import type { User } from '@/lib/auth/session-validator'
 
 /**
  * 用戶選單元件
- * 顯示用戶頭像、用戶名和下拉選單（個人資料、登出）
+ * 顯示用戶頭像、用戶名和下拉選單（個人資料、系統設定（管理員）、登出）
  */
 export function UserMenu() {
+  const router = useRouter()
   const { user, logout } = useAuth()
   const { t } = useLanguage()
   const [isOpen, setIsOpen] = useState(false)
+  const [isAdmin, setIsAdmin] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
+
+  // 檢查管理員權限
+  useEffect(() => {
+    async function checkAdminStatus() {
+      if (!user) return
+
+      try {
+        const response = await fetch('/api/auth/me/roles', {
+          credentials: 'include'
+        })
+
+        if (response.ok) {
+          const data = await response.json()
+          if (data.success && data.data.isAdmin) {
+            setIsAdmin(true)
+          }
+        }
+      } catch {
+        // 忽略錯誤，預設為非管理員
+      }
+    }
+
+    checkAdminStatus()
+  }, [user])
 
   // 點擊外部關閉選單
   useEffect(() => {
@@ -96,6 +123,23 @@ export function UserMenu() {
             {t('auth.profile')}
             <span className="ml-auto text-xs text-gray-400">{t('gacha.startDrawing')}</span>
           </button>
+
+          {/* 系統設定（僅管理員） */}
+          {isAdmin && (
+            <button
+              onClick={() => {
+                setIsOpen(false)
+                router.push('/admin/system-settings')
+              }}
+              className="w-full px-4 py-2 text-left text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-150 flex items-center gap-2"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              {t('admin.systemSettings')}
+            </button>
+          )}
 
           {/* 分隔線 */}
           <div className="border-t border-gray-200 dark:border-gray-700 my-1"></div>

@@ -1,5 +1,6 @@
 import { NextRequest } from 'next/server'
 import { withAuthAndError, User } from '@/lib/middleware/api-middleware'
+import { requireTradingEnabled } from '@/lib/middleware/trading-middleware'
 import { success } from '@/lib/api-response'
 import { ValidationError, NotFoundError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
@@ -310,31 +311,37 @@ async function handleDELETE(
   return success(deletedListing, '刊登刪除成功')
 }
 
-// 🔒 需要認證：使用 withAuthAndError
+// 🔒 需要認證：使用 requireTradingEnabled + withAuthAndError
 // 注意：withAuthAndError 需要適配 context 參數
-export const GET = withAuthAndError(
-  async (request: NextRequest, user: User, context: { params: Promise<{ id: string }> }) =>
-    handleGET(request, user, context),
-  {
-    module: 'ListingAPI',
-    enableAuditLog: false
-  }
+export const GET = requireTradingEnabled(
+  withAuthAndError(
+    async (request: NextRequest, user: User, context: { params: Promise<{ id: string }> }) =>
+      handleGET(request, user, context),
+    {
+      module: 'ListingAPI',
+      enableAuditLog: false
+    }
+  )
 )
 
-export const PATCH = withAuthAndError(
-  async (request: NextRequest, user: User, context: { params: Promise<{ id: string }> }) =>
-    handlePATCH(request, user, context),
-  {
-    module: 'ListingAPI',
-    enableAuditLog: true
-  }
+export const PATCH = requireTradingEnabled(
+  withAuthAndError(
+    async (request: NextRequest, user: User, context: { params: Promise<{ id: string }> }) =>
+      handlePATCH(request, user, context),
+    {
+      module: 'ListingAPI',
+      enableAuditLog: true
+    }
+  )
 )
 
-export const DELETE = withAuthAndError(
-  async (request: NextRequest, user: User, context: { params: Promise<{ id: string }> }) =>
-    handleDELETE(request, user, context),
-  {
-    module: 'ListingAPI',
-    enableAuditLog: true
-  }
+export const DELETE = requireTradingEnabled(
+  withAuthAndError(
+    async (request: NextRequest, user: User, context: { params: Promise<{ id: string }> }) =>
+      handleDELETE(request, user, context),
+    {
+      module: 'ListingAPI',
+      enableAuditLog: true
+    }
+  )
 )

@@ -12,6 +12,7 @@ import { LoginButton } from '@/components/auth/LoginButton'
 import { UserMenu } from '@/components/auth/UserMenu'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useAuth } from '@/contexts/AuthContext'
+import { useSystemStatus } from '@/hooks/useSystemStatus'
 
 interface SearchHeaderProps {
   // 搜尋相關
@@ -93,6 +94,7 @@ export const SearchHeader = memo(function SearchHeader({
 }: SearchHeaderProps) {
   const { t } = useLanguage()
   const { user, loading } = useAuth()
+  const { tradingEnabled } = useSystemStatus()
 
   // 根據 filterMode 決定搜尋列的 placeholder
   const searchPlaceholder = filterMode === 'market-listings'
@@ -161,7 +163,7 @@ export const SearchHeader = memo(function SearchHeader({
       )}
 
       {/* 市場篩選面板（市場模式） */}
-      {filterMode === 'market-listings' && (
+      {filterMode === 'market-listings' && tradingEnabled && (
         <MarketFilterPanel
           filter={marketFilter}
           onFilterChange={onMarketFilterChange}

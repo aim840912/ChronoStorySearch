@@ -7,6 +7,7 @@ import { FavoriteItemsList } from '@/components/lists/FavoriteItemsList'
 import { AllItemsView } from '@/components/lists/AllItemsView'
 import { MarketListView } from '@/components/trade/MarketListView'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useSystemStatus } from '@/hooks/useSystemStatus'
 
 // 類型定義（與內部元件一致）
 import type { ExtendedUniqueItem } from '@/types'
@@ -124,6 +125,7 @@ export const ContentDisplay = memo(function ContentDisplay({
   onMarketRefresh,
 }: ContentDisplayProps) {
   const { t } = useLanguage()
+  const { tradingEnabled } = useSystemStatus()
 
   // 載入中
   if (isLoading) {
@@ -139,19 +141,46 @@ export const ContentDisplay = memo(function ContentDisplay({
     <>
       {filterMode === 'market-listings' ? (
         /* 市場刊登模式 */
-        <div className="mt-8">
-          <MarketListView
-            listings={marketListings}
-            pagination={marketPagination}
-            isLoading={isMarketLoading}
-            error={marketError}
-            isRefreshing={isMarketRefreshing}
-            refreshError={marketRefreshError}
-            onListingClick={onListingClick}
-            onPageChange={onMarketPageChange}
-            onRefresh={onMarketRefresh}
-          />
-        </div>
+        tradingEnabled ? (
+          <div className="mt-8">
+            <MarketListView
+              listings={marketListings}
+              pagination={marketPagination}
+              isLoading={isMarketLoading}
+              error={marketError}
+              isRefreshing={isMarketRefreshing}
+              refreshError={marketRefreshError}
+              onListingClick={onListingClick}
+              onPageChange={onMarketPageChange}
+              onRefresh={onMarketRefresh}
+            />
+          </div>
+        ) : (
+          /* 交易系統已關閉提示 */
+          <div className="mt-8 text-center py-12">
+            <div className="max-w-md mx-auto">
+              <svg
+                className="w-16 h-16 mx-auto text-gray-400 dark:text-gray-600 mb-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                {t('market.systemDisabled')}
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                {t('market.systemDisabledMessage')}
+              </p>
+            </div>
+          </div>
+        )
       ) : filterMode === 'favorite-monsters' ? (
         /* 最愛怪物模式 */
         <FavoriteMonstersList

@@ -1,5 +1,6 @@
 import { NextRequest } from 'next/server'
 import { withAuthAndError, User } from '@/lib/middleware/api-middleware'
+import { requireTradingEnabled } from '@/lib/middleware/trading-middleware'
 import { success } from '@/lib/api-response'
 import { ValidationError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
@@ -83,8 +84,10 @@ async function handleGET(_request: NextRequest, user: User) {
   return success(formattedInterests, '查詢成功')
 }
 
-// 🔒 需要認證
-export const GET = withAuthAndError(handleGET, {
-  module: 'InterestAPI',
-  enableAuditLog: false
-})
+// 🔒 需要認證 + 交易系統開關檢查
+export const GET = requireTradingEnabled(
+  withAuthAndError(handleGET, {
+    module: 'InterestAPI',
+    enableAuditLog: false
+  })
+)

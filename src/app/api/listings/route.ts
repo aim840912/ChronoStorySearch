@@ -1,6 +1,7 @@
 import { NextRequest } from 'next/server'
 import { User } from '@/lib/middleware/api-middleware'
 import { withAuthAndBotDetection } from '@/lib/bot-detection/api-middleware'
+import { requireTradingEnabled } from '@/lib/middleware/trading-middleware'
 import { success, created } from '@/lib/api-response'
 import { ValidationError, DatabaseError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
@@ -304,23 +305,28 @@ async function handlePOST(request: NextRequest, user: User) {
 }
 
 // 🔒 需要認證 + 🛡️ Bot Detection
+// 使用 requireTradingEnabled 包裝，檢查交易系統是否啟用
 // 使用 withAuthAndBotDetection 整合認證、錯誤處理和 Bot 防護
-export const GET = withAuthAndBotDetection(handleGET, {
-  module: 'ListingAPI',
-  enableAuditLog: false,
-  botDetection: {
-    enableRateLimit: true,
-    enableBehaviorDetection: true,
-    rateLimit: DEFAULT_RATE_LIMITS.AUTHENTICATED, // 100次/小時（認證用戶寬鬆限制）
-  },
-})
+export const GET = requireTradingEnabled(
+  withAuthAndBotDetection(handleGET, {
+    module: 'ListingAPI',
+    enableAuditLog: false,
+    botDetection: {
+      enableRateLimit: true,
+      enableBehaviorDetection: true,
+      rateLimit: DEFAULT_RATE_LIMITS.AUTHENTICATED, // 100次/小時（認證用戶寬鬆限制）
+    },
+  })
+)
 
-export const POST = withAuthAndBotDetection(handlePOST, {
-  module: 'ListingAPI',
-  enableAuditLog: true,
-  botDetection: {
-    enableRateLimit: true,
-    enableBehaviorDetection: true,
-    rateLimit: DEFAULT_RATE_LIMITS.AUTHENTICATED, // 100次/小時（認證用戶寬鬆限制）
-  },
-})
+export const POST = requireTradingEnabled(
+  withAuthAndBotDetection(handlePOST, {
+    module: 'ListingAPI',
+    enableAuditLog: true,
+    botDetection: {
+      enableRateLimit: true,
+      enableBehaviorDetection: true,
+      rateLimit: DEFAULT_RATE_LIMITS.AUTHENTICATED, // 100次/小時（認證用戶寬鬆限制）
+    },
+  })
+)
