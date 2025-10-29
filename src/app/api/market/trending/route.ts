@@ -1,22 +1,25 @@
-import { withErrorHandler } from '@/lib/middleware/error-handler'
+import { NextRequest } from 'next/server'
+import { withBotDetection } from '@/lib/bot-detection/api-middleware'
 import { success } from '@/lib/api-response'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
+import { DEFAULT_RATE_LIMITS } from '@/lib/bot-detection/constants'
 
 /**
  * GET /api/market/trending - 熱門商品列表
  *
  * 功能：
  * - 🔓 公開端點（SEO 友善，無需認證）
+ * - 🛡️ Bot Detection：User-Agent 過濾 + Rate Limiting（30次/小時）
  * - 查詢 status = 'active' 的刊登
  * - 按 view_count 降序排序
  * - 限制 10 筆（固定，無分頁）
  * - JOIN users 和 discord_profiles 獲取賣家資訊
  *
- * 認證要求：🔓 公開（withErrorHandler）
+ * 認證要求：🔓 公開（withBotDetection）
  * 參考文件：docs/architecture/交易系統/03-API設計.md
  */
-async function handleGET() {
+async function handleGET(_request: NextRequest) {
   apiLogger.debug('查詢熱門商品')
 
   // 1. 建立查詢（JOIN users 和 discord_profiles，使用嵌套語法）
@@ -74,7 +77,13 @@ async function handleGET() {
   return success(formattedListings, '查詢成功')
 }
 
-// 🔓 公開端點：僅使用 withErrorHandler（不使用 withAuthAndError）
-export const GET = withErrorHandler(handleGET, {
-  module: 'TrendingAPI'
+// 🔓 公開端點 + 🛡️ Bot Detection
+// 使用 withBotDetection 整合錯誤處理和 Bot 防護
+export const GET = withBotDetection(handleGET, {
+  module: 'TrendingAPI',
+  botDetection: {
+    enableRateLimit: true,
+    enableBehaviorDetection: true,
+    rateLimit: DEFAULT_RATE_LIMITS.TRENDING, // 30次/小時（嚴格限制）
+  },
 })

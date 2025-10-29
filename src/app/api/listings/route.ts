@@ -1,9 +1,11 @@
 import { NextRequest } from 'next/server'
-import { withAuthAndError, User } from '@/lib/middleware/api-middleware'
+import { User } from '@/lib/middleware/api-middleware'
+import { withAuthAndBotDetection } from '@/lib/bot-detection/api-middleware'
 import { success, created } from '@/lib/api-response'
 import { ValidationError, DatabaseError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
+import { DEFAULT_RATE_LIMITS } from '@/lib/bot-detection/constants'
 import { validateAndCalculateStats } from '@/lib/validation/item-stats'
 import type { ItemStats } from '@/types/item-stats'
 import { checkAccountAge, checkServerMembershipWithCache } from '@/lib/services/discord-verification'
@@ -17,11 +19,13 @@ const MAX_ACTIVE_LISTINGS = 5 // 每用戶最多 5 個活躍刊登
  * GET /api/listings - 查詢我的刊登
  *
  * 功能：
+ * - 🔒 需要認證
+ * - 🛡️ Bot Detection：User-Agent 過濾 + Rate Limiting（100次/小時，認證用戶較寬鬆）
  * - 查詢當前用戶的所有刊登
  * - 支援篩選：status, trade_type
  * - RLS 自動過濾 user_id
  *
- * 認證要求：🔒 需要認證
+ * 認證要求：🔒 認證 + Bot Detection
  * 參考文件：docs/architecture/交易系統/03-API設計.md
  */
 async function handleGET(request: NextRequest, user: User) {
@@ -39,8 +43,12 @@ async function handleGET(request: NextRequest, user: User) {
     .from('listings')
     .select('*')
     .eq('user_id', user.id)
-    .is('deleted_at', null)
     .order('created_at', { ascending: false })
+
+  // 只有在不查詢 cancelled 狀態時，才過濾掉已刪除的刊登
+  if (status !== 'cancelled') {
+    query = query.is('deleted_at', null)
+  }
 
   if (status !== 'all') {
     query = query.eq('status', status)
@@ -69,6 +77,8 @@ async function handleGET(request: NextRequest, user: User) {
  * POST /api/listings - 建立刊登
  *
  * 功能：
+ * - 🔒 需要認證 + Discord 驗證
+ * - 🛡️ Bot Detection：User-Agent 過濾 + Rate Limiting（100次/小時，認證用戶較寬鬆）
  * - 驗證 Discord 帳號年齡（必須滿 1 年）
  * - 驗證 Discord 伺服器成員資格
  * - 驗證 item_id, trade_type, price/wanted_item_id
@@ -76,7 +86,7 @@ async function handleGET(request: NextRequest, user: User) {
  * - 插入 listings 表
  * - 返回創建的刊登
  *
- * 認證要求：🔒 需要認證 + Discord 驗證
+ * 認證要求：🔒 認證 + Bot Detection + Discord 驗證
  * 參考文件：docs/architecture/交易系統/03-API設計.md
  */
 async function handlePOST(request: NextRequest, user: User) {
@@ -221,115 +231,96 @@ async function handlePOST(request: NextRequest, user: User) {
     guild_id: DISCORD_GUILD_ID
   })
 
-  // 6. 檢查配額限制（每用戶最多 5 個 active listings）
-  const { count: activeCount, error: countError } = await supabaseAdmin
-    .from('listings')
-    .select('*', { count: 'exact', head: true })
-    .eq('user_id', user.id)
-    .eq('status', 'active')
-    .is('deleted_at', null)
+  // 6. 使用資料庫交易函數安全地建立刊登（防止競態條件）
+  const { data: rpcResult, error: rpcError } = await supabaseAdmin.rpc('create_listing_safe', {
+    p_user_id: user.id,
+    p_item_id: item_id,
+    p_trade_type: trade_type,
+    p_price: trade_type !== 'exchange' ? price : null,
+    p_quantity: quantity || 1,
+    p_ingame_name: ingame_name?.trim() || null,
+    p_seller_discord_id: user.discord_id,
+    p_webhook_url: webhook_url || null,
+    p_item_stats: validatedStats ? JSON.stringify(validatedStats) : null,
+    p_wanted_items: trade_type === 'exchange' && wanted_items ? JSON.stringify(wanted_items) : null,
+    p_max_listings: MAX_ACTIVE_LISTINGS
+  })
 
-  if (countError) {
-    apiLogger.error('檢查配額失敗', { error: countError, user_id: user.id })
-    throw new ValidationError('檢查配額失敗')
-  }
-
-  if (activeCount !== null && activeCount >= MAX_ACTIVE_LISTINGS) {
-    apiLogger.warn('刊登配額已滿', {
-      user_id: user.id,
-      active_count: activeCount,
-      max_listings: MAX_ACTIVE_LISTINGS
-    })
-    throw new ValidationError(`您已達到刊登配額上限（${MAX_ACTIVE_LISTINGS} 個），請先刪除或完成現有刊登`)
-  }
-
-  // 5. 插入刊登資料
-  const listingData = {
-    user_id: user.id,
-    trade_type,
-    item_id,
-    quantity: quantity || 1,
-    price: trade_type !== 'exchange' ? price : null,
-    // 移除舊的 wanted_item_id 和 wanted_quantity（改用關聯表）
-    // 新的聯絡方式欄位
-    discord_contact: discord_contact.trim(),  // 必填，來自 OAuth
-    ingame_name: ingame_name?.trim() || null, // 選填，可為 null
-    seller_discord_id: user.discord_id,       // 保留 Deep Link 功能
-    webhook_url: webhook_url || null,
-    status: 'active',
-    view_count: 0,
-    interest_count: 0,
-    // 物品屬性（如果提供）
-    item_stats: validatedStats
-  }
-
-  const { data: listing, error: insertError } = await supabaseAdmin
-    .from('listings')
-    .insert(listingData)
-    .select()
-    .single()
-
-  if (insertError) {
-    apiLogger.error('建立刊登失敗', {
-      error: insertError,
-      user_id: user.id,
-      data: listingData
-    })
-    throw new ValidationError('建立刊登失敗')
-  }
-
-  // 6. 如果是交換類型，插入想要物品到關聯表
-  if (trade_type === 'exchange' && wanted_items && wanted_items.length > 0) {
-    const wantedItemsData = wanted_items.map((item: { item_id: number; quantity: number }) => ({
-      listing_id: listing.id,
-      item_id: item.item_id,
-      quantity: item.quantity
-    }))
-
-    const { error: wantedItemsError } = await supabaseAdmin
-      .from('listing_wanted_items')
-      .insert(wantedItemsData)
-
-    if (wantedItemsError) {
-      // 插入失敗：回滾 listing（刪除剛建立的刊登）
-      await supabaseAdmin
-        .from('listings')
-        .delete()
-        .eq('id', listing.id)
-
-      apiLogger.error('建立想要物品失敗（已回滾刊登）', {
-        error: wantedItemsError,
+  if (rpcError) {
+    // 檢查錯誤類型並提供友善訊息
+    if (rpcError.message?.includes('已達到刊登配額上限')) {
+      apiLogger.warn('刊登配額已滿', {
         user_id: user.id,
-        listing_id: listing.id
+        error: rpcError.message
       })
-
-      throw new DatabaseError('建立想要物品失敗', wantedItemsError as unknown as Record<string, unknown>)
+      throw new ValidationError(rpcError.message)
     }
 
-    apiLogger.debug('想要物品建立成功', {
+    if (rpcError.message?.includes('已經刊登此物品')) {
+      apiLogger.warn('用戶嘗試重複刊登相同物品', {
+        user_id: user.id,
+        item_id: item_id
+      })
+      throw new ValidationError(rpcError.message)
+    }
+
+    // 其他資料庫錯誤
+    apiLogger.error('建立刊登失敗（RPC 錯誤）', {
+      error: rpcError,
       user_id: user.id,
-      listing_id: listing.id,
-      wanted_items_count: wanted_items.length
+      item_id: item_id
     })
+    throw new DatabaseError('建立刊登失敗', rpcError as unknown as Record<string, unknown>)
   }
 
-  apiLogger.info('刊登建立成功', {
+  // RPC 函數返回結構化結果
+  const listingId = (rpcResult as { listing_id: number }).listing_id
+  const activeListingsCount = (rpcResult as { active_listings_count: number }).active_listings_count
+
+  // 查詢完整的刊登資料以返回給前端
+  const { data: listing, error: fetchError } = await supabaseAdmin
+    .from('listings')
+    .select('*')
+    .eq('id', listingId)
+    .single()
+
+  if (fetchError || !listing) {
+    apiLogger.error('查詢新建刊登失敗', {
+      error: fetchError,
+      listing_id: listingId
+    })
+    throw new DatabaseError('查詢新建刊登失敗', fetchError as unknown as Record<string, unknown>)
+  }
+
+  apiLogger.info('刊登建立成功（使用安全函數）', {
     user_id: user.id,
-    listing_id: listing.id,
+    listing_id: listingId,
     trade_type: listing.trade_type,
+    active_listings_count: activeListingsCount,
     has_wanted_items: trade_type === 'exchange'
   })
 
   return created(listing, '刊登建立成功')
 }
 
-// 🔒 需要認證：使用 withAuthAndError
-export const GET = withAuthAndError(handleGET, {
+// 🔒 需要認證 + 🛡️ Bot Detection
+// 使用 withAuthAndBotDetection 整合認證、錯誤處理和 Bot 防護
+export const GET = withAuthAndBotDetection(handleGET, {
   module: 'ListingAPI',
-  enableAuditLog: false
+  enableAuditLog: false,
+  botDetection: {
+    enableRateLimit: true,
+    enableBehaviorDetection: true,
+    rateLimit: DEFAULT_RATE_LIMITS.AUTHENTICATED, // 100次/小時（認證用戶寬鬆限制）
+  },
 })
 
-export const POST = withAuthAndError(handlePOST, {
+export const POST = withAuthAndBotDetection(handlePOST, {
   module: 'ListingAPI',
-  enableAuditLog: true
+  enableAuditLog: true,
+  botDetection: {
+    enableRateLimit: true,
+    enableBehaviorDetection: true,
+    rateLimit: DEFAULT_RATE_LIMITS.AUTHENTICATED, // 100次/小時（認證用戶寬鬆限制）
+  },
 })

@@ -1,5 +1,6 @@
 import { NextRequest } from 'next/server'
-import { withAuthAndError, User } from '@/lib/middleware/api-middleware'
+import { User } from '@/lib/middleware/api-middleware'
+import { withAuthAndBotDetection } from '@/lib/bot-detection/api-middleware'
 import {
   successWithPagination,
   parsePaginationParams,
@@ -8,6 +9,7 @@ import {
 import { ValidationError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
+import { DEFAULT_RATE_LIMITS } from '@/lib/bot-detection/constants'
 import itemsData from '@/../data/item-attributes-essential.json'
 import type { ItemAttributesEssential } from '@/types'
 
@@ -83,6 +85,8 @@ allGachaMachines.forEach((machine: any) => {
  * GET /api/market/search - 市場搜尋/篩選
  *
  * 功能：
+ * - 🔒 需要認證（防止 Bot 爬取）
+ * - 🛡️ Bot Detection：User-Agent 過濾 + Rate Limiting（40次/小時）
  * - 查詢 status = 'active' 的刊登
  * - 支援搜尋：item_id, trade_type
  * - 支援價格範圍：min_price, max_price
@@ -95,7 +99,7 @@ allGachaMachines.forEach((machine: any) => {
  *   3. item-attributes-essential.json（僅英文，備用）
  * - JOIN users 和 discord_profiles 獲取賣家資訊
  *
- * 認證要求：🔒 需要認證（防止 Bot 爬取）
+ * 認證要求：🔒 認證 + Bot Detection（withAuthAndBotDetection）
  * 參考文件：docs/architecture/交易系統/03-API設計.md
  */
 async function handleGET(_request: NextRequest, user: User) {
@@ -107,6 +111,7 @@ async function handleGET(_request: NextRequest, user: User) {
   // 2. 解析篩選參數
   const trade_type = searchParams.get('trade_type')
   const item_id = searchParams.get('item_id')
+  const search_term = searchParams.get('search_term') // 物品名稱搜尋
   const min_price = searchParams.get('min_price')
   const max_price = searchParams.get('max_price')
 
@@ -180,6 +185,7 @@ async function handleGET(_request: NextRequest, user: User) {
     limit,
     trade_type,
     item_id,
+    search_term,
     min_price,
     max_price,
     itemStatsFilters,
@@ -224,6 +230,56 @@ async function handleGET(_request: NextRequest, user: User) {
       throw new ValidationError('item_id 必須是數字')
     }
     query = query.eq('item_id', itemIdNum)
+  }
+
+  // 物品名稱搜尋（從 JSON 資料中查找符合的 item_id）
+  if (search_term && search_term.trim()) {
+    const searchLower = search_term.trim().toLowerCase()
+    const matchingItemIds = new Set<number>()
+
+    // 搜尋 drops 資料
+    dropsItemsMap.forEach((item, itemId) => {
+      if (
+        item.itemName.toLowerCase().includes(searchLower) ||
+        (item.chineseItemName && item.chineseItemName.includes(search_term.trim()))
+      ) {
+        matchingItemIds.add(itemId)
+      }
+    })
+
+    // 搜尋 gacha 資料
+    gachaItemsMap.forEach((item, itemId) => {
+      if (
+        item.itemName.toLowerCase().includes(searchLower) ||
+        (item.chineseName && item.chineseName.includes(search_term.trim()))
+      ) {
+        matchingItemIds.add(itemId)
+      }
+    })
+
+    // 搜尋 item-attributes 資料（僅英文）
+    itemsMap.forEach((item, itemId) => {
+      if (item.item_name && item.item_name.toLowerCase().includes(searchLower)) {
+        matchingItemIds.add(itemId)
+      }
+    })
+
+    // 如果找到符合的物品 ID，使用 .in() 篩選
+    if (matchingItemIds.size > 0) {
+      const itemIdsArray = Array.from(matchingItemIds)
+      query = query.in('item_id', itemIdsArray)
+
+      apiLogger.debug('物品名稱搜尋結果', {
+        search_term,
+        matched_items: itemIdsArray.length
+      })
+    } else {
+      // 如果沒有找到任何符合的物品，返回空結果
+      // 使用 .eq('item_id', -1) 來強制返回空結果（因為沒有 item_id = -1 的刊登）
+      query = query.eq('item_id', -1)
+
+      apiLogger.debug('物品名稱搜尋無結果', { search_term })
+    }
   }
 
   // 價格範圍篩選（僅適用於 sell/buy）
@@ -334,6 +390,7 @@ async function handleGET(_request: NextRequest, user: User) {
     filters: {
       trade_type,
       item_id,
+      search_term,
       min_price,
       max_price,
       itemStatsFilters,
@@ -346,8 +403,14 @@ async function handleGET(_request: NextRequest, user: User) {
   return successWithPagination(formattedListings, pagination, '搜尋成功')
 }
 
-// 🔒 需要認證：防止 Bot 大量爬取
-export const GET = withAuthAndError(handleGET, {
+// 🔒 需要認證 + 🛡️ Bot Detection
+// 使用 withAuthAndBotDetection 整合認證、錯誤處理和 Bot 防護
+export const GET = withAuthAndBotDetection(handleGET, {
   module: 'MarketSearchAPI',
-  enableAuditLog: false
+  enableAuditLog: false,
+  botDetection: {
+    enableRateLimit: true,
+    enableBehaviorDetection: true,
+    rateLimit: DEFAULT_RATE_LIMITS.SEARCH, // 40次/小時（中等限制）
+  },
 })
