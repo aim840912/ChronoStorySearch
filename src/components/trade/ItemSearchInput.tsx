@@ -138,7 +138,6 @@ export function ItemSearchInput({
       {!value && (
         <>
           <input
-            ref={inputRef}
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}

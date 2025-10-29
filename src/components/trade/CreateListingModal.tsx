@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { BaseModal } from '@/components/common/BaseModal'
 import { ItemSearchInput } from './ItemSearchInput'
 import { ItemStatsInput } from './ItemStatsInput'
@@ -8,6 +8,9 @@ import { ExtendedUniqueItem, TradeType, WantedItem } from '@/types'
 import { useAuth } from '@/contexts/AuthContext'
 import { useLanguage } from '@/contexts/LanguageContext'
 import type { ItemStats } from '@/types/item-stats'
+import { useItemAttributesEssential, useLazyItemDetailed } from '@/hooks/useLazyData'
+import { getItemCategoryGroup, getCategoryGroup } from '@/lib/item-categories'
+import { useDataManagement } from '@/hooks/useDataManagement'
 
 /**
  * 建立刊登 Modal
@@ -64,9 +67,142 @@ export function CreateListingModal({
   const [error, setError] = useState<string | null>(null)
   const [itemStats, setItemStats] = useState<ItemStats | null>(null)
   const [showStatsInput, setShowStatsInput] = useState(false)
+  const [isEquipment, setIsEquipment] = useState(false)  // 是否為裝備類
+
+  // 載入物品分類資料
+  const { essentialMap } = useItemAttributesEssential()
+
+  // 載入轉蛋機資料（用於 essential/detailed 都不存在的物品）
+  const { gachaMachines, loadGachaMachines } = useDataManagement()
+
+  // 懶加載詳細資料（用於 essential 中不存在的物品，如轉蛋獨有物品）
+  const { data: detailedData, isLoading: isLoadingDetailed } = useLazyItemDetailed(
+    selectedItem && !essentialMap.has(selectedItem.itemId) ? selectedItem.itemId : null
+  )
+
+  // 當選中物品且 essential 中不存在時，確保轉蛋機資料已載入
+  useEffect(() => {
+    if (selectedItem && !essentialMap.has(selectedItem.itemId) && gachaMachines.length === 0) {
+      loadGachaMachines()
+    }
+  }, [selectedItem, essentialMap, gachaMachines.length, loadGachaMachines])
 
   // Discord 聯絡方式（唯讀，來自 OAuth）
   const discordContact = user?.discord_username || user?.discord_id || ''
+
+  // 判斷選中的物品是否為裝備類（apparel, weapon, accessory）
+  useEffect(() => {
+    if (!selectedItem) {
+      setIsEquipment(false)
+      return
+    }
+
+    // 優先使用 essential 資料（快速路徑）
+    const itemData = essentialMap.get(selectedItem.itemId)
+
+    if (itemData) {
+      // Essential 資料存在，使用現有邏輯
+      const itemCategory = getItemCategoryGroup(itemData)
+
+      if (!itemCategory) {
+        setIsEquipment(false)
+        return
+      }
+
+      const categoryGroup = getCategoryGroup(itemCategory)
+      const equipmentCategories = ['apparel', 'weapon', 'accessory']
+      const isItemEquipment = categoryGroup ? equipmentCategories.includes(categoryGroup) : false
+
+      setIsEquipment(isItemEquipment)
+
+      if (!isItemEquipment) {
+        setItemStats(null)
+        setShowStatsInput(false)
+      }
+    } else if (isLoadingDetailed) {
+      // 正在載入 detailed 資料，保持當前狀態，避免閃爍
+      return
+    } else if (detailedData) {
+      // Essential 資料不存在，使用 detailed 資料作為後備
+      const equipmentCategory = detailedData.equipment?.category
+
+      if (!equipmentCategory) {
+        setIsEquipment(false)
+        setItemStats(null)
+        setShowStatsInput(false)
+        return
+      }
+
+      // 使用 equipment.category 判斷（如 "Cape", "Sword" 等）
+      const itemCategory = getItemCategoryGroup({
+        item_id: selectedItem.itemId.toString(),
+        equipment_category: equipmentCategory,
+      } as never)
+
+      if (!itemCategory) {
+        setIsEquipment(false)
+        setItemStats(null)
+        setShowStatsInput(false)
+        return
+      }
+
+      const categoryGroup = getCategoryGroup(itemCategory)
+      const equipmentCategories = ['apparel', 'weapon', 'accessory']
+      const isItemEquipment = categoryGroup ? equipmentCategories.includes(categoryGroup) : false
+
+      setIsEquipment(isItemEquipment)
+
+      if (!isItemEquipment) {
+        setItemStats(null)
+        setShowStatsInput(false)
+      }
+    } else {
+      // 最後嘗試：從轉蛋機資料中查找
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      let gachaItemData: any = null
+
+      for (const machine of gachaMachines) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const found = machine.items.find((item: any) =>
+          String(item.itemId) === String(selectedItem.itemId)
+        )
+        if (found) {
+          gachaItemData = found
+          break
+        }
+      }
+
+      if (gachaItemData?.equipment?.category) {
+        // 使用轉蛋機資料中的 equipment.category
+        const itemCategory = getItemCategoryGroup({
+          item_id: selectedItem.itemId.toString(),
+          equipment_category: gachaItemData.equipment.category,
+        } as never)
+
+        if (itemCategory) {
+          const categoryGroup = getCategoryGroup(itemCategory)
+          const equipmentCategories = ['apparel', 'weapon', 'accessory']
+          const isItemEquipment = categoryGroup ? equipmentCategories.includes(categoryGroup) : false
+
+          setIsEquipment(isItemEquipment)
+
+          if (!isItemEquipment) {
+            setItemStats(null)
+            setShowStatsInput(false)
+          }
+        } else {
+          setIsEquipment(false)
+          setItemStats(null)
+          setShowStatsInput(false)
+        }
+      } else {
+        // 完全無法取得任何資料
+        setIsEquipment(false)
+        setItemStats(null)
+        setShowStatsInput(false)
+      }
+    }
+  }, [selectedItem, essentialMap, detailedData, isLoadingDetailed, gachaMachines])
 
   const handleSubmit = async () => {
     // 重置錯誤訊息
@@ -123,8 +259,8 @@ export function CreateListingModal({
       requestBody.webhook_url = webhookUrl.trim()
     }
 
-    // 可選欄位：物品屬性
-    if (itemStats) {
+    // 可選欄位：物品屬性（只有裝備類才能帶有屬性）
+    if (itemStats && isEquipment) {
       requestBody.item_stats = itemStats
     }
 
@@ -153,6 +289,9 @@ export function CreateListingModal({
           setError(`${errorMessage}${t('listing.error.discordServerTip')}`)
         } else if (errorMessage.includes('刊登配額上限')) {
           setError(`${errorMessage}${t('listing.error.quotaTip')}`)
+        } else if (errorMessage.includes('已經刊登此物品') || errorMessage.includes('無法重複刊登')) {
+          // 重複刊登錯誤：提供前往我的刊登頁面的提示
+          setError(errorMessage)
         } else {
           setError(errorMessage)
         }
@@ -175,6 +314,7 @@ export function CreateListingModal({
       setWebhookUrl('')
       setItemStats(null)
       setShowStatsInput(false)
+      setIsEquipment(false)
     } catch (err) {
       console.error('Failed to create listing:', err)
       setError(t('listing.error.networkError'))
@@ -328,43 +468,45 @@ export function CreateListingModal({
           </div>
         )}
 
-        {/* 物品屬性 (可選) */}
-        <div className="mb-6">
-          <button
-            type="button"
-            onClick={() => setShowStatsInput(!showStatsInput)}
-            className="flex items-center gap-2 mb-2 font-semibold text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            <svg
-              className={`w-4 h-4 transition-transform ${showStatsInput ? 'rotate-90' : ''}`}
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+        {/* 物品屬性 (可選) - 只有裝備類才顯示 */}
+        {isEquipment && (
+          <div className="mb-6">
+            <button
+              type="button"
+              onClick={() => setShowStatsInput(!showStatsInput)}
+              className="flex items-center gap-2 mb-2 font-semibold text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-            {t('listing.itemStatsOptional')}
-            {itemStats && (
-              <span className="px-2 py-0.5 text-xs bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 rounded">
-                {t('listing.itemStatsFilled')}
-              </span>
-            )}
-          </button>
+              <svg
+                className={`w-4 h-4 transition-transform ${showStatsInput ? 'rotate-90' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+              {t('listing.itemStatsOptional')}
+              {itemStats && (
+                <span className="px-2 py-0.5 text-xs bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 rounded">
+                  {t('listing.itemStatsFilled')}
+                </span>
+              )}
+            </button>
 
-          {showStatsInput && (
-            <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700">
-              <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                {t('listing.itemStatsDescription')}
-              </p>
-              <ItemStatsInput
-                value={itemStats}
-                onChange={setItemStats}
-                locale="zh-TW"
-                simpleMode={true}
-              />
-            </div>
-          )}
-        </div>
+            {showStatsInput && (
+              <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700">
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                  {t('listing.itemStatsDescription')}
+                </p>
+                <ItemStatsInput
+                  value={itemStats}
+                  onChange={setItemStats}
+                  locale="zh-TW"
+                  simpleMode={true}
+                />
+              </div>
+            )}
+          </div>
+        )}
 
         {/* 數量和價格 */}
         <div className="grid grid-cols-2 gap-4 mb-6">

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, MarketFilterOptions } from '@/types'
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 import { useFavoriteMonsters } from '@/hooks/useFavoriteMonsters'
@@ -348,12 +348,13 @@ export default function Home() {
       marketListings.fetchListings({
         page: 1,
         filter: marketFilter,
-        itemIds: filteredItemIds.length > 0 ? filteredItemIds : undefined
+        itemIds: filteredItemIds.length > 0 ? filteredItemIds : undefined,
+        searchTerm: debouncedSearchTerm
       })
     }
   }, [filterMode]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // 市場篩選變更時，重新載入資料
+  // 市場篩選或搜尋詞變更時，重新載入資料
   useEffect(() => {
     if (filterMode === 'market-listings') {
       const filteredItemIds = getFilteredItemIds()
@@ -361,10 +362,11 @@ export default function Home() {
       marketListings.fetchListings({
         page: 1,
         filter: marketFilter,
-        itemIds: filteredItemIds.length > 0 ? filteredItemIds : undefined
+        itemIds: filteredItemIds.length > 0 ? filteredItemIds : undefined,
+        searchTerm: debouncedSearchTerm
       })
     }
-  }, [marketFilter, advancedFilter]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [marketFilter, advancedFilter, debouncedSearchTerm]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // 分享處理函數
   const handleShare = useCallback(async () => {
@@ -419,6 +421,54 @@ export default function Home() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
+  // 建立刊登成功後的處理函數
+  const handleCreateListingSuccess = useCallback(() => {
+    // 如果當前在市場刊登模式，自動刷新列表
+    if (filterMode === 'market-listings') {
+      const filteredItemIds = getFilteredItemIds()
+      marketListings.refresh(
+        marketFilter,
+        filteredItemIds.length > 0 ? filteredItemIds : undefined,
+        debouncedSearchTerm
+      )
+    }
+  }, [filterMode, marketFilter, advancedFilter, marketListings, getFilteredItemIds, debouncedSearchTerm]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // 防抖的市場刊登重新整理函數
+  const debouncedMarketRefresh = useMemo(() => {
+    let timeoutId: NodeJS.Timeout | null = null
+
+    return async () => {
+      // 如果有進行中的 timeout，清除它
+      if (timeoutId) {
+        clearTimeout(timeoutId)
+      }
+
+      // 設置新的 timeout（1000ms 防抖）
+      timeoutId = setTimeout(async () => {
+        try {
+          const filteredItemIds = getFilteredItemIds()
+          await marketListings.refresh(
+            marketFilter,
+            filteredItemIds.length > 0 ? filteredItemIds : undefined,
+            debouncedSearchTerm
+          )
+
+          // 成功時顯示 Toast 通知
+          toast.showToast(t('market.refreshSuccess') || '重新整理成功', 'success')
+        } catch (error) {
+          // 錯誤時顯示 Toast 通知
+          const errorMessage = error instanceof Error ? error.message : '重新整理失敗'
+          toast.showToast(
+            `${t('market.refreshError') || '重新整理失敗'}: ${errorMessage}`,
+            'error'
+          )
+          clientLogger.error('[Page] Market refresh failed:', error)
+        }
+      }, 1000) // 1 秒防抖
+    }
+  }, [marketFilter, getFilteredItemIds, marketListings, toast, t, debouncedSearchTerm])
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 pb-8 sm:pb-12">
@@ -428,7 +478,7 @@ export default function Home() {
           onSearchChange={search.setSearchTerm}
           searchType={searchType}
           onSearchTypeChange={setSearchType}
-          suggestions={suggestions}
+          suggestions={filterMode === 'market-listings' ? [] : suggestions}
           showSuggestions={search.showSuggestions}
           onFocus={() => search.setShowSuggestions(true)}
           onSelectSuggestion={selectSuggestion}
@@ -485,11 +535,14 @@ export default function Home() {
           marketPagination={marketListings.pagination}
           isMarketLoading={marketListings.isLoading}
           marketError={marketListings.error}
+          isMarketRefreshing={marketListings.isLoading}
+          marketRefreshError={marketListings.refreshError}
           onListingClick={(listingId: string) => {
             // 開啟刊登詳情 Modal（顯示完整資訊和購買意向功能）
             modals.openListingDetailModal(parseInt(listingId, 10))
           }}
           onMarketPageChange={marketListings.goToPage}
+          onMarketRefresh={debouncedMarketRefresh}
         />
       </div>
 
@@ -533,6 +586,7 @@ export default function Home() {
         openAccuracyCalculator={modals.openAccuracyCalculator}
         openCreateListingModal={modals.openCreateListingModal}
         openMyListingsModal={modals.openMyListingsModal}
+        onCreateListingSuccess={handleCreateListingSuccess}
         allDrops={allDrops}
         gachaMachines={gachaMachines}
         itemAttributesMap={itemAttributesMap}

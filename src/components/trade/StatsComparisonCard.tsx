@@ -43,7 +43,21 @@ export function StatsComparisonCard({
       return null
     }
 
-    // 計算百分比 (用於進度條)
+    // 當 showMaxValues=false 時，使用簡化的單欄顯示（類似 ItemStatsInput simpleMode）
+    if (!showMaxValues) {
+      return (
+        <div key={actualKey} className="flex flex-col gap-1">
+          <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+            {label}
+          </label>
+          <span className="text-sm text-gray-900 dark:text-white">
+            {actualValue ?? '-'}
+          </span>
+        </div>
+      )
+    }
+
+    // 以下是原有的進度條模式（showMaxValues=true）
     const percentage =
       actualValue !== undefined && maxValue !== undefined && maxValue > 0
         ? Math.round((actualValue / maxValue) * 100)
@@ -72,20 +86,14 @@ export function StatsComparisonCard({
             {label}
           </span>
           <span className="text-sm text-gray-600 dark:text-gray-400">
-            {showMaxValues ? (
-              <>
-                {actualValue ?? '-'} / {maxValue ?? '-'}
-                {percentage > 0 && (
-                  <span className="ml-1 text-xs text-gray-500">({percentage}%)</span>
-                )}
-              </>
-            ) : (
-              actualValue ?? '-'
+            {actualValue ?? '-'} / {maxValue ?? '-'}
+            {percentage > 0 && (
+              <span className="ml-1 text-xs text-gray-500">({percentage}%)</span>
             )}
           </span>
         </div>
-        {/* 進度條 (僅在 showMaxValues 為 true 時顯示) */}
-        {showMaxValues && percentage > 0 && (
+        {/* 進度條 */}
+        {percentage > 0 && (
           <div className="w-full h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
             <div
               className={`h-full ${barColor} transition-all duration-300`}
@@ -116,7 +124,10 @@ export function StatsComparisonCard({
         <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
           {title}
         </h4>
-        <div className="space-y-2">{rows}</div>
+        {/* showMaxValues=false 時使用 4 列網格，否則使用垂直堆疊 */}
+        <div className={showMaxValues ? "space-y-2" : "grid grid-cols-4 gap-3"}>
+          {rows}
+        </div>
       </div>
     )
   }
@@ -139,27 +150,37 @@ export function StatsComparisonCard({
     )
   }
 
+  // 渲染升級資訊欄位（用於融入 4 列網格）
+  const renderUpgradeField = (key: 'slots' | 'scrolled') => {
+    const value = stats[key]
+    if (value === undefined) return null
+
+    return (
+      <div key={key} className="flex flex-col gap-1">
+        <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+          {labels[key]}
+        </label>
+        <span className="text-sm text-gray-900 dark:text-white">
+          {value}
+        </span>
+      </div>
+    )
+  }
+
   return (
     <div className={`space-y-4 ${className}`}>
-      {/* 攻擊屬性 */}
+      {/* 攻擊/防禦屬性（4 個欄位）*/}
       {renderStatGroup(
-        locale === 'zh-TW' ? '攻擊屬性' : 'Attack',
+        locale === 'zh-TW' ? '攻擊/防禦屬性' : 'Attack/Defense',
         [
           ['watk', 'watk_max', labels.watk],
-          ['matk', 'matk_max', labels.matk]
-        ]
-      )}
-
-      {/* 防禦屬性 */}
-      {renderStatGroup(
-        locale === 'zh-TW' ? '防禦屬性' : 'Defense',
-        [
+          ['matk', 'matk_max', labels.matk],
           ['wdef', 'wdef_max', labels.wdef],
           ['mdef', 'mdef_max', labels.mdef]
         ]
       )}
 
-      {/* 基礎屬性 */}
+      {/* 基礎屬性（4 個欄位）*/}
       {renderStatGroup(
         locale === 'zh-TW' ? '基礎屬性' : 'Primary Stats',
         [
@@ -170,59 +191,48 @@ export function StatsComparisonCard({
         ]
       )}
 
-      {/* 生命/魔力 */}
+      {/* 生命/魔力/命中/迴避（4 個欄位）*/}
       {renderStatGroup(
-        locale === 'zh-TW' ? '生命/魔力' : 'HP/MP',
+        locale === 'zh-TW' ? '生命/魔力/命中/迴避' : 'HP/MP/Accuracy/Avoid',
         [
           ['hp', 'hp_max', labels.hp],
-          ['mp', 'mp_max', labels.mp]
-        ]
-      )}
-
-      {/* 命中/迴避 */}
-      {renderStatGroup(
-        locale === 'zh-TW' ? '命中/迴避' : 'Accuracy/Avoid',
-        [
+          ['mp', 'mp_max', labels.mp],
           ['acc', 'acc_max', labels.acc],
           ['avoid', 'avoid_max', labels.avoid]
         ]
       )}
 
-      {/* 移動/跳躍 */}
-      {renderStatGroup(
-        locale === 'zh-TW' ? '移動/跳躍' : 'Speed/Jump',
-        [
-          ['speed', 'speed_max', labels.speed],
-          ['jump', 'jump_max', labels.jump]
-        ]
-      )}
-
-      {/* 升級資訊 */}
-      {(stats.slots !== undefined || stats.scrolled !== undefined) && (
+      {/* 移動/跳躍/升級資訊（最多 4 個欄位）*/}
+      {(stats.speed !== undefined || stats.jump !== undefined || stats.slots !== undefined || stats.scrolled !== undefined) && (
         <div>
           <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-            {locale === 'zh-TW' ? '升級資訊' : 'Upgrade Info'}
+            {locale === 'zh-TW' ? '移動/跳躍/升級資訊' : 'Speed/Jump/Upgrade'}
           </h4>
-          <div className="grid grid-cols-2 gap-3">
-            {stats.slots !== undefined && (
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                  {labels.slots}
-                </span>
-                <span className="text-sm text-gray-600 dark:text-gray-400">
-                  {stats.slots}
-                </span>
-              </div>
-            )}
-            {stats.scrolled !== undefined && (
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                  {labels.scrolled}
-                </span>
-                <span className="text-sm text-gray-600 dark:text-gray-400">
-                  {stats.scrolled}
-                </span>
-              </div>
+          <div className={showMaxValues ? "space-y-2" : "grid grid-cols-4 gap-3"}>
+            {renderStatRow('speed', 'speed_max', labels.speed)}
+            {renderStatRow('jump', 'jump_max', labels.jump)}
+            {!showMaxValues && renderUpgradeField('slots')}
+            {!showMaxValues && renderUpgradeField('scrolled')}
+            {/* showMaxValues 模式下，升級資訊單獨顯示 */}
+            {showMaxValues && (stats.slots !== undefined || stats.scrolled !== undefined) && (
+              <>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                    {labels.slots}
+                  </span>
+                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                    {stats.slots ?? '-'}
+                  </span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                    {labels.scrolled}
+                  </span>
+                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                    {stats.scrolled ?? '-'}
+                  </span>
+                </div>
+              </>
             )}
           </div>
         </div>

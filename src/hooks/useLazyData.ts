@@ -71,7 +71,7 @@ export function useLazyItemDetailed(itemId: number | null) {
       } catch (err) {
         const error = err instanceof Error ? err : new Error(`載入物品 ${itemId} 詳細資料失敗`)
         setError(error)
-        clientLogger.error(`載入物品 ${itemId} 詳細資料失敗`, err)
+        clientLogger.debug(`物品 ${itemId} 無 detailed 檔案，將嘗試從其他來源載入`, err)
       } finally {
         setIsLoading(false)
       }

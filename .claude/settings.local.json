@@ -131,7 +131,8 @@
       "WebFetch(domain:community.cloudflare.com)",
       "Bash(dig:*)",
       "Bash(xargs:*)",
-      "WebFetch(domain:randombits.dev)"
+      "WebFetch(domain:randombits.dev)",
+      "Bash(psql:*)"
     ],
     "deny": [],
     "ask": [

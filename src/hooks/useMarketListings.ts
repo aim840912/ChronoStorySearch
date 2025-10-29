@@ -16,6 +16,7 @@ interface FetchListingsParams {
   page?: number
   filter?: MarketFilterOptions
   itemIds?: number[] // 來自進階篩選的物品 ID 列表
+  searchTerm?: string // 物品名稱搜尋
 }
 
 /**
@@ -37,6 +38,7 @@ export function useMarketListings({
   const [pagination, setPagination] = useState<Pagination | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [refreshError, setRefreshError] = useState<string | null>(null) // 專門用於重新整理的錯誤
 
   // 用於緩存和防止重複請求
   const lastRequestRef = useRef<string | null>(null)
@@ -48,13 +50,19 @@ export function useMarketListings({
   const buildQueryParams = useCallback((
     page: number,
     filter?: MarketFilterOptions,
-    itemIds?: number[]
+    itemIds?: number[],
+    searchTerm?: string
   ): URLSearchParams => {
     const params = new URLSearchParams()
 
     // 分頁
     params.append('page', page.toString())
     params.append('limit', '20')
+
+    // 搜尋詞
+    if (searchTerm && searchTerm.trim()) {
+      params.append('search_term', searchTerm.trim())
+    }
 
     if (!filter) return params
 
@@ -112,7 +120,8 @@ export function useMarketListings({
   const fetchListings = useCallback(async ({
     page = 1,
     filter,
-    itemIds
+    itemIds,
+    searchTerm
   }: FetchListingsParams = {}) => {
     if (!enabled) {
       clientLogger.info('[useMarketListings] Hook is disabled, skipping fetch')
@@ -120,7 +129,7 @@ export function useMarketListings({
     }
 
     // 建構請求識別符（用於緩存比對）
-    const queryParams = buildQueryParams(page, filter, itemIds)
+    const queryParams = buildQueryParams(page, filter, itemIds, searchTerm)
     const requestKey = queryParams.toString()
 
     // 檢查是否與上次請求相同（簡單緩存）
@@ -186,7 +195,8 @@ export function useMarketListings({
    */
   const loadMore = useCallback(async (
     filter?: MarketFilterOptions,
-    itemIds?: number[]
+    itemIds?: number[],
+    searchTerm?: string
   ) => {
     if (!pagination || pagination.page >= pagination.totalPages) {
       clientLogger.info('[useMarketListings] No more pages to load')
@@ -194,7 +204,7 @@ export function useMarketListings({
     }
 
     const nextPage = pagination.page + 1
-    await fetchListings({ page: nextPage, filter, itemIds })
+    await fetchListings({ page: nextPage, filter, itemIds, searchTerm })
   }, [pagination, fetchListings])
 
   /**
@@ -203,14 +213,15 @@ export function useMarketListings({
   const goToPage = useCallback(async (
     page: number,
     filter?: MarketFilterOptions,
-    itemIds?: number[]
+    itemIds?: number[],
+    searchTerm?: string
   ) => {
     if (page < 1 || (pagination && page > pagination.totalPages)) {
       clientLogger.warn('[useMarketListings] Invalid page number:', page)
       return
     }
 
-    await fetchListings({ page, filter, itemIds })
+    await fetchListings({ page, filter, itemIds, searchTerm })
   }, [pagination, fetchListings])
 
   /**
@@ -218,12 +229,21 @@ export function useMarketListings({
    */
   const refresh = useCallback(async (
     filter?: MarketFilterOptions,
-    itemIds?: number[]
+    itemIds?: number[],
+    searchTerm?: string
   ) => {
-    const currentPage = pagination?.page || 1
-    // 清除緩存以強制重新載入
-    lastRequestRef.current = null
-    await fetchListings({ page: currentPage, filter, itemIds })
+    try {
+      setRefreshError(null) // 清除之前的錯誤
+      const currentPage = pagination?.page || 1
+      // 清除緩存以強制重新載入
+      lastRequestRef.current = null
+      await fetchListings({ page: currentPage, filter, itemIds, searchTerm })
+    } catch (err: unknown) {
+      const errorMessage = err instanceof Error ? err.message : '重新整理失敗'
+      setRefreshError(errorMessage)
+      clientLogger.error('[useMarketListings] Refresh failed:', err)
+      throw err // 重新拋出錯誤，讓呼叫者可以處理
+    }
   }, [pagination, fetchListings])
 
   /**
@@ -257,6 +277,7 @@ export function useMarketListings({
     pagination,
     isLoading,
     error,
+    refreshError,
     fetchListings,
     loadMore,
     goToPage,

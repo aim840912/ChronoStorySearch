@@ -62,6 +62,9 @@ interface ModalManagerProps {
   openCreateListingModal: () => void
   openMyListingsModal: () => void
 
+  // Modal 回調函數
+  onCreateListingSuccess?: () => void
+
   // 資料
   allDrops: DropsEssential[]  // 改為 Essential（只需基本資訊）
   gachaMachines: GachaMachine[]
@@ -144,6 +147,7 @@ export const ModalManager = memo(function ModalManager({
   openAccuracyCalculator,
   openCreateListingModal,
   openMyListingsModal,
+  onCreateListingSuccess,
   allDrops,
   gachaMachines,
   itemAttributesMap,
@@ -260,6 +264,8 @@ export const ModalManager = memo(function ModalManager({
         onClose={closeCreateListingModal}
         onSuccess={() => {
           closeCreateListingModal()
+          // 刷新市場列表（如果當前在市場刊登模式）
+          onCreateListingSuccess?.()
           openMyListingsModal()
         }}
       />

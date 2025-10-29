@@ -94,6 +94,11 @@ export const SearchHeader = memo(function SearchHeader({
   const { t } = useLanguage()
   const { user, loading } = useAuth()
 
+  // 根據 filterMode 決定搜尋列的 placeholder
+  const searchPlaceholder = filterMode === 'market-listings'
+    ? t('search.placeholder.market') || '搜尋市場物品...'
+    : t('search.placeholder')
+
   return (
     <div className="sticky top-0 z-40 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 backdrop-blur-sm pt-4 sm:pt-6 pb-3 sm:pb-4 shadow-md">
       {/* 標題區域 */}
@@ -125,6 +130,7 @@ export const SearchHeader = memo(function SearchHeader({
         onFocusedIndexChange={onFocusedIndexChange}
         searchContainerRef={searchContainerRef}
         onShare={onShare}
+        placeholder={searchPlaceholder}
       />
 
       {/* 篩選按鈕 */}

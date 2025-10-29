@@ -3,6 +3,7 @@
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemImageUrl } from '@/lib/image-utils'
 import type { ListingWithUserInfo } from '@/types'
+import { STAT_LABELS_ZH, STAT_LABELS_EN } from '@/types/item-stats'
 
 interface MarketListItemProps {
   listing: ListingWithUserInfo
@@ -91,10 +92,17 @@ export function MarketListItem({ listing, onClick }: MarketListItemProps) {
     )
   }
 
+  // 取得屬性標籤（根據語言）
+  const getStatLabel = (key: string): string => {
+    const labels = language === 'zh-TW' ? STAT_LABELS_ZH : STAT_LABELS_EN
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return (labels as any)[key] || key
+  }
+
   return (
     <button
       onClick={onClick}
-      className="w-full grid grid-cols-[70px_50px_1fr_90px_60px_90px] md:grid-cols-[100px_80px_1fr_120px_100px_140px_140px] gap-2 md:gap-4 items-center p-3 md:p-4 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 border-b border-gray-200 dark:border-gray-700 transition-colors text-left"
+      className="w-full grid grid-cols-[70px_50px_120px_1fr_60px_90px] md:grid-cols-[100px_80px_150px_1fr_100px_140px_140px] gap-2 md:gap-4 items-center p-3 md:p-4 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 border-b border-gray-200 dark:border-gray-700 transition-colors text-left"
     >
       {/* 1. 交易模式 */}
       <div className="flex items-center justify-center">
@@ -116,21 +124,29 @@ export function MarketListItem({ listing, onClick }: MarketListItemProps) {
       </div>
 
       {/* 3. 物品名稱 */}
-      <div className="min-w-0">
+      <div className="min-w-0 text-center">
         <h3 className="font-medium text-gray-900 dark:text-gray-100 truncate text-sm md:text-base">
           {getItemName(listing.item)}
         </h3>
       </div>
 
       {/* 4. 裝備素質 */}
-      <div className="text-center text-xs text-indigo-600 dark:text-indigo-400">
+      <div className="text-center text-xs">
         {listing.item_stats ? (
-          <span className="truncate md:whitespace-normal md:break-words block">
+          <div className="flex flex-wrap gap-1.5 justify-center items-center leading-relaxed">
             {Object.entries(listing.item_stats)
               .filter(([, value]) => value !== undefined && value !== null)
-              .map(([key, value]) => `${key}+${value}`)
-              .join(', ')}
-          </span>
+              .map(([key, value], index, arr) => (
+                <span key={key} className="inline-flex items-center gap-1.5">
+                  <span className="text-indigo-600 dark:text-indigo-400 whitespace-nowrap">
+                    {getStatLabel(key)}+{value}
+                  </span>
+                  {index < arr.length - 1 && (
+                    <span className="text-gray-400 dark:text-gray-600">•</span>
+                  )}
+                </span>
+              ))}
+          </div>
         ) : (
           <span className="text-gray-400 dark:text-gray-500">-</span>
         )}

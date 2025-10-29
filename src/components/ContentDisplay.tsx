@@ -75,8 +75,11 @@ interface ContentDisplayProps {
   marketPagination: Pagination | null
   isMarketLoading: boolean
   marketError: string | null
+  isMarketRefreshing?: boolean
+  marketRefreshError?: string | null
   onListingClick: (listingId: string) => void
   onMarketPageChange: (page: number) => void
+  onMarketRefresh?: () => void
 }
 
 /**
@@ -114,8 +117,11 @@ export const ContentDisplay = memo(function ContentDisplay({
   marketPagination,
   isMarketLoading,
   marketError,
+  isMarketRefreshing,
+  marketRefreshError,
   onListingClick,
   onMarketPageChange,
+  onMarketRefresh,
 }: ContentDisplayProps) {
   const { t } = useLanguage()
 
@@ -139,8 +145,11 @@ export const ContentDisplay = memo(function ContentDisplay({
             pagination={marketPagination}
             isLoading={isMarketLoading}
             error={marketError}
+            isRefreshing={isMarketRefreshing}
+            refreshError={marketRefreshError}
             onListingClick={onListingClick}
             onPageChange={onMarketPageChange}
+            onRefresh={onMarketRefresh}
           />
         </div>
       ) : filterMode === 'favorite-monsters' ? (

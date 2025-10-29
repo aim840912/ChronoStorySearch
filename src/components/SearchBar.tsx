@@ -20,6 +20,7 @@ interface SearchBarProps {
   onFocusedIndexChange: (index: number) => void
   searchContainerRef: RefObject<HTMLDivElement | null>
   onShare?: () => void
+  placeholder?: string // 自定義 placeholder
 }
 
 /**
@@ -40,6 +41,7 @@ export function SearchBar({
   onFocusedIndexChange,
   searchContainerRef,
   onShare,
+  placeholder,
 }: SearchBarProps) {
   const { t } = useLanguage()
 
@@ -133,7 +135,7 @@ export function SearchBar({
           onChange={(e) => onSearchChange(e.target.value)}
           onFocus={onFocus}
           onKeyDown={onKeyDown}
-          placeholder={t('search.placeholder')}
+          placeholder={placeholder || t('search.placeholder')}
           className={`w-full pl-12 py-3 text-gray-900 dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400 dark:placeholder-gray-500 transition-all ${
             searchTerm ? 'pr-12 sm:pr-20' : 'pr-12'
           }`}

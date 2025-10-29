@@ -83,6 +83,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
       if (response.ok) {
         setUser(null)
+        window.location.href = '/'
       } else {
         console.error('Logout failed:', await response.text())
       }

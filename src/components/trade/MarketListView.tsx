@@ -9,8 +9,11 @@ interface MarketListViewProps {
   pagination: Pagination | null
   isLoading: boolean
   error: string | null
+  isRefreshing?: boolean
+  refreshError?: string | null
   onListingClick: (listingId: string) => void
   onPageChange: (page: number) => void
+  onRefresh?: () => void
 }
 
 /**
@@ -32,8 +35,11 @@ export function MarketListView({
   pagination,
   isLoading,
   error,
+  isRefreshing = false,
+  refreshError = null,
   onListingClick,
-  onPageChange
+  onPageChange,
+  onRefresh
 }: MarketListViewProps) {
   const { t } = useLanguage()
 
@@ -109,22 +115,80 @@ export function MarketListView({
 
   return (
     <div className="w-full">
-      {/* 列表頭部 - 顯示總數 */}
+      {/* 列表頭部 - 顯示總數和刷新按鈕 */}
       <div className="px-4 py-3 bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
-        <p className="text-sm text-gray-600 dark:text-gray-400">
-          {t('market.totalListings').replace('{count}', pagination?.total.toString() || listings.length.toString())}
-        </p>
+        <div className="flex items-center justify-between">
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            {t('market.totalListings').replace('{count}', pagination?.total.toString() || listings.length.toString())}
+          </p>
+          {onRefresh && (
+            <button
+              onClick={onRefresh}
+              disabled={isRefreshing}
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-lg transition-colors border ${
+                isRefreshing
+                  ? 'opacity-50 cursor-not-allowed bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 border-gray-300 dark:border-gray-600'
+                  : 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 hover:bg-blue-100 dark:hover:bg-blue-900/30 border-blue-200 dark:border-blue-800'
+              }`}
+              title={isRefreshing ? (t('market.refreshing') || '重新整理中') : (t('market.refresh') || '重新整理')}
+            >
+              <svg
+                className={`w-3.5 h-3.5 ${isRefreshing ? 'animate-spin' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                />
+              </svg>
+              <span className="hidden sm:inline">
+                {isRefreshing ? (t('market.refreshing') || '重新整理中') : (t('market.refresh') || '重新整理')}
+              </span>
+            </button>
+          )}
+        </div>
+
+        {/* 重新整理錯誤提示 */}
+        {refreshError && (
+          <div className="mt-2 flex items-start gap-2 px-3 py-2 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+            <svg
+              className="w-4 h-4 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <div className="flex-1">
+              <p className="text-xs font-medium text-red-800 dark:text-red-300">
+                {t('market.refreshError') || '重新整理失敗'}
+              </p>
+              <p className="text-xs text-red-600 dark:text-red-400 mt-0.5">
+                {refreshError}
+              </p>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* 表格頭部 - 欄位標題 */}
-      <div className="grid grid-cols-[70px_50px_1fr_90px_60px_90px] md:grid-cols-[100px_80px_1fr_120px_100px_140px_140px] gap-2 md:gap-4 items-center px-3 md:px-4 py-2 md:py-3 bg-gray-100 dark:bg-gray-900 border-b-2 border-gray-300 dark:border-gray-600">
+      <div className="grid grid-cols-[70px_50px_120px_1fr_60px_90px] md:grid-cols-[100px_80px_150px_1fr_100px_140px_140px] gap-2 md:gap-4 items-center px-3 md:px-4 py-2 md:py-3 bg-gray-100 dark:bg-gray-900 border-b-2 border-gray-300 dark:border-gray-600">
         <div className="text-center text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
           {t('trade.type.label') || '類型'}
         </div>
         <div className="text-center text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
           {t('market.item') || '物品'}
         </div>
-        <div className="text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
+        <div className="text-center text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
           {t('market.itemName') || '名稱'}
         </div>
         <div className="text-center text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
