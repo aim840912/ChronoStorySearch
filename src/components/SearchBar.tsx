@@ -62,9 +62,9 @@ export function SearchBar({
 
   return (
     <div className="max-w-4xl mx-auto mb-6">
-      <div className="flex gap-3 items-center">
+      <div className="flex flex-col md:flex-row gap-3 items-stretch md:items-center">
         {/* 搜尋類型選擇器 */}
-        <div className="flex rounded-lg bg-gray-100 dark:bg-gray-700 p-1 flex-shrink-0">
+        <div className="flex rounded-lg bg-gray-100 dark:bg-gray-700 p-1 flex-shrink-0 order-2 md:order-1">
           <button
             onClick={() => onSearchTypeChange('all')}
             className={`px-3 py-2 text-sm font-medium rounded-md transition-all whitespace-nowrap ${
@@ -108,7 +108,7 @@ export function SearchBar({
         </div>
 
         {/* 搜尋輸入框容器 */}
-        <div className="relative flex-1" ref={searchContainerRef}>
+        <div className="relative flex-1 order-1 md:order-2" ref={searchContainerRef}>
           {/* 搜尋圖示 */}
           <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
           <svg

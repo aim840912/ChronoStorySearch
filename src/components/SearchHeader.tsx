@@ -89,36 +89,43 @@ export const SearchHeader = memo(function SearchHeader({
         </div>
       </div>
 
-      {/* 搜尋列 */}
-      <SearchBar
-        searchTerm={searchTerm}
-        onSearchChange={onSearchChange}
-        searchType={searchType}
-        onSearchTypeChange={onSearchTypeChange}
-        suggestions={suggestions}
-        showSuggestions={showSuggestions}
-        onFocus={onFocus}
-        onSelectSuggestion={onSelectSuggestion}
-        onKeyDown={onKeyDown}
-        focusedIndex={focusedIndex}
-        onFocusedIndexChange={onFocusedIndexChange}
-        searchContainerRef={searchContainerRef}
-        onShare={onShare}
-      />
+      {/* 搜尋列與篩選按鈕容器 */}
+      <div className="flex flex-col">
+        {/* 搜尋列 */}
+        <div className="order-2 md:order-1">
+          <SearchBar
+            searchTerm={searchTerm}
+            onSearchChange={onSearchChange}
+            searchType={searchType}
+            onSearchTypeChange={onSearchTypeChange}
+            suggestions={suggestions}
+            showSuggestions={showSuggestions}
+            onFocus={onFocus}
+            onSelectSuggestion={onSelectSuggestion}
+            onKeyDown={onKeyDown}
+            focusedIndex={focusedIndex}
+            onFocusedIndexChange={onFocusedIndexChange}
+            searchContainerRef={searchContainerRef}
+            onShare={onShare}
+          />
+        </div>
 
-      {/* 篩選按鈕 */}
-      <FilterButtons
-        filterMode={filterMode}
-        onFilterChange={onFilterChange}
-        favoriteMonsterCount={favoriteMonsterCount}
-        favoriteItemCount={favoriteItemCount}
-        onClearClick={onClearClick}
-        isAdvancedFilterExpanded={isAdvancedFilterExpanded}
-        onAdvancedFilterToggle={onAdvancedFilterToggle}
-        advancedFilterCount={advancedFilterCount}
-        onResetAdvancedFilter={onResetAdvancedFilter}
-        advancedFilter={advancedFilter}
-      />
+        {/* 篩選按鈕 */}
+        <div className="order-1 md:order-2">
+          <FilterButtons
+            filterMode={filterMode}
+            onFilterChange={onFilterChange}
+            favoriteMonsterCount={favoriteMonsterCount}
+            favoriteItemCount={favoriteItemCount}
+            onClearClick={onClearClick}
+            isAdvancedFilterExpanded={isAdvancedFilterExpanded}
+            onAdvancedFilterToggle={onAdvancedFilterToggle}
+            advancedFilterCount={advancedFilterCount}
+            onResetAdvancedFilter={onResetAdvancedFilter}
+            advancedFilter={advancedFilter}
+          />
+        </div>
+      </div>
 
       {/* 進階篩選面板 */}
       <AdvancedFilterPanel
