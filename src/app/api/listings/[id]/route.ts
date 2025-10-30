@@ -5,8 +5,11 @@ import { success } from '@/lib/api-response'
 import { ValidationError, NotFoundError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
-import { validateAndCalculateStats } from '@/lib/validation/item-stats'
+import { validateItemStats } from '@/lib/validation/item-stats'
 import type { ItemStats } from '@/types/item-stats'
+import { LISTING_CONSTRAINTS } from '@/lib/config/system-config'
+import { encryptWebhookUrl, decryptWebhookUrl } from '@/lib/crypto/webhook-encryption'
+import { validateContactInfo, validateInGameName } from '@/lib/validation/text-validation'
 
 /**
  * GET /api/listings/[id] - 查詢單一刊登詳情
@@ -56,6 +59,22 @@ async function handleGET(
     throw new NotFoundError('刊登不存在')
   }
 
+  // 解密 webhook_url（僅擁有者可見）
+  const isOwner = listing.user_id === user.id
+  let decryptedWebhookUrl: string | null = null
+
+  if (isOwner && listing.webhook_url) {
+    try {
+      decryptedWebhookUrl = decryptWebhookUrl(listing.webhook_url)
+    } catch (error) {
+      apiLogger.error('解密 Webhook URL 失敗', {
+        listing_id: id,
+        error
+      })
+      // 解密失敗時不影響主流程，只是不顯示 webhook_url
+    }
+  }
+
   // 扁平化回應格式
   const formattedListing = {
     id: listing.id,
@@ -75,7 +94,8 @@ async function handleGET(
     contact_method: listing.contact_method,
     seller_discord_id: listing.seller_discord_id || null,
     // 注意：contact_info 不在這裡返回，需要呼叫 /contact API
-    webhook_url: listing.webhook_url,
+    // webhook_url 只有擁有者可見，且已解密
+    webhook_url: isOwner ? decryptedWebhookUrl : null,
     status: listing.status,
     view_count: listing.view_count,
     interest_count: listing.interest_count,
@@ -89,7 +109,7 @@ async function handleGET(
       discord_username: listing.users?.discord_username || 'Unknown',
       reputation_score: listing.users?.discord_profiles?.reputation_score ?? 0
     },
-    is_own_listing: listing.user_id === user.id
+    is_own_listing: isOwner
   }
 
   apiLogger.info('查詢刊登詳情成功', {
@@ -173,7 +193,7 @@ async function handlePATCH(
       updates.stats_score = null
     } else {
       // 驗證並計算新的屬性
-      const validationResult = validateAndCalculateStats(updates.item_stats as ItemStats)
+      const validationResult = validateItemStats(updates.item_stats as ItemStats)
 
       if (!validationResult.success) {
         apiLogger.warn('物品屬性驗證失敗', {
@@ -184,7 +204,7 @@ async function handlePATCH(
         throw new ValidationError(`物品屬性驗證失敗：${validationResult.error}`)
       }
 
-      updates.item_stats = validationResult.data!.stats
+      updates.item_stats = validationResult.data!
 
       apiLogger.debug('物品屬性更新驗證成功', {
         user_id: user.id,
@@ -199,15 +219,55 @@ async function handlePATCH(
   }
 
   if (updates.price !== undefined) {
-    if (typeof updates.price !== 'number' || updates.price <= 0) {
-      throw new ValidationError('price 必須是正數')
+    if (typeof updates.price !== 'number') {
+      throw new ValidationError('價格必須為數字')
+    }
+
+    if (!Number.isFinite(updates.price)) {
+      throw new ValidationError('價格必須為有限數值')
+    }
+
+    if (updates.price <= 0) {
+      throw new ValidationError(
+        `價格必須為正數，最小值為 ${LISTING_CONSTRAINTS.MIN_PRICE.toLocaleString()} 楓幣`
+      )
+    }
+
+    if (updates.price > LISTING_CONSTRAINTS.MAX_PRICE) {
+      throw new ValidationError(
+        `價格不得超過 ${LISTING_CONSTRAINTS.MAX_PRICE.toLocaleString()} 楓幣`
+      )
+    }
+
+    if (!Number.isInteger(updates.price)) {
+      throw new ValidationError('價格必須為整數楓幣')
     }
   }
 
-  if (updates.contact_info && typeof updates.contact_info === 'string') {
-    updates.contact_info = (updates.contact_info as string).trim()
-    if (updates.contact_info === '') {
-      throw new ValidationError('contact_info 不能為空')
+  // 驗證 contact_info（如果有更新）
+  if (updates.contact_info !== undefined) {
+    if (typeof updates.contact_info === 'string') {
+      updates.contact_info = validateContactInfo(updates.contact_info)
+    }
+  }
+
+  // 驗證 ingame_name（如果有更新）
+  if (updates.ingame_name !== undefined) {
+    if (updates.ingame_name === null || updates.ingame_name === '') {
+      updates.ingame_name = null
+    } else if (typeof updates.ingame_name === 'string') {
+      updates.ingame_name = validateInGameName(updates.ingame_name)
+    }
+  }
+
+  // 加密 webhook_url（如果有更新）
+  if (updates.webhook_url !== undefined) {
+    if (updates.webhook_url === null || updates.webhook_url === '') {
+      // 允許清空 webhook_url
+      updates.webhook_url = null
+    } else if (typeof updates.webhook_url === 'string') {
+      // 加密新的 webhook_url
+      updates.webhook_url = encryptWebhookUrl(updates.webhook_url)
     }
   }
 

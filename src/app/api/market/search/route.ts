@@ -11,76 +11,15 @@ import { ValidationError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
 import { DEFAULT_RATE_LIMITS } from '@/lib/bot-detection/constants'
-import itemsData from '@/../data/item-attributes-essential.json'
-import type { ItemAttributesEssential } from '@/types'
+import {
+  getCachedMarketListings,
+  setCachedMarketListings,
+  buildMarketCacheKey
+} from '@/lib/cache/market-cache'
+import { getItemNames, itemsCacheMaps } from '@/lib/cache/items-cache'
 
-// 匯入掉落資料（包含最完整的中英文物品名稱）
-import dropsEssentialData from '@/../data/drops-essential.json'
-
-// 匯入轉蛋機資料（用於查找轉蛋機專屬物品名稱）
-import gachaMachine1 from '@/../data/gacha/machine-1-enhanced.json'
-import gachaMachine2 from '@/../data/gacha/machine-2-enhanced.json'
-import gachaMachine3 from '@/../data/gacha/machine-3-enhanced.json'
-import gachaMachine4 from '@/../data/gacha/machine-4-enhanced.json'
-import gachaMachine5 from '@/../data/gacha/machine-5-enhanced.json'
-import gachaMachine6 from '@/../data/gacha/machine-6-enhanced.json'
-import gachaMachine7 from '@/../data/gacha/machine-7-enhanced.json'
-
-// 建立物品資料快取 Map（用於快速查找物品名稱）
-const itemsMap = new Map<number, ItemAttributesEssential>()
-;(itemsData as ItemAttributesEssential[]).forEach((item) => {
-  const itemId = parseInt(item.item_id, 10)
-  if (!isNaN(itemId)) {
-    itemsMap.set(itemId, item)
-  }
-})
-
-// 建立掉落物品名稱 Map（最完整的中英文物品名稱來源）
-// 儲存 itemId -> {itemName, chineseItemName}，約 135KB
-const dropsItemsMap = new Map<number, { itemName: string; chineseItemName: string | null }>()
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-;(dropsEssentialData as any[]).forEach((drop: any) => {
-  const itemId = typeof drop.itemId === 'number' ? drop.itemId : parseInt(drop.itemId, 10)
-  if (!isNaN(itemId) && drop.itemName) {
-    // 只保留第一次出現的物品名稱（去重）
-    if (!dropsItemsMap.has(itemId)) {
-      dropsItemsMap.set(itemId, {
-        itemName: drop.itemName,
-        chineseItemName: drop.chineseItemName || null
-      })
-    }
-  }
-})
-
-// 建立轉蛋機物品名稱 Map（轉蛋機專屬物品）
-// 儲存 itemId -> {itemName, chineseName}，約 65KB
-const gachaItemsMap = new Map<number, { itemName: string; chineseName: string | null }>()
-const allGachaMachines = [
-  gachaMachine1,
-  gachaMachine2,
-  gachaMachine3,
-  gachaMachine4,
-  gachaMachine5,
-  gachaMachine6,
-  gachaMachine7,
-]
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-allGachaMachines.forEach((machine: any) => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (machine.items as any[] | undefined)?.forEach((item: any) => {
-    const itemId = typeof item.itemId === 'string' ? parseInt(item.itemId, 10) : item.itemId
-    if (!isNaN(itemId) && item.itemName) {
-      // 只保留第一次出現的物品名稱（去重）
-      if (!gachaItemsMap.has(itemId)) {
-        gachaItemsMap.set(itemId, {
-          itemName: item.itemName,
-          chineseName: item.chineseName || null
-        })
-      }
-    }
-  })
-})
+// 解構全域快取 Maps（用於搜尋功能）
+const { itemsMap, dropsItemsMap, gachaItemsMap } = itemsCacheMaps
 
 /**
  * GET /api/market/search - 市場搜尋/篩選
@@ -195,7 +134,33 @@ async function handleGET(_request: NextRequest, user: User) {
     order
   })
 
-  // 4. 建立查詢（JOIN users、discord_profiles 和 listing_wanted_items，使用嵌套語法）
+  // 4. 檢查快取（僅在無複雜篩選時使用快取）
+  const useCache = itemStatsFilters.length === 0 && !stats_grade && !min_price && !max_price
+  let cacheKey = ''
+
+  if (useCache) {
+    cacheKey = buildMarketCacheKey({
+      tradeType: trade_type || undefined,
+      searchTerm: search_term || undefined,
+      itemId: item_id ? parseInt(item_id, 10) : undefined,
+      page
+    })
+
+    const cachedData = await getCachedMarketListings(cacheKey)
+    if (cachedData) {
+      apiLogger.debug('Market cache hit', {
+        cacheKey,
+        user_id: user.id
+      })
+      return successWithPagination(
+        cachedData.listings,
+        cachedData.pagination,
+        '搜尋成功（快取）'
+      )
+    }
+  }
+
+  // 5. 建立查詢（JOIN users、discord_profiles 和 listing_wanted_items，使用嵌套語法）
   let query = supabaseAdmin
     .from('listings')
     .select(
@@ -216,8 +181,9 @@ async function handleGET(_request: NextRequest, user: User) {
     )
     .eq('status', 'active')
     .is('deleted_at', null)
+    .or('expires_at.is.null,expires_at.gt.now()') // ✅ 過濾過期刊登
 
-  // 5. 應用篩選條件
+  // 6. 應用篩選條件
   if (trade_type && trade_type !== 'all') {
     if (!['sell', 'buy', 'exchange'].includes(trade_type)) {
       throw new ValidationError('trade_type 必須是 sell, buy, exchange 或 all')
@@ -242,7 +208,7 @@ async function handleGET(_request: NextRequest, user: User) {
     dropsItemsMap.forEach((item, itemId) => {
       if (
         item.itemName.toLowerCase().includes(searchLower) ||
-        (item.chineseItemName && item.chineseItemName.includes(search_term.trim()))
+        (item.chineseItemName && item.chineseItemName.toLowerCase().includes(searchLower))
       ) {
         matchingItemIds.add(itemId)
       }
@@ -252,7 +218,7 @@ async function handleGET(_request: NextRequest, user: User) {
     gachaItemsMap.forEach((item, itemId) => {
       if (
         item.itemName.toLowerCase().includes(searchLower) ||
-        (item.chineseName && item.chineseName.includes(search_term.trim()))
+        (item.chineseName && item.chineseName.toLowerCase().includes(searchLower))
       ) {
         matchingItemIds.add(itemId)
       }
@@ -275,11 +241,21 @@ async function handleGET(_request: NextRequest, user: User) {
         matched_items: itemIdsArray.length
       })
     } else {
-      // 如果沒有找到任何符合的物品，返回空結果
-      // 使用 .eq('item_id', -1) 來強制返回空結果（因為沒有 item_id = -1 的刊登）
-      query = query.eq('item_id', -1)
-
+      // 如果沒有找到任何符合的物品，直接返回空結果（更優雅的處理方式）
       apiLogger.debug('物品名稱搜尋無結果', { search_term })
+
+      return successWithPagination(
+        [],
+        {
+          page,
+          limit,
+          total: 0,
+          totalPages: 0,
+          hasNext: false,
+          hasPrev: false
+        },
+        '查詢成功'
+      )
     }
   }
 
@@ -331,19 +307,11 @@ async function handleGET(_request: NextRequest, user: User) {
     throw new ValidationError('市場搜尋失敗')
   }
 
-  // 9. 轉換資料格式（扁平化 JOIN 結果，並從三個資料來源查找物品中英文名稱）
+  // 9. 轉換資料格式（扁平化 JOIN 結果，並從全域快取查找物品中英文名稱）
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const formattedListings = (listings || []).map((listing: any) => {
-    // 查找物品名稱（優先順序：drops → gacha → item-attributes）
-    const dropsItem = dropsItemsMap.get(listing.item_id)
-    const gachaItem = gachaItemsMap.get(listing.item_id)
-    const itemData = itemsMap.get(listing.item_id)
-
-    // 英文名稱
-    const itemName = dropsItem?.itemName || gachaItem?.itemName || itemData?.item_name || null
-
-    // 中文名稱
-    const chineseItemName = dropsItem?.chineseItemName || gachaItem?.chineseName || null
+    // 從全域快取查找物品名稱（優先順序：drops → gacha → item-attributes）
+    const { itemName, chineseItemName } = getItemNames(listing.item_id)
 
     return {
       id: listing.id,
@@ -400,6 +368,14 @@ async function handleGET(_request: NextRequest, user: User) {
       order
     }
   })
+
+  // 設定快取（僅在無複雜篩選時）
+  if (useCache && cacheKey) {
+    await setCachedMarketListings(cacheKey, {
+      listings: formattedListings,
+      pagination
+    })
+  }
 
   return successWithPagination(formattedListings, pagination, '搜尋成功')
 }

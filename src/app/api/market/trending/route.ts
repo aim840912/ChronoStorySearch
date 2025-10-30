@@ -2,6 +2,7 @@ import { NextRequest } from 'next/server'
 import { withBotDetection } from '@/lib/bot-detection/api-middleware'
 import { requireTradingEnabled } from '@/lib/middleware/trading-middleware'
 import { success } from '@/lib/api-response'
+import { DatabaseError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
 import { DEFAULT_RATE_LIMITS } from '@/lib/bot-detection/constants'
@@ -46,8 +47,11 @@ async function handleGET(_request: NextRequest) {
   const { data: listings, error } = await query
 
   if (error) {
-    apiLogger.error('查詢熱門商品失敗', { error })
-    throw new Error('查詢熱門商品失敗')
+    throw new DatabaseError('查詢熱門商品失敗', {
+      code: error.code,
+      message: error.message,
+      details: error.details
+    })
   }
 
   // 3. 轉換資料格式（扁平化 JOIN 結果）

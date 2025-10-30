@@ -4,13 +4,14 @@ import { useState, useEffect } from 'react'
 import { BaseModal } from '@/components/common/BaseModal'
 import { ItemSearchInput } from './ItemSearchInput'
 import { ItemStatsInput } from './ItemStatsInput'
-import { ExtendedUniqueItem, TradeType, WantedItem } from '@/types'
+import { ExtendedUniqueItem, TradeType, WantedItem, GachaItem } from '@/types'
 import { useAuth } from '@/contexts/AuthContext'
 import { useLanguage } from '@/contexts/LanguageContext'
 import type { ItemStats } from '@/types/item-stats'
 import { useItemAttributesEssential, useLazyItemDetailed } from '@/hooks/useLazyData'
 import { getItemCategoryGroup, getCategoryGroup } from '@/lib/item-categories'
 import { useDataManagement } from '@/hooks/useDataManagement'
+import { clientLogger } from '@/lib/logger'
 
 /**
  * 建立刊登 Modal
@@ -68,6 +69,12 @@ export function CreateListingModal({
   const [itemStats, setItemStats] = useState<ItemStats | null>(null)
   const [showStatsInput, setShowStatsInput] = useState(false)
   const [isEquipment, setIsEquipment] = useState(false)  // 是否為裝備類
+  const [isRefreshingMembership, setIsRefreshingMembership] = useState(false)  // 是否正在刷新成員資格
+  const [showMembershipRefreshButton, setShowMembershipRefreshButton] = useState(false)  // 是否顯示刷新按鈕
+  const [lastRefreshTime, setLastRefreshTime] = useState<number | null>(null)  // 上次刷新時間
+  const [refreshErrorCount, setRefreshErrorCount] = useState(0)  // 刷新錯誤計數
+  const REFRESH_COOLDOWN = 60 * 1000  // 60 秒冷卻時間
+  const MAX_ERROR_COUNT = 3  // 最多連續失敗 3 次
 
   // 載入物品分類資料
   const { essentialMap } = useItemAttributesEssential()
@@ -158,12 +165,11 @@ export function CreateListingModal({
       }
     } else {
       // 最後嘗試：從轉蛋機資料中查找
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      let gachaItemData: any = null
+      // 注意：雖然類型為 GachaItem，但運行時實際包含 EnhancedGachaItem 的所有屬性
+      let gachaItemData: GachaItem | null = null
 
       for (const machine of gachaMachines) {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const found = machine.items.find((item: any) =>
+        const found = machine.items.find((item: GachaItem) =>
           String(item.itemId) === String(selectedItem.itemId)
         )
         if (found) {
@@ -172,7 +178,12 @@ export function CreateListingModal({
         }
       }
 
-      if (gachaItemData?.equipment?.category) {
+      // 使用類型守衛檢查 equipment 屬性（運行時存在）
+      const hasEquipment = (item: GachaItem): item is GachaItem & { equipment: { category: string } } => {
+        return 'equipment' in item && item.equipment !== null && typeof item.equipment === 'object' && 'category' in item.equipment
+      }
+
+      if (gachaItemData && hasEquipment(gachaItemData)) {
         // 使用轉蛋機資料中的 equipment.category
         const itemCategory = getItemCategoryGroup({
           item_id: selectedItem.itemId.toString(),
@@ -287,6 +298,7 @@ export function CreateListingModal({
           setError(`${errorMessage}${t('listing.error.discordAgeTip')}`)
         } else if (errorMessage.includes('加入指定的 Discord 伺服器')) {
           setError(`${errorMessage}${t('listing.error.discordServerTip')}`)
+          setShowMembershipRefreshButton(true)  // 顯示刷新按鈕
         } else if (errorMessage.includes('刊登配額上限')) {
           setError(`${errorMessage}${t('listing.error.quotaTip')}`)
         } else if (errorMessage.includes('已經刊登此物品') || errorMessage.includes('無法重複刊登')) {
@@ -316,10 +328,72 @@ export function CreateListingModal({
       setShowStatsInput(false)
       setIsEquipment(false)
     } catch (err) {
-      console.error('Failed to create listing:', err)
+      clientLogger.error('Failed to create listing:', err)
       setError(t('listing.error.networkError'))
     } finally {
       setIsSubmitting(false)
+    }
+  }
+
+  // 手動刷新 Discord 成員資格
+  const handleRefreshMembership = async () => {
+    // 檢查錯誤次數
+    if (refreshErrorCount >= MAX_ERROR_COUNT) {
+      setError(t('listing.error.tooManyFailures'))
+      setShowMembershipRefreshButton(false)
+      return
+    }
+
+    // 檢查冷卻時間
+    const now = Date.now()
+    if (lastRefreshTime && now - lastRefreshTime < REFRESH_COOLDOWN) {
+      const remainingSeconds = Math.ceil((REFRESH_COOLDOWN - (now - lastRefreshTime)) / 1000)
+      setError(t('listing.error.cooldownWait', { seconds: remainingSeconds }))
+      return
+    }
+
+    setIsRefreshingMembership(true)
+    setError(null)
+
+    try {
+      const response = await fetch('/api/auth/discord/refresh-membership', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        credentials: 'include'
+      })
+
+      const data = await response.json()
+
+      if (!response.ok || !data.success) {
+        setRefreshErrorCount(prev => prev + 1)  // 增加錯誤計數
+        setError(data.error || t('listing.error.refreshMembershipFailed'))
+        return
+      }
+
+      // 成功刷新
+      if (data.data.is_member) {
+        setLastRefreshTime(now)  // 記錄刷新時間
+        setRefreshErrorCount(0)  // 重置錯誤計數
+        setError(null)
+        setShowMembershipRefreshButton(false)
+        // 顯示成功訊息（可選）
+        setError(t('listing.success.membershipRefreshed'))
+        // 3 秒後清除成功訊息
+        setTimeout(() => {
+          setError(null)
+        }, 3000)
+      } else {
+        // 刷新後仍然不是成員
+        setError(t('listing.error.notDiscordMember'))
+        setShowMembershipRefreshButton(false)
+      }
+    } catch (err) {
+      clientLogger.error('Failed to refresh Discord membership:', err)
+      setError(t('listing.error.networkError'))
+    } finally {
+      setIsRefreshingMembership(false)
     }
   }
 
@@ -339,6 +413,45 @@ export function CreateListingModal({
         {error && (
           <div className="mb-4 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
             <p className="text-red-800 dark:text-red-200">{error}</p>
+            {showMembershipRefreshButton && (() => {
+              const now = Date.now()
+              const isInCooldown = Boolean(lastRefreshTime && now - lastRefreshTime < REFRESH_COOLDOWN)
+              const remainingSeconds = isInCooldown
+                ? Math.ceil((REFRESH_COOLDOWN - (now - lastRefreshTime!)) / 1000)
+                : 0
+
+              return (
+                <button
+                  onClick={handleRefreshMembership}
+                  disabled={isRefreshingMembership || isInCooldown}
+                  className="mt-3 px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg transition-colors duration-200 flex items-center gap-2"
+                >
+                  {isRefreshingMembership ? (
+                    <>
+                      <svg className="animate-spin h-5 w-5" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                      </svg>
+                      <span>{t('listing.button.refreshing')}</span>
+                    </>
+                  ) : isInCooldown ? (
+                    <>
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>{t('listing.button.cooldownRemaining', { seconds: remainingSeconds })}</span>
+                    </>
+                  ) : (
+                    <>
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                      </svg>
+                      <span>{t('listing.button.refreshMembership')}</span>
+                    </>
+                  )}
+                </button>
+              )
+            })()}
           </div>
         )}
 

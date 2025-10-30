@@ -7,6 +7,9 @@ import { useItemsData } from '@/hooks/useItemsData'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useAuth } from '@/contexts/AuthContext'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { clientLogger } from '@/lib/logger'
+import { toast } from 'react-hot-toast'
+import type { ExtendedUniqueItem } from '@/types'
 
 /**
  * 我的刊登 Modal
@@ -88,7 +91,7 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
 
         setListings(data.data || [])
       } catch (err) {
-        console.error('Failed to fetch my listings:', err)
+        clientLogger.error('Failed to fetch my listings:', err)
         setError('網路錯誤，請檢查您的連線')
       } finally {
         setIsLoading(false)
@@ -111,16 +114,16 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
       const data = await response.json()
 
       if (!response.ok || !data.success) {
-        alert(data.error || t('listing.deleteError'))
+        toast.error(data.error || t('listing.deleteError'))
         return
       }
 
       // 重新載入列表
       setListings(prev => prev.filter(l => l.id !== listingId))
-      alert(t('listing.deleteSuccess'))
+      toast.success(t('listing.deleteSuccess'))
     } catch (err) {
-      console.error('Failed to delete listing:', err)
-      alert(t('common.error'))
+      clientLogger.error('Failed to delete listing:', err)
+      toast.error(t('common.error'))
     }
   }
 
@@ -139,7 +142,7 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
       const data = await response.json()
 
       if (!response.ok || !data.success) {
-        alert(data.error || t('listing.deleteError'))
+        toast.error(data.error || t('listing.deleteError'))
         return
       }
 
@@ -147,16 +150,15 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
       setListings(prev => prev.map(l =>
         l.id === listingId ? { ...l, status: 'sold' } : l
       ))
-      alert(t('listing.markAsSoldSuccess'))
+      toast.success(t('listing.markAsSoldSuccess'))
     } catch (err) {
-      console.error('Failed to update listing:', err)
-      alert(t('common.error'))
+      clientLogger.error('Failed to update listing:', err)
+      toast.error(t('common.error'))
     }
   }
 
   // 根據語言選擇物品名稱
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const getDisplayItemName = (item: any, itemId?: number) => {
+  const getDisplayItemName = (item: ExtendedUniqueItem | undefined, itemId?: number) => {
     if (!item) {
       return itemId ? (language === 'zh-TW' ? `物品 #${itemId}` : `Item #${itemId}`) : (language === 'zh-TW' ? '未知物品' : 'Unknown Item')
     }

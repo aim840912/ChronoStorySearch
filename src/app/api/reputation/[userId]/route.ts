@@ -1,28 +1,46 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextRequest } from 'next/server'
+import { withOptionalAuthAndError, User } from '@/lib/middleware/api-middleware'
+import { success } from '@/lib/api-response'
+import { supabaseAdmin } from '@/lib/supabase/server'
+import { NotFoundError } from '@/lib/errors'
+import { apiLogger } from '@/lib/logger'
 
 /**
- * TODO [階段 3]: 實作獲取用戶信譽
+ * GET /api/reputation/[userId] - 查詢用戶信譽
  *
- * 功能需求:
- * - 驗證當前 session (防止爬蟲)
- * - 查詢 discord_profiles 表
- * - 返回: reputation_score, account_created_at, server_member_since
- * - 返回信譽歷史 (最近 10 筆)
+ * 功能：
+ * - 查詢指定用戶的信譽分數
+ * - 返回信譽分數和最後更新時間
  *
- * 認證要求: 🔒 需要認證 (withAuthAndError)
- * 參考文件: docs/architecture/交易系統/03-API設計.md
- * 參考文件: docs/architecture/交易系統/04-Discord整合.md
+ * 認證要求：🔓 公開 API（optionalAuth）
  */
-export async function GET(
+async function handleGET(
   _request: NextRequest,
-  _context: { params: Promise<{ userId: string }> }
+  _user: User | null,
+  context: { params: Promise<{ userId: string }> }
 ) {
-  return NextResponse.json(
-    {
-      success: false,
-      error: '獲取用戶信譽尚未實作',
-      code: 'NOT_IMPLEMENTED'
-    },
-    { status: 501 }
-  )
+  const { userId } = await context.params
+
+  apiLogger.debug('查詢用戶信譽', { user_id: userId })
+
+  // 查詢用戶信譽資料
+  const { data: profile, error } = await supabaseAdmin
+    .from('discord_profiles')
+    .select('reputation_score, reputation_updated_at')
+    .eq('discord_id', userId)
+    .single()
+
+  if (error || !profile) {
+    throw new NotFoundError('用戶不存在或尚未計算信譽')
+  }
+
+  return success({
+    user_id: userId,
+    reputation_score: profile.reputation_score || 0,
+    last_updated: profile.reputation_updated_at,
+  }, '查詢成功')
 }
+
+export const GET = withOptionalAuthAndError(handleGET, {
+  module: 'ReputationAPI',
+})

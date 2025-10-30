@@ -8,6 +8,8 @@ import { getItemImageUrl } from '@/lib/image-utils'
 import { useAuth } from '@/contexts/AuthContext'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { ListingDetailModal } from './ListingDetailModal'
+import { clientLogger } from '@/lib/logger'
+import type { ExtendedUniqueItem } from '@/types'
 
 /**
  * 交換匹配 Modal
@@ -108,7 +110,7 @@ export function ExchangeMatchModal({
         setMyListing(data.data.my_listing)
         setMatches(data.data.matches || [])
       } catch (err) {
-        console.error('Failed to fetch exchange matches:', err)
+        clientLogger.error('Failed to fetch exchange matches:', err)
         setError('網路錯誤，請檢查您的連線')
       } finally {
         setIsLoading(false)
@@ -141,8 +143,7 @@ export function ExchangeMatchModal({
   }
 
   // 根據語言選擇物品名稱
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const getDisplayItemName = (item: any, itemId?: number) => {
+  const getDisplayItemName = (item: ExtendedUniqueItem | undefined, itemId?: number) => {
     if (!item) {
       return itemId ? (language === 'zh-TW' ? `物品 #${itemId}` : `Item #${itemId}`) : (language === 'zh-TW' ? '未知物品' : 'Unknown Item')
     }

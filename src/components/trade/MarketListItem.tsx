@@ -94,9 +94,8 @@ export function MarketListItem({ listing, onClick }: MarketListItemProps) {
 
   // 取得屬性標籤（根據語言）
   const getStatLabel = (key: string): string => {
-    const labels = language === 'zh-TW' ? STAT_LABELS_ZH : STAT_LABELS_EN
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return (labels as any)[key] || key
+    const labels: Record<string, string> = language === 'zh-TW' ? STAT_LABELS_ZH : STAT_LABELS_EN
+    return labels[key] || key
   }
 
   return (

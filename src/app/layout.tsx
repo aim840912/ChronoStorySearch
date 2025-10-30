@@ -6,6 +6,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { LoginModal } from "@/components/auth/LoginModal";
+import { MaintenanceBanner } from "@/components/common/MaintenanceBanner";
 import { Analytics } from '@vercel/analytics/react';
 
 const geistSans = Geist({
@@ -39,6 +40,7 @@ export default function RootLayout({
           <ThemeProvider>
             <LanguageProvider>
               <>
+                <MaintenanceBanner />
                 {children}
                 <LoginModal />
               </>

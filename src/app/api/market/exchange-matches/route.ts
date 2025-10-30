@@ -5,6 +5,7 @@ import { success } from '@/lib/api-response'
 import { ValidationError, NotFoundError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
+import type { MyListing, CandidateListingRaw } from '@/types/listings'
 
 /**
  * GET /api/market/exchange-matches - 交換匹配查詢
@@ -39,7 +40,7 @@ async function handleGET(request: NextRequest, user: User) {
   })
 
   // 1. 查詢我的刊登（驗證存在且為 exchange 類型，JOIN wanted_items）
-  const { data: myListing, error: myListingError } = await supabaseAdmin
+  const { data: myListingRaw, error: myListingError } = await supabaseAdmin
     .from('listings')
     .select(`
       id,
@@ -57,10 +58,13 @@ async function handleGET(request: NextRequest, user: User) {
     .is('deleted_at', null)
     .single()
 
-  if (myListingError || !myListing) {
+  if (myListingError || !myListingRaw) {
     apiLogger.warn('刊登不存在', { listing_id: listingIdNum, error: myListingError })
     throw new NotFoundError('刊登不存在')
   }
+
+  // 型別斷言（Supabase TypeScript 最佳實踐）
+  const myListing = myListingRaw as unknown as MyListing
 
   // 驗證是交換類型
   if (myListing.trade_type !== 'exchange') {
@@ -73,12 +77,11 @@ async function handleGET(request: NextRequest, user: User) {
   }
 
   // 提取我想要的物品 ID 列表
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const myWantedItemIds = (myListing.listing_wanted_items as any[]).map((item: any) => item.item_id)
+  const myWantedItemIds = myListing.listing_wanted_items.map((item) => item.item_id)
 
   // 2. 查詢候選匹配刊登
   // 第一步：找到所有有我想要物品的刊登（對方的 item_id 在我的 wanted_items 中）
-  const { data: candidateListings, error: matchesError } = await supabaseAdmin
+  const { data: candidateListingsRaw, error: matchesError } = await supabaseAdmin
     .from('listings')
     .select(`
       id,
@@ -104,44 +107,59 @@ async function handleGET(request: NextRequest, user: User) {
     .eq('trade_type', 'exchange')
     .eq('status', 'active')
     .is('deleted_at', null)
+    .or('expires_at.is.null,expires_at.gt.now()')  // ✅ 過濾過期刊登
     .in('item_id', myWantedItemIds)  // 對方有我想要的物品
     .neq('user_id', myListing.user_id)  // 排除自己
     .order('created_at', { ascending: false })
+    .limit(50)  // ✅ 限制最多 50 個匹配結果
 
   if (matchesError) {
     apiLogger.error('查詢匹配失敗', { error: matchesError, listing_id: listingIdNum })
     throw new ValidationError('查詢匹配失敗')
   }
 
+  // 型別斷言（Supabase TypeScript 最佳實踐）
+  const candidateListings = (candidateListingsRaw || []) as unknown as CandidateListingRaw[]
+
   // 第二步：在代碼中過濾 - 對方的 wanted_items 必須包含我的 item_id
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const validMatches = (candidateListings || []).filter((candidate: any) => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const theirWantedItemIds = (candidate.listing_wanted_items as any[] | undefined)?.map((item: any) => item.item_id) || []
+  const validMatches = candidateListings.filter((candidate) => {
+    const theirWantedItemIds = candidate.listing_wanted_items?.map((item) => item.item_id) || []
     return theirWantedItemIds.includes(myListing.item_id)
   })
 
-  // 3. 計算匹配分數並格式化結果
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const formattedMatches = validMatches.map((match: any) => {
-    // 計算匹配分數 (0-100)
+  /**
+   * 計算交換匹配分數 (0-100)
+   *
+   * 計算公式：
+   * - 基礎分數: 40 分（雙向匹配成功）
+   * - 物品匹配: 最高 30 分（我想要的物品中，對方擁有的比例）
+   *   - 公式: Math.min(匹配物品數量 * 10, 30)
+   * - 數量匹配: 最高 10 分（數量匹配度，避免數量差距過大）
+   *   - 公式: 計算雙向數量比率的平均值 * 10
+   *   - myQuantityRatio = Math.min(對方數量 / 我想要數量, 1)
+   *   - theirQuantityRatio = Math.min(我的數量 / 對方想要數量, 1)
+   *   - quantityScore = (myQuantityRatio + theirQuantityRatio) / 2 * 10
+   * - 信譽加分: 最高 20 分（對方信譽分數 / 5）
+   *   - 公式: Math.min(Math.round(對方信譽分數 / 5), 20)
+   *
+   * 範例：
+   * - 完美匹配（100分）: 雙向匹配 + 對方有所有想要物品 + 數量完全匹配 + 信譽100分
+   * - 普通匹配（60分）: 雙向匹配 + 對方有部分物品 + 數量基本匹配 + 信譽中等
+   */
+  const formattedMatches = validMatches.map((match) => {
     // 基礎分數 40 分（雙向匹配）
     let matchScore = 40
 
     // 匹配物品數量加分 (最高 30 分)
-    // 如果對方的物品匹配我的多個想要物品，加分更高
     const matchedItemsCount = myWantedItemIds.filter(id => id === match.item_id).length
     const itemMatchBonus = Math.min(matchedItemsCount * 10, 30)
     matchScore += itemMatchBonus
 
     // 數量匹配度 (最高 10 分)
-    // 找到對應的 wanted_item 數量
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const myWantedItem = (myListing.listing_wanted_items as any[]).find((item: any) => item.item_id === match.item_id)
+    const myWantedItem = myListing.listing_wanted_items.find((item) => item.item_id === match.item_id)
     const myWantedQuantity = myWantedItem?.quantity || 1
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const theirWantedItem = (match.listing_wanted_items as any[] | undefined)?.find((item: any) => item.item_id === myListing.item_id)
+    const theirWantedItem = match.listing_wanted_items?.find((item) => item.item_id === myListing.item_id)
     const theirWantedQuantity = theirWantedItem?.quantity || 1
 
     const myQuantityRatio = Math.min(match.quantity / myWantedQuantity, 1)
@@ -150,7 +168,7 @@ async function handleGET(request: NextRequest, user: User) {
     matchScore += quantityScore
 
     // 信譽加分 (最高 20 分)
-    const reputationScore = match.discord_profiles?.reputation_score || 0
+    const reputationScore = match.discord_profiles?.[0]?.reputation_score || 0
     const reputationBonus = Math.min(Math.round(reputationScore / 5), 20)
     matchScore += reputationBonus
 
@@ -165,13 +183,12 @@ async function handleGET(request: NextRequest, user: User) {
       interest_count: match.interest_count,
       created_at: match.created_at,
       // 對方想要的物品列表
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      wanted_items: (match.listing_wanted_items as any[] | undefined)?.map((item: any) => ({
+      wanted_items: match.listing_wanted_items?.map((item) => ({
         item_id: item.item_id,
         quantity: item.quantity
       })) || [],
       seller: {
-        discord_username: match.users?.discord_username || 'Unknown',
+        discord_username: match.users?.[0]?.discord_username || 'Unknown',
         reputation_score: reputationScore
       },
       match_score: Math.min(matchScore, 100) // 確保不超過 100
@@ -193,8 +210,7 @@ async function handleGET(request: NextRequest, user: User) {
         id: myListing.id,
         item_id: myListing.item_id,
         quantity: myListing.quantity,
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        wanted_items: (myListing.listing_wanted_items as any[]).map((item: any) => ({
+        wanted_items: myListing.listing_wanted_items.map((item) => ({
           item_id: item.item_id,
           quantity: item.quantity
         }))

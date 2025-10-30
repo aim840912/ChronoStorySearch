@@ -49,7 +49,7 @@ interface CachedStatus {
 
 // 全域快取（跨元件共享）
 let globalCache: CachedStatus | null = null
-const CACHE_TTL = 60 * 1000 // 60 秒
+const CACHE_TTL = 15 * 1000 // 15 秒（縮短快取時間，確保維護通知更即時）
 
 // =====================================================
 // Hook 實作

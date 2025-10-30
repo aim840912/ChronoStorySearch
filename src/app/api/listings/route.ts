@@ -7,10 +7,13 @@ import { ValidationError, DatabaseError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
 import { DEFAULT_RATE_LIMITS } from '@/lib/bot-detection/constants'
-import { validateAndCalculateStats } from '@/lib/validation/item-stats'
+import { validateItemStats } from '@/lib/validation/item-stats'
 import type { ItemStats } from '@/types/item-stats'
 import { checkAccountAge, checkServerMembershipWithCache } from '@/lib/services/discord-verification'
-import { getSystemSettings } from '@/lib/config/system-config'
+import { getSystemSettings, LISTING_CONSTRAINTS } from '@/lib/config/system-config'
+import { validateWebhookUrlOrThrow } from '@/lib/validation/webhook'
+import { encryptWebhookUrl } from '@/lib/crypto/webhook-encryption'
+import { validateInGameName } from '@/lib/validation/text-validation'
 
 // Discord 驗證配置
 const DISCORD_GUILD_ID = process.env.DISCORD_GUILD_ID // Discord 伺服器 ID（Guild ID）
@@ -131,13 +134,15 @@ async function handlePOST(request: NextRequest, user: User) {
     throw new ValidationError('無法取得 Discord 聯絡方式，請重新登入')
   }
 
-  // 驗證遊戲內角色名（選填）
-  if (ingame_name !== undefined && ingame_name !== null) {
-    if (typeof ingame_name !== 'string') {
-      throw new ValidationError('ingame_name 必須是字串')
-    }
-    // 允許空字串（使用者清空欄位）
+  // 驗證遊戲內角色名（選填，防止 XSS 攻擊）
+  if (ingame_name !== undefined && ingame_name !== null && typeof ingame_name !== 'string') {
+    throw new ValidationError('ingame_name 必須是字串')
   }
+
+  const sanitizedIngameName = validateInGameName(ingame_name)
+
+  // 驗證 Webhook URL（防止 SSRF 攻擊）
+  validateWebhookUrlOrThrow(webhook_url)
 
   // 2. 驗證交易類型特定邏輯
   if (trade_type === 'exchange') {
@@ -167,8 +172,32 @@ async function handlePOST(request: NextRequest, user: User) {
     })
   } else {
     // 買賣類型必須提供 price
-    if (!price || typeof price !== 'number' || price <= 0) {
-      throw new ValidationError('買賣類型必須提供正數 price')
+    if (price === undefined || price === null) {
+      throw new ValidationError('買賣類型必須提供 price')
+    }
+
+    if (typeof price !== 'number') {
+      throw new ValidationError('價格必須為數字')
+    }
+
+    if (!Number.isFinite(price)) {
+      throw new ValidationError('價格必須為有限數值')
+    }
+
+    if (price <= 0) {
+      throw new ValidationError(
+        `價格必須為正數，最小值為 ${LISTING_CONSTRAINTS.MIN_PRICE.toLocaleString()} 楓幣`
+      )
+    }
+
+    if (price > LISTING_CONSTRAINTS.MAX_PRICE) {
+      throw new ValidationError(
+        `價格不得超過 ${LISTING_CONSTRAINTS.MAX_PRICE.toLocaleString()} 楓幣`
+      )
+    }
+
+    if (!Number.isInteger(price)) {
+      throw new ValidationError('價格必須為整數楓幣')
     }
   }
 
@@ -176,7 +205,7 @@ async function handlePOST(request: NextRequest, user: User) {
   let validatedStats: ItemStats | null = null
 
   if (item_stats) {
-    const validationResult = validateAndCalculateStats(item_stats)
+    const validationResult = validateItemStats(item_stats)
 
     if (!validationResult.success) {
       apiLogger.warn('物品屬性驗證失敗', {
@@ -186,7 +215,7 @@ async function handlePOST(request: NextRequest, user: User) {
       throw new ValidationError(`物品屬性驗證失敗：${validationResult.error}`)
     }
 
-    validatedStats = validationResult.data!.stats
+    validatedStats = validationResult.data!
 
     apiLogger.debug('物品屬性驗證成功', {
       user_id: user.id
@@ -237,16 +266,20 @@ async function handlePOST(request: NextRequest, user: User) {
     guild_id: DISCORD_GUILD_ID
   })
 
-  // 6. 使用資料庫交易函數安全地建立刊登（防止競態條件）
+  // 6. 加密 Webhook URL（如果有提供）
+  const encryptedWebhookUrl = webhook_url ? encryptWebhookUrl(webhook_url) : null
+
+  // 7. 使用資料庫交易函數安全地建立刊登（防止競態條件）
   const { data: rpcResult, error: rpcError } = await supabaseAdmin.rpc('create_listing_safe', {
     p_user_id: user.id,
     p_item_id: item_id,
     p_trade_type: trade_type,
+    p_discord_contact: discord_contact, // ✅ 新增：Discord 聯絡方式（必填）
     p_price: trade_type !== 'exchange' ? price : null,
     p_quantity: quantity || 1,
-    p_ingame_name: ingame_name?.trim() || null,
+    p_ingame_name: sanitizedIngameName,
     p_seller_discord_id: user.discord_id,
-    p_webhook_url: webhook_url || null,
+    p_webhook_url: encryptedWebhookUrl, // 使用加密版本
     p_item_stats: validatedStats ? JSON.stringify(validatedStats) : null,
     p_wanted_items: trade_type === 'exchange' && wanted_items ? JSON.stringify(wanted_items) : null,
     p_max_listings: maxActiveListings

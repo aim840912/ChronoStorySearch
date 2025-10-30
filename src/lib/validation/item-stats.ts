@@ -134,34 +134,6 @@ export function validateItemStats(stats: ItemStats): {
 }
 
 /**
- * 向後相容：保留舊的函數名稱
- * @deprecated 請改用 validateItemStats
- */
-export function validateAndCalculateStats(stats: ItemStats): {
-  success: boolean
-  data?: {
-    stats: ItemStats
-  }
-  error?: string
-} {
-  const result = validateItemStats(stats)
-
-  if (!result.success) {
-    return {
-      success: false,
-      error: result.error,
-    }
-  }
-
-  return {
-    success: true,
-    data: {
-      stats: result.data!,
-    },
-  }
-}
-
-/**
  * 刊登請求 Schema（擴充現有的 CreateListingSchema）
  *
  * 使用方式：

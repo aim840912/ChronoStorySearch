@@ -7,6 +7,8 @@ import { useItemsData } from '@/hooks/useItemsData'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useAuth } from '@/contexts/AuthContext'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { clientLogger } from '@/lib/logger'
+import type { ExtendedUniqueItem } from '@/types'
 
 /**
  * 購買意向管理 Modal
@@ -122,7 +124,7 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
           setReceivedInterests(data.data || [])
         }
       } catch (err) {
-        console.error('Failed to fetch interests:', err)
+        clientLogger.error('Failed to fetch interests:', err)
         setError('網路錯誤，請檢查您的連線')
       } finally {
         setIsLoading(false)
@@ -155,8 +157,7 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
   }
 
   // 根據語言選擇物品名稱
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const getDisplayItemName = (item: any, itemId?: number) => {
+  const getDisplayItemName = (item: ExtendedUniqueItem | undefined, itemId?: number) => {
     if (!item) {
       return itemId ? (language === 'zh-TW' ? `物品 #${itemId}` : `Item #${itemId}`) : (language === 'zh-TW' ? '未知物品' : 'Unknown Item')
     }

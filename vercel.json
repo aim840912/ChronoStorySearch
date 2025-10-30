@@ -1,4 +1,10 @@
 {
+  "crons": [
+    {
+      "path": "/api/cron/cleanup-expired-listings",
+      "schedule": "0 0 * * *"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

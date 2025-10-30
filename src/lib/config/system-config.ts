@@ -33,8 +33,8 @@ interface CachedSettings {
 // 快取配置
 // =====================================================
 
-// 快取時間：10 秒（平衡即時性與效能）
-const CACHE_TTL = 10 * 1000
+// 快取時間：60 秒（平衡即時性與效能）
+const CACHE_TTL = 60 * 1000
 
 // 記憶體快取
 let cachedSettings: CachedSettings | null = null
@@ -83,7 +83,7 @@ async function fetchSettingsFromDatabase(): Promise<SystemSettings> {
  * 獲取系統設定（帶快取）
  *
  * 快取策略：
- * - 快取時間：10 秒
+ * - 快取時間：60 秒
  * - 超過快取時間後重新從資料庫讀取
  * - 首次呼叫會直接查詢資料庫
  *
@@ -154,3 +154,36 @@ export async function getMaintenanceMessage(): Promise<string> {
   const settings = await getSystemSettings()
   return settings.maintenance_message
 }
+
+// =====================================================
+// 刊登限制常數
+// =====================================================
+
+/**
+ * 刊登相關的系統限制
+ */
+export const LISTING_CONSTRAINTS = {
+  // 價格限制（楓幣）
+  MIN_PRICE: 1,
+  MAX_PRICE: 10_000_000_000, // 100 億楓幣（合理的遊戲內上限）
+
+  // 價格顯示設定
+  PRICE_DISPLAY_FORMAT: {
+    locale: 'zh-TW',
+    maximumFractionDigits: 0
+  },
+
+  // 文字長度限制（後續步驟會使用）
+  MAX_MESSAGE_LENGTH: 500, // 留言最大長度
+  MAX_CONTACT_INFO_LENGTH: 200, // 聯絡方式最大長度
+  MAX_IN_GAME_NAME_LENGTH: 20, // 遊戲內角色名最大長度
+
+  // 文字驗證規則
+  TEXT_VALIDATION: {
+    // 禁止的字元（控制字元、特殊符號等）
+    FORBIDDEN_CHARS_REGEX: /[\x00-\x1F\x7F]/g,
+
+    // 允許的字元（中文、英文、數字、常用符號）
+    ALLOWED_CHARS_REGEX: /^[\u4e00-\u9fa5a-zA-Z0-9\s.,!?@#\-_()（）、，。！？]+$/
+  }
+} as const

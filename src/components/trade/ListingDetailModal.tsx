@@ -10,7 +10,9 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { ExchangeMatchModal } from './ExchangeMatchModal'
 import { StatsComparisonCard } from './StatsComparisonCard'
 import type { ItemStats } from '@/types/item-stats'
-import type { WantedItem } from '@/types'
+import type { WantedItem, ExtendedUniqueItem } from '@/types'
+import { clientLogger } from '@/lib/logger'
+import { toast } from 'react-hot-toast'
 
 /**
  * 刊登詳情 Modal
@@ -121,7 +123,7 @@ export function ListingDetailModal({
 
         setListing(data.data)
       } catch (err) {
-        console.error('Failed to fetch listing detail:', err)
+        clientLogger.error('Failed to fetch listing detail:', err)
         setError('網路錯誤，請檢查您的連線')
       } finally {
         setIsLoadingListing(false)
@@ -153,7 +155,7 @@ export function ListingDetailModal({
       setContactInfo(data.data)
       setShowContact(true) // 自動展開聯絡方式
     } catch (err) {
-      console.error('Failed to fetch contact info:', err)
+      clientLogger.error('Failed to fetch contact info:', err)
       setError('網路錯誤')
     } finally {
       setIsLoadingContact(false)
@@ -196,12 +198,12 @@ export function ListingDetailModal({
         return
       }
 
-      alert(t('listing.registerInterestSuccess'))
+      toast.success(t('listing.registerInterestSuccess'))
       setInterestMessage('')
       onInterestRegistered?.()
       onClose()
     } catch (err) {
-      console.error('Failed to register interest:', err)
+      clientLogger.error('Failed to register interest:', err)
       setError('網路錯誤')
     } finally {
       setIsRegisteringInterest(false)
@@ -215,8 +217,7 @@ export function ListingDetailModal({
   const item = listing ? getItemById(listing.item_id) : null
 
   // 根據語言選擇物品名稱
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const getDisplayItemName = (item: any, itemId?: number) => {
+  const getDisplayItemName = (item: ExtendedUniqueItem | null | undefined, itemId?: number) => {
     if (!item) {
       return itemId ? (language === 'zh-TW' ? `物品 #${itemId}` : `Item #${itemId}`) : (language === 'zh-TW' ? '未知物品' : 'Unknown Item')
     }

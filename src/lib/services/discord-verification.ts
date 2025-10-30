@@ -9,6 +9,9 @@
 
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
+import { retry, RetryableError } from '@/lib/utils/retry'
+import { redis } from '@/lib/redis/client'
+import { RedisKeys, RedisTTL, DatabaseCacheTTL } from '@/lib/config/cache-config'
 
 /**
  * 驗證 Discord 帳號年齡
@@ -87,42 +90,68 @@ export async function checkServerMembership(
   memberSince?: Date
 }> {
   try {
-    // 呼叫 Discord API: GET /users/@me/guilds
-    const response = await fetch('https://discord.com/api/v10/users/@me/guilds', {
-      headers: {
-        Authorization: `Bearer ${accessToken}`
-      }
-    })
-
-    if (!response.ok) {
-      const errorText = await response.text()
-      apiLogger.error('Discord API 呼叫失敗', {
-        status: response.status,
-        statusText: response.statusText,
-        error: errorText,
-        hint:
-          response.status === 401
-            ? 'Access token 可能已過期或無效'
-            : response.status === 403
-              ? '可能缺少 guilds OAuth scope 權限'
-              : '未知錯誤'
+    // 使用重試機制呼叫 Discord API（指數退避）
+    const guilds = await retry(async () => {
+      const response = await fetch('https://discord.com/api/v10/users/@me/guilds', {
+        headers: {
+          Authorization: `Bearer ${accessToken}`
+        }
       })
-      return { isMember: false }
-    }
 
-    const guilds: Array<{
+      // 401: Token 過期，不可重試
+      if (response.status === 401) {
+        apiLogger.warn('Discord access token 已過期', { status: 401 })
+        throw new RetryableError('Token 已過期', false)
+      }
+
+      // 403: 權限不足，不可重試
+      if (response.status === 403) {
+        apiLogger.warn('Discord OAuth scope 權限不足', { status: 403 })
+        throw new RetryableError('權限不足', false)
+      }
+
+      // 429: Rate Limited，可重試
+      if (response.status === 429) {
+        const retryAfter = response.headers.get('Retry-After') || '1'
+        apiLogger.warn('Discord API rate limited', {
+          status: 429,
+          retryAfter: `${retryAfter}s`
+        })
+        throw new RetryableError(`Rate limited, retry after ${retryAfter}s`, true)
+      }
+
+      // 5xx: 伺服器錯誤，可重試
+      if (response.status >= 500) {
+        apiLogger.warn('Discord 伺服器錯誤', { status: response.status })
+        throw new RetryableError('Discord 伺服器錯誤', true)
+      }
+
+      // 其他錯誤，不可重試
+      if (!response.ok) {
+        const errorText = await response.text()
+        apiLogger.error('Discord API 呼叫失敗', {
+          status: response.status,
+          error: errorText
+        })
+        throw new RetryableError(`Discord API 錯誤: ${response.status}`, false)
+      }
+
+      return response.json()
+    }, { retries: 3, backoff: 'exponential' })
+
+    const guildsArray: Array<{
       id: string
       name: string
       joined_at?: string
-    }> = await response.json()
+    }> = guilds
 
     apiLogger.debug('Discord guilds 查詢成功', {
-      guild_count: guilds.length,
-      guild_ids: guilds.map((g) => g.id).slice(0, 5) // 只記錄前 5 個
+      guild_count: guildsArray.length,
+      guild_ids: guildsArray.map((g) => g.id).slice(0, 5) // 只記錄前 5 個
     })
 
     // 檢查是否包含目標伺服器
-    const targetGuild = guilds.find((guild) => guild.id === requiredServerId)
+    const targetGuild = guildsArray.find((guild) => guild.id === requiredServerId)
 
     if (targetGuild) {
       apiLogger.debug('Discord 伺服器成員驗證通過', {
@@ -198,7 +227,27 @@ export async function checkServerMembershipWithCache(
   requiredServerId: string
 ): Promise<{ isMember: boolean }> {
   try {
-    // 1. 查詢快取
+    // 1. 檢查 Redis 快取（第一層，最快）
+    const redisCacheKey = RedisKeys.discordMembership(userId, requiredServerId)
+    try {
+      const cached = await redis.get(redisCacheKey)
+      if (cached !== null) {
+        const isMember = cached === 'true'
+        apiLogger.debug('使用 Redis 快取的伺服器成員資格', {
+          userId,
+          isMember
+        })
+        return { isMember }
+      }
+    } catch (redisError) {
+      // Redis 錯誤不影響主流程
+      apiLogger.warn('Redis 快取讀取失敗，繼續使用資料庫快取', {
+        error: redisError,
+        userId
+      })
+    }
+
+    // 2. 查詢資料庫快取（第二層）
     const { data: profile } = await supabaseAdmin
       .from('discord_profiles')
       .select('is_server_member, server_member_checked_at')
@@ -210,30 +259,46 @@ export async function checkServerMembershipWithCache(
         ? new Date(profile.server_member_checked_at)
         : null
 
-      // 2. 檢查快取是否有效（24 小時內）
+      // 3. 檢查資料庫快取是否有效（使用配置的 TTL）
       if (checkedAt) {
         const now = new Date()
         const diffHours = (now.getTime() - checkedAt.getTime()) / (1000 * 60 * 60)
 
-        if (diffHours < 24) {
-          apiLogger.debug('使用快取的伺服器成員資格', {
+        if (diffHours < DatabaseCacheTTL.DISCORD_MEMBERSHIP) {
+          const isMember = profile.is_server_member || false
+
+          // 更新 Redis 快取（使用配置的 TTL）
+          try {
+            await redis.set(redisCacheKey, isMember ? 'true' : 'false', { ex: RedisTTL.DISCORD_MEMBERSHIP })
+          } catch (redisError) {
+            apiLogger.warn('Redis 快取寫入失敗', { error: redisError })
+          }
+
+          apiLogger.debug('使用資料庫快取的伺服器成員資格', {
             userId,
-            isMember: profile.is_server_member,
+            isMember,
             cachedHoursAgo: diffHours.toFixed(2)
           })
 
-          return { isMember: profile.is_server_member || false }
+          return { isMember }
         }
       }
     }
 
-    // 3. 快取過期或不存在，呼叫 Discord API
+    // 4. 快取過期或不存在，呼叫 Discord API
     apiLogger.debug('伺服器成員資格快取過期，重新驗證', { userId })
 
     const result = await checkServerMembership(accessToken, requiredServerId)
 
-    // 4. 更新快取
+    // 5. 更新資料庫快取（使用配置的 TTL）
     await updateServerMembershipCache(userId, result.isMember, result.memberSince)
+
+    // 6. 更新 Redis 快取（使用配置的 TTL）
+    try {
+      await redis.set(redisCacheKey, result.isMember ? 'true' : 'false', { ex: RedisTTL.DISCORD_MEMBERSHIP })
+    } catch (redisError) {
+      apiLogger.warn('Redis 快取寫入失敗', { error: redisError })
+    }
 
     return { isMember: result.isMember }
   } catch (error) {

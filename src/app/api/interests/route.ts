@@ -2,9 +2,12 @@ import { NextRequest } from 'next/server'
 import { withAuthAndError, User } from '@/lib/middleware/api-middleware'
 import { requireTradingEnabled } from '@/lib/middleware/trading-middleware'
 import { success, created } from '@/lib/api-response'
-import { ValidationError, NotFoundError } from '@/lib/errors'
+import { ValidationError, NotFoundError, DatabaseError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
+import { sendDiscordNotification } from '@/lib/services/discord-notification'
+import { validateMessage } from '@/lib/validation/text-validation'
+import { decryptWebhookUrl } from '@/lib/crypto/webhook-encryption'
 
 /**
  * GET /api/interests - 查詢我的購買意向
@@ -87,7 +90,7 @@ async function handlePOST(request: NextRequest, user: User) {
   // 2. 驗證刊登存在且為 active 狀態
   const { data: listing, error: fetchError } = await supabaseAdmin
     .from('listings')
-    .select('id, user_id, status')
+    .select('id, user_id, status, webhook_url, item_id, item_name')
     .eq('id', listing_id)
     .is('deleted_at', null)
     .single()
@@ -106,23 +109,35 @@ async function handlePOST(request: NextRequest, user: User) {
     throw new ValidationError('無法對自己的刊登登記意向')
   }
 
-  // 4. 檢查是否已登記過
-  const { data: existingInterest } = await supabaseAdmin
+  // 4. 檢查是否已登記過（使用 limit(1) 更安全）
+  const { data: existingInterests, error: checkError } = await supabaseAdmin
     .from('interests')
     .select('id')
     .eq('listing_id', listing_id)
     .eq('buyer_id', user.id)
-    .single()
+    .limit(1)
 
-  if (existingInterest) {
+  if (checkError) {
+    apiLogger.error('檢查意向記錄失敗', { error: checkError })
+    throw new DatabaseError('檢查意向記錄失敗', {
+      code: checkError.code,
+      message: checkError.message,
+      details: checkError.details
+    })
+  }
+
+  if (existingInterests && existingInterests.length > 0) {
     throw new ValidationError('您已登記過此刊登的購買意向')
   }
 
   // 5. 創建購買意向
+  // 驗證並清理 message
+  const validatedMessage = validateMessage(message)
+
   const interestData = {
     listing_id,
     buyer_id: user.id,
-    message: message?.trim() || null,
+    message: validatedMessage,
     status: 'pending'
   }
 
@@ -145,6 +160,49 @@ async function handlePOST(request: NextRequest, user: User) {
   await supabaseAdmin.rpc('increment_interest_count', {
     listing_id_param: listing_id
   })
+
+  // 7. 發送 Discord Webhook 通知（非阻塞）
+  if (listing.webhook_url) {
+    try {
+      // 解密 webhook_url
+      const decryptedWebhookUrl = decryptWebhookUrl(listing.webhook_url)
+
+      // 查詢買家的信譽分數
+      const { data: buyerProfile } = await supabaseAdmin
+        .from('discord_profiles')
+        .select('reputation_score')
+        .eq('user_id', user.id)
+        .single()
+
+      // 非同步發送通知，不等待結果
+      sendDiscordNotification(
+        decryptedWebhookUrl,
+        'interest_received',
+        {
+          listingId: listing.id,
+          itemName: listing.item_name || `物品 ID: ${listing.item_id}`,
+          buyer: {
+            username: user.discord_username || user.discord_id,
+            reputation: buyerProfile?.reputation_score
+          }
+        }
+      ).catch((error) => {
+        // 記錄通知失敗，但不中斷主流程
+        apiLogger.warn('Discord 通知發送失敗 (interest_received)', {
+          listing_id: listing.id,
+          notification_type: 'interest_received',
+          error_message: error.message,
+          user_id: user.id
+        })
+      })
+    } catch (error) {
+      // 解密失敗時記錄錯誤
+      apiLogger.error('解密 Webhook URL 失敗', {
+        listing_id: listing.id,
+        error
+      })
+    }
+  }
 
   apiLogger.info('購買意向登記成功', {
     user_id: user.id,
