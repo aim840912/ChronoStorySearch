@@ -1,7 +1,7 @@
 'use client'
 
 import { memo } from 'react'
-import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode } from '@/types'
+import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode, MarketFilterOptions } from '@/types'
 import { SearchBar } from '@/components/SearchBar'
 import { FilterButtons } from '@/components/FilterButtons'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
@@ -39,6 +39,13 @@ interface SearchHeaderProps {
   onResetAdvancedFilter: () => void
   advancedFilter: AdvancedFilterOptions
   onAdvancedFilterChange: (filter: AdvancedFilterOptions) => void
+
+  // 交易系統相關
+  onOpenCreateListing: () => void
+  onOpenMyListings: () => void
+  onOpenInterests: () => void
+  marketFilter: MarketFilterOptions
+  onMarketFilterChange: (filter: MarketFilterOptions) => void
 }
 
 /**
@@ -72,6 +79,11 @@ export const SearchHeader = memo(function SearchHeader({
   onResetAdvancedFilter,
   advancedFilter,
   onAdvancedFilterChange,
+  onOpenCreateListing: _onOpenCreateListing,
+  onOpenMyListings: _onOpenMyListings,
+  onOpenInterests: _onOpenInterests,
+  marketFilter: _marketFilter,
+  onMarketFilterChange: _onMarketFilterChange,
 }: SearchHeaderProps) {
   const { t } = useLanguage()
 
