@@ -5,6 +5,7 @@ import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMod
 import { SearchBar } from '@/components/SearchBar'
 import { FilterButtons } from '@/components/FilterButtons'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
+import { MarketFilterPanel } from '@/components/trade/MarketFilterPanel'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { LanguageToggle } from '@/components/LanguageToggle'
 import { LoginButton } from '@/components/auth/LoginButton'
@@ -85,8 +86,8 @@ export const SearchHeader = memo(function SearchHeader({
   onOpenCreateListing,
   onOpenMyListings,
   onOpenInterests,
-  marketFilter: _marketFilter,
-  onMarketFilterChange: _onMarketFilterChange,
+  marketFilter,
+  onMarketFilterChange,
 }: SearchHeaderProps) {
   const { t } = useLanguage()
   const { user, loading } = useAuth()
@@ -149,12 +150,23 @@ export const SearchHeader = memo(function SearchHeader({
         </div>
       </div>
 
-      {/* 進階篩選面板 */}
-      <AdvancedFilterPanel
-        filter={advancedFilter}
-        onFilterChange={onAdvancedFilterChange}
-        isExpanded={isAdvancedFilterExpanded}
-      />
+      {/* 進階篩選面板（非市場模式） */}
+      {filterMode !== 'market-listings' && (
+        <AdvancedFilterPanel
+          filter={advancedFilter}
+          onFilterChange={onAdvancedFilterChange}
+          isExpanded={isAdvancedFilterExpanded}
+        />
+      )}
+
+      {/* 市場篩選面板（市場模式） */}
+      {filterMode === 'market-listings' && (
+        <MarketFilterPanel
+          filter={marketFilter}
+          onFilterChange={onMarketFilterChange}
+          isExpanded={isAdvancedFilterExpanded}
+        />
+      )}
     </div>
   )
 })

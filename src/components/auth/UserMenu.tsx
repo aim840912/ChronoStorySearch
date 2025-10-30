@@ -121,7 +121,7 @@ export function UserMenu() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
             </svg>
             {t('auth.profile')}
-            <span className="ml-auto text-xs text-gray-400">{t('gacha.startDrawing')}</span>
+            <span className="ml-auto text-xs text-gray-400">{t('common.comingSoon')}</span>
           </button>
 
           {/* 系統設定（僅管理員） */}

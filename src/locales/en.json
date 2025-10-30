@@ -573,6 +573,7 @@
   "common.confirm": "Confirm",
   "common.save": "Save",
   "common.search": "Search",
+  "common.comingSoon": "Coming Soon",
   "pagination.previous": "Previous",
   "pagination.next": "Next",
   "pagination.page": "Page {current} / {total}",

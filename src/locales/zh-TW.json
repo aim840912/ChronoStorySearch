@@ -560,6 +560,7 @@
   "common.confirm": "確認",
   "common.save": "儲存",
   "common.search": "搜尋",
+  "common.comingSoon": "即將推出",
   "pagination.previous": "上一頁",
   "pagination.next": "下一頁",
   "pagination.page": "第 {current} / {total} 頁",
