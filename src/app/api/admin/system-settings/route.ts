@@ -46,7 +46,7 @@ async function handleGET(_request: NextRequest, user: User) {
 
 interface UpdateSettingRequest {
   key: string
-  value: boolean | string
+  value: boolean | string | number
 }
 
 async function handlePATCH(request: NextRequest, user: User) {

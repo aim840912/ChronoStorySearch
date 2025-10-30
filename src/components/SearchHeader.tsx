@@ -7,7 +7,10 @@ import { FilterButtons } from '@/components/FilterButtons'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { LanguageToggle } from '@/components/LanguageToggle'
+import { LoginButton } from '@/components/auth/LoginButton'
+import { UserMenu } from '@/components/auth/UserMenu'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useAuth } from '@/contexts/AuthContext'
 
 interface SearchHeaderProps {
   // 搜尋相關
@@ -79,13 +82,14 @@ export const SearchHeader = memo(function SearchHeader({
   onResetAdvancedFilter,
   advancedFilter,
   onAdvancedFilterChange,
-  onOpenCreateListing: _onOpenCreateListing,
-  onOpenMyListings: _onOpenMyListings,
-  onOpenInterests: _onOpenInterests,
+  onOpenCreateListing,
+  onOpenMyListings,
+  onOpenInterests,
   marketFilter: _marketFilter,
   onMarketFilterChange: _onMarketFilterChange,
 }: SearchHeaderProps) {
   const { t } = useLanguage()
+  const { user, loading } = useAuth()
 
   return (
     <div className="sticky top-0 z-40 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 backdrop-blur-sm pt-4 sm:pt-6 pb-3 sm:pb-4 shadow-md">
@@ -94,10 +98,12 @@ export const SearchHeader = memo(function SearchHeader({
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
           {t('app.title')}
         </h1>
-        {/* 主題與語言切換按鈕 - 右上角 */}
+        {/* 主題、語言切換與登入按鈕 - 右上角 */}
         <div className="absolute top-0 right-2 sm:right-4 flex gap-1.5 sm:gap-2">
           <ThemeToggle />
           <LanguageToggle />
+          {/* 認證 UI：未登入顯示登入按鈕，已登入顯示用戶選單 */}
+          {!loading && (user ? <UserMenu /> : <LoginButton />)}
         </div>
       </div>
 
@@ -135,6 +141,10 @@ export const SearchHeader = memo(function SearchHeader({
             advancedFilterCount={advancedFilterCount}
             onResetAdvancedFilter={onResetAdvancedFilter}
             advancedFilter={advancedFilter}
+            user={user}
+            onOpenCreateListing={onOpenCreateListing}
+            onOpenMyListings={onOpenMyListings}
+            onOpenInterests={onOpenInterests}
           />
         </div>
       </div>

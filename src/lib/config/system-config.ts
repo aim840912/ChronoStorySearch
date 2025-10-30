@@ -20,6 +20,8 @@ export interface SystemSettings {
   trading_system_enabled: boolean
   maintenance_mode: boolean
   maintenance_message: string
+  max_active_listings_per_user: number
+  listing_expiration_days: number
 }
 
 interface CachedSettings {
@@ -67,7 +69,9 @@ async function fetchSettingsFromDatabase(): Promise<SystemSettings> {
     return {
       trading_system_enabled: settings.trading_system_enabled === true,
       maintenance_mode: settings.maintenance_mode === true,
-      maintenance_message: (typeof settings.maintenance_message === 'string' ? settings.maintenance_message : null) || '系統維護中，請稍後再試'
+      maintenance_message: (typeof settings.maintenance_message === 'string' ? settings.maintenance_message : null) || '系統維護中，請稍後再試',
+      max_active_listings_per_user: typeof settings.max_active_listings_per_user === 'number' ? settings.max_active_listings_per_user : 5,
+      listing_expiration_days: typeof settings.listing_expiration_days === 'number' ? settings.listing_expiration_days : 30
     }
   } catch (error) {
     dbLogger.error('獲取系統設定時發生錯誤', { error })

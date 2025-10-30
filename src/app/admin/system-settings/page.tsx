@@ -20,6 +20,9 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { useSystemSettings } from '@/hooks/useSystemSettings'
 import { TradingSystemCard } from '@/components/admin/TradingSystemCard'
 import { MaintenanceModeCard } from '@/components/admin/MaintenanceModeCard'
+import { MaxListingsCard } from '@/components/admin/MaxListingsCard'
+import { ListingsStatisticsCard } from '@/components/admin/ListingsStatisticsCard'
+import { ListingExpirationCard } from '@/components/admin/ListingExpirationCard'
 import { clientLogger } from '@/lib/logger'
 
 export default function SystemSettingsPage() {
@@ -108,8 +111,28 @@ export default function SystemSettingsPage() {
     }
   }
 
+  // 處理最大刊登數量更新
+  const handleUpdateMaxListings = async (value: number) => {
+    try {
+      await updateSetting('max_active_listings_per_user', value)
+      clientLogger.info('最大刊登數量已更新', { value })
+    } catch (err) {
+      clientLogger.error('更新最大刊登數量失敗', { error: err })
+    }
+  }
+
+  // 處理刊登過期天數更新
+  const handleUpdateExpirationDays = async (value: number) => {
+    try {
+      await updateSetting('listing_expiration_days', value)
+      clientLogger.info('刊登過期天數已更新', { value })
+    } catch (err) {
+      clientLogger.error('更新刊登過期天數失敗', { error: err })
+    }
+  }
+
   // 獲取設定值的輔助函數
-  const getSettingValue = (key: string): boolean | string | undefined => {
+  const getSettingValue = (key: string): boolean | string | number | undefined => {
     const setting = settings.find((s) => s.key === key)
     return setting?.value
   }
@@ -246,24 +269,46 @@ export default function SystemSettingsPage() {
             </p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* 交易系統卡片 */}
-            <TradingSystemCard
-              enabled={getSettingValue('trading_system_enabled') === true}
-              updatedAt={getSettingUpdatedAt('trading_system_enabled')}
-              onToggle={handleToggleTrading}
-              isUpdating={isUpdating}
-            />
+          <div className="space-y-6">
+            {/* 刊登統計卡片 - 全寬顯示 */}
+            <ListingsStatisticsCard />
 
-            {/* 維護模式卡片 */}
-            <MaintenanceModeCard
-              enabled={getSettingValue('maintenance_mode') === true}
-              message={(getSettingValue('maintenance_message') as string) || ''}
-              updatedAt={getSettingUpdatedAt('maintenance_mode')}
-              onToggle={handleToggleMaintenance}
-              onUpdateMessage={handleUpdateMaintenanceMessage}
-              isUpdating={isUpdating}
-            />
+            {/* 系統設定卡片 - 2 欄佈局 */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* 交易系統卡片 */}
+              <TradingSystemCard
+                enabled={getSettingValue('trading_system_enabled') === true}
+                updatedAt={getSettingUpdatedAt('trading_system_enabled')}
+                onToggle={handleToggleTrading}
+                isUpdating={isUpdating}
+              />
+
+              {/* 維護模式卡片 */}
+              <MaintenanceModeCard
+                enabled={getSettingValue('maintenance_mode') === true}
+                message={(getSettingValue('maintenance_message') as string) || ''}
+                updatedAt={getSettingUpdatedAt('maintenance_mode')}
+                onToggle={handleToggleMaintenance}
+                onUpdateMessage={handleUpdateMaintenanceMessage}
+                isUpdating={isUpdating}
+              />
+
+              {/* 最大刊登數量卡片 */}
+              <MaxListingsCard
+                maxListings={Number(getSettingValue('max_active_listings_per_user')) || 5}
+                updatedAt={getSettingUpdatedAt('max_active_listings_per_user')}
+                onUpdate={handleUpdateMaxListings}
+                isUpdating={isUpdating}
+              />
+
+              {/* 刊登過期天數卡片 */}
+              <ListingExpirationCard
+                expirationDays={Number(getSettingValue('listing_expiration_days')) || 30}
+                updatedAt={getSettingUpdatedAt('listing_expiration_days')}
+                onUpdate={handleUpdateExpirationDays}
+                isUpdating={isUpdating}
+              />
+            </div>
           </div>
         )}
       </div>

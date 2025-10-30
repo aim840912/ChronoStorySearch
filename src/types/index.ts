@@ -698,11 +698,12 @@ export interface ListingWithUserInfo {
   ingame_name: string | null   // 遊戲內角色名（選填）
   seller_discord_id: string | null  // Discord User ID（用於 Deep Link）
   webhook_url?: string
-  status: 'active' | 'sold' | 'cancelled'
+  status: 'active' | 'sold' | 'cancelled' | 'expired' | 'suspended'
   view_count: number
   interest_count: number
   created_at: string
   updated_at: string
+  expires_at?: string | null   // 過期時間（NULL 表示永不過期）
   deleted_at?: string | null
 
   // 物品屬性資訊（來自 item_stats 表）

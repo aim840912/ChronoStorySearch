@@ -23,7 +23,7 @@ import { clientLogger } from '@/lib/logger'
 
 export interface SystemSetting {
   key: string
-  value: boolean | string
+  value: boolean | string | number
   description: string
   updated_at: string
   updated_by: string | null
@@ -34,7 +34,7 @@ interface UseSystemSettingsReturn {
   isLoading: boolean
   isUpdating: boolean
   error: string | null
-  updateSetting: (key: string, value: boolean | string) => Promise<void>
+  updateSetting: (key: string, value: boolean | string | number) => Promise<void>
   refetch: () => Promise<void>
 }
 
@@ -86,7 +86,7 @@ export function useSystemSettings(): UseSystemSettingsReturn {
 
   // 更新系統設定
   const updateSetting = useCallback(
-    async (key: string, value: boolean | string) => {
+    async (key: string, value: boolean | string | number) => {
       try {
         setIsUpdating(true)
 

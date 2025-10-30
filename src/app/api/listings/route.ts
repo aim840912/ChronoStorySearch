@@ -10,11 +10,11 @@ import { DEFAULT_RATE_LIMITS } from '@/lib/bot-detection/constants'
 import { validateAndCalculateStats } from '@/lib/validation/item-stats'
 import type { ItemStats } from '@/types/item-stats'
 import { checkAccountAge, checkServerMembershipWithCache } from '@/lib/services/discord-verification'
+import { getSystemSettings } from '@/lib/config/system-config'
 
 // Discord 驗證配置
 const DISCORD_GUILD_ID = process.env.DISCORD_GUILD_ID // Discord 伺服器 ID（Guild ID）
 const MIN_ACCOUNT_AGE_DAYS = 365 // Discord 帳號必須滿 1 年
-const MAX_ACTIVE_LISTINGS = 5 // 每用戶最多 5 個活躍刊登
 
 /**
  * GET /api/listings - 查詢我的刊登
@@ -93,10 +93,15 @@ async function handleGET(request: NextRequest, user: User) {
 async function handlePOST(request: NextRequest, user: User) {
   const data = await request.json()
 
+  // 從系統設定讀取最大刊登數量
+  const settings = await getSystemSettings()
+  const maxActiveListings = settings.max_active_listings_per_user
+
   apiLogger.debug('建立刊登請求', {
     user_id: user.id,
     trade_type: data.trade_type,
-    item_id: data.item_id
+    item_id: data.item_id,
+    max_active_listings: maxActiveListings
   })
 
   // 1. 驗證必填欄位
@@ -244,7 +249,7 @@ async function handlePOST(request: NextRequest, user: User) {
     p_webhook_url: webhook_url || null,
     p_item_stats: validatedStats ? JSON.stringify(validatedStats) : null,
     p_wanted_items: trade_type === 'exchange' && wanted_items ? JSON.stringify(wanted_items) : null,
-    p_max_listings: MAX_ACTIVE_LISTINGS
+    p_max_listings: maxActiveListings
   })
 
   if (rpcError) {
