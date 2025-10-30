@@ -323,18 +323,18 @@
   resolved "https://registry.npmjs.org/@speed-highlight/core/-/core-1.2.7.tgz"
   integrity sha512-0dxmVj4gxg3Jg879kvFS/msl4s9F3T9UXC1InxgOf7t5NvcPD97u/WTA5vL/IxWHMn7qSxBozqrnnE2wvl1m8g==
 
-"@supabase/auth-js@2.76.1":
-  version "2.76.1"
-  resolved "https://registry.npmjs.org/@supabase/auth-js/-/auth-js-2.76.1.tgz"
-  integrity sha512-bxmcgPuyjTUBg7+jAohJ15TDh3ph4hXcv7QkRsQgnIpszurD5LYaJPzX638ETQ8zDL4fvHZRHfGrcmHV8C91jA==
+"@supabase/auth-js@2.77.0":
+  version "2.77.0"
+  resolved "https://registry.npmjs.org/@supabase/auth-js/-/auth-js-2.77.0.tgz"
+  integrity sha512-IRxyj2l46EutSX7AbGkHA7LSmrgqnXjPfKouBlGT6NqS1YOm+jMMwfdhf6zP5EZ4giUfdt2u+yHIBgyXU/LEtg==
   dependencies:
     "@supabase/node-fetch" "2.6.15"
     tslib "2.8.1"
 
-"@supabase/functions-js@2.76.1":
-  version "2.76.1"
-  resolved "https://registry.npmjs.org/@supabase/functions-js/-/functions-js-2.76.1.tgz"
-  integrity sha512-+zJym/GC1sofm5QYKGxHSszCpMW4Ao2dj/WC3YlffAGuIlIhUtWTJvKsv5q7sWaSKUKdDhGpWhZ2OD++fW5BtQ==
+"@supabase/functions-js@2.77.0":
+  version "2.77.0"
+  resolved "https://registry.npmjs.org/@supabase/functions-js/-/functions-js-2.77.0.tgz"
+  integrity sha512-MxNW3YoQysbiVEiLAozCTqk1urswtVjAZggeZ5Sw+vJ+u1EvFNmTnirzwTj7M8XjTOMmorheruPmNtfHEwudvw==
   dependencies:
     "@supabase/node-fetch" "2.6.15"
     tslib "2.8.1"
@@ -346,18 +346,18 @@
   dependencies:
     whatwg-url "^5.0.0"
 
-"@supabase/postgrest-js@2.76.1":
-  version "2.76.1"
-  resolved "https://registry.npmjs.org/@supabase/postgrest-js/-/postgrest-js-2.76.1.tgz"
-  integrity sha512-QJ1Cwim6L9gzWKP8U4Lgw9x/4lMWkZSVMDRYFCH+vVGitVbtfU885swTiioOjjUe4EYGZm+Xktg90twzSVv6IA==
+"@supabase/postgrest-js@2.77.0":
+  version "2.77.0"
+  resolved "https://registry.npmjs.org/@supabase/postgrest-js/-/postgrest-js-2.77.0.tgz"
+  integrity sha512-Ly8C48x875JcUXBdML7SPRjO1Bpmjo6Sax/Tz4Ij6YU5paCrGKxEYDBVLP2eHKkQvf+LQ+GIbRFF1DorRvyfwQ==
   dependencies:
     "@supabase/node-fetch" "2.6.15"
     tslib "2.8.1"
 
-"@supabase/realtime-js@2.76.1":
-  version "2.76.1"
-  resolved "https://registry.npmjs.org/@supabase/realtime-js/-/realtime-js-2.76.1.tgz"
-  integrity sha512-B5Lfmprea2fx2FS7obp4uAWiRUlEa6j9J3+BvvETGp/2LdkSRBaLEJCBylfcZTXk67ajNPX6ppvKvAZsckqXYg==
+"@supabase/realtime-js@2.77.0":
+  version "2.77.0"
+  resolved "https://registry.npmjs.org/@supabase/realtime-js/-/realtime-js-2.77.0.tgz"
+  integrity sha512-Ycv2VZ8yTjvlR2NQecGJUlP0Dh4LhF1Y1oZ3IMQcjjTbDriWSQgfc9HSLIQUaY/eTdtfXfyVKOGE+tieWneV8Q==
   dependencies:
     "@supabase/node-fetch" "2.6.15"
     "@types/phoenix" "^1.6.6"
@@ -365,25 +365,25 @@
     tslib "2.8.1"
     ws "^8.18.2"
 
-"@supabase/storage-js@2.76.1":
-  version "2.76.1"
-  resolved "https://registry.npmjs.org/@supabase/storage-js/-/storage-js-2.76.1.tgz"
-  integrity sha512-OJiNT8tocI9tcTjTjv1SBVLabzgEnS1NorZuqivkiJ0gTYmeg2c2PFmqCARhoQ4whF6zR9MVsX/Mtj2oSv4i/w==
+"@supabase/storage-js@2.77.0":
+  version "2.77.0"
+  resolved "https://registry.npmjs.org/@supabase/storage-js/-/storage-js-2.77.0.tgz"
+  integrity sha512-4+OpVA4U0C4HM1QuINlgjqFxnRsmqPnuurTDN4m6nRanafuqQQ/UtMjdUU57iygBo70IGBlBefZ8gGNWzD1sLg==
   dependencies:
     "@supabase/node-fetch" "2.6.15"
     tslib "2.8.1"
 
-"@supabase/supabase-js@^2.76.1":
-  version "2.76.1"
-  resolved "https://registry.npmjs.org/@supabase/supabase-js/-/supabase-js-2.76.1.tgz"
-  integrity sha512-dYMh9EsTVXZ6WbQ0QmMGIhbXct5+x636tXXaaxUmwjj3kY1jyBTQU8QehxAIfjyRu1mWGV07hoYmTYakkxdSGQ==
+"@supabase/supabase-js@^2.77.0":
+  version "2.77.0"
+  resolved "https://registry.npmjs.org/@supabase/supabase-js/-/supabase-js-2.77.0.tgz"
+  integrity sha512-s6OQ8RZ0ioQCwVDh2Tv502XaUQCuRbbjpujYJB1h0JWELRsqjLDsgB5kZUkETPgtTAjJk7z97YPUsRg80PohfA==
   dependencies:
-    "@supabase/auth-js" "2.76.1"
-    "@supabase/functions-js" "2.76.1"
+    "@supabase/auth-js" "2.77.0"
+    "@supabase/functions-js" "2.77.0"
     "@supabase/node-fetch" "2.6.15"
-    "@supabase/postgrest-js" "2.76.1"
-    "@supabase/realtime-js" "2.76.1"
-    "@supabase/storage-js" "2.76.1"
+    "@supabase/postgrest-js" "2.77.0"
+    "@supabase/realtime-js" "2.77.0"
+    "@supabase/storage-js" "2.77.0"
 
 "@swc/helpers@0.5.15":
   version "0.5.15"
@@ -615,13 +615,6 @@
   version "1.11.1"
   resolved "https://registry.npmjs.org/@unrs/resolver-binding-linux-x64-musl/-/resolver-binding-linux-x64-musl-1.11.1.tgz"
   integrity sha512-rV0YSoyhK2nZ4vEswT/QwqzqQXw5I6CjoaYMOX0TqBlWhojUf8P94mvI7nuJTeaCkkds3QE4+zS8Ko+GdXuZtA==
-
-"@upstash/redis@^1.35.6":
-  version "1.35.6"
-  resolved "https://registry.npmjs.org/@upstash/redis/-/redis-1.35.6.tgz"
-  integrity sha512-aSEIGJgJ7XUfTYvhQcQbq835re7e/BXjs8Janq6Pvr6LlmTZnyqwT97RziZLO/8AVUL037RLXqqiQC6kCt+5pA==
-  dependencies:
-    uncrypto "^0.1.3"
 
 "@vercel/analytics@^1.5.0":
   version "1.5.0"
@@ -3080,11 +3073,6 @@ unbox-primitive@^1.1.0:
     has-bigints "^1.0.2"
     has-symbols "^1.1.0"
     which-boxed-primitive "^1.1.1"
-
-uncrypto@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.npmjs.org/uncrypto/-/uncrypto-0.1.3.tgz"
-  integrity sha512-Ql87qFHB3s/De2ClA9e0gsnS6zXG27SkTiSJwjCc9MebbfapQfuPzumMIUMi38ezPZVNFcHI9sUIepeQfw8J8Q==
 
 undici-types@~6.21.0:
   version "6.21.0"
