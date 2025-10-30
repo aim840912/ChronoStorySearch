@@ -185,21 +185,11 @@ export function ItemModal({
       return combined
     }
 
-    // 2. 如果 Detailed 資料還在載入中，僅使用 Essential 資料（部分顯示）
+    // 2. 如果 Detailed 資料還在載入中，返回 null 以顯示載入動畫
     if (essentialData && isLoadingDetailed) {
-      clientLogger.info(`物品 ${itemId} Detailed 資料載入中，暫時使用 Essential 資料`)
-      // 返回部分資料（只有基本資訊）
-      return {
-        item_id: essentialData.item_id,
-        item_name: essentialData.item_name,
-        type: essentialData.type,
-        sub_type: essentialData.sub_type,
-        item_type_id: 0,
-        sale_price: null,
-        max_stack_count: null,
-        untradeable: null,
-        item_description: null,
-      } as ItemAttributes
+      clientLogger.info(`物品 ${itemId} Detailed 資料載入中，等待完整資料`)
+      // 返回 null，讓 UI 顯示載入動畫
+      return null
     }
 
     // 3. 如果找不到，嘗試從轉蛋機資料中查找並轉換
@@ -372,7 +362,16 @@ export function ItemModal({
                 className="w-24 h-24 sm:w-32 sm:h-32 object-contain"
               />
             </div>
-            <ItemAttributesCard attributes={itemAttributes} />
+
+            {/* 物品屬性卡片 - 載入中顯示動畫 */}
+            {isLoadingDetailed && !itemAttributes ? (
+              <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-sm text-center">
+                <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 dark:border-blue-400"></div>
+                <p className="mt-4 text-gray-600 dark:text-gray-400">{t('loading')}</p>
+              </div>
+            ) : (
+              <ItemAttributesCard attributes={itemAttributes} />
+            )}
           </div>
 
           {/* 右側：轉蛋機來源 + 掉落來源怪物列表（桌面版顯示 / 手機版根據 Tab 顯示） */}

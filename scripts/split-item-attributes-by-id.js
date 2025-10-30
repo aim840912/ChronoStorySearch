@@ -49,6 +49,7 @@ originalData.forEach((item, index) => {
     item_description: item.item_description,
     equipment: item.equipment,
     potion: item.potion,
+    scroll: item.scroll,
   }
 
   const filePath = path.join(detailedDir, `${item.item_id}.json`)

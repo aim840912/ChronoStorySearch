@@ -61,6 +61,7 @@ export default function Home() {
   const advancedFilterCount = [
     advancedFilter.itemCategories.length > 0 ? 1 : 0,
     advancedFilter.jobClasses.length > 0 ? 1 : 0,
+    advancedFilter.elementWeaknesses.length > 0 ? 1 : 0,
     (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null) ? 1 : 0,
   ].reduce((a, b) => a + b, 0)
 
@@ -81,6 +82,7 @@ export default function Home() {
     initialRandomDrops,
     initialRandomGachaItems,
     mobLevelMap,
+    mobInfoMap,
     itemAttributesMap,
     loadGachaMachines,
   } = useDataManagement()
@@ -131,6 +133,7 @@ export default function Home() {
     advancedFilter,
     itemAttributesMap,
     mobLevelMap,
+    mobInfoMap,
     gachaMachines,
     initialRandomGachaItems,
   })
@@ -336,6 +339,10 @@ export default function Home() {
   // 重置進階篩選
   const handleResetAdvancedFilter = useCallback(() => {
     setAdvancedFilter(getDefaultAdvancedFilter())
+    // 關閉進階篩選面板
+    setIsAdvancedFilterExpanded(false)
+    // 滾動到頂部以顯示瀏覽紀錄
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
   // 模式切換到市場刊登時，載入市場資料

@@ -1,18 +1,13 @@
 'use client'
 
 import { memo } from 'react'
-import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode, MarketFilterOptions } from '@/types'
+import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode } from '@/types'
 import { SearchBar } from '@/components/SearchBar'
 import { FilterButtons } from '@/components/FilterButtons'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
-import { MarketFilterPanel } from '@/components/trade/MarketFilterPanel'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { LanguageToggle } from '@/components/LanguageToggle'
-import { LoginButton } from '@/components/auth/LoginButton'
-import { UserMenu } from '@/components/auth/UserMenu'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { useAuth } from '@/contexts/AuthContext'
-import { useSystemStatus } from '@/hooks/useSystemStatus'
 
 interface SearchHeaderProps {
   // 搜尋相關
@@ -44,15 +39,6 @@ interface SearchHeaderProps {
   onResetAdvancedFilter: () => void
   advancedFilter: AdvancedFilterOptions
   onAdvancedFilterChange: (filter: AdvancedFilterOptions) => void
-
-  // 交易系統 Modal 開啟函數
-  onOpenCreateListing: () => void
-  onOpenMyListings: () => void
-  onOpenInterests: () => void
-
-  // 市場篩選相關
-  marketFilter: MarketFilterOptions
-  onMarketFilterChange: (filter: MarketFilterOptions) => void
 }
 
 /**
@@ -86,20 +72,8 @@ export const SearchHeader = memo(function SearchHeader({
   onResetAdvancedFilter,
   advancedFilter,
   onAdvancedFilterChange,
-  onOpenCreateListing,
-  onOpenMyListings,
-  onOpenInterests,
-  marketFilter,
-  onMarketFilterChange,
 }: SearchHeaderProps) {
   const { t } = useLanguage()
-  const { user, loading } = useAuth()
-  const { tradingEnabled } = useSystemStatus()
-
-  // 根據 filterMode 決定搜尋列的 placeholder
-  const searchPlaceholder = filterMode === 'market-listings'
-    ? t('search.placeholder.market') || '搜尋市場物品...'
-    : t('search.placeholder')
 
   return (
     <div className="sticky top-0 z-40 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 backdrop-blur-sm pt-4 sm:pt-6 pb-3 sm:pb-4 shadow-md">
@@ -108,68 +82,57 @@ export const SearchHeader = memo(function SearchHeader({
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
           {t('app.title')}
         </h1>
-        {/* 主題、語言切換與登入按鈕 - 右上角 */}
+        {/* 主題與語言切換按鈕 - 右上角 */}
         <div className="absolute top-0 right-2 sm:right-4 flex gap-1.5 sm:gap-2">
           <ThemeToggle />
           <LanguageToggle />
-          {/* 認證 UI：未登入顯示登入按鈕，已登入顯示用戶選單 */}
-          {!loading && (user ? <UserMenu /> : <LoginButton />)}
         </div>
       </div>
 
-      {/* 搜尋列 */}
-      <SearchBar
-        searchTerm={searchTerm}
-        onSearchChange={onSearchChange}
-        searchType={searchType}
-        onSearchTypeChange={onSearchTypeChange}
-        suggestions={suggestions}
-        showSuggestions={showSuggestions}
-        onFocus={onFocus}
-        onSelectSuggestion={onSelectSuggestion}
-        onKeyDown={onKeyDown}
-        focusedIndex={focusedIndex}
-        onFocusedIndexChange={onFocusedIndexChange}
-        searchContainerRef={searchContainerRef}
-        onShare={onShare}
-        placeholder={searchPlaceholder}
+      {/* 搜尋列與篩選按鈕容器 */}
+      <div className="flex flex-col">
+        {/* 搜尋列 */}
+        <div className="order-2 md:order-1">
+          <SearchBar
+            searchTerm={searchTerm}
+            onSearchChange={onSearchChange}
+            searchType={searchType}
+            onSearchTypeChange={onSearchTypeChange}
+            suggestions={suggestions}
+            showSuggestions={showSuggestions}
+            onFocus={onFocus}
+            onSelectSuggestion={onSelectSuggestion}
+            onKeyDown={onKeyDown}
+            focusedIndex={focusedIndex}
+            onFocusedIndexChange={onFocusedIndexChange}
+            searchContainerRef={searchContainerRef}
+            onShare={onShare}
+          />
+        </div>
+
+        {/* 篩選按鈕 */}
+        <div className="order-1 md:order-2">
+          <FilterButtons
+            filterMode={filterMode}
+            onFilterChange={onFilterChange}
+            favoriteMonsterCount={favoriteMonsterCount}
+            favoriteItemCount={favoriteItemCount}
+            onClearClick={onClearClick}
+            isAdvancedFilterExpanded={isAdvancedFilterExpanded}
+            onAdvancedFilterToggle={onAdvancedFilterToggle}
+            advancedFilterCount={advancedFilterCount}
+            onResetAdvancedFilter={onResetAdvancedFilter}
+            advancedFilter={advancedFilter}
+          />
+        </div>
+      </div>
+
+      {/* 進階篩選面板 */}
+      <AdvancedFilterPanel
+        filter={advancedFilter}
+        onFilterChange={onAdvancedFilterChange}
+        isExpanded={isAdvancedFilterExpanded}
       />
-
-      {/* 篩選按鈕 */}
-      <FilterButtons
-        filterMode={filterMode}
-        onFilterChange={onFilterChange}
-        favoriteMonsterCount={favoriteMonsterCount}
-        favoriteItemCount={favoriteItemCount}
-        onClearClick={onClearClick}
-        isAdvancedFilterExpanded={isAdvancedFilterExpanded}
-        onAdvancedFilterToggle={onAdvancedFilterToggle}
-        advancedFilterCount={advancedFilterCount}
-        onResetAdvancedFilter={onResetAdvancedFilter}
-        advancedFilter={advancedFilter}
-        user={user}
-        onOpenCreateListing={onOpenCreateListing}
-        onOpenMyListings={onOpenMyListings}
-        onOpenInterests={onOpenInterests}
-      />
-
-      {/* 進階篩選面板（非市場模式） */}
-      {filterMode !== 'market-listings' && (
-        <AdvancedFilterPanel
-          filter={advancedFilter}
-          onFilterChange={onAdvancedFilterChange}
-          isExpanded={isAdvancedFilterExpanded}
-        />
-      )}
-
-      {/* 市場篩選面板（市場模式） */}
-      {filterMode === 'market-listings' && tradingEnabled && (
-        <MarketFilterPanel
-          filter={marketFilter}
-          onFilterChange={onMarketFilterChange}
-          isExpanded={isAdvancedFilterExpanded}
-        />
-      )}
     </div>
   )
 })

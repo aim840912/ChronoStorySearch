@@ -4,6 +4,8 @@ import { useState, useEffect, useCallback, useMemo } from 'react'
 import type { ItemAttributesEssential, ItemAttributesDetailed, MobInfo, DropItem, MobMapsData } from '@/types'
 import { clientLogger } from '@/lib/logger'
 import essentialData from '@/../data/item-attributes-essential.json'
+import { ItemAttributesDetailedSchema } from '@/schemas/items.schema'
+import { DropItemsEssentialSchema } from '@/schemas/drops.schema'
 
 /**
  * 預載入 Essential 物品資料 Hook
@@ -64,10 +66,22 @@ export function useLazyItemDetailed(itemId: number | null) {
 
         // 動態 import 單一物品的 Detailed JSON
         const dataModule = await import(`@/../data/item-attributes-detailed/${itemId}.json`)
-        const detailedData = dataModule.default as ItemAttributesDetailed
+        const rawData = dataModule.default
 
-        setData(detailedData)
-        clientLogger.info(`成功載入物品 ${itemId} 的 Detailed 資料`)
+        // 使用 Zod 驗證資料格式
+        const parseResult = ItemAttributesDetailedSchema.safeParse(rawData)
+
+        if (!parseResult.success) {
+          // 只在開發環境記錄驗證失敗警告
+          if (process.env.NODE_ENV === 'development') {
+            clientLogger.warn(`物品 ${itemId} 資料驗證失敗`, parseResult.error)
+          }
+          // 仍然使用原始資料，但記錄警告
+          setData(rawData as ItemAttributesDetailed)
+        } else {
+          setData(parseResult.data as ItemAttributesDetailed)
+          clientLogger.info(`成功載入並驗證物品 ${itemId} 的 Detailed 資料`)
+        }
       } catch (err) {
         const error = err instanceof Error ? err : new Error(`載入物品 ${itemId} 詳細資料失敗`)
         setError(error)
@@ -178,10 +192,19 @@ export function useLazyDropsDetailed(mobId: number | null) {
 
         // 動態 import 單一怪物的 Detailed JSON
         const dataModule = await import(`@/../data/drops-detailed/${mobId}.json`)
-        const dropsData = dataModule.default as DropItem[]
+        const rawData = dataModule.default
 
-        setData(dropsData)
-        clientLogger.info(`成功載入怪物 ${mobId} 的 Detailed 掉落資料（${dropsData.length} 個物品）`)
+        // 使用 Zod 驗證資料格式
+        const parseResult = DropItemsEssentialSchema.safeParse(rawData)
+
+        if (!parseResult.success) {
+          clientLogger.warn(`怪物 ${mobId} 掉落資料驗證失敗`, parseResult.error)
+          // 仍然使用原始資料，但記錄警告
+          setData(rawData as DropItem[])
+        } else {
+          setData(parseResult.data as DropItem[])
+          clientLogger.info(`成功載入並驗證怪物 ${mobId} 的 Detailed 掉落資料（${parseResult.data.length} 個物品）`)
+        }
       } catch (err) {
         const error = err instanceof Error ? err : new Error(`載入怪物 ${mobId} 掉落資料失敗`)
         setError(error)

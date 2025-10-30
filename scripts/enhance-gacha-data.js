@@ -67,6 +67,11 @@ function mergeItemData(originalItem, apiData) {
     ...apiData, // API 的完整資料
   }
 
+  // 確保 itemId 始終為 number 型別（統一資料格式，消除前端執行時轉換）
+  if (typeof enhancedItem.itemId === 'string') {
+    enhancedItem.itemId = parseInt(enhancedItem.itemId, 10)
+  }
+
   return enhancedItem
 }
 

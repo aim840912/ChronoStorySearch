@@ -8,6 +8,8 @@ import type {
   AdvancedFilterOptions,
   ItemAttributes,
   ItemAttributesEssential,
+  MobInfo,
+  ElementType,
 } from '@/types'
 import { isItemInAnyCategoryGroup, EQUIPMENT_CATEGORY_MAP } from './item-categories'
 
@@ -227,6 +229,42 @@ export function matchesMonsterLevelRangeFilter(
 }
 
 /**
+ * 判斷怪物是否符合屬性弱點篩選
+ * @param mobId 怪物 ID
+ * @param mobInfoMap 怪物資訊 Map
+ * @param filter 進階篩選選項
+ * @returns 是否符合篩選
+ */
+export function matchesElementWeaknessFilter(
+  mobId: number,
+  mobInfoMap: Map<number, MobInfo>,
+  filter: AdvancedFilterOptions
+): boolean {
+  // 未啟用篩選或未選擇任何屬性弱點
+  if (!filter.enabled || filter.elementWeaknesses.length === 0) {
+    return true
+  }
+
+  // 取得怪物資訊
+  const mobInfo = mobInfoMap.get(mobId)
+  if (!mobInfo || !mobInfo.mob) {
+    // 怪物資訊不存在或無屬性資料，不符合篩選
+    return false
+  }
+
+  const mob = mobInfo.mob
+
+  // 使用 AND 邏輯：檢查怪物是否同時具有所有選中的屬性弱點（值為 1）
+  return filter.elementWeaknesses.every((element: ElementType) => {
+    const weaknessKey = `${element}_weakness` as keyof typeof mob
+    const weaknessValue = mob[weaknessKey]
+
+    // 只有當弱點值為 1 時才符合條件
+    return weaknessValue === 1
+  })
+}
+
+/**
  * 應用進階篩選到掉落資料陣列
  * @param drops 掉落資料陣列
  * @param filter 進階篩選選項
@@ -270,6 +308,7 @@ export function getDefaultAdvancedFilter(): AdvancedFilterOptions {
     dataType: 'all',
     itemCategories: [],
     jobClasses: [],
+    elementWeaknesses: [],
     levelRange: { min: null, max: null },
     enabled: false,
   }

@@ -36,9 +36,6 @@ function normalizeGachaMachine(rawData: EnhancedGachaMachineRaw): GachaMachine {
       probability: item.probability,
       chance: item.chance,
 
-      // itemId: string → number（關鍵轉換，必須在 ...item 之後）
-      itemId: typeof item.itemId === 'string' ? parseInt(item.itemId, 10) : item.itemId,
-
       // 映射欄位以相容現有型別定義
       name: item.itemName || item.name,
       itemName: item.itemName,
@@ -205,6 +202,22 @@ export function useDataManagement() {
     return levelMap
   }, [])
 
+  // 建立怪物資訊 Map (mobId -> MobInfo)
+  const mobInfoMap = useMemo(() => {
+    const infoMap = new Map<number, MobInfo>()
+    const mobInfoArray = mobInfoData as MobInfo[]
+
+    mobInfoArray.forEach((info) => {
+      const mobId = parseInt(info.mob.mob_id, 10)
+      if (!isNaN(mobId)) {
+        infoMap.set(mobId, info)
+      }
+    })
+
+    clientLogger.info(`建立怪物資訊 Map: ${infoMap.size} 隻怪物`)
+    return infoMap
+  }, [])
+
   // 建立物品屬性 Map (itemId -> ItemAttributesEssential)
   // 使用 Essential 資料（僅包含篩選所需的基本資訊和需求屬性）
   const itemAttributesMap = useMemo(() => {
@@ -234,6 +247,7 @@ export function useDataManagement() {
 
     // 怪物與物品屬性資料
     mobLevelMap,
+    mobInfoMap,
     itemAttributesMap,
 
     // 按需載入函數
