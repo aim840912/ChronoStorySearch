@@ -21,12 +21,9 @@ import { decryptWebhookUrl } from '@/lib/crypto/webhook-encryption'
  * 參考文件：docs/architecture/交易系統/03-API設計.md
  */
 async function handleGET(_request: NextRequest, user: User) {
-  const { searchParams } = new URL(_request.url)
-  const status = searchParams.get('status') || 'all'
+  apiLogger.debug('查詢我的購買意向', { user_id: user.id })
 
-  apiLogger.debug('查詢我的購買意向', { user_id: user.id, status })
-
-  let query = supabaseAdmin
+  const query = supabaseAdmin
     .from('interests')
     .select(`
       *,
@@ -41,10 +38,6 @@ async function handleGET(_request: NextRequest, user: User) {
     `)
     .eq('buyer_id', user.id)
     .order('created_at', { ascending: false })
-
-  if (status !== 'all') {
-    query = query.eq('status', status)
-  }
 
   const { data: interests, error } = await query
 
@@ -90,7 +83,7 @@ async function handlePOST(request: NextRequest, user: User) {
   // 2. 驗證刊登存在且為 active 狀態
   const { data: listing, error: fetchError } = await supabaseAdmin
     .from('listings')
-    .select('id, user_id, status, webhook_url, item_id, item_name')
+    .select('id, user_id, status, webhook_url, item_id')
     .eq('id', listing_id)
     .is('deleted_at', null)
     .single()
@@ -104,9 +97,28 @@ async function handlePOST(request: NextRequest, user: User) {
     throw new ValidationError('刊登已結束，無法登記意向')
   }
 
-  // 3. 防止對自己的刊登登記意向
+  // 3. 防止對自己的刊登登記意向（管理員除外）
   if (listing.user_id === user.id) {
-    throw new ValidationError('無法對自己的刊登登記意向')
+    // 檢查是否為管理員
+    const { data: profile } = await supabaseAdmin
+      .from('discord_profiles')
+      .select('server_roles')
+      .eq('user_id', user.id)
+      .single()
+
+    const isAdmin =
+      Array.isArray(profile?.server_roles) &&
+      (profile.server_roles.includes('Admin') ||
+       profile.server_roles.includes('Moderator'))
+
+    if (!isAdmin) {
+      throw new ValidationError('無法對自己的刊登登記意向')
+    }
+
+    apiLogger.info('管理員對自己的刊登登記意向', {
+      user_id: user.id,
+      listing_id: listing.id
+    })
   }
 
   // 4. 檢查是否已登記過（使用 limit(1) 更安全）
@@ -131,14 +143,13 @@ async function handlePOST(request: NextRequest, user: User) {
   }
 
   // 5. 創建購買意向
-  // 驗證並清理 message
+  // 驗證並清理 message (留言)
   const validatedMessage = validateMessage(message)
 
   const interestData = {
     listing_id,
     buyer_id: user.id,
-    message: validatedMessage,
-    status: 'pending'
+    message: validatedMessage
   }
 
   const { data: interest, error: insertError } = await supabaseAdmin
@@ -150,10 +161,14 @@ async function handlePOST(request: NextRequest, user: User) {
   if (insertError) {
     apiLogger.error('創建購買意向失敗', {
       error: insertError,
+      error_code: insertError.code,
+      error_message: insertError.message,
+      error_details: insertError.details,
       user_id: user.id,
-      listing_id
+      listing_id,
+      interest_data: interestData
     })
-    throw new ValidationError('創建購買意向失敗')
+    throw new ValidationError(`創建購買意向失敗: ${insertError.message}`)
   }
 
   // 6. 更新 listing.interest_count
@@ -180,7 +195,7 @@ async function handlePOST(request: NextRequest, user: User) {
         'interest_received',
         {
           listingId: listing.id,
-          itemName: listing.item_name || `物品 ID: ${listing.item_id}`,
+          itemName: `物品 ID: ${listing.item_id}`,
           buyer: {
             username: user.discord_username || user.discord_id,
             reputation: buyerProfile?.reputation_score

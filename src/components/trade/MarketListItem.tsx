@@ -1,5 +1,6 @@
 'use client'
 
+import { useMemo } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemImageUrl } from '@/lib/image-utils'
 import type { ListingWithUserInfo } from '@/types'
@@ -98,6 +99,28 @@ export function MarketListItem({ listing, onClick }: MarketListItemProps) {
     return labels[key] || key
   }
 
+  // 防禦性解析 item_stats（以防 API 未正確解析）
+  const parsedItemStats = useMemo(() => {
+    if (!listing.item_stats) return null
+
+    // 如果已經是物件，直接返回
+    if (typeof listing.item_stats === 'object' && !Array.isArray(listing.item_stats)) {
+      return listing.item_stats
+    }
+
+    // 如果是字串，嘗試解析
+    if (typeof listing.item_stats === 'string') {
+      try {
+        return JSON.parse(listing.item_stats)
+      } catch {
+        // 解析失敗，返回 null
+        return null
+      }
+    }
+
+    return null
+  }, [listing.item_stats])
+
   return (
     <button
       onClick={onClick}
@@ -131,9 +154,9 @@ export function MarketListItem({ listing, onClick }: MarketListItemProps) {
 
       {/* 4. 裝備素質 */}
       <div className="text-center text-xs">
-        {listing.item_stats ? (
+        {parsedItemStats ? (
           <div className="flex flex-wrap gap-1.5 justify-center items-center leading-relaxed">
-            {Object.entries(listing.item_stats)
+            {Object.entries(parsedItemStats)
               .filter(([, value]) => value !== undefined && value !== null)
               .map(([key, value], index, arr) => (
                 <span key={key} className="inline-flex items-center gap-1.5">

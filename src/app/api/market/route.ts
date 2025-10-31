@@ -95,10 +95,20 @@ async function handleGET(_request: NextRequest, user: User) {
     interest_count: listing.interest_count,
     created_at: listing.created_at,
     updated_at: listing.updated_at,
-    // 物品屬性
-    item_stats: listing.item_stats || null,
+    // 物品屬性（解析 JSON 字串）
+    item_stats: listing.item_stats
+      ? (typeof listing.item_stats === 'string'
+          ? JSON.parse(listing.item_stats)
+          : listing.item_stats)
+      : null,
     stats_grade: listing.stats_grade || null,
     stats_score: listing.stats_score || null,
+    // 交換刊登的想要物品（解析 JSON 字串）
+    wanted_items: listing.wanted_items
+      ? (typeof listing.wanted_items === 'string'
+          ? JSON.parse(listing.wanted_items)
+          : listing.wanted_items)
+      : null,
     seller: {
       discord_username: listing.users?.discord_username || 'Unknown',
       reputation_score: listing.discord_profiles?.reputation_score || 0

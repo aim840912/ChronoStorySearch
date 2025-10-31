@@ -39,11 +39,9 @@ export default function RootLayout({
         <AuthProvider>
           <ThemeProvider>
             <LanguageProvider>
-              <>
-                <MaintenanceBanner />
-                {children}
-                <LoginModal />
-              </>
+              <MaintenanceBanner />
+              {children}
+              <LoginModal />
             </LanguageProvider>
           </ThemeProvider>
         </AuthProvider>

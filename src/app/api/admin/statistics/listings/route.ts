@@ -111,9 +111,9 @@ async function handleGET(_request: NextRequest, user: User) {
  */
 async function getCachedStatistics(): Promise<ListingsStatistics | null> {
   try {
-    const cached = await redis.get(CACHE_KEY)
+    const cached = await redis.get<ListingsStatistics>(CACHE_KEY)
     if (cached) {
-      return JSON.parse(cached as string)
+      return cached
     }
     return null
   } catch (error) {

@@ -69,12 +69,30 @@ async function handleGET(request: NextRequest, user: User) {
     throw new ValidationError('查詢刊登失敗')
   }
 
+  // 解析 JSON 字串欄位（item_stats, wanted_items）
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const formattedListings = (listings || []).map((listing: any) => ({
+    ...listing,
+    // 物品屬性（解析 JSON 字串）
+    item_stats: listing.item_stats
+      ? (typeof listing.item_stats === 'string'
+          ? JSON.parse(listing.item_stats)
+          : listing.item_stats)
+      : null,
+    // 交換刊登的想要物品（解析 JSON 字串）
+    wanted_items: listing.wanted_items
+      ? (typeof listing.wanted_items === 'string'
+          ? JSON.parse(listing.wanted_items)
+          : listing.wanted_items)
+      : null,
+  }))
+
   apiLogger.info('查詢刊登成功', {
     user_id: user.id,
-    count: listings?.length || 0
+    count: formattedListings.length
   })
 
-  return success(listings || [], '查詢成功')
+  return success(formattedListings, '查詢成功')
 }
 
 /**

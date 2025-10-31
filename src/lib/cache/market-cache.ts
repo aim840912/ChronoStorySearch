@@ -24,7 +24,7 @@ export async function getCachedMarketListings(cacheKey: string) {
     const cached = await redis.get(cacheKey)
     if (cached) {
       apiLogger.info('Market listings cache hit', { cacheKey })
-      return JSON.parse(cached as string)
+      return cached
     }
     return null
   } catch (error) {

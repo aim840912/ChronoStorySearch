@@ -101,8 +101,12 @@ async function handleGET(
     interest_count: listing.interest_count,
     created_at: listing.created_at,
     updated_at: listing.updated_at,
-    // 物品屬性
-    item_stats: listing.item_stats || null,
+    // 物品屬性（解析 JSON 字串）
+    item_stats: listing.item_stats
+      ? (typeof listing.item_stats === 'string'
+          ? JSON.parse(listing.item_stats)
+          : listing.item_stats)
+      : null,
     stats_grade: listing.stats_grade || null,
     stats_score: listing.stats_score || null,
     seller: {

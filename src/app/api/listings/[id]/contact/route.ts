@@ -120,8 +120,7 @@ async function handleGET(
       status,
       view_count,
       webhook_url,
-      item_id,
-      item_name
+      item_id
     `)
     .eq('id', id)
     .is('deleted_at', null)
@@ -188,7 +187,7 @@ async function handleGET(
         'contact_view',
         {
           listingId: listing.id,
-          itemName: listing.item_name || `物品 ID: ${listing.item_id}`,
+          itemName: `物品 ID: ${listing.item_id}`,
           buyer: {
             username: user.discord_username || user.discord_id,
             reputation: buyerProfile?.reputation_score
