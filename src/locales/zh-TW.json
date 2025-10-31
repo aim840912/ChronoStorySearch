@@ -449,6 +449,7 @@
   "market.loginRequired": "請先登入才能瀏覽市場",
   "market.loading": "載入中...",
   "market.loadError": "載入市場列表失敗",
+  "market.quotaUsed": "已使用刊登配額",
   "market.createListing": "建立刊登",
   "market.myListings": "我的刊登",
   "market.browseMarket": "市場瀏覽",

@@ -449,6 +449,7 @@
   "market.loginRequired": "Please log in to browse the market",
   "market.loading": "Loading...",
   "market.loadError": "Failed to load market listings",
+  "market.quotaUsed": "Listing Quota Used",
   "market.createListing": "Create Listing",
   "market.myListings": "My Listings",
   "market.browseMarket": "Browse Market",

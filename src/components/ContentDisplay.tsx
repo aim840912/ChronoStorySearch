@@ -78,6 +78,7 @@ interface ContentDisplayProps {
   marketError: string | null
   isMarketRefreshing?: boolean
   marketRefreshError?: string | null
+  userQuota?: { active: number; max: number } | null
   onListingClick: (listingId: string) => void
   onMarketPageChange: (page: number) => void
   onMarketRefresh?: () => void
@@ -120,6 +121,7 @@ export const ContentDisplay = memo(function ContentDisplay({
   marketError,
   isMarketRefreshing,
   marketRefreshError,
+  userQuota,
   onListingClick,
   onMarketPageChange,
   onMarketRefresh,
@@ -150,6 +152,7 @@ export const ContentDisplay = memo(function ContentDisplay({
               error={marketError}
               isRefreshing={isMarketRefreshing}
               refreshError={marketRefreshError}
+              userQuota={userQuota}
               onListingClick={onListingClick}
               onPageChange={onMarketPageChange}
               onRefresh={onMarketRefresh}
