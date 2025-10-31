@@ -9,6 +9,16 @@
 
 import { redis } from '@/lib/redis/client'
 import { apiLogger } from '@/lib/logger'
+import type { ListingWithUserInfo } from '@/types'
+import type { PaginationInfo } from '@/lib/api-response'
+
+/**
+ * 市場快取資料結構
+ */
+export interface MarketCacheData {
+  listings: ListingWithUserInfo[]
+  pagination: PaginationInfo
+}
 
 const CACHE_TTL = 60 // 60 秒
 const CACHE_KEYS_SET = 'market:cache:keys' // Redis Set 用於追蹤所有快取 keys
@@ -19,12 +29,12 @@ const CACHE_KEYS_SET = 'market:cache:keys' // Redis Set 用於追蹤所有快取
  * @param cacheKey - Redis key
  * @returns 快取的資料或 null
  */
-export async function getCachedMarketListings(cacheKey: string) {
+export async function getCachedMarketListings(cacheKey: string): Promise<MarketCacheData | null> {
   try {
     const cached = await redis.get(cacheKey)
     if (cached) {
       apiLogger.info('Market listings cache hit', { cacheKey })
-      return cached
+      return cached as MarketCacheData
     }
     return null
   } catch (error) {

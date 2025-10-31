@@ -161,7 +161,7 @@ export function MarketListItem({ listing, onClick }: MarketListItemProps) {
               .map(([key, value], index, arr) => (
                 <span key={key} className="inline-flex items-center gap-1.5">
                   <span className="text-indigo-600 dark:text-indigo-400 whitespace-nowrap">
-                    {getStatLabel(key)}+{value}
+                    {getStatLabel(key)}+{String(value)}
                   </span>
                   {index < arr.length - 1 && (
                     <span className="text-gray-400 dark:text-gray-600">•</span>

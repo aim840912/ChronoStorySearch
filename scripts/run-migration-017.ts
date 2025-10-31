@@ -5,8 +5,6 @@
  */
 
 import { createClient } from '@supabase/supabase-js'
-import * as fs from 'fs'
-import * as path from 'path'
 
 // 讀取環境變數
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
@@ -27,11 +25,7 @@ async function runMigration() {
   console.log('🚀 開始執行 Migration 017...\n')
 
   try {
-    // 讀取 migration 檔案
-    const migrationPath = path.join(__dirname, '../supabase/migrations/017_update_maintenance_message_default.sql')
-    const sql = fs.readFileSync(migrationPath, 'utf-8')
-
-    // 提取 UPDATE 語句（跳過註解）
+    // 執行 UPDATE 語句（直接定義，不從檔案讀取）
     const updateQuery = `
       UPDATE system_settings
       SET
@@ -47,7 +41,7 @@ async function runMigration() {
     console.log()
 
     // 執行更新
-    const { data, error } = await supabase.rpc('exec_sql', {
+    const { error } = await supabase.rpc('exec_sql', {
       sql_query: updateQuery
     })
 
