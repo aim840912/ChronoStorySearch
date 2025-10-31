@@ -76,7 +76,7 @@ interface ReceivedInterest {
 
 export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
   const { user } = useAuth()
-  const { language } = useLanguage()
+  const { language, t } = useLanguage()
   const [activeTab, setActiveTab] = useState<InterestTab>('my-interests')
   const [myInterests, setMyInterests] = useState<MyInterest[]>([])
   const [receivedInterests, setReceivedInterests] = useState<ReceivedInterest[]>([])
@@ -114,7 +114,7 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
         const data = await response.json()
 
         if (!response.ok || !data.success) {
-          setError(data.error || '載入購買意向失敗')
+          setError(data.error || t('interest.loadError'))
           return
         }
 
@@ -125,22 +125,22 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
         }
       } catch (err) {
         clientLogger.error('Failed to fetch interests:', err)
-        setError('網路錯誤，請檢查您的連線')
+        setError(t('interest.networkError'))
       } finally {
         setIsLoading(false)
       }
     }
 
     fetchInterests()
-  }, [isOpen, user, activeTab])
+  }, [isOpen, user, activeTab, t])
 
   // 格式化狀態文字
   const getStatusText = (status: string) => {
     switch (status) {
-      case 'pending': return '待處理'
-      case 'contacted': return '已聯絡'
-      case 'completed': return '已完成'
-      case 'cancelled': return '已取消'
+      case 'pending': return t('interest.status.pending')
+      case 'contacted': return t('interest.status.contacted')
+      case 'completed': return t('interest.status.completed')
+      case 'cancelled': return t('interest.status.cancelled')
       default: return status
     }
   }
@@ -170,12 +170,12 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
   return (
     <BaseModal isOpen={isOpen} onClose={onClose} maxWidth="max-w-5xl">
       <div className="p-6">
-        <h2 className="text-2xl font-bold mb-4">購買意向</h2>
+        <h2 className="text-2xl font-bold mb-4">{t('interest.title')}</h2>
 
         {/* 未登入提示 */}
         {!user && (
           <div className="mb-4 p-4 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
-            <p className="text-yellow-800 dark:text-yellow-200">請先登入才能查看購買意向</p>
+            <p className="text-yellow-800 dark:text-yellow-200">{t('interest.loginRequired')}</p>
           </div>
         )}
 
@@ -196,7 +196,7 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
                 : 'bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600'
             }`}
           >
-            我的意向
+            {t('interest.tab.myInterests')}
           </button>
           <button
             onClick={() => setActiveTab('received-interests')}
@@ -206,7 +206,7 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
                 : 'bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600'
             }`}
           >
-            收到的意向
+            {t('interest.tab.receivedInterests')}
           </button>
         </div>
 
@@ -214,7 +214,7 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
         {isLoading ? (
           <div className="text-center py-10">
             <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
-            <p className="mt-2 text-gray-500 dark:text-gray-400">載入中...</p>
+            <p className="mt-2 text-gray-500 dark:text-gray-400">{t('common.loading')}</p>
           </div>
         ) : (
           <div className="space-y-4 max-h-[600px] overflow-y-auto">
@@ -223,7 +223,7 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
               <>
                 {myInterests.length === 0 ? (
                   <div className="text-center py-10 text-gray-500 dark:text-gray-400">
-                    目前沒有登記購買意向
+                    {t('interest.empty.myInterests')}
                   </div>
                 ) : (
                   myInterests.map((interest) => {
@@ -253,11 +253,11 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
                                   {getDisplayItemName(item, interest.listings.item_id)}
                                 </p>
                                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                                  數量: {interest.listings.quantity}
+                                  {t('listing.quantity')}: {interest.listings.quantity}
                                 </p>
                                 {interest.listings.price && (
                                   <p className="text-lg font-bold text-blue-600 dark:text-blue-400 mt-1">
-                                    {interest.listings.price.toLocaleString()} 楓幣
+                                    {interest.listings.price.toLocaleString()} {t('listing.meso')}
                                   </p>
                                 )}
                               </div>
@@ -271,21 +271,21 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
                             {/* 留言內容 */}
                             {interest.message && (
                               <div className="mt-3 p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                                <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">我的留言:</p>
+                                <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">{t('interest.myMessage')}</p>
                                 <p className="text-sm text-gray-700 dark:text-gray-300">{interest.message}</p>
                               </div>
                             )}
 
                             {/* 時間資訊 */}
                             <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-                              登記時間: {new Date(interest.created_at).toLocaleString('zh-TW')}
+                              {t('interest.registeredAt')} {new Date(interest.created_at).toLocaleString('zh-TW')}
                             </p>
 
                             {/* 刊登狀態提示 */}
                             {interest.listings.status !== 'active' && (
                               <div className="mt-2 p-2 bg-yellow-50 dark:bg-yellow-900/20 rounded">
                                 <p className="text-xs text-yellow-800 dark:text-yellow-400">
-                                  此刊登已結束 ({interest.listings.status === 'sold' ? '已售出' : interest.listings.status === 'cancelled' ? '已取消' : interest.listings.status})
+                                  {t('interest.listingEnded')} ({interest.listings.status === 'sold' ? t('listing.statusSold') : interest.listings.status === 'cancelled' ? t('listing.statusCancelled') : interest.listings.status})
                                 </p>
                               </div>
                             )}
@@ -303,7 +303,7 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
               <>
                 {receivedInterests.length === 0 ? (
                   <div className="text-center py-10 text-gray-500 dark:text-gray-400">
-                    目前沒有收到購買意向
+                    {t('interest.empty.receivedInterests')}
                   </div>
                 ) : (
                   receivedInterests.map((interest) => {
@@ -333,11 +333,11 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
                                   {getDisplayItemName(item, interest.listing.item_id)}
                                 </p>
                                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                                  數量: {interest.listing.quantity}
+                                  {t('listing.quantity')}: {interest.listing.quantity}
                                 </p>
                                 {interest.listing.price && (
                                   <p className="text-lg font-bold text-blue-600 dark:text-blue-400 mt-1">
-                                    {interest.listing.price.toLocaleString()} 楓幣
+                                    {interest.listing.price.toLocaleString()} {t('listing.meso')}
                                   </p>
                                 )}
                               </div>
@@ -354,7 +354,7 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
                                 {interest.buyer.discord_username.charAt(0).toUpperCase()}
                               </div>
                               <div>
-                                <p className="text-xs text-gray-500 dark:text-gray-400">買家:</p>
+                                <p className="text-xs text-gray-500 dark:text-gray-400">{t('interest.buyer')}</p>
                                 <p className="text-sm font-medium text-gray-900 dark:text-white">
                                   {interest.buyer.discord_username}
                                 </p>
@@ -364,14 +364,14 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
                             {/* 買家留言 */}
                             {interest.message && (
                               <div className="mt-3 p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                                <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">買家留言:</p>
+                                <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">{t('interest.buyerMessage')}</p>
                                 <p className="text-sm text-gray-700 dark:text-gray-300">{interest.message}</p>
                               </div>
                             )}
 
                             {/* 時間資訊 */}
                             <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-                              登記時間: {new Date(interest.created_at).toLocaleString('zh-TW')}
+                              {t('interest.registeredAt')} {new Date(interest.created_at).toLocaleString('zh-TW')}
                             </p>
 
                             {/* TODO: 階段 2 選做 - 標記已聯絡/已完成按鈕 */}
