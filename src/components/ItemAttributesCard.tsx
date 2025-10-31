@@ -102,6 +102,22 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
   if (attributes && attributes.sub_type === 'Potion' && attributes.potion) {
     const { potion } = attributes
 
+    // 檢查 potion.stats 是否存在（防止崩潰）
+    if (!potion.stats) {
+      return (
+        <div className="bg-gradient-to-br from-red-50 to-orange-100 dark:from-red-900/20 dark:to-orange-900/30 rounded-xl p-6 shadow-lg border border-red-200 dark:border-red-800">
+          <h3 className="text-xl font-bold text-red-900 dark:text-red-100 mb-4">
+            {t('item.potionInfo')}
+          </h3>
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
+            <p className="text-sm text-red-600 dark:text-red-400 text-center">
+              {t('item.dataIncomplete') || '藥水資料不完整'}
+            </p>
+          </div>
+        </div>
+      )
+    }
+
     // 過濾出非 null 且非 0 的屬性
     const nonNullStats = Object.entries(potion.stats)
       .filter(([, value]) => value !== null && value !== 0)
@@ -133,22 +149,31 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
                       isMainEffect ? 'bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-2 rounded-lg' : ''
                     }`}
                   >
-                    <span className={`text-sm ${
-                      isMainEffect
-                        ? 'font-semibold text-gray-800 dark:text-gray-200'
-                        : 'text-gray-600 dark:text-gray-400'
-                    }`}>
-                      {t(`item.${key}`)}:
-                    </span>
-                    <span className={`font-bold ${
-                      isHP
-                        ? 'text-2xl text-red-600 dark:text-red-400'
-                        : isMP
-                        ? 'text-2xl text-blue-600 dark:text-blue-400'
-                        : 'text-lg text-green-600 dark:text-green-400'
-                    }`}>
-                      {value}
-                    </span>
+                    {isHP || isMP ? (
+                      // HP/MP: 「恢復 50 HP」或「恢復 50% HP」格式
+                      <>
+                        <span className="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                          {t('item.recovery')}
+                        </span>
+                        <span className={`font-bold ${
+                          isHP
+                            ? 'text-2xl text-red-600 dark:text-red-400'
+                            : 'text-2xl text-blue-600 dark:text-blue-400'
+                        }`}>
+                          {value <= 1 ? `${value * 100}%` : value} {isHP ? 'HP' : 'MP'}
+                        </span>
+                      </>
+                    ) : (
+                      // 其他屬性: 「屬性名 +5」格式
+                      <>
+                        <span className="text-sm text-gray-600 dark:text-gray-400">
+                          {t(`item.${key}`)}
+                        </span>
+                        <span className="text-lg font-bold text-green-600 dark:text-green-400">
+                          +{value}
+                        </span>
+                      </>
+                    )}
                   </div>
                 )
               })}

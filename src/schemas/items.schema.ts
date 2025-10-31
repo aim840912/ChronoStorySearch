@@ -46,10 +46,24 @@ export const ItemAttributesDetailedSchema = z.object({
 
   // Potion 相關
   potion: z.object({
-    recoveryHp: z.number().optional(),
-    recoveryMp: z.number().optional(),
-    buffDuration: z.number().optional(),
-    buffStats: z.record(z.string(), z.number()).optional(),
+    duration: z.number().nullable(),
+    stats: z.object({
+      attack_speed: z.number().nullable(),
+      str: z.number().nullable(),
+      dex: z.number().nullable(),
+      int: z.number().nullable(),
+      luk: z.number().nullable(),
+      watk: z.number().nullable(),
+      matk: z.number().nullable(),
+      accuracy: z.number().nullable(),
+      avoidability: z.number().nullable(),
+      speed: z.number().nullable(),
+      jump: z.number().nullable(),
+      hp: z.number().nullable(),
+      mp: z.number().nullable(),
+      wdef: z.number().nullable(),
+      mdef: z.number().nullable(),
+    }),
   }).optional(),
 })
 
