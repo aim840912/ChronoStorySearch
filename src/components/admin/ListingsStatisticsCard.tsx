@@ -18,8 +18,10 @@
 'use client'
 
 import { useListingsStatistics } from '@/hooks/useListingsStatistics'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export function ListingsStatisticsCard() {
+  const { t } = useLanguage()
   const { statistics, isLoading, error, refetch } = useListingsStatistics()
 
   // 格式化時間
@@ -65,10 +67,10 @@ export function ListingsStatisticsCard() {
             {/* 標題和說明 */}
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                刊登統計資訊
+                {t('admin.listingsStatistics.title')}
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                即時查看交易市場的刊登統計資料
+                {t('admin.listingsStatistics.description')}
               </p>
             </div>
           </div>
@@ -79,7 +81,7 @@ export function ListingsStatisticsCard() {
           onClick={refetch}
           disabled={isLoading}
           className="px-3 py-2 bg-indigo-600 hover:bg-indigo-700 disabled:bg-gray-400 text-white rounded-md text-sm font-medium transition-colors flex items-center gap-2"
-          title="手動刷新統計資料"
+          title={t('admin.listingsStatistics.refreshTooltip')}
         >
           <svg
             className={`w-4 h-4 ${isLoading ? 'animate-spin' : ''}`}
@@ -94,7 +96,7 @@ export function ListingsStatisticsCard() {
               d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
             />
           </svg>
-          刷新
+          {t('admin.listingsStatistics.refresh')}
         </button>
       </div>
 
@@ -115,7 +117,7 @@ export function ListingsStatisticsCard() {
                 d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
               />
             </svg>
-            <span>載入統計資料中...</span>
+            <span>{t('admin.listingsStatistics.loading')}</span>
           </div>
         </div>
       )}
@@ -140,7 +142,7 @@ export function ListingsStatisticsCard() {
               </svg>
               <div>
                 <p className="text-sm font-medium text-red-800 dark:text-red-300">
-                  載入失敗
+                  {t('admin.listingsStatistics.loadError')}
                 </p>
                 <p className="text-sm text-red-700 dark:text-red-400 mt-1">
                   {error}
@@ -170,7 +172,7 @@ export function ListingsStatisticsCard() {
                   </svg>
                 </div>
                 <p className="text-xs font-medium text-indigo-800 dark:text-indigo-300 mb-1">
-                  總活躍刊登數
+                  {t('admin.listingsStatistics.totalActive')}
                 </p>
                 <p className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
                   {statistics.totalActive.toLocaleString()}
@@ -192,7 +194,7 @@ export function ListingsStatisticsCard() {
                   </svg>
                 </div>
                 <p className="text-xs font-medium text-green-800 dark:text-green-300 mb-1">
-                  最近 24 小時新增
+                  {t('admin.listingsStatistics.last24Hours')}
                 </p>
                 <p className="text-2xl font-bold text-green-600 dark:text-green-400">
                   {statistics.last24Hours.toLocaleString()}
@@ -214,23 +216,23 @@ export function ListingsStatisticsCard() {
                   </svg>
                 </div>
                 <p className="text-xs font-medium text-purple-800 dark:text-purple-300 mb-2">
-                  交易類型統計
+                  {t('admin.listingsStatistics.byTradeType')}
                 </p>
                 <div className="space-y-1.5">
                   <div className="flex justify-between text-xs">
-                    <span className="text-purple-700 dark:text-purple-300">收購</span>
+                    <span className="text-purple-700 dark:text-purple-300">{t('admin.listingsStatistics.buy')}</span>
                     <span className="font-semibold text-purple-900 dark:text-purple-100">
                       {statistics.byTradeType.buy}
                     </span>
                   </div>
                   <div className="flex justify-between text-xs">
-                    <span className="text-purple-700 dark:text-purple-300">出售</span>
+                    <span className="text-purple-700 dark:text-purple-300">{t('admin.listingsStatistics.sell')}</span>
                     <span className="font-semibold text-purple-900 dark:text-purple-100">
                       {statistics.byTradeType.sell}
                     </span>
                   </div>
                   <div className="flex justify-between text-xs">
-                    <span className="text-purple-700 dark:text-purple-300">交換</span>
+                    <span className="text-purple-700 dark:text-purple-300">{t('admin.listingsStatistics.exchange')}</span>
                     <span className="font-semibold text-purple-900 dark:text-purple-100">
                       {statistics.byTradeType.exchange}
                     </span>
@@ -243,13 +245,13 @@ export function ListingsStatisticsCard() {
           {/* 按狀態分類統計 */}
           <div className="bg-gray-50 dark:bg-gray-900/50 rounded-lg p-4 border border-gray-200 dark:border-gray-700">
             <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
-              按狀態分類統計
+              {t('admin.listingsStatistics.byStatus')}
             </h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {/* Active */}
               <div className="text-center p-2 bg-white dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-700">
                 <p className="text-xs text-gray-600 dark:text-gray-400 mb-1">
-                  活躍中
+                  {t('admin.listingsStatistics.active')}
                 </p>
                 <p className="text-lg font-bold text-green-600 dark:text-green-400">
                   {statistics.byStatus.active}
@@ -259,7 +261,7 @@ export function ListingsStatisticsCard() {
               {/* Completed */}
               <div className="text-center p-2 bg-white dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-700">
                 <p className="text-xs text-gray-600 dark:text-gray-400 mb-1">
-                  已完成
+                  {t('admin.listingsStatistics.completed')}
                 </p>
                 <p className="text-lg font-bold text-blue-600 dark:text-blue-400">
                   {statistics.byStatus.completed}
@@ -269,7 +271,7 @@ export function ListingsStatisticsCard() {
               {/* Expired */}
               <div className="text-center p-2 bg-white dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-700">
                 <p className="text-xs text-gray-600 dark:text-gray-400 mb-1">
-                  已過期
+                  {t('admin.listingsStatistics.expired')}
                 </p>
                 <p className="text-lg font-bold text-yellow-600 dark:text-yellow-400">
                   {statistics.byStatus.expired}
@@ -279,7 +281,7 @@ export function ListingsStatisticsCard() {
               {/* Cancelled */}
               <div className="text-center p-2 bg-white dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-700">
                 <p className="text-xs text-gray-600 dark:text-gray-400 mb-1">
-                  已取消
+                  {t('admin.listingsStatistics.cancelled')}
                 </p>
                 <p className="text-lg font-bold text-gray-600 dark:text-gray-400">
                   {statistics.byStatus.cancelled}
@@ -290,9 +292,9 @@ export function ListingsStatisticsCard() {
 
           {/* 最後更新時間 */}
           <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 pt-2 border-t border-gray-200 dark:border-gray-700">
-            <span>最後更新：{formatTime(statistics.timestamp)}</span>
+            <span>{t('admin.listingsStatistics.lastUpdated')}{formatTime(statistics.timestamp)}</span>
             <span className="text-gray-400 dark:text-gray-500">
-              自動刷新：每 60 秒（頁面隱藏時暫停）
+              {t('admin.listingsStatistics.autoRefresh')}
             </span>
           </div>
         </div>

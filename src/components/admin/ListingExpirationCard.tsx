@@ -20,8 +20,9 @@
 'use client'
 
 import { useState } from 'react'
+import { useLanguage } from '@/contexts/LanguageContext'
 
-interface ListingExpirationCardProps {
+interface ListingExpirationCardProps{
   /** 刊登過期天數 */
   expirationDays: number
   /** 最後更新時間 */
@@ -38,6 +39,7 @@ export function ListingExpirationCard({
   onUpdate,
   isUpdating
 }: ListingExpirationCardProps) {
+  const { t } = useLanguage()
   const [isEditing, setIsEditing] = useState(false)
   const [editedValue, setEditedValue] = useState(expirationDays)
   const [error, setError] = useState<string | null>(null)
@@ -51,7 +53,7 @@ export function ListingExpirationCard({
   const handleSave = async () => {
     // 驗證範圍
     if (editedValue < 7 || editedValue > 90) {
-      setError('天數必須在 7-90 之間')
+      setError(t('admin.listingExpiration.error'))
       return
     }
 
@@ -118,10 +120,10 @@ export function ListingExpirationCard({
             {/* 標題和說明 */}
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                刊登過期時間
+                {t('admin.listingExpiration.title')}
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                設定刊登建立後多久自動過期
+                {t('admin.listingExpiration.description')}
               </p>
             </div>
           </div>
@@ -137,7 +139,7 @@ export function ListingExpirationCard({
                 {expirationDays}
               </span>
               <span className="text-sm text-gray-600 dark:text-gray-400">
-                天後過期
+                {t('admin.listingExpiration.daysAfter')}
               </span>
             </div>
             <button
@@ -158,7 +160,7 @@ export function ListingExpirationCard({
                   d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
                 />
               </svg>
-              編輯
+              {t('admin.listingExpiration.edit')}
             </button>
           </div>
         </div>
@@ -166,7 +168,7 @@ export function ListingExpirationCard({
         <div className="mt-4 space-y-3">
           <div>
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              過期天數（7-90 天）
+              {t('admin.listingExpiration.label')}
             </label>
             <input
               type="number"
@@ -192,14 +194,14 @@ export function ListingExpirationCard({
               disabled={isUpdating || !!error}
               className="px-4 py-2 bg-orange-600 hover:bg-orange-700 disabled:bg-gray-400 text-white rounded-md text-sm font-medium transition-colors"
             >
-              儲存變更
+              {t('admin.listingExpiration.save')}
             </button>
             <button
               onClick={handleCancel}
               disabled={isUpdating}
               className="px-4 py-2 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-md text-sm font-medium transition-colors"
             >
-              取消
+              {t('admin.listingExpiration.cancel')}
             </button>
           </div>
         </div>
@@ -207,7 +209,7 @@ export function ListingExpirationCard({
 
       {/* 最後更新時間 */}
       <div className="mt-4 text-xs text-gray-500 dark:text-gray-400">
-        最後更新：{formatTime(updatedAt)}
+        {t('admin.listingExpiration.lastUpdated')}{formatTime(updatedAt)}
       </div>
 
       {/* 提示訊息 */}
@@ -227,13 +229,13 @@ export function ListingExpirationCard({
             />
           </svg>
           <div className="text-xs text-orange-800 dark:text-orange-300 space-y-1">
-            <p>此設定控制新刊登的過期時間。建議範圍：</p>
+            <p>{t('admin.listingExpiration.hintTitle')}</p>
             <ul className="list-disc list-inside ml-2 space-y-0.5">
-              <li><strong>7 天</strong>：適合快速流轉的常見物品</li>
-              <li><strong>30 天</strong>：平衡資料品質與便利性（推薦）</li>
-              <li><strong>60-90 天</strong>：適合稀有物品或低頻交易</li>
+              <li><strong>{t('admin.listingExpiration.hint7Days')}</strong>：{t('admin.listingExpiration.hint7DaysDesc')}</li>
+              <li><strong>{t('admin.listingExpiration.hint30Days')}</strong>：{t('admin.listingExpiration.hint30DaysDesc')}</li>
+              <li><strong>{t('admin.listingExpiration.hint60Days')}</strong>：{t('admin.listingExpiration.hint60DaysDesc')}</li>
             </ul>
-            <p className="mt-1">更新後約 10 秒內生效。</p>
+            <p className="mt-1">{t('admin.listingExpiration.hintFooter')}</p>
           </div>
         </div>
       </div>

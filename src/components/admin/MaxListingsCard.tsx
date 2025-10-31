@@ -20,6 +20,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 interface MaxListingsCardProps {
   /** 每用戶最大刊登數量 */
@@ -38,6 +39,7 @@ export function MaxListingsCard({
   onUpdate,
   isUpdating
 }: MaxListingsCardProps) {
+  const { t } = useLanguage()
   const [isEditing, setIsEditing] = useState(false)
   const [editedValue, setEditedValue] = useState(maxListings)
   const [error, setError] = useState<string | null>(null)
@@ -51,7 +53,7 @@ export function MaxListingsCard({
   const handleSave = async () => {
     // 驗證範圍
     if (editedValue < 1 || editedValue > 10) {
-      setError('數量必須在 1-10 之間')
+      setError(t('admin.maxListings.error'))
       return
     }
 
@@ -118,10 +120,10 @@ export function MaxListingsCard({
             {/* 標題和說明 */}
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                刊登數量限制
+                {t('admin.maxListings.title')}
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                設定每個用戶可以建立的最大活躍刊登數量
+                {t('admin.maxListings.description')}
               </p>
             </div>
           </div>
@@ -137,7 +139,7 @@ export function MaxListingsCard({
                 {maxListings}
               </span>
               <span className="text-sm text-gray-600 dark:text-gray-400">
-                個刊登 / 每用戶
+                {t('admin.maxListings.perUser')}
               </span>
             </div>
             <button
@@ -158,7 +160,7 @@ export function MaxListingsCard({
                   d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
                 />
               </svg>
-              編輯
+              {t('admin.maxListings.edit')}
             </button>
           </div>
         </div>
@@ -166,7 +168,7 @@ export function MaxListingsCard({
         <div className="mt-4 space-y-3">
           <div>
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              最大刊登數量（1-10）
+              {t('admin.maxListings.label')}
             </label>
             <input
               type="number"
@@ -192,14 +194,14 @@ export function MaxListingsCard({
               disabled={isUpdating || !!error}
               className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 disabled:bg-gray-400 text-white rounded-md text-sm font-medium transition-colors"
             >
-              儲存變更
+              {t('admin.maxListings.save')}
             </button>
             <button
               onClick={handleCancel}
               disabled={isUpdating}
               className="px-4 py-2 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-md text-sm font-medium transition-colors"
             >
-              取消
+              {t('admin.maxListings.cancel')}
             </button>
           </div>
         </div>
@@ -207,7 +209,7 @@ export function MaxListingsCard({
 
       {/* 最後更新時間 */}
       <div className="mt-4 text-xs text-gray-500 dark:text-gray-400">
-        最後更新：{formatTime(updatedAt)}
+        {t('admin.maxListings.lastUpdated')}{formatTime(updatedAt)}
       </div>
 
       {/* 提示訊息 */}
@@ -227,7 +229,7 @@ export function MaxListingsCard({
             />
           </svg>
           <p className="text-xs text-blue-800 dark:text-blue-300">
-            此設定控制每個用戶同時可以擁有的活躍刊登數量上限。建議範圍：3-10 個。更新後約 10 秒內生效。
+            {t('admin.maxListings.hint')}
           </p>
         </div>
       </div>
