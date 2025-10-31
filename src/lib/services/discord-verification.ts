@@ -10,8 +10,8 @@
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
 import { retry, RetryableError } from '@/lib/utils/retry'
-import { redis } from '@/lib/redis/client'
 import { RedisKeys, RedisTTL, DatabaseCacheTTL } from '@/lib/config/cache-config'
+import { safeGet, safeSet } from '@/lib/redis/utils'
 
 /**
  * 驗證 Discord 帳號年齡
@@ -189,9 +189,10 @@ export async function updateServerMembershipCache(
   userId: string,
   isMember: boolean,
   memberSince?: Date
-): Promise<void> {
+): Promise<boolean> {
   try {
-    await supabaseAdmin
+    // ✅ 修復：檢查更新操作的返回值
+    const { data, error } = await supabaseAdmin
       .from('discord_profiles')
       .update({
         is_server_member: isMember,
@@ -200,21 +201,37 @@ export async function updateServerMembershipCache(
         updated_at: new Date().toISOString()
       })
       .eq('user_id', userId)
+      .select()
 
-    apiLogger.debug('更新伺服器成員資格快取', {
+    if (error) {
+      apiLogger.error('更新伺服器成員資格快取失敗', { error, userId })
+      return false
+    }
+
+    if (!data || data.length === 0) {
+      apiLogger.warn('更新伺服器成員資格快取：沒有匹配的記錄', { userId })
+      return false
+    }
+
+    apiLogger.debug('更新伺服器成員資格快取成功', {
       userId,
       isMember,
       memberSince: memberSince?.toISOString()
     })
+    return true
   } catch (error) {
-    apiLogger.error('更新伺服器成員資格快取失敗', { error, userId })
+    apiLogger.error('更新伺服器成員資格快取異常', { error, userId })
+    return false
   }
 }
 
 /**
  * 檢查伺服器成員資格（使用快取）
  *
- * 如果快取超過 24 小時，則重新呼叫 Discord API 更新
+ * 快取架構（Fallback 機制）：
+ * 1. Layer 1 (Redis) - 最快，但非關鍵，失敗時自動 fallback
+ * 2. Layer 2 (Database) - 可靠來源，必須成功
+ * 3. Layer 3 (Discord API) - 最準確，但最慢
  *
  * @param userId 使用者 UUID
  * @param accessToken Discord OAuth access token
@@ -226,83 +243,114 @@ export async function checkServerMembershipWithCache(
   accessToken: string,
   requiredServerId: string
 ): Promise<{ isMember: boolean }> {
-  try {
-    // 1. 檢查 Redis 快取（第一層，最快）
-    const redisCacheKey = RedisKeys.discordMembership(userId, requiredServerId)
-    try {
-      const cached = await redis.get(redisCacheKey)
-      if (cached !== null) {
-        const isMember = cached === 'true'
-        apiLogger.debug('使用 Redis 快取的伺服器成員資格', {
+  const startTime = Date.now()
+  const redisCacheKey = RedisKeys.discordMembership(userId, requiredServerId)
+
+  // ========== Layer 1: Redis 快取（快速但非關鍵）==========
+  const { value: redisValue, error: redisError } = await safeGet(redisCacheKey)
+
+  if (redisValue !== null) {
+    const isMember = redisValue === 'true'
+    const latency = Date.now() - startTime
+
+    apiLogger.info('[DiscordCache] ✅ Redis 快取命中', {
+      userId,
+      isMember,
+      latency_ms: latency,
+      cache_layer: 'redis'
+    })
+
+    return { isMember }
+  }
+
+  if (redisError) {
+    apiLogger.warn('[DiscordCache] ⚠️  Redis 讀取失敗，使用資料庫 fallback', {
+      userId,
+      error: redisError.message
+    })
+  }
+
+  // ========== Layer 2: 資料庫快取（可靠來源）==========
+  const { data: profile, error: dbError } = await supabaseAdmin
+    .from('discord_profiles')
+    .select('is_server_member, server_member_checked_at')
+    .eq('user_id', userId)
+    .single()
+
+  if (dbError) {
+    apiLogger.error('[DiscordCache] ❌ 資料庫查詢失敗，直接調用 Discord API', {
+      userId,
+      error: dbError
+    })
+    // Fallback 到 Discord API（極端情況）
+  } else if (profile) {
+    const checkedAt = profile.server_member_checked_at
+      ? new Date(profile.server_member_checked_at)
+      : null
+
+    // 檢查資料庫快取是否有效（24 小時內）
+    if (checkedAt) {
+      const now = new Date()
+      const diffHours = (now.getTime() - checkedAt.getTime()) / (1000 * 60 * 60)
+
+      if (diffHours < DatabaseCacheTTL.DISCORD_MEMBERSHIP) {
+        const isMember = profile.is_server_member ?? false
+        const latency = Date.now() - startTime
+
+        // 嘗試回寫 Redis 快取（非關鍵操作）
+        safeSet(redisCacheKey, isMember ? 'true' : 'false', RedisTTL.DISCORD_MEMBERSHIP)
+
+        apiLogger.info('[DiscordCache] ✅ 資料庫快取命中', {
           userId,
-          isMember
+          isMember,
+          cached_hours_ago: diffHours.toFixed(2),
+          latency_ms: latency,
+          cache_layer: 'database'
         })
+
         return { isMember }
       }
-    } catch (redisError) {
-      // Redis 錯誤不影響主流程
-      apiLogger.warn('Redis 快取讀取失敗，繼續使用資料庫快取', {
-        error: redisError,
-        userId
+
+      apiLogger.debug('[DiscordCache] 🔄 資料庫快取已過期', {
+        userId,
+        cached_hours_ago: diffHours.toFixed(2)
       })
     }
-
-    // 2. 查詢資料庫快取（第二層）
-    const { data: profile } = await supabaseAdmin
-      .from('discord_profiles')
-      .select('is_server_member, server_member_checked_at')
-      .eq('user_id', userId)
-      .single()
-
-    if (profile) {
-      const checkedAt = profile.server_member_checked_at
-        ? new Date(profile.server_member_checked_at)
-        : null
-
-      // 3. 檢查資料庫快取是否有效（使用配置的 TTL）
-      if (checkedAt) {
-        const now = new Date()
-        const diffHours = (now.getTime() - checkedAt.getTime()) / (1000 * 60 * 60)
-
-        if (diffHours < DatabaseCacheTTL.DISCORD_MEMBERSHIP) {
-          const isMember = profile.is_server_member || false
-
-          // 更新 Redis 快取（使用配置的 TTL）
-          try {
-            await redis.set(redisCacheKey, isMember ? 'true' : 'false', { ex: RedisTTL.DISCORD_MEMBERSHIP })
-          } catch (redisError) {
-            apiLogger.warn('Redis 快取寫入失敗', { error: redisError })
-          }
-
-          apiLogger.debug('使用資料庫快取的伺服器成員資格', {
-            userId,
-            isMember,
-            cachedHoursAgo: diffHours.toFixed(2)
-          })
-
-          return { isMember }
-        }
-      }
-    }
-
-    // 4. 快取過期或不存在，呼叫 Discord API
-    apiLogger.debug('伺服器成員資格快取過期，重新驗證', { userId })
-
-    const result = await checkServerMembership(accessToken, requiredServerId)
-
-    // 5. 更新資料庫快取（使用配置的 TTL）
-    await updateServerMembershipCache(userId, result.isMember, result.memberSince)
-
-    // 6. 更新 Redis 快取（使用配置的 TTL）
-    try {
-      await redis.set(redisCacheKey, result.isMember ? 'true' : 'false', { ex: RedisTTL.DISCORD_MEMBERSHIP })
-    } catch (redisError) {
-      apiLogger.warn('Redis 快取寫入失敗', { error: redisError })
-    }
-
-    return { isMember: result.isMember }
-  } catch (error) {
-    apiLogger.error('檢查伺服器成員資格（含快取）失敗', { error, userId })
-    return { isMember: false }
   }
+
+  // ========== Layer 3: Discord API（最準確但最慢）==========
+  apiLogger.info('[DiscordCache] 🔄 調用 Discord API 驗證成員資格', { userId })
+
+  const result = await checkServerMembership(accessToken, requiredServerId)
+  const latency = Date.now() - startTime
+
+  // 更新資料庫快取（必須成功）
+  const dbUpdated = await updateServerMembershipCache(
+    userId,
+    result.isMember,
+    result.memberSince
+  )
+
+  if (!dbUpdated) {
+    apiLogger.error('[DiscordCache] ❌ 資料庫快取更新失敗', { userId })
+    // 注意：仍然返回 Discord API 結果，但記錄錯誤供監控
+  }
+
+  // 嘗試寫入 Redis 快取（非關鍵操作）
+  const redisWritten = await safeSet(
+    redisCacheKey,
+    result.isMember ? 'true' : 'false',
+    RedisTTL.DISCORD_MEMBERSHIP
+  )
+
+  apiLogger.info('[DiscordCache] ✅ Discord API 驗證完成', {
+    userId,
+    isMember: result.isMember,
+    latency_ms: latency,
+    cache_layer: 'discord_api',
+    db_updated: dbUpdated,
+    redis_updated: redisWritten
+  })
+
+  return { isMember: result.isMember }
 }

@@ -10,6 +10,7 @@ import type { ItemStats } from '@/types/item-stats'
 import { LISTING_CONSTRAINTS } from '@/lib/config/system-config'
 import { encryptWebhookUrl, decryptWebhookUrl } from '@/lib/crypto/webhook-encryption'
 import { validateContactInfo, validateInGameName } from '@/lib/validation/text-validation'
+import { invalidateMarketCache } from '@/lib/cache/market-cache'
 
 /**
  * GET /api/listings/[id] - 查詢單一刊登詳情
@@ -301,6 +302,20 @@ async function handlePATCH(
     updated_fields: Object.keys(updates)
   })
 
+  // 如果更新了會影響市場列表顯示的欄位，清除快取
+  const marketAffectingFields = ['status', 'price', 'item_stats', 'quantity']
+  const shouldInvalidateCache = Object.keys(updates).some(key =>
+    marketAffectingFields.includes(key)
+  )
+
+  if (shouldInvalidateCache) {
+    await invalidateMarketCache()
+    apiLogger.debug('Market cache invalidated after listing update', {
+      listing_id: id,
+      affected_fields: Object.keys(updates).filter(key => marketAffectingFields.includes(key))
+    })
+  }
+
   return success(updatedListing, '刊登更新成功')
 }
 
@@ -367,8 +382,45 @@ async function handleDELETE(
     throw new ValidationError('刪除刊登失敗')
   }
 
+  // 3. 更新用戶配額計數器（遞減 1）
+  // 先查詢當前配額
+  const { data: quotaData } = await supabaseAdmin
+    .from('user_quotas')
+    .select('active_listings_count')
+    .eq('user_id', user.id)
+    .single()
+
+  if (quotaData) {
+    // 計算新的配額（確保不會變為負數）
+    const newCount = Math.max(quotaData.active_listings_count - 1, 0)
+
+    // 更新配額
+    const { error: quotaError } = await supabaseAdmin
+      .from('user_quotas')
+      .update({
+        active_listings_count: newCount,
+        updated_at: now
+      })
+      .eq('user_id', user.id)
+
+    if (quotaError) {
+      apiLogger.error('更新配額計數器失敗', {
+        error: quotaError,
+        user_id: user.id,
+        listing_id: id
+      })
+      // 不拋出錯誤，避免影響刪除流程（配額可以稍後修復）
+    }
+  }
+
   apiLogger.info('刊登刪除成功', {
     user_id: user.id,
+    listing_id: id
+  })
+
+  // 清除市場快取，確保刪除的刊登不再顯示
+  await invalidateMarketCache()
+  apiLogger.debug('Market cache invalidated after listing deletion', {
     listing_id: id
   })
 

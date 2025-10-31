@@ -124,7 +124,8 @@
       "Bash(git mv:*)",
       "Bash(xargs:*)",
       "Bash(test:*)",
-      "Bash(UPSTASH_REDIS_REST_URL=\"https://pleasant-rhino-29263.upstash.io\" UPSTASH_REDIS_REST_TOKEN=\"AXJPAAIncDJiYzNjNTUyOTZmZGY0MjRlODY5MTgzYTk1MWVjMjA0MHAyMjkyNjM\" node:*)"
+      "Bash(UPSTASH_REDIS_REST_URL=\"https://pleasant-rhino-29263.upstash.io\" UPSTASH_REDIS_REST_TOKEN=\"AXJPAAIncDJiYzNjNTUyOTZmZGY0MjRlODY5MTgzYTk1MWVjMjA0MHAyMjkyNjM\" node:*)",
+      "Bash(redis-cli get:*)"
     ],
     "deny": [],
     "ask": [

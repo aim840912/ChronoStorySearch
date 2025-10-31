@@ -5,9 +5,9 @@ import { success } from '@/lib/api-response'
 import { ValidationError, RateLimitError } from '@/lib/errors'
 import { apiLogger } from '@/lib/logger'
 import { checkServerMembership, updateServerMembershipCache } from '@/lib/services/discord-verification'
-import { redis } from '@/lib/redis/client'
 import { RedisKeys, RedisTTL } from '@/lib/config/cache-config'
 import { checkAndIncrementIpQuota } from '@/lib/redis/quota'
+import { safeDelete, safeSet } from '@/lib/redis/utils'
 
 // Discord 驗證配置
 const DISCORD_GUILD_ID = process.env.DISCORD_GUILD_ID // Discord 伺服器 ID（Guild ID）
@@ -80,22 +80,20 @@ async function handlePOST(_request: NextRequest, user: User) {
     remaining
   })
 
-  // 1. 清除 Redis 快取（Layer 1）
+  // 1. 清除 Redis 快取（Layer 1）- 使用安全操作
   const redisCacheKey = RedisKeys.discordMembership(user.id, DISCORD_GUILD_ID)
 
-  try {
-    await redis.del(redisCacheKey)
+  const deleted = await safeDelete(redisCacheKey)
 
-    apiLogger.debug('已清除 Redis 快取', {
+  if (deleted) {
+    apiLogger.debug('[RefreshMembership] ✅ Redis 快取已清除', {
       user_id: user.id,
       cache_key: redisCacheKey
     })
-  } catch (error) {
-    apiLogger.warn('清除 Redis 快取失敗（非關鍵錯誤）', {
-      user_id: user.id,
-      error
+  } else {
+    apiLogger.warn('[RefreshMembership] ⚠️  Redis 清除失敗（非關鍵）', {
+      user_id: user.id
     })
-    // 繼續執行，即使 Redis 清除失敗也不影響主流程
   }
 
   // 2. 呼叫 Discord API 取得最新成員資格（這會自動更新資料庫快取）
@@ -117,56 +115,58 @@ async function handlePOST(_request: NextRequest, user: User) {
     throw new ValidationError('無法連線到 Discord，請稍後再試')
   }
 
-  // 3. 更新資料庫快取（Layer 2）
-  try {
-    await updateServerMembershipCache(
-      user.id,
-      membershipResult.isMember,
-      membershipResult.memberSince
-    )
+  // 3. 更新資料庫快取（Layer 2）- 必須成功
+  const dbCacheUpdated = await updateServerMembershipCache(
+    user.id,
+    membershipResult.isMember,
+    membershipResult.memberSince
+  )
 
-    apiLogger.debug('已更新資料庫快取', {
+  if (!dbCacheUpdated) {
+    // 資料庫更新失敗是嚴重錯誤，拋出異常
+    apiLogger.error('[RefreshMembership] ❌ 資料庫快取更新失敗', {
+      user_id: user.id
+    })
+    throw new ValidationError('更新成員資格快取失敗，請稍後再試')
+  }
+
+  apiLogger.debug('[RefreshMembership] ✅ 資料庫快取已更新', {
+    user_id: user.id,
+    is_member: membershipResult.isMember
+  })
+
+  // 4. 嘗試寫入 Redis 快取（非關鍵操作）
+  const redisWritten = await safeSet(
+    redisCacheKey,
+    membershipResult.isMember ? 'true' : 'false',
+    RedisTTL.DISCORD_MEMBERSHIP
+  )
+
+  if (redisWritten) {
+    apiLogger.debug('[RefreshMembership] ✅ Redis 快取已更新', {
       user_id: user.id,
       is_member: membershipResult.isMember
     })
-  } catch (error) {
-    apiLogger.error('更新資料庫快取失敗', {
-      user_id: user.id,
-      error
-    })
-    // 繼續執行，返回 Discord API 結果即使快取更新失敗
-  }
-
-  // 4. 重新寫入 Redis 快取（確保後續查詢使用最新狀態）
-  try {
-    await redis.set(
-      redisCacheKey,
-      membershipResult.isMember ? 'true' : 'false',
-      { ex: RedisTTL.DISCORD_MEMBERSHIP } // 使用配置的 TTL
-    )
-
-    apiLogger.debug('已重新寫入 Redis 快取', {
-      user_id: user.id,
-      is_member: membershipResult.isMember
-    })
-  } catch (error) {
-    apiLogger.warn('重新寫入 Redis 快取失敗（非關鍵錯誤）', {
-      user_id: user.id,
-      error
+  } else {
+    apiLogger.warn('[RefreshMembership] ⚠️  Redis 寫入失敗（功能不受影響）', {
+      user_id: user.id
     })
   }
 
-  apiLogger.info('Discord 成員資格刷新成功', {
+  apiLogger.info('[RefreshMembership] ✅ Discord 成員資格刷新成功', {
     user_id: user.id,
     is_member: membershipResult.isMember,
-    member_since: membershipResult.memberSince
+    member_since: membershipResult.memberSince,
+    db_updated: true,
+    redis_updated: redisWritten
   })
 
   return success(
     {
       is_member: membershipResult.isMember,
       member_since: membershipResult.memberSince,
-      checked_at: new Date().toISOString()
+      checked_at: new Date().toISOString(),
+      cache_status: redisWritten ? 'redis_and_db' : 'db_only'  // 告知前端快取狀態
     },
     membershipResult.isMember
       ? '成員資格驗證成功'

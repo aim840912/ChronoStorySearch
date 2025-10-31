@@ -14,6 +14,7 @@ import { getSystemSettings, LISTING_CONSTRAINTS } from '@/lib/config/system-conf
 import { validateWebhookUrlOrThrow } from '@/lib/validation/webhook'
 import { encryptWebhookUrl } from '@/lib/crypto/webhook-encryption'
 import { validateInGameName } from '@/lib/validation/text-validation'
+import { invalidateMarketCache } from '@/lib/cache/market-cache'
 
 // Discord 驗證配置
 const DISCORD_GUILD_ID = process.env.DISCORD_GUILD_ID // Discord 伺服器 ID（Guild ID）
@@ -355,6 +356,12 @@ async function handlePOST(request: NextRequest, user: User) {
     trade_type: listing.trade_type,
     active_listings_count: activeListingsCount,
     has_wanted_items: trade_type === 'exchange'
+  })
+
+  // 清除市場快取，確保新刊登立即在市場列表中顯示
+  await invalidateMarketCache()
+  apiLogger.debug('Market cache invalidated after listing creation', {
+    listing_id: listingId
   })
 
   return created(listing, '刊登建立成功')
