@@ -23,6 +23,7 @@ import { MaintenanceModeCard } from '@/components/admin/MaintenanceModeCard'
 import { MaxListingsCard } from '@/components/admin/MaxListingsCard'
 import { ListingsStatisticsCard } from '@/components/admin/ListingsStatisticsCard'
 import { ListingExpirationCard } from '@/components/admin/ListingExpirationCard'
+import { FreeQuotaCard } from '@/components/admin/FreeQuotaCard'
 import { clientLogger } from '@/lib/logger'
 
 export default function SystemSettingsPage() {
@@ -270,6 +271,9 @@ export default function SystemSettingsPage() {
           </div>
         ) : (
           <div className="space-y-6">
+            {/* 免費額度監控卡片 - 全寬顯示 */}
+            <FreeQuotaCard />
+
             {/* 刊登統計卡片 - 全寬顯示 */}
             <ListingsStatisticsCard />
 

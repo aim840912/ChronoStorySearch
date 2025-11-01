@@ -126,7 +126,10 @@
       "Bash(test:*)",
       "Bash(UPSTASH_REDIS_REST_URL=\"https://pleasant-rhino-29263.upstash.io\" UPSTASH_REDIS_REST_TOKEN=\"AXJPAAIncDJiYzNjNTUyOTZmZGY0MjRlODY5MTgzYTk1MWVjMjA0MHAyMjkyNjM\" node:*)",
       "Bash(redis-cli get:*)",
-      "Bash(dmesg:*)"
+      "Bash(dmesg:*)",
+      "WebFetch(domain:upstash.com)",
+      "WebFetch(domain:supabase.com)",
+      "WebFetch(domain:github.com)"
     ],
     "deny": [],
     "ask": [
