@@ -3,7 +3,7 @@ import { User } from '@/lib/middleware/api-middleware'
 import { withAuthAndBotDetection } from '@/lib/bot-detection/api-middleware'
 import { requireTradingEnabled } from '@/lib/middleware/trading-middleware'
 import { success, created } from '@/lib/api-response'
-import { ValidationError, DatabaseError } from '@/lib/errors'
+import { ValidationError, DatabaseError, ErrorFactory } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
 import { DEFAULT_RATE_LIMITS } from '@/lib/bot-detection/constants'
@@ -305,30 +305,17 @@ async function handlePOST(request: NextRequest, user: User) {
   })
 
   if (rpcError) {
-    // 檢查錯誤類型並提供友善訊息
-    if (rpcError.message?.includes('已達到刊登配額上限')) {
-      apiLogger.warn('刊登配額已滿', {
-        user_id: user.id,
-        error: rpcError.message
-      })
-      throw new ValidationError(rpcError.message)
-    }
-
-    if (rpcError.message?.includes('已經刊登此物品')) {
-      apiLogger.warn('用戶嘗試重複刊登相同物品', {
-        user_id: user.id,
-        item_id: item_id
-      })
-      throw new ValidationError(rpcError.message)
-    }
-
-    // 其他資料庫錯誤
+    // 使用標準化錯誤轉換（基於 PostgreSQL ERRCODE）
+    // P0001 (QUOTA_EXCEEDED) → ValidationError('已達到刊登配額上限')
+    // 23505 (UNIQUE_VIOLATION) → ConflictError('資源已存在')
+    // 其他錯誤 → DatabaseError
     apiLogger.error('建立刊登失敗（RPC 錯誤）', {
       error: rpcError,
       user_id: user.id,
-      item_id: item_id
+      item_id: item_id,
+      code: (rpcError as { code?: string }).code
     })
-    throw new DatabaseError('建立刊登失敗', rpcError as unknown as Record<string, unknown>)
+    throw ErrorFactory.fromSupabaseRpcError(rpcError)
   }
 
   // RPC 函數返回結構化結果
@@ -376,7 +363,7 @@ export const GET = requireTradingEnabled(
     enableAuditLog: false,
     botDetection: {
       enableRateLimit: true,
-      enableBehaviorDetection: true,
+      enableBehaviorDetection: false, // 禁用（Rate Limiting 已足夠，減少 Redis 使用）
       rateLimit: DEFAULT_RATE_LIMITS.AUTHENTICATED, // 100次/小時（認證用戶寬鬆限制）
     },
   })
@@ -388,7 +375,7 @@ export const POST = requireTradingEnabled(
     enableAuditLog: true,
     botDetection: {
       enableRateLimit: true,
-      enableBehaviorDetection: true,
+      enableBehaviorDetection: false, // 禁用（Rate Limiting 已足夠，減少 Redis 使用）
       rateLimit: DEFAULT_RATE_LIMITS.AUTHENTICATED, // 100次/小時（認證用戶寬鬆限制）
     },
   })

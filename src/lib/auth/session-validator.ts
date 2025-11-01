@@ -173,17 +173,11 @@ export async function validateSession(
       return { valid: false, user: null }
     }
 
-    // 7. 更新 last_active_at（非同步執行，不阻塞回應）
-    // 注意：使用 Promise 不等待完成，避免影響回應時間
-    supabaseAdmin
-      .from('sessions')
-      .update({ last_active_at: new Date().toISOString() })
-      .eq('id', session_id)
-      .then(({ error }) => {
-        if (error) {
-          dbLogger.warn('Failed to update last_active_at', { session_id, error })
-        }
-      })
+    // 7. 活躍時間追蹤已移除（優化 Redis 使用）
+    // 原本：每次 API 請求執行 redis.set()（2,000 命令/天）
+    // 現在：完全依賴 Cron Job 每 15 分鐘批次更新（96 次/天）
+    // 效果：last_active_at 更新延遲最多 15 分鐘（可接受）
+    // 節省：2,000 Redis 命令/天（10% 總使用）
 
     // 解密 access_token（資料庫中是加密儲存的）
     let decryptedAccessToken: string

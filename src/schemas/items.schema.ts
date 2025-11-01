@@ -25,8 +25,8 @@ export const ItemAttributesDetailedSchema = z.object({
       reqLuk: z.number().int().nonnegative().optional(),
       reqFam: z.number().int().nonnegative().optional().nullable(),
     }).optional(),
-    classes: z.record(z.string(), z.boolean()).optional(),
-    stats: z.record(z.string(), z.union([z.number(), z.string()])).optional(),
+    classes: z.record(z.string(), z.boolean().nullable()).optional(),
+    stats: z.record(z.string(), z.union([z.number(), z.string()]).nullable()).optional(),
     statVariation: z.record(
       z.string(),
       z.object({

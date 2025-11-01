@@ -48,8 +48,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         // 401 或其他錯誤表示未登入
         setUser(null)
       }
-    } catch (error) {
-      console.error('Failed to fetch user:', error)
+    } catch {
+      // 錯誤由 API 處理，前端不需額外記錄
       setUser(null)
     } finally {
       setLoading(false)
@@ -84,11 +84,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (response.ok) {
         setUser(null)
         window.location.href = '/'
-      } else {
-        console.error('Logout failed:', await response.text())
       }
-    } catch (error) {
-      console.error('Logout error:', error)
+      // 登出失敗時不記錄（用戶可重試或刷新頁面）
+    } catch {
+      // 網路錯誤由瀏覽器處理，不需額外記錄
     }
   }, [])
 

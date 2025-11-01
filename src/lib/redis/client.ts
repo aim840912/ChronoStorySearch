@@ -85,14 +85,55 @@ export const RedisUtils = {
   },
 
   /**
+   * 安全掃描 Redis keys（使用 SCAN 避免阻塞）
+   *
+   * @param pattern - Key 匹配模式（如 "session:active:*"）
+   * @param batchSize - 每次掃描數量（預設 100）
+   * @returns 匹配的 keys 陣列
+   *
+   * @example
+   * ```ts
+   * const keys = await RedisUtils.safeScan('session:active:*', 100)
+   * // ['session:active:123', 'session:active:456', ...]
+   * ```
+   */
+  async safeScan(pattern: string, batchSize = 100): Promise<string[]> {
+    const keys: string[] = []
+    let cursor: string | number = 0
+
+    do {
+      const result: [string | number, string[]] = await redis.scan(cursor, {
+        match: pattern,
+        count: batchSize
+      })
+
+      // Upstash Redis SCAN 返回 [cursor: string, keys: string[]]
+      const [nextCursor, batch] = result
+      keys.push(...batch)
+      // 轉換為數字用於迴圈條件檢查
+      cursor = typeof nextCursor === 'string' ? parseInt(nextCursor, 10) : nextCursor
+    } while (cursor !== 0)
+
+    return keys
+  },
+
+  /**
    * 批次刪除 key（支援 pattern）
+   *
+   * 使用 SCAN 掃描後批次刪除，避免阻塞
    */
   async deletePattern(pattern: string) {
-    // Upstash Redis 不支援 SCAN，需要手動追蹤 keys
-    // 或使用 REST API 的 keys 命令（有效能風險）
-    console.warn(
-      `deletePattern not fully supported in Upstash Redis: ${pattern}`
-    )
+    const keys = await this.safeScan(pattern)
+
+    if (keys.length === 0) {
+      return 0
+    }
+
+    const pipeline = redis.pipeline()
+    keys.forEach(key => pipeline.del(key))
+    await pipeline.exec()
+
+    return keys.length
   },
 
   /**

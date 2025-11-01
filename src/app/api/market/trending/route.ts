@@ -89,7 +89,7 @@ export const GET = requireTradingEnabled(
     module: 'TrendingAPI',
     botDetection: {
       enableRateLimit: true,
-      enableBehaviorDetection: true,
+      enableBehaviorDetection: false, // 禁用（Rate Limiting 已足夠，減少 Redis 使用）
       rateLimit: DEFAULT_RATE_LIMITS.TRENDING, // 30次/小時（嚴格限制）
     },
   })

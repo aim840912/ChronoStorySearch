@@ -1,5 +1,33 @@
 /**
- * 行為模式檢測器
+ * 行為模式檢測器（⚠️ 當前已禁用，保留以備未來需要）
+ *
+ * ⚠️ 重要提示：此模組已在「階段 6：Redis 使用優化」中全面禁用
+ *
+ * **禁用原因**：
+ * - 每次請求需要 6 個 Redis 命令（高頻檢測 3 個 + 掃描檢測 3 個）
+ * - 預估影響：每日增加 ~4,000 Redis 命令（假設 1,000 請求/天）
+ * - Rate Limiting（滑動窗口）已提供充足的防護
+ *
+ * **當前狀態**：
+ * - 所有 API 端點配置 `enableBehaviorDetection: false`
+ * - 詳見：
+ *   - src/app/api/market/trending/route.ts (第 92 行)
+ *   - src/app/api/market/search/route.ts (第 391 行)
+ *   - src/app/api/listings/route.ts (第 366, 378 行)
+ *
+ * **如需重新啟用**：
+ * 1. 評估 Redis 免費額度影響（10,000 命令/天上限）
+ * 2. 修改 API 端點配置：`enableBehaviorDetection: true`
+ * 3. 監控 Upstash Dashboard 確認不超標
+ *
+ * **替代方案**：
+ * - 保持使用 Rate Limiting（滑動窗口）
+ * - 僅在最高風險端點啟用 Behavior Detection
+ *
+ * @see docs/architecture/交易系統/08-實作路線圖.md（階段 6）
+ * @deprecated 當前已禁用，優先使用 Rate Limiting
+ *
+ * ---
  *
  * 功能：
  * 1. 高頻訪問檢測：檢測 1 小時內超過閾值次請求

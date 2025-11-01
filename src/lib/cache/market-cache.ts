@@ -20,8 +20,10 @@ export interface MarketCacheData {
   pagination: PaginationInfo
 }
 
-const CACHE_TTL = 60 // 60 秒
-const CACHE_KEYS_SET = 'market:cache:keys' // Redis Set 用於追蹤所有快取 keys
+const CACHE_TTL = 300 // 300 秒（5 分鐘）- 延長 TTL 提升快取命中率
+// 移除 ZSET 追蹤（依賴 Redis TTL 自動過期，減少 Redis 命令使用）
+// const CACHE_KEYS_ZSET = 'market:cache:keys:zset'
+// const MAX_CACHE_KEYS = 1000
 
 /**
  * 獲取快取的市場刊登列表
@@ -51,12 +53,9 @@ export async function getCachedMarketListings(cacheKey: string): Promise<MarketC
  */
 export async function setCachedMarketListings(cacheKey: string, data: unknown) {
   try {
-    // 使用 pipeline 批次執行操作，減少網路往返
-    const pipeline = redis.pipeline()
-    pipeline.set(cacheKey, JSON.stringify(data), { ex: CACHE_TTL })
-    pipeline.sadd(CACHE_KEYS_SET, cacheKey) // 將 key 加入追蹤 Set
-    pipeline.expire(CACHE_KEYS_SET, CACHE_TTL + 60) // 延長 Set TTL，防止遺漏
-    await pipeline.exec()
+    // 簡化快取策略：僅設定 key + TTL，依賴 Redis 自動過期
+    // 移除 ZSET 追蹤和清理邏輯，減少 Redis 命令使用
+    await redis.set(cacheKey, JSON.stringify(data), { ex: CACHE_TTL })
 
     apiLogger.debug('Market listings cached', { cacheKey, ttl: CACHE_TTL })
   } catch (error) {
@@ -85,44 +84,43 @@ export function buildMarketCacheKey(params: {
 }
 
 /**
+ * 清理過期的快取 keys（已廢棄）
+ *
+ * 原本使用 ZSET 追蹤 keys 並定期清理
+ * 現已移除 ZSET，改為依賴 Redis TTL 自動過期
+ */
+// async function cleanupExpiredCacheKeys(): Promise<number> {
+//   ... (已移除，依賴 Redis TTL)
+// }
+
+/**
+ * 限制 ZSET 大小（已廢棄）
+ *
+ * 原本限制 ZSET 大小防止無限增長
+ * 現已移除 ZSET，改為依賴 Redis TTL 自動過期
+ */
+// async function limitCacheKeysSize(): Promise<number> {
+//   ... (已移除，依賴 Redis TTL)
+// }
+
+/**
  * 清除市場快取（當有新刊登建立時）
+ *
+ * 簡化版本：使用 SCAN 掃描符合 pattern 的 keys，然後批次刪除
+ * 依賴 Redis TTL 自動過期，無需手動維護
  *
  * @param pattern - Redis key pattern（支援萬用字元，預設為 'market:*'）
  */
 export async function invalidateMarketCache(pattern: string = 'market:*') {
   try {
-    // 使用 Set-based 追蹤，避免阻塞的 KEYS 命令
-    const allKeys = await redis.smembers(CACHE_KEYS_SET)
-
-    if (!allKeys || allKeys.length === 0) {
-      apiLogger.debug('No market cache keys to invalidate')
-      return
-    }
-
-    // 將 pattern 轉換為正則表達式
-    const regexPattern = new RegExp(
-      '^' + pattern.replace(/\*/g, '.*').replace(/\?/g, '.') + '$'
-    )
-
-    // 過濾符合 pattern 的 keys
-    const keysToDelete = allKeys.filter((key) => regexPattern.test(key))
-
-    if (keysToDelete.length === 0) {
-      apiLogger.debug('No matching market cache keys found', { pattern })
-      return
-    }
-
-    // 批次刪除快取和 Set 成員
-    const pipeline = redis.pipeline()
-    keysToDelete.forEach((key) => {
-      pipeline.del(key)
-      pipeline.srem(CACHE_KEYS_SET, key)
-    })
-    await pipeline.exec()
+    // 使用 RedisUtils.deletePattern 批次刪除符合 pattern 的 keys
+    // 內部使用 SCAN（非阻塞）+ DEL（批次）
+    const { RedisUtils } = await import('@/lib/redis/client')
+    const deletedCount = await RedisUtils.deletePattern(pattern)
 
     apiLogger.info('Market cache invalidated', {
       pattern,
-      count: keysToDelete.length
+      count: deletedCount
     })
   } catch (error) {
     apiLogger.error('Failed to invalidate market cache', { error, pattern })

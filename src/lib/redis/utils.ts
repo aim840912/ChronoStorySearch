@@ -113,21 +113,16 @@ export async function safeDelete(key: string): Promise<boolean> {
 }
 
 /**
- * 批量安全讀取（用於監控和調試）
+ * ❌ 已移除：safeKeys() 函數
  *
- * @param pattern - Redis 鍵模式（如 'user:*'）
- * @returns string[] - 匹配的鍵列表
+ * 原因：redis.keys() 會阻塞 Redis（O(N) 複雜度）
+ * 替代方案：使用 RedisUtils.safeScan() (非阻塞，O(1) 每次迭代)
+ *
+ * @example
+ * // Before (阻塞):
+ * const keys = await safeKeys('session:*')
+ *
+ * // After (非阻塞):
+ * import { RedisUtils } from '@/lib/redis/client'
+ * const keys = await RedisUtils.safeScan('session:*', 100)
  */
-export async function safeKeys(pattern: string): Promise<string[]> {
-  try {
-    const keys = await redis.keys(pattern)
-    apiLogger.debug('[Redis] KEYS 成功', { pattern, count: keys.length })
-    return keys
-  } catch (error) {
-    apiLogger.warn('[Redis] KEYS 操作失敗', {
-      pattern,
-      error: error instanceof Error ? error.message : String(error)
-    })
-    return []
-  }
-}

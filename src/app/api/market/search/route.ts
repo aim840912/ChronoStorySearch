@@ -388,7 +388,7 @@ export const GET = requireTradingEnabled(
     enableAuditLog: false,
     botDetection: {
       enableRateLimit: true,
-      enableBehaviorDetection: true,
+      enableBehaviorDetection: false, // 禁用（Rate Limiting 已足夠，減少 Redis 使用）
       rateLimit: DEFAULT_RATE_LIMITS.SEARCH, // 40次/小時（中等限制）
     },
   })

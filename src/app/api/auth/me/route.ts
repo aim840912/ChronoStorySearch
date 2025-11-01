@@ -26,6 +26,7 @@ import { supabaseAdmin } from '@/lib/supabase/server'
 import { success } from '@/lib/api-response'
 import { apiLogger, dbLogger } from '@/lib/logger'
 import { DatabaseError, NotFoundError } from '@/lib/errors'
+import { getSystemSettings } from '@/lib/config/system-config'
 
 /**
  * 用戶資訊回應介面
@@ -191,9 +192,12 @@ async function handleGET(request: NextRequest, user: User): Promise<Response> {
       // 發生錯誤時使用 0，不阻斷整個請求
     }
 
+    // 從系統設定讀取配額上限
+    const systemSettings = await getSystemSettings()
+
     quotas = {
       active_listings_count: activeListingsCount ?? 0,
-      max_listings: 50, // 根據路線圖，每個用戶最多 50 個活躍刊登
+      max_listings: systemSettings.max_active_listings_per_user,
       interests_today: interestsTodayCount ?? 0,
       max_interests_per_day: 100 // 根據路線圖，每日最多 100 次表達興趣
     }

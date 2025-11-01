@@ -307,4 +307,144 @@ export class ErrorFactory {
       { originalError: error }
     )
   }
+
+  /**
+   * 從 Supabase RPC 錯誤轉換為標準錯誤
+   *
+   * 使用 PostgreSQL ERRCODE 而非字串匹配，提升錯誤處理可靠性
+   *
+   * @example
+   * ```ts
+   * const { data, error } = await supabase.rpc('create_listing_safe', {...})
+   * if (error) {
+   *   throw ErrorFactory.fromSupabaseRpcError(error)
+   * }
+   * ```
+   */
+  static fromSupabaseRpcError(error: unknown): BaseError {
+    const errorObj = error as Record<string, unknown>
+    const code = (errorObj.code as string) || ''
+    const message = (errorObj.message as string) || ''
+    const hint = (errorObj.hint as string) || ''
+
+    // PostgreSQL 標準錯誤碼
+    // 參考：https://www.postgresql.org/docs/current/errcodes-appendix.html
+
+    // 23505: unique_violation（唯一約束違反）
+    if (code === POSTGRES_ERROR_CODES.UNIQUE_VIOLATION) {
+      return new ConflictError('資源已存在', {
+        code,
+        hint,
+        originalError: error
+      })
+    }
+
+    // 23503: foreign_key_violation（外鍵約束違反）
+    if (code === POSTGRES_ERROR_CODES.FOREIGN_KEY_VIOLATION) {
+      return new ValidationError('關聯資源不存在', {
+        code,
+        hint,
+        originalError: error
+      })
+    }
+
+    // 23514: check_violation（檢查約束違反）
+    if (code === POSTGRES_ERROR_CODES.CHECK_VIOLATION) {
+      // 根據錯誤訊息提供更具體的錯誤
+      if (message.includes('quantity')) {
+        return new ValidationError('數量必須大於 0', {
+          code,
+          hint,
+          originalError: error
+        })
+      }
+      if (message.includes('price')) {
+        return new ValidationError('價格必須大於 0', {
+          code,
+          hint,
+          originalError: error
+        })
+      }
+      return new ValidationError('資料驗證失敗', {
+        code,
+        hint,
+        originalError: error
+      })
+    }
+
+    // 23502: not_null_violation（非空約束違反）
+    if (code === POSTGRES_ERROR_CODES.NOT_NULL_VIOLATION) {
+      return new ValidationError('缺少必填欄位', {
+        code,
+        hint,
+        originalError: error
+      })
+    }
+
+    // P0001: 自訂錯誤 - 刊登配額超限
+    if (code === POSTGRES_ERROR_CODES.QUOTA_EXCEEDED) {
+      return new ValidationError('已達到刊登配額上限', {
+        code,
+        hint,
+        originalError: error
+      })
+    }
+
+    // P0002: 自訂錯誤 - 重複刊登
+    if (code === POSTGRES_ERROR_CODES.DUPLICATE_LISTING) {
+      return new ConflictError('您已經刊登過相同的物品', {
+        code,
+        hint,
+        originalError: error
+      })
+    }
+
+    // P0003: 自訂錯誤 - 資源不足（保留，未來可能使用）
+    if (code === POSTGRES_ERROR_CODES.INSUFFICIENT_RESOURCES) {
+      return new ValidationError('資源不足', {
+        code,
+        hint,
+        originalError: error
+      })
+    }
+
+    // 其他資料庫錯誤
+    return new DatabaseError(message || 'RPC 函數執行失敗', {
+      code,
+      hint,
+      originalError: error
+    })
+  }
 }
+
+/**
+ * PostgreSQL 錯誤碼常數
+ *
+ * 參考：https://www.postgresql.org/docs/current/errcodes-appendix.html
+ */
+export const POSTGRES_ERROR_CODES = {
+  // ===== 完整性約束違反 (Class 23) =====
+  /** 23505: 唯一約束違反（duplicate key value） */
+  UNIQUE_VIOLATION: '23505',
+
+  /** 23503: 外鍵約束違反（foreign key violation） */
+  FOREIGN_KEY_VIOLATION: '23503',
+
+  /** 23514: 檢查約束違反（check constraint violation） */
+  CHECK_VIOLATION: '23514',
+
+  /** 23502: 非空約束違反（not-null constraint violation） */
+  NOT_NULL_VIOLATION: '23502',
+
+  // ===== 自訂錯誤碼 (Class P0) =====
+  // 使用 RAISE EXCEPTION ... USING ERRCODE = 'P0001'
+
+  /** P0001: 刊登配額已達上限 */
+  QUOTA_EXCEEDED: 'P0001',
+
+  /** P0002: 重複刊登（相同物品已存在活躍刊登） */
+  DUPLICATE_LISTING: 'P0002',
+
+  /** P0003: 資源不足（保留，未來可能使用） */
+  INSUFFICIENT_RESOURCES: 'P0003'
+} as const

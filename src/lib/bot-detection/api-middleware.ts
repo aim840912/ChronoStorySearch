@@ -25,7 +25,7 @@ import {
   withErrorHandler,
   ErrorHandlerOptions,
 } from '@/lib/middleware/error-handler'
-import { fixedWindowRateLimit } from './rate-limiter'
+import { slidingWindowRateLimit } from './rate-limiter'
 import { detectAbnormalBehavior } from './behavior-detector'
 import { getClientIP } from './user-agent-detector'
 import { BotDetectionOptions } from './types'
@@ -59,9 +59,9 @@ async function checkBotDetection(
   const ip = getClientIP(request.headers)
   const path = request.nextUrl.pathname
 
-  // 1. Rate Limiting 檢查
+  // 1. Rate Limiting 檢查（使用滑動窗口算法）
   if (enableRateLimit) {
-    const result = await fixedWindowRateLimit({
+    const result = await slidingWindowRateLimit({
       limit: rateLimit.limit,
       window: rateLimit.window,
       identifier: ip,
