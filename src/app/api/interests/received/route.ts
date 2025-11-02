@@ -43,7 +43,8 @@ async function handleGET(_request: NextRequest, user: User) {
         status
       ),
       users!buyer_id (
-        discord_username
+        discord_username,
+        discord_id
       )
     `)
     .eq('listings.user_id', user.id)
@@ -72,7 +73,8 @@ async function handleGET(_request: NextRequest, user: User) {
     updated_at: interest.updated_at,
     listing: interest.listings,
     buyer: {
-      discord_username: interest.users?.discord_username || 'Unknown'
+      discord_username: interest.users?.discord_username || 'Unknown',
+      discord_id: interest.users?.discord_id || null
     }
   }))
 

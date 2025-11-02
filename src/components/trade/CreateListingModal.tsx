@@ -48,6 +48,7 @@ interface CreateListingRequest {
   wanted_items?: WantedItem[]
   webhook_url?: string
   item_stats?: ItemStats
+  notes?: string | null  // 刊登備註（選填）
 }
 
 export function CreateListingModal({
@@ -63,6 +64,7 @@ export function CreateListingModal({
   const [quantity, setQuantity] = useState(1)
   const [price, setPrice] = useState<number | null>(null)
   const [ingameName, setIngameName] = useState('')  // 遊戲內角色名（選填）
+  const [notes, setNotes] = useState('')  // 刊登備註（選填）
   const [webhookUrl, setWebhookUrl] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -252,7 +254,8 @@ export function CreateListingModal({
       trade_type: tradeType,
       item_id: selectedItem.itemId,
       quantity,
-      ingame_name: ingameName.trim() || null  // Discord 由後端自動處理
+      ingame_name: ingameName.trim() || null,  // Discord 由後端自動處理
+      notes: notes.trim() || null  // 刊登備註（選填）
     }
 
     // 根據交易類型添加對應欄位
@@ -323,6 +326,7 @@ export function CreateListingModal({
       setQuantity(1)
       setPrice(null)
       setIngameName('')
+      setNotes('')
       setWebhookUrl('')
       setItemStats(null)
       setShowStatsInput(false)
@@ -692,6 +696,30 @@ export function CreateListingModal({
           <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
             {t('listing.ingameNameHint')}
           </p>
+        </div>
+
+        {/* 刊登備註（選填） */}
+        <div className="mb-6">
+          <label className="block mb-2 font-semibold text-sm text-gray-700 dark:text-gray-300">
+            {t('listing.notes.label')}
+            <span className="text-gray-400 ml-1 text-xs">({t('listing.optional')})</span>
+          </label>
+          <textarea
+            value={notes}
+            onChange={(e) => setNotes(e.target.value)}
+            placeholder={t('listing.notes.placeholder')}
+            maxLength={500}
+            rows={3}
+            className="w-full px-4 py-2 border rounded-lg
+                       dark:bg-gray-800 dark:border-gray-600
+                       focus:ring-2 focus:ring-blue-500 focus:border-transparent
+                       resize-none"
+          />
+          <div className="flex justify-between items-center mt-1">
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              {t('listing.notes.counter', { current: notes.length, max: 500 })}
+            </p>
+          </div>
         </div>
 
         {/* 錯誤訊息 */}

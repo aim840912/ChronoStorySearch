@@ -110,6 +110,7 @@ async function handleGET(
       : null,
     stats_grade: listing.stats_grade || null,
     stats_score: listing.stats_score || null,
+    notes: listing.notes || null,
     seller: {
       discord_username: listing.users?.discord_username || 'Unknown',
       reputation_score: listing.users?.discord_profiles?.reputation_score ?? 0

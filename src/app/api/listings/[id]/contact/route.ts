@@ -1,5 +1,6 @@
 import { NextRequest } from 'next/server'
-import { withAuthAndError, User } from '@/lib/middleware/api-middleware'
+import { User } from '@/lib/middleware/api-middleware'
+import { withAuthAndBotDetection } from '@/lib/bot-detection/api-middleware'
 import { requireTradingEnabled } from '@/lib/middleware/trading-middleware'
 import { success } from '@/lib/api-response'
 import { ValidationError, NotFoundError } from '@/lib/errors'
@@ -252,14 +253,18 @@ function getSecondsUntilMidnight(): number {
   return Math.floor((midnight.getTime() - now.getTime()) / 1000)
 }
 
-// 🔒 需要認證：使用 requireTradingEnabled + withAuthAndError
+// 🔒 需要認證 + Bot Detection：使用 requireTradingEnabled + withAuthAndBotDetection
 export const GET = requireTradingEnabled(
-  withAuthAndError(
+  withAuthAndBotDetection(
     async (request: NextRequest, user: User, context: { params: Promise<{ id: string }> }) =>
       handleGET(request, user, context),
     {
       module: 'ListingContactAPI',
-      enableAuditLog: true
+      enableAuditLog: true,
+      botDetection: {
+        enableRateLimit: true,
+        rateLimit: { limit: 20, window: 3600 } // 20次/小時
+      }
     }
   )
 )

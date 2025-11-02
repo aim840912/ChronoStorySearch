@@ -80,6 +80,8 @@ interface ListingDetail {
   is_own_listing: boolean
   // 裝備屬性
   item_stats?: ItemStats | null
+  // 刊登備註
+  notes?: string | null
 }
 
 interface ContactInfo {
@@ -218,7 +220,9 @@ export function ListingDetailModal({
         return
       }
 
-      toast.success(t('listing.registerInterestSuccess'))
+      if (listing) {
+        toast.success(t(`listing.registerInterestSuccess.${listing.trade_type}`))
+      }
       setInterestMessage('')
       onInterestRegistered?.()
       onClose()
@@ -415,6 +419,16 @@ export function ListingDetailModal({
               </div>
             )}
 
+            {/* 刊登備註 */}
+            {listing.notes && (
+              <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
+                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.notes')}</h3>
+                <p className="text-gray-700 dark:text-gray-300 whitespace-pre-wrap break-words">
+                  {listing.notes}
+                </p>
+              </div>
+            )}
+
             {/* 賣家資訊與聯絡方式 */}
             <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
               <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.sellerInfo')}</h3>
@@ -545,14 +559,16 @@ export function ListingDetailModal({
               </div>
             </div>
 
-            {/* 登記購買意向 */}
+            {/* 登記交易意向 */}
             {(!listing.is_own_listing || process.env.NODE_ENV === 'development') && (
               <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
-                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.registerInterest')}</h3>
+                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">
+                  {t(`listing.registerInterest.${listing.trade_type}`)}
+                </h3>
                 <textarea
                   value={interestMessage}
                   onChange={(e) => setInterestMessage(e.target.value)}
-                  placeholder={t('listing.messageToSeller')}
+                  placeholder={t(`listing.messageToSeller.${listing.trade_type}`)}
                   className="w-full p-3 border rounded-lg dark:border-gray-600
                              bg-white dark:bg-gray-700 text-gray-900 dark:text-white
                              placeholder-gray-400 dark:placeholder-gray-500
@@ -570,7 +586,7 @@ export function ListingDetailModal({
                              hover:bg-blue-600 transition-colors
                              disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {isRegisteringInterest ? t('listing.registering') : t('listing.registerInterestBtn')}
+                  {isRegisteringInterest ? t('listing.registering') : t(`listing.registerInterestBtn.${listing.trade_type}`)}
                 </button>
               </div>
             )}

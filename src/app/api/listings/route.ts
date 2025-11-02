@@ -13,7 +13,7 @@ import { checkAccountAge, checkServerMembershipWithCache } from '@/lib/services/
 import { getSystemSettings, LISTING_CONSTRAINTS } from '@/lib/config/system-config'
 import { validateWebhookUrlOrThrow } from '@/lib/validation/webhook'
 import { encryptWebhookUrl } from '@/lib/crypto/webhook-encryption'
-import { validateInGameName } from '@/lib/validation/text-validation'
+import { validateInGameName, validateMessage } from '@/lib/validation/text-validation'
 import { invalidateMarketCache } from '@/lib/cache/market-cache'
 
 // Discord 驗證配置
@@ -135,7 +135,8 @@ async function handlePOST(request: NextRequest, user: User) {
     wanted_items,  // 新：想要物品陣列
     ingame_name,   // 新：遊戲內角色名（選填）
     webhook_url,
-    item_stats
+    item_stats,
+    notes          // 新：刊登備註（選填）
   } = data
 
   if (!trade_type || !['sell', 'buy', 'exchange'].includes(trade_type)) {
@@ -159,6 +160,18 @@ async function handlePOST(request: NextRequest, user: User) {
   }
 
   const sanitizedIngameName = validateInGameName(ingame_name)
+
+  // 驗證刊登備註（選填，防止 XSS 攻擊，最多 500 字）
+  let sanitizedNotes: string | null = null
+  if (notes !== undefined && notes !== null) {
+    if (typeof notes !== 'string') {
+      throw new ValidationError('notes 必須是字串')
+    }
+    if (notes.length > 500) {
+      throw new ValidationError('備註最多 500 字元')
+    }
+    sanitizedNotes = validateMessage(notes) // 使用現有的驗證函數（防 XSS）
+  }
 
   // 驗證 Webhook URL（防止 SSRF 攻擊）
   validateWebhookUrlOrThrow(webhook_url)
@@ -300,7 +313,8 @@ async function handlePOST(request: NextRequest, user: User) {
     p_seller_discord_id: user.discord_id,
     p_webhook_url: encryptedWebhookUrl, // 使用加密版本
     p_item_stats: validatedStats ? JSON.stringify(validatedStats) : null,
-    p_wanted_items: trade_type === 'exchange' && wanted_items ? JSON.stringify(wanted_items) : null,
+    p_wanted_items: trade_type === 'exchange' && wanted_items ? wanted_items : null,
+    p_notes: sanitizedNotes, // ✅ 新增：刊登備註（選填）
     p_max_listings: maxActiveListings
   })
 

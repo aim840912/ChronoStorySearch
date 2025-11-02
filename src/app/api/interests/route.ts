@@ -1,5 +1,6 @@
 import { NextRequest } from 'next/server'
 import { withAuthAndError, User } from '@/lib/middleware/api-middleware'
+import { withAuthAndBotDetection } from '@/lib/bot-detection/api-middleware'
 import { requireTradingEnabled } from '@/lib/middleware/trading-middleware'
 import { success, created } from '@/lib/api-response'
 import { ValidationError, NotFoundError, DatabaseError } from '@/lib/errors'
@@ -83,7 +84,7 @@ async function handlePOST(request: NextRequest, user: User) {
   // 2. 驗證刊登存在且為 active 狀態
   const { data: listing, error: fetchError } = await supabaseAdmin
     .from('listings')
-    .select('id, user_id, status, webhook_url, item_id')
+    .select('id, user_id, status, webhook_url, item_id, trade_type')
     .eq('id', listing_id)
     .is('deleted_at', null)
     .single()
@@ -196,6 +197,7 @@ async function handlePOST(request: NextRequest, user: User) {
         {
           listingId: listing.id,
           itemName: `物品 ID: ${listing.item_id}`,
+          tradeType: listing.trade_type,
           buyer: {
             username: user.discord_username || user.discord_id,
             reputation: buyerProfile?.reputation_score
@@ -237,8 +239,12 @@ export const GET = requireTradingEnabled(
 )
 
 export const POST = requireTradingEnabled(
-  withAuthAndError(handlePOST, {
+  withAuthAndBotDetection(handlePOST, {
     module: 'InterestAPI',
-    enableAuditLog: true
+    enableAuditLog: true,
+    botDetection: {
+      enableRateLimit: true,
+      rateLimit: { limit: 30, window: 3600 } // 30次/小時
+    }
   })
 )

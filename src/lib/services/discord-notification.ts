@@ -14,6 +14,7 @@ export type NotificationType = 'contact_view' | 'interest_received' | 'listing_e
 interface NotificationData {
   listingId: number
   itemName: string
+  tradeType?: 'sell' | 'buy' | 'exchange'
   buyer?: {
     username: string
     reputation?: number
@@ -92,10 +93,28 @@ function buildEmbed(type: NotificationType, data: NotificationData) {
         footer: { text: `楓之谷交易系統 | 刊登 ID: ${data.listingId}` }
       }
 
-    case 'interest_received':
+    case 'interest_received': {
+      // 根據交易類型調整標題和描述
+      const tradeType = data.tradeType || 'sell'
+      const titles = {
+        sell: '【購買意向通知】',
+        buy: '【出售意向通知】',
+        exchange: '【交換意向通知】'
+      }
+      const descriptions = {
+        sell: '有買家對你的刊登表達了購買意向',
+        buy: '有賣家對你的收購刊登表達了出售意向',
+        exchange: '有人對你的交換刊登表達了交換意向'
+      }
+      const userLabels = {
+        sell: '買家',
+        buy: '賣家',
+        exchange: '對方'
+      }
+
       return {
-        title: '【購買意向通知】',
-        description: '有買家對你的刊登表達了購買意向',
+        title: titles[tradeType],
+        description: descriptions[tradeType],
         color: 0x10B981,  // 綠色 (Tailwind green-500)
         fields: [
           {
@@ -104,7 +123,7 @@ function buildEmbed(type: NotificationType, data: NotificationData) {
             inline: true
           },
           {
-            name: '買家',
+            name: userLabels[tradeType],
             value: data.buyer?.username || '匿名',
             inline: true
           },
@@ -117,6 +136,7 @@ function buildEmbed(type: NotificationType, data: NotificationData) {
         timestamp: new Date().toISOString(),
         footer: { text: `楓之谷交易系統 | 刊登 ID: ${data.listingId}` }
       }
+    }
 
     case 'listing_expiring':
       return {
