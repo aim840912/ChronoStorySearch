@@ -115,8 +115,13 @@ export function InterestsModal({ isOpen, onClose }: InterestsModalProps) {
         const data = await response.json()
 
         // 除錯：輸出購買意向資料和狀態值
-        console.log(`[InterestsModal] ${activeTab} 資料:`, data.data)
-        console.log(`[InterestsModal] Status 值分佈:`, data.data?.map((i: MyInterest | ReceivedInterest) => i.status))
+        clientLogger.debug(`[InterestsModal] ${activeTab} 資料`, {
+          data: data.data,
+          count: data.data?.length
+        })
+        clientLogger.debug('[InterestsModal] Status 值分佈', {
+          statuses: data.data?.map((i: MyInterest | ReceivedInterest) => i.status)
+        })
 
         if (!response.ok || !data.success) {
           setError(data.error || t('interest.loadError'))

@@ -494,7 +494,7 @@
   "listing.notes": "刊登備註",
   "listing.notes.label": "備註說明",
   "listing.notes.placeholder": "選填：可以描述物品狀態、交易條件等（最多 500 字）",
-  "listing.notes.counter": "{{current}}/{{max}} 字元",
+  "listing.notes.counter": "{current}/{max} 字元",
   "listing.itemStats": "裝備素質",
   "listing.itemStatsOptional": "物品屬性 (選填)",
   "listing.itemStatsDescription": "填寫物品的實際屬性資訊，幫助買家更準確地了解物品素質",

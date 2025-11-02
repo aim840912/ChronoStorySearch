@@ -521,7 +521,7 @@ export default function Home() {
           onSearchChange={search.setSearchTerm}
           searchType={searchType}
           onSearchTypeChange={setSearchType}
-          suggestions={filterMode === 'market-listings' ? [] : suggestions}
+          suggestions={suggestions.slice(0, 10)}
           showSuggestions={search.showSuggestions}
           onFocus={() => search.setShowSuggestions(true)}
           onSelectSuggestion={selectSuggestion}

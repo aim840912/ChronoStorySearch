@@ -494,7 +494,7 @@
   "listing.notes": "Listing Notes",
   "listing.notes.label": "Notes",
   "listing.notes.placeholder": "Optional: Describe item condition, trade terms, etc. (Max 500 characters)",
-  "listing.notes.counter": "{{current}}/{{max}} characters",
+  "listing.notes.counter": "{current}/{max} characters",
   "listing.seller": "Seller",
   "listing.sellerInfo": "Seller Info",
   "listing.reputationScore": "Reputation",

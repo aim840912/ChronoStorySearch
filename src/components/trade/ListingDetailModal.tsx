@@ -4,35 +4,20 @@ import { useState, useEffect } from 'react'
 import { BaseModal } from '@/components/common/BaseModal'
 import { useDataManagement } from '@/hooks/useDataManagement'
 import { useItemsData } from '@/hooks/useItemsData'
-import { getItemImageUrl } from '@/lib/image-utils'
 import { useAuth } from '@/contexts/AuthContext'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { ExchangeMatchModal } from './ExchangeMatchModal'
-import { StatsComparisonCard } from './StatsComparisonCard'
 import type { ItemStats } from '@/types/item-stats'
-import type { WantedItem, ExtendedUniqueItem } from '@/types'
+import type { WantedItem } from '@/types'
 import { clientLogger } from '@/lib/logger'
 import { toast } from 'react-hot-toast'
-
-/**
- * 遮蔽用戶名中間部分
- * 用於在查看聯絡方式前提供部分資訊
- *
- * @example
- * SomeUser → S***r
- * John → J**n
- * AB → A*
- * MapleStoryFan123 → M***3
- */
-function maskUsername(username: string): string {
-  if (username.length <= 2) {
-    return username.charAt(0) + '*'
-  }
-  if (username.length <= 4) {
-    return username.charAt(0) + '**' + username.charAt(username.length - 1)
-  }
-  return username.charAt(0) + '***' + username.charAt(username.length - 1)
-}
+import { ListingItemInfo } from './detail/ListingItemInfo'
+import { ExchangeInfoCard } from './detail/ExchangeInfoCard'
+import { ListingItemStats } from './detail/ListingItemStats'
+import { ListingNotes } from './detail/ListingNotes'
+import { SellerInfoCard } from './detail/SellerInfoCard'
+import { InterestRegistrationCard } from './detail/InterestRegistrationCard'
+import { ExchangeMatchCard } from './detail/ExchangeMatchCard'
 
 /**
  * 刊登詳情 Modal
@@ -240,17 +225,6 @@ export function ListingDetailModal({
 
   const item = listing ? getItemById(listing.item_id) : null
 
-  // 根據語言選擇物品名稱
-  const getDisplayItemName = (item: ExtendedUniqueItem | null | undefined, itemId?: number) => {
-    if (!item) {
-      return itemId ? (language === 'zh-TW' ? `物品 #${itemId}` : `Item #${itemId}`) : (language === 'zh-TW' ? '未知物品' : 'Unknown Item')
-    }
-    if (language === 'zh-TW') {
-      return item.chineseItemName || item.itemName || (itemId ? `物品 #${itemId}` : '未知物品')
-    }
-    return item.itemName || (itemId ? `Item #${itemId}` : 'Unknown Item')
-  }
-
   return (
     <>
     <BaseModal isOpen={isOpen} onClose={onClose} maxWidth="max-w-3xl" zIndex={zIndex}>
@@ -281,335 +255,63 @@ export function ListingDetailModal({
           <div className="space-y-6">
             {/* 交換模式：雙向箭頭顯示 */}
             {listing.trade_type === 'exchange' ? (
-              <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
-                <h3 className="font-semibold mb-4 text-gray-900 dark:text-white">{t('listing.exchangeFor')}</h3>
-
-                {/* 我提供的物品 */}
-                <div className="mb-4">
-                  <div className="flex items-center gap-2 mb-2 text-purple-700 dark:text-purple-300">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                    </svg>
-                    <span className="font-medium">{t('listing.iProvide')}</span>
-                  </div>
-                  <div className="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
-                    <div className="flex items-center gap-3">
-                      <img
-                        src={getItemImageUrl(listing.item_id)}
-                        alt={item?.itemName || String(listing.item_id)}
-                        className="w-16 h-16 object-contain"
-                        onError={(e) => {
-                          e.currentTarget.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="64" height="64"%3E%3Crect width="64" height="64" fill="%23ddd"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999"%3E?%3C/text%3E%3C/svg%3E'
-                        }}
-                      />
-                      <div className="flex-1">
-                        <p className="text-lg font-semibold text-gray-900 dark:text-white">
-                          {getDisplayItemName(item, listing.item_id)}
-                        </p>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">
-                          {t('listing.quantity')}: {listing.quantity}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* 雙向箭頭 */}
-                <div className="flex justify-center my-3">
-                  <svg className="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                  </svg>
-                </div>
-
-                {/* 我想要的物品 */}
-                <div>
-                  <div className="flex items-center gap-2 mb-2 text-purple-700 dark:text-purple-300">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                    <span className="font-medium">{t('listing.iWant')}</span>
-                  </div>
-                  {listing.wanted_items && listing.wanted_items.length > 0 ? (
-                    <div className="space-y-2">
-                      {listing.wanted_items.map((wantedItem, index) => {
-                        const wantedItemData = getItemById(wantedItem.item_id)
-                        return (
-                          <div key={index} className="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
-                            <p className="font-semibold text-gray-900 dark:text-white">
-                              {getDisplayItemName(wantedItemData, wantedItem.item_id)}
-                            </p>
-                            <p className="text-sm text-gray-600 dark:text-gray-400">
-                              {t('listing.quantity')}: {wantedItem.quantity}
-                            </p>
-                          </div>
-                        )
-                      })}
-                    </div>
-                  ) : (
-                    <div className="p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-800">
-                      <p className="text-sm text-yellow-800 dark:text-yellow-200">
-                        {language === 'zh-TW' ? '此交換刊登尚未設定想要的物品' : 'No wanted items specified for this exchange listing'}
-                      </p>
-                    </div>
-                  )}
-                </div>
-
-                {/* 統計資訊 */}
-                <div className="flex gap-4 mt-4 pt-4 border-t border-gray-200 dark:border-gray-700 text-sm text-gray-500 dark:text-gray-400">
-                  <span>{t('listing.viewCount')}: {listing.view_count}</span>
-                  <span>{t('listing.interestCount')}: {listing.interest_count}</span>
-                </div>
-              </div>
+              <ExchangeInfoCard
+                offeredItem={item}
+                offeredItemId={listing.item_id}
+                offeredQuantity={listing.quantity}
+                wantedItems={listing.wanted_items}
+                viewCount={listing.view_count}
+                interestCount={listing.interest_count}
+                getItemById={getItemById}
+              />
             ) : (
               /* 買賣模式：一般物品資訊 */
-              <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
-                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.itemInfo')}</h3>
-                <div className="flex items-center gap-4">
-                  <img
-                    src={getItemImageUrl(listing.item_id)}
-                    alt={item?.itemName || String(listing.item_id)}
-                    className="w-20 h-20 object-contain"
-                    onError={(e) => {
-                      e.currentTarget.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="80" height="80"%3E%3Crect width="80" height="80" fill="%23ddd"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999"%3E?%3C/text%3E%3C/svg%3E'
-                    }}
-                  />
-                  <div className="flex-1">
-                    <p className="text-xl font-semibold text-gray-900 dark:text-white">
-                      {getDisplayItemName(item, listing.item_id)}
-                    </p>
-                    <p className="text-gray-600 dark:text-gray-400">{t('listing.quantity')}: {listing.quantity}</p>
-
-                    {/* 價格 */}
-                    {listing.price && (
-                      <p className="mt-2 text-2xl font-bold text-blue-600 dark:text-blue-400">
-                        {listing.price.toLocaleString()} {t('listing.meso')}
-                      </p>
-                    )}
-
-                    {/* 交易類型標籤 */}
-                    <div className="mt-2">
-                      <span className={`inline-block px-2 py-1 text-xs rounded ${
-                        listing.trade_type === 'sell' ? 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400' :
-                        'bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400'
-                      }`}>
-                        {listing.trade_type === 'sell' ? t('trade.type.sell') : t('trade.type.buy')}
-                      </span>
-                    </div>
-
-                    {/* 統計資訊 */}
-                    <div className="flex gap-4 mt-2 text-sm text-gray-500 dark:text-gray-400">
-                      <span>{t('listing.viewCount')}: {listing.view_count}</span>
-                      <span>{t('listing.interestCount')}: {listing.interest_count}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <ListingItemInfo
+                item={item}
+                itemId={listing.item_id}
+                quantity={listing.quantity}
+                price={listing.price}
+                tradeType={listing.trade_type}
+                viewCount={listing.view_count}
+                interestCount={listing.interest_count}
+              />
             )}
 
             {/* 裝備屬性 */}
-            {listing.item_stats && (
-              <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
-                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.itemStats')}</h3>
-                <StatsComparisonCard
-                  stats={listing.item_stats}
-                  locale={language}
-                  showMaxValues={false}
-                  compact={true}
-                />
-              </div>
-            )}
+            <ListingItemStats
+              itemStats={listing.item_stats}
+              locale={language}
+            />
 
             {/* 刊登備註 */}
-            {listing.notes && (
-              <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
-                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.notes')}</h3>
-                <p className="text-gray-700 dark:text-gray-300 whitespace-pre-wrap break-words">
-                  {listing.notes}
-                </p>
-              </div>
-            )}
+            <ListingNotes notes={listing.notes} />
 
             {/* 賣家資訊與聯絡方式 */}
-            <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
-              <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.sellerInfo')}</h3>
-
-              {/* 賣家資訊與聯絡方式按鈕 - 左右排列 */}
-              <div className="flex items-start gap-3 mb-4">
-                {/* 左側：頭像 + 用戶名/信譽 */}
-                <div className="flex items-center gap-3 flex-1 min-w-0">
-                  <div className={`w-12 h-12 rounded-full flex items-center justify-center text-white text-lg font-semibold flex-shrink-0 ${
-                    listing.is_own_listing || contactInfo ? 'bg-blue-500' : 'bg-gray-400'
-                  }`}>
-                    {(contactInfo?.discord || listing.seller.discord_username).charAt(0).toUpperCase()}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-gray-900 dark:text-white truncate">
-                      {listing.is_own_listing
-                        ? listing.seller.discord_username  // 自己的刊登：直接顯示完整名稱
-                        : contactInfo
-                          ? contactInfo.discord  // 已查看：顯示完整名稱
-                          : maskUsername(listing.seller.discord_username)  // 未查看：遮蔽名稱
-                      }
-                    </p>
-                    {!listing.is_own_listing && !contactInfo && (
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                        點擊查看完整資訊
-                      </p>
-                    )}
-                    {/* 暫時隱藏信譽分數 - 2025-10-31
-                    <div className="flex items-center gap-1 mt-1">
-                      <svg className="w-4 h-4 text-yellow-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                        {t('listing.reputationScore')}: {listing.seller.reputation_score}
-                      </span>
-                    </div>
-                    */}
-                  </div>
-                </div>
-
-                {/* 右側：查看聯絡方式按鈕 + 展開內容 */}
-                {(!listing.is_own_listing || process.env.NODE_ENV === 'development') && (
-                  <div className="flex flex-col flex-shrink-0">
-                    <button
-                      onClick={handleToggleContact}
-                      disabled={isLoadingContact}
-                      className="px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-lg
-                                 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors
-                                 disabled:opacity-50 disabled:cursor-not-allowed
-                                 flex items-center justify-center gap-2 whitespace-nowrap flex-shrink-0"
-                    >
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                      <span className="text-sm">
-                        {isLoadingContact
-                          ? t('listing.loadingContact')
-                          : listing.is_own_listing
-                            ? t('listing.viewContact') + ' (' + t('listing.ownListing') + ')'
-                            : contactInfo
-                              ? t('listing.viewContact') + ` (${contactInfo.quota_remaining}/30)`
-                              : '查看完整聯絡方式 (消耗配額)'
-                        }
-                      </span>
-                      {contactInfo && (
-                        <svg
-                          className={`w-5 h-5 transition-transform ${showContact ? 'rotate-180' : ''}`}
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      )}
-                    </button>
-
-                    {/* 摺疊式聯絡方式內容 - 移到按鈕下方 */}
-                    {contactInfo && showContact && (
-                      <div className="mt-2 space-y-3 animate-in fade-in slide-in-from-top-2">
-                        {/* Discord 聯絡方式 */}
-                        <div className="flex items-start gap-3 p-3 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                          <svg className="w-5 h-5 text-blue-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
-                          </svg>
-                          <div className="flex-1">
-                            <div className="text-sm text-gray-500 dark:text-gray-400">Discord</div>
-                            <div className="font-medium text-gray-900 dark:text-white">{contactInfo.discord}</div>
-                            {contactInfo.discordId && (
-                              <div className="mt-2 flex gap-2">
-                                <a
-                                  href={`discord://users/${contactInfo.discordId}`}
-                                  className="text-sm text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline"
-                                >
-                                  {t('listing.openInDiscord')}
-                                </a>
-                                <span className="text-sm text-gray-400">|</span>
-                                <a
-                                  href={`https://discord.com/users/${contactInfo.discordId}`}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-sm text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline"
-                                >
-                                  {t('listing.openInWeb')}
-                                </a>
-                              </div>
-                            )}
-                          </div>
-                        </div>
-
-                        {/* 遊戲內角色名（如果有） */}
-                        {contactInfo.ingame && (
-                          <div className="flex items-start gap-3 p-3 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                            <svg className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
-                            </svg>
-                            <div className="flex-1">
-                              <div className="text-sm text-gray-500 dark:text-gray-400">
-                                {t('listing.ingameName')}
-                              </div>
-                              <div className="font-medium text-gray-900 dark:text-white">{contactInfo.ingame}</div>
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-            </div>
+            <SellerInfoCard
+              sellerUsername={listing.seller.discord_username}
+              isOwnListing={listing.is_own_listing}
+              contactInfo={contactInfo}
+              showContact={showContact}
+              isLoadingContact={isLoadingContact}
+              onToggleContact={handleToggleContact}
+            />
 
             {/* 登記交易意向 */}
             {(!listing.is_own_listing || process.env.NODE_ENV === 'development') && (
-              <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
-                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">
-                  {t(`listing.registerInterest.${listing.trade_type}`)}
-                </h3>
-                <textarea
-                  value={interestMessage}
-                  onChange={(e) => setInterestMessage(e.target.value)}
-                  placeholder={t(`listing.messageToSeller.${listing.trade_type}`)}
-                  className="w-full p-3 border rounded-lg dark:border-gray-600
-                             bg-white dark:bg-gray-700 text-gray-900 dark:text-white
-                             placeholder-gray-400 dark:placeholder-gray-500
-                             focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  rows={3}
-                  maxLength={500}
-                />
-                <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                  {t('listing.characterLimit', { current: interestMessage.length, max: 500 })}
-                </p>
-                <button
-                  onClick={handleRegisterInterest}
-                  disabled={isRegisteringInterest}
-                  className="mt-3 w-full px-4 py-2 bg-blue-500 text-white rounded-lg
-                             hover:bg-blue-600 transition-colors
-                             disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {isRegisteringInterest ? t('listing.registering') : t(`listing.registerInterestBtn.${listing.trade_type}`)}
-                </button>
-              </div>
+              <InterestRegistrationCard
+                tradeType={listing.trade_type}
+                message={interestMessage}
+                onMessageChange={setInterestMessage}
+                onSubmit={handleRegisterInterest}
+                isSubmitting={isRegisteringInterest}
+              />
             )}
 
             {/* 交換匹配按鈕 */}
             {listing.trade_type === 'exchange' && (!listing.is_own_listing || process.env.NODE_ENV === 'development') && (
-              <div className="border rounded-lg p-4 dark:border-gray-700 bg-white dark:bg-gray-800">
-                <h3 className="font-semibold mb-3 text-gray-900 dark:text-white">{t('listing.exchangeMatch')}</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                  {t('listing.exchangeMatchDesc')}
-                </p>
-                <button
-                  onClick={() => setExchangeMatchOpen(true)}
-                  className="w-full px-4 py-2 bg-purple-500 text-white rounded-lg
-                             hover:bg-purple-600 transition-colors
-                             flex items-center justify-center gap-2"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                  </svg>
-                  {t('listing.viewExchangeMatch')}
-                </button>
-              </div>
+              <ExchangeMatchCard
+                onViewMatch={() => setExchangeMatchOpen(true)}
+              />
             )}
 
             {/* 自己的刊登提示 */}

@@ -147,7 +147,7 @@ export function MarketListItem({ listing, onClick }: MarketListItemProps) {
 
       {/* 3. 物品名稱 */}
       <div className="min-w-0 text-center">
-        <h3 className="font-medium text-gray-900 dark:text-gray-100 truncate text-sm md:text-base">
+        <h3 className="font-medium text-gray-900 dark:text-gray-100 line-clamp-2 text-sm md:text-base">
           {getItemName(listing.item)}
         </h3>
       </div>
