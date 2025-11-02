@@ -129,12 +129,68 @@
       "Bash(dmesg:*)",
       "WebFetch(domain:upstash.com)",
       "WebFetch(domain:supabase.com)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:andrewford.co.nz)",
+      "WebFetch(domain:www.pascal-poredda.com)",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File .claude/hooks/notify-toast.ps1 -Title \"測試通知\" -Message \"Claude Code 通知系統測試\")",
+      "WebFetch(domain:stackoverflow.com)",
+      "WebFetch(domain:learn-powershell.net)",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File .claude/hooks/notify-toast.ps1 -Title \"測試增強通知\" -Message \"這個通知應該會彈出且無音效\")",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File .claude/hooks/notify-toast.ps1 -Title \"診斷測試\" -Message \"這是診斷測試通知\")",
+      "Bash(powershell.exe -Command \"Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show(''測試通知'', ''Claude Code'')\")",
+      "Bash(psql:*)",
+      "Bash(git fetch:*)"
     ],
     "deny": [],
     "ask": [
       "Bash(git commit:*)",
       "Bash(git push:*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -ExecutionPolicy Bypass -File .claude/hooks/notify-toast.ps1 -Title 'Bash 命令完成' -Message '命令執行成功'"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -ExecutionPolicy Bypass -File .claude/hooks/notify-toast.ps1 -Title 'Claude Code' -Message '會話已開始'"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -ExecutionPolicy Bypass -File .claude/hooks/notify-toast.ps1 -Title 'Claude Code' -Message '需要您的輸入'"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -ExecutionPolicy Bypass -File .claude/hooks/stop-hook-test.ps1 -Title 'Claude 回答完成' -Message '請查看回答內容'"
+          }
+        ]
+      }
     ]
   },
   "outputStyle": "Explanatory"

@@ -24,6 +24,7 @@ import { MaxListingsCard } from '@/components/admin/MaxListingsCard'
 import { ListingsStatisticsCard } from '@/components/admin/ListingsStatisticsCard'
 import { ListingExpirationCard } from '@/components/admin/ListingExpirationCard'
 import { FreeQuotaCard } from '@/components/admin/FreeQuotaCard'
+import { LoginBannerCard } from '@/components/admin/LoginBannerCard'
 import { clientLogger } from '@/lib/logger'
 
 export default function SystemSettingsPage() {
@@ -109,6 +110,26 @@ export default function SystemSettingsPage() {
       clientLogger.info('維護訊息已更新', { messageLength: message.length })
     } catch (err) {
       clientLogger.error('更新維護訊息失敗', { error: err })
+    }
+  }
+
+  // 處理登入使用者公告開關切換
+  const handleToggleLoginBanner = async (enabled: boolean) => {
+    try {
+      await updateSetting('login_banner_enabled', enabled)
+      clientLogger.info('登入使用者公告狀態已更新', { enabled })
+    } catch (err) {
+      clientLogger.error('更新登入使用者公告狀態失敗', { error: err })
+    }
+  }
+
+  // 處理登入使用者公告訊息更新
+  const handleUpdateLoginBannerMessage = async (message: string) => {
+    try {
+      await updateSetting('login_banner_message', message)
+      clientLogger.info('登入使用者公告訊息已更新', { messageLength: message.length })
+    } catch (err) {
+      clientLogger.error('更新登入使用者公告訊息失敗', { error: err })
     }
   }
 
@@ -294,6 +315,16 @@ export default function SystemSettingsPage() {
                 updatedAt={getSettingUpdatedAt('maintenance_mode')}
                 onToggle={handleToggleMaintenance}
                 onUpdateMessage={handleUpdateMaintenanceMessage}
+                isUpdating={isUpdating}
+              />
+
+              {/* 登入使用者公告卡片 */}
+              <LoginBannerCard
+                enabled={getSettingValue('login_banner_enabled') === true}
+                message={(getSettingValue('login_banner_message') as string) || ''}
+                updatedAt={getSettingUpdatedAt('login_banner_enabled')}
+                onToggle={handleToggleLoginBanner}
+                onUpdateMessage={handleUpdateLoginBannerMessage}
                 isUpdating={isUpdating}
               />
 

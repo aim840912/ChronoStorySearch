@@ -22,6 +22,8 @@ export interface SystemSettings {
   maintenance_message: string
   max_active_listings_per_user: number
   listing_expiration_days: number
+  login_banner_enabled: boolean
+  login_banner_message: string
 }
 
 interface CachedSettings {
@@ -71,7 +73,9 @@ async function fetchSettingsFromDatabase(): Promise<SystemSettings> {
       maintenance_mode: settings.maintenance_mode === true,
       maintenance_message: (typeof settings.maintenance_message === 'string' ? settings.maintenance_message : null) || '系統維護中，請稍後再試',
       max_active_listings_per_user: typeof settings.max_active_listings_per_user === 'number' ? settings.max_active_listings_per_user : 5,
-      listing_expiration_days: typeof settings.listing_expiration_days === 'number' ? settings.listing_expiration_days : 30
+      listing_expiration_days: typeof settings.listing_expiration_days === 'number' ? settings.listing_expiration_days : 30,
+      login_banner_enabled: settings.login_banner_enabled === true,
+      login_banner_message: (typeof settings.login_banner_message === 'string' ? settings.login_banner_message : null) || '市場功能還在測試中，流量爆掉隨時會關'
     }
   } catch (error) {
     dbLogger.error('獲取系統設定時發生錯誤', { error })
@@ -153,6 +157,19 @@ export async function isMaintenanceMode(): Promise<boolean> {
 export async function getMaintenanceMessage(): Promise<string> {
   const settings = await getSystemSettings()
   return settings.maintenance_message
+}
+
+/**
+ * 獲取登入使用者公告 Banner 配置
+ *
+ * @returns { enabled: boolean, message: string }
+ */
+export async function getLoginBannerConfig(): Promise<{ enabled: boolean; message: string }> {
+  const settings = await getSystemSettings()
+  return {
+    enabled: settings.login_banner_enabled,
+    message: settings.login_banner_message
+  }
 }
 
 // =====================================================

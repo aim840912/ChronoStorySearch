@@ -27,12 +27,18 @@ interface SystemStatus {
     enabled: boolean
     message: string
   }
+  loginBanner: {
+    enabled: boolean
+    message: string
+  }
 }
 
 interface UseSystemStatusReturn {
   tradingEnabled: boolean
   maintenanceMode: boolean
   maintenanceMessage: string
+  loginBannerEnabled: boolean
+  loginBannerMessage: string
   isLoading: boolean
   error: string | null
   refetch: () => Promise<void>
@@ -134,6 +140,8 @@ export function useSystemStatus(): UseSystemStatusReturn {
     tradingEnabled: status?.trading?.enabled ?? true, // 預設啟用（容錯）
     maintenanceMode: status?.maintenance?.enabled ?? false,
     maintenanceMessage: status?.maintenance?.message ?? '',
+    loginBannerEnabled: status?.loginBanner?.enabled ?? false,
+    loginBannerMessage: status?.loginBanner?.message ?? '',
     isLoading,
     error,
     refetch: () => fetchStatus(true)

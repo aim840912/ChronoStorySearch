@@ -35,6 +35,10 @@ export async function GET(_request: NextRequest) {
       maintenance: {
         enabled: settings.maintenance_mode,
         message: settings.maintenance_message
+      },
+      loginBanner: {
+        enabled: settings.login_banner_enabled,
+        message: settings.login_banner_message
       }
     },
     '查詢成功'
