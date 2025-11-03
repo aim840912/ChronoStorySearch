@@ -23,13 +23,14 @@ interface FetchListingsParams {
  * 市場刊登資料管理 Hook
  *
  * 職責：
- * - 調用 /api/market/search API
- * - 管理刊登列表資料、分頁、載入和錯誤狀態
+ * - 調用 /api/market/batch API（批次獲取市場刊登 + 用戶資訊）
+ * - 管理刊登列表資料、分頁、用戶資訊、載入和錯誤狀態
  * - 實作簡單的緩存策略（避免相同參數的重複請求）
  * - 提供分頁和篩選控制
+ * - 優化：單一請求取代原本的 2 次調用（/api/auth/me + /api/market/search）
  *
  * @param enabled - 是否啟用此 hook（優化性能，避免不必要的請求）
- * @returns 市場刊登資料和控制方法
+ * @returns 市場刊登資料、用戶資訊和控制方法
  */
 export function useMarketListings({
   enabled
@@ -39,6 +40,8 @@ export function useMarketListings({
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [refreshError, setRefreshError] = useState<string | null>(null) // 專門用於重新整理的錯誤
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [userInfo, setUserInfo] = useState<any | null>(null) // 用戶資訊（從批次 API 返回）
 
   // 用於緩存和防止重複請求
   const lastRequestRef = useRef<string | null>(null)
@@ -150,10 +153,10 @@ export function useMarketListings({
     setError(null)
 
     try {
-      clientLogger.info('[useMarketListings] Fetching listings:', { page, filter, itemIds })
+      clientLogger.info('[useMarketListings] Fetching batch data (listings + user):', { page, filter, itemIds })
 
       const response = await fetch(
-        `/api/market/search?${queryParams.toString()}`,
+        `/api/market/batch?${queryParams.toString()}`,
         {
           credentials: 'include',
           signal: abortControllerRef.current.signal
@@ -163,16 +166,19 @@ export function useMarketListings({
       const data = await response.json()
 
       if (!response.ok || !data.success) {
-        throw new Error(data.error || 'Failed to load market listings')
+        throw new Error(data.error || 'Failed to load market batch data')
       }
 
-      setListings(data.data || [])
-      setPagination(data.pagination || null)
+      // 批次 API 返回 { user, listings, pagination }
+      setListings(data.data.listings || [])
+      setPagination(data.data.pagination || null)
+      setUserInfo(data.data.user || null)
       lastRequestRef.current = requestKey
 
-      clientLogger.info('[useMarketListings] Listings loaded:', {
-        count: data.data?.length || 0,
-        pagination: data.pagination
+      clientLogger.info('[useMarketListings] Batch data loaded:', {
+        listings_count: data.data.listings?.length || 0,
+        pagination: data.data.pagination,
+        user_id: data.data.user?.user_id
       })
     } catch (err: unknown) {
       // 忽略取消的請求
@@ -253,6 +259,7 @@ export function useMarketListings({
     setListings([])
     setPagination(null)
     setError(null)
+    setUserInfo(null)
     lastRequestRef.current = null
   }, [])
 
@@ -278,6 +285,7 @@ export function useMarketListings({
     isLoading,
     error,
     refreshError,
+    userInfo, // 用戶資訊（從批次 API 返回）
     fetchListings,
     loadMore,
     goToPage,

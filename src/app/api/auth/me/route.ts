@@ -116,97 +116,90 @@ interface UserInfoResponse {
  * }
  */
 async function handleGET(request: NextRequest, user: User): Promise<Response> {
-  // 1. 查詢 Discord 個人資料
-  const { data: profile, error: profileError } = await supabaseAdmin
-    .from('discord_profiles')
-    .select('account_created_at, reputation_score, server_roles, profile_privacy')
-    .eq('user_id', user.id)
-    .single()
-
-  if (profileError || !profile) {
-    dbLogger.error('Failed to fetch discord profile', {
-      user_id: user.id,
-      error: profileError
-    })
-    // Discord profile 應該在用戶創建時同時建立
-    // 如果找不到，可能是資料不一致
-    throw new NotFoundError('Discord 個人資料不存在')
-  }
-
-  // 2. 查詢 Session 資訊
-  const { data: session, error: sessionError } = await supabaseAdmin
-    .from('sessions')
-    .select('id, token_expires_at, last_active_at, created_at')
-    .eq('id', user.session_id)
-    .single()
-
-  if (sessionError || !session) {
-    dbLogger.error('Failed to fetch session info', {
-      user_id: user.id,
-      session_id: user.session_id,
-      error: sessionError
-    })
-    throw new DatabaseError('無法取得 session 資訊')
-  }
-
-  // 3. （可選）查詢配額資訊
-  // 注意：這些表可能尚未實作（階段 2），暫時跳過或使用預設值
-  let quotas: UserInfoResponse['quotas'] | undefined = undefined
-
   // 檢查 URL 參數是否請求配額資訊
   const { searchParams } = new URL(request.url)
   const includeQuotas = searchParams.get('include_quotas') === 'true'
 
+  let profile: any
+  let session: any
+  let quotas: UserInfoResponse['quotas'] | undefined = undefined
+
+  // 優化：使用 RPC 函數一次性獲取所有資料（當需要配額時）
   if (includeQuotas) {
-    // 查詢活躍刊登數量
-    const { count: activeListingsCount, error: listingsError } = await supabaseAdmin
-      .from('listings')
-      .select('*', { count: 'exact', head: true })
-      .eq('user_id', user.id)
-      .eq('status', 'active')
-      .is('deleted_at', null)
+    // 使用 RPC 函數：1 次調用替代 4 次獨立查詢
+    // 預期提升：減少 60-75% 查詢時間
+    const { data: rpcResult, error: rpcError } = await supabaseAdmin.rpc(
+      'get_user_info_with_quotas',
+      {
+        p_user_id: user.id,
+        p_session_id: user.session_id
+      }
+    )
 
-    if (listingsError) {
-      dbLogger.error('Failed to fetch active listings count', {
+    if (rpcError || !rpcResult) {
+      dbLogger.error('Failed to fetch user info with quotas (RPC)', {
         user_id: user.id,
-        error: listingsError
+        session_id: user.session_id,
+        error: rpcError
       })
-      // 發生錯誤時使用 0，不阻斷整個請求
+      throw new DatabaseError('無法取得用戶資訊')
     }
 
-    // 查詢今日表達興趣次數（UTC 時區）
-    const todayStart = new Date()
-    todayStart.setUTCHours(0, 0, 0, 0)
-
-    const { count: interestsTodayCount, error: interestsError } = await supabaseAdmin
-      .from('interests')
-      .select('*', { count: 'exact', head: true })
-      .eq('user_id', user.id)
-      .gte('created_at', todayStart.toISOString())
-
-    if (interestsError) {
-      dbLogger.error('Failed to fetch interests today count', {
-        user_id: user.id,
-        error: interestsError
-      })
-      // 發生錯誤時使用 0，不阻斷整個請求
-    }
+    // 解析 RPC 結果
+    profile = rpcResult.profile
+    session = rpcResult.session
+    const rpcQuotas = rpcResult.quotas
 
     // 從系統設定讀取配額上限
     const systemSettings = await getSystemSettings()
 
     quotas = {
-      active_listings_count: activeListingsCount ?? 0,
+      active_listings_count: rpcQuotas.active_listings_count ?? 0,
       max_listings: systemSettings.max_active_listings_per_user,
-      interests_today: interestsTodayCount ?? 0,
+      interests_today: rpcQuotas.interests_today_count ?? 0,
       max_interests_per_day: 100 // 根據路線圖，每日最多 100 次表達興趣
     }
 
-    apiLogger.debug('Quotas retrieved successfully', {
+    apiLogger.debug('Quotas retrieved successfully (RPC)', {
       user_id: user.id,
-      active_listings: activeListingsCount ?? 0,
-      interests_today: interestsTodayCount ?? 0
+      active_listings: rpcQuotas.active_listings_count ?? 0,
+      interests_today: rpcQuotas.interests_today_count ?? 0
     })
+  } else {
+    // 不需要配額時：使用原有的 2 次查詢（避免不必要的 COUNT 計算）
+    // 1. 查詢 Discord 個人資料
+    const { data: profileData, error: profileError } = await supabaseAdmin
+      .from('discord_profiles')
+      .select('account_created_at, reputation_score, server_roles, profile_privacy')
+      .eq('user_id', user.id)
+      .single()
+
+    if (profileError || !profileData) {
+      dbLogger.error('Failed to fetch discord profile', {
+        user_id: user.id,
+        error: profileError
+      })
+      throw new NotFoundError('Discord 個人資料不存在')
+    }
+
+    // 2. 查詢 Session 資訊
+    const { data: sessionData, error: sessionError } = await supabaseAdmin
+      .from('sessions')
+      .select('id, token_expires_at, last_active_at, created_at')
+      .eq('id', user.session_id)
+      .single()
+
+    if (sessionError || !sessionData) {
+      dbLogger.error('Failed to fetch session info', {
+        user_id: user.id,
+        session_id: user.session_id,
+        error: sessionError
+      })
+      throw new DatabaseError('無法取得 session 資訊')
+    }
+
+    profile = profileData
+    session = sessionData
   }
 
   // 4. 組合用戶資訊

@@ -6,7 +6,6 @@ import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 import { useFavoriteMonsters } from '@/hooks/useFavoriteMonsters'
 import { useFavoriteItems } from '@/hooks/useFavoriteItems'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { useAuth } from '@/contexts/AuthContext'
 import { useToast } from '@/hooks/useToast'
 import { useModalManager } from '@/hooks/useModalManager'
 import { useViewHistory } from '@/hooks/useViewHistory'
@@ -25,7 +24,7 @@ import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
 
 export default function Home() {
   const { t, language } = useLanguage()
-  const { user } = useAuth()
+  // 注意：不再需要 user 變數，因為批次 API 已返回所有用戶資訊
 
   // 篩選模式：全部 or 最愛怪物 or 最愛物品
   const [filterMode, setFilterMode] = useState<FilterMode>('all')
@@ -366,36 +365,22 @@ export default function Home() {
     }
   }, [filterMode]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // 當切換到市場模式且用戶已登入時，獲取配額數據
+  // 從批次 API 響應中提取用戶配額（優化：不再需要額外調用 /api/auth/me）
   useEffect(() => {
-    const fetchUserQuota = async () => {
-      if (filterMode === 'market-listings' && user) {
-        try {
-          const response = await fetch('/api/auth/me?include_quotas=true', {
-            credentials: 'include'
-          })
-
-          if (response.ok) {
-            const data = await response.json()
-            if (data.success && data.data.quotas) {
-              setUserQuota({
-                active: data.data.quotas.active_listings_count,
-                max: data.data.quotas.max_listings
-              })
-              clientLogger.debug('[Page] 用戶配額已載入:', data.data.quotas)
-            }
-          }
-        } catch (error) {
-          clientLogger.error('[Page] 獲取用戶配額失敗:', error)
-        }
-      } else {
-        // 離開市場模式或用戶未登入時清除配額
-        setUserQuota(null)
+    if (filterMode === 'market-listings' && marketListings.userInfo) {
+      const quotas = marketListings.userInfo.quotas
+      if (quotas) {
+        setUserQuota({
+          active: quotas.active_listings_count,
+          max: quotas.max_listings
+        })
+        clientLogger.debug('[Page] 用戶配額已從批次 API 載入:', quotas)
       }
+    } else {
+      // 離開市場模式或尚未載入時清除配額
+      setUserQuota(null)
     }
-
-    fetchUserQuota()
-  }, [filterMode, user])
+  }, [filterMode, marketListings.userInfo])
 
   // 市場篩選或搜尋詞變更時，重新載入資料
   useEffect(() => {

@@ -82,12 +82,25 @@ async function handlePOST(request: NextRequest, user: User) {
   }
 
   // 2. 驗證刊登存在且為 active 狀態
-  const { data: listing, error: fetchError } = await supabaseAdmin
-    .from('listings')
-    .select('id, user_id, status, webhook_url, item_id, trade_type')
-    .eq('id', listing_id)
-    .is('deleted_at', null)
-    .single()
+  // 優化：同時查詢 buyer 的 discord_profiles（避免後續重複查詢）
+  const [listingResult, buyerProfileResult] = await Promise.all([
+    // 查詢 listing
+    supabaseAdmin
+      .from('listings')
+      .select('id, user_id, status, webhook_url, item_id, trade_type')
+      .eq('id', listing_id)
+      .is('deleted_at', null)
+      .single(),
+    // 查詢 buyer 的 discord_profiles（用於通知和管理員檢查）
+    supabaseAdmin
+      .from('discord_profiles')
+      .select('server_roles, reputation_score')
+      .eq('user_id', user.id)
+      .single()
+  ])
+
+  const { data: listing, error: fetchError } = listingResult
+  const { data: buyerProfile } = buyerProfileResult
 
   if (fetchError || !listing) {
     apiLogger.warn('刊登不存在', { listing_id, error: fetchError })
@@ -100,17 +113,11 @@ async function handlePOST(request: NextRequest, user: User) {
 
   // 3. 防止對自己的刊登登記意向（管理員除外）
   if (listing.user_id === user.id) {
-    // 檢查是否為管理員
-    const { data: profile } = await supabaseAdmin
-      .from('discord_profiles')
-      .select('server_roles')
-      .eq('user_id', user.id)
-      .single()
-
+    // 使用已查詢的 buyerProfile（避免重複查詢）
     const isAdmin =
-      Array.isArray(profile?.server_roles) &&
-      (profile.server_roles.includes('Admin') ||
-       profile.server_roles.includes('Moderator'))
+      Array.isArray(buyerProfile?.server_roles) &&
+      (buyerProfile.server_roles.includes('Admin') ||
+       buyerProfile.server_roles.includes('Moderator'))
 
     if (!isAdmin) {
       throw new ValidationError('無法對自己的刊登登記意向')
@@ -183,13 +190,7 @@ async function handlePOST(request: NextRequest, user: User) {
       // 解密 webhook_url
       const decryptedWebhookUrl = decryptWebhookUrl(listing.webhook_url)
 
-      // 查詢買家的信譽分數
-      const { data: buyerProfile } = await supabaseAdmin
-        .from('discord_profiles')
-        .select('reputation_score')
-        .eq('user_id', user.id)
-        .single()
-
+      // 使用已查詢的 buyerProfile（避免重複查詢）
       // 非同步發送通知，不等待結果
       sendDiscordNotification(
         decryptedWebhookUrl,
