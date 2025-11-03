@@ -33,7 +33,7 @@ import { getSystemSettings } from '@/lib/config/system-config'
  */
 interface UserInfoResponse {
   // 基本資訊
-  user_id: string
+  id: string // 與 User 介面一致（使用 id 而非 user_id）
   discord_id: string
   discord_username: string
   discord_discriminator: string
@@ -94,7 +94,7 @@ interface UserInfoResponse {
  * {
  *   "success": true,
  *   "data": {
- *     "user_id": "uuid-123",
+ *     "id": "uuid-123",
  *     "discord_id": "123456789",
  *     "discord_username": "Player#1234",
  *     "discord_avatar": "a1b2c3d4",
@@ -205,7 +205,7 @@ async function handleGET(request: NextRequest, user: User): Promise<Response> {
   // 4. 組合用戶資訊
   const userInfo: UserInfoResponse = {
     // 基本資訊（來自 user 物件）
-    user_id: user.id,
+    id: user.id,
     discord_id: user.discord_id,
     discord_username: user.discord_username,
     discord_discriminator: user.discord_discriminator,

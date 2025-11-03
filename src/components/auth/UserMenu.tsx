@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import { useAuth } from '@/contexts/AuthContext'
 import { useLanguage } from '@/contexts/LanguageContext'
 import type { User } from '@/lib/auth/session-validator'
+import { clientLogger } from '@/lib/logger'
 
 /**
  * 用戶選單元件
@@ -20,9 +21,15 @@ export function UserMenu() {
 
   // 檢查管理員權限
   useEffect(() => {
-    async function checkAdminStatus() {
-      if (!user) return
+    // 重置狀態（當 user 變更時）
+    setIsAdmin(false)
 
+    // 只有當 user 存在且已完全載入時才檢查管理員權限
+    if (!user || !user.id) {
+      return
+    }
+
+    async function checkAdminStatus() {
       try {
         const response = await fetch('/api/auth/me/roles', {
           credentials: 'include'
@@ -30,12 +37,25 @@ export function UserMenu() {
 
         if (response.ok) {
           const data = await response.json()
+
           if (data.success && data.data.isAdmin) {
             setIsAdmin(true)
           }
+        } else {
+          // 記錄 API 請求失敗（非 401/403 的情況）
+          if (response.status !== 401 && response.status !== 403) {
+            clientLogger.warn('檢查管理員權限失敗', {
+              userId: user?.id,
+              status: response.status
+            })
+          }
         }
-      } catch {
-        // 忽略錯誤，預設為非管理員
+      } catch (error) {
+        // 記錄非預期的錯誤
+        clientLogger.error('檢查管理員權限時發生錯誤', {
+          userId: user?.id,
+          error
+        })
       }
     }
 
