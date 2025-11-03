@@ -73,9 +73,11 @@ interface DiscordTokenResponse {
 async function handleGET(request: NextRequest) {
   try {
     // 1. 確定正確的 base URL（Vercel 生產環境或本地開發）
-    const baseUrl = process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
-      : request.url
+    const baseUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : 'http://localhost:3000'
 
     // 2. 檢查環境變數
     if (!DISCORD_CLIENT_ID || !DISCORD_CLIENT_SECRET || !DISCORD_REDIRECT_URI) {
@@ -292,10 +294,12 @@ async function handleGET(request: NextRequest) {
 
     // 重導向至首頁並顯示錯誤
     const errorMessage = error instanceof Error ? error.message : 'OAuth 回調處理失敗'
-    // 使用 Vercel URL 或 request.url（本地開發）
-    const baseUrl = process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
-      : request.url
+    // 使用 Vercel 生產環境 URL 或本地開發 URL
+    const baseUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : 'http://localhost:3000'
     return NextResponse.redirect(
       new URL(`/?error=oauth_failed&message=${encodeURIComponent(errorMessage)}`, baseUrl)
     )
