@@ -49,22 +49,16 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const t = (key: string, params?: Record<string, string | number>): string => {
     if (!isClient) {
       // SSR 時使用預設語言（英文）
-      let text = translations['en'][key] || key
-      if (params) {
-        Object.entries(params).forEach(([k, v]) => {
-          text = text.replace(`{${k}}`, String(v))
-        })
-      }
-      return text
+      const text = translations['en'][key] || key
+      return params
+        ? Object.entries(params).reduce((acc, [k, v]) => acc.replace(`{${k}}`, String(v)), text)
+        : text
     }
 
-    let translation = translations[language][key] || key
-    if (params) {
-      Object.entries(params).forEach(([k, v]) => {
-        translation = translation.replace(`{${k}}`, String(v))
-      })
-    }
-    return translation
+    const translation = translations[language][key] || key
+    return params
+      ? Object.entries(params).reduce((acc, [k, v]) => acc.replace(`{${k}}`, String(v)), translation)
+      : translation
   }
 
   return (
