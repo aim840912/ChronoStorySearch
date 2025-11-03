@@ -47,6 +47,22 @@ export const BOT_USER_AGENTS = [
   'acunetix',
   'metasploit',
 
+  // AI 訓練爬蟲（高置信度 - 2025 年流量激增）
+  'gptbot', // OpenAI GPT 訓練（30% 網路流量）
+  'claudebot', // Anthropic Claude 訓練（5.4% 流量）
+  'google-extended', // Google Gemini AI 訓練
+  'meta-externalagent', // Meta AI 訓練（19% 流量）
+  'perplexitybot', // Perplexity AI
+  'anthropic-ai', // Anthropic 舊版爬蟲
+  'claude-web', // Anthropic 舊版爬蟲
+  'cohere-ai', // Cohere AI 訓練
+  'amazonbot', // Amazon AI 訓練
+  'applebot-extended', // Apple AI 訓練（非一般 AppleBot）
+  'ccbot', // Common Crawl（多家 AI 使用）
+  'bytespider', // ByteDance AI 訓練
+  'oai-searchbot', // OpenAI 搜尋索引
+  'chatgpt-user', // ChatGPT 實時瀏覽
+
   // 通用爬蟲（中置信度）
   'bot',
   'crawler',
@@ -84,35 +100,43 @@ export const SEO_CRAWLERS_WHITELIST = [
 
 /**
  * Rate Limit 預設配置
+ *
+ * 優化記錄（2025-11-03）：
+ * - 降低限制以減少 Redis 使用量
+ * - GLOBAL: 60 → 40（-33%）
+ * - PUBLIC_API: 50 → 30（-40%）
+ * - TRENDING: 30 → 20（-33%）
+ * - SEARCH: 40 → 30（-25%）
+ * - AUTHENTICATED: 維持 100（信任認證用戶）
  */
 export const DEFAULT_RATE_LIMITS = {
   // 全域預設限制（每小時）
   GLOBAL: {
-    limit: 60,
+    limit: 40, // 降低自 60（-33%）
     window: 3600, // 1 小時（秒）
   },
 
   // 公開 API 端點（寬鬆）
   PUBLIC_API: {
-    limit: 50,
+    limit: 30, // 降低自 50（-40%）
     window: 3600,
   },
 
   // 熱門端點（嚴格）
   TRENDING: {
-    limit: 30,
+    limit: 20, // 降低自 30（-33%）
     window: 3600,
   },
 
   // 搜尋端點（中等）
   SEARCH: {
-    limit: 40,
+    limit: 30, // 降低自 40（-25%）
     window: 3600,
   },
 
   // 需認證端點（寬鬆）
   AUTHENTICATED: {
-    limit: 100,
+    limit: 100, // 維持不變（信任認證用戶）
     window: 3600,
   },
 } as const

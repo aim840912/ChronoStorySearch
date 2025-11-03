@@ -8,6 +8,10 @@
  * 2. 將 state 存入 Redis（10 分鐘過期）
  * 3. 重導向至 Discord 授權頁面
  *
+ * 防護措施：
+ * - Bot Detection - User-Agent 過濾
+ * - Rate Limiting - 5 次/分鐘（防止掃描工具濫用 state token）
+ *
  * 參考文件：
  * - docs/architecture/交易系統/02-認證與資料庫.md
  * - docs/DISCORD_OAUTH_SETUP.md
@@ -20,6 +24,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { redis, RedisKeys } from '@/lib/redis/client'
 import { apiLogger } from '@/lib/logger'
 import { v4 as uuidv4 } from 'uuid'
+import { withBotDetection } from '@/lib/bot-detection/api-middleware'
 
 // Discord OAuth2 配置
 const DISCORD_CLIENT_ID = process.env.DISCORD_CLIENT_ID
@@ -48,7 +53,7 @@ const STATE_EXPIRY = 600 // 10 分鐘（秒）
  * 用戶訪問：http://localhost:3000/api/auth/discord
  * 重導向至：https://discord.com/api/oauth2/authorize?client_id=...&redirect_uri=...&response_type=code&scope=identify&state=uuid-123
  */
-export async function GET(request: NextRequest) {
+async function handleGET(request: NextRequest) {
   try {
     // 1. 檢查環境變數
     if (!DISCORD_CLIENT_ID || !DISCORD_REDIRECT_URI) {
@@ -113,3 +118,16 @@ export async function GET(request: NextRequest) {
     )
   }
 }
+
+// Bot Detection + Rate Limiting（5次/分鐘，防止掃描工具濫用）
+export const GET = withBotDetection(handleGET, {
+  module: 'DiscordOAuthAPI',
+  botDetection: {
+    enableRateLimit: true,
+    enableBehaviorDetection: false,
+    rateLimit: {
+      limit: 5, // 每分鐘 5 次（OAuth 啟動端點，嚴格限制）
+      window: 60 // 1 分鐘
+    }
+  }
+})

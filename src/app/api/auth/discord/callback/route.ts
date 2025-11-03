@@ -11,6 +11,11 @@
  * 5. 建立 session 並設置 cookie
  * 6. 重導向至首頁
  *
+ * 防護措施：
+ * - Bot Detection - User-Agent 過濾
+ * - Rate Limiting - 5 次/分鐘（防止掃描工具濫用）
+ * - State 驗證（CSRF 防護）
+ *
  * 參考文件：
  * - docs/architecture/交易系統/02-認證與資料庫.md
  * - docs/DISCORD_OAUTH_SETUP.md
@@ -23,6 +28,7 @@ import { createSession } from '@/lib/auth/session-validator'
 import { apiLogger } from '@/lib/logger'
 import { ValidationError } from '@/lib/errors'
 import { parseSnowflakeTimestamp } from '@/lib/utils/discord-utils'
+import { withBotDetection } from '@/lib/bot-detection/api-middleware'
 
 // Discord OAuth2 配置
 const DISCORD_CLIENT_ID = process.env.DISCORD_CLIENT_ID
@@ -64,7 +70,7 @@ interface DiscordTokenResponse {
  *
  * 處理 Discord OAuth 回調
  */
-export async function GET(request: NextRequest) {
+async function handleGET(request: NextRequest) {
   try {
     // 1. 檢查環境變數
     if (!DISCORD_CLIENT_ID || !DISCORD_CLIENT_SECRET || !DISCORD_REDIRECT_URI) {
@@ -286,3 +292,16 @@ export async function GET(request: NextRequest) {
     )
   }
 }
+
+// Bot Detection + Rate Limiting（5次/分鐘，防止掃描工具濫用）
+export const GET = withBotDetection(handleGET, {
+  module: 'DiscordOAuthCallbackAPI',
+  botDetection: {
+    enableRateLimit: true,
+    enableBehaviorDetection: false,
+    rateLimit: {
+      limit: 5, // 每分鐘 5 次（OAuth 回調端點，嚴格限制）
+      window: 60 // 1 分鐘
+    }
+  }
+})

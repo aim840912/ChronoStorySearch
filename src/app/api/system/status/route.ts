@@ -12,18 +12,23 @@
  * - 前端檢查交易系統是否啟用
  * - 前端顯示維護通知
  *
+ * 防護措施：
+ * - Bot Detection - User-Agent 過濾
+ * - Rate Limiting - 10 次/小時（嚴格限制，防止掃描工具濫用）
+ *
  * @module system-status
  */
 
 import { NextRequest } from 'next/server'
 import { success } from '@/lib/api-response'
 import { getSystemSettings } from '@/lib/config/system-config'
+import { withBotDetection } from '@/lib/bot-detection/api-middleware'
 
 // =====================================================
 // GET - 查詢系統狀態
 // =====================================================
 
-export async function GET(_request: NextRequest) {
+async function handleGET(_request: NextRequest) {
   // 從資料庫獲取系統設定（帶快取）
   const settings = await getSystemSettings()
 
@@ -44,3 +49,16 @@ export async function GET(_request: NextRequest) {
     '查詢成功'
   )
 }
+
+// Bot Detection + Rate Limiting（嚴格限制 10/小時）
+export const GET = withBotDetection(handleGET, {
+  module: 'SystemStatusAPI',
+  botDetection: {
+    enableRateLimit: true,
+    enableBehaviorDetection: false,
+    rateLimit: {
+      limit: 10, // 每小時僅 10 次（健康檢查端點，嚴格限制）
+      window: 3600
+    }
+  }
+})
