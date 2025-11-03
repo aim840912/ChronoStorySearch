@@ -9,7 +9,6 @@ import { LoginModal } from "@/components/auth/LoginModal";
 import { MaintenanceBanner } from "@/components/common/MaintenanceBanner";
 import { LoginUserBanner } from "@/components/common/LoginUserBanner";
 import { CookieConsentBanner } from "@/components/common/CookieConsentBanner";
-import { Analytics } from '@vercel/analytics/react';
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
 
 const geistSans = Geist({
@@ -51,7 +50,6 @@ export default function RootLayout({
             </LanguageProvider>
           </ThemeProvider>
         </AuthProvider>
-        <Analytics />
       </body>
     </html>
   );

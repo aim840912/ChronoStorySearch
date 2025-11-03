@@ -1,6 +1,7 @@
 'use client'
 
-import { useEffect, ReactNode } from 'react'
+import { useEffect, useState, ReactNode } from 'react'
+import { createPortal } from 'react-dom'
 
 export interface BaseModalProps {
   /** Modal 是否開啟 */
@@ -54,6 +55,13 @@ export function BaseModal({
   onBackdropClick,
   onEscape,
 }: BaseModalProps) {
+  // Hydration 安全：確保只在客戶端渲染
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   // ESC 鍵關閉 Modal
   useEffect(() => {
     if (!isOpen) return
@@ -94,9 +102,11 @@ export function BaseModal({
     }
   }
 
-  if (!isOpen) return null
+  // 未掛載或未開啟時不渲染
+  if (!isOpen || !mounted) return null
 
-  return (
+  // 使用 Portal 將 Modal 渲染到 document.body，逃脫父容器的堆疊上下文限制
+  return createPortal(
     <div
       className={`fixed inset-0 ${zIndex} flex items-start justify-center pt-8 sm:pt-16 p-0 sm:px-4 sm:pb-4 bg-black/50 backdrop-blur-sm overflow-y-auto scrollbar-hide`}
       onClick={handleBackdropClick}
@@ -107,6 +117,7 @@ export function BaseModal({
       >
         {children}
       </div>
-    </div>
+    </div>,
+    document.body
   )
 }
