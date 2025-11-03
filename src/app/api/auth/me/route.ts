@@ -29,6 +29,26 @@ import { DatabaseError, NotFoundError } from '@/lib/errors'
 import { getSystemSettings } from '@/lib/config/system-config'
 
 /**
+ * Discord 個人資料介面
+ */
+interface DiscordProfile {
+  account_created_at: string
+  reputation_score: number
+  server_roles: string[]
+  profile_privacy: string
+}
+
+/**
+ * Session 資訊介面
+ */
+interface SessionInfo {
+  id: string
+  token_expires_at: string
+  last_active_at: string
+  created_at: string
+}
+
+/**
  * 用戶資訊回應介面
  */
 interface UserInfoResponse {
@@ -120,8 +140,8 @@ async function handleGET(request: NextRequest, user: User): Promise<Response> {
   const { searchParams } = new URL(request.url)
   const includeQuotas = searchParams.get('include_quotas') === 'true'
 
-  let profile: any
-  let session: any
+  let profile: DiscordProfile
+  let session: SessionInfo
   let quotas: UserInfoResponse['quotas'] | undefined = undefined
 
   // 優化：使用 RPC 函數一次性獲取所有資料（當需要配額時）
