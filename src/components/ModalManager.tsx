@@ -1,6 +1,6 @@
 'use client'
 
-import { memo } from 'react'
+import { memo, useState } from 'react'
 import type { DropsEssential, ItemAttributesEssential, GachaMachine } from '@/types'
 import { MonsterModal } from '@/components/MonsterModal'
 import { ItemModal } from '@/components/ItemModal'
@@ -14,6 +14,7 @@ import { CreateListingModal } from '@/components/trade/CreateListingModal'
 import { MyListingsModal } from '@/components/trade/MyListingsModal'
 import { InterestsModal } from '@/components/trade/InterestsModal'
 import { ListingDetailModal } from '@/components/trade/ListingDetailModal'
+import { PrivacySettingsModal } from '@/components/settings/PrivacySettingsModal'
 import { Toast } from '@/components/Toast'
 import { useLanguage } from '@/contexts/LanguageContext'
 
@@ -175,6 +176,9 @@ export const ModalManager = memo(function ModalManager({
 }: ModalManagerProps) {
   const { t } = useLanguage()
 
+  // 隱私設定 Modal 狀態（內部管理）
+  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false)
+
   return (
     <>
       {/* Monster Drops Modal */}
@@ -218,6 +222,12 @@ export const ModalManager = memo(function ModalManager({
       <BugReportModal
         isOpen={isBugReportModalOpen}
         onClose={closeBugReportModal}
+      />
+
+      {/* Privacy Settings Modal */}
+      <PrivacySettingsModal
+        isOpen={isPrivacyModalOpen}
+        onClose={() => setIsPrivacyModalOpen(false)}
       />
 
       {/* Confirm Clear Modal */}
@@ -365,6 +375,34 @@ export const ModalManager = memo(function ModalManager({
           </svg>
           <span className="text-sm font-medium hidden group-hover:inline-block">{t('accuracy.buttonShort')}</span>
         </div>
+      </button>
+
+      {/* 隱私設定浮動按鈕 */}
+      <button
+        onClick={() => setIsPrivacyModalOpen(true)}
+        className="fixed bottom-[88px] sm:bottom-[104px] right-4 sm:right-6 z-40 p-3 sm:p-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        aria-label={t('auth.privacySettings')}
+        title={t('auth.privacySettings')}
+      >
+        {/* 鎖頭圖示 */}
+        <svg
+          className="w-5 h-5 sm:w-6 sm:h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+          />
+        </svg>
+
+        {/* Tooltip（滑鼠懸停顯示文字）*/}
+        <span className="absolute right-full mr-2 px-2 py-1 bg-gray-900 text-white text-xs rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+          {t('auth.privacySettings')}
+        </span>
       </button>
 
       {/* 浮動 Bug 回報按鈕 */}

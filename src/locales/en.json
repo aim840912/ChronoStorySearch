@@ -404,7 +404,7 @@
   "auth.loginRequired": "Login Required",
   "auth.loginDescription": "Login with Discord to use trading features",
   "auth.redirecting": "Redirecting...",
-  "auth.loginNote": "After logging in, you can post listings, express interest, and trade items",
+  "auth.tradingFeatureNotice": "Notice: Trading features are currently under development and will not be available after login",
   "auth.logout": "Logout",
   "auth.profile": "Profile",
   "auth.privacySettings": "Privacy Settings",

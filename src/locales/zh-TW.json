@@ -404,7 +404,7 @@
   "auth.loginRequired": "需要登入",
   "auth.loginDescription": "使用 Discord 帳號登入以使用交易功能",
   "auth.redirecting": "跳轉中...",
-  "auth.loginNote": "登入後，您可以刊登物品、表達興趣並進行交易",
+  "auth.tradingFeatureNotice": "提醒：交易功能目前尚未完成，登入後暫時無法使用市場刊登功能",
   "auth.logout": "登出",
   "auth.profile": "個人資料",
   "auth.privacySettings": "隱私設定",
