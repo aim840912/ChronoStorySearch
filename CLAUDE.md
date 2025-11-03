@@ -5,6 +5,7 @@ The orignal prompt is from: https://www.dzombak.com/blog/2025/08/getting-good-re
 ## 📑 目錄
 
 - [🚀 快速開始](#-快速開始)
+- [📈 優化歷史](#-優化歷史)
 - [🤖 Claude 行為準則](#-claude-行為準則)
 - [📐 開發理念](#-開發理念)
 - [🔧 開發流程](#-開發流程)
@@ -52,6 +53,78 @@ npm run analyze                      # Bundle 大小分析
 npm ls | grep package-name           # 檢查套件
 npx depcheck                         # 檢查未使用依賴
 ```
+
+### 檢查優化歷史
+
+**⚠️ 重要：在建議任何優化前，請先執行以下指令**
+
+```bash
+/opt-status                          # 查看完整優化歷史
+/opt-status pending                  # 查看待實施項目
+/opt-status rejected                 # 查看已拒絕項目
+```
+
+**為什麼需要檢查？**
+- 避免重複建議已實施的優化
+- 了解哪些優化已被評估但拒絕（含原因）
+- 掌握專案當前的優化狀態和效能指標
+
+**詳細資訊**：查閱 `docs/optimization/OPTIMIZATION_HISTORY.md`
+
+---
+
+## 📈 優化歷史
+
+本專案已實施和規劃的優化記錄在 **`docs/optimization/OPTIMIZATION_HISTORY.md`**。
+
+### 已實施優化（8 項）
+
+#### 🚀 效能優化
+- ✅ Redis 快取（市場搜尋）
+- ✅ Cloudflare R2 圖片 CDN
+
+#### 🏗️ 架構改進
+- ✅ 統一錯誤處理系統
+- ✅ API 中間件組合系統
+- ✅ 日誌系統標準化
+
+#### 🔒 安全加固
+- ✅ Bot Detection 系統
+- ✅ Discord 帳號年齡驗證
+- ✅ 配額系統（RPC 實作）
+
+### 待評估優化（6 項）
+
+#### 💰 成本優化
+- 📋 調整 Middleware 匹配規則（⭐ 最高優先級）
+  - 預期：減少 40-50% Function Invocations
+- 📋 Edge Functions 遷移（6 個低風險 API）
+  - 預期：成本降低 30-40%、延遲減少 60-70%
+- 📋 客戶端快取 (`/api/auth/me`)
+  - 預期：減少 60% 調用次數
+
+#### 🚀 效能優化
+- 📋 批次 API 請求
+- 📋 WebSocket 即時通知
+- 📋 資料庫查詢優化
+
+### 使用規範
+
+#### **建議優化前必須檢查**
+```bash
+/opt-status                 # 在提出任何優化建議前執行
+```
+
+#### **實施優化後更新記錄**
+完成優化後，請更新 `OPTIMIZATION_HISTORY.md`：
+1. 移動項目從「待評估」到「已實施」
+2. 填寫實施日期、Commit hash、實際效果
+3. 更新效能指標和統計資料
+
+#### **評估但拒絕的優化**
+如果某個優化被評估後決定不實施，請記錄到「已評估但未實施」區塊，說明拒絕原因。
+
+**詳細文件**：`docs/optimization/OPTIMIZATION_HISTORY.md`
 
 ---
 

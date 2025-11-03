@@ -7,6 +7,9 @@ import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
 import { DEFAULT_RATE_LIMITS } from '@/lib/bot-detection/constants'
 
+// Edge Runtime（成本優化：2025-11-03）
+export const runtime = 'edge'
+
 /**
  * GET /api/market/trending - 熱門商品列表
  *

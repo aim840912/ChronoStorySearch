@@ -76,14 +76,15 @@ export function middleware(request: NextRequest) {
  *
  * matcher 規則：
  * - /api/* - 保護所有 API 端點
- * - 排除靜態資源（_next/static, _next/image, favicon.ico）
+ *
+ * 成本優化說明（2025-11-03）：
+ * - 移除頁面層級的 Middleware 匹配，減少 40-50% Function Invocations
+ * - API 層級仍保留完整的 Bot Detection 和 Rate Limiting 防護
+ * - 預期效果：從 2.15-3.1M → 0.7-1.0M invocations/月
  */
 export const config = {
   matcher: [
-    // 包含所有 API 路由
+    // 只匹配 API 路由（成本優化：移除頁面層級匹配）
     '/api/:path*',
-
-    // 排除靜態資源（避免不必要的檢查）
-    '/((?!_next/static|_next/image|favicon.ico).*)',
   ],
 }

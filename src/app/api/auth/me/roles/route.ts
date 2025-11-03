@@ -22,6 +22,9 @@ import { success } from '@/lib/api-response'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
 
+// Edge Runtime（成本優化：2025-11-03）
+export const runtime = 'edge'
+
 // =====================================================
 // GET - 查詢使用者角色
 // =====================================================
