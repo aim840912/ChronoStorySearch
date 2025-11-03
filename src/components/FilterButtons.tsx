@@ -1,7 +1,7 @@
 'use client'
 
 import { useLanguage } from '@/contexts/LanguageContext'
-import { useSystemStatus } from '@/hooks/useSystemStatus'
+import { useSystemStatus } from '@/hooks/swr/useSystemStatus'
 import type { FilterMode, ClearModalType, AdvancedFilterOptions } from '@/types'
 import type { User } from '@/lib/auth/session-validator'
 

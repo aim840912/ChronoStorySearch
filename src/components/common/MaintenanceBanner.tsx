@@ -19,7 +19,7 @@
 
 'use client'
 
-import { useSystemStatus } from '@/hooks/useSystemStatus'
+import { useSystemStatus } from '@/hooks/swr/useSystemStatus'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 export function MaintenanceBanner() {

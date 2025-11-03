@@ -7,7 +7,7 @@ import { FavoriteItemsList } from '@/components/lists/FavoriteItemsList'
 import { AllItemsView } from '@/components/lists/AllItemsView'
 import { MarketListView } from '@/components/trade/MarketListView'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { useSystemStatus } from '@/hooks/useSystemStatus'
+import { useSystemStatus } from '@/hooks/swr/useSystemStatus'
 
 // 類型定義（與內部元件一致）
 import type { ExtendedUniqueItem } from '@/types'

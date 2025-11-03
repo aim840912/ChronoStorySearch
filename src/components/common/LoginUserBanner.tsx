@@ -21,7 +21,7 @@
 
 'use client'
 
-import { useSystemStatus } from '@/hooks/useSystemStatus'
+import { useSystemStatus } from '@/hooks/swr/useSystemStatus'
 import { useAuth } from '@/contexts/AuthContext'
 
 export function LoginUserBanner() {
