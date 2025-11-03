@@ -1,0 +1,122 @@
+/**
+ * SWR 全域配置
+ *
+ * 功能：
+ * - 統一設定 SWR 快取策略
+ * - 減少 API 請求次數（階段 3 優化）
+ * - 提升用戶體驗（stale-while-revalidate）
+ *
+ * 優化目標：
+ * - 減少 40-50% API 請求（透過前端快取）
+ * - 降低 Upstash Redis 使用量
+ * - 降低 Supabase Database 調用次數
+ */
+
+import type { SWRConfiguration } from 'swr'
+
+/**
+ * SWR 全域配置
+ *
+ * 策略說明：
+ * - dedupingInterval: 去重時間窗口（5 秒內相同請求只發送一次）
+ * - focusThrottleInterval: 聚焦節流（30 秒內聚焦不重新驗證）
+ * - revalidateOnFocus: 聚焦時重新驗證（啟用，保持資料新鮮）
+ * - revalidateOnReconnect: 重新連線時重新驗證（啟用）
+ * - errorRetryCount: 錯誤重試次數（3 次）
+ * - errorRetryInterval: 重試間隔（3 秒）
+ *
+ * 參考：https://swr.vercel.app/docs/options
+ */
+export const swrConfig: SWRConfiguration = {
+  // 去重時間窗口：5 秒內相同請求只發送一次
+  dedupingInterval: 5000,
+
+  // 聚焦節流：30 秒內聚焦不重新驗證（避免頻繁重新驗證）
+  focusThrottleInterval: 30000,
+
+  // 聚焦時重新驗證：啟用（保持資料新鮮度）
+  revalidateOnFocus: true,
+
+  // 重新連線時重新驗證：啟用
+  revalidateOnReconnect: true,
+
+  // 錯誤重試次數：3 次
+  errorRetryCount: 3,
+
+  // 重試間隔：3 秒
+  errorRetryInterval: 3000,
+
+  // 統一的 fetcher 函數
+  fetcher: async (url: string) => {
+    const res = await fetch(url, {
+      credentials: 'include', // 包含 cookies（認證所需）
+    })
+
+    // 處理錯誤回應
+    if (!res.ok) {
+      const error = new Error('API 請求失敗')
+      // 附加錯誤資訊
+      try {
+        const json = await res.json()
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ;(error as any).info = json
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ;(error as any).status = res.status
+      } catch {
+        // 無法解析 JSON，使用預設錯誤
+      }
+      throw error
+    }
+
+    return res.json()
+  },
+}
+
+/**
+ * 不同場景的快取策略
+ */
+export const swrStrategies = {
+  /**
+   * 使用者資訊快取策略
+   * - 使用者資訊變動少，可以較長時間快取
+   * - dedupingInterval: 60 秒（1 分鐘內只請求一次）
+   */
+  userInfo: {
+    dedupingInterval: 60000, // 60 秒
+    revalidateOnFocus: false, // 不在聚焦時重新驗證
+    revalidateOnReconnect: false, // 不在重新連線時重新驗證
+  },
+
+  /**
+   * 市場搜尋快取策略
+   * - 市場資料變動適中，使用預設策略
+   * - dedupingInterval: 10 秒
+   */
+  marketSearch: {
+    dedupingInterval: 10000, // 10 秒
+    revalidateOnFocus: true,
+    revalidateOnReconnect: true,
+  },
+
+  /**
+   * 熱門商品快取策略
+   * - 熱門商品變動較少，可以較長時間快取
+   * - dedupingInterval: 30 秒
+   */
+  trending: {
+    dedupingInterval: 30000, // 30 秒
+    revalidateOnFocus: false,
+    revalidateOnReconnect: true,
+  },
+
+  /**
+   * 即時資料快取策略
+   * - 資料需要即時性，較短快取時間
+   * - dedupingInterval: 2 秒
+   */
+  realtime: {
+    dedupingInterval: 2000, // 2 秒
+    revalidateOnFocus: true,
+    revalidateOnReconnect: true,
+  },
+} as const

@@ -5,6 +5,7 @@ import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import { AuthProvider } from "@/contexts/AuthContext";
+import { SWRProvider } from "@/providers/SWRProvider";
 import { LoginModal } from "@/components/auth/LoginModal";
 import { MaintenanceBanner } from "@/components/common/MaintenanceBanner";
 import { LoginUserBanner } from "@/components/common/LoginUserBanner";
@@ -39,17 +40,19 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AuthProvider>
-          <ThemeProvider>
-            <LanguageProvider>
-              <MaintenanceBanner />
-              <LoginUserBanner />
-              {children}
-              <LoginModal />
-              <CookieConsentBanner />
-            </LanguageProvider>
-          </ThemeProvider>
-        </AuthProvider>
+        <SWRProvider>
+          <AuthProvider>
+            <ThemeProvider>
+              <LanguageProvider>
+                <MaintenanceBanner />
+                <LoginUserBanner />
+                {children}
+                <LoginModal />
+                <CookieConsentBanner />
+                </LanguageProvider>
+            </ThemeProvider>
+          </AuthProvider>
+        </SWRProvider>
       </body>
     </html>
   );

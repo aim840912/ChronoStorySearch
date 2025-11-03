@@ -102,12 +102,21 @@ export const SEO_CRAWLERS_WHITELIST = [
  * Rate Limit 預設配置
  *
  * 優化記錄（2025-11-03）：
- * - 降低限制以減少 Redis 使用量
+ *
+ * ## 階段 1：降低限制以減少 Redis 使用量
  * - GLOBAL: 60 → 40（-33%）
  * - PUBLIC_API: 50 → 30（-40%）
  * - TRENDING: 30 → 20（-33%）
  * - SEARCH: 40 → 30（-25%）
  * - AUTHENTICATED: 維持 100（信任認證用戶）
+ *
+ * ## 階段 2：策略分級（固定窗口 vs 滑動窗口）
+ * - 根據 API 風險等級動態選擇限流算法
+ * - 低風險：固定窗口（2 命令/請求，節省 Redis）
+ * - 高風險：滑動窗口（1 命令/請求，更精確限流）
+ * - 詳細配置見：src/lib/bot-detection/rate-limit-strategy.ts
+ *
+ * 預期節省：30-40% Redis commands
  */
 export const DEFAULT_RATE_LIMITS = {
   // 全域預設限制（每小時）

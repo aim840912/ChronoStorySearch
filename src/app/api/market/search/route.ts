@@ -374,6 +374,8 @@ async function handleGET(_request: NextRequest, user: User) {
     await setCachedMarketListings(cacheKey, {
       listings: formattedListings,
       pagination
+    }, {
+      hasFilters: false  // 簡單搜尋，使用 15 分鐘 TTL（階段 2 優化）
     })
   }
 
