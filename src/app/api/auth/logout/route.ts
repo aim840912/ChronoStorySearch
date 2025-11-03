@@ -25,7 +25,9 @@ import { apiLogger } from '@/lib/logger'
 
 // Session Cookie 配置
 const SESSION_COOKIE_NAME = 'maplestory_session'
-// 註：使用 Node.js Runtime 以確保 httpOnly cookies 正確處理（2025-11-04）
+
+// 顯式指定使用 Node.js Runtime（確保 httpOnly cookies 正確處理）
+export const runtime = 'nodejs'
 
 /**
  * POST /api/auth/logout
