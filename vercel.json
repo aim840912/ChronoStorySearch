@@ -1,4 +1,9 @@
 {
+  "functions": {
+    "src/app/api/auth/logout/route.ts": {
+      "runtime": "nodejs20.x"
+    }
+  },
   "crons": [
     {
       "path": "/api/cron/cleanup-expired-listings",
