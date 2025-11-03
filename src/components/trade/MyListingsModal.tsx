@@ -10,6 +10,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { clientLogger } from '@/lib/logger'
 import { toast } from 'react-hot-toast'
 import type { ExtendedUniqueItem } from '@/types'
+import { trackEditListing, trackDeleteListing } from '@/lib/analytics/ga4'
 
 /**
  * 我的刊登 Modal
@@ -105,6 +106,10 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
   const handleDelete = async (listingId: number) => {
     if (!confirm(t('listing.deleteConfirm'))) return
 
+    // 保存刊登資訊以便追蹤
+    const listing = listings.find(l => l.id === listingId)
+    if (!listing) return
+
     try {
       const response = await fetch(`/api/listings/${listingId}`, {
         method: 'DELETE',
@@ -118,6 +123,15 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
         return
       }
 
+      // GA4 事件追蹤：刪除刊登成功
+      const item = getItemById(listing.item_id)
+      trackDeleteListing({
+        listingId: listing.id.toString(),
+        tradeType: listing.trade_type,
+        itemId: listing.item_id.toString(),
+        itemName: item?.itemName || 'Unknown Item'
+      })
+
       // 重新載入列表
       setListings(prev => prev.filter(l => l.id !== listingId))
       toast.success(t('listing.deleteSuccess'))
@@ -130,6 +144,10 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
   // 標記為已售出
   const handleMarkAsSold = async (listingId: number) => {
     if (!confirm(t('listing.markAsSoldConfirm'))) return
+
+    // 保存刊登資訊以便追蹤
+    const listing = listings.find(l => l.id === listingId)
+    if (!listing) return
 
     try {
       const response = await fetch(`/api/listings/${listingId}`, {
@@ -145,6 +163,16 @@ export function MyListingsModal({ isOpen, onClose, onCreateNew }: MyListingsModa
         toast.error(data.error || t('listing.deleteError'))
         return
       }
+
+      // GA4 事件追蹤：編輯刊登（標記為已售出）
+      const item = getItemById(listing.item_id)
+      trackEditListing({
+        listingId: listing.id.toString(),
+        tradeType: listing.trade_type,
+        itemId: listing.item_id.toString(),
+        itemName: item?.itemName || 'Unknown Item',
+        changes: ['status:sold']
+      })
 
       // 更新列表
       setListings(prev => prev.map(l =>

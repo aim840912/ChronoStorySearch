@@ -21,6 +21,8 @@ import { ContentDisplay } from '@/components/ContentDisplay'
 import { ModalManager } from '@/components/ModalManager'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
+import { trackEvent } from '@/lib/analytics/ga4'
+import { GA4_EVENTS } from '@/lib/analytics/events'
 
 export default function Home() {
   const { t, language } = useLanguage()
@@ -323,6 +325,15 @@ export default function Home() {
 
   // 選擇建議項目
   const selectSuggestion = useCallback((suggestionName: string, suggestion?: SuggestionItem) => {
+    // GA4 事件追蹤：選擇搜尋建議
+    if (suggestion) {
+      trackEvent(GA4_EVENTS.SELECT_ITEM, {
+        item_id: suggestion.id?.toString() || suggestionName,
+        item_name: suggestionName,
+        item_category: suggestion.type
+      })
+    }
+
     // 如果是轉蛋物品，開啟物品 Modal（而不是轉蛋機 Modal）
     if (suggestion && suggestion.type === 'gacha' && suggestion.id) {
       modals.openItemModal(suggestion.id, suggestionName)

@@ -18,6 +18,7 @@ import { ListingNotes } from './detail/ListingNotes'
 import { SellerInfoCard } from './detail/SellerInfoCard'
 import { InterestRegistrationCard } from './detail/InterestRegistrationCard'
 import { ExchangeMatchCard } from './detail/ExchangeMatchCard'
+import { trackViewListing, trackExpressInterest } from '@/lib/analytics/ga4'
 
 /**
  * 刊登詳情 Modal
@@ -129,6 +130,16 @@ export function ListingDetailModal({
         }
 
         setListing(data.data)
+
+        // GA4 事件追蹤：查看刊登詳情
+        const listingData = data.data as ListingDetail
+        const itemData = getItemById(listingData.item_id)
+        trackViewListing({
+          listingId: listingData.id.toString(),
+          tradeType: listingData.trade_type,
+          itemId: listingData.item_id.toString(),
+          itemName: itemData?.itemName || 'Unknown Item'
+        })
       } catch (err) {
         clientLogger.error('Failed to fetch listing detail:', err)
         setError('網路錯誤，請檢查您的連線')
@@ -138,7 +149,7 @@ export function ListingDetailModal({
     }
 
     fetchListing()
-  }, [isOpen, listingId, user])
+  }, [isOpen, listingId, user, getItemById])
 
   // 查看聯絡方式
   const handleViewContact = async () => {
@@ -207,6 +218,16 @@ export function ListingDetailModal({
 
       if (listing) {
         toast.success(t(`listing.registerInterestSuccess.${listing.trade_type}`))
+
+        // GA4 事件追蹤：表達購買意向成功
+        const itemData = getItemById(listing.item_id)
+        trackExpressInterest({
+          listingId: listing.id.toString(),
+          tradeType: listing.trade_type,
+          itemId: listing.item_id.toString(),
+          itemName: itemData?.itemName || 'Unknown Item',
+          hasMessage: interestMessage.trim().length > 0
+        })
       }
       setInterestMessage('')
       onInterestRegistered?.()

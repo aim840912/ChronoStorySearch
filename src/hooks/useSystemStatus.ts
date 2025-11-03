@@ -57,6 +57,9 @@ interface CachedStatus {
 let globalCache: CachedStatus | null = null
 const CACHE_TTL = 60 * 1000 // 60 秒（平衡即時性和減少 API 調用）
 
+// 請求去重：防止多個元件同時發送相同請求
+let pendingRequest: Promise<void> | null = null
+
 // =====================================================
 // Hook 實作
 // =====================================================
@@ -86,43 +89,69 @@ export function useSystemStatus(): UseSystemStatusReturn {
         }
       }
 
-      // 快取失效或強制刷新，重新請求
-      if (isMountedRef.current) {
-        setIsLoading(true)
-        setError(null)
+      // 如果已有請求進行中，等待該請求完成
+      if (pendingRequest) {
+        clientLogger.debug('系統狀態：等待進行中的請求')
+        await pendingRequest
+
+        // 請求完成後，使用快取更新狀態
+        if (isMountedRef.current && globalCache) {
+          setStatus(globalCache.data)
+          setIsLoading(false)
+        }
+        return
       }
 
-      const response = await fetch('/api/system/status')
+      // 建立新請求並標記為進行中
+      pendingRequest = (async () => {
+        try {
+          // 快取失效或強制刷新，重新請求
+          if (isMountedRef.current) {
+            setIsLoading(true)
+            setError(null)
+          }
 
-      if (!response.ok) {
-        throw new Error('獲取系統狀態失敗')
-      }
+          const response = await fetch('/api/system/status')
 
-      const data = await response.json()
+          if (!response.ok) {
+            throw new Error('獲取系統狀態失敗')
+          }
 
-      if (!data.success) {
-        throw new Error(data.message || '獲取系統狀態失敗')
-      }
+          const data = await response.json()
 
-      // 更新全域快取
-      globalCache = {
-        data: data.data,
-        timestamp: Date.now()
-      }
+          if (!data.success) {
+            throw new Error(data.message || '獲取系統狀態失敗')
+          }
 
-      if (isMountedRef.current) {
-        setStatus(data.data)
-        setIsLoading(false)
-      }
+          // 更新全域快取
+          globalCache = {
+            data: data.data,
+            timestamp: Date.now()
+          }
 
-      clientLogger.debug('系統狀態已更新', { data: data.data })
+          if (isMountedRef.current) {
+            setStatus(data.data)
+            setIsLoading(false)
+          }
+
+          clientLogger.debug('系統狀態已更新', { data: data.data })
+        } catch (err) {
+          const errorMessage = err instanceof Error ? err.message : '未知錯誤'
+          if (isMountedRef.current) {
+            setError(errorMessage)
+            setIsLoading(false)
+          }
+          clientLogger.error('獲取系統狀態失敗', { error: err })
+          throw err
+        } finally {
+          // 請求完成，清除 pending 標記
+          pendingRequest = null
+        }
+      })()
+
+      await pendingRequest
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : '未知錯誤'
-      if (isMountedRef.current) {
-        setError(errorMessage)
-        setIsLoading(false)
-      }
-      clientLogger.error('獲取系統狀態失敗', { error: err })
+      // 錯誤已在內部處理，這裡只是為了不讓 Promise rejection 傳播
     }
   }, [])
 

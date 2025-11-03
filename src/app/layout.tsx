@@ -8,7 +8,9 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import { LoginModal } from "@/components/auth/LoginModal";
 import { MaintenanceBanner } from "@/components/common/MaintenanceBanner";
 import { LoginUserBanner } from "@/components/common/LoginUserBanner";
+import { CookieConsentBanner } from "@/components/common/CookieConsentBanner";
 import { Analytics } from '@vercel/analytics/react';
+import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +35,7 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
         <meta name="format-detection" content="telephone=no" />
+        <GoogleAnalytics />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -44,6 +47,7 @@ export default function RootLayout({
               <LoginUserBanner />
               {children}
               <LoginModal />
+              <CookieConsentBanner />
             </LanguageProvider>
           </ThemeProvider>
         </AuthProvider>

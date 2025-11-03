@@ -1,5 +1,7 @@
 import { useState, useCallback } from 'react'
 import type { ClearModalType } from '@/types'
+import { trackEvent, trackViewItem } from '@/lib/analytics/ga4'
+import { GA4_EVENTS } from '@/lib/analytics/events'
 
 /**
  * Modal 類型定義
@@ -105,6 +107,12 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     // 記錄瀏覽歷史（如果提供了 recordView）
     recordView?.('monster', mobId, mobName)
 
+    // GA4 事件追蹤：查看怪物
+    trackEvent(GA4_EVENTS.VIEW_MONSTER, {
+      monster_id: mobId.toString(),
+      monster_name: mobName
+    })
+
     setModal(currentModal => {
       // 如果需要保存歷史，且當前有開啟的 Modal，則保存
       if (saveHistory && currentModal.type !== null) {
@@ -137,6 +145,9 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     // 記錄瀏覽歷史（如果提供了 recordView）
     recordView?.('item', itemId, itemName)
 
+    // GA4 事件追蹤：查看物品
+    trackViewItem(itemId.toString(), itemName, 'item')
+
     setModal(currentModal => {
       // 如果需要保存歷史，且當前有開啟的 Modal，則保存
       if (saveHistory && currentModal.type !== null) {
@@ -166,6 +177,11 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
 
   // 開啟 Gacha Modal
   const openGachaModal = useCallback((machineId?: number, saveHistory = false) => {
+    // GA4 事件追蹤：查看轉蛋機
+    trackEvent(GA4_EVENTS.VIEW_GACHA, {
+      ...(machineId !== undefined && { machine_id: machineId.toString() })
+    })
+
     setModal(currentModal => {
       // 如果需要保存歷史，且當前有開啟的 Modal，則保存
       if (saveHistory && currentModal.type !== null) {

@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react'
 import type { User } from '@/lib/auth/session-validator'
+import { trackLogin, trackLogout } from '@/lib/analytics/ga4'
 
 interface AuthContextType {
   user: User | null
@@ -74,12 +75,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (response.ok) {
         const data = await response.json()
         if (data.success && data.data) {
+          const wasLoggedOut = !user
           setUser(data.data)
           // 存入快取
           localStorage.setItem(CACHE_KEY, JSON.stringify({
             data: data.data,
             timestamp: Date.now()
           } as UserCache))
+
+          // GA4 事件追蹤：登入成功（僅在從未登入狀態切換到已登入時觸發）
+          if (wasLoggedOut) {
+            trackLogin('discord')
+          }
         } else {
           setUser(null)
           localStorage.removeItem(CACHE_KEY)
@@ -137,6 +144,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       })
 
       if (response.ok) {
+        // GA4 事件追蹤：登出
+        trackLogout()
+
         setUser(null)
         localStorage.removeItem(CACHE_KEY) // 清除快取
         window.location.href = '/'

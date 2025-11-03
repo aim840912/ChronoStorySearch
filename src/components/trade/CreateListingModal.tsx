@@ -11,6 +11,7 @@ import { useItemAttributesEssential, useLazyItemDetailed } from '@/hooks/useLazy
 import { getItemCategoryGroup, getCategoryGroup } from '@/lib/item-categories'
 import { useDataManagement } from '@/hooks/useDataManagement'
 import { clientLogger } from '@/lib/logger'
+import { trackCreateListing } from '@/lib/analytics/ga4'
 import { TradeTypeSelector } from './create/TradeTypeSelector'
 import { PriceQuantityInput } from './create/PriceQuantityInput'
 import { ContactInfoInput } from './create/ContactInfoInput'
@@ -319,6 +320,15 @@ export function CreateListingModal({
       }
 
       // 4. 成功：呼叫 onSuccess 回調並關閉 Modal
+      // GA4 事件追蹤：建立刊登成功
+      trackCreateListing({
+        tradeType: tradeType,
+        itemId: selectedItem.itemId.toString(),
+        itemName: selectedItem.itemName,
+        price: tradeType !== 'exchange' && price !== null ? price : undefined,
+        quantity: quantity
+      })
+
       if (onSuccess) {
         onSuccess()
       }
