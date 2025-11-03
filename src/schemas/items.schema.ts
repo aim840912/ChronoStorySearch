@@ -18,16 +18,16 @@ export const ItemAttributesDetailedSchema = z.object({
   equipment: z.object({
     category: z.string().optional(),
     requirements: z.object({
-      reqLevel: z.number().int().nonnegative().optional(),
-      reqStr: z.number().int().nonnegative().optional(),
-      reqDex: z.number().int().nonnegative().optional(),
-      reqInt: z.number().int().nonnegative().optional(),
-      reqLuk: z.number().int().nonnegative().optional(),
-      reqFam: z.number().int().nonnegative().optional().nullable(),
+      req_level: z.number().int().nonnegative().optional(),
+      req_str: z.number().int().nonnegative().optional(),
+      req_dex: z.number().int().nonnegative().optional(),
+      req_int: z.number().int().nonnegative().optional(),
+      req_luk: z.number().int().nonnegative().optional(),
+      req_fam: z.number().int().nonnegative().optional().nullable(),
     }).optional(),
     classes: z.record(z.string(), z.boolean().nullable()).optional(),
     stats: z.record(z.string(), z.union([z.number(), z.string()]).nullable()).optional(),
-    statVariation: z.record(
+    stat_variation: z.record(
       z.string(),
       z.object({
         min: z.number(),
