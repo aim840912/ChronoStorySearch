@@ -72,22 +72,27 @@ interface DiscordTokenResponse {
  */
 async function handleGET(request: NextRequest) {
   try {
-    // 1. 檢查環境變數
+    // 1. 確定正確的 base URL（Vercel 生產環境或本地開發）
+    const baseUrl = process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : request.url
+
+    // 2. 檢查環境變數
     if (!DISCORD_CLIENT_ID || !DISCORD_CLIENT_SECRET || !DISCORD_REDIRECT_URI) {
       apiLogger.error('Discord OAuth config missing in callback')
       throw new ValidationError('Discord OAuth 配置錯誤')
     }
 
-    // 2. 取得 URL 參數
+    // 3. 取得 URL 參數
     const { searchParams } = new URL(request.url)
     const code = searchParams.get('code')
     const state = searchParams.get('state')
     const error = searchParams.get('error')
 
-    // 2.1 檢查是否有錯誤（用戶拒絕授權）
+    // 3.1 檢查是否有錯誤（用戶拒絕授權）
     if (error) {
       apiLogger.warn('User denied OAuth authorization', { error })
-      return NextResponse.redirect(new URL('/?error=auth_denied', request.url))
+      return NextResponse.redirect(new URL('/?error=auth_denied', baseUrl))
     }
 
     // 2.2 檢查必要參數
@@ -166,7 +171,7 @@ async function handleGET(request: NextRequest) {
       // 6.1 檢查封禁狀態
       if (existingUser.banned) {
         apiLogger.warn('Banned user attempted login', { discord_id: discordUser.id })
-        return NextResponse.redirect(new URL('/?error=banned', request.url))
+        return NextResponse.redirect(new URL('/?error=banned', baseUrl))
       }
 
       // 6.2 更新現有用戶
@@ -265,8 +270,8 @@ async function handleGET(request: NextRequest) {
       request
     )
 
-    // 8. 設置 session cookie
-    const response = NextResponse.redirect(new URL('/', request.url))
+    // 8. 設置 session cookie 並重導向至首頁
+    const response = NextResponse.redirect(new URL('/', baseUrl))
 
     response.cookies.set(SESSION_COOKIE_NAME, sessionToken, {
       httpOnly: true,
@@ -287,8 +292,12 @@ async function handleGET(request: NextRequest) {
 
     // 重導向至首頁並顯示錯誤
     const errorMessage = error instanceof Error ? error.message : 'OAuth 回調處理失敗'
+    // 使用 Vercel URL 或 request.url（本地開發）
+    const baseUrl = process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : request.url
     return NextResponse.redirect(
-      new URL(`/?error=oauth_failed&message=${encodeURIComponent(errorMessage)}`, request.url)
+      new URL(`/?error=oauth_failed&message=${encodeURIComponent(errorMessage)}`, baseUrl)
     )
   }
 }
