@@ -56,14 +56,14 @@ async function handleGET(_request: NextRequest) {
   )
 }
 
-// Bot Detection + Rate Limiting（嚴格限制 10/小時）
+// Bot Detection + Rate Limiting（合理限制 60/小時）
 export const GET = withBotDetection(handleGET, {
   module: 'SystemStatusAPI',
   botDetection: {
     enableRateLimit: true,
     enableBehaviorDetection: false,
     rateLimit: {
-      limit: 10, // 每小時僅 10 次（健康檢查端點，嚴格限制）
+      limit: 60, // 每小時 60 次（考慮多元件使用和快取失效情況）
       window: 3600
     }
   }

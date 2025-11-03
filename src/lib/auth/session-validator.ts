@@ -16,7 +16,7 @@
  */
 
 import { NextRequest } from 'next/server'
-import jwt from 'jsonwebtoken'
+import { jwtVerify, SignJWT } from 'jose'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { dbLogger } from '@/lib/logger'
 import { encryptToken, decryptToken } from './token-encryption'
@@ -48,16 +48,6 @@ export interface SessionValidationResult {
 }
 
 /**
- * JWT Payload 介面
- */
-interface JWTPayload {
-  session_id: string
-  user_id: string
-  iat: number
-  exp: number
-}
-
-/**
  * Session Cookie 名稱
  */
 const SESSION_COOKIE_NAME = 'maplestory_session'
@@ -74,6 +64,18 @@ const JWT_SECRET = process.env.SESSION_SECRET
 
 if (!JWT_SECRET) {
   throw new Error('Missing SESSION_SECRET environment variable')
+}
+
+/**
+ * 獲取 JWT Secret（jose 格式）
+ *
+ * jose 套件需要 Uint8Array 格式的 secret
+ */
+function getJWTSecret(): Uint8Array {
+  if (!JWT_SECRET) {
+    throw new Error('Missing SESSION_SECRET environment variable')
+  }
+  return new TextEncoder().encode(JWT_SECRET)
 }
 
 /**
@@ -112,18 +114,30 @@ export async function validateSession(
       return { valid: false, user: null }
     }
 
-    // 2. 驗證並解密 JWT
-    let payload: JWTPayload
+    // 2. 驗證並解密 JWT（使用 jose）
+    let session_id: string
+    let user_id: string
+
     try {
-      // JWT_SECRET 已在檔案頂部檢查過，不可能是 undefined
-      const decoded = jwt.verify(token, JWT_SECRET!) as jwt.JwtPayload
-      payload = decoded as JWTPayload
+      const secret = getJWTSecret()
+      const { payload } = await jwtVerify(token, secret)
+
+      // 驗證 payload 格式
+      if (!payload.session_id || typeof payload.session_id !== 'string') {
+        dbLogger.warn('Invalid JWT payload: missing session_id')
+        return { valid: false, user: null }
+      }
+      if (!payload.user_id || typeof payload.user_id !== 'string') {
+        dbLogger.warn('Invalid JWT payload: missing user_id')
+        return { valid: false, user: null }
+      }
+
+      session_id = payload.session_id
+      user_id = payload.user_id
     } catch (jwtError) {
       dbLogger.debug('Session validation failed: invalid JWT', { error: jwtError })
       return { valid: false, user: null }
     }
-
-    const { session_id, user_id } = payload
 
     // 3. 查詢 Supabase sessions 表
     const { data: session, error: sessionError } = await supabaseAdmin
@@ -298,18 +312,15 @@ export async function createSession(
 
     const session_id = session.id
 
-    // 產生 JWT token
-    // JWT_SECRET 已在檔案頂部檢查過，不可能是 undefined
-    const token = jwt.sign(
-      {
-        session_id,
-        user_id: userId
-      },
-      JWT_SECRET!,
-      {
-        expiresIn: `${SESSION_EXPIRY_DAYS}d`
-      }
-    )
+    // 產生 JWT token（使用 jose）
+    const secret = getJWTSecret()
+    const token = await new SignJWT({
+      session_id,
+      user_id: userId
+    })
+      .setProtectedHeader({ alg: 'HS256' })
+      .setExpirationTime(`${SESSION_EXPIRY_DAYS}d`)
+      .sign(secret)
 
     dbLogger.info('Session created successfully', {
       user_id: userId,

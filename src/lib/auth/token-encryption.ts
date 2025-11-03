@@ -19,6 +19,40 @@ import { xchacha20poly1305 } from '@noble/ciphers/chacha.js'
 import { randomBytes } from '@noble/ciphers/utils.js'
 
 /**
+ * Hex 轉 Uint8Array（Edge Runtime 相容）
+ *
+ * 替代 Buffer.from(hex, 'hex')
+ */
+function hexToUint8Array(hex: string): Uint8Array {
+  if (hex.length % 2 !== 0) {
+    throw new Error('Invalid hex string: length must be even')
+  }
+  const bytes = new Uint8Array(hex.length / 2)
+  for (let i = 0; i < hex.length; i += 2) {
+    bytes[i / 2] = parseInt(hex.slice(i, i + 2), 16)
+  }
+  return bytes
+}
+
+/**
+ * Base64 編碼（Edge Runtime 相容）
+ *
+ * 替代 Buffer.from(data).toString('base64')
+ */
+function base64Encode(data: Uint8Array): string {
+  return btoa(String.fromCharCode(...data))
+}
+
+/**
+ * Base64 解碼（Edge Runtime 相容）
+ *
+ * 替代 Buffer.from(str, 'base64')
+ */
+function base64Decode(str: string): Uint8Array {
+  return Uint8Array.from(atob(str), c => c.charCodeAt(0))
+}
+
+/**
  * 從環境變數取得加密密鑰
  * 必須是 64 字元的 hex 字串（256-bit）
  */
@@ -37,8 +71,8 @@ function getEncryptionKey(): Uint8Array {
     )
   }
 
-  // 將 hex 字串轉換為 Uint8Array
-  return Uint8Array.from(Buffer.from(keyHex, 'hex'))
+  // 將 hex 字串轉換為 Uint8Array（Edge Runtime 相容）
+  return hexToUint8Array(keyHex)
 }
 
 /**
@@ -73,8 +107,8 @@ export async function encryptToken(token: string): Promise<string> {
     combined.set(nonce, 0)
     combined.set(ciphertext, nonce.length)
 
-    // 7. Base64 編碼
-    return Buffer.from(combined).toString('base64')
+    // 7. Base64 編碼（Edge Runtime 相容）
+    return base64Encode(combined)
   } catch (error) {
     throw new Error(
       `Token encryption failed: ${error instanceof Error ? error.message : 'Unknown error'}`
@@ -99,8 +133,8 @@ export async function decryptToken(encryptedToken: string): Promise<string> {
     // 1. 取得加密密鑰
     const key = getEncryptionKey()
 
-    // 2. Base64 解碼
-    const combined = Uint8Array.from(Buffer.from(encryptedToken, 'base64'))
+    // 2. Base64 解碼（Edge Runtime 相容）
+    const combined = base64Decode(encryptedToken)
 
     // 3. 提取 nonce（前 24 bytes）和 ciphertext（剩餘部分）
     if (combined.length <= 24) {
@@ -147,9 +181,9 @@ export function isTokenEncrypted(token: string): boolean {
     return false
   }
 
-  // 嘗試 Base64 解碼，檢查長度是否合理
+  // 嘗試 Base64 解碼，檢查長度是否合理（Edge Runtime 相容）
   try {
-    const decoded = Buffer.from(token, 'base64')
+    const decoded = base64Decode(token)
     return decoded.length > 24  // 至少要有 nonce + 一些加密資料
   } catch {
     return false
