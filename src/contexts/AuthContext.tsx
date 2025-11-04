@@ -60,20 +60,59 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const refreshUser = useCallback(async () => {
     try {
       // 檢查 memory cache
-      if (userCache && Date.now() - userCache.timestamp < CACHE_DURATION) {
-        // 快取有效，直接使用
-        setUser(userCache.data)
-        setLoading(false)
-        return
+      if (userCache) {
+        const cacheAge = Date.now() - userCache.timestamp
+        const cacheValid = cacheAge < CACHE_DURATION
+
+        // 🔍 診斷日誌：Cache 狀態（2025-11-04）
+        console.log('[DIAGNOSTIC] Memory cache check', {
+          cache_exists: true,
+          cache_age_ms: cacheAge,
+          cache_age_minutes: (cacheAge / 1000 / 60).toFixed(2),
+          cache_valid: cacheValid,
+          cache_duration_minutes: (CACHE_DURATION / 1000 / 60).toFixed(2),
+          cached_user_id: userCache.data.id,
+          cached_username: userCache.data.discord_username,
+        })
+
+        if (cacheValid) {
+          // 快取有效，直接使用
+          console.log('[DIAGNOSTIC] Using memory cache - skipping API call')
+          setUser(userCache.data)
+          setLoading(false)
+          return
+        } else {
+          console.log('[DIAGNOSTIC] Cache expired - calling API')
+        }
+      } else {
+        console.log('[DIAGNOSTIC] No cache exists - calling API')
       }
 
       // 快取過期或不存在，呼叫 API
+      console.log('[DIAGNOSTIC] Calling /api/auth/me', {
+        credentials: 'include',
+        note: 'Will send httpOnly cookie if it exists'
+      })
       const response = await fetch('/api/auth/me', {
         credentials: 'include', // 包含 cookie
       })
 
+      // 🔍 診斷日誌：API 響應（2025-11-04）
+      console.log('[DIAGNOSTIC] /api/auth/me response', {
+        status: response.status,
+        ok: response.ok,
+        status_text: response.statusText,
+      })
+
       if (response.ok) {
         const data = await response.json()
+        console.log('[DIAGNOSTIC] API response data', {
+          success: data.success,
+          has_data: !!data.data,
+          user_id: data.data?.id,
+          username: data.data?.discord_username,
+        })
+
         if (data.success && data.data) {
           const wasLoggedOut = !user
           setUser(data.data)
@@ -82,6 +121,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             data: data.data,
             timestamp: Date.now()
           }
+          console.log('[DIAGNOSTIC] User data stored in memory cache')
 
           // 清除登出流程標記（如果存在）
           sessionStorage.removeItem('maplestory:logout-in-progress')
@@ -91,6 +131,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             trackLogin('discord')
           }
         } else {
+          console.log('[DIAGNOSTIC] Invalid response data - clearing user state')
           setUser(null)
           userCache = null
         }

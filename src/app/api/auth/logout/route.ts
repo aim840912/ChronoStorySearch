@@ -110,13 +110,28 @@ async function handlePOST(request: NextRequest, user: User): Promise<Response> {
   // 解決方案：使用單一 API，確保屬性與登入時完全一致，避免 API 混用造成的問題
   const isProduction = process.env.NODE_ENV === 'production'
 
+  // 🔍 診斷日誌：Cookie 刪除前狀態（2025-11-04）
+  apiLogger.info('[DIAGNOSTIC] Cookie deletion starting', {
+    user_id: user.id,
+    environment: isProduction ? 'production' : 'development',
+    incoming_cookie_header: request.headers.get('cookie'),
+    session_cookie_present: !!request.cookies.get(SESSION_COOKIE_NAME)?.value,
+  })
+
   // 策略 1: 刪除當前 cookie (使用當前配置)
-  response.cookies.delete({
+  const strategy1Config = {
     name: SESSION_COOKIE_NAME,
     path: '/',
     httpOnly: true,
     secure: isProduction,
-    sameSite: isProduction ? 'none' : 'lax',
+    sameSite: isProduction ? 'none' as const : 'lax' as const,
+  }
+  response.cookies.delete(strategy1Config)
+
+  // 🔍 診斷日誌：策略 1 執行後
+  apiLogger.info('[DIAGNOSTIC] Strategy 1 cookie deletion executed', {
+    config: strategy1Config,
+    user_id: user.id,
   })
 
   // 策略 2: 向後兼容 - 刪除舊的 sameSite='lax' cookie（修復：2025-11-04）
@@ -124,12 +139,19 @@ async function handlePOST(request: NextRequest, user: User): Promise<Response> {
   //       Cookie 刪除需要屬性完全匹配，所以需要同時嘗試刪除舊配置
   // 適用時機：僅在生產環境執行（開發環境始終使用 'lax'，不需要此策略）
   if (isProduction) {
-    response.cookies.delete({
+    const strategy2Config = {
       name: SESSION_COOKIE_NAME,
       path: '/',
       httpOnly: true,
       secure: true,
-      sameSite: 'lax',  // 刪除舊的 cookie
+      sameSite: 'lax' as const,
+    }
+    response.cookies.delete(strategy2Config)
+
+    // 🔍 診斷日誌：策略 2 執行後
+    apiLogger.info('[DIAGNOSTIC] Strategy 2 cookie deletion executed', {
+      config: strategy2Config,
+      user_id: user.id,
     })
   }
 
@@ -161,6 +183,15 @@ async function handlePOST(request: NextRequest, user: User): Promise<Response> {
       secure: false,
       sameSite: 'lax',
     }],
+  })
+
+  // 🔍 診斷日誌：驗證 Set-Cookie headers（2025-11-04）
+  const setCookieHeaders = response.headers.getSetCookie()
+  apiLogger.info('[DIAGNOSTIC] Final cookie deletion verification', {
+    user_id: user.id,
+    set_cookie_headers_count: setCookieHeaders.length,
+    set_cookie_headers: setCookieHeaders,
+    note: '應該看到 2 個 Set-Cookie headers（生產環境）或 1 個（開發環境）',
   })
 
   apiLogger.info('User logged out successfully', {
