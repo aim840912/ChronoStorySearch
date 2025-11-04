@@ -1,5 +1,5 @@
 /**
- * API 認證中間件
+ * API 認證中間件（使用 Supabase Auth）
  *
  * 提供三種認證層級：
  * - requireAuth: 需要使用者登入
@@ -20,24 +20,39 @@
  * 參考:
  * - CLAUDE.md - API 中間件架構
  * - docs/architecture/交易系統/03-API設計.md
+ * - https://supabase.com/docs/guides/auth/server-side/nextjs
  */
 
 import { NextRequest } from 'next/server'
-import { validateSession, User } from '@/lib/auth/session-validator'
+import { createClient } from '@/lib/supabase/server'
+import { supabaseAdmin } from '@/lib/supabase/server'
 import { withErrorHandler, ErrorHandlerOptions } from './error-handler'
 import { UnauthorizedError, AuthorizationError } from '@/lib/errors'
-import { supabaseAdmin } from '@/lib/supabase/server'
 import { dbLogger } from '@/lib/logger'
 
-// 重新導出 User 類型供 API 路由使用
-export type { User } from '@/lib/auth/session-validator'
+/**
+ * 用戶資訊介面（與 Supabase Auth 整合）
+ */
+export interface User {
+  id: string
+  discord_id: string
+  discord_username: string
+  discord_discriminator: string
+  discord_avatar: string | null
+  email: string | null
+  banned: boolean
+  last_login_at: string
+  created_at: string
+  session_id: string // 保留向後相容（Supabase 管理 session，設為空字串）
+  access_token: string // Discord OAuth access token（從 Supabase Auth session 取得）
+}
 
 /**
- * 認證中間件: 需要使用者登入
+ * 認證中間件: 需要使用者登入（使用 Supabase Auth）
  *
  * 功能：
- * 1. 呼叫 validateSession 驗證 session
- * 2. 檢查 valid 和 user
+ * 1. 從 Supabase Auth 取得當前用戶
+ * 2. 從資料庫查詢完整用戶資料
  * 3. 檢查 banned 狀態
  * 4. 傳遞 user 給 handler
  *
@@ -60,22 +75,62 @@ export function requireAuth(
 ) {
   return async (request: NextRequest, ...args: any[]): Promise<Response> => { // eslint-disable-line @typescript-eslint/no-explicit-any
     try {
-      // 1. 呼叫 validateSession
-      const { valid, user } = await validateSession(request)
+      // 1. 從 Supabase Auth 取得當前用戶和 session
+      const supabase = await createClient()
+      const {
+        data: { user: authUser },
+        error: authError,
+      } = await supabase.auth.getUser()
 
-      // 2. 檢查 valid 和 user
-      if (!valid || !user) {
-        dbLogger.debug('Authentication failed: invalid session or user not found')
+      if (authError || !authUser) {
+        dbLogger.debug('Authentication failed: no Supabase auth user')
         throw new UnauthorizedError('需要登入才能使用此功能')
       }
 
-      // 3. 檢查 banned 狀態（validateSession 已檢查，但這裡再次確認）
-      if (user.banned) {
-        dbLogger.info('Authentication failed: user is banned', { user_id: user.id })
+      // 取得 session（包含 access_token）
+      const {
+        data: { session },
+      } = await supabase.auth.getSession()
+
+      const accessToken = session?.provider_token || '' // Discord OAuth access token
+
+      // 2. 從資料庫查詢完整用戶資料
+      const { data: dbUser, error: dbError } = await supabaseAdmin
+        .from('users')
+        .select('*')
+        .eq('id', authUser.id)
+        .single()
+
+      if (dbError || !dbUser) {
+        dbLogger.error('Authentication failed: user not found in database', {
+          user_id: authUser.id,
+          error: dbError,
+        })
+        throw new UnauthorizedError('用戶不存在')
+      }
+
+      // 3. 檢查 banned 狀態
+      if (dbUser.banned) {
+        dbLogger.info('Authentication failed: user is banned', { user_id: dbUser.id })
         throw new AuthorizationError('您的帳號已被封禁')
       }
 
-      // 4. 傳遞 user 給 handler
+      // 4. 構建 User 物件（保持向後相容）
+      const user: User = {
+        id: dbUser.id,
+        discord_id: dbUser.discord_id,
+        discord_username: dbUser.discord_username,
+        discord_discriminator: dbUser.discord_discriminator,
+        discord_avatar: dbUser.discord_avatar,
+        email: dbUser.email,
+        banned: dbUser.banned,
+        last_login_at: dbUser.last_login_at,
+        created_at: dbUser.created_at,
+        session_id: '', // Supabase 管理 session，不需要手動處理
+        access_token: accessToken, // Discord OAuth access token
+      }
+
+      // 5. 傳遞 user 給 handler
       return await handler(request, user, ...args)
     } catch (error) {
       // 如果是已知錯誤（UnauthorizedError, AuthorizationError），直接拋出
@@ -86,14 +141,14 @@ export function requireAuth(
 }
 
 /**
- * 認證中間件: 需要管理員權限
+ * 認證中間件: 需要管理員權限（使用 Supabase Auth）
  *
  * 功能：
- * 1. 先呼叫 requireAuth
- * 2. 檢查使用者是否為管理員
+ * 1. 從 Supabase Auth 取得當前用戶
+ * 2. 從資料庫查詢完整用戶資料
+ * 3. 檢查使用者是否為管理員
  *   - 檢查 discord_profiles.server_roles 是否包含 'Admin' 或 'Moderator'
- *   - 或使用專門的 admin 欄位（未來擴展）
- * 3. 傳遞 user 給 handler
+ * 4. 傳遞 user 給 handler
  *
  * @param handler - API 處理函數（接收 request 和 user）
  * @returns 包裝後的 API 處理函數
@@ -113,30 +168,56 @@ export function requireAdmin(
 ) {
   return async (request: NextRequest, ...args: any[]): Promise<Response> => { // eslint-disable-line @typescript-eslint/no-explicit-any
     try {
-      // 1. 先呼叫 requireAuth
-      const { valid, user } = await validateSession(request)
+      // 1. 從 Supabase Auth 取得當前用戶和 session
+      const supabase = await createClient()
+      const {
+        data: { user: authUser },
+        error: authError,
+      } = await supabase.auth.getUser()
 
-      if (!valid || !user) {
-        dbLogger.debug('Admin authentication failed: invalid session')
+      if (authError || !authUser) {
+        dbLogger.debug('Admin authentication failed: no Supabase auth user')
         throw new UnauthorizedError('需要登入才能使用此功能')
       }
 
-      if (user.banned) {
-        dbLogger.info('Admin authentication failed: user is banned', { user_id: user.id })
+      // 取得 session（包含 access_token）
+      const {
+        data: { session },
+      } = await supabase.auth.getSession()
+
+      const accessToken = session?.provider_token || '' // Discord OAuth access token
+
+      // 2. 從資料庫查詢完整用戶資料
+      const { data: dbUser, error: dbError } = await supabaseAdmin
+        .from('users')
+        .select('*')
+        .eq('id', authUser.id)
+        .single()
+
+      if (dbError || !dbUser) {
+        dbLogger.error('Admin authentication failed: user not found in database', {
+          user_id: authUser.id,
+          error: dbError,
+        })
+        throw new UnauthorizedError('用戶不存在')
+      }
+
+      if (dbUser.banned) {
+        dbLogger.info('Admin authentication failed: user is banned', { user_id: dbUser.id })
         throw new AuthorizationError('您的帳號已被封禁')
       }
 
-      // 2. 檢查是否為管理員
+      // 3. 檢查是否為管理員
       // 查詢 discord_profiles 表的 server_roles
       const { data: profile, error: profileError } = await supabaseAdmin
         .from('discord_profiles')
         .select('server_roles')
-        .eq('user_id', user.id)
+        .eq('user_id', dbUser.id)
         .single()
 
       if (profileError) {
         dbLogger.debug('Admin authentication failed: discord profile not found', {
-          user_id: user.id,
+          user_id: dbUser.id,
           error: profileError
         })
         // 如果找不到 discord_profiles，視為非管理員
@@ -151,13 +232,28 @@ export function requireAdmin(
 
       if (!isAdmin) {
         dbLogger.info('Admin authentication failed: user is not admin', {
-          user_id: user.id,
+          user_id: dbUser.id,
           roles: profile.server_roles
         })
         throw new AuthorizationError('需要管理員權限')
       }
 
-      // 3. 傳遞 user 給 handler
+      // 4. 構建 User 物件（保持向後相容）
+      const user: User = {
+        id: dbUser.id,
+        discord_id: dbUser.discord_id,
+        discord_username: dbUser.discord_username,
+        discord_discriminator: dbUser.discord_discriminator,
+        discord_avatar: dbUser.discord_avatar,
+        email: dbUser.email,
+        banned: dbUser.banned,
+        last_login_at: dbUser.last_login_at,
+        created_at: dbUser.created_at,
+        session_id: '', // Supabase 管理 session，不需要手動處理
+        access_token: accessToken, // Discord OAuth access token
+      }
+
+      // 5. 傳遞 user 給 handler
       dbLogger.debug('Admin authentication successful', { user_id: user.id })
       return await handler(request, user, ...args)
     } catch (error) {
@@ -167,12 +263,12 @@ export function requireAdmin(
 }
 
 /**
- * 認證中間件: 可選認證 (公開 API 但可能需要使用者資訊)
+ * 認證中間件: 可選認證（使用 Supabase Auth）
  *
  * 功能：
- * 1. 呼叫 validateSession
- * 2. 如果 valid = true, 傳遞 user
- * 3. 如果 valid = false, 傳遞 null
+ * 1. 嘗試從 Supabase Auth 取得當前用戶
+ * 2. 如果成功，從資料庫查詢完整用戶資料並傳遞
+ * 3. 如果失敗，傳遞 null
  * 4. 無論如何都執行 handler
  *
  * @param handler - API 處理函數（接收 request 和 user | null）
@@ -199,11 +295,59 @@ export function optionalAuth(
 ) {
   return async (request: NextRequest, ...args: any[]): Promise<Response> => { // eslint-disable-line @typescript-eslint/no-explicit-any
     try {
-      // 1. 呼叫 validateSession
-      const { valid, user } = await validateSession(request)
+      // 1. 嘗試從 Supabase Auth 取得當前用戶
+      const supabase = await createClient()
+      const {
+        data: { user: authUser },
+        error: authError,
+      } = await supabase.auth.getUser()
 
-      // 2-4. 傳遞 user 或 null，無論如何都執行 handler
-      return await handler(request, valid ? user : null, ...args)
+      // 2. 如果沒有認證用戶，傳遞 null
+      if (authError || !authUser) {
+        dbLogger.debug('Optional auth: no Supabase auth user, continuing with null')
+        return await handler(request, null, ...args)
+      }
+
+      // 3. 從資料庫查詢完整用戶資料
+      const { data: dbUser, error: dbError } = await supabaseAdmin
+        .from('users')
+        .select('*')
+        .eq('id', authUser.id)
+        .single()
+
+      // 4. 如果資料庫查詢失敗或用戶被封禁，傳遞 null
+      if (dbError || !dbUser || dbUser.banned) {
+        dbLogger.debug('Optional auth: user not found or banned, continuing with null', {
+          user_id: authUser.id,
+          db_error: dbError,
+          banned: dbUser?.banned,
+        })
+        return await handler(request, null, ...args)
+      }
+
+      // 5. 取得 session（包含 access_token）
+      const {
+        data: { session },
+      } = await supabase.auth.getSession()
+
+      const accessToken = session?.provider_token || '' // Discord OAuth access token
+
+      // 6. 構建 User 物件並傳遞
+      const user: User = {
+        id: dbUser.id,
+        discord_id: dbUser.discord_id,
+        discord_username: dbUser.discord_username,
+        discord_discriminator: dbUser.discord_discriminator,
+        discord_avatar: dbUser.discord_avatar,
+        email: dbUser.email,
+        banned: dbUser.banned,
+        last_login_at: dbUser.last_login_at,
+        created_at: dbUser.created_at,
+        session_id: '', // Supabase 管理 session，不需要手動處理
+        access_token: accessToken, // Discord OAuth access token
+      }
+
+      return await handler(request, user, ...args)
     } catch (error) {
       // 對於 optionalAuth，即使驗證失敗也繼續執行
       // 傳遞 null 作為 user

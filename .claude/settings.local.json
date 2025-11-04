@@ -139,7 +139,8 @@
       "Bash(powershell.exe -ExecutionPolicy Bypass -File .claude/hooks/notify-toast.ps1 -Title \"診斷測試\" -Message \"這是診斷測試通知\")",
       "Bash(powershell.exe -Command \"Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show(''測試通知'', ''Claude Code'')\")",
       "Bash(psql:*)",
-      "Bash(git fetch:*)"
+      "Bash(git fetch:*)",
+      "mcp__playwright__browser_network_requests"
     ],
     "deny": [],
     "ask": [

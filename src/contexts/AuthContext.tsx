@@ -1,8 +1,43 @@
 'use client'
 
 import { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react'
-import type { User } from '@/lib/auth/session-validator'
+import { createClient } from '@/lib/supabase/client'
 import { trackLogin, trackLogout } from '@/lib/analytics/ga4'
+
+/**
+ * 前端使用的 User 介面
+ * 從 /api/auth/me 取得完整用戶資料
+ * 注意：與後端 User 介面不同，不包含 session_id 和 access_token
+ */
+export interface User {
+  id: string
+  discord_id: string
+  discord_username: string
+  discord_discriminator: string
+  discord_avatar: string | null
+  email: string | null
+  banned: boolean
+  last_login_at: string
+  created_at: string
+  // profile 和 quotas 是可選的（取決於 API 參數）
+  profile?: {
+    account_created_at: string
+    reputation_score: number
+    server_roles: string[]
+    profile_privacy: string
+  }
+  quotas?: {
+    active_listings_count: number
+    max_listings: number
+    interests_today: number
+    max_interests_per_day: number
+  }
+  account_status?: {
+    banned: boolean
+    last_login_at: string
+    created_at: string
+  }
+}
 
 interface AuthContextType {
   user: User | null
@@ -47,15 +82,17 @@ let userCache: UserCache | null = null
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
   const [loading, setLoading] = useState(true)
+  const supabase = createClient()
 
   /**
-   * 重新載入用戶資訊（支援快取）
+   * 重新載入用戶資訊（使用 Supabase Auth）
    *
    * 流程：
    * 1. 檢查 memory cache
    * 2. 如果快取有效（5 分鐘內），使用快取資料
-   * 3. 如果快取過期或不存在，呼叫 /api/auth/me
-   * 4. 更新快取
+   * 3. 如果快取過期或不存在，從 Supabase Auth 取得用戶
+   * 4. 呼叫 /api/auth/me 取得完整用戶資料
+   * 5. 更新快取
    */
   const refreshUser = useCallback(async () => {
     try {
@@ -64,54 +101,35 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         const cacheAge = Date.now() - userCache.timestamp
         const cacheValid = cacheAge < CACHE_DURATION
 
-        // 🔍 診斷日誌：Cache 狀態（2025-11-04）
-        console.log('[DIAGNOSTIC] Memory cache check', {
-          cache_exists: true,
-          cache_age_ms: cacheAge,
-          cache_age_minutes: (cacheAge / 1000 / 60).toFixed(2),
-          cache_valid: cacheValid,
-          cache_duration_minutes: (CACHE_DURATION / 1000 / 60).toFixed(2),
-          cached_user_id: userCache.data.id,
-          cached_username: userCache.data.discord_username,
-        })
-
         if (cacheValid) {
           // 快取有效，直接使用
-          console.log('[DIAGNOSTIC] Using memory cache - skipping API call')
           setUser(userCache.data)
           setLoading(false)
           return
-        } else {
-          console.log('[DIAGNOSTIC] Cache expired - calling API')
         }
-      } else {
-        console.log('[DIAGNOSTIC] No cache exists - calling API')
       }
 
-      // 快取過期或不存在，呼叫 API
-      console.log('[DIAGNOSTIC] Calling /api/auth/me', {
-        credentials: 'include',
-        note: 'Will send httpOnly cookie if it exists'
-      })
-      const response = await fetch('/api/auth/me', {
-        credentials: 'include', // 包含 cookie
-      })
+      // 快取過期或不存在，從 Supabase Auth 取得用戶
+      const {
+        data: { user: authUser },
+        error: authError,
+      } = await supabase.auth.getUser()
 
-      // 🔍 診斷日誌：API 響應（2025-11-04）
-      console.log('[DIAGNOSTIC] /api/auth/me response', {
-        status: response.status,
-        ok: response.ok,
-        status_text: response.statusText,
+      if (authError || !authUser) {
+        // 未登入
+        setUser(null)
+        userCache = null
+        setLoading(false)
+        return
+      }
+
+      // 呼叫 /api/auth/me 取得完整用戶資料
+      const response = await fetch('/api/auth/me', {
+        credentials: 'include',
       })
 
       if (response.ok) {
         const data = await response.json()
-        console.log('[DIAGNOSTIC] API response data', {
-          success: data.success,
-          has_data: !!data.data,
-          user_id: data.data?.id,
-          username: data.data?.discord_username,
-        })
 
         if (data.success && data.data) {
           const wasLoggedOut = !user
@@ -121,47 +139,28 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             data: data.data,
             timestamp: Date.now()
           }
-          console.log('[DIAGNOSTIC] User data stored in memory cache')
-
-          // 清除登出流程標記（如果存在）
-          sessionStorage.removeItem('maplestory:logout-in-progress')
 
           // GA4 事件追蹤：登入成功（僅在從未登入狀態切換到已登入時觸發）
           if (wasLoggedOut) {
             trackLogin('discord')
           }
         } else {
-          console.log('[DIAGNOSTIC] Invalid response data - clearing user state')
           setUser(null)
           userCache = null
         }
       } else {
-        // 檢查是否為登出流程中的預期 401（改進：2025-11-04）
-        const isLogoutFlow = sessionStorage.getItem('maplestory:logout-in-progress') === 'true'
-
-        if (response.status === 401) {
-          if (isLogoutFlow) {
-            console.debug('[AuthContext] ✓ 預期行為：登出後的認證檢查返回 401')
-            sessionStorage.removeItem('maplestory:logout-in-progress')
-          } else {
-            console.warn('[AuthContext] ⚠️ 非預期的 401：用戶可能已被登出或 session 過期')
-          }
-        }
-
-        // 401 或其他錯誤表示未登入
+        // API 錯誤
         setUser(null)
         userCache = null
       }
     } catch (error) {
-      // 網路錯誤或其他異常（改進：2025-11-04）
-      console.error('[AuthContext] ❌ 網路錯誤或 API 異常：', error)
+      console.error('[AuthContext] Error refreshing user:', error)
       setUser(null)
       userCache = null
-      sessionStorage.removeItem('maplestory:logout-in-progress')
     } finally {
       setLoading(false)
     }
-  }, [])
+  }, [supabase])
 
   /**
    * 強制刷新用戶資訊（忽略快取）
@@ -177,111 +176,80 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [refreshUser])
 
   /**
-   * 初始化：載入當前用戶
+   * 初始化：載入當前用戶並監聽認證狀態變化
    */
   useEffect(() => {
     refreshUser()
-  }, [refreshUser])
 
-  /**
-   * 登入：觸發 LoginModal 顯示
-   * LoginModal 會處理實際的 Discord OAuth 導向
-   */
-  const login = useCallback(() => {
-    window.dispatchEvent(new CustomEvent('show-login-modal'))
-  }, [])
-
-  /**
-   * 客戶端強制清除 Cookie（保險措施）
-   *
-   * 嘗試多種 domain 和 path 組合清除 cookie
-   * 用於後端清除失敗時的備用方案
-   */
-  const forceDeleteCookie = useCallback((cookieName: string) => {
-    console.log(`[Logout] 強制清除 Cookie: ${cookieName}`)
-
-    // 嘗試多種 domain 和 path 組合
-    const hostname = window.location.hostname
-    const domains = [hostname, `.${hostname}`, '']
-    const paths = ['/', '']
-
-    domains.forEach(domain => {
-      paths.forEach(path => {
-        const cookieString = `${cookieName}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=${path}${domain ? `; domain=${domain}` : ''}`
-        document.cookie = cookieString
-        console.log(`[Logout] 嘗試清除: ${cookieString}`)
-      })
+    // 監聽 Supabase Auth 狀態變化
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (!session) {
+        // 登出時清除用戶狀態
+        setUser(null)
+        userCache = null
+      } else {
+        // 登入時重新載入用戶資料
+        refreshUser()
+      }
     })
-  }, [])
+
+    return () => {
+      subscription.unsubscribe()
+    }
+  }, [refreshUser, supabase])
 
   /**
-   * 登出：呼叫 logout API 並清除用戶狀態和快取
-   *
-   * 改進（2025-11-04）：
-   * - 增強錯誤處理和診斷日誌
-   * - 驗證 cookie 清除結果
-   * - 客戶端強制清除機制（多重保險）
-   * - 提供用戶友好的錯誤提示
+   * 登入：使用 Supabase Auth 的 Discord OAuth
+   */
+  const login = useCallback(async () => {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'discord',
+      options: {
+        redirectTo: window.location.origin,
+        scopes: 'identify guilds'
+      }
+    })
+
+    if (error) {
+      console.error('[Login] Failed:', error)
+      alert(`登入失敗: ${error.message}`)
+    }
+  }, [supabase])
+
+  /**
+   * 登出：使用 Supabase Auth signOut
    */
   const logout = useCallback(async () => {
     try {
       console.log('[Logout] 開始登出流程')
-      console.log('[Logout] Cookies before logout:', document.cookie)
 
-      const response = await fetch('/api/auth/logout', {
-        method: 'POST',
-        credentials: 'include',
-      })
+      // 使用 Supabase Auth 登出
+      const { error } = await supabase.auth.signOut()
 
-      console.log('[Logout] API Status:', response.status)
-
-      if (response.ok) {
-        const data = await response.json()
-        console.log('[Logout] API Response:', data)
-
-        // GA4 事件追蹤：登出
-        trackLogout()
-
-        // 設置標記以識別登出流程中的預期 401（改進：2025-11-04）
-        sessionStorage.setItem('maplestory:logout-in-progress', 'true')
-
-        setUser(null)
-        userCache = null // 清除快取
-
-        // 驗證 cookie 是否被清除
-        console.log('[Logout] Cookies after logout:', document.cookie)
-
-        // 客戶端強制清除（保險措施）
-        forceDeleteCookie('maplestory_session')
-
-        // 最終驗證
-        const remainingCookies = document.cookie
-        if (remainingCookies.includes('maplestory_session')) {
-          console.warn('[Logout] 警告：Cookie 仍然存在', remainingCookies)
-        } else {
-          console.log('[Logout] ✓ Cookie 已成功清除')
-        }
-
-        // 強制跳轉到首頁
-        window.location.href = '/'
-      } else {
-        // 登出失敗處理
-        const errorData = await response.json().catch(() => ({
-          message: '未知錯誤'
-        }))
-
-        console.error('[Logout] 登出失敗:', {
-          status: response.status,
-          error: errorData
-        })
-
-        alert(`登出失敗: ${errorData.message || '請重新整理頁面後再試'}`)
+      if (error) {
+        console.error('[Logout] Supabase signOut failed:', error)
+        alert(`登出失敗: ${error.message}`)
+        return
       }
+
+      // GA4 事件追蹤：登出
+      trackLogout()
+
+      // 清除本地狀態和快取
+      setUser(null)
+      userCache = null
+
+      console.log('[Logout] ✓ 登出成功')
+
+      // 重導向至首頁
+      window.location.href = '/'
     } catch (error) {
-      console.error('[Logout] 網路錯誤:', error)
-      alert('登出時發生網路錯誤，請重新整理頁面後再試')
+      console.error('[Logout] 錯誤:', error)
+      alert('登出時發生錯誤，請重新整理頁面後再試')
     }
-  }, [forceDeleteCookie])
+  }, [supabase])
 
   const value: AuthContextType = {
     user,

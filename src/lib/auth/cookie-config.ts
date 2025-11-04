@@ -29,10 +29,11 @@ export function getCookieConfig(maxAge: number) {
   return {
     httpOnly: true,
     secure: isProduction,
-    // 根據環境動態設置 sameSite（瀏覽器規範：SameSite=None 必須配合 Secure=true）
-    // - 開發環境（HTTP, secure=false）：sameSite=lax
-    // - 生產環境（HTTPS, secure=true）：sameSite=none（修復 Vercel 跨站請求問題）
-    sameSite: isProduction ? ('none' as const) : ('lax' as const),
+    // 修復（2025-11-04）：統一使用 sameSite='lax'
+    // 原因：前端和 API 都在同一域名下，不需要跨站 cookie
+    // 問題：sameSite='none' 在 Vercel 生產環境導致 POST 請求無法發送 cookie（GET 正常）
+    // 解決方案：使用 sameSite='lax' 允許同站 POST 請求，並避免瀏覽器兼容性問題
+    sameSite: 'lax' as const,
     maxAge,
     path: '/',
     // 明確不設置 domain，讓瀏覽器自動處理

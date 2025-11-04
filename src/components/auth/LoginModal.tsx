@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { BaseModal } from '@/components/common/BaseModal'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { createClient } from '@/lib/supabase/client'
 
 /**
  * LoginModal 元件
@@ -38,16 +39,25 @@ export function LoginModal() {
 
   /**
    * 處理登入按鈕點擊
-   * 設置載入狀態並導向 Discord OAuth
+   * 使用 Supabase Auth 的 Discord OAuth
    */
-  const handleLogin = () => {
+  const handleLogin = async () => {
     setIsLoading(true)
     setError(null)
 
-    // 延遲導向以顯示載入狀態
-    setTimeout(() => {
-      window.location.href = '/api/auth/discord'
-    }, 300)
+    const supabase = createClient()
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'discord',
+      options: {
+        redirectTo: window.location.origin,
+        scopes: 'identify guilds'
+      }
+    })
+
+    if (error) {
+      setError(`登入失敗: ${error.message}`)
+      setIsLoading(false)
+    }
   }
 
   /**

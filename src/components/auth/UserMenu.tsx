@@ -2,9 +2,8 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import { useAuth } from '@/contexts/AuthContext'
+import { useAuth, type User } from '@/contexts/AuthContext'
 import { useLanguage } from '@/contexts/LanguageContext'
-import type { User } from '@/lib/auth/session-validator'
 import { clientLogger } from '@/lib/logger'
 import { PrivacySettingsModal } from '@/components/settings/PrivacySettingsModal'
 
