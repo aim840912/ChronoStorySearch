@@ -9,7 +9,7 @@
  * - domain 屬性不設置，讓瀏覽器自動處理
  * - path 固定為 '/'
  * - secure 在生產環境為 true
- * - sameSite 固定為 'lax'
+ * - sameSite 固定為 'none'（允許跨站請求，修復 Vercel 環境下 POST 請求無法傳送 Cookie）
  * - httpOnly 固定為 true（安全性）
  */
 
@@ -25,7 +25,7 @@ export function getCookieConfig(maxAge: number) {
   return {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
-    sameSite: 'lax' as const,
+    sameSite: 'none' as const,
     maxAge,
     path: '/',
     // 明確不設置 domain，讓瀏覽器自動處理
