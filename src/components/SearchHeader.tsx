@@ -8,8 +8,8 @@ import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
 import { MarketFilterPanel } from '@/components/trade/MarketFilterPanel'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { LanguageToggle } from '@/components/LanguageToggle'
-import { LoginButton } from '@/components/auth/LoginButton'
-import { UserMenu } from '@/components/auth/UserMenu'
+// import { LoginButton } from '@/components/auth/LoginButton' // 暫時隱藏
+// import { UserMenu } from '@/components/auth/UserMenu' // 暫時隱藏
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useAuth } from '@/contexts/AuthContext'
 
