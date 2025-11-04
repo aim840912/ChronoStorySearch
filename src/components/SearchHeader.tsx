@@ -90,7 +90,7 @@ export const SearchHeader = memo(function SearchHeader({
   onMarketFilterChange,
 }: SearchHeaderProps) {
   const { t } = useLanguage()
-  const { user, loading } = useAuth()
+  const { user } = useAuth() // loading 暫時未使用（登入按鈕已隱藏）
 
   return (
     <div className="sticky top-0 z-40 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 backdrop-blur-sm pt-4 sm:pt-6 pb-3 sm:pb-4 shadow-md">
