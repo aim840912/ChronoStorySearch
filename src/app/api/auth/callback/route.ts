@@ -203,11 +203,48 @@ export async function GET(request: NextRequest) {
       // 繼續執行，不阻斷登入流程
     }
 
-    // 成功登入
-    apiLogger.info('User logged in via Supabase Auth', {
+    // 驗證用戶角色（僅允許管理員登入）
+    const { data: profile, error: profileError } = await supabaseAdmin
+      .from('discord_profiles')
+      .select('server_roles')
+      .eq('user_id', data.user.id)
+      .single()
+
+    if (profileError) {
+      apiLogger.error('Failed to fetch user profile for role check', {
+        user_id: data.user.id,
+        error: profileError
+      })
+    }
+
+    // 檢查是否為管理員
+    const serverRoles = profile?.server_roles || []
+    const isAdmin = Array.isArray(serverRoles) &&
+      (serverRoles.includes('Admin') || serverRoles.includes('Moderator'))
+
+    if (!isAdmin) {
+      // 非管理員 - 拒絕登入
+      apiLogger.warn('Non-admin user attempted to login', {
+        user_id: data.user.id,
+        discord_id: data.user.user_metadata?.provider_id,
+        roles: serverRoles
+      })
+
+      // 登出 Supabase Auth session
+      await supabase.auth.signOut()
+
+      // 重導向至管理員登入頁，帶上錯誤訊息
+      return NextResponse.redirect(
+        new URL('/admin/login?error=unauthorized&message=admin_only', baseUrl)
+      )
+    }
+
+    // 管理員登入成功
+    apiLogger.info('Admin user logged in via Supabase Auth', {
       user_id: data.user?.id,
       email: data.user?.email,
-      provider: 'discord'
+      provider: 'discord',
+      roles: serverRoles
     })
 
     return NextResponse.redirect(new URL('/', baseUrl))

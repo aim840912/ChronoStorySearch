@@ -8,7 +8,6 @@ import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
 import { MarketFilterPanel } from '@/components/trade/MarketFilterPanel'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { LanguageToggle } from '@/components/LanguageToggle'
-import { LoginButton } from '@/components/auth/LoginButton'
 import { UserMenu } from '@/components/auth/UserMenu'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useAuth } from '@/contexts/AuthContext'
@@ -103,8 +102,8 @@ export const SearchHeader = memo(function SearchHeader({
         <div className="absolute top-0 right-2 sm:right-4 flex gap-1.5 sm:gap-2">
           <ThemeToggle />
           <LanguageToggle />
-          {/* 認證 UI：未登入顯示登入按鈕，已登入顯示用戶選單 */}
-          {!loading && (user ? <UserMenu /> : <LoginButton />)}
+          {/* 認證 UI：已登入顯示用戶選單（登入功能僅在 /admin/login 頁面提供） */}
+          {!loading && user && <UserMenu />}
         </div>
       </div>
 

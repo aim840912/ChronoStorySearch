@@ -29,9 +29,9 @@ export default async function SystemSettingsPage() {
   // 1. 驗證 session（服務器端）
   const { valid, user } = await validateSessionFromCookies()
 
-  // 未登入 → 重導向首頁
+  // 未登入 → 重導向至管理員登入頁
   if (!valid || !user) {
-    redirect('/')
+    redirect('/admin/login')
   }
 
   // 2. 檢查管理員權限（服務器端）
