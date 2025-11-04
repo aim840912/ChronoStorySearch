@@ -121,6 +121,24 @@ async function handlePOST(request: NextRequest, user: User): Promise<Response> {
 
   response.headers.append('Set-Cookie', cookieString)
 
+  // 策略 3: 強制清除所有 sameSite 變體（修復：刪除可能存在的舊 Cookie）
+  // 目的：確保無論舊 Cookie 使用什麼 sameSite 設置（lax/none/strict）都能被刪除
+  // 原因：Cookie 刪除需要屬性完全匹配，如果舊 Cookie 是 sameSite=lax，
+  //       而我們只發送 sameSite=none 的刪除指令，瀏覽器會認為是不同的 Cookie 而拒絕刪除
+  const sameSiteVariants: Array<'none' | 'lax' | 'strict'> = ['none', 'lax', 'strict']
+  sameSiteVariants.forEach(variant => {
+    const variantCookie = [
+      `${SESSION_COOKIE_NAME}=`,
+      `Path=/`,
+      `Expires=Thu, 01 Jan 1970 00:00:00 GMT`,
+      'HttpOnly',
+      clearConfig.secure && 'Secure',
+      `SameSite=${variant}`,
+    ].filter(Boolean).join('; ')
+
+    response.headers.append('Set-Cookie', variantCookie)
+  })
+
   // 記錄清除操作詳情
   apiLogger.info('Cookie clearing executed', {
     user_id: user.id,
