@@ -6,7 +6,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { SWRProvider } from "@/providers/SWRProvider";
-import { LoginModal } from "@/components/auth/LoginModal";
+// import { LoginModal } from "@/components/auth/LoginModal"; // 暫時隱藏
 import { MaintenanceBanner } from "@/components/common/MaintenanceBanner";
 import { LoginUserBanner } from "@/components/common/LoginUserBanner";
 import { CookieConsentBanner } from "@/components/common/CookieConsentBanner";
