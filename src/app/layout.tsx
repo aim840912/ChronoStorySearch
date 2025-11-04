@@ -47,7 +47,8 @@ export default function RootLayout({
                 <MaintenanceBanner />
                 <LoginUserBanner />
                 {children}
-                <LoginModal />
+                {/* 暫時隱藏登入 Modal */}
+                {/* <LoginModal /> */}
                 <CookieConsentBanner />
                 </LanguageProvider>
             </ThemeProvider>

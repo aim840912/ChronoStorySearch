@@ -103,8 +103,8 @@ export const SearchHeader = memo(function SearchHeader({
         <div className="absolute top-0 right-2 sm:right-4 flex gap-1.5 sm:gap-2">
           <ThemeToggle />
           <LanguageToggle />
-          {/* 認證 UI：未登入顯示登入按鈕，已登入顯示用戶選單 */}
-          {!loading && (user ? <UserMenu /> : <LoginButton />)}
+          {/* 暫時隱藏登入按鈕 */}
+          {/* {!loading && (user ? <UserMenu /> : <LoginButton />)} */}
         </div>
       </div>
 
