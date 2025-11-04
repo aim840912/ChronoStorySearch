@@ -15,14 +15,17 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
 
-// 快取配置（成本優化：2025-11-03）
-const CACHE_KEY = 'maplestory:user:cache'
+// 快取配置（成本優化：2025-11-03，改進：2025-11-04）
+// 使用 memory cache 而非 localStorage，避免無痕模式下的快取同步問題
 const CACHE_DURATION = 5 * 60 * 1000 // 5 分鐘
 
 interface UserCache {
   data: User
   timestamp: number
 }
+
+// Module-level memory cache（每次頁面載入時重置）
+let userCache: UserCache | null = null
 
 /**
  * Auth Provider
@@ -35,10 +38,11 @@ interface UserCache {
  * - 提供 refreshUser 方法（重新載入用戶資訊，支援快取）
  * - 提供 forceRefreshUser 方法（強制刷新，忽略快取）
  *
- * 成本優化（2025-11-03）：
- * - 使用 localStorage 快取用戶資訊（5 分鐘 TTL）
+ * 成本優化（2025-11-03，改進：2025-11-04）：
+ * - 使用 memory cache 快取用戶資訊（5 分鐘 TTL）
  * - 減少 60-70% /api/auth/me 調用次數
  * - 關鍵操作後（建立刊登、表達興趣）使用 forceRefreshUser 立即更新配額
+ * - 修復：改用 memory cache 避免無痕模式下 localStorage 與 cookie 不同步的問題
  */
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
@@ -48,23 +52,19 @@ export function AuthProvider({ children }: { children: ReactNode }) {
    * 重新載入用戶資訊（支援快取）
    *
    * 流程：
-   * 1. 檢查 localStorage 快取
+   * 1. 檢查 memory cache
    * 2. 如果快取有效（5 分鐘內），使用快取資料
    * 3. 如果快取過期或不存在，呼叫 /api/auth/me
    * 4. 更新快取
    */
   const refreshUser = useCallback(async () => {
     try {
-      // 檢查 localStorage 快取
-      const cached = localStorage.getItem(CACHE_KEY)
-      if (cached) {
-        const { data, timestamp } = JSON.parse(cached) as UserCache
-        if (Date.now() - timestamp < CACHE_DURATION) {
-          // 快取有效，直接使用
-          setUser(data)
-          setLoading(false)
-          return
-        }
+      // 檢查 memory cache
+      if (userCache && Date.now() - userCache.timestamp < CACHE_DURATION) {
+        // 快取有效，直接使用
+        setUser(userCache.data)
+        setLoading(false)
+        return
       }
 
       // 快取過期或不存在，呼叫 API
@@ -77,11 +77,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         if (data.success && data.data) {
           const wasLoggedOut = !user
           setUser(data.data)
-          // 存入快取
-          localStorage.setItem(CACHE_KEY, JSON.stringify({
+          // 存入 memory cache
+          userCache = {
             data: data.data,
             timestamp: Date.now()
-          } as UserCache))
+          }
 
           // 清除登出流程標記（如果存在）
           sessionStorage.removeItem('maplestory:logout-in-progress')
@@ -92,7 +92,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           }
         } else {
           setUser(null)
-          localStorage.removeItem(CACHE_KEY)
+          userCache = null
         }
       } else {
         // 檢查是否為登出流程中的預期 401（改進：2025-11-04）
@@ -109,13 +109,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
         // 401 或其他錯誤表示未登入
         setUser(null)
-        localStorage.removeItem(CACHE_KEY)
+        userCache = null
       }
     } catch (error) {
       // 網路錯誤或其他異常（改進：2025-11-04）
       console.error('[AuthContext] ❌ 網路錯誤或 API 異常：', error)
       setUser(null)
-      localStorage.removeItem(CACHE_KEY)
+      userCache = null
       sessionStorage.removeItem('maplestory:logout-in-progress')
     } finally {
       setLoading(false)
@@ -131,7 +131,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
    * - 登出後（清除快取）
    */
   const forceRefreshUser = useCallback(async () => {
-    localStorage.removeItem(CACHE_KEY)
+    userCache = null
     await refreshUser()
   }, [refreshUser])
 
@@ -205,7 +205,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         sessionStorage.setItem('maplestory:logout-in-progress', 'true')
 
         setUser(null)
-        localStorage.removeItem(CACHE_KEY) // 清除快取
+        userCache = null // 清除快取
 
         // 驗證 cookie 是否被清除
         console.log('[Logout] Cookies after logout:', document.cookie)
