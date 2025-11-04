@@ -83,6 +83,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             timestamp: Date.now()
           } as UserCache))
 
+          // 清除登出流程標記（如果存在）
+          sessionStorage.removeItem('maplestory:logout-in-progress')
+
           // GA4 事件追蹤：登入成功（僅在從未登入狀態切換到已登入時觸發）
           if (wasLoggedOut) {
             trackLogin('discord')
@@ -92,14 +95,28 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           localStorage.removeItem(CACHE_KEY)
         }
       } else {
+        // 檢查是否為登出流程中的預期 401（改進：2025-11-04）
+        const isLogoutFlow = sessionStorage.getItem('maplestory:logout-in-progress') === 'true'
+
+        if (response.status === 401) {
+          if (isLogoutFlow) {
+            console.debug('[AuthContext] ✓ 預期行為：登出後的認證檢查返回 401')
+            sessionStorage.removeItem('maplestory:logout-in-progress')
+          } else {
+            console.warn('[AuthContext] ⚠️ 非預期的 401：用戶可能已被登出或 session 過期')
+          }
+        }
+
         // 401 或其他錯誤表示未登入
         setUser(null)
         localStorage.removeItem(CACHE_KEY)
       }
-    } catch {
-      // 錯誤由 API 處理，前端不需額外記錄
+    } catch (error) {
+      // 網路錯誤或其他異常（改進：2025-11-04）
+      console.error('[AuthContext] ❌ 網路錯誤或 API 異常：', error)
       setUser(null)
       localStorage.removeItem(CACHE_KEY)
+      sessionStorage.removeItem('maplestory:logout-in-progress')
     } finally {
       setLoading(false)
     }
@@ -134,28 +151,96 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [])
 
   /**
+   * 客戶端強制清除 Cookie（保險措施）
+   *
+   * 嘗試多種 domain 和 path 組合清除 cookie
+   * 用於後端清除失敗時的備用方案
+   */
+  const forceDeleteCookie = useCallback((cookieName: string) => {
+    console.log(`[Logout] 強制清除 Cookie: ${cookieName}`)
+
+    // 嘗試多種 domain 和 path 組合
+    const hostname = window.location.hostname
+    const domains = [hostname, `.${hostname}`, '']
+    const paths = ['/', '']
+
+    domains.forEach(domain => {
+      paths.forEach(path => {
+        const cookieString = `${cookieName}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=${path}${domain ? `; domain=${domain}` : ''}`
+        document.cookie = cookieString
+        console.log(`[Logout] 嘗試清除: ${cookieString}`)
+      })
+    })
+  }, [])
+
+  /**
    * 登出：呼叫 logout API 並清除用戶狀態和快取
+   *
+   * 改進（2025-11-04）：
+   * - 增強錯誤處理和診斷日誌
+   * - 驗證 cookie 清除結果
+   * - 客戶端強制清除機制（多重保險）
+   * - 提供用戶友好的錯誤提示
    */
   const logout = useCallback(async () => {
     try {
+      console.log('[Logout] 開始登出流程')
+      console.log('[Logout] Cookies before logout:', document.cookie)
+
       const response = await fetch('/api/auth/logout', {
         method: 'POST',
         credentials: 'include',
       })
 
+      console.log('[Logout] API Status:', response.status)
+
       if (response.ok) {
+        const data = await response.json()
+        console.log('[Logout] API Response:', data)
+
         // GA4 事件追蹤：登出
         trackLogout()
 
+        // 設置標記以識別登出流程中的預期 401（改進：2025-11-04）
+        sessionStorage.setItem('maplestory:logout-in-progress', 'true')
+
         setUser(null)
         localStorage.removeItem(CACHE_KEY) // 清除快取
+
+        // 驗證 cookie 是否被清除
+        console.log('[Logout] Cookies after logout:', document.cookie)
+
+        // 客戶端強制清除（保險措施）
+        forceDeleteCookie('maplestory_session')
+
+        // 最終驗證
+        const remainingCookies = document.cookie
+        if (remainingCookies.includes('maplestory_session')) {
+          console.warn('[Logout] 警告：Cookie 仍然存在', remainingCookies)
+        } else {
+          console.log('[Logout] ✓ Cookie 已成功清除')
+        }
+
+        // 強制跳轉到首頁
         window.location.href = '/'
+      } else {
+        // 登出失敗處理
+        const errorData = await response.json().catch(() => ({
+          message: '未知錯誤'
+        }))
+
+        console.error('[Logout] 登出失敗:', {
+          status: response.status,
+          error: errorData
+        })
+
+        alert(`登出失敗: ${errorData.message || '請重新整理頁面後再試'}`)
       }
-      // 登出失敗時不記錄（用戶可重試或刷新頁面）
-    } catch {
-      // 網路錯誤由瀏覽器處理，不需額外記錄
+    } catch (error) {
+      console.error('[Logout] 網路錯誤:', error)
+      alert('登出時發生網路錯誤，請重新整理頁面後再試')
     }
-  }, [])
+  }, [forceDeleteCookie])
 
   const value: AuthContextType = {
     user,

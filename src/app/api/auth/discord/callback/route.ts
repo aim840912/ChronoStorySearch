@@ -29,6 +29,7 @@ import { apiLogger } from '@/lib/logger'
 import { ValidationError } from '@/lib/errors'
 import { parseSnowflakeTimestamp } from '@/lib/utils/discord-utils'
 import { withBotDetection } from '@/lib/bot-detection/api-middleware'
+import { SESSION_COOKIE_NAME, getSessionCookieConfig } from '@/lib/auth/cookie-config'
 
 // Discord OAuth2 配置
 const DISCORD_CLIENT_ID = process.env.DISCORD_CLIENT_ID
@@ -40,7 +41,6 @@ const DISCORD_TOKEN_URL = 'https://discord.com/api/oauth2/token'
 const DISCORD_USER_URL = 'https://discord.com/api/users/@me'
 
 // Session Cookie 配置
-const SESSION_COOKIE_NAME = 'maplestory_session'
 const SESSION_MAX_AGE = 30 * 24 * 60 * 60 // 30 天（秒）
 
 /**
@@ -275,17 +275,15 @@ async function handleGET(request: NextRequest) {
     // 8. 設置 session cookie 並重導向至首頁
     const response = NextResponse.redirect(new URL('/', baseUrl))
 
-    response.cookies.set(SESSION_COOKIE_NAME, sessionToken, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'lax',
-      maxAge: SESSION_MAX_AGE,
-      path: '/'
-    })
+    // 使用統一的 cookie 配置（改進：2025-11-04）
+    // 確保與登出時的配置完全一致
+    const cookieConfig = getSessionCookieConfig(SESSION_MAX_AGE)
+    response.cookies.set(SESSION_COOKIE_NAME, sessionToken, cookieConfig)
 
     apiLogger.info('User logged in successfully', {
       user_id: userId,
-      discord_username: discordUser.username
+      discord_username: discordUser.username,
+      cookie_config: cookieConfig, // 記錄配置以便診斷
     })
 
     return response

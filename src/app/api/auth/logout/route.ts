@@ -22,9 +22,7 @@ import { withAuthAndError, User } from '@/lib/middleware/api-middleware'
 import { revokeSession } from '@/lib/auth/session-validator'
 import { success } from '@/lib/api-response'
 import { apiLogger } from '@/lib/logger'
-
-// Session Cookie 配置
-const SESSION_COOKIE_NAME = 'maplestory_session'
+import { SESSION_COOKIE_NAME, getClearCookieConfig } from '@/lib/auth/cookie-config'
 
 // 顯式指定使用 Node.js Runtime（確保 httpOnly cookies 正確處理）
 export const runtime = 'nodejs'
@@ -57,8 +55,22 @@ export const runtime = 'nodejs'
  * }
  */
 async function handlePOST(request: NextRequest, user: User): Promise<Response> {
-  // 1. 取得 session token（從 cookie）
+  // 1. 記錄登出請求詳情（改進：2025-11-04）
   const sessionToken = request.cookies.get(SESSION_COOKIE_NAME)?.value
+  const host = request.headers.get('host')
+  const origin = request.headers.get('origin')
+
+  apiLogger.info('Logout request received', {
+    user_id: user.id,
+    session_id: user.session_id,
+    discord_username: user.discord_username,
+    has_cookie: !!sessionToken,
+    request_details: {
+      host,
+      origin,
+      cookie_name: SESSION_COOKIE_NAME,
+    }
+  })
 
   if (!sessionToken) {
     // 理論上不會發生（withAuthAndError 已驗證），但仍需處理
@@ -70,9 +82,8 @@ async function handlePOST(request: NextRequest, user: User): Promise<Response> {
   try {
     await revokeSession(user.session_id)
 
-    apiLogger.info('User logged out successfully', {
+    apiLogger.info('Session revoked successfully', {
       user_id: user.id,
-      discord_username: user.discord_username,
       session_id: user.session_id
     })
   } catch (error) {
@@ -85,7 +96,7 @@ async function handlePOST(request: NextRequest, user: User): Promise<Response> {
     })
   }
 
-  // 3. 建立回應並清除 cookie
+  // 3. 建立回應並清除 cookie（改進：使用統一配置 + 多重清除策略）
   const response = success(
     {
       user_id: user.id,
@@ -94,13 +105,33 @@ async function handlePOST(request: NextRequest, user: User): Promise<Response> {
     '登出成功'
   )
 
-  // 清除 session cookie（設置 maxAge: 0）
-  response.cookies.set(SESSION_COOKIE_NAME, '', {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: 'lax',
-    maxAge: 0, // 立即過期
-    path: '/'
+  // 策略 1: 使用統一的 cookie 配置（與登入時完全一致）
+  const clearConfig = getClearCookieConfig()
+  response.cookies.set(SESSION_COOKIE_NAME, '', clearConfig)
+
+  // 策略 2: 直接設置 Set-Cookie header（備用方案，確保在所有環境都能清除）
+  const cookieString = [
+    `${SESSION_COOKIE_NAME}=`,
+    `Path=/`,
+    `Expires=Thu, 01 Jan 1970 00:00:00 GMT`,
+    clearConfig.httpOnly && 'HttpOnly',
+    clearConfig.secure && 'Secure',
+    `SameSite=${clearConfig.sameSite}`,
+  ].filter(Boolean).join('; ')
+
+  response.headers.append('Set-Cookie', cookieString)
+
+  // 記錄清除操作詳情
+  apiLogger.info('Cookie clearing executed', {
+    user_id: user.id,
+    cookie_config: clearConfig,
+    set_cookie_header: cookieString,
+  })
+
+  apiLogger.info('User logged out successfully', {
+    user_id: user.id,
+    discord_username: user.discord_username,
+    session_id: user.session_id
   })
 
   return response
