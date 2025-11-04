@@ -5,12 +5,12 @@
  *
  * 功能：
  * 1. 產生隨機 state 參數（CSRF 防護）
- * 2. 將 state 存入 Redis（10 分鐘過期）
+ * 2. 將 state 存入 Redis（30 分鐘過期）
  * 3. 重導向至 Discord 授權頁面
  *
  * 防護措施：
  * - Bot Detection - User-Agent 過濾
- * - Rate Limiting - 5 次/分鐘（防止掃描工具濫用 state token）
+ * - Rate Limiting - 10 次/分鐘（防止掃描工具濫用 state token）
  *
  * 參考文件：
  * - docs/architecture/交易系統/02-認證與資料庫.md
@@ -35,7 +35,7 @@ const DISCORD_OAUTH_URL = 'https://discord.com/api/oauth2/authorize'
 // identify: 用戶基本資訊（ID、username、avatar）
 // guilds: 用戶加入的伺服器列表（用於驗證伺服器成員資格）
 const SCOPES = ['identify', 'guilds']
-const STATE_EXPIRY = 600 // 10 分鐘（秒）
+const STATE_EXPIRY = 1800 // 30 分鐘（秒）
 
 /**
  * GET /api/auth/discord
@@ -45,7 +45,7 @@ const STATE_EXPIRY = 600 // 10 分鐘（秒）
  * 流程：
  * 1. 檢查環境變數配置
  * 2. 產生隨機 state（UUID）
- * 3. 將 state 存入 Redis（10 分鐘過期，防止重放攻擊）
+ * 3. 將 state 存入 Redis（30 分鐘過期，防止重放攻擊）
  * 4. 建構 Discord 授權 URL
  * 5. 重導向至 Discord
  *
@@ -79,7 +79,7 @@ async function handleGET(request: NextRequest) {
     // 2. 產生隨機 state（CSRF Token）
     const state = uuidv4()
 
-    // 3. 將 state 存入 Redis（10 分鐘過期）
+    // 3. 將 state 存入 Redis（30 分鐘過期）
     // 用途：callback 時驗證 state，防止 CSRF 攻擊
     const stateKey = RedisKeys.OAUTH_STATE(state)
     await redis.set(stateKey, {
@@ -119,14 +119,14 @@ async function handleGET(request: NextRequest) {
   }
 }
 
-// Bot Detection + Rate Limiting（5次/分鐘，防止掃描工具濫用）
+// Bot Detection + Rate Limiting（10次/分鐘，允許合法用戶重試）
 export const GET = withBotDetection(handleGET, {
   module: 'DiscordOAuthAPI',
   botDetection: {
     enableRateLimit: true,
     enableBehaviorDetection: false,
     rateLimit: {
-      limit: 5, // 每分鐘 5 次（OAuth 啟動端點，嚴格限制）
+      limit: 10, // 每分鐘 10 次（允許合法用戶重試）
       window: 60 // 1 分鐘
     }
   }

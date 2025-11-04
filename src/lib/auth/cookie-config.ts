@@ -9,7 +9,9 @@
  * - domain 屬性不設置，讓瀏覽器自動處理
  * - path 固定為 '/'
  * - secure 在生產環境為 true
- * - sameSite 固定為 'none'（允許跨站請求，修復 Vercel 環境下 POST 請求無法傳送 Cookie）
+ * - sameSite 根據環境動態設置：
+ *   - 開發環境：'lax'（因為 secure=false，瀏覽器不接受 sameSite=none）
+ *   - 生產環境：'none'（允許跨站請求，修復 Vercel 環境下 POST 請求無法傳送 Cookie）
  * - httpOnly 固定為 true（安全性）
  */
 
@@ -22,10 +24,15 @@ export const SESSION_COOKIE_NAME = 'maplestory_session'
  * @returns Cookie 配置物件
  */
 export function getCookieConfig(maxAge: number) {
+  const isProduction = process.env.NODE_ENV === 'production'
+
   return {
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: 'none' as const,
+    secure: isProduction,
+    // 根據環境動態設置 sameSite（瀏覽器規範：SameSite=None 必須配合 Secure=true）
+    // - 開發環境（HTTP, secure=false）：sameSite=lax
+    // - 生產環境（HTTPS, secure=true）：sameSite=none（修復 Vercel 跨站請求問題）
+    sameSite: isProduction ? ('none' as const) : ('lax' as const),
     maxAge,
     path: '/',
     // 明確不設置 domain，讓瀏覽器自動處理

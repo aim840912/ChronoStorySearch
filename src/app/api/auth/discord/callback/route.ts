@@ -108,8 +108,16 @@ async function handleGET(request: NextRequest) {
     const storedState = await redis.get(stateKey)
 
     if (!storedState) {
-      apiLogger.warn('Invalid or expired state', { state })
-      throw new ValidationError('無效或過期的 OAuth 請求')
+      apiLogger.warn('Invalid or expired state', {
+        state,
+        stateKey,
+        ip: request.headers.get('x-forwarded-for'),
+        userAgent: request.headers.get('user-agent'),
+        hint: 'State not found in Redis - 可能已過期（TTL: 30分鐘）或未正確存儲'
+      })
+      throw new ValidationError(
+        'OAuth 請求已過期（超過 30 分鐘），請返回首頁重新登入。如果問題持續發生，請稍後再試。'
+      )
     }
 
     // 刪除已使用的 state（一次性使用）
