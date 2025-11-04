@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { BaseModal } from '@/components/common/BaseModal'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { createClient } from '@/lib/supabase/client'
+import { getBaseUrl } from '@/lib/env/url-config'
 
 /**
  * LoginModal 元件
@@ -49,7 +50,7 @@ export function LoginModal() {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'discord',
       options: {
-        redirectTo: window.location.origin,
+        redirectTo: getBaseUrl(),
         scopes: 'identify guilds'
       }
     })

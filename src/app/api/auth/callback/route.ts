@@ -17,6 +17,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient, supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger, dbLogger } from '@/lib/logger'
+import { getBaseUrl } from '@/lib/env/url-config'
 import type { User } from '@supabase/supabase-js'
 
 /**
@@ -147,17 +148,14 @@ async function syncUserToDatabase(user: User) {
  * 失敗重導向：/?error=oauth_failed
  */
 export async function GET(request: NextRequest) {
-  const { searchParams, origin } = new URL(request.url)
+  const { searchParams } = new URL(request.url)
   const code = searchParams.get('code')
   const error = searchParams.get('error')
   const errorDescription = searchParams.get('error_description')
 
-  // 確定正確的 base URL
-  const baseUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
-      : origin || 'http://localhost:3000'
+  // 確定正確的 base URL（使用當前部署環境的 URL）
+  // 這確保預覽部署使用預覽 URL，生產部署使用生產 URL
+  const baseUrl = getBaseUrl()
 
   // 用戶拒絕授權或其他錯誤
   if (error) {

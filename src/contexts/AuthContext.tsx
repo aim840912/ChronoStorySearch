@@ -3,6 +3,7 @@
 import { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import { trackLogin, trackLogout } from '@/lib/analytics/ga4'
+import { getBaseUrl } from '@/lib/env/url-config'
 
 /**
  * 前端使用的 User 介面
@@ -237,7 +238,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'discord',
       options: {
-        redirectTo: window.location.origin,
+        redirectTo: getBaseUrl(),
         scopes: 'identify guilds'
       }
     })
