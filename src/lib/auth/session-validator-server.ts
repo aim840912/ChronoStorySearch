@@ -1,25 +1,25 @@
 /**
- * Server Component 專用的 Session 驗證函數
+ * Server Component 專用的 Session 驗證函數（使用 Supabase Auth）
  *
  * 功能：
- * - 在 Server Components 中驗證 session
- * - 從 cookies() 讀取 session cookie
- * - 包裝 validateSession() 以適配 Server Component 環境
+ * - 在 Server Components 中驗證 Supabase Auth session
+ * - 從 Supabase Auth 取得當前用戶
+ * - 從資料庫查詢完整用戶資訊
  *
  * 使用場景：
  * - Server Components 中的權限檢查
- * - API Route Handlers 的替代方案（直接查詢）
+ * - 需要完整用戶資訊的伺服器端邏輯
  *
  * 參考文件：
- * - docs/architecture/交易系統/05-安全與可靠性.md
+ * - https://supabase.com/docs/guides/auth/server-side/nextjs
  */
 
-import { cookies } from 'next/headers'
-import { NextRequest } from 'next/server'
-import { validateSession, SessionValidationResult } from './session-validator'
+import { createClient, supabaseAdmin } from '@/lib/supabase/server'
+import type { SessionValidationResult } from './session-validator'
+import { dbLogger } from '@/lib/logger'
 
 /**
- * 從 cookies 驗證 session（Server Component 專用）
+ * 從 Supabase Auth 驗證 session（Server Component 專用）
  *
  * 使用範例：
  * ```typescript
@@ -35,29 +35,82 @@ import { validateSession, SessionValidationResult } from './session-validator'
  */
 export async function validateSessionFromCookies(): Promise<SessionValidationResult> {
   try {
-    // 1. 從 Next.js cookies API 讀取 session cookie
-    // Next.js 15: cookies() 返回 Promise
-    const cookieStore = await cookies()
-    const sessionCookie = cookieStore.get('maplestory_session')?.value
+    // 1. 從 Supabase Auth 取得當前用戶
+    const supabase = await createClient()
+    const {
+      data: { user: authUser },
+      error: authError,
+    } = await supabase.auth.getUser()
 
-    if (!sessionCookie) {
+    if (authError || !authUser) {
       return { valid: false, user: null }
     }
 
-    // 2. 建立 NextRequest 物件給 validateSession
-    // validateSession 需要 NextRequest 來讀取 cookies
-    const request = new NextRequest('http://localhost', {
-      headers: {
-        cookie: `maplestory_session=${sessionCookie}`,
+    // 2. 從資料庫查詢完整用戶資料
+    // 先用 Supabase Auth UUID 查詢
+    let { data: user, error: userError } = await supabaseAdmin
+      .from('users')
+      .select('*')
+      .eq('id', authUser.id)
+      .single()
+
+    // 如果查不到，嘗試用 discord_id 查詢（向後兼容）
+    if (userError && userError.code === 'PGRST116') {
+      const discordId = authUser.user_metadata?.provider_id || authUser.user_metadata?.sub
+
+      if (discordId) {
+        dbLogger.debug('User not found by Supabase Auth UUID, trying discord_id', {
+          supabase_auth_id: authUser.id,
+          discord_id: discordId
+        })
+
+        const result = await supabaseAdmin
+          .from('users')
+          .select('*')
+          .eq('discord_id', discordId)
+          .single()
+
+        user = result.data
+        userError = result.error
+      }
+    }
+
+    if (userError || !user) {
+      dbLogger.error('Failed to fetch user data from validateSessionFromCookies', {
+        user_id: authUser.id,
+        error: userError
+      })
+      return { valid: false, user: null }
+    }
+
+    // 3. 檢查封禁狀態
+    if (user.banned) {
+      dbLogger.warn('Banned user attempted to access protected resource', {
+        user_id: user.id
+      })
+      return { valid: false, user: null }
+    }
+
+    // 4. 返回用戶資訊
+    // 注意：Supabase Auth 不使用自訂 session_id，這裡保留空字串以兼容舊介面
+    return {
+      valid: true,
+      user: {
+        id: user.id,
+        discord_id: user.discord_id,
+        discord_username: user.discord_username,
+        discord_discriminator: user.discord_discriminator,
+        discord_avatar: user.discord_avatar,
+        email: user.email,
+        banned: user.banned,
+        last_login_at: user.last_login_at,
+        created_at: user.created_at,
+        session_id: '', // Supabase Auth 不使用自訂 session_id
+        access_token: '', // 不在這裡暴露 access_token
       },
-    })
-
-    // 3. 呼叫現有的 validateSession 函數
-    const result = await validateSession(request)
-
-    return result
+    }
   } catch (error) {
-    // 驗證失敗時返回無效結果
+    dbLogger.error('Unexpected error during Supabase Auth validation', { error })
     return { valid: false, user: null }
   }
 }
