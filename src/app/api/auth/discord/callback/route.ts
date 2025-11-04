@@ -283,7 +283,28 @@ async function handleGET(request: NextRequest) {
     // 8. 設置 session cookie 並重導向至首頁
     const response = NextResponse.redirect(new URL('/', baseUrl))
 
-    // 使用統一的 cookie 配置（改進：2025-11-04）
+    // 策略 1: 清除可能存在的舊 cookie（向後兼容，修復：2025-11-04）
+    // 原因：舊用戶瀏覽器中可能存在 sameSite='lax' 的 cookie
+    //       POST /api/auth/logout 因 sameSite='lax' 無法發送 cookie 導致 401
+    //       在登入時主動清除舊 cookie，確保設置新 cookie (sameSite='none')
+    const isProduction = process.env.NODE_ENV === 'production'
+    if (isProduction) {
+      response.cookies.delete({
+        name: SESSION_COOKIE_NAME,
+        path: '/',
+        httpOnly: true,
+        secure: true,
+        sameSite: 'lax',  // 刪除舊的 cookie
+      })
+
+      apiLogger.info('Cleared old session cookie before setting new one', {
+        user_id: userId,
+        cookie_name: SESSION_COOKIE_NAME,
+        old_sameSite: 'lax'
+      })
+    }
+
+    // 策略 2: 設置新 cookie（使用統一的 cookie 配置）
     // 確保與登出時的配置完全一致
     const cookieConfig = getSessionCookieConfig(SESSION_MAX_AGE)
     response.cookies.set(SESSION_COOKIE_NAME, sessionToken, cookieConfig)
