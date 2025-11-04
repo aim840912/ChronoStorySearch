@@ -109,6 +109,8 @@ async function handlePOST(request: NextRequest, user: User): Promise<Response> {
   // 原因：之前混用 response.cookies.set() 和 response.headers.append() 導致在 Vercel 生產環境產生 Header 衝突
   // 解決方案：使用單一 API，確保屬性與登入時完全一致，避免 API 混用造成的問題
   const isProduction = process.env.NODE_ENV === 'production'
+
+  // 策略 1: 刪除當前 cookie (使用當前配置)
   response.cookies.delete({
     name: SESSION_COOKIE_NAME,
     path: '/',
@@ -117,16 +119,48 @@ async function handlePOST(request: NextRequest, user: User): Promise<Response> {
     sameSite: isProduction ? 'none' : 'lax',
   })
 
-  // 記錄清除操作詳情
-  apiLogger.info('Cookie clearing executed', {
-    user_id: user.id,
-    cookie_config: {
+  // 策略 2: 向後兼容 - 刪除舊的 sameSite='lax' cookie（修復：2025-11-04）
+  // 原因：之前部署時設置的 cookie 使用 sameSite='lax'
+  //       Cookie 刪除需要屬性完全匹配，所以需要同時嘗試刪除舊配置
+  // 適用時機：僅在生產環境執行（開發環境始終使用 'lax'，不需要此策略）
+  if (isProduction) {
+    response.cookies.delete({
       name: SESSION_COOKIE_NAME,
       path: '/',
       httpOnly: true,
-      secure: isProduction,
-      sameSite: isProduction ? 'none' : 'lax',
-    },
+      secure: true,
+      sameSite: 'lax',  // 刪除舊的 cookie
+    })
+  }
+
+  // 記錄清除操作詳情
+  apiLogger.info('Cookie clearing executed', {
+    user_id: user.id,
+    strategies: isProduction ? 2 : 1,
+    cookie_configs: isProduction ? [
+      {
+        name: SESSION_COOKIE_NAME,
+        path: '/',
+        httpOnly: true,
+        secure: true,
+        sameSite: 'none',
+        note: '刪除新 cookie'
+      },
+      {
+        name: SESSION_COOKIE_NAME,
+        path: '/',
+        httpOnly: true,
+        secure: true,
+        sameSite: 'lax',
+        note: '刪除舊 cookie（向後兼容）'
+      }
+    ] : [{
+      name: SESSION_COOKIE_NAME,
+      path: '/',
+      httpOnly: true,
+      secure: false,
+      sameSite: 'lax',
+    }],
   })
 
   apiLogger.info('User logged out successfully', {
