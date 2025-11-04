@@ -22,6 +22,9 @@ import { validateSessionFromCookies } from '@/lib/auth/session-validator-server'
 import { checkIsAdmin } from '@/lib/auth/admin-validator'
 import SettingsContent from './SettingsContent'
 
+// 強制動態渲染（因為使用 cookies 進行認證）
+export const dynamic = 'force-dynamic'
+
 export default async function SystemSettingsPage() {
   // 1. 驗證 session（服務器端）
   const { valid, user } = await validateSessionFromCookies()
