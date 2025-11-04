@@ -219,24 +219,40 @@ async function handleGET(_request: NextRequest, user: User) {
   marketQuery = marketQuery.order(sort_by, { ascending })
   marketQuery = marketQuery.range(offset, offset + limit - 1)
 
-  // 3. 並行執行查詢
-  const [userInfoResult, marketResult] = await Promise.all([
-    // 查詢用戶資訊（使用 RPC 函數）
-    supabaseAdmin.rpc('get_user_info_with_quotas', {
-      p_user_id: user.id,
-      p_session_id: user.session_id
-    }),
+  // 3. 並行執行查詢（移除 RPC 函數依賴，改為直接查詢）
+  const [profileResult, listingsCountResult, interestsTodayResult, marketResult] = await Promise.all([
+    // 查詢 discord_profiles
+    supabaseAdmin
+      .from('discord_profiles')
+      .select('account_created_at, reputation_score, server_roles, profile_privacy')
+      .eq('user_id', user.id)
+      .single(),
+
+    // 查詢活躍刊登數量
+    supabaseAdmin
+      .from('listings')
+      .select('*', { count: 'exact', head: true })
+      .eq('user_id', user.id)
+      .eq('status', 'active'),
+
+    // 查詢今日表達興趣次數
+    supabaseAdmin
+      .from('interests')
+      .select('*', { count: 'exact', head: true })
+      .eq('buyer_id', user.id)
+      .gte('created_at', new Date().toISOString().split('T')[0]),
+
     // 查詢市場刊登
     marketQuery
   ])
 
-  // 4. 處理用戶資訊結果
-  const { data: rpcResult, error: rpcError } = userInfoResult
+  // 4. 處理 discord_profiles 結果
+  const { data: profile, error: profileError } = profileResult
 
-  if (rpcError || !rpcResult) {
-    apiLogger.error('批次查詢失敗（用戶資訊）', {
+  if (profileError || !profile) {
+    apiLogger.error('批次查詢失敗（Discord 個人資料）', {
       user_id: user.id,
-      error: rpcError
+      error: profileError
     })
     throw new ValidationError('批次查詢失敗')
   }
@@ -244,6 +260,7 @@ async function handleGET(_request: NextRequest, user: User) {
   // 從系統設定讀取配額上限
   const systemSettings = await getSystemSettings()
 
+  // 組合用戶資訊（移除 session 資訊，Supabase Auth 不需要）
   const userInfo = {
     user_id: user.id,
     discord_id: user.discord_id,
@@ -251,12 +268,16 @@ async function handleGET(_request: NextRequest, user: User) {
     discord_discriminator: user.discord_discriminator,
     discord_avatar: user.discord_avatar,
     email: user.email,
-    profile: rpcResult.profile,
-    session: rpcResult.session,
+    profile: {
+      account_created_at: profile.account_created_at,
+      reputation_score: profile.reputation_score,
+      server_roles: profile.server_roles || [],
+      profile_privacy: profile.profile_privacy
+    },
     quotas: {
-      active_listings_count: rpcResult.quotas.active_listings_count ?? 0,
+      active_listings_count: listingsCountResult.count ?? 0,
       max_listings: systemSettings.max_active_listings_per_user,
-      interests_today: rpcResult.quotas.interests_today_count ?? 0,
+      interests_today: interestsTodayResult.count ?? 0,
       max_interests_per_day: 100
     },
     account_status: {
