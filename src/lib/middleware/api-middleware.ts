@@ -95,11 +95,33 @@ export function requireAuth(
       const accessToken = session?.provider_token || '' // Discord OAuth access token
 
       // 2. 從資料庫查詢完整用戶資料
-      const { data: dbUser, error: dbError } = await supabaseAdmin
+      // 先用 Supabase Auth UUID 查詢
+      let { data: dbUser, error: dbError } = await supabaseAdmin
         .from('users')
         .select('*')
         .eq('id', authUser.id)
         .single()
+
+      // 如果查不到，嘗試用 discord_id 查詢（遷移場景）
+      if (dbError && dbError.code === 'PGRST116') {
+        const discordId = authUser.user_metadata?.provider_id || authUser.user_metadata?.sub
+
+        if (discordId) {
+          dbLogger.debug('User not found by Supabase Auth UUID, trying discord_id', {
+            supabase_auth_id: authUser.id,
+            discord_id: discordId
+          })
+
+          const result = await supabaseAdmin
+            .from('users')
+            .select('*')
+            .eq('discord_id', discordId)
+            .single()
+
+          dbUser = result.data
+          dbError = result.error
+        }
+      }
 
       if (dbError || !dbUser) {
         dbLogger.error('Authentication failed: user not found in database', {
@@ -188,11 +210,33 @@ export function requireAdmin(
       const accessToken = session?.provider_token || '' // Discord OAuth access token
 
       // 2. 從資料庫查詢完整用戶資料
-      const { data: dbUser, error: dbError } = await supabaseAdmin
+      // 先用 Supabase Auth UUID 查詢
+      let { data: dbUser, error: dbError } = await supabaseAdmin
         .from('users')
         .select('*')
         .eq('id', authUser.id)
         .single()
+
+      // 如果查不到，嘗試用 discord_id 查詢（遷移場景）
+      if (dbError && dbError.code === 'PGRST116') {
+        const discordId = authUser.user_metadata?.provider_id || authUser.user_metadata?.sub
+
+        if (discordId) {
+          dbLogger.debug('Admin user not found by Supabase Auth UUID, trying discord_id', {
+            supabase_auth_id: authUser.id,
+            discord_id: discordId
+          })
+
+          const result = await supabaseAdmin
+            .from('users')
+            .select('*')
+            .eq('discord_id', discordId)
+            .single()
+
+          dbUser = result.data
+          dbError = result.error
+        }
+      }
 
       if (dbError || !dbUser) {
         dbLogger.error('Admin authentication failed: user not found in database', {
@@ -309,11 +353,33 @@ export function optionalAuth(
       }
 
       // 3. 從資料庫查詢完整用戶資料
-      const { data: dbUser, error: dbError } = await supabaseAdmin
+      // 先用 Supabase Auth UUID 查詢
+      let { data: dbUser, error: dbError } = await supabaseAdmin
         .from('users')
         .select('*')
         .eq('id', authUser.id)
         .single()
+
+      // 如果查不到，嘗試用 discord_id 查詢（遷移場景）
+      if (dbError && dbError.code === 'PGRST116') {
+        const discordId = authUser.user_metadata?.provider_id || authUser.user_metadata?.sub
+
+        if (discordId) {
+          dbLogger.debug('Optional auth: user not found by Supabase Auth UUID, trying discord_id', {
+            supabase_auth_id: authUser.id,
+            discord_id: discordId
+          })
+
+          const result = await supabaseAdmin
+            .from('users')
+            .select('*')
+            .eq('discord_id', discordId)
+            .single()
+
+          dbUser = result.data
+          dbError = result.error
+        }
+      }
 
       // 4. 如果資料庫查詢失敗或用戶被封禁，傳遞 null
       if (dbError || !dbUser || dbUser.banned) {

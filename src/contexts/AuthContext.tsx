@@ -124,9 +124,25 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       }
 
       // 呼叫 /api/auth/me 取得完整用戶資料
-      const response = await fetch('/api/auth/me', {
+      let response = await fetch('/api/auth/me', {
         credentials: 'include',
       })
+
+      // 如果返回 401，表示用戶未同步到資料庫，先調用同步 API
+      if (response.status === 401) {
+        // 調用同步 API
+        const syncResponse = await fetch('/api/auth/sync', {
+          method: 'POST',
+          credentials: 'include',
+        })
+
+        if (syncResponse.ok) {
+          // 同步成功，重新取得用戶資料
+          response = await fetch('/api/auth/me', {
+            credentials: 'include',
+          })
+        }
+      }
 
       if (response.ok) {
         const data = await response.json()
@@ -139,6 +155,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             data: data.data,
             timestamp: Date.now()
           }
+
+          // 除錯日誌：確認頭貼資料
+          console.log('[AuthContext] User loaded:', {
+            discord_id: data.data.discord_id,
+            discord_avatar: data.data.discord_avatar,
+            discord_username: data.data.discord_username
+          })
 
           // GA4 事件追蹤：登入成功（僅在從未登入狀態切換到已登入時觸發）
           if (wasLoggedOut) {
@@ -177,20 +200,27 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   /**
    * 初始化：載入當前用戶並監聽認證狀態變化
+   *
+   * 注意：不再手動處理 OAuth code exchange
+   * Supabase Auth 會自動處理 PKCE 流程並觸發 onAuthStateChange
    */
   useEffect(() => {
+    // 初始載入當前用戶
     refreshUser()
 
     // 監聽 Supabase Auth 狀態變化
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      console.log('[AuthContext] Auth state changed:', event, session ? 'session exists' : 'no session')
+
       if (!session) {
         // 登出時清除用戶狀態
         setUser(null)
         userCache = null
       } else {
         // 登入時重新載入用戶資料
+        // 這會在 OAuth 成功後自動觸發
         refreshUser()
       }
     })

@@ -25,18 +25,7 @@ import { createClient } from '@/lib/supabase/server'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { success } from '@/lib/api-response'
 import { apiLogger, dbLogger } from '@/lib/logger'
-import { NotFoundError } from '@/lib/errors'
 import { getSystemSettings } from '@/lib/config/system-config'
-
-/**
- * Discord 個人資料介面
- */
-interface DiscordProfile {
-  account_created_at: string
-  reputation_score: number
-  server_roles: string[]
-  profile_privacy: string
-}
 
 /**
  * 用戶資訊回應介面
@@ -133,11 +122,33 @@ export async function GET(request: NextRequest) {
     }
 
     // 2. 從資料庫查詢完整用戶資料
-    const { data: user, error: userError } = await supabaseAdmin
+    // 先用 Supabase Auth UUID 查詢
+    let { data: user, error: userError } = await supabaseAdmin
       .from('users')
       .select('*')
       .eq('id', authUser.id)
       .single()
+
+    // 如果查不到，嘗試用 discord_id 查詢（遷移場景）
+    if (userError && userError.code === 'PGRST116') {
+      const discordId = authUser.user_metadata?.provider_id || authUser.user_metadata?.sub
+
+      if (discordId) {
+        dbLogger.debug('User not found by Supabase Auth UUID, trying discord_id', {
+          supabase_auth_id: authUser.id,
+          discord_id: discordId
+        })
+
+        const result = await supabaseAdmin
+          .from('users')
+          .select('*')
+          .eq('discord_id', discordId)
+          .single()
+
+        user = result.data
+        userError = result.error
+      }
+    }
 
     if (userError || !user) {
       dbLogger.error('Failed to fetch user data', {
@@ -173,7 +184,6 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url)
     const includeQuotas = searchParams.get('include_quotas') === 'true'
 
-    let profile: DiscordProfile
     let quotas: UserInfoResponse['quotas'] | undefined = undefined
 
     // 4. 查詢 Discord 個人資料
@@ -188,10 +198,18 @@ export async function GET(request: NextRequest) {
         user_id: user.id,
         error: profileError
       })
-      throw new NotFoundError('Discord 個人資料不存在')
+      // 返回 401 而不是 500，讓 AuthContext 觸發 sync
+      return NextResponse.json(
+        {
+          success: false,
+          error: 'Discord 個人資料不存在',
+          code: 'PROFILE_NOT_FOUND'
+        },
+        { status: 401 }
+      )
     }
 
-    profile = profileData
+    const profile = profileData
 
     // 5. 查詢配額資訊（如果需要）
     if (includeQuotas) {

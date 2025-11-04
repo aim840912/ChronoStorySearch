@@ -44,11 +44,13 @@ export default function RootLayout({
           <AuthProvider>
             <ThemeProvider>
               <LanguageProvider>
-                <MaintenanceBanner />
-                <LoginUserBanner />
-                {children}
-                <LoginModal />
-                <CookieConsentBanner />
+                <>
+                  <MaintenanceBanner key="maintenance-banner" />
+                  <LoginUserBanner key="login-user-banner" />
+                  <div key="page-content">{children}</div>
+                  <LoginModal key="login-modal" />
+                  <CookieConsentBanner key="cookie-consent-banner" />
+                </>
                 </LanguageProvider>
             </ThemeProvider>
           </AuthProvider>

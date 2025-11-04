@@ -1,8 +1,8 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useMemo, useCallback, memo } from 'react'
 import { useRouter } from 'next/navigation'
-import { useAuth, type User } from '@/contexts/AuthContext'
+import { useAuth } from '@/contexts/AuthContext'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { clientLogger } from '@/lib/logger'
 import { PrivacySettingsModal } from '@/components/settings/PrivacySettingsModal'
@@ -10,15 +10,22 @@ import { PrivacySettingsModal } from '@/components/settings/PrivacySettingsModal
 /**
  * 用戶選單元件
  * 顯示用戶頭像、用戶名和下拉選單（個人資料、系統設定（管理員）、隱私設定、登出）
+ * 使用 React.memo 優化渲染效能
  */
-export function UserMenu() {
+export const UserMenu = memo(function UserMenu() {
   const router = useRouter()
   const { user, logout } = useAuth()
   const { t } = useLanguage()
   const [isOpen, setIsOpen] = useState(false)
   const [isAdmin, setIsAdmin] = useState(false)
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false)
+  const [avatarError, setAvatarError] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
+
+  // 當用戶改變時重置頭貼錯誤狀態
+  useEffect(() => {
+    setAvatarError(false)
+  }, [user?.id])
 
   // 檢查管理員權限
   useEffect(() => {
@@ -80,27 +87,88 @@ export function UserMenu() {
     }
   }, [isOpen])
 
-  if (!user) return null
-
   /**
    * 取得 Discord 頭像 URL
+   * 支援靜態頭貼（PNG）和動態頭貼（GIF）
+   * 兼容兩種格式：完整 URL 或 avatar hash
+   * 使用 useMemo 快取計算結果，只在 user 或 avatarError 變更時重新計算
    */
-  const getAvatarUrl = (user: User): string => {
-    if (user.discord_avatar) {
-      return `https://cdn.discordapp.com/avatars/${user.discord_id}/${user.discord_avatar}.png?size=128`
+  const avatarUrl = useMemo(() => {
+    if (!user) return ''
+
+    // 如果圖片載入失敗或無頭像，使用預設 Discord 頭像
+    if (avatarError || !user.discord_avatar) {
+      const defaultAvatarIndex = parseInt(user.discord_discriminator) % 5
+      const defaultUrl = `https://cdn.discordapp.com/embed/avatars/${defaultAvatarIndex}.png`
+
+      // 只在開發環境顯示日誌
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[UserMenu] Using default avatar:', {
+          discord_id: user.discord_id,
+          discriminator: user.discord_discriminator,
+          defaultAvatarIndex,
+          avatarError,
+          url: defaultUrl
+        })
+      }
+
+      return defaultUrl
     }
-    // 無頭像時使用預設 Discord 頭像
-    const defaultAvatarIndex = parseInt(user.discord_discriminator) % 5
-    return `https://cdn.discordapp.com/embed/avatars/${defaultAvatarIndex}.png`
-  }
+
+    // 檢查是否已經是完整 URL（兼容舊資料）
+    if (user.discord_avatar.startsWith('http')) {
+      // 只在開發環境顯示日誌
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[UserMenu] Using full URL from database:', {
+          discord_id: user.discord_id,
+          url: user.discord_avatar
+        })
+      }
+      return user.discord_avatar
+    }
+
+    // 如果是 avatar hash，組合完整 URL
+    // 檢查是否為動態頭貼（hash 以 a_ 開頭）
+    const extension = user.discord_avatar.startsWith('a_') ? 'gif' : 'png'
+    const avatarUrl = `https://cdn.discordapp.com/avatars/${user.discord_id}/${user.discord_avatar}.${extension}?size=128`
+
+    // 只在開發環境顯示除錯日誌
+    if (process.env.NODE_ENV === 'development') {
+      console.log('[UserMenu] Avatar URL from hash:', {
+        discord_id: user.discord_id,
+        discord_avatar: user.discord_avatar,
+        extension,
+        url: avatarUrl
+      })
+    }
+
+    return avatarUrl
+  }, [user, avatarError])
+
+  /**
+   * 處理圖片載入錯誤
+   * 使用 useCallback 避免不必要的重新建立
+   */
+  const handleAvatarError = useCallback(() => {
+    console.error('[UserMenu] Avatar failed to load:', {
+      discord_id: user?.discord_id,
+      discord_avatar: user?.discord_avatar,
+      url: avatarUrl
+    })
+    setAvatarError(true)
+  }, [user?.discord_id, user?.discord_avatar, avatarUrl])
 
   /**
    * 處理登出
+   * 使用 useCallback 避免不必要的重新建立
    */
-  const handleLogout = async () => {
+  const handleLogout = useCallback(async () => {
     setIsOpen(false)
     await logout()
-  }
+  }, [logout])
+
+  // 如果用戶未登入，不渲染組件
+  if (!user) return null
 
   return (
     <div className="relative" ref={menuRef}>
@@ -112,9 +180,10 @@ export function UserMenu() {
       >
         {/* Discord 頭像 */}
         <img
-          src={getAvatarUrl(user)}
+          src={avatarUrl}
           alt={user.discord_username}
           className="w-7 h-7 sm:w-8 sm:h-8 rounded-full"
+          onError={handleAvatarError}
         />
         {/* 用戶名（僅桌面版顯示） */}
         <span className="hidden sm:inline text-sm font-medium">{user.discord_username}</span>
@@ -185,4 +254,4 @@ export function UserMenu() {
       />
     </div>
   )
-}
+})

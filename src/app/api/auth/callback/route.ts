@@ -15,8 +15,120 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from '@/lib/supabase/server'
-import { apiLogger } from '@/lib/logger'
+import { createClient, supabaseAdmin } from '@/lib/supabase/server'
+import { apiLogger, dbLogger } from '@/lib/logger'
+import type { User } from '@supabase/supabase-js'
+
+/**
+ * 同步 Supabase Auth 用戶到 users 和 discord_profiles 表
+ *
+ * @param user - Supabase Auth User 物件
+ */
+async function syncUserToDatabase(user: User) {
+  const userId = user.id
+  const metadata = user.user_metadata || {}
+
+  // 提取 Discord 資訊
+  const discordId = metadata.provider_id || metadata.sub
+  const discordUsername = metadata.name || metadata.full_name || 'Unknown'
+  // 嘗試多個可能的 avatar 欄位名稱
+  const discordAvatar = metadata.avatar_url || metadata.avatar || metadata.picture || null
+  const email = user.email || metadata.email
+
+  if (!discordId) {
+    throw new Error('Missing Discord ID in user metadata')
+  }
+
+  dbLogger.debug('Syncing user to database', {
+    user_id: userId,
+    discord_id: discordId,
+    discord_avatar: discordAvatar,
+    email,
+    metadata_keys: Object.keys(metadata)
+  })
+
+  // 檢查用戶是否已存在
+  const { data: existingUser } = await supabaseAdmin
+    .from('users')
+    .select('id')
+    .eq('id', userId)
+    .single()
+
+  if (existingUser) {
+    // 用戶已存在，只更新 last_login_at
+    const { error: updateError } = await supabaseAdmin
+      .from('users')
+      .update({ last_login_at: new Date().toISOString() })
+      .eq('id', userId)
+
+    if (updateError) {
+      dbLogger.error('Failed to update user last_login_at', {
+        user_id: userId,
+        error: updateError
+      })
+    } else {
+      dbLogger.info('Updated user last_login_at', { user_id: userId })
+    }
+    return
+  }
+
+  // 用戶不存在，建立新記錄
+  dbLogger.info('Creating new user record', {
+    user_id: userId,
+    discord_id: discordId
+  })
+
+  // 1. 插入 users 表
+  const { error: userInsertError } = await supabaseAdmin
+    .from('users')
+    .insert({
+      id: userId,
+      discord_id: discordId,
+      discord_username: discordUsername,
+      discord_discriminator: '0', // Discord 已移除 discriminator
+      discord_avatar: discordAvatar,
+      email: email,
+      last_login_at: new Date().toISOString()
+    })
+
+  if (userInsertError) {
+    dbLogger.error('Failed to insert user', {
+      user_id: userId,
+      error: userInsertError
+    })
+    throw new Error(`Failed to create user record: ${userInsertError.message}`)
+  }
+
+  // 2. 插入 discord_profiles 表
+  // 從 Discord Snowflake ID 計算帳號建立時間
+  const discordEpoch = 1420070400000 // Discord epoch (2015-01-01)
+  const snowflakeTimestamp = Number(BigInt(discordId) >> BigInt(22)) + discordEpoch
+  const accountCreatedAt = new Date(snowflakeTimestamp).toISOString()
+
+  const { error: profileInsertError } = await supabaseAdmin
+    .from('discord_profiles')
+    .insert({
+      user_id: userId,
+      account_created_at: accountCreatedAt,
+      server_roles: [],
+      verified: false,
+      reputation_score: 50, // 預設信譽分數
+      profile_privacy: 'public'
+    })
+
+  if (profileInsertError) {
+    dbLogger.error('Failed to insert discord profile', {
+      user_id: userId,
+      error: profileInsertError
+    })
+    // 不拋出錯誤，因為 users 表已經建立成功
+  } else {
+    dbLogger.info('Created new user and discord profile', {
+      user_id: userId,
+      discord_id: discordId
+    })
+  }
+}
 
 /**
  * GET /api/auth/callback
@@ -73,6 +185,24 @@ export async function GET(request: NextRequest) {
       return NextResponse.redirect(
         new URL(`/?error=oauth_failed&message=${encodeURIComponent(exchangeError.message)}`, baseUrl)
       )
+    }
+
+    if (!data.user) {
+      apiLogger.error('No user data after code exchange')
+      return NextResponse.redirect(
+        new URL('/?error=oauth_failed&message=無法取得用戶資訊', baseUrl)
+      )
+    }
+
+    // 同步用戶資料到 users 和 discord_profiles 表
+    try {
+      await syncUserToDatabase(data.user)
+    } catch (syncError) {
+      apiLogger.error('Failed to sync user to database', {
+        error: syncError,
+        user_id: data.user.id
+      })
+      // 繼續執行，不阻斷登入流程
     }
 
     // 成功登入
