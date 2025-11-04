@@ -462,14 +462,18 @@ export default function Home() {
 
   // 建立刊登成功後的處理函數
   const handleCreateListingSuccess = useCallback(() => {
-    // 如果當前在市場刊登模式，自動刷新列表
+    // 清除市場刊登快取，確保下次載入時會取得最新資料
+    marketListings.reset()
+
+    // 如果當前在市場刊登模式，自動重新載入列表
     if (filterMode === 'market-listings') {
       const filteredItemIds = getFilteredItemIds()
-      marketListings.refresh(
-        marketFilter,
-        filteredItemIds.length > 0 ? filteredItemIds : undefined,
-        debouncedSearchTerm
-      )
+      marketListings.fetchListings({
+        page: 1,
+        filter: marketFilter,
+        itemIds: filteredItemIds.length > 0 ? filteredItemIds : undefined,
+        searchTerm: debouncedSearchTerm
+      })
     }
   }, [filterMode, marketFilter, advancedFilter, marketListings, getFilteredItemIds, debouncedSearchTerm]) // eslint-disable-line react-hooks/exhaustive-deps
 

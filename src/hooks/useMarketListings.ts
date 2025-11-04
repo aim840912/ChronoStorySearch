@@ -243,6 +243,11 @@ export function useMarketListings({
       const currentPage = pagination?.page || 1
       // 清除緩存以強制重新載入
       lastRequestRef.current = null
+      // 取消進行中的請求，確保發起全新的請求
+      if (abortControllerRef.current) {
+        abortControllerRef.current.abort()
+        abortControllerRef.current = null
+      }
       await fetchListings({ page: currentPage, filter, itemIds, searchTerm })
     } catch (err: unknown) {
       const errorMessage = err instanceof Error ? err.message : '重新整理失敗'
