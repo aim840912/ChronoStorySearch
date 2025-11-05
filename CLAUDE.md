@@ -54,6 +54,21 @@ npm ls | grep package-name           # 檢查套件
 npx depcheck                         # 檢查未使用依賴
 ```
 
+### 開發流程 Slash Commands
+
+```bash
+# 開發前檢查
+/pre-dev-check [功能名稱]            # 開發前檢查（Code Reuse、依賴、架構、效能）
+
+# API 開發檢查
+/api-check [API路徑]                 # API 開發完成檢查（中間件、錯誤處理、TypeScript）
+
+# 維護和發布檢查
+/major-change-check                  # 重大變更維護檢查（快取、依賴、品質、TODO）
+/release-check                       # 版本發布前檢查（依賴、測試、效能、文檔）
+/tech-debt-scan                      # 技術債掃描（建置時間、警告、重複程式碼、過時依賴）
+```
+
 ### 檢查優化歷史
 
 **⚠️ 重要：在建議任何優化前，請先執行以下指令**
@@ -279,28 +294,19 @@ TodoWrite({
 
 ### 開發前檢查清單
 
-實作任何功能前，**必須**驗證：
+實作任何功能前，**必須**執行開發前檢查：
 
-- [ ] **Code Reuse Check**: 搜尋是否有相似功能可以重用
-  - 使用 `grep -r -E "(function|class|const)" src/` 檢查現有功能
-  - 檢查 `src/lib/` 和 `src/components/` 是否有相關工具
-  - 優先擴展現有功能而非創建新的
+```bash
+/pre-dev-check [功能名稱或描述]
+```
 
-- [ ] **Dependency Assessment**: 評估是否需要新依賴
-  - 確認不會引入重複功能的套件
-  - 檢查套件維護狀態：最後更新 < 1年、stars > 1000、active issues
-  - 執行 `npm ls` 確認不會產生依賴衝突
-  - **記錄為什麼需要此依賴** (在 commit message 中)
+**檢查項目包括**：
+- ✅ **Code Reuse Check** - 搜尋相似功能，避免重複實作
+- ✅ **Dependency Assessment** - 評估是否需要新依賴，避免套件膨脹
+- ✅ **Architecture Consistency** - 確認遵循專案架構模式
+- ✅ **Performance Impact** - 評估對建置時間和 Bundle 大小的影響
 
-- [ ] **Architecture Consistency**: 確認遵循現有模式
-  - API 路由使用統一錯誤處理中間件
-  - 服務層使用 BaseService 或 AbstractService
-  - 元件遵循現有的 props 和 state 管理模式
-
-- [ ] **Performance Impact**: 評估效能影響
-  - 新增功能不會增加建置時間 > 30 秒
-  - 不會增加主要 bundle 大小 > 50KB
-  - 避免引入會影響 Runtime 效能的重型套件
+**詳細檢查項目和標準**：請參考 `.claude/commands/pre-dev-check.md`
 
 **每次開發前執行**：
 ```bash
@@ -419,13 +425,21 @@ export const GET = withAuthAndError(handleGET, { module: 'ProductAPI' })
 
 ### API 開發完成檢查清單
 
-- [ ] 使用適當的組合中間件 (withAuthAndError/withAdminAndError/withOptionalAuthAndError)
-- [ ] 所有錯誤使用標準錯誤類型
-- [ ] 動態路由參數正確使用 await (Next.js 15+)
-- [ ] 處理函數接收正確參數：`(request: NextRequest, user: User)`
-- [ ] 回應使用統一格式 (success, created, successWithPagination)
-- [ ] TypeScript 類型檢查通過
-- [ ] 處理不支援的 HTTP 方法時返回 MethodNotAllowedError
+API 開發完成後，**必須**執行 API 檢查：
+
+```bash
+/api-check [API 路徑或檔案]
+```
+
+**檢查項目包括**：
+- ✅ **中間件和認證** - 正確使用組合中間件（withAuthAndError/withAdminAndError）
+- ✅ **錯誤處理** - 使用標準錯誤類型和統一回應格式
+- ✅ **TypeScript** - 類型檢查通過，無 `any` 類型繞過
+- ✅ **安全性** - 防止常見漏洞（SQL Injection、XSS 等）
+- ✅ **資料庫操作** - 使用統一 Service 層，避免 N+1 查詢
+- ✅ **測試** - 新功能必須有測試覆蓋
+
+**詳細檢查項目和標準**：請參考 `.claude/commands/api-check.md`
 
 ---
 
@@ -470,6 +484,15 @@ export const GET = withAuthAndError(handleGET, { module: 'ProductAPI' })
 - 🔴 Critical - 影響系統穩定性、安全性或核心功能
 - 🟡 Major - 影響開發效率、用戶體驗或維護成本
 - 🟢 Minor - 程式碼整潔度、文檔或註解問題
+
+**定期執行技術債掃描**：
+```bash
+/tech-debt-scan
+```
+
+掃描項目包括：建置時間、TypeScript/ESLint 警告、重複程式碼、過時依賴、安全漏洞、Bundle 大小、TODO/DEBT 標籤、程式碼複雜度等。
+
+**詳細掃描項目和標準**：請參考 `.claude/commands/tech-debt-scan.md`
 
 **遇到技術債信號時**：
 1. **記錄問題** - 使用 TODO 註釋和 DEBT 標籤
@@ -569,51 +592,40 @@ npx depcheck
 
 ### 重大變更的維護
 
-**執行重大變更時** 執行以下維護工作：
+**執行重大變更時** 必須執行維護檢查：
 
 ```bash
-# 1. 清理建置快取
-rm -rf .next/cache
-
-# 2. 檢查未使用的依賴
-npx depcheck
-
-# 3. 檢查依賴安全性
-npm audit
-
-# 4. 分析 Bundle 大小
-npm run analyze
-
-# 5. 檢查 TODO 註解
-grep -r "TODO" src/ --include="*.ts" --include="*.tsx"
+/major-change-check
 ```
 
-**重大變更檢查清單**：
-- [ ] 清理建置快取 (目標: < 200MB)
-- [ ] 移除未使用依賴
-- [ ] 修復安全漏洞 (high/critical)
-- [ ] 審查並處理 TODO 項目
-- [ ] 確認 Bundle 大小在標準內
+**檢查項目包括**：
+- ✅ **快取清理** - 清理建置快取（目標 < 200MB）
+- ✅ **依賴檢查** - 未使用依賴、安全漏洞、過時套件
+- ✅ **品質檢查** - TypeScript、Lint、Bundle 大小
+- ✅ **TODO 掃描** - 追蹤未完成工作和技術債
+- ✅ **測試和建置** - 確保所有測試通過、建置成功
+
+**詳細檢查項目和標準**：請參考 `.claude/commands/major-change-check.md`
 
 ### 版本發布維護
 
-**版本發布前** 執行深度維護：
+**版本發布前** 必須執行深度維護檢查：
 
 ```bash
-# 1. 依賴套件健康檢查
-npm outdated
-
-# 2. 檢查重複程式碼
-grep -r "function.*{" src/ | sort | uniq -c | sort -nr
-
-# 3. 效能基準測試
-npm run build
+/release-check
 ```
 
-**版本發布檢查清單**：
-- [ ] 評估並更新依賴套件 (minor/patch 版本)
-- [ ] 檢查並清理重複程式碼
-- [ ] 審查資料庫查詢效能
-- [ ] 運行完整的測試套件
-- [ ] 檢查系統效能指標
-- [ ] 更新文檔和 README
+**檢查項目包括**：
+- ✅ **依賴健康** - 過時依賴、安全漏洞、未使用套件
+- ✅ **程式碼品質** - 重複程式碼、TypeScript、Lint、測試覆蓋率
+- ✅ **效能基準** - 建置時間、Bundle 大小、關鍵路徑效能
+- ✅ **資料庫效能** - 查詢優化、索引設置、N+1 查詢檢查
+- ✅ **測試套件** - 單元測試、整合測試、E2E 測試、手動測試
+- ✅ **系統指標** - Vercel 效能、API 回應時間、快取命中率
+- ✅ **文檔更新** - README、API 文檔、Changelog、優化歷史
+- ✅ **環境配置** - 環境變數、生產配置、敏感資訊檢查
+- ✅ **備份回滾** - 資料庫備份、回滾計劃
+
+**詳細檢查項目和標準**：請參考 `.claude/commands/release-check.md`
+
+**建議**：在非尖峰時段發布，並在發布後持續監控 1-2 小時。
