@@ -61,7 +61,7 @@ export function ItemModal({
   const isDev = process.env.NODE_ENV === 'development'
   const toast = useToast()
   const toggleLanguage = useLanguageToggle()
-  const handleShare = useShare(() => `${window.location.origin}${window.location.pathname}?item=${itemId}`)
+  const handleShare = useShare(() => `${window.location.origin}${window.location.pathname}#item=${itemId}`)
   // 手機版 Tab 狀態（'info' = 物品資訊, 'sources' = 掉落來源）
   const [mobileTab, setMobileTab] = useState<'info' | 'sources'>('info')
 

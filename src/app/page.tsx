@@ -412,7 +412,7 @@ export default function Home() {
     if (!search.searchTerm.trim()) return
 
     try {
-      const url = `${window.location.origin}${window.location.pathname}?q=${encodeURIComponent(search.searchTerm)}`
+      const url = `${window.location.origin}${window.location.pathname}#q=${encodeURIComponent(search.searchTerm)}`
       await navigator.clipboard.writeText(url)
       toast.showToast(t('share.success'), 'success')
       clientLogger.info(`分享連結已複製: ${url}`)

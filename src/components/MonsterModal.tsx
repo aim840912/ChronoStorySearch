@@ -59,7 +59,7 @@ export function MonsterModal({
   const isDev = process.env.NODE_ENV === 'development'
   const toast = useToast()
   const toggleLanguage = useLanguageToggle()
-  const handleShare = useShare(() => `${window.location.origin}${window.location.pathname}?monster=${monsterId}`)
+  const handleShare = useShare(() => `${window.location.origin}${window.location.pathname}#monster=${monsterId}`)
   // 手機版 Tab 狀態（'info' = 怪物資訊, 'drops' = 掉落物品）
   const [mobileTab, setMobileTab] = useState<'info' | 'drops'>('info')
 
