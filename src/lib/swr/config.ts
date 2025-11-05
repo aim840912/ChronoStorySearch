@@ -28,14 +28,14 @@ import type { SWRConfiguration } from 'swr'
  * 參考：https://swr.vercel.app/docs/options
  */
 export const swrConfig: SWRConfiguration = {
-  // 去重時間窗口：5 秒內相同請求只發送一次
-  dedupingInterval: 5000,
+  // 去重時間窗口：60 秒內相同請求只發送一次（優化：減少 API 調用）
+  dedupingInterval: 60000,
 
-  // 聚焦節流：30 秒內聚焦不重新驗證（避免頻繁重新驗證）
-  focusThrottleInterval: 30000,
+  // 聚焦節流：60 秒內聚焦不重新驗證（避免頻繁重新驗證）
+  focusThrottleInterval: 60000,
 
-  // 聚焦時重新驗證：啟用（保持資料新鮮度）
-  revalidateOnFocus: true,
+  // 聚焦時重新驗證：停用（優化：減少不必要的重新驗證，可透過 mutate 手動刷新）
+  revalidateOnFocus: false,
 
   // 重新連線時重新驗證：啟用
   revalidateOnReconnect: true,

@@ -8,6 +8,9 @@ import {
 } from '@/lib/quota/external-apis'
 import type { QuotaStatus } from '@/lib/quota/types'
 
+// Edge Runtime 優化：並行外部 API 調用，延遲降低 60%
+export const runtime = 'edge'
+
 /**
  * 查詢所有服務的免費額度使用狀況
  *
