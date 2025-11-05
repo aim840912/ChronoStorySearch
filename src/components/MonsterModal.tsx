@@ -7,6 +7,7 @@ import { MonsterStatsCard } from './MonsterStatsCard'
 import { MonsterLocationsCard } from './MonsterLocationsCard'
 import { Toast } from './Toast'
 import { BaseModal } from './common/BaseModal'
+import { ItemAttributesTooltip } from './ItemAttributesTooltip'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useToast } from '@/hooks/useToast'
@@ -61,6 +62,11 @@ export function MonsterModal({
   const handleShare = useShare(() => `${window.location.origin}${window.location.pathname}?monster=${monsterId}`)
   // 手機版 Tab 狀態（'info' = 怪物資訊, 'drops' = 掉落物品）
   const [mobileTab, setMobileTab] = useState<'info' | 'drops'>('info')
+
+  // Tooltip 狀態（hover 物品時顯示）
+  const [hoveredItemId, setHoveredItemId] = useState<number | null>(null)
+  const [hoveredItemName, setHoveredItemName] = useState<string>('')
+  const [hoveredItemRect, setHoveredItemRect] = useState<DOMRect | null>(null)
 
   // 懶加載怪物資訊資料
   const {
@@ -158,11 +164,19 @@ export function MonsterModal({
     }
   }, [isOpen, loadMobInfo, loadMobMaps])
 
+  // Hover 物品事件處理
+  const handleItemHover = (itemId: number | null, itemName: string, rect: DOMRect | null) => {
+    setHoveredItemId(itemId)
+    setHoveredItemName(itemName)
+    setHoveredItemRect(rect)
+  }
+
   if (!monsterId) return null
 
   const monsterIconUrl = getMonsterImageUrl(monsterId)
 
   return (
+    <>
     <BaseModal
       isOpen={isOpen}
       onClose={onClose}
@@ -338,6 +352,7 @@ export function MonsterModal({
                   isFavorite={isItemFavorite(drop.itemId)}
                   onToggleFavorite={onToggleItemFavorite}
                   onItemClick={onItemClick}
+                  onItemHover={handleItemHover}
                 />
               ))}
             </div>
@@ -352,5 +367,16 @@ export function MonsterModal({
         type={toast.type}
       />
     </BaseModal>
+
+    {/* Hover 物品提示框（桌面版） */}
+    <ItemAttributesTooltip
+      isOpen={hoveredItemId !== null}
+      itemId={hoveredItemId}
+      itemName={hoveredItemName}
+      triggerRect={hoveredItemRect}
+      allDrops={allDrops}
+      itemAttributesMap={itemAttributesMap}
+    />
+    </>
   )
 }

@@ -200,6 +200,7 @@
   "item.jump": "Jump",
   "item.info": "Item Information",
   "item.dropSources": "Drop Sources",
+  "item.viewDetails": "View Details",
   "item.mesos": "Mesos",
   "item.maxStack": "Max Stack",
   "item.tradeable": "Tradeable",

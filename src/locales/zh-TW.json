@@ -200,6 +200,7 @@
   "item.jump": "跳躍力",
   "item.info": "物品資訊",
   "item.dropSources": "掉落來源",
+  "item.viewDetails": "查看詳細資訊",
   "item.mesos": "楓幣",
   "item.maxStack": "堆疊上限",
   "item.tradeable": "可交易性",

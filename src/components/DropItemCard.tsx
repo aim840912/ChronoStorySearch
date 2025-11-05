@@ -1,5 +1,6 @@
 'use client'
 
+import { useRef } from 'react'
 import type { DropItem, ItemAttributesEssential } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
@@ -11,6 +12,7 @@ interface DropItemCardProps {
   isFavorite: boolean
   onToggleFavorite: (itemId: number, itemName: string) => void
   onItemClick: (itemId: number, itemName: string) => void
+  onItemHover?: (itemId: number | null, itemName: string, rect: DOMRect | null) => void
 }
 
 /**
@@ -23,9 +25,12 @@ export function DropItemCard({
   isFavorite,
   onToggleFavorite,
   onItemClick,
+  onItemHover,
 }: DropItemCardProps) {
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
+  const cardRef = useRef<HTMLDivElement>(null)
+  const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null)
   const chancePercent = (drop.chance * 100).toFixed(4)
   const qtyRange =
     drop.minQty === drop.maxQty ? `${drop.minQty}` : `${drop.minQty}-${drop.maxQty}`
@@ -52,9 +57,45 @@ export function DropItemCard({
   // 注意：藥水效果需要 Detailed 資料，Essential 中不包含，所以此處不顯示藥水效果
   // 其他類型（包含卷軸）保持顯示數量
 
+  // Hover 事件處理
+  const handleMouseEnter = () => {
+    if (!onItemHover) return
+
+    // 清除之前的延遲計時器
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current)
+    }
+
+    // 延遲 300ms 後觸發（避免意外觸發）
+    hoverTimeoutRef.current = setTimeout(() => {
+      if (cardRef.current) {
+        const rect = cardRef.current.getBoundingClientRect()
+        onItemHover(drop.itemId, displayItemName, rect)
+      }
+    }, 300)
+  }
+
+  const handleMouseLeave = () => {
+    if (!onItemHover) return
+
+    // 清除延遲計時器
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current)
+      hoverTimeoutRef.current = null
+    }
+
+    // 延遲 200ms 後關閉（給用戶時間移動滑鼠）
+    hoverTimeoutRef.current = setTimeout(() => {
+      onItemHover(null, '', null)
+    }, 200)
+  }
+
   return (
     <div
+      ref={cardRef}
       onClick={() => onItemClick(drop.itemId, displayItemName)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative"
     >
       {/* 最愛按鈕 - 右上角 */}
