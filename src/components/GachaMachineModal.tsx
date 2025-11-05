@@ -5,14 +5,16 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { useToast } from '@/hooks/useToast'
 import { useLanguageToggle } from '@/hooks/useLanguageToggle'
 import { useShare } from '@/hooks/useShare'
-import type { GachaMachine, GachaItem, EnhancedGachaItem } from '@/types'
+import type { GachaMachine, GachaItem, EnhancedGachaItem, GachaResult, RandomEquipmentStats } from '@/types'
 import { clientLogger } from '@/lib/logger'
 import { weightedRandomDraw } from '@/lib/gacha-utils'
+import { calculateRandomStats } from '@/lib/random-equipment-stats'
 import { BaseModal } from '@/components/common/BaseModal'
 import { MachineCard } from '@/components/gacha/MachineCard'
 import { GachaItemCard } from '@/components/gacha/GachaItemCard'
 import { GachaDrawControl } from '@/components/gacha/GachaDrawControl'
 import { GachaResultsGrid } from '@/components/gacha/GachaResultsGrid'
+import { GachaItemTooltip } from '@/components/gacha/GachaItemTooltip'
 import { Toast } from '@/components/Toast'
 
 /**
@@ -91,9 +93,13 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
   // 抽獎模式相關狀態
   const [viewMode, setViewMode] = useState<ViewMode>('browse')
   // 為每次抽取添加唯一 ID，避免相同物品的圖片重複載入
-  const [gachaResults, setGachaResults] = useState<Array<GachaItem & { drawId: number }>>([])
+  const [gachaResults, setGachaResults] = useState<GachaResult[]>([])
   const [drawCount, setDrawCount] = useState(0)
   const MAX_DRAWS = 100
+
+  // Hover tooltip 狀態
+  const [hoveredItem, setHoveredItem] = useState<GachaResult | null>(null)
+  const [hoveredItemRect, setHoveredItemRect] = useState<DOMRect | null>(null)
 
   // 分享功能 - 複製連結到剪貼簿
   const handleShare = useShare(() => {
@@ -166,9 +172,25 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
 
     const drawnItem = weightedRandomDraw(selectedMachine.items)
     const newDrawCount = drawCount + 1
+
+    // 如果是裝備類物品，計算隨機屬性
+    const randomStats = calculateRandomStats(drawnItem)
+
+    // 建立抽獎結果（包含隨機屬性）
+    const result: GachaResult = {
+      ...drawnItem,
+      drawId: newDrawCount,
+      randomStats: randomStats ?? undefined
+    }
+
     // 為每次抽取添加唯一 ID，確保 React 不會重新創建相同物品的 DOM 元素
-    setGachaResults(prev => [{ ...drawnItem, drawId: newDrawCount }, ...prev]) // 新結果添加到頂部
+    setGachaResults(prev => [result, ...prev]) // 新結果添加到頂部
     setDrawCount(newDrawCount)
+
+    // 記錄隨機屬性計算結果（調試用）
+    if (randomStats) {
+      clientLogger.debug(`抽取裝備 ${drawnItem.chineseName}，隨機屬性已計算`, { randomStats })
+    }
   }
 
   // 重置抽獎結果
@@ -184,6 +206,27 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
       handleReset()
     }
     setViewMode(prev => prev === 'browse' ? 'gacha' : 'browse')
+  }
+
+  // Hover 處理函數
+  const handleItemHover = (
+    itemId: number | null,
+    _itemName: string,
+    rect: DOMRect | null,
+    randomStats?: RandomEquipmentStats
+  ) => {
+    if (itemId === null || !rect) {
+      setHoveredItem(null)
+      setHoveredItemRect(null)
+      return
+    }
+
+    // 從 gachaResults 找到對應的完整物品資料
+    const fullItem = gachaResults.find((result) => result.itemId === itemId && result.randomStats === randomStats)
+    if (fullItem) {
+      setHoveredItem(fullItem)
+      setHoveredItemRect(rect)
+    }
   }
 
   // 當有 initialMachineId 時，自動選擇對應的轉蛋機
@@ -222,6 +265,24 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
       onClose()
     }
   }
+
+  // 監聽空白鍵觸發抽獎（只在抽獎模式啟用）
+  useEffect(() => {
+    if (!isOpen || viewMode !== 'gacha' || !selectedMachine) return
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // 在抽獎模式下，空白鍵專用於抽獎
+      if (e.code === 'Space') {
+        e.preventDefault()  // 阻止預設行為（包括按鈕點擊）
+        e.stopPropagation() // 停止事件傳播
+        handleDrawOnce()
+      }
+    }
+
+    // 使用捕獲階段攔截事件，優先於按鈕的事件處理
+    document.addEventListener('keydown', handleKeyDown, { capture: true })
+    return () => document.removeEventListener('keydown', handleKeyDown, { capture: true })
+  }, [isOpen, viewMode, selectedMachine, drawCount])
 
   // 篩選和排序物品
   const filteredAndSortedItems = useMemo(() => {
@@ -478,7 +539,7 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
                   />
 
                   {/* 抽獎結果列表 */}
-                  <GachaResultsGrid results={gachaResults} t={t} />
+                  <GachaResultsGrid results={gachaResults} t={t} onItemHover={handleItemHover} />
                 </div>
               )}
             </>
@@ -503,6 +564,13 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
         isVisible={toast.isVisible}
         onClose={toast.hideToast}
         type={toast.type}
+      />
+
+      {/* Hover Tooltip（渲染在 BaseModal 外層，避免 z-index 問題） */}
+      <GachaItemTooltip
+        isOpen={hoveredItem !== null}
+        item={hoveredItem}
+        triggerRect={hoveredItemRect}
       />
     </BaseModal>
   )

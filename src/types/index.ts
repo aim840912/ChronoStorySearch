@@ -160,6 +160,32 @@ export interface GachaSearchResult {
   machineName: string
 }
 
+// 隨機裝備屬性（用於抽獎機的隨機屬性計算）
+export interface RandomEquipmentStats {
+  str?: number
+  dex?: number
+  int?: number
+  luk?: number
+  watk?: number
+  matk?: number
+  wdef?: number
+  mdef?: number
+  accuracy?: number
+  avoidability?: number
+  speed?: number
+  jump?: number
+  hp?: number
+  mp?: number
+  attack_speed?: number
+  upgrades?: number
+}
+
+// 抽獎結果（包含隨機屬性）
+export interface GachaResult extends GachaItem {
+  drawId: number           // 抽取序號（用於唯一識別）
+  randomStats?: RandomEquipmentStats  // 隨機屬性（裝備類物品才有）
+}
+
 // 語言相關類型
 export type Language = 'zh-TW' | 'en'
 
