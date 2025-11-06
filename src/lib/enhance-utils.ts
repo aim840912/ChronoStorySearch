@@ -6,16 +6,6 @@ import type {
 } from '@/types/enhance'
 
 /**
- * 詛咒卷規則配置
- */
-const CURSED_RULES: Record<number, number> = {
-  10: 50,
-  15: 50,
-  60: 0,
-  100: 0
-}
-
-/**
  * 根據裝備分類篩選可用的卷軸
  */
 export function getAvailableScrollsForEquipment(
@@ -29,15 +19,7 @@ export function getAvailableScrollsForEquipment(
  * 判斷是否為詛咒卷軸
  */
 export function isCursedScroll(scroll: EnhanceScroll): boolean {
-  const destroyRate = CURSED_RULES[scroll.successRate] || 0
-  return destroyRate > 0
-}
-
-/**
- * 獲取卷軸的毀滅率
- */
-export function getScrollDestroyRate(scroll: EnhanceScroll): number {
-  return CURSED_RULES[scroll.successRate] || 0
+  return scroll.destroyRate > 0
 }
 
 /**
@@ -116,7 +98,7 @@ export function performEnhance(
     }
   } else {
     // 強化失敗
-    const destroyRate = getScrollDestroyRate(scroll)
+    const destroyRate = scroll.destroyRate
     const destroyed = isEquipmentDestroyed(destroyRate)
 
     if (destroyed) {

@@ -79,13 +79,3 @@ export interface EnhanceHistory {
   result: EnhanceResultType
   timestamp: number
 }
-
-/**
- * 詛咒卷規則配置
- */
-export const CURSED_SCROLL_RULES: Record<number, number> = {
-  10: 50,  // 10% 成功率 → 50% 毀滅率
-  15: 50,  // 15% 成功率 → 50% 毀滅率
-  60: 0,   // 60% 成功率 → 0% 毀滅率
-  100: 0   // 100% 成功率 → 0% 毀滅率
-}
