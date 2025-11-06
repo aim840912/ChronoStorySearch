@@ -43,8 +43,13 @@ export const GachaResultsGrid = memo(function GachaResultsGrid({ results, t, onS
         {t('gacha.results')}
       </h3>
       <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 2xl:grid-cols-14 gap-2 max-h-[500px] overflow-y-auto scrollbar-hide p-2">
-        {results.map((item) => (
-          <GachaResultCard key={`draw-${item.drawId}`} item={item} onShowDetails={onShowDetails} />
+        {results.map((item, index) => (
+          <GachaResultCard
+            key={`draw-${item.drawId}`}
+            item={item}
+            displayNumber={results.length - index}
+            onShowDetails={onShowDetails}
+          />
         ))}
       </div>
     </div>

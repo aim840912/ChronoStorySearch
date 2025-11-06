@@ -6,13 +6,14 @@ import { getItemImageUrl } from '@/lib/image-utils'
 
 interface GachaResultCardProps {
   item: GachaResult
+  displayNumber: number
   onShowDetails?: (item: GachaResult) => void
 }
 
 /**
  * 抽獎結果卡片元件（點擊顯示詳細資訊）
  */
-export const GachaResultCard = memo(function GachaResultCard({ item, onShowDetails }: GachaResultCardProps) {
+export const GachaResultCard = memo(function GachaResultCard({ item, displayNumber, onShowDetails }: GachaResultCardProps) {
   // 物品圖示 URL
   const itemIconUrl = getItemImageUrl(item.itemId)
 
@@ -30,14 +31,14 @@ export const GachaResultCard = memo(function GachaResultCard({ item, onShowDetai
     >
       {/* 抽取序號 */}
       <div className="absolute top-0.5 left-0.5 bg-purple-500 text-white text-xs font-bold px-1.5 py-0.5 rounded-full z-10">
-        #{item.drawId}
+        #{displayNumber}
       </div>
 
       {/* 物品圖示 */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={itemIconUrl}
-        alt={`Draw #${item.drawId}`}
+        alt={`Draw #${displayNumber}`}
         loading="lazy"
         className="w-full h-full object-contain p-1.5"
       />
