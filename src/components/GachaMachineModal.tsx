@@ -270,7 +270,7 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
   useEffect(() => {
     if (!isOpen || viewMode !== 'gacha' || !selectedMachine) return
 
-    const handleKeyDown = (e: KeyboardEvent) => {
+    const handleKeyUp = (e: KeyboardEvent) => {
       // 在抽獎模式下，空白鍵專用於抽獎
       if (e.code === 'Space') {
         e.preventDefault()  // 阻止預設行為（包括按鈕點擊）
@@ -280,8 +280,8 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
     }
 
     // 使用捕獲階段攔截事件，優先於按鈕的事件處理
-    document.addEventListener('keydown', handleKeyDown, { capture: true })
-    return () => document.removeEventListener('keydown', handleKeyDown, { capture: true })
+    document.addEventListener('keyup', handleKeyUp, { capture: true })
+    return () => document.removeEventListener('keyup', handleKeyUp, { capture: true })
   }, [isOpen, viewMode, selectedMachine, drawCount])
 
   // 篩選和排序物品
