@@ -1,21 +1,16 @@
 'use client'
 
 import { memo } from 'react'
-import type { GachaResult, RandomEquipmentStats } from '@/types'
+import type { GachaResult } from '@/types'
 import { GachaResultCard } from './GachaResultCard'
 
 interface GachaResultsGridProps {
   results: GachaResult[]
   t: (key: string) => string
-  onItemHover?: (
-    itemId: number | null,
-    itemName: string,
-    rect: DOMRect | null,
-    randomStats?: RandomEquipmentStats
-  ) => void
+  onShowDetails?: (item: GachaResult) => void
 }
 
-export const GachaResultsGrid = memo(function GachaResultsGrid({ results, t, onItemHover }: GachaResultsGridProps) {
+export const GachaResultsGrid = memo(function GachaResultsGrid({ results, t, onShowDetails }: GachaResultsGridProps) {
   if (results.length === 0) {
     return (
       <div className="text-center py-12">
@@ -49,7 +44,7 @@ export const GachaResultsGrid = memo(function GachaResultsGrid({ results, t, onI
       </h3>
       <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 2xl:grid-cols-14 gap-2 max-h-[500px] overflow-y-auto scrollbar-hide p-2">
         {results.map((item) => (
-          <GachaResultCard key={`draw-${item.drawId}`} item={item} onItemHover={onItemHover} />
+          <GachaResultCard key={`draw-${item.drawId}`} item={item} onShowDetails={onShowDetails} />
         ))}
       </div>
     </div>

@@ -1,11 +1,12 @@
 'use client'
 
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, useCallback } from 'react'
+import { toast as sonnerToast } from 'sonner'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useToast } from '@/hooks/useToast'
 import { useLanguageToggle } from '@/hooks/useLanguageToggle'
 import { useShare } from '@/hooks/useShare'
-import type { GachaMachine, GachaItem, EnhancedGachaItem, GachaResult, RandomEquipmentStats } from '@/types'
+import type { GachaMachine, GachaItem, EnhancedGachaItem, GachaResult } from '@/types'
 import { clientLogger } from '@/lib/logger'
 import { weightedRandomDraw } from '@/lib/gacha-utils'
 import { calculateRandomStats } from '@/lib/random-equipment-stats'
@@ -14,7 +15,7 @@ import { MachineCard } from '@/components/gacha/MachineCard'
 import { GachaItemCard } from '@/components/gacha/GachaItemCard'
 import { GachaDrawControl } from '@/components/gacha/GachaDrawControl'
 import { GachaResultsGrid } from '@/components/gacha/GachaResultsGrid'
-import { GachaItemTooltip } from '@/components/gacha/GachaItemTooltip'
+import { EquipmentDetailsModal } from '@/components/gacha/EquipmentDetailsModal'
 import { Toast } from '@/components/Toast'
 
 /**
@@ -70,6 +71,7 @@ interface GachaMachineModalProps {
   // 導航相關 props
   hasPreviousModal?: boolean
   onGoBack?: () => void
+  onSwitchToEnhance?: (equipmentId?: number) => void
 }
 
 type SortOption = 'probability-desc' | 'probability-asc' | 'level-desc' | 'level-asc' | 'name-asc'
@@ -79,7 +81,7 @@ type ViewMode = 'browse' | 'gacha'
  * 轉蛋機圖鑑 Modal
  * 顯示 7 台轉蛋機及其內容物
  */
-export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemClick, hasPreviousModal, onGoBack }: GachaMachineModalProps) {
+export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemClick, hasPreviousModal, onGoBack, onSwitchToEnhance }: GachaMachineModalProps) {
   const { language, t } = useLanguage()
   const toast = useToast()
   const toggleLanguage = useLanguageToggle()
@@ -97,9 +99,9 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
   const [drawCount, setDrawCount] = useState(0)
   const MAX_DRAWS = 100
 
-  // Hover tooltip 狀態
-  const [hoveredItem, setHoveredItem] = useState<GachaResult | null>(null)
-  const [hoveredItemRect, setHoveredItemRect] = useState<DOMRect | null>(null)
+  // 裝備詳情 Modal 狀態
+  const [selectedEquipment, setSelectedEquipment] = useState<GachaResult | null>(null)
+  const [isDetailsModalOpen, setIsDetailsModalOpen] = useState(false)
 
   // 分享功能 - 複製連結到剪貼簿
   const handleShare = useShare(() => {
@@ -166,8 +168,75 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
     }
   }, [isOpen])
 
+  // 儲存裝備供強化使用
+  const saveEquipmentForEnhance = useCallback((item: GachaResult) => {
+    // 檢查是否為裝備
+    if (!item.equipment) {
+      sonnerToast.error('此物品不是裝備')
+      return
+    }
+
+    try {
+      // 從 localStorage 讀取現有裝備
+      const saved = localStorage.getItem('gacha_equipment_results')
+      const existing: GachaResult[] = saved ? JSON.parse(saved) : []
+
+      // 檢查是否超過 10 個（在添加之前檢查）
+      if (existing.length >= 10) {
+        sonnerToast.error('儲存空間已滿（10/10）', {
+          description: '請前往強化工坊刪除不需要的裝備',
+          duration: 5000,
+          action: onSwitchToEnhance ? {
+            label: '前往強化',
+            onClick: () => onSwitchToEnhance()
+          } : undefined
+        })
+        return
+      }
+
+      // 檢查是否已存在（使用 drawId 識別）
+      const isDuplicate = existing.some((eq: GachaResult) => eq.drawId === item.drawId)
+
+      if (isDuplicate) {
+        sonnerToast.info('此裝備已儲存過了')
+        return
+      }
+
+      // 添加新裝備
+      const newEquipment: GachaResult = {
+        ...item,
+        savedAt: Date.now()
+      }
+      existing.unshift(newEquipment) // 新的放最前面
+
+      // 儲存到 localStorage
+      localStorage.setItem('gacha_equipment_results', JSON.stringify(existing))
+
+      // 成功提示
+      sonnerToast.success('裝備已儲存！', {
+        description: `已儲存 ${existing.length}/10`,
+        action: onSwitchToEnhance ? {
+          label: '前往強化',
+          onClick: () => {
+            onSwitchToEnhance(item.itemId)
+          }
+        } : undefined,
+        duration: 5000
+      })
+    } catch (error) {
+      console.error('Failed to save equipment:', error)
+      sonnerToast.error('儲存裝備失敗')
+    }
+  }, [onSwitchToEnhance])
+
+  // 點擊裝備顯示詳情
+  const handleShowDetails = useCallback((item: GachaResult) => {
+    setSelectedEquipment(item)
+    setIsDetailsModalOpen(true)
+  }, [])
+
   // 抽獎處理函數
-  const handleDrawOnce = () => {
+  const handleDrawOnce = useCallback(() => {
     if (!selectedMachine || drawCount >= MAX_DRAWS) return
 
     const drawnItem = weightedRandomDraw(selectedMachine.items)
@@ -191,7 +260,7 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
     if (randomStats) {
       clientLogger.debug(`抽取裝備 ${drawnItem.chineseName}，隨機屬性已計算`, { randomStats })
     }
-  }
+  }, [selectedMachine, drawCount])
 
   // 重置抽獎結果
   const handleReset = () => {
@@ -208,26 +277,6 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
     setViewMode(prev => prev === 'browse' ? 'gacha' : 'browse')
   }
 
-  // Hover 處理函數
-  const handleItemHover = (
-    itemId: number | null,
-    _itemName: string,
-    rect: DOMRect | null,
-    randomStats?: RandomEquipmentStats
-  ) => {
-    if (itemId === null || !rect) {
-      setHoveredItem(null)
-      setHoveredItemRect(null)
-      return
-    }
-
-    // 從 gachaResults 找到對應的完整物品資料
-    const fullItem = gachaResults.find((result) => result.itemId === itemId && result.randomStats === randomStats)
-    if (fullItem) {
-      setHoveredItem(fullItem)
-      setHoveredItemRect(rect)
-    }
-  }
 
   // 當有 initialMachineId 時，自動選擇對應的轉蛋機
   useEffect(() => {
@@ -282,7 +331,7 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
     // 使用捕獲階段攔截事件，優先於按鈕的事件處理
     document.addEventListener('keyup', handleKeyUp, { capture: true })
     return () => document.removeEventListener('keyup', handleKeyUp, { capture: true })
-  }, [isOpen, viewMode, selectedMachine, drawCount])
+  }, [isOpen, viewMode, selectedMachine, drawCount, handleDrawOnce])
 
   // 篩選和排序物品
   const filteredAndSortedItems = useMemo(() => {
@@ -539,7 +588,7 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
                   />
 
                   {/* 抽獎結果列表 */}
-                  <GachaResultsGrid results={gachaResults} t={t} onItemHover={handleItemHover} />
+                  <GachaResultsGrid results={gachaResults} t={t} onShowDetails={handleShowDetails} />
                 </div>
               )}
             </>
@@ -566,12 +615,16 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
         type={toast.type}
       />
 
-      {/* Hover Tooltip（渲染在 BaseModal 外層，避免 z-index 問題） */}
-      <GachaItemTooltip
-        isOpen={hoveredItem !== null}
-        item={hoveredItem}
-        triggerRect={hoveredItemRect}
-      />
+
+      {/* 裝備詳情 Modal */}
+      {selectedEquipment && (
+        <EquipmentDetailsModal
+          isOpen={isDetailsModalOpen}
+          onClose={() => setIsDetailsModalOpen(false)}
+          equipment={selectedEquipment}
+          onSave={saveEquipmentForEnhance}
+        />
+      )}
     </BaseModal>
   )
 }

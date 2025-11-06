@@ -141,6 +141,7 @@ export interface GachaItem {
   requiredStats?: ItemRequiredStats // 需求屬性
   stats?: ItemStats // 物品屬性
   version?: ItemVersion // 版本資訊
+  equipment?: ItemEquipment // 裝備資訊（用於強化系統）
 }
 
 // 轉蛋機
@@ -184,6 +185,7 @@ export interface RandomEquipmentStats {
 export interface GachaResult extends GachaItem {
   drawId: number           // 抽取序號（用於唯一識別）
   randomStats?: RandomEquipmentStats  // 隨機屬性（裝備類物品才有）
+  savedAt?: number         // 儲存時間戳記（儲存到 localStorage 時添加）
 }
 
 // 語言相關類型

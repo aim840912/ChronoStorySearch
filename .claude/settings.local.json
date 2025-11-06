@@ -140,7 +140,9 @@
       "Bash(powershell.exe -Command \"Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show(''測試通知'', ''Claude Code'')\")",
       "Bash(psql:*)",
       "Bash(git fetch:*)",
-      "mcp__playwright__browser_network_requests"
+      "mcp__playwright__browser_network_requests",
+      "WebFetch(domain:code.claude.com)",
+      "WebFetch(domain:support.claude.com)"
     ],
     "deny": [],
     "ask": [

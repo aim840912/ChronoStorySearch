@@ -65,6 +65,8 @@ interface ModalManagerProps {
 
   // Modal 回調函數
   onCreateListingSuccess?: () => void
+  onSwitchToEnhance?: (equipmentId?: number) => void
+  onOpenEnhance?: () => void
 
   // 資料
   allDrops: DropsEssential[]  // 改為 Essential（只需基本資訊）
@@ -149,6 +151,8 @@ export const ModalManager = memo(function ModalManager({
   openCreateListingModal,
   openMyListingsModal,
   onCreateListingSuccess,
+  onSwitchToEnhance,
+  onOpenEnhance,
   allDrops,
   gachaMachines,
   itemAttributesMap,
@@ -247,6 +251,7 @@ export const ModalManager = memo(function ModalManager({
         onItemClick={handleItemClickFromGachaModal}
         hasPreviousModal={hasPreviousModal}
         onGoBack={goBack}
+        onSwitchToEnhance={onSwitchToEnhance}
       />
 
       {/* Accuracy Calculator Modal */}
@@ -331,7 +336,7 @@ export const ModalManager = memo(function ModalManager({
       {/* 浮動商人專賣按鈕 */}
       <button
         onClick={openMerchantShopModal}
-        className="fixed bottom-52 sm:bottom-54 left-4 sm:left-6 z-40 p-3 sm:p-4 bg-stone-600 hover:bg-stone-700 dark:bg-stone-700 dark:hover:bg-stone-800 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        className="fixed bottom-[240px] sm:bottom-[312px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-stone-600 hover:bg-stone-700 dark:bg-stone-700 dark:hover:bg-stone-800 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('merchant.button')}
       >
         <div className="flex items-center gap-2">
@@ -345,7 +350,7 @@ export const ModalManager = memo(function ModalManager({
       {/* 浮動遊戲指令按鈕 */}
       <button
         onClick={() => setIsGameCommandsOpen(true)}
-        className="fixed bottom-36 sm:bottom-38 left-4 sm:left-6 z-40 p-3 sm:p-4 bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        className="fixed bottom-[184px] sm:bottom-[240px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('commands.button')}
       >
         <div className="flex items-center gap-2">
@@ -361,10 +366,24 @@ export const ModalManager = memo(function ModalManager({
         </div>
       </button>
 
+      {/* 浮動裝備強化按鈕 */}
+      <button
+        onClick={onOpenEnhance}
+        className="fixed bottom-[72px] sm:bottom-24 left-4 sm:left-6 z-40 p-3 sm:p-4 bg-orange-500 hover:bg-orange-600 dark:bg-orange-600 dark:hover:bg-orange-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        aria-label={t('enhance.title')}
+      >
+        <div className="flex items-center gap-2">
+          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+          </svg>
+          <span className="text-sm font-medium hidden group-hover:inline-block">{t('enhance.title')}</span>
+        </div>
+      </button>
+
       {/* 浮動命中率計算器按鈕 */}
       <button
         onClick={() => openAccuracyCalculator()}
-        className="fixed bottom-20 sm:bottom-22 left-4 sm:left-6 z-40 p-3 sm:p-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        className="fixed bottom-[128px] sm:bottom-[168px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('accuracy.button')}
       >
         <div className="flex items-center gap-2">

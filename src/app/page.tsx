@@ -19,6 +19,7 @@ import { useMarketListings } from '@/hooks/useMarketListings'
 import { SearchHeader } from '@/components/SearchHeader'
 import { ContentDisplay } from '@/components/ContentDisplay'
 import { ModalManager } from '@/components/ModalManager'
+import { EnhanceWorkshopModal } from '@/components/EnhanceWorkshopModal'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
 import { trackEvent } from '@/lib/analytics/ga4'
@@ -62,6 +63,13 @@ export default function Home() {
 
   // 遊戲指令 Modal 狀態
   const [isGameCommandsOpen, setIsGameCommandsOpen] = useState(false)
+
+  // 強化 Modal 狀態
+  const [isEnhanceModalOpen, setIsEnhanceModalOpen] = useState(false)
+  const [enhanceModalConfig, setEnhanceModalConfig] = useState<{
+    hasPreviousModal: boolean
+    preSelectedEquipmentId?: number
+  }>({ hasPreviousModal: false })
 
   // 計算已啟用的進階篩選數量
   const advancedFilterCount = [
@@ -460,6 +468,35 @@ export default function Home() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
+  // 開啟強化 Modal（從 FilterButtons）
+  const handleOpenEnhance = useCallback(() => {
+    setEnhanceModalConfig({
+      hasPreviousModal: false,
+      preSelectedEquipmentId: undefined
+    })
+    setIsEnhanceModalOpen(true)
+  }, [])
+
+  // 從轉蛋機切換到強化 Modal
+  const handleSwitchToEnhance = useCallback((equipmentId?: number) => {
+    modals.closeGachaModal()
+    setTimeout(() => {
+      setEnhanceModalConfig({
+        hasPreviousModal: true,
+        preSelectedEquipmentId: equipmentId
+      })
+      setIsEnhanceModalOpen(true)
+    }, 150) // 等待轉蛋機 Modal 關閉動畫
+  }, [modals])
+
+  // 從強化 Modal 返回轉蛋機
+  const handleGoBackToGacha = useCallback(() => {
+    setIsEnhanceModalOpen(false)
+    setTimeout(() => {
+      modals.openGachaModal()
+    }, 150)
+  }, [modals])
+
   // 建立刊登成功後的處理函數
   const handleCreateListingSuccess = useCallback(() => {
     // 清除市場刊登快取，確保下次載入時會取得最新資料
@@ -655,6 +692,17 @@ export default function Home() {
         toastIsVisible={toast.isVisible}
         toastType={toast.type}
         hideToast={toast.hideToast}
+        onSwitchToEnhance={handleSwitchToEnhance}
+        onOpenEnhance={handleOpenEnhance}
+      />
+
+      {/* 強化 Modal */}
+      <EnhanceWorkshopModal
+        isOpen={isEnhanceModalOpen}
+        onClose={() => setIsEnhanceModalOpen(false)}
+        hasPreviousModal={enhanceModalConfig.hasPreviousModal}
+        onGoBack={handleGoBackToGacha}
+        preSelectedEquipmentId={enhanceModalConfig.preSelectedEquipmentId}
       />
     </div>
   )
