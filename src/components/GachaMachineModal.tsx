@@ -248,7 +248,7 @@ export function GachaMachineModal({ isOpen, onClose, initialMachineId, onItemCli
     // 建立抽獎結果（包含隨機屬性）
     const result: GachaResult = {
       ...drawnItem,
-      drawId: newDrawCount,
+      drawId: Date.now(), // 使用時間戳記確保唯一性，避免重置後 ID 衝突
       randomStats: randomStats ?? undefined
     }
 

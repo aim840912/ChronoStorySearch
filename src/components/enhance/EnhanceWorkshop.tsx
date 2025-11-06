@@ -112,9 +112,10 @@ export function EnhanceWorkshop({ preSelectedEquipmentId }: EnhanceWorkshopProps
           const index = equipments.findIndex((eq) => eq.drawId === selectedEquipment.drawId)
 
           if (index !== -1) {
-            // 更新裝備素質，保留其他抽獎資訊（drawId、randomStats 等）
+            // 更新裝備素質和強化次數，保留其他抽獎資訊（drawId、randomStats 等）
             equipments[index] = {
               ...equipments[index],
+              enhanceCount: result.equipment.enhanceCount,
               equipment: {
                 ...equipments[index].equipment!,
                 stats: result.equipment.currentStats

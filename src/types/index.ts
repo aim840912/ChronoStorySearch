@@ -186,6 +186,7 @@ export interface GachaResult extends GachaItem {
   drawId: number           // 抽取序號（用於唯一識別）
   randomStats?: RandomEquipmentStats  // 隨機屬性（裝備類物品才有）
   savedAt?: number         // 儲存時間戳記（儲存到 localStorage 時添加）
+  enhanceCount?: number    // 已強化次數（用於裝備強化系統）
 }
 
 // 語言相關類型

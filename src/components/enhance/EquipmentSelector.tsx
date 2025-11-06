@@ -280,6 +280,7 @@ export function EquipmentSelector({
                     <div className="flex-1">
                       <div className="font-medium text-gray-900 dark:text-gray-100">
                         {language === 'zh-TW' ? equipment.chineseName : equipment.itemName}
+                        {equipment.enhanceCount > 0 && ` (+${equipment.enhanceCount})`}
                       </div>
                       <div className="text-sm text-gray-500 dark:text-gray-400">
                         {equipment.category}
@@ -372,6 +373,7 @@ export function EquipmentSelector({
                         <div className="flex-1 min-w-0">
                           <div className="font-medium text-sm text-gray-900 dark:text-gray-100 truncate">
                             {language === 'zh-TW' ? equipment.chineseName : equipment.itemName}
+                            {equipment.enhanceCount > 0 && ` (+${equipment.enhanceCount})`}
                           </div>
                           <div className="text-xs text-gray-500 dark:text-gray-400">
                             {equipment.category}

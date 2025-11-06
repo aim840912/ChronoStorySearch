@@ -190,6 +190,7 @@ export function MonsterDropResultModal({
                       <div className="flex-1">
                         <div className="font-semibold text-gray-900 dark:text-gray-100 mb-1">
                           {language === 'zh-TW' ? equipment.chineseName : equipment.itemName}
+                          {equipment.enhanceCount > 0 && ` (+${equipment.enhanceCount})`}
                         </div>
                         <div className="text-sm text-gray-600 dark:text-gray-400 mb-2">
                           {equipment.category} · {t('enhance.upgradesRemaining', { count: equipment.remainingUpgrades })}

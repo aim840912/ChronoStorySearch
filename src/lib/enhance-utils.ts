@@ -158,7 +158,7 @@ export function convertToEnhanceableEquipment(item: any): EnhanceableEquipment |
     originalStats: { ...stats },
     currentStats: { ...stats },
     remainingUpgrades: upgrades,
-    enhanceCount: 0,
+    enhanceCount: item.enhanceCount ?? 0, // 讀取已保存的強化次數，預設為 0
     isDestroyed: false,
     randomStats: item.randomStats // 保留隨機屬性
   }

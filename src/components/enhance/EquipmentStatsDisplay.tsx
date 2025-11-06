@@ -70,6 +70,7 @@ export function EquipmentStatsDisplay({ equipment }: EquipmentStatsDisplayProps)
       <div className="mb-4">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
           {equipment.chineseName}
+          {equipment.enhanceCount > 0 && ` (+${equipment.enhanceCount})`}
         </h3>
         <div className="flex items-center justify-between mt-2">
           <span className="text-sm text-gray-600 dark:text-gray-400">
