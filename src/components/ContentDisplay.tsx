@@ -230,23 +230,6 @@ export const ContentDisplay = memo(function ContentDisplay({
           t={t}
         />
       )}
-
-      {/* 底部資訊 */}
-      <div className="mt-12 sm:mt-16 text-center">
-        <p className="text-gray-500 dark:text-gray-400 text-sm">
-          <a
-            href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpKuZGJQIFFxSi6kzYx4ALI0MQborpLEkh3J1qIGSd0Bw7U4NYg5CK-3ESzyK580z4D8NO59SUeC3k/pubhtml?gid=1888753114&single=true"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-600 dark:hover:text-blue-400 hover:underline transition-colors"
-          >
-            {t('footer.dataSource')}
-          </a>
-        </p>
-        <p className="text-gray-400 dark:text-gray-500 text-xs mt-2">
-          {t('footer.note')}
-        </p>
-      </div>
     </>
   )
 })

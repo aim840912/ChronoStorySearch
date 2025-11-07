@@ -11,6 +11,7 @@ import { LoginModal } from "@/components/auth/LoginModal";
 import { MaintenanceBanner } from "@/components/common/MaintenanceBanner";
 import { LoginUserBanner } from "@/components/common/LoginUserBanner";
 import { CookieConsentBanner } from "@/components/common/CookieConsentBanner";
+import Footer from "@/components/common/Footer";
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
 
 const geistSans = Geist({
@@ -52,6 +53,7 @@ export default function RootLayout({
                   <div key="page-content">{children}</div>
                   <LoginModal key="login-modal" />
                   <CookieConsentBanner key="cookie-consent-banner" />
+                  <Footer key="footer" />
                 </>
                 </LanguageProvider>
             </ThemeProvider>
