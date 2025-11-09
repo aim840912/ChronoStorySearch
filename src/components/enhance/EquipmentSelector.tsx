@@ -60,9 +60,9 @@ export function EquipmentSelector({
   const loadMonsters = async () => {
     setIsLoading(true)
     try {
-      // 從 API 載入怪物資料 (drops essential data)
-      const response = await fetch('/data/drops-essential.json')
-      const dropsData: DropItem[] = await response.json()
+      // 從動態 import 載入怪物資料 (drops essential data)
+      const data = await import('@/../data/drops-essential.json')
+      const dropsData: DropItem[] = data.default
 
       // 按怪物分組並建立 MonsterInfo
       const monsterMap = new Map<number, MonsterInfo>()
