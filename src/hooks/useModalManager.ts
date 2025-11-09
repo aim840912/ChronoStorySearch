@@ -6,7 +6,7 @@ import { GA4_EVENTS } from '@/lib/analytics/events'
 /**
  * Modal 類型定義
  */
-type ModalType = 'monster' | 'item' | 'gacha' | 'bug' | 'clear' | 'merchant' | 'accuracy' | 'createListing' | 'myListings' | 'interests' | 'listingDetail'
+type ModalType = 'monster' | 'item' | 'gacha' | 'bug' | 'clear' | 'merchant' | 'accuracy' | 'createListing' | 'myListings' | 'interests' | 'listingDetail' | 'slot'
 
 /**
  * Monster Modal 資料結構
@@ -303,6 +303,17 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     setHistory({ previous: null })
   }, [])
 
+  // 開啟 Slot Machine Modal
+  const openSlotMachineModal = useCallback(() => {
+    setModal({ type: 'slot', data: null })
+  }, [])
+
+  // 關閉 Slot Machine Modal
+  const closeSlotMachineModal = useCallback(() => {
+    setModal({ type: null, data: null })
+    setHistory({ previous: null })
+  }, [])
+
   // 用於 URL 參數處理的 setters（向後相容）
   const setSelectedMonsterId = useCallback((mobId: number | null) => {
     if (mobId !== null && modal.type === 'monster') {
@@ -449,6 +460,11 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     selectedListingId: listingDetailData?.listingId ?? null,
     openListingDetailModal,
     closeListingDetailModal,
+
+    // Slot Machine Modal
+    isSlotMachineModalOpen: modal.type === 'slot',
+    openSlotMachineModal,
+    closeSlotMachineModal,
 
     // 暴露原始 modal 狀態（用於複雜條件判斷）
     modal,

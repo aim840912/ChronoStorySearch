@@ -66,3 +66,23 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;  /* Chrome, Safari and Opera */
 }
+
+/* 獲勝線條閃爍動畫 */
+@keyframes win-line-flash {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-win-line-flash {
+  animation: win-line-flash 0.8s ease-in-out;
+}

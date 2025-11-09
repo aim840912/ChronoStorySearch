@@ -640,6 +640,7 @@ export default function Home() {
         isMyListingsModalOpen={modals.isMyListingsModalOpen}
         isInterestsModalOpen={modals.isInterestsModalOpen}
         isListingDetailModalOpen={modals.isListingDetailModalOpen}
+        isSlotMachineModalOpen={modals.isSlotMachineModalOpen}
         selectedListingId={modals.selectedListingId}
         selectedMonsterId={modals.selectedMonsterId ?? undefined}
         selectedMonsterName={modals.selectedMonsterName}
@@ -660,8 +661,10 @@ export default function Home() {
         closeMyListingsModal={modals.closeMyListingsModal}
         closeInterestsModal={modals.closeInterestsModal}
         closeListingDetailModal={modals.closeListingDetailModal}
+        closeSlotMachineModal={modals.closeSlotMachineModal}
         goBack={modals.goBack}
         openGachaModal={modals.openGachaModal}
+        openSlotMachineModal={modals.openSlotMachineModal}
         openBugReportModal={modals.openBugReportModal}
         openMerchantShopModal={modals.openMerchantShopModal}
         openAccuracyCalculator={modals.openAccuracyCalculator}
