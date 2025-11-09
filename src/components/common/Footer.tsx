@@ -32,9 +32,29 @@ const ExternalLinkIcon = ({ className = 'w-5 h-5' }: { className?: string }) => 
   </svg>
 )
 
+const CoffeeIcon = ({ className = 'w-5 h-5' }: { className?: string }) => (
+  <svg
+    className={className}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    aria-hidden="true"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M8 3v3a3 3 0 003 3h2a3 3 0 003-3V3m-8 5v8a3 3 0 003 3h2a3 3 0 003-3V8m1 0v3a2 2 0 01-2 2h-1"
+    />
+  </svg>
+)
+
 export default function Footer() {
   const { t } = useLanguage()
   const discordInviteUrl = process.env.NEXT_PUBLIC_DISCORD_INVITE_URL || '#'
+  const coffeeChatUrl =
+    process.env.NEXT_PUBLIC_DISCORD_COFFEE_CHANNEL_URL ||
+    'https://discord.com/channels/1326772066124566538/1436971026255970365'
 
   return (
     <footer className="fixed bottom-0 left-0 right-0 z-30 bg-slate-900 dark:bg-slate-950 border-t border-slate-700 dark:border-slate-800">
@@ -53,6 +73,20 @@ export default function Footer() {
               <DiscordIcon className="w-4 h-4" />
             </Link>
           </span>
+          <span className="text-slate-500 dark:text-slate-600 hidden sm:inline">
+            |
+          </span>
+          <Link
+            href={coffeeChatUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-400 hover:text-slate-200 dark:text-slate-500 dark:hover:text-slate-300 transition-colors inline-flex items-center gap-1"
+            aria-label={t('footer.buyCoffee')}
+            title={t('footer.buyCoffee')}
+          >
+            <CoffeeIcon className="w-4 h-4" />
+            <span className="text-sm">{t('footer.buyCoffee')}</span>
+          </Link>
           <span className="text-slate-500 dark:text-slate-600 hidden sm:inline">
             |
           </span>
