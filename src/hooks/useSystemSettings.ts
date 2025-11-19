@@ -47,7 +47,7 @@ export function useSystemSettings(): UseSystemSettingsReturn {
   const [isLoading, setIsLoading] = useState(true)
   const [isUpdating, setIsUpdating] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const toast = useToast()
+  const { showToast } = useToast()
 
   // 載入系統設定
   const fetchSettings = useCallback(async () => {
@@ -78,11 +78,11 @@ export function useSystemSettings(): UseSystemSettingsReturn {
       const errorMessage = err instanceof Error ? err.message : '未知錯誤'
       setError(errorMessage)
       clientLogger.error('載入系統設定失敗', { error: err })
-      toast.showToast(`載入失敗：${errorMessage}`, 'error')
+      showToast(`載入失敗：${errorMessage}`, 'error')
     } finally {
       setIsLoading(false)
     }
-  }, []) // 移除 toast 依賴
+  }, [showToast])
 
   // 更新系統設定
   const updateSetting = useCallback(
@@ -120,17 +120,17 @@ export function useSystemSettings(): UseSystemSettingsReturn {
         )
 
         clientLogger.info('系統設定更新成功', { key, value })
-        toast.showToast(`設定已更新`, 'success')
+        showToast(`設定已更新`, 'success')
       } catch (err) {
         const errorMessage = err instanceof Error ? err.message : '未知錯誤'
         clientLogger.error('更新系統設定失敗', { error: err, key, value })
-        toast.showToast(`更新失敗：${errorMessage}`, 'error')
+        showToast(`更新失敗：${errorMessage}`, 'error')
         throw err
       } finally {
         setIsUpdating(false)
       }
     },
-    [] // 移除 toast 依賴
+    [showToast]
   )
 
   // 初始載入（只執行一次）

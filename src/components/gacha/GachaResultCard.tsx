@@ -35,7 +35,6 @@ export const GachaResultCard = memo(function GachaResultCard({ item, displayNumb
       </div>
 
       {/* 物品圖示 */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={itemIconUrl}
         alt={`Draw #${displayNumber}`}

@@ -77,7 +77,6 @@ export const MonsterDropCard = memo(function MonsterDropCard({
 
       {/* 怪物資訊 */}
       <div className="flex items-center gap-3 mb-4">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={monsterIconUrl}
           alt={displayMobName}

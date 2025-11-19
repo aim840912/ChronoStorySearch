@@ -113,7 +113,7 @@ export async function createClient() {
         async set(name: string, value: string, options: CookieOptions) {
           try {
             cookieStore.set({ name, value, ...options })
-          } catch (error) {
+          } catch {
             // 在 Server Components 中可能無法設定 cookie
             // 這是預期行為，不需要拋出錯誤
           }
@@ -121,7 +121,7 @@ export async function createClient() {
         async remove(name: string, options: CookieOptions) {
           try {
             cookieStore.set({ name, value: '', ...options })
-          } catch (error) {
+          } catch {
             // 在 Server Components 中可能無法刪除 cookie
             // 這是預期行為，不需要拋出錯誤
           }

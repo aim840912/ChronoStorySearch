@@ -197,7 +197,6 @@ export function SearchBar({
                   {/* 怪物圖示 - 使用 R2 CDN 圖片 */}
                   {suggestion.type === 'monster' ? (
                     suggestion.id !== undefined && !hasImageFailed('monster', suggestion.id) ? (
-                      // eslint-disable-next-line @next/next/no-img-element
                       <img
                         src={getMonsterImageUrl(suggestion.id)}
                         alt={suggestion.name}
@@ -212,7 +211,6 @@ export function SearchBar({
                   ) : suggestion.type === 'item' ? (
                     /* 物品圖示 - 使用 R2 CDN 圖片 */
                     suggestion.id !== undefined && !hasImageFailed('item', suggestion.id) ? (
-                      // eslint-disable-next-line @next/next/no-img-element
                       <img
                         src={getItemImageUrl(suggestion.id)}
                         alt={suggestion.name}

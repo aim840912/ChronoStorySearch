@@ -24,7 +24,6 @@ export const GachaItemCard = memo(function GachaItemCard({ item, language, onIte
     >
       <div className="flex gap-2 items-center">
         {/* 物品圖示 */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={itemIconUrl}
           alt={displayName}

@@ -65,11 +65,11 @@ export function useListingsStatistics(): UseListingsStatisticsReturn {
   const [statistics, setStatistics] = useState<ListingsStatistics | null>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const toast = useToast()
+  const { showToast } = useToast()
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
 
   // 載入統計資料
-  const fetchStatistics = useCallback(async (showToast = false) => {
+  const fetchStatistics = useCallback(async (showToastMessage = false) => {
     try {
       setIsLoading(true)
       setError(null)
@@ -94,21 +94,21 @@ export function useListingsStatistics(): UseListingsStatisticsReturn {
       setStatistics(data.data)
       clientLogger.debug('刊登統計載入成功', { data: data.data })
 
-      if (showToast) {
-        toast.showToast('統計資料已更新', 'success')
+      if (showToastMessage) {
+        showToast('統計資料已更新', 'success')
       }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : '未知錯誤'
       setError(errorMessage)
       clientLogger.error('載入刊登統計失敗', { error: err })
 
-      if (showToast) {
-        toast.showToast(`載入失敗：${errorMessage}`, 'error')
+      if (showToastMessage) {
+        showToast(`載入失敗：${errorMessage}`, 'error')
       }
     } finally {
       setIsLoading(false)
     }
-  }, []) // 移除 toast 依賴
+  }, [showToast])
 
   // 手動刷新（顯示 toast）
   const refetch = useCallback(async () => {

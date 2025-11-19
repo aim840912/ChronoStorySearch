@@ -150,7 +150,7 @@ export function useSystemStatus(): UseSystemStatusReturn {
       })()
 
       await pendingRequest
-    } catch (err) {
+    } catch {
       // 錯誤已在內部處理，這裡只是為了不讓 Promise rejection 傳播
     }
   }, [])

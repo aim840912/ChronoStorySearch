@@ -355,7 +355,6 @@ export function ItemModal({
           }`}>
             {/* 物品圖示 */}
             <div className="flex justify-center mb-4">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={itemIconUrl}
                 alt={displayItemName}

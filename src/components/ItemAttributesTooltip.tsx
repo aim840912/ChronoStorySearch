@@ -186,7 +186,6 @@ export function ItemAttributesTooltip({
         <div className="p-4 space-y-3">
           {/* 物品圖示 */}
           <div className="flex justify-center">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={itemIconUrl}
               alt={displayItemName}

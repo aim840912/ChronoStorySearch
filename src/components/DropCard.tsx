@@ -70,7 +70,6 @@ export const DropCard = memo(function DropCard({ drop, onCardClick, isFavorite, 
 
       {/* 怪物資訊 */}
       <div className="flex items-center gap-3 mb-3">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={monsterIconUrl}
           alt={displayMobName}
@@ -91,7 +90,6 @@ export const DropCard = memo(function DropCard({ drop, onCardClick, isFavorite, 
       <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
         <div className="flex items-center gap-2 mb-2">
           {/* 物品圖示 */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={itemIconUrl}
             alt={displayItemName}

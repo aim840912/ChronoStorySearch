@@ -36,6 +36,18 @@ const eslintConfig = [
       ],
     },
   },
+  {
+    // 針對使用 R2 CDN 圖片的元件，允許使用 <img> 標籤
+    // 原因：圖片來自 Cloudflare R2 CDN（已優化），使用 Next.js <Image /> 會：
+    // 1. 消耗 Vercel Image Optimization 配額（Hobby: 1,000/月）
+    // 2. 產生不必要的轉換成本（圖片已在 CDN 優化）
+    // 3. 增加 Serverless Function 呼叫次數
+    // 參考：CLAUDE.md - 技術債掃描報告 - 圖片優化策略
+    files: ["src/components/**/*.tsx"],
+    rules: {
+      "@next/next/no-img-element": "off",
+    },
+  },
 ];
 
 export default eslintConfig;

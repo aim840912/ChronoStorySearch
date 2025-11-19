@@ -86,7 +86,6 @@ function HistoryItemImage({ item }: { item: ViewHistoryItem }) {
         ? 'bg-red-100 dark:bg-red-900/30'
         : 'bg-blue-100 dark:bg-blue-900/30'
     }`}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={imageUrl}
         alt={item.name}
