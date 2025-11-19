@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { DropsEssential, GachaMachine, ItemAttributes, ItemAttributesEssential } from '@/types'
 import { MonsterDropCard } from './MonsterDropCard'
+import { MonsterDropList } from './MonsterDropList'
 import { ItemAttributesCard } from './ItemAttributesCard'
 import { Toast } from './Toast'
 import { BaseModal } from './common/BaseModal'
@@ -14,6 +15,7 @@ import { useLanguageToggle } from '@/hooks/useLanguageToggle'
 import { useShare } from '@/hooks/useShare'
 import { useLazyMobInfo, useLazyItemDetailed } from '@/hooks/useLazyData'
 import { findGachaItemAttributes } from '@/lib/gacha-utils'
+import { useLocalStorage } from '@/hooks/useLocalStorage'
 
 interface ItemModalProps {
   isOpen: boolean
@@ -64,6 +66,9 @@ export function ItemModal({
   const handleShare = useShare(() => `${window.location.origin}${window.location.pathname}#item=${itemId}`)
   // 手機版 Tab 狀態（'info' = 物品資訊, 'sources' = 掉落來源）
   const [mobileTab, setMobileTab] = useState<'info' | 'sources'>('info')
+
+  // 視圖模式切換狀態（'grid' = 卡片視圖, 'list' = 列表視圖）
+  const [viewMode, setViewMode] = useLocalStorage<'grid' | 'list'>('item-sources-view', 'grid')
 
   // 懶加載怪物資訊資料 (用於顯示怪物血量)
   const {
@@ -248,6 +253,27 @@ export function ItemModal({
               </p>
             </div>
             <div className="flex-1 flex items-center gap-2 justify-end">
+              {/* 視圖切換按鈕 */}
+              <button
+                onClick={() => setViewMode(viewMode === 'grid' ? 'list' : 'grid')}
+                className={`p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center ${
+                  viewMode === 'grid'
+                    ? 'bg-white text-green-600'
+                    : 'bg-white/20 hover:bg-white/30 text-white border border-white/30'
+                }`}
+                aria-label={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
+                title={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
+              >
+                {viewMode === 'grid' ? (
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                  </svg>
+                ) : (
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                )}
+              </button>
               {/* 語言切換按鈕 */}
               <button
                 onClick={toggleLanguage}
@@ -440,18 +466,29 @@ export function ItemModal({
                 <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden lg:block">
                   {t('card.droppedBy')}
                 </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                  {itemDrops.map((drop, index) => (
-                    <MonsterDropCard
-                      key={`${drop.mobId}-${index}`}
-                      drop={drop}
-                      monsterHPMap={monsterHPMap}
-                      isFavorite={isMonsterFavorite(drop.mobId)}
-                      onToggleFavorite={onToggleMonsterFavorite}
-                      onMonsterClick={onMonsterClick}
-                    />
-                  ))}
-                </div>
+                {/* 根據視圖模式渲染不同的佈局 */}
+                {viewMode === 'grid' ? (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                    {itemDrops.map((drop, index) => (
+                      <MonsterDropCard
+                        key={`${drop.mobId}-${index}`}
+                        drop={drop}
+                        monsterHPMap={monsterHPMap}
+                        isFavorite={isMonsterFavorite(drop.mobId)}
+                        onToggleFavorite={onToggleMonsterFavorite}
+                        onMonsterClick={onMonsterClick}
+                      />
+                    ))}
+                  </div>
+                ) : (
+                  <MonsterDropList
+                    drops={itemDrops}
+                    monsterHPMap={monsterHPMap}
+                    isMonsterFavorite={isMonsterFavorite}
+                    onToggleFavorite={onToggleMonsterFavorite}
+                    onMonsterClick={onMonsterClick}
+                  />
+                )}
               </div>
             )}
 
