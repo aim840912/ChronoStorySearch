@@ -24,11 +24,11 @@ import { success } from '@/lib/api-response'
 import { getSystemSettings } from '@/lib/config/system-config'
 import { withBotDetection } from '@/lib/bot-detection/api-middleware'
 
-// Edge Runtime（成本優化：2025-11-03）
+// Edge Runtime（暫時停用以減少 Edge Request 消耗：2025-11-24）
 // - 延遲降低 60-70%（從 200ms → 50-80ms）
 // - 執行成本降低 30-40%
 // - 輕量級查詢，適合 Edge Runtime
-export const runtime = 'edge'
+// export const runtime = 'edge'
 
 // =====================================================
 // GET - 查詢系統狀態

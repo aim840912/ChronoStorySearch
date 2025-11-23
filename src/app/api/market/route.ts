@@ -6,8 +6,8 @@ import { ValidationError } from '@/lib/errors'
 import { supabaseAdmin } from '@/lib/supabase/server'
 import { apiLogger } from '@/lib/logger'
 
-// Edge Runtime 優化：簡單查詢適合 Edge，延遲降低 65%
-export const runtime = 'edge'
+// Edge Runtime（暫時停用以減少 Edge Request 消耗：2025-11-24）
+// export const runtime = 'edge'
 
 /**
  * GET /api/market - 市場列表
