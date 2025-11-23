@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getMonsterImageUrl, getItemImageUrl } from '@/lib/image-utils'
 import type { RefObject, KeyboardEvent } from 'react'
-import type { SuggestionItem, SearchTypeFilter } from '@/types'
+import type { SuggestionItem, SearchTypeFilter, FilterMode, AdvancedFilterOptions } from '@/types'
 
 interface SearchBarProps {
   searchTerm: string
@@ -21,6 +21,17 @@ interface SearchBarProps {
   searchContainerRef: RefObject<HTMLDivElement | null>
   onShare?: () => void
   placeholder?: string // 自定義 placeholder
+  // 收藏按鈕相關
+  filterMode?: FilterMode
+  onFilterChange?: (mode: FilterMode) => void
+  favoriteMonsterCount?: number
+  favoriteItemCount?: number
+  // 進階篩選相關
+  isAdvancedFilterExpanded?: boolean
+  onAdvancedFilterToggle?: () => void
+  advancedFilterCount?: number
+  advancedFilter?: AdvancedFilterOptions
+  onResetAdvancedFilter?: () => void
 }
 
 /**
@@ -42,6 +53,15 @@ export function SearchBar({
   searchContainerRef,
   onShare,
   placeholder,
+  filterMode,
+  onFilterChange,
+  favoriteMonsterCount = 0,
+  favoriteItemCount = 0,
+  isAdvancedFilterExpanded,
+  onAdvancedFilterToggle,
+  advancedFilterCount = 0,
+  advancedFilter,
+  onResetAdvancedFilter,
 }: SearchBarProps) {
   const { t } = useLanguage()
 
@@ -62,15 +82,51 @@ export function SearchBar({
     return failedImageIds.has(`${type}-${id}`)
   }
 
+  // 生成篩選條件摘要
+  const getFilterSummary = (): string => {
+    if (!advancedFilter) return ''
+
+    const labels: string[] = []
+
+    // 物品類別
+    advancedFilter.itemCategories.forEach(cat => {
+      labels.push(t(`filter.itemCategory.${cat}`))
+    })
+
+    // 職業
+    advancedFilter.jobClasses.forEach(job => {
+      labels.push(t(`filter.jobClass.${job}`))
+    })
+
+    // 等級範圍
+    if (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null) {
+      const min = advancedFilter.levelRange.min ?? 0
+      const max = advancedFilter.levelRange.max ?? 200
+      labels.push(`Lv ${min}-${max}`)
+    }
+
+    // 限制顯示數量（最多3個），其餘用「...」表示
+    if (labels.length === 0) {
+      return ''
+    } else if (labels.length <= 3) {
+      return labels.join('、')
+    } else {
+      return labels.slice(0, 3).join('、') + '...'
+    }
+  }
+
   return (
-    <div className="max-w-4xl mx-auto mb-6">
+    <div className="max-w-7xl mx-auto mb-6">
       <div className="flex flex-col md:flex-row gap-3 items-stretch md:items-center">
         {/* 搜尋類型選擇器 */}
-        <div className="flex rounded-lg bg-gray-100 dark:bg-gray-700 p-1 flex-shrink-0 order-2 md:order-1">
+        <div className="flex flex-wrap rounded-lg bg-gray-100 dark:bg-gray-700 p-1 flex-shrink-0 order-2 md:order-2">
           <button
-            onClick={() => onSearchTypeChange('all')}
+            onClick={() => {
+              onSearchTypeChange('all')
+              onFilterChange?.('all')
+            }}
             className={`px-3 py-2 text-sm font-medium rounded-md transition-all whitespace-nowrap ${
-              searchType === 'all'
+              searchType === 'all' && filterMode === 'all'
                 ? 'bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 shadow-sm'
                 : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
             }`}
@@ -78,9 +134,12 @@ export function SearchBar({
             {t('search.type.all')}
           </button>
           <button
-            onClick={() => onSearchTypeChange('monster')}
+            onClick={() => {
+              onSearchTypeChange('monster')
+              onFilterChange?.('all')
+            }}
             className={`px-3 py-2 text-sm font-medium rounded-md transition-all whitespace-nowrap ${
-              searchType === 'monster'
+              searchType === 'monster' && filterMode === 'all'
                 ? 'bg-white dark:bg-gray-800 text-red-600 dark:text-red-400 shadow-sm'
                 : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
             }`}
@@ -88,9 +147,12 @@ export function SearchBar({
             {t('search.type.monster')}
           </button>
           <button
-            onClick={() => onSearchTypeChange('item')}
+            onClick={() => {
+              onSearchTypeChange('item')
+              onFilterChange?.('all')
+            }}
             className={`px-3 py-2 text-sm font-medium rounded-md transition-all whitespace-nowrap ${
-              searchType === 'item'
+              searchType === 'item' && filterMode === 'all'
                 ? 'bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 shadow-sm'
                 : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
             }`}
@@ -98,19 +160,58 @@ export function SearchBar({
             {t('search.type.item')}
           </button>
           <button
-            onClick={() => onSearchTypeChange('gacha')}
+            onClick={() => {
+              onSearchTypeChange('gacha')
+              onFilterChange?.('all')
+            }}
             className={`px-3 py-2 text-sm font-medium rounded-md transition-all whitespace-nowrap ${
-              searchType === 'gacha'
+              searchType === 'gacha' && filterMode === 'all'
                 ? 'bg-white dark:bg-gray-800 text-purple-600 dark:text-purple-400 shadow-sm'
                 : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
             }`}
           >
             {t('search.type.gacha')}
           </button>
+
+          {/* 收藏按鈕 */}
+          {onFilterChange && (
+            <>
+              <button
+                onClick={() => onFilterChange('favorite-monsters')}
+                className={`px-3 py-2 text-sm font-medium rounded-md transition-all whitespace-nowrap flex items-center gap-1 ${
+                  filterMode === 'favorite-monsters'
+                    ? 'bg-white dark:bg-gray-800 text-red-600 dark:text-red-400 shadow-sm'
+                    : favoriteMonsterCount > 0
+                    ? 'text-red-500 dark:text-red-400 hover:text-red-600 dark:hover:text-red-300'
+                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+                }`}
+              >
+                <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+                {t('filter.favoriteMonsters')}
+              </button>
+              <button
+                onClick={() => onFilterChange('favorite-items')}
+                className={`px-3 py-2 text-sm font-medium rounded-md transition-all whitespace-nowrap flex items-center gap-1 ${
+                  filterMode === 'favorite-items'
+                    ? 'bg-white dark:bg-gray-800 text-green-600 dark:text-green-400 shadow-sm'
+                    : favoriteItemCount > 0
+                    ? 'text-green-500 dark:text-green-400 hover:text-green-600 dark:hover:text-green-300'
+                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+                }`}
+              >
+                <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+                {t('filter.favoriteItems')}
+              </button>
+            </>
+          )}
         </div>
 
         {/* 搜尋輸入框容器 */}
-        <div className="relative flex-1 order-1 md:order-2" ref={searchContainerRef}>
+        <div className="relative flex-1 order-1 md:order-3" ref={searchContainerRef}>
           {/* 搜尋圖示 */}
           <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
           <svg
@@ -248,6 +349,46 @@ export function SearchBar({
         )}
         </div>
         {/* 結束搜尋輸入框容器 */}
+
+        {/* 進階篩選按鈕 */}
+        {onAdvancedFilterToggle && (
+          <button
+            onClick={onAdvancedFilterToggle}
+            className="flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium transition-all duration-200 bg-indigo-500 hover:bg-indigo-600 text-white shadow-md hover:shadow-lg whitespace-nowrap order-3 md:order-1 flex-shrink-0"
+          >
+            <svg
+              className={`w-5 h-5 transition-transform duration-200 ${isAdvancedFilterExpanded ? 'rotate-180' : ''}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+            <span>
+              {t('filter.advanced')}
+              {advancedFilterCount > 0 && `: ${getFilterSummary()}`}
+            </span>
+          </button>
+        )}
+
+        {/* 清除篩選按鈕 */}
+        {onResetAdvancedFilter && advancedFilterCount > 0 && (
+          <button
+            onClick={onResetAdvancedFilter}
+            className="px-4 py-2.5 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 border-2 border-red-500 hover:border-red-600 text-red-500 hover:text-red-600 bg-white dark:bg-gray-800 shadow-md hover:shadow-lg whitespace-nowrap order-4 md:order-1 flex-shrink-0"
+            title="清除所有進階篩選條件"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            清除篩選
+          </button>
+        )}
       </div>
       {/* 結束 flex 容器 */}
     </div>

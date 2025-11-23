@@ -33,7 +33,6 @@ interface SearchHeaderProps {
   onFilterChange: (mode: FilterMode) => void
   favoriteMonsterCount: number
   favoriteItemCount: number
-  onClearClick: (type: 'monsters' | 'items' | null) => void
 
   // 進階篩選相關
   isAdvancedFilterExpanded: boolean
@@ -43,10 +42,10 @@ interface SearchHeaderProps {
   advancedFilter: AdvancedFilterOptions
   onAdvancedFilterChange: (filter: AdvancedFilterOptions) => void
 
-  // 交易系統相關
-  onOpenCreateListing: () => void
-  onOpenMyListings: () => void
-  onOpenInterests: () => void
+  // 交易系統相關（暫時保留 props 但不使用）
+  onOpenCreateListing?: () => void
+  onOpenMyListings?: () => void
+  onOpenInterests?: () => void
   marketFilter: MarketFilterOptions
   onMarketFilterChange: (filter: MarketFilterOptions) => void
 }
@@ -75,16 +74,12 @@ export const SearchHeader = memo(function SearchHeader({
   onFilterChange,
   favoriteMonsterCount,
   favoriteItemCount,
-  onClearClick,
   isAdvancedFilterExpanded,
   onAdvancedFilterToggle,
   advancedFilterCount,
   onResetAdvancedFilter,
   advancedFilter,
   onAdvancedFilterChange,
-  onOpenCreateListing,
-  onOpenMyListings,
-  onOpenInterests,
   marketFilter,
   onMarketFilterChange,
 }: SearchHeaderProps) {
@@ -125,27 +120,21 @@ export const SearchHeader = memo(function SearchHeader({
             onFocusedIndexChange={onFocusedIndexChange}
             searchContainerRef={searchContainerRef}
             onShare={onShare}
-          />
-        </div>
-
-        {/* 篩選按鈕 */}
-        <div className="order-1 md:order-2">
-          <FilterButtons
             filterMode={filterMode}
             onFilterChange={onFilterChange}
             favoriteMonsterCount={favoriteMonsterCount}
             favoriteItemCount={favoriteItemCount}
-            onClearClick={onClearClick}
             isAdvancedFilterExpanded={isAdvancedFilterExpanded}
             onAdvancedFilterToggle={onAdvancedFilterToggle}
             advancedFilterCount={advancedFilterCount}
-            onResetAdvancedFilter={onResetAdvancedFilter}
             advancedFilter={advancedFilter}
-            user={user}
-            onOpenCreateListing={onOpenCreateListing}
-            onOpenMyListings={onOpenMyListings}
-            onOpenInterests={onOpenInterests}
+            onResetAdvancedFilter={onResetAdvancedFilter}
           />
+        </div>
+
+        {/* 篩選按鈕（目前為空，保留用於未來市場功能） */}
+        <div className="order-1 md:order-2">
+          <FilterButtons />
         </div>
       </div>
 

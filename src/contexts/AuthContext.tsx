@@ -109,13 +109,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const supabase = createClient()
 
   // 使用 SWR 管理用戶狀態
+  // 暫時停用認證檢查（傳入 null 會停用 SWR 請求）
   const {
     data: user,
     error,
     mutate,
     isLoading,
     isValidating,
-  } = useSWR<User | null>('/api/auth/me', authMeFetcher, {
+  } = useSWR<User | null>(null, authMeFetcher, {
     ...swrStrategies.userInfo,
     // 在 mount 時自動載入
     revalidateOnMount: true,

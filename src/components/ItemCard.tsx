@@ -52,17 +52,6 @@ export const ItemCard = memo(function ItemCard({
     >
       {/* 右上角按鈕群組 */}
       <div className="absolute top-3 right-3 flex items-center gap-2">
-        {/* 怪物掉落圖示 - 只在有怪物掉落時顯示 */}
-        {source?.fromDrops && (
-          <div className="p-2 rounded-full bg-green-500 text-white" title={t('card.monsterDrop')}>
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <circle cx="9" cy="10" r="1.5" fill="currentColor"/>
-              <circle cx="15" cy="10" r="1.5" fill="currentColor"/>
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3C7 3 3 7 3 12v2c0 1 0 2 1 3h2v3h12v-3h2c1-1 1-2 1-3v-2c0-5-4-9-9-9z"/>
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 16h6M10 16v2m4-2v2"/>
-            </svg>
-          </div>
-        )}
         {/* 轉蛋機圖示 - 只在來自轉蛋機時顯示 */}
         {source?.fromGacha && (
           <div className="p-2 rounded-full bg-purple-500 text-white" title={t('card.gachaDrop')}>

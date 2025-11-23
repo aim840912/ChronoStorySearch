@@ -43,6 +43,7 @@ interface ContentDisplayProps {
   onMonsterCardClick: (mobId: number, mobName: string) => void
   onToggleFavorite: (mobId: number, mobName: string) => void
   isFavorite: (mobId: number) => boolean
+  onClearMonsters: () => void
 
   // 最愛物品模式
   filteredUniqueItems: Array<{
@@ -55,6 +56,7 @@ interface ContentDisplayProps {
   onItemCardClick: (itemId: number, itemName: string) => void
   onToggleItemFavorite: (itemId: number, itemName: string) => void
   isItemFavorite: (itemId: number) => boolean
+  onClearItems: () => void
 
   // 全部模式
   mixedCards: MixedCard[]
@@ -99,11 +101,13 @@ export const ContentDisplay = memo(function ContentDisplay({
   onMonsterCardClick,
   onToggleFavorite,
   isFavorite,
+  onClearMonsters,
   filteredUniqueItems,
   itemAttributesMap,
   onItemCardClick,
   onToggleItemFavorite,
   isItemFavorite,
+  onClearItems,
   mixedCards,
   displayedMonsters,
   displayedItems,
@@ -192,6 +196,7 @@ export const ContentDisplay = memo(function ContentDisplay({
           mobLevelMap={mobLevelMap}
           onCardClick={onMonsterCardClick}
           onToggleFavorite={onToggleFavorite}
+          onClearClick={onClearMonsters}
           t={t}
         />
       ) : filterMode === 'favorite-items' ? (
@@ -202,6 +207,7 @@ export const ContentDisplay = memo(function ContentDisplay({
           itemAttributesMap={itemAttributesMap}
           onCardClick={onItemCardClick}
           onToggleFavorite={onToggleItemFavorite}
+          onClearClick={onClearItems}
           t={t}
         />
       ) : (

@@ -16,21 +16,21 @@ interface Command {
 }
 
 const GAME_COMMANDS: Command[] = [
-  { command: '/help', descriptionKey: 'commands.help' },
+  { command: '/mswavatar', descriptionKey: 'commands.mswavatar' },
   { command: '/reply', descriptionKey: 'commands.reply' },
   { command: '/check', descriptionKey: 'commands.check', parameters: '[username]' },
   { command: '/partyinfo', descriptionKey: 'commands.partyinfo' },
-  { command: '/str', descriptionKey: 'commands.str', parameters: '[number]' },
-  { command: '/dex', descriptionKey: 'commands.dex', parameters: '[number]' },
-  { command: '/int', descriptionKey: 'commands.int', parameters: '[number]' },
-  { command: '/luk', descriptionKey: 'commands.luk', parameters: '[number]' },
-  { command: '/find', descriptionKey: 'commands.find', parameters: '[#code or username]' },
   { command: '/mutesmegas', descriptionKey: 'commands.mutesmegas' },
   { command: '/mutesmegasNA', descriptionKey: 'commands.mutesmegasNA' },
   { command: '/mutesmegasEU', descriptionKey: 'commands.mutesmegasEU' },
   { command: '/mutesmegasASIA1', descriptionKey: 'commands.mutesmegasASIA1' },
   { command: '/mutesmegasASIA2', descriptionKey: 'commands.mutesmegasASIA2' },
-  { command: '/mswavatar', descriptionKey: 'commands.mswavatar' },
+  { command: '/str', descriptionKey: 'commands.str', parameters: '[number]' },
+  { command: '/dex', descriptionKey: 'commands.dex', parameters: '[number]' },
+  { command: '/int', descriptionKey: 'commands.int', parameters: '[number]' },
+  { command: '/luk', descriptionKey: 'commands.luk', parameters: '[number]' },
+  { command: '/find', descriptionKey: 'commands.find', parameters: '[#code or username]' },
+  { command: '/help', descriptionKey: 'commands.help' },
 ]
 
 export function GameCommandsModal({ isOpen, onClose }: GameCommandsModalProps) {

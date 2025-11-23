@@ -130,8 +130,24 @@ export function useFilterLogic({
       }
     })
 
+    // 處理純轉蛋物品（不在 allDrops 中的收藏物品）
+    gachaMachines.forEach((machine) => {
+      machine.items.forEach((gachaItem) => {
+        const itemId = gachaItem.itemId
+        // 只處理已收藏且不在 itemMap 中的物品（純轉蛋物品）
+        if (favItemIds.has(itemId) && !itemMap.has(itemId)) {
+          itemMap.set(itemId, {
+            itemId: itemId,
+            itemName: gachaItem.name || gachaItem.itemName || '',
+            chineseItemName: gachaItem.chineseName || null,
+            monsterCount: 0, // 純轉蛋物品沒有怪物掉落
+          })
+        }
+      })
+    })
+
     return Array.from(itemMap.values())
-  }, [filterMode, favoriteItems, allDrops])
+  }, [filterMode, favoriteItems, allDrops, gachaMachines])
 
   // 最愛怪物搜尋過濾（支援多關鍵字搜尋 + 中英文搜尋）
   const filteredUniqueMonsters = useMemo(() => {
@@ -179,18 +195,22 @@ export function useFilterLogic({
       filtered = baseDrops
     } else {
       filtered = baseDrops.filter((drop) => {
-        // 根據 searchType 決定搜尋範圍
+        // 根據 searchType 決定搜尋範圍（雙向搜尋）
         if (searchType === 'monster') {
-          // 只搜尋怪物名稱
+          // 怪物名稱匹配 OR 物品名稱匹配（顯示掉落該物品的怪物）
           return (
             matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
-            (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm))
-          )
-        } else if (searchType === 'item') {
-          // 只搜尋物品名稱
-          return (
+            (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm)) ||
             matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
             (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
+          )
+        } else if (searchType === 'item') {
+          // 物品名稱匹配 OR 怪物名稱匹配（顯示該怪物掉落的物品）
+          return (
+            matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
+            (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm)) ||
+            matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
+            (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm))
           )
         } else {
           // 'all': 搜尋怪物和物品名稱
@@ -302,7 +322,12 @@ export function useFilterLogic({
     // 使用 debouncedSearchTerm 確保與資料來源同步，避免過渡期資料爆炸
     const shouldIncludeAllGacha =
       debouncedSearchTerm.trim() !== '' ||
-      (advancedFilter.enabled && advancedFilter.itemCategories.length > 0)
+      (advancedFilter.enabled && (
+        advancedFilter.itemCategories.length > 0 ||
+        advancedFilter.jobClasses.length > 0 ||
+        advancedFilter.levelRange.min !== null ||
+        advancedFilter.levelRange.max !== null
+      ))
 
     if (shouldIncludeAllGacha) {
       // 載入所有轉蛋物品用於搜尋/篩選
@@ -570,7 +595,6 @@ export function useFilterLogic({
 
       const hasItemSpecificFilter =
         advancedFilter.itemCategories.length > 0 ||
-        advancedFilter.jobClasses.length > 0 ||
         // 在 'all' 模式下（能執行到這裡表示 searchType === 'all'），等級範圍視為物品專屬篩選
         (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null)
 

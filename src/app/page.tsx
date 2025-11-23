@@ -54,6 +54,8 @@ export default function Home() {
   // 追蹤首次掛載，避免初始載入時觸發滾動
   const isFirstMount = useRef(true)
   const isFirstSearchChange = useRef(true)
+  // 追蹤進階篩選面板展開時的滾動位置
+  const expandedAtScrollY = useRef<number | null>(null)
 
   // 追蹤是否顯示「返回頂部」按鈕
   const [showBackToTop, setShowBackToTop] = useState(false)
@@ -190,18 +192,19 @@ export default function Home() {
 
   // 延遲載入轉蛋機 - 當使用者開始搜尋或選擇轉蛋物品類型時才載入
   useEffect(() => {
-    // 當有搜尋詞、選擇了轉蛋/物品類型、或轉蛋 Modal 開啟時，載入轉蛋機資料
+    // 當有搜尋詞、選擇了轉蛋/物品類型、轉蛋 Modal 開啟、或收藏物品模式時，載入轉蛋機資料
     const needsGachaData =
       debouncedSearchTerm.trim() !== '' ||
       searchType === 'gacha' ||
       searchType === 'item' ||
       modals.isGachaModalOpen ||
+      filterMode === 'favorite-items' ||
       (advancedFilter.enabled && advancedFilter.itemCategories.length > 0)
 
     if (needsGachaData) {
       loadGachaMachines()
     }
-  }, [debouncedSearchTerm, searchType, advancedFilter.enabled, advancedFilter.itemCategories, loadGachaMachines, modals.isGachaModalOpen])
+  }, [debouncedSearchTerm, searchType, advancedFilter.enabled, advancedFilter.itemCategories, loadGachaMachines, modals.isGachaModalOpen, filterMode])
 
   // 初始載入時處理分享連結（從 hash 參數開啟 modal）
   useEffect(() => {
@@ -320,16 +323,38 @@ export default function Home() {
     }
   }, [search.searchTerm])
 
-  // 監聽滾動事件，顯示/隱藏「返回頂部」按鈕
+  // 追蹤進階篩選面板展開時的滾動位置
+  useEffect(() => {
+    if (isAdvancedFilterExpanded) {
+      // 面板剛展開，記錄當前滾動位置
+      expandedAtScrollY.current = window.scrollY
+    } else {
+      // 面板收合，清除記錄
+      expandedAtScrollY.current = null
+    }
+  }, [isAdvancedFilterExpanded])
+
+  // 監聽滾動事件，顯示/隱藏「返回頂部」按鈕，並自動收合進階篩選
   useEffect(() => {
     const handleScroll = () => {
+      const scrollY = window.scrollY
+
       // 當使用者滾動超過 300px 時顯示按鈕
-      setShowBackToTop(window.scrollY > 300)
+      setShowBackToTop(scrollY > 300)
+
+      // 只有從展開位置向下滾動超過 50px 才收合面板
+      if (
+        isAdvancedFilterExpanded &&
+        expandedAtScrollY.current !== null &&
+        scrollY > expandedAtScrollY.current + 50
+      ) {
+        setIsAdvancedFilterExpanded(false)
+      }
     }
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [isAdvancedFilterExpanded])
 
   // 選擇建議項目
   const selectSuggestion = useCallback((suggestionName: string, suggestion?: SuggestionItem) => {
@@ -571,7 +596,6 @@ export default function Home() {
           onFilterChange={setFilterMode}
           favoriteMonsterCount={favoriteCount}
           favoriteItemCount={favoriteItemCount}
-          onClearClick={modals.openClearModal}
           isAdvancedFilterExpanded={isAdvancedFilterExpanded}
           onAdvancedFilterToggle={() => setIsAdvancedFilterExpanded(!isAdvancedFilterExpanded)}
           advancedFilterCount={advancedFilterCount}
@@ -595,11 +619,13 @@ export default function Home() {
           onMonsterCardClick={modals.openMonsterModal}
           onToggleFavorite={toggleFavorite}
           isFavorite={isFavorite}
+          onClearMonsters={() => modals.openClearModal('monsters')}
           filteredUniqueItems={filteredUniqueItems}
           itemAttributesMap={itemAttributesMap}
           onItemCardClick={modals.openItemModal}
           onToggleItemFavorite={toggleItemFavorite}
           isItemFavorite={isItemFavorite}
+          onClearItems={() => modals.openClearModal('items')}
           mixedCards={mixedCards}
           displayedMonsters={displayedMonsters}
           displayedItems={displayedItems}
