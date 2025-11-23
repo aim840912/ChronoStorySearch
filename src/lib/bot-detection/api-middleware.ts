@@ -27,7 +27,7 @@ import {
 } from '@/lib/middleware/error-handler'
 import { slidingWindowRateLimit, fixedWindowRateLimit } from './rate-limiter'
 import { detectAbnormalBehavior } from './behavior-detector'
-import { getClientIP } from './user-agent-detector'
+import { getClientIP, detectBotByUserAgent } from './user-agent-detector'
 import { BotDetectionOptions } from './types'
 import { RateLimitError } from '@/lib/errors'
 import { DEFAULT_RATE_LIMITS } from './constants'
@@ -66,6 +66,35 @@ async function checkBotDetection(
   const ip = getClientIP(request.headers)
   const path = request.nextUrl.pathname
   const method = request.method
+  const userAgent = request.headers.get('user-agent')
+
+  // 0. User-Agent Bot Detection（從 middleware 移入，2025-11-24）
+  // 原本在 Edge middleware 執行，現移至 Serverless 以減少 Edge Request 成本
+  const botCheck = detectBotByUserAgent(userAgent)
+
+  if (botCheck.shouldBlock) {
+    apiLogger.warn('Bot 已阻擋（API middleware）', {
+      ip,
+      userAgent,
+      reason: botCheck.reason,
+      confidence: botCheck.confidence,
+      path,
+    })
+
+    throw new RateLimitError('Bot detected', {
+      reason: botCheck.reason,
+    })
+  }
+
+  // SEO 爬蟲日誌（可選，用於監控）
+  if (botCheck.isBot && !botCheck.shouldBlock) {
+    apiLogger.debug('SEO 爬蟲已允許', {
+      ip,
+      userAgent,
+      reason: botCheck.reason,
+      path,
+    })
+  }
 
   // 1. Rate Limiting 檢查（動態選擇算法）
   if (enableRateLimit) {

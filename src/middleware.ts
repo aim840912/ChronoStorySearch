@@ -74,17 +74,23 @@ export function middleware(request: NextRequest) {
 /**
  * Middleware 配置
  *
- * matcher 規則：
- * - /api/* - 保護所有 API 端點
+ * ⚠️ 已停用（2025-11-24）
+ * 原因：Edge Requests 超出免費額度（2.3M / 1M）
  *
- * 成本優化說明（2025-11-03）：
- * - 移除頁面層級的 Middleware 匹配，減少 40-50% Function Invocations
- * - API 層級仍保留完整的 Bot Detection 和 Rate Limiting 防護
- * - 預期效果：從 2.15-3.1M → 0.7-1.0M invocations/月
+ * 安全性說明：
+ * - Layer 2 防護仍然有效（API 路由中的 Rate Limiting + Behavior Detection）
+ * - User-Agent 檢測已移至 API middleware（withBotDetection）
+ * - 敏感端點仍需認證
+ *
+ * 如需重新啟用，將 matcher 改回 '/api/:path*'
+ *
+ * 歷史記錄：
+ * - 2025-11-03：移除頁面層級匹配，減少 40-50% invocations
+ * - 2025-11-24：完全停用以消除 Edge Request 成本
  */
 export const config = {
   matcher: [
-    // 只匹配 API 路由（成本優化：移除頁面層級匹配）
-    '/api/:path*',
+    // 已停用 - 所有 Bot Detection 由 API 路由中的 withBotDetection 處理
+    // '/api/:path*',
   ],
 }
