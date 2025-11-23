@@ -90,7 +90,12 @@ export const SearchHeader = memo(function SearchHeader({
     <div className="sticky top-0 z-40 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 backdrop-blur-sm pt-4 sm:pt-6 pb-3 sm:pb-4 shadow-md">
       {/* 標題區域 */}
       <div className="relative text-center mb-4 sm:mb-6 pt-2 pr-20 sm:pr-0">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white flex items-center justify-center gap-2">
+          <img
+            src="/chrono.png"
+            alt="ChronoStory Logo"
+            className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
+          />
           {t('app.title')}
         </h1>
         {/* 主題、語言切換與登入按鈕 - 右上角 */}
