@@ -153,12 +153,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
    */
   useEffect(() => {
     if (user && !error) {
-      // 除錯日誌：確認頭貼資料
-      console.log('[AuthContext] User loaded:', {
-        discord_id: user.discord_id,
-        discord_avatar: user.discord_avatar,
-        discord_username: user.discord_username
-      })
+      // 除錯日誌：確認頭貼資料（僅開發環境）
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[AuthContext] User loaded:', {
+          discord_id: user.discord_id,
+          discord_avatar: user.discord_avatar,
+          discord_username: user.discord_username
+        })
+      }
 
       // GA4 事件追蹤：登入成功
       // 注意：這會在每次 SWR 重新載入時觸發，需要額外邏輯判斷是否為新登入
@@ -176,7 +178,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((event, session) => {
-      console.log('[AuthContext] Auth state changed:', event, session ? 'session exists' : 'no session')
+      // 除錯日誌（僅開發環境）
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[AuthContext] Auth state changed:', event, session ? 'session exists' : 'no session')
+      }
 
       if (!session) {
         // 登出時清除 SWR 快取
@@ -215,7 +220,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
    */
   const logout = useCallback(async () => {
     try {
-      console.log('[Logout] 開始登出流程')
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[Logout] 開始登出流程')
+      }
 
       // 使用 Supabase Auth 登出
       const { error: signOutError } = await supabase.auth.signOut()
@@ -232,7 +239,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       // 清除 SWR 快取
       await mutate(null, { revalidate: false })
 
-      console.log('[Logout] ✓ 登出成功')
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[Logout] ✓ 登出成功')
+      }
 
       // 重導向至首頁
       window.location.href = '/'
