@@ -48,7 +48,7 @@ export const ItemCard = memo(function ItemCard({
   return (
     <div
       onClick={() => onCardClick(itemId, displayItemName)}
-      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative"
+      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative min-h-[140px]"
     >
       {/* 右上角按鈕群組 */}
       <div className="absolute top-3 right-3 flex items-center gap-2">
