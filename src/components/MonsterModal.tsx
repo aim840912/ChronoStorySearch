@@ -11,6 +11,7 @@ import { BaseModal } from './common/BaseModal'
 import { ItemAttributesTooltip } from './ItemAttributesTooltip'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { useToast } from '@/hooks/useToast'
 import { useLanguageToggle } from '@/hooks/useLanguageToggle'
 import { useShare } from '@/hooks/useShare'
@@ -58,6 +59,7 @@ export function MonsterModal({
   onOpenAccuracyCalculator,
 }: MonsterModalProps) {
   const { t, language } = useLanguage()
+  const { format } = useImageFormat()
   const isDev = process.env.NODE_ENV === 'development'
   const toast = useToast()
   const toggleLanguage = useLanguageToggle()
@@ -178,7 +180,7 @@ export function MonsterModal({
 
   if (!monsterId) return null
 
-  const monsterIconUrl = getMonsterImageUrl(monsterId)
+  const monsterIconUrl = getMonsterImageUrl(monsterId, { format })
 
   return (
     <>

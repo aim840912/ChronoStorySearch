@@ -2,6 +2,7 @@
 
 import { memo } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { getMonsterDisplayName } from '@/lib/display-name'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 
@@ -35,12 +36,13 @@ export const MonsterCard = memo(function MonsterCard({
   // dropCount is part of props but not used in this component
   void dropCount
   const { language, t } = useLanguage()
+  const { format } = useImageFormat()
   const isDev = process.env.NODE_ENV === 'development'
 
   // 獲取顯示名稱（支援中英文切換）
   const displayMobName = getMonsterDisplayName(mobName, chineseMobName, language)
 
-  const monsterIconUrl = getMonsterImageUrl(mobId)
+  const monsterIconUrl = getMonsterImageUrl(mobId, { format })
 
   return (
     <div

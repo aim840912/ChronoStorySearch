@@ -32,6 +32,15 @@ if (!R2_PUBLIC_URL) {
 // 建立 Set 以加快查找速度
 const availableItemImages = new Set(imageManifest.items)
 const availableMonsterImages = new Set(imageManifest.monsters)
+const availableMonsterGifs = new Set(
+  (imageManifest as { 'monsters-gif'?: number[] })['monsters-gif'] || []
+)
+const availableMonsterDies = new Set(
+  (imageManifest as { 'monsters-die'?: number[] })['monsters-die'] || []
+)
+
+// 圖片格式類型：png（靜態）, stand（待機GIF）, die（死亡GIF）
+export type ImageFormat = 'png' | 'stand' | 'die'
 
 // ==================== 圖片路徑工具函數 ====================
 
@@ -51,6 +60,24 @@ export function hasItemImage(itemId: number): boolean {
  */
 export function hasMonsterImage(mobId: number): boolean {
   return availableMonsterImages.has(mobId)
+}
+
+/**
+ * 檢查怪物 GIF 動圖是否存在（待機動畫）
+ * @param mobId 怪物 ID
+ * @returns GIF 是否存在
+ */
+export function hasMonsterGif(mobId: number): boolean {
+  return availableMonsterGifs.has(mobId)
+}
+
+/**
+ * 檢查怪物死亡 GIF 是否存在
+ * @param mobId 怪物 ID
+ * @returns 死亡 GIF 是否存在
+ */
+export function hasMonsterDie(mobId: number): boolean {
+  return availableMonsterDies.has(mobId)
 }
 
 /**
@@ -79,22 +106,47 @@ export function getItemImageUrl(
 /**
  * 取得怪物圖片 URL
  * @param mobId 怪物 ID
- * @param fallback 預設圖片路徑（可選）
+ * @param options 選項
+ * @param options.format 圖片格式（png, stand, hit, die）
+ * @param options.fallback 預設圖片路徑
  * @returns 圖片 URL（使用 R2 CDN，依賴瀏覽器 HTTP 快取）
  */
 export function getMonsterImageUrl(
   mobId: number,
-  fallback: string = '/images/monsters/default.svg'
+  options: {
+    format?: ImageFormat
+    fallback?: string
+  } = {}
 ): string {
+  const { format = 'png', fallback = '/images/monsters/default.svg' } = options
+
+  // 檢查 PNG 是否存在
   if (!hasMonsterImage(mobId)) {
     return fallback
   }
 
-  // 強制使用 R2 CDN（不再 fallback 到本地路徑）
+  // 強制使用 R2 CDN
   if (!R2_PUBLIC_URL) {
     clientLogger.error(`無法載入怪物圖片 ${mobId}：R2_PUBLIC_URL 未設置`)
     return fallback
   }
 
+  // 根據格式返回對應的圖片
+  switch (format) {
+    case 'stand':
+      // 待機動畫（原本的 GIF）
+      if (hasMonsterGif(mobId)) {
+        return `${R2_PUBLIC_URL}/images/monsters-gif/${mobId}.gif`
+      }
+      break
+    case 'die':
+      // 死亡動畫
+      if (hasMonsterDie(mobId)) {
+        return `${R2_PUBLIC_URL}/images/monsters-die/${mobId}.gif`
+      }
+      break
+  }
+
+  // 預設返回 PNG
   return `${R2_PUBLIC_URL}/images/monsters/${mobId}.png`
 }

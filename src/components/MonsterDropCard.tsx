@@ -3,6 +3,7 @@
 import { memo } from 'react'
 import type { DropItem } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { getMonsterDisplayName } from '@/lib/display-name'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 
@@ -28,6 +29,7 @@ export const MonsterDropCard = memo(function MonsterDropCard({
   onMonsterClick,
 }: MonsterDropCardProps) {
   const { language, t } = useLanguage()
+  const { format } = useImageFormat()
   const isDev = process.env.NODE_ENV === 'development'
   const chancePercent = (drop.chance * 100).toFixed(4)
 
@@ -40,7 +42,7 @@ export const MonsterDropCard = memo(function MonsterDropCard({
   // 獲取顯示名稱（支援中英文切換）
   const displayMobName = getMonsterDisplayName(drop.mobName, drop.chineseMobName, language)
 
-  const monsterIconUrl = getMonsterImageUrl(drop.mobId)
+  const monsterIconUrl = getMonsterImageUrl(drop.mobId, { format })
 
   return (
     <div
