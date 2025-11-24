@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState, useRef } from 'react'
 import type { DropsEssential, ItemAttributesEssential, MobMapMonster } from '@/types'
 import { DropItemCard } from './DropItemCard'
 import { DropItemList } from './DropItemList'
@@ -14,7 +14,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { useToast } from '@/hooks/useToast'
 import { useLanguageToggle } from '@/hooks/useLanguageToggle'
-import { useShare } from '@/hooks/useShare'
+import { useScreenshot } from '@/hooks/useScreenshot'
 import { useLazyMobInfo, useLazyDropsDetailed, useLazyMobMaps } from '@/hooks/useLazyData'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 
@@ -63,7 +63,12 @@ export function MonsterModal({
   const isDev = process.env.NODE_ENV === 'development'
   const toast = useToast()
   const toggleLanguage = useLanguageToggle()
-  const handleShare = useShare(() => `${window.location.origin}${window.location.pathname}#monster=${monsterId}`)
+
+  // 截圖功能
+  const screenshotRef = useRef<HTMLDivElement>(null)
+  const { downloadPng, copyToClipboard, isCapturing } = useScreenshot({
+    filename: `monster-${monsterId}-${monsterName}`,
+  })
   // 手機版 Tab 狀態（'info' = 怪物資訊, 'drops' = 掉落物品）
   const [mobileTab, setMobileTab] = useState<'info' | 'drops'>('info')
 
@@ -188,6 +193,8 @@ export function MonsterModal({
       isOpen={isOpen}
       onClose={onClose}
     >
+      {/* 截圖範圍 */}
+      <div ref={screenshotRef} className="bg-white dark:bg-gray-800 rounded-xl">
         {/* Modal Header */}
         <div className="sticky top-0 z-10 bg-blue-500 dark:bg-blue-600 p-4 sm:p-6 rounded-t-xl">
           <div className="flex items-center justify-between">
@@ -272,18 +279,43 @@ export function MonsterModal({
                   />
                 </svg>
               </button>
-              {/* 分享按鈕 */}
+              {/* 下載截圖按鈕 */}
               <button
-                onClick={handleShare}
-                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center"
-                aria-label={t('modal.share')}
+                onClick={() => downloadPng(screenshotRef.current)}
+                disabled={isCapturing}
+                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+                aria-label={t('screenshot.download')}
+                title={t('screenshot.download')}
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                  />
+                </svg>
+              </button>
+              {/* 複製截圖按鈕 */}
+              <button
+                onClick={() => copyToClipboard(screenshotRef.current)}
+                disabled={isCapturing}
+                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+                aria-label={t('screenshot.copy')}
+                title={t('screenshot.copy')}
+              >
+                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
               </button>
@@ -397,6 +429,8 @@ export function MonsterModal({
             )}
           </div>
         </div>
+      </div>
+      {/* 截圖範圍結束 */}
 
       {/* Toast 通知 */}
       <Toast

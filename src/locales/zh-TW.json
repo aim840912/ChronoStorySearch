@@ -772,5 +772,12 @@
   "common.time.justNow": "剛剛",
   "common.time.minutesAgo": "{count} 分鐘前",
   "common.time.hoursAgo": "{count} 小時前",
-  "common.time.daysAgo": "{count} 天前"
+  "common.time.daysAgo": "{count} 天前",
+  "screenshot.download": "下載截圖",
+  "screenshot.copy": "複製截圖",
+  "screenshot.downloadSuccess": "截圖已下載",
+  "screenshot.copySuccess": "截圖已複製到剪貼簿",
+  "screenshot.failed": "截圖失敗",
+  "screenshot.copyFailed": "複製失敗",
+  "screenshot.focusRequired": "請保持視窗焦點後再試"
 }
