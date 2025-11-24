@@ -255,70 +255,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
         </div>
       )}
 
-      {/* 屬性免疫 - 只顯示 weakness === 0 */}
-      {(stats.fire_weakness === 0 ||
-        stats.ice_weakness === 0 ||
-        stats.lightning_weakness === 0 ||
-        stats.holy_weakness === 0 ||
-        stats.poison_weakness === 0) && (
-        <div className="mt-4">
-          <h4 className="text-sm font-semibold text-blue-900 dark:text-blue-100 mb-2">
-            {t('monster.immunities')}
-          </h4>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-            {stats.fire_weakness === 0 && (
-              <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-2 border border-gray-300 dark:border-gray-700">
-                <div className="flex items-center gap-1.5">
-                  <span className="text-lg">🛡️</span>
-                  <div className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                    {t('monster.fire_immune')}
-                  </div>
-                </div>
-              </div>
-            )}
-            {stats.ice_weakness === 0 && (
-              <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-2 border border-gray-300 dark:border-gray-700">
-                <div className="flex items-center gap-1.5">
-                  <span className="text-lg">🛡️</span>
-                  <div className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                    {t('monster.ice_immune')}
-                  </div>
-                </div>
-              </div>
-            )}
-            {stats.lightning_weakness === 0 && (
-              <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-2 border border-gray-300 dark:border-gray-700">
-                <div className="flex items-center gap-1.5">
-                  <span className="text-lg">🛡️</span>
-                  <div className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                    {t('monster.lightning_immune')}
-                  </div>
-                </div>
-              </div>
-            )}
-            {stats.holy_weakness === 0 && (
-              <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-2 border border-gray-300 dark:border-gray-700">
-                <div className="flex items-center gap-1.5">
-                  <span className="text-lg">🛡️</span>
-                  <div className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                    {t('monster.holy_immune')}
-                  </div>
-                </div>
-              </div>
-            )}
-            {stats.poison_weakness === 0 && (
-              <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-2 border border-gray-300 dark:border-gray-700">
-                <div className="flex items-center gap-1.5">
-                  <span className="text-lg">🛡️</span>
-                  <div className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                    {t('monster.poison_immune')}
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
+      {/* 註：weakness === 0 代表「普通」，不需要顯示任何內容 */}
 
       {/* 經驗效率 */}
       {mobInfo.expBar?.expEfficiency !== null && (
