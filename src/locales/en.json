@@ -785,5 +785,12 @@
   "common.time.justNow": "Just now",
   "common.time.minutesAgo": "{count} minutes ago",
   "common.time.hoursAgo": "{count} hours ago",
-  "common.time.daysAgo": "{count} days ago"
+  "common.time.daysAgo": "{count} days ago",
+  "screenshot.download": "Download Screenshot",
+  "screenshot.copy": "Copy Screenshot",
+  "screenshot.downloadSuccess": "Screenshot downloaded",
+  "screenshot.copySuccess": "Screenshot copied to clipboard",
+  "screenshot.failed": "Screenshot failed",
+  "screenshot.copyFailed": "Copy failed",
+  "screenshot.focusRequired": "Please keep the window focused and try again"
 }

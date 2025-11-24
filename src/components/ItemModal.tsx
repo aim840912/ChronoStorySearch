@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState, useRef } from 'react'
 import type { DropsEssential, GachaMachine, ItemAttributes, ItemAttributesEssential } from '@/types'
 import { MonsterDropCard } from './MonsterDropCard'
 import { MonsterDropList } from './MonsterDropList'
@@ -12,7 +12,7 @@ import { getItemImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useToast } from '@/hooks/useToast'
 import { useLanguageToggle } from '@/hooks/useLanguageToggle'
-import { useShare } from '@/hooks/useShare'
+import { useScreenshot } from '@/hooks/useScreenshot'
 import { useLazyMobInfo, useLazyItemDetailed } from '@/hooks/useLazyData'
 import { findGachaItemAttributes } from '@/lib/gacha-utils'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
@@ -63,7 +63,12 @@ export function ItemModal({
   const isDev = process.env.NODE_ENV === 'development'
   const toast = useToast()
   const toggleLanguage = useLanguageToggle()
-  const handleShare = useShare(() => `${window.location.origin}${window.location.pathname}#item=${itemId}`)
+
+  // 截圖功能
+  const screenshotRef = useRef<HTMLDivElement>(null)
+  const { downloadPng, copyToClipboard, isCapturing } = useScreenshot({
+    filename: `item-${itemId}-${itemName}`,
+  })
   // 手機版 Tab 狀態（'info' = 物品資訊, 'sources' = 掉落來源）
   const [mobileTab, setMobileTab] = useState<'info' | 'sources'>('info')
 
@@ -229,6 +234,8 @@ export function ItemModal({
       onClose={onClose}
       zIndex="z-[60]"
     >
+      {/* 截圖區域包裹 */}
+      <div ref={screenshotRef} className="bg-white dark:bg-gray-800 rounded-xl">
         {/* Modal Header */}
         <div className="sticky top-0 z-10 bg-green-500 dark:bg-green-600 p-4 sm:p-6 rounded-t-xl">
           <div className="flex items-center justify-between">
@@ -313,18 +320,37 @@ export function ItemModal({
                   />
                 </svg>
               </button>
-              {/* 分享按鈕 */}
+              {/* 下載截圖按鈕 */}
               <button
-                onClick={handleShare}
-                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center"
-                aria-label={t('modal.share')}
+                onClick={() => downloadPng(screenshotRef.current)}
+                disabled={isCapturing}
+                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+                aria-label={t('screenshot.download')}
+                title={t('screenshot.download')}
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                  />
+                </svg>
+              </button>
+              {/* 複製截圖按鈕 */}
+              <button
+                onClick={() => copyToClipboard(screenshotRef.current)}
+                disabled={isCapturing}
+                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+                aria-label={t('screenshot.copy')}
+                title={t('screenshot.copy')}
+              >
+                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"
                   />
                 </svg>
               </button>
@@ -502,6 +528,7 @@ export function ItemModal({
             )}
           </div>
         </div>
+      </div>
 
       {/* Toast 通知 */}
       <Toast
