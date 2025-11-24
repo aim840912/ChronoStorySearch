@@ -6,6 +6,7 @@ import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import { AuthProvider } from "@/contexts/AuthContext";
+import { ImageFormatProvider } from "@/contexts/ImageFormatContext";
 import { SWRProvider } from "@/providers/SWRProvider";
 import { LoginModal } from "@/components/auth/LoginModal";
 import { MaintenanceBanner } from "@/components/common/MaintenanceBanner";
@@ -47,15 +48,17 @@ export default function RootLayout({
           <AuthProvider>
             <ThemeProvider>
               <LanguageProvider>
-                <>
-                  <MaintenanceBanner key="maintenance-banner" />
-                  <LoginUserBanner key="login-user-banner" />
-                  <div key="page-content">{children}</div>
-                  <LoginModal key="login-modal" />
-                  <CookieConsentBanner key="cookie-consent-banner" />
-                  <Footer key="footer" />
-                </>
-                </LanguageProvider>
+                <ImageFormatProvider>
+                  <>
+                    <MaintenanceBanner key="maintenance-banner" />
+                    <LoginUserBanner key="login-user-banner" />
+                    <div key="page-content">{children}</div>
+                    <LoginModal key="login-modal" />
+                    <CookieConsentBanner key="cookie-consent-banner" />
+                    <Footer key="footer" />
+                  </>
+                </ImageFormatProvider>
+              </LanguageProvider>
             </ThemeProvider>
           </AuthProvider>
         </SWRProvider>

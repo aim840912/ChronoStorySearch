@@ -14,6 +14,7 @@
 import { memo } from 'react'
 import type { DropItem } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { getMonsterDisplayName } from '@/lib/display-name'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 
@@ -110,6 +111,7 @@ const MonsterDropListRow = memo(function MonsterDropListRow({
   isDev,
 }: MonsterDropListRowProps) {
   const { language, t } = useLanguage()
+  const { format } = useImageFormat()
 
   const chancePercent = (drop.chance * 100).toFixed(4)
 
@@ -123,7 +125,7 @@ const MonsterDropListRow = memo(function MonsterDropListRow({
   const displayMobName = getMonsterDisplayName(drop.mobName, drop.chineseMobName, language)
 
   // 怪物圖示 URL
-  const monsterIconUrl = getMonsterImageUrl(drop.mobId)
+  const monsterIconUrl = getMonsterImageUrl(drop.mobId, { format })
 
   return (
     <tr
@@ -178,7 +180,7 @@ const MonsterDropListRow = memo(function MonsterDropListRow({
             alt={displayMobName}
             width={48}
             height={48}
-            className="object-contain flex-shrink-0"
+            className="monster-image flex-shrink-0"
             loading="lazy"
           />
           <div className="flex-1 min-w-0">
