@@ -180,7 +180,7 @@ const MonsterDropListRow = memo(function MonsterDropListRow({
             alt={displayMobName}
             width={48}
             height={48}
-            className="object-contain flex-shrink-0"
+            className="monster-image flex-shrink-0"
             loading="lazy"
           />
           <div className="flex-1 min-w-0">

@@ -66,3 +66,11 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;  /* Chrome, Safari and Opera */
 }
+
+/* 怪物圖片渲染優化 - 防止小圖過度放大，保持像素清晰 */
+.monster-image {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  object-fit: scale-down;
+}

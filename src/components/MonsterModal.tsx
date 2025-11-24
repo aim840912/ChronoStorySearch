@@ -343,7 +343,7 @@ export function MonsterModal({
               <img
                 src={monsterIconUrl}
                 alt={displayMonsterName}
-                className="w-24 h-24 sm:w-32 sm:h-32 object-contain"
+                className="w-24 h-24 sm:w-32 sm:h-32 monster-image"
               />
             </div>
             {/* 怪物屬性卡片 */}
