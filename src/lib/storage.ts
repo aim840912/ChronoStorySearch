@@ -5,6 +5,7 @@
 
 import { storageLogger } from './logger'
 import type { FavoriteMonster, FavoriteItem, Language, Theme, AccuracyCalculatorState, ViewHistoryItem } from '@/types'
+import type { ImageFormat } from '@/lib/image-utils'
 
 // Storage keys
 export const STORAGE_KEYS = {
@@ -14,6 +15,7 @@ export const STORAGE_KEYS = {
   THEME: 'chronostory-theme',
   ACCURACY_CALCULATOR: 'chronostory-accuracy-calculator',
   VIEW_HISTORY: 'chronostory-view-history',
+  IMAGE_FORMAT: 'chronostory-image-format',
 } as const
 
 /**
@@ -147,4 +149,12 @@ export function getViewHistory(): ViewHistoryItem[] {
 
 export function setViewHistory(history: ViewHistoryItem[]): boolean {
   return setStorageItem(STORAGE_KEYS.VIEW_HISTORY, history)
+}
+
+export function getImageFormat(): ImageFormat {
+  return getStorageItem<ImageFormat>(STORAGE_KEYS.IMAGE_FORMAT, 'png')
+}
+
+export function setImageFormat(format: ImageFormat): boolean {
+  return setStorageItem(STORAGE_KEYS.IMAGE_FORMAT, format)
 }
