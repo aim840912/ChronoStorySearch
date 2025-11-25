@@ -47,7 +47,7 @@ export const MonsterCard = memo(function MonsterCard({
   return (
     <div
       onClick={() => onCardClick(mobId, displayMobName)}
-      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative min-h-[140px]"
+      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative h-[120px] overflow-hidden"
     >
       {/* 最愛按鈕 - 右上角 */}
       <button
@@ -88,23 +88,23 @@ export const MonsterCard = memo(function MonsterCard({
             loading="lazy"
           />
         </div>
-        <div className="flex-1">
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+        <div className="flex-1 flex flex-col min-w-0">
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white line-clamp-2">
             {displayMobName}
           </h3>
-          {/* 等級顯示 */}
-          {level !== null && level !== undefined && (
-            <div className="flex items-center gap-2 mb-1">
+          {/* 等級顯示 - 固定在底部 */}
+          <div className="mt-auto flex items-center gap-2">
+            {level !== null && level !== undefined && (
               <span className="inline-flex items-center px-2 py-1 rounded-md bg-blue-500 text-white text-xs font-semibold">
                 Lv. {level}
               </span>
-            </div>
-          )}
-          {isDev && (
-            <p className="text-xs text-gray-500 dark:text-gray-400">
-              {t('card.monsterId')}: {mobId}
-            </p>
-          )}
+            )}
+            {isDev && (
+              <span className="text-xs text-gray-500 dark:text-gray-400">
+                {t('card.monsterId')}: {mobId}
+              </span>
+            )}
+          </div>
         </div>
       </div>
     </div>

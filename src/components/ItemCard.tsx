@@ -48,7 +48,7 @@ export const ItemCard = memo(function ItemCard({
   return (
     <div
       onClick={() => onCardClick(itemId, displayItemName)}
-      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative min-h-[140px]"
+      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative h-[120px] overflow-hidden"
     >
       {/* 右上角按鈕群組 */}
       <div className="absolute top-3 right-3 flex items-center gap-2">
@@ -106,23 +106,23 @@ export const ItemCard = memo(function ItemCard({
             loading="lazy"
           />
         </div>
-        <div className="flex-1 pr-28">
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+        <div className="flex-1 flex flex-col min-w-0 pr-12">
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white line-clamp-2">
             {displayItemName}
           </h3>
-          {/* 等級顯示 */}
-          {reqLevel !== null && reqLevel !== undefined && (
-            <div className="flex items-center gap-2 mb-1">
+          {/* 等級顯示 - 固定在底部 */}
+          <div className="mt-auto flex items-center gap-2">
+            {reqLevel !== null && reqLevel !== undefined && (
               <span className="inline-flex items-center px-2 py-1 rounded-md bg-blue-500 text-white text-xs font-semibold">
                 Lv. {reqLevel}
               </span>
-            </div>
-          )}
-          {isDev && (
-            <p className="text-xs text-gray-500 dark:text-gray-400">
-              {t('card.itemId')}: {itemId}
-            </p>
-          )}
+            )}
+            {isDev && (
+              <span className="text-xs text-gray-500 dark:text-gray-400">
+                {t('card.itemId')}: {itemId}
+              </span>
+            )}
+          </div>
         </div>
       </div>
     </div>
