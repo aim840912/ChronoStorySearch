@@ -7,7 +7,6 @@ import { FavoriteItemsList } from '@/components/lists/FavoriteItemsList'
 import { AllItemsView } from '@/components/lists/AllItemsView'
 import { MarketListView } from '@/components/trade/MarketListView'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { useSystemStatus } from '@/hooks/swr/useSystemStatus'
 
 // 類型定義（與內部元件一致）
 import type { ExtendedUniqueItem } from '@/types'
@@ -131,7 +130,8 @@ export const ContentDisplay = memo(function ContentDisplay({
   onMarketRefresh,
 }: ContentDisplayProps) {
   const { t } = useLanguage()
-  const { tradingEnabled } = useSystemStatus()
+  // 交易系統預設啟用（暫時移除 useSystemStatus，之後可恢復）
+  const tradingEnabled = true
 
   // 載入中
   if (isLoading) {
