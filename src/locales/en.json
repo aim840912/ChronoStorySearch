@@ -10,8 +10,8 @@
   "search.type.item": "Item",
   "search.type.gacha": "Gacha",
   "filter.all": "All",
-  "filter.favoriteMonsters": "Saved Monsters",
-  "filter.favoriteItems": "Saved Items",
+  "filter.favoriteMonsters": "Monsters",
+  "filter.favoriteItems": "Items",
   "filter.marketListings": "Market Listings",
   "filter.clear": "Clear",
   "stats.loadSuccess": "MapleStory drop data loaded successfully",
@@ -792,5 +792,9 @@
   "screenshot.copySuccess": "Screenshot copied to clipboard",
   "screenshot.failed": "Screenshot failed",
   "screenshot.copyFailed": "Copy failed",
-  "screenshot.focusRequired": "Please keep the window focused and try again"
+  "screenshot.focusRequired": "Please keep the window focused and try again",
+  "imageFormat.png": "PNG",
+  "imageFormat.stand": "Stand",
+  "imageFormat.die": "Die",
+  "imageFormat.toggle": "Toggle image format"
 }

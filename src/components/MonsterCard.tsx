@@ -79,14 +79,15 @@ export const MonsterCard = memo(function MonsterCard({
 
       {/* 怪物資訊 */}
       <div className="flex items-center gap-3">
-        <img
-          src={monsterIconUrl}
-          alt={displayMobName}
-          width={64}
-          height={64}
-          className="monster-image flex-shrink-0"
-          loading="lazy"
-        />
+        {/* 固定尺寸容器，確保不同格式圖片不會撐開卡片高度 */}
+        <div className="w-24 h-24 flex items-center justify-center flex-shrink-0">
+          <img
+            src={monsterIconUrl}
+            alt={displayMobName}
+            className="monster-image w-full h-full object-contain"
+            loading="lazy"
+          />
+        </div>
         <div className="flex-1">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
             {displayMobName}
