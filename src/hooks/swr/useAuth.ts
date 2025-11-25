@@ -42,31 +42,21 @@ interface AuthResponse {
  * ```
  */
 export function useAuth() {
-  const { data, error, isLoading, mutate } = useSWR<AuthResponse>(
-    '/api/auth/me',
+  // 暫時停用認證 API 請求（傳入 null 會停用 SWR 請求）
+  // 之後如需恢復，將 null 改回 '/api/auth/me'
+  const { mutate } = useSWR<AuthResponse>(
+    null, // 停用 API 請求
     {
       ...swrStrategies.userInfo,
-      // 錯誤時不重試（避免 401 錯誤重複請求）
       shouldRetryOnError: false,
-      // 自訂錯誤處理（401 視為正常，不拋出錯誤）
-      onError: (err) => {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        if ((err as any).status === 401) {
-          // 401 是正常情況（未登入），不視為錯誤
-          return
-        }
-        // 其他錯誤才記錄
-        console.error('獲取用戶資訊失敗', err)
-      },
     }
   )
 
   return {
-    user: data?.success ? data.data : null,
-    isLoading,
-    error,
+    user: null, // 暫時停用，始終返回 null
+    isLoading: false,
+    error: null,
     mutate,
-    // 便利方法：強制重新驗證
     refresh: () => mutate(),
   }
 }
@@ -89,11 +79,13 @@ export function useAuth() {
  * ```
  */
 export function useUserRoles() {
-  const { data, error, isLoading, mutate } = useSWR<{
+  // 暫時停用角色 API 請求（傳入 null 會停用 SWR 請求）
+  // 之後如需恢復，將 null 改回 '/api/auth/me/roles'
+  const { mutate } = useSWR<{
     success: boolean
     data?: { roles: string[]; isAdmin: boolean }
   }>(
-    '/api/auth/me/roles',
+    null, // 停用 API 請求
     {
       ...swrStrategies.userInfo,
       shouldRetryOnError: false,
@@ -101,10 +93,10 @@ export function useUserRoles() {
   )
 
   return {
-    roles: data?.data?.roles || [],
-    isAdmin: data?.data?.isAdmin || false,
-    isLoading,
-    error,
+    roles: [], // 暫時停用，始終返回空陣列
+    isAdmin: false,
+    isLoading: false,
+    error: null,
     mutate,
   }
 }
