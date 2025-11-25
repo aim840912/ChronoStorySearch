@@ -1,14 +1,8 @@
 'use client'
 
 import { useImageFormat } from '@/contexts/ImageFormatContext'
+import { useLanguage } from '@/contexts/LanguageContext'
 import type { ImageFormat } from '@/lib/image-utils'
-
-// 格式顯示名稱
-const formatLabels: Record<ImageFormat, string> = {
-  png: 'PNG',
-  stand: '待機',
-  die: '死亡'
-}
 
 /**
  * 圖片格式切換按鈕
@@ -16,6 +10,14 @@ const formatLabels: Record<ImageFormat, string> = {
  */
 export function ImageFormatToggle() {
   const { format, toggleFormat } = useImageFormat()
+  const { t } = useLanguage()
+
+  // 根據當前語言取得格式標籤
+  const formatLabels: Record<ImageFormat, string> = {
+    png: t('imageFormat.png'),
+    stand: t('imageFormat.stand'),
+    die: t('imageFormat.die')
+  }
 
   return (
     <button
@@ -30,7 +32,7 @@ export function ImageFormatToggle() {
                  cursor-pointer
                  focus:outline-none focus:ring-2 focus:ring-blue-500
                  active:scale-95"
-      title="切換怪物圖片格式"
+      title={t('imageFormat.toggle')}
     >
       {formatLabels[format]}
     </button>

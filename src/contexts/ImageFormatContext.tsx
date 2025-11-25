@@ -1,7 +1,8 @@
 'use client'
 
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react'
+import { createContext, useContext, useState, useCallback, useEffect, type ReactNode } from 'react'
 import type { ImageFormat } from '@/lib/image-utils'
+import { getImageFormat, setImageFormat as saveImageFormat } from '@/lib/storage'
 
 interface ImageFormatContextType {
   /** 當前圖片格式 */
@@ -26,18 +27,34 @@ const formatCycle: ImageFormat[] = ['png', 'stand', 'die']
 /**
  * 圖片格式 Provider
  * 提供全域的圖片格式設定（PNG/Stand/Die）
+ * 自動從 localStorage 載入並持久化用戶設定
  */
 export function ImageFormatProvider({
   children,
   defaultFormat = 'png'
 }: ImageFormatProviderProps) {
-  const [format, setFormat] = useState<ImageFormat>(defaultFormat)
+  const [format, setFormatState] = useState<ImageFormat>(defaultFormat)
 
+  // 從 localStorage 載入已儲存的格式
+  useEffect(() => {
+    const savedFormat = getImageFormat()
+    setFormatState(savedFormat)
+  }, [])
+
+  // 設定格式並儲存到 localStorage
+  const setFormat = useCallback((newFormat: ImageFormat) => {
+    setFormatState(newFormat)
+    saveImageFormat(newFormat)
+  }, [])
+
+  // 切換格式並儲存到 localStorage
   const toggleFormat = useCallback(() => {
-    setFormat(prev => {
+    setFormatState(prev => {
       const currentIndex = formatCycle.indexOf(prev)
       const nextIndex = (currentIndex + 1) % formatCycle.length
-      return formatCycle[nextIndex]
+      const newFormat = formatCycle[nextIndex]
+      saveImageFormat(newFormat)
+      return newFormat
     })
   }, [])
 

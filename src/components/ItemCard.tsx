@@ -97,14 +97,15 @@ export const ItemCard = memo(function ItemCard({
 
       {/* 物品資訊 */}
       <div className="flex items-center gap-3">
-        <img
-          src={itemIconUrl}
-          alt={displayItemName}
-          width={64}
-          height={64}
-          className="object-contain flex-shrink-0"
-          loading="lazy"
-        />
+        {/* 固定尺寸容器，確保圖片不會撐開卡片高度 */}
+        <div className="w-24 h-24 flex items-center justify-center flex-shrink-0">
+          <img
+            src={itemIconUrl}
+            alt={displayItemName}
+            className="w-full h-full object-contain"
+            loading="lazy"
+          />
+        </div>
         <div className="flex-1 pr-28">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
             {displayItemName}

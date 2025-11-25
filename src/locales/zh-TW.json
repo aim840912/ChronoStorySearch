@@ -779,5 +779,9 @@
   "screenshot.copySuccess": "截圖已複製到剪貼簿",
   "screenshot.failed": "截圖失敗",
   "screenshot.copyFailed": "複製失敗",
-  "screenshot.focusRequired": "請保持視窗焦點後再試"
+  "screenshot.focusRequired": "請保持視窗焦點後再試",
+  "imageFormat.png": "PNG",
+  "imageFormat.stand": "待機",
+  "imageFormat.die": "死亡",
+  "imageFormat.toggle": "切換怪物圖片格式"
 }
