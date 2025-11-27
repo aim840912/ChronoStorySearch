@@ -23,9 +23,9 @@ const eslintConfig = [
     ],
   },
   {
-    files: ["scripts/**/*.js"],
+    // 全域規則：忽略以 _ 開頭的未使用變數和參數
+    files: ["**/*.ts", "**/*.tsx"],
     rules: {
-      "@typescript-eslint/no-require-imports": "off",
       "@typescript-eslint/no-unused-vars": [
         "warn",
         {
@@ -34,6 +34,12 @@ const eslintConfig = [
           caughtErrorsIgnorePattern: "^_",
         },
       ],
+    },
+  },
+  {
+    files: ["scripts/**/*.js"],
+    rules: {
+      "@typescript-eslint/no-require-imports": "off",
     },
   },
   {

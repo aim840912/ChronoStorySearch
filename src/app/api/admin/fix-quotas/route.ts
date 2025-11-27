@@ -36,6 +36,16 @@ interface FixResult {
   fixed: boolean
 }
 
+// Supabase 查詢結果類型
+interface QuotaWithUser {
+  user_id: string
+  active_listings_count: number
+  users: {
+    email: string
+    discord_username: string | null
+  } | null
+}
+
 async function handlePOST(_request: NextRequest, user: User) {
   apiLogger.info('管理員執行配額修復', { admin_id: user.id })
 
@@ -51,6 +61,7 @@ async function handlePOST(_request: NextRequest, user: User) {
         active_listings_count,
         users!inner(email, discord_username)
       `)
+      .returns<QuotaWithUser[]>()
 
     if (quotaError) {
       throw new Error(`查詢配額失敗: ${quotaError.message}`)
@@ -111,10 +122,8 @@ async function handlePOST(_request: NextRequest, user: User) {
 
         results.push({
           user_id: quota.user_id,
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          email: (quota as any).users?.email || 'unknown',
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          discord_username: (quota as any).users?.discord_username || null,
+          email: quota.users?.email || 'unknown',
+          discord_username: quota.users?.discord_username || null,
           old_count: oldCount,
           actual_count: actual,
           difference,

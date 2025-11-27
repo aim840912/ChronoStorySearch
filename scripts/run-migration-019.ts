@@ -46,7 +46,7 @@ async function runMigration() {
 
       console.log(`▶️  執行語句 ${i + 1}/${statements.length}...`)
 
-      const { error } = await supabase.rpc('exec_sql' as any, { sql_string: stmt + ';' }) as any
+      const { error } = await supabase.rpc('exec_sql', { sql_string: stmt + ';' })
 
       if (error) {
         console.error(`   ❌ 語句 ${i + 1} 執行失敗:`, error.message)

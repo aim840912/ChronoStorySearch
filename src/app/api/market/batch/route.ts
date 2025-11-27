@@ -15,6 +15,57 @@ import { getSystemSettings } from '@/lib/config/system-config'
 // 解構全域快取 Maps（用於搜尋功能）
 const { dropsItemsMap, gachaItemsMap, itemsMap } = itemsCacheMaps
 
+// =====================================================
+// Supabase 查詢結果類型定義
+// =====================================================
+
+/**
+ * 想要物品關聯表結果
+ */
+interface ListingWantedItem {
+  item_id: number
+  quantity: number
+}
+
+/**
+ * 用戶 Discord 個人資料
+ */
+interface ListingDiscordProfile {
+  reputation_score: number | null
+}
+
+/**
+ * 用戶資訊（JOIN users 結果）
+ */
+interface ListingUser {
+  discord_username: string | null
+  discord_profiles: ListingDiscordProfile | null
+}
+
+/**
+ * 完整刊登查詢結果（包含所有 JOIN 和關聯資料）
+ */
+interface ListingQueryResult {
+  id: string
+  trade_type: string
+  item_id: number
+  quantity: number
+  price: number | null
+  wanted_item_id: number | null
+  wanted_quantity: number | null
+  status: string
+  view_count: number
+  interest_count: number
+  created_at: string
+  updated_at: string
+  item_stats: Record<string, number> | null
+  stats_grade: string | null
+  stats_score: number | null
+  // 關聯資料
+  users: ListingUser | null
+  listing_wanted_items: ListingWantedItem[] | null
+}
+
 /**
  * GET /api/market/batch - 批次獲取市場資料
  *
@@ -299,8 +350,7 @@ async function handleGET(_request: NextRequest, user: User) {
   }
 
   // 6. 轉換市場刊登格式
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const formattedListings = (listings || []).map((listing: any) => {
+  const formattedListings = ((listings || []) as ListingQueryResult[]).map((listing) => {
     const { itemName, chineseItemName } = getItemNames(listing.item_id)
 
     return {
@@ -311,11 +361,10 @@ async function handleGET(_request: NextRequest, user: User) {
       price: listing.price,
       wanted_item_id: listing.wanted_item_id,
       wanted_quantity: listing.wanted_quantity,
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      wanted_items: (listing.listing_wanted_items as any[] | undefined)?.map((item: any) => ({
+      wanted_items: (listing.listing_wanted_items || []).map((item) => ({
         item_id: item.item_id,
         quantity: item.quantity
-      })) || [],
+      })),
       status: listing.status,
       view_count: listing.view_count,
       interest_count: listing.interest_count,
