@@ -25,7 +25,7 @@ try {
       process.env[key] = value
     }
   })
-} catch (error) {
+} catch {
   console.error('⚠️  無法載入 .env.local，使用現有環境變數')
 }
 
@@ -38,6 +38,16 @@ if (!supabaseUrl || !supabaseKey) {
 }
 
 const supabase = createClient(supabaseUrl, supabaseKey)
+
+// 定義查詢結果類型
+interface QuotaWithUser {
+  user_id: string
+  active_listings_count: number
+  users: {
+    email: string
+    discord_username: string | null
+  } | null
+}
 
 async function testQuotaFix() {
   console.log('🔍 開始測試配額修復功能...\n')
@@ -54,6 +64,7 @@ async function testQuotaFix() {
         active_listings_count,
         users!inner(email, discord_username)
       `)
+      .returns<QuotaWithUser[]>()
 
     if (quotaError) {
       throw new Error(`查詢配額失敗: ${quotaError.message}`)
@@ -80,9 +91,8 @@ async function testQuotaFix() {
       const diff = recorded - actual
       const status = diff === 0 ? '✅' : '❌'
 
-      const userInfo = quota as any
-      const email = userInfo.users?.email || 'unknown'
-      const discord = userInfo.users?.discord_username || null
+      const email = quota.users?.email || 'unknown'
+      const discord = quota.users?.discord_username || null
 
       console.log(`${status} ${email}${discord ? ` (@${discord})` : ''}`)
       console.log(`   記錄配額: ${recorded}`)

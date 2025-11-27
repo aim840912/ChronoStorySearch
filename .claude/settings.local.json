@@ -157,7 +157,8 @@
       "mcp__playwright__browser_close",
       "Bash(git config:*)",
       "Bash(time npm run build:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(npm info:*)"
     ],
     "deny": [],
     "ask": [

@@ -21660,6 +21660,8 @@
   {
     "item_id": "2022001",
     "item_name": "Red Bean Porridge",
+    "type": "Consume",
+    "sub_type": "Potion",
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -23968,6 +23970,8 @@
   {
     "item_id": "2050000",
     "item_name": "Antidote",
+    "type": "Consume",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -23980,6 +23984,8 @@
   {
     "item_id": "2050001",
     "item_name": "Eyedrop",
+    "type": "Consume",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -23992,6 +23998,8 @@
   {
     "item_id": "2050002",
     "item_name": "Tonic",
+    "type": "Consume",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24004,6 +24012,8 @@
   {
     "item_id": "2050003",
     "item_name": "Holy Water",
+    "type": "Consume",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24016,6 +24026,8 @@
   {
     "item_id": "2050004",
     "item_name": "All Cure Potion",
+    "type": "Consume",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24028,6 +24040,8 @@
   {
     "item_id": "2210006",
     "item_name": "Rainbow-colored Snail Shell",
+    "type": "Consume",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24040,6 +24054,8 @@
   {
     "item_id": "4000000",
     "item_name": "Blue Snail Shell",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24052,6 +24068,8 @@
   {
     "item_id": "4000001",
     "item_name": "Orange Mushroom Cap",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24064,6 +24082,8 @@
   {
     "item_id": "4000002",
     "item_name": "Pig's Ribbon",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24076,6 +24096,8 @@
   {
     "item_id": "4000003",
     "item_name": "Tree Branch",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24088,6 +24110,8 @@
   {
     "item_id": "4000004",
     "item_name": "Squishy Liquid",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24100,6 +24124,8 @@
   {
     "item_id": "4000005",
     "item_name": "Leaf",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24112,6 +24138,8 @@
   {
     "item_id": "4000006",
     "item_name": "Octopus Leg",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24124,6 +24152,8 @@
   {
     "item_id": "4000007",
     "item_name": "Evil Eye Tail",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24136,6 +24166,8 @@
   {
     "item_id": "4000008",
     "item_name": "Charm of the Undead",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24148,6 +24180,8 @@
   {
     "item_id": "4000009",
     "item_name": "Blue Mushroom Cap",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24160,6 +24194,8 @@
   {
     "item_id": "4000010",
     "item_name": "Slime Bubble",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24172,6 +24208,8 @@
   {
     "item_id": "4000011",
     "item_name": "Mushroom Spore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24184,6 +24222,8 @@
   {
     "item_id": "4000012",
     "item_name": "Green Mushroom Cap",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24196,6 +24236,8 @@
   {
     "item_id": "4000013",
     "item_name": "Curse Eye Tail",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24208,6 +24250,8 @@
   {
     "item_id": "4000014",
     "item_name": "Drake Skull",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24220,6 +24264,8 @@
   {
     "item_id": "4000015",
     "item_name": "Horny Mushroom Cap",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24232,6 +24278,8 @@
   {
     "item_id": "4000016",
     "item_name": "Red Snail Shell",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24244,6 +24292,8 @@
   {
     "item_id": "4000017",
     "item_name": "Pig's Head",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24256,6 +24306,8 @@
   {
     "item_id": "4000018",
     "item_name": "Firewood",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24268,6 +24320,8 @@
   {
     "item_id": "4000019",
     "item_name": "Snail Shell",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24280,6 +24334,8 @@
   {
     "item_id": "4000020",
     "item_name": "Wild Boar Tooth",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24292,6 +24348,8 @@
   {
     "item_id": "4000021",
     "item_name": "Leather",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24304,6 +24362,8 @@
   {
     "item_id": "4000022",
     "item_name": "Stone Golem Rubble",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24316,6 +24376,8 @@
   {
     "item_id": "4000023",
     "item_name": "Cold Eye Tail",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24328,6 +24390,8 @@
   {
     "item_id": "4000024",
     "item_name": "Fire Boar's Tooth",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24340,6 +24404,8 @@
   {
     "item_id": "4000025",
     "item_name": "Dark Stone Golem Rubble",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24352,6 +24418,8 @@
   {
     "item_id": "4000026",
     "item_name": "Lupin Doll",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24364,6 +24432,8 @@
   {
     "item_id": "4000027",
     "item_name": "Wild Kargo Eye",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24376,6 +24446,8 @@
   {
     "item_id": "4000028",
     "item_name": "Tauromacis Horn",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24388,6 +24460,8 @@
   {
     "item_id": "4000029",
     "item_name": "Lupin's Banana",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24400,6 +24474,8 @@
   {
     "item_id": "4000030",
     "item_name": "Dragon Skin",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24412,6 +24488,8 @@
   {
     "item_id": "4000031",
     "item_name": "Cursed Doll",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24424,6 +24502,8 @@
   {
     "item_id": "4000032",
     "item_name": "Ligator Skin",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24436,6 +24516,8 @@
   {
     "item_id": "4000033",
     "item_name": "Croco Skin",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24448,6 +24530,8 @@
   {
     "item_id": "4000034",
     "item_name": "Jr. Necki Skin",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24460,6 +24544,8 @@
   {
     "item_id": "4000035",
     "item_name": "Tablecloth",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24472,6 +24558,8 @@
   {
     "item_id": "4000036",
     "item_name": "Medicine With Weird Vibes",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24484,6 +24572,8 @@
   {
     "item_id": "4000037",
     "item_name": "Bubbling's Huge Bubble",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24496,6 +24586,8 @@
   {
     "item_id": "4000039",
     "item_name": "Iron Hog's Metal Hoof",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24508,6 +24600,8 @@
   {
     "item_id": "4000040",
     "item_name": "Mushmom Spore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24520,6 +24614,8 @@
   {
     "item_id": "4000041",
     "item_name": "Malady's Experimental Frog",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24532,6 +24628,8 @@
   {
     "item_id": "4000042",
     "item_name": "Stirge Wing",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24544,6 +24642,8 @@
   {
     "item_id": "4000043",
     "item_name": "Lorang Claw",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24556,6 +24656,8 @@
   {
     "item_id": "4000044",
     "item_name": "Clang Claw",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24568,6 +24670,8 @@
   {
     "item_id": "4000046",
     "item_name": "Taurospear Horn",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24580,6 +24684,8 @@
   {
     "item_id": "4000048",
     "item_name": "Jr. Yeti Skin",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24592,6 +24698,8 @@
   {
     "item_id": "4000049",
     "item_name": "Yeti Horn",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24604,6 +24712,8 @@
   {
     "item_id": "4000050",
     "item_name": "Pepe Beak",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24616,6 +24726,8 @@
   {
     "item_id": "4000051",
     "item_name": "Hector Tail",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24628,6 +24740,8 @@
   {
     "item_id": "4000052",
     "item_name": "White Fang Tail",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24640,6 +24754,8 @@
   {
     "item_id": "4000053",
     "item_name": "Werewolf Toenail",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24652,6 +24768,8 @@
   {
     "item_id": "4000054",
     "item_name": "Lycanthrope Toenail",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24664,6 +24782,8 @@
   {
     "item_id": "4000055",
     "item_name": "Dark Jr. Yeti Skin",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24676,6 +24796,8 @@
   {
     "item_id": "4000056",
     "item_name": "Dark Yeti Horn",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24688,6 +24810,8 @@
   {
     "item_id": "4000057",
     "item_name": "Dark Pepe Beak",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24700,6 +24824,8 @@
   {
     "item_id": "4000058",
     "item_name": "Nependeath Seed",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24712,6 +24838,8 @@
   {
     "item_id": "4000059",
     "item_name": "Star Pixie's Starpiece",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24724,6 +24852,8 @@
   {
     "item_id": "4000060",
     "item_name": "Lunar Pixie's Moonpiece",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24736,6 +24866,8 @@
   {
     "item_id": "4000061",
     "item_name": "Luster Pixie's Sunpiece",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24748,6 +24880,8 @@
   {
     "item_id": "4000062",
     "item_name": "Dark Nependeath Seed",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24760,6 +24894,8 @@
   {
     "item_id": "4000063",
     "item_name": "Sentinel Shellpiece",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24772,6 +24908,8 @@
   {
     "item_id": "4000067",
     "item_name": "Jr. Boogie Horn",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24784,6 +24922,8 @@
   {
     "item_id": "4000069",
     "item_name": "Zombie's Lost Tooth",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24796,6 +24936,8 @@
   {
     "item_id": "4000070",
     "item_name": "Cellion Tail",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24808,6 +24950,8 @@
   {
     "item_id": "4000071",
     "item_name": "Lioner Tail",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24820,6 +24964,8 @@
   {
     "item_id": "4000072",
     "item_name": "Grupin Tail",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24832,6 +24978,8 @@
   {
     "item_id": "4000073",
     "item_name": "Solid Horn",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24844,6 +24992,8 @@
   {
     "item_id": "4000074",
     "item_name": "Lucida Tail",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24856,6 +25006,8 @@
   {
     "item_id": "4000076",
     "item_name": "Fly-Eye Wing",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24868,6 +25020,8 @@
   {
     "item_id": "4000078",
     "item_name": "Jr. Cerebes Tooth",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24880,6 +25034,8 @@
   {
     "item_id": "4000079",
     "item_name": "Cerebes Tooth",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24892,6 +25048,8 @@
   {
     "item_id": "4000080",
     "item_name": "Bain's Spiky Collar",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24904,6 +25062,8 @@
   {
     "item_id": "4000081",
     "item_name": "Firebomb Flame",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24916,6 +25076,8 @@
   {
     "item_id": "4000082",
     "item_name": "Zombie's Lost Gold Tooth",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24928,6 +25090,8 @@
   {
     "item_id": "4000083",
     "item_name": "Jr. Sentinel Shellpiece",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24940,6 +25104,8 @@
   {
     "item_id": "4000084",
     "item_name": "Ice Sentinel Shellpiece",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24952,6 +25118,8 @@
   {
     "item_id": "4000085",
     "item_name": "Fire Sentinel Shellpiece",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24964,6 +25132,8 @@
   {
     "item_id": "4000086",
     "item_name": "Leatty Furball",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24976,6 +25146,8 @@
   {
     "item_id": "4000087",
     "item_name": "Dark Leatty Furball",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -24988,6 +25160,8 @@
   {
     "item_id": "4000088",
     "item_name": "Jr. Pepe's Fish",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25000,6 +25174,8 @@
   {
     "item_id": "4000176",
     "item_name": "Poisonous Mushroom",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25012,6 +25188,8 @@
   {
     "item_id": "4000177",
     "item_name": "Mixed Block",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25024,6 +25202,8 @@
   {
     "item_id": "4000178",
     "item_name": "Iron Boar Armor",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25036,6 +25216,8 @@
   {
     "item_id": "4000185",
     "item_name": "Ice Backbone",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25048,6 +25230,8 @@
   {
     "item_id": "4000186",
     "item_name": "Dark Drake's Horn",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25060,6 +25244,8 @@
   {
     "item_id": "4000195",
     "item_name": "Seedling",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25072,6 +25258,8 @@
   {
     "item_id": "4000196",
     "item_name": "Wooden Board",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25084,6 +25272,8 @@
   {
     "item_id": "4000197",
     "item_name": "Slate",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25096,6 +25286,8 @@
   {
     "item_id": "4000204",
     "item_name": "Skeledog's Bone",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25108,6 +25300,8 @@
   {
     "item_id": "4000205",
     "item_name": "Dirty Bandage",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25120,6 +25314,8 @@
   {
     "item_id": "4000206",
     "item_name": "Rib",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25132,6 +25328,8 @@
   {
     "item_id": "4000207",
     "item_name": "Pelvic Bone",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25144,6 +25342,8 @@
   {
     "item_id": "4000208",
     "item_name": "Horse Skull",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25156,6 +25356,8 @@
   {
     "item_id": "4000215",
     "item_name": "Axe",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25168,6 +25370,8 @@
   {
     "item_id": "4000336",
     "item_name": "Bible of the Corrupt",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25180,6 +25384,8 @@
   {
     "item_id": "4000413",
     "item_name": "Someone's Hat",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25192,6 +25398,8 @@
   {
     "item_id": "4000415",
     "item_name": "Ice Tear",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25204,6 +25412,8 @@
   {
     "item_id": "4000621",
     "item_name": "Dark Eye Tail",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25216,6 +25426,8 @@
   {
     "item_id": "4000671",
     "item_name": "Cold Stone Block",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25228,6 +25440,8 @@
   {
     "item_id": "4000672",
     "item_name": "Hot Stone Block",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25240,6 +25454,8 @@
   {
     "item_id": "4000998",
     "item_name": "Tauroshield Horn",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25252,6 +25468,8 @@
   {
     "item_id": "4000999",
     "item_name": "Crimson Stirge Wing",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25264,6 +25482,8 @@
   {
     "item_id": "4001004",
     "item_name": "Blackbull's deed to the land",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25276,6 +25496,8 @@
   {
     "item_id": "4001005",
     "item_name": "Ancient Scroll",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25288,6 +25510,8 @@
   {
     "item_id": "4001006",
     "item_name": "Flaming Feather",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25300,6 +25524,8 @@
   {
     "item_id": "4003001",
     "item_name": "Processed Wood",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25312,6 +25538,8 @@
   {
     "item_id": "4003002",
     "item_name": "Piece of Ice",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25324,6 +25552,8 @@
   {
     "item_id": "4003004",
     "item_name": "Stiff Feather",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25336,6 +25566,8 @@
   {
     "item_id": "4003005",
     "item_name": "Soft Feather",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25348,6 +25580,8 @@
   {
     "item_id": "4004000",
     "item_name": "Power Crystal Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25360,6 +25594,8 @@
   {
     "item_id": "4004001",
     "item_name": "Wisdom Crystal Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25372,6 +25608,8 @@
   {
     "item_id": "4004002",
     "item_name": "Dexterous Crystal Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25384,6 +25622,8 @@
   {
     "item_id": "4004003",
     "item_name": "Lucky Crystal Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25396,6 +25636,8 @@
   {
     "item_id": "4004004",
     "item_name": "Dark Crystal Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25408,6 +25650,8 @@
   {
     "item_id": "4005004",
     "item_name": "Dark Crystal",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25420,6 +25664,8 @@
   {
     "item_id": "4006000",
     "item_name": "The Magic Rock",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25432,6 +25678,8 @@
   {
     "item_id": "4006001",
     "item_name": "The Summoning Rock",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25444,6 +25692,8 @@
   {
     "item_id": "4010000",
     "item_name": "Bronze Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25456,6 +25706,8 @@
   {
     "item_id": "4010001",
     "item_name": "Steel Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25468,6 +25720,8 @@
   {
     "item_id": "4010002",
     "item_name": "Mithril Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25480,6 +25734,8 @@
   {
     "item_id": "4010003",
     "item_name": "Adamantium Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25492,6 +25748,8 @@
   {
     "item_id": "4010004",
     "item_name": "Silver Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25504,6 +25762,8 @@
   {
     "item_id": "4010005",
     "item_name": "Orihalcon Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25516,6 +25776,8 @@
   {
     "item_id": "4010006",
     "item_name": "Gold Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25528,6 +25790,8 @@
   {
     "item_id": "4020000",
     "item_name": "Garnet Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25540,6 +25804,8 @@
   {
     "item_id": "4020001",
     "item_name": "Amethyst Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25552,6 +25818,8 @@
   {
     "item_id": "4020002",
     "item_name": "AquaMarine Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25564,6 +25832,8 @@
   {
     "item_id": "4020003",
     "item_name": "Emerald Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25576,6 +25846,8 @@
   {
     "item_id": "4020004",
     "item_name": "Opal Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25588,6 +25860,8 @@
   {
     "item_id": "4020005",
     "item_name": "Sapphire Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25600,6 +25874,8 @@
   {
     "item_id": "4020006",
     "item_name": "Topaz Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25612,6 +25888,8 @@
   {
     "item_id": "4020007",
     "item_name": "Diamond Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25624,6 +25902,8 @@
   {
     "item_id": "4020008",
     "item_name": "Black Crystal Ore",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25636,6 +25916,8 @@
   {
     "item_id": "4021008",
     "item_name": "Black Crystal",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25648,6 +25930,8 @@
   {
     "item_id": "4031146",
     "item_name": "Animal Fossil",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25660,6 +25944,8 @@
   {
     "item_id": "4031147",
     "item_name": "Plant Fossil",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25672,6 +25958,8 @@
   {
     "item_id": "4031155",
     "item_name": "Broken Mirror Glass",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25684,6 +25972,8 @@
   {
     "item_id": "4031161",
     "item_name": "Rusty Screw",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25696,6 +25986,8 @@
   {
     "item_id": "4031162",
     "item_name": "Old Wooden Board",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25708,6 +26000,8 @@
   {
     "item_id": "4031164",
     "item_name": "Alligator Skin Pouch",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25720,6 +26014,8 @@
   {
     "item_id": "4031165",
     "item_name": "Witchgrass Leaf",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25732,6 +26028,8 @@
   {
     "item_id": "4031198",
     "item_name": "Empty Potion Bottle",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25744,6 +26042,8 @@
   {
     "item_id": "4031773",
     "item_name": "Dry Branch",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25756,6 +26056,8 @@
   {
     "item_id": "4031802",
     "item_name": "Jr. Sentinel Shellpiece",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,
@@ -25768,6 +26070,8 @@
   {
     "item_id": "4161021",
     "item_name": "[Storybook] Formula for Black Cloud",
+    "type": "Etc",
+    "sub_type": null,
     "req_level": null,
     "req_str": 0,
     "req_dex": 0,

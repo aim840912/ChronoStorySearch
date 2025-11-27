@@ -2,6 +2,7 @@
 
 import type { ItemAttributes } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { Lock, Check } from 'lucide-react'
 
 interface ItemAttributesCardProps {
   attributes: ItemAttributes | null
@@ -24,7 +25,7 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
       .map(([key, value]) => ({ key, value: value as number }))
 
     return (
-      <div className="bg-gradient-to-br from-purple-50 to-pink-100 dark:from-purple-900/20 dark:to-pink-900/30 rounded-xl p-6 shadow-lg border border-purple-200 dark:border-purple-800">
+      <div className="bg-purple-50 dark:bg-purple-900/20 rounded-xl p-6 shadow-lg border border-purple-200 dark:border-purple-800">
         <h3 className="text-xl font-bold text-purple-900 dark:text-purple-100 mb-4">
           {t('item.scrollInfo')}
         </h3>
@@ -105,7 +106,7 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
     // 檢查 potion.stats 是否存在（防止崩潰）
     if (!potion.stats) {
       return (
-        <div className="bg-gradient-to-br from-red-50 to-orange-100 dark:from-red-900/20 dark:to-orange-900/30 rounded-xl p-6 shadow-lg border border-red-200 dark:border-red-800">
+        <div className="bg-red-50 dark:bg-red-900/20 rounded-xl p-6 shadow-lg border border-red-200 dark:border-red-800">
           <h3 className="text-xl font-bold text-red-900 dark:text-red-100 mb-4">
             {t('item.potionInfo')}
           </h3>
@@ -124,7 +125,7 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
       .map(([key, value]) => ({ key, value: value as number }))
 
     return (
-      <div className="bg-gradient-to-br from-cyan-50 to-blue-100 dark:from-cyan-900/20 dark:to-blue-900/30 rounded-xl p-6 shadow-lg border border-cyan-200 dark:border-cyan-800">
+      <div className="bg-cyan-50 dark:bg-cyan-900/20 rounded-xl p-6 shadow-lg border border-cyan-200 dark:border-cyan-800">
         <h3 className="text-xl font-bold text-cyan-900 dark:text-cyan-100 mb-4">
           {t('item.potionInfo')}
         </h3>
@@ -146,7 +147,7 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
                   <div
                     key={key}
                     className={`flex justify-between items-center ${
-                      isMainEffect ? 'bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-2 rounded-lg' : ''
+                      isMainEffect ? 'bg-green-50 dark:bg-green-900/20 p-2 rounded-lg' : ''
                     }`}
                   >
                     {isHP || isMP ? (
@@ -197,7 +198,7 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
     // 如果完全沒有資料，顯示空狀態
     if (!attributes) {
       return (
-        <div className="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 shadow-lg">
+        <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 shadow-lg">
           <h3 className="text-xl font-bold text-gray-700 dark:text-gray-300 mb-4">
             {t('item.attributes')}
           </h3>
@@ -210,7 +211,7 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
 
     // 顯示非裝備類型的基本資訊
     return (
-      <div className="bg-gradient-to-br from-green-50 to-emerald-100 dark:from-green-900/20 dark:to-emerald-900/30 rounded-xl p-6 shadow-lg border border-green-200 dark:border-green-800">
+      <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-6 shadow-lg border border-green-200 dark:border-green-800">
         <h3 className="text-xl font-bold text-green-900 dark:text-green-100 mb-4">
           {t('item.info')}
         </h3>
@@ -260,9 +261,15 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
                 <span className="text-gray-500 dark:text-gray-400">{t('item.tradeable')}:</span>
                 <span className="ml-2 font-medium">
                   {attributes.untradeable ? (
-                    <span className="text-red-600 dark:text-red-400">🔒 {t('item.untradeable')}</span>
+                    <span className="text-red-600 dark:text-red-400 inline-flex items-center gap-1">
+                      <Lock className="w-4 h-4" />
+                      {t('item.untradeable')}
+                    </span>
                   ) : (
-                    <span className="text-green-600 dark:text-green-400">✅ {t('item.tradeableYes')}</span>
+                    <span className="text-green-600 dark:text-green-400 inline-flex items-center gap-1">
+                      <Check className="w-4 h-4" />
+                      {t('item.tradeableYes')}
+                    </span>
                   )}
                 </span>
               </div>
@@ -311,7 +318,7 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
   ].filter(stat => stat.value !== null && stat.value !== 0)
 
   return (
-    <div className="bg-gradient-to-br from-green-50 to-emerald-100 dark:from-green-900/20 dark:to-emerald-900/30 rounded-xl p-6 shadow-lg border border-green-200 dark:border-green-800">
+    <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-6 shadow-lg border border-green-200 dark:border-green-800">
       <h3 className="text-xl font-bold text-green-900 dark:text-green-100 mb-4">
         {t('item.attributes')}
       </h3>

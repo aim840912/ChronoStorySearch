@@ -16,6 +16,9 @@ import { useFilterLogic } from '@/hooks/useFilterLogic'
 import { useInfiniteScroll } from '@/hooks/useInfiniteScroll'
 import { useMarketFilter } from '@/hooks/useMarketFilter'
 import { useMarketListings } from '@/hooks/useMarketListings'
+import { useScrollBehavior } from '@/hooks/useScrollBehavior'
+import { useEnhanceModal } from '@/hooks/useEnhanceModal'
+import { useHashNavigation } from '@/hooks/useHashNavigation'
 import { SearchHeader } from '@/components/SearchHeader'
 import { ContentDisplay } from '@/components/ContentDisplay'
 import { ModalManager } from '@/components/ModalManager'
@@ -54,24 +57,12 @@ export default function Home() {
   // 追蹤首次掛載，避免初始載入時觸發滾動
   const isFirstMount = useRef(true)
   const isFirstSearchChange = useRef(true)
-  // 追蹤進階篩選面板展開時的滾動位置
-  const expandedAtScrollY = useRef<number | null>(null)
-
-  // 追蹤是否顯示「返回頂部」按鈕
-  const [showBackToTop, setShowBackToTop] = useState(false)
 
   // 命中率計算器 Modal 狀態
   const [isAccuracyCalcOpen, setIsAccuracyCalcOpen] = useState(false)
 
   // 遊戲指令 Modal 狀態
   const [isGameCommandsOpen, setIsGameCommandsOpen] = useState(false)
-
-  // 強化 Modal 狀態
-  const [isEnhanceModalOpen, setIsEnhanceModalOpen] = useState(false)
-  const [enhanceModalConfig, setEnhanceModalConfig] = useState<{
-    hasPreviousModal: boolean
-    preSelectedEquipmentId?: number
-  }>({ hasPreviousModal: false })
 
   // 計算已啟用的進階篩選數量
   const advancedFilterCount = [
@@ -165,6 +156,30 @@ export default function Home() {
     enabled: filterMode === 'market-listings'
   })
 
+  // 滾動行為 Hook - 管理返回頂部按鈕和進階篩選自動收合
+  const { showBackToTop, scrollToTop } = useScrollBehavior({
+    isAdvancedFilterExpanded,
+    setIsAdvancedFilterExpanded,
+  })
+
+  // 強化 Modal Hook - 管理強化工作坊的開關和導航
+  const enhanceModal = useEnhanceModal({
+    closeGachaModal: modals.closeGachaModal,
+    openGachaModal: modals.openGachaModal,
+  })
+
+  // Hash 導航 Hook - 處理分享連結
+  const { handleShare } = useHashNavigation({
+    allDrops,
+    language,
+    openMonsterModal: modals.openMonsterModal,
+    openItemModal: modals.openItemModal,
+    openGachaModal: modals.openGachaModal,
+    searchTerm: search.searchTerm,
+    showToast: toast.showToast,
+    t,
+  })
+
   // 無限滾動 - 在「全部」模式且（有搜尋 或 有進階篩選）時啟用
   // 使用 debouncedSearchTerm 確保資料已過濾後才啟用，避免載入未過濾的全部資料
   const shouldUseInfiniteScroll =
@@ -205,62 +220,6 @@ export default function Home() {
       loadGachaMachines()
     }
   }, [debouncedSearchTerm, searchType, advancedFilter.enabled, advancedFilter.itemCategories, loadGachaMachines, modals.isGachaModalOpen, filterMode])
-
-  // 初始載入時處理分享連結（從 hash 參數開啟 modal）
-  useEffect(() => {
-    if (allDrops.length === 0) return // 等待資料載入完成
-
-    const hash = window.location.hash
-    if (!hash || hash === '#') return
-
-    // 解析 hash 參數
-    const params = new URLSearchParams(hash.slice(1))
-    const monsterIdParam = params.get('monster')
-    const itemIdParam = params.get('item')
-    const gachaParam = params.get('gacha')
-
-    // 立即清除 hash（使用 replaceState）
-    window.history.replaceState(null, '', '/')
-
-    // 根據參數開啟對應 Modal
-    if (monsterIdParam) {
-      const monsterId = parseInt(monsterIdParam, 10)
-      if (!isNaN(monsterId)) {
-        const monster = allDrops.find((drop) => drop.mobId === monsterId)
-        if (monster) {
-          const displayName = (language === 'zh-TW' && monster.chineseMobName)
-            ? monster.chineseMobName
-            : monster.mobName
-          modals.openMonsterModal(monsterId, displayName)
-          clientLogger.info(`從分享連結開啟怪物 modal: ${displayName} (${monsterId})`)
-        }
-      }
-    } else if (itemIdParam) {
-      const itemId = parseInt(itemIdParam, 10)
-      if (!isNaN(itemId) || itemIdParam === '0') {
-        const parsedItemId = itemIdParam === '0' ? 0 : itemId
-        const item = allDrops.find((drop) => drop.itemId === parsedItemId)
-        if (item) {
-          const displayName = (language === 'zh-TW' && item.chineseItemName)
-            ? item.chineseItemName
-            : item.itemName
-          modals.openItemModal(parsedItemId, displayName)
-          clientLogger.info(`從分享連結開啟物品 modal: ${displayName} (${parsedItemId})`)
-        }
-      }
-    } else if (gachaParam) {
-      if (gachaParam === 'list') {
-        modals.openGachaModal()
-        clientLogger.info('從分享連結開啟轉蛋機列表 modal')
-      } else {
-        const machineId = parseInt(gachaParam, 10)
-        if (!isNaN(machineId) && machineId >= 1 && machineId <= 7) {
-          modals.openGachaModal(machineId)
-          clientLogger.info(`從分享連結開啟轉蛋機 modal: 機台 ${machineId}`)
-        }
-      }
-    }
-  }, [allDrops, language]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // 監聽瀏覽器返回鍵（popstate 事件）
   useEffect(() => {
@@ -322,39 +281,6 @@ export default function Home() {
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }, [search.searchTerm])
-
-  // 追蹤進階篩選面板展開時的滾動位置
-  useEffect(() => {
-    if (isAdvancedFilterExpanded) {
-      // 面板剛展開，記錄當前滾動位置
-      expandedAtScrollY.current = window.scrollY
-    } else {
-      // 面板收合，清除記錄
-      expandedAtScrollY.current = null
-    }
-  }, [isAdvancedFilterExpanded])
-
-  // 監聽滾動事件，顯示/隱藏「返回頂部」按鈕，並自動收合進階篩選
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY
-
-      // 當使用者滾動超過 300px 時顯示按鈕
-      setShowBackToTop(scrollY > 300)
-
-      // 只有從展開位置向下滾動超過 50px 才收合面板
-      if (
-        isAdvancedFilterExpanded &&
-        expandedAtScrollY.current !== null &&
-        scrollY > expandedAtScrollY.current + 50
-      ) {
-        setIsAdvancedFilterExpanded(false)
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [isAdvancedFilterExpanded])
 
   // 選擇建議項目
   const selectSuggestion = useCallback((suggestionName: string, suggestion?: SuggestionItem) => {
@@ -440,21 +366,6 @@ export default function Home() {
     }
   }, [marketFilter, advancedFilter, debouncedSearchTerm]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // 分享處理函數
-  const handleShare = useCallback(async () => {
-    if (!search.searchTerm.trim()) return
-
-    try {
-      const url = `${window.location.origin}${window.location.pathname}#q=${encodeURIComponent(search.searchTerm)}`
-      await navigator.clipboard.writeText(url)
-      toast.showToast(t('share.success'), 'success')
-      clientLogger.info(`分享連結已複製: ${url}`)
-    } catch (error) {
-      toast.showToast(t('share.error'), 'error')
-      clientLogger.error('複製連結失敗', error)
-    }
-  }, [search.searchTerm, toast, t])
-
   // 鍵盤導航處理 - 包裝 search.handleKeyDown 以處理轉蛋建議
   const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
     search.handleKeyDown(e, suggestions, (suggestion) => {
@@ -486,40 +397,6 @@ export default function Home() {
   // GachaMachineModal 中點擊物品：打開 ItemModal（保存導航歷史）
   const handleItemClickFromGachaModal = useCallback((itemId: number, itemName: string) => {
     modals.openItemModal(itemId, itemName, true) // saveHistory=true
-  }, [modals])
-
-  // 返回頂部
-  const scrollToTop = useCallback(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }, [])
-
-  // 開啟強化 Modal（從 FilterButtons）
-  const handleOpenEnhance = useCallback(() => {
-    setEnhanceModalConfig({
-      hasPreviousModal: false,
-      preSelectedEquipmentId: undefined
-    })
-    setIsEnhanceModalOpen(true)
-  }, [])
-
-  // 從轉蛋機切換到強化 Modal
-  const handleSwitchToEnhance = useCallback((equipmentId?: number) => {
-    modals.closeGachaModal()
-    setTimeout(() => {
-      setEnhanceModalConfig({
-        hasPreviousModal: true,
-        preSelectedEquipmentId: equipmentId
-      })
-      setIsEnhanceModalOpen(true)
-    }, 150) // 等待轉蛋機 Modal 關閉動畫
-  }, [modals])
-
-  // 從強化 Modal 返回轉蛋機
-  const handleGoBackToGacha = useCallback(() => {
-    setIsEnhanceModalOpen(false)
-    setTimeout(() => {
-      modals.openGachaModal()
-    }, 150)
   }, [modals])
 
   // 建立刊登成功後的處理函數
@@ -718,17 +595,17 @@ export default function Home() {
         toastIsVisible={toast.isVisible}
         toastType={toast.type}
         hideToast={toast.hideToast}
-        onSwitchToEnhance={handleSwitchToEnhance}
-        onOpenEnhance={handleOpenEnhance}
+        onSwitchToEnhance={enhanceModal.switchFromGacha}
+        onOpenEnhance={enhanceModal.open}
       />
 
       {/* 強化 Modal */}
       <EnhanceWorkshopModal
-        isOpen={isEnhanceModalOpen}
-        onClose={() => setIsEnhanceModalOpen(false)}
-        hasPreviousModal={enhanceModalConfig.hasPreviousModal}
-        onGoBack={handleGoBackToGacha}
-        preSelectedEquipmentId={enhanceModalConfig.preSelectedEquipmentId}
+        isOpen={enhanceModal.isOpen}
+        onClose={enhanceModal.close}
+        hasPreviousModal={enhanceModal.config.hasPreviousModal}
+        onGoBack={enhanceModal.goBackToGacha}
+        preSelectedEquipmentId={enhanceModal.config.preSelectedEquipmentId}
       />
     </div>
   )

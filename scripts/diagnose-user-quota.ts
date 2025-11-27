@@ -21,6 +21,16 @@ if (!supabaseUrl || !supabaseServiceKey) {
 // 建立 Supabase 客戶端
 const supabase = createClient(supabaseUrl, supabaseServiceKey)
 
+// 定義查詢結果類型
+interface QuotaWithUser {
+  user_id: string
+  active_listings_count: number
+  users: {
+    email: string
+    discord_username: string | null
+  } | null
+}
+
 async function diagnoseQuota() {
   console.log('🔍 開始診斷刊登配額計數器...\n')
 
@@ -33,6 +43,7 @@ async function diagnoseQuota() {
         active_listings_count,
         users!inner(email, discord_username)
       `)
+      .returns<QuotaWithUser[]>()
 
     if (quotaError) {
       throw new Error(`查詢 user_quotas 失敗: ${quotaError.message}`)
@@ -78,8 +89,8 @@ async function diagnoseQuota() {
       if (difference !== 0) {
         issues.push({
           user_id: quota.user_id,
-          email: (quota as any).users?.email || 'unknown',
-          discord_username: (quota as any).users?.discord_username || null,
+          email: quota.users?.email || 'unknown',
+          discord_username: quota.users?.discord_username || null,
           recorded_count: recordedCount,
           actual_count: actual,
           total_count: total,
