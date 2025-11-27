@@ -14,6 +14,12 @@ if (!supabaseUrl || !supabaseServiceKey) {
 
 const supabase = createClient(supabaseUrl, supabaseServiceKey)
 
+// 定義 RPC 返回類型
+interface CountResult {
+  seller_id: string
+  count: number
+}
+
 async function rawCheck() {
   console.log('🔍 原始資料庫查詢...\n')
 
@@ -75,7 +81,7 @@ async function rawCheck() {
         })
       }
     } else {
-      counts.forEach((row: any) => {
+      (counts as CountResult[]).forEach((row) => {
         console.log(`  ${row.seller_id}: ${row.count} 筆`)
       })
     }

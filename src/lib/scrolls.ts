@@ -1,6 +1,12 @@
 import type { EnhanceScroll } from '@/types/enhance'
+import type { ItemAttributes } from '@/types'
 import machine7Data from '@/../data/gacha/machine-7-enhanced.json'
 import itemAttributesData from '@/../data/item-attributes.json'
+
+// 擴展 ItemAttributes 以包含可能的 chinese_name 欄位
+type ItemAttributesWithChineseName = ItemAttributes & {
+  chinese_name?: string
+}
 
 /**
  * 獲取所有可用的強化卷軸
@@ -25,11 +31,11 @@ export function getAllScrolls(): EnhanceScroll[] {
     })
 
   // 從 item-attributes 提取所有詛咒卷 (destroy_rate > 0)
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const cursedScrolls: EnhanceScroll[] = (itemAttributesData as any[])
+  const cursedScrolls: EnhanceScroll[] = (itemAttributesData as ItemAttributesWithChineseName[])
     .filter(item => item.scroll && item.scroll.destroy_rate > 0)
     .map(item => {
-      const scroll = item.scroll
+      // 使用非空斷言，因為上方 filter 已確認 item.scroll 存在
+      const scroll = item.scroll!
 
       return {
         itemId: parseInt(item.item_id),

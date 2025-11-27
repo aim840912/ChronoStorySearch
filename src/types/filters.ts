@@ -1,0 +1,117 @@
+/**
+ * 進階篩選相關類型
+ */
+
+// 篩選邏輯運算子
+export type FilterLogicOperator = 'AND' | 'OR'
+
+// 資料類型篩選選項
+export type DataTypeFilter = 'all' | 'monster' | 'item' | 'gacha'
+
+// 物品分類分組類型
+export type CategoryGroupType =
+  | 'apparel'      // 穿著類
+  | 'weapon'       // 武器防具類
+  | 'accessory'    // 飾品類
+  | 'consumable'   // 消耗品類
+
+// 物品類別群組（基於 equipment.category）
+export type ItemCategoryGroup =
+  // 穿著類 (7)
+  | 'hat'          // 帽子
+  | 'top'          // 上衣
+  | 'bottom'       // 褲子/下身
+  | 'overall'      // 套服
+  | 'shoes'        // 鞋子
+  | 'gloves'       // 手套
+  | 'cape'         // 披風
+  // 武器防具類 (17)
+  | 'oneHandedSword'   // 單手劍
+  | 'twoHandedSword'   // 雙手劍
+  | 'oneHandedAxe'     // 單手斧
+  | 'twoHandedAxe'     // 雙手斧
+  | 'oneHandedBW'      // 單手棍
+  | 'twoHandedBW'      // 雙手棍
+  | 'polearm'      // 矛
+  | 'spear'        // 槍
+  | 'dagger'       // 匕首
+  | 'claw'         // 爪
+  | 'bow'          // 弓
+  | 'crossbow'     // 弩
+  | 'wand'         // 魔杖
+  | 'staff'        // 法杖
+  | 'knuckle'      // 拳套
+  | 'gun'          // 槍械
+  | 'shield'       // 盾牌
+  // 飾品類 (2)
+  | 'earring'      // 耳環
+  | 'accessory'    // 飾品
+  // 消耗品類 (3)
+  | 'scroll'       // 卷軸
+  | 'potion'       // 藥水
+  | 'projectile'   // 投擲物
+
+// 職業類型
+export type JobClass =
+  | 'beginner'    // 初心者
+  | 'warrior'     // 戰士
+  | 'magician'    // 法師
+  | 'bowman'      // 弓手
+  | 'thief'       // 盜賊
+  | 'pirate'      // 海盜
+
+// 元素屬性類型
+export type ElementType =
+  | 'fire'        // 火
+  | 'ice'         // 冰
+  | 'lightning'   // 雷
+  | 'holy'        // 神聖
+  | 'poison'      // 毒
+
+// 等級範圍
+export interface LevelRange {
+  min: number | null
+  max: number | null
+}
+
+// 市場篩選選項（前向宣告）
+// 注意：statKey 使用 StatFilterKey 類型，定義在 market.ts
+export interface MarketFilterOptions {
+  tradeTypes: Array<'sell' | 'buy' | 'exchange'>
+  priceRange: {
+    min: number | null
+    max: number | null
+  }
+  itemStatsFilter: Array<{
+    id: string
+    statKey: 'watk' | 'matk' | 'wdef' | 'mdef' | 'str' | 'dex' | 'int' | 'luk' | 'hp' | 'mp' | 'acc' | 'avoid'
+    minValue: number | null
+    maxValue: number | null
+  }>
+  sortBy: 'created_at' | 'price'
+  sortOrder: 'asc' | 'desc'
+}
+
+// 進階篩選選項
+export interface AdvancedFilterOptions {
+  // 資料類型篩選
+  dataType: DataTypeFilter
+
+  // 物品類別篩選（多選）
+  itemCategories: ItemCategoryGroup[]
+
+  // 職業篩選（多選）
+  jobClasses: JobClass[]
+
+  // 屬性弱點篩選（多選，僅適用於怪物）
+  elementWeaknesses: ElementType[]
+
+  // 等級範圍篩選
+  levelRange: LevelRange
+
+  // 是否啟用進階篩選
+  enabled: boolean
+
+  // 市場篩選（僅在 market-listings 模式下使用）
+  marketFilter?: MarketFilterOptions
+}

@@ -21,7 +21,7 @@ import gachaMachine4 from '@/../data/gacha/machine-4-enhanced.json'
 import gachaMachine5 from '@/../data/gacha/machine-5-enhanced.json'
 import gachaMachine6 from '@/../data/gacha/machine-6-enhanced.json'
 import gachaMachine7 from '@/../data/gacha/machine-7-enhanced.json'
-import type { ItemAttributesEssential, ItemAttributesDetailed } from '@/types'
+import type { ItemAttributesEssential, ItemAttributes, DropsEssential, GachaMachine, GachaItem } from '@/types'
 import { apiLogger } from '@/lib/logger'
 
 // ==================== 型別定義 ====================
@@ -46,7 +46,7 @@ const itemsMap = new Map<number, ItemAttributesEssential>()
 /**
  * 物品完整屬性資料 Map（包含 equipment 物件，用於怪物掉落等需要完整資訊的場景）
  */
-const itemsDetailedMap = new Map<number, ItemAttributesDetailed>()
+const itemsDetailedMap = new Map<number, ItemAttributes>()
 
 /**
  * 掉落物品名稱 Map（最完整的中英文物品名稱來源）
@@ -79,8 +79,7 @@ function initializeItemsMap(): void {
  * 初始化物品完整屬性 Map
  */
 function initializeItemsDetailedMap(): void {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  ;(itemsDataDetailed as any[]).forEach((item: any) => {
+  ;(itemsDataDetailed as ItemAttributes[]).forEach((item) => {
     const itemId = parseInt(item.item_id, 10)
     if (!isNaN(itemId)) {
       itemsDetailedMap.set(itemId, item)
@@ -93,9 +92,8 @@ function initializeItemsDetailedMap(): void {
  * 初始化掉落物品名稱 Map
  */
 function initializeDropsItemsMap(): void {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  ;(dropsEssentialData as any[]).forEach((drop: any) => {
-    const itemId = typeof drop.itemId === 'number' ? drop.itemId : parseInt(drop.itemId, 10)
+  ;(dropsEssentialData as DropsEssential[]).forEach((drop) => {
+    const itemId = typeof drop.itemId === 'number' ? drop.itemId : parseInt(String(drop.itemId), 10)
     if (!isNaN(itemId) && drop.itemName) {
       // 只保留第一次出現的物品名稱（去重）
       if (!dropsItemsMap.has(itemId)) {
@@ -121,12 +119,10 @@ function initializeGachaItemsMap(): void {
     gachaMachine5,
     gachaMachine6,
     gachaMachine7
-  ]
+  ] as GachaMachine[]
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  allGachaMachines.forEach((machine: any) => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    ;(machine.items as any[] | undefined)?.forEach((item: any) => {
+  allGachaMachines.forEach((machine) => {
+    machine.items?.forEach((item: GachaItem) => {
       const itemId = typeof item.itemId === 'string' ? parseInt(item.itemId, 10) : item.itemId
       if (!isNaN(itemId) && item.itemName) {
         // 只保留第一次出現的物品名稱（去重）
@@ -168,7 +164,7 @@ export function getItemAttributes(itemId: number): ItemAttributesEssential | und
  * @param itemId - 物品 ID
  * @returns 物品完整屬性資料或 undefined
  */
-export function getItemAttributesDetailed(itemId: number): ItemAttributesDetailed | undefined {
+export function getItemAttributesDetailed(itemId: number): ItemAttributes | undefined {
   return itemsDetailedMap.get(itemId)
 }
 

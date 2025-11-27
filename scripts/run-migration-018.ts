@@ -52,11 +52,11 @@ async function runMigration() {
 
         console.log(`▶️  執行語句 ${i + 1}/${statements.length}...`)
 
-        // 使用原始 SQL 查詢
+        // 使用原始 SQL 查詢（這是一個 workaround，實際不執行語句）
         const { error: stmtError } = await supabase
           .from('_migrations')
           .select('*')
-          .limit(0) as any // 獲取連線
+          .limit(0)
 
         if (stmtError) {
           console.error(`   ❌ 語句 ${i + 1} 執行失敗:`, stmtError.message)

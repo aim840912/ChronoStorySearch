@@ -6,6 +6,7 @@ import { FavoriteMonstersList } from '@/components/lists/FavoriteMonstersList'
 import { FavoriteItemsList } from '@/components/lists/FavoriteItemsList'
 import { AllItemsView } from '@/components/lists/AllItemsView'
 import { MarketListView } from '@/components/trade/MarketListView'
+import { SkeletonGrid } from '@/components/CardSkeleton'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 // 類型定義（與內部元件一致）
@@ -133,14 +134,9 @@ export const ContentDisplay = memo(function ContentDisplay({
   // 交易系統預設啟用（暫時移除 useSystemStatus，之後可恢復）
   const tradingEnabled = true
 
-  // 載入中
+  // 載入中 - 使用骨架屏提升感知載入速度
   if (isLoading) {
-    return (
-      <div className="text-center py-12 mt-8">
-        <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-        <p className="mt-4 text-gray-600 dark:text-gray-400">{t('loading')}</p>
-      </div>
-    )
+    return <SkeletonGrid count={6} />
   }
 
   return (
