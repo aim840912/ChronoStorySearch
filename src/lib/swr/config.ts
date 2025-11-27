@@ -15,6 +15,20 @@
 import type { SWRConfiguration } from 'swr'
 
 /**
+ * 自定義 Fetch 錯誤類別
+ * 擴展標準 Error，包含 API 回應資訊
+ */
+class FetchError extends Error {
+  info?: unknown
+  status?: number
+
+  constructor(message: string) {
+    super(message)
+    this.name = 'FetchError'
+  }
+}
+
+/**
  * SWR 全域配置
  *
  * 策略說明：
@@ -54,14 +68,12 @@ export const swrConfig: SWRConfiguration = {
 
     // 處理錯誤回應
     if (!res.ok) {
-      const error = new Error('API 請求失敗')
+      const error = new FetchError('API 請求失敗')
+      error.status = res.status
       // 附加錯誤資訊
       try {
         const json = await res.json()
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        ;(error as any).info = json
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        ;(error as any).status = res.status
+        error.info = json
       } catch {
         // 無法解析 JSON，使用預設錯誤
       }

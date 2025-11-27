@@ -167,8 +167,8 @@ export const ModalManager = memo(function ModalManager({
   handleGachaMachineClick,
   handleItemClickFromGachaModal,
   handleClearConfirm,
-  isAccuracyCalcOpen: _isAccuracyCalcOpen, // eslint-disable-line @typescript-eslint/no-unused-vars
-  setIsAccuracyCalcOpen: _setIsAccuracyCalcOpen, // eslint-disable-line @typescript-eslint/no-unused-vars
+  isAccuracyCalcOpen: _isAccuracyCalcOpen,  
+  setIsAccuracyCalcOpen: _setIsAccuracyCalcOpen,  
   isGameCommandsOpen,
   setIsGameCommandsOpen,
   showBackToTop,

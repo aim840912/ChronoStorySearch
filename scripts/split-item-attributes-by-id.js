@@ -20,8 +20,8 @@ if (!fs.existsSync(detailedDir)) {
 const essential = originalData.map(item => ({
   item_id: item.item_id,
   item_name: item.item_name,
-  type: item.type,
-  sub_type: item.sub_type,
+  type: item.type || item.itemType?.type || null,
+  sub_type: item.sub_type || item.itemType?.sub_type || null,
   req_level: item.equipment?.requirements?.req_level ?? null,
   req_str: item.equipment?.requirements?.req_str ?? 0,
   req_dex: item.equipment?.requirements?.req_dex ?? 0,
