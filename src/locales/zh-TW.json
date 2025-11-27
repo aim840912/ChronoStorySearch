@@ -115,6 +115,8 @@
   "card.itemId": "物品 ID",
   "card.monsterDrop": "怪物掉落",
   "card.gachaDrop": "轉蛋掉落",
+  "card.monster": "怪物",
+  "card.item": "物品",
   "share.button": "分享",
   "share.success": "連結已複製到剪貼簿！",
   "share.error": "無法複製連結",

@@ -89,17 +89,17 @@ export const SearchHeader = memo(function SearchHeader({
   return (
     <div className="sticky top-0 z-40 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 backdrop-blur-sm pt-4 sm:pt-6 pb-3 sm:pb-4 shadow-md">
       {/* 標題區域 */}
-      <div className="relative text-center mb-4 sm:mb-6 pt-2 pr-20 sm:pr-0">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white flex items-center justify-center gap-2">
+      <div className="flex items-center justify-between mb-4 sm:mb-6 pt-2 px-2 sm:px-4">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
           <img
             src="/images/chrono.png"
             alt="ChronoStory Logo"
-            className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
+            className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex-shrink-0"
           />
-          {t('app.title')}
+          <span className="truncate">{t('app.title')}</span>
         </h1>
-        {/* 主題、語言、圖片格式切換與登入按鈕 - 右上角 */}
-        <div className="absolute top-0 right-2 sm:right-4 flex gap-1.5 sm:gap-2">
+        {/* 主題、語言、圖片格式切換與登入按鈕 */}
+        <div className="flex gap-1.5 sm:gap-2 flex-shrink-0">
           <ImageFormatToggle />
           <ThemeToggle />
           <LanguageToggle />
