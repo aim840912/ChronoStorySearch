@@ -1,8 +1,9 @@
 'use client'
 
-import { useState, useEffect, useMemo } from 'react'
+import { useMemo } from 'react'
 import type { EnhanceScroll } from '@/types/enhance'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { getAllScrolls } from '@/lib/scrolls'
 
 interface ScrollSelectorProps {
   equipmentCategory?: string
@@ -11,6 +12,9 @@ interface ScrollSelectorProps {
   disabled?: boolean
 }
 
+// 在模組層級載入一次，避免每次渲染重新載入
+const allScrolls = getAllScrolls()
+
 export function ScrollSelector({
   equipmentCategory,
   selectedScroll,
@@ -18,35 +22,12 @@ export function ScrollSelector({
   disabled = false
 }: ScrollSelectorProps) {
   const { language } = useLanguage()
-  const [allScrolls, setAllScrolls] = useState<EnhanceScroll[]>([])
-  const [isLoading, setIsLoading] = useState(false)
-
-  // 載入卷軸資料
-  useEffect(() => {
-    loadScrolls()
-  }, [])
-
-  const loadScrolls = async () => {
-    setIsLoading(true)
-    try {
-      const response = await fetch('/api/enhance/scrolls')
-      const data = await response.json()
-
-      if (data.success) {
-        setAllScrolls(data.data)
-      }
-    } catch (error) {
-      console.error('Failed to load scrolls:', error)
-    } finally {
-      setIsLoading(false)
-    }
-  }
 
   // 根據裝備分類篩選可用卷軸
   const availableScrolls = useMemo(() => {
     if (!equipmentCategory) return []
     return allScrolls.filter(scroll => scroll.category === equipmentCategory)
-  }, [allScrolls, equipmentCategory])
+  }, [equipmentCategory])
 
   // 分離普通卷軸和詛咒卷
   const { normalScrolls, cursedScrolls } = useMemo(() => {
@@ -122,14 +103,6 @@ export function ScrollSelector({
     return (
       <div className="p-8 text-center text-gray-500 border border-gray-200 dark:border-gray-700 rounded-lg">
         {!equipmentCategory ? '請先選擇裝備' : '當前裝備無法強化'}
-      </div>
-    )
-  }
-
-  if (isLoading) {
-    return (
-      <div className="p-8 text-center text-gray-500">
-        載入卷軸中...
       </div>
     )
   }

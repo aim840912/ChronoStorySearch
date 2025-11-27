@@ -3,7 +3,6 @@
 import { memo } from 'react'
 import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode, MarketFilterOptions } from '@/types'
 import { SearchBar } from '@/components/SearchBar'
-import { FilterButtons } from '@/components/FilterButtons'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
 import { MarketFilterPanel } from '@/components/trade/MarketFilterPanel'
 import { ThemeToggle } from '@/components/ThemeToggle'
@@ -93,7 +92,7 @@ export const SearchHeader = memo(function SearchHeader({
       <div className="relative text-center mb-4 sm:mb-6 pt-2 pr-20 sm:pr-0">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white flex items-center justify-center gap-2">
           <img
-            src="/chrono.png"
+            src="/images/chrono.png"
             alt="ChronoStory Logo"
             className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
           />
@@ -139,10 +138,6 @@ export const SearchHeader = memo(function SearchHeader({
           />
         </div>
 
-        {/* 篩選按鈕（目前為空，保留用於未來市場功能） */}
-        <div className="order-1 md:order-2">
-          <FilterButtons />
-        </div>
       </div>
 
       {/* 進階篩選面板（非市場模式） */}

@@ -1,24 +1,15 @@
-import { NextRequest } from 'next/server'
-import { withOptionalAuthAndError } from '@/lib/middleware/api-middleware'
-import { success } from '@/lib/api-response'
 import type { EnhanceScroll } from '@/types/enhance'
 import machine7Data from '@/../data/gacha/machine-7-enhanced.json'
 import itemAttributesData from '@/../data/item-attributes.json'
 
 /**
- * GET /api/enhance/scrolls
- * 獲取所有可用的卷軸列表（來自 machine-7 和詛咒卷）
- *
- * Query Parameters:
- * - category?: string - 篩選特定裝備分類的卷軸
+ * 獲取所有可用的強化卷軸
+ * 合併普通卷軸（來自 machine-7）和詛咒卷（來自 item-attributes）
  */
-async function handleGET(request: NextRequest) {
-  const { searchParams } = new URL(request.url)
-  const category = searchParams.get('category')
-
+export function getAllScrolls(): EnhanceScroll[] {
   // 從 machine-7 提取所有普通卷軸
   const normalScrolls: EnhanceScroll[] = machine7Data.items
-    .filter(item => item.scroll) // 只選擇有 scroll 屬性的物品
+    .filter(item => item.scroll)
     .map(item => {
       const scroll = item.scroll!
 
@@ -67,17 +58,12 @@ async function handleGET(request: NextRequest) {
       }
     })
 
-  // 合併普通卷軸和詛咒卷
-  const allScrolls = [...normalScrolls, ...cursedScrolls]
-
-  // 如果指定了 category，進行篩選
-  const filteredScrolls = category
-    ? allScrolls.filter(scroll => scroll.category === category)
-    : allScrolls
-
-  return success(filteredScrolls, '成功獲取卷軸列表')
+  return [...normalScrolls, ...cursedScrolls]
 }
 
-export const GET = withOptionalAuthAndError(handleGET, {
-  module: 'EnhanceScrollsAPI'
-})
+/**
+ * 根據裝備分類獲取可用的卷軸
+ */
+export function getScrollsByCategory(category: string): EnhanceScroll[] {
+  return getAllScrolls().filter(scroll => scroll.category === category)
+}
