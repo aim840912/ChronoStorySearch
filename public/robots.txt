@@ -1,0 +1,25 @@
+# Robots.txt for chrono-story-search
+# 限制爬蟲行為以減少 Edge Requests
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# 限制爬取頻率（秒）
+Crawl-delay: 10
+
+# 針對特定爬蟲的規則
+User-agent: bingbot
+Crawl-delay: 30
+
+User-agent: bytespider
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Sitemap
+Sitemap: https://chrono-story-search.vercel.app/sitemap.xml

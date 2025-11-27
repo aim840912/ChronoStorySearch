@@ -5,6 +5,17 @@
       "schedule": "0 0 * * *"
     }
   ],
+  "redirects": [
+    { "source": "/contact", "destination": "/", "permanent": false },
+    { "source": "/about", "destination": "/", "permanent": false },
+    { "source": "/home", "destination": "/", "permanent": false },
+    { "source": "/blog", "destination": "/", "permanent": false },
+    { "source": "/login", "destination": "/", "permanent": false },
+    { "source": "/register", "destination": "/", "permanent": false },
+    { "source": "/admin", "destination": "/", "permanent": false },
+    { "source": "/wp-admin", "destination": "/", "permanent": false },
+    { "source": "/wp-login.php", "destination": "/", "permanent": false }
+  ],
   "headers": [
     {
       "source": "/(.*)",
