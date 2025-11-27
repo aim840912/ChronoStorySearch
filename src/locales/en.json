@@ -115,6 +115,8 @@
   "card.itemId": "Item ID",
   "card.monsterDrop": "Monster Drop",
   "card.gachaDrop": "Gacha Drop",
+  "card.monster": "Monster",
+  "card.item": "Item",
   "share.button": "Share",
   "share.success": "Link copied to clipboard!",
   "share.error": "Failed to copy link",

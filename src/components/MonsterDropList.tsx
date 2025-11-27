@@ -11,12 +11,15 @@
 
 'use client'
 
-import { memo } from 'react'
+import { memo, useState, useMemo } from 'react'
 import type { DropItem } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { getMonsterDisplayName } from '@/lib/display-name'
 import { getMonsterImageUrl } from '@/lib/image-utils'
+
+// localStorage key for sorting preference
+const SORT_ORDER_STORAGE_KEY = 'monster-drop-sort-order'
 
 interface MonsterDropListProps {
   drops: DropItem[]
@@ -35,6 +38,35 @@ export const MonsterDropList = memo(function MonsterDropList({
 }: MonsterDropListProps) {
   const { t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
+
+  // 排序狀態（從 localStorage 讀取，預設高到低）
+  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem(SORT_ORDER_STORAGE_KEY)
+      if (saved === 'asc' || saved === 'desc') {
+        return saved
+      }
+    }
+    return 'desc'
+  })
+
+  // 切換排序並保存到 localStorage
+  const handleSortToggle = () => {
+    setSortOrder(prev => {
+      const newOrder = prev === 'desc' ? 'asc' : 'desc'
+      localStorage.setItem(SORT_ORDER_STORAGE_KEY, newOrder)
+      return newOrder
+    })
+  }
+
+  // 根據掉落率排序
+  const sortedDrops = useMemo(() => {
+    return [...drops].sort((a, b) => {
+      return sortOrder === 'desc'
+        ? b.chance - a.chance  // 高→低
+        : a.chance - b.chance  // 低→高
+    })
+  }, [drops, sortOrder])
 
   return (
     <div className="overflow-x-auto">
@@ -56,7 +88,20 @@ export const MonsterDropList = memo(function MonsterDropList({
               {t('card.monster') || '怪物'}
             </th>
             <th className="text-center p-3 text-sm font-semibold text-gray-700 dark:text-gray-200">
-              {t('card.dropChance') || '掉落率'}
+              <button
+                onClick={handleSortToggle}
+                className="inline-flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              >
+                {t('card.dropChance') || '掉落率'}
+                <svg
+                  className={`w-4 h-4 transition-transform ${sortOrder === 'asc' ? 'rotate-180' : ''}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
             </th>
             <th className="text-center p-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hidden sm:table-cell">
               {t('card.hp') || '血量'}
@@ -69,7 +114,7 @@ export const MonsterDropList = memo(function MonsterDropList({
           </tr>
         </thead>
         <tbody>
-          {drops.map((drop, index) => (
+          {sortedDrops.map((drop, index) => (
             <MonsterDropListRow
               key={drop.mobId}
               drop={drop}
