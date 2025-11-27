@@ -30,8 +30,8 @@ export const ItemAttributesDetailedSchema = z.object({
     stat_variation: z.record(
       z.string(),
       z.object({
-        min: z.number(),
-        max: z.number(),
+        min: z.number().nullable(),
+        max: z.number().nullable(),
       })
     ).optional(),
   }).optional(),
