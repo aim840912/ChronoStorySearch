@@ -1,10 +1,4 @@
 {
-  "crons": [
-    {
-      "path": "/api/cron/cleanup-expired-listings",
-      "schedule": "0 0 * * *"
-    }
-  ],
   "redirects": [
     { "source": "/contact", "destination": "/", "permanent": false },
     { "source": "/about", "destination": "/", "permanent": false },

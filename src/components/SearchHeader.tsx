@@ -1,10 +1,9 @@
 'use client'
 
 import { memo } from 'react'
-import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode, MarketFilterOptions } from '@/types'
+import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode } from '@/types'
 import { SearchBar } from '@/components/SearchBar'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
-import { MarketFilterPanel } from '@/components/trade/MarketFilterPanel'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { LanguageToggle } from '@/components/LanguageToggle'
 import { ImageFormatToggle } from '@/components/ImageFormatToggle'
@@ -42,12 +41,6 @@ interface SearchHeaderProps {
   advancedFilter: AdvancedFilterOptions
   onAdvancedFilterChange: (filter: AdvancedFilterOptions) => void
 
-  // 交易系統相關（暫時保留 props 但不使用）
-  onOpenCreateListing?: () => void
-  onOpenMyListings?: () => void
-  onOpenInterests?: () => void
-  marketFilter: MarketFilterOptions
-  onMarketFilterChange: (filter: MarketFilterOptions) => void
 }
 
 /**
@@ -80,8 +73,6 @@ export const SearchHeader = memo(function SearchHeader({
   onResetAdvancedFilter,
   advancedFilter,
   onAdvancedFilterChange,
-  marketFilter,
-  onMarketFilterChange,
 }: SearchHeaderProps) {
   const { t } = useLanguage()
   const { user, loading } = useAuth()
@@ -140,23 +131,12 @@ export const SearchHeader = memo(function SearchHeader({
 
       </div>
 
-      {/* 進階篩選面板（非市場模式） */}
-      {filterMode !== 'market-listings' && (
-        <AdvancedFilterPanel
-          filter={advancedFilter}
-          onFilterChange={onAdvancedFilterChange}
-          isExpanded={isAdvancedFilterExpanded}
-        />
-      )}
-
-      {/* 市場篩選面板（市場模式） */}
-      {filterMode === 'market-listings' && (
-        <MarketFilterPanel
-          filter={marketFilter}
-          onFilterChange={onMarketFilterChange}
-          isExpanded={isAdvancedFilterExpanded}
-        />
-      )}
+      {/* 進階篩選面板 */}
+      <AdvancedFilterPanel
+        filter={advancedFilter}
+        onFilterChange={onAdvancedFilterChange}
+        isExpanded={isAdvancedFilterExpanded}
+      />
     </div>
   )
 })

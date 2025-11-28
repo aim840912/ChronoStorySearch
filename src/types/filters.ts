@@ -74,24 +74,6 @@ export interface LevelRange {
   max: number | null
 }
 
-// 市場篩選選項（前向宣告）
-// 注意：statKey 使用 StatFilterKey 類型，定義在 market.ts
-export interface MarketFilterOptions {
-  tradeTypes: Array<'sell' | 'buy' | 'exchange'>
-  priceRange: {
-    min: number | null
-    max: number | null
-  }
-  itemStatsFilter: Array<{
-    id: string
-    statKey: 'watk' | 'matk' | 'wdef' | 'mdef' | 'str' | 'dex' | 'int' | 'luk' | 'hp' | 'mp' | 'acc' | 'avoid'
-    minValue: number | null
-    maxValue: number | null
-  }>
-  sortBy: 'created_at' | 'price'
-  sortOrder: 'asc' | 'desc'
-}
-
 // 進階篩選選項
 export interface AdvancedFilterOptions {
   // 資料類型篩選
@@ -111,7 +93,4 @@ export interface AdvancedFilterOptions {
 
   // 是否啟用進階篩選
   enabled: boolean
-
-  // 市場篩選（僅在 market-listings 模式下使用）
-  marketFilter?: MarketFilterOptions
 }

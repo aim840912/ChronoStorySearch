@@ -1,11 +1,10 @@
 'use client'
 
 import { memo } from 'react'
-import type { FilterMode, ItemAttributesEssential, ViewHistoryItem, DropsEssential, ListingWithUserInfo, Pagination } from '@/types'
+import type { FilterMode, ItemAttributesEssential, ViewHistoryItem, DropsEssential } from '@/types'
 import { FavoriteMonstersList } from '@/components/lists/FavoriteMonstersList'
 import { FavoriteItemsList } from '@/components/lists/FavoriteItemsList'
 import { AllItemsView } from '@/components/lists/AllItemsView'
-import { MarketListView } from '@/components/trade/MarketListView'
 import { SkeletonGrid } from '@/components/CardSkeleton'
 import { useLanguage } from '@/contexts/LanguageContext'
 
@@ -72,18 +71,6 @@ interface ContentDisplayProps {
   // 瀏覽歷史（用於首頁顯示）
   viewHistory: ViewHistoryItem[]
   allDrops: DropsEssential[]
-
-  // 市場刊登模式
-  marketListings: ListingWithUserInfo[]
-  marketPagination: Pagination | null
-  isMarketLoading: boolean
-  marketError: string | null
-  isMarketRefreshing?: boolean
-  marketRefreshError?: string | null
-  userQuota?: { active: number; max: number } | null
-  onListingClick: (listingId: string) => void
-  onMarketPageChange: (page: number) => void
-  onMarketRefresh?: () => void
 }
 
 /**
@@ -119,20 +106,8 @@ export const ContentDisplay = memo(function ContentDisplay({
   hasAnyData,
   viewHistory,
   allDrops,
-  marketListings,
-  marketPagination,
-  isMarketLoading,
-  marketError,
-  isMarketRefreshing,
-  marketRefreshError,
-  userQuota,
-  onListingClick,
-  onMarketPageChange,
-  onMarketRefresh,
 }: ContentDisplayProps) {
   const { t } = useLanguage()
-  // 交易系統預設啟用（暫時移除 useSystemStatus，之後可恢復）
-  const tradingEnabled = true
 
   // 載入中 - 使用骨架屏提升感知載入速度
   if (isLoading) {
@@ -141,50 +116,7 @@ export const ContentDisplay = memo(function ContentDisplay({
 
   return (
     <>
-      {filterMode === 'market-listings' ? (
-        /* 市場刊登模式 */
-        tradingEnabled ? (
-          <div className="mt-8">
-            <MarketListView
-              listings={marketListings}
-              pagination={marketPagination}
-              isLoading={isMarketLoading}
-              error={marketError}
-              isRefreshing={isMarketRefreshing}
-              refreshError={marketRefreshError}
-              userQuota={userQuota}
-              onListingClick={onListingClick}
-              onPageChange={onMarketPageChange}
-              onRefresh={onMarketRefresh}
-            />
-          </div>
-        ) : (
-          /* 交易系統已關閉提示 */
-          <div className="mt-8 text-center py-12">
-            <div className="max-w-md mx-auto">
-              <svg
-                className="w-16 h-16 mx-auto text-gray-400 dark:text-gray-600 mb-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                {t('market.systemDisabled')}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                {t('market.systemDisabledMessage')}
-              </p>
-            </div>
-          </div>
-        )
-      ) : filterMode === 'favorite-monsters' ? (
+      {filterMode === 'favorite-monsters' ? (
         /* 最愛怪物模式 */
         <FavoriteMonstersList
           monsters={filteredUniqueMonsters}

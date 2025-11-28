@@ -1,7 +1,7 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
-import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, MarketFilterOptions } from '@/types'
+import { useState, useEffect, useRef, useCallback } from 'react'
+import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter } from '@/types'
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 import { useFavoriteMonsters } from '@/hooks/useFavoriteMonsters'
 import { useFavoriteItems } from '@/hooks/useFavoriteItems'
@@ -14,8 +14,6 @@ import { useDataManagement } from '@/hooks/useDataManagement'
 import { useSearchLogic } from '@/hooks/useSearchLogic'
 import { useFilterLogic } from '@/hooks/useFilterLogic'
 import { useInfiniteScroll } from '@/hooks/useInfiniteScroll'
-import { useMarketFilter } from '@/hooks/useMarketFilter'
-import { useMarketListings } from '@/hooks/useMarketListings'
 import { useScrollBehavior } from '@/hooks/useScrollBehavior'
 import { useEnhanceModal } from '@/hooks/useEnhanceModal'
 import { useHashNavigation } from '@/hooks/useHashNavigation'
@@ -35,8 +33,6 @@ export default function Home() {
   // 篩選模式：全部 or 最愛怪物 or 最愛物品
   const [filterMode, setFilterMode] = useState<FilterMode>('all')
 
-  // 用戶配額狀態（刊登數量）
-  const [userQuota, setUserQuota] = useState<{ active: number; max: number } | null>(null)
 
   // 搜尋類型篩選：全部 or 怪物 or 物品
   const [searchType, setSearchType] = useState<SearchTypeFilter>('all')
@@ -45,14 +41,6 @@ export default function Home() {
   const [advancedFilter, setAdvancedFilter] = useState<AdvancedFilterOptions>(getDefaultAdvancedFilter())
   const [isAdvancedFilterExpanded, setIsAdvancedFilterExpanded] = useState(false)
 
-  // 市場篩選狀態
-  const [marketFilter, setMarketFilter] = useState<MarketFilterOptions>({
-    tradeTypes: [],
-    priceRange: { min: null, max: null },
-    itemStatsFilter: [],
-    sortBy: 'created_at',
-    sortOrder: 'desc'
-  })
 
   // 追蹤首次掛載，避免初始載入時觸發滾動
   const isFirstMount = useRef(true)
@@ -145,16 +133,6 @@ export default function Home() {
     initialRandomGachaItems,
   })
 
-  // 市場篩選 Hook - 處理市場物品篩選（將進階篩選轉換為物品 ID 列表）
-  const { getFilteredItemIds } = useMarketFilter({
-    advancedFilter,
-    itemAttributesMap
-  })
-
-  // 市場刊登 Hook - 處理市場刊登的載入和管理
-  const marketListings = useMarketListings({
-    enabled: filterMode === 'market-listings'
-  })
 
   // 滾動行為 Hook - 管理返回頂部按鈕和進階篩選自動收合
   const { showBackToTop, scrollToTop } = useScrollBehavior({
@@ -319,52 +297,6 @@ export default function Home() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
-  // 模式切換到市場刊登時，載入市場資料
-  useEffect(() => {
-    if (filterMode === 'market-listings') {
-      // 取得篩選的物品 ID
-      const filteredItemIds = getFilteredItemIds()
-
-      // 載入市場刊登
-      marketListings.fetchListings({
-        page: 1,
-        filter: marketFilter,
-        itemIds: filteredItemIds.length > 0 ? filteredItemIds : undefined,
-        searchTerm: debouncedSearchTerm
-      })
-    }
-  }, [filterMode]) // eslint-disable-line react-hooks/exhaustive-deps
-
-  // 從批次 API 響應中提取用戶配額（優化：不再需要額外調用 /api/auth/me）
-  useEffect(() => {
-    if (filterMode === 'market-listings' && marketListings.userInfo) {
-      const quotas = marketListings.userInfo.quotas
-      if (quotas) {
-        setUserQuota({
-          active: quotas.active_listings_count,
-          max: quotas.max_listings
-        })
-        clientLogger.debug('[Page] 用戶配額已從批次 API 載入:', quotas)
-      }
-    } else {
-      // 離開市場模式或尚未載入時清除配額
-      setUserQuota(null)
-    }
-  }, [filterMode, marketListings.userInfo])
-
-  // 市場篩選或搜尋詞變更時，重新載入資料
-  useEffect(() => {
-    if (filterMode === 'market-listings') {
-      const filteredItemIds = getFilteredItemIds()
-
-      marketListings.fetchListings({
-        page: 1,
-        filter: marketFilter,
-        itemIds: filteredItemIds.length > 0 ? filteredItemIds : undefined,
-        searchTerm: debouncedSearchTerm
-      })
-    }
-  }, [marketFilter, advancedFilter, debouncedSearchTerm]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // 鍵盤導航處理 - 包裝 search.handleKeyDown 以處理轉蛋建議
   const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -399,57 +331,6 @@ export default function Home() {
     modals.openItemModal(itemId, itemName, true) // saveHistory=true
   }, [modals])
 
-  // 建立刊登成功後的處理函數
-  const handleCreateListingSuccess = useCallback(() => {
-    // 清除市場刊登快取，確保下次載入時會取得最新資料
-    marketListings.reset()
-
-    // 如果當前在市場刊登模式，自動重新載入列表
-    if (filterMode === 'market-listings') {
-      const filteredItemIds = getFilteredItemIds()
-      marketListings.fetchListings({
-        page: 1,
-        filter: marketFilter,
-        itemIds: filteredItemIds.length > 0 ? filteredItemIds : undefined,
-        searchTerm: debouncedSearchTerm
-      })
-    }
-  }, [filterMode, marketFilter, advancedFilter, marketListings, getFilteredItemIds, debouncedSearchTerm]) // eslint-disable-line react-hooks/exhaustive-deps
-
-  // 防抖的市場刊登重新整理函數
-  const debouncedMarketRefresh = useMemo(() => {
-    let timeoutId: NodeJS.Timeout | null = null
-
-    return async () => {
-      // 如果有進行中的 timeout，清除它
-      if (timeoutId) {
-        clearTimeout(timeoutId)
-      }
-
-      // 設置新的 timeout（1000ms 防抖）
-      timeoutId = setTimeout(async () => {
-        try {
-          const filteredItemIds = getFilteredItemIds()
-          await marketListings.refresh(
-            marketFilter,
-            filteredItemIds.length > 0 ? filteredItemIds : undefined,
-            debouncedSearchTerm
-          )
-
-          // 成功時顯示 Toast 通知
-          toast.showToast(t('market.refreshSuccess') || '重新整理成功', 'success')
-        } catch (error) {
-          // 錯誤時顯示 Toast 通知
-          const errorMessage = error instanceof Error ? error.message : '重新整理失敗'
-          toast.showToast(
-            `${t('market.refreshError') || '重新整理失敗'}: ${errorMessage}`,
-            'error'
-          )
-          clientLogger.error('[Page] Market refresh failed:', error)
-        }
-      }, 1000) // 1 秒防抖
-    }
-  }, [marketFilter, getFilteredItemIds, marketListings, toast, t, debouncedSearchTerm])
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
@@ -479,11 +360,6 @@ export default function Home() {
           onResetAdvancedFilter={handleResetAdvancedFilter}
           advancedFilter={advancedFilter}
           onAdvancedFilterChange={setAdvancedFilter}
-          onOpenCreateListing={modals.openCreateListingModal}
-          onOpenMyListings={modals.openMyListingsModal}
-          onOpenInterests={modals.openInterestsModal}
-          marketFilter={marketFilter}
-          onMarketFilterChange={setMarketFilter}
         />
 
         {/* 內容顯示區域 */}
@@ -514,19 +390,6 @@ export default function Home() {
           hasAnyData={uniqueAllMonsters.length > 0 || uniqueAllItems.length > 0}
           viewHistory={viewHistory.history}
           allDrops={allDrops}
-          marketListings={marketListings.listings}
-          marketPagination={marketListings.pagination}
-          isMarketLoading={marketListings.isLoading}
-          marketError={marketListings.error}
-          isMarketRefreshing={marketListings.isLoading}
-          marketRefreshError={marketListings.refreshError}
-          userQuota={userQuota}
-          onListingClick={(listingId: string) => {
-            // 開啟刊登詳情 Modal（顯示完整資訊和購買意向功能）
-            modals.openListingDetailModal(parseInt(listingId, 10))
-          }}
-          onMarketPageChange={marketListings.goToPage}
-          onMarketRefresh={debouncedMarketRefresh}
         />
       </div>
 
@@ -539,11 +402,6 @@ export default function Home() {
         isGachaModalOpen={modals.isGachaModalOpen}
         isMerchantShopModalOpen={modals.isMerchantShopModalOpen}
         isAccuracyCalculatorOpen={modals.isAccuracyCalculatorOpen}
-        isCreateListingModalOpen={modals.isCreateListingModalOpen}
-        isMyListingsModalOpen={modals.isMyListingsModalOpen}
-        isInterestsModalOpen={modals.isInterestsModalOpen}
-        isListingDetailModalOpen={modals.isListingDetailModalOpen}
-        selectedListingId={modals.selectedListingId}
         selectedMonsterId={modals.selectedMonsterId ?? undefined}
         selectedMonsterName={modals.selectedMonsterName}
         selectedItemId={modals.selectedItemId}
@@ -559,18 +417,11 @@ export default function Home() {
         closeGachaModal={modals.closeGachaModal}
         closeMerchantShopModal={modals.closeMerchantShopModal}
         closeAccuracyCalculator={modals.closeAccuracyCalculator}
-        closeCreateListingModal={modals.closeCreateListingModal}
-        closeMyListingsModal={modals.closeMyListingsModal}
-        closeInterestsModal={modals.closeInterestsModal}
-        closeListingDetailModal={modals.closeListingDetailModal}
         goBack={modals.goBack}
         openGachaModal={modals.openGachaModal}
         openBugReportModal={modals.openBugReportModal}
         openMerchantShopModal={modals.openMerchantShopModal}
         openAccuracyCalculator={modals.openAccuracyCalculator}
-        openCreateListingModal={modals.openCreateListingModal}
-        openMyListingsModal={modals.openMyListingsModal}
-        onCreateListingSuccess={handleCreateListingSuccess}
         allDrops={allDrops}
         gachaMachines={gachaMachines}
         itemAttributesMap={itemAttributesMap}
