@@ -10,10 +10,6 @@ import { GachaMachineModal } from '@/components/GachaMachineModal'
 import { AccuracyCalculatorModal } from '@/components/AccuracyCalculatorModal'
 import { GameCommandsModal } from '@/components/GameCommandsModal'
 import { MerchantShopModal } from '@/components/MerchantShopModal'
-import { CreateListingModal } from '@/components/trade/CreateListingModal'
-import { MyListingsModal } from '@/components/trade/MyListingsModal'
-import { InterestsModal } from '@/components/trade/InterestsModal'
-import { ListingDetailModal } from '@/components/trade/ListingDetailModal'
 import { PrivacySettingsModal } from '@/components/settings/PrivacySettingsModal'
 import { Toast } from '@/components/Toast'
 import { useLanguage } from '@/contexts/LanguageContext'
@@ -27,11 +23,6 @@ interface ModalManagerProps {
   isGachaModalOpen: boolean
   isMerchantShopModalOpen: boolean
   isAccuracyCalculatorOpen: boolean
-  isCreateListingModalOpen: boolean
-  isMyListingsModalOpen: boolean
-  isInterestsModalOpen: boolean
-  isListingDetailModalOpen: boolean
-  selectedListingId: number | null
   selectedMonsterId: number | null | undefined
   selectedMonsterName: string
   selectedItemId: number | null
@@ -49,10 +40,6 @@ interface ModalManagerProps {
   closeGachaModal: () => void
   closeMerchantShopModal: () => void
   closeAccuracyCalculator: () => void
-  closeCreateListingModal: () => void
-  closeMyListingsModal: () => void
-  closeInterestsModal: () => void
-  closeListingDetailModal: () => void
   goBack: () => void
 
   // Modal 開啟函數
@@ -60,11 +47,8 @@ interface ModalManagerProps {
   openBugReportModal: () => void
   openMerchantShopModal: () => void
   openAccuracyCalculator: (initialMonsterId?: number | null) => void
-  openCreateListingModal: () => void
-  openMyListingsModal: () => void
 
   // Modal 回調函數
-  onCreateListingSuccess?: () => void
   onSwitchToEnhance?: (equipmentId?: number) => void
   onOpenEnhance?: () => void
 
@@ -119,11 +103,6 @@ export const ModalManager = memo(function ModalManager({
   isGachaModalOpen,
   isMerchantShopModalOpen,
   isAccuracyCalculatorOpen,
-  isCreateListingModalOpen,
-  isMyListingsModalOpen,
-  isInterestsModalOpen,
-  isListingDetailModalOpen,
-  selectedListingId,
   selectedMonsterId,
   selectedMonsterName,
   selectedItemId,
@@ -139,18 +118,11 @@ export const ModalManager = memo(function ModalManager({
   closeGachaModal,
   closeMerchantShopModal,
   closeAccuracyCalculator,
-  closeCreateListingModal,
-  closeMyListingsModal,
-  closeInterestsModal,
-  closeListingDetailModal,
   goBack,
   openGachaModal,
   openBugReportModal,
   openMerchantShopModal,
   openAccuracyCalculator,
-  openCreateListingModal,
-  openMyListingsModal,
-  onCreateListingSuccess,
   onSwitchToEnhance,
   onOpenEnhance,
   allDrops,
@@ -167,8 +139,8 @@ export const ModalManager = memo(function ModalManager({
   handleGachaMachineClick,
   handleItemClickFromGachaModal,
   handleClearConfirm,
-  isAccuracyCalcOpen: _isAccuracyCalcOpen,  
-  setIsAccuracyCalcOpen: _setIsAccuracyCalcOpen,  
+  isAccuracyCalcOpen: _isAccuracyCalcOpen,
+  setIsAccuracyCalcOpen: _setIsAccuracyCalcOpen,
   isGameCommandsOpen,
   setIsGameCommandsOpen,
   showBackToTop,
@@ -271,41 +243,6 @@ export const ModalManager = memo(function ModalManager({
       <MerchantShopModal
         isOpen={isMerchantShopModalOpen}
         onClose={closeMerchantShopModal}
-      />
-
-      {/* Create Listing Modal */}
-      <CreateListingModal
-        isOpen={isCreateListingModalOpen}
-        onClose={closeCreateListingModal}
-        onSuccess={() => {
-          closeCreateListingModal()
-          // 刷新市場列表（如果當前在市場刊登模式）
-          onCreateListingSuccess?.()
-          openMyListingsModal()
-        }}
-      />
-
-      {/* My Listings Modal */}
-      <MyListingsModal
-        isOpen={isMyListingsModalOpen}
-        onClose={closeMyListingsModal}
-        onCreateNew={() => {
-          closeMyListingsModal()
-          openCreateListingModal()
-        }}
-      />
-
-      {/* Interests Modal */}
-      <InterestsModal
-        isOpen={isInterestsModalOpen}
-        onClose={closeInterestsModal}
-      />
-
-      {/* Listing Detail Modal */}
-      <ListingDetailModal
-        isOpen={isListingDetailModalOpen}
-        onClose={closeListingDetailModal}
-        listingId={selectedListingId}
       />
 
       {/* 浮動轉蛋機按鈕 */}

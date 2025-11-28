@@ -16,11 +16,7 @@
 import { useRouter } from 'next/navigation'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useSystemSettings } from '@/hooks/useSystemSettings'
-import { TradingSystemCard } from '@/components/admin/TradingSystemCard'
 import { MaintenanceModeCard } from '@/components/admin/MaintenanceModeCard'
-import { MaxListingsCard } from '@/components/admin/MaxListingsCard'
-import { ListingsStatisticsCard } from '@/components/admin/ListingsStatisticsCard'
-import { ListingExpirationCard } from '@/components/admin/ListingExpirationCard'
 import { FreeQuotaCard } from '@/components/admin/FreeQuotaCard'
 import { LoginBannerCard } from '@/components/admin/LoginBannerCard'
 import { clientLogger } from '@/lib/logger'
@@ -29,16 +25,6 @@ export default function SettingsContent() {
   const router = useRouter()
   const { t } = useLanguage()
   const { settings, isLoading, isUpdating, error, updateSetting } = useSystemSettings()
-
-  // 處理交易系統開關切換
-  const handleToggleTrading = async (enabled: boolean) => {
-    try {
-      await updateSetting('trading_system_enabled', enabled)
-      clientLogger.info('交易系統狀態已更新', { enabled })
-    } catch (err) {
-      clientLogger.error('更新交易系統狀態失敗', { error: err })
-    }
-  }
 
   // 處理維護模式開關切換
   const handleToggleMaintenance = async (enabled: boolean) => {
@@ -77,26 +63,6 @@ export default function SettingsContent() {
       clientLogger.info('登入使用者公告訊息已更新', { messageLength: message.length })
     } catch (err) {
       clientLogger.error('更新登入使用者公告訊息失敗', { error: err })
-    }
-  }
-
-  // 處理最大刊登數量更新
-  const handleUpdateMaxListings = async (value: number) => {
-    try {
-      await updateSetting('max_active_listings_per_user', value)
-      clientLogger.info('最大刊登數量已更新', { value })
-    } catch (err) {
-      clientLogger.error('更新最大刊登數量失敗', { error: err })
-    }
-  }
-
-  // 處理刊登過期天數更新
-  const handleUpdateExpirationDays = async (value: number) => {
-    try {
-      await updateSetting('listing_expiration_days', value)
-      clientLogger.info('刊登過期天數已更新', { value })
-    } catch (err) {
-      clientLogger.error('更新刊登過期天數失敗', { error: err })
     }
   }
 
@@ -194,19 +160,8 @@ export default function SettingsContent() {
             {/* 免費額度監控卡片 - 全寬顯示 */}
             <FreeQuotaCard />
 
-            {/* 刊登統計卡片 - 全寬顯示 */}
-            <ListingsStatisticsCard />
-
             {/* 系統設定卡片 - 2 欄佈局 */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {/* 交易系統卡片 */}
-              <TradingSystemCard
-                enabled={getSettingValue('trading_system_enabled') === true}
-                updatedAt={getSettingUpdatedAt('trading_system_enabled')}
-                onToggle={handleToggleTrading}
-                isUpdating={isUpdating}
-              />
-
               {/* 維護模式卡片 */}
               <MaintenanceModeCard
                 enabled={getSettingValue('maintenance_mode') === true}
@@ -224,22 +179,6 @@ export default function SettingsContent() {
                 updatedAt={getSettingUpdatedAt('login_banner_enabled')}
                 onToggle={handleToggleLoginBanner}
                 onUpdateMessage={handleUpdateLoginBannerMessage}
-                isUpdating={isUpdating}
-              />
-
-              {/* 最大刊登數量卡片 */}
-              <MaxListingsCard
-                maxListings={Number(getSettingValue('max_active_listings_per_user')) || 5}
-                updatedAt={getSettingUpdatedAt('max_active_listings_per_user')}
-                onUpdate={handleUpdateMaxListings}
-                isUpdating={isUpdating}
-              />
-
-              {/* 刊登過期天數卡片 */}
-              <ListingExpirationCard
-                expirationDays={Number(getSettingValue('listing_expiration_days')) || 30}
-                updatedAt={getSettingUpdatedAt('listing_expiration_days')}
-                onUpdate={handleUpdateExpirationDays}
                 isUpdating={isUpdating}
               />
             </div>
