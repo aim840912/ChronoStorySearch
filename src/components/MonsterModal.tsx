@@ -190,113 +190,73 @@ export function MonsterModal({
     <BaseModal
       isOpen={isOpen}
       onClose={onClose}
+      floatingLeft={
+        hasPreviousModal && onGoBack && (
+          <button
+            onClick={onGoBack}
+            className="p-2 min-h-[44px] transition-all duration-200 hover:scale-105 active:scale-95 flex items-center gap-1 text-gray-400 hover:text-blue-500"
+            aria-label={t('modal.goBack')}
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            <span className="text-sm font-medium">{t('modal.goBack')}</span>
+          </button>
+        )
+      }
+      floatingRight={
+        <>
+          {/* 關閉按鈕 */}
+          <button
+            onClick={onClose}
+            className="p-3 min-h-[44px] min-w-[44px] transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center text-gray-400 hover:text-red-500"
+            aria-label={t('modal.close')}
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          {/* 複製截圖按鈕 */}
+          <button
+            onClick={() => copyToClipboard(screenshotRef.current)}
+            disabled={isCapturing}
+            className="p-3 min-h-[44px] min-w-[44px] transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center text-gray-400 hover:text-green-500 disabled:opacity-50 disabled:cursor-not-allowed"
+            aria-label={t('screenshot.copy')}
+            title={t('screenshot.copy')}
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </button>
+          {/* 下載截圖按鈕 */}
+          <button
+            onClick={() => downloadPng(screenshotRef.current)}
+            disabled={isCapturing}
+            className="p-3 min-h-[44px] min-w-[44px] transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center text-gray-400 hover:text-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+            aria-label={t('screenshot.download')}
+            title={t('screenshot.download')}
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </button>
+        </>
+      }
     >
       {/* 截圖範圍 */}
-      <div ref={screenshotRef} className="bg-white dark:bg-gray-800 rounded-xl">
+      <div ref={screenshotRef} className="bg-white dark:bg-gray-800 rounded-xl flex-1 flex flex-col min-h-0 overflow-hidden">
         {/* Modal Header */}
         <div className="sticky top-0 z-10 bg-blue-500 dark:bg-blue-600 p-4 sm:p-6 rounded-t-xl">
           <div className="flex items-center justify-between">
-            <div className="flex-1 flex items-center">
-              {hasPreviousModal && onGoBack && (
-                <button
-                  onClick={onGoBack}
-                  className="p-3 min-h-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center gap-2"
-                  aria-label={t('modal.goBack')}
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
-                  <span className="text-sm font-medium hidden sm:inline">{t('modal.goBack')}</span>
-                </button>
-              )}
-            </div>
+            <div className="flex-1"></div>
             <div className="text-center">
               <h2 className="text-xl sm:text-2xl font-bold text-white mb-1">{displayMonsterName}</h2>
               <p className="text-blue-100 text-xs sm:text-sm">
                 {isDev && `${t('modal.monsterId')}: ${monsterId} · `}{t('modal.monsterDropCount').replace('{count}', String(monsterDrops.length))}
               </p>
             </div>
-            <div className="flex-1 flex items-center gap-2 justify-end">
-              {/* 最愛按鈕 */}
-              <button
-                onClick={() => monsterId && onToggleFavorite(monsterId, monsterName)}
-                className={`p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center ${
-                  isFavorite
-                    ? 'bg-red-500 hover:bg-red-600 text-white'
-                    : 'bg-white/20 hover:bg-white/30 text-white border border-white/30'
-                }`}
-                aria-label={isFavorite ? t('modal.favoriteRemove') : t('modal.favoriteAdd')}
-              >
-                <svg
-                  className="w-5 h-5 sm:w-6 sm:h-6"
-                  fill={isFavorite ? 'currentColor' : 'none'}
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                  />
-                </svg>
-              </button>
-              {/* 下載截圖按鈕 */}
-              <button
-                onClick={() => downloadPng(screenshotRef.current)}
-                disabled={isCapturing}
-                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
-                aria-label={t('screenshot.download')}
-                title={t('screenshot.download')}
-              >
-                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                  />
-                </svg>
-              </button>
-              {/* 複製截圖按鈕 */}
-              <button
-                onClick={() => copyToClipboard(screenshotRef.current)}
-                disabled={isCapturing}
-                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
-                aria-label={t('screenshot.copy')}
-                title={t('screenshot.copy')}
-              >
-                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-              </button>
-              {/* 關閉按鈕 */}
-              <button
-                onClick={onClose}
-                className="p-3 min-h-[44px] min-w-[44px] text-white hover:bg-white/20 rounded-full transition-colors flex items-center justify-center"
-                aria-label={t('modal.close')}
-              >
-                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
+            <div className="flex-1"></div>
           </div>
         </div>
 
@@ -327,18 +287,45 @@ export function MonsterModal({
         </div>
 
         {/* Modal Content - 左右分欄佈局（手機版上下堆疊） */}
-        <div className="p-3 sm:p-6 flex flex-col lg:flex-row gap-3 sm:gap-6 flex-1 overflow-hidden">
+        <div className="p-3 sm:p-6 flex flex-col lg:flex-row gap-3 sm:gap-6 flex-1 min-h-0 overflow-hidden">
           {/* 左側：怪物屬性（桌面版顯示 / 手機版根據 Tab 顯示） */}
-          <div className={`lg:w-1/3 space-y-4 overflow-y-auto scrollbar-hide ${
+          <div className={`lg:w-[320px] lg:flex-shrink-0 space-y-4 lg:h-full lg:overflow-y-auto scrollbar-hide ${
             mobileTab === 'drops' ? 'hidden lg:block' : ''
           }`}>
-            {/* 怪物圖示 */}
-            <div className="flex justify-center mb-4">
-              <img
-                src={monsterIconUrl}
-                alt={displayMonsterName}
-                className="w-24 h-24 sm:w-32 sm:h-32 monster-image"
-              />
+            {/* 怪物圖示與收藏按鈕 */}
+            <div className="relative mb-4">
+              {/* 收藏按鈕 - 左上角 */}
+              <button
+                onClick={() => monsterId && onToggleFavorite(monsterId, monsterName)}
+                className={`absolute -top-1 -left-1 p-3 min-h-[44px] min-w-[44px] transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center ${
+                  isFavorite
+                    ? 'text-red-500 hover:text-red-600'
+                    : 'text-gray-400 hover:text-red-400'
+                }`}
+                aria-label={isFavorite ? t('modal.favoriteRemove') : t('modal.favoriteAdd')}
+              >
+                <svg
+                  className="w-5 h-5 sm:w-6 sm:h-6"
+                  fill={isFavorite ? 'currentColor' : 'none'}
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </button>
+              {/* 怪物圖片 - 置中 */}
+              <div className="flex justify-center">
+                <img
+                  src={monsterIconUrl}
+                  alt={displayMonsterName}
+                  className="w-24 h-24 sm:w-32 sm:h-32 monster-image"
+                />
+              </div>
             </div>
             {/* 怪物屬性卡片 */}
             <MonsterStatsCard
@@ -358,7 +345,7 @@ export function MonsterModal({
           </div>
 
           {/* 右側：掉落物品（桌面版顯示 / 手機版根據 Tab 顯示） */}
-          <div className={`lg:w-2/3 overflow-y-auto scrollbar-hide ${
+          <div className={`lg:w-2/3 lg:h-full lg:overflow-y-auto scrollbar-hide ${
             mobileTab === 'info' ? 'hidden lg:block' : ''
           }`}>
             {/* 掉落標題和視圖切換 */}
