@@ -25,6 +25,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -38,6 +39,10 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
         <meta name="format-detection" content="telephone=no" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/open-huninn-font@1.1/font.css"
+          rel="stylesheet"
+        />
         <GoogleAnalytics />
       </head>
       <body

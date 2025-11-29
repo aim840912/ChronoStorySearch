@@ -47,7 +47,7 @@ export const MonsterCard = memo(function MonsterCard({
   return (
     <div
       onClick={() => onCardClick(mobId, displayMobName)}
-      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative min-h-[140px]"
+      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 hover:border-blue-500 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative min-h-[140px]"
     >
       {/* 最愛按鈕 - 右上角 */}
       <button

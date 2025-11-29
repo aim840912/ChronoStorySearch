@@ -38,7 +38,7 @@ export const DropCard = memo(function DropCard({ drop, onCardClick, isFavorite, 
   return (
     <div
       onClick={() => onCardClick(drop.mobId, displayMobName)}
-      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative"
+      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 hover:border-blue-500 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative"
     >
       {/* 最愛按鈕 - 右上角 */}
       <button
