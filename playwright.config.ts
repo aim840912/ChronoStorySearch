@@ -24,8 +24,8 @@ export default defineConfig({
   ],
 
   use: {
-    // 基礎 URL
-    baseURL: 'http://localhost:3000',
+    // 基礎 URL（支援環境變數覆蓋）
+    baseURL: process.env.PLAYWRIGHT_BASE_URL || 'http://localhost:3000',
 
     // 截圖設置
     screenshot: 'only-on-failure',

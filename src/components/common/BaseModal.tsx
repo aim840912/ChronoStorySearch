@@ -114,7 +114,7 @@ export function BaseModal({
   // 使用 Portal 將 Modal 渲染到 document.body，逃脫父容器的堆疊上下文限制
   return createPortal(
     <div
-      className={`fixed inset-0 ${zIndex} flex items-start justify-center pt-8 sm:pt-16 p-0 sm:px-4 sm:pb-4 bg-black/50 backdrop-blur-sm overflow-y-auto scrollbar-hide`}
+      className={`fixed inset-0 ${zIndex} flex items-start justify-center pt-8 sm:pt-16 p-0 sm:px-4 sm:pb-4 bg-black/90 backdrop-blur-sm overflow-y-auto scrollbar-hide`}
       onClick={handleBackdropClick}
     >
       {/* 相對定位容器，用於放置懸浮內容（寬度設定在此以確保 absolute 定位正確） */}
