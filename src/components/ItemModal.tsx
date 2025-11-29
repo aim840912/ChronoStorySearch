@@ -231,7 +231,7 @@ export function ItemModal({
       isOpen={isOpen}
       onClose={onClose}
       zIndex="z-[60]"
-      maxWidth="max-w-6xl"
+      maxWidth="max-w-[85vw]"
       floatingLeft={
         hasPreviousModal && onGoBack && (
           <button
@@ -242,7 +242,6 @@ export function ItemModal({
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            <span className="text-sm font-medium">{t('modal.goBack')}</span>
           </button>
         )
       }
@@ -287,20 +286,6 @@ export function ItemModal({
     >
       {/* 截圖區域包裹 */}
       <div ref={screenshotRef} className="bg-white dark:bg-gray-800 rounded-xl flex-1 flex flex-col min-h-0 overflow-hidden">
-        {/* Modal Header */}
-        <div className="sticky top-0 z-10 bg-green-500 dark:bg-green-600 p-4 sm:p-6 rounded-t-xl">
-          <div className="flex items-center justify-between">
-            <div className="flex-1"></div>
-            <div className="text-center">
-              <h2 className="text-xl sm:text-2xl font-bold text-white mb-1">{displayItemName}</h2>
-              <p className="text-green-100 text-xs sm:text-sm">
-                {isDev && `${t('modal.itemId')}: ${itemId} · `}{t('modal.itemDropCount').replace('{count}', String(itemDrops.length))}
-              </p>
-            </div>
-            <div className="flex-1"></div>
-          </div>
-        </div>
-
         {/* 手機版 Tab 切換（只在手機版顯示） */}
         <div className="lg:hidden border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
           <div className="flex">
@@ -328,7 +313,7 @@ export function ItemModal({
         </div>
 
         {/* Modal Content - 左右分欄佈局（手機版上下堆疊） */}
-        <div className="p-3 sm:p-6 flex flex-col lg:flex-row gap-3 sm:gap-6 flex-1 min-h-0 overflow-hidden">
+        <div className="p-3 sm:p-6 flex flex-col lg:flex-row gap-3 sm:gap-6 flex-1 min-h-0 overflow-y-auto lg:overflow-hidden">
           {/* 左側：物品屬性（桌面版顯示 / 手機版根據 Tab 顯示） */}
           <div className={`lg:w-[320px] lg:flex-shrink-0 space-y-4 lg:h-full lg:overflow-y-auto scrollbar-hide ${
             mobileTab === 'sources' ? 'hidden lg:block' : ''
@@ -367,6 +352,15 @@ export function ItemModal({
                   className="w-24 h-24 sm:w-32 sm:h-32 object-contain"
                 />
               </div>
+              {/* 物品名稱 */}
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-white text-center mt-2">
+                {displayItemName}
+              </h2>
+              {isDev && (
+                <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
+                  {t('modal.itemId')}: {itemId}
+                </p>
+              )}
             </div>
 
             {/* 物品屬性卡片 - 載入中顯示動畫 */}
@@ -447,7 +441,7 @@ export function ItemModal({
                 {/* 掉落來源標題和視圖切換 */}
                 <div className="flex items-center justify-between mb-3 sm:mb-4">
                   <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 hidden lg:block">
-                    {t('card.droppedBy')}
+                    {t('card.droppedBy')} ({itemDrops.length})
                   </h3>
                   {/* 視圖切換按鈕（桌面版放右邊，手機版放左邊） */}
                   <button
