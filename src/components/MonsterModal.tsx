@@ -13,7 +13,6 @@ import { getMonsterImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { useToast } from '@/hooks/useToast'
-import { useLanguageToggle } from '@/hooks/useLanguageToggle'
 import { useScreenshot } from '@/hooks/useScreenshot'
 import { useLazyMobInfo, useLazyDropsDetailed, useLazyMobMaps } from '@/hooks/useLazyData'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
@@ -62,7 +61,6 @@ export function MonsterModal({
   const { format } = useImageFormat()
   const isDev = process.env.NODE_ENV === 'development'
   const toast = useToast()
-  const toggleLanguage = useLanguageToggle()
 
   // 截圖功能
   const screenshotRef = useRef<HTMLDivElement>(null)
@@ -192,76 +190,103 @@ export function MonsterModal({
     <BaseModal
       isOpen={isOpen}
       onClose={onClose}
+      maxWidth="max-w-[85vw]"
+      floatingLeft={
+        hasPreviousModal && onGoBack && (
+          <button
+            onClick={onGoBack}
+            className="p-2 min-h-[44px] transition-all duration-200 hover:scale-105 active:scale-95 flex items-center gap-1 text-white dark:text-gray-300 hover:text-blue-500"
+            aria-label={t('modal.goBack')}
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+        )
+      }
+      floatingRight={
+        <>
+          {/* 關閉按鈕 */}
+          <button
+            onClick={onClose}
+            className="p-3 min-h-[44px] min-w-[44px] transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center text-white dark:text-gray-300 hover:text-red-500"
+            aria-label={t('modal.close')}
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          {/* 複製截圖按鈕 */}
+          <button
+            onClick={() => copyToClipboard(screenshotRef.current)}
+            disabled={isCapturing}
+            className="p-3 min-h-[44px] min-w-[44px] transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center text-white dark:text-gray-300 hover:text-green-500 disabled:opacity-50 disabled:cursor-not-allowed"
+            aria-label={t('screenshot.copy')}
+            title={t('screenshot.copy')}
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </button>
+          {/* 下載截圖按鈕 */}
+          <button
+            onClick={() => downloadPng(screenshotRef.current)}
+            disabled={isCapturing}
+            className="p-3 min-h-[44px] min-w-[44px] transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center text-white dark:text-gray-300 hover:text-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+            aria-label={t('screenshot.download')}
+            title={t('screenshot.download')}
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </button>
+        </>
+      }
     >
       {/* 截圖範圍 */}
-      <div ref={screenshotRef} className="bg-white dark:bg-gray-800 rounded-xl">
-        {/* Modal Header */}
-        <div className="sticky top-0 z-10 bg-blue-500 dark:bg-blue-600 p-4 sm:p-6 rounded-t-xl">
-          <div className="flex items-center justify-between">
-            <div className="flex-1 flex items-center">
-              {hasPreviousModal && onGoBack && (
-                <button
-                  onClick={onGoBack}
-                  className="p-3 min-h-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center gap-2"
-                  aria-label={t('modal.goBack')}
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
-                  <span className="text-sm font-medium hidden sm:inline">{t('modal.goBack')}</span>
-                </button>
-              )}
-            </div>
-            <div className="text-center">
-              <h2 className="text-xl sm:text-2xl font-bold text-white mb-1">{displayMonsterName}</h2>
-              <p className="text-blue-100 text-xs sm:text-sm">
-                {isDev && `${t('modal.monsterId')}: ${monsterId} · `}{t('modal.monsterDropCount').replace('{count}', String(monsterDrops.length))}
-              </p>
-            </div>
-            <div className="flex-1 flex items-center gap-2 justify-end">
-              {/* 視圖切換按鈕 */}
-              <button
-                onClick={() => setViewMode(viewMode === 'grid' ? 'list' : 'grid')}
-                className={`p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center ${
-                  viewMode === 'grid'
-                    ? 'bg-white text-blue-600'
-                    : 'bg-white/20 hover:bg-white/30 text-white border border-white/30'
-                }`}
-                aria-label={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
-                title={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
-              >
-                {viewMode === 'grid' ? (
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                  </svg>
-                ) : (
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                )}
-              </button>
-              {/* 語言切換按鈕 */}
-              <button
-                onClick={toggleLanguage}
-                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center"
-                aria-label={t('language.toggle')}
-              >
-                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </button>
-              {/* 最愛按鈕 */}
+      <div ref={screenshotRef} className="bg-white dark:bg-gray-800 rounded-xl flex-1 flex flex-col min-h-0 overflow-hidden">
+        {/* 手機版 Tab 切換（只在手機版顯示） */}
+        <div className="lg:hidden border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+          <div className="flex">
+            <button
+              onClick={() => setMobileTab('info')}
+              className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
+                mobileTab === 'info'
+                  ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 bg-blue-50 dark:bg-blue-900/20'
+                  : 'text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+              }`}
+            >
+              {t('monster.info') || '怪物資訊'}
+            </button>
+            <button
+              onClick={() => setMobileTab('drops')}
+              className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
+                mobileTab === 'drops'
+                  ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 bg-blue-50 dark:bg-blue-900/20'
+                  : 'text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+              }`}
+            >
+              {t('monster.drops') || '掉落物品'} ({monsterDrops.length})
+            </button>
+          </div>
+        </div>
+
+        {/* Modal Content - 左右分欄佈局（手機版上下堆疊） */}
+        <div className="p-3 sm:p-6 flex flex-col lg:flex-row gap-3 sm:gap-6 flex-1 min-h-0 overflow-y-auto lg:overflow-hidden">
+          {/* 左側：怪物屬性（桌面版顯示 / 手機版根據 Tab 顯示） */}
+          <div className={`lg:w-[320px] lg:flex-shrink-0 space-y-4 lg:h-full lg:overflow-y-auto scrollbar-hide ${
+            mobileTab === 'drops' ? 'hidden lg:block' : ''
+          }`}>
+            {/* 怪物圖示與收藏按鈕 */}
+            <div className="relative mb-4">
+              {/* 收藏按鈕 - 左上角 */}
               <button
                 onClick={() => monsterId && onToggleFavorite(monsterId, monsterName)}
-                className={`p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center ${
+                className={`absolute -top-1 -left-1 p-3 min-h-[44px] min-w-[44px] transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center ${
                   isFavorite
-                    ? 'bg-red-500 hover:bg-red-600 text-white'
-                    : 'bg-white/20 hover:bg-white/30 text-white border border-white/30'
+                    ? 'text-red-500 hover:text-red-600'
+                    : 'text-gray-400 hover:text-red-400'
                 }`}
                 aria-label={isFavorite ? t('modal.favoriteRemove') : t('modal.favoriteAdd')}
               >
@@ -279,104 +304,23 @@ export function MonsterModal({
                   />
                 </svg>
               </button>
-              {/* 下載截圖按鈕 */}
-              <button
-                onClick={() => downloadPng(screenshotRef.current)}
-                disabled={isCapturing}
-                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
-                aria-label={t('screenshot.download')}
-                title={t('screenshot.download')}
-              >
-                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                  />
-                </svg>
-              </button>
-              {/* 複製截圖按鈕 */}
-              <button
-                onClick={() => copyToClipboard(screenshotRef.current)}
-                disabled={isCapturing}
-                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
-                aria-label={t('screenshot.copy')}
-                title={t('screenshot.copy')}
-              >
-                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-              </button>
-              {/* 關閉按鈕 */}
-              <button
-                onClick={onClose}
-                className="p-3 min-h-[44px] min-w-[44px] text-white hover:bg-white/20 rounded-full transition-colors flex items-center justify-center"
-                aria-label={t('modal.close')}
-              >
-                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* 手機版 Tab 切換（只在手機版顯示） */}
-        <div className="lg:hidden border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
-          <div className="flex">
-            <button
-              onClick={() => setMobileTab('info')}
-              className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
-                mobileTab === 'info'
-                  ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 bg-blue-50 dark:bg-blue-900/20'
-                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
-              }`}
-            >
-              {t('monster.info') || '怪物資訊'}
-            </button>
-            <button
-              onClick={() => setMobileTab('drops')}
-              className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
-                mobileTab === 'drops'
-                  ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 bg-blue-50 dark:bg-blue-900/20'
-                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
-              }`}
-            >
-              {t('monster.drops') || '掉落物品'} ({monsterDrops.length})
-            </button>
-          </div>
-        </div>
-
-        {/* Modal Content - 左右分欄佈局（手機版上下堆疊） */}
-        <div className="p-3 sm:p-6 flex flex-col lg:flex-row gap-3 sm:gap-6 flex-1 overflow-hidden">
-          {/* 左側：怪物屬性（桌面版顯示 / 手機版根據 Tab 顯示） */}
-          <div className={`lg:w-1/3 space-y-4 overflow-y-auto scrollbar-hide ${
-            mobileTab === 'drops' ? 'hidden lg:block' : ''
-          }`}>
-            {/* 怪物圖示 */}
-            <div className="flex justify-center mb-4">
-              <img
-                src={monsterIconUrl}
-                alt={displayMonsterName}
-                className="w-24 h-24 sm:w-32 sm:h-32 monster-image"
-              />
+              {/* 怪物圖片 - 置中 */}
+              <div className="flex justify-center">
+                <img
+                  src={monsterIconUrl}
+                  alt={displayMonsterName}
+                  className="w-24 h-24 sm:w-32 sm:h-32 monster-image"
+                />
+              </div>
+              {/* 怪物名稱 */}
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-white text-center mt-2">
+                {displayMonsterName}
+              </h2>
+              {isDev && (
+                <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
+                  {t('modal.monsterId')}: {monsterId}
+                </p>
+              )}
             </div>
             {/* 怪物屬性卡片 */}
             <MonsterStatsCard
@@ -396,12 +340,32 @@ export function MonsterModal({
           </div>
 
           {/* 右側：掉落物品（桌面版顯示 / 手機版根據 Tab 顯示） */}
-          <div className={`lg:w-2/3 overflow-y-auto scrollbar-hide ${
+          <div className={`lg:w-2/3 lg:h-full lg:overflow-y-auto scrollbar-hide ${
             mobileTab === 'info' ? 'hidden lg:block' : ''
           }`}>
-            <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden lg:block">
-              {t('monster.drops')}
-            </h3>
+            {/* 掉落標題和視圖切換 */}
+            <div className="flex items-center justify-between mb-3 sm:mb-4">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 hidden lg:block">
+                {t('monster.drops')} ({monsterDrops.length})
+              </h3>
+              {/* 視圖切換按鈕（桌面版放右邊，手機版放左邊） */}
+              <button
+                onClick={() => setViewMode(viewMode === 'grid' ? 'list' : 'grid')}
+                className="p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 lg:ml-auto"
+                aria-label={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
+                title={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
+              >
+                {viewMode === 'grid' ? (
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                  </svg>
+                ) : (
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                )}
+              </button>
+            </div>
             {/* 根據視圖模式渲染不同的佈局 */}
             {viewMode === 'grid' ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">

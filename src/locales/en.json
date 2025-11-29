@@ -795,6 +795,7 @@
   "screenshot.failed": "Screenshot failed",
   "screenshot.copyFailed": "Copy failed",
   "screenshot.focusRequired": "Please keep the window focused and try again",
+  "screenshot.timeout": "Screenshot timed out, please try again",
   "imageFormat.png": "PNG",
   "imageFormat.stand": "Stand",
   "imageFormat.die": "Die",
