@@ -185,19 +185,20 @@ export default function Home() {
 
   // 延遲載入轉蛋機 - 當使用者開始搜尋或選擇轉蛋物品類型時才載入
   useEffect(() => {
-    // 當有搜尋詞、選擇了轉蛋/物品類型、轉蛋 Modal 開啟、或收藏物品模式時，載入轉蛋機資料
+    // 當有搜尋詞、選擇了轉蛋/物品類型、轉蛋 Modal 開啟、收藏物品模式、或等級過濾時，載入轉蛋機資料
     const needsGachaData =
       debouncedSearchTerm.trim() !== '' ||
       searchType === 'gacha' ||
       searchType === 'item' ||
       modals.isGachaModalOpen ||
       filterMode === 'favorite-items' ||
-      (advancedFilter.enabled && advancedFilter.itemCategories.length > 0)
+      (advancedFilter.enabled && advancedFilter.itemCategories.length > 0) ||
+      (advancedFilter.enabled && (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null))
 
     if (needsGachaData) {
       loadGachaMachines()
     }
-  }, [debouncedSearchTerm, searchType, advancedFilter.enabled, advancedFilter.itemCategories, loadGachaMachines, modals.isGachaModalOpen, filterMode])
+  }, [debouncedSearchTerm, searchType, advancedFilter.enabled, advancedFilter.itemCategories, advancedFilter.levelRange, loadGachaMachines, modals.isGachaModalOpen, filterMode])
 
   // 監聽瀏覽器返回鍵（popstate 事件）
   useEffect(() => {
