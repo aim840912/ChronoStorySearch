@@ -236,7 +236,7 @@ export function ItemModal({
         hasPreviousModal && onGoBack && (
           <button
             onClick={onGoBack}
-            className="p-2 min-h-[44px] transition-all duration-200 hover:scale-105 active:scale-95 flex items-center gap-1 text-gray-400 hover:text-green-500"
+            className="p-2 min-h-[44px] transition-all duration-200 hover:scale-105 active:scale-95 flex items-center gap-1 text-white dark:text-gray-300 hover:text-green-500"
             aria-label={t('modal.goBack')}
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -250,7 +250,7 @@ export function ItemModal({
           {/* 關閉按鈕 */}
           <button
             onClick={onClose}
-            className="p-3 min-h-[44px] min-w-[44px] transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center text-gray-400 hover:text-red-500"
+            className="p-3 min-h-[44px] min-w-[44px] transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center text-white dark:text-gray-300 hover:text-red-500"
             aria-label={t('modal.close')}
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -261,7 +261,7 @@ export function ItemModal({
           <button
             onClick={() => copyToClipboard(screenshotRef.current)}
             disabled={isCapturing}
-            className="p-3 min-h-[44px] min-w-[44px] transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center text-gray-400 hover:text-green-500 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="p-3 min-h-[44px] min-w-[44px] transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center text-white dark:text-gray-300 hover:text-green-500 disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label={t('screenshot.copy')}
             title={t('screenshot.copy')}
           >
@@ -273,7 +273,7 @@ export function ItemModal({
           <button
             onClick={() => downloadPng(screenshotRef.current)}
             disabled={isCapturing}
-            className="p-3 min-h-[44px] min-w-[44px] transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center text-gray-400 hover:text-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="p-3 min-h-[44px] min-w-[44px] transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center text-white dark:text-gray-300 hover:text-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label={t('screenshot.download')}
             title={t('screenshot.download')}
           >
@@ -294,7 +294,7 @@ export function ItemModal({
               className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
                 mobileTab === 'info'
                   ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 bg-blue-50 dark:bg-blue-900/20'
-                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+                  : 'text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
               }`}
             >
               {t('item.info') || '物品資訊'}
@@ -304,7 +304,7 @@ export function ItemModal({
               className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
                 mobileTab === 'sources'
                   ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 bg-blue-50 dark:bg-blue-900/20'
-                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+                  : 'text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
               }`}
             >
               {t('item.dropSources') || '掉落來源'} ({itemDrops.length + itemGachaSources.length})
@@ -367,7 +367,7 @@ export function ItemModal({
             {isLoadingDetailed && !itemAttributes ? (
               <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-sm text-center">
                 <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 dark:border-blue-400"></div>
-                <p className="mt-4 text-gray-600 dark:text-gray-400">{t('loading')}</p>
+                <p className="mt-4 text-white dark:text-gray-300">{t('loading')}</p>
               </div>
             ) : (
               <ItemAttributesCard attributes={itemAttributes} />

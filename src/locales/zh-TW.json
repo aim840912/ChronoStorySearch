@@ -782,6 +782,7 @@
   "screenshot.failed": "截圖失敗",
   "screenshot.copyFailed": "複製失敗",
   "screenshot.focusRequired": "請保持視窗焦點後再試",
+  "screenshot.timeout": "截圖處理超時，請重試",
   "imageFormat.png": "PNG",
   "imageFormat.stand": "待機",
   "imageFormat.die": "死亡",
