@@ -117,21 +117,21 @@ export function BaseModal({
       className={`fixed inset-0 ${zIndex} flex items-start justify-center pt-8 sm:pt-16 p-0 sm:px-4 sm:pb-4 bg-black/50 backdrop-blur-sm overflow-y-auto scrollbar-hide`}
       onClick={handleBackdropClick}
     >
-      {/* 相對定位容器，用於放置懸浮內容 */}
-      <div className="relative my-auto">
-        {/* 左側懸浮內容（固定在 Modal 左邊框外側，對齊內容區域上緣） */}
+      {/* 相對定位容器，用於放置懸浮內容（寬度設定在此以確保 absolute 定位正確） */}
+      <div className={`relative my-auto w-[70vw] lg:min-w-[60vw] ${maxWidth}`}>
+        {/* 左側懸浮內容（固定在 Modal 左邊框外側，所有尺寸一致 8px 距離） */}
         {floatingLeft && (
           <div
-            className="absolute -left-20 top-[88px] sm:top-[104px] z-10"
+            className="absolute right-[calc(100%_+_8px)] top-4 z-10"
             onClick={(e) => e.stopPropagation()}
           >
             {floatingLeft}
           </div>
         )}
-        {/* 右側懸浮內容（固定在 Modal 右邊框外側，對齊內容區域上緣） */}
+        {/* 右側懸浮內容（固定在 Modal 右邊框外側，所有尺寸一致 8px 距離） */}
         {floatingRight && (
           <div
-            className="absolute -right-14 top-[88px] sm:top-[104px] z-10 flex flex-col gap-2"
+            className="absolute left-[calc(100%_+_8px)] top-4 z-10 flex flex-col gap-2"
             onClick={(e) => e.stopPropagation()}
           >
             {floatingRight}
@@ -139,7 +139,7 @@ export function BaseModal({
         )}
         {/* Modal 主容器 */}
         <div
-          className={`bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full min-w-[60vw] ${maxWidth} h-[90vh] overflow-hidden flex flex-col`}
+          className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full h-[90vh] overflow-hidden flex flex-col"
           onClick={(e) => e.stopPropagation()}
         >
           {children}
