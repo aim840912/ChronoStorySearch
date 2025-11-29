@@ -11,7 +11,6 @@ import { clientLogger } from '@/lib/logger'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useToast } from '@/hooks/useToast'
-import { useLanguageToggle } from '@/hooks/useLanguageToggle'
 import { useScreenshot } from '@/hooks/useScreenshot'
 import { useLazyMobInfo, useLazyItemDetailed } from '@/hooks/useLazyData'
 import { findGachaItemAttributes } from '@/lib/gacha-utils'
@@ -62,7 +61,6 @@ export function ItemModal({
   const { t, language } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
   const toast = useToast()
-  const toggleLanguage = useLanguageToggle()
 
   // 截圖功能
   const screenshotRef = useRef<HTMLDivElement>(null)
@@ -260,42 +258,6 @@ export function ItemModal({
               </p>
             </div>
             <div className="flex-1 flex items-center gap-2 justify-end">
-              {/* 視圖切換按鈕 */}
-              <button
-                onClick={() => setViewMode(viewMode === 'grid' ? 'list' : 'grid')}
-                className={`p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center ${
-                  viewMode === 'grid'
-                    ? 'bg-white text-green-600'
-                    : 'bg-white/20 hover:bg-white/30 text-white border border-white/30'
-                }`}
-                aria-label={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
-                title={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
-              >
-                {viewMode === 'grid' ? (
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                  </svg>
-                ) : (
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                )}
-              </button>
-              {/* 語言切換按鈕 */}
-              <button
-                onClick={toggleLanguage}
-                className="p-3 min-h-[44px] min-w-[44px] rounded-full transition-all duration-200 hover:scale-110 active:scale-95 bg-white/20 hover:bg-white/30 text-white border border-white/30 flex items-center justify-center"
-                aria-label={t('language.toggle')}
-              >
-                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </button>
               {/* 最愛按鈕 */}
               <button
                 onClick={() => itemId !== null && onToggleFavorite(itemId, itemName)}
@@ -489,9 +451,29 @@ export function ItemModal({
             {/* 怪物掉落區塊 */}
             {itemDrops.length > 0 && (
               <div>
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden lg:block">
-                  {t('card.droppedBy')}
-                </h3>
+                {/* 掉落來源標題和視圖切換 */}
+                <div className="flex items-center justify-between mb-3 sm:mb-4">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 hidden lg:block">
+                    {t('card.droppedBy')}
+                  </h3>
+                  {/* 視圖切換按鈕（桌面版放右邊，手機版放左邊） */}
+                  <button
+                    onClick={() => setViewMode(viewMode === 'grid' ? 'list' : 'grid')}
+                    className="p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 lg:ml-auto"
+                    aria-label={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
+                    title={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
+                  >
+                    {viewMode === 'grid' ? (
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                      </svg>
+                    ) : (
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                    )}
+                  </button>
+                </div>
                 {/* 根據視圖模式渲染不同的佈局 */}
                 {viewMode === 'grid' ? (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
