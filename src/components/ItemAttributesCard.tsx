@@ -323,23 +323,20 @@ export function ItemAttributesCard({ attributes }: ItemAttributesCardProps) {
         {t('item.attributes')}
       </h3>
 
-      {/* 基本資訊 */}
-      <div className="mb-4 bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-          {t('item.basicInfo')}
-        </h4>
-        <div className="grid grid-cols-2 gap-2 text-sm">
-          <div>
-            <span className="text-gray-500 dark:text-gray-400">{t('item.type')}:</span>
-            <span className="ml-2 font-medium text-gray-900 dark:text-white">
-              {t(`item.type.${attributes.type}`)}
-            </span>
+      {/* 基本資訊 - 類型與分類 */}
+      <div className="grid grid-cols-2 gap-3 mb-4">
+        {/* 類型卡片 */}
+        <div className="bg-white dark:bg-gray-800 rounded-lg p-3 shadow-sm">
+          <div className="text-xs text-gray-500 dark:text-gray-400">{t('item.type')}</div>
+          <div className="text-lg font-bold text-gray-900 dark:text-white">
+            {t(`item.type.${attributes.type}`)}
           </div>
-          <div>
-            <span className="text-gray-500 dark:text-gray-400">{t('item.category')}:</span>
-            <span className="ml-2 font-medium text-gray-900 dark:text-white">
-              {t(`item.category.${equipment.category}`)}
-            </span>
+        </div>
+        {/* 分類卡片 */}
+        <div className="bg-white dark:bg-gray-800 rounded-lg p-3 shadow-sm">
+          <div className="text-xs text-gray-500 dark:text-gray-400">{t('item.category')}</div>
+          <div className="text-lg font-bold text-gray-900 dark:text-white">
+            {t(`item.category.${equipment.category}`)}
           </div>
         </div>
       </div>

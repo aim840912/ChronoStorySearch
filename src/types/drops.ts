@@ -100,4 +100,4 @@ export type TranslationKey = string
 export type Translations = Record<string, string>
 
 // 主題相關類型
-export type Theme = 'light' | 'dark' | 'system'
+export type Theme = 'light' | 'dark'

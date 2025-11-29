@@ -125,7 +125,7 @@ export function setLanguage(language: Language): boolean {
 }
 
 export function getTheme(): Theme {
-  return getStorageItem<Theme>(STORAGE_KEYS.THEME, 'system')
+  return getStorageItem<Theme>(STORAGE_KEYS.THEME, 'light')
 }
 
 export function setTheme(theme: Theme): boolean {
