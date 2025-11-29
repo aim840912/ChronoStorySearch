@@ -13,6 +13,8 @@ import { MerchantShopModal } from '@/components/MerchantShopModal'
 import { PrivacySettingsModal } from '@/components/settings/PrivacySettingsModal'
 import { Toast } from '@/components/Toast'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useTheme } from '@/contexts/ThemeContext'
+import { useLanguageToggle } from '@/hooks/useLanguageToggle'
 
 interface ModalManagerProps {
   // Modal 狀態 from useModalManager
@@ -151,9 +153,22 @@ export const ModalManager = memo(function ModalManager({
   hideToast,
 }: ModalManagerProps) {
   const { t } = useLanguage()
+  const { theme, setTheme } = useTheme()
+  const toggleLanguage = useLanguageToggle()
 
   // 隱私設定 Modal 狀態（內部管理）
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false)
+
+  // 判斷是否有任何 Modal 開啟（用於顯示懸浮翻譯按鈕）
+  const isAnyModalOpen = isMonsterModalOpen ||
+                         isItemModalOpen ||
+                         isGachaModalOpen ||
+                         isBugReportModalOpen ||
+                         isClearModalOpen ||
+                         isMerchantShopModalOpen ||
+                         isAccuracyCalculatorOpen ||
+                         isGameCommandsOpen ||
+                         isPrivacyModalOpen
 
   return (
     <>
@@ -244,6 +259,56 @@ export const ModalManager = memo(function ModalManager({
         isOpen={isMerchantShopModalOpen}
         onClose={closeMerchantShopModal}
       />
+
+      {/* 懸浮按鈕群組（僅在 Modal 開啟時顯示） */}
+      {isAnyModalOpen && (
+        <div className="fixed top-4 right-4 z-[65] flex gap-2">
+          {/* 主題切換按鈕 */}
+          <button
+            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+            className="p-3 bg-indigo-500 hover:bg-indigo-600 text-white rounded-full shadow-lg transition-all duration-200 hover:scale-110 active:scale-95"
+            aria-label={t('theme.toggle')}
+          >
+            {theme === 'light' ? (
+              // 太陽圖標（淺色模式）
+              <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                />
+              </svg>
+            ) : (
+              // 月亮圖標（深色模式）
+              <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                />
+              </svg>
+            )}
+          </button>
+
+          {/* 翻譯切換按鈕 */}
+          <button
+            onClick={toggleLanguage}
+            className="p-3 bg-pink-500 hover:bg-pink-600 text-white rounded-full shadow-lg transition-all duration-200 hover:scale-110 active:scale-95"
+            aria-label={t('language.toggle')}
+          >
+            <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </button>
+        </div>
+      )}
 
       {/* 浮動轉蛋機按鈕 */}
       <button
