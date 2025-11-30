@@ -8,7 +8,7 @@
  * 4. 瀏覽器指紋檢查 → 驗證是否為真實瀏覽器
  */
 
-import { BOT_USER_AGENTS, SEO_CRAWLERS_WHITELIST } from './constants'
+import { BOT_REGEX, SEO_REGEX } from './constants'
 import { BotDetectionResult } from './types'
 
 /**
@@ -47,27 +47,23 @@ export function detectBotByUserAgent(
 
   const ua = userAgent.toLowerCase()
 
-  // 第 2 層：SEO 爬蟲白名單 → 允許
-  for (const crawler of SEO_CRAWLERS_WHITELIST) {
-    if (ua.includes(crawler)) {
-      return {
-        isBot: true,
-        reason: `seo_crawler:${crawler}`,
-        confidence: 'high',
-        shouldBlock: false,
-      }
+  // 第 2 層：SEO 爬蟲白名單 → 允許（使用預編譯正則，優化效能）
+  if (SEO_REGEX.test(ua)) {
+    return {
+      isBot: true,
+      reason: 'seo_crawler',
+      confidence: 'high',
+      shouldBlock: false,
     }
   }
 
-  // 第 3 層：黑名單檢查 → 拒絕
-  for (const botPattern of BOT_USER_AGENTS) {
-    if (ua.includes(botPattern)) {
-      return {
-        isBot: true,
-        reason: `blacklist:${botPattern}`,
-        confidence: 'high',
-        shouldBlock: true,
-      }
+  // 第 3 層：黑名單檢查 → 拒絕（使用預編譯正則，優化效能）
+  if (BOT_REGEX.test(ua)) {
+    return {
+      isBot: true,
+      reason: 'blacklist',
+      confidence: 'high',
+      shouldBlock: true,
     }
   }
 

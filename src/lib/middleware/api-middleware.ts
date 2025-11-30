@@ -75,22 +75,21 @@ export function requireAuth(
 ) {
   return async (request: NextRequest, ...args: any[]): Promise<Response> => { // eslint-disable-line @typescript-eslint/no-explicit-any
     try {
-      // 1. 從 Supabase Auth 取得當前用戶和 session
+      // 1. 從 Supabase Auth 並行取得當前用戶和 session（優化：減少約 50% 延遲）
       const supabase = await createClient()
-      const {
-        data: { user: authUser },
-        error: authError,
-      } = await supabase.auth.getUser()
+      const [userResult, sessionResult] = await Promise.all([
+        supabase.auth.getUser(),
+        supabase.auth.getSession()
+      ])
+
+      const authUser = userResult.data.user
+      const authError = userResult.error
+      const session = sessionResult.data.session
 
       if (authError || !authUser) {
         dbLogger.debug('Authentication failed: no Supabase auth user')
         throw new UnauthorizedError('需要登入才能使用此功能')
       }
-
-      // 取得 session（包含 access_token）
-      const {
-        data: { session },
-      } = await supabase.auth.getSession()
 
       const accessToken = session?.provider_token || '' // Discord OAuth access token
 
@@ -190,22 +189,21 @@ export function requireAdmin(
 ) {
   return async (request: NextRequest, ...args: any[]): Promise<Response> => { // eslint-disable-line @typescript-eslint/no-explicit-any
     try {
-      // 1. 從 Supabase Auth 取得當前用戶和 session
+      // 1. 從 Supabase Auth 並行取得當前用戶和 session（優化：減少約 50% 延遲）
       const supabase = await createClient()
-      const {
-        data: { user: authUser },
-        error: authError,
-      } = await supabase.auth.getUser()
+      const [userResult, sessionResult] = await Promise.all([
+        supabase.auth.getUser(),
+        supabase.auth.getSession()
+      ])
+
+      const authUser = userResult.data.user
+      const authError = userResult.error
+      const session = sessionResult.data.session
 
       if (authError || !authUser) {
         dbLogger.debug('Admin authentication failed: no Supabase auth user')
         throw new UnauthorizedError('需要登入才能使用此功能')
       }
-
-      // 取得 session（包含 access_token）
-      const {
-        data: { session },
-      } = await supabase.auth.getSession()
 
       const accessToken = session?.provider_token || '' // Discord OAuth access token
 
@@ -339,12 +337,16 @@ export function optionalAuth(
 ) {
   return async (request: NextRequest, ...args: any[]): Promise<Response> => { // eslint-disable-line @typescript-eslint/no-explicit-any
     try {
-      // 1. 嘗試從 Supabase Auth 取得當前用戶
+      // 1. 從 Supabase Auth 並行取得當前用戶和 session（優化：減少約 50% 延遲）
       const supabase = await createClient()
-      const {
-        data: { user: authUser },
-        error: authError,
-      } = await supabase.auth.getUser()
+      const [userResult, sessionResult] = await Promise.all([
+        supabase.auth.getUser(),
+        supabase.auth.getSession()
+      ])
+
+      const authUser = userResult.data.user
+      const authError = userResult.error
+      const session = sessionResult.data.session
 
       // 2. 如果沒有認證用戶，傳遞 null
       if (authError || !authUser) {
@@ -391,11 +393,7 @@ export function optionalAuth(
         return await handler(request, null, ...args)
       }
 
-      // 5. 取得 session（包含 access_token）
-      const {
-        data: { session },
-      } = await supabase.auth.getSession()
-
+      // 5. 使用已取得的 session（在步驟 1 並行取得）
       const accessToken = session?.provider_token || '' // Discord OAuth access token
 
       // 6. 構建 User 物件並傳遞

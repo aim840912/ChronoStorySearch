@@ -72,6 +72,19 @@ export const BOT_USER_AGENTS = [
 ] as const
 
 /**
+ * 預編譯 Bot 檢測正則表達式
+ *
+ * 優化說明：
+ * - 將 35+ 個 pattern 合併為單一正則，在模組載入時編譯一次
+ * - 使用 'i' flag 進行大小寫不敏感匹配
+ * - 比每次請求遍歷陣列執行 includes() 更高效
+ */
+export const BOT_REGEX = new RegExp(
+  BOT_USER_AGENTS.join('|'),
+  'i'
+)
+
+/**
  * SEO 爬蟲白名單（必須保留，有利 SEO）
  *
  * 涵蓋主流搜尋引擎和社交媒體爬蟲：
@@ -97,6 +110,18 @@ export const SEO_CRAWLERS_WHITELIST = [
   // 其他合法爬蟲
   'ia_archiver', // Internet Archive
 ] as const
+
+/**
+ * 預編譯 SEO 爬蟲白名單正則表達式
+ *
+ * 優化說明：
+ * - 將 SEO 爬蟲列表合併為單一正則，在模組載入時編譯一次
+ * - SEO 爬蟲應被允許通過（有利 SEO）
+ */
+export const SEO_REGEX = new RegExp(
+  SEO_CRAWLERS_WHITELIST.join('|'),
+  'i'
+)
 
 /**
  * Rate Limit 預設配置
