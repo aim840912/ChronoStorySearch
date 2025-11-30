@@ -331,7 +331,7 @@ export const ModalManager = memo(function ModalManager({
       {/* 浮動商人專賣按鈕 */}
       <button
         onClick={openMerchantShopModal}
-        className="fixed bottom-[240px] sm:bottom-[312px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-stone-600 hover:bg-stone-700 dark:bg-stone-700 dark:hover:bg-stone-800 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        className="fixed bottom-[184px] sm:bottom-[240px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-stone-600 hover:bg-stone-700 dark:bg-stone-700 dark:hover:bg-stone-800 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('merchant.button')}
       >
         <div className="flex items-center gap-2">
@@ -345,7 +345,7 @@ export const ModalManager = memo(function ModalManager({
       {/* 浮動遊戲指令按鈕 */}
       <button
         onClick={() => setIsGameCommandsOpen(true)}
-        className="fixed bottom-[184px] sm:bottom-[240px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        className="fixed bottom-[128px] sm:bottom-[168px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('commands.button')}
       >
         <div className="flex items-center gap-2">
@@ -364,7 +364,7 @@ export const ModalManager = memo(function ModalManager({
       {/* 浮動命中率計算器按鈕 */}
       <button
         onClick={() => openAccuracyCalculator()}
-        className="fixed bottom-[128px] sm:bottom-[168px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        className="fixed bottom-[72px] sm:bottom-[96px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('accuracy.button')}
       >
         <div className="flex items-center gap-2">
