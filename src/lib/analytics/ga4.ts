@@ -145,22 +145,6 @@ export function trackPageView(pagePath: string, pageTitle?: string): void {
 }
 
 /**
- * 追蹤使用者登入
- *
- * @param method - 登入方式（如 'discord'）
- */
-export function trackLogin(method: string): void {
-  trackEvent('login', { method })
-}
-
-/**
- * 追蹤使用者登出
- */
-export function trackLogout(): void {
-  trackEvent('logout')
-}
-
-/**
  * 追蹤搜尋行為
  *
  * @param searchTerm - 搜尋關鍵字

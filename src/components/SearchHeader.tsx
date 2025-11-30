@@ -7,9 +7,7 @@ import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { LanguageToggle } from '@/components/LanguageToggle'
 import { ImageFormatToggle } from '@/components/ImageFormatToggle'
-import { UserMenu } from '@/components/auth/UserMenu'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { useAuth } from '@/contexts/AuthContext'
 
 interface SearchHeaderProps {
   // 搜尋相關
@@ -75,7 +73,6 @@ export const SearchHeader = memo(function SearchHeader({
   onAdvancedFilterChange,
 }: SearchHeaderProps) {
   const { t } = useLanguage()
-  const { user, loading } = useAuth()
 
   return (
     <div className="sticky top-0 z-40 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 backdrop-blur-sm pt-4 sm:pt-6 pb-3 sm:pb-4 shadow-md">
@@ -89,13 +86,11 @@ export const SearchHeader = memo(function SearchHeader({
           />
           <span className="truncate">{t('app.title')}</span>
         </h1>
-        {/* 主題、語言、圖片格式切換與登入按鈕 */}
+        {/* 主題、語言、圖片格式切換 */}
         <div className="flex gap-1.5 sm:gap-2 flex-shrink-0">
           <ImageFormatToggle />
           <ThemeToggle />
           <LanguageToggle />
-          {/* 認證 UI：已登入顯示用戶選單（登入功能僅在 /admin/login 頁面提供） */}
-          {!loading && user && <UserMenu />}
         </div>
       </div>
 
