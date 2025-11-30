@@ -6087,5 +6087,991 @@
         "chinese_map_name": "Hidden Street - The Crown-Flyer 2"
       }
     ]
+  },
+  {
+    "mob": {
+      "mob_id": "3000005",
+      "mob_name": "Brown Teddy",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 30,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "褐色發條熊",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "3110101",
+      "mob_name": "Pink Teddy",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 32,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "粉紅發條熊",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "3110102",
+      "mob_name": "Ratz",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 32,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "白色發條鼠",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "3210204",
+      "mob_name": "Roloduck",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 34,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "玩具鴨",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "3210205",
+      "mob_name": "Black Ratz",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 34,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "黑色發條鼠",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "3210207",
+      "mob_name": "Tick",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 34,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "鼬鼠",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "3210203",
+      "mob_name": "Panda Teddy",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 36,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "發條貓熊",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "3230306",
+      "mob_name": "Chronos",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 37,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "妖魔",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "3230305",
+      "mob_name": "Toy Trojan",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 39,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "木馬士兵",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "4230113",
+      "mob_name": "Tick-Tock",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 40,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "鼬鼠鬧鐘",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "4230111",
+      "mob_name": "Robo",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 41,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "藍色機器人",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "4230114",
+      "mob_name": "Platoon Chronos",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 41,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "進化妖魔",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "4230112",
+      "mob_name": "Master Robo",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 44,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "紅色機器人",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "4230115",
+      "mob_name": "Master Chronos",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 46,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "妖魔隊長",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "5220003",
+      "mob_name": "Timer",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 59,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "咕咕鐘",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "6130200",
+      "mob_name": "Buffy",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 61,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "小丑柏非",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "6230400",
+      "mob_name": "Soul Teddy",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 63,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "幽魂發條熊",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "6230300",
+      "mob_name": "Lazy Buffy",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 66,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "小丑瑞奇",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "6230500",
+      "mob_name": "Master Soul Teddy",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 67,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "幽魂發條熊隊長",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "8140200",
+      "mob_name": "Klock",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 70,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "冥鐘",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "6300100",
+      "mob_name": "Buffoon",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 74,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "貝爾芬",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "8140300",
+      "mob_name": "Dark Klock",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 76,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "黑暗冥鐘",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "6400100",
+      "mob_name": "Deep Buffoon",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 77,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "特貝爾芬",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "7140000",
+      "mob_name": "Ghost Pirate",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 83,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "百烈",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "7130010",
+      "mob_name": "Death Teddy",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 85,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "怨靈發條熊",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "7160000",
+      "mob_name": "Dual Ghost Pirate",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 87,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "多立百烈",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "7130300",
+      "mob_name": "Master Death Teddy",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 89,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "怨靈發條熊隊長",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "8141000",
+      "mob_name": "Spirit Viking",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 93,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "維京",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "8142000",
+      "mob_name": "Phantom Watch",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 95,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "幽魂女巫",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "8141100",
+      "mob_name": "Gigantic Spirit Viking",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 98,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "巨人維京",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "8143000",
+      "mob_name": "Grim Phantom Watch",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 99,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "怨靈女巫",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "8160000",
+      "mob_name": "Gatekeeper",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 108,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "通道守門人",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "8170000",
+      "mob_name": "Thanatos",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 108,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "達納托斯",
+    "maps": []
+  },
+  {
+    "mob": {
+      "mob_id": "8500002",
+      "mob_name": "Papulatus",
+      "released": 0,
+      "max_hp": null,
+      "acc": null,
+      "avoid": null,
+      "level": 125,
+      "exp": null,
+      "phys_def": null,
+      "mag_def": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "immune_to_poison_status": null,
+      "minimumPushDamage": null
+    },
+    "description": "",
+    "expBar": {
+      "minExpHpRatio": null,
+      "maxExpHpRatio": null,
+      "expEfficiency": null
+    },
+    "chineseMobName": "拉圖斯",
+    "maps": []
   }
 ]
