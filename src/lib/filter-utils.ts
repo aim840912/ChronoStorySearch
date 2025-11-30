@@ -155,7 +155,7 @@ export function matchesJobClassFilter(
  * @returns 是否符合篩選
  */
 export function matchesLevelRangeFilter(
-  itemId: number,
+  itemId: number | null | undefined,
   itemAttributes: Map<number, FilterableItem>,
   filter: AdvancedFilterOptions
 ): boolean {
@@ -163,6 +163,12 @@ export function matchesLevelRangeFilter(
 
   // 未啟用篩選或未設定任何等級範圍
   if (!filter.enabled || (min === null && max === null)) {
+    return true
+  }
+
+  // 如果 itemId 為 null（例如只有怪物資料沒有掉落物的記錄），
+  // 讓記錄通過物品等級篩選，由怪物等級篩選來處理
+  if (itemId === null || itemId === undefined) {
     return true
   }
 

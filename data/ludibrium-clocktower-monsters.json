@@ -1,0 +1,315 @@
+{
+  "region": "Ludibrium - Clocktower",
+  "source": "https://maplesaga.com/library/cn/mob/region/Ludibrium%20-%20Clocktower",
+  "totalCount": 34,
+  "monsters": [
+    {
+      "mobId": 3000005,
+      "name": "Brown Teddy",
+      "chineseName": "褐色發條熊",
+      "level": 30,
+      "hp": 950,
+      "exp": 480,
+      "drops": ["玩具熊的棉花團", "智慧母礦"]
+    },
+    {
+      "mobId": 3110101,
+      "name": "Pink Teddy",
+      "chineseName": "粉紅發條熊",
+      "level": 32,
+      "hp": 1050,
+      "exp": 520,
+      "drops": ["玩具熊的黃絲帶", "智慧母礦"]
+    },
+    {
+      "mobId": 3110102,
+      "name": "Ratz",
+      "chineseName": "白色發條鼠",
+      "level": 32,
+      "hp": 1000,
+      "exp": 520,
+      "drops": ["動物皮", "力量母礦"]
+    },
+    {
+      "mobId": 3210204,
+      "name": "Roloduck",
+      "chineseName": "玩具鴨",
+      "level": 34,
+      "hp": 1200,
+      "exp": 560,
+      "drops": ["玩具小鴨", "敏捷母礦"]
+    },
+    {
+      "mobId": 3210205,
+      "name": "Black Ratz",
+      "chineseName": "黑色發條鼠",
+      "level": 34,
+      "hp": 1150,
+      "exp": 560,
+      "drops": ["動物皮", "敏捷母礦"]
+    },
+    {
+      "mobId": 3210207,
+      "name": "Tick",
+      "chineseName": "鼬鼠",
+      "level": 34,
+      "hp": 1100,
+      "exp": 560,
+      "drops": ["鐘錶發條", "力量母礦"]
+    },
+    {
+      "mobId": 3210203,
+      "name": "Panda Teddy",
+      "chineseName": "發條貓熊",
+      "level": 36,
+      "hp": 1400,
+      "exp": 616,
+      "drops": ["玩具熊貓", "幸運母礦"]
+    },
+    {
+      "mobId": 3230306,
+      "name": "Chronos",
+      "chineseName": "妖魔",
+      "level": 37,
+      "hp": 1750,
+      "exp": 656,
+      "drops": ["齒輪", "敏捷母礦"]
+    },
+    {
+      "mobId": 3230305,
+      "name": "Toy Trojan",
+      "chineseName": "木馬士兵",
+      "level": 39,
+      "hp": 1920,
+      "exp": 736,
+      "drops": ["玩具士兵的刀", "智慧母礦"]
+    },
+    {
+      "mobId": 4230113,
+      "name": "Tick-Tock",
+      "chineseName": "鼬鼠鬧鐘",
+      "level": 40,
+      "hp": 1900,
+      "exp": 760,
+      "drops": ["小鬧鐘", "幸運母礦"]
+    },
+    {
+      "mobId": 4230111,
+      "name": "Robo",
+      "chineseName": "藍色機器人",
+      "level": 41,
+      "hp": 2000,
+      "exp": 792,
+      "drops": ["便宜的乾電池", "智慧母礦"]
+    },
+    {
+      "mobId": 4230114,
+      "name": "Platoon Chronos",
+      "chineseName": "進化妖魔",
+      "level": 41,
+      "hp": 2050,
+      "exp": 792,
+      "drops": ["齒輪", "力量母礦"]
+    },
+    {
+      "mobId": 4230112,
+      "name": "Master Robo",
+      "chineseName": "紅色機器人",
+      "level": 44,
+      "hp": 2450,
+      "exp": 840,
+      "drops": ["機器心臟", "智慧母礦"]
+    },
+    {
+      "mobId": 4230115,
+      "name": "Master Chronos",
+      "chineseName": "妖魔隊長",
+      "level": 46,
+      "hp": 2600,
+      "exp": 920,
+      "drops": ["齒輪", "幸運母礦"]
+    },
+    {
+      "mobId": 5220003,
+      "name": "Timer",
+      "chineseName": "咕咕鐘",
+      "level": 59,
+      "hp": 735000,
+      "exp": 294000,
+      "drops": ["鐘錶發條", "小鬧鐘", "齒輪"],
+      "isBoss": true
+    },
+    {
+      "mobId": 6130200,
+      "name": "Buffy",
+      "chineseName": "小丑柏非",
+      "level": 61,
+      "hp": 7400,
+      "exp": 1840,
+      "drops": ["小丑柏非帽", "智慧母礦"]
+    },
+    {
+      "mobId": 6230400,
+      "name": "Soul Teddy",
+      "chineseName": "幽魂發條熊",
+      "level": 63,
+      "hp": 7600,
+      "exp": 1960,
+      "drops": ["幽魂玩偶", "力量母礦"]
+    },
+    {
+      "mobId": 6230300,
+      "name": "Lazy Buffy",
+      "chineseName": "小丑瑞奇",
+      "level": 66,
+      "hp": 9400,
+      "exp": 2080,
+      "drops": ["小丑瑞奇的球", "幸運母礦"]
+    },
+    {
+      "mobId": 6230500,
+      "name": "Master Soul Teddy",
+      "chineseName": "幽魂發條熊隊長",
+      "level": 67,
+      "hp": 11000,
+      "exp": 2120,
+      "drops": ["自由之靈", "黑暗母礦"]
+    },
+    {
+      "mobId": 8140200,
+      "name": "Klock",
+      "chineseName": "冥鐘",
+      "level": 70,
+      "hp": 15000,
+      "exp": 2160,
+      "drops": ["封印鐘心", "幸運母礦"]
+    },
+    {
+      "mobId": 6300100,
+      "name": "Buffoon",
+      "chineseName": "貝爾芬",
+      "level": 74,
+      "hp": 16000,
+      "exp": 2720,
+      "drops": ["貝爾芬掛鐘", "智慧母礦"]
+    },
+    {
+      "mobId": 8140300,
+      "name": "Dark Klock",
+      "chineseName": "黑暗冥鐘",
+      "level": 76,
+      "hp": 18000,
+      "exp": 2960,
+      "drops": ["邪惡鐘心", "黑暗母礦"]
+    },
+    {
+      "mobId": 6400100,
+      "name": "Deep Buffoon",
+      "chineseName": "特貝爾芬",
+      "level": 77,
+      "hp": 19000,
+      "exp": 3080,
+      "drops": ["特貝爾芬石塊", "黑暗母礦"]
+    },
+    {
+      "mobId": 7140000,
+      "name": "Ghost Pirate",
+      "chineseName": "百烈",
+      "level": 83,
+      "hp": 30000,
+      "exp": 8800,
+      "drops": ["百烈舵輪", "智慧母礦"]
+    },
+    {
+      "mobId": 7130010,
+      "name": "Death Teddy",
+      "chineseName": "怨靈發條熊",
+      "level": 85,
+      "hp": 32000,
+      "exp": 10400,
+      "drops": ["封印發條熊", "敏捷母礦"]
+    },
+    {
+      "mobId": 7160000,
+      "name": "Dual Ghost Pirate",
+      "chineseName": "多立百烈",
+      "level": 87,
+      "hp": 35000,
+      "exp": 12000,
+      "drops": ["多立百烈推進器", "力量母礦"]
+    },
+    {
+      "mobId": 7130300,
+      "name": "Master Death Teddy",
+      "chineseName": "怨靈發條熊隊長",
+      "level": 89,
+      "hp": 40000,
+      "exp": 13760,
+      "drops": ["束縛枷鎖", "召喚石"]
+    },
+    {
+      "mobId": 8141000,
+      "name": "Spirit Viking",
+      "chineseName": "維京",
+      "level": 93,
+      "hp": 50000,
+      "exp": 16800,
+      "drops": ["維京船帆", "力量母礦"]
+    },
+    {
+      "mobId": 8142000,
+      "name": "Phantom Watch",
+      "chineseName": "幽魂女巫",
+      "level": 95,
+      "hp": 53000,
+      "exp": 18400,
+      "drops": ["封印甕", "黑暗母礦"]
+    },
+    {
+      "mobId": 8141100,
+      "name": "Gigantic Spirit Viking",
+      "chineseName": "巨人維京",
+      "level": 98,
+      "hp": 58000,
+      "exp": 20800,
+      "drops": ["巨人維京帽", "黑暗母礦"]
+    },
+    {
+      "mobId": 8143000,
+      "name": "Grim Phantom Watch",
+      "chineseName": "怨靈女巫",
+      "level": 99,
+      "hp": 60000,
+      "exp": 22400,
+      "drops": ["寒冰碎塊", "召喚石"]
+    },
+    {
+      "mobId": 8160000,
+      "name": "Gatekeeper",
+      "chineseName": "通道守門人",
+      "level": 108,
+      "hp": 78000,
+      "exp": 34400,
+      "drops": ["通道守門人臂章", "幸運母礦"]
+    },
+    {
+      "mobId": 8170000,
+      "name": "Thanatos",
+      "chineseName": "達納托斯",
+      "level": 108,
+      "hp": 70000,
+      "exp": 32800,
+      "drops": ["達納托斯肩章", "黑暗母礦"]
+    },
+    {
+      "mobId": 8500002,
+      "name": "Papulatus",
+      "chineseName": "拉圖斯",
+      "level": 125,
+      "hp": 32870000,
+      "exp": 10360000,
+      "drops": ["玩具城獎牌", "技能書"],
+      "isBoss": true
+    }
+  ]
+}

@@ -9,7 +9,9 @@
  * matchesAllKeywords("Blue Mana Potion", "blue potion") // true
  * matchesAllKeywords("Orange Mushroom", "red mushroom") // false (缺少 "red")
  */
-export function matchesAllKeywords(text: string, searchTerm: string): boolean {
+export function matchesAllKeywords(text: string | null | undefined, searchTerm: string): boolean {
+  if (!text) return false
+
   const keywords = searchTerm.toLowerCase().trim().split(/\s+/)
   const textLower = text.toLowerCase()
 

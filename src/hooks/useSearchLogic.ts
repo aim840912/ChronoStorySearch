@@ -64,34 +64,36 @@ export function useSearchLogic({
         }
       }
 
-      // 建立物品英文名稱索引
-      const itemNameLower = drop.itemName.toLowerCase()
-      const existingItem = itemMap.get(itemNameLower)
-      if (existingItem) {
-        existingItem.count++
-      } else {
-        itemMap.set(itemNameLower, {
-          name: drop.itemName, // 保留原始大小寫
-          type: 'item',
-          count: 1,
-          id: drop.itemId, // 記錄物品 ID
-        })
-      }
+      // 建立物品英文名稱索引（跳過 null）
+      if (drop.itemName) {
+        const itemNameLower = drop.itemName.toLowerCase()
+        const existingItem = itemMap.get(itemNameLower)
+        if (existingItem) {
+          existingItem.count++
+        } else {
+          itemMap.set(itemNameLower, {
+            name: drop.itemName, // 保留原始大小寫
+            type: 'item',
+            count: 1,
+            id: drop.itemId, // 記錄物品 ID
+          })
+        }
 
-      // 建立物品中文名稱索引（如果存在且與英文不同）
-      if (drop.chineseItemName) {
-        const chineseItemNameLower = drop.chineseItemName.toLowerCase()
-        if (chineseItemNameLower !== itemNameLower) {
-          const existingChineseItem = itemMap.get(chineseItemNameLower)
-          if (existingChineseItem) {
-            existingChineseItem.count++
-          } else {
-            itemMap.set(chineseItemNameLower, {
-              name: drop.chineseItemName, // 保留原始大小寫
-              type: 'item',
-              count: 1,
-              id: drop.itemId, // 記錄物品 ID
-            })
+        // 建立物品中文名稱索引（如果存在且與英文不同）
+        if (drop.chineseItemName) {
+          const chineseItemNameLower = drop.chineseItemName.toLowerCase()
+          if (chineseItemNameLower !== itemNameLower) {
+            const existingChineseItem = itemMap.get(chineseItemNameLower)
+            if (existingChineseItem) {
+              existingChineseItem.count++
+            } else {
+              itemMap.set(chineseItemNameLower, {
+                name: drop.chineseItemName, // 保留原始大小寫
+                type: 'item',
+                count: 1,
+                id: drop.itemId, // 記錄物品 ID
+              })
+            }
           }
         }
       }
