@@ -246,8 +246,8 @@ export function MonsterModal({
     >
       {/* 截圖範圍 */}
       <div ref={screenshotRef} className="bg-white dark:bg-gray-800 rounded-xl flex-1 flex flex-col min-h-0 overflow-hidden">
-        {/* 手機版 Tab 切換（只在手機版顯示） */}
-        <div className="lg:hidden border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+        {/* 手機版 Tab 切換（只在 < 1120px 顯示） */}
+        <div className="min-[1120px]:hidden border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
           <div className="flex">
             <button
               onClick={() => setMobileTab('info')}
@@ -272,11 +272,11 @@ export function MonsterModal({
           </div>
         </div>
 
-        {/* Modal Content - 左右分欄佈局（手機版上下堆疊） */}
-        <div className="p-3 sm:p-6 flex flex-col lg:flex-row gap-3 sm:gap-6 flex-1 min-h-0 overflow-y-auto lg:overflow-hidden">
-          {/* 左側：怪物屬性（桌面版顯示 / 手機版根據 Tab 顯示） */}
-          <div className={`lg:w-[320px] lg:flex-shrink-0 space-y-4 lg:h-full lg:overflow-y-auto scrollbar-hide ${
-            mobileTab === 'drops' ? 'hidden lg:block' : ''
+        {/* Modal Content - 左右分欄佈局（< 1120px 時上下堆疊） */}
+        <div className="p-3 sm:p-6 flex flex-col min-[1120px]:flex-row gap-3 sm:gap-6 flex-1 min-h-0 overflow-y-auto min-[1120px]:overflow-hidden scrollbar-hide">
+          {/* 左側：怪物屬性（>= 1120px 顯示 / < 1120px 根據 Tab 顯示） */}
+          <div className={`min-[1120px]:w-[320px] min-[1120px]:flex-shrink-0 space-y-4 min-[1120px]:h-full min-[1120px]:overflow-y-auto scrollbar-hide ${
+            mobileTab === 'drops' ? 'hidden min-[1120px]:block' : ''
           }`}>
             {/* 怪物圖示與收藏按鈕 */}
             <div className="relative mb-4">
@@ -339,19 +339,19 @@ export function MonsterModal({
             />
           </div>
 
-          {/* 右側：掉落物品（桌面版顯示 / 手機版根據 Tab 顯示） */}
-          <div className={`lg:w-2/3 lg:h-full lg:overflow-y-auto scrollbar-hide ${
-            mobileTab === 'info' ? 'hidden lg:block' : ''
+          {/* 右側：掉落物品（>= 1120px 顯示 / < 1120px 根據 Tab 顯示） */}
+          <div className={`min-[1120px]:w-2/3 min-[1120px]:h-full min-[1120px]:overflow-y-auto scrollbar-hide ${
+            mobileTab === 'info' ? 'hidden min-[1120px]:block' : ''
           }`}>
             {/* 掉落標題和視圖切換 */}
             <div className="flex items-center justify-between mb-3 sm:mb-4">
-              <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 hidden lg:block">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 hidden min-[1120px]:block">
                 {t('monster.drops')} ({monsterDrops.length})
               </h3>
-              {/* 視圖切換按鈕（桌面版放右邊，手機版放左邊） */}
+              {/* 視圖切換按鈕（>= 1120px 放右邊，< 1120px 放左邊） */}
               <button
                 onClick={() => setViewMode(viewMode === 'grid' ? 'list' : 'grid')}
-                className="p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 lg:ml-auto"
+                className="p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 min-[1120px]:ml-auto"
                 aria-label={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
                 title={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
               >
@@ -368,7 +368,7 @@ export function MonsterModal({
             </div>
             {/* 根據視圖模式渲染不同的佈局 */}
             {viewMode === 'grid' ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
                 {monsterDrops.map((drop, index) => (
                   <DropItemCard
                     key={`${drop.itemId}-${index}`}

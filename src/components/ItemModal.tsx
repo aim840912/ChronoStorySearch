@@ -463,7 +463,7 @@ export function ItemModal({
                 </div>
                 {/* 根據視圖模式渲染不同的佈局 */}
                 {viewMode === 'grid' ? (
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
                     {itemDrops.map((drop, index) => (
                       <MonsterDropCard
                         key={`${drop.mobId}-${index}`}
