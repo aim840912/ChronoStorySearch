@@ -19,7 +19,6 @@ interface SearchBarProps {
   focusedIndex: number
   onFocusedIndexChange: (index: number) => void
   searchContainerRef: RefObject<HTMLDivElement | null>
-  onShare?: () => void
   placeholder?: string // 自定義 placeholder
   // 收藏按鈕相關
   filterMode?: FilterMode
@@ -51,7 +50,6 @@ export function SearchBar({
   focusedIndex,
   onFocusedIndexChange,
   searchContainerRef,
-  onShare,
   placeholder,
   filterMode,
   onFilterChange,
