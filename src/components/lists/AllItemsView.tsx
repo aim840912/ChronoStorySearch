@@ -104,7 +104,7 @@ export function AllItemsView({
     // 優先顯示瀏覽歷史
     if (viewHistory.length > 0) {
       return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mx-auto mt-8">
           {viewHistory.map((historyItem, index) => {
             if (historyItem.type === 'monster') {
               // 從 allDrops 查找怪物完整資料
@@ -152,7 +152,7 @@ export function AllItemsView({
     // 沒有瀏覽歷史時，顯示隨機混合卡片
     if (mixedCards.length > 0) {
       return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mx-auto mt-8">
           {mixedCards.map((card, index) => {
             if (card.type === 'monster') {
               return (
@@ -196,7 +196,7 @@ export function AllItemsView({
       {/* 怪物區塊 */}
       {shouldShowMonsters && displayedMonsters.length > 0 && (
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto mt-6 sm:mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 mx-auto mt-6 sm:mt-8">
             {displayedMonsters.map((monster) => (
               <MonsterCard
                 key={monster.mobId}
@@ -241,7 +241,7 @@ export function AllItemsView({
       {/* 物品區塊 */}
       {shouldShowItems && displayedItems.length > 0 && (
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto mt-6 sm:mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 mx-auto mt-6 sm:mt-8">
             {displayedItems.map((item) => (
               <ItemCard
                 key={item.itemId}
