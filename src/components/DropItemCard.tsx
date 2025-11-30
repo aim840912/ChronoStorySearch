@@ -104,10 +104,10 @@ export function DropItemCard({
           e.stopPropagation()
           onToggleFavorite(drop.itemId, displayItemName)
         }}
-        className={`absolute top-3 right-3 p-2 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 ${
+        className={`absolute top-3 right-3 p-2 transition-all duration-200 hover:scale-110 active:scale-95 ${
           isFavorite
-            ? 'bg-red-500 hover:bg-red-600 text-white'
-            : 'bg-white dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-400 dark:text-gray-500 border border-gray-300 dark:border-gray-600'
+            ? 'text-red-500 hover:text-red-600'
+            : 'text-gray-400 hover:text-red-400'
         }`}
         aria-label={isFavorite ? t('card.unfavorite') : t('card.favorite')}
       >
