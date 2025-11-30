@@ -138,8 +138,8 @@ export default function Home() {
     setIsAdvancedFilterExpanded,
   })
 
-  // Hash 導航 Hook - 處理分享連結
-  const { handleShare } = useHashNavigation({
+  // Hash 導航 Hook - 處理 URL hash 連結
+  useHashNavigation({
     allDrops,
     language,
     openMonsterModal: modals.openMonsterModal,
@@ -342,7 +342,6 @@ export default function Home() {
           focusedIndex={search.focusedIndex}
           onFocusedIndexChange={search.setFocusedIndex}
           searchContainerRef={search.searchContainerRef}
-          onShare={handleShare}
           filterMode={filterMode}
           onFilterChange={setFilterMode}
           favoriteMonsterCount={favoriteCount}

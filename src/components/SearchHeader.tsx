@@ -23,7 +23,6 @@ interface SearchHeaderProps {
   focusedIndex: number
   onFocusedIndexChange: (index: number) => void
   searchContainerRef: React.RefObject<HTMLDivElement | null>
-  onShare: () => Promise<void>
 
   // 篩選相關
   filterMode: FilterMode
@@ -60,7 +59,6 @@ export const SearchHeader = memo(function SearchHeader({
   focusedIndex,
   onFocusedIndexChange,
   searchContainerRef,
-  onShare,
   filterMode,
   onFilterChange,
   favoriteMonsterCount,
@@ -111,7 +109,6 @@ export const SearchHeader = memo(function SearchHeader({
             focusedIndex={focusedIndex}
             onFocusedIndexChange={onFocusedIndexChange}
             searchContainerRef={searchContainerRef}
-            onShare={onShare}
             filterMode={filterMode}
             onFilterChange={onFilterChange}
             favoriteMonsterCount={favoriteMonsterCount}
