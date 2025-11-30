@@ -277,11 +277,7 @@ export function calculatePagination(
  * ```ts
  * const { searchParams } = new URL(request.url)
  * const { page, limit, offset } = parsePaginationParams(searchParams)
- *
- * const { data, count } = await supabase
- *   .from('listings')
- *   .select('*', { count: 'exact' })
- *   .range(offset, offset + limit - 1)
+ * // Use page, limit, offset for pagination queries
  * ```
  */
 export function parsePaginationParams(

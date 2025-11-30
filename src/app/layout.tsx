@@ -5,12 +5,9 @@ import { Toaster } from 'sonner';
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ThemeProvider } from "@/contexts/ThemeContext";
-import { AuthProvider } from "@/contexts/AuthContext";
 import { ImageFormatProvider } from "@/contexts/ImageFormatContext";
 import { SWRProvider } from "@/providers/SWRProvider";
-import { LoginModal } from "@/components/auth/LoginModal";
 import { MaintenanceBanner } from "@/components/common/MaintenanceBanner";
-import { LoginUserBanner } from "@/components/common/LoginUserBanner";
 import { CookieConsentBanner } from "@/components/common/CookieConsentBanner";
 import Footer from "@/components/common/Footer";
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
@@ -50,22 +47,18 @@ export default function RootLayout({
       >
         <Toaster position="top-center" richColors />
         <SWRProvider>
-          <AuthProvider>
-            <ThemeProvider>
-              <LanguageProvider>
-                <ImageFormatProvider>
-                  <>
-                    <MaintenanceBanner key="maintenance-banner" />
-                    <LoginUserBanner key="login-user-banner" />
-                    <div key="page-content">{children}</div>
-                    <LoginModal key="login-modal" />
-                    <CookieConsentBanner key="cookie-consent-banner" />
-                    <Footer key="footer" />
-                  </>
-                </ImageFormatProvider>
-              </LanguageProvider>
-            </ThemeProvider>
-          </AuthProvider>
+          <ThemeProvider>
+            <LanguageProvider>
+              <ImageFormatProvider>
+                <>
+                  <MaintenanceBanner key="maintenance-banner" />
+                  <div key="page-content">{children}</div>
+                  <CookieConsentBanner key="cookie-consent-banner" />
+                  <Footer key="footer" />
+                </>
+              </ImageFormatProvider>
+            </LanguageProvider>
+          </ThemeProvider>
         </SWRProvider>
       </body>
     </html>
