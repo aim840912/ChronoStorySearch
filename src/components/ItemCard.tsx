@@ -72,10 +72,10 @@ export const ItemCard = memo(function ItemCard({
             e.stopPropagation()
             onToggleFavorite(itemId, displayItemName)
           }}
-          className={`p-2 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 ${
+          className={`p-2 transition-all duration-200 hover:scale-110 active:scale-95 ${
             isFavorite
-              ? 'bg-red-500 hover:bg-red-600 text-white'
-              : 'bg-white dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-400 dark:text-gray-500 border border-gray-300 dark:border-gray-600'
+              ? 'text-red-500 hover:text-red-600'
+              : 'text-gray-400 hover:text-red-400'
           }`}
           aria-label={isFavorite ? t('card.unfavorite') : t('card.favorite')}
         >
@@ -106,7 +106,7 @@ export const ItemCard = memo(function ItemCard({
             loading="lazy"
           />
         </div>
-        <div className="flex-1 pr-28">
+        <div className="flex-1">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
             {displayItemName}
           </h3>
