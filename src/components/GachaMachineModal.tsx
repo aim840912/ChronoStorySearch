@@ -28,7 +28,6 @@ interface GachaMachineModalProps {
   onItemClick?: (itemId: number, itemName: string) => void
   hasPreviousModal?: boolean
   onGoBack?: () => void
-  onSwitchToEnhance?: (equipmentId?: number) => void
 }
 
 export function GachaMachineModal({
@@ -38,7 +37,6 @@ export function GachaMachineModal({
   onItemClick,
   hasPreviousModal,
   onGoBack,
-  onSwitchToEnhance
 }: GachaMachineModalProps) {
   const { language, t } = useLanguage()
   const toast = useToast()
@@ -48,7 +46,6 @@ export function GachaMachineModal({
   const gacha = useGachaMachine({
     isOpen,
     initialMachineId,
-    onSwitchToEnhance,
   })
 
   // 分享功能
@@ -178,7 +175,6 @@ export function GachaMachineModal({
           isOpen={gacha.isDetailsModalOpen}
           onClose={gacha.closeDetailsModal}
           equipment={gacha.selectedEquipment}
-          onSave={gacha.saveEquipmentForEnhance}
         />
       )}
     </BaseModal>

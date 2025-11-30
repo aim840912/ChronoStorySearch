@@ -11,7 +11,6 @@
  */
 
 import { useState, useEffect, useMemo, useCallback } from 'react'
-import { toast as sonnerToast } from 'sonner'
 import type { GachaMachine, GachaItem, GachaResult, EnhancedGachaItem } from '@/types'
 import { clientLogger } from '@/lib/logger'
 import { weightedRandomDraw } from '@/lib/gacha-utils'
@@ -57,7 +56,6 @@ function normalizeGachaMachine(rawData: EnhancedGachaMachineRaw): GachaMachine {
 interface UseGachaMachineParams {
   isOpen: boolean
   initialMachineId?: number
-  onSwitchToEnhance?: (equipmentId?: number) => void
 }
 
 interface UseGachaMachineReturn {
@@ -92,13 +90,11 @@ interface UseGachaMachineReturn {
   isDetailsModalOpen: boolean
   handleShowDetails: (item: GachaResult) => void
   closeDetailsModal: () => void
-  saveEquipmentForEnhance: (item: GachaResult) => void
 }
 
 export function useGachaMachine({
   isOpen,
   initialMachineId,
-  onSwitchToEnhance,
 }: UseGachaMachineParams): UseGachaMachineReturn {
   const MAX_DRAWS = 100
 
@@ -181,56 +177,6 @@ export function useGachaMachine({
       }
     }
   }, [isOpen, initialMachineId, machines, selectedMachine])
-
-  // 儲存裝備
-  const saveEquipmentForEnhance = useCallback((item: GachaResult) => {
-    if (!item.equipment) {
-      sonnerToast.error('此物品不是裝備')
-      return
-    }
-
-    try {
-      const saved = localStorage.getItem('gacha_equipment_results')
-      const existing: GachaResult[] = saved ? JSON.parse(saved) : []
-
-      if (existing.length >= 10) {
-        sonnerToast.error('儲存空間已滿（10/10）', {
-          description: '請前往強化工坊刪除不需要的裝備',
-          duration: 5000,
-          action: onSwitchToEnhance ? {
-            label: '前往強化',
-            onClick: () => onSwitchToEnhance()
-          } : undefined
-        })
-        return
-      }
-
-      const isDuplicate = existing.some((eq: GachaResult) => eq.drawId === item.drawId)
-      if (isDuplicate) {
-        sonnerToast.info('此裝備已儲存過了')
-        return
-      }
-
-      const newEquipment: GachaResult = {
-        ...item,
-        savedAt: Date.now()
-      }
-      existing.unshift(newEquipment)
-      localStorage.setItem('gacha_equipment_results', JSON.stringify(existing))
-
-      sonnerToast.success('裝備已儲存！', {
-        description: `已儲存 ${existing.length}/10`,
-        action: onSwitchToEnhance ? {
-          label: '前往強化',
-          onClick: () => onSwitchToEnhance(item.itemId)
-        } : undefined,
-        duration: 5000
-      })
-    } catch (error) {
-      console.error('Failed to save equipment:', error)
-      sonnerToast.error('儲存裝備失敗')
-    }
-  }, [onSwitchToEnhance])
 
   // 顯示詳情
   const handleShowDetails = useCallback((item: GachaResult) => {
@@ -370,6 +316,5 @@ export function useGachaMachine({
     isDetailsModalOpen,
     handleShowDetails,
     closeDetailsModal,
-    saveEquipmentForEnhance,
   }
 }

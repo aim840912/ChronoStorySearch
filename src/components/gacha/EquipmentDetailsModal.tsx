@@ -10,18 +10,16 @@ interface EquipmentDetailsModalProps {
   isOpen: boolean
   onClose: () => void
   equipment: GachaResult
-  onSave: (equipment: GachaResult) => void
 }
 
 /**
  * 裝備詳細資訊 Modal
- * 顯示裝備完整屬性（含隨機屬性）並提供儲存按鈕
+ * 顯示裝備完整屬性（含隨機屬性）
  */
 export function EquipmentDetailsModal({
   isOpen,
   onClose,
   equipment,
-  onSave
 }: EquipmentDetailsModalProps) {
   const { t, language } = useLanguage()
 
@@ -56,12 +54,6 @@ export function EquipmentDetailsModal({
     return statsWithRandom
   }, [equipment])
 
-  // 處理儲存
-  const handleSave = () => {
-    onSave(equipment)
-    onClose()
-  }
-
   // 如果不是裝備類物品，不顯示 Modal
   if (!equipment.equipment || !statsWithRandom) {
     return null
@@ -91,21 +83,12 @@ export function EquipmentDetailsModal({
         </div>
 
         {/* 按鈕區 */}
-        <div className="flex gap-3">
+        <div className="flex">
           <button
             onClick={onClose}
-            className="flex-1 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+            className="flex-1 px-4 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg transition-colors"
           >
-            {t('common.cancel')}
-          </button>
-          <button
-            onClick={handleSave}
-            className="flex-1 px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
-            </svg>
-            <span>{t('gacha.saveForEnhance')}</span>
+            {t('common.close')}
           </button>
         </div>
       </div>

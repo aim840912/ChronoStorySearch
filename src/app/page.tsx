@@ -15,12 +15,10 @@ import { useSearchLogic } from '@/hooks/useSearchLogic'
 import { useFilterLogic } from '@/hooks/useFilterLogic'
 import { useInfiniteScroll } from '@/hooks/useInfiniteScroll'
 import { useScrollBehavior } from '@/hooks/useScrollBehavior'
-import { useEnhanceModal } from '@/hooks/useEnhanceModal'
 import { useHashNavigation } from '@/hooks/useHashNavigation'
 import { SearchHeader } from '@/components/SearchHeader'
 import { ContentDisplay } from '@/components/ContentDisplay'
 import { ModalManager } from '@/components/ModalManager'
-import { EnhanceWorkshopModal } from '@/components/EnhanceWorkshopModal'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
 import { trackEvent } from '@/lib/analytics/ga4'
@@ -138,12 +136,6 @@ export default function Home() {
   const { showBackToTop, scrollToTop } = useScrollBehavior({
     isAdvancedFilterExpanded,
     setIsAdvancedFilterExpanded,
-  })
-
-  // 強化 Modal Hook - 管理強化工作坊的開關和導航
-  const enhanceModal = useEnhanceModal({
-    closeGachaModal: modals.closeGachaModal,
-    openGachaModal: modals.openGachaModal,
   })
 
   // Hash 導航 Hook - 處理分享連結
@@ -447,17 +439,6 @@ export default function Home() {
         toastIsVisible={toast.isVisible}
         toastType={toast.type}
         hideToast={toast.hideToast}
-        onSwitchToEnhance={enhanceModal.switchFromGacha}
-        onOpenEnhance={enhanceModal.open}
-      />
-
-      {/* 強化 Modal */}
-      <EnhanceWorkshopModal
-        isOpen={enhanceModal.isOpen}
-        onClose={enhanceModal.close}
-        hasPreviousModal={enhanceModal.config.hasPreviousModal}
-        onGoBack={enhanceModal.goBackToGacha}
-        preSelectedEquipmentId={enhanceModal.config.preSelectedEquipmentId}
       />
     </div>
   )
