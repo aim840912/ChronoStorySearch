@@ -381,18 +381,10 @@ export function ItemModal({
             {/* 轉蛋機來源區塊 */}
             {itemGachaSources.length > 0 && (
               <div className="mb-8">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 flex items-center gap-2 hidden lg:flex">
-                  <svg className="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden lg:block">
                   {t('item.gachaSources')}
                 </h3>
-                <div className="space-y-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
                   {itemGachaSources.map((source) => {
                     const displayMachineName = language === 'zh-TW' && source.chineseMachineName
                       ? source.chineseMachineName
@@ -402,25 +394,18 @@ export function ItemModal({
                       <div
                         key={source.machineId}
                         onClick={() => onGachaMachineClick(source.machineId)}
-                        className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-lg p-4 border border-purple-200 dark:border-purple-700 cursor-pointer hover:shadow-lg hover:scale-[1.02] transition-all duration-200 active:scale-[0.98]"
+                        className="bg-purple-50 dark:bg-purple-900/20 rounded-lg shadow-lg hover:shadow-xl p-5 border border-purple-200 dark:border-purple-700 cursor-pointer hover:scale-[1.02] transition-all duration-300 active:scale-[0.98]"
                       >
                         <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-3">
-                            <div className="bg-purple-500 text-white rounded-full p-3">
-                              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
-                              </svg>
-                            </div>
-                            <div>
-                              <p className="font-semibold text-gray-900 dark:text-white">
-                                {displayMachineName}
+                          <div>
+                            <p className="font-semibold text-gray-900 dark:text-white">
+                              {displayMachineName}
+                            </p>
+                            {isDev && (
+                              <p className="text-xs text-gray-500 dark:text-gray-400">
+                                {t('modal.machineId')}: {source.machineId}
                               </p>
-                              {isDev && (
-                                <p className="text-xs text-gray-500 dark:text-gray-400">
-                                  {t('modal.machineId')}: {source.machineId}
-                                </p>
-                              )}
-                            </div>
+                            )}
                           </div>
                           <div className="bg-purple-100 dark:bg-purple-800 px-3 py-1 rounded-full">
                             <span className="text-sm font-bold text-purple-700 dark:text-purple-200">

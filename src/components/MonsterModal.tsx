@@ -8,7 +8,6 @@ import { MonsterStatsCard } from './MonsterStatsCard'
 import { MonsterLocationsCard } from './MonsterLocationsCard'
 import { Toast } from './Toast'
 import { BaseModal } from './common/BaseModal'
-import { ItemAttributesTooltip } from './ItemAttributesTooltip'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
@@ -72,11 +71,6 @@ export function MonsterModal({
 
   // 視圖模式切換狀態（'grid' = 卡片視圖, 'list' = 列表視圖）
   const [viewMode, setViewMode] = useLocalStorage<'grid' | 'list'>('monster-drops-view', 'grid')
-
-  // Tooltip 狀態（hover 物品時顯示）
-  const [hoveredItemId, setHoveredItemId] = useState<number | null>(null)
-  const [hoveredItemName, setHoveredItemName] = useState<string>('')
-  const [hoveredItemRect, setHoveredItemRect] = useState<DOMRect | null>(null)
 
   // 懶加載怪物資訊資料
   const {
@@ -174,19 +168,11 @@ export function MonsterModal({
     }
   }, [isOpen, loadMobInfo, loadMobMaps])
 
-  // Hover 物品事件處理
-  const handleItemHover = (itemId: number | null, itemName: string, rect: DOMRect | null) => {
-    setHoveredItemId(itemId)
-    setHoveredItemName(itemName)
-    setHoveredItemRect(rect)
-  }
-
   if (!monsterId) return null
 
   const monsterIconUrl = getMonsterImageUrl(monsterId, { format })
 
   return (
-    <>
     <BaseModal
       isOpen={isOpen}
       onClose={onClose}
@@ -273,7 +259,7 @@ export function MonsterModal({
         </div>
 
         {/* Modal Content - 左右分欄佈局（< 1120px 時上下堆疊） */}
-        <div className="p-3 sm:p-6 flex flex-col min-[1120px]:flex-row gap-3 sm:gap-6 flex-1 min-h-0 overflow-y-auto min-[1120px]:overflow-hidden scrollbar-hide">
+        <div className="p-3 sm:p-6 flex flex-col min-[1120px]:flex-row min-[1120px]:items-start gap-3 sm:gap-6 flex-1 min-h-0 overflow-y-auto min-[1120px]:overflow-hidden scrollbar-hide">
           {/* 左側：怪物屬性（>= 1120px 顯示 / < 1120px 根據 Tab 顯示） */}
           <div className={`min-[1120px]:w-[320px] min-[1120px]:flex-shrink-0 space-y-4 min-[1120px]:h-full min-[1120px]:overflow-y-auto scrollbar-hide ${
             mobileTab === 'drops' ? 'hidden min-[1120px]:block' : ''
@@ -368,18 +354,37 @@ export function MonsterModal({
             </div>
             {/* 根據視圖模式渲染不同的佈局 */}
             {viewMode === 'grid' ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
-                {monsterDrops.map((drop, index) => (
-                  <DropItemCard
-                    key={`${drop.itemId}-${index}`}
-                    drop={drop}
-                    itemAttributesMap={itemAttributesMap}
-                    isFavorite={isItemFavorite(drop.itemId)}
-                    onToggleFavorite={onToggleItemFavorite}
-                    onItemClick={onItemClick}
-                    onItemHover={handleItemHover}
-                  />
-                ))}
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 p-1 items-start">
+                {/* 左欄 */}
+                <div className="flex-1 space-y-3 sm:space-y-4 w-full sm:w-auto">
+                  {monsterDrops
+                    .filter((_, index) => index % 2 === 0)
+                    .map((drop) => (
+                      <DropItemCard
+                        key={drop.itemId}
+                        drop={drop}
+                        itemAttributesMap={itemAttributesMap}
+                        isFavorite={isItemFavorite(drop.itemId)}
+                        onToggleFavorite={onToggleItemFavorite}
+                        onItemClick={onItemClick}
+                      />
+                    ))}
+                </div>
+                {/* 右欄 */}
+                <div className="flex-1 space-y-3 sm:space-y-4 w-full sm:w-auto">
+                  {monsterDrops
+                    .filter((_, index) => index % 2 === 1)
+                    .map((drop) => (
+                      <DropItemCard
+                        key={drop.itemId}
+                        drop={drop}
+                        itemAttributesMap={itemAttributesMap}
+                        isFavorite={isItemFavorite(drop.itemId)}
+                        onToggleFavorite={onToggleItemFavorite}
+                        onItemClick={onItemClick}
+                      />
+                    ))}
+                </div>
               </div>
             ) : (
               <DropItemList
@@ -388,7 +393,6 @@ export function MonsterModal({
                 isItemFavorite={isItemFavorite}
                 onToggleFavorite={onToggleItemFavorite}
                 onItemClick={onItemClick}
-                onItemHover={handleItemHover}
               />
             )}
           </div>
@@ -404,16 +408,5 @@ export function MonsterModal({
         type={toast.type}
       />
     </BaseModal>
-
-    {/* Hover 物品提示框（桌面版） */}
-    <ItemAttributesTooltip
-      isOpen={hoveredItemId !== null}
-      itemId={hoveredItemId}
-      itemName={hoveredItemName}
-      triggerRect={hoveredItemRect}
-      allDrops={allDrops}
-      itemAttributesMap={itemAttributesMap}
-    />
-    </>
   )
 }
