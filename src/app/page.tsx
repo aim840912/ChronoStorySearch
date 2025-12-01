@@ -177,20 +177,24 @@ export default function Home() {
 
   // 延遲載入轉蛋機 - 當使用者開始搜尋或選擇轉蛋物品類型時才載入
   useEffect(() => {
-    // 當有搜尋詞、選擇了轉蛋/物品類型、轉蛋 Modal 開啟、收藏物品模式、或等級過濾時，載入轉蛋機資料
+    // 檢查瀏覽歷史中是否有物品記錄（需要轉蛋資料來顯示「只有轉蛋」的物品）
+    const hasItemInHistory = viewHistory.history.some(item => item.type === 'item')
+
+    // 當有搜尋詞、選擇了轉蛋/物品類型、轉蛋 Modal 開啟、收藏物品模式、瀏覽歷史有物品、或等級過濾時，載入轉蛋機資料
     const needsGachaData =
       debouncedSearchTerm.trim() !== '' ||
       searchType === 'gacha' ||
       searchType === 'item' ||
       modals.isGachaModalOpen ||
       filterMode === 'favorite-items' ||
+      hasItemInHistory ||
       (advancedFilter.enabled && advancedFilter.itemCategories.length > 0) ||
       (advancedFilter.enabled && (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null))
 
     if (needsGachaData) {
       loadGachaMachines()
     }
-  }, [debouncedSearchTerm, searchType, advancedFilter.enabled, advancedFilter.itemCategories, advancedFilter.levelRange, loadGachaMachines, modals.isGachaModalOpen, filterMode])
+  }, [debouncedSearchTerm, searchType, advancedFilter.enabled, advancedFilter.itemCategories, advancedFilter.levelRange, loadGachaMachines, modals.isGachaModalOpen, filterMode, viewHistory.history])
 
   // 監聽瀏覽器返回鍵（popstate 事件）
   useEffect(() => {
@@ -382,6 +386,7 @@ export default function Home() {
           hasAnyData={uniqueAllMonsters.length > 0 || uniqueAllItems.length > 0}
           viewHistory={viewHistory.history}
           allDrops={allDrops}
+          gachaMachines={gachaMachines}
         />
       </div>
 

@@ -1,7 +1,7 @@
 'use client'
 
 import { memo } from 'react'
-import type { FilterMode, ItemAttributesEssential, ViewHistoryItem, DropsEssential } from '@/types'
+import type { FilterMode, ItemAttributesEssential, ViewHistoryItem, DropsEssential, GachaMachine } from '@/types'
 import { FavoriteMonstersList } from '@/components/lists/FavoriteMonstersList'
 import { FavoriteItemsList } from '@/components/lists/FavoriteItemsList'
 import { AllItemsView } from '@/components/lists/AllItemsView'
@@ -71,6 +71,7 @@ interface ContentDisplayProps {
   // 瀏覽歷史（用於首頁顯示）
   viewHistory: ViewHistoryItem[]
   allDrops: DropsEssential[]
+  gachaMachines: GachaMachine[]
 }
 
 /**
@@ -106,6 +107,7 @@ export const ContentDisplay = memo(function ContentDisplay({
   hasAnyData,
   viewHistory,
   allDrops,
+  gachaMachines,
 }: ContentDisplayProps) {
   const { t } = useLanguage()
 
@@ -161,6 +163,7 @@ export const ContentDisplay = memo(function ContentDisplay({
           onToggleItemFavorite={onToggleItemFavorite}
           viewHistory={viewHistory}
           allDrops={allDrops}
+          gachaMachines={gachaMachines}
           t={t}
         />
       )}

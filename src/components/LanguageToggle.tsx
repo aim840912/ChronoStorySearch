@@ -18,11 +18,12 @@ export function LanguageToggle() {
   return (
     <button
       onClick={toggleLanguage}
-      className="relative p-3 sm:px-5 sm:py-3 rounded-full sm:rounded-lg font-bold transition-all duration-200 flex items-center gap-2 bg-pink-500 hover:bg-pink-600 dark:bg-pink-600 dark:hover:bg-pink-700 text-white shadow-lg hover:shadow-xl animate-pulse-scale hover:!scale-110 hover:!animate-none"
+      className="p-1.5 sm:p-2 rounded-lg bg-white/60 dark:bg-gray-800/60 border border-gray-200/50 dark:border-gray-700/50 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-gray-500 dark:text-gray-400 flex items-center gap-1"
       aria-label="切換語言 / Switch Language"
+      title={t(`language.${language === 'zh-TW' ? 'zhTW' : 'en'}`)}
     >
       {/* 地球圖標 */}
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -30,8 +31,8 @@ export function LanguageToggle() {
           d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
         />
       </svg>
-      {/* 語言文字 */}
-      <span className="hidden sm:inline text-sm">{t(`language.${language === 'zh-TW' ? 'zhTW' : 'en'}`)}</span>
+      {/* 語言短標籤 */}
+      <span className="text-xs font-medium">{language === 'zh-TW' ? 'TW' : 'EN'}</span>
     </button>
   )
 }

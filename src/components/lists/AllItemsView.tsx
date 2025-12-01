@@ -1,6 +1,6 @@
 'use client'
 
-import type { ExtendedUniqueItem, ItemAttributesEssential, ViewHistoryItem, DropsEssential } from '@/types'
+import type { ExtendedUniqueItem, ItemAttributesEssential, ViewHistoryItem, DropsEssential, GachaMachine, GachaItem } from '@/types'
 import type { RefObject } from 'react'
 import { MonsterCard } from '@/components/MonsterCard'
 import { ItemCard } from '@/components/ItemCard'
@@ -56,6 +56,7 @@ interface AllItemsViewProps {
   // 瀏覽歷史（用於首頁顯示）
   viewHistory: ViewHistoryItem[]
   allDrops: DropsEssential[]
+  gachaMachines: GachaMachine[]
 
   // 翻譯函數
   t: (key: string) => string
@@ -86,6 +87,7 @@ export function AllItemsView({
   onToggleItemFavorite,
   viewHistory,
   allDrops,
+  gachaMachines,
   t,
 }: AllItemsViewProps) {
   // 沒有任何資料時顯示空狀態
@@ -128,20 +130,46 @@ export function AllItemsView({
             } else {
               // 從 allDrops 查找物品完整資料
               const itemData = allDrops.find(drop => drop.itemId === historyItem.id)
-              if (!itemData) return null // 找不到資料時跳過
+
+              // 如果在 allDrops 找不到，嘗試從轉蛋資料查找
+              let gachaItemData: GachaItem | undefined
+              if (!itemData) {
+                for (const machine of gachaMachines) {
+                  gachaItemData = machine.items.find(item => item.itemId === historyItem.id)
+                  if (gachaItemData) break
+                }
+              }
+
+              // 都找不到時跳過
+              if (!itemData && !gachaItemData) return null
+
+              // 根據資料來源選擇顯示內容
+              const displayItemId = itemData?.itemId ?? gachaItemData?.itemId
+              // 如果都沒有 itemId，跳過
+              if (!displayItemId) return null
+              // 轉蛋物品優先使用 name（英文），若無則使用 chineseName
+              const displayItemName = itemData?.itemName ?? gachaItemData?.name ?? gachaItemData?.chineseName ?? ''
+              const displayChineseName = itemData?.chineseItemName ?? gachaItemData?.chineseName ?? ''
+              const isFromGacha = !itemData && !!gachaItemData
+              // 取得等級：優先從 itemAttributesMap，fallback 到轉蛋資料
+              // 注意：轉蛋資料的 equipment.requirements 使用 camelCase (reqLevel)
+              const reqLevel = itemAttributesMap.get(displayItemId)?.req_level
+                ?? gachaItemData?.requiredStats?.level
+                ?? (gachaItemData?.equipment?.requirements as { reqLevel?: number | null } | undefined)?.reqLevel
+                ?? null
 
               return (
                 <ItemCard
                   key={`history-item-${historyItem.id}-${index}`}
-                  itemId={itemData.itemId}
-                  itemName={itemData.itemName}
-                  chineseItemName={itemData.chineseItemName}
+                  itemId={displayItemId}
+                  itemName={displayItemName}
+                  chineseItemName={displayChineseName}
                   monsterCount={1} // 瀏覽歷史不顯示 monsterCount，設為 1
                   onCardClick={onItemCardClick}
-                  isFavorite={isItemFavorite(itemData.itemId)}
+                  isFavorite={isItemFavorite(displayItemId)}
                   onToggleFavorite={onToggleItemFavorite}
-                  source={{ fromDrops: true, fromGacha: false }} // DropsEssential 來自掉落資料
-                  reqLevel={itemAttributesMap.get(itemData.itemId)?.req_level ?? null}
+                  source={{ fromDrops: !!itemData, fromGacha: isFromGacha }}
+                  reqLevel={reqLevel}
                   index={index}
                 />
               )

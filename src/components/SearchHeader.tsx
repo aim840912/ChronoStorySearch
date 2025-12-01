@@ -73,14 +73,14 @@ export const SearchHeader = memo(function SearchHeader({
   const { t } = useLanguage()
 
   return (
-    <div className="sticky top-0 z-40 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 backdrop-blur-sm pt-4 sm:pt-6 pb-3 sm:pb-4 shadow-md">
-      {/* 標題區域 */}
-      <div className="flex items-center justify-between mb-4 sm:mb-6 pt-2 px-2 sm:px-4">
-        <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
+    <div className="sticky top-0 z-40 bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl border-b border-gray-200/50 dark:border-gray-700/50 shadow-lg shadow-gray-200/20 dark:shadow-gray-900/30 pt-2 sm:pt-3 pb-2 sm:pb-3">
+      {/* 標題區域 - 緊湊設計 */}
+      <div className="flex items-center justify-between mb-2 px-2 sm:px-4 max-w-7xl mx-auto">
+        <h1 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
           <img
             src="/images/chrono.png"
             alt="ChronoStory Logo"
-            className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex-shrink-0"
+            className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0"
           />
           <span className="truncate">{t('app.title')}</span>
         </h1>
@@ -92,11 +92,9 @@ export const SearchHeader = memo(function SearchHeader({
         </div>
       </div>
 
-      {/* 搜尋列與篩選按鈕容器 */}
-      <div className="flex flex-col">
-        {/* 搜尋列 */}
-        <div className="order-2 md:order-1">
-          <SearchBar
+      {/* 搜尋列 - 視覺焦點 */}
+      <div>
+        <SearchBar
             searchTerm={searchTerm}
             onSearchChange={onSearchChange}
             searchType={searchType}
@@ -119,8 +117,6 @@ export const SearchHeader = memo(function SearchHeader({
             advancedFilter={advancedFilter}
             onResetAdvancedFilter={onResetAdvancedFilter}
           />
-        </div>
-
       </div>
 
       {/* 進階篩選面板 */}
