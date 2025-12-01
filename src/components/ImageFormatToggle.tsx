@@ -24,7 +24,7 @@ export function ImageFormatToggle() {
     if (format === 'png') {
       // 圖片框架圖標
       return (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -36,14 +36,14 @@ export function ImageFormatToggle() {
     } else if (format === 'stand') {
       // GIF 文字圖標
       return (
-        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
           <text x="2" y="17" fontSize="12" fontWeight="bold">GIF</text>
         </svg>
       )
     } else {
       // X 標記圖標（死亡）
       return (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -58,21 +58,11 @@ export function ImageFormatToggle() {
   return (
     <button
       onClick={toggleFormat}
-      className="p-2 sm:px-3 sm:py-1.5 rounded-full sm:rounded-lg
-                 bg-gray-100 dark:bg-gray-800
-                 hover:bg-gray-200 dark:hover:bg-gray-700
-                 border border-gray-300 dark:border-gray-600
-                 transition-colors duration-200
-                 text-sm font-medium
-                 text-gray-700 dark:text-gray-300
-                 cursor-pointer
-                 focus:outline-none focus:ring-2 focus:ring-blue-500
-                 active:scale-95
-                 flex items-center gap-2"
-      title={t('imageFormat.toggle')}
+      className="p-1.5 sm:p-2 rounded-lg bg-white/60 dark:bg-gray-800/60 border border-gray-200/50 dark:border-gray-700/50 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-gray-500 dark:text-gray-400 flex items-center gap-1.5"
+      title={formatLabels[format]}
+      aria-label={t('imageFormat.toggle')}
     >
       {renderIcon()}
-      <span className="hidden sm:inline">{formatLabels[format]}</span>
     </button>
   )
 }

@@ -55,40 +55,8 @@ export const ItemCard = memo(function ItemCard({
       onClick={() => onCardClick(itemId, displayItemName)}
       index={index}
     >
-      {/* 右上角按鈕群組 - 絕對定位 */}
-      <div className="absolute top-3 right-3 flex items-center gap-2">
-        {/* 轉蛋機圖示 */}
-        {source?.fromGacha && (
-          <div
-            className="p-2 rounded-full bg-purple-500 text-white"
-            title={t('card.gachaDrop')}
-          >
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <circle cx="12" cy="10" r="7" strokeWidth={2} />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M5 10h14"
-              />
-              <rect x="8" y="16" width="8" height="5" rx="1" strokeWidth={2} />
-              <circle cx="10" cy="8" r="1.5" strokeWidth={1.5} />
-              <circle cx="14" cy="12" r="1.5" strokeWidth={1.5} />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M18 10l2 2"
-              />
-              <rect x="10" y="18" width="4" height="1.5" rx="0.5" strokeWidth={1} />
-            </svg>
-          </div>
-        )}
+      {/* 右上角 - 收藏按鈕 */}
+      <div className="absolute top-3 right-3">
         <FavoriteButton
           isFavorite={isFavorite}
           onToggle={() => onToggleFavorite(itemId, displayItemName)}
@@ -96,10 +64,20 @@ export const ItemCard = memo(function ItemCard({
         />
       </div>
 
-      {/* 等級標籤 - 絕對定位在左上角 */}
-      {reqLevel !== null && reqLevel !== undefined && (
-        <div className="absolute top-3 left-5">
-          <TypeBadge variant="item" level={reqLevel} />
+      {/* 左上角標籤群組 - 等級 + 轉蛋 */}
+      {((reqLevel !== null && reqLevel !== undefined) || source?.fromGacha) && (
+        <div className="absolute top-3 left-5 flex items-center gap-2">
+          {reqLevel !== null && reqLevel !== undefined && (
+            <TypeBadge variant="item" level={reqLevel} />
+          )}
+          {source?.fromGacha && (
+            <span
+              className="inline-flex items-center px-2.5 py-1 rounded-full bg-purple-500 text-white text-xs font-bold"
+              title={t('card.gachaDrop')}
+            >
+              {t('search.type.gacha')}
+            </span>
+          )}
         </div>
       )}
 
