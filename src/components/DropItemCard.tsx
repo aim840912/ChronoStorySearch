@@ -1,10 +1,12 @@
 'use client'
 
-import { useRef } from 'react'
-import type { DropItem, ItemAttributesEssential } from '@/types'
+import { useState, useMemo } from 'react'
+import type { DropItem, ItemAttributesEssential, ItemAttributes } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
 import { getItemImageUrl } from '@/lib/image-utils'
+import { useLazyItemDetailed } from '@/hooks/useLazyData'
+import { ItemAttributesCard } from './ItemAttributesCard'
 
 interface DropItemCardProps {
   drop: DropItem
@@ -12,7 +14,6 @@ interface DropItemCardProps {
   isFavorite: boolean
   onToggleFavorite: (itemId: number, itemName: string) => void
   onItemClick: (itemId: number, itemName: string) => void
-  onItemHover?: (itemId: number | null, itemName: string, rect: DOMRect | null) => void
 }
 
 /**
@@ -25,12 +26,10 @@ export function DropItemCard({
   isFavorite,
   onToggleFavorite,
   onItemClick,
-  onItemHover,
 }: DropItemCardProps) {
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
-  const cardRef = useRef<HTMLDivElement>(null)
-  const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null)
+  const [isExpanded, setIsExpanded] = useState(false)
   const chancePercent = (drop.chance * 100).toFixed(4)
   const qtyRange =
     drop.minQty === drop.maxQty ? `${drop.minQty}` : `${drop.minQty}-${drop.maxQty}`
@@ -42,62 +41,69 @@ export function DropItemCard({
   const itemIconUrl = getItemImageUrl(drop.itemId)
 
   // 根據物品類型決定顯示內容
-  const itemAttributes = itemAttributesMap.get(drop.itemId)
-  const itemType = itemAttributes?.type
+  const essentialData = itemAttributesMap.get(drop.itemId)
+  const itemType = essentialData?.type
 
   let label = t('card.quantity')
   let value: string | number = qtyRange
 
-  if (itemType === 'Eqp' && itemAttributes?.req_level !== undefined) {
+  if (itemType === 'Eqp' && essentialData?.req_level !== undefined) {
     // 裝備：type 是 'Eqp'，顯示等級（從 Essential 的 req_level 讀取）
     label = t('card.level')
-    const reqLevel = itemAttributes.req_level
+    const reqLevel = essentialData.req_level
     value = reqLevel ? `Lv.${reqLevel}` : '-'
   }
-  // 注意：藥水效果需要 Detailed 資料，Essential 中不包含，所以此處不顯示藥水效果
-  // 其他類型（包含卷軸）保持顯示數量
 
-  // Hover 事件處理
-  const handleMouseEnter = () => {
-    if (!onItemHover) return
+  // 懶加載物品詳細資料（只在展開時載入）
+  const shouldLoadDetailed = isExpanded && essentialData !== undefined
+  const { data: itemDetailed, isLoading: isLoadingDetailed } = useLazyItemDetailed(
+    shouldLoadDetailed ? drop.itemId : null
+  )
 
-    // 清除之前的延遲計時器
-    if (hoverTimeoutRef.current) {
-      clearTimeout(hoverTimeoutRef.current)
+  // 組合 Essential + Detailed 資料
+  const combinedAttributes = useMemo<ItemAttributes | null>(() => {
+    if (!essentialData) return null
+    if (!itemDetailed) return null
+
+    return {
+      item_id: essentialData.item_id,
+      item_name: essentialData.item_name,
+      type: essentialData.type,
+      sub_type: essentialData.sub_type,
+      item_type_id: itemDetailed.item_type_id,
+      sale_price: itemDetailed.sale_price,
+      max_stack_count: itemDetailed.max_stack_count,
+      untradeable: itemDetailed.untradeable,
+      item_description: itemDetailed.item_description,
+      equipment: itemDetailed.equipment,
+      scroll: itemDetailed.scroll,
+      potion: itemDetailed.potion,
     }
-
-    // 延遲 300ms 後觸發（避免意外觸發）
-    hoverTimeoutRef.current = setTimeout(() => {
-      if (cardRef.current) {
-        const rect = cardRef.current.getBoundingClientRect()
-        onItemHover(drop.itemId, displayItemName, rect)
-      }
-    }, 300)
-  }
-
-  const handleMouseLeave = () => {
-    if (!onItemHover) return
-
-    // 清除延遲計時器
-    if (hoverTimeoutRef.current) {
-      clearTimeout(hoverTimeoutRef.current)
-      hoverTimeoutRef.current = null
-    }
-
-    // 延遲 200ms 後關閉（給用戶時間移動滑鼠）
-    hoverTimeoutRef.current = setTimeout(() => {
-      onItemHover(null, '', null)
-    }, 200)
-  }
+  }, [essentialData, itemDetailed])
 
   return (
     <div
-      ref={cardRef}
       onClick={() => onItemClick(drop.itemId, displayItemName)}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative"
+      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 cursor-pointer active:scale-[0.98] relative"
     >
+      {/* 展開/收合按鈕 - 愛心左邊 */}
+      <button
+        onClick={(e) => {
+          e.stopPropagation()
+          setIsExpanded(!isExpanded)
+        }}
+        className="absolute top-3 right-12 p-2 transition-all duration-200 hover:scale-110 active:scale-95 text-gray-400 hover:text-blue-500"
+        aria-label={isExpanded ? t('card.collapse') : t('card.expand')}
+      >
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          {isExpanded ? (
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+          ) : (
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          )}
+        </svg>
+      </button>
+
       {/* 最愛按鈕 - 右上角 */}
       <button
         onClick={(e) => {
@@ -169,6 +175,24 @@ export function DropItemCard({
               {value}
             </span>
           </div>
+        </div>
+      </div>
+
+      {/* 可延展的物品屬性區塊 */}
+      <div
+        className={`
+          overflow-hidden transition-all duration-300 ease-in-out
+          ${isExpanded ? 'max-h-[800px] opacity-100 mt-4' : 'max-h-0 opacity-0'}
+        `}
+      >
+        <div className="border-t border-gray-200 dark:border-gray-700 pt-4">
+          {isLoadingDetailed && !combinedAttributes ? (
+            <div className="flex justify-center py-6">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-green-600 dark:border-green-400" />
+            </div>
+          ) : (
+            <ItemAttributesCard attributes={combinedAttributes} />
+          )}
         </div>
       </div>
     </div>
