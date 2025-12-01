@@ -90,3 +90,18 @@ body::-webkit-scrollbar {
   image-rendering: crisp-edges;
   object-fit: scale-down;
 }
+
+/* ========================================
+   Backdrop Filter 降級方案
+   ======================================== */
+
+/* 不支援 backdrop-filter 的瀏覽器降級為實心背景 */
+@supports not (backdrop-filter: blur(20px)) {
+  .backdrop-blur-xl {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+  }
+
+  .dark .backdrop-blur-xl {
+    background-color: rgba(31, 41, 55, 0.95) !important;
+  }
+}

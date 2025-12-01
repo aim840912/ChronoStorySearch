@@ -122,6 +122,7 @@ export function AllItemsView({
                   isFavorite={isFavorite(monsterData.mobId)}
                   onToggleFavorite={onToggleFavorite}
                   level={mobLevelMap.get(monsterData.mobId) ?? null}
+                  index={index}
                 />
               )
             } else {
@@ -141,6 +142,7 @@ export function AllItemsView({
                   onToggleFavorite={onToggleItemFavorite}
                   source={{ fromDrops: true, fromGacha: false }} // DropsEssential 來自掉落資料
                   reqLevel={itemAttributesMap.get(itemData.itemId)?.req_level ?? null}
+                  index={index}
                 />
               )
             }
@@ -166,6 +168,7 @@ export function AllItemsView({
                   isFavorite={isFavorite(card.data.mobId)}
                   onToggleFavorite={onToggleFavorite}
                   level={mobLevelMap.get(card.data.mobId) ?? null}
+                  index={index}
                 />
               )
             } else {
@@ -181,6 +184,7 @@ export function AllItemsView({
                   onToggleFavorite={onToggleItemFavorite}
                   source={card.data.source}
                   reqLevel={itemAttributesMap.get(card.data.itemId)?.req_level ?? null}
+                  index={index}
                 />
               )
             }
@@ -197,7 +201,7 @@ export function AllItemsView({
       {shouldShowMonsters && displayedMonsters.length > 0 && (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 mx-auto mt-6 sm:mt-8">
-            {displayedMonsters.map((monster) => (
+            {displayedMonsters.map((monster, index) => (
               <MonsterCard
                 key={monster.mobId}
                 mobId={monster.mobId}
@@ -208,6 +212,7 @@ export function AllItemsView({
                 isFavorite={isFavorite(monster.mobId)}
                 onToggleFavorite={onToggleFavorite}
                 level={mobLevelMap.get(monster.mobId) ?? null}
+                index={index}
               />
             ))}
           </div>
@@ -242,7 +247,7 @@ export function AllItemsView({
       {shouldShowItems && displayedItems.length > 0 && (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 mx-auto mt-6 sm:mt-8">
-            {displayedItems.map((item) => (
+            {displayedItems.map((item, index) => (
               <ItemCard
                 key={item.itemId}
                 itemId={item.itemId}
@@ -254,6 +259,7 @@ export function AllItemsView({
                 onToggleFavorite={onToggleItemFavorite}
                 source={item.source}
                 reqLevel={itemAttributesMap.get(item.itemId)?.req_level ?? null}
+                index={index}
               />
             ))}
           </div>
