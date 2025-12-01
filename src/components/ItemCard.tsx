@@ -5,6 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
 import { getItemImageUrl } from '@/lib/image-utils'
 import type { ItemSource } from '@/types'
+import { BaseCard, CardImage, FavoriteButton, TypeBadge } from './cards'
 
 interface ItemCardProps {
   itemId: number
@@ -16,13 +17,18 @@ interface ItemCardProps {
   onToggleFavorite: (itemId: number, itemName: string) => void
   source?: ItemSource
   reqLevel?: number | null
+  index?: number // 用於 staggered 動畫
 }
 
 /**
- * 物品卡片元件（用於最愛物品模式）
- * 顯示物品基本資訊和掉落怪物數量
+ * 物品卡片元件
  *
- * 使用 React.memo 優化以避免不必要的重新渲染
+ * 特色：
+ * - 玻璃擬態效果（backdrop-blur）
+ * - Framer Motion 入場動畫
+ * - 藍色主題（hover 邊框、發光效果）
+ * - 轉蛋機來源標示
+ * - 使用 React.memo 優化效能
  */
 export const ItemCard = memo(function ItemCard({
   itemId,
@@ -34,97 +40,87 @@ export const ItemCard = memo(function ItemCard({
   onToggleFavorite,
   source,
   reqLevel,
+  index = 0,
 }: ItemCardProps) {
-  // monsterCount is part of props but not used in this component
   void monsterCount
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
 
-  // 獲取顯示名稱（支援中英文切換）
   const displayItemName = getItemDisplayName(itemName, chineseItemName, language)
-
   const itemIconUrl = getItemImageUrl(itemId)
 
   return (
-    <div
+    <BaseCard
+      variant="item"
       onClick={() => onCardClick(itemId, displayItemName)}
-      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 hover:border-blue-500 cursor-pointer hover:scale-[1.02] active:scale-[0.98] relative min-h-[140px]"
+      index={index}
     >
-      {/* 右上角按鈕群組 */}
+      {/* 右上角按鈕群組 - 絕對定位 */}
       <div className="absolute top-3 right-3 flex items-center gap-2">
-        {/* 轉蛋機圖示 - 只在來自轉蛋機時顯示 */}
+        {/* 轉蛋機圖示 */}
         {source?.fromGacha && (
-          <div className="p-2 rounded-full bg-purple-500 text-white" title={t('card.gachaDrop')}>
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <circle cx="12" cy="10" r="7" strokeWidth={2}/>
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10h14"/>
-              <rect x="8" y="16" width="8" height="5" rx="1" strokeWidth={2}/>
-              <circle cx="10" cy="8" r="1.5" strokeWidth={1.5}/>
-              <circle cx="14" cy="12" r="1.5" strokeWidth={1.5}/>
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 10l2 2"/>
-              <rect x="10" y="18" width="4" height="1.5" rx="0.5" strokeWidth={1}/>
+          <div
+            className="p-2 rounded-full bg-purple-500 text-white"
+            title={t('card.gachaDrop')}
+          >
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="12" cy="10" r="7" strokeWidth={2} />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 10h14"
+              />
+              <rect x="8" y="16" width="8" height="5" rx="1" strokeWidth={2} />
+              <circle cx="10" cy="8" r="1.5" strokeWidth={1.5} />
+              <circle cx="14" cy="12" r="1.5" strokeWidth={1.5} />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M18 10l2 2"
+              />
+              <rect x="10" y="18" width="4" height="1.5" rx="0.5" strokeWidth={1} />
             </svg>
           </div>
         )}
-        {/* 最愛按鈕 */}
-        <button
-          onClick={(e) => {
-            e.stopPropagation()
-            onToggleFavorite(itemId, displayItemName)
-          }}
-          className={`p-2 transition-all duration-200 hover:scale-110 active:scale-95 ${
-            isFavorite
-              ? 'text-red-500 hover:text-red-600'
-              : 'text-gray-400 hover:text-red-400'
-          }`}
-          aria-label={isFavorite ? t('card.unfavorite') : t('card.favorite')}
-        >
-          <svg
-            className="w-5 h-5"
-            fill={isFavorite ? 'currentColor' : 'none'}
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-            />
-          </svg>
-        </button>
+        <FavoriteButton
+          isFavorite={isFavorite}
+          onToggle={() => onToggleFavorite(itemId, displayItemName)}
+          ariaLabel={isFavorite ? t('card.unfavorite') : t('card.favorite')}
+        />
       </div>
 
-      {/* 物品資訊 */}
-      <div className="flex items-center gap-3">
-        {/* 固定尺寸容器，確保圖片不會撐開卡片高度 */}
-        <div className="w-24 h-24 flex items-center justify-center flex-shrink-0">
-          <img
-            src={itemIconUrl}
-            alt={displayItemName}
-            className="w-full h-full object-contain"
-            loading="lazy"
-          />
+      {/* 等級標籤 - 絕對定位在左上角 */}
+      {reqLevel !== null && reqLevel !== undefined && (
+        <div className="absolute top-3 left-5">
+          <TypeBadge variant="item" level={reqLevel} />
         </div>
-        <div className="flex-1">
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+      )}
+
+      {/* 內容：圖片和名稱 - 固定 margin-top 確保位置一致 */}
+      <div className="flex items-center gap-4 mt-10">
+        <CardImage
+          src={itemIconUrl}
+          alt={displayItemName}
+          size="lg"
+        />
+        <div className="flex-1 min-w-0">
+          <h3 className="text-lg font-bold text-gray-900 dark:text-white truncate">
             {displayItemName}
           </h3>
-          {/* 等級顯示 */}
-          {reqLevel !== null && reqLevel !== undefined && (
-            <div className="flex items-center gap-2 mb-1">
-              <span className="inline-flex items-center px-2 py-1 rounded-md bg-blue-500 text-white text-xs font-semibold">
-                Lv. {reqLevel}
-              </span>
-            </div>
-          )}
           {isDev && (
-            <p className="text-xs text-gray-500 dark:text-gray-400">
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
               {t('card.itemId')}: {itemId}
             </p>
           )}
         </div>
       </div>
-    </div>
+    </BaseCard>
   )
 })

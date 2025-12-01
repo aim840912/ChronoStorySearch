@@ -55,7 +55,7 @@ export function FavoriteMonstersList({
 
       {/* 卡片網格 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6">
-        {monsters.map((monster) => (
+        {monsters.map((monster, index) => (
           <MonsterCard
             key={monster.mobId}
             mobId={monster.mobId}
@@ -66,6 +66,7 @@ export function FavoriteMonstersList({
             isFavorite={true}
             onToggleFavorite={onToggleFavorite}
             level={mobLevelMap.get(monster.mobId) ?? null}
+            index={index}
           />
         ))}
       </div>

@@ -56,7 +56,7 @@ export function FavoriteItemsList({
 
       {/* 卡片網格 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
-        {items.map((item) => (
+        {items.map((item, index) => (
           <ItemCard
             key={item.itemId}
             itemId={item.itemId}
@@ -67,6 +67,7 @@ export function FavoriteItemsList({
             isFavorite={true}
             onToggleFavorite={onToggleFavorite}
             reqLevel={itemAttributesMap.get(item.itemId)?.req_level ?? null}
+            index={index}
           />
         ))}
       </div>
