@@ -73,14 +73,14 @@ export const SearchHeader = memo(function SearchHeader({
   const { t } = useLanguage()
 
   return (
-    <div className="sticky top-0 z-40 bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl border-b border-gray-200/50 dark:border-gray-700/50 shadow-lg shadow-gray-200/20 dark:shadow-gray-900/30 pt-2 sm:pt-3 pb-2 sm:pb-3">
+    <div className="sticky top-0 z-40 bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl border-b border-gray-200/50 dark:border-gray-700/50 shadow-lg shadow-gray-200/20 dark:shadow-gray-900/30 pt-1 sm:pt-1.5 pb-1 sm:pb-1.5">
       {/* 標題區域 - 緊湊設計 */}
-      <div className="flex items-center justify-between mb-2 px-2 sm:px-4 max-w-7xl mx-auto">
-        <h1 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
+      <div className="flex items-center justify-between mb-1 px-2 sm:px-4 max-w-7xl mx-auto">
+        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
           <img
             src="/images/chrono.png"
             alt="ChronoStory Logo"
-            className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0"
+            className="w-12 h-12 sm:w-14 sm:h-14 flex-shrink-0"
           />
           <span className="truncate">{t('app.title')}</span>
         </h1>
