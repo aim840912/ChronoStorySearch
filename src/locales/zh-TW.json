@@ -471,6 +471,7 @@
   "screenshot.timeout": "截圖處理超時，請重試",
   "imageFormat.png": "PNG",
   "imageFormat.stand": "待機",
+  "imageFormat.hit": "受擊",
   "imageFormat.die": "死亡",
   "imageFormat.toggle": "切換怪物圖片格式"
 }

@@ -470,6 +470,7 @@
   "screenshot.timeout": "Screenshot timed out, please try again",
   "imageFormat.png": "PNG",
   "imageFormat.stand": "Stand",
+  "imageFormat.hit": "Hit",
   "imageFormat.die": "Die",
   "imageFormat.toggle": "Toggle image format"
 }

@@ -138,9 +138,15 @@ export function useFavoriteFilters({
       return uniqueFavoriteMonsters
     }
 
+    const trimmedSearch = debouncedSearchTerm.trim()
+    // 檢查是否為 ID 搜尋（純數字）
+    const isIdSearch = /^\d+$/.test(trimmedSearch)
+
     return uniqueFavoriteMonsters.filter((monster) =>
-      matchesAllKeywords(monster.mobName, debouncedSearchTerm) ||
-      (monster.chineseMobName && matchesAllKeywords(monster.chineseMobName, debouncedSearchTerm))
+      isIdSearch
+        ? monster.mobId.toString() === trimmedSearch
+        : matchesAllKeywords(monster.mobName, debouncedSearchTerm) ||
+          (monster.chineseMobName && matchesAllKeywords(monster.chineseMobName, debouncedSearchTerm))
     )
   }, [uniqueFavoriteMonsters, debouncedSearchTerm, filterMode])
 
@@ -152,9 +158,15 @@ export function useFavoriteFilters({
       return uniqueFavoriteItems
     }
 
+    const trimmedSearch = debouncedSearchTerm.trim()
+    // 檢查是否為 ID 搜尋（純數字）
+    const isIdSearch = /^\d+$/.test(trimmedSearch)
+
     return uniqueFavoriteItems.filter((item) =>
-      matchesAllKeywords(item.itemName, debouncedSearchTerm) ||
-      (item.chineseItemName && matchesAllKeywords(item.chineseItemName, debouncedSearchTerm))
+      isIdSearch
+        ? item.itemId.toString() === trimmedSearch
+        : matchesAllKeywords(item.itemName, debouncedSearchTerm) ||
+          (item.chineseItemName && matchesAllKeywords(item.chineseItemName, debouncedSearchTerm))
     )
   }, [uniqueFavoriteItems, debouncedSearchTerm, filterMode])
 
