@@ -2,617 +2,617 @@
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 30,
-    "maxQty": 70,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "紅寶王"
+    "maxQty": 70
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1002049,
     "itemName": "Gold Burgernet Helm",
+    "chineseItemName": "黃金騎士頭盔",
     "chance": 0.015,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金騎士頭盔",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1002073,
     "itemName": "Red Wizardry Hat",
+    "chineseItemName": "紅色法師帽",
     "chance": 0.015,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色法師帽",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1002150,
     "itemName": "Dark Tiberian",
+    "chineseItemName": "黑提貝之帽",
     "chance": 0.015,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑提貝之帽",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1002159,
     "itemName": "Black Hunter",
+    "chineseItemName": "黑獵人帽",
     "chance": 0.015,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑獵人帽",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1002619,
     "itemName": "Brown Pitz Bandana",
+    "chineseItemName": "褐色皮茲頭巾",
     "chance": 0.015,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐色皮茲頭巾",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1040023,
     "itemName": "Black Bennis Chainmail",
+    "chineseItemName": "黑獵人服",
     "chance": 0.008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑獵人服",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1040041,
     "itemName": "Dark Master Sergeant",
+    "chineseItemName": "黑軍官鎧甲",
     "chance": 0.008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑軍官鎧甲",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1040050,
     "itemName": "Black Sneak",
+    "chineseItemName": "黑敏捷之服",
     "chance": 0.008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑敏捷之服",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1041024,
     "itemName": "Red Shark",
+    "chineseItemName": "紅騎士甲",
     "chance": 0.008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅騎士甲",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1041033,
     "itemName": "Red Bennis Chainmail",
+    "chineseItemName": "紅打獵服",
     "chance": 0.008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅打獵服",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1041060,
     "itemName": "Gold Sneak",
+    "chineseItemName": "綠敏捷之服",
     "chance": 0.008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠敏捷之服",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1050025,
     "itemName": "White Doros Robe",
+    "chineseItemName": "白魔者之袍",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白魔者之袍",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1051005,
     "itemName": "Red Doroness Robe",
+    "chineseItemName": "紅魔者之袍",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅魔者之袍",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1052104,
     "itemName": "Brown Turk Gally",
+    "chineseItemName": "褐色海盜服",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐色海盜服",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1072052,
     "itemName": "Dark War Boots",
+    "chineseItemName": "黑戰鬥鞋",
     "chance": 0.008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑戰鬥鞋",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1072069,
     "itemName": "Red Jack Boots",
+    "chineseItemName": "紅皮製長靴",
     "chance": 0.008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅皮製長靴",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1072074,
     "itemName": "Black Windshoes",
+    "chineseItemName": "黑飄風鞋",
     "chance": 0.008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑飄風鞋",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1072087,
     "itemName": "Black Lappy Boots",
+    "chineseItemName": "黑追擊鞋",
     "chance": 0.008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑追擊鞋",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1072291,
     "itemName": "Brown Wooden Krag",
+    "chineseItemName": "褐色木鞋",
     "chance": 0.008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐色木鞋",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1082001,
     "itemName": "White Fingerless Gloves",
+    "chineseItemName": "白紋短手套",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白紋短手套",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1082018,
     "itemName": "Dark Savata",
+    "chineseItemName": "黑命中手套",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑命中手套",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1082028,
     "itemName": "Dark Mesana",
+    "chineseItemName": "黑賢者手套",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑賢者手套",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1082039,
     "itemName": "Dark Wolfskin",
+    "chineseItemName": "黑精神手套",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑精神手套",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1082186,
     "itemName": "Hard Leather Glove",
+    "chineseItemName": "褐色堅固皮手腕",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐色堅固皮手腕",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 1322001,
     "itemName": "Hammer",
+    "chineseItemName": "錘子",
     "chance": 0.008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "錘子",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2000000,
     "itemName": "Red Potion",
+    "chineseItemName": "紅色藥水",
     "chance": 0.2,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色藥水",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2010009,
     "itemName": "Green Apple",
+    "chineseItemName": "青蘋果",
     "chance": 0.2,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青蘋果",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2020014,
     "itemName": "Sunrise Dew",
+    "chineseItemName": "清晨之露",
     "chance": 0.2,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "清晨之露",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2040001,
     "itemName": "Scroll for Helmet for Defense 60%",
+    "chineseItemName": "頭盔防禦卷軸60%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "頭盔防禦卷軸60%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2040002,
     "itemName": "Scroll for Helmet for Defense 10%",
+    "chineseItemName": "頭盔防禦卷軸10%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "頭盔防禦卷軸10%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2040301,
     "itemName": "Scroll for Earring for INT 60%",
+    "chineseItemName": "耳環智力卷軸60%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "耳環智力卷軸60%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2040302,
     "itemName": "Scroll for Earring for INT 10%",
+    "chineseItemName": "耳環智力卷軸10%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "耳環智力卷軸10%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2040401,
     "itemName": "Scroll for Topwear for Defense 60%",
+    "chineseItemName": "上衣防禦卷軸60%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "上衣防禦卷軸60%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2040402,
     "itemName": "Scroll for Topwear for Defense 10%",
+    "chineseItemName": "上衣防禦卷軸10%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "上衣防禦卷軸10%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2040418,
     "itemName": "Scroll for Topwear for STR 60%",
+    "chineseItemName": "上衣力量卷軸60%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "上衣力量卷軸60%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2040501,
     "itemName": "Scroll for Overall Armor for DEX 60%",
+    "chineseItemName": "套服敏捷卷軸60%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "套服敏捷卷軸60%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2040601,
     "itemName": "Scroll for Bottomwear for Defense 60%",
+    "chineseItemName": "褲裙防禦卷軸60%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褲裙防禦卷軸60%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2040928,
     "itemName": "Scroll for Shield for ATT 100%",
+    "chineseItemName": "盾牌攻擊卷軸100%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "盾牌攻擊卷軸100%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2041016,
     "itemName": "Scroll for Cape for INT 60%",
+    "chineseItemName": "披風智力卷軸60%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風智力卷軸60%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2043114,
     "itemName": "Scroll for One-Handed Axe for Accuracy 10%",
+    "chineseItemName": "單手斧命中卷軸10%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "單手斧命中卷軸10%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2043201,
     "itemName": "Scroll for One-Handed BW for ATT 60%",
+    "chineseItemName": "單手棍攻擊卷軸60%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "單手棍攻擊卷軸60%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2043302,
     "itemName": "Scroll for Dagger for ATT 10%",
+    "chineseItemName": "短劍攻擊卷軸10%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "短劍攻擊卷軸10%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2043701,
     "itemName": "Scroll for Wand for Magic ATT 60%",
+    "chineseItemName": "短杖魔力卷軸60%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "短杖魔力卷軸60%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2043702,
     "itemName": "Scroll for Wand for Magic ATT 10%",
+    "chineseItemName": "短杖魔力卷軸10%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "短杖魔力卷軸10%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2043801,
     "itemName": "Scroll for Staff for Magic ATT 60%",
+    "chineseItemName": "長杖魔力卷軸60%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "長杖魔力卷軸60%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2044001,
     "itemName": "Scroll for Two-Handed Sword for ATT 60%",
+    "chineseItemName": "雙手劍攻擊卷軸60%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙手劍攻擊卷軸60%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2044414,
     "itemName": "Scroll for Pole Arm for Accuracy 10%",
+    "chineseItemName": "矛命中卷軸10%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "矛命中卷軸10%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2044801,
     "itemName": "Scroll for Knuckler for ATT 60%",
+    "chineseItemName": "指虎攻擊卷軸60%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "指虎攻擊卷軸60%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2044902,
     "itemName": "Scroll for Gun for ATT 10%",
+    "chineseItemName": "火槍攻擊卷軸10%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "火槍攻擊卷軸10%",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 2210006,
     "itemName": "Rainbow-colored Snail Shell",
+    "chineseItemName": "彩虹蝸牛殼",
     "chance": 0.999999,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "彩虹蝸牛殼",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 4000000,
     "itemName": "Blue Snail Shell",
+    "chineseItemName": "藍寶殼",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍寶殼",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 4000016,
     "itemName": "Red Snail Shell",
+    "chineseItemName": "紅寶殼",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅寶殼",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 4000019,
     "itemName": "Snail Shell",
+    "chineseItemName": "綠寶殼",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠寶殼",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 4010000,
     "itemName": "Bronze Ore",
+    "chineseItemName": "青銅母礦",
     "chance": 0.09,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅母礦",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   },
   {
     "mobId": 2220000,
     "mobName": "Mano",
+    "chineseMobName": "紅寶王",
     "itemId": 4020000,
     "itemName": "Garnet Ore",
+    "chineseItemName": "石榴石母礦",
     "chance": 0.09,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "石榴石母礦",
-    "chineseMobName": "紅寶王"
+    "maxQty": 1
   }
 ]

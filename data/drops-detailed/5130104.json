@@ -2,309 +2,309 @@
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 254,
-    "maxQty": 386,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "野狼"
+    "maxQty": 386
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 1002213,
     "itemName": "Green Maro",
+    "chineseItemName": "綠貴族軟帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠貴族軟帽",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 1002215,
     "itemName": "Flame Golden Circlet",
+    "chineseItemName": "火黃金法冠",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "火黃金法冠",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 1040097,
     "itemName": "Green China",
+    "chineseItemName": "綠陽",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠陽",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 1050052,
     "itemName": "Blue-Lined Kismet",
+    "chineseItemName": "青仙白宮",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青仙白宮",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 1060086,
     "itemName": "Green China Pants",
+    "chineseItemName": "綠陽褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠陽褲",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 1072119,
     "itemName": "Yellow Pierre Shoes",
+    "chineseItemName": "黃精靈鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃精靈鞋",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 1072127,
     "itemName": "Blue Jangoon Shoes",
+    "chineseItemName": "藍金月鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍金月鞋",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 1082064,
     "itemName": "Dark Arten",
+    "chineseItemName": "黑精靈手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑精靈手套",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 1082075,
     "itemName": "Red Cleave",
-    "chance": 0.001,
-    "minQty": 1,
-    "maxQty": 1,
     "chineseItemName": "紅盜賊手套",
-    "chineseMobName": "野狼"
-  },
-  {
-    "mobId": 5130104,
-    "mobName": "Hector",
-    "itemId": 1102000,
-    "itemName": "Green Napoleon",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠色冒險披風",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
+    "itemId": 1102000,
+    "itemName": "Green Adventurer Cape",
+    "chineseItemName": "綠色冒險披風",
+    "chance": 0.001,
+    "minQty": 1,
+    "maxQty": 1
+  },
+  {
+    "mobId": 5130104,
+    "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 1203006,
     "itemName": "Kumbi Throwing-Stars",
+    "chineseItemName": "雪花標",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雪花標",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 1332017,
     "itemName": "Serpent's Coil",
+    "chineseItemName": "金蛇劍",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "金蛇劍",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 1422009,
     "itemName": "The Blessing",
+    "chineseItemName": "妖精之錘",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "妖精之錘",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 1462008,
     "itemName": "Golden Crow",
+    "chineseItemName": "黃金弩",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金弩",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 1482007,
     "itemName": "Fury Claw",
+    "chineseItemName": "惡魔之爪",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "惡魔之爪",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 2040311,
     "itemName": "Scroll for Earring for Defense 60%",
+    "chineseItemName": "耳環防禦力卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "耳環防禦力卷軸60%",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 2041019,
     "itemName": "Scroll for Cape for DEX 60%",
+    "chineseItemName": "披風敏捷卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風敏捷卷軸60%",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 2044110,
     "itemName": "Scroll for Two-Handed Axe for Accuracy 100%",
+    "chineseItemName": "雙手斧命中卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙手斧命中卷軸100%",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 2044809,
     "itemName": "Scroll for Knuckler for Accuracy 10%",
+    "chineseItemName": "指虎命中卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "指虎命中卷軸10%",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 4000021,
     "itemName": "Leather",
+    "chineseItemName": "動物皮",
     "chance": 0.05,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "動物皮",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 4000051,
     "itemName": "Hector Tail",
+    "chineseItemName": "野狼之尾巴",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "野狼之尾巴",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 4003004,
     "itemName": "Stiff Feather",
+    "chineseItemName": "堅硬的羽毛",
     "chance": 0.2,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "堅硬的羽毛",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 4004003,
-    "itemName": "LUK Crystal Ore",
+    "itemName": "Lucky Crystal Ore",
+    "chineseItemName": "幸運母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "幸運母礦",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 4010001,
     "itemName": "Steel Ore",
+    "chineseItemName": "鋼鐵母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋼鐵母礦",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   },
   {
     "mobId": 5130104,
     "mobName": "Hector",
+    "chineseMobName": "野狼",
     "itemId": 4020001,
     "itemName": "Amethyst Ore",
+    "chineseItemName": "紫水晶母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫水晶母礦",
-    "chineseMobName": "野狼"
+    "maxQty": 1
   }
 ]

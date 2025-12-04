@@ -2,331 +2,331 @@
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 235,
-    "maxQty": 348,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 348
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 1002028,
     "itemName": "Silver Crusader Helm",
+    "chineseItemName": "銀製十字軍帽子",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀製十字軍帽子",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 1032013,
     "itemName": "Red-Hearted Earrings",
+    "chineseItemName": "愛心耳環",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "愛心耳環",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 1040094,
     "itemName": "Red China",
+    "chineseItemName": "赤陽",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤陽",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 1041089,
     "itemName": "Dark Shouldermail",
+    "chineseItemName": "黑將軍鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑將軍鎧甲",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 1050054,
     "itemName": "Red Anakamoon",
+    "chineseItemName": "紅神聖服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅神聖服",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 1050058,
     "itemName": "Orange Tai",
+    "chineseItemName": "朱旋風甲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "朱旋風甲",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 1060083,
     "itemName": "Red China Pants",
+    "chineseItemName": "赤陽褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤陽褲",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 1061088,
     "itemName": "Dark Shouldermail Pants",
+    "chineseItemName": "黑將軍褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑將軍褲",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 1072115,
     "itemName": "Blue Moon Shoes",
+    "chineseItemName": "藍月鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍月鞋",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 1072126,
     "itemName": "Maroon Jangoon Shoes",
+    "chineseItemName": "紫金月鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫金月鞋",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 1072306,
     "itemName": "Black Basile Boots",
+    "chineseItemName": "黑色巴西里靴",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑色巴西里靴",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 1082074,
     "itemName": "Dark Cleave",
+    "chineseItemName": "黑盜賊手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑盜賊手套",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 1202004,
     "itemName": "Blaze Capsule",
+    "chineseItemName": "火焰膠囊",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "火焰膠囊",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 1402007,
     "itemName": "Zard",
+    "chineseItemName": "半月巨刀",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "半月巨刀",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 2000002,
     "itemName": "White Potion",
+    "chineseItemName": "白色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白色藥水",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 2040933,
     "itemName": "Scroll for Shield for STR 10%",
+    "chineseItemName": "盾牌力量卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "盾牌力量卷軸10%",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 2041012,
     "itemName": "Scroll for Cape for STR 100%",
+    "chineseItemName": "披風力量卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風力量卷軸100%",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 2043002,
     "itemName": "Scroll for One-Handed Sword for ATT 10%",
+    "chineseItemName": "單手劍攻擊卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "單手劍攻擊卷軸10%",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 2043102,
     "itemName": "Scroll for One-Handed Axe for ATT 10%",
+    "chineseItemName": "單手斧攻擊卷軸10%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "單手斧攻擊卷軸10%",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 2044212,
     "itemName": "Scroll for Two-Handed BW for Accuracy 60%",
+    "chineseItemName": "雙手棍命中卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙手棍命中卷軸60%",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 2050003,
     "itemName": "Holy Water",
+    "chineseItemName": "聖水",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "聖水",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 4000070,
     "itemName": "Cellion Tail",
+    "chineseItemName": "紅獨角獅尾",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅獨角獅尾",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 4003005,
     "itemName": "Soft Feather",
+    "chineseItemName": "柔軟的羽毛",
     "chance": 0.2,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "柔軟的羽毛",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 4004000,
     "itemName": "Power Crystal Ore",
+    "chineseItemName": "力量母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "力量母礦",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 4006000,
     "itemName": "The Magic Rock",
+    "chineseItemName": "魔法石",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "魔法石",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 4010005,
     "itemName": "Orihalcon Ore",
+    "chineseItemName": "紫礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫礦石母礦",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120001,
     "mobName": "Cellion",
+    "chineseMobName": "紅獨角獅",
     "itemId": 4020000,
     "itemName": "Garnet Ore",
+    "chineseItemName": "石榴石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "石榴石母礦",
-    "chineseMobName": "紅獨角獅"
+    "maxQty": 1
   }
 ]

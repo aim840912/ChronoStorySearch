@@ -2,342 +2,342 @@
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 325,
-    "maxQty": 486,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 486
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1002100,
     "itemName": "Old Bronze Nordic Helm",
+    "chineseItemName": "舊青銅諾曼頭盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "舊青銅諾曼頭盔",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1002216,
     "itemName": "Aqua Golden Circlet",
+    "chineseItemName": "水黃金法冠",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "水黃金法冠",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1002218,
     "itemName": "Dark Golden Circlet",
+    "chineseItemName": "黑黃金法冠",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑黃金法冠",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1002268,
     "itemName": "Brown Polyfeather Hat",
+    "chineseItemName": "黃弓羽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃弓羽",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1041094,
     "itemName": "Light Mantis",
+    "chineseItemName": "灰飛影之服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "灰飛影之服",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1050055,
     "itemName": "White Anakamoon",
+    "chineseItemName": "白神聖服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白神聖服",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1051052,
     "itemName": "Blue Requierre",
+    "chineseItemName": "藍天上之衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍天上之衣",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1061093,
     "itemName": "Light Mantis Pants",
+    "chineseItemName": "灰飛影之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "灰飛影之褲",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1072155,
     "itemName": "Purple Carzen Boots",
+    "chineseItemName": "紫飛魂鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫飛魂鞋",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1072161,
     "itemName": "Purple Mystique Shoes",
+    "chineseItemName": "紫龍皮鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫龍皮鞋",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1072164,
     "itemName": "Blue Elf Shoes",
+    "chineseItemName": "藍箭魂鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍箭魂鞋",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1082087,
     "itemName": "Gold Manute",
+    "chineseItemName": "黃金封印手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金封印手套",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1082088,
     "itemName": "Dark Manute",
+    "chineseItemName": "黑封印手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑封印手套",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1092011,
     "itemName": "Adamantium Legend Shield",
+    "chineseItemName": "古老朱礦盾",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "古老朱礦盾",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1102018,
     "itemName": "Black Magic Cape",
+    "chineseItemName": "黑色魔法披風",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑色魔法披風",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1332017,
     "itemName": "Serpent's Coil",
+    "chineseItemName": "金蛇劍",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "金蛇劍",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1382001,
     "itemName": "Arc Staff",
+    "chineseItemName": "精靈長杖",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "精靈長杖",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1472020,
     "itemName": "Sapphire Slain",
+    "chineseItemName": "藍寶手甲",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍寶手甲",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1472023,
     "itemName": "Blood Gigantic",
+    "chineseItemName": "赤紅戰神拳套",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤紅戰神拳套",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 1472025,
     "itemName": "Dark Gigantic",
+    "chineseItemName": "黑戰神拳套",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑戰神拳套",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 2000006,
     "itemName": "Mana Elixir",
+    "chineseItemName": "活力藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "活力藥水",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 2040419,
     "itemName": "Scroll for Topwear for STR 10%",
+    "chineseItemName": "上衣力量卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "上衣力量卷軸10%",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 2040620,
     "itemName": "Scroll for Bottomwear for Mobility 15%",
+    "chineseItemName": "褲裙生命卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褲裙生命卷軸100%",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 4000057,
     "itemName": "Dark Pepe Beak",
+    "chineseItemName": "黑企鵝王的嘴",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑企鵝王的嘴",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 4004003,
-    "itemName": "LUK Crystal Ore",
+    "itemName": "Lucky Crystal Ore",
+    "chineseItemName": "幸運母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "幸運母礦",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 4004004,
     "itemName": "Dark Crystal Ore",
+    "chineseItemName": "黑暗母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑暗母礦",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 4006000,
     "itemName": "The Magic Rock",
+    "chineseItemName": "魔法石",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "魔法石",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 4010004,
     "itemName": "Silver Ore",
+    "chineseItemName": "銀的母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀的母礦",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6230201,
     "mobName": "Separated Dark Pepe",
+    "chineseMobName": "孤單黑企鵝王",
     "itemId": 4020000,
     "itemName": "Garnet Ore",
+    "chineseItemName": "石榴石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "石榴石母礦",
-    "chineseMobName": "孤單黑企鵝王"
+    "maxQty": 1
   }
 ]

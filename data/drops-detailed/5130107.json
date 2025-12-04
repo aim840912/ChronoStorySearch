@@ -2,353 +2,353 @@
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 273,
-    "maxQty": 408,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "殭屍"
+    "maxQty": 408
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1002244,
     "itemName": "Green Seraphis",
+    "chineseItemName": "綠和平之帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠和平之帽",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1002247,
     "itemName": "Bronze Identity",
+    "chineseItemName": "青銅忍者頭巾",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅忍者頭巾",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1002269,
     "itemName": "White Polyfeather Hat",
+    "chineseItemName": "白弓羽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白弓羽",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1032019,
     "itemName": "Crystal Flower Earrings",
+    "chineseItemName": "水仙耳環",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "水仙耳環",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1040092,
     "itemName": "Blue Orientican",
+    "chineseItemName": "藍鋼玉鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍鋼玉鎧甲",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1040094,
     "itemName": "Red China",
+    "chineseItemName": "赤陽",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤陽",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1040105,
     "itemName": "Brown Studded Top",
+    "chineseItemName": "褐玄武之甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐玄武之甲",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1051039,
     "itemName": "Red Lumati",
+    "chineseItemName": "紅貴族禮服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅貴族禮服",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1060081,
     "itemName": "Blue Orientican Pants",
+    "chineseItemName": "藍鋼玉褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍鋼玉褲",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1060083,
     "itemName": "Red China Pants",
+    "chineseItemName": "赤陽褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤陽褲",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1060093,
     "itemName": "Brown Studded Pants",
+    "chineseItemName": "褐玄武之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐玄武之褲",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1072109,
     "itemName": "Black Yellow-Lined Shoes",
+    "chineseItemName": "黃流星鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃流星鞋",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1072117,
     "itemName": "Dark Moon Shoes",
+    "chineseItemName": "黑月鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑月鞋",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1082062,
     "itemName": "Red Arten",
+    "chineseItemName": "紅精靈手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅精靈手套",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1082071,
     "itemName": "Aqua Brace",
+    "chineseItemName": "藍勇氣手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍勇氣手套",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1102016,
     "itemName": "Red Magic Cape",
+    "chineseItemName": "紅色魔法披風",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色魔法披風",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1312008,
     "itemName": "Buck",
+    "chineseItemName": "樹靈之斧",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "樹靈之斧",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1322016,
     "itemName": "Jacker",
+    "chineseItemName": "古代錘",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "古代錘",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1372007,
     "itemName": "Cromi",
+    "chineseItemName": "大魔法師短杖",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "大魔法師短杖",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 1482008,
     "itemName": "Psycho Claw",
+    "chineseItemName": "塞爾拉利刃拳套",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "塞爾拉利刃拳套",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 2000002,
     "itemName": "White Potion",
+    "chineseItemName": "白色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白色藥水",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 2040026,
     "itemName": "Scroll for Helmet for INT 10%",
+    "chineseItemName": "頭盔智力卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "頭盔智力卷軸10%",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 2040343,
     "itemName": "Scroll for Accessory for DEX 100%",
+    "chineseItemName": "飾品敏捷卷軸100%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "飾品敏捷卷軸100%",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 2040515,
     "itemName": "Scroll for Overall Armor for LUK 100%",
+    "chineseItemName": "套服幸運卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "套服幸運卷軸100%",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 2040602,
     "itemName": "Scroll for Bottomwear for Defense 10%",
+    "chineseItemName": "褲裙防禦卷軸10%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褲裙防禦卷軸10%",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 4000069,
     "itemName": "Zombie's Lost Tooth",
+    "chineseItemName": "殭屍的臼齒",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "殭屍的臼齒",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 4004000,
     "itemName": "Power Crystal Ore",
+    "chineseItemName": "力量母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "力量母礦",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 4010000,
     "itemName": "Bronze Ore",
+    "chineseItemName": "青銅母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅母礦",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   },
   {
     "mobId": 5130107,
     "mobName": "Coolie Zombie",
+    "chineseMobName": "殭屍",
     "itemId": 4020006,
     "itemName": "Topaz Ore",
+    "chineseItemName": "黃晶母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃晶母礦",
-    "chineseMobName": "殭屍"
+    "maxQty": 1
   }
 ]

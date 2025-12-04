@@ -2,133 +2,133 @@
   {
     "mobId": 9308021,
     "mobName": "Southperry Pirate Lord",
+    "chineseMobName": "海盜領主",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 60,
-    "maxQty": 90,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "海盜領主"
+    "maxQty": 90
   },
   {
     "mobId": 9308021,
     "mobName": "Southperry Pirate Lord",
+    "chineseMobName": "海盜領主",
     "itemId": 1032010,
     "itemName": "Star Earrings",
+    "chineseItemName": "星星耳環",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "星星耳環",
-    "chineseMobName": "海盜領主"
+    "maxQty": 1
   },
   {
     "mobId": 9308021,
     "mobName": "Southperry Pirate Lord",
+    "chineseMobName": "海盜領主",
     "itemId": 1060005,
     "itemName": "Warfare Pants",
+    "chineseItemName": "戰鬥褲",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "戰鬥褲",
-    "chineseMobName": "海盜領主"
+    "maxQty": 1
   },
   {
     "mobId": 9308021,
     "mobName": "Southperry Pirate Lord",
+    "chineseMobName": "海盜領主",
     "itemId": 1072012,
     "itemName": "Red Whitebottom Boots",
+    "chineseItemName": "紅色皮鞋",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色皮鞋",
-    "chineseMobName": "海盜領主"
+    "maxQty": 1
   },
   {
     "mobId": 9308021,
     "mobName": "Southperry Pirate Lord",
+    "chineseMobName": "海盜領主",
     "itemId": 1072054,
     "itemName": "Orange Whitebottom Boots",
+    "chineseItemName": "橘色皮鞋",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "橘色皮鞋",
-    "chineseMobName": "海盜領主"
+    "maxQty": 1
   },
   {
     "mobId": 9308021,
     "mobName": "Southperry Pirate Lord",
+    "chineseMobName": "海盜領主",
     "itemId": 1072055,
     "itemName": "Pink Whitebottom Boots",
+    "chineseItemName": "粉色皮鞋",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "粉色皮鞋",
-    "chineseMobName": "海盜領主"
+    "maxQty": 1
   },
   {
     "mobId": 9308021,
     "mobName": "Southperry Pirate Lord",
+    "chineseMobName": "海盜領主",
     "itemId": 1072056,
     "itemName": "Blue Whitebottom Boots",
+    "chineseItemName": "藍色皮鞋",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色皮鞋",
-    "chineseMobName": "海盜領主"
+    "maxQty": 1
   },
   {
     "mobId": 9308021,
     "mobName": "Southperry Pirate Lord",
+    "chineseMobName": "海盜領主",
     "itemId": 1302013,
     "itemName": "Red Whip",
+    "chineseItemName": "紅色鞭子",
     "chance": 0.005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色鞭子",
-    "chineseMobName": "海盜領主"
+    "maxQty": 1
   },
   {
     "mobId": 9308021,
     "mobName": "Southperry Pirate Lord",
+    "chineseMobName": "海盜領主",
     "itemId": 1322009,
     "itemName": "Plunger",
+    "chineseItemName": "通通樂",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "通通樂",
-    "chineseMobName": "海盜領主"
+    "maxQty": 1
   },
   {
     "mobId": 9308021,
     "mobName": "Southperry Pirate Lord",
+    "chineseMobName": "海盜領主",
     "itemId": 1432008,
     "itemName": "Fish Spear",
+    "chineseItemName": "海神叉",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "海神叉",
-    "chineseMobName": "海盜領主"
+    "maxQty": 1
   },
   {
     "mobId": 9308021,
     "mobName": "Southperry Pirate Lord",
+    "chineseMobName": "海盜領主",
     "itemId": 1442018,
     "itemName": "Frozen Tuna",
+    "chineseItemName": "冷凍金槍魚",
     "chance": 0.002,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "冷凍金槍魚",
-    "chineseMobName": "海盜領主"
+    "maxQty": 1
   },
   {
     "mobId": 9308021,
     "mobName": "Southperry Pirate Lord",
+    "chineseMobName": "海盜領主",
     "itemId": 2040804,
     "itemName": "Scroll for Gloves for ATT 60%",
+    "chineseItemName": "手套攻擊卷軸60%",
     "chance": 0.003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "手套攻擊卷軸60%",
-    "chineseMobName": "海盜領主"
+    "maxQty": 1
   }
 ]

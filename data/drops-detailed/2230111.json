@@ -2,243 +2,243 @@
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 66,
-    "maxQty": 97,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "石面怪人"
+    "maxQty": 97
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 1040042,
     "itemName": "Blue Pao",
+    "chineseItemName": "藍唐裝",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍唐裝",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 1041023,
     "itemName": "Sky Shark",
+    "chineseItemName": "天藍騎士甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "天藍騎士甲",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 1060031,
     "itemName": "Blue Pao Bottom",
+    "chineseItemName": "藍唐衫褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍唐衫褲",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 1061019,
     "itemName": "Sky Shark Skirt",
+    "chineseItemName": "天藍騎士裙",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "天藍騎士裙",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 1082006,
     "itemName": "Orihalcon Missel",
+    "chineseItemName": "紫礦機器手套",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫礦機器手套",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 1082049,
     "itemName": "Green Marker",
+    "chineseItemName": "綠擊中手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠擊中手套",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 1082051,
     "itemName": "Red Lutia",
+    "chineseItemName": "紅守護手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅守護手套",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 1302002,
     "itemName": "Viking Sword",
+    "chineseItemName": "海盜劍",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "海盜劍",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 1372004,
     "itemName": "Ice Wand",
+    "chineseItemName": "冰精短杖",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "冰精短杖",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 1452005,
     "itemName": "Ryden",
+    "chineseItemName": "雷電",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雷電",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 1482002,
     "itemName": "Double Tail Knuckler",
+    "chineseItemName": "雙棘指虎",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙棘指虎",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 2000001,
     "itemName": "Orange Potion",
+    "chineseItemName": "橘色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "橘色藥水",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 2002000,
     "itemName": "Dexterity Potion",
+    "chineseItemName": "敏捷藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "敏捷藥水",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 2040301,
     "itemName": "Scroll for Earring for INT 60%",
+    "chineseItemName": "耳環智力卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "耳環智力卷軸60%",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 2043801,
     "itemName": "Scroll for Staff for Magic ATT 60%",
+    "chineseItemName": "長杖魔力卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "長杖魔力卷軸60%",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 2044301,
     "itemName": "Scroll for Spear for ATT 60%",
+    "chineseItemName": "槍攻擊卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "槍攻擊卷軸60%",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 4000197,
     "itemName": "Slate",
+    "chineseItemName": "石板",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "石板",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 4010001,
     "itemName": "Steel Ore",
+    "chineseItemName": "鋼鐵母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋼鐵母礦",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 4010005,
     "itemName": "Orihalcon Ore",
+    "chineseItemName": "紫礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫礦石母礦",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230111,
     "mobName": "Rocky Mask",
+    "chineseMobName": "石面怪人",
     "itemId": 4020003,
     "itemName": "Emerald Ore",
+    "chineseItemName": "祖母綠母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "祖母綠母礦",
-    "chineseMobName": "石面怪人"
+    "maxQty": 1
   }
 ]

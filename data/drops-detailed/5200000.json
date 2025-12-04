@@ -2,243 +2,243 @@
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 60,
-    "maxQty": 90,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "小石球"
+    "maxQty": 90
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 1002129,
     "itemName": "Brown Loosecap",
+    "chineseItemName": "褐色自由帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐色自由帽",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 1002142,
     "itemName": "Blue Matty",
+    "chineseItemName": "藍星魔法帽",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍星魔法帽",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 1040016,
     "itemName": "Orihalcon Master Sergeant",
+    "chineseItemName": "紫礦軍官鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫礦軍官鎧甲",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 1041048,
     "itemName": "Black Steal",
+    "chineseItemName": "黑寂靜之服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑寂靜之服",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 1060011,
     "itemName": "Orihalcon Master Sergeant Kilt",
+    "chineseItemName": "紫礦軍官裙",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫礦軍官裙",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 1061044,
     "itemName": "Black Steal Pants",
+    "chineseItemName": "黑寂靜裙",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑寂靜裙",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 1200001,
     "itemName": "Bronze Arrow for Bow",
+    "chineseItemName": "青銅弓箭",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅弓箭",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 1201001,
     "itemName": "Bronze Bolt for Crossbow",
+    "chineseItemName": "青銅弩箭",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅弩箭",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 1322002,
     "itemName": "Iron Mace",
+    "chineseItemName": "鋼錘",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋼錘",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 1322004,
     "itemName": "Fusion Mace",
+    "chineseItemName": "白銀之錘",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白銀之錘",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 1442014,
     "itemName": "Silver Snowboard",
+    "chineseItemName": "銀雪板",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀雪板",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 1452005,
     "itemName": "Ryden",
+    "chineseItemName": "雷電",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雷電",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 1482002,
     "itemName": "Double Tail Knuckler",
+    "chineseItemName": "雙棘指虎",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙棘指虎",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 2000001,
     "itemName": "Orange Potion",
+    "chineseItemName": "橘色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "橘色藥水",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 2044102,
     "itemName": "Scroll for Two-Handed Axe for ATT 10%",
+    "chineseItemName": "雙手斧攻擊卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙手斧攻擊卷軸10%",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 2044212,
     "itemName": "Scroll for Two-Handed BW for Accuracy 60%",
+    "chineseItemName": "雙手棍命中卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙手棍命中卷軸60%",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 4000083,
     "itemName": "Jr. Sentinel Shellpiece",
+    "chineseItemName": "小石球的石塊",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "小石球的石塊",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 4004003,
-    "itemName": "LUK Crystal Ore",
+    "itemName": "Lucky Crystal Ore",
+    "chineseItemName": "幸運母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "幸運母礦",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 4010000,
     "itemName": "Bronze Ore",
+    "chineseItemName": "青銅母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅母礦",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200000,
     "mobName": "Jr. Sentinel",
+    "chineseMobName": "小石球",
     "itemId": 4020006,
     "itemName": "Topaz Ore",
+    "chineseItemName": "黃晶母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃晶母礦",
-    "chineseMobName": "小石球"
+    "maxQty": 1
   }
 ]

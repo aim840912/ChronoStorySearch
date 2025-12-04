@@ -2,342 +2,342 @@
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 344,
-    "maxQty": 516,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 516
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1002095,
     "itemName": "Mithril Planet",
+    "chineseItemName": "鋰礦戰盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋰礦戰盔",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1002246,
     "itemName": "Dark Seraphis",
+    "chineseItemName": "黑和平之帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑和平之帽",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1032014,
     "itemName": "Pink-Flowered Earrings",
+    "chineseItemName": "梅花耳環",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "梅花耳環",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1032016,
     "itemName": "Metal Heart Earrings",
+    "chineseItemName": "金屬心型耳環",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "金屬心型耳環",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1041095,
     "itemName": "Bloody Mantis",
+    "chineseItemName": "赤飛影之服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤飛影之服",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1041102,
     "itemName": "Pink Mystique",
+    "chineseItemName": "粉紅朱雀之甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "粉紅朱雀之甲",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1050069,
     "itemName": "Brown Requiem",
+    "chineseItemName": "褐天上之衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐天上之衣",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1050070,
     "itemName": "Dark Requiem",
+    "chineseItemName": "黑天上之衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑天上之衣",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1051054,
     "itemName": "Brown Requierre",
+    "chineseItemName": "褐天上之衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐天上之衣",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1061094,
     "itemName": "Bloody Mantis Pants",
+    "chineseItemName": "赤飛影之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤飛影之褲",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1061101,
     "itemName": "Pink Mystique Pants",
+    "chineseItemName": "粉紅朱雀之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "粉紅朱雀之褲",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1072146,
     "itemName": "Green Gore Boots",
+    "chineseItemName": "綠花精鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠花精鞋",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1072165,
     "itemName": "Baige Elf Shoes",
+    "chineseItemName": "黃箭魂鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃箭魂鞋",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1082105,
     "itemName": "Dark Husk",
+    "chineseItemName": "黑暗影手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑暗影手套",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1082108,
     "itemName": "Dark Eyes",
+    "chineseItemName": "黑神眼手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑神眼手套",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1312009,
     "itemName": "Hawkhead",
+    "chineseItemName": "猛禽斧",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "猛禽斧",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1332015,
     "itemName": "Deadly Fin",
+    "chineseItemName": "雙翼刃",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙翼刃",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1372015,
     "itemName": "Angel Wings",
+    "chineseItemName": "天使之翼",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "天使之翼",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1372016,
     "itemName": "Phoenix Wand",
+    "chineseItemName": "鳳凰短杖",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鳳凰短杖",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1402011,
     "itemName": "Sparta",
+    "chineseItemName": "無極劍",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "無極劍",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 1492009,
     "itemName": "Abyss Shooter",
+    "chineseItemName": "深淵射手",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "深淵射手",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 2000006,
     "itemName": "Mana Elixir",
+    "chineseItemName": "活力藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "活力藥水",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 2040618,
     "itemName": "Scroll for Bottomwear for Mobility 60%",
+    "chineseItemName": "褲裙跳躍卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褲裙跳躍卷軸60%",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 2041021,
     "itemName": "Scroll for Cape for LUK 100%",
+    "chineseItemName": "披風幸運卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風幸運卷軸100%",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 2044301,
     "itemName": "Scroll for Spear for ATT 60%",
+    "chineseItemName": "槍攻擊卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "槍攻擊卷軸60%",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 2050000,
     "itemName": "Antidote",
+    "chineseItemName": "解毒劑",
     "chance": 0.05,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "解毒劑",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 4000079,
     "itemName": "Cerebes Tooth",
+    "chineseItemName": "地獄獵犬的尖牙",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "地獄獵犬的尖牙",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 4010004,
     "itemName": "Silver Ore",
+    "chineseItemName": "銀的母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀的母礦",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 7130001,
     "mobName": "Cerebes",
+    "chineseMobName": "地獄獵犬",
     "itemId": 4020007,
     "itemName": "Diamond Ore",
+    "chineseItemName": "鑽石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鑽石母礦",
-    "chineseMobName": "地獄獵犬"
+    "maxQty": 1
   }
 ]

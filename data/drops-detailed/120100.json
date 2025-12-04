@@ -2,144 +2,144 @@
   {
     "mobId": 120100,
     "mobName": "Shroom",
+    "chineseMobName": "菇菇仔",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 8,
-    "maxQty": 12,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "菇菇仔"
+    "maxQty": 12
   },
   {
     "mobId": 120100,
     "mobName": "Shroom",
+    "chineseMobName": "菇菇仔",
     "itemId": 1002610,
     "itemName": "Brown Rocky Bandana",
+    "chineseItemName": "褐色洛基頭巾",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐色洛基頭巾",
-    "chineseMobName": "菇菇仔"
+    "maxQty": 1
   },
   {
     "mobId": 120100,
     "mobName": "Shroom",
+    "chineseMobName": "菇菇仔",
     "itemId": 1060007,
     "itemName": "Jean Capris",
+    "chineseItemName": "藍馬褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍馬褲",
-    "chineseMobName": "菇菇仔"
+    "maxQty": 1
   },
   {
     "mobId": 120100,
     "mobName": "Shroom",
+    "chineseMobName": "菇菇仔",
     "itemId": 1061009,
     "itemName": "Green Avelin Skirt",
+    "chineseItemName": "綠色旅行裙",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠色旅行裙",
-    "chineseMobName": "菇菇仔"
+    "maxQty": 1
   },
   {
     "mobId": 120100,
     "mobName": "Shroom",
+    "chineseMobName": "菇菇仔",
     "itemId": 1062000,
     "itemName": "Ice Jeans",
+    "chineseItemName": "破爛牛仔褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "破爛牛仔褲",
-    "chineseMobName": "菇菇仔"
+    "maxQty": 1
   },
   {
     "mobId": 120100,
     "mobName": "Shroom",
+    "chineseMobName": "菇菇仔",
     "itemId": 1312004,
     "itemName": "Hand Axe",
+    "chineseItemName": "手斧",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "手斧",
-    "chineseMobName": "菇菇仔"
+    "maxQty": 1
   },
   {
     "mobId": 120100,
     "mobName": "Shroom",
+    "chineseMobName": "菇菇仔",
     "itemId": 1332006,
     "itemName": "Field Dagger",
+    "chineseItemName": "戰鬥短刀",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "戰鬥短刀",
-    "chineseMobName": "菇菇仔"
+    "maxQty": 1
   },
   {
     "mobId": 120100,
     "mobName": "Shroom",
+    "chineseMobName": "菇菇仔",
     "itemId": 2000000,
     "itemName": "Red Potion",
+    "chineseItemName": "紅色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色藥水",
-    "chineseMobName": "菇菇仔"
+    "maxQty": 1
   },
   {
     "mobId": 120100,
     "mobName": "Shroom",
+    "chineseMobName": "菇菇仔",
     "itemId": 2010009,
     "itemName": "Green Apple",
+    "chineseItemName": "青蘋果",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青蘋果",
-    "chineseMobName": "菇菇仔"
+    "maxQty": 1
   },
   {
     "mobId": 120100,
     "mobName": "Shroom",
+    "chineseMobName": "菇菇仔",
     "itemId": 2041004,
     "itemName": "Scroll for Cape for Defense 60%",
+    "chineseItemName": "披風防禦卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風防禦卷軸60%",
-    "chineseMobName": "菇菇仔"
+    "maxQty": 1
   },
   {
     "mobId": 120100,
     "mobName": "Shroom",
+    "chineseMobName": "菇菇仔",
     "itemId": 4000011,
     "itemName": "Mushroom Spore",
+    "chineseItemName": "蘑菇芽孢",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "蘑菇芽孢",
-    "chineseMobName": "菇菇仔"
+    "maxQty": 1
   },
   {
     "mobId": 120100,
     "mobName": "Shroom",
+    "chineseMobName": "菇菇仔",
     "itemId": 4010002,
     "itemName": "Mithril Ore",
+    "chineseItemName": "鋰礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋰礦石母礦",
-    "chineseMobName": "菇菇仔"
+    "maxQty": 1
   },
   {
     "mobId": 120100,
     "mobName": "Shroom",
+    "chineseMobName": "菇菇仔",
     "itemId": 4020002,
     "itemName": "AquaMarine Ore",
+    "chineseItemName": "海藍石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "海藍石母礦",
-    "chineseMobName": "菇菇仔"
+    "maxQty": 1
   }
 ]

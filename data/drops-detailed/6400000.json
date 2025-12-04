@@ -2,386 +2,386 @@
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 333,
-    "maxQty": 493,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 493
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1002030,
     "itemName": "Silver Planet",
+    "chineseItemName": "銀製戰盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀製戰盔",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1002245,
     "itemName": "White Seraphis",
+    "chineseItemName": "白和平之帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白和平之帽",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1002269,
     "itemName": "White Polyfeather Hat",
+    "chineseItemName": "白弓羽",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白弓羽",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1002271,
     "itemName": "Green Galaxy",
+    "chineseItemName": "綠十字帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠十字帽",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1002338,
     "itemName": "Red Dragon Babuta",
+    "chineseItemName": "赤龍頭盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤龍頭盔",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1032015,
     "itemName": "Metal Silver Earrings",
+    "chineseItemName": "銀製耳環",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀製耳環",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1040092,
     "itemName": "Blue Orientican",
+    "chineseItemName": "藍鋼玉鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍鋼玉鎧甲",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1041096,
     "itemName": "Umber Mantis",
+    "chineseItemName": "黑飛影之服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑飛影之服",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1041097,
     "itemName": "Aqua Platina",
+    "chineseItemName": "藍暴風甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍暴風甲",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1050060,
     "itemName": "Red Tai",
+    "chineseItemName": "赤旋風甲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤旋風甲",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1051045,
     "itemName": "Red Anakarune",
+    "chineseItemName": "紅聖黨之服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅聖黨之服",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1060081,
     "itemName": "Blue Orientican Pants",
+    "chineseItemName": "藍鋼玉褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍鋼玉褲",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1061095,
     "itemName": "Umber Mantis Pants",
+    "chineseItemName": "黑飛影之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑飛影之褲",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1061096,
     "itemName": "Aqua Platina Pants",
+    "chineseItemName": "藍暴風褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍暴風褲",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1061099,
     "itemName": "Purple Mystique Pants",
+    "chineseItemName": "紫朱雀之褲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫朱雀之褲",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1072142,
     "itemName": "Purple Goldwind Shoes",
+    "chineseItemName": "紫黃金風",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫黃金風",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1072156,
     "itemName": "Dark Carzen Boots",
+    "chineseItemName": "黑飛魂鞋",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑飛魂鞋",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1072166,
     "itemName": "Green Elf Shoes",
+    "chineseItemName": "綠箭魂鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠箭魂鞋",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1082084,
     "itemName": "Blue Willow",
+    "chineseItemName": "藍意志手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍意志手套",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1082097,
     "itemName": "Gold Rover",
+    "chineseItemName": "黃金名譽手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金名譽手套",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1302011,
     "itemName": "Neocora",
+    "chineseItemName": "奇型刀",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "奇型刀",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1442005,
     "itemName": "The Nine Dragons",
+    "chineseItemName": "九龍刀",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "九龍刀",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 1472019,
     "itemName": "Blood Slain",
+    "chineseItemName": "赤紅手甲",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤紅手甲",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 2000002,
     "itemName": "White Potion",
+    "chineseItemName": "白色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白色藥水",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 2041022,
     "itemName": "Scroll for Cape for LUK 60%",
+    "chineseItemName": "披風幸運卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風幸運卷軸60%",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 4000021,
     "itemName": "Leather",
+    "chineseItemName": "動物皮",
     "chance": 0.05,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "動物皮",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 4000056,
     "itemName": "Dark Yeti Horn",
+    "chineseItemName": "黑吉拉之角",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑吉拉之角",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 4003002,
     "itemName": "Piece of Ice",
+    "chineseItemName": "冰塊",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "冰塊",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 4003004,
     "itemName": "Stiff Feather",
+    "chineseItemName": "堅硬的羽毛",
     "chance": 0.2,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "堅硬的羽毛",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 4004001,
     "itemName": "Wisdom Crystal Ore",
+    "chineseItemName": "智慧母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "智慧母礦",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 4004004,
     "itemName": "Dark Crystal Ore",
+    "chineseItemName": "黑暗母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑暗母礦",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 4010006,
     "itemName": "Gold Ore",
+    "chineseItemName": "黃金母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金母礦",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   },
   {
     "mobId": 6400000,
     "mobName": "Dark Yeti",
+    "chineseMobName": "黑吉拉",
     "itemId": 4020003,
     "itemName": "Emerald Ore",
+    "chineseItemName": "祖母綠母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "祖母綠母礦",
-    "chineseMobName": "黑吉拉"
+    "maxQty": 1
   }
 ]

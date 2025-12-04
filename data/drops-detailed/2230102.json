@@ -2,419 +2,419 @@
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 44,
-    "maxQty": 66,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 66
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
-    "itemId": 4031155,
-    "itemName": "Broken Mirror Glass",
-    "chance": 0.2,
-    "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鏡子碎片",
-    "chineseMobName": "黑肥肥"
-  },
-  {
-    "mobId": 2230102,
-    "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1002064,
     "itemName": "Bronze Pride",
+    "chineseItemName": "孫悟空青銅頭箍",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "孫悟空青銅頭箍",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1002151,
     "itemName": "Brown Guiltian",
+    "chineseItemName": "褐魔道之帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐魔道之帽",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1002166,
     "itemName": "Red Distinction",
+    "chineseItemName": "紅羽絲絨帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅羽絲絨帽",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1032000,
     "itemName": "Weighted Earrings",
+    "chineseItemName": "錘珠耳環",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "錘珠耳環",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1032002,
     "itemName": "Sapphire Earrings",
+    "chineseItemName": "藍寶石耳環",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍寶石耳環",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1040079,
     "itemName": "Brown Piette",
+    "chineseItemName": "褐貴族之服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐貴族之服",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1041013,
     "itemName": "Green Shivermail",
+    "chineseItemName": "綠硬皮裝",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠硬皮裝",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1041028,
     "itemName": "Purple Shivermail",
+    "chineseItemName": "紫硬皮裝",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫硬皮裝",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1051004,
     "itemName": "Purple Doroness Robe",
+    "chineseItemName": "紫魔者之袍",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫魔者之袍",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1051005,
     "itemName": "Red Doroness Robe",
+    "chineseItemName": "紅魔者之袍",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅魔者之袍",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1060050,
     "itemName": "Blue Knucklevest Pants",
+    "chineseItemName": "藍暗影之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍暗影之褲",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1060069,
     "itemName": "Brown Piette Pants",
+    "chineseItemName": "褐貴族褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐貴族褲",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1061006,
     "itemName": "Green Able Armor Skirt",
+    "chineseItemName": "綠旅行皮裙",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠旅行皮裙",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1061024,
     "itemName": "Green Shivermail Skirt",
+    "chineseItemName": "綠硬皮裙",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠硬皮裙",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1072033,
     "itemName": "Iron Chain Boots",
+    "chineseItemName": "鋼鐵鏈鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋼鐵鏈鞋",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1072039,
     "itemName": "Mithril Battle Grieves",
+    "chineseItemName": "藍鬥士鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍鬥士鞋",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1072041,
     "itemName": "Blood Battle Grieves",
+    "chineseItemName": "紅鬥士鞋",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅鬥士鞋",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1072085,
     "itemName": "Red Lappy Boots",
+    "chineseItemName": "紅追擊鞋",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅追擊鞋",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1082186,
     "itemName": "Hard Leather Glove",
+    "chineseItemName": "褐色堅固皮手腕",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐色堅固皮手腕",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1202001,
     "itemName": "Split Bullet",
+    "chineseItemName": "分裂子彈",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "分裂子彈",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1382017,
     "itemName": "Circle-Winded Staff",
+    "chineseItemName": "風輪長杖",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "風輪長杖",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1402006,
     "itemName": "Lionheart",
+    "chineseItemName": "高原之劍",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "高原之劍",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1412005,
     "itemName": "Sabretooth",
+    "chineseItemName": "格鬥斧",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "格鬥斧",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1432003,
     "itemName": "Nakamaki",
+    "chineseItemName": "刺槍",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "刺槍",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1452005,
     "itemName": "Ryden",
+    "chineseItemName": "雷電",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雷電",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1462004,
     "itemName": "Eagle Crow",
+    "chineseItemName": "鷹弩",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鷹弩",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 1472009,
     "itemName": "Mithril Guards",
+    "chineseItemName": "鋰礦鬥拳",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋰礦鬥拳",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 2000001,
     "itemName": "Orange Potion",
+    "chineseItemName": "橘色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "橘色藥水",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 2002004,
     "itemName": "Warrior Potion",
+    "chineseItemName": "攻擊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "攻擊藥水",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 4000020,
     "itemName": "Wild Boar Tooth",
+    "chineseItemName": "黑肥肥尖牙",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑肥肥尖牙",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 4000021,
     "itemName": "Leather",
+    "chineseItemName": "動物皮",
     "chance": 0.05,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "動物皮",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 4003004,
     "itemName": "Stiff Feather",
+    "chineseItemName": "堅硬的羽毛",
     "chance": 0.2,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "堅硬的羽毛",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 4006001,
     "itemName": "The Summoning Rock",
+    "chineseItemName": "召喚石",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "召喚石",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 4010003,
     "itemName": "Adamantium Ore",
+    "chineseItemName": "朱礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "朱礦石母礦",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
   },
   {
     "mobId": 2230102,
     "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
     "itemId": 4020004,
     "itemName": "Opal Ore",
+    "chineseItemName": "蛋白石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "蛋白石母礦",
-    "chineseMobName": "黑肥肥"
+    "maxQty": 1
+  },
+  {
+    "mobId": 2230102,
+    "mobName": "Wild Boar",
+    "chineseMobName": "黑肥肥",
+    "itemId": 4031155,
+    "itemName": "Broken Mirror Glass",
+    "chineseItemName": "鏡子碎片",
+    "chance": 0.2,
+    "minQty": 1,
+    "maxQty": 1
   }
 ]

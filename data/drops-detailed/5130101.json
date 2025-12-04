@@ -2,309 +2,309 @@
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 256,
-    "maxQty": 348,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "石巨人"
+    "maxQty": 348
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1002086,
     "itemName": "Bronze Crusader Helm",
+    "chineseItemName": "青銅十字軍帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅十字軍帽",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1002247,
     "itemName": "Bronze Identity",
+    "chineseItemName": "青銅忍者頭巾",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅忍者頭巾",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1032002,
     "itemName": "Sapphire Earrings",
+    "chineseItemName": "藍寶石耳環",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍寶石耳環",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1040084,
     "itemName": "Dark Shadow",
+    "chineseItemName": "黑暗之影",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑暗之影",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1041080,
     "itemName": "Red Moon",
+    "chineseItemName": "赤月",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤月",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1041091,
     "itemName": "Green Ice Queen",
+    "chineseItemName": "綠鋼玉鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠鋼玉鎧甲",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1050048,
     "itemName": "White Calas",
+    "chineseItemName": "白魔法戰士衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白魔法戰士衣",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1061079,
     "itemName": "Red Moon Pants",
+    "chineseItemName": "赤月褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤月褲",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1061090,
     "itemName": "Green Ice Queen Skirt",
+    "chineseItemName": "綠鋼玉裙",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠鋼玉裙",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1072121,
     "itemName": "Blue Pierre Shoes",
+    "chineseItemName": "藍精靈鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍精靈鞋",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1072143,
     "itemName": "Green Goldwind Shoes",
+    "chineseItemName": "綠黃金風",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠黃金風",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1072303,
     "itemName": "Brown Double Boots",
+    "chineseItemName": "褐色強化皮靴",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐色強化皮靴",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1082025,
     "itemName": "Dark Knuckle",
+    "chineseItemName": "黑色長手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑色長手套",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1082076,
     "itemName": "Gold Cleave",
+    "chineseItemName": "黃金盜賊手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金盜賊手套",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1092002,
     "itemName": "Red Cross Shield",
+    "chineseItemName": "紅十字盾牌",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅十字盾牌",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1203003,
     "itemName": "Mokbi Throwing-Stars",
+    "chineseItemName": "黑色利刃",
     "chance": 0.0004,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑色利刃",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1203006,
     "itemName": "Kumbi Throwing-Stars",
+    "chineseItemName": "雪花標",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雪花標",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1312009,
     "itemName": "Hawkhead",
+    "chineseItemName": "猛禽斧",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "猛禽斧",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1372012,
     "itemName": "Crystal Wand",
+    "chineseItemName": "水晶短杖",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "水晶短杖",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 1452005,
     "itemName": "Ryden",
+    "chineseItemName": "雷電",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雷電",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 2000006,
     "itemName": "Mana Elixir",
+    "chineseItemName": "活力藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "活力藥水",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 2044501,
     "itemName": "Scroll for Bow for ATT 60%",
+    "chineseItemName": "弓攻擊卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "弓攻擊卷軸60%",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 2044601,
     "itemName": "Scroll for Crossbow for ATT 60%",
+    "chineseItemName": "弩攻擊卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "弩攻擊卷軸60%",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 4000022,
     "itemName": "Stone Golem Rubble",
+    "chineseItemName": "石塊",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "石塊",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5130101,
     "mobName": "Stone Golem",
+    "chineseMobName": "石巨人",
     "itemId": 4020008,
     "itemName": "Black Crystal Ore",
+    "chineseItemName": "黑水晶母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑水晶母礦",
-    "chineseMobName": "石巨人"
+    "maxQty": 1
   }
 ]

@@ -2,243 +2,243 @@
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 64,
-    "maxQty": 96,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "火石球"
+    "maxQty": 96
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 1032009,
     "itemName": "Yellow Square",
+    "chineseItemName": "方形耳環",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "方形耳環",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 1041054,
     "itemName": "Green Huntress Armor",
+    "chineseItemName": "綠浪人之服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠浪人之服",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 1041059,
     "itemName": "Sky Sneak",
+    "chineseItemName": "藍敏捷之服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍敏捷之服",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 1041064,
     "itemName": "Blueberry Lolica Armor",
+    "chineseItemName": "藍皮製鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍皮製鎧甲",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 1050000,
     "itemName": "White Crusader Chainmail",
+    "chineseItemName": "白十字鎖子甲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白十字鎖子甲",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 1061050,
     "itemName": "Green Huntress Pants",
+    "chineseItemName": "綠遊俠裙",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠遊俠裙",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 1061055,
     "itemName": "Sky Sneak Pants",
+    "chineseItemName": "藍敏捷褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍敏捷褲",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 1072089,
     "itemName": "Purple Salt Shoes",
+    "chineseItemName": "紫守護鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫守護鞋",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 1082052,
     "itemName": "Blue Lutia",
+    "chineseItemName": "藍守護手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍守護手套",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 1200001,
     "itemName": "Bronze Arrow for Bow",
+    "chineseItemName": "青銅弓箭",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅弓箭",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 1201001,
     "itemName": "Bronze Bolt for Crossbow",
+    "chineseItemName": "青銅弩箭",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅弩箭",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 1452006,
     "itemName": "Red Viper",
+    "chineseItemName": "火焰之弓",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "火焰之弓",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 2000001,
     "itemName": "Orange Potion",
+    "chineseItemName": "橘色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "橘色藥水",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 2040805,
     "itemName": "Scroll for Gloves for ATT 10%",
+    "chineseItemName": "手套攻擊卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "手套攻擊卷軸10%",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 2040926,
     "itemName": "Scroll for Shield for Magic ATT 15%",
+    "chineseItemName": "盾牌魔攻卷軸15%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "盾牌魔攻卷軸15%",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 4000085,
     "itemName": "Fire Sentinel Shellpiece",
+    "chineseItemName": "火石球的石塊",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "火石球的石塊",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 4004001,
     "itemName": "Wisdom Crystal Ore",
+    "chineseItemName": "智慧母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "智慧母礦",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 4006000,
     "itemName": "The Magic Rock",
+    "chineseItemName": "魔法石",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "魔法石",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 4010005,
     "itemName": "Orihalcon Ore",
+    "chineseItemName": "紫礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫礦石母礦",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200002,
     "mobName": "Fire Sentinel",
+    "chineseMobName": "火石球",
     "itemId": 4020000,
     "itemName": "Garnet Ore",
+    "chineseItemName": "石榴石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "石榴石母礦",
-    "chineseMobName": "火石球"
+    "maxQty": 1
   }
 ]

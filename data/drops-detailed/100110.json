@@ -2,78 +2,78 @@
   {
     "mobId": 100110,
     "mobName": "Bob",
+    "chineseMobName": "嫩寶",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 400,
-    "maxQty": 600,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "嫩寶"
+    "maxQty": 600
   },
   {
     "mobId": 100110,
     "mobName": "Bob",
+    "chineseMobName": "嫩寶",
     "itemId": 1002391,
     "itemName": "Green Bandana",
+    "chineseItemName": "綠色頭巾",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠色頭巾",
-    "chineseMobName": "嫩寶"
+    "maxQty": 1
   },
   {
     "mobId": 100110,
     "mobName": "Bob",
+    "chineseMobName": "嫩寶",
     "itemId": 1102000,
-    "itemName": "Green Napoleon",
-    "chance": 0.007,
-    "minQty": 1,
-    "maxQty": 1,
+    "itemName": "Green Adventurer Cape",
     "chineseItemName": "綠色冒險披風",
-    "chineseMobName": "嫩寶"
+    "chance": 0.007,
+    "minQty": 1,
+    "maxQty": 1
   },
   {
     "mobId": 100110,
     "mobName": "Bob",
+    "chineseMobName": "嫩寶",
     "itemId": 1102001,
-    "itemName": "Blue Napoleon",
-    "chance": 0.007,
-    "minQty": 1,
-    "maxQty": 1,
+    "itemName": "Blue Adventurer Cape",
     "chineseItemName": "藍色冒險披風",
-    "chineseMobName": "嫩寶"
+    "chance": 0.007,
+    "minQty": 1,
+    "maxQty": 1
   },
   {
     "mobId": 100110,
     "mobName": "Bob",
+    "chineseMobName": "嫩寶",
     "itemId": 1102002,
-    "itemName": "Red Napoleon",
-    "chance": 0.007,
-    "minQty": 1,
-    "maxQty": 1,
+    "itemName": "Red Adventurer Cape",
     "chineseItemName": "紅色冒險披風",
-    "chineseMobName": "嫩寶"
+    "chance": 0.007,
+    "minQty": 1,
+    "maxQty": 1
   },
   {
     "mobId": 100110,
     "mobName": "Bob",
+    "chineseMobName": "嫩寶",
     "itemId": 1102003,
-    "itemName": "White Napoleon",
+    "itemName": "White Adventurer Cape",
+    "chineseItemName": "白色冒險披風",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白色冒險披風",
-    "chineseMobName": "嫩寶"
+    "maxQty": 1
   },
   {
     "mobId": 100110,
     "mobName": "Bob",
+    "chineseMobName": "嫩寶",
     "itemId": 1102004,
-    "itemName": "Black Napoleon",
+    "itemName": "Black Adventurer Cape",
+    "chineseItemName": "黑色冒險披風",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑色冒險披風",
-    "chineseMobName": "嫩寶"
+    "maxQty": 1
   }
 ]

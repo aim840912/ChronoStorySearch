@@ -2,309 +2,309 @@
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 96,
-    "maxQty": 144,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 144
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1002098,
     "itemName": "Gold Nordic Helm",
+    "chineseItemName": "黃金諾曼頭盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金諾曼頭盔",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1002103,
     "itemName": "Pink Moon Conehat",
+    "chineseItemName": "紅色魔法帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色魔法帽",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1002166,
     "itemName": "Red Distinction",
+    "chineseItemName": "紅羽絲絨帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅羽絲絨帽",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1002169,
     "itemName": "Brown Distinction",
+    "chineseItemName": "褐羽絲絨帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐羽絲絨帽",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1032008,
     "itemName": "Cat's Eye",
+    "chineseItemName": "貓眼耳環",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "貓眼耳環",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1041075,
     "itemName": "Red Shadow",
+    "chineseItemName": "火焰之影",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "火焰之影",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1060057,
     "itemName": "Dark Hunter's Pants",
+    "chineseItemName": "黑遊俠之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑遊俠之褲",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1061070,
     "itemName": "Red Shadow Pants",
+    "chineseItemName": "滄海之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "滄海之褲",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1072090,
     "itemName": "Red Salt Shoes",
+    "chineseItemName": "紅守護鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅守護鞋",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1072132,
     "itemName": "Emerald Hildon Boots",
+    "chineseItemName": "祖母綠將軍靴",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "祖母綠將軍靴",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1072140,
     "itemName": "Pink Goldwind Shoes",
+    "chineseItemName": "粉紅黃金風",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "粉紅黃金風",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1082066,
     "itemName": "Brown Moon Gloves",
+    "chineseItemName": "黃月手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃月手套",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1203003,
     "itemName": "Mokbi Throwing-Stars",
+    "chineseItemName": "黑色利刃",
     "chance": 0.0004,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑色利刃",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1203007,
     "itemName": "Icicle",
+    "chineseItemName": "冰錐",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "冰錐",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1412004,
     "itemName": "Niam",
+    "chineseItemName": "綠蛇刀",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠蛇刀",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1462004,
     "itemName": "Eagle Crow",
+    "chineseItemName": "鷹弩",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鷹弩",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1472013,
     "itemName": "Dark Guardian",
+    "chineseItemName": "黑守護拳套",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑守護拳套",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 1472017,
     "itemName": "Dark Avarice",
+    "chineseItemName": "黑護腕",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑護腕",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 2000002,
     "itemName": "White Potion",
+    "chineseItemName": "白色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白色藥水",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 2000006,
     "itemName": "Mana Elixir",
+    "chineseItemName": "活力藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "活力藥水",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 2040001,
     "itemName": "Scroll for Helmet for Defense 60%",
+    "chineseItemName": "頭盔防禦卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "頭盔防禦卷軸60%",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 2044412,
     "itemName": "Scroll for Pole Arm for Accuracy 60%",
+    "chineseItemName": "矛命中卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "矛命中卷軸60%",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 4000023,
     "itemName": "Cold Eye Tail",
+    "chineseItemName": "冰獨眼獸之尾巴",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "冰獨眼獸之尾巴",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 4010001,
     "itemName": "Steel Ore",
+    "chineseItemName": "鋼鐵母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋼鐵母礦",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 4010005,
     "itemName": "Orihalcon Ore",
+    "chineseItemName": "紫礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫礦石母礦",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 4230100,
     "mobName": "Cold Eye",
+    "chineseMobName": "冰獨眼獸",
     "itemId": 4010006,
     "itemName": "Gold Ore",
+    "chineseItemName": "黃金母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金母礦",
-    "chineseMobName": "冰獨眼獸"
+    "maxQty": 1
   }
 ]

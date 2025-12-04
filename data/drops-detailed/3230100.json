@@ -2,320 +2,320 @@
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 60,
-    "maxQty": 90,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 90
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1002025,
     "itemName": "Red Duke",
+    "chineseItemName": "紅色武士頭盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色武士頭盔",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1002143,
     "itemName": "Green Matty",
+    "chineseItemName": "綠星魔法帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠星魔法帽",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1002180,
     "itemName": "Dark Burgler",
+    "chineseItemName": "黑防風帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑防風帽",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1040021,
     "itemName": "Red Hwarang Shirt",
+    "chineseItemName": "紅龍服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅龍服",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1040063,
     "itemName": "Black Knucklevest",
+    "chineseItemName": "黑暗影之服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑暗影之服",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1040079,
     "itemName": "Brown Piette",
+    "chineseItemName": "褐貴族之服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐貴族之服",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1050045,
     "itemName": "Blue Calas",
+    "chineseItemName": "藍魔法戰士衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍魔法戰士衣",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1051025,
     "itemName": "Blue Moonlight",
+    "chineseItemName": "藍色月光服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色月光服",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1060016,
     "itemName": "Black Martial Arts Pants",
+    "chineseItemName": "黑武褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑武褲",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1060052,
     "itemName": "Black Knucklevest Pants",
+    "chineseItemName": "黑暗影之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑暗影之褲",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1060069,
     "itemName": "Brown Piette Pants",
+    "chineseItemName": "褐貴族褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐貴族褲",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1061069,
     "itemName": "Purple Shadow Pants",
+    "chineseItemName": "樹林之褲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "樹林之褲",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1202001,
     "itemName": "Split Bullet",
+    "chineseItemName": "分裂子彈",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "分裂子彈",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1322003,
     "itemName": "Lollipop",
+    "chineseItemName": "棒棒果",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "棒棒果",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1432003,
     "itemName": "Nakamaki",
+    "chineseItemName": "刺槍",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "刺槍",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1482004,
     "itemName": "Prime Hands",
+    "chineseItemName": "精鋼拳套",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "精鋼拳套",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1482005,
     "itemName": "Silver Maiden",
+    "chineseItemName": "利刃拳套",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "利刃拳套",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 1492006,
     "itemName": "Lunar Shooter",
+    "chineseItemName": "銀月神射",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀月神射",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 2000002,
     "itemName": "White Potion",
+    "chineseItemName": "白色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白色藥水",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 2002005,
     "itemName": "Sniper Potion",
+    "chineseItemName": "命中藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "命中藥水",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 2044502,
     "itemName": "Scroll for Bow for ATT 10%",
-    "chance": 0.0003,
-    "minQty": 1,
-    "maxQty": 1,
     "chineseItemName": "弓攻擊卷軸10%",
-    "chineseMobName": "風獨眼獸"
-  },
-  {
-    "mobId": 3230100,
-    "mobName": "Curse Eye",
-    "itemId": 2044902,
-    "itemName": "Scroll for Gun for ATT 10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "火槍攻擊卷軸10%",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 2044901,
     "itemName": "Scroll for Gun for ATT 60%",
+    "chineseItemName": "火槍攻擊卷軸60%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "火槍攻擊卷軸60%",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
+    "itemId": 2044902,
+    "itemName": "Scroll for Gun for ATT 10%",
+    "chineseItemName": "火槍攻擊卷軸10%",
+    "chance": 0.0003,
+    "minQty": 1,
+    "maxQty": 1
+  },
+  {
+    "mobId": 3230100,
+    "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 4000013,
     "itemName": "Curse Eye Tail",
+    "chineseItemName": "風獨眼獸之尾巴",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "風獨眼獸之尾巴",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 4001004,
     "itemName": "Blackbull's deed to the land",
+    "chineseItemName": "酋長的地契",
     "chance": 0.005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "酋長的地契",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 4010005,
     "itemName": "Orihalcon Ore",
+    "chineseItemName": "紫礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫礦石母礦",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   },
   {
     "mobId": 3230100,
     "mobName": "Curse Eye",
+    "chineseMobName": "風獨眼獸",
     "itemId": 4020006,
     "itemName": "Topaz Ore",
+    "chineseItemName": "黃晶母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃晶母礦",
-    "chineseMobName": "風獨眼獸"
+    "maxQty": 1
   }
 ]

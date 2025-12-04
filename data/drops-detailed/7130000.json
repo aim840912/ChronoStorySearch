@@ -2,386 +2,386 @@
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 332,
-    "maxQty": 490,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 490
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1002029,
     "itemName": "Red Oriental Helmet",
+    "chineseItemName": "將軍的紅頭盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "將軍的紅頭盔",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1002094,
     "itemName": "Bronze Planet",
+    "chineseItemName": "青銅戰盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅戰盔",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1002248,
     "itemName": "Silver Identity",
+    "chineseItemName": "銀忍者頭巾",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀忍者頭巾",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1002253,
     "itemName": "Blue Infinium Circlet",
+    "chineseItemName": "藍神聖之冠",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍神聖之冠",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1002275,
     "itemName": "Blue Falcon",
+    "chineseItemName": "藍色飛翔帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色飛翔帽",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1040105,
     "itemName": "Brown Studded Top",
+    "chineseItemName": "褐玄武之甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐玄武之甲",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1040108,
     "itemName": "Green Pirate Top",
+    "chineseItemName": "綠隱者之服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠隱者之服",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1050063,
     "itemName": "Green Linnex",
+    "chineseItemName": "綠飄雲之衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠飄雲之衣",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1051041,
     "itemName": "Red Choro",
+    "chineseItemName": "赤草露",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤草露",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1051044,
     "itemName": "Blue Anakarune",
+    "chineseItemName": "藍聖黨之服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍聖黨之服",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1051053,
     "itemName": "Red Requierre",
+    "chineseItemName": "紅天上之衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅天上之衣",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1051062,
     "itemName": "Blue Lineros",
+    "chineseItemName": "藍飄雲之衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍飄雲之衣",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1060093,
     "itemName": "Brown Studded Pants",
+    "chineseItemName": "褐玄武之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐玄武之褲",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1060097,
     "itemName": "Green Pirate Pants",
+    "chineseItemName": "綠隱者之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠隱者之褲",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1072145,
     "itemName": "Blue Gore Boots",
+    "chineseItemName": "藍花精鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍花精鞋",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1072147,
     "itemName": "Sapphire Camel Boots",
+    "chineseItemName": "藍十字鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍十字鞋",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1072150,
     "itemName": "Blood Moss Boots",
+    "chineseItemName": "紅無痕之鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅無痕之鞋",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1072177,
     "itemName": "Green Enigma Shoes",
+    "chineseItemName": "綠密林之鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠密林之鞋",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1072210,
     "itemName": "Red Rivers Boots",
+    "chineseItemName": "紅色水晶靴",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色水晶靴",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1072312,
     "itemName": "Blue Pageant",
+    "chineseItemName": "藍色伯爵靴",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色伯爵靴",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 1402012,
     "itemName": "Doombringer",
+    "chineseItemName": "霸王劍",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "霸王劍",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 2000006,
     "itemName": "Mana Elixir",
+    "chineseItemName": "活力藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "活力藥水",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
-    "itemId": 2050004,
-    "itemName": "All Cure Potion",
-    "chance": 0.05,
-    "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "萬能療傷藥",
-    "chineseMobName": "黑格里芬"
-  },
-  {
-    "mobId": 7130000,
-    "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 2040412,
     "itemName": "Scroll for Topwear for LUK 10%",
+    "chineseItemName": "上衣幸運卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "上衣幸運卷軸10%",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 2040419,
     "itemName": "Scroll for Topwear for STR 10%",
+    "chineseItemName": "上衣力量卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "上衣力量卷軸10%",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 2044601,
     "itemName": "Scroll for Crossbow for ATT 60%",
+    "chineseItemName": "弩攻擊卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "弩攻擊卷軸60%",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 2044901,
     "itemName": "Scroll for Gun for ATT 60%",
+    "chineseItemName": "火槍攻擊卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "火槍攻擊卷軸60%",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
+    "itemId": 2050004,
+    "itemName": "All Cure Potion",
+    "chineseItemName": "萬能療傷藥",
+    "chance": 0.05,
+    "minQty": 1,
+    "maxQty": 1
+  },
+  {
+    "mobId": 7130000,
+    "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 4000074,
     "itemName": "Lucida Tail",
+    "chineseItemName": "黑格里芬之尾",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑格里芬之尾",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 4004003,
-    "itemName": "LUK Crystal Ore",
+    "itemName": "Lucky Crystal Ore",
+    "chineseItemName": "幸運母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "幸運母礦",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 4006001,
     "itemName": "The Summoning Rock",
+    "chineseItemName": "召喚石",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "召喚石",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 4010004,
     "itemName": "Silver Ore",
+    "chineseItemName": "銀的母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀的母礦",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 4020006,
     "itemName": "Topaz Ore",
+    "chineseItemName": "黃晶母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃晶母礦",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   },
   {
     "mobId": 7130000,
     "mobName": "Lucida",
+    "chineseMobName": "黑格里芬",
     "itemId": 4161021,
     "itemName": "[Storybook] Formula for Black Cloud",
+    "chineseItemName": "(故事書)黑雲製作法",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "(故事書)黑雲製作法",
-    "chineseMobName": "黑格里芬"
+    "maxQty": 1
   }
 ]

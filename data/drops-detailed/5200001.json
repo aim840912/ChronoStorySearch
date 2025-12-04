@@ -2,232 +2,232 @@
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 64,
-    "maxQty": 96,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "冰石球"
+    "maxQty": 96
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 1002142,
     "itemName": "Blue Matty",
+    "chineseItemName": "藍星魔法帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍星魔法帽",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 1040024,
     "itemName": "Blue Bennis Chainmail",
+    "chineseItemName": "藍獵人服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍獵人服",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 1041047,
     "itemName": "Red Steal",
+    "chineseItemName": "紅寂靜之服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅寂靜之服",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 1050026,
     "itemName": "White Wizard Robe",
+    "chineseItemName": "白牧師長袍",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白牧師長袍",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 1061043,
     "itemName": "Red Steal Pants",
+    "chineseItemName": "紅寂靜裙",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅寂靜裙",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 1062006,
     "itemName": "Bennis Chainpants",
+    "chineseItemName": "打獵褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "打獵褲",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 1200001,
     "itemName": "Bronze Arrow for Bow",
+    "chineseItemName": "青銅弓箭",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅弓箭",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 1201001,
     "itemName": "Bronze Bolt for Crossbow",
+    "chineseItemName": "青銅弩箭",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅弩箭",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 1322009,
     "itemName": "Plunger",
+    "chineseItemName": "通通樂",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "通通樂",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 1422007,
     "itemName": "Titan",
+    "chineseItemName": "巨人錘",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "巨人錘",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 1442003,
     "itemName": "Axe Pole Arm",
+    "chineseItemName": "斧戟",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "斧戟",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 2000001,
     "itemName": "Orange Potion",
+    "chineseItemName": "橘色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "橘色藥水",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 2041016,
     "itemName": "Scroll for Cape for INT 60%",
+    "chineseItemName": "披風智力卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風智力卷軸60%",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 4000084,
     "itemName": "Ice Sentinel Shellpiece",
+    "chineseItemName": "冰石球的石塊",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "冰石球的石塊",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 4004001,
     "itemName": "Wisdom Crystal Ore",
+    "chineseItemName": "智慧母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "智慧母礦",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 4006000,
     "itemName": "The Magic Rock",
+    "chineseItemName": "魔法石",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "魔法石",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 4006001,
     "itemName": "The Summoning Rock",
+    "chineseItemName": "召喚石",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "召喚石",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 4010002,
     "itemName": "Mithril Ore",
+    "chineseItemName": "鋰礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋰礦石母礦",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   },
   {
     "mobId": 5200001,
     "mobName": "Ice Sentinel",
+    "chineseMobName": "冰石球",
     "itemId": 4020002,
     "itemName": "AquaMarine Ore",
+    "chineseItemName": "海藍石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "海藍石母礦",
-    "chineseMobName": "冰石球"
+    "maxQty": 1
   }
 ]
