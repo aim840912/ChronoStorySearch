@@ -2,309 +2,309 @@
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 235,
-    "maxQty": 348,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 348
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 1002024,
     "itemName": "Emerald Dome",
+    "chineseItemName": "祖母綠武士頭盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "祖母綠武士頭盔",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 1002045,
     "itemName": "Blue Bone Helm",
+    "chineseItemName": "藍色骷髏頭盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色骷髏頭盔",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 1002181,
     "itemName": "Red Pilfer",
+    "chineseItemName": "紅海盜頭巾",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅海盜頭巾",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 1002267,
     "itemName": "Red Polyfeather Hat",
+    "chineseItemName": "赤弓羽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤弓羽",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 1002631,
     "itemName": "Brown Leather Ocean Hat",
+    "chineseItemName": "褐色皮製遠洋帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐色皮製遠洋帽",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 1040084,
     "itemName": "Dark Shadow",
+    "chineseItemName": "黑暗之影",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑暗之影",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 1051041,
     "itemName": "Red Choro",
+    "chineseItemName": "赤草露",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤草露",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 1060073,
     "itemName": "Dark Shadow Pants",
+    "chineseItemName": "黑暗之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑暗之褲",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 1072123,
     "itemName": "Green Steel-Tip Boots",
+    "chineseItemName": "綠弓手鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠弓手鞋",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 1072131,
     "itemName": "Purple Goni Shoes",
+    "chineseItemName": "紫雷電鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫雷電鞋",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 1082009,
     "itemName": "Steel Brist",
+    "chineseItemName": "鋼鐵合金手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋼鐵合金手套",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 1082081,
     "itemName": "Red Pennance",
+    "chineseItemName": "紅元素手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅元素手套",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 1202002,
     "itemName": "Mighty Bullet",
+    "chineseItemName": "強力子彈",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "強力子彈",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 1302010,
     "itemName": "Jeweled Katar",
+    "chineseItemName": "樹靈之劍",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "樹靈之劍",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 1312007,
     "itemName": "Blue Counter",
+    "chineseItemName": "青光斧",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青光斧",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 2000002,
     "itemName": "White Potion",
+    "chineseItemName": "白色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白色藥水",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 2041017,
     "itemName": "Scroll for Cape for INT 10%",
+    "chineseItemName": "披風智力卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風智力卷軸10%",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 2044001,
     "itemName": "Scroll for Two-Handed Sword for ATT 60%",
+    "chineseItemName": "雙手劍攻擊卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙手劍攻擊卷軸60%",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 2044212,
     "itemName": "Scroll for Two-Handed BW for Accuracy 60%",
+    "chineseItemName": "雙手棍命中卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙手棍命中卷軸60%",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 4000071,
     "itemName": "Lioner Tail",
+    "chineseItemName": "黃獨角獅尾",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃獨角獅尾",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 4003005,
     "itemName": "Soft Feather",
+    "chineseItemName": "柔軟的羽毛",
     "chance": 0.2,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "柔軟的羽毛",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 4004001,
     "itemName": "Wisdom Crystal Ore",
+    "chineseItemName": "智慧母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "智慧母礦",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 4006001,
     "itemName": "The Summoning Rock",
+    "chineseItemName": "召喚石",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "召喚石",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 4010002,
     "itemName": "Mithril Ore",
+    "chineseItemName": "鋰礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋰礦石母礦",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   },
   {
     "mobId": 5120002,
     "mobName": "Lioner",
+    "chineseMobName": "黃獨角獅",
     "itemId": 4020003,
     "itemName": "Emerald Ore",
+    "chineseItemName": "祖母綠母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "祖母綠母礦",
-    "chineseMobName": "黃獨角獅"
+    "maxQty": 1
   }
 ]

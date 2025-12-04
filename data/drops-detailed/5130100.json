@@ -2,397 +2,397 @@
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 200,
-    "maxQty": 300,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "青龍"
+    "maxQty": 300
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1002631,
     "itemName": "Brown Leather Ocean Hat",
+    "chineseItemName": "褐色皮製遠洋帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐色皮製遠洋帽",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1040089,
     "itemName": "Umber Shouldermail",
+    "chineseItemName": "黑板金鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑板金鎧甲",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1041077,
     "itemName": "Maroon Moon",
+    "chineseItemName": "紫月",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫月",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1041079,
     "itemName": "Brown Moon",
+    "chineseItemName": "黃月",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃月",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1051030,
     "itemName": "Dark Calaf",
+    "chineseItemName": "黑妖精禮服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑妖精禮服",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1051037,
     "itemName": "Blue Lumati",
+    "chineseItemName": "藍貴族禮服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍貴族禮服",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1051045,
     "itemName": "Red Anakarune",
+    "chineseItemName": "紅聖黨之服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅聖黨之服",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1060078,
     "itemName": "Umber Shouldermail Pants",
+    "chineseItemName": "黑板金褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑板金褲",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1061076,
     "itemName": "Maroon Moon Pants",
+    "chineseItemName": "紫月褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫月褲",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1072108,
     "itemName": "Black Green-Lined Shoes",
+    "chineseItemName": "綠流星鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠流星鞋",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1072114,
     "itemName": "Red Moon Shoes",
+    "chineseItemName": "紅月鞋",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅月鞋",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1072116,
     "itemName": "Gold Moon Shoes",
+    "chineseItemName": "黃月鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃月鞋",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1082083,
     "itemName": "Dark Willow",
+    "chineseItemName": "黑意志手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑意志手套",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1092008,
     "itemName": "Pan Lid",
+    "chineseItemName": "鍋蓋",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鍋蓋",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1203006,
     "itemName": "Kumbi Throwing-Stars",
+    "chineseItemName": "雪花標",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雪花標",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1332016,
     "itemName": "Sai",
+    "chineseItemName": "華氏短劍",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "華氏短劍",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1382006,
     "itemName": "Thorns",
+    "chineseItemName": "白龍之杖",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白龍之杖",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1412005,
     "itemName": "Sabretooth",
+    "chineseItemName": "格鬥斧",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "格鬥斧",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1432005,
     "itemName": "Zeco",
+    "chineseItemName": "雙天戟",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙天戟",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1452007,
     "itemName": "Vaulter 2000",
+    "chineseItemName": "暴風弓",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "暴風弓",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1462004,
     "itemName": "Eagle Crow",
+    "chineseItemName": "鷹弩",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鷹弩",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 1472017,
     "itemName": "Dark Avarice",
+    "chineseItemName": "黑護腕",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑護腕",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 2000002,
     "itemName": "White Potion",
+    "chineseItemName": "白色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白色藥水",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 2002001,
     "itemName": "Speed Potion",
+    "chineseItemName": "速度藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "速度藥水",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 2002004,
     "itemName": "Warrior Potion",
+    "chineseItemName": "攻擊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "攻擊藥水",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 2012000,
     "itemName": "Drake's Blood",
+    "chineseItemName": "暴龍之血",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "暴龍之血",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 2012003,
     "itemName": "Drake's Meat",
+    "chineseItemName": "暴龍之肉",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "暴龍之肉",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 2040026,
     "itemName": "Scroll for Helmet for INT 10%",
+    "chineseItemName": "頭盔智力卷軸10%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "頭盔智力卷軸10%",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 2040402,
     "itemName": "Scroll for Topwear for Defense 10%",
+    "chineseItemName": "上衣防禦卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "上衣防禦卷軸10%",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 4000014,
     "itemName": "Drake Skull",
+    "chineseItemName": "暴龍的頭骨",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "暴龍的頭骨",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 4000030,
     "itemName": "Dragon Skin",
+    "chineseItemName": "龍皮",
     "chance": 0.06,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "龍皮",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 4010004,
     "itemName": "Silver Ore",
+    "chineseItemName": "銀的母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀的母礦",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 4010006,
     "itemName": "Gold Ore",
+    "chineseItemName": "黃金母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金母礦",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   },
   {
     "mobId": 5130100,
     "mobName": "Drake",
+    "chineseMobName": "青龍",
     "itemId": 4020007,
     "itemName": "Diamond Ore",
+    "chineseItemName": "鑽石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鑽石母礦",
-    "chineseMobName": "青龍"
+    "maxQty": 1
   }
 ]

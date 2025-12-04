@@ -2,419 +2,419 @@
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 332,
-    "maxQty": 498,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "黑龍"
+    "maxQty": 498
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1002208,
     "itemName": "Blue Sonata",
+    "chineseItemName": "藍黑太陽帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍黑太陽帽",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1002242,
     "itemName": "Red Seraphis",
+    "chineseItemName": "紅和平之帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅和平之帽",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1002247,
     "itemName": "Bronze Identity",
+    "chineseItemName": "青銅忍者頭巾",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅忍者頭巾",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1040091,
     "itemName": "Red Orientican",
+    "chineseItemName": "紅鋼玉鎧甲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅鋼玉鎧甲",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1041097,
     "itemName": "Aqua Platina",
+    "chineseItemName": "藍暴風甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍暴風甲",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1041101,
     "itemName": "Blue Mystique",
+    "chineseItemName": "藍朱雀之甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍朱雀之甲",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1052122,
     "itemName": "Red Viska",
+    "chineseItemName": "紅色威斯克套裝",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色威斯克套裝",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1060080,
     "itemName": "Red Orientican Pants",
+    "chineseItemName": "紅鋼玉褲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅鋼玉褲",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1061096,
     "itemName": "Aqua Platina Pants",
+    "chineseItemName": "藍暴風褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍暴風褲",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1061100,
     "itemName": "Blue Mystique Pants",
+    "chineseItemName": "藍朱雀之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍朱雀之褲",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1072172,
     "itemName": "Green Pirate Boots",
+    "chineseItemName": "綠飛影鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠飛影鞋",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1082076,
     "itemName": "Gold Cleave",
+    "chineseItemName": "黃金盜賊手套",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金盜賊手套",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1082098,
     "itemName": "Brown Lorin",
+    "chineseItemName": "褐戰魂手套",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐戰魂手套",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1082109,
     "itemName": "Red Cordon",
+    "chineseItemName": "紅天使手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅天使手套",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1092017,
     "itemName": "Gold Ancient Shield",
+    "chineseItemName": "黃金古盾牌",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金古盾牌",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1372015,
     "itemName": "Angel Wings",
+    "chineseItemName": "天使之翼",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "天使之翼",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1412008,
     "itemName": "Chrono",
+    "chineseItemName": "雷電斧",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雷電斧",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1432007,
     "itemName": "Redemption",
+    "chineseItemName": "銀龍槍",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀龍槍",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 1442010,
     "itemName": "Skylar",
+    "chineseItemName": "方天戟",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "方天戟",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 2000002,
     "itemName": "White Potion",
+    "chineseItemName": "白色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白色藥水",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 2012000,
     "itemName": "Drake's Blood",
+    "chineseItemName": "暴龍之血",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "暴龍之血",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 2012003,
     "itemName": "Drake's Meat",
+    "chineseItemName": "暴龍之肉",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "暴龍之肉",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 2040001,
     "itemName": "Scroll for Helmet for Defense 60%",
+    "chineseItemName": "頭盔防禦卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "頭盔防禦卷軸60%",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 2040024,
     "itemName": "Scroll for Helmet for INT 100%",
+    "chineseItemName": "頭盔智力卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "頭盔智力卷軸100%",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 2040343,
     "itemName": "Scroll for Accessory for DEX 100%",
+    "chineseItemName": "飾品敏捷卷軸100%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "飾品敏捷卷軸100%",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 2040401,
     "itemName": "Scroll for Topwear for Defense 60%",
+    "chineseItemName": "上衣防禦卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "上衣防禦卷軸60%",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 2040613,
     "itemName": "Scroll for Bottomwear for DEX 60%",
+    "chineseItemName": "褲裙敏捷卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褲裙敏捷卷軸60%",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 2041004,
     "itemName": "Scroll for Cape for Defense 60%",
+    "chineseItemName": "披風防禦卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風防禦卷軸60%",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 2041045,
     "itemName": "Scroll for Cape for Defense 15%",
+    "chineseItemName": "披風防禦卷軸15%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風防禦卷軸15%",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 4000030,
     "itemName": "Dragon Skin",
+    "chineseItemName": "龍皮",
     "chance": 0.06,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "龍皮",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 4000186,
     "itemName": "Dark Drake's Horn",
+    "chineseItemName": "黑龍之角",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑龍之角",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 4010003,
     "itemName": "Adamantium Ore",
+    "chineseItemName": "朱礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "朱礦石母礦",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 4010005,
     "itemName": "Orihalcon Ore",
+    "chineseItemName": "紫礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫礦石母礦",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 4010006,
     "itemName": "Gold Ore",
+    "chineseItemName": "黃金母礦",
     "chance": 0.007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金母礦",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 4020007,
     "itemName": "Diamond Ore",
+    "chineseItemName": "鑽石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鑽石母礦",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230601,
     "mobName": "Dark Drake",
+    "chineseMobName": "黑龍",
     "itemId": 4020008,
     "itemName": "Black Crystal Ore",
+    "chineseItemName": "黑水晶母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑水晶母礦",
-    "chineseMobName": "黑龍"
+    "maxQty": 1
   }
 ]

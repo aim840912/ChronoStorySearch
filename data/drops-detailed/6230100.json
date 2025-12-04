@@ -2,441 +2,441 @@
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 231,
-    "maxQty": 341,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "魔龍"
+    "maxQty": 341
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1002021,
     "itemName": "Steel Nordic Helm",
+    "chineseItemName": "諾曼頭盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "諾曼頭盔",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1002166,
     "itemName": "Red Distinction",
+    "chineseItemName": "紅羽絲絨帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅羽絲絨帽",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1002218,
     "itemName": "Dark Golden Circlet",
+    "chineseItemName": "黑黃金法冠",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑黃金法冠",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1040095,
     "itemName": "Blue China",
+    "chineseItemName": "青陽",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青陽",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1041087,
     "itemName": "Red Shouldermail",
+    "chineseItemName": "紅將軍鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅將軍鎧甲",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1041103,
     "itemName": "Red Mystique",
+    "chineseItemName": "紅朱雀之甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅朱雀之甲",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1050047,
     "itemName": "Orange Calas",
+    "chineseItemName": "朱紅魔法戰士衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "朱紅魔法戰士衣",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1050060,
     "itemName": "Red Tai",
+    "chineseItemName": "赤旋風甲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤旋風甲",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1051045,
     "itemName": "Red Anakarune",
+    "chineseItemName": "紅聖黨之服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅聖黨之服",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1051054,
     "itemName": "Brown Requierre",
+    "chineseItemName": "褐天上之衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐天上之衣",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1060084,
     "itemName": "Blue China Pants",
+    "chineseItemName": "青陽褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青陽褲",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1061086,
     "itemName": "Red Shouldermail Pants",
+    "chineseItemName": "紅將軍褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅將軍褲",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1061102,
     "itemName": "Red Mystique Pants",
+    "chineseItemName": "紅朱雀之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅朱雀之褲",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1072148,
     "itemName": "Orihalcon Camel Boots",
+    "chineseItemName": "紫十字鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫十字鞋",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1072154,
     "itemName": "Blue Carzen Boots",
+    "chineseItemName": "藍飛魂鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍飛魂鞋",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1082061,
     "itemName": "Dark Clench",
+    "chineseItemName": "黑戰鬥手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑戰鬥手套",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1082066,
     "itemName": "Brown Moon Gloves",
+    "chineseItemName": "黃月手套",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃月手套",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1082090,
     "itemName": "Sephia Garner",
+    "chineseItemName": "赤神功手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤神功手套",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1082106,
     "itemName": "Blue Eyes",
+    "chineseItemName": "藍神眼手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍神眼手套",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1082204,
     "itemName": "Black Bisk",
+    "chineseItemName": "黑色威斯克手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑色威斯克手套",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1102016,
     "itemName": "Red Magic Cape",
+    "chineseItemName": "紅色魔法披風",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色魔法披風",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1203008,
     "itemName": "Tobi Throwing-Stars",
+    "chineseItemName": "梅之標",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "梅之標",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1382006,
     "itemName": "Thorns",
+    "chineseItemName": "白龍之杖",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白龍之杖",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1422005,
     "itemName": "Golden Mole",
+    "chineseItemName": "黃金錘",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金錘",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1442010,
     "itemName": "Skylar",
+    "chineseItemName": "方天戟",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "方天戟",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 1472023,
     "itemName": "Blood Gigantic",
+    "chineseItemName": "赤紅戰神拳套",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤紅戰神拳套",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 2000005,
     "itemName": "Power Elixir",
+    "chineseItemName": "超級藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "超級藥水",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 2000006,
     "itemName": "Mana Elixir",
+    "chineseItemName": "活力藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "活力藥水",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 2040001,
     "itemName": "Scroll for Helmet for Defense 60%",
+    "chineseItemName": "頭盔防禦卷軸60%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "頭盔防禦卷軸60%",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 2040323,
     "itemName": "Scroll for Earring for LUK 10%",
+    "chineseItemName": "耳環幸運卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "耳環幸運卷軸10%",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 2040823,
     "itemName": "Scroll for Gloves for Defense 100%",
+    "chineseItemName": "手套生命卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "手套生命卷軸100%",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 2043201,
     "itemName": "Scroll for One-Handed BW for ATT 60%",
+    "chineseItemName": "單手棍攻擊卷軸60%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "單手棍攻擊卷軸60%",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 2043212,
     "itemName": "Scroll for One-Handed BW for Accuracy 60%",
+    "chineseItemName": "單手棍命中卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "單手棍命中卷軸60%",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 2043701,
     "itemName": "Scroll for Wand for Magic ATT 60%",
+    "chineseItemName": "短杖魔力卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "短杖魔力卷軸60%",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 2043801,
     "itemName": "Scroll for Staff for Magic ATT 60%",
+    "chineseItemName": "長杖魔力卷軸60%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "長杖魔力卷軸60%",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 2044809,
     "itemName": "Scroll for Knuckler for Accuracy 10%",
+    "chineseItemName": "指虎命中卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "指虎命中卷軸10%",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 4000027,
     "itemName": "Wild Kargo Eye",
+    "chineseItemName": "魔龍之眼",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "魔龍之眼",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 4010006,
     "itemName": "Gold Ore",
+    "chineseItemName": "黃金母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金母礦",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   },
   {
     "mobId": 6230100,
     "mobName": "Wild Kargo",
+    "chineseMobName": "魔龍",
     "itemId": 4020008,
     "itemName": "Black Crystal Ore",
+    "chineseItemName": "黑水晶母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑水晶母礦",
-    "chineseMobName": "魔龍"
+    "maxQty": 1
   }
 ]

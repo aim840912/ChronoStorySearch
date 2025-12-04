@@ -2,298 +2,298 @@
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 74,
-    "maxQty": 144,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "鱷魚"
+    "maxQty": 144
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
-    "itemId": 4031164,
-    "itemName": "Alligator Skin Pouch",
-    "chance": 0.3,
-    "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鱷魚皮革袋",
-    "chineseMobName": "鱷魚"
-  },
-  {
-    "mobId": 3110100,
-    "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 1002622,
     "itemName": "White Oceania Cap",
+    "chineseItemName": "白色遠洋帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白色遠洋帽",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 1041051,
     "itemName": "Red Amoria Top",
+    "chineseItemName": "紅神聖法衣",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅神聖法衣",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 1051013,
     "itemName": "Yellow Engrit",
+    "chineseItemName": "黃護身鎧甲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃護身鎧甲",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 1061047,
     "itemName": "Red Amoria Skirt",
+    "chineseItemName": "紅神聖裙",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅神聖裙",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 1061078,
     "itemName": "Brown Moon Pants",
+    "chineseItemName": "黃月褲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃月褲",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 1072112,
     "itemName": "Mithril Trigger",
+    "chineseItemName": "藍鐵頭鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍鐵頭鞋",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 1082046,
     "itemName": "Steel Arbion",
+    "chineseItemName": "鋼鐵追擊手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋼鐵追擊手套",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 1082049,
     "itemName": "Green Marker",
+    "chineseItemName": "綠擊中手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠擊中手套",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 1092012,
     "itemName": "Steel Tower Shield",
+    "chineseItemName": "鋼鐵方盾",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋼鐵方盾",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 1322009,
     "itemName": "Plunger",
+    "chineseItemName": "通通樂",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "通通樂",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 1332014,
     "itemName": "Gephart",
+    "chineseItemName": "暗影刃",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "暗影刃",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 1422001,
     "itemName": "Mithril Maul",
+    "chineseItemName": "鋰礦錘",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋰礦錘",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 1432005,
     "itemName": "Zeco",
+    "chineseItemName": "雙天戟",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙天戟",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 1442011,
     "itemName": "Surfboard",
+    "chineseItemName": "衝浪板",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "衝浪板",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 1442028,
     "itemName": "Black Surfboard",
+    "chineseItemName": "深藍衝浪板",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "深藍衝浪板",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 2000002,
     "itemName": "White Potion",
+    "chineseItemName": "白色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白色藥水",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 2041005,
     "itemName": "Scroll for Cape for Defense 10%",
+    "chineseItemName": "披風防禦卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風防禦卷軸10%",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 2041028,
     "itemName": "Dark Scroll for Cape for Defense 70%",
+    "chineseItemName": "披風防禦詛咒卷軸70%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風防禦詛咒卷軸70%",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 2044802,
     "itemName": "Scroll for Knuckler for ATT 10%",
+    "chineseItemName": "指虎攻擊卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "指虎攻擊卷軸10%",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 4000032,
     "itemName": "Ligator Skin",
+    "chineseItemName": "鱷魚皮",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鱷魚皮",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 4006000,
     "itemName": "The Magic Rock",
+    "chineseItemName": "魔法石",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "魔法石",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 4010002,
     "itemName": "Mithril Ore",
+    "chineseItemName": "鋰礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋰礦石母礦",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
   },
   {
     "mobId": 3110100,
     "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
     "itemId": 4020002,
     "itemName": "AquaMarine Ore",
+    "chineseItemName": "海藍石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "海藍石母礦",
-    "chineseMobName": "鱷魚"
+    "maxQty": 1
+  },
+  {
+    "mobId": 3110100,
+    "mobName": "Ligator",
+    "chineseMobName": "鱷魚",
+    "itemId": 4031164,
+    "itemName": "Alligator Skin Pouch",
+    "chineseItemName": "鱷魚皮革袋",
+    "chance": 0.3,
+    "minQty": 1,
+    "maxQty": 1
   }
 ]

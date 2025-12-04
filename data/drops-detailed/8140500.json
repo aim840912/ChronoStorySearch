@@ -2,397 +2,397 @@
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 640,
-    "maxQty": 960,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 960
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1002340,
     "itemName": "Dark Dragon Babuta",
+    "chineseItemName": "黑龍頭盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑龍頭盔",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1032017,
     "itemName": "Rose Earrings",
+    "chineseItemName": "玫瑰耳環",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "玫瑰耳環",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1040109,
     "itemName": "Red Pirate Top",
+    "chineseItemName": "紅隱者之服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅隱者之服",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1040115,
     "itemName": "Green Osfa Suit",
+    "chineseItemName": "藍扣帶護甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍扣帶護甲",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1050070,
     "itemName": "Dark Requiem",
+    "chineseItemName": "黑天上之衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑天上之衣",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1050078,
     "itemName": "Dark Pris",
+    "chineseItemName": "黑宮衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑宮衣",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1052125,
     "itemName": "White Pioneer",
+    "chineseItemName": "白色潘尼爾套裝",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白色潘尼爾套裝",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1060098,
     "itemName": "Red Pirate Pants",
+    "chineseItemName": "紅隱者之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅隱者之褲",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1060104,
     "itemName": "Green Osfa Pants",
+    "chineseItemName": "藍色勇者褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色勇者褲",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1072156,
     "itemName": "Dark Carzen Boots",
+    "chineseItemName": "黑飛魂鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑飛魂鞋",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1072164,
     "itemName": "Blue Elf Shoes",
+    "chineseItemName": "藍箭魂鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍箭魂鞋",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1072174,
     "itemName": "Dark Pirate Boots",
+    "chineseItemName": "黑飛影鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑飛影鞋",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1072195,
     "itemName": "Red Osfa Boots",
+    "chineseItemName": "紅扣帶靴",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅扣帶靴",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1072208,
     "itemName": "Red Neli Shoes",
+    "chineseItemName": "紅色艾倫鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色艾倫鞋",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1082096,
     "itemName": "Silver Rover",
+    "chineseItemName": "銀名譽手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀名譽手套",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1082111,
     "itemName": "Green Cordon",
+    "chineseItemName": "綠天使手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠天使手套",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1082117,
     "itemName": "Dark Emperor",
+    "chineseItemName": "馬爾斯黑拳套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "馬爾斯黑拳套",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1082121,
     "itemName": "Green Clarity",
+    "chineseItemName": "魔力綠手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "魔力綠手套",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1082126,
     "itemName": "Green Focus",
+    "chineseItemName": "綠色亞達夫手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠色亞達夫手套",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1092024,
     "itemName": "Silver Aquila Shield",
+    "chineseItemName": "銀尖刺護盾",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀尖刺護盾",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1203008,
     "itemName": "Tobi Throwing-Stars",
+    "chineseItemName": "梅之標",
     "chance": 0.0004,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "梅之標",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1312011,
     "itemName": "Gaea",
+    "chineseItemName": "花靈之斧",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "花靈之斧",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1332016,
     "itemName": "Sai",
+    "chineseItemName": "華氏短劍",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "華氏短劍",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1332026,
     "itemName": "Cursayer",
+    "chineseItemName": "可撒之劍",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "可撒之劍",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 1452014,
     "itemName": "Golden Arund",
+    "chineseItemName": "黃金艾倫弓",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金艾倫弓",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 2000005,
     "itemName": "Power Elixir",
+    "chineseItemName": "超級藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "超級藥水",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 2000006,
     "itemName": "Mana Elixir",
+    "chineseItemName": "活力藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "活力藥水",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 2040350,
     "itemName": "Scroll for Accessory for INT 100%",
+    "chineseItemName": "飾品智力卷軸100%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "飾品智力卷軸100%",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 2041022,
     "itemName": "Scroll for Cape for LUK 60%",
+    "chineseItemName": "披風幸運卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風幸運卷軸60%",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 2044001,
     "itemName": "Scroll for Two-Handed Sword for ATT 60%",
+    "chineseItemName": "雙手劍攻擊卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙手劍攻擊卷軸60%",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 4000080,
     "itemName": "Bain's Spiky Collar",
+    "chineseItemName": "煉獄獵犬的項鍊",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "煉獄獵犬的項鍊",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 4003005,
     "itemName": "Soft Feather",
+    "chineseItemName": "柔軟的羽毛",
     "chance": 0.2,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "柔軟的羽毛",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 4004000,
     "itemName": "Power Crystal Ore",
+    "chineseItemName": "力量母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "力量母礦",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 4020001,
     "itemName": "Amethyst Ore",
+    "chineseItemName": "紫水晶母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫水晶母礦",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   },
   {
     "mobId": 8140500,
     "mobName": "Bain",
+    "chineseMobName": "煉獄獵犬",
     "itemId": 4020007,
     "itemName": "Diamond Ore",
+    "chineseItemName": "鑽石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鑽石母礦",
-    "chineseMobName": "煉獄獵犬"
+    "maxQty": 1
   }
 ]

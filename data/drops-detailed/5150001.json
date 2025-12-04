@@ -2,309 +2,309 @@
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 272,
-    "maxQty": 408,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 408
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 1002030,
     "itemName": "Silver Planet",
+    "chineseItemName": "銀製戰盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀製戰盔",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 1002252,
     "itemName": "Red Infinium Circlet",
+    "chineseItemName": "紅神聖之冠",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅神聖之冠",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 1002281,
     "itemName": "Brown Nightfox",
+    "chineseItemName": "褐天空之帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐天空之帽",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 1002287,
     "itemName": "Beige Patriot",
+    "chineseItemName": "黃司令帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃司令帽",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 1040092,
     "itemName": "Blue Orientican",
+    "chineseItemName": "藍鋼玉鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍鋼玉鎧甲",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 1040098,
     "itemName": "Light Scorpio",
+    "chineseItemName": "白飛影之服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白飛影之服",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 1050059,
     "itemName": "Blue Tai",
+    "chineseItemName": "青旋風甲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青旋風甲",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 1051045,
     "itemName": "Red Anakarune",
+    "chineseItemName": "紅聖黨之服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅聖黨之服",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 1060081,
     "itemName": "Blue Orientican Pants",
+    "chineseItemName": "藍鋼玉褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍鋼玉褲",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 1060087,
     "itemName": "Light Scorpio Pants",
+    "chineseItemName": "白飛影之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白飛影之褲",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 1072122,
     "itemName": "Brown Steel-Tip Boots",
+    "chineseItemName": "褐弓手鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐弓手鞋",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 1072128,
     "itemName": "Blue Goni Shoes",
+    "chineseItemName": "藍雷電鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍雷電鞋",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 1072132,
     "itemName": "Emerald Hildon Boots",
+    "chineseItemName": "祖母綠將軍靴",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "祖母綠將軍靴",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 1072140,
     "itemName": "Pink Goldwind Shoes",
+    "chineseItemName": "粉紅黃金風",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "粉紅黃金風",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 1072306,
     "itemName": "Black Basile Boots",
+    "chineseItemName": "黑色巴西里靴",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑色巴西里靴",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 2040804,
     "itemName": "Scroll for Gloves for ATT 60%",
+    "chineseItemName": "手套攻擊卷軸60%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "手套攻擊卷軸60%",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 2043210,
     "itemName": "Scroll for One-Handed BW for Accuracy 100%",
+    "chineseItemName": "單手棍命中卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "單手棍命中卷軸100%",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 2043701,
     "itemName": "Scroll for Wand for Magic ATT 60%",
+    "chineseItemName": "短杖魔力卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "短杖魔力卷軸60%",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 2043801,
     "itemName": "Scroll for Staff for Magic ATT 60%",
+    "chineseItemName": "長杖魔力卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "長杖魔力卷軸60%",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 2043802,
     "itemName": "Scroll for Staff for Magic ATT 10%",
+    "chineseItemName": "長杖魔力卷軸10%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "長杖魔力卷軸10%",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 2044312,
     "itemName": "Scroll for Spear for Accuracy 60%",
+    "chineseItemName": "槍命中卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "槍命中卷軸60%",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 2044701,
     "itemName": "Scroll for Claw for ATT 60%",
+    "chineseItemName": "拳套攻擊卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "拳套攻擊卷軸60%",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 4000206,
     "itemName": "Rib",
+    "chineseItemName": "肋骨",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "肋骨",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 4010005,
     "itemName": "Orihalcon Ore",
+    "chineseItemName": "紫礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫礦石母礦",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   },
   {
     "mobId": 5150001,
     "mobName": "Skeleton Soldier",
+    "chineseMobName": "骷髏士兵",
     "itemId": 4020004,
     "itemName": "Opal Ore",
+    "chineseItemName": "蛋白石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "蛋白石母礦",
-    "chineseMobName": "骷髏士兵"
+    "maxQty": 1
   }
 ]

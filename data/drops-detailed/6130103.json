@@ -2,320 +2,320 @@
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 217,
-    "maxQty": 320,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "企鵝王"
+    "maxQty": 320
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1002025,
     "itemName": "Red Duke",
+    "chineseItemName": "紅色武士頭盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色武士頭盔",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1002170,
     "itemName": "Dark Distinction",
+    "chineseItemName": "黑羽絲絨帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑羽絲絨帽",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1002286,
     "itemName": "Blue Patriot",
+    "chineseItemName": "藍司令帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍司令帽",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1040087,
     "itemName": "Blue Shouldermail",
+    "chineseItemName": "藍板金鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍板金鎧甲",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1040093,
     "itemName": "Dark Orientican",
+    "chineseItemName": "黑鋼玉鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑鋼玉鎧甲",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1040097,
     "itemName": "Green China",
+    "chineseItemName": "綠陽",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠陽",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1050045,
     "itemName": "Blue Calas",
+    "chineseItemName": "藍魔法戰士衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍魔法戰士衣",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1060076,
     "itemName": "Blue Shouldermail Pants",
+    "chineseItemName": "藍板金褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍板金褲",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1060082,
     "itemName": "Dark Orientican Pants",
+    "chineseItemName": "黑鋼玉褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑鋼玉褲",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1060086,
     "itemName": "Green China Pants",
+    "chineseItemName": "綠陽褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠陽褲",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1072138,
     "itemName": "Orange Goldrunners",
+    "chineseItemName": "黃天使鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃天使鞋",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1072145,
     "itemName": "Blue Gore Boots",
+    "chineseItemName": "藍花精鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍花精鞋",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1072150,
     "itemName": "Blood Moss Boots",
+    "chineseItemName": "紅無痕之鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅無痕之鞋",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1072157,
     "itemName": "Blue Lapiz Sandals",
+    "chineseItemName": "藍水晶涼鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍水晶涼鞋",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1082060,
     "itemName": "Sapphire Clench",
+    "chineseItemName": "藍戰鬥手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍戰鬥手套",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1082095,
     "itemName": "Bronze Rover",
+    "chineseItemName": "青銅名譽手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅名譽手套",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1102024,
     "itemName": "Black Gaia Cape",
+    "chineseItemName": "黑鬥士披風",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑鬥士披風",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1302012,
     "itemName": "Red Katana",
+    "chineseItemName": "火焰刀",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "火焰刀",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 1472020,
     "itemName": "Sapphire Slain",
+    "chineseItemName": "藍寶手甲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍寶手甲",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 2000006,
     "itemName": "Mana Elixir",
+    "chineseItemName": "活力藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "活力藥水",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 2022001,
     "itemName": "Red Bean Porridge",
+    "chineseItemName": "小豆粥",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "小豆粥",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 2040401,
     "itemName": "Scroll for Topwear for Defense 60%",
+    "chineseItemName": "上衣防禦卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "上衣防禦卷軸60%",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 2040418,
     "itemName": "Scroll for Topwear for STR 60%",
+    "chineseItemName": "上衣力量卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "上衣力量卷軸60%",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 4000050,
     "itemName": "Pepe Beak",
+    "chineseItemName": "企鵝王的嘴",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "企鵝王的嘴",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 4004002,
-    "itemName": "DEX Crystal Ore",
+    "itemName": "Dexterous Crystal Ore",
+    "chineseItemName": "敏捷母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "敏捷母礦",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 4010001,
     "itemName": "Steel Ore",
+    "chineseItemName": "鋼鐵母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋼鐵母礦",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   },
   {
     "mobId": 6130103,
     "mobName": "Pepe",
+    "chineseMobName": "企鵝王",
     "itemId": 4020008,
     "itemName": "Black Crystal Ore",
+    "chineseItemName": "黑水晶母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑水晶母礦",
-    "chineseMobName": "企鵝王"
+    "maxQty": 1
   }
 ]

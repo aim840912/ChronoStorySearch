@@ -2,595 +2,595 @@
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 446,
-    "maxQty": 659,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 659
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1002217,
     "itemName": "Orange Golden Circlet",
+    "chineseItemName": "土黃金法冠",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "土黃金法冠",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1002267,
     "itemName": "Red Polyfeather Hat",
+    "chineseItemName": "赤弓羽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤弓羽",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1002283,
     "itemName": "Purple Nightfox",
+    "chineseItemName": "紫天空之帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫天空之帽",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1032013,
     "itemName": "Red-Hearted Earrings",
+    "chineseItemName": "愛心耳環",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "愛心耳環",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1032020,
     "itemName": "Gold Drop Earrings",
+    "chineseItemName": "黃金耳環",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金耳環",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1040100,
     "itemName": "Dark Scorpio",
+    "chineseItemName": "黑飛影之服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑飛影之服",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1041092,
     "itemName": "Red Ice Queen",
+    "chineseItemName": "紅鋼玉鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅鋼玉鎧甲",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1050055,
     "itemName": "White Anakamoon",
+    "chineseItemName": "白神聖服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白神聖服",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1051030,
     "itemName": "Dark Calaf",
+    "chineseItemName": "黑妖精禮服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑妖精禮服",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1051031,
     "itemName": "White Calaf",
+    "chineseItemName": "白妖精禮服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白妖精禮服",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1051034,
     "itemName": "Orange Calaf",
+    "chineseItemName": "朱紅妖精禮服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "朱紅妖精禮服",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1060089,
     "itemName": "Dark Scorpio Pants",
+    "chineseItemName": "黑飛影之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑飛影之褲",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1061091,
     "itemName": "Red Ice Queen Skirt",
+    "chineseItemName": "紅鋼玉裙",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅鋼玉裙",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1072127,
     "itemName": "Blue Jangoon Shoes",
+    "chineseItemName": "藍金月鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍金月鞋",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1072131,
     "itemName": "Purple Goni Shoes",
+    "chineseItemName": "紫雷電鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫雷電鞋",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1072152,
     "itemName": "Dark Moss Boots",
+    "chineseItemName": "黑無痕之鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑無痕之鞋",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1082095,
     "itemName": "Bronze Rover",
+    "chineseItemName": "青銅名譽手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅名譽手套",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1082099,
     "itemName": "Blue Lorin",
+    "chineseItemName": "藍戰魂手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍戰魂手套",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1092009,
     "itemName": "Wooden Legend Shield",
+    "chineseItemName": "古老木盾",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "古老木盾",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1102021,
     "itemName": "Blue Gaia Cape",
+    "chineseItemName": "藍鬥士披風",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍鬥士披風",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1203008,
     "itemName": "Tobi Throwing-Stars",
+    "chineseItemName": "梅之標",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "梅之標",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1302011,
     "itemName": "Neocora",
+    "chineseItemName": "奇型刀",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "奇型刀",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1302012,
     "itemName": "Red Katana",
+    "chineseItemName": "火焰刀",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "火焰刀",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1302018,
     "itemName": "Khan",
+    "chineseItemName": "湯勺",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "湯勺",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1332019,
     "itemName": "Golden River",
+    "chineseItemName": "金剛刃",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "金剛刃",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1412003,
     "itemName": "The Rising",
+    "chineseItemName": "太陽之斧",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "太陽之斧",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1412007,
     "itemName": "The Shining",
+    "chineseItemName": "光明斧",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "光明斧",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1422009,
     "itemName": "The Blessing",
+    "chineseItemName": "妖精之錘",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "妖精之錘",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1462009,
     "itemName": "Gross Jaeger",
+    "chineseItemName": "破天弩弓",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "破天弩弓",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1472022,
     "itemName": "Bronze Gigantic",
+    "chineseItemName": "青銅戰神拳套",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅戰神拳套",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 1492009,
     "itemName": "Abyss Shooter",
+    "chineseItemName": "深淵射手",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "深淵射手",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 2000006,
     "itemName": "Mana Elixir",
+    "chineseItemName": "活力藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "活力藥水",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 2040318,
     "itemName": "Scroll for Earring for DEX 10%",
+    "chineseItemName": "耳環敏捷卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "耳環敏捷卷軸10%",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 2040328,
     "itemName": "Scroll for Earring for STR 100%",
+    "chineseItemName": "耳環力量卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "耳環力量卷軸100%",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 2040512,
     "itemName": "Scroll for Overall Armor for INT 100%",
+    "chineseItemName": "套服智力卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "套服智力卷軸100%",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 2040619,
     "itemName": "Scroll for Bottomwear for Mobility 10%",
+    "chineseItemName": "褲裙跳躍卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褲裙跳躍卷軸10%",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 2040901,
     "itemName": "Scroll for Shield for Defense 60%",
+    "chineseItemName": "盾牌防禦卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "盾牌防禦卷軸60%",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 2043801,
     "itemName": "Scroll for Staff for Magic ATT 60%",
+    "chineseItemName": "長杖魔力卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "長杖魔力卷軸60%",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 2044001,
     "itemName": "Scroll for Two-Handed Sword for ATT 60%",
+    "chineseItemName": "雙手劍攻擊卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙手劍攻擊卷軸60%",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 2044012,
     "itemName": "Scroll for Two-Handed Sword for Accuracy 60%",
+    "chineseItemName": "雙手劍命中卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙手劍命中卷軸60%",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 2044802,
     "itemName": "Scroll for Knuckler for ATT 10%",
+    "chineseItemName": "指虎攻擊卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "指虎攻擊卷軸10%",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 4000056,
     "itemName": "Dark Yeti Horn",
+    "chineseItemName": "黑吉拉之角",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑吉拉之角",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 4000057,
     "itemName": "Dark Pepe Beak",
+    "chineseItemName": "黑企鵝王的嘴",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑企鵝王的嘴",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 4003004,
     "itemName": "Stiff Feather",
+    "chineseItemName": "堅硬的羽毛",
     "chance": 0.2,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "堅硬的羽毛",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 4004001,
     "itemName": "Wisdom Crystal Ore",
-    "chance": 0.01,
-    "minQty": 1,
-    "maxQty": 1,
     "chineseItemName": "智慧母礦",
-    "chineseMobName": "黑吉拉戰車"
-  },
-  {
-    "mobId": 8140100,
-    "mobName": "Dark Yeti and Pepe",
-    "itemId": 4004003,
-    "itemName": "LUK Crystal Ore",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "幸運母礦",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
+    "itemId": 4004003,
+    "itemName": "Lucky Crystal Ore",
+    "chineseItemName": "幸運母礦",
+    "chance": 0.01,
+    "minQty": 1,
+    "maxQty": 1
+  },
+  {
+    "mobId": 8140100,
+    "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 4004004,
     "itemName": "Dark Crystal Ore",
+    "chineseItemName": "黑暗母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑暗母礦",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 4006000,
     "itemName": "The Magic Rock",
+    "chineseItemName": "魔法石",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "魔法石",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 4010001,
     "itemName": "Steel Ore",
+    "chineseItemName": "鋼鐵母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋼鐵母礦",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 4010003,
     "itemName": "Adamantium Ore",
+    "chineseItemName": "朱礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "朱礦石母礦",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 4020002,
     "itemName": "AquaMarine Ore",
+    "chineseItemName": "海藍石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "海藍石母礦",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   },
   {
     "mobId": 8140100,
     "mobName": "Dark Yeti and Pepe",
+    "chineseMobName": "黑吉拉戰車",
     "itemId": 4020007,
     "itemName": "Diamond Ore",
+    "chineseItemName": "鑽石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鑽石母礦",
-    "chineseMobName": "黑吉拉戰車"
+    "maxQty": 1
   }
 ]

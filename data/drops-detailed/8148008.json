@@ -2,144 +2,144 @@
   {
     "mobId": 8148008,
     "mobName": "Crimson Stirge",
+    "chineseMobName": "紅蝙蝠",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 48,
-    "maxQty": 72,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "紅蝙蝠"
+    "maxQty": 72
   },
   {
     "mobId": 8148008,
     "mobName": "Crimson Stirge",
+    "chineseMobName": "紅蝙蝠",
     "itemId": 1002020,
     "itemName": "Red Starry Bandana",
+    "chineseItemName": "紅星頭巾",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅星頭巾",
-    "chineseMobName": "紅蝙蝠"
+    "maxQty": 1
   },
   {
     "mobId": 8148008,
     "mobName": "Crimson Stirge",
+    "chineseMobName": "紅蝙蝠",
     "itemId": 1002026,
     "itemName": "Brown Bamboo Hat",
+    "chineseItemName": "褐色斗笠",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐色斗笠",
-    "chineseMobName": "紅蝙蝠"
+    "maxQty": 1
   },
   {
     "mobId": 8148008,
     "mobName": "Crimson Stirge",
+    "chineseMobName": "紅蝙蝠",
     "itemId": 1002073,
     "itemName": "Red Wizardry Hat",
+    "chineseItemName": "紅色法師帽",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色法師帽",
-    "chineseMobName": "紅蝙蝠"
+    "maxQty": 1
   },
   {
     "mobId": 8148008,
     "mobName": "Crimson Stirge",
+    "chineseMobName": "紅蝙蝠",
     "itemId": 1002089,
     "itemName": "Green Bamboo Hat",
+    "chineseItemName": "綠色斗笠",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠色斗笠",
-    "chineseMobName": "紅蝙蝠"
+    "maxQty": 1
   },
   {
     "mobId": 8148008,
     "mobName": "Crimson Stirge",
+    "chineseMobName": "紅蝙蝠",
     "itemId": 1002090,
     "itemName": "Blue Bamboo Hat",
+    "chineseItemName": "藍色斗笠",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色斗笠",
-    "chineseMobName": "紅蝙蝠"
+    "maxQty": 1
   },
   {
     "mobId": 8148008,
     "mobName": "Crimson Stirge",
+    "chineseMobName": "紅蝙蝠",
     "itemId": 1004765,
     "itemName": "Purple Bamboo Hat",
+    "chineseItemName": "紫色斗笠",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫色斗笠",
-    "chineseMobName": "紅蝙蝠"
+    "maxQty": 1
   },
   {
     "mobId": 8148008,
     "mobName": "Crimson Stirge",
+    "chineseMobName": "紅蝙蝠",
     "itemId": 1050011,
     "itemName": "Black Dragon Robe",
+    "chineseItemName": "黑龍袍",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑龍袍",
-    "chineseMobName": "紅蝙蝠"
+    "maxQty": 1
   },
   {
     "mobId": 8148008,
     "mobName": "Crimson Stirge",
+    "chineseMobName": "紅蝙蝠",
     "itemId": 1051007,
     "itemName": "Red Avenger",
+    "chineseItemName": "紅飛影甲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅飛影甲",
-    "chineseMobName": "紅蝙蝠"
+    "maxQty": 1
   },
   {
     "mobId": 8148008,
     "mobName": "Crimson Stirge",
+    "chineseMobName": "紅蝙蝠",
     "itemId": 1082032,
     "itemName": "Bronze Mischief",
+    "chineseItemName": "青銅盜賊手套",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅盜賊手套",
-    "chineseMobName": "紅蝙蝠"
+    "maxQty": 1
   },
   {
     "mobId": 8148008,
     "mobName": "Crimson Stirge",
+    "chineseMobName": "紅蝙蝠",
     "itemId": 2040029,
     "itemName": "Scroll for Helmet for DEX 60%",
+    "chineseItemName": "頭盔敏捷卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "頭盔敏捷卷軸60%",
-    "chineseMobName": "紅蝙蝠"
+    "maxQty": 1
   },
   {
     "mobId": 8148008,
     "mobName": "Crimson Stirge",
+    "chineseMobName": "紅蝙蝠",
     "itemId": 4000999,
     "itemName": "Crimson Stirge Wing",
+    "chineseItemName": "紅蝙蝠翅膀",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅蝙蝠翅膀",
-    "chineseMobName": "紅蝙蝠"
+    "maxQty": 1
   },
   {
     "mobId": 8148008,
     "mobName": "Crimson Stirge",
+    "chineseMobName": "紅蝙蝠",
     "itemId": 4003004,
     "itemName": "Stiff Feather",
+    "chineseItemName": "堅硬的羽毛",
     "chance": 0.2,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "堅硬的羽毛",
-    "chineseMobName": "紅蝙蝠"
+    "maxQty": 1
   }
 ]

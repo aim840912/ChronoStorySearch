@@ -2,309 +2,309 @@
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 176,
-    "maxQty": 246,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 246
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1002025,
     "itemName": "Red Duke",
+    "chineseItemName": "紅色武士頭盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色武士頭盔",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1002085,
     "itemName": "Mithril Crusader Helm",
+    "chineseItemName": "鋰礦十字軍帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋰礦十字軍帽",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1002217,
     "itemName": "Orange Golden Circlet",
+    "chineseItemName": "土黃金法冠",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "土黃金法冠",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1040083,
     "itemName": "Marine Shadow",
+    "chineseItemName": "滄海之影",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "滄海之影",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1040095,
     "itemName": "Blue China",
+    "chineseItemName": "青陽",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青陽",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1041079,
     "itemName": "Brown Moon",
+    "chineseItemName": "黃月",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃月",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1041081,
     "itemName": "White Piettra",
+    "chineseItemName": "白女貴族服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白女貴族服",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1041082,
     "itemName": "Brown Piettra",
+    "chineseItemName": "褐女貴族服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐女貴族服",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1041087,
     "itemName": "Red Shouldermail",
+    "chineseItemName": "紅將軍鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅將軍鎧甲",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1060072,
     "itemName": "Marine Shadow Pants",
+    "chineseItemName": "滄海之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "滄海之褲",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1060084,
     "itemName": "Blue China Pants",
+    "chineseItemName": "青陽褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青陽褲",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1061078,
     "itemName": "Brown Moon Pants",
+    "chineseItemName": "黃月褲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃月褲",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1061081,
     "itemName": "Brown Piettra Skirt",
+    "chineseItemName": "褐貴族裙",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐貴族裙",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1061086,
     "itemName": "Red Shouldermail Pants",
+    "chineseItemName": "紅將軍褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅將軍褲",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1302016,
     "itemName": "Yellow Umbrella",
+    "chineseItemName": "黃色雨傘",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃色雨傘",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1382001,
     "itemName": "Arc Staff",
+    "chineseItemName": "精靈長杖",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "精靈長杖",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1412003,
     "itemName": "The Rising",
+    "chineseItemName": "太陽之斧",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "太陽之斧",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1442011,
     "itemName": "Surfboard",
+    "chineseItemName": "衝浪板",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "衝浪板",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 1482007,
     "itemName": "Fury Claw",
+    "chineseItemName": "惡魔之爪",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "惡魔之爪",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 2000004,
     "itemName": "Elixir",
+    "chineseItemName": "特殊藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "特殊藥水",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 2040412,
     "itemName": "Scroll for Topwear for LUK 10%",
+    "chineseItemName": "上衣幸運卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "上衣幸運卷軸10%",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 2043201,
     "itemName": "Scroll for One-Handed BW for ATT 60%",
+    "chineseItemName": "單手棍攻擊卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "單手棍攻擊卷軸60%",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 2043202,
     "itemName": "Scroll for One-Handed BW for ATT 10%",
+    "chineseItemName": "單手棍攻擊卷軸10%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "單手棍攻擊卷軸10%",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 4000044,
     "itemName": "Clang Claw",
+    "chineseItemName": "青螃蟹鉗",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青螃蟹鉗",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 4010003,
     "itemName": "Adamantium Ore",
+    "chineseItemName": "朱礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "朱礦石母礦",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   },
   {
     "mobId": 4230104,
     "mobName": "Clang",
+    "chineseMobName": "青螃蟹",
     "itemId": 4020002,
     "itemName": "AquaMarine Ore",
+    "chineseItemName": "海藍石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "海藍石母礦",
-    "chineseMobName": "青螃蟹"
+    "maxQty": 1
   }
 ]

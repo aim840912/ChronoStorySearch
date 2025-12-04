@@ -2,276 +2,276 @@
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 212,
-    "maxQty": 381,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "火精靈"
+    "maxQty": 381
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 1002209,
     "itemName": "Green Sonata",
+    "chineseItemName": "綠黑太陽帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠黑太陽帽",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 1002214,
     "itemName": "Black Maro",
+    "chineseItemName": "黑貴族軟帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑貴族軟帽",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 1002242,
     "itemName": "Red Seraphis",
+    "chineseItemName": "紅和平之帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅和平之帽",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 1040087,
     "itemName": "Blue Shouldermail",
+    "chineseItemName": "藍板金鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍板金鎧甲",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 1041076,
     "itemName": "Dark Shadow",
+    "chineseItemName": "深夜之影",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "深夜之影",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 1051025,
     "itemName": "Blue Moonlight",
+    "chineseItemName": "藍色月光服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色月光服",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 1060073,
     "itemName": "Dark Shadow Pants",
+    "chineseItemName": "黑暗之褲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑暗之褲",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 1060076,
     "itemName": "Blue Shouldermail Pants",
+    "chineseItemName": "藍板金褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍板金褲",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 1061071,
     "itemName": "Dark Shadow Pants",
+    "chineseItemName": "黑暗之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑暗之褲",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 1072150,
     "itemName": "Blood Moss Boots",
+    "chineseItemName": "紅無痕之鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅無痕之鞋",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 1203006,
     "itemName": "Kumbi Throwing-Stars",
+    "chineseItemName": "雪花標",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雪花標",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 1302009,
     "itemName": "Traus",
+    "chineseItemName": "黃沙之劍",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃沙之劍",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 1322017,
     "itemName": "Knuckle Mace",
+    "chineseItemName": "旋風錘",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "旋風錘",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 1332016,
     "itemName": "Sai",
-    "chance": 0.0005,
-    "minQty": 1,
-    "maxQty": 1,
     "chineseItemName": "華氏短劍",
-    "chineseMobName": "火精靈"
-  },
-  {
-    "mobId": 5100002,
-    "mobName": "Firebomb",
-    "itemId": 1492007,
-    "itemName": "Mr",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "拉斯菲特之槍",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
+    "itemId": 1492007,
+    "itemName": "Mr. Rasfelt",
+    "chineseItemName": "拉斯菲特之槍",
+    "chance": 0.0005,
+    "minQty": 1,
+    "maxQty": 1
+  },
+  {
+    "mobId": 5100002,
+    "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 2000002,
     "itemName": "White Potion",
+    "chineseItemName": "白色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白色藥水",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 2040311,
     "itemName": "Scroll for Earring for Defense 60%",
+    "chineseItemName": "耳環防禦力卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "耳環防禦力卷軸60%",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 2041004,
     "itemName": "Scroll for Cape for Defense 60%",
+    "chineseItemName": "披風防禦卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風防禦卷軸60%",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 4000081,
     "itemName": "Firebomb Flame",
+    "chineseItemName": "火精靈的火精",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "火精靈的火精",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 4004000,
     "itemName": "Power Crystal Ore",
+    "chineseItemName": "力量母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "力量母礦",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 4006000,
     "itemName": "The Magic Rock",
+    "chineseItemName": "魔法石",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "魔法石",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 4010001,
     "itemName": "Steel Ore",
+    "chineseItemName": "鋼鐵母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋼鐵母礦",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   },
   {
     "mobId": 5100002,
     "mobName": "Firebomb",
+    "chineseMobName": "火精靈",
     "itemId": 4020000,
     "itemName": "Garnet Ore",
+    "chineseItemName": "石榴石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "石榴石母礦",
-    "chineseMobName": "火精靈"
+    "maxQty": 1
   }
 ]

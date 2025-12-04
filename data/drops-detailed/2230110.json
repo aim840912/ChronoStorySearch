@@ -2,287 +2,287 @@
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 64,
-    "maxQty": 94,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "木面怪人"
+    "maxQty": 94
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 1002058,
     "itemName": "Mithril Viking Helm",
+    "chineseItemName": "鋰礦海盜頭盔",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋰礦海盜頭盔",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 1002121,
     "itemName": "Brown Robin Hat",
+    "chineseItemName": "褐羽翼帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐羽翼帽",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 1002131,
     "itemName": "Green Loosecap",
+    "chineseItemName": "綠色自由帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠色自由帽",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 1002616,
     "itemName": "Brown Double Marine",
+    "chineseItemName": "褐色水手頭巾",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐色水手頭巾",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 1040020,
     "itemName": "Blue Split Piece",
+    "chineseItemName": "藍伽藍",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍伽藍",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 1060014,
     "itemName": "Black Split Pants",
+    "chineseItemName": "黑伽藍褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑伽藍褲",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 1072053,
     "itemName": "Gold War Boots",
+    "chineseItemName": "金戰鬥鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "金戰鬥鞋",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 1072087,
     "itemName": "Black Lappy Boots",
+    "chineseItemName": "黑追擊鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑追擊鞋",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 1082006,
     "itemName": "Orihalcon Missel",
+    "chineseItemName": "紫礦機器手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫礦機器手套",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 1082026,
     "itemName": "Ocean Mesana",
+    "chineseItemName": "藍賢者手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍賢者手套",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 1082043,
     "itemName": "Silver Sylvia",
+    "chineseItemName": "銀暴風手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀暴風手套",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 1332010,
     "itemName": "Iron Dagger",
+    "chineseItemName": "鋼短刀",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋼短刀",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 2000001,
     "itemName": "Orange Potion",
+    "chineseItemName": "橘色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "橘色藥水",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 2002003,
     "itemName": "Wizard Potion",
+    "chineseItemName": "強效魔力水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "強效魔力水",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 2040501,
     "itemName": "Scroll for Overall Armor for DEX 60%",
+    "chineseItemName": "套服敏捷卷軸60%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "套服敏捷卷軸60%",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 2040805,
     "itemName": "Scroll for Gloves for ATT 10%",
+    "chineseItemName": "手套攻擊卷軸10%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "手套攻擊卷軸10%",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 2040901,
     "itemName": "Scroll for Shield for Defense 60%",
+    "chineseItemName": "盾牌防禦卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "盾牌防禦卷軸60%",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 2041016,
     "itemName": "Scroll for Cape for INT 60%",
+    "chineseItemName": "披風智力卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風智力卷軸60%",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 2044312,
     "itemName": "Scroll for Spear for Accuracy 60%",
+    "chineseItemName": "槍命中卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "槍命中卷軸60%",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 2044805,
     "itemName": "Scroll for Knuckler for Accuracy 100%",
+    "chineseItemName": "指虎命中卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "指虎命中卷軸100%",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 4000196,
     "itemName": "Wooden Board",
+    "chineseItemName": "木板",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "木板",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 4010000,
     "itemName": "Bronze Ore",
+    "chineseItemName": "青銅母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青銅母礦",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 4020001,
     "itemName": "Amethyst Ore",
+    "chineseItemName": "紫水晶母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紫水晶母礦",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   },
   {
     "mobId": 2230110,
     "mobName": "Wooden Mask",
+    "chineseMobName": "木面怪人",
     "itemId": 4020002,
     "itemName": "AquaMarine Ore",
+    "chineseItemName": "海藍石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "海藍石母礦",
-    "chineseMobName": "木面怪人"
+    "maxQty": 1
   }
 ]

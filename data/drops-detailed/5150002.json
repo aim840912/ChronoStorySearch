@@ -2,287 +2,287 @@
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 332,
-    "maxQty": 500,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 500
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1002095,
     "itemName": "Mithril Planet",
+    "chineseItemName": "鋰礦戰盔",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋰礦戰盔",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1002286,
     "itemName": "Blue Patriot",
+    "chineseItemName": "藍司令帽",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍司令帽",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1040106,
     "itemName": "Blue Studded Top",
+    "chineseItemName": "藍玄武之甲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍玄武之甲",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1041097,
     "itemName": "Aqua Platina",
+    "chineseItemName": "藍暴風甲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍暴風甲",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1050061,
     "itemName": "Blue Linnex",
+    "chineseItemName": "藍飄雲之衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍飄雲之衣",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1050067,
     "itemName": "Blue Requiem",
+    "chineseItemName": "藍天上之衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍天上之衣",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1060094,
     "itemName": "Blue Studded Pants",
+    "chineseItemName": "藍玄武之褲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍玄武之褲",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1061096,
     "itemName": "Aqua Platina Pants",
+    "chineseItemName": "藍暴風褲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍暴風褲",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1072154,
     "itemName": "Blue Carzen Boots",
+    "chineseItemName": "藍飛魂鞋",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍飛魂鞋",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1072164,
     "itemName": "Blue Elf Shoes",
+    "chineseItemName": "藍箭魂鞋",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍箭魂鞋",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1102021,
     "itemName": "Blue Gaia Cape",
+    "chineseItemName": "藍鬥士披風",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍鬥士披風",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1201003,
     "itemName": "Blue Bolt for Crossbow",
+    "chineseItemName": null,
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1202005,
     "itemName": "Glaze Capsule",
+    "chineseItemName": "寒冰膠囊",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "寒冰膠囊",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1332019,
     "itemName": "Golden River",
+    "chineseItemName": "金剛刃",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "金剛刃",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1372015,
     "itemName": "Angel Wings",
+    "chineseItemName": "天使之翼",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "天使之翼",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1402012,
     "itemName": "Doombringer",
+    "chineseItemName": "霸王劍",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "霸王劍",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1412008,
     "itemName": "Chrono",
+    "chineseItemName": "雷電斧",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雷電斧",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1422010,
     "itemName": "Gigantic Sledge",
+    "chineseItemName": "封魂之錘",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "封魂之錘",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1432007,
     "itemName": "Redemption",
+    "chineseItemName": "銀龍槍",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀龍槍",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1462009,
     "itemName": "Gross Jaeger",
+    "chineseItemName": "破天弩弓",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "破天弩弓",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1472028,
     "itemName": "Blue Scarab",
+    "chineseItemName": "藍閃電甲",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍閃電甲",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 1492009,
     "itemName": "Abyss Shooter",
+    "chineseItemName": "深淵射手",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "深淵射手",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
-    "itemId": 2044602,
-    "itemName": "Scroll for Crossbow for ATT 10%",
-    "chance": 0.0005,
-    "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "弩攻擊卷軸10%",
-    "chineseMobName": "冰之混種石巨人"
-  },
-  {
-    "mobId": 5150002,
-    "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 2040816,
     "itemName": "Scroll for Gloves for Magic ATT 10%",
+    "chineseItemName": "手套魔力卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "手套魔力卷軸10%",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   },
   {
     "mobId": 5150002,
     "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
+    "itemId": 2044602,
+    "itemName": "Scroll for Crossbow for ATT 10%",
+    "chineseItemName": "弩攻擊卷軸10%",
+    "chance": 0.0005,
+    "minQty": 1,
+    "maxQty": 1
+  },
+  {
+    "mobId": 5150002,
+    "mobName": "Cold Mixed Golem",
+    "chineseMobName": "冰之混種石巨人",
     "itemId": 4000671,
     "itemName": "Cold Stone Block",
+    "chineseItemName": "冰石塊",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "冰石塊",
-    "chineseMobName": "冰之混種石巨人"
+    "maxQty": 1
   }
 ]

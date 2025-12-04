@@ -2,56 +2,56 @@
   {
     "mobId": 2000,
     "mobName": "Amherst Crate",
+    "chineseMobName": "箱子",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 1,
-    "maxQty": 5,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "箱子"
+    "maxQty": 5
   },
   {
     "mobId": 2000,
     "mobName": "Amherst Crate",
+    "chineseMobName": "箱子",
     "itemId": 2010000,
     "itemName": "Apple",
+    "chineseItemName": "蘋果",
     "chance": 0.1,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "蘋果",
-    "chineseMobName": "箱子"
+    "maxQty": 1
   },
   {
     "mobId": 2000,
     "mobName": "Amherst Crate",
+    "chineseMobName": "箱子",
     "itemId": 2010009,
     "itemName": "Green Apple",
+    "chineseItemName": "青蘋果",
     "chance": 0.1,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青蘋果",
-    "chineseMobName": "箱子"
+    "maxQty": 1
   },
   {
     "mobId": 2000,
     "mobName": "Amherst Crate",
+    "chineseMobName": "箱子",
     "itemId": 4031161,
     "itemName": "Rusty Screw",
+    "chineseItemName": null,
     "chance": 1,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": null,
-    "chineseMobName": "箱子"
+    "maxQty": 1
   },
   {
     "mobId": 2000,
     "mobName": "Amherst Crate",
+    "chineseMobName": "箱子",
     "itemId": 4031162,
     "itemName": "Old Wooden Board",
+    "chineseItemName": "木材",
     "chance": 1,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "木材",
-    "chineseMobName": "箱子"
+    "maxQty": 1
   }
 ]

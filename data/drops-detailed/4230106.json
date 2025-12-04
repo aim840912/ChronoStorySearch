@@ -2,353 +2,353 @@
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 114,
-    "maxQty": 216,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "月光精靈"
+    "maxQty": 216
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1002210,
     "itemName": "Brown Sonata",
+    "chineseItemName": "黃黑太陽帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃黑太陽帽",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1002216,
     "itemName": "Aqua Golden Circlet",
+    "chineseItemName": "水黃金法冠",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "水黃金法冠",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1002628,
     "itemName": "Red Misty",
+    "chineseItemName": "紅色皇家頭巾",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅色皇家頭巾",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1040081,
     "itemName": "White Piette",
+    "chineseItemName": "白貴族之服",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白貴族之服",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1040086,
     "itemName": "Blue Jangoon Armor",
+    "chineseItemName": "青金鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青金鎧甲",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1041080,
     "itemName": "Red Moon",
+    "chineseItemName": "赤月",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤月",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1050052,
     "itemName": "Blue-Lined Kismet",
+    "chineseItemName": "青仙白宮",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "青仙白宮",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1051032,
     "itemName": "Blue Calaf",
+    "chineseItemName": "藍妖精禮服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍妖精禮服",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1060070,
     "itemName": "Blue Piette Pants",
+    "chineseItemName": "藍貴族褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍貴族褲",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1060075,
     "itemName": "Brown Jangoon Pants",
+    "chineseItemName": "黃金褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金褲",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1061079,
     "itemName": "Red Moon Pants",
+    "chineseItemName": "赤月褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "赤月褲",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1072118,
     "itemName": "Red Pierre Shoes",
+    "chineseItemName": "紅精靈鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅精靈鞋",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1082036,
     "itemName": "Dark Briggon",
+    "chineseItemName": "黑輕便手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑輕便手套",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1082045,
     "itemName": "Gold Arbion",
+    "chineseItemName": "黃金追擊手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃金追擊手套",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1082201,
     "itemName": "Black Schult",
+    "chineseItemName": "黑色舒爾特手套",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑色舒爾特手套",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1092007,
     "itemName": "Battle Shield",
+    "chineseItemName": "戰鬥盾牌",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "戰鬥盾牌",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1203003,
     "itemName": "Mokbi Throwing-Stars",
+    "chineseItemName": "黑色利刃",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑色利刃",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 1302016,
     "itemName": "Yellow Umbrella",
+    "chineseItemName": "黃色雨傘",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃色雨傘",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 2000002,
     "itemName": "White Potion",
+    "chineseItemName": "白色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白色藥水",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 2000003,
     "itemName": "Blue Potion",
+    "chineseItemName": "藍色藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色藥水",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 2040319,
     "itemName": "Scroll for Earring for LUK 100%",
+    "chineseItemName": "耳環幸運卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "耳環幸運卷軸100%",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 2040705,
     "itemName": "Scroll for Shoes for Jump 10%",
+    "chineseItemName": "鞋子跳躍卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鞋子跳躍卷軸10%",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 2041012,
     "itemName": "Scroll for Cape for STR 100%",
+    "chineseItemName": "披風力量卷軸100%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "披風力量卷軸100%",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 2044114,
     "itemName": "Scroll for Two-Handed Axe for Accuracy 10%",
+    "chineseItemName": "雙手斧命中卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙手斧命中卷軸10%",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 2044214,
     "itemName": "Scroll for Two-Handed BW for Accuracy 10%",
+    "chineseItemName": "雙手棍命中卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙手棍命中卷軸10%",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 4000060,
     "itemName": "Lunar Pixie's Moonpiece",
+    "chineseItemName": "月光精靈的碎片",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "月光精靈的碎片",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 4003004,
     "itemName": "Stiff Feather",
+    "chineseItemName": "堅硬的羽毛",
     "chance": 0.2,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "堅硬的羽毛",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 4004001,
     "itemName": "Wisdom Crystal Ore",
+    "chineseItemName": "智慧母礦",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "智慧母礦",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 4006000,
     "itemName": "The Magic Rock",
+    "chineseItemName": "魔法石",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "魔法石",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 4010004,
     "itemName": "Silver Ore",
+    "chineseItemName": "銀的母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀的母礦",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   },
   {
     "mobId": 4230106,
     "mobName": "Lunar Pixie",
+    "chineseMobName": "月光精靈",
     "itemId": 4020005,
     "itemName": "Sapphire Ore",
+    "chineseItemName": "藍寶石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍寶石母礦",
-    "chineseMobName": "月光精靈"
+    "maxQty": 1
   }
 ]

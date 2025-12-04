@@ -2,375 +2,375 @@
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 0,
     "itemName": "Meso",
+    "chineseItemName": "楓幣",
     "chance": 0.4,
     "minQty": 409,
-    "maxQty": 599,
-    "chineseItemName": "楓幣",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 599
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1002095,
     "itemName": "Mithril Planet",
+    "chineseItemName": "鋰礦戰盔",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋰礦戰盔",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1002284,
     "itemName": "White Nightfox",
+    "chineseItemName": "白天空之帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "白天空之帽",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1002327,
     "itemName": "Brown Pireta Hat",
+    "chineseItemName": "褐色海盜帽",
     "chance": 0.001287,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐色海盜帽",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1041091,
     "itemName": "Green Ice Queen",
+    "chineseItemName": "綠鋼玉鎧甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠鋼玉鎧甲",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1041103,
     "itemName": "Red Mystique",
+    "chineseItemName": "紅朱雀之甲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅朱雀之甲",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1050077,
     "itemName": "Green Pris",
+    "chineseItemName": "綠宮衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠宮衣",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1051047,
     "itemName": "Dark Anakarune",
+    "chineseItemName": "黑聖黨之服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑聖黨之服",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1051055,
     "itemName": "Dark Requierre",
+    "chineseItemName": "黑天上之衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑天上之衣",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1051056,
     "itemName": "Green Enigma",
+    "chineseItemName": "綠神仙之服",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠神仙之服",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1051063,
     "itemName": "Beige Lineros",
+    "chineseItemName": "褐飄雲之衣",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "褐飄雲之衣",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1061090,
     "itemName": "Green Ice Queen Skirt",
+    "chineseItemName": "綠鋼玉裙",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "綠鋼玉裙",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1061102,
     "itemName": "Red Mystique Pants",
+    "chineseItemName": "紅朱雀之褲",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅朱雀之褲",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1072167,
     "itemName": "Dark Elf Shoes",
+    "chineseItemName": "黑箭魂鞋",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑箭魂鞋",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1072211,
     "itemName": "Blue Rivers Boots",
+    "chineseItemName": "藍色水晶靴",
     "chance": 0.0008,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "藍色水晶靴",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1082100,
     "itemName": "Dark Lorin",
+    "chineseItemName": "黑戰魂手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑戰魂手套",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1082104,
     "itemName": "Mithril Husk",
+    "chineseItemName": "鋰礦暗影手套",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋰礦暗影手套",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1092015,
     "itemName": "Steel Ancient Shield",
+    "chineseItemName": "鋼鐵古盾牌",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "鋼鐵古盾牌",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1092016,
     "itemName": "Silver Ancient Shield",
+    "chineseItemName": "銀古盾牌",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "銀古盾牌",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1102028,
     "itemName": "Red Seraph Cape",
+    "chineseItemName": "紅妖精披風",
     "chance": 0.001,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "紅妖精披風",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1312008,
     "itemName": "Buck",
+    "chineseItemName": "樹靈之斧",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "樹靈之斧",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1382010,
     "itemName": "Dark Ritual",
+    "chineseItemName": "死靈法杖",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "死靈法杖",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1412008,
     "itemName": "Chrono",
+    "chineseItemName": "雷電斧",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雷電斧",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1422010,
     "itemName": "Gigantic Sledge",
+    "chineseItemName": "封魂之錘",
     "chance": 0.0007,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "封魂之錘",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1452011,
     "itemName": "Golden Hinkel",
+    "chineseItemName": "黃神弓",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黃神弓",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 1482009,
     "itemName": "Beia Crash",
+    "chineseItemName": "拜爾毀滅拳套",
     "chance": 0.0005,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "拜爾毀滅拳套",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 2000005,
     "itemName": "Power Elixir",
+    "chineseItemName": "超級藥水",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "超級藥水",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 2040337,
     "itemName": "Dark Scroll for Accessory for STR 70%",
+    "chineseItemName": "飾品力量詛咒卷軸70%",
     "chance": 0.00075,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "飾品力量詛咒卷軸70%",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 2044101,
     "itemName": "Scroll for Two-Handed Axe for ATT 60%",
+    "chineseItemName": "雙手斧攻擊卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙手斧攻擊卷軸60%",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 2044114,
     "itemName": "Scroll for Two-Handed Axe for Accuracy 10%",
+    "chineseItemName": "雙手斧命中卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "雙手斧命中卷軸10%",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 4000046,
     "itemName": "Taurospear Horn",
+    "chineseItemName": "長槍牛魔王之角",
     "chance": 0.6,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "長槍牛魔王之角",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 4006001,
     "itemName": "The Summoning Rock",
+    "chineseItemName": "召喚石",
     "chance": 0.01,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "召喚石",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 4010003,
     "itemName": "Adamantium Ore",
+    "chineseItemName": "朱礦石母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "朱礦石母礦",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   },
   {
     "mobId": 7130101,
     "mobName": "Taurospear",
+    "chineseMobName": "長槍牛魔王",
     "itemId": 4020008,
     "itemName": "Black Crystal Ore",
+    "chineseItemName": "黑水晶母礦",
     "chance": 0.009,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "黑水晶母礦",
-    "chineseMobName": "長槍牛魔王"
+    "maxQty": 1
   }
 ]

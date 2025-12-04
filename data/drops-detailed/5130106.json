@@ -2,12 +2,12 @@
   {
     "mobId": 5130106,
     "mobName": "Transforming Dark Jr. Yeti",
+    "chineseMobName": "黑色小雪球",
     "itemId": 2022001,
     "itemName": "Red Bean Porridge",
+    "chineseItemName": "小豆粥",
     "chance": 0.02,
     "minQty": 1,
-    "maxQty": 1,
-    "chineseItemName": "小豆粥",
-    "chineseMobName": "黑色小雪球"
+    "maxQty": 1
   }
 ]
