@@ -109,6 +109,16 @@ export function useFilterLogic({
       filtered = baseDrops
     } else {
       filtered = baseDrops.filter((drop) => {
+        const trimmedSearch = debouncedSearchTerm.trim()
+        // 檢查是否為 ID 搜尋（純數字）
+        const isIdSearch = /^\d+$/.test(trimmedSearch)
+        if (isIdSearch) {
+          return (
+            drop.mobId.toString() === trimmedSearch ||
+            drop.itemId.toString() === trimmedSearch
+          )
+        }
+
         // 根據 searchType 決定搜尋範圍（雙向搜尋）
         if (searchType === 'monster') {
           return (

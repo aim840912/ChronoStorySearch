@@ -22,7 +22,7 @@ interface ImageFormatProviderProps {
 }
 
 // 格式循環順序
-const formatCycle: ImageFormat[] = ['png', 'stand', 'die']
+const formatCycle: ImageFormat[] = ['png', 'stand', 'hit', 'die']
 
 /**
  * 圖片格式 Provider
