@@ -6098,15 +6098,15 @@
       "avoid": 12,
       "level": 30,
       "exp": 120,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 38,
+      "mag_def": 40,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 0
     },
     "description": "",
     "expBar": {
@@ -6127,15 +6127,15 @@
       "avoid": 14,
       "level": 32,
       "exp": 130,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 50,
+      "mag_def": 70,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 0
     },
     "description": "",
     "expBar": {
@@ -6156,15 +6156,15 @@
       "avoid": 13,
       "level": 32,
       "exp": 130,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 65,
+      "mag_def": 75,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 0
     },
     "description": "",
     "expBar": {
@@ -6185,15 +6185,15 @@
       "avoid": 16,
       "level": 34,
       "exp": 140,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 70,
+      "mag_def": 85,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 0
     },
     "description": "",
     "expBar": {
@@ -6214,15 +6214,15 @@
       "avoid": 14,
       "level": 34,
       "exp": 140,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 75,
+      "mag_def": 75,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 0
     },
     "description": "",
     "expBar": {
@@ -6243,15 +6243,15 @@
       "avoid": 14,
       "level": 34,
       "exp": 140,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 95,
+      "mag_def": 90,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 0
     },
     "description": "",
     "expBar": {
@@ -6272,15 +6272,15 @@
       "avoid": 16,
       "level": 36,
       "exp": 154,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 95,
+      "mag_def": 95,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 0
     },
     "description": "",
     "expBar": {
@@ -6301,15 +6301,15 @@
       "avoid": 20,
       "level": 37,
       "exp": 164,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 90,
+      "mag_def": 120,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 0
     },
     "description": "",
     "expBar": {
@@ -6330,15 +6330,15 @@
       "avoid": 18,
       "level": 39,
       "exp": 184,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 110,
+      "mag_def": 130,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 1
     },
     "description": "",
     "expBar": {
@@ -6359,15 +6359,15 @@
       "avoid": 20,
       "level": 40,
       "exp": 190,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 160,
+      "mag_def": 170,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 0
     },
     "description": "",
     "expBar": {
@@ -6388,15 +6388,15 @@
       "avoid": 15,
       "level": 41,
       "exp": 198,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 190,
+      "mag_def": 175,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 0
     },
     "description": "",
     "expBar": {
@@ -6417,15 +6417,15 @@
       "avoid": 22,
       "level": 41,
       "exp": 198,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 130,
+      "mag_def": 160,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 0
     },
     "description": "",
     "expBar": {
@@ -6446,15 +6446,15 @@
       "avoid": 18,
       "level": 44,
       "exp": 210,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 210,
+      "mag_def": 195,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 0
     },
     "description": "",
     "expBar": {
@@ -6475,15 +6475,15 @@
       "avoid": 24,
       "level": 46,
       "exp": 230,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 170,
+      "mag_def": 200,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 300
     },
     "description": "",
     "expBar": {
@@ -6504,15 +6504,15 @@
       "avoid": 20,
       "level": 59,
       "exp": 1300,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 180,
+      "mag_def": 230,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 1100
     },
     "description": "",
     "expBar": {
@@ -6533,15 +6533,15 @@
       "avoid": 23,
       "level": 61,
       "exp": 460,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 213,
+      "mag_def": 229,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 1300
     },
     "description": "",
     "expBar": {
@@ -6562,15 +6562,15 @@
       "avoid": 25,
       "level": 63,
       "exp": 490,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 190,
+      "mag_def": 215,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 1500
     },
     "description": "",
     "expBar": {
@@ -6591,15 +6591,15 @@
       "avoid": 26,
       "level": 66,
       "exp": 520,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 180,
+      "mag_def": 254,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 1500
     },
     "description": "",
     "expBar": {
@@ -6620,15 +6620,15 @@
       "avoid": 27,
       "level": 67,
       "exp": 530,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 210,
+      "mag_def": 250,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 1500
     },
     "description": "",
     "expBar": {
@@ -6649,15 +6649,15 @@
       "avoid": 26,
       "level": 70,
       "exp": 540,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 250,
+      "mag_def": 250,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 1000
     },
     "description": "",
     "expBar": {
@@ -6678,15 +6678,15 @@
       "avoid": 27,
       "level": 74,
       "exp": 680,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 340,
+      "mag_def": 330,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 1500
     },
     "description": "",
     "expBar": {
@@ -6707,15 +6707,15 @@
       "avoid": 27,
       "level": 76,
       "exp": 740,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 380,
+      "mag_def": 400,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 1500
     },
     "description": "",
     "expBar": {
@@ -6736,15 +6736,15 @@
       "avoid": 28,
       "level": 77,
       "exp": 770,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 400,
+      "mag_def": 410,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 2000
     },
     "description": "",
     "expBar": {
@@ -6765,15 +6765,15 @@
       "avoid": 27,
       "level": 83,
       "exp": 2200,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 710,
+      "mag_def": 460,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 3200
     },
     "description": "",
     "expBar": {
@@ -6794,15 +6794,15 @@
       "avoid": 27,
       "level": 85,
       "exp": 2600,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 700,
+      "mag_def": 465,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 3500
     },
     "description": "",
     "expBar": {
@@ -6823,15 +6823,15 @@
       "avoid": 28,
       "level": 87,
       "exp": 3000,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 775,
+      "mag_def": 470,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 3700
     },
     "description": "",
     "expBar": {
@@ -6852,15 +6852,15 @@
       "avoid": 28,
       "level": 89,
       "exp": 3440,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 750,
+      "mag_def": 480,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 4000
     },
     "description": "",
     "expBar": {
@@ -6881,15 +6881,15 @@
       "avoid": 37,
       "level": 93,
       "exp": 4200,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 830,
+      "mag_def": 530,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 5000
     },
     "description": "",
     "expBar": {
@@ -6910,15 +6910,15 @@
       "avoid": 37,
       "level": 95,
       "exp": 4600,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 835,
+      "mag_def": 530,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 5000
     },
     "description": "",
     "expBar": {
@@ -6939,15 +6939,15 @@
       "avoid": 38,
       "level": 98,
       "exp": 5200,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 845,
+      "mag_def": 580,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 5300
     },
     "description": "",
     "expBar": {
@@ -6968,15 +6968,15 @@
       "avoid": 38,
       "level": 99,
       "exp": 5600,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 850,
+      "mag_def": 570,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 6000
     },
     "description": "",
     "expBar": {
@@ -6997,15 +6997,15 @@
       "avoid": 37,
       "level": 108,
       "exp": 8600,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 900,
+      "mag_def": 650,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 5500
     },
     "description": "",
     "expBar": {
@@ -7026,15 +7026,15 @@
       "avoid": 38,
       "level": 108,
       "exp": 8200,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 850,
+      "mag_def": 680,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 5500
     },
     "description": "",
     "expBar": {
@@ -7055,15 +7055,15 @@
       "avoid": 40,
       "level": 125,
       "exp": 1940000,
-      "phys_def": null,
-      "mag_def": null,
+      "phys_def": 800,
+      "mag_def": 1200,
       "fire_weakness": null,
       "ice_weakness": null,
       "lightning_weakness": null,
       "holy_weakness": null,
       "poison_weakness": null,
       "immune_to_poison_status": null,
-      "minimumPushDamage": null
+      "minimumPushDamage": 12000
     },
     "description": "",
     "expBar": {
