@@ -38,9 +38,12 @@ const availableMonsterGifs = new Set(
 const availableMonsterDies = new Set(
   (imageManifest as { 'monsters-die'?: number[] })['monsters-die'] || []
 )
+const availableMonsterHits = new Set(
+  (imageManifest as { 'monsters-hit'?: number[] })['monsters-hit'] || []
+)
 
-// 圖片格式類型：png（靜態）, stand（待機GIF）, die（死亡GIF）
-export type ImageFormat = 'png' | 'stand' | 'die'
+// 圖片格式類型：png（靜態）, stand（待機GIF）, hit（受擊GIF）, die（死亡GIF）
+export type ImageFormat = 'png' | 'stand' | 'hit' | 'die'
 
 // ==================== 圖片路徑工具函數 ====================
 
@@ -78,6 +81,15 @@ export function hasMonsterGif(mobId: number): boolean {
  */
 export function hasMonsterDie(mobId: number): boolean {
   return availableMonsterDies.has(mobId)
+}
+
+/**
+ * 檢查怪物受擊 GIF 是否存在
+ * @param mobId 怪物 ID
+ * @returns 受擊 GIF 是否存在
+ */
+export function hasMonsterHit(mobId: number): boolean {
+  return availableMonsterHits.has(mobId)
 }
 
 /**
@@ -137,6 +149,12 @@ export function getMonsterImageUrl(
       // 待機動畫（原本的 GIF）
       if (hasMonsterGif(mobId)) {
         return `${R2_PUBLIC_URL}/images/monsters-gif/${mobId}.gif`
+      }
+      break
+    case 'hit':
+      // 受擊動畫
+      if (hasMonsterHit(mobId)) {
+        return `${R2_PUBLIC_URL}/images/monsters-hit/${mobId}.gif`
       }
       break
     case 'die':
