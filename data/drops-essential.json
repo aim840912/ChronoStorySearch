@@ -1864,7 +1864,7 @@
     "chineseMobName": "黑木妖",
     "itemId": 2040802,
     "itemName": "Scroll for Gloves for Accuracy 10%",
-    "chineseItemName": "手套敏捷卷軸10%",
+    "chineseItemName": "手套命中卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -2623,7 +2623,7 @@
     "chineseMobName": "發芽木妖",
     "itemId": 2040801,
     "itemName": "Scroll for Gloves for Accuracy 60%",
-    "chineseItemName": "手套敏捷卷軸60%",
+    "chineseItemName": "手套命中卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -2865,7 +2865,7 @@
     "chineseMobName": "肥肥",
     "itemId": 2040702,
     "itemName": "Scroll for Shoes for Avoidability 10%",
-    "chineseItemName": "鞋子敏捷卷軸10%",
+    "chineseItemName": "鞋子迴避卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -4471,7 +4471,7 @@
     "chineseMobName": "青蛇",
     "itemId": 2040617,
     "itemName": "Scroll for Bottomwear for Mobility 100%",
-    "chineseItemName": "褲裙跳躍卷軸10%",
+    "chineseItemName": "褲裙移動卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -7936,7 +7936,7 @@
     "chineseMobName": "石球",
     "itemId": 2040620,
     "itemName": "Scroll for Bottomwear for Mobility 15%",
-    "chineseItemName": "褲裙生命卷軸100%",
+    "chineseItemName": "褲裙移動卷軸15%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -8222,7 +8222,7 @@
     "chineseMobName": "褐色發條熊",
     "itemId": 2040701,
     "itemName": "Scroll for Shoes for Avoidability 60%",
-    "chineseItemName": "鞋子敏捷卷軸60%",
+    "chineseItemName": "鞋子迴避卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -10664,7 +10664,7 @@
     "chineseMobName": "玩具鴨",
     "itemId": 2040617,
     "itemName": "Scroll for Bottomwear for Mobility 100%",
-    "chineseItemName": "褲裙跳躍卷軸10%",
+    "chineseItemName": "褲裙移動卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -11753,7 +11753,7 @@
     "chineseMobName": "樹妖王",
     "itemId": 2040701,
     "itemName": "Scroll for Shoes for Avoidability 60%",
-    "chineseItemName": "鞋子敏捷卷軸60%",
+    "chineseItemName": "鞋子迴避卷軸60%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -11764,7 +11764,7 @@
     "chineseMobName": "樹妖王",
     "itemId": 2040801,
     "itemName": "Scroll for Gloves for Accuracy 60%",
-    "chineseItemName": "手套敏捷卷軸60%",
+    "chineseItemName": "手套命中卷軸60%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -13601,7 +13601,7 @@
     "chineseMobName": "木馬士兵",
     "itemId": 2040926,
     "itemName": "Scroll for Shield for Magic ATT 15%",
-    "chineseItemName": "盾牌魔攻卷軸15%",
+    "chineseItemName": "盾牌魔力卷軸15%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -17616,7 +17616,7 @@
     "chineseMobName": "藍色機器人",
     "itemId": 2040926,
     "itemName": "Scroll for Shield for Magic ATT 15%",
-    "chineseItemName": "盾牌魔攻卷軸15%",
+    "chineseItemName": "盾牌魔力卷軸15%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -18738,7 +18738,7 @@
     "chineseMobName": "妖魔隊長",
     "itemId": 2040617,
     "itemName": "Scroll for Bottomwear for Mobility 100%",
-    "chineseItemName": "褲裙跳躍卷軸10%",
+    "chineseItemName": "褲裙移動卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -22731,7 +22731,7 @@
     "chineseMobName": "黑曜石巨人",
     "itemId": 2040618,
     "itemName": "Scroll for Bottomwear for Mobility 60%",
-    "chineseItemName": "褲裙跳躍卷軸60%",
+    "chineseItemName": "褲裙移動卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -26691,7 +26691,7 @@
     "chineseMobName": "火石球",
     "itemId": 2040926,
     "itemName": "Scroll for Shield for Magic ATT 15%",
-    "chineseItemName": "盾牌魔攻卷軸15%",
+    "chineseItemName": "盾牌魔力卷軸15%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -27043,7 +27043,7 @@
     "chineseMobName": "殭屍猴王",
     "itemId": 2040801,
     "itemName": "Scroll for Gloves for Accuracy 60%",
-    "chineseItemName": "手套敏捷卷軸60%",
+    "chineseItemName": "手套命中卷軸60%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -29199,7 +29199,7 @@
     "chineseMobName": "厄運死神",
     "itemId": 2040353,
     "itemName": "Dark Scroll for Accessory for INT 30%",
-    "chineseItemName": "飾品敏捷詛咒卷軸30%",
+    "chineseItemName": "飾品智力詛咒卷軸30%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -29969,7 +29969,7 @@
     "chineseMobName": "蘑菇王",
     "itemId": 2040618,
     "itemName": "Scroll for Bottomwear for Mobility 60%",
-    "chineseItemName": "褲裙跳躍卷軸60%",
+    "chineseItemName": "褲裙移動卷軸60%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -29980,7 +29980,7 @@
     "chineseMobName": "蘑菇王",
     "itemId": 2040619,
     "itemName": "Scroll for Bottomwear for Mobility 10%",
-    "chineseItemName": "褲裙跳躍卷軸10%",
+    "chineseItemName": "褲裙移動卷軸10%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -29991,7 +29991,7 @@
     "chineseMobName": "蘑菇王",
     "itemId": 2040701,
     "itemName": "Scroll for Shoes for Avoidability 60%",
-    "chineseItemName": "鞋子敏捷卷軸60%",
+    "chineseItemName": "鞋子迴避卷軸60%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -30024,7 +30024,7 @@
     "chineseMobName": "蘑菇王",
     "itemId": 2040801,
     "itemName": "Scroll for Gloves for Accuracy 60%",
-    "chineseItemName": "手套敏捷卷軸60%",
+    "chineseItemName": "手套命中卷軸60%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -31421,7 +31421,7 @@
     "chineseMobName": "沼澤巨鱷",
     "itemId": 2040702,
     "itemName": "Scroll for Shoes for Avoidability 10%",
-    "chineseItemName": "鞋子敏捷卷軸10%",
+    "chineseItemName": "鞋子迴避卷軸10%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -32356,7 +32356,7 @@
     "chineseMobName": "黑企鵝王",
     "itemId": 2040620,
     "itemName": "Scroll for Bottomwear for Mobility 15%",
-    "chineseItemName": "褲裙生命卷軸100%",
+    "chineseItemName": "褲裙移動卷軸15%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -32697,7 +32697,7 @@
     "chineseMobName": "孤單黑企鵝王",
     "itemId": 2040620,
     "itemName": "Scroll for Bottomwear for Mobility 15%",
-    "chineseItemName": "褲裙生命卷軸100%",
+    "chineseItemName": "褲裙移動卷軸15%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -34182,7 +34182,7 @@
     "chineseMobName": "幽魂發條熊隊長",
     "itemId": 2040620,
     "itemName": "Scroll for Bottomwear for Mobility 15%",
-    "chineseItemName": "褲裙生命卷軸100%",
+    "chineseItemName": "褲裙移動卷軸15%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -39528,7 +39528,7 @@
     "chineseMobName": "地獄獵犬",
     "itemId": 2040618,
     "itemName": "Scroll for Bottomwear for Mobility 60%",
-    "chineseItemName": "褲裙跳躍卷軸60%",
+    "chineseItemName": "褲裙移動卷軸60%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -43312,7 +43312,7 @@
     "chineseMobName": "多立百烈",
     "itemId": 2040619,
     "itemName": "Scroll for Bottomwear for Mobility 10%",
-    "chineseItemName": "褲裙跳躍卷軸10%",
+    "chineseItemName": "褲裙移動卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -44665,7 +44665,7 @@
     "chineseMobName": "黑吉拉戰車",
     "itemId": 2040619,
     "itemName": "Scroll for Bottomwear for Mobility 10%",
-    "chineseItemName": "褲裙跳躍卷軸10%",
+    "chineseItemName": "褲裙移動卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -45171,7 +45171,7 @@
     "chineseMobName": "冥鐘",
     "itemId": 2040802,
     "itemName": "Scroll for Gloves for Accuracy 10%",
-    "chineseItemName": "手套敏捷卷軸10%",
+    "chineseItemName": "手套命中卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -47833,7 +47833,7 @@
     "chineseMobName": "地獄巴洛古",
     "itemId": 2040702,
     "itemName": "Scroll for Shoes for Avoidability 10%",
-    "chineseItemName": "鞋子敏捷卷軸10%",
+    "chineseItemName": "鞋子迴避卷軸10%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -47866,7 +47866,7 @@
     "chineseMobName": "地獄巴洛古",
     "itemId": 2040802,
     "itemName": "Scroll for Gloves for Accuracy 10%",
-    "chineseItemName": "手套敏捷卷軸10%",
+    "chineseItemName": "手套命中卷軸10%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -48823,7 +48823,7 @@
     "chineseMobName": "達納托斯",
     "itemId": 2040702,
     "itemName": "Scroll for Shoes for Avoidability 10%",
-    "chineseItemName": "鞋子敏捷卷軸10%",
+    "chineseItemName": "鞋子迴避卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -48834,7 +48834,7 @@
     "chineseMobName": "達納托斯",
     "itemId": 2040802,
     "itemName": "Scroll for Gloves for Accuracy 10%",
-    "chineseItemName": "手套敏捷卷軸10%",
+    "chineseItemName": "手套命中卷軸10%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
@@ -49857,7 +49857,7 @@
     "chineseMobName": "雪毛怪人",
     "itemId": 2040701,
     "itemName": "Scroll for Shoes for Avoidability 60%",
-    "chineseItemName": "鞋子敏捷卷軸60%",
+    "chineseItemName": "鞋子迴避卷軸60%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -49868,7 +49868,7 @@
     "chineseMobName": "雪毛怪人",
     "itemId": 2040801,
     "itemName": "Scroll for Gloves for Accuracy 60%",
-    "chineseItemName": "手套敏捷卷軸60%",
+    "chineseItemName": "手套命中卷軸60%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -51298,7 +51298,7 @@
     "chineseMobName": "冰烏龜",
     "itemId": 2040801,
     "itemName": "Scroll for Gloves for Accuracy 60%",
-    "chineseItemName": "手套敏捷卷軸60%",
+    "chineseItemName": "手套命中卷軸60%",
     "chance": 0.001,
     "minQty": 1,
     "maxQty": 1
@@ -51452,7 +51452,7 @@
     "chineseMobName": "盾牌牛魔王",
     "itemId": 2040918,
     "itemName": "Scroll for Shield for Magic ATT 100%",
-    "chineseItemName": "盾牌魔攻卷軸100%",
+    "chineseItemName": "盾牌魔力卷軸100%",
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1
