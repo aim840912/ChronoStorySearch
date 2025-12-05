@@ -3,6 +3,7 @@
 import { memo } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
+import { useAutoFitText } from '@/hooks/useAutoFitText'
 import { getMonsterDisplayName } from '@/lib/display-name'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 import { BaseCard, CardImage, FavoriteButton, TypeBadge } from './cards'
@@ -47,6 +48,14 @@ export const MonsterCard = memo(function MonsterCard({
   const displayMobName = getMonsterDisplayName(mobName, chineseMobName, language)
   const monsterIconUrl = getMonsterImageUrl(mobId, { format })
 
+  // 自動縮放文字以適應兩行
+  const { ref: titleRef, fontSize } = useAutoFitText({
+    text: displayMobName,
+    maxLines: 2,
+    minFontSize: 12,
+    maxFontSize: 18,
+  })
+
   return (
     <BaseCard
       variant="monster"
@@ -77,7 +86,11 @@ export const MonsterCard = memo(function MonsterCard({
           size="lg"
         />
         <div className="flex-1 min-w-0">
-          <h3 className="text-lg font-bold text-gray-900 dark:text-white truncate">
+          <h3
+            ref={titleRef as React.RefObject<HTMLHeadingElement>}
+            style={{ fontSize: `${fontSize}px` }}
+            className="font-bold text-gray-900 dark:text-white line-clamp-2 leading-snug"
+          >
             {displayMobName}
           </h3>
           {isDev && (
