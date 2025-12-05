@@ -30,6 +30,7 @@ interface ModalManagerProps {
   selectedItemId: number | null
   selectedItemName: string
   selectedGachaMachineId: number | null
+  selectedMerchantMapId?: string
   clearModalType: 'monsters' | 'items'
   accuracyInitialMonsterId: number | null | undefined
   hasPreviousModal: boolean
@@ -47,13 +48,19 @@ interface ModalManagerProps {
   // Modal 開啟函數
   openGachaModal: (machineId?: number) => void
   openBugReportModal: () => void
-  openMerchantShopModal: () => void
+  openMerchantShopModal: (initialMapId?: string) => void
   openAccuracyCalculator: (initialMonsterId?: number | null) => void
 
   // 資料
   allDrops: DropsEssential[]  // 改為 Essential（只需基本資訊）
   gachaMachines: GachaMachine[]
   itemAttributesMap: Map<number, ItemAttributesEssential>
+  merchantItemIndex: Map<string, Array<{
+    mapId: string
+    mapName: string
+    chineseMapName: string
+    region: string
+  }>>
 
   // 最愛相關
   isFavorite: (mobId: number) => boolean
@@ -106,6 +113,7 @@ export const ModalManager = memo(function ModalManager({
   selectedItemId,
   selectedItemName,
   selectedGachaMachineId,
+  selectedMerchantMapId,
   clearModalType,
   accuracyInitialMonsterId,
   hasPreviousModal,
@@ -124,6 +132,7 @@ export const ModalManager = memo(function ModalManager({
   allDrops,
   gachaMachines,
   itemAttributesMap,
+  merchantItemIndex,
   isFavorite,
   toggleFavorite,
   isItemFavorite,
@@ -193,6 +202,7 @@ export const ModalManager = memo(function ModalManager({
         allDrops={allDrops}
         gachaMachines={gachaMachines}
         itemAttributesMap={itemAttributesMap}
+        merchantItemIndex={merchantItemIndex}
         isFavorite={selectedItemId !== null ? isItemFavorite(selectedItemId) : false}
         onToggleFavorite={toggleItemFavorite}
         isMonsterFavorite={isFavorite}
@@ -251,6 +261,7 @@ export const ModalManager = memo(function ModalManager({
       <MerchantShopModal
         isOpen={isMerchantShopModalOpen}
         onClose={closeMerchantShopModal}
+        initialMapId={selectedMerchantMapId}
       />
 
       {/* 懸浮按鈕群組（僅在 Modal 開啟時顯示） */}
@@ -330,7 +341,7 @@ export const ModalManager = memo(function ModalManager({
 
       {/* 浮動商人專賣按鈕 */}
       <button
-        onClick={openMerchantShopModal}
+        onClick={() => openMerchantShopModal()}
         className="fixed bottom-[184px] sm:bottom-[240px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-stone-600 hover:bg-stone-700 dark:bg-stone-700 dark:hover:bg-stone-800 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('merchant.button')}
       >

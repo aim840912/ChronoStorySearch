@@ -22,6 +22,8 @@ export type {
   TranslationKey,
   Translations,
   Theme,
+  MerchantDropItem,
+  MerchantMapData,
 } from './drops'
 
 // ========== 轉蛋相關類型 ==========

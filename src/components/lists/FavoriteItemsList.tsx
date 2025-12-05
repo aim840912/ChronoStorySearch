@@ -6,10 +6,19 @@ import { EmptyState } from './EmptyState'
 
 type UniqueFavoriteItem = { itemId: number; itemName: string; chineseItemName?: string | null; monsterCount: number }
 
+// 商人地點類型
+interface MerchantLocation {
+  mapId: string
+  mapName: string
+  chineseMapName: string
+  region: string
+}
+
 interface FavoriteItemsListProps {
   items: UniqueFavoriteItem[]
   hasSearchTerm: boolean
   itemAttributesMap: Map<number, ItemAttributesEssential>
+  merchantItemIndex: Map<string, MerchantLocation[]>
   onCardClick: (itemId: number, itemName: string) => void
   onToggleFavorite: (itemId: number, itemName: string) => void
   onClearClick: () => void
@@ -23,6 +32,7 @@ export function FavoriteItemsList({
   items,
   hasSearchTerm,
   itemAttributesMap,
+  merchantItemIndex,
   onCardClick,
   onToggleFavorite,
   onClearClick,
@@ -68,6 +78,7 @@ export function FavoriteItemsList({
             onToggleFavorite={onToggleFavorite}
             reqLevel={itemAttributesMap.get(item.itemId)?.req_level ?? null}
             index={index}
+            fromMerchant={merchantItemIndex.has(item.itemName.toLowerCase())}
           />
         ))}
       </div>
