@@ -2380,7 +2380,7 @@
       }
     },
     {
-      "chineseName": "手套敏捷卷軸10%",
+      "chineseName": "手套命中卷軸10%",
       "probability": "0.40%\r",
       "chance": 1000000,
       "itemId": 2040802,
@@ -2415,7 +2415,7 @@
       }
     },
     {
-      "chineseName": "手套敏捷卷軸100%",
+      "chineseName": "手套命中卷軸100%",
       "probability": "0.40%\r",
       "chance": 1000000,
       "itemId": 2040800,
@@ -2450,7 +2450,7 @@
       }
     },
     {
-      "chineseName": "手套敏捷卷軸15%",
+      "chineseName": "手套命中卷軸15%",
       "probability": "0.40%\r",
       "chance": 1000000,
       "itemId": 2040829,
@@ -2485,7 +2485,7 @@
       }
     },
     {
-      "chineseName": "手套敏捷卷軸60%",
+      "chineseName": "手套命中卷軸60%",
       "probability": "0.40%\r",
       "chance": 1000000,
       "itemId": 2040801,
@@ -6125,7 +6125,7 @@
       }
     },
     {
-      "chineseName": "盾牌魔攻卷軸10%",
+      "chineseName": "盾牌魔力卷軸10%",
       "probability": "0.40%\r",
       "chance": 1000000,
       "itemId": 2040920,
@@ -6160,7 +6160,7 @@
       }
     },
     {
-      "chineseName": "盾牌魔攻卷軸100%",
+      "chineseName": "盾牌魔力卷軸100%",
       "probability": "0.40%\r",
       "chance": 1000000,
       "itemId": 2040918,
@@ -6405,7 +6405,7 @@
       }
     },
     {
-      "chineseName": "鞋子敏捷卷軸10%",
+      "chineseName": "鞋子迴避卷軸10%",
       "probability": "0.40%\r",
       "chance": 1000000,
       "itemId": 2040702,
@@ -6440,7 +6440,7 @@
       }
     },
     {
-      "chineseName": "鞋子敏捷卷軸100%",
+      "chineseName": "鞋子迴避卷軸100%",
       "probability": "0.40%\r",
       "chance": 1000000,
       "itemId": 2040700,
@@ -6510,7 +6510,7 @@
       }
     },
     {
-      "chineseName": "鞋子敏捷卷軸60%",
+      "chineseName": "鞋子迴避卷軸60%",
       "probability": "0.40%\r",
       "chance": 1000000,
       "itemId": 2040701,
@@ -6755,7 +6755,7 @@
       }
     },
     {
-      "chineseName": "鞋子機動卷軸",
+      "chineseName": "鞋子移動卷軸15%",
       "probability": "0.40%\r",
       "chance": 1000000,
       "itemId": 2040723,
