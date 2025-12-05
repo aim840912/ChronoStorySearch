@@ -47,7 +47,8 @@ export const ItemCard = memo(function ItemCard({
   const isDev = process.env.NODE_ENV === 'development'
 
   const displayItemName = getItemDisplayName(itemName, chineseItemName, language)
-  const itemIconUrl = getItemImageUrl(itemId)
+  // 傳入 itemName 以支援卷軸圖示
+  const itemIconUrl = getItemImageUrl(itemId, { itemName })
 
   return (
     <BaseCard

@@ -32,8 +32,8 @@ export const DropCard = memo(function DropCard({ drop, onCardClick, isFavorite, 
   // 使用本地圖片，直接使用工具函數
   const monsterIconUrl = getMonsterImageUrl(drop.mobId)
 
-  // 物品圖示 URL
-  const itemIconUrl = getItemImageUrl(drop.itemId)
+  // 物品圖示 URL（傳入 itemName 以支援卷軸圖示）
+  const itemIconUrl = getItemImageUrl(drop.itemId, { itemName: drop.itemName })
 
   return (
     <div

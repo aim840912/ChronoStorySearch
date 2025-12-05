@@ -14,8 +14,8 @@ export const GachaItemCard = memo(function GachaItemCard({ item, language, onIte
   // 根據語言選擇顯示名稱
   const displayName = language === 'zh-TW' ? item.chineseName : (item.name || item.itemName || item.chineseName)
 
-  // 物品圖示 URL
-  const itemIconUrl = getItemImageUrl(item.itemId)
+  // 物品圖示 URL（傳入 itemName 以支援卷軸圖示）
+  const itemIconUrl = getItemImageUrl(item.itemId, { itemName: item.name || item.itemName })
 
   return (
     <div
