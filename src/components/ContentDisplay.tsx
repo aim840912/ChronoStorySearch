@@ -12,6 +12,14 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import type { ExtendedUniqueItem } from '@/types'
 import type { RefObject } from 'react'
 
+// 商人地點類型
+interface MerchantLocation {
+  mapId: string
+  mapName: string
+  chineseMapName: string
+  region: string
+}
+
 type UniqueMonster = { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number }
 type MixedCard =
   | { type: 'monster'; data: { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number } }
@@ -52,6 +60,7 @@ interface ContentDisplayProps {
     monsterCount: number
   }>
   itemAttributesMap: Map<number, ItemAttributesEssential>
+  merchantItemIndex: Map<string, MerchantLocation[]>
   onItemCardClick: (itemId: number, itemName: string) => void
   onToggleItemFavorite: (itemId: number, itemName: string) => void
   isItemFavorite: (itemId: number) => boolean
@@ -92,6 +101,7 @@ export const ContentDisplay = memo(function ContentDisplay({
   onClearMonsters,
   filteredUniqueItems,
   itemAttributesMap,
+  merchantItemIndex,
   onItemCardClick,
   onToggleItemFavorite,
   isItemFavorite,
@@ -135,6 +145,7 @@ export const ContentDisplay = memo(function ContentDisplay({
           items={filteredUniqueItems}
           hasSearchTerm={hasSearchTerm}
           itemAttributesMap={itemAttributesMap}
+          merchantItemIndex={merchantItemIndex}
           onCardClick={onItemCardClick}
           onToggleFavorite={onToggleItemFavorite}
           onClearClick={onClearItems}
@@ -155,6 +166,7 @@ export const ContentDisplay = memo(function ContentDisplay({
           hasSearchTerm={hasSearchTerm}
           mobLevelMap={mobLevelMap}
           itemAttributesMap={itemAttributesMap}
+          merchantItemIndex={merchantItemIndex}
           onMonsterCardClick={onMonsterCardClick}
           onItemCardClick={onItemCardClick}
           isFavorite={isFavorite}

@@ -19,6 +19,7 @@ interface ItemCardProps {
   source?: ItemSource
   reqLevel?: number | null
   index?: number // 用於 staggered 動畫
+  fromMerchant?: boolean // 是否有商人販售
 }
 
 /**
@@ -42,6 +43,7 @@ export const ItemCard = memo(function ItemCard({
   source,
   reqLevel,
   index = 0,
+  fromMerchant,
 }: ItemCardProps) {
   void monsterCount
   const { language, t } = useLanguage()
@@ -74,8 +76,8 @@ export const ItemCard = memo(function ItemCard({
         />
       </div>
 
-      {/* 左上角標籤群組 - 等級 + 轉蛋 */}
-      {((reqLevel !== null && reqLevel !== undefined) || source?.fromGacha) && (
+      {/* 左上角標籤群組 - 等級 + 轉蛋 + 商人 */}
+      {((reqLevel !== null && reqLevel !== undefined) || source?.fromGacha || fromMerchant) && (
         <div className="absolute top-3 left-5 flex items-center gap-2">
           {reqLevel !== null && reqLevel !== undefined && (
             <TypeBadge variant="item" level={reqLevel} />
@@ -86,6 +88,14 @@ export const ItemCard = memo(function ItemCard({
               title={t('card.gachaDrop')}
             >
               {t('search.type.gacha')}
+            </span>
+          )}
+          {fromMerchant && (
+            <span
+              className="inline-flex items-center px-2.5 py-1 rounded-full bg-stone-500 text-white text-xs font-bold"
+              title={t('card.merchantDrop')}
+            >
+              {t('search.type.merchant')}
             </span>
           )}
         </div>

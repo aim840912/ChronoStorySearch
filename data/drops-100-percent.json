@@ -42,70 +42,70 @@
       },
       {
         "itemName": "Scroll for One-Handed Sword for ATT 100%",
-        "chineseItemName": "單手劍攻擊力卷軸100%",
+        "chineseItemName": "單手劍攻擊卷軸100%",
         "itemType": "scroll",
         "category": "one-handed-sword",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for One-Handed Axe for ATT 100%",
-        "chineseItemName": "單手斧攻擊力卷軸100%",
+        "chineseItemName": "單手斧攻擊卷軸100%",
         "itemType": "scroll",
         "category": "one-handed-axe",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for One-Handed BW for ATT 100%",
-        "chineseItemName": "單手鈍器攻擊力卷軸100%",
+        "chineseItemName": "單手鈍器攻擊卷軸100%",
         "itemType": "scroll",
         "category": "one-handed-bw",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Dagger for ATT 100%",
-        "chineseItemName": "短劍攻擊力卷軸100%",
+        "chineseItemName": "短劍攻擊卷軸100%",
         "itemType": "scroll",
         "category": "dagger",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Two-Handed Sword for ATT 100%",
-        "chineseItemName": "雙手劍攻擊力卷軸100%",
+        "chineseItemName": "雙手劍攻擊卷軸100%",
         "itemType": "scroll",
         "category": "two-handed-sword",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Two-Handed Axe for ATT 100%",
-        "chineseItemName": "雙手斧攻擊力卷軸100%",
+        "chineseItemName": "雙手斧攻擊卷軸100%",
         "itemType": "scroll",
         "category": "two-handed-axe",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Two-Handed BW for ATT 100%",
-        "chineseItemName": "雙手鈍器攻擊力卷軸100%",
+        "chineseItemName": "雙手鈍器攻擊卷軸100%",
         "itemType": "scroll",
         "category": "two-handed-bw",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Spear for ATT 100%",
-        "chineseItemName": "長槍攻擊力卷軸100%",
+        "chineseItemName": "長槍攻擊卷軸100%",
         "itemType": "scroll",
         "category": "spear",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Pole Arm for ATT 100%",
-        "chineseItemName": "矛攻擊力卷軸100%",
+        "chineseItemName": "矛攻擊卷軸100%",
         "itemType": "scroll",
         "category": "pole-arm",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Claw for ATT 100%",
-        "chineseItemName": "指虎攻擊力卷軸100%",
+        "chineseItemName": "指虎攻擊卷軸100%",
         "itemType": "scroll",
         "category": "claw",
         "stat": "attack"
@@ -148,49 +148,49 @@
       },
       {
         "itemName": "Scroll for Shoes for Avoidability 100%",
-        "chineseItemName": "鞋子迴避率卷軸100%",
+        "chineseItemName": "鞋子迴避卷軸100%",
         "itemType": "scroll",
         "category": "shoes",
         "stat": "avoidability"
       },
       {
         "itemName": "Scroll for Wand for Magic ATT 100%",
-        "chineseItemName": "短杖魔法攻擊卷軸100%",
+        "chineseItemName": "短杖魔力卷軸100%",
         "itemType": "scroll",
         "category": "wand",
         "stat": "magic-attack"
       },
       {
         "itemName": "Scroll for Staff for Magic ATT 100%",
-        "chineseItemName": "長杖魔法攻擊卷軸100%",
+        "chineseItemName": "長杖魔力卷軸100%",
         "itemType": "scroll",
         "category": "staff",
         "stat": "magic-attack"
       },
       {
         "itemName": "Scroll for ATT 100%",
-        "chineseItemName": "攻擊力卷軸100%",
+        "chineseItemName": "攻擊卷軸100%",
         "itemType": "scroll",
         "category": "generic",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Crossbow for ATT 100%",
-        "chineseItemName": "弩攻擊力卷軸100%",
+        "chineseItemName": "弩攻擊卷軸100%",
         "itemType": "scroll",
         "category": "crossbow",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Knuckler for ATT 100%",
-        "chineseItemName": "拳虎攻擊力卷軸100%",
+        "chineseItemName": "拳虎攻擊卷軸100%",
         "itemType": "scroll",
         "category": "knuckler",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Gun for ATT 100%",
-        "chineseItemName": "火槍攻擊力卷軸100%",
+        "chineseItemName": "火槍攻擊卷軸100%",
         "itemType": "scroll",
         "category": "gun",
         "stat": "attack"
@@ -233,7 +233,7 @@
       },
       {
         "itemName": "Scroll for Shoes for Avoidability 100%",
-        "chineseItemName": "鞋子迴避率卷軸100%",
+        "chineseItemName": "鞋子迴避卷軸100%",
         "itemType": "scroll",
         "category": "shoes",
         "stat": "avoidability"
@@ -261,112 +261,112 @@
       },
       {
         "itemName": "Scroll for One-Handed Sword for ATT 100%",
-        "chineseItemName": "單手劍攻擊力卷軸100%",
+        "chineseItemName": "單手劍攻擊卷軸100%",
         "itemType": "scroll",
         "category": "one-handed-sword",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for One-Handed Axe for ATT 100%",
-        "chineseItemName": "單手斧攻擊力卷軸100%",
+        "chineseItemName": "單手斧攻擊卷軸100%",
         "itemType": "scroll",
         "category": "one-handed-axe",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for One-Handed BW for ATT 100%",
-        "chineseItemName": "單手鈍器攻擊力卷軸100%",
+        "chineseItemName": "單手鈍器攻擊卷軸100%",
         "itemType": "scroll",
         "category": "one-handed-bw",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Dagger for ATT 100%",
-        "chineseItemName": "短劍攻擊力卷軸100%",
+        "chineseItemName": "短劍攻擊卷軸100%",
         "itemType": "scroll",
         "category": "dagger",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Wand for Magic ATT 100%",
-        "chineseItemName": "短杖魔法攻擊卷軸100%",
+        "chineseItemName": "短杖魔力卷軸100%",
         "itemType": "scroll",
         "category": "wand",
         "stat": "magic-attack"
       },
       {
         "itemName": "Scroll for Staff for Magic ATT 100%",
-        "chineseItemName": "長杖魔法攻擊卷軸100%",
+        "chineseItemName": "長杖魔力卷軸100%",
         "itemType": "scroll",
         "category": "staff",
         "stat": "magic-attack"
       },
       {
         "itemName": "Scroll for Two-Handed Sword for ATT 100%",
-        "chineseItemName": "雙手劍攻擊力卷軸100%",
+        "chineseItemName": "雙手劍攻擊卷軸100%",
         "itemType": "scroll",
         "category": "two-handed-sword",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Two-Handed Axe for ATT 100%",
-        "chineseItemName": "雙手斧攻擊力卷軸100%",
+        "chineseItemName": "雙手斧攻擊卷軸100%",
         "itemType": "scroll",
         "category": "two-handed-axe",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Two-Handed BW for ATT 100%",
-        "chineseItemName": "雙手鈍器攻擊力卷軸100%",
+        "chineseItemName": "雙手鈍器攻擊卷軸100%",
         "itemType": "scroll",
         "category": "two-handed-bw",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Spear for ATT 100%",
-        "chineseItemName": "長槍攻擊力卷軸100%",
+        "chineseItemName": "長槍攻擊卷軸100%",
         "itemType": "scroll",
         "category": "spear",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Pole Arm for ATT 100%",
-        "chineseItemName": "矛攻擊力卷軸100%",
+        "chineseItemName": "矛攻擊卷軸100%",
         "itemType": "scroll",
         "category": "pole-arm",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Bow for ATT 100%",
-        "chineseItemName": "弓攻擊力卷軸100%",
+        "chineseItemName": "弓攻擊卷軸100%",
         "itemType": "scroll",
         "category": "bow",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Crossbow for ATT 100%",
-        "chineseItemName": "弩攻擊力卷軸100%",
+        "chineseItemName": "弩攻擊卷軸100%",
         "itemType": "scroll",
         "category": "crossbow",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Claw for ATT 100%",
-        "chineseItemName": "拳套攻擊力卷軸100%",
+        "chineseItemName": "拳套攻擊卷軸100%",
         "itemType": "scroll",
         "category": "claw",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Knuckler for ATT 100%",
-        "chineseItemName": "拳虎攻擊力卷軸100%",
+        "chineseItemName": "拳虎攻擊卷軸100%",
         "itemType": "scroll",
         "category": "knuckler",
         "stat": "attack"
       },
       {
         "itemName": "Scroll for Gun for ATT 100%",
-        "chineseItemName": "火槍攻擊力卷軸100%",
+        "chineseItemName": "火槍攻擊卷軸100%",
         "itemType": "scroll",
         "category": "gun",
         "stat": "attack"

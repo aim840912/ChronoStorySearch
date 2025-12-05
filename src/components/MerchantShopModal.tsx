@@ -23,17 +23,25 @@ interface MerchantShopMap {
 interface MerchantShopModalProps {
   isOpen: boolean
   onClose: () => void
+  initialMapId?: string  // 從搜尋建議打開時，自動展開指定地圖
 }
 
 /**
  * 商人專賣 Modal
  * 顯示 100% 掉落的卷軸物品資訊
  */
-export function MerchantShopModal({ isOpen, onClose }: MerchantShopModalProps) {
+export function MerchantShopModal({ isOpen, onClose, initialMapId }: MerchantShopModalProps) {
   const { language, t, setLanguage } = useLanguage()
   const [maps, setMaps] = useState<MerchantShopMap[]>([])
-  const [expandedMapId, setExpandedMapId] = useState<string | null>(null)
+  const [expandedMapId, setExpandedMapId] = useState<string | null>(initialMapId || null)
   const [isLoading, setIsLoading] = useState(false)
+
+  // 當 initialMapId 變更時（從搜尋建議選取），自動展開對應地圖
+  useEffect(() => {
+    if (isOpen && initialMapId) {
+      setExpandedMapId(initialMapId)
+    }
+  }, [isOpen, initialMapId])
 
   // 語言切換函數
   const toggleLanguage = () => {

@@ -52,11 +52,14 @@ export interface ExtendedUniqueItem {
 // 搜尋建議項目類型
 export interface SuggestionItem {
   name: string
-  type: 'monster' | 'item' | 'gacha'
+  type: 'monster' | 'item' | 'gacha' | 'merchant'
   count: number
   id?: number
   machineId?: number
   machineName?: string
+  mapId?: string           // 商人地圖 ID
+  mapName?: string         // 商人地圖英文名稱
+  chineseMapName?: string  // 商人地圖中文名稱
 }
 
 // 最愛怪物介面
@@ -85,7 +88,7 @@ export interface ViewHistoryItem {
 export type FilterMode = 'all' | 'favorite-monsters' | 'favorite-items' | 'market-listings'
 
 // 搜尋類型篩選
-export type SearchTypeFilter = 'all' | 'monster' | 'item' | 'gacha'
+export type SearchTypeFilter = 'all' | 'monster' | 'item' | 'gacha' | 'merchant'
 
 // 清除模態框類型
 export type ClearModalType = 'monsters' | 'items' | null
@@ -101,3 +104,21 @@ export type Translations = Record<string, string>
 
 // 主題相關類型
 export type Theme = 'light' | 'dark'
+
+// 商人 100% 掉落物品類型
+export interface MerchantDropItem {
+  itemName: string
+  chineseItemName: string
+  itemType: string
+  category: string
+  stat: string
+}
+
+// 商人地圖資料類型
+export interface MerchantMapData {
+  mapId: string
+  mapName: string
+  chineseMapName: string
+  region: string
+  drops: MerchantDropItem[]
+}

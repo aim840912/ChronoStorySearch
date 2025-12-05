@@ -12,6 +12,14 @@ type MixedCard =
   | { type: 'monster'; data: UniqueMonster }
   | { type: 'item'; data: ExtendedUniqueItem }
 
+// 商人地點類型
+interface MerchantLocation {
+  mapId: string
+  mapName: string
+  chineseMapName: string
+  region: string
+}
+
 interface AllItemsViewProps {
   // 混合卡片（無搜尋時使用）
   mixedCards: MixedCard[]
@@ -44,6 +52,7 @@ interface AllItemsViewProps {
   // 資料映射
   mobLevelMap: Map<number, number | null>
   itemAttributesMap: Map<number, ItemAttributesEssential>
+  merchantItemIndex: Map<string, MerchantLocation[]>
 
   // 回調函數
   onMonsterCardClick: (mobId: number, mobName: string) => void
@@ -79,6 +88,7 @@ export function AllItemsView({
   hasSearchTerm,
   mobLevelMap,
   itemAttributesMap,
+  merchantItemIndex,
   onMonsterCardClick,
   onItemCardClick,
   isFavorite,
@@ -171,6 +181,7 @@ export function AllItemsView({
                   source={{ fromDrops: !!itemData, fromGacha: isFromGacha }}
                   reqLevel={reqLevel}
                   index={index}
+                  fromMerchant={merchantItemIndex.has(displayItemName.toLowerCase())}
                 />
               )
             }
@@ -213,6 +224,7 @@ export function AllItemsView({
                   source={card.data.source}
                   reqLevel={itemAttributesMap.get(card.data.itemId)?.req_level ?? null}
                   index={index}
+                  fromMerchant={merchantItemIndex.has(card.data.itemName.toLowerCase())}
                 />
               )
             }
@@ -288,6 +300,7 @@ export function AllItemsView({
                 source={item.source}
                 reqLevel={itemAttributesMap.get(item.itemId)?.req_level ?? null}
                 index={index}
+                fromMerchant={merchantItemIndex.has(item.itemName.toLowerCase())}
               />
             ))}
           </div>
