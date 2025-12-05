@@ -1866,7 +1866,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "手套敏捷卷軸10%",
+    "chineseItemName": "手套命中卷軸10%",
     "chineseMobName": "黑木妖"
   },
   {
@@ -2625,7 +2625,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "手套敏捷卷軸60%",
+    "chineseItemName": "手套命中卷軸60%",
     "chineseMobName": "發芽木妖"
   },
   {
@@ -2867,7 +2867,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "鞋子敏捷卷軸10%",
+    "chineseItemName": "鞋子迴避卷軸10%",
     "chineseMobName": "肥肥"
   },
   {
@@ -4473,7 +4473,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "褲裙跳躍卷軸10%",
+    "chineseItemName": "褲裙跳躍卷軸100%",
     "chineseMobName": "青蛇"
   },
   {
@@ -7938,7 +7938,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "褲裙生命卷軸100%",
+    "chineseItemName": "褲裙跳躍卷軸15%",
     "chineseMobName": "石球"
   },
   {
@@ -10457,7 +10457,7 @@
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "鞋子敏捷卷軸60%",
+    "chineseItemName": "鞋子迴避卷軸60%",
     "chineseMobName": "樹妖王"
   },
   {
@@ -10468,7 +10468,7 @@
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "手套敏捷卷軸60%",
+    "chineseItemName": "手套命中卷軸60%",
     "chineseMobName": "樹妖王"
   },
   {
@@ -23701,7 +23701,7 @@
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "手套敏捷卷軸60%",
+    "chineseItemName": "手套命中卷軸60%",
     "chineseMobName": "殭屍猴王"
   },
   {
@@ -25186,7 +25186,7 @@
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "飾品敏捷詛咒卷軸30%",
+    "chineseItemName": "飾品智力詛咒卷軸30%",
     "chineseMobName": "厄運死神"
   },
   {
@@ -25989,7 +25989,7 @@
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "鞋子敏捷卷軸60%",
+    "chineseItemName": "鞋子迴避卷軸60%",
     "chineseMobName": "蘑菇王"
   },
   {
@@ -26022,7 +26022,7 @@
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "手套敏捷卷軸60%",
+    "chineseItemName": "手套命中卷軸60%",
     "chineseMobName": "蘑菇王"
   },
   {
@@ -27045,7 +27045,7 @@
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "鞋子敏捷卷軸10%",
+    "chineseItemName": "鞋子迴避卷軸10%",
     "chineseMobName": "沼澤巨鱷"
   },
   {
@@ -27958,7 +27958,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "褲裙生命卷軸100%",
+    "chineseItemName": "褲裙跳躍卷軸15%",
     "chineseMobName": "黑企鵝王"
   },
   {
@@ -28299,7 +28299,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "褲裙生命卷軸100%",
+    "chineseItemName": "褲裙跳躍卷軸15%",
     "chineseMobName": "孤單黑企鵝王"
   },
   {
@@ -37440,7 +37440,7 @@
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "鞋子敏捷卷軸10%",
+    "chineseItemName": "鞋子迴避卷軸10%",
     "chineseMobName": "地獄巴洛古"
   },
   {
@@ -37473,7 +37473,7 @@
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "手套敏捷卷軸10%",
+    "chineseItemName": "手套命中卷軸10%",
     "chineseMobName": "地獄巴洛古"
   },
   {
@@ -38650,7 +38650,7 @@
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "鞋子敏捷卷軸60%",
+    "chineseItemName": "鞋子迴避卷軸60%",
     "chineseMobName": "雪毛怪人"
   },
   {
@@ -38661,7 +38661,7 @@
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "手套敏捷卷軸60%",
+    "chineseItemName": "手套命中卷軸60%",
     "chineseMobName": "雪毛怪人"
   },
   {
@@ -39750,7 +39750,7 @@
     "chance": 0.001,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "手套敏捷卷軸60%",
+    "chineseItemName": "手套命中卷軸60%",
     "chineseMobName": "冰烏龜"
   },
   {

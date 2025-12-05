@@ -50,7 +50,8 @@ function HistoryItemImage({ item }: { item: ViewHistoryItem }) {
 
   const imageUrl = item.type === 'monster'
     ? getMonsterImageUrl(item.id)
-    : getItemImageUrl(item.id)
+    // 傳入 name 以支援卷軸圖示
+    : getItemImageUrl(item.id, { itemName: item.name })
 
   // 如果沒有圖片或載入失敗，顯示 fallback SVG
   if (!hasImage || imageError) {

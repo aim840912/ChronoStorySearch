@@ -77,7 +77,7 @@ export function SuggestionList({
               /* 物品圖示 */
               suggestion.id !== undefined && !hasImageFailed('item', suggestion.id) ? (
                 <img
-                  src={getItemImageUrl(suggestion.id)}
+                  src={getItemImageUrl(suggestion.id, { itemName: suggestion.name })}
                   alt={suggestion.name}
                   className="w-8 h-8 object-contain flex-shrink-0"
                   onError={() => handleImageError('item', suggestion.id!)}
