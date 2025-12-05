@@ -1,11 +1,12 @@
 'use client'
 
 import { useState, useEffect, useMemo, useCallback } from 'react'
-import type { DropsEssential, GachaMachine, GachaItem, EnhancedGachaItem, MobInfo, ItemAttributesEssential } from '@/types'
+import type { DropsEssential, GachaMachine, GachaItem, EnhancedGachaItem, MobInfo, ItemAttributesEssential, MerchantMapData } from '@/types'
 import { clientLogger } from '@/lib/logger'
 import dropsEssentialData from '@/../data/drops-essential.json'
 import mobInfoData from '@/../data/mob-info.json'
 import itemAttributesEssentialData from '@/../data/item-attributes-essential.json'
+import merchantDropsData from '@/../data/drops-100-percent.json'
 
 /**
  * Enhanced JSON 的轉蛋機格式
@@ -235,10 +236,67 @@ export function useDataManagement() {
     return attrMap
   }, [])
 
+  // 商人地圖資料（100% 掉落）
+  const merchantMaps = useMemo(() => {
+    return merchantDropsData as MerchantMapData[]
+  }, [])
+
+  // 建立商人物品索引 (itemName -> 販售該物品的地圖列表)
+  // 用於 ItemModal 顯示商人販售資訊
+  const merchantItemIndex = useMemo(() => {
+    const index = new Map<string, Array<{
+      mapId: string
+      mapName: string
+      chineseMapName: string
+      region: string
+    }>>()
+
+    const maps = merchantDropsData as MerchantMapData[]
+    maps.forEach((mapData) => {
+      mapData.drops.forEach((item) => {
+        // 用英文名稱作為 key（小寫）
+        const keyEn = item.itemName.toLowerCase()
+        if (!index.has(keyEn)) {
+          index.set(keyEn, [])
+        }
+        // 避免重複新增同一個地圖
+        const existing = index.get(keyEn)!
+        if (!existing.some(m => m.mapId === mapData.mapId)) {
+          existing.push({
+            mapId: mapData.mapId,
+            mapName: mapData.mapName,
+            chineseMapName: mapData.chineseMapName,
+            region: mapData.region,
+          })
+        }
+
+        // 同時用中文名稱作為 key
+        const keyZh = item.chineseItemName.toLowerCase()
+        if (!index.has(keyZh)) {
+          index.set(keyZh, [])
+        }
+        const existingZh = index.get(keyZh)!
+        if (!existingZh.some(m => m.mapId === mapData.mapId)) {
+          existingZh.push({
+            mapId: mapData.mapId,
+            mapName: mapData.mapName,
+            chineseMapName: mapData.chineseMapName,
+            region: mapData.region,
+          })
+        }
+      })
+    })
+
+    clientLogger.info(`建立商人物品索引: ${index.size} 個物品名稱`)
+    return index
+  }, [])
+
   return {
     // 資料
     allDrops,
     gachaMachines,
+    merchantMaps,
+    merchantItemIndex,
     isLoading,
 
     // 初始隨機資料

@@ -1,12 +1,13 @@
 'use client'
 
 import { useMemo } from 'react'
-import type { DropsEssential, GachaMachine, SuggestionItem, SearchTypeFilter } from '@/types'
+import type { DropsEssential, GachaMachine, SuggestionItem, SearchTypeFilter, MerchantMapData } from '@/types'
 import { matchesAllKeywords } from '@/lib/search-utils'
 
 interface UseSearchLogicParams {
   allDrops: DropsEssential[]  // 改為 Essential（只需要基本資訊用於搜尋索引）
   gachaMachines: GachaMachine[]
+  merchantMaps: MerchantMapData[]  // 商人 100% 掉落資料
   debouncedSearchTerm: string
   searchType: SearchTypeFilter
 }
@@ -21,6 +22,7 @@ interface UseSearchLogicParams {
 export function useSearchLogic({
   allDrops,
   gachaMachines,
+  merchantMaps,
   debouncedSearchTerm,
   searchType,
 }: UseSearchLogicParams) {
@@ -29,6 +31,7 @@ export function useSearchLogic({
     const monsterMap = new Map<string, SuggestionItem>()
     const itemMap = new Map<string, SuggestionItem>()
     const gachaMap = new Map<string, SuggestionItem>()
+    const merchantMap = new Map<string, SuggestionItem>()
 
     // 建立怪物和物品索引
     allDrops.forEach((drop) => {
@@ -143,8 +146,46 @@ export function useSearchLogic({
       })
     })
 
-    return { monsterMap, itemMap, gachaMap }
-  }, [allDrops, gachaMachines])
+    // 建立商人地圖索引（100% 掉落物品）
+    // 搜尋方式：以物品名稱建立索引，對應到地圖
+    merchantMaps.forEach((mapData) => {
+      mapData.drops.forEach((item) => {
+        // 為英文物品名稱建立索引
+        const itemNameLower = item.itemName.toLowerCase()
+        const existingEnglish = merchantMap.get(itemNameLower)
+        if (!existingEnglish) {
+          merchantMap.set(itemNameLower, {
+            name: item.itemName,
+            type: 'merchant',
+            count: 1,
+            mapId: mapData.mapId,
+            mapName: mapData.mapName,
+            chineseMapName: mapData.chineseMapName,
+          })
+        }
+
+        // 為中文物品名稱建立索引（如果存在且與英文不同）
+        if (item.chineseItemName) {
+          const chineseNameLower = item.chineseItemName.toLowerCase()
+          if (chineseNameLower !== itemNameLower) {
+            const existingChinese = merchantMap.get(chineseNameLower)
+            if (!existingChinese) {
+              merchantMap.set(chineseNameLower, {
+                name: item.chineseItemName,
+                type: 'merchant',
+                count: 1,
+                mapId: mapData.mapId,
+                mapName: mapData.mapName,
+                chineseMapName: mapData.chineseMapName,
+              })
+            }
+          }
+        }
+      })
+    })
+
+    return { monsterMap, itemMap, gachaMap, merchantMap }
+  }, [allDrops, gachaMachines, merchantMaps])
 
   // 計算搜尋建議列表（使用索引優化效能，支援多關鍵字搜尋和類型過濾）
   const suggestions = useMemo(() => {
@@ -182,6 +223,13 @@ export function useSearchLogic({
           results.push(suggestion)
         }
       })
+    } else if (searchType === 'merchant') {
+      // 只從商人索引中搜尋
+      nameIndex.merchantMap.forEach((suggestion) => {
+        if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
+          results.push(suggestion)
+        }
+      })
     } else {
       // 'all': 從所有索引中搜尋（原有邏輯）
       nameIndex.monsterMap.forEach((suggestion) => {
@@ -195,6 +243,12 @@ export function useSearchLogic({
         }
       })
       nameIndex.gachaMap.forEach((suggestion) => {
+        if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
+          results.push(suggestion)
+        }
+      })
+      // 加入商人索引搜尋
+      nameIndex.merchantMap.forEach((suggestion) => {
         if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
           results.push(suggestion)
         }

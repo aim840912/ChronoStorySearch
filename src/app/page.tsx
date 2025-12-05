@@ -71,6 +71,8 @@ export default function Home() {
   const {
     allDrops,
     gachaMachines,
+    merchantMaps,
+    merchantItemIndex,
     isLoading,
     initialRandomDrops,
     initialRandomGachaItems,
@@ -84,6 +86,7 @@ export default function Home() {
   const { suggestions } = useSearchLogic({
     allDrops,
     gachaMachines,
+    merchantMaps,
     debouncedSearchTerm,
     searchType,
   })
@@ -271,6 +274,9 @@ export default function Home() {
     // 如果是轉蛋物品，開啟物品 Modal（而不是轉蛋機 Modal）
     if (suggestion && suggestion.type === 'gacha' && suggestion.id) {
       modals.openItemModal(suggestion.id, suggestionName)
+    } else if (suggestion && suggestion.type === 'merchant' && suggestion.mapId) {
+      // 如果是商人物品，開啟商人 Modal 並自動展開對應地圖
+      modals.openMerchantShopModal(suggestion.mapId)
     } else {
       search.selectSuggestion(suggestionName)
     }
@@ -371,6 +377,7 @@ export default function Home() {
           onClearMonsters={() => modals.openClearModal('monsters')}
           filteredUniqueItems={filteredUniqueItems}
           itemAttributesMap={itemAttributesMap}
+          merchantItemIndex={merchantItemIndex}
           onItemCardClick={modals.openItemModal}
           onToggleItemFavorite={toggleItemFavorite}
           isItemFavorite={isItemFavorite}
@@ -404,6 +411,7 @@ export default function Home() {
         selectedItemId={modals.selectedItemId}
         selectedItemName={modals.selectedItemName}
         selectedGachaMachineId={modals.selectedGachaMachineId ?? null}
+        selectedMerchantMapId={modals.selectedMerchantMapId}
         clearModalType={modals.clearModalType}
         accuracyInitialMonsterId={modals.accuracyInitialMonsterId}
         hasPreviousModal={modals.hasPreviousModal}
@@ -422,6 +430,7 @@ export default function Home() {
         allDrops={allDrops}
         gachaMachines={gachaMachines}
         itemAttributesMap={itemAttributesMap}
+        merchantItemIndex={merchantItemIndex}
         isFavorite={isFavorite}
         toggleFavorite={toggleFavorite}
         isItemFavorite={isItemFavorite}
