@@ -14592,7 +14592,7 @@
     },
     "2040353": {
       "name": "Dark Scroll for Accessory for INT 30%",
-      "chineseName": "飾品敏捷詛咒卷軸30%"
+      "chineseName": "飾品智力詛咒卷軸30%"
     },
     "2040401": {
       "name": "Scroll for Topwear for Defense 60%",
@@ -14684,27 +14684,27 @@
     },
     "2040617": {
       "name": "Scroll for Bottomwear for Mobility 100%",
-      "chineseName": "褲裙跳躍卷軸10%"
+      "chineseName": "褲裙移動卷軸100%"
     },
     "2040618": {
       "name": "Scroll for Bottomwear for Mobility 60%",
-      "chineseName": "褲裙跳躍卷軸60%"
+      "chineseName": "褲裙移動卷軸60%"
     },
     "2040619": {
       "name": "Scroll for Bottomwear for Mobility 10%",
-      "chineseName": "褲裙跳躍卷軸10%"
+      "chineseName": "褲裙移動卷軸10%"
     },
     "2040620": {
       "name": "Scroll for Bottomwear for Mobility 15%",
-      "chineseName": "褲裙生命卷軸100%"
+      "chineseName": "褲裙移動卷軸15%"
     },
     "2040701": {
       "name": "Scroll for Shoes for Avoidability 60%",
-      "chineseName": "鞋子敏捷卷軸60%"
+      "chineseName": "鞋子迴避卷軸60%"
     },
     "2040702": {
       "name": "Scroll for Shoes for Avoidability 10%",
-      "chineseName": "鞋子敏捷卷軸10%"
+      "chineseName": "鞋子迴避卷軸10%"
     },
     "2040704": {
       "name": "Scroll for Shoes for Jump 60%",
@@ -14728,11 +14728,11 @@
     },
     "2040801": {
       "name": "Scroll for Gloves for Accuracy 60%",
-      "chineseName": "手套敏捷卷軸60%"
+      "chineseName": "手套命中卷軸60%"
     },
     "2040802": {
       "name": "Scroll for Gloves for Accuracy 10%",
-      "chineseName": "手套敏捷卷軸10%"
+      "chineseName": "手套命中卷軸10%"
     },
     "2040804": {
       "name": "Scroll for Gloves for ATT 60%",
@@ -14772,7 +14772,7 @@
     },
     "2040918": {
       "name": "Scroll for Shield for Magic ATT 100%",
-      "chineseName": "盾牌魔攻卷軸100%"
+      "chineseName": "盾牌魔力卷軸100%"
     },
     "2040923": {
       "name": "Scroll for Shield for LUK 100%",
@@ -14788,7 +14788,7 @@
     },
     "2040926": {
       "name": "Scroll for Shield for Magic ATT 15%",
-      "chineseName": "盾牌魔攻卷軸15%"
+      "chineseName": "盾牌魔力卷軸15%"
     },
     "2040928": {
       "name": "Scroll for Shield for ATT 100%",
