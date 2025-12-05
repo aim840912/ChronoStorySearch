@@ -2,6 +2,7 @@
 
 import { memo } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useAutoFitText } from '@/hooks/useAutoFitText'
 import { getItemDisplayName } from '@/lib/display-name'
 import { getItemImageUrl } from '@/lib/image-utils'
 import type { ItemSource } from '@/types'
@@ -47,7 +48,16 @@ export const ItemCard = memo(function ItemCard({
   const isDev = process.env.NODE_ENV === 'development'
 
   const displayItemName = getItemDisplayName(itemName, chineseItemName, language)
-  const itemIconUrl = getItemImageUrl(itemId)
+  // 傳入 itemName 以支援卷軸圖示
+  const itemIconUrl = getItemImageUrl(itemId, { itemName })
+
+  // 自動縮放文字以適應兩行
+  const { ref: titleRef, fontSize } = useAutoFitText({
+    text: displayItemName,
+    maxLines: 2,
+    minFontSize: 12,
+    maxFontSize: 18,
+  })
 
   return (
     <BaseCard
@@ -89,7 +99,11 @@ export const ItemCard = memo(function ItemCard({
           size="lg"
         />
         <div className="flex-1 min-w-0">
-          <h3 className="text-lg font-bold text-gray-900 dark:text-white truncate">
+          <h3
+            ref={titleRef as React.RefObject<HTMLHeadingElement>}
+            style={{ fontSize: `${fontSize}px` }}
+            className="font-bold text-gray-900 dark:text-white line-clamp-2 leading-snug"
+          >
             {displayItemName}
           </h3>
           {isDev && (

@@ -14,8 +14,8 @@ interface GachaResultCardProps {
  * 抽獎結果卡片元件（點擊顯示詳細資訊）
  */
 export const GachaResultCard = memo(function GachaResultCard({ item, displayNumber, onShowDetails }: GachaResultCardProps) {
-  // 物品圖示 URL
-  const itemIconUrl = getItemImageUrl(item.itemId)
+  // 物品圖示 URL（傳入 itemName 以支援卷軸圖示）
+  const itemIconUrl = getItemImageUrl(item.itemId, { itemName: item.name || item.itemName })
 
   // 點擊事件處理
   const handleClick = () => {

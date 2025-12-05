@@ -127,8 +127,8 @@ function DropItemListRow({
   // 獲取顯示名稱
   const displayItemName = getItemDisplayName(drop.itemName, drop.chineseItemName, language)
 
-  // 物品圖示 URL
-  const itemIconUrl = getItemImageUrl(drop.itemId)
+  // 物品圖示 URL（傳入 itemName 以支援卷軸圖示）
+  const itemIconUrl = getItemImageUrl(drop.itemId, { itemName: drop.itemName })
 
   // 根據物品類型決定顯示內容
   const essentialData = itemAttributesMap.get(drop.itemId)

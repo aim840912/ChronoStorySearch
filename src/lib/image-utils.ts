@@ -45,6 +45,27 @@ const availableMonsterHits = new Set(
 // 圖片格式類型：png（靜態）, stand（待機GIF）, hit（受擊GIF）, die（死亡GIF）
 export type ImageFormat = 'png' | 'stand' | 'hit' | 'die'
 
+// 卷軸成功率圖示支援的百分比
+const SCROLL_SUCCESS_RATES = [10, 15, 30, 60, 70, 100] as const
+
+/**
+ * 從物品名稱解析卷軸成功率
+ * @param itemName 物品名稱（如 "Scroll for Helmet for Defense 60%"）
+ * @returns 成功率數字或 null
+ */
+function extractScrollSuccessRate(itemName: string): number | null {
+  const match = itemName.match(/(\d+)%/)
+  return match ? parseInt(match[1], 10) : null
+}
+
+/**
+ * 檢查物品是否為卷軸
+ * 卷軸 ID 範圍: 2040000 - 2049999
+ */
+function isScrollItem(itemId: number): boolean {
+  return itemId >= 2040000 && itemId < 2050000
+}
+
 // ==================== 圖片路徑工具函數 ====================
 
 /**
@@ -95,20 +116,35 @@ export function hasMonsterHit(mobId: number): boolean {
 /**
  * 取得物品圖片 URL
  * @param itemId 物品 ID
- * @param fallback 預設圖片路徑（可選）
+ * @param options 選項
+ * @param options.fallback 預設圖片路徑
+ * @param options.itemName 物品名稱（用於卷軸成功率解析）
  * @returns 圖片 URL（使用 R2 CDN，依賴瀏覽器 HTTP 快取）
  */
 export function getItemImageUrl(
   itemId: number,
-  fallback: string = '/images/items/default.svg'
+  options: {
+    fallback?: string
+    itemName?: string
+  } = {}
 ): string {
-  if (!hasItemImage(itemId)) {
-    return fallback
-  }
+  const { fallback = '/images/items/default.svg', itemName } = options
 
   // 強制使用 R2 CDN（不再 fallback 到本地路徑）
   if (!R2_PUBLIC_URL) {
     clientLogger.error(`無法載入物品圖片 ${itemId}：R2_PUBLIC_URL 未設置`)
+    return fallback
+  }
+
+  // 卷軸特殊處理：根據成功率顯示對應圖示
+  if (isScrollItem(itemId) && itemName) {
+    const successRate = extractScrollSuccessRate(itemName)
+    if (successRate && SCROLL_SUCCESS_RATES.includes(successRate as typeof SCROLL_SUCCESS_RATES[number])) {
+      return `${R2_PUBLIC_URL}/images/scrolls/${successRate}.png`
+    }
+  }
+
+  if (!hasItemImage(itemId)) {
     return fallback
   }
 
