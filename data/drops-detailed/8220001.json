@@ -335,7 +335,7 @@
     "chineseMobName": "雪毛怪人",
     "itemId": 2040701,
     "itemName": "Scroll for Shoes for Avoidability 60%",
-    "chineseItemName": "鞋子敏捷卷軸60%",
+    "chineseItemName": "鞋子迴避卷軸60%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -346,7 +346,7 @@
     "chineseMobName": "雪毛怪人",
     "itemId": 2040801,
     "itemName": "Scroll for Gloves for Accuracy 60%",
-    "chineseItemName": "手套敏捷卷軸60%",
+    "chineseItemName": "手套命中卷軸60%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1

@@ -4473,7 +4473,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "褲裙跳躍卷軸100%",
+    "chineseItemName": "褲裙移動卷軸100%",
     "chineseMobName": "青蛇"
   },
   {
@@ -7938,7 +7938,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "褲裙跳躍卷軸15%",
+    "chineseItemName": "褲裙移動卷軸15%",
     "chineseMobName": "石球"
   },
   {
@@ -19334,7 +19334,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "褲裙跳躍卷軸60%",
+    "chineseItemName": "褲裙移動卷軸60%",
     "chineseMobName": "黑曜石巨人"
   },
   {
@@ -23294,7 +23294,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "盾牌魔攻卷軸15%",
+    "chineseItemName": "盾牌魔力卷軸15%",
     "chineseMobName": "火石球"
   },
   {
@@ -25967,7 +25967,7 @@
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "褲裙跳躍卷軸60%",
+    "chineseItemName": "褲裙移動卷軸60%",
     "chineseMobName": "蘑菇王"
   },
   {
@@ -25978,7 +25978,7 @@
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "褲裙跳躍卷軸10%",
+    "chineseItemName": "褲裙移動卷軸10%",
     "chineseMobName": "蘑菇王"
   },
   {
@@ -27958,7 +27958,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "褲裙跳躍卷軸15%",
+    "chineseItemName": "褲裙移動卷軸15%",
     "chineseMobName": "黑企鵝王"
   },
   {
@@ -28299,7 +28299,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "褲裙跳躍卷軸15%",
+    "chineseItemName": "褲裙移動卷軸15%",
     "chineseMobName": "孤單黑企鵝王"
   },
   {
@@ -33117,7 +33117,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "褲裙跳躍卷軸60%",
+    "chineseItemName": "褲裙移動卷軸60%",
     "chineseMobName": "地獄獵犬"
   },
   {
@@ -36582,7 +36582,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "褲裙跳躍卷軸10%",
+    "chineseItemName": "褲裙移動卷軸10%",
     "chineseMobName": "黑吉拉戰車"
   },
   {
@@ -39871,7 +39871,7 @@
     "chance": 0.0003,
     "minQty": 1,
     "maxQty": 1,
-    "chineseItemName": "盾牌魔攻卷軸100%",
+    "chineseItemName": "盾牌魔力卷軸100%",
     "chineseMobName": "盾牌牛魔王"
   },
   {

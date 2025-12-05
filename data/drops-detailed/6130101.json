@@ -181,7 +181,7 @@
     "chineseMobName": "蘑菇王",
     "itemId": 2040618,
     "itemName": "Scroll for Bottomwear for Mobility 60%",
-    "chineseItemName": "褲裙跳躍卷軸60%",
+    "chineseItemName": "褲裙移動卷軸60%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -192,7 +192,7 @@
     "chineseMobName": "蘑菇王",
     "itemId": 2040619,
     "itemName": "Scroll for Bottomwear for Mobility 10%",
-    "chineseItemName": "褲裙跳躍卷軸10%",
+    "chineseItemName": "褲裙移動卷軸10%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -203,7 +203,7 @@
     "chineseMobName": "蘑菇王",
     "itemId": 2040701,
     "itemName": "Scroll for Shoes for Avoidability 60%",
-    "chineseItemName": "鞋子敏捷卷軸60%",
+    "chineseItemName": "鞋子迴避卷軸60%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
@@ -236,7 +236,7 @@
     "chineseMobName": "蘑菇王",
     "itemId": 2040801,
     "itemName": "Scroll for Gloves for Accuracy 60%",
-    "chineseItemName": "手套敏捷卷軸60%",
+    "chineseItemName": "手套命中卷軸60%",
     "chance": 0.003,
     "minQty": 1,
     "maxQty": 1
