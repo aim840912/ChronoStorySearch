@@ -16,6 +16,14 @@ import { useLazyMobInfo, useLazyItemDetailed } from '@/hooks/useLazyData'
 import { findGachaItemAttributes } from '@/lib/gacha-utils'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 
+// 商人販售地點資料結構
+interface MerchantLocation {
+  mapId: string
+  mapName: string
+  chineseMapName: string
+  region: string
+}
+
 interface ItemModalProps {
   isOpen: boolean
   onClose: () => void
@@ -24,6 +32,7 @@ interface ItemModalProps {
   allDrops: DropsEssential[]  // 改為 Essential（只需基本資訊）
   gachaMachines: GachaMachine[]
   itemAttributesMap: Map<number, ItemAttributesEssential>
+  merchantItemIndex: Map<string, MerchantLocation[]>
   isFavorite: boolean
   onToggleFavorite: (itemId: number, itemName: string) => void
   // 怪物相關 props
@@ -49,6 +58,7 @@ export function ItemModal({
   allDrops,
   gachaMachines,
   itemAttributesMap,
+  merchantItemIndex,
   isFavorite,
   onToggleFavorite,
   isMonsterFavorite,
@@ -152,6 +162,49 @@ export function ItemModal({
 
     return null
   }, [itemId, allDrops, gachaMachines])
+
+  // 計算該物品的商人販售來源（透過物品英文名稱查詢）
+  const itemMerchantSources = useMemo(() => {
+    if (!itemId && itemId !== 0) return []
+
+    // 從 allDrops 或 gachaMachines 查找物品的英文名稱
+    let englishItemName: string | null = null
+
+    // 1. 先從 allDrops 查找
+    const dropItem = allDrops.find(drop => drop.itemId === itemId)
+    if (dropItem) {
+      englishItemName = dropItem.itemName
+    }
+
+    // 2. 如果 allDrops 沒有，從 gachaMachines 查找
+    if (!englishItemName) {
+      for (const machine of gachaMachines) {
+        const gachaItem = machine.items.find(item => item.itemId === itemId)
+        if (gachaItem) {
+          englishItemName = gachaItem.name || gachaItem.itemName || ''
+          break
+        }
+      }
+    }
+
+    // 3. 用英文名稱查詢 merchantItemIndex
+    if (englishItemName) {
+      const sources = merchantItemIndex.get(englishItemName.toLowerCase())
+      if (sources && sources.length > 0) {
+        return sources
+      }
+    }
+
+    // Fallback: 用傳入的 itemName 嘗試（可能是英文）
+    if (itemName) {
+      const sources = merchantItemIndex.get(itemName.toLowerCase())
+      if (sources && sources.length > 0) {
+        return sources
+      }
+    }
+
+    return []
+  }, [itemId, itemName, allDrops, gachaMachines, merchantItemIndex])
 
   // 根據語言選擇顯示名稱
   const displayItemName = useMemo(() => {
@@ -308,7 +361,7 @@ export function ItemModal({
                   : 'text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
               }`}
             >
-              {t('item.dropSources') || '掉落來源'} ({itemDrops.length + itemGachaSources.length})
+              {t('item.dropSources') || '掉落來源'} ({itemDrops.length + itemGachaSources.length + itemMerchantSources.length})
             </button>
           </div>
         </div>
@@ -421,6 +474,45 @@ export function ItemModal({
               </div>
             )}
 
+            {/* 商人販售區塊 */}
+            {itemMerchantSources.length > 0 && (
+              <div className="mb-8">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden lg:block">
+                  {t('item.merchantSources')}
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
+                  {itemMerchantSources.map((source) => {
+                    const displayMapName = language === 'zh-TW'
+                      ? source.chineseMapName || source.mapName
+                      : source.mapName
+
+                    return (
+                      <div
+                        key={source.mapId}
+                        className="bg-stone-50 dark:bg-stone-900/20 rounded-lg shadow-lg p-5 border border-stone-200 dark:border-stone-700"
+                      >
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <p className="font-semibold text-gray-900 dark:text-white">
+                              {displayMapName}
+                            </p>
+                            <p className="text-xs text-gray-500 dark:text-gray-400">
+                              {source.region}
+                            </p>
+                          </div>
+                          <div className="bg-stone-100 dark:bg-stone-800 px-3 py-1 rounded-full">
+                            <span className="text-sm font-bold text-stone-700 dark:text-stone-200">
+                              100%
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
+
             {/* 怪物掉落區塊 */}
             {itemDrops.length > 0 && (
               <div>
@@ -474,7 +566,7 @@ export function ItemModal({
             )}
 
             {/* 當沒有任何來源時顯示提示 */}
-            {itemDrops.length === 0 && itemGachaSources.length === 0 && (
+            {itemDrops.length === 0 && itemGachaSources.length === 0 && itemMerchantSources.length === 0 && (
               <div className="text-center py-8">
                 <p className="text-gray-500 dark:text-gray-400">
                   {t('item.noSources')}

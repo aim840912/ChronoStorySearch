@@ -46,6 +46,13 @@ interface AccuracyModalData {
 }
 
 /**
+ * Merchant Shop Modal 資料結構
+ */
+interface MerchantModalData {
+  initialMapId?: string
+}
+
+/**
  * Listing Detail Modal 資料結構
  */
 interface ListingDetailModalData {
@@ -55,7 +62,7 @@ interface ListingDetailModalData {
 /**
  * Modal 狀態的聯合類型
  */
-type ModalData = MonsterModalData | ItemModalData | ClearModalData | GachaModalData | AccuracyModalData | ListingDetailModalData | null
+type ModalData = MonsterModalData | ItemModalData | ClearModalData | GachaModalData | AccuracyModalData | MerchantModalData | ListingDetailModalData | null
 
 /**
  * 統一的 Modal 狀態
@@ -235,8 +242,8 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
   }, [])
 
   // 開啟 Merchant Shop Modal
-  const openMerchantShopModal = useCallback(() => {
-    setModal({ type: 'merchant', data: null })
+  const openMerchantShopModal = useCallback((initialMapId?: string) => {
+    setModal({ type: 'merchant', data: initialMapId ? { initialMapId } : null })
   }, [])
 
   // 關閉 Merchant Shop Modal
@@ -370,6 +377,7 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
   const clearData = modal.type === 'clear' ? (modal.data as ClearModalData) : null
   const gachaData = modal.type === 'gacha' ? (modal.data as GachaModalData | null) : null
   const accuracyData = modal.type === 'accuracy' ? (modal.data as AccuracyModalData | null) : null
+  const merchantData = modal.type === 'merchant' ? (modal.data as MerchantModalData | null) : null
   const listingDetailData = modal.type === 'listingDetail' ? (modal.data as ListingDetailModalData) : null
 
   return {
@@ -420,6 +428,7 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
 
     // Merchant Shop Modal
     isMerchantShopModalOpen: modal.type === 'merchant',
+    selectedMerchantMapId: merchantData?.initialMapId,
     openMerchantShopModal,
     closeMerchantShopModal,
 
