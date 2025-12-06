@@ -30,58 +30,13 @@ export interface MonsterStats {
   lightning_weakness: number | null
   holy_weakness: number | null
   poison_weakness: number | null
-  immune_to_poison_status: number | null
   minimumPushDamage: number | null
-}
-
-// 經驗值效率資料類型
-export interface ExpBar {
-  minExpHpRatio: number | null
-  maxExpHpRatio: number | null
-  expEfficiency: number | null
-}
-
-// 怪物地圖資訊（來自 mob-info.json）
-export interface MobMapInfo {
-  map_id: string
-  map_name: string
-  chinese_map_name: string
 }
 
 // 怪物完整資訊類型（mob-info.json 的頂層結構）
 export interface MobInfo {
   mob: MonsterStats
-  description: string
-  expBar: ExpBar
   chineseMobName: string
-  maps?: MobMapInfo[]
-}
-
-// 地圖中的怪物資料（來自 mob-maps.json）
-export interface MobMapMonster {
-  mob_id: string
-  mob_name: string
-  chineseMobName: string
-}
-
-// 單個地圖的資料（來自 mob-maps.json）
-export interface MobMapEntry {
-  map_id: string
-  map_name: string
-  chinese_map_name: string
-  monsters: MobMapMonster[]
-}
-
-// mob-maps.json 頂層結構
-export interface MobMapsData {
-  metadata: {
-    source: string
-    generatedAt: string
-    totalMaps: number
-    totalMobMapEntries: number
-    description: string
-  }
-  maps: MobMapEntry[]
 }
 
 // 地圖中的怪物出現資訊
