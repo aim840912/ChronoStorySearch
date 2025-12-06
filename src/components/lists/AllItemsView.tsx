@@ -154,13 +154,11 @@ export function AllItemsView({
               // 從 allDrops 查找物品完整資料
               const itemData = allDrops.find(drop => drop.itemId === historyItem.id)
 
-              // 如果在 allDrops 找不到，嘗試從轉蛋資料查找
+              // 同時從轉蛋資料查找（不論 itemData 是否存在，因為物品可能同時在掉落和轉蛋中）
               let gachaItemData: GachaItem | undefined
-              if (!itemData) {
-                for (const machine of gachaMachines) {
-                  gachaItemData = machine.items.find(item => item.itemId === historyItem.id)
-                  if (gachaItemData) break
-                }
+              for (const machine of gachaMachines) {
+                gachaItemData = machine.items.find(item => item.itemId === historyItem.id)
+                if (gachaItemData) break
               }
 
               // 都找不到時跳過
@@ -173,7 +171,8 @@ export function AllItemsView({
               // 轉蛋物品優先使用 name（英文），若無則使用 chineseName
               const displayItemName = itemData?.itemName ?? gachaItemData?.name ?? gachaItemData?.chineseName ?? ''
               const displayChineseName = itemData?.chineseItemName ?? gachaItemData?.chineseName ?? ''
-              const isFromGacha = !itemData && !!gachaItemData
+              // 只要在轉蛋中找到就標記為轉蛋物品（即使同時在掉落中）
+              const isFromGacha = !!gachaItemData
               // 取得等級：優先從 itemAttributesMap，fallback 到轉蛋資料
               // 注意：轉蛋資料的 equipment.requirements 使用 camelCase (reqLevel)
               const reqLevel = itemAttributesMap.get(displayItemId)?.req_level
