@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback, useMemo } from 'react'
-import type { ItemAttributesEssential, ItemAttributesDetailed, MobInfo, DropItem, MobMapsData } from '@/types'
+import type { ItemAttributesEssential, ItemAttributesDetailed, MobInfo, DropItem } from '@/types'
 import { clientLogger } from '@/lib/logger'
 import essentialData from '@/../data/item-attributes-essential.json'
 import { ItemAttributesDetailedSchema } from '@/schemas/items.schema'
@@ -218,65 +218,4 @@ export function useLazyDropsDetailed(mobId: number | null) {
   }, [mobId])
 
   return { data, isLoading, error }
-}
-
-/**
- * 懶加載地圖怪物映射資料 Hook
- *
- * 使用情境：
- * - 開啟 MonsterModal 時
- * - 需要顯示地圖中的其他怪物資訊
- *
- * 優化效果：減少初始 Bundle 大小
- */
-export function useLazyMobMaps() {
-  const [data, setData] = useState<MobMapsData | null>(null)
-  const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState<Error | null>(null)
-
-  const loadData = useCallback(async () => {
-    // 如果已經載入過，直接返回
-    if (data !== null) return
-
-    // 如果正在載入中，不重複載入
-    if (isLoading) return
-
-    try {
-      setIsLoading(true)
-      setError(null)
-      clientLogger.info('開始懶加載地圖怪物映射資料...')
-
-      // 動態 import JSON 資料
-      const dataModule = await import('@/../data/mob-maps.json')
-      const mobMaps = dataModule.default as MobMapsData
-
-      setData(mobMaps)
-      clientLogger.info(`成功載入 ${mobMaps.maps.length} 個地圖的怪物映射資料`)
-    } catch (err) {
-      const error = err instanceof Error ? err : new Error('載入地圖怪物映射資料失敗')
-      setError(error)
-      clientLogger.error('載入地圖怪物映射資料失敗', err)
-    } finally {
-      setIsLoading(false)
-    }
-  }, [data, isLoading])
-
-  // 建立 Map ID → 地圖資料的快速查找 Map
-  const mapIdToDataMap = useMemo(() => {
-    if (!data) return new Map()
-
-    const mapData = new Map<string, typeof data.maps[0]>()
-    data.maps.forEach((map) => {
-      mapData.set(map.map_id, map)
-    })
-    return mapData
-  }, [data])
-
-  return {
-    data,
-    mapIdToDataMap,
-    isLoading,
-    error,
-    loadData,
-  }
 }

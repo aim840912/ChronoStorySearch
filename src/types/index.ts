@@ -47,12 +47,7 @@ export type { GachaItemStats as ItemStats } from './gacha'
 export type {
   AccuracyCalculatorState,
   MonsterStats,
-  ExpBar,
-  MobMapInfo,
   MobInfo,
-  MobMapMonster,
-  MobMapEntry,
-  MobMapsData,
   MonsterSpawn,
   MapInfo,
 } from './monster'
