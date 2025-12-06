@@ -307,6 +307,62 @@ export function applyAdvancedFilter(
 }
 
 /**
+ * 判斷怪物是否符合 Boss 篩選
+ * @param mobId 怪物 ID
+ * @param mobInfoMap 怪物資訊 Map
+ * @param filter 進階篩選選項
+ * @returns 是否符合篩選
+ */
+export function matchesBossFilter(
+  mobId: number,
+  mobInfoMap: Map<number, MobInfo>,
+  filter: AdvancedFilterOptions
+): boolean {
+  // 未啟用篩選或未選擇 Boss 篩選
+  if (!filter.enabled || !filter.isBoss) {
+    return true
+  }
+
+  // 取得怪物資訊
+  const mobInfo = mobInfoMap.get(mobId)
+  if (!mobInfo || !mobInfo.mob) {
+    // 怪物資訊不存在，不符合篩選
+    return false
+  }
+
+  // 檢查是否為 Boss
+  return mobInfo.mob.isBoss === true
+}
+
+/**
+ * 判斷怪物是否符合不死系篩選
+ * @param mobId 怪物 ID
+ * @param mobInfoMap 怪物資訊 Map
+ * @param filter 進階篩選選項
+ * @returns 是否符合篩選
+ */
+export function matchesUndeadFilter(
+  mobId: number,
+  mobInfoMap: Map<number, MobInfo>,
+  filter: AdvancedFilterOptions
+): boolean {
+  // 未啟用篩選或未選擇不死篩選
+  if (!filter.enabled || !filter.isUndead) {
+    return true
+  }
+
+  // 取得怪物資訊
+  const mobInfo = mobInfoMap.get(mobId)
+  if (!mobInfo || !mobInfo.mob) {
+    // 怪物資訊不存在，不符合篩選
+    return false
+  }
+
+  // 檢查是否為不死系
+  return mobInfo.mob.isUndead === true
+}
+
+/**
  * 取得預設的進階篩選選項
  * @returns 預設篩選選項
  */
@@ -316,6 +372,8 @@ export function getDefaultAdvancedFilter(): AdvancedFilterOptions {
     itemCategories: [],
     jobClasses: [],
     elementWeaknesses: [],
+    isBoss: false,
+    isUndead: false,
     levelRange: { min: null, max: null },
     enabled: false,
   }

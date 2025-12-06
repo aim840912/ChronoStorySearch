@@ -3194,7 +3194,7 @@
       "minimumPushDamage": null,
       "dark_weakness": null,
       "isUndead": false,
-      "isBoss": true
+      "isBoss": false
     },
     "chineseMobName": "盾牌牛魔王"
   },
@@ -3217,7 +3217,7 @@
       "poison_weakness": 2,
       "dark_weakness": null,
       "isUndead": false,
-      "isBoss": true
+      "isBoss": false
     },
     "chineseMobName": "雪球企鵝王"
   },

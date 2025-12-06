@@ -11,6 +11,7 @@ import { AccuracyCalculatorModal } from '@/components/AccuracyCalculatorModal'
 import { GameCommandsModal } from '@/components/GameCommandsModal'
 import { MerchantShopModal } from '@/components/MerchantShopModal'
 import { PrivacySettingsModal } from '@/components/settings/PrivacySettingsModal'
+import { DevApiTester } from '@/components/dev/DevApiTester'
 import { Toast } from '@/components/Toast'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useTheme } from '@/contexts/ThemeContext'
@@ -453,6 +454,9 @@ export const ModalManager = memo(function ModalManager({
           </svg>
         </button>
       )}
+
+      {/* 開發者 API 測試工具（只在開發環境顯示）*/}
+      <DevApiTester />
 
       {/* Toast 通知 */}
       <Toast

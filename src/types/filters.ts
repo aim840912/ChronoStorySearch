@@ -88,6 +88,10 @@ export interface AdvancedFilterOptions {
   // 屬性弱點篩選（多選，僅適用於怪物）
   elementWeaknesses: ElementType[]
 
+  // 怪物類型篩選（簡單布林，選中時只顯示符合的）
+  isBoss: boolean      // true=只顯示Boss, false=不篩選
+  isUndead: boolean    // true=只顯示不死系, false=不篩選
+
   // 等級範圍篩選
   levelRange: LevelRange
 
