@@ -26,6 +26,8 @@ export function AdvancedFilterPanel({
       filterToCheck.itemCategories.length > 0 ||
       filterToCheck.jobClasses.length > 0 ||
       filterToCheck.elementWeaknesses.length > 0 ||
+      filterToCheck.isBoss ||
+      filterToCheck.isUndead ||
       filterToCheck.levelRange.min !== null ||
       filterToCheck.levelRange.max !== null
     )
@@ -74,6 +76,32 @@ export function AdvancedFilterPanel({
     const newFilter = {
       ...filter,
       elementWeaknesses: newElements,
+    }
+
+    onFilterChange({
+      ...newFilter,
+      enabled: hasAnyFilterCriteria(newFilter),
+    })
+  }
+
+  // 處理 Boss 篩選變更
+  const handleBossToggle = () => {
+    const newFilter = {
+      ...filter,
+      isBoss: !filter.isBoss,
+    }
+
+    onFilterChange({
+      ...newFilter,
+      enabled: hasAnyFilterCriteria(newFilter),
+    })
+  }
+
+  // 處理不死篩選變更
+  const handleUndeadToggle = () => {
+    const newFilter = {
+      ...filter,
+      isUndead: !filter.isUndead,
     }
 
     onFilterChange({
@@ -279,31 +307,45 @@ export function AdvancedFilterPanel({
                           : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                       }`}
                     >
-                      <span className="flex items-center gap-2">
-                        {/* SVG 圖示 */}
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          {element === 'fire' && (
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                          )}
-                          {element === 'ice' && (
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2L9 6l-5 1 4 4-1 5 5-2 5 2-1-5 4-4-5-1z" />
-                          )}
-                          {element === 'lightning' && (
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                          )}
-                          {element === 'holy' && (
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                          )}
-                          {element === 'poison' && (
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                          )}
-                        </svg>
-                        {t(`filter.elementWeakness.${element}`)}
-                      </span>
+                      {t(`filter.elementWeakness.${element}`)}
                     </button>
                   )
                 })}
               </div>
+              </div>
+
+              {/* 怪物類型篩選 */}
+              <div className="flex-1">
+                <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                  {t('filter.monsterType')}
+                  <span className="text-xs font-normal text-gray-500 dark:text-gray-400 ml-2">
+                    ({t('filter.multiSelect')})
+                  </span>
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {/* Boss 按鈕 */}
+                  <button
+                    onClick={handleBossToggle}
+                    className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
+                      filter.isBoss
+                        ? 'bg-orange-500 text-white shadow-md'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                    }`}
+                  >
+                    {t('filter.monsterType.boss')}
+                  </button>
+                  {/* 不死按鈕 */}
+                  <button
+                    onClick={handleUndeadToggle}
+                    className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
+                      filter.isUndead
+                        ? 'bg-teal-500 text-white shadow-md'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                    }`}
+                  >
+                    {t('filter.monsterType.undead')}
+                  </button>
+                </div>
               </div>
 
               {/* 等級範圍篩選 */}

@@ -6,7 +6,12 @@ const nextConfig: NextConfig = {
 
   // 優化套件匯入
   experimental: {
-    optimizePackageImports: ['@/components', '@/lib'],
+    optimizePackageImports: [
+      '@/components',
+      '@/lib',
+      'framer-motion',
+      'lucide-react',
+    ],
   },
 
   // 安全性 Headers（防止 CSRF、XSS、Clickjacking）

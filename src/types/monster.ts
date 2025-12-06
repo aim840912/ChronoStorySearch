@@ -31,6 +31,8 @@ export interface MonsterStats {
   holy_weakness: number | null
   poison_weakness: number | null
   minimumPushDamage: number | null
+  isBoss: boolean
+  isUndead: boolean
 }
 
 // 怪物完整資訊類型（mob-info.json 的頂層結構）
