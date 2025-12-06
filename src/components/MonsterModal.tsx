@@ -1,11 +1,10 @@
 'use client'
 
 import { useEffect, useMemo, useState, useRef } from 'react'
-import type { DropsEssential, ItemAttributesEssential, MobMapMonster } from '@/types'
+import type { DropsEssential, ItemAttributesEssential } from '@/types'
 import { DropItemCard } from './DropItemCard'
 import { DropItemList } from './DropItemList'
 import { MonsterStatsCard } from './MonsterStatsCard'
-import { MonsterLocationsCard } from './MonsterLocationsCard'
 import { Toast } from './Toast'
 import { BaseModal } from './common/BaseModal'
 import { getMonsterImageUrl } from '@/lib/image-utils'
@@ -13,7 +12,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { useToast } from '@/hooks/useToast'
 import { useScreenshot } from '@/hooks/useScreenshot'
-import { useLazyMobInfo, useLazyDropsDetailed, useLazyMobMaps } from '@/hooks/useLazyData'
+import { useLazyMobInfo, useLazyDropsDetailed } from '@/hooks/useLazyData'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 
 interface MonsterModalProps {
@@ -78,12 +77,6 @@ export function MonsterModal({
     loadData: loadMobInfo,
   } = useLazyMobInfo()
 
-  // 懶加載地圖怪物映射資料
-  const {
-    mapIdToDataMap: mobMapsData,
-    loadData: loadMobMaps,
-  } = useLazyMobMaps()
-
   // 懶加載該怪物的 Detailed 掉落資料（包含機率、數量等完整資訊）
   const {
     data: monsterDropsDetailed,
@@ -123,50 +116,12 @@ export function MonsterModal({
     )
   }, [monsterId, mobInfoData])
 
-  // 查找怪物出沒地圖（結合 mobInfo.maps 和 mobMapsData）
-  const monsterLocations = useMemo(() => {
-    if (!mobInfo?.maps || mobInfo.maps.length === 0) return undefined
-
-    return mobInfo.maps.map(map => {
-      const mapId = map.map_id
-
-      // 從 mobMapsData 找到該地圖的所有怪物
-      const mapData = mobMapsData?.get(mapId)
-      const mapMonsters = mapData?.monsters || []
-
-      // 組裝 MonsterSpawn[] 資料
-      const monsters = mapMonsters
-        .filter((monster: MobMapMonster) => monster.mob_name !== monsterName) // 過濾掉當前怪物
-        .map((monster: MobMapMonster) => {
-          // 從 mobInfoData 找到該怪物的詳細資訊（level, baseXP）
-          const mobDetail = mobInfoData?.find(info => info.mob.mob_id === monster.mob_id)
-
-          return {
-            name: monster.mob_name,
-            level: mobDetail?.mob.level || null,
-            baseXP: mobDetail?.mob.exp || null,
-          }
-        })
-
-      return {
-        name: map.map_name,
-        chineseName: map.chinese_map_name || undefined,
-        npcs: [],
-        monsters,
-        links: [],
-        regionName: '',
-        regionCode: ''
-      }
-    })
-  }, [mobInfo, mobMapsData, mobInfoData, monsterName])
-
   // 當 Modal 開啟時載入怪物資訊資料
   useEffect(() => {
     if (isOpen) {
       loadMobInfo()
-      loadMobMaps()
     }
-  }, [isOpen, loadMobInfo, loadMobMaps])
+  }, [isOpen, loadMobInfo])
 
   if (!monsterId) return null
 
@@ -316,12 +271,6 @@ export function MonsterModal({
                   ? () => onOpenAccuracyCalculator(monsterId)
                   : undefined
               }
-            />
-            {/* 出沒地圖卡片 */}
-            <MonsterLocationsCard
-              monsterName={monsterData?.mobName || monsterName}
-              locations={monsterLocations}
-              mobInfoData={mobInfoData}
             />
           </div>
 
