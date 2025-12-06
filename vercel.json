@@ -1,16 +1,5 @@
 {
   "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "chrono-story-search.vercel.app"
-        }
-      ],
-      "destination": "https://www.chronostorysearch.com/:path*",
-      "permanent": true
-    },
     { "source": "/contact", "destination": "/", "permanent": false },
     { "source": "/about", "destination": "/", "permanent": false },
     { "source": "/home", "destination": "/", "permanent": false },
