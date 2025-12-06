@@ -37,6 +37,7 @@ function parseElementalAttributes(attrString) {
     L: 'lightning',
     H: 'holy',
     P: 'poison',
+    S: 'poison',  // API 實際使用 S 表示 Poison
     D: 'dark',
   }
 
