@@ -1,15 +1,7 @@
-'use client'
-
 import { Geist, Geist_Mono } from "next/font/google";
-import { Toaster } from 'sonner';
+import type { Metadata } from "next";
 import "./globals.css";
-import { LanguageProvider } from "@/contexts/LanguageContext";
-import { ThemeProvider } from "@/contexts/ThemeContext";
-import { ImageFormatProvider } from "@/contexts/ImageFormatContext";
-import { SWRProvider } from "@/providers/SWRProvider";
-import { MaintenanceBanner } from "@/components/common/MaintenanceBanner";
-import { CookieConsentBanner } from "@/components/common/CookieConsentBanner";
-import Footer from "@/components/common/Footer";
+import { Providers } from "@/components/Providers";
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
 
 const geistSans = Geist({
@@ -22,6 +14,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Server Component 可使用 metadata export（SEO 優化）
+export const metadata: Metadata = {
+  title: "ChronoStory Search",
+  description: "查找裝備、怪物詳細資訊",
+  robots: "index, follow",
+  referrer: "strict-origin-when-cross-origin",
+  formatDetection: {
+    telephone: false,
+  },
+};
 
 export default function RootLayout({
   children,
@@ -31,11 +33,6 @@ export default function RootLayout({
   return (
     <html lang="zh-TW">
       <head>
-        <title>ChronoStory Search</title>
-        <meta name="description" content="查找裝備、怪物詳細資訊" />
-        <meta name="robots" content="index, follow" />
-        <meta name="referrer" content="strict-origin-when-cross-origin" />
-        <meta name="format-detection" content="telephone=no" />
         <link
           href="https://cdn.jsdelivr.net/npm/open-huninn-font@1.1/font.css"
           rel="stylesheet"
@@ -45,21 +42,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Toaster position="top-center" richColors />
-        <SWRProvider>
-          <ThemeProvider>
-            <LanguageProvider>
-              <ImageFormatProvider>
-                <>
-                  <MaintenanceBanner key="maintenance-banner" />
-                  <div key="page-content">{children}</div>
-                  <CookieConsentBanner key="cookie-consent-banner" />
-                  <Footer key="footer" />
-                </>
-              </ImageFormatProvider>
-            </LanguageProvider>
-          </ThemeProvider>
-        </SWRProvider>
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );

@@ -9,7 +9,6 @@ const nextConfig: NextConfig = {
     optimizePackageImports: [
       '@/components',
       '@/lib',
-      'framer-motion',
       'lucide-react',
     ],
   },
