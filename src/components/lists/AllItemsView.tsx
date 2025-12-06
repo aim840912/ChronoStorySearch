@@ -71,6 +71,19 @@ interface AllItemsViewProps {
   t: (key: string) => string
 }
 
+// 從轉蛋資料查找物品的 reqLevel
+function getGachaItemReqLevel(machines: GachaMachine[], itemId: number): number | null {
+  for (const machine of machines) {
+    const gachaItem = machine.items.find(item => item.itemId === itemId)
+    if (gachaItem) {
+      return gachaItem.requiredStats?.level
+        ?? (gachaItem.equipment?.requirements as { reqLevel?: number })?.reqLevel
+        ?? null
+    }
+  }
+  return null
+}
+
 /**
  * 全部模式檢視元件 - 顯示所有怪物和物品
  * 支援混合顯示和分離顯示兩種模式
@@ -222,7 +235,10 @@ export function AllItemsView({
                   isFavorite={isItemFavorite(card.data.itemId)}
                   onToggleFavorite={onToggleItemFavorite}
                   source={card.data.source}
-                  reqLevel={itemAttributesMap.get(card.data.itemId)?.req_level ?? null}
+                  reqLevel={
+                    itemAttributesMap.get(card.data.itemId)?.req_level
+                    ?? (card.data.source.fromGacha ? getGachaItemReqLevel(gachaMachines, card.data.itemId) : null)
+                  }
                   index={index}
                   fromMerchant={merchantItemIndex.has(card.data.itemName.toLowerCase())}
                 />
@@ -298,7 +314,10 @@ export function AllItemsView({
                 isFavorite={isItemFavorite(item.itemId)}
                 onToggleFavorite={onToggleItemFavorite}
                 source={item.source}
-                reqLevel={itemAttributesMap.get(item.itemId)?.req_level ?? null}
+                reqLevel={
+                  itemAttributesMap.get(item.itemId)?.req_level
+                  ?? (item.source.fromGacha ? getGachaItemReqLevel(gachaMachines, item.itemId) : null)
+                }
                 index={index}
                 fromMerchant={merchantItemIndex.has(item.itemName.toLowerCase())}
               />

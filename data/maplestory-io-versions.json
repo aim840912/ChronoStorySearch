@@ -657,6 +657,7 @@
       "TWMS": "Taiwan MapleStory",
       "THMS": "Thailand MapleStory"
     },
-    "apiFormat": "https://maplestory.io/api/{region}/{version}/item/{itemId}/icon"
+    "apiFormat": "https://maplestory.io/api/{region}/{version}/item/{itemId}/icon",
+    "apiFormatMonster": "https://maplestory.io/api/GMS/255/mob/7130300/icon"
   }
 }
