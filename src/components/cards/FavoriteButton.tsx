@@ -1,7 +1,6 @@
 'use client'
 
-import { memo } from 'react'
-import { motion, useReducedMotion } from 'framer-motion'
+import { memo, useState } from 'react'
 
 interface FavoriteButtonProps {
   isFavorite: boolean
@@ -10,43 +9,56 @@ interface FavoriteButtonProps {
 }
 
 /**
- * 收藏按鈕組件
+ * 收藏按鈕組件（CSS 動畫版本）
  *
  * 提供：
  * - 點擊時的縮放動畫
  * - 收藏時的心跳效果
- * - Reduced motion 無障礙支援
+ * - prefers-reduced-motion 無障礙支援
  */
 export const FavoriteButton = memo(function FavoriteButton({
   isFavorite,
   onToggle,
   ariaLabel = 'Toggle favorite',
 }: FavoriteButtonProps) {
-  const shouldReduceMotion = useReducedMotion()
+  // 用於觸發心跳動畫
+  const [isAnimating, setIsAnimating] = useState(false)
+
+  const handleClick = (e: React.MouseEvent) => {
+    e.stopPropagation()
+
+    // 如果即將收藏（目前未收藏），觸發心跳動畫
+    if (!isFavorite) {
+      setIsAnimating(true)
+      // 動畫結束後重置
+      setTimeout(() => setIsAnimating(false), 300)
+    }
+
+    onToggle()
+  }
 
   return (
-    <motion.button
-      onClick={(e) => {
-        e.stopPropagation()
-        onToggle()
-      }}
-      whileTap={shouldReduceMotion ? undefined : { scale: 0.85 }}
-      animate={
-        shouldReduceMotion
-          ? undefined
-          : isFavorite
-            ? { scale: [1, 1.25, 1] }
-            : {}
-      }
-      transition={{ duration: 0.25 }}
+    <button
+      onClick={handleClick}
       className={`
         p-2 rounded-full
-        transition-colors duration-200
-        ${
-          isFavorite
-            ? 'text-red-500 hover:text-red-600'
-            : 'text-gray-400 hover:text-red-400'
+        transition-all duration-200
+
+        /* 顏色 */
+        ${isFavorite
+          ? 'text-red-500 hover:text-red-600'
+          : 'text-gray-400 hover:text-red-400'
         }
+
+        /* 點擊效果 */
+        active:scale-[0.85]
+
+        /* 心跳動畫 */
+        ${isAnimating ? 'animate-heartbeat' : ''}
+
+        /* 減少動畫偏好支援 */
+        motion-reduce:active:scale-100
+        motion-reduce:animate-none
       `}
       aria-label={ariaLabel}
     >
@@ -63,6 +75,6 @@ export const FavoriteButton = memo(function FavoriteButton({
           d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
         />
       </svg>
-    </motion.button>
+    </button>
   )
 })
