@@ -1,7 +1,6 @@
 'use client'
 
 import { memo, ReactNode } from 'react'
-import { motion, useReducedMotion } from 'framer-motion'
 
 export type CardVariant = 'monster' | 'item'
 
@@ -25,14 +24,14 @@ const variantStyles = {
 }
 
 /**
- * 基礎卡片容器組件
+ * 基礎卡片容器組件（CSS 動畫版本）
  *
  * 提供：
  * - 玻璃擬態效果（backdrop-blur）
- * - Framer Motion 入場動畫（staggered）
- * - Hover/Tap 互動效果
+ * - CSS 入場動畫（fadeInUp）
+ * - Hover/Active 互動效果
  * - 怪物/物品變體樣式區分
- * - Reduced motion 無障礙支援
+ * - prefers-reduced-motion 無障礙支援
  */
 export const BaseCard = memo(function BaseCard({
   children,
@@ -41,37 +40,15 @@ export const BaseCard = memo(function BaseCard({
   index = 0,
   className = '',
 }: BaseCardProps) {
-  const shouldReduceMotion = useReducedMotion()
   const styles = variantStyles[variant]
 
-  // 動畫變體：考慮用戶的動畫偏好設定
-  const cardVariants = shouldReduceMotion
-    ? {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1 },
-      }
-    : {
-        hidden: { opacity: 0, y: 20, scale: 0.95 },
-        visible: {
-          opacity: 1,
-          y: 0,
-          scale: 1,
-          transition: {
-            delay: Math.min(index * 0.03, 0.3), // 延遲上限 300ms
-            duration: 0.25,
-            ease: 'easeOut' as const,
-          },
-        },
-      }
+  // 計算 staggered 延遲，上限 300ms
+  const animationDelay = `${Math.min(index * 30, 300)}ms`
 
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      variants={cardVariants}
-      whileHover={shouldReduceMotion ? undefined : { scale: 1.02, y: -4 }}
-      whileTap={shouldReduceMotion ? undefined : { scale: 0.98 }}
+    <div
       onClick={onClick}
+      style={{ animationDelay }}
       className={`
         group
         relative cursor-pointer
@@ -82,12 +59,27 @@ export const BaseCard = memo(function BaseCard({
         ${styles.hoverBorder}
         shadow-lg shadow-gray-200/30 dark:shadow-gray-900/30
         hover:shadow-xl ${styles.hoverShadow}
-        transition-colors duration-200
         p-5 min-h-[140px]
+
+        /* CSS 入場動畫 */
+        animate-card-fade-in
+
+        /* Hover/Active 效果 */
+        transition-all duration-200 ease-out
+        hover:scale-[1.02] hover:-translate-y-1
+        active:scale-[0.98]
+
+        /* 減少動畫偏好支援 */
+        motion-reduce:animate-none
+        motion-reduce:opacity-100
+        motion-reduce:hover:scale-100
+        motion-reduce:hover:translate-y-0
+        motion-reduce:active:scale-100
+
         ${className}
       `}
     >
       {children}
-    </motion.div>
+    </div>
   )
 })

@@ -105,3 +105,56 @@ body::-webkit-scrollbar {
     background-color: rgba(31, 41, 55, 0.95) !important;
   }
 }
+
+/* ========================================
+   卡片入場動畫（取代 Framer Motion）
+   ======================================== */
+
+@keyframes card-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-card-fade-in {
+  animation: card-fade-in 0.25s ease-out forwards;
+  /* 初始狀態：隱藏，由動畫帶入 */
+  opacity: 0;
+}
+
+/* ========================================
+   收藏按鈕心跳動畫
+   ======================================== */
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+}
+
+.animate-heartbeat {
+  animation: heartbeat 0.3s ease-out;
+}
+
+/* ========================================
+   減少動畫偏好支援（系統設定）
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-card-fade-in {
+    animation: none;
+    opacity: 1;
+  }
+
+  .animate-heartbeat {
+    animation: none;
+  }
+}
