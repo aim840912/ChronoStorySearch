@@ -1,0 +1,39 @@
+{
+  "id": 1402016,
+  "description": {
+    "id": 1402016,
+    "name": "Devil's Sunrise",
+    "description": "",
+    "chineseName": "雙手鐳劍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACZklEQVR4nM3Yj5GqMBAG8M3Ma0BLgBK8EqAEKQFLkBKeJUgJWgKUACVACVpCbr9wyyH/fD7CkJ2JcMhMfu4uCXN/yK3QPBROXILpLCYK0wbnCsygPI9PClZ9kXYBpuM4ZlRKXmBQiM0zZlCHw4FqLyP/KzQofKwF0yPX1BQqCALyff/lHtswA8JEHjfM8Xikuq6pLEtK01Swir/TuEdQYfibqTVguqoqA7lcLpTnuTkHUI4YfL1F4e9+pmzDzGQAyYQIgOQoMAzOHmVZRqfTaRRlE0bn89nAEMAJqJs1uTZVvlVgkg3BYEhpEYCgvHLf9XpFxtqVfi2Y4l7RmAyBUmnNc5aKUNQ6Jy5dZXDd/poLm82vkAFMLCgKd+aL/PkkXhA4S01fSXnnsmZ9HUO5upEyquSjh4o2rffSb1Nh7anEx+PxoCdDlFJU/W0yVY7cLH2Gda7/Q2zCNEoHEAb6qGCUn5DBeZKUY1NGQb3rM2ulFNQtrilKPX5LqM2GjPUKIai58tmEmWxhMkEd+A2hiq+8IZ94ucjMyg6QPI33+73F4emlFZaLASrJA8ris0EhU90dQDDoK+ydQE7111LYIFN9FB4C+smI7JGCW2vl13gCoyiazVQvFHA4mSvhEpgpIXrnTabGJp/FLIG1SwMQSZIwLp4s35L4BPayXqFxsaVEvAwURUH7/V7uW4z6BDZAoYF3ux3dbjdrWfoUNkDJ02U0K6D+BTaKQqYw1kK9g22GmoNtipqCbY4agzmB6sOcQfVhzqC6sPYVxgWUwJxDCWyAsr3v/TdsBLUZSMLAfv65IbE5CvENKeLoE3etMQgAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACsElEQVR4nM3YgZGqMBAG4GXmNYAlQAlYApQgJWAJWsKzBClBS4ASpAQoAUrI2z+yPC5COBRGdibKAXP53F0S7/7QtkLxcHCwJZjKEqIofeK2AtMoz+ODB6v2pLYAU0mSMColL9QoxNczVgIVBAFVXkb+PtIovKwFU8bPBY+9cS5jlAdUGIbk+36HWgOmQZjI44Y5HA5UVRUVRRGkaVrzpQpAvlbzPa6gouh/ptaAqbIsNeRyuVCe5/oYwPbd5RHweQUMULhmZmppmJ4MIJkQAZC845wMzh5lWUbH43EQtSSMTqeThiGAE1A/a3JurHyrwCQbgsGQ0iIAQXnlvuv1iox1K/1aMId7RWEyBEqlFM9ZOISiVjk/glmpcf3+ssWSze8gA5hYUBS5+kLeNMQLAmfp2VdSXlvWFl/HUK5+pIzCIuahos/W+9FvY7HYU4mXuq6pYYjjOFT+fWaqGLhZ+gzrnPlBloQplA4gDPTRg1H+mTTOk6QcnmUU1FSfLVZKQd2SiuLU428Jld6QsV4hBGUr35IwnS1MJqggxM585Q35yMtFpld2gORpvN/vHQ5PL62wXLygznnIO/NJo5Cp/g4gGPQV750aOdZfn8JeMmWi8BBQmxHZIwW31sqv8ATGcWzNlBEOcDiwlfATmC4hemciU0OTWzGfwLqlAYjz+cy4ZLR8n8Qc2I/1Co2LLSXmZeDxeNBut5P7PkbNgb2g0MCu69LtdlssS3NhLyh5urRmBdRvYIMoZApjLdQU7GsoG+yrqDHY11FDsE2gTNhmUCZsDsp9Y67mHVj3FWYEhT+XZWd2jfc5qKY3JmFTKHw/CUZAQ7ixSQVUtcOK0xkzUb19L6bub5u3MjWFtcMGUPsW4A78UtskjeXYHNOw9p8bEk4PJTGUpSE0kf2D/Dpz/wBdewPu4ZOOZgAAAABJRU5ErkJggg==",
+    "price": 400000,
+    "reqSTR": 280,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 90,
+    "tuc": 7,
+    "incPAD": 95,
+    "attack": 5,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Two-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 95,
+      "min": 90,
+      "max": 100
+    }
+  }
+}

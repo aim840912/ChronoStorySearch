@@ -1,0 +1,55 @@
+{
+  "id": 1082080,
+  "description": {
+    "id": 1082080,
+    "name": "Dark Penance",
+    "description": "",
+    "chineseName": "黑元素手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAYAAAAYyi9XAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB3klEQVR4nK2WjZGCMBSEk5lrQErAErQEKEFLgFbOErAEW8ASpAQoQUrIsQ82vkT8O9kZJ4HI+7Kbh+OPWV4uurb6YmmgK4rCbDYb03WdaZrGnM9nbsAuDXRpmgoEUAABhvq+x32A7VLAwFlZlgIhUGsJYOAMyrKMcRqsQRiHzbhvgeJstVrJBZ1FEL8OfQoMOpAx4gNHBGGuIVrvAD1kt9tJXBDiQmHdJBAcAkZn+GjXz4Auhsw1AcCHw0HmKIriWoRjY+ZBl3oQBBhA3KF6WGAaxFjpkuOk2ffQMR58mVCCIA2jG4xxlLxPZ6yjgQ5u8EBdn83t6Kw5HqsgQg3hnPFFrgKYBgpsBMEOcrJ+XhSlTNfr1BfWIK3rqTfJvuOajde9Q4ENxZPtfTtfL2Phtu0CsBY2cTk1UuMRLAAmyQhCg+DskD3PLdk2IbiewPnNMWE2Nw9hGmiHXUmsgM21P3adbEcQYtNgOYI3YBooMP4mQhzZsXQijvcmAJvBqF2/hmmgqKqOfp7nmXemR0DbqhM3kyPqJYxA5+QNGJuGqquxY3lOhF1+m48hMdCDplhErh3HuEHke2+c1TOgHUDB34AJ7u7A8n6ar+S7dGbNBuDafNQcr4DPNILz+xT+oz9OhDS13USTyAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACJUlEQVR4nLWWgZGCMBBFk5lrAErAErQEKUFLwFbOErCEawFLkBKkhKOEHH/h5zaRqMxxfyaTQHDf/s3C+GHWl4uurb5YG+iqqjLb7dZ0XWfatjXX65UJ2LWBrigKgQAKIMBQ3/e4D7BdCxg4O51OAiFQaw1g4Aza7/csp8EehHlIxv0VKM6yLJMLOosgfh9aCgw6kGXEgCOCsNYQrXeAHnI4HKRcEMqFwLpJIDgEjM4wtOtnQBdD5poA4PP5LGsERXAtwpGYSXSpB0GAAcQM1Y8FpkEsK11ynjT7HjqWBw8TShCkYXSDOS4l79MZ42iggxv8oGmu5vforLlc6qCEGsI1yxe5CmAaKLARBDuok/XrqjrJcrMpfGAN0vr+6k1+7Lhn433vUGBD8Hz32M7ftzHw/d4FYC0kcftqJUYKFgDzfAShQXB2qD3PLd+1IbiZwOWvY8JsaZIwDbRDVlJWwObaH1nnuxGEsmmwHMEbMA0UGL+JEGd2LJ2I46MJwGYwajevYRooquuLX5fl3jvTM6D3uhM3kyPqJYxA5+QNGJuGauqxY3lOhN0+28WQGOhBU1lE7j7OcYPIc2+c1TOgHUDB34AJ7h7A8n6aP8l36cyeDcCNWdQcr4DPNILLxyr8F1CDs2ksUfD9SwGzaE7dexfWc8TALDFS8Lngc/cx5HukgQxeqFkHX1rK2STmHKYeTjmI9+J1MD6izc68Ll2WgD9L0K9/AHdaTqwrf7F4AAAAAElFTkSuQmCC",
+    "price": 100000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 145,
+    "reqLUK": 50,
+    "reqJob": 2,
+    "reqLevelEquip": 50,
+    "tuc": 5,
+    "incINT": 3,
+    "incMMP": 30,
+    "incPDD": 20,
+    "incMDD": 3
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incMMP": {
+      "base": 30,
+      "min": 5,
+      "max": 55
+    },
+    "incPDD": {
+      "base": 20,
+      "min": 0,
+      "max": 45
+    },
+    "incMDD": {
+      "base": 3,
+      "min": 0,
+      "max": 28
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": 1002407,
+  "description": {
+    "id": 1002407,
+    "name": "Blue Arnah Cap",
+    "description": "",
+    "chineseName": "藍色阿爾納帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAVCAYAAAAnzezqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACJklEQVR4nLWWi5GDIBCGcSYNkBKwhKSEWMJZQlLCXQlnCZcSkhYsIZQgJUgJHru4uAg+cjO3Mw4+gP/bl3oQ+23YOa94Y0+xBRBE5enbj0oKayyeW2vSFebOQTdhcgBhA/XxkzxcFcdF1xzMIggHwMngKXi5ZVKqGCwHRDArIAQwnK4vscfkiQR1iEYOKIJaAQGA4fLZp4ty4k4EnoO40XobdoSa9lRQRO5GOxDEgSbQ5JwnHE639+je0MV1YowRZdXknUFx4yPio1GEGqDJ4F0kulB0c2Fr/TylFD6jaxoBrKobD2HasA4BjG6x8KRLsKQkjzDUdjycS+IwwhHEyGvvybRAXXw69dcwRQA8Vfm88t7PiUvpu4aPffdIIgAHRKiqauFWhQgUQALtRyL96zMIHM9Nco+MNg3eTsTxNXmPI2jIUA9JDYCHZX1HmFy4uYE3mPP+EkWERoDjBp4HQIt1UERvQhLvHjd35UL4bERRTmHnOcYN53meW7al45ccARTQFtZSGnybmqffhPJMB3iNwKPn5DWPAkHSeLsx2NF7DoCm3cvFp8KJ1/AtcLTtVGjY4+VZrJk8xbVioeVCJNJXfARQVZXo+x7DjoueRnSQlg3RSFDHBcmBPMzkfQIAhMdj6SA6v8B5/o74FhDAWN1GzzmAo7L4sQCI/7B5dOYAIwROZT8V25/mNxCYRh5gBjKH+QtQ1CGL/wNrNltk9/4bLopy+wV1fFPErCZvCwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAYAAADLnm6HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACdElEQVR4nLWWi5GkIBCGsWoTYELAEGZDGEO4CWEnhL0QbkK4CWEnBUNYQ5AQJASPbmxsXqJTe11FoQj8Xz9Q38R+m3fOaw7sKWoAXlSe/7heSWG0wWtjdLpCPzhoFSYH4DdQv/4mDzfFcdFHDqYIwgFwMngKXtZMShWC5YAIZgOEAObzx7fYY/JMgoOPRg4ogNoAAYD58jmli3LiVgSeg7gehjrsArXuqaCI7EA/E8QbTaDJOU843NA/grF5DOtEay3a7p53BsW1i4iLRuNrgCaDd4FooehiYWPcPKUUPqN76gGsu94dhO79OgTQQ4+FJ22CJSV5gaFjx8NZEocemhcjr50n6wJ1cekcfs9rBMBTlc8rP/s5cSndqeH9NH4lEYAGEeq6q7CrfAQaIIHjRyLT96cXOL3fkzEy2tR7uxKH9+Q99qAhfT0kNQAettcHwuTCzQ28wZxPlyAi1AMcN/DcAxqsgyZ4E5L4+HWzdzaEz7to2jXsPMe4YZzn2LJHOnzJEUADx8IYSoM7pvrpNqE8UwOvEXjxnLzmUSBI6m83Brt4zwHQBvtycamw4lf4Fljafi00POPtu9gyeQ5rxcCR85FIX/EBQNd1YpomDDsuemoxQloqooHgEBYkB3Iwq/cJABCeTq2FGN0C6/kR8RoQwJihD55zAEtl8GMBEP/D4ujEAAsETmU/FfVP8wEEppEHiEBimFeAghNS/B/YsmiR2ftvWBQ9CnBow6P2CsCP2qsAr1SmyQ3WAGTUl8b2ihvWNgFkoZVgcmK5cWh6aaYEQGKK9Vzsx8JfAohF4sXFzaJn8XXcigAUplqoZQFmCziZ/w/0TW6hopRyiQAAAABJRU5ErkJggg==",
+    "price": 130000,
+    "reqSTR": 0,
+    "reqDEX": 310,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 100,
+    "tuc": 7,
+    "incSTR": 1,
+    "incDEX": 5,
+    "incMHP": 20,
+    "incPDD": 63
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incDEX": {
+      "base": 5,
+      "min": 0,
+      "max": 10
+    },
+    "incMHP": {
+      "base": 20,
+      "min": 0,
+      "max": 70
+    },
+    "incPDD": {
+      "base": 63,
+      "min": 13,
+      "max": 113
+    }
+  }
+}

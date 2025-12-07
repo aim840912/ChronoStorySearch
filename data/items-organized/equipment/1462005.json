@@ -1,0 +1,39 @@
+{
+  "id": 1462005,
+  "description": {
+    "id": 1462005,
+    "name": "Heckler",
+    "description": "",
+    "chineseName": "雙弦弩"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 38,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB+klEQVR4nL2WgXGDMAxF5bsuQEYgI7BCMkK6QkYII6QjJCOUEcIIZQQ8QhnBtWzkCGxsw13RHeQisJ++JQt/wH6m9CW4Yy+4Cjn3gCul0UL4D/4bzsGEd6uwBU6DBcQtCFa9/nO0vk3Kxwm8ApqA+zgYb2vgys6gbzL+HoOEfC7gXLhZwqz3XnngXLjy1JbaiZDzZOlNeNrHITwYL0UpuAW3blLr1ErgNAkAbvcHfNXX6diXF0wUzit5DnYTYLHxANCO1yecTheQUuqrS4JDcFNQhwOo3+9JY5hPIFwAOgWUEgS7FxLgEFwgOHdw3TzgXtml7vufMSqRHLcEh2EAURTRPYymMMdd24KoKT9ZvDg8wxy4bRuTZ1RLW3HsalnRBOGkHn9TYMyzftfUB9UAC4Asq9pjFgQPQwcUJC9C1xuk1w/S8Jl6heqa5xO3URBMCk0ArCnx/rBFuVPcdQ2UZbUEfttbseFvhhMYrSgqA0VbBK+wJJzApDYBtjmX25qMmwRzbOB6qTMVO/DhMw1egrscv3PbuYcLW9BapuIluOI5LstSK/cLa+yA3J/1IYnBJ2AjRIaPLASlIAxxJZjDg+DodpoFkXGuC8LHI9IVzu0lGzwPYgSvsknOX7dGHwqqVWBmq/c9wu1HaTyRbARvMlIusPnj3t4LjPYH4JFYch0aa8QAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACPElEQVR4nL2WjXHCMAyF7bsukIwQRkhHgBFgBUaAEdoRYIRmBDJCMwIZAY/gSk5klET+IXdFd6HFsf29Z9nCH+p9YeHRvOFdcCs1vgNuLaC1Xr74bzgHE96vwho4DdYqHiLY3uHLZmhb5XycYLGBJuB7HIwfr8DtMAN89PF+DCK1ecG5cLeEWf1ueeBcuF24raARIbvJ0jt50MYhXMwiRSn4AG79pEMjOFHbiQB1+rqo7/NxOva2EBOF8508B/sJcLNxARib41Vtt3vV9z08XRIswd2GKktlHz+TwjCfQHsBkAJKCYJ9hwRYgmsE5w4+Nxf1VQ9Lfb//jqp0clwIroxRuiiiZxjDYo67tlX6TPnJ4sXhGeHBbdu4PKNbOopjVctSI8LJPf5NgTHP0NftD9oDTABF1m6PhQg2plMkkm9CXxv6RT1Iw2fuLbprrlc8RiKYHDoBrCjx+rDGuXfcdY2qqjoEfsbTseOvhhMYoyhqB8UIgl+IJJzA5DYBHnLerysyfhLMsYPDUmc69uDykAaH4D7Hz9x2/mXgCA6R6TgEtzzHVVWB8+XGGisgb8/6IYnBJ2BnpJevLAQlEY74IpjDRXD0OM1EZNzrRPh4RTqqXbuPgYuIiBLAD6GfScF93E4NXApqAuPlp5pNGBQAQbWsnoENexbw4UfpRi4ceDdOIkElASGHBB1r3rQfOS9hwzzwbAP4wNTnOA6FSXXgy/4J4GIEzQfGJjKR/+ePCKelSS2vJEwSZyLvfPwBi2h2NmOa/PwAAAAASUVORK5CYII=",
+    "price": 100000,
+    "reqSTR": 38,
+    "reqDEX": 115,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 38,
+    "tuc": 7,
+    "incPAD": 54,
+    "attack": 4,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Crossbow"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 54,
+      "min": 52,
+      "max": 56
+    }
+  }
+}

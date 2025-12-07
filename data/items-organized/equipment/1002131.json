@@ -1,0 +1,43 @@
+{
+  "id": 1002131,
+  "description": {
+    "id": 1002131,
+    "name": "Green Loosecap",
+    "description": "",
+    "chineseName": "綠色自由帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 20,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAXCAYAAADz/ZRUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACkUlEQVR4nLWW7ZWrIBCGJ+fcBmiBW4K3BCzBlIAlaAlaQixhLSGWsJSwlLCUwJ0ZhIDRfOw5Oz8iIvI+80X8A79rfmfuFAfvint4w5qhSmPn+BeW0foI8Ip4Esw3e8eCcDClJSxTANgTL7z7iWAuVj4ob7fiftCqnLHhYuTRji8Kw/2DXNxfP7pyuXVgrQWLOwqzzr0VCHenmd8WntfnkXOSm5YKaGYxq/qyvq7ErpwQx95vpwvxb+/R09uShcarRgV9mFtegzgSNRPnsah2T8JkUt420ziOMFYNQEO1B4EA5K1YX33kfdSDtdr959f34Sq5AkjeGWugGnieIHIAPVxhms8JIDeReX8ZGjDG4lrjU9jb8R88s665BgCqI4TIAea+ZgCC7Kd6930tK14vVkIWp8XieepgnOtbOHGgEGYL0A0fMDQXvu8xEmSNDC1C66ykvPP62yGT5+gRSMonXpc5eNioKgGM/RkaHVKjMTrOzumZLRspeO6ojzNB514IA6mL0MdCNqDUrQitCJ6aMcAJjIQ1bWwcqLCdqeqT59bkB8J+qcpqAyUgtSIBWBnE4zlEETB4PggpQVVXnpsoxeExF9wJKTzRuNjjB23CgDnIeitxczoJI8+ynDk3Wg13e1CdxHRFzxMAaz+B2IJEgA7FxqUPAUGWeeoRsoF4dMR2ZYDpb3HCMQAN7iCiHcCc2xqG7pIAeKkIhWbNDMbNPKf1FfItt/9qfOxtIZJ2/uYGpB9bvhKE4f8BmYqQouBkyDd5HVN09DFRQETLYe6iEiGmtrjvkCACUKuR8NRyzk/PvmRO+U0Os43KkU3WYOGFc4Day0Cd9n33Gy7BbKPy0MqvoR9/QO5u8szafo6gxTv/ARoXU/tptVA/AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAcCAYAAACZOmSXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC2UlEQVR4nLWWgbGjIBCGNzPXAFcCrwSvBCzBlKAlaAlaQizhWUIs4SjhUcKjBI9dhACKxjdzO2MERP5vd1niL/i/tuyM3VzjqvgCF6zqC9/Wmn5hHtTiAN4R94LhYlfMClsTNYd5tAB74pF3PxEMxeIHcTcVX/paxCPK3iTPrfimMGwfhOLL87ONpysNSilQZkUm17FLgdAbzbAbeV7eB8pJaDUXgCOzXNXn9XXBduUYy3ufDkfi38tiPH1NmbG9ahTQ2bH5PYicqBwpj9FuX1AYjfPXYrVpOxglesCm2IMwAOgtW1898t7pwbrbl79f39lZfAXgtLLZA0VP4wgRAtT9E8bp7gFCY4H3j74CKZWZKxcf9mb4A2fWVk8LgPvIQIQAU1cSAEJ2Y7n7fs0Lms9WQhLHyew8dTBM5SucpiEMTArQ9p/QVw/qdyYSaBW3JYLzFMe80/zXIRPm6AjE59Pc58l6WInCAwzdHarapqY20dFq8s9UXEjWc411HAhq/UYYUJ3ZOma8AiFem1Ax66kcLBwzkVCycYUDhSln3PXecyXDA2F/q/IigWLgSxEBFLfi7hzCCEhzPjDOQRRPGhsxxfYxbbiboViQRrsaz5QJAYYga5ebxfEkdDzzfKfc1KLfrIH7xKXLee4BSPsEIgVxAK0RG+bOBsSwTGNnICtwR4crVwIYP6ITjgCwsYFwloG5NyX07cMD0FRmN5qSE0g90VhdPyFcMv1Xo2MvhfDa4ZsJSDc0dEcISf8D3G9CjILmNt/otUtR7mMignAWwmyi4iDGJuq3hsABYKmh8NhQzm9nXzK3sBPCpFHJ2aik2Xj2HMDyklD6da9+w3mYNCqHFn8N/fgDMiz032++o5tucqBRJHPiLLnnxk6F1/sH7NRKKs4yVw5kT2hvHC+1Xn5eKO6EeHAPha54fAa0EU8F0hePFtIH7fTaFXehOQtv+GFyBKcPnpH9AwwKbSHTy54EAAAAAElFTkSuQmCC",
+    "price": 6000,
+    "reqSTR": 0,
+    "reqDEX": 40,
+    "reqINT": 0,
+    "reqLUK": 50,
+    "reqJob": 8,
+    "reqLevelEquip": 20,
+    "tuc": 7,
+    "incMMP": 5,
+    "incPDD": 15
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 15
+    },
+    "incPDD": {
+      "base": 15,
+      "min": 5,
+      "max": 25
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": 1040034,
+  "description": {
+    "id": 1040034,
+    "name": "Dark Nightshift",
+    "description": "",
+    "chineseName": "黑夜"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAcCAYAAACZOmSXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACBUlEQVR4nK2XgdHCIAyF6Z0LuIIr6AiuoCPoCo5gV3AEXcERdAVXcAT+vhyvf4hQKJo7TwqV7yWEgAvXZt48dy2TtMD9drsdH97vt3s+n75FwFy4X6/XgMnDcrmU79A3W0Br2AW8Wq2kDe9brBYua8xww1MNfb1eImZ4Zi5URaAEj6CAMdRo8wNDP8cGMVUipuBRYtE00EJpWA70lfIgB0+CQ2g/YDoaWmQpESfDnpqUfRRibU7yVSVcDpTr/yl8rqWWpgk+5dk3Xk/CcxN/C5wF1+Gz2ZzL8q/huYm0KAtNFZwWeIcqhWKRKipWWK7ohAOoWGT0+cyXRQDr+JRpLwvgiAO4fzwe7ng8yg/v9/tHRaoJYSo6FgzO7XaT8dPp5MewHw4Hd7lckiVRh9LmQUWCibfe+/EeQIvWHGBMttvtRFnl5B82RM8F8f58PrvUOTHCcR7rIxLPJcvtBBtyPR85EdxmNMJfAsFSS2GF930vkYT3iIgeF7i9mSBUQ9jRjLachtpLhRXFWw3DDgY+TDisv8DR0KEPYJhsNcII0UBbXKwQzFX0nAAMKs+j0GsgTV8iueZ6/Hq9yvx4DwLgOdr7/f4/25kYRnmHbcdl0RcJ/TsrKLQl2zGnFUjvAe82m030DwTqnKp0Yd+7VLXTN1gtmt/csgnrFublnMk4RUy9M6Pf/QEVpqe4QiGgxAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACLklEQVR4nK2XjZGCMBCFYeYasAVakBK0BClBSjhKgBYsQUs4S9AWaIEScnk7WW6zJATi7Qxjwk++ty9LiF9FXhjVL3MGyYGb0+k0d6ZpKt7vt8kRsBdujscjYNQ5HA70687tFpBrO4GrqqI2ss+JrXCaY7YbmUroOI4kxva5FjY5kIJ7UMDYarT5QOA8X7NiNolYg3uFxSGBGsqB6cC5VB3E4EGws3YBk25IkalCXLU9NCifYyE69hTfpoKLgWLn/xW+N0JTkwVfy+yTrFfhsYE/Be6CS/t0Nceq/GN4bCApSkNDC04OvMQqhcUitKhoYbFFx32AkouM/D7zzSSA1/G1kFkmwB4HcPN6vYq2benB5/O5WJG2WBhyR4PBeTwedL3rOjPbfr1ei9vtFlwSpZW6DjYUGGVrjJn3ARzenAOMwS6XCynbOPgirHuFE2/6vi9C34kZju+x/ESin4rYm6Atl+Mxx4Priob9KRAiNBVa+DAM5CSyhyPyOsH1zgRWWdvR9F45CdWbCi2KdzVsOxg4uOAw/wRHQ1rvwAh61RjGEAnUi4sWgrGSmTMAF0XmnvUSyCE3kTzn8vr9fqfxcR8EIHO0m6b5q3YuDKX8bF354WmRGwn5nBbk2lDfY0wtkLMHvKzr2vsHAnU2GpiCQayAnh3SIXewIgZoxK918LsIR8mZ84KCByr3i4PToTlgEZFopSbRPru+PCj0hwUXRgfmkO1anAu9f9NKf3H/Lwj6tWa68UEAAAAAAElFTkSuQmCC",
+    "price": 2500,
+    "reqSTR": 0,
+    "reqDEX": 30,
+    "reqINT": 0,
+    "reqLUK": 35,
+    "reqJob": 8,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incLUK": 1,
+    "incPDD": 14
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 3
+    },
+    "incPDD": {
+      "base": 14,
+      "min": 6,
+      "max": 22
+    }
+  }
+}

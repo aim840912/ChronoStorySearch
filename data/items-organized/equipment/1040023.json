@@ -1,0 +1,43 @@
+{
+  "id": 1040023,
+  "description": {
+    "id": 1040023,
+    "name": "Black Bennis Chainmail",
+    "description": "",
+    "chineseName": "黑獵人服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAcCAYAAACZOmSXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADCElEQVR4nJ1Xi5WqMBAdzrEBXglsCdkSsAQtQUvQErQEKUFKICWYErSERwm8uUMGY5YE3s45bISE3Dt3PmE3tM4G+j8r1ixaAhfQuq7lpu/72UXhc/zmS8lmSeTABwV9vV66aZZpVVVUlmVIZMgRSIEPobfYEARShnkFXSK4BvxjY9ic9DGQ3q8lkAVXr3ObpggElpQ+CW6tlRiGFsXz41mYE+E6PzdLYA5c4o0Y44oJxBaC7nY1ta1dHf+M7D3d7zfa74+0ZMZUQrLv30kZEvCh++F9DC5eh/I9Hh1708q9KjE3GmPIOaLDrqKmtR9ll1Jg1nNdbCre8OVYzh05zoGaRwClxgOPDRM9sPxKIFQi9n6TAhZPvYwgQfWbTDxWJUtO9i13phyznoeL4a3hMFhnBSg3QuDWjsl2bSRMBasxxAkbeh+CTws1g69NQzcfU3iTGntUhhKf8TTsFaH8Cj78fT5l4s/X18eLkky+9OZGqNPTOxmds5Sz++1CW19Bk+d4yZiaQMLalo7nszw3PvtrnkN8w1Fk9wRG4DH+EBCS4/1H19H3dit7dd1dVDqdDnS9NsNGvUZyKWsnDaaf+rnKNXepGR8ea910CFXVOP98PPy+Tvbu/Xy2t2OT8/lKl8uJk6l9exslW8uAvPVHt0Pj0d8ABaDzR7PaRr0i/yxc0PukAgFYQ22SpK7HhTaLbqc4CMWLQ2H8/uQTe9ZzdDR0Nmx6PJ4Xv2DCs16BBZAcqXOcCRMB61waXDeEzBdOjvO1yYLvakMlevvUbilrmisCPhcTyV5prQd940dP12N3ijMyHxmvvSEiGRvAi+/v7dDxCSYLfaar56gCEBAi9W5sq3yIaC8XIv7e+QMGv3G0ioI+BClwWMGFH34eF3yUDqhLreuwvKSXl+NRCQHLsbCZXC0ttvHtFX9Cx9R8AhdhzOMvjWK73UsPEEkTh0rcbELghGPT/NIHZMHtVhTQMppq2fcXPfnYw5QTqWe05j8WUQA/UH7wUpLNjwugWVv779IUv9Tcb+wfBL6LGPeMg9EAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADQ0lEQVR4nJVWDbXqMAzOzsHAkLAroUgYEkACSAAJTMKdBCaBSqASLhLuJOwlWTJCb1t4Oad0W9t8X37LCj6TCf5Pqk82vQNn0LZt+WUcx+Qm+52ecSjZIokS+KSgj8dDlRaZNk0DdV1bIlOJQA58staSQiKQE1pX0HcEPwF/UUyScn0MpO+fEiiCq9UlpTkCRrKuz4J77zmGVqJ4vnyzOWH3yVqSQAqc400xphETiMWC7nYtDIP/OP4Ft49wvX7Dfn+Ed+JcwyTH8ZmUloCE7o/1MThbbd13v9/QmoHf1ROp2TkHIQAcdg30g38pu5wHkpbrZtegwkdAd+4gYA60OBNQbj7g3CPRA7pfCVhPxNavcsBsqbiRSED7JBPPTY0uB/90d6Eci5bbzWStwzD44BmoNJODBz8nW9dzmCr0xhQnrLXegi8bNYO7vodviSlZk5tHqgwlnrDU9grrfgWffn9+eGH99fVykJNJSi81k3dGeCZjCB5Kcv2+wFYqaLGcDjnXApHwfoDj+czfnWR/i2sUXzuz24XADDzHnxxILqfz99sNNtst67rdruyl0+kAXddPK7WakktZB24w49LP1V2poeIkPN6H5RJqmnn9534XvYF1j7Je7O2k5Hzu4HI5YTINT2ujZBsQEFW/dDtqPPpMoAQY5GpWWalVIN/shlGSigiQ9DBkSep+GtRmqdspDoXigaFwoh8ksZOWU0ejzkZKj8fz238w9q5XYAaEAGocZsJCwIeQB1eF5OYLJse564vgu9ZBTb19abdQFM0VBk/FhLOXW+tBT/zp6XrtLnGmzKeM194QkYyFwKvNZjvd8AbjjZLpajlVARFgIu1ubqt4iWgvZyLyHuSCoWe6WtmDEoIcOEmFhW//Hld4lU5Ul1rXtry4l9fzVUkOrOfCRnItt9he2iv9WMNUJIErG/P4n0a13e65B7BLM5dK3GwEeE2cRM8aDfuNdVvLU0KH19huf7kzSRkttSyq9eZDC/UcPTijhwK+kVkH5MDraOzRA1daoPIjKznZZDagnSh2CZ0K+pAxpsAVsDGzKiagU0Kx1mENacle6DnLcwfPkJex8ByPJLi6xhJIWVRD2qKx8P5n/z9O56X9JA3heAAAAABJRU5ErkJggg==",
+    "price": 7500,
+    "reqSTR": 25,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incSTR": 2,
+    "incPDD": 22
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 22,
+      "min": 9,
+      "max": 35
+    }
+  }
+}

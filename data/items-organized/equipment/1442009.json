@@ -1,0 +1,39 @@
+{
+  "id": 1442009,
+  "description": {
+    "id": 1442009,
+    "name": "Crescent Polearm",
+    "description": "",
+    "chineseName": "月牙戟"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAkCAYAAAB15jFqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABmUlEQVR4nL3XjZGCMBAF4DBjA1pCrgQsgWvBErSEa+Es4SiBK+EoQUuQErSEmF1IZskF2PzAm1EUIV+yBKM7sV3UsC22QpWOqH/v4nI6qi1QC0opccfaqHo0lXjdLxr8Fp/HA+xbtbwI7vXornWrHz0IT2uhDthZcC10FlwDXQRzoywwJ8oGc6FBYA40GExFo8AUNBqMRZPAKVTNNMIB5873ourxVOLjUPhO5IKLoahdgjxhgUOH2SiC3ct7DAv8uz0FNzsKtm2/0P40N1zh4QAOeP5qREgALXTstYAeAwylknuBC/ASWJYyGB01pld3ZUAcfXfWYJ0NpOgoFtTlrqrS/RirEgu6KDYG5TUzGECAAaivJ4tBKAiXQ+qeDjOX/d37bzINP6JwUgHgw2JjrylMJoBhdLTHMIsNnCu0vBYOSWhpXdTC5GScyVDynPHNXvaKETPKKdRkdpQGhNsrNFOoFzT/RfrXPagvB7xNX08B7PT9QxED4XYYXQzoQxGkwAgdY1Ggiy7eLqmYi06CBErGKKo8jWeHaN7+iyo+qdgWEAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAlCAYAAAC+uuLPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABz0lEQVR4nL3XgXWCMBAG4PieC+AIdAQdAVdwBB2hHaGOUEawI9QRdAQZQUZI84ck7wJnSCB470UUIV8uBE7X4n0hzXb1LlSqEPXvXZwOO/kO1IFlWeodS6PycalEez8p8FvsdxvsW3R6NVio7M71VbUOxMtSaA9sHLgUGgSXQEfB3GgUmBONBnOhSWAONBmci04C56CTwanoLPAVKgOdxICh81lUPp5SfGxW3Imx4GhQ1JUgJqJAM+BoVINNyx4TBf7dniI21hS8XrtC+3O56QqPA2LA4+dFpATQlQp3LTBiwJiqshC6AI+B222ZjHqdqeouLaizb44KrLOBFPXCgWq6q2rb/1rPylSwj+rOML12BQMEDKA+HxyGoCAuR6lGalZu9LN3sJjMjyi9qABw2NRw1xSLCTCyoyPGKrZwrqDT6+CUSJ3aPupgcrJeyZjynMGt3uiKMSXLV6iNYJYWxO2VGq9QFrT/Rbr3HaguBz7Or6cAG3X/UMRCemuyMyDurVC+gzLC1lMKeKiPIfaqDR5ZDNiSNqynoSDY2WwrBuBgtMa01nsijUCI2mxjlw87EF1Pmc5pfCV23n/fb109JQcVws+Cy6gQfAZt4LP33T8NfEJk2TgQVwAAAABJRU5ErkJggg==",
+    "price": 90000,
+    "reqSTR": 130,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incPAD": 62,
+    "attack": 2,
+    "attackSpeed": 8
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Pole Arm"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 62,
+      "min": 60,
+      "max": 64
+    }
+  }
+}

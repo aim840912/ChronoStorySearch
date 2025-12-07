@@ -1,0 +1,49 @@
+{
+  "id": 1072127,
+  "description": {
+    "id": 1072127,
+    "name": "Blue Jangoon Shoes",
+    "description": "",
+    "chineseName": "藍金月鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAeCAYAAADZ7LXbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADMUlEQVR4nJWWjdWrIAyG4znfAnQEOoIdwY6gI9QRdAQdQUfQEeoIZQQZoYzATQIo3P5zTmulkid5E4J/8PuwT+aydwt+gbBxa5tk0mgDh+No34G+gSTGjQGoao0/AJpGQJELmDqca+El6BPEWtt54waqSoFSmuwzTWkJ97X46OVrSF5YeyvZ+Pm8oEENWyg4hABYbwVotUAhAW4DwKl+Hs0rCAIm9HpGwMwgcP47gBSwXgsQOKcWxUDxYyQo0Z0yioDeA2DzfhhKKEuUyGB088hzNPr5NwiPqu6dMmgll5TkAsoidyQ1YpQLe0+PzAvAuHwPwShWv9SgxwIulxwrSJJGLh9LDRrLlqZotKOPQqJ8MscA+4e8PESi5hrysoNp6qJZNK5n1H9k49LzjsvA/4lcJbJ+iiQ7VYu9DSfSaVso2bDcvCdpWjM5eGTcYB5F0TxE8ywnGZXifSIPZRSMZu1r3TnpwuDM073eQfkFjNq7wKvEZ4cKrGwGGMSZJ3APQq8bX6uP0ggEM4DrWeIVQYsDvdvxme7PtsL8DLIFyQ5jdWm1RxCk8r8JlMy/kSsBmbm1bTNBAxV0+GlF541wfTuj1A3Ek+2IFQd6sV91YYN7AnLwUgnOj8sD7JFsD3sHomC+bvUklzbBiJck7J1njnEhmB8gmAtyNieHVWzU7N6L190rhsQnXrJjr3nN1/NCG1TD1g7jxhkiBFfGcYQBYmV3g5s8wQlW0NUx1Li1V/fAYZ4oOd7Qo0QGk09tJc6HxOi0hzBgvYzYJlYWnu51e+LIDv3Fm4k7oAfFJbzB1AZ4Jlcy5LC60kRDW18yOpjav41JZMt9l6Cznw40SDajpokGkhNIuP4l/NVtNJ+TRHcDRVFwLtScHCx7WzEL/hGOahM0dVcH0N74bjQ+LQmwjH1iOB5/26JwhgcQRFXy3/Hrnn0AfH4lovY95Ucs04aE3fKxtY8nANL/EyBAMuqWfUFVNEIje+hVeIHzEYWm6O+pcuhlwuv/FpBEIoXhVl6Knj+k1Gy2RPF3klzH/QiIIRkutM0w4Al4RaU0l2AZED5H75L7VSS0sK9rC+/HT8bD+AcGicLwSdChAAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAfCAYAAAAWRbZDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADYUlEQVR4nJ2Wj5WCMAzG43u3QB2hjlBHwBFgBBkBRoARYAQYQUawI9AR7Ai9pH+wFVTu+h6iteSXL0lTfuDvw2zMHfY8+BeYhRhTJZNaaTieerMHuAeWQLQGKEqFXwCqikEmGAwNztXwFfgNZoxpPERDUUiQUhHHUqXi8Jgz2Dvew0RmzD23kMtlQsMKFmk4GAOY7xkoOUHGAe4dwLn8rO4dDEEDqhgRNFogOD0OxBnMtwwYzslJWjD7pzIM3YMyj6DWg2BR03U55DmGTqPasbdzNNrxfzA7irJ1EUNrglMxZJBnwhFlj6onq4aWjBNAP/0dhqpmb0KjAgbXq8CK4xQ7l6+pBIXlTlM06t6r4hhWLlBw+zZvK2VyLEHkDQxDE80iRI2Yn95CuOeeps7+x4RMwr1X2eFcTObenYFSHgxwC+CLGgpZrQfnRATRmGeWVW/VbeXsQCX8GMhjHolTNjelalxIw7AVQr/VEyiuoOW6q7wrkMOxAMOrDjp2sRO4l6FVla/xdcgYOmBBdh9wvCNwSoGfOshBtRdTYP46XgO3ArAalXwqCiH03wmYzL+Mb+3qoMfa1NUAFRTQ4FWzxhuz+8IZp+7CNrY1ViioaVG3q+tr3FMgwIeQ2fy5PMFT2bLYO7IhbvcRQ2FUOhjzoQp7b8tBWzDpf/tgmCtyXpAAGRvw3y34e3eMYfEJnJTsTZT2fploo5PH7AmJgX6eqnJLcYAZ3tzhzs9whhlUcQpJNebmFhzHgZLnDa4NaSwSaldxvjiqVS8wC5qvPbaf2SaGfqv6bJUe26tfGndaD4xLf4HKBfRO2WrwbnYljQaXvqeDn/r5qXUSTuG7Dr2b0MEKm5ta0R8VJCchc/2R+bvbsD5nSV40ZFlmcyXH5GBbtys94YLwKqFDzN3dgZSHPI3HpzeBpr7dBKxg9mEVpdJ7vFTVy2uBW7sC7X+Vo2NjECcs74oCv+RraUsbIMqPBx2TRZHbr7ADdec2o6rroeIttLJK1oYKC7+p0uilx+eHjgXxARQ81osyzrQ9QnLW2osiOOoseS4pAscnWdmrghcgXRQOFWBHNPCoug5P5BtGUNnSzcMTPodREfT+/qlHrRyI99m5Lcs7fB71F6Ov35PrJ/qDpJ6ixVteb/eq9dymA780Wdv1dFSvIAAAAABJRU5ErkJggg==",
+    "price": 35000,
+    "reqSTR": 130,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 40,
+    "tuc": 5,
+    "incSTR": 2,
+    "incMMP": 20,
+    "incPDD": 24
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incMMP": {
+      "base": 20,
+      "min": 0,
+      "max": 40
+    },
+    "incPDD": {
+      "base": 24,
+      "min": 4,
+      "max": 44
+    }
+  }
+}

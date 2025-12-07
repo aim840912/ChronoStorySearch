@@ -1,0 +1,55 @@
+{
+  "id": 1072090,
+  "description": {
+    "id": 1072090,
+    "name": "Red Salt Shoes",
+    "description": "",
+    "chineseName": "紅守護鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAcCAYAAAB75n/uAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChklEQVR4nJWWjZGjMAyFxcw1wJXgLcFXgimBlLCUsJRASlhKgBJwCVBCKCGU4JME8gqWn0QZJmDge5Is2fyB1y3sjCVXL70iwODKAOTdA6ZpgnEc+cbtdgtXImcCDP42KbiuZ/AwDPEmiTRNcylyJBA6m4JpZnBd178esNbGSN6NgOHpdxfBJEIHWZpiRM5xNHR+FcVWgOGuf0JZlhEscGNMhIvw2xEQhOAUvgAoHVVVMdh7z57Lvas0aYHwyC3nHRbvJQUEbtsW0nsBFh/07jOK0HGWplUE9JL/9xcqTBGZgG17hxQ9HZeMOF/DPbUcmUShREALrQQISC9NRTYLond2ARDcOewBTP84pZBPKL6kT3qDRMjJLMtiNFogyYYphN7BWJQ4gz9l6PovpOLY0gaDx/ThT5uI0Bx2XRdFtpOcJEkZwgPPTA8G7jN4gY8eOIIj0yK7KYoiHxBCgxFSfhaw9zipsPQC/lpjIc/zCJaqkn8qd8rI4VLh72n0RFJFYG8dj1cI11Bd1lRtUhBHAjwfX0s+BoRaN1dMjpNKE8kg1Q/6fFANeLqauqZb5VPA2nMN5mewpMn7eh5KDhe75/MZAQI561p+doFrO4yAeoLWHe09RbOdzOh9XUa4eL8nwJ0YQpibSyZXLQtySGRko+pyDd8KBAKL6dyLEI3JuQjxNXq/B9cCK/jWfpWrmhOO5gAuAqHve3jXJD2mrbEsj5+LKdq2+J7pcuSFkaoGjr2PArx64ha5J6Jzrq/zoQV/vaH9RGCozD6r1ZfDVoSM9gLdE8VcPqdfFbwsPMzEItrilqlESJ6YtPCV89BL30XJRzvwhn9kUufFulXf+rLjSODaEnjD/gPBZt1Dc11lXQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACuElEQVR4nJ2WjZGjMAyFlZltgCvBKcFXglMCKWFTwlICKWEpAUrAJUAJoYRQgk8SyCuIIdwq4wkxxp+f/sgHHLeQmDsdffgIiAGlAcjbB4zjCMMw8I3r9RqOwvZADPg2Gbi2Y0Df9/Emweq6PgzbAoXWZmDqCVBV1csCa21UdsRSIIZk320EEIwGWZahQudYHV0fVbUGMcR1TyiKIgIEYoyJEDnArxXRZgQht8hG5KayLBngvWclcu+o+zQoPHLLcYFZjbiGAE3TQHa/gcWF3n1GGI0j7lsooof93z9QouvIBGCbO2R48mH2lPMV3DPLSkWVgkEKuADRxvTweLtMYDytnTciiHNYQxieYcwgH/EQs1ultghGh71cLi/qNOh06ccQOgfDrcBI/6Sv675wd5yby6j36Fb8aBMYxbht2xfYOhlOp1MRwgOvTAcG7hNghgweWNGWadiu6yLsDCHUeBjy2wzwHoMPcy3hpzEW8jyPAMlC+aYyIQ+Jqs0W5O9ZPJm4kADeOp4vEaI31+VA2TmsSmwLxPH6mv3U4+bWTRmWY/Ap4Lyhqid93ScKebd7u7pd+FsAWokG8BosBVJTTVObySAWns9n3Eg22+sCvHaGpGxTEdUU9TWthtStgx7VVEWErNWkQFzZIYSpSCUJVLuRIUrJBtU1UpA1KBBATMdGgDQn1wLk36hmD6JBC8jaXtJcxYzVvYEIKHRdB/9r4jbTVJjO79dH1221Dm06jbkBU5bBezURxN0aX90pmI6J/p33DfilkmWXBVjcjYoMpednufins4aR0btI19RtSjd6r9gEZJRBIG43DzMybHEkeZUrGB2D9qYGW0xTxQqiYTRo1fAxSz6fm/5BHXfLpE5uy9Kv4NVlWlE0cR0tvqCyFt6blj3uXC/GB/zIY2UKvLYsddLEXBL+DwFk9VnxO8wBAAAAAElFTkSuQmCC",
+    "price": 19000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 108,
+    "reqLUK": 38,
+    "reqJob": 2,
+    "reqLevelEquip": 35,
+    "tuc": 5,
+    "incINT": 1,
+    "incMMP": 10,
+    "incPDD": 13,
+    "incMDD": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 28
+    },
+    "incPDD": {
+      "base": 13,
+      "min": 0,
+      "max": 31
+    },
+    "incMDD": {
+      "base": 6,
+      "min": 0,
+      "max": 24
+    }
+  }
+}

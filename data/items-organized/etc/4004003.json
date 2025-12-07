@@ -1,0 +1,27 @@
+{
+  "id": 4004003,
+  "description": {
+    "id": 4004003,
+    "name": "LUK Crystal Ore",
+    "description": "An ore of a crystal that possesses luck.",
+    "chineseName": "幸運母礦"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC20lEQVR4nJWVjbmqMAyG4/O4QBihjsAdAUaQEY4jyAg6go5wGeEwwmEEOwIdgZumSX/wop5oLbWQt1+ahj18ZstqvINf2itQdP5jztyj/Bymq859DNzD82qTcxTn0cIfj+ONR4fh9DGQFT3qM0zWAsqSUbxjukg9NTRhPDc/3FenP2+BIXRooK4RLMEgwsSp9KFBBqJmqHMUksdCnYPqUG0C97pyR834XmEICeYdG/IqShigprEl4PyYYex66Kb7sobtNSQcHVKG5NA5gRnkcVSUA9QmobjQOCpboeMVa2jIMWIdHiyMxjZLDT9vpYdw79D3gHR5gQZ6GPMk2wVFjYSlSDEajOSJVuh9ITtEduyohURRpQhjf/I7Kz4cXFwDdxzBukyRM3E+Lp4dDhPt2cQOXcKTb8NhVshw6ngG85VieKKh4IwTLEHRlIXJQQybm2zYvwjJkkL6oW0FEECim0I3xFORFI25Q5n156qIJAYVtW+i5FBC+EukDu4FJILSxmOKH28MxMOKdR2U1Camf7abcdzhNUUA01mP6e3kZtTsYzPiBEsI2VC1kIjhz9ZdwWTOc1cBVKfs4Z6pLkFkzmkaH7pVDdyGrBSVoQAnh86s0t6JEkyb7n9buMaikasIa/Sn3AaQ7QeALIGb2zmEaVUJPIQBkbLW9Wz9nRfNB3bXyvvlm6q4f3Q6XflQbho+nZqoIL++DnzJNU9ffDzwwLkJ7xqnHz1TiVFYB+XeqK3XuX7D7qrxtCxf31xyPEQ//kk0NRfNdHKwULJW9ArEsN29XZbbA9A7VaAVIKv01T5LBwVlTjQJXoHYqv4A8985KLG+iFqGYX2k2jUy0oetNiVEoZoEb0HeQdVVcTxfSKEhENW/Bo8wjUN4yT697TVVy/fSJogqLlfeXGFhmOafIc+2BdoJjNPeO/QKufz95+QrQMJV+HiraAuYb/x91Ntscf9vFL0Erv//xP4BGPofjHmYhtUAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADAklEQVR4nJ2WjXmjMAyGlefJAmIEZwQ6AoxQRriMUEZIRmhGOEYoI5QR4hHwCJwsS/4jzbVV4hgD1utPyCJH+J5t1fgAv7BnsAj4NG/co/yclqte+xH0CPtVJwAKIFo4cX9959FpOv8Iysru7Rss1gLK0lEImA5STw1NGK/dJ/fN+eVb0BBGNNC2CJaAEIHiWPrQIINRM9Q5Cs19o85Bc2qeQo+qwFEzvlcgQgJ654Y8iyKGqGmcCbreV5iHEYbltj0CHjU8HClSiOTUOQEa5HFUZmBvi5BcaBydZ2HklWuYyDliGyYXRmObpYu/bqWHcO80joB0eIEORpjzxDskZZ2EqEg9GszkjVbq/SE7RXbuqIXkUcUI83j2T1p8OLi4Dm44g83WzDBn4j1RBDudFnqGCzt1aQnk33DIFTSdB76C+WoxzOgoSPPC2+sQlC0Z3kEMoVtseJ4RlCWK9FPfCyTARD+FcYo7plQ2507lDr/viqhiUNP6JopOJYi/RBvgtgOlZ+byIMkxPyiIGxrbNihqTdwakM3S8YDXFAmEAhpT38kE1KxkM+IISxDZ1PSQqOFk765gMkDhKsLalFXcM9klkFxzmuKnoaqZX4MeKCvDAk42pqm2hBNFmBLB//ZwjcUlVxPW6SuBTTA7TgBZcnfvbyFkVcXwIIZE0oMsqGy8MShu6kMv76cPqv5++nK+8sb90nC3q6KS/Pg6QQRFZXrCQ9cuvKucfnTPJU5hA5TPSu3RWus39aGZz9v254PLkwfpx89G03KhTTsLC0W1sv/BGHi49dv2fgf0jhVqBcpq/VsiSxGFZU7yxHgGY2vGE6x/16DI+sJrGYjtK9W6mbE+hK0pQQrOE+MZjG/3TpqhiSfXCyk1BKN62eErLPMUXta7fw6awgxrQaqtbzmsKAdUqbli50rrJen1PSiawjzZHtPU8OoELdoBePG9d+qVcrl8UCEUIqFTG2tyrUxNE3cHzZPhNuvtETJUPop2zC7YCpgfvwj0s1rsS7U4eDCOx/8AKxsxakBrKzUAAAAASUVORK5CYII=",
+    "slotMax": 0,
+    "price": 2000,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

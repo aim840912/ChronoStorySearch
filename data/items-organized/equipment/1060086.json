@@ -1,0 +1,49 @@
+{
+  "id": 1060086,
+  "description": {
+    "id": 1060086,
+    "name": "Green China Pants",
+    "description": "",
+    "chineseName": "綠陽褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAdCAYAAACwuqxLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB4ElEQVR4nKVWgXHDIAyU77IAK7CCV0hH8ArJCM0I7QoeoR2hXoEVWIERXATIloXs4ER3HBiDXv8S2BeobYbXrZMTEmDubwCmj83mRhY868M69g7g+pXH0z0FtwHRGKiGYOiEegRB58NP7Kf46PR9FUCYLBiP4ZvcaD6E1PgY37pvnxj7VgDDnGrO+RqccyMAympR1iHK9NjK1CzRniGYGwMMf2ueDhnwqHm08h1vuMbY0AZgdnTXnNN6O5SxzXJF2RaZOMBMzrHnCaXee5+jLY3meYXx0lYZaEbOMao4nglgYdGvACAU3QBoenMWx1EUH0cM9gA0W+S81pnleTidZLmGdOcnmbOoGHBtm1g8If3+QbPlLuJKMVACmK0V2SlGB0myojl3t2A/V+9LNQmASnveHzLAq+KRweywzlOi69tUcUpnoDx2zrnNWVAZWsFAsmgxCZIOA+EYASCdt1YS7U0l7UuyTfq6oXUXbeFZIybusQmsuuxOG9d/Lx8IsCnRsww2l14Zo79YGPpVwYH2KoRHL0GkXWjBK9G3gLx9VcifAXlBZgY3B/ZaZkqpGZfH+K2FUfHcxwX4J8H2QZyyZX+YOEDJ8VLHjUpV+xRDgO734+n/qPzn7PCecSMcWdrzDy95OiV+IZyIAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACE0lEQVR4nK1Wi3HDIAxV7rIAK9ARvIIzgjtCMkIzQruCR2hHqFdghLICI7gIIyxjQUxa3XHIMvDQ08c+gywzPC8nySgBzd0VQHV+6GWQOMtmt+rWAPTviz7dwiV3YCWPREFQPIxmBEOQ4dPPk3805b0ikJs0KIvuqGWQ3bkwuI5vzYcNDNhWIMUOl0D4GrSZEQDp1kj34Om77+lroq4kCGpGB8P3GsdcqkDkQc3DRKFfo7RrA1KFuEggtF4PUdcLjZ7ODX050EwgOPPA02ytXW4fB9l5RvKSqHokCYHgLb0+E1DyqluBYM/0HkiKB/eqfpt4xhGPSkCSJJr7fQbkcXoqGfI1FBfeGXKvRI84948kAB4g4X8KVsdexxnMwDnQrLUQRYBUkLmXZDM3DfptRUnZVwDaxYbPNQkt6L6A6mG184SQu7dwONVQfDwZYza1JHrMvPpTetN6DhaKifDYUUXqUI5mHu0NpWBjUqjwtUWR66gltfN9S6w2Fyw21Wbh8anFi4A2qd3q0aa5Rh3P8wlUb0EcsHRD7k0OJkkC4t+WFjkK1hojMffznxapEa8eXQ3oPj7EFFVm0fFfAMbwptvs7kywKLYPvEnH/W5Kl3MrUMyFVAcyA31u2O3bC66w54j48nWBH6jLCFvqRt/Hrmas7nklhTzCAy5xVsz2SG5Md5m+Geeo2OxgCUSBTKirPCf9F9w4SgytramaAAAAAElFTkSuQmCC",
+    "price": 60000,
+    "reqSTR": 0,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 140,
+    "reqJob": 8,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incLUK": 1,
+    "incPDD": 33,
+    "incACC": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 33,
+      "min": 8,
+      "max": 58
+    }
+  }
+}

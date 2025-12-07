@@ -1,0 +1,51 @@
+{
+  "id": 1472012,
+  "description": {
+    "id": 1472012,
+    "name": "Silver Guardian",
+    "description": "",
+    "chineseName": "銀守護拳套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADJUlEQVR4nK2WDZWrMBCFh3OeASqBlUAlUAlUAkgACSChSCgSGglFApGwSMibOxAIf7ul3TmHJg0h353MZOAffW5mZ9z76aFPwaYoCgrDUP7Y1vd98jzPFbQS8Ql4Fyo3jaGu66R/Op3MEv4uWKBYuCxLut/vM6gFwpqmocfjQZfLZQZ/B2xuEVGgcyp1JIsCZKF5ngsMYtBaW8KPgntoCO94sUgR1R75YcEDMd8ORg+VUquHsUssTOBHwCaKIqq5E/mRDChNlAmPf3Tde8bKtqCu97BDHtsF5wuzt9RDRQSEdZd+nv9YQa3Xh2McxyFlWUZ1rShLEjp9nWcitNZ0iyYBeZMJGLsFw33YIfAErRnKrarp+7vl/xXFUSwi4FGqEoZX1Ogpq5H9FnoELMUgyxKqq7qHMzSOkxFaViU9Hzc6X9IRnvgVZaGaQV/xeFYKn88bVZWiYgmNGVr2bZrmfD+SI5VwGHCaO+Zof4IO+bGb1aYIUY04Tnx5KdH5nFLbPlbQSqAMYyhCUZb1uIhA+Qq6ilQwZvvuOTaICUog4oOppsXTCervOEmgVQ9N81KgOUODwOfnOrmnOaEiUrRlS/AIxYNQiArUUUioS8a0MsnzvnhbS+mrqOmheTVC0Wo9lM2hcb3d9Hj0lCcuy2HXDS+AtugnNzl5V8zl4xIGpDiNZ9DB8j7Euy8JqUzX61WyVjydQafFOj/piwIXCHPvi4V3ZahPMyjEDxv982vRrUz2wMPrpdkwQCCqE0Q8s5zO5Tjlx4+AFTgIgpUIfqNIa199bhjsHBwTx9FfoS7YWA+XZhdHCGDwUjwdxlHFFuCXDGB5qS9BrvfuuDVbOgXK10HutNX20+VVARh3a2+5kbm/gH0pbzDEbynAwpYCkGAIjws/YuIx4odFrIA9swKWBf9NcNeft+GySba1C2hxQagLHfovb/MAZkjM30rTm2P0zt0FKwBb/Be2KpnL7HUF2MLh2jvejuDG2TabW6iIbiWb+vb7yf80xqjD04Db3xIBQ4Lrg8dnC+zxIvZrw+3vivgLszF2lY/9PRGfeuuC92xTxKdQ2H9X4hwwC5rPOQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADS0lEQVR4nKWWAZGzMBCFl5nfAJXASaASqAQqASQQCUVCkVAkNBKKBJBwkcC/byEQAvSO687QpBDyvc1uNvyjz63fuR+8e+lTcH+73SiOY/lj2zAMKQgCV9BKxCfgXag87Hsyxkj/dDr1PvyvYIFi4rIs6fF4LKAWCGuahp7PJ10ulwX8L+D+nhBFnaKyS2RSgCxUKSUwiEFrzYcfBQ/QGN7xZIkmqgMK4xvfSPlxNHmotV69jFViYQI/Au6TJKGaO0mYyA3dERXC45+uHjxjZVtQ13vYIY/thMuJ2VsaoCICwsxlGBc+V1Dr9eEYp2lMRVFQXWsqsoxOX+eFiK7r6J7MAlRTCBirBcNz2CHwDK0Zyq2u6fu75f8VpUkqIuBRrjOGV9R0c1Yj+y30CFiKQVFkVFf1AGdommYTtKxKej3vdL7kEzwLKypivYD+xuNFKXy97lRVmm4+NGVoObR5rvh5Ilsq4zBgNxvmdOEMHfNjN6v7W4xqxHHiK8iJzuec2va5glYCZRhDEYqyrKdJBMpXZCrS0ZTtu/u4R0xQAhEfDO1bvJ2h/k6DBFoN0FyVAlUMjaKQ3zPyrOOESkjTlvngCYoXoRAVyFBMqEt938qgIPjiZS2lr5NmgKpqgqLturFsjo3r7abHk6c80C+HxowHQHsbBjeKgivG8naJI9KcxgvoaGoI8e4hIZXper1K1oqnC+g8mQmzoShwgegfQ7EIrgwNaQGF+HGh3x+LbmWyGx5e+2bDAIGoThDxKhSdy2nI24+AFTiKopUIPlGktUefGwY7BtvEcfRHqAvurYe+2ckRAhi8FE/H+6hiHvhXBrAc6j7I9d69b82WToHydZA7L7X9dPmtANx3a2+5kbk/gEMpbzDEzxdgYb4AJBjC48KPmHiM+GESK2DPrAC/4P8RbIb9Nl42ybZWAS0uCHWhY/9ERKE3/27oxeMs5W+l+eSYvHNXwQrAEu+YHyPjtIY8EauS6WevK8AWDtdGb9UG2IV24zXBBdw4y2ZzCxXRrWRz334/he5y+0tsobsmYKcML/pbImBI8JGpPIDf968FOOBJ7NfGF/fbn0Q4ZtX43u2JWYBh7saf+o6ghYjuYLF4B96zTRGfQmH/AdaAMexz48lCAAAAAElFTkSuQmCC",
+    "price": 42000,
+    "reqSTR": 0,
+    "reqDEX": 70,
+    "reqINT": 0,
+    "reqLUK": 95,
+    "reqJob": 8,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incLUK": 2,
+    "incPAD": 20,
+    "incPDD": 2,
+    "attack": 7,
+    "attackSpeed": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Claw"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incPAD": {
+      "base": 20,
+      "min": 18,
+      "max": 22
+    },
+    "incPDD": {
+      "base": 2,
+      "min": 0,
+      "max": 20
+    }
+  }
+}

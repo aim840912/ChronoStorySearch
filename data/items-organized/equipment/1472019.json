@@ -1,0 +1,51 @@
+{
+  "id": 1472019,
+  "description": {
+    "id": 1472019,
+    "name": "Blood Slain",
+    "description": "",
+    "chineseName": "赤紅手甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACa0lEQVR4nJ2WjXGDMAyF5btM0BGyAowAI9ARygjJCMkIzQhlhDBCWKEjZAXXD1tUFrYheXe0jv8+SZZ/DrQtm6k39Ka2oNb+uNk/ie6qoc0bs2lUCRoBK9X4DP+n8P9XtfexUZEBZU+7/+KUAFOiDvAjxZERUTHbUCX2qlJ1APXh9z3R/h36XD3clKFDbL2Gc1tP6SWQwvhTAJeht3jylPYA9fgS1JjRJVPjCqO3kr3lCa60zmqpidLGbq/pl/vGNYzVinIuozV4C2rclrEMCmtCl8uFqqqipmnmTuPorfpovQn3AnAPdAZzAUnQdR2dz+dVJxiCb5omaodhzticXtkys8dDmBDry8mDcLbBEBiFr3f9TmqCsCzmpbOXYaSA3DbvRQfj8CMiDGYg/uw6e+eTafBHopZcPwgQwOAtSwJz0MWzBQh1D2cBCrGPxtTR4FP44HEKqKHzlEj7DwZCGNvJs5sD6mFW3TVmfbesahhq9R6rRSgfjfH7lSUugkjOQBwmNxfvPneECWh0nurfNbbhyAaojmwAInLzQN0lBzWpS/kZ4NgMj7nVUo34jXE/NiQBTF7kh0yHJdxaMyCEGkuAYh2M+Ar7aaSyktkr1xcHm89X52prVkBwLqH/GZ4eaVMaajmkUC4XJFAK4+BlSKL9byQJ7GVD8JKBSzXFB0Qpa1NQy3ejBD7p//oCkI06ivoEp/g8XfZpZK3qhDVDsuhnSkab7+FDCYh6vv3lwZ4ybEdUI2jWQ24rAOCVfQXIUJN4GFu+qqT0/fiulhMp16EXhhAt79fimL1QLen925O/Ck3BzDVtSK4+qz8/CNp78GCwxgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACpklEQVR4nJ2Wj5GrIBDGl5k08K6EXAmxBC3BK+EsISkhV8JLCc8SYgnawpUQS/DxAWuWFTB3O2OCgPz2HwsH2pcl02/ol7IHXZZ/dvUPorsaaPLK7CpVgkbAkxp8hP8p/H+r8S5WKlKgbGn7bE4JMCX6AD9S7BnhFbMPVcJWnVQfQF14vyfG/4Y5Xx5uytA+1l7DeayjdAik4PtzAJeht3jxlLwC1N+XoMYMNplq2xi8lmwtL/BF26yWMlFa2f2Yftpn2MJYGtHOZbQG70GN3TILg0JM6Hq90ul0orqu3aRh8Fq9NV6FewH4CtSBuYEkaNuWLpfLZhIUwTNNEzV97zI2Jz/ZMs7iPiyI+HLywJ1NUARK4ensvLNaIITF/Kj2MowUkMfcXrQwdj88wmAG4uel2usqU+9LohYZPwgggMFaFgnMQVfLViCkHa0GaMQ2GlNFH5/DA4tTQA11SyLt3xgIwbetrN3sUA9b1FljtmfLpoehi95jlXDlWBu/X1nEQRCJVRDF5Gb93eVKmIBG9VS/V9iGAyugJrIC8MjNA/WUHNSkDuVHgGMzjG50oQr+G+J5rEgCmDzID5kJq7u1OEBwNUKAZhWU+Az7aaCyJLNXxheFzeerNbUxGyA41zD/AkuPtCsaurBLIblckEAp+A5WhiR6/Y4kgZ0cCFYycO2muECUsjYFXfhslMAHPY8vAFmpo+hPcIrX03WfRtqqSYgZkkVfUzKyex8+lIDo59NfFvaUYkKJP6J7zkGzFvJYAeBCqqzm4jyL/1m8O6hRF2MU1ZGPKin6fKR08ZF3NIZ9h2dmKAQ1Hm45ktoJwUrcC13Shvsr90lXsnBf0rUSKic7VvcM3/Zu4iWXSxz+OfFEUHaBBMcHpX23Fo6JMdn/LtajRNvJf4+b8Zx9blxcAAAAAElFTkSuQmCC",
+    "price": 105000,
+    "reqSTR": 0,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 140,
+    "reqJob": 8,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incDEX": 3,
+    "incPAD": 26,
+    "incEVA": 2,
+    "attack": 7,
+    "attackSpeed": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Claw"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incPAD": {
+      "base": 26,
+      "min": 23,
+      "max": 29
+    },
+    "incEVA": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    }
+  }
+}

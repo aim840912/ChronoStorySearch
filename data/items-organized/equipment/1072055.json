@@ -1,0 +1,43 @@
+{
+  "id": 1072055,
+  "description": {
+    "id": 1072055,
+    "name": "Pink Whitebottom Boots",
+    "description": "",
+    "chineseName": "粉紅皮鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 26,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAcCAYAAAB75n/uAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACuUlEQVR4nJVWi5HqMAxUZl4DogRTginBVwKUkCvhKAFKICVACZcScAm4hKiEPEm28w/hxOCEONmVVp/wDz63dvK7+OShTwgUuPl59VcCwe5xyIRvid4R9MCegB4eeAWUj7PQ2CcAMVH4at+RrBG0zYWBCRKwcEQCwwQOLcgmEcGWLRG0zY3Bg4AHBanBd5uuLJVYvoE/L7zDnk6rUUwJGLzR0MVzT0FBspVHBrcIcA2QfR/ufxQBlgh0GIOrLOw5HnnvHNSBoPt/kyjqzkYIUW80YJ0DUxrBjOAhah/hY9IvWMKZqsWqGkcgIDUD/zoowcU8CGDFGz7E/ZQTSt7L0XKMv3jhFTgf51E+hgTF7rpvG/8EumZC6onjMtNcwEOqLonniTc40HdHMq+i0Os6LEOC+XkG18eUBFSyJ1fWIVXWlKCQxrlzuJwGfsCMAOXoGUpAosek9w1Tna8tSdSRnFhHSZxfKEEHVv2EjhSUKiQ3MMHfmha+d0W71smFVIU0EWACm3UtditBLGWAWF3+/qNurEXQQ1gTm07qNsc94MFOpgw+lmuTIIPiYM3VBJ0gOCqAwN6LsTxyKNaHneNpaTDipH7o/MO0UM7AekevRhC8B2NcBEKWQWYQS0VdGZPmJ5eyVti91PPqa6/eLxHEd0DJI6MO8ZtMZhPCmiH4i52BTwlaBRaT8nembzo+Wp5LwhCSVLkoxeofjsSYGfiQQDXHm+miV4llBg06W84x9caouaxdBM8EXO+XacRRYtadcqEHmtyCevlxs/DONAJR1/ga4MQ/jkbnfp6cWikJnKh/s8mV+mI00WvedwSuKaHeVWC9AHLTV4M7JuA51QIuum9Zl+RMMnj9TiwCh1csRfIxF++8zwQFW8umJEtWrfTRFngmgCHJlqURkG3z393ojSYksG0f/WXM9h8d8oD5xOB26gAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8ElEQVR4nJ2WjXXqMAyFb87pAmYEM0IYIYxAR0hHKCPQEWAEOkIzAh4BjxCNkCfJduKYpNAnTn5Igj5LulJ4w+s2FN+rP/wWr4AU0H/epyuesPneJfBLwN9AE8AR6NuB9zDyaWr09Q0gBvr98ApsDTT0JwYQIkBYAWQZ1JgacpOI8KotgYb+zBAvEK/OOrjxZtO2ugDZPH/u5ootvT+NqgQxpNeUSCSOvDpL1h4YUhvgyyPFkt//U0SmNaDdHKLp4kjMge8dvS7E6/3/S12oCxsZhHoYi7ppYFsrvgPEh9oETBDHybQ40uVXFc4jEmcdA34atGhCncTxhW84H+7HmlGMRo41x/xjTrwH1+u4WK8cVG2+tkPvbqCvBKZpAWH3UBOB+KhGie9mztjRxwPsUXV+ynsuX8LjeYLozxQGTeWNlbgrlFiCKmnAK6eBy8Q/tDPHcnTsUpyFCEifyyWRrpW21EfVO+dZCuwWpNug1nVjhEORPi7HRMy5H/Cxqcao1iZDJSqSZoSJTh+mgBn3hNACQFCju37qcp5FNLmqbWhe0XvKR8YzY/oSZJ7Gl0HJucn2SX0YE2VmQvEcjRinTQ6rYkg29A1PZ2uCv9hP43pN3FGq0PMJsRqRdw7WNsGh4fTIjOMU0ih/0vqlFlBFXls9v+y3s2iWQOEd1PIo6nzYosnsW5JtCtGd6lVICRoUICbt09ipeflY89wTko8pTGIW6z45MmtXITlIa2LOoUGTD51x2aSQcxN7a9akdf0rJIG4X07zq7E5pC6UGsVT8YjRy9/nsmPWQTpUrOuAd/5ysPreSZNalRUhRNObVq50J6uCeBbNCGr6Ft3mgtqJYx4ml+yJApIkIRCpS5GH3GYpGMWQYNnfg8KCH38PEiYXahWj2QOzqZP1QNgEVLENbApbsstKP0bIsYDksNju8G9xqVuG3QX2zOJoGVnAYns9LC2lTh7eM+wHz+244rA8n21vmMLTyDJwaeU7bm31i/B/aICZD+PY5tAAAAAASUVORK5CYII=",
+    "price": 7500,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 26,
+    "tuc": 5,
+    "incPDD": 13,
+    "incSpeed": 3
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incSpeed": {
+      "base": 3,
+      "min": 2,
+      "max": 4
+    },
+    "incPDD": {
+      "base": 13,
+      "min": 0,
+      "max": 26
+    }
+  }
+}

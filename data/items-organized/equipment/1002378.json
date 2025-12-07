@@ -1,0 +1,43 @@
+{
+  "id": 1002378,
+  "description": {
+    "id": 1002378,
+    "name": "Blue Valhalla Helmet",
+    "description": "",
+    "chineseName": "藍色尼爾哲頭盔"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD4UlEQVR4nL2XDZGrMBSFw0wNgAQqgUgACVTCIqFIKBKKBJBAJICERgJI6Ls/uWmg27Kz3XmZecNSCOfLuSc/76A+b3f4F/2286cAd2gqiqJfQ3zsgLX2o/6fANDoEeB6vaqqqn7lwl9k4KP2EQDU/r8D3OWPOC5VmmZwTdWycA6mqb4H7/6I7qcA9OEsu9DNsiwknqYpiBrIweSgvnyHZWkF5i3IHgB9JM87EsPAodhWHO8FTK4C8waEQnsIb7YvoDC278Qf97mMGURjJx57GATBe2ubUMOXKnRg9QJ2FGt5JI/5juJy/7guBPYdBD87C4QawJyi3QDcx0xFeroL9XhpVZqBtRAyfYo3dZ8Ibrz0DOQ4T/0XPX/Vbld+t54wS/UaQFelut9SleiYPqJrhiiaXN2GSR0LTjsufHidRwXvltS3K3svLqPetuHcqFPLIYbZopzb94NYj1Ooakb4cAMKPQEhxDwYEAeIW66ORwMCEwBZEFfwDIDADV2XT5ZjExfxHRQPp6zT9Q64mltVNWfV9w0sr6mq64VKIOIorBYUT7242H+5ZLAcGy9MJXGinA3rHLRU4q5sKQcHqX9SsLV936thOMOczwBgIkES9w7wyBMoyXiBkfUlwJaqLEvqa8xDGEzxM0bEuWStzwEBVO2VrE+0paAVRUMQOKqksFSGJIHrDPG1rXfAuCSjOAYToY2ZXBlYDDVxvcA2DxO51kwj/KYpBwcOhSHrpf44OoSY5w5s5aRT6JLW/20Njx7fQfGiwGDFNPIwB5gZFJaBshvGh/MgAYQquvq3IMBCCdRlnge4ntwILGUiIXi2Ht/hZwuMzgS1j1X3VVMIUZjdkFJMMgt8CAkijjsSTzSvbvN8JoFhuFDnpGA3JCMEOPBIkwIKrnIXwpogqh5W0l75EaMr6MjWAd+kVhAd50DjIGpyQuqNYUPLUZyF103XuYfYliOOs9cA4ejRQtj/Agi2uqpabzmK8wdl8bGubwYQ7ATCvGtvd0MJFEGMZvUMQVForz02K8yAeXq+BlieP+gh9Pb3ffGwf7iZvQbY+chftGve+J1wFwCpRXwL8WpE71pXGhH3Z48QIMLtGLfMY6VoyeVTjd218Rkct2rjZsPJ7xdb8S0ACOWw/Wawbze0gEQaezAEHCZWInjAYLHHDEBRaTgF8Wig67DXTghxfmJqcQGJTQrnA62iY6ucxopcTjfiEk7Lou6CwQho7hcg9c0BdZsBWhHlLBj+rp5bxNDu0Bmvc7ItV7j4vANYd6ZpOamdRicbYoilP1+NOT0B/wQgkv9gRPp1x22f6IgQ+un3vY7/AFTWgZKXL4MEAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD/klEQVR4nL2XjXGyQBCGlxkbgBKgBCgBSsASQglSgpQgJUgJXAlQglcClOC3P7fniVEzMfPtTIYQON5nd9/7yQ4+jyv+RL8d/CnAFQOiKPo1xMcVsNZ+NP4TAM6eAE6nEzRN86sq/IUHPoqPALD3/x3gqr/EcQ1pmuM1hXUVH8xzew3e/RHdTwH4w3l+5Jt1XVk8TVMUNeiD2UF9+QHr2ivMS5B3APyRsjyzGBmOxLbidK9gelWYFyBs2l14s32BhCm+E7/dl5ozisZOPPYwBEL31nahhm9VWIG7F2igllYyuc13Etf723VlsO8g5NlBIWDE4lT9BuA65RAV81Wpp2MPaY6lRZMV+3jT95nhpuMgQI5zP3zx82dxOcm77Uxeau8BiqaG6yWFpIj5I0UrEFVXwmWcIavE7bTw0XWZAN+teey5Hry4Zr2N8dDBvhcT42wBV+3rTktPU6jpJvxwhwoDAxHEMhoUR4hLCVlmUGBGIIvigM8QCKtRtPVDySm0ivQOiYdT1un6CrieW2i6AwxDh8trCm27cgtUnIRhJfHUi2v5j8ccl2PjhbklTlS8YV0FLbf4XPfsg532P6mktMMwwDgecM7nCDCzIIv7CkjmCbZkOmJmQ42wNdR1zWONuQljUfyMUXFpWe99wABNf+LSJ4Vlo1VVxxCUVVJZbkOS4HVB+9reV8A4J5M4GZOgjZldG0SMNGm9oFjGmavWzRP+rWAf7MQUhkuv/afsCGJZzlhWcTqbLun979ZI9vQOiVcVGSvmzEMfkGdIWBOVahhvzp0aELvo+t+jgAgl2JdlGfG6dxlY9kTC8FJ6ekeerZidCXofw/mrZROSsFRDWzHrLPAmZIg4PrN4UsjqtiwHFhjHIw9OKqmGeoQBR8k0qbDhUDoTtgzRDLiSDuAzpqpQRbYV8KG9Quu4CnQOouVKaL/JbFRyEhfh+yja0kNs2xHH+XOAMHsqIe5/AYSUuml6X3ISlw/q4mPd2BwhpBIE8ype7oZqKIaYzN0zAiWhd3HbrMgD5uH5PcD6+EEPUWz//l48HB9uZs8B3nzkL+JUdn4nfAtA1Cq+hXiW0as410bF/dkjBIhoO6YtM2uAl1w51di3ZXwEp63auNmw9/vFVnwLgEIlbr857tsdLyBRQSMEAg8TdyJ0wBCx2wwgUQ2agnQ0KNpwFD+n6eX37DsAmp/kWlpAYpPi+aCAKOvBaTTKyXK2Owq0ANK0rNpzkIyCln4BIi6QRcYqxNYDvCLqWTCIFnR1cgAYvUD3X/rX0CfbdoWLTxjfmtAP5mnJ5OExZ3vkIThXDR0vV2P24XuFG6s/TwEi/QcjkrmfwS3rMMJeFlEGk2jcRfYGHv4BkRGNka7EoPwAAAAASUVORK5CYII=",
+    "price": 230000,
+    "reqSTR": 270,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 100,
+    "tuc": 7,
+    "incSTR": 3,
+    "incPDD": 100
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 13
+    },
+    "incPDD": {
+      "base": 100,
+      "min": 50,
+      "max": 150
+    }
+  }
+}

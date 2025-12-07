@@ -1,0 +1,49 @@
+{
+  "id": 1060052,
+  "description": {
+    "id": 1060052,
+    "name": "Black Knucklevest Pants",
+    "description": "",
+    "chineseName": "黑暗影之褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAdCAYAAABFRCf7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABqUlEQVR4nJ1VC5GFMAwMMxjAAicBC1h4FrDAWcACFrCAlYcFJPTYHtsXSlp6tzNMC00234ZarnDyf1TcxKTS9710XSf7vsu2bf55v7ffw0Xk67uVtm39OeTWdfUyGjdSE4v9OSZLkVaHZUcvqATvHsgq/XLL6TAMfoOwXq+XD5P7ZVl86HjwjYaPx0kup/M8eyWQaIAcwFnTNMFISfgCT6GUCPNiAEVlMbOkEIA3AMhJQEWsNIqV+ywpCUnCHOIdnmlDXHOkoUhQ1OQ6RBCRGCuNoWvkLNbNUx1OFHp1FPFiuMTTYtDLFHltKWigH+XTg8HblJc3UuaNXuQUcRZ3hkVancn2QPJTIMkZRdC3SN04jl6BV5MdYAHnkbxdfQroRpdoWOiIYnnL0yCQy2WJPEmdnkIcvk8goZL3Kbh4et6McP9TA0XLAsw/5S+kOODkeQLajh1i5dSHzonDe/9ErK8z/1mnnjPvvhLIEqdk6tiqJi5B0d3/C7Ithf+SvpZqfsaNT/jBYv0hAikKxWRr4ifE1af+LaclZETsIXlqhmLopEIP59M0mXo/RhVqKxCCU5oAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB+UlEQVR4nKVWi3GDMAw1d1mAjEBHYIV0hHSEZAS6QldgBUZoVgkjlBGIn8NzhSobk747H8aW9KwPMgdnY3avo7IWU0TudDq5tm3dNE1uHMcw7vfxuTk49/bZuKZpwj7kbrdbkEkhSWRisJdzBFtElT/hzNPSELzYIDDDliOaL5dLmCAk5/M5hIjzYRhC2DCwxsP4Mbu9Oer7PhiCYQkQAtir6zoSbyFJBI9gCEjlgKQoHBbMbiIo4dQACGmUxvDkQfDkfDcRSWiYOcE7PJDkfO4lioUAY5JQhgfGSYYnD4BqdUZBJD2SoVBhq3yhrA7zqkfFoDclhEkirYTvxf2GJHpV4k2SiHngaXPGsKcrspSoWhIagASnQMOLt1G/lGjuui4YYdth5VnAvpIvrzoqyY/TUI6ea/lSj6JSaaJL5DXRLLszL7QtkETI/wmf6dHyhcd+lwsJZQHm05I3iSDMjrwFfAKszNIchbCxE7PPbZHJVsV/iEVvFb5srxNKWbISmRWRvlNKG2aJ7L+aKrG7vPGfIFuOuH+OflhX6NHr/Fg3cZYIxcCESjKPJkEUoKtO6EMPLxOJap5IEURbUk5DeyLstDCFcViUMd59GL4NO/1yshS+PDpj/SpfVh55fIh5/rfmCbpxFXOur8ZhmYzKsEVSK2OazHqP8wfsAn1W24vy3wAAAABJRU5ErkJggg==",
+    "price": 36000,
+    "reqSTR": 0,
+    "reqDEX": 70,
+    "reqINT": 0,
+    "reqLUK": 95,
+    "reqJob": 8,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incLUK": 1,
+    "incMHP": 5,
+    "incPDD": 24
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incMHP": {
+      "base": 5,
+      "min": 0,
+      "max": 23
+    },
+    "incPDD": {
+      "base": 24,
+      "min": 6,
+      "max": 42
+    }
+  }
+}

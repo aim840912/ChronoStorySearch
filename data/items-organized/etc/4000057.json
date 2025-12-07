@@ -1,0 +1,27 @@
+{
+  "id": 4000057,
+  "description": {
+    "id": 4000057,
+    "name": "Dark Pepe Beak",
+    "description": "A beak cut out of Dark Pepe. Solid and black-colored. ",
+    "chineseName": "黑企鵝王的嘴"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABkklEQVR4nLWUgY3DIAxFHakLsAIrZIVboSt0lpuhK3SFrMAKrMAIXAzYsQ1JOam1FLVQvh/fdnqDz0Xen+XqwKdgeebQJ2DZr3eI4fV1WL4/fsE5B88vwxi0bduUYBbW9YRAKSUq4eVwYI4zmEqOiW0QKIQwfdkRLJ8ll/Ef0PrzgLA9OxiDRskpYoy8vihhcVMmNdZLSVgHsgALHoC4/OhG6i2sAxGARClFGIQC2AuhJlVnC8GyPShLJSFN2CWXgGO968SWcoYA7z2DGJJIHFR5bHIFaTrUQCs1wrLzaxFiCREUxe1hnK9PrDbpQ/+mnCk3BtS7MhB5liD1LA8Qw1DsnC/P6LboXjk2AIbo0qpX4kYit/dK3TiZMuAZ8JxUfhcuOoCFLXuJMmoIeNYnCdcX0eW6gglNS+AOJ7bJJ7HARHSwrjxvovQYYt7F085KKXEIul7JxPNOL2E1qFflnVvrCyn+kOWawDTFM+50GY/RrUODvUgpFwANAa7L2QbGd3PSrYRRooXX1/vA++nN30yLP4gMKurDrR0aAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAdCAYAAABbjRdIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB4klEQVR4nLWVjW2EMAyFg3QL5EbICnSEdoRb4WbpDLdCV2AFVsgI9QgpTnCwnR9SibMUQULsz88xcDPXWdjG1NtwFSyMbLoCFtz8MH79eTssPJ7fxlprXm+GZdCyLEMOo7DiTAgEAFTCbnNgjBZMBMfA2gi0rutwsjVYaAXn9h/Q/Pk06/IqYBlUC07mvc/zTgmjmtipPiXFYQVIAzS4AsrlRzXcX8MKEAHICcCbigmATgh9ICmbCBb0Rl4qDtkdi+AccMw3P7YklCHAOZdBGQLkvIry6OACsvuhj9lLjbBg3RwdsYQI8ix7U49XBhaLdJHPhDKhRoFKVQrC9xIk7c0NlGHobK2Lo5YtqheKFSBDZGnFK3EjJ7udlcgYVBlwj3E5KL9nKgqAhk1biQL6ELB1ThwuE5Hl6sGYzx7AHkr0ITdsMgNWwIrynFg8Y+PD5jysLJYSm6A4Kx54XGkXlozOKr5zc3oh2QeZzwlMXTyiTpbxaN3UNHgWACECqAlwHvfuYHw3B9VyGAWa8lyu301qnTuT+hvnR9vz/1LR0/qrTwG5E95/bGOuJPvVWAd2pZFhtjF0tvKP2lCgQH4fcGOBHbvywDXAmVUT4MpaG3vffejc6xFhJPWsXLYB7iUnnv0BOn1GzZOwORwAAAAASUVORK5CYII=",
+    "slotMax": 200,
+    "price": 80,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

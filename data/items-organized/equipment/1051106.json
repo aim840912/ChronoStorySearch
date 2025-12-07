@@ -1,0 +1,55 @@
+{
+  "id": 1051106,
+  "description": {
+    "id": 1051106,
+    "name": "Blue Armis",
+    "description": "",
+    "chineseName": "藍色米斯裝"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACk0lEQVR4nJ2Wj7WrIAzGwzlvAd4IMIIdwTtCO4KOcDtCO8J1hDrCc4QyQhnhMYI3CQURpP9yjlVA8+MLIfQPPLe50i/gDXsEYoDa/3DDGuN7nQOQEjuG+R1YDTQTgJzbaUTnJhtucAZdDqspJxNboFk2J++u7e4iPMhZh8/Wq6IrAcxznSOEmHMQQ1TTcsOayTtOjSEj5M6t9e9N0xT7+r6vK3LmCBY8jC5SE5XwC+Pm7JVSfG9bP0mtNQPCeAqam6bhB4Mw47oYumXaw1sq0k8LRU2j+BqGAcyIjqTKIPT9BWDsMSP/P1RRBTFEeVUdihkGyrj8Ew+zODS5IVdSTfcVyJj1wnfdftVPoVJKgz3Q/pLQ4hreVTyE5CBhjKnmKI6xUw7fycKA69K/CCkUBYchg1ILfbgn4BMrN6xsMb0zkEsWStIahraMe+odEG9WqSSWsiZh+H3kn8NeCj9U9/YEe1r3CkUEIee3C2URpfER9HhimMRUXyqFhI2UfApalR6vYEnj9UQQBnYdzrLAPldEaih8DLmnsTs77gshzL54SVgEeeeAIetAHwb4u/MVHM7L2PWyh90hlfh6+AgUjwUyghCMNufXceJnMmqvIHT4xfC5p+FbFCWZFmGYCFgfuB1Ul0nxmhVrFBRs9RWqUnOPQ8ggij3t/F1v4uxTYOir2c9pzxVc6/rmJZDAGpYcx02cfbin0NBPFs6h2hlUKAov0NnuMymYS6sz5GOJvV9Ub7cr6F2/dLgpceRmqoVkFK4es/KTWsemv86YXe3yb4ccu2lJ2/uJ23U+nD0l5ie1rjBynBbvO0joHm7/vvFpgldso6iqeC9qWvYeZertenqYbTWQwL9bW6es2BoX4piPV+0XbfxZTLkKTvsAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC2ElEQVR4nKWWj9WjIAzA43u3AB0BR7Aj+I3QjqAjnCPYET5HqCOcI5QRygjHCF4SBBFF7Xd5j8q/8iMhCfyC8zIm+rMP1oAzQAbJ2zc3tFK21xgAIbCjGz+BHgFHAhFEDz1CVDRc4E6qGJqyBEm2BxxF0dply4q/ZgIabbCurZZUAtA4pnlZlo0pIMNkUXJDq8ECQmFYDzFEaztvGAbfV9f1sYZGNaDBQqmQdl4zntBvaiOl5G9Z2s3mec4gN74FHIui4IpCqDKVN+msRveRVuFfkxoWheTSdR2oHhcUMoLROk+AvkYP/rur1SGQYdJqWaFyXUceGs+yUI1Dg+lizZJhsglUaukgVXVb9JMJpcxB3yk+BZR4xpNWu7AUMFNKJX0bx3hxNmurocNzq0/CUkC/sPO4UFwfxhT8RNKBL0oMiwhogoMUdMauLXxM/gTIQS+kwFRZBCwbh7buYtH9UF69EfQwryY1JBhB3k/yOnL/BvK+ZajAEJkzj4ANFz4NXKQ0q9Hs/ssNIRT00szrRH4I9ELakVkZNrm/eRjuc6aN/nFK0RXQQgBNWUF+7+BytTcGPOax1/MG13uo8nmzhkB/HZEQjKAU5F/NwHUSai9gdAl7s5pDs641DDzTQ9FhMN9wm+dMZl06zzlJnqHTaKtvpWUoZt+0CyCdDWWSa628NiHY9aXku73xjZHn6SQQAjPMkcEzwZrW3XX0DeGun8Tdg6k7MAX0E+ntYT3PiQlvA4jH4v/vSfoM3y/Ir/XcYYZgQTNSriUhM9boxf+TS1nyrwd6Yzm/zghgBrL1hSdML4CqsmauyZFtLr24LZ4BCkgJAewSfLhiAmZ5De8/v7Hm3zPhNWKCsgCKqPgFN3JmudgHjpNnv1+t804XyA6kp2Ic0EFk8G3wmdjCWrppTofj3mWzrHHVBxzkuVBDJ25yA/vSRAvH9bh4oFM7hG6dZWrnZqe9mv8P4xF0ukP8N9sAAAAASUVORK5CYII=",
+    "price": 240000,
+    "reqSTR": 0,
+    "reqDEX": 310,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 100,
+    "tuc": 10,
+    "incSTR": 4,
+    "incDEX": 6,
+    "incPDD": 105,
+    "incEVA": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 4,
+      "min": 0,
+      "max": 14
+    },
+    "incDEX": {
+      "base": 6,
+      "min": 0,
+      "max": 16
+    },
+    "incEVA": {
+      "base": 2,
+      "min": 0,
+      "max": 22
+    },
+    "incPDD": {
+      "base": 105,
+      "min": 5,
+      "max": 205
+    }
+  }
+}

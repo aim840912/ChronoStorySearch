@@ -1,0 +1,55 @@
+{
+  "id": 1072222,
+  "description": {
+    "id": 1072222,
+    "name": "Dark Crescent Boots",
+    "description": "",
+    "chineseName": "黑色新月型長靴"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAdCAYAAABBsffGAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACkUlEQVR4nJWWDbGrQAyFw8wzgIV9EkAClbCVABJAAki4K6FIuEjoSuhaQAIvJyUUKH/vzHTolvIlnE0Cf+hcw2od0UUdwQValuXix6ZphqsBtuACreua+r6ntm0XJ621+O1SgDV8ABRaQ2dguqo5fHg8HrjtzT/OwT85UeHoNHuFD8/nk+73uyziOBZLVHmek3OO/leADyxK03SChhDkpG4mMk6ShLz3VGaBut7yOmB9mP1ki2aKI+yBiqKQgMYYCfhjA7lgKTctFd5owN0AgEcsyR5CdoAiCC6GHqWnnuFFa9/nGYw7cD45tYU0QJZlssDmAV7X7w10rqSu6wSsAZ2Pqc48VbSf/bxaIgYMwy9/M+y5wV08BAgwbEFQCN9hVdXRYYB1nUfRDSXJte6Joe8KQbXoJqvW6yNbFgG4JMUiNJTagOxhlW48MoeOst+bLWIRQLBFG0vhClZVXbIZ4GhwRbfbTe4AMHwQCKU5t0TvpGhRQRwgSK9IgNORC3iZVPCBGsoXnavSYCZ+2zU24nAKFwsyI5VjKSVH5dRUa6k9dxfL+nCeo1Ot5azpRUkfEXCW82/CpySh+UaHniYLDzO3bAcyTpK/nD3b6CNqCfMmCFiB6FYTf7JX7cFlrvs+44xTDvCkuIuo8mj/zzzH5kqVdMsxgKzpaEO1K0k2seELDMOC1L3aoeD5WFDwVuYyvdCRWn6zC0RbYDwLMLJHfTXR4gl/9GDAfNlp/c3BNbxer6+uw2apNchOKwIPjl/eU8x1+D9mvTvPv8AKXIOxhre3xtM4IHfBE1xHqN7uHhhChVx9C5jgelSQTsG5v8gacBxH+OnTXwYUHsbzTgNkbRkCQlfAU+b44/iadqbL74nQP3jR46+YHFm/AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACxklEQVR4nJ2WDbGrMBCFl5ka4EngSqASQAKVABJAAki4SCgSioRGQmMBCbw9W7YNKX+9Z6YDgbIfZ7PZcKJjGr1xQF9qDySAsixnF5umGb+FrYEEUNc1DcNAXdfNbmZZhmtfwZZAIwCQD3Ag9K180Hi9XpGaxT+7kN+cqGjpsCsXNN7vd7pcLjIIw1DSpsrznNq2pb9KQSOLzufzC2CtlRtaCHASxzEZY6hMLPVDxmOL8SFXs9SpAxyRQqgoCoFHUSTw38xSazPKo44KEyl8F6aggCWuILw1AAAiEHQtDQ0MKrrseZ8hcNaamI7IdSSwJElkgIkHqK6fk9+2JfV9LxCFtyakOjFU0b4rv+oCDjaONz6LeI4iuLtKcECQOrwAhHOks+rpEGxpHQVBijLntWSIAc9KQ9Vpgaj88ZbWOkPAZS5pxOLVVMEV0qlFA0fQEVdbvU7SiKBInS5iBSlEVfXxJmyvqQZpmoozBMYPUJS7mzZ1WHSoRIZZWYsz2KFtAqAyrpAraiifdQyVgqPwmdJp0b9gh0CSpiSSCszoTC2VrwXsS1N4acPZ9d39CB0iy9gNPSgeAkLojH019l3mkFskdqBXmo+CKOOUwUkc/7ArzoQJqCP0PysQDY4uEYVvV762QLIvmSFhJ2eG3SnsA6oMWtB7P0JhSLV5wSc3x4pBuwFJATT8cMSBrawrTZlC3NbkQ9ZA0lnRCbSknYdFSxDsZdhmJm0u2NmXztYmh3630n52m+r4eDw+VjsmWtOHt9bKwiZ443rAvoT5mtwc2o8+IBrch2CMuUgbQ1MjB+QfH+YLh99zEaRtX1OyBoFQad7XkF/Pg3OU3wykRw2q3dqdD7gBCMcJVC2AXAgetqfJ8g83zwc+RNwVjoB+WgGHJki7kLKPtEHqCH9OeSu40b6qlYD++ex3cuyJMwfsK1x604Vri/D/T+f7kpUN15UAAAAASUVORK5CYII=",
+    "price": 180000,
+    "reqSTR": 330,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 100,
+    "tuc": 5,
+    "incSTR": 5,
+    "incDEX": 1,
+    "incPDD": 60,
+    "incACC": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 5,
+      "min": 0,
+      "max": 10
+    },
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 11
+    },
+    "incPDD": {
+      "base": 60,
+      "min": 10,
+      "max": 110
+    }
+  }
+}

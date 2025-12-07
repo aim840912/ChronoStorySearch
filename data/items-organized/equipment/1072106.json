@@ -1,0 +1,49 @@
+{
+  "id": 1072106,
+  "description": {
+    "id": 1072106,
+    "name": "Blue White-Lined Boots",
+    "description": "",
+    "chineseName": "藍楊柳鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACg0lEQVR4nJVWi5GkIBBtqy4BU2BD4EJwQ2BCcEPQEDQECUFCOEIYQlhCOELwultBdNC57aopGcD3Xn9nfsHPbCnsVXcv/C8BAwvZvRx4Ny53JO8IGFg2A4QQIHh3PK1rPJvA2a9LkjuCpe3+gHMOgT0S+OwoILZcPfD2VuEVwdINT7DWnsADeyJEgwQ1r8kodFehKhEUwMMORuBCbHxhe3i4sqIHOXj+MoFL2YCnPcoJhERUC4XvmBcvzgSs3midYlvXYv2gaoHPCO4LqqkYnO0PJC8eeOfh+ZzQCw+jNqh4TWbwYVe+hSaqj0+PVSZEi0+dSM4ElTEP9OIvNA3FWYExa2legmOyc6OwzfM3PB4fTFLMweOzh2HosDpq8PoEzNXji+DJk0xEiaAiF7/6ANMwgFIN6FGvZcmhcomIcrPj7jlxGGYpMR+uX676oKKKMFYlt3MP1oc4vEDfiaRR7WH/dlRYa9gLKQVoTHgOVlJORnfJg7h/2ck0Y8go2RRTYwS8s65bh6HDPsIw07K69ICUkBG4dyF9J3WbdvIl3R+6Nt3P7ZKAVKhWcT8wXKDBloPvNs8diyBwKoiovkSwjecJurZJioyxB7X5+g78TMBxF1glSsm0uYJH1Ssw3fHcG34Xoe0LeE6QwOdZreEgRdrxqKAxkVsEj+oJHGv+BTwSLNTaNBKmaQc3xqeZX4s6kcQk5qG5M/aASpHHwulybK4cnETwegO/U58I6KLg1t8PRCsv1UVwax28MyagcCglOI8iY4nr2AtxHYHJszv1kaAa+99Ynk+c5TW4rca9P47mvQf2kL0DTx5EEvoXkf+Yl4A30Gi34DkBX9bj5wLvrYIf2D9Y/t1Ra0UPygAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACtElEQVR4nJWWj5GrIBDGNzNpwBa4EnglmBJICV4JpgRTQihBSjhKCCXclvAoIW8X5Y8Go29nHFCE337LsnqG/7NX5dnpyMSjoAAQsn8bQHd/HYHtgQJAtgN478GjW442DY09wNnvXdgn0Kvrf8A5RwAkEBZDnhgy9BAtHLEt0KsfnmCtXUF8UCZES6Am9Nk4pHshrIEqEJ8XZYgQM9fPDcKeVRWVkHIRhkjZAvIz3jPwCdgIRXPMpqo1KKgxWqfYN42YLlIhqI0QrKjgpHH2VoW9KUKH8Hw+SBXCXRtSMG26R5+VzCGLamKLlJVCdNTqN9gadDLmSqr+QtvyPigwZkrpTQglRWkcznH8hev1awGr7tH1coNh6CmbGkC9AoRswyokKSud+QA6sfTvm4fHMIBSLei7ntKZ14mHlu557/L6ec8chV9K2i+X92vrHJ04g4xVKRyloqkRiwl8z7BWddUFP5Yga01QJaUATYlRLlpTwsbvsqL1883KwDWMjZOCY26MgD3r+6noOjqHFH7ufk6G6BkbQ9D5dM/ezlroyskw9F16v2abIPZKdSqcp7Cs5wJaQrKNYx+cYQgnzlpNDTR/Fh7Qd23y0Bi78L7sH4GsQWFfBGWVUjI9nCBRxQTgdzCcLczOaLsJKUEJMo5qChN7qF0oQVx+SouQqIYhdGY2IRH04pLBpebxyBBjMH1zGtEkWNzsMmRHLCjiFA7lZjUpHtISws6E/gw5oiaBeIIIJSUPiE5uehsh1i7+IdaFbzE5gDhMSokwJApa7MezFPsRwEpnNRe6ZLGuL9pwMeh0v/2htH7St6QBN7+DuPwk5DOUQzlDbitICeOLJ+J5lvxFsF/+6yl/OmqAefFoGt5DVipKFtObX77o++UH9q0k+Q/9xXWGLC8oK8Bra2qeVp5V4f8A1lH1ZwADOlAAAAAASUVORK5CYII=",
+    "price": 20000,
+    "reqSTR": 0,
+    "reqDEX": 70,
+    "reqINT": 0,
+    "reqLUK": 95,
+    "reqJob": 8,
+    "reqLevelEquip": 35,
+    "tuc": 5,
+    "incDEX": 1,
+    "incLUK": 1,
+    "incPDD": 19
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 3
+    },
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 3
+    },
+    "incPDD": {
+      "base": 19,
+      "min": 1,
+      "max": 37
+    }
+  }
+}

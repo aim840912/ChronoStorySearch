@@ -1,0 +1,49 @@
+{
+  "id": 1060050,
+  "description": {
+    "id": 1060050,
+    "name": "Blue Knucklevest Pants",
+    "description": "",
+    "chineseName": "藍暗影之褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAdCAYAAABFRCf7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACLElEQVR4nJ2WgXGDMAxFxR0LeAWvwAqsQEdIR0hGSEZoRygrsAIreIR6BFeSJWOMDbnqjgtg+elLlk162FuA/1unN/1haHzCOFhw3oNzHmBdIPwucWzGmY8RwOLlHdhhADfjS7/sEEdozeb6aw5asRLawfIIi7+xCnCowIi6HS1ThuPgt9Rr0GBvXzJvhnG6xTLI/TJ/g7EDXpbfUWDvDF5LgLOauu9PrhlBdu99TJWA1hiwEuSd9IGU0iSy1bnDBM4WA1AIO06o0pHScyg5OVTDAIR7UeglgKNfCUrjen8KpfSMTpZnLB5CV1ZmJZAXxVfp8yIZUWBEbUxvlRWfGMQK5ZeCm/GOrfpKi7VTqkC918WRFupwEcMg3ZGX5jL9K2OMqo10fm5CdULugmmxSnlktdzLhV8bSvXT6BKgZVya1BlrE9pJsWNWWPyWaXtJFml+DRrG+w+vJrcMTbDFns/BOF7411c/OWg6suoFL2V08K8o3Rz8cXtW1Tb8FRrs9MQD98Epm2Eq61WHCjDz5xLsmz/ujHhAUD2Lg6Lmy3Ctv/jvobQ1ybmoURVKbScdUqspp877nfYyOcsBcglVI3/q2ag29BXvuA0Z3E6fWfQFqJy5vYJob2jss8OiJeIIzYDvWjonpFcPUPou5dtyOz8Pja/GB0vaccbuepWhtFBcnyziVT15Hn4Joi8dRBs41XSDvbebGErdkqdubIJyKhVUK/U0vrw+av+9uj+ZmlnWJO0MowAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACZ0lEQVR4nJ2WgXHrIAyGlbsuwAp0BHcEvxHcEdIRmhHaEdoRnkeoV/AKjFBGcPUL4WIMDq7ufLFB6JOEEHmgsiz0d7mUBmsgov6N+s6S856c80TzRMv3FOZGtnbriSw/3pHtOnIjD/qpaq4OKslYHhZH7kgNdKHptkz+Kt6SY0+NRrEhJBHwPPly2o5Ai71+qK2R+uEaUqjv0/hJxnb8WBmDM94ZfqaFzu6R+3yRPYDhzbgPaQLEGkNWwfekCkJEMASZndvNS6YYCqztB47GIaLzICx07LUYZaDXSLxCHX7VEczH99MgpMZEg/rNm8GgWSKwCvca2T0pgaQQjHpqNKqQmlkrbRDjEon+wiHTv/JRei8WRDGiCInvsQC0nC9cKEunVZmm9WxETSKmY1SBKN+nQNFIuoxTgp+YEolKzlqmdw6E/YheKrQmkta1IudToItuqAg2uCax1DXadX0raOlf/0sVSfnCiO2pJpjP9Nurbl0UU6HVlqmtke/0GyP6XeQdtUiLfg5a7PDGl9hN0mW6Ic9/GaSQRH+XvvKBDSc8NEnsz0GzjLoCjPtZ0C+D0HZg4CDnqy6OgFZm6x5J2qS/oXfBgDbRu6Ao0MeZClFt0ldvQbFhCqyeOrGPm9YdF84WhAZJoZFGb1saZupYGyiBlEyVBte+qGepCYT/CWnL+b1/6ImfrrD+H6/5WjuHsflZsuqLjyDxFsUg+U480/3pU71ccOMGXTTjDQzO4cM96OJ4+SeAnWdVwbWeOieRZZJGJGko1M7tgAHrL9P780dh7knn19ThxSnsMQHnYlS3BHvMvnfvP4kNaWRQyUeKAAAAAElFTkSuQmCC",
+    "price": 36000,
+    "reqSTR": 0,
+    "reqDEX": 70,
+    "reqINT": 0,
+    "reqLUK": 95,
+    "reqJob": 8,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incLUK": 1,
+    "incMMP": 5,
+    "incPDD": 24
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 23
+    },
+    "incPDD": {
+      "base": 24,
+      "min": 6,
+      "max": 42
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 1040089,
+  "description": {
+    "id": 1040089,
+    "name": "Umber Shouldermail",
+    "description": "",
+    "chineseName": "黑板金鎧甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADxUlEQVR4nKVXgXGkMAz0zVwDtOCUQAukBK4ErgQo4SghlBBKiFtwCXELlMBrZcsnc+Y/mfdPxoeRtau1JPNXUx/7yfrFnI9f7zmCs4O+7/lh2zYTQsgv6fd+4mwfhoHtZchv55yQetmnwXcBbZomL1prI4EtGEvLYXuNEMB6jx5d1/H+GnEB37++vhhonufMPEcOYHqH57EDmc20bWuc9/wewEKSbcZRlDLLsvC7mnI5cpInb5ymqQBuWwG0xvtA0TyB+2F8AdYBQBUhoI9QwHdskJfagCVzK3kxDIw5AiNa8+uRMHL0V2EozMESMxsScNsPZl0oEuHkS4cgKKph6KjxTvwdo87gIpWcMxIPzz0Bg8T4+Cg2aUf3+90gX3BUknTiZ11X9iWKChkNfnl7e9u/v7+zUQTuq+ckzmUg8d7f3zMBeS+VI2t4TsAvCccEwBx/GlgD1YZkuhCQAAQU5CTrzUmpZUNPWXwErhHQEmsCYguJZfyr1DjjsRHgemDt8XjI5ryuz04rgP0AFhWFzFmpZRAxlKgFGBFpO4zPz0/OjWNnwzOyXyLngKhqQtxWlf1CkeyW/TydCbBEogncbreCwPFoQKAxcY00MNQYjQtbvcOdSaMllcGdjZJSE5B1sUdnREPinKB//qzOj0P39dxw1ObjEdUIR8NnE7K2YU119AV4h8sCBuvCPfsIePyN6kBJ4XhqZcmt2cFvJBCP7mlTgHNLpB7u0J2opW7mZw18nu7VdYvj4kvJ8+xcWUnlmXOdu2i4ejNQlrhK6cnM16l5HovMXWosHH0I8fqF9IicUscn6QvwQECtjYYa6PRMFSG+dn0kAsIAovM1jz7WPiQPnD9Ivq2IfB97Kie8SIYd/Uay+HQr1aKmzwuzwRaKBbn347w6JnyZ5nX/GIe4Tj61kjlyAG8htkrpcpjHEVfqahpKGq2ETYnTHVoyLvoQysTjisGHiIOyKNnA0j87XIgG6+qyI74U6MNhIALTNJcOCQSOvJxpUoz9QEGV1Sy5j3ZrKjtIfxXJOdnoRZsY4rwa7zKBB/X+WK82zmTHQEkpmyKGgquPkj8jL5NOGs5VJA8sXcPl4KJsFzq3Ha1B33aY267NkfiQ1smhx7H4rQCOkdtkF/1HxXz6jEqMETG30ZCT4rI4v5OmBknDwAmQGwzlwmFU/4MQELmF5GvRLVXkcaHSg9nhfV7S93oktppS2r8N26SrlpIWn1YSIIMDOEoSpAZrTn8EVNsH4p+PkSPHZTMt3Ee4yURp/x/krwRu08wYWrE/nV01v5FcPBAAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD/ElEQVR4nJVXgXWjMAx13usCdAQ6Ah2BjEBGICPACGGEMkI8Qj3CeYR6hGMETl+2HJlAr/W9ew5G1v/6lmT6YvbHerB+Msfj13u24Oyg6zp+WJbFhBDyS/q9Hjhb+75nexny2zknpJ72afBVQKuqyot1XUcCSzA1LYflOUIA6z16tG3L+/eIC/j6+fnJQNM0ZeY5cgDTOzwPLcgspmka47zn9wAWkmwzDKKUmeeZ3+0plyMnefLGcRwL4KYRwNp4HyiaB3DXD0/AOgCoIgT0EQr4ig3yUhuwZM6SF8PAmCMwojW/HgkjR/8iDIU5WGJmQwJuut7YmSIRTr50CIKiGoaOGu/E3zbqDC5SyTkj8fDcETBIDLePYpN2dL1eDfIFRyVJJ36stexLFBUyGvz09va2fn19ZaMI3O2ekziXgcQ7n8+ZgLyXypE1PCfgp4RjAmCO/xpYA+0NyXQhIAEIKMhJ1puDUsuGnrJ4C7xHQEusCYgtJJbxv1LjjMdGgOuBtdvtJpvzuj47rQD2A1hUFDJHpZZBxFCiFmBEpO0w7vc758a2s+EZ2S+Rc0BUNSFu25X9RJGsNft5OBNgiUQTuFwuBYHt0YBAZeIaaWCoMRoXlv0OdySNllQGdzZKSk1A1sUenRENiXOC/vmjOt8O3ddzw1Gbt0e0RzgaPppQXVesqY6+AG9xWcDAztyzt4Db36gOlBSOZ68suTU7+I0E4tE9bApwbonUwx26E7XUxfysgU/jdXe9xnHxpeR5dq6spPLMuc5dNLTe9JQlbqf0ZObr1DyOReY2NRaOPoR4/UJ6RE6p45P0BXggoKaOhhro8EwVIb52fSQCwgCi8zW3LtY+JA+cP0i+pYh8HToqJ7xIhi39RrL4dCvtRU2fF2aBLRQLcu/H2TomfBonu34MfVwnn1rJHDmAlxBbpXQ5zMOAK9WaipJGK1GnxGk3LRkXfQhl4nHF4EPEQVmUbGDpHx0uRANrXXbElwJ9OPREYByn0iGBwJGXM02KsR8oqLKaJffRzqayg/QvIjknG71oEkOcV+VdJnCj3h/rtY4z2TFQUqpOEUNB66Pkj8jLpJOG8yKSB5au4nJwUbYTnduK1qBvO8xN2+RIfEjr5NDjWDzvfTWqT1dVneyi/6iYT59RiTEi5jYa+Myx+XV2/i9papA0DJwAucFQLmyG3ECNXgyIvIbktuiWKvK4oHpwnQhcMF+nOX1LxWS08aOuTIQNaHZUpauWkhafVhIggwM4ShKkBs8JXG6TKgFtW95PWuBIxG/328CR47IZZ+4j3GROJK3+K+RdOd1+wnz3TbV88/v9Mk5/8JAUKy4WfclXpoxoL7ryhjgmp5+f/lb7B8gLQKA9TjgPAAAAAElFTkSuQmCC",
+    "price": 75000,
+    "reqSTR": 180,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqPOP": 20,
+    "reqJob": 1,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incSTR": 3,
+    "incDEX": 1,
+    "incPDD": 55
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 6
+    },
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incPDD": {
+      "base": 55,
+      "min": 30,
+      "max": 80
+    }
+  }
+}

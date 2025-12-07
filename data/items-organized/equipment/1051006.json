@@ -1,0 +1,49 @@
+{
+  "id": 1051006,
+  "description": {
+    "id": 1051006,
+    "name": "Dark Avenger",
+    "description": "",
+    "chineseName": "黑飛影甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAdCAYAAACqhkzFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB3klEQVR4nK1VAZGDMBA8ZmoAC1igEngJWKASgoQiASQ0Eh4JHwtIAAl89uDyAVIaZn5nOmkusNnb3IUbbTGvY7Kb+7FT+IRz27b85/F4MJHMh2GgpmnmGFIhdGQCf55lGSmlokhBOI/jSNM0sZIiN5bg2z2AOH5AWZaktRbSoB2s0O7Mk6dKqW7wcr/ZFRv5o2SEed/3ZIxxypmw6zpW8SxBTh+B9NM05f9FUfAopDfxaNltcg/uIWkDUCXvQYynnBUmYIc/tR7opYwd80PK2GhPirjE1vVZTjmB2SAtCnsoJjso9FVYAYcNfIUOSKHWil6tHE6YEAKgxrdnJU/2nRJUhvQCapjUnx8U4mWo9Oe+TwEcitx1ylq0XLw0aBtSTAa/BHmeSwO87RinEH4I6X3I6adt6N7/nTbWdj4GcfAQKqAquVuNlSEIBNm7+jxVKF5JoTfdce2ywj3Y0wtwhGcKfIWrj2+vsA1hiFSutaspc+vN49NKqAm9/1UvcVvUmzgO3nr7uWyApd2W+oN162XKhzNNyisb/VHhJm2/mAG5DGJSD57yrkzYjqqqKAY3ugCpz3UM+hhNGFvc7nKITSmW8EwF30T/1nqhjc66xRW2/XrNgXX+oOPLFogH8Qs/q06uIiMftgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACKElEQVR4nK1WC5GDMBBdZmoAC1gACZyEWigSQAJIoBKKhCLhsIAEIoHLS7PcNiRp6d2bYUI+zXv7pSeKY7Vj4szl2luIEa1935uXqqoMAc/neaau69YjZCGijYQh51mWUV3Xh8h8ROuyLKSUMsrLfNIX37dNrOMBzuczDcPAZFG3ei3SSs3Y1ik1HS4dn/YhQI5kPYD5OI40TdPOUi/R9Xo1qtszSOkl4MY0Tc17WZZmdMm8RIjBQ53aLnDB7gNgBf8OIoWlUYsSqIH/m2GmWz3pMX86gIsgwCXDOq/Z/c2qUNYlCDLIylInw5TtDkjVWtiO+B2LNsAVzVDTreek8BNBGNRLN1vSeIxi4MzyqE+sq7a53IwS4VJYJecyDh4EizfYGWwxmqKkedBLtSFBPBh5nnNhv+wQQYvgbyYr5py++46K8Tf7sOdL48NEUjWsSApt02UiGASSUH0dJpLpygXcXfd7fyYKwcTsAwSJYoqlRTZOLz8VUSIfGX8+/st1pgWtS6slN4Se+dU81nWxPq0jEXXsPk9v4NF2HvWD0NiPnEkKpWqR3sPHFhmw+2SRAtxEj7jwraxz0tm49XK50BEcTm8Jri87RuP0CZFpCYGile3iafMUOLhEXJNTGLynxGgeJkqdhyKq7+gOgSSQIpgEqTmfxOWZGKNwBdg074TInQppkVRS6X8zPe2Bsm3xT8dB5Vyu3OckzJNkeC9cQ+xZd11F5tv7DzhCZtbM0svGAAAAAElFTkSuQmCC",
+    "price": 37000,
+    "reqSTR": 0,
+    "reqDEX": 70,
+    "reqINT": 0,
+    "reqLUK": 95,
+    "reqJob": 8,
+    "reqLevelEquip": 35,
+    "tuc": 10,
+    "incLUK": 4,
+    "incMMP": 5,
+    "incPDD": 40
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 4,
+      "min": 0,
+      "max": 11
+    },
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 40
+    },
+    "incPDD": {
+      "base": 40,
+      "min": 5,
+      "max": 75
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": 1082059,
+  "description": {
+    "id": 1082059,
+    "name": "Bronze Clench",
+    "description": "",
+    "chineseName": "青銅戰鬥手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADFElEQVR4nK2WjZGzIBCGyczXgC1wJXglaAlagpSgJWgJWsKXEkIJZwmhhFiCt+/iEszPTYzZGYMS5dl3WRb+qc/afPN8ePTSp6AMO/+clE4z7nCjVV/fuTixgn8COp/6lmApgUa+YFlVq3me1dAYZbphjsF7oQx0zvE1TdP1n6FjR6q258cYvAcagCvYYiNU038VhTsrCtVH4F1KWSENnmitiqri+cRcog9QOIPwstrjMXy3D0oDV23L95JA/j7lVsCwWO0uKAa3pECTUjiQZo/BUAuo2LvQua+rkKnSxkDpS5KE1cI56Xtb6W1oJzeqzhh+Fr2Y89jG5fkdKKtESAUIgxo4AWc45Et40T8RzPLF87s5e0NYcQGHVgBimL+u61RBLYBQiDCTC5uVBoUYFAqb/NtD1HoeJay8dBagh6qXoKGAByCVN7G675e12HjV0Rym9G5nKRrawwbLDv1ZkRhG9Vs1xn9krVVZ5he/FAExzKUpSw6nqJWkuVX5DDpfzvDaA9OQMD58DcErrj5+HgUC4JESCO9LSDXNIdpY5S2U1QFY5kkIEQYXT/l+cmoYBqWpTxa8lEOfndc51PoeGENZHewRkNN+8uGaaGAAoWY6dgp6JJw6CucCuwOulEpR+X+ikNDX+ZdPdcCTJRkmv864v+3hCL1X+mTxytTDcD6FUh6wAgyWkKjT2QMAp4iFuY2B+EZF6o4j3v0buIJeaJe3tPE2puO5qFsfTsAR2TJ3IRKICoBFlrKqV9Q9hAKI8vVzufC9Ka9wqAIMhqwGsCKgbN1bgAKdcaCyyyb7DF7VXqkAeZ5dODG8DFwplV1D4Fj8Asd9mZfEmFRdXfdMgGtygCrP6uD1ElRq5CO49NUo9A7nHq9Oc8ZScmmnthqgh9w0M9Je4LKLMJxCjN0BQCwZlEKsW5wIikIrt50ZwnugajJb04QCPYbRAHAMTBcg6nBLxf72xLAVymD8CBwmg/IZSKkA9IXfHzHpoBW+fQe6gsMQdrSnvmYwam6GpUILNzfD3ft7oHcO5KYL+6od7Oq/d+wXZXksknLa6LoAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADPUlEQVR4nK2WgXGrMAyG3bu3AG8EdwQ6AowAI+ARYAQYAUZ4GSEeoYxQRohH4OmXkGNS0muT6o4DjPGnX5Zl/zG/a+vN+8tRp9+CMuzj/WxsXnDDMnvz+laqEzv4b0DX89gTLCfQzBesaFqzrquZOmfcMK0p+FkoA5dl4SuEcP0yDexI04/8moKfgUbgDrbZDNX0raFwF1VlxgT8lFJWSINn1pqqaXg+MZdoAxTOILys9nSK/z0HpYGbvudnTSB5zvmuYFiq9ikoBvekwJJSOJAXx2CoBVTtUeg6tk3MVL2nQG3LsozVwjlte1jpbWjDMpvBOX5XvZjz1Obt/REoq0RIFQiDGjgBZzjkW3jRHgjm+eL5/XH2xrDiAg53Bahh/oZhMBXdAYRChJlc+LHSqBCDQmFXvgnE7OdRw8pLZwMK1HwLGgt4BFJ5U2vHcVuLnahO5jCnvoOnaFiBTZ4d+rIiMYzqt+mc/OS9N0Uhi1+LgBrm0tU1h1PVatLcqrwHXS8f8FqAeUwYCV9H8Iarj8yjQgA8UQKhv4bU0hzinqq8hbI6AOsyiyHC4OopP4fFTNNkLLXpgtdyKNl5nUNrPwNTKKuDHQE57YOEK9DAAEJNOA0GejScNgnnBvsE3CnVovLvTCGhv8tXSXXAsy0Zgqwzbu9HOEL9akkWUWYOw3kXSnnACjBYRqLOHwIAnCIW5zYF4h+TqDvN6Ps1cAe90C7vaePt3MBz0fYSTsAR2bpcYiQQFQCrImdV31F3CAUQ5ev9cuFnV1/hUAUYDFkNYENA3bp/AlToigOV3zbZe/CmFaUK5Hle4onh28CdUt01FI7Fr3A812VNjGDa5rpnAtySA1R5sNz+HowfDtoEqjXyCK5tLQr9gnOPjGM5Yym5bCx9+6p/BYbkitCX0nUr0l7huoswnEKM/gBiyaAUYt3iRFBV1qTl9o5SqRhyhagUoaFqcvGuiwV6jqMBsDAw34Cowz0V+5sTw77A3gltCoVhn8oIfgYcpoPyGciYCJTCL0dMOmihizsAhYNrB9UQwNtX9ZzC/o6H89gyGDW3wFKhhVu6KXX2VlW48/xJaTjowEuhdEPcV/3kd98esf8EyEP50AOBjQAAAABJRU5ErkJggg==",
+    "price": 120000,
+    "reqSTR": 210,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 60,
+    "tuc": 5,
+    "incSTR": 1,
+    "incPDD": 23
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 23,
+      "min": 0,
+      "max": 53
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": 1442026,
+  "description": {
+    "id": 1442026,
+    "name": "Red Surfboard",
+    "description": "",
+    "chineseName": "紅色衝浪板"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 95,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACmklEQVR4nL2WjZWCMAzH43u3QFfgRqgjwAh0BB2BjgAjyAgwgoxwHeE6gh2hl/QDiqd3imCe0MpHf/8kbegHvN9s0t+9U4AD28sFtDGgtYaiKOw7BIxgsgjXSrn/WwqYgRVCh2GAPM9nD20lwKYekxGcc+7aLMvgKCVd3mQOIPsygk1oyfMYAWqjrS3AxklG4HYQYLSB6nAeRVD+ZfB+TQGzGU7wpi3cDYKTkEPe3XxxDQGzfEc4y5iDpnDyXghB3d1aAsaQk6We34LTcW1LBcxCnsIp5NTGfgpPc/+KAPt9qiErD3fhZI/AlwhwcDdw3+K0Ll+CPyvA55vAgy+j1DbMr+kl8GcE2EtV+R56DRlHggKpGqh5BYbns5w/Y48IGOGmaXB6H1BABrIXDijJcxSSwslz84D3jwiY4CGkjMooA6gZd/CK1y4aQKmhSYkHw0P4NP0J/0+Ayzl5bZI1bMKJJl+JSjR6P5pfFCD8s//C/xIweU4hR8voNPRg+iF8YDyNJaKW2C0BI1xj2TTjyCw0DH8MReh4xYc+KHnG+3sC/Ji4Y4mFxnND0dHe+18OL4DfEuC8v4a78c1N7KK83xNg87oD+lYpzHvVSxduskz5YhNDfp3zpfBrAVCpHmioEttjPX2/6+Y4fyuJjuz7xfBUgP3G3Yrg5XjjLPagcA/nINVpcp8lb+92L8FTASDKClQ27Vhl8lAthb/WJbuaFeBRgOUnX0a7pnBVjIy8l/XJ99kUmQBeBR4FOM/Pcu8uDCHsDYad4ZIzPIn5Sl7/EsCVm0hQ1F+jkPy4dzNdhqKkrvZyqwqoe1/PCV50XyhowFRoqNo2gjeBRwG7Qil7xtD3uBK64tPdoLU9bAhOBUAUAVgB2+nepuBoP/BMwLtdCkpgAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACy0lEQVR4nL2Xi7WiMBCGx3O2gWwJbAmxBCiBlKAlkBKgBCkBSpASbkq4KcGUwM7kAUERBR9zjIm8vn9mkiH+ge9bH4133xRgwf3lAtoY0FpDlmX9NwQMYLIA10rZ358UMAErhHZdB2maTi76lIA+9piM4Jxz2ydJAkcp6fBH5gCyLwPY+J48DxGgPti7BfRhkhG47gQYbaA4nAcRlH/pvX+ngMkMJ3hVZ/YEwUnIIW1mb3yHgEm+A5wlzEJjOHkvhKDh7l0ChpCTxZ7Pwald21YBk5DHcAo59WEcw+PcvyKg/z2VkOSHu3CyZ+BbBFi4fXBb47TOX4KvFeDyTeDOlVHqK+bW9Bb4GgH9pSjcCL2GhCNBgVQVlLwAw9NJztfYMwIGuKkqnN4HFJCAbIUFSvIchcRw8tw84f0zAka4DymjMsoASsYtvOCljQZQamhSYmPYhEvTIvyRAJtz8tpEa9j4L5p8OSrR6P1gblGAcNc+hC8JGD2nkKMl9NW1YNrOv2AcjUWitticgAGusWya4cnMdww/DEXocMSF3itZ4/09Ae6ZuGMJhcZxfdHRzvsbhzfA5wRY76/h9vlmFrsp7/cE9GnZAL2rFOa9aKUNN1miXLEJIb/O+Vb4tQAoVAv0qBz7Yzm+v8vqOL0rio5s283wWED/i7sVwfPhxFnsQeEezkKK0+g+i+7e7V6CxwJA5AWoZNyxyuiiUgp3rIl2NW+ABwE9P7ky2lSZrWJk5L0sT27Mxsh4MNlfmMbjni1WCBsB8vws9/ZA58NeYdgZLjnDI4aDZ/4XXwE3UbsVwJWdSJCVP4OQ9Li3l0tflJTby0kPnvP8nqcBrH2bXGcFlK2r5wTPmh8U1GEqNBR1HcBk+LZxFXmFPSzQJGCXKdWfMfQtroQm+2dP0Nr2fx8kPDazML5uNwIgiACsgPV4jpTMhXp4/yyIWBI1sf86vdjcFGIgSAAAAABJRU5ErkJggg==",
+    "price": 1,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 95,
+    "tuc": 7,
+    "incPAD": 99,
+    "incSpeed": 5,
+    "attack": 2,
+    "attackSpeed": 7
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Pole Arm"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 99,
+      "min": 94,
+      "max": 104
+    },
+    "incSpeed": {
+      "base": 5,
+      "min": 0,
+      "max": 10
+    }
+  }
+}

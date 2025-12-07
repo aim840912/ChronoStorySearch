@@ -1,0 +1,49 @@
+{
+  "id": 1060093,
+  "description": {
+    "id": 1060093,
+    "name": "Brown Studded Pants",
+    "description": "",
+    "chineseName": "褐玄武之褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAZCAYAAADaILXQAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACYUlEQVR4nK1VC5HjMAxVZpaAF0IOQgohhZBCaCGkENYQaghrCBsIZwqGsIKQlfxXmrYzd+vO1D/56elZct5AthX+v3V5sAWHeQBQ/Ot5psLaxXr4/nsL4/fDBW4Tb2KYo+dRHGsnse7Af7PdgbP3URETD4XdSAGcjhdY4hTs4v8NfFIRkgXp+7re02TwEdT5uJ/tuPf4HDxc5jj2sBAzFeRWME0jOOdIW4TzPIPRGgZyihhRVUKf6R74bhJOd8f8TIcc0fq4zdCPE/jFgr7qyJxQFmuDA97jxvtI0bBzlooDbQW7k4WZ8IHL4VDmADEj0CEsYMFrLc5wFGzWsBfgQZKB4h2nKbBlpgEQG6fMjBwze2tMA45BzuaigzSFeZbE+wgsIsn6pjWrDcxfX0IaY2ywozKBnO5vmXW+9TDKE6zTbdOnIxGpKcI2fNEeC9BamGNiKYBU1ROTtrlwY6qqIEkB4LXKMmp+7iVgsy+cNcE0e6qUfz6XpdnNFtgpCEjMJXIyfmBfwBXEByszwSbU3FxixbsKlYxyh1QA55fQONgIjmJUpMWaln25kyoNzz+pxv7Y3VdxP0Yblzvq17k4yp72zwTw60Leztxjkka62p7F/E/SKIVCesY5mgoe2FwtlNTDJ5fUemgrOPcnU8cyzwMZqXXbb9ln02KXOKUKLeXfUWWtMVckE+7SRyJ/GzvjYR33yhakhIU5A3wMih6u+n4rSof0ynUbjI7s11f2IlvmG9f3QF8cugC+gwnJGB62V/YC3Gj6lA2OmPSRiefYH38vX9kL8BBS89iDe54yr+x/AHHYTq+qInmjAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACsUlEQVR4nL1Wi23jMAylgSygG8E3gjOCM4IzQjKCM0I1QjTCaYR6hGoFjXAcIUfqZ8mW1QAFTkWrH8X3HknJPcG+veDnrdsu1IBgHgAE//Q8E27tri38/Xq68a/zHZ4Tb6Kbo+WRH0tTRz7Bf2pVIGY1CmJoeeaZjiTsernD4qegF/tzoEl49xy0vl/Xe5oM1gMY6/ejHfcW3wdyhTCOPSzEWLj0CJimEYwxlAuE2zyDkhIGIoDoEURAmilvnMvgp2sBwY0cGKL78ZyhHyewiwb5kF4ReVy0dmC8x433kVQyEQ4nB6AW1GromCEfvp/PaQ7gKwsNwgIarJTFGVbHZpmqQyAXtoFiMk6TU8EKnHPMCDBjIsGqtFIZELqQZ0VShK9QFMNmrQcpFMZ8hDUtFcyfn24cw6eUdnZ0DWF7nSKQUxOrx43iBNfptsnrhUitpcY2XCQWk6OkqlCEgX3hVKzxd+fpT3wwfPkLF7bkgNdWxjtFLmy589w2B85EZnsiPUHx3DZ8h1UHB5cPdyjBuHFZd0AC/GMaGWKUkDUT2PKuQFGqbxBMQPxiKwObBGExSqnAtdT7lMM1fDz/Q/f5tz5QVAPIm/bLHfWvOYFG1HbsEtBjIRY37jGEr4Td+sH4l8InBBapYj8XVdpHIMfywVIDOXwjwRDs8pByu6o9sf09ciTL3OR9zb6wC/xCaVefoI5u9MvXXMmQu/DBiwc7ZeE11p4LqKerUMTOPgZBj+r6/RFUVuE13v7D0ZH96137XdXNT35jBvqSUsI4ZxPSQThs79rvgJSkz/VgiGHvGVqOj2NYDVTDvg3kZOcfLpMCPtSAvrGPTyNGoFgD52xcvpv+4FaVhONLEIGYhT1lTvuszwEOaqvZduC5oiOj1rXFxrj4PcEqLwerqTh6m1vE0vgftAVm9B9C2lUAAAAASUVORK5CYII=",
+    "price": 80000,
+    "reqSTR": 0,
+    "reqDEX": 110,
+    "reqINT": 0,
+    "reqLUK": 200,
+    "reqJob": 8,
+    "reqLevelEquip": 70,
+    "tuc": 7,
+    "incDEX": 2,
+    "incPDD": 45,
+    "incEVA": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incEVA": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incPDD": {
+      "base": 45,
+      "min": 10,
+      "max": 80
+    }
+  }
+}

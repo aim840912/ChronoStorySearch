@@ -1,0 +1,43 @@
+{
+  "id": 1082095,
+  "description": {
+    "id": 1082095,
+    "name": "Bronze Rover",
+    "description": "",
+    "chineseName": "青銅名譽手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAYAAABvCO8sAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACsklEQVR4nLWVgZHbIBBF8UwaoAVaICXQglKCUoKuBLkEqwRTwlHC0QIlRCUo+xcWYyL5fImzM5oVIHj83QV9U6+3rWuf2sargBUyGK2MMSqmpCz5c4gydnoFkBebnFXrutZOvBut2WMMVsCnvwVWUIyJO1JalbWG24ZUBvKO2iFE5QoU9lVgBYkB0nsoc8VL22ql4qq2rwA3CZ3mcCXyhpSlnLMYq7fWKk/KLCn1pHQgqDVZ/bNAhmFBMa1tUWSLkpuHuaLYmZxTnzjHT+VwkxC2CsSHEGo/lEMFwig5jATKWX6uSqsyPJoeZ2TnxTtXwyo5axUirCndKvgRkGFYDItCASAxeGXdoIL3dwrxHRQGKKe25C40sEfAGkZRwDliJdmj3SoDLCvKygapVhTOMwplMe+DGgZH3t9BRJF4yZ0ogwestz3gNg9ZHR9inB8Km26UtIqqsqIIMAVPE93gOH8+hUPg9uvjXaUYODfTNLICfggugdHlTOVqpNyWc+cKDKDbEUqHCrf3y1xgUY3TTIWxMAzv6M9wKnMccp3PlzW3m6WF1W/TPvBOWa7ChcHz5VJhktv5elXL+cyVK4bzNjYwN4xlnlZLTH8AebJfPAMENo4ZLNZuQC5kgWLJNyqwmfw4TfyNzOkVVnXtAjBjHabwJA4tbQDKXDmfsKbk+SYh6IZxKisuNrzvKlyKOp60LHeh5DCWMVd2jV8QFKnuj66acShFhK7ToH6c/e1/2IatVRrLLdKPYQNvPu3C0AeVH5ccVslpq/AE+khVhg9apWuKNW+S1yZEe7Db5rrqbIE8mRbZxnZCDHcfouqMCer7z/OnMBHR97XAw11BzVw2cLTrI+heZwusoe2tV/sv1l9tHFrHN8yq/oftXd59/E+Utw2l/YpNHP2e+vi3m/isYB7ab39CKHXyk1xNAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC70lEQVR4nK2VgXHkIAxF2Zk04Ba4ErgSaMEpwSnBKcFbwrqEUEIoIZRwlHAuwdEXiMXE3nNuohmPDBgeXxL4Sf28rU37Ujd+Clggve6U1lqFGJUhf/VBxi4/AeTFRmvUsiylE++669hjDJbBl/8FFlAIkTtiXJQxmtuaVHryltreB2UzFPZdYAGJAdJ6KLPZS9t0SoVFrd8BrhK6jsMVyWtSFlPOQijeGKMcKTOk1JHSnqBGJ/VngQzDgmJdZ7Iik5XcPcxmxVannLrIOT6Vw1VCWCsQ770v/VAOFQij5DAQKGX5XJUWZXg6eqyWnWdvbQmr5KxWiLDGeK/gR0CGYTEsCgWABO+Usb3yzm0U4jso9FBObcmdr2CPgCWMooBzxEqSR7tWBlhSlJT1Uq0onDMKZTHnvOp7S95tIKJIvOROlMED1toecJ36pI4PMc4Pha2rlNSKirKsCDAFTxNtbzl/LvpD4Pr3413F4Dk34ziwAn4ILoHp8plK1Ui5zefOZhhA9yMUDxWu77cpw4IaxokKY2YY3tGf4FTmOORdOl9G32+WGla+jfvAjbJUhTODp9utwCS309ubmq9XrlwxnLehgtl+yPM6NYf4BciT3ewYILBhSGCxegNyIQsUS75SgU3kh3Hkb2ROq7CoqxeAaWMxhSdxaGkDUGbz+YRVJc83CUFXjFNZcbHhfVfhnNXxpHnehJLDmMds3jV+QVCkmj+6qsahFBF6G3v1fHX3/2EdtlppyLdIO4YNvLq4C0MfVH7cUlglp7XCC+gDVRk+qJUuMZS8SV6rEO3B7ptrqrMG8mRaZB3qCcFvPkTVae3V75frP2Eiou2rgYe7gpopb+Bo10fQvc4aWELbWquW7OsleWyb30V7tXFoLd8wi3pgRp2zpfL8tEDs/Bcp/VP1vVDebijtahP2weJ7/XiQj1gDu/wgps/Zq+yvtIkxt2d1PqRfNrGn8Ojj15MLt++b56kZjA10T0mn9sO3PGiX90+4K0J9FBufrAAAAABJRU5ErkJggg==",
+    "price": 150000,
+    "reqSTR": 0,
+    "reqDEX": 110,
+    "reqINT": 0,
+    "reqLUK": 200,
+    "reqJob": 8,
+    "reqLevelEquip": 70,
+    "tuc": 5,
+    "incLUK": 2,
+    "incPDD": 26
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incPDD": {
+      "base": 26,
+      "min": 0,
+      "max": 61
+    }
+  }
+}

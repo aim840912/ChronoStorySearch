@@ -1,0 +1,55 @@
+{
+  "id": 1040122,
+  "description": {
+    "id": 1040122,
+    "name": "Black Neos",
+    "description": "",
+    "chineseName": "黑色涅奧斯盔甲 "
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAYCAYAAADtaU2/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADeElEQVR4nK1Wjc2jMAx1pS7AN0I6AoxQRqAj0BHKCDACjFBGgBHKCM0IlxE4PweHQNuv0uksoVCS+Pnn2e6RvMy0yoH+v7zoP0Y/5vP5TOM4zvGBD5c/yds7i97N/jE+dTMjuTSV92maNkApf0+SBN83mo0xsmIvMpoU0DlHbTHSadxatAE2jJnYJADFsgdVQBUA4A5W7GHFU6cT2a2tL8CH05Xm+eHo0piXgwDeG6OA+3esj5YYcCLWGfR/9Bibh2xicKK8SgRsDw5vrLUBQM/EBjzuhn4yxBZ77gX0HbDIT25D2BTsHTjeNaQxMEBxH5zJO3ore+D5ySHKKqKhZkWJofzqBCQOs4Ij5xJW9pCcldBeusjg18x89tgIgJVQD0NJQ9uJ0qo3G2/xDC2H0ty4BCoBzfjOnwfCbOUcdEHdUiEfczzPz4KaPqWydNR1HdkuJ1MObEdHNZdEb28CCI/uNawsZQ8C5sKww6mXMsK5Ziw4GhN/e6X11mNW5NwYyJMzu5+p9waKp2RVYMeePbJh79In9KiteB2zG9FCmvZeh5YJbxGyuvCM1lyq4jG5UV1aUSRGVWdqaQygnt0rwcS4xYF76XUw0QJ48BghUhGCTV4ZyIJ1GM6LNh/aobYCDuXGJCHcECHbkgbkG2UVsz4G1hDMzCcpejgAZsf13DRgsSfX/bayGy0RBqr4GvY98l44auyXXg1BCYAcKJXsCusTsR6gymiseeXEa6QCXGjPkwBwvkJfh5cNO/ytV0sN967mSz5maHtVZ+Q3wIqU0wHHOM8XC3AQSD7QdQQ4ez756KiR0rvflNVuSHDx92sXsjIU/IQpCihcy+d+87UO4/LKbJiMR5uOhDiB8e9zzP05lbqzzBCEGblB3h7t6IcGA6LGkeNpcr6zka8AhBLEgtfP1jJHphBqrOh+OJ9d17JaPU5r9nYMlku7W1iKZgFQFSjLrphALnQsJWA8ApUPMk7Za7R8Ha1H0hpmj+BJTHspp8YzF3o1hLp3uuDd7+0nWUjXch4Np+QjZenrWTzWGhYDuOZQeygpzGYQSC2PG0h23YJh4Evol2mE3ItFqGduTIdsY5d4HGqLDdj8KfOzORUFFRRqb17AddhD9gMfd32u+s33GDiW/cA+qAJE43LpljAmkl/e+/Uu/SJH+i7eg200NHT//Ff4L5e2N4bBlbLzAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADxklEQVR4nK1Wi5GjMAxVZtKAtwRvCVBCKIGUQEoIJZASoIRQApQQSohLOJfA6cnYmN9l7+Y04zHxR0+fJzlncjLSLCf6/7LRf45+jJfLhfq+H+MDB5ePZPfOpHexf45P3XVPNknkexiGBVDC60oprC80a61lxl5kNHlAay3VeU/f/dKiBbBmTGVUAIplDeoBvQAAdzBjDzNGlQxklrZugE/fNxrHl6XrQ28OAnhtjAdcf2N+1cSAA7HOoP/QY2ye0oHBibJSCdgaHN4YYwKAPxMb8Hpq+koRW+zZDegesMhXZkLYPNgeOL59SGNggOI+OJM1tCtr4PHNIUpLoq5iRUpTdrMCEofZgyPnElb2kKyR0F6byOBtZo491gJgJNRdV1BXN6K0bPXCW4yu5lDqO5dAKaAp3/n1QpiNnIMuqJsq5DDH4/jO6dEmVBSWmqYh02Ski47taKjikmjNXQDh0bOClYXsQcBcGHb6bqWMcO7R5xyNgde2tF56zIqs7QN5Mmb3O3HeQPGgZgWmb9kjE/auraJXZcTrmN2IFtK09jq0THiLkFW5Y7TPpVfcqztVhRFFYlR5oZr6AOrYPRNMjJsceBZOBxMtgAePESIvQrDBKQNZMHfdZdLmQttVRsChXGsVwg0Rsk1pQL5RVjHrY2AfgpH5JEUPB8DsuJ4fD7DYket5n9mNlggDvbgadj3ymVt6mA+9GoISADlQKukN1iuxHqCe0Ziz0orXSAW4UF8GAeB8hb4OLx/s8KdeLTXc2oovuZih7ZWNlt8AyxNOBxzjPF8NwEEgWaBbD3D2fHDR8UZK794pq9UjwcXfzl3IyKPgXpg8h8K5fJ53V+swLiv1gskYvulIiBWM388x9+dE6s4wQxBm5AZ5e9W9ezQYEDWOHA+DdZ2NXAUglCAWvH7XhjkyhFBjRvfD+fQ2l9XscVKxt32wXNrdxFI0C4B6gbL0hhfIho7lCRg/gZ4P8pyy12j5/mk9k69h9giexLSXcno45kKvD6Hf+77i2+2tX7KQruk8Gk7BR4rC1bN47GtYDOCaQ+2hpPA2g0De8riBpLclGB58Cf30GiH3YhHqmRvTKV3YJR6H2mIDFn/K3NuciIISCn1vnsD9Yw9ZP/i463LVLtZj4FjWD/bJK0A0rtdmCqOS/PLeH+/SH+RMn8V5sIyGD90//xX+CXBsgFqtKfosdm/xCFit5qO1n4LaaOwCq4NxZMQeyN46hpmGXQN7EB3NMcjfePrJmF2Pjy4dKlntrb/XYwPsw/EppNu/Gp8N3Zz/DUmAUmxVA0+EAAAAAElFTkSuQmCC",
+    "price": 200000,
+    "reqSTR": 330,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 100,
+    "tuc": 7,
+    "incSTR": 6,
+    "incDEX": 2,
+    "incPDD": 105,
+    "incACC": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 6,
+      "min": 1,
+      "max": 11
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incACC": {
+      "base": 2,
+      "min": 0,
+      "max": 12
+    },
+    "incPDD": {
+      "base": 105,
+      "min": 55,
+      "max": 155
+    }
+  }
+}

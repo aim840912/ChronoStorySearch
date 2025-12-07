@@ -1,0 +1,50 @@
+{
+  "id": 1060068,
+  "description": {
+    "id": 1060068,
+    "name": "Dark Piette Pants ",
+    "description": "",
+    "chineseName": "黑貴族褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAeCAYAAADD0FVVAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB8klEQVR4nJVWjZWDIAyO73UBVuBGsCN4I7iCjmBHwBHOFTpCO8IxwrGCI3AEjWL40ea9toAfXz5iSHqDa2aDcXUGTpHaaMH+Apg7GAPw9R0/5444qVWtALFOZvcZ1Az9/Q5CLKuqm8FoACkFzA4wu69Je0dVjjQyVEeE+CMEnFpE+jTyMJ/6GX4GA1ovhONzfa4JgV5MltS2bbtN8FiLOgH9uINEIJUwUkp3IrOF4KA03MDHRMAJU0aktuu6LAhJUwpzak9fFG4S7O1w5XxeJC0dkYhEIh2QNHl0IgxfGCcNFeKYQnBJqTFLytR1nVSbUpolO1vjaoukRBKCSe0Vu9EGjEeOMCQOcSXS6v1+26ZpKNARodb+Th5w5Jw7BZ6nKcLUPAwFzxJSuqnAAaqg4AebqaxVTrWlLOAOIHH3ccEiKSU1hYNbmPjogMLDlW5G8VqBScvFPkuKRuoo8OxxNU2Tv4U54quN7yM7FGlMF/JeKibcikXaZUBqz6GprXNwIThVav9ezmOzt2Lt+IV7Z999vMlj5dIUPXbtX67tHIv0UyuofVN+LfknXBgMzseIdMGuuSocRhow84719VQpdbh6n8QTjWrtMAwwjuNeT3M9KGeU/LTvUjtBkPOKwyhPH4+HPx0v2iGpB2W4c3/Ginv+AVjkSMM1Yz21AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACMElEQVR4nJ1WgXGDMAxU7rqAVyAjkBHICFkBRiAjwAhhhYyQjFCPUK/gEVwJrNQRMsHVXVPbvPV6ISN/QZmFZHwo2bhFFFYL4RvAncA5gON5/XyLPEcUhosBEyce//rBQ3c6gTHL6tB6cBagqgx4BHj8mexMrpLtTh2pYBL6ZwwUWZbo7qq3+dR5uPUOrF1Ixnt8bhlBzK6IKFwul9eEUjK7Qe/d+AcyiSTGVFWFyp2aPlVR6kSO2akk+WSSKLRtmwUTkaYkHedU7S4GcmREBUiFmuIioq30sHPzoQxTIjVtTJIWhSRKldBYS1+RIueW8q3rekX2qSg2ibTN2ppUVUzEjlMHrKrU3ojICeU3R5LDlRIdns9naJqGX+aKxFq7wnFAMhDYc440Em2eplFW55aiV7Q0oGj5BScOOcoDqgtcfZIUdn7rCBSIiA8ip1JaeliJlFO7R9HLOP9xcxajpbmIiIxVaC+X5tM0zV+TPWSll5N/m9r4qHQ5yr39hqy48WHlacvSwVydmL5dQawa388DI2v+rlUWOQ3Wxblbb56x1XJxmbHxPoEt/3Pju9sB6vmC9VjOh8EUOprPFwazxsazZBBTOXD+hc0qCsMwvH1WlPdTw4Zxr+r7HsZxJFVHWK6FnomMBDOZsEYu8IHlfWIPBUZnw31Fkmwfpo0YHQ0ngZuu12tLWZCNULNU0Rk3PjK4a2a9wz23zLMTxLRBTB0NXCQ7JsTSTMRKO4q518a/u0tWuJufNeEAAAAASUVORK5CYII=",
+    "price": 41000,
+    "reqSTR": 0,
+    "reqDEX": 130,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqPOP": 20,
+    "reqJob": 4,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incDEX": 1,
+    "incMMP": 10,
+    "incPDD": 27
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 30
+    },
+    "incPDD": {
+      "base": 27,
+      "min": 7,
+      "max": 47
+    }
+  }
+}

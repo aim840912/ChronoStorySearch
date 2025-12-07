@@ -1,0 +1,43 @@
+{
+  "id": 1082050,
+  "description": {
+    "id": 1082050,
+    "name": "Black Marker",
+    "description": "",
+    "chineseName": "黑擊中手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACUElEQVR4nJ2WgZGzIBCFceYasAWuBC3BKyEpIVfCWUJSQiwhlhBLkBJ+WqAEft7CIhI1xp1xBCR8+2DZzZc4bnbjW5EPHAXZx2MUWmshpXRPGT9obcT5XLMTEXhYEUN4cRiAeK7XB/Xb9mwZdgRksVCuZA6U5MjldBVd3xLskCLn6aw/jv8CoIww6ldSXISHfQqydgytirpwVhTFd5zAZwfTSkfwJyCC1HU65M86wjESJmDbUnUfKcIahs5GirL052OMcePD5I2DqtbN7duZR3tBlhbH4zoMYTMh+rwzWtybCcCNPSArMxURYOZRxtB60DPIHtAq5FN7q6iqqsVxVrN3fAtkoQI/BIy3ZsvWIFsgymW4gD8/IVwvF6GUisA06lKr5IXeg7rF9LMGCinG3/LncyRY13UEg8WDDxD00b7fn9Tvbv1bRQRpmkoMg6I3bAkGY4WAYI6HGp8D1TroBcI3G4sxLIfAWAkbcpzIRDHIImVg8fbXef13ihPScoBzYUC6fb4tY5lAe2nrCILFGcLns1zYdDwbvPEgm/sa9Fo6ZopcGo97m0NSKwEJWYAhIkQWihwilS2tRQyiBsLxenrEiUOvnLrJw9/alwIzDMKE+yWyNMNbuHTnZmfkc5ah8OQtTG2EfwqJ0+RBRVCowhaiDq2BokdeyQQB+HauPSQUugB5+afDsLSfgwrsZ6P/RHOachvCfPIuQGZlZtGWHJgpKnBOUl49pNcUJDBCK//7UOMWF9uyPDOQsuSy0YJuq+wOJR+B4uL5mFNiN76/tf+HHXZ6hSjw+wAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACdUlEQVR4nKWWjZGzIBCGycw1kK8ErgQtISkhluCVcJaQlBBL0BK0BCnhaIES+HgXFpFE87czjIDEZ19YdvMlPjO78W6XT3wCs103Ca21kFK6to8vtDaiqkp2JEI/UsYgBsAARTufOxo3TWUZ+C7M4mO5oiVUkjP16SzaviHg28qcx4vxNP0FyD4CaVxIUQsPfAdm7RR6BQ0Fdmm3+44L+CxhWukIfxVGoLJMp/z5RwcwExZgC1OVLyvDdwydlRT7vT8vY4ybH2ePHFg1bm3fLLx6BWYJgOYGDGIzISq9Q1pcDzOEO8/CrMzURIhZRh+Dy1EvQM/CVkGv2lPKiqK4O8+qnp1/BLNQgx8DyNu0ZWugRzDKfbikx2MI5boWSqkITaMxtULW9BzVJaaqLVhIRz4bDMNEwLZtCQiLwRBAGKN/vQ40bi/9U8oIdDgUYhwVPWH3gDBWChDWeLDxOVNtw25AnAHwQQbmIBgrYkNOFJm4FGaRXgBofpz3v6f4Ii0lOCeGpFvp+zKWGPRzYxiBAGAQn9f94qjjWeGJhirga9ht2blR5kpA3OsclNoeoJAtGCRCxKFQIoLZ0lqWwmiAUD2furh47JVTOXv6U/oyYsZRmHD/nP2DD6lqqLt3J2/OzOc4Q6HL25naBD8Vkq3hYEvTy9GpG7CdqGNrsIVnXtEMAvxSlR4UimUAXTIYrHHAczIuw/fNV+igHd3+Dgf9Kw6n+fe4ArOXATSXqbXMjBUmtFVllTu3Tkrv2NhrChzB7iufeUKd5A+y5f28EQwdnQC/HeAvuZB0i922TWpReAWX5jzzrjkQleWSb/7NYs4pshvvH9p/YuiJrDWY6UQAAAAASUVORK5CYII=",
+    "price": 30000,
+    "reqSTR": 0,
+    "reqDEX": 95,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 30,
+    "tuc": 5,
+    "incDEX": 2,
+    "incPDD": 12
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 12,
+      "min": 0,
+      "max": 27
+    }
+  }
+}

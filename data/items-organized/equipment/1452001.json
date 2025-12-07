@@ -1,0 +1,45 @@
+{
+  "id": 1452001,
+  "description": {
+    "id": 1452001,
+    "name": "Hunter's Bow",
+    "description": "",
+    "chineseName": "打獵弓"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 20,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABgElEQVR4nL3W8XGDIBQG8M+7LmBHcAVXSEYwI9QRdIQ4go5QR4grsAIjlBGI0ANfCFRR7PdHTt8ZfjzllA/8b6Q5OApLTy0LXfsogUkAHd8Pa1D2zUtxGjpcmZ0MnYBGafbA0oAKcmMAMgFbM92qScXCGjWgGsiXS75g9DqDqp/ojkOoGjQ3J8VrncTe/hhY0ltmMiwDZ2Kp0UWnMAln0UV1zKsGZTm3U9cWFJ5V7NTe0Hg4v6AExyDyeXCRrf/Dj8bAsukf4ELg1jEIIbAhQXQN/n1OeY6v+zeqckbbCXwa8NeAW9AQrEG9kJoeIy/AGcdtZMlQHyx/7pU+YOMIxpjutJ54UtSFNapAEzEOuC4vp2SoC9swz5smJUrht24jEo1S2MZ0227rdhfqhSOyGw3CG7o9hAbhlRxGKZx9tuPbLuEslMI25fxRvRf6drtIMtSFM7VdCXSdFHXhUJKjQZis6lNQF7b7XnN+FkphF8WZqIFf0IgPw2FYbb5pTkdVns8WrOPqXyq+AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABwElEQVR4nL3WgZHCIBAF0M2MDWAJtoAlaAlawllCLEFLMCVcSjAt0AIlHCVwgC7ZEEhC5O7PoAkqj41Mwgb+NxoPPoV1pK9KfffJAToFcJfrYQfqRz3o7Jo7HIWfDJ2AQ2nWwBpBC4VBgEzA92G1dlK5sEMRtAPFcmA9Rr+HqH3JrjiF2kEZnuyG/ST+8ufAml4yTNMPXKm+jy46i2kIFl1WxfJUA+emnMvFgyqyioO+EZoPswNwkNAoZgZX1fwv4mgOrOvHE6RScL4LUErBgiTROfj1PzEGX7dvOHGDXjuQXQNTAy5BU7AD3UKqH9DKHUgh4dyKYmgM1j+3kzsQbQtCCFfppZNF0RB2qAUxqm3g2N+ciqEh7CMid5qSKIVH1WYkG6WwD1Z7XVbtKjQKZ2Q1moQXVPsRmoRn8jFK4Wp7bUe7hL9CKezDzUP1tnOXO0SKoSFc2e1KouqiaAinUhxNwmRVx1AG+Rk9Rwf3atz34rlpWxjsoDyagyvyjq2/ZQaozd40/kZiYAxP7RAQlO+mNiH6fjAc4VUpVrum0snJuIrNaqbZEyD80dSeR00ch83BscUzd0lZYhJTEx189gvt+8ZfGW6PbgAAAABJRU5ErkJggg==",
+    "price": 5000,
+    "reqSTR": 25,
+    "reqDEX": 65,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 20,
+    "tuc": 7,
+    "incDEX": 1,
+    "incPAD": 35,
+    "attack": 3,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Bow"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 3
+    },
+    "incPAD": {
+      "base": 35,
+      "min": 34,
+      "max": 36
+    }
+  }
+}

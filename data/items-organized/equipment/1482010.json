@@ -1,0 +1,39 @@
+{
+  "id": 1482010,
+  "description": {
+    "id": 1482010,
+    "name": "Steelno",
+    "description": "",
+    "chineseName": "紗羅毀滅拳套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACbElEQVR4nLWWjXWjMBCExXvXAFcCV4JdAi2QEkgJuARTwlHCUYIpwZQQSohK0M3IrFjET0jibMwDZKFPszus88v8XLjxnMjAs2Dxwu5eFObctrNJz4C5t+vV/LlcZvdd0ywmfhfm3u93Y7tuNthDUWftU2EBFKuwK6CvwlgfXxsBxSqGJ8GcvrF9H0BFmprWWv99jTHeVzjqx1jyWZhP2+/zOQwMw7CY9DfLzCvGM1xnBD7gHngUFhvBK3iBsn+nk2kVlCCqImiA/bmhEs81AB5WJvUZ0+UhhGkzVALBGKGmrk2Je4lP1UwXnqBiXFhSxujVnAwpbSbVh9LoU0YzSBRqt2EpQIhJy3JKHWsHoNT2I5hjwU9IWY2Hqzw3Lc58NFZTi6IodTr2YMHmddQhcq0MJrCTCfxYM6UygaqwzhrMf8lGmkJRCjU5FmIaY6v7GsI0VCnLq7QlJgoN8xA2UQIkrALReeI2D8PRzrtFYqIXX40HmBMI1XBxeadiRRrEKCfH+QUj9aF7zJS94ifiitRlVTWpUop0LPvGasxAAnO32w0mqs2FP3Y4rlIvHKxHT+hGc+VGRnV68WRtrlfG3dPeBVJ5gUKBlkwpFotTx0jxx0+keqFmARMgFWhooyyfKrvz2tfJPmqmvtsEzWB7UAYNw0UFRIszeF1h7pEIaVyYQEF5PeDcsWXR/gAJjFE/WtmuqhlMLGt3jMCQl/Y01jPdaE1bsKRtW6ehsVIZE1DBFsXGu7GxXWVmTAHsv4D2Y7eX1MlGBNQfTKGGSfiHRCnfvZxdZTRGJ13lC6A12AzKAMDF44As/rU+Ev8BTiHEsnLJT5sAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAfCAYAAAAWRbZDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACq0lEQVR4nLWWgXmbMBCFxfdlAWUEOoI9gjsCGYGMgEewRggjVCOYEcwIZYRoBHpP1omTQNRpnYv1AQL06909n/Oivi/mcKx44lmwfOH51jTqaG3y0DNg8+/LRf04n5Proe9XD/4vbP683ZQbhmRyJEWDc0+FRVCuwm2A/hWG+vjaMChXMT0JNssLN44R1GitrHP+vqE5XHc0zH2u+irMp+31eIwT0zStHvqoa/VO8zWd1wDe4R74KCw3glfwRsp+HQ7KCihAUAXQRPbHhlp6ryfgw8q4PiFdHgKYNEPHEJoDVBmjWrrm+FLNZOEBasLCnDLEKJ6pKaX9ovqhNPqUwQwcjdhtXIogwOi2XVKH2hGQa/s32IyCHyhlhl7uTidl6YhXczWGFWWpk7EHizY3WYc4SWVkAreYwM/1SyorUhXX2YL5m2ikmhRpUnOihZDG3Oq+hmQaqOTlRdoqlYWEeQiaKAAcToDgPHabh9GwabeoVPbFF/MRNjMEarA4f6dyRRKEaBfH+QUz9bF7JMre6SfiQqmru25RJRTJWPeNzUhADJuv1yuZyKgzfuxoXLheNFCPEdBCc8VGgjq5eLX1rFeG3cPeDaXyTAoZ2iKltFieOoSmP3wy1Ss1KxgDoUBCe2F5LeyOc18nd6+ZuFcEJbA9KAKGwaIMgsUROO/o2UcipnFlAgHF+UTHAS0L9icQwxDm3sp2VSUwtqzbMQKCv7SHUE9daE0lWGWtnSU0V8pzDGrQotB4CxvbVaZCCsj+K+gYuj2njjfCoHD/VXlvpskowTjwErnefga4OqGrBGMM3FVS0E8auUOcOPKIMJ2NN94pAT7EIiZAOnFdsiJDpjDciwDU4sgbQMh/CvO5kjs2iymVlR7cc4HbOc+Hh7FUCdzasS6A9zaX3PsD6jbgiyGKjTEAAAAASUVORK5CYII=",
+    "price": 350000,
+    "reqSTR": 210,
+    "reqDEX": 80,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 80,
+    "tuc": 7,
+    "incPAD": 66,
+    "attack": 8,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Knuckle"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 66,
+      "min": 62,
+      "max": 70
+    }
+  }
+}

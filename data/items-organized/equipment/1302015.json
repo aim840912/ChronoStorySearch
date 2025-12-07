@@ -1,0 +1,45 @@
+{
+  "id": 1302015,
+  "description": {
+    "id": 1302015,
+    "name": "Hero's Gladius",
+    "description": "",
+    "chineseName": "英雄戰劍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 45,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABNElEQVR4nL3W4VmDMBAG4MvzuEBWiCOQEeoIsoodQVdwBB3BjCArZAQZId4dEiOEFmzuvh88pfx4+S4l5Q70korPRgtOGIDRQAwA9z0kDTilr/WXOo1tgvhuwFodmNf04xl4xIQOA8DDma+JrfE0Xjuta3jNIKN0kGtcjHduWV5uBZePymq8tbSAp0cFQw3dCU3EauNtCTM6BmzXATcksOvq420Jr0Lo1nhbwdw2vBg4PU2tKdTcjXIwo8NPtSW+J/+BMzoGD85hw8ff5vQDw72YcvEujsJVlM/dGxiTravVj8CbaIwR+r7fBR6Fm6J74eboHlgEvQaLoZdgUXQLFkdrsAq6hNXQJZwjjZZwbmujx+3vUxQt4RxCO/pTxXjvRdAZzq8uM3hks78FztEA/8Ca4JxvUpwZjasPs+YAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABb0lEQVR4nL3Wi23EIAwGYCN1AVbgRggjpCM0q7QjXFfoCO0IZYRmBUYoI1BMEmoR53UCLOXy0unjN3k9QbvyZFu0gn0oACfAGoDbAL4F7P3v+mCbxNKD/RIgZRs4zun3HWKLER1HgOe3eK7aHE/tldO8mo8ERhR/6iUm7V1S0tOlYHqrrNrLVQl4ulVCYULVBzNgXHtLwhF1JqTrICZEsOv49paEV4XoVntLwTGteRfQv06psTC5cvXgiI5ztBw/U4/ACXVGg1Ih4ct/crzAwrMYa3cUV2EWjfvqE4RI1mH0K/Amaq2FYRhOgVfhouhZuDh6Bq6CHsHV0D24KroFV0c5uAmaw83QHE5VG6VwSiutDo+/ny1UwvVi31WrxIh2+FINpbXG1S0siqBXcEfWjuxHOH26LCB52GPcngE5fOstvIB2XtwCp8pABY8nPRrMBBNQz4Bk/rT3XeF2tvMlwfRqXVC6nxc3KG5gbucc/AGRjjNNS2/bJQAAAABJRU5ErkJggg==",
+    "price": 90000,
+    "reqSTR": 140,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 45,
+    "tuc": 7,
+    "incSTR": 1,
+    "incPAD": 63,
+    "attack": 1,
+    "attackSpeed": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Sword"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPAD": {
+      "base": 63,
+      "min": 61,
+      "max": 65
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": 1072239,
+  "description": {
+    "id": 1072239,
+    "name": "Yellow Snowshoes",
+    "description": "Put this on, and you won't be slipping around regardless of snow or ice.",
+    "chineseName": "黃色釘鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACkUlEQVR4nKWWDZGkMBCFM1VrgJPASuAkgARWwqwEkAASFgmDBLCAhMUCEnJ5DR06IQSmrqsYBhLy5fUffKj3TV+MP2KDd4EWkmXZ6aRlWdQ8zzoGvQPUEjJNU3BSnucqSRL6H4NeAS3sDAR7Pp8MUlcWA+qqqtQ4jkEYxqTBnbA0TRkeVBlVyOrgrtD90EauVEaBWDCWJBjDHFZ3B3orS2VC8OLsar4GhI+XCelX9z7w0bYtxZGVAixjupWB3QDs9Yxv/kqhA/UVSdDvz/oAh3VTeUicOy4lKP6wW2EM1oPaNuA+BJciY/1svd3aaOFMJMd5WVpYyO73Uk5WiFzE9QbG+lBZj6mJdWpd7qu87DT0M2wL5+cTsX7RppRYgG0gOrZkI2gIaBs1d5OindRQjasyacKtDHM3sZZIJ+LrA7VsWVz0OBfteo/Awop2hZRl5jQAZK8sEVYpgRqugxoYN+SyLD2Au0O/E3XdWvEMmxII2F3BQL1moVHwGikxisLdHRc93NQ0jR2TTQDjqEeuRcC8eg3EkEotVwPV10jguq4JIs9Sed/3dG7yOQiT9XsEIgzJHidSbOzz7wqDIsAYQnOqHTSnjdPyxIYCZYGHMnXMRoXWNavP79rC2MVWVf4i0LKVglSuvE6jjam5e1Dx2vjKXBDpzzBrBkRTvHejVCXNKpxEx/Ahrsp1AqnbkkfCTN9VMfvgSdWPVv33viG/FcrmzLAzkB/jA5AfyMpBTX2hzgzrsyrUG2ef7z5zHf1qe5g017xjQFHMY/3HnYlY5XthC5ADO7k+KLRQuItcZlzMrQobAUh+XtxZPAa0UO6lKO7QxxDDuCzeNb/w7dvd/+703cevm/8F2gUZ7N+PXN+yfzUCvXRKNEWUAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACv0lEQVR4nJWWi3GrMBBF1zNpgJRASsAlQAm8EpwSoARTQlyCXYIpIZQQSggl6OkuWrGSxSc7Q8xH6OzdX3ijv5vZeX7aengU6CFFUawumqaJxnE0W9AjQKMhwzAkF5VlSVmW8fkWdA/oYWsg2OVyERDt2RbQNE1Dfd8nYXimDeGE5Xku8KTKTYWiDuFK3U85sqdyE4gNt4oEz7BG1B2BHqpSXRCyuYRargGR425T+u/2d+Cp6zrOoygFWOfUtYF3AHa/bDu/pzCAxoo06OdrfkHS6lS+FM6RkDIUJxJWmIDNk5wD4UsIKSo2rtbDo403LlRxrLelh6Xs+CyVYoXISV07MPaHyrbPba5zH/JY5e6k4T9Pt3G5vhD7V13OhQWYA/Hhio2hKaAf1DJNqm6gZ9PPyrSpsAosdGJukZvKbww0emRJ0+O36uZ7DFZWdTOkrotgAKB6dYuISg00CB3UwGQg13UdAUIP40l0u80dL7Ahg4AlFAI0cxVaBfeeC6OqQu+k6RGm6/Xqn+khgOfoR+lFwKJ+TeSQW62kJ/dXz+C2bRmif7Xyx+PBv9dyTMJ0/74CkYZsyRMrtvZxnmFQBJhAeE2zgMb8Gow85VCiLfBSQa/VSBhdI318th4mIfaqyjuDJtcKWjlFk8ZYo/F24ub1+dW1oMpfYN4siJdE/xu1Km1e4aAmRgwJVc4LWJ0rHg2zc5e27E0WNV+GHp+LQ/Eo1MNZYGugOMcvQHmhqJ80PCpaM+wvqtBvUn1uc/+ivUaNn2mpCDkYeLJlbsRjQNHMffse0pCrcmlsBYK1FGYd16UCje6YROG7hf4CinBxyGyIZVTBEYD054UyeJDRqyVqPWyLs4V+yyxFc6c+hgQmbUFheU3ReXx4oMj+sLn8wY34u1OF7+zA33KeUDOtnAcKxQsuVfmsUHbauT5k/wGUKdVAVBrOZgAAAABJRU5ErkJggg==",
+    "price": 1,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incDEX": 3,
+    "incINT": 3,
+    "incPDD": 30,
+    "incMDD": 10
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 6
+    },
+    "incINT": {
+      "base": 3,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 30,
+      "min": 5,
+      "max": 55
+    },
+    "incMDD": {
+      "base": 10,
+      "min": 0,
+      "max": 35
+    }
+  }
+}

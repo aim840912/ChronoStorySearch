@@ -1,0 +1,49 @@
+{
+  "id": 1082011,
+  "description": {
+    "id": 1082011,
+    "name": "Gold Brist",
+    "description": "",
+    "chineseName": "黃金合金手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAfCAYAAAAWRbZDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC90lEQVR4nK2Wi5WzIBCFJ+dsA7TAlkALbAmxBFOClhBL0BK0hFDCTwmhBUvwnzuIwbzN7hiPL+TjXoYxX/T7mJ482+UXv4EJ5Hx+3OD7W9oswE9h06kl0pZ3fcOfYycDyYGfwO6Arp2MYvA8B/7FnNHFqelpq60wUYXo6tuHxz6H7iiEeJXUfaTMOd79+p41RHVBVFZsn7mA8tgCE1UJZPdHUkrJ3jVFvMfArolAUpcXg9sOW0Da7HnyNY8+CKztz3Le1D8CzCOBtsMEVJK1lsZxFJA2WlSEMZDZV+QGlgZ1xwwUtsEmAJTSZLhzQKAE6uTcB7kew3irKJu7TcqU5jliAFRBjTFGAM67+y/MILdB2aTn1asoJoT3XkBEoyhCiKosKXJQyty3lAGmuXMoQ6din4aVI/ngF5CGpdl7CeTjzZcVZEpZJ4PltzB3BinHVmLDL4HE3gegV8okKaBIq9lGBg+8kJwb5NravQC0jqAwJ0iyLQc9g11AsAwbdwioqqol+zoGG2NXIL+uHC+/Z2tF6EOrpVqk9MY5QJ4zUWsjlnrnbgDPYAKCPck2ojgfACMZkIkAYsN9TFiy9RnoGraA6vrAJegUQfoCcnHkbFv0qhuGvK+noBw2KRUXCUYp5SjEzFNzlh2Kg1SPFAC3bUtN0/F8eXonvuLoNZVcqptm/ZFCh6h9VVlS37ecZV7mBVaWVSVt7N5ypX8fJmspWdfwsTq2VB8KacD9SvZBFRQ6zms7l/ZUWZAgrG715+ahMijASA/FD51O/5ZyhOOx7QUMaL5oJZSiLSEwzE3XNGwVkmIUCHZcy6dD1lKQeykCnw+0LRZlCMwZFCFJWlaEgfvBLSBkKp6hPQYY/HtzlcPgs/wtQuYN0vlIBVtacmIklQBhGeTAq3g79QWYRuy4isJCKE3WQV0IOquLljJXXoJy2A0Qytq+58I7CCAmTWwoH81xTAN5C3QNW15koNh6KAqxLVmXOufjlLf/FLaCkii9W/c2QVL8ByRvzOdAd31NAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAfCAYAAAAWRbZDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADJElEQVR4nK2Wi5WjMAxFlXO2AW8JTglsCUwJoQQogZQQSiAlQAlxCeMS4hLWJWT1ZEQc8htmVokPP+Pr9ywEv+jncXlxbZMf/AQmkPP5eYftVvrMwO/CLqeeyJbc7B1/io1MJAd+B/YAtHQyicH1HPg/1oyuTl1e9loLE1WI4/7+4mHIoRsKIR2pum8pc46bvz1XFkT7iqhu2b7iCspjDUxUKajcHcgYI+3YVekcA49dApK53hjcetgMssWOF9/y7IPA+uEs+93+Q4B5KGg9TEA1lWVJMUYB2cKKihADFbuW3MjSoO6QgcI62AUAYywVPDggUAJ1su+DHMcQ7xVla7dKmbG8RgyAKqgpikIAzrvHN0wgt0LZxU5Pr6GUEN57ARFFUYQQVVlS5CDN3C8pA8zy4FCGQcU+Cysj+eBnkIWl2X0K8unk2wpy0ayTyfJdWLsCKcdW4oe/gsTeJ6B3yiQpoMiayUYGj/wgOTfKcVnuBGBtAoUpQdS2HPQKdgXBMvx4QEBN287Zd2RwUZQ3IH9bOd6+z24VYQxr5mqh6Y19gDxnorWFWOqduwO8ggkI9qhtRGk9AEYyIBMBxA/nsWBq6yvQEjaD9vuGS9ApgewV5NLM2bbk1XEc87FegnLYxZj0kGCWUo5CyjwzZVlTNVI9NADu+5667sjr5ekr8SvN3lLNpbrrbl9SGBC1r61rGoaes8zLusDKum2lT7krudJ/HSbPklrX8bY99LRvKunA40r2QRUUOs7rcirtWlmQIKzu5uPmqTIowEyb6oNOp8+5HGF76AcBA5o/tBLGLMfLT8TlRYFhbY5dx1adpA8gaDiWV4c8S0HOaQTeH+ku9G0Ws622qzIE1gyKkCQ9K8LE/ehmEDIV19AfEwz+bq3yV6dCwtQiYL+5/U2uGBpl8EgVW1pzYqhKgPAY5MBFdJmNdxbOyjj+cPvUGTuuorAQStU6qAvBZnWxpMyVZgGID5rAVOqW21mBUNYPAxfeUQApaSav8NKMUSeyXQiIT/ZnZUrfTLOVr82mqsQ2tW4afMNb/Rp9WzUewZYxf20+qXurIBr/ADHT48VPGqFUAAAAAElFTkSuQmCC",
+    "price": 110000,
+    "reqSTR": 180,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 50,
+    "tuc": 5,
+    "incSTR": 3,
+    "incPDD": 21,
+    "incACC": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 21,
+      "min": 0,
+      "max": 46
+    }
+  }
+}

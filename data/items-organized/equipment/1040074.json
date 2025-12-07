@@ -1,0 +1,43 @@
+{
+  "id": 1040074,
+  "description": {
+    "id": 1040074,
+    "name": "Green Legolier",
+    "description": "",
+    "chineseName": "綠守護之服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEAUlEQVR4nJVXi5WsIAyN57wGaIEW3BLcEpwStAS3hJkSlhLGEtYSHi1QwqMEX24Cisr+OGdGBiE39yYE5g/9rq3fvG9+Y+wr8AvQ/WkphLj9jmF/F7jvl/iZc1WnPgNf13ciZy15H8laI4OPMVCMrfTbLhwW8FSizuz91CaK9OKEyMWBGvi6/nuS829kjOGPgt9ePPeJP16Z8iM7cn9GsN6ATQIfWCXfW+rZgdnFiwN15uHGIC0bj+KAAtjKRAUEMGQHsGV/7hiHX/Bz5hfsAINfVv8o4byH3MyoBh819gBuk+wPzAyQPEj/yZ6NlbVV8JmUNZoSN8IS3x3ngG8VpOX+wn1TiJLXbbaYcbPJ8ANwxBcyI9YqPWn8AdhCYnWmHdhkUOcwLwNn/BvPg40QfA2mDm6txmiYaIu5yI6+5UFyqgYcsjGhZQc0DFADNgAOeyGEC84ZfG3b9iIdcCxb6+yTmY5JBWTXOxlOzhiPzDK4LDW1TPmEedd15JyD6T3uiaUYTiMtA/vwdmG0pUgCzqxBynt/2G5V8GVZCOna8z6dLaChOWD9Bo/3Ie6/TU5Ifr4J+1xw6pJXwR+PhyyIrJ1jcxM/F5iWpMlMYXhM+2wHRXOikkoP5Zit2MPzzL4EX6dpkkkAEJX54yI7YJW5WzJPdoyZDR26UYBmnhfNrsu5pNRif2AOT+HdPM+0zYUDwSRjkaaO92xY6MFCwJk9wHR8FjbRcjhL9hl8/fj4ENZ7SVU5e/69pD2upBfN5qRMHu8kBKyAbMfjiWeLkyaH4MAcA33f0ziOW8wFmBMOB4NJCiAMGbS3CgjcOQ12HAaXZMMDdu/3u6i5J3NF9jIrIZZLjGEYyT4wmIADmAeWqOHAJ6+cW63rss/rhe0Avg7DIKyR6YiJcw/qpyKIRmMXc6In7zTBkgNFGY7mVN+ZNZIZqoJ9UnoV5t2gGa5ZvktWPimVTUrhkzyydEmwWsuKlrHPzKUtXCZbPinKmJTbY/MhqkO5Ap8r8b5uf5F3UFaXa/IOnrdDiE7uaMPdpBMtGULysZQSz8q5vh+/5jSuR2lWFODG+m0nALwZX8MKwJxvG2jabpl6ZpkdiWavKjkkEvNNDs0422F/W1b3VUn6eJC9cW9685zejUwsW1dkdj44Srlr0p+bltrDed+UW03q7WOM6/rXy21GcXJtK5o5D+jVuS1+P9uYj68GNk8LLrV9b6xW30808w22xcHCm3ZzoQjrmfFkcZl7cu9G3h1e/fje3jQjX5/ZQA8qlu+iYaYc/wEHjE+HSCrF7zzmt6Jyo+bla9CvwDcH0FnXicuoles0yb8SyIsDKM20Sv/leD390d+mr67OjXrRfPf/7FeAZfsPp0U52lNWs1kAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEKUlEQVR4nJVXgZWkKhBs37sEuBBIgQnBDcEJQUNwQxhDGEIYQ1hD+KRACEsI/i6gFZW52+M9V2Sgq6u6adhf9G9t/cvvzb8Y+xP4Bejx0uR92L6D33/z3HdLeOdc1al34Ov6JLJak3OBtFZxcBo8hWBi37T+sICnErVq7+c2UqCbjUQuDtTA1/X7RdZ9klKKnwR+vznuEz8uMeWXOPJ4BbDegFUG71kl12nq2IHZhosDdeb+ziCGjYfoQALQlYkJEMCQHcCa/XlgHH7Bz5l/YAcY/LL6RwnnHORmRjX4kGIPYJNlnzDTQ3If+y/2bKisrYLPlFijJeIqssTflnPAmQRiuL9wXxWiyLrNFjNuNhl+AI74QmbEOklPKf4ANJA4OWN6NumTc5gnwIJ/53mw4b2rwdTBtU4x6kfaYh5lR1/zINmkBhzSIaOJAykMUAM2AA573vsLzhl8NcZcpAOOZmutfjHTIauA7HqS4uQM4chMwONSVcuUN8zbtiVrLUzvcc8so+E8YhjY+c8Loy1FMrCwBinn3GG7VcGXZSGka8f7dNaAhuaAdRs8fvdh/1aSkPz+jOyl4NQlr4JP0xQXBNbOsrmR3wtMx6QRpjA85H22g6LZqFKSHsox22gP7zP7EnwdxzFOAkBUmR8b2AGdmNtFeLJjzKxv0Q0RaOZ5Qe26nEtKLfYH5vAU3s3zTNtcOOBVNhZobHnP+oUmFgLO7AGm47uwiSbhLNkL+Pr19RVZ7yU1ydnx95L3eCK9pGzOysh4G0PACsTteDzxdHHSSAgOzDHQdR0Nw7DFPAJzwuFgUFkBhEFAO50AgTvnwZbDYLNseMHu4/GIau7JXJG9zEqIZTNjGEay9wwWwQHMA0tI4cAjK2eT6nrc5/XCdgBf+76PrJHpiIm1E3VjEUSVYhck0bN3KcGyA0UZDupU35k1khmqgn1Weo3M2z5leMryXbLyTblsUg5fzCNNlwSrNVG0jL0wj23hMmn4pChjUm6PzYeQHJIKfK7E+7r9B9lBoi7X5B1ctoMPNt7R+ofKJ1o2hORjKWM8K+f6fvyq03g6SkVRgCvttp0A8Gb48CsAJd820LzdhLqwFEeC2quKhCTGfJMjZZxusb81q/uRSLpwkL2xn+nmOT5VnFi2tshsOThKuWvSn1sqtYfzvim3Wqy30xDW9T8XbzMJR2pb0dR5IF2dTfH9MkGOr99s8/u04FLb98Zqdd1IM99gDQ4W3rSbC0VYz4xHjcvci3t3cnYbhoy37K489A78dzPQ98oGOlDRfBf1M0n8exwwLh8iuRQ/ecxtReVOzW2zhdO1LUB9fkINPFds+mAHvjCwriOXUR2v0xT/K4G8OICEVyJyO15Pp8Le24yoMRdh7+g3TfOkn7USPpz656cKLtKUG/ZG1/aOUfjD92X+/w4OT97T2HEZAAAAAElFTkSuQmCC",
+    "price": 38000,
+    "reqSTR": 0,
+    "reqDEX": 115,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incDEX": 3,
+    "incPDD": 30
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 30,
+      "min": 12,
+      "max": 48
+    }
+  }
+}

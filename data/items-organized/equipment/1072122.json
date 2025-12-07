@@ -1,0 +1,43 @@
+{
+  "id": 1072122,
+  "description": {
+    "id": 1072122,
+    "name": "Brown Steel-Tip Boots",
+    "description": "",
+    "chineseName": "褐弓手鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAfCAYAAAASsGZ+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC4UlEQVR4nJ2WgXHjIBBF0cw1QErgSlBKUAtKCboS7BKUEqwSTAlHCUcLlGBKIPsXkBCWSHwbzwgB+m93WXbyS/yfheq9a21+BbIKyykNPP0cPS2vnYJ+AmFxNSddCBsWjsCR3iUNzDmoBWHx/q8U3noWZ89tAZjiHOxOsA99DDqDhCzujI+eZ7MxKo4oge9SNO0IEkrvy9RAXM4yggGg8/in4prz59HUkA1AAn4pxHsSx/wBgPdQNO8ogkE8nc9TJEpKYUgFAABhDE1g2GMgR5xfv8H8e1qjz4WvNEsIR2GtE4pE1Ehj49YPIBQmPCNYqu0gfhu/ATQPm+kSfa8YZPzmz2OiZDudxH2CSvG2pD0pbSm97epyJIy8r+KXe/qaAGoDdSxG+3qC+h2AM9KKpPMfIoTHGG+YGNO0Tjcugror3uMKAIW4UCqmzNr2wXfdmyaQSEIZpllcQkTFJXfdH7AqKq3v96BmW+n+dCyaRfjefJ6Ll1aCjiAcjZz1KtAPSuhcow1hGByRVQc4i6TzVxGyx47+Lihf6oQ23Y+eStijUKpLkdsNQBNdg0X70ErXrkI+FxEUlW+fyzWVOK5LBhVVz044146ktjBf5E7cueON8B5r5fp3EG73A/UtkzpxzjfOpRQCGwBjxJMdduE8GEfFnlP2+TwkXQxbRZDfjwAmXuzuuQuj9pLB01hJBBBRDQ0UnaGGlVGZrWs83ZMwjqOYpok8Mvx09OX1euVFKSVHhGiQMV+32sr7cm4XyTAM5LkS8zyvcxgDtizUP6RjUG04s7NCKCHhdruxmEo3DWOXvtRaC0SJp5T2VOwoisNIsnD5xLy1Udz5fapyFGeAHQTnALFsEIfn5RyMzyONz0r2CBLusxKf2jGorK5dBC7+F+fSfYiOJQcbUayRYNOFOjpA7uQELyOEFJdv6f13gAzp0MSi0PnGXPt8OSkQvYGagDWSEtQyAF4RryE/Br0inu0L71GsLfBv9KEAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADF0lEQVR4nJ2WgXWkIBCGx/e2AVICKcGUYEowJXglrCWYErIlLCWEEo4SjhKWEriZYVB0UXM3yT4RZD5+Zga9wP9Z3Nw3ZxP+BTQ7V4M0Av57vDoeO4T9BMQAPYlvcm7ZeYL2eK+wYY9hRyAGtN8KggsMYAWugAypj+yOwA+zD9sDxQzwNiQF2VxSx8oEfldwajVQLFWU20QANakEJwjG57dOYz4cq9qCFgg6CbcC0CKA+isQfgZVvVFidFCN15MirRRY9EQQgpIxWOBkjw4X48M8h/rfZAynQ4BnK0GsxjkPGh3pHtvWz5PIWRzomuBKL4F5tWGBGG6ebh20rWaYDcu6HgNuvjcCCAJW8HKTZ2QLZavPs86jc4rDDLjexQNC9AJr2CE+1yI4rCC8M2eKmvABMT76VIXQS7eRqkywZqT7NEKQAgBap+1z7jwZmubFIAzEWQYaBihypNOQH9dB10UGtu0z7PAIan417Dg74rr63AeUtoXVQKxKTWZ20nYaTM7fA+dktBhVOSn2FDVhhJhX7vHvSqmNp6eT+mkxvQMlz6Zo8tFEsAFL5GYCqzraulUwP28QNaZ2m1NZ0p/KKcOKiuCF+GUTfvw+itNVrQClk9JIBY1tx89A/Kro8JyzcoLn/ac4lc6ITxBroWrV0zs3+l6zAowGx0dh4bjNSvN9DWJT8VezLraUl2K04pRhCIHkkQ5dOkG2wFKdXU6Xah3Fvu9hGAZcmeWrx9njOPKgUoqVkSravVA7ojcqSlsp6roOFWiYpmnuozYBbzc8a5Rn2NYohnvJsQXFr68vdqilGqntZbYxBkgtXZVyu8721FQVZefllfqdSwAf1tuW1RxBViCKCznMRgBSUPaRcXykfZTONVC8Txo+jWdYmXUrJT59KXqpl7Q4WWRS8wLzC4RtFcxLfvCKbwOC+Z2oXnuapzm1SxUCeQd+DT5BQv4RqJGDj2F7lmuDCxjXbRbYuIGUMPleAn8Rua8I+wMnRpACkN+ttc/HpxrIyUAPvyPsG85t3HG4ba9+F1jksbKDVZYJd7T6KvwvhpjEVI6bspQAAAAASUVORK5CYII=",
+    "price": 50000,
+    "reqSTR": 0,
+    "reqDEX": 160,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 50,
+    "tuc": 5,
+    "incSTR": 3,
+    "incPDD": 28
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incPDD": {
+      "base": 28,
+      "min": 3,
+      "max": 53
+    }
+  }
+}

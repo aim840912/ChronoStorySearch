@@ -1,0 +1,49 @@
+{
+  "id": 1092011,
+  "description": {
+    "id": 1092011,
+    "name": "Adamantium Legend Shield",
+    "description": "",
+    "chineseName": "古老朱礦盾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAfCAYAAAAMeVbNAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACrUlEQVR4nN2W7ZGjMAyGxcw2ACVACVACLoGUsCkBSoASoAQoAZeAS4hLwCX4JJmvEEK4vfu1mjgkIB69tiXBF7yanY4eXLfDe/Zw++hriMQd/tZSHNIFWQJs4XZoc/gXC3HoTYAZbvsyW5zGRw9BJCxctBypSrvfPg4zBfhy4BRk10GWfzsPQwGGF0h1SyBvB3YwBoeWoCQNvfiYTQBWLjsJlQIosxq0bNzVAzD7hDFDFxJ9uQ/MITK8vzHTsqRZCuXQg2ruUNybJ2iIjuUwsGIHVnz+ltxA7QTQmqfo3xn3n+E0RVkJqAoJ7fhA4ejhP8uXiecU4khRSF1/Q5iV0ww0M6JELOAFfmYMndaR4tG9XSR4CSgFlgAH9hHO00VoWGOaqg50pfm/MZ/vO4V3kcdqfdqhkBQi0V/3pML9STFgmvcX4XMugVPHaUVbrz2XDhcUv8C301xyddpAQ2kgVz9trsVhuJIK4jR+upB4HvRYSFWUUDLwOi9wcKPEjElwaR5vugbDqTgs5nJTrU1tsHbJafrW0xLN4DObZ8Rwi6CuSF6cBKrupzZQ0AymG3NsF74fsuoR68LsUiePnWCGH4Fn9bQ825morgBRuA2wdnwBkzVqo/zMCFqJdbnCmEpH8mw/bemlIvqp/Ur4plT/P3wFU3L85On6BM+x4kQUQT+OMCv3MBVdZqxGj0V3flzOUS/fz5Pg3q1StqXMR2DblyCCgC8OG6jnrelI8NmCIOJjCGtiTkdvVs4B+tr1lxafNM1dcAHRg3oCL3QsIuvUB1yN1CXUDrxfFk/cG3wpKhnM/WbTX45sLnPyi1DAFryH84VIFPaByss4PQWTzQ/2G4L1DnwEdwESYY/eW46MWkN3AH4HZ8cgSi4FmHrY4UvrWYVygHcX584IJ2/DfwAfg0kgqzdNqwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC3UlEQVR4nOWX7dVsQAyA45xtgBJMCasEUwIlvEqgBEqgBEowJVACJVCCm8yXz3fX3j33183ZWYyRZ5JJYjzgWhZ9dOC+vHzmCrQMbQmMJ/CphNiEAp5gR9DS1Sl8Iz628QK2BS1tHtmLaWjBY3yBm5IioR/VuYttPsAMCCEhiKaBKP1RPTPBupPCIg4grTs5YJ6xjQJ6QW20Y+YLmLVINAKKHiCPShhFpUZeQOQY/ykBViv9qR8YXITPV/P6rAWFUQh510JfJZAl1Q7g40N510lLFKSX/XEQQ3+YDK1RiOObed9vQeQGUXAoMgH1NKBBONrdmyUCR80cW4iTKssf8KNcKxilDhbwE2QHeiUSAMqbxCY9DePSTRQ+FvZCboFIyH1+iaHfNzAWo7yeZ7gtb0ENc6QVLq2uTzNH7e66hgWuZ4jwMG3/AmTiE9SsZahSCI2OCqsPLLkEbV1hc0Ev/kzhJNZx4/wZ04J60cMzfO5uBo4DLSZtwQIKKrkuFgSq5Rh5AbpveFO5LIgSccFcqYq1RHXLYnOG/kftRgN5JUdLLWhBpU0WnB7gaE2rS1FGlmklKZYs1/WlNRPm3XwIwfSpJn8CXUGMVeTCrYV9kwHPhJ7gdIKQVIeScSuPCFDw1aX+k9JUSC/cDYfbCfut/HegTYn4t6AVQkH2zW7iBEox0zlj0E4TGIscDG8VYavQq1/1T7aP3kW/2W9ATlz0S01ZhsrrNgfuefJGtwE4zhriBDLieUwefViDXR8Z6JJpQHTBEIZbOlXvanyDVgmXyUqbFA0pjHJM2FRZ5ckqQJWq30NoY0jKZMV6aIirJxTzpKoHtIggsv5t6h1cRIYpNTSO4WQ0JPvNdVsFCeNZOaBF+TPcQgAuaqnZ1MQI0TdjbdSuPWDdJW1hAS5sd7GvE3AhVJ4adcpgX5Ps+WPTcSxajseC5QA77q6k6Pr68oPgXWWQsN9umgoON746/gDovlqprQwp4AAAAABJRU5ErkJggg==",
+    "price": 190000,
+    "reqSTR": 190,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incSTR": 2,
+    "incPDD": 52,
+    "incMDD": 25
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shield"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 8
+    },
+    "incPDD": {
+      "base": 52,
+      "min": 22,
+      "max": 82
+    },
+    "incMDD": {
+      "base": 25,
+      "min": 0,
+      "max": 55
+    }
+  }
+}

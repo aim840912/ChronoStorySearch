@@ -1,0 +1,49 @@
+{
+  "id": 1060072,
+  "description": {
+    "id": 1060072,
+    "name": "Marine Shadow Pants",
+    "description": "",
+    "chineseName": "滄海之褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAdCAYAAABfeMd1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB50lEQVR4nLVWi3GEIBBdZ2zAFkgJtmALSQlawl0LV4K2cCXEFizhaIESDLuyfAQVLsmbYQ6R3cd+fFwNaazwPqr9Qopk1YBhGGAcR5BSwuPxoPk8z/B8PqFtW1BK0bvb7Ubry7LQurZb90TJSNCYBzrgOTrCX97Dv0wohEiGliRBxzzQsf+Mo+s6uw/nvH6EFElFIXc9pYywm8/zZOf3+32/nlUTB20YzJsGdG7idYSSRZE4oFNyoIwT4YjwuRHenmM3ye6ypyaextiLzbHUT6K1BPQeSfG51bVa5rzucoEYB0q5iOSyHUATNRzFBWrIBUWxAJ1yOy2oTKJ8kiSxOitFAYnKcQOmIUpI/IISkcSC4owLuqUMCw1ehzUFX3yAmICRJsogIXH0tWuYlstzrN+js/mMRdInWVl1UWlZ8PpWwBnP2H/GNn0P0zRZoihdfhRHqlpq45OQML5eL7oXcKAC6xMBJESvxCZIFxbx48uobW7ralgbxk5eHImnR0SAzXKirAF8O9/fphCWZKVN/H0URuK4hNO6raUpmtrbAf+F32lXAsHV4JGswU1XCsz9Bbx0NeH9kVt0LO4F0d+ly8h+cL+YVq7DfeUdtRnK08aJI3mXyJrH9khSwTyd/fet4Bz2Oj56/wMBCT63v0QZ0gAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACCklEQVR4nLVWi3GDMAxV7ljAHcEZgRVYIR0BRggrZARYISOUFRghjFCPQC2BsA3Csdvru/NhO5ae9elzC5Axw+9xkTYlotkCmqaBrutgmiZ4PB40H4YBns8nlGUJxhj67X6/0/44jrRv7WaJTIwIHfBAJzxHZ/jlM/xlUq31aZgiETrngc79NY6qqrZzOOf9GCSiC4Vf1ZQ+wm4+DP02b9t2v59cIwdrHMyVApun4z7CTNkROaBjcmJWR9qR4Vpp70zUk9x12+2JS60+9OJ8sitdbiT0OxLjurS1G4f0rnMBrU6McZFN43IJS6Y4mgQUkAqKZgS67XJrMBlk6UQiuXlXmgwik+iKmiSXyC8ykU1YZJxxkZf0YfHB6zyVqQwBjiQMmSyRiATV17qmH9/eZf7qnM1NFlafaGa1RoVmkaxLDTGurr4dbeoa+r4PyA6p86OJqXGujU9EYvp6vehdwYHKbW8GcCKUOTZB6rCw189VpVPb2mKzYQhS5Ig8/SISbKI3irzBt/P9Ta64TDTTQf77yYzI8WmnjUu7b1EV3in4T/xN6wQEz8qOaA5ezFxgLRLgpU6F70/YCOf6ggVPIEtNnY6SIdYnI3ifvDYvwrOnnVatX5mM/384hzpGJJMlt+TZZZHoA4b+O2Lbxvza0dj0dJEzH3iuWA/jwk+LlCIF8huKe9fd+jD/AetlRwHEK9P0AAAAAElFTkSuQmCC",
+    "price": 41000,
+    "reqSTR": 0,
+    "reqDEX": 80,
+    "reqINT": 0,
+    "reqLUK": 110,
+    "reqJob": 8,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incLUK": 1,
+    "incMMP": 10,
+    "incPDD": 27
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 30
+    },
+    "incPDD": {
+      "base": 27,
+      "min": 7,
+      "max": 47
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": 1050095,
+  "description": {
+    "id": 1050095,
+    "name": "Black Oriental Fury Coat",
+    "description": "",
+    "chineseName": "黑綢緞長袍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 88,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADeUlEQVR4nI1XgbGqMBC8zNgAvwReCbEELAFKkBKwBChBS4ASniWYEh4lSAn824RLAkblZhgQktvbvbskHmifzV++q51+aA/g/HcmGkaiPHMv9HLPNNFkiH5uq4A+gn8CtE6apqEs76jk5+OQUZa563E1FqwymsoytxPyPKeu6wQ8CfwOcAbQOI72qseS+mag5/Xp/BjH7HTTdjDGiJVlae/DMMwp0BTgCkwivwwNe7mAc/TegU3T5IExFheAU6AfcwhHkA8OYG3bUVWV9nfMKh77zbaASXYAsik1nR+I9w3nVmQVhvGz1pqMMSuWLwwFTGSCY7DqG56jZ+p7tfweqOqQrwASSyvPnxjO0F0GxxL1/WBBuCYZyA1GTvumo2PtGGKszIOBneSU757lIQaTXAkonOBZ8gZpp1tQApWasjjvW1DPUPR/J4fNIwPUdydn3BYipwQorfFRUinnFKh9DzZLDmkBS1Xrt+ABmJQT9ns2zMi9R4GgcKYNmOStLycyjHO5rwlIEYqsB/nYti0ktjk6drl1gvsfFwxZ5WbOZWUnPx6MatzSZnCNCCKwKIrC+4MaCFZYHyQ/SoUe+z2P3gGqEODXQrGcrtjuNVnmUokuf5PPZVuu/T2vgw0+5HBTbSZKi8jCvqn6UWTY74ODz0yoRGPWDrbV+68OJA6pAbcRjsJKA8AsFOTq2f5eelDuJtEuQuLgIqRdpkMc3rZVClAzrivTKRHl0LxWtp/sJ+goKv1+LAyV2hahYn2wC6DiD/Pv2VWaSCjLXLCZJ6klOBTPcbXAI48Cuu3hOBjf+HC0/QiD077vqTspGyUuFM/jz7XJOwM7kKgXllqvAS3LtnARG1qvFl4WHcuPtbj0LBIrjmLFZlQn5qFSKV5LBVR+QBbpMzgHM1SnNu9zHm/YslifwgFrtVvEYcPeHgtxcgN4d+Jtqx389iR5lHvCJ6UALZgUDCZjZ4DzM9TTaHiymgNU+lfGmh39tfcgvDT7zJK5gG0+2T+Oi9WybEnBbWX9CigRO89LD1lAnpuHcQVX4Z1b6VqwCmOzi+3LIQpyymCs+N2pc3LSEuwYMdaO6Y03lIYX7IKfLyYcOVIsXxjKbp7pkVd8ZXvJmdtq1NJ6jUisFWEIQN0KY/ivgCGTuWDibSsFqNRx/T/Bl3Ud3rmBeP9ysF61Vjxe7D9N+joploHYvwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADn0lEQVR4nI1XgZGrIBBdZtKAvwSvBFKCKcGUEEswJWgJSQlawqWEUMJZwlmCfx+wgB4mYcYRCezb93YXyIE+a8ub39WHdugTwOXnQjRORGXhBrR/F5poNkRf95VDL8FfAVojbdtSUfZUc/84FlQU7nnejAU7G011XdoFZVlS3/cCngXeA1wANE2TfZqppqEd6ff26+wYx+x013Yy5kir69q+x3FccqA5wBWYeH4dW7ZyBedk3IHN8xyAMRcPgHOgL2MIQ5APBtC6rqfzubbfKat07ru2BcyyA5ANqenDRIy3HFuRVRimfa01GWNWLP8wFDCRCYbBamh5jV5oGJT/HuncI14RJJVW+q8YLtBdJqcSDcNoQTgnGchNRkyHtqdj4xhirqxDAzuJKb8Dy0MKJrESUBhBX+IGaed7VAKZmmtp3LeggaHovyeHjSMDNA8nZ1oWIqc4KKXxUlJJ5xyoHQcbH0PyYLlsfec8ALNyon1fDDNy40gQJM68AZO4DfVMhnGujzUBSUKR9SA/dl0HiW2Mjn1pjeD9wwlDVrmFY3m2i59PRjVuazN4JjgRWVRVFexBDTgrrA8SH6VijX1fpmAAWQjwW6VYTpdsj4Ysc8lEF785xLKr1/Z+b6N1PsZwk20mCYvIwrbp/KXIsN0nO1+YmInGrA1ss/dfE0kcchPuEwzFnQaARUzIVd9++xqUt8mUi5A4OA/po6ajH6FtsxSgZlpnplMiiaH5m9lhcVigE6/0/lw0ZGpXxYwNznpAxT8s3xeXaSKhbHOxLbxIeeeQPMfVBo84Cui2hlNnQuHD0PZHNBgdhoH6k7Je4kHyPH9cmew1sAOJxrPUeg1oWXaV89jQercIsuhUfuzFdWCR2XEUK7YgO7EOmUrpXiqg8gFZpM5gHMyQndrsxzw9sGWzPsUL1uq0SN1G270W4uYG8P7Ex1Y3huNJ4ijvjE3KAVowSRgsxskA4xeop1HwZDUHqNSvzDUf1NenF2Ff7AtL5hy28WT7uC6e/bYlCbeV9S2geOws+xqygLy2jPMqzsIHl9KtYhWmdo8tVs7y/LlEQU6ZjB2/P/VOTvLOTglj7Zje+UBpecOuuH818crhWT4JdxO3ckoBrR5ymhd64h1f2VpyzR01ypdeKxJrRZgCULfDGP4rYMgUzpn02MpJelRHeibfDS+4uV4Yu1p4RV3mYt0w6G1rk3YknT3trw3r48ZA4edux2U/+9p8r/r/AbTTSHUigc5xAAAAAElFTkSuQmCC",
+    "price": 200000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 265,
+    "reqLUK": 90,
+    "reqPOP": 20,
+    "reqJob": 2,
+    "reqLevelEquip": 88,
+    "tuc": 10,
+    "incINT": 6,
+    "incLUK": 3,
+    "incMMP": 40,
+    "incPDD": 76,
+    "incMDD": 38
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 6,
+      "min": 0,
+      "max": 15
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 12
+    },
+    "incMMP": {
+      "base": 40,
+      "min": 0,
+      "max": 128
+    },
+    "incPDD": {
+      "base": 76,
+      "min": 0,
+      "max": 164
+    },
+    "incMDD": {
+      "base": 38,
+      "min": 0,
+      "max": 126
+    }
+  }
+}

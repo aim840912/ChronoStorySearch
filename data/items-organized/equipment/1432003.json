@@ -1,0 +1,39 @@
+{
+  "id": 1432003,
+  "description": {
+    "id": 1432003,
+    "name": "Nakamaki",
+    "description": "",
+    "chineseName": "刺槍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAbCAYAAADyBeakAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABrElEQVR4nMXW3ZGCMBQF4JMZG0hKwBKgBC0BS8AS3BJsIZawlrCWICVACUkJ2dyEIOAfDhDvg0jG8XzkZhJW+E6Zznf2DYQxHQJjMLERRvEEWgBc1Tid/GBMhAOEOgsOHHV0BH7yDY7nCy7w4fu9u0RbE6YoCgdYW4C0AzvtIIw+YiAcoCzLh4AYiN4MUO0f/ChKO7YJh6y1A+jBLCyNaNtQ1/VTwJKIuzY8AyyFaGeg24ZXNRURNuDeExKA6l0b5kKAzgHa/5uQj9owF4IRIEDe7QdLIXoQLV7vB4shOOdGHxTW2RaVukDag2nMOpgNQYBEKqT2QEw3f8iyDFdVYuejRwEmIQKA6pDSPZBfrxBCQEpNJ2RYrMsgAoAHQDNOANsHRgApMRryEYLzhJYfCECvJ4UF2P3IzQJjFgAdAlkDGFWjED7cBsrK3R9TP75pXpQGgFDT1kQI9aXb8NyGpnwU4KNa9QN9USjv3B+aJ0+TW/99OCYDHELrmhEk/63awTy5hQ5rzvAW4f7OQs67tZuRSnkM7TUcfjscOjBztWuCIHQVjA3bM3vosP4Bkv7FFwUDJZoAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAcCAYAAADvANYcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB3klEQVR4nMXWj3GCMBQG8Je7LhBGwBFgBBwBR4AR7Ah2hDhCHaGOICPACHkj0Lz8oSENiKfgu0MhIt+PJBf4gPdU7+2zdyD63iMwBv3WiF7yFDAB4LKD89k0bonQAFeXhAOccHMEfJYFnC5XuIIJr2v9tdmc6Kuq0oCdAgjVcEANYfSxBUIDmqaJArZAjHqAqo6ctMlw7FMOokMNwKAX1kYMw9B13SRgTcS/YZgCrIUYesAfhrl6FuEW4NEdEoDq3jC8CgH0HKD134Y8NAyvQjACOMi99WAtxAiCyfx6sBqCc97jUcIu30MrryDUg2nJPHgZggCpkJCpB2JW/ECe53CTDRxM9CLAUwgHoDpmdAxQ3m6QJAkIgfSEdJN1HYQDcAew7QRQ48AIIAQshjyE4Dyl6QcEoNeTSgHUeqR7gTEFAHSBzAIW1SKECVeBotXHp8y0F/ZFKQC4em5OuFBTOISXKjTjUQB9cJgunEWMA01RqH/Fo73zLP1LMuH6+nv6aQEAvW2MQOwYQcrvdmgs07/QsLzwL7tTRAJjENo6u43O08NBkMthp3uklQZDaw0HsxwGZV/UZ7s/BMzWMCcIQhdOGJPBOfXCQJzZD7c4wvtDOMliAA7xO8SZ48ke+QWAeN4spivyewAAAABJRU5ErkJggg==",
+    "price": 70000,
+    "reqSTR": 115,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incPAD": 57,
+    "attack": 2,
+    "attackSpeed": 8
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Spear"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 57,
+      "min": 55,
+      "max": 59
+    }
+  }
+}

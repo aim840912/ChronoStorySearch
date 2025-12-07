@@ -1,0 +1,43 @@
+{
+  "id": 1002441,
+  "description": {
+    "id": 1002441,
+    "name": "Ribboned Pig Headband",
+    "description": "",
+    "chineseName": "緞帶肥肥髮圈"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAUCAYAAAB1aeb6AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACEklEQVR4nKWWi3GDMAxAxV0XcEcgI9ARyAoZgYxAR2hHgBGSEcoI9QjxCGEE15IlRzEmRxPdUYht/J7lD32D9fCwPSp4InJ4Al7CZeoazNADtB3A7GKFnQDOFuZpSi+9O5eLbpLRcI/AuuvuWyD4eAQYhnj/6glu2jY1uSqRgsyqiMC9Z6iMiDpH0DRSmbFnvjdUPn/sUycigvWzc5Q1Kg+ZUyILCYT7a2g0jSPUugZBJozW2fi7buIdfzctAUXUhXdLoUV2tylNEjTyKTRq2FSnk+a5G8B08dn8/sRyq7KDd2nOMgglKXwOF/adSVQJrsHSwTt2sDKiUmD2NBijZoFcQgQILuAjw8YsPVsiX/EogyIylSjAEwiYv7BifFrtCDbwUtzJahnaRXDLwMzlBP8MhgLG1JzCdVBz86oMphmXTa8EBF6FNPtT9qYSWHT2jMjIfaGApF/SXgkIoZIFXttkeigft7lQaU8nKMY33NaUPuHohZKE3ioYkrpcCBeZDVO4V+WSUctgzSp9WO4kdIiQrGARGllm4rXTKfFJtYEsU4++aos5Xkk9yNdAQIZlWvVcOjEewbcIxaM5jNgy7AxxmhoGNixQ2kH/ha+CcfSWgSPDeq6fVwRegaejFMEudgyg1swl1Lfq2HXZ+8/CffpsQhyxBnNUdIarLxtqyNEK2VbbDMY/u2V56RCquG3xP50/IE/r+uFc6e4AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACX0lEQVR4nKWWgXWDIBBAz/e6AB3BjmBHsCtkBDNCOkI7QhyhGaGOUEYII8QRLHfckRPBWnPvWQ0C/3Mg9AnKMcH2qGBHpPAIvPrL1DWY8wmg7QBGF17YAeBiYRyG2OjZuVR0k4yGTwisu25eA8HHI8D5HO4fJ4Kbto1VbkokI1MUEfg0MVRGRJ0jaOipzNgL3xsqH1/fYicigu9H5yhrVO4zp0QWEgifbr7S0PdQ6zcIMn60zobfdRPu+LtpCSiizrfNhRZ5uU9plKCRD75Sw6Y6nTTP3RlMF57Nz3cotyo7eJfqLINQksJnf2HfiUQV4RosHTxjB4UR5QKzp8EYNQukEiJAcAEfGdYn6dkS6YpHGRSRqUQBnkDA/PkVM8XVjmADD8VMVsvQVwT3DIxcTvB3byhgTM2Xvw5qbh6VwTTjsjkpAYFXPs3TV9JSCSw62yPSc18oIOmXtFcCQqhkgdc2mR7y220qlPumIxTjE+5rSu9w1CAnoT8VDEldKoSLzPopfFPlklHLYM3KHSwzCR0iJCtYhHqWGXjtdEp8UHUgydTaqbaY40LqQU4DARmWadVzbsdYg28RCluzH7Fl2AXCNDUMbFgg9wX9F14E4+gtA3uGnfj9WBB4BB63UgS70DGAWjNX/75V265L2u+FT/HYhDBiDeaoaA9XJxtqyNYKyae2GYx/XpbluU2o4rrZ/3T2wPfsdNk2e+B7zp8xV7gGN8m9VLYVPML8UMvCTeEqieRAuXK89P8WC7iAapjvpHtG/JdQceSlhsWOknfpc3pl4ZKav9IrW/aawJoQxS/CUAbjVbk2egAAAABJRU5ErkJggg==",
+    "price": 10000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incMHP": 50,
+    "incPDD": 12
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incMHP": {
+      "base": 50,
+      "min": 37,
+      "max": 63
+    },
+    "incPDD": {
+      "base": 12,
+      "min": 0,
+      "max": 25
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": 1060079,
+  "description": {
+    "id": 1060079,
+    "name": "Green Orientican Pants",
+    "description": "",
+    "chineseName": "綠鋼玉褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACuklEQVR4nMVWi23kIBAdS9cALbAlOCV4S3BK8JbgK8FbQlzCUsJSQighlBBK4GaAwRh/VpFOykhxvBjmzXu8wf4D5+Hh59EcPTgD83LsQQoZflhnwWoD/vMDf11xAK9qDOPOOvyzIKQEp7Q/AnzF7L/GKZgzFgxRSCGEgObthncyjaj1fGQHLT4zdpfdEZifno8onXNgMcnXEBM37xFISAHfkwn3lxnlRglpHgE680Nm2pq8OARhpFsCKscIyGid2LmjlMdgBESGyIlPwqaCzoCOwBYJsWI9K3gVVBRFN/RRDSzQKbPZt11mpYSyazlluD5Hhx6wq/kEQvFKyhos9FYpYd6zFMpQz8X7IdURC3MZiAoMqypXbpgNXX8qoZrJ8HEfhyECsIzMkhiGQitXbsBYQgqW8GtSQcXbvJiF7m5/BXxMDvzDwlWPYfxMyhIsGGPWKldaO3GeHXQIo8HhFf8jS5jiM5aSQejogsooK2YkX9e2QULet6Mo2i6urR1Z7OMes3xaRBm2TlyQ5OKSFIsjCfTcjSsXUuw5sQw8JkEWOW0xd8WoOCszs9KFJaj/tNkcJJ3GIqgQhWM9MmCT0NnJ5+aRlBmsdOGehGSGep94nE3ySsoMtifh98OsLE/wulhMMlJKZvfs7uENsJGyBqOTG30dgSsXUvWtiMWKaOe4FxD3btUCaS0pw2/wDRg3I08sG5nSUl/dJUDZeXcEHjGhgXWDE7vIbGt978NnTckmykdFMSuBbSFaGVlRk5LDEruW2Q1xNb9oOSjP5Qp+6bNq52nC9V2ERLQ3cyehDpJ0xr9B20D58ibg+Th/eTZNs3yySbEIRUCKN1pl5nyKN+kogjtdcFqPwFRgLtitgHOfcQIPPW6si2dcaoTyeR3luDfdsjaEWa/93U85O+t66PALt56Ha0+/oP8BlL7N1d8V704AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/ElEQVR4nK1WjXGzMAwVd13A3wjuCHQEMkI6AhkhHSEZoYwQRggj1CPUI8Qj8OnZljHmJ+1ddQdxjK2n9yQZXmjfRvq9VVsP9sBGfT6SVtr/sc6SHQyNX5/878ATfO/Pft5Zx5clpTW5fhi3AJ8x+1PbBXPGkgGFaEopqt5OPNJxpp+vZ3ZU8zNjV9ltgY2X+y1I5xxZdvLdBsfVewBSWtHjYvz4tWO5WUKsA6Azv2Q2WJM2ewNGHAIonwOQGYbIzm253AYDEAoiOd4xGwPaA9oCmyTkiIeup2eGoGBNewxqcICuN4u8rTLLJdRNLS79/X52XAN2th4gsGdSlmC+t3IJU86i9QY9F8ZtjCME5hIQAvS7iqpcMGub466EfYeCD3ls2wAgMgpLMPSBFlW5ABMJYSLh96X3Kp66qVgwOn0o+rw4Gm+WDsPZz+9JmYP5wuiGPkVaVmLXOWoYZiDHd/5llnQJz0RKAcHRRUWhzJhBvqauvYSSty3L2i7sLSsyy+Mas3RaBBmWlTgh6alKok0VCdD9apxVIWytEnPjY5J05tNma2eMsrMyMcurMAcdv2wqDkg3cBAIpOe5IzOQIsHZKefmlpQJLK/CNQlRDGWeZF6K5JmUCWxNwsfNzEoe8EO2GTLCpbC7N1f/BlhIWYLh5Oa6DsBFFSL6WoVgVSjnkAsKuZu1QNwLZeQNvgCTZpSFeSPDLfrqqonyzrsy8JkdGpo3ONgFZsvSH0f/WZOzCfIhKGGluC1UrQMrNCkqLLKrhV0bdsuLVgx+Xg80Tn1WZB4LDu/KO0JuukZTaZC046sdrKf8+qboftt/eVZVNX2yaTUJBaBeEt0n5nKKV/EooituvOzIwAgwBexmwKnPxMFIR06sC2dcbAR5Ll7ytP3Lxg/TTHu9mbQ3MfuJSdM9/0ZYGvT31ZKDeUe2G8rF+HZrynWFwdkH771sBAqRrICpeB3ir87mNf2c0bUIYJa0BbNsIe3833pWjmfXS/bAFoBrbNQG8F5wafwfBPrlavoZ8FgAAAAASUVORK5CYII=",
+    "price": 75000,
+    "reqSTR": 210,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incDEX": 2,
+    "incPDD": 52,
+    "incACC": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 8
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 52,
+      "min": 22,
+      "max": 82
+    }
+  }
+}

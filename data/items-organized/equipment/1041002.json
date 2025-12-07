@@ -1,0 +1,30 @@
+{
+  "id": 1041002,
+  "description": {
+    "id": 1041002,
+    "name": "White Tubetop",
+    "description": "",
+    "chineseName": "白色無袖短T"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAMCAYAAACX8hZLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA4klEQVR4nJWUjRGDIAyFyV0XaEfQEegqMoIr1BHsCo5AVykjyAjtCBRSgwiI8u70cpHky8/hheVlWJ2g9DGE+MQP+a4iPMU9LmoDJYiZjWHTSzGt/s9ZNZwnRQVQIAgChmFCrxx7ViOxxOWgCwz8uPaSawre8Y9RHBXb9R3CHGhv8WtlUdKclP562yVHn1ojDiExjIBh4g1QpeV4iGbpSGKF4by5pgAL5rzxMDsqZ+JOoAXA5ZdGUlLYFXVCAPeiThDkDAerTVwChBDvJJicP6dgor3l3NnLmBywwWd/LXB04AfbEF8HO1sPyAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAWCAYAAADeiIy1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABK0lEQVR4nO2U4RHCIAyFw10XwBHqCLiKHcEVdIS6giPUVWQEGUFHqKUaTAOh4G/fXa5cCu9LMLWBtEaok1rbQEHB/DjcqijnbscLi8AIGu/jCJerBWffUarWmKgwAg7ABiGn02VODP0BatR9zqXAH6BCUBbg0EDI9+wcFrw/7GcgwqRh+FbIjFOy7hnWHjDn7PLEKogDEUrNF1CbLimAHMTXw0UtTKtjyAQ3pg3A6dr8MvxGaqvUPBC568mJdocdUQiCAGF+4YG15msQCgovEDjcH0XAbrtJpcUPNto0GZT+DSkoUG7qigxKVTzef9CvIA31Wsw/B2n2lHKlkCcGgrQQEjRlmsr78F+xa4hpS56/diLCaUfSJqli/o6vF9HAt721K9ICNFdYWL8A7LN4/mUCWhMAAAAASUVORK5CYII=",
+    "price": 25,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 0,
+    "tuc": 7,
+    "incPDD": 3
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  }
+}

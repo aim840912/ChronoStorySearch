@@ -1,0 +1,43 @@
+{
+  "id": 1102043,
+  "description": {
+    "id": 1102043,
+    "name": "Brown Adventurer Cape",
+    "description": "A brown cape for the prototypical adventurer.",
+    "chineseName": "褐色冒險家披風"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC6klEQVR4nK1X0ZWjMAwU720DbsFXglMCKYGUcCkhKSEpIZQALVBCKOHcgkvgNDY2NjHgvDt9LMFeaTTSWMAPldlE31u1t3kEbAHfnSCl6rA4jkP4rUeTdbw8Q7LZBPaAJwAi8P1qSIg+2RRi+S2jG20M1bVLFr5zAh/gW8ABtG3dAsejhBvfeDgjUtZSsa/NU9DK6xCYpBYMJujxMnS9OueIZGDsr2ANtq+uoeE5Uq24JZqIb+nSmw/Wm8BwUpID2972nuRCeGZs5sWRd9/vhkw/Wj/4G97UecKbwNW51VPXcGgWEgKeTn2WNQJjH4IDKO61TgERZ8368DghwPM60O03X9sF0O/Zdd6XSIIcoJ7LoJm1lKn4joAtW8EOtURADXVapT7vC5XXS9DpYqi7Ac0Fl8LVBeD+P5HMmvUu4yAc5dQJkfmy+mPm9yFEY9KGNrw+4JxLQ2mT8sDToxaUM6yeudciv20r5MG9ymG1FB8iyzJGucQc3atXzWAm/HGGdUy1YRgTfw+EC5fYb5WLywaPjhSCxsNE0L7NE7VscoGtL2d9U1T96gNjtx9NLeNndz4FtO0+HA8Qd3YLTIhleEDZ745/jIJW+gp9XttuqRc2x4Z2jOO4KbCvgH1AtXoylVgssFy5P4Dj/ibr9H8tBs72t7TUewLLlXt/ctXGCkf9A13f53W5S9+5XCKZBDyX9RBxoFT2WIz7i+rU0eD4JrmckNfl9sDF5zdn69EeH6nY4nLvlrpUWMv/5pPPnefjczyPxwF+s28jI8Boek1/eIi0ZX0G8GaZM+/MUGR4uY/ElqxvWazuwFg2UKayGdtHIR+l8+UD1F57nYCEaZQrd/OoqW97QpGGqHM/HtSVatmIHoW5L4Hdz5PYkAxem7pbum6BfUnx+MN7FQ3iK2HFySZnWWIAudD4onDgjDU44Cr6zLAlRJm3vomODL7uSYX3snQPzGcLxyn0j0ue7V+BVVyx2TcZOtXqau0vsxiFz2JGSbEAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADGElEQVR4nK1Xi5GjMAxVZrYBbwneEkgJpARSwqWEpISkhKQEaIESQglHCecScno2MjIxn8ydZnYDEtLTH/NF2+hFn9NuSbgG7AGftaGiKCOz69p43Xcuq3i8RWezDiwBvwAIw5eTI2OaRGjMeG3VTe8clWVwFrqDA2/gc8AR9PEIDLZHSWx8I3DOpFHbgnW9n4YmWqvAZHvDYIaud0enU1BWQcaI5RdRI9p7XVF766gsuCQ9Ed/SsXFvUc8CQ6mwbNjXtpEgx4CHiN3A7Fj6fFbkms7rQd+xsM8HPAu8Ozz6V12xaW4kGNzvm2zUMAw5Gg6guO/7FBB2plGvjhMM3E4tnX/x72MEFJnns9zCCQqA/ZCGnqO2Nm2+NWAfrWGF0sJgj+70nXq7jKHc74b2R0f1GWjBuDUhLwCXJ+HMNOrFiGPjFKE70WSSVhkzkaMRnUsLWjG/xZxbR2mR8sCva2koR+AeuNYmL/YZEnDpclBpzVuTZSNGusxgXbq3GMBc/BcIfGy1tu0SfQHCD6dYRNubyxtXIwWjepkYWqZho27bXIhW0lmeC9r9NDHiIFdby8nuzruAsl3a9QUSZncDGTMuD3T2s+aLztCkv2Kdp7SY6jGadUI5uq6bbbCPgMVgMXkzbSHdYLl0vwHr+iZ8+r+kgbP13ZrqpQbLpXt5c5XON07xD+FKnafp3nrmCo5kHJBYpkskgNK216KuL7JTqsXxiXO5Rp6mW4A3z2+Opqtdj5Qmne7FVG9trPHZvPO5eV6f42E9ttAbdCurANX2ev3mJfLYVmcAz6Y5c2ZGR8bDvWq2hD9HurtjxLZCZxbeY/8q5FE6HN9AAfXd9PRH8b8Hfjbd1bWk5tEQktSqyn0JaEjVKFCvwh9hSaD8d1C2C1ogOINjU31O+R5YUorXH85V1BrdWPLtkhwwcyBvs2yxgPzVkcHrAM5YbQDeDZ8ZSJlPIdKs6iuttGneoBveVDiXpTJEPlAcJ6nfnlP+VM+eFODMDoqyE2fsHm6TpbMf5N/ahh4nMPkkHGtKlI9y7oPITXTdzLWnv6ZxkfVQVXqHAAAAAElFTkSuQmCC",
+    "price": 50000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 50,
+    "tuc": 5,
+    "incPDD": 15,
+    "incMDD": 10
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Cape"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 15,
+      "min": 0,
+      "max": 40
+    },
+    "incMDD": {
+      "base": 10,
+      "min": 0,
+      "max": 35
+    }
+  }
+}

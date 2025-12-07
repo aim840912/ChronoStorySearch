@@ -1,0 +1,49 @@
+{
+  "id": 1061024,
+  "description": {
+    "id": 1061024,
+    "name": "Green Shivermail Skirt",
+    "description": "",
+    "chineseName": "綠硬皮裙"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 20,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAARCAYAAAAougcOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABw0lEQVR4nJ1VDZnCMAzNvg8DRUKRsJPASeAkbBKYhCFhSAAJVAKVsEigEnpJ+sMYKxwXvtKmpO/lpT+soGwePrdqafIVCdxuIyjFI00NwTmg5gCtBUuNDcnXFNQdjkWcEokfhh4QEYRDCTrQdyCJTYzH1HF823Z+SU1RSb3l7AMwOhvxiFTRvGZyJ4Rp3qD9SIm/jiewaERJXW8FhMcMuiXyNIacRlC422s4H/BJzaISnICKjyi9otprUlLKuUQ0J/Gna0+bamSBCrueAdjnBPIcfRQXTsU+7dPMpiR+uDSZIANEUCmLC/XnEhpz/rOa1VJQItD6uf7saz2JX1AzV5RIREWqvUNaoBXMjeeddvFA1HJXEvE0HvFRDZP4pr8vYCAJ2tVZxXRe6ZCpsyHbcBBsTixUAAgPM5EoOXbhvOx6LUCagg3tTTIKvGdpaByTZhDeJwZnkqnRDQixsVz5qJ07kccPSLjl0fqmkT4+HRX97Pt98/yUPO5F8QinH/xlGPIkl5L3YGrsc0x6w9j//mkfwEsk2TQt4nthTSjbDKAi34/jNSfxyl6+wu9MXoB4yv5DUm02X/P/k3kZqvV68y5G7BconEYZp2JT6wAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACDElEQVR4nKVVC3HDMAxV7kLAg+BCyCB0EDoIKYQVQgYhg7BCWCDUECoIMwRPkj91Pk6WTT3VtiLr6UmOU0NZHOyXqvRgDQi+v++gFM80KYK1QGoBjQFDyoK01uR0ef9YzaAE5Pq+A0QEwVGCAPTvgYKK8JwG9j+fL67EqsioOTILHxytCTEJWJFdcwJWQKN9QLObkbvdP8HgIIya5iiBeM6Bj5RAnENKxTM9vWm4vuMiq0VGmAWWNaKMinqhiVEp9zWwKZD7vHXU6EE2KX8SUhBecxLJRj/FRVRhjH1bkBzI9V9tAklBQmApkfX94HIOw3UXq3rJMYJoPe8Hr7XO/BdYLTGLQMIm9sIibdJq5sx2q204JI28SxE890ecs2Ig13aPTRxMHE9NYpPblfYZW+Oz9ofDpOR8JYDi4QhMGH1c/Dk6dVqCadowUK+ikPMj24HmIXkOxH1jAAbKhd4O75uVLjXsehF0vmz8bRCka1sZwzVT0WPXvbXza2fcm9XjHR+6r75PRi4r9yQXXrNPvPN4/fJ6ngGUgJJo2sjvjRl8CSdBKlq7+/2WEtmSGv4hclOE0/dXoOpweJ5+j6YlqZ6eDls+m0Crm3b6bALlomC/jI7gFEhNxpLttyA2agRSBS2BLgVdsst3k7XOgups/CuTInjOqORU/siMn03nI63hQW+rRKoAupZYmv8AfIpgBRPKiHcAAAAASUVORK5CYII=",
+    "price": 4500,
+    "reqSTR": 0,
+    "reqDEX": 65,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 20,
+    "tuc": 7,
+    "incMHP": 3,
+    "incMMP": 2,
+    "incPDD": 15
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incMHP": {
+      "base": 3,
+      "min": 0,
+      "max": 13
+    },
+    "incMMP": {
+      "base": 2,
+      "min": 0,
+      "max": 12
+    },
+    "incPDD": {
+      "base": 15,
+      "min": 5,
+      "max": 25
+    }
+  }
+}

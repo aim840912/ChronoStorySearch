@@ -1,0 +1,39 @@
+{
+  "id": 1482009,
+  "description": {
+    "id": 1482009,
+    "name": "Beia Crash",
+    "description": "",
+    "chineseName": "拜爾毀滅拳套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACdUlEQVR4nK2WgZGyMBCFl5m/AVrAErAELAFLgBKkBClBSjAlSAmmBNMCJeTylmwu5MQf73wzDBJCvn2bZeUffVZ2ZTyLLz4Jtff7nfI854uiKMgYw793u50Ek30Saq9VQ6YbwoB2x+SO6nIiBIMAjscj4NknoAws3eLTNJF24NwDIXVsHfjMv6/XK4P/AuWU3Zt5QQDhZppcSvPCjxkP7qg8N6S15uvfQBlm7bxNw6Gl0u0fHAKSJ0AXC7lQqIwWeAfKFEklBGfswKeUVoCQuNwCDa8AYBCqcmx7hvFiyR6mQKQ91SuolRTCEYOK2UmazimB8TMrwFdQfucEGKdGUusGqXeVWZIJ9165gwofdAoN+yYvtlKKCj2xu/xUh0Cg+nwi1fVUzDv6FIhmUdRVAKZQdocXnCeMhpep3YJ5VXon8lpMiwxIsTwDVqeG2raNh0NzWLQwfiCKjBd0EKU0leUcAIBGjd/3nwCV0aRm4PPey2kACJ2lVwwBGGdJJ8JQql8GswLz5hewGGovlwsdDge63W4BDCfa99K4OrGPIglm7IclcAX2wyn6IsA4I4V83C5h8diRidxjvGxqTvUWYIBio7GncAqwBCELp+r7PjiDECAqlHpNW8RQpHe/3/PA4/Hgs8BFcZEBEjvHVkiBbYZCdV1TVVX4w+VrOOcKjdIoGobv/008964YGu+ZwMX5mjAHQvPAM3EmNkNTRwKXe+JaPkMAWWt3W6CZi9bG8LVqFSACwv14Ttd1OP23coNTmeyq8gdcWh2AAk2BSPFWYAwVZX4R64PgFCOVOMZxbnsC9AFthq1BF3DIgdJv2czBbDrvHX0BP2/FU5XzUiUAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACqklEQVR4nK2WgbGiMBCG15lrgCsBS8ASoAQsAUqQEqQELcGUICVICdJCSuDyL9m8EBMf7547wwBJyLf/7mb1D33W5sT4zn/5JHR+PB6UZRm/5HlO0zTx836/F2d2n4TOt7Khqbu6gdFc2lzl5URwBg4cj0fAd5+AMrAwm2utaTTgzAJh6tga8Jmfb7cbg38D5ZA9mmVDAKFGaxPSLLdjkwV3VJwbGseR3/8HyrB5XtJ0rVoqTP6gEJAsABpfyLhChbfBT6BMkVDCoIwV2JBSAggTlVug7ggABkNVDm3PMN4syGEIRNhDewedJYRQxKB8URKGUwcw/iYBfAflMydAPzQSWjNIvanMgiY3904dLLdOh1CXNznYSinKR83qslPtHIHV5xOprqd8yWgUiGaR16UDhlBWhwPOC4aJt6nNhllZWCVyLPQqAlIsMWB5aqhtW3/YNYdVC+MPPM94QwNRaqSiWBwAcFLD13wEqKaR1AKM914OA0DoLL1iCMC4SzjhhlL92pkEzIpfwXzofLlcqKoqut/vDgwlo+2lfnUij2LizNBf18AE7EUp+iLAuCOEfN0vbnNf0eSpx3jR1BzqLUAHRaKRUygFWJyQjUPr+94pg8FBVCj1I20xhiK8h8OBB57PJ98FLuYXGSC+cqRCCmwzFFbXNZVliR9cfodyrlAvjGLX69fvJr77qTHUz5nARXnKsAaG5oFv/EhshoaKBC5zolr+hgCSandboDvj7ezDU9UqQDiEeX9N13W4fVu5TqksNlX5ApdWB6BAQyBCvBXoQ8V2dpPZOsEhRihxDcPS9gRoHdrbb3N6NR17jv20oSL+2jtAz2C+MrC7PAewMMlZMK5j0My7HCTiWGzMh6ScoBjUXxx66W/8XdnGwpoMr048h8CtZyW67h+3S9cLY4W5lQAAAABJRU5ErkJggg==",
+    "price": 300000,
+    "reqSTR": 180,
+    "reqDEX": 70,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 70,
+    "tuc": 7,
+    "incPAD": 62,
+    "attack": 8,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Knuckle"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 62,
+      "min": 58,
+      "max": 66
+    }
+  }
+}

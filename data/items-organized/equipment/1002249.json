@@ -1,0 +1,43 @@
+{
+  "id": 1002249,
+  "description": {
+    "id": 1002249,
+    "name": "Dark Identity",
+    "description": "",
+    "chineseName": "黑忍者頭巾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAcCAYAAADvANYcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACMklEQVR4nL2X3ZHCMAyEzQwN0AIt0AKUACVACVACLUAJUAK0QAu0QAk+1sP6NrKcH45DL8kktvaTLCvOOLxnseXdaKizIRBZeDqdhslk0nj5eDzS9X6/c1xvmD4Q0RO2EATBuKEwNYgc9Ww2awh74gTQd5x3u906YTyISAd06qWe6e+yPjAWogFQi1qfE6YNCuPhF2Ney9QAUYiI9WRaa9FasFqB8p6+aNCwIMVytGXAE/Lm870FoF8LQojIqlaR5zqGLtN5NSj6rGWkyIQKr9frQuQ5UbdhOB6Pg6AMUCMTySFsPp8nR+fzOVyv14agZ7aOdJwCMSOv935hQhyGTGDgdrvNDi2IvULgld50r1cFoC+vMCMAEDUGL5fLLHo4HIo07na7LGgBdd21xxCqZmM64F6mU2QCttlswn6/T+IaPeqFz9R0WWybr+2qvBwYgIyw8GwbJsDpdEpZQ0G21Ysujxq/L8UWpTNEhghhq9UqXS+XS7oiGxDncwVTAX1uO6sXWIbgLkAmsCtgqA04WiwWxSQrTHEGo628JlxAsBbgnPcAs9GpqXBbHfSxsTrURsV+QdPoVczWg+2KntleAYgRisQ6Yyb+YrZxaQsPv2eW3LZHof3c+FEgU7BRvx1Mz8dgvHMH7/Wdd7LSvl4A9S02K8y5/HAhA/TVddAtjmKYHPpbzi4BtFHR1zv/HYP/K2j8jpiOGd/9+RlqKWrvfyV4h5r/BJF/kYZ9EyKByH0G+gF4FKeyodKVrAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACcElEQVR4nK1XC5HCMBANMxioBU4CFkACSAAJIAELIAEkgAUsYAEJvXuZvtzrZpO23L2ZTjr57Hu72W6TefgMbWVsNtXYFBGJeLFYhKZpeoPv9zu2r9eL80aLGSOi9YitCArBvKliSiKS18vlskfskVOAjnHd8/kcFOOJaGmARr3QM/xDGCPGiugJKHmt/RRTE4X5sIs53Tb1hKiIFvvJsJa8tcJKCcp32iLAYYVk21GLgEfkree4FUC7VghFtMxqJfnZxzAEXVcSRZuliGSRUOLdbpeR/CzUzzBcLpdJooygXiSiQWC1WkVDt9stPB6PHqEHm0c6TwUxIt24n5ggBxAJTDwcDsmgFWJbEHThje/aqgDa8hKzhQB4jcmbzSaRns/nLIzH4zERWoG671pjKKqEOQ3wW6ZRRALY7/fhdDpFcvUe+cI+hW6LLfOlryptByYgIkw8W4Yp4Hq9xqghIWv5otuj4P8l+0RpDJ7BQ2C73cb2fr/HFtEAOftVmBJov62snmNJBL8CRAJfBYDcgKH1ep0tssQkpzNaykvEmQjmAozzHcKsdwolruXBGMzVoBYq1gtCvVcymw+2KnqwtQIiZkgSa4yR+Ats4dISHn7PLKlsz0L93PivgkzCtvrvYHj+TYx37uC7jnknK63rmaCxyWaJuZY/LkSAtoYOutlRDIvDeKToUoAWKtr65N4x+V5B8D9iKmb76eVnKqLX3n0leIeakRifGEImd5EehkQ0pi31DYEZ+tW940mCSiKawlMS5BF6/Xhe3VM+bQvhQlol/GQrqjelWiRKBmoG35V3+1RFMGRDYW8KgmqiXQe+AQo3v9Q2wgPSAAAAAElFTkSuQmCC",
+    "price": 55000,
+    "reqSTR": 0,
+    "reqDEX": 100,
+    "reqINT": 0,
+    "reqLUK": 170,
+    "reqJob": 8,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incLUK": 4,
+    "incPDD": 39
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 4,
+      "min": 0,
+      "max": 10
+    },
+    "incPDD": {
+      "base": 39,
+      "min": 9,
+      "max": 69
+    }
+  }
+}

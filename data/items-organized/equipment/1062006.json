@@ -1,0 +1,43 @@
+{
+  "id": 1062006,
+  "description": {
+    "id": 1062006,
+    "name": "Bennis Chainpants",
+    "description": "",
+    "chineseName": "打獵褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAbCAYAAACTHcTmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACbElEQVR4nJWWj5nqIAzA4/e9BbgRcATeCDoCjtCOYEeoI9gRjhEeI7yMICMcI/SSUGgrredF/Wgh/BLyp/UP1DLC7+WwvNmCwtfXA0IIoJSCGGOapHG6kjmZp1/b3ar9m9C8cT2G1VwMcTb4A3S8369yQU6Kp5MJ+qqiJCgV5eJ6tXC7OQ5ZCUHl6QxS0y+mURVcmo1pTYF6RtRQrTR47+B0auTIxUhM8BzZSDE3JyNh+BGqtAYdgMCDgAN6CAQvRyc4ehSgGNQVcztR2hgABHDuRmALOLgZSp4x0GizMvbaU5ViyR4TmsADJ6KsPx7/Z+PExIjvebojnN0xG94rpxfQtCEsavM3UkHb4Qy9/aQEoQAdutV65y5wb/5NSdIUmstL6Gh7DSdlJY4BAwSFELys5cI+uC5QCM6gYyonFWlPE8EPsTTAylOFpNDbdEPD5XIpoaj07Al0QxUQEDrp/1lvBb32PR0rFR4XPmJYepnlMDg/9vc748EYBbQNzud2G5qFgezBO5IT2ZDnbIyNZujI9Zfa0woQKVFLxQVHdDnu1jaiy4/JpRRPOZushNSW3ntJgjYUinXyi1h7JV23qft0fEVVYshbWqfWnJ9YT1rTPOtqait8CtVuR4nlN0XptXGGjvz6mJ+dUMVoF0aVwjngXPCevm+ovIax8pQDzxnlI7atvH+qkvr4OBZHtkK0U1JxN55PmvN7i7vLqBmaIGl89+hcJZyoZUllAwK9dZ10U44NWx28g1fC1UEVuHLCe5yhuT1z4XPtNXQ9xXRTcptyccormz6WmgVxEOjhePy796/ksDfPyardT2vf6xVj7ceXci0AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACrUlEQVR4nJ1Wi5XqIBCdPccG2BKwBF4JWgKWEEswJcQSTAmPEpYSHiVICUsJeTNDSMRAjI5GkN+dz50JO6jLAO/LV21iDQh+f+/gvQchBIQQ4iC2Y4/HeByfc3td1WAVKB2Wtz4bCz7MSnwANNxuF+6gMWzRCItfMS3i40XgzuWi4Xo15O6i+6oWzYeL8QmxFRNEHA1xToCANakCSSHBWgOHQ8PumoBDBEyRChhDdVDswo+AhJQgPSBYz2DeWfAImITi4qxjEFZCruKsk0EqBeAAjLkimAbXmxkILSAQJVWmwPsWiRgbsgzhEKynYE/z9/u/WSHEccF9BrQixKohKbOF2huA4iH+IXc+lSrQuT9Cp/8iCRyDGGey+dac4Nb8jESQ6NbT20CD7iQchOa4eOfBCwfe8lxKxi/TenTfEWSI1BYB9zQBbB+KSVu0SDjc1On4B5vTibQN5XX6ALJB5nkHLde7souLQJeuQ5fExKBkdc4/WpPkqzd26G43ggSlBOA2OB7P24GSEAhpukUSWRq0kBR4VuwZaKD8iKVHM4hDMlQ281qKo9YNr6VXSk0WFhGLaKPDkmOt5UBLhW40UBStL7jWvFxbcZ1Axiq0Cvdg2Zkr+VIpElorsTy4FTe/rAys4UYRsv6qeAQa6NU9v3tg1ecZADKUYkqxpT1d1yDV+yymVYsouMQkcs/5zPeBBb2/v/eTcjX3vgQiSUCvZb43cJVQyz0ZUDw4tgW3FRGJnUSGR3qXCnAGdG1brgrJ16RdbyeuqhIQsRKzIVPM2ol9EmLAQwJibVPpSclKudFgf4yRKlmVShAlD1+/8KMxwZ3r0x7SwO9gvuYc9/s/P1CWHsq3gh4J0SzN5N+s6GUWoZwe+ttYMB8YnsazZzd2/NPBJZA5wZZgtf9T/z8nvXb2oFugTgAAAABJRU5ErkJggg==",
+    "price": 6500,
+    "reqSTR": 25,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incDEX": 1,
+    "incPDD": 18
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incPDD": {
+      "base": 18,
+      "min": 5,
+      "max": 31
+    }
+  }
+}

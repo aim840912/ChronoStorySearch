@@ -1,0 +1,43 @@
+{
+  "id": 1002138,
+  "description": {
+    "id": 1002138,
+    "name": "Blue Pole-Feather Hat",
+    "description": "",
+    "chineseName": "藍羽翼三角帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACUklEQVR4nMVW7ZGrMAyUZ64BWuBKgBKgBUqAEnIlJCWEEkgJUAIuIZTwKEEnWTbYgMm8/MhphpgPW7sryXK+4O8M6VJ/QQDtqPjnkwQEOKsBdLu8/BQBhMs/gHkCaHN+Vp8kgF3XQaUhUP4pAkY5g3fZQOEvoKpCEu8SwM2zgojhNQHVaKhug4tAMPcdAgj1KHezlvHR+ITUdl5XUO6LvfpXBI5UhuD6AdiTsqs36dtbl6Sg8kbuD9SfEUB8ek8kQJXkmLeQVY3XRt5Xdbjw2ToiUvWhgJ2dpsA5x46cpoW8nGcCHgT8x4KTUhkTs4bnY8+kc+j7HsqyjGIcETDq1c+dQC2R2wjjJYe8rY0qDvuiPM0suB1TWcsREhJlVP0RAQFvKKkJhI7PzJ/D95SmkIT0/TMCywQ9gAllFDzMq6Qk2cxxJDgd133lbwngSNGmYpXxYdV74HifqaiKBUiVBaWklZQYEjoEd2MqdYJ9u43CciAtKTCh57ymyer0JPxZGvngk2FLhYgTabB6JwTQEKAOacEjgAMXUrFxDF461l1wZKagJ20ioWkJX06AIbDdy74a7FLpIcle8ngZ1jSY+XOUBItz23ashYgjoAjBNpljB/mt2BWa1MFggaeV4AsSHAlD2nZGVwNCgo2JLM7I8cSttFif2fi7u3fgwbc5BHbfwuN4949I2UkrEZD04L2V8HnETDMqN3Xhg+0BVwzPjjrhSiRz3Q52+18PEdDJ/xDvgGcE1sU2Gnyw4HN1zOByyA3H6/7DXv0fWJwFx+wbQDH7BWiMCKAxkcmzAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAYAAAAAwr0iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACm0lEQVR4nMWW7bGrIBCGl5nbgLcEbwmxBG0hJcQSckpISoglmBK0BC0hlnAogbvLgi4IZub8yGHGoAL7PvsB5g/8XjN4qd8AMK5X9PNJABY+XQDmbn35KQAD128AvQB0FT2rTwKYvu/hPEPg+acArOck3p9GDH8N53MI8VMAEz0ryDRzK0C1M5zvo49AMPcnAAYuE9/pmftnK4FUPK+vMff13vt3ACkvQ/H5CWZAz25i0j+xrihBVS3fJ7w/AjDmJZ7QAdWgYdpCzmtza/n9+RIufHUehKs+dGDXDlPgjZsejZY1v9QahUcW/3Li6Cn3hV1D881A0BUMwwBN02Q1UgDWe/X1QFEHcp9gulZQdRfrFYV99bw8OXHXl7yWIsQQTdb7FACLt5jUAkLDR03OoXtMUwjB5/4RwDphHsGGMise5pVTUkRzPASl47av/BjATBhtLFbun857IW4eGouqXoVUU2NKOk6JhZhDcd+XXCdm6OIorB+kNQU29JTXstiMHoT/VGYGJAy1kkG8k1Zr8I6AsQB4QjrxjOBIhVRHhkGkY9sFqWYLepltJGZcQpd3wALEe1l6Y/qSz5Bi7/J0Hbc02Pk6C0HO+W07XRjEAyhUcIdM2kB1r3eFxnUwOuFlA3wDQZGw0O5k9DXAENQIZDWGhhc6SuvtmRqN+3svHozpUNiPhZ/j3T8i5SZtIMDpMY+OwyfA7GHURHUhxfaCm4ZoqZNwAzn50w52+38eM6KLHMifgEcA22IXDfqwmNdmmMT5Izem1v0V97IYNCTau/8D3liBEK9oLPeFSe1lLXotnrMAReJqxZgXSpV70lMhvLhL5wC8YCl6KZzZY4ctB3UYgdzirLFoLL6PryyAD5OESHldZGCOgHfz/wPifSQ5ikGuYQAAAABJRU5ErkJggg==",
+    "price": 25000,
+    "reqSTR": 35,
+    "reqDEX": 120,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incMMP": 10,
+    "incPDD": 24
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 28
+    },
+    "incPDD": {
+      "base": 24,
+      "min": 6,
+      "max": 42
+    }
+  }
+}

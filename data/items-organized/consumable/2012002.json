@@ -1,0 +1,27 @@
+{
+  "id": 2012002,
+  "description": {
+    "id": 2012002,
+    "name": "Sap of Ancient Tree",
+    "description": "Sap of a thousands-of-years-old tree. \\nMagic Attack +10 for 5 min.",
+    "chineseName": "枯木樹液"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAdCAYAAABFRCf7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACtElEQVR4nK2VgZHCIBBF1xkbwBKwBK4ELCGWgCUkJWgJpgRTgpQgJRwlSAm5v0uI8Yx6M97eXNQEHrt/P2RJr6N/8Wzx7ME7KPVXXBJRjFp+p6joaxdeznkLJVLDZ8rg9H7GO+hisUo9grq4Ix88+TbK/Q8zJeqaNXHxBv8+3+rpE005jB3KDpIl1U7ToY1PwX+C5riJmeJrYf8GVTcmZxnCf0BBTfhjFmfpM/QzTTk6nwQY/8FS/XFvyPs4At9l+Q4qwAhS0dBoLv1+zOT7uNAzqAADMuTsKqd4n5I1sFIXZ8eggtFiTzMdgZUi5ypKvqOE398nTettvANqrGmNGsFPoRmYyNU1ZT9lXzH4AnBzyBmzxmwzjQkF/BTK+lWVle/trpNPjY2lBs8esdZ6m7XG7iLRf5CmQIvgrEl/2msyhgEGwJbc8Zt87LBLPTnVomwjg69notUmUZGixLIA+cGuCX3OkoF8sYB3IzCEQKo+oeZGZIg4Wy+nitq2u7PbsnSMgaxNXeWSlObS88FcgA97Hov+Bk7Llxt88tQVZ5izlKwtz/CkUJ077pHeTprGi84Bf0P76zl3Qik4PG5mGxiDoghoGIDcUO560z76VHx36BIV+2idXyOuimTchRSybbctWUeyy8SfGGtgiWp/AXR136ipkUuwfgrgtoMTCCWjM2wpJDhqy1cG+mZLzmKsn5i/AA0nh/IjNGKDsKEDP7A0vv9SGLJUsNL5KkCRZZLQ8u4Gz4eflOUd09HovIkHR225QQDyG8ZYXvV20oilhj0rm5h7xCP3Dkcez0DZ/uEMhZZwR4BPxbA0b6lFTijBUmAyWDuyqRXdEs67MBwczDDGQm+0CYuyzVbrr5ExhZZYbA6+P9cW73futJPTSSBD4ximtZHnc8A56AjONXl6Fc0MkOMHGNqfs+4ZcJUAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9klEQVR4nLWWjXHCMAyF1TsWMCOYEdwRzAhhBDNCMgKMQEYgI+AR8Aj1CHiE9ElO0qQECHetuZA/x58lPcle0bLWPnn3sWSApSBqb/hLRDFquU9R0ec+LP18OYhIdeeUYYneaktBHx/r1KJRE/fkgydfR3n+1yBpTbUhdpzB4fOjlv46RtyM7VwWxBoqnaZjHRfB3gLl9hOcFJcH6j2Q+uGwNSH8FwikhB+Pz9b4DPr7GHFrfBJI/Cd5t6eDIe/jAHnHmqUggUSM3sfEaHbbtM/oehb+CiSQAEvYisIprkFkDWTdxNk+sHRW7i8tGiCFIucKSr6hhPuvs6bNLk4gGvOwRs3CXoIyJJErS8razhpn2BWw6pgt45ix5DU+mIO9BHE8isLKdb1v5KxRIFSXUyfwN7scO1QJknj+uPWhRX1QeSbt+aDJGB7UAFKTO32Rjw0qkCenarjMSOfbhWi9TdS7ca6NQQLhzvsqtNkahvCfBbAZICEEUuUZ/qrEhRFr0/VcUF03D6U/BskLhrCvyyK7Q2l2W17seshdjcNEnkHmXCeduCKXBVuSrRHrLI/iScEz7nSAGXsmyEReQR6B2tslR1spZGXczn1HMSiKAIUOwqJhtVX1sjySvDg2PLMsZa3zEu6KSMZdScGqeleTdSTVQvIHfQ2kWByuAK1nJzYRwzj5+sbxUIDVDRRIcBeiz/KGIUOs+J8hvtqRs+jrXyRsDzFsBFwX4XMWKydh4BeWhj1KCp01CrK+3AQiLn1Q1SegoROPCW0ry5nf0JAZMzkiIgCEV3djeSbzW7CJvLuyIUWLdcBfHxyWBx4FLvN3s0VsoMqAPJKEokF5n5T3MH2wUw9S3cEdlI/pUhbgMEw7sqnOvbE2hK548rjGWMQPUsBEWPLrDX9OFWUn9xB2Q1yNIHp0rrZHf7iUFvs3VpiTqi0Dd+JggNZG3o8gR5rsLO5dp0bP+k4Cy/7w9KxVGbL7NcbkWI3MG8P6689fz+Y0lZ7cD9ffsDe1Ud0uIzsAAAAASUVORK5CYII=",
+    "slotMax": 0,
+    "price": 700,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Food and Drink",
+    "lowItemId": 2010000,
+    "highItemId": 2022000
+  }
+}

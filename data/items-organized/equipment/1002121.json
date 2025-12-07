@@ -1,0 +1,43 @@
+{
+  "id": 1002121,
+  "description": {
+    "id": 1002121,
+    "name": "Brown Robin Hat",
+    "description": "",
+    "chineseName": "褐羽翼帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 20,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAXCAYAAABqBU3hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACmklEQVR4nMWVa7GzMBCGl5ljACRQCa2EVgJIAAlEAkggEoKEIqFIKBIaCZzd3FhuPf3+9NuZDrmR99k3G/oD/ycm/EXU+DbA5J6RH/gmwHSvY7gJvRj8FoAR34tvAATxYdSbyX8FmFg7ejO2CRIXcrvmUwAj8lIxbmQH8CzNmGLW5m6Mw2FA3ySHG38CYDbReoRBXsCbSLZyQzV26sK2MdNwzTRO6LQFIXIO9jGAEe+6xnSuxQO65mLaMSZOuWsnzoNACILebcrDU9kArM9yUqoO4hR930FWPUCKE4wo7yHoaRlik7EPL7539k4v8gCGVpS5fVF2E7yJEesgTbXJPI6X14v6HMKJ8wRNcs/nA06ny/SzFqd43hUMetwVJxdq9QSRn9yIFUvTGYBEX68Xru2hgg7n0vB+KZqpKrLQ360BIQRaXcwDNtWVCzHQRun5avpN4xOwQEmSQHG1YKUA8KJtW8M4DMG5DQBNLsRtWhsX1OMB5e0GKa6nqCrl3u9B9nKx/o5VeUNbCGJ06w8d0DCLLRLfcYHO2tZDDFI22NZBkIfs+rUMbpXOAHrnvNdXy5b6DEEutPc71kIehLMKb00jqIg3xXkUCwcG/MwVVWbFnZgHoc8Oh6L9B7S7Vgpk0xhrSdzOxQFIijK8Q8U4omV1qyCKzK001zBKkpO5FmVezuJg68FXsNc2Y+czg+4RujIQwNZQcHEqPg9x6IBVcuJISlb6uDLRsFEcByc4hAdM57sZyicr6pD9BiCjq2IKy4qvReesR/PLsmsoWg6xyPKPWvAAEX2V2rpaZN47K49AOlbdBNOPnYHg4V2pansEPHsOYAbpK+XbfBMEeftp5rDtatwLY50FHT6/roGjv673f2ksWBK+/3aPX8vqYWWFQINyAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAYAAADLnm6HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC50lEQVR4nMWW7bGrIBCG15nTAJZgSjgpISlBS9ASpAQtQUvQEmIJsYRYQijBuwuC6wcmuT9ydoYRFuF9dllMfuBvbMQWUOfbAOP0DKzjmwDjrRBwlWrh/BaAFt+zbwA48X5Qm8lPAUbWDw58GyNxWW/feRdAizwbgRsZB56l9jUstcnk43Bo0JWhd+N3APQmSg3Q12ewSaS08oQqHBSp6WOk7popnFBRBVImHOxtAC3etqUeXNI7tOVZ9wUGTrGrSZwbgRAErS0z76lsANZnOTZN4cTJuq6FOL9DLU8woLyFoKdhEDpia1Z87+wnvcACaFqZJWZh3Y5wYAPWQRQpHbkQy+tFYw4xifMAdXCPxx1Op/P4sxYne9wa6NWwK05ZKJoHyOQ0eYxYFM0AJPp8PvHdDnJocS5y6zNZjnkau/FuDUgpMdXp7DChrrIggDaKfi96XJY2AAMUhiGkFwOWSQArWlUFDH3vMrcBoMmFuAlrk4XmfofseoUI3yfL82Za30Hd1Yv3b1iVV0wLQQzT+94MKJjFFoHvZIHO2tSDgLousa+cILe67dYyuFU0A6id815fLVPqMwRlobrdsBYSJxzneGtKSUW8KU6fLTLQ42cuzWMjPolZEPrscCjav8d0F00DdVnq1JK4mRMOqJaZW0PFOGDKiqqBINC3Ul/DIAxP+lpkSTaLg6kHW8FWW/t+fxl0h9C5hgD2DhkXp+KzEN4MGKVJHEkpldYuTNRtJITLBIewgNF8N135xGnhot8AxHRVdGEZ8bXoHPWgWxxfXNFyiEWUL2rBAgT0VaqKfBF5N6XSB9Ky6iaYbmg1BDeblbwwR8Cj5wDaSV8p2+ebIMjhp5nDViu/FcY6czp8fl0Dvp+u4580ZiwIOz7c43//kh0dbAgf2CsAsXr6fK9MsadiYy+A8DQfzJ7Ynp/aMDXlA7BiEXtysU8ifwV1mAHfYu9mq7l1f928ADZNr1Jt/xIeQRxBafsHsgR7XCrjIXEAAAAASUVORK5CYII=",
+    "price": 6000,
+    "reqSTR": 0,
+    "reqDEX": 60,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 20,
+    "tuc": 7,
+    "incMMP": 5,
+    "incPDD": 15
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 15
+    },
+    "incPDD": {
+      "base": 15,
+      "min": 5,
+      "max": 25
+    }
+  }
+}

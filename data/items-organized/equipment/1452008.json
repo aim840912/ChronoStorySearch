@@ -1,0 +1,39 @@
+{
+  "id": 1452008,
+  "description": {
+    "id": 1452008,
+    "name": "Olympus",
+    "description": "",
+    "chineseName": "天弓"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABiElEQVR4nL3Xi5GDIBAA0GXmGriUYAtagleCKeEo4a6EWIIp4WzBEqQFSriUQFziMgbREGXdmSR+dtgnhAE/gCfMyj3h5YnUCCouXuTgfdP0/yCLk0mFsMXHRqeY1XyltT3Zg3CFyp/e/kpZw/df7xLyLAMqhsdUFON6LuwHNgzHrDCG1uopaWw8JuywxSJMqHDfVNB1HfwOD6hVN3y1A6B2jb9oz+XEIAwVpye+VJ+2cCHbx/UREFF8BohFiK4uTFY1DlCWJVxg6IH2thtAiJhpJXQrLQQLpwQQAvI8B6XUYlIIkgpACIGACMgjp5UAWZUMQAiIgNC9x1lCwBSxBnkGjLmpAD7CQXBK4ozAC9yAEMIFTUn7H2AErCICwQJ4B8EGCCHsGo+r3Q2GVa/+Ygf4CNsQbjIQcj2fDgH4iC2xG7AXkQSwB5EMsBWRFLCImO4FuQGLiCMBiwjaJR8BWER4w8EK8BEC5i8t7AAfEQp2QAhhe+ONlxcWhFvAjoTMegIXMDo+CnEHegzU3FvZOH4AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABwUlEQVR4nL3Xi5GDIBAA0GXmGjAl2IKW4JVgSjhLuCshlpCUcLZgCdoCJZwlEJewHAFUopCdIfGzwz6/4AekCbGyj1l5LDaCirONHNwvrsMfNOVJxELI4qpTE7OaP3IuV44gdKHqe5D/TdPC1++gE4o8ByqGy1QU43YuZYMdl8MpjMH5+JSkOg8JedlCEcJXeLjW0Pc9/MwHyMd+/ulmQKs73+hP54QgBBWnI77UmSxcNt1juwIEFHcAoQjWt6XI66sGVFUFF5jPQDcdBhAi5LFivGskBAvHBBACiqKAcRwXk3yQWABCMAQEQB45XQOQ19EAhIAACO17rEUEmIg1yDNA5cYC2AgNwUcSnwjckBrgQ+igR1LeAwkBqwhPJAG8gkgG8CHkGI+j3QTzqNd+JgfYCNkRTjIQcjuf3gKwEXviMOAoIgrgCCIaYC8iKmARYc4FUwMWEe8ELCJolrwByHbUm4IR1uVAAL40TFlm/b8CmIzmIBi4Hy24jvP3QhX0FfdBvEdsFOeqTTbCF/jezuH/LOw5A1swdz4xN+H5eJk21pf22ct28yL0AKYg5s3hO/psAbSGdvKdM4EDGC3Dm+IOL83uyxGOgbIAAAAASUVORK5CYII=",
+    "price": 200000,
+    "reqSTR": 55,
+    "reqDEX": 160,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incPAD": 65,
+    "attack": 3,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Bow"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 65,
+      "min": 62,
+      "max": 68
+    }
+  }
+}

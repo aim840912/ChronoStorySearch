@@ -1,0 +1,55 @@
+{
+  "id": 1072136,
+  "description": {
+    "id": 1072136,
+    "name": "Pink Goldrunners",
+    "description": "",
+    "chineseName": "粉紅天使鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAeCAYAAADZ7LXbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADQElEQVR4nJVWi5XqIBAdz3kNYAlYApaQLSGWoCVoCVqCKUFKWEoIJUgJSwl5d4aQn8R1OeZoApn7GWbwH/1tdG/mNmsTn4JI8PZOpAyR21fysH56ijGSuxGdrKwpAv0GIsHvVJFRGgAN7fb8xMlkdTiT94HM3WLNOtA7kC4zp5OhnQfd/XyB0orI43MCiTuAbTnQGsgAoJSiLQMsxk99peACacyHmIDutSuqKYF0bA9dYE9rabuLrwBPhVxcWARV4Uw6AAS5MRUVbSsqYf91pcsArGAPBSBgKiQdWa/oTMqrwbbaajgXBqAlSPdsmQosspd58CM4gi1bFJg1vFTGEaeMmnGdrtQLsRclnIMlf86PDyfS/twnO1Kz5S3Ma6FGJzW80+zOkF5EKIAYWaJ1YvRsKwohbRtvbmQANF1bUsOjptGyJchms3Xd0xhqv4m+DoS6cPidGEtgoyUos262UdR4bC8dXvO3qoSBUBPdDym6IrEXp8C4wmVhFWbD6wvxBrVCYw6U1RS3cKuOCBoR1HKuscus5IUHKoEqfSUVoQ7sOQegMbzMYHyhAORb0ZuKZ3aqttKbSkPLBhmDxz64zOG5nswV7drHpnt6sD0q5COWLWK2Uu1zm3Jwh5dcgt2sK0Fi6QDbHk1iiduIi3cX36uYqnwJkO1yg66VtvJAypghtwsGSgF68H4Xhd5GzkcGmgJwtXgVJKdFJae+nd5jLUA5YLYn25VHoHLecjqLIN+PZM3hYim/z18PgE5Z82jQJo/gne+zCpcSudK7UIQB7VWj4tpHjxETq8NtBO29Qi2hYVs/PKoB0Uh/Lnfh7gfN0ePsMdzkVE8/JO5wih7n9Iw3gdajJdc6/fbWFK3LIIMCU6cKj8FJkpevMACfGxw8Frb21KYXJdJd5U3+SgCiJoyMhUQPMOQqjiqWNk1BOvGem1yFretsCq5Gppk1poeg00awZtNMieo7AFvEXZYPpiFYDzRY1ANOFeTaoHd/icJXjcpOfUrrOD/d+DT0c4ClgncAAwjaMdWHBMSJzWfjUk2+d40cUx8BZJANEiZ/4hhIgk0WLL32k277CcCgZAr02+h3UB6/AkxB/gL0UeDp+A9ksuUqjICvLQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADd0lEQVR4nJWWC5XyMBCFh3PWQJAQJAQJRUKRABJAAkigEoiEjQQioZGwkdD/Th59pt39c+iBtmm+uXcmU77o/0a3cW+39eBfQQHweREJRWSOVbhYt5a892SeRFcd5qzCfgMFwIsqUkIC0tDhyFdMuFmdb2StI/XSmLMN2wJ1WQFdFR0swj5OJwgpiCw+VwTyAlyvL7YG6iFCCNozZDZ+6gc540jivvMR9qrNqqoSqGOr6A6rPpr2B7+EtAK5ubMYqtyNpAMIuVIVrVpYVMT5kJUsQ1jJEUoQhKpQCKiEim4krOgtrLWEi24Cm4O69sMhwS59nwIuiBVRs12Oo4evQhniFFIzzJOVKMW+VMQ5mevgfFl3JWlvqQA8NXsub54LVTKq4grUB0WSlk4UQCpMkzJG1n4qci6Wk1VPUoCN55ZU8ahpat8ctNvtTdcqRZ9votOZsG8MfsfIw+JKhoU5+mbvgyqLspNuqWJTEcOwZ7ofEvRAsu9GIPIKh4ZtuOuWD/gnVIdQprCxqmJ5f8QFC3ssrDn/qD4d8sQDO4Uq+SDhoRIqOCcIpX+YgXxgc4RvvuNpozNwlKLWoZeVhgxFMwB8AoR7uC5pWn1F646+6VqLqC8C+fFluzjq0BWmlmWAwUMmoovFMCyEZNMZFr6bGC1OPQ6uOj4XPnaDOSRbZ3p964q6N9LIkXJrYVhcJAWQqsslSzk/GTaG8G6ywlF2vqjomtrwy9cBlhfNVmXr8nBUzuM4vUXQ9zvadL5rymvw1xvgcfQ8GrTWC+LP51mNiYnd6HXYqA5tWWJXft6J42N05+cADgN5f3Cj17a/VAPThL6+3r27HzRUi/eX4saYN4CLGuAavW/xGheGlIM9jzr+tlqt2phBvRJVx07gnQmJnz/GEH7vMMAXyn5u2UJR6Mrhaf6KkKDKDZGHQBKkz50f1JQsG4O6kAtujBXK2ugIEEPEOXrc7hceV9SWZRNFInULtou7M7/c+gUTrLcrQcdK8t6h3/5uuVONDhD7mpR++pbkt6qdQuZKEmQffRieXIDQyqk+RxgnO79j56ryuWnCq24MObHoAiRn0zNohySGP4oMm4cy996OunSC3GeQMSxsED6+ktwDYC39YaTKGk6JSv9GFpWRy5snn7DI9x9Y479HfuP35PiiQV5QNgLPR+4Vv0VfhP8DNnn+QA0cecMAAAAASUVORK5CYII=",
+    "price": 60000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 188,
+    "reqLUK": 63,
+    "reqJob": 2,
+    "reqLevelEquip": 60,
+    "tuc": 5,
+    "incINT": 1,
+    "incLUK": 3,
+    "incPDD": 23,
+    "incMDD": 11
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 23,
+      "min": 0,
+      "max": 53
+    },
+    "incMDD": {
+      "base": 11,
+      "min": 0,
+      "max": 41
+    }
+  }
+}

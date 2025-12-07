@@ -1,0 +1,49 @@
+{
+  "id": 1061077,
+  "description": {
+    "id": 1061077,
+    "name": "Blue Moon Pants",
+    "description": "",
+    "chineseName": "青月褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAdCAYAAABfeMd1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQUlEQVR4nJ2Wi3HDIAxAlTsvwAqsQEZwR3BGaEdIR2hGSEeIRwgjhBVYgRFcCVuECEhIdcf5h/SQhIQHaMsC78uu9rIFWcbxBmrSoJUCpdeXwa9XHwIEF/gBB37QGqzdLzXQM08KIRiBCOwN3EER5pt6TYhSJ1BO0Q0aQ4PhbpDuecRnCPBMXnpChhSFDEf+LOf8G8IGpZHcix5QDYJJH6OSMaYwIAFa63TvMS84iuRXPSEjpExKDOP7XHgOA1reVCG8Oo69cy4ZYUMMjiA4ggqHwuunEAY0EkyhWAhAYaWrmmjeBfy87/eEIWRUepBLBFDN/H6A/ryCsWewm0ddkHdkOt9ikbrGdwmJO+udOqC589cexuMNYDQw2gtYf3jYYUNNKa8NUd2suMPnJdexpz0oc+ny5EH8k34kF5YW5cugdbWVHgiHWGksYLG2HPKQjx7jBcSgR7b8PtQm5/ng9y0ov9fTZT1nMFxbJ0jJb4YrB8ndVvWGzppfhOi5WNDLLkyybQB54u2w3SzUXuJCCITh0nAFJyqfISkfrep+tZgwf4OZfmJByspPnsh8/Efc6RBz40RRNlt9r1DPCvN91VSUMhrNnHAhvvIunCyYHwTZr+Z8glT7VTTQ4ZGHbzxLRjCf59gkPXrFIN7KA9PZaF4b+cm39ap8hy0pj2jYO/2wqNyjYTVwxA6q8bTbYH77gZvx5KMeYeKPW+GFMdf4Ayj1FOqpcNdLOdFKAFxf8nv0CLKj30tb6TlJ1ogVxdir9we+3KLkVAppRQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACZ0lEQVR4nKWWjXGrMAyAlTsWcEfwCmYEOgIZoR0hGSEZIR0hjBCPEK/gEeoReJJBxBgZyKvuOMBY+vRjy1RQlh7el0PpQwnUN80TVKtBKwVKD4PBD3cfAgQX+AUv/KA1WFv3JdhaRAshIMEI7g28YBHoV3WLIKWuoJyiBzSIRsPLKD3zFd8hwJZsRkTGFKUPr/Q9n/MnEBvNDaXR7IVJIFwITVQ0xiyM5BCt9fTssU54iQtCjIgMkQFSZCA/p8JzGLIWlQhiL7kWzrnJEBtjeITBCVQ4LqLfBDGkUHRKS08QSjHdVUvz7uC7+r2IGESG80hSiRDaUz+foL8eYOwN7BjZbtA70t6ecSO7lTk5KK64d/YJze2+a2hOT4DGQGPvYP1xsfIqSTHdO1kXYOUDvvepjr3WoMx9d0Qz8Rv9KwVNjnk5gbta0B4Qp1tp3OSCfyloVp89gAXIYGRWnlNJCml9eLwE5nHd3odzClM3dozZgiimLoXlq1CMis6qHwTpTnRqs3uTjIsib5QHbE09taLoDMEwdRoe4IQOwaCpPqUusOVQ6M5g2kvctFKHmCLK6/M/4q7HWCsnbNziMbFXqMeF7uU9bVwpK8Ua8WbdijJcLZgLwuz36nwCif0tGpkriEvPwxnPogbM1y02Vo/RMSxd5hV7wYbTvZOeoDj+i7fPhPGY6orGvdMzx/LIqsHICTuvxlNzBPrxJ7HDE5T6iYk/h/SpSaMx5hF/MnM9hXoqzPTUVCOtMogT67JI3069GNEHUn9toUdFGbJ3zkbPqHfZofdBfhAojC+pt1Lh1Tg3lVoYC9LzP35Cqep6XGpDAAAAAElFTkSuQmCC",
+    "price": 60000,
+    "reqSTR": 0,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 140,
+    "reqJob": 8,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incLUK": 1,
+    "incPDD": 33,
+    "incACC": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 33,
+      "min": 8,
+      "max": 58
+    }
+  }
+}

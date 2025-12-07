@@ -1,0 +1,39 @@
+{
+  "id": 1332051,
+  "description": {
+    "id": 1332051,
+    "name": "Gold Double Knife",
+    "description": "",
+    "chineseName": "黃金雙刃"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB0UlEQVR4nLXXgXGDMAwAQPkuCyQjOCOUFRiBFdIRskJZgRHKCDBCvIJHSEZQbIHBGExs4+iuB0fPPJKFaE+QL3A8stAFuXBE7ICxMmrRURwHuQMQcXAMjpsXNapDwX0bbYdnruo6nLx+54svJcoGpAAoa7oSvN9ROIUY781vE8p/IDnS9tyC9VFHd6fsdXm+1O1OxvooJSRHHL4Bj3tt4ot7Dl44Co3BaYCYLrfhqqqgbRPesQh8iLHk9h7feAv/D5V24W00d+Qu5sUnHPF5oyFiw+ad1t1dyQrudw51XbsPMFasBXZphkn4WFZuD0czNrdgk5EqO+rX7M9XAVUxjdLpsleYD5/g/qVWcqCfsixs2MRWBWZbWOdy+fBb+AI+n89QFNcJ8jysWwGa+7Ipd+eBi/vgkFeJKgD1Gjbhzn8bPwLP6wFWsG8KnqaFY1cfgsfmdDPm/FPZVVfmgOlWVsYa9oXGseseCoYk+PlEmn6+Eu99eKbME2BLaBaQ87H5jCcEZS2EAC7TPjQTHr/PCH2v4WI1PEIjJfMssMGZGpuhf/5kgw0eGllhG9+7AX0odHPlhG18F9UxdHU+2IevUBPX+f+Fw7APpxtfLgx9v8sVb2BBV3tzmih0AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACEElEQVR4nLWXjZGDIBCF15k0YEogJZwlnCXYQq6EXAlnC5ZwlqAlxBKOEqQEjkVQRFAg5s3gX4Ifb1kXvcB54mqfhXY4C8457yDLyqhOr8L5RO4AhjhwDJw7LyIUJcB9G80Ody7iOh2wr+UiE0TaAB0AylpeCZ7vKLjUoO5N7jOUfECy0ubcAOMe1T2kewzPm7Ldcox7SiFZcXAHWM211hvnHLzgKGgMXBYQneUmuKoqaNuEZywCPkmF3JzjO2nh9ylsF95Es0vuql4cwTkf77KImGD9TGN2V7SCx4NAXdf2AFTEWsiuzVQJn+vI7cG5LpsusHYkws7xMfvxRUBEDKHycJ0rmQ8+g3smehKQrSwLE6zlisDCHoxjuh68C74C53kORXGbQZ7B2hGQdZ825W49sOE+cMijJCMA9RasZdd/E/4KeOkPsAH7quBl7qiy+iWwSk7bMSFHYRdZeQZY3spwjGCfEM677inAkAQeRy6rny/EewvP7DwBbBCaFchabI7hCZKuh2EAQtMWmhkeP88c+h7BxaZ4hCrF+SlgDc9E2Qx9/TkNrOGh8oGvouUHfdke3DVyfcNRbkYnGL8Ujt5fmbFnxrnTea7an4aipqxegXH76QG5BoCNqsZccITOTjVU67Z8LzRwHOqjATmd46KdX69Z5/jtOxBiH9vNCdehQVd6EXc5zMHtiO2cb/7/D5p0cX+pkEnvAAAAAElFTkSuQmCC",
+    "price": 400000,
+    "reqSTR": 70,
+    "reqDEX": 140,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 9,
+    "reqLevelEquip": 100,
+    "tuc": 7,
+    "incPAD": 95,
+    "attack": 1,
+    "attackSpeed": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "Dagger"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 95,
+      "min": 90,
+      "max": 100
+    }
+  }
+}

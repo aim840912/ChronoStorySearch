@@ -1,0 +1,30 @@
+{
+  "id": 1040002,
+  "description": {
+    "id": 1040002,
+    "name": "White Undershirt",
+    "description": "",
+    "chineseName": "白棉T恤"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAYAAACgoey0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB60lEQVR4nKWW75mCMAzGw/O4gDcCjlBH0BFwBB3hGEFH0BHsCOcIdgQ6wt0IvSZSrpSkUO/9Am0hv/wpKStYJpeMq8L1iebAZNA5B9Zf2/ZGk/pyGoE6v37TDzg2Oxpvqiqsiw7kwA4N1v4mhqKazyvUqh7Gh8MJ7vfrAL9336/5zYeT4BLYYZSxrDVQ12oERD20hqeHavtDUFqt17SGDkhwDjyBotD41keGDqTzCG16GHHhlSXl5yT4os0VDCEkVQpN30Fx8BTMRpsaMh4WxEFjYdTx8xx4BLU9LIXTdQbGOZtGHcATKHnpASl8TpzDXNQrYNKLD+mbBnU+FkNjh22yHke94l7+j4wxPsKdaCfAEVx5udCdQrTnwmgBgN1EqS5tS9cQMcE7ZkdzNeMkRRg7E6AxmOChx1JLhPfTju21OTYs0GhqvZMa01anQ8CnOsDTqLlxKl9HUM1fuXrgwJjtXBw8zoZUBsyaDyCeer9lSg5NnvcHiTXDStHplIVzkZdqAv56dm6/3WThUtoVtVJF33IxGKHSQRFAkIEv1eJUcw7kYFjnfoMt/hFglWskSzrW22Bpc71u1iMHlJqvMwceerckLsUBGgP777jocyI43sQOcHWN04zQy2E/siPYz6a66j1wUKYKFugXbfgGjoKf6WIAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACG0lEQVR4nKWWjXGDMAyFxV0WSEcgIzgjpCPACMkIzQhhhGSEMEIzQhgBRigjuJKCqRAyP+m744wt8CfJRmYDy+RVP1lpH2kOzBN676HB9ny+8WBZnAagGu238gHH7MD9XZIEe9SBKbCnCVO8kVBS9nWF1KV9P89PcL9fe/i9/nmN7z58DB4De4pSqmkqSFM3AJIeZQlPhJZNy1C2plu2kQMxuAUeQUk0+R4jIwf0OEGzDsZceGXJ4VgMvmhzhYkIoqWh+h2SBddgM1o9UYWwIAsqRVHL5y3wANp0MA3ndgZmOaujDuARlL1EgIbPyXLYinoDRnrpofJWgrscV0Olw42yy6g31sv/UVVVGOEhOk+AEzhB+VCdQrSXldECgLmJtIrzmdsQMcNrY0dba2YpFqF0JkAlmOGhxnJJhPfTTuU1O2YmsCq59I7WmLc6HwKY6gDXUVt9LVxHcNnfcnXAnjFbuSy4zEZsGShrGIAcer9kxhwaPY8HSVP1llWn0yTcinytRuDvZ+0/97tJeCztjkup4295NZigsYMigGACvlSLU205MAWjde422OIfAVNThWRJxXobHNtcr5vtwAHn5tfZAve1OyYrxQEqgd13vCdf8GrFZYLJfayeSU0d6YC1rjLNBC3yT2mmWnkQwPBRtBq87S5i5NSiAxdYp0LNZ26AWMRB9NJJjcXUTtzrawQO6ZAgCxqLpJ3oD2y/u1kep+2N8GoAAAAASUVORK5CYII=",
+    "price": 25,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 0,
+    "tuc": 7,
+    "incPDD": 3
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": 1072205,
+  "description": {
+    "id": 1072205,
+    "name": "Dark Ades Shoes",
+    "description": "",
+    "chineseName": "黑色昂斯鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAaCAYAAABCfffNAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABwUlEQVR4nKWVgXmCMBCFL9/nAnQEO4KOYEeAEWAVOwIdQUfoCmaEMoIZIeVFXnqGCNG+70MIkPfnLneykf/JJ2OTe+lVSDDf7XZh4JyTqqrEWutzoFcg/nA4RHNqGAbZbrc4z0DPQgIAhjSGYK6BqZ6B+LqukZJoroV0AZSLpgQS8v8IgMjStKVag4TVwyQHwLOc6TMQ37ZtMOGRApb2oRSSFdLD/BPCa46n53FfFiHcSBzaTEfFewTreSyAJYg5n88eDQcDbZoDpOnU762ly6CL2dkwe5QqHQn0cxzvjdPMXnzJnkSQNteNSBhB117E4vFQFkkUSthfwsruoqLSSLSKm5EAmmsAI3mkxT4JP9fb4H2PKrvv6BRE2emVj89wylbXzdyPJ2ek6eop306XZkyPLgRGM5kHQC6S0OX98Uu6rhuHrXCxuV7gGFBuNlevTTczQN9L8C/UGkBDfPw3dSZEQOV6Ql+vAdJI5HQ6SdM0sMhCUsV+WBEgHuW5725RODf/tOZWD6VVtAQRZ0Uul5FkzWzlvL5+q3u2HECIeevQDkaqeoJhX5I0wJhSe7AKiJH8gZbnPGueQiKoYE6xOfULqph8WguSjN8AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB90lEQVR4nKWVjZGCMBCFNzM2gCVoCVCCloAlQAtXgpaAJWgJ14KUcJZASsjlBZZZloBR30wmCeB+2b+4oe/k1N6sffwpLEDyPA8bay1lWUZt27o14CcwdzgcRgjr+XzSbrfDvAh8FxZAMMwACBAJXtI7MFeWJUI1QqQQRgDXvEuBhfwsgeCpDueSXsGCNzAWA+HdmvF3YK6qqmCMhwal5CkVFhXCxvlhGK95P7yf5W0VxgnHkEall/yMDyB/pwtlDWbu97tD48KQNB4D6TDHQvwqjAa3At8UMLoUQukZ9Hf2z/zPTEGjdyk5G4ESIhuaoQzsGqIWr1WhJhcISt89wkknXrK0ZzElNzWDGCJB0LfXVQ/p+s2+QFVObwgNZLXDJ8dLmFarsYc4P1lDp7oc8mFlSY9hkwXD3g2QCSgGC7dGc75SXdd+WxEfPtZLvAeci0J7swTrQU1DgZOoVJCEufH2tiZ4xIr1lFyngrRndLvd6HQ6wVQUpjX2U6IAcyjrou69snb+lx/zBlJVt/VDl+fklMEz2xI9Hp7YmpknvO5+xbN2Bjr6kS+ALA/AzLZGOxnKygGKvKnwAMASOYIuEZAEYoTLi3O29cCu79/lHCvIdZjjna1CCMkCKTzwQa/1s2JUrydjI17A1b34OHbiLHbiyLPoAf4BO46UXwQbM5QAAAAASUVORK5CYII=",
+    "price": 140000,
+    "reqSTR": 0,
+    "reqDEX": 280,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 90,
+    "tuc": 5,
+    "incDEX": 5,
+    "incPDD": 52,
+    "incEVA": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 5,
+      "min": 0,
+      "max": 14
+    },
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 10
+    },
+    "incPDD": {
+      "base": 52,
+      "min": 7,
+      "max": 97
+    }
+  }
+}

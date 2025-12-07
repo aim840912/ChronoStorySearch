@@ -1,0 +1,49 @@
+{
+  "id": 1002247,
+  "description": {
+    "id": 1002247,
+    "name": "Bronze Identity",
+    "description": "",
+    "chineseName": "青銅忍者頭巾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAcCAYAAADvANYcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACsElEQVR4nL2X77mqMAzG4/OcBXAEVsARuCPgCDACdwQZQUa4jiAj2BUY4XQEbt5CMK1FxPMnX0Rakl/epKV80Hs2PBnbbXW2BWIOnKYpJUniDVpr3W/f9zLvZZhXIIZY4BBCQDBvK8wSxJx1lmVe4FhwAdBj8pwxZhUmBjGIA3Eak17kX7NXYEIID2Apa31fYJ5BYT78Ys5UJg9EQwyop8i6lG0IttSgci2+xBAjBHkoxzMFYoFiz8t4CCB+QxCBGKSrdRCuI62Zfm4JSnwuKfKghA78+XljJ5k3bq2Z7+F6vz9sggqAPCVANQa+ndlTRqapqL+0fDkG7BdUuZ1Lsj2D8TP4/dPc52kgUWSKE29MF5zNcGA4zE83l+noICOwyH8m8sAw/9K2VJQlQ3EC3cUBCJDusaXGHADQVBXlOQerz7PcSdV4WSeXC1kuEZQSEFEKAFACmfa9pa4zdK0zB3io2qfN/iEZOYCivPfA8Uh8k2zBjrjuLvi5noN3h4pSLkVoYwkgub+CwpXyAAFrW0P/TuW98TjrMUXVmKg9B4flU/kkidBQeqiSpWFj2/gShaQ1A7THPRXn6zh5CuJKUhRODX0/BoASpGniygFBwmUfvl88JfacHbq8qE9uVcDQG8jc1vk4U36DwNIHTrRyLE8qJWOoxpjVzc9BYF9vOt7XucOvqDNLiOUpQWImgbO8cJJjHlbF307Pwu5Lq+Yg9A65n2ou+4VKX12audbo/CVb2rjCvQIQOzSJZCYmMF8x7VMfiqak51e7rI4dPT83fitQcBQY9LtD5Pk2mNi5Q671WOxkpff1B6DklU6LBJZn5cUFBcTX2kH34SiGh+l1m9UVAL1Ria93vjs2f1eIAQS9EeyYw7sfP1vNZR37XqHYoeYnQdS3iGe/CeFA1PUM9B/ExaFlu+H7LQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC70lEQVR4nK2XgZGjMAxFnZltgJTAlUBK4EogJUAJXAmhhFDCUUIoIW6BEtYlcPoGEeHYBnKrGQYCRnr6kh3zpT6zMfLsdNTZEYglcJqmKkmS1UNjjD0Pw8DjdsPsgRh9gV0IBsG4ozAhiCXrLMtWgX3BGUA+4/e01pswPoiRHbBTn/Qs/5btgXEhVgChrOV9holBYTz8YsxcphWIhBhRT5Y1lK0LFmpQvmZfbIjhgryVI6aAL5DvfX7uArBfF4QhRu5qGYTqqLZMvheCYp8hRd6UkIG/v5/kJFs9N0Yv93B9Pl8OQTlAKyVANQV+3slTpnRTqaFr6XIKOARUed5LZQYCo3dw/t28xkkgVmSO429MG5xMU2A4zG9Pm+nkIFNg4d9EtALD+K5tVVGWBEUJ9J0FYCDZY6HGHAHQVJXKcwpW3xe5k6pZZZ10nTJUIijFIKwUAKAEMh0Go/peq0edWcBL1Uab/YszsgBF+eqB61XRTWUKckR1t8Hv9RK8v1QqpVK4NpUAkq9nkDtT3iBgbavV31v5ajzKekpRNCZqT8Fh+Vw+TsI1lB6qZKnb2MY/RSFpTQDt9ayK+2MaPAexJSkKq4a87wNACdI0seWAIO60d/9fVkqcKTt0eVHf7KyAoTeQuanzaSSfncDcB1a0cipPyiUjqEbrzcXPQmBdb3pa16nDH6gzSYjpyUF8xoGzvLCSYxxmxZ9ejsLqqzbNQsgV8jzXnNcLkb641Eut0fkhCy1c7loBiBOahDNjY5j/MelTbormpJe/dp4dJxXfN/4okLMVGOV/B8vzYzC+fQdfy2e+nZVc19+Akj2d5gnM7/IfFxRgX1sb3betGF5W+21RlwHkQsW+PvnuOPxdwQYQ9IazYo6ffvwcNZu173tF+TY1O21/Y4hg4ltkZVsQiXMO3dsy7tBf8zWOBSgEkQSOEJAvoO8+jmE+wrttETAVZxnwk1JEv5RiSoQcxByayLV7RCFYsi3ZkwBQDNqbwD8+IbmHjz1mDAAAAABJRU5ErkJggg==",
+    "price": 55000,
+    "reqSTR": 0,
+    "reqDEX": 100,
+    "reqINT": 0,
+    "reqLUK": 170,
+    "reqJob": 8,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incSTR": 1,
+    "incLUK": 3,
+    "incPDD": 39
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 39,
+      "min": 9,
+      "max": 69
+    }
+  }
+}

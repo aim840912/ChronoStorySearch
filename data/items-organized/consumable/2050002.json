@@ -1,0 +1,27 @@
+{
+  "id": 2050002,
+  "description": {
+    "id": 2050002,
+    "name": "Tonic",
+    "description": "Cures the state of weakness.",
+    "chineseName": "精力劑"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAeCAYAAAA2Lt7lAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACxklEQVR4nJVWgXGDMAwUd1mAFegIXsEdIRmBjkBGgBHKCGGEsAIj1CswAvXLyMhgkovucsQg66XXy3Ch17bs1gV9aJf3LknQ5VOQMwDO3FZEoztUkfU9A84BLM/G8p9uGOnv0cQHP/fuANjWFV/vvctWtwdYGlvSNDsyZUXWl4Cgpiqprmt2wPOmaagf+rhpdvNpeYcKJjj731zNVPrAABl92n0fAuKeBJfAAAf+16070KUBFk0HTIIKCEyuYqiOgcsy0qmBBICDw6msqjU7x5m5aQoeNmSMCgEICmHokxj2wxALfrd7v1xywQMVFU2+gtIYn/XAwQGInuD/SBPT1Vwt38PVWEvznPbjdA5QwT447PHb0u3nzteu66hzoQL4TuNIFa7e361AEYCR3cYvnAPQFlyqfD4f9P19S/qARLhHva/MWKpWuhhgWtVgNoYCiJerKHBPIUCkUu6Fr0ZMggtAgWZgapGpqALBkX3b1IfgmkYx7IXqkJDxax8Tt6OKooMGydGnVRafrSxItcMw+MSudO+GTUUaBDKc1QYdSPcJ9yblBBWNXraKodAD0a81fnK9OuKkqgBSlZahPBPFjAMaHfySJmNTjmepSK+1pYF9gtcrV6DtINMciJgG04bAZ8YqwtkhKrLqIWgpFaGgL21qOrVangcV/bYNjzyOxX2DkyOEgoIwM27anHRw2KOtj2eRgMRZ8Cg8fC49Qfe2D64tVsBZ+kAAEa63uThuFAXp4GFfCqaOiokPKspMp17nMo/vjVcqEhBQpfnXk809ythbFaEZWKAxQocIxCp+QJ9O6BMVFetNBroaKX0g026HnSgIFpofhm2jKgzcENRVSAXaitXBz0XY5GckvGszQ7jPOmdnb7RidAEEPwGZ5f1MlBxyoEMSGt2W/SuACCILgKBHexOulW/y8fXu2zRxlh6d+GQ/Hf8B4mPHHk/Mu58AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9ElEQVR4nJ1WgZGjMAxUZtIAX4K/BL4EXwlJCaQEKAFKOEoIJYQWKOFdwrsE3msjIxsnuYlmGAKWtdJqrXCm17Zmzyf60M7vXZLg66dgz4B8JVoRzeZQVdH3XQIloPXRav9jmGb6e2/jwq0bDsB9o/y9G83LanOgtdUVLdZQXSnSriQEr1VFTdN4B6y3bUvjNMZN1lh6Z4eKFmxyl1WWKgcAsNmVMY4hMN4xCAMgCeTx+zo8pVECrZImGAdnMBjf2VCtT6CqIs0lQAbyIHCulNqyNT5TsyzBQ4cKUDGAQS0MfWTDfhhiwe/ajbFv5xJIoEjR4iqq6tpVMXkQAKNn+D3T4mlsL9q/w73Wmqwt9+vpOUJFOQjs/t3T9db5+zAMNJhQEXyXeSaFu/M3GWAE8pmYnX9sCoA7CFf9eNzp6+safdEnJASbR1dprUltNCZAy6aeWiVrXuas3JxagHHlMFTHloMw0AlNwxRA5qwigKCavm0OIJEFwQD2QqVIrHbPLiZeH1QXHSVYDCholaqMaxsrXP00TS7BC3XDdFSdBIN8rdgoA8o+4t0inKC62cm9wFyoiPWvazcJnJriyReBuEopX15jhc0TBBH8imLA5lIfuEL5LC0FcIleLr6ikh3kXQJjk6DSAPDOvOowm1h1WiyCrkpQAFrT5qeHUtL1VHXffetHCcZwLoRkNFFQHM6cWXanvCf3vnk+6xgsniWH5g+xSSd2bqUDmlusyGftAgKMe7Gfq+NGVpwECfvKoGIELX4gUuG0y+dSJfF/6yeqYzBQKPsjJ4XvYcF+rLqtab6BTBMLSgveQKtM7BPVnbZFD3ipmZKJ6n4fqqw4WBBJOLQ7heHgTkGNyXdD/sf3a3P8pze63BkL3wKFw5xXkRmGuOWLgarsus7G3gGGi8Esfz8QJcMUNHFic3jfCSBQYM4iuBJ32OA2xaYADD3MbeuF9C0qRlbEJjvcZUH7QowbL2cxkussypNgJeLx7k/hvX3xHH//B2OM2iTRzhdTAAAAAElFTkSuQmCC",
+    "slotMax": 0,
+    "price": 150,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Status Cure",
+    "lowItemId": 2050000,
+    "highItemId": 2050100
+  }
+}

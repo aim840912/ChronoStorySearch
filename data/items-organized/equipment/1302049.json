@@ -1,0 +1,45 @@
+{
+  "id": 1302049,
+  "description": {
+    "id": 1302049,
+    "name": "Glowing Whip",
+    "description": "",
+    "chineseName": "光線鞭子"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAcCAYAAACZOmSXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8klEQVR4nLWWi7HiMAxFxcw2kFeCKcGvBFNCUkIogZQAJZASSAm4BFzCuoSXEry6ip11snyyfDTDODYOR5Kli3/R5y3M5qv08Em4QMPvHZHSRN6R94bWm01IDnwCLtDL6URFUTCQJ/iQIaWsrH9XlTjwbng41rU8OGtlNGUpY9/35JxmBzrCnm3bhnfCBWydGxeM1mS7jrQxMvechoIcFWpw8F3wwKdKbdvSkdMKSM9zgOEA1k10wPqajGrfAh+KKpyodx05hm2rik7ns6SZOOXt4UCaHegRtVLyknf+ZXgAFJbAzYFGMM4cMIBdPAod4Upj9E/BJdrzTkJgkB/B50vJzxvyPZ9pAvHosjpA+a8biXxxtY9CUXIkqGDFY1U1cVUzWIkTMGMsOV9Hlp+Ac3sEF+hxvx8XcHZIKYppH9cRWdfyD6v9WEyax0Or/omcW0yifgQPEAQYxGI0FA/OlJ1omkaykIoJuxAxwF3nGWwmkefgW/C/ssg9KdIojcNZs8VQxTQUT8HgDn2s9ZAVGsTFF56kpoidcIV83w6is8pBc3hAIRUavRqjjY4DqvWgWlAqmMqq2SC9UdWoqAWMqna9T+sT8BwuaU5qNDfA285LxFo7cQAphQOIPoExx3pZK1pX/ip0Dg97lkaAU1rnhnMvY5pR3dBo74cMlFn6k0Pr6nq0VyPfceVKdKxIXWyZ3M6Xy+gAKj22sZxzUi68jz3NrLDuwUP4+ZHJLTBs8/09OgCzlvvdcItZPdnX2scR5/DR62vgvM3gHDJkYvTju7GduqGfF4En8Gs26W+iiVj0AmV59QU9a4u1fe7I3NxQqIujvgu/BUvdgFT7fkj35I/jGThgqUdvOZKUzM9g/3vWOXy1+vqSisctBJeB3IE8A/VuN3kZCraplrXVLbgYosHfJBxAW+VgRJzA2Gejmj1SsKXwFe7Tqd/Rz9cMYBezslRIlsDlh5D+dN+GzaUW4G3TjPvpRZtX+ype6O/Zy9BkfwCljqi3OrVzAgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAcCAYAAACZOmSXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADGklEQVR4nLWWgZGjMAxFlZlrgJTglOAtwZQAJZASQglJCUsJoYS4hLiEcwlxCZy+sDnDETazl9UMCzZmnyRLP/5FP2/DYrxLDz8JF+jw+0SkNJF35L2hQ1kOyYGfgAv0fr1SURQM5AEuMqSUlfmPuhYH3g0fPptGHpy1cjdVJfcQAjmn2YGesObYdcM74QK2zk0TRmuyfU/aGBl7TkNBjgo1Ovgu+MC7Sl3X0SenFZDAY4DhAOZNdMD6hozq3gIfi2q4UnA9OYYd65qut5ukmTjl3eVCmh0IiFop+cg7/9/wAVBYArcXmsDYc8AAdnErdIQrjbv/FlyivZ0kBAb5CXy7V/xckg+8pwnEd5fVAcr/0ErkL1f7JBQVR4IKVnyv6zbOagYrcQJmjCXnm8jyM3BuX8EF+nk+TxPYO6QUxXSO84is7/gfq/NUTJrvl079Ezm3mET9FXyAIMAgFpOheLCn7ETbtpKFVExYhYgB7nvPYDOLPAc/g/+VRe5JkUZpHM6aLcYqprF4Cgb36GOtx6zQKC6+8CQ1ReyEK+R9N4rOLgct4QMKqdDo1RhtdBxQrUfVglLBVFbNBumNqkZFI2BUtQs+zc/AS7ikOanR0gDvei8Ra+3EAaQUDiD6BMYY81Wj6FD7VegSPpxZGgFOaV0a9r2KaUZ1Q6O9HzNQZelPDh3q9WhXIz9x5Up0rEh9bJncbvf75AAqPbax7HNSLnyPNe2isLbgw/B4yOAZGFZ+fEwOwKzlfjfcYlbP1nX264hz+OT1GjhvMziHDJkY/fRtbKd+7OeXwDP4ms36m2gmFkGgLK++oO/ay9q+dGRpbizUl6PehD+DpW5Aqn0Y0z374fgOHLDUo88cSUrmF7C413ssXfN3C77b7fdS8TiF4DCQO5BnoDmdZh9Dwcpa2qqEbxvgkF0z+BQNfibhANoqByPiBMY6G9UsKhj/kpPZiDBB0zl2WpfgO5ynU7+jn9cMYBezEoUEf7YqMWy8mxXcntP/SOdt+XIhtQAf23SAoDZ7FTael9cqHC/2fKB/0LaVtB5R2BivZuAP/jnBx1dJJJAAAAAASUVORK5CYII=",
+    "price": 1,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incPAD": 70,
+    "incSpeed": 15,
+    "attack": 1,
+    "attackSpeed": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 70,
+      "min": 68,
+      "max": 72
+    },
+    "incSpeed": {
+      "base": 15,
+      "min": 13,
+      "max": 17
+    }
+  }
+}

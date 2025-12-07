@@ -1,0 +1,37 @@
+{
+  "id": 1092002,
+  "description": {
+    "id": 1092002,
+    "name": "Red Cross Shield",
+    "description": "",
+    "chineseName": "紅十字盾牌"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAdCAYAAABFRCf7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABE0lEQVR4nO1WbQ2EMAwtyRmYBSxgAQtMAkgACSABLGABC1iYBCqB6+tt3AdwySXkEhLenxfW8jaatY8bPTDTcYggOk/TRMaYzQxXFKs1zvNn3Lk3rqpq1pM2TUNlWdIwDJRlGfV9T2ma6nomyQUztbLpwrJR27bKyBchfR/5gIoi8MoQBJDorFUhYGERXOKyaV3XxLJhEA41PRSX6JlETdcRg/1VkntC7C/zFtg3BHKcXCX+20nPI4oBEcexFNUPFalTGC8sbfoJ49vUSE1jX3u0qeJq00v0Ej2NKHwe9gqGTcP/F9+X+J7va3zP95MkUf+GEAYDGM/6HzCOK98Pfg8eJQ4O68H3I2vtb/9S8iVfEN0BvY2YPiZmQBIAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABTklEQVR4nO1Wi22DMBC9SlnAK5AR6Ah0BBghjAAjwAhkBUYoK7CCR+BGoPdONjXEiVqpUaTKT0KHv88+m8c70R4r/R3ewkJItC7LQsaY6Chb1zd1fLl8t1u7i23briHZbkd931PTNDRNE5VlSeM4UlEUWl/KBDUzDbKQLQr5MAwa0V8m1/Hof8SOCJ3DCBIAg21V6eTAFoVka5eFdF1HLIuIkR3P6GlIRIkoTmSuV2JEd63lzhK7DzAGdh8x+li51vxTomfinxNBJLMsk0Nywip59xLLIkFHGCdBRs4oc2cJCVIkCUpEiSgRvZxI9Ez/HuyJVNLg42CVEGG54O82Xyft93ydtsd9XS4PRNCeHIkS5Xmu/gyTQxwRUVafN883vs77OcRZ2hF9/T1fh5EfVVV9/ioxsuMHePdp86ljtz2QncNUHmBc3yP4QXl7/wJebaVVBqanoAAAAABJRU5ErkJggg==",
+    "price": 50000,
+    "reqSTR": 90,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incPDD": 30
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shield"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 30,
+      "min": 15,
+      "max": 45
+    }
+  }
+}

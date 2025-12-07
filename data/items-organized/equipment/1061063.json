@@ -1,0 +1,49 @@
+{
+  "id": 1061063,
+  "description": {
+    "id": 1061063,
+    "name": "Dark Legolia Pants",
+    "description": "",
+    "chineseName": "黑守護褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACrklEQVR4nJ1WgZGrIBBdZ64Bfwm5EpISciWYErSEWIIpQUtISjhL0BJiCaEEPm9lCSJo5naGEGHZx9t9iF8UN01/t2zPIQaq9WB+8+Ldpss8ox5zPxLVXU7FUdHxaIfMGP5nFW94E/hra7KraipbcoB1lVM/KRp+iZpSMbCZcMCnmj6yTdCybWamYGj6pn0zBUBbqIX/0DBTmJQnyjgKmp3w+7AtbacuPp7nObdpmqKpDkH10ebqcDhgEf9HL4FgSinX4IdexuEjzzbGClhAOR0+oJgEQDDZiICL+Rv0gdEQcxzHBTBAWa2nagkYBgkBQkY+W1nzapSp8Rhm1zI93GkY5qNxqWmR1l8jlqNRKgvK+LGopHE8Rd83cptAjzVQ+bjGc6BZ9u/C6dWvO92v9kyO89nrDf7PD1I7med3afx0vxrjdIbKR7eu7t9+oaikpvwg4OIsqSsKrgs/N+c5IMZFA1DxZAaVd4Iwb8FWGgjVK1R0URQMZIXgemEQjsO/6zqJoUMtbIE6ezweHAhNdu5tjDcFQBmHf8qUWr5EkqBN01BZltT3/eJIiOEZ82A3l8AxdUDSPmbqHx0wqutaWHJfVZUGKPzQbrfbLsNd0PP5zCzRxwLCZF7YeubqGgOPXm1t2zqWWybzwhbPZgNbVxvPRZlKLaVmYb3E/GxE2CYtmV7seo+pbwAcU6+gHVD9fD4XLBEsdRzETxQOP6jeiG7zc2fFFIsR5K8mbymyYor8X4P6uxflem8a3/jYYJNS2+v1mlS6t16vQP0b5hPb8V8wlDEflI9KyHJPkb7SDXN3EXgXtwAvLnFnAgJB+Gq0d2V4/rTUH/7ii/8R1tHPFRccuxXD4q1jEPP/xHzQDClJfQdRREjwRyoTL/bkB/fqPrU3fBgkFSCztfsYEPYfTAra3ekm9qAAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC3UlEQVR4nJ1WjbGzIBC8zLwG/ErIKyEpwZRgStASYgmmBC0hKSGWEEuIJYQS/FjkyIGgmbczyN9xy8IB/lAcE/0duy2DGOk0PfU3Kz5pPM896j7nA1HdZVQcFB0Otkm3obyrzIRXiX/WOruqprIlR1hXGfWjoueDqCmVIdYdjvhY01dYJS3bZlYKhTpv2o9SELSF8uyfjVEK8PZEFUdJd0d87zalcezi7VmWmTSOY3SpQ9LpYNdqv99jkCkjZ0eAUsol2CHndthw3fpYEDOpWQ5JyGAHcMYTYXKGnKAkRoLPYRg8YpCaaD1WPmHoJCQIFUm1PObdKL3HQ7i6Vun+Rs/nfDTONXnL+tDBctCRagJK25mg4mT8Kfq9kpsEcoxBlA9LPke62/07m+Wd3je6XeyZHOaz12v+0wlLO+r6Z2vkcr8bbZQjygc3ru4/dmFQ8Z6aCpOzMS9dUZh9MfUmnx2inWMAUTzqRiVOEPot2SIGwuhlKVNRFIbIBoLLWUHYDvuu69jHFMbCGqnD/X43jpB45mJiZlIg5HbYp6CUf4kkSZumobIsqe9770gwUEc/1M1b4JQ6Ik5fK5VHB4rqumaVJq+qagIp7JCu1+umwk3SPM+NSuQxhwD3s1oBt68x8ujT1ratU7kG7me1qOsJrD1tpi+qlPeS9yzcL4ZcjYjaJJLLi1lvKZUA4ZC6gjZIp9fr5amEs9RxYDuOcNgh6nXQrf7uLJRiMJz8FXxLkQ2mSHlJKmfPkStuGglzbDBJ3tvL5ZKMdDF+WpDKF+YbbNh7CrlNkpqjEqoUERm9SGWka+XuIRAPNxN7j7gDkyAgZDTat/Ktiydh/uD9hz3boixUY8aKEr8rGTvHbBkYHByDXFZi9gEQVaNN7lr6sYRIJ03wSP0HaXTkL3Gn7UssZeJirygBT6nGWRPeUAicpH6jK03cRtqxDSpIHikaRkH8S/GgycLBwl5CJcoO/wFi3unyLbdUVAAAAABJRU5ErkJggg==",
+    "price": 36000,
+    "reqSTR": 0,
+    "reqDEX": 115,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incDEX": 1,
+    "incMMP": 5,
+    "incPDD": 24
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 23
+    },
+    "incPDD": {
+      "base": 24,
+      "min": 6,
+      "max": 42
+    }
+  }
+}

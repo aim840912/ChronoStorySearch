@@ -1,0 +1,27 @@
+{
+  "id": 4003004,
+  "description": {
+    "id": 4003004,
+    "name": "Stiff Feather",
+    "description": "A feather that's stiff and rough. Used to make arrows.",
+    "chineseName": "堅硬的羽毛"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAaCAYAAABPY4eKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABrElEQVR4nL2VC82DMBSFS/IbAAlMwixgAQsggUkACUzCsICVIWGT0J/TcJrbjvcGJ2GFrul3X739U+dK90/Aj7PhjgFnwnWSJOalbVtjwFlwHcfxx+QZcONx13V2Aob03/pouM6yzAHjfYAf6rl+vV7qdrt9gKkj4Nr8aK3e77fzh5/3X8M1oGOS4L7aMXxd7bJp2KM0pV96brwMgsDpWpQMOaAwjMbd7/fdcBNXFNNggTEAY57nzkIUW1mWKgxDO9evVWpnhzOQpmmcDX3Ba+S1rmsfasFb4ZPFxMpGWAn2xUhFUbSpt3/k9Hq9Ti4GmHBpBM44q5xzS3D9fD7V5XJxvGaHYvUiDVCapmYUF4h5xsBL8MkwS2FjwGQN8B3G4JFFthZuBe99AQCPmWe/m1F91EbBq+FSLCjkneEduy6xri+uSfAmOKEAMrdza5fAi3BswvwBPAdl2AfoIngOrh+Phw0vwsoK91VVlRnZMtdAp+D2OgQIxcLmADG3ssCKopgtqiW4PU88WrIVoiPRAKYAowjvLjDho1C58dASfe0C+vBguBbnNvwaNKZ/cRbzyZadwFsAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB80lEQVR4nL2VjZGCMBCFw8w1gCVACbbglWALWoKUoCVoCdqCrUAJUEIuL8OLm5AAesLOhIQQ8u1fNj9qXdGmZXxZG+4psCZc73Y7O3g+n1aBteC6KIrB5Bpwa3HTNG4Ciph3vTRcHw4HD4xxD1/Uct22raqqagCmLAHX9qG16rrO+xDG/dtwDWhMJNhkO7p/Z7ssGu4opeSbllsrsyzzqhZFuhxQKEblbrfbx3DrVyRTr4FVAP3xePQWItnO57PK89zNmbVKfVjhLOTxeHgbhgKrEdfr9RpCHfhdeDKZmNlwK8Gh0FObzeat2j6I6Xa7TS4GmHCpBM44s5xzU3Bd17Uqy9KzmhWK2YswQPb7ve3FBWJbDDwFT7pZCjYGTOYAx1AGTSbZXLgTWB8KALCYcQ6rGcV4LQqeDZfChELc6d7YdYl1JrmS4LfghALI2I6tnQJPwrEJ4wfwGJRu76GT4DG4vt/vzr1wKzM8lMvlYnuWzDnQFNxdhwAhWVgcIIytTLDT6TSaVFNwd554tGQpREWiAgwBeuFeCF7S9dbom4JHof1maKUB1ZF/f8U4XfJe4E40B8/6a1FCCwFH43UlrYtd3vHD/oI2fesIJ5SbS3gh5kP4XEkpFM12CQh/TG4UfAvHYYvC6RqpQMzaPKHImLKD9X9Jcw+gJoJy6wAAAABJRU5ErkJggg==",
+    "slotMax": 0,
+    "price": 25,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

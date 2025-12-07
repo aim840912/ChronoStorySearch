@@ -1,0 +1,55 @@
+{
+  "id": 1002324,
+  "description": {
+    "id": 1002324,
+    "name": "Brown Osfa Hat",
+    "description": "",
+    "chineseName": "褐扣帶帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAZCAYAAADJ9/UkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACpklEQVR4nK2WjXHbMAyFobssoIxAjaCMkI7gjpCMII+QjOCOEI1Qj2COYI5QjqDyEQQFUpTdJsGd/2CJ33sASPuBPhdLeHRfveaz8O7O4v8i7i58qYCt/K17vgSPDvu+J++9uFnGcSTnnM5lKL6z1n4LPIYxJsMgpIoMReA6nVcm/gtelE8JyK8QgnwFzSFCU4U2IlrweOGBjdAcKogyirN6YRHSika+GMQavgA6GjjixBherfNBhNVOipsOpS5yFdNyUfRsdDU8gwE7zkSXt0A2WAlQCPBZEMKo9hsjlfAxDwGARmHRQIZunBeOAWYH6C+w/B0L4EUhAAABzbOnj6mPQiEguY33OdtuS3auSw3HGkzEr3A3GXY3y24yuaykZ2469LFe8w64gFvH5TWGNuCzZSdvYUERcQjvpLQsXtYQIX7T+z14F5wsjFsrsApLJpNLl1aNnUi5+CCejp3Y7PXcczyhlCiTlIy7zI5rsMTliudr+jRQlxByBsT9jzMhMHxjn+dhk/68h+GR7YO8V+4loCGCg2A/Dzm/XHBToHQ+ng+NE7F0LmCIhGuZao5UYlMucvlgxwD/mNf871SxPxPFvMxBurt9yDjVV4P3hnMi4qBErKUvwUULUjUwiBDaPe04R0ypr/O5nGIJETGm080HaF+dbP7IgjYxrgdTMJR7X2w1q5zuhYh6PROdjmvfn35ymU8AhZLb9/b9Rp12DwK+BR3V1hM474zQ25RfSz7ECkAIQJdrmIvjkE9FxOnF0OsvtwCe9vh9sP4sIh6TQxYxFDlKucedKuRDhhp/f2qwhtbRAmDQUAW9zsvz+kH/qhV/h26ANte1AlsNQ6l3g4RLQ9v6M3H3X2fjuo0QXQlx/jz2EYxDjGTgviFuCk7TrX944vV/Ad9hfVksSlttAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC5klEQVR4nK2WgXHjIBBF0UwakEvAJSglJCXoSohLsEtISvCVEJVwLsGUYEo4StDxWRYtCKS75HZGlr2WeP8vC9KT+lrM/ui+e81X4d3O4H8jbhc+F8Bafuueb8GDw77vlXOO3czDMChrrcwlKP4zxvwXeAitdYJBSBEJisB1Mi9M/BM8K58QkM4QgnwBTcFCY4VWImrwcOFIRtTkK4gysrNyYBZSi0o+a8QSPgM6aDiixODPxjovwkgn2U1jrkvZgmmoKLI3uhKewIBdJqXu756sMRKgEOCSIIQW0681V8KFPAQAGoQFAwm6cp45BpgcYH6Bpf9IAA0KAQAwaJqc+jz3QSgERLfhPmvq05Kcy1LDsQQrRWe4O2tyN/Fq0qmsSvbceexDvaYGOIMbS+XVWq3AN0NO3v2ALGL037i0JJ7HYCFuNfcteOedzIRbKrAIiyajSxtHDTMRc+FQ1B2NWK31NOf4QClRJi4ZzTI5LsEc9wc+H/HXUXURwXtAWP/YEzzDVdZ5ajaenw/fPLx8kHfCPQc0BLAX7KZjys933OQpnQv7Q2VHzJ0zGCLhmruaIpZY54PcP8kxwK/Tkv8VK/b7rEKe+yDeXd9krJhXje+acixiFCKW0ufgbApiNdCIENo9N5wjznFep1vexRwsYoi7m/PQvtjZ3IUErWJYNiZvKM19ttSMcNoKFnW6KXW9LPP+/IPKfAXIl9x81O/XYrd7YvAWdBBLj+G0MvzcxvxS8mOoAIQAdH/4vrgc066IuL5pdfppZ8DjGt8Hy98s4hAdkohjllMxd2hUIW0yqvL6U4IltIwaAI2GKshx3l6WH/Kplr0ObYBW19UCSw1NKVcDh41NW3uZ2Hvr5AV/kKzyIlkJdv4y9AGMTUxxw+1A+p0c4nVjHOcriH1PPnhWLxMSUDtaQjJQQ8Ap/mfjoWpwBmlxlqCNh1Yzmg/WlvPWjVtPaLfxvTyqcC7NXnn5abslYEtQiD93u5MDrUeYfAAAAABJRU5ErkJggg==",
+    "price": 115000,
+    "reqSTR": 0,
+    "reqDEX": 130,
+    "reqINT": 0,
+    "reqLUK": 240,
+    "reqJob": 8,
+    "reqLevelEquip": 90,
+    "tuc": 7,
+    "incDEX": 3,
+    "incLUK": 2,
+    "incPDD": 57,
+    "incEVA": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 10
+    },
+    "incPDD": {
+      "base": 57,
+      "min": 12,
+      "max": 102
+    }
+  }
+}

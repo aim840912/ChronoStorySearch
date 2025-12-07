@@ -1,0 +1,49 @@
+{
+  "id": 1082098,
+  "description": {
+    "id": 1082098,
+    "name": "Brown Lorin",
+    "description": "",
+    "chineseName": "褐戰魂手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAbCAYAAACJISRoAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACFElEQVR4nK2WgZGDIBBF15k0YEqgBS0hLcQStIRYwlmClqAtWIK0QAlnCRzLsoheRM/LzhhAcd/+D2pu8JnQm3ESDj4B0XqizqyovRcemnwCop8ZQNPQ4PWi9rsHUBIgbyws+Q9EY7IwECaNmtcDYDQtFjBI0Fch3iIMtql8koJqABDpcv0KZGURBtskB1KAADV7JX+GWItSsVZQVNRmguzCQEA92O7pNbG75cvc2IUKWte6NcCqUQXCGIA/RxCbvH+uTypXbeMUgFPANg0B4AiiOblIl1VU8wxCLCB7zijAGSL7DYhBLICTp0L4C8JkfwfCqN8A9iC0PYUxPC2XapvcLDQB7FixMmrlBhiDWAWyS031nRl2VH1Z2sP2xwrG4TxgTwnZEXgh69oreKCNgo5uOAZsIXqaJiiKwp/4ytYZkItbGBXgIiOgbGkfd1UFe8EQC5BSQpZl0JoblckYAstUOZU0xl3UTvRuwfsQVu2AvBKcOI4j9H1v+zHgAwgojGd4Defh/JgSq2JwG3w23h8B8zx39ikPisWNVeBETso37QFdJAZmC8QCDiHbpDGg850fOAsyYQctrYuGd088VsoLfwa4jdlt75gSpOozKhr6iGxfG8n9ftet28q7drFlV1QwyNn0rohl4TkR7rKX+dRx/0DFCnSkJKxkVXmo8GqErxWuZPVHjZ8JiKs4DfHJYv5eiR8rBpgDucsZ2QAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACU0lEQVR4nK2Vj5WDIAzG43tdQEdgBR2hK9QRdIQ6Qh1BR9ARzhFkBUY4R+ASAoie/67XvEcBhfzyhUhv8DnTq3kUTj4F0nrkwaS4T3IPjj4F0o8UoK558nxy/90BKAmQ1QYY/RekyWFoBJSo6nkHGLCnIHoJ+j8gny4yl7LiwUrKHkDE8/t3QYt0kbmUyZ6VEERNXtFbIJOuWPDEKclL7lPBqSMjSNWb4Z/OyFTRCze3oZLG9vZMKHpSQ0AHoZ8rIAPoHsuHykZdWyVglbiU9QHkCkg7gIjnk1XTBELMMPMMldAKkf6GnIEMxAFiIfwLgYQtGFm1ATkCcekKPIC4mKOuMzx8hpi5cgq5lyvoGcgokW2MKlqctqyiKEwz46GEob8OOVLEqQnyIqvKK7lTSgW3tj+HbIH0OI6Q57l/8EqXXohN5U1K6OAJUjRc421Zwp6FIAORUkKaptDgZoVeQ2gRK6uW51Rdzcj3EO0jYLkDWyiixcMwQNd1ZnwEvQNDBeaP3tE6Wn+myKjp7Qcw4VmcQbMss6lUHnZkXhE5osXOsdu4B7UWIdAESUFcAq0dH0HtObiP0sDQzKThc9KwdzNQxK4YrkDXNtnSP1NEdH1FTc1/QusrJkqSRDe2zI9AxsjpO2oczKZsK5BlMThnVH1P/Mt045WaBPii3rLE9vR+kctQURjRQkGoFO24vNimoDfNgWLbMtt/hbvcN4NGku47Trdg1ChCdQsgIugrVPeyG9pg817K9hR5CxWtF1V/dLgeL9oNZnkhbCvyXwe8AdiF/wDl8rJx25V0XAAAAABJRU5ErkJggg==",
+    "price": 140000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 218,
+    "reqLUK": 73,
+    "reqJob": 2,
+    "reqLevelEquip": 70,
+    "tuc": 5,
+    "incINT": 2,
+    "incPDD": 26,
+    "incMDD": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incPDD": {
+      "base": 26,
+      "min": 0,
+      "max": 61
+    },
+    "incMDD": {
+      "base": 5,
+      "min": 0,
+      "max": 40
+    }
+  }
+}

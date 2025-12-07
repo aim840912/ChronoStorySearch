@@ -1,0 +1,27 @@
+{
+  "id": 4031164,
+  "description": {
+    "id": 4031164,
+    "name": "Alligator Skin Pouch",
+    "description": "A pouch made out of alligator skin. Looks sturdy enough to hold on to most anything.",
+    "chineseName": "鱷魚皮革袋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC+0lEQVR4nKVWC3XkMAx03lsCpmAKppCDEApbCC2ELoQNhYVwoWAKpiAIqUb+xHaczTXnvm0c/0YjjeTc1LW2dsaGztzQLroKqO7fo/KewguRWl5+TeNucfyj7r6rgMP8tawlqB210saUYENv42WGaAJGGxPy/nTP/wAOy+xWa+pBFzC77M4AW2G0h6x/n4ZdObELX0yU4+hITaNSX7Ps/b1L798Tu83LYS6KogR/LV4595ABeBcePXPqW0DnnLLsMxyURMFuzPPTGBnyOuOdWhQpoxUzvQY4gJXWOouhFcWfD6+seVRj8wnFU9GAEaxG85sgxb3Tp1UeKsECnoTr4YmjHDwDXJ+fRhnLucYu8+QlDZiwml9KjTynAUSa8bTyrFZ2uvSJeL3rC+ctw4+H5wPm/J4YSjzxpwOAADuSPpqW58VKo1kYEke4i985rsw6sNO0ASQwz+swf8TyCFDKFkCM5nIVxQIwxA1gI7t6cYuMs1Y5HSAgNsm7zQhLO9Ae4Ir8S5vgmJiH6v4co7ug2MILqDYO60MnsRRBNa5tAQUMR4LVaC0n95LBrOabgBZh59h0goiShMWwJifMnmUJuE53m8EMKr/fMtiwu5xfAmsfWGegTu4JS17b1oAEuI53E66XCEYxDcAOKYB3MBq5WJYAnDgcPRdBiglI2kZRGTFKWGaG8L8vKklBgMVgsiIDuz0lMLJaq7MGwNVOm/TLBnb2jozWVeyhSLAFCKe85GQJ3OtHAa+3wK6wmqhiEOZIDiVFO3YARgjCVkpI9bNh+E/Nx4unZJfiJHNFzBK47rj4ti2Iz/yvAMtCCoyqOajRb/1UxCvGO0CMF8aU1mGPuDUCSdyOtFEYkzTRYgJwwCeeCKegi3Vy1cxJOFtcqEh2vOOmSEZuIBsYDIwpndNiSJ8QAMnUikMBksUKJkbv4lQVg4MrsRSNlB6+PHdf1bhQuZrl0AqQr/tHACW7FrAC7oBWhqBG5vi+KXPUnPmb79LKkFiQe9fs4Tcp2g942POKPvRQawAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADHElEQVR4nKVWi3XbMAyk3vMCXIErMCMoI6gjOCMkI8QjWCt4hGoFrsARihEUHPgRRNNW6zJPEX/i4YAD6JN5ra2duaGzNrSbXgU05+/RxEhpQGSWW1zLfFgCP9T97lXAYf5aVg3qR2uscxps6H34MkM0AaONCcV4+M3/AA7LHFbv9pMhYXbZHQG2wmgPWX9fHbtyYhfemCjHMZCZRmO+Zvn23116/p7YbVEOC1kUGvy2RBPCRSbgXXj0yKlPAUMIxrPPcFARBbuxrk9jZsj7XAxmMWScNcz0NcABrKy1VQytKN4/ovHuspubDygeigaMYDVa3AQp7p0+vYlQCTbwIlwPTzzKwSPA9frpjPOca+yySFHSgAmb+WbMyGsWQGQZz5rIamWnS5+I94e+cJ4y/LhEPmCu48JQ4ok/mwAEOJD00ay8X6w0loUhcYS7eMxxZdaJnaUNoIBF3of1RywfAUrZAoizXK6yWACGuAFsZFcvYZF51iqnAwTEJsWwGeHpDrQHuCL/ykdwTM5Dc76O2V1QrPICqk3A/tQpLEVQjWtbQAHDkWA1es/JvVQwb/kmoEXYBTadIKIiYTGsyQl3z1IDrtPZVzCHyh+3DHbsrhCXxDom1hWok3vCkve2NaAAruPZpeslg1FOA7BDCmAMRiMXSw3AicPRCxlELUDSPovKiVHCsjKE/6OqJIoAi8FVRSZ295TAyFtrjhoAVz9t0tcN7PwZGW13sYciwRYgnPKSkxq4188CXk+JnbKaaMcgrZEcSobu2AEYIUifUkHavxuGf9Vivng0uxInWVMxK+C24+LTtiG/6z8FVoWUGO3WoMa49UsR3zG+A8S8MkZbh2/ErRlI4vZIG8qYookWE4ADfuKJcBRd7JOrZi7C2eJCKtkxxk1RjNxANjAYmFO6psVQfkIApFJThwKkihVMnL2L064YPLgStWhQeixfnn/aTbhQuZrV0ApQ3PcfASh2bxhqQJuf9/x2ah6gn/og1Mga3ydlLq/86jGsh+/31valB2z1d2+TPjwv755Tsxgb0J4ey3X+1szTk3Ht/wBXfgBI+4l1bAAAAABJRU5ErkJggg==",
+    "slotMax": 0,
+    "price": 1,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Quest Item",
+    "lowItemId": 4030000,
+    "highItemId": 4040000
+  }
+}

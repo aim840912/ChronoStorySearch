@@ -1,0 +1,62 @@
+{
+  "id": 1051047,
+  "description": {
+    "id": 1051047,
+    "name": "Dark Anakarune",
+    "description": "",
+    "chineseName": "黑聖黨之服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 58,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9ElEQVR4nKVWC5HjMAyVZ45AD0IWQgohhdBC6EJoILQQNhBqCBsIDYQNhASCT5It19/kbk4znTSxraf3JNn+Bdtm4N9M7U0oAXqQtm2zwXmeq87WdU0DzAJIAc35fM4AmqbxQPS/FsThcPDfaN40TSYFDQEZjBZhpP75uk+4mn53nILPWcM8Ahz7A3Rdl4EWLALdzOHz2cI8aDheDrAsN/Sq4PcR/79WWJ4rgmi4DG3EXhRBdkWfGaAw+/rCxUPPTKyMDwS0To8XgNdzAvr6vE5+zlZ+S4BKa82ystOjRqfo+L6iQ3Q09jyJnDLbcQLyL9KGLGvsigzFKVUoM8EcLstiGWIOl5f2zAmoaWaeL1IWrFo0EUuSlRz2Y8fs6B0Fx6etYqqXkJVIusWuxpBB/7YHhZ0NyPZuALrbh95okQCIsy2THgyCKu46VUByQNISMP2+byQdcKGcMJ00Js7TzWHLqoBpAdBrWhNh34XmZM12mU1AMmIpZc4+6TfH42mAeyyjrc09o6iwgFjOt2OAny+Aj08N1+u1KGXwXt1Ljfkhb2dQyrZFFmnCThiWCoq+mW+b74/P2l7a4PdRZQuFFQVDGzcBl9pb5GUwY+eW5gWSPqLFYSHYv9iXjY4Wkwrp3PciF2AB0NiIetjMN47XnORztTvOtMv3W1bHsOVJOADhmRjlh4PR1TyGFc1zGmrcPpOVAJVS/f7dxRVNTYW8eB5FRSSHUi1GFmcVyBL1Np/zuzXkSiJrqOnVaeK5gdVPfAEieYZhYMfMjs7DjuLBMwviCkyDk4otnY1710TXEpYdt013d/LqnXXlvbXKMDJmd3ZAfZbLtHDIBCzdV7Nbm5iA0rqGLmdjzChtvdImXmKZMUzZMRhJ2kyxjIVqrZ2bIcsIML2TesfUU1zmdAuYPFva1E8PDbfbLQIMZU1Z+s1bGp6qiu4ycdOrIitRMK3QElNh6fuQ7jEyEJo6wX+ZtIV7RpIqN2C2LkElw341ofPEIh9/AJIK3ufjwHqVAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC+0lEQVR4nKVWi5HiMAyVZ66BbAnZEkgJUAKUwJZASoASoARcwqYEUsKmhFBCTk+Ogr/hblYzmfxkPb1nyfYfWreJ/s/MO4cc4AKy2WySn8MwFIM9n884wSSBGHDa7/cJQF3XCxCeS0lUVbV8g1/f91MM6gMKGAZxpsv9ce55NK4zu/B9sDR0RE1b0Xa7TUAzFoCuzuH9vqHhZqk5VDSOJ45q6KPh58eTxvuTQSwdbpuAvSrC7LIxE0Bldr3y4FsrTJyMFwZ0QZsD0ePeE77ej/3isza/OUBjrRVZJWhjOSgHPj85IAfqWnFCUGHb9YT4Kq3PssQuy1CDokKFCc/hOI6OIc/h+LALcwDV9SD+KmXGikUTsISsCNh2W2GHdxac766KUS8+K5V0jV2JoYD+aw8qO5eQ610P9G0fLoZBCqDB1kx70Esqu+oUAREA0gIY1/cJ0pEUyo6nE/80eLw4rFkRMC4AvMY14fedb7OsySqzCggDSy1ziYlrCP/HCb5jGSxt8z3IigtI5HwFJvq5En1+WToej1kpvffiWjpNP4i2J2NcWySZRuyUYa6g8G36dvP9+VVaS2v+3plkoLJCMli4AZxrb5VXwCbnm/PzJL0Eg/1CcI/cl7UNBkOF2Pc1aE4wAzi5jFpanW/+XwqS+tp5O7PzfL9knRluxIl/kL8nBvMjydjiPPoVLT41GrdNZAWgMaZ9f3aZi6akQlo8l6wiOodaLZMOTipQJGrdfA6v1tAjiY5B05tdL76elXd8BYI8t9tNAgs77Idb5MN7FoUVGCenFZvbG98dE+eWcOykbbbnWV77Zlx+bS0yDEzY7WegNpnLuHBgChavq8mpTU1BMa7G4awLGcWtl1vEcywThjE7AYOkdR/KmKnW0r7pswwA4zPpEhg9JWWOU0C/sMWivrtYOp1OAaAva8SyWhZvbXhUFc4yYdObLCtVMK7QHNOZ5bj0Ic4x+sM3s6NfmbbFfA8kBY0KWXi902RioMkCCtyvDz94ZB++/1/kT+DnVzeSsQAAAABJRU5ErkJggg==",
+    "price": 100000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 175,
+    "reqLUK": 60,
+    "reqPOP": 20,
+    "reqJob": 2,
+    "reqLevelEquip": 58,
+    "tuc": 10,
+    "incINT": 5,
+    "incLUK": 1,
+    "incMMP": 25,
+    "incPDD": 52,
+    "incMDD": 26
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 5,
+      "min": 0,
+      "max": 11
+    },
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 7
+    },
+    "incMMP": {
+      "base": 25,
+      "min": 0,
+      "max": 83
+    },
+    "incPDD": {
+      "base": 52,
+      "min": 0,
+      "max": 110
+    },
+    "incMDD": {
+      "base": 26,
+      "min": 0,
+      "max": 84
+    }
+  }
+}

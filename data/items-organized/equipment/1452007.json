@@ -1,0 +1,39 @@
+{
+  "id": 1452007,
+  "description": {
+    "id": 1452007,
+    "name": "Vaulter 2000",
+    "description": "",
+    "chineseName": "暴風弓"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABd0lEQVR4nMWX4bWDIAxGwzndyK6isziCs+gqdQVX4fXLM55AEemR0PwR0XJvMFh8kE34k34Xd9QW0GCXue6kXUuAB5umiU/WdaVlWXzu/nmeaRiGKgIe4HEc+QTHvu+5DUgqAJb4RgAZxdPKcGSMeGdNXdclQScSrlRAstQS3nsMtNK2bdwhIvsxVQMfyZQKOMCVBAH+fHb0ei3k/lGOyiKYyUfmpkBASyBDzOBd+JlA8FwRe0XzD3X/XXhKIKhoBCoahfUGe7Sj530LHgto+HEzspdlJVVeC64FknAlweDacC0QPFs9gEw7rus1XgMeCOTgkWRJ9kXwnIBJwV0KACpF1wKuBZyAdwmTgssJHBJW1V4iwK9fq2q/EvDRZoKocrVfCXDozUQLuAjw1Evh6XVvDRcBhMOfjeov2kzUFOCQjWIr+IfARVSHfyNgAi8VMIOXCJjCReD4TGoNF4FUNIFrAZ4FtQSbwLWAl++4i/eAmQD9InvEH7046KVaez7/AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABv0lEQVR4nL2XgZGDIBBFYSYNXAt3JZgWUoLWkhJSi7YSSzhLOEvg+BvWWQggJpCdYTSovLe4GD2pNmES/TrsqC0gwTpzXPN+LQEa7Ha70Y95ntU0TSZ3/jiOahiGKgIG4Ov1Sj+w7fue9gGJBcAcRwSQUTitBEfGCJu16rouCkpI6FIBzlJKGGMw0KyWZaEOFnHbWA08JVMqoAEXEgrw87lT9/uk9AOlVVl4M3nKnOQJSAlkiBl8F54S8O4rwlU0XSj734XHBLyKRqCiUVgWbLAf3O+34KGAhG8nI3teVlzlteBSIAoXEgSuDZcC3r2VA/C047hc4zXgnkAOHkiWZF8Ezwk0KbhdAUC56D4BlwKawU6iScHlBDaJVtVeIkCP31bVvidggpcJpSpX+54AhXyZ+AScBWjqufDkum8NZwGExp+N6C96magpQMEvip+CPwnsRHX4EYEm8FKBEP71Amd9RQCgP9t+bPsO4EckVrFdVSADge0zSQSAv7ZdbOsS4JhEKlMGL65t56VmAPDBwSWs6vRLAZoFsQQvDhZenBtszeyH7UnA8Heck5CPw1jWMbmY4Jo55gnIB1CT5ZaKfwsyAueevwrOAAAAAElFTkSuQmCC",
+    "price": 150000,
+    "reqSTR": 45,
+    "reqDEX": 125,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incPAD": 55,
+    "attack": 3,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Bow"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 55,
+      "min": 53,
+      "max": 57
+    }
+  }
+}

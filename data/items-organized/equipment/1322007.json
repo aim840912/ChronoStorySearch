@@ -1,0 +1,39 @@
+{
+  "id": 1322007,
+  "description": {
+    "id": 1322007,
+    "name": "Leather Purse",
+    "description": "",
+    "chineseName": "皮製手提包"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABYAAAAXCAYAAAAP6L+eAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB3UlEQVR4nJ2VjZGDIBCFNzNpgBa4ErwSTAmkBK+EWEIsIZYQS9ASjhJiCVKCt8sCgmJ+jhkHRf3e4+06HmE75szaAT4ca/A8P9SW+tV5sbcFYnCAIihVW9bj3TwV8eA1NHmJgLcS4Lda1r5beLqLo4VOPYBps1B7/ybsSdsZO6tiEXECG3iIIgcVQszT404nKKyhgjoRKCQL5NznuiI4nR59gNpRlnaqYAgCUubdZ8HstOcLC0WHZlgeIIFhAIVTN7C2xOOK1/XAcAZjvlkojA6qU2WEElxojEcZaND5yOkE+KaPJ1tIw8AANSnUz0K4XZEjPpVuDuA7KiklHGN0L0Tbx9HWHVQXbEvNUDOOmDNDpTtwCQrB4AP1aY/Pd7glBSdUuG6gzU/00URQn69w0AY3qI3P2A1yzPA6dIB3Si9WF1wbdQqVnAJBa4Ri1vtdkQzMsroqjiiC2jwjaBNBs2DrekDXQrsiQihU7LRwUL1yugYfTh3MPdoqS19pE/p1k6nkR/agu1Go0mc9ZAslX0DX4MQ1hdC0xn4A6+q/gu46plFh1gT2hRJRS72C5sCJa8qSohZR878DfeqYOsM7lSLfUp+Creu7YrfUVgQ984f4r39eAj93m7/1R3/qP3UvG30DU49+AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACLElEQVR4nK2WjXGDMAyFlbss4I7gjkBHoCO4I9ARyghhhDJCGAFGqEcII8QjUMl/2AY7pFfd+WwM0acnyYQz5G3Z2TvBHy0HWpab2FJeBwd/GrgH8hB0HN9Y90O1h6ApKIVETgjwXQP8NOveWw+HVIagZbmPAKrfhej730wv+kHpWVQr1AKzsE3q9iCMseV+u9ICA5HQQBsBK26AJXWlrvNK7rfRQ7TVtZ4amDyQ87K6IsgoGc2FhqACNa0PEHCaQOA0TCYWjuOC1+0Uw2IQ1mcXArOFyDgShBCMSUynUNChstlkcwPLnqO7bgxlAB6iYoibGbOBUoRmyVnscAO6YiRCMOtztg6m6Jm+HaD5wmMgDUTNM9bJQLgduAUVzlJtQSc6JyP+fsAUCHhH4mUD6T6DQxxAXH2YhXRSQzI1skaKDKz1HeaUkKPmC/dmGUO4yRpBWoTM6omuiwxr0VyESWkAIQsh3Q6kCNKqJlTFpG0K8IUPlVQWIjNKcqDT+wDLiGHXtesk5c/LpibcPPIIUlSkVdWuVtNu4flBSA4UqaKkdb3SBzLtrqOQh4rIGqwVgVzhWdDCRyElUKSKakGlYsFhfAZySBF1nlPCWbmF/wrSqq7CqKE2JsiHeVH8yzdDBPsYNl9DL+BfnUVT4UUKYslM9pbsVU9A/OvfgVhmpNA9JQr2zUHoL2A+B055MIdOj6TpITxUlHsoF3F6L11H4wyrvEcpYhloKTC//gVnjzeCQc3kcwAAAABJRU5ErkJggg==",
+    "price": 3000,
+    "reqSTR": 20,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incPAD": 34,
+    "attack": 1,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Blunt Weapon"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 34,
+      "min": 33,
+      "max": 35
+    }
+  }
+}

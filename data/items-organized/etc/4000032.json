@@ -1,0 +1,27 @@
+{
+  "id": 4000032,
+  "description": {
+    "id": 4000032,
+    "name": "Ligator Skin",
+    "description": "A very solid and tough piece of skin from the Ligator.",
+    "chineseName": "鱷魚皮"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADAElEQVR4nL2WC5HjMAyG3ZkSEAVTyEFoIXQhtBAaCA2EFsIWwoVCKIiCIOQsyZYfSbrd25l1Zrt+6tMvy0727vfLzD+/BZ5T5XDu3PiYfgSeV/p2a+PX+8kRkiMKf+Hh8r/g+fZ5lgoiWuejH2sYKQQnncMtCM9PwLv+4zFfbyc1GAHn28EmTBHGGAzjggNwzxBmXv8VuA3nrmoFaziiGPRelSCSAdkhVM9kTue9G52AXyrWcFJUFCwNl2cOZVDLIYRgEAJUgGFe13USflbJ+xqGZY4P0KF/mvP7Tej9rPtHcW/Cz/mqoSSX95brFMPKxqdp0vShHBbufwxjFbFNxRSJ7LkjynacW6iUPmljaioZrGaCvlIsnhKhGSYD+FWoWU8wzG1eezh1zneQMn87uYiwqJMAOTlYu0FZOWSnsjwSZwDMQO3VimJJHj6DnDjJ4OFwEOCEWKn04GNf6o5jmlEVFDxUoBI8f/69yZ4iJ0hc4DtfAVMxaC1VoQVQAtNAF4rlSiMs9rPeyxRaLqUzeRiKduOIk/3lyjK5KJ49hrHSIoaJK4aoUS97ugWNzj5fHSdVTJJ9LtaNGEu6mXT8PSjAdqjllrLLXJRLdCQPOZuR4hltIqCTwJyWHsno1KdtTth489WhliyOdlwJ5SuQsMotBUBOmnjJmCPmX3mklopDNt9DCKcKAPFSb5XKmS7CmI9ovkRyIMDq1JD3aQ2E4+EaZUhYTV6FlgsgKxv19deWKrl2xz8XUQ3yqG+VmibRFlDQdThRvMf5RGAFaovtsXyUFMmxGt61Yo7wf53XHp2XYFfuVbMfZXidK9Q26lmp33JwExxg8j7FaRlGyA4QNS8I1BeCfIWEPIFvgOWO5mLv0wbKBtU1PUZywbj01tLMSHvbfww89DLMplhYWNzR0ev0yVL2WXzSpyo4A1/ehBo4hU7ClSBJaTyLH8feFt1DhEA+aer+d6EJvAuehivzKokhRyGQLsehnWtGL8d+Xuv/TknJFb6Th9efsu+PvVX+Aay79iXzBKGUAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADPElEQVR4nL2WC5EiMRCGQ9Ua6JMQC3MSQAJIYCSABJAAEhYJh4Wx0BZawlw/8p4M3O1WbajZzfvrv9N5fLifT7P8+SnwHDPb4+Ce9+lb4LlTt+m1n257R0iOiD/+SfoqeL58HjWDiKnyfn7WMDIITtZHSsC/74A358N9Pl32NmEAHC/b1GEKMMEgtysOwD3YzTL+Hbh156Yq8Wz4RJ3Qe1OCSAkoBqFZpn0G793TKfilYnMnBUU803V8ZFeyWnEh8ITAUAVyv2EY1P2iUtaVm7WPZ+j1/EjGf6xCb0dbPwprw3+OJ3Mluby2kqfgVpl8miYLH8pukfr79Vl5bFUxBaJY7ojyPM4tVGqdljEWjQwplwS9U6yWEmGamBLAd6Fp9gjDXJax2/3g/AAx8teDiwiLPClQgkO0J6goh2xUlkdqDECaoLaqo1iDR/agBE6ccLvdKnBCrFR68KEuVoc2i6gKCh4qUAmeP/9cdE1RAiQM8IOvgDElaC3VoAVQHdNAF4r1SCMs1rNey+haSaUxuRmKcmOI0/WVzDK4KOw9gYnSwoeRqxNRo17XdA0ajH282k6mmDT6XMgnYkjxZLL2f4MCrLtaT6l0mKty9Y7GoUQzUtijjQesEySjtUYjOtZZWQI2nHy1qzWKwzyuhMoRSFjFlgEgB004ZJIhyb5ySy0VczTf2IVTBYBwqLdKdU8XbsxbNB8i2RGQ8tSQP+IY4O3hGmVIWHXuQssBkJU97fprUxVcm93vUVWD/sy2Sk0TaAso2DicKJzjsiOwArUprbE+Sorg6Lq3l5Ih8t/6tVvnJdiVa9WsR+le5wq1jXpR6tcMXAUzTO9TnJZuhGwAUXNBoF0I+grhOIH/AOsZLSndpw1UJjTTbBvpAePirWWREdf2fLhK00s3J8XKwuKMDlbHJ0tZl/wTn6rgEng06C9X3n+hexccXafuipCoNOzFw+6cBt3YQ6BPmrqe046/YQVKxWfbiS3lI/OkgaFbgUnj7toaOUYl4+58KerLji20hOtTLXwUg4vfydf2KXvgz4c8hHx04b3o9y6aqFdZ3k6bBgCdQd1JOm1tvv0WT5/ojlJFT1HPqJ5ha8a4v2DDEZG1Uh3OAAAAAElFTkSuQmCC",
+    "slotMax": 200,
+    "price": 25,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

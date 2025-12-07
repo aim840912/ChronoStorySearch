@@ -1,0 +1,27 @@
+{
+  "id": 4003002,
+  "description": {
+    "id": 4003002,
+    "name": "Piece of Ice",
+    "description": "Water frozen through the power of magic. Doesn't melt easily.",
+    "chineseName": "冰塊"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAVCAYAAABR915hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACg0lEQVR4nKWVjZHjIAyFxcw1QEpgS+BKcErwtrAl3LaQEs4lLCWsSwglhBJCCT49CWziOJ5sTjOJbWT4nn7Av+h5mzbGDL1oz4AFeL5OaR7JRNYSvR3My2L2wLLodVJgrn+2sPn+fGFfeS6Xp8VsgW+A1Wy7utWIc15EVB/m4TmmROEU2MnXcWjFmDX4BmjpseXKt8u1vp/YGUKkOI4Czayi832yNlP/5697P76BYyp4aiPcg+75x5gpDIF5cVZkneOLoxxZDP++vi8EOMDTtErrT02iHEaNspWW9S5nHneeEiwEeNxPttND6IlriYgKhmaqQDNZ79mvoiwLoBjov8CBUzuOkVNbYM4qnGEAOk6zwAGVhvCEWsNeAmNqZBgnjheylAFMVsMvm7zre+n2GAZyXcdjNWr7GCzTc9O1tCRwfidrGuHwAPtOIseY947rjUwkcizAob4ohQjydBoKuNmG2igx6WJp8SG63FLRsc0+SkmUSHqRflmo3ew83lvN1F3EqBmsY8WpvAABWGgcTgzOzSbmbUJuPkzwjJs8C+O5fSeRS7QMxpKfH0cUft7HMihRyn2W+/IoUUh32pqaeoOUMEwOirHUmxuIhWMOfrGOM/xz+BDoXcQ1rZ1bHRHC8Qq6M02BZlVT3XNdO4e0kkJ5fGigFWwOxkwX/vrsnVjoTDRL1aEZrYd1muF95wWqfj0yQ/i8gbYRm/arcmk+ga70ByJZzlQ7J1tKQNq1ANe9q2DahLZgap1bItaLtnsM6fSlD2qV0DN8Jm9C1+DWNkV8n6/Lt7nCy0nVdJ5Aed5D6B54U8Tx92EW8VVECNoh9VbYxhi3nvcqeFPEeyPi0Tt79g+LU2EdepqXmgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAYAAACgoey0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACzUlEQVR4nKWWgXXjIAyGxXu3ABmBjkBHcEZwV+gIlxUywnmEMkI9QhghjBBGcCUBtoKNk+Z4jxgjw/dLCMgfeL5MG30KXizPgBl4uU1h7okAWgO8HdTLYvbAPOltSsBYfnRmY/tyRVt+z4+nxWyB74ClaDm7Th7HuIgoNhpH7z4EcGeHRnyOgxSjavAdUEO7xMLXy7N8H9DonAc/jgyNqKKzfdA6Qv/3n/k4vhFHFfAkPdyD7tlHH8ENDnl+VqSNwYeB6FEM1q/vKxCcwNNUhfW3hb0cxuSllBZTK0bsNxYCFefIYn6znZrQM64leZQxMFMZGkFbi/YkSqMA8A7+C+wwtOPoMbQZZnSCI4yABsPMcIJyQligtabyEpiGeoRh4HAiDZGAQSf38ybv+p6z3bsBTNdhX/Fat8E8PIqshSWA8zcxhZEMlsC2Y8+pz1qD602RCGBQgKH1paVgQRbOQwaLbZgSxYc0WVhs5F2UVMpYsY9CYCUcXgo/TyQ3O/b3OkVq5TGtGZUOFYf8AQmgicbhjOAoNjFuEzDzYULv1IizMBzbd+w5e4tgmvL0eaSFn/cxd7KX3I7czq/sBWenLqEpDQoJwvigGPN6YwKhcBpD1Zd+hJ+GT4auPC5h7Ux1RDDHJtCqpBCkqKZQ97iunaGwQoJi/yCgBawOSk1XvH32TizKTEqWoiNFtBzWYYb3nWVosqcj07nTHVR6rOStchVXoMn5QZ4sZ6qeg81LAClrCVz2bgLDJlSCQRq3RNSTyj1G4bQ5D8oqUc7gmbwJrcGybIr4vtyWu7nA80klMo+hOK4J3QNviji+H2YRX1kEo/OeJrZSytTjXgXXItitj/fDrfHNoegRffXBtwvW1bPuOzbG2epdXlelboJ1o7ZEbEG2+qmGXGMNLhAjnhLy6M9JC7oqLY9bg1oe1ba6XdcVuITjUUi3bspHQu9sP8rgfHYlSTrNAAAAAElFTkSuQmCC",
+    "slotMax": 0,
+    "price": 400,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

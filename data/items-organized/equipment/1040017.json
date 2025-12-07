@@ -1,0 +1,43 @@
+{
+  "id": 1040017,
+  "description": {
+    "id": 1040017,
+    "name": "Grey / Brown Training Shirt",
+    "description": "",
+    "chineseName": "灰修煉服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 8,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACEUlEQVR4nLWWgXWDIBCG8b0uwAqsYEewI+AIcQQdQUcwI+gIZYS6Ais4gr07wYCCYl/6+xKUwH13xwn5YNdanPvs4vfYmE1nQDLUtzVruo465vlgnAnBqa0fD6aUYqOa7JggOAZc6loywcUG45zDh10KHdSzZl03LiFoCLgMQ8+mSXmwM9nopJT0LOBCh0PQPZBgVm29pnOGXMbAbduy8flcYeZ3+p7DzkXXMM8LirLvVwfUODI1TXQ/mD4NjuAYF2aFyxGK0gVSdAImaq3JAEJnuOdCHBzCMRh5LvIDDJ+xJ5RaC/RgaIgnVEie5xQlCVt3TgSKwOXne9hShDCsMskdY6AC0laYonD7Pe2hjix0SykZMTA9QUoLxw6mOEFV08Br0b6g2BrnxlFRi8Ds86tchr7dqtHVBIUyKmXm+97b4vGDnNcqhbHoaAcVTAFpsp3ZCLOyarZdBO3W7L7sa4QtRoYwAyKGjdDrWL08bmGpkkXhboWe3T0wKKxEWyyeYoVjoM91zdK2NqxaqlhTLKlFk6LLCO8WDRdYLPHoU87Dt+rtQNxDJ7gektbx8rQg6ZOCiMp5yc/SGj+e6CR4rV9IZVXROmrn+JovnP3XNZRFbv9yBI8nTyFPtU5LtV3HkC4j3HH3L/JhR3LTCtEd5uyBWVlW2zrGdosU3dlpCPoXCBwAnp3QmFhKk6OCo+3WvF961CnqxH3BvAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACVElEQVR4nLVWi3GtIBDFmTRASiAlmBJMCVrCtQQtQUvwlqAlPEp4lhBKiCX4dlcwC6KYmbxzxwsC7tnPEXwRaaysnyXmz9bsuCIkQ0PXiLbvaWBZDsaFUpLa5vEQWmsx6dmtiRKfEa5NUwol1U4mpYRLJIEOmsWIvp/WGGmMcB3HQcyz9siu4KIry5LuFfzQ4RhpSEhkDl2zpXOBXJ4Rd10npudzI7Pz9L/EnTutYZ4XFOUwbA7oaRJ6nqk/2jEDjuAaTuaA5YhFyQkpOgUPGmPIAJIu0JdKHRzCNRh5rvIDGd7jSCy1jtAjQ0PyhkLyPKcoCdjyZ05IkXD9+2fcU4RkqLJSMmOAAtJWWFHwcQ8hKYMj3VNKRiyZmSGlBbODKb6Bum3htei+SbG1zk2TphYJs/ePah2HblcjxwxCmbS2z/veO/H4QS6bSmEtOtqDgikgQ7YzF2FW1e2+i6DdRvwc7jXCFiNDMktEHC5Cb2Dz8riF3UVZFHwr9OyGhFGgEp1YPJwJx5I+t5rd29pQtaRYK5a7ormDZIQ/FY1UKJbz6O+ch7+KXyfEPXSG36OkOiZPC4K5EMQp2Et+ldbz44lOgu/6xVDVNdXRsONrSTj7X2tYFrn75IgeTx5inhpzL9WujjEkIwx4X4Ppr3A9TytEh82laLKqqvc62t3izdlC522bhH32Ha5cbB8cdIWEaOwNSD/ZWMHmRKS/Aw4AftvaZx0ZbleGE0oWRWVbwdooCRxt/LYP7B2KHovQIVwcU0wbmQv73vUSTBqRTl3U84SDe/8flSxDebUlIjAAAAAASUVORK5CYII=",
+    "price": 1000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 2,
+    "reqLevelEquip": 8,
+    "tuc": 7,
+    "incPDD": 7,
+    "incMDD": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 7,
+      "min": 3,
+      "max": 11
+    },
+    "incMDD": {
+      "base": 5,
+      "min": 1,
+      "max": 9
+    }
+  }
+}

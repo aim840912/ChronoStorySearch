@@ -1,0 +1,43 @@
+{
+  "id": 1041008,
+  "description": {
+    "id": 1041008,
+    "name": "Green Able Armor",
+    "description": "",
+    "chineseName": "皮製旅行服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAaCAYAAACtv5zzAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACjElEQVR4nIVWgbWrIAwN5/wFfCPQEewIrGBHsCPUEewIdQRdgREeI3xGKCPwEjAIom1OWykk9yYhBP9BLX73X8C5+JP5ZJMTBOWXApgMgHEAnQRYbJg/IvG9jAO3TqBujiVyAk/AJNo1CO4C+CfPCbzd6cgGwLpEFEiIwM99A1K2kWAxh4D7CQJvVfTK2mgjbYxljTzYhQgIvGnYHVOEqzpVselFQ0PusuercxZticS6TTcQELhzEdE5VwBbp48igrbtkk1ORCSLdikKIhCX+xTSFAngI3AuuWOcpttU7h9vssCFIs/zPOOmYeoAQWCLjsbXn9v63xbAJAy+plgU5+CxlpKUEg3RGMoUsLf92AJGXawpzIBGkqxUizJNHrZtvuF1SgKYwudYrpFDOTBLRWCMQRL4Kk0T94z0nTvXqwj4ywB74Srbntv4G4HAHPq2a1YDIjkiKIlYbCy6qqXsm50wSyQ5CSDNU4TfvD8iqEDOJKYxaIWxVCEKLvXDbkqSzgKDH5HwHu1JSH5HBddBV900CSkM6+HhDT8izUlIZmp8+LkPZQeoCIzWMKpIMncjuJVsmiYw7RYBy7g2uuekgY6C+ZIiccc8vkDD/MDfZUgL1DwdNjH8wNht7X2aoscE7jCCFqOiQjlLkacjT21F2e1ecLasFIPXnVvrUvOhlzF1Ej15vV/Ur9KFk8B/3zM8n+S1g5tekGQ7TDnYkhkRKG3NWcUVEVDnZEXK89KkhQS2AR+Ddl3P3bZKkbj8XP3b/4fheYO+V6D19zshBya5XYcEXkVACz/iEkgoGiy6YpEaG0fH8njEtsp3BHzqpjkJDbz36bIJXqoSPL984OT96bBVsLIQ4uzFqtI9kz92RFhnhuFHFgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACzUlEQVR4nI2VjbWrIAyA4zl3ATsCHcGOwBvBjmBHqCPYEeoIugIjXEe4jlBG4CVCEAS1ObUiP/mSEMIPpGI23wXsi9npT9aEoGXRWwL0E8CkAWoBMM5Lfw5mGmEb2nXg3FBXtIZBhgAkSpcI0QvkyBOCVJs5ogSYtQdGMAKZoSlBiMqCximreNtBkEpa6+bZrhGz9c1FIoItHhGkLNk8u4jDIGuZUNWooCTz2RNn5IxrCTbrZIkFEURrq1lrHQFmrXIeQlXVfk0IJNiodOiVBxXXR7+Ez4LgEBBKaCCH797n95eTocAJ0T4Mw4CbiyEFVAart9S+Xe7ue44AJAxx3kTJ4OXpUk8IgQpQCcShYeubrgKMQjQmMSIKYUG4suntLa6qMDFi4X4p8d3FY2RYDrALmqYJYXAqZWn3lOZrDaeSgPhhRVvhrFzfa/tbUIExNlVduoUEy4FiIMtsk3S3Lm6LajGNFrbjkO8nj7/1JgdKlO2JDe8ya2kLuXjFR+SwepP4s8SQHIz3cAsj+e0k3Fq1W7290MTWHUJOjBw8hJEMVGDx92jzFSUBTUpBJy1sqDvQDtr3PUzV6hFL5wrqq1dAR8nV/tPQFQ+M8xsUDE/8H1s/QMVaY7HEH3T1eq30vfWAIBo9qtBLSig4CZ2hUkJlS87rvaQ3dX/C61e7fFZcRIQNqUCL3p831cPk4vOQ388Arxd5oeGuRoSthzJUOgaLSDlt3VGGJh5RpeYFtA9j6Qe80hWQV17XDVf33dAV18vNfMwftK87NI0Epc7vpBBAcr+1CSTxiCZciusCI+8wWaNBKqAkYdY9n7aM8x2FcgEbg2hjtyCacEHYhz6MMf7SW6yWMSS8BFH+uXcVQDQ/DCo3D60ui6J4w7nwGdheLgwhS+efQLkI3gx/gU+FXcmNJ5U29Ghv0lF51gft6PmB1b0QlrMy2eAvDPPt/77fcqeNthsFAAAAAElFTkSuQmCC",
+    "price": 2750,
+    "reqSTR": 0,
+    "reqDEX": 40,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incDEX": 1,
+    "incPDD": 14
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 3
+    },
+    "incPDD": {
+      "base": 14,
+      "min": 6,
+      "max": 22
+    }
+  }
+}

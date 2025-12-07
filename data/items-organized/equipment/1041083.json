@@ -1,0 +1,50 @@
+{
+  "id": 1041083,
+  "description": {
+    "id": 1041083,
+    "name": "Dark Piettra",
+    "description": "",
+    "chineseName": "黑女貴族服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAcCAYAAACZOmSXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADBklEQVR4nJWXgZGjMAxF5Zk0wJVASiAlQAlJCVBCKGFTwlLCUUJcQightEAJnL9tGWEwyWlmJxtj6z/Jkk1O9L3NX8xR/+GPPokHwbquPzrrui4GPIQ5Ep/vBVFREt0eROM4UpZlh+IMaCDo792um48AUuK7KZ6mKSkMMDzv+94Kd0NJRTHRMAxJgD3xGRGA3jrNj4UhqrUO35+/RlhfscI+K4oiCbAbOQshy7kXNw4oZfMb2+L++qEm3p2jTO2Jz9fr1f5TliW1PqL3k+hcuc+8RBAAubgVRvDWXm1NOODRAOf0jSULTqaSfTWPkp6lE26apfpdhtwk7DnAJUAq9bvicIAM4NOmcBXIWngByEKaAY664e5IpT8Z+XrBizjNsTDPwyennr+zeKpFN+KIFgZHSF/Ta8qbiuZ5JqWUTaFMKYtjfhwhd4ywVeqlOPyTNgdK1VJwGNueCEPIcQQBf5NGp5h1E2rmIPLRg/7eMXERRtKG5k+I/lMLcSSTNnONmzyTfpfoV+La68mWxn5duoledeYBXgbgYsdlkcVAY6dstKMYjo8KKa48lbW6xEnlxLHHl26g909B46MJAAzHJgHOTYg0aZuCQ5FhXzvNh4ZzjkI7txLA0KptRUsACAMc/rhIZR2tCg69LZ3FRyrAzq32W5AZgMkArCGlQRDQDB+3426f82XBC+Xeui0YF4D3ZM/0c7UtQgjJ1oQfBGB826Jj8VXUMQi3ETthgKcB0A+35v10EFVDX9smcr6TOWo+qSQYP6s8AKz3hYUrdfKZvR0U20pcRigN45w+WQMSAPZTunG9OdSWSyf2DfFwjcbGQPI4ZRDpFNbq7WnIgvF28r6f5KR4ovyOqH2lKrMtARgADBgdODjFNq9jsnhPe3ScYhDygqPMyDkMKOegc+BLzmdxhRQgEnkYfLBV9Ow0FuZ5e9Ahco4ef+INxkKBWKY8ReOLce+5HcM7Pb9g+Ks29Lnyjb8hx3giGyF6/w7w6deKEj8qNrdaarEyUafevTmt3/5MWs37B8sD+PJO9xulAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTUlEQVR4nJVWgZGjMAwUM9cAKYGUQEqAEpISQgmhhEsJRwmXEuISQgmhhHMJvNZYjjCG5DXDAMbW7sqSzBd9buMHc7L/8EfvwAPg+Xx+66zrupjgJpkt8PFSEpUV0elKNAwD5Xm+CS4EmQT9Xty6cYvAGngyxNbaVWAQw/fb7eaAu76isrTU9/0qgRT4CAVg75wW28AANcaE9/sPA5sjVrhvZVmuEkgqFyBEufDg7IDWbHxiW6br1p9JdmcrUinw8Xg8uoeqqqj1ip53on093YsKIkDkMK1gwFN7dDkxER6YcEGf2GrC6VCKr+Za0b2agJvmlf1ThKZJ2HMQ1wTWQp8EhwNEAHcXwpmQOfCLQB7CDOLIG6mOtfCvKp8veJCEOQaWebhL6OVdwNdKdAEOtTA4Qviam6GiqWkcR8qyzIVQh1TAMT9WKBWjbBZ6DQ7/ZLih1C0Fh7GlQISEHocI+LMGlcLrLHJmQ/ngif5cMPEFjKD1zS6of1dCosQanstuilz7famfgRuPp0sa+3XoLD3OuSfwYAIHN66TLCY0dJlTO6jhuFVo8Myzcnau0KkmcOzxoevp+V3ScG0CASEnpgnsm6B01RYJhyTDvnZGmsbkHIm2bzUBZpstM1oTADCIw58kqc6jWcKhtrWzuKWC2L41fgtyJmCZwJykNgCCtJCPyzFZ53JYyEK9t9MWDC8CT+t6+r5eJiGAdGnCDwSwb5d0Aj5THRORMhInQuDOBMx1WvO8TyTqhj62hXI5k0W1dCpNTL7VngDs5hMLR6r1kT1tJNsMXCvUhnEJn84BTQD2XU3jZtHUXodO7Bvg4RiNTQjpdipEtFNYa5bdUADj7ZR9/9KT4on6Hap9pma8LYEwCAjBqOGgiy1+x3TyfqXYSYjBUBZsRUbPEYJ6DioHvvR8Ac8QAijRzWDDgLJj9X+iXpx64J2fQzIvRTooF/W41B/Mjp//wFiFHD21UM6D+WTkny0qo0+uD/Px+pAfDH/UhjrPfOFr5gCpefyuolEpp1dWdZE/HrwngIM2vk4M+it4M+V+IFfAcm9Z9bd3Hu9Jx8D4telS0VDAOgqhLFLtVTuRhW3CEW18i5/jKwluPTNNIKUoXyFiN94X8/8B7FYPOkUc2nwAAAAASUVORK5CYII=",
+    "price": 45000,
+    "reqSTR": 0,
+    "reqDEX": 130,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqPOP": 20,
+    "reqJob": 4,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incDEX": 3,
+    "incMMP": 10,
+    "incPDD": 34
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 30
+    },
+    "incPDD": {
+      "base": 34,
+      "min": 14,
+      "max": 54
+    }
+  }
+}

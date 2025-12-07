@@ -1,0 +1,55 @@
+{
+  "id": 1051024,
+  "description": {
+    "id": 1051024,
+    "name": "Red Moonlight",
+    "description": "",
+    "chineseName": "紅色月光服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 38,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADeElEQVR4nK1XgZGjMAwUM98AKYErgZQAJUAJUAIugZRASgglxCWEEkIJoQTea5ARhpD8zSuTMziyV1rJsu4PfZaRfifB0Y+fgMfH40FRFH2F1Pe9ez6fz9LgjRFHwBY0jmNK03QFniTJoQFZlhHWQoZhwPrRB/9INRbe73cLDoEB1+vVPbMh0his4ZGffTkCDkDX7XazAADXWtPlcqGqqhyQv7FSylLORsH7fwUeJV1lWVJTXSmpzESvzXthN8c3DEOnxwaBlaIomKmvY+ySCpt2XTdvYmh/mpj/dFTfCqvoJx4nGFhp25bAWJ7nX8V4BK3SEzy3+ZmKKKQ27c1I1KmcstvD6bAgGeE5DADNAN+TXY+xmaSPvQijaR5z5skaw+B2bl6DEcZiHajnZDwCdt5K6npVTgzM8yFtk2oPnEeEyYCv6N547HtrwQeTpX1EQ9+tdc3ncv6h6vG0azibZYiYct9rCbzxlgX43dDT/xQGtqB+osDaNk8J0446WnQGmgoEvK6fL+chEszqiv1wSuYyGjCwBYX4ZxKSZDibeHiZPxdjjZqtIjfqflutfLoxJ8Ed1b63LLo151hjwxNrbnTqZiA1x/qTMDiAAxTx1+v1VjkKTWKFi0fSyL3sRsHZu0jkWvY4OJ1OoxGnAHpMxaEKZxdf8xl6cVyiabRn3IbhZGOd3e4rEHmsMGe8tXgyqwMjq0vfxpxE0YgWT3luQke+LL/JBON9jGMOR3q8mhQbjBTF5IukOvRijlPQoqptS+XX9/FYxxPN9jzN3oXh+v2d8HXIJ0UepU/AC5AYaS/7++Un2FOYROR7m8GRvMgjekP1SpDNwgL3GFeYr0iX6aHRsqDAcAn+9j4GzbtiXNKlNg2Bsk1BW8ZLMVlUViJrOIMfeuzH11Wn3tu5qKmOFKlyMRZ0266laey5ZgZY3gKDZo5rXMemAViyNGvmW4o91cr0Y7Oxs53Sa24OYAC3QrsdiMvmyU1CPLNGLRoetRcV7iY5ey37bTpKLk4qVyC016thH6PSXmKnj5Lql0/OcDKOqG5woHvAY5NE9rrD5hhti2MAsmzdBGDO6pG8mbZOYA701xM4V8Yt1bZEMs0zOOTa+g3C4KqWLZ94D/eNkOAQGLApmbnuXL2+F4nb3M9kWbfZYOiU3Vedym5yuTikV/2b/xQD+kL+ApEgAqUDC/RvAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADkklEQVR4nK1WgZGjMAxUZr4BUgJXAikBSoASoAQogZRASoAS4hJCCaGEUALvNcgI45Dcz+smZxCyV1rLsv7QZ5no3+R09PET8PR4PCgMw6+QhmGwz5fLRTq8c+II2IBGUURJkmzA4zg+dCBNU8JcyDiOmD+54B+pxsT7/W7AIXDgdrvZZ3ZEOoM5PPKzK0fAJ9DVtq0BALhSiq7XK5VlaYHchauqMpSzU4j+t8CTpKsoCmrKG8WlVgxKv+dmcfyCILB27BBYyfOcmfp6j21SYdG+75dFNO1Pvec/PdVtbgzdxOMEAytd1xEYy7Lsqz2eQKuMBM9ddqE8DKhLBj0S9VVGafuwNixIRkQOB0AzwH3ijRiLSfo4iiCc9dDpJ+MMgxvdMgcjnMU8UM/JeARso5XUDVUxM7DoA9onlQ+cR2yTBt/QvYvYjdaAjzpLh5DGod/a6r/r5YfKx9PM4WyWW8SUu1FL4F20LMDvx4H+pzCwAXUTBd52WUJQW+potRlpLhCIun6+bIRIMGMr1sMpWcroiYENKMQ9k5A4xdnEw0v/u2pvqsUrsqMa9tXKpRs6CW6pdqNlUZ0+xwoLntlyZ1M3I1XLXn8SBgfwCUX89Xq9NQ4DnVjBGpF00pfdKDi+i0TO5YhP5/N50mINQI+uOFTi7OKn/8ZBHJdwHs0ZN9twNnudtvcNiDxW0OloDZ7M6pOWzaVv9pxE0QjXSFk3oyNf1m8ywXgdHZjFkRFvlGKBicKIXJFUB86e4xR0qGr7Uvn1fTzV0UyzOU9LdEGwfX8nfB3ySZFH6RPwCiRG8mX/sH6CP7lORL63GRzJizyiN1RvBNksPLCPUQl9SapIDp2WBQWOS/C39zFo9ooOSRVKNwSVaQq6IlqLyWqyEVnDGfwwYnd/bXUanJXzmuqwoqpYnQXdpmtpGnOumQGWt8Cgmfc1qiPdAKxZmjbLLcWRqkr3Y4uzi58yam4O4AC3Qt4OxGbzHCZhP9OmWi0caq9V4E1yjlr223SUXJxUtkAop1fDOtqku0bWHiXVLZ+c4aQDqfrRgvqApyYOzXWHxTGaFkcDpOm2CYDO2JG8mfZBQAf66xmcK+OealMimeYFHHLr3AZhtFXLlE+8B34nJDgEDrjA50z19pq657Fd3M1kWbfZYdgU/Vedije5LjRX/CC5qZZ+LwX8FO+j57fbYygHWq+aH/Ld/Euj6dGPB++bb38Bb+4OiAe6RUIAAAAASUVORK5CYII=",
+    "price": 50000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 115,
+    "reqLUK": 40,
+    "reqJob": 2,
+    "reqLevelEquip": 38,
+    "tuc": 10,
+    "incINT": 4,
+    "incLUK": 1,
+    "incPDD": 36,
+    "incMDD": 18
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 4,
+      "min": 0,
+      "max": 8
+    },
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 36,
+      "min": 0,
+      "max": 74
+    },
+    "incMDD": {
+      "base": 18,
+      "min": 0,
+      "max": 56
+    }
+  }
+}

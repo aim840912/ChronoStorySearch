@@ -1,0 +1,39 @@
+{
+  "id": 1312000,
+  "description": {
+    "id": 1312000,
+    "name": "Double Axe",
+    "description": "",
+    "chineseName": "雙刃斧"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 10,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACPklEQVR4nL2XjZGCMBCFk5lrgBagBCwBS8AStAQtQUvQErQEaSElmBKkhFzewuKKQX7u4M2cIEK+3be7Ye5HLSsnzvWScJfGkYqiiL4Uxrql4ASO41iVZUl/0BJwAkMMrtmz2+7yLBXQUtkKrvHjnHCXpS+bUWtjbQOeE17XOFLWVh4b48HqBZ4LThkjU4C5xm3wHHACp7XdIBZV5jp0cxfcBa4FF5DPwGqgAIbN5gs4BCeoc04VRUEXsNBms+nhvsYJn1Tf8ju4DXeAQgBb35nQbrfrW4TGCSMU1cHKcRoCJ7C1VcR8pEx84/B5CMxbZuy/4LmhYAlvABLK2XeBEfBqlTSz3FfjEJwWkbuQDOIb+Ha7+c7OfI0LqvMYMMM/JIPI81xdLhcnFm7A6I0sy/D7aHAnnAUArN9utxQA3kqPx4ObkMD1JIwGv8HX6zWBUGtkKxpNA7zf79XxeKR7AEXWfwE3cK11swiAgCFbthxQwAE2xtCD9T4wGczwjwV8APp0OlEADK52rQqMY09DDoZ3iexGcwHGYwerOZg54VR3NBdqzGAExa60poDF74XBO1xI7nw+N3Bkj4wB5hsQgJ8IJ1243+/UvEPU+Va7Xq/UVBwAAIC1LUdTstI0VWPUBdfeYqq3nATYjGB4/28L+8B/wAno1a6pPhwO5AokHQAY5el5HwyGK9UxhnAFDrDorVZnnSRJ8Lkp8KCQMWD83weOfD5Gk+AyUwmV/TEX3D2fz7cLNXQUeCpcwiZBWb+dKZUtfLXJhgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACeElEQVR4nL2XjZHiMAyF7ZltwFtCKCGUEEqAEqAEKAFKgBKgBFLCpQRcAi7B56dYRhucEO42aCY4f/YnPUnO8KU+a16c60/CfVkYZYyhi7qx/lNwAhdFoZxzdMA+AScwjMGRPbnsflmVAuqUbeEaD6eE+6p8yIxcN9Ym8JTwmGOjrG01bpoAVg/wVHCKGJECzDnugqeAE7iMcoNYt5Hr3Mt9cJ+5l11AzoHUQAEMmZsBcA5OUO+9quuabmCh1Wr1gvtoJ/xSft0wuAv3gMIAtqEyYZvN5tUi1E5oIROdle00Bk5ga1uPeaRIQuHweQ7MW2YRLjBvLFjCE0BCOfo+MByez2epl1/lOAenReQuJJ0YAl8ul1DZVchxTXl+B8zwJ5NOLJdLdTqdvFg4gVEbVVXh+dvgXjgbAJB+vV6TA/gq3W43LkICx054G/wDvlgsCIRcI1pRaBrg7Xar9vs9vQMoov4fcIJrrdMiAAKGaFlyQAEHuGkamhj3gX8GM/xpgeCAPhwO5ACD212rBWN8UZCj4X1GcqO4AOO2g9TszJRwyjuKCzlmMJxiVTpdwMbfhdE7XM788XhMcESPiAHmF+BA6AgvVbher1S8Y6z3q3Y+n6mo2AEAAOtKjqJkK8tSvWN9cB0kpnzLToDMcIb3/65hH/gNOAGDdXOqd7sdqQKTCgCM9AinjJiXrc4hOCZ/Y115LwDnQZU/UCDdNCZFPZvNMCDpnAMnRieus3DTc6RoEDFg/O8DI59H6yafoTYeLgdnUCHGBOVRRiqhsT4OaoTkObgE5Sbien+/33/cjFDYJjPPZY4snKWRDpjOOxLGNh9wVvU8U38BzBeucCbI87wAAAAASUVORK5CYII=",
+    "price": 1500,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 10,
+    "tuc": 7,
+    "incPAD": 27,
+    "attack": 1,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Axe"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 27,
+      "min": 26,
+      "max": 28
+    }
+  }
+}

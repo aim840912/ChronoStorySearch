@@ -1,0 +1,95 @@
+# 未能獲取的物品清單
+
+| ID | 分類 | 錯誤 |
+|------|------|------|
+| 1002167 | equipment | HTTP 500 |
+| 1002631 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1004765 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1041091 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1041092 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1041093 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1050096 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1050097 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1050098 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1050099 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1050100 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1050127 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1051090 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1051091 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1051092 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1051093 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1051098 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1051140 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1052122 | equipment | HTTP 500 |
+| 1082008 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1082065 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1082066 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1082067 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1082180 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1082186 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1082192 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1082195 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1082198 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1082201 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1082204 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1082207 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1082210 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1200001 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1200002 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1200003 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1200004 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1201001 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1201002 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1201003 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1201004 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1202001 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1202002 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1202003 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1202004 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1202005 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1202006 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1202007 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1203001 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1203002 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1203003 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1203004 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1203005 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1203006 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1203007 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1203008 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1203009 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1203010 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1203012 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1203013 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1332023 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1402006 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1402007 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1402009 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1402010 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1482005 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 1482008 | equipment | Parse error: Cannot read properties of null (reading 'id') |
+| 2040034 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2040036 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2040332 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2040343 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2040345 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2040346 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2040347 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2040350 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2040352 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2040353 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2040934 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2043020 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2043115 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2043215 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2044115 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2044215 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2044315 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 2044415 | consumable | Parse error: Cannot read properties of null (reading 'id') |
+| 4000621 | etc | Parse error: Cannot read properties of null (reading 'id') |
+| 4000671 | etc | Parse error: Cannot read properties of null (reading 'id') |
+| 4000672 | etc | Parse error: Cannot read properties of null (reading 'id') |
+| 4000998 | etc | Parse error: Cannot read properties of null (reading 'id') |
+| 4000999 | etc | Parse error: Cannot read properties of null (reading 'id') |
+
+總計: 89 個

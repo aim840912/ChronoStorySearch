@@ -1,0 +1,49 @@
+{
+  "id": 1092016,
+  "description": {
+    "id": 1092016,
+    "name": "Silver Ancient Shield",
+    "description": "",
+    "chineseName": "銀古代盾牌"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAfCAYAAAASsGZ+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACaklEQVR4nO1W0ZGjMAwVM9eAWyAlmBKgBFwClIBLsEtISnBKgBLiEuISjhI4SWACCyHsfe7sy2TwYNlPFtKT/8B5DDvvkjMLlyQDHGAYaLqHTAe4lj30fYCiqA/XRCciydA0FQgh+J+m6TROcSxwWrAREbhGgrIeTC7AOYNkSBh68CGMY/xHeB/IiWQ3XEWhdk/i73egGXpCnsJN6+1idOwrNiR1reH5fI72eJp710HwARS+H54GkgvOuxJqlYHIG5zz8Hi0EKaT4BJQSu2SJNbeBmMa+IS/jwbDEz7aYah4392TnIL4nvkhSQzVEVIpIcsKTILreRJ3vYK2t3EDMbq8F8bm6jiN713PRFrbybZ6S8Ip/CIyux75bFF7xu3ahuD5KWW6SmEmqJoGM6uGClOzwzBRfcRaiQTygWt0Ar4D6GoF0hi43fSrTvBJP9e2HMJINIeLCDymI+QlvIU+pSJMwBkoRwdnEolVnmNs11inEZ3gDFgk5KsoiYRrZPlNiqKYx6NmAYdKX14nyacPT4iJwnaLzWOtbIpRYdjKqpk8ElDgxu1zJDL4HPUpcIUT7taO9pNmUXZRxX8sRpIKJslzkKVhIkIkI9h6lA6SFl5zoAK7JLGwlKohn4jCQl0jZgJ0itb0OzZvSSLa1n2s+qVAvsP/adc38UvyS/JDSFggqbvFm8pXxOZUWLx7VWNnZGkR+cqOit45F/Vre+8igYwNK6VmhZJdldhfphaTab+43OGcMbyp1fWqab07yQZk+vVSsr7cyYXlMVZSf2RIfWW+3LUla5VSGj5gI/WHvTVJktmJy8WeWhPxD0SqUREuNFFcAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChUlEQVR4nO1W4dWqMAwN57gAbwQcoYwAI9ARYAQ6QhlBR6gjwAh2BDrCYwReEqgWBcT34/v1XY8HpAk3jclNT/AdxpVn0RHHV6IRdjCOtDxAqhxcigGGwUGeV7s+PpCQaKzrEuI45m+SJPN9gvcxLsdsRCSmFiAbCzqLwRiNhEjqBrDOTff49bDWUSDRZuryXK7uyN5uQCt0hSyBq1LvzhjcK1aJqkpB3/eTD+7q1nXgrAOJz8deQ3TGdVNAJVOIsxrXLNzvLbh5R+gCUspNoqhprqPWNXzC33uNqXIf7TBt/N7NHR1C/J35RyKftj0kQkCa5lgYl++IzOUCqrlOL4mn0NdSWl8Ml/itG5hMqWa2LXeJuLyfZHo1MpsG/anNqq1zlq9CJG/lzSRlXWPFVVBi2XaYMuof30ueRNzRT0VgO4CukiC0hutVPfsIr/Qxbcvp9GSL1BGJxVKFrIBNqEOKwyRcmWIKckEkUA0yzPUSy/KinRwBi4l4Nq4n4h4K/6M8zx/3k8YBp02dnzvK5mIg+OJhu4DA99Jqw0pMYVHWc2Qx5Pjytp/INF4nPXOsBIRb00z2s8ZR1ZEyHGpYkhUmyjIQhWYygickNNUkMyRD7LOjFptEvvmkrCCbyVygyh4PEgyMfIYVm10ij7Y1H9UhFNUt/L/WfYlfol+iHyUi1RtOwY8vh/NhkPC5U0DSk6jSlPQnoFf4AZc3eLYrpwnLMhRnCzsSB2OM17s7PvoT7ohBouqHXkIDD1fKAufTPKJSZYMDJK5pzS9uVLUYfC/g1NHTVe0Y4D2fywOkCCz34XdEljwm9oxpLj0OkG3B2ialgg9YHRO7czqKokcg53NzyMfjHyhdVs3SksWxAAAAAElFTkSuQmCC",
+    "price": 210000,
+    "reqSTR": 220,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 70,
+    "tuc": 7,
+    "incDEX": 2,
+    "incPDD": 56,
+    "incMDD": 20
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shield"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incPDD": {
+      "base": 56,
+      "min": 21,
+      "max": 91
+    },
+    "incMDD": {
+      "base": 20,
+      "min": 0,
+      "max": 55
+    }
+  }
+}

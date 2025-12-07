@@ -1,0 +1,55 @@
+{
+  "id": 1050090,
+  "description": {
+    "id": 1050090,
+    "name": "Green Ades",
+    "description": "",
+    "chineseName": "綠色昂斯"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEI0lEQVR4nJ1Xi3GjMBBdz6QBXQlKCbgEpQRcAikBSjAlhBJMCacSohJOJZxK4PatPsgGc+fbyQxGEvv27Vd5o9dkOdg7vaLoFeCl77q7habR5fflc1heAf8bcGF4+7rSOM13m9Y5ebatkf0EnuXQiGfASwbTzMo7L8++a6G8HGqaRtZ8COT4DM5D8D4MYzZi14A94GX5JppdBFVK85PZWUfGNIS9j0nRzy7wmQgafCCllYDjqZWi5TcsYNQz7YZgn3GzUKOiG0PwAm4MkXYX+nCKbk2g0fYM6GOcGyUGZGm7nt7PA90MPZU94BPLAovHqef4tbIIcNWAheJnoFa1YhTYQpBmjhJ4OAnzQV4D7cmuq02nEKhVKYN6BoF21reuyY8VHGC9Gen9gyQ8R7Lvao7R+4Xou58Y0ECjAAmOxtNXRzVzimExYaTgkmFshGeDTK/Jjn4T50fgBQfBCqovHM+fDVugFnFfEbHhR2TPBxUT5nCzaxXZz0BNq4qB3v+jq6EsfuQkiSbq2Jsjv1/F3SA+WsMKI+us11suJxPIXnuUEnUgIPueWasN6y0wg0KpZqvPjPfrNjElKqwB2hub0OID7vUckTl01KQkcNZyYnasa9pl/bxzpfJAPSsPZRMZTZEp/1n/lY7Fcx7+5t+pwZymwS9aJwM5Zx5Z18ASXyj2oeDyNxwv7lAhZXUWZLA0Dt4PYT+O4jkt1m4SLQOXpMpsvWOlpIqSRsduIIq4hFTQd6X0TJReY12fLYxzUsFKEKhBwdbTWsNlfQe0HhbYzuWMb1117i2zRSI4Z9cs5R9xSDTM3gm7YotHP/LJqCDtEv3ZMzX068ri1FaNJBkfkVJzc1iEMcYaXCGJE4IcgAzTwEV0jdkJV83JZfCIiS1UYu98GRazm7LyO0+IN4MvyfMW3aCFbTKyfNT1hoZxHYMtA/mJDeswrWwZDNM8ljOSdNmn8IJH7fvibq9WV0cXp2xWVRwxCvuvjqZplGSLJgR6/xR/3IPl0chGo0+DNWewZLL2lfurGJ+Gi93cpTAo0G/RCPq+j24CbO5Y5RkrQGM0utW9qqqQfB5n7STvpZweB/WSmzw0zPN0t4l16KunEkDbpiPFTNEy8zgEkJ1s/fmmgWwEN44cgiLI4FRXiFfdO7LLH+Sfrz6FFeomZ7Rgel9clmxI64G6tqdX5JAx9D9zM0SpOHetT3WcNlIT+T/gHGOfukbtwgwI4WFA12tkm5tIdf96esU9dDWUN3zLy1efx4xOGbqRv/XvI+ATK+W7F4PMdtOjxRNIVBVrFlmcr7NoHnwN+G9gEf2AKETCCiprDPT7C13zJhPME9c9XWikYzlOrsplCBvq1LDK830jOv345Hv+N8Ct/NdB20b1ErC4u15wa09+TJrT+Xx57H6H/zv9AbvTie7D08pxAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAETUlEQVR4nJ1Xi3WjOhAdn5MGtCXIJeASlBJwCaQEKMGUEEowJaxKiEp4KmFVAm/u6IMMOBvvnPgIJDF37vykvNFrsnyzdnpF0SvAS991DxNNo8vz9WNYXgH/G3BheP+80TjND4vWORnb1sh6As/yrRHPgJcMppmVd17GvmuhvGxqmkbmfAjkeA/2Q/A+DGM24tCAI+Bl+SKaXQRVSvPI7KwjYxrC2vuk6HcXeE8EDT6Q0krAMWqlaPkDCxj1QochOGbcLNSo6MYQvIAbQ6Tdld6donsTaLQ9A/oY50aJAVnarqfzZaC7oadyBHxiWWDxOPUcv1YmAa4asFA8BmpVK0aBLQRp5iiBh5MwH+Q10JEcutp0CoFalTKoZxBoZ33rnDys4ADrzUjnd5LwfCfHruYYna9EX/3EgAYaBUhwNEZfbdXMKYbFhJGCS4axEZ4NMr0mO/pdnLfACzaCFVRfOZ6/G7ZALeK+ImLDr8ieNyomzOFm1yqyH4GaVhUDvf+hq6EsfuQkiSbq2Jsjv9/E3SA+WsMKI+us11suJxPI3nqUEnUgIOueWasd6z0wg0KpZqsvjPfffWJKVFgDtDc2ocUB7vUckTl01KQkcNZyYnasazpk/bxzpfJAPSsPZRMZTZEp/1n/mbbFfR7+5ufUYE7T4Betk4GcM1vWNbDEF4p9KLj8DceLO1RIWZ0FGSyNg9dDOI6jeE6LtbtEy8AlqTJb71gpqaKk0bEbiCIuIRX0Qyk9E6XXWNd7C+OcVLASBGpQsPW01nCZPwCtDwss53LGt67a95bZIhGcs2uW8kM8JBpm74RdscWjH/lkVJB2if7smRr6dWVxaqtGkoy3SKm5OSzCGMcaXCGJE4JsgAzTwEV0i9kJV83JZfCIiS1UYu98OSxmN2XlD54QbwZfkuctukEL22Rk+ajrDQ3jegy2DOQnNqzDaWXLwTDNY9kjSZd9Ci941L4v7vZqdXV0ccpmVcURR2H/2dE0jZJs0YRA5w/xxyNYPhrZaPRpsOYMlkzWvnJ/FePTcLW7uxQOCvRbNIK+76ObAJs7VhljBWgcjW51r6oqJO/HXjvJeymn7UG95CYPDfM8PSxiHvrqUwmgbdORYqZomfk4BJCdbP35roHsBDeOHIIiyOBUV4hX3Tuyyzfy46tPYYW6yRktmN4XlyUb0nygru3pFfmWMfQ/czNEqXjuWp/qOC2kJvJvwDnGPnWN2oUZEMKHAd1ukW1uItX96+kV91tXQ3nDt7x89dlmdMrQnVRGltz+KfCJlfLdi0Fmu+vR4gkkqoo1iyzO11k0D74G5K1NBRqq3yGwypbqDaIQCSuozDHQn090zbucYJ647ulK4wpcg/r0C1vgDKozsywIG+rUsMrLYyOafn1Q9/UFcCv/ddR3QaLj++0zxpAru/teL7i1J29TdrhcrrfN3DXbfPDbAWd3ZPBz9bw1bsvkcjAXnjzT//jHoJ4pURzzAAAAAElFTkSuQmCC",
+    "price": 200000,
+    "reqSTR": 0,
+    "reqDEX": 280,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 90,
+    "tuc": 10,
+    "incSTR": 3,
+    "incDEX": 6,
+    "incPDD": 95,
+    "incEVA": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 12
+    },
+    "incDEX": {
+      "base": 6,
+      "min": 0,
+      "max": 15
+    },
+    "incEVA": {
+      "base": 2,
+      "min": 0,
+      "max": 20
+    },
+    "incPDD": {
+      "base": 95,
+      "min": 5,
+      "max": 185
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 2022001,
+  "description": {
+    "id": 2022001,
+    "name": "Red Bean Porridge",
+    "description": "A hot steamy porridge made out of red beans. At an HP-decreasing map, whenever such map damage is dealt, 10 HP will be protected.",
+    "chineseName": "小豆粥"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABVklEQVR4nI2SgXHDIAxF4S4LOCOQEeoR6hHqEcIIZQRnhHYEMgIewR4hjBBGoEi2VLBxm587RwLxJCFOoq4oXpPcLmyBCIrxNZ6UkgIZnAMjgeZ5xP+mwS8HsLVscOIVLHMgwsbxvoP8pRA8gwl6Ytj9mzODjNboNis8wC8IodaYwdoCTNDyDtMJY27sfg5DAhsEAwzkkwG+7jtcs84ViBNleP+4iq698BVBcA6zzgrvvbgZw5US2LrH0iEBvQ9CKS/c9OBMBKfKdN+zD7AvN3EswPwaCEDZtm2cpgmhcAK2cnhNMEDKADCduqGhoJRqsCWsAO2xqLDUsgidga2yYRJQns+X+HwuVc2z50OhTlxbB6sRXa+RkQMLvaXIgM8Fnsr2TVKievk58LdKmCDeJUwy7M7lfl5drcJ/oBk8GVvYUcsIBQPABE0j2IJ2sCMgBxL4aL+mH/Vby9h8EbTGAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAWCAYAAADeiIy1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABp0lEQVR4nJ2TgZWDIAyG43tdgI5ARzhHuI5wjnCOcI7QG+FuBDuCjqAjlBHKCB6JkqIS8F36KAnQfPkhPUHeJjhmRWozBSLANB3jFEXhD0aBEmjygHHsaVaKvvkAe/MGF7QAd7AYiCB9f98lT5m1hoEx2BY0Q+6/XClaU9cUqgVq8WMB9HLm1rYrYAwmv5HL1DTfHH7dbg7YEBAhaMY5GNfVldbarhPT7UBY0fvHJ1zLC8U+cQhpuxaMMfDdNKzMA9vuMd9IDmSMBa0NdMOD1zzUK6mrimOE/HQDn0WI8QcToKIsy2kYBoJhJvxJCI0ZNo4nI6R26iHTDGRaK7oaqpj8fqVobfMi3gT6WsW7NAYqzufL9HzOKsbRcDIbJy1XiJ6Ca1Xv1IiKQntzGSy1Nbb0tlpfAEhys6CXKuwoeivsLLvLF8aSmhToACyAOicFyYEYhg4CPcw9/RaQhBwBcQIPlPZzdgSEhjLOib2YrV5zC1KbWVrLmQ1mGh6khCFBY0lj6zjwQc0pSKqD+b9KRHioSDqU+ifahL8aJ3jJy12REqCpwtj/A1np5eHsctn1AAAAAElFTkSuQmCC",
+    "slotMax": 0,
+    "price": 200,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Consumable",
+    "lowItemId": 2022000,
+    "highItemId": 2024000
+  }
+}

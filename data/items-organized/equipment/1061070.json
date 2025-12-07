@@ -1,0 +1,49 @@
+{
+  "id": 1061070,
+  "description": {
+    "id": 1061070,
+    "name": "Red Shadow Pants",
+    "description": "",
+    "chineseName": "滄海之褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABfElEQVR4nJ2VgZWDMAhA8T0X6ApZoR2hK9gRzhHsCGaE3giygiPUES4rZAQLGHwxh7Z3vJcHkvAlJGINW5nh/1KpkUNnErjfbtAPA4Rpgm/vxR4RZZyvV4ghQKDx1XUw0ZppHMV/a9tZwZtMGcQBrKfMVj8QQDSvJa0vcMlnZSogpNGkDNQe1U7r2L5m/lJyaMVb6MggLY7S9gnAdkulKfxmTVfpCvtEIxp+KYMRb0JPSccU5DJw/rwnm9PXrCAFhkzjyUETwwrM57nWuFzH36cPBTCmZwbSUa+7cHAs9Zv5pWYLsMLs4zgCv4VaorX9MzTCZ2IdWF0u0HpC0riYegelBA1sb0BZit1MDaCKCbag0kz0G3cxwpS+pCPps5gzxWhTYeg8PB4yyZ1IoM6BaygXxF1gY8R0FOMR53X7IXUcXfCJ7MUIFGmr/fMpffFMz9yh/JJlZeOW5vNTxIS0M4HyO/ByEce7O5jLnWKsW8DQytu/kb0s13nciXsB1xrtJe/JM8sAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABxElEQVR4nK1VgXGDMAwUdyxAR/AKyQhZgYxQRiAjhBHSEeIVGCGMUK/gEagsrFQQGbu5/p1PQrb0lmzkGnTM8D4qzagRzQi4nM9wvd/BTRN8DQPpo7U0DqcTeOfA4fjse5hwzTSOZD933ayRqRmF4CFIkJPQ2Q4YlGRYi5JJTbSVZkTBLY427pT1kfW4LugnYd+DRlSF9HtUUJJhqw8xaNA7LOvGXnxGT/QbvcHhFXtAumgFRE2UPgYygkx+l0C9dbx7iMGckLYx0Hr3JJHz4ezs8muU3ToGB/HxO5DgFSOdSUpRQyEo/EJSWfFDl5IVE2ngs/oXIg9lyF0KlUgeMkRpF5UPmcrXwvrm7ZUxm5FCwlDJSomooXJPM97DFDvCHq7C54A+WmOVRPP9diOH0KGJyBgwLe7Z2iRJq/j06DNYuyJ7KZ2LnZidSlDisyKyWKbr40HvygG/Q+celmzURgmxAX9vfJxSgRVR2Is9Hkn/yz9yQZ/c7ZNE1aA/4alsnvO2wK/emxTI3d6PzPwLUbORKVsOXkgaTNQkRopUC6rZ+ahdLYLKJ+bdTJLkMqPUor2+6nf01ajhN71cifgV3yNLkv8AXR8GPhDnCOAAAAAASUVORK5CYII=",
+    "price": 41000,
+    "reqSTR": 0,
+    "reqDEX": 80,
+    "reqINT": 0,
+    "reqLUK": 110,
+    "reqJob": 8,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incDEX": 1,
+    "incMMP": 10,
+    "incPDD": 27
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 30
+    },
+    "incPDD": {
+      "base": 27,
+      "min": 7,
+      "max": 47
+    }
+  }
+}

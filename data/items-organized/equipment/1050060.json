@@ -1,0 +1,55 @@
+{
+  "id": 1050060,
+  "description": {
+    "id": 1050060,
+    "name": "Red Tai",
+    "description": "",
+    "chineseName": "赤旋風甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAbCAYAAACTHcTmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACz0lEQVR4nJWWgbHiIBCGNzM2gCWQErAELcGUoCVoCVrCSwmxBCnhUUIoQUrI/btATEJyc7cz7yUifPvvsizu6GtDftFK0Zb5EPJrtTUnQ4fheJOXYK0sbFSYTfxRhlplqf89U3CODqcwYN4qeCdAaKyqJ33IkKdAT/z/fRBdr0QdnLGjq7bUJaB9eTIaqp1EV61Bq6oCuCdqaieDjyXQOAFme1l813UUvKf96V6Ac/hVVUdwAPfarAE7/DXkARJDOpT+e04FXB8U54mGDSCHjpDJehW9wz7vR6F2CpUN4rxuArPKbEntEryjhTGMbQ3IKt2Cy2DI2Qxf7IbK0lonUIzIRz8CZLGPoJCrJpZN8FCrZ2pHKAp+8MdAhxcVnmkx9DLpA4B5t6abNlOquPgQjcIMk2Y5LAy8GGoDn6YM9/PDwZbVFuH/s8FJXR+o/3yKr2bQ4JIiyCkSMBnQKKlRMMDqiPDadhwboVxOOEjUWkXvG47qXdHtEZ/6HKgFqMO4u2v45dC5VolOLKB1U/fVTKlWEc7pZKAF4NF52Y/WxjncvwyplIGQu9bqMR060iilGACXXmgMXd6O2hPGL3G8eSIKOHFN3ESGXzg6CtsnynC935Pq3pGrNZ2T0jEaOPQ61Q+KNqqeV8IIVTIxrea2VhkyC6UjODEEDvAPFlzJl8dUJk4KmJX62kCpG5XySasPHmWERr4/fsX48pgOvTpSYQBqKPUnNO6Lo/+xr1J4r/eT/PROwApKdW6huLtE7T6qJajlLshqkXrutvOzvzSflIaJ0ngfTsA9Buog4ELpV2W+SYPkVBAdd+XvgulFW9e4CLsg/VqG719oBeB4PRtj4GA9hwYKnWxKVCvgxhfXtijNVy23P34ecZbzPO5M0qDxfLYvul3OI1jWpN2fXtdFTjm8rCjMa5oXzX5w+FC2vwLK3qx1g6XtEmK1S1v+qPgD5yqeRtnQnaMAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADGklEQVR4nJ2WgZGzIBCF15lrgJSAJZASTAmxhKQEU0JSwlmCKeEs4ShBSggl+L9dxDMGvPy3M56GA759y7LwQWkb44dWinLmvI+fBf1iKdA4Vo18+L6XyWrlnzp8KkOt6mn4PpK3lvYHP6LfJmwNGkdoKYobPciQI083/P2+Ep3PRB0cYPhZ99RNkP7uyGiosxKFLGwNKooCsIGoLq00XNcQYwUS7d7jf11H3jnaHS5ZWCp0RVEGmAfrXKcgHZ6aHCYXQyiVpk3LJUNR7hXHncYMhMOGcFHvVPAI9vi6ZlXlQJIEvE5ZSFQTbVKVg2VBbAxgS0FYjV2xGAYXk3NtghpkudZ6mjw46AJbICzq6hXiXId09Q6qdFJVEoRNOrrK0/5OaQ8XTXcz/QAkZkQqMbKKFG8OREJhlJlGWkzmeUKo8lwVItD5l/FrVZuhe9sALss9DY9HtksW5O3kOdx+Cd6iQSO9Z2GAqQphaNuXMUkQpzYKArW9oq8GZeiiqLmGtz56ajF5h3Z70fCFw8Z7iejATrV2OdV2MoinKgB5eRjSY9Jr52TN2z704bpuKFR3Bk7V/O0SNHakkdZBPG8NXxs6fVlqD2g/hfb6BrUA2zokCgNPHAXy/1cZDO/Ry6RusGRLTcdJ0awaTjg95TI2VVD3moFZkJLB04x8BBSGzErRDJvmFSBgnxhwJvdeCZLBi03HilxpoMjOirhilHuHlMbhuKt+HHTvlaBxUNVrL0A0FLkDDsOTpb9YWhG8LHeLeA9WYAqKdDyCcJcQVbugiqCKTwxWhaXk0+r3Wrc2NynyC0XhzrKADWgovcDeUvSjJt6AvKyRTNvxSffTd3lBKktcVjovZ6A0X7ZBBSDzVcsYA2h6TQyUWFn4oEpgtctewdYghY47fkPNwA0ValccyxVbDj28b+2dmtNxhkkEpqzD//cktV8WWZ4IUolHQhM998/78IaniT84xO65Q7WAsCfuYzGxXrx54K3vbdNTMnTiCKtaG49LDVgqija7hkGrJX2a8ELP9Wb9/fR8LOQtYakkzRUyv/F7/v4HgOq6g2Vh0GgAAAAASUVORK5CYII=",
+    "price": 105000,
+    "reqSTR": 0,
+    "reqDEX": 190,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 60,
+    "tuc": 10,
+    "incSTR": 1,
+    "incDEX": 5,
+    "incMMP": 20,
+    "incPDD": 65
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 7
+    },
+    "incDEX": {
+      "base": 5,
+      "min": 0,
+      "max": 11
+    },
+    "incMMP": {
+      "base": 20,
+      "min": 0,
+      "max": 80
+    },
+    "incPDD": {
+      "base": 65,
+      "min": 5,
+      "max": 125
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 4010005,
+  "description": {
+    "id": 4010005,
+    "name": "Orihalcon Ore",
+    "description": "An ore of a very rare mineral, Orihalcon.",
+    "chineseName": "紫礦石母礦"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAVCAYAAACzK0UYAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACcElEQVR4nI2VjZGjMAyFxcw2oCvBKYErgZQAJWRLSEpISlhKWEqISziXEJUQleCTZBtMQrJrhuD4R5/0JMMH/K7FX6xpXk38BDHj9/4bOBBg6wAcAnCZRmBmCCHAQKf4CvQOEuMtmnG+eLGH1oeA1lcYtgoUokx/4Rk+eRu0BTHv410egROAeb1C/qNzQBIBeXHCLoAjHuDC4xPoERKlJTmIgU7TGoCYJJPbX8YntrYD9jDytALVkAQozk4hyYEuyaOMzpkDJmGVl6UnkgLVIG3Ndk50n8ghGc1JThZZpNFcMHG1cOnpaAvOnmdxjuRSWIEsMuUdeJDFohaoYXWbK0uzca76WPVEbZkrI+tIao0V1Lvktd5aXTqcgU49Zc4SLQbIzK+xH5uA2kkrV5egDHNRKIQ55MrKxvMerK4CWUtVA8wo201SCEGNZkv18mARqT84+6+/Jz7p9EPiseoTz+Wr1eTJbwSdqglmAMwAh8ubIUEozwZaRWNeE0mR+dmoNjebQphk87rGZFSkHOjToiiQptk1MV5vKcnlAJRHSPK4B4kUQDmKWgGrfj2wlb9FrqbZ7+L9fF3ykDSwA9gSQvAecGUxJbyMLZlw4KQqYXqGGOjPaR9v3deiMXN6Ecrd9b2BCkSLoJgvECdV2B472A27WapHSPKvnGaXgyn5EmgrIAX7yUOpZlfnIUgeBlgBtiDNX/ku/HNHgYFFwLycXDMrsO7QA43jLJXmYPBLoh/b1rtLQJf4La9tR0kGNmcTwAwLvO968JYnfAt4BbENg34XsnJXdxBGEsaAUnG7MKzWw5v27ss4b9zTGN/N/9T+A+XAPIlKwkPfAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACuUlEQVR4nI2WgXGrMAyGlbsuoI7gjEBHICPACOkIyQjJCM0IZYQwwvMI8QjRCDxJtkEQBwrn2sG2PumXDP2Av13DH9bs1ia3QAp4Nr9APgBWDsAhAOVpBCIC7z204TyswdZAw/AYFEDXnm2ijsGjjgWIlUCZytM/eIFveg8rgTSK4cmdpwghmq/g3+gcBI4k9OyI3gAnPMKVbkXYEjTwFaUJBOHczSGIUT5u/fX2wpfriA3cqHuBWVCEZKc7H6VBF6USTu3UCZXT5GkasbwQLAwysJwj2cvScJZT4qNVYpkkNxTILJxG8rQCp/2FHQx85+gyaJIs7cIjb2DlQIyL+2SsjQAyYzQjVp7n0Dgyj8hqLrDGRe+lSdXJ4wR14jFRkmsyEBSxRFvQMrHZWS1lF8EEY6EIiMinikuAtAfNbUFz2SxEDZO2wMXhxXCyZpd7jUx8wjEO+Xums0wXigHNONBY2lJlfegLwccqgxECI8QhzpyPoJBW+DCLSr0PgYsvQ6IxN5pD6HjzvPb4Kcvahu8xmgza7fa7Ybg/YuLzAcmdj1K5hVwCCSkaq4SeDDnUxucpIoEd9sPzcp/yEvXQQ1oFBN/3MIkTPSGg8dmUGQeOqxW6Mkhhn+fD8Kh/EiO9MOXlya1uGoVlkBRGRmSQ4+qsTjXs2/1MtiUo+plPvUtB5fwxuGKYwPuuh1zpzubFc15aeIGUQLsv/q78cycGgkZCZE94PLj1sYFwu42ySU7afp78LVCCXYdffuW7ECUhdTpC1Dg70NQN9Jo33IS8A+mmVr4rScW7OzIniqRQrsS9b2frYeNa+8KOmw/hVvqf4dOMsTA/e6ktQbjo8/irYKxacZJMry2D8E0rQVc9XzzXV7C0D2PUmd4aLRnful7gNqJ3i955vJxbjmftA6bwtiQav68bjhTh/wGuVFbj1A6c2AAAAABJRU5ErkJggg==",
+    "slotMax": 0,
+    "price": 200,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Crafting",
+    "subCategory": "Mineral Ore",
+    "lowItemId": 4010000,
+    "highItemId": 4011000
+  }
+}

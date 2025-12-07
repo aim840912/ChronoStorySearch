@@ -1,0 +1,49 @@
+{
+  "id": 1072107,
+  "description": {
+    "id": 1072107,
+    "name": "Black Red-Lined Shoes",
+    "description": "",
+    "chineseName": "紅流星鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAeCAYAAAA2Lt7lAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACPElEQVR4nJWWAZGDMBBFw8wZ4CRgAQtUQpFALSChtRAJIKFYwEIkHBJyu2k+sywJ0J1hSmny3+4m+fTHXA+vvhdXJp0BVtFBPGzud/M7jv4KJAfwWnSm60VXVVVmGcfwW/sZdwhJAfwfZTiRiBTlqDCiLE1Pl3HurIAdwPthMH3bmlGLighVLIup69rM83xYhQTsxFPBwgxwF7LfVcDilkpfaHKVgCBrFi95HH2Pn9kqAFizRzgFYbGmabgl5pvYVMDZy0CmHF3XmWmakiJHVawA3npyAmKgylgYmaM1uEcSOQgABR+cuLdDvN/vIGyt3QjiXmWfhcgWFXxwOrrhRjxuN1NRz8XEZHvwPAfZHTQAGv6kCs4g8jkgcRsHyA5g6XIRwJ/cY96aPBmXzDxVkVxDDShs9CFe0oEso42WISel1kG3C6c85UWhd+RBviZxVAF7+DaybjrEKpChFC/VedFg2crs+4A938T2TNF/dOQWXnhVkQWwH4UFp8FS+mgtUpEF8Ml1MRvtnsLkdhCZfQqweZNVUUwbHCxChrLx5EkOb7IwmAY9SHShrQZBuQVTixq35UZcAjxFWFQ2vRcPpBPcxAOW8P8NLCcOwCfzKO7YVcmaOwJIu9Z2cPVM/KAlDLAMIPE7AdFj7aTo/5XsV4ClAWxyOLVSQHsPfpP9P62gfD6N7fsVIHcNILIiiKZ2TQpQ9H3vnwRxBEGWCJkxWoL7M/G1AgmRrQjVxXcBQp2Jr/46Bog5j0t/ehH/HIrcd62ieq0AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACbUlEQVR4nJ2VgZGjMAxFzUwa4EpgS6AFUkJSAtuCS8i24BKghNBCSlhKOErwSV5/TggRYDXjiQNGz1+2vy/ueET1vzjxrdsDzck78bC53dyfvo9nYFugqJO/qH1Rq6rKTX2f3t1/xh2CWaD4l2Y8UDKZnKPCiLJ0npobR3c0NCjGrnP+fne9Ti4iqZomV9e1e71eh1RJ0ApiBQMYNJ5Qo0EJEqgkEyWpDBhUMKTkcfQ//+6qAmhWgxgVjJM2TcOlcr+JhSJWIwMz52jb1g3DYCY5omoG8ZaVHyI6UsoAKEHJ0Mdk9mAAFXwA89lI8Xw+EyCEsEiMvlKzC5OlK/gAttThAn1er66iNREJzJLg+R5sdWABaviXFO3B5HPA8vZfwFagQG3MIP7lNeAtzUnQpBJLYak2lQUqQvY5XvqOrOierUh+bK2TfG65huV16QV5XKwJAlWwnd/Gpnt3WRVmLCG6NHoCssR7oHTnuFy2Ifubjq0NIrxwezPMs6KBaWPQRxLxbq3exSaInWDMs9NuLcx0BbPUWKDFzVrlpNpIYT0y1PXx1hnSzZo+osGflHyiLYrEcutai5+3swmRoEiRFp/N9Ys/IEdo8kE17p8FdA8C0I+SDBnZxelKaAkkrwltM2fP1AWlYlBgEEFuBMYaaOfG+pxRM4MCDWQzhQvIRNrb8A4h+trgFpITqHw8XPB+BsldBphUiORil12p1QZkQmNQ4b2PD4KNBMOsEVIBSoV+HucVRMImFOqSJX8Q7JthskRJbb6LEOpMBaNkq7JxYHvz4CvBnm4//EZC3V+0i/svLykTYB2lNVPjmQn/B1LM9I3G5q98AAAAAElFTkSuQmCC",
+    "price": 35000,
+    "reqSTR": 0,
+    "reqDEX": 80,
+    "reqINT": 0,
+    "reqLUK": 110,
+    "reqJob": 8,
+    "reqLevelEquip": 40,
+    "tuc": 5,
+    "incLUK": 2,
+    "incMMP": 5,
+    "incPDD": 22
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 25
+    },
+    "incPDD": {
+      "base": 22,
+      "min": 2,
+      "max": 42
+    }
+  }
+}
