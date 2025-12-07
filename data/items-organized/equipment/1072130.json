@@ -1,0 +1,43 @@
+{
+  "id": 1072130,
+  "description": {
+    "id": 1072130,
+    "name": "Red Goni Shoes",
+    "description": "",
+    "chineseName": "紅雷電鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAcCAYAAAB75n/uAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC5ElEQVR4nJ1Wi7HaMBA8z6QBuwSlBFGCXQKUACWYEqAEKCGUgEuIS0AloBKc3ZPkyMZgEr3RiKfP7t7eSfBDvmvDwlzxzcE1AgV+xn98HK/o57C2SvKJYBhsHYD7Tqps4RHHb0jeESj4HDi1En0fCFbbEsGAJrJpFsGH0oj3Tnb4bNDdShTLERzPUkD9ErgYI03vFLz/jwhUfVG8ChraE5LhZXM9CzPDhNu49imK1wj866bh8kuVd81GwY2Cl6gmL6W1StT3fSrlCdErwfEowzPuvd3GuR6+Q+lI0AG8tyEG55xcJCR/N4vmheBGCwBcltjetuIB7rzTtTrYIaTt6lotI/jdh7CZE1bXNSOZExQHOgLAGmfK81nK00ksRud6Becl8wC3UN91oRAskt/hjI8CbCBTkpcIsKlgmHdaAVATwX0GboyZHkK0pQ8WWbXvUw5iJA0Lh7YAvIy2mLbVRRLQGrUxNoNdLqsQRsjEf3yL2udTQa4oW01wVO6j9xxJVuHzQ8aLN2lvnwoeKHHhui0sud/FN80InsYUSd5sjPYTwfCMyuXnRgyq6kD1SHauPtmT8vFTqwkVzbntFhWuNMViBCXeIf/7Lv3lJGcotyzXzBbdEwlSJGwN1k3ctxSB3q7BIEhUiq8qfS1b2INkKdAkqbNEcw/nDM4m9TmBeu4ARnCHpKZSs/G2EiApZ/cSlJOYazXOsR+PxxF8EoGBcnPDAwBAEt1gDdUTrI6177PwvfMTm7bwfQ6eCIY7lQPcIaEdOi/UCXMEVlC+QwT2ospTuXOO/R34GIHaALARHAmu49dlkBgUJ7Up0YmAQt41JUj1ztRcHg+x0Q79c9OqyMH5eb/fy+FwWFT/Nwd4tFjvShZBUuUsgeY9r6y3BD3emz44Maqdj4kovwtUv9vt3qpPBMUGiU5ff6kcU6PCBMqRoGl+DXyMgJv6+ETMVfNz/jxH0NT+6YdXUVXVIOvtq5+Mqf0BP6bEbLjTtJUAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADG0lEQVR4nI2WgbWiMBBFh3N+A1BCfgmxBChBS9AStAQtQUtYS5ASlhJMCaYE9r0hYQNGZP7JCT8hc/MmM8EfWW99ZqxYu3gNSAGv8I8P/Q3tMsytgn0D9b2tB0DXSpVMPEO/FrYEUsgcEK1E2w+gVfYJ1MNENk0W0pdGvHeyw7NBcytUfVZ0ukgBNTmIGCNN5xTSyTrLgVRNUbxvsD+ecVheNreL8OSYGDbMfVOVV+Tfh/rrH1XSNhuFGIWUyD4vpbUK7LoulsAbMA86naR/hTX3+zjW4Vyw8xHUAtLZQZNzTq4yJMkuoy4LujM0AJQllh2P4gFx3ukcIXwivq1rDSUhDz+EgWfGbLzNYDlQcWCk4LjG2vJykfJ8FoveuU4hLFYPiIWath0SxiJJWqzxYSN2gI6wrCK8XFD+gyGCcxMgPoEYY6aLoL70Q+ishnVqSwVbNEw0hguQMoTLHI86SRBDpuENZvCWSzKJikOCFF/vuuPrpc5uSHdNhKDEh7NhT2iF56eMBfxmi1cQF5Yo3HaLUD0e4ptmhMQ+KkvNBvVrQP0rKJHfjRhk4YFqkBSpmhi2eF6/mn2oBI5tt6gMxX1OBlqJe87/fUh3PcsFSizTPAmXvhNAURmtwbwJ7y0p0irtDcQjs3xV6e18RNhwqOpwcvizhOA7HDNYm6qZg/RMHJwS4nD4MUVtqH46ikrYvAxKuAHO1VjHdjqdJpA3RQZKzB0XCxwTeEfIqIZO61A7PgmLd34Svi3OJQdJQf2DSgBxOPgWjYV5xhgB6pz3HAFeVEksF46xLUEmijQ8cDpCkAh1+IwPWx4UxN3HhIggbmjJRlCsFx7h9fkUG8Kkf26aRSmEz/v9Xg6Hw0c1ExBuR60XhQZnMdNyztOWZuJXUIf7jDnlgzPJ9BGY1hLV7Hb89aA/L1Li5PMZQcUGCRE/yzGNo3HH0Tl7Oo/jAcK7ySZLfNJriyDu5Bfun7x65ir4nH4WgvNopxkkhcXPk/sJEDZ62lVV9Ue+2y0V/AEysVRRtMOCgyWH8+dJ+5H/8lLHOUiZ22lmLAv/B0ZI3LnQAJL6AAAAAElFTkSuQmCC",
+    "price": 50000,
+    "reqSTR": 0,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 140,
+    "reqJob": 8,
+    "reqLevelEquip": 50,
+    "tuc": 5,
+    "incLUK": 3,
+    "incPDD": 28
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incPDD": {
+      "base": 28,
+      "min": 3,
+      "max": 53
+    }
+  }
+}

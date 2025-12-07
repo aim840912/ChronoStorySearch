@@ -1,0 +1,55 @@
+{
+  "id": 1072193,
+  "description": {
+    "id": 1072193,
+    "name": "Brown Osfa Boots",
+    "description": "",
+    "chineseName": "褐扣帶靴"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAfCAYAAAD9cg1AAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChElEQVR4nJVWAZHjMAxUZo6AKfgh5CHkIPQg9CH0IPQgNBBaCA2EBsKZgiH4tYqVcxzb7WmmU4+d7GolWcob/c5CYa9rvfAqgQBfLhey1pJzbv3dbrfQInlGIMCn00mAx3GUTaz1PxJWSVoE4XA4CAB7uTmA569ajUDA53mmaZo2B8YY8t5T3/dyjrW+QwUVJYIVPPdUwYdh2ID3HLG5IqqoQBNYshxcLZLsVOQE4j3A1Vv1/Hg8yn4OPjCw81S1nQKAaHVotcCQCwDn4DDLDjjkpaAiJ+jYw6AgpVDAjr1hVUR65OLCed33K8kuRN939mj4Vj5+i+TnZ6KvyQqAtSaq9UICAoCrxfAKyS5EduD9qaO//xbpKv969nTEzfV2BVfvU3AoBoHmsFBF7DWTPCDCMdG7pwOCSz4CbD2fGneOScIuB11HIdxjjgaix13clRDdZkTLC1cNGJ6nakr3oOvelx6UPpyD6FGpCPSZGoFYCLEQYpIFjBWM3JZGb+hVK7YKAZf47xN9QEU5Wst0nMveayd424PHlUWimeQPLpCh68WvSrRUkWzciTTZKTiVylSaIpfpxyc8t1xBPA/OTsAdhwdlquCpWcOVRXYDXgnRUqbXR1zHHAB8dMtFU/CfS1YGzwkCJpcbv8j4TuIM03eWxHq9DmtehKgCnhL8TC9/XkrPxLYdmdJyxNoal5DUqwoEAdNJO6de89xAlpK4qKjl/SZEpQGje+lZTqKNr6XgKUEOrAbVaOk171cC7YC1MVkDf+XrQgjS8dgyHfiFmd388JIppl8SNUMhwFLw6NRrn454CSR5u81Bs2pqgqcEogKLdNDnMX6W0KYCJWmF6TfAav8BVOnWDKd5EiUAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACrElEQVR4nJWWgZGrIBCG15lrgFcCV4JXgikhrwRfCUkJSQmxhKSEWEIsIZRwlODbf2U9JKCXnWHCSODjX34XP+j9GDPPqq1J74AEcLlcyFpLzrm53W63cQv2G5AADoeDALquk4fo628Ar8K2QON+v5eFeNeLASh5J9ZAAhmGgfq+XwwYY8h7T3Vdyzj6OocKqkqgGZLuXCFN0ywgNWdyWBFZVKQHnYsUohFgWVU5kKgBRHevStq2lecppGGA87QaWUVYTN2k7kLgrABIIQjLG3E4t4KqHKjiHY+6WC5FiLY2rJJIh1zoOK/P/QKWTd3zzjtsnsrl2STND0Tn3spC1pqg3gsMIEA0QtpnWDZ1tuHxvqKvf1NKNC3Xk6cWlcDbGaJqYggyAFB8xgXX8SYY9oAox8Cdpz2STz4stFTSr9iaYTiGKntGVUXjeA/pbYged9m+pO42IItemCUAlMTqVhQxbDfVuHhSupgO5cyi/9kCSYxjOMtgBlmUFXVc9jpv6J0oliCByPm8GmIPBzqa7d0NeTVxZcnae9SrzcIQDPvEi2joevGzMrU4TIF3KjZFAinbW4ow2/vvEUosO47vo5MTiOO0wd4KicMadiLZF8gKaLL39RH64YwA6dz0wirk52UtQ3KgETep685kfCXngNC5kwG8vk7zuQlwBZKCfm5Tf5psacJ1EYixjdG3xkWwdRcqaMRtqZVay0cagMYwFxRuqUkVZS86fRaPpTAtsL9RtAlKARrIAq6SENtfQVpxS9d3CZL8P5a2mDCD4rq0Fvphkvmm4BpCdQLx2hT0h+V/65dPKWAYRAwJmztGkFgRmryFAJnQZDJguTIfL56470yv3n5JjSrCH3esBjfP4oMkPbNI8TFZMO0v2kckD7BPXui5lj6Or43dZ+H/AYX47+rzhx1PAAAAAElFTkSuQmCC",
+    "price": 140000,
+    "reqSTR": 0,
+    "reqDEX": 130,
+    "reqINT": 0,
+    "reqLUK": 240,
+    "reqJob": 8,
+    "reqLevelEquip": 90,
+    "tuc": 5,
+    "incDEX": 3,
+    "incLUK": 2,
+    "incPDD": 52,
+    "incEVA": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 10
+    },
+    "incPDD": {
+      "base": 52,
+      "min": 7,
+      "max": 97
+    }
+  }
+}

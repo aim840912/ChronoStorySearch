@@ -1,0 +1,39 @@
+{
+  "id": 1302011,
+  "description": {
+    "id": 1302011,
+    "name": "Neocora",
+    "description": "",
+    "chineseName": "奇型刀"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAYAAADjaQM7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABZUlEQVR4nLXW3XGDMAwAYHHXBboCK+AR2hHwCO4KGQFGaEYwKzACrMAq1FLBsQkGg2U95HT8+DshI/IBeWN28iInNpugZBxHEELMubBZ/4KFpmmiPAdmocdPAbUa7AluzELwqU1FEtqHgK6nI6w9s1CtZpDfBeUrhD8pmLvT4NUjA+xAKZi306ZRUI4VhaAUzEZVVeZ3gO4pDqEUrDBhqyP0y2yIpwxCKRhBBoRheG3tWmmDyeBNdzCCsFcImckAWms6UZbl4Y1XMYLatoW+70EpRQellF6FHJiFsIKmaagqWPqDs2+5rggtEIt50LL4duEgcgV7g/CxxSx+FWODzjBW6Ahjh0LYG8QV0VsfX1xTHW5vtsdIVXVd51W15svEuA2eVuaiOOGXmXgLdDE787a9+v+MeBfeAg8r2yJr4LS/E7tYBJLUM/shPIHY37M9JBk6xDgRF/P+S+RAXCw74mEczY+JP/i0wFAESJ5SAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAhCAYAAADK6cvnAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABoElEQVR4nLXWi5GDIBAA0HUmDXgleCVoCUkJUoLXQkrQEi4laAuWoC3YgiV47B5ugCh+wJ3RoCgvKwje4NqYtHKEuyvBSQYV+r6HLMvwILoKnOpfYGwYBq64AmTs+RNBXnRGZWiQMYhrmZmA6plB09KZ4H3IWF5MIB7UvoH5gvoIhHefSWQF8wGNETj0GZUxMxfmA3KkaSr3HTSvbBPzASMZnCXBdzlIXsKJ+YCESRS67j3s86KWoHDeeAYkDPsOMTmDQF3XVJEkyebNR0HCqqqCtm2hKAo6KYQwMg0FMoaZlGVJ2YHqLzVX8rEvaGAKsBt3QkfADwwf4V7gKBgU2wKDYy7wEmwN/MBCxu7XAl9umSV9JoQEKbumaYzs5rKaWbzQzQx1GFcGNYeeRnWQ50i77/6XIOPC06gzQxuaA1eJs7EI7oC8+5AX0w3skvdwCZqx+IQx7gI16Fv9zqkfQUftlzYEjW8TDXqoxu8L0BI6wnLMGH7vD5zhAmRn5P04MW4a9iW3RGvYvngtA7vOLhsbgvrIG2D70cUruOsPcvkPWbXZzTgp130AAAAASUVORK5CYII=",
+    "price": 150000,
+    "reqSTR": 180,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incPAD": 77,
+    "attack": 1,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 77,
+      "min": 74,
+      "max": 80
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": 1072285,
+  "description": {
+    "id": 1072285,
+    "name": "Brown Lagger Slipper",
+    "description": "",
+    "chineseName": "褐色拖鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAATCAYAAABlcqYFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABbklEQVR4nK2UcXXEIAzG2/dmoBawgAUsdBJqYSfhTsJqAQnDAhawUAksyRGWQuF42/JHgQLfLwmBt+l/LDb+z/j5K4TE79tKg+M48kSAvnUe5+ffQrI4Cnvvn3+X5bToYzXTw7o4AqlS8Uq8tB6ExDfwRloIYbrtlvqrVs3NCsAe1vYgsRRnAJpJ4taHaTW6C2hBLgFXhjA43AxSKW02pZHHJSR+fd6z16JY6AyUUjma7LVaniAA4owDwJLEnae1dXW93x6XXm/GgGeQJvWTtiC9SAC2EGiuuidRq3aV7M5l2CVARCgBJaRrzEeYdAYFMWV8EVMzy70niGrUe+k1j0cAEhL5glWieOAJHqiPLU0MARgS+e0pIyIYRydgKC7vQQ+QI9Fa0xOxiHQdRQQIwzH25UP4CpAhCEAQG5YoAllMp74vSresoi6ENqUaDznH57Y6/EEAQ+YdnuPyXFqWxIcBDKEN8LLGacyGxdm+AaXn5R58oGfEAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABtElEQVR4nK2VjZWDIAyA9T0XYAVWYAVX8EboCtcR2hGuKzjCuQIrsIIjUJISGiNR613e4xH5yZeEgF3zPxKV8ZaUv4IQcLsM+DHPc5kISR8nHwl2FlQAYNx7/xo1ZrHoe+ib+zgh7AholZY9QE22QAi4JK+4hBCa62NEfXBW3WwT3Ke1e6AoAQQB6TNg9KEZercL0UBVSE0AmA68wGxO4ZhTallKJSj+/tyK96yI8EystSWq4r01L1iCwsyUICYDJo9r61X3db1Xvb/0ffIwpcy+Uxi4JxlCEsJcIBIUndWr5zFNBViFsEglRII2hXwAIHcIjEL66LLmrpX7FyCr3AfpPX0fhXBQpEu4MgxFkB0IqEOPE4chBIr0VsnIEEhRMiAA+D3Zg5SInHP4nBiWullEAkD4Bp0/nkcgBQQQgJFA+QKUDLqse1HWteraBOHGfAdCyfmyXxXEBxACtY/0lMtz0iQDPoIQCDelFzk2x+QjgASdNnAGtCX7f7a1LA5VgozotbGjkJkagYzSNGjNaG0cGtyJ0DGjlvVnI1HhPCJtkeaxnJP6onXNO7y9FBkFuuVY0Z/sPv8Jg88i2QAAAABJRU5ErkJggg==",
+    "price": 2500,
+    "reqSTR": 15,
+    "reqDEX": 15,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 15,
+    "tuc": 5,
+    "incPDD": 7
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 7,
+      "min": 0,
+      "max": 15
+    }
+  }
+}

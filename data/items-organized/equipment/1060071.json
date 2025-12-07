@@ -1,0 +1,49 @@
+{
+  "id": 1060071,
+  "description": {
+    "id": 1060071,
+    "name": "Khaki Shadow Pants",
+    "description": "",
+    "chineseName": "樹林之褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAdCAYAAABfeMd1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB8ElEQVR4nLVWgXHCMAxU7liAFcIIYYQwQjpCGIGO0IzQjIBHwCPUI+AVPIJricgRiUkMtH/HRfZZesmW32wgDQ+vo5hOpEh8AHTHHZy+r2Fogv1BtrM99F0HTdOAtRaMMWH+DFYrUErR/O7Q+SnRg0oMGOvoiwHYNlrfbMVzEIjNjTCMq/BNIUlCmWkXM2S7V5psqG/r0G4DcZwHnU1SYMl1A1g6TUxtpVy0D0c1nc86kwh0lPZ2G7bHzeep+vROrZNgUAQGxiBlORLJ8RqS3cVZSyIMiIHxV9cjAZPimCoykNtdIwEGcG4IgFsyVFFVeVWskkgwAWY5ZJtNlE2SAlf4NkluoKWKkiTyQBF04IZMPtC4ZbLDqDlMJolEgoCRJMqphMQRdQo1yQWGg+nW8oDLWfi0diaSksRfLydarPuOFLYK7dNWJXyax9f58jX3+WqDT28j0Wy7MBtcTKpaQRbWfCQJCaP3P/QuoCShAoeMABKi94zP3XaVIYvdfk+DJcGbgn0YGEfKy0iyvRfAqFWJlpxC+jGEQkQSLwUPkXsJp2SsdcOdoWo2csF/4S3tSiF1+5HEy5fu+ajrS2IlUq/45ctCxtn92XZxo0gN41bepBY+C37vH2EuKy8SLfkjSRH+ty399y1gGST5C5e2+AWO3CxGS2m7awAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACGElEQVR4nLVWjbGCMAyOdy6AI+AIOIKOwBtBR9ARZAQZwY4gI7yOICM8RuAlkdYAKZT3891xpL0mX5qmH6xBRws/x0qb1IhaBBSnLZxvTxxatD/YbuoSyqKAPM+hrmuw1uL8HerKgDGG57eHotXIAjuyYOuG3xTE2baqXrZxc4Dk9kWK4wzfIahEnGHV+EydXZqKbdi/1pF9RHI/D9UiohVtf58DlYEnhrYxjbcPJzOcjz4jD3KWdpJgqZrxPFchXLV5IgpMoOAUKE3fZHIcA7XrXPaSjIJScHr2+zeJI6Yx78zCkq57k1CQpumCUHm63WRZ/G5miSQcCWXbZb2ILJpIg9vpnxDFBpvbmUokD5nATWDZdIfsyyc7jxvGLiCSUEgcVLIQhkQsqKRrpGENshxsMZcLPO7C51irwiqJ2ufjzA5VWbAyZ9hWxyyFiw1f+8d17HM9ok9Z98hGpaOsyIHVOIMoxPhIIhbTtv3k7wpJGCk3ZgYQEMolPr3SpZjNdrfjwZxISjgfB4ozlKI3UdIXTa9tgXbtBU7718EnKsaOqJUiSVhy6yWh08buTvldreWi/8SvtE5DSCWIqJVfzOWR45b5HUl9c1/QqHCRZxlbuhRmcnfNIzVPtvlaW6yg+8HSydz/wwSSsQTpZNE9GUqWiDb4b/g14XuZiovPCctzm7jYG1q37hbTQJZFK1EC+tHT3HYwHtnffts0kJKl+UoAAAAASUVORK5CYII=",
+    "price": 41000,
+    "reqSTR": 0,
+    "reqDEX": 80,
+    "reqINT": 0,
+    "reqLUK": 110,
+    "reqJob": 8,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incDEX": 1,
+    "incMMP": 10,
+    "incPDD": 27
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 30
+    },
+    "incPDD": {
+      "base": 27,
+      "min": 7,
+      "max": 47
+    }
+  }
+}

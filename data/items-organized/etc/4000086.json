@@ -1,0 +1,27 @@
+{
+  "id": 4000086,
+  "description": {
+    "id": 4000086,
+    "name": "Leatty Furball",
+    "description": "Leatty's Furball. So soft and small that it looks like it may just float away.",
+    "chineseName": "利堤的毛球"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB5ElEQVR4nJVWgZHCIBCEGRvwS8AS0kIswRZMCbZgStAWvgTTwpdgSnhLQJZh8bwA0ZthTA64vds9iBvzvfmCz7Y2fAqSA//f74vJn92O80WwNRDPwFvnsvMxz+YvDNh+v68Gb4H4tMnfbjfTheA1gGmazOl0MuM4NinUID6YsdYWAWB478MAWHc8RsC+7/N8l9YnCq0G8eQbv9isATRYDCp82BOCr1aSA3TK96iAblNVpJCJymZ4A8HCLm3UOrSMSWH/b9DJvfYu6LKhU3ypRVu0ySSgB0aibEFXFklWU6NI+7mWhkS18J5OtCPasj+fVysoJSCpkkAbBiNNtcAyKDNn9vQfQiuP16vUJNNlcS5wPtZMZx+pVVThzMzhHQNnDTpTkwgkr49P9dCAsGEYzOVyiUCsBObzQrNusps0kKgg+6PwcOpNrXPCq0T6sRfCz+9r4x0YNQFvAGImh3QX8SQTXD6TNrmGABooawIgPLCqUvaL9xQcbW9SYuwsaBK0ebWwKC12Axa4dHphbEsMVovhCJCyB4VSC1O4VmCxGnYHzSkqmK2ipfoB0yBc4GUggOI2IKATrQrjXM2KX0bowiwZiMGRLeaT3zIh8f4RSG4CWR1EJIWKFkuBv6mkllErWPOPxBNkRlwSyy37TQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACLElEQVR4nJ1VgXGDMAw0dyxARyAjsAIZIR0hGSEZIYyQjNCOQFboCGGEMILrp3pXKDak1Z0PW5b10ks2pfuf+ISuWDrwF6Do/HG/P22+bTbcTwK+AuTpvKrrqByHwX2FAdlut1mANSAvB33f964JADmQ2+3mjsej67pukc4UkA/iiqJIgkCwbsMAYLPfT6Bt28b9RuyFziIF5Mk/vnBgQSzg5FjpcCYAvJRRdNIY3ZgBriQ70slgdYM8AcG4kcO2LkvCwHD+M9St/j2bpK4IHeRT7btEoQ4E9cEQ+pLUxcLprHJ0WT1tKQg21QyeG2hVtGx7Pq9mkgpC06bBYkY4QMpyzrVjZsAsqN+FNu+uV10jpzMqcG9wf9bEZjHRbGjDnRrCGgN3EXXXNZrA9FPzan0sKORwOLjL5TKB6YwgPhq7ddFdZsFUJlEfmwEb9uDSPeKzo/U4i2YY5rbTmxlrBB4Bxoh28nbxxjMAPSeF2oYgFmxWI4BhwuxSWTytBQBXwklw7DjUKNRq3t4qzalLYFTLLYewZTGYNUZNEMkCdOrauMwTBJmyYtdQakMLozYUZX+CKSAaee0MwHg1CFqrNoZwT6QKY1wCquT7QJ0YLZ0RAFFjX/RIoYderdmuI0epAPR4D84+VAAnATyTTqGocz//vRP2xI7XkCCIdiiV81p96cQZ3TU43ONrGKA91zPaIDojlzGy61Nmz85no3S/6WkwPde6MaFfCizOvwF5t3egfUTvGQAAAABJRU5ErkJggg==",
+    "slotMax": 200,
+    "price": 28,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

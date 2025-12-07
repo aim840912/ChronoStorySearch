@@ -1,0 +1,49 @@
+{
+  "id": 1002022,
+  "description": {
+    "id": 1002022,
+    "name": "Old Steel Nordic Helm",
+    "description": "",
+    "chineseName": "舊諾曼頭盔"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 55,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9ElEQVR4nLWWjZWqMBCFx3NeA3klxBKwBCwBS8AS3BJ2S5ASHiVICaQEU4IpgTc/GQyJv2ePuC4QYb65k5uBP/D+NmXnq3dufgfIoOPxG7z3EILHMwNd12sCL4FfBU7n88gg59zih/bQ8L77YfBT6CvA6XI5AwQ8CiEOBTk0gf5wbxj8CvQZcMKNQR4/gagKNRDHNZHXoI+AAhM9oHFVI/E8nnj8hwL5mqqq4d/pCLvt/i70HjDCwjwQQqIupJdSeQ00TQ3WWE7gNJ5gu9nehN5VGGJw7x30/QDWmlmpQkmZtZavRbeCrQyqrHBv74W9CURxFxZjKCJulD0FpMAELkQa+WrJA6k8o8p1qfKmQiqLBqalQGCBdnHOjHgmuccaE2FoLotWCrdV5kBeAlJNCUmBnPd8XFGpVEW44hRu4rinSmBjGFHlJlNZKOSyGRuPgSfK6PHMSL06o2SUnIvNwePcmkXdS+DUNA0apIe2PUA6U8V9V0ZRWm0KlDh9cpULhW3bsCO5LFhGylTmMsCNZAVWEgXIc4kOjqnnCqcR1w6ZgWwuzTmwvblJa60UnUGWhRUixaji9SP24c16wypnhUbaBYOoQbdtyzB+KCxUmYVhStWyXrVRkKtDMplL07D9G3kqDIMovBFUgWGhT8bruoYB79XfSYieF0AtKe277gdqUyfBktIZUaGJ50lVGMORaTBxi52HzYiNQ4HTeRzFcXGxk1EIvCxVvvZi6ZJrqHzUkb4PLVaoj04FvlLdygoHN3BWQ+/myafN4TgFgZCETndJaZdelJ+cI8PJ1Ji4thnY1A3foYOSreNIBNU1dYWF2HGue04sqwhXipo5VStmNM/h19cXmyWfkbZpYwKeM37kUO2/XS/z5QbHXxpvD98zcPV3veYnbV2XDXd2pL8PepYAqd9tdwuF3HaGweevgFju2Kwhzskbmy+TXOXNO39CT/L+EB5d89b2/K0tlA78LLAQ+Glg0e8/C1zt9z+pkX41f7T9B7Ky3/+i+T1oAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADJ0lEQVR4nJ2WjXWrMAyF1XO6gDuCMwIZgYxARyAjJCO0I4QRHiOUEfAI8Qj1CDz9WMQ20JKSUoyx9enKsuAVnj+m4v7lmcnPABl0u32A9x5C8HhnoOt6dWAXeC9wut9HBjnnsgftpeFr98ngX6F7gNP39x0gYCuE2BWkaQL94dUweA/0N+CEB4M8/gJRFWog9qsj+6A/AQUmekDtqkbiebzx+A8F8piqquHf1w3eT+dN6BYwwsLcEUKiLqRDKbwGmqYGayw78DV+wel4WoVuKgzRuPcO+n4Aa82sVKGkzFrLYzFbwVYGVVZ4tVtmV4Eo7pvFGLKIB3lPBskwgRcijZwa8kAq76jysFS5qpDCooZpKxBYoF1cMyM5k8yxxkQYJpfFVArrKksgbwGJppgkQ857blcUKlURHjiFm9jvKRJYGEZUeSxULhRy2IyNbeCFMtqeGWmuzijppczF4uBxbU0W9yVwapoGE6SHtr1AulKLeQ/GIrRaFMhx+pUqM4Vt23BGclgwjOSprGWAFWcFtiQKkNcSMzi6XiqcRtw7lAyU5lKcA6c3F2mNlaILSB5YIZKNKo4fsQ4fD0dWOSs0Ui4YRAW6bVuG8UshU2WyhFmqlv2qhYKyOiSLmScNp38jb4VhEIUrRhUYMn3SX9c1DDhXn5MQvV8ANaR07bpPqE2dGEtCZ0SFOl46VaENR0mDjlusPJyMWDgUON3HUTIubnZKFALnoSr3XgxdMobCRxXp49JihPqYqcAjNVtZ4eAG9mro3bz4dDjsJyMQEtPpJQltnovyyDlKOFkaE/c2A5u64RnaKd46tkRQ3VMPWIgV53Flx4qIcKSomFO0okfzGl6vV06WckXapo0OePb4pwzV+tv1sl5ucHxSf3v5mIEvb4cDv2nrellw54z026DfHCD176f3TCGXnWHw5ScghjsWa4hr8sThl06+lMW7fENP8v2QTXyD545s8tYb/5F0YZGB1R9gGqRQAk1xzm/yAljugtT4Wj+dtB4+BSrEJlceW1jf/mDZ4cSawnTw+Xz+vCV91x2Gy3Z2vhYPfQGl9nHFqdWavseJ/4Vi+YxkA232AAAAAElFTkSuQmCC",
+    "price": 110000,
+    "reqSTR": 160,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 55,
+    "tuc": 7,
+    "incDEX": 1,
+    "incMMP": 30,
+    "incPDD": 55
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 7
+    },
+    "incMMP": {
+      "base": 30,
+      "min": 2,
+      "max": 58
+    },
+    "incPDD": {
+      "base": 55,
+      "min": 27,
+      "max": 83
+    }
+  }
+}

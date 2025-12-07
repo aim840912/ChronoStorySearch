@@ -1,0 +1,39 @@
+{
+  "id": 1322012,
+  "description": {
+    "id": 1322012,
+    "name": "Red Brick",
+    "description": "",
+    "chineseName": "紅色磚頭"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABPUlEQVR4nJ3Wb3XDIBAAcPreDMRCJoFJqIVpmIVJqIXWwixEQpEwLERCGi453kHvD3BfoJTwyx3Q1w83FhszdpEmjyDb/ez4eXaPGF3c+8sBs1AvUgDTNDmf+ueYBPUg278/lltCACC1GN8K1IpABrjodccoYEEtSJHB1Xt1MgdZSN4DCnBZaJCGAICloSWSyiVBEvJWotT+nQ+v6+paYj5bDgFAeut0dEOM6uL4MjirRsxT9LsDNwVCILXLMVTsyVsGdeDDVlCAZqKWqIasclEAkaaL1hKBARDJIQFYZwt4MECBJKD1aPYAGUFAqrWWhQVkBCYbmzkKIHL5DGF7NlyyEQARmPgVI0CwgIH1ABQpIOmnA89dD1AjGUr3poZGAQ6BBX72C/pkvhgBJAQWonuU/pGMAhqSIfrZDcYLL7nA0cGP1g0AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABgUlEQVR4nKXWgXHDIAwAQHLnBcgI7gjuCO4I7QodoRmhHaEZoV3BI4QRygj1CC5giwgZJHC540x8Ro8EzrlTx9qSuXfiJhyBls9tMPS9ulqrrBtPK17EWqEE0VqrwY+3exzWAi0/wxpyMiYg/grtWcBqoZAJBB4diJEarAZKMhmHgX24hElQ3BOM5LKRMA4KCJQJl6tUOg4rQbty+ev3FmCeZ1XTejTOQQEprd4fa2MtC8CC8FMUEk/XxSHvDAaIv07rrd0e7TKhDQJIjSIYYstFMal0FAGo6mWsaaaAABRbCYG6S8i1gCSQR2qPbSsSIUBKteeyqUEiFCYIG/wfBKDTgzHLreJFPIoAFB5+tDZgIYgAtiIYSrDS3wycx1aEQhHz7xXFCHJ2XQuxkyNMIT/5/KrU7y0zc0Oe1P0zQUJm6ABp0l9cZl+wZ/5LZ0M+XB+5lZP7vvuy2A4F79E1BHXYG0lIKlcRxxnlHro0BKTjpHfqnh7GcivXKl+mmfkdx3+6UNuV+tAf7gAAAABJRU5ErkJggg==",
+    "price": 3500,
+    "reqSTR": 20,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incPAD": 34,
+    "attack": 1,
+    "attackSpeed": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Blunt Weapon"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 34,
+      "min": 33,
+      "max": 35
+    }
+  }
+}

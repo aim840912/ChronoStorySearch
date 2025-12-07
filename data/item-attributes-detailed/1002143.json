@@ -97,22 +97,6 @@
         "min": 28,
         "max": 63
       }
-    },
-    "stat_category_each_extra": {
-      "attributes": 4,
-      "attack": 2,
-      "speed": 2,
-      "jump": 1,
-      "accuracy": 4,
-      "defensive": 18
-    },
-    "stat_category_max_extra": {
-      "attributes": 4,
-      "attack": 0,
-      "speed": 2,
-      "jump": 1,
-      "accuracy": 0,
-      "defensive": 36
     }
   }
 }

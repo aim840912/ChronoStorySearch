@@ -1,0 +1,49 @@
+{
+  "id": 1061104,
+  "description": {
+    "id": 1061104,
+    "name": "Green Pirate Skirt",
+    "description": "",
+    "chineseName": "綠隱者之裙"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABzklEQVR4nK2UDZGDMBCFl5kzgAUqoRaoBCyABJAAEi4SioTGAhKIBSRweQub2/DX3sztNENKs9++vGT7RfuY6e+RbF9swXOdEfkPZVm2y3bOkcNzWr/7Z5YS9ROLieA7xcCVbUumaRiel2WYF0VBXd8zLPffG+tCkXeKORqAVoV6bv3A3DiodYsQX2Q4gO/Axi9Mffbg52suTdvE9Xfya50f2YTCsR0aPOcF0d0npekKA8BxfggpJgUxUr3gygoW4xfX9XJB+NDW0dsqwIOA33lQHYE5Yb0MGsq794eFeV2+qDOPSLmoP1Wc5/G2miZhK77bkarmxrC2fe12N31yeP8VAuaD20bbzsEKqLbWHkKwBDtFTw3D4nOkuCxH9hIWdF0SfIYN8BZh7YOfz+fIRavqcamYw5gbq8QAGAVQDFBAjKn4HKB+aZ4Yqr3eeSxKi2LkQlArgcZBoSPoqWJpDA0XCK5XkX97tTlbpYtdgcPB6S4SOMCAIsR/Ub+9yyzwvhxgZIVAdXNArQTAehcfWSEhKvv+trv4uBEoDv+xCxymXLW3YFiA0FBsOVX/+zjU4cAGnXfZeWfJZzAlhhsksT3Nxz2lq3grjn9Jjl7+AA6hAX6WM1pPAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACFElEQVR4nK2WjXGDMAyFlbss4I5ARsgKZARWgBFgBDJCGCGMEK/ACPEKjED9FOQKYtPQqy46zJ8+PUm+cKS0TbTfDqkbKdBUZ0T+R1mWvd10zpHDcZzP/TEzRP3IyUVhSUUIX7YtdU3DsLwsw7ooCrr2PQfP/XljXYDuVcTWIPCsQK+td6w7BzXulZiHDhuwJKjzLxofbfDrORaN60DzffLPOu/ZiETi5YuBprwgOvsgxszBEdBxvGAClwTgxlDSNkvHyfqX6/o1gDwEs/e2CrCQ0M/6TVUUxAHmYdMQGIYB67p80LW7LJSJuo8V5fmyDE1z4NLd2idVzYmDt+3jPcG/DMN/2xrEg7C2tp1C6aDKWhsNhkdQCezxYVj2KaqoLJ/cC5Tsej2EPqFs6A3M2gsf7/cnJ1FVl12K2LruxCrgAAEIOCAI2nUV9xHqXpt5CYn1KtkjUVIUTwZDjRg2MsAxyMeKZKNqmATFOBf5zavJubQavgcUBkHvcoEBBAhM+ifq1nuJEz4vByJaOoHozQo1YgBplXsVLUxU9P3prbmYOCSD/kElhkNGezcIJYNpCEpk1P8ghmSIlG393iZIWypYKriCRDfswfY0xfe8pvrSxe98rbn6ZK1IHtbVNpFrMTtHIKO4gEzCU9Bk5qvrcP6OOaqgmTruUZKCLEwrSj209X0zbqwXfqQfeb+VyCSgW4mF9TfrnhuUGzdzJAAAAABJRU5ErkJggg==",
+    "price": 120000,
+    "reqSTR": 0,
+    "reqDEX": 120,
+    "reqINT": 0,
+    "reqLUK": 220,
+    "reqJob": 8,
+    "reqLevelEquip": 80,
+    "tuc": 7,
+    "incDEX": 3,
+    "incLUK": 1,
+    "incPDD": 51
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 51,
+      "min": 11,
+      "max": 91
+    }
+  }
+}

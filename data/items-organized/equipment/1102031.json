@@ -1,0 +1,43 @@
+{
+  "id": 1102031,
+  "description": {
+    "id": 1102031,
+    "name": "Green Giles Cape",
+    "description": "",
+    "chineseName": "綠龍紋披風"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 85,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8klEQVR4nKVWgZGjMAzUzVwDbsFXAi2QEvgSSAlQwlEClBBKSFpwCe8WXAKvlbExwQSS19wlBMte7cqS/U3v2bTz/uudRc6CClhRbQecJbJmFcxhAGdAJ10Q6UKRebjNYFEqwrg1fmwO4CXwEehU1koeAKjUMqA0xfcAxm+w9gG8Bn4FGgGfWQJAKf+urBRZ6+J7AB/ZobwAhFWNprGzwgS2MOT/VHXtCCK8YrsHKiwBqGdJbbKwEp2XF/Bz7OD41a30736u+0R2mTYcvpmTCECwTHMKWR+jz7OwRXTseDUcAKP/7QU4yzYHOt0booEU3bSlzmo6a7/ag97r17nNMu2cl7azaiXrK2vIyka6F15mGIK/dFu2WdCeJ3a0aOmS3blnHbaP9b63iv21/GUtz5TddZK/kDsB5ofwjN2LsbLyeQ12GZQAI0hsyMfgVmyfQWXX/nIuB3c+l8GAa/j7XnuJkVdsyMcRU0gbKsK6Rdqz5hk7+jN6trnQv7eT3lj8KaCGFboaLYAwML0MW4m3oPDXv1S7ltpE4tD6jqyvuF5sK/ICMGcpqOQTddZrohPrbww1bc3AKfK/0Z0ss70+nU4rprFU5khh6c7NGXoxfKpGzWtYkbcv10CpxCtQsMQiiLhWVgp+PMkSG64GEKfmVrVo+GJIe8+MNXernxzT0OCbsiZnWl/wdOKsIt8CU2ut8mXDHzWtG0UAjWcnACFviP6sAeRWzP7MFi0m2AABOPZwCESm0kGKJubTnSMYbcVUgvYksOPBFvF3xtdwBJXNws7IZ8WIXtr3mPYMrOagw4mDjtQKIMULAEAn0IZja33PHeXekV/8MYSBrQPmo4UGlZr5SoHMQexweROm4YSI6sztLy0XM0ag7BVk7NxU4RzmgLFUuEnILBdvijIfoF/D1U51vz5ZUgvO9IE9A+Ij5DQC/y+gjez8t1kKPXu0CTAeQneZc/MWw1BmS+6P70ji4PPzQfP1c3fB9kDjBAB/CHiozD+/HIu9BEv4TQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADKklEQVR4nJVWgZWrIBDce+8a4JdASrAFU4IpwZSgJcQStIRYQtKCJXxaoARvZxFERWPmXU5EYHZ22YVf+g7jTv/PN4ucJRWyrNh+sIbIDAtjPhpwhnTUGZHOFA1vu/mY5Yrw3Qzu22TAIfEn0jEvlTRAqNT8QWkK/SDGO1Q7A46Jj0gD4VolCJRyfXmhyBgb+kH8CR/dC0KgqDT1jRElwKyQf7HXtSU44UjtHqmoBKGeXGqihZX4ee7AOMsDLHc9c9d3ue8L2VVasfnDFEQQQmUcU7j13bs4i1pYxwPvAxvA7P9bIU6qTZGOr4qoI0VPbagxms7ioR3pqzyObVJpY51rG6MWbj1CRUY20itzbgZg/LXZqk2StjyxodmXNtqde2iwfYwb+yx4vJa/JNJKebiO4udjJ8Tc8G3sXnzLCxdXj2unhBhGYkO+O7tQuyaVXfvgWHb2fCw9wDvw81U6FyOu2JDvT0rhWp8Rxs6uPQun2NKtd2pTpv9uJ32x+Mqgij10H7QQAlB67bYu3pJivH5QaWuqIxf70vcJbcH5YmpxLwhTiEklnsizVhOdWH8D5LQZOg6Re0d1Mqz2vjqdFkpDqkyWAvHOTQG1GGOKSk1rGHFvmy+JYhcvSKESi8DiUhlJ+P6kSmy4EkQcmmdRo+ALEPaWFWuuVpeUUl/gq7wkO9Qu4enEWUWuBMaojXJpw/9KWhYKTxrOThDCvd76swDJM5vGs1qUGI8ODmDb/SEQlEoFyaoQT3tOYMBCqRjtRGDHQy3sbwaXw4FUNgsPRjwLZnSu/U5py8RqMtqfOKhItRBSuACAdIRsDKyNq7m93DvSi787/2E7APNRQr2XqulKgcjB2f7yJkr9CRG8M5W/OF2GPhAlryB9Y8cC5zAbjKX8TUJm2XBTlPkg/enuZizb5ckSww8mF6ivysaaMCiNiXcIkWJTRI5JTVDnnsOc6P98I85TIUbDV5cpNrhi5SuyXWKfZnPsZT5efNLbmFRNijTH5+WJac7rU27lub7Z0M52XJ8yfuEbT35641fPFGxEeFv1r38LUnSYiPhCaXXLS++My+rd7rTpD4HVnxbJBAgpAAAAAElFTkSuQmCC",
+    "price": 270000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 85,
+    "tuc": 5,
+    "incPDD": 31,
+    "incMDD": 36
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Cape"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 31,
+      "min": 0,
+      "max": 74
+    },
+    "incMDD": {
+      "base": 36,
+      "min": 0,
+      "max": 79
+    }
+  }
+}

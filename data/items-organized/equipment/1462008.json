@@ -1,0 +1,39 @@
+{
+  "id": 1462008,
+  "description": {
+    "id": 1462008,
+    "name": "Golden Crow",
+    "description": "",
+    "chineseName": "黃金弩"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB70lEQVR4nMWW63XDIAyFxTleICt0hWYEexU8QmfoCPEKGcGM0K6QFTwCtXgZsEA4SZP7I3YA8V3xdAfvk34HXLuneDVc6xUthP3zSngMFq+Ca0tef1Ra0WWNxL9AwYLFYN4CoyMCOAOaKMtjdN/3oJQK2ebgHRwnRQgRViMF1nrPdjG+fQDHWVOK4QI78Z1HJhJzZV80WGxNd0H5sFsDcwxKqu3DZ9I74myGtQYmhfCEclk7nL4BpAc5QDx0pv4rLce4EcEzCSZtdK5C+6AAi7Wt1KBRQQChgplGsIfb9gO5iqudYIw3YEZjfZ+GegwFjxse2u8IRcl5e0owu4btizrhRKMB/XORcB4nM99Rsf3VtovVQ7Gv0vHKGQhg1HU5AQzLmnU8c6K4vzl4zUAC7j9PoH4Xw5FJKC/uYskNkGBf788IW/k4PDYANbBXcgY8Ab51fFUg+w+4LQsJRskZmtUMR+ikbsWMdyKu0HvgGsGoZ4Jb4AGMWTsVd4HmzsgD8Bwcw1oPosNw478CrhtgDpYa3OxjXNUMuGjAXzD+jofGBZeAcTs1KpwDoUCk1y0H34GbVnVuQNl7HtwVzWVvvmRwlY7D3eCioegbgTQQhv0y32A4nx4BUx8k7D7He98M0RMy3s0/BzdB3Mo8aKBJfxUjBD9apwQHAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACN0lEQVR4nMWWi3GDMAyG5TsWICNkhWQEWKEjwAjpCO0IyQoZAUZoV2CEMIJr+RXZyDa0aaI7ILEtfb+EH1TwOpOvgEv7FM+GS6nQQpg/z4RTsHgWXBqyuo1hRxUNEv8CBQMWrf7lGRXjUBIgmbbYRzZNA+M4+mxj8AKOL0UI4WcjB5ZyybY+brwH06w5o3CBQVxwIiIQl9bFg8V96MIpLrsRMFBQ0G0eLpPGEgdd1hyYNYQHlLMKePkE6BzIAmjpdP8pbEe/HsEDC2ZlVLZDOicPo3afqd76ETwIzYtZCXZwM75lZ3E2CPo4Aboa6velzftwcDpw03pHKFo33J8d6FVTjMXtcGKlAPl17uDYX/T7Js3mLk0IpSEZK7W9lgR4MNp1rgHaWWVN35xIru8SPCcgADeHGsbvWXO6wLVspYMlFsCCXb/bI0zn3+FUAOTAzoI94AHwe+DrCF2zh2meWTBaN8BqWw1H6GWckhkvjDlCfwOXCEZ7JHgN3IMxa2vJVSBLe+QGeAymsLUb0Wa41p8B5wUUNpYcXK9jnNUFcFKAO2DcGQ8rJ1wAxuW00vw+4BtEeNyW4AtwYlbXiTg7dd2w5L0JsVNZ30rZ6y8ZnKV9uwBjwD0DTgmgdlBXq8Auf2njBeX0ZT8PE7RHv46PNkCdgHIC3hXsg8B1mwXONpGJCtCfUXjmYoksuLUDXdZbMsZPixMZm5048WfUMeOYC0T73qL2+FrAtQAIywzAZ1snhOTEssJ/ALKwGLkWa7NAAAAAAElFTkSuQmCC",
+    "price": 240000,
+    "reqSTR": 60,
+    "reqDEX": 190,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incPAD": 78,
+    "attack": 4,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Crossbow"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 78,
+      "min": 75,
+      "max": 81
+    }
+  }
+}

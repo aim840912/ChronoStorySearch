@@ -1,0 +1,33 @@
+{
+  "id": 1302017,
+  "description": {
+    "id": 1302017,
+    "name": "Sky Blue Umbrella",
+    "description": "",
+    "chineseName": "藍色雨傘"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAeCAYAAACiyHcXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACKElEQVR4nMWWgZWCMAyG0/duAVcoI+AI3gh2hGMEHUFH0BHKCDoCjkBWcIReklIKHKACenkPlRb5v/xJC1/w2XCdc8UfS0IEATU070oAvMWBxMh/1FIQrixLSJJkcD4AkLBEaf3BIIs5cbvVKUp2IwAyx+IMwbEEhHMkq85b0LsDHFINxpgA4qy1BGBaAN2YCyEAgHSs/MD+Huf4AxHB7PsBAth8J7BqNioH6h1oPII+WbhsUikRudIL0BybA+HLcHVQ0v3KdA069edbTVle6YosGQJoxVQItyuJAOn+V7KBxBlAJn4UGALh8nCP4HH/aOnO6wkuAzuQ3ArYrlKwG69jtaJGLeQ3lwYzM3qfKRDiwpHsPqIXcoe1fKuzA0cgYUNC2IDYZMkMowYdeRVCAJBXQ1CiOrD9nD2PheHQI/4agNz6TaGxfCdDCECO4eapNGF+j0xcmi6AEsm6JLOcqMsgig0AoCNBLy4gd0qWr+O9I1G9wlMg2mXoAAQb2AWe475Q8TGy7BKVMrDPq78Atf80VwE8FH8FIrpQiUDYmpsAPG5q3acBnoGoAdgFTUI4kH0F8JL4sxCjANIX39OyfxbCbS+uXo4jAJPFH0G0APrEcz8yG2AMIka1JDmWzP4RhINT5UIDALJlsx+D8GW4dro/Wz77IYgI0BZ/K0AXIu6IEeCt4l0IJ898DvOZ7LsQrigK2pTysZfSt0P41/J/AggQqu9t55PxC3sgFi9VYM0QAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAfCAYAAABplKSyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACaElEQVR4nL2WjZWqMBCFJ+dsA7YQSmBLcEswJTxL0BK0hN0SoAQtAUsgLVBCdmZCyM+DgMB7OScqE8z95k4S+ID/20xyLehjTwgnIKbGTQugXz5QKP6P2AvCtG0LRVFMjjsAFObWVrYTyG5OvF5DipxdBoDHSJwgqO0BYQzKip8TyMsNbqUEpZQDMVVVIYCKANK2FYIBQGM/2MC182P0obUGdR0HcGDbndD9YsNyaHkBqe8gvyt4HEsuEboyChDGtkDYMjwNtDhfW36CLO31SWKWT7zjXEwBRG0thLm0SKBx/ifagOIEwAN/BCgEofLQGtH369zW3bYmqAzkQPFq4HQooTpanUoKXKgN/6bS6LPKzrMGgl24o913bYXM7ZO/xY8BgyDuQNJwBLapQjOUmHTkXQgG0LQbnBLWgeyn7Cnmwm6N2HsA6soeCsH2XQ3BALV2k5e8COvOM1FpUgDBkkNJNjkxlIEVAwDAXmgrziAdJkv30dlRiFHhNRBxGRIAZwO5QGO0LoR/jOy7RbkM5PPhb4DBfxzrAWbF34HwLvQi4I7mEIDiatBdDLAEYgAgFyQK6Ynse4C3xJdCZAF4XXyty34phDk9zLAdMwCrxecgIoAx8dpGNgPkIHzrtyS1PbOfgzDw3bsQAMB53+xzELYMz2T1n/fPfgrCA8Ti/xQghfAnogeYEj+s0OqmBhyE4Wc+tfjUc2Kh6FhsKUAX9AjCNE2Dh1IdvpSSgOy/wz4FNCY4FufTpu/DfewEv5bHACGETAR3LYWDECNvO6FQOkFuwi7zO+0RBCQAzrI528PnaQ6yy4xx+wXL5jEBfaPXEwAAAABJRU5ErkJggg==",
+    "price": 1,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 0,
+    "tuc": 7,
+    "incPAD": 15,
+    "incMAD": 15,
+    "attack": 1,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Sword"
+  }
+}

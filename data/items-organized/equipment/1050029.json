@@ -1,0 +1,55 @@
+{
+  "id": 1050029,
+  "description": {
+    "id": 1050029,
+    "name": "Dark Chaos Robe",
+    "description": "",
+    "chineseName": "黑魔力長袍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 33,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADN0lEQVR4nLVW0ZGjMAwVM2mAK4ErgZRASiAlQAmhhFwJUEIoAUqIS1hKWErg/Ixly8bk9uc0kyEYSU96lmRfaJdN/zL6v7LZZwbQbXoS3boD8BYZpYL6sc72rT/+2hdMpkVJVJYlKaWck6IozHNZljMAp8OidU91FuX8WNAKulejkOc5pSS1Hq8hcJZ1XcOAlP+/7+kKVkoDCmU4i434nYFklqmA2A/kPSmmNmPQTC9s27eitmscnWxgaU8CxmBYl/ZnrHH1mvThHCBiH41hVVU0z7OJHt+ls3hfZZb41ve9zipzWUrQ7PcNVayoG70RG0IAHIsERKD4SbtHPWjAIQAMMoXotqFXrWmePbVnGTEb8inroH8OrkViCUAR4X1c6Wta6XqnjyL3D2DMztQvpgUByNugvwUz4AAKY001Tc+VxoWSIvecAV8P/VS7Lfs6EzcGm6aJqnQ1zhND4gCI7BhMJiD1UqAHAUU0kwOWdEpAp0sU9LcsRrvuKPYtYytPZsoOYrBY5LSxkgGkrmvnV9oFmUrniJ6Vz6YT/0+Aej8RQwEoUzgMw8Fges10ve1DoX/MdO/KIJhVfS4cHq9MsTnaUERS4ICjhwHGo55XxvDWorCOFEtbOI/7WlLsMkWGMlqAMi3IrnjaNRvM/Y/XzW3RScEEG8fRjVFJcbCnh+PIKu7ZxSJPnURxiUmFuS0pdqBxhaGQECF69/1+m+NPZop97FThdD+J7PdDpiyYuUWpvY42Ew247ytRXQyG2uCkMZeA46AVY9CA8vC5SCqCbHM4avcKVoKyIqxUDirPi2QPx0FA53QiGTqXiqZpomUe/HAXPRm3SbxF/B7rXTh9iKSAs2vbVh9TPtNOp9o3C7WDvz2wrgRF8aAmeC1ZvQIw0+2z1YUH4vZxN4IyvI6cTKRMA2/xQU92OGS4esoDm2nkqJUeUs/S7nu5r730LQOthBPmevenEgNKigVgkGlm77xQNpfvcWkIcSB7bo09AhuUCWg1AYl9jC/bLiFmUYIGBpXujrHzkcrSj8VkPiYBA2A6uzmwEq6kX9M++PceJHs39vvHz1v3EfCQ0BmoUcLtMKH/T4c/kb+XZhfuuPB9qAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADaUlEQVR4nLVX0ZGjMAwVM2mAK4EtgZQAJZASQgmhhFwJUEIoAUqIS1hKWErg/GzLyMbk7uc0k4E1kp6eLMneC1nZ9C+j/yube2YA3aYnUd0dgLfIKBXUP+tsP/rjL7tgmBYlUVmWpJTyToqiMM9lWc4AvA6L1j3VWZT340Ar6F6NQp7nlJLUeryGwFnWdQ0DUvu73dMVWSkNKJThLDbivxlIskwFxH4g70lxajMGzfTCtv0oaru7TycbuLQnAWMwrEv7s6xx9Rr6cA4QsY/GsKoqmufZRI/v0lm8r5IlvvV9r1llnqUEzb5qVLGibtyN2BAC4FgkIALFT9o9mkEDDgFgwBSi24ZejU7zvKf2jBFnQz5lHfTPwbdILAEoIryNK31PK11v9FHk/gGMszP1i2lBAPI26G/BDDiAwlinmqbnSuNCSZF7zoCvh34qa8u+zsSPwfv9HlXpapwnhsQBEOwYTBKQeinQgyBFNJMHlumUgF6XKOhvWYxu3ad4bxlXeZIpO4jBYpHTxkkGkKZpvF9pFzCVzhE9K59NJ35PgO5+ogwFoJzCYRgOBtNrpmtth0L/mOnWlUEwq/pcODxeOcXmaEMRSYEDjh4GGI96XhnDukVhHVMsbeE87muZYs8UDGW0AOW0gF3xdGsumNvvXTd3RScFE2wcRz9GZYqDPT0cR07RsotFnjqJ4hKTCnNbptiDxhWGQkKE6N33+22OP8kU+9ipwut+EtnvB6YsmLlFqb2OjokGtPtK1BSDSW1w0phLwHHQijFoQHn4XGQqArY5HLW2gpVIWRFWKgeV50Wyh+MgoHM6kUw6l4qmaaJlHvbhLnoybpN4i/jvWO/C9CEyBcyubVt9TO1MO021vy/UDvvtgXUlKIoHNcFryeoVgJlun60pdiBuH38jKMPryMlEyjTwFh/05IZDhqunPLA5jRy10kPqWbp9L+3aS98y0Eo4Ya63/VRygqrKmb0ADJhm7s6LU8BcvsflTogD7Lk1bAQuKBPQagIS+8gHHDO4avu3uNyFp4xbMGFVujvGzi7KNKaq0zAfzWsnwKS0GrBHAM7/KkFz96v1VWP6nuzgtz1I7m687x8/axvcwAFHwlEGl5+4Zdjwpm8CL/v61/+rOgrnYPwe/wJQLCwC+Osk+vSwPa6dBUJ/AO+CKXlQpx6vAAAAAElFTkSuQmCC",
+    "price": 35000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 100,
+    "reqLUK": 35,
+    "reqJob": 2,
+    "reqLevelEquip": 33,
+    "tuc": 10,
+    "incINT": 4,
+    "incMMP": 5,
+    "incPDD": 32,
+    "incMDD": 16
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 4,
+      "min": 0,
+      "max": 11
+    },
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 38
+    },
+    "incPDD": {
+      "base": 32,
+      "min": 0,
+      "max": 65
+    },
+    "incMDD": {
+      "base": 16,
+      "min": 0,
+      "max": 49
+    }
+  }
+}

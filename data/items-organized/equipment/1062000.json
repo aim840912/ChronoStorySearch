@@ -1,0 +1,43 @@
+{
+  "id": 1062000,
+  "description": {
+    "id": 1062000,
+    "name": "Ice Jeans",
+    "description": "",
+    "chineseName": "破爛牛仔褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 16,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAdCAYAAABfeMd1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACmElEQVR4nKWWDZWjMBCAh/fOACshJyErASSABCqBSgAJh4RGwkZCI6GR0EjgZoaEEprS7O7wWiiE+eY30z/wLDP8XortjxQEun6AputBTeN6Jhn6Dowx4JwDbSzfk7LCe5rPk5rA4GcvSUjfNUAqylIgYIIOQSRKG1Y2jiMCezDWwjSeQQjJoBKPlCQh46QfXnUdn62z0ZoS9UkhoKo60FrxPYdHNqRpKrROsKJgmwQBkzXrGkEPCNRXoKTgMGqjU+rSEAz5qpxsw6iwEosXlI8g1l8KJDoncFGSkYaU3krSRx8CcMwxR9qYFSC8JfZFLt5ASqjrdo0w5YVgFsOl1QhV00egcut2LqQ9nfBlsdiHX9YsYSIASoHn2WI5U978EjbsW55cLxc4j496J8CrytkKQVNpSULItH9Dx+Ew6IVSKjRZ6OSi/vw73+5zhJZSYmwH7K3zvFn7BJmvt3uUxiUKx15M6PWktbfvOWxpT7yEarU2DSF1n1ggJJwf50O2a5dDCIkx9tWj4uOjmEXV8LZCBAKEYjiExFWC6cbtxOgoH5Hcvi5wOk/sFwGoYTMgQT343jjOB62hIiGhDTTBOAiXW1GQK1RdFF7ZdFSNa4VtIVySayKxGfueyvg9hFYsDZl+HnlSty0rD6KUfucIJ/+OxoHfsSXvyDEtguw7vWka7IETK8vxZJGMPhl8Eo3BvUqn58OR0La/38ciCFkkNotzhWeMVxzGRAoyf11v0TOXX1TL3PG6S39IHMvYX1xhcbg2PfI9IUoJ8K66KI7r7PHeu0x3wgQNoZJ+5j9Dki/m+7RMnJCXOPkE4XxsO4mHVOag2hu2QARDJG6eRqt5E67Hv4/FMvhJctawbauYITjl4DfS1sfv/wfDWTmcY83iTQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACu0lEQVR4nKWWjZGqMBCA15nXQK6EvBJyJWAJWAKWgCVICY8STAmXEkwJpgRTAm93SZBgAji3jMJAyLf/yx94lwF+L4fljRwImvYKddOC7rvpTHJtG7DWgvcejHV8T6kK7xk+97oHi7+cZEFtUwNtI4RESA8Nwki0sbxh13UIbcE6B313ASkVwwQeJcmCut68rGsaPjvvkjUC91RSQlU1YIzmex6Pj0B1XaGWkjeLOiqQ0Ds7rZH0gGBtBVpJdqmxBkqSBWEIJgDpiB7ijRxeUHyiuHApkeq9xEVFTh4kgra0J/0IwjHAmBlrJ4gM2riV2GyABByPp8njFCcCOnSd0R1UdZvAxNz8T0Cn8xk3kKOe+Ofs6DKCoBzwPDhMdYpjWMLKfWzR/XaDS/eqB4KsZVQUApfClAWRiv+uDbvGojVa61iIseIPx++/w+M5JHilFPr5irV3GWDRHZag4f54JqEdPbJuTY/W98YEHfMuzFsUJGayc3kQbfmNSUPC8fLBfZlyWgWRWOtKjw5fX4dBVjW3IKIQJCbIJijNHkwBbD3WJPFJ5PFzg/OFnguGUFHvBEUEhNpZjw+tocQhoaZb4Ky4zk842CuUdeRqVTeUpUnmzUGcrlNwsWDbllJ8G0QrxqItr0ksOp5ODIiitdkyiBPiiQpC6PSKO/k7MQEtO0Jd11gjZ95wjRYtGmVnHV1DYK3F3mbK86UkNDJyfS8BkWZy9sJe4RkVNo8jpgQafu6P5Lnfn2zj3Ar7i3AoHPFYf1Pmpa6b1dBnQiQBsCfryK/T/AqemI3tVT/GSRzdpsI3RB6UfXkCyU0YHzFOSULQhScQx2debTzo0mFX7bVsBEkGKWy41ugn3vqaue71VTNqCPNg5VtyASbEe5dgEE7LrfdLs4JVOR0332fXUfotsz/nIgH5hFxSfO76P1WmQU3DKv2GAAAAAElFTkSuQmCC",
+    "price": 2400,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 16,
+    "tuc": 7,
+    "incMMP": 3,
+    "incPDD": 13
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incMMP": {
+      "base": 3,
+      "min": 0,
+      "max": 11
+    },
+    "incPDD": {
+      "base": 13,
+      "min": 5,
+      "max": 21
+    }
+  }
+}

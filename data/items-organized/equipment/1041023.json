@@ -1,0 +1,43 @@
+{
+  "id": 1041023,
+  "description": {
+    "id": 1041023,
+    "name": "Sky Shark",
+    "description": "",
+    "chineseName": "天藍騎士甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAYAAACgoey0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADFUlEQVR4nKVWgZGjMAwUM98ALTglcCWQEpISSAmhBCghlJCUEEo4SgglPCX4vYLlFAdI5k8zOR+20WqltcwfeW8+ek421uL1VdsCVqdFUcj5fJav/VEnh76bwVKXSXUupO97GYZBnHNSliXXNwNYA/aXy0W6rpPD4SBt2+qky7PwN5tAnXTNTcEAnGWZ7q+qSp+bpvFb4EvAHizzPFcHMIxgVtaN2dbJ9VJpUNjLANI01VUEsMU+BvZMbYhYHd5uP6wAjv/BDAwJimcY3qvr+ok99oTfC3sLrOklCGqGl8GAAcCJXcc85wiOObxD9libAnoCf2KMTfghaoxgfb1e51oDnGB2ZFAAAFsEhczRDzWyxjjZ7/f+8XjoA0CRAQoHI8Dj0ZYCQACnLmBTql/qHNc42e12Ho6+v7/1ZTACA9aNouMzwIOI5voSHGvYtwS6BKw2SCqn00lrhJRRTKyjFZetOZnquy6TLVsExnlt2+DcpcoGIEhpPBIIAVJITPF45mEh4IUz/XKc8nAExhdDfUKdWU+rVHte7dwECgCPBqPZQ1mQtQj8hXGeBbV2PypkHW267YgUA9AF533IzmRJG5pHdQ86cb10b1StGwE6TOnSQEIGbpND28nsCFDzzktawT5m/cTYMh1MlCN4LX8fo9JR3zr06aw4zOnk/ul8K0C5/xpZSy+xbV6L3nsJZ1vyc6UgrKOqOYiHZRkmda81CxUdmGcHGbqbBkXgMbJhdAxHaCRUcFuXoDJ3KJuhPghwqY3Kwl3tslSmE6mMFTQ2HheMaPboZHAHBQMAweHk4pzbYKh2E4C41M3pJus51WQLBvf7XYHYMMAac1inmrGOEc0CI4zdy4JSN9ABRIYQ4BbAKoIiXAY0OEXk9ubBM0eC8urkkYpZK/OgAw1AxgCCssXWOGmOR08h4MVyPEJJcOjJcs3Yj3HxoyxgzQskkIq3vxwnnQAQQS2DOMXMCrVAH/zqsG1VPrwk4k3qjHftiiXx/+8++j75vFWLa7vAdiuY/waeWVtlfwLwW2AFmL6b1NYu+E/tH2CNiOaGgDTRAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADUElEQVR4nI1WjXWzMAxU3vsW4BvBHYGOQEZIR0hGCCPACGGEZIRkhDJCGKEegfqEjyrG0Oo96vhPp5POdv/J7zYm/d3GXDq/alvA6vR4PMr5fJb3/YcO+qGfwQpXSnM+yjAM4r0X55zUdc35zQDWgMfL5SJ938vhcJDH46GDrirD3zKCOum7m4IBuCxLXd80jfa7rhu3wHPAI1hWVaUOYGjBrG47s6yX66XRoLCWARRFobMIYIt9CjwytSFidXi7/bACOH6DGRgSFH0Y9rVt+8Iea8K3YG+BNb0EQc2wGQwYAJzYeYxzjOAYwx6yx1wM6AX8hTEW4UPUaMH6er3OtQY4wWzLoAAAtggKmaMfamSN8W6/34/P51M7AEUGKBy0AE9bWwoAAZy6gMVUL+qc1nj39vY2wtHn56duBiMwYN0oOvYBHkQ015fgmMO6HGgOWM1LIafTSWuElFFMrKMVl605mepeV8qWZYFxXh+P4NwVygYgSGnaEggBUkhM8XTmYSHgzJleHKcqHIFpY6hPqDPraZVqz6sdi6AAGHHBaPZQFmQtAV8wrsqg1v5HhayjTbdtkWIAuuB8CNmJtnuEy6O5B524QfpfVK0LAepjujSQkIFbdGhvMtsC1OxZpBXsU9YvjC1Tb6KcwFv5ek5KR33bcE+Xx8OcTq6P51sB6v37xFoGSW3zWRzHUcLZlurcKAjrqGoO4mFZfFT32mWhogPz8iC+v2lQBJ4i85NjOMJFQgU/2hpU5hvKZmgIAsxdo5J5q11ZSDyRylhBU+NxQYvLHjcZ3EHBAEBwOLk45zYYqt0EIK5wc7rJek412YLB/X5XIF4YYI0xzFPNmEeLywItjLeXBaVuoAOIDCHALYBVBMfwGNDgFJHblwd9tgTl08kjlbJW5kEHGoBMAQRli63xrvv4GCkEbKynI7QLDkeyXDPex3j4URaw5gMSSKXLF8dJBwBEUMsgTTGzQi3QB//rsNeq/PGRSBepM761K/Yf8ZnfyNiX7f8FmFbYNq1twjYX0T62LrbefFngIvOdAoMLWFtlR2vDVxnnOSPgED+fAhPImZbjQTPtmQujoDr5ycyaZYNZY7y2qZZ18xu/028BzHRY8ByjQvJM/Eb/Ze4buvGjIGSB11gAAAAASUVORK5CYII=",
+    "price": 8000,
+    "reqSTR": 80,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incPDD": 30,
+    "incSpeed": 7
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSpeed": {
+      "base": 7,
+      "min": 6,
+      "max": 8
+    },
+    "incPDD": {
+      "base": 30,
+      "min": 17,
+      "max": 43
+    }
+  }
+}

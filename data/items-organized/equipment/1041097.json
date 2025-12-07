@@ -1,0 +1,55 @@
+{
+  "id": 1041097,
+  "description": {
+    "id": 1041097,
+    "name": "Aqua Platina",
+    "description": "",
+    "chineseName": "藍暴風甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADOklEQVR4nL1W/9GbMAwVd1mAFdwR3BFgBDMCGQFGgBFghHgEPEI8QhmhHoFK8o9ghy9f/+hVdwlgZD3p+cnmBv/PDvq7xRu06jvnDxbnfuknmwGsmRkQpuUJ4/1n6ZyC9MMD9n2/DFTXEvTa8txh2kBKyePRn670c87xc6L0sf3OHNa5O6BW0DQSjJ5D8PoNUA0N/m9gMHsCU4330UZcJsmAQojMkbJp1IRBLPyNab3CNE1hvssqvASklwQU7wmQwKg6LAupWmAe74mWaLKZ0P8a4Ezped6tdI6UsjGFNVi7w/P5DO/95Hm1+Nrxu0+AEeypZqhMAFz6Du7r42JiDVIgIIJ0oz6N+yAOxymglCIwktOXgd35tiLAqvoBx/ELR4h/ZLYaUSxKMdikvGBGPaR7LAtaM8GjGfmxxXdS1gxK4Gc7gb0o9aCOpS2EF08EIyBSJ7E7I8iAIK1ZUoAOxzaJY7ZnUKL4eAY2kEICq0WDbJgMkEGFrA9wgqs7g5GKyZTUzObW3Bm0swvT29oBQecAKgAZey2KyHlOgJjdsTvJmeSkeFMNxKVj86ATfGUl0BugtQ6wQo5JdPKa9SggbH4ybUhQEinVMO4PmEQHDxkWB92ougwQmSnbKAM8m0WlSqRxXAVO3JlSbpdTAL+OjqQYAhc9iruORXGVoLfSabc6gRLQ1ItQIYLafOeJFZJK35IOvmWl18dTcFhIOLMPNg24T8qdCyE6aaFb7dfQq3TIqowVJtArwOjgnG/+dmxgW3a84v3dwXbSiBeM4170FYbNAD7vvxHwUP0UwHCKWYNYLPzscB25LRwD486KPpafybfVfdreqA93gyqXKiUfY4ZePE4qzReY+klIOus0yDDmqbGZSEjdtMlzonbPQD5VeKkqh8JRvWLQmARE4qxLYzEB3mlMqKg4O98OYFso8JWtP6aIVq6Wty/HiVBC5ZkZPyWasERl3Ew0lAXvebh+sRrK1Ae1qdqvqs4TPYvwoi0SpeyhK2vV6xsHn+mCB/uRwMJY5vfyPShWjHnuxbc+JIVh8x8xYBmMQLN3V36hgDNzZYUYaPzuU/AjQGnGmMvx7HiCf2cV9dzV+B/hBRrVEe36FAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADf0lEQVR4nL1W7ZGjMAwVM2mALcFXgq8EKMEpgZQAJUAJoYS4hLiEuISjhHUJnCR/xHZI9n6dZghgZD3p+cnOCf6f7fRzig9ozU/OHyzOfesnuxGsWRgQ5usDpsvv2jkFGcYbbNt2GKhtJei157njfAcpJY9Hf7rT5Zzj90Tp7f5dOKzLeYdWQddJMHoJwdsXQDV2+HsHg9kTmOq8jzbiMEkGFEIUjpRNp2YMYuFfTOsV5nkO811R4SEgfSSg+EyABEbVYVlI1RWW6ZJoiSa7Gf2PAXJK83mn2jlSysYUtmDtBo/HI3z3k5fV4mfH3z4BRrCHWqAxAfA6nOGy3g4mtiAFAiLIedLZuA/icJwCSikCIyV9BdiFHxsCbJpfsO9/cIT4R2abCcWiFIPNygtm0mN6xrKgNzPcuolfe/wmZcugBJ5bBvak1IM6lrYQXjwRjIBIncTugiAjgvTmmgKccewuccwODEoU74/ABlJIYK3okA1TADKokO0OTnB1ORipmExJzWzeuwuDnu2V6e3tiKBLABWAjD0XRZQ8J0DMbt+c5ExKUrypDuLSsXnQGd5ZDfQCaK0DrJBjEp28ZgMKCJufTBsSlERKNUzbDWZxhpsMi4NuVF0BiMzUbVQA5mZRqRJpnFaBEzemlNslC+DX0ZEUQ+CqR3HXsSiuGvRUO21WJ1ACmgcRKkRQW+48sUJS6UvSwbeu9Ph4Cg5XEs7ig80j7pNy40KITlroXvs19CodiypjhQn0CDA6OOebv586uF83vOPzxcE904gXjONe9BWGzQA+778RcFfDHMBwilmDWCz8PuM6cls4BsadFX0sv5Nvr4e0vVEfbgZVLlVKPsYMvbhnKi0XmPpJSDrrNMgw5qmxhUhI3bTJc6J2K0A+VXioKofCUYNi0JgEROKsS2MxAd5pTKioOjtfDmBbKfCZrT+miFaulrcvx4lQQvWZGf9KdGGJ6riFaCgL3vNw/WI1lKkPalO176ouE81FeNAWiVL20I216vkfB9/phgf7nsDCWOH39N0pVoyZ9+JLH5LCsPn3GLAK9oWg33Sn4uNY5dXGAnLm6gobvU71v7Y2Bc0CIUBP8eAHM8YcjhfHUwbShqA56Ct4aXkfTKiFo6PkKweMwUV2z4MfgXyyJSQRL1ZTvYZ50Lpzjzv59Vv9XFyn6uMGP1PXvgH/lGB6/guZIjB6xgqOVgAAAABJRU5ErkJggg==",
+    "price": 100000,
+    "reqSTR": 240,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 70,
+    "tuc": 7,
+    "incSTR": 2,
+    "incDEX": 4,
+    "incMMP": 10,
+    "incPDD": 75
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incDEX": {
+      "base": 4,
+      "min": 0,
+      "max": 8
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 45
+    },
+    "incPDD": {
+      "base": 75,
+      "min": 40,
+      "max": 110
+    }
+  }
+}

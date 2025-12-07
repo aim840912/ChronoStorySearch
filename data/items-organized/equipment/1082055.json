@@ -1,0 +1,43 @@
+{
+  "id": 1082055,
+  "description": {
+    "id": 1082055,
+    "name": "Blue Noel",
+    "description": "",
+    "chineseName": "藍神聖手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACnUlEQVR4nK2Ui5HjIAyG5ZlrQCmBlEAL3hLsEpISvCU4JdglhBLiEo4SlhJCCZwehpDHZnx3K4cxEKOPXxL8gp+x9GKuqQc/AUopXZ4pzUeqYf8DelBhqSG1qH9eR2h2nwX2LyABDOMIBhGMtRCjkT9iDGC4S2+26wVh9xEFthVUdj8SABlAHq21ChDfgUARZudhcQ7OYxB92baAEu+ezawAVsF9dhxWQFj7Mqbn8xRhOpCqCWB3hPQdqCgYagXUuM/mvReAwlYIh4zGSM8SDHias/i9opSuGvN5USUZgJUKNnVOY68qBExQNChA2gup3xC6Q+uokAZG3YWJfpJ4v4YKZKygXHgcgdaEXISvQc0uwKEDmM4jaNnSeoyUfA/OYckFq2FjKEMQjYBY+WSdQPYndflaES3wLtCh69dYfnEgaeECXcshidDPGvwI6hir/D1CXilK2J2l43nR3IurptnL3HlCaEmgobnLEGGhHFA1yzsXzLn1JVy11aAEBImcSIOS0Nh96aJ+Jx/0xygHkmEDhbajd0vjxWqOWuOLs1rNsyL2YnlnGgLJKxfQdKUSI+JpD5z7mZtT4NgprFbxCKlBCQ6/i5JMiXkxSiJIxqpw1lByyD6oDa2qqyBvQpedZavjjJU8IDndhYZUae4on30u2iq7U5NBVACTHLiagVW/TGQYRpnDdqBCfJLwBLlXtHrUC6QSFKt3mbwpN+0BcJnBv4FUoDUhYfVZX7uhguSk6dUgk4Eg7wBPihD0ntKj/QiqEka3AEYvkLgRkkFNdH1Cvv3sUFSVwqiLggAYVSLeZXUbSHYVg08QeipvqlXbSfxuRXELVVYX/HY1NagsimEhoNYqMpDuPdl9Kb+/0fEadAcUt96l7P7dd1vsD8epbqg8PHu8AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC6klEQVR4nK2Ui5GjMAyGxcw1oJTglMCVwJYAJWRLYEtgS4ASQgmhhHMJ6xLiEnx6YMchwCazq8TjB0YfvyT7D/yuhZW1Ip/8JjCEcHmkFW8hh/4GcKGqpIbUvD68dlAcPhL0J0ABtV0HBhFMWYL3Rh5478DwkHq26wXh8OYF+iowqekIhAwiz2VZKkgYjoAehtHCNI5w7pzojfYKMLAaNjODWBWPGeBmkJvHMqffx6eH/kQqe4DDO4TvgElRmyuixmM2a62AFDrDOJQ0R/pNzoCltRK/VxjCVXMyTKosgjBTxaYQmltVJR9AcDQoYPomisYLIT1VIxVey8i78NFfCsTOIQSZKzAWKkekMi4W7T6wODg41QD9uQMtd/KDnorEwjhiyhWrY2M4wxCNADkSfTkK7PipLvcV0ot2dHR4mznGXxxgcjBBXXGoPDSDJseDAjDL7xK2pzBgfZaB5ZeHRlwWxVHWzj1CRYINrV1aDxPliE6B9LGwzpVNYcxtDRiAYJ4TblAS7+svfbk5yIbm3cvBZmhLIa+pr2g+lZrDytjkLFe3rZC9lfylGhrJPxdcf6WSJPLnEbhGBm6jgrtaobmqJWwNGOD0LymLNB+d8BKHuJ0VDxpiDuUbtbZStRnswR4VRqfR/PLZLBdIXn2hKVXm+C7bPiZtmd2pWwKpUHo5uDkLs3FaiFD0soZVS4X7IOkBtq5w9qwXUybQZ31avEXCVCfAaQC7A1sBzglzs+/8mncZLCZVrxpZdATbA20AGan3oF4VS2CWULpV0FuB+SdhS2DhxyYg37Jlm1SmAsqLh0DoVTLeZf01oEKdDeAaOhZU42Utcb0Vzy2EUa2zz6tbA6aXvZsIrDWODKZ7VdSkcn1F1z7wDizu7RgiZsX4vsOV9dXtSyAu+jj+u+GUrdyBeViEIwJxo63Bt5yvrXNzcDtUAozOTdbnzreU7dlmgnOFW5v3qsPvjJctAaPs70J3d9M9+YEP+/8Do8iJ8BIE/bcAAAAASUVORK5CYII=",
+    "price": 35000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 108,
+    "reqLUK": 38,
+    "reqJob": 2,
+    "reqLevelEquip": 35,
+    "tuc": 5,
+    "incINT": 1,
+    "incPDD": 13
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 13,
+      "min": 0,
+      "max": 31
+    }
+  }
+}

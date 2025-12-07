@@ -1,0 +1,61 @@
+{
+  "id": 1050068,
+  "description": {
+    "id": 1050068,
+    "name": "Red Requiem",
+    "description": "",
+    "chineseName": "紅天上之衣"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 68,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAfCAYAAAAWRbZDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC30lEQVR4nJVWCZHrMAyVZz6BUHAhhMIWQgthCyGBkEDYQmggtBQKYU2hELJ6tuX4yvE10yaxZT89XfY/WpeZjos6olQDCyAd/9pvorchahoi3bhx83Hv7zvRmK7ZBK0y+/0hut8YAGAt0fVezk+3xaBv/j7daFeqYFo7IMibN5l/2eSTp/BkoDPr8DsTpo/Xv/BvMpbhKrsamFJnmgEweQA855n3Mcq+CxBkYL3r2QGGwYNg1vewkvRMLRv58XtMSlmQtnDDQmaPXQxm2ZgXUY+oG6ffRArBtbS4UPQMDwwcwAcDwjM1wJQZW9mPih4c8NG7S0fTwjIWxBJxvN68K7VLIE6YAjAFi6zMN87fMT/Kt0xasIFBe6qJgM1IgOtJ0eXL1RQCD6ajWozDnh0SBTCmp8E4oPc7UtDsSwarsYuYjVQTMGii9zVBvODKx1NZI7Uuc2QBg6WdL05fxB0bBSDJarz3zFTMenB3mV6u8KfcVk2FAMy6kF6K7pOAlDxlrXjMtrLWgcH1qSvd6tyVjhknRl/3YshIyQGwu8icTp9cY0h77jh9Mh4zs7XVNOnEheqC9SGOXwP/9bnLFJfDjHIwWZ0ATIHqs3PdXayP14sdJhp3z86DOVDEkJu2dZsvbAueMMPAeSzPr4xsJRtH6zoBbdNettlBZDKAVhIqFSPFO9IRqR8xtGRdS0svFAmMZdDUE+IQ2J7Y7v/jMk9AtXFFvdYXN8HW4iVJErNA1on+FrtVsN14RQroOtL56T/A5i76yOMVp76kewFu0JIGzv1+54jZEXSzxZguA+OjhRPFNePtIyZIQ/vimObp3vHaOsgqmEjswvggDa406caKTwO473rqV11ZgInr824xRc/4apeIN8DYUihZJhceiYd0+ZzVsilVJb6P4OKTs6u6MQea8vmN+6HM1diFOwhYxd19DQidfeuqjTno4HzM2dmTGkrHWml579/Sce0ssJv/AKCiJekxSMr4AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAYAAADjaQM7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC90lEQVR4nJVWC5HrMAyUZ45AKLgQQuEKoYVwhZBASCBcITQQrhQK4QzhCiFPa1uJ7Difp5k2jq14tfrZH7QuIx0Xc0SpBDaBNPyrv4hejqiqiGwV5t07jF93oj79ZhO0yOz3m+h+YwCA1UTX+3J9uM0GffH76Ua7UgSzNgBBXrzJ+MsmnyKFHwY6sw6PmTC9o/6Ff4PzDFfZlcCMOdMIgCEC4DmOvI8zfixAkI71rucAOE0eBPO+h5VkR6rZyHfcYzDGg9QLN8xk9thpMM/GPYlaRN0F/UopTK6l2YWi53ii4wA+GBCeKQGmzNjKtjf04ID30V1WLQtLLYgl4ni9RVfakECcMAvAFExZmW+cj7Hey7sserCOQVsqiYCNSIDrydDlM9QUAg+mvZmNw54NEgUwrqXOBaDXSylY9iWDldgpZj2VBAwqNV4TxAuufPwYb6S1yxyZwWBpE4szFnHDRgFIshrjlpmKWQ/uLsMzFP6Q22ppIQDzLqSnofsgIEue8q14zLeyOoDB9akrw9e5KwMzToy27MUpIyUHwO4iazZ9co0h7bnjtMm8ZuZrq6rShQuVBd9Pcfzs+K/NXWa4HEaUg8vqBGAGVH+a0N3Fev292OHUfHg2ESyAIobctL3bYmF78IQZJs798vzKyBaysfeuE9A67WWbHUQWJ9BCQqXipHh7OiLlI4bmrKtp7oUiE2OZdOWEOAS2J777f4fME1DrQlGv9cVNsLV4SZJoFsg60d9itwq2Gy+lgK4jnZ/+A2xs1EseL536ku4LcIeW1HHutztHzI6gm83GNBkYHy2cKKEZbx8xk1S0L4Fpnu4Nf1sGWQUT0S7UB+nkSpdubPg0gPuup3bVlQswcX3eLQb11Fe7RKIBzpfCkmVy4ZF4SJfPWc2bUlH0fQQXn5ydgCWhyoEGSsWtgOm1jB32f3/EwV9DaXdfA0Jn37pqYw06OB8Vuz+wAxgGB1vp8t6/pRPa2cRu9OcZBVKl+yhlc6U7z3vjPVn7B6nBKt2UNHMsAAAAAElFTkSuQmCC",
+    "price": 120000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 205,
+    "reqLUK": 70,
+    "reqJob": 2,
+    "reqLevelEquip": 68,
+    "tuc": 10,
+    "incINT": 2,
+    "incLUK": 5,
+    "incMMP": 30,
+    "incPDD": 60,
+    "incMDD": 30
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incLUK": {
+      "base": 5,
+      "min": 0,
+      "max": 12
+    },
+    "incMMP": {
+      "base": 30,
+      "min": 0,
+      "max": 98
+    },
+    "incPDD": {
+      "base": 60,
+      "min": 0,
+      "max": 128
+    },
+    "incMDD": {
+      "base": 30,
+      "min": 0,
+      "max": 98
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1402014,
+  "description": {
+    "id": 1402014,
+    "name": "Thermometer",
+    "description": "",
+    "chineseName": "溫度計"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 10,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACBUlEQVR4nL2XgZGCMBBF15lrgBawBFuQErQErwQpAUqQEqAEUsKlBFLCpYTc/kWip6AIgcx5oKO+9xOWrF+0/HA9r226k6UFXN040saS5Qfxn1IFaZW7TmJJgRvcMjlqX9ztD3LsJJYScFn9S0obOh9iMoao0lcJG7HEyUssISBwXXzTpSyFuYvb+JWycsSzON6RpvBLIHBMOeB5mlKWZVh6BnLy2JJmqjHafyCkwFNywJMkobKuGWpFAlciliS0QG9ywDVHVgrw9o22XQU/CyEE3OXHkcqPT8kBP19qXwFa39LzBYjD7CoQuOFvvU9Oee7hMUfHzHdwJK+Ko8Dxb46A1HmR/k8ucCaNgc8REDjq/Ck5kxTX+Rj4VAGZ9qHkn8CnCMjV3rvmE+CfCvTWudluye73k+CfCPTWOeCoZjMRPlbAJy8ZTnfJBZ6Vk+FjBWQAnj4mnwkfI+DOZeN3s9DwMQIURdjF2vOK4RQQ/k5A0mPw/YZssiW5jQeEvxOgPUeXlmoh+FsBDDSTgNsT39tt21xWmBFrWEL5XY0mjiEB31CinQEcSbs+AudX8Cz4K4F26rX1wNDgVwIONZ/z/R2N4wM0GHhIwDVNQ1VVSQNZtBdXcOiQgMDRyWC3K4piUfCjgIcrpVaDdwICR+o1k98LCBjpsdmsCe8ENtxCdz+hV4Vj/AFgt/qQk8YAdAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQklEQVR4nLWXgZWiMBCGx/e2Aa4ELMErQUrYLWGvBC0BSpASoARSwqUEUsJNCbmZCckqBkQIeSLIU77vTwgZP2D/ZiPnDv5gbwHb9Ra0QUDagF5K1aBVZb3EngI/cCRy5k6ezp+y9xJ7Cdiy+wdKG7h85mAMQKsHCcxI4jtI7CEgcF3/gVvTCPOUu/itQtnzpzw/gYb0QyBw7nKGV9crlGXJQ09ASp4jaKIao8MPUgo8JWd4URTQdB1BUST4TuQhSS0QTc5wTZGVYrj7IrpRCL2QQsDe/lpQ1ddTcoZfbl2YAVr/pKcbkHebZ4HADV31PjlUVYDnFJ173sM5eVt/CZzftgjIPK+vj8kFTqQl8C0CAud5/pScSIrm+RL4WgHp9qnk78DXCMjdHh3zFfB3BaLz3ByPgOfzKvg7AtF5znCezWYlfKlASN4QHO6SC7xsVsOXCkhj+HWcfCN8iYC9NH1YzVLDlwhAlvEq5o5bgkNC+CsBSc+NnjeAxRHkMZ4Q/koAzhRdSqqd4C8FuHExyXD8pmc7uuKy5R5BQxIqrGqwsk0JhIKSyxmGc1JfR/DxAN4EnxNwXa8xAFOD5wQsz/mKnu9cOI6gycBTArbve2jbVgrI2t1cY2i2goNLBATOlQyvdnVd87lfAzAfwd+RwLs9wkjGCwS4UsrDf9N2GmAxcExiKqkHm2EL3/vwcE59l7wAl3pL8ldSQUDAnJ4XG3DJPWj847mL4czxeHsQOFAJ7f9CH+CxywHiqbMJmTnhqPx/UTAUJ91sCOgAAAAASUVORK5CYII=",
+    "price": 80000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 10,
+    "tuc": 7,
+    "incMMP": 80,
+    "incPAD": 30,
+    "incPDD": 10,
+    "attack": 5,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Two-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 30,
+      "min": 29,
+      "max": 31
+    },
+    "incMMP": {
+      "base": 80,
+      "min": 75,
+      "max": 85
+    },
+    "incPDD": {
+      "base": 10,
+      "min": 5,
+      "max": 15
+    }
+  }
+}

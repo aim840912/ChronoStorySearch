@@ -1,0 +1,39 @@
+{
+  "id": 1482003,
+  "description": {
+    "id": 1482003,
+    "name": "Norman Grip",
+    "description": "",
+    "chineseName": "諾曼指虎"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByUlEQVR4nK2VgbGCMBBELzM2QAv8EmzBFqQEKcFfgpSgJZgWaIEWaCEl5GcjyxwxYUD/zjATwLuX27vIQd7l1dpk7ncrhXgfUo5WpB8qaTvnT6fT/LLve/8JSEM8CG585QgAOZ/PUte1jOMo3yipxIgbRH4a+TfAGwQ2EXA8HmUYBnHOxXdVVQms+8QyDTEB4K/Xa0yoASFxBOD5t5VEAC3SAK1PqlnYBQAua60GmGntWc1eECH+fr9HAKUBkwwSo197K1o2PtikQSWhGti5FQRIPB9N08wATFbaCwpW0ratoAMDn89nBEGAwZbwPP1LeevPFlCEYFyRWIOYBBZmqpr7kwFxQ0sIq0FCBAKEcYZta+IU6mFgpXpDgJiu63wSL+HZDLpcLvJ4PFI75jVsTe3jOQsu+UMaMGkeBigBSSbGcPeoigAq9z3hDhY9IqjQoyj9WYD4N1SEsEewDNYxqHCOFnbhwpoHughhNZAeBgSn1pUAtzAPv1Z8CVIcBgAI0t7nAFUNu5ysVVIchrSxOQCm2trX71btSgX7dI/WAdGquNldEAwDpgygtm0X8EkGPZiSx/vdlTAhLjRbVZQ9pNQeSG4YNn20/gDJ4WTwEfpslwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACE0lEQVR4nK2WgXGDMAxF5TsWoCPQEbICGSGMEEZIRygjJCOEEZoVWIEVGMH1d5AjC5srNP/OhwNYz/oShIKWsmJuEr93SYOsdWHHnugxlNR2k63rOlx8PB52L0yCLCjT+IzjIHQ6naiqKhrHkf4rlZGhaSD6bOitkAUIljHkcDjQMAw0TZO/VpYlwca99kmQcRB7uVx8UAlxwT0E59+RkYewXRIitTeryDpAMPq+lxAzzy1ntQfGIHu9Xj2EJSGzDIKjfnsyi5vBWSZhOSErWLsFBpB/fpqmCRB0nK4NC7ayhVtgBS++3+8eBgEIi9x5/fpZ1OuvMA9CKyO4hHEg2JnILtQrAeNNLUGcFYJiMWBodVi4Ju5O2SCcsXLCg0zXdZaU3LkAO5/PdLvdtDVhDou1lfwcOrf8ukIvmhUaBFIwSqwxnAWyY4hU6v+IdxLVjGGZmnnJvxRIvrKyIK4Z7IONvDDznEXWYWAuH/osiLOCZIMggLYxB/l2PfLVU1QjrWyDAMIwWYsUpKxg3fOetYyyDaKLnYKg4/v+dd+qdVqwUtZsHeJtCxveBEKDoPsAa9s22sAsg5rMgADZAgp9iqAYaACR2Ye4j+eRvxpUqqOcH13gH3X/cT7qd9Ukjn4wqMwMDe0oVq13rmAY+IwaCxG0EkcJ2PNFsoDLjHI35Xasr+l5NAp6pZeqC6lzKejaxsL8Fyu7gCRszHjIAAAAAElFTkSuQmCC",
+    "price": 10000,
+    "reqSTR": 45,
+    "reqDEX": 25,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incPAD": 30,
+    "attack": 8,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Knuckle"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 30,
+      "min": 29,
+      "max": 31
+    }
+  }
+}

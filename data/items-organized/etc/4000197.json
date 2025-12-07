@@ -1,0 +1,27 @@
+{
+  "id": 4000197,
+  "description": {
+    "id": 4000197,
+    "name": "Slate",
+    "description": "A slate that Stone Mask wears.",
+    "chineseName": "石板"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAbCAYAAADyBeakAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC1ElEQVR4nJ2WgbGrIBBFycxvwBZowZRgSjAlJCVgCVpCUsKjhFBCKCGWEErwc9HlIYIh72YyKq5wWHYX/rG/aSq0O5QY/QVier/fzJj5YTQjG8eRNXWzMkL76Xjcg/WA30JsAHLiFWe3nx/WNo23Jymt2PV8ngjka0+UAND7FAC8prVmFyHYfRgcSCmEd+swDIxz7jqra74a1N/bQZqmTQKQXVVVvr0EYrKyHcw9wpW0/lJK1zEUDjjPdmB1U3tbslP2G17X7l70PRu6bvoEkQWA2rZlSkk361gA1Eq7P8nYH7wYaw/CA2AJSICASxF4EM0qFGArXjHRilUbwFiwDCUQHkAptWpvL/PMCYauIazoBaZepF2IEIDbmSGYQiAPYwNRarmG7SyImD0BD2AZ6iWgyXs2HnDZzw7MpmeCHY8n3/Z8PtwE0Zm8S9+egiUIAGit/H2cNjmI6WWLEnX8ej39izHowEW/rQWw6/stbNcNfmB8RdEQLFtZscIgY0RO6UaRDhtt22JYeHLUs+2oNsUtW7ZdUbpchHM1Ipx0Op1YrMfj4e8BdJfSAcWSSrI9hRBzSgazBshgXar0Ojv4kmYpsBQEVUdj+94m6C/EBgCi6K9VvUq/Xxi+DDI/63HtciwFvEAQuFJGpCCyrqTgRKSH76/n68YWhWzoItjU1CMBIumFEMANEAHebjeXjv472l0Xb6A2GBQxvq2oKQibWkf30LaX9SSWwNx4yLAkwPpj9n3FnAtMOorTy6Q3bZSyPg5QHxCMS0yk4oEgDvaQMbmBEpsLqps9BflHIXp3xcEkhA43sjAQzeKtHABB7CsEM9jQuuQ77B+pHfUeVcc9iIMNwqmx54NcMJsYKAGbA2EfTt0bT4Q13vWNdbURvwsXiEByNeETxMEevZJHdJygclolATxlClMiA+FAUkYyAwe1yxLGQ5d6IQWRU7azJOBc5IoAoP/a8qmzkuiNEgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAeCAYAAACiyHcXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADGUlEQVR4nJ2WgbWrIAyG6TlvAVdgBTuCHcGO0I6AI+gI7QjXEcoIZYQ6QhnBx4+GCwjU3vR4VKTJl5AE/rG/ybxz3mHPpL9AzO/3m2m9vEx6YtM0saZugkkYPx2PJVgH+C3EBiAnvOLs9vPD2qZx80mkkux6Ps8E8nUk9gDQ9xQAoqaUYhch2H0YLMheCBfWYRgY59wqq2seGHXPxkjTtEkAmldVlRvfAzEbMQoWjQglrf84jlYxxDe4eDuwuqndXJonzX94Xdtn0fds6Lr5E0QWANK2LZNytF7HAkAllb1ItPkhirGUIBwAloAEEAgpEg9CXvkC2IpXTLQiGAMY85ZhD4QDkFIG4+1l8Zxg6O7Dil7A9V1ShPABuPEMyeQDORiTiKMaQ9jOgIglEogAlqFeE5qiZ/IBt3J1wJueCXY8ntzY8/mwDkLZeB/deAqWIACglHTPcdnkIOaXaUqk+PV6ug+Tp8Bmv+kFmNf3W9iuG5xh/IuywVu2fc0KRqaInMqNMh1zlBmLYRHJSS1zJ7lpbtm2bZvS5SJsqJHhJKfTicXyeDzcM4Du42iBYhnlyEriQywl6XkNkMGEVKqwOvhaZimwFAR1R210bwv0F2IDAKHsr2UdlN8vDF+NLO9qCkOOpUAUCAJ3qogURDaUlJzIdP/79XzdzEUjG7oINuV6JIBIRsEHsAYiwNvtZsvR/Y921zUa6A0aTYxvO2oKwpTW0b607SV0Yk3MTYQ0SwKEf2bfd8ylwaSzOL1MajNGJevyAP0BybjmRCofCOJgDhmzNZTYXNDdzCnIvQrR2zsOJj60v5H5iajXaOUACKIsPpjGhtYlv2H/SO2o96g7liAOJgnnxpwPcsmsY6AEbA6EfTh1byLh93irG+tqMr4I5wmB5HrCJ4iDOXolj+g4QeUkKAJEalvqxJ+tlTgSMbVVYGr+nVPQrksYW1ijgL5ee5+1d2UhfOP+dWa/HgWrZQAFi2Vpct0KQELGp/VyICkIMsy9u288To979K4T84ptqxSJnIKSQl14jq8iBIUsCHsGNAVUgk468B+Kd8W/Swd4dgAAAABJRU5ErkJggg==",
+    "slotMax": 200,
+    "price": 14,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

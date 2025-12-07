@@ -1,0 +1,45 @@
+{
+  "id": 1302028,
+  "description": {
+    "id": 1302028,
+    "name": "Light Purple Umbrella",
+    "description": "",
+    "chineseName": "紫色雨傘"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAeCAYAAACiyHcXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACIElEQVR4nMXWj1WDMBAG8Mt7LsAKYQQcoY5gVnCEdgQ7go4AI9gRmhG4EWSEeHdJ+BNBKNB679kKvHq/fElqnuCx5ZJrxS97ImIDNfXc1QBouxu5kc+ovRCurmvI83zyeQRQY6m69D8M2S0Ja9shyuj+AMgzbs4Irj0QzlHb5vIKR6ihKC0YYyLElWVJADMApLUVIQBAQoQgGvPaPuMXRARzGgdE2PYkMCy2BuD4peH8gvBB/Q81yhRRKqOA/r0tCEkBz/Si6e8VCjLNkLBJUBMgnwIMai3CfV9ZoCQBLl349+ygwBoP4TVyhnxu625bEzINlACggybzAK7iXcElQHhq3mbCWIPwKXAC6Bvpo2/SXBxNiWrXyEFruf9FkBdUk4ncimgBcTdkBf9OzTNq/knXYXNoSiNOEZClrPyXQm/7rkZIMSCLDTIQFIZtyqAUoKSliR/flISk0FQ89wmAEmjQNxdk5cBWHpqf1GjjNYh2GkYB1l9zcy5emIp3ZwWzgFsQw0oAcWriu8qXNb8F0e2GLNyZAITobwIsQQwB4YupD4iIJXO/FuGrFz9XH7B29EsRXQowXIAJYHXzOcRvAHbRP1dq8crfgmirBeh9Rz+HaFOw/jAigL1H/xeiA7wl8d+h+RjCfdOBpLn4KWBAaH5XQIoI/4AGgLs2TxGufncCeNToU4S7Xq9gsaJT8eSh9O4Ifyw3/wOICDV22nlk/QATGBbG0s9elQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAfCAYAAABplKSyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACXElEQVR4nL2Wj3WkIBDGh/euAa4ELMErYVNCaCElbErIlnBXgpaQLWEtQUoIJXAzAyiy/tdk3kNXWP1+fMMov+Bnw2XXgg5nQkQBMTXuWgDT9B2F5nvEWRCubVsoimJyPAKgMEdb+UYgpznRNN0UeXYzADxG4gRBcQaEcyhr769whRbKqgGtdQRxVVUhgB4A5HEUggHAIEQwwurXbowOxhjQ7+MAEey4EyYsNgtw/VRwezHwF/UvreEUoSujAGnfEQh2wdzwoPB5pQCpCCQUiVEIUEwBDGIvhPt6EIFgByhU6c/yIqDRHoTWyA2KpdI9tiY4DegAGAdWegCK8kPAPYBQat4WzNgD4V0gB4wXUlcvYu8OUyK6NXJRivs/EeTFiElHtkJ0ALEaZEm/UVyi+D+8DsWh0I2YIkCWqvYvhaR8d0NwEICMAhIYyoQyJaAcQLCkjrcfcoJdsDXlPgNAB6zx4gxZO2hqD1q8i1HhPRBdGkYBGn9N4hS0MAVVZw2LAFsghpEBxNTEsyjWiW+B6KtBhp4JgGD9JoA1EEOA8GJKASLEmtzvhfCR2E+RAuyd/VqI3gUYLsAMYLf4EsQzgOmt/1OL1Sv/CEQXHYA6d/ZLEJ0Ljd+MMMDZs5+D6AHeMvu/QXwMwn3hhsTefQoIIIh/K0AOET5AA4AxcQnbw66BcO2HY4Bk9r+DYCoqs/MWAJu0Jwj3eDygMTXuinUqrhKIMfExkKkZR3ET2uB/7ARvy/UogMoET09FhBDJbie3P3/A3APtzO+8PUEA9AswWrZke/I5m4W0M2Nd/AdX8zG6wdsQAQAAAABJRU5ErkJggg==",
+    "price": 1,
+    "reqSTR": 6,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incPAD": 41,
+    "incMAD": 39,
+    "attack": 1,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 41,
+      "min": 40,
+      "max": 42
+    },
+    "incMAD": {
+      "base": 39,
+      "min": 38,
+      "max": 40
+    }
+  }
+}

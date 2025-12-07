@@ -1,0 +1,61 @@
+{
+  "id": 1072157,
+  "description": {
+    "id": 1072157,
+    "name": "Blue Lapiz Sandals",
+    "description": "",
+    "chineseName": "藍水晶涼鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB3ElEQVR4nKWU73mDIBDGz+fJAqzgCmYEM4KOgCPoCDpCGCGMEEcoI5QRygj07hRKSK0xvS/CCT/ee/lzgvfCZ/0iH/AO2NfyCkIsnaqsYOjOPocfBTN0Vl1MVNePXwceVixAhCYp9KUo/w32I6rDsiMUA4oiOhB8L46AU0gRIMYA1HWNfovouVKa/X4FzEpz6O32BcNwYWgI54D7zjm/B/ZNf30onxq0kFJthPLHEdjGiVtgBtSyBz11WQ5PhR6eoBblGmOhLAV+3a9g9nNSBkqcdb+O0HYKJ5QwG40EvQFdxpMdm4oJWtHK1kWoxfZtHNHXbhuKKWvZjqfNi2oJ2ssKwYahRGm7CRepsTmvUMvliwyaK/b3++ePWpyQqh37Bi7dwG3ZSNDoc4CuwAhNwb6RN5j04h+Ox7IlXFoV1RKUbhlBhokUW76Dqco0omKL5dlZxx9na+P1ZbWtQTzZ0yB4gr0I4MJo5SsskeC863gC2Df09II+rwefoVg8PRprNc9qc4/BmZl3N71NwqFSUTPUcfmWrfkLmoJ938t18nIQw3kEzhlWv0Bfi1OAsrpMbQijdJLfVxsV44sEEjclD8o/xmvQAC7oNXqGwMNtctGbfWhUHOD5T3MQlsY3mMMq8MV64D4AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACJUlEQVR4nK2UjXGEIBCF15k0QEqwBVOClqAlaAlagpZwlHCUcJYQSgglhBLI7iqc4s/9THaGERjZj/cW+ID3w0Xj5Oznd0Eury8gxDTI0gy65sudwd4BMWSUTZjILt8PF72lSIDwXVLgUpH+O8j1uHu0KUAwIEmCY75uGwtfAS2TJj6p1gB5nmO9RKiZlGpTr2dBrCSGXK+/0HUFQ3xYCzy21q5gz4Bc2V5WdlGHwFJWAcIfSyCzm+QMxAnzugU1NNEcnjrVbSAG5WhtIE0Ffu1TIK7HIDWkmOV26aFqJCZIYdQKM6oDyPS/tduEh4oIktHOjA0Qg/1r32NdmmMIThnD9j08DEENQdo6Q5BmCGWtmgGhOXbHGWLYLnEC2QO52+3nrgYTLNX0bQlF03G/LmtQWCcPmQG7kBjkyvoKg5r8x/VoUw1FJYMagtArQEm7gRQZfiOOVBwqMmiHGVUYfxkTnhtWU2nEkZ0lggZ4JZagRCvpMrSEYHyq8ISx71iTAus0X0SGoFn06M1qz9VsFFFYPfLpWd52YVGJyBli2S6yyj4NiUGubes52XQRwn3gOc3qJsjr4UEM4d1HanxoqRbzQc0ns/djdW2DInxxocYix0Hz8foZUmDLHkCsbx70iXb9bpPC6rbb+9tCRy7f23kE46XUCCTmVmCiW/y3vieXi+kju2JFIbwiv7Ba9B8lixPG/VX7gLu8ZeI9iIB9m+zJOPT/AHj0RBsN+DDVAAAAAElFTkSuQmCC",
+    "price": 80000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 218,
+    "reqLUK": 73,
+    "reqJob": 2,
+    "reqLevelEquip": 70,
+    "tuc": 5,
+    "incINT": 1,
+    "incLUK": 3,
+    "incMAD": 1,
+    "incPDD": 27,
+    "incMDD": 13
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incMAD": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 27,
+      "min": 0,
+      "max": 62
+    },
+    "incMDD": {
+      "base": 13,
+      "min": 0,
+      "max": 48
+    }
+  }
+}

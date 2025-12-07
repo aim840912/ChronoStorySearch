@@ -1,0 +1,43 @@
+{
+  "id": 1002047,
+  "description": {
+    "id": 1002047,
+    "name": "Great Red Helmet",
+    "description": "",
+    "chineseName": "紅色戰鬥頭盔"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAYAAADjaQM7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADIklEQVR4nJ1Wi5HjMAjFM2lALehK8JbgKyFbQq6EpISkhHMJ6xLiEk4tqAVK8AEWMnIUJbvMeCzrw+MBAh+gLgu0pYMfSA1sWb6+AGkwTxPMc4CACINzMhdpPANaY94GrjIL0wwxRgj0sDh6UBfp4wReZhwZcItRgV+C1sC6j2lc7sNRlCGy0owjMCs4rwGcvZf3iALaBDy0FntSFEOQMQo3g4rrnEtz597DLbQBn4F1v+dpuR+P4IlWzIohQ+Y3bodeATaZsUZ2JTmKkmRDicMAMzNGt7Gk+J68a6prgqExW9xFIDwX5hmyS9dFMsrDSIAcw5Q0D+zazFQlKfKnAcZxLGlvO0R838OUMrgmTbDjv3vSi/Dr46NiBhZBc74HP3joaTyN4wO7Jpi4y5VJsAmCJ5e5dNl5T4wB+n6Que8wWy9qPlSieXLrGieXtnFEESKlUgjzE+MqYGTtcj1fKd1jqcxtVaPvexkjWjN4D3/xvsgBpAwNhSv3YMvf63UtUzvzXMq4FdiBjdm6VZH1jkSJoQW0YMv5fJZCa1gWY42RqEQ0NRPzO1M1BWfPjAr9lyjiAsxVA+mhjJJ05jOn0ymDILlYXZjvoszjRi5JTzU2UDVidpmZT1nlks+k4Bom1kjEog8Ulz+LuPuRmbDKhxhoDZCJT0PpE8kmmvOZWa4HCmCAtNVYweS2F2hrCCjpxstlOagyzT4HhtX+/A7UHDOxq+G6jRm3f1RQukIu7lzILChx5LeA3tLFU5+LETMC2uyQjkAXPW6ePOhy4ZIUu/w2rtuzsuyqtMw5ARuodbC10rvS3ZI7pVrXCfCJHbPS3wV+x1qllzA4yWjWz94TsNvtVuyL38i6ggGB3imz/1xu1XUBu1LluBhAuXP722mVws8kx8yWptWlPCqzTy+9232/a4SpjdsxzTSu7tqvINVCK7WrUazuSkireXYEuigoGNB3RGHmaZQHbG180lylNSioAiucpxaSFBUd4Zmeqhufbd4Dpx9YXlse0v/RiwLWfX5+SjHWWL2QrjX3m3QxY5a9x5WZAL5Q+K50kbvzRjTr+g/J36Z/kxl1BQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAhCAYAAAAoNdCeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADU0lEQVR4nJ1Wi5HiMAwVMzRgSvCWkC0hVwKUwJYQSoASLiWQEkgJlxLOJZxKyEmK5cjGZD+aCTH+6OlJspQ91GWGbdnBD6QGNs/3OyANxmGAcZxgQoTWOZkLNB4BrTFfBq4ym4YRQggw0cPi6EFdpD9n8DLjyIBbCAr8KWgNbPc+9POjPYoyRFaacARmAec1gM57efcooJuA+63FhhSFaZIxCjeDisuci3Nd4+E2bQO+Atv9Gof5cTyCJ1ohKYYEmd64HvoMcJMZa2RXkqMoSVaU0LYwMmN0K0uK79m7TXWbYGjMFncRCM9N4wjJpcsiGeWhJ0COYUyaJ3bbzFQlKfLnFvq+z2mvO0R808AQM7gmm2DHP4+oF+Ht/b1iBmZBc74B33poaDz0/RO7TTBxl8uTYBUETy5z8bLznhAmaJpW5r7DbLmo6VCO5smtS5xc3MYRRQiUStM0vjCuAkbWztfuSukecmVurRpN08gY0ZrBe/gf7wscQMrQKXNlCTb/vl6XMlWY52LGLcAObMyWrYqsdyRIDC2gBZu7rpNCa1hmY42RqEQ0NRPTO1E1BadkRoX+Loq4AHPVQHoooySd+cz5fE4gSC5WF6a7KPO4kovSUI2dqBoxu8TMx6xy0WdScA0TayRi1geyy59E3P3MTFilQwy0BMjEZ0PpC0kmmvOJWaoHCmCAtNVYwei2T9CWEFDS9ZfLvFdlmn0ODKvyfAFqjpnY1XDdyozbPyooXSEXChcyC0oc+Sygt3Tx2OdCwISANjukI9BFD6sn97qcuSTGLr2N60pWll2VljknYC21DrZWele8W3KnVOsyAT6yY1b6ucDvUKv0EgYnGc362XsCdrvdsn3hG1mXMSDQB2X2x+VWXRewK1WOiwGUO1feTqsUfiYpZrY0LS7lUZ59euld8f+rRpjauB7TTOPqrv0KYi20Ursa2WpRQraa545AZwUFA/oVUZhx6OUBWxsrzZX9+sYDAv2rkwyscJ5aSFSUdYSKHPin6kbVayYvOknAVx3HD1jOrO4p/XMvSkdlsN3pdJJirLEyG9x6NIn9xNK1lMq/TqeOGbOUHldmBwL8Z+Y/CoVbgcJifKIPnzusRN/iPO7NpkPBoBaAvJG9NuZQW/sPlvayLn2gqZcAAAAASUVORK5CYII=",
+    "price": 45000,
+    "reqSTR": 90,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incMHP": 10,
+    "incPDD": 38
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incMHP": {
+      "base": 10,
+      "min": 0,
+      "max": 28
+    },
+    "incPDD": {
+      "base": 38,
+      "min": 20,
+      "max": 56
+    }
+  }
+}

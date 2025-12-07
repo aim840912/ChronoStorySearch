@@ -1,0 +1,49 @@
+{
+  "id": 1072306,
+  "description": {
+    "id": 1072306,
+    "name": "Black Basile Boots",
+    "description": "",
+    "chineseName": "黑色巴西里靴"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAdCAYAAACwuqxLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACIUlEQVR4nJ1WDdGDMAwtd58BLGCBScACFmaBSWASNgnDAhJWC7VQCV1fIV0aSmFfdhxcur6XvKQ/f+q8uYyvOpp0lsBdr1dV13V0aK3VPM/uiOQMQQBvmkYZY9SvdkTghmEIkSNiImjbNrzht9YWsygRuMfjAYAAjAffJNPZbPYIAjgBEXjOjrIoSkSyULQ8g7OWI3Cv1wsdkkRPGXRdl8hDpHtZZDMgQNKfjIqbs7XLNiSSIEY/TVN0IkIAoF0xFrNpazX0nbpNkFKpvu8xLyHZZAAgRAopKH3yyVp0SKheiO7ahJpJEklQXS4X936/IyCBYjJJRvJN2muvjJr1t8Mwjkyfz2cgydbAD0a9OSAv9kJqw8NN1i1HUIEdqcrFJAl4y3I/vkmqvXVQYRB1oCwkiFwPm/Wx/re40DgwCr32+yZy8if463t3q6Do/2PgRzurvSLDqFWpe2TxStlwK0q0RpEUN7cXcXkaPz7POkSfIwjHIs4APlF2T86WOnlw/QWXBG4cxxghB5c+XlQiXw4lk4BzggiObqGJuV2Tg0ZwFTsuu5s6kgTgdPYCjOtNUf8im5QoiZi++VrYAzfL9/6JxnWUsmzA2PGJohpTziIQoLW0OLm4SaLWy2ixj5roK94qqtv97sYBdx/soDYsc7sSojNQihqlRB38T6d706mLlyfxO6hfuW3bLMByg7OL1iLDn66O1eSvgtN8NOUYlNsHLyb0SPJImI4AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAeCAYAAADZ7LXbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACRElEQVR4nJ1WgXHDIAzEd13AHcEZwRnBHcErZAVnhGSEZIR4BUYII5QRygjUjyMqZIydqpcrEaDXvwTkQ+03n/FVezbuBfGn00nVdR0dxhiltfZ7gPaABICmaZS1Vv3HtkD8MAyBATInkLZtw3/4nXObbEog/na7IUgIjg/GJNk7rNZAAgAFI4Cc7WFTlIskoqw5k3csB+Ifjwc6J2FBTLquS6Qi4BKbLBMKSvUgo4Ln7NV9WSAJElmM4xidyBRB0MqYi6zaWg19p84jZFWq73vsWwAtmCAYMoYsJAX5ZG06EKtnsKuxoYY5IAlSHY9H/3w+Y1AKjAAkH0k5mqkWyipt/joP82B8v98jULYm04KoPw/KG2AGduHDTdZxDaRCFqAtF0sQ3s7cjzGXbe2cVFiAuhAbGUiel8X5YWuLh5EHR/Ff52HBgPwJBhuvXivE4j+GHNDqqlR4GLUxdZUsaImVtKJcr2ySgueCcKmaaV5rE1nkQMITizeEb5ZdlbO5bhOASQEkiL9cLjFTDiB9vNCUwPyw2QUAB4kA6CLanLtteeAIoGInrt7CnuQBAL3lCMj1p+zfkTAnV5I5jflZWQOw87j8MnJdpUSLgOwpRqGt3WYTQNB2RryA3CRYO0nqcP/a6DsgDN/CxwCpztervwz4bdWGeaxwL1B0DEpTo7yoy/Rn0rvsS4VXJTH67iKTyT7P1/tPP53wtm3m4PJSdLP2gumXCJpjkhT+MGr9PWq1ZcfCnMuM3YdwfK5srsW6LUvW/QKq6f74R8S9HgAAAABJRU5ErkJggg==",
+    "price": 65000,
+    "reqSTR": 60,
+    "reqDEX": 60,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 60,
+    "tuc": 5,
+    "incSTR": 1,
+    "incDEX": 3,
+    "incPDD": 34
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 34,
+      "min": 4,
+      "max": 64
+    }
+  }
+}

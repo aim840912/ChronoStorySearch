@@ -1,0 +1,39 @@
+{
+  "id": 1302004,
+  "description": {
+    "id": 1302004,
+    "name": "Cutlus",
+    "description": "",
+    "chineseName": "彎刀"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABM0lEQVR4nL3V8ZWCMAwG8OQ9J9ER2hFwhGMEGAFH0BGOEWAEGEFWcJVIStvX4nEqhH7/lKfILwkUD5A+ZFdMjRON9GMAOGmg5J2XZQFVUZvjlDh1XQdt23LXSXEPh0k+9ro2I0cuKAXuuw5gE2mcwovDwrjteaI48T5CRLePIYTDcf9ex6f+ssM9d/u473k9gzrGXzsY9nnJEBwVQjb7lNF5JHHkkZtXmC0gPwNktgpeeRqua2ncpL4hFNV03HQQFRDCu+Aqa8YC8qgAI2IMS+N0vzcw9IMvwHbqgvMfSOEeLqrpydL6b1Aaf4FxmvG/sAS+Gt6Kb4K34JvhtbgIvAYXg7/FReFPcfMXKQ2/wz3KkYaX8BeUIw3P8U9QMdjhEarUT7TugYa4uajWOS2cI466PAHg77iDLoFupwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABdElEQVR4nL3Wi5GCMBAA0M3MNcCVoCWEErCEowQoAUs4S5ASoAQoQVqwBUrIsSHJJQEUYcnOZIKCebvLzy8IH0LNLDQuxEA/O4BzDCJ45XmeQZGVcjskLpqmgbquseqguIHtCN72spQtZ5hQCNxUbcEyqHFhLw4L7VbHkeIC7yPGmL6PwYbtdt9/h6v+esA51/dx2+J8AX5yd2sYjnnICDhxBon3LaJ+UOIMWy4fYSqB9AKQqCxwxm7oqqlxGeWNQVaM21UDTgI2fAjOk2pIIHUSkCJzYWpcPB4VdG1nElCV6mD+D6hwA2fFeGXF8TxIjU9gNvb4JUyBb4b34rvgPfhueCtOAm/ByeBPcVJ4LS5fkdTwO9ygGDPw9zCilU6/Fp+gGB48vC6Afwj31pjga1CMq4Lnqp6t0EKfavQad1DOf5zZQm8KdP+bvI+lhCQuV4/jVCwck8N/lYsLefv8bX8YXIcuMQK3pXPtjRYS6V98nhz/B4Cp0ZhhaOoQAAAAAElFTkSuQmCC",
+    "price": 40000,
+    "reqSTR": 110,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incPAD": 52,
+    "attack": 1,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 52,
+      "min": 50,
+      "max": 54
+    }
+  }
+}

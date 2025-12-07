@@ -1,0 +1,51 @@
+{
+  "id": 1472020,
+  "description": {
+    "id": 1472020,
+    "name": "Sapphire Slain",
+    "description": "",
+    "chineseName": "藍寶手甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACqklEQVR4nJ2WgbGkIAyGYWYbsAUtwVeCV8Jawl4J1rAtWMLagiUcJSwtWAKXBIKAgPr+mR1d0XxJSICHOJcpPJfilzqDmn4yQr2lGIYhGljXteTMqVM1aARs2zYafL1edNVa03XbtmhcKRU6FTlQjbQHjnL3aDwFo/hZCG+aJspMkBV5Ck3FhkM4PkMQREb/06zgeN/39A7cI1xWocoyvPcpnMcQmJuCUPg9jiO4CtXrEhnPOnYBmH5fg8pNjabpP2B4JKMcLRvAiNOqjpx2qU91Oqft8BRuuiIYC4rE35cqOgWfQSW0jGFDbk6E8c0QFaWQcqYrRl8CXoHuFi3YmA8aPwyRI+QMlIEcV6rYku60DIUlR0EGuRqdM+CITfO3tb8O5iQtLpd2eWvtZRgqXRS4FztM/8d+JEedvndpcTDt8ysa+HCDj9TSHV4I54+dQdg3CDIElqA+MgZa43AdjJieduztWnj+G6/rCMVf5zKQAlMowbDs53kmIGqjXmwPMF6tcFMIhRtEosMDhpq0x/Q6+pcWPUE/7tXYFFYfdBAXk02DZ9siSvKRhg1vLaj9Vr/hx8Apeo0dQOCmlQW2sEqpc6jMbcoYPTqzqk30r3/iA7yu+/EO7ODJgR1wV3YjfxRe8OlOhYCmtanGKaA9FzJh5dKuV1FTtnrD+aW1tekpyp8/ywFIG7ab7lVpcUUp1HBKUaXtrIF+DRcKL6wDjNIW0fUzUgjk0wCKo6QIg3UVMxEtEJWqzUEN740hkPp2sffURlTVNkre1jIZqR5PfZ+G3oYRooYeAOodt1Eh9eLCefhRA+Jzv/s7IKc2daziRBZajJDHKgCMytwBMlRmDsaGt6pQZ4evO1AGZeWiJEfwxp1fq99chaYKo/+18bvQHEy6E3o6Vnpe1H+FLrqevT7R0wAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC4UlEQVR4nJ2WgZGsIAxAYWYbsAUtwS3BK2EtYX8J/ha2BUtYS/iWcJSwtEAJfAIEQwT1LjPMsiC8JCSEmzgXWxmX4pdyBrX9ZIV6STEMQzaxrmtNmVOljqAZsG3bbPL5fPpfrbX/NcZk80opqlSmwKGlveOo2IfNORgExyi8aZrMM8Qr8hTKBTemcBgDkLPM/+degfm+7/03rg9weQhVgZG053CcA2DpCKjAepgH8CFUr0u2eVGxC0C+/ggqjRpt07/dxqPfFK3FDcBiHtWZ0tH1XE7PtB0eIh5XBkNxQZL6tYjm4DOodCljcaN4JsKmZMiCUkg5+1+wvga8At12DGBr37D5bsor4pVxYSDH1UdsTX6SMt4sOQq/IUZjVMYpEtz8aUPr3Jnw4Ipulz+6exEGwi8FzMUO3P8Oi+So+XeXLgfbPj6icQuNW6SWbvcBPT9UBmAfYiQF1qDJMgSGzd3vYMX0CHOvmMLzn/xeByi0LnqAAznUwyDs53n2QBDjc7HdwfC2gqJABQoEk90AQi3PMb2O6aNFTy4ft2hsKrcPKAiXidFOM7OImiRLacKHHdTW1S/XEDhln6ECADRaBWDrbil1DpWlogzWgzKrMqJ/fou343XdPSmwgacIjsBNioX8VvkguZsLAJo2uBqOwNdc54kg0e16FUdSjF56vv5ubXpv5f1r2QF9wY7HvSotrgiHWnQpSK2cNS5f6UWRBOIArAxBdP2NRIH4GgBBK72F5F4FT2QXxEHUlqAWayMF+rxdQt+nkY/qYCWWtYJHDp+nKU+pttRCkKF3APXK06jienHhPXw7AsJ4qv4RiK7lihEl2EGLnXY3uoBvhHMHgC/X/jGraSE15Bebh0r2MIZS8sFSRaXw+Co9kHj1RpiOzaQbSQS3QMt2jlZC9k9oZYzwWexdKdhY8eB5yuCC0cHesf9XlKV2E9CzMIWWQdEFCO6Y1ndn4Tf2K+O0yptKX/wHXT/RnTosVxgAAAAASUVORK5CYII=",
+    "price": 105000,
+    "reqSTR": 0,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 140,
+    "reqJob": 8,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incLUK": 3,
+    "incPAD": 26,
+    "incEVA": 2,
+    "attack": 7,
+    "attackSpeed": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Claw"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incPAD": {
+      "base": 26,
+      "min": 23,
+      "max": 29
+    },
+    "incEVA": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    }
+  }
+}

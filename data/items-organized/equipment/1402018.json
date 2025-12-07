@@ -1,0 +1,39 @@
+{
+  "id": 1402018,
+  "description": {
+    "id": 1402018,
+    "name": "Wooden Samurai Sword",
+    "description": "",
+    "chineseName": "幻木劍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABMElEQVR4nMXW7Q2CMBCA4SNxAR3BFWAEVnAFGAFGoCPQEewIdgQ6go4gI1R6IqIpH4Feez8g4c/zFkrSA4QZ3d+jEAH62dTwkAKSUmrfAQMuhMIHPgN+cKZa88zbJ7Di5uIyYNhYa3HXAdDUF0hyoUfALO46IDL4s6nglJT4NpZw1wEIGPxWpVAyuYhTBOAYPMtSyLv727bjFAG67uCHUsD5N2JunP4F92sGnAk4xzEoJREv0iMw2Y43JknAD55zXDWCBq+KrPss3BrhImAS7yfqcevsDcD/nOXlFD5EUASsxWdnawC+9r341gAnK98a4GzlWwKWdjtpAAm+NoAMXxNAii8FkONzAV7wqQBvuC3AK/4f4B0fBwTBPwG66Q6RIfBPAJ5cQ+BDAB6blX/czAt+swUEySQfKAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABcklEQVR4nMWWgY2DIBSGn8ktYEfoCjqCN8KtoCPUEXQEHeEc4RxBRjhHKCNQeFVOzRM5CvYliCHq9/2ACR/wnhJTH71DQNyHBsa+g7TsxdkCGt51DAfOFFjBa8bV2GlLQMLVxaeA3li2cN8CMDRfkBadWACMcN8CkYLfhwouaYmzcQT3LYAABf+pMijr/hAeQgBLwfM8g0L2TzYNDyEgGgkeGYO2/ZMwlde/4Pc7h7bu4JokwFiP8FsWQ93z5cYMIrCCFy2mRqCCV7dcLktLSvgQ2IVPFU1wsl4VwP+8Lso9uJYIIWALN5arAE77q3BXAS/JXQW8JXcRONrtQQWCwG0FgsFtBILCjwSCw00Cp8D3BE6DUwI28NiBw20EKPhFtisB/48EX/QcNjKzAAVPZUsmGAWmJPaSzuBxavo5JSAGeYjcwD/hmXxO75L8SEoL4Ml1k3wGbV82fYwb7rdtLYDHZqY33HLKAejU8Y6MSZiUfwBHQx57tyFllwAAAABJRU5ErkJggg==",
+    "price": 2750,
+    "reqSTR": 35,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incPAD": 35,
+    "attack": 5,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Two-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 35,
+      "min": 34,
+      "max": 36
+    }
+  }
+}

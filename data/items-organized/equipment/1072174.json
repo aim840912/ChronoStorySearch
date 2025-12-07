@@ -1,0 +1,49 @@
+{
+  "id": 1072174,
+  "description": {
+    "id": 1072174,
+    "name": "Dark Pirate Boots",
+    "description": "",
+    "chineseName": "黑飛影鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAeCAYAAADHJYVoAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACgklEQVR4nJWWDZGDMBCFw0wNYAELsYAFTgIWehJaC1jAQizEAhaQwO1b8mBJA+V2hkJC+HazP9k+3LUs2bhy/5AzuEK99zqY51nv0zQt/1GQwxXa972LMSpUgK6ua31Od+7mqxILXwgNISgU0jTNtoA7eHXe/Y7x6y4IV3AJSqspAI8hujvyyMEWat1BmWQMVa0sC5O7tF4thysgDKCF5ZZTClNlOAAErx/OReBTzA1iSFNjB473U+sfhEHgEmaHnefzlIYerpN1YfpueSVuWQg8UwCrYyRwp6b1ReuZLZUEdGnb9qCA7ukBloBD2pSZtBrv4VIYmCuwea4K6HsEuVdS7SYtKJmTH/hZ8gjY3V1iSEnBR/kT6uWak/Xqlr5172G1Pszu4LYzBR/w3q+W8mOmIsDI8DjXpwHHZas3h1dDnJdePNO13v28R9lFOrwSGPHIU5UGaGGJYSyw0qmoCuS16/wKkrEAxFW+2Y4HC+98vcZG3iFd8V2Q57MjNykQaySDns/2cObg+Snbn9MczxqoA/ydUumyWcB/NdJjjs6nEwFATMUQD0eAbE7XrNm0jk+bBQKrW5/2grG+JjimIL7H/aSM67uqBFcwtt+K7xjUraC6Vuc8gujWvCc47jsppuLSNfV27AYpd4D3IDr3O4wKZPbYXVlwCe5Gicg47Vu0x2+aOYwA7brOjeN4AOfwBRajyuwZjoq1mWILCPNnYAs/gOkWdiYqy9MRYDaakny4xYItiBZrociV9dzTZqE9dBiGbfLQM01F0lV5M7+0HAupwDZpCqFwA9cb8HWD5gev1+vwMrcspIZxB0x4hTYFa61rcim44PY/rir1wTty+7/iH8SO9iwB9ZRjAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACvklEQVR4nJWWjZGjMAyFlZk0QAtcCW6BLYEtgRaSEpIWKOEo4dyCW6AFl8DqCQtkHyasZhywY/T5yfLPna7ZUtRv9Ev7BBKAc04qMUZ5zvO8/BZWAwlgGAYKIQiAnVPTNPKenqryEvAItCjAey8AWNu2WwdV9uodPadwSV0JEsgRQNWoATL5QFfNgjKIBdiQqc1cB7bjbn6mj6oyRQgXTCffOi4VqR00fQbBmUJWJ/HQ+YNleB5U20AZ6fNUVQZSpwibZplt1/c5VR3Cy/38/DtFNw7dos5rMKgJQZ3vhNS/qqrMuhsnw9J1XQbTEA6AcLLAupTtqgb/I+wY7BHsaB0JTOcKCTKI14ZmWbzcxj+YF85HIDYQBlWDVbcgBTguMamCPYaO3uOqykfKQnsGq4IGtypQR5regGAFhdhUkwWl3DVqoNsY4jJw9PrO0fd7YnVpY00QzF+Z/joYWcQ8SLuYz3ZvgXFX6t3qlOvsjMPp2m2LsqDeQWEj/2EJ4Duf+n06JhKMR8mZ+Hh02R6I9weHKKY23fuABuhtFtilgw/xbpBmMZBLuxKcoyn4kG1DLFr6rFm51q+AFiSFhGfeR2fnRiEhJcB72nf0BDlNhg2CEHUca02IbfH2nbQ5JACt60ohYVf4Mb2Xvm22o8LzlgPIngBEz3ES55qFVm0JOVU08WxO8x4Ge2SklqwGQN/3NE3Tf5AaaIESrG57BmGnsBlnFyvazyBHoAyiodMTV8FligOih2bNqqGzEOtUlcii5FLcMS4dfHJnGMdxa8juCGYn0HCWFxnKJy47mjNF+Ehh9oKyfZkACJX2N5AvLnoPiOYpRUHbSPDx6/XKAMbZ1qdofxqIVSS7Eco9QVC++MN/UGHDV1oJZXtTmetF2GClom929Jeu2bNwWL5n5U67PIX9ORihDuboFhdP6tv7DxKCDmKfni1ZAAAAAElFTkSuQmCC",
+    "price": 110000,
+    "reqSTR": 0,
+    "reqDEX": 120,
+    "reqINT": 0,
+    "reqLUK": 220,
+    "reqJob": 8,
+    "reqLevelEquip": 80,
+    "tuc": 5,
+    "incDEX": 2,
+    "incLUK": 3,
+    "incPDD": 46
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 46,
+      "min": 6,
+      "max": 86
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 2000001,
+  "description": {
+    "id": 2000001,
+    "name": "Orange Potion",
+    "description": "A concentrated potion made out of red herbs.\\nRecovers 150 HP.",
+    "chineseName": "橘色藥水"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACJklEQVR4nK2Vi3GDMAyGxV0WcEZwRyAjwAh0BBiBjEBGgBGSEZIR6Aj1CNUIVDLY2A4Pp41yOeSXPv+SDQfwbXD8BN5sLmy4toV2lEI4Xx5vBxuYBRlr6gzq5j6SkmR4B/AQgliVsa7roCxL+P75gY/j8d9Ar2YGhKhACAnvtoMLMSAL5DEcx+q2hUtVDc8h4tUyLOHDUJeBEllqkFIjXJJSBjaUVnA2MaU3CmrTKLOWAn95g1mWzWxJOtW8ISmEBnI9eUP56bRbU69mUqZz4Mk4xaadZam3mIHTArj3/S7QwJLqMx/a690C1sykz4XpZwTQVaaB7JRNC3r9dCI5PrdN/UYxkvqR+uOB4etKT+jO1cBART+5cgUMOE1TMEnfA4YwawXV5/E1Hxh5O4FYmnjjQaplSSWg6yK7nPzvReAqbNyphPSR6xSKjXnIp/hCm6l7AvUEJJ/AIXATFgNyiIDnI4jySm+AHgT5QCpd4AFesBgodp8gihaQ/tBV+iAZ24QppPDI6UQQESRzKfBGkKzR71dFCo26NVjCgzwJL7mGYnD1mO1vAG0fP/FxpqfwNrGbRl6s75mzyAbAeQ7PQO7AcSdi6gERB7PqBBV6Daj7cAs4256yfwNVoeulY8WcxidgaJvAF5QtAk2QXYX0VjGqXoE9AbcUaqf2Qa/CfCC36FqY2BZYXHW7CkB/gVkgOwzVAOf7R58pOy9c+BeYDWSgS2NL9gvhSDF9tNqYGQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACa0lEQVR4nK2Wi3GDMAxAxR0LOCO4I5ARYIR0BBiBjAAjwAjJCMkI6Qj1CNEIVBIYjGM+uUY5zsIfPX1skxjm0jl6BB8WF9ZdmpMoxiCc6/vHwRY2gqxUZQpldetJUdR9Ahj7II7KStu2kOc5/D6f8HU4/Bs4q5kFIRpQSsOnJXYhFjQCeQz7sbJpoC6K7tXE/mgZFvFmKHMvEp0LyJgerilSBlaUVnCcGNK7CzqmUacNGf6ZDaZpOrE1xWkmh7RSAuR6skPZ8bhZ01nNtE4mw4Nwiu17miazxQwcFsDt8dgEWlhUfGddc7mNgCWx6XNh0u4AupEJkJW8akDWDzuS7fO7rV8fjKZ+pP79QP+6kgntuegYaOinF46ABSdJAjbpW0AfNsqJ6nP/mTaMvh5BhSZeeZBqmVMJ6LjoNiP9NwhchPWeakjumaRQrcxD3sU1OVM+CPQgIOkE9oGrsD0ghwh4PoDKL3QDPECRDhSlC4zhDdkDxfYb1KkBpAfaQjaSlVWYQTKPnE4EtYNkDwVeCZJWcr8aitBGtwSLeJAnYZ0JFL2jx+y5Azj2cYv3M7Vq5sRmGnmxnDNn0WgApzk8A7kDe0/U0ANqH2yMTlGhl4DSh2vASbYi+zfQnKReYmvPbnwB+rIKfCOyINAa2YyQbhUb1TuwF+BahKKUc9C7MLZzIANPAXIPHQtrewSeLvJeeKAlmPJavy8joHz4GCoA5/tHnymrMi0ZfJHHhamFJwSuWSFoGXD2PLSpA+LvkbEwa1g77VKUrrRD62ZSBfpE4sCk0MTl/wmBi8XRZ0/sDBgI1wm8vhB4zblR/wPv9UtEa4tnoQAAAABJRU5ErkJggg==",
+    "slotMax": 0,
+    "price": 80,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Potion",
+    "lowItemId": 2000000,
+    "highItemId": 2010000
+  }
+}

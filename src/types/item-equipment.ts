@@ -55,8 +55,6 @@ export interface ItemEquipment {
   classes: ItemClasses
   stats: ItemEquipmentStats
   stat_variation?: Record<string, StatVariation>
-  stat_category_each_extra?: Record<string, unknown>
-  stat_category_max_extra?: Record<string, unknown>
 }
 
 // Scroll (卷軸) 相關類型定義

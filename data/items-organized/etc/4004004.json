@@ -1,0 +1,27 @@
+{
+  "id": 4004004,
+  "description": {
+    "id": 4004004,
+    "name": "Dark Crystal Ore",
+    "description": "An ore of a crystal that possesses dark power. An incredible power lay asleep in it.",
+    "chineseName": "黑暗母礦"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACfUlEQVR4nJWWjZnCIAyG6fO4QFZgBW6EuxF0BG8FR9AVukJX6AquwAqM0CN/EEBrj9OzpZA3X0iiJ3dsbN395P459kDFePCeLwBf4NbnU58dBp7c6C3bBCjXKSWGJHAp/32HQPfrehxIirzPBiKaoP1qvrl74Yo7n8/OZ4ce8/wRWEIHGeYaWP1P6vIb5K3zuDZmtQjE+XkHeOJN4jnCUqwzeTN6jE4wgNdhKBEgN7QOx/V6deuy4LOthzXJAGQ4sCrjvdojDYlVJwXhWjlD/OCnb0IHNixQva7Gkksv90ugRe26LuIwQW2STZwMmEVmM3mG4YmxwIa0kFQH7yi8C0Gg2CCfHR27CV0fDnsvcwnMWRZIDnWusWVZGmdSSRWXSyGXwdNtBIqpxp7PwRWgZIV+8BWgCp9BCJmdWdEAzRGzooSZ1p1BKjuqCVJBWehJyTw/OtN1N3RTOy0oDUoIIKBgzhW6fQoxuVXrqElLCjGUA631xErw/ft7GTBowxvjZb+CfPA5w1JTfACiyKS+Qi6Xn0HNO8igKHhVZQ7VAEBUff18GQg0kF4Fhw47f2SQpqeO+/3edAcF1XAdH7cZWxoX7CS9iTymh7ebeMoDu3sI310Kj53dZhpeP9h/6nmadXSDQE+NVY3xwPOLcXG2BjTI/dmU51259Ok9ZaObp29U7RKvK/6Vkl7RHkhgccOvby7aFjhqMqAGzkmwB6IRc7cgZUkyiyipqTn8DPXnRAPVJPgIQgPPWD3C3oZW0Lj+duD5FsBKXKNmF5Q7LnVeHRaqQ5+PkHG8A00C29QgKjSNo6l8BUi4GhufQG+B9uDnVZfFZv1/FO0C+/kj4w+sHxS0RB/t6AAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACoklEQVR4nJ2WC3XrMAyGnXNCQBRMwYWwQWghdBQCoaUQCqEQCLcUTMEQOutly3Zu181rlpejT78sKZnde+PZnU/uD+MVrACC93wA+AO3Px5671fQ2Y1es12AcpxSYlACl/LfRwh0vu+/g5Iy77ORiGbIhiKaswN33Pl8dj47dV/Xt6AljJCBrgHW/6QybyCbXse5MatGKF5ff4DO/KAoQGCK9Uo2gJ6jIwzheRhWhMgJzcNxvV7dvm1473kEbBIEyHhgdUaF2iQtidUnheFcWVPc8d0XYQQbIqjeV4PJpUMbEnRRve+bOE1gm3hTgXnMLmOAPMRQxViAQ6pIGYB3FOqNQFBskN+O0qBVNoTGnsu1BGZtCyiHPdfgtm2NQ6mkj8tlkkvkQSongsVU14LXxRWoZIru+AhQjc8wBK3OzGig0IVjZpvR9euaylPVDKmh7PSkaF3vnfn6NAxxf9mu0qCIIAILZp2he05BJt8qDA01KUshh7LItd5YEW5fX5cBhTa8AZTnLcwHnzMvNQUKIMpMWSjocvkcVP0PdKgseFVnFtpAQNSdPk8GBA2oV8NhxDdGrDBNXR23263pIgqroXt/LCuBSlFP0svIc5qwLOIxD3wrhPDRpfeYbjZkeHxnDaVHajbSBYR6asZqkAeuZ4ybs/WhAe/Xqtw/aG996k/Z8NPTm1m7yXFnOFLUK/sJJsD4xE8BLuwWOmozsMaBmhivYDRi7iqkMEnGESk1NYn7UD9PGrBNjFcwmo5GHrF6hr0QLSFAv0X4egthRU5VBQkBbRYGZsNOTR1bhwXr0PsjqAyF4cNRYQrxsl8EeFOjqNQ0mKZDKERCp2Ppyb0yHZoHA9Qmw7rr9AKxVZ/6bTY3Yge0xyeB/uuc1d7V10M6Ov4Gd+omkm0F0NkAAAAASUVORK5CYII=",
+    "slotMax": 0,
+    "price": 3500,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

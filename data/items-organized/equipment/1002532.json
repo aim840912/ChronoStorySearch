@@ -1,0 +1,43 @@
+{
+  "id": 1002532,
+  "description": {
+    "id": 1002532,
+    "name": "Dark Grace Helmet",
+    "description": "",
+    "chineseName": "黑色格萊西頭盔"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACgElEQVR4nK2Xj5GsIAzGYeY1oCV4JfhK0BYs4a6EfSXslXCW4JWgJawlaAlLCb4kLAhIgPcnMzuuAvnlCxHwhyizo7CfLOwnSsAHGFwWfad+8dR6NQFmA8iBgTn70GUVe7t5nfZ9152nXlMHylASnleMsOpulQIX7jVIKeV1/RbTK4AhC8+BJabvMAlEajdfgMuy+KO6KQsvLa6oDcPANwJ8vg2i/4zDU+Czkr9h7rqWBKtWpYFg4zjSb5p45Rz4aJqG/pjCMZaDVlVlp8L0nW/CVU7XGJig6ACtbVuIeIXIVxychYZwNBznwMlCsIUaJ8aomhOw2PMQfkz0ql3ALBRV958rC+HMwF9qDVSGYLHdd9GPXdSJmXNXRajKteeXfs5lyoB1MXWgaMyrCO9D+HNrRP12FuX07rX7xbVtX6KPVA86zanklCNwGOPT81cLSCrFZAvWQwPQE46JcsYcCNZpprU4Hh0OiBUdZ/VHBXO80/zmFUMvpdpi57nCSkEtGBXXHwoGrJeqTqY0gL3it+8qjGaFWMUIpxXquHlFZtLM2faoiCaDlTSXuUtxSdkL3PzDCg8dPeh8sMOpI+6YW+tZsIU/W6A9RF2fnh+3lXYp6lMzK4MTqDtN4ZQhWMJGfuCy6MHJsdQBLBqo1aWBpWYVczvLqSwPND4KClL+0wkkhJpC7LrOW/FigXhgTDdXDCXQPzEDjs0znRZSTk2baY+9QpGx122RGxjCQ6BrGHysLfRRNMehk9K0upl4/bcHvv9aXLgP/+yVVVxcXPOkYAP32s2psJB+h0VGf8bgq586HLpgyX10lexYqApXvEssTHGGqY59bkgYWK46ElDM929YMnLRF6ndpgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAhCAYAAADOHBvaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACqElEQVR4nKWXjXWDIBCA4b0uoCOYEewIuoIjNCOkI6QjxBHsCDpCHEFHCCPYOxAE5IC2915eVLj77k/AN5YnW+Y8njmP5YA3EPib1J34pKnlrB1MOpACA3N0odPM1npxJq3rqiYPraJ2MkNReDpihBV3Eylw4V6BhBDO1G827A50SXgKzDF9m04gUpvxBJymydVqhiQ8t7mC0nUdPQjw8dax9isMj4GPTv6G2jW1DFjUIg4E6fte/oaBjpwCb1VVyQvdOFpS0KIoTCn03PHG7MjlfwgsoWgApa5r8HgGz2dUTkJ9OArqWXApPthAtREtspsjsNBzH74N8lU7gUkoRt1+zSSEEg3fo9VQ7oPZcl9Z2zdBI7rmdhR+VLa8Huo5lSkNVs3UQER9Ogr/3oe/loqVl6Mphw9n3G2uZXmwNtA9aDQVJRU5Ars+XJ4/LSCxFEuZsB8qgB5wTJSlsyFYpVmuxWHvUCHUdJSU1wJqvMr6piOGWULU2cZTjRWDGjBGXF4FKMynro6m1IPt/pt3FbTJQEzECJcr1HZzmkynmZLlWUga91bSVOZOzcV5y3Dz9zvcN/SU54MVTh1hw9RaT4IN/FUD7cnK8rD8vM1yl5JzSmJlsBy1y+SXDMEcNvINl0UHLg1z5cCkgCq6ODBXTMTUznJElgZqGxkNyf91AvGhuhGbpnFWvJAjDhjTTTVDDvQ3osGhOsvTQsyoHtPjoVcooHveFilFH+4DbUHnQ2O+jawa+0Zy02pnYr82B74Y+FfHDTSO+/B7K0zEgeZCm+IEHgcBG7i5xaUHv0nGfPodFhn1GYOvfmB7R5vYvcIGc+ujq90nVTqalGBUuOKdfCGa0091ucM0CTWuoPhgfxQLetntnVO9P1yZW1+8fvfmmVoF9Kl7Z+wHxTd/onaxGmkAAAAASUVORK5CYII=",
+    "price": 210000,
+    "reqSTR": 240,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 90,
+    "tuc": 7,
+    "incSTR": 4,
+    "incPDD": 90
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 4,
+      "min": 0,
+      "max": 13
+    },
+    "incPDD": {
+      "base": 90,
+      "min": 45,
+      "max": 135
+    }
+  }
+}

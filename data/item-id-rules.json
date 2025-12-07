@@ -1,0 +1,259 @@
+{
+  "_description": "MapleStory Item ID 命名規則",
+  "_format": "第1位=大分類, 第2-3位=子分類, 第4位=性別(0=男,1=女), 第5-7位=編號",
+  "equipment": {
+    "_range": "1xxxxxx",
+    "_description": "裝備類",
+    "armor": {
+      "hat": {
+        "prefix": "100",
+        "name": "帽子",
+        "english": "Hat / Cap"
+      },
+      "earring": {
+        "prefix": "103",
+        "name": "耳環",
+        "english": "Earring"
+      },
+      "top_male": {
+        "prefix": "1040",
+        "name": "上衣（男）",
+        "english": "Top (Male)"
+      },
+      "top_female": {
+        "prefix": "1041",
+        "name": "上衣（女）",
+        "english": "Top (Female)"
+      },
+      "overall_male": {
+        "prefix": "1050",
+        "name": "套裝（男）",
+        "english": "Overall (Male)"
+      },
+      "overall_female": {
+        "prefix": "1051",
+        "name": "套裝（女）",
+        "english": "Overall (Female)"
+      },
+      "bottom_male": {
+        "prefix": "1060",
+        "name": "褲子（男）",
+        "english": "Bottom (Male)"
+      },
+      "bottom_female": {
+        "prefix": "1061",
+        "name": "褲子（女）",
+        "english": "Bottom (Female)"
+      },
+      "shoes": {
+        "prefix": "107",
+        "name": "鞋子",
+        "english": "Shoes"
+      },
+      "gloves": {
+        "prefix": "108",
+        "name": "手套",
+        "english": "Gloves"
+      },
+      "shield": {
+        "prefix": "109",
+        "name": "盾牌",
+        "english": "Shield"
+      },
+      "cape": {
+        "prefix": "110",
+        "name": "披風",
+        "english": "Cape"
+      }
+    },
+    "accessory": {
+      "face_accessory": {
+        "prefix": "120",
+        "name": "臉飾",
+        "english": "Face Accessory"
+      },
+      "eye_accessory": {
+        "prefix": "1202-1203",
+        "name": "眼飾",
+        "english": "Eye Accessory"
+      }
+    },
+    "weapon": {
+      "one_handed_sword": {
+        "prefix": "130",
+        "name": "單手劍",
+        "english": "One-Handed Sword",
+        "job": "劍士"
+      },
+      "one_handed_axe": {
+        "prefix": "131",
+        "name": "單手斧",
+        "english": "One-Handed Axe",
+        "job": "劍士"
+      },
+      "one_handed_mace": {
+        "prefix": "132",
+        "name": "單手棍",
+        "english": "One-Handed Mace",
+        "job": "劍士"
+      },
+      "dagger": {
+        "prefix": "133",
+        "name": "匕首",
+        "english": "Dagger",
+        "job": "盜賊"
+      },
+      "wand": {
+        "prefix": "137",
+        "name": "短杖",
+        "english": "Wand",
+        "job": "法師"
+      },
+      "staff": {
+        "prefix": "138",
+        "name": "長杖",
+        "english": "Staff",
+        "job": "法師"
+      },
+      "two_handed_sword": {
+        "prefix": "140",
+        "name": "雙手劍",
+        "english": "Two-Handed Sword",
+        "job": "劍士"
+      },
+      "two_handed_axe": {
+        "prefix": "141",
+        "name": "雙手斧",
+        "english": "Two-Handed Axe",
+        "job": "劍士"
+      },
+      "two_handed_mace": {
+        "prefix": "142",
+        "name": "雙手棍",
+        "english": "Two-Handed Mace",
+        "job": "劍士"
+      },
+      "spear": {
+        "prefix": "143",
+        "name": "槍",
+        "english": "Spear",
+        "job": "劍士"
+      },
+      "polearm": {
+        "prefix": "144",
+        "name": "矛",
+        "english": "Polearm",
+        "job": "劍士"
+      },
+      "bow": {
+        "prefix": "145",
+        "name": "弓",
+        "english": "Bow",
+        "job": "弓箭手"
+      },
+      "crossbow": {
+        "prefix": "146",
+        "name": "弩",
+        "english": "Crossbow",
+        "job": "弓箭手"
+      },
+      "claw": {
+        "prefix": "147",
+        "name": "拳套",
+        "english": "Claw",
+        "job": "盜賊"
+      },
+      "knuckle": {
+        "prefix": "148",
+        "name": "指虎",
+        "english": "Knuckle",
+        "job": "海盜"
+      },
+      "gun": {
+        "prefix": "149",
+        "name": "火槍",
+        "english": "Gun",
+        "job": "海盜"
+      }
+    }
+  },
+  "consumable": {
+    "_range": "2xxxxxx",
+    "_description": "消耗品類",
+    "potion": {
+      "hp_potion": {
+        "prefix": "2000",
+        "name": "HP 藥水",
+        "english": "HP Potion"
+      },
+      "mp_potion": {
+        "prefix": "2001",
+        "name": "MP 藥水",
+        "english": "MP Potion"
+      },
+      "hp_mp_potion": {
+        "prefix": "2002",
+        "name": "HP+MP 藥水",
+        "english": "HP+MP Potion"
+      },
+      "buff_potion": {
+        "prefix": "2022",
+        "name": "增益藥水",
+        "english": "Buff Potion"
+      },
+      "cure": {
+        "prefix": "2050",
+        "name": "解毒/治療",
+        "english": "Cure"
+      }
+    },
+    "scroll": {
+      "return_scroll": {
+        "prefix": "2010-2012",
+        "name": "回城卷",
+        "english": "Return Scroll"
+      },
+      "upgrade_scroll": {
+        "prefix": "204",
+        "name": "卷軸",
+        "english": "Scroll"
+      }
+    }
+  },
+  "etc": {
+    "_range": "4xxxxxx",
+    "_description": "其他類",
+    "material": {
+      "monster_drop": {
+        "prefix": "4000",
+        "name": "怪物掉落",
+        "english": "Monster Drop"
+      },
+      "quest_item": {
+        "prefix": "4001",
+        "name": "任務物品",
+        "english": "Quest Item"
+      },
+      "crafting": {
+        "prefix": "4003-4006",
+        "name": "製作材料",
+        "english": "Crafting Material"
+      },
+      "ore": {
+        "prefix": "4010",
+        "name": "礦石",
+        "english": "Ore"
+      },
+      "gem": {
+        "prefix": "4020-4021",
+        "name": "寶石",
+        "english": "Gem"
+      },
+      "quest_etc": {
+        "prefix": "4031",
+        "name": "任務雜物",
+        "english": "Quest ETC"
+      }
+    }
+  }
+}

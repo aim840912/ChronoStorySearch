@@ -1,0 +1,45 @@
+{
+  "id": 1382010,
+  "description": {
+    "id": 1382010,
+    "name": "Dark Ritual",
+    "description": "",
+    "chineseName": "死靈法杖"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 75,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB/UlEQVR4nMWWi7GDIBBFLzNp4LWgJdiCacESbCGWEEsIJWgJoQVL0FZ47Mo6JJMffnfiBJDAyd7L6gnHhvXf6kgQa+0VaCuoAvYoENvcSgy6QpKPA0eAMETXDSj0NLarNOyHS5mjbQ1aMzCA3NwLxPZ9jyRJMAyDy0bnQIqHCbtlpDM1tJOj1kaGVHh/D5DJEx5CvZq0JchHT+wF8tUTe4F89cQeID95YkuQKE9sBRLtia1Aoj2xJog8wmfLsQaIbZoGWZYtkmMNEBRFATodJIf7wJjfT8gcEBu0lfT5hWaoUNUPEDJ/dWncG9TIQalP05Tl4L4ukPyBISiuFziZgNxdKp0H8w6EIZRS0uGLgCi6roFuRz/k2ZiNWueoucX9aJgQZJKBaoJAUFCbQFxW+B6ZFGjQ6fEVi7qZAzqPbCpYL7qgWfnH5H46Ca9CskQwEsyEURbbP0gTnRHOhGRANgmloTGRhdoEq102Qlny+8UvecacOD2TkynFpKEv/D3+JtOWpTu6epTkfjMO2vjf3F37vMgjH0MgKLiG+BNEvqDNfSaUh2AmLHzoucXUlJVPIUUs2BxYuY4wTGhKygBl4qktm07Fbm58kkaFRUwAKJ4gpvlbgfDiblMrEGTcqqoWbzoHZNqUgEgqD7J6RD19qX5sFVEgb7yxP8hWEBT/6dY3KmozsVMAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQUlEQVR4nMWWjZGCMBCFX2auAa8EKIErAVugBFuQEqQEUwKUIC1QApRwlJDLLlkmePyIIu4YyZ/k4+1L5AufDeOu6pMgxpgLUKRQCcynQEx+PaHRKYK46/gECENUVYNE9327pob9cD7FKIoSRdkwgAzuBWLqukYQBGiaxqpRWZBkMGE3Raoyg7bpyHQpXcof3wOk94SDUGOT3gky64m9QBY9sRfIoif2AHnIE+8EWeWJd4Gs9sS7QFZ7YksQ+Qt/Oh1bgJg8zxFF0Uvp2AIESZKAdgelw35Qlo/vkGdAjFdX0uYXmiZFmg0gZP7mqbFvUB0HSR+GIaeD2zpBcABDUFzOsGkCYltU+BzMFAhDKKWkwYWAKKoqhy46P8RRp0amY2Rc4/ZqGB+kTwOdCQJBQXUCsarwGJkUyFHp7hWLmpEFOnZsyrvf6gPNyBOT+2knjIWoRDASzIQuLaYepGa1IqyEKCCL+KmhPkkL1QlWWzX8tMS3s7vlEc/E1z05mVJM6vvCjfGVTHs62a2ru5TcrqWFLt1vbrZ+fMkjsyEQFHyGuB1EvqDFnRLKQTATXvzTszdTvSpzIYeYtziw8TnCML4pSQFS4q7+bcvBXX9dfS7atSAM4x9iAkDhIH5sibz5x7v2FETrlYdA6OlCu2gtEGTcNE2pSV+xN29q0bF+Ko0r/bwpkIMrdKDQ4wcW6EKpciAB1kc7N7ikyOAmdH64aDAd7Uz9viyCiHwD2T1v+LBjT9rOtEeVmVPkHzVeeN9Yij8P/FSyBgiQLgAAAABJRU5ErkJggg==",
+    "price": 250000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 228,
+    "reqLUK": 78,
+    "reqJob": 2,
+    "reqLevelEquip": 75,
+    "tuc": 7,
+    "incPAD": 59,
+    "incMAD": 90,
+    "attack": 6,
+    "attackSpeed": 8
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "Staff"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 59,
+      "min": 55,
+      "max": 63
+    },
+    "incMAD": {
+      "base": 90,
+      "min": 86,
+      "max": 94
+    }
+  }
+}

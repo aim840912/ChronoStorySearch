@@ -1,0 +1,45 @@
+{
+  "id": 1372014,
+  "description": {
+    "id": 1372014,
+    "name": "Evil Tale",
+    "description": "",
+    "chineseName": "火焰之杖"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 58,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAaCAYAAABGiCfwAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABTUlEQVR4nLWWjRHCIAyFkzsX0BFcwa7SrqIruIpdRVdwBB0hBkhqilCxwruTnxbyNZgAG2gvkhpbw4gVSIjUEsacLVc7Bj09rxWM6MigExPOAeSKFjC6upIhGPqoL2rD6MLFnX9dBKoN8x450JAA1YR50AHSHtWETaD4P6oNKwaVwihj5CeQhcUGte+ja0i8/xWkMBJLuoeBAi7pOatACgsWpB5Nf/wYvh40g6n2EHJF1VcCKQxRltKpSwyyXi/lUQlsUuaL6QbBI+slpMeWwSLQLFg607ZBM+TTYhGGBkA2OMw+R336ebHsMnqD/hzi46HPTOjhvwBREV230pQ6HHyT1KtMohfDAugwtxx7oGmxZgktTEAPafO9oXsf52BSw37PWhhffp58Qdl5oF5QQIKGoI5mAeKA4ox65IFxPpi99K/tKjUZTYO+jF3UCydabxk7PgKXAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAdCAYAAABbjRdIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABmUlEQVR4nLWWgXGDMAwA5bssQEZIR4AR2hFglWSEZoWOkKySjtCMEEZQZVuiQrWpQ43ujAw2eslI2DvYXpC12xqGJJHkHG4JI05Dak+gMfC2giEeCXQiwjmC/GULGN78lSAu3jsZqA3DC13u1DoDqg0LEXnQkADVhAVQC+mIasImkP1GtWHFoFIYZow8BdIwa1DuQ3YNifFnQQJDtiT/MBDAJf3OKpDAogXWV3V//TV9PWgGEzlArBWRvhJIYM7xUnrpEpN01Et1VAKbJOMxfkKMSEcJ6bllMAOaJUun+jpphnxZLMKcAqBODvWfwz79vFj0MgaDYR+i7aHPvNDD/xJEBPHWcJd13PgmkagyhV4Mi6B2btlGIGWxZgk1jEEP7tO5ofvZzkGVhvZnLYwOPyMdUPYBKAcU4KTB9LsNLMtoH8wSxAM5mBeIq+b1l60H/lh+Gd7+AI2qTbCGW8e6VZ6fJm8A3pXBM7XXVAQGdOc27hTooLQ4oLWXD9VfWsakAzqy3MSc53bM9m0LMAlVA1NeNxnwknOzsW+5WIut3TOuHgAAAABJRU5ErkJggg==",
+    "price": 230000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 175,
+    "reqLUK": 60,
+    "reqJob": 2,
+    "reqLevelEquip": 58,
+    "tuc": 7,
+    "incPAD": 45,
+    "incMAD": 73,
+    "attack": 6,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "Wand"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 45,
+      "min": 42,
+      "max": 48
+    },
+    "incMAD": {
+      "base": 73,
+      "min": 70,
+      "max": 76
+    }
+  }
+}

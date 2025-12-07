@@ -1,0 +1,39 @@
+{
+  "id": 1402001,
+  "description": {
+    "id": 1402001,
+    "name": "Wooden Sword",
+    "description": "",
+    "chineseName": "木劍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 10,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAaCAYAAABPY4eKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAzUlEQVR4nL3W3Q2EIBAEYC6xkqvFnqzBVu5asAVaoAVLwGNV4hJ/Fm5neZDEly/MTgids19x21/WePwMvfM+uHEK0RKPQ/8meAoz/bDCCd5Rv+4msVPU49czOH3QeJ5xCaPxDKe4SxiJP8IoXAQj8MtyofHbciFxcdSaON3TNVFr4XRaAiui1sBZzC1wK34232q4BW8q1r94LpYWLMVZsbRgCc4uDk34CVcrVg3O5vt7a6mjVzib7waroyUOabMEp8ddWuiYz/AjaILuawGm79FF6bG1BwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABEUlEQVR4nL3WjQ2DIBAFYJp0AVewI7Qj2BW6ijO4Sl3BFViBFRiByhUIXEGBHpAg/rUfPi7GK+vflBkvvXH1nifGuWDLJlRPXM3TCPAmJJzohQNsUf4du8QOUS8rD2C9aY27NcZwa9zBOm4Mt8RP4VZ4FtwCTxZXa/ywuFri2VFT4vCeLomaCoenBbAgago8iLkGrsVj61sM1+BVhfUv7gqLCs7Fg8KignPw4MVBCZ/hZIVVggfru39rYXSocGTsJMaD9TXwzVwbPbhkAtIbpXfs8FQ1P/d+T6CxCUSf0EOF6dLi8HGnG4r5ZWAfIovc4j6o28MgQ+SHyT9C1/A+7g7H1Wth/5hF7olN5GiyP/d/AKRv6uOsZFo3AAAAAElFTkSuQmCC",
+    "price": 1500,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 13,
+    "reqLevelEquip": 10,
+    "tuc": 7,
+    "incPAD": 30,
+    "attack": 5,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Two-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 30,
+      "min": 29,
+      "max": 31
+    }
+  }
+}

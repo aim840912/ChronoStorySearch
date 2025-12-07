@@ -1,0 +1,45 @@
+{
+  "id": 1302013,
+  "description": {
+    "id": 1302013,
+    "name": "Red Whip",
+    "description": "",
+    "chineseName": "紅色鞭子"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABqElEQVR4nO2W7XGDMAyGxV0XoCN4hXYEOkJnYIRkBBghrMAIMEIZoR6hHoFaBgkwsvk40l/VXQjnDz1+bVniBY5Zv3NcIjXuhTlI0zSbA6uqgrquewkYg7EKgqCjLdNaB/skmIP8fGY8uRwhMUd7zIf1BOm6jhsJopSKOsNxOK9IAe4GVls5hzkQQVptuMO2QuktIGQPC8KpElA8MwSl6fB+n5hihM0X26jUggyoAJBgrEoAbUF4MR/a9F9vCozBiWYFDEbjQRAD3zvtgHi62phFJ8JEVVeYv52ispOqyFgdCMr+zP5hz4OF0s1Om921NSx5rdv+O7N3wwwX8arwJ18U3cFtPKmOVemAMmdVqyHDWwiTuoPABchXtYAhBzNIBMiTfAg+JFBQmbK9OUrXQ9amVINWTIl59Q3iMgUuTwD5mYhgLmNjLcrtgJsBBqIR9GZ/2diYjh4p6qj+xSrGIkBQ3cNuYT5UCOd8aJ/G8MGP/7SQPfUvdqmTcjyPmwkPOlJk5zDeSj8Ky9j34v5KvlKW2C3si3UknS03UZhzLEXds2AOCHA98BciqQO0rv8/AQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB5UlEQVR4nO2W4ZGDIBCF15k0YEqghaQEr4SrwRJiCVpCbMESTAmxhKOEowSPRRYRF9RM7n7dzhANLHy8FRZOcMzGnX4ZV7kXZiB93286tm0LXdeNHDAFcyoIggNtmZQy2sbBDOT7s3CdGwtJDbTHQthIkGEYXCVBhBDJwdAP+9U5QKVgFUofZkAEeUjlGnQtNMEEYnbXIOzKAdlvhqA8n96rmcmuMH+yvcg1SIGIAAnmVDGgLYibzIdU4/MiQCnsqFbA6Go8CHLA6yANEL+uVGrRiDBW1TssDCer7EVVZE4dMMr+zP5hvweLpZud5u21NSw7d4/xq9B7Q00b8V3Ln8ai1R0N44vqnCoZUWasfUgocBfCrO4gcAEKVS1gyMEMkgC6TiEEfzhQVJnQrSVKl1PWplSDVs+JeXUHMZkCp8eAwkxEMJOx8SwqtcNNgQOiEfSmS2ErczsirTo6/1InxmKBoLq7DmE5nRBm8Kl+9nEf3j5pInvOv9Smzhr7PW4q7nTkkPVhLpThKmxS98UZciY+2wprZZkO4VjP7nTDuTIDhXaJTENR8WG5LVet6mnrCgbCAWOBJhBezyTBCCTss9KlhlnZKwlsNYFQme9YenWJJbJoC98X5eQ1SNgOVx4Bq8R/9/4D0NIeVrHMItQAAAAASUVORK5CYII=",
+    "price": 1,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incPAD": 48,
+    "incSpeed": 15,
+    "attack": 1,
+    "attackSpeed": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 48,
+      "min": 46,
+      "max": 50
+    },
+    "incSpeed": {
+      "base": 15,
+      "min": 13,
+      "max": 17
+    }
+  }
+}

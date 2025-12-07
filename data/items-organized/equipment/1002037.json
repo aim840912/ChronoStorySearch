@@ -1,0 +1,55 @@
+{
+  "id": 1002037,
+  "description": {
+    "id": 1002037,
+    "name": "Black Jester",
+    "description": "",
+    "chineseName": "黑色術士帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAUCAYAAADskT9PAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACSElEQVR4nKVWDZGzMBDdzNRALHASQAKVABKKBJAAEqgEPgmthCKhWEACX15gwyakvevdm+kkJNl9b38gPZGPJXhW9He89SkFLJfLheZ5pvpyp+w8S+NPhTjSoiisP6BqEhrH0fPJAhz5NE1UVpqSRNu5cKgi0UTxuGlLliSJfe6u+bYzUZqm1LcTArQ+T0zOgJFR6eYQsY0LognR1qMVDMAOBN0V5Ose0HSpO48gIa6tJ7M+LzYDSBFUaq2p70fKMm0Psgg4zfPcOcGZskycc5BBKM5x1CEx+2KhhtzOrQBEkG5nV8dr6iEIRhhlBEwec/4OoqQOrgk5fZx2SY4fiDkr35GwDwnYtvVsItfeGQhQ6EyQSwImR7qBqvLTyRiG6ZARJkezod7sF8u8x6PLQJ5PdL/vNQcgoGly54AzIRErB59Zm5PJ0XSHo4oFqM50ZFEkNLT/jIo2OLf3AE2Nm2Zleqi9FBiWo641GR5vzX0HlieGGPmRmPEYUJ7RW4OoUASj6449dNrJ6TX5B3iYnmHOc+MiffURW/y7IIySBUWij2ILcP0uEN1ME2I8N/uXdOi16Y09KydpKN8cW9qx2csvshd5nX8KVVazzIRtQqUyWp6DedVEl/a1EBIQV8du9gDbNyK5HN5lpL7KVQQTMAkLeUeaaP+5u65jkdO3kD1gRWDCQj4llqjN/Wb8Od9ia1keZiEjdxt6G0idMPTEfIKX5M/dLwL2MgBVt9Y35Kz8ArE/MUp9rSI2gSr8S4ZX5ieO/gQjwuE/eJs8ojTqawYAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAaCAYAAADWm14/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACkUlEQVR4nKVWC7GrMBDdzNRALHAlgASuBJBQJIAEkNBK4EloJRQJxQISeDmBDZvwaXt7ZjIJ+ew5+wFyIh9j8KzoexzalALG8/lMwzBQeb5T8jvIw58KcaRZlll7QFFF1HWdZ5MFOPK+7ykvNEWRtmNhUG14s4nHTVuyKIrsc3NN55We4jimS93DQWvzxOQMHDIq3Rgi5n6ENyHqsrOCAZwDQXMF+bQGVE3s9sNJiKvL3swPo40AQgSVWmu6XDpKEm03sggYTdPUGcGePI+ccZBBKPax1yEx22KhhtyOrQB4EM97J8NT6CEIh9BLD5h8y/gRREodXBFy+DjskhwNxByVVyRsQwJn63IwnmtvDwQoVCbIJQGTI9xAUfjhZLRtv4oIk6PYkG+2i2le495FIE17ut+XnAMQUFWpM8CRkNhKB++ZipPJUXSrrYoFqMZUZJZF1Nb/jIo62LfUAPWVGyZ5vMq9FBimoyw1GR5vzn0Hxie6LfI1MePRIj2dNwdRoQhG06xr6LSQ0z75B3iYmmHO38p5uvcRG/1/QeglC9rwfhOzg9N3gehmihD9b7V8SduLNrWxROUkD8o3x6a2q5b0i+htvM7vQuXFICNhi1CphMZna141UaWXUggJiIt1NXvA2QORnA7vZ6R+8kkEEzAJCzkijbT/3FynPkvpJWQNWBEYsJBPiSVK838z9pxtsTSODzORkPsbegsInTjoifkEu+TPxS4c9iIAVbfaP8hR+QO2LjFK/UwiZoEqvJLhlXnH0FcwIhxCAe+Safoc/CLv3gmPiPSLuXfJB9EOBeidtidmi2xrHq2f27AngMki0Uuyb8K/wlEE9g4fXYuGg3HYdgVwmF6FerltHAscDtboP3WKV3g7tH0jAAAAAElFTkSuQmCC",
+    "price": 15000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 92,
+    "reqLUK": 33,
+    "reqJob": 2,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incMHP": 10,
+    "incMMP": 10,
+    "incPDD": 12,
+    "incMDD": 40
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incMHP": {
+      "base": 10,
+      "min": 0,
+      "max": 25
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 25
+    },
+    "incPDD": {
+      "base": 12,
+      "min": 0,
+      "max": 27
+    },
+    "incMDD": {
+      "base": 40,
+      "min": 25,
+      "max": 55
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": 1052131,
+  "description": {
+    "id": 1052131,
+    "name": "Red Belly Duke",
+    "description": "",
+    "chineseName": "紅色公爵套裝"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAgCAYAAADnnNMGAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC7klEQVR4nJ1WjbWzIAyN53wL8I1AR8AR7Ah2BB3BjvAcoYxQVnCEMoKM8BjBl6RgUbH2vZzjH0Ju7k2C/oNjmw7eF0cO3oGw8+8HwHAW+Rm1h4teBJEF3AOZxhuAUHjoBqzXmwlKCBCDhPHmQBsA5wGMZcAN0C6Ti1bweCi+r6SEahz53jkHsu9hGIZ5rnEy3LmsrxzI1HXd7MQ3Gqrb9AJAwKGuQSoNrpc49lookJ33fsMmy8SFld5qOLfEpoT7/T6PX69XPCu4dxasBXLM4LwG74+YzCwsrm77miUg2bw9gXTkBOALh69GwZmZOGTwcp5js2FCi+KCGN3pRNJJqIUD42VwtpCIryIMrtmkIFONWju3Td44ViydR2kIyOMUbWtmGy0C5djs5kQpNbMpywEXvZiQk0ByEX0KlLKJIDOL9GVkRTmxRjODWkYmcpYqZykbApmoq4XCQaRPkpRXsQAqS2AmFTIZVkxS62rH4xRbVL03MDETh9uGqJDuILidIuVoKZMmYbKRuefF2P1+0ZZvcxLlWldXZLIn1dqeTPCwxmQ3hXtjQTbNXF2dio1q4YxsFjmkI2ERuRJIccEE1clgdE4b5H/MB7QanWOP44FY0IfK7SrHG6NEdXski/skqMSPeV6KKFdhVt+NU/u8RnB2HJ2HOf0AaytwymST51mudCDY1CUPLnFMRtu8RVk4ADw5M0e99gNrkIXV6MjQxheqZXYsxELzXCl/DLI28nWhmwBEpUopd+64wrIg8lmfHH10UT6rqMBWmJpkLklVkZY9P37+ZeT+QAD6Imos1SpIFy1JLAg4lmxPrgIjn74TR6lRbpoATAHo1uOWwlvIr0A2RpUUypwl6yj8ZKsPAL/6W2HLfVtydlRgh0wabHPKS73Ky9pu+L7N/ER8BLJnxDIGEHtoz3Z/7h64cKAEJ4NpXtLCYNA3AR0y8SEvsdv/ItkxyAcBHNmfc7IO4F2FvW3Gp6fEVdhaducs38/2AwyutFk2JH5lAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADJ0lEQVR4nJVWi5GrMAxUZq4BXwlOCaYEUgIpgZRASniUcJQQSjhKiEuIS4hL4EnCJsKYC9EMwfij9a5kOV/w3sY344cdPuAvIAZ43gGGk8rPqDycu8VGNkG3gMbHD4Ay+HQ1WN+tJhilQA0aHj8Ouh7AeYDeMmgWbJPRuTNwvxtul1pD+Xhw2zkHum1hGIZ5bu90aLktd1mgsWma2ZGvOyh/xhcIgg5VBdp04FqNfa+FCll677OssoxcWO1tB6cLsSrgdrvN/dfrFX8N3BoL1gI55w3wGmzvYTSzsejh0lYEyxJ6ewTtyBHAP+y+9gZOzMghkxfAFqsVI1oYF8VdHo8ko4ZKOei9Dg4XcvFbhc4cKwk0Vqi9c+uAPh4ly+hRJgLzOKWzFbOOFsG2WG3GyBgzsyqKARe+GJGjQHbBQoKlrCLQzEZOiOwoRrbvmEmlIyM9y5azlBUBjXT6lcEBlILkKa6vSkBgRQHMqERGQ8JIWlM57qf9xQi0/XSImZHDEqNKpD4oPnKRfjTJqBaMVpK3vBirhF8d3T9jFKVLsy4y2pItZxMjfGzfZwvIrbag63rOusbEw2zhhKwWMaVHsJGcCehwxqBVyQABUFH9xvjApUMArAX4IB60Iaub0nEx1ah0i6SxtoIRfvrpNScDf/TJvXO8TO+4AXYeAcKcdoDUDjhltOJbMlp1ApUi8eGEczK6IixKxJvAH9fPu0/9zLZ5TVTorKdiGbJodq7UIga5NP8IKDXyd6ZGAKM0pjRwbl/mZYH0lLvMIroppuw64FEZazGXZCtJ15Y/P7th+fwgCN2sHaZxGWSMJoINCvbJtyXdARmMT+FMGsWqDuC0ie7isfxwufkYaGWUYeEIsHwN0RDXRAD5+F8QW+5uytmexHvLqMZyQHGqkjil9oPjl40/JruAMsYhI7ZxE/GMyXG0xa5SoDjpecfFAwVdDIY4UY6cMFl+n2JMiGwEiI9PBFLJM5sPcYpVIchX5qgG+X6xeRUgXNS/hHMt3i8gyJqSm9hjktEb3wtz6cQk8ywI2SBIF+lJsAJjcJ9ghbupXWzOmd7fuU3/B00/x55/7RviAAAAAElFTkSuQmCC",
+    "price": 240000,
+    "reqSTR": 100,
+    "reqDEX": 100,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 100,
+    "tuc": 10,
+    "incSTR": 7,
+    "incDEX": 3,
+    "incPDD": 105,
+    "incEVA": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 7,
+      "min": 0,
+      "max": 17
+    },
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 13
+    },
+    "incEVA": {
+      "base": 2,
+      "min": 0,
+      "max": 22
+    },
+    "incPDD": {
+      "base": 105,
+      "min": 5,
+      "max": 205
+    }
+  }
+}

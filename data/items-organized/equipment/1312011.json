@@ -1,0 +1,39 @@
+{
+  "id": 1312011,
+  "description": {
+    "id": 1312011,
+    "name": "Gaea",
+    "description": "",
+    "chineseName": "花靈之斧"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABvUlEQVR4nL3Wj3WDIBAG8PO9LkBHuI5ARnAFOkI6gh0hHSFdwRUcoYwQVmAEymGPUAMJavTeS4x/kl8+5Hi+wL7l/rbNnrBzFwSrDby+g9sLdigFHD4Bzu14YA/YSYVgfFKrLRz6cGzzoQ4oWAuIAvRgA0pvW8Ix6RTdEi4m3RK+m3Qr+GHSJXBs/nvoo6RzYecLmqb4O9VJ58ABNbYvnqfFoTZpCXbTCxg11mRRSmqNBSHq0RwcoLQ4aQaOaDiv69EsTPWtP8JWaw2d6p6OFmFGz8cfGMxXgGmfUbqna9AizCjfW9rXgwHVybDlWopOYcf3l4Y3TUoYou9RY0BQ15h1aApHlFOmqJQyHeq0HOSrqp3c7Uz+j1IxTmlli37Yx2sRJbTYxu+++ceLmgqJSyvS8dT6xWjsUSpGvRVA9ONOrwla3cfFtZdQLkrLaCtVOMYoCsV/fl0fE6pOGCZQWAY9SpNrig5mgKM8z0ZLcHwaPPQC+n5sn9NFxYWEUWP8hJOwqLKJCaX1IWkZdx3WBF1RObih517+nJ4YJ5Pyw6sWJ70H34Ajqq4nm8XrxkO4WEsm0mr4Wegs+Jko1S+KIymgv9TVVQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB80lEQVR4nL3WgXGDIBQG4OddF6Aj0BFwBFegI6QjmBHSEZIVXMERyghhBUagPMyjBMGQWH13RMUknz8K5xvsW/a2bfaErb1yMErD+yfYvWDLBYP2CHDupo49YCskB+2SGmWgHXzf5kPtUTAGOGegRuNR/NgSDklTdEu4mHRLeDHpVvDDpK/AYfIvoY+SPgtbV9A0xf+pTvoM7FFthuJ5XBxqk5Zgm36BUG10FsWkRhtgrB7NwR6Ki5Jm4ID686oezcJYF/Xlt0op6GX/72gRJvR8+IFRf3sYjwnFe7oGLcKE0r3FYzVqkL3wW6pX0RS2dH9xeOOkiHHu5qjWwHDW6HVoDAeUUsaoECIe6rgs5KtqOtn5k3yPYhGOaUXH3bBP3+VcQMe78NsP93pRUz5xaUU6nDq3GE1zFItQZ3mQu3HHlqDV87i49iJKhWkJ7YT0fYRyJuni181jROWJ+wfIL4MOxYcrRUc9wkGcn0ZLcHgbbAcGwzBNn9NVhoWEUK3dAyfgpcomRhTXh2jK2L9hjdAVlYMbfO+l/fjE9DBJN7wyl5QtOCbtKN3j5vZH1DwYTuZnQWnQTbSlloVZpqXoEeYJO8gkS1B9ayaFCeLRNkUvaf+Dyl5MKfHsR1HSGiDdT9sMpuGIcdxvMxeXS2IWju/O/QJWN0VwWpDl8gAAAABJRU5ErkJggg==",
+    "price": 350000,
+    "reqSTR": 230,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 80,
+    "tuc": 7,
+    "incPAD": 88,
+    "attack": 1,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Axe"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 88,
+      "min": 84,
+      "max": 92
+    }
+  }
+}

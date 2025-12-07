@@ -1,0 +1,39 @@
+{
+  "id": 1482001,
+  "description": {
+    "id": 1482001,
+    "name": "Leather Arms",
+    "description": "",
+    "chineseName": "加固皮護手"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAVCAYAAABVAo5cAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACMElEQVR4nK2WgZHjIAxFlZlrwC3QAi1wJXhL8JYQl+CUEJewLmFpgRZogRJ8fBlYgUk2t3ea8cRGhKcvC+Ff9H9sb54vjyb+C7BApmmqHOu6Zt8J/BMgLzZOiwDM/LssSwkghEDbtp3AfwPkP0/L/eTAWPCB5nkuY9frtQt+BciTl49PUsPAA9a54lRKkfee76F6UMec2/x+BBOh4zjyHOfc/gz4LQiWYRkEg9qccqRba118PWABGa1Ix4Vvm6XJ6AgZaI33LawXQDYzTmS3tUBb4C5BMBcXgMJ53crC7aJP1bpqagUsZZ5hXwsOZEiTjwWARafR8PjttpGOyp8FMAyKlBnJWQ64FM1+v9+5oua330RJZQ2PSmkgm0DsewBDRhBczwDcsX9Q0pjM9xGKUldCqVSNYKzzXbXwed+HZSDKtaQg2xrLGpWGsUfg+FDUjgncWgh1Bk5VCkBJL1TH/GulCxjKcrolCFvG42pSmbeUBF7QCbA54y+DYi9kZ061p6Qi7S1nXVWJPmcowfxRIIfFgHsKL6L9nAqhVSwXxD6TquBDWwtpDMErAZUp5QYL8JDSgHdrjDkpzqfD0Se/FgQsBxeaIPL63dYGSILzvVSM51xk6B64sMcABQw+XAhaFNvT06JKr7S2mmX1sopYQAgym2oayEOFMiJrLReUVFwgzbt2ruljHXvleKoUcyeJV0htLkE4QJz08vRP77469V89gMufxOfDyYf7xn/6xPgD9r5peq17M/cAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAYAAABvCO8sAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACeUlEQVR4nK2WgZHjIAxFlZltgC2BFtyCrwRfCd4S4hKcEuISziWcW6AFWqAEH18GVmBIsrunGcYYET1JFiJv9H9kL94vrY0/ASbIOI6ZYlmWqDuBvwNkY8M4C8DEz3mekwPOOVrX9QT+CpB/PM73kwJrzjqapimtXa/XKvgVIG+e//wlrRQvbMYkpdaarLU8R9RKH3tu08fhjIcOw8B7jDH7I+BTECTCIgiCaGPKke6u65KuBkygvtPUecO3daOx7zxE0eLnJazmQJR+GGlblwQtgbsEQYw3gAinZU2GS6MPozXZ1gyYyjzCPg0q6qkj6wsARseh5/XbbaXOR/7IAaU06X4gs7HDqWj2+/3OFTX9/kUUoszhPlJStAUQ6xowZATO1QTAHecHJY3NPPdQlLoWkcqo4cxmbDVa6KytwyIQ5ZpSEGXxZY1Kw1oL7F9StEMAl+JcnoFTlQKQ0ouoff473SUwIovpliAcGYtRpDIeKQm8oBPgcPong3wvZGVMtaUQRThbZjNZJdqYoQCzR4Ec4h2uRXgR7edUCGXE0iDOmYwKOrQ1F9bgvBZQmVJusACrkAZ8277vTxHH2+Hok58GAYvOucKJaL/a2gAJcJ7LiPEeiwzdAwNnDFDAoMOA06LYHt4WWXqllNUsq5ej8AUEJ6PoooE0I5QebdvGBSUjTpDiWxtT9LGKvHI9ZRFzJ/HDhTYXIOwgbnp5+4dvn936r17A6Ufi78NJh3mh//FfDJTve2VNynuhyzpBC6iKZ2vtmTjx5FECVWO04DXjtXUMVJiVwGhci6c0/pXImk7UImxtbt85ua6cZ+OtUFp6nrpTIbzgYJr/A2J5g6WRERmfAAAAAElFTkSuQmCC",
+    "price": 3000,
+    "reqSTR": 20,
+    "reqDEX": 15,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incPAD": 22,
+    "attack": 8,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Knuckle"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 22,
+      "min": 21,
+      "max": 23
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": 1061050,
+  "description": {
+    "id": 1061050,
+    "name": "Green Huntress Pants",
+    "description": "",
+    "chineseName": "綠遊俠裙"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAcCAYAAACK7SRjAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwUlEQVR4nJ1WgZHiMAxUZmjAlJArwVdCKIGUACVwJfAlfErAJZASziXgFlxCXivFjhMCZF5zXGwirddrSWZHzzbQ/1tVTpbgw+9fQ7U1ZKzl6Y0/LbkfR8frIOPoPfUuUHOsKfhIIUTqPVHD7u0fIVa9AhdneTqX/RB8HIEBiHnvwywO3y3tCRyMwLo7OLpelZ3rGfDQkzGjEw/uF92d73rqXBTmPHwJLpIY++CAvQDDDl2kumZU/DFojLqz759IjzuJhM0oze0yl2bGHI7QVcgxK8gAQCPgShv/sQCm8p7J1H5P5ONLWUbWtljkxpLsZa5gRnfA8DiXyJpDMmvbzB7vb5eY2WfmCRCS2FMjO8iS6AoCppR1sZa1/rVeSXEGASMlRGJesG7zC2y5NADnHTQ4jzgdMJOqa91lyX43sVZAZa2SmKQzP0MMdOSpi/Fp0SQNxiX7XTo8LZivcZEvkSSBFxSzRPKdYYZcDlkar7mYch7gVVW5AdkDecYznTDNCEZahW6Ry/ARxuSF9f47F1c+UMnL73Mc6OxYUzNJUteSGTDWkRlq9ljLBRY178E+nCfQNFhWKF4McgZjVmQldKsVPwcqdkdaX0/Aa+B5rzj1EFQS72IZWPkuDrZRv1RUa7YKnnP7gwkBH1++f2q5zUl7iqQTM4phPTiE1HPQHojskbDD9y2XNrLeYquyfGI989sIPjRXTgMEFORfagq/esooqSuWhwt5veUin8W3CHjLvA9vnWbgqcojpd6NTijDah5GVd8FPnwUkRH51taYgSOvTVE/n5hnH2QMYhZnkC8LlDxXei6cLQY3xMgiYWzBhe6Z+Y3zFD1CGCRZ+HG/jD1nLo3cAdJTxpaCqxCL3E/iP5cFffxx0pso/RZJUq3ZFv/cFdF2h6HVy4J/IzSkAeiEtHKgW/x3y4AVkhWt20f/f0gtmfCEgOBNAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADBElEQVR4nJ1Wi3XqMAxVzukCZoQwgjtCGIGMACPQEXgjNCOQEcgI9Qh4hOcR8nQlxzjBAV51SmMHWVdXP/NBZRnp91KVXpaAxp9vQ7U1ZKzl7YU/LfVfPe3Po6yDczT0npp9Td4F8j7Q4IgaVm//iJMPYEVGOCjPvk9nYGgfQWAc+8H52Tm8W5MiEDwFm27X0/msXvcDG98NZExU4sX1pKxdN1DXB2HEy7eAJGzG3vjwRkAguy5QXTMC/hggBGX8+RXodiUJcxPDdzmVw/fACIeQB3GavUWoYNwIkNLBf4BhK9+zY7XbELnwVugiG5sBXjhsG9mrYaPMGAp5DJwjhNXaNrHC95dTeGA1YzQZR9jsoRFmKWyKJoaVigK3nJsf69RBrkTYmIqpxChj06YvEZZcAJKYNchfuBcHO1jXyr7EKjFSNmpc2WjYzJQXfvrgac/bPsw9zsOHdYlVAro35zYCbiVsE1DmegqjvDPsObdbCp/T+l721ARUVVU/giVCGOvhbt9Ew6Td3y96BTrChJyw2XymRi4Wg7z8PIaRjj3nwNzDVtdSYRCOO3uuVWgtN3PQvgIrf3wEKAHlSqPkLFZXipaGo+LnSBlr0l5eBVkDioe1ZzycZDDXh9xI5bow2kb1pgZ+JqtAqXdeiDjjwku94jXRHHTGSYmyp8GXDXk/zUCMKCK7JzB//5qgN9n8j6yG7hWbmd4vgMbmzOWEwxmp1RxAr75XpvQwh5AHyOtrAv0i57LDz8QP/rVSCWiaNIGmuwcTW5bLBFdD57lw0LBGQvwM7wEIfWOyXn3lbNJB5eHMSs5mFx/GDk+b1KQLKZYi1HBGAH28Ngp5mjG6cB9gZolnU+j4cT3JDPzL212mfsUAlhkXRxyuewBeD6JPCkmS8QlIrOIeuh30hp1+q0H8/VdVkzv2hj4mInb+I4Lgs+Or4jqOrV58/LupIT2Mic3SLcLXsf7hif4xd2rGiKXlwxd6lC8qy5H1vwvvEeKQfz7iwmdgWyon3kTdpWwX+1Ba/wM87qkGBZXwrAAAAABJRU5ErkJggg==",
+    "price": 22000,
+    "reqSTR": 0,
+    "reqDEX": 100,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incDEX": 1,
+    "incPDD": 21
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incPDD": {
+      "base": 21,
+      "min": 6,
+      "max": 36
+    }
+  }
+}

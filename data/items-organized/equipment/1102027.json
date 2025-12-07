@@ -1,0 +1,43 @@
+{
+  "id": 1102027,
+  "description": {
+    "id": 1102027,
+    "name": "Blue Seraph Cape",
+    "description": "",
+    "chineseName": "藍妖精披風"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 75,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAdCAYAAABbjRdIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC4UlEQVR4nK2Wi42jMBCGf6RrwJTgK4EtwSkBSiAlhBKghFAClHCUsJRwLgGXwM2MccIjEKLbkVba2Ga+efx+/MJ5G3fGo7MOzsAEokyOm6pRuRwpapmorQFsNw/iEPwONkIbKK3hbI8CCQ31hEpkksehc5qzfrUH7wKPYGNzA669B5Hr54zy//O40gmatEPWGpQpULTYBe7BRi6b0VQuqyUbcu2BBFL0F0BD2cLRdAAC3W70u5mxk6+6gSb/NknJYbvMiMbY4iJ9rB90h7gyu+V8BRuHOwh0h3UWw536YVtEmZZJyYqSHG4V9StFfNULaJnUUoy625bzZWaXvsF3fhVn0YU8O415zzirKONMHcY/PhjXO/xucxSWoBzNi3KuYSIKozNyZsRZyOSV8VycsW8jv4e8RjcJ01B88XWZ3RoWZdUk98Q7oAbh0JT2raR1cZ0+x7nHb8o4qrQkUfg+cM+gJjUqhUObQd1OKTY9Y5DS3rGmTvddhdAvLhumQFj2XpV6GdzD0VaVc5jsrbnZoxKGjB8/1fzny0rs7jNnHT41zpAD9KJym+yWsKkcZ52+NPaxM7eAzfu1dOCPKDn1UeIT49a4rpbsAmzTr7UxiA5ZNLeCrpnmJEk9bwQc9IzLJOchKbHUrYAw7cPmluHqSpnjNXx2JtO18+SozRY4dVOf0cqRoEIpHzAtl6TafJjTSV77Yy7sF8muTAu6TM3SaZD/SiShlAyT87DaCWwFChbxJZkbCsQuy7dRqpraYKcy8qFZ9fhxC33T044SmEpWuz+Yz3bvTRHJnfVmazamRVb59QyLoi83jt9XXLqVpN3/p2tmwTzVqP31wOIQ2beFRPPGVwTbjyKG9L6Z/JvWfKc9/ARYFMX1OA70HCgMfsL4TRJ9PUFzmDfLO/djGDsbuRra+prx+4RaswCtYdK74Z7J1Z59QGPFDabwQuN3S7wFrWGyYHo3vFx8YNN3DKl3v/0H20xQ3pFui9AAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADGUlEQVR4nK1WjZGsIAyOM9cAlsCV4JXAlqAlaAlrCVrCWoKW8CzhLOEoQUrwJUF2QcX15r3M7KwQyJefj8AHXJclMp9cNXAFjEGEKuEuOmhNCTl0rOi0AtCj78Qp8DuwBaQCISUYPUENGU5NCJWxkuZBlqjTdrUFjgKegS39HaCaLBCafmmE/aZ5ITPo8xGKQUGTA9QDRAFjYAulTUlMl5YcDZq2gAgk8OeA5mYAg2oHCDBGvY9GRka+uh4k2tdZjgaHMCKcI0nr/Ll+liOkrYqm8whsmR+AQA/QRsP8wHroAZJCspKjwiDne4v1yiGtZADaZB0noxv36TyM7Db18F1WbCy5oWUjwa8ZRZUUFKmB5Y91xkwGPocSao2g5M1BOrdgTAolCzSm2JiL5EhIlxZkW/F4LjsYV2Iq9C+twui2YEnRrnTPrAEsEJyKkLaUuC7t8tc81fhNGheRN0gKWweqGYiVjULAqXigJpKKXc0ISEhrWGKlp7EFVy9KG6yOEO0tK2Xo3NPQnpU+GJ8tX/RZCl3Ez6Hwh4eZiJ4zow38VihCctCSyuyiC8HWdFw1eihkI6ILwPx6hQZsi+KuDw38Rqg0Zuw4Oge2q9dWCAibLPT3Gq+Z/iKSeN0IcFIzShP3Q2RiIwcGgvUc9vcCKtOwjtZQ78zWa+eFI3ZH4NJNfYUrZ4RyqXyCSb4kxW5jiZ28s23OnReOrslrvExVaNTRf0MSl0oC437YRhzbADlJ6JIsFTqiw/TtmCrWMug1jdQ02wn+u7i6yfVEMZjINqffiY029qZI+M56czR7NUDR2vUEliRfZlm+K7iNG0qbfw9Xec682Cjt9UDkYNoPNXvj7Ttq+ynoaWYy5I+d8ifv6E572nFgSZJ2yzLjc6AOGOb8Epv/t0JvkuSLPz/XfSY8Z5pObgDmBj7IFpAqcqdsSG19o/cJloY+KS6iK9FTf3gGPnHBz/wo+GovjiM7FGLcrGpLNHq3pAxUb9f5kZHBG+b4zzquPJCzHkK6Cvc97Cc/zYt1Pvh9eBu0i/AkGhEBNt6+rXPP77+GUmM3w7Kh9wAAAABJRU5ErkJggg==",
+    "price": 200000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 75,
+    "tuc": 5,
+    "incPDD": 25,
+    "incMDD": 30
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Cape"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 25,
+      "min": 0,
+      "max": 63
+    },
+    "incMDD": {
+      "base": 30,
+      "min": 0,
+      "max": 68
+    }
+  }
+}

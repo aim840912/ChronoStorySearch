@@ -1,0 +1,39 @@
+{
+  "id": 1322003,
+  "description": {
+    "id": 1322003,
+    "name": "Lollipop",
+    "description": "",
+    "chineseName": "棒棒果"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACMElEQVR4nL2WgXGjMBBFl5lrQJSAS+BKgBJICaYEXAIuAUowJYQSTAmhhKgEbv+uBA4XJxZjLI/ASLBP/+8K+w+9rk3co1cBp0+TUGzH6RVAgXV2lIu9gdM0NdT3HZW5AHe1dIbleS8wHPYCio1tVFKp15Gf2AP4n423k88GfmvjXsC7Nu4B/NHGZwN/tfGZwIdsfBQ43Rn3QR+28TfglKYpXa/XecDeTMZRNCmtCVJ2D8irXgmzVrsx0j/dfBlF1AbC1sDJBwPAns9E46ggQmcoK6fiKJc139tGQawvwFmZ7TqilteeuOCAGHfXmcfLN6IsIzoeRa2zeLOlRAByMCqKWa0QAa0rTSjUD6w+TTYpXPLW8z66XDQoVKYZmSQRmHChrq4dmAeGIVjlF4UWENgFBUdWyDDJJWAFjzcN0RtD39/nItKVhClc2jguZyjDAvrBqWersVWyQhdUVQK0W4DLI7467HKSIjVkxkTFIL9QWen4GMZbKTSrryicxKjNKCb8LzGrQjEU1FZV6p5GUGyBitUkrlrFbp7vWrWbvAFhRAAjVJlsehQGPOIqtOVJrcM+BMzbi0qGYtJ6+RtLcW7ch8hPzpBLoxUJG4deXwIZ99NJKxMvBFEYmMAb4KzSNjWZ01nzBRDshcJ20EWQmgBWHsdB6tYKBfoBKDY3RzQMsm6/4WMFZik/HOZntiqcAxzcz4+AWaFPHc4HVYTkhb+17wAFioMH+2b0rbIZ5Ns/ZbwYU11j46wAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACVklEQVR4nL2WjZGCMBCFNzPXQCgBS8ASoASvBClBS8ASoAQt4ShBSpASTAncvl1+c+cPjshNDknIfnlvN9Ev+tzVcDOfAjZXG1Lg6uYTQIGdXC0PSwObpsmpLE+UJgJc1NIeliSlwPBvKaDYWJiUUn023cASwD82jgffDfzXxqWAN21cAnjXxncDH9r4TuBTNj4LbG70d0GftvERsImiiM7nc9/hRoOBMY3S8lnKbgF51Z4w57RZK+3ajqfGUDET5gObLhgA7nAgqmsFERpDWTlttvKY8buFmcWaAHtl7nQiKnjtYRscENu+deD+9Jsojom2W1HbWvyypUQAcjDabHq1QgQ022lCob5i9VH4ksIhbyXvo+NRg0JlFJMNQ4EJF+qyrAVzR1XNVjlR6ACBXVCwZYUMk1wCtuH+PCf6ZujPT19EupJ5Coerroc7lGEBZdWqZ6uxVeKNLmi3E6B7BThM6arDDTcpUku2DlUM8guVO+2v5/E8hdb7iMIJrdqMYsLvEusViqVZl1el7WwExRbYsZqwrVaxm8dPhdpNnQHziAAaVJlsehQGPOIqdOlercM+BKyzF5UMxaT1sg6kOIM7WiemTxUiPwlDjrlWJGysSj0EYm77vVYmDgSJ1MeKHsBc1zpgr9LlGdn9QfMFEOyFwqLSRZCagOlJAGHEL1PsK/GgaMhJPVYYMPR6ARSbm9+xDHLtfsOfzGIfk9Wqm4Pz+14S/yzCP9rWK2Pke0nArLBLHe4rVYTk7e8E9j9P2pc3CNmyfAZfxhGtnirrEf+Rmn8X8QvI9jEOvx72SQAAAABJRU5ErkJggg==",
+    "price": 20000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incPAD": 15,
+    "attack": 1,
+    "attackSpeed": 3
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Blunt Weapon"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 15,
+      "min": 13,
+      "max": 17
+    }
+  }
+}

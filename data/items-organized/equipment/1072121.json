@@ -1,0 +1,49 @@
+{
+  "id": 1072121,
+  "description": {
+    "id": 1072121,
+    "name": "Blue Pierre Shoes",
+    "description": "",
+    "chineseName": "藍精靈鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwElEQVR4nKWW3XXcIBCFZ89JA6QEWqAFbQlKCd4S5BKyJeyWEJVglRBaoARTgsKdYRCShSw74wdkhPi488f+oP+zeWfu0lr8HVgBmJcHjzF4mYiRyI9zC/gV2LwFRD8ub0OQ0fVN4FnYvFIRwxogL4i6F1HXsDMwBh1CYAw6VteCLYFPmxR3KSRWMNcl31qZgyjTPvUejJU4Z8laVyZDTgLvBRTHe/WJESBocKOJu+q2sLl7vDHEWUMun9LjW9tRwOiwX6SRcvz8RGQzjNfHrDCKa6dnAX5QBtBgYxoXf1iSoMf0F5IrR3Ks3MvWGUhZnVmAFDh74/PGwGaC4PTGCBBjrLKsBybte6cMBKx4tIZVNbij7PK8/pzp7Z3VKagerbWszntPQ/LpL+yFJNmqY2ZcqdtTxsCQYjdYxMgVUG2YBxC7muT6tTvNbr213HiZbtfZpxP9yRvDjSGnvqqDwQP3kIHsTkAsK2J1SamWzlFRXyD96ru0viunjVxPAsL84FSppSlU7qTs0imBcgmdalcAGLPUnMQFzIlec31PwVLX9zSxOiOH08TJhzuClX6IUy/muLDZNdpRrHSQ6fUmKhTi8gHl/2bqc3E7ZBnRKu3RSaTGenDlvXYTrEOqa4KE4vLdouaeOPydydYJmD4OUaAo+gLMrcv0gyj1eq9pD40FtIXNCtE2VbcrwLbFrcbJ4SkrWpRsTWErUA2px0ODyxA7H5pLPsRsu7GqgjVVITF4sSTCpzAu2pSyUFcDt6DtVePH6qfBJwbYjN6GTTj4O7dfC4TM4yJn9x2rKspMKtLpeU/Xz7C6MIu6qnPXl6fJpXEGVGBq8H33+7G7sFajxqpOghR2iek2NfitYSUGUXsfmiiec6eAklj//vgCSGGkQH5KUIZgo5Rp/MxNPNRK1E6Dalj5sEDleb3atwv2jP0D71uvLmEWKjUAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAdCAYAAABbjRdIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9klEQVR4nKWWgZXbIAyGlfduATICHYGO4IzgjnAZwTdCM0I8Qj1CPEJZgRGOEVx+CTB2wJe25PnhYMynX0jCb/R/bamMnVqT/wWWAer9zr13Vga8J7LT0gL+DWzZA7yd1qfOSW/6JvBV2LJR4d0WIA+IundR12ivwBh0CEFj0LG6Fmzd+LBIdleC+AJmuuBbLWMQpdpW12CsxBhNWps86GIQWCsgP92KV5QAQYMbla+q28OW7v5giNGKTLTS4l3dkUNvsJ6nieL+2ZlIRxjP91GhF9fOYwY+KQNo0D70qz80yab78HPBlRMZVm5l6QikqE6tQHIcvX68MrAZILBeKQGi90WU9cCEdW8UgYBlj5awIgcryk7j5bzQ45PVJVDZa61ZnbWWhuDTH1gLQbJXx0y/UVdTxkAX9m7Q2COTQWXDOIBYVQXXb92pqvnWcuNpvl4WGyz6FReGG10M/aQODR64uQhkdwKiWRGrC0pT6hwl9QnSL7YL87tsred8EhDGB5OUappd4U6KLp0DKKbQS+UKAKXWnJN9AXOmj5jfs9PU9T3NrE6JcSlwonFHsFwPYfXaDCc2uyZVFC0VZP64iooEMdFA+d8MfU5ugygj2oQ9KonkWA+uPE/VBPMQ6ilAXHZ5Nam5Jg6/F9JlAIaXnRcokj4DY+lS/SBKbTrXUg31GbSHLQmSylRZrgDbJ3dqHByWoqJVyb4l2AZUQsr+sMFl2DvrmlOe9my/cFKF1lSFwODJEghfwjhpQ8hCXQncg/ZHjZ2KT4MvGmALahsW4c2vnH4tECKPk5zdd6wqK1MhSefxFo6fYXNgZnVF5S4PTxVTI4LO9HxOb/y+2TP4vvt5r1pVqskrQZWALpSz7gnk0wXYyYfTVOFbQ8se+FT7UERxHysFlPjy+0NAtwqoBMo5E66k7ByAn3wXoAzBQiHS+J6LuCuVpDZS+xPnKXRLN37HiwH6yLPncTtbXPlxsOj+fnO9FQ9ctPJbHKtZrGoWV8aqBvwBRhfHQ+jr8d8AAAAASUVORK5CYII=",
+    "price": 35000,
+    "reqSTR": 0,
+    "reqDEX": 130,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 40,
+    "tuc": 5,
+    "incDEX": 2,
+    "incMMP": 5,
+    "incPDD": 22
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 25
+    },
+    "incPDD": {
+      "base": 22,
+      "min": 2,
+      "max": 42
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": 1002163,
+  "description": {
+    "id": 1002163,
+    "name": "Green Hawkeye",
+    "description": "",
+    "chineseName": "綠雙翼之帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwElEQVR4nL1WgbGqMBA8ZmwAS8ASoAQoQUuQEqQEKcGUICWQEqQEU8JLCfxsTGISiO87Om8dR0ji7e7dJbChNGb1zej7cHE39LeY/ZsU+Xy+5tQd5Dfdz8dzTqyTv5JrmMXfEDBfbwVxLoPBJHlR5CSEpG9BymWsNXKt0uIL7lddp8ipLm7ERfUgr0diVNEnWHOdJAf25Z1yyelDzArU9tv/J4drkAOMN58KULGulOf5I56XxaRzxrc0TR/zqlqns5es+TDt9DVUM9LuZ3oPukGH6fAeOdJ+rH+Iq0/TNHS/jdqBEILqff1YZHpISkF5Ueh7iY/anljXs+FlvVPk2aES82XcUttITSwUAQJK9R16Fiw+XS4kVH2kZnfEbh6ZA1DzqqpcRpLOARCP40UTS+MYvzGmidsUqOsHsT1GX7mOyYOaWscgRFA5hI2j02862HA7YsAKGMfRd215gqfa/PNzd4G2250mBlDPY71/OjRMpRpz6VYQXlasJghAz+D3fr+5+d2u0gI2lrhrW8rrifr2kW4dUDmeVrYKXAt/H0YnmJcQlwGaOn3PVAYhBAKCmsenYNDdHmLXKeJQwMMEiFnf62tNjpSeVdci3bbW1uECkkLiqNFiEcgkYMvad51b45wHNTXgKkVrHR43m4X/omBhSQfGFnPplwmJZ3pBeVkspsq4AQ2OSlRdl4EwzodFPe1TbmNvsB1wImXZ87F9vZ5XdYH4cOgW48xsx9VyLdfpbs9UoBkdzjnTAqSpOXrgdNwrp2XwZxBj3dOJcG74YJxa9+raGhdRCRdpH4beXYNYN9JK3f11Nrp88dZlic3RGxwyWdO0s93fNhIWaueou3GCB8dJ9QLcXy+nBcmkdkJZloGSNeLYuRbgBwIxms63BQ0Yu5xPdGh7ioFxoO2WcxS9B24Sk7On9C14pL++cP4DfRmvMMPjGScAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9klEQVR4nL1WgbHqIBA8Z2wglhBLSEpIStASTAmmBFOClGBKCCWYEqQEKSGfReABAf9/o/PXyYQAsrt3B8mW8ljUtaHvw627pf+LxX/IkS+XW0H9UX7T/XK6FMR6+VdyDTP5GwKW270kzmXQmSUvy4KEkPQtSLleK0WuVVp8wX3SdY6cmvJOXNQv8mYiRjV9gpTrLDlwqB5USE4fYlGgbtj9OzlcgxxgvP1UgFrrRkVRvNbzoph1zviO5vljXpXrfPSyOR/nvW5DNSPtfqHfQRfoOB9/R46wn5oncfVr25Ye90k7EEJQc2hek0wNSSmoKEv9LPFT2xPzBja+zXeOfHOsxXKddtS1UhMLRYAFpbrGgQWTz9crCZUfqdkdsRtH5ADkvK5rF5GscwDE03TVxNI4xj3GPHMbAtV+Edtj9J3rmDzIqXUMQiwqx7BwdPhNBRtuRwxYAdM0+a4tT/BWW57Ph1tot9trYgD5PDWHH4eGqVJ9LtwKwouK1QQBqBncH4+7G9/vay1ga4n7rqOimWnoXuHWCyrHc2KrwLXw92F0gnkBcRGgudfPTEUQQiAgyHl8CgbV7SF2nSMOBbxMgJgNg25rcoT0oqoW4ba5tg5XkBQSR4UWi0AkAZvWoe/dHOc8yKkBVyFKVXhcbBb+h4KFJR0ZW43lPyYk3uklFVW5GqriAjQ4KVFNUwXCOB9X+bRvua19wHbAibTZ/Ly2b7dLUheIj8d+1c/Mdkymaz1PV/tGLbSgwjlnWoA0OUcNnE8H5bQK/gxizPtxIpwbPhqn1r1qW+MiSuEq7OM4uDaIdSEl8u7Ps6vLN19dltgcvcEhs2nbbrH7266Eido58m6c4MVxVrUA97freUUyq51QVVWgJEUcO9cC/IVAjKLzbUED+q6XMx27gWKgH+j69ZhCcNjHYYcqWHx6Sn8Fj9SvSGkuOBGmvSIvzNWae+n1+/cc/KwXib4AqX3uE8R/fPchL9+04ytJjgERCUi5LTJC3oldzf8DzC7EcIE1R8YAAAAASUVORK5CYII=",
+    "price": 15000,
+    "reqSTR": 30,
+    "reqDEX": 95,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incDEX": 1,
+    "incPDD": 21
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incPDD": {
+      "base": 21,
+      "min": 6,
+      "max": 36
+    }
+  }
+}

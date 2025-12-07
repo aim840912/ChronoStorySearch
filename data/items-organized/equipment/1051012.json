@@ -1,0 +1,43 @@
+{
+  "id": 1051012,
+  "description": {
+    "id": 1051012,
+    "name": "Blue Engrit",
+    "description": "",
+    "chineseName": "藍護身鎧甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAgCAYAAAD5VeO1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACtElEQVR4nJ1WgZHiMAxUZr4BXwn5EkIJUEIoAUoIJZASnhI+JZASSAnnEnAJfq1iOQ6XBPO6YQA7rFZraX2/KD98eC9yf5AL7k/NnQZraejOPjdBDriv6j8CnK6F980kW+ACsGdgU5q4aPg7wvHrXRVr4N5UJ/kw2IEoIV2W1ZiEX1LRRoIlcAF+PEaGt8uFTtdr3NztzjHJuwSv4AL8DMCWdb4mwAgkRQLLFe33e37IrSb4wVwZK3hZlrN96xyfQ0kdV2SZfcnn4ayjpUjBvcpgjKGqGrXt+16SIBwDy2sYCBUyWyqbv6vyfDJEs6iMpV6qc8KeFtjPwGtm0bZH8t5H1qJrEj0zt7cbVbze73bzhBP7CO4pM9IxgjwISEMMmmp/fTzowomFOZjih7+LPNvoO366k1SFkuu4YgVOmY+smAk22vNNEs17ZGSNZ2ADbrhRGDKv7JUgnmmPxwkc2lLojhRsGMZeToFRbhUsgLfp20+qWsaRc+LZ6FUWAFy4BQFWmXEK0e/Q9RUYhy5AQV9I2TSNYMjhM0k1OYAXHP7+fJIJi8iKRkAC6fu6jsCG/xzN2y61h5JnhMLgqebF4etr1jX1vp4OuG0jMAYMFU0+SQU/57+D5gjGkvW0z9NWiXbrRIJBugEXBgJJcOLY78NUIsEr1uqEgiF8xSaXBOQwKed5vHXFGO1lF5m+rmto16zFop+LfqwrtEsBusQacoZukbmcNcuCDkICvZU0VCiQ2EqwCK69jVCfeAXW/U+ZT60VAJr7ndrDYQYqNsCfw17WNRdDpcFAJP9WyDzIyId1t1FB9mWRMFxL/H/gFYOo071JvH1Ba8DdYGQoW9wxON3S3ifMvfZyCbvFbU80Kx/up3up2eWAx0g7I7SjlA0X1csBkvUr7BdbsZibUFx/88yPVvwH926qwcg4VnkAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC5ElEQVR4nJWWj3myMBDGz+fpAukI6Qgwgo6AI+gIMAKM8DnCxwgygozQjCAjpPeeCR4RFK4PlSbxfvc//aJt4sPnbuP3aAvIn8or9c5R3579VthakM+KfwLRa+FzFfATSJTtGWKsGRcN/w0Z+Fnr3TuQN9lJXnrXEylnrM0eQH7E0xWwJZBAbreH5ZeqolNdj5t5fh6Ba2FzIIHcA8RxXmoFgcAAwBx7ut/v+dDwETbrUfQkgqy1k303DJw3Sy176tgry/kb3EDvJAVJ8hEqYwxl2SMXXdcJEDIwRJ6+J3jOXpAt/38M4daGnUhmHHXwkL2BV/TGqxdQwdY1zZG896M3kgclHXvkLhfKeL3L8yn86VWUnQZ5Wim6ZRFCCMJHDNC5qm83qpQRo0fwAEp+dusmS9fy6dZFi8XQliMRIalMQodqwqHmfBGoTQ67cAajaOgvFBraR6+isTjTHI/zIOSCQpVpxX3/6BUNQUiyMIZ4m379M/KO9Uheufe6udBBWcVlDcWZeXQ/+gl5SCEoGFEa8oFwl2UpOqRw2OBkAI+gHYu/3u9kwgFYA4MAk74qihFi+GegaSnrEWW5Bylpcp2j3eH7e1J9xb54FkfTjBA0Mzw16rt8zv+GHEFYl6zPgSYbpK6IQcLUS1Xh8oMAiGrBfhemAWALut5PBliOOedUvBEyo31ZNnQib0FNlY8epOtRYvV9ksX7SOLNeUCstbJWjactDb7okdQMhw6VCFi8baPEYMKgNbBFUOwdSDq3IiTur5El0LNcg7LyeqXmcJgAZBTxe9jbfJWPEsOH5lOdLv0mYyesDys823TxKcuXjNB1P6GnIJN8jpKxwnQizxhx59eDggzxiSAz88gUxpBFaGSKq4mc7mmbEojU1ZdSbNVnHXvF4orAfz1Ek4mMKR339CAOOl6Spj2KMjmkKyyUeIVfPO3reNEhrN3Tq16HTIcuuqdhOSt6vY95/cOZn8TQ8f0Pnsu/fpM5FqsAAAAASUVORK5CYII=",
+    "price": 30000,
+    "reqSTR": 100,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 30,
+    "tuc": 10,
+    "incMMP": 30,
+    "incPDD": 52
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incMMP": {
+      "base": 30,
+      "min": 0,
+      "max": 60
+    },
+    "incPDD": {
+      "base": 52,
+      "min": 22,
+      "max": 82
+    }
+  }
+}

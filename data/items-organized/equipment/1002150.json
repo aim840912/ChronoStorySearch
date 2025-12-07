@@ -1,0 +1,43 @@
+{
+  "id": 1002150,
+  "description": {
+    "id": 1002150,
+    "name": "Dark Tiberian",
+    "description": "",
+    "chineseName": "黑提貝之帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAYCAYAAAAGXva8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNElEQVR4nK2WgZWCMAyGw3su0BuBG0FHwBHoCDiCjIAjyAh2BBlBV2CFjsA1hZQ0FNS7y3u8Qm3z/UkTcAdpG1bmM/gHk1APK8syTFhrw33XdSkxHwvh0IHDUlYUxWJuRcimGIJ6IEallAo/8ii58TUpIULMAh6ll5xJOL9/10jMBI/ACA1RpiBrwLUspOASvOMO+r6HPM9/BcS9ZNxHCrxoGQ5G6DvnTEAaJVTajjuXTnDzJ0BcLzNFe3i0CM2MMQNOrqV27fxkhDjihb62ii+k16mAT9qGg5tqFpu7vfrSRWtkWwUobqxbA7KStyIjq9vxuSwUPMHC7byHfO+uvHBrOzjolpamC8mlOijjzreqM+zt+ml8OgF4b+BclV5E7wJx4sKZegXThHeIqZb2aBTU3R62jMSgwFlA6zOAdi4VXIwddqlNCEDTrfJzt+oZOX/Vv1TFlB0SMJ69hQUUAbrdT88j4GTGdN+vBnTt0tWYsAefpRgO531PZ784U5VbuDcsvTwoO4M8WNQbznERHIxWODYGHb4yWDwY5bFOfzXI7hSlA+rLWOn36yySg2XEU5azuWWKMa3U4NIoRd96fuuQgOOJ0h/DURgPAmvlULNCwqLBnlqzVPuQgHAcU7oxQhLiBUyFeKgVRIVEB56KcksIXtkBovduDJnHW2Xd/Xym+KYY5KdNRviOADQNY5SPJm61L+1TkfHqzabN0X+eV5+pNQFoFCGbS78GQfy1kCL+YMHvD7/wa2ctmPEJAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACb0lEQVR4nK2WgZWDIAyG43tdgI7gjdCO4I2gI7Qj1BHsCOcIZYQ6wnWEcwVG8AgSDBFse+/yHg9E4PsTgriDtE2Z/gL+wSTUweq6Dh3GmNAehiEl5m0hHDpxWMqqqlr1ZYRsiiGoA6JXSqnwknvJjY9JCRFiVvAovLSYhPP2q0ZiPDwCIzR4mYLkgLkopOASvOMLjOMIZVn+CYhzyfgaKfDqyHAwQl/ZZwJSLaHSdnxxuQhOfgeI42WkaA73FqGF1nrCzlxoc/snPcQaC661lXwhvFYFvHNsOLg7LWJLO7e5DtEYeawCFCe2vQaZyVuekbX9/FxXCh5g4HY5QHmwpazs2AGOTU9D04lkQx2U8cW3sjPMHUZfP6wAbGu4nGonYrSOWHFhT50C3+EWxFBL++4UtMMBtozEoMBFQO8igHapFVy1mXapSQhAa3rl+m6nR7T4s/NLWUzRIQHz3htYQRHQ9Af/PAPOeg73/UtD09pwdTrMwWcphsP5uae9X+2pKg3cOxZe7pRZQA4s8g37uAgORqssG50OtwwmD3r52aZvDbI7eWmBzXXO9PvXIpKDpcc+ysVyZKo5rHTApVGIPprlq0MCPs8U/hiOwrgTmCvHliUSJg2eqZyljg8JCNvhw40ekhAnwCfisVUQJRJteMrLLSFYiiNE390YstS3k7HtZU/xSzHJq016+IoAtAZmL7+7+KjtGxeKgmdv4SdH/zzPrqmcADTykPWlP4P+BY1WdvAP/I/tqSGhKlHO7B0k2mS568j4giFDdw2HEqRkNQe8/3eWEZLyNDdh62I1G21ZIih2jPA8jCojYEtk9O4XlriA3mWPiQQAAAAASUVORK5CYII=",
+    "price": 10000,
+    "reqSTR": 0,
+    "reqDEX": 50,
+    "reqINT": 0,
+    "reqLUK": 65,
+    "reqJob": 8,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incMMP": 5,
+    "incPDD": 18
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 18
+    },
+    "incPDD": {
+      "base": 18,
+      "min": 5,
+      "max": 31
+    }
+  }
+}

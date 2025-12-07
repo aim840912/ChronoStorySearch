@@ -1,0 +1,43 @@
+{
+  "id": 1002180,
+  "description": {
+    "id": 1002180,
+    "name": "Dark Burgler",
+    "description": "",
+    "chineseName": "黑防風帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAWCAYAAAChWZ5EAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTklEQVR4nLVWi5GCMBANMzYgJWgJUoKUICVICVwJXglQApSAJWAJ0IIl5Hg5XmYTEtGbuTfjAMl+3r7dgDv1P9DecxIz/AsBvWVwPp/t/fP5VI/Hgz4rIu8SsEkvl4v6FKfTSU3TBDLaJ7FFQG8lRYU+9vt98F7EtCRCBFYSd11nZJXBsBaDbIFPxifsE9AznIUkSVRd16osSyPl3E8aRgnAxydzOBxMG5hHLSpIAiZ5nufm4X6/20SShFwDrterIQaAXNM0dh97eOZ+CCRgkiMB+o0rnH2gGhJjcs4HlQFRJA+RoAqyDTuZHEZMDuOqqmwQ9nwcR5uAihDwITEfIBhSwpkBBEQF/qDAkZUzSQiwiw1n3/e2vUECYkBM5QB7L/exNgyDVQGQbfGGzQIKoF1t2zpDumNQOdU0QHI4pWnqyJdlmSUBwJfTziv2UDX8MAOBYTQnwRCQwQD2EKzRFpxfeZ4RCCRQDdolfQkqB/LwpSqwl8MMAskcTIOEnFAeKTiz7yQBG5AoisIkwo+nQAI9pz9ih1pjZwAV+aCzrwDveWpikP4kAUWgwKKCJgFoqGWP+n6IBpanZBKKAV3zHbSX1eOeqjrHEEzbtjcOzXycvspCvYN+GO2AnerW2SvytbKSjEOgXpyPx9RcX515iTw7rtbaRcF6Lggoi/U7YEUASNPEJpYEYp/Y0GABrPy2FFXdfk8FVV38EkkgmSt3PnHyBfMpSJ4JSQTXZW31NeSillVJFWLVhkBbTr83Ty//kDhvldl58z/gO0Ri8X8AWSlhMf80oRMAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAYAAAAdx42aAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAClUlEQVR4nLVWga2jMAwNUheAEdoR2hHKCGWEMkJvhH8jwAh0BDoCHaGswAgcL5cXOSYp7Un3JBRIYvv52QF25v9gVs9ZauO/EJi3NpzPZ38/TZN5Pp+0WRH5lIAPerlczLc4Ho9mHEeQmTWJLQLzVlBkqJHnefRe+PQkYgRWEt/vdyurdIa5FGQJNBlNWBOYFwQTWZaZpmlMXddWyqWe3JgkABtNZr/f2zIwjnEqSAI2eFmW9uHxePhAkoScA67XqyUGgFzbtn4da3jmegwkYIMjAOqNEcYayIbEGJz9QWVAFMFjJKiCLMNOBscmBsfm2+3mnbDmr9fLB6AiBGxITAMEY0oEPQCHyEA3CgyZOYPEgH2p5uz73pc3SkA0iM0cYO3lOuaGYfAqALIsqtk8oADK1XVd0KQ7OpVdzQ0IDqOiKAL5TqeTJwHAlt3OEWvIGnbogUgz2pNgCUhnAGsI1igLzq88z3AEEsgG5ZK2BJUDedhSFeyXzQwC2eJsBgnZoTxSMGbdSQJ7QKKqKhsIF0+BBGpOe/iOlcb3ADLSoLFWgPc8NSlIe5KAIlDAqTCTADScZY36fkg6lqdkFIoB9/Z3dL/MHvdUNTiGYNp1vTVol+P0q67MJ+iHl2+wY9MFa1W5VlaSCQg0zvhwKOz47sxLlKfDaq5zCjZLQkBdrd8BKwJAUWQ+sCSQ+sTGGgtg5j8uqdvP31NBVZ1dJglkS+bBJ06+YL4FyTMgiWB0c6uvISdnmZVUIZVtDNzL7lf99PaHJHirLMab/4CfEEn53/olQ7ELN8o5o+a2MIkxF89JAnni0oFjJCYTx+Su0V1TigCD7cUog32T+RaptwqkjJPO1Jq+11eSAGXakjqo5RuC05s18weZGHo13L0nLwAAAABJRU5ErkJggg==",
+    "price": 25000,
+    "reqSTR": 0,
+    "reqDEX": 70,
+    "reqINT": 0,
+    "reqLUK": 95,
+    "reqJob": 8,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incLUK": 1,
+    "incPDD": 24
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 24,
+      "min": 6,
+      "max": 42
+    }
+  }
+}

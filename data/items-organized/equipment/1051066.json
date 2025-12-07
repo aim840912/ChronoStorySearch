@@ -1,0 +1,55 @@
+{
+  "id": 1051066,
+  "description": {
+    "id": 1051066,
+    "name": "Red Pria",
+    "description": "",
+    "chineseName": "紅宮衣"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAaCAYAAABCfffNAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADOUlEQVR4nI2WjXGDMAyFH3ddwB3BGQFGgBFgBBiBjAAjhBFghDACHiEeoR6BSrL5CSFNfUcIP9bTJ8kyX/g85g/Po08GPom8Ffh53GGdRZJUyztvxf4SmaepJyPFq8DPBGuN/J+mm5yD2KnQO5H5QQJ6cJjnHzjy2Fk65BH9Fh0UXfOwdNaPG6Z7gyS7ngqdiQiBqgYgTYHBQOUxoMUiVOuNK61FWIQulZwfFMLLJXsROoqIgCaBbzNgZpE8w9DdYOwIaxz6+whUjWdiChKzIuZgLgXuRJQdiF5IeNLuAq6okfc5Uhd7YxUJl3SMNtCY9/NPRIQCC8X0ALkPVbdEojeShki6xucohCuDxaRjuTYUuntfIyvaleaJRCv2InhGApwDNwYSSyTOwF0lOVs+wvmZJj4lmbkUFRWOMV7EjaOEw5MouW+tw60cSShdBVxMBg29Sw5qRX+pEsekQk80RaBZSZjCXQckFJayzMlrB81etjXSJoWOlRcvNu9JDqOzYb6CJRVtlZ+7y83XSkEP3Q7RkNGOQsaL7q5bxE6ihGtegnPNqx1OnYSKqo2oTXJFfyOaqp23nOxiG3cjTJ5SWkJ+ggDbtSK8vZvS/zpOEY0d5rL2Za08DYLbmwhPHgYvAoXU8AsU50fvWwg5bZUB2YHL2m0ah41y4ifGfsFyfmDXyIiI2lcV/GqWgxYWC/iWsgVTUVK5I4gbhGeeAu3RlVLPIstIuN7hE7YIUJt4iTv3NXNLEbecHBWi4lYHfQc6kGhZSMMTxSLAHh3HhTozF4uh0FFNSBU2ZDGqCsy33q8xjl6osJXE7ZIpFOOAd4OFqbWLkFaUSwp3LJXhk62oaPQwYrHIIlEUfa+b00KRZNUpxXGMOYWn9YlvqDqiqtoeZuLouhiXjjnjJYn/oAmdWIIjNH+3eqqchlrIsBraD+fOHRhyRUWAleYK93er5yZI+wHqupZ+tRjm8yK63FtpKIdahRW70bwnWQaHgI1JKR4myRo43BvKjeY4XklC+VWUwLIsnwwfKZb2Qnu70PCC5pZyTOsJyfpG1HXdp28ueQ/h08nUYR+pnnfLo0gUdrS9gf+MKHypnM77Bd1h37ZSUztRAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADdklEQVR4nI1WC5WrMBC9PWcN5ElIJYAEkEAlgASQABKKhCKhSCASGgkbCbyZSfgW2p1zsklDMnfu/LI/+C7jl++XP+jAN6BTkN/XE9ZZxHExnfkI+AloHIYHKbq9g/wOsNbIehjuMgfAU7AzoPFFILpzGMdfOLLcWRryif7eWij6zWJp1q87hmeNOK1OwY6AhIkqOiBJgM5AZRGgRStU4wGU1gIuYNdC5he583pND8H2QAKiCeSf6TAyUJaia+8wtoc1Do9nDxS158ZsCNAKoIO53vAkZukBszdGfHH1A+5WIntkSFzkFRYEntPobWBlzu+fAAkbTGyGF4gGVNkQI70wqolRW/uYBdelsBh0JL8NufH5KJHemg2rDSOt2JpgIYFwTFwfGFli5AxcJcFa4hPmLavolNHIaaoooYzxQK7vxTWekZJ9ax3ueU9gyQziIlJq6CwZqRUtKUP7uMCDWN1WrGZGzMZVHWJyUZ5nZL2DZmubEkmdQEfKG3BbWBAkemfDfQVLSNoqf3cXq5+ZDR1wqw+GFLfkPi7Mp24QOfEYqiwHx5+7Apw6cBtlIbE3cYXHnVgVntUSo5Wvo7aHyRIKU4hXAGHdVsCXswmtyyjBpW8x5qVPeeVZYWX6AsQKus4DQSExfIj8/nr4dkPGW2VAuuDSZrnGLqQY+YuRL2qOF+zGQwKk1tkGX/UyqPgYxLef5ZqiQHPnEFOIptmo9C5QSr0DTRJzPcAHcQKhloK9cB809wRRw8FSwUNuNtJ3qwNGWoqt27CZQNiyvVypo3MCGXIj5YlkZ01aL8UN4/3ha5A9ucq8mZFbBVjY9B3OhMHpWRAwrSi25PpIssUngKJE0l2PdSkz0OVy+Tc/cBObOC0O2eylz8hVjU+GmjLmUhTLx1SM3RTs1JNGvAX2D6xCBxdHCavvzwRlVE3tppuVrcW5YyO6TFFiYGZVwX1/Jrhx0nuCsiylv03KeZ6Ap72ZFcVUq1DVC6vPjCZhd7BCSdPdRamR3V6XL6yO5J1RSM2Cgprn+Ub5ns3Uiuh/BWHFRc/t5yjMB4zmU9e2bV/4LlzRT16YMrxDhXSZKCiTMQGpMGJ6GYewx49OEfaxOrcXVlgRq3q1V62AmLb9WYHoMFfh8FTW34vJS/Pp45rRJO8d8lzch/Vm/GCh981F6gT0k2Hz+j9lLvb2SZvpbwAAAABJRU5ErkJggg==",
+    "price": 140000,
+    "reqSTR": 0,
+    "reqDEX": 250,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 80,
+    "tuc": 10,
+    "incSTR": 6,
+    "incDEX": 2,
+    "incMMP": 30,
+    "incPDD": 85
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 6,
+      "min": 0,
+      "max": 14
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 10
+    },
+    "incMMP": {
+      "base": 30,
+      "min": 0,
+      "max": 110
+    },
+    "incPDD": {
+      "base": 85,
+      "min": 5,
+      "max": 165
+    }
+  }
+}

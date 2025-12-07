@@ -1,0 +1,50 @@
+{
+  "id": 1060078,
+  "description": {
+    "id": 1060078,
+    "name": "Umber Shouldermail Pants",
+    "description": "",
+    "chineseName": "黑板金褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAcCAYAAACUJBTQAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACWUlEQVR4nKVWjbGCMAwudy7ACjgCK9QRcAQcQUfAEWQEGcGu0BVYgRF4/YrpS9MWffdyxxVp0i/58lMPKpVV/V8q/iMHorTWqmka/0iZ5zm8L8uSrNbaxEaCrHQQnrZtVV3X0UGld/7tfU6IhoOswzD4w2GAaO73u5pj46w0zpHH4+GjIPtpmgJQFAkpkFcA0C6Qpqnd3hJWrVtljA2/zbJ4at3BkX2WLmNMBOi9ZACwBQD2OJCyi7fl9kUQUESeUNKl51glENmCLrLnBRKBkAIPFwdbO28eI1oHqiTQZCOqd+ni5Uee8Eg8gEumW9faAetOOwAT9HPlW6QLBkRXFMn862HbNsq6HGCdZuv1UfIfI7ler6FHLreb6tst2WiV0fjIqPar22jWodded+hadTqf1ev5DPY8Kg5SHY/HVb2bjwDgKSVXimWUQR9AXrZIss24UVZvZYoDgBfKdE6b0u87AA609U2sl4BAAdUSu5zv+vH9fbpPak8SkM4lH/MKiURz8REj5eHGEHSkvqyyBIQqgwz6vs8CQPAdM2scx6C/ZGZdGknXhTHvq+xyCZNYCnSw/3q9QlXhkU5FUxh1LhUIrCSg8nQ6Rd9wjqMsP4WJW36H7AGQDjVxySahCwB8BjGjSqhWLg8rAMiO5pcUAvHKnPuc8rdCjDhQT1mIhObVX4G4Xe6q5pGEBEs+S5X1yY4XDEBW+sNA/JI33yQeQnY8+XTxgbIDecsTngt5T0i3lPzszSiNvwUoyUEqy/dC+ZJUaDq6rIgNeQZAfL3vOFupfane3V3c/wFZYh3RapgSjgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACjElEQVR4nKWWgZGjMAxFnZk0wJVASuBKICWwJZASkhKghFDCUkJowS1QwlECq2+QT5ZtkpvTjBdiJD1Jlu09m1hW8/9y0hMpkKnr2pRl6YaWeZ79+7Is0dNamyRr0MrOMKqqMkVRBM5y73Ju9xNkJUFr13UOACNk1fe9mUMHSSkpmOfz6bJh+3EcA1iQEStxdIDUlFBZFvRt8c+6rsw0Wf97WhZXZnIe2OcyIuMpgLpoBQT2gOCbhBm7OFtpfwhCuTgibgSdAZ4axrYoHdvLpolArCRTh3Nr5y1yZE1go2GjDcr+tnSyNTkimZGD0ALTcy0IXjc1QSavn2vtbOlgxKULMpr/RlpVpbG0JniOs3X62A4fZXS/3/0euj0epq22BsBWGiaXIbfr6TFMa9fWTrdrKnP9+jKv729vr7OToNPlclnNvkEZgoh5wbVYUT7oA+Zkyyi7YbfyFVsLwwmYvoXnuBzuO0EkbNtXcVARCEroojD09Okw7PNjP5p3EoEaagicb1hcbEB5HGl50pEFHa2f6r4IxB3DRm3bJiEQzOOMG4bB6y+ZszHOqGn8FeG673bzJ7gW6OD76/Xy3YaRCiw4vbEPtBIDc4KyXq/XYA5+qHz505trLe+gIwjr8EY/solKB4g8s4Shvp5PtC4rIGzH511KGOQM5FrkDD4RrgyBffl8Rny+/StM2qWufRYP4kXX9c113Ds73UQArfxPCNebo/qkGSBsJxuCL08u35mjlk2QST+bGuseNUTyhtUOdqneQY7Eg3KAvXSPHaS99bQx73zhcVUSQRYA/aL98OcgmIFGefDdwQ6+/8afs/hRiGHMwZoI4bBv4p3ng3HeX2blOAUplDMNS/327z96riz8ouFW5wAAAABJRU5ErkJggg==",
+    "price": 60000,
+    "reqSTR": 180,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqPOP": 20,
+    "reqJob": 1,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incSTR": 1,
+    "incPDD": 44,
+    "incACC": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 44,
+      "min": 19,
+      "max": 69
+    }
+  }
+}

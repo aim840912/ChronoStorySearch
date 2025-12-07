@@ -1,0 +1,49 @@
+{
+  "id": 1061091,
+  "description": {
+    "id": 1061091,
+    "name": "Red Ice Queen Skirt",
+    "description": "",
+    "chineseName": "紅鋼玉裙"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACOElEQVR4nKWW75mCMAzG0+dxARwBRoARuBFwBG4EGAFH0BF0BB2BjgAj2BF6TUr6hwPhvHyh0Da/vC+xeIA4NHwe4t3kHASX1wvyJFlcLJXy4+fTja+n02YVIUgPZQlJ27oHSZqCGkca47UMFuN4nOYqs+5rHNGNVVWRItyYzhYwiJPO1++NX6AwEHo1FtVluTi/HzMH2WwelHp9CJknlp+CoO+hTgrIviuonndKXhoYQ+5lBcPlDq3qaXkO3lrYaIjD6oyBPosiuof2TMNIaQj7BITJxr5f3Yg/AWx3WgfbEYGoUjW7nwLtq7rG2ArGviPIREewxhR1LorVFo9ANVzp/TS3i6saw1W+YBHD9irSeCKYZo4S7EmGDbGn+w6wIxiCqrx9AmSqfVEb9q2CQgWhhZ+GA9H7OUn3fkJAzg+myueq9ti3qgghDMAkW2q27DusbeIq/2PXMkjh56GiISYPrQg7kFvd2Xczp0XSWPWTqvegINx3JrfmhRaG81ygZNAUj4XvkwclHaWiE8AAcnU2d3n0olFNLY9wzV+2kEnV7WHXsKolsxGk9QDUcbjRQbDK6UqqRkGJEBLCeI5/Uxzzpois61Rhj2OjDiGUZLpy1Opor9JeTW10bEWtPgxQZhmEO3edDFsxmm8XR9hEoSoECZGBTs3XWnzxkhb+EnnTgcha8+/GvntUlhhVID2WFQlTleZNWyHPVAh3lNuHMHrwsFNoY/cgATq0TkxJ/vonUsz3eGd8/AB1/SrFOkhEhwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAdCAYAAABbjRdIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACcElEQVR4nKWWjbWzIAyG4zkuQEfQEXQE7wh2BL8RdAQ7QjtCO4IdQUfQEcoIfASJBsWf25tzPFCBPHljgIawNgXfW7A36IPB/fOBRAjvgk7Kuf9+T/3H9XoYyRKm+iwDUVXTCxFFIIfB9LHN2GTsD3Ys1/N+hgGzsqlupQwXR4t3BCPHy/lnzQvjhuCHTleRZd7x8ygfbPQ4w6JZJ4KWzru/wKBtoRApxP9yyN8vA8g0kECvLIf+/oJKtmZ6AnOa4aBIwt1RDX6nqfMbqpvpOoo58FsYOhzadnMctwduBTMPjm0FMxHLxW9rmMq8LnWKQafyAp1QDrDUgd3SdLP8V7ACHuZ7lc/7FD3apMCTLgL+RpnCk0MXuuPkjEMskjNVGcJJIxCqm1MZQBepObCDVO7CuBKezm/NgZnvde2m78UhCb2wCpbqzqRyVxmCCIKOjlQdpXITRqAzkLPmwiReLbnpIoCnhVcmbYMplU99qohyzIJVdwxjNt1TyZhInk4+TkF2BLPWeO43FyZq486cFBqSyJv+lTgfH1UV3QUeyWcMxqp7NuMcUudLPMGU6sFUIi6eQBitbY26ITDOEMSBNEZ7jmxZKKs01jIdj3GtEkHGkW3JCnkZ225sdXzmiHO2Qd9DFsfAV54+QY5s0HcfGS8sro5gQRCDivTNH/zQtAp+Y0lZQxBX+h/TWA+oUGh10M1orizQ0SlaeGTdzQRDoTUciKaaEYoprRsjQhFM2AevZaEdNScF4b8gLLxKr3EinDM0W8hAEWsr2wfW+oyP8VqQ7BnsI0PPouUW2Tur5E5/+RhlROdAnxqxAd4Lzhn7D55xQX2IuUKHAAAAAElFTkSuQmCC",
+    "price": 75000,
+    "reqSTR": 210,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incSTR": 2,
+    "incPDD": 52,
+    "incACC": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 8
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 52,
+      "min": 22,
+      "max": 82
+    }
+  }
+}

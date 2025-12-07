@@ -1,0 +1,43 @@
+{
+  "id": 1102014,
+  "description": {
+    "id": 1102014,
+    "name": "Black Justice Cape",
+    "description": "",
+    "chineseName": "黑色守護披風"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 55,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACFUlEQVR4nK1Xf5mDMAwN3zcDWNgkgAROQpFwk8AkgISbBCrhkDAkbBaQ0GsyCqG0lLJ7f+zrr+Q1L2npThAH5RlPYpzsJSWyZ7ueKJsM+r7nmwluYA+pyrIM2qqHSwmAbQNNBurRw9etgGEYzJgKEYdIVVEU8Ft3kORLQgT2kxyJO8iv2TQWIt4iJUJCKvSPXEymaQpd14F6CsjLF8QgKC86L2/vfF7KfoqWCB9Ac7jGAGUOResjpSjR2fl8dm7E1UdCbJv8+uCNlBPWolnlVAihx6SOVuoKFpONIdyK1kWq7IL5bzgj5fK9XoEiSYXTfiu3QdLZsYQ9+CinJp9trbd5kVM+0anZFBYbzlEVN8LpB9foSl9Ea5POZ3MHbEVwo3Y6XFFvnlNyMOyT1bUhn8wr0k/y6SO0JXZG6roQnBs6CE7qzudBeRcuLJk3c9pW0vl1sYFr8Ga6yWoxzmXmEse+HFYYLwDKffAiGbEg5fctOThQRObY2MXE24Y06nwehZF4W96YIqK1/nuY48QnjwDlpJxGAEm90rrqAl8MR1GJDtCcIv357nS5z9JgIdjHhUXjfILotcp1bCbCTL8ar++lSJrop6V6thLuPTNglTsSRj2oeXSDNi/v84ZNTolYPRrq0GdqOEDIzmot3vb4VjYcpsGrN0GJsIEysXxGRYhpIaPcb28fmWQ0ULy/E4n+oO/6e/EHrq4C0jmy+38AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACUElEQVR4nK1Wi3GDMAwVd12AjpCMACPQEcwIzQjJCGGEdgQYoYwQRkhW8Aiu5dhENrINtO8OzvijJz3Jxm+wDSrSX2wxspbUkN375UDbVTBNE3Um68AaUlVVFfTnCY4tALYdNBmo2wQflwaklK5P5YhzpKppGvi5jlDUPiECv4saiUeoT9XclyNOkRpCg1Lo1+ANlmUJ4ziCuguo2wdsQVZeNN5envk8ttMcrSG8gRnDOQ4ocy7aGKmJEo0dDgfWEe4bCbHt8htDNFJKeBXdIqdCCN036GgHXcFiXuMIU9FypCosmP8GGymV7/HIFEkp2PWp3GZJX4YHWIM/5dTls79qN4/DnE806pzCYsMxU8WdYO3gHF3pXrQh6WtvrkCoCDoapoOLOrlPjQG5TlbOoZjMC9K/5DNGGErMRsodCKxDO0FJ+XzulNczEciczGl/Hti/SwicgyfTZTh7/VRmKvHWm8MC9gAwuc8eJBYeKT1vjYEdReS2TVhMtO1IN+3PvXASp+XdUkRmbvwcpnijg3uAcpqcbgCSRqXl6gJvDHtxFiPgchPp1+eoy/0lDRZCuF1INOwVRM9V3LaZCSt9azw9pyJpoa+W6t4P8D2RBaRyLSGSlfbZFJ3Uy9vvl8Mup4ZY3TrzYX5T0iM86sedEHFSslev4rke78oW765Bq7dAibCBMpF8oihNQBYlxrQYY7W3HssXDwC0KilpaSM66AU/tu9iJyeJLDr9Q6cJ7SzZAuE+dYZbhiR1B3Fjp2CeZB6PFDsekJexjDggE9/e2C8FRhfIhgZUWAAAAABJRU5ErkJggg==",
+    "price": 70000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 55,
+    "tuc": 5,
+    "incPDD": 13,
+    "incMDD": 18
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Cape"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 13,
+      "min": 0,
+      "max": 41
+    },
+    "incMDD": {
+      "base": 18,
+      "min": 0,
+      "max": 46
+    }
+  }
+}

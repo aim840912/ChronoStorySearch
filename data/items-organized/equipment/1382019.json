@@ -1,0 +1,45 @@
+{
+  "id": 1382019,
+  "description": {
+    "id": 1382019,
+    "name": "Hall Staff",
+    "description": "",
+    "chineseName": "護法之杖"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAjCAYAAAAaLGNkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACGklEQVR4nMWXgZGDIBBFYeYauBYuJcQWroWUoDVJCUkJZwlSQmyF27+wCIm5M4r6Z8IYFPaxLsv6oY6VQ3MkhGupaQ6GUOeemuo4COfoRdxu/s8REM6dz8poy6+CpPeGYA+kAGj2hHB1XStrTQawJwQDDMOgqioH2AsiAnRd9wSwB8S/AFtDzALYEmI2wFYQbwFsAfE2QGmIRQClIJxcLAEQCJnkrYGpcaTigUafFgAIBE+i9WwYfu5Ovy86iAZrGcBeqeOiFgkQGgB9D3fSPBc2IiBuahBOQdVbrgUgrL+5zFrASwgW5oWu1wjCxrDSVCdYoj5XeZBukdlpCPYGXgsOGApz8q9lgCZ5GOXYXQbQvZYAPj00d62FGEGwzYzhFUNOXBQMqwCCH55pF8bBKwgvMhQAdDDMlVAA4D6678Qjj7XBWojohawvBCFiAECpQamW1+rJE5g0rNzvDAIwZLZ2VszHUr1VZZRDJDthjIWxr5TRvyESSRCmiUJcXxomh6DVt2Q8CUKnKBb4VSAveK/oRsr2hxxSAkJrY3wgjpNr3h1VvjsgY22RnfEIEZUGJrYiklbIC7GvU+WUbVE0nJJpq0osfCcuF+N8VqgsxRfJE5yyYQ9pW4dcAZgfpeL5Icb9AP98CZDoCUyIUzTIZ0uKkYkx/l44a0qIixoc4+HLKBqZuH6CkRokjF/sDfbE1KfZTOkwfpVPfgEeoRiJZuukygAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAjCAYAAAAaLGNkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACWUlEQVR4nMWXgZWjIBCG4b1rYK+E3RJiC9dCSjAtbAl3JWgJ2RLWEqSEtYS1BG7+YQbBmKwxRuc9fAaB/2MYBvLL7Gsejz0hfEWP084Q5tDSo9gPwntaiI+P8GMPCO8PB1Nbx0tBZreGYA+kAHhsCeHLsjTO1RnAlhAM0HWdKYocYCuICNA0zQXAFhA/AjwbYhbAMyFmAzwL4i6AZ0DcDbA2xCKAtSC8viwBUAgd5K6OqThScUe93xYAKAQPYu1sGG73ReWVDqLOOQZwZ6o4mkUGCAuAtoU7aZwjiyiIn+qEU9C0ju8CMMz/dJw1gasQbBgXdj5HEBbDTFN7gxLV+SKANItkpyHYG1gWHDAU5uRfxwCnpDGuY1/agb5VBPASoLnqUYgBBNusrnnGMK8uEmEjIChoUy2Mg2sQwUhIAKwI801IALiOvnv1yPhu8ChE9EJWJ0GIGABQKqi35UftwhMYVGYedgYB1CRbeqfy8apemXUsh0h2whALQ91aorchEtMgTBOFun5tmByCZl+ReBKE3lAs8FIgLwSv2JNe20c5ZA0Ia+s6BOIwuOXdUeS7A1Y7t8rOGENESwMTWxFJS/JCrGuG5i8ztfo5ECzAKZm2qsbCn8TlKs5nhYkp/hvNZgL0SbmA4JQNPaRtK7kCMJ/GxPNDxUOH0F5A0OzfDzNW8U5KbBc9gQFxioohab4SzOfEYExIKb70+Rl7a1n6G9/CpQbHuPwzgv0GgLwfk8HHIu8E8hcv0p9OvSyB9qP3cckgpv6adSPRqVmirpD+rdQ5cznr/sp7tP/lHy7wm04UWwAAAABJRU5ErkJggg==",
+    "price": 65000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 123,
+    "reqLUK": 43,
+    "reqJob": 2,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incPAD": 38,
+    "incMAD": 55,
+    "attack": 6,
+    "attackSpeed": 8
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "Staff"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 38,
+      "min": 36,
+      "max": 40
+    },
+    "incMAD": {
+      "base": 55,
+      "min": 53,
+      "max": 57
+    }
+  }
+}

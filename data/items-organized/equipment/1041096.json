@@ -1,0 +1,50 @@
+{
+  "id": 1041096,
+  "description": {
+    "id": 1041096,
+    "name": "Umber Mantis",
+    "description": "",
+    "chineseName": "黑飛影之服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB40lEQVR4nL1WCZHDMAx0Z0ogFHoQQiEHIRRyEFoKgdBAuEI4UwiEhoIh+Lyu11X89LtnZzzJxJJWWslut+r3YCvfN3x5hsze2tzv9/5pjPHPZVn8+zzPloT3yCJB27Y+gASCDcOgmqbxS2K326lpmrwfCWtkngQB4OSMYwBmDEgifMPSWns7Johvwc+WyGzXdZ4ARnQkIXDsGnWYVSQ6nU6xctgH+bLAKZlFtnAmERwR0Ge5zOrcN2o2VxmlxJKEVQXpyz1jX2QP6OS/dINq9aS+OqXeXVJ93/s9yEcS6UsJVdKzWBUd2IcLkVHno5s4R4TKsHqnMOxhA+mlGqKqcs9KOj8CEKUJYhJTrMhK4w2UqsLSi/G7APs3jmOMFZLPDrXFoWRldFz1qgIeDfYMcaSExcpgzN5g6kys6oK3j7FIBltv4yREzzmRTLhIhqmCBJ/uDLXwdlNXhL72Qkq6hD41gjT0Lr+uskx03mBJUgOGJZ3GrDJqfivQI4TyOksLWMmIzUMY2ZLm94CzDLJExhWZlZulkX0Uzt8yacqY3fpy5HkwX8QGA4Hk02PEypTMpnTynwX6X5JyS/ak7B+R1SZyy0xImv7ivoLaRP6JjLWJ/HcZN+6aSv85PT320jdcUVm8b3ue13zpB48jAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAdCAYAAABbjRdIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACKklEQVR4nL1Wi3GDMAx17liAjkBHYAU6AivQEZIVMkIYoRmhrMAIYYR6BNfP4RFhZELSj+50EFvSk55kk8z8nrjE+o4vj4C5tc39fh+e1trwHIYhvPd97wh4D2wCKMsyBJCCYE3TmDzPg0opisK0bRv8CJgCCyAIACdvPAVgxhAJhDVo13XBjglibfRzGpirqioAwIiOBIScqtwcejMBnc/nqXLYj/QtAsdgDtnCmUBwRMCQ5dCbS52b3t5olBRLEFY1Uq/3jH2RPaBTWKkaU3at+ayMefNJ1XUd9kAfQaQvKTRRz6aq6MA+XIGsuZz8xHkgVAatPcOwhw2ol2yIqvSeaTxvEQDFCWISY5mBaeMN0aqCdoMNuxD273g8TrHG5BeH2uFQsjI6znqVEB4N9gxxJIVqZTBmbzB1dqrqKq/vRxUMtsHGU4iecyKZsAqGqQIFH/4MlfD2U6dKd+uFpHQY+5QL0LF3y+tqkUm3bLAESQmGJZ7GRWXkfC3QFkB5ncUFzGjE5mEcWY3ze4KzDLCIxhmYk5vayG4V7++YNGlc3Ppy5Hkwn5QdBgLJx8eIlRmZjXbyHxX0X6MyI3pU9o/AUhOZMROCxl/cZyQ1kX9CY2oi/53Gnb+m4n9O2thv5ffFV/KlxcvkDxGUGgNtBXzzymbxO2Tl9yxPaAyiAaYOph0VXA4EY+BCPGXgZ0Z0kUBcWcpw7UqxK+8zzcTGYO7TlSeA15Kb3r8BANnv55wv2zIAAAAASUVORK5CYII=",
+    "price": 90000,
+    "reqSTR": 0,
+    "reqDEX": 100,
+    "reqINT": 0,
+    "reqLUK": 170,
+    "reqPOP": 20,
+    "reqJob": 8,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incDEX": 1,
+    "incLUK": 4,
+    "incPDD": 50
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incLUK": {
+      "base": 4,
+      "min": 1,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 50,
+      "min": 20,
+      "max": 80
+    }
+  }
+}

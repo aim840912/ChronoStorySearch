@@ -1,0 +1,55 @@
+{
+  "id": 1082144,
+  "description": {
+    "id": 1082144,
+    "name": "Dark Mystra",
+    "description": "",
+    "chineseName": "黑色米斯特手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACMUlEQVR4nJ1Ui7GbMBA8z9AAKUGvBFKCXAKUACU4JZgSrBJMCVEJoYSohKgEcis4+cDYIb4ZRr/T7t5HFPS5Tct4euf0KcFkrU0T7/2k9p/IPiFI4GVZpg/zEAIZYzRZJvpfghV4jDGNANdk/E1CcpQgKRPw+3UgCkTjSPTD20wmBkIhOUKwUn27ODqdW6LSEMVAv1pHjTMCqgnoSARTXdd0v9+p67oZvLnS5Xoh5wPFcaDvrl1IHsBciwxQ/Asc6vu+n1NgflNZEVUsvrWGHNUUfZ8vtG2bhCz2tgYZHMASbjJOi/OGRuzFsLo0DMOqFm8jGFFBNqQHESD/53NHf37e6FvjGXt8qgHuQBRGIdojSB1TssLIl5qmWbViIrn51EWwr87kM7Glq153UU3swKM8IFrmyDHUfZ0fqZFz7K9S+SJF04Xbz7ACz86IIiwgCNk5l5yqqsqPDLVC7sUHputQbMEtOzpWAxKEEUPkz6d0acWiWmqlwSue+g3BEzjmiCLgQon+jjltZB5EWq3labqnuqvQadkDlzXm2KtLmsm4iwI9wFE3+BlV7BxBz4w2zgcCtge+JV8sPSh+AZNVwPxz4TTFqRAHLKBCwLdk2/Uwq1/9/0XEUwRIExhxqNULsF6HzUtVdkIUdSTSHqs2xWUcVio1R9VrEr0WgpNPOeRfsiJDyEIo4C/1K1C90BFkEgCNIBC4SDkS/1r9rm1fciLZqhHiT2zvX7SbW0V8WD3sL68WmpblVNeiAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACfUlEQVR4nJ2VjZGjMAyFlRkaYEvwlsCWQEqAEkgJ2RI2JYQSQgnnEpYSziWsS+D0HASy+VkumvFgHFufniSTjF63YXyejmx+FTSUZRkm1tpBrW9CXwEFSJ7nYWDunCNjjIYugP8LiiDe+/AEREN5DCnsKChEKpDHV0fkiPqe6NOWE1QM4BR2BBSpuF9bOp0botwQeUffTUt1a8S5BkVOfgMNVVXR4/Ggy+XyhNRfdP26Umsd+b6jj7YZYTOAa7VwtAcKEKi53W7P1Ji/lBdEBYtpSkMtVeTtbTrQNE0IaLRDNZogAERp4HS11lCPNR+np+u6qFaHFPWoNBvSBkWoz/l8oZ8/d3qrLTP6RY1wBsHhmQLXQKHDco7Y8+G6rqMWDrC7DV0He7+Y6TexsQt/77qKeCM/5SLSOEcNEO37eU6Z/I71tNP2FA1XblvDEVk+BFVudIZUtG0bNhVFMV1W1BK1kT2wtTplKaTkAy1HBxhkeed52JBGrUBUSC01pOBp2uACWkAwhyqHgznuh5/SSWYG6uhLnoZzfpnCTKdrDSLvmGOtyukJ5a5zNENQV+wzqikWim4cQemfG8TpGiQNYrTQWXyDhlI55o8Wp2/uvEwmWERUAkmh6Xv3VBPdfglmUxHShwiwSasRgH53GzcfUKiqPNHajqi94QSbCpWyo2o0TL+noJMNOea/AgVFKgQskE09K863FE0wOOwBEreeJmV2W82upV+Gk12RLgEoW694bJH4FAQHb8qRGecfDPse1848ioMQL0NA+cbQ0X+Oc31dFpEn6+FjgpEpp0Y9NeBImtYgkWlFW5v2Gs3vzKOR0SxPw9ZU5BvQvcCm+T9uPbXJaoez3AAAAABJRU5ErkJggg==",
+    "price": 215000,
+    "reqSTR": 0,
+    "reqDEX": 130,
+    "reqINT": 0,
+    "reqLUK": 240,
+    "reqJob": 8,
+    "reqLevelEquip": 90,
+    "tuc": 5,
+    "incSTR": 4,
+    "incLUK": 3,
+    "incMMP": 25,
+    "incPDD": 30
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 4,
+      "min": 0,
+      "max": 9
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incMMP": {
+      "base": 25,
+      "min": 0,
+      "max": 70
+    },
+    "incPDD": {
+      "base": 30,
+      "min": 0,
+      "max": 75
+    }
+  }
+}

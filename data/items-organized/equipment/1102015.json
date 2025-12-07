@@ -1,0 +1,43 @@
+{
+  "id": 1102015,
+  "description": {
+    "id": 1102015,
+    "name": "Blue Magic Cape",
+    "description": "",
+    "chineseName": "藍色魔法披風"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACOklEQVR4nK2WjXHDIAyF5bsuQEdIRmhGaEZIR7BHqEdIR4hHCCM0IyQj2COUEagkDAeYHzut7pJLMNYnPYTgBbaZzow3W5yshTJsvC4f7PsTwCT9YKoBrIFq2J1gPEvYf+A//O1skqDvEl77M6jpYcd0DVyDavHWws9lgOYQAoUQAPisOQwI7uG1a0EpZeZUwCUoA0Hs8EMwGQDVYzCTxhMC3yhFM07gipUzRSA52vfvuJ4krwQKhID6juv5dcFnNFGZ4OgVhKtKtjmoFu9nI+HsrBgbZUhgNQdK4ML8fKYCHHBsj8GaUkDNocdsO87WTEewmMEAxbXduk//xVJQLU5njpxNTdu9Wokz2VYzHT87Jy2vsfW7RuKMJaGcpS2gaLusKazAl6n2INsYylW7zltqDANSj2AotW/L8tJ6KglbjCWe9c01iyU0ziCWdx0ZbeeKMJbYh5qGAOmG4BfRX60oL1fuHsKTBU3deuBtlajglMUSL6CT7GDXfucd3LjZNkr21aLjQ8F2MU9iC2UH1uE0HHUSXNsuXiOxvrg5RErl5SUHTxXRctuwO0/iZBvkLJ/YLo5LxWiUMxU7Z2slJmggLdj7kNf+ioBcMRWKfdsps7H5izhbuokkoLpUuX+1azvAsctlmslovhfZxt1QFrVt428VBLot0zgJaD0R6NbTygLutIpvAfZdns/rOoRK2ezsfPp68f+QETB2DGVzzxGs9f3Iv6dZLL4rVw7xhl5cCUsG4L2/CMraL/StFALpPrVlAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACf0lEQVR4nK2WjXGzMAyGxV0XcEYIIyQjNCPkGwFG+BghHaGMUEZoR0hGgBHiEVxJ/jnb+Afa6o42GFuP9FoWvMA+U5nxZo+TrVCGzR/rB+1wBVgmP5hqAFugCo5XmG8TtP/wDn87WyZQ9wkOww3k8rBjqgauQZU4dfB8H6E5h0AhBAA+a84jggc49B1IKfWcCrgEZSCII14EmwKgfIx60nxF4IlS1OMErlg5UwSSo3Z4xf0keSegQAio7rifb+/4jCZKHRwtQbisZJuDKvF60xIaZ8XYKEMCSxMogQvz85kKcMC5uwR7SgE15wGz7TlbPR3BwoABinu795z+iaWgSlxvHDmbXPZ7tRJnsq1mOv/vnbS8x9bvFokzloRylraAouOypbACX7rag2xjKFftNm+pMQxIPoKh1Lkty0v7KSfYYyyx0TfXLNbQOINY3m1ktKMrwlhiH6obAqQbgl9Ev7WivFy5LYRvFjT5NQAfq0QFpyyWeAVdph6O3WfewRc320ZOQ7Xo+KVgu5gnsYWyA+twGS8qCa4dF6+RWF/cHCKl8vKSgx8V0frYsDtP4mQb5Cx/cFwcl4pRK6cr1mRrJSZoIC3Y7yGv/RUBuWIqFPu+t8zO5i/ibOlLJAFVpcr9rX10I1z6XKaZjMx3kW3cDWVROzb+UUGgOzKNk4D2E4FuP60s4N5WBwh364BrnzwR5/O+jqFSNjsbKP158W/ICOgZHczWBm3u4xK5OI9n+FR3fbsYsfhbWfsQNvZY3gMufHrOTh7Eh6VqkxwOuD7Wuzd+FnNJHyrMdTH/TxFga8d/iwJZWZyp7zheUPoIkYXf8RVAaWCBuoxubypB5QKBb/dZKzCtwp6GAAAAAElFTkSuQmCC",
+    "price": 90000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 60,
+    "tuc": 5,
+    "incPDD": 16,
+    "incMDD": 21
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Cape"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 16,
+      "min": 0,
+      "max": 46
+    },
+    "incMDD": {
+      "base": 21,
+      "min": 0,
+      "max": 51
+    }
+  }
+}

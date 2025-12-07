@@ -1,0 +1,39 @@
+{
+  "id": 1402003,
+  "description": {
+    "id": 1402003,
+    "name": "Lion's Fang",
+    "description": "",
+    "chineseName": "虎劍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABrklEQVR4nMXVgXWCMBAA0Mt7XSCMEEcII8AIdgQdAUfQEXAEMkIZQUYwI3gjpJfTUFrRqoSY90SSwLv/LpfwAe9p7vIv/OUdCHfaSugsQrlnjHhXJrh9rYAhqRHONQWYtgVJHcTzYPJMmM5CoSRkGwxDSZfDHSsJxloALXuAv6RCuKZS0NFNtdWwyNsekAQh/W6ouQIAlIKMAFQLYvjMbAh5OQv8yht7Tr+mWkC8fnYWhAfUK1+EAEtNP0WRiwLEwvhp8ff5ORCUfsW7IDTUGuSdF5IUZrvv4HPP6yDG5mMjnKMs+CN5qRV1LS9Jszrvyg7HX0p2Tli8PRcbIcTa8q5QEmG7/JlQqTNR1zX/bzZrONIXM6cjusPxepgD4ZqmAWMM7ciCl0CsbxfkXAhuVVXBbrcL3buA2AjOglKKOz4bjwBiIn4BNB1Oz7QYiCuAEJyAh7IQAzEZMBURBTAF4fxZEAPwKoIBofimAl5BRAc8i5gF8CiCP0gBEBCxAP8h+uC+BcAleDTALcRo8CzLogcfQ3Dww+HQD5Rl2d8jYvTgQ4QbDuR5PuzOFnjYvgFo/KA3f5sS7gAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB6klEQVR4nMWXgZWCMAxA0/dcoIxQR4ARYARvBBkBRtARcAQY4RhBRrAjXEbotZEiKlSRgnmvlDSFfNM0lQ18R1TbM3P5BoT6O3BoJEJyIhj2rUiQ/O6BQNaGUKqMoapr4FpBvA6uHomqkRALDkGOdmjV5VCXjEMlJUDIOwBzWQtClZmARt9khxC2Ud0BrALBzW4oKAMAhIBAA+hcYP05i0HwthaYla/kNfyhzgXE57mLQBiAYm+SEGAX6ia05zgGtq2MmT3OXwJCh1/QLrCCYQjc8cAqiVmfGvg50TqwIbtvCKV0FExJ3oVCq5KWpNxfd2WDww+tVickjtt8QzCWStoVgiMcdjeDWDsSRVFQn+cpXPSJGekS3eBwPiwBocqyhKqq9I6MaQlYOp6QS0GQZFkGx+PRqk4A3xAUBSEEKSYa7wD4hLgDCHVxmiI+IJ4AGKMAvBUFHxCzAeZCeAGYA6FMLfAB8CkEAdjkmwvwCYR3gKkQiwC8C0EHkgWwEC1AAOD8v2IFXUYXROfciAVonRtJzPAEAOy1lxCDzoMgsPa87WOHw6Fx02Tb7ub1Icj5+XzuBpIkub0F0ZxIJvQCpgm+mrCB22c6SRRFfTVte7vurhei4/6xPUE8ZjeH+2QbSjw+AoQOffQH/AOUB7lM0rRhzwAAAABJRU5ErkJggg==",
+    "price": 200000,
+    "reqSTR": 155,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incPAD": 70,
+    "attack": 5,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Two-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 70,
+      "min": 67,
+      "max": 73
+    }
+  }
+}

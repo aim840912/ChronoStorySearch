@@ -1,0 +1,39 @@
+{
+  "id": 1442013,
+  "description": {
+    "id": 1442013,
+    "name": "Aqua Snowboard",
+    "description": "",
+    "chineseName": "滄海雪板"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 12,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC7klEQVR4nLWXjZHaMBCFl5lrQClBKUEpwSnBlAAl4BKghKgEXEJcQlRCVMKpBGX/JNucyR1ga8bg//fp7WpZ3mDbkW+Od0s3bQmR7TVDDLhHW6LvXV4C2QqCAYwBsA4ggoK4vAiymRMRlU8IcGgAjng8kBNxGWQLiAynzPZbdILdoA1h4rAMsjYEA5waObig6IXCoCBwB2RNCAawKhiTbOQIuZGcgpQcmYCsBcEAByeCx35+MSXJEWtlKwzysWI4jH73YX6eRAkgRdH8ALISBLtwPQDsvZSDCkaJaUc1AglpAkJh869DYAze2e9jbyoACVsFiPHmCQ0N0LU9L471EjNGyUCafePEEaqWHyBodLtizstLFF34Oz+DjrjG8KoIw52nLrsqXsazEBMAmrOpF8iJRwCehcjQ/pF1Z4q4gFAOcGlIC0/dAXgUQn6W29/1BGe/kYS0ViEqhQL6qrsI8AhEhuZaZ05ijrLPzG+i5Iw1FAjiv/1X/KsQMnsC4PdKCBosjVwFQ8RtnhM8/Pey9ynAZxA4+7MKjEKuHQMfhxJ8vW4qwJfEP4PI4M767gJQkk/Ego8w1ke97n88DHAPAgFOVdQ6x7bLSJyIvEc1eBqG/jmAWwiJvzuIGPZlzakVgKAzRgA1AnqF4qMXAKYQ2Ai0MH1vcz7wYeiH6rrDXq3Fa8MsEktF4XEI7EjdqI7f1klrFBlgdME5+Q3u+zDe3+/p1NMuFIiZkG0aTAlxwVAtQBCD4i2eo4VBkQlBm4bhdYARonhLrdlBwnLmlWjg8usMDe63moOdD9K3GQNrjbeqLtUHhp97Bok4c/xBhKsbMTu0IQxaEgdq5F93oUDgi2KuIAaroPfQYevTYGgIhPKwJwDv5Z5wWQ2gQOgLU+Z2h0FQp+vAXK8QEWboLtiaaesc/KoAUwh98cQRkJxImIQp6J+HuD7ALYQKpFyWajjuYQwTbDaWyvYIQg0iixv967S+C/cgJiBp2sNvAkDjH0Z7Sg8Ci1J8AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADJUlEQVR4nLWXi3GjMBCG1zNpQClBV4JSAikBl4BLMCXYJRwlmBKOEqISohKiErh9SYCDH9hYM4p5CP5P/64W5Q1e2/qz883coFdC9PbUQ/B4RD3S76afA3kVBAMYA2AdQAAFcf0syMucCKi8R4CqANjheUdOhHmQV0D0sO/ZfotOsBvUESZ08yBrQzDAvpCTI4oeKQwKAhdA1oRgAKuCIUonR8iN6BQk5cgIZC0IBqicCO7a6c0YJUeslZ4Y5M+K4TD62/rpdRIlgBhE8xfIShDswqkC2DZSDjIYJaYd1AjExxEIha15HgJj8MN+71qTAUjYKkAIZ09oaIDubXlxrJeYIUgG0uwLJ45QtfwFQa3eJHOeXqLowvf0CjriCsOrwncXnjpusnhqj0KMAGjOJt8gJ5YAPArRQ/kl684kcQGhHODSEGeeugCwFEI+y+W/fIGz30hCWqsQmUIBm6w7C7AEoofilGdOYo6yz0wHUXKGHAoEad6vit8LIbMnAH6vhKDA0shV0Afs05zg1vxJRzcBbkHg7A8qMAi5cgh86FLw9b7JAHeJ34LowR303QkgJZ+I+SbAUB/1fvOxGOASBALss6h1jm2XFjkR+Yhq8DgM7WMA5xASf1eJGO7Lin0pAF5njABqBLQKxWdPAIwhcCNQwvi9xaHiU9922XWHe7US73WTSMwVheUQuCN1gzr+Widbo8AAgwvOyTe4bf0wvt3SpYddSBATIVsUmBLigqFagCAGxUu8RguDIuO9bhq65wEGiOQtbc0qCcuBV6KB498DFHhcag7WjZd9mzGwVnvL6lJ9oPvcMkjAmeMHEU5uwKzRBt9pSexoI/+8CwkCXxT6DGKwCjYN1Lj1KTA0BEJ52BJA08gYf6Rn3+FXqbzYrmZvWh0IEnve7jAI6tQ1mNMJAsJ09RG3Zrp19g2N/wTeNy8CiKM+C6EgI0dAciJiEkav/zwEBqgVYM6FSzNO4kH7ZNx5xUSL409aqn63hSFMeYyFZe1mIZkr21j+4pfMPKi40X+d2IV7xM6Pz/tViGQZfgrjN58Oj3yMxqUv2jWQa2CT9h9XqmNkASMVLQAAAABJRU5ErkJggg==",
+    "price": 1,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 12,
+    "tuc": 7,
+    "incPAD": 30,
+    "attack": 2,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Pole Arm"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 30,
+      "min": 29,
+      "max": 31
+    }
+  }
+}

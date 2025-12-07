@@ -1,0 +1,37 @@
+{
+  "id": 1032023,
+  "description": {
+    "id": 1032023,
+    "name": "Strawberry Earrings",
+    "description": "",
+    "chineseName": "草莓耳環"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 85,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAbCAYAAACAyoQSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9klEQVR4nK2WjZGjMAyFxcw14C3BKYErgZTAlpCUkJSwKSGUEEpYt0AJcQlxCZyesIwJcGFnoxmWnxh9es+y2T/0Ovp4LuhN8Qrac9CxKag5Cvwt4JdKL66g0NFbYw0qln59E3UtHwy1JZHv3qP2GSqwe38gQyV14cJ3ngwDodZYKeLXc5xD+++HJWsqsnRl1FEelqUVsOe/FjbX/Kyin8xxn10XOTQBu4+G6MGY4OSHrvPpDcM/2QM/c4P15/0kYR5ajDQiBLSu0fHFxF57DGRPJwazrXc7TcPCRXMEuz3R4crX2bDBFaL9h0/FAAgB6A0NQHu8XJ154ir2zXtumpL8rqMQwfyI8hICg6+GL87DPVw3PLYyd4Hc+8GptvVy5iKoPkyh9NUCaGOLDnYiJ+34+oaCiNRknAE0XJiBTC7UcsZATeoDnZq6tgJE2rYZbZ/Y2+7/iqKyrrlbOwFXnytAuAKo9zOYqI+9ABeb4whMUAGgYlW4EEhxyoEVt3Fg4ClMgHnjacBaVpq6HdBiF6h/OEfljb0MnMQNCQBAQRqjpfXoCjce1BpvZKzOPd7ytxFc1mmNT7tXth4osF4AZzckSSoBxMEKkysMDDjgFr+jzuF3Nxc92ptbjL1OAy9aA+sGlQKMiUWhQp+AeeT7dpzfXqHJ4tQgmAsGhqjU5AtSE0eVSzCBcNdf6qFomzXLxN6kNkJw34S4JkVeOQ7ObJXxmdKgQ7Lc2M14d51BRe3tcpl1cbIWO74btpYcqIEeEIVPS6BupwU8f2WKT4ANpQaSAw6gOVSpn3eINo/aqCOwe8nHgihta0vfUwHrTRVVi9qobEmljH0CZhwp5nM/5F/7iKfdg1dsL+sT3QqQX14HS/MoDbQwdss/ZkO0rcwrVOrcncz/gRqiMoxiNkFTh2oSGufup8CtUOnqu84nn+sFoIKcFrUC3AqVEGS2tyrsORR4Hqua/UuzFZo6+patQVUHeDWqSu+sJdveSDFJvpzyaFZULcU/wq2GAEdv+8MAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADNElEQVR4nK2WgXGrMAyGxd1bwB3BGYE3AhmBjpCMkIzQjFBGCCOUFRghHiEegadfWEYQaNN70R0FHKNP/29h+od+jiGdC3pR/AQdOOjYFNQcBf4S8I9KL11BsaeXxhZULP34IupbPhjqS6LQv0btEiqw23AgRyX18cJ3gRwDodZ5KeK/19hCh6+7J+8q8vTJqKMMlqUXcOC/HjbXPFbRb9Z4MNeFhWZg/9YQ3RkTO/mh70N+wvFP/sBj3Wj9eT9LaEOLkUaEgLZrdH4xs9cfI/nTicFs683P07Bw0ZzA3Z7o8MnXZtroCtH+LeRiAIQA9IYGoAMers68cBX7FgI3TUlh11NMYB4iW0Jk8Kfji/N4D9cdz63cTSC3YXSqbYOcuQiqD3MofbQA+tSio53ISTu+vqIgIjUZZwAdF+Ygkwv1nDFSk/tAl6auvQCRtm0m22f2tvu/oqisa+7WXsDV+wYQrgAawgNM1KdegIvNcQJmqABQsSpcCaQ4WWDFbRwZeIozoG08DVjLSnO3A1rsIg33rqPyyl5GTtKNCQBAQRqTpfXkCjce1LrgZK6uPZ4K1wlc1vkdn3evbD1Q4IMAzt2YJKsEEAcrzK4wMOKAW/yMOoffu0fRk73WYux1GnjQO1g3qhRgSiwKFboA2rD7dlrfQaHZ4twgWAsGxqTU2RdSEyeVazCBcNdf6rFob5plZm9WmyC4b2J6J0VeOU02tsp8ozTqFJMbuxnvrg9QUXu9XB66OFuLHb8btxYL1EAPiMLFK1C38wKWX5niHWBHuYHkgANoDlUaHjtEm0dt1BnYveRjQZS3tbXvqYD1pkqqRW1StqZS5i6AhiPFvO/H/Fsf8bx78Bs7yPuJbgUorL8Ha+soDbQy95l/zMZoW1lXqNS1O7nvgRqiMk5inoLmDtUkNK3db4HPQqWrb7qefK5XgArqtKgN4LNQCUGavVVhy1DgearqbTnnO6gz5x1XfMPN1byDqg7walKlsTd1aAlyrEHdxoGvouPEH2sVNiPwbIbM9pWBshJLqAK8Oeu4nhvajrXPcVwObCndeuAhwcZvy+vZsYTmj8pGEXZsrYDviszX/wA3k56D+dcqTAAAAABJRU5ErkJggg==",
+    "price": 165000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 85,
+    "tuc": 5,
+    "incMDD": 65
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Earrings"
+  },
+  "randomStats": {
+    "incMDD": {
+      "base": 65,
+      "min": 22,
+      "max": 108
+    }
+  }
+}

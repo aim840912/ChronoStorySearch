@@ -1,0 +1,43 @@
+{
+  "id": 1092014,
+  "description": {
+    "id": 1092014,
+    "name": "Adamantium Tower Shield",
+    "description": "",
+    "chineseName": "朱礦方盾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAfCAYAAAASsGZ+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABzklEQVR4nM2WjZGDIBCF15k0QErwStASuBJICVoCKYGU4JWgJWgJZwmhhFCCB/gHCob8eHdvxomi7GNZ+MIBenWwnyJl0t2updWKYmw+BcQR8x1vrDfHj1OnM+FtBQjFwJsKkozJL9s+uGwzeoOQ7e3XGeIEy3shQ/MhvjB9oGo4EBxPTeN0aQNMS8g/Uyjq2jleZYDZFfI0giwjzm+UQVF/6zgYx7ZJjIl+wUq3gZLKUhlQmulM+qkU1jcqA9PAMlFiRTF08teBMqanbkvEMJhMznk1NSAjPgqouRDbz6NJ1AjorjXVxT+mObBkNEEQywsNbnqKdMHFVGuB1O/wXl4VF1DSPpPTRWccHcArXxoC7mnZc8PEV5t1se8N5YlMwmT23jB5TGLj2WmyvYjDtMzEYpe6f4VdzGDXLXuGXTJAW11mdk2bcs0utePH4T3GLmkwsws7F5rJLuJnl419UwmhBru4cyUHsmtbFrs8W2bEvIX6P2EXTZAepDIJZdcYW7Grpn0mAex6n3Yz2QUrSwUC8n36ten6T+xq5R5sDXbxaSkvN8dr5y6LXWTOwNj5gecuH7vQml0OmexaUVjpMXb5/+td564oPVW7nup/AJ7RKrSqzsrMAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB10lEQVR4nMWXjZGDIBCF15lrgJTglaAlcCWYErQErgRSgleClqAlnCWEEkIJHuDfEsGfJObejBMF3cfi8kk+YFILxykYjNrbtbB6SEjx1YZYcjoTtdVz+jy3Y0aiKYGQEERdQpRydXfTGag2FAGkam9+viGMqDqXKrzoPST2grIWkNBwbMJTZ0woKyD7iiGvKue4tQnlV8jiANI0cd6jTfLq18ShNJwbhTQxnbxwm2jpbLUJY6nJqJtWad2jM8EmMyMtnuf9g/73wjg307ikBJlYRt9ZOTYS5EE21IGUy9fYKKgltNeKmYI4xRnwaDAiEKqD9I5mukwRyPH9S6J/+351lEJCwbqMzheTeTCbOlu+dCSs6f7JFSPfu5oXwNpwHsxom/DTK0b7JBeuvUbLBb5Nrows1unzZ1jHEetu6aOsU0Ga8jKxbly4c9ZpMgxD3M86ZTKxjjoLELMuWWad/cnAihKGWCecVb6DdcuyWOdZUsMnYvaZ+DfWsYiYwWqjrawb4mvWVazLaCPrXqdDjQ5D0L12QPV1evvUvYV1Jso21jVqnTaIdWIs8/vF8/y+zmJdMmWCCOHb141DWWcdmbPOIcw6J7219rHOv3fw7euC+Fwe+m/iDzkBK7Q0BW4sAAAAAElFTkSuQmCC",
+    "price": 110000,
+    "reqSTR": 130,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incDEX": 2,
+    "incPDD": 40
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shield"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 40,
+      "min": 20,
+      "max": 60
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": 1002405,
+  "description": {
+    "id": 1002405,
+    "name": "Dark Arlic Helmet",
+    "description": "",
+    "chineseName": "黑色昂斯頭盔"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADvElEQVR4nK1Xi7GqMBANM7cBLCG3hNwSfCVACViCtwQsAUuQEqQEKeGlBCmBt2fDxiQGn47ujIME3HP27CfxS33O5uS+eOZHnyDAwF3X8Y21lq+Hw0EIPSTyLoEZwFprBpYPrKoqvvZ9Pz8i8Q6Beb/f+xsAj+Oopmnya2VZMpFHJN5SQCIXAgDHB+uwkMyavUVgGAYGk6sAggyiF3ukwjsECjhFGtJIAY61kMSavd0FIr2kIgSXDxFlwp8gkPa6OOcChBljovvFnu6CEKBI1y6XUyT3ZJecL2u4PxyPj4Dv/IcE5vmq1O9vo0pd0tUNEoBqbUhKqWzrSUyl+05PGdzSK227d9/pvb4fwmE0X2lW7Yat0uSLiHJRfq2AZ4FzJjmHafoONeBDE5uquoHNF6Xqg7s3Rvvf39UAwPdNQ62FHI7sVMxm5GcSuvQEUhJQAkSUHlxR0nq9+80QoAAlf1WzjaJPFfApoDU7YgK6ZzQHPaGQ4Ol0VnX9h8khwKapKGklK+MJFD9Knc8dybONFEmld9PutqZJTnzseFsDIUSuJYAJJeD8shqBap4AckQl4hzY0xJ9HLUAp0PG6FqZgCQgBtWqniZkaiDF6SlvBLg6oYAnc60XEubOASJFxCCINCG6YhO/c8EepR1Y2x4p51uvhoAvdeC6ADjogp8/7qViY6kLnDMAudaz0QwAeFEUXNEm4Ok2ovvIbwpkinBU1HIk4uX8zWxhkNVOFwWlpmDQyDPCjtoJwN124JE8lDQLxnzbAhxFiPcxa6I2nNRfcvKtQuUleikyLh7rwC8dPfMT16rjRNqn+0/CQ8DDGliAlijNyUVpayJkfR2gt/WyucDOjWXlJn1Th7mhWP2IjtFB3gS14AkYVStuYTwrHet+bBXX2HLIiEyjbmZl0F5W1BMU6qXJpVEHc8QLQr4wCxZzRQgZN7v4xfnqCgXdgL5G9JVxa67q18+a184Voc2XgTp1rS/EL/a3ozFA6TvYrd/X0QlMZK54LANcWjUsvpxtdjfkq1bRzNDLOBbzNaDjueNB0GoYUgB/BCznwPT7ZjeQIj0XaNKC0XbMKkA6bJc20A6gxY9dBQ/B1ozdlcoPn/BZ9kSEnIeAab8/Y5Hs+MnKATkigI4rx5I3DDpM8JpsHq8A3j0jv3rMPw8JFJRnOjj0fHCQteBUw0PkFTse+/++k01BEo3PGTmc1WvGRzGeL2P+hXsCj1P81D/ewPio1/dttgDzBD5sE2VBBljO7gi4Kbf+R+JVCyZs1t8/R80Fwm99XtwAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD3UlEQVR4nK1Wj5G6PBBdZq4BLCFXAleCVwKUoCV4JWAJWIKUICVICV9KMCXw7duwMYngzxtvZxxIgnlv3/5JPujvbMrGxSt/+gsCAtx1nQystfI8Ho9K6CmRdwlMADbGCLD+YHVdy7Pv++kZiXcITIfDIQwAPI4jOefCXFmWQuQZibcUUM+VAMDxwzwsJrNmbxEYhkHA9KmAIAPv1Z6p8A6BApsiDLmnAMdcTGLN3q4ClV5DEYPrj4kK4b8gkNe6bi4JCKuqKhnP9nIVxABFPne9nhO5nZ1jPs9hfDydngE/7B8TmKYb0c/PjkpT8tM3EoAaU7GUmtk2kHClf+dVAbf8Sdse/Dt/1/dD3IymG/eq/bAlw3sxUUnKjxXwReAl05jDDL9DDexhmE1d38GmK1Fz9OOqMuH/DzkA8MNux6WFGI6yqZpdkF9ImDIQyElACRAhM/ik5Plm/7NAgB3U+NW7beJ9rkAIAc/ZER3Qr3EfDIRigufzhZrmW8jBwd2u5qCVokwgUHwRXS4dy7NNFMml993uPmdYTvzseJ8DIXhu1AGHFPD7ihqRaoEAYsQp4jew59n71GsFzptMZRqqIpKAGKilnjtkbiAl4SnvBCQ7oUAgc2tmEtXDBvAUHoMgwgTvik36zRVnlPFgbXvimG+DGgo+54GvAuCgCr6+/UfFxnIV+M0A5EvPJj0A4EVRSEZXEU9/ED16fldgIQlH4pJjEa+XT2ELg6zWXQlKuajR6BpjJ+UE4G47SEseSu4F43LZAhxJiO/Ra5IydPQfb/JJsfLqvSaZJI/14NeO10LHtXRyrH1+/mQ8FDzOgRlo9rI6ey9tw4RsyAPUtpkPF9hlZ0U5Z+7qCDcka2jRKTrIV1EuBAIVNSQljLXSs+7HliTH5ktGYgZ5M1GF8rKqnqJwLTkfRhP1kSAI74VeMJtPQsi42acfTjefKKgG1DW8rys/57N+/a5563wS2uU0oHPXhkT8kP323AY4fEe7Dec6KkGITLW0ZYBrqcbJt2Sb/R35ZijpGWZux2ohB0zadwIISg1NCuDPgPUemL9v9gMr0kuCZiWYHMeiAqTDcWkj7QBafNlV8BhszWS7kkLzidcWb0SIeQyY1/srlsiOv6xckBMCqLhyLOXA4MuEzOnh8RvAhzXe14zL6zGBguPMF4deLg6zbZjITQdoIr+x06lf5EORHoshiLyBeN/zn0resKPfGYLeyi73O6qmu1smYB5GOgMSR3pstrnF0W5xyPV9qPsm//iVa7n7x3htTd4dR0EbGHkdHD0Lge9yErvPaHrJ6ySWawSjDrtZ+v5/n2IUF3gXStAAAAAASUVORK5CYII=",
+    "price": 115000,
+    "reqSTR": 0,
+    "reqDEX": 280,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 90,
+    "tuc": 7,
+    "incDEX": 5,
+    "incPDD": 57,
+    "incEVA": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 5,
+      "min": 0,
+      "max": 14
+    },
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 10
+    },
+    "incPDD": {
+      "base": 57,
+      "min": 12,
+      "max": 102
+    }
+  }
+}

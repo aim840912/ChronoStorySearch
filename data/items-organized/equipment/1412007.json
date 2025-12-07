@@ -1,0 +1,39 @@
+{
+  "id": 1412007,
+  "description": {
+    "id": 1412007,
+    "name": "The Shining",
+    "description": "",
+    "chineseName": "光明斧"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAiCAYAAACnSgJKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB70lEQVR4nL2WjZGCMBCFNzM2wJUQS6AFLYErQUrQEqSEo4WUICWYEqQEKCGXXZJMQH6iAd6MJCLk27fZBQ+wv5QZ2d5wlf1lNBG5UHvC1aN5QFHc3Im94OS4FCV9qQqJwy5p7zm2YDxsDR91bH/cEj7peGv4rOMt4YuOt4IHOd4CHux4bTiBQx2vCXfgtq6DwSFw9xJYG7wEV41SIPSi+fGoRhaNAs/BHXh43k5iwVPwHlhUFfDrBeqiJKcohMaCx+BvYFlqiJTwUi+4lV0bITThPAo8Bp8Ft+Y3BLfvWxINZ6a4KNVDxwhN05Tm1QZwCgAPuMe+41OWQSUEaDqNsSmfgqPewCh0LqXs5joInZmxFoyCq/vzTmBMMaLQqQ0Ag5FVd6HtAu/eVfqchC5pjzEIPffBySkFzlPIHl37cZ0VWy8jWnyluhutUwTaNI+Bh3o2TRdIkrhzP2w6GT3n9mbZtiDKX1dkWFyJqXIfnGq3BDPjBDj8fU5g3eMINBVNC5jigvRy6YGtUg8aKgt3T7Zaf3Bhk2E/appXea6uZp9RfBCE1ZJrH+7Axfm8FDDT11AAFmxd8w/dI5xce4UR1C5z4BDXFh58sSd6DGPQQ32y1gG+f0IxDVJa0H4BtvAYMWYCYJ9nb5U/kBQAfJHBf+yhaXxYpuETAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAjCAYAAABsFtHvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACL0lEQVR4nL2VjZGDIBCFceYaMCWQErgSkhK8ErSEWEIs4WzBErSEUEIsQUvg2JVlkODPjT87gxBFvveWJX6x80OZPjobrpLfBAdVVqkz4arualYUub1xFhwdl1WJP5pCQndK2keOCQyXo+FBx/TwSPik46Phs46PhC86Pgq+yvER8NWO94YjeK3jPeEW3LftavAauP0I7A1egqtOKVbpRbPrVQUW3QSeg1uwf58GW8FT8BG4ahrGHylrixKdQgB0KzgE/wDLUkOkZG/1Znk5HCOAxpxvAofgs+DePANw/7klm+GRKS5Mte8YoEIIHDcHwFEAXGCPXce3JGFNVTFNx35ryqfgEB9gCHAupRzGWoTOTOgIboKr5+uJYEgxoMApCQAxshkm0ilw3t3lnGOAS9xjEKHHLji+Cca5YEk9HD+us0L1EojFT6p9kZwCkNIcAvvx6rpBSBzbe5doOhkj5/Sy7HtWlT+2yKC4YlPlLlhotwgz/QR4/fccwfqMA9BUNC5giouJNB2BKYQDXRsEt/9srW6wsMmwqxrHTZaph9lnCO6JoFhy7cItuLjflwRHeg4KIDC55v90D3B07RTGnFq7+hzYrHUx8/s5eChFsdf79+76WNUg2g+zFqRPOODeaSO4Dw21kJBCgx5KC6AVDTg3YAqCtqZZAW61E4g7ve/YjzKKohQERAO48OZNptyH+wD/xamFcg1+6j4LzOsDLQin1IT22RfoC/leEBsU/ge9f4TUHX6REgAAAABJRU5ErkJggg==",
+    "price": 190000,
+    "reqSTR": 190,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incPAD": 82,
+    "attack": 5,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Two-Handed Axe"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 82,
+      "min": 79,
+      "max": 85
+    }
+  }
+}

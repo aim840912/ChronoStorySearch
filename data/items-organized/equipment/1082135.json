@@ -1,0 +1,49 @@
+{
+  "id": 1082135,
+  "description": {
+    "id": 1082135,
+    "name": "Blue Anelin",
+    "description": "",
+    "chineseName": "藍色亞納林手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACGklEQVR4nLXWgXWCMBAA0OO9LoAj0BFgBBwBRoARcAQZwYyAI8gIzQgygoyQ5i65NFS0StJ7ryIU+blwF/iA/wnlfU9+//M/UJWWHaRZDmmaguz3PACHx0YXIEbWDLSdRK0Yjp6pD87zbLcT4GDmsSc4JmqyXAHBfoe8AZBCRc0Us3wE4jEcEO7FQlVaHc1Fn4Fjj7tRpteC2UsgfoSiDuQs/wJDUQIzfR/x4tMkwUpPwRDUgYvwQNqugCGoAxn4ce2+FKvgVlTl3WUB8H3kfW6NR/EuStPqx6L5GXwwrVvRxbS+UqmhqMsyBHwVpUeT3x4h4DPUPYRxEefwe5GKBv/eBNdQwvAZSNlwWGDRHhZ81hqvoEpdS+xo+BRAS5u59mQuztPIGQYEo7ZIRijOF2twzxl8KGs9vQD12LhBbMnSR6lICnG/ylw7QdlLfTsP86A9ebcKbUHvGp6f/l8NFYie7sEOZoIY4TL1lzCOQnDlznxSRBQrE6bFg3j1XYf3YxTS7SRh1+YEGzBb3DdeDC5Vb4rpXJliCkHlOMLtaIplf+4c7qk0sORTf88qGKoztLKDrfkSmuuiTdqGDmDx4P7u8LMSGXAkEDPMdBdlUOrB9pvRJCnwndU0fiEMrk69yxxbhkKDQymgloN+Y9/jkbd71GWKP7Zv3+ZNXOMI4gAwc5oFbGGJIJ5VbwZ91F2E8aLFT+G2v88LiW/oUXu9mAuHmAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAgCAYAAADud3N8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTUlEQVR4nLWWgZWCMAyGw3u3AI6AI8AIOAKMgCPgCMcIxwg4goxwHUFGsCP0mrTpFQVObS/vYSny+uUPSdoP+B9T3n1y/+d/QFVatpBmOaRpCqI7sAMOHhs6A6JlzUDj1NeKwdGV+kAppR0nQGfk2BE4JtSoXACCvYe8ARC9iqoUVa4B8Rk6hLNYUJVWn2bRLeDY4TRKeC0wewqIP6FQB2SVfwFDoQTM9HfExadJgCVtAkOgDjgzD0jjAjAE6oAM+OXauegXge9CVd5eZgD+jjzn0lizV6EUVt9mxc/AlbC+C52F9ZlMDYU6lSHAZ6G0NfnlEQLcgrpNGJs4m1+LlDR4vQhcghIM90BSw2YBs/KwwK3SeAaq1LXEioZ9D9TazNqTWZzDyAoDjKE2SUYozhfL4Joz8KGsdXgB6rFxTryj0odSkhT9Y5e5tj2pF/pznuSgeeKhC70DfSh43v2/G0oQHe7BOjNBDHNK/RbGVvScuZJfigjFzIRpthEvnnV4HiORbl8CdsecwAaYzb4bN4NL1ZlkOlcmmUKgYhzh9mmS5XBuHdyjkmPJXt9nFQzVGY6i5aBv0RdDQtBcJ21ybOgBJg/Od6ffTmSAIwFRYaarKINSO0uJlsOySW+U3pygSVLgmdUUftEbuPrqnHIsGaMp1fXaQy0GfWI/4BOklmuKPNhkL+mUatvp/nmjdfEkruEIRAdQOUUB9QgE4ls1/mBneDm0PhStwEU0nI4FxdGsy6Nnp43F7+/vrxmUQ4Ce7+2zJRXpigK5MX94/wePAJVsRZLCPwAAAABJRU5ErkJggg==",
+    "price": 260000,
+    "reqSTR": 0,
+    "reqDEX": 140,
+    "reqINT": 0,
+    "reqLUK": 260,
+    "reqJob": 8,
+    "reqLevelEquip": 100,
+    "tuc": 5,
+    "incDEX": 4,
+    "incLUK": 3,
+    "incPDD": 37
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 4,
+      "min": 0,
+      "max": 9
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incPDD": {
+      "base": 37,
+      "min": 0,
+      "max": 87
+    }
+  }
+}

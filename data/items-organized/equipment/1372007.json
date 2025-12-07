@@ -1,0 +1,45 @@
+{
+  "id": 1372007,
+  "description": {
+    "id": 1372007,
+    "name": "Cromi",
+    "description": "",
+    "chineseName": "大魔法師短杖"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 48,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABWklEQVR4nLXWjZGCMBAF4M2MDdgClGALUsJRwllCKAFKkBKOEqAFSzAlSAl72Y2Jy805Bkje+MPAjJ+7WYMHyB98vqvcGD4QoRl66OsL5sQYusEMx1PBJ3Jh+P1zhbpr4PR1hq6s6FyWNobWUTxEL6mxReum+hKg1FiAJnNbVJQa+wilwqKgFFg0tBfDER/R0FaMtx+ChmHgqYuBtmDcNoof71hoLRbWhxLbuq1YCEFbEoNx32iv88NAWVvVXwz/uc4fRsNAoYHo3Ra0GpJYWPhZXCyV4t2bqpnN7KHViMQCRLcEn6tu31W0OQeJjLpzZw09WijgCL2ZdlckMTU1HSJX1zmocJUSRNH3kQYC94LcRsTXbEiohQqqQfPdNkXENNKXFpCxo11A0ix+Z0ZCGcJrZsOdLIyy0PNK4qo8Bg60a3d/IaoEOLda/jtKhjmwXOwiPKX2yccpsF80XtHVVMrVqgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABnklEQVR4nLWWgZWCMAyGw3sswI2AI7CCjHCMcI6AI8AIMoKMICs4gh0BRsg1gdbAoVdq+Z+R0vr4+qdpMYb9hdM12huGPSKc2waa4oR7whh0hwGSLOWOvWD4c71AUZ8h+z5Cfcipb5c02tSRDIi+QsNmqeuKkwWFhllQp+4zR6Fh/4JCwZxAIWDOoE9heMPeGeQL4+OHQG3bctW5gHxgnDaSKW9X0FaYXR+Sa+p8YVYE8pELjPNGZ50pBtJWV0sYrozzw6gYSFQQzXgEbQZJmF34QQweoohPb3IzqMGANkMkzILolWB0KatXjrwVS8itrMdeRZ8KUkigUd3HjiQs6s41IrurR1A6OiUQqXzcqCDwUyCnEfFZGxJUQQ55W/LbNoRENdKkBUjp0k4hqGb7TEnQDuI10+JMpirSoGlk3VWy8flyJ1lnmqfX7vGERAeAY1XKf0ekzAM0mJBp/NKAXtwXukqvOqhtNiDB1twNsC4DonwpA0umyKdrOsW08bxK5c8EpLPkzQ9fzXw5tmzPIhYDagFcS1fyAvxucrb9C+Di7J411kZYAAAAAElFTkSuQmCC",
+    "price": 200000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 145,
+    "reqLUK": 50,
+    "reqJob": 2,
+    "reqLevelEquip": 48,
+    "tuc": 7,
+    "incPAD": 39,
+    "incMAD": 63,
+    "attack": 6,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "Wand"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 39,
+      "min": 37,
+      "max": 41
+    },
+    "incMAD": {
+      "base": 63,
+      "min": 61,
+      "max": 65
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 2020028,
+  "description": {
+    "id": 2020028,
+    "name": "Chocolate",
+    "description": "Milk chocolate that has a strong sweet scent. This is used to make the chocolate-dipped cookie stick.\\nRecovers each of HP and MP by 1000.",
+    "chineseName": "巧克力"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwElEQVR4nK1XjdGiMBR8zFwDtEALWAKWgCVoCVoClnCWoCVICV9aoARTApd9ZGMMqMB9O8MoCcnu5v2gf2Qd+uQ+W7J4DWn/c6xeBjbndpGItU7FGCM3Y/X7UhFLSdWlaR1hZ6Usch08XVpp9sP4DBHZaqcxSA4Ya+XmRBB1mQcRENda6ZeQTrrUjasyuHRTL3Nl+Zxrh2jIrzidA5yAx+zjDS6Bo3OWR25sN2z47QSIT6Qh+NVzH924sEbKLh8tACGIBiU2iIFLf7TZO1Il2+/3bp1LitstZCadGPfZubk4Y4ECBLinHu8udjlF2t/vd+m6Ti6Xi+T52A0dxYCTeOM6yebYZUraPx4PdQbCoij0+6qMfRPLlLR3kLZtlQiEcPu/mHJJUiUECWrqer1qLA+Hg3zKWI7PzdgppwqQIY64ENvtZiO1fM5YEqmAKKlYl9ocjOkliWnmEMoDDwFN08gVxNutVEX3NmORNLhHSFKXtigniek0qMBkVVVyOp2eqpMjJBCv0pVWWVbPPMiNiisQT5cjGMcFYpegSjzZHPCQ9cfDhAJx7LK6/kjtQ/Gyzm2ONXj1eRM6zvvYKaFlwzpNgbdE3fwVnEQeEUJgvCnG4QyfeBYVgUs+dKSwSBtEN2xWVDUm5Hw+60Ug4eiSAng6seMYL82BpRMvzKHYJwTGmWj4jguJBsARwTiSMHY5csqNQIgkAAF6MIWwpBhvPmt90hAYq+t6kjAmVZfcmAqPx6NuwPiRNHaEZ0FIIX5t5shYhqMfacHpxjUCADFCuaAzxa1wipCCcLQgI+E7shEpY8UYYVO6owsC4xSEOSRWfBrfEEhZIoghsNvtAgG6EwmAqZcBXLr5WT+6047Up+QAmj8FABQBcoTi3Xv3GykRlPqWNRIAkIgxXeJyivSrAIpgqazB3F+DLy5SEbLwD9Q/coUsFD5Ip/kAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC7UlEQVR4nK1WgbGqMBA8Z34D/BJoIZaAJWAJWoKWoCU8S9ASpARTwqMEUwIvG7LxCOBT/9+ZDJCQ7O7dJfBHPkOXPS/emfwJaXfbVYOO5bF5S8SnTsVaKxfrwv27It4lDS5t4wlbJ6YsQuf+1Mhh0/e/IGLxsVMNkgPWObl4EURtiiQC4hon3Tukky7DwpVJLv3QYMyYx1jTZ0P+i9NXgAhEvBze5BLYeWeFcuPafsHfIkA8I03Jrx7rhIVLZ8W0xWgCCEHUK3FJDFzG0C7mSAPZZrPx83xRXC6pMunE+mvrx3TFAiUI8Ew90Z12OUXaXa9XadtWTqeTFMXYDR1pwIleuM6qWbvMSbv7/R6cgbAsy3D/UcXO5DIn7TykaZpABEK4/VdMuSRpIAQJ9tT5fA653G638qxi2f9qxU45DQAZ8oiG3K6WS6nlecWSKAhQRcV9GQ4HazvJcrrwSNsDLwGHw0HOIF6tpCrb2YpF0eAZKcldutJMEtNpUoHBqqpkv98/VGchJJAv47eWMdWjDgobxJXIp68R9KOB2BdoIJ48HPCSi+FhQYFYu6zON6ljKgbz/OKYg09fNBH6+aydEmHbcJ/mwFeiPnwJIlEoQgjUi6IfznDFu9gRaPLkREqTwgHR9ouVVY0BOR6PoREoOLqkAEZHO9YYHA7cOnpiAcWxINDPQsM9GgoNgCOCeSShdjlyyoVAiCIAAc5gCuGWYr75rotFQ6CvrutJQk0aXHJhKtztdmEB5o+k2hHeBSGFxLkLT8ZtOPpJS06X/iAAkCNsF5xM+iicIqQghBZkkfCv9N8ZXCfPpETKXDFHWJTu6IJAPwVhDIWlomGoU12den6Qcosgh8B6vU4EOJ1IAEx9DODSj6OsjeomWRub06QMyXdODuDwpwCAIkCOVGTf3ewTPoauXry8itfCk39xQAsASMScRpfbjMhNtAEpQ6AlL3njBdw0qd5GCo26dzP3I6dO5kMyKPt4cM+O/4YfTpBD0Kd+0zcAAAAASUVORK5CYII=",
+    "slotMax": 100,
+    "price": 1500,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Food and Drink",
+    "lowItemId": 2010000,
+    "highItemId": 2022000
+  }
+}

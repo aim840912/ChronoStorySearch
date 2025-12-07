@@ -1,0 +1,55 @@
+{
+  "id": 1061047,
+  "description": {
+    "id": 1061047,
+    "name": "Red Amoria Skirt",
+    "description": "",
+    "chineseName": "紅神聖裙"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 33,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAZCAYAAADAHFVeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACjUlEQVR4nKWWi5GqMBSGDzM2EEqIJUAJWIKWgCVcS1hLgBK0hLUEU8KmBFMC9zySQMCAs3tmFMjry38egR1s2wCfW7HWuQUb0AB6XKPCpwr/esMdFi+6xRvj77GrOPPGssAPlNUeNMCp3MPtVXGrNgZOBw23LxvhW7YGG4bXC3duBYg/WvhUajhWDdHxueeNaILZDn7+Aeyv56y6dWVKxdtT6VjVrX0K3IgUVvdSoO4anLG/VjYaxQocXPbAIM2baLhLK4f/tIHH5jKfwXAxrWqoMAuI49yky4lCpVW4/SusjncKaQJ0Eyj1d6Aq/SvYMDyfi0aCKI2xsZah5Frtr3Eizivq+m2S5JVpPV45GaoR6oGL8Rv5n4eF4PiM1P7KqnBhxYuTQtpUh+N83KzLLvlhzAI/BY6GMXPfm/PfwWbxqrmWjpWosehSNak/Mq7B7xKkBPJxe6+M6iq6UNJ+apSJENyJ+c4upjl/T30BcQjt+glBQIXEXNzmMHHhtGoN7bxJBkm3qCNjZQZPEL1eAktl7A4zujKBSCE7F7IwNfcwnJE5m8JSVRyXckwO3L17AycjcH9uoO0OqO7F9WbvZqEuVeZrh3yuqrS+RoAFixDlkpcCtwXLnZMBJqqUFCW7YqbC+qDTovTTjuI1c6WhJBJX0jk5V7eLoHgsBYXiQuGmWXjHZ+0UotL204Xe3OJKhX2O4S4Cd3P3+SDEmrEzhVc5/wq8Dh2+sUP/dFxIFFInL1Q9caM6IOhLbo8Nf+DgxwsMHQ5sfXb6D5trP4Lb9rHol3moDg+DEDulDxFWFIXBj6iLTOplArfT19J5EelQN9l+ah+6Or4ECjkXil0cgMB3C8K65foL/1mXjPsPgDBe0Ja4MbIAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACzklEQVR4nKVWi7HqIBDdzNgAloAlJCVoCVpCLOFZgpaQlKAlaAlSwqUEKSFvP0AgH5O5d2eSEBY4e/YDbGBZOlgvxTflEliHAtDiGiX+lfhqDSssfnSNDePbqCrObNgs4ApmlQfq4LTdwf1Tcq82Bk4HDferjeBL8g2s6z4ftNwKID608Gmr4VjuCR3/WzZEE5ht4OcfwO52nmX3nZlSsXnaOmZ1r98CboQKs/soUA8NzthfM+uFYgUOLjtgIM1G7FmllcM3GfBaXGYdGC6mVQUlZgHhOJeonDBUWoXmX8Gq2FKIJoAuASV9A6rUvwLruvd71EkgSmNsrGVQcq323zgR5xVVNZkk88y07r+cDGUP6gFH4xfyfx4sBMdnpPZfZoULK16cGJJRDY7zcbNudsmVMQv4OWAvGDP3XJw/BTaIV8W1dCyFjUWXqqT+SLgGn1uQEpiP2zQzqqvoQkn7VCgTIbgT851dTHP+nvoCxCG033cIAlSIOBe3IZi4MK1aQ5bvs0GiFnYkzMzgDqK/l8CYGbvD9K7MQKSQnQtZmIt7Gc7IOUnBclYcl22fHGi9mwAnIeD2vIe6OSC7D9ebfZgRu5yZrx3yuSrz+uoBLFgEUS47FLgvyNw+GcCElZKiZFcMWFgfdFqUHu0oXgNXGkoicSXtk0N2mwgUt6XAUFwouHkWPvBfO4VQef/pQie3uFKhzjG4i4Cboft8EGLN2AHDm+x/BX67Bk/soE/HhUQhdnKg6sSN6oBAV2ke93zBwcsLdA0OrH12+ovNrZVh9Krr10gv85AdbgYhdkofIlhRFAYvUReZ1MoElB1+f+A8ijTNpCPggPrnlJ76u6aKh0Ah+0IREoQBJxY8+/80JdMKvwXPJX0074KA16SP4FQAo8XohqF9u0z6h2Br5eKNiIakdZYuONzc5g+pXDdsZ88mUdgB4BSb/A6wzrjY/g8jS3PKaD3YnQAAAABJRU5ErkJggg==",
+    "price": 40000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 100,
+    "reqLUK": 35,
+    "reqJob": 2,
+    "reqLevelEquip": 33,
+    "tuc": 7,
+    "incINT": 1,
+    "incMMP": 5,
+    "incPDD": 18,
+    "incMDD": 14
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 22
+    },
+    "incPDD": {
+      "base": 18,
+      "min": 1,
+      "max": 35
+    },
+    "incMDD": {
+      "base": 14,
+      "min": 0,
+      "max": 31
+    }
+  }
+}

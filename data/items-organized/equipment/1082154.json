@@ -1,0 +1,55 @@
+{
+  "id": 1082154,
+  "description": {
+    "id": 1082154,
+    "name": "Purple Ciara",
+    "description": "",
+    "chineseName": "紫色希亞手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAZCAYAAAAiwE4nAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACq0lEQVR4nLWVgbGbMAyGxV0XoCO4I8AIZAQyAozgjBBGMCOEEcIIzyPUIzxGoPplbPx4HEnaVHecE4P9WdIv+Qf9H5uXMdu+eDdQQPPcENmesvI7+J3AuSgKwnO55KSUoU/TknVEp07A2TuBszGGrLXyTNNEdV3TZWrIOUd3PUboO4ACU0rFCUD6vqc8z2XeTevH/wKU/FRVJZsjlAAECAzeAt45RaZx1PY0/y1wbpomQsZxlM2jRwzBs2evAIPiZFNAYMgVvISFudTCAdg72FM5FNCnIVFcNzTiiZssjYMVCKCYA3gYBvkNQwQSbx+qVEAqL+jjavmEWiax1810dDpzreWOFUk0dB3VWn8J4ya0D+twrlRDE/kNmCkbXHVLl87QudV00x2dO3xj+QMlUFrEkoacNt1mC/Sd4oN4U1YcFVJTPHjj8XprqfxVSXgRVtPA+yJugDAusG9tLQV6ibNXN92LF3WtWHlO1BfsXGqBoJDLS7HA1vpLPNuFBeB816sYutHwKVcYALQyBQbv8K2H+dqzHIgpOdwRkHj/WEOA1fpEdbIWArlzKDH6vEEsLsKutbQuH/4D7yLwZ4u8dTFXbdt8Kd7ft57Kc8Xe9eIdLLQrxaq9DBVxMGm/1HeA8CwrnYzey7U9AYqo8ozkbbXQIJk4jV6h7jEyArExRhQxfqdtKhjmfNhSmKWqaQ7b2RaYsbJmdAkoDLLe64chb7rmZjwUyQF8KTxrsQ4BAbTjAkZjhgFoGACh8D+BqXz11rpRvg0HXA4dL9sjYMZXzBwW47oJDTn1Dp5JqLmzjK6P60Iftc+WRQpNO3+4PNMSgHgCLKzjqMxBcK8AZXHIJyxcK7g8YQgn6o12QvaKaLaWLXmQMHnol4328iNeHrw/BMZFAfwA9sy7aH8Aa7CVgkPXaXcAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9ElEQVR4nLWVjZGjMAyFlZlrgC3BVwIpgZRASoASoIS4BCghlBBKWJdwLmFdAqcnY+N4uWz2LqcZj8F/nyRL8g/6P7Ks/SGfeDVQQMvSEJmRDsfP4FcCl7IsCa3vC1JqoI+hJWOJTlrAh1cCl2EYyBgjzTlHdV1T7xqy1tKtmyP0FUCBKaXiACDjOFJRFDJu3bb4X4ByP1VVyeFwJQABAoG1gGuraGgstSMtfwtcmqaJkHme5fBoEUPQ9uQ7wBBxciggENwVrISEsVSCAmwd5Kk7FNDHQBJxemrEEusMzZMRCKAYA3iaJvmGwAOJtV9GqYBUUdL7xbCGnQzirOug6XTmXCssRyTRpDXVXXfnxsy1X+bhUqmGHPkDmCkHXLqWej3Que3o2mk6a6wxvEAJlNZgSV1OWbXJgb5SvBMfyhFHpeQUd164v1xbOv6sxL1w69DA+jIeADeusE9lLQX6EGerrt0oVtS14sizEn1BzsdOIEjkY1+usC3/Est2YQG43LotGPQ8sJYbDADamAKDdVjrYT73DDvCJco9AhKfH3MIsLo7UZ3sRYDc2JXo/b0hWGyEXWopXd79D6yLwLcW96bjXbVtc5e8v64jHc8VWzeKdZBQrhRHbT9VxM6k/VTfAcKyw9FK763cyhOg8CqPyL1tEgokE93sI9R+jYxAHIweSYzvtEwFwZh3WwozVDXNw3KWAw8cWQuqBCIMYb1XD8O9dTUX46lMFPCp8KzEPAQEUM0JjMIMAXBgAAKF/wSmis1aY2dZGxRclY6P7SPggZ+YJWzGcxMKcmodLBNXc2WZ7Rj3hTpqnk2LFJpW/vB4pimA4AmwsI+9soSA+w5QNof7hIRnBY8nBO5EvrG8iQaJZHce5hxlsle83xj6gQ+APfQu+k60Vdc4xlbesvkAc0m7AxZJw6aCwdfs4B567Cjp1jnKlAkguzYXgAGkkh6ik3lKxp8RtzeYW/inxbubd+by77xFYDA7hd4FRTK2B3+k4N3cbzcCssBs7NNnAAAAAElFTkSuQmCC",
+    "price": 270000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 308,
+    "reqLUK": 103,
+    "reqJob": 2,
+    "reqLevelEquip": 100,
+    "tuc": 5,
+    "incINT": 4,
+    "incLUK": 4,
+    "incPDD": 40,
+    "incMDD": 13
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 4,
+      "min": 0,
+      "max": 9
+    },
+    "incLUK": {
+      "base": 4,
+      "min": 0,
+      "max": 9
+    },
+    "incPDD": {
+      "base": 40,
+      "min": 0,
+      "max": 90
+    },
+    "incMDD": {
+      "base": 13,
+      "min": 0,
+      "max": 63
+    }
+  }
+}

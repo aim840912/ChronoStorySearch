@@ -1,0 +1,49 @@
+{
+  "id": 1060105,
+  "description": {
+    "id": 1060105,
+    "name": "Brown Osfa Pants",
+    "description": "",
+    "chineseName": "褐色勇者褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAcCAYAAACK7SRjAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACEUlEQVR4nL1Wi3HjIBBdzVwDXAm4BKUEq4S4BKkEuYSoBKsFlWBKMCUcLVAC2bcEBc5C+YyT9XjEwtun9bI8/IfuLdD3rcmd/8lD3/fUti0dj0eapom01qSUIsw758Sf55m89+KP40jGGLLWYj7kL7jL3JiFgYaWJRIY44V8nid5Yg6GJ/xhsDJO83uZSwC+aZzMOQRHAq1VBVe+ICcPCEqmlY6k+PDPzzPDEOVZMd6tL+Uk1tJsbeh7tj4Sx6yzefGZUL8nsWVVchBv1BEZrd0km0ru6+SPsII836TUAVlJmuwZMK/1fVy+qb+XebJa39awsLxtK+SKrtebjHDquq7bJUZpQggr/nwe6uS3201Ayg7k1EiXy4VPYBmQG4hzfN+PBb4gT0BreSP9mZv4eTfzj/AFOQ4MCRB97ik7HoXa0doxVfwGOSubPr6QmwfSbS8Be/YRfiUX5VsW6uHwzwNwYX/PJpbekaU44aVMmXIm8oBOwoJhuYUB8CZEVXKsLyzRqQ3hxzYWiWg2JRdiZJ39VK8D3+p2U4uKsjzCIk9ZlnUBWSd9/qwBL3FUZg/y4pJ4hKVL43eFq3JJ7Frt0qhm/hVVrDXDz5fl+uzpZFhue0fdrOl2dXR4UvTvhU/CqR6M9QPrFfDdqZX4p0kJ32GK5A0PAm7zSGSp+YunT8RNhbtpTvI34g3PcSbGHWxcfwWK30dqAp0xwwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQklEQVR4nMVWjXGzMAxV7rqAvxHMCGSEMEIzAoxARigjhBUYIR4Bj/B5BY9A/eSYOGAc+nPX1+thC8nPEvrJG6Ux0fdxSAlTRFNd11SWJZ1OJ+q6jqSUJIQgyI0xvO/7nqy1vG/blpRSpLWGfEqRJT1SanBGiobBH6aUZaK+7/gJGYAn9k2jeR3kez1iY/yHdYAxOMgfJqXY0EuTLYkmHBAghfQE+HMhim+MJUI461gzX8BdaBW+rWR4eGE9ifcmkvPeHS4fF8ohSwSSRNxx0zkrOSHI/IzoN7Eiij9wyKQobIfoOUEu5doulRB/51HAq7pY6gJxKewgEnS7jbxCtVdVlSVB+KZpmvUvl2Yf0TiObCB0Q0a0dL1eXeWnjQGQxPp13Sb1V0TBSGuXBPbiiuQ969Fe/RURipPYCHVkKSrFZaO8Z96m/gsi14Hl6YNM35AsazbOYa/+ExF36GGgGhsXAhgNbp9D58ZF68ZH0OdQRh0+RTQhO6Gk3IgAoHxvkptEeD+4sRJSG3tfGvTUWDfHBBqlNnpXLUG/lOVWb1wT5QruK/DnbIduVoI3Yb7sBfTZjtJeBaKngfcbWA7Av22qGx816/KrAZj1aEFW5vQyicSZ8ZXQlfTCqw2gK5m3YHx7t3RWbkTUhqpe0ngzVBwF/f9wX/M8G6yA94XrpdCvziXbHzvB5xXdQy94dHTCEb9q/KGaDv/wtIHksnHb5nC2Vyy8vrNT3q7Q/L4gX1AcuvvvJhYGpEK0rkKaD4thU+tPlsFRo8rmFKIAAAAASUVORK5CYII=",
+    "price": 160000,
+    "reqSTR": 0,
+    "reqDEX": 130,
+    "reqINT": 0,
+    "reqLUK": 240,
+    "reqJob": 8,
+    "reqLevelEquip": 90,
+    "tuc": 7,
+    "incDEX": 3,
+    "incLUK": 2,
+    "incPDD": 57
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 57,
+      "min": 12,
+      "max": 102
+    }
+  }
+}

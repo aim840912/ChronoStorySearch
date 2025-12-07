@@ -1,0 +1,49 @@
+{
+  "id": 1002453,
+  "description": {
+    "id": 1002453,
+    "name": "White Starry Bandana",
+    "description": "",
+    "chineseName": "白星黑頭巾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 20,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAYCAYAAADpnJ2CAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACH0lEQVR4nK2WXZGEMAyAwwwGagELWKiFngRWAkgACYeExQIWsICFSuCStCktf8vtkAegTciXtEkhh2tZ4L5kd4zOgAwqiiKZNHUNQ9cl89ZfpmmU4C7BR8ClLEuw1jqH/t7+vmG2M4+naQK2cQaspzEJ6i7BW+DiXlSgCuWdKajbFiqjoR9GZ6VUCCSWeZ5RpXgFzsAxkGEKjZV3SvdSG4aRuPsbhqHnYIhpKWsXYrLU5ItWAtz2BGiSYVW3IYMwp8s0DdSZqubHse8QWHC2BJ/xIsHODrZbVgEuWmt+sa4MXEkSgK3CY981nCUtK6VM2eJzkl2SIcF6jJidbqAKjkX2kWDB1u+vPXmLgAsZcWQoXfMCMq/MCpXyWF0o6HAfqUW2NlE0Aj/fw419PApXWrZ+7KFvGvhGcolY6oQKJ85uGEcwWifjuzDlncZZMrCgnkNlhdVnsPQH6TcCyL6aFWpMhVswhcbf9uT20NhlSL1HTlwGE4zUZ37HKEoe+2j5AKB5rPrJ7/uZ8yPJxVgqNByOKi4RDAQr0R9yrKOmFlNhHUMVxCWVe8uVtYa8PkaX7vXjnKhEkSKSoy/VM5Ba4u6S3BHrW0IdnLkEzHwVPSo2LaZdH8rE42C4+FrslN8GIEsZnTTB96dfjFu/DRJc1OjuM0ffRq+U7+Mn4L/FFUsRDgb5E/CSPQnk4tv8B2XbL//TGcaAMBcPHl9S+FDxf9xlIXRYk5lqAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACYklEQVR4nK2WAZGsMAxAszNrIBawwJfASeiXwEkACSDhkHBIOCR8LGChEvhJ2pS2Sznm5jKzQJtsXtImhSdcyw735XHHqAQUUFVVyaTpOpjHMZm3/rKuiwZ3CT4D7nVdg7XWOfT34eMTNrvJeF1XEBtnIHoes5DuEpwDd/dHBKzQO0PohgFa08A0L84KMQQSy7ZtpEJZgRI4BgoMyRi9U77XjREYi7t/wjxPEgwzLWftQkyWmn3xSoDbngBNMmy7IWQQ5po6TYN0pu3kcZlGAlaSLcM3umiwm4O9LKsC96Zp5I9da+BKkgBsGx6nsZcseVk5Zc6WnpPskgwZNlHE4jSDIpyL7iPDgq3fX1v4FwN3NpLISMb+Hdi8NQdUy+NwgTDSPnKL5DZRNAov72FmH4/ClZdtWiaY+h5+Ik+NWOuECyfObl4WME2TjO/C0DuNsxRgxT1Hypaqz1Dpz9pvDNB9NQfUmJa2YA2Nn/dkfmi8ZMi9x05cBiss3Gd+xzhKGfto5QDgear61e97yfmZPNVYKzQcjhiXCAVClegPOdFxU6upss6hCHFJPb3lwTpCPh6jy/j+1znBRJEikqMv1QuQW+LuktwR61sCT85cBj58Ff2q2LSYXvpQJ34dDBdvixflTwPQpYxOmuD7u0+MW58NGlzU6O41x+9Gr9T343fAJPBbRlIsVTgY9EvAy+MMiNm9NJfLG2X2lX0H/aHM/imMLzEQC78SPBYtx54AQzTP6XHjbv5/VoHqvIrudzPLRd9Z3ZkyzzCPuDQu6eLnNz+OfwHIA037LIB47gx+FWCi+w8/mzPRWMfKEQAAAABJRU5ErkJggg==",
+    "price": 2000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 20,
+    "tuc": 7,
+    "incMHP": 50,
+    "incMMP": 50,
+    "incPDD": 15
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incMHP": {
+      "base": 50,
+      "min": 40,
+      "max": 60
+    },
+    "incMMP": {
+      "base": 50,
+      "min": 40,
+      "max": 60
+    },
+    "incPDD": {
+      "base": 15,
+      "min": 5,
+      "max": 25
+    }
+  }
+}

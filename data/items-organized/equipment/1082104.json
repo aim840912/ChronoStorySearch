@@ -1,0 +1,49 @@
+{
+  "id": 1082104,
+  "description": {
+    "id": 1082104,
+    "name": "Mithril Husk",
+    "description": "",
+    "chineseName": "鋰礦暗影手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAClUlEQVR4nK2Va7WrMBCFp2tdA6kEjoRUAkgACVwJVAJIuEgoEhoJjYQTC5HAnZmQF6WrD7r/NE1ovtk7E/oHvqP5wfxha/Ib0Pm3BShKASClmxEdgB3g8KN8MRl8LzQAm8bC5ddNNscKxyUulgBaw6Gxcwr+VrwMYaFLDycgV3YRGXgPNMbqtcSaAjkBhKbgXU6NRYbBQVGA3ACSCMjPKhvmdkG1WchAkDPPSTD3xS1ASuZnhPlT6Exxpd06VJUb1wJkkcNI5xGXajf+BDrfeoHeMNIFSLF2F9epw2AZLEwEahuB70L5zvVIUtMSaf8PgWc0LMI5dp1gMLkthAOu9Sp08wXwKNIaH5mwBi0cmDRNz+O9e61hA8CtxJ2N+6UsHke65Y6AUmxDGVZ3F/5irevEqzyDxcqPDUX4l+duFxk6NY005cnEqS8cVvd0nq+YoRmh0gusNvydgJXtQCbNcGoGoIYiUBopIKSmORxW053h7I3EwGqig+kjbHKwtay1eL4tnPAeXOu8Ycjd4ihA1opOzchA2jB1dyvdW+akugC0xnD0BK6mEfoyxri424Sl0OCSgYu8Qw+7igFOpo1AWWYbkcNGPwdGp+Rsgdxay7Gm2gIKIUKRSaRPgRG6UnqOFK9zazMgiT59xK8CA9Tqxw/Qmj/HbB7nPPxdMbTBBspvmNMjlwQ0WoEsa/hE9/FyFy+dukqA3RYF7BVDFZ6J78YURGebRisQ6JuJXG7F/jK0bnuYRvcnfNQFFhCjXnesWV0XaxR9vNxEAUqbClFAWbf4/lZ8XqloLZWP+ROXHnpQ43l28JI3IucEl+iICtIqL4Lc2ch7y6WHhh+u4bYw7mqgK4pWT8PHoC1otpmHq1HB1vpe/Qcw2pWkrY0dnAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC0UlEQVR4nK2VjbGqMBCF15nXQCwBS4glQAlQAq8ELEFKeJQgJUgJUsJNC1sCb3dDyI+oXHVnGMMG8+052cAf+E5MD/K7teQ3oNNPDZDlCkBrm1ENALawOwyumAj+KXQBVhXC5ccmq31B45wmc4BxhF2FUwj+lr0CkSCVDs5AqeyiIvAnUG+ri9nWECgOEDQEf6TUIDEMDbIM9AqQg4Hy7IBL7iPoaGYyMOQkOQ3mvrgZyM4cOpjehU5sV9itbVHYcalAZzGM49TRVGnH70Cn21mRNrJ0BrKtzcV2atuigJXxwBE98LdQOXNnIg39bOn5HwFPJFgt+9g0SsCsNlMWmMZW6OoL4JGlJT3SUw2jsmCOvn9t791rjRoAbjmtbOw/dfbY0jV1DNRqHSqwsrnIDaLtxKs+AVLl+4ot/Cu520UvnRpaGvJ0oNQVDsk5naYreWg6KMYZVhq5Z2CBDeigGY5VC9xQDAotBYKUnKNh0d8Jjt5IAix63pizh/UWlgYi0v7WcKRzcC3jhmF1s6IFkoZXajoB8oKhultu3zLHoVmAaIxYz+Ci7+CcextndauwELqoFOAcTqGDXVULR1N7oM6jhVhhNb4GeqWsbIbcahRbw1gDKqWWIgNLXwI9NIlwH9leqxYjIAf/Oou3Ahcojo8f4Dm3j1Gecg7+2xBoRQ0UnzAbj1Qy0IwD6LyEd+LeXuniuVMTB0RtlsGnIdCB9sR1YwjivQ2tVQR0zcQq12zfDC3rM/Sd/Qjvx4wK8FanHWuS44Jm4J/NTbRAeVGlMsjLmt7fg+xXGDwXhrM5UPmso+6ahaG7oTtNFp7LQqyc4ZoUcUHjEBfB6tC7yt83/QKIwbU0ktiTwjEz9miQKrZ27Fu3WOvXBef1ygctApr5wrB72aIDXRnBr7aIIV2gC57dEquFpEfGLVYF4y0AfDJOrwjqLAgha0AF6wrwyX009x91PK+bMeElhwAAAABJRU5ErkJggg==",
+    "price": 160000,
+    "reqSTR": 240,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 70,
+    "tuc": 5,
+    "incSTR": 3,
+    "incPDD": 28,
+    "incACC": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 10
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 8
+    },
+    "incPDD": {
+      "base": 28,
+      "min": 0,
+      "max": 63
+    }
+  }
+}

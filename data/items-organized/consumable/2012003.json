@@ -1,0 +1,27 @@
+{
+  "id": 2012003,
+  "description": {
+    "id": 2012003,
+    "name": "Drake's Meat",
+    "description": "Drake's meat.nWeapon Def. +10 for 5 min.",
+    "chineseName": "暴龍之肉"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAWCAYAAAA4oUfxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACt0lEQVR4nLVVgZGjMAxUZtKAW/CV4CuBlEALtEBKSFqghFBCXEJcwrsFl8CvJCvA58jdzfCeI9ic0a52JXOk/cf0z/qwtXFv8KnvAnnnKOcsD65jnrYI7Ak+XfqGHCalFOIJ35vgKKbyJYHdZWdcBs0ZF+7eu829O4N7ACagI3EGTUrif4NPbddLpiR+FyrwPMH2x/1Cn6fzj8Anej82KxcC4zcDlPHZZ90P4B8V3PTndhHTPmKQDDhISUnmEjWejdwy2OS7O7nAe6TK8Jep61oahnETeAn+BI7XgW7eo108fZYO3oWaGTi0N5GT0nlWqL1TCIEaz22VwNPrbhBu20DjmIzAS/+vZGdgG9ynDz/QyV3QNQWX06Ag5sJNCWEZkHHfOhpjEWBRK89m9J2nKxQI4NQ2QZ7xe9z/x2XWz1cA7LyXua/yzw1TZG2Dd8WoxcV7S9HgETFkLQRavJ9BMFEDiQzqaCmUpIClnkyhbeRZH080NHe8pJmn7HBxNau3SkdMWZB0Ijs/507zWgqIEbR8qMzgDMIyewYHy3y+yrMUI4WmkRYaUxHVBVioF/aGDEvAsC46rba7mltVgfc7ItP4aP7KiwD2XGAX9OwwLvxPCOAsP5Wefzl45m4IQkSsctU2ompBImfa1COX6+Ol4JbD5LfEWDctplSzqdmrdABu1IZiQswWpNr0i3GYPbcMITdn/SURyTI/+98+HOov74l8piqcM8JqHb07ZNjrhMDsrx1Ny+J7lrodPJJh0SsP64ihkxpx1Zp3g8EPn+jDB/xmlgzKlU4r2c0zr7JbryjwOqs0TM63+mGZG34TfDXkgzCiykEmwgYXvMZgMr68B9ZxKHmcFrjfHq/P7IU8+7Q4dGwut1nmzaDf/O8FfEVAvMdo+o4+BIuL7fqrwL8FfxLY2LsbqI2/Chqf+lUt7EQAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAaCAYAAABPY4eKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADAklEQVR4nLVWi5XiMAwU79GAtwRvCd4SsiWkhbQQSoAWUgIpAZewLuHcgkrI6WMRJyRwd4/zw+SDoxnNSA5HeP+YVteHvYXvBp/6LoB3DnLOcuMy5mmPwDvBp3PfgKMTRAQ+4WMTHMSEmwTeLjvjMmjONOnovdtd+2ZwT4CJ0ClxBk1K4n+DT23XS6YgfiMgeZ7I9p/bGb6+T38EPsHzsVu5JDB9ZwJlfPZZ1xPwHxXc9Ot6FtM+Y5AMOAimJOcSNZ6MXB1s8t0NXOA1UmX0ydB1LQzDuAtcg9+B42WAq/fULh6+sCPvQsmMOLRXkRPSaVaovUEIARrPbZWIp9fVRLhtA4xjMgIP/b+QnYFtcJ/++AG+3Zm6Bmk6DUrEXLgqIboMlHHfOhgjCrColWcz+s7DhRQIxKltgtzj57j/j3XW90cI2Hkv577IPzcMyrUNXhWjFhevRdTgkWLItRBo6flMBBM0JJFBHS0FTAqIZWcKbSP3+vgNQ3OjhzTzlB1Nrmb1VumIKRVJJ7Lzfe40r6VAMYKWD+AMziAss2dwYplPF7mXYoTQNNJCY0JRXYCFOrI3YFgCRteop8V2V3IrKvB6B2AaH81feZCAPRfYmXp2GCv/EwVwlp9Kz98cPHM3BCEiVrliG0CxIIEzbcqWy/XxUHD1MPktMdZNiymVbEr2Kh0BN2oDmhCzBak0fTUOs+eWIcnNWW8SkSzzvf/txaH+8prIe6rCOSOs1sGzTYa9ThSY/bWtqS6+e6nbxiMZos48LCOGTmrEFWueDQY/fFEf/pDfzJJBudJhIbt55lV26xUFXmaVhsn5Vl8sc8Pvgi+GvBBGqnIiE8kGF7zGYDIenwPrOGAepwr35fZ6z17Is0/VpmPncphl3g364rcH8AUB8Z5G03fwKVhcbBdb91GOryytx+ZLfS27ENgJ8FkA/T8CYzU3wXl8lODr2axAtwjs/W0x0FwmboEbkK+ONdDfZPyK0GbmNcD6wf0/ZMvf1ufruQlu0ryS1+0QeUb2Yf1vPfS7PiZz4X8AAAAASUVORK5CYII=",
+    "slotMax": 0,
+    "price": 500,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Food and Drink",
+    "lowItemId": 2010000,
+    "highItemId": 2022000
+  }
+}

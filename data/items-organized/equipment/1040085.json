@@ -1,0 +1,50 @@
+{
+  "id": 1040085,
+  "description": {
+    "id": 1040085,
+    "name": "Maroon Jangoon Armor",
+    "description": "",
+    "chineseName": "紫金鎧甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEE0lEQVR4nI1XjXGzMAwVd13AGcEdwR2BjEBGgBHICGGEMEIYoR4hHqEeoR4hn55sgwnkS3XXg/hHT+9JsukH/c0ef1hT/dEX7YFuAK4tkfNEk1OktZ7HjXJk+KcxRF/dbmC7gZSgsqlve/Lek3OO+sbLRAaEYa4xIYICsOZ5S6SV5oCMBKWUomkayQefA1mBZ9AHG30ePmfAn292rHt2OBBZLFmAmoaDmJbnMGlmW1NT1xwg9lvZz27EkgrVMyi5seIIDYXom5+BlB+ZSc9AYxzUrDOPOR+EIQAhLfETDC2jeO9kL5lf3neW9dc2UDcuwB/C8q7o6wRZlnwp08uG4AZ5lyd+s0PICVAAHjuWXQVRJ6qh2A9YHHiMg2s4aDNsc4pJYaZIIgX44TDS72/L7xdxkM2HCAbg86iSLMi75Vw3VCeJj11U60oDr1crtgLaDYbz06RCiYkw7BnAt8tANReXSrKWYEqpORgOm1SSOGklJOD7fvMxDSVTbEbyUUTYTAGLGtl4OgvK7EhSm9ompALAfryP08DF1ErgqGSMWzuJkht526YVSTyzweKACuSNNd6DFhC0hOXA8O4ZQLNDCTIsDvE+2VGAAWh4beDkQxms1Ugft1HMKQ+grzTnA4DZMogqADMzX6wrgU3dJOCGmefiiurIujAXUsojTzj5banVjcgUnUdGWAclsqNYfFFaKMFaiQ8S4Clnlp4NoJV106NmiUtDLuDw/nNn72cZw0Fx6pYCQrFlxiXbmseFANKUwIs11Ue5sDQBvNdzu+RiwNGIEwgOMlBm/Lw/sw7plKLicIiLoLmP8qBuDaQ9sJwi7tp6EVLQ5jkNiQmFPtDlemVfgV6ZnEh9f1kNZkcmvetiHGMujfni+RxYtlwn5JaxuU+zIQ9Ncq4Kp0Ks2Oufnjr9zb0r/bHO9QpUHBY9d05BXJplgyuoTHZbkYsFkVZAX5iASjukKrTcr7imYO3FLLdKooruckXRlX2NukgFQ9558VnOl6DVMJwf19s3L3RydfbcPjh1vo4T3b9bBhwTWz7qXC2NLycSCkkUSpd96vcsLToicCDsH8Pb+7Q7HedIcGjDEYI4nSBTLQCZmZzTSsc1TzmDSt3p9Exu98shDz5ul1uUJ8Qz1lq7yMfsWr5x9Fx4ZgYVxnJxOAEu+3JP3pXNLOWcDFLC+cyFQxxvAM0XfpbWh9d9+RYUeQBLhUvAjgJoUuEIi/TxldliraiQc2vM2wBWX4Mtf1qASbkpA46jFFPFd+YD8j2zLffIyRYlXn2Q7TLdY7lne2zVfPC/Z7sCzSzjza83LNOyDduc1xhA2O3Nl6DigD+w8t3p5u+djUQVpGv6a+pXPV9xuFXBNN2nb6tXGLwA2bPqPHT/+x/npY9/ZJ2uZbHnqkIAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEQElEQVR4nI1WgZGjMAxUZq4BpwR/Cb4SuBJICVAClBBKCCWEEo4S4hLeJZxLyGtlCwwh86eZDI6xtdqVZPNBv7PnL9acfumLjkBfAG4NkQ9EkzdkrV3mnfHk+K9zRJ/tYWCHgZSgsqlrOgohkPeeujrICwWE4V3tYgIFYMXvZyJrLAfkJChjDE3TSCEGDWQDrqBPNvpz/rMA/v1mx7ZjhwPRjCUrUF1zENP6HCbLbCuqq4oDxP5Z9rMbsazCaQ9KfjxxhI5i8s3PSCaMzKRjoDFNWtaZ53yIwhCAkJb4CYYzo4TgZS+5H97Xy/pbE6kdV+APYfkw9HmBLGu+jOtkQ/SDjOWJ/+wQcgIUgF8ty26iqJPUMOwHLM48x8HVHLQbXnOKl8LMkEQK8PN5pJ+fhsdXcaAWYgIDcD+aLAvyPnOua6qyxF9tUutGA683G7YC2g6O81PnQkmJcOwZwPfrQBUXl8mylmDGmCUYDptMljhrJSTg+3EPKQ0lU2xG8lFE2EwRi2rZeOkFZXEkqc1tE3MBYD/G4zRwMTUSOCoZ8/M8iZIv8jZ1I5IEZoPFERXIGyuMoxUQtMTMgWEcGMCyQwkyrg4xnuZRgAHoeG3k5EMZrLVIH7dRyilPoK8s5wOAagpiCkBlFop1JbCr6gxcM3MtrqSOrItLIeU88gsv/2dqbC0yJeeJEdZBCXWUii9JCyVYK/FBAjxpZmlvAD3NfnpWLHFpyAUcPv4+2HsvczgoLu1aQCg2ZVyyrXheCCBNGbxYc/ooF5YmgI9qaRctBhyNOIHgQIGU8X6/so75lKLicEiLoHlI8qBuHaQ9s5wi7tY6EVLQlncWEhMKfaDr7ca+Ir0zOZG67rqZVEcuj20xjzmf50Lx3AempnVCfp1b+lQNeaizc1M4FWLF3rB72vxbelf6Y5vrDag4LHquz0Fc63WDL6hM82tFrhZFWgF9YwIq7ZCrcOZ+xTUFa65uvVUyVXSXL4qu7GvURS4YCj6Iz/J9CXoahv55u3/zQi9XZ8ftg1Pn82uix3fDgGNmy0edr6Tx5URCIYlC+bLP/a7SoiMiB8L+Mf16n7aXryUSHNpwhCAuF8hUCYAyk3Pa2LRmlzOo1F4ue3KHXw46+bxf70memM7YeZ5X+ZhdwzeOXQrPLaDCWC4OL8BlXx7Ju7GFpZyTUUpYz1w4xPEGUL3wVdoQ3/flf0GRB7A0uATmUQBdLhxhkT++lC3WigqaW+f+G8Dma7DhTwswKTcp4DhKMZ35zvyBfHu25R452ZLEmw+yQ6ZHLHcmE0dszXLwv7DVa0l/W1BlmW5+u2eJukcD98z2WrLVvKYA4r43FVRPy7gBFQf8gaV3p1++d2ig9QiWOFg6zsYt96tdrjjcqmCa79OeDqwElXzlMRpN+0Kf++ro+6G90nu70FbWQ3kxcS5AaDcu5zSAz91+evN/8+4fea3Cvk2EqZkAAAAASUVORK5CYII=",
+    "price": 50000,
+    "reqSTR": 130,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqPOP": 20,
+    "reqJob": 1,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incSTR": 3,
+    "incMMP": 10,
+    "incPDD": 45
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 30
+    },
+    "incPDD": {
+      "base": 45,
+      "min": 25,
+      "max": 65
+    }
+  }
+}

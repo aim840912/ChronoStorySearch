@@ -1,0 +1,50 @@
+{
+  "id": 1041086,
+  "description": {
+    "id": 1041086,
+    "name": "Black Jangoon Armor",
+    "description": "",
+    "chineseName": "黑鎮月鎧甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAYCAYAAAAGXva8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADtklEQVR4nJVWC3HjMBBdz5SADoIKQYHgQnAgOBASCDEEG0IMoYYQQaggZCH43u5a/qTOtaeZjhX93r63v77R78b4j72C/nP8BKpgrrwSp4GI2Vads7l80/Bs0I9GvAI1MPmrWkoRgAQQTrYreOXZDHGBHEcKwevWEFM24iX4HujYXs/68KlplJEvK5ByipaSAXOMuieArOQdee/x9VhmgMfxFfAz6FiVgfq+1weUbWrwKFg5WsAUxgCdd2DMVMKwlKICJijiYURi3gVeg4639oqLsHLoqesHKoNXBsyd4Uyap+xbAOrj2GQAxZgUsCpLfSfgSD8M34Az6MwwhGAy4YGZrXMbS2VVGPEELruXLlJdOqpCrUaJEeKKPcYz06qqleEwDGrxua7Ja3C45XFlnUzCJGs2V6MgdRcD3QAcoZIwLkFEzw5xX96ICBWWkEN/yyW8CUinVIwZzQZwjuTNcNR1nc5q+DhOPn4eGbRout5C3VsKiDR7F4hos540cFhllBQacL8ODtGLeXI5zXZ9OhkKwFDhnFmIOKH2CoDwwOXLhNJlZHo/rnxtGYV9yOwqzCWMkr4J6fd9qvcgSb5/DkxwM0ZJl9NpYZa8+vN+I/pqmSSDJHWPPWdGow+VGpViv1SxHaajlDqJVpG1rSSwiA4npEQw6XLly+P9aMxkTc7XIIQAHk2EKfJjpr8PavSUCnyBz+VkQOshya/poGjL+gUXrgAVoY4gR1I2/RnKInqjHNxKPIPm8iWWd+p71nxMkq+loPsletdRTMb2SPBFr/4uWJvA2VKMvo+3LK3LgTZXm5IYkchDg6KxjdbN8MFkStsUYvx2UmTkHfEtvlNHKt6MpZsSflhpiXkoodKNrEDYo25mmjtOmlRJWkxyl9GikXk+BcRbXky5XyJH/WQE9xdKooL3s2G5KulX2E2GakPA2m3yq+Qse0s/MSp4RPzVUfHBo4J+1UgJX9P7B4IBavXRrJKCTyj2qefZN+llwdBeSn61wAiosR3kEqoTadouTCX5hwLg0hWkhElETsUeLKvSq6QSvV4xrfaug0mGpM1iRaTHDQ/5O6L5gBbJs9sFtMAYx1YsNWnu6OGfSPyPU26iNNVf0nTZNADpq5h/1rlI6JYWCVq1REnbwmpMMddeLMz/ZhwaGu84/dnC0tAiZy/aqLV4ZH+KfFh7tLSqSjOgvXmQltasvbDNU9oWZQWmpqfx4enatlZ7efo/KScnGeCh2X1j7/cs76uhF4o/zbO1L8/+dvwFkStUuQKF4F8AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEAElEQVR4nJVWi3GjMBBdZtKArgSlBLkEUgIuAZdgl2BKgBJMCaGEqISohGwJ3NtdxC84l9MMgywhvX1vf36h343xh72C/nP8C1TBXHknTgMRs606Z3N5p2Fv0D+NeAZqYPJULaUIQAIIJ9sVvPJqhrhAjiOF4HVriCkb8RT8CHRs71e9+NI0ysiXFUg5RUvJgDlG3RNAVvKOvPd4eywzwOP4DHgPOlZloL7v9QJlmxpcClaOFjCFMUDnHRgzlTAspaiACYp4GJGYD4HXoOOjveMgrBx66vqByuCVAXNnOJPmKfsWgHo5NhlAMSYFrMpS7wn4pB+Gb8AZdGYYQjCZcMHM1rmNpbIqjHgCl91bF6kuHVWhVqPECHHFEeOZaVXVynAYBrX4WtfkNTjccrmyTiZhkjWbq1GQuouBHgCOUEkYlyCi3w7xWN6ICBWWkEN/yyHcCUinVIwZzQZwjuTNcNR1nc5q+DhOPt6PDFo0XW+h7i0FRJqjA0S0WU8aOKwySgoNOF8Hh+jFPLmcZoc+nQwFYKjwnVmIOKH2DoDwhcO3CaXLyPR6XvnaMgr7kNlVmEsYJb0T0h/7VM9Bknz+GpjgZoySbpfLwix59efHg+izZZIMktQ995wZjT5UalSK/VLFDpiOUuokWkXWtpLAIjpdkBLBpMuVL4/XszGTNfm+BiEE8GgiTJEfM/1jUKOnVOALvG4XA1oPSX5NB0Vb1m84cAeoCHUGOZKy6a9QFtEb5cOtxDNoLl9ieae+Z83HJPlaCrpfoncdxWRszwRf9OrvgrUJXC3F6Pt4ydK6HGhztSmJEYk8NCga22jdDB9MprRNIcZvJ0VG7hHf4j11pOLFWLop4YeVlpiHEio9yAqEXepmprnjpEmVpMUkdxktGpnnLiBe8mLK/RI56icjuL9REhW8nw3LVUnfwm4yVBsC1h6TXyVn2Vv6iVHBI+Lvjoo3HhX0s0ZK+Jpe3xAMUKuPZpUUfEKxTz3PvklPC4b2UvKrBUZAje0gh1CdSNN2YSrJPxQAl64gJUwicir2YFmVXiWV6PWKabV3HUwyJG0WKyJ9PXCR/0A0n9AieXa7gBYY49iKpSbNB3r4OxL/7ZKbKE31lzRdNg1A+irm73UuErqlRYJWLVHStrAaU8y1Fwvz34xTQ+MHvn5vYWlokbM3bdRaPLI/RT6sfbW0qkozoN15kpbWrL2wzVPaFmUFpqan8cvTvW2t9vL0PyknJxngabn3Dy1lJv/+FgTP/pi5fEHxp/ncWXs03qZ32K3z6p2fb6Du4Lms9uhgLqMkouOwXsBy/PIaNIP41XsNsAf6zTg05IjpswPPmOz39vP9swHNEvwkY147MuAnIzd7fwEBA3CF3eVzXQAAAABJRU5ErkJggg==",
+    "price": 50000,
+    "reqSTR": 130,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqPOP": 20,
+    "reqJob": 1,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incSTR": 3,
+    "incMMP": 10,
+    "incPDD": 45
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 30
+    },
+    "incPDD": {
+      "base": 45,
+      "min": 25,
+      "max": 65
+    }
+  }
+}

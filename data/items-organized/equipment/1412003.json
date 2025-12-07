@@ -1,0 +1,39 @@
+{
+  "id": 1412003,
+  "description": {
+    "id": 1412003,
+    "name": "The Rising",
+    "description": "",
+    "chineseName": "太陽之斧"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNUlEQVR4nL2WgZGrIBCGl5k0oCVwJWAJWIKWoCW8K+FdCWcJSQlSQijhpQQtgbcLyKiRCDN3+WcwZIN+7M9CvMD7ZPwnexfUmLsA4B2wsjfvgAbg8NnbwG9DN8B+sLFftdd8d/AEpEsO1ETi7GissaNHGPp6A0yFGveUEa8FtsE2xs6BD/0MPIN62ORhn9g4NpUM/KiOx8WgZgsjfdnrbYhPMgUYgxp/9wZIsAYLo+0PH5YMPIKugArW2XEhfSymNOAeugO2kCB7Q9MghdVL7CVwD/UiSwfMbg4RylKIpyyDpR54CttDV1mCBTo7AS1zMK0RzBWMuHPqGsz9LqFtFfz9U0NMRVGYeZ7Tqrfp8Ojy6ycETcL3ccdI4ewkUf/FGsYOEwvdrOVt+EIo300CL97t2w3g+k1VrGz/AOj2N+648iMO3Yhs1Rqgqh4hRlbSmlIVS3RdPySCFajOWb0hTr5TNBCr9gDV2q1NVYWBIQOMmfEqMWMV1pZEEwgQL8p+sT+mywI8gq3E6taBZaOs1fRwW9U82GxhFljQSda9ztQDz0qetb02I99unwXu+grdIOAVyrKFo8oNUEjcY/SQutZmmlxxUVWv9zBVOgHPdIGMTZ0miVmW0SwX6A/KFTLnHOtER0dlQemEGUdhbSV7F4uFoD94t65nWWZDSfNjRtgYvjedDP0UYBaUspympUjk0++pwCxoDMbw3QUnlAzMgWKW/zYBymzhIhBylPw2yFiAZGe2139dyBgRVxALoAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACa0lEQVR4nL2WjbGrIBCFl5k0oCVwS8AStAQtQUt4KeHeEmIJSQlaQijhWYKWwNvlb4RAYmbezZlBCQN87GHBnOBzUvbNPgVV6i4AeA+sHNQnoB44ngfd8NvQADiMuu1X7VWXHh6A9HgHqjLtLNVX6d4TjEMTAI9ClZllwmeBZdSFsdfART4CX0EtbLWwMxaOZT4M/KrS/XJQFcJIP/p5G/OLPALMQZUdHQAJ1mJidENyssPAFHQHnGEfHRe1bcvpGDCGRsAODkgPaFuksMa1PQXGUCuydMToNt9CUQrxEKW31AJfwmLoLkrQQGMnoGUGJiWC+QwTnpymAXW/19B1M3z/aSCnoijUtm3Hsrft8eqy+ycELcLW8cTUwthJovqTPcxdJhoa7OVt/EEojxaBD+v27QZwvVAWz7qeAJrzjSeu/MpDA5GtUgJU1eLbyEraU8riGl2XS43gGebeWB0QV1spWshlu4dKafamqnxHHwG2qelaY8Sz31sSLcBDrCh6Z39OJwdMwXZiTWfAdTtrq2lyndXc26xhGljQTdY/j9QCX6U86wapJh4eHwc39RndIOAVyrKDVOZ6KBw8YzRJ00i1ria5KKv3Z5gynYCvdII3DvUx1RhlmY3SQf+jTCJzzjFPZLbXW1C6YaZJaFvJXmexEPSBN/tqoyzBfBedtv08z6BF9Dajlw1hk//d9rWvWyCdPZEAbq6koEWqoC7r6pKkfhhkgecIuAdToRtniaEOwnfvXbSPMIb/XXBBBBwhcmUHDJSLNB7wva5/g04UmdUZgfHkcT0oMdRZsAdrGmMe4iKrEgvenvz29X98fDAhQY8AiwAAAABJRU5ErkJggg==",
+    "price": 140000,
+    "reqSTR": 160,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incPAD": 72,
+    "attack": 5,
+    "attackSpeed": 7
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Two-Handed Axe"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 72,
+      "min": 69,
+      "max": 75
+    }
+  }
+}

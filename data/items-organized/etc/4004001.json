@@ -1,0 +1,27 @@
+{
+  "id": 4004001,
+  "description": {
+    "id": 4004001,
+    "name": "Wisdom Crystal Ore",
+    "description": "An ore of a crystal that possesses wisdom.",
+    "chineseName": "智慧母礦"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACtklEQVR4nJWWC3XrMAyGlXNKQIXgQkghtBBWCAuEGwgLhAXCCmGB0ECoIVQQci3J7/Q1rzm289An/bLsbeC9tlTzBv7YnoGi8R9zKR6c7D48exu4gbW3d40D8g9l+Hu4ymg/7d4GboJRIhstIqphP1MIZkCjk+vHTfpdt30JFJBxVghbsDRHY9IhyhVBvhdQ5sxyWYDc33b/GKg5Muw3gYEWyFoP8YaMB3JvoABIT6m/XW4wns7Q226pYZsoh5eMDMMoeh68X0HAQ6zv3UXuspYeSxc8jtKwlNn7GDwPxrMrpJanY3+W8Sd8wQh9vsgazdFBJco9RjYygURng+E8EsgWikkQTQIJzIkYPxMQGdKkQymFnRxktp6dNFMFfN7c7aEbIzQ4Qh5xaAGmGRbN0Zxyqi/5XiAVIMjMEGdk2J+hTh7DR+rAmCpHdqaV16p9lvk8ilZBw+6cvsOk6kCnAhJBMQoootdxqCOGtBCjKdzANBtoHyGYFXra65Cyp+7noqQW060cQhzNGCULwM5BWpOMY5Y2Xd5eCgz1Ql4qHxb6wiXvTJIshfUIUkZUVTrnh1whGS7WTCqJZDv6YR7JUSB1FCodP7AKmoY5K1CEf98HwAMmgG8BkuSGl60fZVVJwTbdfJIq/ja/8nDsJvU63x6qdo+BWI4HrWHZ88JikElnjwufNRQKybc1EOPVe9mwItef1Cdsc3SH2eXTBej2HeJNNp5T3Ew1LyOpI3oGEth+bJbr1wIoi8KIdwFwT80IKu7pIngGkrbrG7j9OJgLS1ahNSIhb0HzrAcky8Z7WQ4J0LAIXoLYwPaUzq6bi5AEqgt7mnXBmEo2jQSKaJ6C3I4bveW27df/DnwcHkHW7RGo8TBZ9gzki/Nzr/IDwMtV2HgFegjMEz9O4TVbvP+XiJ4C6/vvtP8dCBo40z8QagAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC3klEQVR4nJ2WjXXrIAyF5XOygDICGSEeIR2hGaEe4XmEZoR6hGaEeoR4hDJCNIIfEghk7KY/SjiATfiki4Ds4Gc2V/0G/mCPYBnw7m6LF2ff6rtfQXew9noTAMhflObH6VNa7Xj4FXSnExP5PCtinDz1IggN1MXO5/Nd6kO3/xFUYC7MRHgET1OeUCpEKRmWaoEZh+bbDBQ++/YxNK6ZY/8JHByBvE+gNJlLUK4dLCBSU6nvtzsM5yv0vpu3gLssTZKPHAMpR6BRrECQQD7VoVAo3tNjGdXzLBPLan6DGoECTNGl5u7QX6X9Aq8wQG8Tr8kwd4pyWc+RJxpBovQ6uY0ITPK4AooLQgIMgi5+JjByFBMBlrL4MYAmn/hFv6hEWsfw+NINGazOUMKcjgDjJNuriWs2lXWOA1MtoAqikjMoTHRpr1AvJjswUAfOwcIE5idaeR/XwmSDjeYYYZfDtfwOi8IXOq9AGZajgYUSsa37jEFHyFEtXMHSu1CbQWgPA7BnI5IZEb4hWjpieWRBxFENWT6drwugoysAxIU2KfWTLKj7iZJsKTxMm5uSQ0W+Et5XoHVk1YnA60Vhozne0EY2iWg/pKaN6ElAdTRRRn7hC2y8TGYTI/x7OwGesECSKQjK0G+tHwSUN3XTTWfZ7W/uQwYM3Ri9t8dIZVscK5nsv7jP8xmpCSIPOv80811FutGSraGYS58kxIq+5Wd9UzdP4UK8vYRAwxlFfDDne47NVf1lRHVk38EE2A7N/Pk6A0qiOPFSIVseZ9jiWUmMRzCxQ9/A/T0AQ3iSnd6JnHxcTVO8ZFlCPvssSME2MR7BZDhPsj+XsfcQKQk4Jv04xSRylYQxItCo2JV8IVkYmsIndfaabd+vb/rn01egbApjsleY+RMgdZ+ArxolF16vrRNCIUk6tb4m15GpaRqsoDYZhlGHZ8i5mmNRduaFr4C23SZo9WcyPgeAOkdpq/0fwT4sFjzoWtkAAAAASUVORK5CYII=",
+    "slotMax": 0,
+    "price": 2000,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": 1082109,
+  "description": {
+    "id": 1082109,
+    "name": "Red Cordon",
+    "description": "",
+    "chineseName": "紅天使手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAbCAYAAACAyoQSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADE0lEQVR4nK2WjXGzMAyGlbtvAVagI9AR6AjOCDACjJCMEI9Qj1CPUI9Qr+AR+PTKyDVNaNJrleQOHOxHP69l/tHf2LIzfrg1+BfQxRgjF03TUNu2co2xp6cndWYD/y10F+ico9PpJPfzPC81+E/SG0Io129vbwKsbRgGstYW8K+hAJqUI4wp0cvLC/V9L/eIPMZ4Bf4NdPmYXikxKLg10oYB/PXeU9d1BQjDc2o/gW4U+j5cqOk7JgTqTCfglj8AB0qSAYBRawWutV4egQpMRaH2PI9ENsM10sifc/L0bvLYOeSI1TTy76ACWz56FI4crcrsrNz3K+zZjjI+NX0GruNwoLY61begArs0Q07bGdthIDNkWLSXkq7h4mjoslOHo5cxBUJUhh11/B9SXNtX6II0mjhT27PsO55sB6ldigxbt0Y3OQGd4yTCaduB1Zmho7UM66j9AtqDLpA60uDakyxmOvZ1GAVcWzijIRiaGO7CIGrVFKKGTrbRNRhbCAK7Si8m4ocH2vBMwUNAKXccpLgC42f6keNKNCdT/qvB1FDpVGvT2O5TeAxZo2YTS9OOqCsv0s9YiYO/iKdwasIYmx0z7GQsHWNXLyeRuhhqEW060qLCUTUGXssnVinDR8/p5Qz2fShbYPQZdmExzSMLLlHZm2pQM904aQBdIHc17TIZjhShvcWSHq0fDM9Fn5V8dCQCclvw90eb7CtMfJ1QBvpoavhn2mugZGSNSB1HHV11AOxCoy7GLcwdz3kyw9HitpFTaW1qiBBAtEA4jjoKmPbBGyEJvFlTyXCAk8+bG3A+JUprq8EAQg/I1NdOtAuFdxrt16jHZAUIw/FkeGsg6hosz3A5PsEPpHfP1GvpSBzx5hij7XGFLOhbxCORHlgIouBYLQKDQKSmSDGD/Rq5qnN9Y4BCl3Y9EGBrPW8q926kGgEW7Kux6vWkLKxnKvb2PVNoiRZWR6zi8tbX866i0LTfi7KGFjAu6mahYIjjm5PjwGm/+bp5D1omKBz37PmCTvOAHehB26tpvYCA5Sr9bPE9+w8Q4eRnx8JEdAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADU0lEQVR4nK2WjXGjMBCFNzPXAFcCKYGUgEuQS4ASoAS7BKuEqARTQijBakElcPtWWrL4L7lJ1mYMAvTtz9PKf+h3bHkw/nJv8Degi3NOTqqqorqu5Rxjr6+v6swG/lPoQ2AIgQ6Hg1yP47hY8K+kd57n9fx8PgvQWtd15L1fwT+GAuhSjjCmRLvdjtq2lWtEHmO8Af8EulyGd0oMmkOJtGIAf6dpoqZpViAMz6n9D3Sj0I/uRFXbMGGmxjUCrvkD8ExJMgAwaq3AUuvlO1CBqSjU3saeyGe4Rhr5c0wTfbg8dpxzxGoa+TOowJZLi8JRoKLMxst1W2BvvpfxoWozsIzDAWs21fegAjtVXU7bEcuhI9dlWPSnNV3dKVDXZKde9pOMKRCicuxo4HtIsbVr6II0ujhS3bLsG37Zd1K7FBlWlkYzBAEd4yDCqeuO1ZmhvfcMa6i+Aj2CLpA60hDqg0zmGva16wVsbT6iITgaGB7mTtSqKUQNgyyjWzCWEAR2k168iAMP1PMbzRMElHLHQYoNGIdre44r0Zjces+CqaK1U5WmsV2n8BiyRs0GlqbvUVeepB0xEwd/Ek/h1IAxNt9n2MF52sfGTieRhjhbEW060qLCUTXOPNeUWKUM7ydOL2ewbed1CfRThp1YTGPPgku0rk01qJnu7DSALpC7mnaZDEeK0N7imh6tHwzPxSkreR9IBBS24Odbm6wrvPg+oAx0qSz8M+0WKBkpEanjqGMwG8BDaNTJuIWF/TG/zHC0uG3ktLY2NUQIIFogHEcdBUyPwRshCbwqqWQ4wGnKixtw3iXW1mbBAEIPyNR1J3oIhXca7XXUffIChGF7crw0ELUFyzNcjk/wN9L7yNRr6Ugc8WYbo+12hSzov4jvRPrCQhAFRzMJDAKRmiLFDJ5K5KrO8o8BCl3qsiHASj3vKvfLSDUCTNiaMfP3ZJ1Y91Ss7a9MoWu0MBuximvyk33vb/ld1aRpL1H+Nfe26aNtpALGiW0WCoY4TAPf9juiHaf9rOfmfjK/etykVzxk+KVc8zKc390Ng1q6tfGBQwqL5UgWWpUDitiXXxxHBg/Gb08mrV9Yujd4HamdzL4w0nNLT86vjw1UU2DB9yKq6H4E6cn15t4/ssP/sjMrqPYAAAAASUVORK5CYII=",
+    "price": 200000,
+    "reqSTR": 0,
+    "reqDEX": 240,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 80,
+    "tuc": 5,
+    "incSTR": 1,
+    "incDEX": 2,
+    "incMMP": 10,
+    "incPDD": 30
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 50
+    },
+    "incPDD": {
+      "base": 30,
+      "min": 0,
+      "max": 70
+    }
+  }
+}

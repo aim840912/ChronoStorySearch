@@ -1,0 +1,37 @@
+{
+  "id": 1072007,
+  "description": {
+    "id": 1072007,
+    "name": "Brown High Boots",
+    "description": "",
+    "chineseName": "褐旅行鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 20,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAeCAYAAADZ7LXbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACvklEQVR4nJ1WgZWkIAyN710DbAlsCUwJbglYglOClqAlaAlrCWsJZwlLCUMJHgmEwRkdmcvbEQQ2P/kfgn8g39aD8eLsH3NAyPnt9gvGmM2EWRaoru16BnQGsnrnFqqqohZN6xLKsqR+09TQ9+NLoFcg67re4HptYZ5nGhBCwDB0IKWEeZpgecjsXRCXwQ0ulwtYi84x4iZGvziacgGOQCiDvu+dcwldh85VdE66WHtfnfbfzIQid3/Oh410pSZdeobmpv8DmcYRpJK7gaIuCDyOfRzTLtFpgUPx90AK3JbfTmAh5WbCWgN928ZMQARgP/teJtGp4x+B2msVxyQ7Du25IscgRThkgKwpJbw34Z0L8JQxyhnQq0yI38XA2jQqOLShQcF9X4bU6lLAONtdXbJql1J8PmYv+mQIT240AehqR+1onoByQIrPS7uqZA8wgHAP1oYz3APKrcIF0saRo0ba7dvZ7VuWJm4EN9BoAf10py4XZB0aCaWu6QVp6/uZ9EBgBHo8T9ppNAWNsu8T1GGc2vh+zwBTsNsx2O64bJDHSJEyRZp4Xay7BngJt4Ore9e2X0/vE3xg6qnxG/KPP45cMHXgQU2I7LDU4+PnW9+dUaSWLi6bhCzElhoGSG231P/+7eKLMUsMX9hQs1gDeKj6CYDSdGNi90n49WfQW+c+FU+JoIICTJAIpSalSIUdyAC7mXhKllCT9qtSyj0vQQBdk9C87OkwkgZdLWgxnmQCiFwEiizrcdfFhl8CsFu73N2hqaz73WIAaY07JrpKcg2e+ZYvy/oQIGYipNPBjt4FhyaSrRomrN0CYNZ10+G31yFABFFKwQJOMDOG8IK4gXgL3G5FzjUEKT4+PukjDtQA81g5RyJGzs5NIjBaM3xT+/VVvcwiZsJA2CGwA8NPIrbg/BQgBYmLGSzDCsi0f11noAfsAMgGAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9ElEQVR4nJ2WjZWqMBCFh3NsIJYQS4glYAlYApYAJUAJUIKUsJTwKMGUYErgZSaZGFjQuDlqwo/55s4dEg6Q3uad81nKn1NABHg+H6C1XlzQ0wTXWz2nwD6BZgcwcL1eqcdWFDnkeU7jqiqhbfuPsHegeZ6fcLvVMI4jnRBCQNc1IKWEcRhgWin8C8gqecL5fAZjEICRV0HFZFP2DWQPREratrUACU2DABUA5JMxr7vj8ZcgaqjAfuw8JqQubtLK1HRt+Dto6HuQSm4GjD4hvO/bcK6wgocJ3hbEFijDkr1b04WUiwvGaGjrmsaoCISHu6vfKwoTWz8QVt+u4ZzkyX2f5tA+KPMPImAGlRJuRuEAAlz6mJQCe6eI8j1pmKtK+UmN77AI3Fh6iWUuoB/Nrk9Ja51S/PyMrhAGTUy58AigKW2ae70JSwFlp3M9q6guGCLsD3vlzptdWOrqnWEKWQF6VtiaHm1Ns1WhOOyJqhDQDss0poLmrpKQFyUdYArbdiR/EI6w9fNWWM+GyLPk/Qh96Yc6HL+UoBSzPAe/KzEZtI4Y06fII+eTsVsI38J9Z9fJW92Sqo/7Ef5gGuLGR+gHflmB4DSCA+sout1tAn9+7sVrQorY0OZnotCFWKaJIeu2uU08/jXhQOspyBDGr3HsCax2jAiiCtp5cbhZDPNPVywBTpJLj6DFBzhZwi9LcbqUr8wYsqnIpWfya9j2KhZ7wbcgpCjJfL5t84ElT5pS0B/wiSdIyItPl2F/Xj4Z/40gu2ud3XsK2hJcFWnANIdKCtNFmv3s/NaQ5+VbSFAkpPXF9G4aDlFEZewvGLOEoPqyavDdDu84wusv6+gcSCkFE1gTde/D9IZ7IwxwvzR+1dQGhMM2CMqOxxO9KILqYOyvdjIRFDCA52VA1d2pv1xo961XoBiCoeuDl3uysAdeJeBOw9ctbh6ArV2lLFYUGlcd3njB3gLvkNZqWFfJcrz4HuAlj6M6bUTIwWw9WObNcRj/B+3at9lGlkaaAAAAAElFTkSuQmCC",
+    "price": 5000,
+    "reqSTR": 65,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 20,
+    "tuc": 5,
+    "incPDD": 12
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 12,
+      "min": 2,
+      "max": 22
+    }
+  }
+}

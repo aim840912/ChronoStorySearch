@@ -1,0 +1,55 @@
+{
+  "id": 1050030,
+  "description": {
+    "id": 1050030,
+    "name": "Blue Chaos Robe",
+    "description": "",
+    "chineseName": "藍魔力長袍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 33,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADtElEQVR4nLVX63XqMAxWzukC7gjuCMkIYQQyAhmBjBBGgBGSEWAEPAIZoR4hV5LlZ0Jv/1QcToIt69Pb4gMcrfit4G9plWdFoOt9BDgMG+C1OLSn1K951m/c/HQLbKmu8dteYXn0QYiuR37aZXZPa0qAwONpMcNbHtwLaw60Rd7LzTEolR2ydsElDUoftzYUvKR4crBQKL67mFryypWFW/wo/NAzR18ESMujjdiQgzM7nRelXlPvXVt50AoX1vW7h6Z/ghLhXpBuR3T7wAqVgBsw2g/KqV1loqViPsYNeet4UATXFG9z4XVVn3JhokhpJfPg3nOq0apoZQpafR0oi3voH1cXD6+pCNX1eatyCogKUfzTc9Op2QBmlhJ1lxqubQ+DPaEQ7dL6nUXeG/JkQFj4nEXM17WBzy86b6CkDJQEd7OB1/2GdXuCHymJn0s6etdwHwfWlQEp6yk5lznrARkoxdPCDE1Xw3S+wWDeACcxZ0AMx/V4A0wJwDC5vGBAJTz7lq718cmJFKwgt3CM9AaoBCTrSFFHhuXovbreszQlDucDInBaDglg4PXKesXF3ZRYGjN+Mbfg4ghK5SClwO5BN/sGoUqwgpZtrlQEQt7jrIY8CTNLbSKctPedadud0t/LHmikwkM5qGRaluG0hgeeUwdf3ZWVmM4dHC5SyyDZa2C3SQQxuJe6mK82dkPOFbXHA9QeOUHwcxjo1oiW2qKx08VAJVLeQJC4OLbBR48HYjNgUHELWUdbtOaV6ecTA1JZKOkB9O6VoP5slxuDca9OXJzHtAiOj7GzDoo9I3WYu5WBISrs7+PUxVlMoUwk07Lw1/3E119qKcVxWMbA+xMRsEp6926dUsl4QVxGCOjiCjDWDbs2tZCHAOh2JFGd2ljrNgVNL+jQlUiQ4bXg9eCJxKXKKaUUWb3tWi7OkJ37SDdZrl+gacJO8LwfMckioM1KqrykdQ7MCsGmnD4ckECpInuRms7AU0YfSqzBjtjcB3Sxiye5P5aXClqbR4eX/yTdyLzJXgSkskGqzNysi8e3i0wVcl+Clr4cx5E3HalCYK5X70WZCLk5VDR6ZpMcODd6Dxgst1EPmTPu555LiW+Y/oiCUbnHLQBGY5S72HcsrWTmJWYevgfzdPyI7kvDqQt0F/AL7ZFCVBK2BEvkykwd9tOSCQdaqoheFOV5xydZ0vKs5mVVz6LE278lqUGZpRkTjaSve8M/XA2CzMYxfv55GH4E3Bj0DpSZaDrc4f+vwN/QP7Cf2BrNOCZlAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD40lEQVR4nLVX65GjMAwWM9uAtwSnBCghKSGUEEoIJSQlhBJICaQEXEIoYV0CJ8nyE7J3f84ZBtYPfdKnh7Vf4MaKTwX/d6zyrgh0nW4Ap34DvBaH9pT65z3rDy5+uwm2VNf4HB+wvLogRNc3ftvl6d7WlABhjx+L6T/uwbUw50CPuPc+uA1KZYesXXBKg9LnrQ3FXlI8OVgoFL+dTy2x8mDhFn8Kf/TO0RcB0vI6RmzIwXk7nRel3mPnqa08aIUT6/rTQdPNoES4F6SPN6S9Z4VKwA0YrQfl1K4y0VIxH/2Ge+t4UATX5G9z53lVX3JhokhpJe/BtXms0apoZQpaHU4UxR10r4fzh9dUhOr6ulU5BUSFyP/pufHSbAAzS2m09xoexw56e0Eh2oX1J4s8G/JmQFj4nEXM96OB7wOdN1CODJQEt08D72nAvL3AryPxnws6+tYw3XrWlQEp6ik4l2dWAzJQ8qeFJzRtDeN1gN58AE58zoDojsd5AAwJQDe5uGBAJXv2LV3r88yBFKwgWthHegNUApJ1pKgbhuXovbzeszQd7M4XROA0HRLAsNcr6xUXuimwNEb8YoZAcQSldJBUYHqQZl8gVAlWjGUbKxWBEHsc1ZAHYWapTYST9r4ybatT+veyBxpHwVAOKpGWRTjN4YF5bOHQPliJ8drC6S65DBK9BnaLRBCDaynFfLUxDfmuqD0eoPLIAYK/U0+3RrTUFoWdLgZKkfIGgoTiWAZfHR6IxYBBhRayjpZozivTPS8MSGmhpAbQt1eC6rNdBgbjWp1QnPu0cI73sbMOijUjeZjTysAQFfb3cUpx5lMoA8kcWfh7uvD1l1pKfuyXW9j72yBgldTu3TyllPGCOI0Q0PkV4FY3TG1qITcB0O5Iojy1MddtCppe0KEqkSDDc4H1wERCqXJKKUVWb6uW8zNk577SRZbrJ6ibsCPM0xmDLALaLKXKS1rnwKwQbNLpywEJlCqiF0fTGpil9aHA6u0Ni3uPFDt/Ev0xvVTQ2rxavPxHqUbmQ/QiIKUNjso8m3Xx+HaRrkLuS9BSl2M78qEiVQjM+epZlI6Qi0NFrWfWyYGj0TNgMN1uus/ImK4dpxLfMN0ZBaNyr8Ef/2YSgvU6K7GhXZGel24Bbr57M7v9iO5Tw6kLdBfwB62RQpQSwupJdnmeGpQ7S08NsLll3ARrd6SM6Nyk63d8kCUlz2qeVvVTlIA+AUtHh4BEYyPybQqq5DlhSzq9p4YnXQ6C9MbRf/59cqwPXuFieC2zJC6Lgz/YYtsxus+//l/VJ8Jh57t8MlB/V3ngwwftVSF4D2wPPIw/4f/ppZai/6IAAAAASUVORK5CYII=",
+    "price": 35000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 100,
+    "reqLUK": 35,
+    "reqJob": 2,
+    "reqLevelEquip": 33,
+    "tuc": 10,
+    "incLUK": 4,
+    "incMMP": 5,
+    "incPDD": 32,
+    "incMDD": 16
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 4,
+      "min": 0,
+      "max": 11
+    },
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 38
+    },
+    "incPDD": {
+      "base": 32,
+      "min": 0,
+      "max": 65
+    },
+    "incMDD": {
+      "base": 16,
+      "min": 0,
+      "max": 49
+    }
+  }
+}

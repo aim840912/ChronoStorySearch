@@ -1,0 +1,43 @@
+{
+  "id": 1082072,
+  "description": {
+    "id": 1082072,
+    "name": "Gold Brace",
+    "description": "",
+    "chineseName": "黃金勇氣手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAcCAYAAACUJBTQAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACc0lEQVR4nKWWgXHrIAyG5bsswBvBHYGMkI7gjIBHSEZIRohHiEeoRygjlBHKCDwJAQaXuG6iO8cBG338klCyg9fMVeaa5cQrEHdTAFICtHgJGQhNAifYs5AK4IMfuPcc1rwCAZgANF1hqL7okwEWJ78/Af7tGfRSTmTLdyEEDG8M6O48ZxD0eQPY9+CegbhbywByHu0gBVhrYTzisxPP6SDzrxCf1N7QVnGnB5uUEEAbfmm8Yq4O86KtEO+c5M+JVpjcwT8kWASYbJGU2yGOnJP9rKTO35uG83EKOaJbP6T1q4n3u6dSpdh2qgTMNiJMYUUNVE1A+epZzq/nxFEJxrCQ6WHw9SrVGF7pstdD2LiaCsAjiHOXC759xm8qOZOqC7D3MJ4BVsOqLSFeAVy1P2QyzuIYzgT9QOcUrpGVAeeJzKyAquGypxHkPW4Vw6NtBh0LJXrgnMVKumMQjue5pVQhx54P2P02l4dAoPS5QcC1DaqgUEIg0W5U0llbwHKgkFxqURXlIoZp1ALkZKHGySHuq5tP7kXw3YAo1WHLkPcScB4QEDZn4KftloDRCFC4zUnzIvoewTPMFgBST72MN7WiZAkwHjAr8x3X8DzBLsomBbFZytZWKbuoYtCQAUShgMYHAcmJwHk+dJZ+VqB7kPBaTrzTGiAf+xAt2sZ+wv6GTTKqoVaHraX8ZSQVXWtXdxMBy75UmvDqakqaq7GOJMecRKe5il8ADavBFXhYZFtWQAoXOZ3QmQKRnMaxrpXMA1DmvX7idSViG1QUoNpkhDQhUel8kFOs4K0qVi1X0gTn6c8Z8hwIeNlqXTiX3OTQZyH/AeXkT40o6G0RAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACr0lEQVR4nKWWjZHyIBCGNzM2gCXkSsASvBJiCUkJWoKWYEowJZwlSAlHCR8l5Ntl+Y0kOZUZJBDg4d1d1mzgszIWxqrSxE9A47UFkBKgxiqko1QBngHfBRUgP/xi/E6BAfa+ojuAouq67S/9MsTg4L8HwHYXYR/5SNbcCiGg/2JIc+MxjbDHFWDXMewd0HitGUIAX/ZSgDEGhgO+O/KYUnHRqyDr6E7TkfHEexMUEURpnjRc0Hf7fOFfQRZApojOb9HhvX1JQA/RySIpXwONBKDyHGGNbauK/XN0PqOm68P61WCwKiiMydZNm0NiGRDYYqT1FGVA/ut0BKwpGik8vYmoqL63sSzbwU1pkunOhBxlT5A50Diez7jihE9t2FC2jQN+u36EGAWrZQqySuCi7EUMvsQ+nAj8gwAy3cAKgf1GRa/AiqYzxwHkzR8ZTaVMAh4yRapnH/oIu6ExDqc8/RRBh44v4e0aw0YgVFpfIeRSO3WQKSKYqF9Q1BiTAVOokByCXh35xptsUALk3cAcKwWNv0284WfBrQaRq8T0Im855NQjxB1QQ7l4UIAMWkCLx70rXkjPHh6BJoOQFSj38cFWFE0h2kKiQpupNY8T8NyaoMQnWFmbWdLGq+kVJBCRKaH+XkDYSOA4X0xDf0vQLATBkyKvqgRJ+9ZckxSzu2M+xMTqVVFqxDT0/A9LapraLJ7IQ0p5LBZhVc4pqi7ajCTf+8hvnKpZgVSsClfgZZL1c1QE09HGd9ywBRE29n01F0oFWEKYzwyqoHqiZgtsn7mynXvhQZVzXrg/tDFG91SNhL8Vk7S2ehCd8otaBDzcWKcogPLzT74Esk1L41TtF8bGQajWrj25idS/INh909h/tyWzLcJTRXOTTjBfzMJzVjcQ5aWw0snnLolZ6Ifn/8VQaNoivxX9AAAAAElFTkSuQmCC",
+    "price": 55000,
+    "reqSTR": 0,
+    "reqDEX": 130,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 40,
+    "tuc": 5,
+    "incDEX": 2,
+    "incPDD": 15
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 15,
+      "min": 0,
+      "max": 35
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": 1082006,
+  "description": {
+    "id": 1082006,
+    "name": "Orihalcon Missel",
+    "description": "",
+    "chineseName": "紫礦機器手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAaCAYAAABCfffNAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB8ElEQVR4nKWVgZGCMBBF44wN2EIsIZbglYAl0AKUgCVICaQELcGUcCnhLIHLX9iQAEHQHR0lkv/2b5Z1L76LdmZtN174BtKqQyaKoqALqQ70efo5MtjDPoXMApSS4nn/FQ9tRFlfWgZ9AkkCjLHCmpeQUooqbzxoK4QAWZYlAQhrbbRpsxMAkCnHEiBXlahN2W6BkAsGwMUSwLp1Y80mJy2y4tgCWAshB+fsTOJ1qYVwr7zKVgHWQKKDRtzuBTkADGAGzImbl8bHbHf5pxgAhNaaWjYsEQAP/XDu5CJgzgnVHhtxwMiSD/p6vbq3IBhnPwfoxT1gDIkAJBK06q2pyMnpeKFrlDABSM4uKpHraVGpZsjUQcIHTtfGO3FPsxdBWVOAyAnGACLc3FRPEkcAgAAADiizv5bWL+UpCWBIi6FGAu5AGYagzWWcBABwDMDa2LM4AqWRSvkfKzEIw2E/JjwQLsZzKg3xN3alyXJFrXrOlD8LIAFAdCUdEljpxHbt2MN03YGWsmVxBr+FhG3IsGs5HRVBF3nxcG0JsnM3tcZ0N+YiHITTh41FeWD2sGRneSckHm+KgEqq6dgYXa+B7PDngizpLdUEyHOMSzM3Pt46EX3Z6JsdhNnFqO5vhVMQv9nDRsCl0bEFEsEmwA8AiH82FG8xnLSDwgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACH0lEQVR4nKWUjXWrMAyF3XOyQN4IzghmhLwRyAh0hDACGSGMEI/QjBCPUI9QRqC+AhmZv4ZEJz5gB+vTlWXt1PvWzqx9jBfeBbVmn6vz+UwTbfb0zP4fGB6B74BmIcZo9fj6VnfrVFmfWoa9ClqEOOeVd43SWququEXYKyCC5Hm+CIF575NNLykCBBGzrUEKU6nale1WEKlhCNSsQXxYd95tVtQiOrYtkC0gUnLMjwSoS6tU+BVV/hTkWVBy+LDr15mUAAg4Q+YArrF4LFZdvO2AwKy1VM4yXYDc7T2o1KuQJUV0FtiMQ0e0fPiXyyUMRUBWMQfpAREyB0og5EiU8fVWkaLscKI50rkAWe11lK5Q86oytyHiAJKX0tYuKgq3Pm5GipcgE0VoGTDp4FY9CAADBAYIlFB0Py2tn8psESJBLRohOQmHzEAYOSjTQACBckCetaiI7wPSpI0ZVKrBOZT2LSVCoWbc19ZB8eMuTXlhqIyPuYlnAywgsC69QxAbFPmuVHugrTvYWtQMYPhTIFmiDLyU07YiqisC5NpfoI/wYetc93GhZPOcXkh2zE22B/4LYy98N7OKCJBuTKBGm2mLSedGvDfiSYNBiOQQAN+IloY2Eyj3PU6TSFc5AkkI8u93PQQD5XYKm/tSGpyzmtE51MKhTJlUFE0qYvvso73GFQHtYSxTOhy/J2Mn5EkY3jOeBOcP8V+mUmtW5vH9F1peh1LIYBOnAAAAAElFTkSuQmCC",
+    "price": 30000,
+    "reqSTR": 90,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 30,
+    "tuc": 5,
+    "incSTR": 2,
+    "incPDD": 13
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 13,
+      "min": 0,
+      "max": 28
+    }
+  }
+}

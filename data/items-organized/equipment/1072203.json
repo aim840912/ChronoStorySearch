@@ -1,0 +1,55 @@
+{
+  "id": 1072203,
+  "description": {
+    "id": 1072203,
+    "name": "Red Ades Shoes",
+    "description": "",
+    "chineseName": "紅色昂斯鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAaCAYAAABCfffNAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB7klEQVR4nKWVDXHDMAyF5bsRcCEkEFoIK4RRSCkUQgshhbBCWCE0EGoIMQRPcqRE9Zzf6c6X2bXfJ8mS9wH/s5DMTW7TVkgUr3nicVgcp279D2gLJDz5D8cAsgbHBcc5A1oLiYAHT+T7ycAxWwMJL2vh7n0vrq1gUC6aJZCY/zEAiTYMIcs5MAeJ3nsUzwFq/K3xHuZsChLaogDnXBTPAQg+j9hQXZQey4CG1wjkeJAzFY6bupdJCAkVGE3FB6PnJK5SJICiE+4rTRfAFMSU3ocaBfdqUUrVJ4AzA9J9s5EQiLqYOtuyGI0GhiaUNFWJ8AUP1eidOUBYcic9SIvrRhSY9Mo3bm6EDisu/o7jB9v9eOjmEpWYAHK2uBkFIOJWbbCw/VmJ4qHtJtddlxpJk4Bs5mDDxOM1frLV1YkH/HgDrux6gsToPgRUwPDEO3jvk8e118r2Sexy+3TgyzJKWXbVcm/oqpJ7IGG5bAaMPvUd4PViwDLTgGMGoCHx/0RMizeg60a6XDefRKLLdQyQRgJF24Lb7QDUs6ffqNT6fpgxggQK44blucco5FlKn4/Ue7K0iqYg4NHViqqpMW9drWH1c1ij/UsBAjG7E7WDAfvFMLqXJA1e5UzdwSygj2QATZ9ZK55CetCCM4vFxX4BD8z1nvYpIXoAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACJElEQVR4nKWVDZXCMAyAs/cw0EnYJICEQ8JZGBaQABKGhEPCIWGTQCWsEnZJm4zQK6VA3svbOkq+pPnpCj6TOVpXuc3vwjyk54VDNai78P0h8B3YPPCLZRDJiHpA3WeAr8I86MILeX4x+Jm8ApuvxsDZuQWipWFgLroSmM/PIxAZHxlGknKkFOajcQhJgXr8bXQOSiUHm6emAWuth6RA5EQ56o1qpGMzDBr5GwEtKznVoZ4SecvCyGCD0XVswEdCEHV0AmoCYKnMVKHkYFXr3Nyj4bX6KCXuItCeQfG+4sgISFOBJoVho6Qj3JpZjq+LAAf8U49eVptbdCU5W4AaohtaoNJrP7h5FC9eiGyRM+ovjo/tJqwlShEB5aS4qQUkEKM2GPh8XHnIPIXFsQ5HJscnQJP448jk7dE/stUYIDM+XAW2DT1FRilfAmzgdrVYuO+zy3Gxle0zPzXMYMG1rTdp2HXDvaWrUPJEACmKSxTNI1gAXa8MKhMN2mZAGubvKX9crgJdZzI1dBNLZLrMn4HiyKCZJrB1DaDGq56BsSz9VCgEmymsE5b1GqOSsRePpTgakqjqyMu4OO8uBR+ZQ9c7qr6xupsSGtoPt2+0PwJtUfUI1SDx1xGsqnfUThWYb4ZS3qLjceosVY5IjgmQBi43kOSsRuAU+vdxjiPIiZ8mvfv/vaoLZIPAAZ7LPmM0fr/TlfqBQtUNlvJYBkksLrNe3v8AiucNsl23IqIAAAAASUVORK5CYII=",
+    "price": 140000,
+    "reqSTR": 0,
+    "reqDEX": 280,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 90,
+    "tuc": 5,
+    "incSTR": 2,
+    "incDEX": 3,
+    "incPDD": 52,
+    "incEVA": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 10
+    },
+    "incPDD": {
+      "base": 52,
+      "min": 7,
+      "max": 97
+    }
+  }
+}

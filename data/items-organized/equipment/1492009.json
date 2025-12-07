@@ -1,0 +1,39 @@
+{
+  "id": 1492009,
+  "description": {
+    "id": 1492009,
+    "name": "Abyss Shooter",
+    "description": "",
+    "chineseName": "深淵射手"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAZCAYAAAC/zUevAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABtUlEQVR4nMWVgZGDIBBFl5lrQEuwBVOCKUFbsARTQizBlKAlaAlnC5ZwlEBYcBGN5lBy3s5kFMzwnh+BLzi3xEof85GgAZkr+OcbYBj0PR+v1xsIryTaux5kQ0YswXkemIdpyoFaPhIMBVCEy0amZdgSTmCE2gJliVd/CSNS301bLOEEbZoAoohD14ESSBIpzz8jIcQ4GaLQ1+wyvTmCh4GPUC1Ahfco4isxCghoSqbmN5EiVWW/LTffA/ZR/JRAEPhJzATSQt/3HYMomOJGCIGxbo/VsQ4tUSPQjQl0CC2mxUHgFejqct4rsZlAL+PGFDB2C/7bHrJb4m0CJGCVk8AeiZlAspGA3CsOlYvEy36P4DiZEggvs8eUgIAPTYeoqgriOIYsK6GuMQU9Nu9nAjbMGe4iIdq2VQKDXOyJXHNZJsHj+GVj/kdb9S6wi8RMoO979YugkX1m7regu6XWJFYFAv54J2AOLqvtXEuJIwKHwFsSSgDnnuA7BLyKJP5NgCQ2BfAQuuZ/K0AS6ht4EYjPESAJFoah2pTOTsCWULA8z0WRgvoGzhSwJRRU7oLyjD5XAOsJVTcYnNNnv+QAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAcCAYAAADvANYcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB+UlEQVR4nMWVgZGDIBBF15lrAEuwBVOCKUFbsARTQizBlBBL0BLOFizhKIFj0SVIwIjmcjvDCOjsf3xg/YLPhnDMRUcgKGG0VfjnG2Acpz6fn+cLiENOdNcpiQdG2MJlyfTLPOdAoyMQEQIgCJeDYoKJbHESRlEToK7xeRxCg9yveixscRJtWwZJwqHvQQFkmYTn74EQYt4MUU3P4vRYOQqPI59FJwAK7CPIUYgZQEBbR2p/MwnSNOZquT4POEf2kwOMHYNYAOTV1B/6CBL2sBtFSBjjcnPm2nVFNUA/O9CjaPW4HCTsEHVe51AIrwODtBtdQNsN8Vc1JBhi1QECMGITQAjEAiDzOCBrxa7YAvFU71E4zR4OxKfFa3JAwJu2QzRNA2maQlHUcL+jC1NuPiwATLHN4lsgRNd1CmCUlz2Td64opPCcv271d1Sqg4S3QCwAhmFQLYFWzum994kGQ7kgnACM39YA9I/LGG8OG2IPwC5hH4QCwL0n8QCAQ0EQ/wZAEF4A/Amdy78FIAh1Bp4A0s8AEEQUx7EqSgEOMAgP7ntBZyIqy1JUOagzYACQmCnqmtsKwI32BKFEZRWU/2jVjwGL4yRkNh+QS9A1j22cm/7OrhO0emZAJJbgW7fCBUFhCtkJ1hLylb7dViHIsle2Mw/QGrRzAb+HsTN2nZZNUwAAAABJRU5ErkJggg==",
+    "price": 310000,
+    "reqSTR": 70,
+    "reqDEX": 210,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 70,
+    "tuc": 7,
+    "incPAD": 62,
+    "attack": 9,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Gun"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 62,
+      "min": 58,
+      "max": 66
+    }
+  }
+}

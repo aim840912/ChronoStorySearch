@@ -1,0 +1,55 @@
+{
+  "id": 1061119,
+  "description": {
+    "id": 1061119,
+    "name": "Purple Valkyrie Skirt",
+    "description": "",
+    "chineseName": "粉色虎雲裙"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACsklEQVR4nKVWDZGzMBB9nTkDWAgS8kmgEkACSAAJIAEkXCUcEg4JjYVI4NvdEJoGaOncm2GgSXbf/qdfOIeZnssH6xucIZrnH9J23Sid7zWQdufIzhBdmCQgEywkwB88mjcL9xJQOZSqcC8N0kFBJQaBR7sGviKae9VCJwqTNTD0jHYSkjQlkp8MMMNK9pMbKA3UtpWz/DAUyXd2eArpxqPRjBjpbWAfi+Ymr/Q64t5DSGTZPmQQyBg2LsKGiK3JEr0KTUlDBBZ3ZlhI7+UgJNcbnzXQKnPesFckp5AgptothiRJoKyzsKZojeSQhK6nkFUKPa1Vo/OK9+3yfeRNTDTXSSke7UFrTSTuXVGk2sygGbdn2RsxkHSFedp4xIVgrZXDPrkerNyo0tvuFJNH04i3eCLa84YV4Rb8Vs6QsFa8gSsiAzdEMdrvQXKS5/miICQEyrKkfSr37wpT1b9SdWoySHGwF6zc7B7I3+rwRFIIOg4dERwRy5b3kJoceE4UN3pYEKtHcX7CQuC8GLPri4PloafxCpvQ+YpjDEVN8e+QFo3kI8YwUH5+c0zX1yS7REdgr5KoGD4BE+3n5yys3SxJGpaB7PP09Sxjn4epSHHIbjiE5b3srT0r0RQk3xdC+WuR/ruh7/u1vKfAjrZtJX+n+6ikaay8UZpuM7iyZhIepFy4yUGpS9MWrmk1R2Sp8m50dVhmE7rOEV3kluxcwsMwsSd0GeybyEeXQc0zMC3UamCIUdSZR+g4DIxaNzSVa2RZ9lBoFiOiVpLrhNb5yDqmpg7GTwq6u27OmKBh3zXlC/gp4YgfN68KHNz2UVzlSf0RqQpCGuLwhnVCL3orMEAt4X38dtHRgbgnuhRFMUue3kTP52XX7AhUjKI7JJKFpmnmRj6bSKQLvq8H67vf69+t/ysLO+VNkzIFAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC1klEQVR4nKVVC7GrMBDdztRALAQJeRKoBJAAEkACSAAJtxKKhIsEYiESeLsbAmkIhc49M0wgYffsP3e4hhmf2xf7UVwhm+cXanzsFM9TBZC01wmvkN2IyCNkLEQAf/Rs3m1MBYDMQMoSpkJD0kuQQoPnWdTIM7K5kw0oIWE0GjQ+gxmZKEmQ6JUC6H4lfGUapAKoTMP/0kOQKN+afhfenWeDHmDAVYPZNvWTl+QxwNQBE/G22WTAk9FkYAQ7MrIqFWoVHEWNJAYmYlmIp6JnoseT/tWgZGq9Iu9QToKAGF20QIQQII21tMLIDegYh7HD8JUSOtwrB+sdnZvl/ZNXIdlciYI9i0EphUR2LTFqTaqhHvb/kldsJOoK87bzjIrDGMMCLuEORKBl4XywytGzcYBLeCOLeUXK4Ol9S2uMXz/OyBWBkVGyEM1PzznKsmxR4pMCFEWB59gKPyWMZQdnuDQbqWDIGyKI2iyyK2pWMi4OFYYRSY7I+ch5ioMA4D1xNAzCIlk9C/PlFwflSet4HhiGhqSCM+zC6CqR0OcV5qOFJK85PyH6HvP1m8H4OCeKkh2BvBNBgXwLIovn6yqM2W1xSpYh7uft/i5n3gcwS1L4nnAIQ2fpJbtWstErCFccxa+B5N8Tuq5bS3/0bGmahvP5VZ8VOMWlM07hjQi25ImIhi8VtThoA27s3Da2osgsHdAOtj6LdIS23chufNu2tgj8kJFHeJHEzaRflwFPMzPJ5Wqkj4HV6c0zFmgaXitV4zSvIE3TTaleDAlaja8i3Kdf1pE2tqDdRMG772kNCpr6rHE/wE0TS77d4DJwdN9nYQeI6iti6YU3xOFNbQU/9J5nhFxCvX3bKKlNnH13ZLc8z2fO20kkXZ4OzfeARcoLLJl3ZMSc1HU91fxZB2Kt9/442I++l74WP4xi0SRgq+F4c73DfHh/e+7egQ6Ux4j8W+yI8NCA/47+S4hmpGwyAAAAAElFTkSuQmCC",
+    "price": 170000,
+    "reqSTR": 300,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 90,
+    "tuc": 7,
+    "incSTR": 3,
+    "incDEX": 2,
+    "incMMP": 20,
+    "incPDD": 76
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incMMP": {
+      "base": 20,
+      "min": 0,
+      "max": 65
+    },
+    "incPDD": {
+      "base": 76,
+      "min": 31,
+      "max": 121
+    }
+  }
+}

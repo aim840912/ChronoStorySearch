@@ -1,0 +1,55 @@
+{
+  "id": 1050036,
+  "description": {
+    "id": 1050036,
+    "name": "Red Starlight",
+    "description": "",
+    "chineseName": "紅星光長袍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 38,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADdUlEQVR4nLVXi5GjMAw1M9cAlMCWQEogJZASSAmkhFACKSGUEEoIJaxLCCVwesIC2UA2dzOrGQbH2Hp6+tn5Y/ZlNP8n0U8L9kDH5/Np0jT9CMVaO48Ph4M2dtOALVAGzLLMHI9HDzjP87fgRVEY7IUMw4D94xbwrnux6fF4MDAE4LfbbR6LEQCS9XjC8ZZsgUZw0f1+Z+UA7rrO1HVtqqpasRXll8uF3SwGiTGfgrKcTicDYABCAAgAgAvbOI55XJM3MMJjyaiyLMVDH8eUpSGlqXsQX5G+72eGmD8lickcuFvAhsJgMvzjmI4PUmZJqbhKx0fmJGMFLnXA2Be3renMvoSg4ze5pyOFeErNwIEDDAzxtKQcYAACW7gbO2CipW+fgI53YgEFeJrXaxdM5lqKexoY9ol4TGNntYz1vI7rVjlgBjsyMrxHFtOein7Xw7CKq4COnDi0EG6tvr9nxfEbJoN6Y18BT/0LU1Ftd8BCdrr1YSUiqCsTc3tsAcostWshujRCEcCU6rF3XUobB10/dqRYKc/JANQe9QKTlzSRXR3Sxb2B5t4U5g7r6Hd0XuIKhj3Ad9gyaFFZ09ZLY+fuUjwpToORIFnbrLzQVDdTfxnjc3W1qtjmJTqZzzQiK8dxLJlNRxraeupI2pU6e5cWeJvZEIIpyXiD1pxeJ8/YySPwggliyhNRdFkd2lAcnqk6gbQgib7IW2mL9ehH08HgevdmyegPYxXUaNgG4V42hqYL6rH9+byAu9NFvEEn1srAd9eVORN1+XhZaZeGAheDmxyBAvyizpYkyapkViKtbQbraH3uez8O1+j9aBKubeJ7CLxq+HBtRi6bBYBcIniPPhAxTYv9e5Qc6iHwrnvjNnGZKBomA3o7lRNLeTVxl3j7CnL1mWLcNM1cWmEyrkDlQB6Kl4n7xKy+V68lgzsqMXVwSmznteRe5ADA9U3CO9qa8MqZX1nx3MWJme2Xe9CQkWExfaz9DBW2QXltJ5IcwGKhBwi50e/suazfSCJhC2Ajd6igD3tHG1vp7q0cU2Y3JQ+XD80NLbGqlgMerFGr+kAXYDlAkJyu9zJj72gblPUcUxm7zT1YpsstQgNviTaiWliPb5uDBgSQvrboxrEFqpMK7/MS35lpdLKW6Zc/AO6xaqcNocX612Yi8SR1/l/7tybyFyejAQHyIWeIAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAgCAYAAADud3N8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADjElEQVR4nJ1WDZGzMBANM58BkMBJ4CRQCVQClUAlFAlUQpFQJBQJFwmNBL59IQubENre7UwGCEnevv3NP7Uvk/qbJO8W7IFOj8dD5Xn+EYrWenn//v6WykYViIFawKIo1OFw8IDLsnwJXlWVwl6IMQb7pxjwrnmx6X6/W2AIwK/X6/LOSgCI12OE7zGJgSYw0e12s4cDeBgG1batappmw5YPP5/P1sysECvzKaiV4/GoAAxACAABAHBmm6apfW/JGnjD0KRUXddsoY99aqWjQ3M34F+WcRwXhpg/ZpkqHLhbYBWFwqT4xz6d7nSYpkPZVNI/PMcRy3C5A8a+tO/VoPYlBJ1+yDwDHYhRSwYOHGBgiNHT4QADENjC3NgBFTX9+wR0uhELHIDRPZ+7YDzXk9/zQLFPxGOaOq35Xc5Lv8bSATPYUZDiI6KY9jT03Rqz8SuDTjZwaCHM2vz8LAenL5gY8cS+Cpb6DVM+Wu+Ahexk6cNKeFBmJub22ALUspSmhcjUCIUBc8rH0VUpqRzOeluRUnF4SQog96gWqLKmieLikM7uCTT3JDcPWEffyWn1KxiOAN9ha0GrRqu+XQu7rS7Vg/xkFDtJ625jha65qvZLKZ+ry1XBtqxRyXymCWk5TVNt2Qx0Qt/OFUmaUkbvWgKvCxtCUDUpr1Ca88tsGT1bBFZQgU/tRJKcN00bB4c9VQaQFATRF1kr77Ee9WhuDK52R1NG/piaIEfDMgjzWmVouqIaO55OK7jrLmwN6lgbBV9dV5ZIlOnjRaVeCwpMDG7cAhn4SZUty7JNymyES9sCNtD60rd+Gq6R+1EkXNnE/xB4U/Bh2oJMtggAbYrgOflAxDSv9u9R3NRD4F3zpn3mIpFPmBUY9ZxOVuqLSofM21eRqU/k467rltQKg3EDyg3ZVE+Vjpna/G+eawQPlGKicbJvl7VkXsQAwOVNwmttXXjlLC/24KWKEzM9rvcgU5BiKf1s/QhltkF6xQOJGzBr6AFCrvRdPNb1kSBitgBWfIcK6rDX2qyW7t5qfWrZzcFj04fmTE+smrXBgzVyVTZ0BuYGguB0tdcy9lqbEdpbn/K72zyCZb7eIiRwTKQSzcp6elkcJCCA5LVFFo4YqAwqPE+rfxemyVFrS79+A7jHqp83hBrLL0SbRZZM4cScKv9D/U24AEskExkeqHGafIm52AWJ3R+KefHt/fsPHV8N5DQTkK0AAAAASUVORK5CYII=",
+    "price": 50000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 115,
+    "reqLUK": 40,
+    "reqJob": 2,
+    "reqLevelEquip": 38,
+    "tuc": 10,
+    "incINT": 4,
+    "incLUK": 1,
+    "incPDD": 36,
+    "incMDD": 18
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 4,
+      "min": 0,
+      "max": 8
+    },
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 36,
+      "min": 0,
+      "max": 74
+    },
+    "incMDD": {
+      "base": 18,
+      "min": 0,
+      "max": 56
+    }
+  }
+}

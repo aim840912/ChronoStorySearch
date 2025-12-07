@@ -1,0 +1,43 @@
+{
+  "id": 1102023,
+  "description": {
+    "id": 1102023,
+    "name": "White Gaia Cape",
+    "description": "",
+    "chineseName": "白鬥士披風"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 65,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABYAAAAdCAYAAACuc5z4AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACp0lEQVR4nK1Wi7GjMAxcz1wDUIJfCaQEpwQoAUqAEkgJUAIpAUpISngu4bkEnyQwgfC53M3tTCYef1byaq3kF/4MfzCvzg6dEQvhd7dduNsaVVUtA26CHBH7uq6R6gqXIoIxZl4YhgE/fQXddbDWQrsK2U2SWJHvEfumaZAnBeLrmlRrjTzPab4l8gyta2BRoyu35O/Enq/+RAREKee3ImW0LZE+DJ6uBO8sTYXbUIMuGORR78S+o+vp5I4oMnAweDQxSTFIljNp7+CiBnCW9kWkd0eSZaJ7R7FC5lspHBHrsWKRfk0zyThIZRxuIDrTMEUl5JT3SgopVoIMSDycc4jcVuOyLFHcLJoyk+CBnLPmM6kuwJqwJHPGrNUTj1eK2qw0XkGbzZSJiiljrDJW18r4vr7g+D3sI8GFSy2kbMXAt5LiWlXoayUbR1e83LCCHeQ2EdWjaMfCWppL01QkoQAvKZig73tcr1cZswN4o8QIhZvG8eU+reXghLiA/GHSpRRiswAmJ2MR8TZRDsgEjCZv4fTPKqjscQtXiBvwIxOjIw6KdgAOGNkLnhSzfUrRRWNVtMY3iMW3HF9RDYMMR+A9/hHLmM9k7eiUPBlIY4jG5IaBCmfmQnmfQKnikJy9fb8vC2fldYrGdnhJwVr1fTRLAVt8JEHQOegevmfigGVVz8DZChaWXJJuiGUvPWX1JQcVEXh+xmdgV+wl9MlP0zGmp71sSsF8u93tf0DsFsexJ+ytq9vtJs89gDqXzIObCjnATTqzxuzlr2w8t8n4rQZnUFQL778xNv6djAXy4myMeIr4MT1Ld0Z8lhk3bpYjy7LdoKEJZYuk5n7MOu/9h/hXfGo3tfwFXs5Tz6DuaKdG9vfEwInuTPr1VpslsaLFvaz+GHDv3G+W+0fQPJcULgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC90lEQVR4nK1Wi62jMBAcpNcAlEBKICWQEqAEKAFKgBKgBFIClJCUcC4hLsG3u2ACweblpBspepZ/szs7Xt4PvoPxzAdfnsdvRELwZzgu3FWDuq63AZySnhGZpmmQxTWuZYg0TdeFaZrwGmvEwwClFGJdI28lKC+Zj8h0XYciKRHd9iRxHKMoCprviSxHrzsoNBiqczIXkWGpngiBMOP4dySMvieSR4qnrsA7q7RGOzUgAaycB7JPIjOQHHFyRxim0Ejx6CKSbpIsVpJRQ4cdoBXtC6leA0mcS90G4nZl5pZOE1E8OyCM39N86TzIZGwzlDrRMEMtZJTXqXRS/AQ5kBhorRHqY42qqkLZKnRVLsFYMs6Kz2RxCdbwU8JdRqz1E4/3RMwEE5yI08NUGpZLRkdsiYJbnZqxucL/Pt1IcGXrCAlb397nIxLpbnWNsQnk4Oy6t9t2UHzhRPLeUfazURTNZVkmEhKhXzq+cBxH3G43GbPD+KBwWiMs4+h6X9YKcIBsCP4xiQuWSGxtwWRkZCI6HuAA+EJGV/TQ8WsXhOzRJ64Tt+El49lxHhN4wAGE6oonxdA/xUTOGgVln5oOkbwbji8gT1jZfOA95hHJmM/k/ezEIpmoRnDWiNw2kRHStfDGJAiC0kvGb+t+3xpBSfeQGqmjGqt0rPU4zlrPm0t8A1snWzf710u0Enpc8wnORrB5Aj4SJ5GcpdYTXOSigC403HbOwK77LcBvP+V+LK1o22RDxzZv9/7fWO0dRZEhuPYEbdtKe7Kgzizz4KZIDtNLnbhG/JYuOez6gWiHk5oegqBaGvMH84fwBDsi6QgqQuSI6BQs9b8QnSAiuV4sX55LFNwOdjW3TXVeRnRGJHXa/A9nvw0uEyW/BGbPavuzRKHjwnSzxqCkanZEu1mTeep5zTCopTGvZy0JV1z9bEg+v26ujHq4MxSSxW2ta32bESOnzSxeuZk7e/J2raRz7IZ8M7/7/eCdnr344ok69JDauYsjsHX8FyCRX5G2QnhtAAAAAElFTkSuQmCC",
+    "price": 140000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 65,
+    "tuc": 5,
+    "incPDD": 19,
+    "incMDD": 24
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Cape"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 19,
+      "min": 0,
+      "max": 52
+    },
+    "incMDD": {
+      "base": 24,
+      "min": 0,
+      "max": 57
+    }
+  }
+}

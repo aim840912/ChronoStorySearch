@@ -1,0 +1,39 @@
+{
+  "id": 1322001,
+  "description": {
+    "id": 1322001,
+    "name": "Hammer",
+    "description": "",
+    "chineseName": "錘子"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABFUlEQVR4nL3WAQ2DQAwF0F4yRyABCyABC2hAAkgAC1hAU0ebHSnsOA5o+cmSG1l4+1dg+8A7weXlaPEGiBK1BnH/3hLEYRhgmibo+94fM2vIzaqqksfMZhhs5hfa4GEzCzDaTBs8baYJJjXTApObaYCXmj0FLzd7At5q9gS81SwErj8hkWBd17eahcCzSOwytAd5LstWHbVUwSQYixqWAqpiZ6A69geKOYIFtgHLsoRxHBmiWGAb0KcoCn6KWIVAviWcc4CI3NIy3JAeVbSVhBJO+c1Q/s1Tu0rpROhnJi+aLMvWD87znPLoSwJhdyL+AjTLrusgz3PQTPTGp3k2TQNt25qDvLU0T8KW7eRjluCK+jUo5Qth75X30HDzeAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAgCAYAAADud3N8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABXUlEQVR4nL2WjZGEIAyFw8w1YAt3JWgJXglagi14LViClqAlnC3YwrVgCTnCiAMs+INk30xmgWX48hJl9wPeI5Qh9OQdUHTB3FD0zAUnFMdxhHmeYRgGvcbqVDms69pcY+1p0CEX9NAhB/TUYWroJYcpoZcdpoLecpgCetvhU2iUwyfQaIdPoNEOfVDr5ycgbJom2qEPeiYTGAVzoapPsmwht8mAJvRISYFXoMmBZ1AW4AvU6CtwAS1oVVUwTZOCkbiAFlSrLEt123CKoOp1EUIAIiq33FJO6VqjshKYEiBtPTX/QiZ9eukw1D00H6Q8z/eNy7LoiyOL4KwuFMB2oZKg3vZ9D0VRmPt1FnfAq/Gpwvee7gdSf9u2ha7r9FLp2+cB+NYp/ihcaLbFtyzzL/WXgLK09B2RP+G+XhI5ciq59biNf0IHBA53x1a4UF0CDf4CfxmzQALrwXwf/wPyaq+F6XJ8ogAAAABJRU5ErkJggg==",
+    "price": 3000,
+    "reqSTR": 20,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incPAD": 34,
+    "attack": 1,
+    "attackSpeed": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Blunt Weapon"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 34,
+      "min": 33,
+      "max": 35
+    }
+  }
+}

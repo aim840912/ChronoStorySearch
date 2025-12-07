@@ -1,0 +1,39 @@
+{
+  "id": 1442002,
+  "description": {
+    "id": 1442002,
+    "name": "Eviscerator",
+    "description": "",
+    "chineseName": "月靈戟"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 120,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAkCAYAAAAD3IPhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACk0lEQVR4nMWYgXWDIBCGL+91AToCHYGMYEewI8QRzAjJCDpCHKGMUEYII4QR6N0pxKQxlUTj/54VqXJf/4OD1zdYVj408kx+LAnjf44ejHGwrxtodHFc1JkAYk3Dz0vBcHoCiFQ5WK1fDsMQSgqQeGFquJNAUKtXwTCEzHbgyAnpEMQyQP+lV8DEiVoUX1BV31B8vf8BmRvGg8i4QSB1Y7g9BDInzIUbBGL0HsDpQZA5YHwIFkBUVo4CeRbG99oUxKv8mwJ7AggikKo6hPTc1RgYf6tTZlVsW10wCPdjzSAAtWufeyB3XfkPpoXoJmErgZdrAbqqScEJzDkLQsjYt15/corGggzBeApKA0mlOLij+PjDWos3Rz3Qdp6hAgQjd1CpuoDBQbxECBpMSYl34CuI4hOIMZbBrDXcSRD0TXBnkysocL7yvYHR6sP4EgtSpgSXa/q7xcBH1ileLdt9jcFVu1qgnR+ktrgdQKmhEe7D+N3hGEFI76vbafbeA70iMgEHuQGtyS5MJzpCECFVJJo3MHK+9GEiyOoMcXMQ/L0PUPS+yAUYm7cp68QrqHMHJ7CHhAmM1fIE649YB/77cHUNtckl1DXOJXwuNzmDkMbUlmuYADLazmsoAhKlgqYZfm80zAMgF8EI6IRAVVVFV1hUo5xOStMzIOe4wIdq0HmJZ5U61qEUTbVRRnekwhrlMlzuCQVmYhgWuUMrzEqsPUC7dJo7U8KwO8eTxzRR2cHCaZeDYZE7tIVILIIG7MIwItzTN8tZjp0ubGxElpCp+Q7kBGF5RaXvTVMq0ZCoKWF4WzC4giyed3TDlTipoC79L5ELTQUTXdlu9UOuTAnDIPvaPgwyFUzqeWg2GD5gPXge+qNfXYk4oKoyib0AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAkCAYAAAAD3IPhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC0ElEQVR4nMWWjXHzIAyGlbtvATICHYGM4G8Ed4R4BGeEZAR7hHiEMkIZIYwQRqCSbBzimsRufvzeUWyK0RNJCP7BsvLhIc/kx5Iw/vvkwRgHh7qBRhenRT0TQKxp+H0pGA5PAJEqB6v122EYQkkBEhuGhgcJBLV6FwxDyGwPjjwhHYJYBognvQOmT9Si+ISq+oLic/0L5NUwHkTGDwRSN4afUyCvhLnyBoEYfQBwOgnyChgfjAUQlZWTQB6F8dEzGfEq/yLDngCCCKSqjiE8NzUFxo8Nyqzqn60uGITHsWYQgNq37xHITa/cg2khuiRsJbC5FqCrmmScwJyzIITsxzab/xyiqSApGE9GaSGpFBt3ZB//WGuxczQC7eAFKkAwcgc1V1cwuIiXCEGLKSmxB25BZJ9AjLEMZq3hQYKgb4J3trmCAvOV+wYmK4bxJRakTAku1/S7ReIj6xTvlt2hRuOq3S3Q5gepLW5HUCq1wm0Yvz+eehDSejUeZu890BSRCTjKLWhN7sJwokcIIoSKRHkDE/MlhulBVheI0UXw/z5A0XyRCzA2b0PWiXdQ5x1MYA8zEhir5Rk2H30duPfhagi1zSXUNeYSvpfbnEFIU2rLECaATHbnEIqARKmgadLzJsP8AeTKGAGdEaiqqt4rLKpRTs8K0yMgF7vAl2rQeYl3lbqvQ3P0rIOy945UWKNchtt9RoF5MgyLvEM7zEqsPUCn9DzvPBOGvXM6ewwTlR0snHY5GBZ5h44QiUXQgF0YRoR+/mH5kmunCwcbkc2I1Osu5ARheUfNP5ueqZkO6fUXmNS94EzHgsEdZPG+oxuuxGuIr4cPwIhBnxq7JRWBuKhNhhGJlgIjlcEru50OXtl1MDGI7doo0BAmGJZRHxtOeoRADnUfnkM0d3L6pDwTNFxobOH94D5UDOa5kTYJJrgyFY54jOZ+00sHsrkDf9dDP+HtUmxau29yAAAAAElFTkSuQmCC",
+    "price": 500000,
+    "reqSTR": 310,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 120,
+    "tuc": 7,
+    "incPAD": 102,
+    "attack": 2,
+    "attackSpeed": 9
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Pole Arm"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 102,
+      "min": 96,
+      "max": 108
+    }
+  }
+}

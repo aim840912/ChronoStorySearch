@@ -1,0 +1,61 @@
+{
+  "id": 1050048,
+  "description": {
+    "id": 1050048,
+    "name": "White Calas",
+    "description": "",
+    "chineseName": "白魔法戰士衣"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 48,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACyklEQVR4nLWWjbWiMBCFx3NsgFcCloAlhBYsAUuQErSEpQQtgZRgSpASpIRs7oQJiQ8RXXfOQYT8fLkzkwlr+p7Z6P9qruO3oPZ+v5Mxhq+6ru0c+GtK+75nYFEUZFtHLOkp+BvQoBKmVE1lqaiqcmqaZhL8NaWiknQN9Gzff4VaZ9R1HT+IyjzP+fofUAYillmWeZV0WTTwU2gAChTuVYoW2btQOxATIO5sGsn0mrwUyrDb7RYgXpnieF4uFx/XYhwgcf4EGmBIDFGHCQGU/+/aHJT3H5TBRB2uqqoYhgvPAtbUUnsoqTwp0lrj1cviILUzdJQNL3cYstRtev4fq4Qn0K9fIFyg9v6HKCtyWm27AC/L0tprTuoAtVd3bd0KGp+lvY+hQPSwLuXe7ZpE5a+DICjNsJeLjOsmJvrZD5151ihDXB8yvR/g2oYbw7ShR/Ni8mTO1VoauMX0yYi2bYnXHH6OIYZwpy8IGDa+06ZO5oD3xB3Xg/PViewY00EB2uOExESyTTCxgHDHJXtU2qBYucKke7ed22FencpfB9cGV/4GSgbj+XGLxG2KXObunD8qVjTpvQCt2SOGjkf/EgPg2jmLPSCZK4bxo0oTvMcLGWK6OhmyZ7c67IRYSKzylR2KOlHJc9V+IYdqQinAuyZJ7dmjSRYU+nabAMSwIWEIQhDyk1vAyfPTLUNp9UgW8GiSTB5e0t6F53wctwZMwFPzT5VBi3hKvOJTRMreCN3SfmtYYRY5BmqjMH3+uRKOLyLOUrcBqfwx1J5pJEbFYs7eOk/xOaJcliN+yHa4lClSpRbaJFSSSKoM4oa8gSvhtrAPZ6ybWcOsUiiDAQYD7NXx+VjRlkJXm82GSxjcCNGSKJOxwkuzIJAvoAzGFzqfEFXh4zUkCRzvTgvug1PDnyJd4EMlXLvzR+7bX/g8Ke3NZFvS58n4ZxP/BTcvodgM1iMJAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC90lEQVR4nLVWi7GqMBBdZ2yAWwKWACVAC5aAJUgJWsKlBC0BSjAlSAlSQl7OJhsSRPw8787EQEj27NlfXNP3RAfPq6WN3wLVt9uNlFI86rrWS8BfYzoMAwNmWUa6NYglPQT+BqhnCSmKmsqyoKpKqWmaWeCvMRWW1NWAXtz7v6DaCPV9zy/CMk1THn8ByoCIZZIkliWdXzr4KagHFFC4tyjoJXkXVDvECBAzS4dkeo78KiiDXa9XD2KZFRzP8/ls45qNByTOn4B6MCSGsINCAMrzu7IEyvUHZhBhh1FVFYNh4F2AO2qp3ZdUHgvqug5LT5uD9E6/UQpeZgiy1BQ9P4cs4QnsG14gLqD69kuUZCmt8t6Dl2Wp9SWlYg+2FzNyY0Fjs3SwMRSQztlVmLVtE7G8uwg80wS1nCXcN6HoZ+c2s9YgQ8weUoM9YL65icE6RVOxZNJI52otH/iLGqITbdsS2+x/Dj6GcKdtCDg2rnWqjnTAe+KOy9746kh6jKljgO9hQkKRlAkUCxBmDKlR+QbGhWlM3WDKuXV6u5j+2rvWu/IeUDIY79MSCb8VZDJ3a/xRMaNZ73nQmj2i6HCwizgA1y5J6AHJXBGcH1kq7z02xMV0dVSkT8Y6VEJIJGT5TPZZHbFkXbU1ZF/NMAXwtolSe/FqEoP83n7jAXHMJQyBCEJ+NAYcLX5cMhR3j8iAqUgyWfCSdiY8p8NYGhABntM/1wY14inxCm8RaXsjaE67XDHDJHAM2AZh+vzvir++iDhLTQFS+aOoPdGIGDSLJXnrPsXfkcJkOeKHbIdLGUW61IsyCypJJF0GcUPewJVwm6/DBekXbFhkCmYQgEEA9uz6nHY0cMCyG3egiRv5ZrO5oLjhRpCWRJmNFRbVYiCRdb0bQwgqgKmba/MP/cA3RJXZeLkkwQZzW0AaM1f2FukjlnDt1l65uzkrpky9/ThglP7S7v6+glEymz2HBwxLGt06697B0Q+B2dUTRUl42Ek+szY8eGb5B89fszIjlf6eAAAAAElFTkSuQmCC",
+    "price": 90000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 145,
+    "reqLUK": 50,
+    "reqJob": 2,
+    "reqLevelEquip": 48,
+    "tuc": 10,
+    "incINT": 4,
+    "incLUK": 1,
+    "incMMP": 20,
+    "incPDD": 44,
+    "incMDD": 22
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 4,
+      "min": 0,
+      "max": 9
+    },
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incMMP": {
+      "base": 20,
+      "min": 0,
+      "max": 68
+    },
+    "incPDD": {
+      "base": 44,
+      "min": 0,
+      "max": 92
+    },
+    "incMDD": {
+      "base": 22,
+      "min": 0,
+      "max": 70
+    }
+  }
+}

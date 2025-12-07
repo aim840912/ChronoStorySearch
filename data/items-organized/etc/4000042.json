@@ -1,0 +1,27 @@
+{
+  "id": 4000042,
+  "description": {
+    "id": 4000042,
+    "name": "Stirge Wing",
+    "description": "A wing cut out of Stirge.",
+    "chineseName": "蝙蝠翅膀"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAaCAYAAABPY4eKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABxUlEQVR4nMWWgZGCMBBFNzNWkisBSwgl3JWAJdyVoCVICdgCJWgJlxYoIbILG8OaYOKM+hkMIOTt32wIG/iM3LirT8BdY/bQ9n/u3XACs94FxzQDg0fX2Lw87QtoCMafV8HvoNZa6G27uOlZuJtblQMdxu1iTyCfKYVT5845UEqFQZD2TUcwhqIQ3JkJ/LU0XgR3DO37ni50+7OHMDA8Z7CuKlC7C15aZCoXTg4ZWtc1GN1A27bJB45m+i8FLoGTy7reEnSYt+h9c4oR+kg5cIdgdM1gqUZPQKPzoCVwEldtTK399o6lUinPgXvXUugWoayffjo+VxZytQb3YOkawZhio29uGb496CmI38dBrDqXU4dl9O2Yx7iDZSAchDtS6mkJzYW78IUhxxo75/krg5CBqB0kFYN7cJhuOcYpzQUW0517CV84ZoVjzGOLrSyutcqOKYTTQk9uh2HaI1OLpxSPKxdWKTiE+y8MBrPYNUqOqwygVJsUWLqWby48DwNYq+o1eBLMrlOvTA4Al8rtAWshWWxpeAyMi//OZ3O90/8G1+oTlArh6nQ5uHDRmL86stM3OnfwhDjtavy+Cjsoqton7iddASPZHyCMPttEAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACE0lEQVR4nMWWgXWCMBCGL++5gCukI+gIMEI7Ao7QjqAjlBFwBUbQEZoRmhFSLnB4nLkAfU/9fTEQIN/9l4SwgdcodMW8Ah6q4gh1+xWeDY9g0rPgmGYgcOcaq4enfQLlYPx7FPwO6pyD1tWTm/4LD0NtlkB997u6M8hn1sJj5yEEMMbwIKKOVRNhBEUhuCl68NvU+Cp4IGjbtrGhOV5GCAH5OYHtbgfmcMWmSaaWwqNDgpZlCYWtoK5r9YHvor+mgdfAo8uy3EeoH37J+4YUI3ROS+ABweiawFKV7YGFXQZdA4+iWZtS7d5Hx1JaypfAR9dS6BahpI+2P77sHCxVDj6CpWsEY4oLe3NL8P3J9kF8zgeRdS6XDqmwt2Ma4wamgVAQ4TumPm6hS+GBvzDkWGPntH5lEDIQcwBVKfgI5umWY6xpmGAp3bmX8IljEh9jGlus5eTKzeyUODxu9NGt931JLC1aUjSuNLHWgjl8/MIgMIlco+S4ygDWaqOBpWv55sJzHkBuVufgKphca69MCgC3yv0J54I62XR4Coyb/2HMZr7Tnwr36jOsFcLN+XoKfNMYvjq09G1lQ+f8N3cdIL0pUNpN933Fv0oM64R3lmpDlexYjpFntWfnk6VGTrFjO9S8aIGkQKl2LG4oXsKpQw63rF0DzkkLKPl65QD5oNqRuCaPZUnCKTVz6d0qgeSCvbv/D8s2OnVkBiV6AAAAAElFTkSuQmCC",
+    "slotMax": 200,
+    "price": 12,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

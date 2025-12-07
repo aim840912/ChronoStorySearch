@@ -1,0 +1,39 @@
+{
+  "id": 1452006,
+  "description": {
+    "id": 1452006,
+    "name": "Red Viper",
+    "description": "",
+    "chineseName": "火焰之弓"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABj0lEQVR4nMXXgbGCMAwA0HD3F/iMoCO4An8FVmAFRnAFV/gr0BE+I+gIMAK/yZFebAtXJJTceXAVzTMWE79AJ6b5WHzyYi0ETPcHFG0jMZN3ySJQC1EgACGmbeDHAobvi3uyH1+0FgHhWqFWCY6bTT7Y4/jXQd/3tFY1La35oM4+8FwTQdXACjCgruvgIqqQhbhK2XNNRAwQ7INyfE3z0eHVv441ACeFeS/wgjoiId4AZyACQG5EFHAIYmE/LAIOQURiFaCJoNvTPO5Yik0ALcRUVRWUxsCvtw6JDW0vgn54jAVgiP2QDNiLoAowALymtOWNPkXQHigVAIzYMpDQtdwj4HrdDWBEykACnByD7oK5Te8FMCIYSLDP38RQwkHJAWSL3rwJlxAuMHFnW+zl+QTz/kljyUEDIBFuIEHA0kDiJVQBSETSQHIEQCIozgAEiIRQBwQInIpzAySiwAF0iNyWRwMkYi0OBfgIV415LFf5IdqK8CMLIIqQf0ogU0iE65ACkh0hAdmqECDOAGD8Ayv9uuLFsE11AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABxklEQVR4nMXXi5GCQAwA0DBzDUgJWoJXAtcCLdCCJdiCLVwLUsJRgpYgJeAms9mJ+7sFgmaGgVmRPOLCxi/QicnuqyVf1kLAdL5AdeokZvJOSQK1EBUCENKfOvgxgMdu7z4cxjuNRUA4VqlVguNokj/Mfvy7wjAMNNZ0JxrzQVez4bEmgqqBFWBA27bBSVQhA3GVMseaiBggmAf1eJ/s3uHVf44cgJOCnQs8oI4oiBfAJxAB4N2IKGATRGI+JAGbICKRBWgi6PHsL2csxSyAFmJqmgbqvodfbxwKF7S1CHrx9AaAIeZDMWAtgirAAPAWpTkXWoqgOVArABgxpyGhc3mNgMNhNYARJQ0JcHIMegrsMr0WwIigIcF1/iiaEg5KDiCX6NmTMIVwgYmvZond327Qv95pLDloACTCNSQISDUkXkIVgEQUNSRbACSC4hOAAFEQ6oAAgV3xuwESUWED+og8llsDJCIXmwJ8hKuGbctzL6LdglxjCcIPBNQ2oUy68/ZzAKPY0gjxpwRXp71AxJLHIKk75uR3u7nzJMKtkBbCAJ6tSyrwHyxASMC3SOZfIHfBMXPsb3GEBVSQngfgjcVAOXT0Bp5ZaNQV/OhWbgAAAABJRU5ErkJggg==",
+    "price": 100000,
+    "reqSTR": 40,
+    "reqDEX": 110,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incPAD": 50,
+    "attack": 3,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Bow"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 50,
+      "min": 48,
+      "max": 52
+    }
+  }
+}

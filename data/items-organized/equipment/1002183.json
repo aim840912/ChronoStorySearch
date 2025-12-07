@@ -1,0 +1,43 @@
+{
+  "id": 1002183,
+  "description": {
+    "id": 1002183,
+    "name": "Green Pilfer",
+    "description": "",
+    "chineseName": "綠海盜頭巾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAYAAAAAwr0iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACc0lEQVR4nL1WjdGqMBA8ZmwAS4ASoAQowRa0BL4StAQt4bMEKEFKgBKghDz2kosnig/B99Zh8Cfhdjd7iRtaDzNcwdLJ3yCwisRXCBzPIf0c+kUk1hIwKL4GawiY31tIbU1Q/18JwGryyt1ttye6Xj7PwqcEzPF3neVLCdxVO7ej5HFA2/47AmZ/fFa9tOASAtS3VnYbWSJ8U7lzbfh1Amw7kr5LOkuk7wflVnrV5p4E+LkQyrzZQZwiYHRh4Fpv+XOS2MWPomYgEXMbCkCCx37QDa8ImK7rKAxDXxR3CL/SlgdkQ3E4EVFJbZgP9/vyyHLNxZiA39lQlB/ItkOxHYD3LallAIYpTGJBDJ4cyJLSWutSHiYhFbvOk9pnjSse3ydJa4bWif2R6PIz72zQBLx6Ka4LYylgPZZGAFd4rOoKJtHP3xknuwAPr+va21wPLwQQS/KA/jtngVXvxGVR6UhEVKgWZEK1JaSLNk3z8uEIap7nb114cgCKhQBwumw5F2maPoyTolVV8fWqOHA+n+lwOEySAAEzgIIgIGy5WEOvMhWVKRds1f4bxzHNQVEU70iYjWbL73tOsP3VGK/S2enHyfkQjY4J3YrYE06nE5PQRfUHEAgGNQYKRZWohSsa4tA7SBcI0A0gIcWRNfkdQn0GUFzWVYiUpc2CKBdnNKEpQL07G0jE4b8Eb2qhD3HAGcAaIfHjdUVhTNYp1204DuYY4iSeCyfqys5Vx4d1IMsyHjS2GFZNhe12u/H1ipifP8oNIK6QC6TPgC6qMbZZDpu/qR9jXFiw0V+6/dsXfXeyJdl0sfq+LXx0FjwRWYHZf0j+AEIMWOMiV2A/AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACpElEQVR4nL1WgZWqMBBc3rsGYglYApSAJdiCloAlaAlawlmCliAlSAlQQj6zycY1Al/B/+ceDzwTdmYyyfpD82G7K5k6+RsEZpH4CoH90dBu204iMZeARfE5mEPA/t4M1RVB/X8lAKspKPe39YbofPo8C58SsPvfeZZPJfBQ7d1Os+cBdf3vCNjN/lX11IJTCFBbO9l16ojwTeXOb8OvE2DbkfR11jgibdspd9Kv9SqQAD8fQpn3dhCHCFhdGDhXC/6cZW7x0/TekVjyNhSABI/9YDf0EbBN05AxJhTFHcLPtOABRVccTqR0odqsuvtjeWS53kVMIJxsKMovZNuh2A3Ac01qGYBuCpOYEIMXB4rs4qz1KTeZoXLdBFKb4u6LLx+TZGsa58RmT3TavdcbNIGgXorrwlgKWI+lEcAVHqt2BZNo3z8ZB3cBXl5VVbC56v4QQCzJE9rv9AKn3osr0osnkVKptiATqhwhXfR+v/e+HEFdrVajLrw4AMVCADicFpyLPM+fxknR6/XKV19x4Hg80na7HSQBArYDJUlCOHKxhkFlLipzLlir83e5XNI7KMtyjIT90Wz5ueUEu2+tDSq9nWGc9Ic0ahN6K+JMOBwOTEIX1R9AIOnUWCgUVaIWrmiIQ2OQXSDAbgAJKY6syfcQGjKA4rKuQuRycVkQ5eKMJjQEqPe9gUQcfkvwoWZCiBPOANYIiY/XFYUxWadcb8M4mDHESbwXTlRXN1e1D+dAURQ8KLYYVg2F7Xa78dVHLMyPcgOIK+QDGTKgi2rENkuz+Zv6GKowmkyoIhlgNv78DkXHOltWDBerHsfCTv279Rf3LSERH0QgYjoiDc2DxF7sG1Qy1AtyP1ku/bIxtCPP8TVIAF9KjxP0FY9+GfYWHiPF+AMX5mx0Gk5gnAAAAABJRU5ErkJggg==",
+    "price": 30000,
+    "reqSTR": 0,
+    "reqDEX": 80,
+    "reqINT": 0,
+    "reqLUK": 110,
+    "reqJob": 8,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incDEX": 2,
+    "incPDD": 27
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 27,
+      "min": 7,
+      "max": 47
+    }
+  }
+}

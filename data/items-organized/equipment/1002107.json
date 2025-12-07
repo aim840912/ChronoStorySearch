@@ -1,0 +1,37 @@
+{
+  "id": 1002107,
+  "description": {
+    "id": 1002107,
+    "name": "Red Thief Hood",
+    "description": "",
+    "chineseName": "盜賊紅頭巾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAVCAYAAAAnzezqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABqklEQVR4nL2VgXHCMAxF5TsWcEcII9AR6AgwAhmBjEBHaEZoRmCFMgIZAY/g2o4VFFl2kuOOf+cjtoL/syzEBt4n64bii+8AsKXgWgALK/Vwo3fj80WAYHwXAsYNTeaaxfs4cioBjKfNGeMnPmshXjIvAVhuiptzMx3XvNEtzjlIPTwmBZgDyJpLILhWwTMbfjRu/MC8OID9I5tXM1+m6TcEwmfjDMPJLysARnOeRkn8CgDSrHiIZpiK6ecAE3MKYaAsfLcXIOaEAOH0UgFx8dNqSE3pmq+DOtMFKUCyaSLtVo1J3pUAazL/hbI8gL3CgruP5hjHAjXCoIV3XACQbJh4F9ZovWAN0PcxA8fnNUza+QY3QTWwTntI+wStEw9Ffs72/hj8tx+hJNQIgManu9R482q322RtR2C8bvETzXvzbNABoCHGlZ5rP1NJwBxqT569+dcQVwigOpeaUzRvvtddwuWc9joOhUDEfBQWoXKBkJ+rdKK2HZ+rajeNdV0W7nQ4BFMP1Dljb477Rz9F+4AigYmuK+sCFQutuL/0b5h0LAlqoVRhLez5D+FxlkQKwT+qAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAYAAAAdx42aAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB80lEQVR4nL2WgXHCMAxF5TsWcEcII9AR6AgwAoxARqAjlBGaEVihjEBGwCO4dmIZRZbt5LhDd7okUvB/VoSSFbzPrHPFg+8AsKXkUgALC+3hvHf++SLAIHwXEsa5Jtea5fvgOSsBxN3mhPGI51rIl8RLAJaL4uJcTIeYF7qFaw5yHE+TBswBZMUlEIw18KyG99b5D9SNA9g/snhT+TEtvyEQvhonGHd+XgAQxXkZJeOPACCtiodox0ux/BxgIk4hDJQN7+0FiJohwLB7qYG48d1qSEVpzPfBMTMFKUCyaGLaRY1J7pUAj+T6F8rmAewVZjz7II55bFAjOG28/QyAZMFEuxCj/YI9QO/HCuyfj2Eyzle4CFoLy2wL6ZygfeKhyN/Z3h+j/vpjaAkVAVD4cJcGb94u63US2xAYb7dwRPHePAf0ANAS4UbXxs/UJGAOtSXnXvxrzCsEUJ0rzSGIt9/LHsL5lM46DoVARDwaNqFyiaE+V2lHl0s8b5rNNNd1WbjDbjeIeqDOCXtxXD/oKToHFElM7LqwL9BCoxXXl96GycSSoGaaKsRsDmDOQnPGPL+Pj5PYhHMW0JVYzfgHVITJAeiM52AkMSmOsym+OCUAFGvIkYot2XkNqliB3I9LnwemcM49C4BlqpWafwrkAE0hB/8bArErPj3H5wAAAABJRU5ErkJggg==",
+    "price": 2000,
+    "reqSTR": 0,
+    "reqDEX": 30,
+    "reqINT": 0,
+    "reqLUK": 35,
+    "reqJob": 8,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incPDD": 12
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 12,
+      "min": 4,
+      "max": 20
+    }
+  }
+}

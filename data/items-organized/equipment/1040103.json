@@ -1,0 +1,55 @@
+{
+  "id": 1040103,
+  "description": {
+    "id": 1040103,
+    "name": "Mithril Platine",
+    "description": "",
+    "chineseName": "鋰礦暴風甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADhUlEQVR4nI2WgbGkIAyGszPbAFcClsCVoCWwJbAluCU8S9AS1hKkhKUEKeEowUuiILg6d5l581YM+fiTAN6htCX7fbsYP7Pou/yHD+TQpX9P6eH5aFKA2vQQgj+NZHSdfON851Zf5z3OC/zb22GJ4AhdPp85OdIkpVvwzoGqNTg7rl5CfEGVlCu87dPvCKbnCJa1SeB7BCpVTtiDCnDxgVZ9Ama/bf5ZHIFzcvA9qstV0n9SaYzh8endQ/N47uDN5s8E3TCCkPU+P8Zy+++QzSG7J4dDHYK3lDSQqHS0jgFHI6DzqEApeL060FrvKk+AvRqgsRu0N0/4/WqTU3QkIJmuFQOORsDyuWy2HDjpAao1WVzT262CZe47iHMeg4L2582/qRmUq7CF5xTUI4yAxj9hkP22QMUl+TNZDG4KeA5M6aUHHOS2F0IllQSU+BfkAmpEfzWDHCoY6wla/4CuxoVlainNvxpA8JDGqEobMFm+T28IXEJwSaXoKhDYI0HjeqRhxYTQtkmTSC1xR4HlCdS9NSqwBUQqjT1CveJKKAEFqXLri3psILQzqpQg3BOC6sFjYAUVOLWmWg0Np5cOjtp3YEVbgHKLwAJKgwodvftuGF4UgiWC46YltRaujVLtnTt9d4cLs3qCOk8vgbGutGDp1rpSQxn72NObGXU8Lf8MfD862mHdCtRIBDaoyCvP9eS0Cs+wFsc7udZ+lGs9c6O9faX4UmnoGtB4og0Exo4li8BoClVSTTXVnLKTqWWlBXgvWwGNTtQYFusXUK3BhgI8I16oytl98z+gx/Pqyd3bHVL7L0u3TLyWvMNbZez4lnFewqDenG4/jsW5S9ap77Ta8YVX4U8SsMZ0vP+xWdMtk1Tmuc/B3lloDXb2Bo2XkLd02K+HSfBl3Y51zLdjgh67rdY/WD+HQnwCphtvu+IE1ioGYrjglXAMquPVIi4biYxgPAEh42i/0ivxggeKHYcDHZ81N03bmpTBo32llyYs+BFR4R3kt1OFgPPnByCUAarfA6slhVFxry003R7zqLKA7ukd+ZCe6bZ4rFcbA31VLhdTPff7YT61FvKbjYBx2xz36ld66cysnqh22mAMqPAQL/0oGyvYgrXAwKgwikjru1B6y7/+eKChwCtpA96K93gHL9vHRAZLn6JdN8CVFVfb8SUFvnpHY7iwq/c3LNPZNzD7/QV1cTrP5Uf3hAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAbCAYAAACAyoQSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADtklEQVR4nI2WgbGkIAyGszPbAK8ELIErQUtgS9AS3BLWErSEtQQpYSlBSjhK8JIoCK7eXWbePMWQjz8JsHfIbUmebxfjZxZ8l//wgRS69O8pvjSPKgYo6x68d6eRal1G3zDf2tXXOofzPD87MywBHKDL5zNHR5qkdAvOWlClBmvG1UuIL6iScoW3fXwOYHoPYFnWEXwPQKXyCXtQATa80KpPwOy3zT+LI3BOCr4HdalK+k8q67rm8endQ/VodvBm82eCbhhByHKfH2LZ/dknc8ju0eFQB+8MJQ0kKh2NZcDRCGgdKlAKns8OtNa7yhNgrwaozAbt6wZ+PdvoFBwJSKZLxYCjETB/z5stBU56gGJNFtf0ditgmfsOwpzHoKB9vfmZmkHZAlt4jkEdwghYuwYG2W8LVFyS35PB4HUGT4ExvfSCg9z2QqiokoAS/7xcQI3or2aQQwFjOUHrHtCVuLBELaX5pwIED3GMqrQBo6X79IbAxXsbVYquAIE94jWuR9asmBDaVHESqSXuKLA8nrq3RAUmg0ilsUeoV2wOJaAgVXb9UI4V+HZGlRKEbcCrHhwGVlCAVWuq1VBxeungKF0HRrQZKLUAzKA0qNDR2e+G4UUhWCI4bFpSa+DaKNXO2tNvd7gwoyco0/QSGOtKC5Z2rSs1VG0ee3oTo46n5Z+B70dHM6xbgRqJwDUqcspxPTmtwjGsxfFOrrUf5VrP1GhvXym+VOq7CjSeaAOBsWPJAjCYQpVUU001p+wkallpBt7LlkGDEzWGwfp5VFtjQwGeEU9UZc2++R/Q43nVcPd2h9T+y+ItE64lZ/FWGTu+ZayTMKg3p9uNY3buknXqO61mfOJV+IoC1piW9z82a7xloso09ynYWQNtjZ29QcMl5Awd9uth4l1et2Md0+0YocduK/UL62dRiIvAeONtV5zAWoVADBe8Eo5BdbxaxGUjkRGMJyBkHM1XeiVe8ECxw7Cn47PkpmnbOmbwaF/ppQkL/ogo8A5y26lCwPnzAvB5gOLXwGpJYVDcawNVt8c8qsyge3pHPqRnui0e69XGQFfky8VUz/1+mE+tgfRmI2DYNse9+pVeOjOLBtVOG4wBBR7iuR9lYwUbMAYYGBQGEXF9F0pv6a8/Hqgo8EragM/ks8Cxdtl+TCSw4PPqugGuLFX6A2v/yfAfA29SodvGUxtwYeG2JoLf5rE/lunsxPg5QiGZBFuQJhk7HANsz5Nv4fmxPR//MigNuAP47PemuFiA/8t79u0PGQtMpaku0UMAAAAASUVORK5CYII=",
+    "price": 100000,
+    "reqSTR": 240,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 70,
+    "tuc": 7,
+    "incSTR": 4,
+    "incDEX": 2,
+    "incMMP": 10,
+    "incPDD": 75
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 4,
+      "min": 0,
+      "max": 8
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 45
+    },
+    "incPDD": {
+      "base": 75,
+      "min": 40,
+      "max": 110
+    }
+  }
+}

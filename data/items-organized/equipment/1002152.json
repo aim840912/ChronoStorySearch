@@ -1,0 +1,49 @@
+{
+  "id": 1002152,
+  "description": {
+    "id": 1002152,
+    "name": "Blue Guiltian",
+    "description": "",
+    "chineseName": "藍魔道之帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAYAAAAAwr0iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACfUlEQVR4nMWWjZGqMBSFrzPbAC3klZAW0gKWACVACaEEU4IpQVpICZsWKIG9JyERXXYkT9e9M04wEM53f/WDXmfzsh5KDr0KYO70KVwMfTuXQLwCYNbnC03e0zRNxYefBQjitAj7PwC48Xw0A5a31cCsT2fyDADPJ1/u/TMAoejgeVVVJHjD0XsByLHnMMEAMCkFfzSZoX9PF6SQw/Np8lTXdfjedGUQ/wtwcKPJvc/+5xtIiWo6FOQuiKdqAGL3vY/UlBRkKUAYt1viuE7dwNHB1stTkEOexNeiyUrESwG+hTu1oBfLfQaRqgHE7xShc54qUeXRm1owrQmkxIoAIA4xIQTcDyApKlgTyG90wYz+TuaXIfQNcKkNgOydB7sjkH7pvHN3oiKmhU1sPP/IdgPAK3goRZRZ9zugALKugb2z4BFA6HtU9jiOYdwCwhgToaQMQhAvEd0LMKOY8FLd1dwBjoy11DRNmP0drwODSFXnA3gW92CA2tOSWwDBa4gj3NZZOrZtuFHXTV6NHcM1wo9IYFVKce6rDANbQdAWSAJID9DlcqG2H/IDeKlW/fItrlzn5CU8lxnipLtwDs+HPXEtWCEVKf655tRlnQQEgDBidd3Sv6PKL0GusYeI9qOmeztJk6+HqsnQqBWcd6MNaULLji5+EA10TFNZMlMdZkWIAHq3tyf6PLdL+EZCXbVGL388PDl7FZScgqOPkOiOThgWw6DyARb76zRpleZGXCGeBhgADsvA4M2rpxB2tqeV5fwxTA7lDYyvcromzkEXS4ZaFws1iTqbU3xINRBenkC2RH/aX8NE8ObmwRi5ge4sn//46UaB3Zy5B3r0zi+7ZH8SEA/z4wAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACuElEQVR4nMWWjZGbMBCF1zNpQClBVwIpQS3gEqAEKAFKsEowJZgSohKiFiiB6AmtLGN8h2KfszOM+BG8b3/tH/Q6m8N6yHnpVQBz0538Sd/Wcw7EKwDm7nyhyVqapin75WcBvDgFYfsfAG48H3WP5W01MHenM1kHAM8nm+/9MwC+6OC5EIKku2HovQBknOcw6QBgRSHd0ZHu2/d0AYccnk+TpbIs/XXV5EH8K8DBjDr2vvM/PkBKVNWgIHdBPFUDEFv3PlKTU5C5AH7cbonjnLvBRQe3Xp6CGHIWT0XZcsRzAe7CzS1oZXjuQApVAeJ7itAYS0KKOHq5BXllkBzLAoA4xKSUcN+DcFSwMsh3dMGM/mazYQjdAYbaAMjeebA7AvxLZ41ZicolLc7kxv6vbDcAvIKHhVxk0n4HFEDSGtg7C74C8H2Pyh7H0Y9bQGitF6ii8EIQzxHdCzCjmPDRrildBxjSw0BVVfnZ37i1dyCFKuML2ItnMEDtacktAO81xBHuwQx0rGv/oCyruOph9OcIPyKBVSnlci8iDCyBoC0QBuANdLlcqG77uAEf7VQbrpbV1TnZAp4XEeLUNf497Pf35LVgZaFIuZ9rl7qow0AA8CO2K2v6OKr4EeQa9xDRduxobadCx/NeVBEatYL3zTj4NKFlR7MciAY6phID6an0s8JHAL3bDif6c65D+EZCXdW6C388LJnhKli4FBztAonuaKR2YhhU1sPifpqmTvHcWFaI8wADwCEMDHfz6imEzdBSYh9hFQ7m9yaMFTFdk8tBs5QM1WYpVBY1Q0zxgWvAFweDJPYLguFQDEBcDAtMk75gbHXzgSVyPa3sJ3g4AqkdEkGZHCycrmw6vXCC1ep5H8T4uJnjj+ZAKrKeLp9NGzyrN/ZNG8dDAKZMIcTGPvEA5jPgu/1/AV7xlDxnx1p2AAAAAElFTkSuQmCC",
+    "price": 30000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 128,
+    "reqLUK": 43,
+    "reqJob": 2,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incMMP": 20,
+    "incPDD": 18,
+    "incMDD": 50
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incMMP": {
+      "base": 20,
+      "min": 0,
+      "max": 40
+    },
+    "incPDD": {
+      "base": 18,
+      "min": 0,
+      "max": 38
+    },
+    "incMDD": {
+      "base": 50,
+      "min": 30,
+      "max": 70
+    }
+  }
+}

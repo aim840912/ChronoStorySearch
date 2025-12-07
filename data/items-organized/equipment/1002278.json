@@ -1,0 +1,43 @@
+{
+  "id": 1002278,
+  "description": {
+    "id": 1002278,
+    "name": "Dark Falcon",
+    "description": "",
+    "chineseName": "黑色飛翔帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADQklEQVR4nK1XgZHiMAxUZmgglOArwZSQKyGUEEogJZASQgmXEs4l4BLOJZAS/JJtBeMYk/v/nTkMTqLdlWTB7aAM+/Nzg4+PA3x/XeDz2MPl0kLfT6sVUcEvUSJ3xH1/gndr20qYJm3Dc5tFFJ0breB8PhdXwjzPToCUgrKwWUSJvMI0W0qr1sYFzq1EHP8lIooC3tW8YieYVsithKYRbo1FhF4oCnhH7lDXtfujoDkoZRYRTK6UfitgM3nTNO691g/HTETXYxFSeqFUlhKK3U4vXddhHVtHaowPJoR4ygK/ZxFaz04A3R+dhJX7V+R2HEdHSORKKReIP+vrCRmRDNzi3xDpXC8iSIAQ9SJ4q3NrbwDDcMLA7eKKiMkxEY+3cCdVIIp9GmaYTL0KSL2AJWH3SxZ24QPwBfsV4mLgWcwvmwxC6edATgY76XacAHJvjHcf8uONWQtVVTkBu7DDG94BZhVkS8VccZq6gdNBAVbFofanDEQiKgaHIR4yQwNqGAa78xf91fslfmDtOt2b1cM14YrEubRTHzIxkroGpjXbcOOZ6qegw+Jyw0gpXd3x1bs23jWlHVsBepUnptSnxIydv8EsyjvwQYlA4QNS1yBw/yoewpxrEznGVRm6YV2mHPE0TQ9yhsbuvuppEeAHhUYishfOMDqUjb9+9TFQpFiyw6Dj+YqYPgM3HCuhhw2mrp+uMGK8VhxhaC5uj0SMUiMRkg6BQXYuuEh6IyYmxMRcb3ZeUedx+l1TUUdjzSnFjekDkS8LdTsPFUgGiBLSKYuJuaRMfDgcnOtV2uNpNAtUGDLC244YYHUKtPT7X/MAR3gGk8aNxljIxffNDataiEWIhvNDjHkxbBD3+RPwSwyO07MRIg5neuWaySlLiEOwEa4sqU0+J6Cu34fK0PhNZ/m72Y7DbRmx/wT+VsuN5NQ1k8ebltJE3Ro3TOmHRApyv9/v4X6/Z+ucI2e4zufzGlJWIbFlZ69E0DN0jdMcp5vP9TtyvskycbQHW0QwQpqLyM72QuCsiNR1jJLQTb/hSiJiYm64GIH4739A5oCklmd/QpQVupkcXVQheFr7HOmv/0crkhMwuBMg/MRbZv//IGX8AdC3ipQfBXGbAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADfElEQVR4nKVWgZHiMAxUZmgglOArwZQQSoASQgmkBFIClEBKwCXgEs4l4BLykmwF45jAze8M52An2l1J0bGCZYy/v3f4+dnA7XqC7b6D02kHXTfMVkQFf8QSORN33QE+rbudhmGwY3zuaxGLzp01cDweF1eC954FaK0oC1+LWCKvMM0jpdVax4FLKxGnn0zEooBPNa/ECaYVSiuhaRSvqYjYC4sCPpEz6rrmDwUtwRg3iRByY+xHAV+TN03D19Y+HQsRnacitA5CqSxLWOx2+tO2LdZxx6TOhWBKqZcsyLWIsNazALo/eRNm7t+Rj+fzmQmJ3BjDgeS7vRyQEcmAl3BBpL6eRJAApepJ8LfOx/EO0PcHDLybXBExOSbi8z3eSRVIYh96D4OrZwGpF7Ak4n7Kwip+ATkYrzEuBvbKv20yiKX3kZwMtpp3WAC5dy64j/kJxsYRqqpiAau4IxvBAWYV9I6KOeN0dQOHjQGsCqMObxmoTFQKCUM8ZIYGVN/34yochtPHKX1g7jrf8+bpmnBB4lLaqQ+FGEm5gWktNtz5SPUz0GJxpWG01lx3/Btcu+Ca0o6tAJ0pE1Pqc2LBKtzgJuUthKBEYPABbWtQuH9RT2Hs2iWOcTWObpiXqUQ8DMOTXGCxuy92mASEQWGRiOzFdxgd6iacX0IMFKmm7Ajo9XxHTN9BGk6U0MMOU9cNFzhjvJ3aQ9+ceI9EnLVFIiTtI4NuObjKeiMlJqTEUm9xXlHnSfq5qaijseaU4sZ1kSiUhbpdhgpkA8QozcpSYimpEG82G3Y9S3s6jbxChTEjss3EALO3wOqwf/U97OEVQpo2mmAiV7c7D6taqUmIheNTjHszbBAPvwX8Jwb74dUIEcd3euZayClLiE20EU+m1GbfM1DXr2NlaPzms/zTbMfhNo3Y/4L8VyuN5Ny1kKebI6WJujVtmKUfEjnI/Xq9hsfjUaxziVzAnS/va0xZhcSjOHsngp6hM0lzmm55rz+Ry02jECd78I0IQUzzIoqzfSEwiajx/JGKyF2nWBL66TdcDa99LtfbKPKWEkvDFYxQGmT4T0pK5GkEnQmYzpD0JLM/I8rRxTh06OLHl8iZCF1sMfiNnMVUyjSvcb/NSC+pUfgD3jrH4Hskuqow8XjUyY/IxFEKv3Cdf4rkkhoR8APl2fbyw+wN6ZIgxj+oMqF3McKFMQAAAABJRU5ErkJggg==",
+    "price": 100000,
+    "reqSTR": 0,
+    "reqDEX": 250,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 80,
+    "tuc": 7,
+    "incDEX": 5,
+    "incPDD": 51
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 5,
+      "min": 0,
+      "max": 13
+    },
+    "incPDD": {
+      "base": 51,
+      "min": 11,
+      "max": 91
+    }
+  }
+}

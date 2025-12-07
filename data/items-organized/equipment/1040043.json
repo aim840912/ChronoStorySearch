@@ -1,0 +1,43 @@
+{
+  "id": 1040043,
+  "description": {
+    "id": 1040043,
+    "name": "Red Pao",
+    "description": "",
+    "chineseName": "紅唐裝"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 20,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAbCAYAAACAyoQSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACZ0lEQVR4nJWWjZGjMAyF5ZlrgCuBlEBKSErYlJCUwJWwlEBK2C0hKSEuAZcQl+BDRnKEsAnxjAfwjz492bL5A9tLWOkzH9iBLdAIa+jjIDr8WO1UwyfgTUobAfWi3ZITFj4ra9CosK8q6PyEuovOioCexly81+EvKs9BE8wR7Gusv/SsqyoN5H589tTObd1rDyzgGhp6YZQB9wKwJsdqNQfbWvruMuu9UFoLhVFlP9Zx0bpu3qeBEiwVtxmwhIbhcADn3Gzy8eThMVTQjjvp9/IKJ4M0rOR8USkCcaAd63c7qcNy3QOch8nnVVBdRxsaqNUydKmyGdW1Po5GI9ddNzMuHeVytxYOTbOIVlEpD0QPcePIsNp/FEoB00CcFysqRcV2nr1SLUJDKybGJw3isDo/hZUNauDMEbRBfTLMMsej0u8QYG9MSnaeECed7sU1zJXrCDmLb4adb09o6gr2OxNSePshwGVnZscce80bhBUuwqx2KacSOoB2rZv3J2hTQxpwOf5dKNBgXRCEpj2pezyfUbF1EBVKMELNWMJDAHsOLW0OkGupTiCtsqJQTrCp4nsnhLBSg7HWyoDydgamtjgms9Z4GyHgZ5jM7YxJztB+NvJw4GMqwTXEKXDpxMHgn3YLWGK8vU81OJcOizkEzgiCTdBkSKyxPOT1BYBfIujZO7UIdSJV5Jka+wpgLFd4/WWUyialOkXWQgsCWvp3yl7iubuxdCqtwUtlValbSZOcY3gPocp3IdZQgz9YN5n8KrQ5ZbLNzp+bN5I5Ohdz9SbO2Nw6ym/R8/b/txTeOJHhH5RNP9z/AaoXlJjT9i9tAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACkUlEQVR4nJWWi5GjMAyG5ZlrgCsBSiAlJCVsSgglsCWEEkgJtyUkJcQl4BLiEnyWkYksbJZoRkP8/PTLr/yB/eY22tQH88AeaIC1VDiyButdz+4+Ae9S2jKoZfWagtDwmW1Bg8KxqmCwM+rBGisCWurTWSvTX1Segy4wQ7Av7z/0ratq6Rjb8TtSfawb3ntgBZdQN7JJI+BRANYUWC3GYF1P5SGz3iulNVMYVI7e/aINQ9omgRzMFfcZMIe66XgEY0wy+HS28Jwq6P1O+une6YwgCSsFX1SKQOyovV/7WR3a7QBwmeaYN0F1HeaQQKk2QtcqW6+ut6E3TnJrhmRyHmi0h9ZwbNtVtopKY0eMEDcOT6v+plQymATiuOCoFBXr9PRytQh1PRsYvtQpptXYOa1xQglMAsE5qI2nmZ/xoPTqHByUWg57HBAGnR/FNczZzUMurBxhl/sL2rqCQ6Pckt5xctA1KrnmYtRxg0SFqzSLXRqPEgaA82qTti/QtoalQ3f6u1IgwdIQhFNbUvd8vYJibSAo5GCEKm/uyYBjTC1tDuBrKW4gqbKiVM6w2fH3wIREpQpzLZUBndsETHWhT2at8TVCwL9pnq5RagmG9rPil0O8pha4hBgBLt04mPxzs4ItjF/fUwnOHYfVGAJnBMEu6DIRW2N+ycsHAEss6dk3tQg17KjwOzW0FcBoN3j/yyjZLqXyiGylFhi09N8p+4jn3sbSrbQFL9mmUrNxTHKB4TuEKn9LsYQq/IN154dfpDanjNfp9HsgvmW+giKtORkzYeHO7tjcOvIya/lmXeIbgm7ILYdW5Eg649fDr/CZDZCcGMgueE4pH9CJupLZjd/SE2hMAYfkgBXkFdiNctL2HwJKrLG9qGL2AAAAAElFTkSuQmCC",
+    "price": 4500,
+    "reqSTR": 0,
+    "reqDEX": 40,
+    "reqINT": 0,
+    "reqLUK": 50,
+    "reqJob": 8,
+    "reqLevelEquip": 20,
+    "tuc": 7,
+    "incSTR": 1,
+    "incPDD": 18
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 3
+    },
+    "incPDD": {
+      "base": 18,
+      "min": 8,
+      "max": 28
+    }
+  }
+}

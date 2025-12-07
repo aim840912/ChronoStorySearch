@@ -1,0 +1,43 @@
+{
+  "id": 1002528,
+  "description": {
+    "id": 1002528,
+    "name": "Green Grace Helmet",
+    "description": "",
+    "chineseName": "綠色格萊西頭盔"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC2UlEQVR4nKWXjXG0IBCGYeZrYC2BFmjBKyGWcC3clWBKiCV4JWgJnyWEEqQEswuC8qdesjMXIy48u8sr4D92zZaLfvyiH7sCXtDwMto7/SxTq8kFeBrAGRiZQwgdJ6bkd+CklLLO/c1SG1OhQ/h5xgSD1meKXLy3IK114Ppi/RpAcwo/A3Mq3+IKSNR6SIDjOIa96v4UflVcWWuapvwQ4cOjYbfPPPwIbPMU+Hvh3NXSJKyl3oAy0wuL0XWd+fV9OfMSeIGHsOO8VPDAQPfAfdUBfzX+mbRpdwEOD7bP3FxzYAuFday7YPyp2NJO1NlWQEc9Vl8mYbsSXFpf6reDZzPeoAKCB0bNR7DYHBxssARfevOqJWAPBSl8IymYsr51WPJ7AVKyFT58IPjloTwGs1kqVmUVg8F8CB+IbwNIXi2fRW3bx0KsDmyzRWHAtHnmBiVYfB/7La3VhbMBtpIzFYlrbr9Y9XoyiCNUOlVuFE8pcwLedD7l3y0gGXhgqEQA1IXewWkGx1XpE1sIbMu8rsVGTFHavu2itjhO7FIr8yYEGe/+3TImLyXMa5SDJ3aQNQkrgUZmwSh7F6VTtZ+zo5JGMBe/eW3E2rk+mWPATHmjcQNujcicnWU/P8DQeLxf1McVS8TF+Y3R5r+H28gi4H0FVvmBYV35tMqXLKtqA5+x5PAfp2AbeRbK7FLGp5rYoRF4Dx11Ii6um2mBVgT97MDcBmAOAHLN7gRYMlpPCAEbeIuQsUStW2YXgC6jI0HaYfifTiAJdA0aehmueF0aSQCmcutPxd42B33DHDg3z/a0cLQ8xsCc3z5b5ceNVC0yYefm7SBD+JLpxuL67NrO5xii6xvmV78N6g9818R1Ra34bPmWrOpstgbaJWBv4QmkTg7AnLYwfygpZe0GxS+OWdjPGLNJxIEXwLz40SUv1BnPVrTiJVYQZ1zq3OcGx5Jd/UxNTbNkfsl+APyEQ/+gOGazAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAhCAYAAADOHBvaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/ElEQVR4nKWXj5WjIBDG4b1tYCyBK4ErQUtYS8iVkJTglhBLMCVoCWcJSwlSgjeAIP9EszfvGRUHfjPDJ5IPcs3Wi370oh+5Al7R8DSZO/k4plazDfA0gDMwMscQOs1E8O/ASQhhnIfGUFtdoSL8PGMFg85lily8NyApZeD6IsMWQHsKPwNTVb7VFlBR6zEBTtMU9qqHU/hVcWWtbdvjhwgf7y1pvvLwEtjkyfB44dzVXCcsudyBPNMLi9H3vT6G4TjzI/AKd2bGeYnggYb6QL/qgEeNP7PU7TbA8U78zPU5BzZQ2Ma6MUIfgqzdrDqbCsiox+ZLOOxnBefGV/Xz4NmMdyiD4IFWcwkWm4WDCVbB10G/agnYQYEz16gUrLJueiz57QByZBt8/ETwy0FpDCYLF6TKKgaD+WQuENcGkLxaLovatE8HsVqwyRaFAfPumRtUweL72G/tjC6sjbCXnIhIXEv3JNXrQSCOUMhUuVE8R5krYCPzKf9sAcnAA0MlAqAupAdXMzhtSp/JqsCmzNtarMUUpe3aLmqL4sSutdBvQpCxd7lnrLwE069RDp5YIWslrAQamQGj7G2UVtVuzkoljWA2fv3asK1zfTLHgJnSVuIHuNMis3aW/XIHTaPx96IuVywRF6UNUR9/H24ii4C3DVjlB4Zt5ZMiX7KsqjV8wZLDX5yCfeSFCf2V0j7VTIqmwD50kom4qGznFToW9DMDUxOA3gDwLbsT4JGp9UQhYAfvERKSqHXP7ALQZlQSpBmG/tcOJIFuQcPAwxWvTyMJwKrc8kuQt81C3zALzs2z2S2UlscYmPPzsxVu3EjVLBN2bt4KGcKTpx8W28drO59jiM5vmFv9dqjb8JXAkFyV1IrP1m9Oqt5kq6F9AnZX4Q6kDvagasIblP/oNiVHWduA8B/HwszfGP2RSFMwWwHs4YOp96er2ZyM2viFOuPeSq14iR2IMy51RYL1RXf5gyV7kp+adOBf/t1Hxk2QsKjq+nfkd/SSycJ98OwfRwxQ0LTS4ckAAAAASUVORK5CYII=",
+    "price": 210000,
+    "reqSTR": 240,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 90,
+    "tuc": 7,
+    "incDEX": 1,
+    "incPDD": 90
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 10
+    },
+    "incPDD": {
+      "base": 90,
+      "min": 45,
+      "max": 135
+    }
+  }
+}

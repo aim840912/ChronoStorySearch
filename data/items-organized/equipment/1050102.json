@@ -1,0 +1,61 @@
+{
+  "id": 1050102,
+  "description": {
+    "id": 1050102,
+    "name": "Green Varuna",
+    "description": "",
+    "chineseName": "綠色羅赤裝"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 98,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACy0lEQVR4nJVWi5GjMAxVZq4BrgS3wJbAlgAlQAlsCVBCKAFKWJewboESziVwfv7IJgHDaoZJiG09PelJzh+6Z9vJ74+b5+kO0PZvJhpXotU/z9K8a6Jl4gAuAa+Atrp1IENNpJUBUg4EgGVFJAQDZsFyQBYEDmFfi/tcPQgAYMoAVwZQyjxYlhGcBae9eTr5vnbX7oqBDc7b9ncgOaDtOTtnRZF3gHWk8yp9p4yEKGhZNJWlS9uYYYA9qFXOToFWhEmuFoVxtErHcBiK3Zrb65hBPGcKTIG4Kb9/orMjA1sjdq4T3goRJa/ke38FIK6JlPRuwoRK0ynwbJY/JycSBIEg4Wv8iuwAtIGBs3MWZ9YXUfaOoWbG/RDBLKOqrEmqhQ+HiO6YQP0mp7re1xMgCHkRcZ8FarqJ5t7xOUzQepw2OG6m+P3Tf9c+MTPAPSsLBPV8dGaDYfFjFsANcoVsLTP/qdfIuC3jWBIeRCQMsL9ZnL/RM3oAEdJUv+x2GNRm60QRlMHM87exXx9BdQ/oP/QMJc2Hqd2Me+dgM6no2J5TjoWSb+OJVcc/mA1boK1zAjRyFxp502TisKobkErFWck2LDsJkrhSXlqnYKmkz4C4n9C0aa4tvnA57xpNz3mxLTEtE6+FFjwLbseoKjQfhlnJm3Q8K3+zimPBhLtq8Ff8JZBNm5oYJIggRIn/Ck3Ya3oLE6AtNacPNbIqPEgfzzqbtrQxfa0Cq9CMmNIufYXLQKpQL4ij7DEjHJLazaisJVuwH4zwimE/Zo4ykIvMRPjS4frgQsNVEFgFRmsSgC/zoeoeXUNbVbvhaGvi09jJYyWhFgDL2HGNMIICiJ1TY1Sdjdh8di/sUPSwPw2mrpjVG6OdYYzAZ1BYcKL8vcN4bTyTXut4Xq/13axLorCLyV/e3e/BkO70vW7p1Haz7mD96j/1bj0NTL2s/wcslmq5gN2srwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8klEQVR4nJVWi7GjMAxUZq4BrgSnBF4JpAQoAUogJUAJoQQo4SjhuYSjhHMJnNcf2UmMw9MMAzZGq5VWNr/onO0H85eT39MZoP3fTDRuRJu7HqUeK6Jl4gA+An4C2uvWggw1kZIaSFoQAJYVkRAMmAXLARkQOITdF3vfHAgAYFIDVxpwXfNgWUZw5p32+urW93dn7awY2OC8bX8GkgPaH7N1VhR5B3iPdH5K3yEjIQpaFkVladM2ZhhgDWqVs0OgDWGSrUWhHW2rZTgMxdM7u9Yyg3iOFBgDcVP++Q7OUga2WuxcJ4wKESQv1/f+8kBck3WldxM6VJoOgWf9+jZZkSAIBAlf4z2wA9AOBtaOWRxZXwTZW4aKGfdDADOMqrKmVS78sY/ojAnUb7Kq6109AYKQFxHWGaCmm2juLZ9kgrZ02uC4mcLzzT0rl5gZ4I6VAYJ6vjq9QLP41i/ADXKFbA0zd1dbYNyWYVsSDkREDLC+Way/0TG6ABHSlD/sdhjUZupEAZTB9PW7MY8Xr7oL9O97hqLmw67djM/OwWaSwbH5TloWcn3bnlh1PKEX7J62yglQy10o5E2RjsOobkAqJWcl27DsxEvik/LiOnmLJX0ExP2Epo1zbfCFzXnXKHrMi2mJaZn4nW/Bo+CeGFWF4o9hRvI6HY/KnawiLRh/Vg3uiP8IZNImJwbxIvBR4l+h8Wt1b2EHaEvF6UONjAoT6eO9zqQtbkxXK8/KNyN2aZu+wmYgVqgTRCp7zAgfrcruUVmLlmA9GGGIzX7MfMpANjId4UuHq8SBhqPAs/KMtigAV+ak6i5dQ3tV283R1MSlsVvTSkItAJaxdI2wBXkQs0+NQXUmYn3vXtih6H59HExdMSsvfJU8yrGNwKdXmHci3bnDeG34Jj7Wcblj/a+e+sI0gJDdKyajFrpjXo/7lxiezgud7jYe1y0dmmcEsJu7xz9Yd8pbFz0rHdjsB471laLUGXW+AKT+5o60H89dX8b8/B/buneKX3xqkQAAAABJRU5ErkJggg==",
+    "price": 240000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 295,
+    "reqLUK": 100,
+    "reqJob": 2,
+    "reqLevelEquip": 98,
+    "tuc": 10,
+    "incINT": 4,
+    "incLUK": 6,
+    "incMMP": 45,
+    "incPDD": 84,
+    "incMDD": 42
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 4,
+      "min": 0,
+      "max": 14
+    },
+    "incLUK": {
+      "base": 6,
+      "min": 0,
+      "max": 16
+    },
+    "incMMP": {
+      "base": 45,
+      "min": 0,
+      "max": 143
+    },
+    "incPDD": {
+      "base": 84,
+      "min": 0,
+      "max": 182
+    },
+    "incMDD": {
+      "base": 42,
+      "min": 0,
+      "max": 140
+    }
+  }
+}

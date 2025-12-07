@@ -1,0 +1,56 @@
+{
+  "id": 1050107,
+  "description": {
+    "id": 1050107,
+    "name": "Blue Arzuna",
+    "description": "",
+    "chineseName": "藍色卡那裝"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC70lEQVR4nJWXj5WzIAzAw3vfAtwIOIIdwRuhHaGOcB2hHaEdoY5wjlBGkBGOEfxIIIgtoua91gqaHwn5Q//BPhlX5sVWRXvAY31+zQas1bN707XjVvgWMFmpjnfQjwMN1HUNSimQEkBr4z6a5kGdHf3BXikuoASOQClrgjIQhaHWwXDIGuvfkg1I1YDVl9K2iCXwSBYEYZeiZTOp7w7Qh2cM0v1vfYFxXOYKIcYceGQrEchX2l/dRouN/AHjoFJJd9UEHf9+oxJj/CL6vo9jbduWLUYYvewU1k09m2OFVukIHYf7hw5eYNM0dK2qioA8v7jH5N7gug8JLram32VlquIdPMr66sEcLACT29OFRSjqewJ0bhuOf0UrS2Cv1EFQMUZn1lryBgeaT13TOUvtI7H0AiVZTie0UB2LL6NrlarAnDDtJDR1E6xE35DHFnM5b3Hi5iWR9Y+DHHzaXA083L62CJVusbYrQrPgmB4bBOFCfEGwzkM3SgqORUNKBTmbqTQqvyhfMCxVKoB1D5XASf5+kzW5OYK6rfCLC+lm+Qs/ErYIg2Pnee84PDY8XT7efdpU3XWCx1yPAZU2i33BRWrcXrOVPtimtJk9x5bbfe7+AHvIpIQKh5IeGtLG3iyN5aPfbtpyBMegyrl5eJ6hOj3g6+ArGtwgLATg9TzC4ZS6IHH3BnCEogVW34DLJgpCEY7F4vvS028UvJ9BsUFHd9vVfUawCEeWmaRRHOEdlkHvAXomuHseZNuELU5XNVsEW5gb+7A6lZVgy0Y17h3200Oro3XpAnhsSe7XI3WoquoWn8mBhSv0ZLU/voSiEnotXtNF8DgK9+GlHrwGji/g2WheiSz32CDzuff3S7J6vB2GF1SHdhqwfaLYjr5We/e2LupDZ1qVVXD1ffPH1bQp2H5KE+nPVuezdz/1f9utHuz3/oXxoMSrMoBF1cLwi42lhy2yCmbFazUZ5zEThte1GM1bwWLhH4HIzQtxeZ9flP8ZKo+jpcSdbwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADKElEQVR4nJWWgZWDIAyG43u3AB0BR9AR7AjtCHWE6wjtCO0IdYRzhDqCjFBG8EggFCyizXtWC8qXP5DAD3xn00p/sXWgb8BTdXpGDVoP0X/VtdNW+BYwqZSHGwz3mhqqqgIpJQgBMAzKXAP1gzwZ+p2jknUgB/ZAISqCMhCNodrAsEkrbb8SDQjZgB7OuWkplsATKXDGIUVlkVU3A+jdOwrp9nk4wzQtc4uimFLgiVUikO80v0PrFSvxC8pAhRTmPhB0ev35QZSyTvR979vats0rRhh9bAasmirq4wG1HDx0Gm8fY7CDTdPQvSxLAnL/4hxTeF3oPsyFWKv+K5XhEHPwJKqLBfNiAXiHPXTMQ3G8B0BnpuHwyqrMge2gBoID4+pMqqVo8EKzqas6o1TfA6VnyNlyOqFCech+jKGVsgR1xLQT0FSNU4mxoYgt5nJacRDmJRPVr4HUNm0uCu5mXluECuOs7rLQJNinxwZDeFHswKmz0I0Wgn3REEJCSjOVRmmdsgVDU6UCWI9QDhzk757UpPoIaqbCOufSTfMPXgK2GIP9zjPfcbhtfJh8vNm0KbvLG+5z3S+ocLP4bnHRMGauWaVdbO+0id5j5fq7cH+ALeQ9CBUOKSzUpY2+ampLr369acoR7BdVKszj4wTl8Q672lY0uIJzBOD5OEB9DEMQhHsD2ENRgR6uwGUTDaEIx2KxP/f0jIb/Iyhu0D7cenWeEVy4I0tk4Sr28A7LoI0AvePCHS+ybcaKQ68iJ1hhqu1DdWgriy25qnHucD+t28GrCx3gtiW7XQ60Q5Vlt/hOClyYQk+q7fHFFRW31+I9dILb0XgfXtqD18D+AzwbxZVI8x7rLO6bf5+z1ePtOD6hrNt3gyZVO/fnZWu1DW9rVr3bmRY9WgP7D8v91R5Xw01B93jU2Ns37dnqdLLhp/1fd9wf5BdElWkOFrMr4ZLkz0mqcOCibGH8w43Fn7c4Hxmo3KXnYIbJ4O4HTtTkyDHsx0wYnxdezdkyllLMhh+15nD+eXYF4APV2fT7MlcU/px1nKnNhprDEcLxuU44Fyrh/rk6vfBM9g/E0ahByULgZAAAAABJRU5ErkJggg==",
+    "price": 240000,
+    "reqSTR": 0,
+    "reqDEX": 310,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqPOP": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 100,
+    "tuc": 10,
+    "incSTR": 4,
+    "incDEX": 6,
+    "incPDD": 105,
+    "incEVA": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 4,
+      "min": 0,
+      "max": 14
+    },
+    "incDEX": {
+      "base": 6,
+      "min": 0,
+      "max": 16
+    },
+    "incEVA": {
+      "base": 2,
+      "min": 0,
+      "max": 22
+    },
+    "incPDD": {
+      "base": 105,
+      "min": 5,
+      "max": 205
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": 1092000,
+  "description": {
+    "id": 1092000,
+    "name": "Steel Shield",
+    "description": "",
+    "chineseName": "鋼盾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAdCAYAAABFRCf7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA40lEQVR4nO2W0Q2DIBBAj6STuEJXYAVWYAUcoa7QFViBFVzBFRiBcsDRYoKCsX+8xBwh5xOIBzwg4uA+GEqdC0ruH5H6dYqm+ua6ltFa3/bp2oCjkYLWEqZpSgkUJWzbFtpKzbAsr9DGPouWIF1TrgX+jH1ZSskk7oE+QGQpCqX8jqwXpZSf/lxKUXgVznlehkJqjLk0dQSFcU130jsZ0nPwx6dIBdAkFeINLWVKH6iVaSE9KlMSITjSrjKtgaLWqTdLexnSIf2ndJxRl6TVM6pl6/vdrc62PsYY3qUMHF1zOmAfE/2ZePVDstEAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABHElEQVR4nO2W7RGDIAyG450LuIIdoR2BjuAKrIAj1BW6giOUFVyBFRjBGkys34ra/qnvnUdAzEPiEQihqxKOU9DutEFl6TCiehIayqnVk96KottaW9nV9Fy7RTewfkSQ5xLiOKaPuJVgjHG2Uilk2cPZOGbRswMVNNeCuNrBggYgdsAwHzF0TAMQQqT8ROArpVSVunQZhJCtEkI0KVwEaa03pQ2FkPofrQB9SyfoNyDcrNzypt0MSpInrClBDJ0qQYuguRLEzlEY0e4SNCV0viVt3qA9OkEn6N9A552BNXJnwLRgmJZBEb85+M6AFqbGhARpQGuOiXYV9z0mEHQPAnjVTqevwB66AaUNKHVoGIJdWuC+Iprbl53pN/Yb+mmmjw3a93wAAAAASUVORK5CYII=",
+    "price": 3000,
+    "reqSTR": 40,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incPDD": 15
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shield"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 15,
+      "min": 7,
+      "max": 23
+    }
+  }
+}

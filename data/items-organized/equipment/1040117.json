@@ -1,0 +1,55 @@
+{
+  "id": 1040117,
+  "description": {
+    "id": 1040117,
+    "name": "Purple Osfa Suit",
+    "description": "",
+    "chineseName": "紫扣帶護甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAXCAYAAADz/ZRUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADFElEQVR4nKVWi3WjMBBc3ksDpARdCVwJuASnBCjBlGBKgBJMCagFSrBKiErQzQgkCxknl7v1w+jHzuwX3uRY3MFa8Z/7+Rk5Anf3+13KshRjjJhlEY1rHMeosK5rv5cK5nF/nmepqsqPFzxrrfXnu65zKYEc3AMrpfwk3Gv+NQ0JROAcnOtaa7ndbh6Y5CkckwBn5/NZpmmKBJ4sx6ZXROBg+XIAlgOH/UAsECcwdRhYTw+k8gTOB2lBYM45FXAtzHfkkiuA5ULQbN1bn4K7C1zbw7UN7jkZSrAmtzL3HC+6OAWnUA/XFQwDjttZXm8PkEAueR7kwMETKYlcAnAFzyGB9m4PGapwD3EKSuYGcbwkFWRPPAkWq1c0+I4YTllqpB4IwCGkKXjx/v7uhmHYAV/KRmpVAXgNxfRRwH1nZK/aHmvkOqMKGrqXlXHxq4s1/vI6EMYASgOB4/HyhCvatt01CLWxXC39QhKLVakiAYoP4z6Ux6UmWacyPlk2zeUMNxawgEl1lgogfj8BDud55/5il1xnlFftNQqqEwq2+pwKYQrQ7allL89/I9+BF6OdnM/kEQnX1LAc1nuU05psGz6rcYKRk33K8kOrj8DzF4J/kOCtVqI7/ZWuV3KoMwd3czX4gbFrzHo7urS+Q/NJ6/ngBbObD+oSE5B6W9M/9XbnPvGPshp/dWsfFhuVHde4PNX4gvKbwU/D/f3yDNzcr9LYHjX9aK/O3US6X6jXz003foh1fPiva3w5Sz1c5VQUh8BiC4/jbqMUH7K2V90POGj8pmxNYic/qPFVBzwBryDv/fgCIgGYfWPsiNE/Yt5ce9GnQXrTPnT+S40nc/QzT6A3vcjvi1yH3gObrRTfglu4mAIH9/+0xmUpEXcrp3FBSfIzBO96hpH50e29+hYYa7t4pquS1V2M+09rvN7Gnq9oaUp4CZr5WiWBuqxiMhO8YElVOKJwiM1/fLREx2xvNSzwib3Gfi2nkHSpGPnIegwNIAHqVfaRzJK8WAp8LLllNTsAxzs+Al59jX4lsZmwS8bVRP8f10UlnkPrHAYAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADV0lEQVR4nKVWC5WrMBAdzlkDVEJWAk8CldBKAAkgoUgACUUCsRAJjYRGQt6dhNCQpt3Xt7OHJeQz9843/aK82Mxc8cv1dA/lwO3tdqOyLElrTVopknimadoU1nXt1mLB97a+LAtVVeXGCmeNMW5/3/c2JpCCO2AhhPsI75r/NQ0T2IBTcJ6XUtL1enXATJ6Fx0yAv06nE83zvBF4shyLThEDB8tVBiwFDuuBWCDOwKxDw3r2QCxP4HyQLQjM+ZsV8Fz43pGLngCWCoMm8876GNx2cO0A1zZ4p2RYgjWplann+GEXx+AsrIfnBQwDjt1ZXq8HmEAqaR6kwMETMYlUAnAFzyGB9m4PGSrwDnEKSpYGceyiCjJH3gkW3isSfCcM5yQ1Yg8E4BDSGLw4HA52HMcdcFc2VIsKwD4U87mA+07IXrEea+iyoAoadi9XRudmldHucToQxgDKBgLH4aUJV7Rtu2sQYmXpLX0jkcWiFBsBFhfGfSjzpUZJp9IuWVbN5QI3FrCAk+pEFUDcegQc9vOb15VRqc5NXrXXTVCdULDW51wQpwC7Pbbs5f4f5CfwYjKzdZk8IeGaGpbDeody9Mm24nM1zjByNk9ZnrU6B55eCO4gg7dSkOzlO12vJKszBbdLNbqBNj5mg5lsXN+h+cT1nLlgdt+j6LYEZL2tHp56u7V3/EdZTd+978NkNmX5GqenGlcovwX8JNw/qGfg5nahxgyo6Ud7tfZK1H+jXu+rbvwh1tvhf65xdaJ6vNCxKLLAZAqHY68TFWfy7VUOIzZqt0hrk9jJBzXudcAT8Ary3o07EAnA3DemnjGGR8yby0DyONKg24fO/6nx6Bv9zBEY9ED0p6PLODhgvZbiV3ALT8bAwf2f1jipEnE3dJwUSpJ/huCu5zByfvR7r34FxtIox9Qr8e7iuH9a4/U6dnxJUlPCS9DM1yoTqMtqS2YGL7ikKmwR2MTNf3q0RMvZ3kpY4BLbx96XU0i6WDSdkx7DBjAB1ivMI5kpulgK/FiyypsdgFkO3jJ5p89ly1KALdtspH93pUbjMnnO65uidzreq6c1hl76dT5kMJ8zud4eAEX0joFygD9J9qZ5dbHEAOnBd1eWeTNOnyx47JocmXguR+Qd2d3aX2d9O47Ox1qeAAAAAElFTkSuQmCC",
+    "price": 180000,
+    "reqSTR": 0,
+    "reqDEX": 130,
+    "reqINT": 0,
+    "reqLUK": 240,
+    "reqJob": 8,
+    "reqLevelEquip": 90,
+    "tuc": 7,
+    "incSTR": 2,
+    "incLUK": 5,
+    "incMMP": 20,
+    "incPDD": 70
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incLUK": {
+      "base": 5,
+      "min": 0,
+      "max": 10
+    },
+    "incMMP": {
+      "base": 20,
+      "min": 0,
+      "max": 65
+    },
+    "incPDD": {
+      "base": 70,
+      "min": 25,
+      "max": 115
+    }
+  }
+}
