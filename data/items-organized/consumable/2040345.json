@@ -1,1 +1,19 @@
-{}
+{
+  "id": 2040345,
+  "description": {
+    "id": 2040345,
+    "name": "Scroll for Accessory for DEX 60%",
+    "description": "Improves DEX on accessories. Success rate: 60%, DEX +2",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "price": 1,
+    "incDEX": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Armor Scroll",
+    "subCategory": "Accessory"
+  },
+  "fetchedFrom": "chronostory-api"
+}

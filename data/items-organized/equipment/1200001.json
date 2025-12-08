@@ -1,1 +1,36 @@
-{}
+{
+  "id": 1200001,
+  "description": {
+    "id": 1200001,
+    "name": "Bronze Arrow for Bow",
+    "description": "",
+    "chineseName": "青銅弓箭"
+  },
+  "metaInfo": {
+    "reqLevel": 10,
+    "reqLevelEquip": 10,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "price": 10000,
+    "incPAD": 3
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Projectile"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 3,
+      "min": 3,
+      "max": 4
+    }
+  },
+  "fetchedFrom": "chronostory-api",
+  "externalIds": {
+    "mapleSaga": 2060001
+  }
+}

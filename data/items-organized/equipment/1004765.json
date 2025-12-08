@@ -1,1 +1,40 @@
-{}
+{
+  "id": 1004765,
+  "description": {
+    "id": 1004765,
+    "name": "Purple Bamboo Hat",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "reqLevel": 25,
+    "reqLevelEquip": 25,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 30,
+    "reqLUK": 0,
+    "reqJob": -1,
+    "price": 6000,
+    "tuc": 7,
+    "incINT": 3,
+    "incPDD": 15
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 3,
+      "min": 1,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 15,
+      "min": 3,
+      "max": 28
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

@@ -1,1 +1,18 @@
-{}
+{
+  "id": 4000671,
+  "description": {
+    "id": 4000671,
+    "name": "Cold Stone Block",
+    "description": "A stone that fell off a Cold Mixed Golem. Chilly!",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "price": 100
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop"
+  },
+  "fetchedFrom": "chronostory-api"
+}

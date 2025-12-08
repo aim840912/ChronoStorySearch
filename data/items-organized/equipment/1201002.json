@@ -1,1 +1,36 @@
-{}
+{
+  "id": 1201002,
+  "description": {
+    "id": 1201002,
+    "name": "Steel Bolt for Crossbow",
+    "description": "",
+    "chineseName": "鋼鐵弩箭"
+  },
+  "metaInfo": {
+    "reqLevel": 10,
+    "reqLevelEquip": 10,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "price": 50000,
+    "incPAD": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Projectile"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 5,
+      "min": 5,
+      "max": 6
+    }
+  },
+  "fetchedFrom": "chronostory-api",
+  "externalIds": {
+    "mapleSaga": 2061002
+  }
+}

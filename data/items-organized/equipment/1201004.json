@@ -1,1 +1,36 @@
-{}
+{
+  "id": 1201004,
+  "description": {
+    "id": 1201004,
+    "name": "Diamond Bolt for Crossbow",
+    "description": "",
+    "chineseName": "鑽石弩矢"
+  },
+  "metaInfo": {
+    "reqLevel": 10,
+    "reqLevelEquip": 10,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "price": 500000,
+    "incPAD": 10
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Projectile"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 10,
+      "min": 10,
+      "max": 11
+    }
+  },
+  "fetchedFrom": "chronostory-api",
+  "externalIds": {
+    "mapleSaga": 2061004
+  }
+}

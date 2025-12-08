@@ -1,1 +1,52 @@
-{}
+{
+  "id": 1052122,
+  "description": {
+    "id": 1052122,
+    "name": "Red Viska",
+    "description": "",
+    "chineseName": "紅色威斯克套裝"
+  },
+  "metaInfo": {
+    "reqLevel": 70,
+    "reqLevelEquip": 70,
+    "reqSTR": 70,
+    "reqDEX": 70,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "price": 115000,
+    "tuc": 10,
+    "incSTR": 5,
+    "incDEX": 2,
+    "incMHP": 10,
+    "incPDD": 75
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 5,
+      "min": 0,
+      "max": 12
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incMHP": {
+      "base": 10,
+      "min": 0,
+      "max": 80
+    },
+    "incPDD": {
+      "base": 75,
+      "min": 5,
+      "max": 145
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}
