@@ -1,1 +1,52 @@
-{}
+{
+  "id": 1050098,
+  "description": {
+    "id": 1050098,
+    "name": "Red Katinas",
+    "description": "",
+    "chineseName": "紅色貓裝"
+  },
+  "metaInfo": {
+    "reqLevel": 100,
+    "reqLevelEquip": 100,
+    "reqSTR": 0,
+    "reqDEX": 140,
+    "reqINT": 0,
+    "reqLUK": 260,
+    "reqJob": 8,
+    "price": 240000,
+    "tuc": 10,
+    "incDEX": 3,
+    "incLUK": 7,
+    "incEVA": 2,
+    "incPDD": 105
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 13
+    },
+    "incLUK": {
+      "base": 7,
+      "min": 0,
+      "max": 17
+    },
+    "incEVA": {
+      "base": 2,
+      "min": 0,
+      "max": 22
+    },
+    "incPDD": {
+      "base": 105,
+      "min": 5,
+      "max": 205
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

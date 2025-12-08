@@ -1,1 +1,19 @@
-{}
+{
+  "id": 2040353,
+  "description": {
+    "id": 2040353,
+    "name": "Dark Scroll for Accessory for INT 30%",
+    "description": "Improves INT on accessories. Success rate: 30%, Destroy rate: 50%, INT +3",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "price": 1,
+    "incINT": 3
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Armor Scroll",
+    "subCategory": "Accessory"
+  },
+  "fetchedFrom": "chronostory-api"
+}

@@ -1,1 +1,34 @@
-{}
+{
+  "id": 1082180,
+  "description": {
+    "id": 1082180,
+    "name": "Green Lagger Halfglove",
+    "description": "",
+    "chineseName": "綠色皮手套"
+  },
+  "metaInfo": {
+    "reqLevel": 15,
+    "reqLevelEquip": 15,
+    "reqSTR": 15,
+    "reqDEX": 15,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "price": 5000,
+    "tuc": 5,
+    "incPDD": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Gloves"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 4,
+      "min": 0,
+      "max": 12
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

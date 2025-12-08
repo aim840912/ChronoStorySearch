@@ -1,1 +1,46 @@
-{}
+{
+  "id": 1082066,
+  "description": {
+    "id": 1082066,
+    "name": "Brown Moon Gloves",
+    "description": "",
+    "chineseName": "黃月手套"
+  },
+  "metaInfo": {
+    "reqLevel": 50,
+    "reqLevelEquip": 50,
+    "reqSTR": 0,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 140,
+    "reqJob": 8,
+    "price": 95000,
+    "tuc": 5,
+    "incLUK": 3,
+    "incEVA": 1,
+    "incPDD": 20
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Gloves"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 20,
+      "min": 0,
+      "max": 45
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

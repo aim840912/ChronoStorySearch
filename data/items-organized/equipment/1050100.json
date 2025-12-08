@@ -1,1 +1,40 @@
-{}
+{
+  "id": 1050100,
+  "description": {
+    "id": 1050100,
+    "name": "Bathrobe for Men",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "reqLevel": 20,
+    "reqLevelEquip": 20,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": -1,
+    "price": 15000,
+    "tuc": 10,
+    "incSpeed": 10,
+    "incPDD": 20
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSpeed": {
+      "base": 10,
+      "min": 8,
+      "max": 12
+    },
+    "incPDD": {
+      "base": 20,
+      "min": 0,
+      "max": 40
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

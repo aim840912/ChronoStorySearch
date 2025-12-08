@@ -1,1 +1,34 @@
-{}
+{
+  "id": 1402006,
+  "description": {
+    "id": 1402006,
+    "name": "Lionheart",
+    "description": "",
+    "chineseName": "高原之劍"
+  },
+  "metaInfo": {
+    "reqLevel": 35,
+    "reqLevelEquip": 35,
+    "reqSTR": 115,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "price": 140000,
+    "tuc": 7,
+    "incPAD": 55
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Two-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 55,
+      "min": 53,
+      "max": 57
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}
