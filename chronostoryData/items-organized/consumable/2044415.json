@@ -4,7 +4,8 @@
     "id": 2044415,
     "name": "Scroll for Pole Arm for Accuracy 15%",
     "description": "Improves accuracy on pole arms. Success rate: 15%, DEX +3, ATK +3, ACC +5",
-    "chineseName": ""
+    "chineseName": "矛命中卷軸15%",
+    "chineseNameSource": "gacha"
   },
   "metaInfo": {
     "price": 1,

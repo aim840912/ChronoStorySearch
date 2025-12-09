@@ -7,62 +7,29 @@
 
 | 類別 | 總數 | 缺少中文名稱 | 缺少圖示 |
 |------|------|-------------|---------|
-| Consumable | 309 | 29 | 20 |
-| Equipment | 1,401 | 11 | 68 |
+| Consumable | 309 | 3 | 20 |
+| Equipment | 1,401 | 4 | 68 |
 | Etc | 180 | 0 | 8 |
-| **總計** | **1,890** | **40** | **96** |
+| **總計** | **1,890** | **7** | **96** |
 
 ---
 
-## 缺少中文名稱 (40 個)
+## 缺少中文名稱 (7 個)
 
-### Consumable (29 個)
+### Consumable (3 個) - Gacha 檔案中無資料
 
 | ID | 英文名稱 | 子類別 |
 |----|---------|--------|
-| 2000010 | Blue Pill | Potion |
-| 2002006 | Warrior Pill | Potion |
-| 2002008 | Sniper Pill | Potion |
-| 2002009 | Dexterity Pill | Potion |
-| 2002010 | Speed Pill | Potion |
-| 2020015 | Sunset Dew | Food and Drink |
-| 2022003 | Unagi | Consumable |
-| 2040034 | Scroll for Helmet for Accuracy 15% | Helmet |
-| 2040036 | Scroll for Helmet for INT 15% | Helmet |
-| 2040332 | Scroll for Earring for STR 10% | Earrings |
-| 2040333 | Scroll for Earring for INT 50% | Earrings |
-| 2040343 | Scroll for Accessory for DEX 100% | Accessory |
 | 2040344 | Dark Scroll for Accessory for DEX 70% | Scroll |
-| 2040345 | Scroll for Accessory for DEX 60% | Accessory |
-| 2040346 | Dark Scroll for Accessory for DEX 30% | Accessory |
-| 2040347 | Scroll for Accessory for DEX 10% | Accessory |
-| 2040350 | Scroll for Accessory for INT 100% | Accessory |
-| 2040352 | Scroll for Accessory for INT 60% | Accessory |
-| 2040353 | Dark Scroll for Accessory for INT 30% | Accessory |
 | 2040357 | Scroll for Accessory for LUK 100% | Scroll |
 | 2040410 | Dark Scroll for Topwear for LUK | Topwear |
-| 2040934 | Scroll for Shield for ATT 15% | Shield |
-| 2043020 | Scroll for One-Handed Sword for Accuracy 15% | One-Handed Sword |
-| 2043115 | Scroll for One-Handed Axe for Accuracy 15% | One-Handed Axe |
-| 2043215 | Scroll for One-Handed BW for Accuracy 15% | One-Handed Blunt Weapon |
-| 2044115 | Scroll for Two-Handed Axe for Accuracy 15% | Two-Handed Axe |
-| 2044215 | Scroll for Two-Handed BW for Accuracy 15% | Two-Handed Blunt Weapon |
-| 2044315 | Scroll for Spear for Accuracy 15% | Spear |
-| 2044415 | Scroll for Pole Arm for Accuracy 15% | Pole Arm |
 
-### Equipment (11 個) - TWMS API 無資料
+### Equipment (4 個) - Gacha 檔案中無資料
 
 | ID | 英文名稱 | 子類別 |
 |----|---------|--------|
-| 1040097 | Green China | Top |
 | 1050096 | Green Katinas | Overall |
-| 1050100 | Bathrobe for Men | Overall |
-| 1050127 | Bath Towel (Black) | Overall |
-| 1051046 | White Anakarune | Overall |
 | 1051090 | Green Katte | Overall |
-| 1051098 | Bathrobe for Women | Overall |
-| 1051140 | Yellow Bath Towel | Overall |
-| 1061056 | Gold Sneak Pants | Bottom |
 | 1082189 | Yellow Tartis | Glove |
 | 1203009 | Persimmon | Projectile |
 
@@ -192,9 +159,11 @@
 
 ### 2. 同時缺少中文名稱和圖示的物品
 以下物品同時缺少兩種資料：
-- `2040034`, `2040036`, `2040332`, `2040343-2040357` (捲軸類)
+- `2040034`, `2040036`, `2040332`, `2040344`, `2040357` (捲軸類)
 - `1050096`, `1050100`, `1050127`, `1051090`, `1051098`, `1051140` (服裝類)
 - `1203009` (彈藥類)
+
+> 注意：`2040343`, `2040345`, `2040346`, `2040347`, `2040350`, `2040352`, `2040353` 已從 drops.json 補充中文名稱
 
 ---
 

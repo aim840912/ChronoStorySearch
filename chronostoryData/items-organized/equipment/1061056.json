@@ -3,7 +3,9 @@
   "description": {
     "id": 1061056,
     "name": "Gold Sneak Pants",
-    "description": ""
+    "description": "",
+    "chineseName": "綠敏捷褲",
+    "chineseNameSource": "drops"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,8 @@
     "id": 2040347,
     "name": "Scroll for Accessory for DEX 10%",
     "description": "Improves DEX on accessories. Success rate: 10%, DEX +3",
-    "chineseName": ""
+    "chineseName": "飾品敏捷卷軸10%",
+    "chineseNameSource": "drops"
   },
   "metaInfo": {
     "price": 1,
