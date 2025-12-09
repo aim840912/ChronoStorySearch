@@ -23,8 +23,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
-    "subCategory": "Wand",
-    "lowItemId": 2043700,
-    "highItemId": 2043800
+    "subCategory": "Wand"
   }
 }

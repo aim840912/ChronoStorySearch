@@ -23,8 +23,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
-    "subCategory": "Staff",
-    "lowItemId": 2043800,
-    "highItemId": 2043900
+    "subCategory": "Staff"
   }
 }

@@ -24,8 +24,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
-    "subCategory": "Two-Handed BW",
-    "lowItemId": 2044200,
-    "highItemId": 2044300
+    "subCategory": "Two-Handed BW"
   }
 }

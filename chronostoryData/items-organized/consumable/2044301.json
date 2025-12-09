@@ -22,8 +22,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
-    "subCategory": "Spear",
-    "lowItemId": 2044300,
-    "highItemId": 2044400
+    "subCategory": "Spear"
   }
 }

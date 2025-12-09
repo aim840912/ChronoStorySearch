@@ -22,8 +22,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Armor Scroll",
-    "subCategory": "Topwear",
-    "lowItemId": 2040400,
-    "highItemId": 2040500
+    "subCategory": "Topwear"
   }
 }

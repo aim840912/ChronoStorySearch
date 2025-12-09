@@ -22,7 +22,6 @@
     "tuc": 7,
     "incPAD": 48,
     "incJump": 5,
-    "attack": 2,
     "attackSpeed": 8
   },
   "typeInfo": {

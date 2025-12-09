@@ -20,8 +20,6 @@
   "typeInfo": {
     "overallCategory": "Etc",
     "category": "Crafting",
-    "subCategory": "Mineral Ore",
-    "lowItemId": 4010000,
-    "highItemId": 4011000
+    "subCategory": "Mineral Ore"
   }
 }

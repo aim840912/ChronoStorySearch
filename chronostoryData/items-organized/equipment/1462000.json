@@ -22,9 +22,7 @@
   "typeInfo": {
     "overallCategory": "Equip",
     "category": "Two-Handed Weapon",
-    "subCategory": "Crossbow",
-    "lowItemId": 1460000,
-    "highItemId": 1470000
+    "subCategory": "Crossbow"
   },
   "randomStats": {
     "incSTR": {

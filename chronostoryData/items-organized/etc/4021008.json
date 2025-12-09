@@ -20,8 +20,6 @@
   "typeInfo": {
     "overallCategory": "Etc",
     "category": "Crafting",
-    "subCategory": "Rare Processed  Ore",
-    "lowItemId": 4021000,
-    "highItemId": 4021013
+    "subCategory": "Rare Processed  Ore"
   }
 }

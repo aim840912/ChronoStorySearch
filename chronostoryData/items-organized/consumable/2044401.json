@@ -22,8 +22,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
-    "subCategory": "Polearm",
-    "lowItemId": 2044400,
-    "highItemId": 2044500
+    "subCategory": "Polearm"
   }
 }

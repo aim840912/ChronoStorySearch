@@ -22,8 +22,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
-    "subCategory": "Gun",
-    "lowItemId": 2044900,
-    "highItemId": 2045000
+    "subCategory": "Gun"
   }
 }

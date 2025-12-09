@@ -22,9 +22,7 @@
   "typeInfo": {
     "overallCategory": "Equip",
     "category": "Armor",
-    "subCategory": "Glove",
-    "lowItemId": 1080000,
-    "highItemId": 1090000
+    "subCategory": "Glove"
   },
   "randomStats": {
     "incSTR": {

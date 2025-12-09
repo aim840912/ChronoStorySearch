@@ -21,8 +21,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
-    "subCategory": "One-Handed Sword",
-    "lowItemId": 2043000,
-    "highItemId": 2043100
+    "subCategory": "One-Handed Sword"
   }
 }

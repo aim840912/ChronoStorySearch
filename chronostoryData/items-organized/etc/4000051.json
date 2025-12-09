@@ -20,8 +20,6 @@
   "typeInfo": {
     "overallCategory": "Etc",
     "category": "Other",
-    "subCategory": "Monster Drop",
-    "lowItemId": 4000000,
-    "highItemId": 4010000
+    "subCategory": "Monster Drop"
   }
 }

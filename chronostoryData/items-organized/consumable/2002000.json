@@ -20,8 +20,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Consumable",
-    "subCategory": "Potion",
-    "lowItemId": 2000000,
-    "highItemId": 2010000
+    "subCategory": "Potion"
   }
 }

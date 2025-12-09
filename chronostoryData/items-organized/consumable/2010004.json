@@ -20,8 +20,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Consumable",
-    "subCategory": "Food and Drink",
-    "lowItemId": 2010000,
-    "highItemId": 2022000
+    "subCategory": "Food and Drink"
   }
 }

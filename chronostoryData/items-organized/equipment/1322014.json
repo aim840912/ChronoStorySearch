@@ -21,9 +21,7 @@
   "typeInfo": {
     "overallCategory": "Equip",
     "category": "One-Handed Weapon",
-    "subCategory": "One-Handed Blunt Weapon",
-    "lowItemId": 1320000,
-    "highItemId": 1330000
+    "subCategory": "One-Handed Blunt Weapon"
   },
   "randomStats": {
     "incSTR": {

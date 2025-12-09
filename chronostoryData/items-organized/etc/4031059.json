@@ -31,8 +31,6 @@
   "typeInfo": {
     "overallCategory": "Etc",
     "category": "Other",
-    "subCategory": "Quest Item",
-    "lowItemId": 4030000,
-    "highItemId": 4040000
+    "subCategory": "Quest Item"
   }
 }

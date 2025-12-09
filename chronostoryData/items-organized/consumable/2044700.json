@@ -21,8 +21,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
-    "subCategory": "Claw",
-    "lowItemId": 2044700,
-    "highItemId": 2044800
+    "subCategory": "Claw"
   }
 }
