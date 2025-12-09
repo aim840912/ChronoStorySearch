@@ -4,7 +4,7 @@
     "id": 4000132,
     "name": "Ghost Pirate Key",
     "description": "A key stuck on the boat that Pirate was riding on.",
-    "chineseName": ""
+    "chineseName": "百烈舵輪"
   },
   "metaInfo": {
     "only": false,
@@ -12,19 +12,8 @@
     "mob": 0,
     "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADF0lEQVR4nL1XjXWbMBA+3usCrEBGYAU6Ah3BHgFGsEeAEcwIZoQwQrSCRqD6zjr1EGCZ1s0lL7FB5vu5H8k/6HtjVq8z/HknAXl4tnf/6+tO1loyk6Ff5xbrs3cRmD8/bzRNE53P13mDxAJ8MlO48Q4CAXwcRqqrkoZxmuNFGhxr30kggJdlSXmRU1VXAZT411LbtmH9OBr8e18NONvpfuvWN3IiYw0V7gdxvQ5yJ6ToXwiwzQIMIGMM24woyoJfX7oLTeNEZVG6q8MC/AiBuMLnPWBEc2lCnj8+fhIKECSapoYLiyJ9hUBc4awawAjkXgKqEedzS5UrRmX5rqAUgQAOlRoc70enqshzVoywxvK95lSiz8krDR0BQuIGugFuJB0QcFgM8L7vWSnAO5dfgIrd6ILSuty7a2K3APZDvwCXz6QIZNp2gKPF+n5gcHkICIo6tB4ATqcTX7PuHsC7rluBv0Ig2L4FLsA6oJ6dc2BVVYT3+Lw4ipBZkKwByTls1+AoPjfx+CGyVn8Qqi9NwwSQGv7MaPSS5CCa44Kr6zqAww2Q8m31sN/8GbWx5Xr66XgpBShAbTuUS8uVbvTe7jcGN6ogre8ane+tiAkEG0W99Ln1ufQ5z6B8Be7UYh2uiXrEnvqYwGJXY+VehUw2eS8Rg+NzGjylXhNYgKOFOPfTElBV/Cw5T4E/U79wQG+pWj1ybX0lAzSsf3TAChzVr4CfgmsCYeDIXq7Vww1MOD5USJ97lTrneuC4RhQSWyektQMUzW0Eco+NBbNdrNaOIeKC463XbUQn91Pk46OQR7NLYrcNYT1AsKthY8FsR21opdz3q17vGRyB0xEl6nCXgKRAtx1eY7xiwuka0NUOElDO4C/EJgHYhpMMDhM+QtXzfZ+OGJh8GvmsMK2uJwnMj4cbPj5BYVz1UuEy2xWABsl8zuPrTwmEc7ucXoWEhOQdu1q0sWwBPAWNCSy+NEDdI+8DFx5Cn2QQKVuPBDuw86Uh0zvdkfF6mIAGj9RxUf0vcCGQ+S+KEitrj8z2vyGQemBIxQtrD8dvdz8kb0bcNGUAAAAASUVORK5CYII=",
     "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADS0lEQVR4nL1Xi5WbMBBc3ksDXAlcCVwJpARSgl0ClGCXACWYEkwJVgmnFlQC0ay1yiJ+zotf1uczCMHMzn4kftD/tUkdZ/j3TgLy8Gzr+vf3nZxzZI2lX+cW87N3EZgejxsZY+h8vk4rJGbgxpp44R0EIvg4jFRXJQ2jmdJJGhxz30kggpdlSXmRU1VXEZT4z1HbtnH+OFr8vC8HvOx0v3XLCzmRdZYK/4Fdr4NciSH6FwIsswADyFrLMsOKsuDjS3chMxoqi9KPDjPwvyGQZvi0BQxrLk2M8+fnT0ICgkTT1FBhlqSvEEgznL0GMAyxF4PXsPO5pcono5J806EjAhEcXmpwnI/eqyLP2WOYs46vNacSdU7B01gRICRqoBqgxqECAg6JAd73PXsK8M7HF6AiN6qgdD72fkzkFsB+6Gfgcs8RgUzLDnCUWN8PDC4PAUHxDqUHgNPpxGPOXwN413UL8FcIRNnXwAVYG7xn5TxYVRXxHPeLojDpBYc5IDGH7Bocyec7Hj9E5uob4fWlaZgAQsP3jFZPOWxEU5pwdV1HcKgBUqGsnvLbP602lVx3P20vhQAJqGWH51JypW+9t/uNwa1KSBeqRsd7zVICUUbxXurchViGmGfwfAHuvcU8jIn3sC3vUwKzVY09D15IZ5NzsRQc92nwI+81gRk4Sohjb+aAKuMnifkR+J73MwX0kqq9R6xdyGSAxvnPCliAI/sV8C64JhAbjqzl2nuogQ7Hmwqp8+CljrluOL4QhcTaDmmpACV9G4bYY2FBbxeptWKwNOF46fUL0cl/inx8JvJoN0lsliGkBwhWNSws6O3IDe0p1/2i1nsGh2F3RAd5uElAQqDLDsdor+hwOgd0toMEPGfwF2yVAGTDTgabiWAx6/l6CEcKTCGMvFcwi/FDAtPz4Za3T/AwzXrJcOntCkCDZCHm6fgugbhvl92rkBCTuGNVSxaWj/CrNf9Qxxh3ewRmLw3w7hn3gRMPpncyymuJT0n75tSvo4QMK7Dx0vDlgR84WNvJeKt2wNbG8bXhG+cxAQ2uvMNyh3hcNnr7a2m+I78QyMKLotiXejjfvNLbW1qa2zlOvzMCMJ2pOc29i6FICK555nbOV5X4Dad1PUxuAGQ0AAAAAElFTkSuQmCC",
-    "iconOrigin": {
-      "x": -1,
-      "y": 32,
-      "isEmpty": false
-    },
-    "iconRawOrigin": {
-      "x": -1,
-      "y": 32,
-      "isEmpty": false
-    },
     "slotMax": 200,
     "price": 115,
-    "vslots": [],
     "setCompleteCount": 0
   },
   "typeInfo": {

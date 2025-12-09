@@ -4,7 +4,7 @@
     "id": 4000114,
     "name": "Table Clock",
     "description": "A very pretty-looking table clock. It's still running.",
-    "chineseName": ""
+    "chineseName": "小鬧鐘"
   },
   "metaInfo": {
     "only": false,
@@ -12,19 +12,8 @@
     "mob": 0,
     "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAYCAYAAAAGXva8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC7UlEQVR4nJ2Wj5WjIBDGx/fSgCmBlEBKwBLcEpISYglawm4JRwlSQihBSgglcDP8EyPu3u3kJaACv/mGGcwJ6uYO7jfwvdXm7ea8Q/2k+bHeYC1+GXawbbq8aFOb5/7Eq5YmxoGX/ZwS6tyCvzpcGIM//cv3vzReWIBlCStdLmdXLOKWBcfJ8xYYoW6OxOBwU0Kdc8nhBgy8gPUtgi0M01f2SikAIQRUjRzU5w0QTGxtiF43BcA2vAYdYXgfYR/3yUPJtJryELn6sNk/hvug8Jl3iaLF4dBOXuUcvWJhHVJHwAR7iM/NJGvt6qfRuS9GB2poQPAIboNKExUvI27NAO6U5CdgUkhAgh2GMymXAPfrHeZXyCJ2e6His0/A7JgtEjIqBcNffhtK4Dwu0MZBvL3EuBWwIWRI3/dgNIPu/AGfzxCRtl+8DisvwZECmKEhTOv+JWCCmQlyVifrRQcUWW1nYJxDD0FxAmtajz/D2uQ4kq9X74RPpIZKgNJefg1V4GBG9DS4Sq3gDAyWCPN71+3A3qnPtdh5GWvYHw45pCVwfNwCEEuCtiKsiq2pg6WSIO9rxt+tTN1NnXq1pNJ7hip3QPJWxzYZJZ/aHk4JrDH2BtNWBeBmUP3spaTRUIQ0gBTeE/1+eEwHHyUby6OlT9uGynizowP/0HId9s4nH3t7zjg5yL1Kgj74CJMeymNzPQYptDShLHxW5rlsfPH/qxmUzFpWfVZVSjXYjx2I6QoKnhhthmfxFuhVsvN6vh5YG3PhEErhyEpVaIRZwaV5oAovAQuUuXVVNasqpQWkmv0BQHYT1/2gAlgz7/xbfX4LLcFkPXS75+lZGktGkTJ6zQmfvGafvhmqyW0Mongw0NJsFisB746tgBVodNjEGnADLcFcsLy31JaL2yJxNn38JBidSJyFFyqWCzXVw6EZ1N2N+CqjiWny/xrBsgBzvEap1IOpQ/CyXn+ydwCFWpr8F+PHf4N+QIL/2mwdluwvneJ0tAJvk88AAAAASUVORK5CYII=",
     "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAbCAYAAACAyoQSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADJ0lEQVR4nKWWjZWkIAyA43vTAFMCUwJTApbglrBTwliClrBbwlmClLCUICUMJXgJPwKKc3fvMs8BBfIlIUEvUJf15HkD76W27rBmD3WL5md6wBleHDvYNu2mtKmtW3+FO0YLw8TbcU0OXdcF/7W/MQb/upfrf2u8sQDL4jXdbtc1U7IuC86briUwQNc5EL3BTQ5d1zUa3ICBF/COIdhCP35vVikFIKWEqpCB+loAwYTW+ui1oweU4TVoCMfnCPt4jA5KotW4TZmSDcX+cdwHhWPOJIqWgFO5OC/nYBX3esg7AkbYU34Vi6y1yU6jt74cVlB9A1IEMPNemuDxMuDW9LBeovsRGD0kIMFOwxk9nwAe9wfML59F/POFHl9dAm6G2Swhg6dgxMttQw6chwVYmCTYLcQtg/U+Q7quA6M5tNcP+PrxEWHd4vyw080bkgE3qA9T2r8IjDAzwpbVUTrZAkVW2xm4ENCB9ziCNekTP143GY7k+90Z4RKpoRKgtJ+++yqwNwNa6k2lVgoOBkuEu71rD2Bn1FcqdpHHGo6HwxbSHDg8Pz0QS4K2wmvF1tTBk5pgeqSMf9gpdos6dd6Sl84y9PIAJGt1aKNQ8qnycIpgjbE3mLbKA4tJ9bOXkkZDFlIPUvhMdsfpIR1clGwoD0Y/xnxl7OTswD+VrQ671SUf341zQQYK5yVBn2KAUff5sZmOQQotLcgLn+d5PjWu+P9WDLrMGa+OVT2lGuyGFuR4BwU/GG2OZ3EJdF7yazpfT4SFXDiFUjg2T5VvpEngXBxQ+ZeABcrculc1qXpKCiY1uwOA5FPej5MyYE2c8bv6fAvNwSQdtIfxOBbnklCkjE454ZLXHNN3g2oyG4Monxz0ZAplOWBvWAIkoNF+E2vAApqDheTb3lKbK7dZ4hR9/EUYnUiC+xcqlgs11cOh6dVjHfBVRgvj4n8Vgm0OmHMduacOTB2C5/X6J9kDKNST2T4xKAspVDZch0SiryuG8AX+R7y9fbgT4YkJl82hDNK33Aekzyu2a9+jSn3VcF0qE8+UvIu3fdPfXwU0hiAH17w78+CdkcXYbzmojDgYeCUgAAAAAElFTkSuQmCC",
-    "iconOrigin": {
-      "x": -2,
-      "y": 27,
-      "isEmpty": false
-    },
-    "iconRawOrigin": {
-      "x": -2,
-      "y": 27,
-      "isEmpty": false
-    },
     "slotMax": 200,
     "price": 40,
-    "vslots": [],
     "setCompleteCount": 0
   },
   "typeInfo": {

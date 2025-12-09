@@ -4,7 +4,7 @@
     "id": 4000134,
     "name": "Viking Sail",
     "description": "A sail on the ship that Viking was riding on.",
-    "chineseName": ""
+    "chineseName": "維京船帆"
   },
   "metaInfo": {
     "only": false,
@@ -12,19 +12,8 @@
     "mob": 0,
     "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAVCAYAAAC+NTVfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACw0lEQVR4nJ1Wi3WkMAw076UBXwm0wJXAlkBKICVACUsJSwlxCUsLbsEtuAROY8m2IMnebvzimI+kmZFks2/m92M/3TevBngVvADulv71XUV2/mUyz4BXwLt6ug1Ho6mV55sxIZomFr8fSTwC3wugJ5mxp8Dy5upINc33qtyEkECLsxXkByS+A9+L8yRPJgR1fD0PPEHg01cCLSlvT5GI0H5lQs3lKwkNnl5CaH+VJ4usvQIA6KxSrgko0DQA7DkOxGx0e2GcRoPv+1U5L+Y4Ni8XtAYCGl1Vn0mltIfqk4Ezn/yY5iwEAL7fQRwpW6RQOn0IDHV/FJFB1G0nOw0uilE6PEU7oABRubwVww+aN3rlTikEMFR+ksqV3nVeogX2g/mmWKimSz1Dt5Zs4lYTMRLRNYSdwfGSiFso75VsAPy1UmfLyQuWU+qUwjMobkl1O5KZlLCnzeK3g0lS3lw8NaUHh2ja4CiDlq1TB9OcxUs6NxGZFJgCzon3UOw5zELuVkyitQfw/WY461dx6ryQQJcDHECI+i5eNwX88RXUcLYTKELkzYLVUeZW7o3UcGbsrGnJ6yIBCgnnTTf4VLPUhDdBCTW1WrxOvGq9slm6HuWlQD4U5WYhpIkI3GI09GfmWEkgSkf1tQC3FTRnGhXSaq05ksigya8djFtTs5R93mDfod5j5NxY7wuJ1rPgROJ0grUZURbo6ZTqpJRWR0dzR+JmBVyUm9x0hlM90oWjet0oCkgsnoNMgkBxylFQmt1UEmmlVHmalhoMah0bHs53fbw2cz5iHe84OzKJQUg4QUDntgKcFecBQNS1pRQsa9lb337Zzh+WZIQsIPI9CInIH7UUSzWWBo4KdF3LifLwm/7TJ/VAIpUD6c5NZvhkDQoUw/nnQP8HfiCRyiEkdE0PoMr+2fHsz6hKIo8Yyn41v/j9hvEPYLxOKfSX9eAAAAAASUVORK5CYII=",
     "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAXCAYAAADz/ZRUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC+0lEQVR4nJ1Vi5WjMAwU720D3hJogSuBlMCWwJYAJYQSQglxCaEFt+ASziWwGls2giV5l9OLYz6WZkaSzQf9v62H++rdAO+CF8DV8F/bbMjWvU3mX8A3wId6unT7RUMtzxciH6gKxe8piVfgawF0LDO0HFjeXC2r5vG1KSfvI2hxNoL8gsQZ+FqcB3kyIKhN12OXBgjc3UagZuX1IRITWq+JUHX5TUKDx5cQ2l7lySRzqwAAOqqUawIKNBqAXYoDMQvfXhJOpcHX9aqcJ9rb4uSCZ89Avd3UZ1Ix7X7zycCZT37MYxQCAF8fII6UTVIonT4EhrpPRaQTdcthnQYXxSgdnqIdUICgXD7Kwm8eN35lDykEMFTeWeXM7xon0Xzyw/JFsVBNF3uGbw2vCcuWiJ6Jzt6vCRwvmbiB8lbJBsAfI3U2KXnepJRapfAIiltWXfe8TErY8mZxy25JVF5dHDelA4dAtbecQZNWxw7mMYqXdG4kMigwBZwT76DYpTATuxtZEozZga83Slm/ilPjhAS6HOAAQtQv8bop4O/foJSyHUERIm8WzJYzN6feiA1HfWOoZq+LBCgkrKOmc7FmsQlvguK31GrxOvGq9cpmaVqUlwM5X5TTxEgDE7iFQPyjMWwkEKXh+hqAmw00ZxoV0moN7Ulk0OhXd2Tn2Cxln1fYd6h3H1JujHOFRO2S4EjicILVGVEm6GmU6qiUZ8tHc8PiRgVclFNuOkqp7vnCcr1uHAUkJpeCDILAccpRUJqdNhJx5lQ5HoYbDGptWrg73/XxWo35iLVpx5k+keiEhBUEdG4twFlxNgCirjWnYJrL3jr9sh0/LHERsoDIDy8kQvqoxViqsTRwUKDzXE6UT3phzz6pIGGYxF8EieVAunOTUTpZvQKFWVdA88ZpaM91d8KegRs1EMRwOe6ZhK7pDjTZqEC1ZdC8UcMZeAat1QybJPJQVgZf9ivbrPyPFuiJPVP+zHGk5xZeXB/HKXhOjSZwpubsLDkjG168ox+fr2eoPux08wAAAABJRU5ErkJggg==",
-    "iconOrigin": {
-      "x": -1,
-      "y": 23,
-      "isEmpty": false
-    },
-    "iconRawOrigin": {
-      "x": -1,
-      "y": 23,
-      "isEmpty": false
-    },
     "slotMax": 200,
     "price": 135,
-    "vslots": [],
     "setCompleteCount": 0
   },
   "typeInfo": {

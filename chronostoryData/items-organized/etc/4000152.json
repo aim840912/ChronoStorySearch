@@ -4,7 +4,7 @@
     "id": 4000152,
     "name": "Tanathos Strap",
     "description": "A strap from Tanathos",
-    "chineseName": ""
+    "chineseName": "達納托斯肩章"
   },
   "metaInfo": {
     "only": false,
@@ -12,19 +12,8 @@
     "mob": 0,
     "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACP0lEQVR4nK2WgbGCMBBEw8xvQEvQEmxBS9ASbEFK0BK0BC1BW7AELUFL4GczbmY5CAT0Zv6XhIR3e3c5+HO/sUqui5wNvwBXs9ksDp7PJ53odOAbcAAolOPJZOLu93vVBR8DbgUq+P1+u+12606nUxKeC4457ALCANXflKXAWixusVjUbupDcQ9jzvkchzn89oErO2lBbcY1FgpDjjG3Xq/d5XJpDXdQvN/vQ6iwsSxLt9vt3OFwiIswVqW+cCIIc1bd7XbrVQ1w4WHV6/UKG+DEZrMJN6/Xa20xlagTfPhyuQzXVnUXGFbM5/Pq8XiExVBPuBqjAogPYQRStTqBqGB9qrpjcfnNxXQ6DcoRpvP57FarVfiF91RHOBUpUJXLczsV0yJcDZsJt2bnbbhTeW47ThGO0PsUBNVtRvU0qEWdWGur7mQDsSGiaoZbIUgNcoox8zu2gYRiy1FNI1yd1tqwRTbqJdF1Pgn9hLfR2Wi9YC0eW2TsXlpMUI15Qm0UcsDZRaaOwVADABLKvH8cCeH+6kNA1SuEzYVj6xBsMNiGzIZbj5O2UXves8DcpNXKowUQc09FdEadwD1EAuny7bjqA8c8489fu+PxGNslHqwtlO9ihpPrmGONzKgc42Hwnt9X2sEIgPEoYQ738eajjQZTkeaODtiqVije9y6zqhvhRnNo+7q0jYVjC8W/nx0nmipFIRGu0CHghuqUaZNJQYeAawZ46u3DQhJgAzoUXPtIsGFm9fYBx4AjPGdd34J/FF32JcTcqcgAAAAASUVORK5CYII=",
     "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACbklEQVR4nK2WgZGCMBBF48w1gCVoCV4JWoKW4JWgJWgJWIKWoCWcJWgJUgKXn/FnvksCHLozCgkhb//usvDlPmO1nI/63PAJcD2ZTOLgfr/TiVYH3gEHgEI5LorCXa/Xug0+BJwEKriqKrder93hcMjC+4JjDtuAMED1mLMcWIvFzWazl4u6Ka5hzDmf4zCHYxe4tpMWlDKusVAYcoy55XLpTqdTMtxB8W63C6HCjdvt1m02G7ff7+MijFWpL5wIwpxVd7lcOlUDPPKw+vF4hBvgxGq1ChfP5/PLYipRJ7j5fD4P51Z1Gxg2mk6n9e12C4uhnnA1RgUQH8IIpGp1AlHB+lx1x+LyN4/G43FQjjAdj0e3WCzCEd5THeFUpEBVLvu2KqZFuBpuJtyanbfhzuU59ThFOELvUxBUp4zqaVCLOrGWqu5sA7EhomqGWyFIDXKKMfM7tIGEYuujmka4Oq21YYts0Eui7fkk9BneRmejdYK1eGyRsXtpMUE15gm1UegD7l1k6hgMNQAgocz705EQ7rc+BFS9QthcOLYOwf4NtiGz4dbHSduofd57gXmTVisfLYCYeyqiM+oEriESSJdvx3UXOOYZP3/uyrKM7RIbawvlu5jh5DrmWCMzKMfYDN7z+0o7GAEwPkqYw3W8+WiDwVSkuaMDtqoVive961nVjXCjOaS+Lm1j4dhC8dcGLsyxuSDxxlKlKCTCn9Ax16XAReL345WWqjpn2mQMFF8WCBMmKwsmaCJHzkcDPPf2YSEJEPZj1+UU03T3rVe640eCDTOr1wBXzz3srwHG5N3A9fzbw39dt00Tjr+E6A/aoAPdWqMfnwAAAABJRU5ErkJggg==",
-    "iconOrigin": {
-      "x": -1,
-      "y": 30,
-      "isEmpty": false
-    },
-    "iconRawOrigin": {
-      "x": -1,
-      "y": 30,
-      "isEmpty": false
-    },
     "slotMax": 200,
     "price": 160,
-    "vslots": [],
     "setCompleteCount": 0
   },
   "typeInfo": {

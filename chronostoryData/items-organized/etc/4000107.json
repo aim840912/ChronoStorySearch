@@ -4,7 +4,7 @@
     "id": 4000107,
     "name": "Teddy's Yellow Ribbon",
     "description": "A yellow ribbon from Teddy.",
-    "chineseName": ""
+    "chineseName": "玩具熊的黃絲帶"
   },
   "metaInfo": {
     "only": false,
@@ -12,19 +12,8 @@
     "mob": 0,
     "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACk0lEQVR4nK2WjVHDMAyFlbsuYEZIR8gKZgQ6AoyQFegIMAIdga6QEZoRmhGMn23ZsmOXHER3kDR/33uypORA7TBiv6OdowU2xnz5vflE3TGK2E1A2/Ey+a0aydzOnuoF7AKvgY35BvjsoHJrbvvBD7QlpIidogR7t0OA4G+2v3uK0L1cS7AvKKytdGahy9Ua1rRr5I5LaAhAJfz+QfT09j/XDDZI4aM1VNb5/GkT8Eq7RHQMRxLi1lVGn+Aqnftzf2epvl78Vr+QK6pMwCyEaV9kHH8ptmo7QcAwrIHLvE61yJShelQFMbhDsaBo2PWEwTUJAUUwENd/2Qy8fIQTfRi1oVDFuM1ESMcOfhvTAcCnKQeqAIT7SQjjtVf6JC624/bOSjMRXZnq7nj2zhG6KDC4W+YkCrUQ+9senyEqCHPHuUsw9Xjm2+u6ZzLZAHH/7mOaWCw27J/EgxFIqmaIFdmPY3SXDZ1Km6Y+bkwtJ5icSpcRKRRpRhYiXDhUujIT5mQiOZZQns9hvwJ1wWsc4dx+UnwALXN+rwCvnRK1oWXwg5W8XzjE9pgQsbg6VJwcClLto+Aic71PAk5VaL2dHPw7KT6eNfUa1XrdNJlc6otjNWgJ9nBb6m4goAOU195rXYN3tsrj0GHXDFflrC9i1U4YILj5go+OXtGyLPRue+jUeACqGYXFcOkUAbd4JuYDFal2QB4aCE7X6/T5SLTLjITbybcKQOG+fIcfeCccdBdwmiCgHJmrCK0HuBRfRpn6rLhYQOZ+qBcHB5YE9cBwBKZWzT01qjqelO7DAx5W9KX94dK8r/V5K9P/axvVXp23YV1QW8CZgC1AXsNKiqvwbR/0DVH8Ci1gmz6B/gN2saUGavEDyfIo8/35bu0AAAAASUVORK5CYII=",
     "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACw0lEQVR4nK2WjXHiMBCF1zM0oCvBLoErQVdCKCEpAUqAEpISkhJCCecSUAmoBJ2epJVXP2aYnHfG2Pjve2+1u7Cj9XDieKCNYw3snPuMR+ZAw5RFbCZg3bGd414dyd0ukRoFbALvgZ37BvgSoHLvbtvBd/RMSBEbRQ2ObvcJgs347yNl6FauJTgWFNZWOvNQe/WGNW0apeMamgJQCb+/E/16+z/XDHZI4aM1VN65+fAJeKVNIjuGIwkJ6ypjXOBqufbj/i5Sff2Ke/1CoagKAUYI07HIOH5SbN12goD9vgVa06ZaZMpRP7qCGDygWFA07HrG4JqFgCoYiPs/fQZe3tOFMY3aVKhi3BYipOMAvx2XE4DPcwlUCQj3sxDGa6/0Qdzsx+2dlRYihjrVw3SJzhG6KjC4s2YRhVrI/e3PG4hKwsJ57hJMPZ75/r7hD7ligISP+3GZWCw2HR/EixFIqmaIFzkej9ldMXQ6bbr08crUCoIpqAwZkUKRZmQhw4VDpTszwSwmFscSyvM5HXegIXiNM5zbT4pPIGvKZwW4dUq0Dq2DX6zk88Ih9tOCyMU1oOLkUJBqHwUXWeh9EnDqQvvtFODfi+LpomnUqNbrU5MppL4614PW4Aj3pR4GAjpARe2j1j344Ks8Dx12zXBVz/oqmnbCAMHDX/jTMSqy1tLZ99Bh5QWoZhQWw6VTBNzinZgPVKU6AHloIDhdr/PHI9EhMxLuJ18TgMJ9/Ru+44N0MtzAaYKAemQ2kVoPcCm+jjr1RXGxgML9vikOJZ4JS4J6YDgCU6vnnlaqOl+U7tMLpvjqDG3gK4EpYNOxTc/ZNbBKIOWhf/0edaXFtSZ6P523mCk05ynBsJm02Rqs0sbuTvTAqQTyGnZSfPZbc3bNMYetrsnvJ+/oLJaD4626z3a2BszpkPBeevNaJejvJ4QW1/4Bh7dA4GuVxcQAAAAASUVORK5CYII=",
-    "iconOrigin": {
-      "x": -1,
-      "y": 31,
-      "isEmpty": false
-    },
-    "iconRawOrigin": {
-      "x": -1,
-      "y": 31,
-      "isEmpty": false
-    },
     "slotMax": 200,
     "price": 26,
-    "vslots": [],
     "setCompleteCount": 0
   },
   "typeInfo": {

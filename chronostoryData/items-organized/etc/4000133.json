@@ -4,7 +4,7 @@
     "id": 4000133,
     "name": "Dual Pirate's Propeller",
     "description": "A propeller of the boat that Dual Pirate rides on.",
-    "chineseName": ""
+    "chineseName": "多立百烈推進器"
   },
   "metaInfo": {
     "only": false,
@@ -12,19 +12,8 @@
     "mob": 0,
     "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABYAAAAdCAYAAACuc5z4AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACBklEQVR4nK1WgXGEIBA8Z2yAFmzBL8EvwZQQS3hLeEv4lBBKkBKeFmiBEggLYlBB/Xx2hkHxXPaOu9OS0jB0HkVqMUVsxnGkpmlIKW2HJK3tbAeglCIlpZune5MiXxPPpEIIktPLMaqqIsJG07O2bYlzviFPhgJK38WGGCr7vk8a19aTPxP3XUe322fSGOEBEG4X8ygkh8QgdXFMIAjGYUqJcDFrWyPGu8Tm+Ryprhv7kpgXQeKJ5LwhrgHGmB3YsLbeyMUBxsTF5XI1bZuP49oTbIAxZWI2Kw4Vr1HXtdsMcc4pdpVmFdMrii0ZdMdLoWKLMiiFquv1w602O2kFdVrBAxVi64qkqhgNw5f1osIzUwZ3u653hpwLOgMQeMXksiJ4igMFyqDCL1bONZD7E2cZWh1XJ+JqtF5Wa667FdbQrCtNK69Qa+bIKdPZ9ogNswelN1W18SDZ2TbEWnsidDhUlJoVbtumzZFwn+zdC2Icxv3xcERc8JR9rm3uE/8nNsTDMFCVzQaP+QPwSnf7ftznNItTKFyH8vYlfq67LQhSStiOJ/HGM3HOnSOgrDFiBK7SG0hX66/wgxAOQCDmtTgQF1PLm7EuzxSmZjPZx++6qQgxDtVjoB59No5nHL9YGcijwzv+/Keaegx94vdgTVzYnmrag8+80r+qU2pTxM6IC/H2v9sPO0RaLVMYrLUAAAAASUVORK5CYII=",
     "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACRklEQVR4nLVWgZGrIBDdzKQBrgRb4EowJXgl/JQQSzhLyJVwlhBLOFqgBUrgeChkVUD9P//NMKjAvn3ssnimMiztx6k0WCKyj8eD6romrY1rioxxvWuA1pq0Ur6f3m2JLEcUSYZhIDUZ46iqigjE01jTNNT3fZasuHVQ8ipkiaCibdvkmHRKX0bUXq90u/1JjmE7AYTLx4xt4WEikPg4JBAEITmUwvYKN1ciRoeI7M/Pg6SsnZEhfoTR0bCKDuAZEEK4BgekU6uSCZEiOr2/X2zT5OOwVApCtCnzd2fdpqIlpJSeHHHaq8hXAqeIjihyxqFrZYcTciKvBF5fLh/+Q11IY3hvNBTqEBt/aKtKUNd9OZUVxqK6mSKQXK+tX9j3A+0BDI6KyGdd2AkkCMeMKJwFIbA1ypONGTVfxFzj1QOeW2PS1WSrep/cQrusBEaPCowRnow2KvceIitc4M3q1K8UFit3lsiY0TAqOE68jgrW14TLwfBevLuSRAju5/3uDfdDuqxkroljRP8DWaKu66jKZtuIeCH+S/X+vn/GtOYpG55DORpL0t9V75nBlKeioJQ7kiXakp8DyhBaydZ5vkD5WnWEDwQQCAHoc85yotNU4iNy5YRjKp7TfL52tJki4gMW6nDP8Hjw/eeeg4wlw1uYnlMEzKKcuuQ4TPp3TDISE1ogEov24e6U72bjt0qbp6pJTTsRcRJM0mdmvGI90PXDcKP96Oi5IyupXBElJqX/INNzl8+zdqanPE6WOpHx8imQZcl/AWsuc3qHQqSoAAAAAElFTkSuQmCC",
-    "iconOrigin": {
-      "x": -4,
-      "y": 31,
-      "isEmpty": false
-    },
-    "iconRawOrigin": {
-      "x": -6,
-      "y": 31,
-      "isEmpty": false
-    },
     "slotMax": 200,
     "price": 120,
-    "vslots": [],
     "setCompleteCount": 0
   },
   "typeInfo": {
