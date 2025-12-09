@@ -1,0 +1,1087 @@
+{
+  "name": "Ellinia Gachapon",
+  "location": "Ellinia",
+  "totalItems": 180,
+  "items": [
+    {
+      "itemId": 1002398,
+      "name": "Green Varr Hat",
+      "chance": 50000,
+      "percent": "0.21%"
+    },
+    {
+      "itemId": 1002399,
+      "name": "Blue Varr Hat",
+      "chance": 50000,
+      "percent": "0.21%"
+    },
+    {
+      "itemId": 1002400,
+      "name": "Red Varr Hat",
+      "chance": 50000,
+      "percent": "0.21%"
+    },
+    {
+      "itemId": 1002401,
+      "name": "Dark Varr Hat",
+      "chance": 50000,
+      "percent": "0.21%"
+    },
+    {
+      "itemId": 1072223,
+      "name": "Green Varr Shoes",
+      "chance": 50000,
+      "percent": "0.21%"
+    },
+    {
+      "itemId": 1072224,
+      "name": "Blue Varr Shoes",
+      "chance": 50000,
+      "percent": "0.21%"
+    },
+    {
+      "itemId": 1072225,
+      "name": "Red Varr Shoes",
+      "chance": 50000,
+      "percent": "0.21%"
+    },
+    {
+      "itemId": 1072226,
+      "name": "Dark Varr Shoes",
+      "chance": 50000,
+      "percent": "0.21%"
+    },
+    {
+      "itemId": 1082151,
+      "name": "Green Ciara",
+      "chance": 50000,
+      "percent": "0.21%"
+    },
+    {
+      "itemId": 1082152,
+      "name": "Blue Ciara",
+      "chance": 50000,
+      "percent": "0.21%"
+    },
+    {
+      "itemId": 1082153,
+      "name": "Red Ciara",
+      "chance": 50000,
+      "percent": "0.21%"
+    },
+    {
+      "itemId": 1082154,
+      "name": "Purple Ciara",
+      "chance": 50000,
+      "percent": "0.21%"
+    },
+    {
+      "itemId": 1050102,
+      "name": "Green Varuna",
+      "chance": 52041,
+      "percent": "0.22%"
+    },
+    {
+      "itemId": 1050103,
+      "name": "Blue Varuna",
+      "chance": 52041,
+      "percent": "0.22%"
+    },
+    {
+      "itemId": 1050104,
+      "name": "Red Varuna",
+      "chance": 52041,
+      "percent": "0.22%"
+    },
+    {
+      "itemId": 1050105,
+      "name": "Dark Varuna",
+      "chance": 52041,
+      "percent": "0.22%"
+    },
+    {
+      "itemId": 1051101,
+      "name": "Green Bazura",
+      "chance": 52041,
+      "percent": "0.22%"
+    },
+    {
+      "itemId": 1051102,
+      "name": "Blue Bazura",
+      "chance": 52041,
+      "percent": "0.22%"
+    },
+    {
+      "itemId": 1051103,
+      "name": "Red Bazura",
+      "chance": 52041,
+      "percent": "0.22%"
+    },
+    {
+      "itemId": 1051104,
+      "name": "Dark Bazura",
+      "chance": 52041,
+      "percent": "0.22%"
+    },
+    {
+      "itemId": 1372010,
+      "name": "Dimon Wand",
+      "chance": 52041,
+      "percent": "0.22%"
+    },
+    {
+      "itemId": 1382035,
+      "name": "Blue Marine",
+      "chance": 55263,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1002363,
+      "name": "Green Oriental Fury Hat",
+      "chance": 61111,
+      "percent": "0.26%"
+    },
+    {
+      "itemId": 1002364,
+      "name": "Blue Oriental Fury Hat",
+      "chance": 61111,
+      "percent": "0.26%"
+    },
+    {
+      "itemId": 1002365,
+      "name": "Red Oriental Fury Hat",
+      "chance": 61111,
+      "percent": "0.26%"
+    },
+    {
+      "itemId": 1002366,
+      "name": "Black Oriental Fury Hat",
+      "chance": 61111,
+      "percent": "0.26%"
+    },
+    {
+      "itemId": 1072206,
+      "name": "Blue Neli Shoes",
+      "chance": 61111,
+      "percent": "0.26%"
+    },
+    {
+      "itemId": 1072207,
+      "name": "Green Neli Shoes",
+      "chance": 61111,
+      "percent": "0.26%"
+    },
+    {
+      "itemId": 1072208,
+      "name": "Red Neli Shoes",
+      "chance": 61111,
+      "percent": "0.26%"
+    },
+    {
+      "itemId": 1072209,
+      "name": "Dark Neli Shoes",
+      "chance": 61111,
+      "percent": "0.26%"
+    },
+    {
+      "itemId": 1082131,
+      "name": "Blue Sage",
+      "chance": 61111,
+      "percent": "0.26%"
+    },
+    {
+      "itemId": 1082132,
+      "name": "Green Sage",
+      "chance": 61111,
+      "percent": "0.26%"
+    },
+    {
+      "itemId": 1082133,
+      "name": "Red Sage",
+      "chance": 61111,
+      "percent": "0.26%"
+    },
+    {
+      "itemId": 1082134,
+      "name": "Dark Pachone",
+      "chance": 61111,
+      "percent": "0.26%"
+    },
+    {
+      "itemId": 1050092,
+      "name": "Green Oriental Fury Coat",
+      "chance": 63636,
+      "percent": "0.27%"
+    },
+    {
+      "itemId": 1050093,
+      "name": "Blue Oriental Fury Coat",
+      "chance": 63636,
+      "percent": "0.27%"
+    },
+    {
+      "itemId": 1050094,
+      "name": "Red Oriental Fury Coat",
+      "chance": 63636,
+      "percent": "0.27%"
+    },
+    {
+      "itemId": 1050095,
+      "name": "Black Oriental Fury Coat",
+      "chance": 63636,
+      "percent": "0.27%"
+    },
+    {
+      "itemId": 1051094,
+      "name": "Green Oriental Fury Coat",
+      "chance": 63636,
+      "percent": "0.27%"
+    },
+    {
+      "itemId": 1051095,
+      "name": "Blue Oriental Fury Coat",
+      "chance": 63636,
+      "percent": "0.27%"
+    },
+    {
+      "itemId": 1051096,
+      "name": "Red Oriental Fury Coat",
+      "chance": 63636,
+      "percent": "0.27%"
+    },
+    {
+      "itemId": 1051097,
+      "name": "Black Oriental Fury Coat",
+      "chance": 63636,
+      "percent": "0.27%"
+    },
+    {
+      "itemId": 1372009,
+      "name": "Magicodar",
+      "chance": 63636,
+      "percent": "0.27%"
+    },
+    {
+      "itemId": 1382008,
+      "name": "Kage",
+      "chance": 67647,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1002271,
+      "name": "Green Galaxy",
+      "chance": 75000,
+      "percent": "0.31%"
+    },
+    {
+      "itemId": 1002272,
+      "name": "Blue Galaxy",
+      "chance": 75000,
+      "percent": "0.31%"
+    },
+    {
+      "itemId": 1002273,
+      "name": "Purple Galaxy",
+      "chance": 75000,
+      "percent": "0.31%"
+    },
+    {
+      "itemId": 1002274,
+      "name": "Dark Galaxy",
+      "chance": 75000,
+      "percent": "0.31%"
+    },
+    {
+      "itemId": 1072177,
+      "name": "Green Enigma Shoes",
+      "chance": 75000,
+      "percent": "0.31%"
+    },
+    {
+      "itemId": 1072178,
+      "name": "Purple Enigma Shoes",
+      "chance": 75000,
+      "percent": "0.31%"
+    },
+    {
+      "itemId": 1072179,
+      "name": "Dark Enigma Shoes",
+      "chance": 75000,
+      "percent": "0.31%"
+    },
+    {
+      "itemId": 1082121,
+      "name": "Green Clarity",
+      "chance": 75000,
+      "percent": "0.31%"
+    },
+    {
+      "itemId": 1082122,
+      "name": "Blue Clarity",
+      "chance": 75000,
+      "percent": "0.31%"
+    },
+    {
+      "itemId": 1082123,
+      "name": "Dark Clarity",
+      "chance": 75000,
+      "percent": "0.31%"
+    },
+    {
+      "itemId": 1050072,
+      "name": "Green Enigmatic",
+      "chance": 78205,
+      "percent": "0.33%"
+    },
+    {
+      "itemId": 1050073,
+      "name": "Blue Enigmatic",
+      "chance": 78205,
+      "percent": "0.33%"
+    },
+    {
+      "itemId": 1050074,
+      "name": "Dark Enigmatic",
+      "chance": 78205,
+      "percent": "0.33%"
+    },
+    {
+      "itemId": 1051056,
+      "name": "Green Enigma",
+      "chance": 78205,
+      "percent": "0.33%"
+    },
+    {
+      "itemId": 1051057,
+      "name": "Purple Enigma",
+      "chance": 78205,
+      "percent": "0.33%"
+    },
+    {
+      "itemId": 1051058,
+      "name": "Dark Enigma",
+      "chance": 78205,
+      "percent": "0.33%"
+    },
+    {
+      "itemId": 1372016,
+      "name": "Phoenix Wand",
+      "chance": 78205,
+      "percent": "0.33%"
+    },
+    {
+      "itemId": 1382010,
+      "name": "Dark Ritual",
+      "chance": 83333,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1002252,
+      "name": "Red Infinium Circlet",
+      "chance": 92857,
+      "percent": "0.39%"
+    },
+    {
+      "itemId": 1002253,
+      "name": "Blue Infinium Circlet",
+      "chance": 92857,
+      "percent": "0.39%"
+    },
+    {
+      "itemId": 1002254,
+      "name": "Dark Infinium Circlet",
+      "chance": 92857,
+      "percent": "0.39%"
+    },
+    {
+      "itemId": 1072157,
+      "name": "Blue Lapiz Sandals",
+      "chance": 92857,
+      "percent": "0.39%"
+    },
+    {
+      "itemId": 1072158,
+      "name": "Red Lapiz Sandals",
+      "chance": 92857,
+      "percent": "0.39%"
+    },
+    {
+      "itemId": 1072159,
+      "name": "Brown Lapiz Sandals",
+      "chance": 92857,
+      "percent": "0.39%"
+    },
+    {
+      "itemId": 1072160,
+      "name": "Gold Lapiz Sandals",
+      "chance": 92857,
+      "percent": "0.39%"
+    },
+    {
+      "itemId": 1082098,
+      "name": "Brown Lorin",
+      "chance": 92857,
+      "percent": "0.39%"
+    },
+    {
+      "itemId": 1082099,
+      "name": "Blue Lorin",
+      "chance": 92857,
+      "percent": "0.39%"
+    },
+    {
+      "itemId": 1082100,
+      "name": "Dark Lorin",
+      "chance": 92857,
+      "percent": "0.39%"
+    },
+    {
+      "itemId": 1050067,
+      "name": "Blue Requiem",
+      "chance": 97059,
+      "percent": "0.41%"
+    },
+    {
+      "itemId": 1050068,
+      "name": "Red Requiem",
+      "chance": 97059,
+      "percent": "0.41%"
+    },
+    {
+      "itemId": 1050069,
+      "name": "Brown Requiem",
+      "chance": 97059,
+      "percent": "0.41%"
+    },
+    {
+      "itemId": 1050070,
+      "name": "Dark Requiem",
+      "chance": 97059,
+      "percent": "0.41%"
+    },
+    {
+      "itemId": 1051052,
+      "name": "Blue Requierre",
+      "chance": 97059,
+      "percent": "0.41%"
+    },
+    {
+      "itemId": 1051053,
+      "name": "Red Requierre",
+      "chance": 97059,
+      "percent": "0.41%"
+    },
+    {
+      "itemId": 1051054,
+      "name": "Brown Requierre",
+      "chance": 97059,
+      "percent": "0.41%"
+    },
+    {
+      "itemId": 1051055,
+      "name": "Dark Requierre",
+      "chance": 97059,
+      "percent": "0.41%"
+    },
+    {
+      "itemId": 1372015,
+      "name": "Angel Wings",
+      "chance": 97059,
+      "percent": "0.41%"
+    },
+    {
+      "itemId": 1382007,
+      "name": "Evil Wings",
+      "chance": 103846,
+      "percent": "0.44%"
+    },
+    {
+      "itemId": 1002242,
+      "name": "Red Seraphis",
+      "chance": 116667,
+      "percent": "0.49%"
+    },
+    {
+      "itemId": 1002243,
+      "name": "Blue Seraphis",
+      "chance": 116667,
+      "percent": "0.49%"
+    },
+    {
+      "itemId": 1002244,
+      "name": "Green Seraphis",
+      "chance": 116667,
+      "percent": "0.49%"
+    },
+    {
+      "itemId": 1002245,
+      "name": "White Seraphis",
+      "chance": 116667,
+      "percent": "0.49%"
+    },
+    {
+      "itemId": 1002246,
+      "name": "Dark Seraphis",
+      "chance": 116667,
+      "percent": "0.49%"
+    },
+    {
+      "itemId": 1072136,
+      "name": "Pink Goldrunners",
+      "chance": 116667,
+      "percent": "0.49%"
+    },
+    {
+      "itemId": 1072137,
+      "name": "Green Goldrunners",
+      "chance": 116667,
+      "percent": "0.49%"
+    },
+    {
+      "itemId": 1072138,
+      "name": "Orange Goldrunners",
+      "chance": 116667,
+      "percent": "0.49%"
+    },
+    {
+      "itemId": 1072139,
+      "name": "Blue Goldrunners",
+      "chance": 116667,
+      "percent": "0.49%"
+    },
+    {
+      "itemId": 1082086,
+      "name": "Steel Manute",
+      "chance": 116667,
+      "percent": "0.49%"
+    },
+    {
+      "itemId": 1082087,
+      "name": "Gold Manute",
+      "chance": 116667,
+      "percent": "0.49%"
+    },
+    {
+      "itemId": 1082088,
+      "name": "Dark Manute",
+      "chance": 116667,
+      "percent": "0.49%"
+    },
+    {
+      "itemId": 1372008,
+      "name": "Hinomaru Fan",
+      "chance": 116667,
+      "percent": "0.49%"
+    },
+    {
+      "itemId": 1050053,
+      "name": "Blue Anakamoon",
+      "chance": 122414,
+      "percent": "0.51%"
+    },
+    {
+      "itemId": 1050054,
+      "name": "Red Anakamoon",
+      "chance": 122414,
+      "percent": "0.51%"
+    },
+    {
+      "itemId": 1050055,
+      "name": "White Anakamoon",
+      "chance": 122414,
+      "percent": "0.51%"
+    },
+    {
+      "itemId": 1050056,
+      "name": "Dark Anakamoon",
+      "chance": 122414,
+      "percent": "0.51%"
+    },
+    {
+      "itemId": 1051044,
+      "name": "Blue Anakarune",
+      "chance": 122414,
+      "percent": "0.51%"
+    },
+    {
+      "itemId": 1051045,
+      "name": "Red Anakarune",
+      "chance": 122414,
+      "percent": "0.51%"
+    },
+    {
+      "itemId": 1051046,
+      "name": "White Anakarune",
+      "chance": 122414,
+      "percent": "0.51%"
+    },
+    {
+      "itemId": 1051047,
+      "name": "Dark Anakarune",
+      "chance": 122414,
+      "percent": "0.51%"
+    },
+    {
+      "itemId": 1372014,
+      "name": "Evil Tale",
+      "chance": 122414,
+      "percent": "0.51%"
+    },
+    {
+      "itemId": 1382006,
+      "name": "Thorns",
+      "chance": 131818,
+      "percent": "0.55%"
+    },
+    {
+      "itemId": 1382011,
+      "name": "Mystic Cane",
+      "chance": 146078,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1002215,
+      "name": "Flame Golden Circlet",
+      "chance": 150000,
+      "percent": "0.63%"
+    },
+    {
+      "itemId": 1002216,
+      "name": "Aqua Golden Circlet",
+      "chance": 150000,
+      "percent": "0.63%"
+    },
+    {
+      "itemId": 1002217,
+      "name": "Orange Golden Circlet",
+      "chance": 150000,
+      "percent": "0.63%"
+    },
+    {
+      "itemId": 1002218,
+      "name": "Dark Golden Circlet",
+      "chance": 150000,
+      "percent": "0.63%"
+    },
+    {
+      "itemId": 1072140,
+      "name": "Pink Goldwind Shoes",
+      "chance": 150000,
+      "percent": "0.63%"
+    },
+    {
+      "itemId": 1072141,
+      "name": "Blue Goldwind Shoes",
+      "chance": 150000,
+      "percent": "0.63%"
+    },
+    {
+      "itemId": 1072142,
+      "name": "Purple Goldwind Shoes",
+      "chance": 150000,
+      "percent": "0.63%"
+    },
+    {
+      "itemId": 1072143,
+      "name": "Green Goldwind Shoes",
+      "chance": 150000,
+      "percent": "0.63%"
+    },
+    {
+      "itemId": 1082080,
+      "name": "Dark Penance",
+      "chance": 150000,
+      "percent": "0.63%"
+    },
+    {
+      "itemId": 1082081,
+      "name": "Red Pennance",
+      "chance": 150000,
+      "percent": "0.63%"
+    },
+    {
+      "itemId": 1082082,
+      "name": "Blue Pennance",
+      "chance": 150000,
+      "percent": "0.63%"
+    },
+    {
+      "itemId": 1050045,
+      "name": "Blue Calas",
+      "chance": 158333,
+      "percent": "0.66%"
+    },
+    {
+      "itemId": 1050046,
+      "name": "Red Calas",
+      "chance": 158333,
+      "percent": "0.66%"
+    },
+    {
+      "itemId": 1050047,
+      "name": "Orange Calas",
+      "chance": 158333,
+      "percent": "0.66%"
+    },
+    {
+      "itemId": 1050048,
+      "name": "White Calas",
+      "chance": 158333,
+      "percent": "0.66%"
+    },
+    {
+      "itemId": 1050049,
+      "name": "Dark Calas",
+      "chance": 158333,
+      "percent": "0.66%"
+    },
+    {
+      "itemId": 1051030,
+      "name": "Dark Calaf",
+      "chance": 158333,
+      "percent": "0.66%"
+    },
+    {
+      "itemId": 1051031,
+      "name": "White Calaf",
+      "chance": 158333,
+      "percent": "0.66%"
+    },
+    {
+      "itemId": 1051032,
+      "name": "Blue Calaf",
+      "chance": 158333,
+      "percent": "0.66%"
+    },
+    {
+      "itemId": 1051033,
+      "name": "Red Calaf",
+      "chance": 158333,
+      "percent": "0.66%"
+    },
+    {
+      "itemId": 1051034,
+      "name": "Orange Calaf",
+      "chance": 158333,
+      "percent": "0.66%"
+    },
+    {
+      "itemId": 1372007,
+      "name": "Cromi",
+      "chance": 158333,
+      "percent": "0.66%"
+    },
+    {
+      "itemId": 1382001,
+      "name": "Arc Staff",
+      "chance": 172222,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1002151,
+      "name": "Brown Guiltian",
+      "chance": 200000,
+      "percent": "0.84%"
+    },
+    {
+      "itemId": 1002152,
+      "name": "Blue Guiltian",
+      "chance": 200000,
+      "percent": "0.84%"
+    },
+    {
+      "itemId": 1002153,
+      "name": "Red Guiltian",
+      "chance": 200000,
+      "percent": "0.84%"
+    },
+    {
+      "itemId": 1002154,
+      "name": "Dark Guiltian",
+      "chance": 200000,
+      "percent": "0.84%"
+    },
+    {
+      "itemId": 1002155,
+      "name": "White Guiltian",
+      "chance": 200000,
+      "percent": "0.84%"
+    },
+    {
+      "itemId": 1072114,
+      "name": "Red Moon Shoes",
+      "chance": 200000,
+      "percent": "0.84%"
+    },
+    {
+      "itemId": 1072115,
+      "name": "Blue Moon Shoes",
+      "chance": 200000,
+      "percent": "0.84%"
+    },
+    {
+      "itemId": 1072116,
+      "name": "Gold Moon Shoes",
+      "chance": 200000,
+      "percent": "0.84%"
+    },
+    {
+      "itemId": 1072117,
+      "name": "Dark Moon Shoes",
+      "chance": 200000,
+      "percent": "0.84%"
+    },
+    {
+      "itemId": 1082062,
+      "name": "Red Arten",
+      "chance": 200000,
+      "percent": "0.84%"
+    },
+    {
+      "itemId": 1082063,
+      "name": "Blue Arten",
+      "chance": 200000,
+      "percent": "0.84%"
+    },
+    {
+      "itemId": 1082064,
+      "name": "Dark Arten",
+      "chance": 200000,
+      "percent": "0.84%"
+    },
+    {
+      "itemId": 1382019,
+      "name": "Hall Staff",
+      "chance": 200000,
+      "percent": "0.84%"
+    },
+    {
+      "itemId": 1050035,
+      "name": "Brown Starlight",
+      "chance": 213158,
+      "percent": "0.89%"
+    },
+    {
+      "itemId": 1050036,
+      "name": "Red Starlight",
+      "chance": 213158,
+      "percent": "0.89%"
+    },
+    {
+      "itemId": 1050037,
+      "name": "Green Starlight",
+      "chance": 213158,
+      "percent": "0.89%"
+    },
+    {
+      "itemId": 1050038,
+      "name": "Blue Starlight",
+      "chance": 213158,
+      "percent": "0.89%"
+    },
+    {
+      "itemId": 1050039,
+      "name": "Dark Starlight",
+      "chance": 213158,
+      "percent": "0.89%"
+    },
+    {
+      "itemId": 1051023,
+      "name": "Purple Moonlight",
+      "chance": 213158,
+      "percent": "0.89%"
+    },
+    {
+      "itemId": 1051024,
+      "name": "Red Moonlight",
+      "chance": 213158,
+      "percent": "0.89%"
+    },
+    {
+      "itemId": 1051025,
+      "name": "Blue Moonlight",
+      "chance": 213158,
+      "percent": "0.89%"
+    },
+    {
+      "itemId": 1051026,
+      "name": "Dark Moonlight",
+      "chance": 213158,
+      "percent": "0.89%"
+    },
+    {
+      "itemId": 1051027,
+      "name": "Brown Moonlight",
+      "chance": 213158,
+      "percent": "0.89%"
+    },
+    {
+      "itemId": 1372000,
+      "name": "Fairy Wand",
+      "chance": 213158,
+      "percent": "0.89%"
+    },
+    {
+      "itemId": 1372012,
+      "name": "Crystal Wand",
+      "chance": 213158,
+      "percent": "0.89%"
+    },
+    {
+      "itemId": 1002141,
+      "name": "Red Matty",
+      "chance": 235714,
+      "percent": "0.99%"
+    },
+    {
+      "itemId": 1002142,
+      "name": "Blue Matty",
+      "chance": 235714,
+      "percent": "0.99%"
+    },
+    {
+      "itemId": 1002143,
+      "name": "Green Matty",
+      "chance": 235714,
+      "percent": "0.99%"
+    },
+    {
+      "itemId": 1002144,
+      "name": "Brown Matty",
+      "chance": 235714,
+      "percent": "0.99%"
+    },
+    {
+      "itemId": 1002145,
+      "name": "Dark Matty",
+      "chance": 235714,
+      "percent": "0.99%"
+    },
+    {
+      "itemId": 1072089,
+      "name": "Purple Salt Shoes",
+      "chance": 235714,
+      "percent": "0.99%"
+    },
+    {
+      "itemId": 1072090,
+      "name": "Red Salt Shoes",
+      "chance": 235714,
+      "percent": "0.99%"
+    },
+    {
+      "itemId": 1072091,
+      "name": "Black Salt Shoes",
+      "chance": 235714,
+      "percent": "0.99%"
+    },
+    {
+      "itemId": 1082054,
+      "name": "Red Noel",
+      "chance": 235714,
+      "percent": "0.99%"
+    },
+    {
+      "itemId": 1082055,
+      "name": "Blue Noel",
+      "chance": 235714,
+      "percent": "0.99%"
+    },
+    {
+      "itemId": 1082056,
+      "name": "Dark Noel",
+      "chance": 235714,
+      "percent": "0.99%"
+    },
+    {
+      "itemId": 1382018,
+      "name": "Petal Staff",
+      "chance": 235714,
+      "percent": "0.99%"
+    },
+    {
+      "itemId": 1041051,
+      "name": "Red Amoria Top",
+      "chance": 253030,
+      "percent": "1.06%"
+    },
+    {
+      "itemId": 1041052,
+      "name": "Blue Amoria Top",
+      "chance": 253030,
+      "percent": "1.06%"
+    },
+    {
+      "itemId": 1041053,
+      "name": "Black Amoria Top",
+      "chance": 253030,
+      "percent": "1.06%"
+    },
+    {
+      "itemId": 1050002,
+      "name": "Blood Chaos Robe",
+      "chance": 253030,
+      "percent": "1.06%"
+    },
+    {
+      "itemId": 1050029,
+      "name": "Dark Chaos Robe",
+      "chance": 253030,
+      "percent": "1.06%"
+    },
+    {
+      "itemId": 1050030,
+      "name": "Blue Chaos Robe",
+      "chance": 253030,
+      "percent": "1.06%"
+    },
+    {
+      "itemId": 1050031,
+      "name": "White Chaos Robe",
+      "chance": 253030,
+      "percent": "1.06%"
+    },
+    {
+      "itemId": 1061047,
+      "name": "Red Amoria Skirt",
+      "chance": 253030,
+      "percent": "1.06%"
+    },
+    {
+      "itemId": 1061048,
+      "name": "Blue Amoria Skirt",
+      "chance": 253030,
+      "percent": "1.06%"
+    },
+    {
+      "itemId": 1061049,
+      "name": "Black Amoria Skirt",
+      "chance": 253030,
+      "percent": "1.06%"
+    },
+    {
+      "itemId": 1092029,
+      "name": "Esther Shield",
+      "chance": 253030,
+      "percent": "1.06%"
+    },
+    {
+      "itemId": 1372001,
+      "name": "Wizard Wand",
+      "chance": 253030,
+      "percent": "1.06%"
+    },
+    {
+      "itemId": 1072169,
+      "name": "Blue Snowshoes",
+      "chance": 283333,
+      "percent": "1.19%"
+    },
+    {
+      "itemId": 1092021,
+      "name": "Mystic Shield",
+      "chance": 283333,
+      "percent": "1.19%"
+    }
+  ]
+}

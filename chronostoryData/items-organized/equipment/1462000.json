@@ -25,75 +25,10 @@
     "subCategory": "Crossbow"
   },
   "randomStats": {
-    "incSTR": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
-    "incDEX": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
-    "incINT": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
-    "incLUK": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
     "incPAD": {
       "base": 44,
       "min": 43,
       "max": 45
-    },
-    "incMAD": {
-      "base": 0,
-      "min": 0,
-      "max": 1
-    },
-    "incPDD": {
-      "base": 0,
-      "min": 0,
-      "max": 14
-    },
-    "incMDD": {
-      "base": 0,
-      "min": 0,
-      "max": 14
-    },
-    "incACC": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
-    "incEVA": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
-    "incSpeed": {
-      "base": 0,
-      "min": 0,
-      "max": 1
-    },
-    "incJump": {
-      "base": 0,
-      "min": 0,
-      "max": 1
-    },
-    "incMHP": {
-      "base": 0,
-      "min": 0,
-      "max": 14
-    },
-    "incMMP": {
-      "base": 0,
-      "min": 0,
-      "max": 14
     }
   }
 }

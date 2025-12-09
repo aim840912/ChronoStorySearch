@@ -2,7 +2,7 @@
   "id": 2044607,
   "description": {
     "id": 2044607,
-    "name": "Scroll for Crossbow for ATT",
+    "name": "Scroll for Crossbow for ATT 15%",
     "description": "Improves attack on the Crossbow. nSuccess rate:15%, weapon attack+5, accuracy+3, DEX+1",
     "chineseName": "弩攻擊卷軸15%"
   },
@@ -14,11 +14,11 @@
     "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFC0lEQVR4nI1Xi7GqMBDNnbGBtBBL4JUQS8ASsAQsQUqQEqQEU8JNCS8luCXwzmbzA3XmZUYMEHJ2z35zWNdV//z8kEpjXe9aZjpd+F8bpYjyw/qujHaeBpVLuqf6Is7pwMAQwCrlvFJhB8qXrsPzIAJsgOL/z8+fm/rPsa6Pc/2U6CA3AcC2hwDLdvOul3eiPv/2YK/fsVGURdQyN7gErabpqvreKhH0/EhC/OGlB3l4hPZ/WYA7vpgFyAyYL0m7R5H+97ZlM48sMjPKHJEAd7ZTWmulsfW6kprORxbiFwIcDyIJ29kztQ5fPtMuE4MwcAQ0IWoSgbWuJtS6mrfMQ2UiWnBR5Bc1z1t5D1/kV4niuwBTAq7aFe/jeQIP3mNO0NbDgLKeYLUFnHZg3lqtlqWy1oCzY2ksCRfed57dLdozaUyZ0iwiVfKzKJHe+IMA2C7Aaj5gbgyECeqagEH5KYIL5R1zA3B3la21vlwuqv8LF1AuYhZ5c8TRjv5NVAU8NgDLD0ICfV7qB8SaA1MZXLxrqI+cuXlCDJga4TscknB9w26Nt66/i6BTu4IS7Sw+x3j8IsYy2/r3bqPtvN8C6uZG5KnaU7IFhSxYXJV405m2ogLAXeZPq7dElfmunp1hu/6mAltps++75s1eb/F5+LQMVF1Y++etg4c68GKjIwl+sYoSJ6PGD3XU/luubTTKtH8cullZbrpesllI7hE9m5Mghl8moRrPnOuiyVh4JLAByly3TrPRvIXYikCh3gY3K2NvcM9BXne2PM8SUwIQuwe1G5tYPewU3QwPP2Sc1lrBTwDvm/sST3FnCuJTzrVOt9MoyXD48pbtPsHuIyeLDnYPoY9CdHYsAjCwgfZ+WYoj61QM2SSdDTHBcDFiP9oDHVRTsXYU6JYU1oI3Fg9nKcRv/DJnnbdWzW71mdSvmjeQHKU5uCjlcYlIjwQkGLtwzIIqnQT4RH0Brzh77VFmF3hr/xxNSjgmqaSL6Wzfp/rdxcp1uojzjf2b1m+psKX9k/ab57YfmqTSbAm7MvD5OiebKzUjd927D9hbzQUodxn7scZOpRi+KSZJggjs1HVCGO5UYKbOU1DibG+pXTRnYKnbJrVragtQNG2rWLJt9AMumxWZPd2gFHu/0bbJ67zWaDSQ56cAgyPyalOoZScl7lYLEzX/Mcw2I6Vbbg1UqUo7e9tYRSPtC1JjPz6kpBcQqsDBx2xFG8EExIAt23dIKl6SkpV3PHdkQfl4aTZU0tNwZgpi874fq4BRAC9TVNgQuJnwJZw+RY5Dn8QC8Dhdag1+vUYkhW7A9zEZaM35EhlKhajFgdtY7iZfzwG4CBfYnNewjAHfUHAF8HT16utI757P+xwNQszogqpI3hjuimOuv3o3B9OxT2iVutfHiW3P82EY1O0mBWOaPTrOCvh43Fy5Idr6b+oivffwQdLyGspqw5aJI4SgHZpki/PH8TjFQ0P8an09ToSahcXWexePLrfbaPq+4w0pfaxUTnY7A+QOtp0DFWR25nq9zJAiDMNorR0M0RI1qumVjxoQFMAOvxhFCBcyBkGkAyXgglA6p23yKN0dlADlPQNPFGsrExKWcbxbvAX4wuD5iKHZsRZ2Lq2l+8dizy7AGgizoWimSzPXZhYRCQJH4GWZWWOSH04r00L4zXI2VA5xfsFRic0dHNuGP3wfDGWqvm+jzbkxnJC4jk59GTicOj4d/wOc8wwysEaM7QAAAABJRU5ErkJggg==",
     "slotMax": 0,
     "price": 1,
-    "incDEX": 1,
-    "incPAD": 5,
-    "incACC": 3,
     "tradeBlock": true,
-    "setCompleteCount": 0
+    "setCompleteCount": 0,
+    "incDEX": 3,
+    "incPAD": 5,
+    "incACC": 1
   },
   "typeInfo": {
     "overallCategory": "Use",

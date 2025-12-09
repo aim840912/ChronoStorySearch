@@ -26,45 +26,15 @@
     "subCategory": "Glove"
   },
   "randomStats": {
-    "incSTR": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
-    "incDEX": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
     "incINT": {
       "base": 2,
       "min": 0,
       "max": 5
     },
-    "incLUK": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
-    "incPAD": {
-      "base": 0,
-      "min": 0,
-      "max": 2
-    },
-    "incMAD": {
-      "base": 0,
-      "min": 0,
-      "max": 2
-    },
     "incPDD": {
       "base": 12,
       "min": 0,
       "max": 27
-    },
-    "incMDD": {
-      "base": 0,
-      "min": 0,
-      "max": 15
     }
   }
 }

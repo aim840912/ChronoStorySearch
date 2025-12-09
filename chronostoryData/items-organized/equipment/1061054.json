@@ -26,75 +26,15 @@
     "subCategory": "Bottom"
   },
   "randomStats": {
-    "incSTR": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
-    "incDEX": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
-    "incINT": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
-    "incLUK": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
-    "incPAD": {
-      "base": 0,
-      "min": 0,
-      "max": 1
-    },
-    "incMAD": {
-      "base": 0,
-      "min": 0,
-      "max": 1
-    },
     "incPDD": {
       "base": 18,
       "min": 6,
       "max": 31
     },
-    "incMDD": {
-      "base": 0,
-      "min": 0,
-      "max": 13
-    },
-    "incACC": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
-    "incEVA": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
-    "incSpeed": {
-      "base": 0,
-      "min": 0,
-      "max": 1
-    },
-    "incJump": {
-      "base": 0,
-      "min": 0,
-      "max": 1
-    },
     "incMHP": {
       "base": 10,
       "min": 0,
       "max": 23
-    },
-    "incMMP": {
-      "base": 0,
-      "min": 0,
-      "max": 13
     }
   }
 }

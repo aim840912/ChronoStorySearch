@@ -36,65 +36,10 @@
       "min": 0,
       "max": 3
     },
-    "incINT": {
-      "base": 0,
-      "min": 0,
-      "max": 2
-    },
-    "incLUK": {
-      "base": 0,
-      "min": 0,
-      "max": 2
-    },
-    "incPAD": {
-      "base": 0,
-      "min": 0,
-      "max": 2
-    },
-    "incMAD": {
-      "base": 0,
-      "min": 0,
-      "max": 2
-    },
     "incPDD": {
       "base": 26,
       "min": 11,
       "max": 41
-    },
-    "incMDD": {
-      "base": 0,
-      "min": 0,
-      "max": 15
-    },
-    "incACC": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
-    "incEVA": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
-    "incSpeed": {
-      "base": 0,
-      "min": 0,
-      "max": 2
-    },
-    "incJump": {
-      "base": 0,
-      "min": 0,
-      "max": 1
-    },
-    "incMHP": {
-      "base": 0,
-      "min": 0,
-      "max": 15
-    },
-    "incMMP": {
-      "base": 0,
-      "min": 0,
-      "max": 15
     }
   }
 }

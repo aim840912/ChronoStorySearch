@@ -26,45 +26,15 @@
     "subCategory": "Top"
   },
   "randomStats": {
-    "incSTR": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
     "incDEX": {
       "base": 2,
       "min": 0,
       "max": 5
     },
-    "incINT": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
-    "incLUK": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
-    "incPAD": {
-      "base": 0,
-      "min": 0,
-      "max": 2
-    },
-    "incMAD": {
-      "base": 0,
-      "min": 0,
-      "max": 2
-    },
     "incPDD": {
       "base": 26,
       "min": 11,
       "max": 41
-    },
-    "incMDD": {
-      "base": 0,
-      "min": 0,
-      "max": 15
     }
   }
 }
