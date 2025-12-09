@@ -17,5 +17,6 @@
     "category": "Weapon Scroll",
     "subCategory": "Two-Handed Blunt Weapon"
   },
-  "fetchedFrom": "chronostory-api"
+  "fetchedFrom": "chronostory-api",
+  "isGachapon": true
 }

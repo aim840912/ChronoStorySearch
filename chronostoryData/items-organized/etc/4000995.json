@@ -1,0 +1,24 @@
+{
+  "id": 4000995,
+  "description": {
+    "id": 4000995,
+    "name": "Supercharged Battery",
+    "description": "A supercharged battery dropped by Turbo Robo",
+    "chineseName": null
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": null,
+    "icon": null,
+    "slotMax": 200,
+    "price": 0,
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop"
+  }
+}

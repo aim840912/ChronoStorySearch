@@ -14,8 +14,7 @@
     "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACPklEQVR4nK2WgXGDMBAE5Rk3QAu0QErAJTgtuAS7BFNCaIESohJCCVEJoQSikzn5ES9snNwMI1kgrU7/D96b1zQ+8cxOG9wCjJDP89k459SHbN+HtnNu1KDPAEdCpMqynP3GBgDjRip/9be5M+gj4JiCIrAojRvuLiWM0qBrwAUMEA3adl32iFNoDjh+HI+rjtLfUkVZhXZw/eKeBgwxkzHC4mVVmfbSxrG6rkObugPMTqDa9wGVLlNgcIYFDk3jz/TLuCnr0F6vH+ZyOYXf1toIVV3iGQ8jVHMYYHCWiweUQsuiwHGEOXRXmLwelgXixGSBSxwtoFLvp3d1rnRpJpcERnfYdeMXxnFa20Vo3IC99ev6GGHPuGMcZw4lbHd4i8WOcYpxw2bWyiGnCMREwADBYmd/dEgctE3fm/8SgDEzpeiEjik4l6peAEZ33z4ZtGJu2yb2JZzx2wwkzPa3WKUv5lPXzX6n9zcDcaSEQWlRI67MShwpM/ploJR2RMxSQv+iGZAwuEMfLYpcJkpaMi8Bc4HHOBKGEIhuZW1uBe580oyoN0h7IadQiLWZlsWgQOz95X3/WmABQjXHhIZZHox+pizUP0/UXj4Ep2ufHEAloPYbtMZsqsVFlvJ1JrWxBOT7e3HCKRBOC+/0Rw5q+chvIhQidIvTwdzDOoiW1wxYiOsg+jjq+QfQmPSFfplaLYdwuekaCOTipWg5DrVmXdpnUEvYhcPcw+pk5V7aT68IpG0J1XZdZOBrG5zd+wX2imjvuwE3zwAAAABJRU5ErkJggg==",
     "slotMax": 200,
     "price": 25,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Etc",

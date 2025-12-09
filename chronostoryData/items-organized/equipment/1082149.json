@@ -25,5 +25,6 @@
     "overallCategory": "Equip",
     "category": "Armor",
     "subCategory": "Glove"
-  }
+  },
+  "isGachapon": true
 }

@@ -28,5 +28,6 @@
     "overallCategory": "Equip",
     "category": "One-Handed Weapon",
     "subCategory": "One-Handed Sword"
-  }
+  },
+  "isGachapon": true
 }

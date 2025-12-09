@@ -14,8 +14,7 @@
     "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAYAAACgoey0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACzUlEQVR4nKWWgXXjIAyGxXu3ABmBjkBHcEZwV+gIlxUywnmEMkI9QhghjBBGcCUBtoKNk+Z4jxgjw/dLCMgfeL5MG30KXizPgBl4uU1h7okAWgO8HdTLYvbAPOltSsBYfnRmY/tyRVt+z4+nxWyB74ClaDm7Th7HuIgoNhpH7z4EcGeHRnyOgxSjavAdUEO7xMLXy7N8H9DonAc/jgyNqKKzfdA6Qv/3n/k4vhFHFfAkPdyD7tlHH8ENDnl+VqSNwYeB6FEM1q/vKxCcwNNUhfW3hb0cxuSllBZTK0bsNxYCFefIYn6znZrQM64leZQxMFMZGkFbi/YkSqMA8A7+C+wwtOPoMbQZZnSCI4yABsPMcIJyQligtabyEpiGeoRh4HAiDZGAQSf38ybv+p6z3bsBTNdhX/Fat8E8PIqshSWA8zcxhZEMlsC2Y8+pz1qD602RCGBQgKH1paVgQRbOQwaLbZgSxYc0WVhs5F2UVMpYsY9CYCUcXgo/TyQ3O/b3OkVq5TGtGZUOFYf8AQmgicbhjOAoNjFuEzDzYULv1IizMBzbd+w5e4tgmvL0eaSFn/cxd7KX3I7czq/sBWenLqEpDQoJwvigGPN6YwKhcBpD1Zd+hJ+GT4auPC5h7Ux1RDDHJtCqpBCkqKZQ97iunaGwQoJi/yCgBawOSk1XvH32TizKTEqWoiNFtBzWYYb3nWVosqcj07nTHVR6rOStchVXoMn5QZ4sZ6qeg81LAClrCVz2bgLDJlSCQRq3RNSTyj1G4bQ5D8oqUc7gmbwJrcGybIr4vtyWu7nA80klMo+hOK4J3QNviji+H2YRX1kEo/OeJrZSytTjXgXXItitj/fDrfHNoegRffXBtwvW1bPuOzbG2epdXlelboJ1o7ZEbEG2+qmGXGMNLhAjnhLy6M9JC7oqLY9bg1oe1ba6XdcVuITjUUi3bspHQu9sP8rgfHYlSTrNAAAAAElFTkSuQmCC",
     "slotMax": 0,
     "price": 400,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Etc",

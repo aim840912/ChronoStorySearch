@@ -30,5 +30,6 @@
       "max": 57
     }
   },
-  "fetchedFrom": "chronostory-api"
+  "fetchedFrom": "chronostory-api",
+  "isGachapon": true
 }

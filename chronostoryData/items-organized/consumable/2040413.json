@@ -16,12 +16,12 @@
     "price": 1,
     "incLUK": 2,
     "incEVA": 1,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Armor Scroll",
     "subCategory": "Topwear"
-  }
+  },
+  "isGachapon": true
 }

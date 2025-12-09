@@ -15,12 +15,12 @@
     "slotMax": 0,
     "price": 1,
     "incPAD": 1,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
     "subCategory": "One-Handed Sword"
-  }
+  },
+  "isGachapon": true
 }

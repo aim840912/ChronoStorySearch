@@ -17,12 +17,12 @@
     "incINT": 5,
     "incMMP": 10,
     "incMDD": 3,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Armor Scroll",
     "subCategory": "Overall"
-  }
+  },
+  "isGachapon": true
 }

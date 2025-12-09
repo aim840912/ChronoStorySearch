@@ -17,12 +17,12 @@
     "incDEX": 1,
     "incPAD": 5,
     "incACC": 3,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
     "subCategory": "Crossbow"
-  }
+  },
+  "isGachapon": true
 }

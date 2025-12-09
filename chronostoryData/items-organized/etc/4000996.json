@@ -13,8 +13,7 @@
     "icon": "",
     "slotMax": 1000,
     "price": 75,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Etc",

@@ -14,8 +14,7 @@
     "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAZCAYAAAAv3j5gAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB0UlEQVR4nI2VD5XDIAzG6XszwCRgoZVwszALs3AWTsIszMJOwirhagEJXCgJpCFky3uU8qf58SVQTu4zS8bY9ImDd6AdkJ6iN0LxUDag3OoiTKAFSjvAt44bMiI8nr846YGU6w4cwkaglF7olQO2oiLbxZf2a4VGKEALpoFS+msOc31fm/MnEBcoL49qA9bQl+41lB1MgoqSzdUc7AbOLrFA8nuesqwIc67lzID1ivCDCsO+PSczKsghm8Wc6EzjoKKGYBI6szaNBd2ppuqoiOIuVxhE24s2hY63hR1BUThl56UuQjrFUHZzTJDDD1hyD6GSCmgcYBE2h+cb6C2IVjmCSFgusFH8F9RrOcxemd+HjhzzVctxmpPP14xlLX3+g9BN0wV/O5uiSuYLD/FeR1RCjr5LNVakqeNtKuSRtnfOT2hAzSSoqKL/HN/uZIGpwTPG83L+6dWMFE3TgiGU4ZKbA8cpL1rILFBT9nDHHMk6NjUWxAIV2BUvvjtTwjZIhmCoTMg7UP2Y3aKandkyuB22hQR5UdP74vRjm21W+kSAXSSQHxQNOnKq9dO/fzsxp4HV3OlIiWUdnCsaTbKutGi8H8rJ9fepBPM+DWotrL7/Ax/hxqvdctDiAAAAAElFTkSuQmCC",
     "slotMax": 0,
     "price": 50,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",

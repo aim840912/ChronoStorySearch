@@ -17,12 +17,12 @@
     "incDEX": 3,
     "incPAD": 3,
     "incACC": 5,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
     "subCategory": "One-Handed BW"
-  }
+  },
+  "isGachapon": true
 }

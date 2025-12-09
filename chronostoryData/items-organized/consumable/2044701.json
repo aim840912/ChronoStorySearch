@@ -16,12 +16,12 @@
     "price": 1,
     "incPAD": 2,
     "incACC": 1,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
     "subCategory": "Claw"
-  }
+  },
+  "isGachapon": true
 }

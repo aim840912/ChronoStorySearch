@@ -51,5 +51,6 @@
       "min": 0,
       "max": 71
     }
-  }
+  },
+  "isGachapon": true
 }
