@@ -1,0 +1,1621 @@
+{
+  "name": "Henesys Gachapon",
+  "location": "Henesys",
+  "totalItems": 269,
+  "items": [
+    {
+      "itemId": 1442002,
+      "name": "Eviscerator",
+      "chance": 33333,
+      "percent": "0.10%"
+    },
+    {
+      "itemId": 1002377,
+      "name": "Green Valhalla Helmet",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1002378,
+      "name": "Blue Valhalla Helmet",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1002379,
+      "name": "Dark Valhalla Helmet",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1003840,
+      "name": "Shadow Knight Hat",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1040120,
+      "name": "Green Neos",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1040121,
+      "name": "Blue Neos",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1040122,
+      "name": "Black Neos",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1041122,
+      "name": "Green Lucida",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1041123,
+      "name": "Purple Lucida",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1041124,
+      "name": "Dark Lucida",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1060109,
+      "name": "Green Neos Pants",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1060110,
+      "name": "Blue Neos Pants",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1060111,
+      "name": "Black Neos Pants",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1061121,
+      "name": "Green Lucida Skirt",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1061122,
+      "name": "Purple Lucida Skirt",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1061123,
+      "name": "Dark Lucida Skirt",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1072220,
+      "name": "Green Crescent Boots",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1072221,
+      "name": "Blue Crescent Boots",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1072222,
+      "name": "Dark Crescent Boots",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1082139,
+      "name": "Green Korben",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1082140,
+      "name": "Blue Korben",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1082141,
+      "name": "Dark Korben",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1092036,
+      "name": "Green Hoflon",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1092037,
+      "name": "Violet Hoflon",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1092038,
+      "name": "Blue Hoflon",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1302056,
+      "name": "Sparta",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1312030,
+      "name": "Tomahawk",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1322045,
+      "name": "Battle Hammer",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1402035,
+      "name": "The Beheader",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1412021,
+      "name": "Tavar",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1422027,
+      "name": "Golden Smith Hammer",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1432030,
+      "name": "Pinaka",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1442044,
+      "name": "Zedbug",
+      "chance": 50000,
+      "percent": "0.15%"
+    },
+    {
+      "itemId": 1002528,
+      "name": "Green Grace Helmet",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1002529,
+      "name": "Blue Grace Helmet",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1002530,
+      "name": "Red Grace Helmet",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1002531,
+      "name": "Silver Grace Helmet",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1002532,
+      "name": "Dark Grace Helmet",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1040111,
+      "name": "Green Commodore",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1040112,
+      "name": "Blue Commodore",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1040113,
+      "name": "Dark Commodore",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1041119,
+      "name": "Green Valkyrie",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1041120,
+      "name": "Purple Valkyrie",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1041121,
+      "name": "Dark Valkyrie",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1060100,
+      "name": "Green Commodore Pants",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1060101,
+      "name": "Blue Commodore Pants",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1060102,
+      "name": "Dark Commodore Pants",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1061118,
+      "name": "Green Valkyrie Skirt",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1061119,
+      "name": "Purple Valkyrie Skirt",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1061120,
+      "name": "Blood Valkyrie Skirt",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1072196,
+      "name": "Emerald War Greave",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1072197,
+      "name": "Orihalcon War Greave",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1072198,
+      "name": "Dark War Greave",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1082128,
+      "name": "Green Imperial",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1082129,
+      "name": "Purple Imperial",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1082130,
+      "name": "Dark Imperial",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1092026,
+      "name": "Bronze Kalkan",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1092027,
+      "name": "Silver Kalkan",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1092028,
+      "name": "Gold Kalkan",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1302023,
+      "name": "Fraute",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1312015,
+      "name": "Vifennis",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1322029,
+      "name": "Ruin Hammer",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1402005,
+      "name": "Berzerker",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1402016,
+      "name": "Devil's Sunrise",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1412010,
+      "name": "Colonian Axe",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1422013,
+      "name": "Leomite",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1432011,
+      "name": "Fairfrozen",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1442020,
+      "name": "Hellslayer",
+      "chance": 61111,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1002338,
+      "name": "Red Dragon Babuta",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1002339,
+      "name": "Blue Dragon Babuta",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1002340,
+      "name": "Dark Dragon Babuta",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1050080,
+      "name": "Green Battle Road",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1050081,
+      "name": "Red Battle Road",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1050082,
+      "name": "Blue Battle Road",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1050083,
+      "name": "Dark Battle Road",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1051077,
+      "name": "Yellow Battle Empress",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1051078,
+      "name": "Red Battle Empress",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1051079,
+      "name": "Blue Battle Empress",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1051080,
+      "name": "Dark Battle Empress",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1072210,
+      "name": "Red Rivers Boots",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1072211,
+      "name": "Blue Rivers Boots",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1072212,
+      "name": "Dark Rivers Boots",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1082114,
+      "name": "Sapphire Emperor",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1082115,
+      "name": "Emerald Emperor",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1082116,
+      "name": "Blood Emperor",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1082117,
+      "name": "Dark Emperor",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1092023,
+      "name": "Steel Aquila Shield",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1092024,
+      "name": "Silver Aquila Shield",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1092025,
+      "name": "Gold Aquila Shield",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1302018,
+      "name": "Khan",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1312011,
+      "name": "Gaea",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1322028,
+      "name": "Heaven's Justice",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1402004,
+      "name": "Blue Screamer",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1402015,
+      "name": "Heaven's Gate",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1412009,
+      "name": "Helios",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1422012,
+      "name": "The Morningstar",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1432010,
+      "name": "Omega Spear",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1442019,
+      "name": "Eclipse",
+      "chance": 75000,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1322020,
+      "name": "Bent Judgement",
+      "chance": 83333,
+      "percent": "0.25%"
+    },
+    {
+      "itemId": 1002030,
+      "name": "Silver Planet",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1002094,
+      "name": "Bronze Planet",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1002095,
+      "name": "Mithril Planet",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1040102,
+      "name": "Bronze Platine",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1040103,
+      "name": "Mithril Platine",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1040104,
+      "name": "Orihalcon Platine",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1041097,
+      "name": "Aqua Platina",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1041098,
+      "name": "Violet Platina",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1041099,
+      "name": "Bloody Platina",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1060090,
+      "name": "Bronze Platine Pants",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1060091,
+      "name": "Mithril Platine Pants",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1060092,
+      "name": "Orihalcon Platine Pants",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1061096,
+      "name": "Aqua Platina Pants",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1061097,
+      "name": "Violet Platina Pants",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1061098,
+      "name": "Blood Platina Pants",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1072154,
+      "name": "Blue Carzen Boots",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1072155,
+      "name": "Purple Carzen Boots",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1072156,
+      "name": "Dark Carzen Boots",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1082103,
+      "name": "Bronze Husk",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1082104,
+      "name": "Mithril Husk",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1082105,
+      "name": "Dark Husk",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1092015,
+      "name": "Steel Ancient Shield",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1092016,
+      "name": "Silver Ancient Shield",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1092017,
+      "name": "Gold Ancient Shield",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1302012,
+      "name": "Red Katana",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1312010,
+      "name": "Mikhail",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1322019,
+      "name": "The Judgement",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1402012,
+      "name": "Doombringer",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1412008,
+      "name": "Chrono",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1422010,
+      "name": "Gigantic Sledge",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1432007,
+      "name": "Redemption",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1442008,
+      "name": "The Gold Dragon",
+      "chance": 92857,
+      "percent": "0.28%"
+    },
+    {
+      "itemId": 1002029,
+      "name": "Red Oriental Helmet",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1002084,
+      "name": "Blue Oriental Helmet",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1040090,
+      "name": "Green Orientican",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1040091,
+      "name": "Red Orientican",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1040092,
+      "name": "Blue Orientican",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1040093,
+      "name": "Dark Orientican",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1041091,
+      "name": "Green Ice Queen",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1041092,
+      "name": "Red Ice Queen",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1041093,
+      "name": "Blue Ice Queen",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1060079,
+      "name": "Green Orientican Pants",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1060080,
+      "name": "Red Orientican Pants",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1060081,
+      "name": "Blue Orientican Pants",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1060082,
+      "name": "Dark Orientican Pants",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1061090,
+      "name": "Green Ice Queen Skirt",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1061091,
+      "name": "Red Ice Queen Skirt",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1061092,
+      "name": "Blue Ice Queen Skirt",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1072147,
+      "name": "Sapphire Camel Boots",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1072148,
+      "name": "Orihalcon Camel Boots",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1072149,
+      "name": "Blood Camel Boots",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1082059,
+      "name": "Bronze Clench",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1082060,
+      "name": "Sapphire Clench",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1082061,
+      "name": "Dark Clench",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1092009,
+      "name": "Wooden Legend Shield",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1092010,
+      "name": "Silver Legend Shield",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1092011,
+      "name": "Adamantium Legend Shield",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1302011,
+      "name": "Neocora",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1312009,
+      "name": "Hawkhead",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1322018,
+      "name": "Tamus",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1402011,
+      "name": "Sparta",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1412007,
+      "name": "The Shining",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1422009,
+      "name": "The Blessing",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1432006,
+      "name": "Holy Spear",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1442010,
+      "name": "Skylar",
+      "chance": 116667,
+      "percent": "0.35%"
+    },
+    {
+      "itemId": 1002022,
+      "name": "Old Steel Nordic Helm",
+      "chance": 131818,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 1002100,
+      "name": "Old Bronze Nordic Helm",
+      "chance": 131818,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 1002101,
+      "name": "Old Mithril Nordic Helm",
+      "chance": 131818,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 1002028,
+      "name": "Silver Crusader Helm",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1002085,
+      "name": "Mithril Crusader Helm",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1002086,
+      "name": "Bronze Crusader Helm",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1040087,
+      "name": "Blue Shouldermail",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1040088,
+      "name": "Oaker Shouldermail",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1040089,
+      "name": "Umber Shouldermail",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1041087,
+      "name": "Red Shouldermail",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1041088,
+      "name": "Ivory Shouldermail",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1041089,
+      "name": "Dark Shouldermail",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1060076,
+      "name": "Blue Shouldermail Pants",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1060077,
+      "name": "Oaker Shouldermail Pants",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1060078,
+      "name": "Umber Shouldermail Pants",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1061086,
+      "name": "Red Shouldermail Pants",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1061087,
+      "name": "Ivory Shouldermail Pants",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1061088,
+      "name": "Dark Shouldermail Pants",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1072132,
+      "name": "Emerald Hildon Boots",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1072133,
+      "name": "Mithril Hildon Boots",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1072134,
+      "name": "Orihalcon Hildon Boots",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1072135,
+      "name": "Gold Hildon Boots",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1082009,
+      "name": "Steel Brist",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1082010,
+      "name": "Mithril Brist",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1082011,
+      "name": "Gold Brist",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1092004,
+      "name": "Skull Shield",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1302010,
+      "name": "Jeweled Katar",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1312008,
+      "name": "Buck",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1322017,
+      "name": "Knuckle Mace",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1402003,
+      "name": "Lion's Fang",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1412003,
+      "name": "The Rising",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1422005,
+      "name": "Golden Mole",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1432004,
+      "name": "Serpent's Tongue",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1442005,
+      "name": "The Nine Dragons",
+      "chance": 150000,
+      "percent": "0.46%"
+    },
+    {
+      "itemId": 1002024,
+      "name": "Emerald Dome",
+      "chance": 162766,
+      "percent": "0.49%"
+    },
+    {
+      "itemId": 1002091,
+      "name": "Dark Dome",
+      "chance": 162766,
+      "percent": "0.49%"
+    },
+    {
+      "itemId": 1302015,
+      "name": "Hero's Gladius",
+      "chance": 172222,
+      "percent": "0.52%"
+    },
+    {
+      "itemId": 1302019,
+      "name": "Nameless Sword",
+      "chance": 172222,
+      "percent": "0.52%"
+    },
+    {
+      "itemId": 1002045,
+      "name": "Blue Bone Helm",
+      "chance": 188095,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1002046,
+      "name": "Red Bone Helm",
+      "chance": 188095,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1002021,
+      "name": "Steel Nordic Helm",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1002025,
+      "name": "Red Duke",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1002092,
+      "name": "Yellow Duke",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1002093,
+      "name": "Blue Duke",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1002098,
+      "name": "Gold Nordic Helm",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1002099,
+      "name": "Mithril Nordic Helm",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1040000,
+      "name": "Yellow Jangoon Armor",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1040085,
+      "name": "Maroon Jangoon Armor",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1040086,
+      "name": "Blue Jangoon Armor",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1041084,
+      "name": "Red Jangoon Armor",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1041085,
+      "name": "Brown Jangoon Armor",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1041086,
+      "name": "Black Jangoon Armor",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1060000,
+      "name": "Black Jangoon Pants",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1060074,
+      "name": "White Jangoon Pants",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1060075,
+      "name": "Brown Jangoon Pants",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1061083,
+      "name": "Red Jangoon Skirt",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1061084,
+      "name": "Brown Jangoon Skirt",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1061085,
+      "name": "Black Jangoon Skirt",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1072000,
+      "name": "Brown Jangoon Shoes",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1072126,
+      "name": "Maroon Jangoon Shoes",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1072127,
+      "name": "Blue Jangoon Shoes",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1082023,
+      "name": "Iron Knuckle",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1082024,
+      "name": "Adamantium Knuckle",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1082025,
+      "name": "Dark Knuckle",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1092012,
+      "name": "Steel Tower Shield",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1092013,
+      "name": "Mithril Tower Shield",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1092014,
+      "name": "Adamantium Tower Shield",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1302009,
+      "name": "Traus",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1312007,
+      "name": "Blue Counter",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1322016,
+      "name": "Jacker",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1402007,
+      "name": "Zard",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1412005,
+      "name": "Sabretooth",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1422007,
+      "name": "Titan",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1432005,
+      "name": "Zeco",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1442009,
+      "name": "Crescent Polearm",
+      "chance": 200000,
+      "percent": "0.61%"
+    },
+    {
+      "itemId": 1002004,
+      "name": "Great Brown Helmet",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1002047,
+      "name": "Great Red Helmet",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1002048,
+      "name": "Great Blue Helmet",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1040029,
+      "name": "Blue Dragon",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1040030,
+      "name": "Gold Dragon",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1050000,
+      "name": "White Crusader Chainmail",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1050021,
+      "name": "Blue Crusader Chainmail",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1050022,
+      "name": "Dark Crusader Chainmail",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1051001,
+      "name": "Emerald Fitted Mail",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1051014,
+      "name": "Sapphire Fitted Mail",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1051015,
+      "name": "Blood Fitted Mail",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1051016,
+      "name": "Silver Fitted Mail",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1060020,
+      "name": "White Martial Arts Shorts",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1072002,
+      "name": "Steel Trigger",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1072112,
+      "name": "Mithril Trigger",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1072113,
+      "name": "Dark Trigger",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1082008,
+      "name": "Steel Briggon",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1082035,
+      "name": "Yellow Briggon",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1082036,
+      "name": "Dark Briggon",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1092007,
+      "name": "Battle Shield",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1302004,
+      "name": "Cutlus",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1312006,
+      "name": "Dankke",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1322015,
+      "name": "Heavy Hammer",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1402006,
+      "name": "Lionheart",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1412004,
+      "name": "Niam",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1422008,
+      "name": "Sledgehammer",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1432003,
+      "name": "Nakamaki",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1442003,
+      "name": "Axe Pole Arm",
+      "chance": 235714,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1072168,
+      "name": "Red Snowshoes",
+      "chance": 283333,
+      "percent": "0.86%"
+    }
+  ]
+}

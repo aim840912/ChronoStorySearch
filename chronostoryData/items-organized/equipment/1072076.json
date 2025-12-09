@@ -27,35 +27,10 @@
     "subCategory": "Shoes"
   },
   "randomStats": {
-    "incSTR": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
-    "incDEX": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
     "incINT": {
       "base": 1,
       "min": 0,
       "max": 4
-    },
-    "incLUK": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
-    "incPAD": {
-      "base": 0,
-      "min": 0,
-      "max": 2
-    },
-    "incMAD": {
-      "base": 0,
-      "min": 0,
-      "max": 2
     },
     "incPDD": {
       "base": 11,

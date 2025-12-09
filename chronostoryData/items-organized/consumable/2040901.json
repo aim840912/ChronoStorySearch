@@ -2,7 +2,7 @@
   "id": 2040901,
   "description": {
     "id": 2040901,
-    "name": "Scroll for Shield for DEF 60%",
+    "name": "Scroll for Shield for Defense 60%",
     "description": "Improves weapon def. on the shield.\\nSuccess rate:60%, weapon def.+2, magic def.+1. The success rate of this scroll can be enhanced by Vega's Spell.",
     "chineseName": "盾牌防禦卷軸60%"
   },
@@ -14,9 +14,11 @@
     "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC7ElEQVR4nKWWgXXjIAxA5fduAW4EOgIdgY7gjJCOUI+QjBCPEEY4RjhGKCtoBJ+EAYONnaSnPJ4dwHxJCKRf8P8yvTC3Sy8/AVeg79tXPSpEeEjtwVsJZriC7jUAAryPJn3bPQvOsO/7pR7B7eQSqpQKfep2g+l2gevpDQYD0zPgiWFSOfBOzSBRWtj4AnFuSZHeADoD47hMeQSOULZALSBsmEld3jsaQpriwI4y6uDBfApQXwhaCzAGH4Knv5dzhArIPvWJU8CjF4SQ1DA0pRVYY0kZBCkF2AFg8Pmb4z0OXiSNEWUNKWmxg6aFuApe5h+9ZFABTC+HYGctrUYrYr8Zm73tG31RqcUhHTRkDzz9OWtQvQdnNDRDt2LwvorsfrYej76Bh8GFu4uziBjSYh3arUh/Etx9jHa6o6LDbylIVAUtQWtFZgV/Di4WrgFrBRbY0s+K6t7BHRScjOPLZ7PPD6JazNFa7t9KgWT9ek89xx3u7/NxVDsHfM36Hdh6z4MC83kC64qz/yK4o3M4SbqxFLnNkfvWVm8E+SxHpeipzg4k3WAn6zfufjk7BSuTC5NR1bO4zBFgL8RfA8djlQFL5M2ADIqeQViUfBHccVTe6cqc3S1rEL2o8zn8l1qCNw4GSoUsWsuUmn8EriRAGpKh12v2rHWeEsVz4GYJ803JO2/TZj8ZKgJ0vI4gc5TPg1wMfLpwn++e45h3SXPnoSllAZAVmfeZcy6nvnJQ9Uhbc2zxxFZV0HWVkTrT5Y/zfw4c8+nqK5QLASEOAytb7Ay5SV9qKKbITIkCY9cSzayElBL0WYEbfbhw2FIecUakfLyfFuugSe7DArYokoCl2NEFOFBN9XG1yzoAv6E8Xytw93YaQpmj+lnz2craMhY6WrAry9hH0asKKBYtB1f3PowTDPBIyhnN+jLCWv3cfGxYHqcuLsZNFs8SUhRfT0szwloXSGnJ+qOjegYP3tdtA07ueFSy7+W8I0WrsX+ykKCx3lvCnQAAAABJRU5ErkJggg==",
     "slotMax": 0,
     "price": 1,
-    "incPDD": 2,
-    "incMDD": 1,
-    "setCompleteCount": 0
+    "setCompleteCount": 0,
+    "incEVA": 3,
+    "incMHP": 15,
+    "incPDD": 15,
+    "incMDD": 15
   },
   "typeInfo": {
     "overallCategory": "Use",

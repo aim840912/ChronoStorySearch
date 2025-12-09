@@ -1,0 +1,1207 @@
+{
+  "name": "Perion Gachapon",
+  "location": "Perion",
+  "totalItems": 200,
+  "items": [
+    {
+      "itemId": 1452025,
+      "name": "Blue Metus",
+      "chance": 33333,
+      "percent": "0.13%"
+    },
+    {
+      "itemId": 1002406,
+      "name": "Red Arnah Cap",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1002407,
+      "name": "Blue Arnah Cap",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1002408,
+      "name": "Green Arnah Cap",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1050106,
+      "name": "Green Arzuna",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1050107,
+      "name": "Blue Arzuna",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1050108,
+      "name": "Red Arzuna",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1051105,
+      "name": "Green Armis",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1051106,
+      "name": "Blue Armis",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1051107,
+      "name": "Red Armis",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1072227,
+      "name": "Red Arnah Shoes",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1072228,
+      "name": "Blue Arnah Shoes",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1072229,
+      "name": "Green Arnah Shoes",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1082158,
+      "name": "Red Arcina",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1082159,
+      "name": "Blue Arcina",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1082160,
+      "name": "Green Arcina",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1200004,
+      "name": "Diamond Arrow for Bow",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1201004,
+      "name": "Diamond Bolt for Crossbow",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1452019,
+      "name": "White Nisrock",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1452020,
+      "name": "Golden Nisrock",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1452021,
+      "name": "Dark Nisrock",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1462015,
+      "name": "White Neschere",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1462016,
+      "name": "Golden Neschere",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1462017,
+      "name": "Dark Neschere",
+      "chance": 50000,
+      "percent": "0.19%"
+    },
+    {
+      "itemId": 1002402,
+      "name": "Red Arlic Helmet",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1002403,
+      "name": "Blue Arlic Helmet",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1002404,
+      "name": "Green Arlic Helmet",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1002405,
+      "name": "Dark Arlic Helmet",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1050088,
+      "name": "Red Ades",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1050089,
+      "name": "Blue Ades",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1050090,
+      "name": "Green Ades",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1050091,
+      "name": "Dark Ades",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1051082,
+      "name": "Red Anes",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1051083,
+      "name": "Blue Anes",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1051084,
+      "name": "Green Anes",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1051085,
+      "name": "Dark Anes",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1072203,
+      "name": "Red Ades Shoes",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1072204,
+      "name": "Green Ades Shoes",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1072205,
+      "name": "Dark Ades Shoes",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1082125,
+      "name": "Red Focus",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1082126,
+      "name": "Green Focus",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1082127,
+      "name": "Dark Focus",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1452017,
+      "name": "Metus",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1452026,
+      "name": "Black Metus",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1462018,
+      "name": "Casa Crow",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1462022,
+      "name": "Yellow Crow",
+      "chance": 61111,
+      "percent": "0.23%"
+    },
+    {
+      "itemId": 1002275,
+      "name": "Blue Falcon",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1002276,
+      "name": "Red Falcon",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1002277,
+      "name": "Green Falcon",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1002278,
+      "name": "Dark Falcon",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1050075,
+      "name": "Red Pris",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1050076,
+      "name": "Blue Pris",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1050077,
+      "name": "Green Pris",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1050078,
+      "name": "Dark Pris",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1051066,
+      "name": "Red Pria",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1051067,
+      "name": "Blue Pria",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1051068,
+      "name": "Green Pria",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1051069,
+      "name": "Dark Pria",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1072182,
+      "name": "Blue Wing Boots",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1072183,
+      "name": "Red Wing Boots",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1072184,
+      "name": "Green Wing Boots",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1072185,
+      "name": "Dark Wing Boots",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1082109,
+      "name": "Red Cordon",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1082110,
+      "name": "Blue Cordon",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1082111,
+      "name": "Green Cordon",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1082112,
+      "name": "Dark Cordon",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1452012,
+      "name": "Marine Arund",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1452013,
+      "name": "Fire Arund",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1452014,
+      "name": "Golden Arund",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1452015,
+      "name": "Dark Arund",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1462010,
+      "name": "Marine Raven",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1462011,
+      "name": "Fire Raven",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1462012,
+      "name": "Golden Raven",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1462013,
+      "name": "Dark Raven",
+      "chance": 75000,
+      "percent": "0.29%"
+    },
+    {
+      "itemId": 1002286,
+      "name": "Blue Patriot",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1002287,
+      "name": "Beige Patriot",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1002288,
+      "name": "Green Patriot",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1002289,
+      "name": "Dark Patriot",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1050061,
+      "name": "Blue Linnex",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1050062,
+      "name": "Beige Linnex",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1050063,
+      "name": "Green Linnex",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1050064,
+      "name": "Dark Linnex",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1051062,
+      "name": "Blue Lineros",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1051063,
+      "name": "Beige Lineros",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1051064,
+      "name": "Green Lineros",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1051065,
+      "name": "Dark Lineros",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1072164,
+      "name": "Blue Elf Shoes",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1072165,
+      "name": "Baige Elf Shoes",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1072166,
+      "name": "Green Elf Shoes",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1072167,
+      "name": "Dark Elf Shoes",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1082106,
+      "name": "Blue Eyes",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1082107,
+      "name": "Gold Eyes",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1082108,
+      "name": "Dark Eyes",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1200003,
+      "name": "Red Arrow for Bow",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1201003,
+      "name": "Blue Bolt for Crossbow",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1452009,
+      "name": "Red Hinkel",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1452010,
+      "name": "Blue Hinkel",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1452011,
+      "name": "Golden Hinkel",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1462009,
+      "name": "Gross Jaeger",
+      "chance": 92857,
+      "percent": "0.36%"
+    },
+    {
+      "itemId": 1002267,
+      "name": "Red Polyfeather Hat",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1002268,
+      "name": "Brown Polyfeather Hat",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1002269,
+      "name": "White Polyfeather Hat",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1002270,
+      "name": "Black Polyfeather Hat",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1050058,
+      "name": "Orange Tai",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1050059,
+      "name": "Blue Tai",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1050060,
+      "name": "Red Tai",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1051041,
+      "name": "Red Choro",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1051042,
+      "name": "Blue Choro",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1051043,
+      "name": "Brown Choro",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1072144,
+      "name": "Red Gore Boots",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1072145,
+      "name": "Blue Gore Boots",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1072146,
+      "name": "Green Gore Boots",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1082089,
+      "name": "Oaker Garner",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1082090,
+      "name": "Sephia Garner",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1082091,
+      "name": "Dark Garner",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1452004,
+      "name": "Asianic Bow",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1462008,
+      "name": "Golden Crow",
+      "chance": 116667,
+      "percent": "0.45%"
+    },
+    {
+      "itemId": 1002211,
+      "name": "Blue Maro",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1002212,
+      "name": "Red Maro",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1002213,
+      "name": "Green Maro",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1002214,
+      "name": "Black Maro",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1050051,
+      "name": "Red-Lined Kismet",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1050052,
+      "name": "Blue-Lined Kismet",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1051037,
+      "name": "Blue Lumati",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1051038,
+      "name": "Green Lumati",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1051039,
+      "name": "Red Lumati",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1072122,
+      "name": "Brown Steel-Tip Boots",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1072123,
+      "name": "Green Steel-Tip Boots",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1072124,
+      "name": "Blue Steel-Tip Boots",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1072125,
+      "name": "Purple Steel-Tip Boots",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1082083,
+      "name": "Dark Willow",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1082084,
+      "name": "Blue Willow",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1082085,
+      "name": "Red Willow",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1200002,
+      "name": "Steel Arrow for Bow",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1201002,
+      "name": "Steel Bolt for Crossbow",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1452008,
+      "name": "Olympus",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1462007,
+      "name": "Rower",
+      "chance": 150000,
+      "percent": "0.57%"
+    },
+    {
+      "itemId": 1462006,
+      "name": "Silver Crow",
+      "chance": 188095,
+      "percent": "0.72%"
+    },
+    {
+      "itemId": 1002166,
+      "name": "Red Distinction",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1002167,
+      "name": "Blue Distinction",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1002168,
+      "name": "Green Distinction",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1002169,
+      "name": "Brown Distinction",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1002170,
+      "name": "Dark Distinction",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1040079,
+      "name": "Brown Piette",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1040080,
+      "name": "Dark Piette",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1040081,
+      "name": "White Piette",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1041081,
+      "name": "White Piettra",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1041082,
+      "name": "Brown Piettra",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1041083,
+      "name": "Dark Piettra",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1060068,
+      "name": "Dark Piette Pants",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1060069,
+      "name": "Brown Piette Pants",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1060070,
+      "name": "Blue Piette Pants",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1061080,
+      "name": "White Piettra Skirt",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1061081,
+      "name": "Brown Piettra Skirt",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1061082,
+      "name": "Dark Piettra Skirt",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1072118,
+      "name": "Red Pierre Shoes",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1072119,
+      "name": "Yellow Pierre Shoes",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1072120,
+      "name": "Brown Pierre Shoes",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1072121,
+      "name": "Blue Pierre Shoes",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1082071,
+      "name": "Aqua Brace",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1082072,
+      "name": "Gold Brace",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1082073,
+      "name": "Dark Brace",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1452007,
+      "name": "Vaulter 2000",
+      "chance": 200000,
+      "percent": "0.77%"
+    },
+    {
+      "itemId": 1462005,
+      "name": "Heckler",
+      "chance": 213158,
+      "percent": "0.82%"
+    },
+    {
+      "itemId": 1002135,
+      "name": "Brown Pole-Feather Hat",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1002136,
+      "name": "Dark Pole-Feather Hat",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1002137,
+      "name": "Green Pole-Feather Hat",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1002138,
+      "name": "Blue Pole-Feather Hat",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1002139,
+      "name": "Red Pole-Feather Hat",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1040072,
+      "name": "Red Legolier",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1040073,
+      "name": "Blue Legolier",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1040074,
+      "name": "Green Legolier",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1040075,
+      "name": "Dark Legolier",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1040076,
+      "name": "Brown Legolier",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1041065,
+      "name": "Red Legolia",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1041066,
+      "name": "Blue Legolia",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1041067,
+      "name": "Green Legolia",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1041068,
+      "name": "Dark Legolia",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1041069,
+      "name": "Brown Legolia",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1060061,
+      "name": "Red Legolier Pants",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1060062,
+      "name": "Blue Legolier Pants",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1060063,
+      "name": "Green Legolier Pants",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1060064,
+      "name": "Dark Legolier Pants",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1060065,
+      "name": "Brown Legolier Pants",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1061060,
+      "name": "Red Legolia Pants",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1061061,
+      "name": "Blue Legolia Pants",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1061062,
+      "name": "Green Legolia Pants",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1061063,
+      "name": "Dark Legolia Pants",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1061064,
+      "name": "Brown Legolia Pants",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1072101,
+      "name": "Blue Silky Boots",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1072102,
+      "name": "Green Silky Boots",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1072103,
+      "name": "Red Silky Boots",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1082068,
+      "name": "Bronze Scaler",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1082069,
+      "name": "Mithril Scaler",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1082070,
+      "name": "Gold Scaler",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1452006,
+      "name": "Red Viper",
+      "chance": 235714,
+      "percent": "0.90%"
+    },
+    {
+      "itemId": 1462004,
+      "name": "Eagle Crow",
+      "chance": 262500,
+      "percent": "1.01%"
+    },
+    {
+      "itemId": 1072170,
+      "name": "Green Snowshoes",
+      "chance": 283333,
+      "percent": "1.09%"
+    },
+    {
+      "itemId": 1200001,
+      "name": "Bronze Arrow for Bow",
+      "chance": 283333,
+      "percent": "1.09%"
+    },
+    {
+      "itemId": 1201001,
+      "name": "Bronze Bolt for Crossbow",
+      "chance": 283333,
+      "percent": "1.09%"
+    }
+  ]
+}

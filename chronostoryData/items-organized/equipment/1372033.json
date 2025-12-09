@@ -25,26 +25,6 @@
     "subCategory": "Wand"
   },
   "randomStats": {
-    "incSTR": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
-    "incDEX": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
-    "incINT": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
-    "incLUK": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
     "incPAD": {
       "base": 45,
       "min": 42,
@@ -54,46 +34,6 @@
       "base": 68,
       "min": 65,
       "max": 71
-    },
-    "incPDD": {
-      "base": 0,
-      "min": 0,
-      "max": 27
-    },
-    "incMDD": {
-      "base": 0,
-      "min": 0,
-      "max": 27
-    },
-    "incACC": {
-      "base": 0,
-      "min": 0,
-      "max": 5
-    },
-    "incEVA": {
-      "base": 0,
-      "min": 0,
-      "max": 5
-    },
-    "incSpeed": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
-    "incJump": {
-      "base": 0,
-      "min": 0,
-      "max": 1
-    },
-    "incMHP": {
-      "base": 0,
-      "min": 0,
-      "max": 27
-    },
-    "incMMP": {
-      "base": 0,
-      "min": 0,
-      "max": 27
     }
   }
 }

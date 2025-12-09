@@ -2,9 +2,10 @@
   "id": 2040313,
   "description": {
     "id": 2040313,
-    "name": "Scroll for Earring for INT 65%",
+    "name": "Scroll for Earring for Defense 15%",
     "description": "Improves INT on Earrings.\\nSuccess rate: 65%, Magic Attack +2, INT+1",
-    "chineseName": "耳環智力卷軸65%"
+    "chineseName": "耳環防禦卷軸15%",
+    "chineseNameSource": "gacha"
   },
   "metaInfo": {
     "only": false,
@@ -14,10 +15,12 @@
     "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFDklEQVR4nI1XC3XrOBCdnBMCWggqBD0IKgQXgg0hgRBDiCFEEGIIFYQnCB0I2TsaSf7EPbtq/Ykt6c6dv8+v18ucTiemMl6vu9E7U05yNZaIuT5c3rWxvi+D26n85uVFvuezAEMATzRHorQDlZNzeJ5UgA1Qvp5Of270P8fr9fhaljKf9UcCsO8gQNhu7jp9p/Tl2IP9vV+2CEaXW58ozZbCdcTOPvM9nb4eRYg/MvOs0n+A/V8R4A6wSYFsj/tQ2D0a2GNHlOltrIGdKA7D3e/0ut9o/PoQIb4hwMdZJRE7R1HtjKXPsusoOwuwAFoXoQOnYP9h7WxSXqSyXSCOgaZpO+28W7bZFsB3BRYmbpnBB3RZPCPiFWNKpHmyRY5EYTDkLkzeGwphWbsCF/0YGCcNAjFN8+3vvQIbavotPskHAhj4pDGcD+cdPGiGQEzWGpqvRNeka6DyzwyuKnfi3QCXKdnTzTAM9PMUU8ct0RYwrM5VXlZrZI3LH24qGDXQ57CojYW5qNPiFOeV6rP65xEO0wtAtUZdZwo+byOZ1qFMBfA7qL7eKZxVfInxvGE2lNj62XsEWqIYbImenZrx0GA/XvtAZZ3Wghje6mWREOBz1Z95d12dyzW5ZYPoHHe5URyv1LyhncxxBBx46floGlQ1CPsHOySICIO4BTj/m0LeLJxoYf9brl3uuar9cBzK7nrNZikGfQAvdpIEMUQLWRAxYlChH/AnJLAeZK606GjPfJ85qgSmOKpyjWHKAljfK3YFxvO2bXVwCcl3TfPCjSv4IVGKMVLXFScqAiQAWd+1OUnKwQpE/EOOOb4zXQOvmL+9FbuPsPvFBvF6Sa0+g1gwrwIIsEUyiVOqvtl8QvzB9ZEsMp0UI/GjPdCZVhVrp4Jt0WZ1KbFt4YyQQihONQkV9LdoPtbqb8y3mFnhdW+Ja43MeZyW7LaK8/WN1pcj1TfwhvPGHmU2wFs7CTlRvSScumsOM1xdp/a3zsIMka7DmH97X5NTG3sJN2o/Yr96DqC+o6PRgFG/64oZFdr5A+wtcwWqXcZ+SGXTDbtVllzEsqhJKUSaYAZwXUFwbigGCKHO9l6dzhVY6zYYSE/x2zC7qyQBqzVbymabBn1bL2barF7ldZlrzfmff4ZbBkbIcAXe5Zxs35Ra4ah5XGwehtjSbX5aHQytAVNqT9eM4RG5ima1x0njVRpUIyFU029uDgQ4ZvAWUm0raRQs+V5jXZKS65TgjGCIqNSv70et4SXriyeITpLaPDtSrc25tGuFNVbMEFUj6yy2c54ZsS4CEAA/x9oWJGlGrrI7c5TujY1xvWQKtRfS68/PfZBu8vvWQ2qHnAz7dZq7JZPxPDewrxDp11HePZ/3nABE1hACQo6jtdIVZ9+4xnlK4qTiI6V7fXxCgCdBzr7v6VZiZET4TGFu+z8et+UHb/kXWzNUjx6Djb4GWajPlvQAYkZC0MOcHx9j/mjIq14/j09Y0GOyj3HObeLtdrFd52RDLovlYorjbXS/pNjlHqgGfbu9XocJUqS+v3jve8usalrSq4EeICiAZxy5A7Y2sUX8YR0X4Iaw9I1bGaoo0sl63wnwyBKL0nRxCpfL3eMtwIOAswarEEJnj0M83Cg3RH0SIaw2YJwas5I6d32LigSBM3AIkzBmPZjGMTCOSb8NacaH4oBPJflIQT6yuvB9CJQlot+qxD71OSSuj5l+Gfg4neXr+F8O7P/jqro+UQAAAABJRU5ErkJggg==",
     "slotMax": 0,
     "price": 1,
-    "incINT": 1,
-    "incMAD": 2,
     "tradeBlock": true,
-    "setCompleteCount": 0
+    "setCompleteCount": 0,
+    "incEVA": 5,
+    "incMHP": 30,
+    "incPDD": 30,
+    "incMDD": 30
   },
   "typeInfo": {
     "overallCategory": "Use",

@@ -4,7 +4,7 @@
     "id": 1082189,
     "name": "Yellow Tartis",
     "description": "",
-    "chineseName": ""
+    "chineseName": "金色護手"
   },
   "metaInfo": {
     "only": false,
@@ -25,75 +25,10 @@
     "subCategory": "Glove"
   },
   "randomStats": {
-    "incSTR": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
-    "incDEX": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
-    "incINT": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
-    "incLUK": {
-      "base": 0,
-      "min": 0,
-      "max": 0
-    },
-    "incPAD": {
-      "base": 0,
-      "min": 0,
-      "max": 2
-    },
-    "incMAD": {
-      "base": 0,
-      "min": 0,
-      "max": 2
-    },
     "incPDD": {
       "base": 10,
       "min": 0,
       "max": 25
-    },
-    "incMDD": {
-      "base": 0,
-      "min": 0,
-      "max": 15
-    },
-    "incACC": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
-    "incEVA": {
-      "base": 0,
-      "min": 0,
-      "max": 3
-    },
-    "incSpeed": {
-      "base": 0,
-      "min": 0,
-      "max": 2
-    },
-    "incJump": {
-      "base": 0,
-      "min": 0,
-      "max": 1
-    },
-    "incMHP": {
-      "base": 0,
-      "min": 0,
-      "max": 15
-    },
-    "incMMP": {
-      "base": 0,
-      "min": 0,
-      "max": 15
     }
   }
 }

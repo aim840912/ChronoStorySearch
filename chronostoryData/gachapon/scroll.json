@@ -1,0 +1,1489 @@
+{
+  "name": "Scroll Gachapon",
+  "location": "All Towns",
+  "totalItems": 247,
+  "items": [
+    {
+      "itemId": 2040602,
+      "name": "Scroll for Bottomwear for Defense 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040600,
+      "name": "Scroll for Bottomwear for Defense 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040616,
+      "name": "Scroll for Bottomwear for Defense 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040601,
+      "name": "Scroll for Bottomwear for Defense 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040612,
+      "name": "Scroll for Bottomwear for DEX 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040614,
+      "name": "Scroll for Bottomwear for DEX 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040615,
+      "name": "Scroll for Bottomwear for DEX 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040613,
+      "name": "Scroll for Bottomwear for DEX 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040619,
+      "name": "Scroll for Bottomwear for Mobility 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040617,
+      "name": "Scroll for Bottomwear for Mobility 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040620,
+      "name": "Scroll for Bottomwear for Mobility 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040618,
+      "name": "Scroll for Bottomwear for Mobility 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044502,
+      "name": "Scroll for Bow for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044500,
+      "name": "Scroll for Bow for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044507,
+      "name": "Scroll for Bow for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044501,
+      "name": "Scroll for Bow for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041005,
+      "name": "Scroll for Cape for Defense 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041003,
+      "name": "Scroll for Cape for Defense 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041045,
+      "name": "Scroll for Cape for Defense 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041004,
+      "name": "Scroll for Cape for Defense 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041020,
+      "name": "Scroll for Cape for DEX 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041018,
+      "name": "Scroll for Cape for DEX 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041055,
+      "name": "Scroll for Cape for DEX 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041019,
+      "name": "Scroll for Cape for DEX 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041017,
+      "name": "Scroll for Cape for INT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041015,
+      "name": "Scroll for Cape for INT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041053,
+      "name": "Scroll for Cape for INT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041016,
+      "name": "Scroll for Cape for INT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041023,
+      "name": "Scroll for Cape for LUK 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041021,
+      "name": "Scroll for Cape for LUK 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041057,
+      "name": "Scroll for Cape for LUK 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041022,
+      "name": "Scroll for Cape for LUK 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041014,
+      "name": "Scroll for Cape for STR 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041012,
+      "name": "Scroll for Cape for STR 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041051,
+      "name": "Scroll for Cape for STR 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2041013,
+      "name": "Scroll for Cape for STR 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044702,
+      "name": "Scroll for Claw for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044700,
+      "name": "Scroll for Claw for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044707,
+      "name": "Scroll for Claw for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044701,
+      "name": "Scroll for Claw for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044602,
+      "name": "Scroll for Crossbow for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044600,
+      "name": "Scroll for Crossbow for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044607,
+      "name": "Scroll for Crossbow for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044601,
+      "name": "Scroll for Crossbow for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043302,
+      "name": "Scroll for Dagger for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043300,
+      "name": "Scroll for Dagger for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043307,
+      "name": "Scroll for Dagger for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043301,
+      "name": "Scroll for Dagger for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040310,
+      "name": "Scroll for Earring for Defense 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040312,
+      "name": "Scroll for Earring for Defense 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040313,
+      "name": "Scroll for Earring for Defense 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040311,
+      "name": "Scroll for Earring for Defense 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040318,
+      "name": "Scroll for Earring for DEX 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040316,
+      "name": "Scroll for Earring for DEX 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040336,
+      "name": "Scroll for Earring for DEX 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040317,
+      "name": "Scroll for Earring for DEX 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040302,
+      "name": "Scroll for Earring for INT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040300,
+      "name": "Scroll for Earring for INT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040314,
+      "name": "Scroll for Earring for INT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040301,
+      "name": "Scroll for Earring for INT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040323,
+      "name": "Scroll for Earring for LUK 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040319,
+      "name": "Scroll for Earring for LUK 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040338,
+      "name": "Scroll for Earring for LUK 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040321,
+      "name": "Scroll for Earring for LUK 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040332,
+      "name": "Scroll for Earring for STR 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040328,
+      "name": "Scroll for Earring for STR 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040333,
+      "name": "Scroll for Earring for STR 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040330,
+      "name": "Scroll for Earring for STR 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040802,
+      "name": "Scroll for Gloves for Accuracy 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040800,
+      "name": "Scroll for Gloves for Accuracy 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040829,
+      "name": "Scroll for Gloves for Accuracy 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040801,
+      "name": "Scroll for Gloves for Accuracy 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040805,
+      "name": "Scroll for Gloves for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040803,
+      "name": "Scroll for Gloves for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040822,
+      "name": "Scroll for Gloves for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040804,
+      "name": "Scroll for Gloves for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040825,
+      "name": "Scroll for Gloves for Defense 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040823,
+      "name": "Scroll for Gloves for Defense 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040826,
+      "name": "Scroll for Gloves for Defense 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040824,
+      "name": "Scroll for Gloves for Defense 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040816,
+      "name": "Scroll for Gloves for Magic ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040818,
+      "name": "Scroll for Gloves for Magic ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040820,
+      "name": "Scroll for Gloves for Magic ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040817,
+      "name": "Scroll for Gloves for Magic ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044902,
+      "name": "Scroll for Gun for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044900,
+      "name": "Scroll for Gun for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044905,
+      "name": "Scroll for Gun for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044901,
+      "name": "Scroll for Gun for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040016,
+      "name": "Scroll for Helmet for Accuracy 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040018,
+      "name": "Scroll for Helmet for Accuracy 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040034,
+      "name": "Scroll for Helmet for Accuracy 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040017,
+      "name": "Scroll for Helmet for Accuracy 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040002,
+      "name": "Scroll for Helmet for Defense 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040000,
+      "name": "Scroll for Helmet for Defense 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040001,
+      "name": "Scroll for Helmet for Defense 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040031,
+      "name": "Scroll for Helmet for DEX 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040027,
+      "name": "Scroll for Helmet for DEX 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040044,
+      "name": "Scroll for Helmet for DEX 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040029,
+      "name": "Scroll for Helmet for DEX 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040026,
+      "name": "Scroll for Helmet for INT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040024,
+      "name": "Scroll for Helmet for INT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040036,
+      "name": "Scroll for Helmet for INT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040025,
+      "name": "Scroll for Helmet for INT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044809,
+      "name": "Scroll for Knuckler for Accuracy 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044805,
+      "name": "Scroll for Knuckler for Accuracy 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044810,
+      "name": "Scroll for Knuckler for Accuracy 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044807,
+      "name": "Scroll for Knuckler for Accuracy 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044802,
+      "name": "Scroll for Knuckler for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044800,
+      "name": "Scroll for Knuckler for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044812,
+      "name": "Scroll for Knuckler for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044801,
+      "name": "Scroll for Knuckler for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043114,
+      "name": "Scroll for One-Handed Axe for Accuracy 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043110,
+      "name": "Scroll for One-Handed Axe for Accuracy 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043115,
+      "name": "Scroll for One-Handed Axe for Accuracy 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043112,
+      "name": "Scroll for One-Handed Axe for Accuracy 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043102,
+      "name": "Scroll for One-Handed Axe for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043100,
+      "name": "Scroll for One-Handed Axe for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043107,
+      "name": "Scroll for One-Handed Axe for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043101,
+      "name": "Scroll for One-Handed Axe for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043214,
+      "name": "Scroll for One-Handed BW for Accuracy 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043210,
+      "name": "Scroll for One-Handed BW for Accuracy 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043215,
+      "name": "Scroll for One-Handed BW for Accuracy 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043212,
+      "name": "Scroll for One-Handed BW for Accuracy 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043202,
+      "name": "Scroll for One-Handed BW for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043200,
+      "name": "Scroll for One-Handed BW for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043207,
+      "name": "Scroll for One-Handed BW for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043201,
+      "name": "Scroll for One-Handed BW for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043019,
+      "name": "Scroll for One-Handed Sword for Accuracy 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043015,
+      "name": "Scroll for One-Handed Sword for Accuracy 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043020,
+      "name": "Scroll for One-Handed Sword for Accuracy 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043017,
+      "name": "Scroll for One-Handed Sword for Accuracy 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043002,
+      "name": "Scroll for One-Handed Sword for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043000,
+      "name": "Scroll for One-Handed Sword for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043012,
+      "name": "Scroll for One-Handed Sword for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043001,
+      "name": "Scroll for One-Handed Sword for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040505,
+      "name": "Scroll for Overall Armor for Defense 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040503,
+      "name": "Scroll for Overall Armor for Defense 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040525,
+      "name": "Scroll for Overall Armor for Defense 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040504,
+      "name": "Scroll for Overall Armor for Defense 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040502,
+      "name": "Scroll for Overall Armor for DEX 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040500,
+      "name": "Scroll for Overall Armor for DEX 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040523,
+      "name": "Scroll for Overall Armor for DEX 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040501,
+      "name": "Scroll for Overall Armor for DEX 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040514,
+      "name": "Scroll for Overall Armor for INT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040512,
+      "name": "Scroll for Overall Armor for INT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040527,
+      "name": "Scroll for Overall Armor for INT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040513,
+      "name": "Scroll for Overall Armor for INT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040517,
+      "name": "Scroll for Overall Armor for LUK 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040515,
+      "name": "Scroll for Overall Armor for LUK 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040529,
+      "name": "Scroll for Overall Armor for LUK 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040516,
+      "name": "Scroll for Overall Armor for LUK 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040534,
+      "name": "Scroll for Overall Armor for STR 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040530,
+      "name": "Scroll for Overall Armor for STR 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040541,
+      "name": "Scroll for Overall Armor for STR 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040532,
+      "name": "Scroll for Overall Armor for STR 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044414,
+      "name": "Scroll for Pole Arm for Accuracy 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044410,
+      "name": "Scroll for Pole Arm for Accuracy 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044415,
+      "name": "Scroll for Pole Arm for Accuracy 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044412,
+      "name": "Scroll for Pole Arm for Accuracy 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044402,
+      "name": "Scroll for Pole Arm for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044400,
+      "name": "Scroll for Pole Arm for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044407,
+      "name": "Scroll for Pole Arm for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044401,
+      "name": "Scroll for Pole Arm for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040915,
+      "name": "Scroll for Shield for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040928,
+      "name": "Scroll for Shield for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040934,
+      "name": "Scroll for Shield for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040914,
+      "name": "Scroll for Shield for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040902,
+      "name": "Scroll for Shield for Defense 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040900,
+      "name": "Scroll for Shield for Defense 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040911,
+      "name": "Scroll for Shield for Defense 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040901,
+      "name": "Scroll for Shield for Defense 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040925,
+      "name": "Scroll for Shield for LUK 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040923,
+      "name": "Scroll for Shield for LUK 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040938,
+      "name": "Scroll for Shield for LUK 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040924,
+      "name": "Scroll for Shield for LUK 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040920,
+      "name": "Scroll for Shield for Magic ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040918,
+      "name": "Scroll for Shield for Magic ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040926,
+      "name": "Scroll for Shield for Magic ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040919,
+      "name": "Scroll for Shield for Magic ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040933,
+      "name": "Scroll for Shield for STR 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040929,
+      "name": "Scroll for Shield for STR 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040942,
+      "name": "Scroll for Shield for STR 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040931,
+      "name": "Scroll for Shield for STR 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040702,
+      "name": "Scroll for Shoes for Avoidability 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040700,
+      "name": "Scroll for Shoes for Avoidability 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040719,
+      "name": "Scroll for Shoes for Avoidability 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040701,
+      "name": "Scroll for Shoes for Avoidability 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040705,
+      "name": "Scroll for Shoes for Jump 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040703,
+      "name": "Scroll for Shoes for Jump 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040721,
+      "name": "Scroll for Shoes for Jump 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040704,
+      "name": "Scroll for Shoes for Jump 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040708,
+      "name": "Scroll for Shoes for Mobility 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040706,
+      "name": "Scroll for Shoes for Mobility 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040723,
+      "name": "Scroll for Shoes for Mobility 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040707,
+      "name": "Scroll for Shoes for Mobility 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044314,
+      "name": "Scroll for Spear for Accuracy 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044310,
+      "name": "Scroll for Spear for Accuracy 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044315,
+      "name": "Scroll for Spear for Accuracy 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044312,
+      "name": "Scroll for Spear for Accuracy 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044302,
+      "name": "Scroll for Spear for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044300,
+      "name": "Scroll for Spear for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044307,
+      "name": "Scroll for Spear for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044301,
+      "name": "Scroll for Spear for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043802,
+      "name": "Scroll for Staff for Magic ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043800,
+      "name": "Scroll for Staff for Magic ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043807,
+      "name": "Scroll for Staff for Magic ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043801,
+      "name": "Scroll for Staff for Magic ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040402,
+      "name": "Scroll for Topwear for Defense 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040400,
+      "name": "Scroll for Topwear for Defense 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040416,
+      "name": "Scroll for Topwear for Defense 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040401,
+      "name": "Scroll for Topwear for Defense 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040412,
+      "name": "Scroll for Topwear for LUK 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040414,
+      "name": "Scroll for Topwear for LUK 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040436,
+      "name": "Scroll for Topwear for LUK 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040413,
+      "name": "Scroll for Topwear for LUK 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040419,
+      "name": "Scroll for Topwear for STR 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040417,
+      "name": "Scroll for Topwear for STR 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040432,
+      "name": "Scroll for Topwear for STR 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2040418,
+      "name": "Scroll for Topwear for STR 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044114,
+      "name": "Scroll for Two-Handed Axe for Accuracy 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044110,
+      "name": "Scroll for Two-Handed Axe for Accuracy 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044115,
+      "name": "Scroll for Two-Handed Axe for Accuracy 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044112,
+      "name": "Scroll for Two-Handed Axe for Accuracy 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044102,
+      "name": "Scroll for Two-Handed Axe for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044100,
+      "name": "Scroll for Two-Handed Axe for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044107,
+      "name": "Scroll for Two-Handed Axe for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044101,
+      "name": "Scroll for Two-Handed Axe for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044214,
+      "name": "Scroll for Two-Handed BW for Accuracy 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044210,
+      "name": "Scroll for Two-Handed BW for Accuracy 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044215,
+      "name": "Scroll for Two-Handed BW for Accuracy 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044212,
+      "name": "Scroll for Two-Handed BW for Accuracy 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044202,
+      "name": "Scroll for Two-Handed BW for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044200,
+      "name": "Scroll for Two-Handed BW for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044207,
+      "name": "Scroll for Two-Handed BW for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044201,
+      "name": "Scroll for Two-Handed BW for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044014,
+      "name": "Scroll for Two-Handed Sword for Accuracy 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044010,
+      "name": "Scroll for Two-Handed Sword for Accuracy 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044015,
+      "name": "Scroll for Two-Handed Sword for Accuracy 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044012,
+      "name": "Scroll for Two-Handed Sword for Accuracy 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044002,
+      "name": "Scroll for Two-Handed Sword for ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044000,
+      "name": "Scroll for Two-Handed Sword for ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044007,
+      "name": "Scroll for Two-Handed Sword for ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2044001,
+      "name": "Scroll for Two-Handed Sword for ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043702,
+      "name": "Scroll for Wand for Magic ATT 10%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043700,
+      "name": "Scroll for Wand for Magic ATT 100%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043707,
+      "name": "Scroll for Wand for Magic ATT 15%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    },
+    {
+      "itemId": 2043701,
+      "name": "Scroll for Wand for Magic ATT 60%",
+      "chance": 1000000,
+      "percent": "0.40%"
+    }
+  ]
+}

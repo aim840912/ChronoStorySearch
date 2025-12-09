@@ -2,9 +2,10 @@
   "id": 2044905,
   "description": {
     "id": 2044905,
-    "name": "[4yrAnniv] Gun for Attack 40%",
+    "name": "Scroll for Gun for ATT 15%",
     "description": "Improves the attact on Maple Canon Shooter. nSuccess rate:40%, weapon att.+3,naccuracy+2nIf failed, the item will be destroyed at a 30% rate.",
-    "chineseName": "[週年慶]火槍力量卷軸40%"
+    "chineseName": "火槍攻擊卷軸15%",
+    "chineseNameSource": "gacha"
   },
   "metaInfo": {
     "only": false,
@@ -14,10 +15,11 @@
     "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADEklEQVR4nKWWi5GjMAxAxcw14JTglGBKICWYEkIJlxKWEpYSQgmhhFBCXMKqBE7yJxhifreaceIP9pMsWfYf+L0MB77NQuV/wBPQMLgm+rYIA1hT4y9Utxp0Udjx8pKHudle8BsWQHMRcSOCKqXsoFaS5r6gLs9wa2HYAx4szC+2T3CijYIcsAdomvGLLbCHNqvQsM3GICAiCGyhM5K4wrbr7gu0vEFRCGhb3AQPPzNLMfUVun42TgjhilGgtYa6bixYSglN/wVNfQuzdvgYjV04LD7Cpz2xUgg0B93cJt7fvVHddT1tWweycBCMsRjjghJOhO/30DcsliXw8Hz9gMQSjHzOIFztaHXlEOxT6Gi0iMZhouQRsJ+P43+0DgcPw5F8LzjweFAUcESWwFl+Pg2P5wukoaMgHgmtyA3QRNZHigFs2Lsjc40L9H5J9qCiXw6gzrtXWkVskVcwpKjAC7Dil/zMGefDz9vgd/BSxdTeJOn97sV0ztdSj/MMFbls9yrYGANKeKvZh5IapnVHbLImNSSPa6uA7RHfMPtoNziryov1M2+b9TP7knIu9hxQxn3FfZw0vLWcQMI/z7s/n1Dm+cd2H7yd0EKR95ETIlkppPKW+bPOWy5ceHF3UOSIxZ9YuxIFlrVSwpgqHJcZXMJ2CxzrR8EZR+X98aRjxdt991sL7wtAK3+UKKKRlKnKyjb19Tq7K4+BJ6ILlR6wyaSAqro5k0natoXrSk6Jwckbfrz4X2kmHSWO6BtBhdvncYx2iF4dXF08x/7e7Q6lvndCtWdYuk5vsRL1NH8nwLugcRCNQMpnPeUwPtvz7zGelAZDS9efXnJfBJtHaLjkC9nTqdZ0jdIVCj67yW8KtAvXlq9FGzScZzdhmExGDJXQ0tNGU26ufO8yNIAzEvfMMS46U5bZpfIzrIt92pyijnCgPtQNwZWdCA7bks8WTMncafEz5e35+DiFbRELhSWOvhR8KZwC0PiC8wQSIDL6jyFrli5JUplU5ooXn09ae1jgSn1ePsBhO2J4ysql182aopOxfwKRjXmGVX/RAAAAAElFTkSuQmCC",
     "slotMax": 0,
     "price": 1,
-    "incPAD": 3,
-    "incACC": 2,
     "tradeBlock": true,
-    "setCompleteCount": 0
+    "setCompleteCount": 0,
+    "incDEX": 3,
+    "incPAD": 5,
+    "incACC": 1
   },
   "typeInfo": {
     "overallCategory": "Use",

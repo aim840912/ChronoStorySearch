@@ -1,0 +1,343 @@
+{
+  "name": "Nautilus Gachapon",
+  "location": "Nautilus",
+  "totalItems": 56,
+  "items": [
+    {
+      "itemId": 1002646,
+      "name": "Black Polax Hat",
+      "chance": 50000,
+      "percent": "0.70%"
+    },
+    {
+      "itemId": 1052131,
+      "name": "Red Belly Duke",
+      "chance": 50000,
+      "percent": "0.70%"
+    },
+    {
+      "itemId": 1072318,
+      "name": "Black Duke Barkin Shoes",
+      "chance": 50000,
+      "percent": "0.70%"
+    },
+    {
+      "itemId": 1082213,
+      "name": "Black Skellduke",
+      "chance": 50000,
+      "percent": "0.70%"
+    },
+    {
+      "itemId": 1202007,
+      "name": "Eternal Bullet",
+      "chance": 50000,
+      "percent": "0.70%"
+    },
+    {
+      "itemId": 1482012,
+      "name": "King Cent",
+      "chance": 50000,
+      "percent": "0.70%"
+    },
+    {
+      "itemId": 1492012,
+      "name": "Concerto",
+      "chance": 50000,
+      "percent": "0.70%"
+    },
+    {
+      "itemId": 1002643,
+      "name": "Red Brave Hamal",
+      "chance": 61111,
+      "percent": "0.85%"
+    },
+    {
+      "itemId": 1052128,
+      "name": "White Marquini",
+      "chance": 61111,
+      "percent": "0.85%"
+    },
+    {
+      "itemId": 1072315,
+      "name": "Black Markintz",
+      "chance": 61111,
+      "percent": "0.85%"
+    },
+    {
+      "itemId": 1082210,
+      "name": "Red Martier",
+      "chance": 61111,
+      "percent": "0.85%"
+    },
+    {
+      "itemId": 1482011,
+      "name": "White Fangz",
+      "chance": 61111,
+      "percent": "0.85%"
+    },
+    {
+      "itemId": 1492011,
+      "name": "The Peacemaker",
+      "chance": 61111,
+      "percent": "0.85%"
+    },
+    {
+      "itemId": 1002640,
+      "name": "Blue Sun Boat Hat",
+      "chance": 75000,
+      "percent": "1.04%"
+    },
+    {
+      "itemId": 1052125,
+      "name": "White Pioneer",
+      "chance": 75000,
+      "percent": "1.04%"
+    },
+    {
+      "itemId": 1072312,
+      "name": "Blue Pageant",
+      "chance": 75000,
+      "percent": "1.04%"
+    },
+    {
+      "itemId": 1082207,
+      "name": "Blue Halfglove",
+      "chance": 75000,
+      "percent": "1.04%"
+    },
+    {
+      "itemId": 1482010,
+      "name": "Steelno",
+      "chance": 75000,
+      "percent": "1.04%"
+    },
+    {
+      "itemId": 1492010,
+      "name": "Infinity's Wrath",
+      "chance": 75000,
+      "percent": "1.04%"
+    },
+    {
+      "itemId": 1002637,
+      "name": "Black Pirate's Bandana",
+      "chance": 92857,
+      "percent": "1.29%"
+    },
+    {
+      "itemId": 1052122,
+      "name": "Red Viska",
+      "chance": 92857,
+      "percent": "1.29%"
+    },
+    {
+      "itemId": 1072309,
+      "name": "Black Voyson Shoes",
+      "chance": 92857,
+      "percent": "1.29%"
+    },
+    {
+      "itemId": 1082204,
+      "name": "Black Bisk",
+      "chance": 92857,
+      "percent": "1.29%"
+    },
+    {
+      "itemId": 1202006,
+      "name": "Shiny Bullet",
+      "chance": 92857,
+      "percent": "1.29%"
+    },
+    {
+      "itemId": 1482009,
+      "name": "Beia Crash",
+      "chance": 92857,
+      "percent": "1.29%"
+    },
+    {
+      "itemId": 1492009,
+      "name": "Abyss Shooter",
+      "chance": 92857,
+      "percent": "1.29%"
+    },
+    {
+      "itemId": 1002634,
+      "name": "Purple Cast Linen",
+      "chance": 116667,
+      "percent": "1.62%"
+    },
+    {
+      "itemId": 1052119,
+      "name": "Black Royal Barone",
+      "chance": 116667,
+      "percent": "1.62%"
+    },
+    {
+      "itemId": 1072306,
+      "name": "Black Basile Boots",
+      "chance": 116667,
+      "percent": "1.62%"
+    },
+    {
+      "itemId": 1082201,
+      "name": "Black Schult",
+      "chance": 116667,
+      "percent": "1.62%"
+    },
+    {
+      "itemId": 1202004,
+      "name": "Blaze Capsule",
+      "chance": 116667,
+      "percent": "1.62%"
+    },
+    {
+      "itemId": 1202005,
+      "name": "Glaze Capsule",
+      "chance": 116667,
+      "percent": "1.62%"
+    },
+    {
+      "itemId": 1482008,
+      "name": "Psycho Claw",
+      "chance": 116667,
+      "percent": "1.62%"
+    },
+    {
+      "itemId": 1492008,
+      "name": "Burning Hell",
+      "chance": 116667,
+      "percent": "1.62%"
+    },
+    {
+      "itemId": 1002631,
+      "name": "Brown Leather Ocean Hat",
+      "chance": 150000,
+      "percent": "2.09%"
+    },
+    {
+      "itemId": 1052116,
+      "name": "Green Plasteer",
+      "chance": 150000,
+      "percent": "2.09%"
+    },
+    {
+      "itemId": 1072303,
+      "name": "Brown Double Boots",
+      "chance": 150000,
+      "percent": "2.09%"
+    },
+    {
+      "itemId": 1082198,
+      "name": "Brown Royce",
+      "chance": 150000,
+      "percent": "2.09%"
+    },
+    {
+      "itemId": 1202003,
+      "name": "Vital Bullet",
+      "chance": 150000,
+      "percent": "2.09%"
+    },
+    {
+      "itemId": 1482007,
+      "name": "Fury Claw",
+      "chance": 150000,
+      "percent": "2.09%"
+    },
+    {
+      "itemId": 1492007,
+      "name": "Mr. Rasfelt",
+      "chance": 150000,
+      "percent": "2.09%"
+    },
+    {
+      "itemId": 1002628,
+      "name": "Red Misty",
+      "chance": 200000,
+      "percent": "2.79%"
+    },
+    {
+      "itemId": 1052113,
+      "name": "Red Barbay",
+      "chance": 200000,
+      "percent": "2.79%"
+    },
+    {
+      "itemId": 1072300,
+      "name": "Brown Leather Krag",
+      "chance": 200000,
+      "percent": "2.79%"
+    },
+    {
+      "itemId": 1082195,
+      "name": "Brown Barbee",
+      "chance": 200000,
+      "percent": "2.79%"
+    },
+    {
+      "itemId": 1202002,
+      "name": "Mighty Bullet",
+      "chance": 200000,
+      "percent": "2.79%"
+    },
+    {
+      "itemId": 1482006,
+      "name": "Neozard",
+      "chance": 200000,
+      "percent": "2.79%"
+    },
+    {
+      "itemId": 1492006,
+      "name": "Lunar Shooter",
+      "chance": 200000,
+      "percent": "2.79%"
+    },
+    {
+      "itemId": 1002625,
+      "name": "Blue Den Marine",
+      "chance": 235714,
+      "percent": "3.28%"
+    },
+    {
+      "itemId": 1052110,
+      "name": "Blue Brace Look",
+      "chance": 235714,
+      "percent": "3.28%"
+    },
+    {
+      "itemId": 1072297,
+      "name": "Brown Locote Shoes",
+      "chance": 235714,
+      "percent": "3.28%"
+    },
+    {
+      "itemId": 1082192,
+      "name": "Brown Jeweled",
+      "chance": 235714,
+      "percent": "3.28%"
+    },
+    {
+      "itemId": 1482005,
+      "name": "Silver Maiden",
+      "chance": 235714,
+      "percent": "3.28%"
+    },
+    {
+      "itemId": 1492005,
+      "name": "Shooting Star",
+      "chance": 235714,
+      "percent": "3.28%"
+    },
+    {
+      "itemId": 1072338,
+      "name": "Purple Snowshoes",
+      "chance": 283333,
+      "percent": "3.95%"
+    },
+    {
+      "itemId": 1202001,
+      "name": "Split Bullet",
+      "chance": 283333,
+      "percent": "3.95%"
+    }
+  ]
+}
