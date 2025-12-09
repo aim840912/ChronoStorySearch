@@ -1,0 +1,30 @@
+{
+  "itemId": 1002328,
+  "itemName": "Green Pireta Hat",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 7130010,
+      "mobName": "Death Teddy",
+      "chineseMobName": "怨靈發條熊",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8143000,
+      "mobName": "Grim Phantom Watch",
+      "chineseMobName": "怨靈女巫",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

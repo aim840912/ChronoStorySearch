@@ -1,0 +1,52 @@
+{
+  "itemId": 1060020,
+  "itemName": "White Martial Arts Shorts",
+  "chineseItemName": null,
+  "totalMonsters": 4,
+  "monsters": [
+    {
+      "mobId": 3210202,
+      "mobName": "Jr. Grupin",
+      "chineseMobName": "幼藍獨角獅",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230305,
+      "mobName": "Toy Trojan",
+      "chineseMobName": "木馬士兵",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230107,
+      "mobName": "Flyeye",
+      "chineseMobName": "獨眼蝙蝠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5300000,
+      "mobName": "Leatty",
+      "chineseMobName": "利堤",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

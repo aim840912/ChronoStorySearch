@@ -1,0 +1,19 @@
+{
+  "id": 2040350,
+  "description": {
+    "id": 2040350,
+    "name": "Scroll for Accessory for INT 100%",
+    "description": "Improves INT on accessories. Success rate: 100%, INT +1",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "price": 1,
+    "incINT": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Armor Scroll",
+    "subCategory": "Accessory"
+  },
+  "fetchedFrom": "chronostory-api"
+}

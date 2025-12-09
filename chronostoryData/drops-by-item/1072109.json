@@ -1,0 +1,30 @@
+{
+  "itemId": 1072109,
+  "itemName": "Black Yellow-Lined Shoes",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 3210800,
+      "mobName": "Lupin",
+      "chineseMobName": "猴子",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5130107,
+      "mobName": "Coolie Zombie",
+      "chineseMobName": "殭屍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

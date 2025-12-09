@@ -1,0 +1,19 @@
+{
+  "itemId": 2040312,
+  "itemName": "Scroll for Earring for Defense 100%",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5120000,
+      "mobName": "Luster Pixie",
+      "chineseMobName": "日光精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

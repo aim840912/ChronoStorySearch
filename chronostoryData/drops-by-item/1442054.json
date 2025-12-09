@@ -1,0 +1,19 @@
+{
+  "itemId": 1442054,
+  "itemName": "Red Surfboard",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 6090000,
+      "mobName": "Riche",
+      "chineseMobName": "厄運死神",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

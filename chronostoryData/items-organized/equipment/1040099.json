@@ -1,0 +1,49 @@
+{
+  "id": 1040099,
+  "description": {
+    "id": 1040099,
+    "name": "Oaker Scorpio",
+    "description": "",
+    "chineseName": "黃飛影之服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACiElEQVR4nL2VibGbMBCGl5k0oJSglIBLwCXgElAJogRTApRglWBKsEp4KsEqgeyuDnM6yTjJzrwBo+Pb/fd43+Dv2XTwvUgvfwKb3i0+n4/w4mx8WPD4fu7slIC/gmVAXwtwzi8WncPv9x5AliBEyd+8DGv06IYB7rrMwCMYQ/B+qCoB4xggUgYgQdiBGch7y1GZroWyqnm9qkrc69hRZfy0B5vqGjePBvS1YSmqymUgWdOUMAw2g8b2BGXdsHQEojPjaPP+Lr6uYZPWGtzQQf/1YE8piBEvTlHwN0unQyQkWwLNISkqjIh+7ufMRY1YGnh5l+WSIR8UnTordoJABvOTIEKWOW99zcBNznJUt+cUcvDG6MKmAQZKvLXGH7JEUNnk/LkVcBHZOI4gV5d27cCSpiIQqgMwJizqEAGDUMp5oXRKhfMznxewqqowsuOICOR1BQJh8tG/ckcW89edT1nOcyBtmnq6Xq9g7RvpLhfwvQbRGZh3W+1D9DJKou+PZRHNLEdmyFvcRJJ5O0RnZ5tvNxBFkUHupEJO+gYaPEetkCrYmiEX2i6MIhsu5/2ookSA0iWT8S85RM2vfpz42dyenLtaW/h+UttxlSVczTa+BCuOGpyqbenDVvZaX1/VaN/JOLuAQLOmBKPCnEs9lCztmzvgTUzDSsqNjD5Ftup+sjBQw/o9ln26kPbSLLU45pKMJd6ljFrAuJlJRtloTHQXIgkBZVC0FXi5hmemfiXjZupTM7Mk3vMgNaFp16C17a0XVBBPLCS7IyXDUo8RbIgz7hOjfzN7UjIsgcgLid35trl/w44qkmFRNgYKIeBTO6rIfyLjUUX+dxmLtm03ZfwBq4gjanPfT/oa5uyZYEm0AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAdCAYAAABbjRdIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC1ElEQVR4nL2Vj7GbMAzGlbu3gN8I7ghkBDICGQFGICOEEWCEeIQwQjxCPQIegUrynxgDeWlfW91xEGz0kz5Jzgf8PZt33h/Cw+/A5leL0/RwD0b7mwaLz6dOzwH4FSwC+kqAMXaxaAy+v/cAsgAhCn5npVujWzcMcG+LCNyDMQT9Q1kKGEcHkdIBCcIBJCBrNWelugsUZcXrZVngXsOBNsrOW7C5qnDzqKC91ixFWZoIJKvrAoZBR9B4OUJR1SwdgeibcdRxf+cfc9jcti2YoYP+54MjpSRGdByy4HeavnaZkGwBlEJCVpgR/dyumfEasTTwjC7KJV09KLvm1HAQBFJYnwARsoh16ysGrmoWs7pNs6vBCyOHdQ0MlOi1wh+yQFBRx/qZDLjIbBxHkJnT7jKwpKEJRNMBKOUWW5cBg1DKtFG6pnHfJzEvYGVZYmb7GRHItiUIhMlH/6wdma9fdzpGOU+OtBrq+Xq9gtYvpDufwfYtiE5BOm2VddlLL0l7fyybKLGYmaJocRNJZvXgg002324gDocIMsfG1aSvocbvaBRCB2s1xEbbhFFmw/m0nZWXCFC6YNJfISAa/ubHke/1beLaVa2Gz2OzPq6ihNnZxk6w42jAqduWMaxlr9rrsxv1KxkTBwRKhhJU4865MEPBwr40AKt8GTIpVzLakFk2/WTuQHXrd9/2wSHtpbNU4zEXZCzQV6OaBYyHmWSUdYuF7lwmLqEI8paBl2v4zdxnMq5OfRpmlsRaPkiVG9oclNvW+oEaYsJG0htSMizMGMEGf8Z9x+hvZktKhgUQRSFxOl8O9xu215EM87IxUAgB37W9jvwnMu515H+X8XC5XFZtvOHjXX0/sSOnLX8f6Y/Eabhy0LtAOmTDmW39dzb9PxM7Vw7ZAlrYNusv6hITYMGxTO6p4z9p0VUAeWZ7G/ciz9fy58X1kSwY+FousQN+FVx8/gVetP9X2Es1fwAAAABJRU5ErkJggg==",
+    "price": 90000,
+    "reqSTR": 0,
+    "reqDEX": 100,
+    "reqINT": 0,
+    "reqLUK": 170,
+    "reqJob": 8,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incDEX": 1,
+    "incLUK": 4,
+    "incPDD": 50
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incLUK": {
+      "base": 4,
+      "min": 1,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 50,
+      "min": 20,
+      "max": 80
+    }
+  }
+}

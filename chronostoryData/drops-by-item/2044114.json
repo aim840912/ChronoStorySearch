@@ -1,0 +1,52 @@
+{
+  "itemId": 2044114,
+  "itemName": "Scroll for Two-Handed Axe for Accuracy 10%",
+  "chineseItemName": null,
+  "totalMonsters": 4,
+  "monsters": [
+    {
+      "mobId": 5220003,
+      "mobName": "Timer",
+      "chineseMobName": "咕咕鐘",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8220000,
+      "mobName": "Eliza",
+      "chineseMobName": "艾利傑",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230106,
+      "mobName": "Lunar Pixie",
+      "chineseMobName": "月光精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7130101,
+      "mobName": "Taurospear",
+      "chineseMobName": "長槍牛魔王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 1372033,
+  "itemName": "Heart Wand",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5220003,
+      "mobName": "Timer",
+      "chineseMobName": "咕咕鐘",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

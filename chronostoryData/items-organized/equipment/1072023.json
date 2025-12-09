@@ -1,0 +1,43 @@
+{
+  "id": 1072023,
+  "description": {
+    "id": 1072023,
+    "name": "Beige Nitty",
+    "description": "",
+    "chineseName": "褐安全鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTklEQVR4nJ2VjXHjIBCFVzNpAJfAlUBKkEvAJUgl6EqIS5BLsEuwSjAlHCWYEsjuKkggAY5vZzxxQPre2x/wB7wXPrPW1F74rQCDr2OXLAoBcDxdfE3klQCDH/cBrHUwTVOyqaTkvc/juShSE/DPf1cEGzDG4scsG84BaK34u5kM1KIk4P3zjtApgRPYYSbd0IJE97fLhH8F3LF0xz5fqpzADh7AFARvW82ZEdzyun0vgxhujVvWCa51h4IOwSuUREbc68/TLoutgEf7cPlzgBsIXlAwC6hBg+5GzGRi9yGjOHIN32fgDDqV0BmYs0COGgdQ7bDAY/dxFoANH7809H9vi8hWoGkOR//AAVGdRPcSVVCkPwOMAZSWhvqQGnTwuGImpzmTbA+s1mDON1D4LmXASHQnGCYwE5uHh0xgHd2cQHPCFK8jivzUWdJHKW5umHuCCylX44Wml85Bc+pnEfhptjUrmCKGh/9dpjfVq2KeFLcDxqWxmWn6jYCnkfvfIANYHvrafJQfUui65bGloPpT0JiWIpdNUYBOs9oByvBQ/9h9TmC5nl8BY8fx2MbwrQDXXYp0Ohjk0umgZ+K1EjwWWOFif3gkpKIED+7pXJTgQSCBx43l9Km5JBqaHDnPzX1OIAm60ASXyS2Ts4WT+1rdswL0MpcC3ToCuXXktvUO8Fa3ywmvZqBUy2PJoMLBDGAKupfwmDC85j4I8BVNP5Mgosl3JqmxExa35/3g+hV8ySCIPB/j7tIy8S25Og5RhccC/PDhs/fwOhp4I74BjjKShMmByz0AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACfElEQVR4nJ2VgZGzIBCF15k0QErgSuBK0BJICVqCKeFPCaaEpIRYQijhKCGU4L+LoiCg3u2MEwK4H4994Al+F0Oirzjy4lGQBTy6OuhkDKC63IcjsD2QBbxfLWhtoO/7YFBwbse+q9subAs0fH4eCFCglMZHzQPGAEgpbFv1Co5EDjQMnxcm7wMIAQwqq9sSOKp53nv8ZfDCLa2a7S1MgSKIA1AQpCylVUoQbfv13xT5EK3M3E8QKWsEGwQsyQnW4Vhz67Oq1qAB5cD96wxPYLZDwAgSrQRZd6ist2qcQj+2jBErMgpXzqFWMKrCfKJrQZTtDPHV+KoAjdH9k9BcnxFsDSqKczW80VCi5qiGIw1hzQ2gcwnDLaM6hQs18H6gskuoLFkjLSWo2xME5iBFNjWultmkDJXpNMQpg9jyKVBxQemPDmFTHTg9QlgTuHNDEMb5ImTHHLlzVFyaEQaTKbRaABQ+xP03Om/zzStodJaJEvtbphPu+w1oIKv+NWghuG3U3DbDOFmgitLanYLqQ0H2zsWWuiyIbgcRJcpDXH1SalKg+bOwl3gcNzPE2T0FWYNsXTjj6zmgTegmmuP37UF80AJh8SHkEMIJ4tTQudqDOFAA8Q1AYU1AcGcGT8nWuckp8l7uMS8pMLPT1hBSc6QuSRAlsVuEqzeU0CxWXdfDQUpZzjcGuCvEW3MEEqK0drYJM0fBASjo3sNjZiGTmorSJCDuajEEsp8G+nwD8+YaFdTAMI3D47hTMUGuK4gPc995fZokfyHs5/PuostR+bfyosDFHeIt8xXN4WpEk6vzd/OC/bhmEq7bwXOCRZ5V5oHXwSBdQbPxf27/B1TUqppYQZzXAAAAAElFTkSuQmCC",
+    "price": 2000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 48,
+    "reqLUK": 18,
+    "reqJob": 2,
+    "reqLevelEquip": 15,
+    "tuc": 5,
+    "incPDD": 5,
+    "incMDD": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 5,
+      "min": 0,
+      "max": 13
+    },
+    "incMDD": {
+      "base": 2,
+      "min": 0,
+      "max": 10
+    }
+  }
+}

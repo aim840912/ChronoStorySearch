@@ -1,0 +1,49 @@
+{
+  "id": 1061012,
+  "description": {
+    "id": 1061012,
+    "name": "Purple Arianne Skirt",
+    "description": "",
+    "chineseName": "紫錦絲緊身裙"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 13,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAbCAYAAAB836/YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACKUlEQVR4nJVVC3HDMAxV70bAFEzBFDIIodBBWCGkEBYIM4QawkzBFAwh05MjJ06afnSXa91Kz0+/lw9qbaL37bQ+rAGn398/ul6vlHN6Ccm5nry/TGvQhqEPgYbhW77nzGcfqD/3lPjgx5H6rqeYYnHm/wP7b60BdNaxU2EXIsDOFFKizI91ji/0AlTNmPa8ApyG4cYpGIpxAe+cpZQ4wtqSAb6b8n/CJQyYbM8X+pr2timNGQ4AloDO5zxTstYK6MOUUavCksNyebagz6wCIpgSUsgzeKIxRDp3TkBxFh+k/AD7YcqokYLqJdbY1xhWpquySNGZFdLF5zOwHaDWLM/B1hrqyMp8GjThHYZbZwDjQcEAlrWjc/3udXjH8J4pS+yE3XQaZZCVugN48uNl6s8Dh7YpKcsjy1nW7/4ut47rOeS68kruapj3Fz1NWa3vOrryXsrK2ePGNIB6uw4yxgWxui3ic7ByhwxLzfYmoO/OodZL9xbShQ4rSxWHyhK/sQc3Zqc2Il8FdEkfm6Kg6UjFN5rYCqwrq6ZsoYchpropVRxMqSXTFH9jFpYNIGQLZZJSJa0bFKhsyqurN91uf1UDIWEwnUPdlARgyPkqvcpSSBeWHyWYqvznvOhhGZvSKH3XPBqZWkMEaqroW/CRfn4GqV+KRbr0RZVkuGeaq03RFQTg6XL5lBf80mlTm6IXplkbRSBMacYMotaMjRwUGDaOX/SCnbY//APHBFttDhZCVQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACeElEQVR4nK1WgZGjMAxUZtKAvwS34C+BK4EW8iU8JZASjhKOEkIJRwtqQSXwkowMJDaB+dOMBwxG65XkFVfI2wTn7bL3Mgc0fX19w/1+ByI8hBBCDX3fTHtgWUb9MEDb/tV7Ip73A9S3GpAnfddBXdUw4hgX8/uB17+zLFDwgT+ObIZRQG4wIALx8CHwRnoFSObcdn4AaGrbB4fCwTguoFXwgMievI+M5d7F9yjgDIS+5o30xfCVimFjjh0JhoLNc5opeO8V7J1lgSQXkRW7oziewc7aC5A4BZRQ0AyK0A0j3KqgYDLXNRK6E5iHQic5MDAD987DGSsCrY+QJptZSNjkehakCGQ5odmp9w4q8Hq+nCT/Jxg9OxFAGZIQASGrsDk/RyquyChnxko0wD9VnoRTJeQE0KXvmqm+texyGxpjVTIilaFzWrd1sD5HnDeWppcc0fs6Pxw6s7qq4M76pNLjjxdEFsh2awdUylp8mjromoPSswtkIKXnP3aOLB+ma9IipOKMlYlqYiXPeAUXxGH11jYRweIDPbA8MTAsdd03PSnf+EKUHGMn/WgYMSlDElUXc8W0dL1zZVZZIGkPkgZNBVpeRNGjMvyvBE2Px3fqQdIqxOwcmTKgAEr7XYUpsVKSeVYbRuLf2jjR0o9ieccCsX+JM6X9AiQOLWRSR0M/wudnq/nBMbYI+0FBPbS07DBtVqXo1x7QpWk+9MdxqTyXisE2gnNvUmF1sQhm52YfPCyBZMOA5hqC33JlwId91XV/jkSmWd2HJxCJMV5XIH51bSD9UEFeIhajzJqXE7VmVFq0J820c78ZV1jorcFyLEoNaW9j6f4fZ7l0WF7hFN0AAAAASUVORK5CYII=",
+    "price": 2000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 40,
+    "reqLUK": 15,
+    "reqJob": 2,
+    "reqLevelEquip": 13,
+    "tuc": 7,
+    "incMHP": 5,
+    "incPDD": 10,
+    "incMDD": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incMHP": {
+      "base": 5,
+      "min": 0,
+      "max": 12
+    },
+    "incPDD": {
+      "base": 10,
+      "min": 3,
+      "max": 17
+    },
+    "incMDD": {
+      "base": 6,
+      "min": 0,
+      "max": 13
+    }
+  }
+}

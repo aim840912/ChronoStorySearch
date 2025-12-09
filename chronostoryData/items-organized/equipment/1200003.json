@@ -1,0 +1,36 @@
+{
+  "id": 1200003,
+  "description": {
+    "id": 1200003,
+    "name": "Red Arrow for Bow",
+    "description": "",
+    "chineseName": "炎晶弓箭"
+  },
+  "metaInfo": {
+    "reqLevel": 10,
+    "reqLevelEquip": 10,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "price": 100000,
+    "incPAD": 7
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Projectile"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 7,
+      "min": 7,
+      "max": 8
+    }
+  },
+  "fetchedFrom": "chronostory-api",
+  "externalIds": {
+    "mapleSaga": 2060003
+  }
+}

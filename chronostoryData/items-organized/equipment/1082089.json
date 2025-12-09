@@ -1,0 +1,49 @@
+{
+  "id": 1082089,
+  "description": {
+    "id": 1082089,
+    "name": "Oaker Garner",
+    "description": "",
+    "chineseName": "黃神功手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACfklEQVR4nK2WgZGbMBBF1zNpgJSglIBLICVwJZgScAmmBCghlHCUgEowJRwlkP0rrRCysc9x/gwDErBPf3dl84P+n5bo+pDefBcUgl9KosIQmZzo50eYD8B3QMvXH6KMg1NWhMm+GWisiXIGH44CPLwLoqrhgHCRDVQwK8sLKutCYNTzSsYV9i+gkC5A6ksRnNDggOWJqGlIYNeW6FdFy6ugBasUZRGABSeQ7QYaGHDi1HV8Lo17/BWQ1GSeXIpUApgHas6DNANqw/0gjiw/W9LrIKkJ1NbORWbWe+oA6ULn1bWDcdqgpzWSehhj6LOexM0WuH24ZHM9rwF+jR+f++eOlpqX1fc9jRdP8A58OQLwclpfsv7RMnL7CLS0bcvWG4GEFPkgKfDcuQ6EA0AxPlch1u4+WsZxpKqqVkjmCo5raYaMzzOFsZ0NWetWUhZbwJ4jcQLIZ21XSOZ7J4LJkM8fvSEsDO7Pjctlb29XH4MEkue5y9Ls2nRPMQR1hFBTD3vtR1XSZIbgRucm6yDX65W6rqNp4hRzPmfkc0cKCm7Qypo+qD1Z+S1T/W5yCQiI5cIA0viUwdEzUIBgZQqDFKhCqiBAcEhn+vjHnbQpSNwoBFKYOPJACHNwAxeASGfWtGmQh460AWIpNL53D2L0tqGH2jQDAikgVQzBebMoQHgK4GOz/tntgjRg7CieS8dwkz1xsgFhlVqTveDqBocugr8NKPydfweEIDhSWKwYgk6Lt8B3HR34xSWFxOO0Juncs45T0M2L6LR4nLrBxvSb9IBPq3F/n96AxBUu0t0NoHZjCtF3faepdjfs5oF7QIX4+/eC3Q2+B7oLfCXYI/0FiOJrJS6VZkUAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACxElEQVR4nK2WgZWiMBCGx/e2gVgCVwKWgCVgCVICliAlSAlHCVIClCAlLCVw8yeZOER0cb15L0sSSL75ZyZZv+j/2aT6m6UPPoUFwDknyhKiJCXaHsL8DPoJbPr+S2QYQCYLk03VUlcSpQzf7Cw0AD9SVlS8KdSYljLmmTSjvMwskBr2ppsDfwMLoQOoPGdBEbUOmh+Jqoos8HYh+lM44LuwCd5aMwrCBkWwvm6pZciRw1jzM0/ui9+B2RyNgwuXmIWMLVWn1hYIcsU1YpX1/G2uNnhLGXIEu5ROjVFeixKEDhVZlg7IIYStypnNT5IkdC0Hq2oOnX+cs8iG/YDuxI9PzTplU8nuNU1D3dlTvBKfngA9H++Lev+pztVPsOlyuXAYKgsK4fIbxdBT7SoTSgDG+FSEvV6es6nrOiqK4g4yrgjQtwVi+DlSGPdjQn3vvMnvtfNwZcUwqwiga9nfQcbXlALaIT8PTUJwDlE4VS6uTb8cLg2zoDRNXcRGV8LPTIOQVxhy7IHvX8Q2ZEkbVMnc0DvQ7Xajuq5pGDjcHNsRsX1hAguqUOYSStjl2Nu7T2xfpXZTgHpOFECVDx+UrYEFEDwUIEygYggbDCA0W7GesXsRQoFZVQKCCdAq81AY5qAKagCyFVvSrGh+VCZFoU3A+t0SKJHXC4d4EaY3E0hsGoTnzDGAeArwXTX/h/kUJptqZXouHkOVWaFoBoO3kqNnAFGFJo7wbw0KPw3WwrARWgzUpkGoQH081hpgG148xSA9jnMUz62pRIE9LEYF6nGsCofXH+Qth/K7ezzLkvBZLgRm1aET3wKASpVGoD2563PPFXhVS2ReQKM0XY1beMQb3WKogGD+iT+ZWntSfX1oBYQwDQIzviFRBzx50zPNrVb95cM4t4dbWSsz0YfFLzaN+7P2pV4M0eZLILPk8cLcogP/AMTwhYJfHnR+AAAAAElFTkSuQmCC",
+    "price": 110000,
+    "reqSTR": 0,
+    "reqDEX": 190,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 60,
+    "tuc": 5,
+    "incSTR": 1,
+    "incDEX": 1,
+    "incPDD": 22
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incPDD": {
+      "base": 22,
+      "min": 0,
+      "max": 52
+    }
+  }
+}

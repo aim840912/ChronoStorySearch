@@ -1,0 +1,19 @@
+{
+  "itemId": 2382040,
+  "itemName": "Zombie Lupin Card",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 4230101,
+      "mobName": "Zombie Lupin",
+      "chineseMobName": "天使猴",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

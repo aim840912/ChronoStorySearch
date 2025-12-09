@@ -1,0 +1,37 @@
+{
+  "id": 1082183,
+  "description": {
+    "id": 1082183,
+    "name": "Brown Leather Armor Glove",
+    "description": "",
+    "chineseName": "褐色皮革手腕"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 20,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABYAAAAXCAYAAAAP6L+eAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACP0lEQVR4nI2Vi3XDIAxF8TldgBVYgRW8gldwR2hGSEaIRygreAVW0AqM4OpJ/PxJE1o7NoarJyHEl/m8bd3z8G7wJ2ABTqM3zlrpeIS1GHlp4D9wBaI5Z438Mfz3eeeeZAIbCGu8NHAFPikEzDnHKH2Wxi/jOIrBxyIe7OBH8AYgJtsMkcvJm3HK41sylFI1gDmsfAcvYFE5T2N1W0Cs0h79YWCMsXqiXcmM3pk1UoUDvAHovRNYGVyAqWMSRemAWoQJwEhkrpooRqwwaAnBJEoCgwL0FwORodZqMAAtcFYp3z1759nTSElU1xgHhhI1fZgQKQh4nicOi5cQwCFKJMpjC4HEGbPjEnYx3kFbOFX99+3BE0f2QOFhVZWjhM+YOxu+MbC878BnbGtYzLCucj3vs3m6WZ6hFNA1L2YZyyI3AVP34bI1q8P3bZEMuv9MAiZePGQe4ovfsiZfZV4O/Ilp883btjB8bVhIuL7wzsNvl9YVPDyWsP1wylGKdYDtBpUE9J7hmqvaw8YUmuS5bhpz2HmOVcTU8tL2N/1nkNaOlWPs1Avd6gdPC3hAxYLqnJa5LnQjuSMJXDHIonHyNY+L2pxdw6kI9bHuw9GsmV2v6E1dccrfenBVjY/YBGcXGZNs7aSynfN73t61VvStwUkXYw9vJbNvqIU99Apc4VLpiDRm9qy9eH4FfQWWQQvDsf+RYoCXxXFSo7XoUKtuH50gFZ6Lt5k4V+U0wUnSzr067mryu8NUJoVuUxy/vWp/Mog99Uoa1YcAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChUlEQVR4nJVViZXjIAwl76UBtgSmBFrwluAWPCVMSkhKiEtYWnALtKAShhI8kkCAgXiySuJDEf/rQlzV+7JXz5d3F71DwMDzZJXRmhUPtwnZr0RnBBmYxBit+IMk/5531ATlkMht/pRoRNB5TKDGGISMzyz4Mk0TEz9WjmhI0hLsBEwgOoHxz/CbMhEXL0FBCJmI1mAkQxIhYK+XecrpYED0WrcrENh7nyOLqqAma9TmoSMhgp2ArTUMKosEOFTGAJ4V5D2lj4A9gDoTjoByScarcypAYFDyiPRC5BFc65gkAhcS9Jr/txitxcg9hEMUuQYOwQGKv7TQg2OCZZkxXZZTQwFCAI7El9RwHWi1X10fQQw/qFYoKtJ+3h4IMGFEkcRt0euJ06rUHR24IbC8Dwl6+CJUdLdt/HveF/U0Cz+T5wS+paKLLVRpYgKoDIZS2C+ft5U77v41MwFgkaljKf90b7vuKutTgTpsnS5WHwq4U8EpJSvuZLpX26IjuDxWt39hq0Lw2VBXxtK41iJJ7PWoQdIIHvg5b742AhGDXvlQ+lrXl/hFwDibNqyBiVHFEaLGIgQXmpAURWrrNHcqS1QEJolw1HXTbPM+EO9TN/b7QKSuRZ2mwqoOWvY/VEOwqUJNkKMgI9pMfegIF3RWgoyJ9J7GRjeLaikkEIt2JCmjuhaavSPwEUEm4ckKEHOq+1gkI2fgrwjYeEUSmi/UmkQiRTR8RsThBmWa/teJlknSIaJm7HU+3ehkK+dytjvBGBLUufhDF+fhe2D3ke7thKsrFIRAv7iL/B0QCHC7fQ/9ek0KrY6grzbmSFrbA+G1+WO8WwZ7biBh8MwpCi+MWvDfCIYYP18kTn5ylTgEAAAAAElFTkSuQmCC",
+    "price": 10000,
+    "reqSTR": 20,
+    "reqDEX": 20,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 20,
+    "tuc": 5,
+    "incPDD": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 6,
+      "min": 0,
+      "max": 16
+    }
+  }
+}

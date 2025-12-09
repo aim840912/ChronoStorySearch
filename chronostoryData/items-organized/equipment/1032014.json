@@ -1,0 +1,37 @@
+{
+  "id": 1032014,
+  "description": {
+    "id": 1032014,
+    "name": "Pink-Flowered Earrings",
+    "description": "",
+    "chineseName": "梅花耳環"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAYCAYAAADtaU2/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACaElEQVR4nK2Wi3GjMBCGl5lrQC6BlMCV4JRgl0BKgBJMCVBCXEJcwlHCqQS2BGVXWkkrDEkmtsa2QI/99vFL4z/w3OZW79XewmeCnRv/UYf+w99qeHV78GeBAxQFKvDleIHDrd+EPzFiVODv2yPgVM8y2rKpqGOrHgFLPaUx1GJ+9s2EX2PAXT74IVDf/vrUfwfeUmmGogqxJsOtXopgppocklcbSuHad6ims/sK7LynCCmN1fXsolFvEFWUo0nA1Le0qG+KbKDs2QMLVABRpXUHBztkZ4qGZY8IRdGxnN+PmOctruzJyyz5M2Zjk4Jyz2sEispZDc4q5WjvoKFfTEspf/NqZYMmwa0CQu5NCABl7nAbeDKJK6RWRypiKBpD6OMaLxBYTpdgm8cnquXxWkY9d8X2CI0RK6iKsiFjxT6Krg8qZajr3nMaMQQM0yk5l5rNzi/HjuHqOKV6Km8/NlTazQDnY3it6+1LI46p2oJk5b7GqK+7jcKm69CW0ehSyF5v3AddF2ZwVbYAjiotXVfGBSoqdc2FbyC6DEYVMRYnBin3RrxcCyuCq2ruHauVjSaVohROHw2fM48I6p5E3SrfYhyWpgM0KE4gvMxTguaIaeCAE8E7v8jDB1JpO4dIoyPzKGzj1wVQv06VN36Yhy//FOTjdBrDfRvPL/P6dl+lNL7Q5UwO3xndAq1bvkDWKk2H3wrcwKaKf9nKK1MfJ4GjKN5Ex9Q8PuBFqjH/P2K1RsOoHeBHa30CMM2TYPDq9z4CDnBRd4yHRSQ1hP9w8iNR4S9w+zV0DfaGWN3rMf6h6H781/Un7RPTVogr6v93dAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACtElEQVR4nK2Wj5WjIBDGx/euASzBLcErIVdCUoJbgpaQlKAlbErYlLCWcJbglMAxMMCAmOxtwotBEeY3fz5IfsFrm86eq72JrwRrPX6ZDu2HruryR+/BXwV2UGQow9fDGerbUIS/MGIU4MftGXCoZxpt2kTUvlXPgLme3Ai6YLy3TblvpUCfP+nGUd9/29Q/ApdUGqEoQmyM4U5ORVBTYxzix8WVQncfUE0nfQ+sracIIY3V9aS9UWsQRZSjCsDQd2bS0CbZQF6zB2YoA7xKmx7q5RKdSRqmPSIkRcf0/X7E9H7BzB4/zJw/pQqLBJR6msNQFM5KcFQpRbuBun5VnUn5u1UrGVQBvgggxF65AJDf1bcLvQzicqmVkbIYkkYQ89GtFQisx7OzTeOTqeXhmkY998lyD/URC6iIsjXGknUmusGplKC6/4hpRBcwTMfgXGhLdH499AQX2ynUU3j7WVBpPwOcDu6xacqHhh8TtQXOyrbGKI+7QmHDcbik0chS8Fpr3AbdJGYwK5sDe5WmrgvjDGWV6vZMJ5A5DEYRMSY7Bk3uFXuZC8uDq2oeNKmVjAaVIhdObg2bM4tw6p5Y3SLfbBzWtgdUyE4gvM1TgMaIzUCNk4H3dpKFX4xKu9lF6h2ZR2YrO8+BhjxV1ng9X+7+KYjb6Ti689bvX+IN3b5KzfhqDmfj8MZoCZS3eIDkKg2bf2G4gqKKf9jSI1NuJ4YjK155x8R7fMKLUGP6f0Rq9YZROkC3y2ITgOG9EQxe7dpnwA7O6vbxkIi4hvAXjnbEK/wNbj+G5mBriNSdj9GXiS4fryGV3b22qUnpZ9FH4Y3yEWSCjGPUt/8JRXEVwWrnks7k9zmkNO43qf3vkoM9pBG9hHw3tQ+d2Yt4b9G9/YN37vNrA/bpeJTSsLMeOLbnDPwDTkSjdG6ZIQcAAAAASUVORK5CYII=",
+    "price": 100000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 60,
+    "tuc": 5,
+    "incMDD": 40
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Earrings"
+  },
+  "randomStats": {
+    "incMDD": {
+      "base": 40,
+      "min": 10,
+      "max": 70
+    }
+  }
+}

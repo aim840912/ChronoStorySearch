@@ -1,0 +1,41 @@
+{
+  "itemId": 1402007,
+  "itemName": "Zard",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 4230114,
+      "mobName": "Platoon Chronos",
+      "chineseMobName": "進化妖魔",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5120001,
+      "mobName": "Cellion",
+      "chineseMobName": "紅獨角獅",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9300038,
+      "mobName": "Ghost Pixie",
+      "chineseMobName": "鬼精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

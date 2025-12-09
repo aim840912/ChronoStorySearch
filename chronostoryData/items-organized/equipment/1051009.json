@@ -1,0 +1,49 @@
+{
+  "id": 1051009,
+  "description": {
+    "id": 1051009,
+    "name": "Purple Avenger",
+    "description": "",
+    "chineseName": "紫飛影甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAdCAYAAACqhkzFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACKElEQVR4nJWVbbWzMBCEh3NeA1jIlRAkgAQqgSsBJBQJjYQigUhoJNxYiATe7ELCRynQ+VFIKA+T2Q38w1rDdEw24+XcoZbA4VGN9/+qhE/C2FmLRv8MV6AByLA0nS886wnmgFQI3PO/S1ACDl7eBeCNQMoWr3xeKc+b8bySLyiTBehuHOywLSwP6meH9lb6M7t6qiWbBDcOOSpoKF4RRWG0RYciOmeg0R2ch9RWQes1bCsP4+UL6e+jFeXCT/YROmUoQfFp7fOC2AW5hWszPZSy1Ur7a3qVYUJ0zqfpUd0LPq5l+EFbqPNuLVoe56g9th1ClRMKm6B5DnQyXeGckQwN8gYYEGBLrRpb+L5pmz88+lCcUVYSdHVfQm4IGqRHeLLdKW+iCjujebkWKypDl+M3h3SzWHT3CHMRNgGTLWSpuFPKsoTqMm5e2MZPlROs+wTbVXSYemcB6rIez9cPbtlcbQHJDz4Dv2UopURnChRZhdq30G8jx3mU/Euj5c44dOimLSaoYWnXNOA2z+UjLj9FiSOdVplgVCjDpaHlmsP/R2Bw90kGDR+/znBPSt9wVfPWU2qoqorzMyYui7fkVGEujMT9WlG2IrC1Nr5MKUtrlC+KvOTwSAO5osLY8//uA5cttFUozlfAPdG+tictcxXIL2Bh5uxK9B8LE18OVOEzUZaXG5v0IbuBHNHHaHzt28NKf5VhEH0CcNKH3Ng717kHGWDe5nf1H62iG42ZQwmkAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACgElEQVR4nK2WjZGCMBCFnzM2wJWQKyGUgCVgCViClCAlSAlSginBlHAp4VICl10IBCSId7czmB8g3/68BPdYt7Zvd7NxOLfJ1kDttejWPdU77vixNQal+mzfgcVADEmSceJ27iEWSITAJft6C7YEap05rwHnOKSs8MjGjPG87vqFfKDWqYetpnUxoupguD3fGlTH3PXM5L6hsAiqLTIUUKg5A5RSrQwaHJ4iXQRp1cC6xc+mhlIGa+YgnEYh3XuUgUy4yfsTLFIjCSqPUq4eEItP2CBK3TtDtVO1cvfU0/NLoB15w/kv7yguB26nptmBOcy66AwqHmc4O1w1RBVT3Y6KTLAsAxqZTG5aLRnmzTnGC3vIkq1uWOH0XZVfuN69KDozkmBTx8h7gnlTHfRVjeJGirNacdoMJrRdn6phHN5cBdGiIti1HcQOkB4ULhjdvNGTIc9z1E3KmxKmdFN5D2likFWLRpS4SDzMpnfcHp84pqP6BCQ7tBX4skZSSjT6gENa4OykfiplN4+cf2m0dBK8FZHtjxpBG5FOiRK8fTN5HdKYIMcWe1t1BCGBaJYEpU1ji0VBPpqYaZTc/luNlqxWx7ffiR9Bdd0WRcH10VqP8+5o6hXHgpC4/E0McyOgMWb4yFGtjK6dGOSm93+TupaiIEEYbLdNoFDqc/Oi+BfQktG5ZzZK+7egD1f8b6HH2uQYPt0fwXOTFMxB/qj+JsVFTI6dC2Yb1t+zQcuXByWzq5tcrs2dIqA/Id3n24TKCyXoIaQZsw8WF0H70kzgAH3KnVWBk0/ehRGFnpzchr0urE8Su/DCUx2cZovb+bXHGF4Io346gyT9s/N5uzIe+j+39zOkqMolSwAAAABJRU5ErkJggg==",
+    "price": 37000,
+    "reqSTR": 0,
+    "reqDEX": 70,
+    "reqINT": 0,
+    "reqLUK": 95,
+    "reqJob": 8,
+    "reqLevelEquip": 35,
+    "tuc": 10,
+    "incLUK": 4,
+    "incMMP": 5,
+    "incPDD": 40
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 4,
+      "min": 0,
+      "max": 11
+    },
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 40
+    },
+    "incPDD": {
+      "base": 40,
+      "min": 5,
+      "max": 75
+    }
+  }
+}

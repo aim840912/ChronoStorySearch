@@ -1,0 +1,38 @@
+{
+  "id": 4000218,
+  "description": {
+    "id": 4000218,
+    "name": "Ice Shell",
+    "description": "A turtle shell shaped like an igloo that is made of ice.",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC00lEQVR4nK2W7ZWjIBSGr+dMA6YELcEpwZSgJZgStAQtYShBShhKWEqQEkIJLhcEEdAke/b9Yw5Bnvd+qV/wudaL/7JPDnoX7oDremRTsf9uy8z/86WRV/A1BIpgQ1UA8G2x//N069P3zd50auIKviKUSxkBz1Tlub7iPfX4C31Xw/2ms5E0cAbXYITm6kCpDkMJIaHCUEPoFj2hzK0hmKn9zfwE2t6SBlJwB7bKt4gAJHAe54Ews/ajgG5NGMOFMnZmIIRHYCuE1omoUVVh1h+EaQNcxntSBny4q/EeaazEuUlYtIdOMC9PNRG7gSjthQILbDKvvjbqJNhLU9fUUfSccX0dxxFIUDILX+dlTzcaKKoc2Lb5DHwm4UGx8SayN2I9L8DaUkd/iBxZGKwF2RpbE36n84v5Q1i/NR92fF5UehK6Rl29GkVpt4demUDZDg/lQ1HiwiTCV/1kkmpXXgBj1NwcbKyr2nU16qcrXH2thAf1JTEMdS+hXEcvmh4EndYv605KrBFXhzWu9hOhDszUJgy2rqrocMwklzE0iloZGIYJirpBuEl7LpmD+vt7tTYNA7DcRCxVVFQwaJpjtFdguRVPUKKvY9+7rtdwP9q2HfR1nkdjQI0IGoCqMYep8lDVycXJAyeM2IeiEMymYYdbWTCqLO+wLL/OQPuY3MNHCm468gSMKTVR43xv0ESDJl8snPPIQFOrum/rUhHsHNsZltx7qYyjRj8eA7T3Vo1oBXXXqUk6luftL5lGdSml9LDWebUH7zemlpNJm3TBEBIZeAn3o/eFB9Pgoe6aS42rvBpwobOUffQNJ/2XjhQHYGjsHZk5TzszKvZ0yuCNJ0+e+JKR44J3Bnt84yX9VuOmU/eXvmBXX6sB9WDmcIZ+hN3LwzrCszL77KvzBHal7JBND/4ZcJPO0DbPSdgbeqfhdGaW7fOZ78CPDf8L3Bn4X1Crv6hnnh83TTfnAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/klEQVR4nJWWjZGzIBCGyczXgCnBlGBKMCVoCVqClqAlnCWEEo4SjhJCCaEEv13+XAG93M7ckEPkefcP/Mf+buvJs8tfNvoUHoDrumdztf1ubxf68Fchv8HXGKiiBVXJmHSTw887zM/3q3/pUMQZfEWo1DoBHllVFGbEd+rpmw1dzR5XE42sgCO4ASO0gA01bIamlGYVuhpDnfcLF2EOwQLWN8834+01KyAHD2BvhfOIMc2kTOOwCDv3BcAwp6zgEoQdCYjhCdgbQuuM12hVaef7RRgBUqdrcgIoPOR48zS1zL5ZWLKGz+z5ekNHbAKSsJcAVlhkJL/e6yyYhKlr6sR7KaQZp2liS5QyD1+fry3cKKCsCibc4iPwkSkCxcKbl60Q6+eLifZmvN95jix01oN8jr0IWunypP8QNrjiw4ovysp0QtfASHKUhN1veiYCzVd4bBSKpk5EInw1J5OGVUXJhOD25WhhXdWhqtG+ujLk15siUGoa3YB3Fy6N96oZmOLz+s+r0xpzJGGzJuR+XngAC1iEztZVlWyOkZQ6hSZeg4BxnFlZNwi3YS+0CFC6foC5eRyZKKzHGrziSrCm2Xt7BtYueYovZpyGIVS9gVNv23Y04/M5WQHQIiiAVY3dDNLDoZLLgwMn9phC0RAs5nGDe/NgtNvtwV6v7yCg7edw+GglbUUegDGk1mvsbwfNFGj2YpFSJgKaGvLu5jUQfB/7HtaSXCrTZNB9P7L20UKLVqzuOuikfXo+/pJpoEo557u5juSekd8YWrnMRmRwZlkSAb/CqffUcGMeHeqhuKBd9VmDKxOly5++4TS9dLTaAWNhn5jt87wya+UWTh3dePrgxNdi2U+QPUR/xyF/q0lbqfiwcELe7FPb9/sjaFTixxxhj1sAe/jldtl9dV5Rq4MfX+wpLDZ6FPYgABcrt6f2cKrGA0syZs1EyPVzxmYi/FBhruCot/hiD5H5ernPZ7kBx+g9ffI7/svCaWiomDsI+HH/3xkJ3YmAM0HG/gNIArLIF/GTpwAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -1,
+      "y": 27,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 27,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "price": 40,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

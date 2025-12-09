@@ -1,0 +1,19 @@
+{
+  "itemId": 2040410,
+  "itemName": "Dark Scroll for Topwear for LUK 70%",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 6230400,
+      "mobName": "Soul Teddy",
+      "chineseMobName": "幽魂發條熊",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

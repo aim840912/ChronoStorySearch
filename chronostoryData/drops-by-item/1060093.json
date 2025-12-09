@@ -1,0 +1,41 @@
+{
+  "itemId": 1060093,
+  "itemName": "Brown Studded Pants",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 6230401,
+      "mobName": "Jr. Lucida",
+      "chineseMobName": "幼黑格里芬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5130107,
+      "mobName": "Coolie Zombie",
+      "chineseMobName": "殭屍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7130000,
+      "mobName": "Lucida",
+      "chineseMobName": "黑格里芬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

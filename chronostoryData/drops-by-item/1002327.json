@@ -1,0 +1,30 @@
+{
+  "itemId": 1002327,
+  "itemName": "Brown Pireta Hat",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 7130101,
+      "mobName": "Taurospear",
+      "chineseMobName": "長槍牛魔王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8141000,
+      "mobName": "Spirit Viking",
+      "chineseMobName": "維京",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

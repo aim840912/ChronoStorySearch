@@ -1,0 +1,55 @@
+{
+  "id": 1082094,
+  "description": {
+    "id": 1082094,
+    "name": "Gold Pow",
+    "description": "",
+    "chineseName": "黃金柔絲手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTElEQVR4nJ2Vj5GrIBDG15lrAEvwlZArISkhKSEp4VGCNVhCLMErISnhpQQpgcfusoCAxsvOZDAo/Pj2H1/wuVk/Nns+/hRk/90Bus5RvvcBP1b05+JoM/+I0m4DfwuizVANgtzmPCnAV1BYwH4DInehIeTvUYFS/L9pDdgHP/tDFLC9IDtPAMaUEBz7s3JKTADVYHtABFEHgLZliFgOY7UG7leg32WIsHegAHlnCEPFCLwMJWwLtAkxZqlKnm8e4gDkQhj43RpoCVE9Tz50iAW6UGBoeowxQsMB4wkrrqP0RUh78ilLEE889ASj1d9mufBRqk1NQJZluI+eCWRhTw9z7cC8Ku/9oYwG5erpcGRVaYystVPYTB30EmjRyVf/fogbksonzzlwmMOx09Dhd0eoxMiceHBrf0YOJgaVNgHnLtV5oATu5te9YI99CQQBUpDkFgc691HZPL1AHYe4MgcYHZJmDdRgQ5T+JQlgZx0gaBy3yullqtuGiesabBkCMT+6SAhrexhvOrgU1SIk1FMA6k2QxY3IAwKxHNx5OoV6ugxxnM/8nKeygrolycAnSSEYO4TgdWBtbBH3a4T4oqRCVRkFL0ZpsMF1cnGlkLym6N1TEyCBUOXjZgRDF3ZbilKIq48FRE00h6prEDksxRk7hMCS3ElBTdNoW1R8ApHgVyCZz+LtK70v73XkwtDrSOESMo4YiEozyyByP8m3te7dOIhlqg7xEZf5Lr2mJhzUZOm4dk2EjWThMKh3kOKg6dyeq9wv3AUpDir2Hyi+Sw+CRQJQAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACmUlEQVR4nJ2WjZGrIBCA15k0gCWYEnIlJCXEEpISHiX4SjhLiCV4JSQlnCVICRy7sAiIRrMzDgR0v/1jyQE+F+3GYs9HnwL17wOgqgztax/4Yw+PtaGO9iFauQ28F0hK0TsEGohdZPDgPV6E7gFSGFEQ9u8sQAj7uygV6KedO2MWoVuBeuwBlJrDcGyuwnimPHANugVIMHECKEsLY0mhKMdaweMG9NTtHPoO6GHvBKEYAQTX7TJ0DbgKU2oChdC7gxkQhRba+LslYAwTjV18Sp8rDC1DUWQ35RAFB8w3vAkplT3CyosrdYI58qkhKGn5UvGHz2mu4q2sh9q6ZV5+BbBIXg5q2osaMvvOOCVBmPN4OlsvcznUWvdeqTjJGKwxCTe3306KyeuXXTMG+DUcKwkVvneGlRyqix2Mjp/OJh2TT8rAhFFUDsyJvbvvBtgjB4YhiA82hcsAr83k6dgPIM6BuSlISV9c74AFNl7uj1woepQehmLzmvGGl6ptUA5pga2IYepHzgpH6wa6u/ShRu8R5s+jB8tNQI0KUTxM2yIY+4s/j3U7jePVztMjIGBdgqKxloUwzC3C8BrSemo5j9sEc4ebDrxIaHhBp43ch5Qv0BCWnknae0kCBTBShEoJiqGttngYwsz5imCipzWMQg7GRlMdYMdhaKbGQmBRFFLPOkgA4yLJ9chIqunfAPfWrIfgQut7KXkcw7oOE7XSLB2M78f03dxtURiYtnTp88ehdLcC2p8ryNLARvvvIG/U0vXkAgLCKPhFBW0rGIatYO1KvhiD+2Tt6AxUKVBknrtR8O1CIx0s513okkzW8RssoSEEMqAKRl7/n6xtlVlccx4uvbxSKdFeOo+eQ7I5JNBc6JbKdM1AP/8Db89ikkUZfdIAAAAASUVORK5CYII=",
+    "price": 130000,
+    "reqSTR": 0,
+    "reqDEX": 100,
+    "reqINT": 0,
+    "reqLUK": 170,
+    "reqJob": 8,
+    "reqLevelEquip": 60,
+    "tuc": 5,
+    "incDEX": 1,
+    "incLUK": 3,
+    "incMMP": 30,
+    "incPDD": 24
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 6
+    },
+    "incMMP": {
+      "base": 30,
+      "min": 0,
+      "max": 60
+    },
+    "incPDD": {
+      "base": 24,
+      "min": 0,
+      "max": 54
+    }
+  }
+}

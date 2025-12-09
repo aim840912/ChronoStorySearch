@@ -1,0 +1,37 @@
+{
+  "id": 1032020,
+  "description": {
+    "id": 1032020,
+    "name": "Gold Drop Earrings",
+    "description": "",
+    "chineseName": "黃金耳環"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 65,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTElEQVR4nLWWi5GyMBSFjzPbQCwhloAlhBKwBClBS1hKgBKkBChBSjAlmBL47yMy8tydf3czg5FXvtybc274wLz1sd/hD9oU2FMDQo3d/tT/BXQeYXvEX7YpcLdLu35ybXq+1L6diaU1fH+57583SnELmIxODdDlCMEDPlAvHdIK307/x8Y9hQmIWVZ7m8AQL1hPfQBfbc7fh35s3uXIBMbQAInQODDlf6FfAGlUTKFYhT5vGY7Xrvfer0I3gcF3MZOtQjhCGjrNW+n10FbaKz3rcP8EQbEKfQFXzT5AQyfreK08utsFNC6u8TK3NPe4uyDQW9biWCynl4HrZmcJWhOhARXBqksmsHM89gnwSQHnZYmqrXFOOlJvWF1TjXDF7Cx7E6HwtGAmGWDcqunzUVjyeFgcUoCrZhcWXlC9kUxgHF3LaXVxgsYIlqFLUb7WcGT25+MT+8MVI2jQ2df0y+Nf32BtRz8uoSR4eYeYAl+LcBSZmt0R1fKayiwVGmSggsYu6ZxTO8Bi8z56lcJb8+fcFr6OIWVg+AvKQshsB5tXIhBp7BSnSbZ5jkfjNEJKfKA8vKBbEaoi+U+SCLS5lUhPNJijWZMH7lmFYz5PlcC4OJDa2T5sJYHyvUvAIdpkHiEnn81FR0czbL1BSbY57HZSSQIplaGiCo7GJrHOBj1etZeKhUA5ALMVIQFFIJ6BJHHyHdugJeieoPeL1TUdVNENdV1bMoeKzMIyUOwmU9cH+FWvw8A1PY6pCrqJZrRdGEMNtAZPoE+S9J5K3kKEeliZVSY24MrpogVMdicxVKS8agDPoK/2BtUlCPMd/1Sjp6WCYbnTAAU9e8HcAv2DjUHWOZwiOCBxJqau5aI0gup5tbzjM5S95pKUgGcUb9ni9rizOTXC/kbFoA3sNZi6jVkKJLB6Bl0DCpR2oJ7d1rhKVCZKY0Va9hr3FKG/ikIz10mtI9BQsfan0GsBHFXc3dZ+OECjt2ntYkpNqzmynOwiVmo/e39p0O0dP0J5zUsKLGNvswLlS8DrpmzOstbPssY+Dz/8xHibKYN5o2dxuIR9ylF2mlqBvn2O/BA4AkshrnQnaS4G7szF+qzHLwNHYIEXoUFROAw6/voz8R8xobaxidfswAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADjElEQVR4nLWWia3yOhCFD9JtwJRgSgglOCWEEkgJUAIpISmBlEBKICXgEnAJebM4UfZ39Ut3JGNn8+cZzxnzg6V1sT/gD2wO7MiAUONwvHR/AV162JzxlzYHHg5p283uza/X7NeRWNvD8cdd931SiBvAZHRpgDZHCB7wgXrpkFb4dfh/dp4pTEDMstrbBIZ4wXrqA/ju6/p76M/uU/ZMYAwNEA+NA1P+Ffo/QJoVcyg2od9nhvO97bz3m9BdYPBtjGSjEPaQpk7zRnptaqW907sO7wcIik1oD9wU+wANrezjvfJonzfQvLjH22xp7vF2QaDPrMG5WA8vA7fFziloTYQGVASrbpnArrEdE+BBDudliaqpcU1ayt6wuafq4YbYOe1NhMLThplkgLFV8/djYsnrYXVKAW6KXVjoofogmcHYu4bD6uICjREsQ9e87PdwIvbv54Hj6Y4JNOjqa/rl+e8jWNPSj0soCF6+IabAtzyceKZid0S1vKeySoUGmaiguUu65tAOsGjeR62Se1v6XMrC19GlDAzvoZwImW1h80oSRIyV4jTINs/xeTn1kAIfKA49dM9DzUgeJIlAX88S6YUmc7Rq0sA7q3DOl6ESGBcHynaWD0tJoPzsFnCKMll6yMFncVFraYWNNyhJNqfDQSpJoExlqGQFe2OTWGeDtr72UrEQKDtg9jwkoCSIZyClOOmOZdAQ9EjQ983qng5Z0Q51XS1ZQiXNwjpQ5CZL1xf4U6/TwL06nFNN6FcUo23DFGqgNXgG/VJKH6nkrXiozcqqMpEBV04XJWCyNyVDRZlXDeAFtLcRVLcgLE/8S42OtgqG050mKOjdG5YS6D4sDJLO6RLBAYkzMXQNF6UJVK+r9ROfoaw1l6QEvKIYRYvt82Zxqofdk4pBE1hrMHUToxQoweoFdAsoUDqBOlbby1WSZZJpnJGWtcY9eejvkqGZa6XWEWioWMdL6LQATiruYe88HKBR27R3MaSm0RhZDnYRK7VffL826f6JH6G85yU5lrG2OQPln4DXQ9lcZa+/ZY1jzl7hOJtjUlW3gGbUn3hA4A8f9JwcLmGdspethlagw9+RZDRPGPXS5kCz0djk+KDkeKDSk+R1M3BXLtZXbUvgGCZhGQP7ye2on3vLNmRBWoQMRWEw5LEMRoUMi0NqzcOtl9dOuGLl2Xw8aT+zh34GHY/H99bgewscxv8BjGTQ2zRR9hwAAAAASUVORK5CYII=",
+    "price": 115000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 65,
+    "tuc": 5,
+    "incMDD": 45
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Earrings"
+  },
+  "randomStats": {
+    "incMDD": {
+      "base": 45,
+      "min": 12,
+      "max": 78
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 1002020,
+  "itemName": "Red Starry Bandana",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 8148008,
+      "mobName": "Crimson Stirge",
+      "chineseMobName": "紅蝙蝠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

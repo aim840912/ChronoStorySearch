@@ -1,0 +1,19 @@
+{
+  "itemId": 1061082,
+  "itemName": "Dark Piettra Skirt",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 4230105,
+      "mobName": "Nependeath",
+      "chineseMobName": "食人花",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

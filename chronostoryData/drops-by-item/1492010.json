@@ -1,0 +1,30 @@
+{
+  "itemId": 1492010,
+  "itemName": "Infinity's Wrath",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 6300100,
+      "mobName": "Buffoon",
+      "chineseMobName": "貝爾芬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7160000,
+      "mobName": "Dual Ghost Pirate",
+      "chineseMobName": "多立百烈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

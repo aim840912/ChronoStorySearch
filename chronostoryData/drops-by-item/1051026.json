@@ -1,0 +1,30 @@
+{
+  "itemId": 1051026,
+  "itemName": "Dark Moonlight",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 3220000,
+      "mobName": "Stumpy",
+      "chineseMobName": "樹妖王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230112,
+      "mobName": "Master Robo",
+      "chineseMobName": "紅色機器人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

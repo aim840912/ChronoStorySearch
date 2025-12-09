@@ -1,0 +1,38 @@
+{
+  "id": 4000144,
+  "description": {
+    "id": 4000144,
+    "name": "Free Spirit",
+    "description": "A soul that used to be stuck on the back of Master Soul Teddy. The soul is now set free, and it's smiling.",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACIAAAAkCAYAAADsHujfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADzElEQVR4nLWXDXHjMBCFtzMhIAoqBBdCCiEHIYXgQkggJBASCDWEGEJFQRByerKevFLtq930dsaj+E/76e2PlY38kt3vd8vfT09Pbu37PwYJjo1y7GvnvI97/wUkObDPz88nde0tDNqhXwOxCoQAOF5eXg6fn5/xeue8hPPL7XY7JgCTRh/egUp+CdAaReCgCU7b4NQAABecc9JsW3l9fT18fHx06nnHYwnQIpCUiA0OEywwiDVGur4fEYMFmC3fCVC4aRVQH+bxc4n8LUgKSQ5LcOCCQ4zx/vX4HsfTZTi3I1RTAdkEg8tf1MkgyiFNP0wQOLBwitAAgkDhutjtXtr9jopkIMCnOXgAyGkYrUjMARmTDbHVIAaTcuXHtz8ZICoRIKy14rx+ZQBKCrq0mLxYDbNRajTpsARJh08QW0BQ+vZ0iWPX9eKDc9edxe4P0vdDCrjw3AA2PKtgJPkRGavLUBGdB6Y6z/JZFbhtOEF4rB0edaFeuvO7bAMMwAZhJvNSz2uYEhvdHyh/kpRqiA6JNoQHq0UJ0wDT7NoIyETetYesSpq7rxdKRSKIdsiXdBiGspX8Wxuca2MixyQOIULIqFZK4OmqqY1ZD4dIQBzoHQTAOQChClZsVdxcRcm8GUI23dMIEpMGklEVzsWmtW2a/KC2/eEk5/e3/BsWeKNCrKiYzD3Dl8Po1Wg2KJ/UgmOts2FpZ1gxFWFtG6iTcmPfnmLECYQQRCC7E++uEQIjLeUIK7NQJLZg9SA/XlJD/csAXCtvbBMhVOkSIMIkIQaQdNKr91lF2SBvD1XscDlXihZYPTvkApToi2nS0SeY2EPgPyerChF7SFZFmy7V0sP8l16pITI2ST/X4rUVrXjWfAnhvfzY5kCKD8ZQtth/fMfml8Bwa4CuarktqEF0IlGVZrxZwuhwsD/01+PgLXwEMYWxojsqQ0SY6dCoPPEJAB+qDh+8NvQIqDKVC4TozsfsDM4B490Aw2uqvRfyfgkNy0nGcp6Nh+6SGoKrh2P0klGAeZvMEQXDPcSk8xmInF91c1SNzIuU0s5+axIMW/81TLhDw0JH1TA415xSdhajnPNa3lTr/euSzXNWxSanMyJ7mV6tr+47WaNIPYlO2gzk8761bt9FRdQwU38rVv/T4+e++tRrJTRI8dDD/2uS5eQ7XS5T92vZ/W/+5TTVWJgdE9VVxyqIJSCzELBj2H+goqQKx1qIpSAZBmGJHTbkR4I4y4NKrAXJfyEBgE5/uxUQP1ZiKUiuhBQCqZznMn0EYgkIHeuxaFyPAtD+AmKdtwkEJvC3AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACIAAAAkCAYAAADsHujfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEQklEQVR4nLWYDXHjMBCFtzMhIAoqBBdCCiEHIYHgQEggOBAaCDWECkJFQRB6+6Rdea3abdLe7ZzG8Z/209sfq7ehf2QfHx9efz88PMR73/8xCDt2xnFqnet93PsvIOLAPz4+DubagQ/WYboH4i4QBcB4eno6vb+/5+tjTMTnL29vb2cBcHJM/A5USrcA3aMIHHTstGenDgC4EGOkbtvT8/Pz6fX1dTTPRx23AN0EIonYYTg2ZiDvHI0hTIhsDLPVdxgKN70BCjxPWkvkb0EkJDUs7CCyQxzz/ev5mI/DSzn3E1TXAHmBweVP6lQQ41DNPqwgcODhFKEBhALxdfLbPfX7nSpSgQAvc+gAULQwVpGcAzQlG2JrQRwm1ZWfD38qQFaCIbz3FJN9pQCJglEWUxdrYTZGjU6GVxAZSSC2gFDp++ElH8cxUGLncbyQ358ohJICkZ8rYOVZA0Pih2iqLqeK2DxwzXmVz5vAbfkE4fG+PBq5XsbLkbYMA7AizGJe2nmdpsTG9geVXyRVNciGxBrCg9WihNUA0+36DKiJvOtPVRWZO7QLVUUyiHWoL9kwlLKl+tsanFvTRM5JzCFCyFQtSeDlqmlNsx4OkYAY6B0KgHMAQhWs2Ju4xYZS86aEbLmnKUhOGkimquhc2rS2XVcftLY/DXQ5HupvGPNmhbSicjIHDV8NYzJHt0H5SAvOta4NyzrDilURrW0HdSQ39v2QI65ACEEG8jtK8ZohcFSTHNHKnCmSW7B5UD9e1EJ9ZQBulXe+yxCmdBUgw4gQBUROgnlfq6ga5A1QxZfLtVKswObZkgtQIsymkREEJvcQ+K/JakKkPaSqYs2W6tzD+pfeqEE0Ncm01uKtzVrxqqU5REr0Y1sDmX0wStli//EdW7oFRrcG6KpetwUtiE0kVaWbbs5hbDi0P4TruXjjjyCmcJ5sR9UQKcxyaEyeJAHAh2rEB6/nHgFVlnJBIcbLuTqDc8CkWGD0mmnvM3k/hUbLiaZyXo2H7ZIWQlcPx+glkwDrtpgjBkb3EIvOVyBqfrXN0TSyRDSXdvVbIzDa+q884Q4NCx3VwuDcctK8szjjXK/VTbXdv96yea6qeHG6InKi5dWm5n6kexRpJ7FJW4FS3be2DWtWES3M0p8VX4IgBEb60lPkc99+6uX5atyBk4Qwmdt0PB4XO80qSN/3bhxHx98WJ6aVwNuEF7Iu9NuC9s/DhRDyECYnEPkoOXabIvDKE3l+3nddlwfZ6pFpXFUnA5AAeMDIN6kNTxaLPoduESTvJXkiSJFhMGQlrs7J/y7nA5SL7BwQFUhXT1MP+v3fvgDQPDkcDg67MGy2zgxx6vuAXIiSEGJW+rZiFnvIGkguMew7OCQJR4SKIfB3bcIuDH6GYbjGov+Sg6WKaX9/C5JXxIkaODlryZhdd40xg9ZY3/N/ITeDNNbuemcK/BZA7S8+bEQMX8DSuQAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": 0,
+      "y": 34,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 0,
+      "y": 34,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "price": 84,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

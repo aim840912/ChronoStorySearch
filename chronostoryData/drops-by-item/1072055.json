@@ -1,0 +1,19 @@
+{
+  "itemId": 1072055,
+  "itemName": "Pink Whitebottom Boots",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 9308021,
+      "mobName": "Southperry Pirate Lord",
+      "chineseMobName": "海盜領主",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

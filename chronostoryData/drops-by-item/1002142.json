@@ -1,0 +1,41 @@
+{
+  "itemId": 1002142,
+  "itemName": "Blue Matty",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 4230113,
+      "mobName": "Tick-Tock",
+      "chineseMobName": "鼬鼠鬧鐘",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5200001,
+      "mobName": "Ice Sentinel",
+      "chineseMobName": "冰石球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5200000,
+      "mobName": "Jr. Sentinel",
+      "chineseMobName": "小石球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

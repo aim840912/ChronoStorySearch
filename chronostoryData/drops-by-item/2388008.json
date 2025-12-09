@@ -1,0 +1,19 @@
+{
+  "itemId": 2388008,
+  "itemName": "Zombie Mushmom",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 6300005,
+      "mobName": "Zombie Mushmom",
+      "chineseMobName": "殭屍蘑菇王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 2.4,
+      "displayChance": "2.4%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

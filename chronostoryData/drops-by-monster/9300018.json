@@ -1,0 +1,21 @@
+{
+  "mobId": 9300018,
+  "mobName": "Tutorial Jr. Sentinel",
+  "chineseMobName": null,
+  "isBoss": false,
+  "inGame": true,
+  "totalDrops": 1,
+  "drops": [
+    {
+      "itemId": 4031802,
+      "itemName": "Jr. Sentinel Shellpiece",
+      "chineseItemName": null,
+      "chance": 99.9999,
+      "displayChance": "100.0%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 1035,
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 1092002,
+  "itemName": "Red Cross Shield",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5130101,
+      "mobName": "Stone Golem",
+      "chineseMobName": "石巨人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 2011000,
+  "itemName": "Poisonous Mushroom",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 6300005,
+      "mobName": "Zombie Mushmom",
+      "chineseMobName": "殭屍蘑菇王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 4
+    }
+  ]
+}

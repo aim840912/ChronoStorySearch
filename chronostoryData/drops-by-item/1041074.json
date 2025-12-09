@@ -1,0 +1,30 @@
+{
+  "itemId": 1041074,
+  "itemName": "Purple Shadow",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 3230102,
+      "mobName": "Lorang",
+      "chineseMobName": "紅螃蟹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5130102,
+      "mobName": "Dark Stone Golem",
+      "chineseMobName": "黑曜石巨人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

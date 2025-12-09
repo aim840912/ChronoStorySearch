@@ -1,0 +1,19 @@
+{
+  "itemId": 1372000,
+  "itemName": "Fairy Wand",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 6130101,
+      "mobName": "Mushmom",
+      "chineseMobName": "蘑菇王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 4,
+      "displayChance": "4.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

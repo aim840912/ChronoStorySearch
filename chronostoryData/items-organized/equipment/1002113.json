@@ -1,0 +1,37 @@
+{
+  "id": 1002113,
+  "description": {
+    "id": 1002113,
+    "name": "Blue Feather Hat",
+    "description": "",
+    "chineseName": "藍羽毛帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAWCAYAAAChWZ5EAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB9UlEQVR4nL2VgZGDIBBFl5lrgJTAlRBL8EpISkhKSEqIJWgJWoKWICVICaEEjl2JBwbwbm6SdRxh3eG/XVb8gPebsTd7TN4JYNyT+c53AJDw/X6H3W739PLVAAaF0ZRS0YBXAlDmnHOaFEWBD7YOehWAEZceVPUFUsps4CsADD/UMN1KOOsTNE1DN0Sy/y2ASfhZwg9cCOi6DsqyhOPxmI3dAjDi1NNA67CJdHeOgZEQZo8AW+JbAHYfRxoIwUHZrdT2siTkwzKv7QHF2KKZFc8BUBMBCdpPSGpsZ+A4xaZ2ELOqG+N7hHJdrxvKPlmlHIAT9zRc5txdKEI+J7xAaFchhDm15NrLKlhrkDKAWgOYeZ1ZbBF3i2vuohKHyg+xXioh95cAwhhD/YQan59FAGDG9gZfzUrMNyc8tYeVng7mxXkIIOu2pgOJcwFNdSXf+UpQLKgAdm5/OlgIHe6zs4fwMHTZ5Me6DHzSxUeWfO4BBcJC/NCL8kDkM2AFv7FhGIBDqOaLP7J/AlBK2+Pzuszrvs9mG1OgjwR4MswXfwKYW29eqB2nMONY/ZJuDTH3WtwHMOV+TwPMGo3EdbqMKYv9dqtmqWL0b2imaVwcVPI/Cqf+9TlhH4DZ75G+//p2gS1TmTPAE9wU9gGWQLtHBv5nDP5o35nU7ZcHQhZ8AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAYAAAAAwr0iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACPklEQVR4nL2VgbGDIAyG491bgI5AR6gj+EZoR2hHaEeoI+gIOoKOoCPICM0IPIhoQQHbe9emxwGR8n8JQX/g+yZVS6bJNwGk6RPb+Q0AEn48HrDb7VYPPw0gtbA2IYR3wScBKHLGGE3SNNVdslz0KQDJrw2I/Bf6vo8u/ASAZMcChnsGFzxDWZbUwBP9qwAy4E8CfmCcQ13XkGUZnE6n6NotAMnPDQ0Q3SLC+uIDIyEdvQbYEt8CUOfY0YBzBkIdJaqfIiGfTvPSJqgkmTWj4jEAKiIgQXWFetTlDExPdVEbiFHVjPVzDWWqHkuKPpilGIARtzRM5Mz8tAj5jPAMgSZDGuZckevQ585ebd87UEsAOe4zis3iZnNkZlXgpfIkxjkT/eHqQEgpqZ60xn6fOgCyq+7wWy7EbDPCQ3Vc6KEzTy+tA1lUBb2QGONQ5jfyXW4ElTgZ0JXbnI8KAt1zNjYJt20dDb4rMsfXm/WeLdc1IIAriCc9z45EPgLm8Iq1bQsMXDVbfIp+BSAEqtfnbZ4XTRON1qdAlwRYcJktvgIYS2/cqOoGN2Jf/oJuBJ97KW4DyOxwoIGOWhuJYziNIfN9dvNyzqL3ayiHoZsdlPI3hUPf+piwDZCo+0j3v7hfYctE5B1gCW4K2wDzQnVGEv5nCbxpy2v46gbsTb8270FufY7Zog/5tgytHq15EIAFWgjGJ+bz6yZMwxDAJMat3hZ7J/ItqGgGQn+OXUqMjJctCDClaSvVLAATA16t/wPmXgiMGOH1LQAAAABJRU5ErkJggg==",
+    "price": 2000,
+    "reqSTR": 0,
+    "reqDEX": 45,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incPDD": 12
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 12,
+      "min": 4,
+      "max": 20
+    }
+  }
+}

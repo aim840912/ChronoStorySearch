@@ -1,0 +1,43 @@
+{
+  "id": 1040011,
+  "description": {
+    "id": 1040011,
+    "name": "Silver Leather Hoodwear",
+    "description": "",
+    "chineseName": "銀連帽弓箭手服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADs0lEQVR4nJ1XgZHiMAwUM9+ArwS3kCshlBBKICWEEqAEUgIpISkBl3AuAZeQ18p2sIPD8a8ZDhLb2l1Jln1/6P9sfjO2+9TJp+AZ2O1+35x4+P4uESsS+g18LoFN01ScXNf1y1xrLJ3aQySUkXgHPt9/fsg5R8MG2NpASitN3bEhYy0/G3l/vt7IOkv96TSnBN4qr7SmwRiahoHqpiHHDkumeJ4ZJjoy6DEA97xmbcfzOSPwa86bqiK6Xjl0rSeE55VZJni/j/I7Ak8rcJBf2xb4XHH+4OTIi7RSy4AxJlfD413XkZMxyykalkjB8BuEETVEKFVfApdca554OBwWgCvUn05SAzDFhO7jU+3AIC6ApSrxOyXwTrkAI9ew8XaTnLeXC1V0odu5YlKK2hOrd89oAFhxofEQ6WMn71BgJQJb4BlwtCYsmAZHdujJTF75eH94YCbXrPJpER0Tf9uMgPVpey04vQKONnElYxspxcrrKquBSA6UYkrESxV8mSeBFDgFnx+PBz1dPm2QBc88AxjfsRijqTAO1TIvRECDRCCwudWUKkH7xoEPqr/SFXexiqx1DN5n4Ev02I8L/hSDWy6ylEBqEXzHNrO9qk6q20dTS0SN0dL5GiZVNF6HpS55xaqJNjrcC4FFdcgrKj0ayMQcrw2znPy14Tehv2fAa3Cx/fdOQlw3Z1mFIqnrRnp2ulVQ4S13vVLoPTmOEq/Z73e5/HfgulK8nSb+fBPOhabrFmeiNIQfudVcAwNPaurXlgsRqWEKT908WObxpiRPvKlYseNDAog9E7pKa6xU61Uo39mUu/CBcmHwRxEQQqLB31vlqGQcg2DZG78ADqxpqWuq5Ygcpi8Zi7UWQY31e7vSVtbFgGCZPDPzVH0GnrZeD+oWAh40VxGPeVUdw8C0kBhHLf6sNTHkm8rn+VFT6bjWXHg4EPb7PnsfAZGO0jm/+5poy+caXEKKAlobrkbSWvV508kWgWVchYKjPPQLOELa1K+xQe/GBw1HhQbskr0T73MqORdc0skgCKEvGcBnsEIe+WBkAn4Az2meQGDCng97fQiXihiZFTAKasbRC99QHtX3iU9RPo71Usmy1cpEpatNHN6aVS5HLZ4DgRQY+faR2fQ7A3zHxeGvyFe1TAjfWctFX5dbaRIBeAXwum+j4GDoFaK4f6YqVv9ysODPoXXpyVK86EN9vDJ5Za/AqXooh2qQmEyWzpc7XAkwU4+2ijB/cJdfIrpln/67JATejf/je7G/+xE1I9kyUVwAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD5klEQVR4nJ1WgbGqMBA8Z34DsYS0gCVgCViCloAlaAlSgpQAJZgSfkowJfBvLwmGGHhv/s2gQJLb3cvljj/0fzZtjO1+6+S34Auw5+u1OvF0OJSIFQn9BD6VwMZxLE6u6/prrjWWrpdTJLQgsQU+vf7+Jecc9StguYGUVprac0PGWn428v72eJJ1lrrrdUoJbCqvtKbeGBr7nuqmIccOS6Z4nulHOjPoOQB3vCa38+22IPDjnjdVRfR4cOgunhCeM7NM8PUa5D4Cjxk4yOe2Bj5VvH9wcuZFWql5wBizVMPjbduSkzHLW9TPkYLhHoQRNUQoVV8Cl73WPPF0Os0AD6i/XiUHYIoJvYaP2p5BXABLVeI+JbClXICx17Dh+ZQ9v9zvVNGdnreKSSm6XFm9+0QDwIoTjYdIn1t5hwQrEVgDXwBHa8KCsXdk+47M6JUPr7cHZnJNtp8W0THx3i4IWL9t3wmnM+BoI2cyjpFSrLyuFjkQyYFS3BLxUgVf5kMgBU7Bp/f7TR+XH+tlwWefAYz/mIzRVBiHapkXIqBBIhBYPWpKlaB94cCF7K90xVWsImsdg3cL8Dl67McFf4rBLSdZSiC1CL5jm9i+VSfZ7aOpJaLGaKl8DZMqGq/DUpe8YtVEKxXui8CsOuwrMj0ayMQ9zg2znPzacE+o7wvgHFzseNhJiOvmJquQJHXdSM1Ojwoy/MJVrxR6T46jxGuOx91S/ha4rhQfp5GvA6EvNG07OxOlIfzYW8050POkpv4uuRCRGqbw1NXGMg1PJfvEh4oVO24SQOyY0ENKY6UuXoXylU25OzeUO4O/i4AQEg3+NpUjk9EGwbIzfgEcWHOhtqnmFtmPexmLuRZBjfVnu9JW1sWAYJk8M/NU/QI8Lb0e1M0EPOhSRWzzqjqHgXEmMQxa/FlrYshXlU/Tu6ZSu9aceGgIx2O3eB8BsR2lPr/bj7TmMweXkCKBcsOnkZRWfVt1skZgHlch4WgZ+hkcIW3q79igduNCwVGhALvk7MTvOZX0BZdUMghC6EsG8AmssI/cGJmAH8Bzuk8gMOLMh7Peh4+KGJkMGAk1ofXCN5RH9V3iU5QPQz1nshy1MlGpaiOHt2aVc6vFcyAQgPcUcshHZtXvBPAdJ4f/RH6oeUL433PJfceSi7ouX6VJBOAVwKFuHzFNpO99NFArRHH32aqY/XNjwc/p4tLOcoiOcvXxk8krm4HvyXy8uEE9lEM1SIxmsZ1f33AIGbJKJ9eV1d+iepRVhLnwLZ/35Durb2nDSh+QqZMoUAhs+LnSsn3E+1O4z68iOAZsRiDeH7J3pV7lNp6/5v8DhQ1FrkOveHwAAAAASUVORK5CYII=",
+    "price": 2750,
+    "reqSTR": 0,
+    "reqDEX": 40,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incSTR": 1,
+    "incPDD": 14
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 3
+    },
+    "incPDD": {
+      "base": 14,
+      "min": 6,
+      "max": 22
+    }
+  }
+}

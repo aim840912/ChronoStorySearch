@@ -1,0 +1,37 @@
+{
+  "id": 1072060,
+  "description": {
+    "id": 1072060,
+    "name": "Brown Woodsman Boots",
+    "description": "",
+    "chineseName": "褐軟布鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAbCAYAAACJISRoAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB8UlEQVR4nJ2VjXGDMAyFlbsuwAruCHSEZAQ6AowQRoARYAQYIYxQRqhHqEdwLYOMbP5MlMsBNnmfnyw5H/Be6I2x297LVyFW/PenWU18fhV6D3QFokm871tvIsvywx/GQiyAi0sp7bWqOhiHFl5NBo+i33QT7SRJhCc+3StQanlunnco6mEFenfjLaDrXg6CzxhbjmIg+u/3BW1bOhckiAA5Dit4CLrshADcBQ8hktXYGcS54BECEMzFjQu8XErXLCSdCzc2p4oDirKHu6mRQUJ8usKUkAsHSO8OiAB7b9bCQW9XF4mHgK04g9zwuKBGlHK0g9Qz6OjxKKYx9iNM6vOZgRgGaHulY5w4kJSlJ47CvJiUUc/yFFIhoB+W0o5OF4o2VeYBkhmAV2whBEwFMu2jEOh4PIR4xzluJpamSPzchwAKBJS1Te/mxlvx/J6YVVNnL5OmYiBNJnH84pwKBMw+WAewU8IaxQUdhuaDIBLDmEsT8A0RLGAB7B+QHuAo0AlKUW/mQarCIIjOUn9CKunSFRtbLjjEE8fgAM4K94Bc7AFWkKsrP0sTh2g8/+u6d3XPVx3eq1kcgwBHLggCo3m56RoovotdSGUakYJ38xmAIDfTNKY3WguiCP/xxu1GOwU4Jxx0FlfEQwgDnUa0OMU/7z48rctZmS0AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACI0lEQVR4nJ2Vj5WDIAzG0/e6gDcCHcEboY7gjaAj1BHaEXQEHUFHOEcoIxwjeAQNBsR/TR8PCsKPLyRwhc9sCPRdtiacBRnA+7dcDNy+82ELdgY0EKBpKmcgTbPdyUdBBsIBUkpTP5819F0FbZlCkjerqg4riiLhAMa2AqXm/+XjDvmrC8I+DQYDqevWgvA/2pqyI6Dh791CVRVWDS2KENl3iw2EYKcVEYSr4SZEFJy3B7JquPkQhHOAVoPVaddNi0mrxvZNbuOQvGjgruOmk3DOdb57SI2FxHcLRYhp6/34sI+jjgA+ZM32QBe8WihZpexNJ+UUKkuSfOxjk9DBj0cKouugapRRdUSRhUlZOABcnAeZ0oQ0iyEWAprODfvDrsOFy2fqQKIJgjWmGELGoBnPVQhU3u+CnKcADxjDVkTuWfgQMoQULwNZDQYDyO6R3j3dAPOgjiSIoxGABceUt4A+F1KyGt4DAgRdoPqHMFoQbQpbwC+Et4kZsn2pOpAtQ0W4HOVv5rktZAQa0tgdkEpa1x21NTUc5ADQOITz/DMhNVuQBeisgiMu46AB34/Xq7F5MYOXbTUB0AgyqfmC5QXhgKDXE8q6hPwnXwU9dbKS8ayfIIku/JQVq01B0EUnls6dysDI/JezDycjWuFBOMwEJ5brJPemJ74RtmcMQB+HntTFYVMw4MeJXqSFfePPrdpoO+UKszyjbGOXUWingb4g/B+RG1TUVj0t6QAAAABJRU5ErkJggg==",
+    "price": 2250,
+    "reqSTR": 15,
+    "reqDEX": 35,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 15,
+    "tuc": 5,
+    "incPDD": 7
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 7,
+      "min": 0,
+      "max": 15
+    }
+  }
+}

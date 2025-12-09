@@ -1,0 +1,19 @@
+{
+  "itemId": 1472000,
+  "itemName": "Garnier",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 1210100,
+      "mobName": "Pig",
+      "chineseMobName": "肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 2040353,
+  "itemName": "Dark Scroll for Accessory for INT 30%",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 6090000,
+      "mobName": "Riche",
+      "chineseMobName": "厄運死神",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

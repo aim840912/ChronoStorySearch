@@ -1,0 +1,30 @@
+{
+  "itemId": 1402001,
+  "itemName": "Wooden Sword",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 130101,
+      "mobName": "Red Snail",
+      "chineseMobName": "紅寶",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 1130100,
+      "mobName": "Axe Stump",
+      "chineseMobName": "斧木妖",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

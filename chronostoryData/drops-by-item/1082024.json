@@ -1,0 +1,19 @@
+{
+  "itemId": 1082024,
+  "itemName": "Adamantium Knuckle",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 3210207,
+      "mobName": "Tick",
+      "chineseMobName": "鼬鼠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

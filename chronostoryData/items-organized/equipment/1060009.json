@@ -1,0 +1,43 @@
+{
+  "id": 1060009,
+  "description": {
+    "id": 1060009,
+    "name": "Steel Corporal Pants",
+    "description": "",
+    "chineseName": "鐵板褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAbCAYAAACTHcTmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABwklEQVR4nK1Vi7GCMBAMM68BLQFLwBK0BFuQFigBStAStAQtQUuQErCEvOwNmzmOxIczb2eYkHhZ9r7+uDm8+x6F3qRI3W63c6vVSt77vnePx0PW+/3uzuezK8tS9u/3W1aLJKkFL6cIUkiS2svb7Xayfz6fX5F6uAbX8UAhlRIMC8/GUCAPMa4zpSTUpJaQ7/b3P0mXIEecTRSzi0e7zP2nDyeV6tWSVVUl66dKWFxSAUVYY2N8FdP/wIxUl1FKiY0p9rasNKk/HA4xViQc96zBIhS+16SpMEyUguByucj7fr/PukcvYIs7TdPkSWEEV4Db7eY2m41WSYjaYRhiGNq2nYjI9v7S4UHXEbrr9SpxJal/vV4y2jD2QIihoQ0Vj9iGc8ccWAFRKdyAEchADkMUOi6ncDwexS5lO3EfxIgp1GIY51qR57DlwE4qtcCXl4LJ1aQxk6Y2F5HBK4YAVRDKy8+UcjrhI3Vd42hWUuv1elJSFkn39bj7BN3KTFYk1f2+1HVUCZNkWxukReicWKc06rpOXM1wFqGDPLpOi+AdSRQIGXT+v59OJ8TUZ4hjTGFLhTpRojSnKHeOZNnDsfiLX13aV06VtDE/AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACDUlEQVR4nK1Wi5GCMBANMzSAJWgJWoKU4JUAJRwlaAlSgpaAJWAJUgKUwOVlssyyJiGc7kwmH7L79vOSkCq/jGq9JL4PISB1PB5VlmVm3HWdatvW9I/HQ9V1rbbbrZkPw2D6kASBpJDBJaOrgaTBw+Ewmz+fz4+BRqQFaUNDJBDqIZRSWrNpRF2ddfJGRCAcSILQWH7/F1CMxIAtkoFYhcbTRfNYZ4IR8V4C7Pd708cycDW9tSS6nw7zxzX6tniBOKVdHssaYR6iuAtoPJ1OU+4JxM7JQKIP68iBllLojAhGb7ebGed57lWmaLEXOlVVrQOCItIAaZpG7XY7Hg2Jiarv+ymF5/PZ69jiXRdLX0ob0n6/39/qJIHG1+tlngE8EQDBxelRNnv1uqKahpx6iwgpgCIAAAhlHE4YdElRFGbf0l5n6gCGGiEqPHC+a4bWsZceweiIpMDDWCECLQFNDBJnJwoA0VP6wD5N9VlNvRHRrQ3gsiyVctB7s9nM6B2SYOr407C0j2fBle5UKlDvSJsTEewkIshryweU6BtgOkekeLlc8A1/JS5W6Isgb3B7cMeYDtgB1IGA4G0PECos/b9dr1fUqNXfK0dUv1Qj7KVILBmg86MbPOhSq4yW64ga5Zbaeve2rglRyEV7YEu+xiNS1oNMrIVkYAYHsT5rqR10wrALJBPGuFHffBr/AW+aaiVoxdQiAAAAAElFTkSuQmCC",
+    "price": 2500,
+    "reqSTR": 40,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incMHP": 5,
+    "incPDD": 16
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incMHP": {
+      "base": 5,
+      "min": 0,
+      "max": 13
+    },
+    "incPDD": {
+      "base": 16,
+      "min": 8,
+      "max": 24
+    }
+  }
+}

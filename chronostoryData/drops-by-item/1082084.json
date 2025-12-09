@@ -1,0 +1,52 @@
+{
+  "itemId": 1082084,
+  "itemName": "Blue Willow",
+  "chineseItemName": null,
+  "totalMonsters": 4,
+  "monsters": [
+    {
+      "mobId": 4130102,
+      "mobName": "Dark Nependeath",
+      "chineseMobName": "黑食人花",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6400000,
+      "mobName": "Dark Yeti",
+      "chineseMobName": "黑吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6400001,
+      "mobName": "Transformed Dark Yeti",
+      "chineseMobName": "變形黑吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6400002,
+      "mobName": "Separated Dark Yeti",
+      "chineseMobName": "孤單黑吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

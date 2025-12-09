@@ -1,0 +1,19 @@
+{
+  "itemId": 1051094,
+  "itemName": "Green Oriental Fury Coat",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 8143000,
+      "mobName": "Grim Phantom Watch",
+      "chineseMobName": "怨靈女巫",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

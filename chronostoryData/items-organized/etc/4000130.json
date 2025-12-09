@@ -1,0 +1,38 @@
+{
+  "id": 4000130,
+  "description": {
+    "id": 4000130,
+    "name": "Buffoon's Grandpa Clock",
+    "description": "An old, humongous grandfather's clock Buffoon uses as a weapon.",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACtklEQVR4nL2XgXHrIAyG1bu3gFfwCrwR3BGSEewR4hHsEcIIYYQyQhnhMUIZwZVERLBrvyQNiXK+I+Cgj18CkT9Q3qYb33uTRmmIafr6hOA9jFrDbteAUg0PUB+ZDzg2ajDWTwJSXAkBUKqGbrTYY8E7x2ONqhiMHuoXkFIQHILPjwGss9wxGg/D4QBNE5Ww1sJ+v2fnEeJiJSA4BA6dk8zORdn/fU3w9/0dBmz348hAwzBA3/cIMZ/gUQgGoBXWdT0bCCGgMh+gMTQEoJRCQLc6ycNKEMDpdOJcCPix1rH05JAc787LNtaAsxqOww6M4XwoB0EA7pwHZJSQSrUYmg7awxE8wtFj9IjvDqiMgarCBG3qBPIIRMqFvjfcQSFpW8VOD4cIYl3gsQof6icAAiU16rrCvjD9FmIGQM7JaV0r6LoOd0TFDuPOsClZqY8AvPezyX4DsQ6Ah5IzevZiVc1/SDAC5HwAFZW4G+IHQIt7ngB8lhdiIVzaw9ByCMg5GQGcc+Kuw2ozBAKg0QmFQizuEp8AOBdsfNdHmLuO7U0FKAQVfqeDKgfgVS8Aej7GL4VL7BaIVQDV7JICBCC7Igdo2+YqwC0QmyFwePiQAssQ5Ar0o2HZJfZbTv4HcXUX5CHgAykDWGzDTYA1iHQhWQIc8WRkZ1kSroVAALRxs+S7FSIVIzmKrwGIPQKQQ2wDHI+zH1wLwb0AArEJQDkg5s/3BQlBKYCkxIiXDrKQJVN7vv3ILhAAsVIACYKqmdaer2akwIA1X2ublHhGCJYQb/tOT1Tf+17zxFKSyTnZMwGSEjQB3XzXQPL9/gyAHGITZA2ArBTAEmIVZA2A2qUA1iB+gIjlAFSQStpW7UggSwViRTQvgZiBkCLxf2UEkGvZKyBmIKOOt+P8WvYqiARCDVp9yYQU+wbBYK/a2fNfWAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9ElEQVR4nLWXj3HrIAzG1bu3gDuC3wh0BHeEZARnhHgEe4QwQhihjFBGKCOUEfwkYVHsZxqncdXjSgGjH5/En/6B/W3cOO5JKntDjOPnOwTvYdAaDocGlGq4g9rIfMC+QYOxfhSQ3ZUQAKVqOA0WWyx457ivURWDUaF2AdkLgkPw/taDdZYbBuOhP5+haaIS1lo4Ho/sPEJ82R4QHAKHzklm56LsH58jvLy+Qo/1bhgYqO976LoOIeYTPArBALTCuq5nHSEEVOYNNIaGAJRSCOhWJ3lYCQK4Xq+cCwF/rHUsPTkkx4dp2cYacFbDpT+AMZwP+0EQgJvygIwSUqkWQ3OC9nwBj3BUjB5wbI/KGKgqTNCmTiCPQKRc6DrDDRSStlXs9HyOINYF7quwUDsBECipUdcVtoXxpxAzAHJOTutawel0wh1RscO4M2xKVmojAO/9bLKfQKwD4KHkjJ4NrKr5hwQjQM4HUFGJuyH+A2hxzxOAz/JCLISvet+3HAJyTkYAU07cdVgVQyAAGp1QKMTiLvEJgHPBxrE+wtx1bBcVoBBU+DcdVDkAr3oB0PEx/nVxiW2BWAVQzSEpQACyK3KAtm1uAmyBKIbA4eFDCixDkCvQDYZll9iXnHwHcXMX5CHgAykDWGzDIsAaRHqQLAEueDKysywJ10IgANq4WfJthUiXkRzFtwDEHgHIIcoAl8vsg1shuBdAIIoAlANifnovSAj2AkhKDPjoIAtZMrXT60d2gQCI7QWQIOg209rz04wU6PHO19omJX4jBEuIp+NJj3S/d53mieVKJudkvwmQlKAJ6OW7BpLv998AyCGKIGsAZHsBLCFWQdYAqD4BPEN8NG2xUOpYO7ZnIGI5AF1IkynYZiH7HWABVLo7nhHkk0CWCsQb0ci4ZuXb0orFuZ9KGrcGUU3lFUHeRJH4f2UEkGcZ7BCKEkQ++RFBrgQy6Pg6zp5l3Q1ny/qyfAshkgnIX3T6QRVa/aTAy9QfCt9vAUv2Dxx+yKdWXRT7AAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": 0,
+      "y": 32,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 0,
+      "y": 32,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "price": 90,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

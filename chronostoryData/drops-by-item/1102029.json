@@ -1,0 +1,19 @@
+{
+  "itemId": 1102029,
+  "itemName": "White Seraph Cape",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 8140000,
+      "mobName": "Lycanthrope",
+      "chineseMobName": "白狼人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

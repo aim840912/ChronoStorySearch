@@ -1,0 +1,30 @@
+{
+  "itemId": 1040034,
+  "itemName": "Dark Nightshift",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 1210100,
+      "mobName": "Pig",
+      "chineseMobName": "肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 1210101,
+      "mobName": "Ribbon Pig",
+      "chineseMobName": "緞帶肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

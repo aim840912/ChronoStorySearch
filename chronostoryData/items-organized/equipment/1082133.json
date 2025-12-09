@@ -1,0 +1,55 @@
+{
+  "id": 1082133,
+  "description": {
+    "id": 1082133,
+    "name": "Red Sage",
+    "description": "",
+    "chineseName": "紅色貴族手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACT0lEQVR4nJWVC5GDMBCGNzM1ECRwEqgEKoFKAAlXCYeEIuGQUCQ0EhoJjYTc/iHLAMerO0PzWLLfvlJO9Ln4OKqjB/Ygfr7xSlPqnKPKucOwLYj3/s1DQk2iKdOaNK80Q3Jr6clrcxC2BVFKJcGAfzpqLhRAxACAMOa8vrPe8XPbgO2lCwe8OiNNujcOowyA4ezXUmGI2pumEg6wNAuw3Zrc4+GUDdprvxkAL8u/b9JZQgV2GIT9Ih5s+3qqPchQE2JvEc2TA9GiNSD1OghSiYZYkt2apJwiy+m5x0IXP2yoTrlGOswtAmrToMNU83uO50hfTJ06dE8AKB+OHHt9ZsBv3G9uOkbmSGJwMRo3imozXVmWESIpv1v6uqaDAl4LtI21QBR4w6LjWFdxpBRBa5AAwIPwr3XBow3efUcAoNA9HyakruP5i5uj5jl0rwdjL33KTnsACEapTY00VQDE9Ji+9qEWpo9I9tfSNQDgtTGG8jyfvCBAKfC5dnQvYDqjS0P0+DFUVY6SiuclX+JmCvkHKIoizPEgCtEFT+MeYDeD2rngEECO52g7zGnUXbsAGMBobZ8QibBt23BOgNjvuk4cHy7j0EUwDqN7ADEqa5wbRzmXk7wkKYDBNYDopR4jUWzDiwOQ2CjDZVQR5MuynORbgGMHABBodO7w98SLB/MiyxqyAxiimadt0sJSEymqAGRvnLYVGUCyHkOCctz/EDEoe7KOka2lafOjpVAoudkSGUS66QBgUeY3XsWOmHglUQr8U1n671rycgz/KArIH8Xf2GuuvB72AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACnElEQVR4nJWWj5WCMAzGw3suUEbgRsARdAQcAUY4RzhHkBGOEXQEOoId4ToCl680XMtZqnmvNk0hv/wp4I7el8nPxTs35UDT2vCoKrpbS521bwG3QNM0/fBUUl8qqpUixSvFoIMxNPJavwHcAhVFUTon02ipP5KDEUMAw3zg9ZX3LY9zBpgrHW6aij1KpmYAHDMEzutvQ40mGs6KWgTB0ieA2R5dvYOKnZrTbHSQh+HfH1J1SQ0sDIO98TcOc38X2Es9Io4aWY2ckJJdDdq8B0FZcUhSku1RxeUyXKqrb37zxc4uFfdMOd0gsaFye1AVX2dZRyl9GYscaBFA2psly9HvGfLt7f1Z+QwtSS7WZ2VX2W2Wrq5rQkbt50Afp2rZQPQCHnxvkA2uMDiJvNdxxhTAUiAHwUApTpeGZ+Oi/PQQgLE33rQr4531Bx+YC+vYe9wYffwr3y4HgWCWXl1Qsg4QXyo9nwfXGz1nJvat0i0QRK+1psPhEF0gUGn6/mLp2sB9Tcee6PalqesslR3rLT/o/X/QP0jTNE7HQDay5yL2NgDPGr20LijALOs4jscZEp26LAROMBszF0cyHYbB3SdQ2O/3uwQfPbDL6QIAjnMQcSxr3Bdm+0x2cqGUA05TENmX/gRSsI9JgoD4wxM9sIWHTW3bRvUXaBgEIAL2Ab71PZokknXjZQ3JQJasnpUwOt7SI2m0QMQWljAhC0zWa5C7IHw+IOJUbLL2GaZKlv3wFWievAEkQ4icshcgSVm/GQp/UqLoJFsJgILP0oZE9V2D4KAMHFVe3zNk9Db+90D1ixArQ0AqMcLoz16PX36ryFd2+YKYXeC0CuYQ8EqZnkEiCTNKXZR+r8R7az0aO/pLL4Q9y0IloFuBLfov+W/zngJghHcAAAAASUVORK5CYII=",
+    "price": 235000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 278,
+    "reqLUK": 93,
+    "reqJob": 2,
+    "reqLevelEquip": 90,
+    "tuc": 5,
+    "incINT": 4,
+    "incLUK": 2,
+    "incPDD": 35,
+    "incMDD": 10
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 4,
+      "min": 0,
+      "max": 9
+    },
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 35,
+      "min": 0,
+      "max": 80
+    },
+    "incMDD": {
+      "base": 10,
+      "min": 0,
+      "max": 55
+    }
+  }
+}

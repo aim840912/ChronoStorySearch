@@ -1,0 +1,41 @@
+{
+  "itemId": 1072121,
+  "itemName": "Blue Pierre Shoes",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 3230102,
+      "mobName": "Lorang",
+      "chineseMobName": "紅螃蟹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230103,
+      "mobName": "Iron Hog",
+      "chineseMobName": "鋼之肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5130101,
+      "mobName": "Stone Golem",
+      "chineseMobName": "石巨人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

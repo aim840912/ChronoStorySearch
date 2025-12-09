@@ -1,0 +1,55 @@
+{
+  "id": 1051063,
+  "description": {
+    "id": 1051063,
+    "name": "Beige Lineros",
+    "description": "",
+    "chineseName": "褐飄雲之衣"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD3klEQVR4nJVWC5WrMBAdzlkDqYSshCCBSgAJVAJIAAlFAkgoEhoJLxI2EvLmJgQCpdv3ZpdDS8LcuXc+6Rd9NvcPe7JPGz4BueddkTGGr/BAym1R8hfFV3ad3Cew34A8yDwziLXrQ6MTIKAX9E/2KyNEq5qCZirJTlcS5YMKpYjmikgwNWtIM5h7lB9ZvQPybOBsynuSf2oCJ91fqRh/iCZBVG/BAOzxfNI1z9+CnQG5cRzJsgOb51TWtU+MFYJvQUI7DDQPROWzCaxER0OVU9M01Pf9KdgpIyR/ait6OuejnasL1aXyuer5c8PPSzDkNct/wy2nomxIsawIsqqqF7AjkHuyBGYpsam9BHmUIC07Uqb1VXe77gNWSyWiCqdpOov9lRGimufZv4zEC5bMqjsJfeOcCf8MEtqlEnHvJ0t67qksy7esUiDXdR1prX1kJj7lggCYrzJ85RUlFe+bVzBtNsnfsdox8gC8GWB4GTkIncoZmdOX9Qpi1ogoAws27+PI6gUIss1TT10tV2mIe8gqrsSpOpOfxkZQ1Vs/qhBkej9lhEhipJALPRIlm1m0oi5WcFRgOppSH8iVOSxEIOf+sDy25Y8dXw3lt55qFTbfVUlFwXJVE1WMKzkIAMXJpMMdErkofU0t1aOgS+WZZhsjTjAqoDAVV5agHtGxJziNDbqTGWC0gS2WtW3rg7ZSwMG5dGSDrhwFPTq5k6/068bfo3R2uaBSO9mtnDlowb7sAci5p/RyWdPThdXbgRQjvRiY8mCNWUBfdaWIYMEEK8TPfzoLny4wUpiQ/bYnBdHtAcRwWfCN196AhbPkwGqTTg+rZClIlvd0Zu4RwFD6qaHUs++JZVIhDSFOXwxZlrUr5W3kBBBMZBj6C9WEEVMUBZ8/Pf2MLCGfUWYBA6tY1ewzutw1rC/NlQ1GzmJw7CcFQERoRIDjulQAqzyYHvIdK27gFWQv3cLGS8ba84npQTC3ZPpDgWhpVLN7TyzBpaxSWxt2ZePfDHdEDZDb7bZ7CeD3+92vBVbXd6zOZx0MfRGFwyiBVMhJOrsQANjC+ETluFhevPcLqxUoPXcgWzwy4khJLX5PJQ2TYm8pq68om4w6L7JBHjgEw3gY+hSKwEL5A1B6dqjOn1GH/CblLusnb/5OGGHDIeGQDZIdGUkvj13zFw85yIc1zb7QpBgMJslZAOIqE4vmkO2dzV6bbX6B1e44wO89/i6W+XebthL3DXttjaNNYd9Tp462vnApU+Qzyw+jar9/17A7a4pwLpRy4KPDUH+2rvA/sFSG2jd+jkAvkWQ5WO6izP5j/cX+AnSGVYhMUKFZAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAECUlEQVR4nI1WgXWrMAwU73UBZwR3BDMCGQFGgBFgBBghjAAjhBHwCN8jxCPwdTYGQ0lTtTzANjrdSZbzRZ9t+cOa5NOCT0DL/FBkjOHLD0i5T0p+UXwl93H5BPYbkAOZJgaxdhs0OgICekZ/sl8ZIVpVZzRRTna8k8iflClFNBVEgqlZQ5rBlmf+kdU7IMcGzsa0I/mvJHDS3Z2y4UU0CqJyDwZgz3mme5q+BbsCWoZhIMsObJpSXpYuMVYIvnkJbd/T1BPlc+1ZiZb6IqW6rqnrukuwS0ZI/tgUNC+Li3YqblTmyuWq4+eax3Mw5DnLf32VUpbXpFhWBFkUxQ+wM9AyswRmLbGxuXl5lCAtW1KmcVVX3Y8Bq7USUYXjOF7F/pMRopqmyX2MxAuWzKoHCV1xzoQbg4R2rUTcu9GSnjrK8/wtqxhoaduWtNYuMhNGuSAA5qoMrzyjpOJ10wamzS75O1YHRg6AFwMMHyMHfqdyRqb4Y72BmC0iSsCCzfk4s/oBBNmmsaO2lJs0xHvIKq7EsbiSn4ZaUNFZ16oQZHy/ZIRIQqSQC3skSDaxaFmZbeCowLg1xT6QK3OaCEDL8o/lsQ0/tnzVlFYdlcovfqicsozlKkYqGFdyEAAKnUn7OyRagvQlNVQOgm6FY5rsjDjBqIDMFFxZgjpEx57gNGzQg8wAox1staRpGhe0lQIOrqUj63XlKOjZyoN8uZs37h6ks+sFlZrR7uXMQQv2ZU9AyzJLJ5c1Hd1YvQNINtAPA1NurCEL2FdtLgKYN8EK8firtfC5eEYKHbLb18QgujmBGC4LvvHcGzB/lpxY7dLpfpMsBknSjq5seXowlH5sKPXke2SZlE+Dj9MVQ5IkzUZ5bzkeBB0Zhv2FakKLybKMz5+OXgNLyGeUWcHAKlQ1+wwuDxvWlebGBi1nNTh2nQIgwm9EgOO6FQArHJju0wMr3sAbyFG6lY2TjLXnE9OBoG/J+IcC0bpRzeE7sQYXs4pt27AbG/elvyNqgFRVdfgI4I/Hw815Vvd3rK57HQz7IgiHVgKpkJO4dyEAsIXxicpxsbz47hdWG1B87kC2cGSElhJbeI8l9Z3iaDGrryCbDDqvskEeOATDcBi6FArPQrkDUDp2qM7XoH1+o3KX5cyLvyNGWHBKOGSDZGdG0sljt/yFQw7yYU6zL2xSNAYT5cwDcZWJVXPI9s4mp83ev8DqcBzg9x6/i7X/VaNbewtAyb0xC+0Kg/vz0tHep+qYKfKZpKdW5Q0nJaQyAIIW3+sAnh21OvPnQi57PjpMQNh2sptX+O9ZKkPNMRB7oE571YloDAuqJDUPokOU8UvD8+1pPj7n7fn6Wh/MCQzPKR1NnKIM8/a0zl49/wfcxWadSGSl/gAAAABJRU5ErkJggg==",
+    "price": 115000,
+    "reqSTR": 0,
+    "reqDEX": 220,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 70,
+    "tuc": 10,
+    "incSTR": 5,
+    "incDEX": 2,
+    "incMMP": 25,
+    "incPDD": 75
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 5,
+      "min": 0,
+      "max": 12
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incMMP": {
+      "base": 25,
+      "min": 0,
+      "max": 95
+    },
+    "incPDD": {
+      "base": 75,
+      "min": 5,
+      "max": 145
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "itemId": 1041076,
+  "itemName": "Dark Shadow",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 3220000,
+      "mobName": "Stumpy",
+      "chineseMobName": "樹妖王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9834178,
+      "mobName": "Snowball Pepe",
+      "chineseMobName": "雪球企鵝王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.2,
+      "displayChance": "0.20%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5100002,
+      "mobName": "Firebomb",
+      "chineseMobName": "火精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

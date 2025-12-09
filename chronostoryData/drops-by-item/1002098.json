@@ -1,0 +1,41 @@
+{
+  "itemId": 1002098,
+  "itemName": "Gold Nordic Helm",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 3220000,
+      "mobName": "Stumpy",
+      "chineseMobName": "樹妖王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 1.5,
+      "displayChance": "1.5%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230100,
+      "mobName": "Cold Eye",
+      "chineseMobName": "冰獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230105,
+      "mobName": "Nependeath",
+      "chineseMobName": "食人花",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": 1082201,
+  "description": {
+    "id": 1082201,
+    "name": "Black Schult",
+    "description": "",
+    "chineseName": "黑色舒爾特手套"
+  },
+  "metaInfo": {
+    "reqLevel": 60,
+    "reqLevelEquip": 60,
+    "reqSTR": 60,
+    "reqDEX": 60,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "price": 110000,
+    "tuc": 5,
+    "incSTR": 1,
+    "incDEX": 1,
+    "incPDD": 24
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Gloves"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incPDD": {
+      "base": 24,
+      "min": 0,
+      "max": 54
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

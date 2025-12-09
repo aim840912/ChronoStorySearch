@@ -1,0 +1,63 @@
+{
+  "itemId": 2040601,
+  "itemName": "Scroll for Bottomwear for Defense 60%",
+  "chineseItemName": null,
+  "totalMonsters": 5,
+  "monsters": [
+    {
+      "mobId": 2220000,
+      "mobName": "Mano",
+      "chineseMobName": "紅寶王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6130101,
+      "mobName": "Mushmom",
+      "chineseMobName": "蘑菇王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8220001,
+      "mobName": "Snowman",
+      "chineseMobName": "雪毛怪人",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4130100,
+      "mobName": "Copper Drake",
+      "chineseMobName": "土龍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7130010,
+      "mobName": "Death Teddy",
+      "chineseMobName": "怨靈發條熊",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

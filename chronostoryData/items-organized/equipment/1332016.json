@@ -1,0 +1,39 @@
+{
+  "id": 1332016,
+  "description": {
+    "id": 1332016,
+    "name": "Sai",
+    "description": "",
+    "chineseName": "華氏短劍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABcklEQVR4nL3WgbFEMBAG4Jh5DTwlqEEJWqAELVACLSiBFpQgLShBC3n594kzjlgkdiZ3wYzPbjbufsR7oVbz4C1YDcNAk77vRVmW6g1YFXku6rIUqf4ex5FO+oYJ/Y0iIXWmUuO5PvYNL2hRFHRC/pcZU29rTCiVVY96Rjs9gOLDB7xkClQC36Au4WWrrMuLTPdQV7DSIbquo4OuaaisCHmAuoKFlFKkaUo4tgy614begdXmmG7a6CyxTYDXdU1z071HN7oCU0kRyBAdm2WZatuW5sAjvbYY5iVhCy5MaBB8EgCI12A/ryeCA16B1+giI1tTAZPtXF4Th2XmwGqapi/UPAxKjoyTJMGDnGJcmNAwDK0osqyqigZ+dbi4NWMOiusAAV8JG7x98l3UXMQau4LZ6J1gd7UFpX8XcRxfepjTrj5DDxrwEewNtcFe0SOY1UhP0D2Y272POnoLO98yXPg1dA2v96J31MC3XgAu4NdRxB9ZITrVYMSc2gAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABsUlEQVR4nL3WDZGDMBAF4DBzBqiEnoRDAhaohFoACWABCWABCcQCEqiEXN6WcLk0CeF3Z9IGaPmyy0L7xa4Loc2jq2DR9z1Nuq5jRVGIK2CRP5+sKgqWyfdhGGjn2TCh8f3OuMyUS/wpt8+GZzTPc9rB32XG9LRrTCiVVY5qQls5gOLlDHjOFCgHbqBHwvOtopcXmdrQo2Ahg7VtSxttXVNZEdyBHgUzzjnLsoxw3DLoXh+6BRbGNp20llniNgFeVRXNVfe6TrQGppIikCE69vF4iKZpaA78Lq8thnpI+CIUJjSK/hIAiMdgN11PRAi4BtbRWUa2qgIq26m8KpxlDoHFOI4fqFoMSo6M0zTFQhaxUJjQ2+3mRZFlWZY08KsTinszDkFxHCDgNeGDzZVbUXUQ1/goOBjdEsFd7UHp30WSJKsWs9jVS6ijAXfBp6E++FTUBQc10h7UBod2766ONuEQNN5gvJZgE0Ut9adCbLyvQV/a+Afr9yICk58JsYE23JqZBg7TeClYR7/ZO0s1dOSwMitYoWZpzS85T2IcM+fmmGG9gVCKpZLGjkX4Fvrx+V84TFUNm2d7nAAAAABJRU5ErkJggg==",
+    "price": 220000,
+    "reqSTR": 40,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 9,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incPAD": 65,
+    "attack": 1,
+    "attackSpeed": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "Dagger"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 65,
+      "min": 62,
+      "max": 68
+    }
+  }
+}

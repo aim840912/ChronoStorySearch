@@ -1,0 +1,19 @@
+{
+  "itemId": 1052125,
+  "itemName": "White Pioneer",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 8140500,
+      "mobName": "Bain",
+      "chineseMobName": "煉獄獵犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

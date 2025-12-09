@@ -1,0 +1,55 @@
+{
+  "id": 1072216,
+  "description": {
+    "id": 1072216,
+    "name": "Dark Katina Boots",
+    "description": "",
+    "chineseName": "黑色蒂娜長靴"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAgCAYAAAD9oDOIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABuElEQVR4nJ2WDZGDMBBGlxkMUAmcBJAAVg4LJ6GV0Eq4SigSwAISDgk5vrQbNj8Qws4wHQo8HvsTyCkcytnPKCEk1ICqqtK/0zRRWZY0jqNKATNUNU1D8zxrEDYE9s9EzsDFxgJJ2zNQ6vve/AFYURSWJf5LSUEuQfiFGYASnGoLaAaLjw1bmRNQKEBTbLlQBoxgy7O2sqU02E3DGVuv+QGSaThj60KDaUi1DY2plYaQbQy8NfsGErKNxRY0+5gQps0d25jtpikF0iBt98B7UMsOcLm/FzFosGgx26ipa+sWLQQ+At1ssb8XBgWFG+lGK/iQKdvKhWYYBqrrWpvev+dlG6nuEh6fxKSZFEytOdg9Cg3mNByFKl5khDoNvw1dav/kw4+PQHE4Li1u8E7H64p327rgHIGax14lZ1N9BiIFMVPzusaYuusrAoVBMFAc86qvJAiBlyI2OVHDfaTnk+jWWzcLNr9+VcuJQXC12QRAdNYW0Ht8vlD2owwGdo9toAfFRVQp3dRngR607qql91o9Laa5517DsLU/yOs+0IXqqcm+3uevnz2FdUEM6JnKk3nlD0T0Y+IfZ2Ohwti9XAYAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB/UlEQVR4nK2WjXGDMAyFxV0WICPQEWAEWKWswAjpCMkIzQhhBFiBEeoRqJ+LfLJrwIa8Ox+/8eenSMIX2tbsXWd0UCGQnbwsS3OcpomKoqBxHOejMB8013VNSikzOQaE67OSIAPRq3Yml67eBaK+7+05AHmeO25w72j4HBBPjiMcACJhZ1xJUIbVLqvm1duHSAaAjrryk8HCIHbzDleh9DYwP4TQGVerBYvJZQjPuloDBUMIHXW11YKcEIZcpcD2ep2dOOQqRXugbFkxoWv4LSnF1a4jCoQQYlexsBiQ4wJAeR2rWFAwMVJcRTuCthJjD5YCWk33nxeKG8kx0heFYUmO2JVstsMwUFVVxtH9U+kxUtX+/10qyHYMG76psQ/bR25goRCmgmZutFYaNnzXdK22f5gcOggJwLo2gP6F8nXDXiPcdFNANmQshI6zjiEIX0jR+zq0IP/7BOHPhxginkVlne1v/KnAxgVDdobhPtLzSfTVOwuILliz7ZKVD3GW8YoBQZbHQFYd8WSyXqQY0j4cyBXrkdNsgXKeiMrZFGIkBMVUBiCKB4NyMXRll7o2GlP1tiBVbwAYTYfXLKTzIBKmzIt6XASgWI6dDtkt+8C7mdgSu2m7QB7khst3ZCUdyZdavgcohdV5E/rnzrgIexImzytxL/S1UxvX9vwXnkO7cQxd6ScAAAAASUVORK5CYII=",
+    "price": 170000,
+    "reqSTR": 0,
+    "reqDEX": 140,
+    "reqINT": 0,
+    "reqLUK": 260,
+    "reqJob": 8,
+    "reqLevelEquip": 100,
+    "tuc": 5,
+    "incDEX": 2,
+    "incLUK": 4,
+    "incPDD": 58,
+    "incEVA": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incLUK": {
+      "base": 4,
+      "min": 0,
+      "max": 9
+    },
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 11
+    },
+    "incPDD": {
+      "base": 58,
+      "min": 8,
+      "max": 108
+    }
+  }
+}

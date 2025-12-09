@@ -1,0 +1,55 @@
+{
+  "id": 1072215,
+  "description": {
+    "id": 1072215,
+    "name": "Red Katina Boots",
+    "description": "",
+    "chineseName": "紅色蒂娜長靴"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAgCAYAAAD9oDOIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABxklEQVR4nJ2Wi3GDMAxAxR0LZAV3hHSEMkJXSEZoR0hGMCswQhmhGSEeoR6BWrbkKP4Eg+6czwEvD31ieijHknzvYENIaASd6N24pdwaw7FmMEOXy+EAxloPwmVhf/QMnG3AMOwobPdAYbIPL4QpsubAdGxJQS9BR7cspUCCt9oitEOLEwEQDMJSEXSLLRcqghHKoL22sqU8WDGY0rDHNmt+k6Rhj20KLaZhq21pTJ/SULJdA9dm30NqtmtRg3pbMAY+lfJFgw22VVMopEHavgK/ggYrkQZIxrcWa9Bi0UD8m5VsV01T27RoJXALtNpiP78AtxtgPQGuD3CTKdvK0MsC564Lpl9uaQc9h2Ot0DhpcRDMEA+OVwJDsG2FLniBkcZ2Bn3/gOFtzk5uvn0MJT4P7/gagBcd8spFbIF6S99KFGjL1WcgpmDNNG7Xl2Sb4cDC+B8goEhCVv1FgjAmd5XhpidL7VppmhzoGmwJWGx+v1XjbR3IDOCxpXCBNPVmDZjdvqF/I6jMNwOxH2vADIoXwfHPN/VeYAY9uzbR98FPS2xu148Iw/VNE/MKmEL91Iy+mbunhzQZa8DMVJ485o+T2Tm1+AdFwB1k5nBoEwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACDElEQVR4nK2WAXWDQAyGw3s1wCQwCVTCkDALRcKQQCWABSQMCauEnoSdBHYJCQvXAw7a/70USiEff0iunGBdg/c9gYMKgabkF94aF5mLdvztEMwHDXWagrGWkmNYeI00iCC9HVMLIOeteSEIOvt//wjI2J0IS3m0fDOQJM9dWC6fhj3jSoMSvNsLJ0UYKDcZg4668pthgiFIkr/CVai9CZYJjEuIesbV4sAar4TPuloCBUuIOupqbQmalTDkag9sa62jxEuu9mgLRK7AGPjMMmoMOOhq0xEESogSV7GwGBBJlxC8pSlGsaBgY4Ba5bdcRTtCrTXGFmwPaLHdv38AbjfAngG4hmG7HIkrrWYYoEyS0dGXi8aBysfr9oKmFWMaXlNMP7ZXhsGjq72gAZPQMxFntofm/gHFe7964e7SoTK1X5zxc4TUzficQqvGHhC5obZmoSvpOoFg+UKKfq+rvb94ET58gjJEFTCq6wadHNW5TEYGld00rq27ziW/jq76AGANRK9dWJKUHaCky6QJGp6dGMiiI8OrNCysZwLBeVGQN7w3ddrsYh+USiLIf2kQIyE4TLk6zaothYBSFVC6lm3uBU39NJBuXhCAUfHkM6TyIBqGQWN3UoCMt5Wb6rqlAUxmL/paDGlhXi7f0STtSJ9UyjGEQliVl9Dfn8VJ2dMwvX9Wx0LdYVe+T/t/ld03ExE9P2YAAAAASUVORK5CYII=",
+    "price": 170000,
+    "reqSTR": 0,
+    "reqDEX": 140,
+    "reqINT": 0,
+    "reqLUK": 260,
+    "reqJob": 8,
+    "reqLevelEquip": 100,
+    "tuc": 5,
+    "incSTR": 2,
+    "incLUK": 4,
+    "incPDD": 58,
+    "incEVA": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incLUK": {
+      "base": 4,
+      "min": 0,
+      "max": 9
+    },
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 11
+    },
+    "incPDD": {
+      "base": 58,
+      "min": 8,
+      "max": 108
+    }
+  }
+}

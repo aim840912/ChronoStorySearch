@@ -1,0 +1,85 @@
+{
+  "itemId": 1050045,
+  "itemName": "Blue Calas",
+  "chineseItemName": null,
+  "totalMonsters": 7,
+  "monsters": [
+    {
+      "mobId": 3230100,
+      "mobName": "Curse Eye",
+      "chineseMobName": "風獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230115,
+      "mobName": "Master Chronos",
+      "chineseMobName": "妖魔隊長",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6130102,
+      "mobName": "Separated Pepe",
+      "chineseMobName": "孤單企鵝王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6130103,
+      "mobName": "Pepe",
+      "chineseMobName": "企鵝王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6300000,
+      "mobName": "Yeti",
+      "chineseMobName": "雪吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6300001,
+      "mobName": "Transformed Yeti",
+      "chineseMobName": "變形雪吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6300002,
+      "mobName": "Separated Yeti",
+      "chineseMobName": "孤單雪吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": 1082138,
+  "description": {
+    "id": 1082138,
+    "name": "Dark Anelin",
+    "description": "",
+    "chineseName": "黑色亞納林手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB6ElEQVR4nLWXjZWDIAyA43u3gDcCHaE3go6gI7Qj1BHaEdoRdARZwRHKCMcInEFD499ZheY9BdHmIyEJ9As+I4b1o/HLT0CNEALwiuMYqqqiCTh4aOgAiJIkiW2llIbAwS3lQK21a3FcKWXBIaFmCUh9fNf2TVBLEboExLaHBnOvOR6PTukSsHUvPgZx7yYg3nyhDkjQNaAv1AJxHVF5r3gV6AN1QC4ciDIH9IFOInUBPAHuhZosyyaAmXxcVLAVat3KhcMIuOTWvdCBW9+JVF+os9IH+C7Ubk08PXyA/0HdJszTguciXVuBc1ALwz2QB8fYOhpjUfo2cAw15tluuFpCWsBgiyLlvNT5CEFdkOS3DJDHcw7lfmoAvXh+xGP4Jis51K5dXnR9bkl9B2t90wA8mqQFqiCWThKerCuvnfK0SCaT8YUOFBIQJS+oPyzkQaBzNXPurENtkEB61gIOqXKD44JNoPKibDDlt/WivgptpIRnCTZY8puYfITKcWLRoZtYeQEoKk8oxtF32rmzvir7fMhf8A4obR8tFELbskgVag80in7wzNrNPO2D57dWL8v1C3g/6dbKpD2xVzi0OUedpfjj/vTtijoCcQJoOXqBCgauZ/snYTeQQ50Sgv+c8a5dO/7OR/4AGi+YNfhKsloAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAgCAYAAADud3N8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACGElEQVR4nLWXjbGCMAyAw91bAEeAEXQEGEFG0BFkBB1BR5ARYAVGsCPYEfqaQmqA1r/W3NX+APmSkKb4B78RxcbJ/OIvoCrLMsCWpik0TUMGWHhs6ASIUhSF6buuUwSO7ikHSiltj+tCCAOOCVU+II3xmh6rqJ4i1AfEfoRGC69ar9dWqQ+ow4vTKOH9CIg/oVALJOgrYCjUAPE9ovJR8UtgCNQCuXAgigsYAl1kqge8AH4LVdvtdgFw7Eevgk+hJqxcOIyAvrB+C52E9Z1MDYVaL0OA70LN0cS3RwjwGdQewnxb8L1I7VOgC2pgeAby5Jh7R2ssS98GzqFK3fSBKzsoa5gcUaScl7oQIahNkuq0BeTxPYdy3vWAUdxf0jn8Iy851Ly7qh7G3JP2DMb7vge49IUGiiieLjY8eXc9DsrLulgYEwqdKCQgSlXTeFrIo0BdNdP1rUN9lES6tRnkpbCL84JNoOtBmGSqTq+L+kto33Vwu4JJluqULW5C5WhYkg+GXQ8AdWOhKfjFaZWBYh6tyuHZ9ijMPK8e8AHYmTF6mGXSlMWxEq3BLZL1ks0NNEk2+M06WF6OyXNvxcNz+QCed1J7Wegv9gaXdKCh8HnEYGJs0nqqZaWtvuOAijoC0QD0HKNABQPfp/6TgD8X+CK0HIqyQSUa3prJfniOeib1E+Xz8bxNoBQCtDwf11xepB4P5JP54v5/xGqx5DmYgzIAAAAASUVORK5CYII=",
+    "price": 270000,
+    "reqSTR": 0,
+    "reqDEX": 140,
+    "reqINT": 0,
+    "reqLUK": 260,
+    "reqJob": 8,
+    "reqLevelEquip": 100,
+    "tuc": 5,
+    "incDEX": 3,
+    "incLUK": 5,
+    "incMMP": 30,
+    "incPDD": 40
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incLUK": {
+      "base": 5,
+      "min": 0,
+      "max": 10
+    },
+    "incMMP": {
+      "base": 30,
+      "min": 0,
+      "max": 80
+    },
+    "incPDD": {
+      "base": 40,
+      "min": 0,
+      "max": 90
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "itemId": 1472019,
+  "itemName": "Blood Slain",
+  "chineseItemName": null,
+  "totalMonsters": 4,
+  "monsters": [
+    {
+      "mobId": 4230103,
+      "mobName": "Iron Hog",
+      "chineseMobName": "鋼之肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6400000,
+      "mobName": "Dark Yeti",
+      "chineseMobName": "黑吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6400001,
+      "mobName": "Transformed Dark Yeti",
+      "chineseMobName": "變形黑吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6400002,
+      "mobName": "Separated Dark Yeti",
+      "chineseMobName": "孤單黑吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

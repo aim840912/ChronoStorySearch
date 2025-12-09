@@ -1,0 +1,55 @@
+{
+  "id": 1051015,
+  "description": {
+    "id": 1051015,
+    "name": "Blood Fitted Mail",
+    "description": "",
+    "chineseName": "赤紅鎧甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACbElEQVR4nK2WjXHjIBCFVzPXAC0oJehKsEo4l2CXkGvBJVglRCWYFighlGBKIPsWkBBGspxkZ2Tx5/14ywL6Q79rPr6bWucemK+01Zz5D/45bjh6BvPX65WGYZCKtZa6riOttS+A3vsbNU2fT+RB5RZMQMYYAcCUUlLH2zmXgAIaA2hT5RpMZnW5XBaNDJjKCeh5JEDHWYWAdMVpCRPI4XCYGhA6WNu2Ui6BY+PE8Qy/0ZnhwwyvwmSWMGM09b0SB5+fNmFjX6ihH3ZW4X2/YxIP4VyISDABmTc19d6k6KSt5TVTH5rckdduVIzVdOK+IQONoqEXlZkqgZxiG2D+/g9he2enyzWa4yV4fv5zPCeR1HFIjYQy1AEauY7hCGlauwQXZQ7rcryQNbRub9wfB5j4JEvJAFAezkJlCKNzLTmDZNDVLMrNVtrG5+GkBGv+Wi2SR4Bpv+VjEyhNdisbG94nHgvZ7gRCoQ3pTmGvbYNymHTyIP9OMR+ipbLNJoG3Dlkg9XPmdg1UwsSgrIMjrAP7suzQFlAjfZN+mWQ+aVqx+nGlwoYGDb+tK5S5h0CvAjZhUAWQ4uMJW0KxY3CtW4Y3zGlxIL8OKy06lHKpp6JwN8wnh1AjGz06gypXgeHqAZAP6F3qFsrw555P2ltcK0VzgiQY0hs3QK4s3ghPgathlBnHxEgwZGGHtSzCp5SiPfaYIFHdNQISCKdLm63fq6AS1vCV7wHDc2bgKcLy0NVA31W2AA4MPFDdchB/AMl/X4UtgLBacn8HtAabgCjg3gLWxM+4HPgKaAuWO/ET0Ji1MT+GLRyanYftln0BxsVKXZ+ZX64AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACrUlEQVR4nK2WjZGjMAyFxcw24C2BLYErIZRwKSEpYbeFlBBKWEoILbiEdQlxCV49YRFjDCE3pxniX/T5ycLOG/1fC7GsSoN7YKHQV3IWvvnnuOHoGSxcr1fquk4azjlqmoaGYQgZMIRwo6pq04UsVG7BBGStFQDMGCNtlN57BQqoH0GbKtdgsqrL5TLrZMBUV2DgmQAdHyoENBSc5jCBHA6HqQOhg9V1LfUc2FdeHD/gNzozvHvAizBZJczagdrWiIOfH6fYODa2MA47m7G837GIRThnIhQmIPthptGbVL301bxn5nsgf+S96w1jBzrxWJeAetHQispElUBOsQ+wcP+LsH2y0/kePeIleH6+OJ6TSGo4pFZCObYB6rmN6Qip7p3CRZnHvhwv5Cyt2wePxwk2PmqaDACl4cxUjmH0viZvkQxDMYtSc4W+/nk4SWHVHzeI5B5g2m/pXAXpYreyseLvJGAj651AKHRjutP4rW2DUpgM8qTwSTEfomndJYtAOYxZIO1z4nYNlMPEoKyBI+wD+3Ls0GVQK2OTfllkumhasfJxZcYPGjT81j5T5heBXgVswqAKIMPHEz4Jw47BdX4e3nFNswP5dVhu0aHUcz0FhbthQR1CjXzo0RlU+QIMVw+AfEDvUjdThpdbPmlvca8MPRJEYUhv3ACpsngjPAWuhlFWHBNDYcjCBnuZhc8YQ3tsmSBR3TUCFITTpU7271VQDqv4yg+A4Tkz8BRhaehKoH9VNgN2DDxQ2VIQ/wGSd1+FzYCwUnIXQO+0/AwXr5dgeOmdgXc0cG8Ba+PfuBQYQW2csgbSRPYpzGTPMZbXCWgXtyuu9gOtXxQKkqRWmALqpNR+ODR2/Cuh1iXja7ZYQK5sbSLaXzuc5vXZ85YMpDdJDk/7SiHzG+2p/gvv+2Yg6t/QyAAAAABJRU5ErkJggg==",
+    "price": 37500,
+    "reqSTR": 110,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 35,
+    "tuc": 10,
+    "incSTR": 4,
+    "incMHP": 5,
+    "incPDD": 60,
+    "incMDD": 20
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 4,
+      "min": 0,
+      "max": 11
+    },
+    "incMHP": {
+      "base": 5,
+      "min": 0,
+      "max": 40
+    },
+    "incPDD": {
+      "base": 60,
+      "min": 25,
+      "max": 95
+    },
+    "incMDD": {
+      "base": 20,
+      "min": 0,
+      "max": 55
+    }
+  }
+}

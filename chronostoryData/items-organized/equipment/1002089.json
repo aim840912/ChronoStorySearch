@@ -1,0 +1,43 @@
+{
+  "id": 1002089,
+  "description": {
+    "id": 1002089,
+    "name": "Green Bamboo Hat",
+    "description": "",
+    "chineseName": "綠色斗笠"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAZCAYAAABQDyyRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC6klEQVR4nK1Wi5HjIAwlM2lALdACVwJbglvIlbApISlhU0JcwrqEowVaoASfngQYe5PYzqwmnhhh9J5+wNG8L+NifHjHyF4CFfTrfjEhBpNSknF/HVpCm8lsJSDGLwwKiSnyk4wla6JJhljXnbwRLjwYbpXMKpE1AmLo/u9uYoziLREJIP5jjgBZqw+TSTEZ3zkhw2tGjF8ReUZAgb/vMCkgJdT6jv+g7sqAfyCoGlExP+Mck/Jk+hcReURg/Pr+ykBRNWzNsoewjLxLFDj8QshY0TnnK0GOzWSNv0VEEKH+2o9LEksC453BA3tjAcKLivfyIN+kOoRfSJERHTyXNOWaIMs0QhId3hEhEBn6MCPREhgvubIFhBXwEcWGonNkhRjeMQ9wGIfn1ib5LpmUnUadIGomJ4Ujg2zl+mhJHFtweG2sl8UAStmYYyoDE/PWia4UpHNOkoAxxErEtAjauokhSiqINEXdZ1fT0UQg5dZyaiznGATgRGfzuJkrHnuXvdSU6wwKETYZnGRe0yDdE0KuVo0Ae//J7BX4ej7LRIzqgXW25jXjlb+fUsq/kRN7WwW24rQ6DHE8qt6b8/mvtpOZQlhsUaFryvixxJ/45nbtpzV1jjvDOxCQCBw+/nxIn8Lb4oh+R5qConuGXEUjhrBrPcR5uKYcFWK1BqQieeHsgJFw2cplbsgsUpGmDqguJ6qkoYbHzapZF8yUjVRCunhd4Dl1JCkMKLbX9jccRrl1nhlYSCXcFNvLNWsEDoE3Deud2SqyRzB4GMIq+BYCIpa3UpKqnW2jywNm9DiSd4BvJXDA+Q7juqcnAXYdDh8G021V5gC8dvy+Q6CSwBY69IMoKDc2gHVMuuXuvJrtuZIdsH9bz33OHVH2f3isJ99+8L0Exu5y4jAPCti0ped0IDIlPUviv0FAwI1cNqh4Xw0jMkhPubKVXas/31YNb64BNqaFSPR4HiQyyQb8d9qwgDS33ack2/EWo/8B8FDFlgC2tC4AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAaCAYAAADWm14/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADLklEQVR4nJ1WjXXjIAxW3usC3AisQEdwR/CNkBuhHiEZoRkhHqEe4RjhGKGM4NMnAcY0jpPqhWcjgr5PPwi/0M9lbuaHnxh5lkAB/bieyAdPMUaZj+epJvQwmUcJiPETg0JCDDwiWWMpUCTDuv7YkXDhyXQpZHaJ7BEQQ9e/VwohiLfGGAHEM6QIGGt1MJkYInW9EzK8Z8b8HpEtAgr8eYVJAcmh1nc8vborE/6BoGpExfzIOSbVGRrvROQWgfnj8yMBBdWwNcsewjLyLlHg8AshsqJzrisEOTaLNf4vIoIIjedxbkm0BOYrg3v2xgKEN2XvZSDfRnUIv5AyJDp4LmlKNWEs0/BRdHhHhEBkGv2KRE1gPqXKFhBWwEcUG4rOGSvE8I51gMM4PLc2yv8ixeQ06gRRo5QUjgyyleqjJvFSg8Nrsp1sBlBMxhxTmZhYZ53ockE65yQJmEOsREyLoK6b4IOkwhhNUf/el3RUEYjpaDk1lnIMAnCit2lerWWPO5e81JTrCgoRNhncyLqmQU6P96laNQLs/TuzV+DzMMhCCOqBdbbkNeHlx3fJ5V/Jkb0tAlth2e2nML+ovqNh+KPHiZYQZlsm06U8vy3hOz5dzuOyp6zxyegcCEgEDm+vb3JO4W12RP9nNAVZt4VcRCOGsGs9hHW4lhxlYqUGpCJ54+qCkXDZwmVtiJpUxOUEFJejKaShhsfVrtUpWCkrKYR0877Ac9MbSaFHsd23/8BllI7OloFGCuGq2O7u2SNw8Nw0bOfoUZEeweB+8rvgjxAQsdxKjVTtqo22F8zc4Up+AvxRAgfc7zCuPT0KsOtx+TCYtlVZA/De9fsTAoUEWug0TqIw6WADWOdGW+6Tn2bPfJId0L9tx+ecT0Tu//BYbz6Z/6LtbnGzge4RMNXzX386cpgnBayOZcfpQGSYzNcNG28VeKzGXQKmGZ8AJ/nYMNn7IRPkyLwjPfmTLXetcbjgkY9QBg5pxC0CGdRWz4GNnaQQl5Zoqz0XJnHMJCvwM1FzkTRyLwJZ8uaBC/FU6dvWKCSr+e/GRjs2CeQw1STy+2ujaz17vaGLG+8i/wFtz955vxEXwgAAAABJRU5ErkJggg==",
+    "price": 6000,
+    "reqSTR": 0,
+    "reqDEX": 30,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incDEX": 3,
+    "incPDD": 15
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 15,
+      "min": 2,
+      "max": 28
+    }
+  }
+}

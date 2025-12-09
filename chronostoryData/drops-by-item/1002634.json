@@ -1,0 +1,41 @@
+{
+  "itemId": 1002634,
+  "itemName": "Purple Cast Linen",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 5120003,
+      "mobName": "Grupin",
+      "chineseMobName": "藍獨角獅",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5140000,
+      "mobName": "White Fang",
+      "chineseMobName": "白狼",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6230600,
+      "mobName": "Ice Drake",
+      "chineseMobName": "冰龍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

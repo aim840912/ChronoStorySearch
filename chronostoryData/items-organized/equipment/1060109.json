@@ -1,0 +1,49 @@
+{
+  "id": 1060109,
+  "description": {
+    "id": 1060109,
+    "name": "Green Neos Pants",
+    "description": "",
+    "chineseName": "綠色涅奧斯長褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAdCAYAAABFRCf7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAClklEQVR4nI1Vi5GrMAwUM9eArwRfCaQEUsJRApSQlPAoAUoIJRwlxC1QwrkEntdCxjafOc9k+K1Xq5XkfND5Wuhvq8hf7EiVYjJ3XZ/VJaMxVoIH8px0sZZI6+2FxYuTNc98LUsl5EVOuuDjGp3+ss7wiVJ8BPD7W+3SzhWLSuwBNP6ckCJtjgrCq7RtIAHhJWlfET2Nonfv2JX76YbatvUqX//cR8vyZmOoHpQnByH23YczpSXRu9FUd7MDW6e8o77vHctAbWeCBfOs6NVYR36cya6lbu1M71flVQ7D4H9CJmpFqbyH0jPS4qulZXlrr6p/MNnj8fBK6ycTtAP8ZIu+auMJ65H3nyqFCuN87UYmhKeiUixAMZHRj4t3e6ZFykl9n96cot8f7Uvadamn/aMM6QMHwrzyO6WoptaKPu+ogHH9uo0WFH7exvB8Nb1Zn6p1RHnHOM7ud/dKpB9lKIDDACDY1Zh6IDZpbf0GBFlHsHB7ly3oNlGMx9CcKAVgmmbiQ+U4P2AQCFZFbw/T98cXwFWlfUrThHsVKyiQIqfN30RtGiBSikOkLMsVNLtN8JRTjzcgGAqovQ/GE4vf7t77GkiRFqfGvSgq8gWFIBQ8/Ec2XECbKgVR140hwFFVOQtvVDhDpTPiYgVSOUuxSTyCG+bg0IgtQGZ4PvQUBYKnAMm5moNpLRb8Ty2gBBtIAULKsZ/r+O3+LcUCsYktY79dcReQLuwd+wRM1krx8lhRhjM37mkR88GKuIJxj7Kn+0IJIQJXru+maVoDbP9jnrRpqpCK9GhcsDx1FAn+A499wO88ReoAgVA8xTWa/WRxZibcywBIHUBawFwYL0q2Yu0mah3VrUDbqG4Yqf5KnKxd1S+wCf4/ydrWe4QOJw8AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC4ElEQVR4nJVWi5GCMBBdZ2wAS4glYAlYwlEClKAlHCVACVKClGBaSAlHCVxeloUAiUpmGCBm9+17+8EjfV4DfbcO736MAiUJA9j7+J68RdG6l4CCgDGgoe+JlJo3emxEljF8T9NEADdgIaABBmOU9M365nyQEQxg/POTbCRbMxM2sMHRGPEgECTj6ADyTrJ+cgyQ3UB1RnTXCb1qi5jYSxVUlqVj8/i1P/ZMw2hNeZM4QIDA7trsYZQSvQpFeWWsg94yrKiua+u5obLSk3zGJPQoegtIH1e0vC+lodcjc2yapnGXAAgrYST7YLQH6HAuaRheykVf3xjgdrs5RvmdnZYN8sPynnPtQPKW7XcxQrTa5qlqGQQ5EjYiHwoGzJ82hss9XggxINdHFxv531O5UqqqZY7qWzpJh3MAeVdxUUaoIqUSOl2RZW37aR4RYHK6tNP7h8n0HgggPH7YS9sae11dxNIv0sg4h6ZFAHtHkDOGI6V65wTA43g5WH/DHMg8Gfg8Gn0HIxh1nSEerGFtcAbgkNnbpdhaA7lRDwdZppwcXYfnxI/0AHlYMv5NWC1BPzDCIE3TdDQ01hFyxLL55xAAikQ5DbUDk/zZ502eNkCQhGXhXpFo1wtMACLnkU+w5iLZMtsAwXlVtRNorJo4AD19g6QiYwWxAZJvERyJ5lAyZOzLBwXwHlsbIBQBcgRD+S4FHLiCQD6X8lEUbAMEQ8jl52ccLZsmFPlEYizIh/zZAlpI7QMNnAvWHXarsqb1WWGAb5bfc6ECWjDiiUyLHsLyiuE0M6epxzLbA13XjaDhf0wLoKLIJhmkh/yiAKYvGwoB+cR52OH8KkdoMmz0AuQ4QzYYAkRyhLs36xbfUFZAT8/StPw+BQYhzXEEwXW1CXwiuRLxXBDOqqF5mDUWuEAA8/8HWtztKkPSiYPcgj1W8t4pvO727G9gPx8jW1zH8cF4YGcKj+HQbLkE9vrQ8z/fjufVcC59tAAAAABJRU5ErkJggg==",
+    "price": 180000,
+    "reqSTR": 330,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 100,
+    "tuc": 7,
+    "incDEX": 3,
+    "incPDD": 84,
+    "incACC": 3
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 13
+    },
+    "incACC": {
+      "base": 3,
+      "min": 0,
+      "max": 13
+    },
+    "incPDD": {
+      "base": 84,
+      "min": 34,
+      "max": 134
+    }
+  }
+}

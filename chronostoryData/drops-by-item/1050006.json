@@ -1,0 +1,19 @@
+{
+  "itemId": 1050006,
+  "itemName": "Red Kendo Robe",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 2110200,
+      "mobName": "Horny Mushroom",
+      "chineseMobName": "刺菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

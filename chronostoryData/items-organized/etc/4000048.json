@@ -1,0 +1,27 @@
+{
+  "id": 4000048,
+  "description": {
+    "id": 4000048,
+    "name": "Jr. Yeti Skin",
+    "description": "A skin cut out of Jr. Yeti. Very soft and full of white fur. ",
+    "chineseName": "雪吉拉之皮"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAaCAYAAABPY4eKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABvklEQVR4nLXWgXGDMAwAQHzXBcgIzgjpCMkKXaUZIazQEcoIyQhlhDBCGEFFjm1kWQJDWt21PbCjj4WM+1b9T8D4Y5Ym/TUOaya/iicYPB5VP/TVfv++NNe8igNiNAhMS+7Q+/0nG9uKT3BdP/8OQzbH/UqrkfTBFhzGmK48ioCtbTan7zsR3oKLMIa1h8oYU/Hxtm3VZGtwFY6lpzGOYzXO5wavpG0HpfgE82dLYDqHdb20BU0JXgTT8QBLlWq+mlCN2bKDl+Wm0rtchW/dLXkMEj6h/oOIYmBTJaBSCalSmON0+ogwx5N9iVuERoQDMvcI2NgzX5+tkuLuG5ndLmsOtculUGC+ao4nX6LiW4snpquXKlEQWsMtw8oYbcq5VWs4zJZ5psvjFot9o8MansFxNdKbzI9jrIElHMK+DgkxyfFwVLt5K8zxBA5bw1qblHrcDQmC4wjjeY0vEY8uwhR35zOeSiGu12+X2JXbrxRhRNjqnvcKV8txCInpB8dE8R8GuqJQEQIB3uu69KVUiovHHcKIYlLyPgZ27UK6V4qLQU+fAF8unyKyBdZw0BIK98ILYTWs4XOJTOG9ovgFBLN45VGntVoAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACCElEQVR4nLWWgZXCIAxA4b1boI6AI3gj6Aq3yjmCruAI5wg6wnUEO4IdARskNKQJxXqX97A2ofkkTaAf5n/ED8POTfpruH9l8rvwDObvd9P1nVmvP+fm2nfhHmBUCJimPEBvt9+JbSl8BDfN89r3kznhJ89GVgdL4H6Q8S5CAeAaN5nTda0IXgIXwSDObYy11nD7+XxWnb0CV8Ep9VQGO2Rjvz/CndR2vhY+gvm7JWA6h1W91IK2Bl4FpnYES5k6no6YjWLafSTLRaVXuQq+ttfsNUjwERofBCgIFFUGVDIhZQp87HZfCczhWV9Ci1BJYISUXgGzPf11kygpPKzIrlaT4lCrXBIFzKPm8GwRhrcWd0yjlzJRIVrBzYMVGy3KUtQa3BfTXKjy1GKpbnSwBp+AUzTSThbtIK+AJbjHvkaH4GS72arVvBTM4RkYW8M5l6V66IYMAnYAw3kNm0iEzoIpPJzPcCqhXC4/wXFId4wUwABh0T11ldFyuEfH9MHBUfpgoBFhRgjIg65t802pFi4edwAGKDgl+7Fn90EkXS1cFHr6IPhw+EYdpClVoKQjou4+6sESHa6jzhHdbhi40V/ileokcE+GCm8isIljY/Jo9oIOVrQ1eoQI7eJI8ygcgY5cUQ9yIjpDdPLOM4JVkSLXHiw56gv/+RDhmBq6ACmqRllIabHiwh+uHJd48t2U4QAAAABJRU5ErkJggg==",
+    "slotMax": 200,
+    "price": 50,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

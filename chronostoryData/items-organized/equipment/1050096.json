@@ -1,0 +1,52 @@
+{
+  "id": 1050096,
+  "description": {
+    "id": 1050096,
+    "name": "Green Katinas",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "reqLevel": 100,
+    "reqLevelEquip": 100,
+    "reqSTR": 0,
+    "reqDEX": 140,
+    "reqINT": 0,
+    "reqLUK": 260,
+    "reqJob": 8,
+    "price": 240000,
+    "tuc": 10,
+    "incSTR": 7,
+    "incLUK": 3,
+    "incEVA": 2,
+    "incPDD": 105
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 7,
+      "min": 0,
+      "max": 17
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 13
+    },
+    "incEVA": {
+      "base": 2,
+      "min": 0,
+      "max": 22
+    },
+    "incPDD": {
+      "base": 105,
+      "min": 5,
+      "max": 205
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

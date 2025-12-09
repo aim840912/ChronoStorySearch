@@ -1,0 +1,37 @@
+{
+  "id": 1061057,
+  "description": {
+    "id": 1061057,
+    "name": "Yellow Avelin Skirt",
+    "description": "",
+    "chineseName": "黃旅行裙"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 10,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAVCAYAAABVAo5cAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABzElEQVR4nKWW8XmDIBDFL9/XBViBjkBHSEdIRnCFZoQ4QjNCHKGOUFZgBUZI7yEnqIBt+v5RkfDj3R1nXqiuBz2vQ+1FDfi4d5pOnx3fanLDhZTSfKvSDOfJe0fO+vA48vNtnKZYFzZbhJaACxi0gUVhXJsJ2p009QPf87jRdegaGGDWOTolKyuIYme+tHn64B/1AzWhG4dY8Pp1nd2Rd9SSMoZn2nBFTOCypRwY3K13nz9jM3LlDE6DLn+v2aVrulw4xEKjtSmcfpwW5PwJjJBPuEZOIwzuRJLLPYfBHbQI55Nq5bJxDuMuc3fTAK0LKVeoaNp3GFSrvl8rhvnI157Ka83AVrnPUpVQxzzXXuVhBXDOX5GxCWdjP1n1Gp2AuVq9dLXaFobWptTfCmwfKMfgD9KGozIka3lYN8Dz24Xu33f6j17Pbg7pWgsgemjcU2HqdgU0bTRvCatnCz1/Moxe9IUyUCoUEyeX10pV1sOLnI62WrBLoMhoTWhUgEIBvCO4Akg23BKAh/PNzUdDjkF3NMG1gIlu5RXGFJmaELz4nT6IwwDFzTH14QDv4kDeFFKuZcFEk3M42MWU4tciDL739on/MsUOVfyL8QO8ptSjWUpyvQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAZCAYAAAAiwE4nAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACBUlEQVR4nKVWi3HDIAxV7roAK9ARyAjuCMkIXqEZIR6hGSEeoR6hrMAKjJAijEDGfJr03fnAQPT0JCHnDep4wOs41DZqhI/7KOH0NbqpBDNfQAjppiKdMBasNWC09a+Le78t6xFtvLNF0hLhhgyxIwvAdalW0vEkYZrd3K0rWSfNCT2ZNgZOSUpGIpwyW3IePt2PphmapDuFaPD6fY3qwBpoQSjlTmo/YkxQZQuc0KvLvefv6AyNLoProuH70qk0TZUbhWho0TqF0y6rQZc/IgPMJ6rGnAYyVEegXPYUenWITThfRCuXjXsYvOTq1gXIC4nDVzT0FXrUqu/PCGEe3DhB2VYkbJV7hKiEOuS5tsXDioQxf0WOXTgb/rDqVTIRcrR6aWZtT4atTYjnCqxPSNfgCUjlojInaTysO8Lz8QL3nzv8B+9nE0OaY0OIPTT4VDi6t4BNG5s3hdU6CZP7ZCi56QtlQqpQPLiqvFaqsh5ezOmiqwW7JSQoKQEbFZIiPHEHqAqJyOEWkPBwvpl4NegajIPyqokY4Fa2sKTI1IDBC9/pAyn0pDgZUh/25GNY4E0h5ZoMJja6h7PeHCl+Lfzix6Rf+C9T7FBHtinoECcU4TmyuWB7UJi3GIewjo8JjyVCMi7ZyI13SqGIouxcYe1wq6vbxjx/IiHJ7oUu5qLjUM0J+AUJx+z4n1mAXgAAAABJRU5ErkJggg==",
+    "price": 1500,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 10,
+    "tuc": 7,
+    "incPDD": 9
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 9,
+      "min": 4,
+      "max": 14
+    }
+  }
+}

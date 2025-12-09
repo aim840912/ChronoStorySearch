@@ -1,0 +1,26 @@
+{
+  "id": 4000996,
+  "description": {
+    "id": 4000996,
+    "name": "Ghost Pixie Skullpiece",
+    "description": "A skull that fell off a Ghost Pixie's hat.",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "iconRaw": "",
+    "icon": "",
+    "slotMax": 1000,
+    "price": 75,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "itemId": 1472028,
+  "itemName": "Blue Scarab",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 5150002,
+      "mobName": "Cold Mixed Golem",
+      "chineseMobName": "冰之混種石巨人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8140000,
+      "mobName": "Lycanthrope",
+      "chineseMobName": "白狼人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8160000,
+      "mobName": "Gatekeeper",
+      "chineseMobName": "通道守門人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

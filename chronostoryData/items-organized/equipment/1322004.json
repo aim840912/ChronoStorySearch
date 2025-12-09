@@ -1,0 +1,39 @@
+{
+  "id": 1322004,
+  "description": {
+    "id": 1322004,
+    "name": "Fusion Mace",
+    "description": "",
+    "chineseName": "白銀之錘"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB2UlEQVR4nL3Wi5GCMBAA0GXmGsASaAFLCCWcJUAJUIKUQEqAEkwJpoRLCaaE3O4yyYGn3g0hroMyMfJmNz8/4H3h8Mro5l2oa4cr9M2R4XegDE7TBGV9Bi07lxp1hWjBGAN5kYNREzemRDlDAo01DFqjqT1ZeUOGWmvEVADpLQW6yvAeTIGuMqS4B/dGQ4aPSpoKfVnSFKg7X75A9hJnae/bsmed90AZ1Mp4MPvrB7FoAKe++hcYi24CY9DN4BaUTgmIAR+h7lVnwihk14HR0ybwHnW3vABc1iDrEc6t4EZtLB5LGjOTnB1FKWqPbgqPMkixBCmKPA8QwfQZG6vyNvXAYFWdVp3qFg9fbQIcU1qPcpYEjmcBp04B7qB46Bb4cNzKLEDVdyFDUbcgm+2l9egKHC0+cBgQs5DjXww7KRhwL20U7FLagC7HEIRgkC/M1FCqO8fvdUolxRlrtaKPJMGo0hZqMc9SK+fx0k8yVLKH2GC07xqs8UA7TKbLTzfOZyHk+MKcoSlEmLk0vtUe6BWRI8LD5eaa6pCdEF52WoJ7RBjTJbzsoNS8G9H3lH9lueyb16hHs4M1vFYDPLTYXILE5fID2l1Aj4KH+Q53nuq4XvyHn9tokOIbI+I+SSWug74AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACCklEQVR4nL3WjXWCMBAA4OO9LhBHYAUdIYxQR4ARYAQZgYwgIzQjmBGaEcwI6d3ZRIJoLYjXl5pG5POO/PQD3hceW0add6G+7k7QVjuG34Ey2Pc9bMsDGNX4tVGfyxqstSByAVb3PLgmyhkSaJ1l0FlD46uVN2ZojEFMR5B+rYEmGY7BNdAkQ4ox+Go0ZjhV0rXQhyVdA/WHr29QrcJZ2oax7N7Fr0AZNNoGMPvrA0vRCPZt8RS4FJ0FLkFng3NQOiVgCTiF+kcXE0ahmgas6WeBY9SfRQ64rEGVRzjUkgeNdXgsGcxMcXYUW1kGdFYElEGKIUiRCxEhgul1aSTlrcqOwaLYJxeVNR6+xkZ4SWkDylkSeDxI2DcacAfFQzfHm+NW5gCKtokZyrIGVc0vbUAT8Ojwhl2HmAOB/2K4XkOHe2ml4SWljejwGYKUDHLDTC2l+uK4XadUUpyxzmh6WSUY1cZBKS+z1KnL8zJ3MtSqhaXBaNtUWOOOdpjMbD/98XIWgsAfzBmqXMaZS8+3gN+3n48kA0ZPiOwQ7r7Ovio22R7h4UVDcDj8T9CFFp/pEB5+QuvLbkTvU/6F43s02CTcxr1ZEEDa0iyh2cZZXqsR7mpOROFyuYIugApbDs/HzRcJmTLMPdx5il26+DfXbvPkzcf9pA2XTNjWBKSTZGrCCJgupXvwd+z/AAAVVSumBS+/AAAAAElFTkSuQmCC",
+    "price": 11000,
+    "reqSTR": 25,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 3,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incPAD": 44,
+    "attack": 1,
+    "attackSpeed": 3
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Blunt Weapon"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 44,
+      "min": 43,
+      "max": 45
+    }
+  }
+}

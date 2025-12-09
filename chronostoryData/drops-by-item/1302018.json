@@ -1,0 +1,30 @@
+{
+  "itemId": 1302018,
+  "itemName": "Khan",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 7130300,
+      "mobName": "Master Death Teddy",
+      "chineseMobName": "怨靈發條熊隊長",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8140100,
+      "mobName": "Dark Yeti and Pepe",
+      "chineseMobName": "黑吉拉戰車",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

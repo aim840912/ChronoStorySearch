@@ -1,0 +1,30 @@
+{
+  "id": 1040006,
+  "description": {
+    "id": 1040006,
+    "name": "Undershirt",
+    "description": "",
+    "chineseName": "白色背心"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAZCAYAAADaILXQAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABY0lEQVR4nKVW7RWCMAxM3+sCMAKOoCPgCDqCjuAMjqAj6Ag6Ao4gI9QRKukzGGLCh9wPEUjukiO0eNAR2X83IkaN08hjg2+Gc1FJbGNeL4C6+Vkt8p84byUhtuc7nKon7FeLKII6xMf7g8e1ApYtHVQhwD8YRY4VZtk88o4lmgCiLMar9FZ+2ZVwftTJV8RuWbRCWifS90FbiJDAifFYQAaHcpkeailiidy0hOwgTPF+sPIhMlk9twbJYwgR5kAKbE43uO7XcdQoThVAXEGx5d+Z5gIEtfI5Ahw/5EgqJ2SKKM/3fQGSiCfKe7wgeuk8naBXWoIlYHWHaJZfPKRRdLgWy3HkJH0dcNTiouc3ZPVDAtRdbbTRkhfGk5I2aCJYlCbgeRBVopEQLK+pOBSpniFte+YoytWvj5hgee5wI6aV0fJailhe82khuM9OD3xypIBG/CHjUDeLdDHP3dRlUv22eQPMHcuLk7ji7QAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABoElEQVR4nK2WgZWCMAyG0/dYoI6AI+gI3AjnCDrCucKNoCOcI+gIOIKMACNwhEcwDUkL6v9ebX0N+Zo0tGSgq2VjN8MmZtdLA7Wdnk871ypORpumAai6n+16pdmZoACyO9/gVD7gsF23wiiA/N7u3E6FWakLVNY1vKtZIFy5958DBWnTYKgif40YjehvX8D5XvX7gNpv8hGqRRjbp2TqyDmJQ7DPwcNPsekLohC2GshMG6WM9OpeJSNKOZZRWelDUFvXdhHMkYR9n65wOXwFsFnlvRSGuoj5Ceidd4ZgmtSIPvGCJkEIkJW2ZAHW82pEZCydcidyjjuvFFJGE5hb7WELZkWN6q4M7Cbl7fAukSXOHcYi46oi9IwbyahSMBTdSSmNoNzYZZkqDYgLTMFGEF+h5pBk+aOFIrB81JOr3SxveUrHIKQ5e+TwI4ROcGtvJNBybFUdyQ1fPMArUMI0yOA4YHUND72GGoH80NDAr1buCst0FP8LBqmwZQySs/44jIH1lhrFZpJTHpFlFCuBJjIOWgbP8DhMi8Ib0NjCxvE/1VXkd5iE2UQAAAAASUVORK5CYII=",
+    "price": 25,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 0,
+    "tuc": 7,
+    "incPDD": 3
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  }
+}

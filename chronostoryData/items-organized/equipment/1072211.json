@@ -1,0 +1,49 @@
+{
+  "id": 1072211,
+  "description": {
+    "id": 1072211,
+    "name": "Blue Rivers Boots",
+    "description": "",
+    "chineseName": "藍色水晶靴"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAcCAYAAACK7SRjAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACOUlEQVR4nJWVgbWrIAyG4zlvAVawI/BGoCPYEewIOoKMUEeoI5QVHKGu4AjcBA030qrcnGOxoF9+kxD+Qb755H9x9sIZPAKfz2ec1FrD5XLxZw724J6BzrkwwWPTNNC2bVi73W6HDr7BPUPpmuc5LnRdF8DS2V+UezRStJkkZ9M0gbUWlFLBIV1n6iX8A8xxHoYhjGVZBidsZ+o3ygkiE0cgAlICx3EM9zyfo17CC3ro/X5HiHRARg5Sk19yqJzVV1UVgDEM838oFYYFRrDQxXlS/hd4gdUQypAdXO4W4Sos+peGxrVgpy6+IKvpVDk7aAdMVo3xrxA0YPmNDgr7gBdcAdSSXA5TXdfQ9/1H3Pd3qGngVSmw+L7TFUrEz+/vMGsE10tYZFmue2DjYA9egL36K+qEUi+XoqROMJkOJlGC7ICcpQ6OektwAM3qAMMC2sQEphXFDmRpnjWuxQGpRnClZoTqsEAJJ+O48yirJ6flFhhvD64HhYnjTSWV76nP7uek1BiT9Syrz4GHLklq2eROpXtWXc1DiKDBq82AR7DsK6xMjgRO7VR5CuYGtgGrHuQ+LZbGelgtnjtk2mZl7MMmWpdvVP7LFtit83jEkcn4puGgtboc4Gp/RUvQ5rCgn28tl0HcfmUCV/DhSfSROAYzVNbxw/Tg8IOOwAz3HiNwX/tFeiBIMFkueBOWRzfCvf3+EK0FQ2oumOEFlg6qHxEiVohi9DI6kNAssFQeHGBQkuWPMzMLyvYDwSie3AjSDaYAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACaUlEQVR4nJ2WgZWyMAzHw3u3QG8EHKE3Ao6AI+AIMAIdQUaQEewKjCAjfIzQLymkFypoubxXi1Ty6z8JqV+Qbi76nh14Fj6BgvP7/R5uaq3hdDq5I7A9kGPn1lp/g+e6rqFpGr92uVySYVsgxwAa0zSFhbZtPUSCUy0GOTTa6eomgcdxBGMMKKU8nMYRVRL0AuG89H3v5zzPPZDtiKqVInIok05OyTklfxgGf833j6qSoIweeD6fwaGEkREsNqkwWRGrKsvSOw+hmn4gVxg6GMBAG+6Tor+CMqwqX9oMO10NgpRfdA8NtW3AjG14QFblIUUMa3pMdIX5KtFpjyU9WMjMDR5wBlBzYXAoq6qCruve5mm/MxQ1PEoFBn1ZXeLWMUTdFSaNkGoOnSz15R3bhe2BMjBnd8b9Q67noaggRhiLFkZR1gwj8DvYu17nYVAvMAwd6CIkP65Mhu2V+6emOsNIDUJKNSFA+wUqFjLOE897VZhyTGSYHwe2A4VJ5xdYKkpRlXwekYKiKJJ+u6UqBeS7Oalgkx2CrllNOfU+ygWO5iAoQGSf4x3LmSDv7KOiGMLNdQVRHcj+kM0HQHLVOe7k8dEgc+Vf2GX5Qq+XfYXsgcIxTibzEYeM1qq8h7P5FbO369XBRx9bxwQ75SNDJn+BfC8/V8Lfqtsy6CXpDGGAfE9uRQcWhS4Q7LKgYW2TmP0gkHMYpevSv+LDTULIIojZgEgYDQrJGEJ3awe4NttP0Jo3JAhIB+tQbSkKRqBvLMd/7j6gQ7FCHgs9zxYkgIy3JB3G16vxtVx4GAYu2sfLf4SfhN1vwv8DFHe0/np3LmcAAAAASUVORK5CYII=",
+    "price": 110000,
+    "reqSTR": 270,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 80,
+    "tuc": 5,
+    "incSTR": 3,
+    "incDEX": 2,
+    "incPDD": 48
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 48,
+      "min": 8,
+      "max": 88
+    }
+  }
+}

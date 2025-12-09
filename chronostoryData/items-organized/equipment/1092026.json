@@ -1,0 +1,43 @@
+{
+  "id": 1092026,
+  "description": {
+    "id": 1092026,
+    "name": "Bronze Kalkan",
+    "description": "",
+    "chineseName": "青銅圓盾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC10lEQVR4nJWXDbHqMBCFw8wzUAuxEAu9EngSQAJIoBJAwqsEKuGthViIhN49aTZs06TAztxpb0rz7e8J/DHf29xYP3yzyafgDJvn2RB545w142Mylq/TNJnr9awdeuvEO/AssNIAJU8RDLvd7vmZcqLpwB54FmDwIS92totXAAUKc/Z1L04kB6rwFjhCNXCaKAORWm3jOBpzPGYHxAk40ILXwCuoAGm8pitv+Pwf6yxQG8jQg0znHK+sHWjBS/AGCqDl9NqUYp+e2a7beByIP08vB/bgGtyEcmX19uadwYElH214tcY16CviOqzMiMD7/s7BbF8S8KaZalBtPtQjx2c1XKyMehPxOto11LfC3YE/hrM5XbZRZ7COtmYZ6lLXJuVy1pmpc8axfyFsHdNRl+BZKxPmFCOzeBzWNWXo7XYxNPBz/qPAkRkyl/vFDI+Bx6qRfp4Ajybj++e/p/n5+zPHiGUmYRAHzGnLAHWX9M/gYpOP5wUOp73ay6cMoB9K0YlgLfjiiJ5TaSSnJLJmgHqV7pDek/qeWN1EkCK4FPzdzYfXlcKrfgDabv99QFGSDC4FP2pvNSIX64oUCxQ1FpNNS+ujki3OHTlqomkB6/xD8mJ31Tzm7kUtx/Njte5ui7OBpup7RD1nNNU7XQE+YKgx3HKqkALrOcbIICrAJQKYQNXJuJ6GDlpvI5QW5w5VyYTI1+YPc4qRQT/kLHC2SugqG72rrm/AS9THJeVmmedSMiEaPrRVTEfr+lPu7hp4k24ddQ3+GdSpdc8lib3RPp0Ax6kCndXwT4ECbUVbgldRY+gh7hqeIZzm1oY1aBltCW7CYTUHWkDYHrQGrsJh4kAUfN5U1iEOmFOTJFZnogVtgVfwGIlyAKdMKfgQB6vmSUSiBd0DZzhu9Jd16VMR/HwCqe5KwCb0HTi/qH+e4DyFieBDe5UivQV+Ct5shENcP1DAr360/QJetyiLOTQIegAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADBklEQVR4nJWXjXGjMBCF1zPXAFcCKUFXAi7BLsGU4JRgSrBLCCWYEk4lnFpQCdw+oZUXIflnZxwSYfTt7xP5RZ/bXFnffbLJu+AEm+eZrHVkTEvjbaKWr9M00fd3rx166cQr8Cyw3AC1zgYw7HK5pnvKiaoDz8CzAL3zabFpm3AFUKAw0z5+FyeiA0V4DRygGjhNNgGRWm3jOBIdDskBcQIO1OAl8AoqQDt+xytveP8b6izQ1luyN0uNMbyydqAGz8EbKIAtp7eNKXbxXts0G4+95e/bhwPP4BpchXJl9fb0yuDAko86vFjjEvQRcRmWZ0TgXXflYLYPCXjTTCWoNufLkeO7Gi6WR72JeB3tGupq4T6B34aeTudt1Amsoy1ZgprYtVG5TGtoagwZ9s/7rWM66hw8a2XCnGJkFo/9uqYMvVzOZAe+zx/rOTKydL6eabgNPFaV9PMEODQZ/37/udP+uJ9DxDKTMIgD5rRmgJpz/GMwocnHfoHDaaf2cjED6IdcdAJYC744oudUGskoiSwZoE6l28fnpL4nVjcRpADOBf/p5sPjav2jfgC2zfPnAUVJEjgX/KC9xYhMqCtSLFDUWEw2za0LSrY4d+CorZ0WsM4/JC90V8lj7l7Ucuxvq3VzWZz1dio+Z23HGY31jleAdxhqDLecKlaB9RxjZBAV4BIBTKDqZFxPQwOtbwPULs7tipIJkS/NH+YUI4N+SFngbOXQVTY6U1zfgJeoD0vKaZnnXDIhGs7XVUxHa7pT6u4SeJNuHXUJ/h7UqHXHJQm9UT+dAMepAp3V8HeBAq1Fm4NXUWPoIe4aniCc5tqGJWgebQ6uwmElB2pAWAH6uxYxDIX8Yvg/DYeJA0HweVNZhzhgTilKrM6Egh7xKJYovsJosJz8+MKR4T/ymqodwCmTCz7EoVXzJCIRoX0pO6WIxXqGB7J+WZc+FcFPJ5DqrgiE7WOE+rMBY9Fl8D/4wQ6kcxLnKUwEH9qrFEnsi9ZvhZtOzCP2VH6NTN2IQ1zfUMCP/mn7D87uNWhGReaXAAAAAElFTkSuQmCC",
+    "price": 240000,
+    "reqSTR": 280,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 90,
+    "tuc": 7,
+    "incDEX": 2,
+    "incPDD": 66
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shield"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 11
+    },
+    "incPDD": {
+      "base": 66,
+      "min": 21,
+      "max": 111
+    }
+  }
+}

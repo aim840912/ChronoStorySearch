@@ -1,0 +1,19 @@
+{
+  "itemId": 1002640,
+  "itemName": "Blue Sun Boat Hat",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 7140000,
+      "mobName": "Ghost Pirate",
+      "chineseMobName": "百烈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

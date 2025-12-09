@@ -1,0 +1,19 @@
+{
+  "itemId": 1442020,
+  "itemName": "Hellslayer",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 8220001,
+      "mobName": "Snowman",
+      "chineseMobName": "雪毛怪人",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

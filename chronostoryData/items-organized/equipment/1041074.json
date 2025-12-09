@@ -1,0 +1,49 @@
+{
+  "id": 1041074,
+  "description": {
+    "id": 1041074,
+    "name": "Purple Shadow",
+    "description": "",
+    "chineseName": "花精之影"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAaCAYAAADWm14/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChklEQVR4nK1WgXGjMBA8Zr4BWuBLgBLsEuwSTAlQApQQl2CXACVYJTwlRCXotRKCQwihyWQzmSj4fLvau5P4Q2lQgWdZYuxRnMGZAJNsGD40TZN5MI6j+ft+P5WXfIkFEC8nSW1f+3HJAhRPxoh3AjmxH981X1ERRwJ25I74Rg9600bEjryu72Zdlhc6w6EDeZ6TEGIhL6ikiYQh77rOxLRtS5/PP7OWUm7IES8EXLhEXQgJMLsHOQfIHbEhKIoNMeBsv5DbuRXhYpMdeD6fS3I4wYFkzp1YbK49KLTsieIICni9vuYdCer73qxRe1jO7T+K5YAbXuOeCxDC6oa13D4nwq3RD0exAFyQJx4EBcDO0Bopm7xjgbFYGw8RM9LH0DWVD68dorEcKMNIY/IUZHqUNscp7EaD4cd/7saOk+kzUPd/GoJjCJt72RoCIEQOFHlBN9kQasFrjZEtzDfOZUTvgjIvqfl+kKh1ylHvS1oS0BmipeZrrfdNZz87KkNUgJCC7ll9uovt7qU5ATSZdrAwAijg3qkAM796zNZTLSZgdcUX5srApiEqQPExm21bRISSWBL76SrCPrEurH0QKkN4DL15tokeFLJyFTUt9GjCmURZf47LEO0BEK+JNFXgIJgMq5zF5LtS+GXwXeAC1I2aIy3Zm3rVUEcxCCvYiU6CE6BcnWG/JBGKzfTZEHo33MT4/2O3fBpYHxkXIEDhpaKt6g1xM3Q0XqszgiQ0n4b6ar0psVnkv14rtZRgUMNys+FSEWPQhR/jpey1DQ6efxGA+9y9yYpJUFmknuZpQH4Q4xdvTi4/BGRV9VfxF0uc/fodDssfWe4hmt85kKEe/hfp93CY/z8boHOC3BhA1QAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAYAAADLnm6HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACyklEQVR4nJ1WgZWjIBAd37sGvBLcErSEpIRsCbEELUFL2JSQlKAlhBLWEo4SWD6Ijgjo3uzzyeJk/ufPDPCHzpkKzGUnfWN+xo4ImGDD8KZpmszEOI7m/Xo9lBd88YXBX06S2r72/U4TUDwYA94R5MC+f9d8JUnECOzAHfCN7vSiDYkdeF1/mnFZXujIogrkeU5CiAW8oJImEga86zrj07Ytvd/fZiyl3IDDXwiocEmqECJgVg9wbgB3wAagKDbAMCf7hdzKLQnne1qBx+OxBIcS3BDMqZPyzbUGhaY9UdqCBJ7Pr3lFgvq+N2PkHpJz+WO+3KCGV7jHBISwvCEtl8+RcGPUQ8wXBhXkgQZBApAzNEbIJu+YY8rX+oPEbOfb0BWVb145JH25IQ0jjae7INOttNlOITcKDH/+vGs7Dqb3QF3/5yzYhpC5l60BgIXAYUVe0E02hFzwXKNlC/OLYxrJs6DMS2r+3UnUOuSo1yUtCOAM0JLzNdf7orPfYmlIEhBS0GdWH65iu3ppdgANphUsDAEKqHdIwPSvbrN1V0sRWFXxibk0sG5IElC8zWbZFhKhIBbEfl1J2BmrwloHoTSE29DrZxvoTiEpV1LTAo8inEGU1SeehmQNAHgNpKECG8FkUOVMJt+lwk+DrwInoG7UxLhkL+pVQx2lTFjCjvQpcwSUyzPklyRCvpneG0J3w42P/z9Wy7uB1ZFRAQQULhVtVW+Am6Gj8VodAZyy5t1QX60nJRaL+NdrpZYUDGpYTjYcKmIMqvDf9lT22AYGj78QwHnubrJiElQWyW00p18a4gMYD25OLj4IZFX1ofjFEnu/vsNh+Jf2PZR77yO76vhDJH7mFMiQD++HH0SbvTQEHCIhA3Otju+30K4NXYE5sIK9Odiv5Z9J1fN7mh/yCXDjIP6KQisMffPH/hMl4FgeSZ1HyKQI7/x/AIigiEsBU5qgAAAAAElFTkSuQmCC",
+    "price": 45000,
+    "reqSTR": 0,
+    "reqDEX": 80,
+    "reqINT": 0,
+    "reqLUK": 110,
+    "reqJob": 8,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incLUK": 3,
+    "incMMP": 10,
+    "incPDD": 34
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 30
+    },
+    "incPDD": {
+      "base": 34,
+      "min": 14,
+      "max": 54
+    }
+  }
+}

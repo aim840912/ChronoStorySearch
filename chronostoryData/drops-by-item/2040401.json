@@ -1,0 +1,140 @@
+{
+  "itemId": 2040401,
+  "itemName": "Scroll for Topwear for Defense 60%",
+  "chineseItemName": null,
+  "totalMonsters": 12,
+  "monsters": [
+    {
+      "mobId": 2220000,
+      "mobName": "Mano",
+      "chineseMobName": "紅寶王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5220003,
+      "mobName": "Timer",
+      "chineseMobName": "咕咕鐘",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6130101,
+      "mobName": "Mushmom",
+      "chineseMobName": "蘑菇王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8220000,
+      "mobName": "Eliza",
+      "chineseMobName": "艾利傑",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7130010,
+      "mobName": "Death Teddy",
+      "chineseMobName": "怨靈發條熊",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230113,
+      "mobName": "Tick-Tock",
+      "chineseMobName": "鼬鼠鬧鐘",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6130102,
+      "mobName": "Separated Pepe",
+      "chineseMobName": "孤單企鵝王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6130103,
+      "mobName": "Pepe",
+      "chineseMobName": "企鵝王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6230601,
+      "mobName": "Dark Drake",
+      "chineseMobName": "黑龍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6300100,
+      "mobName": "Buffoon",
+      "chineseMobName": "貝爾芬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7130100,
+      "mobName": "Tauromacis",
+      "chineseMobName": "月牙牛魔王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8143000,
+      "mobName": "Grim Phantom Watch",
+      "chineseMobName": "怨靈女巫",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": 1002093,
+  "description": {
+    "id": 1002093,
+    "name": "Blue Duke",
+    "description": "",
+    "chineseName": "藍鐵頭盔"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAhCAYAAADOHBvaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADF0lEQVR4nLWWgZGqMBCGl5lrIC3QAq8ErgQswVcClqAlaAlagpQgJUgJpoTc/pssE2LgxOfbGyYmwH67/yZ7fNFnzPFVrHnhE+DV0E+A3cz810DWgNPMnDGGrLVL0Fk11oCL1HnZnGm4bAB31fZK/el7LohYmWItOIa7en+nYRhkUX+XzZED+evKLQd02oxAU7Vk+0McyHs1NpypjPxnqSSC2iw5ZK/aG48+IFO3fj2Bvgsu7GXjBjqTKSuiqhaQhzFk8KOp9zzwen96gr4LFhPQYCVbv72sZMciyAAohcwps/HeBRe22zlCVgIclBbmvTxkqi0r0oR7POCd8P6/nWMBmCBvWFKpy8aPuN/v0jfdu2BnkIlHkYrtbQjBdDIzpuJ6H+XYUXS81oJFqv1+T6fTyTsGFjvX8O7G5VfGFyxUQem5LEFqwF+WWoD3+50ulwv1fT/eqBufuV+z1AsTQbDIUWdjqDYc9wpYgMfjkRoGdF0njQIXHG63WyrLUgAKL1lqYzgAquUZ3OOmgttFgIotgd31ehWIOGQAHKXQqqomCrRtK2WoiIM0UMNIU+kPf1RmtwR2j8djlBXO0mwBhQp4RoPDHOsICnDI6+txjH3P9uoJFM5USq0XHCPTFKrlkNYZKRF2tJYuC3ZN01BqcIBLM1bZU1M14vIEePxfan5zpU7ruia6fNPOVmP2+pwCcGlgWEPGMKyzMuMxokyNZTOpfNOUD7n4xgDhPGdPfrzla6z1mvx+bnlj/cYjE2TWNYViDJtw8jWiYAc58QK6EhzpzsR61125M1lqymF0rBDcn8ksuw9SsIA0C83gdrvR4XAQ+ZccpwCt95JlN1d8fFTK3zKIDVBtl3NBAOzO57Nkq451p8bndK2pLw0iBDA9x3AMSZPP1bcsPm65udpEatQZhjOo51CjjrPW4NCl4nn6e8m+9GGFxlmr3NJ3E4cpLJ6/kjXABTt2muXajbT0nHQ8ttypmEgN6fCwdqI0i9w8ty+0hWp5op39/JWpMK2bftq8YiZ8bahpD88FnIKL0NL+p00+6n8AQzJdJTxlDm0AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAiCAYAAABIiGl0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADK0lEQVR4nLWWgZGjMAxFxcw24CuBFrgS2BJICbkS2BKSEpISkhJCCaGEUEJcgk9ftjjjGDbkstphHBvQk75sLR/0HnN8FWteeAd4NfQdYDcz/zaQNeA0M2eMIWvtEnRWjTXgInVeNicazhvAXbW9UH/8nAsiVqZYC47hrt7daBgGWdTfZXPgQP64cssBHTcj0FQt2X4fB/JajQ1nKiP/WSqJoDZLDtmr9sqjD8jUrV9PoK+CC3veuIFOZMqKqKoF5GEMGfxo6h0PvN4fH6CvgsUENFjJ1m8vK9mxCDIASiFzymy8V8GF7b4cISsBDkoL814eMtWWFWnCPR7wTnj//86xAEyQNyyp1GXjR9zvv9I33atgZ5CJR5GK7W0IwXQyM6bieh/k2FF0vNaCRardbkfH49E7BhY71/DuxuVXxhcsVEHpuSxBasCfllqAt9uNzucz9X0/3qgbn7lfs9QLE0GwyFFnY6g2HPcMWICHw4EaBnRdJ40CFxxut1sqy1IACi9ZamM4AKrlGdzjpoLbRYCKLYHd5XIRiDhkAByl0KqqJgq0bStlqIiDNFDDSFPp979VZrcEdvf7fZQVztJsAYUKeEaDwxzrCApwyOvrcYh9z/bqCRTOVEqtFxwj0xSq5ZDWGSkRdrSWLgt2TdNQanCASzNW2VNTNeLyBHj8X2p+c6VO67omOn/Sl63G7PU5BeDSwLCGjGFYZ2XGY0SZGstmUvmmKe9z8Y0BwnnOHvx4y9dY6zX5/djyxvqNRybIrGsKxRg24eRrRMEOcuIFdCU40p2J9a67cGey1JTD6FghuD+TWXYfpGABaRaawfV6pf1+L/IvOU4BWu8ly26u+PiolN9lEBug2i7nggDYnU4nyVYd606Nz+laU18aRAhgeo7hGJImn6svWXzccnO1idSoMwxnUM+hRh1nrcGhS8Xz9PeSfejDCo2zVrml7yYOU1g8fyZrgAt27DTLtRtp6TnpeGy5UzGRGtLhYe1EaRa5eW5faAvV8kQ7+9cDWGFaN/20ecZM+NpQ0x6eCzgFF6Gl/aQh2zGCWGqcLxMutdxZmH7N/TO7MH94/i+Ta2I7y2EhvQAAAABJRU5ErkJggg==",
+    "price": 25000,
+    "reqSTR": 90,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incDEX": 1,
+    "incPDD": 40
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 40,
+      "min": 20,
+      "max": 60
+    }
+  }
+}

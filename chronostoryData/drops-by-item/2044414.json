@@ -1,0 +1,52 @@
+{
+  "itemId": 2044414,
+  "itemName": "Scroll for Pole Arm for Accuracy 10%",
+  "chineseItemName": null,
+  "totalMonsters": 4,
+  "monsters": [
+    {
+      "mobId": 2220000,
+      "mobName": "Mano",
+      "chineseMobName": "紅寶王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3210800,
+      "mobName": "Lupin",
+      "chineseMobName": "猴子",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6230400,
+      "mobName": "Soul Teddy",
+      "chineseMobName": "幽魂發條熊",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6230600,
+      "mobName": "Ice Drake",
+      "chineseMobName": "冰龍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

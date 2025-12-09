@@ -1,0 +1,19 @@
+{
+  "itemId": 1002064,
+  "itemName": "Bronze Pride",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 2230102,
+      "mobName": "Wild Boar",
+      "chineseMobName": "黑肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

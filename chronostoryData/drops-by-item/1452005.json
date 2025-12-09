@@ -1,0 +1,85 @@
+{
+  "itemId": 1452005,
+  "itemName": "Ryden",
+  "chineseItemName": null,
+  "totalMonsters": 7,
+  "monsters": [
+    {
+      "mobId": 5200000,
+      "mobName": "Jr. Sentinel",
+      "chineseMobName": "小石球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230102,
+      "mobName": "Wild Boar",
+      "chineseMobName": "黑肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230111,
+      "mobName": "Rocky Mask",
+      "chineseMobName": "石面怪人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2300100,
+      "mobName": "Stirge",
+      "chineseMobName": "蝙蝠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3210100,
+      "mobName": "Fire Boar",
+      "chineseMobName": "火肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230102,
+      "mobName": "Lorang",
+      "chineseMobName": "紅螃蟹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5130101,
+      "mobName": "Stone Golem",
+      "chineseMobName": "石巨人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

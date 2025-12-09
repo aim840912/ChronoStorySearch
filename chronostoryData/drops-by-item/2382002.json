@@ -1,0 +1,19 @@
+{
+  "itemId": 2382002,
+  "itemName": "Ligator Card",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 3110100,
+      "mobName": "Ligator",
+      "chineseMobName": "鱷魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

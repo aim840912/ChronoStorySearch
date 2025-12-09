@@ -1,0 +1,30 @@
+{
+  "itemId": 1302064,
+  "itemName": "Maple Glory Sword",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 5130101,
+      "mobName": "Stone Golem",
+      "chineseMobName": "石巨人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5130104,
+      "mobName": "Hector",
+      "chineseMobName": "野狼",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

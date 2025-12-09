@@ -1,0 +1,49 @@
+{
+  "id": 1072134,
+  "description": {
+    "id": 1072134,
+    "name": "Orihalcon Hildon Boots",
+    "description": "",
+    "chineseName": "紫礦將軍靴"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAgCAYAAADnnNMGAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACxklEQVR4nJVWi5WjMAwU710DXAm5EtgSaIGU4JQQlwAlhBJCCaEFWqCEUIJXY5BPGEOIdnkYCDMa/cwfOm/u4Fl29OInkgB8v99pHMdwwIqikGt3RLRH4jQwrO/7sJ6miaqq8mfY5XI5JEqRuNfr5QHatqVhGMID3CvLkvI892shkfNZJa6ua2qaJoALADxX4Vm9BNLlt0k1msQ9Hg8PjtCIARwHDMoAiPBoJZ+IVkrg6e1282sogpV8r2dieI9QQSXAhUzAY3UpEvd+v/3i+XxSe+2otwPVL0PdknAB1V7jfiIf++HCC/an8WuTG/9yc22puBcBNGVCvCg5ri4QvNyTa5Uv2uVmx/+2o4vZhkRXmKjcK2MhyXrq3MSgeSXSOB9TyaQTdW3viay1HlCUqWQfEunEZ3+vmWPjClhCUeazMvpfWZpE8qHDKQr3SGZDe1h0OFcUX9xorraSKhrzIZCI97ohpdq4DVZqYpIs+8k2g9A9nSdux5Zsbn2p7xWDVKLul9RYiRPnaMmTscbnqhmbUFUxgZjOz5lRn7F5dQ/+gyE0qeZL5WNPSdJ8QfwTlxE9G2bZnmFC8IhyZ0m8GnhaT3W4mUq+2BKur5S4oCSfC0BXWex9HM5TO6Mn4EYdLxPL76gtmITyzSTGtNYT/IgklLCA+wO9My4EkQLZKWMCmWebTcsD0wLM4Zm4anseKxO/IARy6JDsrDd9MhPAwUk8567nkQ9wjBo96uOdM/Z+P1zwHhO4mglsMY8UGRcCGBN8KuWwaXkV/TyzcAYBwMV7/UERh+dIxVrJDx939Bl+uPrU2fSBJog+Lo43LezjdPVQIcFxWGLv90o2ReLwEWf7G5nBrB5qBXE/eMcWgiMVQQk8Rqe2y76ry1NGhzEmXGvvPxEISYYhhgsQiSHW2nTodCg/EQQlmujIQPANeExymugbcLFfeYgPSBJ0OKEAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAYAAADjaQM7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8UlEQVR4nJWWjZGjMAyFxcw2wJaQK4EtgSuBlEBKiEuAEkIJoYTQAi1QQijBp2csnzAQvNr1xPz585Ml2V+UbvbDsyxlgDNYANzvd5qmKTRYURRybVOARzCrAbBhGEJ/nmeqqsr9wi6XSxJwD2Zfr5cbqOs6GscxPMC9siwpz3PXF5j8/laZbZqG2rYNEBkISpTbVh8B7t/9qE7D7OPxcBC4TAwQNBiUYmC4TStLBa6UYea32831oRBW8r2BJwA1cCFUAyJQgcRqP8Hs+/12nefzSd21p8GM1Lxq6n1gyOBaBe7vrNe5G/Gh+Wldv85rN0h77ai4F2HwPZMJeGVp0QjQyz45xvmi8zd7/jc9Xeqtq3REiuqz8BdYNlBvZx48r0Qqr9dcMnymvhsc0BjjBhalKiiSgDpAsu9rZtk4UryLynxRSv8jUcNkvbSbRfEZbDGkl0HF4Ajkixst0VlSRVM+Bpio0Ykt0cnps6suhmXZT7YpuPZp3QS6qSOTG5ciR0EjkbuXb3vlKp6RJb+OtandWrZTG6IwBontrV/KFpOxObUP/oPBZXtJ/Gm9UmHOXOD88RcTvGpCrTwyVBwufUFdKsypw8ybuQk394JEzLtxNUgqzAZl+RIoOipjNUduTtqpHYgTfrrM7JaeuoJhlG8qP3YHvWOkwELoC8Q15N7kQZEi2bljUFwvN5unA5AHsNtmjvaBy9XMHwpImnbVQf8wzxYQJjyLEq4ivNUAghKmt5h4Jz9ScwRb1KDiVwvIFEupkjIkA8egsxSIYYuqYamJ+AUIEFGjDz5KQbKqtbIfbnfkKz5YHdE2eaRB0SEobfPEOYOubsgQCLG7YjU7ERhX59WCAmZxGDXDjeqxXr+pFMX55CboQX4SfynshCuQhNzslEEBMr/z5wEd1lKS6roO11qNf89EIA1Ew0sTYJkvlg4ohrXQpl2qXUxL/O5tbpvyL2v2zcA3nRhACmJ2Bo37q/alHiQBaYnbzTw+XIf+PwowJUjqxZ9XAAAAAElFTkSuQmCC",
+    "price": 55000,
+    "reqSTR": 160,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 50,
+    "tuc": 5,
+    "incSTR": 2,
+    "incDEX": 1,
+    "incPDD": 30
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incPDD": {
+      "base": 30,
+      "min": 5,
+      "max": 55
+    }
+  }
+}

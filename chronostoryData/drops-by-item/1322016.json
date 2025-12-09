@@ -1,0 +1,30 @@
+{
+  "itemId": 1322016,
+  "itemName": "Jacker",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 4130100,
+      "mobName": "Copper Drake",
+      "chineseMobName": "土龍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5130107,
+      "mobName": "Coolie Zombie",
+      "chineseMobName": "殭屍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

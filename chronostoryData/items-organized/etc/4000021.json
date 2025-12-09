@@ -1,0 +1,27 @@
+{
+  "id": 4000021,
+  "description": {
+    "id": 4000021,
+    "name": "Leather",
+    "description": "An animal's skin that's been cut away",
+    "chineseName": "動物皮"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACeElEQVR4nLWX4ZWrIBCFJ+e8BmiBFtKCLeSVkC0hKSEpISlhLWFtIS3YgiWwXGBgQFA37s4PE9Hw3Zm5oPlH28MU5wfaGVvh5vNypnGa4sD12Zu9AtbgGUApRZMVoOz32/m0W8AS3GX7//505bafhHMIGMcRSnYLWC371+3iskXJ8Ym0tdaxBRsFVP2yCEeGyoK00nRUAW4DR40K2HMLLgFShGGBMljscubosRUwakYq12+IYOs1Js6usVeEUCdsCX7ARJjAmUypJMB9J+IR+f1hfYGqQDiFSr1sAgB34XeIwV5b6/mBM3lAhAOk5QYRPB3G+cz5YRqJK1WCObasc/TQfOQlc3E7db6kUkAU5MfZmIPYI1jIFrg5HzVXMJoOce2HXAx6jJVRmQRzIJ6vdHV1kzkJsBecytcVN19r1RGGBBhZhyosut1cumMs2xQOeevyPpZipCAGy1h0+314OQHeTPOYeygfQItKIGe9Bs8FiF7HyQvckhhcC/2Om1AJL7dBunQdEVXAE4WlFxCKZtVhMcJk2RYs4eZxSuZIj8+pmjXvOSxA6mMolp2t3Axag8+g7liAeassBUj+FIz5XABLuMt6zEAqwtLUAOeruBTAY33R3xY8llsr1bxxLGu7IEBRe54STh9937whVSTvfel0rf3ZVNfXhLdKkxmwDIZ4qAffh2y7XX27aS41BteyjhHWGNoVqvej16loOAnkSAaUT+4wolJv3wEzPGaLSaQAacCRdCYgPuXo/Zj13AowtRu98dK5du90tCtqe3u1fBCV+6Cyn/4CvBUHrooUsbfsPwn/ShW8AUvc/dvM3/xpaAiQ3nj779I3KIdWZn3Y7isAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACsElEQVR4nKWWjbWjIBCFJ+dsA7RAC3kl2EK2hKSEWEJSQixhLWFtISWsLVCCy0UGBgT0vcw5/oDId+cH9BcdtyVrn+hDOwpf/tyvNBsTOvphXD4VsAdPAEopMlaAsveP6+VjAS248/b3c3DhtldCGwLmeYaSjwXshv3v4+68Rchxhdta65CCgwKK9dKEw0NlQVppOisPt4azRgRs24JzgBSxsEBpLLbtOXJsBcyakcrlGyK49CoTJ8+4VoRQJ6wFP2EiTOCKTKkowN0TcY+8f9m6QFQgnHyk3tYBgDv/Hmyyz/ZyfmJPXhDhAHG5QQRPh35uuXowM3GkcjDbkXWOHC63NGTOHpduDakUEASt/VyYk9gjWMgR+HI9a45gKDpYP06pGOQYK6MwCeaADe/4dHeTuQjwKjiGr8sG96XoiIIEGF77KDSrfbl35xA2409p6tI85mKkIAZLa1b7c3o7AWsxbW1bQ2kHUpQD2es9eCpA5DpMnuFaYvDM5ztsQjk83wbp3nVEVAAb8kvPIxRtosNiRJElW7CEL69LLI74+TRFr3nPYQFSH0Ox7GzkNtASfAN15wzMW2UuQPKNL8yhAZZw5/WcgFSAxakBTldxLoD7xiy/NXgIt1aqOnDOY9sQoKg+Tw6n2zhWB8SIpLnPK13rtWXK+qrwWmiSAsyNISt0BT+nZLvd/bupLjUGl7wO5tcY0uWj963fqVBwEsgWC1B+uX2Pirn9CZjhwVtMIgXIApxJJwLCV45+bpucWwFLaeBaeLGt3T9dMqRV4kWNpb2dxSh5taL+pXWw2U/PO2AjjipcVY6bFfDCAClCuFT+CKTg2R+mBGeQFlfuhw32uHJtoCSe69/MQPWwV8ui5nntRbR73FgBD9/XF8bm9/lRhHNoks90ReBXod802psI/AfrE3GMf8EW6wAAAABJRU5ErkJggg==",
+    "slotMax": 200,
+    "price": 100,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

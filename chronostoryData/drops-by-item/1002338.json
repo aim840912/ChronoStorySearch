@@ -1,0 +1,52 @@
+{
+  "itemId": 1002338,
+  "itemName": "Red Dragon Babuta",
+  "chineseItemName": null,
+  "totalMonsters": 4,
+  "monsters": [
+    {
+      "mobId": 6400000,
+      "mobName": "Dark Yeti",
+      "chineseMobName": "黑吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6400001,
+      "mobName": "Transformed Dark Yeti",
+      "chineseMobName": "變形黑吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6400002,
+      "mobName": "Separated Dark Yeti",
+      "chineseMobName": "孤單黑吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7140000,
+      "mobName": "Ghost Pirate",
+      "chineseMobName": "百烈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "itemId": 1382012,
+  "itemName": "Maple Lama Staff",
+  "chineseItemName": null,
+  "totalMonsters": 8,
+  "monsters": [
+    {
+      "mobId": 1110100,
+      "mobName": "Green Mushroom",
+      "chineseMobName": "綠菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2110200,
+      "mobName": "Horny Mushroom",
+      "chineseMobName": "刺菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230100,
+      "mobName": "Evil Eye",
+      "chineseMobName": "火獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230101,
+      "mobName": "Zombie Lupin",
+      "chineseMobName": "天使猴",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230114,
+      "mobName": "Platoon Chronos",
+      "chineseMobName": "進化妖魔",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5130105,
+      "mobName": "Dark Jr. Yeti",
+      "chineseMobName": "黑色小雪球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5300001,
+      "mobName": "Dark Leatty",
+      "chineseMobName": "黑利堤",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8140200,
+      "mobName": "Klock",
+      "chineseMobName": "冥鐘",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

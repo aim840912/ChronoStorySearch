@@ -1,0 +1,102 @@
+{
+  "id": 1041055,
+  "description": {
+    "id": 1041055,
+    "name": "Black Huntress Armor",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAZCAYAAAAmNZ4aAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAClklEQVR4nJ1WgXHrIAyV77oAGcEZwRnBHaEewR0hGSEZIR4hHiGMEEb4jBBG8Odh5AoHkrS643AF6Ok9CdIPKtsU54resynjK54tAU/T9EWfu5G0CQGfgQfAviU6HmtSTROczhja7Gwx+WeMiQMOOstGrlPr8Q4HS/2Xo6a/+wQ6n30jE0jAc8CBLQ4gqGccTCm1bKjrOsz71lB3mn3fg6J/VxUYm2FDdTPv16PNJlxgfPFjG76smz3OuQXcWkvXY0gHK8GPsf3EZk33e0vjYZyBTR6hANyFTMEC7FA24xUAOOx+q5edtzPR5yFNbLPRnn1N1jgaTuHMezWGzABt2zYAgyHP17NLGkga1pu4Bvac6C8Yp8Y1hakQ9xK/O6rJ0Ln/UQfKMHhIrgCeBZ4bQgUG0s57MOSgnUhMJSAM/ifGOIQhwVEzMARTlhk+GzpQJedZJZz3cV5epwmN033beD9tIrPlFjc6+Zs7NzIEwJSeewTPMj72ig7DHPR2odBMYKhHAS4A7aOi1el0mvb7/eIwq0aUwOHhgEHOWs3Rdh2Y6LjlR07c49bfYYCjxH3vlsckZ6i5B19YrxhfPLNtqJs0yMZ3lGsPENk7YyCUnEtYrxs1KzXkHCJJAAKY7zEbPxjcufx6+T3v/KhUDBxl7h7YMsjaGFQqkSdhk1dPMo6gs8wrq1AXvGDy9ZKgLL0AT9gy6EqhKTK+ED8IkDk2CQeotNYLOANIMFGCB4lLqgC48hbub05mCU5lK9Z0rQrv5xpX4r+FUiD2qcxazgfbeDXuuTgfa0cmmHrhe2W7ODsS9y13nVRhlJKQVqoVg9o43BqYQWoxS5DfMH2aTIlx6VD5dy5dW3+vxwMwy/FKUlVI4lmiydp/+Sihyk/3b4EAAAAASUVORK5CYIIA2wF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNmQ0NGQ1ODg4Ny14cG5ubCIsImdpdEhhc2giOiJjODQzNTk5NjBmMjdhYzFlN2MwNGIzZjFiNWE2YzUwZmUyNjllMTM1IiwidXJsIjoiL2FwaS9HTVMvODMvaXRlbS8xMDQxMDU1L2ljb24iLCJjcmVhdGVkQXQiOiIyMDI1LTExLTIwVDA1OjUzOjQxLjA1ODQ0MTRaIiwibWV0YSI6bnVsbH0=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAZCAYAAAAmNZ4aAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAClklEQVR4nJ1WgXHrIAyV77oAGcEZwRnBHaEewR0hGSEZIR4hHiGMEEb4jBBG8Odh5AoHkrS643AF6Ok9CdIPKtsU54resynjK54tAU/T9EWfu5G0CQGfgQfAviU6HmtSTROczhja7Gwx+WeMiQMOOstGrlPr8Q4HS/2Xo6a/+wQ6n30jE0jAc8CBLQ4gqGccTCm1bKjrOsz71lB3mn3fg6J/VxUYm2FDdTPv16PNJlxgfPFjG76smz3OuQXcWkvXY0gHK8GPsf3EZk33e0vjYZyBTR6hANyFTMEC7FA24xUAOOx+q5edtzPR5yFNbLPRnn1N1jgaTuHMezWGzABt2zYAgyHP17NLGkga1pu4Bvac6C8Yp8Y1hakQ9xK/O6rJ0Ln/UQfKMHhIrgCeBZ4bQgUG0s57MOSgnUhMJSAM/ifGOIQhwVEzMARTlhk+GzpQJedZJZz3cV5epwmN033beD9tIrPlFjc6+Zs7NzIEwJSeewTPMj72ig7DHPR2odBMYKhHAS4A7aOi1el0mvb7/eIwq0aUwOHhgEHOWs3Rdh2Y6LjlR07c49bfYYCjxH3vlsckZ6i5B19YrxhfPLNtqJs0yMZ3lGsPENk7YyCUnEtYrxs1KzXkHCJJAAKY7zEbPxjcufx6+T3v/KhUDBxl7h7YMsjaGFQqkSdhk1dPMo6gs8wrq1AXvGDy9ZKgLL0AT9gy6EqhKTK+ED8IkDk2CQeotNYLOANIMFGCB4lLqgC48hbub05mCU5lK9Z0rQrv5xpX4r+FUiD2qcxazgfbeDXuuTgfa0cmmHrhe2W7ODsS9y13nVRhlJKQVqoVg9o43BqYQWoxS5DfMH2aTIlx6VD5dy5dW3+vxwMwy/FKUlVI4lmiydp/+Sihyk/3b4EAAAAASUVORK5CYIIA2wF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNmQ0NGQ1ODg4Ny14cG5ubCIsImdpdEhhc2giOiJjODQzNTk5NjBmMjdhYzFlN2MwNGIzZjFiNWE2YzUwZmUyNjllMTM1IiwidXJsIjoiL2FwaS9HTVMvODMvaXRlbS8xMDQxMDU1L2ljb24iLCJjcmVhdGVkQXQiOiIyMDI1LTExLTIwVDA1OjUzOjQxLjA1ODQ0MTRaIiwibWV0YSI6bnVsbH0=",
+    "price": 25000,
+    "reqLevel": 30,
+    "reqDEX": 100,
+    "incPDD": 26,
+    "incSTR": 1,
+    "incDEX": 1,
+    "tuc": 7,
+    "reqJob": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top",
+    "lowItemId": 1040000,
+    "highItemId": 1050000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 3
+    },
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 3
+    },
+    "incINT": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incLUK": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incPAD": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incMAD": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incPDD": {
+      "base": 26,
+      "min": 11,
+      "max": 41
+    },
+    "incMDD": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    },
+    "incACC": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incEVA": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incSpeed": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incJump": {
+      "base": 0,
+      "min": 0,
+      "max": 1
+    },
+    "incMHP": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    },
+    "incMMP": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    }
+  }
+}

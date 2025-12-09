@@ -1,0 +1,39 @@
+{
+  "id": 1422000,
+  "description": {
+    "id": 1422000,
+    "name": "Wooden Mallet",
+    "description": "",
+    "chineseName": "木錘"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 10,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABzUlEQVR4nL2VjZGCMBCF15lrgBbSQlrAEmiBK4ErQUrAEs4WaCEtpIWUkOOthotA/lB5zBh1NN/bze7mi46Xfayno+G2bSS/ud6UPRLOYK0NjUrj82GRr8B4OQK+CT4CHgR/Gh4FfxKeBOfC5758JzgHbodLS0op7ssME9ngFNx2TU2320hCVIRNm/ZC5/PZBja1XVtPRnUWOAbniAGGEEl3GTgDQaOF4BCcwXraRApBSusZPI4j1VIA4Ee/C7wFn8FOPpjM/XscgauBveAlfAWu224FdnoY2A324fZ36MgY8wSGHBhFh7OHsLoihIE9YAfniKGqqkhMZypk8xQxQFDEQKgDsiKf1XYDQ30wHsiQSRkgKiy40/fPlaN34L7vV2DOzPTEDCTmQDhyHywqQ7Ku75ur50ILGUjMgSj8NInThgiklHz+EGogZcBvx5Ia8M+cf4w/DlL+gx5FuDTgtJoDVX4Rbk24uQZc9CEDOOPlHHA1kKPQbI8aQMqXYL8Gcns/dqsFDcTmQMnQSd3nKwPoCnTEEowi7O+34O6LJWoAEb8LnAtn+RG7OYDU7wWXwDfnANYpK7vAJfAZgP7FNfQquBQ+m+AB8sJV6vQHf1qrGoN6QqsAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACEklEQVR4nL2Vi3GDMBBEzzNpgJSglCCXACW4BVICLsGUgEsILVBCKCG0oBKI9mwRoR+yJ2Y9soABvT3pdHqj/TXf+8Pe8Lk+Sb649uO8J5zB06RoGCfc7xa5B8bfHvAgeA94FPxqeBL8SvgmOBe+7Mv/BOfA5+5S0ziOvC8zTGSDt+Bzcyqp7wcSoiAMeqovVFXVHBl0bupSG52ywCk4RwwwhEiaS8czEDX6IDgGZ/CkB5FC0DhNC3gYBiqlAMCO/ilwCL6AjWwwqdtzLIHJgWfBLtwDl3XjgY3uBp4G2/D5q2tIKbUCQwaMpMPaQ+hNEsLAM2AD54ihoihI6DUV8rSKGCAoYSC2A7IiX1Q3HUNtMH6QIrVlgOjBhDt8nq8cvQG3beuBeWb0L2Vgow7EI7fBolAky/I2+LhOtJiBjTqQhB+0eNoQgZSS1x9CDmwZsLfjIzlgrzm/jA87Kf9A9yR0DRh5daDIT8JQhVtywEQfM4A1duuAyYEcxWp70gCm3AXbOZC791OnWtRAqg48UnS2znPPAHYFdoQLRhK2t1PwnW/XUhRQCm4G+NAGfmAAEW+AK92kM46yemXdB+FFoK0iNnUAU2+B2wDYNoA23ZsKwQ1MWD0PrOsAnzR2HUCvZwWPr+RPtRu5p1jkoQ/PTOlHPoYs8DnwrnvttiDcTI1twI3oqA180y2rj4HvY/feDPwCMvrFB0AcyO0AAAAASUVORK5CYII=",
+    "price": 1500,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 13,
+    "reqLevelEquip": 10,
+    "tuc": 7,
+    "incPAD": 32,
+    "attack": 5,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Two-Handed Blunt"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 32,
+      "min": 31,
+      "max": 33
+    }
+  }
+}

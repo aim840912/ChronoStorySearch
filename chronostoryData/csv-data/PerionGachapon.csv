@@ -1,0 +1,201 @@
+Chance,ItemID,Name,Percent
+33333,1452025,Blue Metus,0.13%
+50000,1002406,Red Arnah Cap,0.19%
+50000,1002407,Blue Arnah Cap,0.19%
+50000,1002408,Green Arnah Cap,0.19%
+50000,1050106,Green Arzuna,0.19%
+50000,1050107,Blue Arzuna,0.19%
+50000,1050108,Red Arzuna,0.19%
+50000,1051105,Green Armis,0.19%
+50000,1051106,Blue Armis,0.19%
+50000,1051107,Red Armis,0.19%
+50000,1072227,Red Arnah Shoes,0.19%
+50000,1072228,Blue Arnah Shoes,0.19%
+50000,1072229,Green Arnah Shoes,0.19%
+50000,1082158,Red Arcina,0.19%
+50000,1082159,Blue Arcina,0.19%
+50000,1082160,Green Arcina,0.19%
+50000,1200004,Diamond Arrow for Bow,0.19%
+50000,1201004,Diamond Bolt for Crossbow,0.19%
+50000,1452019,White Nisrock,0.19%
+50000,1452020,Golden Nisrock,0.19%
+50000,1452021,Dark Nisrock,0.19%
+50000,1462015,White Neschere,0.19%
+50000,1462016,Golden Neschere,0.19%
+50000,1462017,Dark Neschere,0.19%
+61111,1002402,Red Arlic Helmet,0.23%
+61111,1002403,Blue Arlic Helmet,0.23%
+61111,1002404,Green Arlic Helmet,0.23%
+61111,1002405,Dark Arlic Helmet,0.23%
+61111,1050088,Red Ades,0.23%
+61111,1050089,Blue Ades,0.23%
+61111,1050090,Green Ades,0.23%
+61111,1050091,Dark Ades,0.23%
+61111,1051082,Red Anes,0.23%
+61111,1051083,Blue Anes,0.23%
+61111,1051084,Green Anes,0.23%
+61111,1051085,Dark Anes,0.23%
+61111,1072203,Red Ades Shoes,0.23%
+61111,1072204,Green Ades Shoes,0.23%
+61111,1072205,Dark Ades Shoes,0.23%
+61111,1082125,Red Focus,0.23%
+61111,1082126,Green Focus,0.23%
+61111,1082127,Dark Focus,0.23%
+61111,1452017,Metus,0.23%
+61111,1452026,Black Metus,0.23%
+61111,1462018,Casa Crow,0.23%
+61111,1462022,Yellow Crow,0.23%
+75000,1002275,Blue Falcon,0.29%
+75000,1002276,Red Falcon,0.29%
+75000,1002277,Green Falcon,0.29%
+75000,1002278,Dark Falcon,0.29%
+75000,1050075,Red Pris,0.29%
+75000,1050076,Blue Pris,0.29%
+75000,1050077,Green Pris,0.29%
+75000,1050078,Dark Pris,0.29%
+75000,1051066,Red Pria,0.29%
+75000,1051067,Blue Pria,0.29%
+75000,1051068,Green Pria,0.29%
+75000,1051069,Dark Pria,0.29%
+75000,1072182,Blue Wing Boots,0.29%
+75000,1072183,Red Wing Boots,0.29%
+75000,1072184,Green Wing Boots,0.29%
+75000,1072185,Dark Wing Boots,0.29%
+75000,1082109,Red Cordon,0.29%
+75000,1082110,Blue Cordon,0.29%
+75000,1082111,Green Cordon,0.29%
+75000,1082112,Dark Cordon,0.29%
+75000,1452012,Marine Arund,0.29%
+75000,1452013,Fire Arund,0.29%
+75000,1452014,Golden Arund,0.29%
+75000,1452015,Dark Arund,0.29%
+75000,1462010,Marine Raven,0.29%
+75000,1462011,Fire Raven,0.29%
+75000,1462012,Golden Raven,0.29%
+75000,1462013,Dark Raven,0.29%
+92857,1002286,Blue Patriot,0.36%
+92857,1002287,Beige Patriot,0.36%
+92857,1002288,Green Patriot,0.36%
+92857,1002289,Dark Patriot,0.36%
+92857,1050061,Blue Linnex,0.36%
+92857,1050062,Beige Linnex,0.36%
+92857,1050063,Green Linnex,0.36%
+92857,1050064,Dark Linnex,0.36%
+92857,1051062,Blue Lineros,0.36%
+92857,1051063,Beige Lineros,0.36%
+92857,1051064,Green Lineros,0.36%
+92857,1051065,Dark Lineros,0.36%
+92857,1072164,Blue Elf Shoes,0.36%
+92857,1072165,Baige Elf Shoes,0.36%
+92857,1072166,Green Elf Shoes,0.36%
+92857,1072167,Dark Elf Shoes,0.36%
+92857,1082106,Blue Eyes,0.36%
+92857,1082107,Gold Eyes,0.36%
+92857,1082108,Dark Eyes,0.36%
+92857,1200003,Red Arrow for Bow,0.36%
+92857,1201003,Blue Bolt for Crossbow,0.36%
+92857,1452009,Red Hinkel,0.36%
+92857,1452010,Blue Hinkel,0.36%
+92857,1452011,Golden Hinkel,0.36%
+92857,1462009,Gross Jaeger,0.36%
+116667,1002267,Red Polyfeather Hat,0.45%
+116667,1002268,Brown Polyfeather Hat,0.45%
+116667,1002269,White Polyfeather Hat,0.45%
+116667,1002270,Black Polyfeather Hat,0.45%
+116667,1050058,Orange Tai,0.45%
+116667,1050059,Blue Tai,0.45%
+116667,1050060,Red Tai,0.45%
+116667,1051041,Red Choro,0.45%
+116667,1051042,Blue Choro,0.45%
+116667,1051043,Brown Choro,0.45%
+116667,1072144,Red Gore Boots,0.45%
+116667,1072145,Blue Gore Boots,0.45%
+116667,1072146,Green Gore Boots,0.45%
+116667,1082089,Oaker Garner,0.45%
+116667,1082090,Sephia Garner,0.45%
+116667,1082091,Dark Garner,0.45%
+116667,1452004,Asianic Bow,0.45%
+116667,1462008,Golden Crow,0.45%
+150000,1002211,Blue Maro,0.57%
+150000,1002212,Red Maro,0.57%
+150000,1002213,Green Maro,0.57%
+150000,1002214,Black Maro,0.57%
+150000,1050051,Red-Lined Kismet,0.57%
+150000,1050052,Blue-Lined Kismet,0.57%
+150000,1051037,Blue Lumati,0.57%
+150000,1051038,Green Lumati,0.57%
+150000,1051039,Red Lumati,0.57%
+150000,1072122,Brown Steel-Tip Boots,0.57%
+150000,1072123,Green Steel-Tip Boots,0.57%
+150000,1072124,Blue Steel-Tip Boots,0.57%
+150000,1072125,Purple Steel-Tip Boots,0.57%
+150000,1082083,Dark Willow,0.57%
+150000,1082084,Blue Willow,0.57%
+150000,1082085,Red Willow,0.57%
+150000,1200002,Steel Arrow for Bow,0.57%
+150000,1201002,Steel Bolt for Crossbow,0.57%
+150000,1452008,Olympus,0.57%
+150000,1462007,Rower,0.57%
+188095,1462006,Silver Crow,0.72%
+200000,1002166,Red Distinction,0.77%
+200000,1002167,Blue Distinction,0.77%
+200000,1002168,Green Distinction,0.77%
+200000,1002169,Brown Distinction,0.77%
+200000,1002170,Dark Distinction,0.77%
+200000,1040079,Brown Piette,0.77%
+200000,1040080,Dark Piette,0.77%
+200000,1040081,White Piette,0.77%
+200000,1041081,White Piettra,0.77%
+200000,1041082,Brown Piettra,0.77%
+200000,1041083,Dark Piettra,0.77%
+200000,1060068,Dark Piette Pants,0.77%
+200000,1060069,Brown Piette Pants,0.77%
+200000,1060070,Blue Piette Pants,0.77%
+200000,1061080,White Piettra Skirt,0.77%
+200000,1061081,Brown Piettra Skirt,0.77%
+200000,1061082,Dark Piettra Skirt,0.77%
+200000,1072118,Red Pierre Shoes,0.77%
+200000,1072119,Yellow Pierre Shoes,0.77%
+200000,1072120,Brown Pierre Shoes,0.77%
+200000,1072121,Blue Pierre Shoes,0.77%
+200000,1082071,Aqua Brace,0.77%
+200000,1082072,Gold Brace,0.77%
+200000,1082073,Dark Brace,0.77%
+200000,1452007,Vaulter 2000,0.77%
+213158,1462005,Heckler,0.82%
+235714,1002135,Brown Pole-Feather Hat,0.90%
+235714,1002136,Dark Pole-Feather Hat,0.90%
+235714,1002137,Green Pole-Feather Hat,0.90%
+235714,1002138,Blue Pole-Feather Hat,0.90%
+235714,1002139,Red Pole-Feather Hat,0.90%
+235714,1040072,Red Legolier,0.90%
+235714,1040073,Blue Legolier,0.90%
+235714,1040074,Green Legolier,0.90%
+235714,1040075,Dark Legolier,0.90%
+235714,1040076,Brown Legolier,0.90%
+235714,1041065,Red Legolia,0.90%
+235714,1041066,Blue Legolia,0.90%
+235714,1041067,Green Legolia,0.90%
+235714,1041068,Dark Legolia,0.90%
+235714,1041069,Brown Legolia,0.90%
+235714,1060061,Red Legolier Pants,0.90%
+235714,1060062,Blue Legolier Pants,0.90%
+235714,1060063,Green Legolier Pants,0.90%
+235714,1060064,Dark Legolier Pants,0.90%
+235714,1060065,Brown Legolier Pants,0.90%
+235714,1061060,Red Legolia Pants,0.90%
+235714,1061061,Blue Legolia Pants,0.90%
+235714,1061062,Green Legolia Pants,0.90%
+235714,1061063,Dark Legolia Pants,0.90%
+235714,1061064,Brown Legolia Pants,0.90%
+235714,1072101,Blue Silky Boots,0.90%
+235714,1072102,Green Silky Boots,0.90%
+235714,1072103,Red Silky Boots,0.90%
+235714,1082068,Bronze Scaler,0.90%
+235714,1082069,Mithril Scaler,0.90%
+235714,1082070,Gold Scaler,0.90%
+235714,1452006,Red Viper,0.90%
+262500,1462004,Eagle Crow,1.01%
+283333,1072170,Green Snowshoes,1.09%
+283333,1200001,Bronze Arrow for Bow,1.09%
+283333,1201001,Bronze Bolt for Crossbow,1.09%

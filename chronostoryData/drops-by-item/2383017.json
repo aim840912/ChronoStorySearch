@@ -1,0 +1,19 @@
+{
+  "itemId": 2383017,
+  "itemName": "Firebomb Card",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5100002,
+      "mobName": "Firebomb",
+      "chineseMobName": "火精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

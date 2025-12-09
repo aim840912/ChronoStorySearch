@@ -1,0 +1,45 @@
+{
+  "id": 1382035,
+  "description": {
+    "id": 1382035,
+    "name": "Blue Marine",
+    "description": "",
+    "chineseName": "怒濤之杖"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 95,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAgCAYAAAABtRhCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABxUlEQVR4nM2XjZGDIBCFl5lrwJQQStASvBJiC1dC0sKVEEvAFighlKAlaAlkdxUPGZO7KGTuzRBBHD72L+gHpJUNxiIl0KrewikDaAaAGpuWwqYC2rIdYZ8dgswAqsxA40QK4MIyVtehhTl3YwLHeGUKKtmAak+jG81IdddYQItCQzoeGGMYCtcS4EuP1+pAU9GSRqAsWUdqbzmoK0IDGP3EjSEtjlbKwvxAPdgeoKsvMY9VzzD4xjZUICWAUgratsW+tLDDQo6XGQYoDod5IYKVpxz0pXAbsdnxyPH0tQXI8br1/eIeXAqrL+Bg4Q6BY7w3afyFAhBvqNMaNLY8z+eJXS6dCzuYJ9gwlUhd13A+n3cBud4GBB4xRrT4FEuWg1Grqopuia1Jw4tS1oWJ4OJJEOdG3yrYUBbzP4kPc25r0G1lWXJ/sioEzvoLcAGj3ZMoNr4IIKn4ppIgd28FLmAeaJGVAUB42fsSkK1rmsaHiZXn1gBrz/1uYeel96NFngFeBsbW/wPyYToVcGqgXSvylMDo1j0D2ungjAp7BLTTsRMdtga09FqQChYCGRY7Zo+Ab4E5IH8HVDKdG0MgfdW8BUa6A6zhEnnzSqF4AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAgCAYAAAABtRhCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACAklEQVR4nM2Xi22DMBCGD6kLkBHiEWAEOkJYoSMkK3SEMIJZwSOEEWAEPILrO2znsEza8JB6kouJ0X3+74HpBxxrJrrPjgQaORq45ACtBmjsUCIzRwFN1U+wz8GCOg2yykHZhSOAM2Vkw2AVFjTdEzjlK5dQixZkf5nC2E1Uf90LaKxZIQPddF1HULhXAF9qutYnXNqtaDJrBtWh9Y8C5N1CIxj+2TeH6NyqFGX3hDLYFqDvryzcy5Fg8G2HrkEIACkl9H1v58LABoWUr05rKE+n4Ahh1aUAdSv9Rkx+PlM+ua0BUr4e4zj7DW6lUTfwsHiHQDneWjTcUQSiDQ1KgbKjKIqwsCmkobGjdYRp1yJN08D1et0EpH7TFni2OULnLpdkHoajrmv8KVtbNOQUqy4uBJ9PhPgwclWwoi3Cm4TDfNhaG7aqqmjuVMXAYH8BzmC4ezTMDTcECGw+1xIY7rXAGYyBZlUZATJWvW8BSV3bthyWJZ5LAVLP/a5wYOW95OQV4G3g3vb/gHSYugY+GmhSTX4kcHd1r4DGHZy7wpaAxh07KVi+gjE7U2Kgwc8CB8OPEf76yKPrOzDtBwcSzOUMvxMK5zwFSkHTp+MThm+QwQM57BMmZV7dGmWLm0Ag/R9QCwpjyRzHDy8piNfi+WyQQiVCgfAQAqRV5QvwVxsM8x/RYysBaE4KNAAAAABJRU5ErkJggg==",
+    "price": 380000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 288,
+    "reqLUK": 98,
+    "reqJob": 2,
+    "reqLevelEquip": 95,
+    "tuc": 7,
+    "incPAD": 71,
+    "incMAD": 110,
+    "attack": 6,
+    "attackSpeed": 8
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "Staff"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 71,
+      "min": 66,
+      "max": 76
+    },
+    "incMAD": {
+      "base": 110,
+      "min": 105,
+      "max": 115
+    }
+  }
+}

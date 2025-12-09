@@ -1,0 +1,27 @@
+{
+  "id": 4031165,
+  "description": {
+    "id": 4031165,
+    "name": "Witchgrass Leaf",
+    "description": "Leaves of the Witchgrass growing in the swamps. Laiden with incredible magical powers, it is used as a primary source for herbal medicine.",
+    "chineseName": "魔女草葉子"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADXElEQVR4nMWWi3HbMBBEoZk0cCoBLgEtMCXIJSQlOCXELagEqwSzhKAFlOArgbldHEBSP8t2YsMjAxQpvNv7gd/C54/JPhssvgLex2fDp6+CTyHa//L58Ao+Gv8a3pPpafotmH9uf73IYILz/4Uzns8Ovb97fMEcdxIiv9ETA94L7wrbtaTAeAIqBotJgpirsS5FQzQL1Gb9IHwJnoJtDgg3D1hLSGaI2sUw2MLujyMk68k+b4UvS4VqTZ+phEKDGyglqXe5TmYEVGdTH1qmb9o+b4GvS0UqEIoBBzmlSDcTSMWjXWuQtgN+n7uAza3wCRmrZXENKNwNFxehi6N9keB+g485G7hwbaFmGGjYQsAtcCqG9YgtIyc1rlANxbvdQNW4WQiJdk+ZaEwx9c/ReA1OMBQSjKBKVQsw1Jt+grE3bClZa6YjB8BzbmnsOe43KJeawdw84rfCpMLm4l7AoHsDDItUm/PsciZbm19R3krJsrnVagWIZzPBEhu313HxlM7WTVQdbp7gPPb9e384hs81LO5i1u9cTohxNHAaYs9iJlOoRuVcwUVrzGncuIZeVf4wPW/3d/deRom+R8nAdWK+H4bY49/szFQKaFPssYYBNcOnI86ZUrMHH7f3dhgI44dGEW33A7uUxTu6YgBL6etCV2v3RDBj0U4ZGqn76rrRnCqPMXjmtoxF+phaGMHSQuZWT9DN8KlWYuklVeOMfGlJdgw+Cxev3eZSeC1Fj6mrrJu7sdZji+YOZm03D1wBn4W3klLxRGO8ybOupV7bVkqlKhzs4VyEgFbXNLqsoCfgU7j3aqr37MUa0F0Sj3Nu6c0xGkX9j2e2Ll4czqi9qlykgaMBE7tWCyUrzYOoRb17FVdar8th1UYvggl/mJ6kPm4ZbeVVM9fO4v4GEup3OnctWFLDqt69tLo96zngFC4Y8c33ZnwhreCE2iWm1yEr61ZCK6HiIIeGeeYjF+r5onL8Zr+51x/TH+rkocHWafDDngZVkXMJYa4lqawEjHZwcLqSZCs4wFjst99f0MtDP4sdWhbQfizq6q2I4W7AG8GEz0vtJ4/qyGNxoaW6XjzRjoFr6E3gNdzFsCX6m2ZYNAsW0xheGzdBT+Gk6OJFz615h6L3wTvo9lr9yPgLapD6ycSz1OIAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADkElEQVR4nMWWi1XjMBBFlXNoYFKCKEEthBJCCUsJUMLSQkogJZASVi2oBKYE77ynkfyJE2A/II6x7Ni68+Yn34SvH4MdG0y+A97HV8OH74IPIdr/8vXwCl6Mfw3vyfQy/BScH7ZPb7Izwfn/whnPV4fe3z6/4Rz3EiLv6JkBfwrvCtu1pMB4AioGi0mCmKsxL0VDNAvUzvqX8Cl4CLY4IFw8YC4hmSFqF7udTez30wmS9Wydz8KnpUK1ps9UQqHBDZSS1F85T2YEVGdTH1qmb9o6n4HPS0UqEIoBBzmlSDcTSMUnu9YgbQW8n7uAzUfhAzJWy+QaULgbLi5CF0e7keB+g59yNnDh3ELNMNCwiYCPwKkY1iO2jJzUuEI1FO/3O6rGj4WQaL8pE40ppn4sxntwgqGQYARVqlqAod70E4y1YUvJWjMdOQCec0tjj3H/gHKpGczFI94VJhUWF/cCBt0bYFik2pxHlzPZ2vkd5a2ULJtbrVaAeDYTLLFxex0XT+ls3UTV4eYJnk99/d4flvCxhsVdzPodywkxjgZOu9izmMkUqlE5V3DRGnMad5pDryp/HF63h9t7L6NE36Nk4Dox3+92sce/2ZmpFNCm2GMNA2qGDwvOSqnZg8/be9sMhPFDo4i2+pFdyuIdXTGApfR5oau1eyKYsWinDI3UdXXeaM6Vxxg8c1vGIn1MLYxgaSFzqyfoZvhUK7H0kqpxRr60JFuCV+HitdtcCq+l6DF1lXVxN9Z6bNHcwazt5oEr4FV4KykVTzTGmzzrWuq1baVUqsKdPZyLENDqmkaXGfQMfA73Xk31nr2YA7pP4nHOLb05TkZR/+OerZMPhxW1V5WLNHA0YGLXaqFkpXkQtah3r+JK63U5ztroRTDhj8OL1Mcto628aubaXty/QEK9p2PXgiU1rOrdS6vbs64Bh3DBiBtfm/GFtIIdap+YXsesrFsJrYSKgxwaxjMfuVDPF5XjncPmXn8Mv6iTmwZbp8GPBxpURY4lhHMtSWUlYLSNg6crSTaDA4zJYXv3hl4e+l7s0DKB9m1RZ19FDHcDjuBtCGMHXoWPU+07j+qJ2+L0PZoinmhL4ByKcWdHWoB1cizgLoYt0b80w6RZsJjGnenSePJzWtxv0Fb5ulAevEM1FTo+Po7DO3BZubfq8nN4B82ef7iw6DXIcr48zuAb37BDTfH6tXYBJGFdkV65Pnv+N/c5FO0DGl7ZAAAAAElFTkSuQmCC",
+    "slotMax": 0,
+    "price": 1,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Quest Item",
+    "lowItemId": 4030000,
+    "highItemId": 4040000
+  }
+}

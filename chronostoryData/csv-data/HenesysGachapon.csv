@@ -1,0 +1,270 @@
+Chance,ItemID,Description,Percent
+33333,1442002,Eviscerator,0.10%
+50000,1002377,Green Valhalla Helmet,0.15%
+50000,1002378,Blue Valhalla Helmet,0.15%
+50000,1002379,Dark Valhalla Helmet,0.15%
+50000,1003840,Shadow Knight Hat,0.15%
+50000,1040120,Green Neos,0.15%
+50000,1040121,Blue Neos,0.15%
+50000,1040122,Black Neos,0.15%
+50000,1041122,Green Lucida,0.15%
+50000,1041123,Purple Lucida,0.15%
+50000,1041124,Dark Lucida,0.15%
+50000,1060109,Green Neos Pants,0.15%
+50000,1060110,Blue Neos Pants,0.15%
+50000,1060111,Black Neos Pants,0.15%
+50000,1061121,Green Lucida Skirt,0.15%
+50000,1061122,Purple Lucida Skirt,0.15%
+50000,1061123,Dark Lucida Skirt,0.15%
+50000,1072220,Green Crescent Boots,0.15%
+50000,1072221,Blue Crescent Boots,0.15%
+50000,1072222,Dark Crescent Boots,0.15%
+50000,1082139,Green Korben,0.15%
+50000,1082140,Blue Korben,0.15%
+50000,1082141,Dark Korben,0.15%
+50000,1092036,Green Hoflon,0.15%
+50000,1092037,Violet Hoflon,0.15%
+50000,1092038,Blue Hoflon,0.15%
+50000,1302056,Sparta,0.15%
+50000,1312030,Tomahawk,0.15%
+50000,1322045,Battle Hammer,0.15%
+50000,1402035,The Beheader,0.15%
+50000,1412021,Tavar,0.15%
+50000,1422027,Golden Smith Hammer,0.15%
+50000,1432030,Pinaka,0.15%
+50000,1442044,Zedbug,0.15%
+61111,1002528,Green Grace Helmet,0.19%
+61111,1002529,Blue Grace Helmet,0.19%
+61111,1002530,Red Grace Helmet,0.19%
+61111,1002531,Silver Grace Helmet,0.19%
+61111,1002532,Dark Grace Helmet,0.19%
+61111,1040111,Green Commodore,0.19%
+61111,1040112,Blue Commodore,0.19%
+61111,1040113,Dark Commodore,0.19%
+61111,1041119,Green Valkyrie,0.19%
+61111,1041120,Purple Valkyrie,0.19%
+61111,1041121,Dark Valkyrie,0.19%
+61111,1060100,Green Commodore Pants,0.19%
+61111,1060101,Blue Commodore Pants,0.19%
+61111,1060102,Dark Commodore Pants,0.19%
+61111,1061118,Green Valkyrie Skirt,0.19%
+61111,1061119,Purple Valkyrie Skirt,0.19%
+61111,1061120,Blood Valkyrie Skirt,0.19%
+61111,1072196,Emerald War Greave,0.19%
+61111,1072197,Orihalcon War Greave,0.19%
+61111,1072198,Dark War Greave,0.19%
+61111,1082128,Green Imperial,0.19%
+61111,1082129,Purple Imperial,0.19%
+61111,1082130,Dark Imperial,0.19%
+61111,1092026,Bronze Kalkan,0.19%
+61111,1092027,Silver Kalkan,0.19%
+61111,1092028,Gold Kalkan,0.19%
+61111,1302023,Fraute,0.19%
+61111,1312015,Vifennis,0.19%
+61111,1322029,Ruin Hammer,0.19%
+61111,1402005,Berzerker,0.19%
+61111,1402016,Devil's Sunrise,0.19%
+61111,1412010,Colonian Axe,0.19%
+61111,1422013,Leomite,0.19%
+61111,1432011,Fairfrozen,0.19%
+61111,1442020,Hellslayer,0.19%
+75000,1002338,Red Dragon Babuta,0.23%
+75000,1002339,Blue Dragon Babuta,0.23%
+75000,1002340,Dark Dragon Babuta,0.23%
+75000,1050080,Green Battle Road,0.23%
+75000,1050081,Red Battle Road,0.23%
+75000,1050082,Blue Battle Road,0.23%
+75000,1050083,Dark Battle Road,0.23%
+75000,1051077,Yellow Battle Empress,0.23%
+75000,1051078,Red Battle Empress,0.23%
+75000,1051079,Blue Battle Empress,0.23%
+75000,1051080,Dark Battle Empress,0.23%
+75000,1072210,Red Rivers Boots,0.23%
+75000,1072211,Blue Rivers Boots,0.23%
+75000,1072212,Dark Rivers Boots,0.23%
+75000,1082114,Sapphire Emperor,0.23%
+75000,1082115,Emerald Emperor,0.23%
+75000,1082116,Blood Emperor,0.23%
+75000,1082117,Dark Emperor,0.23%
+75000,1092023,Steel Aquila Shield,0.23%
+75000,1092024,Silver Aquila Shield,0.23%
+75000,1092025,Gold Aquila Shield,0.23%
+75000,1302018,Khan,0.23%
+75000,1312011,Gaea,0.23%
+75000,1322028,Heaven's Justice,0.23%
+75000,1402004,Blue Screamer,0.23%
+75000,1402015,Heaven's Gate,0.23%
+75000,1412009,Helios,0.23%
+75000,1422012,The Morningstar,0.23%
+75000,1432010,Omega Spear,0.23%
+75000,1442019,Eclipse,0.23%
+83333,1322020,Bent Judgement,0.25%
+92857,1002030,Silver Planet,0.28%
+92857,1002094,Bronze Planet,0.28%
+92857,1002095,Mithril Planet,0.28%
+92857,1040102,Bronze Platine,0.28%
+92857,1040103,Mithril Platine,0.28%
+92857,1040104,Orihalcon Platine,0.28%
+92857,1041097,Aqua Platina,0.28%
+92857,1041098,Violet Platina,0.28%
+92857,1041099,Bloody Platina,0.28%
+92857,1060090,Bronze Platine Pants,0.28%
+92857,1060091,Mithril Platine Pants,0.28%
+92857,1060092,Orihalcon Platine Pants,0.28%
+92857,1061096,Aqua Platina Pants,0.28%
+92857,1061097,Violet Platina Pants,0.28%
+92857,1061098,Blood Platina Pants,0.28%
+92857,1072154,Blue Carzen Boots,0.28%
+92857,1072155,Purple Carzen Boots,0.28%
+92857,1072156,Dark Carzen Boots,0.28%
+92857,1082103,Bronze Husk,0.28%
+92857,1082104,Mithril Husk,0.28%
+92857,1082105,Dark Husk,0.28%
+92857,1092015,Steel Ancient Shield,0.28%
+92857,1092016,Silver Ancient Shield,0.28%
+92857,1092017,Gold Ancient Shield,0.28%
+92857,1302012,Red Katana,0.28%
+92857,1312010,Mikhail,0.28%
+92857,1322019,The Judgement,0.28%
+92857,1402012,Doombringer,0.28%
+92857,1412008,Chrono,0.28%
+92857,1422010,Gigantic Sledge,0.28%
+92857,1432007,Redemption,0.28%
+92857,1442008,The Gold Dragon,0.28%
+116667,1002029,Red Oriental Helmet,0.35%
+116667,1002084,Blue Oriental Helmet,0.35%
+116667,1040090,Green Orientican,0.35%
+116667,1040091,Red Orientican,0.35%
+116667,1040092,Blue Orientican,0.35%
+116667,1040093,Dark Orientican,0.35%
+116667,1041091,Green Ice Queen,0.35%
+116667,1041092,Red Ice Queen,0.35%
+116667,1041093,Blue Ice Queen,0.35%
+116667,1060079,Green Orientican Pants,0.35%
+116667,1060080,Red Orientican Pants,0.35%
+116667,1060081,Blue Orientican Pants,0.35%
+116667,1060082,Dark Orientican Pants,0.35%
+116667,1061090,Green Ice Queen Skirt,0.35%
+116667,1061091,Red Ice Queen Skirt,0.35%
+116667,1061092,Blue Ice Queen Skirt,0.35%
+116667,1072147,Sapphire Camel Boots,0.35%
+116667,1072148,Orihalcon Camel Boots,0.35%
+116667,1072149,Blood Camel Boots,0.35%
+116667,1082059,Bronze Clench,0.35%
+116667,1082060,Sapphire Clench,0.35%
+116667,1082061,Dark Clench,0.35%
+116667,1092009,Wooden Legend Shield,0.35%
+116667,1092010,Silver Legend Shield,0.35%
+116667,1092011,Adamantium Legend Shield,0.35%
+116667,1302011,Neocora,0.35%
+116667,1312009,Hawkhead,0.35%
+116667,1322018,Tamus,0.35%
+116667,1402011,Sparta,0.35%
+116667,1412007,The Shining,0.35%
+116667,1422009,The Blessing,0.35%
+116667,1432006,Holy Spear,0.35%
+116667,1442010,Skylar,0.35%
+131818,1002022,Old Steel Nordic Helm,0.40%
+131818,1002100,Old Bronze Nordic Helm,0.40%
+131818,1002101,Old Mithril Nordic Helm,0.40%
+150000,1002028,Silver Crusader Helm,0.46%
+150000,1002085,Mithril Crusader Helm,0.46%
+150000,1002086,Bronze Crusader Helm,0.46%
+150000,1040087,Blue Shouldermail,0.46%
+150000,1040088,Oaker Shouldermail,0.46%
+150000,1040089,Umber Shouldermail,0.46%
+150000,1041087,Red Shouldermail,0.46%
+150000,1041088,Ivory Shouldermail,0.46%
+150000,1041089,Dark Shouldermail,0.46%
+150000,1060076,Blue Shouldermail Pants,0.46%
+150000,1060077,Oaker Shouldermail Pants,0.46%
+150000,1060078,Umber Shouldermail Pants,0.46%
+150000,1061086,Red Shouldermail Pants,0.46%
+150000,1061087,Ivory Shouldermail Pants,0.46%
+150000,1061088,Dark Shouldermail Pants,0.46%
+150000,1072132,Emerald Hildon Boots,0.46%
+150000,1072133,Mithril Hildon Boots,0.46%
+150000,1072134,Orihalcon Hildon Boots,0.46%
+150000,1072135,Gold Hildon Boots,0.46%
+150000,1082009,Steel Brist,0.46%
+150000,1082010,Mithril Brist,0.46%
+150000,1082011,Gold Brist,0.46%
+150000,1092004,Skull Shield,0.46%
+150000,1302010,Jeweled Katar,0.46%
+150000,1312008,Buck,0.46%
+150000,1322017,Knuckle Mace,0.46%
+150000,1402003,Lion's Fang,0.46%
+150000,1412003,The Rising,0.46%
+150000,1422005,Golden Mole,0.46%
+150000,1432004,Serpent's Tongue,0.46%
+150000,1442005,The Nine Dragons,0.46%
+162766,1002024,Emerald Dome,0.49%
+162766,1002091,Dark Dome,0.49%
+172222,1302015,Hero's Gladius,0.52%
+172222,1302019,Nameless Sword,0.52%
+188095,1002045,Blue Bone Helm,0.57%
+188095,1002046,Red Bone Helm,0.57%
+200000,1002021,Steel Nordic Helm,0.61%
+200000,1002025,Red Duke,0.61%
+200000,1002092,Yellow Duke,0.61%
+200000,1002093,Blue Duke,0.61%
+200000,1002098,Gold Nordic Helm,0.61%
+200000,1002099,Mithril Nordic Helm,0.61%
+200000,1040000,Yellow Jangoon Armor,0.61%
+200000,1040085,Maroon Jangoon Armor,0.61%
+200000,1040086,Blue Jangoon Armor,0.61%
+200000,1041084,Red Jangoon Armor,0.61%
+200000,1041085,Brown Jangoon Armor,0.61%
+200000,1041086,Black Jangoon Armor,0.61%
+200000,1060000,Black Jangoon Pants,0.61%
+200000,1060074,White Jangoon Pants,0.61%
+200000,1060075,Brown Jangoon Pants,0.61%
+200000,1061083,Red Jangoon Skirt,0.61%
+200000,1061084,Brown Jangoon Skirt,0.61%
+200000,1061085,Black Jangoon Skirt,0.61%
+200000,1072000,Brown Jangoon Shoes,0.61%
+200000,1072126,Maroon Jangoon Shoes,0.61%
+200000,1072127,Blue Jangoon Shoes,0.61%
+200000,1082023,Iron Knuckle,0.61%
+200000,1082024,Adamantium Knuckle,0.61%
+200000,1082025,Dark Knuckle,0.61%
+200000,1092012,Steel Tower Shield,0.61%
+200000,1092013,Mithril Tower Shield,0.61%
+200000,1092014,Adamantium Tower Shield,0.61%
+200000,1302009,Traus,0.61%
+200000,1312007,Blue Counter,0.61%
+200000,1322016,Jacker,0.61%
+200000,1402007,Zard,0.61%
+200000,1412005,Sabretooth,0.61%
+200000,1422007,Titan,0.61%
+200000,1432005,Zeco,0.61%
+200000,1442009,Crescent Polearm,0.61%
+235714,1002004,Great Brown Helmet,0.72%
+235714,1002047,Great Red Helmet,0.72%
+235714,1002048,Great Blue Helmet,0.72%
+235714,1040029,Blue Dragon,0.72%
+235714,1040030,Gold Dragon,0.72%
+235714,1050000,White Crusader Chainmail,0.72%
+235714,1050021,Blue Crusader Chainmail,0.72%
+235714,1050022,Dark Crusader Chainmail,0.72%
+235714,1051001,Emerald Fitted Mail,0.72%
+235714,1051014,Sapphire Fitted Mail,0.72%
+235714,1051015,Blood Fitted Mail,0.72%
+235714,1051016,Silver Fitted Mail,0.72%
+235714,1060020,White Martial Arts Shorts,0.72%
+235714,1072002,Steel Trigger,0.72%
+235714,1072112,Mithril Trigger,0.72%
+235714,1072113,Dark Trigger,0.72%
+235714,1082008,Steel Briggon,0.72%
+235714,1082035,Yellow Briggon,0.72%
+235714,1082036,Dark Briggon,0.72%
+235714,1092007,Battle Shield,0.72%
+235714,1302004,Cutlus,0.72%
+235714,1312006,Dankke,0.72%
+235714,1322015,Heavy Hammer,0.72%
+235714,1402006,Lionheart,0.72%
+235714,1412004,Niam,0.72%
+235714,1422008,Sledgehammer,0.72%
+235714,1432003,Nakamaki,0.72%
+235714,1442003,Axe Pole Arm,0.72%
+283333,1072168,Red Snowshoes,0.86%

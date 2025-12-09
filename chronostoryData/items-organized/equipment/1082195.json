@@ -1,0 +1,40 @@
+{
+  "id": 1082195,
+  "description": {
+    "id": 1082195,
+    "name": "Brown Barbee",
+    "description": "",
+    "chineseName": "褐色瑞恩手腕"
+  },
+  "metaInfo": {
+    "reqLevel": 40,
+    "reqLevelEquip": 40,
+    "reqSTR": 40,
+    "reqDEX": 40,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "price": 40000,
+    "tuc": 5,
+    "incDEX": 1,
+    "incPDD": 14
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Gloves"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 14,
+      "min": 0,
+      "max": 34
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

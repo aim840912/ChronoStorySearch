@@ -1,0 +1,19 @@
+{
+  "itemId": 2040514,
+  "itemName": "Scroll for Overall Armor for INT 10%",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5220002,
+      "mobName": "Faust",
+      "chineseMobName": "殭屍猴王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

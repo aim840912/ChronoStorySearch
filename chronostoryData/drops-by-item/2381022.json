@@ -1,0 +1,19 @@
+{
+  "itemId": 2381022,
+  "itemName": "Wild Boar Card",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 2230102,
+      "mobName": "Wild Boar",
+      "chineseMobName": "黑肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

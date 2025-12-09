@@ -1,0 +1,41 @@
+{
+  "itemId": 4005004,
+  "itemName": "Dark Crystal",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 6300000,
+      "mobName": "Yeti",
+      "chineseMobName": "雪吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6300001,
+      "mobName": "Transformed Yeti",
+      "chineseMobName": "變形雪吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6300002,
+      "mobName": "Separated Yeti",
+      "chineseMobName": "孤單雪吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

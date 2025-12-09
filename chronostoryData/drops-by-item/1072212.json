@@ -1,0 +1,41 @@
+{
+  "itemId": 1072212,
+  "itemName": "Dark Rivers Boots",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 7130300,
+      "mobName": "Master Death Teddy",
+      "chineseMobName": "怨靈發條熊隊長",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8142000,
+      "mobName": "Phantom Watch",
+      "chineseMobName": "幽魂女巫",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8143000,
+      "mobName": "Grim Phantom Watch",
+      "chineseMobName": "怨靈女巫",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

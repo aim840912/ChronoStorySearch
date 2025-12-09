@@ -1,0 +1,19 @@
+{
+  "itemId": 1002175,
+  "itemName": "Dark Guise",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5300001,
+      "mobName": "Dark Leatty",
+      "chineseMobName": "黑利堤",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

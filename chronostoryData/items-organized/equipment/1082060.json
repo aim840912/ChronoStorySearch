@@ -1,0 +1,49 @@
+{
+  "id": 1082060,
+  "description": {
+    "id": 1082060,
+    "name": "Sapphire Clench",
+    "description": "",
+    "chineseName": "藍戰鬥手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADJklEQVR4nK2WgZGyMBCF15m/Aa6EXAlYApQQSsAStAQoAUogJUgJUsKlBCkh/74NCaDejaI748ER4Mt7u9nwjz4b7ub/3aObPgUV2PlypSxN5EI/jJTvv8IkVvBPQN2xuTBMMcjyz1+sypScc1ScDJm6cEvwu1ABWmup5Z+1Yxw48Q8T6SpNBXUr8DvQCFzCQvQsGWNZqqnUGV+ZwW8pxUsHtjRJEqqOWvKJXIrNAh3FXqhtzfzcW1AAm6qUcwCDXtiKCGDEUu1b0JRf3pqelFJSQDpTcWwJhloP9bEV6vSxE6WIcGRUBPbTNaUSUYvJhfs2K721dkD+Du0Kjpwvw9phM1RUwtIARNZG/oNJQKFhVelkL1SOPIhrZKWaXq7eaKu3KpNchvyF0Jy/uq75qAUIhQnNhfYKNCpEUUDhd15PQ9kqj8FWTCwAsayehcYGHoBHbm/ornhB15Ri6+HUCniZQ6VSsj33JaX9RAaZ4J8dyTfwM1F+8A/1nJOMFQ6D4nxx4QxzF0Iu8+Igdg5RrS+aW5W/Qd31Cms8EDNGoDDwwsKcqDyW8zqcIAAaY7zCmMNUgEuVt1BRB+DXXkeLAMODAWz5vK1bMmy11vPSEIVcnXapLlF3wCVU1CEeAX0FeoNwnjAQatqWFSXpws40AifYHXCltO/98XoxBGG7b/8iwINSAAPg3BgpoqIwUixiZ6Ie2vkrtCg4RzzrrvFQ9+O3BcCD8nsg8mpnO21LU/38ClxBnfuhE9vFRSgv6Brf0gAH4Gs/OwFXAFS8V0LVM+oeQgFEq3LXTs7zYoxwQAFDoKoFmJW+9xG9BAxQhw8q7AJ/wZvKKw/Am7X3NHClNOwaAY4vgACXL7ucEeNAqT7GhwFWWYXOs/rwegraTz3yEXycxtEQMDZOrQ7Lxu+V9HIAuqsPe4eyD/B+2kUAr9liLBUB8hGtUP7n7UVlWNN87wYoYsfdxNUHMzfoSfkKmKVyRB/uuiq2wC1KQ/icBDjBVp+/0HcDEGq9KxYfWvOzG6BrOIfYzlFWZ/8R1rZ8zKQlmnp/d/870LsJtKc87quDNauxLfEfqjwpYIiKJWQAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTElEQVR4nK2WgbGqMBBF48xvAEuIJWAJUAKUACVoCVAClEBKkBKkhJcSTAn5ezckBMU3PjUzCBLIyb272fBPfLfZu/+7rYe+BWXY5XoTWZrwjXEyIj/u/SRW8G9A7am7EkwSSNPhbjZVKqy1ojwrodrSxuBPoQzUWoueDq1N6DjTgYkMTSFKMazAn0ADMIb5NpJk9GVpIaoiozsL+COlGHQiS5MkEc2p4HgilmwzQw3bC7W9Wt77CApg11R8DaDXC1vRPBgtVvsRNKXBezUKKSUnUJHJ0BeDodZBXXsXaovTwErR/JlQATjO96RMWC0m5597W+m9tRPiV/crOGIeN62nt6GsEpZ6IKJm6AeTgEJFqtLZXqg01Il7QnM2/Tl7g63Oqoxj6ePnW0Hxa9uWzgUDoTARS6L9BRoUIimg8JC3c1e2iqO3FRPzQCyrV6GhgHvgicobqisGGLqKba3PPYPjGEqZCj1SXZKFm8jEE/y1IrkCfhEir91LI8UkI4XTJClelDjTUoUQy7ys2c4pqHVJc6/yGdTebrDGATFjNCQGBizVWVSnalmHMwRApZRTGGKYMjBWeQ9ldQDuj0WwCDC86MGarvu2F4qsLoplabBCyk4dq0vkAzCGsjq0LaDLQGcQrhMCQk3fk6IkjexMA3CGPQBXSsfRnW9XJSBsd3ADAe6VAugBl05xEpWl4mRhOxO5aedTaFlSjGjWQ+eg9sdtC4B75Y9AxFUvdupezPnzFLiCWvsjzmQXJSEPMHSupAEOwP64OAFXAJS0V0LVK+o2oQCiVNnbwNd5aQIcUMDQkNUMzCpX+4T4E9BDLT6osAv8Bu8ap9wD79bey8CVUr9reDi+ADycv+xyQphJpMUpvAywzBpUHiy3/cb4ZuOeg45zjdyCm7kfBQF9Zi51WDZurwxjpU+AJjoCdNfWR4u09/Bx3kUAb8liLBUG0hmlkP/T9iIzrGl6dhsaA/V8mNjePVWTW1urpUDPylfALOUz6vAwNKEEzi15xdoYinbkF7W6MFzAVhc/X3c9EGqdKxofWnik3gCZjWMF9RZgtgc/c7L9iouqubiPsL6nc8YlUbXHeLL3qsyT6welZuMBXgr9OQ/76qTVqu+d9h9Ji0DHY5UBJQAAAABJRU5ErkJggg==",
+    "price": 130000,
+    "reqSTR": 210,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 60,
+    "tuc": 5,
+    "incSTR": 2,
+    "incPDD": 24,
+    "incACC": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 8
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 24,
+      "min": 0,
+      "max": 54
+    }
+  }
+}

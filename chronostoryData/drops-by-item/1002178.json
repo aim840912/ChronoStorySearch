@@ -1,0 +1,63 @@
+{
+  "itemId": 1002178,
+  "itemName": "Green Burgler",
+  "chineseItemName": null,
+  "totalMonsters": 5,
+  "monsters": [
+    {
+      "mobId": 2220100,
+      "mobName": "Blue Mushroom",
+      "chineseMobName": "藍菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3210100,
+      "mobName": "Fire Boar",
+      "chineseMobName": "火肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3210207,
+      "mobName": "Tick",
+      "chineseMobName": "鼬鼠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230125,
+      "mobName": "Skeledog",
+      "chineseMobName": "骷髏犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230114,
+      "mobName": "Platoon Chronos",
+      "chineseMobName": "進化妖魔",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

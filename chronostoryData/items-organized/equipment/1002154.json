@@ -1,0 +1,49 @@
+{
+  "id": 1002154,
+  "description": {
+    "id": 1002154,
+    "name": "Dark Guiltian",
+    "description": "",
+    "chineseName": "黑魔道之帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAYAAAAAwr0iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACJ0lEQVR4nMWWDZGDMBSEw0wNYIGTgAUqgZNAJRQJnASQcEhoLSDhYgEJuewrGwJHp4TS3pvJUALJfnl/5aD2MzNco5BFewGYoijkR9M0JgRiDwBTVZXSWqu+74MXPwsg4rT/AJic/Hq94vK2HJDTd10nAADZYlsBJOkgGsexesY2e4AnJkCapjLatn1PFfgux2+WYZ7nQRBbASIr6mrfN3gkyzIk5CqIp3IgSZI/yYf7kIQMBZB2uySOSmA1DPO7h8C5nOK+KC1EPBTANZx5BQCI8wPca5IQTQcCBCHAEshaCwKAAMRQ7zSKAYogr6gCg/qmwRNLBgCCrO0Hqz0w+8NxBq/Q9UvvP7LVADgVBivBr3dAzUHW5sEjAKl7bGzd6eq/LEt5iFgz80NE1wIYCtR1LXGHMD9AcMU93qH5XqFHHpXkEoCcGhtjA7j3eDzKAyYirvQCng9ZL/Nzb3gQagmEAHxBXS4XJ0ixumiHu1ZGH6MXjCeHONcRkvA0hG/4YPUtAoC02PrcqOhDuU2QcJjr7UFOTa7mVudjKZZx7qCRK1gPcX6sWmEZDEuR2rlOAI14ACVz+iqU+Wlkk163yh5SfZb5UPPdJMGwybEbG1OVdXbY34kWWPYBhun77JfpTZz7ASAaGoYFmTYbrVtv4Rg/xpQVMMKkLly9TgQKdmqneaG1C0108DcnyJLovXkf5gY+bUq3+T/l6dYf7j0IsMkaL+NX7fkLWHZ106+uvCAAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACZUlEQVR4nMWWgXHjIBBF0cw1oCtBKUFXgl2CUoJcglWCU4JUQlSCXcJRwtGCStDxN3yMMI6F7SQ7wyAjwX8su2t+qefZ7PoiZ9KzAOa2beVhGIY5B+IZAPPhcFDGGDVNU/bkRwFEnPYTAIudn04ndN8WA7J7rbUAAOQeuxdAgg6iZVmqR+xuD3DHBKjrWto4jt+TBaHL8cw0bJomC+JegMKK+twPDR7ZbDYIyFUQD8VAVVUXwYffOQGZCyDlNiWOTGA2uPGnH4F3OcVDUVqOeC6ALzhxBgCI4w7ua4IQRQcCBCFACmStZQFAAGLIdxrFAEWQr8iCGflNgydSBgCCrK0Hqz0Q/eF4g1fo+tT3t2w1AHaFxkwI8x1QMcjaOLgFIHmPha07ff53XScvcdaM/BzRtQAzBfq+l3OHMC8g6PEb39BCr9Ajt1IyBSC7xsJYAO7dbrfygoGInl7Aexf1Mh57I4BQKRAC8AN1PB69IMX6dnS/RmlTiVpw3jnEOY+QhKfh+NyFNbQCAFJi+/2gihflF0HAYWyyG9kNjYqtb86p2JWNh0asYD7EeVm1wtJ4LG1tx7QAzuIBpMzurVXzv0EWmcyo7CbVa9e4nNeLAMMiW30uTIeNts0+V0ZgWQd4TO/7ME0/xLkeAApXMCzIstgYMwYT1YvrSzv5ryzlMuAMU/vjmkwlULDduIwLY/zRFIyBwrkvPqM/EHSNh47nLoDZh4trvSxKH+MX6fkbjPRAaEUgWAWNwmFPGyLB+Jr05sTYFjTX6kAoEtfUz2os3u0S302JdhWAlCFE6u5dXoH5DPji+/+p74r9MHERJwAAAABJRU5ErkJggg==",
+    "price": 30000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 128,
+    "reqLUK": 43,
+    "reqJob": 2,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incLUK": 2,
+    "incPDD": 18,
+    "incMDD": 50
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 18,
+      "min": 0,
+      "max": 38
+    },
+    "incMDD": {
+      "base": 50,
+      "min": 30,
+      "max": 70
+    }
+  }
+}

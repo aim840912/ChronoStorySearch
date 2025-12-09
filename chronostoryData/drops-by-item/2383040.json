@@ -1,0 +1,19 @@
+{
+  "itemId": 2383040,
+  "itemName": "White Fang Card",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5140000,
+      "mobName": "White Fang",
+      "chineseMobName": "白狼",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

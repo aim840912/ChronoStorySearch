@@ -1,0 +1,1189 @@
+{
+  "totalMonsters": 1024,
+  "lastUpdated": "2025-12-08",
+  "monsters": [
+    {
+      "mobId": 2000,
+      "mobName": "Amherst Crate",
+      "chineseMobName": "箱子",
+      "isBoss": false,
+      "dropCount": 5
+    },
+    {
+      "mobId": 100100,
+      "mobName": "Snail",
+      "chineseMobName": "嫩寶",
+      "isBoss": false,
+      "dropCount": 15
+    },
+    {
+      "mobId": 100101,
+      "mobName": "Blue Snail",
+      "chineseMobName": "藍寶",
+      "isBoss": false,
+      "dropCount": 19
+    },
+    {
+      "mobId": 100110,
+      "mobName": "Bob",
+      "chineseMobName": "嫩寶",
+      "isBoss": true,
+      "dropCount": 8
+    },
+    {
+      "mobId": 120100,
+      "mobName": "Shroom",
+      "chineseMobName": "菇菇仔",
+      "isBoss": false,
+      "dropCount": 16
+    },
+    {
+      "mobId": 130100,
+      "mobName": "Stump",
+      "chineseMobName": "木妖",
+      "isBoss": false,
+      "dropCount": 26
+    },
+    {
+      "mobId": 130101,
+      "mobName": "Red Snail",
+      "chineseMobName": "紅寶",
+      "isBoss": false,
+      "dropCount": 25
+    },
+    {
+      "mobId": 210100,
+      "mobName": "Slime",
+      "chineseMobName": "綠水靈",
+      "isBoss": false,
+      "dropCount": 32
+    },
+    {
+      "mobId": 1072000,
+      "mobName": "Witchgrass",
+      "chineseMobName": "神秘的植物",
+      "isBoss": false,
+      "dropCount": 1
+    },
+    {
+      "mobId": 1110100,
+      "mobName": "Green Mushroom",
+      "chineseMobName": "綠菇菇",
+      "isBoss": false,
+      "dropCount": 53
+    },
+    {
+      "mobId": 1110101,
+      "mobName": "Dark Stump",
+      "chineseMobName": "黑木妖",
+      "isBoss": false,
+      "dropCount": 34
+    },
+    {
+      "mobId": 1120100,
+      "mobName": "Octopus",
+      "chineseMobName": "三眼章魚",
+      "isBoss": false,
+      "dropCount": 27
+    },
+    {
+      "mobId": 1130100,
+      "mobName": "Axe Stump",
+      "chineseMobName": "斧木妖",
+      "isBoss": false,
+      "dropCount": 30
+    },
+    {
+      "mobId": 1140100,
+      "mobName": "Ghost Stump",
+      "chineseMobName": "發芽木妖",
+      "isBoss": false,
+      "dropCount": 36
+    },
+    {
+      "mobId": 1210100,
+      "mobName": "Pig",
+      "chineseMobName": "肥肥",
+      "isBoss": false,
+      "dropCount": 28
+    },
+    {
+      "mobId": 1210101,
+      "mobName": "Ribbon Pig",
+      "chineseMobName": "緞帶肥肥",
+      "isBoss": false,
+      "dropCount": 31
+    },
+    {
+      "mobId": 1210102,
+      "mobName": "Orange Mushroom",
+      "chineseMobName": "菇菇寶貝",
+      "isBoss": false,
+      "dropCount": 25
+    },
+    {
+      "mobId": 1210103,
+      "mobName": "Bubbling",
+      "chineseMobName": "藍水靈",
+      "isBoss": false,
+      "dropCount": 35
+    },
+    {
+      "mobId": 1210111,
+      "mobName": "Alpha Ribbon Pig",
+      "chineseMobName": "奇怪的豬",
+      "isBoss": false,
+      "dropCount": 8
+    },
+    {
+      "mobId": 2002011,
+      "mobName": "Orbis Crate",
+      "chineseMobName": "天空城箱",
+      "isBoss": false,
+      "dropCount": 3
+    },
+    {
+      "mobId": 2110200,
+      "mobName": "Horny Mushroom",
+      "chineseMobName": "刺菇菇",
+      "isBoss": false,
+      "dropCount": 43
+    },
+    {
+      "mobId": 2130100,
+      "mobName": "Dark Axe Stump",
+      "chineseMobName": "黑斧木妖",
+      "isBoss": false,
+      "dropCount": 33
+    },
+    {
+      "mobId": 2130103,
+      "mobName": "Jr. Necki",
+      "chineseMobName": "青蛇",
+      "isBoss": false,
+      "dropCount": 21
+    },
+    {
+      "mobId": 2220000,
+      "mobName": "Mano",
+      "chineseMobName": "紅寶王",
+      "isBoss": false,
+      "dropCount": 61
+    },
+    {
+      "mobId": 2220100,
+      "mobName": "Blue Mushroom",
+      "chineseMobName": "藍菇菇",
+      "isBoss": false,
+      "dropCount": 37
+    },
+    {
+      "mobId": 2230100,
+      "mobName": "Evil Eye",
+      "chineseMobName": "火獨眼獸",
+      "isBoss": false,
+      "dropCount": 37
+    },
+    {
+      "mobId": 2230101,
+      "mobName": "Zombie Mushroom",
+      "chineseMobName": "殭屍菇菇",
+      "isBoss": false,
+      "dropCount": 41
+    },
+    {
+      "mobId": 2230102,
+      "mobName": "Wild Boar",
+      "chineseMobName": "黑肥肥",
+      "isBoss": false,
+      "dropCount": 51
+    },
+    {
+      "mobId": 2230110,
+      "mobName": "Wooden Mask",
+      "chineseMobName": "木面怪人",
+      "isBoss": false,
+      "dropCount": 33
+    },
+    {
+      "mobId": 2230111,
+      "mobName": "Rocky Mask",
+      "chineseMobName": "石面怪人",
+      "isBoss": false,
+      "dropCount": 27
+    },
+    {
+      "mobId": 2230113,
+      "mobName": "Dark Eye",
+      "chineseMobName": "黑獨眼獸",
+      "isBoss": false,
+      "dropCount": 33
+    },
+    {
+      "mobId": 2300100,
+      "mobName": "Stirge",
+      "chineseMobName": "蝙蝠",
+      "isBoss": false,
+      "dropCount": 30
+    },
+    {
+      "mobId": 3000000,
+      "mobName": "Sentinel",
+      "chineseMobName": "石球",
+      "isBoss": false,
+      "dropCount": 29
+    },
+    {
+      "mobId": 3000005,
+      "mobName": "Brown Teddy",
+      "chineseMobName": "褐色發條熊",
+      "isBoss": false,
+      "dropCount": 27
+    },
+    {
+      "mobId": 3110100,
+      "mobName": "Ligator",
+      "chineseMobName": "鱷魚",
+      "isBoss": false,
+      "dropCount": 35
+    },
+    {
+      "mobId": 3110101,
+      "mobName": "Pink Teddy",
+      "chineseMobName": "粉紅發條熊",
+      "isBoss": false,
+      "dropCount": 32
+    },
+    {
+      "mobId": 3210100,
+      "mobName": "Fire Boar",
+      "chineseMobName": "火肥肥",
+      "isBoss": false,
+      "dropCount": 38
+    },
+    {
+      "mobId": 3210200,
+      "mobName": "Jr. Cellion",
+      "chineseMobName": "幼紅獨角獅",
+      "isBoss": false,
+      "dropCount": 46
+    },
+    {
+      "mobId": 3210201,
+      "mobName": "Jr. Lioner",
+      "chineseMobName": "幼黃獨角獅",
+      "isBoss": false,
+      "dropCount": 34
+    },
+    {
+      "mobId": 3210202,
+      "mobName": "Jr. Grupin",
+      "chineseMobName": "幼藍獨角獅",
+      "isBoss": false,
+      "dropCount": 35
+    },
+    {
+      "mobId": 3210203,
+      "mobName": "Panda Teddy",
+      "chineseMobName": "發條貓熊",
+      "isBoss": false,
+      "dropCount": 31
+    },
+    {
+      "mobId": 3210204,
+      "mobName": "Roloduck",
+      "chineseMobName": "玩具鴨",
+      "isBoss": false,
+      "dropCount": 30
+    },
+    {
+      "mobId": 3210207,
+      "mobName": "Tick",
+      "chineseMobName": "鼬鼠",
+      "isBoss": false,
+      "dropCount": 34
+    },
+    {
+      "mobId": 3210800,
+      "mobName": "Lupin",
+      "chineseMobName": "猴子",
+      "isBoss": false,
+      "dropCount": 38
+    },
+    {
+      "mobId": 3220000,
+      "mobName": "Stumpy",
+      "chineseMobName": "樹妖王",
+      "isBoss": true,
+      "dropCount": 61
+    },
+    {
+      "mobId": 3230100,
+      "mobName": "Curse Eye",
+      "chineseMobName": "風獨眼獸",
+      "isBoss": false,
+      "dropCount": 40
+    },
+    {
+      "mobId": 3230101,
+      "mobName": "Jr. Wraith",
+      "chineseMobName": "小幽靈",
+      "isBoss": false,
+      "dropCount": 31
+    },
+    {
+      "mobId": 3230102,
+      "mobName": "Lorang",
+      "chineseMobName": "紅螃蟹",
+      "isBoss": false,
+      "dropCount": 44
+    },
+    {
+      "mobId": 3230200,
+      "mobName": "Star Pixie",
+      "chineseMobName": "星光精靈",
+      "isBoss": false,
+      "dropCount": 41
+    },
+    {
+      "mobId": 3230300,
+      "mobName": "Jr. Boogie 1",
+      "chineseMobName": "幼魔精靈",
+      "isBoss": false,
+      "dropCount": 11
+    },
+    {
+      "mobId": 3230305,
+      "mobName": "Toy Trojan",
+      "chineseMobName": "木馬士兵",
+      "isBoss": false,
+      "dropCount": 34
+    },
+    {
+      "mobId": 3230306,
+      "mobName": "Chronos",
+      "chineseMobName": "妖魔",
+      "isBoss": false,
+      "dropCount": 44
+    },
+    {
+      "mobId": 4130100,
+      "mobName": "Copper Drake",
+      "chineseMobName": "土龍",
+      "isBoss": false,
+      "dropCount": 35
+    },
+    {
+      "mobId": 4130102,
+      "mobName": "Dark Nependeath",
+      "chineseMobName": "黑食人花",
+      "isBoss": false,
+      "dropCount": 31
+    },
+    {
+      "mobId": 4230100,
+      "mobName": "Cold Eye",
+      "chineseMobName": "冰獨眼獸",
+      "isBoss": false,
+      "dropCount": 36
+    },
+    {
+      "mobId": 4230101,
+      "mobName": "Zombie Lupin",
+      "chineseMobName": "天使猴",
+      "isBoss": false,
+      "dropCount": 45
+    },
+    {
+      "mobId": 4230102,
+      "mobName": "Wraith",
+      "chineseMobName": "大幽靈",
+      "isBoss": false,
+      "dropCount": 37
+    },
+    {
+      "mobId": 4230103,
+      "mobName": "Iron Hog",
+      "chineseMobName": "鋼之肥肥",
+      "isBoss": false,
+      "dropCount": 31
+    },
+    {
+      "mobId": 4230104,
+      "mobName": "Clang",
+      "chineseMobName": "青螃蟹",
+      "isBoss": false,
+      "dropCount": 32
+    },
+    {
+      "mobId": 4230105,
+      "mobName": "Nependeath",
+      "chineseMobName": "食人花",
+      "isBoss": false,
+      "dropCount": 31
+    },
+    {
+      "mobId": 4230106,
+      "mobName": "Lunar Pixie",
+      "chineseMobName": "月光精靈",
+      "isBoss": false,
+      "dropCount": 42
+    },
+    {
+      "mobId": 4230107,
+      "mobName": "Flyeye",
+      "chineseMobName": "獨眼蝙蝠",
+      "isBoss": false,
+      "dropCount": 33
+    },
+    {
+      "mobId": 4230108,
+      "mobName": "Jr. Cerebes",
+      "chineseMobName": "小獵犬",
+      "isBoss": false,
+      "dropCount": 32
+    },
+    {
+      "mobId": 4230111,
+      "mobName": "Robo",
+      "chineseMobName": "藍色機器人",
+      "isBoss": false,
+      "dropCount": 35
+    },
+    {
+      "mobId": 4230112,
+      "mobName": "Master Robo",
+      "chineseMobName": "紅色機器人",
+      "isBoss": false,
+      "dropCount": 32
+    },
+    {
+      "mobId": 4230113,
+      "mobName": "Tick-Tock",
+      "chineseMobName": "鼬鼠鬧鐘",
+      "isBoss": false,
+      "dropCount": 37
+    },
+    {
+      "mobId": 4230114,
+      "mobName": "Platoon Chronos",
+      "chineseMobName": "進化妖魔",
+      "isBoss": false,
+      "dropCount": 38
+    },
+    {
+      "mobId": 4230115,
+      "mobName": "Master Chronos",
+      "chineseMobName": "妖魔隊長",
+      "isBoss": false,
+      "dropCount": 49
+    },
+    {
+      "mobId": 4230125,
+      "mobName": "Skeledog",
+      "chineseMobName": "骷髏犬",
+      "isBoss": false,
+      "dropCount": 29
+    },
+    {
+      "mobId": 4230126,
+      "mobName": "Mummydog",
+      "chineseMobName": "木乃伊犬",
+      "isBoss": false,
+      "dropCount": 35
+    },
+    {
+      "mobId": 4230400,
+      "mobName": "Iron Boar",
+      "chineseMobName": "鋼之黑肥肥",
+      "isBoss": false,
+      "dropCount": 25
+    },
+    {
+      "mobId": 5090000,
+      "mobName": "Shade",
+      "chineseMobName": "冥界幽靈",
+      "isBoss": true,
+      "dropCount": 10
+    },
+    {
+      "mobId": 5100000,
+      "mobName": "Jr. Yeti",
+      "chineseMobName": "小雪球",
+      "isBoss": false,
+      "dropCount": 37
+    },
+    {
+      "mobId": 5100001,
+      "mobName": "Transforming Jr. Yeti",
+      "chineseMobName": "小雪球",
+      "isBoss": false,
+      "dropCount": 1
+    },
+    {
+      "mobId": 5100002,
+      "mobName": "Firebomb",
+      "chineseMobName": "火精靈",
+      "isBoss": false,
+      "dropCount": 32
+    },
+    {
+      "mobId": 5120000,
+      "mobName": "Luster Pixie",
+      "chineseMobName": "日光精靈",
+      "isBoss": false,
+      "dropCount": 40
+    },
+    {
+      "mobId": 5120001,
+      "mobName": "Cellion",
+      "chineseMobName": "紅獨角獅",
+      "isBoss": false,
+      "dropCount": 37
+    },
+    {
+      "mobId": 5120002,
+      "mobName": "Lioner",
+      "chineseMobName": "黃獨角獅",
+      "isBoss": false,
+      "dropCount": 34
+    },
+    {
+      "mobId": 5120003,
+      "mobName": "Grupin",
+      "chineseMobName": "藍獨角獅",
+      "isBoss": false,
+      "dropCount": 43
+    },
+    {
+      "mobId": 5130100,
+      "mobName": "Drake",
+      "chineseMobName": "青龍",
+      "isBoss": false,
+      "dropCount": 44
+    },
+    {
+      "mobId": 5130101,
+      "mobName": "Stone Golem",
+      "chineseMobName": "石巨人",
+      "isBoss": false,
+      "dropCount": 38
+    },
+    {
+      "mobId": 5130102,
+      "mobName": "Dark Stone Golem",
+      "chineseMobName": "黑曜石巨人",
+      "isBoss": false,
+      "dropCount": 40
+    },
+    {
+      "mobId": 5130103,
+      "mobName": "Croco",
+      "chineseMobName": "黑鱷魚",
+      "isBoss": false,
+      "dropCount": 32
+    },
+    {
+      "mobId": 5130104,
+      "mobName": "Hector",
+      "chineseMobName": "野狼",
+      "isBoss": false,
+      "dropCount": 41
+    },
+    {
+      "mobId": 5130105,
+      "mobName": "Dark Jr. Yeti",
+      "chineseMobName": "黑色小雪球",
+      "isBoss": false,
+      "dropCount": 36
+    },
+    {
+      "mobId": 5130106,
+      "mobName": "Transforming Dark Jr. Yeti",
+      "chineseMobName": "黑色小雪球",
+      "isBoss": false,
+      "dropCount": 1
+    },
+    {
+      "mobId": 5130107,
+      "mobName": "Coolie Zombie",
+      "chineseMobName": "殭屍",
+      "isBoss": false,
+      "dropCount": 42
+    },
+    {
+      "mobId": 5130108,
+      "mobName": "Miner Zombie",
+      "chineseMobName": "礦山殭屍",
+      "isBoss": false,
+      "dropCount": 39
+    },
+    {
+      "mobId": 5140000,
+      "mobName": "White Fang",
+      "chineseMobName": "白狼",
+      "isBoss": false,
+      "dropCount": 45
+    },
+    {
+      "mobId": 5150000,
+      "mobName": "Mixed Golem",
+      "chineseMobName": "混種石巨人",
+      "isBoss": false,
+      "dropCount": 36
+    },
+    {
+      "mobId": 5150001,
+      "mobName": "Skeleton Soldier",
+      "chineseMobName": "骷髏士兵",
+      "isBoss": false,
+      "dropCount": 33
+    },
+    {
+      "mobId": 5150002,
+      "mobName": "Cold Mixed Golem",
+      "chineseMobName": "冰之混種石巨人",
+      "isBoss": false,
+      "dropCount": 26
+    },
+    {
+      "mobId": 5150003,
+      "mobName": "Hot Mixed Golem",
+      "chineseMobName": "火之混種石巨人",
+      "isBoss": false,
+      "dropCount": 22
+    },
+    {
+      "mobId": 5200000,
+      "mobName": "Jr. Sentinel",
+      "chineseMobName": "小石球",
+      "isBoss": false,
+      "dropCount": 27
+    },
+    {
+      "mobId": 5200001,
+      "mobName": "Ice Sentinel",
+      "chineseMobName": "冰石球",
+      "isBoss": false,
+      "dropCount": 24
+    },
+    {
+      "mobId": 5200002,
+      "mobName": "Fire Sentinel",
+      "chineseMobName": "火石球",
+      "isBoss": false,
+      "dropCount": 24
+    },
+    {
+      "mobId": 5220002,
+      "mobName": "Faust",
+      "chineseMobName": "殭屍猴王",
+      "isBoss": true,
+      "dropCount": 55
+    },
+    {
+      "mobId": 5220003,
+      "mobName": "Timer",
+      "chineseMobName": "咕咕鐘",
+      "isBoss": true,
+      "dropCount": 61
+    },
+    {
+      "mobId": 5300000,
+      "mobName": "Leatty",
+      "chineseMobName": "利堤",
+      "isBoss": false,
+      "dropCount": 35
+    },
+    {
+      "mobId": 5300001,
+      "mobName": "Dark Leatty",
+      "chineseMobName": "黑利堤",
+      "isBoss": false,
+      "dropCount": 28
+    },
+    {
+      "mobId": 5300100,
+      "mobName": "Malady",
+      "chineseMobName": "巫婆",
+      "isBoss": false,
+      "dropCount": 37
+    },
+    {
+      "mobId": 5400000,
+      "mobName": "Jr. Pepe",
+      "chineseMobName": "小企鵝王",
+      "isBoss": false,
+      "dropCount": 39
+    },
+    {
+      "mobId": 6090000,
+      "mobName": "Riche",
+      "chineseMobName": "厄運死神",
+      "isBoss": true,
+      "dropCount": 10
+    },
+    {
+      "mobId": 6090001,
+      "mobName": "Snow Witch",
+      "chineseMobName": "冰之女巫",
+      "isBoss": true,
+      "dropCount": 11
+    },
+    {
+      "mobId": 6130100,
+      "mobName": "Red Drake",
+      "chineseMobName": "赤龍",
+      "isBoss": false,
+      "dropCount": 51
+    },
+    {
+      "mobId": 6130101,
+      "mobName": "Mushmom",
+      "chineseMobName": "蘑菇王",
+      "isBoss": true,
+      "dropCount": 33
+    },
+    {
+      "mobId": 6130102,
+      "mobName": "Separated Pepe",
+      "chineseMobName": "孤單企鵝王",
+      "isBoss": false,
+      "dropCount": 33
+    },
+    {
+      "mobId": 6130103,
+      "mobName": "Pepe",
+      "chineseMobName": "企鵝王",
+      "isBoss": false,
+      "dropCount": 33
+    },
+    {
+      "mobId": 6130200,
+      "mobName": "Buffy",
+      "chineseMobName": "小丑柏非",
+      "isBoss": false,
+      "dropCount": 44
+    },
+    {
+      "mobId": 6220000,
+      "mobName": "Dyle",
+      "chineseMobName": "沼澤巨鱷",
+      "isBoss": true,
+      "dropCount": 52
+    },
+    {
+      "mobId": 6230100,
+      "mobName": "Wild Kargo",
+      "chineseMobName": "魔龍",
+      "isBoss": false,
+      "dropCount": 50
+    },
+    {
+      "mobId": 6230200,
+      "mobName": "Dark Pepe",
+      "chineseMobName": "黑企鵝王",
+      "isBoss": false,
+      "dropCount": 34
+    },
+    {
+      "mobId": 6230201,
+      "mobName": "Separated Dark Pepe",
+      "chineseMobName": "孤單黑企鵝王",
+      "isBoss": false,
+      "dropCount": 35
+    },
+    {
+      "mobId": 6230300,
+      "mobName": "Lazy Buffy",
+      "chineseMobName": "小丑瑞奇",
+      "isBoss": false,
+      "dropCount": 45
+    },
+    {
+      "mobId": 6230400,
+      "mobName": "Soul Teddy",
+      "chineseMobName": "幽魂發條熊",
+      "isBoss": false,
+      "dropCount": 57
+    },
+    {
+      "mobId": 6230401,
+      "mobName": "Jr. Lucida",
+      "chineseMobName": "幼黑格里芬",
+      "isBoss": false,
+      "dropCount": 35
+    },
+    {
+      "mobId": 6230500,
+      "mobName": "Master Soul Teddy",
+      "chineseMobName": "幽魂發條熊隊長",
+      "isBoss": false,
+      "dropCount": 39
+    },
+    {
+      "mobId": 6230600,
+      "mobName": "Ice Drake",
+      "chineseMobName": "冰龍",
+      "isBoss": false,
+      "dropCount": 44
+    },
+    {
+      "mobId": 6230601,
+      "mobName": "Dark Drake",
+      "chineseMobName": "黑龍",
+      "isBoss": false,
+      "dropCount": 47
+    },
+    {
+      "mobId": 6230602,
+      "mobName": "Officer Skeleton",
+      "chineseMobName": "骷髏士官",
+      "isBoss": false,
+      "dropCount": 42
+    },
+    {
+      "mobId": 6300000,
+      "mobName": "Yeti",
+      "chineseMobName": "雪吉拉",
+      "isBoss": false,
+      "dropCount": 37
+    },
+    {
+      "mobId": 6300001,
+      "mobName": "Transformed Yeti",
+      "chineseMobName": "變形雪吉拉",
+      "isBoss": false,
+      "dropCount": 40
+    },
+    {
+      "mobId": 6300002,
+      "mobName": "Separated Yeti",
+      "chineseMobName": "孤單雪吉拉",
+      "isBoss": false,
+      "dropCount": 38
+    },
+    {
+      "mobId": 6300005,
+      "mobName": "Zombie Mushmom",
+      "chineseMobName": "殭屍蘑菇王",
+      "isBoss": true,
+      "dropCount": 35
+    },
+    {
+      "mobId": 6300100,
+      "mobName": "Buffoon",
+      "chineseMobName": "貝爾芬",
+      "isBoss": false,
+      "dropCount": 42
+    },
+    {
+      "mobId": 6400000,
+      "mobName": "Dark Yeti",
+      "chineseMobName": "黑吉拉",
+      "isBoss": false,
+      "dropCount": 37
+    },
+    {
+      "mobId": 6400001,
+      "mobName": "Transformed Dark Yeti",
+      "chineseMobName": "變形黑吉拉",
+      "isBoss": false,
+      "dropCount": 37
+    },
+    {
+      "mobId": 6400002,
+      "mobName": "Separated Dark Yeti",
+      "chineseMobName": "孤單黑吉拉",
+      "isBoss": false,
+      "dropCount": 37
+    },
+    {
+      "mobId": 6400100,
+      "mobName": "Deep Buffoon",
+      "chineseMobName": "特貝爾芬",
+      "isBoss": false,
+      "dropCount": 46
+    },
+    {
+      "mobId": 7130000,
+      "mobName": "Lucida",
+      "chineseMobName": "黑格里芬",
+      "isBoss": false,
+      "dropCount": 42
+    },
+    {
+      "mobId": 7130001,
+      "mobName": "Cerebes",
+      "chineseMobName": "地獄獵犬",
+      "isBoss": false,
+      "dropCount": 36
+    },
+    {
+      "mobId": 7130010,
+      "mobName": "Death Teddy",
+      "chineseMobName": "怨靈發條熊",
+      "isBoss": false,
+      "dropCount": 49
+    },
+    {
+      "mobId": 7130100,
+      "mobName": "Tauromacis",
+      "chineseMobName": "月牙牛魔王",
+      "isBoss": false,
+      "dropCount": 42
+    },
+    {
+      "mobId": 7130101,
+      "mobName": "Taurospear",
+      "chineseMobName": "長槍牛魔王",
+      "isBoss": false,
+      "dropCount": 41
+    },
+    {
+      "mobId": 7130102,
+      "mobName": "Yeti and Pepe",
+      "chineseMobName": "雪吉拉戰車",
+      "isBoss": false,
+      "dropCount": 64
+    },
+    {
+      "mobId": 7130103,
+      "mobName": "Commander Skeleton",
+      "chineseMobName": "骷髏指揮官",
+      "isBoss": false,
+      "dropCount": 36
+    },
+    {
+      "mobId": 7130200,
+      "mobName": "Werewolf",
+      "chineseMobName": "狼人",
+      "isBoss": false,
+      "dropCount": 44
+    },
+    {
+      "mobId": 7130300,
+      "mobName": "Master Death Teddy",
+      "chineseMobName": "怨靈發條熊隊長",
+      "isBoss": false,
+      "dropCount": 42
+    },
+    {
+      "mobId": 7140000,
+      "mobName": "Ghost Pirate",
+      "chineseMobName": "百烈",
+      "isBoss": false,
+      "dropCount": 41
+    },
+    {
+      "mobId": 7160000,
+      "mobName": "Dual Ghost Pirate",
+      "chineseMobName": "多立百烈",
+      "isBoss": false,
+      "dropCount": 50
+    },
+    {
+      "mobId": 8130100,
+      "mobName": "Jr. Balrog",
+      "chineseMobName": "巴洛古",
+      "isBoss": true,
+      "dropCount": 47
+    },
+    {
+      "mobId": 8140000,
+      "mobName": "Lycanthrope",
+      "chineseMobName": "白狼人",
+      "isBoss": false,
+      "dropCount": 41
+    },
+    {
+      "mobId": 8140100,
+      "mobName": "Dark Yeti and Pepe",
+      "chineseMobName": "黑吉拉戰車",
+      "isBoss": false,
+      "dropCount": 59
+    },
+    {
+      "mobId": 8140200,
+      "mobName": "Klock",
+      "chineseMobName": "冥鐘",
+      "isBoss": false,
+      "dropCount": 45
+    },
+    {
+      "mobId": 8140300,
+      "mobName": "Dark Klock",
+      "chineseMobName": "黑暗冥鐘",
+      "isBoss": false,
+      "dropCount": 43
+    },
+    {
+      "mobId": 8140500,
+      "mobName": "Bain",
+      "chineseMobName": "煉獄獵犬",
+      "isBoss": false,
+      "dropCount": 42
+    },
+    {
+      "mobId": 8141000,
+      "mobName": "Spirit Viking",
+      "chineseMobName": "維京",
+      "isBoss": false,
+      "dropCount": 49
+    },
+    {
+      "mobId": 8141100,
+      "mobName": "Gigantic Spirit Viking",
+      "chineseMobName": "巨人維京",
+      "isBoss": false,
+      "dropCount": 44
+    },
+    {
+      "mobId": 8142000,
+      "mobName": "Phantom Watch",
+      "chineseMobName": "幽魂女巫",
+      "isBoss": false,
+      "dropCount": 40
+    },
+    {
+      "mobId": 8143000,
+      "mobName": "Grim Phantom Watch",
+      "chineseMobName": "怨靈女巫",
+      "isBoss": false,
+      "dropCount": 48
+    },
+    {
+      "mobId": 8148008,
+      "mobName": "Crimson Stirge",
+      "chineseMobName": "紅蝙蝠",
+      "isBoss": false,
+      "dropCount": 13
+    },
+    {
+      "mobId": 8150000,
+      "mobName": "Crimson Balrog",
+      "chineseMobName": "地獄巴洛古",
+      "isBoss": true,
+      "dropCount": 45
+    },
+    {
+      "mobId": 8160000,
+      "mobName": "Gatekeeper",
+      "chineseMobName": "通道守門人",
+      "isBoss": false,
+      "dropCount": 51
+    },
+    {
+      "mobId": 8170000,
+      "mobName": "Thanatos",
+      "chineseMobName": "達納托斯",
+      "isBoss": false,
+      "dropCount": 53
+    },
+    {
+      "mobId": 8220000,
+      "mobName": "Eliza",
+      "chineseMobName": "艾利傑",
+      "isBoss": true,
+      "dropCount": 57
+    },
+    {
+      "mobId": 8220001,
+      "mobName": "Snowman",
+      "chineseMobName": "雪毛怪人",
+      "isBoss": true,
+      "dropCount": 55
+    },
+    {
+      "mobId": 8645263,
+      "mobName": "Turbo Robo",
+      "chineseMobName": null,
+      "isBoss": false,
+      "dropCount": 30
+    },
+    {
+      "mobId": 9001000,
+      "mobName": "Dances with Balrog's Clone",
+      "chineseMobName": null,
+      "isBoss": true,
+      "dropCount": 1
+    },
+    {
+      "mobId": 9001001,
+      "mobName": "Grendel the Really Old's Clone",
+      "chineseMobName": null,
+      "isBoss": true,
+      "dropCount": 1
+    },
+    {
+      "mobId": 9001002,
+      "mobName": "Athena Pierce's Clone",
+      "chineseMobName": null,
+      "isBoss": true,
+      "dropCount": 1
+    },
+    {
+      "mobId": 9001003,
+      "mobName": "Dark Lord's Clone",
+      "chineseMobName": null,
+      "isBoss": true,
+      "dropCount": 1
+    },
+    {
+      "mobId": 9001004,
+      "mobName": "Shadow Kyrin",
+      "chineseMobName": null,
+      "isBoss": true,
+      "dropCount": 1
+    },
+    {
+      "mobId": 9300018,
+      "mobName": "Tutorial Jr. Sentinel",
+      "chineseMobName": null,
+      "isBoss": false,
+      "dropCount": 1
+    },
+    {
+      "mobId": 9300038,
+      "mobName": "Ghost Pixie",
+      "chineseMobName": "鬼精靈",
+      "isBoss": false,
+      "dropCount": 27
+    },
+    {
+      "mobId": 9300659,
+      "mobName": "Chunky Snail",
+      "chineseMobName": "矮胖蝸牛",
+      "isBoss": false,
+      "dropCount": 9
+    },
+    {
+      "mobId": 9308021,
+      "mobName": "Southperry Pirate Lord",
+      "chineseMobName": "海盜領主",
+      "isBoss": true,
+      "dropCount": 12
+    },
+    {
+      "mobId": 9500148,
+      "mobName": "Tortice",
+      "chineseMobName": "冰烏龜",
+      "isBoss": false,
+      "dropCount": 32
+    },
+    {
+      "mobId": 9834151,
+      "mobName": "Tauroshield",
+      "chineseMobName": "盾牌牛魔王",
+      "isBoss": false,
+      "dropCount": 13
+    },
+    {
+      "mobId": 9834178,
+      "mobName": "Snowball Pepe",
+      "chineseMobName": "雪球企鵝王",
+      "isBoss": false,
+      "dropCount": 33
+    }
+  ]
+}

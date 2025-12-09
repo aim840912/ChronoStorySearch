@@ -1,0 +1,19 @@
+{
+  "itemId": 2280005,
+  "itemName": "[Skill Book] Dragon's Breath",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 8141100,
+      "mobName": "Gigantic Spirit Viking",
+      "chineseMobName": "巨人維京",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

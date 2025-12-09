@@ -1,0 +1,102 @@
+{
+  "id": 1072032,
+  "description": {
+    "id": 1072032,
+    "name": "Bronze Chain Boots",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAYAAADjaQM7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACnElEQVR4nJ2WgXG0IBCF15k0QErwL4GUYEowJVxKuCtBS4gl5EqIJYQSYgmhBH8euIocAoYZh9PT/Xi7j9UnOjfmyLWq9OES2Ar4/hSkNZEQRONIVNdEbzc9lwJTsDkEvL5rC5gmB2pJ0JlxBJu/PkQUwHN3cYtoJdFdUZG6GCwJwn+A4HCpNDcq/SdlURADuFbI3qTc+TSVgaLKEACBfQArud+NEulAmNWofWXZVD7A2GUMxjlAUIDADLIzzhdlJbULYdVt0DMe5EDR2VMmGzhSF9UuZpAKK2xJHwIBALBtxWqSktodWT8NXM2xKTT32+f+AosCbQ1NqhrpHAtXskk6A0UJ+NmzMDsYII1plFECEMB+Cq1ra2cSnPf3eAvLwaph3HojQLZrLCDeFuxO1BJKLw3R8twOWNKI7QNG1dyaIFK6WjWNm/k83A4xYOkrZu0sVknQwrij+Bt9jGyD4vcZ0oYVX6+u00MZNwA7B6CPTtAwQN1WvxzM1uuzEy5lpiZ97/YZDLMCgxQyCNdpLFNmOwmUIHUceHUhbK82ZdyUcT+DJnUijdbGixJagD4YAf0UhiCTQqKEQR4+AbQWqwkQGCClHrt/DhTC5t+fq7lxMBvUgNCasIHRMUIz1PtWxRs7BfJhK6iWlyyQlTLIqp3SoJ0yH8Szu66j+8vv9kKILIhhM+oTA4Vvah8Uui8HOlR2FhTupywMQ43DCkiBUCOkjkG33qp6Jnr4kNz1rB3M/9LlDcsgHNfOmWZUm+0X0Ks55AFI8wFY9fKmbd0w2osLiI3szy7VzixoVRbiUtdHQD4QB/w7sbJnA/wFkAOGM6fW3MeBBk5IArQbfhpfTKBvyo9bImj4e3c8eX9A6j/v5tiKRWzFkWvRBfwHZwEwT+EhFTkAAAAASUVORK5CYIIA2wF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNWQ4NzRmOGZmZi1rdGgybiIsImdpdEhhc2giOiI0ZWEwZjk2NjkwYjBjOGQ1ZDk5MzM2NjY0ZmI0ZmIxMWNjNjE5ZGY0IiwidXJsIjoiL2FwaS9HTVMvODMvaXRlbS8xMDcyMDMyL2ljb24iLCJjcmVhdGVkQXQiOiIyMDI1LTEyLTA2VDA1OjQwOjEyLjg0MzY5ODNaIiwibWV0YSI6bnVsbH0=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAYAAADjaQM7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACnElEQVR4nJ2WgXG0IBCF15k0QErwL4GUYEowJVxKuCtBS4gl5EqIJYQSYgmhBH8euIocAoYZh9PT/Xi7j9UnOjfmyLWq9OES2Ar4/hSkNZEQRONIVNdEbzc9lwJTsDkEvL5rC5gmB2pJ0JlxBJu/PkQUwHN3cYtoJdFdUZG6GCwJwn+A4HCpNDcq/SdlURADuFbI3qTc+TSVgaLKEACBfQArud+NEulAmNWofWXZVD7A2GUMxjlAUIDADLIzzhdlJbULYdVt0DMe5EDR2VMmGzhSF9UuZpAKK2xJHwIBALBtxWqSktodWT8NXM2xKTT32+f+AosCbQ1NqhrpHAtXskk6A0UJ+NmzMDsYII1plFECEMB+Cq1ra2cSnPf3eAvLwaph3HojQLZrLCDeFuxO1BJKLw3R8twOWNKI7QNG1dyaIFK6WjWNm/k83A4xYOkrZu0sVknQwrij+Bt9jGyD4vcZ0oYVX6+u00MZNwA7B6CPTtAwQN1WvxzM1uuzEy5lpiZ97/YZDLMCgxQyCNdpLFNmOwmUIHUceHUhbK82ZdyUcT+DJnUijdbGixJagD4YAf0UhiCTQqKEQR4+AbQWqwkQGCClHrt/DhTC5t+fq7lxMBvUgNCasIHRMUIz1PtWxRs7BfJhK6iWlyyQlTLIqp3SoJ0yH8Szu66j+8vv9kKILIhhM+oTA4Vvah8Uui8HOlR2FhTupywMQ43DCkiBUCOkjkG33qp6Jnr4kNz1rB3M/9LlDcsgHNfOmWZUm+0X0Ks55AFI8wFY9fKmbd0w2osLiI3szy7VzixoVRbiUtdHQD4QB/w7sbJnA/wFkAOGM6fW3MeBBk5IArQbfhpfTKBvyo9bImj4e3c8eX9A6j/v5tiKRWzFkWvRBfwHZwEwT+EhFTkAAAAASUVORK5CYIIA2wF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNWQ4NzRmOGZmZi1rdGgybiIsImdpdEhhc2giOiI0ZWEwZjk2NjkwYjBjOGQ1ZDk5MzM2NjY0ZmI0ZmIxMWNjNjE5ZGY0IiwidXJsIjoiL2FwaS9HTVMvODMvaXRlbS8xMDcyMDMyL2ljb24iLCJjcmVhdGVkQXQiOiIyMDI1LTEyLTA2VDA1OjQwOjEyLjg0MzY5ODNaIiwibWV0YSI6bnVsbH0=",
+    "price": 14500,
+    "reqLevel": 30,
+    "reqDEX": 60,
+    "reqLUK": 80,
+    "incPDD": 16,
+    "incDEX": 1,
+    "tuc": 5,
+    "reqJob": 8
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes",
+    "lowItemId": 1070000,
+    "highItemId": 1080000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incINT": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incLUK": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incPAD": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incMAD": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incPDD": {
+      "base": 16,
+      "min": 1,
+      "max": 31
+    },
+    "incMDD": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    },
+    "incACC": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incEVA": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incSpeed": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incJump": {
+      "base": 0,
+      "min": 0,
+      "max": 1
+    },
+    "incMHP": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    },
+    "incMMP": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    }
+  }
+}

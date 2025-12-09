@@ -1,0 +1,43 @@
+{
+  "id": 1082145,
+  "description": {
+    "id": 1082145,
+    "name": "Yellow Work Gloves",
+    "description": "",
+    "chineseName": "黃色工作手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 10,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAZCAYAAADAHFVeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB2ElEQVR4nKWVjZGDIBCFlxkbMCXYglcCKYEW7kqIJZgS7ko4SwglJC2khKQEDpCV5Vdy2RmjKLxv3y6aDt4PFY1ZaeK7MKUeAMuXAPELcD4+YZIS4Qn0v7DNzXQEGPsFFn0eeqHpogh9BbYBjKCN5+Kf3rXDSY9vWShrhakAQCE9gQ4AYl6HYlyhABxMmdnBarAarA1Cx4Mbc31I47C3jmfOrcMSTL0EoeXE0EABupeTv5WDhSAqisKlMUJ1SY2jFajrN8ksbAWhQE24BAIHSiPomQeZyVKfP6PpNRAmlwk1G3ew9SwC6W2sD3GKxEoOKSh25TaLCe8sBl0IfKg4xLU5UBQduE8Ogsx7OV9Dl0k590DSOcJrAquCgnJSceoOQU7YruH+sbxRWA10IX1D0TFzrwAycVzzs7uRmZ1yGkmWFE5FtwTyILsGDeO7RmLbIDMK7IJEtnTMfSksLHKWwAIBDAJKEkhBzF0rdSXuePqeAfyQUlxJ86VvcLDzMiC6xrqLXhmE2b6pOePKrL27MreAqBYPk+2SSQ9ois1tPoLk6W5MI+7Vt7tPXKHAHhCvzU+XTDj4jEz2Z33MCGpzFejRQc4ZzWgdf4QJNLjKRumfOtv0yvOm+APUeTbw9lRZjQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACIUlEQVR4nKWWjZGCMBCFlxkawBK4ErAELCEtnCVICViClnCUICVoCWcJWkIugWzYbDYRzzeTyQ/Jfvvy41jC59KsX+QmfwrU+gEw7BWoH4Dj7gndOGICIvi/QO+q2wE01QCDqetKmQxUFvwO0ENs0EnPYfl6N04707+JYA9dA9QBhIIqAq4BVD93VTODAVqwW15swENzwHUg2q9dvzVltE6ryXnftt5pCqjfAtGtRRmoAnO2XTgsAUMYDYzBU30Em+21zmaosdWNSeAMwyC54CkYOFis6AwXmF0wmvqbLcnBMEFBurcuIThDBjNX3BR1YAFTTimMu3MXCLU45LALSaDOOMW1EkxQCe7nCWH27fbX0G20ta9go3OGbQbMwoKtpQDqEmEu+LSmXT6PNw7MwS7kHDFwI4wlYFa7OUd/Swt7gw4NyZYmQAP7JGTYtAaN41tk8pemxyAvYUrcxsL9okxA5lAEBkFQBBYlEcMK19b6Sly28jsEOM9VENgF9YdOb6QAo2sml/w5EYfTOepecGfX392Wr4HRWC1LGMItnSc+YJVoEEGBAX5LY/GzO7lx4o4GyUGxjYNlNGmzZGZdHE3pEQbLuFMFeW1s+nRAckgzs/oqtvBLk3DuzN8maCCvJ6mnwoGVK1vStke/N0mcyLwjxK/tCbIQZvfoToEIqEmN41ZnNneNoiQkh6nJKQf8G28HpWQf7wwqOakS8FyCvv0HdGhSqSVdbAsAAAAASUVORK5CYII=",
+    "price": 3000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 10,
+    "tuc": 5,
+    "incINT": 1,
+    "incPDD": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 1,
+      "min": 0,
+      "max": 2
+    },
+    "incPDD": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    }
+  }
+}

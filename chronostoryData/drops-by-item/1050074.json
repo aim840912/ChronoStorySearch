@@ -1,0 +1,41 @@
+{
+  "itemId": 1050074,
+  "itemName": "Dark Enigmatic",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 7130102,
+      "mobName": "Yeti and Pepe",
+      "chineseMobName": "雪吉拉戰車",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7130300,
+      "mobName": "Master Death Teddy",
+      "chineseMobName": "怨靈發條熊隊長",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8141000,
+      "mobName": "Spirit Viking",
+      "chineseMobName": "維京",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

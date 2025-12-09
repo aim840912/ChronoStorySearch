@@ -1,0 +1,41 @@
+{
+  "itemId": 1203013,
+  "itemName": "Hwabi Throwing-Stars",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 6300005,
+      "mobName": "Zombie Mushmom",
+      "chineseMobName": "殭屍蘑菇王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.25,
+      "displayChance": "0.25%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8130100,
+      "mobName": "Jr. Balrog",
+      "chineseMobName": "巴洛古",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.2,
+      "displayChance": "0.20%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8150000,
+      "mobName": "Crimson Balrog",
+      "chineseMobName": "地獄巴洛古",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.2,
+      "displayChance": "0.20%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

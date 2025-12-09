@@ -1,0 +1,41 @@
+{
+  "itemId": 1082088,
+  "itemName": "Dark Manute",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 5130102,
+      "mobName": "Dark Stone Golem",
+      "chineseMobName": "黑曜石巨人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6230200,
+      "mobName": "Dark Pepe",
+      "chineseMobName": "黑企鵝王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6230201,
+      "mobName": "Separated Dark Pepe",
+      "chineseMobName": "孤單黑企鵝王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

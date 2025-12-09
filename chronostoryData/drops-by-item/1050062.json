@@ -1,0 +1,19 @@
+{
+  "itemId": 1050062,
+  "itemName": "Beige Linnex",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 8160000,
+      "mobName": "Gatekeeper",
+      "chineseMobName": "通道守門人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

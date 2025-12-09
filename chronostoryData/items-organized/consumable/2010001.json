@@ -1,0 +1,27 @@
+{
+  "id": 2010001,
+  "description": {
+    "id": 2010001,
+    "name": "Meat",
+    "description": "A tasty-looking meat. .\\nRecovers around 100 HP.",
+    "chineseName": "烤肉"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACo0lEQVR4nLWWjXHjIBCF8cw1QAtcCUoJcgm6EpQS7BLsEuISohKiEkIJRwlHCdw+xKKVhH6cSdajMaCfb9+yC/xSZQuifVLfbCVoCOFfbDhr1e+Xc/hu8Bwa/n5+ZKD3Tv2EMTSGE0BTVWvPhpXxp6MAaFYHg8ICOFxmY55+sId17MxheFTqnFVaawFWEYx/hpnxtnLE0/QDuK2MhB8CJ6hTxgwvow0OgP31TjAddUljB5zXWfEzBujp9frI8/V2a5V79JRE48e0NrGPaIzjPsF1VA7FR9VyIuUH4cBbXSfYIGkOHNoDmJVD9VHwomTwovM+hhUlA5VzW6p+Dry2ImUVDJ6qdBMgzKUuEkyAVQkuoYEzkT/CCTMAfPxkCTS6OQ5sZXVRKV7WKUHGUhmymBVK4FYGl8K9Gl4Gc49VMqwEmoc8uqr1YmwClfPGJtWuAfm9mmq9ogu1zq721J6rldBT53xoxNKzVDsFSljd1MpbF4E+QTXG6erddOMoz+lMcUkhnomwtkFH9feHqlJ952ewutHYHnRV7RrQPrqsrGT3vlfd4PVmIkUwGo1JdVkCUjihsKJ/2/URbAkAZU6qpLG5rWUvvAoMkcshDMmCcGLOTLoAMpc23jfkhCVoSeUWNCtGqCUYKm3yHmoiDGAC8pLpm0FhCbgHXYBLFsOKrbHGvjssmVXdqNu7URdaLl/Or/MTx2kPOjGuQ5vmiw0bhMPee7tEMB8CaCLoCDQurT45cQSa1XLq1xRK1KQVSRJbBG4TGEAcfRgmI/WU0vhxgClRMMcyL9P8qTb15WkSQCfK6ihUlNGouJtuMzFhzn+u4eP9pga1I5AOB/m5Z5SeEujw6Z9DmoD7u8wefMvkQY+UL975CvSQuY2l8Segk9OlKkTmP9WN0C5bVtG8AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC20lEQVR4nLWWjXHjIBCF8cw1wJWglCCXIJcgl6CUYJdglxCXYJcQlRBKOEoIJej2IRatEMjyTLIeLEA/375l+fmj8jaI+k79sOWgwzB8+4o1Rr3tD8NPg1Po8O/rMwKds+o3jKE+nABWdV16dij0vxwFQKM6GBRmwMMp6XP0g92MZWc2w71Sa43SWguw8mBcGVZNt5UlnqYfwF1dSfgmcIBaVVXjy6iDA2B/vhJMe13S2AHrdFT8igG6ez/f4nh9XDplbz0l0fQxrSvfRjSmfhfg2iuH4q1qOZHig3Dgo2kCbJSUAsf6CGblUL0VvJgyeNE658OKKQOVqS1VvwYurUhRBYPnKu0MCLOhiQQTYJWDS+jAmcgf4YQZAc5/Mgea3Jw61rI6qxQv65Ag01QZs5gVSuBaBufCXQwvg7nFKhmWA6Uh965qveibQeW4sUm1JSC/19Bcr6lgrrOrPdVTtRK6e1g3tGLpWaqdAyWsaRvljPVAF6Aa/VR6O9848mOaKM4pxDMe1rVoqP56U3WY3/EZrG7U9wxaVFsCmtsjKsvZte/VY/R6NZE8GJW2CvMyB6RwQmFNV/PoPdgQAMqsVEl9qZWyF14NDJHLIQzJgnBizKpQAKpOnb9fkROGoDmVa9CoGKGWYKg0wXuo8TCACchLpmtHhTngM+gCnDMfVmyNDfbdccmsm1Zd7pU60XK5P7ynJ47dM+jMeB6aMF5s2CAs9t7LyYP5EEADQUegaWl1wYkt0KiWU7+hUGJOGpEkvkbgLoABxNGHYTJSLyn1HweYEgVjLPMyjJ/qQlueJgG0YlpthYppNCl+zLeZv/g7HM/fn/eLGtVOQDocxG+VoDq5wvYB9CX6DqK+OEJySAMQTvmOFKoLRTpwFnW57kXZ8qBHynE5UkGHXzcklAGVuErYco9aMbuyNOaULjwvtEv3jhTOu2jvw30uMyg6bALOqVsehJfgt6Q9e/4/aAfil0sxwvoAAAAASUVORK5CYII=",
+    "slotMax": 0,
+    "price": 53,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Food and Drink",
+    "lowItemId": 2010000,
+    "highItemId": 2022000
+  }
+}

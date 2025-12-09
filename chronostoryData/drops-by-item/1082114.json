@@ -1,0 +1,30 @@
+{
+  "itemId": 1082114,
+  "itemName": "Sapphire Emperor",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 7140000,
+      "mobName": "Ghost Pirate",
+      "chineseMobName": "百烈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8140200,
+      "mobName": "Klock",
+      "chineseMobName": "冥鐘",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

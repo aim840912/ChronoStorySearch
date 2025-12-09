@@ -1,0 +1,27 @@
+{
+  "id": 4003005,
+  "description": {
+    "id": 4003005,
+    "name": "Soft Feather",
+    "description": "A soft and light feather. Used to make arrows.",
+    "chineseName": "柔軟的羽毛"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACN0lEQVR4nK2XDXXCMBCAr+/NQJAQJAQJTMImgVmYhFkYEoaEVQKVsEggErLcXS5/tCuw3HvQNC357j/hCfqLX5gf2omecIJ6f04Tzjm+Wgfb3asolZToBfcM1eGjBA2KhhaUUXC5fId7BcOw86JAD3gAXyooAgFMvNesQACjJ1BJUaCj211UoARnmcYJxtMIh49DmusCd24iy9BKtE4pVz23kwUb4q6NgeP7MVnfAz5sNs/+5/wFSjtKLmXs7IvG6KgsK9fL7YNkMyqBliqt0kMcm+AVmpvyj3qWGmVwqQSKjtZixp+OY7K+NxzFf31+hPjaADpVDzDe+xfDYeEa7Ffn9EUlZymmCEHhBGSYzIVko8t/4QTlBrIHLjd060Txxdjrws2tPAovoFjTklwKuLNlsFjdAz5jaSuWGorZvxRKibjg8g0O7mqvRUzLBVWlgHMjXRkMzbOixqLcAvdoqSTLnCDUUQeT+NpqR+N3HOye33B4867mxcXKiObSw7OlGHfVtPNyR0PwdvNagdfgPscWRVcWMWAPy+JSmYX2ewVeg8dMLpZLNVvu2xmWJSspNT23/orbs3sRWiszwV8SDw6L4BvgAp5zb7tnS2KxUkuuvhk+jcdQNgdYlwyO0FXwX3DaIDi+aEl9NmOxEcj390CX4LGZ+NAeT7g9xm52fTgQKLbRtn7vgadzNkIxxsOQ1qFTCg7O35/VDyMwvQcPyNMStF04wNo/Aw8BW3hgDlcH+hn5N6yVX8kXFwn1nzhSAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACe0lEQVR4nK2WjXXCIBCAL+91ARwBR8ARdIR2BF2hI3SFOkIdoRnBjFBGkBEoBxwchBhtufcwhJh89w8v0F/swvpQL/SEe6i117RgjAlXbWC7eyOlkhK94DZApRuC0CD8VINQAm63b3cvYBh2lhToAXfgWwFFIICK9zIo4MDoCVSSFOjodhMV4OAs0zjBeBnh+HFMa13gxkzeMrQSrRPCFM/1pEG7uEul4Px+Ttb3gA+bzcH+XL9ASOOTSyjd/KNSMioblOvl9oGyGZVAS4UU6SHOlfOKX5vySz1LzWcwVwJFRmsx4y/nMVnfG45ivz4/XHy1A12KBxjv/asKYQk12K/O/Y8vOe1jihCUkIABRmsu2fzlv3APDQ1kD6Hc0K2Tjy/GXjI31/JXOINiTVNyCQidLYPJ6h7whqW1aN9Q1P6VKUVinMs3OHmqvbKY8g+KQgFjRn8NYKiesRqL8gjcoqWULC1BqPEdjOKrix0t/MfA7nDC6cO7miUXC0WaUw/PlmLcRdXO+Y6G4O3mrQCvwW2OLYosLAqAPSyLSWXm2u8MvAaPmcw+l2qW79sZliUrSTXd+v6K27N7EVoqM8E9iQeHRfADcAK33Fvv2ZRYQaklVz8Mn8azK5sjrEsGR+gq+B7cbxAhvmhJeTYLoiMw3D8DXYLHZmJde7zg9hi72fxwQFBso3X9PgNP52yEYoyHIX3Hn1Jwcv3+LF6MQBLsmctNvN2Hg+UtaPwYjm2E/VTvHth8fmKcgw0bCe6YAz/Q80Lm4wSlda0SWOrBBNVxGIITFBhIsiut8+szsrgptLKdA+oXl3eX8lk9r0cTTq6p982Wgi1F7ik7+/8vTsMy4r+awxQAAAAASUVORK5CYII=",
+    "slotMax": 0,
+    "price": 50,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

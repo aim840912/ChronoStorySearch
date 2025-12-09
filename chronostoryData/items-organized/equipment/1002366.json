@@ -1,0 +1,55 @@
+{
+  "id": 1002366,
+  "description": {
+    "id": 1002366,
+    "name": "Black Oriental Fury Hat",
+    "description": "",
+    "chineseName": "黑色綢緞帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAeCAYAAACiyHcXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEG0lEQVR4nLVX7ZGjMAwVM9eAU4JbcEogJUAJoQRSQigBSlhKiEuIW6CEdQmcnowdTMjH/TjN7IYvW0/vSUL8of9j8+q4+PTwOxB7G8302op4f57ncOr4/5HmT0BegZB9/MD78EanIWx+O8vxky3XZ/yW/He5XPhqS957mu/DRyB7IGYgwEbYZJom+u0tHZp9ADA4bieibirJjia7d7qUDMS+BbIFMc93oqZp5AQAbjfegJcaY54WO9AE41vWG1KKBLjiA/xG847e2hMTWADn2OR+d3Q8Glr7N1qRm4KDCKwonKA/Ho+yVmudghA2BsNsOrC5y8YahLAA+gRAHwDAEBmM/QuAbaQBTCH5U5Zlci5BrZ77igmwgEW3MwNoAgCjOC8ogvAUmQUQ5SdyPhxDMgRxbHwCvbZ3bGQgEAl0xgJsZJQjO2mONNCrtCM1PRyA9ZQWzIbnE6x/mz+fmED2o8y6KUauUlSlsTSMOtNbEWVRo4J+++cqigBe4XhKzIsLWX42Ew1Op6ggy9Y4M+R/NDzrFjb2LAa59J0kSQYCmzyScKOtyaMGI0ajlChL1JWjry2CmDMAcFBaabuVGanjBqQXJiqWpVtk0Wo/898BsdPztSc5oubpvORV6IILCSXLBBCvLEoCAMiPQ0MfDSAyFmB9P1BdV4s8P3ylpvBuqkWWaPVYcsQ2VdO2JwDAlpGOCW5L+U15kTHxYGHmTUMIaOEAU9e13A/gtDjEuXquxsz26N9j4sHAeZBI69qnquj7PoG5XjvJk7qrEnNoamhuKIjG6tBfFklgJcfVbZwO3ALa0ic2BMTVOHk/oGXHTdr2IozElxnAABzs52cUMPF5yAG7ty71gpPbZ0LpAB4vPIBHuQoIicApoTlG2DRnWkgQ2qMsovsCANelaUVWunXCTi+Z0EpLone+BJwgR88VgFkgyhEA9OI4ytF1HbPTMoBC5NAc0dVwAvO6n8oGOSadJfi3/UJAhHKyKzkQERL3nMmBY+8rYUDmBqgwUpJj3dsA4JUUuyBgKCdMQJexlfM1G1GO6PxadfLGXUsCk3smJENkAOUISeJ5lALB2tHikiSmDKh4mEcwHiqg4Cz078rBj6NMY4lGa7XNnEdDX+gWMMOLck1MAO0gc4EXR3OYm1dyDHw8ZXJIDlGYQz51RoC5nT2/IN+AiPrFxHqACVM+sMB5KF2K43zqlHuDzNZOQxiY4KtUqIscRIHGAaT1qDIwh8MhjO4LM0VxSZvGZ74BEJ+zPB5O7P20+M2YwAU0jr7iEQ7vrNUEpVYybV/n3xgS92yC886my/vzBG40Y/jQwSL4w0K7mrD+xXnJ4yGqEvHsOX8FIj00uMcnX7V5Oyp6ZNdaiW0b4ICe9t2zd9+iadG4/Qb98DHzjeO1/QWFDSfHbTYROQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAeCAYAAACiyHcXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEK0lEQVR4nLVX7/GiMBBdZq6BWEJaiCVgCVKClIAlSAlQwo8STAmmhKOESwncvg2JBEG9D7czKv+Sffve7rL+ov9j0+K4+PTwOxBbG020b0W8P01TOHX8faTpE5A9ELKP73kf3ujUh83vFzl+sfn6hN+SP9frla825L2n6dF/BLIFYgICbIRNxnGkP52lQ70NAAbHzUjUjiXZwWT3TteSgdi3QNYgpulBVNe1nADA/c4b8FJjzMtiB5pgfMt6Q0qRAFd8gN9o3tFbe2ECC+Acmzwejo5HQ0v/RityY3AQgRWFE/TH41HWaq1TEMJGb5hNBzY32ViCEBZAnwDoAgAYIoOxfwGwjjSAKSR/yrJMziWoxXNfMQEWsOh+YQB1AGAU5wVFEJ4iswCi/EjOh2NIhiCOtU+gl/aOjQwEIoHOWICNjHJkR82RBnqVdqTGpwOwntKC2fB8gvVv8+cTE8h+lFk7xshViqo0lvpBZ3oroixqVNCf7rWKIoA9HC+JeXUhyy9mpN7pFBVkWRtnhnxHw7NuZmPLYpBz30mSZCCwyTMJV9qaPGowYjRKibJEXTj62iKIKQMAB6WVtns2A7XcgPTMxJllaWdZtNrO/HdA7Ph67UWOqHk6L3kVuuBMQskyAcSeRUkAAPlxqOmjAUTGAqzreqqq8yzPD1+pKLybKpElWjWUHLFN1bTuCQCwZqRlgptSflNeZEw8WZh40xACWjjAVFUl9wM4LQ5xrl6rMbMt+reYeDJw6SXSqvKpKrquS2But1bypGrPiTk0NTQ3FERtdegvsySwkuNqV057bgFN6RMbAuJmnLwf0LLjJk1zFUbiywxgAA728zMImPg85IA9Gpd6wcltM6F0AI8XHsCjXAWEROCU0BwjrOsLzSQI7VEW0X0GgOvStCIr7TJhx10mtNKS6K0vASfI0XEFYBaIcgQAnTiOcrRty+w0DKAQOTRHdDOcwLzu52yDHKPOEvzbfiEgQjnZhRyICIl7yeTAsfdnYUDmBqgwUJJj2dsAYE+KTRAwlBMmoOvQyPmSjShHdH47t/LGXUoCk3smJENkAOUISeJ5lALB2sHikiSmDKh4mEcwHiqg4CT0b8rBj6NMY4lGa7TNnEdDX2hnMP1OuSYmgLaXucCLoynMzQs5ej4eMzkkhyjMIZ86I8DcL55fkG9ARP1iYj3BhCkfWOA8lC7FcT51yq1BZm2nPgxM8FUq1EUOokDjANJqUBmYw+EQRveZmaK4pk3jM98AiM9ZHg9H9n6a/WZM4AIaR3fmEQ7vrMUEpRYyrV/n3xgS92KC89amy9vzBG7UQ/ijg0Xwh4V2MWH9i/OSx0NUJeJZOD9S7GQ7IGAH/qje0e944bx6Oyp6ZtdSiXUb4ICyU/5sDiB7fwOx3Wn+VbxXl9398GdmYdX86zc+yf4C+I0vPpjOkC0AAAAASUVORK5CYII=",
+    "price": 110000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 278,
+    "reqLUK": 93,
+    "reqJob": 2,
+    "reqLevelEquip": 90,
+    "tuc": 7,
+    "incINT": 5,
+    "incMMP": 30,
+    "incPDD": 48,
+    "incMDD": 75
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 5,
+      "min": 0,
+      "max": 14
+    },
+    "incMMP": {
+      "base": 30,
+      "min": 0,
+      "max": 75
+    },
+    "incPDD": {
+      "base": 48,
+      "min": 3,
+      "max": 93
+    },
+    "incMDD": {
+      "base": 75,
+      "min": 30,
+      "max": 120
+    }
+  }
+}

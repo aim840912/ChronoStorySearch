@@ -1,0 +1,45 @@
+{
+  "id": 1452012,
+  "description": {
+    "id": 1452012,
+    "name": "Marine Arund",
+    "description": "",
+    "chineseName": "馬藍艾倫弓"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB8klEQVR4nL2X73mDIBDGj+fpAu0IdoR0BFdIV8gIdYQ4QjtCXMERwgh1hKxA5BA44cS/5P0QxeDdj4M78A3y6zHx/IM2XgESOR30oM9TIIrciwXOuP6K+Y9VMiLn6z9em+ozBaVoX9rfvd80vANZWbsiBSLQ4OnKOolgiTMWQFb+vreJKkqA9xKB5taI0J1G49Fg57MHI87uvyVevy5N7JxG0keiV4u/FERFLxAYNwrgQ60h6r8Guk72jtrYeWjT+xQhCIZ0CD0PQ6mVaUop8WohZNumAEYmaL94avTIjdMYhjaEUKfSTEVRnGClIvsUBBcnRkW3eJiRhtEDlKP2XDRYu9OLdToyTrfbDaemrmtYqEl7WyurshBd12EWDQs4FY3koEIQVzuWQkwWqxUQHAiKjHAJRFjOV0NMgjgLfYrq7LDtGQjO2SKIWRAtnaI6G3JCcCAmfYdpscXK3ueC4EAiYbHq64ROUbrHHAkRgoyiYfcOKrKAD4UIQby1+w98XyqzgQGpoDvqxCYQsx7kUoDdECGI22vwPCG37aJHgGzRIRAhiF+s5mSVfTpCkNkTdm4ICwKDUXXUBrYHxCs9LVkgeJBpZYNYA5IVggeJj4jZISyIgJ2HmqNAwDnTkSjKl0NQEC/9LQqLy3s2kOiL7lV6AmYuFf+7CBLnAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNUlEQVR4nL2XjXWDIBDH8b0ukIxgRkhHsCMkK2SEZoQ6QjtCXMERwgh1hDgC9U4+Tjjwu//3jBLw7scBh7yJ/fWK/H+khf8ACZxqvej/KRBFnrMJzrj2iqljlYzI5esX79X9lIJStC1tb9+vKt6BvBu7WQokQ4PnL9ZJAEucsQDy7p47m6i8EOJQINDYHMmg0aA/AHa5ODDi7Pld4P39VoXOaSRdJDrV+EtBVPACgbG9EHyoAaL8qUTTyM5RHTr3bTqfmQ+CIdWh52EoteqLUkq8GwhZ1ymAgQnaLhwa6HnvNIShhSxT56Ifijw/i5kK7FMQnJwYFSjxMAPp3gtRDMpj0WDtxidrPDJWj8cDh6YsSzFRUXtLM6syEE3T4CrSEzgVjWSnfBCbO6ZCRJPVDAgOBEV6OAXCT+ezIaIg1kK3RGF1mPIIBOdsEsQoCAiWKKyGPSE4kH756mExyco87wXBgQTCZNXlCViidI/ZEsIHGUTD7B1UZAJvCuGDOGvPT3G93fsNTJAMuiJPLALp54OcCrAawgexew1+T8hlu+gWIEu0CYQP4iZr/2W1+3D4IKNf2HtDGBChjaqtNrA1IE7pYdkFggeJy4c4LPDXrgEBh3A8PHVX7kHMgWnJvRUeVOrj+agdwWnpA2oiABxMrOcGoNGXbQcgOFGZlwzEVUNQp5sOiwERwow9RCIvTJ2JxIExkjLaJp79KwBxgrNofww0Q2NrGKccJAfaJupYEHqiC6j31B8o4jFDCVX5vQAAAABJRU5ErkJggg==",
+    "price": 350000,
+    "reqSTR": 85,
+    "reqDEX": 225,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 80,
+    "tuc": 7,
+    "incPAD": 85,
+    "incACC": 1,
+    "attack": 3,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Bow"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 85,
+      "min": 81,
+      "max": 89
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 9
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 1322025,
+  "itemName": "Emergency Rescue Tube",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5120003,
+      "mobName": "Grupin",
+      "chineseMobName": "藍獨角獅",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

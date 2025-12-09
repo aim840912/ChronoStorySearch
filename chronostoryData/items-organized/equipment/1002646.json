@@ -1,0 +1,55 @@
+{
+  "id": 1002646,
+  "description": {
+    "id": 1002646,
+    "name": "Black Polax Hat",
+    "description": "",
+    "chineseName": "黑色的航海帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAWCAYAAAA4oUfxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACF0lEQVR4nK2VgXHrIBBEzzNpQC0oJZASnBKUEvRLsEuwWlALlBC1QAmhBZXAZ3GWnAjYjpKd0VgCxLu9O6MneUxB3R8qY3r8YZXwKuR4PObBZVnSGmNMevbep991XcNPA9PwMMT9+r5PD5P1GULQMAwJhstam8awHs9d1zEAGc0WMjvRgTWdy+K7fA8oNoVOpxNcAyDOuTTHALQuMUl+FbGf+wz9Ki0RHt4vIq9nAL8mAYYzDZznOY9p4RngyXWbcQQxmrXqvtpwBEGoN4DTNCUoAsI8Ls4jAxqMMcwzwA6ldL7pPEY4Sviw8vL2PZBxHBO8TDOCKcHMghZKeRp69lF2D3hAIyWnvY+wZbM5XSIANBaCoIw4GSqpZlZ0MNsVyjmbap4HCYjNOzk8u80maDZId7L1tS3rwtpLdH9W7nPa4QpOEYD3JpZgvkLtKjrbPwGWKvs+wVkjOOWh8frvahFzHNsjZhVC7S8xdefZJfcb54SVNdsD0vctZee8eFrd2rgmvl97R7/rlPsNvAZuQW+t02Z4XNcE+CGmOdzb8F4w5RquYzlrQTQ/qXvB5VqcH8wqT00Wh3D870L54h5w6106N/FDE+udmNr5AZ/EvwZznM2oW7JMezOA34DZyF23yvTpugZPE3FxKsGtTt0DtvYL3ILnBQwCMsbIo2Kar0d2PJJt/ljd/56XQUD8Oz4Kh66n5Xco9R/Q6k4wUmNovgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAcCAYAAACZOmSXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACXklEQVR4nK2Vi7GbMBBF1zNpQC2QEpQS/EogJZAS7BJMC7SgEkILKiFqQSUourKXt8gr4JHsjAbQ79z9IH2jY5bE+0Xpk/2HrYarkOv1unTO81zmWGvLdwihPGOM6avCJDz1eb+u68rH6MICYVDf9wWG5pwrfZiPb2MMC6DBriGTJyms6TnNwSzvgGJT2O12g9cAkPe+jLEAaY8cpBCJ3GufvovUMoan3w+ijzuAn4MAwzMJnKZp6ZOGb4BHb1b9EDHYqHqvFhyDYMg3gOM4FigEYRyNxxEBCUYfxlmgQSp9aHqeFQ6U/jj68fNdyDAMBV6HGWJqMEdBGlJ56zuuo8V7wBMKqXjahQybV5uzlxCAwoIINkueeiXUHBUpZj1DeM5FNU09JWgLni7f/WoTFBtMVrIL2pa6Ye4je38X3i9hh1fwFAJCsDkF0xPqIslofwVYW133Bc45gqd8aHz8erqIMe47YxxVGHL/yKG7T754v/KcYXXOzoDke8sWz7nxabW1sWa8Xlsj13rh/QqugVvQrXnSGT6uNQP8ksOc9jbcE1PP4XmcTk1E80o9C67n4vzgqPKpyclhOP67VC88A26tZc9tvmhyvgtTen7Blfi/wdzPxShLsg57U8C/gLmQjYk0vrzW4GUgTy4p2KrUM2DnPsEt+DKBRcCstXTUOMzPIzsfyW65rPbv81oEjH/Ho3DY87R8hx6Fa0J2C6I+6Vq2BTfVs9W3q0U8o/hW4abRWkI0kNaPFl4tanAGdeIpQWcu82YOWp63Fm4lM268102Fc2j2wmsaQrbEvs3/C6oDauO3vIBXAAAAAElFTkSuQmCC",
+    "price": 130000,
+    "reqSTR": 100,
+    "reqDEX": 100,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 100,
+    "tuc": 7,
+    "incSTR": 4,
+    "incDEX": 2,
+    "incPDD": 63,
+    "incEVA": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 4,
+      "min": 0,
+      "max": 9
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 11
+    },
+    "incPDD": {
+      "base": 63,
+      "min": 13,
+      "max": 113
+    }
+  }
+}

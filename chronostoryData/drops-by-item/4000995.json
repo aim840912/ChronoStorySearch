@@ -1,0 +1,19 @@
+{
+  "itemId": 4000995,
+  "itemName": "#N/A",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 8645263,
+      "mobName": "Turbo Robo",
+      "chineseMobName": null,
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0,
+      "displayChance": "0.000%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

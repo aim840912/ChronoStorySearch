@@ -1,0 +1,19 @@
+{
+  "itemId": 1032006,
+  "itemName": "Lightning Earrings",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 3000000,
+      "mobName": "Sentinel",
+      "chineseMobName": "石球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

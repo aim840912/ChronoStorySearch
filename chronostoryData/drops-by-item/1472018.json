@@ -1,0 +1,30 @@
+{
+  "itemId": 1472018,
+  "itemName": "Steel Slain",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 4230108,
+      "mobName": "Jr. Cerebes",
+      "chineseMobName": "小獵犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230111,
+      "mobName": "Robo",
+      "chineseMobName": "藍色機器人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

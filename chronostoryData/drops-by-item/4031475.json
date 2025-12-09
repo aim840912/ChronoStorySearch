@@ -1,0 +1,19 @@
+{
+  "itemId": 4031475,
+  "itemName": "Key to the Forgotten Shrine",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 8130100,
+      "mobName": "Jr. Balrog",
+      "chineseMobName": "巴洛古",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 99.9999,
+      "displayChance": "100.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

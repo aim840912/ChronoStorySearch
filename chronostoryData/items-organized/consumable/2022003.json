@@ -1,0 +1,38 @@
+{
+  "id": 2022003,
+  "description": {
+    "id": 2022003,
+    "name": "Unagi",
+    "description": "Well-seasoned eel.\\nRecovers 1000 HP.",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAARCAYAAAAlpHdJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQElEQVR4nK1Vi5XjIAyU39sGaIErgSuBLcEuwSnBKSEuwS4hlBBKWEo4WqAEr0YY2/E62dy+VT5GBDSjkSBv9Ds2bcbVq5t+Aj7tJ1qrlvHoU/m92qw9JPQq+AL4cakppkQxJvFDjGSNYT/KfF1r9jWdzn76N3SUQqS/ozsk8Qr4dO1qCQ7rnafaWtKaZM5oRd4HaltLSUhFCuzfLpZ8CkLso63JDFeqqmraEngGPuVM2+wBbTbvPVlrqGVSAFYKxBIpXqL5Rez7EFgFQ8ln0hRHYimo+nNaCOzB7+pZG8WZupwpyqrwxpeS4PwQEs5Fcj6DYU4lqCLL6CzZa1aoFQIbnOptCzqwVDCVcgMVqZFpd+EsoiKNJUFLtiBgawRmnyL1faCuM6SN1ITOYxRgzczH/l1i3a5ZyfdmnAA+lQk910/PzatMHihOAYGHoZZGA6DjwOAmBGdVsLF3mbDmPYhnTFYj90iS+Hc1LxOQUPMqdLDhHdbyOGCc69g0jq63G8VwppobjJSX7IoVQMQAYYAC0LkVECfiDnxtpJUECLg+0qXLxwgEIHVzakqYBdAYvSiED7re8ak4AnRuISs1r/oxSM271nwhMboo7EsAya6Ug9aybPftAWMod4I8vxw1uY08HwsE1rtgIBHTRl6WNXEggD4CLBkavd5+e9vKXjGzCezKBtR8T0J89xxwkxCyfXjv78/5/Yb5gtiT+A7wKOaRPbrhnpIQAlzHfQ3/17672w9J/Ja9+q92VL9l/qf2CXEXRvIAdnnHAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAWCAYAAAA4oUfxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACiElEQVR4nK1VgXXrIAyU3+sC/BHoCHQEOoIzgjOCM0I8QjxCGCGMUEYoKzCCvySMTQhO3L4qIQYMutNJkDf4G5uyfrN302/Ap3Ki02Lpjzak9022tkpoL/gC+HVuwYcA3gceO+9BK4Vjz/NtK3Es4Xiy0/elh+A8fIymSmIP+HTtW3ZONhgLrdYgJfCckgKsddB1GgKT8uBwfDtrsMExsa+uBXW5QtM0U07gGfgUI+3iiNBms9aC1go6JEXAQhCxAAKXSPwAjq1zqIKCYCNp8COgFNC8HxcCJfhdPlslMFITI6W0CvrSj2Dn+GASxngwNoLRnAikCi+DE0cvUaGOCWQ4zVsOekGpyESIBZSkpkj7M0bhBUha4iRHSwR0S45xDB6GwUHfK5CKcwKn0TOwRObj8Mm+bteo5OdhnAh8ShNyzp+ci1eo2BEYAjm+XFouNAI06Ji4McFZFdo4mEhY4h7yp1RUI9ZIYP93OU8TJKHEVVTBCndojX1H/ZjHw8HA9XYD707QYoGBsBxdsgRIPogwgRKgMSsgnYg78LWQVhJEwAwezn08RkSApD4cD8nNAqiUXBSiRlVv8FTUAI1ZyHLOm2F0nPO+Uw8kRuOZfXLA0aV0wJqWfF8J6F26E/j5cNT4NrJ4LMixLJwRCR8yeVHWgI4IdAswRajkevuVlsveILOJ2KUNlPOSBI/Nc8AsIIp2894vz/n9hvmCKEm8Aqz5rNnWDfeUBBPAPJY5/Km9uturJP7K9v6r1fJH9g8AtitqtVCbfAYuiifZRzGnfgAcsrYJLjZaSaQWcTXCDNTPLdTAl1s6e+ZAeyTeS2gz8q2Nm46Kd2W/bFXwJM0recUGkWdkH9b/B17qYimmV2sYAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -1,
+      "y": 22,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 22,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 550,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Consumable",
+    "lowItemId": 2022000,
+    "highItemId": 2024000
+  }
+}

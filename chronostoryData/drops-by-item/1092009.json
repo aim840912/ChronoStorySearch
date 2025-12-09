@@ -1,0 +1,52 @@
+{
+  "itemId": 1092009,
+  "itemName": "Wooden Legend Shield",
+  "chineseItemName": null,
+  "totalMonsters": 4,
+  "monsters": [
+    {
+      "mobId": 8130100,
+      "mobName": "Jr. Balrog",
+      "chineseMobName": "巴洛古",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 4,
+      "displayChance": "4.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9500148,
+      "mobName": "Tortice",
+      "chineseMobName": "冰烏龜",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.18,
+      "displayChance": "0.18%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5130103,
+      "mobName": "Croco",
+      "chineseMobName": "黑鱷魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8140100,
+      "mobName": "Dark Yeti and Pepe",
+      "chineseMobName": "黑吉拉戰車",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

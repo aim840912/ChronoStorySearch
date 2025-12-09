@@ -1,0 +1,55 @@
+{
+  "id": 1050063,
+  "description": {
+    "id": 1050063,
+    "name": "Green Linnex",
+    "description": "",
+    "chineseName": "綠飄雲之衣"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEDElEQVR4nI1Wi5GjMAxVZrYBXwlOCU4JpAQoAUqAEkIJUEJcQlxCXMK5hHUJnJ6M+SRs9jSTYGyjJz197C/6XSb6Pzl9WvwNaKpbLYMQIhmjKMb9BqXw09Q1bvoE9gloug0Faa1oHJ0A4bcVrBWFYfBAv8lHj6BIscmPVtG1J3mSqck6L/Nxdi8ETdOT3bmEH736CWianpocqfTGyrUeGSzS494ySCPTW7DoAmnDoJ4OwY6Apqy8aJiSQdO16iU+8PB8OdHfJ29pGrLjSOpZUx0tXSwxjTAuHIK9Ak232426rktWQtGAb3oG0ZIIWsdlzfFz4P9zBmGvyoI9LhV07MDePILCJC2r6KgUkBQrVi9jAAvIdGMPu3luZtkY8t6/0XQIBK+EIlYE2pBZb/Ioify4gGRv8P1vQEKb0LIUSyvWw5lSebJkRBHAkRRnDgwoy2kPb7LMIVjo23kEJSGEecza/XmlTRnOQYxT4W69wTPVGXtVlvJ89eoNyDlHfd8TirVjOkCbACF2PsgY+xobdp2CM41iEQ9pewOCJZm2pHsGgbAHMa7UpCwMsg+fFJxpMBD0Za/u9ztVVSX0ZSApUDJwmeY4yb8A12VBo9Xyvq6lHvfafjJtbcGGbVrW6pFKZd33lnKPW7whZNOqEODp904R5o3h5IfBh0Bz/9h+sAgnBWjbzmH46g06vcQX2QvDubinp5Ie+LXQhlSO58V9tdYgOVZ6Uxalu6Mu7Z0bK2+KtFnQd1KsL9P3tdDGaiDfbMyfjrONdWpGG0wpPa2S90g3H6UrOM64EPcxW9GZGd3P4y3QTJug69RqsjTe0nAfqOSjIfe3EaCUDMlgmFD41h4EjrYxil7QVZGyq2gLoa/mJOgZbPSOak6SOjqKulhipGPi+KYCVbsS4lAoL3GCvq9lkkYZceDYg0IyruRidVykI3sCNnDSmoGPBfbLSnLoBRAGBhtWo+dQqJkhAJ1Y3i4gKbVhQCMgbdtKRonwWcUW7PY3fFQ8uc9WWrKMZ7rt8lKw+dyYsjdJ+n2aE206h3p5pxRfnxNqp/f4KIeSwmi5G1RXK3UBhXhW144ez3U94e07RCqDfY19uJyAtkpG+YyxfXe4nqXziu4mJcX3XdGfKh4eE0LbcsJ6FK/ZAWVJdPU7+tD3tl70YV8mO49qp6U4Sz5ZrTMLbTg6fpLSKv7GUuDUT1YpSXnXf6AuF2R5QBvaP9ZQZjBA4sQzcQwyn28aak4Iw0/vf/BIcc8bCJnbLHMZKPc/PV9SQJdTBRUTf4OzSk6+yIelpnH15jDrTuiyD76nQQmsTmeUI+16Kch0C4syf7rAq3RrXQqXY9R3YQdw6BE2XC9jLt5TuuLmTFsVzFdf4r10IIdX4n9HGFbPi6/xAQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAYAAADjaQM7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEM0lEQVR4nI1Wi7GjMAzUm0kDvhKcEpwSSAlQApQAJYQSoIRQQlxCXMK5hHMJ3ErGfPN5mkkwttFKa318ou8y0u/k59uGb2BjWWsZeB/IGEUhbDcoxT9NTWXHb4CfwMZbl5HWivreChj/1sJrWWZggKffyEfPWJmC6Y9a0bUleZIpabBO5sPkpveaxifcuviP3r0DG8enJksqvgFA6x6AgR73GkCVTK8Bg/WkDYAdvQV8BTYmgKwCPZ2ma9HKebGn58sP/X1iS1XR0PekniWVYaDLQKCUDfRvAfdg4+12o6ZporWsrOPvWgBpCQ6tw7xm8ezwf05A8C7P4HmuWMcB8OAZK41SQ01DuQDFswOEjBlcgMYbPG2muYlxY8g594rF12DsndAFZUwhR9xBHjmR62eg5BV//xswoVAompOpFi/YqVw5GsiIMjaAA+WMg2L6UkqwV0mm49hQufGMFXnvpzEQ3HmhUBnEJo9jcq+94mfMQ3iX5/J85d0BzFpLbdsSJ3QDaphCAeOzdF7GvK8a/KaiIAIpZOEthQcwtihRGPVPQCzwJISFphidXvbxJxkikI1kKpN39/udiqKYqUxgksRk2H2azk3+BbzMM+oHLe/LWqyJ+1KVKKwzGLcrb4tnKqZ/2w6UauLsFXGULUrZgPg7UsXzxiAx2Oi3YFOtWX80CwKFKVzP8XDvFXcIOW+OajYeBWB8qrlmnmYKOczDeaZCLXlKFopvauD0noEW2qZijE2BVgv6Tgr61lSeZgqhiuUfjPrTIAqhVwOxM7nUwELeA91ckOphEYk+bM9wsQAM6XYa78EmCsUKHctSksoN1N07ytFWUj3sGZiiMQmQJxR/O7w4yA2YmOfECpXFqMvqTKgsERgtAHtnqUTglMFS0Nl8ZjpEvm/KU7FJMRyLcnJuyfjTvEC9jHCY8CSTSMyR0BaJ3MMjZoY7tunQUuDfIAGjZ1A20g9+MXw6FrViisF+IIdLTQx7NqISoLquJdJE0OtgxWZ/hTbzRG0utEQfZpr18iapU7Eck1dR2m0KEK0qjNq9Uzxvl4Jso3dN49GrzGi5axTXQfKGlfKzuDb0eC7rEXNbSWKKHC9BHy48TGEho9SjhrZ5uZ6kcYruJgbKv7uiP0V422KEwrlTO05wswFLEqlrN1RynVx70/ptCh08K62WBM7RoQdrZgq57byTfFD4ZiCPtIiWKUkH236hMSVt/oJCbh28xmnIRsi5YSb0XubTzUVNQWLwdE48S+0ibMAUamRHHNXVPJfAUr3U08WHqbMqo2zEN9zrpHsGNFxN/eIVKzITvz6BsYYz8uPvA/dAVsTWxx5nSdtWkjbe8ILM/1zYu3g7npMbOttGgNrDge1oZMDr9dI/klUA75bkFCXygnm5GWEvvZAUomH/O60WfPJwBX7ZKUohtp8PH97n8X8pG2gJrAtfNQAAAABJRU5ErkJggg==",
+    "price": 115000,
+    "reqSTR": 0,
+    "reqDEX": 220,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 70,
+    "tuc": 10,
+    "incSTR": 2,
+    "incDEX": 5,
+    "incMMP": 25,
+    "incPDD": 75
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incDEX": {
+      "base": 5,
+      "min": 0,
+      "max": 12
+    },
+    "incMMP": {
+      "base": 25,
+      "min": 0,
+      "max": 95
+    },
+    "incPDD": {
+      "base": 75,
+      "min": 5,
+      "max": 145
+    }
+  }
+}

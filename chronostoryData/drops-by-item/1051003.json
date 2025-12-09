@@ -1,0 +1,19 @@
+{
+  "itemId": 1051003,
+  "itemName": "Brown Doroness Robe",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 2130100,
+      "mobName": "Dark Axe Stump",
+      "chineseMobName": "黑斧木妖",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

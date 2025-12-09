@@ -1,0 +1,56 @@
+{
+  "id": 1050083,
+  "description": {
+    "id": 1050083,
+    "name": "Dark Battle Road",
+    "description": "",
+    "chineseName": "黑白銀鎧甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTElEQVR4nKVW7bGqMBBdZm4DWoK3BCgBSsASpAQsQUrQEqAEKYGUICVICbycwMFNAO+PtzOMGDZ7zn5l8yO+jPNvJP8vo3p39jTYOL5jadpSzudzCKr/h0Y2deu6lrZt5X4zEh0N1iLfs0Mncdxb1FGapllAQaIqjFwbGU+nk1MdhgHPeMtFSvtE5wnk9XoJdPq+d2CwSR4+2JCIMaV7zfNcLpeL3NOHFNdY7nexYEYOh4O3JT4NAHKE+qFegIwxk0LzyYgP1pqJzSwOqL1ImqY2vKk1WE1MLSlpe6hLZVL73TFdAPALOwDVosEihGJ8G+uJOOXcOgGgOI5nxrGYtrGq5UIKUXVGFVH+Pmvr9fGTz7Aa3aa+P8jz0kr2SOV+mYC80FlwGAQRGnahrBGJSYcE9jxTm1qnp0EYEgBtiQM2n9CBLGx9BUMBROdBUGVpni7rIXBZllJV1WIc3zOb0lve2qKZSMMWqnYLbATruaRR5lLnslRXURQeKYSPvYTvBMU+7AE3DbTrGRmh/LMsW3kGQVs8Hg8Hhnfmj/shsDGTXTc1QfCgOQFEEFYlhKWNb1gHKB54ag+CFeldzyjIBxiz7Cm6d+gN9LBOoD0h2EjWYZw1SBjKUBhayq5n+gPe9SaCbHml17kHdpg3bXczjEwsc8ECoGgQfbyFEgCOAPNCqN1mKxD0L6PcCxK6Kik/2lU+DBvXn3YQoGHpHbwZa5Gk8kmGOdJksO7AcGAm2TZbSNEAvF8aHPJ7PQlUtN5ecWnPIkxSGHrfh+WYIZtXd8Ck9bxiqDDDsqDaue+W2mHbxtI9LbFEhRGA6PJoo01Cj7X8Jgj5pwi0dwi7bX+OGIfhzbP5V98xHDNs4EjRAq+TbJ2r4P8yqle3K4RT5wHsIWHD8ltYcWG/ouRld3jOgg1d19mERl6fAZAALm/2csTDOvSQNbDnmbxuvZ3QU+knyZTZMHxaoLN16EKOBUh9OYhR0q9uaoWuNI4Zmnu5LQUeQAfXB7YPyAIEw/faOJ3dnE1VOVcQgDA2QtFn5BSmVvQeeIMhKsHNeitn7pYLEAxPGmY1zkWyVK6+lHLOBTpfwVYeMITzvPKMhHdFRWgle2CRuu9763/p7XkF+QcQEUY0z9otyQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAfCAYAAAAWRbZDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADdklEQVR4nKVW0ZGjMAwVM9tAtgSuBCgBSiAlhBJICaGEpAQoIZSASwglLCVwfsaPyA7sfZxmPICR9Z5kyfKXhLL4ZyL/L4t6d/Y02LL8ZNIPjZzP5xhUf8dGdnW7rpNhGOR+M5J8G8wloWenUbJssqiL9H2/gYJEWxu59rKkaepU53nGWG6VSGNHcl5BXq+XQGeaJgcGm+QRgs25GNO416qq5HK5yL14SH3N5H4XC2bkdDoFS7J0BpAjNM3dBmSMWRX6946EYINZ2XhxQMNFiqKw4S2swXZlaknJMEFdWlPY/47pBoAn7ABUiwZLEIrlx1hPxClX1gkAZVnmGWdiht6qNhspRNUZVUT5fHbW6+/3fsbZ6BZN00mel0HKRyH3ywoUhM6CwyCI0LALZYdIrDokcOSZWjQ4PQ3CkABoTxyweYcOZGHrVzAkQHKeBVlWVMU2HwM3TSNt227G8b+0W3qrBps0K2nYQtbugS1g7VMaaS5dJVt21XUdkEL4WEv4T1Cswxpw00CHnpER0r8syw/PICiLx+PhwPDO/eN6CGx4sp9FTRAMFCeACMKshDC18Q/zAMWAp/Yg+CB96BkF+wHGTHuKrh16Az3ME+hICLaQdRxnDRKHMhaGlnLomf6Bd72IIHte6XmugR3um7a7G0ZuLPeCCUDRIPp4iyUCXAAWhFC7zVIg6L+Mci1I6KykfGlXORg2zj9tI0DB0jt4s3QieRuSjPdIk8G8A8OBmZf7bCF1D/BpK3DIn2sqUNF6R8mlPUvQSWHo5z5vxwzZvMYTOm3gFUOFHlZG2c51t8I22yGT8WmJ5SqMAESVJztlEnus5U+OkL+TQHuHsNvyZ4txGEE/8099x3DMsIAtRQu8zsvPvYq+t1b9cbtCOPU+gD0kLlj+izMurlekvBw2Ty9YMI6j3dAkqDMAEsDtm70c8bCOPWQOHHkmr9tkO/Sa+nm+7mwcPi3Q2Tt0Id81SP1yECOlX+NaCmNjHDMU93ZbijyADq4PLB+QBQia77V3Ood7tmalzyAAoW3Eos/INUyD6DXwBk0UjtuRevdmDXbyAwojQNA8aZjZ6JOk9WsafSlln/M69o4mmQeCkekrAkr9M/CAIfT96qF14ruiIvQhsWeU2hq+7+hf42+rd9MTHujsPQoGweiqBsx3wML0euvFc/Pe+19w6Vh8pDMP8wAAAABJRU5ErkJggg==",
+    "price": 180000,
+    "reqSTR": 270,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqPOP": 20,
+    "reqJob": 1,
+    "reqLevelEquip": 80,
+    "tuc": 10,
+    "incSTR": 6,
+    "incDEX": 2,
+    "incPDD": 132,
+    "incACC": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 6,
+      "min": 0,
+      "max": 14
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 10
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 17
+    },
+    "incPDD": {
+      "base": 132,
+      "min": 52,
+      "max": 212
+    }
+  }
+}

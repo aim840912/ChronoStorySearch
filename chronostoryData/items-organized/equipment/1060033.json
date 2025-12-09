@@ -1,0 +1,43 @@
+{
+  "id": 1060033,
+  "description": {
+    "id": 1060033,
+    "name": "Black Pao Bottom",
+    "description": "",
+    "chineseName": "黑唐衫褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 20,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAaCAYAAABctMd+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACWklEQVR4nKVWgZGjMAxUZr4Bt+AvwVcClHCUACUkJZASQglQApTwasEtuAROEsgYMJf/e81kIMas1mtpzS84xww/j1v6JwcObfsJ1jr62dMz7/16xTjGc6vqcZp7BJ8Z8PEY6HaQAeecXEMIO/B9DEKEns0p+xNzYwwURSFgDIyIcXxhaeO9JuVfOnYJnib530jB5/51h2c36RJjEpXkiiEHr7CuHXQdRml2zE1mAzn+9B6mR4CHdz9mvmOVsp+GBbi1uEugK/orcA0G1TIcewILCC0Q8OB2Mh1jeWcrUQWf+77NTw4dYVPl2G1lIhOtpulsXLEm5H2rmqfoHpnzBGMympsajOuWVbQIH42VZErwu02+LMUYxLxsnABvrAEatPAudswjHrFR3ZsnWwFASd09vlDkYIletZc9SPW3RrT7B+awtfxHtbBtP1EScPVUfi+JOYDP4/iKA2wluG04vFoDZbW9yOypeAApX3GnfUIjybmBlDUbH/nTnMiysGIpEBNzIs3HvqYEuJQluSE/Zua/q31fbPfcC8N7WVjztngC4Uu9Bx9E6zVzVhK9nsBlU+Bsq8YZKcHySZVzR7me5hwa7FvmrGVfTwLMJBUwB2yTHglrAUTwELzorualzWGKO2XpLgnE6sjYAoPfyrJZK+YsR0NuSB0tknAJqt5HE9NAnNaTbGt/SaAT9Gjb6C0WQC0jCbj1FVjZHs7Qs5/bCz9n9t67KFW6fG2w1KJTWTJLW7qIz1K1AX05l+CKVPaAVqBpmuBd6IGd8/gU/LZ+GhzjBtcxZz414vwv3+hB0ONv66gAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAClElEQVR4nK2WjXGzMAyG1bss4BX8jeCOACOUEWCEZAQyQhgBRggjfF7BK3gEKokI/EfS5qo7LokhevRKsswJyrbA+/ZRWjwCQd9/gdYGL53dc849Pu22Rs82zeWQXgIt5PxymfDrxAvGGP703keg2CYOCu9RNjJVRUVKKaiqih0TxFq7ra/R6+27BEBXuPYjUAj8K0tBy3g7w3WYJQ0bUNL2LHJS3rYGhsFm6csUqULxyf6PDuaLh4sz8I7loCDaUNU8rZBe2wgmSn8NEiOAtPZ9RMfeQg8ImUyUytTW/9hsPQQt49iX/+gH5GAH6l0xpxJVdsMaTAinOjfdNapTpIgeVqpQI9WCMsOqrrfw2WkGS+CvWjsDHRoqqjvDkF0NQGc1/NQyRZtvjFLq1F1pHAHUOGHuN8spozTeWsc1C+ulFef3TUWwj53PZlXRf1mGURc2LnasnoCW+/22LdJos0Hj3HoFdbM7IVXYhGCRXZ2xrlZxILRZRQ0NZZyXW0MkqVujpXRZGwxOrNF9bBFm11bHqU23SdG/Jt53+3faa1Om6KlRjfrqCsji/eSd59o8ooielbSl6SuCuKCQHwXKKG7r+oodeLb8mT1zsJlfKqLcj+3MEApenJcgOtiDPjmzIpD3juskg1U2oqrOSBwOg9nS9GQ0CeijrrtH5+Up63Bq41ThtFFbS33SAStm7fw4ocsjiGHyQ47vPex1DOH2ZBiNH4GIiuSd4fl5pA/OI1LlnNnSGaZINnN4rKR22AzynkDvDjKKxFEJVgiQ5Hq5BKQe1/oDnYjTeZ7hlcnLStIIAiKJ7hRAKKQGnY8FX8ctB9AW0pW94IWKxLrC2pH54HmfrEfXCXZ5oeMSREE6b3JACcj2Db7cVcmKDl3EAAAAAElFTkSuQmCC",
+    "price": 4000,
+    "reqSTR": 0,
+    "reqDEX": 40,
+    "reqINT": 0,
+    "reqLUK": 50,
+    "reqJob": 8,
+    "reqLevelEquip": 20,
+    "tuc": 7,
+    "incMMP": 5,
+    "incPDD": 15
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 15
+    },
+    "incPDD": {
+      "base": 15,
+      "min": 5,
+      "max": 25
+    }
+  }
+}

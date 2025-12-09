@@ -1,0 +1,63 @@
+{
+  "itemId": 1040021,
+  "itemName": "Red Hwarang Shirt",
+  "chineseItemName": null,
+  "totalMonsters": 5,
+  "monsters": [
+    {
+      "mobId": 2230100,
+      "mobName": "Evil Eye",
+      "chineseMobName": "火獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230101,
+      "mobName": "Zombie Mushroom",
+      "chineseMobName": "殭屍菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3000000,
+      "mobName": "Sentinel",
+      "chineseMobName": "石球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3210203,
+      "mobName": "Panda Teddy",
+      "chineseMobName": "發條貓熊",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230100,
+      "mobName": "Curse Eye",
+      "chineseMobName": "風獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

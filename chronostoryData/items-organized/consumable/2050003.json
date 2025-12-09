@@ -1,0 +1,27 @@
+{
+  "id": 2050003,
+  "description": {
+    "id": 2050003,
+    "name": "Holy Water",
+    "description": "Allows you to recover from the state of curse or being sealed up.",
+    "chineseName": "聖水"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAA8AAAAgCAYAAADNLCKpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB8UlEQVR4nI1Ui5WDIBBc3rMBUgKWYErQErSFlJCUQEpIC7EELSGWICUcJXAsP/kE73jRKOvMzg4LDZwPpS9SC56B1f4GaKc6QQ1sgGxUwEcCj/k7QTUz6zVaznDngOB/yfYZCLlMSu36oTXzJIsX4LjGogy8LZzB8BCBoImBvsauY8CYMAE+QnhnnQC+QfAgZA41vt52Qk7mD2sGEEFC7IEH5zU6OdX3RLYlaBND4trNXBYv3K5207f4X+15Or6BD7kUzZviudPMina9dlqC9DOsO6JiO60ZKKUgpIOa5eqgNpIOw6wIZozp5BIugwVS94FEFVH2JgeaT+3PSKcRO5YDEUET6nSS/dgX22nrtsEw3UwsEGoCqQmCbEoZhHwSG+Ka+OAeEjMRTOS2KjberTJ3R8DIF5gfQ+mU2ACijUG2+ak6JJC2tOpwwNgwMzjnepn0rrmV2VAFin8OR58kYOZK468lYlyMEgz12pZn9H0CRj96fa1u+6KKDt+th5BXE9b586PCmrJocYVvNve/7AqGlmQnScYaZ/Hr65WUsukBohkY7PLa7Bk4kZykSnlDdv5R8LgS22E4wWjWx1AaZLJHhpoOm7QB793udyTJ64/FIHCd7JEWOmyyDgKSIPEm0uy4jPPRIOXpiTdPUhnJMfQLWxTXOWPLpQYAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACOUlEQVR4nK2VgZWDIAyG43tdgBsBR/BGqCPoCjdCOwId4VaoI9gR6ggyQhmBI1E0YitybV6tQICPnwQ8QLpZ92Spg1JBtr8C5HU6LAVEEFlZUFUG5yYNlqRIHh3JNHBSgKAk2wPyK8+yr9ra3hVyas8C/1sgHpNnC4BWSSjPOgrbAi1iUhQSpNTkUBVMdVloUB1EY7apaIrJ73VoMDW9MEYAeuq3J2ZboDAmZBv1f2/dAMsXW8JjRW2B/9+gacI3/LtBH7G9oHnLBCZGzds+psiK4ugyzoDxLbKYvbr7WIxACAHajBhK8QJSLXozoBoESSmdKANf5QARYweD6nao2rwZPISmHX60fYL3QqU7YK9AQ1wARtBgfTvcELeug7L+Id8EdzCzAdvcOiEkTDoMHs5v5hO+sEyUREWZ6W5WVieqmPEfJ69UC825XI/QHY1LBdGgrrnYAmFmCMVLi0BiIDKllEttdzv/rFWgOtzASxk/s1GQHEOhfltGb0khuo4ujBeIWxSEsT665zZ+flBdgfUhP6JJsAdk7w87nRnJDo/2l8T4bnsLZZ698YUN6nz1/vx4hTHb3joxA/zE3Gd8NopwxGpdK5Dv+ODbNnnMuqNXpe4Wzt/Zw1VL1tOH0RzYOP7QYCmCew3WwSdVLFlgvto9BD36wCaX7H2u80xd++HbhsAwXlwkQm415cEFnuwyGlcULppgWEAgLqvTyw6Y+s18WOtgjsVzYPI4zJfpFnXAO7y2PKibZ+U/bMfsKbVFEuEAAAAASUVORK5CYII=",
+    "slotMax": 0,
+    "price": 150,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Status Cure",
+    "lowItemId": 2050000,
+    "highItemId": 2050100
+  }
+}

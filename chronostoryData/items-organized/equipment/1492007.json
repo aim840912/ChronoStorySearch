@@ -1,0 +1,39 @@
+{
+  "id": 1492007,
+  "description": {
+    "id": 1492007,
+    "name": "Mr. Rasfelt",
+    "description": "",
+    "chineseName": "拉斯菲特之槍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAWCAYAAABOm/V6AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB4klEQVR4nMWVgXWDIBCGj/e6gCvYEcgIdgQzQhwBR5ARdIQwgo4QVmAFRqB3Z6G0SW00ab33eB6H8n8cB77A31v4IS6isxYin1DciF/FQggcngaVBspSw+vb5zdrIAJNaK3l1jRNAhp7BdWpAyFEip1VDXV3RvEWezSuE0hZzd945+CoTVgDIaLI5XKBvu/B4SRd17EQNYI07RHFDT4h82tuBEJGPoADWRkAvX47ON2HwyFUVQXjOH6sFHhVNGxtCXICzhZZ7tum/JjGwkk5GHTJMJsLU9USaBkk7rzDp2dBsrYtMEMu+YgIlfRQojtMBccdvuu8Z39TYdJ+kpnWYooNAsyTRsEobqxPfYPJqGUBp2ruE8w8vqEwybybD4HG9MYUx1XNgsnPTwvFg7Gx59P4qky4SeAKKAtY2Siq1MD7SgCUbuJozbV4Zjfj90IEOg2+kHjGbSq0uK8E0AxfhMICyCYIBpBSpjuiKArOhJ1rLwJE0QhwN8hvEIHuBLIcoHCaK73h1Ht41JYgGIAyMAxDAtBa5+98v6YFPHE7lgCWiu7WP2QTxBaAHGS1RYhUTA8AbDaC4Oqnv+IeABFC7AkQIXYFiBCCfs20JXsARAgWpC1RSv07QA7Bwgiw6pJ5lr0D1H48S8Enz5YAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAbCAYAAADyBeakAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACK0lEQVR4nMWWjXHDIAyFxV0XYAV3BDKCO4I7QjwCHsGMEI9QRkhGCCuwAiNQSQ6UurYbuz/RHYcQDu9DyDhP8PcWF+IiOVshygXFTPxLLMbI4cug80RVGXh++fjNFohICzrnuLVtm4HOJw31sQchRI696Qaa/g3FOxzRvMkgVT3+JngPr8bGLRAiiVyvVzidTuBxkb7vWYgaQdruFcUt9lD4DTcCISMfwIOqLYDZfhyc7sPhEOu6hvP5fNsp8K5o2rkK1AU4W2Sl79rqtoyDo/YwmIphdhembhTQNkjcB499YEGyrpOYIZ99RIRaBajQHS6S4x6f9SGwv6sw6TzJbOcwxRYBxkWTYBK3LuSxxWQ0SsKxHscEM87vKEyy4MeXwGB6U4rTrkbB7JdvC8WjdWkU8vymTPiLwB1QFrCyUVTrgc+VACjdxNHZr+KFzcbvhYj0NgSp8B13udDSuRJAO3wSiisguyAYQCmV7wgpJWfCjbWXAJJoArgb5DuISHcCWQkgveFKbzn1AX5qaxAMQBkYhiEDGGPKZ6bXtIBfPI41gLWim/uG7ILYA1CCbLYEkYvpBwC7jSC4+umr+AiABCEeCZAgHgqQIAR9mulIHgGQIFiQjkRr/e8AJQQLI8C9l4zcobV4tU7viSmAnPRLsXsBQtEWIUqhubYENCc4F6fmby0/NweRBKuiLwV/9SiWIKZC0wXWFgwr/rStQqSUfZf2jz+U65BhZY7tHUPmVxxJJUyeAAAAAElFTkSuQmCC",
+    "price": 140000,
+    "reqSTR": 50,
+    "reqDEX": 140,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incPAD": 49,
+    "attack": 9,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Gun"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 49,
+      "min": 46,
+      "max": 52
+    }
+  }
+}

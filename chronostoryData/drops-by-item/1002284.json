@@ -1,0 +1,30 @@
+{
+  "itemId": 1002284,
+  "itemName": "White Nightfox",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 7130101,
+      "mobName": "Taurospear",
+      "chineseMobName": "長槍牛魔王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7130300,
+      "mobName": "Master Death Teddy",
+      "chineseMobName": "怨靈發條熊隊長",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

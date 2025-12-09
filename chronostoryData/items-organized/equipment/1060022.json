@@ -1,0 +1,37 @@
+{
+  "id": 1060022,
+  "description": {
+    "id": 1060022,
+    "name": "Red Cloth Pants",
+    "description": "",
+    "chineseName": "紅夢褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 10,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB0UlEQVR4nK1Vi3HDIAyV77yAVmAFr+AVvEIzQmeJV+gKWcErsIJGoAhJ/OvLteWOgIl4enoSsMLYAvy+LfXHDByezyds25Y6EaU1730ar+vKo6055+A8zwFnCv5f7S1wY/hX8HDEn/PxABdHvNlI2tnu0tFLvrLuA3OHETLqzMCbw8oFCSDJio8TI6DAt8zDJxauyPPYExgvE0YgSnN2nSw12ZlYx35gjspeIoBcLWlucaA6ISWhUfTsbxNqwCZFIYDi6C4pFXj4qDfX8kBJXh8iwqBMI01mboBoOaxlmDSsXBt+L8063yCbjLU0ihUi+ch2WPIxawzeSJLDnRj79DepGZaq4QQT9BGENqEIZj7Ak26mSiuWkkVxsUz9hM4gC2vurUomzLcBQuWZhLr2hkasTgyXJDXf4to5tafioE7qtM5pQvtLhiWOwY49Ean2pn5LYjWcbEzYAPesCwFheneQEjiH4Row+qm6sk2SkEjB2x02Y/AlXplhsxuKrNRKYmc3ngCLA6oKwBf7ckLTnaxXbe3d639Q7unl1LNBXVV5gFFzY4/7DvtxpPeR4uvDb+Mlb2Pz8JqDPdofas+v1Vbe0uHKXV6vV4i9V6AHftv+GxRL7VRz2s+CAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACI0lEQVR4nK1Wi3HDIAyV77KAMgIreAV3BK/QjNBZ4hW6QlbwCoxQjeDykUC2BfX1wh2BYKGnJz2Mb2C3Df7fBmuxBQTP5xPGcUydiNKa9z6N67qWUdacc7AsSxO9CfTudhlIIn8n0DaHn+XxABdG7Gwm7tFu5dHn+p7qZDJyGNyHukSQ0aGCo+yc8ooPEwmGQS4z2r6wcsA4Dz05jsuEwSmleQwjWbJQSpANViYjZFaZGRTVpbnwQwYkDojZtVj9KQYBkXTVYDCD9orYANo+tSOdQqiF3zXkZ4cHVvp2jMQ5Sv11qoyGKgzBaqXvlLq6OTsQNrlRUFquX7HDWr9eE6Bd2kpKjA0+PSY2w6q+KA6CI7OSvrMYEGTrCYrYEal8xnTHxLkgfd+hZaYu1siL2gxGoxkdddNnyBuLAHRRo8xp9z+H4RzbUwWzBNE8R1R+avvOwxDGTV49RMS1kmqRSawAkd5IuAM5sql7MoMrh7YARapu55i6iiVWRAoMBVYfBBtoCK/5bZS3J4l8qyisQ5hBMhgp8fhqb78Z0p3C14OOyvMztXFY+OzRQZ0eoF8jYYXTBNM8p+8BCrdq/BZY87fA8TJLYFOwn9k+3sJj/XboXhPD6/XaQj8GdAf7lXcPtj8N+yYjYGdHp3KBtrT1YawVXUkXIGx0gDPosbXEKSBJGzflVF//2unFq60Prhm1jLrHqTPf9RtUen+lqHVz9AIr818MfwYk6LwPJwAAAABJRU5ErkJggg==",
+    "price": 1400,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 8,
+    "reqLevelEquip": 10,
+    "tuc": 7,
+    "incPDD": 9
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 9,
+      "min": 4,
+      "max": 14
+    }
+  }
+}

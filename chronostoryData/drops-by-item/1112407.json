@@ -1,0 +1,41 @@
+{
+  "itemId": 1112407,
+  "itemName": "Circle of Ancient Thought -",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 5090000,
+      "mobName": "Shade",
+      "chineseMobName": "冥界幽靈",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6090000,
+      "mobName": "Riche",
+      "chineseMobName": "厄運死神",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6090001,
+      "mobName": "Snow Witch",
+      "chineseMobName": "冰之女巫",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": 1072167,
+  "description": {
+    "id": 1072167,
+    "name": "Dark Elf Shoes",
+    "description": "",
+    "chineseName": "黑箭魂鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABYAAAAcCAYAAABlL09dAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACOElEQVR4nKWVjXGDMAyFnbssQEZwRyAjsAIZIRkhjFBGaEaoV2CEeIQyQhjB1RMWVYz5uavvcgZhf3qSJedo9o+w8u2QGvaAGViWpbl7bzp6dkUxfbTWGu99SOFrYAbe73fTdZ3p+97cCDgMgwEWMwbscJrCj1vAx+PBRgHJ85Xmin4dPfsMJAWHQN4dhdxGlRooo65r4+lb5XPIOThA5RlAhJzZhJCRU04HrWlj3l0mHUcN7TIqrxI+qYQ9jeCmDjKrGFCfqKyqynwRCKnpnEMORifRAUQggiVwQM5q2ohS6quKPyBUbGro+RMGhJyBFrFSoqj3qsCCmnLEmyNQjwveY24lv4hG3n3mPAA+tG0bqL5YmUsW6JzjgLRNoHCEH9lnh8dwTypKUoaNEolWL3YAcSYyxLEd9zJcl9uBFocik4ocsIjVINC0WtIGOTjn+DC1Gq1OgFLPKVxU51qa4dqgYVtDnCxdQlI2M/Uy51p9D5ih8aQXN6cOnqTB1oU5XYZFcHh9UwlZSkH5pPr+GEE9QfoRdGr+Fr+oTnsqZUvVCKhJqiID/RktmAkOG28jOKtDWdsx/+dmkCZ4q+O3Aa84L2vP/K6b5PU5rgEUKo0fzFkBZczuY7Sq1LLkV9fsqcnewav/eQzVbSswPculoxzPoBq8CZUbjdOgolkak2K9Uf9RpiWVQLNqBcxNgFsqvQe0Kum6PdBJMbWwyXWYVpeEvgoVMBYFuay3crcHOinG4niP/hso4xeAcqwUKMPpFAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACcUlEQVR4nJWWjXGjMBCF5Rk3gEtQSsAlcCXgEpIS7BJCCecSohKOEqISQgmmBN2+RRsvsiRszWgEC+y3//bevL5C5dmu9OAVEAPatjVn781I165pfh9aa433PpRgz4AYcD6fzTiOZpom80GAeZ4NMDixIIcRJVgNtAJcr1cWimK5fqezoz3Sta8oK4FCIOschWiIXmiArL7vjadnna8hyqAAL44AIEQZJQgRcsLho3eGmDdXCV8KCjoX2ov3eM7kBeSphx+qMJ7yCBCfeNF1nflLihHK0TnEbIFGIIyCh8+CAmLekyKU7tR1LERooORC158QIEQZSBMrMRpZrzp80FOMWVkE6HXCfcyN5Afeyr2vFIUG7YZhCFTPbLlLXtQ5Q8K1TCAAY5N8sxgY5snKliyHIvFUeydyAJBTWWKIXb5dwXLlvaOPQ5MJXQ7QxGoTSK7fSiCGOee4OLS12noBSD+lsNSr2ghimBZo5Vsr9WxrqEqMH7yTsxSqV0EMiZVUVJYCv8km2zfmcLrLtkDh9kUlaylk7Tf119uieCIF06LkcLm/fKO+mKiVLFV/hFSrLgP5WSQ4CQYZqyEYW4+2skv+jpdZmrDaR6sFq5B/a498r5v29rm8Awi8MH42xwxgCxQwWqSXJD+6Zw6X7Lh56T8DQ/SYEeX6lCGqDClCcqBNiExsLO3t1nrwSCvSfzzSEk4gBziZqiqBuCkxhdM5pq2WqaBkf2i3BcgsW0CskUaOyU0AbX0SqiED0TBsfDDtI6SJlv2TH68nYn81j+FKPfpdK49onQjwtQFQs2ClML1e7b25uyewt4KlTc7SjCwL/w/648RuJJfsVgAAAABJRU5ErkJggg==",
+    "price": 90000,
+    "reqSTR": 0,
+    "reqDEX": 220,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 70,
+    "tuc": 5,
+    "incSTR": 1,
+    "incDEX": 3,
+    "incPDD": 40,
+    "incEVA": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 8
+    },
+    "incPDD": {
+      "base": 40,
+      "min": 5,
+      "max": 75
+    }
+  }
+}

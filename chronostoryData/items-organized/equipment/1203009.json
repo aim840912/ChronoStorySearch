@@ -1,0 +1,33 @@
+{
+  "id": 1203009,
+  "description": {
+    "id": 1203009,
+    "name": "Persimmon",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "reqLevel": 10,
+    "reqLevelEquip": 10,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 8,
+    "price": 150000,
+    "incPAD": 24
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Projectile"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 24,
+      "min": 24,
+      "max": 25
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

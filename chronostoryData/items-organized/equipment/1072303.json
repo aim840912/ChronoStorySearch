@@ -1,0 +1,49 @@
+{
+  "id": 1072303,
+  "description": {
+    "id": 1072303,
+    "name": "Brown Double Boots",
+    "description": "",
+    "chineseName": "褐色強化皮靴"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAaCAYAAABctMd+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACA0lEQVR4nJWWgXHDIAxF5bsuoBVYgRVYwSt4hXSEZgWv4BW8gldgBUagCFlEYHAS3fXiGPL09QW6/sB3ETvvptHmT+AF6JwpL0MI6Q/A+xBHCe7gkYGWUBl0HKEsWos5gTE4TDCCRzdbCD4koL8sOoc52bvoweO8WNh3T4KrsNaAdWQF5MQSI/UtPC6LyeUbRADMniZgglreQGB/hGwJIlvzsXJMKqyS7GZuIilNuGIHgYvqZJ0hIQEq9V3Pc4JT6XGwWoCrz3hWVoSkJu/Hy54LnMqkhq2/3MjlzxTVLyg/e+/Vu/O3KsHbc05J5oUrgBOae7F7eQSVt4oWPq1PH61BpQZgWyEl4CbuO1XiMw8L9NXYfPZP/7vKtbcCoAQc3DzqC/Xdn5vl5NBXbnLoN3TbMAH4OEoeVKUb8bzpsIB5vQ+f0q2McgRbYNHvW3BQYI7uDX0kMDYbBZjVDu6N7F+52fenpZQdrhbodbmtGtxT3lXtQ6irUJdnBG7hBVyp7lXUAe88jruDqwJfgpsv0y9/p+F2B66UixU9xXpC0roetyOwwLNqp2dqJzSYcDgosquchpBzLpVuykCiTwJqj+mJ7KEk243qAs9WpJl8HGu1GE6gBHmc580HYIFP2x7i7PobsKl/3Yptt+CiXBLQw0Nde9GsgB9BW3j50XPzX/3jcxf/napKf3AvSIQAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTklEQVR4nJ2WD7GkMAzGszNrICehFnoSehKwgIX3JNyzgAUkHBawEAuVwGv6b1NIt7zLDNMuLfn1S0LYJ/zcDuXeY/TQXVB17pypN7334QIg8scINgIdybllt9Hpvvu6aC1GmDE4hL0DHW6y4MkH53RZdA4j+K71QMc0W9g2YiGNWWvAOg4XxEMUG6nSQMc8mxgigwiAMQfBeQDYtIEhtPsYNsQUvv9ShOF0VkhxUyoAVhBc15AxpKoJ4TV8KA+qqm6OIiwr2PekAuCaF8yK66FCgWz7NYQqiEPByV4+UxHMf01V8wKkORGJe/lZBXbrPWLgNCdlkAExdxuVKYgzqKaBHssXHdagOCXAukCApQLYNlZI0TdWwKso4rt1yldXkcxFccawZCnxnEeuGcqbSwXyz1QgLydd0LpicJZKvGxHER5TcnSqjgJJ62PQI3SDo5T12XnVRWeIF5DWup3hI0BQeYidRxWdd7TsX1Kh3K+6Ghp/DZNcL11Cg/RAqhryvlUnXtQRRANVSKNGMQ2ypSobNtUGcrFcRLlLx9/ceO9ALopKuDQlspPzuvxEjCASFNU4+R1QTELYNQ7ajgbKjig0UxfCY2qz5JGdy5zwjEPIwPWGmgYUwxW+Kfu+NBt8dl6McxL73w8gEvRYN39MTt+Epxgtaw3tL+j37SbRMnQRxpMP0XrKbuGc7U8e7QDiy1VAmK/fPH6t9E95+FOcXmrvvWwFwiekp4AYMUqnZWw77Hu7wKWi3qZ3f3H8m3lzPeElT8K0BLcfmHsHq/NvdMdlna05a7kAAAAASUVORK5CYII=",
+    "price": 50000,
+    "reqSTR": 50,
+    "reqDEX": 50,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 50,
+    "tuc": 5,
+    "incSTR": 2,
+    "incDEX": 1,
+    "incPDD": 28
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incPDD": {
+      "base": 28,
+      "min": 3,
+      "max": 53
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 2000003,
+  "description": {
+    "id": 2000003,
+    "name": "Blue Potion",
+    "description": "A potion made out of blue herbs.\\nRecovers 100 MP.",
+    "chineseName": "藍色藥水"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACB0lEQVR4nK2VjZGDIBCF1xkbICWQEkwJWsJdCVpCUoIpwZSQK8GUoCWEEmIJ3i64CMYfcufLOCIL+/EWNDH46p12BDvLhfX36ks3lOrgcn3sDmaYBbHKcwrnsjakKOr3AMZTELli3W43yPMcnq8XHA+HfwO9PWNQ1ykQQsLeil0IgyyQYp2JnasKrkXRv6cId0uwiA7DOZ84kbkGKWXgEp0SsMSygrOIobxBUFtGmVaYuPWCaZqObIk+1bggKYQG0n7SgrLTaXNPvT2TMhkTD6IS83OaJt5kAg4ToG6aTSDDouI766t7bQFL4vK5MH0PALrONJAaeVmBnj+cSMpPz7x/xozE/g77w4HTz5UecLsUPQEV/uTCK8DgJEmAi74FnMKsvnB/Hu14YLJTAovC0KsBaBWNE/B8zgNjWBG5Kr4JImBVuKbDARAC0OB1PFHNkzfgKiwIxOroncNvKp6xZ2Pa5NIFxrCzLhkarfA1wetRmIPE2oAps2T4wCHqByFpSS2JDpV1twSLKGgGEaQdoCzhwMVs/+Pi9pm5gWXkhN3kzonETD+8tddgjrs14HRRc8BtWCBQLNzN+Lppab90rpAy/hMY7mwG6JZnrqRjvG6UdfUJLAAIXl/dgAf6FOYBSSN0dFjdYYhlHugvMAukhoHiP/b4z4OfuMyOm0786+dKJ2LoXGxOv2HDBOb35nE+AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACSElEQVR4nK2WgZWDIAyG43sugCNwI+gIOsLdCDpCO4IdQUfojWBH0BHKCHUELxGjaEHpO3OPBwXMlz8BvRDWNhjjAE42Ezbcq+9xoFQP19vjdDDDZhBbeUnhUjaaFATDGcBwCyJVbHVdQ57n8Hy94CuK/g1c1YxBfa9ACAlnW2hCGDQDaa3Xa5eqgltRDO8u/NUSLKDDcMk3SmQ+gpTScIlKCVhiWsEIYkqvF3ROo0wrdNytFtM0XdgSdaolICnECKR6UkBZkhzWdFUzKePF8WSUYv6dpvHqYQJOD0DTtodAhgXFTzZU92YGuIzTZ8LG3gNoKhuBNMjLCsbnpxNJ/uk310+LkTjf47w/cPu6GjfU12IgoMI/6bgCDI7jGDjpR8AtbLZvrM+jWw5MlsTgNFx6tQCdon0Cnk87MIQdI1XFD0EE7BrGFEWAEIAW21dCOY/fgLswLxBbT3cO36l4xp6tHpNKExjCyXbNUGiF1wTbo9AHie0ApnTI8IFCtF+EpCWNJCpUszoXLKBFvYkg3QRlEwZcWOcfV3NOP+uZRnbYb3p2JCzz8Dbegxnq9oDboGzAY5gnUDh6vb9pO6rX6Msnjf8E+iuzAM302FK6rDetmlV9AvMAwmquaWEF+hRGhAgdvAhItkAXhdUdprVsBXLBXBeI+wyB44dPQ/GLvXx58BWX8ZBkxVMkYzNhwtFs4JuOPrlYguXrnBogCkcxjB1Lo3epNK2eetsJeStmaNlk2+j+P2G9th2vWmgsKLDXCTZz9uPnEcAfeDgerVa3Dt8AAAAASUVORK5CYII=",
+    "slotMax": 0,
+    "price": 100,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Potion",
+    "lowItemId": 2000000,
+    "highItemId": 2010000
+  }
+}

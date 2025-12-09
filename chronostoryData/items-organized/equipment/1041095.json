@@ -1,0 +1,49 @@
+{
+  "id": 1041095,
+  "description": {
+    "id": 1041095,
+    "name": "Bloody Mantis",
+    "description": "",
+    "chineseName": "赤飛影之服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACO0lEQVR4nL1WgZGbMBAUM2mAlEBKwCWYEqAEKAGXYEr4lAAlRCVYJTwlPCWQXaHTC1nkn58kN6MBS7rb272T8Df192w9mM/k5QzY+sfFlxf7nKfJPpd5VjNGs/llnwHzADUDRIsa4/V6VUWN1bK0c4VbI+gEsBHvAngEZkHyPFfXZVGTm8wdoHa/d0DGWICfWqu6KHyCBqPHGBAzBbY+sLkCCIEK5zQFG64AMQguQNPlokrMUToCUb5wv7zHYCuzvSCQAC2OkQD2fa8WrBnHhHsEKAQRVsP2M10zOolkfk6916sEEwLVYHUB2MP5DM6PIIWTEeheQhXVzLOqkXkegEidxnG0QGRGFgwqKvR4zzGK+93Xr4gAd8wMiouuUGeNQCXkDRvlprc2Cmu3A6P23BxbipXULXfJCZOm67yczeb+dKhXHkozbOWU+oS1OjJKWPFJJhgj4hDY1t7V8YnZhIw6ZLkE5yq0pmmSYHYvfDR831AvArEcJrHXg9WPh+qqSrVta6Up3Y0QmwlkDiXl+H67qRbPO2LV2NcC+IfWiesqqpUxqdzeQY6sdXX3UqaYUUZ2orT0RzZHgXwiPNiuSeJ0dzKSOqWQrjtrlJ+XL2UkuxLsBq39OsHsYRbqv+BQbUCZOmlIcI1lfLr1bfe4DmJbnOfkLWNDvLqYNnawaMHqgPYtoP1V42cmJeVWs4B2/Dn5ih11pAULuyd9us7ZUUf+ExmPOvK/y5hlXRf/czrd9qGvvaL2Ctl4vwFD/5TvtMPK9AAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAdCAYAAABbjRdIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChElEQVR4nL2WgXGjMBBFxUwaICVwJeASTAlQApSASzAl5EqAEk4lWCWEEkIJ3H6hVRZZckzmLjujASNpn/bvSvKL+ne2Jr5n/HIEtj7sfHuzz3ma7HOZZzVTa7Z52TMwD6jhIOjU1N7PZ1XU1FuW9lvh+gCdCDbSOwNTMAvJ81ydl0VN7mPugNr93oGMsYDfWqu6KPwCDbWe2kA+Y7D1RoMrggBUuEmTGHAmiCHnDJpOJ1XSN0gHEOST4/k9hK1Y7YkcMWhxETGw73u1UJ9xkWAMgySEoxq2n/GcYRJL5r+pz3yVFAlANUV1ItjNzRncPEAKJyPRvYQqyJmPqqaV5wLCeRrH0YIQGaKAU1ahp/ecWnG9+vwVAXAXmaHkUlWoowZQSfLKQrnorYxk7nYwaI/BocWi4rzlbnEcSdN1Xs5mm363qVdsSjNs6eT8yFylDBJWeCISaiP5Adjm3uXxLrKJVtTRKhexr6Q1TROF2bE0R9PcD8oXQEiHiYz1sPp2U11VqbZtrTSlOxFCM0JmKSna6+WiWnpeyVdN41oC/9I6clwFuTImtrZPSMpal3cvZSwyyIhK5JL+yubAkV8INrYrknC5OxkROqTgqjtqkB+HL2REdCVFN2jt+wGzm5lD/0MTqg2UqYNGC1xDGe9OfVs9roJQFsdj8pahIN6dT+tbdFpYLcK+iLC/a7hmYlJuORNhh9fJdyxVkRYmqye+u45ZqiL/i4ypivxxGbOs68J/TrGyf/bueaWK/FB7hXbHlXSeixaCngXiIpCXh72L5X2WJ1oIiQFTW5NvKWg5M4wdF+IpHR+/viMLCCNLDXx0qCwP3nftRXTM6mu5+H/QI2ByAX8BErutWmfjGHcAAAAASUVORK5CYII=",
+    "price": 90000,
+    "reqSTR": 0,
+    "reqDEX": 100,
+    "reqINT": 0,
+    "reqLUK": 170,
+    "reqJob": 8,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incDEX": 1,
+    "incLUK": 4,
+    "incPDD": 50
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incLUK": {
+      "base": 4,
+      "min": 1,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 50,
+      "min": 20,
+      "max": 80
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 1472006,
+  "itemName": "Adamantium Igor",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 2130100,
+      "mobName": "Dark Axe Stump",
+      "chineseMobName": "黑斧木妖",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

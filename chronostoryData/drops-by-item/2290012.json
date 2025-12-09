@@ -1,0 +1,19 @@
+{
+  "itemId": 2290012,
+  "itemName": "[Mastery Book] Blast",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 8170000,
+      "mobName": "Thanatos",
+      "chineseMobName": "達納托斯",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

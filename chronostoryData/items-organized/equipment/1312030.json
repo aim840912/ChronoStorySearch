@@ -1,0 +1,39 @@
+{
+  "id": 1312030,
+  "description": {
+    "id": 1312030,
+    "name": "Tomahawk",
+    "description": "",
+    "chineseName": "印第安戰斧"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAfCAYAAABplKSyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACc0lEQVR4nMWWi3WrMAyG5XPuAjCCO4IzAhmhHYGMkIyQO0IYIRmhjIBHqEcII7iS/MDhhPAISdWT4oBAn35LIv/g78z6o/grCHttFBhjYPPV2ndDWEeg+IvEPwAN74SwHDw7ArQHaA2wEmTvgOiy7wHgVtCll9eEz77BZX0XgP69CsJlb60PvukHjwCvguiyx+Bk97JPbS0IGxdx7x9nPwfCDt2Y+lBgXRuQUvKJVh/4+Cj7qRC2OWc8TEZBMHNVHGC3M1B+ulNj2U+F4MzKTwPVZRDElhRQbKFBNQigutBnPPsxCN5feniG6rrMsj4I+zRZBnXrMm7d3JkNkELEwsKSAnreyY9WBroFicErD1DRZ6OD+yyAAGG7fj7EC6GyVSF5TdvSotSERgDGB18auA8h0DxIJ2umsNikg6JtoZfN/uyqvewAngqeQrDpS86FSAFp0GyEAJU4kthUfM15WtstgRDUivYK3G4BQCaOtN7lbt+Vg5oyQ2ZBcKulJntH49fGQ8CKILEwdZ77U0UMkiqxR5//qFCRXCO/KvmZ9gyEe9GcnNwnW984hG+GAHCC1lgPMgEkBfff3/Cx3drkttlzQohc8wNYgaRNyU6kEhYttSq9H8K2QHJstYYfBJFKgYiKzoOI5DpMy2QSkkoVd4P2A0zfPKA4HrGdFQMstf7YZlVoIga75C44bRWti8RZBoCi8DeLmNAzEGwGVSi8GtKDFD0fAlAlVoQHXgowBCG+6DU+cINM5V8BYAiCLahhfG3cC74GwCMIp8Z+z9txL/haAI8g2DJf8aHwesFXARiDEDSA7PX6suBTIFzcPF88CafaL+gIMUshduVAAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACsUlEQVR4nMWWi5HiMAyG5ZlrwCnBW4IpIZSwlAAlQAlsCaQEKAFKiEs4l4BL8EnyA5NLAuG12vHGSZTo029Z4Q/8nvl4FL8F4c+tBmstzBbOfxrCBwLNJwr/AAx8EsJzcLkFcBtwFlgJsk9AXLLvAOBS0K2310TMvsXpqReA/r0LImTvfQw+6wbPAO+CuGSPwcn6si/tVRA+T/Laj2c/BcIPPVj6UGBzsqCU4gvObPg4lv29EL7dS24mN0Ewc11vYLWysPwOl25lfy8EZ7b8ttAcBkH8kgKKObSoBgE0Bxq3s78FwetLL5eobshMdkHYp5USTi5k7ELfmQxQQuTCwpICet8utlYGugbJwZsI0NCYmeQ+CSBB+Mt+3uQbqbJ1rXhOy+JQakIjABuDPxq4CyHQIshFVqmx2FSAomWhj816H6p9eQF4KngJwWYOFRciBaRGMxMCdOFIYlPxtfv7tt0jEIK2oj8Db7cEoApHmq+qsO46QN3TQyZB8FYrTXWONs5thIAXguTCNFUVL9U5SKnEGn1+UKG6uEd+TfEz7RmI8KHZBbl3/nTlkM4sAWAHPWE9qAKQFFwfj/A1n/viscl9QojK8AtYgWKbku1IJSxa2qr0fUjLAsXRGQN/EURpDSIrOg0ik5vULYtOSCo1vBtMbGDm6gX1dovbWTPAo9Zt26wKdcRkhyoEp6WieV04qwRQ1/FhkRN6BoLNogp1VENFkLrjQwB6iRURgR8FGIIQC/qMDzygSvlfADAEwZbUsLE2+oIXAFSNEsbNDd0YgghqrNe8HH3BC4A5ANyqSlccHXSAhiA4mowVnwqvE5zsB+C/chnKOAW3cWS/PggZxxwb0NGfz33Bm8L3HnNjN0eVQFtg89kX1zcwbm5k3h2jEEmyBPIF/RlL6M/QjZz3KvIPbe1LkxG2hrsAAAAASUVORK5CYII=",
+    "price": 470000,
+    "reqSTR": 290,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 100,
+    "tuc": 7,
+    "incPAD": 98,
+    "attack": 1,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Axe"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 98,
+      "min": 93,
+      "max": 103
+    }
+  }
+}

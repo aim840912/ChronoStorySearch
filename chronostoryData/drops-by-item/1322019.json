@@ -1,0 +1,63 @@
+{
+  "itemId": 1322019,
+  "itemName": "The Judgement",
+  "chineseItemName": null,
+  "totalMonsters": 5,
+  "monsters": [
+    {
+      "mobId": 6220000,
+      "mobName": "Dyle",
+      "chineseMobName": "沼澤巨鱷",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8130100,
+      "mobName": "Jr. Balrog",
+      "chineseMobName": "巴洛古",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5150003,
+      "mobName": "Hot Mixed Golem",
+      "chineseMobName": "火之混種石巨人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7130100,
+      "mobName": "Tauromacis",
+      "chineseMobName": "月牙牛魔王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8140200,
+      "mobName": "Klock",
+      "chineseMobName": "冥鐘",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

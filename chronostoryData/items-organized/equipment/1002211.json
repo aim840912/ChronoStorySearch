@@ -1,0 +1,49 @@
+{
+  "id": 1002211,
+  "description": {
+    "id": 1002211,
+    "name": "Blue Maro",
+    "description": "",
+    "chineseName": "藍貴族軟帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAVCAYAAABR915hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAClUlEQVR4nJWVi3nqMAyFxfd1Ad0RxAhhhKwAI8AIMMLtCGWEsoJHaEbAK2gEeiQ/YgKB1CW1YxT9Rw+HD1o+bm++X/3BFy0BO7A/fhP7LfuH1D5ajcLnrghbJGAOXKPbAkjMzmIeoTbHiEuB10jd/svth/NhkYApuImOyTnczNlIywJ7AnCM7HDT00OALhDQgm/S/0cEJxrCjoSFpDvCCTuphQvXoH0WMbB46tU28K/b5gxcXMBqDuxQFIoEk1oK8afhRCx7ECRjcqB2ASac9tRoJspLniQpexOQbBHM5fQArxFbpIJyXju7Ifp3IX84RojhvcXVsNlt1CNNNeYsomTGMqXWBAa3TIbTXeo/2hRfe6RHD/6tCVjHVmNMcMpRufMEtQaz9LLvi5dCBLZdR4N3YETZ9sl+uHj0i8+xqefCtYU31ZBqmo9VdBvs2/cQ1oldQoNlJTcEd1uHLwJ7ytqZy/nVwgRQRntNtspdsUo2xPns8/1xWodDqrGthzvyRMkzcQVqKbf0o8uHoe7VF05K0Qhm7Sl+BlofKZUzKxfcXyU1iTnf2HzucWBDFRngf3eOOfLe08oesXizPQjnBF7VjoMjNHEdCZqEWKNdwfsBZLMP9MOjEFt/o/EPpi+EEa4J7sfLj4HWiErE1uI32SbnDsJ0pXFtUa4pVHiBUuhpIxAC0V9g7EotlMbImxSXcVfj1nncTF83gXDinrz/govbxJ6+kH6LfHceEHXnMG1ePF7l6HV/PE4xO/cH/zA0BgDb+wxvOlGbqFvwCg/frD4zrl+Cnwn16FjaDedMwRWeHE0FMD2O92Jyaqv/snj2AlklcaH+Js9n4b5+b8bzH4lXhq2IeSFcbGdhS8GzDqZCXtnOjV9Nxm2PT6cmvQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAZCAYAAAAmNZ4aAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC3UlEQVR4nJWWi3XqMAyGxTldQB1BjBBGyB0BRoARygiXEWCEMsL1CM0IeAWNwJXkR0RepC6uHePo+/Vwwgesb883329+YQvWgA3Yfn0D2iXaB1g/XDeFy6EIWyVgDly92wsQEI2F2EN1jFE6C54jNMer7e9up1UChmDnHYJx0I15E5eJrJGAY0SDq55WBPAKAR78pPaveHCGLhyAkICaLzGCRvJwwuq0jUQKJgs964L8a/Y5AncTsJkDG1QSBSQDawjlj8MZkI5CoIzJjmoXGGFaY6WpKEt5ksRoRQC0F2fu5xG8eqyekqTz0egFwOcd7OYYRQwe1S/HRtvD5mnKMWYRJTIaKdYiULhGMpxfQv/hQ/xoJTx8sm9VwDZ6jTHBIXtlxhNUC0zDi7ZOlgoi2ds00FkFRknbMe3v7ub96nOs6rFwdWJF1aWc5mMVbY+s6/cirCHtBJ1GJRcENnuDrwJbyPyI5fxyYQqQ+v2c9jI2ZVfaA5jPPr4ep204pRzrvHshD5RMiStQDbmGX6q86+pafeCkEPVg5BbiJcD2C1I6s3KS6welIlHjOx1vrRzYUEUGsX+4xex5a2FF85is2EbCMYE3teLEkBRxbQmahGihPYT3I5DdMcAP9kJ0/i2Ff1J9IfRwTnA7XnYMuHpUPNYSf9I+GTeQDA/o5+rlFkKFFyiEFnYkQkT0VRiHkguG3nMX4tJecuyNx93wcRNATtzE8y+YuF1s4SrhV88Pt068bgzG7sFjWY6W9/Fxitm43fiLxjEI0F9nuKtEdl578EZufmp+ZkwvgqeEmndIfsE4Q3CFJ0NDAQjj9l5MDm21XyZTD5BNEhfqO3k+Cq/5e9OmXxJLG72IeSFY9vrFzzlFc2AcjFu/Jsb/LQj+4+burVL7JBhnuheh7QLjVow2E+vaY+48BBcIudEDp6rrXZtN/JTHczctVQ8vzId9BC7h8PApL8tPrSX4khhr/wEsfIhbpQknAgAAAABJRU5ErkJggg==",
+    "price": 40000,
+    "reqSTR": 0,
+    "reqDEX": 160,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incSTR": 2,
+    "incDEX": 1,
+    "incPDD": 33
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incPDD": {
+      "base": 33,
+      "min": 8,
+      "max": 58
+    }
+  }
+}

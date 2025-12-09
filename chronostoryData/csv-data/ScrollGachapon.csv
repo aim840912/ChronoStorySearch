@@ -1,0 +1,1000 @@
+Chance,ItemID,Name,Percent
+1000000,2040602,Scroll for Bottomwear for Defense 10%,0.40%
+1000000,2040600,Scroll for Bottomwear for Defense 100%,0.40%
+1000000,2040616,Scroll for Bottomwear for Defense 15%,0.40%
+1000000,2040601,Scroll for Bottomwear for Defense 60%,0.40%
+1000000,2040612,Scroll for Bottomwear for DEX 10%,0.40%
+1000000,2040614,Scroll for Bottomwear for DEX 100%,0.40%
+1000000,2040615,Scroll for Bottomwear for DEX 15%,0.40%
+1000000,2040613,Scroll for Bottomwear for DEX 60%,0.40%
+1000000,2040619,Scroll for Bottomwear for Mobility 10%,0.40%
+1000000,2040617,Scroll for Bottomwear for Mobility 100%,0.40%
+1000000,2040620,Scroll for Bottomwear for Mobility 15%,0.40%
+1000000,2040618,Scroll for Bottomwear for Mobility 60%,0.40%
+1000000,2044502,Scroll for Bow for ATT 10%,0.40%
+1000000,2044500,Scroll for Bow for ATT 100%,0.40%
+1000000,2044507,Scroll for Bow for ATT 15%,0.40%
+1000000,2044501,Scroll for Bow for ATT 60%,0.40%
+1000000,2041005,Scroll for Cape for Defense 10%,0.40%
+1000000,2041003,Scroll for Cape for Defense 100%,0.40%
+1000000,2041045,Scroll for Cape for Defense 15%,0.40%
+1000000,2041004,Scroll for Cape for Defense 60%,0.40%
+1000000,2041020,Scroll for Cape for DEX 10%,0.40%
+1000000,2041018,Scroll for Cape for DEX 100%,0.40%
+1000000,2041055,Scroll for Cape for DEX 15%,0.40%
+1000000,2041019,Scroll for Cape for DEX 60%,0.40%
+1000000,2041017,Scroll for Cape for INT 10%,0.40%
+1000000,2041015,Scroll for Cape for INT 100%,0.40%
+1000000,2041053,Scroll for Cape for INT 15%,0.40%
+1000000,2041016,Scroll for Cape for INT 60%,0.40%
+1000000,2041023,Scroll for Cape for LUK 10%,0.40%
+1000000,2041021,Scroll for Cape for LUK 100%,0.40%
+1000000,2041057,Scroll for Cape for LUK 15%,0.40%
+1000000,2041022,Scroll for Cape for LUK 60%,0.40%
+1000000,2041014,Scroll for Cape for STR 10%,0.40%
+1000000,2041012,Scroll for Cape for STR 100%,0.40%
+1000000,2041051,Scroll for Cape for STR 15%,0.40%
+1000000,2041013,Scroll for Cape for STR 60%,0.40%
+1000000,2044702,Scroll for Claw for ATT 10%,0.40%
+1000000,2044700,Scroll for Claw for ATT 100%,0.40%
+1000000,2044707,Scroll for Claw for ATT 15%,0.40%
+1000000,2044701,Scroll for Claw for ATT 60%,0.40%
+1000000,2044602,Scroll for Crossbow for ATT 10%,0.40%
+1000000,2044600,Scroll for Crossbow for ATT 100%,0.40%
+1000000,2044607,Scroll for Crossbow for ATT 15%,0.40%
+1000000,2044601,Scroll for Crossbow for ATT 60%,0.40%
+1000000,2043302,Scroll for Dagger for ATT 10%,0.40%
+1000000,2043300,Scroll for Dagger for ATT 100%,0.40%
+1000000,2043307,Scroll for Dagger for ATT 15%,0.40%
+1000000,2043301,Scroll for Dagger for ATT 60%,0.40%
+1000000,2040310,Scroll for Earring for Defense 10%,0.40%
+1000000,2040312,Scroll for Earring for Defense 100%,0.40%
+1000000,2040313,Scroll for Earring for Defense 15%,0.40%
+1000000,2040311,Scroll for Earring for Defense 60%,0.40%
+1000000,2040318,Scroll for Earring for DEX 10%,0.40%
+1000000,2040316,Scroll for Earring for DEX 100%,0.40%
+1000000,2040336,Scroll for Earring for DEX 15%,0.40%
+1000000,2040317,Scroll for Earring for DEX 60%,0.40%
+1000000,2040302,Scroll for Earring for INT 10%,0.40%
+1000000,2040300,Scroll for Earring for INT 100%,0.40%
+1000000,2040314,Scroll for Earring for INT 15%,0.40%
+1000000,2040301,Scroll for Earring for INT 60%,0.40%
+1000000,2040323,Scroll for Earring for LUK 10%,0.40%
+1000000,2040319,Scroll for Earring for LUK 100%,0.40%
+1000000,2040338,Scroll for Earring for LUK 15%,0.40%
+1000000,2040321,Scroll for Earring for LUK 60%,0.40%
+1000000,2040332,Scroll for Earring for STR 10%,0.40%
+1000000,2040328,Scroll for Earring for STR 100%,0.40%
+1000000,2040333,Scroll for Earring for STR 15%,0.40%
+1000000,2040330,Scroll for Earring for STR 60%,0.40%
+1000000,2040802,Scroll for Gloves for Accuracy 10%,0.40%
+1000000,2040800,Scroll for Gloves for Accuracy 100%,0.40%
+1000000,2040829,Scroll for Gloves for Accuracy 15%,0.40%
+1000000,2040801,Scroll for Gloves for Accuracy 60%,0.40%
+1000000,2040805,Scroll for Gloves for ATT 10%,0.40%
+1000000,2040803,Scroll for Gloves for ATT 100%,0.40%
+1000000,2040822,Scroll for Gloves for ATT 15%,0.40%
+1000000,2040804,Scroll for Gloves for ATT 60%,0.40%
+1000000,2040825,Scroll for Gloves for Defense 10%,0.40%
+1000000,2040823,Scroll for Gloves for Defense 100%,0.40%
+1000000,2040826,Scroll for Gloves for Defense 15%,0.40%
+1000000,2040824,Scroll for Gloves for Defense 60%,0.40%
+1000000,2040816,Scroll for Gloves for Magic ATT 10%,0.40%
+1000000,2040818,Scroll for Gloves for Magic ATT 100%,0.40%
+1000000,2040820,Scroll for Gloves for Magic ATT 15%,0.40%
+1000000,2040817,Scroll for Gloves for Magic ATT 60%,0.40%
+1000000,2044902,Scroll for Gun for ATT 10%,0.40%
+1000000,2044900,Scroll for Gun for ATT 100%,0.40%
+1000000,2044905,Scroll for Gun for ATT 15%,0.40%
+1000000,2044901,Scroll for Gun for ATT 60%,0.40%
+1000000,2040016,Scroll for Helmet for Accuracy 10%,0.40%
+1000000,2040018,Scroll for Helmet for Accuracy 100%,0.40%
+1000000,2040034,Scroll for Helmet for Accuracy 15%,0.40%
+1000000,2040017,Scroll for Helmet for Accuracy 60%,0.40%
+1000000,2040002,Scroll for Helmet for Defense 10%,0.40%
+1000000,2040000,Scroll for Helmet for Defense 100%,0.40%
+1000000,2040001,Scroll for Helmet for Defense 60%,0.40%
+1000000,2040031,Scroll for Helmet for DEX 10%,0.40%
+1000000,2040027,Scroll for Helmet for DEX 100%,0.40%
+1000000,2040044,Scroll for Helmet for DEX 15%,0.40%
+1000000,2040029,Scroll for Helmet for DEX 60%,0.40%
+1000000,2040026,Scroll for Helmet for INT 10%,0.40%
+1000000,2040024,Scroll for Helmet for INT 100%,0.40%
+1000000,2040036,Scroll for Helmet for INT 15%,0.40%
+1000000,2040025,Scroll for Helmet for INT 60%,0.40%
+1000000,2044809,Scroll for Knuckler for Accuracy 10%,0.40%
+1000000,2044805,Scroll for Knuckler for Accuracy 100%,0.40%
+1000000,2044810,Scroll for Knuckler for Accuracy 15%,0.40%
+1000000,2044807,Scroll for Knuckler for Accuracy 60%,0.40%
+1000000,2044802,Scroll for Knuckler for ATT 10%,0.40%
+1000000,2044800,Scroll for Knuckler for ATT 100%,0.40%
+1000000,2044812,Scroll for Knuckler for ATT 15%,0.40%
+1000000,2044801,Scroll for Knuckler for ATT 60%,0.40%
+1000000,2043114,Scroll for One-Handed Axe for Accuracy 10%,0.40%
+1000000,2043110,Scroll for One-Handed Axe for Accuracy 100%,0.40%
+1000000,2043115,Scroll for One-Handed Axe for Accuracy 15%,0.40%
+1000000,2043112,Scroll for One-Handed Axe for Accuracy 60%,0.40%
+1000000,2043102,Scroll for One-Handed Axe for ATT 10%,0.40%
+1000000,2043100,Scroll for One-Handed Axe for ATT 100%,0.40%
+1000000,2043107,Scroll for One-Handed Axe for ATT 15%,0.40%
+1000000,2043101,Scroll for One-Handed Axe for ATT 60%,0.40%
+1000000,2043214,Scroll for One-Handed BW for Accuracy 10%,0.40%
+1000000,2043210,Scroll for One-Handed BW for Accuracy 100%,0.40%
+1000000,2043215,Scroll for One-Handed BW for Accuracy 15%,0.40%
+1000000,2043212,Scroll for One-Handed BW for Accuracy 60%,0.40%
+1000000,2043202,Scroll for One-Handed BW for ATT 10%,0.40%
+1000000,2043200,Scroll for One-Handed BW for ATT 100%,0.40%
+1000000,2043207,Scroll for One-Handed BW for ATT 15%,0.40%
+1000000,2043201,Scroll for One-Handed BW for ATT 60%,0.40%
+1000000,2043019,Scroll for One-Handed Sword for Accuracy 10%,0.40%
+1000000,2043015,Scroll for One-Handed Sword for Accuracy 100%,0.40%
+1000000,2043020,Scroll for One-Handed Sword for Accuracy 15%,0.40%
+1000000,2043017,Scroll for One-Handed Sword for Accuracy 60%,0.40%
+1000000,2043002,Scroll for One-Handed Sword for ATT 10%,0.40%
+1000000,2043000,Scroll for One-Handed Sword for ATT 100%,0.40%
+1000000,2043012,Scroll for One-Handed Sword for ATT 15%,0.40%
+1000000,2043001,Scroll for One-Handed Sword for ATT 60%,0.40%
+1000000,2040505,Scroll for Overall Armor for Defense 10%,0.40%
+1000000,2040503,Scroll for Overall Armor for Defense 100%,0.40%
+1000000,2040525,Scroll for Overall Armor for Defense 15%,0.40%
+1000000,2040504,Scroll for Overall Armor for Defense 60%,0.40%
+1000000,2040502,Scroll for Overall Armor for DEX 10%,0.40%
+1000000,2040500,Scroll for Overall Armor for DEX 100%,0.40%
+1000000,2040523,Scroll for Overall Armor for DEX 15%,0.40%
+1000000,2040501,Scroll for Overall Armor for DEX 60%,0.40%
+1000000,2040514,Scroll for Overall Armor for INT 10%,0.40%
+1000000,2040512,Scroll for Overall Armor for INT 100%,0.40%
+1000000,2040527,Scroll for Overall Armor for INT 15%,0.40%
+1000000,2040513,Scroll for Overall Armor for INT 60%,0.40%
+1000000,2040517,Scroll for Overall Armor for LUK 10%,0.40%
+1000000,2040515,Scroll for Overall Armor for LUK 100%,0.40%
+1000000,2040529,Scroll for Overall Armor for LUK 15%,0.40%
+1000000,2040516,Scroll for Overall Armor for LUK 60%,0.40%
+1000000,2040534,Scroll for Overall Armor for STR 10%,0.40%
+1000000,2040530,Scroll for Overall Armor for STR 100%,0.40%
+1000000,2040541,Scroll for Overall Armor for STR 15%,0.40%
+1000000,2040532,Scroll for Overall Armor for STR 60%,0.40%
+1000000,2044414,Scroll for Pole Arm for Accuracy 10%,0.40%
+1000000,2044410,Scroll for Pole Arm for Accuracy 100%,0.40%
+1000000,2044415,Scroll for Pole Arm for Accuracy 15%,0.40%
+1000000,2044412,Scroll for Pole Arm for Accuracy 60%,0.40%
+1000000,2044402,Scroll for Pole Arm for ATT 10%,0.40%
+1000000,2044400,Scroll for Pole Arm for ATT 100%,0.40%
+1000000,2044407,Scroll for Pole Arm for ATT 15%,0.40%
+1000000,2044401,Scroll for Pole Arm for ATT 60%,0.40%
+1000000,2040915,Scroll for Shield for ATT 10%,0.40%
+1000000,2040928,Scroll for Shield for ATT 100%,0.40%
+1000000,2040934,Scroll for Shield for ATT 15%,0.40%
+1000000,2040914,Scroll for Shield for ATT 60%,0.40%
+1000000,2040902,Scroll for Shield for Defense 10%,0.40%
+1000000,2040900,Scroll for Shield for Defense 100%,0.40%
+1000000,2040911,Scroll for Shield for Defense 15%,0.40%
+1000000,2040901,Scroll for Shield for Defense 60%,0.40%
+1000000,2040925,Scroll for Shield for LUK 10%,0.40%
+1000000,2040923,Scroll for Shield for LUK 100%,0.40%
+1000000,2040938,Scroll for Shield for LUK 15%,0.40%
+1000000,2040924,Scroll for Shield for LUK 60%,0.40%
+1000000,2040920,Scroll for Shield for Magic ATT 10%,0.40%
+1000000,2040918,Scroll for Shield for Magic ATT 100%,0.40%
+1000000,2040926,Scroll for Shield for Magic ATT 15%,0.40%
+1000000,2040919,Scroll for Shield for Magic ATT 60%,0.40%
+1000000,2040933,Scroll for Shield for STR 10%,0.40%
+1000000,2040929,Scroll for Shield for STR 100%,0.40%
+1000000,2040942,Scroll for Shield for STR 15%,0.40%
+1000000,2040931,Scroll for Shield for STR 60%,0.40%
+1000000,2040702,Scroll for Shoes for Avoidability 10%,0.40%
+1000000,2040700,Scroll for Shoes for Avoidability 100%,0.40%
+1000000,2040719,Scroll for Shoes for Avoidability 15%,0.40%
+1000000,2040701,Scroll for Shoes for Avoidability 60%,0.40%
+1000000,2040705,Scroll for Shoes for Jump 10%,0.40%
+1000000,2040703,Scroll for Shoes for Jump 100%,0.40%
+1000000,2040721,Scroll for Shoes for Jump 15%,0.40%
+1000000,2040704,Scroll for Shoes for Jump 60%,0.40%
+1000000,2040708,Scroll for Shoes for Mobility 10%,0.40%
+1000000,2040706,Scroll for Shoes for Mobility 100%,0.40%
+1000000,2040723,Scroll for Shoes for Mobility 15%,0.40%
+1000000,2040707,Scroll for Shoes for Mobility 60%,0.40%
+1000000,2044314,Scroll for Spear for Accuracy 10%,0.40%
+1000000,2044310,Scroll for Spear for Accuracy 100%,0.40%
+1000000,2044315,Scroll for Spear for Accuracy 15%,0.40%
+1000000,2044312,Scroll for Spear for Accuracy 60%,0.40%
+1000000,2044302,Scroll for Spear for ATT 10%,0.40%
+1000000,2044300,Scroll for Spear for ATT 100%,0.40%
+1000000,2044307,Scroll for Spear for ATT 15%,0.40%
+1000000,2044301,Scroll for Spear for ATT 60%,0.40%
+1000000,2043802,Scroll for Staff for Magic ATT 10%,0.40%
+1000000,2043800,Scroll for Staff for Magic ATT 100%,0.40%
+1000000,2043807,Scroll for Staff for Magic ATT 15%,0.40%
+1000000,2043801,Scroll for Staff for Magic ATT 60%,0.40%
+1000000,2040402,Scroll for Topwear for Defense 10%,0.40%
+1000000,2040400,Scroll for Topwear for Defense 100%,0.40%
+1000000,2040416,Scroll for Topwear for Defense 15%,0.40%
+1000000,2040401,Scroll for Topwear for Defense 60%,0.40%
+1000000,2040412,Scroll for Topwear for LUK 10%,0.40%
+1000000,2040414,Scroll for Topwear for LUK 100%,0.40%
+1000000,2040436,Scroll for Topwear for LUK 15%,0.40%
+1000000,2040413,Scroll for Topwear for LUK 60%,0.40%
+1000000,2040419,Scroll for Topwear for STR 10%,0.40%
+1000000,2040417,Scroll for Topwear for STR 100%,0.40%
+1000000,2040432,Scroll for Topwear for STR 15%,0.40%
+1000000,2040418,Scroll for Topwear for STR 60%,0.40%
+1000000,2044114,Scroll for Two-Handed Axe for Accuracy 10%,0.40%
+1000000,2044110,Scroll for Two-Handed Axe for Accuracy 100%,0.40%
+1000000,2044115,Scroll for Two-Handed Axe for Accuracy 15%,0.40%
+1000000,2044112,Scroll for Two-Handed Axe for Accuracy 60%,0.40%
+1000000,2044102,Scroll for Two-Handed Axe for ATT 10%,0.40%
+1000000,2044100,Scroll for Two-Handed Axe for ATT 100%,0.40%
+1000000,2044107,Scroll for Two-Handed Axe for ATT 15%,0.40%
+1000000,2044101,Scroll for Two-Handed Axe for ATT 60%,0.40%
+1000000,2044214,Scroll for Two-Handed BW for Accuracy 10%,0.40%
+1000000,2044210,Scroll for Two-Handed BW for Accuracy 100%,0.40%
+1000000,2044215,Scroll for Two-Handed BW for Accuracy 15%,0.40%
+1000000,2044212,Scroll for Two-Handed BW for Accuracy 60%,0.40%
+1000000,2044202,Scroll for Two-Handed BW for ATT 10%,0.40%
+1000000,2044200,Scroll for Two-Handed BW for ATT 100%,0.40%
+1000000,2044207,Scroll for Two-Handed BW for ATT 15%,0.40%
+1000000,2044201,Scroll for Two-Handed BW for ATT 60%,0.40%
+1000000,2044014,Scroll for Two-Handed Sword for Accuracy 10%,0.40%
+1000000,2044010,Scroll for Two-Handed Sword for Accuracy 100%,0.40%
+1000000,2044015,Scroll for Two-Handed Sword for Accuracy 15%,0.40%
+1000000,2044012,Scroll for Two-Handed Sword for Accuracy 60%,0.40%
+1000000,2044002,Scroll for Two-Handed Sword for ATT 10%,0.40%
+1000000,2044000,Scroll for Two-Handed Sword for ATT 100%,0.40%
+1000000,2044007,Scroll for Two-Handed Sword for ATT 15%,0.40%
+1000000,2044001,Scroll for Two-Handed Sword for ATT 60%,0.40%
+1000000,2043702,Scroll for Wand for Magic ATT 10%,0.40%
+1000000,2043700,Scroll for Wand for Magic ATT 100%,0.40%
+1000000,2043707,Scroll for Wand for Magic ATT 15%,0.40%
+1000000,2043701,Scroll for Wand for Magic ATT 60%,0.40%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%
+,,,0.00%

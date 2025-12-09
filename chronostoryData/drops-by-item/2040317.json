@@ -1,0 +1,41 @@
+{
+  "itemId": 2040317,
+  "itemName": "Scroll for Earring for DEX 60%",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 5130105,
+      "mobName": "Dark Jr. Yeti",
+      "chineseMobName": "黑色小雪球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6230600,
+      "mobName": "Ice Drake",
+      "chineseMobName": "冰龍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8141000,
+      "mobName": "Spirit Viking",
+      "chineseMobName": "維京",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

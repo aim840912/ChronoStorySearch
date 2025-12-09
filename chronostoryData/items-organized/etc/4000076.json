@@ -1,0 +1,27 @@
+{
+  "id": 4000076,
+  "description": {
+    "id": 4000076,
+    "name": "Fly-Eye Wing",
+    "description": "A wing removed from Fly-Eye. Spiky and very dirty.",
+    "chineseName": "獨眼蝙蝠之翼"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABoUlEQVR4nLWW63WDMAyFzTlZICt0BVZghaxAV2lGCCswQhmhXoEVGMFFAgnZyC+a3h+xA4ZPLwvfzP/JJe417wYzrGvvOH7c/QXDtOC6d4AZ9upbY+fZzIsA3tsDOk4wNPDzF7AjGAiAo51xjlABDKFXwSfgvJgDaPLQWvAJCPLCGkIXSzn1oDVgpwFBBVBVOTB7mQRqWo3oO4vT1QB4T3Go3c/3l7Hj6OUxqcV6YIpA/8A8e/AYGKHD84l/NChdm2zMomkFdjgrLa4sVMKoUYC0fGtQDcxQCQy9isIKoRoYcxqGUYKyCvZwTBLsZPUCNAc8eRtpjymwF+IS6EmFnoZgDjFB49W6CdZw1ypokRqY9yvB9pEedJr3tLbvKiMjwAj9HGzWSikyZmuLx55FY9Z52DBUcEbN6p2L5ZwN2MLLBuTgl7/HYUVTyEMDYkJwTZijXyMy4GHYgJTXt/1i6mBWLfKaxv39lw8CWW8FLBs9AhdXc0qlUAlO6VzRlV3qCtjFzseharwtAeMehgl3KL09VkFLwPzC/dxkoEtp92v1C4ah8XcMvDYUAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB3klEQVR4nLWWjXGDMAyFnbsuQEfICukIrJAV6AqMkIzQrMAIYYR6hLKCR6BIIEeW5R/S9N2BjTF8kiwL3sz/ac7cO7wa7GHtqcH22IQTbqPDea8Ae9hXdzJ2mszkGLA5PaDDCM0BTn8BzwQDAXCwE/YRyoAS+iw4Ak7OPICmDN0LjoCgIKwS6iytaQDdA541IKgCqqoE9l5mgZoWI7rWYncxAN5THer5+34xdhiCdczK2QBMEejOuM4BPAVG6O16xQsNSmOjTVk0LsAWe7XJVYRyGBUKkLbeGlQDeygHSq+SsEqoBsY1lWHkoKLEHk6Jg2eevQAtASNvE+UxBw5CXAONVOmpBPsQEzSdratgjq9aFSVSA/v9SrCtpQdnzXua27U7I8PACP282aKVXGTMWhYfexaNWfqyYKjggg6Ld3Nqzb0Ba3i9ASX4099jmdEUcmlASgjeE+bk14gMOBtvQM7rt20w92O2W+Q1tdv7n/4RKHrLYMXoEbg6m3PaoO9gFhtWC0LK44a1P1FG56sUv+lY69h1BG7EcU/9H0tt3vYCzKHTdjgJJtiRtf2yhy9w01covTyCriYMMUFVaR7Lh3oEjKsBUKWEegGQfXlEYApHkLus/8HGNE9c5jqa/wtVhQusaJ1jlQAAAABJRU5ErkJggg==",
+    "slotMax": 200,
+    "price": 35,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

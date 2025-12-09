@@ -1,0 +1,19 @@
+{
+  "itemId": 1082089,
+  "itemName": "Oaker Garner",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 4230126,
+      "mobName": "Mummydog",
+      "chineseMobName": "木乃伊犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 1060033,
+  "itemName": "Black Pao Bottom",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 2110200,
+      "mobName": "Horny Mushroom",
+      "chineseMobName": "刺菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

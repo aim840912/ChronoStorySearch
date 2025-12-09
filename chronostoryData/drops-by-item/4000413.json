@@ -1,0 +1,19 @@
+{
+  "itemId": 4000413,
+  "itemName": "Someone's Hat",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5090000,
+      "mobName": "Shade",
+      "chineseMobName": "冥界幽靈",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 20,
+      "displayChance": "20.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

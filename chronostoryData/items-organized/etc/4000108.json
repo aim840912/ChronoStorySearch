@@ -1,0 +1,38 @@
+{
+  "id": 4000108,
+  "description": {
+    "id": 4000108,
+    "name": "Panda Doll",
+    "description": "A small, adorable-looking panda doll. Looks so real that it may just get up and walk around any minute.",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACl0lEQVR4nK2WgXGrMAyGxV0WICPwRiAjwAjJCGSEMkIzQhkhjAAjlBHKCM0Ifv5dy5GFIWmuuss5IFufJVkyO4rFqOeM/kgkyBRFESnneTYepjeQ2ozZ0AWQaZqGjUcjdNfhM0nAnPZ8cgBeDxnHUW/UgRyEDb9VP17V7Uhf39+rbkzTTIjA+8eVxr5z69lGVVVyww4W5QiQsixoX7cBUuR5mlTew1wdG3hGw/vdq57uesB2HAK3wHqW7Q8OsgrwAv18u7mNQeAZ3cbwbK06GNsOIISBIc+KhImcUl5WVNJIvXgHUObjGBn4rWCj0wzAHGDzpY1AxDB4cz6d3IthGJIGs+znxCLhH9drcs5tGulw7kiWS3QYAOGjWdf1AoZ3LJiH+RoGAHs4q9BFi7dE61MwHIrOhkzVY6ZbUBAsRqKlIFypzaCmWLiehDehYCGu+jufPN7hv/0+GED+8F6GV+aJC1hAoj4ZPMIR1TkxxlA/TnSsyvCO52hvsV56piWA1o60hEjh+Rr4EIQFr9QPC7zxTRaPi+sl1JHNh3mm9ciNaYi+ZlKgAMOfR22IcyHrBJBTfXB2HoHCJAa+IKs38lodyQUG/l3sr7e7Pgoveh+q1HF+FhQguBT7rqM3+1BYg0cAYDwxl17wKAh2W9li7m38czte7FjaEYd+Eq3mkWyBnDfoAqglnLHcjyhOdAjZONHj+PuBNo63TH6YBAgM8dWASY3tFq7mVHdm8f1wEcbwcdLZPPgxTIIhqQMQR//Strpxhg+VTlx2C49giL9cBIxSOtlopaCG0JjXTuCO3eVQ4b985mrXOhZ575TldmfIEFMN45Yiw8M6CZDivd3sDA5WxAUYjVqnPaJfFOzia0guTuieArD8Bw2ou12myVljAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC0UlEQVR4nK1Wi5GjMAwVMzSQlMCVQEqAEpISSAlLCUsJSwmhhFDCUsJRQiiB8/NaRhaGZDOnGcaAZD397ZRCmtV3Qv+JJNCcZVnAHMdxdmDagJgx8w7PA81VVbHyYAXvdv+OIkCmvl4sAO8H9X2vDbVAFoQVfxQ/XpV1T38fj003hmEkRODz60Z919r9rKMoCmmwBQtyBJA8z+hY1h4kOxziSPkS5uJcwTO6fy5edbTwAZZyCOwG41lyPFmQTQBH4I/TZA0DwTOaev9ttFow1u2BEAYGeZUkmMgpHfKCcuqpE/8AlLg4Bgp+SzB0GAEwerCxqQMgYjB4c71c7I/7/R5VmCQ/FYuEf91uUZlp6Ol0bUm2S1AMAOHSLMtyBYZ/TJCDvAYDAHs4qtAFm/dI82NgKIrWhEz1Y6JHkCdsRqIlIVwxY9BTTNxPwhvfsCDb/a1LHlv453j0CpA//JfhlXniBhYgwZz0HqFEdU7meaauH+hc5P4fy2hvsV96pskDbZW0BJHE8hrwKRA2vNM/TPDGDVl8ro4X30cmH/Mro0capkH0MRMD8mB4eTaGOBeyTwByKU9WzzMgL8SAb9DmibzVR3LDDP8a83TG6rPwonOhipXzq0AeBIdi17b0YT4yo/AMACiPyNIbHnmCtYVp5s7E/2DWxqy5WVH0gxg1z2gPyHqDKYBeQo0d3IrmxISQgxMzju8PtFPeMvleCCBQxEcDhCozLWzPqenM5ObhKoz+ctKaPLjVC0GR5AEQpd/UtR6c/qLSisNu5REU8c1FgFGMJwetJPQQBvNWBabsLocK7/Kbu13zmOS5s1xMCOMlGIL2zoCYajAeKTI8zJMAkpy3OIYZceKHi+FolDyysAGDVfO0R4Y4OTzuGQQCY+rcxFOaTfpG0jgeFFYUp8atchqvzo5UCV3EO6+8KVZO08578KS0uCctip0VqwRvWB8F/wfpCNO754/ddwAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -3,
+      "y": 32,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -3,
+      "y": 32,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "price": 32,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

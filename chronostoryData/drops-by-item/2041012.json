@@ -1,0 +1,41 @@
+{
+  "itemId": 2041012,
+  "itemName": "Scroll for Cape for STR 100%",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 4230106,
+      "mobName": "Lunar Pixie",
+      "chineseMobName": "月光精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230200,
+      "mobName": "Star Pixie",
+      "chineseMobName": "星光精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5120001,
+      "mobName": "Cellion",
+      "chineseMobName": "紅獨角獅",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

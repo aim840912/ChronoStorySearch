@@ -1,0 +1,30 @@
+{
+  "itemId": 1050073,
+  "itemName": "Blue Enigmatic",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 7130010,
+      "mobName": "Death Teddy",
+      "chineseMobName": "怨靈發條熊",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8140200,
+      "mobName": "Klock",
+      "chineseMobName": "冥鐘",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

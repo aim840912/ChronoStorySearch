@@ -1,0 +1,19 @@
+{
+  "itemId": 1040022,
+  "itemName": "Green Bennis Chainmail",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 2230100,
+      "mobName": "Evil Eye",
+      "chineseMobName": "火獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

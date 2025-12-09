@@ -1,0 +1,56 @@
+{
+  "id": 1061123,
+  "description": {
+    "id": 1061123,
+    "name": "Dark Lucida Skirt",
+    "description": "",
+    "chineseName": "黑色厄索爾裙子"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC0UlEQVR4nI1WgZGjMAzUz6QBrgRagBJ8JTglQAlcCaEEU0JcwlFCaMElHCXwXhM5wpiQnclAjKSVVrLhQudY6DP8e/fwHVEgKIoi/M7gnOOEsoRHRJEEmOf5lIgTehLuyC4ZhwUOZVnSOI70CWDLCcE3l1i2IhhO00RKqY10MgDf+wri/6qqgl8OWSLO6sjpyAf2T7LF+2/kuyTGC2fFVbAsOXA1AMt2hFyPgmTcHykNP5fBpR8rkasqSwSAjAOxJHiGBLh3TMZ2uOpyIuuq44ogm9Y6SpVWkiaT2nE11v8F2VioTVWbiuAMh0aNNIzqdLyZrFOWrn1J986R89U7P0Pax6inl8w76UBCZUNN9UPWFnHMAcgXsraWjDEhqa7zMrl1eECGAm/VSraTDrL9/ZbUDo56W1Gnh5CZ71QkSEcdknUaa03wMc1aVZDVc1+HyvsVUb6ddCHDyVJrVVYqOXV20lT4CkDoxoluagp+IAFkfyNR6x+abqJhQFM1Gf2TJZMVgViVg4/oyM63sFYUrwkUaiybijAAMIADZglydV0XrphIrgZrfd8HIkt6tfc/HnU55kavQ3HhsTbd7LWeo0M/o5r9ESSl49GWJAjM0mEo6p8w9muPTIOAa3/a1nmtXz1C1vKokUBybe/C9bud6fcGuSq6NyvBU8J1H+Hm6xvvEAQb6e+hfGMpliwr4X0jzz9jtHcdAomPw9a7BC/MCgmxX77qMRgC9/t958AkaPJq+9rUWMOPe/Y8M/fjjawRnDflGbBpgWEY3r6LYkVptmffCfIZ34MI4AMYkFXFkwEjC4Mwsr4aecByEljP9Qm+qAo+6eCwXawIBpyJBILn1nkvpa/7FEgg9gg3PuCCoI/H45D0E/CJwCf/7jXBC3Vdh08tyJCCj500KN+3bRvu0ae33wyS8Hq9xi9UTGIKn9Amc+mbw+GXqnSSpDz274Lm8B910gwvK1ARuAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADC0lEQVR4nI1WAbWrMAzNP2cG+iRgASTwJHQSQEInYUgACauEIWFYqISHhP3cQqCUMpZzOECb5CY3SeFC5/Km7+TfmcInMA+ilPLXmTjnJKhD0COwBQgyjuMpmAQ1gyYBd2Bs8IZRlmXU9z19I9CVoGB7FFwyMygPw0BlWW5oDJ3IM2eyvOd57u2OJAkm0X0yTNlAfwZ8s/2Oyktk8JboJBuhKCWSFUQo/CSpmnn6pF4hTbIfAoR2wshRdkkwCADFmdCDPQQhtRRA0cNdZwNZl3/ODBRqrRfa4ozigGI9ycryKwB7Ve6y22QGBzCqyp66vjxtfQE0paVrk9HDOHLMguO+0uyjGLY13NEIIMoqqvIbWauWEYCASh+9tdS2rQ/MGKbMTQ0FQCR6zyfAJI2g8O+ZUd05amxORnc+Qq7cAhKPAegzGmuVt2mrKTtPMeNfu5zt1IbKHY0+0sFSbcskbWE32kGT4kwA6vqB7uXg7QAEieu9gNWs0JqBug6F1tTqWxIwzAzgZdaxV0d2vPs1pdbODFjx2W0yQ1NACUboMVBnjPF3dKpkhbWmaTyYJT3p8yVjEI5Aq9dGuUjLt2Zk7sfFqBmR1b7KIY3S9iEQnAuNaJTi5kdirVlbwelUr7p2zP1aM0QfHkuhIMC6cf7+W4/0vIO6nB7VBDLTuc4ZXn5+8Q2Cw57+XiUXmzbpS0YyV+F52baaTTsPxH5EOxnkRdBBJ+bpp+i9MuTxeOyMBAiFn3TXwccaLqnhfMamWx/RA0AG90ww2JCu606/ZTswifrsvyPck2eAQeTQhsTZLScI2hlKvp05q/BQlkCwnqobbJEdbOI6hXpLZlCSiEIBQGpdZi3+dYgFQWxqhhd2+obj1+t1CPyNyMkhX4zkJ0YWi6Lwv3GgJBY5omLH8lzXtX9G3fi9mLdgAMUxbBDwoGYldb1en7KBDo2Fg9pkMAPeApVSQGgaYidgar4yuc+GvhAMbMSDjATvd4HjMfATry0SZ5ZUjCKOZfzwvLkuwYaLAFPtpVIRJ9aSAfwH0wMsBkBBXyoAAAAASUVORK5CYII=",
+    "price": 180000,
+    "reqSTR": 330,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqPOP": 25,
+    "reqJob": 1,
+    "reqLevelEquip": 100,
+    "tuc": 7,
+    "incSTR": 4,
+    "incDEX": 3,
+    "incMMP": 25,
+    "incPDD": 84
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 4,
+      "min": 0,
+      "max": 9
+    },
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incMMP": {
+      "base": 25,
+      "min": 0,
+      "max": 75
+    },
+    "incPDD": {
+      "base": 84,
+      "min": 34,
+      "max": 134
+    }
+  }
+}

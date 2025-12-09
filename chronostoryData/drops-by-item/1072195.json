@@ -1,0 +1,19 @@
+{
+  "itemId": 1072195,
+  "itemName": "Red Osfa Boots",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 8140500,
+      "mobName": "Bain",
+      "chineseMobName": "煉獄獵犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

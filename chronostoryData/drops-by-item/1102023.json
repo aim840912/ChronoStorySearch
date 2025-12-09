@@ -1,0 +1,19 @@
+{
+  "itemId": 1102023,
+  "itemName": "White Gaia Cape",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 7130102,
+      "mobName": "Yeti and Pepe",
+      "chineseMobName": "雪吉拉戰車",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

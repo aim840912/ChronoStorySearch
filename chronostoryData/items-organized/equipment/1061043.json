@@ -1,0 +1,43 @@
+{
+  "id": 1061043,
+  "description": {
+    "id": 1061043,
+    "name": "Red Steal Pants",
+    "description": "",
+    "chineseName": "紅寂靜裙"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAcCAYAAACOGPReAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACCUlEQVR4nJ1WgXWEIAyN790CrsAKrMAKdoTrCK5QR2hHqCOUFViBFRjBJpFgRNRe/3v3EAmf5CfEe8AeC/wfnTxo0uXHGIAefylCUgshJTB9DxFHiyNB1j2t4TiltAjxzlMypC0xz2MmA/XeZju9VqMOH4zDc+fVU/FOe6YJZe2SVM6N6h1tlhB1uEJoKvsDKXvhNxPtCT3Tz+WQxcrAEZq0e4tx+UYrNzjws2+G2CKbV5tm9g9g78RjlRRLEmCliL5Xnm5kKEGtGXlj89xajCQGfn8XPoNqMkZfwiQNw/rY4bg8cf4VPHsukdySDhhW7ywE1JQO8LWmOP8YnxBx3ZPXSI65uCZNuEmX9IiH6E2uulHhFU0Fcyv7/ng5Lkl9pWnrKmpNW+uXmpIP72voUoMdzrnxGKxlsamjaWqaMLxwklmCSBD+4OnySa2PMx7gDiFLQHINOM5nrY+N8+05K+za49uGsruWDWOBrl2vmkxNyqH7XNiUAEFd2IQxJ5MuQELCCW20BMVTvinPoWRU3rXACfqawaA9dTM6ZFKHF1IqpbqXTlVLy+CyGtEzl+3pEH3zCmngLkQ3pf3daQI7lbREfV2JlPW0SBdeIWxAdC2e6j6cKiPYS8ChU9GH2O4BW6JUWUhpXdWpkXpuNBUiLcLvNgGcJor/OJSwtpqWb9VjZ3hEB21c2v8CE5lppzIuLXUAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTUlEQVR4nKVWi3GDMAxV7rIAKzgjsAIdgYxARkhHKCOEEcII8QpewSPUI1DJWIliBAGqu5x/wk96+jhH0GWA/XLQNjWg4WEMQIG/4CGIAxcCmKIAj2OJIwmfWzrDsQ1h0MBUj+hjusantU8AIPbLpCfPlmSOOjAV2tePHrEX0gMJwmebgdg+L/boQqaHhOcMYjL9VUDRWvv6TFpMc/pViS7WMrAsGtDh7P1wxy+rugLbW5UeDaAfdVZn3USiF2kEEfiS6MMM5XgtySIQ0ZfHgKwu07os0WPv4v4e6qJQzXhvnxRRTNw4PeA4NLjunI0esse7gGqkpKhKcBgjArV5jHD9c23A47kl7xAQY7sdKOBFsgyvCCwvqrLO4P4bI5Zeyzo7LejNQDaLkdZmZIw+taFVMSJbLyNtXCMHXMfma7DWWKdf8GoxRgGpcQsZxfS5nR4NN3omYqY5+CQu0UdU1zj2W56JeEHqAmuKkXU2N9W3lrNwgawtKxrtGqBIm03FSEFm0YrxmhKGijYgSIs6c/RNPIoV39TPTOI9TWISdD0Y1KcuT8DtTHeYAFFa529Rq7f/mOJX9KBK+gScd5BZIBe7M1X85/8BL2vc8/mYa0USKManRAing6xG1uI08Ui+beH9w1+cfgnVB9FGher8bM8z6ZrAQE9rvUhRTnNRR1VumOF60xsrvZGxUo4JhH5fGNxoZW5SSoYO3unrcL95uf+qudTzLvKe3KMzfnyHqXyDLhfUvyn7RHGQv2OaeAF2Aj3wBQBoKXXK1kGb/wHpZXi96TN8TAAAAABJRU5ErkJggg==",
+    "price": 20000,
+    "reqSTR": 0,
+    "reqDEX": 60,
+    "reqINT": 0,
+    "reqLUK": 80,
+    "reqJob": 8,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incMHP": 10,
+    "incPDD": 21
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incMHP": {
+      "base": 10,
+      "min": 0,
+      "max": 25
+    },
+    "incPDD": {
+      "base": 21,
+      "min": 6,
+      "max": 36
+    }
+  }
+}

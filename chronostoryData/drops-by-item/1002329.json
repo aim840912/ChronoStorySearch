@@ -1,0 +1,30 @@
+{
+  "itemId": 1002329,
+  "itemName": "Red Pireta Hat",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 8141100,
+      "mobName": "Gigantic Spirit Viking",
+      "chineseMobName": "巨人維京",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8160000,
+      "mobName": "Gatekeeper",
+      "chineseMobName": "通道守門人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

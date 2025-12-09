@@ -1,0 +1,30 @@
+{
+  "itemId": 1050072,
+  "itemName": "Green Enigmatic",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 8141000,
+      "mobName": "Spirit Viking",
+      "chineseMobName": "維京",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8170000,
+      "mobName": "Thanatos",
+      "chineseMobName": "達納托斯",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

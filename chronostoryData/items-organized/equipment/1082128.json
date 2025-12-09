@@ -1,0 +1,49 @@
+{
+  "id": 1082128,
+  "description": {
+    "id": 1082128,
+    "name": "Green Imperial",
+    "description": "",
+    "chineseName": "綠色費洛奇拳頭"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAZCAYAAADAHFVeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACsElEQVR4nKWWjZWqMBCFx3NeA2khW0JeCWwJWAKWgCVICVKCKWEpwZSwaSElsHMnPwT1+ZSdczAkYD7u/MEf+p3N/1jfPVrcChNI1yqZaKNlnCaXxvIQK+gW2Nw0DFCKfAiy4BmCedOYCFderiVoAW5SBoanQIkl5njiQ1QmUOd5XAM3wRzvaXi/tjWktebD0PF4LHC48xFwEwyxQpwAMqahgUFd15L3Xq5b68i7eA73si9oi7IZIOcDH46VEY3jQUCyMcMBNDregxGxgxfYG/M7sDkratq4KRTAcJ5BWZGshxhXF2/7r7JSR7eum+xRYobNAYXKDMqxq0HPYAI58YF7vcR6cR1AXd+zkryT5wRx8kC3amDJjXcwgSACKFMJLv9TO2wXzVLcZRwGUZrVoPZGG+NTG+ZK3SubM0QlUHuJ/nATqxlSTrk4Ovn1pbDrmkNiKCUpv7KVsgwyHJfmzE+sz2T/HgsUQE1JpYvAJH4FgsKsqpqXOptx4cRBGveK/xxETbADtdcTDR8Hanq6M2kYlduyKyl1DKS7c8u8KMMTDE5z2+Hq58cNltV9McFHUHYjVOXRVywoTG6rm+/jRtyzLGtH2aC7tqxmJMeKqNq8Ps9zZBkUPQDdWYEBhHq5fJ9pwDmvXb+I9p8LhG5ASq0S4Skow+ZvALi/3UI/DweBnNmN+2H9RykNvEbCa6CizHE2oGgvlwWKNWQZoDhHhWVFOh2wVq6s31tPYZOdxPcZ2vetrMGQmeh5TZd6Xyb6WCbvGGA7TlfpHNgMUBmTUrg1A6G0abQUFusm45dYvgqDwQXz0khDUer9AjImgizaEmdg8PSW1R2kKAw+fVswBPUj3xvQUINwiykN9/UEqYH4KdDUwUFEQtSg/GnwKugRbAUdBn/3XVg11139GnnFfgBZCbryDw//YQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC70lEQVR4nKWWjZHiMAyFtTPbgK8EXwm+EkIJoYRQApSwKYGUQEpYSsAlrEs4l5DTky3HCT+7cJoJjp2gz0+WBO/0fzbdWX+7tfgqTCBda2RinZXxfPZ5LJtYQF+BTU3DAGMoxCgLgSGYN41LcBPkWYYW4EvKwAgUKbPEPE9CTMoE6gOPS+BLMM8+HftrW0fWWr4cHQ6HAkc4bwFfguGscE4AOddQz6CuaymEIM/H0VPw6R7h5VjQK8omgHyIfHlWRjQMOwGJY4YD6Gx6ByPODlHgaEzPwCZV1LTJKRTAcK8gVSTrMZ2rT699q6zU0Tp05/EgZwbngEKlgvTsatAjmEA++MK7Qc56Dh1A3X7PStRT4ATxsqG1GlgO4xVMIDgBlKkcLn/TerhLNlLyMvS9KFU1qL1hTOdTG+bGXCubFGIyqD2lePgzq+lzTvk0evkMpbDrmkNiGCMpv7CFMgU5PpfmyDu2Rxr/HAoUQEtZpU/ALH4BgkJVVc1LnU148MGHNGwNfzmKmjj21F4+qP+9o2ZPVyYNowqbhpJyx0C6ez/PizLsoPeW2w5XP283jqzukwkhgTSMUKVjqFhQmMNWN9/bjXjPssZxEAfdpWU1A3lWRJXz+l7nyDIougG6sgIDCPVy+jpSj3teu3wSbTczhFYgYxaJ8BCksOkLAO5va+hmtxPIkcO47ZdflNLAz0j8Gago85wNKNrTaYZiDVkGKO5RYarI5gvWypPl79ZD2Hk8S+wVut+3sgZDZqLnNV3ufUoMqUyeMcDeOF2lc8AZoDJmpQirAqG0aawUFusmF+az/CkMhhBMcyONRWkIM8i5BBrRljgDY6CnrO4gRWEM+b8FQ1A/8n8DGmoQXnGl4f6i21FdCF83Yig0DP2rCsUpw5AQNUj/GrBtaNFHrkBRrxpmqgsOTN+H09pD1Vz7rKqh+0enIClPhSnEVqM4rJ6v7btkvNrAWtm9Fx8lXXxwv7jeqwdhBbyn5hb40ebK/T9yd9YPIWTzyQAAAABJRU5ErkJggg==",
+    "price": 240000,
+    "reqSTR": 300,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 90,
+    "tuc": 5,
+    "incSTR": 3,
+    "incDEX": 1,
+    "incPDD": 35
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 35,
+      "min": 0,
+      "max": 80
+    }
+  }
+}

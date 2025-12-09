@@ -1,0 +1,37 @@
+{
+  "id": 1082016,
+  "description": {
+    "id": 1082016,
+    "name": "Blue Savata",
+    "description": "",
+    "chineseName": "藍命中手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAXCAYAAAARIY8tAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACAklEQVR4nJVVC5GDMBR8zJwBLOQkpBKChFRCK4GTcEhoJTQSioQi4SLhkJDLPnghULjSnWEIIezu+5B80PsIK3PF1uJ3BUK4jyMjWgUVxUx0JvaOAJNXx3xq4EqimKmSWPGuAJP3uialVLxKnvO+j/PnyUUUa69xrRvC2ysQtKmpjMSgFXIBRCcTDdVmerdHgMlz1wK4JxZUceyTWOUaDHelaJN8L15GYIxenRf3S/S93y0QlLZMtNf9kvw/gfD7c6OyVPRZIZ/mSSTvohwnFNhY+mrcZheFx/3C5HD0c6+TiDWGOt+lhUKOAmPt42b5+Xp1mxEwudaauq7jOzCJ0IqIT0YAjNEUawJP5JJTOBURCGilybVtak1xPqXvWSDcLjWTNk1Dp9P0QV5kpE3cp76PJrxHG3t+jwvjXIDJrbWJXPIv5HjOIbnnNZ2jQ9wXEL2I5OAIjueGvv2QuyV5jrJryKtLyjvIafxjD9WZO08A05E3fMgCtBVcCNqYY4kGqD4Pg2t3pl7ZGfk8nX7WurMawDGcoc1ycsH9F8rY0Bw9/1JUIAqYlPrkAsnB0jkEj4fjQD4eMO1gcO0UY5H8WQQK5Ou7tnHvmfZatOvkZiS/0itsnmgF6nDjHsb267j4gEGt2+G7ym26X8XyT+ZIlm5iSsIO57sEEulybjwCt95v4g/sxTBlsucrwAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACR0lEQVR4nJ2VgZGDIBBF15k04JVASjAlYAlaQlKCKSGWEEuIJcQSYglHCbEEj48uIhKN92cYkQBv/7KSA/1PfWAsWlvwH1DfP8eeZGZEUTSDL6B7QQaS5u7QsKeFYyS1UAvc7QiQLilICKFbbMaU6vT4ZYpGQ5tKz61HuztBfSILijUA2zOEBfgUTEmFnC/+FmQgrgsW3JABC91XFprWJbq7UvcRskdfOZIyCY6zG19dp3aDepFkZsNv3YQgW6D+/fugOBZ0TJFvuYC5VefqjEKQGV3LerPq+tfzbiCI8PdZWFgmJbWqtRMZgkLA3NcjM+9VVW86MpAkSahtW/OEJhgFYMoGBKGP4lkDLSCcc0TOMIASkVDdNLak2QlrDdQ/7oXZvCxLOp+nhW4xIJ3sxn43OhilUP7K/I6GfghkIFmWWQifD0Pw7orPxsxpazrp+wbZYJgv6yi/lHRTQ259iKu4LUmJuz0XQGisrFN6MZXKQvB6X1N5DDITUY6IitXoM2B3UHo8DS7qC3Uim0HmaVaLkl+cERwgUpSnC2E934gAF2dNgU8zgisEy+cXAtmIfCcA56d8gIw3f9NNmQjB3HcfFCGftyLTd9t0x6PMp+hGSEVb2vyHjXBOD/MN4NqvTZFAEjXRDOvT4aP/0W3tApwdkg/Cwh+9+dsZMxWgU/XynISv9Dmk48ag2Gu5Ey3n8aqd3MZ+6YyH/ysmCPKuDs7mwnky3H1CVWBszZGV6+jTpE8R+7/5/Vk70GTPhYUijj9A1wKz/T/N1UwtYMrWuAAAAABJRU5ErkJggg==",
+    "price": 15000,
+    "reqSTR": 0,
+    "reqDEX": 75,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 25,
+    "tuc": 5,
+    "incPDD": 8
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 8,
+      "min": 0,
+      "max": 21
+    }
+  }
+}

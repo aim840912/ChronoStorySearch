@@ -1,0 +1,36 @@
+{
+  "id": 1203003,
+  "description": {
+    "id": 1203003,
+    "name": "Mokbi Throwing-Stars",
+    "description": "",
+    "chineseName": "黑色利刃"
+  },
+  "metaInfo": {
+    "reqLevel": 10,
+    "reqLevelEquip": 10,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 8,
+    "price": 10000,
+    "incPAD": 18
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Projectile"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 18,
+      "min": 18,
+      "max": 19
+    }
+  },
+  "fetchedFrom": "chronostory-api",
+  "externalIds": {
+    "mapleSaga": 2070002
+  }
+}

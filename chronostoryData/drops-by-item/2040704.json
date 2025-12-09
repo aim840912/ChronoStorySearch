@@ -1,0 +1,41 @@
+{
+  "itemId": 2040704,
+  "itemName": "Scroll for Shoes for Jump 60%",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 5220003,
+      "mobName": "Timer",
+      "chineseMobName": "咕咕鐘",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6130101,
+      "mobName": "Mushmom",
+      "chineseMobName": "蘑菇王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8645263,
+      "mobName": "Turbo Robo",
+      "chineseMobName": null,
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0,
+      "displayChance": "0.000%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

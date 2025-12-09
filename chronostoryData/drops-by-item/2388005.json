@@ -1,0 +1,19 @@
+{
+  "itemId": 2388005,
+  "itemName": "Timer Card",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5220003,
+      "mobName": "Timer",
+      "chineseMobName": "咕咕鐘",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 2.4,
+      "displayChance": "2.4%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": 1051080,
+  "description": {
+    "id": 1051080,
+    "name": "Dark Battle Empress",
+    "description": "",
+    "chineseName": "黑白銀鎧甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAfCAYAAAASsGZ+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/0lEQVR4nJ1Wi5GjMAyVZ9JAtgRSAldCUgIuIZSQLWEpIZQAJeASjhLiEkIJPj8bGduYm8xqNwMYSU9/caI9mehe0Odksucgm4OYYRhIKeUe+r43HwKZ+/1O1+s1HEgpg2wMYl6vF1VVRXVd0zzPnwI5wyADWa21kwUoyzJIAABTSVHhTDBA0zTu4EB28wToAOF76+6O+Xw+h/tlWRJgBuAIgGAAwgYQYwaids0DqASwKi6ec4iYOKcNyciTa02P+hE8QAIR49xKeMrKcIYfFI3zkPAHsLkPIEJ8zca8JXWqTpSqyDsmDim8wr2Qmsy7o1E9Ui/OPd06dxsS74GG2VbEZiXCCC9Xs/BvBbfkcvisrAPyIWI+/2oLFyPZECJUsAbXmwV81k9fdbWmrm+B5sChCPhCbkbSAYUShlJUD8d8GhbSy0Bt24YwuDKfL04x+mAhNN9WJFx9eYGcYobkpTUVf9M0JeWpZ++tbTT3W3vLeYHkM2+saze7wARAIRdb50TjOG641pveFYxKrI6bOK7AIgjngq0+asisKYPVu2hEIC4fXJrMzK7nowLnsTK8zxXnYCc+7LqOOPklIbY6VwTj4giUyIEMzUhiTGfTdFeuivLwQCFKWI7NThnnY/U+2SfCKjO5JbcezypYzFbjind1XSWh4vIvTeIk8XGVlJjjcOXvh6emmzzT60dzgxaXVpHi6slzxUYhCuLLzyyhaLeXQnXFcQe9/tpe+SqPd0wD2ab80MHhO+x4UBzjyx9/nR5h2AVCWCx80fO46tZJEKbwLh/4YbNV2BPdJVGQl2ym2J39d6zEFH9QlOhopxebMSeuEN1fSHabYEyclzzJ/Px+LlxlHgQC393m4uUbI0bTuNzt1a/QPJl5Xtj6R62o1VXYMwyyLpzZdbJvQk880in97kqW089DWY/83EOu/Pbdd3w4QOejy0FYSgfkvrd4l6PMYWCsJ6ddTvhrEAkvfUgc8a0eFyn5TGXB3xB/yFHBmxhErEw5lUKw4y3kLtA/EjcaHIQq3ckAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADNklEQVR4nI1WjbWyMAwN57iAjoAj8EaQEWQEGUFHkBFkBBgBRvgYwY4gI/D1tk1JS3nPvMcBapObn5uUA21lEc8ZfS9L9B7oxkBL13U0jqN5adt2+RJsud1udLlc/EJVVYGuBFre7zfleU5FUdA0Td+CGeegA12llNEFsNRlIA+CjSljibWMQa7Xq1nY0Q0jghcA4mcd+mbz8Xj0z/M8B+AMwpmAwAlOIYCWpSOqXV0gKRBnPLnO6WLhGl9ptWMjuhR0L+4+EhQVOY+9RcRsEGu4YKyfumC/B5zaACjLTtOyfCpqxiIwPIooWTi9iA7PWaVo+TTUj/cwmmNLZWMeAzJYsG7STFm9RUoRrXMP/1p5LTinUusaMJsu3reCSCC7qlOKtMEr3EsN+ipelo2FoqatgWgcgDH4kFWro/SLeHrDMFjFNRi6mdTcUV3XPiWmBaazMY4+mQkNuhacWZkizUFuCjZol/E3DENAXTXZqHUzmsv1nokGhOC9Mdhm1mEjQLNq1n1A1Pf9iq2jag2RxsB72eiSmbtAXBv2fq9po8b13m+yEgGZ+jBtWYHTEI8VrEuD+D02ngI88A9N0xATIqXI3sfG4KDMxJ4YoO7aU9aHs2y4jYZdcapgFPSu+uvGGNfHZWFzHmXa4BJ7VLZ4H73n7D3u+K0o8iBt3Bp7Ezwgg2RPSkGmLv69eykqqyO9n4qbePfgS4pkVVw7dgzZyE52xmUjJc81zzpZB8j7n+6lU7rLMTWqOtwPG5zKXycDROb8/GPvw90PSC9IkXYhlYCAjW5iBNN7Ux9cOCFznDPNOTAS0zkybtb+HEFS5EdKSvYYttuwsTBzVHumqlmVpXCd4sLz++c1M/tWICg9mjXc8wPjSFE/3/TdHsexh3GdOIp7MVKtcn9OSSB3aE2m422jWuHjQMtJYHwk4PM+6sjsnETt7Emengx+ERMC0wCCg00ILHHuSiSBvw0y44KvY+nuCLVwd3Mx0JEN8VcnSCA+Ti5iH6X2ucjlpxCDIDx1ECBvVk5ITn+I+1h86seGEk0mIyr1xiFh45Fac0a9uIiYZ3N8HWgND2BnARxLPA5+hFEpc+r5P5aFL4jlO/B1AAAAAElFTkSuQmCC",
+    "price": 180000,
+    "reqSTR": 270,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqPOP": 20,
+    "reqJob": 1,
+    "reqLevelEquip": 80,
+    "tuc": 10,
+    "incSTR": 6,
+    "incDEX": 2,
+    "incPDD": 132,
+    "incACC": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 6,
+      "min": 0,
+      "max": 14
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 10
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 17
+    },
+    "incPDD": {
+      "base": 132,
+      "min": 52,
+      "max": 212
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "itemId": 2041014,
+  "itemName": "Scroll for Cape for STR 10%",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 4130102,
+      "mobName": "Dark Nependeath",
+      "chineseMobName": "黑食人花",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230107,
+      "mobName": "Flyeye",
+      "chineseMobName": "獨眼蝙蝠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230126,
+      "mobName": "Mummydog",
+      "chineseMobName": "木乃伊犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "itemId": 1472024,
+  "itemName": "Sapphire Gigantic",
+  "chineseItemName": null,
+  "totalMonsters": 5,
+  "monsters": [
+    {
+      "mobId": 6230400,
+      "mobName": "Soul Teddy",
+      "chineseMobName": "幽魂發條熊",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6230600,
+      "mobName": "Ice Drake",
+      "chineseMobName": "冰龍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6300000,
+      "mobName": "Yeti",
+      "chineseMobName": "雪吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6300001,
+      "mobName": "Transformed Yeti",
+      "chineseMobName": "變形雪吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6300002,
+      "mobName": "Separated Yeti",
+      "chineseMobName": "孤單雪吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "mobId": 6090000,
+  "mobName": "Riche",
+  "chineseMobName": "厄運死神",
+  "isBoss": true,
+  "inGame": true,
+  "totalDrops": 10,
+  "drops": [
+    {
+      "itemId": 4000336,
+      "itemName": "Bible of the Corrupt",
+      "chineseItemName": null,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 0,
+      "itemName": "Meso",
+      "chineseItemName": null,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 1500,
+      "maxQty": 2000,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1032042,
+      "itemName": "Maple Earring",
+      "chineseItemName": null,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": false
+    },
+    {
+      "itemId": 1442054,
+      "itemName": "Red Surfboard",
+      "chineseItemName": null,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": false
+    },
+    {
+      "itemId": 2384010,
+      "itemName": "Riche Card",
+      "chineseItemName": null,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": false
+    },
+    {
+      "itemId": 1112407,
+      "itemName": "Circle of Ancient Thought -",
+      "chineseItemName": null,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": false
+    },
+    {
+      "itemId": 1122001,
+      "itemName": "Bow-tie(Green)",
+      "chineseItemName": null,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": false
+    },
+    {
+      "itemId": 1302026,
+      "itemName": "Black Umbrella",
+      "chineseItemName": null,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 2040347,
+      "itemName": "Scroll for Accessory for DEX 10%",
+      "chineseItemName": null,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 2040353,
+      "itemName": "Dark Scroll for Accessory for INT 30%",
+      "chineseItemName": null,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": 4000051,
+  "description": {
+    "id": 4000051,
+    "name": "Hector Tail",
+    "description": "A tail cut out of Hector. Brown, and a tad rough.",
+    "chineseName": "野狼之尾巴"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAaCAYAAABGiCfwAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACFUlEQVR4nK2WgXGEIBBFceYasAVboAVbsAVbSEpIWrAFW7AFW7AFSzB85DOfVS53mezMDYiwb/+ycD5caUdqG/e7HZXx6lqFHePQx840L0dlUQZ8fYx5cNs213Vd7H9+T9WACTu87/KCGkQBbdu6fd+LSRjjnAQtgDaNmGSjOugAzmgEQRVb730OAmss8EFVQ9/fKsIiQuAE/XVdYxY0fVYhM6HAh52EfUt7FierQ0aN3zTNbhyHQu2dDb1387JGYIR1ZoGqQWqgJM4LUPYVbpVbhbSsjApsetCHE4Wu6xZVMZ0E0QhlS3VFGukMjhW04bcsbt9Oh31YzMKgcz7rHjJo+gWsARV0RMHJmLClaAmBGk0fnCnEBkDgJY2c8Ayi+4CWqQVI9wdjdj8VFtXhCCgE6dLo4FT3hkA1LaD4jFQmoCprwsYfeKFKCLPnSSuQz7eVGdogJPq/3CC6L+pMc0+VaqxYDdBacRHfXUtaNDWV6lzfnTUQx683iDrS9CicVafvrVruG9NnlcW/l7sDqs968PmsB1iLw4IKZXpzWIV3KcrvEIgEl9J2ARFW3OwWyGjtOcpBhvGkogq5KFOFdKyH00JeBVRh9iZgJc7hXnQZWE/TK7AGf3CaSoWraRn/xS53I4Facf8BUlhWR6DulUe5n4XwzqdeFZaB6PAmoSoGgLO4n3dd7VPvZViOWL79ntnbKn8Aw0KwMF2Ju4UAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAdCAYAAABbjRdIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACU0lEQVR4nK2WjW3DIBCFHSkLuCO4I3gFdwSvkBWaEZoVsoJHaEaoV2CEegSXh3nocYbUqoqEwPzcd+84SM5NXtbYnprfy1oZr+5V2HoZh9C5T4+1sikBPt4vadA513RdF/rX273qMGFr33dpQw2igLZtm2VZskUY45oIzYA2jFhkvVppAMZYCIIqtn3fJyewxwLPVDUOQ1ERNhECI+jP8xyioOGzChkJBZ7tIpxbPLOwWA3Sa9T7fWoulzFTWyrj0DfTYw7AAOvMBlWD0EBJWOeh7CvcKrcKWZIyKrDhQR9GFDrPLqhiOAliIZQt1WVhpDEYVpBDfTyaxW0GB7+ZiUHj/NYzpNO0C9gJVNDhBRdjgYveEgI1Gj4YU4h1gMBdGLngGUTPAS1DC5CeD8bseSosqMMVUAjCpd7BqJ4NgVo0gcI3QhmBquzkD37FhCohzN4nzUB+FzPTt15IsL97QfRc1JjGniq1MGPVQVuyh7j0LGnS1FSqcZ3bciCM718QNaThUTizTuetWp4bw2eVhZ+X0gXVb734/NYLrMlhQZkyfTmswlKI0hwcEedi2HYgwrKX3QLprb1HyUk/HlVUITtlqpCG9XJayFFAFWZfAmbi5N/FJgHrYToCO+EHTkOpcC2axn8pu7eRQM24/wApLKkjUM+qR7pvicB/Ti8H7Wd3KHsb+TeMLwlV0QHcxWV767798NtB0MKqMMTvFa2Hfh3w+jO2N6vAAFHhtSOsjbWL7VXGtS2V2tzOAaustrDmuZ2z/ayeZcIZYMnjtgJ+5lzq/wBUXcos5+gHygAAAABJRU5ErkJggg==",
+    "slotMax": 200,
+    "price": 60,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

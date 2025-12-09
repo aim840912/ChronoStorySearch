@@ -1,0 +1,46 @@
+{
+  "id": 1082204,
+  "description": {
+    "id": 1082204,
+    "name": "Black Bisk",
+    "description": "",
+    "chineseName": "黑色威斯克手套"
+  },
+  "metaInfo": {
+    "reqLevel": 70,
+    "reqLevelEquip": 70,
+    "reqSTR": 70,
+    "reqDEX": 70,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "price": 150000,
+    "tuc": 5,
+    "incSTR": 1,
+    "incDEX": 1,
+    "incPDD": 28
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Gloves"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 28,
+      "min": 0,
+      "max": 63
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

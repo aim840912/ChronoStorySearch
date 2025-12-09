@@ -1,0 +1,39 @@
+{
+  "id": 1492005,
+  "description": {
+    "id": 1492005,
+    "name": "Shooting Star",
+    "description": "",
+    "chineseName": "流星"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAXCAYAAACFxybfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB6ElEQVR4nMWWjZGDIBCFNzPXAC3QginBFrwStAQtQUvQEkIJsQRpwRYowWNXF8HTRDKZ5M3daBR4n/vD8ANxmrz7C7xJMRCTFWit6b8oiskDcXBCiN3JxphD6BiIixWZDcMAbdsyCNxzSQOSVIAZDd2PI7vjn4GiFw50CxSbDpp8vV4nBCnLElKjbGRmY7yWNwGqMTDqcGIpyRyQsRczEMPEQjgppeialnaxBpwpAqCZTcxs7kFhqhL7WHowCPIKBEUBIUTfgTIQmM4wa11soeithZFznkjR3YEASZK4SGxNUXqpCynwvQjec2R0D5BlGa4zRXUHA1RVRVFgpe3ddU3XdWuHWJY28YoU/MisOgsRANS5ojRgFHyAJToX3wS74pYJV7wuclmOeYyCCCLAdZC2QwCARSaWYuN5eP+rYMrzHKSUtA6OH/XaPmcgaJPyv26OwBCkwDfdA7FjCITmL/lh8GcQlAYW7gujLSbUNgU8Hg62cwbZPsPrIwhXB0zvfzF3x6PteA9k7/kRRADAIcffCNM0DXXATuj/peKM9iCeAoDXAQzy7GtjIE4BbBd5xfgI4iWAd4ghvgbAEBO23rcAGALqunbGnwZgCDoxYTq+AcAQZIanJTyyedvwRwB8CDLlM+MnAVB/YeyskNETjFgAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAcCAYAAADvANYcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACLUlEQVR4nMWWjZGDIBCFNzPXAC3QginBFrwSTAmmBC3BlBBLSErQFmyBEjx2dcnKgZFMJtkJg0HgfewP4w+k2SSeD/AmS4GYrMEwDNROp9MkQBycUiq42BgThU6BOFgjsb7voW1bBoFbqWlCliswo6HncWR1/Bk43ZUD9YFSw0GLj8fjhCBVVUFuOuuZWRj76qqgawyMw3phpUkckPGuZiCGSYVw1nUd9XllN2vAiSIAitnAzOICCkOV2WEtYBDkFQjyAkKo+wU6AyvRGeaRFz4UvbUweo4TWXJ1IECWZc4TvijasOSFVvherd6zZ4Y7QFEUuM+UVB0McD6fyQtseXtzVXO5XB4VYlnaTCQpSM88bC/ECqAuOwoDekECLN45SBGsimuhXPI6zxUlxjEJYuUBzoO87VcAmGRqSTZeh8+/HUxlWYLWmvbB+ePwKJ89EHRJydPNHuhXIZCiIRA7h0Bo/RIfBn8GQWFgw3thtMmE5oeA50PkOmcQfwz7LQiXB0wvT8zVsXUdh0BC4zGIFQC7HP8jTNM0VAEB1/8LxR4LQTwFAFEBDPLstCkQuwD8TV4RjkG8BPAOY4ivATDEhKX3LQCGgLqunfCnARiCvpgwHN8AYAgSw68l/GQT1/BHACQEifI34w4ABelmYi/8e8IXV14fG9sLYESLQkihUIsBhQRD49jGpbl5IQgW1KKXgm8NRQzCF/I32NrQbDz7bROCXfbM7SoCtAUdPMAfhZ7HYQIo3nIAAAAASUVORK5CYII=",
+    "price": 40000,
+    "reqSTR": 35,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incPAD": 36,
+    "attack": 9,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Gun"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 36,
+      "min": 34,
+      "max": 38
+    }
+  }
+}

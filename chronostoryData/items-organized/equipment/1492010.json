@@ -1,0 +1,39 @@
+{
+  "id": 1492010,
+  "description": {
+    "id": 1492010,
+    "name": "Infinity's Wrath",
+    "description": "",
+    "chineseName": "因弗蒂之槍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAXCAYAAACFxybfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACPElEQVR4nL2W8ZmjIBDFX75vG+BKsAVTAluCKcEtwS0hlhBboISlhKMFWrAEboYRgnvGqHu5+YdIkPeDeQO+YX+E4vdp5b+1mL23FyJQxDlsD7x/IkwTRvFr1zydwPkRxtjZQvZCnCiC0ACtBQaLwOJ1XcUBI4lwNN0A07e59aP015VCPcG22uDXO8KRdJyERsS/WhF3zqNSCoZaDnPRuLUDLtQC0ncj6o9Bx3awDZSWCY9AcOTVs3h3NRiMhqaVeS9Qbe0pXRW1JOikj58TCO0ZRnscYgbAOebVdponr/KgJJzaBMZjGMyOmrxxDCL6cvgwBNBEAO89rU4m17WCdZJ7N6WFI/llDkYLoPTxjuyBkMLAb+jmDGvuW592gAEK8VyG1JerIQHVaiRfRODN1RFTYE1F5mMALjWZyI0qD1oCeATkiv4tENkDg+FXNRQ5qiFvjVx21MUgE0ASC/gb5BHgU4gpBWYqNfBBE4H06Gn7FVRFBh1cHj+JnLAOshkie8DbM7Ri90tOKxLuqbzYiL0AlGKbxZ9BzACSB76u4myuCI7+vgM/iiWIRQDxAMgPLLzqgV2pWIIIcgl1iwDfPFCK5EuseN4cJUSugsvlkzywDLDggUPCSxAxBXwOSBkimpA9sBHgR/GGwgN8EPE5kMqQTcgeeCVAgkBpQj6IUhlKFaglD/xzCPpOOYdbe/cAH0T9dM1+q4KXQUQR8kAoPfDgIHopRBTjb8ZWq5d7YA0iitL1GqY77r8AcPwB2sVZbdXse1IAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAbCAYAAADyBeakAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACfUlEQVR4nLWWgZGzIBCF15lrgCvBFkwJXAmmBK8Er4RYQmyBEo4SflugBUrg32WBoIdGvcvOMBhCeB/sW8wbHA+XPVcb323F7HdHIRyGX0MPAB9f4MKCXvzWt08XmIwFpfRsI0chKgzHNACdBhg1OBJvmtpPsChC0fYjqKFLvbE83tQCmgDbSQXvH+DOpKNiGhb/7lh8mgzUQoDCnkJdJdy7Ea7YA/DYHak/R+n7UbcgJC94BoIi7Z7E+5uCUUmQuDNjGKprDKarxh4FJx6jzxEEzwysPg8xA6Ac0257SYvXaVIUjn0EozkEpq1Eb5yD8L4cPxUCtB7AGIO748VlI0BPnPsppIUi+mUOhhvA9NGJHIHgwoB/INsLaPU4+ngCBJCJpzLEsVQNEagRFn3hgXdXh0+BVjWajwCo1HihyYo0qQSwBjRl43sgkgdGRT+VINBRLXrLUtnhEIEEgCjm4CfIGuBTiJACFUoN6KLxQNIaPH4BokaDjlOaH0Qq2AbZDZE8YPQFpCD3c05rFB6wvMiIAwPkYrvFn0HMAKIHvm/sbKoIiuFxAr+KEkQRgD0A6AcS3vTAoVSUIBy/hPoiwMIDuUh6iWWfd0cOkargev1CD5QBCh44JVyC8Cmge4DLELwJyQM7AX4Vb5B5gC4iugdiGZIJyQOvBIgQkJuQLqJYhlwFouSBP4fA/ykXd+8eHqCLaAiv2UUVvAzCi6AHXO6BlYvopRBejP4zdnKXCQUcD7sHwovi69WFd1yVieWipbG9ADZrqxC5eB36vK0BlQRL49RMaGleCSIK1lmfC/5pKtYglkLLBbYWtBvPy7YJEY/s2bGLFaAt6OIG/gOaHHRLbyTjmgAAAABJRU5ErkJggg==",
+    "price": 350000,
+    "reqSTR": 80,
+    "reqDEX": 245,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 80,
+    "tuc": 7,
+    "incPAD": 66,
+    "attack": 9,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Gun"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 66,
+      "min": 62,
+      "max": 70
+    }
+  }
+}

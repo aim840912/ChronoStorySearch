@@ -1,0 +1,63 @@
+{
+  "itemId": 1041082,
+  "itemName": "Brown Piettra",
+  "chineseItemName": null,
+  "totalMonsters": 5,
+  "monsters": [
+    {
+      "mobId": 4230104,
+      "mobName": "Clang",
+      "chineseMobName": "青螃蟹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230108,
+      "mobName": "Jr. Cerebes",
+      "chineseMobName": "小獵犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230126,
+      "mobName": "Mummydog",
+      "chineseMobName": "木乃伊犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230400,
+      "mobName": "Iron Boar",
+      "chineseMobName": "鋼之黑肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5130105,
+      "mobName": "Dark Jr. Yeti",
+      "chineseMobName": "黑色小雪球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

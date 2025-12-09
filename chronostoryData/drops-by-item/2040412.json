@@ -1,0 +1,74 @@
+{
+  "itemId": 2040412,
+  "itemName": "Scroll for Topwear for LUK 10%",
+  "chineseItemName": null,
+  "totalMonsters": 6,
+  "monsters": [
+    {
+      "mobId": 6130101,
+      "mobName": "Mushmom",
+      "chineseMobName": "蘑菇王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5120000,
+      "mobName": "Luster Pixie",
+      "chineseMobName": "日光精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230104,
+      "mobName": "Clang",
+      "chineseMobName": "青螃蟹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7130000,
+      "mobName": "Lucida",
+      "chineseMobName": "黑格里芬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8141100,
+      "mobName": "Gigantic Spirit Viking",
+      "chineseMobName": "巨人維京",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8142000,
+      "mobName": "Phantom Watch",
+      "chineseMobName": "幽魂女巫",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

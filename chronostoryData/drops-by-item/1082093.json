@@ -1,0 +1,30 @@
+{
+  "itemId": 1082093,
+  "itemName": "Steal Pow",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 5300100,
+      "mobName": "Malady",
+      "chineseMobName": "巫婆",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6230400,
+      "mobName": "Soul Teddy",
+      "chineseMobName": "幽魂發條熊",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 1002101,
+  "itemName": "Old Mithril Nordic Helm",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 6230300,
+      "mobName": "Lazy Buffy",
+      "chineseMobName": "小丑瑞奇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

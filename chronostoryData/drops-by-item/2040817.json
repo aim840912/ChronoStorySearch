@@ -1,0 +1,19 @@
+{
+  "itemId": 2040817,
+  "itemName": "Scroll for Gloves for Magic ATT 60%",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5150003,
+      "mobName": "Hot Mixed Golem",
+      "chineseMobName": "火之混種石巨人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

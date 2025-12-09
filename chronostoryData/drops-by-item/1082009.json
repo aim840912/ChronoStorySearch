@@ -1,0 +1,30 @@
+{
+  "itemId": 1082009,
+  "itemName": "Steel Brist",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 5120002,
+      "mobName": "Lioner",
+      "chineseMobName": "黃獨角獅",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5130102,
+      "mobName": "Dark Stone Golem",
+      "chineseMobName": "黑曜石巨人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": 1002323,
+  "description": {
+    "id": 1002323,
+    "name": "Green Osfa Hat",
+    "description": "",
+    "chineseName": "藍扣帶帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAZCAYAAADJ9/UkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACtklEQVR4nK1Wi3UiMQz0vkcDpgRTwl4JXAlcCaSEpIRLCbkS2Ba2BFxCXAIugdPIlv9AjpzeW2C9smY0ksVu1HN2pWv6rs+z4NOD4F8h9xD82gCO1u/t+RY4Z6i1Vt57yeY6z7NyzpVrCRTPrLX/BZzNGJPAQKSxBAqDX7leJPFP4JV8BYH0DSJYb0CTCdGoUEdiBB4c94dwty4so2TWBhYiIxusV4246R4SqDYEpENGin57Z5UlEkUm9S4hKtaq4LgHyt6YWvAEDDC1vinzcabfgYff00UEhFD4NmmzjmQ9NmAdBBBHiDkroF3mdcYEzIEQAMFQX5AiAigDB4Wvy0DekTKvJ6VdJBCyjcn0/VBlXkodMs7AMaWQ3eE1BBcVsqzBX+KRn8IRLf1ugUNqxqaPFtjblQH08Xci4SGnyxlKb6R42G/HGbfgE2VyhaxCoDIJysW3ITADmvw8Xt0UEDKDs55rDiOJvFqSZHwhU2QMYFcAy8ZPEPuMdzs1RQiZAXz+EYNc/eCc5y6P9fHLe+pS7gXI75uRSUEZ2MJ/l8mc6YO2TJPn+TCYiHXmAqwhHWXpV5Uaijtc5aOUQE4hYwBvlzyALipIfyHxsC59oLPC/ZDRZV1jLbGW1BAl0GxJ+hq4KoGoQYmB6PTjRuZssa7eLqmLqzkmJOKA8XSr64mr/Fsg1Nms0mCihFLtq6PGBbxzLtmiQlt7UJe3JdV9+jWzCueZ/gdIcvs+3s7k47TbJOB7oKZIUcpD/tsVNQ6WJd+xAj8RzmD9RPe7PBWxfPxQ7s/LFeB8xr8EXN6LAjHDQGJXram4tr2hQh4yo9efFrgAbW0EgEbjPijimP2xAxcCqiIxBur9BoajhqYsT4OY/NGMXiYevnUO/DoiWYlca232DOxXfjg9++p8j0hvobvLPx72/wt+VJQm4+PqpwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC90lEQVR4nK1Wi3XbMAyk3vMC9AjyCOoIzgjuCM4IyQjNCOkI1goawRwhHMEcwcWBBH8i5TQJ3qMlUSTucABh7dTX7E5j+O6ar4IPD5x/htxD8HsF2Jrf2vMtcI5Qa62ccxLNfZomZa3N5yIo3hljfgScbRzHCAYilUVQGNbl81kQ/wVeyJcRiFcQwXwFGk2IBoVWJFrgfuHx5J+WmWWUyGrHQqRljfmiEHerlwSqRwLSPiJF984aZYhEFkm5S4iK1SpYroG8NoYaPAIDTC2vany/0r3n4Y40iIAQ8tcxbtaBrMMGzIMA/AgxawR0FXkZMQGzIziAM+QXpIgA0sBOsdYmIGdJmZeL0jYQ8NGGYNb1UESeS+0jTsAhJB/d6cU7FxWSrH69+KN1Ckc0X9cDh9SMTT81sDMLA+jzn0jCQU6bIpTaiP6w37QjrsEHiuQOWYVAYeKUk2+8YwYc0/swVl1AyDTOeso5jCRyao6S8UCkiBjANgOWjR8g9hGeDmoIENID+PzDBy11jXOeqjzkx81vsUq5FiC/q1omOWVgg/WHROZKP7RlGBz3h0ZHLCMXYA3pKEq3qFhQXOEqHaUIcvERA3g/pwZ0U176G4mHeakDnRReNxmd5zXkEnNRDVECxRalL4GLFIgaFBiIDr86kbOFvDozxyou+piQCA3G0aMuO65yr57QyiYVGxMFFHNfHDVO4Ma5ZAsK7c1J3V7nmPfh98QqXCf6HyDJzVt7O5MP3W4XgbdAxyxESQ+t3y/Isbck+YEVeIK7EfMXej6krojp87uyf5/vAOcz/ing/FkUCBF6EodiToW5fUeF1GRanz81cAZaWwsAhcZ1kPkZj+cVuBBQBYk20Hpdw3DUUJT5aRCTP5rWx8Sjr07pGvscq16UlEi51uORgd3CL4etzyhdXXtzsKcNP/TdZa58k5RcfUzkAK3RI1ICte05vLNhqBa4AI3ZNQfqN+q+9Qh1I+9t7Dqq3tX39WiCizSP5NUdIltkV+v/AaGmqdDziHQbAAAAAElFTkSuQmCC",
+    "price": 115000,
+    "reqSTR": 0,
+    "reqDEX": 130,
+    "reqINT": 0,
+    "reqLUK": 240,
+    "reqJob": 8,
+    "reqLevelEquip": 90,
+    "tuc": 7,
+    "incSTR": 3,
+    "incLUK": 2,
+    "incPDD": 57,
+    "incEVA": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 10
+    },
+    "incPDD": {
+      "base": 57,
+      "min": 12,
+      "max": 102
+    }
+  }
+}

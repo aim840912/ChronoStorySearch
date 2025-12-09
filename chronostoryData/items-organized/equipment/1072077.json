@@ -1,0 +1,103 @@
+{
+  "id": 1072077,
+  "description": {
+    "id": 1072077,
+    "name": "White Magicshoes",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/ElEQVR4nJ2VgbWyMAyF4zkuUEaoI+gIOAKOACPICDiCjiAjPEaQEWQEOwJ/bmhqi6jv/TmnIij5etPbdE1/i3F2v/rti78FCeB4PCYPT6eTgr8Cv4Ek0e12I+ccDcNAfd+HHwG21lJVVeM32CfQqACMtm0FhIHI81wgev+/igJkDkByjO12G0Dn8/mrqiVQAum6bhFgjAnK9D9/VrS1LZFpKN9yAgYiHNZm6OjQ5gGI8duYg0YOzlr7UpV+gM6q8gv9FBeBHi5TKVUhjPHJha+KGOLoSKhMvNBwW56XnLQhQxldc6ibfgMI8cmFC6ALl+0oa4DZxi5DTPc3ssWOrtRR3duwfmqaJXPMQavVxo2P64aoeCSzlTnoevG1dz+0LfY0VFPy2IVLsCUzrLIDYBkZD1OAfsdQ113Lnuru6can6jTe7SOBiS+Q1G3YAESta0LCAB+eHSN2IZ5FBll9bEHystnzmpWsrqGizWigH1Gj5bO0e/tuURRfFUnIzHkrAUJDJrPnzKF8SGaj/8clnu+zjyDIl0Rs+XimCKgSJ/bm5R1Vs9uJ2rdmQLAZDBnY29x4jXbkWm5J5iyzVCOgbC56SU0AyLxrvHQG+bgbXgvud/5FZ+7SIPLI3nLFz1zO2G3anmI1c9AIgCa2Ji2JlisG8Wzo0KH3UXJW8f5JIDFISgUAkhmf7CWxD9xL2bwaKECnx5Xt/AJJFBnuY0OUHFfMUu/nfa8wqRrEO0haOj4WrON9MtxCzfUqCvx3zLww9WR1PyGAm6bRdVkMBa04xvHB3ZcdBthSWHOhko8KOHBSY0NHmC/+e0UcVe3o3PBRYOxz76Cb+3D+IFWINlPY2ZctdlCysAkI8qsah95emmUIXyYARNkM4tVwryLdPC66ylAQZrLJsuz+eEwdu66f3UBYkRnKcjp1UTYPqSNIrAhDdtvaQzCw2geGXdG2cZ7Iv721FRQl1zhRWrJYUYhYkUbFxjjT51C5ccL592SsI3kxbMmnZmmmC88W4f8AUXHtinfUMl0AAAAASUVORK5CYIIA2wF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNWQ4NzRmOGZmZi1yOXRqcSIsImdpdEhhc2giOiI0ZWEwZjk2NjkwYjBjOGQ1ZDk5MzM2NjY0ZmI0ZmIxMWNjNjE5ZGY0IiwidXJsIjoiL2FwaS9HTVMvODMvaXRlbS8xMDcyMDc3L2ljb24iLCJjcmVhdGVkQXQiOiIyMDI1LTEyLTA2VDA1OjQwOjQyLjM4MzkyMDFaIiwibWV0YSI6bnVsbH0=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/ElEQVR4nJ2VgbWyMAyF4zkuUEaoI+gIOAKOACPICDiCjiAjPEaQEWQEOwJ/bmhqi6jv/TmnIij5etPbdE1/i3F2v/rti78FCeB4PCYPT6eTgr8Cv4Ek0e12I+ccDcNAfd+HHwG21lJVVeM32CfQqACMtm0FhIHI81wgev+/igJkDkByjO12G0Dn8/mrqiVQAum6bhFgjAnK9D9/VrS1LZFpKN9yAgYiHNZm6OjQ5gGI8duYg0YOzlr7UpV+gM6q8gv9FBeBHi5TKVUhjPHJha+KGOLoSKhMvNBwW56XnLQhQxldc6ibfgMI8cmFC6ALl+0oa4DZxi5DTPc3ssWOrtRR3duwfmqaJXPMQavVxo2P64aoeCSzlTnoevG1dz+0LfY0VFPy2IVLsCUzrLIDYBkZD1OAfsdQ113Lnuru6can6jTe7SOBiS+Q1G3YAESta0LCAB+eHSN2IZ5FBll9bEHystnzmpWsrqGizWigH1Gj5bO0e/tuURRfFUnIzHkrAUJDJrPnzKF8SGaj/8clnu+zjyDIl0Rs+XimCKgSJ/bm5R1Vs9uJ2rdmQLAZDBnY29x4jXbkWm5J5iyzVCOgbC56SU0AyLxrvHQG+bgbXgvud/5FZ+7SIPLI3nLFz1zO2G3anmI1c9AIgCa2Ji2JlisG8Wzo0KH3UXJW8f5JIDFISgUAkhmf7CWxD9xL2bwaKECnx5Xt/AJJFBnuY0OUHFfMUu/nfa8wqRrEO0haOj4WrON9MtxCzfUqCvx3zLww9WR1PyGAm6bRdVkMBa04xvHB3ZcdBthSWHOhko8KOHBSY0NHmC/+e0UcVe3o3PBRYOxz76Cb+3D+IFWINlPY2ZctdlCysAkI8qsah95emmUIXyYARNkM4tVwryLdPC66ylAQZrLJsuz+eEwdu66f3UBYkRnKcjp1UTYPqSNIrAhDdtvaQzCw2geGXdG2cZ7Iv721FRQl1zhRWrJYUYhYkUbFxjjT51C5ccL592SsI3kxbMmnZmmmC88W4f8AUXHtinfUMl0AAAAASUVORK5CYIIA2wF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNWQ4NzRmOGZmZi1yOXRqcSIsImdpdEhhc2giOiI0ZWEwZjk2NjkwYjBjOGQ1ZDk5MzM2NjY0ZmI0ZmIxMWNjNjE5ZGY0IiwidXJsIjoiL2FwaS9HTVMvODMvaXRlbS8xMDcyMDc3L2ljb24iLCJjcmVhdGVkQXQiOiIyMDI1LTEyLTA2VDA1OjQwOjQyLjM4MzkyMDFaIiwibWV0YSI6bnVsbH0=",
+    "price": 14000,
+    "reqLevel": 30,
+    "reqINT": 85,
+    "reqLUK": 30,
+    "incPDD": 11,
+    "incMDD": 5,
+    "incINT": 1,
+    "tuc": 5,
+    "reqJob": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes",
+    "lowItemId": 1070000,
+    "highItemId": 1080000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incDEX": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incINT": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incLUK": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incPAD": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incMAD": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incPDD": {
+      "base": 11,
+      "min": 0,
+      "max": 26
+    },
+    "incMDD": {
+      "base": 5,
+      "min": 0,
+      "max": 20
+    },
+    "incACC": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incEVA": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incSpeed": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incJump": {
+      "base": 0,
+      "min": 0,
+      "max": 1
+    },
+    "incMHP": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    },
+    "incMMP": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    }
+  }
+}

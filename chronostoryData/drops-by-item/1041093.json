@@ -1,0 +1,41 @@
+{
+  "itemId": 1041093,
+  "itemName": "Blue Ice Queen",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 6300100,
+      "mobName": "Buffoon",
+      "chineseMobName": "貝爾芬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7130100,
+      "mobName": "Tauromacis",
+      "chineseMobName": "月牙牛魔王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9300038,
+      "mobName": "Ghost Pixie",
+      "chineseMobName": "鬼精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

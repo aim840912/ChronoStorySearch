@@ -1,0 +1,252 @@
+{
+  "mobId": 5150003,
+  "mobName": "Hot Mixed Golem",
+  "chineseMobName": "火之混種石巨人",
+  "isBoss": false,
+  "inGame": true,
+  "totalDrops": 22,
+  "drops": [
+    {
+      "itemId": 4000672,
+      "itemName": "#N/A",
+      "chineseItemName": null,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 0,
+      "itemName": "Meso",
+      "chineseItemName": null,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 332,
+      "maxQty": 498,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1002252,
+      "itemName": "Red Infinium Circlet",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1002285,
+      "itemName": "Blood Nightfox",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1040102,
+      "itemName": "Bronze Platine",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1051053,
+      "itemName": "Red Requierre",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1052122,
+      "itemName": "Red Viska",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1060090,
+      "itemName": "Bronze Platine Pants",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072158,
+      "itemName": "Red Lapiz Sandals",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072163,
+      "itemName": "Red Mystique Shoes",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1102022,
+      "itemName": "Red Gaia Cape",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1302012,
+      "itemName": "Red Katana",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1312010,
+      "itemName": "Mikhail",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1322019,
+      "itemName": "The Judgement",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1332018,
+      "itemName": "Kandine",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1382007,
+      "itemName": "Evil Wings",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1442008,
+      "itemName": "The Gold Dragon",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1452009,
+      "itemName": "Red Hinkel",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1482009,
+      "itemName": "Beia Crash",
+      "chineseItemName": null,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1200003,
+      "itemName": "Red Arrow for Bow",
+      "chineseItemName": null,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1202004,
+      "itemName": "Blaze Capsule",
+      "chineseItemName": null,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 2040817,
+      "itemName": "Scroll for Gloves for Magic ATT 60%",
+      "chineseItemName": null,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    }
+  ]
+}

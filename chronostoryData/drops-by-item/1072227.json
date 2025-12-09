@@ -1,0 +1,19 @@
+{
+  "itemId": 1072227,
+  "itemName": "Red Arnah Shoes",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 8170000,
+      "mobName": "Thanatos",
+      "chineseMobName": "達納托斯",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

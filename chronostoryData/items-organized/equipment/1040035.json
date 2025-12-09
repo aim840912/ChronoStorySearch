@@ -1,0 +1,43 @@
+{
+  "id": 1040035,
+  "description": {
+    "id": 1040035,
+    "name": "Blue Nightshift",
+    "description": "",
+    "chineseName": "青夜"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAcCAYAAACZOmSXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACmUlEQVR4nKWXj3WjMAzGxXtdwCv4RuBG4EYgIyQrZITcCGWEMkIZ4RjhPEI1ApXkP9iGYOqozaPYoJ8kf1bcN6izJbtvapzUwBfdXcMNIgLO41ITwE/hi2p7MPNk75S2FxqrCaC27ALW2sI5+xo7C5c11i2VW3GmXQJFM9sqoPFaOFWBEtxCeY2RfxEUKgvkH4ajsU8y3C0DmOlUEEfwRFjeAtQbAZWUIzwAqDtQShV18Ay+SImzpWSIZK/UOkjP+HuMXuAAS0I8LHviFNcA/JyMK0iCRDgvvrLguKK0zqgwrYQfhzqll+EK6oxF6MVXDceDMiK8lPUhfOMYs/HXuAW4204iuh0wa8CLLwnI7/tX4HEA68AK8tsuGY8ajjohmGfwRroUNYukiznHm8Cyed90aI9bXwV4/P3chCsFoDQ1ipJyo/kCOOEwfPn89x8ulzv5UMQb0o6koFzCWPnKL8nGhDOMk+houF+WUPbrtYdhGEEyNWlLZGd7LfTkdpNsv74WmE0qxmTN266VtdT9O4x/b/KSrO1e4gdMMw/ggl+ujw/oye+eCdwYBMPHIc7EfUqw3Yyls6UgDp79E0WuyH/rGO5pjjwNt42Dvex9D0i+zfhgERlVEEz/gI6yn6aZ5g3HscK7VsPEmWvrrO+k7DyVbrkIKiJ04E0VolONL3tLRy7mBMHR0gh8mo0tu7EHhXEMmcuB0QvOf7XGwM1pJutwpGqY88why9wXi511/Ye8lJc+ATqTQyTq9YSTBfB4/xRwS1Wd6cqZa0rkfhtWtYvz6OOskZMIZe/LLddIAOEQue14onYTfKrg24fG8ObP71/JfyCuCqHTuaMQ+CDyioiZKR4O73IzGWDXmrfs4Wcm8yGIg2d+MA7f2tqddXkZQ3gAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwUlEQVR4nKWXgXWjMAyGlfduAa/gG4GOQEYgIyQjlBHSEcoIZYQwwjHCeYRqBE6SLbANjTmiJo9gQJ8k/xbuLzhmU3Z+OuLkCHyy9XU+QUTAsZ+OBPC/8MlUDbhx8GfG+gONHQngaNkFbK2Hc/ZHbC9c5thWVG7DmdYJFN3oq4BOtbCrAiW4h/IcI38QDBoP5D+Go/N3MjxMA7hhVxDP4Imw1GaoGgGNlGO+AdDWYIwp6uAn+CQlzqaSIZK9Mcsg3aPnGD3AAZaE+LTsiVNcAtBrMm4gCRJhv/jKguOK0jyjwbQSOg7HlF6GGzhmLEIV32E4PikjwktZP4WvHGM2/hq3AA/LSUS3AWYNqPiSgHTdvwKPA1gGFpAuu2Q8ajhmh2B+gp+kS1GzSLpYcLwKLLuuTYfWuPdVgMfv59N8pACMpUZRUm50vQBOOAyfHn/+wuXSkg9DvC7tSAbKJYyVb3RKViacrh9ER117meayX68NdF0PkqlLWyI722qhO5ebZPv9PcHoUjEmc17VlcylbT6h/7jJQzK3W4k/YbqxgxD8dL1/QUN+t0zgziE43g5xJuFbgm1mLJ0tBXHw7J8ockT+bWO40gJ56G4rB1vZaw9I3ma8sYiMKgiuuUNN2Q/DSNcdx7HA68rCwJlb76yppex8KV1yEVREGMCrKkS7Gi17RVsu5syCo6kR+DA6X3bnNwp9P2cuG0YVnL5aY+BqN5N1OFI1jHnmkGWuxWJndfMlD+WlT4DBZBOJdtnhZAHcPx8CrqiqIx05c0uJtLduUbs4j77BztQsHkDZa7nlGAlg3kSuO17LbDf7NLNvDY3hp/Pb7+Q/kFAFTp2l21IAdxkJQeQVEXNDPPwBXqIfVMH3DjbtpJlrQ+EHbDjGG6RWQBrEtsVLJFbgOZzHX7H8xeIXZLqw4t9v0diObpCcr+7/B8ssqyOV1nPNAAAAAElFTkSuQmCC",
+    "price": 2500,
+    "reqSTR": 0,
+    "reqDEX": 30,
+    "reqINT": 0,
+    "reqLUK": 35,
+    "reqJob": 8,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incDEX": 1,
+    "incPDD": 14
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 3
+    },
+    "incPDD": {
+      "base": 14,
+      "min": 6,
+      "max": 22
+    }
+  }
+}

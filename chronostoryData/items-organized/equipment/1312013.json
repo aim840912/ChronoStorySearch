@@ -1,0 +1,51 @@
+{
+  "id": 1312013,
+  "description": {
+    "id": 1312013,
+    "name": "Green Paint Brush",
+    "description": "",
+    "chineseName": "綠畫筆"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABsUlEQVR4nMXXjW2DMBAF4EPqAqzACjACHYEVyAhhBBghGaEeIYyAV2AFRnB5JueY1LQp2M5FCIf8vE9nbIkPilvKdTEGwgTnbU6U0nKgJiJ5kkER6kdwthxVWpGYBNG4fDEUQl0uF8qyjPI8p8/+0w0IiHADaAkV84vHmI5QCANI09QEDtVgPi9EsQACIVTbtgYwTRPdytsDA8C1MOGykTgl3jvBgX3fr7oB0DIgavOWGtmY3wSZDiGEnhIbIKXUKADGcVx93ydCIQQBfE+gG1x4DwgDeCp8ItT5fNYDBJdlqbvBBZQNCNEJDUAwjqIonEH2ta7rcEp8IQwA7UYNw2AguO4IXwGOIlYAe1VUVaVvRn1P4KZ8dCVx/dFexCYAc8/LEeOtYB8IHcxTwEvQBjzPu2+E7gIDUEcAexGm/fd2HwLsQegNyd4BjwL2ICidRrMh8Y64tfRCINRXjZ1v7sIdwtOxN/y/CAswL8UR7X9t+flCOAB+wl9FBAf8hYgC+A0RDbCFiApwIaIDnhFvAdiItwEYoZ+Y5LV5C4ARVNc1XedzdzpFBzAimYsf36MDUN/IGkF6z2jNDAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB8ElEQVR4nL3XgZGCMBAF0GXmGsiVwJUAJWAJXAlYgpYAJWgJRwlSAmmBFlICxwY3BlxAICEOQ0TkPzckI19wbGu5g0cgTHCURwAC+g2bApBn6RXRvgWH/ZaKFEpVAjT9ib4Q7e12gzAMIYoiOFUnHuARwQOgDy27F/VxOHwhDEAIYQLrtDafx2XcAzwh2jzPDUApBY/k8cIg4B6bcHmVuAucV4ICq6oaVANBfQcgj3K4yqv5jpfhKMtSD4kNkFJqFAKaphmc7xLRYggG0D2B1aCG7xFCABoKl4j2crnoDgYnSaKrQQ1RNsBHJTQAg3GL45gNso8VRYG7wBXCALDc2Oq6NhA8zoQPAHsRA4A9K9I01TejvifwpnxVJeAutBUxCcCxp+mI/algFwgdTENAU9AGjMfdNUJXgQDY9gC2Ikz5n+XeBdiC0AuSvQLuBWxBgFCNWZBoRZyaej4Q7V+GK19XhSeEhmNr+FqEBeimYoPl/2z6uUIwADfhnyK8A5YQhwDmEIcBphBLAAHrm1qD4AA/8PrTLkb7NQAFg//YPIIDdA8NEE2Ec5CpX0zh9MgzOI8QHOD3CbADnQ8FIfQTk7xfxxUQzAXmLqhm+uPtDQFZlsG92xfnM779huWyc0AOqWY+GyCCrtHjO82CxRK6bP+tFlwCkgej6gAAAABJRU5ErkJggg==",
+    "price": 20000,
+    "reqSTR": 5,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incMHP": 30,
+    "incPAD": 48,
+    "incMAD": 45,
+    "attack": 1,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Axe"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 48,
+      "min": 46,
+      "max": 50
+    },
+    "incMAD": {
+      "base": 45,
+      "min": 43,
+      "max": 47
+    },
+    "incMHP": {
+      "base": 30,
+      "min": 15,
+      "max": 45
+    }
+  }
+}

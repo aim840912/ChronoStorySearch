@@ -1,0 +1,19 @@
+{
+  "itemId": 4000112,
+  "itemName": "Mechanical Heart",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 4230112,
+      "mobName": "Master Robo",
+      "chineseMobName": "紅色機器人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

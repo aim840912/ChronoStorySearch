@@ -1,0 +1,37 @@
+{
+  "id": 1082042,
+  "description": {
+    "id": 1082042,
+    "name": "Steel Sylvia",
+    "description": "",
+    "chineseName": "鋼鐵暴風手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwElEQVR4nK2WjZWqQAyF4zk2gCVgCbMlYAlYgpYAJWAJUoJTwqMEKUFKwBLm5WYIO6ICq9xzVpaf4ctNMtE1LS/34tpqeGFpsCuKjA6HA9VVTSZJiO532my3GkwfwJLgHloxNGHonaFxHFN7uxFFEW02G6fwpcAemgJaMTTtofd7I1BblnS9/qOfn53AF3OcKjQNoE0HtSVfT+h4zOl8LnB0S4Dd7XZlqBU4HMax+XUKKKc9z3MuQ8rHkyz6FuyhtqKUawuHsTHimKk9FE4VmrLz06n8CixQa600VMNQ00PpAQqYQi0H+Y3jF9DkEWoAPXYOGZok8nzTyDMfNZfsye32h9r2RnXd9FvHQ23n9NjVtmS4oVNpdf1H20mcQlEUY1/K/23bBlDTQY3UEseyrHqg6i9gBwdw2l9wfiCtVv6dCEqgBlAOwsRa049GprwdUPxhf0I4KlAdawZ8+s1b6Byw05diX6JDVejgoiiksRSoZUBWxqBT4Acoanq5XPgYybXdbidHOEdno7nCMkzpHfgJCikUEAQRZgEBpDwu0WCfgt2ZU1jXfqNjfw6hGhCE2YsRiQwg7XP10rHlYZ9S0p35APQbJ4RCgGJOZxkPEm6qI89kBMnPvq3vWzAAgEMaQEU+hcgAUq9fBoBCgEKaGfK7YXZzOXRrlmV+zKFmgwDCDAyhcItOx9opheAnKBom6WbsuwwoNOc1gEJYV9f1LLAMiSEUzQKonkMl/5J4zICH6v25WisU22MKGt7P9ydqaNzVHMe03+9JXYdQVQiFIsMfnisNxKkVA+EaGmmwdXBDajxUmMLQeVfD0S0zpocaI9qxFEMjQ2KlrqcaKwSLAMQidKdCFaTn+gy9dtvD9XwKjAccXhimW1Oq30Iz3cxKf+i4hw8B+Gk6qP/HtX0FfoIHADenbt+AQ9hTQCP3/6z/S8Hin70gnPQAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC60lEQVR4nK2WjbGqMBCF1xkbwBKwhNwSsAQsQUqAEqQEKUFKeJYgJUgJUAJvz4blhijIVXYGAwnJt/+4pfWlezG38SfWBnfnc0qn04mqW0Umiojalnb7vSozKLAmeIDeGBoxtGVoGIbUPB5EQUC73a5T+FpgC40BvTE0HqBtWwu0LAq63//Rz89B4KtZHCs0dqB1Dy0Lno8oSTK6XM4YuzXA3eNxZ2gpcFgYhubXUkDZ7VmWcRhiHnPZ9C3YQssbxRxbWBgaIxYzdYDCUoXGbHmeF1+BBVqWpSRUzVAzQGkEBUyhJSv5jcUvoNEYagBNegsZGkXyfl3LOx8ll9Tkfv9DTfOgqqqH0rHQsrc06WNbMNxQXpS6/6NyEkshQRCiLuW+aRoHanqokVhiLIrbAFT5C7iDBbB0mOhsQ9ps7JlQSqAGUFbChBrTj1qmnA4oLtQnBKMC1WL1gHW/mYQuAXd6KOoSGaqCDD6fz5JYCtQwwCtz0HfgERQxvV6vPAYydzgcZITlyGwklxuGdzIFfoJCFAoIlHC9AAVibpdIsE/B3YVdWFW20FGfPlQVgqD3okXCA3D7UnlpccnNPqaof7IK6BfHhUIARZ9OU24knFQJ92Qoye9OxncSDADgEFXgRtaF8ABcrx8DQCGAQtQzZKthcXJ1yNY0TW2bQ8w8BVwP+FBYi0zH3nfigp+gSJio77FTHlBoxnsAhWBfVVWLwNIkfCiSBVB9hhT8T2LsAQvV9aWyVSjK4x3UXc+OOdU0b9USi+l4PJJa7UJVXCgkMPxjudK22LVS+O4emkmwrbMgMfbFdaFreR9DtK/nTd4RfLX9NQKrZqLtnIshXpPQQOPQjJWR7PISC4rV/TXAR+UEIDYhOxWqIH3Wd1iQZQGNJee11HlOptygYMSpwYGuu9Wl+hXyrFHTXRfi/ujc+9cTuHXhHkD+mnrx9z9D7cyzvzYC6wtItM6BDonnxe3zOnoB9mH+XDez/mf5D6nQ9555/+PaAAAAAElFTkSuQmCC",
+    "price": 25000,
+    "reqSTR": 0,
+    "reqDEX": 60,
+    "reqINT": 0,
+    "reqLUK": 80,
+    "reqJob": 8,
+    "reqLevelEquip": 30,
+    "tuc": 5,
+    "incPDD": 10
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 10,
+      "min": 0,
+      "max": 25
+    }
+  }
+}

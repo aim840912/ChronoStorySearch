@@ -1,0 +1,51 @@
+{
+  "id": 1472017,
+  "description": {
+    "id": 1472017,
+    "name": "Dark Avarice",
+    "description": "",
+    "chineseName": "黑護腕"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACqUlEQVR4nK2Wi5GjMAyGzcw2wJXgFrgSSAm5EkIJpAQoIVvCuoS4hHMLtOASOP2y5RUsIa9TJmMcsD69w4d5X+Y79yu9eQfIoGEYeBPCZCJ9TIy8n6ZJVjGoegc4t8ejqekj0jQ2QfETQa21DK3rmrZRDKz+R0h3BUDDNiTPXwHOsJ6V0AdewbtHz77loXeO17wUadv25pmXgMgNvrZpOF+n08l47xG/hSGIhITyLSCDIKQMYHiE0IqwhwQHWBXNS8AZMMkhqvTrK3uXJUwhtQaBUMl+Fe+nPYzkUcg9BqXhT6CiadQDyWv0pw/hB/RpoDXf4QlTNDpD1tZsBGASYsn1RPBngXPf9yWcsh4OB1Ia8iMUbmoRn5UDIs2f5aHGL7NyHMfy4/V6LSuUfp47zh98RoilkiFtS2H1DsWz24cMmv+K8bQNaQ5HcuAXeQa5XC68noZLhlKOTZow+AKmA38LOF/7dOEl3y7BMFTqJhnC4K5jKLfHiQ59jqmoMtBnBXujbe6pjXwwt2VagqvfnUF+IZY8gpVB9Z7qw0UOOYSAjdRWTV0GRz5EuWhWhmQwonGg/B6pBSAh/gAVEeCMRAeqKoahr1B5ti1zEZUn4REw1rCAOoaKLhE9bT4EJj/gAPIBKweCYd+dzybwNEkHA10eV9Di9KQ2S9j3H3DM00FCgh6DhRomBslUcbivoHGSdCwnj4YVoFjlaARJQ0MAk7EkxsjzUKqhjcp3DufiXWadw6LQqbmn/2agRCyX1wesjuIJqI1cQyKbMAHi5iyWi7JScXk86UjoKBSv+V3G3JXd0aYLYMsAERdSET0iBbhWgv26j/QzEl4pOAGbnXAugHL4lmwZoPdubzJtAfeUPSHVvQcEWOENeasYnjDoLkwDC3Tj+qG9eVD+AUUwxREwUp/qAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC20lEQVR4nK2Wi5HiMAyGzQwNhBJ8JYQSQglsCaQEKCGUwJZASsAlnFtICesScvplyygGsjxOTMZxHvr0JkvzuYy/3F/ozSdABnVdxxvvBxPoZ0Lg/TAMsopBi0+AY7Pdmop+InVtIxSXCGqtZWhVVbQNYuDif4R0VgA0bEP0/B3gCOtZCf3gFbx79t2PPHR9z2tasjRN8/Cdt4DIDQ5b15yv3W5nnHOI38QQREJC+RGQQRBSBjA8QmhF2EOCA6yK5i3gCJjkEFV6PifvkvjBx9YgECrZFfF+2cNAHvnUY1DqvzwVTa0eiF6jP533N9CXgdZcw+OHYHSGrK3YCMAkxJLrgeCvAsf9fp/DKetmsyGlPj1C4aYWcUk5INL8SZ5q/Dwrj8djvni5XPIKpd+HlvMHnxFiqWRI01BYXY/ime1DBo1/xXja+jiHAzmwIs8gp9OJ1113SlDKsYkTBgdgOvCPgONlH0+c5LuPMAyVqo6GMLhtGcrtsaOXvo+xqBLQJQVzo23cUxs5bx7LMAUv1q1BfiGWPIKVXvWe6sNJDjmEgB2preoqD470EuWiLgxJYERjQ/ndUgtAfLgBZRHgiER7qiqGoa9QebbJcxGVJ+ERMFY/gfYMFV0ietosBSYX8ALyASs7gmHfHg7G8zSJL3o63RbQ7PSgNlPY9Q84pOkgIUGPwUINE4NkqvS4r6BhkHRMJ4+GZaBY1dMIkoaGACZjSYyR56FUQ2uV7xTOybdMmcOssFdzT//NQIlYLp8PWHuKJ6A2cA2J3IUJEDdHsVyU5YpL40lHQkche83fMuZXmR1tugDuGSDS+1hEz0gGlkqwL/tIPyPhlYITMMnKGPU5V/g98fBeo84ZoPf9te20r0GtfGTgnLIX5FAANQxhGAS4wBfyvWJ4wSD8d1XFtZuHdEhXBP1J5190ftaW076b2bcPIKE8lsVNnfA/hcXrtEoDrM1Uwsw+n/8DK/nbXHgd5VkAAAAASUVORK5CYII=",
+    "price": 60000,
+    "reqSTR": 0,
+    "reqDEX": 80,
+    "reqINT": 0,
+    "reqLUK": 120,
+    "reqJob": 8,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incLUK": 3,
+    "incPAD": 22,
+    "incPDD": 4,
+    "attack": 7,
+    "attackSpeed": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Claw"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incPAD": {
+      "base": 22,
+      "min": 20,
+      "max": 24
+    },
+    "incPDD": {
+      "base": 4,
+      "min": 0,
+      "max": 24
+    }
+  }
+}

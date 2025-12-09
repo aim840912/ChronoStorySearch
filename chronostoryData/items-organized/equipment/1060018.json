@@ -1,0 +1,43 @@
+{
+  "id": 1060018,
+  "description": {
+    "id": 1060018,
+    "name": "Red Martial Arts Pants",
+    "description": "",
+    "chineseName": "紅武褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAdCAYAAABBsffGAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTElEQVR4nJ1Wi3GDMAwVd1nAHYGM4IzQFcgIMEI7QhkhjFCv0BHCCPEI9QiuZVtG+JPSvuPOYOSnJ1kynOA4LLvvjixokdti4ttNCXdjHPNLZytrCoc1cuuJEEi2AizzEp7XMHwMN3i7jQDaXVqDMQYu08XmDqrK1ayg7/v9pA5OnHB4fZWwquAJyVvIyfeqo1oppScendplWvwzuAs9SS29g/vtXqiv51ywexcAqhw/R1DvKjnA8Te0q8U05gV737KpkFteEQRULUfZduRscX/WdS1Sc3q2iGO5LiB6kUTnUQghfNW0lBfAqhk+hsRmtClTIaCJQx3qKwTL72stX0ZySk2N3NpHLEFSFkdMB8c87Z+x/r0DEVLD815XHivBNxLrpfFt9OowioR+c5CrL8kjsSfBKjFhMT77OWwgsdn5e3KQYU9OIcrQlTmwE9M8EZKDChI5blaq50Zz+GrhYCmplS+Sh82svKRQ6XCa1OTznux4SqIDjIw2dUsLO6gKxaYSio7E5KBiUm6ozAyjeqcEh667dCFSGYVQSirYyHmolCL95Lwm5fy12dufEjGR99tiMiTVhZBspK8SJ/eh4iZ4xJzXDqKIZI822Dg5KYmhtHS4u/ht7N3JhyVHXVioZvaPz0fqSHSg3bp3V1GQHbnW3sPZgsbODL5c3XPDWgTn6zkJGsYB1KIaZ0vcHFSAoV7nyzPi5MAJSMJy/OWn6FegKGwidIb7EjoUP296b/Af0JlP63fKlar8rxwFK0dO3h39PWvAl+ZuZg7zPy91PDje5xYVAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACi0lEQVR4nJVWC3XrMAxVzimBPAgpBBdCH4QGQgKhg7BAaCDMFAahgVBDmCF4ln+Vv8l02hPbkXx1ZUnOCf4mioy7vxi2gFS28KOXej2QGuVfpwo2VfAakDKbouDGG8C6rHa+2cfn7QH3xwQg9E8IkFLCZb6oGliVEV84DMMQLwoLqAnB9cpg4xYVgfakBBSzcSwYYwZk0izWeTVz0D9EZYIZsOfjWWVVP6OejDUx9H76moB/8ACGz6PSzjq544Rs6OwAKZpZXpANm1gdVOvieW7bVg1fO3SJt+u4Qj9YOpLquYW+7032HWGUCWbf7fMWdpZC5uHqYVcOdwaTaZjS31v+0gH58O0BKfVyae09dk8MGZVljudYXwast+ErnVOdkcsoU7Skbqf7ZLxGdkGGN1iNVRnIgZgNMduk3QjnZg2LtX/rmbEHq0gO5MPAbDfIXusOENb95h6sIREQHnSol0ohmqyjQsJWKokUyCZCSVG8maDMfDbnFPRo2BwYMk4TIg4daaIZk1IhCgfiwRrtqJwMLDFyrLSH+Oi6S2cjwJxTPmwNiYFoOHwYReO+8Yzoa1nWP1GFAOTrhoB4NplTydPftjUgEw48QCPujBpNMuijDhZpCpA6RkPXYZbgt8CgOzSmsa/+jA3Rf329QidAMKHtPnRmQuOaUOppex0aahP41nVVMqJg5/EcnLtNN+ArP9Dr3MGiZxiOcSkyycC0M8HJmhy9Jg7cOFbQQSxYBMZzhKRg7RUuYmUnfnAIzN9ZxN4USsaI8+x77krGJTCZjqLG6w7k5IzP+hP3Vdhkgeg2qsqiw3TPLAFGP/WMEOw/xM2EflTVhL4bk/Xof4LQaKKwlEJUuwRkYx7Gv0RBTg+AZd+1AAAAAElFTkSuQmCC",
+    "price": 19000,
+    "reqSTR": 95,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incMHP": 10,
+    "incPDD": 28
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incMHP": {
+      "base": 10,
+      "min": 0,
+      "max": 25
+    },
+    "incPDD": {
+      "base": 28,
+      "min": 13,
+      "max": 43
+    }
+  }
+}

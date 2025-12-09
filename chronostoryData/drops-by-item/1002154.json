@@ -1,0 +1,19 @@
+{
+  "itemId": 1002154,
+  "itemName": "Dark Guiltian",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 3220000,
+      "mobName": "Stumpy",
+      "chineseMobName": "樹妖王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 1.5,
+      "displayChance": "1.5%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "itemId": 1052098,
+  "itemName": "Brown Cotton Lagger",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 9500148,
+      "mobName": "Tortice",
+      "chineseMobName": "冰烏龜",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.18,
+      "displayChance": "0.18%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 1210101,
+      "mobName": "Ribbon Pig",
+      "chineseMobName": "緞帶肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2300100,
+      "mobName": "Stirge",
+      "chineseMobName": "蝙蝠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

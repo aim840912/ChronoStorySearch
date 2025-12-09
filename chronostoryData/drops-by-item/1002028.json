@@ -1,0 +1,30 @@
+{
+  "itemId": 1002028,
+  "itemName": "Silver Crusader Helm",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 5120001,
+      "mobName": "Cellion",
+      "chineseMobName": "紅獨角獅",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7130102,
+      "mobName": "Yeti and Pepe",
+      "chineseMobName": "雪吉拉戰車",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

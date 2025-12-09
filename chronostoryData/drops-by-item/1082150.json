@@ -1,0 +1,19 @@
+{
+  "itemId": 1082150,
+  "itemName": "Grey Work Gloves",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 9300659,
+      "mobName": "Chunky Snail",
+      "chineseMobName": "矮胖蝸牛",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "itemId": 1092024,
+  "itemName": "Silver Aquila Shield",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 8140500,
+      "mobName": "Bain",
+      "chineseMobName": "煉獄獵犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9834151,
+      "mobName": "Tauroshield",
+      "chineseMobName": "盾牌牛魔王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": 1322014,
+  "description": {
+    "id": 1322014,
+    "name": "War Hammer",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABw0lEQVR4nL2WgXGDMAxFxV0WSEZIR6AjkBHoCGGEZIQwAqyQEeIRygh4hDCCK7m2z1GNIDREdwJjjJ/1ZfnYwHvMuHv2DqBpLifQXQf1VZm1gabve2jPFWg92I41gRY2aA15UUJdVdS3mqTm+3aDTin78OVgdFkDaCNLwdYA2shIxhTs1UAL0wLslUBRxlcDJ2WcCwynwxRMz4RJQNM0DXR4OrRta0YmCXU2FzYGDDC/8uQYPK4IRmPmwlLAABMsnI3qquD6O3YWjAOTsP1+T1H4fIKH0dn4LCwG/oFpJxcBb7gxKpTNwv8B80Cb/Lquk7CyLO07apN1eOirhbAQoXIFm4JN5HMRMEO5zPF4nIQJu/YpIFnm6s0a5SyW2MM8kG8kWLhL/UeGD+IwHr1wOIjAAKOc5nkeil+CPSvzYx1ijZFRCcQ5lWBuwy2S1NYYWYHRoUyhvygKoDrlpeNgO/StwBjGgBn9xhEssg/0XoAd0B8+GIEN3nkOd1jUd9cOk/E6dc+0gmIsEtZPTrnRMXDr/ODufuX4h1edSNYI3oIs4+gieITxJPHgM4Iuvj0xMW8/+Ia91Awatz+jvpR8g/Ac2j/mz1iLCOpkzwAAAABJRU5ErkJgggDbAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby01ZDg3NGY4ZmZmLXA5YmdzIiwiZ2l0SGFzaCI6IjRlYTBmOTY2OTBiMGM4ZDVkOTkzMzY2NjRmYjRmYjExY2M2MTlkZjQiLCJ1cmwiOiIvYXBpL0dNUy84My9pdGVtLzEzMjIwMTQvaWNvbiIsImNyZWF0ZWRBdCI6IjIwMjUtMTItMDhUMTU6MjQ6MjkuMDUzMzI3N1oiLCJtZXRhIjpudWxsfQ==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABw0lEQVR4nL2WgXGDMAxFxV0WSEZIR6AjkBHoCGGEZIQwAqyQEeIRygh4hDCCK7m2z1GNIDREdwJjjJ/1ZfnYwHvMuHv2DqBpLifQXQf1VZm1gabve2jPFWg92I41gRY2aA15UUJdVdS3mqTm+3aDTin78OVgdFkDaCNLwdYA2shIxhTs1UAL0wLslUBRxlcDJ2WcCwynwxRMz4RJQNM0DXR4OrRta0YmCXU2FzYGDDC/8uQYPK4IRmPmwlLAABMsnI3qquD6O3YWjAOTsP1+T1H4fIKH0dn4LCwG/oFpJxcBb7gxKpTNwv8B80Cb/Lquk7CyLO07apN1eOirhbAQoXIFm4JN5HMRMEO5zPF4nIQJu/YpIFnm6s0a5SyW2MM8kG8kWLhL/UeGD+IwHr1wOIjAAKOc5nkeil+CPSvzYx1ijZFRCcQ5lWBuwy2S1NYYWYHRoUyhvygKoDrlpeNgO/StwBjGgBn9xhEssg/0XoAd0B8+GIEN3nkOd1jUd9cOk/E6dc+0gmIsEtZPTrnRMXDr/ODufuX4h1edSNYI3oIs4+gieITxJPHgM4Iuvj0xMW8/+Ia91Awatz+jvpR8g/Ac2j/mz1iLCOpkzwAAAABJRU5ErkJgggDbAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby01ZDg3NGY4ZmZmLXA5YmdzIiwiZ2l0SGFzaCI6IjRlYTBmOTY2OTBiMGM4ZDVkOTkzMzY2NjRmYjRmYjExY2M2MTlkZjQiLCJ1cmwiOiIvYXBpL0dNUy84My9pdGVtLzEzMjIwMTQvaWNvbiIsImNyZWF0ZWRBdCI6IjIwMjUtMTItMDhUMTU6MjQ6MjkuMDUzMzI3N1oiLCJtZXRhIjpudWxsfQ==",
+    "price": 20000,
+    "reqLevel": 30,
+    "reqSTR": 95,
+    "incPAD": 49,
+    "tuc": 7,
+    "reqJob": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Blunt Weapon",
+    "lowItemId": 1320000,
+    "highItemId": 1330000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incDEX": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incINT": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incLUK": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incPAD": {
+      "base": 49,
+      "min": 48,
+      "max": 51
+    },
+    "incMAD": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incPDD": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    },
+    "incMDD": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    },
+    "incACC": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incEVA": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incSpeed": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incJump": {
+      "base": 0,
+      "min": 0,
+      "max": 1
+    },
+    "incMHP": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    },
+    "incMMP": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    }
+  }
+}

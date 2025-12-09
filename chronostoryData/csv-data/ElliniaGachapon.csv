@@ -1,0 +1,181 @@
+Chance,ItemID,Description,Percent
+50000,1002398,Green Varr Hat,0.21%
+50000,1002399,Blue Varr Hat,0.21%
+50000,1002400,Red Varr Hat,0.21%
+50000,1002401,Dark Varr Hat,0.21%
+50000,1072223,Green Varr Shoes,0.21%
+50000,1072224,Blue Varr Shoes,0.21%
+50000,1072225,Red Varr Shoes,0.21%
+50000,1072226,Dark Varr Shoes,0.21%
+50000,1082151,Green Ciara,0.21%
+50000,1082152,Blue Ciara,0.21%
+50000,1082153,Red Ciara,0.21%
+50000,1082154,Purple Ciara,0.21%
+52041,1050102,Green Varuna,0.22%
+52041,1050103,Blue Varuna,0.22%
+52041,1050104,Red Varuna,0.22%
+52041,1050105,Dark Varuna,0.22%
+52041,1051101,Green Bazura,0.22%
+52041,1051102,Blue Bazura,0.22%
+52041,1051103,Red Bazura,0.22%
+52041,1051104,Dark Bazura,0.22%
+52041,1372010,Dimon Wand,0.22%
+55263,1382035,Blue Marine,0.23%
+61111,1002363,Green Oriental Fury Hat,0.26%
+61111,1002364,Blue Oriental Fury Hat,0.26%
+61111,1002365,Red Oriental Fury Hat,0.26%
+61111,1002366,Black Oriental Fury Hat,0.26%
+61111,1072206,Blue Neli Shoes,0.26%
+61111,1072207,Green Neli Shoes,0.26%
+61111,1072208,Red Neli Shoes,0.26%
+61111,1072209,Dark Neli Shoes,0.26%
+61111,1082131,Blue Sage,0.26%
+61111,1082132,Green Sage,0.26%
+61111,1082133,Red Sage,0.26%
+61111,1082134,Dark Pachone,0.26%
+63636,1050092,Green Oriental Fury Coat,0.27%
+63636,1050093,Blue Oriental Fury Coat,0.27%
+63636,1050094,Red Oriental Fury Coat,0.27%
+63636,1050095,Black Oriental Fury Coat,0.27%
+63636,1051094,Green Oriental Fury Coat,0.27%
+63636,1051095,Blue Oriental Fury Coat,0.27%
+63636,1051096,Red Oriental Fury Coat,0.27%
+63636,1051097,Black Oriental Fury Coat,0.27%
+63636,1372009,Magicodar,0.27%
+67647,1382008,Kage,0.28%
+75000,1002271,Green Galaxy,0.31%
+75000,1002272,Blue Galaxy,0.31%
+75000,1002273,Purple Galaxy,0.31%
+75000,1002274,Dark Galaxy,0.31%
+75000,1072177,Green Enigma Shoes,0.31%
+75000,1072178,Purple Enigma Shoes,0.31%
+75000,1072179,Dark Enigma Shoes,0.31%
+75000,1082121,Green Clarity,0.31%
+75000,1082122,Blue Clarity,0.31%
+75000,1082123,Dark Clarity,0.31%
+78205,1050072,Green Enigmatic,0.33%
+78205,1050073,Blue Enigmatic,0.33%
+78205,1050074,Dark Enigmatic,0.33%
+78205,1051056,Green Enigma,0.33%
+78205,1051057,Purple Enigma,0.33%
+78205,1051058,Dark Enigma,0.33%
+78205,1372016,Phoenix Wand,0.33%
+83333,1382010,Dark Ritual,0.35%
+92857,1002252,Red Infinium Circlet,0.39%
+92857,1002253,Blue Infinium Circlet,0.39%
+92857,1002254,Dark Infinium Circlet,0.39%
+92857,1072157,Blue Lapiz Sandals,0.39%
+92857,1072158,Red Lapiz Sandals,0.39%
+92857,1072159,Brown Lapiz Sandals,0.39%
+92857,1072160,Gold Lapiz Sandals,0.39%
+92857,1082098,Brown Lorin,0.39%
+92857,1082099,Blue Lorin,0.39%
+92857,1082100,Dark Lorin,0.39%
+97059,1050067,Blue Requiem,0.41%
+97059,1050068,Red Requiem,0.41%
+97059,1050069,Brown Requiem,0.41%
+97059,1050070,Dark Requiem,0.41%
+97059,1051052,Blue Requierre,0.41%
+97059,1051053,Red Requierre,0.41%
+97059,1051054,Brown Requierre,0.41%
+97059,1051055,Dark Requierre,0.41%
+97059,1372015,Angel Wings,0.41%
+103846,1382007,Evil Wings,0.44%
+116667,1002242,Red Seraphis,0.49%
+116667,1002243,Blue Seraphis,0.49%
+116667,1002244,Green Seraphis,0.49%
+116667,1002245,White Seraphis,0.49%
+116667,1002246,Dark Seraphis,0.49%
+116667,1072136,Pink Goldrunners,0.49%
+116667,1072137,Green Goldrunners,0.49%
+116667,1072138,Orange Goldrunners,0.49%
+116667,1072139,Blue Goldrunners,0.49%
+116667,1082086,Steel Manute,0.49%
+116667,1082087,Gold Manute,0.49%
+116667,1082088,Dark Manute,0.49%
+116667,1372008,Hinomaru Fan,0.49%
+122414,1050053,Blue Anakamoon,0.51%
+122414,1050054,Red Anakamoon,0.51%
+122414,1050055,White Anakamoon,0.51%
+122414,1050056,Dark Anakamoon,0.51%
+122414,1051044,Blue Anakarune,0.51%
+122414,1051045,Red Anakarune,0.51%
+122414,1051046,White Anakarune,0.51%
+122414,1051047,Dark Anakarune,0.51%
+122414,1372014,Evil Tale,0.51%
+131818,1382006,Thorns,0.55%
+146078,1382011,Mystic Cane,0.61%
+150000,1002215,Flame Golden Circlet,0.63%
+150000,1002216,Aqua Golden Circlet,0.63%
+150000,1002217,Orange Golden Circlet,0.63%
+150000,1002218,Dark Golden Circlet,0.63%
+150000,1072140,Pink Goldwind Shoes,0.63%
+150000,1072141,Blue Goldwind Shoes,0.63%
+150000,1072142,Purple Goldwind Shoes,0.63%
+150000,1072143,Green Goldwind Shoes,0.63%
+150000,1082080,Dark Penance,0.63%
+150000,1082081,Red Pennance,0.63%
+150000,1082082,Blue Pennance,0.63%
+158333,1050045,Blue Calas,0.66%
+158333,1050046,Red Calas,0.66%
+158333,1050047,Orange Calas,0.66%
+158333,1050048,White Calas,0.66%
+158333,1050049,Dark Calas,0.66%
+158333,1051030,Dark Calaf,0.66%
+158333,1051031,White Calaf,0.66%
+158333,1051032,Blue Calaf,0.66%
+158333,1051033,Red Calaf,0.66%
+158333,1051034,Orange Calaf,0.66%
+158333,1372007,Cromi,0.66%
+172222,1382001,Arc Staff,0.72%
+200000,1002151,Brown Guiltian,0.84%
+200000,1002152,Blue Guiltian,0.84%
+200000,1002153,Red Guiltian,0.84%
+200000,1002154,Dark Guiltian,0.84%
+200000,1002155,White Guiltian,0.84%
+200000,1072114,Red Moon Shoes,0.84%
+200000,1072115,Blue Moon Shoes,0.84%
+200000,1072116,Gold Moon Shoes,0.84%
+200000,1072117,Dark Moon Shoes,0.84%
+200000,1082062,Red Arten,0.84%
+200000,1082063,Blue Arten,0.84%
+200000,1082064,Dark Arten,0.84%
+200000,1382019,Hall Staff,0.84%
+213158,1050035,Brown Starlight,0.89%
+213158,1050036,Red Starlight,0.89%
+213158,1050037,Green Starlight,0.89%
+213158,1050038,Blue Starlight,0.89%
+213158,1050039,Dark Starlight,0.89%
+213158,1051023,Purple Moonlight,0.89%
+213158,1051024,Red Moonlight,0.89%
+213158,1051025,Blue Moonlight,0.89%
+213158,1051026,Dark Moonlight,0.89%
+213158,1051027,Brown Moonlight,0.89%
+213158,1372000,Fairy Wand,0.89%
+213158,1372012,Crystal Wand,0.89%
+235714,1002141,Red Matty,0.99%
+235714,1002142,Blue Matty,0.99%
+235714,1002143,Green Matty,0.99%
+235714,1002144,Brown Matty,0.99%
+235714,1002145,Dark Matty,0.99%
+235714,1072089,Purple Salt Shoes,0.99%
+235714,1072090,Red Salt Shoes,0.99%
+235714,1072091,Black Salt Shoes,0.99%
+235714,1082054,Red Noel,0.99%
+235714,1082055,Blue Noel,0.99%
+235714,1082056,Dark Noel,0.99%
+235714,1382018,Petal Staff,0.99%
+253030,1041051,Red Amoria Top,1.06%
+253030,1041052,Blue Amoria Top,1.06%
+253030,1041053,Black Amoria Top,1.06%
+253030,1050002,Blood Chaos Robe,1.06%
+253030,1050029,Dark Chaos Robe,1.06%
+253030,1050030,Blue Chaos Robe,1.06%
+253030,1050031,White Chaos Robe,1.06%
+253030,1061047,Red Amoria Skirt,1.06%
+253030,1061048,Blue Amoria Skirt,1.06%
+253030,1061049,Black Amoria Skirt,1.06%
+253030,1092029,Esther Shield,1.06%
+253030,1372001,Wizard Wand,1.06%
+283333,1072169,Blue Snowshoes,1.19%
+283333,1092021,Mystic Shield,1.19%

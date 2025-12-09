@@ -1,0 +1,30 @@
+{
+  "itemId": 1102003,
+  "itemName": "White Napoleon",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 100110,
+      "mobName": "Bob",
+      "chineseMobName": "嫩寶",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8645263,
+      "mobName": "Turbo Robo",
+      "chineseMobName": null,
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0,
+      "displayChance": "0.000%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

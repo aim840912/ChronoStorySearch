@@ -1,0 +1,30 @@
+{
+  "itemId": 1052116,
+  "itemName": "Green Plasteer",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 5100000,
+      "mobName": "Jr. Yeti",
+      "chineseMobName": "小雪球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9300038,
+      "mobName": "Ghost Pixie",
+      "chineseMobName": "鬼精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

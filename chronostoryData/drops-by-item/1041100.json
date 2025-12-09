@@ -1,0 +1,19 @@
+{
+  "itemId": 1041100,
+  "itemName": "Purple Mystique",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5130108,
+      "mobName": "Miner Zombie",
+      "chineseMobName": "礦山殭屍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

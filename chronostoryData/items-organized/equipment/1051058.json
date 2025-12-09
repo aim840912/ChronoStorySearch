@@ -1,0 +1,62 @@
+{
+  "id": 1051058,
+  "description": {
+    "id": 1051058,
+    "name": "Dark Enigma",
+    "description": "",
+    "chineseName": "黑神仙之服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 78,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADG0lEQVR4nJVWgZGjMAwUM98AXwIpgZRASgglQAmhhFAClBBaoIS4hFDCUYJfK1tgE8jlNZPBYYRWu14L/tDnsP6afJn3MfcTmK2qShZ939sPeZTn+bI2xtgjwCMwe7vdZDFNE706oozr1X1FXdXTZIhaU1Ge9lycmxkNXa/XXwEPmaHbcRxpGAYu9CBKc+ruI03zi0xqGLQUcDMblJemsiyT3xHgIRgnQz5h1aN9jiyrqR8c4yvXnOdZQApmPXJOURTR898ws4/HQxghxkn2TNZzta7RP5hf85lljBWRZlhWrhGx+82NVLdEVTHLuulTKa73GV6BUNCCZQj4DTORIE1T/ZtwQe/GiMWbAaCGGmuP3RZMJIQ8Xi4t+PGccWP2Xs2erYs9diGYAOnGghkbYPdQo3j4fwuE0DohOwWz9ufOh6pkVpW4DD848dxEoNLEz4ulmho5bzBQw0Ddze1jyEj38I1Z8reR66vrpQC8WLau+NbS53MTFGRmNwdon3wjm6QR+KiZrgKIBnDuAGargkiPxaleO3lwkUuLqzsGYHIxGT2f9zdmT1YhOSNrbeTVDVT2K1NhBubokJXjEcTAfIUXzwyc4kBldyprQ/fCgV7KkeV2OSlPDD7a0mS+GHht/NWZBVDACi7IDS+A5ItoAAjsyhbzj+dg7sGCHKijW6Q1NDDCID/AEu7Awgzt4B+YFzc6ObucAUmYQcbBYA/H8CyS+gLPL7dnJ3MkowLCUXho9DZWQDCT3RhjZuhYB3DdurdDOwSUPJAffUl4zhK27u57C8zUECGzrVSn2gGCTR0cBzqYIDLjYFXtWgP7pQZRZgqCPCiggBoh0B7YbmwNssdMJfdnKgL5LzAFUoOA2TRlu7kB4K8vz0hCteypzIQRgBCO2SrXVvKj+IoZioGNAmHdTtkbiEp5xC6a+spKvyOC7wkp7mKSdThwNW/LbgsYMXtUhr+ijB9P8UNayOU40Ga40VFUhZHJ5Gdt9IqRWIdw4yc4Bu6wDNw4hyv8YFTo6FiHtZ4zH7syRs7hCW7DCb6Xx6+lTx+vb9b/B5c/4+MNyXt6AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAdCAYAAABbjRdIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADRElEQVR4nJVWgZGjMAwUM9cAXwIpgZTAlRBKMCWEEkIJUEJogRLiEkIJRwm8VrbAJpDLaYbBIbJWu5YEX/TeZn9PPvR76/sObDbGyKLruvmNH+V5vqyttfMR4BHYfL1eZTGOIz1boozjVZ2h1nQ0WqLGGsrTjoNzMoOly+XyK+AhM2Q7DAP1fc+B7kRpTu1toHF6kk0tg5YCbieL8JJUlmVyHQEegrEz5BNWHdJny7KKut4xvnDMaZoEpGDWA/sURRHt/4TZfL/fhRFsGOXMZD2ZdY38wfySTyxjrIgkw7JyjIjdb9VIVUNkiknWdZdKcH3O8AqEgDNYhoCfMBMJ0jTVnwkH9NUYsXgpAKihhbXHbgsmEkIeL5cGfNtnnNh8M5Nn62yPXQgmQHqwYMYFsNvUCB7+3gLBNE7ITsHm+efGTVUyKyNVhguVeK4jUEni58lSjbX0GwqoZqD26s4xZKRn+MIs+VfL/dl2EgC1WDYu+Lakz+c6CMjMrg5wfvCDbJREUEf1eBFAJIC+A9hsCiJti1O1ZnLnIN8N7q4NwOTbZvR43F6YPViF5AyvNZFn21PZrUyFGZgjQ1aORxAD8x21eGbgFA2V3aisLN0KB/pdDiy380l5YnBrS5L5UsBr4s/WLoACVnBATngBJB9EDUBgVzaYfzwHcw8W+EAdPSKNoYYRBvkBlnAGM4qh6f2GaalGJ2ebMyAJM8jYW5zhEPYiaV1g//J4cjJHMiogKgqbBl/GCghmchpDzAwZ6wCuGvd2aPqAkgfyoy8J+yzh0t19b4GZFkTIbCvVqXKAYFMF7UAHE0RmHEpVs1bDeWmBKDMFgR8UUEC1EGgPbNe2BbLHTCX3PRWB/AlMgbRAwGwcs13fAPDXl2ckoZbsqcyEEYBgjtkq11byI/uIGYKBjQJh3YzZC4hKecQumvrKSr8jgu8JCe5slHU4cNVvy24LGDG7G8tfUdaPp3iTBnI+DrTur3RkprAymfysjV4xYusQrv0Ex8Dtl4Eb+3CEH4wKHR3rsNY+81aSO+BUwbDrRO47BuuMJ/gtnOCBdbrg15KhY8PmaEqGzMKZDadq8+yTgNt1dH0Ff4yb4HtA6TbbHZA9ULH/kBn028XXdeAAAAAASUVORK5CYII=",
+    "price": 160000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 235,
+    "reqLUK": 80,
+    "reqPOP": 20,
+    "reqJob": 2,
+    "reqLevelEquip": 78,
+    "tuc": 10,
+    "incINT": 6,
+    "incLUK": 2,
+    "incMMP": 35,
+    "incPDD": 68,
+    "incMDD": 34
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 6,
+      "min": 0,
+      "max": 14
+    },
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 10
+    },
+    "incMMP": {
+      "base": 35,
+      "min": 0,
+      "max": 113
+    },
+    "incPDD": {
+      "base": 68,
+      "min": 0,
+      "max": 146
+    },
+    "incMDD": {
+      "base": 34,
+      "min": 0,
+      "max": 112
+    }
+  }
+}

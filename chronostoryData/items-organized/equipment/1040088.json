@@ -1,0 +1,49 @@
+{
+  "id": 1040088,
+  "description": {
+    "id": 1040088,
+    "name": "Oaker Shouldermail",
+    "description": "",
+    "chineseName": "褐板金鎧甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEKUlEQVR4nKVXjZGrIBDezKQBW+BKICV4JWgJpoRYgpYQSwglxBJCCaGERwm+/RYwEM3Nu3nc3Ogp7Pezy+IdaX8sH54f6PP49Zp3cAlwvQ7yh7OWnHPkvJe/rXXLh2DL/X6TuWlgLcY4mURqsy4HXxKoUqqcxUEtB1MV3/qtQgArpXfVXToSUma2G+IJfHk+GFT3NM+3iOdW5QLMhDw7cKkVP/OktaY5vgdwIuycpbpuo3qimYKgpqYNgZfy6snAYeE0DQWw1glQwXqe8wK+P54CLGQjcC6ghqBIgBO3sX15Pp8v5tn7qoLV7DWnHMC4BmBHePzb0fDaXP0xWZWuzgXV3hu+VnS9P+j79MUvd8kzoS9e81xj5KqJWLUdNoWbK1+tSnlW2rD1im73uzjy/FPWWF7VbftNj8cXrx+yvLtY7Y3UUSWFqkgrpLEEPxwOtCxLGwuEAvDtvubyfbgsN13X0ek0MYFeakXeRwEY0xjmae1oCo82BScEkFaqSuAcaG9gXtM0TMAIgVVABK3rRuJMxhbAOfg6cZ7NBnhPfW5xxb4mAuTD3O4yFPN/2mpS8QADeD4QvOv6cJ+ZgELKBwjU2PuzE2CQw/4vndtutQhiV4VJdQI+nbKOF5XdbsgxCqrsbACcxn5Vjhhj36MzEn2w/fD93S5on/n+TcDDMBTtE8TatmUC2BUkBJwtVYFA2lkV/3BjpNn5Dx2O6GN15+0zjeF6KwgklQGNW7ELnRAtGeB2J+7ukZosl3R5tyGVp4g7cvkubyTSEWuug5ljgEKpvqx2FAxfz6yIt6/c54BrzAiA3TGNhvNrpRTAQae0KRSokyC1DgQqyemLXAGOoDVv9pmv0+T/uX+P/f5z1JCSQ8nKFQdXPsqcs3Jr5zCRm0IXj813gvIrO8JJUaW0pCsczHeOHL+wHmrYERutL8BRsVqFiQkoBXgfPsst7uXYtV4IzDachpxfGholxzIsRz0g9zbuu7XJXLgFVXgRJ9Z8j2KxXMop30l1OqV87G5QakWhikoVdzMhfOhHs1z5c0aec8zcyVU5gL3zEszGCbheeOF4PlNzuQiYgEdgDAGOXzriEBS68ujEGqTSznAWW9aJ9Ss4gDHBmHkNpKV5oF121PdlVYEkAtmU0+iYxIGDWVWL5TbMM3HbwfpjslyKjV/oyBD5quy8EhhYedivKly1CkDRKRUVw0Fjg+Uv5WXRpYZzTJbLGYycRGAs5rwtaA06s1a+6Wq9KrEuPsf3HorQ+gI4KFdxXogfHLMB3EfGUCxt9NVQDhOOQX6OogkfkwEQ134qT0D68A+Cg3IFy03RLTPl4cFOD5aA53GK31KBmKHS2p+GqoJj6HTGmFVg+IC0Llri0h7cC/pPQHvrQPw2XEQ5Dpt+kj4iTSZY+/8gPxJo+1Ewcsf+Anf6Jv3Qwc/cAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEX0lEQVR4nJVXgZGjMAxUZq4BvgRfCU4JpAQogSshlAAlhBLiEkIJcQlxCe8SeK1sExvIz79/bkzA1mpXsuT/ouOxfHh/os/jv/dswcXA7TbID2ctOefIeS+/rXXLB2PL43GXtWlgL8Y4meTUbl8OviRQpVS5io1aNqYqfvR7hgBWSh+yu3YkTpnZ7hxP4MvryaC6p3m+Rzy3MhdgdsizAtda8TtPWmua43cAJ4eds1TXbWRPNFMg1NS0c+DNvHoxcNg4TUMBrHUCVJCe17yBH8+XAIuzETgnUINQdIADt5N9eb1eb8+z71UFqVlrDjmAMQdgR3j9v6PhvTn7ryRVmp0LrL03PFd0ezzpcv7mj4fOs0PfvOe12shZEzFrO+wSN2e+SpXirLRh6RXdHw9R5PW7zLE8q9v2Qs/nN+8fsri7mO2N5FEliapIK4SxBD+dTrQsSxsThALw/bHGcjtcFpuu6+h8ntiBXnJFvkcCGNMY1mntaAqvdgknDiCsVJXAOdDRwLqmadgBIw6sBCJoXTdiZzK2AM7B14XzbHbAR+xziSvWNTlAPqztrkOx/m9HTTIeYADPB4x3XR+eMxGQSPmAAzXO/uwEGM7h/JfK7Y9aBLErw8Q6AZ/PWcWLzO53xBgJVVY2AE5jvzKHjbHvURmJPsh+ulzaBeUzP78JeBiGonzCsbZt2QGcChIHnC1ZwYF0sir+x4WRZuc/VDiij9mdl880htu9cCCxDGhcil2ohCjJALcHdg9bapJcwuXdzqk8RFyRy295IZGKWHMezGwDLpTsy2xHwvD8w4z4+MpzDrjajAA4HdNoOL5WUgE+6BQ2hQR1YqTWwYFKYvp2rgCH0ZoP+8zzNPl/rt9jf/weOaSkKVmZ0bjyUcacmVs7h4VcFLrYNrcOyp+cCCdJlcKSZiiYnxxpv5AebFgRG6UvwJGxWoWFCSgZ2A6fxRbP0natFwdmG7ohx5eGRklbhuTIB8TexnO3Fpkrl6AKH+LCmp+RLJZTOcU7sU5dysfqBqZWGKrIVHE1E4dP/WiWG19n5D3bzJVcmQPYOy/GbFyA+cobx58faq5XARPwCIwhwPGmIwqBoStbJ/YglHaGsjiyTqRfwQGMBcbMqyEtxQPlsqO+L7MKTsKQTTGNiokdKJhltUhuwzoTjx2k/0qSS7LxBx09RLwqO68ODMw8nFcVZq0CUFRKRcZQ0Ngg+Zt5mXSp4HwlyaUHIyYRGJs5bgtKg86klTtdrVcm1sX3uO8hCa3s/QWzb+Yqrgv2g2I2gPvoMRhLGQ0Jhs2/ptn+RhlD0oTLZADE3E9lB+RxiXPRbRyYK0huimqZMQ8vshqsogO4B1c/43QLr0MymnCpGzfgh5d3VQXFUOmMMSvBcIG0Lkri0hm8RPDUTaoItK15/1IDe3Z8uA9XYY5m009SR6TInKZww0jjnBn1G0Pb35++bZ/PbT8+8SMqVjSWvMlXVDI6Yld2iM/O5b93/1f7A22FMd6gwSZyAAAAAElFTkSuQmCC",
+    "price": 75000,
+    "reqSTR": 180,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incSTR": 1,
+    "incDEX": 3,
+    "incPDD": 55
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 55,
+      "min": 30,
+      "max": 80
+    }
+  }
+}

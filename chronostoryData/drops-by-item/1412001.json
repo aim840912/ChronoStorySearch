@@ -1,0 +1,19 @@
+{
+  "itemId": 1412001,
+  "itemName": "Metal Axe",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 210100,
+      "mobName": "Slime",
+      "chineseMobName": "綠水靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

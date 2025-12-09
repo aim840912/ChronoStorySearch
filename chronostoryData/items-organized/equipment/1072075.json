@@ -1,0 +1,49 @@
+{
+  "id": 1072075,
+  "description": {
+    "id": 1072075,
+    "name": "Red Magicshoes",
+    "description": "",
+    "chineseName": "紅魔法鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAcCAYAAAB75n/uAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC90lEQVR4nJVWi5WjMAwU710DTgm+ErgSvCWQEtgSSAlQwqaEuIS4hKOEdQlxCdxI/vAJZHN6j+XnzEijsdhf9H5Mm/vqnR+9QyDAjVo/tKEQviR6RSAAX8ZQCJ68HPNLJlQ4rl7WHZIcEUwZmA/nccbDTFAn8BDox9gjKOBbYM3A6ayVphFrWv26ii3BCnw8AFY4pBKcRqz7rwraWw20O3XhAg2u8iyMsYyPgaQXWnmAG3onlgQTAmgX8p9/0iNdXure0N/mKmQfnyjNOyFRIGvo2FXrCgAeIKjS0Hccy2MPGQwK0qYlVV/p3pFUwyQsGfwlJHuu2hCwJEYIDA7vXMy+riMR3ztNuvN0R/vPw7rh7Kpt05cEVfU7TI8bg7YR2Mw6h9RMPruLItPjegjSkywVE2xJtk2uTmcmucI17Qo4X3sgaNYCFdy/FJ3RD64vS7XdG3v7QEimWwRUjZPGWmSrIVsNuQopnMV4Y2o4XsREQtzp3PjDUeGshQxYqdDYpkcTTzRakv5kmep6fyszDctkxxezSDIdnYCTP6XtrIpM7KzU+5T1LCWbm6tFaccEbFPeqWzdklmShnsgztJ8P1fB0uTsP6ysrXZn0eOmkGsjtmTfB4gJxSSr2GASq4Z5q4ibKIHn7DlWO1n+fCvyA3SmuAeCjVY1tU9AMWOVxkf+TPBjk8Bz9kuCiYEzoDbziMjBzZVzsa2T3awW0jjPjZ3BM4FIwsAMwoNS7JkAw2Za8r3IY0OZsDx1ebWNxT3PIoUZ4y9uzjKNiXy/nUvNqFbZ0wH4LJHqkdUJ2rsyHvI5iB2jHy063XSqfIGYgOvrTdH9KZigQkzTowPJVUj2gsd12yiRJmfPkFzjsqn7FfCi3wPdv0Hy1c/eTx8cuXTxukiTwFtkb+3xV60Q3LpGSAINMsRKJDlk/tMz+KvslwTV6WKnR9/IzfnTrhYtJ06XLMzN/gl8VUEmmW4dKugicLJodtECtPyGfoin70F1HiZ6HW/9y5jjH9K/uFrM1g1aAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADK0lEQVR4nJ2WjbGqMBCFl5nbQCwhlsAtIZYAJWAJWAKUoCWYEkwJjxJMCaYE3u7mh4CAvrczmUCEfDmbk8Uf+LcYF/fFty9+C2JAJeaD2iXwR+AnEE90VQqcs2C5TT8SWGC7WX5uF7YHGiOAmrHY42AElQHiHHwVW6AEWQIkAUIvhYQBn2nkZ1VroBlk2AAIbKwMuwGf+y9Fzb3EWR/Qugvm5sZjbvCyTj3wXklhEaLg21iCRgyc9QL2/BuGZPpRdgr+VDeGns4o1RqGCYRWsO/Cd0UIcZhwITH/w5CGLaZHoUCpGhDlDR4tsDqCUSrRjwzbcuEKiFKlGKSwWWO8mrL0QLo3EmRr4YE2qfu5MciFa+ZYgori6MbXnSZvPEBN++DCplNvLgJUh9e94z2LKSTQGmzNDMWhJtgNXdbMAPHa4kyScoSKHlcBNe4X6Y0pXDtbW+eIYePdTywqwwbQuHqJ6SwxjQmOTqR5h2AM/MEvyPnKEQxS7JYgozWmB98QaICqw80+wKCB9y+mryzXSwPhKH162FfEwSsfDEPAHkJ5ECl95MTgkaBiSjEdClKPUj+DyN508snyaaUhZbRH7ERJ95MqSllUc9L87KYZKNAMAtdesZ3p3DhMNmaSV+mNAGxxNx01dh8ESK5mDcQne3wKsD3uA/gz5LS3uCptmNArEKEsxc8UDasAydUsQSMB4sRSSVgGmYD7ZHfD1UFkKTOWDDCH5CBOFQFoMirMbOswsVtUZ7rntGmXKjpVeXpae7HbtU5gDbMXM606lJ94v6x71SBmamAHMgOB6HCVB9wbk8pO7B3b2PtYoyOqVqQvIYFIb6fSvqxGBBUY4/hqEXZj2FrQZ6KpBKcsqqGpSfNy87cV0cPHHh5PhF276eyEDx9fGn+dUhYgDarRHpT/T5qVjBno3lYMc9BzsUwR0sTfH3iHBDUnbLFOuKznFkH07vFw0c9XV/FAfdYz6fny2mB9MkWAXDJI/gr/r6H2EyAiLLBG2H28t6io9U8Ha0fXZZPH6GGesuW6OHJFMc5F3V9hP2LxyydcXs/aTyYvh/3Ce8StWYbbuU/XfwHvZtCjeGokHQAAAABJRU5ErkJggg==",
+    "price": 14000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 85,
+    "reqLUK": 30,
+    "reqJob": 2,
+    "reqLevelEquip": 30,
+    "tuc": 5,
+    "incINT": 1,
+    "incPDD": 11,
+    "incMDD": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incPDD": {
+      "base": 11,
+      "min": 0,
+      "max": 26
+    },
+    "incMDD": {
+      "base": 5,
+      "min": 0,
+      "max": 20
+    }
+  }
+}

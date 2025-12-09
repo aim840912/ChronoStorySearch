@@ -1,0 +1,19 @@
+{
+  "itemId": 1092006,
+  "itemName": "Mithril Buckler",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 7130102,
+      "mobName": "Yeti and Pepe",
+      "chineseMobName": "雪吉拉戰車",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

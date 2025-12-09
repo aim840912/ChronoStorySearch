@@ -1,0 +1,43 @@
+{
+  "id": 1060057,
+  "description": {
+    "id": 1060057,
+    "name": "Dark Hunter's Pants",
+    "description": "",
+    "chineseName": "黑遊俠之褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAcCAYAAACK7SRjAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACDElEQVR4nK1WgXGDMAwUd12AjgAjOCOwghkhK5ARwgjpCLACI8AIYYQwgutXI9c2hpJrdOdzAOktveV3Pihthl63LH6RAnfAeZ7zgC3LEswbccECycyrqnLAMVi8CGYZRzJnR8l463tqPgwuC/jZp0B2aEqDC+A8z1QURXIBf4YPfA+BwxmGAD8o5hl+GC/RItlLRhj+HgAMmy4LpzY+BW601gEtfifIrJRyi4nvcw7acZX5rZkot8EMNi009DPVrQNGoEFFtxueLSXTxD6VLujzFGa/Av8azkQD0WSDbI48uqbnBfwE2vb8fFI0zRP1/D3c1BU4aEFmAActfe+Apdzs8zSb+107qqQB4LsLHhv4jYPEZMNfasV32QpcSjxqQuFf4GYcR/7hl3i5XDDFcpqVZWl5vwfJdF1HdV27dnwLLVsitwKXg3PEfL/Upgq4QUnvtn/TEld6vV6xT8y7A5dD4ysignCobJ/HV5hpmoaGYVj5+9Q4cBwWfJC2Eqet1oQ/wPb8Hbgvo/41t7W5eC/quKfnpmssLU/NTpWXMp9rmSXmMUIhZ8OZQy61AiXaOUp5je4pJS2KWiqqMUgGMXgPKQ5o4QBbZkG1e4ZOD2nN4oRy1dqYzmp6yeoMf4kTcJZQaLExNV8Ui6cVkdyKcczDqkWufmN+LgxHp2tFDs6yPvU3LqO0uaS2/L8BUECDbohM2R4AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQklEQVR4nLVVi5GjMAwVM2mALQFK8JbAlQAl5EogJYQSkhKgBUqAEuISlhJ8fqzlFY6dJZmcZjzmI+lJz7J0oLQYel6y1I8UkAfJ83xdkGVZNnvCLgqWzKiqKg8SOg4BsfNKSRIIRpxJ6n9sfwmIwWRWMYe/gTwEYudaayqKIgomd+hA92kgGEJgLB2E5wI9rJep46w4Uix5ZnCMguEgYkXzG5Cp63pDnawo3pVSHph13R4t8WhGl3am3DpaHc8LjYOmpvMgcGKQ6eWCd0vbPK86VV3Qx2c8qyjQdTwSjUSzdWBjX1ffDiuYDKbrju5N0axnGtb/8YKIAoE6RAwgUDcMHoQpyT4+tbnd6u+sXVFAoLsbKBScR8oBF8vL5f1uiQIxDXuFaX4GyEzTtD5IGk6nE7awZLOyLO053TaB9X1PTdPclfjbqHvUgJNAfEn3iNR7VBASyCDt/yVvoS5k4Hw+41w357QB4gsqOzcc4ALbexQesGnblsZxvNOP0bcBwsWEEpcqG6TKHfpwvEd/AyRbvxzlqcLAd+7ie+eR6VtLnZs5DyjY1LA8G97Z5mtCJ9eebp8RWnytQFvtjZiCth7ItTolgRR1VFTTJjDY4DvGhwhuuas6UFFQ498xZ8afflpJXQSXq87a9HYmlWsY0Gc7J0DUB4dY2jRvmCXGNOvQW0TvciPiGlB3tTbHL9uxcvVj8z38PIiPmDOCgz/Ys2yI3doTxeWvdXqJDDv4WuQ6uActoi2DyFlypxtKGbwvsed/lseQpqTD3cwAAAAASUVORK5CYII=",
+    "price": 22000,
+    "reqSTR": 0,
+    "reqDEX": 100,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incDEX": 1,
+    "incPDD": 21
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incPDD": {
+      "base": 21,
+      "min": 6,
+      "max": 36
+    }
+  }
+}

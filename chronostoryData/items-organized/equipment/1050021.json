@@ -1,0 +1,55 @@
+{
+  "id": 1050021,
+  "description": {
+    "id": 1050021,
+    "name": "Blue Crusader Chainmail",
+    "description": "",
+    "chineseName": "藍十字鎖子甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAfCAYAAAAWRbZDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADaElEQVR4nJVX4bWzIAxNz3kL8EbwG8GOoCPYEdoR2hF0BB2hjqAj1BUYoYzglwSCINjzmv4QFbjcy02kP3Aca9A+/aHPp34cR2Crur8BtAYwBsxcr7lOqnlF92Y8S78saA7MAvFoA4V5QNE0iKuhLEtYloWvo7kCFIVdkOurqskubrmsOcA8M5lAKdDQ4j0C4sSfgBgMF8a3kI8sWImDlvJpJ0PA11ShRB38G1+gaaYECFmrEe5tD+M48sIej0fCbg+2TtPEAxY32fs5WqAFpS12zB2QbRoe16DkXdf9jRkN6PsBehjw7m7VbBC0+XVADmfx6sFtLFleAqLx1+sVBVHUjtglYDRID6weRgeqtBOHYUx8VbYz3G43EGUE+IiZl/BhXn6m91QDIBjtVzawX1PMqKxd0TzPDETA+4iYERC7bQahBlbKLqSRUCQgMgWlB10JsO97BsS2lzICkzzC1n7xBzf2vigLN84u+H6/s0kI+JAZvRyGwbuOnKiHDs4zSiiExBWhIksFTUnXEplYJ4orHUNmJ2C8X7Q6zbnlJtNdng1LaVz2Grb9MBfcpjfCjJTixe+ZEYi4CmshuvAJv5cnTM0FpqqGenyG2vlFmOiZ4nkIiJgREKUBXZHISmArURUJ6SV1ptJDK7sMVtOqtDaWvdkwAjjXFtsLMyl1P7JXdCOO4oFFDzNLWiE7srFGdj3fh0BGuTzTD3l6qut6bds2Kt4iI78kdlym8IX/dGBGv9szJzXnWQGbQVhxhT+7ZyUulECd1aM0iJgRoHOMjbDQEsBOOTaIdycmihrYFGHFCPPOmeQUWl9q2CqA77bDIhxUD2YUoARB+1xVXuKTq/rR3Mffs11CbowKW+k9lm2QsUiyzOJ9HJ9BREYB8XNr2JA2diRVwCwbebBILv8wh8HmoN9+z/4OJoByMSZ5bsFjZmTz78GIVabgJm2yvKLkrbzNvwfzsa+NWz0MQyqFS97Ds2NyBvHHODKIeCT+xiSTEKOwBsIX58Y0otxSnl2BElLVIBfKFzqpnQdg2ymYE/oMGrcg/pal7NzBxgN+ipiZ5BZe/SHHpLLx4+VGm4VdDQKVDBSw/HgiXrn47iZOcGwegFAlydwn6YRVfpUqf8TQM8M/BdGLX9+/hoPglaMpiMWKtTB5t4//eII71HKJJ08AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAYAAADjaQM7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADi0lEQVR4nJVXgZGrIBDdzFwDXAn+EkgJWoIpISlBS9AStIRYgpYQW6CEUIJ/d2EJKN7ckbkRFHi8x9uF+4LzskX1yy/6/NSPyxnYppo3gDEA1oJdqi3XSdWvpG2nq/TLgubAHBCPtlDYFoq6RlwDWmtY15Wfk70DFIVbkO+rytktbr1tOcA8M5lAKTDQYRsBceKfgBgMF8ZNyJcsmMZBq366yRDwNZcoUQ//phcYmukAhKzVBE03wDRNvLC2bQ/s9mDbPM88YPWTvZ+TA1pR2mLH3AO5quVxNUre9/3vmNGAYRhhgBFbjVOzRtD62wN5nDWoB49Js7wEROPv9zsKoqiesDuA0SAzsnpYelDaTRwXa9Oncp3h8XiAKCPAZ8yChK19hZnecwWAYLRf2YL96mJBZd2KlmVhIALel4QZAbHbFhBq4KTsYxoHigREpqDwoCcBDsPAgFgPUiZgEkdY2y/+pOHahS78OLfgpmnYJAR8yow+juMYXEdONGMP1wUlFELiiliRtYRa01MjE+dEcaVnyOwEjPeLVmc4tvxkps+zYSmtj17Lth+Xguv0RZiRUrz4PTMCEVdhLkQXPuH79oS5vsFcVlBNz1i7sAibvFM8DwERMwKiMKAnEtkIbCOqIiF9pM6Uemhlt9FpWmpnY9mbD0YE5+tie2Emqe5L9ooa4igeWAywsKQlsiMbG2Q3cDsGssrHmWnl7aWqqq3ruiR5i4z8kdhxmsIP4ejAiH53Vw5qjrMCPgZhxRX+3J5pXCiBeqsnYZAwI0DvGFfiREsAO+XYIMGdGChqZFPEGSOOO2+SS2x9yWGbAL67HpNwlD2YUYQSFdrnsgwSX3zWT+Y+P892AflhVLhMH7BchYxFkmUWH8r5HURkFJAwt4EP0ocdSRUxy5Y8WCJXeJnDYHPQb79nvwcTQHlYe3jvwFNmZPO/gxGrTMI91MnyioK3DDb/O1go+9z4yYdxkUzhg/f07ni4g4RrHBlEPJKeMYdJiFGcA+EP98ZjSWJLBXYFSkhZg1woJ7Rnlw3G5FoQbsEc0FcwuAXpWXZk5y82AdAXDal3+S9lJrGFz3DJsUfZ+PX6oM3CrhaBNANFLPFqDG0ERBObcHhy8t1NfMCxMtZRJcn8kdRjlm8ky5+5MjDDfwqSD9+hfwUnhc8UNAXez6HBXBh/u0WsDjJe/HLjtLFPIfJuz/eaeZe173+NTE1B3iPyHQAAAABJRU5ErkJggg==",
+    "price": 37500,
+    "reqSTR": 110,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 35,
+    "tuc": 10,
+    "incDEX": 4,
+    "incMHP": 5,
+    "incPDD": 60,
+    "incMDD": 20
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 4,
+      "min": 0,
+      "max": 11
+    },
+    "incMHP": {
+      "base": 5,
+      "min": 0,
+      "max": 40
+    },
+    "incPDD": {
+      "base": 60,
+      "min": 25,
+      "max": 95
+    },
+    "incMDD": {
+      "base": 20,
+      "min": 0,
+      "max": 55
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "itemId": 2040343,
+  "itemName": "Scroll for Accessory for DEX 100%",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 5130107,
+      "mobName": "Coolie Zombie",
+      "chineseMobName": "殭屍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6230601,
+      "mobName": "Dark Drake",
+      "chineseMobName": "黑龍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7130102,
+      "mobName": "Yeti and Pepe",
+      "chineseMobName": "雪吉拉戰車",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": 1082103,
+  "description": {
+    "id": 1082103,
+    "name": "Bronze Husk",
+    "description": "",
+    "chineseName": "青銅暗影手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACS0lEQVR4nK2WgZGrIBRFycw2YAtuCW4JbglagilBSpASviWEFizh24IlfEpwueiDB0vyTcydcdaAcriX55v9EO/Remf8kht8B3Ttuk6UZekuqKoqMc+zaNuWNhPBz0I9UGst+r53gxbm7m+3m1iWRUgpVw5+V7weCJd0DyA0DEMEPgP1LkkUKwcigaZpIvApp8YYtzjAOSAEYDp2GkrgR6J5JDOO4/oqdEVcvFqv16u751XMN4MUaPwVqDtLEsWKMUCmafr1AtLgZ/8M1H1zdV27xXEBhELBguQK8wAXReEuAFMdhWYbwL1IaRMAAszHH0F/tTVbAK7sSY8izbkDkDaQQh1sHfbd7S+XHe6F+PyS/kG+AR4pF0XMNy6S73Rd/9mFjBTLuMP6/bf9OSshbk14uJVSUOQ8UnIFtzjvRFFHcsBFyRi2SAdLhbWHSghpd46PnxcM7ndHHpIqODUbcLYLlsxds6eoZQBi/cnsYOsG8VKMu7ssjEO9y5k1FnJIsMr2cH0NwKaMFwL0CDA4NQHY/BlcrFw5IKqfGg6L9L/AAE3EzxHxklsOhPAX6cuDDiPoYu4/gDk6x2h8CfBntTnV+cl7LgHU9upPQblMOM80AWPCOZ6Rg7ZjqEYOwtnyaPFVUDH1dT72w9C/fSG+1Pa2/o4/h7Ri1RTPq8354SLyUPTY2roYukIobdx5cdVxS/Uxv+KSoJdPtTX6zv37sTkHvG8Kt6ExKTQVb+oplwT1L6ZwANE0cJaItg3wp0E5aLQYwRVv9vN5GOkHqLZ+iOMA/K4AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACgklEQVR4nK2WgZGjMAxFtTPXAC2QEtgSuBKgBFICLgFKOEoIJVxKOFqghHMJrL9AWPY6WXaJZjwxtvHT/xae/KLXxPJg/C01+Aro0jQN5XnODVEUBU3TRHVdSzIB/Cx0B47jSG3b8qCDcf92u9E8z2SMWTT4VfbuQKiUPoCIrusC8BnorlJCbNVAOFBVVQA+pdRay5sDnAIiAIzHTkMF/CxkHs4Mw7D8FLrALl2t1+uV+7qKdTJwQcZ/AuWzlBBbMQbI/X7/9ALc0Gf/HSh/c2VZ8uZoAKFQsKGowjzAWZZxAzCOo9DkBfDIUkkCQID1+DPop2vNFQCXvcQzS1PqAJQEYijDlm7Lbns5b9AnurybfaFOQFuqQyzWiVP0nS7Lf7eRNTQPG6zdnt3j1BPdKr+4NobEcm2pqIJanHcUwY3EwLk3IWw2DIsDe3cFkXGZ4+PXBYP+pmiHxOGV2hU4uQ1zpa7aXByNB2L/u93ATg3sFRs3dUmYhu4qJ3WxiEKBFe4OH68eWOXhRoAeAXql1gOrPx3bqiMFRPXLhaMs/RLooVHoc4S9olYDEfiF++agwgA628cLMCfnGIzPHv7dWJWO6clHKgEcXWtPQXVYf56xA9b6czwTDK0HX40ahLPV1uKrkGJqy7Tth6H/2oze+/Xt8Xf4OcQV29/D+X5VfriIdiju2NKp6JqM+tHyeekowyt1t1mpjFaEy1PQt0u/XvQN//1YlQPeVhknNESF1odJOW+o+AJoVdsLie2J4QDi0sBZwtraw/WNXD5SFAHnrVldvbDo4lru4H95Z731+kdvUGuPRDKR+JORzWrVPwKwT/pxC6BigYakgBmlFdgnz8HcB8xFmH9AlKyCAAAAAElFTkSuQmCC",
+    "price": 150000,
+    "reqSTR": 240,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 70,
+    "tuc": 5,
+    "incSTR": 2,
+    "incPDD": 27
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incPDD": {
+      "base": 27,
+      "min": 0,
+      "max": 62
+    }
+  }
+}

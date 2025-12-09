@@ -1,0 +1,19 @@
+{
+  "itemId": 1062002,
+  "itemName": "Brown Hard Leather Pants",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 1210100,
+      "mobName": "Pig",
+      "chineseMobName": "肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

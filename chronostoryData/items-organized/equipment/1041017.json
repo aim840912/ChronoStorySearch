@@ -1,0 +1,49 @@
+{
+  "id": 1041017,
+  "description": {
+    "id": 1041017,
+    "name": "Purple Arianne",
+    "description": "",
+    "chineseName": "紫錦絲緊身衣"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 13,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABEAAAATCAYAAAB2pebxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABSklEQVR4nI2UgXWEIAyG43sukBVcwRVc4ToCHaEd4W6EY4S6giOUFbJCRqD8KIoIdw3Ph8HwmT9Be2qbr6x1tcAWxH+ZH1qWJTqqQreboYf98DVQDeKf91+y1u4A2DxbArgGasqZpilmIrpmA4CIVGOrEFWlYRiChBthwAfAhYt5DL47ZVNC/DiYEyw3xhrmAtSXAMjA5vR2WJqR2TwHX90J1JcAyEhZjOMY79N81GoFXeQYY4jD/q0Z4U1cK1dcTyANAkPhPSCxpTwkxe8N2QIEmRJoRWE5wP4HIkGt9JATW7qnz6QvOOJkL7pSAXGLNOuQLO9ayuKAgKjXc3GBYIhGgNIZ0ln76Y150jvLAQzZuZwUgA5hUENVfL4VfgVmcvagDcANirKeToGTB6b9xHbz8h1/QpClL85LkJ67l2+n24Jqf7TLxtz+AAYIzQVjwRfZAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABpElEQVR4nK2VjXGEIBCF15lrgBZswRauhUsJpISkhFwJoYTYgiXEFraFLcHwUAye/F6yDoOg8PEei16oHEukr6PGKIGWN/1F0zS5hgjT7abpbl6WVlgOtHx+fJMxZocgxtEQ4K2wonXX69UpYllVAcLM1BpZkIhQ3/fWrhvhQhuQ2RalBtueq1WlQMvQ6wMwDIU+1A2wGMhBYBkAXgXC11A4jrYtczXsEbRDYJlXMwyDu/c1Yt27FVYTJ0Vaa1KWsSWZXbGKDkS/h4k10yZLVlUIcumser8D5YBqwGApb2etBhSu1wLrYMTYu/K7B5BL590qRZIZzzPviSL0BGieOLkv4XseUqPmDMLK5HxuTiBcLA4i1A7qjHldtP4sDgohCha3WucnQebhooSD7vmWLCu0yIlnnYeoBEmUHE7AzHdUTV+Gbpze3Y8OFuYssTYfxlEhYoq6baLYn7Vp8hLoqYn+AvrXqAUpao/DBj+C1EOd6quFiC8epBIlBY1NGutHwSnjSzBpH9TPKknCQ0Wpl3LfF8ncH8qFfuWVLEr9EXML2+9/AOXa5vS9MIs3AAAAAElFTkSuQmCC",
+    "price": 2000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 40,
+    "reqLUK": 15,
+    "reqJob": 2,
+    "reqLevelEquip": 13,
+    "tuc": 7,
+    "incINT": 1,
+    "incPDD": 12,
+    "incMDD": 8
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 1,
+      "min": 0,
+      "max": 2
+    },
+    "incPDD": {
+      "base": 12,
+      "min": 5,
+      "max": 19
+    },
+    "incMDD": {
+      "base": 8,
+      "min": 1,
+      "max": 15
+    }
+  }
+}

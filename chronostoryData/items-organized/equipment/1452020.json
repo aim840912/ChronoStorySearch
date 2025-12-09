@@ -1,0 +1,45 @@
+{
+  "id": 1452020,
+  "description": {
+    "id": 1452020,
+    "name": "Golden Nisrock",
+    "description": "",
+    "chineseName": "金色雷鳥弓"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACaklEQVR4nL3YDXWDMBAA4Mt7NRAkZBKohCGBSaAWJqGT0FhAQiuhSBgSiITsLn+Evy2swL3X0gXIfZDk4O0E6aETjmHwj0hFaE2E1n4UfrILNnYVAC+x8d0KGIuhyaAUhNbf+P2wf3iAyZJJ/JYBo/XdHVTTPg/6E5N0J9gbQHezvz3A6ujqLUZ3IznBCPOm/sSkDgfD5JM5QYDuKYALOxyU1IdqFbZz0N8cmoeCc3/+BJOCYNHWdHTHu5IL/MEdYCZ5i8MmQJk2gcd2bqSywvQxgKxaHdfrFTsUUHx8OEhrAJSYkuZlhVsJTa2gxPlKbeN44nnurgTIGgQ0TYMdt1BVFRQXaa6ObnX+zjGjAvkpTXJMAp+1COddy6HmhtMFTw+QNQhW17UuMQvnHGibFbW5MvllrxyNdLvNsUr1iRFkhjFuiyGEmIxRFON1HyAUtD1fatOhS+6PGwQm920hlwOYttN4ZwygmU3jTRFPKISAh7gOZ5PPXFB8TICdbLY7LrciPkjTeOMaD2fQRCyiZUqQUWdrAHGwMCeouPgqRwA/tn4/AahyqkcoWKll+TeAicHEdFc7AQD0gLll9wqgR7hik/erahFw/prsfwngEYyGwdR6GCwd29POAI+YBFVGKkpSyt0BiwgfVBkzt/72AgwR0UOIyrMPqgfRctwcMEREMZN0bSF6DSHy5MSbACaIZl0N2AQQIxi9htETUUFybAKIESGignUIYIKglxN6as69/ewFmCD8Y/uX2BwwRjB6Z/AvpEcBxogAed6OA8whTIjh5NwVsIg4ErCEYO59Eo4ALCF88pR/BWwSP0xsINsYyeKEAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACrElEQVR4nL2Xi5GDIBCGl5k0gCV4JSQlnCWYEkwLKSFXQmzBEpISYgmXEkIJ3C6wiIqKedzO+ELk/2CXFTaQbjqhjoAnLBVCa0K420PhkR2w8FEByBILvy2BECFoMlAKhNa/eL7aBwYwKlmN59rDaH1xlRp6x0CLMEkjIb4AHmd7zwCWjnpvYfRjQE5gBPOlFmFS3SFQfBQTBPC45SBz6w4SZVN3heUS9K+E9qpg130/gkmBEMHVNHTBUdnmeCMdQET8jm7LQZmyHOs+nKeywrTRA1k1O06nEzaYQ7HfO5C7ASBhEt2WFV5raBsFJcYrlQ3tht+5UfEgayCgbVts+A5VVUFxqE3vaKi33xIVFdTH2oijCByb3H93Kvs0ZwwX/NyDrIEQTdPoElWklEDXrGhMz+of23NkpOE2dZXqhBHIuDEsC0EIYuSjwIbz3oOQ0XV3aEyDTpzr9QzFucxrOQBTthm+DAEossnfZGFAIQgwiGswKh7pUFjHg22s2gWnWxFW0uRvnOP+CwrEIpimBDJobA1AaMLHBCUXznIEwL7l9wRAmVNdfcJKTctzAMZ6gel6OwIA6ABi0+4VgA7CJZttN6smAXY/o/cvATCEIDeYXA+9qWNb+jAAQ4yMMiMlpbquPw4wCcFGmTFz8+9TAH2I4CdE6ZmN8kEwHd8O0IcILCK6NhG9BpFvk4XfAjCCaNflgLcAhBCClmH0R1SQbG8BCCG8BQnrXwBGELQ4ob9mbPXzKYARBP+2Z+ztAEMIQWsGXpAuAMgntCZ7OIwJA3I7+2cWo10F7j4gD8rWgKjgqmAAFE1WeRecdHfDYw+81+uLx0CmeszibjPZ1Vta6BLAEZ4fgSWwSYgMXcKbun1EdK5BNXM/PGYhqEIGNg74TxbrvZwAUjPP0Q78AccTOw7M5+VfAAAAAElFTkSuQmCC",
+    "price": 450000,
+    "reqSTR": 105,
+    "reqDEX": 265,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 100,
+    "tuc": 7,
+    "incPAD": 95,
+    "incJump": 3,
+    "attack": 3,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Bow"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 95,
+      "min": 90,
+      "max": 100
+    },
+    "incJump": {
+      "base": 3,
+      "min": 0,
+      "max": 6
+    }
+  }
+}

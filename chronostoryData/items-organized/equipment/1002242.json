@@ -1,0 +1,55 @@
+{
+  "id": 1002242,
+  "description": {
+    "id": 1002242,
+    "name": "Red Seraphis",
+    "description": "",
+    "chineseName": "紅和平之帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAfCAYAAABplKSyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADHUlEQVR4nK2Xj7GbMAzGlbu3gFfwG4GOQEbgjZCMUEaAEcIIZYQyQhmhXsEjuP5siwgwOGmrHEfAQvpZ/0g+6P+IK6xfzhb/BWJx/FBqt2jF99Za1s3CvAuxOP6ZHKscgLVkxHWXdBLMDuRVCFdyLAXrVQYIMDmQVyBcyTkc5UD4rBOIWoMQw5QgFoCcU5WB47UtmPYHR+SGaxGVYiRMMsCGcw7N5hlNx6ISgPHPclTOIByUbHJSCecAkTtlpwwzS4dUliMIh7bTdFwHfH8Lw7nH3RlrhSI+gigC5GAYSOYeYQcIzqwVIpvA23je1cQKgNvr9ivt1l8MXyob4i0wR4Pzz/EaaVWk+e7IAmgUce+fbKnuLE2tWulzFM6En0jFuABsIRyP3zkZ1Dc/csyU0Fua8FWn+1j3F2M7koxBqRBlV9BRJLD7umvIGBOOaLVf9eE8zyFaWK88EMPw80diRUSkfGyVGg8wYctwBghYFVHg3VAqOIYFDM52Ok9LTlYQMASAUA9wYhTdr5a+P1Ia/HG/xmKDeE1/7wkDUbU6BZHdsYVwIf3e0DhFYw3FLqi9Z9tHJQyhRj0NVF5nNmuY0CWhlNaOtlidh22nzdh+/CC6fjPBeZW6o01hz8kj5abCKPcfm2Dq9PrUdWxN2EVKv67xvor0u0g45zpvoV2I7+asvKJIHQDFFlU0zXapnQCA9tY9dY+W+uE5N2RKYiR84cFm7Y2MBzs/m50tCpLiDMBnNNJGHzbIzOx8iC+YpUUvl09yv33x9Wnsvup8q9emGYDNBGdI0RAjXNcUIpGTpSamSVOjTSi0dwG2IJDGwwxfFCYsBDWhhF4O4nIfjUPFzua9Pud3xBYcaUXEb2n34ecAPd8ntKuJJFXlB46d/ETMO8uJLdyrfJVi6EmT48m7I4xfyEy7Lnrb+TupXEHwuJYgKmPwKGE5xzpFQtqls1/beun3GK5Z/M+ohSP5A6UEA5txzNsswA4iI8sD0wFQTkbx3awHX/kfWAhdripPgAq6rmBzDwFBh5CojRLQK1KyKSEun/fh9I/rX8hLNv8AWs+o2fjQauQAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADVUlEQVR4nK2Xi5GjMAxAlZltwFuCUwJbAikhKSEp4VwClJCUsJRwlHCUsG7BJXCWLRFhBCRzpwwD2EZ61g/yAf9Hxp35w9bkv0BMhu/GLCaDuHYh8FoV5l2IyfBvMmw0gBDAi/uG1hDMAuRViHHPsBScrxQghNFAXoEY94yjIQ2Ez5ZAzBwEGGYPYgLQjBoFjudKMBsP9sgV74VXdj3hSQEr1gz64hkL62IIwMdn2StbECMuCmSkEsYRRO6UjTLMIA3CvqxBjFh2FtbzgMdLGI49jg44t5PEaxC7ABoMA8nYo9sRBM+8KnmWwF0+L3JiBsDldf1Du403j4tRXVwCszc4/uyvDmZJqleHCmAxidv4pIO6CdA7M1vPXtgSfoKScQIoIUZuvwMptNfYcnxP6A56vLQ0jvPxpnMdSB/sJaKsCljzBO6+bs7gvU9H1trO6nAYhuQtnK8iEMPw82sShEekfJSLzhGgxy2jMYRArcILvBughGNYhMFz6LfDoskMAhUhQMoHNOIN3E4Bft0pDPG4nXKyocSVcewJg2Jqswkiq6OEGFP4o6Kuz8rOkKugjpZDmxdhEzqbp4Iqrhn8HCZVSUqluaESq4mwri/a9v0b4PTlk/GKqsOR2zW5U2wqbOXxFwimptenrXNpol4M6eWUx02mX3hiHMcmanAT8c1vpVcWuQaBcoka6Icw5U4CwPK2LTR3B+3j2TdkSLInYuKhzjoq6VZ2vtU7HSYk5B6Av85LHW3aIDOz8Ud+wUwlejgcYfyJyddS233VeLnOUQ/AzSRjGKJH9nBdQ/KEJlNO9L2Fs/Up0d4FKEFQzhHmcYHUYVEwJ4xYp0Ecbp0fMWMH/16d8zuiBMewosevtPv0OQDP9wkscoKkqmLDCX3siLoxTcLOWBWzFJueVNltvDtS+0UZYFFFbxt/J5QzCG7XEsQoCtcCphm25AmpF7a+tu1U79ldg/ifUQtD8gNlDwZ15jYfVIAFhCKfrDf66EcD0qQT137e+I6wzOWlJ4ZnVlp4bhyPmwBqduAdnZtCJ0bY0zGBLDyBFQI5NxiC+5cs85W2k2Tx2SB0qiIhDsfbg3PgC9ZDv9VIQnF9iTq/hc4gDhUigdC5LAot/IvYrkB+bswl+QsWJrlmfNhDdgAAAABJRU5ErkJggg==",
+    "price": 50000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 188,
+    "reqLUK": 63,
+    "reqJob": 2,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incINT": 2,
+    "incLUK": 2,
+    "incPDD": 30,
+    "incMDD": 60
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 30,
+      "min": 0,
+      "max": 60
+    },
+    "incMDD": {
+      "base": 60,
+      "min": 30,
+      "max": 90
+    }
+  }
+}

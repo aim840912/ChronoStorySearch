@@ -1,0 +1,19 @@
+{
+  "itemId": 1402002,
+  "itemName": "Scimitar",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5300001,
+      "mobName": "Dark Leatty",
+      "chineseMobName": "黑利堤",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

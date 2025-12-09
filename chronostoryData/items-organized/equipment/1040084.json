@@ -1,0 +1,50 @@
+{
+  "id": 1040084,
+  "description": {
+    "id": 1040084,
+    "name": "Dark Shadow",
+    "description": "",
+    "chineseName": "黑暗之影"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAbCAYAAABr/T8RAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB/UlEQVR4nKVWC7ECMQy8zpwBLIAEkAAWkAAWkIAF0IIEkAAWkNDXvWHzcrmk18fbGaZH22Sz6SftuxjZ6UtdHc02HvFgfL/fu8fjMXSwvV6vOXAkNnr++/3uTqeTa2OJszZWhBMSDdpYO+B8PrvkmnhCSsLFYtF5gCJLejwe5f96ve4ijBSD4Ha7CSkJQeDh+XzKOEkPh4PYUrmnmsSDWpB6qmBILJfLod3v90JItYQl95SLYqb19XqJc03KPjjb7XahjZ5bgxBfLheJvKRFSPitgX4E5dm0QogRNZ0wYrTst2owz7PxoJdhQuwByrA+UBftbA9/SnW0cxmAB88G665PxCyxl445eDZQawP6zHMvkFTO4OhG0unyUo0l0JdFREr/tqN3BrN37iy5Xv8In7HmIiHnkk5b1h9zavNaiFNxkD0nDers/7CMRscpFdUZqrUiXhytwdQwe469VgfhBfNvYpJx/fA9l4FviEfHCTtWk5JMtzY4py98CklZLPgdSb97gir1cWpRinHtEycFF0kpp0Nd7klKsugMa2Kbept2klqfaFH3N5tN7hkNo8P3arWakPJbtzVYn7TjY2N0V2MCiz/q63a7DVNty6UH7RM//WAIdzWfLyD3Um2Vf3NzpZLarF+LGvod1qBSdmXk8/NSSVKdsOA1R1+g6vMHn6TKW6Ca0jkAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACPUlEQVR4nKVWgXGDMAyEOxagI5ARkhHCCoyQrMAIrJCs0oyQjBBWYATXz/GuELJx07/jbGxLL8mW5aqIwxljZZFGtoxFPAs/n8/i9XrNA2zv97uLKAoycv00TUXf96aMJnZSWBBuSCQoo+WAYRhMckm8ISVhXdeFBXikSa/Xa/g/Ho9FDCuPQfB4PAIpCUFg4f1+h3mSXi6XIEvPLa9JPHsLUssrCBJN08xt13WBkN4SmtzyPHjMsI7jGJRLUo5BWdu2URm5NoVAfLvdguU+LIGEfQmMwyhLJheBGFZTCS1Gy3HtDdZZMhbkNmyILcAz7A+8i51sC38Kdezk0gALlgz2XWbELrEVjj1YMvBWG7SsMy+Q0ufg6kaS4bJCjS2Ql0WMlPr1QGVMOivvNLnc/xiWuewiEfKSSnP2H2tS63KIS6/AWUoyvNP/0TIaS6fSe+3gtfSIF0euMSns5rHVSiMsY/5NTDLuH/p7EfiEeJVOOLGSlGSy1cYZY9GnUCiLHr8z5e+ZoJcynXI8xbzUiUzBReLL6VyXK5KSLJbDkliHXoedpFonWtT90+nkKlpD69A/HA4bUvZlm4LWSTk+NlZ3NRaw+KO+ns/naKh1ubQgdeKTD4boqebzBeRWqLXnn9xcpQ+tk69FCfkOy/CyZcfr/LZ0Li+VMlQnbLihqPMfK4MsT1axhbvyZPZe52CsW6UT8LUobETLfoxsD/1iEL5x+QpNrJXrDUtt4JTo629DTKv2QlpHjEgZuln/AyfB3xPV4WnfAAAAAElFTkSuQmCC",
+    "price": 45000,
+    "reqSTR": 0,
+    "reqDEX": 80,
+    "reqINT": 0,
+    "reqLUK": 110,
+    "reqPOP": 20,
+    "reqJob": 8,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incLUK": 3,
+    "incMMP": 10,
+    "incPDD": 34
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 30
+    },
+    "incPDD": {
+      "base": 34,
+      "min": 14,
+      "max": 54
+    }
+  }
+}

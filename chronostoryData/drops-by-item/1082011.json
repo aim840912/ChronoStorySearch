@@ -1,0 +1,30 @@
+{
+  "itemId": 1082011,
+  "itemName": "Gold Brist",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 4230105,
+      "mobName": "Nependeath",
+      "chineseMobName": "食人花",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5300100,
+      "mobName": "Malady",
+      "chineseMobName": "巫婆",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

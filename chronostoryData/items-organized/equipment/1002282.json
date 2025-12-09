@@ -1,0 +1,55 @@
+{
+  "id": 1002282,
+  "description": {
+    "id": 1002282,
+    "name": "Blue Nightfox",
+    "description": "",
+    "chineseName": "藍天空之帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAYAAAAAwr0iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACrklEQVR4nL1WAZWrMBAM750BLFAJfAlUAhaKBCwUCSChSCgSioRiAQm5TGDSJQTKv3e9eY+D5DY7s5vdpF/q/6EP2ERHnR0V4EjTNFVxHK8MxnF0333fS5G7Yt4J0D7pFjnmh2Gw4yRJnJ0QExSyJ0BvEYMQj3Gu4vLxWpGa/w09/oi5xCw2T1fpkIgtAXpW7yayLHPkQ1ZPoszUWP1br87rWenwemdlUERIgI38drvZlOKBkKZpFtHaSNtC1XVtxS1ti0kEIqeADRFfIfLr9apOp5ObBMnlclGNF+39flfn83kx52whAoRyOwJYZQDkdKq1VlEUqaIoLBnE4RskKDRphwzhf7QFmqYyNZBPjvt2Kk7jYy7MyBegkUrfKYH55/OpHo+HrYMQubRFFkgMhLpnlYE8z1VZltaB7xRRYYwoOA7ZAchQ27b2jZrgQ6QiCxSgoZiGWCidYlxVlSWXWfHtJLm0BSEejJE9BsEMWHJUcNd1dhJj7iPmFw7nPcW3bwdIW7zZGRDAViaP2wJMWAdonaFbRIl5R26qOjYCbAvGyVRkAtIWb56IPLQAzuMxvBoCIrNwOi4NeWxIxiSb2oiIUysuTlLX/4QUK/dYFh2+OWamOGYNoCW0SqYUgUgFDp3XdbMPRouUMwPyjehnm2h5DpgMKEYJdHN0Y78w22opH9xrZGQLSwEmAyNSzyp11ZrYfpYXk7x+twT5+087uVYKiEyata1yeYYTKL75UPFJpcM9IbTbEjCJ6FtNQieEmM92CKETWWDvREjBXB+6DaebikLCcLeZcaRD2yEPG4IdMNuv7oJNkjdY2EEQ3vLo3Vvzkx+lRwRpZEC2n4xa4hMCLNjrocr/EwEAyCFCHMmHfpL9qgD5DmXhowIIUZB/VwMeNjvqUwIiXLXvyIFvHWLQmQjJ2jIAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC60lEQVR4nL1WgbGjIBDFmd8ALZgSvBJMCbkSkhK8Er4lxBJiCbGEWEJswRI4HvLISsB4N3O3MwRYl31vlwXypf5czA6bYq+zvQQCaFVVSmv9ZjDPcxiP4yhJbpL5RMDEoDlw6KdpcvOyLIOdIJMkskXA5IABiGadK908Xisq+20a8SN0pV1s29CaFIkcAePZB0Vd1wF8qq8LKaua2x/vq09Xz3R69XWTJJEi4CK/3W4upWgg0nXdKloXaX9R1+vVkVvbXhYSiJwEMiS+UuDf39/qcDgEJUDO57Pqomjv97s6Ho8rXbAFCQDK7UjIWwYATqfGGFUUhbpcLg4M5DAGCApN2iFD+EZbSNe1tgZOi+OxX4rT+vCFWcQEDFIZO6VA/3w+1ePxcHWQApe2yAKBIanT85aB0+mkmqZxDmKniApzRMF5yg6CDPV973rUBBulElkgAQPGNMRC6RTztm0duMxKbCfBpS0A0TBH9hgEM+DAUcHDMDgl5txH6FcO/Z5iHNtBpC16ngwQ4FEmTtgCKJwDHJ1pWEUJfQC3Va0tAXcEdbkUmRBpi543Ii8tCPVoFteAQGEXLtelBdcWZC7r5RhRdOXI6bIK558iyco9lkWHMefMFOesARwJo8olRQBSiUvn9dxsC6NFypkB2SN6b1Os7wGbAcUoIYOPbh5XZrkjFQv3GhnJyZqAzcCM1LNKQ7WW7jzLh0k+vzlC8f7TTq6VBAqbZuOqXN7hFBSfv1RiUOlwiwjtcgQWEmNvCBiIUPzdDiJ0IgvsEwlJmOtTr+HyUpFIWsJrZh2Z1HbIy4bCE+Dt396CLMgHWdmBEHp59W6t+Zs/pXsIGWRAHj8ZtZR/QcAJz3qq8v8LAQjAQUJcybv+ku3yvZeA7FNZ+ERAR31OtymiIA9+XWCSI6AzLUdGSmqzf3k97uTJtzlHgGCl6CXYnshb+w40HG8ZbmWAEke0de/Kbz8jfdyyBPBxUp9TvdrLDYLzxjf1G8N/5o/jegsqAAAAAElFTkSuQmCC",
+    "price": 85000,
+    "reqSTR": 0,
+    "reqDEX": 110,
+    "reqINT": 0,
+    "reqLUK": 200,
+    "reqJob": 8,
+    "reqLevelEquip": 70,
+    "tuc": 7,
+    "incSTR": 1,
+    "incLUK": 3,
+    "incMMP": 15,
+    "incPDD": 45
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incMMP": {
+      "base": 15,
+      "min": 0,
+      "max": 50
+    },
+    "incPDD": {
+      "base": 45,
+      "min": 10,
+      "max": 80
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": 1061025,
+  "description": {
+    "id": 1061025,
+    "name": "Red Shivermail Skirt",
+    "description": "",
+    "chineseName": "紅硬皮裙"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 20,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAARCAYAAAAougcOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABs0lEQVR4nJ1Vi3GDMAwVd1mAjOCMYEagI6QjwAjNCHQEMkIyQhgBjxCPgEdwJfkDODhpojvjD/J7erIwO8ibhfet2Fp8RgLTdIeypJHApsEYwGZAKwUKG5nGuUCn0+85i5MjsX3fgdYamKNkdMCnI/GNjcbYkX/bnuyWmqySoxAM4MLV3JUaoxcSpNFQl46Qo8A5DPotJXa6XQDUwCClrJFE8ZiaQJIwDkpCNx4lVFf1oGZbiQdhEp8iVkIH5A4pt22TKCWx06UHE1QsAOM8KAiofi19lVNip66JBBFAq1kduHOhFJrh+m81u0enmYAiT/PPigJxRk2qKJA4FYtD3Eq9MRARBFYflTgTa7Pyp/JeqiESOzb1vME4p+Oyihbr0n+QxqOWSGaUjoFRE1guSs9ErKQ6D7yBFsMXrNWckmpYpIeGPuqxlu6cNg69RWJQc7piqXl5zhbyu6bh3l8dBSLb7qfB4JKrZE2ULeHwwt76fg4eVUkpV440J59wh9H867tdgedIogncRNWlBpfKBKDAub3fxxjEM3t6C78yCoKC+ZSkOByq9H+SpqHY7w+vfNj+AGCzKwMspo5aAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB+ElEQVR4nKWVgXWDIBCGz/dcgIxARsAR7AjpCDpCO0I6ghkhGSGOEEYII8gI9A4EkYjW5t67AHLcdz8QLSFvBvZbkZtYA8EwPIEx6nF0BVoDugYlJUh0MoVjjkHfP5fVCnIg03VnUEqB5TBLAPx1oNGtUR8bim/bb5NTlVV04twmcWUr2zCFKrgAoRXUzEFtJTiGXu1WZIb7FUD2NhETNYKk7ZNzBPm+V+Sbx0lAdZOLqpYVjYksCCAkZXRg7tByy7KwFGSGawfaq4mShrFX4jOPz9KpNUVmODcBEpIoOakEd060nbq/7VJVvgZOEFKQnodV5uEZVUvKPMipiQ526Si0hpCF462k62/hSs/i6eqnqghkHk09LdIu8BTfrui5GP+0eszMEKilCsWRc7xCUs1hVlF16e0imvD/dCWn7an6aKuoO1b/qIU7t4WL0CIcomUlRAc20p1FW3FuGtuOr5kCs5vzV4MFJq+dOWz1evtJc++6SQSqE0LMAmlMMf6dR+OPz/YFkAMF47iQbp3s3bYmSQocm+fzEQrZshLeMCqECnoHVByPVfo9SrekOByOWzGboNVFO2M2QbEx2G+zO5iCWNLmnv0Vor17EMt4DrqUdOk5OX0RVRkl5VH7XyVZeKwoF7TylZnNpf2ZlzDJ29oiloGuFRb6vxd4RO9LDUOaAAAAAElFTkSuQmCC",
+    "price": 4500,
+    "reqSTR": 0,
+    "reqDEX": 65,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 20,
+    "tuc": 7,
+    "incMHP": 5,
+    "incPDD": 15
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incMHP": {
+      "base": 5,
+      "min": 0,
+      "max": 15
+    },
+    "incPDD": {
+      "base": 15,
+      "min": 5,
+      "max": 25
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 1040072,
+  "itemName": "Red Legolier",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 4230107,
+      "mobName": "Flyeye",
+      "chineseMobName": "獨眼蝙蝠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

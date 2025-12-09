@@ -1,0 +1,19 @@
+{
+  "itemId": 4161021,
+  "itemName": "[Storybook] Formula for Black Cloud",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 7130000,
+      "mobName": "Lucida",
+      "chineseMobName": "黑格里芬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

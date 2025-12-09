@@ -1,0 +1,30 @@
+{
+  "itemId": 1072125,
+  "itemName": "Purple Steel-Tip Boots",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 4130100,
+      "mobName": "Copper Drake",
+      "chineseMobName": "土龍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6230300,
+      "mobName": "Lazy Buffy",
+      "chineseMobName": "小丑瑞奇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": 1092037,
+  "description": {
+    "id": 1092037,
+    "name": "Violet Hoflon",
+    "description": "",
+    "chineseName": "紫色斯巴達盾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAfCAYAAAAWRbZDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEq0lEQVR4nJVXgXGrOhC8zLwG9EogJYgScAlKCVAClIBKQCWYEkwJVglWCaEE/90TYHDsP3mXSTIG6fb29u4k/5GH3eWnfci/21s/f/Yv22qQoigkpaSf/dTc94tXM9gz/wxE11rj8N7ogxk/tDiP9xVMrmeRMQxircVvIdMkCni/cnctZTk9op25Psnf8sjgBh9TFAkBUMZIAV/0kVKUcyvy5Rcw+JdyamQoLhJjkqqyCth1g/R9I9drjVXD4rbRv9/fmf3MhZKBfHBSAKiqKvjBgzkzgzvZmH2UyMH9ro66U35DhrQVUJYNEoOUp1ou50lZ0qemXIEKZZUAEsHoestgH393YNSqOwU4DeJAIk5kOINdjvrrq90lrIVTkc/TXsNK8xvnmFMIsLYewVrk1DjVEbplMFc3CkAWtJQySN1HFMzi0FjZm8lBS1Ig0eA0yc0EZngOppBJ2Trnj5rxD7UKYdyAKjfs3PuFJRiP4/b0+zrJbFrspURRhsECMOeWQNSvsv5Zs0I1KyanOV8ZYcuWvq4LiAlg+DT0yAhJFQPSaBf2SFdsNqDzNcqcAiv3tWa2CqisXo6WFMghwik6BSpsBUZ26aifxtQ9NJOjZka+4XCt1nnRqDg4sKieNCekicyyrtZ4ZbeswL4l6dBsNFkaW3wdNaPA6/RY2mNjRb24puuM9A4FgIptOrbHJH1LiGYHKAe9WNGt26VRe+lSYJOXANppbZ7NWrBHaGEWP8JBzKy4jJONgcxgvK9YZqDuvTj020EzzEAkV1QzMXRUv9aBjwHEidD5DMbipX7Fk3j90mdN1yLV6aEZZ6MRd9DsaB6zE86T0XWtG6VGaljh03MSFmt8pQ1OzVzx1GchxDeaZSOQ935LX/ua/GY6SaCbzsqfs5FN0zxpljZWfc8IWgU8o/THLNvm6NkY8Pn2yz7jNNjLMIMZAXtHllkrmnNmYXJsk6F9zEaE9gBj+phbasZiMRJk32POBjCpNcUxOR1XfW+0XXgGFgXpWQQ4bhKsmlm+S7umzrRzn5FlmLyWtPoQbSSUBQLQc2oEOGZkN6Ox380P2YAYDI+bjRn7pq4JcFXAumoxcL3cbkFM0SvgjM3TNGNNhbKfFGhlxZmoftDAHMKsWBYH37vqhJS7DexjjP4ewkXqIejhuB41Wbe0RWs55JDeCk44+O2uOJjCByuOMy+milJ+5rOMOFsaqcfY1XDQI9qo7D7LRm5XnAR2yAxTpy3QL+lbWRHowapSVp1HkXU8UP0WxAr2wZtUi3tGYUsA3vQh9dsD0tjM61h6BirwedXJmJMO49X/HmwD5MWmv2Dw4n/AqbsCflM/XtN2NfEMREbDBYfp1OmYWlhtV7492AZYNNSvQdEE7SkG8PcTt6xL0qrNQOs1IANdhhEaVXrbItCYjkCvwHRBE073lAY07C2PHWhIhuWp+bHYLoxGXpI8JsZsXwK9AzukVFuhPulllYwjGzuudwyTj370Jc83Hitr5b1y+g5sB8hKzaAWPWPnm0RM7hlXKD2ByxYgZl91b78f/B+YbnTO3f2Y09cqaMIQyLfdcXK/AvktGJp33JzsvmgcApJf2n+UxqUukoafsgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAfCAYAAAAWRbZDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE0UlEQVR4nJVWgXWzPAxU3+sC7gh0BDMCGcEdAUaAEfAIeIQyQhghjBCPEI+Q/04GQkj63v+pjyYBo9PpJNmf8rC7vNqH/Lv96edz/7CtBimKQmKM+ttPzX2/eDWDd9JrILrWGofnRm8k/NHmNN5XMLn8ioxhEGstrkKmSRTwfuHbtZTl9Ig2cX2Ur/KZwRU+plkkBEAZIwV80UeMs/y2Ij9+AYN/KadGhuIs8xylqqwCdt0gfd/I5VJj1bC4bfT/7ZbZJy6UDOSDkwJAVVXBD26kzAzuZGP2USIH97s66k75CRnSVkBZXpA5SHmq5fw7KUv61JQrUKGsIkBmMLpcM9jH1w6MWnWnAKdBHEjMExkmsMtR//y0u4S1cCryfdprWGl+5zTnFAKsrUewFjk1TnWEbhnM1Y0CkAUtxgxS9zMKZnForOzN5KAlKpBocJrkZgIz3AdTyKRsnfPPmvEftQph3IAqN+zc+4UlGI/jdvd2mSSZFu9SolmGwQIw55ZA1K+y/qhZoZoVk9Ocr4zwypa+rguICWD4NfTICEkVA9JoF/ZI19xsQL+XWVIMrNz3mtkqoLJ6ebaoQA4RTrNToMJWYGSXjno1pu6hmTxrZuQGh2u1pkWj4smBRfXEFJEmMsu6WuOV3bIC7y1Jh2ajydLY4udZMwq8To+lPTZW1Itrus5I71AAqNimY3tM0reEaHaA8qQXK7p1uzRqL50LvOQlgHZcm2ezFuwRWkjiRziYMysu42RjIAmM9xXLDNS9F4d+e9IMMxDJFdVMDB3V73XgbQBxInQ+g7F4qV9xEK9f+qzpWqQ6PjTjbDTinjR7No/ZCefR6LrWjVIjNazw6ZiExRpfaYNTM1cc+iyE+Q/NshHIe7+lr31PfjOdJNBNZ+XrbGTTNAfN4saq7xlBq4C/KP0xy7Y5OhoD/r3+zz7jNNjLkMCMgL0jy6wVzTmzMHluk6F9zEaE9gBj+phbasZiMRJk32POBjCpNcVzdDqu+t5ou3APLArSswhw3CRYNbN8FndNnWnnPiPLMHktafUh2kgoCwSg+9QIcMzILqGx/5ofsgExGG43GzP2TV0T4KKAddVi4Hq5XoOYolfAhJenKWFNhbKfFGhlxZmoftDAHMKsWBYHn7vqhJS7DexjnP09hLPUQ9DNcd1qsm5xi9ZyyCG9FZxw8NtdcTCFD1YcZ15MNUv5nfcy4mxppB5jV8NBj2hnZfddNnK9YCewQ2YYO22BfknfyopAD1aVsuo8iqzjhuq3IFawD56kWpwzClsC8Ko3qd8ekMZmXsfSEajA71UnY046jFf/e7ANkAeb/ozBi8+AXXcFvFE/HtN2NXEEIqPhjM106nRMLay2I98ebAMsGurXoGiC9hQD+PrGKesctWoz0HoMyEDnYYRGlZ62CDTGZ6B3YLSvJpxuMQ5o2GseO9CQDMtT87LYLoxGHpI8JkayKxDnBvOd1msPZnbXCQzPZKStUJ/0sErGMxt7Xs8YJm/96Evub9xWlsrDr+XIlS/mJ34egIrdJ9qp0fMBWRLUomdsusqMyZ1whNIduGwBYvZV5xcfL+P8yGy1dWHnnOv9mNPXKmjEEMin3XFye5DmAJCO1+fuQTwA6vdxHMst5Km5yKuVb1ikd9//A8x7ute8ZfiKAAAAAElFTkSuQmCC",
+    "price": 270000,
+    "reqSTR": 310,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 100,
+    "tuc": 7,
+    "incSTR": 3,
+    "incPDD": 74,
+    "incMDD": 25
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shield"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 13
+    },
+    "incPDD": {
+      "base": 74,
+      "min": 24,
+      "max": 124
+    },
+    "incMDD": {
+      "base": 25,
+      "min": 0,
+      "max": 75
+    }
+  }
+}

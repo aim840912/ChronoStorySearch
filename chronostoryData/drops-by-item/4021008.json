@@ -1,0 +1,19 @@
+{
+  "itemId": 4021008,
+  "itemName": "Black Crystal",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 8130100,
+      "mobName": "Jr. Balrog",
+      "chineseMobName": "巴洛古",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 9,
+      "displayChance": "9.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

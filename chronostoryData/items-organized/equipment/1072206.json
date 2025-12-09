@@ -1,0 +1,61 @@
+{
+  "id": 1072206,
+  "description": {
+    "id": 1072206,
+    "name": "Blue Neli Shoes",
+    "description": "",
+    "chineseName": "藍色艾倫鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACf0lEQVR4nJVVi5HrIAyUZ64BXIKvBKcEUkJeCU4JeSUkJcQlXEoIJRwlHCWYEjgkPhb4k5xmMgRsdlcrgT/gb+FW1pq9De8SEPB0nxdGBTBIgPZMzzZJXhEQsPsGsBpA67CoLYCx4f9zADiO2yR7BM7hNr0Ofj29FNbsESzAdVScwMUQnvfLLByff7wLniy5XyGg6jAKKEniCPsZRHAsZAKuwfG5iOuYjfRzN4R1HjWBw05JyhG8VsxDeaV9zCIB+67K6lczEBFERlXQT7iNkfh534L24MdHD09c1OE/CKRSJHTLoqY5xBpAAALdVraEOQqYeg3tTdLG50nBUUkv0M9FB1aNm0UO4AiUQCtreIGniyI7ERysBetXBZj8KidYPSyo0A1flE3y+nOU/lSrXKt/Ws4bIgnWEk95IiBbmsaP31CqFxXh/w4d8CO2jCkf4sueAH/pYCaCJoNHv9uz5LAzYefRuz4AIROpNhkb43nSMStVWEQFntUY37MG2oPM4GgNgXO1G2E1ddOiyKkGDruhPeINOgbwh7ek8wXEDuHWVDaReoP3yFhYtIxofnu7xDkQ+Awc1TObnlKRNVaPWeziJNOe06UE46knxan6VFQDX30CV9yJsk0LYKasBs82RfCfQZGFXHlNMIP7H1efy0id0s1EHHyUq+CJIIOLTkLXlY1vTFSL4H60de/zbFeiqAFuRkAkMfGeDmpNYdG76jPBj7zBQd+DQq46WlO2ZQm+pz4TYIGm69lvmEnWVE/XMW+kkx5uzU31iaDBqxX7fbqEr0X+sFRfp3x9UDPAS/CcAZE8bu5T3Bcv8I6heejzFLvgnIBeNuPZweto4A/xC2rfiszDSXw1AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACvklEQVR4nJWVC5GDMBCGl5kaCBKoBCohldCTQCX0JLQSioSrhEbCRUIjgUjgspt3CKWXmUxekG//3WXZwf/aXNlrPnnxUxABpnvcGAXAwAHaM51twrZABJh/AbQEkNJuSg2gtJ0/B4DjuA17B5pnfF3WIdfTpoEZeA20gEinwEPYYM/7paq5prIGqkK8q+5XsLdLOzLIYW6EzxQ5CAbcA0oInjO3j+q4Wc+D3a+1EjRjZnklCCkVpE0Yy3unygNMFi7UVBUxdxl3VkI/4esJzKz7FqSBHB89PHFT2jkwRAoyGDZc1zQHFyOwF4JsC3fZNRoy9RLaG6cXnycBR8GNoWbNOtBi3EwGC8EL/eWFy9JEmC6C3IwQ0Bq02WWgFjemoOpHhxbPww+p87HYj9xUCRFi+SV5fMHBMNZp1fAgclfTmPEXcjWsAH936BkzYooVluPDBoRdFtnnQU2AuHi058TKFNwZStfbC5FIKlRgYHuepFMpqq6jRIjWKZPrCtoDDxB0GUFS61ealgRZTQZ/MGP2tEes2KOFPIyrOhNozKjUZYX7SI3C+jRm++tF1QWnvV3cGggSAU5N4r4nF+QyLcdMTQ1ErmOnS35p0oIanyUUfAU/vYfkLquB5gyQWFpCgvsc5DUIcm1NSQmKENNTNSHclFldBKaQkb+FeFCAsI5D1+UfjlLOeoSYUevlVw8rbq4pCpbixQhT7v9grVdxbif/UhNAL36Dg7xbi1MVdGmhooB8oiaAMJDT9WxejLCaiukavw2qHLZKb6rxoAZLOn4v08X+tcIPrqhXoSxR0oCHtBB/tmnLykaodfpxm/fsvnw6yTBaS5EeH2Hx380g2ncPQov2ajy/YLvdkjkvLS9gFHLsOwfBjlH9cqOHpyOsrNcgWUsVrT20XqLzs3Ke9R1EeSmsZjVbgb4zLMz/AKjUpZXDd++PAAAAAElFTkSuQmCC",
+    "price": 120000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 278,
+    "reqLUK": 93,
+    "reqJob": 2,
+    "reqLevelEquip": 90,
+    "tuc": 5,
+    "incINT": 2,
+    "incLUK": 3,
+    "incMAD": 1,
+    "incPDD": 35,
+    "incMDD": 17
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incMAD": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 35,
+      "min": 0,
+      "max": 80
+    },
+    "incMDD": {
+      "base": 17,
+      "min": 0,
+      "max": 62
+    }
+  }
+}

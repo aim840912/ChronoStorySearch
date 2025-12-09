@@ -1,0 +1,19 @@
+{
+  "itemId": 1061087,
+  "itemName": "Ivory Shouldermail Pants",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 4230115,
+      "mobName": "Master Chronos",
+      "chineseMobName": "妖魔隊長",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 1200003,
+  "itemName": "Red Arrow for Bow",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5150003,
+      "mobName": "Hot Mixed Golem",
+      "chineseMobName": "火之混種石巨人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

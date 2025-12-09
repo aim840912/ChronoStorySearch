@@ -1,0 +1,19 @@
+{
+  "itemId": 1332056,
+  "itemName": "Maple Asura Dagger",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 6230300,
+      "mobName": "Lazy Buffy",
+      "chineseMobName": "小丑瑞奇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

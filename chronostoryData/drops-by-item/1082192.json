@@ -1,0 +1,30 @@
+{
+  "itemId": 1082192,
+  "itemName": "Brown Jeweled",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 3210800,
+      "mobName": "Lupin",
+      "chineseMobName": "猴子",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5400000,
+      "mobName": "Jr. Pepe",
+      "chineseMobName": "小企鵝王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

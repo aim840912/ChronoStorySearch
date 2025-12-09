@@ -1,0 +1,98 @@
+{
+  "mobId": 100110,
+  "mobName": "Bob",
+  "chineseMobName": "嫩寶",
+  "isBoss": true,
+  "inGame": true,
+  "totalDrops": 8,
+  "drops": [
+    {
+      "itemId": 0,
+      "itemName": "Meso",
+      "chineseItemName": null,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 400,
+      "maxQty": 600,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1102000,
+      "itemName": "Green Napoleon",
+      "chineseItemName": null,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1102001,
+      "itemName": "Blue Napoleon",
+      "chineseItemName": null,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1102002,
+      "itemName": "Red Napoleon",
+      "chineseItemName": null,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1102003,
+      "itemName": "White Napoleon",
+      "chineseItemName": null,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1102004,
+      "itemName": "Black Napoleon",
+      "chineseItemName": null,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1442023,
+      "itemName": "Maroon Mop",
+      "chineseItemName": null,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": false
+    },
+    {
+      "itemId": 1002391,
+      "itemName": "Green Bandana",
+      "chineseItemName": null,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    }
+  ]
+}

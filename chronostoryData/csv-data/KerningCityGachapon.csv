@@ -1,0 +1,242 @@
+Chance,ItemID,Description,Percent
+21429,1203013,Hwabi Throwing-Stars,0.07%
+26923,1203012,Ilbi Throwing-Stars,0.09%
+50000,1472053,Red Craven,0.16%
+50000,1332051,Gold Double Knife,0.16%
+50000,1332052,Blood Dagger,0.16%
+50000,1082135,Blue Anelin,0.16%
+50000,1082136,Green Anelin,0.16%
+50000,1082137,Red Anelin,0.16%
+50000,1082138,Dark Anelin,0.16%
+50000,1002380,Green Canal Hood,0.16%
+50000,1002381,Blue Canal Hood,0.16%
+50000,1002382,Red Canal Hood,0.16%
+50000,1002383,Dark Canal Hood,0.16%
+50000,1050096,Green Katinas,0.16%
+50000,1050097,Blue Katinas,0.16%
+50000,1050098,Red Katinas,0.16%
+50000,1050099,Dark Katinas,0.16%
+50000,1051090,Green Katte,0.16%
+50000,1051091,Blue Katte,0.16%
+50000,1051092,Red Katte,0.16%
+50000,1051093,Dark Katte,0.16%
+50000,1203010,Steely Throwing-Knives,0.16%
+50000,1072213,Green Katina Boots,0.16%
+50000,1072214,Blue Katina Boots,0.16%
+50000,1072215,Red Katina Boots,0.16%
+50000,1072216,Dark Katina Boots,0.16%
+61111,1060104,Green Osfa Pants,0.20%
+61111,1060105,Brown Osfa Pants,0.20%
+61111,1060106,Purple Osfa Pants,0.20%
+61111,1060107,Red Osfa Pants,0.20%
+61111,1061114,Green Osfa Pants,0.20%
+61111,1061115,Brown Osfa Pants,0.20%
+61111,1061116,Purple Osfa Pants,0.20%
+61111,1061117,Red Osfa Pants,0.20%
+61111,1472033,Casters,0.20%
+61111,1332026,Cursayer,0.20%
+61111,1332027,Varkit,0.20%
+61111,1082142,Green Mystra,0.20%
+61111,1082143,Purple Mystra,0.20%
+61111,1082144,Dark Mystra,0.20%
+61111,1002323,Green Osfa Hat,0.20%
+61111,1002324,Brown Osfa Hat,0.20%
+61111,1002325,Purple Osfa Hat,0.20%
+61111,1002326,Red Osfa Hat,0.20%
+61111,1203009,Persimmon,0.20%
+61111,1072192,Green Osfa Boots,0.20%
+61111,1072193,Brown Osfa Boots,0.20%
+61111,1072194,Purple Osfa Boots,0.20%
+61111,1072195,Red Osfa Boots,0.20%
+61111,1040115,Green Osfa Suit,0.20%
+61111,1040116,Brown Osfa Suit,0.20%
+61111,1040117,Purple Osfa Suit,0.20%
+61111,1040118,Red Osfa Suit,0.20%
+61111,1041115,Green Osfa Suit,0.20%
+61111,1041116,Brown Osfa Suit,0.20%
+61111,1041117,Purple Osfa Suit,0.20%
+61111,1041118,Red Osfa Suit,0.20%
+75000,1060097,Green Pirate Pants,0.25%
+75000,1060098,Red Pirate Pants,0.25%
+75000,1060099,Dark Pirate Pants,0.25%
+75000,1061104,Green Pirate Skirt,0.25%
+75000,1061105,Red Pirate Skirt,0.25%
+75000,1061106,Dark Pirate Skirt,0.25%
+75000,1472031,Black Mamba,0.25%
+75000,1332022,Angelic Betrayal,0.25%
+75000,1332023,Dragon's Tail,0.25%
+75000,1082118,Green Larceny,0.25%
+75000,1082119,Purple Larceny,0.25%
+75000,1082120,Blood Larceny,0.25%
+75000,1002327,Brown Pireta Hat,0.25%
+75000,1002328,Green Pireta Hat,0.25%
+75000,1002329,Red Pireta Hat,0.25%
+75000,1002330,Dark Pireta Hat,0.25%
+75000,1203008,Tobi Throwing-Stars,0.25%
+75000,1072172,Green Pirate Boots,0.25%
+75000,1072173,Red Pirate Boots,0.25%
+75000,1072174,Dark Pirate Boots,0.25%
+75000,1040108,Green Pirate Top,0.25%
+75000,1040109,Red Pirate Top,0.25%
+75000,1040110,Dark Pirate Top,0.25%
+75000,1041105,Green Pirate Blouse,0.25%
+75000,1041106,Red Pirate Blouse,0.25%
+75000,1041107,Dark Pirate Blouse,0.25%
+92857,1060093,Brown Studded Pants,0.30%
+92857,1060094,Blue Studded Pants,0.30%
+92857,1060095,Dark Studded Pants,0.30%
+92857,1061099,Purple Mystique Pants,0.30%
+92857,1061100,Blue Mystique Pants,0.30%
+92857,1061101,Pink Mystique Pants,0.30%
+92857,1061102,Red Mystique Pants,0.30%
+92857,1472026,Brown Scarab,0.30%
+92857,1472027,Green Scarab,0.30%
+92857,1472028,Blue Scarab,0.30%
+92857,1472029,Black Scarab,0.30%
+92857,1332018,Kandine,0.30%
+92857,1332019,Golden River,0.30%
+92857,1082095,Bronze Rover,0.30%
+92857,1082096,Silver Rover,0.30%
+92857,1082097,Gold Rover,0.30%
+92857,1002281,Brown Nightfox,0.30%
+92857,1002282,Blue Nightfox,0.30%
+92857,1002283,Purple Nightfox,0.30%
+92857,1002284,White Nightfox,0.30%
+92857,1002285,Blood Nightfox,0.30%
+92857,1203007,Icicle,0.30%
+92857,1072161,Purple Mystique Shoes,0.30%
+92857,1072162,Blue Mystique Shoes,0.30%
+92857,1072163,Red Mystique Shoes,0.30%
+92857,1040105,Brown Studded Top,0.30%
+92857,1040106,Blue Studded Top,0.30%
+92857,1040107,Dark Studded Top,0.30%
+92857,1041100,Purple Mystique,0.30%
+92857,1041101,Blue Mystique,0.30%
+92857,1041102,Pink Mystique,0.30%
+92857,1041103,Red Mystique,0.30%
+116667,1060087,Light Scorpio Pants,0.38%
+116667,1060088,Oaker Scorpio Pants,0.38%
+116667,1060089,Dark Scorpio Pants,0.38%
+116667,1061093,Light Mantis Pants,0.38%
+116667,1061094,Bloody Mantis Pants,0.38%
+116667,1061095,Umber Mantis Pants,0.38%
+116667,1472022,Bronze Gigantic,0.38%
+116667,1472023,Blood Gigantic,0.38%
+116667,1472024,Sapphire Gigantic,0.38%
+116667,1472025,Dark Gigantic,0.38%
+116667,1332015,Deadly Fin,0.38%
+116667,1332017,Serpent's Coil,0.38%
+116667,1082092,Bronze Pow,0.38%
+116667,1082093,Steal Pow,0.38%
+116667,1082094,Gold Pow,0.38%
+116667,1002247,Bronze Identity,0.38%
+116667,1002248,Silver Identity,0.38%
+116667,1002249,Dark Identity,0.38%
+116667,1203006,Kumbi Throwing-Stars,0.38%
+116667,1072150,Blood Moss Boots,0.38%
+116667,1072151,Gold Moss Boots,0.38%
+116667,1072152,Dark Moss Boots,0.38%
+116667,1040098,Light Scorpio,0.38%
+116667,1040099,Oaker Scorpio,0.38%
+116667,1040100,Dark Scorpio,0.38%
+116667,1041094,Light Mantis,0.38%
+116667,1041095,Bloody Mantis,0.38%
+116667,1041096,Umber Mantis,0.38%
+150000,1060083,Red China Pants,0.49%
+150000,1060084,Blue China Pants,0.49%
+150000,1060085,Brown China Pants,0.49%
+150000,1060086,Green China Pants,0.49%
+150000,1061076,Maroon Moon Pants,0.49%
+150000,1061077,Blue Moon Pants,0.49%
+150000,1061078,Brown Moon Pants,0.49%
+150000,1061079,Red Moon Pants,0.49%
+150000,1472018,Steel Slain,0.49%
+150000,1472019,Blood Slain,0.49%
+150000,1472020,Sapphire Slain,0.49%
+150000,1472021,Dark Slain,0.49%
+150000,1332003,Shinkita,0.49%
+150000,1332016,Sai,0.49%
+150000,1082065,Blue Moon Gloves,0.49%
+150000,1082066,Brown Moon Gloves,0.49%
+150000,1082067,Red Moon Gloves,0.49%
+150000,1002207,Red Sonata,0.49%
+150000,1002208,Blue Sonata,0.49%
+150000,1002209,Green Sonata,0.49%
+150000,1002210,Brown Sonata,0.49%
+150000,1203005,Paper Fighter Plane,0.49%
+150000,1092018,Seclusion Wristguard,0.49%
+150000,1092020,Jurgen Wristguard,0.49%
+150000,1072128,Blue Goni Shoes,0.49%
+150000,1072129,Green Goni Shoes,0.49%
+150000,1072130,Red Goni Shoes,0.49%
+150000,1072131,Purple Goni Shoes,0.49%
+150000,1040094,Red China,0.49%
+150000,1040095,Blue China,0.49%
+150000,1040096,Brown China,0.49%
+150000,1040097,Green China,0.49%
+150000,1041077,Maroon Moon,0.49%
+150000,1041078,Blue Moon,0.49%
+150000,1041079,Brown Moon,0.49%
+150000,1041080,Red Moon,0.49%
+200000,1060071,Khaki Shadow Pants,0.66%
+200000,1060072,Marine Shadow Pants,0.66%
+200000,1060073,Dark Shadow Pants,0.66%
+200000,1061069,Purple Shadow Pants,0.66%
+200000,1061070,Red Shadow Pants,0.66%
+200000,1061071,Dark Shadow Pants,0.66%
+200000,1472014,Steel Avarice,0.66%
+200000,1472015,Blood Avarice,0.66%
+200000,1472016,Adamantium Avarice,0.66%
+200000,1472017,Dark Avarice,0.66%
+200000,1332011,Bazlud,0.66%
+200000,1332031,Dragon Toenail,0.66%
+200000,1082074,Dark Cleave,0.66%
+200000,1082075,Red Cleave,0.66%
+200000,1082076,Gold Cleave,0.66%
+200000,1002181,Red Pilfer,0.66%
+200000,1002182,Blue Pilfer,0.66%
+200000,1002183,Green Pilfer,0.66%
+200000,1002184,Brown Pilfer,0.66%
+200000,1002185,Dark Pilfer,0.66%
+200000,1203004,Wooden Top,0.66%
+200000,1072107,Black Red-Lined Shoes,0.66%
+200000,1072108,Black Green-Lined Shoes,0.66%
+200000,1072109,Black Yellow-Lined Shoes,0.66%
+200000,1072110,Black Blue-Lines Shoes,0.66%
+200000,1040082,Khaki Shadow,0.66%
+200000,1040083,Marine Shadow,0.66%
+200000,1040084,Dark Shadow,0.66%
+200000,1041074,Purple Shadow,0.66%
+200000,1041075,Red Shadow,0.66%
+200000,1041076,Dark Shadow,0.66%
+235714,1060050,Blue Knucklevest Pants,0.77%
+235714,1060051,Red Knucklevest Pants,0.77%
+235714,1060052,Black Knucklevest Pants,0.77%
+235714,1472011,Bronze Guardian,0.77%
+235714,1472012,Silver Guardian,0.77%
+235714,1472013,Dark Guardian,0.77%
+235714,1332014,Gephart,0.77%
+235714,1082045,Gold Arbion,0.77%
+235714,1082046,Steel Arbion,0.77%
+235714,1082047,Orihalcon Arbion,0.77%
+235714,1002176,Red Burgler,0.77%
+235714,1002177,Blue Burgler,0.77%
+235714,1002178,Green Burgler,0.77%
+235714,1002179,Brown Burgler,0.77%
+235714,1002180,Dark Burgler,0.77%
+235714,1051006,Dark Avenger,0.77%
+235714,1051007,Red Avenger,0.77%
+235714,1051008,Blue Avenger,0.77%
+235714,1051009,Purple Avenger,0.77%
+235714,1072104,Red White-Lined Boots,0.77%
+235714,1072105,Green White-Lined Boots,0.77%
+235714,1072106,Blue White-Lined Boots,0.77%
+235714,1040061,Green Knucklevest,0.77%
+235714,1040062,Red Knucklevest,0.77%
+235714,1040063,Black Knucklevest,0.77%
+262500,1332001,Halfmoon Zamadar,0.86%
+283333,1203001,Wolbi Throwing-Stars,0.93%
+283333,1203002,Snowball,0.93%
+283333,1203003,Mokbi Throwing-Stars,0.93%
+283333,1072171,Black Snowshoes,0.93%
+283333,1092019,Nimble Wristguard,0.93%

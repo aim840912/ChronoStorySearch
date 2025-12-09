@@ -1,0 +1,37 @@
+{
+  "id": 1032015,
+  "description": {
+    "id": 1032015,
+    "name": "Metal Silver Earrings",
+    "description": "",
+    "chineseName": "銀製耳環"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC20lEQVR4nL2X7c3qMAyFE+kuACPACDACjAAjwAgwAowAI8AIMAKMACswQm6fqCdyQ9PCD15LVdp82MfHjpP+c+0SzLt3P5Q2AOF2u7nRaBQ/hsNh+CWIEgPuer265/Ppfi0CkCjH8/P5HN8Hg8GfAGhQPp1O3X6/TxNOp5NbLpdtYQjuXb4OVQqBKK9pT4owDsAKmEBEw6vVKo4DHKZ4aqBfgYkAeij3GN9sNjATdrtdBPl6veLDu9g7HA4JzHw+F5hOIADwKJ5MJu5+v5cW+Nw4c+U93wgs8k3/5XKJ74a5MgMIHlYU2rFGjDEukXEM2vWIWKHFqSx8RQCe+IlmOhRj65mV2nhSqnWEQQCY0wfC1oFWmuWdAKiF4jrOUhrb9XodAKEcQQdtCYQFEHKalRdKLB4VJ/oLW9QLhIQ1zG8D0aiEOc12dyjhAIUo1p+CkCO5pEqoLSSDph4EeY8AAKa2262bzWaxrw8EYFlPTuShSwy00Zwzoy0HCObou48JANu60cZAK80lEDwhBDcej91isUjKC+IrtoISOc+FNwZEs/GoUzg3UN6RlA32chYaAOxEw4KvPA14nMvj8YgsSHEfC9SWIgAGVNMtzd77QL+t+XaNQCghPxF0KQwJgPZ9Schg4p1vJQuC964w2DViK5VisrXNQM1CjDUM5J6KGYFAR0H88XgMrLdhaBQiCk8OgsnKeBUThcKWW/oF4hORjcZZAAso1yPBgKUZL+y4QPBQaBgjd6Q3N64a8sYAQqwtzdoVZv8mELYQSbFCxVxyygBxSmZ7uOUA4olovWw7GXVn1G5RQtmQ6M4AEBtS6cERZwuRBUGyWC/tFQyhX3cEW8AEwhpTktotbsNX+i/wVUIG0WYVq9VRbeNpgbSdfDIu77sANECICQtAZwYKK8bSWH5mZLfmpLuPgcbEiu4gry0rtPQZ2n31HucW/qo6r2S9QCrKQ912Kf7q5+Q/n5aEpZphA7IAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADAUlEQVR4nL2X7a3yMAyFE+ldAEaAES4jwAgwAowAI8AIMAKMACPACLACI+TtE/VEbkgK9wfXUtQ0H/bxseO0/1xZgul790UpAQjX69WNRqP4MhwOwzdB1Bhwl8vFPR4P920RgEQ5np9Op9gfDAZ/AqBD+WQycbvdLi04Ho9usViUwhDcq/w6VCkEorylPSnCOAAbYAIRDS+XyzgPcJiitUB/BSYCeEO5x/h6vYaZsN1uI8jn8xkbfbG33+8TmNlsJjC9QADgUfzz8+Nut1ttg8+Ns1be847AIu+Mn8/n2DfM1RlA8LCh0M51YoxxiYxj0O5HxApPnMrCVwXgiZ9oZkAxtp5ZaY0npdpHGASANe9A2DpQpFneCYCeUNzGWUrjc7VaBUAoR9DBswbCAgg5zcoLJRZNxYnxyhH1AiFhD+tLIDqVMKfZng4lHKAQxfpTEHIkl1QJdYRk0NSDIO8RAMDUZrNx0+k0jr0DAVj2kxN56BIDJZpzZnTkAMEavb9jAsC2bpQYKNJcA0ELIbjxeOzm83lSXhHfsBWUyHkuvDAgmo1HvcK9gfKepOywl7PQAWAXGhZ842nA41zu93tkQYrfsUBtqQJgQjXd0uy9D4zbmm/3CIQS8hNBl8KQAOjc14QMJt75UbIg6PeFwe4RW6kUk60lAy0LMdYwkHsqZgQCHRXxh8MhsN+GoVOIKDw5CBYr41VMFApbbhkXiE9ENjp3ASygXE2CAUszXth5gaBRaJgjd6Q3N64a8sIAQqwtzToV5vwmELYQSbFCxVpyygBxSmZ7ueUA4o1ovSzdjPpm1GlRQtmQ6JsBIDak0oMjzhYiC4JksV7aTzCEcX0j2AImENaYktQecRu+2n+BbxIyiDarWE9d1TaeFkjp5pNxed8HgN3jBsRdHkuhAOjOQGHDWJrL74zsq1n6h30MDNqG6+wYNXRv5bVlhSdjhvZD04/fcpW/KvR1JvoYkKB9xVhDeQSiRDKyydaqb3XkrQrg2aK0INSfZGOl2+fZ8/6y/j9BlJSYFENzNgAAAABJRU5ErkJggg==",
+    "price": 125000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 70,
+    "tuc": 5,
+    "incMDD": 50
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Earrings"
+  },
+  "randomStats": {
+    "incMDD": {
+      "base": 50,
+      "min": 15,
+      "max": 85
+    }
+  }
+}

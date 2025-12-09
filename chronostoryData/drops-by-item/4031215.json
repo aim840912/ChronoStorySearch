@@ -1,0 +1,19 @@
+{
+  "itemId": 4031215,
+  "itemName": "Taurospear's Spirit Rock",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 7130101,
+      "mobName": "Taurospear",
+      "chineseMobName": "長槍牛魔王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 20,
+      "displayChance": "20.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

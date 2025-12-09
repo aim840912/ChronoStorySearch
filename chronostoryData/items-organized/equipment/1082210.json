@@ -1,0 +1,46 @@
+{
+  "id": 1082210,
+  "description": {
+    "id": 1082210,
+    "name": "Red Martier",
+    "description": "",
+    "chineseName": "紅色馬蒂爾手套"
+  },
+  "metaInfo": {
+    "reqLevel": 90,
+    "reqLevelEquip": 90,
+    "reqSTR": 90,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "price": 230000,
+    "tuc": 5,
+    "incSTR": 2,
+    "incDEX": 4,
+    "incPDD": 36
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Gloves"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incDEX": {
+      "base": 4,
+      "min": 0,
+      "max": 9
+    },
+    "incPDD": {
+      "base": 36,
+      "min": 0,
+      "max": 81
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

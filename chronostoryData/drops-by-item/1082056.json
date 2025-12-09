@@ -1,0 +1,30 @@
+{
+  "itemId": 1082056,
+  "itemName": "Dark Noel",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 3230101,
+      "mobName": "Jr. Wraith",
+      "chineseMobName": "小幽靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230102,
+      "mobName": "Lorang",
+      "chineseMobName": "紅螃蟹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "itemId": 2043202,
+  "itemName": "Scroll for One-Handed BW for ATT 10%",
+  "chineseItemName": null,
+  "totalMonsters": 5,
+  "monsters": [
+    {
+      "mobId": 8150000,
+      "mobName": "Crimson Balrog",
+      "chineseMobName": "地獄巴洛古",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230104,
+      "mobName": "Clang",
+      "chineseMobName": "青螃蟹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 1130100,
+      "mobName": "Axe Stump",
+      "chineseMobName": "斧木妖",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3210204,
+      "mobName": "Roloduck",
+      "chineseMobName": "玩具鴨",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230107,
+      "mobName": "Flyeye",
+      "chineseMobName": "獨眼蝙蝠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}
