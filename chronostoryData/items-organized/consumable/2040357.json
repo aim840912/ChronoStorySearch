@@ -19,9 +19,7 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Consumable",
-    "subCategory": "Scroll",
-    "lowItemId": 2040000,
-    "highItemId": 2050000
+    "subCategory": "Scroll"
   },
   "scroll": {
     "category": "Accessory",

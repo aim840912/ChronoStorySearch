@@ -24,8 +24,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
-    "subCategory": "Two-Handed Sword",
-    "lowItemId": 2044000,
-    "highItemId": 2044100
+    "subCategory": "Two-Handed Sword"
   }
 }

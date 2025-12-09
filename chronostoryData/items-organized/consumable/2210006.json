@@ -21,8 +21,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Consumable",
-    "subCategory": "Transformation",
-    "lowItemId": 2210000,
-    "highItemId": 2230000
+    "subCategory": "Transformation"
   }
 }

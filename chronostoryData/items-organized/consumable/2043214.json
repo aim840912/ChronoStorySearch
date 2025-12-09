@@ -23,8 +23,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
-    "subCategory": "One-Handed BW",
-    "lowItemId": 2043200,
-    "highItemId": 2043300
+    "subCategory": "One-Handed BW"
   }
 }

@@ -23,7 +23,6 @@
     "incPAD": 50,
     "incACC": 5,
     "incEVA": 5,
-    "attack": 1,
     "attackSpeed": 4
   },
   "typeInfo": {

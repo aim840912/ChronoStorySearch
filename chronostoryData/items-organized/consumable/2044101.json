@@ -22,8 +22,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
-    "subCategory": "Two-Handed Axe",
-    "lowItemId": 2044100,
-    "highItemId": 2044200
+    "subCategory": "Two-Handed Axe"
   }
 }

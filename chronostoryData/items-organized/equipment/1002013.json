@@ -24,9 +24,7 @@
   "typeInfo": {
     "overallCategory": "Equip",
     "category": "Armor",
-    "subCategory": "Hat",
-    "lowItemId": 1000000,
-    "highItemId": 1010000
+    "subCategory": "Hat"
   },
   "randomStats": {
     "incSTR": {

@@ -20,8 +20,6 @@
   "typeInfo": {
     "overallCategory": "Etc",
     "category": "Crafting",
-    "subCategory": "Rare Ore",
-    "lowItemId": 4020000,
-    "highItemId": 4020100
+    "subCategory": "Rare Ore"
   }
 }

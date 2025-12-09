@@ -24,8 +24,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Armor Scroll",
-    "subCategory": "Shield",
-    "lowItemId": 2040900,
-    "highItemId": 2041000
+    "subCategory": "Shield"
   }
 }

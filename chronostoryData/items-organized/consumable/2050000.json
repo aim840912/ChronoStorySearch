@@ -20,8 +20,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Consumable",
-    "subCategory": "Status Cure",
-    "lowItemId": 2050000,
-    "highItemId": 2050100
+    "subCategory": "Status Cure"
   }
 }

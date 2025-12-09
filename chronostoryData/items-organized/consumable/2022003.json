@@ -31,8 +31,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Consumable",
-    "subCategory": "Consumable",
-    "lowItemId": 2022000,
-    "highItemId": 2024000
+    "subCategory": "Consumable"
   }
 }

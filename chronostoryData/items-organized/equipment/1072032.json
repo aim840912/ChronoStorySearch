@@ -23,9 +23,7 @@
   "typeInfo": {
     "overallCategory": "Equip",
     "category": "Armor",
-    "subCategory": "Shoes",
-    "lowItemId": 1070000,
-    "highItemId": 1080000
+    "subCategory": "Shoes"
   },
   "randomStats": {
     "incSTR": {

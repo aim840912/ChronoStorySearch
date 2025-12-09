@@ -24,8 +24,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Armor Scroll",
-    "subCategory": "Gloves",
-    "lowItemId": 2040800,
-    "highItemId": 2040900
+    "subCategory": "Gloves"
   }
 }

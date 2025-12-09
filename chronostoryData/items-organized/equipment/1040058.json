@@ -23,9 +23,7 @@
   "typeInfo": {
     "overallCategory": "Equip",
     "category": "Armor",
-    "subCategory": "Top",
-    "lowItemId": 1040000,
-    "highItemId": 1050000
+    "subCategory": "Top"
   },
   "randomStats": {
     "incSTR": {

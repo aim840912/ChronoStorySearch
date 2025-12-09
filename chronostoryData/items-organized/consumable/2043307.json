@@ -24,8 +24,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
-    "subCategory": "Dagger",
-    "lowItemId": 2043300,
-    "highItemId": 2043400
+    "subCategory": "Dagger"
   }
 }

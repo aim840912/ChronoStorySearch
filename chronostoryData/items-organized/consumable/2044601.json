@@ -22,8 +22,6 @@
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
-    "subCategory": "Crossbow",
-    "lowItemId": 2044600,
-    "highItemId": 2044700
+    "subCategory": "Crossbow"
   }
 }

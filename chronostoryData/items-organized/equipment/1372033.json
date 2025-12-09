@@ -22,9 +22,7 @@
   "typeInfo": {
     "overallCategory": "Equip",
     "category": "One-Handed Weapon",
-    "subCategory": "Wand",
-    "lowItemId": 1370000,
-    "highItemId": 1380000
+    "subCategory": "Wand"
   },
   "randomStats": {
     "incSTR": {
