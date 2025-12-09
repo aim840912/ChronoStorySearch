@@ -15,8 +15,7 @@
     "slotMax": 200,
     "price": 100,
     "tradeBlock": true,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",

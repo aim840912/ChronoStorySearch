@@ -15,5 +15,6 @@
     "category": "Armor Scroll",
     "subCategory": "Shield"
   },
-  "fetchedFrom": "chronostory-api"
+  "fetchedFrom": "chronostory-api",
+  "isGachapon": true
 }

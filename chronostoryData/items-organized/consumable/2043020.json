@@ -17,5 +17,6 @@
     "category": "Weapon Scroll",
     "subCategory": "One-Handed Sword"
   },
-  "fetchedFrom": "chronostory-api"
+  "fetchedFrom": "chronostory-api",
+  "isGachapon": true
 }

@@ -15,12 +15,12 @@
     "slotMax": 0,
     "price": 1,
     "incMHP": 5,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Armor Scroll",
     "subCategory": "Bottomwear"
-  }
+  },
+  "isGachapon": true
 }

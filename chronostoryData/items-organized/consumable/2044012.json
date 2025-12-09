@@ -17,12 +17,12 @@
     "incDEX": 2,
     "incPAD": 1,
     "incACC": 3,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Weapon Scroll",
     "subCategory": "Two-Handed Sword"
-  }
+  },
+  "isGachapon": true
 }

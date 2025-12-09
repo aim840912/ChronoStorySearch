@@ -16,8 +16,7 @@
     "price": 1,
     "incMHP": 30,
     "tradeBlock": true,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",

@@ -16,12 +16,12 @@
     "price": 1,
     "incSTR": 3,
     "tradeBlock": true,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Armor Scroll",
     "subCategory": "Shield"
-  }
+  },
+  "isGachapon": true
 }

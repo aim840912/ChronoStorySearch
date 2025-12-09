@@ -17,12 +17,12 @@
     "incPDD": 5,
     "incMDD": 3,
     "incACC": 1,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Armor Scroll",
     "subCategory": "Helmet"
-  }
+  },
+  "isGachapon": true
 }

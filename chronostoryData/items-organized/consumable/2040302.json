@@ -17,12 +17,12 @@
     "incINT": 3,
     "incMAD": 5,
     "incMDD": 1,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Armor Scroll",
     "subCategory": "Earrings"
-  }
+  },
+  "isGachapon": true
 }

@@ -17,8 +17,7 @@
     "incSTR": 3,
     "incPAD": 5,
     "incPDD": 1,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",

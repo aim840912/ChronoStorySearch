@@ -15,8 +15,7 @@
     "slotMax": 0,
     "price": 1,
     "incDEX": 1,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",

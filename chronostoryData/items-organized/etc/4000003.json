@@ -14,8 +14,7 @@
     "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABh0lEQVR4nL3Vi3GEIBAA0HUmDZASSAmmBFOCV4IpQUswJcQWLCGWcLRAC1sCARRERTw/yBwq6vjcz3hvcO8QanM3CnejoswI/HR4G6pBjqgXd6AWbJleJ3tRMeyTvbIB1WZ3pENdxIuwraN7f8z0Turojljooo4xUV3zEHg1qqNTIwQeQhEWNbLRqWtNZ8+vNtoe1NeJNjoHdDHhHJ/uXv2wukwBGbfRFxkoWHjuP9RIwqQv7QODvBhBJ6Wr0BF0MvKCAmdM5RSaQMOcRokMERlCJvdcRYgQ7NCzaN8sQ9OqdJ4BX0VllFTXT6MnwS2071BZP+T8kgi3UFHmBAiVdeQKuw70of3XJSI4R/uGUb+IoIuOIIkLGlQ8/2rdLIx3E9AzyAFj8aQxvYRCmuaAhEPXtfrUEOWHnNQB98Do7M3UaPL5VYnfugBKVQPJbyq2BnzImXkwH+zPzYjxYaKJNPmumvm/QwXHIwy+iNu97w5i5uYDPNfmx/M5QU0KttJIVl4AA+vJtX9dMeSfxzyQCQAAAABJRU5ErkJggg==",
     "slotMax": 200,
     "price": 4,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Etc",

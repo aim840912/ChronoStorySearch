@@ -32,5 +32,6 @@
   "fetchedFrom": "chronostory-api",
   "externalIds": {
     "mapleSaga": 2070007
-  }
+  },
+  "isGachapon": true
 }

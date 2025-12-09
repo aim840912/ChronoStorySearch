@@ -15,12 +15,12 @@
     "slotMax": 0,
     "price": 1,
     "incLUK": 3,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Armor Scroll",
     "subCategory": "Shield"
-  }
+  },
+  "isGachapon": true
 }

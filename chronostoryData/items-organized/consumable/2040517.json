@@ -17,12 +17,12 @@
     "incLUK": 5,
     "incACC": 1,
     "incEVA": 3,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Armor Scroll",
     "subCategory": "Overall"
-  }
+  },
+  "isGachapon": true
 }

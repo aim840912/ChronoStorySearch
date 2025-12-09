@@ -17,12 +17,12 @@
     "incDEX": 3,
     "incSpeed": 1,
     "incJump": 5,
-    "setCompleteCount": 0,
-    "islots": []
+    "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Armor Scroll",
     "subCategory": "Shoes"
-  }
+  },
+  "isGachapon": true
 }
