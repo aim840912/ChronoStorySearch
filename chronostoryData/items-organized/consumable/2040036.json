@@ -4,7 +4,8 @@
     "id": 2040036,
     "name": "Scroll for Helmet for INT 15%",
     "description": "Improves INT on headwear. Success rate: 15%, INT +3",
-    "chineseName": ""
+    "chineseName": "頭盔智力卷軸15%",
+    "chineseNameSource": "gacha"
   },
   "metaInfo": {
     "price": 1,

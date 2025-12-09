@@ -4,7 +4,8 @@
     "id": 2040346,
     "name": "Dark Scroll for Accessory for DEX 30%",
     "description": "Improves DEX on accessories. Success rate: 30%, Destroy rate: 50%, DEX +3",
-    "chineseName": ""
+    "chineseName": "飾品敏捷詛咒卷軸30%",
+    "chineseNameSource": "drops"
   },
   "metaInfo": {
     "price": 1,

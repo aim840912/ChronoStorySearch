@@ -3,7 +3,9 @@
   "description": {
     "id": 1040097,
     "name": "Green China",
-    "description": ""
+    "description": "",
+    "chineseName": "綠陽",
+    "chineseNameSource": "drops"
   },
   "metaInfo": {
     "only": false,

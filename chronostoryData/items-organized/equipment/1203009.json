@@ -2,11 +2,14 @@
   "id": 1203009,
   "description": {
     "id": 1203009,
-    "name": "Persimmon",
-    "description": "",
-    "chineseName": ""
+    "name": "Orange",
+    "description": "A tasty orange that can be thrown at things. Attack +20",
+    "chineseName": "橘子"
   },
   "metaInfo": {
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABdElEQVR4nH2TDXHDMAyFnbsRMAUPggPBhVAKodBRKIVRCIQFwgyhhhBB8J7k+Dfp0vPFP9Hnpyf1Q/3/xIu9adx4B5Fgfdey+KF6MG+UwQU2QmqwxcQngMZS48esX9fBphESXVyU3zYE43ObQLdvEpDRpLRRKgSliBimC6hTkgH2cVf+uYoSUcZZMWAjZaAy+AQa04mSQgYIDLdx7CFfBZ4jpQac1VQl7AFSKAqwnvHeTSMVbE6JwlnJoYKXVBTMvgkOxzDp7aHYOQN/qK9OG8gp7At2whcbkbx4gPAkAVlUKgMKRHLH4S7JYjhXAAI1ugBC0Elx8/R9YrLkFBxWKFiwYVIQAUAwg4cGeF5lv5aYjaIchJ6QanCvrPVW74Oy4kUvhiHT50rxBXOZTjBNN+LoMJQOaPYCpRUVXTp8aLlKIV3CFZA1Fw4B1ppLQAuZbl7FV9MT1tbGYmPfAUZjJS2ecCdSX4AcfAKMkPJB83c/nV09f8Bgxo7R5UzlAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAASCAYAAABFGc6jAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABuUlEQVR4nJ2Ti3GDMAyGlTsWcEdwRzAjkBGyAhkhGaEZoVmBEcoI9QjxCGgEKskGVHCAxDmfH8H69OtRwHujz9wd1h68ChKAORk5/OD0R9niAM8C94ImgKONjxBDR0M/5v1W/4AL2B5QX/U1+LYlAJl0EXa8o8CsQTAWIAQARAaaLGyXogHiLifwt0YUiUKOIENaBEtqg4+w3NgC9RKuASJA8prtp1BB4D2FT8FzqrYVcU4oXKMSOpe0dlZ9Q3wOH4b3FCU1vMVRSenVFyFNG1dPyqvKUr6WtE1F2jiHq6vpJlw5MTE3F6LcUGCOKjAH2QRJLshAxwdOfFWNEAFbM0JCMFH5k7Gvj2yaCRAaUlLThY2GkSBIyeFpCF42cv9aeXNycTBMPSNVxr3UTN57H8BJbp6LWgMdPhvsH1QQ7CVSoo12IBUBJvCQGyprXj62QGa2igHH1Reis1xZcuaCJKPO2TnkGF2I/gyzUIZz83z08P1QPePc1JxcDDPIFWLnaYg0QaGMWrVqVXcKYc0b7vh5QyYAj5t6s8iUVgRPPsLkKRv9guU4Z97hfBZKnobpvb4rM/e4ch73fxqK3aNLyateAAAAAElFTkSuQmCC",
+    "iconSource": "GMS-2070013",
     "reqLevel": 10,
     "reqLevelEquip": 10,
     "reqSTR": 0,
@@ -14,8 +17,8 @@
     "reqINT": 0,
     "reqLUK": 0,
     "reqJob": 8,
-    "price": 150000,
-    "incPAD": 24
+    "price": 2500,
+    "incPAD": 20
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -24,11 +27,14 @@
   },
   "randomStats": {
     "incPAD": {
-      "base": 24,
-      "min": 24,
-      "max": 25
+      "base": 20,
+      "min": 20,
+      "max": 21
     }
   },
   "fetchedFrom": "chronostory-api",
+  "externalIds": {
+    "mapleSaga": 2070013
+  },
   "isGachapon": true
 }

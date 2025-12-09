@@ -2,8 +2,10 @@
   "id": 2040333,
   "description": {
     "id": 2040333,
-    "name": "Scroll for Earring for INT 50%",
-    "description": "Improves INT on ear accessory.\\nSuccess rate:50%, magic attack +5, INT+3, magic def. +2"
+    "name": "Scroll for Earring for STR 15%",
+    "description": "",
+    "chineseName": "耳環力量卷軸15%",
+    "chineseNameSource": "gacha"
   },
   "metaInfo": {
     "only": false,
