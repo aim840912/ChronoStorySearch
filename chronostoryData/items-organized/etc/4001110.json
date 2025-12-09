@@ -4,7 +4,7 @@
     "id": 4001110,
     "name": "[Storybook] Unknown Letter",
     "description": "It's an anonymous letter.  It just said #c 'I have what you want.  Meet me at the Cloud Balcony'#.\\nOnly for : #cNight Lord#",
-    "chineseName": ""
+    "chineseName": "來歷不明的信"
   },
   "metaInfo": {
     "only": true,
@@ -12,19 +12,8 @@
     "mob": 0,
     "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABeElEQVR4nKXVgbFEMBAG4DWjAUrwSqCWVwItKIESKOFqoYRTAiXkdjNyEzlJduWfce7C+SQ2kkN6FG6Z5A+pqBqGAfq+F8EpqMLAOI6w7zuUZcmGn6IadBogyzIW/AT9AaWwFPWCEliCRkEuzEXZIAfmoD8gXuzyu21bERxDveBSFLAdB/zjd5wuICmuEOoF97qGcl01/DrhyJ1f4Nx/XhikNAgSDLiPxYbz++Nh0IarE7Wf87IstzC1N02jXNRbpTZkt9l54UZDXTvtlANvjJ49OD0NTgsXtNv2qtJFtXmG2Qbpw6BB8Hwet73V+Lbp/cQADaqmaYJ5noEbt4dUUAR2DNCgWdd1ipanUPCcSy/fCNo9NKAZMR9oUH2A1kOCC6rGm5iL0TAT+IcgFc4hBG2UBZusZw/tlwIXdFE2bDC3+DjgHRqFaYLH5iFE4nsNsodaCoZQNiwFY2gUfgJyUC/8FOSiFzgVlKBfmKo3BZSiGqL1MAWkfAABsC5ZW3Ue3AAAAABJRU5ErkJggg==",
     "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABwklEQVR4nKXWi42DMAwAUCOxAIxARygj3K1wI8AKjAAjwAidhY5QRiAjcDYikjH5ONRSGgifh4OB5vB9bNiylAO+Rbe+76HruiT4G3TDgGEYYF1XKMtSDd9Fd1AMQJZlKvgOegFT4VTUC6bAKWgU1MJaVA1qYA16AfFkp/WmaZLgGOoF56KAxRj4w2V8XCCluEKoF1yfTyjf7x1+HXDkyk9w7t8vDFLUCBIM2MeCw7l7exjkcHWg/D7P8+yEabyu602i3irlEB/j8cJGU/0U4xQGL4zuPYhMg4+FBPnYWlV7US2eaeYg/Vg0CB73w5ntji/L3o8K0KLbOI4wTRNoQ2ZIBUVgqwAtmrVtu9HnKRS4zynLD4I8QwvaGfOBFt030PeQ4IKq0RH2ZDTNBD4QpMIxiSBHVbCN95EhfyloQYmqYYvJ4tOALjQK0wMeew4hEr7XoHqqU8EQqoZTwRgahe+AGtQLM5B+Qvfg8m70oYXoHwh87AuEgb/YrlV1BQ1rF7TwNIoOoZ6q9wAHbD+hjAS4HM1w1AIV62XWE34P6Q/RBOEpDV6IK1PfAXa9i5xcLst2Qu0UcNiVTQHuDExg/bTtHwsTS09ZSM5NAAAAAElFTkSuQmCC",
-    "iconOrigin": {
-      "x": -2,
-      "y": 31,
-      "isEmpty": false
-    },
-    "iconRawOrigin": {
-      "x": -2,
-      "y": 31,
-      "isEmpty": false
-    },
     "slotMax": 0,
     "price": 1,
-    "vslots": [],
     "setCompleteCount": 0
   },
   "typeInfo": {

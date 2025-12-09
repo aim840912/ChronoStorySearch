@@ -4,7 +4,7 @@
     "id": 4000115,
     "name": "Cog",
     "description": "An important part of a clock.",
-    "chineseName": ""
+    "chineseName": "齒輪"
   },
   "metaInfo": {
     "only": false,
@@ -12,19 +12,8 @@
     "mob": 0,
     "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAbCAYAAABr/T8RAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADZ0lEQVR4nK1Wi5WjMAxU3tsGfCX4SnBKcEogJUAJoQQoIS4Bl7AuYV3CuYR1CZwkf4CE7Ca3pzxCYmyPRhrJvMFrNq9+H+AH9hVwASkAs5YShBD8x3o/r5+96sweMG/SKsV/zArAxwhA1838a9tAwOHR2qcduAXGTVoIwdeBi9YwOje3OE4mkTUZMe+6bh6ahn2hONBvqSSc+3EdjecY98bAJYML/IQQgEDXgOU+TROMXQcNOsdjOGccDTxjuzmOMTBoxoAGmZADa+DN73xbR+pZ4KrWtsnei2VHay1cLpfKmsw5x1cCjDyfnNVagbduveduyAl4HjCUMTNKcOJuIoErFJz3ntnTpbIA2Uh3GXxAsfEepINxP99viZ3gRXe2N/bAIk+P+BEgoejg8XwGjuy9XjbBHBelvmYUal0dcfax0BiYwscXOkBCklLUHCvMWcBnsMpvMYcVQHPpIpNSbXKv1P2aDTCBOJ9yjE0AriikMi5EymPAcboWbgAahUhgi0UwOEeK72PFwAZBlaDOBAk0i6TclaYohLvFApnG0slicieC4n14KBSn7suMgHM7hHkahkqnAJdMyxo2kVAisLJ7szhEddy2SwSMKYBqzuBV3bWO36/XrMmFKXWi1BQElCIrnbqANo3iOk5jBsV12QBT/aeUUYs91dKqnevUGXif2pozUnp3PmWOWJvoWOHr/cJyHC2C6yxGxQCSW+eY5mdQYxZ9bIAbGVGl9NDyQuvyRCRjsbwmpZilz4pdQhw3XY7MZhEKIdlJUrf3tbSY9bcvAi6Lx6EjGkXmMyiFODfJFeZWzaWXkwCHYaot93w+zgX4YEOYkRIfgxU05Y5yMgfnEdDmw0LXhvPVwbCuKmqvSi0Da8acdDp7b8f2rOt64oJsXGaDBwz26PPZMFMCJYYUZjo4jsffG+Hthfqp1xdqq+nEWjbTWlYxJcaidq+Pj0/ujqjsh8B7duiMWUXCw/U61M3TvYDr7eFQnkMK9zR9UI7hlbfMVST8bPHMpY2aJr0Ank4d5tsisz9QRHY8/sLwDxiZ9NpE+rDprIZXX2+rE86NsxAXrNfAISxWDoxiDkXpXMf5Jget7Xn9vwLzYmvH+Xaw7w13suIARSHdl3X09RPgusnKqiOljcIXrz7/0w7G9E+V41/c4JBN99oHWQAAAABJRU5ErkJggg==",
     "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADqElEQVR4nKVWjXnjIAxVv68LcCNwI5ARnBGcEewRkhHsEcIIZoQyQhnhGKGM4JPEj7Fjt8md+lEcjHl60kPwDq/ZXD2/wX/Yd8AZJAPMjZQghOAfxrm5fveqM3vAvEinFP/QFYALAYDaZv69a8Hj8GjM0w5sgXGRDrx3ZeDaNDBaO3c4TiaRNRkx7/t+HtqWfaE40LNUEi63sY7Gc4xvWsM1gQv8894DgdaAuZ+mCca+hxad4zGcM44anrHdHIfgGTRhQItMyIEaePWcujpSzwIXtXZt8l4sKxpj4Hq9FtZk1lpuETDwfHK2aRQ4Y+s1d0NOwPOAoQyJUYQTDxMJXKHgnHPMnppKAmQj3SXwAcXGa5AOxv18v0d2gj96sL2xAws8PeCfAAlZB8fzGTiw982yCOY4K/U1o1A3xRFrjoXGwBQ+bugACUlKUXKsMGce30GV32wWdwDNpUYmpVrlXqnHb1bABGJdzDEWAbijkPK4EDGPHsepLdwAGhQigS0WQOMcKX6OFQNrBFWCKhNE0CSS3KuGouAfPhbINORKFqI7ARSvw0M+O/W4zQg4lUOYp2EodDJwzrQsYRMRJQAr+6YXh2gfd90SAa0zoJoTeFF32ccf93vS5MKUKlEsCgLyJsuVOoO2reJ9HMc0iuu6Aqb9H1NGJfZctlapXOdew8fUlZyR0vvLOXHEvYmOZb7OLSzH0SB4k8SoGEBy6Rzj/ASq9aKPFXArA6qUXhr+0Ng0EckY3F6TUszSJcUuIQ6rKkdmkgiFkOwkqdu5srWY9Y8XAZvEY9GRBkXmEiiFOBXJCnOt5lzLSYDDMJWSe7mc5gz8ZryfkRIfgwU05o5yMnvrENCkw6IpBee7g6HeVVRelVoGasacdDp7t2N71vc34oJsbGKDBwzW6MtFM1MCJYYUZjo4TqffK+Hthfqp6wuV1XhiLYs1jSxiioxFqV6fn19cHVHZh8B79tZrXUXCwf0+lMVjn8Gb9eGQ30MM9zR9Uo7hlVtmFQk3GzxzaaG2jRfA87nHfBtk9geyyE6nXxj+ASMTr02kDxPPanj1elucsHachbjifvUcwmz5wMhmUZTW9pxvctCYG3//L8B55V/GjF/bl7eb5kqWHaAoxH5xmv59Byw2/d7YefPNR37IZRTtlPoAS8XdBRYH7ciJ2vCSehvq30CbfgH1qYUtcAaRVV+DPHMpGTfrhb1JR4yzbT/aXWTn3fZ52x6Aczh+CukRk+8cXb37C9DVqOEw65V6AAAAAElFTkSuQmCC",
-    "iconOrigin": {
-      "x": -1,
-      "y": 30,
-      "isEmpty": false
-    },
-    "iconRawOrigin": {
-      "x": -1,
-      "y": 30,
-      "isEmpty": false
-    },
     "slotMax": 200,
     "price": 34,
-    "vslots": [],
     "setCompleteCount": 0
   },
   "typeInfo": {
