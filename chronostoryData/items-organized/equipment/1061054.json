@@ -1,0 +1,102 @@
+{
+  "id": 1061054,
+  "description": {
+    "id": 1061054,
+    "name": "Blood Sneak Pants",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACVklEQVR4nLWWjXWCMBSFX89xgXSEOAKOICPgCO0IZQQ6Qh1BRpARmhGaEcwI9N3wwl8ThFN9njRAIV/uzSW6o/XVRq69rH14CTQZuG1bctYSOefPcbw/nebwJHhR0Y/SpI9HPyia2e9J8cfXV0XffOz4Y/i0HCYXha23jpXoy4W7TpFlsJ7dcsuO9GqaKGwRZJ0lBbu48sPh7lysMUlYCtRm/OfE7WIab9eVBwiV87V54f4D29hqTZXxVk5gSUVFVZE9n6lkRbxCdDWm/x+gSnfGHerz9EE9N/QOCBBVFFQwAOvx7oECAlTA38XbBGA+P7eB9BsP0DTksqxLHHX2oN4lacjfta79NaTPgxLjJUGOB4Aix8o09xnPdDxIIQrGSi/SS9RXhcFDoAi9ZShgpps9BmihRinVWRaSOTy+Id7BNoE0Ce8B1AyzNuja+sJiR5BAWLFPFE1BrKrCDqG69y5P7A4xUFtxtHvbGAJoPdjm6yvrtiaUNakI3FE0CQKnL2abhbVhg5XE5ZSuKGgShLhtL3tnN31txNdIghBss5G1oQ3fRWmQBCHYlgrCf0B/ggDIPAiPAE2CsGDb/0EeMtt+zANgf0Bh1wbsWYraD05aWBukDmv1FEVj2zgB5J6gqE8b7DKwTyAPV2TlvVEMy0bvTz1A1MaxXRQEiJGUhbVx3BcDLKP15Ua9bwH0WpblDfZBCRQ5sU8gpYBiqhzFK0CwxdudPIyWM+yKO/rduoPgZ078p819RX0FRWGmp9HxmjVxC8eTtqNB3njgGERR3Ca3cN4f/wJTuFrW1X7zkwAAAABJRU5ErkJgggDbAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby02ZDQ0ZDU4ODg3LXhwbm5sIiwiZ2l0SGFzaCI6ImM4NDM1OTk2MGYyN2FjMWU3YzA0YjNmMWI1YTZjNTBmZTI2OWUxMzUiLCJ1cmwiOiIvYXBpL0dNUy84My9pdGVtLzEwNjEwNTQvaWNvbiIsImNyZWF0ZWRBdCI6IjIwMjUtMTEtMTRUMTA6MTA6MTYuMzgwNDIyMloiLCJtZXRhIjpudWxsfQ==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACVklEQVR4nLWWjXWCMBSFX89xgXSEOAKOICPgCO0IZQQ6Qh1BRpARmhGaEcwI9N3wwl8ThFN9njRAIV/uzSW6o/XVRq69rH14CTQZuG1bctYSOefPcbw/nebwJHhR0Y/SpI9HPyia2e9J8cfXV0XffOz4Y/i0HCYXha23jpXoy4W7TpFlsJ7dcsuO9GqaKGwRZJ0lBbu48sPh7lysMUlYCtRm/OfE7WIab9eVBwiV87V54f4D29hqTZXxVk5gSUVFVZE9n6lkRbxCdDWm/x+gSnfGHerz9EE9N/QOCBBVFFQwAOvx7oECAlTA38XbBGA+P7eB9BsP0DTksqxLHHX2oN4lacjfta79NaTPgxLjJUGOB4Aix8o09xnPdDxIIQrGSi/SS9RXhcFDoAi9ZShgpps9BmihRinVWRaSOTy+Id7BNoE0Ce8B1AyzNuja+sJiR5BAWLFPFE1BrKrCDqG69y5P7A4xUFtxtHvbGAJoPdjm6yvrtiaUNakI3FE0CQKnL2abhbVhg5XE5ZSuKGgShLhtL3tnN31txNdIghBss5G1oQ3fRWmQBCHYlgrCf0B/ggDIPAiPAE2CsGDb/0EeMtt+zANgf0Bh1wbsWYraD05aWBukDmv1FEVj2zgB5J6gqE8b7DKwTyAPV2TlvVEMy0bvTz1A1MaxXRQEiJGUhbVx3BcDLKP15Ua9bwH0WpblDfZBCRQ5sU8gpYBiqhzFK0CwxdudPIyWM+yKO/rduoPgZ078p819RX0FRWGmp9HxmjVxC8eTtqNB3njgGERR3Ca3cN4f/wJTuFrW1X7zkwAAAABJRU5ErkJgggDbAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby02ZDQ0ZDU4ODg3LXhwbm5sIiwiZ2l0SGFzaCI6ImM4NDM1OTk2MGYyN2FjMWU3YzA0YjNmMWI1YTZjNTBmZTI2OWUxMzUiLCJ1cmwiOiIvYXBpL0dNUy84My9pdGVtLzEwNjEwNTQvaWNvbiIsImNyZWF0ZWRBdCI6IjIwMjUtMTEtMTRUMTA6MTA6MTYuMzgwNDIyMloiLCJtZXRhIjpudWxsfQ==",
+    "price": 6000,
+    "reqLevel": 25,
+    "reqDEX": 50,
+    "reqLUK": 65,
+    "incPDD": 18,
+    "incMHP": 10,
+    "tuc": 7,
+    "reqJob": 8
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom",
+    "lowItemId": 1060000,
+    "highItemId": 1070000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incDEX": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incINT": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incLUK": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incPAD": {
+      "base": 0,
+      "min": 0,
+      "max": 1
+    },
+    "incMAD": {
+      "base": 0,
+      "min": 0,
+      "max": 1
+    },
+    "incPDD": {
+      "base": 18,
+      "min": 6,
+      "max": 31
+    },
+    "incMDD": {
+      "base": 0,
+      "min": 0,
+      "max": 13
+    },
+    "incACC": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incEVA": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incSpeed": {
+      "base": 0,
+      "min": 0,
+      "max": 1
+    },
+    "incJump": {
+      "base": 0,
+      "min": 0,
+      "max": 1
+    },
+    "incMHP": {
+      "base": 10,
+      "min": 0,
+      "max": 23
+    },
+    "incMMP": {
+      "base": 0,
+      "min": 0,
+      "max": 13
+    }
+  }
+}

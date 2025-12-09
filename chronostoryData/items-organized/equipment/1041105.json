@@ -1,0 +1,55 @@
+{
+  "id": 1041105,
+  "description": {
+    "id": 1041105,
+    "name": "Green Pirate Blouse",
+    "description": "",
+    "chineseName": "綠隱者之服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAWCAYAAADTlvzyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABoElEQVR4nLWW4XWDMAyExXtZgBW8glegI3SGjsAMjNAZOkKzAit4BUZwfY6EhWxD25foR8AJ1qc7CciN6oh8HOj3Ec26u9cCo3NEzhPdv3KSK2gGTe9EWyhfrmu/6EphSBvH8ZHkBLqDJEZXzif3KIDBh/0aGBlC25YSnCiyMO/qC++BmnFQmDcytAWD3XBAYAJaQ1nDnVxwOvdUqzwAcbGBDqJKYN63YXI++ZKnpbI1pZUqhChrgWRgoGxjlb0QYJznkgjqZkxrWn+oxLpXGjzykASjqGVrpRCwT8BY2jcnfkv+2MqhCOCWrVcK9wSIvD/UDZDfdfL8PR9RIwo+6+MOlOnalZrksHhZjreD7p0tTNywtlaWIuHCPdQROCkUuMZ9p+PMVgCjrhqB0V/WetpkLW57lVRUel9s7QEPE6efidoqwHab+JhsOo3W7XF1H+5PiASPtlcn10fpY55iKn28SSU6GVduH9p/eV11+3il8OnxKuCAV1tXIey0A/OssIPzUkvt4OCjAnYG5l/RGhwAh/TI0n+CngIj7qN5mQ8/gVe8iIGb1QUAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB4UlEQVR4nLWWDXHDMAyFnbsSyCCYggehgzAMhVAMgTAMg7BCWCiYQiB4fqnkKLLsdHet7rr869N7UpydXB2JtoN7PJI6bj6rgcl753xw7va9JjmCrqDzp3NL3E7Oc7voSmHMD47jPUkHWkAco9/2z/5eAIF3z0tgIohblpygo0jDgq9vvEVnxk7h+iBBLRjshgMMY9Act2O4sxac94OrVe6AuFlBB1bFsBBsGO+fw5bHUmlNaaUKwcosEA8MlC2kshUMTNfrlgjqrpjWfHwRiWWvJHikIYlKkWVrpRCwL8BI2g8l/sj+6MqhCGDL1iOFJQFifT7WDeDrMvl6nraoEQX3+liAPF1FqUoOi6dp/zrI3unC2A1ta2UpEk7UQxmRkkKBN947GT1bAUyyagRGf5rraeNjdjuIpKwyhM3WFnA3cXJNlFYBVmyibbapG9brcfQelhUiw5PuVef+xH1cp9htfTxxJTIZVa4X7f98rpp9PFL49HgVcMCnrakQduqBeVbowXmppXpw8KcCNgYG0fkG2GENDoBDXrLkP0FvlFwCRrV9JN5zH3/Vx7wsbYOAeLFvgSxo6w290LVIv2KphnlxvgU5CrMI2UOZVN/cW2OWzr7+FSDLPrJubMB7Be6u/QHHXtFV5aFbNgAAAABJRU5ErkJggg==",
+    "price": 140000,
+    "reqSTR": 0,
+    "reqDEX": 120,
+    "reqINT": 0,
+    "reqLUK": 220,
+    "reqJob": 8,
+    "reqLevelEquip": 80,
+    "tuc": 7,
+    "incDEX": 5,
+    "incLUK": 1,
+    "incMMP": 15,
+    "incPDD": 64
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 5,
+      "min": 1,
+      "max": 9
+    },
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incMMP": {
+      "base": 15,
+      "min": 0,
+      "max": 55
+    },
+    "incPDD": {
+      "base": 64,
+      "min": 24,
+      "max": 104
+    }
+  }
+}

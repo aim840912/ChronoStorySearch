@@ -1,0 +1,49 @@
+{
+  "id": 1051039,
+  "description": {
+    "id": 1051039,
+    "name": "Red Lumati",
+    "description": "",
+    "chineseName": "紅貴族禮服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC6UlEQVR4nKWWgXGrMAyGxd1bwB0BRjAjhBHICGUFRqAj5I0QjxBGqEcII8Qj8PQL2xhi0vSeej0DtvVJsiTnD70n8xtrileT74Dm6+NB0zTR367bTAy3m4xuctTV1fwK9hNo48nl+zs+O+cEMNqRNBsw8Ld+WZ+FvQLNN1LUkBNvWq2p9BNjGBliGHJtW3Kjpd5Nh8peegQIwtaqD367+q/t0zpA1EnTzTjsyXp1BJofqqQPb+HEESnJ8NNZnvdiOYwnHrVSdHOUhR16hM1BStmzAEpX0KRWWMkhbaylh/eKzEg5yYGiNwgbrCQweZCR/08MM4rnGEKfnzTxOcEwzbAjrwIomghI6o2I90A8UQglgOuagbOxqWsBiGEHHs0s9FUUSM9nCHnFyfiO+IyNDsTQAYJasByb3lu5V+4SI5DyOYGhDS3r7vc7jeNIHYd2AZ3PdOMqb5pmWTDPUjNffMhlWUYlqXLFf6UuZd4YE8MHQYSwdqpqRrqtR/rcCQwLqqKIGwALgqJNvWyKNYON90AMY8PVuO7bgJad52gBwliwIsCC8qrY1uHgx95DVM0ROenNGu3T9Y/oM0bajSW3WTDwe5EoHygv+F5VlWRs6BIhqfx5FcGjIs2QIC1biYZz5lBcr0sLQtz3AgMBQ+3BYBRtsxotlqahS+MySz1wKNz3chXE2O/qRArVR2NYPdjry3cGsYoFkDTr2C1SDEN4MIczgUEpLAc5AkUp+16UR2FIEISwvC+1phkImLpciHaX41ugDSS8e5h44s9ruixp4g4gOZCEDUqkE0NpxiPMOd9AIfYF4Aj07MH+PQlfEO3PNC2P34EOPHolR78d/tujXLfPyRMImST3XJrWGbgLDTZttOE5c2ZPILSSVHCLttxY63rtCJbftdaUE2tt9vsetC+0ebCwUkGDfOj9OlYYCzskQZ/XkQVtIBcuQGDCPSSjMXFBrB/cPfjtR5g2v/q5JdL9UB/dG/UT5B8bE39Z61371QAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADGElEQVR4nKWWi5GjMAyG5ZlrwFuCKcGUEEogJWxKOEpgS8iVEJcAJcQlxCXEJXCS/MDhldycMhlDLPzply2RX/CZTR/4iHcOn8Cm2/MJzjn4c7m8TPTDwKN3Hi51Nb0DvoO9KLre7/nae8+Q0Y6gMYgef+uC/y7wCDYNIKEBz6parUHFiTGNCDIIurUt+NFC591h5IfKCEQpbOUX3t3ir+3Kj0DypGEwnp7ZVbcHm55SwVeM1GF2FBi8OvP10iym9ISjlhIGD7vAXWW0QDLFzwWI8gKcnIEK09tYC8+oDswIe7YFy6oohRQtEBcHHvF7QqCROIcg+P4Gh/tGwWkEHqlLsBwqgUpVbFEJK5KUVoLOPj2e0qauGcLBHSib0OBHCDq6axDExYvxE4snudxgkdNIIKoVi3nqYrRLgC8CoXLYMgq2geD3eDxgHEe4xGYQYOczDNgNmqYJTtPENfWDG6+UyguVAIkfpRXPG2NyKskoU+Trqhqxc4BZmT5fGEhOlRD5IQImo8Iu1TZi3n8TlXBwGLwc5+dWsPD0OUdCKRW4GAEToBKvpdPHsYsgWWNmTvrFR+djHGBCGMOtyRaSyanHe1EAetg2+r2qKj7JqZukgxb3T5TKxOLksLUYLTWnM6bldgvtivZhaRQkAak2KWgq7GYOPEdbprHM0cT1gmnx9/AayXuxqCMu5piVflayXG8FyyCODo1A5WlEeSARSKmiOdojCqoE7oH2YNlU1zEgG4KSUTrVI9SiRigB5fUKsHjBfgx7AaX7CGRFcf/cNRwdfwDagnEKaSHu4LTwhjKa87Hpktk3kD3YWsnyvkhlMh33uCydf4ftKDuyo/8i/61s6y2xZysYnTB+V5ZHfiMAn5py2ZzTddjDuU/twajtlEZv4xabcV3PncPivdYatszOjTtF69O3hFEkVRzT99ZbFy7jIl3wxZeB/T0sDkaciwP/B0ogWsQlWFpcFWN/xSJlr5geHo1J/nN90buL/lsCTRv68QdgfTSXypKx42W/ftybeVuoWqUxSS2B6/b+uunl/FKF37r+C2EYli3qKP1SAAAAAElFTkSuQmCC",
+    "price": 95000,
+    "reqSTR": 0,
+    "reqDEX": 160,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 50,
+    "tuc": 10,
+    "incDEX": 4,
+    "incPDD": 55,
+    "incEVA": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 4,
+      "min": 0,
+      "max": 14
+    },
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 11
+    },
+    "incPDD": {
+      "base": 55,
+      "min": 5,
+      "max": 105
+    }
+  }
+}

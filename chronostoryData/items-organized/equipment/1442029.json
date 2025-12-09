@@ -1,0 +1,40 @@
+{
+  "id": 1442029,
+  "description": {
+    "id": 1442029,
+    "name": "Gold Surfboard",
+    "description": "",
+    "chineseName": "紫色衝浪板"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACmklEQVR4nL2WjdGjIBCGNzPXAC14JWAJWoKWEEvQErQELUFLCCWEEo4SQgncLghikm+S+Gl2nAFBfd79AfwD3zcT9U/fFGDB5mZAaQ1aK0jT1HxDQACTebiUyt4fKWAFlkoiVALnfPXQUQJM7LEVMMOpTZIEqqqk4UNqwNzmPJNRuMk83Lfe9hZg4iKTZQcKNBRjG0RonKuqim5Pewp4qPCpbOxEMfYopAE+1k9f3EOAua9wgifALDSGk/d5nlP3tJeAh3x7zx28W8GVUg8f2CpgFfIYTvmm1vdjeJz73wgwl/4GWcF+hJO9A98iwMLJxKQhyX4H/1SALTYCS+k3F4QIB90C/0SAGVvnOXnNOAONcNGVkNUj3qtVzj+xdwQE+DRo4AUKYNhH+PnSw5DbLXUFd97rl96/IyDA6YMKQy8ECgCKAsEryNrezskJo6IdnNpBlC/hrwTYnJPXHu7cs5cDsRqGTllB2k+gTWq92WwREDynkHPnMyhBEXAeehjzXTvI4FN7JiDAm0rNH55RdGEBUA1QVJgH0jM0qD/z/icB1mipaaWXAeZC7E5XDfr+hQ3wZwKs9w/wGfAEG0K/BX4vwLSXAs/vCliBi7yrQ0qVSGzrQ+4KbknNVvi9ANATnVwU4wKSvlxKqulXL7EoEN3w3nJ7JcDUxT/kVmFC5ldc6+7XibfLeBK9nDrsZngsAFiNnnAZTTWLmMpFoOgXIXvAvQDTXt2vsi5HLL4535kMnrNMhHSkC/LXcC/Aeq7SawDbIYRrjb9VUcL38vpBgBaZrfjkkoLKnRBhW9xsapeKMpe7wxcBjTvJKArZNcWjlttUqOHswYfAvYDTIFNz5ldIigmmv6OdmBQtr+kwcCwAvAiQq7lDwd7+AxKSxVC502MFAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACyklEQVR4nL2Wi7WjIBCGJ+dsA2wJ3hK0BC1BS4glaAlJCVqClhBLCCUsJWRKYGdAEPKON8kcPSCo3z8PxD/wfdNBf/NNAQasTxoUIiAqyLJMf0OAB7M5uJTKXH9SQASWShJUQpqm0U2fEqBDj42AGc5tkiRQ1xUPf6QG9GnOMxuHm83BXevs3QJ0WGSy2oMChHLYeRFIc3Vd8+XmnQIuKnysWjNRDh0JaSEdmqsPvkOAPq9whicgDDSEs/dFUXB38y4BF/l2nlv4PoIrpS5esFZAFPIQzvnm1vVDeJj73wjQh+4EeSluwtmega8RYOBs04iQ5L+DvyrAFBuDpXQfF4JMFroG/ooAPeys5+y1SAUgwad9BXkz0LWKcv6KPSPAw8ceIS1JgKA+wbeHDvrCfFIjuPUeH3r/jAAP5xcqCv00kQDgKDC8hnzXmTk5UlTQwrntp+oh/JEAk3P22sGte+awINFAv1dGELoJslHFH5s1ArznHPLU+gxq4ghYDx1MuK4ZFPCqXRPg4W2t5hfPKD6oALgGOCrCAfkeHsTXvL8lwBgvNVS4DAgbYru7IuD5Ayvg1wQY7y/gM+AK1od+DfxcgN4dStq/axAlLfJ941OqpsS0LuS24JbUrIWfCwAceefiGJeQdNVSUm0XPSSCQOz755bbIwG6Kf8Rt/YTsjjSWre/TuluGU+ChzOLXQ0PBYBoyJNUBlPtIqa2ESi7Rcg74E6A3h3trzJWAxXfnO9ces9FPvl0ZAvyLzy38PHepI0Aea6yowebIYIj0m9VkPAZXsyX8Q/+fTgG56UAnHLjS3LIQBVWyGRa+tg0NhVVYYS1M/ia57c8dWA1n9F9VkBrdzKOQn7MaKtNTSpUv3Vgth7iGnzG8NENLGDTy0xv0yMk5Qjjz2AmRsXLa+RuC48N7/TPzwsB4ESAjOZ+4Hqo/f5zR8Q9UZH9B1z03XHvMSSDAAAAAElFTkSuQmCC",
+    "price": 1,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incPAD": 39,
+    "incJump": 5,
+    "attack": 2,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Pole Arm"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 39,
+      "min": 38,
+      "max": 40
+    }
+  }
+}

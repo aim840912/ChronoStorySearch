@@ -1,0 +1,19 @@
+{
+  "itemId": 2040352,
+  "itemName": "Scroll for Accessory for INT 60%",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5090000,
+      "mobName": "Shade",
+      "chineseMobName": "冥界幽靈",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

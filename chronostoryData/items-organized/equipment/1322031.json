@@ -1,0 +1,45 @@
+{
+  "id": 1322031,
+  "description": {
+    "id": 1322031,
+    "name": "Pig Illustrated",
+    "description": "",
+    "chineseName": "世界肥肥圖鑑"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD1UlEQVR4nK1Wi3WjMBBcv3cN6ErQlcCVwJWglIBLgBJMCVYJoYSohKiEqIRTCdzMSmByzgfHUUKMhaSZnZ1d8kO+Z8yb+8PeTd8BPs8vTyIpSs5Zfj6M814C94Ir8Hh8WCdezp38OvpdBO4BX4Fb16+T0zTuJvBV8Llv3n5AInsJfAVcgbvGShqP0p8fJYQoLb4vI8s+AreCK3BrjSSYSwcItP35FYHy+TmBW8DnrgJvB0lkEGjaTkJMNxHYC67ACcH6BMnt64cssRT8zQT2gKvUDSKeUpkIid+vCQgI2KYFAdlF4DNwjbgxRni2wU/XdTL6ETJcE2AKbAyVQJamKSXR6MIOBLy8nEBgKAQ+Ap8X9sjq+mkx55yTyU+SqxJ0Aa1gFgJSCMQYNwSaKwLvgavUkWayFnIjClNgeHjbujXSjGcJrZV+WISIjDpXBVgF7YVAmOAb/nlHdgW2xuiBBp8GBGJKkkFgGL10roW5WmmNVT0SFk7eK4k1BZgzacJaVxSwjYyoiryU6BvgmmMC5iolN56fnnUT78dxFA/JnYMCiIxrLcj1fY8oEW1Nkp8m9UmmB0B0C+wLx1c5V2BGXBNMT2mE3EQAXhMOTfoGS+thGarQC5Q34PkEEtzPVDF1AgIOqfLI9wK8jbxETMtk/ZXAT1yuL9FpLad0oUpyIJBQ15w3AeDIKX2AKTSjy1KP2kzZg8gFeAG/AJczdRHzzdo2xlYTRTkej6sKajbMBQXnroSIo2jCTNlPj9CQGvx/wG8aLtXITx2MAnkDnEl3E3RRgIaj1ATmwY+PZyFihLycL03BqCIZZ7wFvIIrcboWVGkyOrRRCREV8udxcU2PnDZtr+4v7i7gESRY+8a4NT18/hHwAn5ASrShUGYHg9m1NaJRmKiHE6WYERHBVPzeUn4mzGxSBqWCOj1/CLyV/QAJ5+fHk8q1nGRAJsN5nDlB6qV9cmgfMKXdsoZ1Sy1HrkufAG/BdeHvh2HukWtKKCbrYbzY24v0GSSc3jeIms8C6j672vFSKb89wP+DS+/an6Of/jLS1tX8rXKj7GqfXpze1M6XYiFm+GKLaRfwFfg4sbrlMPhp5r+ELfKvgw6v9+xfSg5ECMyy0/oGmSHE3cBX4JtxgAKzqTUdIg815dWYiwKppqTrnPpkGPxNwB+B60HDFPCSsVpagTWPy9a+n/Xt1iipPw/DzcCfgeuBI6qg15e10V5PYFrA2gp8/BrwHvBCIOW5N1lsBddaxz8M005X3wNeCGSZT0YrUE3n5T7gW8AVaACBHgTGOyP+CrgCUoHvAOb4B/ptnY0TI8u5AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEEUlEQVR4nK1WgXWbMBT8fq8LKCOoI9AR6Ah4BDwCjBBGsEYwI1QjRCNEI1Qj0LsvgUmMHdxWjQoISXf//n3hb/J/2rS6P+xd9D/Ap+n9l0gMklKSl+Mw7SXwr+AKPJyOy8D7uZXvJ7eLwL+AL8B10y2D4zjsJvC34FNXbb8gkb0E/gZcgdvKShxO0p0v4n2QGs9zS7KPwLPgClxbIxHm0gYCdXf+QCBfvybwDPjUFuB1I4kEAlXdig/xKQJ7wRU4IlgXIbn9+JIlFr17msAecJW6QsRjzAM+8vmWgICArWoQkF0EvgLXiCtjhHsb/GvbVgY3QIZbAkyBDb4QSFJVuSQqndiCgJP3VxDoM4FH4NPMHlldrhZjTdPI6EZJRQm6gFYwMwHJBEIIKwLVDYF74Cp1oJmshdyIwmQYbl7XzRJpwruIo5V+mIUIjDoVBVgF9ZWAH+Eb/ndHdgW2xuiGBlcDAiFGSSDQD07apoa5aqmNVT0iJo7OKYklBRgzccTcJitgKxlQFWku0Q1wzTEBU5GSC8+/3nQR74dhEAfJmwYKIDLOtSDXdR2iRLQlSW4c1SeJHgDRNbDLHD/kXIEZcUkwPaURchEB2EdsGvULFpfNElShFyivx/sRJLieqWLqBAQapMoh3zPwOvIcMS2T9E88r+hNl6PTWo7xSpXkQCCirjluPMCRU/oAQziMrlMdajMmByJX4Bn8Cpz31EnMN2vbGFtMFOR0Oi0qqNkw5hWcqyIiDqIJM3k9PUJDavCfgDcNF0vkry2MAnk9nEl3E3RWgIaj1ATmxpfLWYgYIC/H86FgVJGEPbaAF3AlTteCKk1Gh1YqIaJC/hw653TIaVV36v7s7gweQIK1b0yzpIfvHwHP4AekRA8UytzAYHY5GnFQmKCbEyWbERHBVHyuKT8TZlYpg1JenZ4eAq9lP0DC6e3yqnLNOxmQSXAeR14h9Xx8suk5YPJxyxrWJaUcOS9+AbwG14k/jv3UIdeUUEzSzdh5tmfpE0g0el8har7zqPvUlBMv5vLbA/wZXLqmfhnc+JuR1k3J3yI3yq6c07PTq3LyxZCJGX7YQtwFfAM+jKxuOfRunPiTsEb+tdHh5Z7nl5IDEQKz7LS+Qab3YTfwDfiqHaDAZEpN+8BNTf40pqxALClp20Z90vfuKeBH4LpRP3p8ZKyWlmfNo9ty7if9ulVK6uex5/wXETF39kpbg4/AmemXIcTfnX6sjZ71qbywtgCfFPgn+p0f0wtwWvW74Gbu+aCU4xDTpTNJ7LKSRLyM+QE/a6R+FOEKNJaetsBnYLu6KsCAH+OvJjOi6Vwed3Jf6jXwZrsX+dbCvkeZd3g75NH+Acjn+899E3yWZk1gff8DwG+Sc7wVUXrwfDP/D2kGummunK4PAAAAAElFTkSuQmCC",
+    "price": 20000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incPAD": 42,
+    "incACC": 10,
+    "attack": 1,
+    "attackSpeed": 3
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Blunt Weapon"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 42,
+      "min": 41,
+      "max": 43
+    },
+    "incACC": {
+      "base": 10,
+      "min": 7,
+      "max": 13
+    }
+  }
+}

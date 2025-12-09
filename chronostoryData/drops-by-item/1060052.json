@@ -1,0 +1,30 @@
+{
+  "itemId": 1060052,
+  "itemName": "Black Knucklevest Pants",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 3230100,
+      "mobName": "Curse Eye",
+      "chineseMobName": "風獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230306,
+      "mobName": "Chronos",
+      "chineseMobName": "妖魔",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

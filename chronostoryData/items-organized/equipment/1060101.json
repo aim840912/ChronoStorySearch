@@ -1,0 +1,55 @@
+{
+  "id": 1060101,
+  "description": {
+    "id": 1060101,
+    "name": "Blue Commodore Pants",
+    "description": "",
+    "chineseName": "藍色強化褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAeCAYAAADZ7LXbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC4ElEQVR4nJVWgZGjMAwUM2mAL8EpgS+BL+FSgq+EUAK0QAmhhKOEo4SjhKcEv9a2jG1M8tEMMWBZq9XKJhc6N8NX9cb7UzsDMeaLI/05BDQPTXQb3wM6A6kAYP7eqfo1GHn53RP97tw8vWE5SAgIJrQN9v7nQXS9EdWKKGLyzJIkYhDzqGta+abbNiIOWF355Q+/WHcgsIHBl9yUG7HG25jpljC5RY5U3/lncEBfDsAG46ht7vvCBMRoyYivmWrWgmvCmtiSeSbb6jQBCC4VrRFTIcbOJjBRTH/korfr4p6VguhJmQCgVEMz+2i/BmWSwBhnnlc+xqFccNCcqstqs2BYcL0t1LQfDDDZsZkn1NwClJLbYxRAcsPivu9pnhdq28ZlqDjwwoXweggDCYw1toQ8avaRBkhAbEabywhlmMaRdVhp4Swx1lzCJhK8Y/++kHluADG9b92cSav1zoTHnEnuT54Zb4GKYxrxu+S0saEh7srZv2ICFvF6qQDvIRMnnQgfT0DcnrNeP+47k2kISXQMLJs3tLLTwT7bRnJxTADpog6haNHM3SRM2pMN+D+aWAulatowiTprrXfvoTvooXyCejtCWZ3Y/yKZyNlTewEDE9YFWiRM0KqczI3LGc4wXyq2ioW35yAagOJyeQdunola1gFBRg5ixW21ZdGRYNSc4M6otAHxjA7rApNoAYLP00BnhnkkEgcrmGUjhb5ELCw13OD4kEw77Ivu8wAkbDCPfTbSuR2OFSyua9fQCGIbgcfVdV61LrNBEuLzxCp/rASQ8IERTcRWMMks9kESnffxmzj+YKXCi+WauIXIeKtOfTzbM7tQ4U9BrIkDUgAyHiiUDLZFbX0CVL3U5Jklfqnv6TfeSHuWNakptoNf+KI24b4EYg1lyDVxQdJOekeXQrnUQZPSYpQVTLZtfalLDGIFTY4MP+bdBV8ul0mS2feSnX/GxC6mo5X+lpZ8i39f/wHY9dGIdtBiegAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADFUlEQVR4nJVWi3WkMAwU720DvhLYEkgJpIRsCb4SQglsC5SwlBBKuC0hlBCX4NPYlhHmk2TeI2ZtWaORZJMLHcPzU/1i/hRHRN5/sLfXjVP/sES34fdkR0QVSPzXO1V/7l4m//VEL11cp1+iJMpOoYjcPbx/PoiuNyJTEylFZ9gEoon8wxia+aVzjoidVlee/OSJeSGDKgC2FJfiiD0Jw04dV4puypjMO/+5R7KPSBIcsue2tP0BhMhbiYyfiQzXhvPDNQrpS4rcHGsEIjy12iOos4+1qqyo5lQMXIR2fsbfdY1GWKUMJHXd0MQ2Nu1BysQ5xonX6+RjT1EwshxyjM4FQmy63p7UtG9MMoaxmUbUIJDsBbj4OCAqAQd939M0Paltmxhpzc6fnJRUH1EizrEnpJNHyza6KVZEITIXI0NKxmHgusz05GgxGk5no5qgY/v+QMGeIt+nti4VtdYuingsFZX2lBTy8ajYp9d2lzIFOPgo+MwqvlMENXq/ZILPmC8DXzWDXkTBe45+fntfFI33HEjH5HLAc5vHuoTfobloObyZqFOdQ2rjxF0mitqDQ/rTGgXktDVtXkTerbWL9b3b1KdOQVq3pQt1S/YXiUjuKpOKmhVxnVCblSK0MQd049TmOy+ljVFxM4R7E01B6aLOipIRN9VILdcFjgZ2FAre2qCmI+ExHOiibO+Q4jc6r1spUptAMI13OgLWEYx2uIOgSiU9EolkkYmrRiLucG66vxsyUYV1nMOBzrG5guDAmNjscBSag8c5dmQ1PyePQMTmBNWgPqRClK9zqZFghqIC2gaBdMkmHXT9edg2g6CsUdyMyF11aJNUn+FCO993XaNIVoPMJ7KcPsCplj8g297e0X5dozOs7Na2p/8zeGnd/RqZ/AfY2OUvc5Pfj4gCkJKyRtFR6LAmz39fJ9g6eYQoR4p0lDVSDtrFzgRFzs1HdRKicMNdEgmeV07Tx+p6SWPqukEFxLfTaFcBLWcNkNsqo1TE9+T4oC26vTm27Yu5m+SgfC5KnpBd1buGSbYaLztzbu/9P7BW5OKKk8StAAAAAElFTkSuQmCC",
+    "price": 140000,
+    "reqSTR": 300,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 90,
+    "tuc": 7,
+    "incSTR": 3,
+    "incPDD": 76,
+    "incMDD": 6,
+    "incACC": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 12
+    },
+    "incACC": {
+      "base": 2,
+      "min": 0,
+      "max": 11
+    },
+    "incPDD": {
+      "base": 76,
+      "min": 31,
+      "max": 121
+    },
+    "incMDD": {
+      "base": 6,
+      "min": 0,
+      "max": 51
+    }
+  }
+}

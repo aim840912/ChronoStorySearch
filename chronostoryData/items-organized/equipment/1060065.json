@@ -1,0 +1,49 @@
+{
+  "id": 1060065,
+  "description": {
+    "id": 1060065,
+    "name": "Brown Legolier Pants",
+    "description": "",
+    "chineseName": "褐守護之褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAbCAYAAACTHcTmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACd0lEQVR4nJVWAbGjMBDdzJwBLFAJVEItUAkgoUgACSChkXBIaCVcLERCbl/gUQjQf/dmmDRh8/Ztsrv0l+wR5P9h1pOUNIQ/pUg2P+4+rXo7jW+RZsikLLwUxbyka9chCjFHpCG8ph9D3UjVy0LY1JmMzsvrt0hb+UisLxbiQqdv/yE+Cl8J20kpFOrY9h+l10akL/3G/qXmpj4O35irhBJcfpA8H8WpuizLdCx0nmuoyqqq7uO8Q8dC5drabs51p7SqKrHWStu2MgyD3G43GccxbsYIcowE5il2pFBTqtymaSJx13VxIxyRmKDDH0kBboZShA9Hzrn4DiOceu/lDJvbhzKED0JshDqqZ9jP53PzvphTQH9/v/0UUEUHANR/w4YUZ4TNUIHQqW4OHSoC5oiGl4gxZsDK6YaURCDhmaVnF9NqVkvFXDtWmtlYdo2qmfLTcQNz0ODs4AjOo9rciUvujKThUWZqiEdn4+w5i0W0Q1Xg4pxYJSch9nfWx8talLYPfZv3sYkUMjeK6ZhMwmnundc+obVfPqem857su134UdLHgM3iFF/sF1LrNHTJYr1rx9FQRMqbro9+09ZwVM+HFgRs7RQ77dG5NqSjL9XILRX0wb5yhrc2GJ8vRfGxT0iRa2wiyFPWPMtzjb7vIxHzFXvXdqcVBcI0qc+A6NaKQRrgmbXMKjlTCbD219UF4pkj7JSymkCKI5CDlKrrOsA5VaaIpOyLVMlq+gbaIzr2WzqKpFC2fv4FjGi9h2Mk1XDijUIlgAP/iRykUMcUXH9mIikOGIt82N3xSTkD0m/dsQCmFkiNbg4pwew1vSTCXC6Xs38y5i83WqWIpJE1QAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACw0lEQVR4nJ1WjZGzIBBdZ9IALZgSTAm5EkwJWkIsQUvQEqSEs4SkhKMFSuDbh6zxBz3v2xkGJLBv37I8cqF9c/R3S/Z+2ANy7icnUqGZxzhr9di/iapOUZ5ZyrIwxXO3zgcXBYsBOfcaB11ZUdHSBFKVigZj6fVNVBfWg/EPE1jGn28bBztKHYPUIyMw4b5uP4xuFVGb28X6Fy9PyrivGFCS3Mjl8G87StOBDLNQSnGf8XfKaWIkjv4xhB3cZ0xLlz6Q06kb2RQFaa2prmvquo7u9zsNw+AdogcgejF8H9kuEKLOmVZVVR6saRrvDOACJiZB/BcQTByCEVIHcGOM/w09ArHW0hmLVh0YIHUAgTOwEJaSsr7vF79nofR4/PeqWxuiF1AYWJ61KBByDoeIFmkTFiFtiNbhG6ylUND7ypsF8iuQOIdjOYP1WfgSD6yEmcydZ6S0l5SKox7vjxEnkvsEZwFwBORZpYbMQV2sgdwzV7wZjb+GEKHyYrCxIkNxGNIMKCDY32i7KYgNo/rJO9LWCynqyIvlmPZ1JSWPxrIustbl/Si873F9c4JRCP2zSQRz106u3wBpw2kj5fWNlZjTQJTfeX7YpMP1T77EWKvHvMl6KPqvQIPNeaOZlOBj283dm0XWptNF/qw/AYS7IEKKeyQaJ9Izt7ZtvXO5T9gbWxcFWhtAji7i3JCFJbM4kEOEol1y2/fYwETr5ioBsOBjcaa7jEQVAIT0UaS8y7J0CEjYHNkCSN4VYSOqcGSyHlmQ90rAd4HAYN5WFg1ZmM/3xN6oBRCnwlcS2MBwqLNN0asIILCQ67B64iFkcGAFyEeLQ8RCafKK4jkPQBtWuApzJfcLP2WOPRiYS9iM9sUOv4PTyUJ0XYhubd31ei0obos/XgtG5EVrGp95Pu3MoV3NL9olDMzKcQxEUUxbtnM2Nv4HIh24ke1YTGcAAAAASUVORK5CYII=",
+    "price": 36000,
+    "reqSTR": 0,
+    "reqDEX": 115,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incSTR": 1,
+    "incMMP": 5,
+    "incPDD": 24
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 23
+    },
+    "incPDD": {
+      "base": 24,
+      "min": 6,
+      "max": 42
+    }
+  }
+}

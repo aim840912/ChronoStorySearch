@@ -1,0 +1,46 @@
+{
+  "id": 1002631,
+  "description": {
+    "id": 1002631,
+    "name": "Brown Leather Ocean Hat",
+    "description": "",
+    "chineseName": "褐色皮製遠洋帽"
+  },
+  "metaInfo": {
+    "reqLevel": 50,
+    "reqLevelEquip": 50,
+    "reqSTR": 50,
+    "reqDEX": 50,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "price": 40000,
+    "tuc": 7,
+    "incSTR": 2,
+    "incDEX": 1,
+    "incPDD": 33
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incPDD": {
+      "base": 33,
+      "min": 8,
+      "max": 58
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

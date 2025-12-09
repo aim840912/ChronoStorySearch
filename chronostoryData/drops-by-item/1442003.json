@@ -1,0 +1,30 @@
+{
+  "itemId": 1442003,
+  "itemName": "Axe Pole Arm",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 4230101,
+      "mobName": "Zombie Lupin",
+      "chineseMobName": "天使猴",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5200001,
+      "mobName": "Ice Sentinel",
+      "chineseMobName": "冰石球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

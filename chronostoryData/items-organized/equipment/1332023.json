@@ -1,0 +1,34 @@
+{
+  "id": 1332023,
+  "description": {
+    "id": 1332023,
+    "name": "Dragon's Tail",
+    "description": "",
+    "chineseName": "黑精靈拳刃"
+  },
+  "metaInfo": {
+    "reqLevel": 80,
+    "reqLevelEquip": 80,
+    "reqSTR": 0,
+    "reqDEX": 120,
+    "reqINT": 0,
+    "reqLUK": 210,
+    "reqJob": 8,
+    "price": 310000,
+    "tuc": 7,
+    "incPAD": 85
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Dagger"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 85,
+      "min": 81,
+      "max": 89
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 1041064,
+  "itemName": "Blueberry Lolica Armor",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5200002,
+      "mobName": "Fire Sentinel",
+      "chineseMobName": "火石球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

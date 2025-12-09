@@ -1,0 +1,37 @@
+{
+  "id": 1002027,
+  "description": {
+    "id": 1002027,
+    "name": "Steel Sharp Helm",
+    "description": "",
+    "chineseName": "鐵製尖頭具"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 22,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACoUlEQVR4nL1Wi5GCMBSMMzZAC1iCloAlaAm2gCVICVCCliAlaAlagpSQyz5YfAlwaG7m3smQQJLdfT9uaf5m1l2LmI3RwEmS2KZpYrdHA9vX62Xu97vZbDZRqqOAnVoBretaxjHKY4Dt9XqVQZZlcsWo/hoYCi+Xi1mv16L6+XyaGPsa2Ll1UVWVTdNU5h3wv8QYbjW73U5i60j0z74h8CkwDza3203uTCi4vCgKGTvXf0zgV2DUKmJalqVTVpjTqfQyGDFGvLNdZppn496f5Pl2u50lMAUsMQQgDKB5furLCO9AAKAYV0Ul7xBvXPAKSu14PE5m+wDYHWTP53MHWIkry7Kd4zCA5XneZzNijTWN+8MPRBygkMZ4v9+PgofAFmydq9ympHOnMYfDQcaoWZYRSYEI3Y87x4g7COJy4wG4BwyGcBlUcAwwbXQpiXBOxQCmy1lyII4S1OBLdaB9PB7oQqIWSpMk9YAJwlZZ1xc87d9rxbivViuDLgf1YWtdhpu0WjKGsVtRLTM43H/H+061NpyrVRPYiy3V8nCA4gIZGhIIa7EuBNeqsa9ztUfEi7FWSxDGCkmiXfWJ4jYctXhKkx64uq3LdgGUgAg3hJ8+Kuba9xqANqN7dJIB2II9GEJVe1DSZ+eYhZkeKkdqEJSqQ+sVg40rdlHJDSynVl1qpgyuZF2H2ctejjsMzQlNpQcGaMgcBtA5CxNHGz8g4bwHhjKq0nGVdjjzrw3VzL1jrzddjD1VcLV0IlUWaBI6KfH8nfm4mkHW6rVcrw3AXg91mW0B7idEY9ihtPr2QJ/MlMGbOlnHPouLMfDQ3bpJxNjU91jAORl6oDXdaDgPrS2vVi3j+xtwvwA25oEhSDIyfrtfg84BeyS0B6jkS/Ny6QeT7uSEk+8z4AAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACy0lEQVR4nL1Wi5GCMBCNMzbAlYAlaAlagpZgC1iClAAlaAlSgpYgJZgSuLzAw2UJfnIzt2eGDfm8ffvj5uZv0rgxizkYDZwkSWOtjT0eDdw8Hg9zu93MarWKYh0F7Nh60KqqvB7DPAa4uVwuXlmv137EsP4aGAzP57NZLpeedV3XJka+BnZunZVl2aRp6ucd8L/EGG412+3Wx9YZ0b/7xoBPgXmxuV6v/smEgsvzPPe6c/3HBrwERq0ipkVROGa5OR6LQQYjxoj3ers2trZu/ejfbzabtwZMAfsYAhAC0Cw79mWENRgAUOhlXvo1xBsDXkGpHQ6HyWwfAbuLmtPp1AGW3pVF0c5xGcCyLOuzGbHGHuv+8IMhDtAbDX232wXBNXADa52r3KGkc6cx+/3e66hZlhGNgiF0P57UEXcYiOH0EfgAGBbCZWBBHWBS6FIawjkZA5guZ8nBcJSgBJ+LC5v7/Y4u5NmCaZKkA2CCsFVW1Rlv+3XJGM/FYmHQ5cBet9a5PiTZ0mIIuxXZMoP1+RvWO9ZScK9kTeBBbMmWlwMUA8ZQkEDYi30aXLLGuc7VA0MGMZZsCcJYIUmkqz5h3Iaj8p6SRo9c3dZluwFMYAgP6E8fGXPvcw9AbfCMTDIAN7AeFoJVe1HSZ2dIdKZr5kgNgpK1lp4xrHHF7lnyAMupZZeaKYErWdc6e9nL8YSgOaGp9MAA1ZZDAPpOdOJI4QdEz3tgMCMrGVffDt/8a0M279bY600X4wEruNp3IlEWaBIyKfH+mfkYdpS1ci/3SwHwoIe6zG4APkwIa9ihJPv2wqExUwJvymQNfRZnIXDtbtkkYmTqe/zjwB+cjD3Qimw0nGtpy6tly/iGgBMxNtSdEYUGH4MkAf3p/g70hzvmajdGKp58nzvwTDP5UlZyEmLc363WXhW0faHrMQLGy9qEfaaNC9G1L+aj/b9cHfNITtz88QAAAABJRU5ErkJggg==",
+    "price": 5750,
+    "reqSTR": 45,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 22,
+    "tuc": 7,
+    "incPDD": 22
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 22,
+      "min": 11,
+      "max": 33
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "itemId": 1041048,
+  "itemName": "Black Steal",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 5200000,
+      "mobName": "Jr. Sentinel",
+      "chineseMobName": "小石球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5300000,
+      "mobName": "Leatty",
+      "chineseMobName": "利堤",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

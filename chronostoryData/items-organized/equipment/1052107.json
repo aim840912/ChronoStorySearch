@@ -1,0 +1,49 @@
+{
+  "id": 1052107,
+  "description": {
+    "id": 1052107,
+    "name": "Brown Pollard",
+    "description": "",
+    "chineseName": "褐色無袖服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAcCAYAAACK7SRjAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC1UlEQVR4nIVWC9GzMBAMMzUQC1igErCQSqASigSQUCR8WIiFSGgkNBL4by+5FNLQ/2YYaB57m71HelHntqnf1vxvXQ2cF79erzwQQlDeOxXo2zuv2rZV9/ud103TxGv6vldd10WvDfttSvDt/X4TkFfOOcDmCUdj+AlgAE3PSa3ryoBa6y/gKnMsBAAMbBmUrNUEanqes9ZGYPoexzE6ZzIHuQ7gmxkMswYAmOAxhXPMj/PIwJocPh6GgRN4s18r4Bs0hrbLOqvBPDL7PSiMtCbgjk5CJ0xSGGOYyO1220rmGRiSmH5QyzKTrubgAMyWZaH5Xuk0vp/H99/f38EBM+dsoM0dNpKDYXhkBzBrV4ploPGB5/HIacSBpRg4n3XPzJvr9bo9n8/DhDiAiRMBApkIHsF80nylQKtaQEuNxUHNwBwOuq4nUFsFPoCXxzyzco2zdeADOBiAiRy5NBnfS4M9v4yzBVH2RTBK27P9aO4pc/RXlhyYt1wQ+pAxv0xYo2qR697ViV2EAfcMKgZslJw/A8YcMgj7AGx/gc/zzN0NG88CKhWaJSFABqenHqUEDs1iWRNwSTjIC203xIHwmULFfrpoBZyCwczBusZcWMvb2U+WLFSZZxnG4H2n1YzWyaw/pS2GJhWKMRlHaPC27ttB7i0gTKGiY7ap18S+jn4ucgUf+8pqaaxL0gTUyDnzZlndZugiEGDJCL9756jRN9bBwZkcB+YijQA73GgUPIAya4WTRblCcoD1iC/ffr80l+OpIqmgJdpo37WH3A/7PT/qjct/oqsK+3BtcbfTxLpNmxOS9PF0AD4VToP0xJIuxufrJkr5q1TMwihHCJBJCufDF0H3ubeELEmtoi9xIk6KEwBonYLpAs9zTJFFO+n0LnWtrV/QzbxY/oPznEy+CBAoGudFC+n+GPqc0wDkNXyh54I67ec8cR/X8q9Z3iAEKtacjKt/xwjgd2DomHgAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADIElEQVR4nI2WjdGjIBCGcSYNcCXYginBK8GUYEqIJWgJsYTPEo4WKCGUEErw9l1cRD802RlHAus+7A9LLuqzzB/Wiy/0ijMQf/h6veKE9145Z5WnsbNOlWWp7vc76/V9zzp1XauqqoL1oogbOQLN7/ebjDplrQUiLliaw09AYLR/9mqaJjautc5CzkD8EYxB4AUDSEpNgKbmNWNMgNC467qwEd6Y2kCOQHPTNuwNjGGHeJqdEta7oWOIJvjj0TBkARV7o3vQjJwgF+M0qLZ5RK9SAIRyQ5CKPCTPl3A1TcObut1u85lHEYKwNXWrxnGgPDQbGHY8jiOt10ov8+k6xj8/P79gG4+4qshQBSMEa9tHhEGMmagOPM23vI5HvBSYoZxZZ9VeUlBxvV7n5/O5URAYRIBiFBsLoGDYLTmaqEjUp2LY50RgOYFHgFVVTQBzCMmCwg5dFnimY80xJAvCzrBDCcteZD4NH775JJuqQ7W4TCJTSb1Yc+SoAnW22nIgNoK4p5V3JuINugXOkrPHm9yAJO41HTwYkTN1BMEaKhHfAWK+BQ3DwF0YRo6KQTpDDBsZZxA9+axmQIhxaC0E2Tvi5YWrwocJvy6hU6zd/gOIEskewZucR+KNvK1Zq22kjnBUqb9AdaXVgHbP3qztRQQN1O/mZB6pxNvYPOxXr4MjlGYKRbn0vnAv4T6SkHoX+txkaK6Sb3EGv/OoGCc7N3SpCUQqyyXvmHEaQw+ws5BlPYIgfAKxuLUp8QCwNwoeh5D6BQZ91Abf8N/mSEKgdoWK2KP111W5OVs+/eb8bG9bUE/XMWzgauaurMmbcjG0WJV7aHGMvYWXKHmoVCGfpzfscj6UCpUdQuY9QimHdPUDBeNir/MxbEedZAMK3ugIhDGtl0Kwnte5HlCNSXh1chyM4QP75wxUDKPhP4PPvomXGpJM86wwUp4ebR3PDIyzDv+ZiYf3L4KyjCXoXkB6ea5437vp325DnegRNH/drjrVDoK4u0sCKZN3p9Y6kjmRcQfwid5+LsrlC6Wz0+hPxpvnolb3UliudPQB9Gxjcfwfyv/6Hj4ZKw4AAAAASUVORK5CYII=",
+    "price": 30000,
+    "reqSTR": 30,
+    "reqDEX": 30,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 30,
+    "tuc": 10,
+    "incSTR": 2,
+    "incMMP": 10,
+    "incPDD": 35
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 8
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 40
+    },
+    "incPDD": {
+      "base": 35,
+      "min": 5,
+      "max": 65
+    }
+  }
+}

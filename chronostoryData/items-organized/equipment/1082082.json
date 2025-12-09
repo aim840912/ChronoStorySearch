@@ -1,0 +1,55 @@
+{
+  "id": 1082082,
+  "description": {
+    "id": 1082082,
+    "name": "Blue Pennance",
+    "description": "",
+    "chineseName": "藍元素手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAYAAAAYyi9XAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACJUlEQVR4nK2WjZHyIBCGl5mvAVMCVwKWEEuIJWgJsQRTginBlHApIZQgJRwl8C27gBD/7/LOOASy8vDuLo7/YHm52Vzkk6WBrmnPoJQEYwxoo0H3XTyAWBroZN0gaIR2d4QegUoqgF0LYC3oofdgsRSwcLY/HJBhQar6JnAJYOFspKWa0zl0CUox4+D+CiRnqxVPorOVlAxBmNEjzlX6wqfAogNjGmv8jNqAsQo8myDxFDO9A0yQuj3h5nzaUWtKI5YMtaPaeVlrCBad+Y9fk8HlM6CbQ7yTQrjuwX3f0ZRSiSnNRfAR64lx8KBLE4ghikBKcoq0sZS+6DIHYVNQ3biOKrhN9bt7D6kJjNUU3GBnRXkQQ64wH0NCQITkTWL11VncJwc6hZfUw6ZTB9fSCeiGKQVFVwQL6bNh9OmzYcx096eNYAxC+YNLkZ7bZk2PX5smbZyDcv2cDFT7ESw3kZi/Tw4JhjHVVs1j4OfMri7fQwHO5Q8xHXva4xGsAFZrBvmi+9ppulcMqrYz8CmA91fHESY28BCWAwUWmNLqYan9dXjrz4LpS+BjCaYSvAHLgQST2MI6dGEcyWVqCj5IdSjBgMvi6zUsB5LOx216Xo8tP9zpxEuryU1wFPUSFoHO0Q3gpomaWu7YWKcIm3b9x5A5MIFCWkjuwuO8QSjujVo9AwoEFX8DAtzdgOl+wp+UuvTOO1GAv+Gj5ngFfCYGb26z8Bv9B4mwLbOTPeXtAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACbUlEQVR4nLWWjZGyMBCGNzPXAJSQKyGWgCVgCVoCliAlSAlSwlECKcGUcCmBb7P5MYmgMse3M5n8rXny7m4Yv2B7m7I5iydbA6e6uYEQHJRSIJUE2bX+Amxr4MSrGkEDNMcLdAgUXAAcGwCtQfadAbOtgImy0/mMDA1cVE+OWwATZQMtVTacfRug5DP001+BpKwo7MQrKzi3EIQpOeBchB+sBSYV6MNYYRukAqUFGDZB/C0y+wQYIFVzxcPtbQcpKYyYMrQj5c6Y1opgXplpZo07la+AUw4xShLDdQPuupamFEoMaWwEHzCf6AcLVRpAFiIIJLgNkVSawudVxiAsCsqbzaNwakP+Zt8hFYHSkpxrrCxvBmQhD5jxIUOAh8RFouVDmT8nBk4CH6mBjdcWHqlj0PZjcPKqCObCp11vwqddH9nsp41gFoRmLs5ZGDf1jobf+zocHINi+70qKE8DaFtELN8PCgmGPuVB5D7we7Oq7j99Ao7NXGK8dHTGEiwBljsLMkk3uZP0riyoPGTgqwOfHoo9jO1hERYDGSaYwmpgofyl2zV3wfAF8CUFUwo+gMVAgnEsYemq0PekMhSFvUh5TsGAy+z7PSwGkt0uhzDeDY0dzFTivZGkxiny9hbmgdNEL8AWjbexsRXr8+Rh47FbDcmBAeTCQjbdbZ8XCPl9kKtXQIag5G+Ag09PYHqf8CcLVTqzxxLwD6wqjnfAV2bB++co/C9gDC5cW2PJ928JWGT90tqnMO1bDiwW2hJ87vC5ddPoexQD/eE86uPD14Zy9hJzCpeclxTke/k4aV/ZpoL3oSsW4K8uGMb/ACIsR6pKfM2bAAAAAElFTkSuQmCC",
+    "price": 90000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 145,
+    "reqLUK": 50,
+    "reqJob": 2,
+    "reqLevelEquip": 50,
+    "tuc": 5,
+    "incINT": 2,
+    "incMMP": 15,
+    "incPDD": 19,
+    "incMDD": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incMMP": {
+      "base": 15,
+      "min": 0,
+      "max": 40
+    },
+    "incPDD": {
+      "base": 19,
+      "min": 0,
+      "max": 44
+    },
+    "incMDD": {
+      "base": 2,
+      "min": 0,
+      "max": 27
+    }
+  }
+}

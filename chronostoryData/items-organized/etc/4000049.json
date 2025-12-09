@@ -1,0 +1,27 @@
+{
+  "id": 4000049,
+  "description": {
+    "id": 4000049,
+    "name": "Yeti Horn",
+    "description": "A horn cut out of Yeti. Very solid and hard to break.",
+    "chineseName": "雪吉拉之角"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAaCAYAAABGiCfwAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABwUlEQVR4nK2W8ZWCMAzGy3ssgCPgCN4IuMKNcIygI+gIOMI5goxwjiAjyAi9ppCapGnlPfz8A6Qkv35pWi0NlzWxCvMhUZi1z2dM2mzsp4Bl9KSq2FeYwAw0a6EMNoyDqd2HAd09Ol7rksKK7fbLPh5/KhC01mWZHBnHqKRrXUrYy11V6xErXJbZUc0dgSou6daJJpCE+WYBdwCck2tAELqEiqCgQhKadRaAoAUuj8fWnE6dj9PWVoOFdVOBwpUmfN+B2Nqmyzg4SF3HQBQFz++wGTsQXGgT5cv4Dqgp7ta3a1bs99/2dvuNgCAJla5QsBRzoyTX7JVkGB2oYkAtOYz316tvjpzy+ywDVEGZpknB/IJiK9e7hgGlloI02PSbNgdCEgoMbu59uFdBolM1GANBAKzNz+FgLuczC2IATCw2vdY0AAtlkyAUOIMyNu7qJd6rqx1LirGuE+HCWt8foPMmNPKvQd/fPUhrDhxvGhOdMhKEMPaQHqhTomnWuQ0NicOPbgJEYVT+bOy6LoBA4QQhJby4TmzbNsTQU1+T2voAIjMMwtkDBIQgOkm8XwrDJFEQOk6N50BJWC5AuFkcB/oHSakdL9eHQxMAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACA0lEQVR4nK2WjZGCMBCF4wwNYAlYgpYALVwJRwlSgpSAJZwlSAlagpQAJXDZmI27myU6g+8mA+Rnv7xkEy8zXLOJtTFfEoXN8zjGpO12/hYwi2rynH3CBDzQrIUy2DANprB/DGjf0fFalxS22e0O8+NxU4GgtS6zxZZpipZ0rUsJe7nLC33ECpdZslVzR6CKS3p0ogkswlyygDsA+uAaEIQuYUVQsEISmnQWgKAPXDZNbU6nzo3T9laDhX1TgcKVJuxvQWxvl5dxsJCiiIEoCvZ92IwtCB40idLL+A6oKc7Wt3u2qaqf+Xr9i4AgCZWuULAVPlEW9+wVZJgsKGdALTi095eLS46U0ucsAVRBiaRZgrkNxVQu9iUDSn0K0mDP3zQ/EIJQYHBz78O7ChKZqsEYCAbA3vwej+bctmwQA2Bgcei1pAFYWDYJQoEzWMbSPp1EvyLfs6A41mYiPFjquwvUH0Ij/zXo+7sDacmB7WVpoltGghDGKumF+gz0nHXqQEPg8KO7AKIwKnc3dl0XQKBwg5AlPNtMrOsavrZ2zEhvfU0SBpFGAJEZBuHsAQLyoMoWmFVl+19914Ovm0gJsJwUDOJesc7DTzAR0t76oFSNLSWBDL5MGYEUJHCj1FE3ZzJJqtbXqQeNOqNuqOjAJtEm32VxMLRKgdrdszTjKfHN2v4BWI44eQG69/gAAAAASUVORK5CYII=",
+    "slotMax": 200,
+    "price": 120,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

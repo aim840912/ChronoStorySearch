@@ -1,0 +1,37 @@
+{
+  "id": 1072011,
+  "description": {
+    "id": 1072011,
+    "name": "Mithril War Boots",
+    "description": "",
+    "chineseName": "鋰礦戰鬥鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADBElEQVR4nJWWgZXyIAyA43v/AtwIOAKOgCO0I9QRdIR2BDuCHUFGkBFkhGOE/kkoHK3VYt7rgRzkIyEJ/IPvZFwZ25UsLAUx4Pm8zwaFr+Hn4McS2BZoBhj6Aay1SBDQtmfwHorlE2hcAqwTDFEiTLAG4HGVcDi5TavegRgSAYYAIID+euegvV1huNTIFMVWrYESpBscA1i8A9L5eBDkFIaQ4pxI6z5ZtQQtIKQstE8EkJiuni049Q7O7RW6Cf6NRTOJAOGPfCbsLt4BQO80NGcNUsotNSsge4SqueMXfkqpUKlByyT2HTjrQSLsYjUoraBUlqDdvkb33U4gNe5SaEJhq0DIBo3ooD4JPrYcQmdVNS26/PL2nFZdR65xDneubACBhp99Dxx5aKHkT/DEEHnbobcG2h1qF0qNIAU2dMXfOTAEAkQQb+LcH084HvarVr0LhjDRu1FVZ86dfNfUJwi50E3jXDGggvv9Acfj4QW2FXU7O3QMgwnGuYOfpPyRAUJuzjexBispqq8wbKkOeR/Ox6E112sLxhgOdRq7IazOYKXVO8FiGSJXSaUSZEAIBYfF/1H404/r7Q6n+siwr+4jtiSTZAm2pJpcGtoQKMPQp7nF95HGPEnA6D6UYTCpWvyFumc3aq2ht0MxaGza2yzqyDWGXKSyyuBD/sEir6Y6OG5efFUz1TohkjV86AjhsxB/OQUclcGllNR5Hn+8+CgBc6GDJo8RRGQQGlepsPrUxs1tgVhUVpmpT0rppo25Y43luhejLRkxQfqOr4+XqJu9crp+SH2Pitu2YVgEDhEytTDllMMAcDatneXR9Aj55cW5xBKDToPLpZ/BsNbyZoQMAWDx7CbAaq0bUYIy3HU1lf8IMJlV0UqNc6JLz03FY58gySICkGJr3QwSw9TntcxR1Fm2Jrowugu23gwR4hYVOiTm610TYQavkFDrPkMS6B0kFyEFrMo3zy2uVUK8nbSE5FZa01FT9CTeGbzrlT6/nbR036Q8yleP/B0uHqFcipTn8h/j1gONSappZQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAYAAADjaQM7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADK0lEQVR4nJWWjZWCMAyA43u3QB2hjlBHwBFgBBxBRoARZAQZwY5gR7AjXEfwkpTWguWEvIfFAvma3/YHtskrM7db+/FaGEOez/tkUrgK9kf3Wgv8BptAhn4AYwxSBLTtBZyDTfIf7DWHGCsYpIR/wWiAx1XC8WxXWbcEY1CAaIKAAPp11kJ7u8LQVMgVm6zLwSKoGyxDWJwF0vt4EOjsp5BkrYjffbNuDpuBSKEfnwgh0V01+eDcW7i0V+jGBWy1bCIBItyJY8Su41UA9LaA+lKAlBLWyCfMnKCs73j5v1IqVKzRQon3FqxxIBHYmAJUoWCLzGG7Q4WuvJ1BFrhaURAORwVC1mhMB9VZcBhTEMWurFt0f/Nv3LJuJDdZixYo42FQwP7QA2ckWir5Evyiz8h1KZmD7Y6V9W1JkBLjb8U7LgwCDxLEHFn3xxNOx8OidUsJ4l929qXKC9dWunq6JxC5047z3FmghPv9AafTMQv8lo07M3QMhBHItYWXpPqSHkQuTxeyBFzTiD+BOFLPcs7Hy6JV12sLWmsuA5q7IbCaAdd2/QgMLYvcJpWKoAFBlDAGn1Fp0J/r7Q7n6hSBm/YztiiRaBGOpJ7c60efPMPQT95fvZ8VWEcRGlyJMgw6dpV3GTh2aVEU0JthE+xVt7dJNpKbNLlLJR3E+fqEWd2NfZNd+XXzLOuxNwoRreJEQBDHRrxrDjhbvXup8Oe1/u/mSUWaCgWfvEcgkYBoXsVm7OIYFrgGxqKSjk73pJh27FBbRhvukyELozEjqO9468lm4+T01PXv4DpU3rY1AwN0CKBxhLHmLCaFfSfGR52NB5tfVpBKaEfoQGiafgLE/swLEtInhcFYjpDF3vhC8Qpx9eW4dQSITqwL1hb4TnDvpS557hsoWkYQUm6MnYBCCru091nKRsNWBXcG18GaM0gA2Vln98X7uVcFoMbtx/dGBu0hno7er37AlkCpCDnX86FOLTxx4WIY9zaxoCwDSq01uqOhycBSEMXHEmyn8eygissibO7KERDEnxfyoImE1N+jgl9YL82C0vn95PpJHswDnFutyK04M5ddwB++8BpfIryJ7gAAAABJRU5ErkJggg==",
+    "price": 7500,
+    "reqSTR": 80,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 25,
+    "tuc": 5,
+    "incPDD": 15
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 15,
+      "min": 2,
+      "max": 28
+    }
+  }
+}

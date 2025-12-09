@@ -1,0 +1,46 @@
+{
+  "id": 1041091,
+  "description": {
+    "id": 1041091,
+    "name": "Green Ice Queen",
+    "description": "",
+    "chineseName": "綠鋼玉鎧甲"
+  },
+  "metaInfo": {
+    "reqLevel": 60,
+    "reqLevelEquip": 60,
+    "reqSTR": 210,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "price": 90000,
+    "tuc": 7,
+    "incSTR": 1,
+    "incDEX": 4,
+    "incPDD": 65
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incDEX": {
+      "base": 4,
+      "min": 1,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 65,
+      "min": 35,
+      "max": 95
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

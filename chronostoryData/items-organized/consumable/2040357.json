@@ -1,0 +1,47 @@
+{
+  "id": 2040357,
+  "description": {
+    "id": 2040357,
+    "name": "Scroll for Accessory for LUK 100%",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "iconRaw": "",
+    "icon": "",
+    "slotMax": 1000,
+    "price": 1,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Scroll",
+    "lowItemId": 2040000,
+    "highItemId": 2050000
+  },
+  "scroll": {
+    "category": "Accessory",
+    "success_rate": 100,
+    "destroy_rate": 0,
+    "stats": {
+      "str": null,
+      "dex": null,
+      "int": null,
+      "luk": 1,
+      "watk": null,
+      "matk": null,
+      "accuracy": null,
+      "avoidability": null,
+      "speed": null,
+      "jump": null,
+      "hp": null,
+      "mp": null,
+      "wdef": null,
+      "mdef": null
+    }
+  }
+}

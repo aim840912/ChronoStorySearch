@@ -1,0 +1,55 @@
+{
+  "id": 1082134,
+  "description": {
+    "id": 1082134,
+    "name": "Dark Pachone",
+    "description": "",
+    "chineseName": "黑色貴族手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACLklEQVR4nJWVDZGDMBCFNzMYoBI4CVQClQASqAQqAST0JBwSDglFwlVCIyGXF3i5wJWG7gyT//32LyGR98XMrdp7IAYx64m2bWUcR+n7fjfsFcQY87DNQaqqlCzLJE1T9+V57sb3+30X7BVEKXVwCsytl6qbQBCAIIBBtNYyDMMmLBYuHDDqiDDlXjmU4mvLTrSdOg+lB9pQ/oNFc1KWpes0xUW6ofWQtu1s7yFpfpCr9A6EeXprQ2kI2pUTGe1u603TaO8N5iSf1iBQjoJ4JtGcMMHwCO216OVTWpcj9O2U9aNxa/AERqBF+ObQqV33BICvphdtDT12mR1rN1/1xezZBGAowzbmiWGpAvBRZX4BVhPKXNALyO06yvGcRyEOgA8HEZo0vfswEIq123Uqb4Ch/HQp3NrP1wRCyJIYAIKWuUFycZj5hzeYd7kYg3AFNZBsAbAZCouiWGwgkAk+dtoWgH1mpJbTp8h3Pbq8Hc5T/zQuIf8ASDjjDWu55iyd5wC7jMiddgYBZFfdnqn/V11RABSgxQehh/btcucIxLx9Ymi4v4y+iqAcSmMAKuUY50Iv15JwE0MAhVsArjMfgSi+WXzD5kLxl1HNIFPX9SLeBIYGAEDobNzu/4kJn+0wyRxDIgDvzTpsixJmTphUAjgXhm1DVPDUeyOScDGsf8j60eN49mwrTC9/WgqJ4s2mZxBW0w7AU1nfeDVXxMIqekn4u/Ls7XpmZQh/ywvIL+f75o9F9BGXAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACeklEQVR4nJWVjXG0IBCGlxkb0BL8StASvBK0BK8ErwQt4VJCLCGWcJYQSwgl8PEiS8CoeDvDgIvss39iQu+LsrN451AMpLaKvu9pnmcax/Et4BlIKfWjp4yapqY8zylNUzOKojDPy7JcBp6BhBCZMaJeIzXDCoMABgEQIqWkaZpOgbHU4ZASJVJWOAAMY/T1QFKr7lPtoDqtu8Bojeq6NouuetAw9Q7U94Ne/VBaZPSk0cCg56h1WpUPu1QjmvUJHVXXSRcVdFSsexAA0CRHEq0RFx2RYX5WI31Qb2qGtVbpeDqzh4jgCGak0qZRxEBOAPnsRpLa4XLI9bM0+masbIQrBLKdr0SkuI0B+dfkbgPeM5hrw9FAXs+ZyntxCWQgGDiMNKXp4lLCYOy9nmvrAw7A7VGZve/PFcbpS2IQCGauFQoOA9wTiAp6U5vZS92mL7YgB8EBGK2qKniBoVz0cpC6KfSVRC3dPoi+2tnUMbuv69v8F/QHgibg/MNr3jMeWx2Ajxm1lMYpwPSueWddh10XhcAIZgwIR6rvOnOOodDr64idDz5Y110AwHAMwob5Gef8aPck4Rc5HTB6BOF9ro8ngu84vvNs8wQfrLAw1bZtkH+G+k4AwmDr4Fv/I+Vf+X7h+RkSgbio9lIYtDfXiAvNENb5KTwQ4f0mAkcS/wX/+4BsL0p+thEepSz64xMoHt8AHCGEu+wC5FC2N4OwnRJ4x9GyA1rSC7aD/G5BMJB5hnK7LjXkZXU3PQo6F+nNZjAoPRi+9w+7Di+/jecbPQbSsCSe0dybfcCVNO1BAvEjOnrp+F4J97brYCT0G54P24siPYCeOebW/wH9qAHR1GNOvgAAAABJRU5ErkJggg==",
+    "price": 240000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 278,
+    "reqLUK": 93,
+    "reqJob": 2,
+    "reqLevelEquip": 90,
+    "tuc": 5,
+    "incINT": 5,
+    "incLUK": 2,
+    "incPDD": 36,
+    "incMDD": 11
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 5,
+      "min": 0,
+      "max": 10
+    },
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 36,
+      "min": 0,
+      "max": 81
+    },
+    "incMDD": {
+      "base": 11,
+      "min": 0,
+      "max": 56
+    }
+  }
+}

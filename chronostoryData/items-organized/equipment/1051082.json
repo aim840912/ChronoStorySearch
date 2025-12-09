@@ -1,0 +1,55 @@
+{
+  "id": 1051082,
+  "description": {
+    "id": 1051082,
+    "name": "Red Anes",
+    "description": "",
+    "chineseName": "紅色高麗貴婦袍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAfCAYAAAASsGZ+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADUElEQVR4nJ1WgbWqMAwN5/wF6gh1hDICjqAjwAi+EXQEGUFGsCPYEewIvyPwc9MWEEH9L+cghZbc3Juk9Q99b/3K++LTh9+C9NfLiXwIFHwYXhqj6dD89J+AvgERgHPbkXMuOTdy39cVHeua59q3QJ9ABEBzxLfaUdew4wuRN0eZ7ForbLDmHaM5SNYdi/v7/UpKadKhJMsA9Z3I0VUkCyyd0koCaJrzmo8XkP7xuFN7boU+xpoByG+IdoqqO+dC/yUI5ZVnEE+Kwfz5QFARErKcEpi1jn5+zgOzF7kYgG5816okUryOcaiq2MuVKMTgNOMFduw9X9347cCcg1iVC9HBKpaFmj3/HPjax8kDj62SoWWpsBL+T0gPq5WLAuyD0esgiELY2CPV1aiz43yYC9DTOkYw6d5YwxVmRAHvWELlxc+J0bNkTyA6gWilqA1HSbAJLbX8rrYMpurIJEUtrDkXJkWOPtKshtHVIhMpVRgSvt2Woi8iM6zd7VjG5J84Ws6NcVocQiJUGJcvPi0QOfyADQJ9kQul6DkKZ608l+WBEHfub4cRy+YlT+N731maW85t7p8BJOcDEcJQYRWiQWVJGXmZw+deQONl0j1ZAadS/jyBUn5mwiDOWyRL8gsAAey6wXE2l55VuoNxG5uwyL78sDKCSAMJCxenULQoUySVNNd9YpKZ6gmb545IEia5cl6ECaohT4z4NMg0fvws15qFVGF5DUCKYrMRNjkfx+RIolbPDZhtmguMIbFN+5ZUpY7FNDABEFfT06FUJecZGM82jZckmvS4JJ9iWcvztBnzrtlrbCs7GvMxAc6SYbd35xFgJt/Tlv+y1V+G0HS8JPSxfGE4U3C2zBis2uKh5Uvs6hxbowdAnYDMBOBbWwSRZG958OhiAhpO7YNLmsdtOTKARHmvxjNUaCb98haEbiE6BpPjeGDYclyC46Ar6St7L5fCeZuC8tFxPqwAqOiXOcFHItcOiT/Eppkx8SvO1wCX5XqgH2ZMKJ2YFNm4SfI/sVkG2apUwoeYzWSQMW8r38j0HiTbpUtnvV+cBpCaPf8/SLMfxzu4C/Qbm4MUvJv0a/+spwZuCGEzebdNPj6ByKIihF7+sbl3G7o03qLTuf0DLVqi06bOnFUAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADeUlEQVR4nKVWgbHqIBA8Z14DWAKWQEqIJZgSkhJ8JWgJpgRTgpQgJUgJnxL8twckqDH6599MhAS4vd07wB/63u5vvq++Wfwt0P18OpAPgYIP40djNDXd7/0bsG+ABOTYD+ScSwBG2l1b075teaz/CPYJSEA0R35pHQ0dOz8RebOXwaG3wgpzPjF7Bsp5wIL79XompTTpUJFlkPZK5Ogs8gWWUWklQXTd8Z2PWaD77Xal/tiLFOhrBiG/Jtoqqq+cG/2HIJpXnoE8KQb0x4agKORkaSU4ax39/h4fGL5IxyB04VarikjxXMaiumZPZ6IQ12nGDOzce36Gae2oAAeyKB2ihNUsEXU7/mn42cXBhvtWSdeybJgJjAPSxcrlQoEKwehlIEQjrOye2nrS3XF+zAkRpHmMYlLbWcOVZ0QJ71hO5cXPgSMo5XsA0glIK0V92EvSTeip52+tZUDVRkYpemHPuTGJAfaZZlWMrt8ykjKGoQg2m0r0RoSGdbzsq1gQB46ac2WcFqeQC5XHpY2lKzCAH7BCsLPSoUw9R+Oslfeqagjx53PAoccSesnb9N0P9iX6nOtyf41AOT+IFIbKqxEVKk7Ky8sYXHgBjo9JbbIVHMvW4AGU+SsjBnLeIoGSc4AI6DCMzrO59K5SC+Z93Kir7MuPMycg2WTCxsVhFDRKGIkmzfsiMcqMdcHqdceQpCACTnkSRqiSPPgQRwGQQUrp3llIlVfOAdBqtV4Lq5yffXIm0avHTZqtzA36kNumc06qVccCe2AEMK6yh4utTgAZHO829efkKs4CKQiKJS/vJdD4ge2ucQRtacpPAZ7lw03hjhPIk5Qv18XLNXEaQ9TxEQpTacNwJ+FuemKyaLMXn69wI3CMnR5BdQIzBci/2CyQFMCGO7chJqTjdN+43LnfV2kORbnyGY93qNEV++kjEF1CdA5G++nCsdU0BVfJUNHXtiydwt2dgvPReb7wAKroP3KEhSLdFsXQxE2VLDPybwCWQOelu2G/PDGidPNSZOWKgviG1TzQRqXybmKGk0HSfAR9cA5VQ/lh+X/daUj/HfzssE4ey/enbshPBlJPa6J1u6m/fQlyyeoCRET4KUAQRcMnz/lOnw2rEca6+LaJzXFmOpWMsnWrEE7yr9AtXQayOYvmgW54fn5ooleCzW3Fd9qFhfex/xeWU7eD6RaiBAAAAABJRU5ErkJggg==",
+    "price": 200000,
+    "reqSTR": 0,
+    "reqDEX": 280,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 90,
+    "tuc": 10,
+    "incSTR": 6,
+    "incDEX": 3,
+    "incPDD": 95,
+    "incEVA": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 6,
+      "min": 0,
+      "max": 15
+    },
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 12
+    },
+    "incEVA": {
+      "base": 2,
+      "min": 0,
+      "max": 20
+    },
+    "incPDD": {
+      "base": 95,
+      "min": 5,
+      "max": 185
+    }
+  }
+}

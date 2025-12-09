@@ -1,0 +1,49 @@
+{
+  "id": 1060075,
+  "description": {
+    "id": 1060075,
+    "name": "Brown Jangoon Pants",
+    "description": "",
+    "chineseName": "黃金褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAcCAYAAAB75n/uAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADNElEQVR4nJVVi5WjMAwU720DbsEtuAVfCWwJpIRQQighlHC0QAtuwS24BHYkWUD43Lv1Jm8D2JrRaCS+6H4t9LvVXN28A1heXSTnHOVSKOdMXddRSjOFEKnvB/LerZv51zjn5QrkNoN5TnqSAzj9wcEZjC8LgG0Vul9XAMv72ZLzXg9zIHzHcaQYI03TtAJKFjV6wPZhSqcsLjOw4HK6StS2LeWUqGWQGVJhj8Nf4T0CeJ3HNQAOMHMhXw96HyQLBlISHNSZitjliG/lA84RYHk9Yz2h7AtOtChw3z+EtTfpOJKrZeL/uGzbQMP4KdMpA++8sieVJlbGx1WqfCyPlOKm0pcSFdO9e8q1sae9e8rmLqmEc2Tl2IPtAUQeZbZXd1v7ewzkrBccuyjD2p6eLBPchMfNKQNlhObKSdnjsn/s2HMpsYebjgsu9a+MQyiWmEiWyoVEajuiI3lz1cq8SqO/UbOs0rRtRrc7Svkskbqn2nmV4qJwJ4CaRs5OsuDrvy+i715mWbNmoCxJrSmHyjkVvoviw6vSD9zVxmSeYGGXCO1C47Q13hmAnyEGu4g9b3rL4GPbxiD7/W6U8DOHRkgocgyZXu+CfjjVoKLi40PA5pk8gu+lYQIZApeQRXu9r8UPUc8yufL4rIEON/MvNw7Y8dwpe6/XQnMDcyYheBWwaA9woWOrIGVGUHBrRlq+7LCU1u1GM4ZamicECtCbp+gsBFMujU95wW3qnk8ahkGA2D18NCITUS/vJdqxNDmYWeI6INKx6XIuH24yiaEqRT7L42w41WDTWtIuRea9OcXtRvIR4PXKyCTCEHhJ1eLmcgNgNi3VpgxioOsWfDeL8ugGyHu2RPDQ6bQ1gIIKIdQaWANqKN7I7+VZe9/GcIPrpYte5B0eDqNllh5AxVfHGUDz6Kfl/eo2JxWz5V6K63lsT8TC37gGIebypxIxiQAyCgjV94D13GchD8HtGRsCLvKwqesRXLmcpmnTAyRGv2OvL/aDPOt+HssxKIgOOHvFbdl+FJlvs+dTHYdcG6vF3eJRnqvgm5A3AMLEgudM/7P4peOzvULp9O48AQzjTL9Z/fDv/T9N/O5S6o/2bgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADe0lEQVR4nJVWC5XjMAxU31sCXgimYAo+CDkILYQGQgNhA+FCIRRMwRDOEHIjyUqcNOl7591u87E1ntFI3i/6PBb6v3G7evEJaHndIznnKJdCOWe63++U0kwhROr7gbx362S+Gue8XIF9ZDTPSSNwIKcXDMKgfFuwARuFPo8roOXn2ZHzXoNwQHzGcaQYI03TtAILq4oSMH2Y0imrS0YGIlGqdF3XUU6JOgabISHmOPwUniPA17yugbCQmQiZGsD7IKwYUDfDwZ2pi1mO+FE+wTsDWl7PWFcqm4KVHYzQ9w9h4U1SjuhqGvkbt10XaBjf5Ttl5J1XNqSSxcrgOEqVlWWTVH1wxKV0xfJyf8q9saHWbWVzo2TKObJ0HUGPQCKb7rRVfxvtMwZ0VkuOXZdREp6eLB/ch9erfG+MdIco0pyUDW77R8OGU445XLxsDPFJZRBCMaIiZWpYvQOJCERHMubClUmVTK+R06ySdV1G93CU8rV06rZaDqtEJwl+A6q0cnbCiu//vIh+97S6b8dId01qaVlc3qnxU5gEHpd64i5hO5onWN8lQrnROO0L+ByI5yAWu45rxvIhDZbtHoPM902L4ncOhZRghhgyvX4K6ulcOlp1w68PAYtm8gBpJeONZCSghCy50edqkhB1LW+yPPaRDUibqPmfCxC75b5W2lqphuCGwMxC8Cps0RpiQ8ROwcqMoNjjbdQ8rYzM1vy1HglonmmeEDAgH9y1Z9lwyuXmU17wmO7PJw3DIIDsNl4awUxUbZy3Sdfs2mTinSbOEyIeizfnsnOfSQ+1KfJabpfDZY62XIgcpch5Y85yzVFwBHq9MphFGAeHZTVB/lSwZJqTWdwJmIGvU/DZrM1HBsB+ZiOGl067+xGoIJMIuQJoYA3JC/j/hll7ivWvG+6Xe/Qi+/BwaFmz1BCcsTr0CHR79NPy87pvzitm51ai83PA3oj1f+MeG+M9/aqxj9IBbBQwqueQ1e4+4QcQe8fGges87O16gJQN5AgkL3qAxegbNvoPSJXtm/Y96RvHwd8Y9JE2Ujty9+yPQHwaS82k2n45d5YrjHDGio+QXBOyCSx/fb0oBuSazwaSD71eq+Nt8OHnsx3t1LqTN8ZB8lcD4A1oGGe6GKfJ6ofL+etoGdl4nDy7GqWZXw7Pd58vWvst7XvJ+7jyd/lwv17/A8ulANHllolpAAAAAElFTkSuQmCC",
+    "price": 42500,
+    "reqSTR": 130,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incDEX": 1,
+    "incMMP": 10,
+    "incPDD": 36
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 30
+    },
+    "incPDD": {
+      "base": 36,
+      "min": 16,
+      "max": 56
+    }
+  }
+}

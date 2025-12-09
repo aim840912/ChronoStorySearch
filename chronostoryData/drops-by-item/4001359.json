@@ -1,0 +1,19 @@
+{
+  "itemId": 4001359,
+  "itemName": "Small Snail Shell",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 130101,
+      "mobName": "Red Snail",
+      "chineseMobName": "紅寶",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 2.4,
+      "displayChance": "2.4%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

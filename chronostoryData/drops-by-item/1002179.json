@@ -1,0 +1,19 @@
+{
+  "itemId": 1002179,
+  "itemName": "Brown Burgler",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 4230103,
+      "mobName": "Iron Hog",
+      "chineseMobName": "鋼之肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

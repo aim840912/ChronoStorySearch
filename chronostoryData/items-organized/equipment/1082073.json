@@ -1,0 +1,43 @@
+{
+  "id": 1082073,
+  "description": {
+    "id": 1082073,
+    "name": "Dark Brace",
+    "description": "",
+    "chineseName": "黑勇氣手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAcCAYAAACUJBTQAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACHUlEQVR4nK2VgY3CMAxFW+kWgBFgBFaAEVgBRoARYAQYAUaAEWAEGAFGyPVZ/ZGTK4XSs1SlaRu/fNtxf4p+FhqelfmDPpAwGo2KyWRSDAaDeK3Xa4Ej7FtIIwBbrVbF8/ks9vt9EKhXuHa7XbyvnJpzXfP5vDgejwb6GnI6nWyUgsViYeNyubTxer3q0/ANJNxutyREgqEAGKD7/R7fdYVYUsfjsU0ej0cC4MLIixR1gZjz6XQak40Nh8MIA8DupYDCwJh/Agk4Z1EeInbsYSoEvnXhak287Z6dC4ApJDJVEiMhoiBms5k51zevIHYOUIC5SjFoDlGo2EgOeAUJlZljap+F7FRW1b6NirkAbZZDTAELgSgHxJ75+Xw2dXrP5WGfQiwcVf9JkiyH3pnyBBjzBfEWonBwqLRQjgBQQQDZCGGS8k5KDoeDLdhut/GZciJnQJQH71wlXFVZbI45xBIuJ5fLxRR4IKGkTOXYj+plTUXwkwMIF6HiXmeEZLPYtwqvgF7WZlGJB+AQFYIBYk44mJMPr+DVQfUQU8GZaAIIrlPNe98AOXz0ro+rSzvBkQAeqAZYA2Jiq94VBEI1in3yDSIV9W+z2Gw2CVAbaALkJlCupITqW4eceiCKWgClV5P3tyTxuVNK16t6Ywby8z8QTE5zRW9UJKCmh4KU1S/VdqHq8meir3kltgvB6nlQL/svSALTfV2K+fNO9gtUr8zuZOhhtQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACXElEQVR4nKWWgdGCMAyF650L4Ag6givoCK6gI8gIOoKOoCPoCDqCjiAj8PPleP0DV1A0d71ShHx9SRoch9+sTNwbpR78BVROp9Mwn89DlmVx5HkueAP4LSgJwbbbbSiKIhyPx9LDfgrd4XCI15VjA2isVqtwPp8j7GvQ5XKxWUrW67XNm83G5vv9rkcN9g2ofDwejXAJiBKAwJ7PZ+OloSBL9Gw2s8Xr9WpAGBh5krKhIAMsFotYANhkMolAIKiQEooF0/oTUAmAF9vhYuceqOLgWRe6t8VgKlAgCKbwyFRhzISLIlkulxEg6wLZOUEJ5irIwG2QwsZmUpAuUFmZOeds8DI7llVnw2blQJB31gaZEl4GpJyQC9bX69VU6neGBw4BWWiqftVIvJx6h8obcMwXyUcghYaDp5flDAiVBZTNEDJFYLCi0+lkL+33+3hPOZJDQMqLB6i8q+prNNQ2yIpAjm63mynxUMJKCcu5n9X7ugpDoAghdISNa50hCgAHvq14JfS+dxYVeQhOUSMgMNaEhjX58Uq6DnMbZGo4MymINqDTz+++aXJA6XWDqk47wpkgHqqmWUNisqteVwqGepS3C8JAUlN/gsNut2tAtYkUpG2CpRSNoPs2I8ceirIeyMiravfDRuhSjilrr+6NGcyvkyBMjtvKnBo+PH1Zn3T9INCo+jzbblR17U9xbfPwmRVutiEQu+SPQFYBb/U9SAf1vtoWPU5T9xlU03NcQxjTes7rB1nvK2Xben0M/WHrhXtFXQ/loduKnuvGGId/eR6W2nkW0mEqetbx+g/2XOY7PJyA2wAAAABJRU5ErkJggg==",
+    "price": 65000,
+    "reqSTR": 0,
+    "reqDEX": 130,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 40,
+    "tuc": 5,
+    "incDEX": 3,
+    "incPDD": 16
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 16,
+      "min": 0,
+      "max": 36
+    }
+  }
+}

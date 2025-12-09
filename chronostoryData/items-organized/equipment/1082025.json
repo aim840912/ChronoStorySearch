@@ -1,0 +1,43 @@
+{
+  "id": 1082025,
+  "description": {
+    "id": 1082025,
+    "name": "Dark Knuckle",
+    "description": "",
+    "chineseName": "黑色長手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAeCAYAAADZ7LXbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACXklEQVR4nKWVDZHzIBCG6cwZwAIWqAQstBJyEq4SvkhIJBQLSCgWsIAEPl7IbkmHXJPeznSS8vM++wObL/E3Sy//T71Fn0KKeEpJeO+FD6EMfl+vLZSBn0DSNE3l5Xr95sEYo5jud7yIEKIYx1si0FFI+vn5J5zz3Uk72/K8XIzAOgIdjiTk1CBFUkkxXC5iGIYsNpY5wBHRnGHGGN5zGEIAo58iUsoibowW1rmcMgAdR3MYQgCFSHIU8zzzXOaUOecr6ONIque/z8dceNksOgJJOucZnkKgjQKpio3nWuuSVmvtYYhQUnEUEOkBwnJnWtsLSfAuxpAhmj3dAoS4PIM/FgnEIApxiNUT1QegJjFyRLvuSVJKlxrgRN1u9U7gXS/HuAeIjQfvIAVQU1VTc79PRbTCXI5IMSA0daK7swVZdVbkFT9cLKoFehOdLil9OdNhqRGsAXR7F3uulCoe4wnLN1egewBG6UGPstZlgFuJt4BXyApQ8654Ep0Xc+fzeQEMBYDagPnqfWsESZQaCJGngEAEVtKTLxdFYu28pPN3wCoSeAajzTCqA34ABB+4C5fo8vcDY0jlFoAg/BFCQQkGozq0TtTCe/F4PPiL+M6+SLymRwrU5WlPYUSIOQAABIAi2wmhhWrx2hQRk5/4MOFOoNdRm2hTSql7C8HCtuA4NQBhDAAap/ZN7aU6uBPSLiTYOK69bXrRbvEWglORepue3TZwBGRUu2Xf5sniSDqb2HqA3ro9kFPexD1rC7hhp3cL2rZS0vYqTsf2qPAWpN3MUf0V0IP0hNLG+G77D85nuT4YUiP8AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACl0lEQVR4nKWVjZGzIBCGuZk0YAt8JZAS/EqIJZgSLiXEEmIJoQVLiCUcLVACx4ssLh56mtsZBuRnn91lWU/ib+IW3x9rG98FBYBzTozjKEZjwuS1aTg4g74Dco/HIwya5pomrbXi8XxiIIyxoutujsOOgtzn510Mw1hc1L0O/eVSC+zjsMMeGR8mhKuSlWgvF9G2rVfYhTUYAM96D6zrOjt3GESQWs2KqqoKgLpWQg+DDx+gQ+bVYRBBJDzy3vR9n9Y8K6wN4wT7k0eTB9vr1idDtdh0BOSUjzsshhLuDcJmmQdKqRBirfVbICErmbyBohLExDe1lL0gByutNR6kksVrEGNjb+ZnsNsjKIRiAKBwyrQyBHdkbfJs9ztyUqpwJ8i02216MxirmOIliLV52v0GCpApbFOYns9HUDwBB++ZTBDD7o3e1hYoq8iIMxoeH90NahllXVWNId9NvDMIg6zWuuSBlDJYjh7iX7hApQGQQoWapvXgIUMGWEKWoAwCoR6Cio218/kcIW2A4K7ALXlRAjkKE5SRxQBBESSEyj9A8kjrPob2d0jmESyEkAII3QsaIGY0qXoHL/3/B3MI6xaEQOlHhksmIITuhRsyJcMoXq9X+rPukRMBIAgT7mmWWTk8xRoggAJCHh4A0WYZra+Dotr3+LnhzaA+Uknh4aUw7gJhM08CZBNgmAOE5qn0UymajDwA4psJ2HW51ax2HQJwELLFlQ7OVdokT0joLuO5zYwjUOlgkhKksK/0z80OEOjDH0w1bg26Iv99U4s5y/rQCASL/vn2tQRQSi+kY+MlhMPQEBJzihA05HYT+zvtLkB6UQ5VyaMk3CO+6crm7mzttqFwOc7aSczucRgfn9ncD0sLc0X4N6BC0qmeU0qPAAAAAElFTkSuQmCC",
+    "price": 75000,
+    "reqSTR": 150,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 40,
+    "tuc": 5,
+    "incSTR": 3,
+    "incPDD": 17
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 17,
+      "min": 0,
+      "max": 37
+    }
+  }
+}

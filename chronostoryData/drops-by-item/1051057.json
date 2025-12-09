@@ -1,0 +1,30 @@
+{
+  "itemId": 1051057,
+  "itemName": "Purple Enigma",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 7160000,
+      "mobName": "Dual Ghost Pirate",
+      "chineseMobName": "多立百烈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8140300,
+      "mobName": "Dark Klock",
+      "chineseMobName": "黑暗冥鐘",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": 4000044,
+  "description": {
+    "id": 4000044,
+    "name": "Clang Claw",
+    "description": "A huge piece of claw cut out of Clang.",
+    "chineseName": "青螃蟹鉗"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACVUlEQVR4nK2Wi3GrMBBF1zOvAaUEuQRcgl0CKYGUkFdCUkJcQlQClIBKsEqwSlB2V1qBfxiBd4bhY9lH9+4H/4PXREjnzbOFrwCG8/kEzjnY7Q7hGXQtMJxOPcOUUrO+sAYYQjhD13UM22539OyRumz5UiDDojIgKydhfd/KmkUKOWe2M+DxRikNZCsqnMxf2/7A4fARlluaciY7fwATK8F7z+dSYKpIy4dS1SSMlDPGO4gXa4qG/fTQnzA/24l2QGWeD7cc6KzN1wiDB7AN5bVtfxOw3NJop+1mrR1tbzHwIthRPFLJjy3FlgnYnwa01pxr762ksAw4VqexHSLY36zrrAGpEi8Fs6ZoeOdkkb9RCZQz3oyKMGfxcAOxGEgWaV1x9VHTe5w2Porl5mYIAqpqj8NBimtwoQS42eGk+P1pMpRGGylVNpa847MHjbDOHPma1lAcDcMXz1KGkm+sUJ6hOpUVeVbq2YnhTVLUFqTu/eMIX591gsaSN2jdZ7NnmNaK3yDyGcFEXSmQo8c8obXQ1BUrJFhT77MKUvUIVgJkdVwsGARLPwT1XmfQ0Ar3YUUKCUbFQL1IbdHUwxtA5qTp3PXXbkbeHGAgGwUWK5Szla2TiDbDXWUlwFkhOZyCPQOG8Y2o42s39JfAJKew8F/bhY1SlZS7CIywqeKYA7xQJDDqKYmxKsldCWwMzIooOvMNb29boFagkDaQFqAYVeRsmAADTY4hPzb11G2ursq+CDQGph+l3dsMITX/v81qwF2gQIkbZ+Myu+YCN5ifcPX85SCJPyHzmaIk7RMnAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAgCAYAAAABtRhCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACj0lEQVR4nK2WjXGDMAyFlbsu4IzgjEBGICPQEegIzQjtCM0IZQQYIR4hHiEewZVkZP4CwaS682EI4fN7kgxv8D/h2+Pu2Y3/AfT3+w2stXA8nvwz6KtAf7tdGaaUWvWHV4De+zs0TcOww+FI1+bURcu3AhkWlAFZuQi7Xmu5Z5NCzplpKnB4opQGshUVLuavrn/gdPrw2y1tcyYrn4GJleCc42MqsK1Iw0OpbBFGyhnjLITJK0XDfjq43jA/h4V2QGWOh90OtMbEOcJgBrajvNb1bwtMtzTYaZpV9/aWtxk4CHYUR1vyfUuxZTz2ZwVaa861c0ZSmAbsq9PYDgHsJvc1pgKpEicF80rR8MrJIjdRCZQzXowKMGtw2I6YDCSLtM64+qjpHe42Lojl5mYIArIsx81BiqtzIQW4O+JO8ftTRihtbaRUmVDylo8ONMKa6sJzuofiUjF8817KUPKNFco1VKeiIsdKHTvRvUmS2oLUvX9c4OuzaKGh5Cu07rPMGaa14jeI/EYwUZcK5LhintBaKIuMFRKsLPKoglTNwVKArI6LBYNg7YOgyHUEda3wGJakkGBUDNSL1BZl0b0BZJ+sGjv+22TLWwP0ZKPAQoVytqJ1EsFmeKgsBbgqJIdLsGdA3z8RdTy3XX8JTHIKG7/aBjZKVVLuAjDAlopjDXCgSGDUUxJ9VZK7FFgfGBVRNNU37PcHoFagkDaQFqDoVeQeAJY+SgevEwJ62jm6/Ji2p6a5GpW9fD1lMB+ud+TxFh5MD6LVmwghNefvqv/nc29OivIlJaPrNAhiYw5557fQ7o1RyRk6uzSkx2QRBNxhfvzo+jtM8zKnYPzbeD4YolCqTI1Aj4pBzcDdwnmc/wEByrG3DuFCPgAAAABJRU5ErkJggg==",
+    "slotMax": 200,
+    "price": 60,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

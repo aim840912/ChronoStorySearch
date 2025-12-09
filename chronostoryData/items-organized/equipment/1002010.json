@@ -1,0 +1,43 @@
+{
+  "id": 1002010,
+  "description": {
+    "id": 1002010,
+    "name": "Brown Winter Hat",
+    "description": "",
+    "chineseName": "褐色高級皮帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 10,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAVCAYAAAC6wOViAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACZ0lEQVR4nJ2WC3WsMBBAZ895BmIBC1jAAk8CKyGVwEoACYuEYiESGguRQOeTCQm/0s5paRKSufPL0H9wX5aLd49f6IG70OXddxBwEAI/wfsAznl+6XzYGnRpxE9QVvYeLNHwx6cXlTEQKkPLUFf4iw8yiI1ZjTiEn0H5UNfW0DQNAz0Bw7rBB5kgm8HkdUNgMgDXaG+E78BH0KW3LVrsGRjYw1AAdxIhIQ5BphgBcwjeQhHY7IEZUT08YLK3EmZIZ2p027kSnEMX29USJgV6D/dEsdlKDDstNwieM3DhKRUBSVVJUZi63qmvSA8aMzvH863jfM6s60dZUejSxOqz1sYclttDNqcxVa/fAE5l423ylBT1vQCdm/fnDjxqW4nENDloMSUVRkbTQtU+zX71NjufoO+ho0rju2hSDdLeGHKzrrGH+Pf1EuMsFh8FnmBBrxcAXyEVbSQKXb4+Lfx/jni4Ow1PMGFjDBWLhJjgtmsTUGtDhfZRVTvvVk9nd16lBApGML7IKzaPTsJL0Gm+SokMqNmMk1tSeIeh5RAEL60sXHQDqTPxkAwZ+hbGcY4mHu2XtqEZYihd4OdzQsubGKK8Iaw9Ji8IChkp8S6k3BpMgU8ncryMfbz3DMWOgQ2hgufHhFVYsRGws9lIrrJlTQud5XlerbD2Zo2OCkEfGJpFD2qZ/0ZeoxSI7cpmQkbkMCcFJvcUJw83usXGe/eaHPxFFK5ChaOBmTdXRuWBsPRJ068GPbGTQErmSXsz5YNlmuXekr7dlcnB9BgjXKXl0B/V5R0xpK/Qf/YRL75/aPHV/0d3pND3DTeVkJj312QPAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAaCAYAAABLlle3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACqUlEQVR4nJ2Wi7WjIBBAyTnbAC2wJdiCLbglmBLYEpISYgmxhLUFSlhamBJ882EUFI3vzYkKCNz5MeaXuS7zybvbN/YxV6Hz+9EbwAYA302MYEKI/DJE2Cp0qsQnKG/2fnmi4S8uL5y1BpylYdM4vPBGCrEyqxJV+BGUF/VdY9q2ZWAkIKwTIkgH2Qwmq1sCkwI4RnMTfAeuQeeH71DjyEBgC6EA7iRBIDWNdNEDtgreQhHY7oEZUS2sMNlacbNZ1jRodgglOIfOvm/ETQqM0VwTxWYjye003CJ4ysCFpZQEJM5JUtim2W3vaB9UZgqB+1vDeZ1dx2tRUejcpuzz3qcYltMh61ObsjduAIeysXaxlDZ6PAQYwrRfV7Go68QT4xhMhyFx6BkNC2X7OMXV2mz9An2/eso0Pot2yUGam1xu1zG2EJ/PpyjnMfnI8QQDPV7G8BFS0UKi0Pn/P2/+3Adc3B+6ByxslKFkERcT3PfdAtTcUKF5lNUhhtXSKRxnKYHACiYWccXi0Yt7CTpOZyGRBhWbYQzz4t7Xq2MXQJRSBifVQPJMLCRFXo/ODMOUVKzNl7KhEWIoHeD7fUTN2+SivCCsNSZPCHIZbRIDLLG1GIK4rMjx0o7p3DMUKwYWBGfuf0fMQsdKmJ3OVmKVDWtYaC3382w1a21W76gQ9IaumXWhpvl35DlIgvi+LCakRA4LkmByTrFzC0OYfTp3zzGYn4jCVShx1DHT5sio3BC2fNL0q0F3rCRmCeZBebPljWWc5NzSfrsjk4PpNiS4Sseur+XlFbG0X7H/0Ue8+P6hxmf/j67I6fdUxW6evytjV0Sj4FIbalB7cG1h1RpwAqYrpgtyqAJc9swBPwlqVZGapUcLzr6acNLeXgVUXfDJjfv/Jp+VLN59AeRmqb5XDkBaAAAAAElFTkSuQmCC",
+    "price": 450,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 10,
+    "tuc": 7,
+    "incPDD": 9,
+    "incEVA": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 2
+    },
+    "incPDD": {
+      "base": 9,
+      "min": 4,
+      "max": 14
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": 1040106,
+  "description": {
+    "id": 1040106,
+    "name": "Blue Studded Top",
+    "description": "",
+    "chineseName": "藍玄武之甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAYCAYAAADpnJ2CAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACoUlEQVR4nJ2WjXGrMBCExUwaUAtqgRZogVcCrwRcApQQSggtqAW1oBZUArk96eCEIXaijGMJgz7t3o/9YV6P7Y17GvPmeAVkmHX90wfWWn6PweO/HOol+A2FzqQUaxj9JXpP0fOKr9iW7vMvwXdAfrDtRlIQzPQ5mRiTWZbFdF1H88gvQDBSCoDx/ThcDOt2B70Cbq7tjXOtCd6bru/N4zHT2jHMe5910zr4OSu2HYMKTB/6CXoGEmzAmRmGDbDxNI0MBRBrqMvQnuYrxzMlw24M45cJIdwq1cBNLJTRDyPbCMgwDDwXdYAmgmVoKEqdWeYHzXTMHUHjDq0UcubhtLSBJUu1OufsbimuY4SIDHYGK4EWCCmd8qES3Jp3pQJkdX59ZDCdGpvX6lbeAGtARZ3EsesndgfWQiFslc8uLYW6HPwjKcRGUScHqNXlOEJJYhrb2UAV4nlWuQNhidTbWR0sleuSpXBEFGilJWO3Q+WetbvCjYs7pv3iuvynhPnkzXFCDapLI6s7H+BQuW6Ipc7aj+z/QPFb5EaOoSSHrrurGkTNcu1FU4UkZ6d5iuVuqWtberCkM+KBv5gbV0RRn+aiDs5o0DFHKbgNMIklkhLAhibcXUxOcC4NR6+jwF09L92kSjJRuo+sEDCv4igKm9wVALRlM2fa1pWeeZqreGnoKY5cd8v8T3+9NbrwmxLDTRRddZgrENtbqava2W1rq0ZLMUXAUYNHPZIDb6m7H5dAqAMQoHleuHCrclDxApRL4ylLfwFk60oTB1hKRENlc0sO2HTU458VClTiuK65fZ3jKEp1E/gtsKHGvBk3qm8HWylNylIBKdiPv2vukoabL0xFi9O9FG1P1MHSlOrn/qKwepgAex2ty2GZSo63fyJifAPe/Q9dY3EWRgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC50lEQVR4nJ2Wi5WbMBBFxTnbgFKCUgItkBJICWwJdglQwlJCaEEtqISoBZVA5o0YGMlge6M92OKnq/fm4/0wr8f6xjONeXO8AjLMuv7hhrWWv2Pw+JRNvQS/odCZlGIJo79E3yl6PuMrtqXn/EvwFZBfbLsbKQhm/BpNjMnM82y6rqN55AMQjJQCYPw8NhfDsl5Bz4Cra3vjXGuC96bre3O/T3TuGOa9z7rpPPgpK7YdgzaY3vQDtAYSbMCeGYYFsPA43hgKIM6hLkN7mi8cz5QMuzHc/pgQwqVSDVzFQhn9cGMbARmGgeeiDtBEsAwNm1Jn5ulOMx1zR9C4QwuFnHnYLS1gyVKtzjm7W4rrGCEig53BmUA3CCkd86YS3Jp2pQJkdX65ZzDtGouX6hZeAOeAijqJY9eP7A6shULYKvdOLYW6HPwjKcRGUScbKNXlOEJJYhrb2UAV4lmr3IGwROqtVgdL5bpkKRwRBVrplrHroXLP2l3hysUd035xmT8pYb54cexQg8rSyOrqDRwqlxWx1Fn7kf0fKH6zPMgxlOTQdXdWg6hZrr1oipDk7DQPsdwtdW1LL27pjHjgL+bGFVHU1VzUwRkNOuYoBbcCJrFEUgLY0IS7i8kJzqXh6DgK3JXzrZsUSSZK95EVAuZVHEVhk7sCgHZbzJm2dVvPrOYqXhpaxZHrbp5+65+3Rhd+s8VwFUVnHeYMxPYW6op2dtnaitFSTBFw1OBRj+TAW+quxykQ6gAEaJpmLtyiHFS8AOXSeMjSbwDZuq2JAywloqGyuCUHbDrq8b8VClTiuCy5fdVxFKW6CXwX2FBjXo27qV8HWyhNylIBKdjT/2uukoabL0xFi9O9FG1P1MHSlIr3fhipqzzKuxdAeeEnPgjwV24s82GZSo5f6t32BJbUUQDtxfFZ7VrPMbozJRUsbkcSoCzu1LdevIa8M043USu8evhKQX2vntfHDhTZz6yTa2fwZxss7v0DnrQrKU1oCkIAAAAASUVORK5CYII=",
+    "price": 100000,
+    "reqSTR": 0,
+    "reqDEX": 110,
+    "reqINT": 0,
+    "reqLUK": 200,
+    "reqJob": 8,
+    "reqLevelEquip": 70,
+    "tuc": 7,
+    "incDEX": 2,
+    "incLUK": 4,
+    "incMMP": 10,
+    "incPDD": 58
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incLUK": {
+      "base": 4,
+      "min": 0,
+      "max": 8
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 45
+    },
+    "incPDD": {
+      "base": 58,
+      "min": 23,
+      "max": 93
+    }
+  }
+}

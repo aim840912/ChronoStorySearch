@@ -1,0 +1,30 @@
+{
+  "itemId": 1060104,
+  "itemName": "Green Osfa Pants",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 8140500,
+      "mobName": "Bain",
+      "chineseMobName": "煉獄獵犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7160000,
+      "mobName": "Dual Ghost Pirate",
+      "chineseMobName": "多立百烈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

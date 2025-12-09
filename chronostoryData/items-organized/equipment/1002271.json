@@ -1,0 +1,55 @@
+{
+  "id": 1002271,
+  "description": {
+    "id": 1002271,
+    "name": "Green Galaxy",
+    "description": "",
+    "chineseName": "綠十字帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAYAAAAdx42aAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADDUlEQVR4nLVWjZGzIBDFmTTgVwIpwZSgJZgStIRYQixBS7grQUo4SjhKOErw4y0uQdT7m8vOJKLivrdvd4GTeI7NyX12NPEZBObpfRBaaze09KC7vs5HJP6awArcGE+guRdi7PQuiWelgMCVUjQuy/Jw3tMIALwopFPDeBKNFGo0GxX+nECce+suIAEyUsrd+U9TAGaMCcBS5r8m8J2W4jlZdx3n+0sjmqYmAkrpMP4pAXI6z2v8LMsCGM9BfqdbKbLzOLtIrSMRwkUHMHieS2vtmsgRgZmBL5fL6sU0TXStqmpmYDIzivtL7XJeErjWKnwDAuiKt7vJz61YFeIeAQIHMD58u9vw4tLlouu6QMSREJVQYqqNaHUh6roMwLHkqANjNBVlaimBFfjHZEWrCqGVppcgc+kM9TWIMIlWArwh8FtZi3bsaf5QaFG9oggNFWFn/PiIwAyHAPeM3UR5c2NH26kMEktLh8qOSUipqOBAYCg1daK1j9ZDCvY6YbcG0Lcf7w2Ni6LwD5Fqq8XQOFXG0VV2syGBGqhwX3vwq1q3H0ikyzIToOjhjKR34L2yBC5zR2DhoIxXIiYR59r3fb7I/gDnPWHPggJHffqVIR2xCugMBo+BUagglpLZpAAF9u88LilwC4n1yyuquHQpKJ0arWtzTsGeMRiNb0tg7vJS+kDjxgaBeRgGMTpJEQ1+cM4kGBzSp+CPBSZfqaDlg0TVSxqjJjA/7YSNAvH6LUzv7h9tWOzsJ3ZpbpBgQpcOLevfI2rsT657xV3iFxSgQjylzuAIRipUo3Pkvq7F4ngbfWxQEWrS3LalSK8CrJe2NbQl+9R4tebTnjNWAWDntg+kUB/xXBstbTwGCYyZSEtEHobnXLiwDYHYEUvLxicc2NH+ztb3fQBk//gGz2OfpzQSf6BYA+9ZqtrRfI40nbfgUA1kLrKZX34FfARok53mMz8Mjj8uwmxxMsNRWH5/YCng0cK2PD/cjrOF4eoU8tmp9sgQRFwz7D/3p5Lw4OhAsjp2cYp+YZvjW3ok+g/QrvJPDBXrcAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADRUlEQVR4nLWWgXW7IBDG8b0sYEcgI5gRdAQzgo4QR4gjxBHaEXSEMkIZoYzgn+/gCBJp/+1r7j0jQbzvx3EHHsRzbE3+F7mBzwBY54+bUErZpqGO4fy25iD+GmAjrrUD6K6VmAa1C/GsJSDxZVmoXdd1dtzTACBeVdJGQzuITopl0g9R+HOAeO2NvQECMFLK3fFPiwBMax2EpSx/DfA/JcVjiuE8rdfXTnRdSwDLokL7pwDkdF23+kVRBDEeg/WdL7UojtNqZ2osRJguKoDFy1IaY7YgOYCVhU+n0+bBPM90b5pmZWEyPYnra2vXvCZxpZbwDgBQFe9XXR57sUnEPQAShzBefL+a8OA0lGIYhgBiIUQjFjG3WvSqEm1bB+E45MgDrRUlZWopwEb8czaiXyqhFkUPAXMaNNU1QBiilxDvSPxSt6KfRhp/q5Ro3pCEmpJw0K6dA1jhEOKO2A6UF9u22DbKgPAlHTI7hpByoYQDwK1WVInG3EsPS7BXCbs5gLr9/OioXVWV68RSGyVunY3KNNnM7h4gkAMN/rdO/Lxsyw8Q6bbMADR7OKPQW/FxMSQuSwvgGRbtIhFDxGvt6r70Yb+L85mwZyECuTr9zrAccRRQGSweCyNRAZbCPCwBEuzlOPklsBuJcdsrsri2S1DbaPS2zHkJ9ozFqH3xE7O319pNNC5sAKy3201MNqSYDS44ZwgWR+hT8fsGU26ioOQdohkltZETGJ9WwkME4v1b6NH+v5dhtXOeGF/cgGCg04CSdc8xa5xPtnrFVeIKEaBEPKTO4AhGUWgm68i+3Qrv+HH2sSGKiCaN7Xua6VmA2petpiPZLY2L1nrYc8ZRgNixHwMU8iMea6KtjduAQJtBegK5G/o5cWEPALEjDi0bf+HAcuc72ziOQZD94x30xz4P6UzcB8VWeM/SqOXG80zTcV6HcqCwM1v54XfCOUGTnDRf+WFx/HASFt7JCkdh+/2BpYK5jc33Z4/jwhNuvkK++qrNGSYR54y3Y+m+SkJH7oPkxV4lX9bRLH5ncQJAtfKfRKX/vwvAwjK6D74tonvO4mQod/o2lotALJK+nD/ats/SdnplAfCQw7QHFPftwXwF/DD+HzzPBlkRlckdAAAAAElFTkSuQmCC",
+    "price": 95000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 248,
+    "reqLUK": 83,
+    "reqJob": 2,
+    "reqLevelEquip": 80,
+    "tuc": 7,
+    "incINT": 2,
+    "incLUK": 3,
+    "incPDD": 42,
+    "incMDD": 70
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 42,
+      "min": 2,
+      "max": 82
+    },
+    "incMDD": {
+      "base": 70,
+      "min": 30,
+      "max": 110
+    }
+  }
+}

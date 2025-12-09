@@ -1,0 +1,30 @@
+{
+  "itemId": 1072110,
+  "itemName": "Black Blue-Lines Shoes",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 4130102,
+      "mobName": "Dark Nependeath",
+      "chineseMobName": "黑食人花",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230112,
+      "mobName": "Master Robo",
+      "chineseMobName": "紅色機器人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

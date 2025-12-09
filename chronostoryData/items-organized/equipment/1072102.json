@@ -1,0 +1,43 @@
+{
+  "id": 1072102,
+  "description": {
+    "id": 1072102,
+    "name": "Green Silky Boots",
+    "description": "",
+    "chineseName": "綠錦絲鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAbCAYAAACJISRoAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQElEQVR4nJ2WgXGDMAxFlbsu4I7gjkBHyAp0BDICjBBGCCOEEZoVWMEjxCOk+sI2xmAg1TVHYsx/1rcs+kH/i1dm/LQ2+C5ExG93LT+ssXId3LXv5P4C9A7kBfHHw1BzMbMbda143GYfPAp5Xa9qIZ7G+UwMW2ZzBCKAts2vFHZZvq3U+v09iFi0lUFqVVkt92Y3E+xBLp6/RD/dmAVCrmYJ2oK8MPnRZwDPmn4uLVfYaJON3LTJujYzud9q+uzbhbjpWro0nfxWei4K2DDI14N2DRMA1hh+GIDWqPwjPKco5HrILhHFyomu/GlIE2fQKxZRchANKZ5j6VYSj0v5inUm2ZctyOnrwtWleqpKGkG8whuDIExqtEnxPZ4n8d8SluqqNGxrJTOEddfvbi6utXOA4YXmwcpKNnuQEyaZYlqtDwjj44V9aJ5bluPZUfpgJuRsi62IhSHqM8R3WPgw8+6weU7iH/4c+I0FCKIxLC5lZNGPdq5ufGjnUkHhNId2LiUKUfg+mGVPQ5W5WC1h6VUq7CT/ORDGAHKlKdlQacezY8Z9GMiG1ceiH1nARqClIzG0HNiGJimdONPmPETaeRxYtTXr7R0A4wRNJOxs2n8zeu9TwDQ+n++zWLNpAYGmXlk5hmzUYuMsPGAvAAnvbvQiHNS0onwGHgBxRPQPRDaLkAmsKcuC+n6gIXkveE5VTycwfpHtATzk1DSWN94IKABssidu1b6cu+mdvwkImcSgtYhtf0c8hQTQgWcOi/v4A8Z5SzHQ8tCcAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACcklEQVR4nKWWgXWDIBCGL+9lAToCHcGO0I5gRzAj6AhxhDhCHaFZwRHKCGGE9P4TFBWIae/FR0S8j//uAI/0N7sn+g+pF54FCeDypeXGGivt4Nq+k+dR2DOgOwDXq6HmZBYP6lpxv82+vBd0P5/VBrC293diYFzVHpBA2jY9Y4TO8mOl0k4egSRcOSXrsJVVPFcPFSEnKbt9E312oxqYtCYOy4HueOHaJyC3mj5PLVfeGDIbRNZG5pZV9HWp6aVvNwDTtXRqOrlXeukYwGGQv0+EbpghCJNhB4C0Jp11QIpC2t2hE8dQQHTmqyFNrKRX7EjJYjWkeIylS0ncL6UtYTSRPOVAh9cTV53qqSpphPFMLwyDc1JjyBQ/43Fi/ylvqbpKI4StKIRZ1751S4DWLhI8gUJzZ2UnVY9ABww0xTxrb3COyzv3pnlsWY5rSwXP9uwMEsIwLKFzOPZK8R/hvJrtLpJdR+GNXyc+2YDBcQgMyxxq+jG0yWKYjgKprGnVT0eBlC8cIw9DZPaoPmfJ8pa9TU3Z5Z+DoQ8wV7aiiko7ri0z5mUgu1AR2jEJyRiOAwjE9oQQYmOVHTxziniQHAWhYfbWxI8GQIxzagLnLmT7TlifizVk7l+O92pSIduA4FdHFKDLBltzqMZD9hhA07cA9i4s6HWleSUeAgAs+CiBvZBsTPMrG0UIU1kW1PcDDatzxbOqel6l4WHoIB8kO+EGYv0F0KFpLBeDEdg00q5y5GbvS72bvyGaFSSEuTOXzNHJfWXYD2AxC9MQANyWSrH1sEmcLwYM/mDYNz22JuFw/X9xHWmWJ8oys1SxmUb6ovBfCe5jWAtwYzIAAAAASUVORK5CYII=",
+    "price": 20000,
+    "reqSTR": 0,
+    "reqDEX": 115,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 35,
+    "tuc": 5,
+    "incDEX": 2,
+    "incPDD": 19
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 19,
+      "min": 1,
+      "max": 37
+    }
+  }
+}

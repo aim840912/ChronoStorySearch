@@ -1,0 +1,19 @@
+{
+  "itemId": 1051009,
+  "itemName": "Purple Avenger",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 4230101,
+      "mobName": "Zombie Lupin",
+      "chineseMobName": "天使猴",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": 1002094,
+  "description": {
+    "id": 1002094,
+    "name": "Bronze Planet",
+    "description": "",
+    "chineseName": "青銅戰盔"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADyElEQVR4nJ1Wi5WqMBDNnvMaSAtsCdkSsAQoAUvAEqQEKQFKMCWYEjYlvJTAmzvJxIjgczceREIyd+6dT/yjfjaWF+8+3jHwE8Dldp3UPI4qhMCX1jr+ppfW+dKZXfB3ANnQsixqOLYM0DSNIjRFD8pay3Om0nRV7MQw22UP9H+Ay3W6qLrpGMx7r7q+VxUZJgzlnc0sK2ELh0yl5sj4CfQV4HLuGmVMzQ8ChmeIGLzjeZFWF4D43Tf1JtM9QAbD0MTGjkN+ATDvHAF65ejen89YRb+tsvOcndhjugW4TOc+MTrzBAx3XacqY/IizGENHAKgsoHD6n1gyfHOb4BuMoQkws5RUqTJKC2AwJCMXa5XviOWDEBg7FhdK0dskVAWztZGjdYx6BpwuVGScBKw5xEg6ZSBYLymTGVZbQSL8l5Y9PF04jmMmlSxYmPFkMHAKtACZGbE8XeGIQJjVLrK4GI8ro3JU6qFcqnpDpYPDA2BBN7sUmwiBscEUsJQykLvXQYTAJ/iiufp9s1zp/YQHWR7LjPkepO41V2fnYBMbh6VJmkqMog7e6Fi0dcUr5G6D5xwHtkbwZ2ds9yIq0uyZoaxmCnrdGLmwdLE4iaQeYil4VNrMzTXUUkcDwfGNympZEgWl9IKIJeB4uKN0iH9OVnoAouGPMTFEh2PWepT26awhuQkyV2hNlSuSbCDjRJQmbqh4h458yADitiQVJgTLwUISjjOTsT0zsA5T6wrnpfOg8smWcWpzTpsKIaIgXSMgdKci1s9ZmVDTkkrg4RIf53kk70cBrq7GNtYh4gd2EEGLD7hVEheiRQu9c6Gilhrw+/AFClvUgfCtzSA5B/f0didKhhCxpHApmli0JAY6CIRTCoT5wJLJ+8sSTjT/jM1drCMyRdLSKePK5InS4rt7aFVEx2yiJ+MsiHLmKXdFXuHYVSXy1nNSSXFB3NglqlS7r0UkvBBSh+AxhFEkfS0P8p1MiCjF9BiAPDjqz1yWztRcgQtXj+a0K8QZQ9iKYokG30fy6k9DZvN++71K4CnxVv7A8fVruS/x5AzTXiFzHRXy7WGxTpkqSTRehStzdxTubSnX+OWL2ADCTVdLpw8GJabPv/MSbPgH1n79RVtp6/wYCzsEpLKuX7/zSeDxHKdzZmh98/U7+DJgeyB3nRAbFxvNz6A83zBLgOuYPKYN2LwukAUH968Fz10BbYB+AT01t93GktYObcFJoAfn59ffETNsxWwd4HyoFpWVRKI/o/u2nhg+Fsw2UOslldgD4DUCX4Ltgm+N/4B6WygL3IkrrYAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD6ElEQVR4nJVWi7WrOAzUO2cbcAukBG4J3BKghKQEUkJSQigBSohLiEt4LmFdAquRJcfhkux7yiEEYzSa0Yf8Q39n64d7v/7Ewd8Aro/7TMs0UUpJDudc/s03fYh1MG/B/wRQHK3rStfTIAB93xOjEV+Q917W2sbx0UgQ18Wv70D/D3C9zzfq+qOAxRjpOI7UsGPGoBh8YdkYWwTUNrRkxj9APwGul2NPbdvJhYHhGiKmGGTdpHUVIH6PfbfL9B2ggMEcs/HTtdwAWAyBASMFPo+XC3bxb09+WUoQ75juAa7zZVRGF1mA4+PxSE3blk1Ywx4EBEDySdIaYxLJcS/ugO4yhCTGLnBR6GKWFkBgyM5u97uckUsBYDAJrOsoMFsUlEewXUuTDwK6BVwfXCRSBBJ5BlCdChCcd1ypIqvPYFnem4g+nc+yButYFW8+NgwFDKwSb0BlZpz4ZJgyMKxxTQE353lvLp5aLbRLx2ewfGHYMkiSh4PmJmNITiAlHGkVxhgKmAFEzSuu58dvWTsP3zlA8RcKQ+k3y1t3HEsQkCksEzmWpmGHOEsUlJu+43xNPH0QRIio3gwe/FLkRl6DyloY5mbmqnPKLIJlm5ubQZZrbo2oo63ltSO3xOn7W/BbLSozq+JaWgOUNiBp3iwdyl+KhQ+w6DlCHCLR6VSkPg+DpjVpkCx3g96g0pNgBx81ILVdz809SeVBBjRxy1JhzaI0ICgRpDqR0yeDECKzbmTdJg8Or7JaULt92HMOkQObGFcuc2lueq3KnoOyUQYJUf5O5bNnJQ18Djm3uQ+RO7CDDNh8xltBozIpgs7OnpvYuVbugSlKvtUJhG8bABqfnDHYA1UMIePEYPM8C2hSBq4qhFbbJIQk0tk9zxIu/PyFBztY5uLLLeT0E6riKZLi8eF7oJlfssifWT2QzRYbd9Wz1+tEt9uFFlWJ5MWchKV2ynOWQhJ5kfIHoNmSKaJX763eZwYZo4FWBsBfX8NJxtqZiyM5i/rVhfuEaM8gl6aI+hjH3E7D+bo7vJ9RfwL4sXnv+SR59Rv5nzmUSjNeqTB9q+VWw2ofqtSKaGvVaGufpVz7c59x6xvwgYKabzcpHpiXoS8/S9Gs+Ec2fH1l3/qVXpylt4Ssc+6//y1vBsvltpoLwxh/Un+CawAlArcbgPm4Px7yAi7rFbsCuIEptuzk4HODkLy85VnM0Lz1QFWydqu0AjrtRLIlBxvTJjgFw/My8fRI0oeHw5e8opbFG5hp0nwAeTHuZWp0F/8frX282AtDBRvoY9H/sKRMwOqmYIOub48nIE8CnA6Voz1WVeO8DeiwuX7Z/x9dfrEc3D69cAAAAABJRU5ErkJggg==",
+    "price": 170000,
+    "reqSTR": 180,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 70,
+    "tuc": 7,
+    "incPDD": 70
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 70,
+      "min": 35,
+      "max": 105
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "itemId": 2043214,
+  "itemName": "Scroll for One-Handed BW for Accuracy 10%",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 2110200,
+      "mobName": "Horny Mushroom",
+      "chineseMobName": "刺菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3210207,
+      "mobName": "Tick",
+      "chineseMobName": "鼬鼠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

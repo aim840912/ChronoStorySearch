@@ -1,0 +1,43 @@
+{
+  "id": 1072052,
+  "description": {
+    "id": 1072052,
+    "name": "Dark War Boots",
+    "description": "",
+    "chineseName": "黑戰鬥鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQklEQVR4nJ2WgXGDMAwAxV0XoCO4I5ARyAgwAhkhjNCMUEaIRygjlBHqFTwClRTEGWNjU90lgGzrkSzJvME5mQO6ImdhLogBv7/fG2VpW3i/2DkHlgJtAHrQME0TEkr4/LyDtZAtR6DZB+hx4uemqfk6jQA/XwouN5P0KgZiiA8QIW9036JjZbZXIdAK6R/DbpDH+hvfW6QYU67r4MArHxSFSBjHR7vR3wYDVVW99u5AklkngNJeeU84XKTAv15bUEqxLiV70HSFpvvGX8OPSlVodMQwKbw3YCY0jobb4QXJFR9UfLQYvucNVI1GSsouulZQqg6deMC1teyO6wXtFUGNiWdfMHRkyhhcXE0vENRQvPfrOEEElBO2GKi4tGZpNQTSuwk+xC453nUdDMMQ9CqWDDJxftVKvFhkDMPG16ZpQGu9g6WyrkBDOxjduzp/LATLaao7mIDknn4UtnEcOSlCsNzuvcLEOIVK4AIhET1JXdekZ9ip88jfK4FQVwiF0u0W2eeRn8ZijDwJJQxBltrKBs3Uy0LexGrInSuFnDz4pM2E9scv3FCyiBwefBR/VyQMPoT0qb6XDJ1rQGLuvr1AfL33crus23zlYB1sBqk2yKgYdjdc6scN33K/qSMG3O/3tR58IWMEdmHuy8jeLRLsdfPz+eQHekMqMlkY8oqeKQsFtHSAQ8jqEQHIsH8cx5qpzJOwOfOOvxlikKOuTfO9NenPrbOQ/wiD3EZ4VtzMSoG4M//DuMipj/yzsCzjrvwBM5KwGDtq6HEAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAYAAADjaQM7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACb0lEQVR4nJ2WgXGrMAxAxV0XICPwRyAjkBFgBDJCGKEZ4TNCPEIZoYxQj/A9ApUcxBlhY/vrjsTIRs+SJcEH5Mni0RWpD6fCLOTn52unLE0Hl6tZUoEx2A6iRgXzPCOlhM/PBxgDWXIGWyRETbO9b9vG/s8TwPffCq53neRdCGZBEsJCXqmhQwfLLO98sA00PMfDpJ0b7nZskKR1uT0HEe8kLAjikE7Pbqe/jxrqun6fZUSi2ciQ0tzsGdnQkQJ/BmWgqiqrS5EjbL5B23/h1drbqqrR8IQhq3CsQc8IQOPd+AbliIQVfzoM5esOVYOGSso6+q+hrHp05gm3zli3XG/o7Ais9XlWesNI5rRGA/X8hkEDxWXY5gnEsNQQhmDFtdNrWyKYOiyQILPmf9/3MI5j0LtQgvDi5V1L4WLiOQyh/W/bFpRSXmAsGws0dgDS2NXJuRAwpREfgAzjMV0UwmmabKKEgKldfwMygMLGG2AQCetJmqYh/QbMep/Js2MQdQ9fWGVXSX6fyRRng+SRL4kItNZeFmyh3ufzKlRj7lq32KMvT25JvvOSxe1LIFdOX550Hq5wSCSI9Cl9MhpG1wifgesFg6RebNCbjbuvJ6yT3STVDhlm424ScH25oVzHhzqzkMfjsdWLFDJIcBfobojPcpVgb1xer5e9oZ1SIfLDPu/onrKTYWuniII2zwhCxmURhhowr+MQOuvi3yAh0Fm3p/XimQteMt93BjbPckABqQMgw5eFuc0zV9ZNDR6YC6ID1QSzHf0/ACz0zefb6SE0nPoXNPAvgzc4Y3My3l0fzoQ8YN9uS9+OPTrvBn4B9DrG6g+4LhEAAAAASUVORK5CYII=",
+    "price": 7500,
+    "reqSTR": 80,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 25,
+    "tuc": 5,
+    "incSTR": 2,
+    "incPDD": 17
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 17,
+      "min": 4,
+      "max": 30
+    }
+  }
+}

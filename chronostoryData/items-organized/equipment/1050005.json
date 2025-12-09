@@ -1,0 +1,49 @@
+{
+  "id": 1050005,
+  "description": {
+    "id": 1050005,
+    "name": "Blue Kendo Robe",
+    "description": "",
+    "chineseName": "藍劍道服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 20,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAeCAYAAAA2Lt7lAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACAklEQVR4nKVW7XXDIAx03vMCXoEVWMEdwR3BHSEzZIRkhHqEsoJXYAVGcDmoiMDCX70/dgDfnSQEaZttLOz9dmB8hZpAIBjHn2aaHk3XdY21UyLF+DwbP64aY75oXBSSBBYi4FBqCM++H8OcUrpxzvnfTy9uyMBKpBQI5PhQ6z4QDcM9RcHJCRjXevBjPUVzqwkkcmNegRgpIHBykGKdtbMfH8J7NPBcibScXAKJWWsTOXePeYhDBND67o08kkiWIu5eApFjHRGWc75amUhbcw/HKB7cRfcqkZemttDyRfE5B8ISnKhGKkUBgds0fS4okHNvYu5edm4zY7w2gCd/RwAR1jBMxIadQu6wq8hELVXeLA2tipy2FsSUGlMUVHykT4JfzwWrfUAI6YoRmBQBgIaiHqBIMP9HfvioCMQENBei4OM8PRB1Tmd7f1eAuhYu4/uUniCMB10X5mNxVVPD3nGddke5S3wcoegkellg30AUOSqwDMN3+pD3BZ05eMY0TSy6Cymij0GYi/FUueL3CYFS6CoO1yBeKGg2WbA8pk8LRJJ8t0hnUIlTApwMEcXG265DVWDvnJec449BefmLAvG+NScKXI8iu/SpBwqv29SsDtjOZRT/7uQ9HBbAmV/75xEhpym7cHB1Smmi649Dqg9bVy1yEBHshQ9erw9pbrWO4xco/2DYhDvClwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACMUlEQVR4nK2WgXWDIBCGyXsu4AqsYEdIRzAjmBHSEZoRkhHiCGUFV2AFRrD8kKMnnqhJ//daDfDuux84oVLrGtn7YUO7qBIoBOq6H9X3V1XXtbK2T8HRPgzGt2tlzJnaF4FLoJECcWndhufx2IU+rRvlnPO/bz4JQ4mIMAkUIAjQNMcQsG0vyRWHkNDeNK1vO5K7GSwHJYgx9wDA1JA4BMExztrBt7fhPSZyE2FVDpFEUGttgnA36EcSgEFNc/EJXSew2dRxN5IIgnEUOO/zqzmDEUh0AwdYZGQb3egEyZNbU3JEg+NzCIFz8YBLwZdcEejQ96cRC+ncH4C7kZ3YSYJ87SAPmTsCjBUeg9mwsyhb7EJKZmkKfdIppgSadACqdZdc0SbBtEry4zl4tY5IYRqjI5McQShMqiFyhv4nZPcnKABIKFK44u182gB3rpnVziYQfQWQdXzv0xOB4we1Dv1xE2hV0pZjIu2mfFd5X2FzEPxt0HoiEbYXNLbtIwXgdUXfNDzj9PXM7RtTR0EQeArlU+iy3y+AcuA72rVG8WBD0cpg6Xh4CRSDTXeX9I2TtBvEg8JhLOD1dSqC1s4ZyQkuMNIlZREU7wNmx0You5pdTqiGpirD+DqhDCRX//JlKAhVDKuOQLXaUHU4c5ZuSlGz6cPlD1VuKwYB/eRPx4c0ffxYJknrx8adeTt3lAZ42E1I9wv/7vfPb1UWznGX/1XPF5vBPoQA9XNs3ucKv9P7L5ticLxLJS/AAAAAAElFTkSuQmCC",
+    "price": 9000,
+    "reqSTR": 65,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 20,
+    "tuc": 10,
+    "incSTR": 1,
+    "incMHP": 5,
+    "incPDD": 36
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incMHP": {
+      "base": 5,
+      "min": 0,
+      "max": 25
+    },
+    "incPDD": {
+      "base": 36,
+      "min": 16,
+      "max": 56
+    }
+  }
+}

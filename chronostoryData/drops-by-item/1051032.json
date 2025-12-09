@@ -1,0 +1,41 @@
+{
+  "itemId": 1051032,
+  "itemName": "Blue Calaf",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 2230113,
+      "mobName": "Dark Eye",
+      "chineseMobName": "黑獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.18,
+      "displayChance": "0.18%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230106,
+      "mobName": "Lunar Pixie",
+      "chineseMobName": "月光精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230126,
+      "mobName": "Mummydog",
+      "chineseMobName": "木乃伊犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

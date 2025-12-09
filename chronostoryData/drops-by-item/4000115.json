@@ -1,0 +1,52 @@
+{
+  "itemId": 4000115,
+  "itemName": "Cog",
+  "chineseItemName": null,
+  "totalMonsters": 4,
+  "monsters": [
+    {
+      "mobId": 3230306,
+      "mobName": "Chronos",
+      "chineseMobName": "妖魔",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230114,
+      "mobName": "Platoon Chronos",
+      "chineseMobName": "進化妖魔",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230115,
+      "mobName": "Master Chronos",
+      "chineseMobName": "妖魔隊長",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5220003,
+      "mobName": "Timer",
+      "chineseMobName": "咕咕鐘",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": 1041098,
+  "description": {
+    "id": 1041098,
+    "name": "Violet Platina",
+    "description": "",
+    "chineseName": "紫暴風甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADSklEQVR4nL2W8XGrMAzGxV0X8Aq8EbwCHYGOQEYgI4QR4hHCCPUI8QhlhOcRqD7Zchwg7T/vnrhrwAj99MkS9I3+n63486YnbM1vzj+YPvvSb7QDTcEJkG7DlT7caetcguD+siyHgdrW8LNnefZ+vfF1K+sxEIUlyDmejTHKuQBta+nv5704zn6ms5/W1rY0mB7nKbgxO+DFXjjhCznvBWY6m+8EsnwoVE2Ahn1qx54PmIfznrEzwK4MlYR92CncAWNIoNoRsI6VGz5uI5d8OtGSy1LUdQPFJa3hGShSOypnAdbOONf9AgxVXMJCX/d7DpABbhaPEB6Ba9NrhV0GR5xzAvbjiS/GnXzADO9L5IfnkyvrmnCklL01baoIHRtgzUlOGwCb5g+t6xcH9CnS+9TRYDuBdUMCeTeUc5ZFzo009KmZJr6HhgIU8BewR0kTNEprA2LzLwBegrHK6GnmRPqRf+eRtGEdn/NkUGClgIa40OenTzf5BzB0O7alBgqUISviQF0NQxd3UGwD6kg9KwN0ni+psAy7dBilXhRyxYoBVlsBGptgksmj2QSGzm3HVttZDFCU9ZVtQTtgZFDbYdsXKafs2RhRW55RXp143fKYtDP5cGXFJ4ae08OcI9TVZmQb9m+nw5c3VCJDPxkuKXeiSdeBh5pHTwwlRbdGHNK2zzNq4Y8d2EDfdk6+hppUSmpF4dZUIbp0ayE3yVbpocKYs+0GT/6c2rG7dNTG1DQoJ/Z5yns4dhNNfijPPRQ+oFL3LVAdlpzRdLI03iK5j0jzh6P++nixpoaJMotQqLAQj78qW4XrMKayxNiSCzO/RzsGB4rvMc8hCdhgfbGpDrx4dn1JMA2/J8vNp8mnmIvO4loUwqGuNeYJny3A1QwHhAtAqggziJc81mp18YXSAjzqKmQ+2L5ALeWPax52TUwT0O8lYpjNK07jPimsTbKVmOkzhbICjKCAIREk5DffPP1XYhi7w7hPTYMsMA7YP30Jm/xSBljVPqk2D9Ul0Y2Iw7HQkqJ9eeMbfu2sOVK6TrYqrKypX7a8vgKmo1HP4m4OpcO8XyvILlh978hPBdSV2yps3OR++1fwR8DOz/vD9afPE/07azBzR+vfc7wae2K1x4YAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADkUlEQVR4nL2W8XWjMAzGlfeygDsCN4JXoCPQEcgIZAQYIR4hjFCPEI9QRqhH4PTZlmMMae+vE6/FGFk/SZZMzvT/ZMW/swxYTr8p/yCy9qXeoHuanAlAuvc3+jCXWjkbwftlWQ4NNY3itdew9nG783MT5r0jcosLY6z13odxAOpG0/fnIyvOdqarndZGN9SrDuNoXKkdcNQjOzySsTbAVKvTG0eaL4GKBKBinVKx4wtiobxn7ASwG0ODw9btItwBvYugUhGwliNXfN0HTvl0oSWlJUfX9uSXOIc1iEjkKJ0ZWCpjLPsFGLK4uIW+Ho9kIAHMHDScexouRZ4FNvaG2OcI7IYLPwy78AFTvC+eF88Xk+fFYU/Re62amBE6FsBOlzA8AXg6/aF1/WKDNlp6n1rqdRtgbR9B1vR5zGGRMQP1XSymid+hoAAF/AXsmdII9aG0AdHpDoANxjhKb2lmR7qB7/NAUrCGx9wZ5DhSQJ1f6PPTxpd8AwzVjm0pgQHKkBV2EF0JQxW3iFg75JE6jgzQeR5jYhk2tmilLkTIGcsCWCkZqHSEBU+exRZgqNxmaKScgwCKtL6SGrQDegY1LbZ9CekMezZ45JZ7lGcnntfcJs1M1t044gtDr3Ex+4joSlFhG/an0+HhjSjhoZ0Up5QrUcVnx03NrRcEKUW1elyhbLc9qqGPHaig552SLaEqppKaEGEtEiGqtBaXiqSO9DBCn7xte0v2GsuxHVtqfCwapBP7PKU9HNqJJtvndc8In9CQ9xooCkvyaLpoGu6ezIen+cNQd3serLFgfOhFRCgw54+/KnWEaz/EtHjfkHEzn6Mtgx35d5/6kAJYYX7RMQ88eTVddjA2vyXNxSfOR5uL9OKaI4RCmWv0Ez5bgIsoNggVgCQi9CAOecyV0fkXkWbgUVXB8153GaopfVxTs4tj4oB8L2FDVUec2N1EWErwNtiMnymkFWAYBQyOwCFbffPkp0Q/tId2N0UDL9AO2D85hFU6lAGWaDdRq2fU2dEqiMO2kJSifHnjT3zsrMlSfI6yCizPiV6SNL8CJq1R9uKuD0OFWbsWkNLYG9++010Vc6UoCaDMXB3hyUym/tWmaPuLRgDvtDnej8Vaezi/+TwVEJWMltAdvJLyML1yLYwHOm8lUIw3xb00/g+/3zYyJSfkL+S13sPSqK/e1c+v3tXjzd+5ernQ76lTL+A/OZjHfwG0nDAgIpCMQwAAAABJRU5ErkJggg==",
+    "price": 100000,
+    "reqSTR": 240,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 70,
+    "tuc": 7,
+    "incSTR": 4,
+    "incDEX": 2,
+    "incMMP": 10,
+    "incPDD": 75
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 4,
+      "min": 0,
+      "max": 8
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 45
+    },
+    "incPDD": {
+      "base": 75,
+      "min": 40,
+      "max": 110
+    }
+  }
+}

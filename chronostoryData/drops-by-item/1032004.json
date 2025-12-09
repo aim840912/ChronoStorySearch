@@ -1,0 +1,19 @@
+{
+  "itemId": 1032004,
+  "itemName": "Gold Earrings",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 2230101,
+      "mobName": "Zombie Mushroom",
+      "chineseMobName": "殭屍菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

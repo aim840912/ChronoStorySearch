@@ -1,0 +1,19 @@
+{
+  "itemId": 2380004,
+  "itemName": "Red Snail Card",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 130101,
+      "mobName": "Red Snail",
+      "chineseMobName": "紅寶",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

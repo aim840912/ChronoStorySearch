@@ -1,0 +1,19 @@
+{
+  "itemId": 4031311,
+  "itemName": "Snow Crystal",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5300000,
+      "mobName": "Leatty",
+      "chineseMobName": "利堤",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 100,
+      "displayChance": "100%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

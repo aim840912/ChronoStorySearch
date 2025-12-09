@@ -1,0 +1,41 @@
+{
+  "itemId": 1050053,
+  "itemName": "Blue Anakamoon",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 2230113,
+      "mobName": "Dark Eye",
+      "chineseMobName": "黑獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.18,
+      "displayChance": "0.18%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5100000,
+      "mobName": "Jr. Yeti",
+      "chineseMobName": "小雪球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5140000,
+      "mobName": "White Fang",
+      "chineseMobName": "白狼",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

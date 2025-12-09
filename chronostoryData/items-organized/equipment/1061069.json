@@ -1,0 +1,49 @@
+{
+  "id": 1061069,
+  "description": {
+    "id": 1061069,
+    "name": "Purple Shadow Pants",
+    "description": "",
+    "chineseName": "樹林之褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABrElEQVR4nJ1Vi7WDIAy9ntMFXMGO4AqugCPUEZ4j6Ag6gqzACGWEMsJjBB8JQrUF2/NuT0sSkkvCJ73giBX/RxGEPenqgLbtsCwTjLHo+55lJRVmKdE0Day10FpjGAYopfhL9q5r10B8yJSIjDE8knOQNY8m2tjXEdMCpNO4x4GUgrRWMYMgS5clyUDDfiRrI3Z2ZEkLKkHgh0phw6ss9Rjlvu9e7ck9jSDHvVyigiv0zc7bAHOaaQSRECyHGNYCsder6IMPpGvIyhOX7rdijYh0OaK2IhLSvHUf7yGgIdOn/8zUB9gtC11KSjtW4RfM44IP4D3zhMWWDWp3C86IP5Km4CuosvNZUps4gBTKbdezpPsDALYDgiQx3MFtC0S8EYA/Tv1NpgnCgCRxKlNuJvz23Zt2A2RncQb34nFfhxjT2Do2FSJdp2nhSf+WNerana+onJ4nHabbW4wQN6fPayyfVqNJ6jrk8A1yMUzadzPuj8WV4Ev2nWkmsUAa3Hwej99DjJLmSdq46zxefa3+fZ/vZ0B77XZ9oGQeCcWkhcSY+hvJZRnn6RbohP0PlH8SrHLuGZ4AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB/klEQVR4nJ1VgZWDIAz9fc8FuBHsCK7gCjpCHeEcwY7QjiArOEIZoYxwjOAREIoVlPb3UUIk+QnEWCCOGd/jFFPGiGYNtG2HcbxBSoW+74088Ql3zlHXNZRSEEJgGAZM02QG6buunWNk0YzIuZTSzOTAycLM0uvMXk1GpLSmOYUoETkSYvKROpnrbEgGarOPZCGbQJ9GjOhE6Tf4pWMwineZi6uX+75712ffkQcZhzJDCX1IGz1BH+rHGXmQY4IybqRZOTK7Lv0efEE0u+gtGdP/pVmRc8GuqFTjSei50j+7o4EAz6+6V0bWiVqiFYxTej5bG0QeCmTC3IElOS1Ro9LVl0uWTRSDzbREDg6J1MElO7DlFj8iCi8ZWIoAnER3ycvxNb4SCVQQ4hOiEBEShyhZbkamoZpep3uYnsC7dP+ygSg85sHb1KqKNtaQaL7dRmNge5dAVem6akq9ThMNt8vGpmkuen1fkW2OjqIiA+rGZJSDHJsVUd/d8XiOOn17XLZj34FEo8TSgJ/Pv5XNxLfVtyKq9St4Pdtzsv1s/34c2nMX9D1m/HCsPxsh0YnjGvuEp7Lxz6n6ImWdLIY9p0d95ufg+YaIvc0p3RFUMJvhiFhipEhjTmN6GlQZsgiclsH8bSZJ8jCj1Ka90lM78moUeKV3dEQsQboXmJf/AYjGK7aDNi0LAAAAAElFTkSuQmCC",
+    "price": 41000,
+    "reqSTR": 0,
+    "reqDEX": 80,
+    "reqINT": 0,
+    "reqLUK": 110,
+    "reqJob": 8,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incLUK": 1,
+    "incMMP": 10,
+    "incPDD": 27
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 30
+    },
+    "incPDD": {
+      "base": 27,
+      "min": 7,
+      "max": 47
+    }
+  }
+}

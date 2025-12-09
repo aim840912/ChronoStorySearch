@@ -1,0 +1,38 @@
+{
+  "id": 4000128,
+  "description": {
+    "id": 4000128,
+    "name": "Buffy Hat",
+    "description": "A multi-colored hat from Buffy.",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9ElEQVR4nKWXgXHCMAxFlbsukI5gRnBHSEeAEdoR6Ah0BDoCHqEZoR4Bj1CP4EqOZWTj0AR0lxLSxHqSvhTzBI9ZqL53axdYAxCEg+g4hD2A9+DwsKOD3btloMUgawA6dvwbTtCDBYOOybZ9D2qr4TwoCbIIYm0JIsRzt4tffsIBo3dgCAIPhSCAEKcjLIa4RwN50ZfuI5x+3+K5hPCqX7zYoyJEhypmobbTUS/KwhzAYnVj9fFvAqASoC56yoDzsMRaAIFExkbLbLpdS93hjPd5uI6eTC0sQw0QnY9+LC6SIzMa+Hg1RUrJhU3pp064x64yQArfH4eYRqWnRS0CDYPG6x4+38fcim4merYlOmCAIsXkhCBoeYYgofUprezcPRg9A4QQzljsT+iev5i2a0GMXzaWoy7RQpPCzhmZMoDOjbHNp7ybZEafbwhkK+dF9H5W+UGO7c3moiUC6FLkBVlteqvyubPCkYabtt9rOODh3EUvP98DvLxGLXWsgfk+F2Jko+8M4VLUakYH00jwUyYbs6E5B+gPzwJjzZRa4YCmnxrSeTUFXVWGOJuSc5oNGPlNgDyEWOWsfJl2B5NeqDUzmHDsq0gr58UrXQKEur2k5Xa0PjvonS0yM2dzzmuA7LwQmXCez/HQvtTACsvTdofiz4OI3+3knDYV0izCa3zPM0hsPZF610g/C64RfXRujSszIJ23skrXvesnTQziBtoNSR1Qh+CnEhCVdTvR9ov3A+QjLoiHwZ6myOiaUqqpg9i+CUL2PTvm+/IcICra3bj2QMwQZDF7uUyXchFLBGs824AoAC6LaNzhWCpDuYwXdY7/uu4+oGF3qT1Wg1s4tWHLJEDOAj5+BUHnvqH4ll7oNobZDrfbtM5AhlBaR1FKkAyEq99qPgllEULf2B21RJhVevjexpKwyQnXGIB32VwXRKGkLRgwDI9llQRA0c2B0HWOvDUL/gMoQGoY2mqR6X82ntXLp/nGXfvTLJr4DbjquZb9AWE9uaGVdE2iAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADGElEQVR4nKWWgXHqMAyGlbu3QDqCGcGMEEYgI7Qj0BHoCHQEMkIzAh4Bj1CP4Cc5llGMkxrQXSAJwfok/VL8D14zn103jy7wCIAXDoJj7w8AzoHFw4wW+g/DQNUgjwA07PjXn6EFAwM6Jtu3Lai9hmunJEgVxKMlCBBvTR8uLv6I0VsYCAIPhSCAEOcTVEM8o4G06Lb59Off93AuIZxqqxd7VYToUIUs5HY+6aosLAFUqxurj58RgEqAumgpA9ZBjZUAPImMjZbZNH1J3f6Kzzm4j55MVZYhBwjORzfObpKjYRzgczfMUkouTEw/dcIzdpcBUvjh1IU0Kj0tahCo6zTed/D1MaZWtAvRs9XogAFmKSYnBEHLMwQJrY1pZef2xegZwHt/xWJ/QfP2zbRNCWL8NqEceYkqTQo7ZWTKADofBlP8l7OTzOj7HYFM5nwWvVtUvpdje7O5aYkAmhj5jCw3vVfp3BrhSMOqHQ4ajnhYe9PL5aeD7S5oqWENLPe5ECMbXTOEjVGrBR1MI8FNmSzMhuIcoA+eBYMZptQKBzT9VBfPsyloszKE2RSd02zAyFcB0hBilbPyZdotTHqh1kxgwrHLIs2cz17pEsDn7SUttaNxyUFrzSwzS7bkPAdIzmciE87TOR7azTXwgKVp26P40yDidzs5p02FNIPwGt/zDBJaT6TeFtLPgitEH5ybwc4zIJ2Xskr3nW0nTXTiAdoNSR1Qh+C3EhCZNb1o++r9APkIC+IxYE9TZHRPKVXUQWjfCCH7nh3zc2kOEBXtbmx5ICYIspC9VKZbuYglgBX+W4CYAdwW0bjDMVSG+TJO1Dn8dN99QMPuVnusBrdwbMOSSYCUBfz7HQSdu4LiS3qhxxhm3623aZ6BBKG0DqKUIAkIV19rPgllEEKv7I5KIkwqPf7sQ0nY5IQrDMCnrARAS2/oG7dgF75JMDyWVRQARbcEQvc5cjELtnH99HQOwPJS8fuT7yPMgR+irRaZ/mPjmb18+tIzSxlgk3ExDO3zjlBvu7iOPBYB6EebQZTC5EVzcyvXRbX8B5JPxoOnTsuZAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "price": 75,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

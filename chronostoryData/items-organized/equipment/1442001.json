@@ -1,0 +1,39 @@
+{
+  "id": 1442001,
+  "description": {
+    "id": 1442001,
+    "name": "Mithril Pole Arm",
+    "description": "",
+    "chineseName": "鋰礦戟"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAkCAYAAACe0YppAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACEUlEQVR4nL3WgXWCMBAA0OO9LhBHiCPEEXAEHAFHaEeQEXSEMgKMYEYgI5gR0rsj+KgiQQykTytI+LmQu/gF6zeHr2Rt2GWphLI2bk2YUWssH6wF39G6hVeZ6ieU3paGB9Gl4ZfokvAougRMOQohNDbsfqsGpBSw323AtlmTvLo4FnxHDUYpsxPoy89ohxjwP7QoS0QLOp+MdYoS8TNqk1CfT2GO9lhc+GAq+inMKEVp6ouvwdPQuTCnDKG11h41k8EQzHvm0PnzbwXHw74X6fvoGDyEu+ragBAChJQfoaMwTeVhv3XdcdPcgJ6ixumVaR7M09mw9bjBEsQlEE9oY/BlOVoI5OksmKZS4H9CUyU8ajlXCVfpN+i6cDjV/W5vDWQIdqdzhRFbUFgY6I+KPa9gD+Fjhvz7DEpJvEYCXgZJkrxakJNhHy1WJIy21gZ/nGmM2vI3VKVSpdpB4QgI5T6SdiQDU9swjDdT+HYpNUfaNULzNOXv++hmu317hT/C7oqrt6RpxUiN39s4UoTyLL0PwJuz0EfYNbcb1LWBAgtE11R+4gizTLXHEdBHmH5ow89hRx/vN8N8defq6qc2DtqH3QlL4SPaNYkLh5658Cqu4MHr5sCI7odu1m7yAqKiHfwy/7iQICg7NWL7gsDoRQ+NFW0HjzblkzUmGoJdg9vgEmgI5ue7BBqEl0KD8FIotT+MxRn+/A15VgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAkCAYAAACe0YppAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACT0lEQVR4nL3Wi5GCMBAA0GXmGoglxBJyJWAJWAKWcFeClKAlHCVACVICKcGUkNtdEgYxfEXjREn4vGzIxy/4fLKYo0/DNokl5KW2n4QZNdpw4VNwi5YN/JGufkLp691wEH03PIi+Ex5F3wHTHIUpdGvY/hU1SCng8L0D08yaaOjireAW1RilTM5QXX9Hb9gCfkCzPEc0o/po7KZNIn5GTTR1z6swR3vKrlyYi74KM0pR6vLq1uB56FqYpwyhZVU5VM8Gp2DeM0P1l78CTsdDJ9Ll6Bgcwm1xq0EIAULKl9BRmLryeNhbX67rO9BbrLB7ZZxOztPVsHG4xiWIl0CsqLTGbDhamJinq2DqSoG/hMZKONTwXCVcxT9QlZnFru7etqghIdieLwVGbEDhwkAfWux5BDsIXzOkPxdQSuI1EvAyiKJoaEDOhl20uCJhtGWl8c9ZhVEbPkOrVKxU0yhsAaF8j6QdScPcFIbxYQq/rnnFkfpEaBrHfL6L7vb7xSO8D9sbjt6cuhUj1W5v40gRSpO4bYAzV6F92Nb3O5SlhgwXCJ9UeuYIk0Q15Q3QPkx/tOH3+E2H7cNwvtpLcXNduw3ahe0Zl8I+6pPEgUPvXDgVR3DwujUwoofQw5pNXsCmqIcH5x8vJAhKr26YvmCi9aKDumh3ALC0JaZfMbY78cOVm6wOpUEgF8Km8+tzEBYu1zVugx30hDnuN2wACdVT1i6bPuxRyQXRohksj3S0MUMRc+pE6uuGIuqf6x/38xPsu8NDewhHKQYaYUbKD+f+AQ/ZNUG2icI+AAAAAElFTkSuQmCC",
+    "price": 22500,
+    "reqSTR": 100,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incPAD": 52,
+    "attack": 2,
+    "attackSpeed": 8
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Pole Arm"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 52,
+      "min": 50,
+      "max": 54
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "itemId": 1061101,
+  "itemName": "Pink Mystique Pants",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 7130001,
+      "mobName": "Cerebes",
+      "chineseMobName": "地獄獵犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7130200,
+      "mobName": "Werewolf",
+      "chineseMobName": "狼人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

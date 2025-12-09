@@ -1,0 +1,43 @@
+{
+  "id": 1060025,
+  "description": {
+    "id": 1060025,
+    "name": "Blue Nightshift Pants",
+    "description": "",
+    "chineseName": "青夜褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAcCAYAAACOGPReAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACE0lEQVR4nJVVgZGEIAzEGRugBVrgS7AFW/BL8ErQEt4WbMEWaIEWKMHPouEi4nnuzI0HhmWzhFirM1b1HJUc5KSrtV38E0JQjbVqcS4+nfeHOa11WuTctErik1IsZGAxMC+zmHvHheCLsk+kUJIDRFJ1Uuj1rtRdkq59/6eCfyvVRqexFxnkY2Na5f2cLDgpBREDhCUys/sJX0P2vkgqlfrCAknM7+WhSdKU+hURK8JTkrBaaUFSCkKkbgoH6uiUtbbxtLdnAJuy1sR1LhPy2FNrzLYR1a1VJsbrcPQWpGvXDgeyEqH3W9mwn01DJUa1BuKoWFhweVCSUGuDYIXbhsVwCDaBWK45pZ+T8emGQvocw+eQo5YpMdkdZEyu8qBUKuRx2H9InVChcWjd32588FQSps12wn1YLcu4Ns1n4jpPx4siDxcXId84jwVpNc2vFeWQ3+VMJSOqlX03j+f0K9QXAruujxNoZ3tQEX3f70RBzfOERp0E1HkgB31KHVjmbUNjGyp6+jKIlpoaCtIfxzEO2ra7VQoyAALiuNRQhmGIKoFpGq/8ZFSv10+0CwIAKSKROrdsHQeNglR8UsmAXWyD/KQk0kik6WbZTek3ACHbYJU+KI0NOu34QCkIPWXISg9dilUCZID6FgZNPRIF1REH+1pvu2x+Us+hDezj9EHmdsWcPpXSb5qY77NOoJtIC87z/7VxnBndrPMbAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTklEQVR4nJ1VgZGEIAzEmWuAFmiBL8Ev4VrwS/BKOEt4W7AFW6AFWrAEn43Ejwjof2ZuEI9ks5sYHqpsq/q7NaU/SkCrtR09LMuiWmvV7BytzvvDO6317uTcuJbAiowQjA0B5Sqf5bmaFYGQcWrMilc2sPwP0Nr332rxv5lqo/e9TxjIvTFP5f2Ula/ICMHZAJIDMLE+qNOVhOUaCUa+EITB+H/ZGFdAu2yl4Jw5VhmYWZXkOzECCGQzmfqmrwg0AFhryM9V5Pt3jawxtKLjrDJ0Xi/lWkmgtXu+DwA5EA7E9Wnb0O6zIzBiVpDvshlO3eYnhamBgJASEgNM+lwxygJwVy0Z6fgM17VmByD5bRhdd0zP1NicgBhMBmE2JFWQLViD4al1fyuZIlAKsicQQeK2medhbdv7YAcg6eTFh1kbL2lH3mnvZpxeK1oznV0Jm/08WMl7q3Y+la5B/8O563p64cKVEB2z1vd9DL6oaRpx+eWSytcIzux4NZXnaUvC2DZ8qOEGdvlzp6EK6YZhoM3z2V0yAgAMSdH+7lB9v9/EBjaOQ6k+bM3r9UFSIylYKbETkHPzNokxLEO2NTZskJoldAXtTkAUXIcJYTdGdwwgLKFV+pIRXXp7ZkdG1a8SID4oQX6B0eX0ZjawIN4hVg3M4KKk4IvqQgxRJ0Ohwo+B9JbNVp8wiwOoldK18lxqLB0AXGTGuavtYvaP6EwBhuFrPzEdZTaqYmGiBAdVNcnoU4Kqi7pEgyxf4lm+P/we8cEngXMgOgkmg5b2+/MPjL+mm3wnL78AAAAASUVORK5CYII=",
+    "price": 2400,
+    "reqSTR": 0,
+    "reqDEX": 30,
+    "reqINT": 0,
+    "reqLUK": 35,
+    "reqJob": 8,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incMMP": 5,
+    "incPDD": 12
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 13
+    },
+    "incPDD": {
+      "base": 12,
+      "min": 4,
+      "max": 20
+    }
+  }
+}

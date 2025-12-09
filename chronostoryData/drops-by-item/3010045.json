@@ -1,0 +1,19 @@
+{
+  "itemId": 3010045,
+  "itemName": "Ice Chair",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 6090001,
+      "mobName": "Snow Witch",
+      "chineseMobName": "冰之女巫",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 10,
+      "displayChance": "10.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

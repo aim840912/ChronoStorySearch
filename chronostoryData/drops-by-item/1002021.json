@@ -1,0 +1,41 @@
+{
+  "itemId": 1002021,
+  "itemName": "Steel Nordic Helm",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 4230111,
+      "mobName": "Robo",
+      "chineseMobName": "藍色機器人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5400000,
+      "mobName": "Jr. Pepe",
+      "chineseMobName": "小企鵝王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6230100,
+      "mobName": "Wild Kargo",
+      "chineseMobName": "魔龍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

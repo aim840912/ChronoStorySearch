@@ -1,0 +1,30 @@
+{
+  "itemId": 1040086,
+  "itemName": "Blue Jangoon Armor",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 4230106,
+      "mobName": "Lunar Pixie",
+      "chineseMobName": "月光精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5300100,
+      "mobName": "Malady",
+      "chineseMobName": "巫婆",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

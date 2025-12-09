@@ -1,0 +1,55 @@
+{
+  "id": 1032032,
+  "description": {
+    "id": 1032032,
+    "name": "Fallen Leaf Earrings",
+    "description": "",
+    "chineseName": "枯葉耳環"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACO0lEQVR4nJWWDXHDMAyFlbsSMAVTCAUPQil0EEZhg9BRGIQZwgxhpmAInp78U8Vx20x3vcY/0acny2pPdMzyZG6hf9gzkAC+z0YGMZVJy8OXr5T/A3sEyr/vrg8SQ2wMAsMH8AqjI8B7oJyvZyKjZgAwK0UPWCIfDZ1Z2mU9pm4GEiVwBqfaWurcysAY5dnz5NUZevWP1Y2g/H2Bk+LRuQIUSAi0MmBdDXkfZd4aI1DPa4A9OrvTCHGrlZQBJqoATVHUWB6HKhIQgXW1/Gw5jxRoZhtF1paXqaZIQ6AmMMVaS4Yh+IZKpJAFCtiHOUSD8s/brcLEQbptAqQEYsVxG8M+Q0nhM+uKJNq637KjlhLPBZFYJVSY6jBJSosSbTFhPdHMOsi5dbcYlawGgyovQRVoP6snqjooDYHAMRy2Ugagw4yUs9yjowaQVFtzXpRsczKqiGmenon1UleKUgfAsThUVaRT9FGml6+YslaFdb5mxPWxa8KnpgCbnKomraDD6z5lAoNzeb9W0KWmltTFPbVIJOIhZS2IpnCSFnobashOIB2kYe25laoOoKmBgpbKsg/jdBfSQbeXtoesncHRRulQ0tIZ9gnZgBZ0XjTFEdTGgOjIm+MbBHNljOLAudGd1C2qzYtdpSOZDazA97dfpUzODNfl5TNsYLqpbiLQYK1WRw9Dpelz4dLP6OAKJmuPfso7WEMRcTv4ujYGuWgYDMCj/4K6o+IElnZrM1i7m0dBU+izfYB9lO6y/AFPB4BihFOoUAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACe0lEQVR4nJWWDZHjMAyFlZkQ8EHwQQiFLIRS6EFYCrcQuhQWwhrCBcKZgiFk9eTIVRznp5rJ1H/RpyfLTnu6ZnNjrKMX7AwkgO+bk05MedBz9+0rza/AjkDz/79j6SSG+DgJDA/gC4yuAPdA8/y4ETkzAoAbKAbAEoXo6MbS7sM1dS2QKIEzOLWmqRsHBsYo7cCDj9HRn3CsrgbN33c4yR7HMQMFMk00MGAYHIUQZdw7J9DAc4Ad7V1fQ8bBS8oAE1WApihqPPenRSQgAitque05jzRRy1aKvM8v05IiC4GaiSnee3IMwS9UIoUsUMBhakMsaP73/qwwcZCeiwDJgXhxrH3Y55RTeGZFkUS7rPfsSFMSuCASq4QKtzhMktKsxFpMmE/UsgIax2EzGY0shUFVkKAytOzViaoCSlUgcAyHWsoAFJiTcpZzdNUAkmpT51nJOie1ipja6WlYKXWjKBUAHItDU0U2RR95uPuKabaqMM/HjLg+NpdwrwqwaDTVZBUU+LLOmMDgXN5fKui+pJbMwe01Eom4SpkGoQobaaH3qoZ8A1JAFqZtLVUbgKqBAk1lXod+2oUU0POl9SZbZ3C0UlqVtNwM24SsQB1uXlyKNUj7gNjI1fETgrHcR3Fg32gndZ255sUeciO5FSzDt6ffpEz2DMfl7XNaweyluorAgq1aGz0MlWb3hUt/xg1uYDJ39CkvYAtFxLrxy1wdZGdhMACv/gsqjrITWNrMtWB6Nq+C7KX262BuA/vIt8smda763Rs7M5X7W9sKcjvPHrTltDWOB6cr9sapN7/W6StKduFW0d6io29COmivnp6e8s5StPedPgqstH8A8H+Xu2V4mIgAAAAASUVORK5CYII=",
+    "price": 10000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 25,
+    "tuc": 5,
+    "incMHP": 25,
+    "incMMP": 25,
+    "incMAD": 1,
+    "incMDD": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Earrings"
+  },
+  "randomStats": {
+    "incMAD": {
+      "base": 1,
+      "min": 0,
+      "max": 2
+    },
+    "incMHP": {
+      "base": 25,
+      "min": 12,
+      "max": 38
+    },
+    "incMMP": {
+      "base": 25,
+      "min": 12,
+      "max": 38
+    },
+    "incMDD": {
+      "base": 2,
+      "min": 0,
+      "max": 15
+    }
+  }
+}

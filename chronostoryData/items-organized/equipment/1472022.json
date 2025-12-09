@@ -1,0 +1,51 @@
+{
+  "id": 1472022,
+  "description": {
+    "id": 1472022,
+    "name": "Bronze Gigantic",
+    "description": "",
+    "chineseName": "青銅戰神拳套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAeCAYAAADHJYVoAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACw0lEQVR4nI2WgbGjIBCGl5lrwFeCKYErIZYQS9ASniVcStASYgmPEo4SkhKOErx/gSVINHEnTEhkv/0X1tVfdMyWbK6Orj0CX2p9Iece/od72GUngId2XUfWWj8+wRd9vlBV1fQAmwNUtS4DeOiyBMF93yfnd3CvmK2u66i8ThkI9H6/++sCZsVa68/KvdIqOGp9hoPxAfgD9btg+e/QgTKU4SloAQ5rAji3j3DnCOoJex6ysObqwbnl+8wBJcgh5RwAeD8X8NZ2lHZAuSieP4LzbTqsXOx0OqW51HOpmH83TcNT9Q6uYj2TI0uhjEfGYkykVNhnDiDBSjuknOuk8bdMHwffNGOYg+0wvvrJB8gz2YOn/sB3aI0yHP901A9TWtCofuVwg/B2mmia/Bq1B1/+QVQVBTS/Z3rgMJvrE+YQkDC4PMXayb6ASvgTHOE/aa+fJqrzo7Sh5yTVJbwAr4HBAvTnb8wgijX4nqDc7Cj34OSAUfnDD5WRg8Vy8BznfPAmnNd6z9u1L92yysiNM9sCb1mClyl99UFJabdxA1yfiZunm9eUBP/uLig7tFVj6DrN8aaBwxSyErcyw+qyJeEJ9xgGfhP5AIR5Cb5BsgQWYyyrlQBRwLpaVo4FWCOjLmbEgUWArN/XHeHiyLVxjo5ffQhisoD8LUJWGWbqX+CiBB2KWshlwAVNnPuEw13I1w2u1zi1VjY92553yhUclts40jAMJJlwbx6Ga1LKgWcL5Vhn8NibodZBgIl7P4dKUSU8AOFQa7xCoMZYaWxAaQs4EPcSBmsENhX5hwi/apDZziLB8ypos3ozlpsTP6BrDz9r3qIZATTNHBjfZZWUcL6Q3lMeSF/zWxY/JqBUHgg+cP961+5Z3rgUoNLHlcWcezkPfn6uAsd2W+G1wIYt2Xx/LFtuvkjBMQVbBY7/u1eflf0Hw5+fj3pE5oAAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC+klEQVR4nJWWgZGzIBCF15lrwCvBlEBKiCXEEmIJZwmXErSEWMJRwlFCUsJPCf77gCVINKc7YUSD++2DdeGD9tmU9Is9Y/eApkqdydqHu7EPM63AHOByuZAxxjXYVtCkTmcqy4oezAGsrFQOc4Bp8kLatp052AJySmBVVQVFVVQmgPv97v4XCJQopfYpcgpK70SpE7+sHQw/VrUKkWebQWIAABQDyCB+jIfkthlkLbEq4jXy6oy+Okhq6boAngJ3KQKMUa4vkKUpW7IdikTJ+CckncrdoNQOh0Psy/eSK8F9XdfoFltBRfheyJIh/5n0QHAbqCj8ukgaA7xkuxQh32oXXxsaPtDe95ljuX22g4PlCv8CxXqFylBxavffF2q7IQ6oi3kFuLGgZhhoGNyYWKLegaZ/HGwZAquPIz04Eerr07FlOHFDyos1g1l0tgZ6QgLoJ67N00RNOknG18CZmjVQBukXhnjAz6+/s0GE5uvAivQGRQ4SX+ZWuiTyGZZCxFLIGPpIGu3Xd32NmrkfuiUZlhoUL0HW7AWUy/5sfYS53foFSHUiFHk7vk7eC+jrcuZU5q1Aa7oOY/hA+eXBqxUXufLyvBTOMsi5hPMvIgcj7ueQG0uRIMSAgAqBhWDWs27mJIMoVnoJShGEBCPj3+vJQOIEOXYKTj5bD9QJHFcJaqY8UfUWJBFy9aSGZcDZmTch1C3LXz/+1/x/xSveyCIlU7hVUcEvT7e+p67rokLsLV13jQoQxGhYEY/TvLWPrMJyMFgXaBl9xhXvQN45v1wpPlZx3kJBKI5xmgBFbQNEcRC6JLch4vhFOqoryYX0BpRmU5PksDYonDicVA50UpjGkWGKRgTB15Bt2O1ki7XSBFSGduT2K+e4B0+RwukUWx4rkM3NBdG+VotgUmMFgggfHwmkCteOAd8i0JjxC3sRGs4LsyDCFlHy8cj4absuTVs6dWXyDIPa5FnHTgScBhGfB69N5mPWPhJ5KSztw45JpMfseR69Xer/B+6itmI2ZmjMAAAAAElFTkSuQmCC",
+    "price": 250000,
+    "reqSTR": 0,
+    "reqDEX": 100,
+    "reqINT": 0,
+    "reqLUK": 170,
+    "reqJob": 8,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incLUK": 3,
+    "incPAD": 30,
+    "incEVA": 2,
+    "attack": 7,
+    "attackSpeed": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Claw"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 9
+    },
+    "incPAD": {
+      "base": 30,
+      "min": 27,
+      "max": 33
+    },
+    "incEVA": {
+      "base": 2,
+      "min": 0,
+      "max": 8
+    }
+  }
+}

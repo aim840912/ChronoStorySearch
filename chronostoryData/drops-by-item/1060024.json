@@ -1,0 +1,19 @@
+{
+  "itemId": 1060024,
+  "itemName": "Dark Nightshift Pants",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 1210101,
+      "mobName": "Ribbon Pig",
+      "chineseMobName": "緞帶肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

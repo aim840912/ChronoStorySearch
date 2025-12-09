@@ -1,0 +1,19 @@
+{
+  "itemId": 1061029,
+  "itemName": "Red Cloth Pants",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 130101,
+      "mobName": "Red Snail",
+      "chineseMobName": "紅寶",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

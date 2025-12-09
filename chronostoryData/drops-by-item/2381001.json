@@ -1,0 +1,19 @@
+{
+  "itemId": 2381001,
+  "itemName": "Ghost Stump Card",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 1140100,
+      "mobName": "Ghost Stump",
+      "chineseMobName": "發芽木妖",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

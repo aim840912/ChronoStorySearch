@@ -1,0 +1,30 @@
+{
+  "itemId": 1482020,
+  "itemName": "Maple Knuckle",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 2230101,
+      "mobName": "Zombie Mushroom",
+      "chineseMobName": "殭屍菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5130104,
+      "mobName": "Hector",
+      "chineseMobName": "野狼",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

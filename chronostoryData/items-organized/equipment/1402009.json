@@ -1,0 +1,34 @@
+{
+  "id": 1402009,
+  "description": {
+    "id": 1402009,
+    "name": "Wooden Baseball Bat",
+    "description": "",
+    "chineseName": "木球棍"
+  },
+  "metaInfo": {
+    "reqLevel": 0,
+    "reqLevelEquip": 0,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "price": 1,
+    "tuc": 7,
+    "incPAD": 20
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Two-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 20,
+      "min": 19,
+      "max": 21
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

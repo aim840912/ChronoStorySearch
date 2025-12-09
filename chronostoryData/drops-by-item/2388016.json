@@ -1,0 +1,19 @@
+{
+  "itemId": 2388016,
+  "itemName": "Snowman Card",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 8220001,
+      "mobName": "Snowman",
+      "chineseMobName": "雪毛怪人",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 2.4,
+      "displayChance": "2.4%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 1040014,
+  "itemName": "Orange Sporty T-Shirt",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 1210101,
+      "mobName": "Ribbon Pig",
+      "chineseMobName": "緞帶肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

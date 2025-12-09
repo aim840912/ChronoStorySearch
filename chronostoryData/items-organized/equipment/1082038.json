@@ -1,0 +1,43 @@
+{
+  "id": 1082038,
+  "description": {
+    "id": 1082038,
+    "name": "Mithril Wolfskin",
+    "description": "",
+    "chineseName": "鋰礦精神手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB7klEQVR4nJ2UjZGCMBCFw4wNYAlQApbAlcCVgCVACViCV8JZgpRASoASpIRc3obNbfgRdWcykATft+8RPKjPy0zX6NlDnwJM0zR0U9e1EesL2CcAMwnTpOs6lWWZ0lqr0+m0cPUuwGRZoYqiUG3b2vEDUQ9acRW9AwjEUVV1pevlcvYgQDDY4SsA6obFEUUcxypJErqO42jXK7piQJidvAIweV6qPM9J+Ha7+Q3kDsFhGPwagGhk6j7aAwTiKNw7kcxHACeyhqEN5luAhThHwicGe+ieHWCfY9oDUOYQwYAghhSX0bCwhPG7eeIg9ncShJrnvlergK77tcfu+x8XJwsQuuRi6DhquY4kFt+B6bq7FckJkiSZOh5T+8OBIOwIxbFxNBBH9X2v0jRddeDFtW5JHAKPR28FtHc0BzkHrnOIo+53JPAVAMz12izEnXVNc2Me9GAUHQOQPZj0LETX6sDiZVltinOu2IcjzB1oVHtFDs7n2i/AhRTnknCUOwgUA32x9p4i5t+gaatrDvwAJnhgXvK0SCdSfNcBxwT6VjTc2fxLFRWxC3kAgmMKYWwWRenFWZDn7kRtdk8QOWdAhIjcSQpzZyCDZHdbTuREOvAQFgpfvgNPa7vZrwE8ZN6NBL9ba/9Fq9kK8Mvdo/4AmONdnJ4wXd0AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACN0lEQVR4nKWVgbGiMBCGw4wNxBKgBCyBK4ErQUvAErQEXwlnCVIClAAlSAm5/Bs2bwMJ+p47kyHZxP323yy4U5+bmZ/Z1qFPQeZyudDkfD4b4V9BPwGZGUCLrutUWZaq73t1OBxWKn8LMmVZq7quVdu2dnwhuAdGVGa/AQUQWNPc6Hm9njwQMAxW/BMQZccQlEhrrfI8p+c0Tdbf0BMDAFb2E5CpqqOqqooA9/vdb+BeEHgcR+8DGAnNarJ3QQEEhrkLVvrSQJm0cWyD9SvQCsKl4g7DHtSwIuxz+d4F0Z0gGAYCY0iILBkDJJTv7g1F2s8kELa8l1e2Ceq6f7Zd/35jdb4CIms2hk9TL/2oTPI9Ml33sMEqguV5qfb7wgYYCcYKYVxOLhkgsGEYVFEUm4o8pO9bgiDQ8znYQL1XuAQ6RU4JILDHAxX5EwWZ2+2ygriS9LQ25kkHs2wfAG1D01kEj5kEEeR4bJIQrjv2oRBrB5zUKwsUnU5nP4cqCWGTScBcw1B56Atg51R6/g2St3GNBGUzjA4uTXaXVCYhbytSc/mQTapknOnyzZcJsyrZKNH2BgCH6vroIRyY164Dk2oIJtdLUIbSuc4L74XBDJTZppTJRUyRh3HAsElcArMPLadV3ILaLkH8o8IGGoQff5va+h6cAHNfQCYeDNKRcRJ71Ty/WljD89mf6gqG4Ms77kTgXDylumVpvhL+mCJvUlHq0NZrP23Mg7FT3/IkLJatTkC3EvPz/6rSeYVNiIelAAAAAElFTkSuQmCC",
+    "price": 17000,
+    "reqSTR": 0,
+    "reqDEX": 50,
+    "reqINT": 0,
+    "reqLUK": 65,
+    "reqJob": 8,
+    "reqLevelEquip": 25,
+    "tuc": 5,
+    "incLUK": 1,
+    "incPDD": 9
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incPDD": {
+      "base": 9,
+      "min": 0,
+      "max": 22
+    }
+  }
+}

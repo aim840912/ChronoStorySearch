@@ -1,0 +1,43 @@
+{
+  "id": 1041065,
+  "description": {
+    "id": 1041065,
+    "name": "Red Legolia",
+    "description": "",
+    "chineseName": "紅守護之服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADhElEQVR4nJ1XDdGjMBBdZs5AKoFKAAmcBJAAEloJRUIrASQcEkBCkfBFArcvZMuSAu1dZigQkn0/uyTlF/1fmw6eRd8G+RZ8BfZU1zYYmG4T2yT0CXzSYALU7QxO+Oj5GNR9QGhF4gh8mjJDY2cdGIDNB6YCmgVkhVA1k3gR+Gg7AnQeON54btQ4tNKfR0VG2j0g8BEcgBc+ah8wfGZ9/03IsFsP71aixm65dgQeRZ111sfdrCu0XpTdPSiaAMtzGS+uwZmHV3+Y894HKzlww9cFX+vqvosqfj7wM4CFioWAuKZTtwc+/agbR+CZUxMzhSFaJLezLgEGsUzNw31LSx2E7TDnRllen1u69AzMBIZHQd0DiuxLTewVamegFu6lngDGXOdHxwUnOSQfFMpOv5lMjNJLKOceARUgExCIaTHpsYQ+fNVelttuvX7FcUx5ntM4jlTz0Vj7VlBCVopT9b+tcl+957BqTJIXMEjgoGHW5VzyxWiCuWje+tUCswuuLUfrjKGcwRM+AA4ShvuK65WednFHK94iEbYQ/M3y1MxhoLRtueguF+q6jrIsc30W6nksCOs0yb0Q2lJ/aDsmWVaWeNXGfFrd1wuRdmLYGKvBnerQcjTYDNX3+92pLsvSnfu+p9PpRL0qPCEQuoHCC9XvKpdCQ/tGtfVgJii8o9wL+GpFE7YoNPadrlxYUF9Vlcu5PuuqD8lv1YJW/1JuuNem6wAIPHBgFFXrHYD9aHIOm95i33LPy9ygVhuAT5MHdvlueLs4FRRj11ADhYy853JGS/l6K+8O8Mb91yUdmDFx7KiiaVaeTGSeBe/0vCfZlgzwr1hK1+CSe4DqM1wAWVv5vOeWxspbb3L4T7H/OzOoXQbgEbdp+mnmPdIudsJyt2Ew6O12W73nWv3sgM87nBuL+br08Zrm1Zcubi45T3/XLtjPn7l+JN9CAsBQLmCh9U5k75Xykd3buQ4HbEiVy7wiuX7VGmZX1zWl1eCCWjsDlxn2cz4eC2V5z+WMuWlRUF/yHFNQdF7cA+HLZdkTcM+xVtUenc/nCYuIBMdrhP5rR9ONCWRMumZ89Ptnby1y3S0hywnP4bmr1VFqROd8mVtV+g+/rMGOAC5QpfJKdyP+wSyD5U1vSgAKEXrVSEB4c4Xb+9SJvLLV10jvgTQhXVD4gaN7sf/1W20VgIG++TTa/Xb7C633vIGbaSQ/AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADq0lEQVR4nJ1Wi7GjMAwUM9eAUwIpAUrglRBKgBKSEkIJSQlQwlEClBBKiEvgtMaKhcMjmfOMB/BHu1rJMn/o/9q8M5d8a+Rb8BXYQ73baGG+TWyT0CfwWYMJUP/L4oz7wH1U3xGhFYk98HkuDE29dWAANh+YCmgRkRVC9ULiReCj7DDQe+B0Y96odWiVf06KjLRbROAjOADP3BtvMJ6zfvwqZFitu1crU2u3VNsDT5LeOunTfvErll48u3lQNAGWeVkvqkGZu/d+N+aDN1ax4ZbfS37X2X0Tr3h+5DmAxR4LAVFNh+438PmpPhyBx4nalCmMSXC5W/wSYBAr1D58dxTyIG67MTdK8ubY0XlgYCYw3kvq7/DIvrxJvYdaGXgL9XJPAGsuy9R+wkkMyRuFZ4cfJpMi9TI68YiACpCJCKQURLoH07tH7SW57df1K01TOp1ONE0TNdxba98SSshKcqrxtyr31TmHVFOWvYBBAp3GxS+nkk9GE+1F89KvCsyv4FpytN4YOjF4xh3gIGF4rLxc6GGDOtrjLRJxi8HfJM/NYgaedh0n3flMfd9TURRuzMJ7XgvCOkzyLYS2vN+VHZsse5Z5r435VN3XhUgrMW6s1eDO61hyNMgMr2+3m/O6qir3HIaBDocDDSrxhECsBhIv9v5XzyXR0L7x2nowEyXeXuwFfFXRhC0SjXWnCycWvK/r2sVcP3XWx+S3ckF7//Lc8KjN1wZgeGTDSKrOKwD50eQZN33FvsWey9yoqg3A59kDu3i3fF0cSkpxa6iFQkbOuTzRcn7firsDvPL4JYQDO2a2ndQ0L55nM5lHyTc930m2IwP8C0rpGlxiD1D9hAoga2sf95OlqfbSmxP0p9T/zozqlgF4wm2en+1yR9ogJyR3FwaDXq/X1TnX3i8K+LhDualc3itvr21fY3lQM8Q8/2mcseffJX8k3kICwPBcwGLpnZOD95R7ceuWPBxxIdUu8ork+qi1zK5pGsrr0Rm1dgGuCtzn3O+BspxzeWJvXpY0VLzHlJQcg3ogfD6HOwHfbGuV7cnxeJxRRMQ4jhEh9D09r0ygYNIN42Pcz721xA13hChnvIf3rqqj5IiOedhb1/qHHwcPf0QlG8FflMtSOdL9hD+YsFhOelsBUIjQK0ciwpsV7kDhGtb/Co337KwXDx5IE1IJ5faworIHGTeR+gneKq97FfGiPxjoSu+tjvb9UDj2Vs/F4PIbrglsFXUpWlFNfCNrd+boH7uAy8k/pc3IAAAAAElFTkSuQmCC",
+    "price": 38000,
+    "reqSTR": 0,
+    "reqDEX": 115,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incDEX": 3,
+    "incPDD": 30
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 30,
+      "min": 12,
+      "max": 48
+    }
+  }
+}

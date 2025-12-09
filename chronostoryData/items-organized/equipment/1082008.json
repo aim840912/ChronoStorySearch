@@ -1,0 +1,34 @@
+{
+  "id": 1082008,
+  "description": {
+    "id": 1082008,
+    "name": "Steel Briggon",
+    "description": "",
+    "chineseName": "鐵製輕便手套"
+  },
+  "metaInfo": {
+    "reqLevel": 35,
+    "reqLevelEquip": 35,
+    "reqSTR": 125,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "price": 35000,
+    "tuc": 5,
+    "incPDD": 13
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Gloves"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 13,
+      "min": 0,
+      "max": 31
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

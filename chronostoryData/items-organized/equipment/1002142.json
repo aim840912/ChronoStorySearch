@@ -1,0 +1,49 @@
+{
+  "id": 1002142,
+  "description": {
+    "id": 1002142,
+    "name": "Blue Matty",
+    "description": "",
+    "chineseName": "藍星魔法帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACYElEQVR4nL2WgXWDIBCGj/e6AI5gR9AR4gg6QhyhGSGOYEdIRtAR4ghhBBmB3h2g2For9rX38p6I4Pf/x4F5gd+FcVdxZPJv4MY8ALSSkFTaHBFwFG4dS/ylGm5vAFUD0QKOwNkxZMS6A6gKyhJgzOIzcAQuRI4Cno6hsSN3jX9x/kTUIPmG0k734jX+RYfWnMCYYm6PNwmybLFV/Qtc0NrK84Nvkio/BD4KZ/D4llu4Itc2C7q//GnBLcCgfLdkAbFbLgZuZNlxI2lsykFrx1UsIE0hKuLTzkBb6XzVevE4xv1euDFoOnmHGYzB6VfU37H74t5Cm9WwN/Y7T5dgiin9VHAyZQH1QAW4T8AeOB8qYZDjGQxf0i9P112V/xOcqztpluDPAsLqTxpyLmFPHP+kqvXurqx57fe434JzkUG6TDG1x9I5danmPnQ/oCAC+/hJQJxzD3PVPdnH7qSeoeRe4aN6uG6+bgsuROEPFg3jubDgxkOskDa78OESOlbfLEkMnIsN04a7qGQoOWKsHqZBVX92rQGL3h5x5FirHlVcpnfBSuq/g09fLQJ7l96dlJnd1z60txpsN5oXzHVr70OswXmABy+PTmmBcm0bpYEIPY91Zz7PPrVYlDZztJwhnG+MwYtGURorF7NW9N0MTrMJNV5zZtAYH1mQiKkuXHbGa8G1ee/53IcHPs5rCzdmBFoygF6QKv5bRC/rTkUgwEFp6N1OXgv6sND5Xp7mpHiRlTus3FxBcCESWKwH/h9jQZlX7cx/gq7uXfdFg9uyb3XOy1rniqDFM9gOEYrYmvMBgrIVNx/fEN0AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACqUlEQVR4nL2Wi3GrMBBFVzOvAVECKQFKgBKgBFNCXIIpgVeCXQKUYEoIJaASlN3VB4GxDWSSnXgs9OHcu1rJ+Qc/C22/xZHFP4FrfQdQg4SoVPqIgKNw41jiX6zg+glQ1rBbwBE4O4aEWDeAoYSiABiT/Rk4AhciRQFflqGwI7WNP3H+hahe8gOlnZ7Fx/4XHdpzAmOKuT1eJciiwVb5J3BBeytPd36IyvQQ+CicweNnauADuTZZUN35VwtuBobBdUsWsPfI7YFrWbTciGqTclDKcgcWEMewK/annYGm0vlbqdnwHvdb4Vqj6eg/TGAMTv9A/S27z28NNEkFW2O783gOpvDpp4KTMQuoeirAbQK2wPlSCYMcT2B4SL/MLpsq/x2cqzuq5+ClgLD6o5qcS9gSx39Sh/Xutqh477e4fwXnIoN4nmJqj4V1alPNfei+R0EEdvFOwD7nDmar29vH7qiaoOR+wKGqv7x83Su4ELm7WBSMp9yAawcxQprkzJdL6Hh4siV74FxsmDY8RQVDyRFjVe8nld3JtnosenPFkWM1dKji7N8FK6l/Bve/WgR2Lp07KRNzrl0oZzU4brQuWGv33oVYg/MEB55fndIA5doxigMRappr73xenTVYlCZztJ0hnB+0xi+FohRWLmYt79oJHCceNV5SZtAcF0mQCF8XNjvjJefavHV878Mdh9PKwLUegbYMoBOkiv8tope1WR4IsFCaejOL14J+WOh+L7IpKU5kaS8ru1YQXIgIZvuB/4+xoMSptuYX0HwNjgBWe533+aRAUBgu7WEl0iZ9oKDFje7DlXC2MqbcOALDQ17ZMdoHVxgPBSfthyaV4CvJX9Yy6HsXzq96NmHtqIXlvFz49EWLsWV7+VmF08B0Ph7FhH1rQl6JfZj/DUPMK+7/u+VjAAAAAElFTkSuQmCC",
+    "price": 24000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 108,
+    "reqLUK": 38,
+    "reqJob": 2,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incMMP": 20,
+    "incPDD": 15,
+    "incMDD": 45
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incMMP": {
+      "base": 20,
+      "min": 2,
+      "max": 38
+    },
+    "incPDD": {
+      "base": 15,
+      "min": 0,
+      "max": 33
+    },
+    "incMDD": {
+      "base": 45,
+      "min": 27,
+      "max": 63
+    }
+  }
+}

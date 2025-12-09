@@ -1,0 +1,19 @@
+{
+  "itemId": 1052119,
+  "itemName": "Black Royal Barone",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5130103,
+      "mobName": "Croco",
+      "chineseMobName": "黑鱷魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

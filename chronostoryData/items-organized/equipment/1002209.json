@@ -1,0 +1,43 @@
+{
+  "id": 1002209,
+  "description": {
+    "id": 1002209,
+    "name": "Green Sonata",
+    "description": "",
+    "chineseName": "綠黑太陽帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAATCAYAAACHrr18AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABjUlEQVR4nKWV4XHDIAyFlbss4BW8Ah6BjFCPUI+QjuCM4IyQjmBGKCuwAiO4Fq6IwAomV/3BZ4S+h4TgDHW2QL2dapxK4AjTWlcRvfdgreUiX4qQwEsOa5rmEEh+Sqn4n4nYCcjBCwFzWNu28ds5l8zlviSEREgCODhAeRAOk4AcItkLAScOTqAExBFh7wIxDs7TyAUQfFdjhBFYgpaAJXhu4qkmGIfWAmttB343rSWj0tHI4yB4KfUpOo+fBoabSg4epbHWcvHnfDJX9xgNXAaVzB9loCZDG1gbaNbY/qaTRfM8Q9d1AYbf2Aldp8RAfF3zYUUfZ9bDq8O4BLD/VuDuHvRsnk6Dhq3lVIR6Fi/W72rCf550d0/7X5Cw7ZhSaHv17LlpCzhPNuwaBUxXC+240Zu/2Oayh9TUPtaY37dodmgBcT+P7ZQHAX0KQV+JUV1jaiG8OHIBeLBwpxwqtQc3qSUlcLy41wXxSeP3dP+V7pSABcDhm5xfIDsRpVcJKh/9GvAuKM/Cf0C5/QKJrOqT+apx7wAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAZCAYAAAAmNZ4aAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB0ElEQVR4nK2VjXHDIAyFyV0WYAWvgEcgIzQj1COkIyQjJCOkI5gRygqswAhuhCMiQGByre44OH70PQSCveizRfTbrmdSCxxhWusuovdeWGupyKoIDrzkMCnlJhDnKaViPxFRCMjBCwJz2DAMse2cS8byuSgERXACKDhAqRMK44AUwllFwI6CEygCoQbYu0DwA+NYUwEIL84YYAjmoC1gC54be6sRRqG9wF4rwO+GtWV4dFhTPwBeWnkKk8+fRkwXlVw8DGOv5eL3+WCu7n424jCpZHwrAj0RWsHaCPnw7S86WTTPsxjHMcCgDZkwjop1RNfJD8vOceZxeXWolwD230q4mxd6Nq9JkxZryqkI9cRfPL+TCf006O6W5j8jYd0xhtAe1SvnrqvD+WrDrkHA9WTFcF7p8unbHEpIz9nHM6bvLZidBgG4n/t6y4OAYwqBuRyj+4wxheDhyAXAxYKdUiiXHtS4lOTA8eF+LIhfGn2nj1/pThHYAGz+yfkDUoho/Uqi89PvARdOaRT+AnoHXIP1P1cvKy5DCyyzutbXC/WksGBZKTURHITrh+KexedghAykppB/CTNYbce1Ra2XwTfaeSnAGI6tkMqKiJbQZOwXiSsFd/rPA04AAAAASUVORK5CYII=",
+    "price": 40000,
+    "reqSTR": 0,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 140,
+    "reqJob": 8,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incDEX": 3,
+    "incPDD": 33
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incPDD": {
+      "base": 33,
+      "min": 8,
+      "max": 58
+    }
+  }
+}

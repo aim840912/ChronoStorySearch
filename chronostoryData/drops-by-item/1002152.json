@@ -1,0 +1,19 @@
+{
+  "itemId": 1002152,
+  "itemName": "Blue Guiltian",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 3230200,
+      "mobName": "Star Pixie",
+      "chineseMobName": "星光精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

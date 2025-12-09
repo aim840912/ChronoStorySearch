@@ -1,0 +1,19 @@
+{
+  "itemId": 2385003,
+  "itemName": "Deep Buffoon Card",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 6400100,
+      "mobName": "Deep Buffoon",
+      "chineseMobName": "特貝爾芬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

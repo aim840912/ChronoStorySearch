@@ -1,0 +1,46 @@
+{
+  "id": 1051140,
+  "description": {
+    "id": 1051140,
+    "name": "Yellow Bath Towel",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "reqLevel": 20,
+    "reqLevelEquip": 20,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": -1,
+    "price": 500,
+    "tuc": 10,
+    "incACC": 3,
+    "incSpeed": 5,
+    "incPDD": 20
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incACC": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incSpeed": {
+      "base": 5,
+      "min": 3,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 20,
+      "min": 0,
+      "max": 40
+    }
+  },
+  "fetchedFrom": "chronostory-api"
+}

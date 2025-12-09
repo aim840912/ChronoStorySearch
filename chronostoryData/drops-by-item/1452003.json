@@ -1,0 +1,30 @@
+{
+  "itemId": 1452003,
+  "itemName": "Composite Bow",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 130100,
+      "mobName": "Stump",
+      "chineseMobName": "木妖",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 1110100,
+      "mobName": "Green Mushroom",
+      "chineseMobName": "綠菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": 1040112,
+  "description": {
+    "id": 1040112,
+    "name": "Blue Commodore",
+    "description": "",
+    "chineseName": "藍色崇高服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAXCAYAAAD6FjQuAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADBElEQVR4nJVWi5WqMBAdzrEBLCGWACVgCVAClqAlaAlQginBlGBKMCUsJfDmZkgIH9++Ny5rThLunbnzOR5oa2Oyznb21pYl6/HLvrfD+uL44n8V0fnckjG93yuKmoZh2GVyzkQC3IO935qyLBJH0kVkICpvNeV5TkWuyfBeXV9J68d0I9+QhXN5V4hOp4qUInq2BntjIAxkY4jIQzJZXQz00MRAPbXXjgp+2xhDbVtPEQ1knaP+cZOXlLxXljgf6NMZj/cmioQxstNFmJTK6Vo8vJeqkL0ISEKeGu4MztKxJPp59h4HRAHv82HS20pGbMIreCfRKfrcDR0bxbmQF5G3cB7MMdHP0/nIshPylgshSJAHft53ie4QJBSdc7rXHNVFRQB8HxtWpKrJWrsgs9bEe+QCqOa7rXcczoG08VEaiQyeAAQP8/GlGcBNRZgj40y2sekejnIlW13b001fOWrng5gKRcg+L+NfgGVnqbBjqel1dXR+KLrfO4kEzhSFSMpA746jLpX/BhEUKfj81Gj6PB/TPanSUCAZa71p2rq9MtGDuu5JdV5S716LcxTRpW+ZZGCSJIeDeH1qtiKEAkEfjKgsZ008REQg0sOb2qrkB2jaSwuZUOLPWlOjKyz5jwuIP1A+HQTc+AsyyctO0yKiVnFk5kV931NRSWXe64uX6KKlr9amOMfIWTp5DusLSDQuIdehHC6u46SfN5EJ0P4Y88XGePP0WZGlBzAUQbDmdvWlX0wF8pv1/W0KoNrIOKICLTcocgaPXUIUDA0Mb70jkzyDJGtjwFtjxMj88FWFJ4MnYVStbUEii3k9ORTwvsoYwkaZoJdACgkEYK5Qa3Vc52opKWQP7/5Nxhi2nUo/bQOczZ7P0tikTYRcxfWvMsZqtCIjegV7KUhYASgOaHxCT9n/lJEtY8IRZKEN9iILuQLR4OLc9APiH2WMOcl4PY2xeiHHoiBmKRe/OQLeblOnMibmAYR0O12mms92DiJeqkScjRz25gfKknR/UnyxFC9i/gHt4cJjeYkANgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADRklEQVR4nJVWi3HqMBA8z9CAKUGUYJcAJZgSTAlQApRgl4BKQCWgElAJcQl+tzpJyB/CyyUEjT67d3ufyYaWNmbrYmVvbkW2Hj/se9vML44P/rMnOhxaMqb3e1XV0DAMq0zOmUSAe7DnU1NRJOJEOokMRPWlobIsqSo1Gd5rmjNpfQs3ygVZPJe3QrTb7UkpontrsDdGwkg2xog8JJM11UA3TQzUU3vuqOLXxhhq2yZENJB1jvrbRR4peVfXOB/o1RmP9yRKhCmy3UmYlCrpXN28l6qSvQRIQp4b7gzO0rYm+rn3HgdEEe/1YtLLTEZswit4J9Epel0NbY+KcyEPkbd4Hs0x0c/d+ciKHfJWCiFIkAf+PK8S3SZKKDqXdG04qpNKAPjeHlmRfUPW2gmZtSbdIxdBNd9tveNwDqRHH6WRyOAJQPBhPr70BnChCEtknMkWFu7hqFSy1bU9XfSZo3Y+iFAoQvZ6GP8AVhykwra1psfZ0eGm6HrtJBI4U1UiKQM9O466Vv4bRFCk4vPdUdPrfgv3pEpjgRSs9aJpm/bMRDfqujs1ZU29e0zOUUSnvmWSgUmyHA7i9e64FCEWCPpgRGU5a9IhIgKRHp7U7mv+AE17aSETSvzeaDrqPZb8ywXEP1A+HwTc+BMyyctK0yKiVnFk5kF931O1l8q8Nicv0UlLX81NcY6Rs3zybOYXkGhcQq5jOZxcx0k/LCIToPUx5ouN8d7TZ0aWH8BQBNGOl7Mv/SoUyDfr+0sIYL+QcUQFWm5Q5Aweu4woGhoY3npHgjyDJGthwJtjpMj88FWVJ4MncVTNbUIii/c6OBTxPsoYw0aZoJdACgkE4F2h1uq0LtVUUsge3/4mYwrbhtLP2wBnb8/f0tisTYRcpfVXGVM1WpERvYK9HCSuAJQGNH5iT9k/yshWMOEIstgGa5HFXIFocGlu+gHxnzKmnBS8DmOsmcgxKYi3lJP/OSLealPnMmbmAYR0OV1CzW8jRH4S8XIl0mzksOMw3oaH+eM6AK8xrnX5gfHyyb2dRJaRqIwsguckH0Oc2SXsDwHTRbIIrLLvHHiN4JstHMgjK3+5uD5tl2fz9eSzyQ4cfZer/ED8m3Np/Q/rNdfrCjE8ewAAAABJRU5ErkJggg==",
+    "price": 160000,
+    "reqSTR": 300,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 90,
+    "tuc": 7,
+    "incSTR": 5,
+    "incDEX": 2,
+    "incPDD": 95,
+    "incMDD": 0,
+    "incACC": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 5,
+      "min": 0,
+      "max": 10
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 10
+    },
+    "incPDD": {
+      "base": 95,
+      "min": 50,
+      "max": 140
+    }
+  }
+}

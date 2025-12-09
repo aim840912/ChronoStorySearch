@@ -1,0 +1,19 @@
+{
+  "itemId": 1002103,
+  "itemName": "Pink Moon Conehat",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 4230100,
+      "mobName": "Cold Eye",
+      "chineseMobName": "冰獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

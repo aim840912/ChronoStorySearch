@@ -1,0 +1,19 @@
+{
+  "itemId": 2383002,
+  "itemName": "Master Chronos Card",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 4230115,
+      "mobName": "Master Chronos",
+      "chineseMobName": "妖魔隊長",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

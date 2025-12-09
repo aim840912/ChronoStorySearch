@@ -1,0 +1,39 @@
+{
+  "id": 1312005,
+  "description": {
+    "id": 1312005,
+    "name": "Fireman's Axe",
+    "description": "",
+    "chineseName": "赤斧"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABTklEQVR4nLXWgZGDIBAFUJi5BrQEW/BasAVLuJRgLalFSzhaMSWQXY7l1ggICH/G6EyMj11XJ1+ibbTdy5aQXpZFKKXEtm26FWQQnhaQQ7CaVtAJgbbhruo9CiL4UQuKIrWgS6QGlIQQpH1fpCJ8skIIQaIA0/u+i3meORBEHGSVVMwgWAlWNE1TFDhAmF/Yvq8xh2BSkQM0wvaE7fH/IqTQhYoRgiS2TTOMYMXgO8ihIp4fdmyrvIVwyFT1ZAgNLVVpgSKEQyafCIXdv+KcWqeEP5FhoUQrzX4F0bAM6/q3gHEUfd9f/o5DbvpiVSmG5IRD5jmRsLoYdoChmq7rsiD3MK6wWgkTFsJ4y3Jyukf0nPjaOMBieLAaKc0MJL/roGO9+w/mO5Ejqe3yQX4AahperyCQWs0n5E3J6osgX2wl5rA6xC6eBSRBdy/O8wba5aNfdKKmvgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAfCAYAAAAWRbZDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABi0lEQVR4nLXWgXWDIBAGYHgvC+gIrmBGqCs4QjuCXaEjpKvoCGWFjKAj2DvK0QMBIer/3kXzjH4coi83cW1Ws5X4cSW2DsMglFJimiZE5VWYhvxcgVkIu7oS20Awhbg5/Z4loTOxXegsLAs6A8uGCFtjB3MgvuJSEGHiBXCd51n0fc+RJGQxI+WCGsKOsLOu63YRB8P8QN33QQthSiAHa6EeUB//L08KXewQRJjEKVwZSLhi+FGIsE3e2b7p9jDEMd3dg0G0oKlbg7wMcUzHhyjsfh7KZhqVCCexgCi7HRe/rmgBNeP4N4i2FXVdZ53LMbsqU90pBpWGY/o5kjDKFOjg0FVVVcWYfWBHGLWElRcD+fSVZnPP6DkKTWkDA+LBrqTU66Lo3QizVzv/8fxwqGTqQlgYgd6aZYkipitcijF94V9CS985MaOL2M1b2FYXxyqvojEdYb6g3oTXgQdiPbEII6Bh2xiA+WbnxbIZgN+Z80MP+My4qL/v1I0deHrgPXDhSoSnbEl8t/u/wrS9/T8rGP0AAAAASUVORK5CYII=",
+    "price": 20000,
+    "reqSTR": 95,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incPAD": 47,
+    "attack": 1,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Axe"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 47,
+      "min": 45,
+      "max": 49
+    }
+  }
+}

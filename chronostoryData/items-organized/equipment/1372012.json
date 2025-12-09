@@ -1,0 +1,45 @@
+{
+  "id": 1372012,
+  "description": {
+    "id": 1372012,
+    "name": "Crystal Wand",
+    "description": "",
+    "chineseName": "水晶短杖"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 38,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABeUlEQVR4nLWWjXGDMAyF5bsukBWyglfAI4QRyAjpCh2BjEBGgBHKCl0hI6h6Mj+GXlqoxbsjsQ3nz0+SDW9kIx7+3aqfjpEFjEXUSSM4p5CWI6sAKY45C5iCoCC08+VT29eyp6/KExcRPCzC5cAYEzmB6KSwEc56oxeft8ZPixiBWc7Uzb2XeMnE7klFcyK6wENBH+5Bni96P1AE58CcLJdJQtclg51A4QyXVzJWpSlzVtUYAeXc9loeS2XljIecQTcJWemu2gYIfQiF0jYGOYNQGPAAZsX1NI4+xjkxmJUz7KFF6aNYEtWNH/eaPp8dxmEzx/JG1aEYWo5bIQHh57+wBQiTjacHDVUa5mezjqsfoPWkq/akvbBXoE3aA8sC7YFlg7bCTEBbYGagv2CmoN9gjI1pCXoFM3e0hs0fKO1w1hmDRth0mKqbbnmeWcOiHnKVTzF2okDHaIJ1ArrTO1VU01FSmIavlY8VATV0nABLXw9joszzBX0Dv4yyp01Rhf8AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAdCAYAAABbjRdIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABrklEQVR4nK2WgbGDIAyGw10X8I3QFVhBR6gj2BHaFd4I7Qh2BB3hdQVXcASaP4giT1st5I4akMvHHwL2QGnMDE8V9P0xSgEzbNSyUyglkMZYVg6SHVMpYAKCFUw7nv7EP5dP6ipNJrfgYREqBmYQSDFEgkJGcZQXT9Z5qfW4CAeMUiZq7k/OFwdWPeV1RnSChpx+1YO0Ocn7giw4BqZ4uYY4da032DIUytC0kLEq2TKVqhotoJx8LeUxt6g9M8OewS6cslKdxQcIfRgKpakT7BkMhQENYFbmNo6jj3HjCYzaM5yhWemjWDy71dqdNZkfncbhMNvyRtWhGBpjj4IHws+3sBkIwdztQUOVFtPcqOvqHygMGvij7YWtgTbZHlgUaA8sGrQVlgS0BZYM9AmWFPQOZnAwU4LWYMkVhbDpD0oz3HWJQQ42Xqaipp3fZ6lh1h7cyp6FZVQsz82+iN8vwloG3elKFY3fpOMCaA+w957SBCbpaxDnRvU0Wa9AloA9LZsDdWiA+Z8Ht1FXssq+UbS6AJfGHy+4a1tWHr4L/Vk7eC86+pyubAXcv+mP/gvi28vjH0w78wAAAABJRU5ErkJggg==",
+    "price": 160000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 115,
+    "reqLUK": 40,
+    "reqJob": 2,
+    "reqLevelEquip": 38,
+    "tuc": 7,
+    "incPAD": 33,
+    "incMAD": 53,
+    "attack": 6,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "Wand"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 33,
+      "min": 31,
+      "max": 35
+    },
+    "incMAD": {
+      "base": 53,
+      "min": 51,
+      "max": 55
+    }
+  }
+}

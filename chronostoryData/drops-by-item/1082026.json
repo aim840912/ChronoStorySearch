@@ -1,0 +1,19 @@
+{
+  "itemId": 1082026,
+  "itemName": "Ocean Mesana",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 2230110,
+      "mobName": "Wooden Mask",
+      "chineseMobName": "木面怪人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

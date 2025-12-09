@@ -1,0 +1,37 @@
+{
+  "id": 1041061,
+  "description": {
+    "id": 1041061,
+    "name": "Yellow Avelin",
+    "description": "",
+    "chineseName": "黃旅行服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 10,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACLklEQVR4nJ2V8XXjIAzGlfe6ACv4RuBGYAXfCM4IyQj2CGGEeAVGKCOUEY4ROAkQBuLQd9UfLWCkH58Qygf8zEI3v4w2/wQSlikNfF7YXYGewv4XEgEyQ4wDUDieBIDzBfYCOoMEGBgBBEUlw8g0nlzSNE/noB4SPh/zUIqzBqZJgnM2zuMYcGz9W58aEgHCG9x/OEghypjWpVzAe9cEIRBk0JkahoS/XwtQvPs1ATjvNdC6nC4xYWBMj7KwaQO3RTXQHlSUxAOj8/pc00J3WmIpJ3HZRiWcLgwG025gnlVR47rMESSE8CR+Xtoz9YZ/tgLz6EwHqQFRMe2K0wSyeGe9mqzEHcHLvAJ4Uqrw0vcC8Hhc24qN3wi0ozJSw6CP5GApUy8pio7GRyfKBgWh4BSAwHVWSM1D+FRpcLwdThemAlI+O9P3LF3NsG0a+iJ17ZkuVwPhoXwEmOobQS6//uzh6znz0eO/HZlKylg91uqzoN/anvbznWTQKhoApYkfN6WHypfVvAFGNfWclRQTSoHeUmACNN9ELgBIIHonHYjfxbh3+W/S8Q6U33sNOoVEiZwem/vQdHSUUik9iMvlc1Xw+96qf1HCm26yDc5WNd5o2h1+ZNc3gAZijRmepjcOTtVHKcuKhj9aqcaxNTwXAWpO/cvn1621juW4ziJ3XFo7DjMCNEoYdJPUzi3ey9FmuBHTXfn8jnT3EGFg/Y/WBdtD2K76dPPWNoVh4Nr+AVtnN2TFcgwHAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACcklEQVR4nJ2WDZHzIBCGtzM1wEngk8AngZOQk5BKaCUkEoqExgISDgmHhEMCx/IXICSZKTNpgcA++y7Ltld4v9lmfDla/C7IjjR0TJxYdAZ3ge+APIRFkNQA3PUpAdAmAzewPZCFg4YQgpaxOevYpzpoG2gf1gPZ7+dwKEkrCZQy0Fr5se+D6yuzu6cFeQgx0u1ZNzFCch/nGRvBGF1tRBhEWE9VCbK/PyOgzcctQNI5lFClY+gIdcZdqLiCWUi4j7wCt7BKkXfcGZheU5hovEYe18xNK68ohc4ZBLpIGAaeVekmiglkrX2hH3G4RPLdfcwZaJwBdKaEeOW4yg8DTLkzbFUVivQKyOMCYlAxd4mwZIhxbqtatH+HsMUpRFUJlkEYDkK34fKbpfEbMTJoCAFoBOFlhFDVk5iQgbDerTJ0LiwQ4ts08Yhh4APMs4A2gXXt1+UmwT658RBZvEugy7+vxf68hiTBfy2OyxnzWaWU6Bk+bUtYX55RhE2kgmDIUhHAUGFqJ1U7UK+qHJeKciOcg5iDcYRU70hMCggwvEcNLN2b81pnTkKzB4t1oYTtgrzcFCoV6xZdq0/OoBaWUuh74vD/UUehqygtvLMakFpRsH0Tet2H7bYD2YCUlIdetS0BMCsxfFHZ6Q9fuAOujLxGAnwI9c7EKiCE8Kk6DSRWapxbHTqCbBQl2J3hT4Fy57SWpFTA8exMvGeiTpwPCMeWtxyBcOGHKyW/8010PZvr4vFZ9FkHYtKTQKR5vgrvSi/bFOGt5w0MH9Str4VxWnyXRjv5d9o28FLR3qL9PwL1u7ZfPVdY5R2FKM31oEeO5f4fkkhSH9DHct0AAAAASUVORK5CYII=",
+    "price": 1600,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 10,
+    "tuc": 7,
+    "incPDD": 10
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 10,
+      "min": 5,
+      "max": 15
+    }
+  }
+}

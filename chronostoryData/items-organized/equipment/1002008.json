@@ -1,0 +1,37 @@
+{
+  "id": 1002008,
+  "description": {
+    "id": 1002008,
+    "name": "Brown Skullcap",
+    "description": "",
+    "chineseName": "褐色皮帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 5,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACV0lEQVR4nJ2Wi7WDIAyG6TldgBVYwRVcwY7gHaEdoR2hjlBXYAVWYAVG8CbhYdD4aHN7fSDw5Q8helXf2XSiz0VqPAMqk9+7VgW8CHWHwBpG6yYJtgciwL3v4mQhrCE63mu6iMCubUTYFmjqwXtjNACIkl1fShFVSTAJNKEKrTX9h+BXCtZWN6L6xhjlvC+wJWh63ntlGqOC9zVkBQsiMwTRkwo0vZ89qDBqHMYYdVCk0tqgOq5Ani7D4pmrqhTZ0cGMjjrMCrTyCGPrlDE1fN8yaGohXE0TAd4vYg5/ZVI9Zxl4W+CYOFzNFgggzQpQJg6arXcoR8Pg1rriKLccPgRRKnvwDgfqFLYcKjqzCOEaUntSkx+1kNLW+Rle+jNFedIGgH+3B/NbFEiHvutKOJ1zNAeGX4IVEFoHewche9lUHIDDCzIzG26JcbT0oIIx3jVDbknJL/Z4DVSqcJ0O91EMQ8g/VYmvt1Bl+RYV4lq7pAa3BA8hgbzz85CieGOPaOk2iIvKu173H2/i8vRzL417yZAiab7rsuEMQOqzFIRhc7AvW7MCfQc5MwZhNu03BF0ga2jTwjuEGn3KnA6qBVopNQeGVV+lrNepVKWxc1E1VBEcH3cZHb28CHgEe77v6vUYNp9XoRPea/TSQuARzLMk0Ll8SCAjFEQOlGA+bNcRHR0szlJR/Xye6vH3UgdWQsnb0nn1GbZ0gW3Y1CF6KX6b7bTXECz4ukatQD8aZe5cXNdG6T1Yy6Wf8loyv5MsORl+npzZZRjtlAvrMk++/fY+BeP3+eIfPJUt3Y7Njq0AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAClElEQVR4nJ2WgZmrIAyA6fd1AW4E3gjeCL4R7AjeCHaEdoTrCHWE5wqswAqM4CURMGBQ7+VOK4j5k5BEr+p3Mp9Yc6ndOANLgKFrlccLny/wbGKc7FwD7sEIMvTdotD7LUgvY00XC7RrmyqwBpt78MIYDRAiRRdKl9jlOqgBJdiM3mit6fDebTzZSj6JUWiMUda5DFjC5sfQK9MY5Z3LQRugF7nei9ZsYPP3owdvjBpf47IL4JkKe4Veck/qKteol95lnk2jBa2WFq2eaOUQyPYtonIDjiXC5hZC1zQLxLliD+AvKdZr9oHVyQBMJu7VHgxAzQaSlHvNcsCns2EGTJNNxnLhoUQYpbkDK/FhHUIYw0a/LFq4pzQfvIq3Wkj3ybrVgLS+8CwqbgD6dbsz+0VH6dR3XQqttZZ04FZIwAyG0kFtIWgvy5IRcHpCxkbBchnHiW5kwIJ5jaBb8Oh/5P58UVvDfTtVZ0tIfPzPjcpLLJM4RE9x723wCsulDCfBnHXrY8n7Sg1paejFTS41XI+W7JWt56s01pohz2r6rtLkEURaUzqGIbRQt60RYb8DnXkGgZNbPUXYBbKJChveQTTpQkZ10FVQrBO6v6QcO0ioCB3aWng2b8SGOoflz15GSy9Agh4BH9+Det5fu2uyMArvRrIIoUdAxxJDxzZTgxmhiXKoBHQ7BawXI5PBETa/3w91/3qqA0lh5XPhd/OJJ5nBijosWqyVPsXQ2A9hbiP0otBb3AbGlOhiXFUO8hcy+t/akDPB/aFvNEr91zTxMHzC0RRACZw5Q0bLCYS68IaLCfIRlBh2nPGIC/TiaYjNWModnvp73Wf3Y4pd3wD4ZuPPcD+FMT7g1HG4ap+pfO5PMU7XP2erQEjtWnMAAAAAAElFTkSuQmCC",
+    "price": 250,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 5,
+    "tuc": 7,
+    "incPDD": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 5,
+      "min": 2,
+      "max": 8
+    }
+  }
+}

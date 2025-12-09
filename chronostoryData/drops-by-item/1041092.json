@@ -1,0 +1,30 @@
+{
+  "itemId": 1041092,
+  "itemName": "Red Ice Queen",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 7130103,
+      "mobName": "Commander Skeleton",
+      "chineseMobName": "骷髏指揮官",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8140100,
+      "mobName": "Dark Yeti and Pepe",
+      "chineseMobName": "黑吉拉戰車",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

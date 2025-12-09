@@ -1,0 +1,55 @@
+{
+  "id": 1002287,
+  "description": {
+    "id": 1002287,
+    "name": "Beige Patriot",
+    "description": "",
+    "chineseName": "黃司令帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAeCAYAAACiyHcXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/UlEQVR4nL2Xi5HiMAyGxcw1EEowJYQSsiVACaQEKAFKSEoIJZAScAm4BFxCTpJjWw4Ox+2yaIbJy9H/WQ87/IHP24C/hbzxaYjh1ihY1SYB+W2IIbm47sEaDfdOwXLbB5B3QQy5m/euAmsNFIXCXwFIwPftePT2U4hBiuUsAOARxBh6x0fjuxAsPlw2YDC8WmuEsCymVMHCDmAUH69hBvQ7EAOJs08UNsYmAEqVqfCMuIzc/0IkAOTIA5Rl6WauKicqhUMtWAERz1+FCLmXABSFBMDnvTyGF2mMsrUQf6yLf0EEcRaZAPj8JwBVB+faLQF+rtX+DsrUMGdzEFGccizoswD8QAC0ABuMzpkKdgc8FgzMdtAUIlT9tKJlDkP4ySat1yNAMwL0eK2sS0kh3n8GwUtqqO6JuJ8FP/fiAtJHgaqmRgAeu8mL2gmQhxhoSU3aajSeMIVdCgZvEdSaERbDz5g21sT5sIRyf3X++q/Rb5FAhLZL1Wf6XAgXmwuf82J1WooxEcCbPq0xLVgrzQijtwmEcwj5opkTppn3GH4KADeHHJ5xYUb353rNR4IpzSFCkGPTrtCZe51C5fPmRaWwF5LCQTxDYDLzo8io4x3Plg6CCqrEXi5UdOtzbDDMBKW14VmLIdx6RtsEwDMczvDUjpjt1YpTyBvYYtvC0CGR5d53giSgUbVULipliW8JEM9C5z02Q6tTkdvtHiORWR++1pyW5HuCQZod1YYTdHUCASRn60OMvRdVubEmFjkBqUkXynViUTMIhE1JJlj2NgIHYTUDyII+pXIxw2ie6hiFKUQAIfFb47bmHnNO0ajbOKjcuQ1qe2phzrr9LgAqt3IwVIWn1fVK6Xj6eccPxo/Rh/tkuj0kz/ZN9+Ck7fuHexWmucIl3UfI27NddPHqs1O9HeAVQ9ixIBMf7/rQfQY8oGFaddIR0n79k58AKPxUkJdJLXwKIjGV2SA/CoF1A0eMCrU1rpQf/QfGqfDLM5os4Lf/A5uzxWTW2QL+Cz1WxU6SwnbXAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAfCAYAAABplKSyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADOUlEQVR4nL2Xi7GqMBCGl5nbAJYQS8ASuCVICVKClqAlSAlawqEEU4IpwZTA3d082CBBz+OenXF4JOT/si/wD/y+Dfgr5I3fhhjuZwXr1iQg/xtiSC5ue7BGw+OiYNX0EeSnIIa5m49LDdYaKEuFvxKQgO9bfwz2XYhBis1ZBMAjiDn0TPDGVyFYfPjYgkH3aq0RwrKYUiULOwAv7q8hA/oViIHEeU0UNsYmAEpVqXBGXHrusxAJAC0UAKqqcjtXtROVwjEXrIAYz9+FiLGXAOSFBCDEvTrGB2mOsq0Qf86LVxBRnEUmACH+CUB9gWvrWkDYa71/gDIt5CwHMYpTjAX9LAAPCIAOYIveuVLC7oDngoFsBU0hYtZPM1rGMLqfbFJ6PQKcPUCP18q6kJTi+SUIbqkxuyfiYRc8HsQFZPACZU2LADx3Oy9qJ0ABYqCWmpSVN94wuV0KxtVGUGs8LLqfMe2YE9fDCqr9za3X//XrlglELLtUPVPnQrjcfvA5N6vTSswZAYLp0wbDgrly9jC6SSDcgjCfNDlh2nmP7icHcHHI6TNLGL/8td3wkWAqcxghaGHTrXEx9zi5KsQtiErhICSFo/gMgZnZH3lGHR94tnIQlFAV1nKpxmVDjA26maC0NrxrMYVLz2ibAASGwxUW7YjRXq85hPwCK5oOhgsSWa59J0gCGlUr5bxSVfiUAAksdN5jMXQ6FbnfH6MnZvrD3w2HJfmeYJDzjnLDCbo8gQgyZ5vD6PsgqubmmjHJCUhNqlD2iaJlEIgvJRlgWdsIHIVVBpAFQ0hlM0NvntrRC1OICELi97N7NfcYc/JG242Tqp17QTWnDnJ22e8ioHKdg6FqPK1vNwrH4ucdD/iP0af7ZLo7JGP78+Vpka7vn+7VGOYaW3rwULClt2jx7tipbQZ4xxDWJ2Syxk996C4BD2gYVp1UhLTvQJSvp8CDAMj9lJAfk1z4DEQ5OebuvTRRmknpLUGUmV8OSNpT88a8gSN6hcoaO6Xr135eDiIIKnGUgm97gELh2/OhKIqjGCKQl//All6M+c+kdKxBAKrfxt/f+KOFN8JBEwy8dnvaVudB1pPrp/n/AKhT1oX3JZOWAAAAAElFTkSuQmCC",
+    "price": 85000,
+    "reqSTR": 0,
+    "reqDEX": 220,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 70,
+    "tuc": 7,
+    "incSTR": 2,
+    "incDEX": 2,
+    "incMMP": 15,
+    "incPDD": 45
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incMMP": {
+      "base": 15,
+      "min": 0,
+      "max": 50
+    },
+    "incPDD": {
+      "base": 45,
+      "min": 10,
+      "max": 80
+    }
+  }
+}

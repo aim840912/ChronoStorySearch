@@ -1,0 +1,43 @@
+{
+  "id": 1060024,
+  "description": {
+    "id": 1060024,
+    "name": "Dark Nightshift Pants",
+    "description": "",
+    "chineseName": "黑夜褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAcCAYAAACOGPReAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABqklEQVR4nJ1VAQ2DMBBsEwzMwizMAhaYBCwMCSBhWMDCLGBhFpDAdg3X3L4thF1CSun3en8t38qlWN15eO1Y0rVpmvDyfr9dXdfu9XqFFn39dr1e46RpmlYlTpRiIoHJ2uq7xlkkpFBiQbVsrYB5nouka9/3blmW+OFyucS+frf92+0G4mhBohREOjFHxhhdtKQ0UZCboMQcx6apBSSNqe8RWaWqVi2odJIG74GxUJgTctpTnk/sPN4Rb8WAdH08HsmAJeTxocot3UBMxQAsKG6UVQgC/G32KOVifzzVlhuQS7+0aT+k9uwdwfqeJbUK2ccDL7cz6FE42rY9XPjHUyUkSLh1/TiOh8RVKR2qLMH+eRoLUj8Mw4qdxCbooFFJBLVad2080/c4XyDFmWWALWkKxoH063V4XK5KIZBBe6kDG4ljhopYUDD4tSF0kNqRUh58JU8KyvP5jOpAXvCT8Pf7PfhKb1VEJMVVwV3ElbGnkoBdVKr3WCTljak2HAGEtIFqSRoKNFc8o5SVikrpa6Uqz4JljxnS14qr8A/5J30QJZ52Xef+QWnxDxvnisXNJJwoAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB+0lEQVR4nJVWgY3CMAxMJRboCl2BFfojwAj8CDACjAArsAIrsEJX6Aj9vygXHW6clJNQk9bx+WwnYRd8LOF7dN4Hj2g5HA5xME1TGMcxvF6v+MRc3w3DkBc9n8/FI3MVwRkBh/rUsdrV4BIhYguq4tMG9X6/vyJartdrmOc5v+j7Ps/1vZ3v93uQFdPnKoJzdVYioI0G4sEl0oWeE5LxOxrDS58lymmrOVcSgoRe+laKrIMaaAslteCKRBqhOrROuH/QcRjDvhagEi3n83llbEnYylSTUhXJqAyw6Ws2g1UCpzg1bFuXbD1FRQIWuZQ6rzGaRHZvtGDruJlIF9AJ1aA2aY90ODxPp9Pm7iwSWRKCJGnaPR6Pr8g+iEqpoBoP9gTxbJWou91uCzoIhdYFRk22hyq9t2r2NnUd+h9E2FNcVDv+aQei/9rFX9h6emMxF7YutuQ4MBMeVocqFvynME6QlpYiblYl3HSo3u/3rAKETn2I7ng8xjqxVl5gKyJc0+weXNc1NQRSTUX6v6JKxH86msIWQMIUAi1F8dJjZEZRdVfyBAegqFSnD0VUU8BQI+MVwUxInbAOO3omUc9ouNNN6ka1s2Dq4NzUCPlE5NMuLY4OLpeLG3SoYEstVdGPkoZGXRIg/1fG+v7jt0uDyTgukfTGmTr15nn8By16nOHOXiSJAAAAAElFTkSuQmCC",
+    "price": 2400,
+    "reqSTR": 0,
+    "reqDEX": 30,
+    "reqINT": 0,
+    "reqLUK": 35,
+    "reqJob": 8,
+    "reqLevelEquip": 15,
+    "tuc": 7,
+    "incMHP": 5,
+    "incPDD": 12
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incMHP": {
+      "base": 5,
+      "min": 0,
+      "max": 13
+    },
+    "incPDD": {
+      "base": 12,
+      "min": 4,
+      "max": 20
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": 1040029,
+  "description": {
+    "id": 1040029,
+    "name": "Blue Dragon",
+    "description": "",
+    "chineseName": "青龍衣"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAfCAYAAAAWRbZDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACp0lEQVR4nK2Wi5HjIAxAlZlrgBa4ErgSnBKcEuISvCUkJcQlrEtYSjhKWFqgBJ8kPgH8Xc9pJuPYAj0EktAv2JZp5fsFTsgWbGpfMr045/gpWgHjbzudAdaw5AmBCBAYSUTQjZ2tvd6FRxhPbJrGv70suNGD3CjKGXcEosNKKRDirdNaR/gqlGBTgoDfLjaBIDv4P9Go+kKQBTBubijaCNBF4F6ALMtTFF4dlUUYmakXv+aVP9cFV/dga5MiiNXBqxpyBJhg+WQyDHf0b3i/k8p88Mg0roZJKTehDLPW8mrpZ4zBrZJAGdb85ZxCAyKAlr2IIPqRrS3YBQdMFMrsBQJt50B94laFnF4CcdSG7YwgjERSbYZ+YYSg3jv8Xw2OO5ADj3hUw9i7OIkNojfmgcBPCeZmk1EXjOZQmhNgm1Ukj0YGFtpb6VUuOSjOP+pZEtV+pZXnzxoSn4ZgpoMjMoPF8K2N1t/NgTPahdnsTHKvCpAe4YzMYDUgfyZvJMapNdDee16cGYdzMLAf76TtAwSjkVIiTwWTvwm8d9ywe6HmsInCHIa3d1IEGFSBohCl4VBurcFADLJQ2uoWSR5rHyx2vELbf/NifgyTPSbnU6ZSVINSlenx3eL/0S9OqAac3j+3AkYgagnghqCH3yL9x59XFAKZJyNAtllBlg86781zm91nS/fv3l2lqAjTmB1gAVMPPIe40J270G8l7iRW+jb0H1zEYR1Y1MbhaqfmWzI0v/7jdgkpEghbuaDtYIQXNAjSeFtsAes8u2jfgHK1j6KfkVy4Gw3NumY+Y+wlzHgt2rulhocVmMi7fWDSm27S6B3Pw3QA9QrU8EQ9jdtq5X7WXmP54jJGgOVbYDrXN87lwuWKS809li//PZP/BXsb9jUyShEk/wCfYZeXMKuKrAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACzklEQVR4nJ2Wi5GjMAyGlZk04C3BKYErgZRASgglsCWEEkIJSwnrEs4lrEtYSuAk+RHbMY9DMwxgsD7/tiT7DNs2L7Sf4IBtAefmKcPLNE18F42A8WLmI9ASMCgiGEEcJ5hw38bW5Oo3BxADuXNd1/btaWAaLWwaRdrrjlAUXlUVCPH6ppTyA1gEe+AcQGCnjt0gzAz2wTuuvhFmAHSmOh6sAxehe4KmbL1I1O21RSC5ykUsqbPrXJC8B7jU0cP4s1OXg/ZAE2DsgJzDHXUOr3f6pD/5z/BfDpRSroID0BjDo6ZLa43TJoEysP7LOYdOhIOV1XgYXeRrC3jCn2YKc1aDUNNOUH3htLm8L8E4mt3UehhGKPvbVBg7IrBVic9ZBz8TMXSPshKQVfqO7BRV6QdCvyTomwmOJ+c4BlMfB1ytNnmUMjRpuaXqYothvv//KAxWNd9894mdJ3geoZqAuoU9VgT60M4d5+16x5rtAppojWJ1CUyNcMSKwBwS34MqifFrNDT3jgeox+E4EMznK7E7B8IopXSJ00THbwL3rGnY3JRz4EwpAMNLpRQOCFnwVIhTsCv31oAgBpm8m2wHCsqVDSAzXqHpfnhAh4CywwTuZShbOSxUow7fDT6PdoCiqmFS2+v4BiQYHS/ghrCHnS71x66fN4LpnjEgm6iIywet/+o6FvfD0j6+tddVVLjpnw3oG7B64Lr4AW/sp3ZacVZxh2jceYYLPyxDc+DHcDW/9Y9kcHyU8FMnpAgwPCa6ry2M8IQaYQp3mQz6AdFpxQNFdF3VxXAx5RRxpnrfJ5Hdu4bHm3paczyX6PH665pOHuhBMrrTdisw2Tv381L4+eXusXh3ClWSIQRhT0d2d93yFJ+zjrmEaJ8vWrrKWOq45BGkvHvMZ9fJZNBSoJZOjjH0gqXNVgAqc7bUUXsSOOeo076D5bpZ57amekui9R9vmKL8j20/KwAAAABJRU5ErkJggg==",
+    "price": 35000,
+    "reqSTR": 120,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incDEX": 3,
+    "incPDD": 40
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 40,
+      "min": 22,
+      "max": 58
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "mobId": 9308021,
+  "mobName": "Southperry Pirate Lord",
+  "chineseMobName": "海盜領主",
+  "isBoss": true,
+  "inGame": true,
+  "totalDrops": 12,
+  "drops": [
+    {
+      "itemId": 0,
+      "itemName": "Meso",
+      "chineseItemName": null,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 60,
+      "maxQty": 90,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1032010,
+      "itemName": "Star Earrings",
+      "chineseItemName": null,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1060005,
+      "itemName": "Warfare Pants",
+      "chineseItemName": null,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072012,
+      "itemName": "Red Whitebottom Boots",
+      "chineseItemName": null,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072054,
+      "itemName": "Orange Whitebottom Boots",
+      "chineseItemName": null,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072055,
+      "itemName": "Pink Whitebottom Boots",
+      "chineseItemName": null,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072056,
+      "itemName": "Blue Whitebottom Boots",
+      "chineseItemName": null,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1322009,
+      "itemName": "Plunger",
+      "chineseItemName": null,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1432008,
+      "itemName": "Fish Spear",
+      "chineseItemName": null,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1302013,
+      "itemName": "Red Whip",
+      "chineseItemName": null,
+      "chance": 0.5,
+      "displayChance": "0.50%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 2040804,
+      "itemName": "Scroll for Gloves for ATT 60%",
+      "chineseItemName": null,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1442018,
+      "itemName": "Frozen Tuna",
+      "chineseItemName": null,
+      "chance": 0.2,
+      "displayChance": "0.20%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    }
+  ]
+}

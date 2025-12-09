@@ -1,0 +1,19 @@
+{
+  "itemId": 4031991,
+  "itemName": "Timer's Egg",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5220003,
+      "mobName": "Timer",
+      "chineseMobName": "咕咕鐘",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 99.9999,
+      "displayChance": "100.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

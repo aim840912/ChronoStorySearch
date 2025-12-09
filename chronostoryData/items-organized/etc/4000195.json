@@ -1,0 +1,27 @@
+{
+  "id": 4000195,
+  "description": {
+    "id": 4000195,
+    "name": "Seedling",
+    "description": "A branch from Ghost Stump.",
+    "chineseName": "苗木"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACAElEQVR4nMWWgXGDMAxFlbsu4BXoCKxAR2AFOgIZgYwQRigjxCt4hHiEegSqbyJiSMlhQ9N/l1yCHZ6+LIm8UZx6fh1oJ8XCJYBQycFEw8/fJVljSWVEzhKdPkxyNqLhpjOUlzk5kFnNNafje1oA0XBrHZVs29zgDKYEcJ8EzzJFXdtRWZWkrY4GQkWtSJ9cmnPodGypbipSV5K0i+ZZ8Gs4HiQLtaLbIWux8ANH3Fdfmf/SdZyBsqT6QksF2AtUBDCyx7uTWo2r3Y2fT6alquYOcGa+ra8v+eSC0QNYspcCH9yfM3ar/AXdacoLdkh28Ud3x+TPG/dJco4ftp/WnyWKB0FozS1YZLI+plvOV8DiGkqF+wDwhizg/CBXcxvm3A23Y3EMmkPF9Vb4JAgJpKnYcWHHNM+gk/17wCdSSgUgFy49DKLd4c49OlzSnvD+XBe+8NZqL3iPQoPrW7GtmvV7wD244D6Pcb0V7vtcwLGun8F/e1BM/sEAmueZr26AjVmebmvhwxOous/kY2tGhxCAkEAFHOt6Du8brtZMDRC5sQQCGJbQSSEUSgGHcN8mAFh7T5+MxjuQRiAGl7Hre/oZ3LsCWMbh4Gy6eQZMhoZwP4+1tiP0CWwzcA73bkMo1JltKV0NDxW4/TPoBA7Xkt1XgUf4f4AFfmCoTK+XgaEfv5ku6Dij8PEAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQklEQVR4nK2WgXGDMAxFlbsu4I7gjsAKdARWoCOQEZIRwghlhHoFjxCPUI9AJYNAOJBih3/nNrUNT1+WnL5BmnocJzhIqXAOQCo7mGT47bcCZx0oDeAdwPXTZmcjGW47C0VVgCcy6nIv4PyRF0Ay3DkPFdq2IxzBkAHus+BaK+jaDqq6AuNMMpBUNgrM1ec5J13PLTSXGtQdOO2sOAthjY6HkkW1Ytoha6nwE0bc1986/NF1mIGqguYHtgqwZyiLwJQ93J3Valjtfvp8tS3UDXaAt/G2vvkpFhPWDGDOXg58cH/T6FaFCdMZKEp0CG7zodkxhPOm92Q5pwfbLxfOkoqHgjAGW7DUvD6lm8+XweyalAsPAdAPygKdH8k32IYFdsN4LB5BMZRdvwpfBMGBXGp0XLopzRF0sf8I+EJKKQHycunhIjoc7v2jwy0dCe9vTRkKb6+OgvdUaOR6LLZdd/0R8AAusc9TXL8KD33O4FTXz+BrXxSL/2AIWhQ6VDeBrd2+3fbCh2+ger6Tz62dHJIISGIog1Ndx/D+gtWq1QDhF3MgBKMl6iQJJeWAJTy0CQGcm9PHV+MMhAlIF5d1+3v6GTy4IjBfh4Oz5eYImA2V8HAfG+Mm6BPYy8AYHtxKKKmzr6V0N1xKuN2CqgyOX5sMcHLN2RVghkjY2txesBdjhkfgdxx6BMixFcgaaG2ehhuHZ/gJoXx7vY8v1eK3BB2WcoaT+Hyly7UHN18UrcWf47GAy40O/k+v2gjkWbAP+/8AbS5Jz2W/NLsAAAAASUVORK5CYII=",
+    "slotMax": 200,
+    "price": 11,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

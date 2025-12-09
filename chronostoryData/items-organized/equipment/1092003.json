@@ -1,0 +1,37 @@
+{
+  "id": 1092003,
+  "description": {
+    "id": 1092003,
+    "name": "Stolen Fence",
+    "description": "",
+    "chineseName": "木盾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 5,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAdCAYAAACwuqxLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADBUlEQVR4nIVWi5EbMQjFM2mAlKAWtgWnBLuEuxLsErwl3JaQLeHUglqghFCCA0jos59EM+dbCQQCHk/6AW285e9S/vfjaO1UFhCBmF0G7uD95/sFn8/5/fv1IQoALEpECeaV3t9fD1NiJvkBEBuQROm5RNF/2DzLs0w/ft5nO3CLQCTXKcD9ucDX1wviMpsRl1FKEGO06RQQYqIiE3tEsIpMD3W7BpFxNdulCIfYLUpuEyIaZO6bbZ3NOMpBmMverQM3f5MoaF0s1E7PDJycxSxyt8xwGAF3v3sbvTscguO97lEEujpp8Rj2Q4rLR+uQi8oEp6M6YGZg+P/Aw1UevhBbjC2Ccgwcstmc9x7iEKbuaPppk4LOQVuMApHQ+yjOK84HURoOoBCu8O4d8MF/3KzpoAb/DSxKBHQSwbLG8WS1K0GaaF9FjVBtxR0qxhSrA6OJs/Fwb2eys30fYHRRI1AqoMI1SlZcQkDIBIbo6yWCkGVGbJyRE0JLnWeqq4HSQV5VY5NoY6moGiFrKIRpcqpwWGfDmnupN1xDxqGfpDhAwJK350qgKWOKhVfyCRUdv+YE38q2FPMePYjyT3E1S62uIldk+eF+FPumpIXzejieLWwjMTbjRT2nCEuDcp67XCjeE1Po2pgwCE0QpLhWsKtDNa7QtPshRTOOpSZQmLPihpKl7nHN++8L5yKvywJsN5HATsLEUgeHaui6KxUen9i0xi6HBlDqanBZEr+3fNJ3XDpgqdxQ5+xVGi6nSCevW6gCbyKH2m3CCkfHofeXo6bVou3zCLKiXDQOrZABbrlWh4ogLA6N/2UeFJas+3QdDeKMGW0UD7gIBeAszeZhO3LydyiE58hvQ2XIbR2H62i4MnFHeD6COLcup33OMbjzamgY/btooJzt5e3fxxfOifXBQfeMyGrHCLHUbQ7zD/vjfeB7tplgu5O5tv/43Bjtbx1XB0naVR9T1BXCP7X5qCukoalgVvdRQZQVe/PccQeX+3M9fX9+yhPxWMSX+7yVVfP2Nv0LZifix1dp2sgAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADMUlEQVR4nIVWi3HbMAxF77IAOgI7gjKCO4I9QjKCPYI9gjVCNUI4QrkCRyhGcAEQEEmZcngXRyJAPHweQL1BXQ/++2H/2zXa25UFRMhELluXAz3+fV3h83J7/Ll+sCIAsXLOCW5Lfnzdz6pElPkHgG1BYqXLHFn/rO9FXmTy8PN0e7RgNSLWOEwBTpcZ7vcrxPmmxlyWU4IYo75OASGmbDK2mzMsLBPnjofAMnoKvUkddgKNnupLzrmTuQ+k+6QgyA4R2dk9IIc5clR5mTUFrT61p3uf1DI12wQvI6Lm99lWC4vQBkvPuq8iEukkRR4ocX6G6VBQrRF8u1YgolHAA8PDXeqeEBG2YdWIzC3ssl2daJF6VsmJqp/S2N0GqG5GplRoscyJtU86UeocEeqvbTECosF/3OzJyrV9NvQpawTSAc1L7D1duxy4GZ+rLRGLzefmfE69A+n42VtnR92T7Z37gG4MrRHJiMk2y2QokoWEUAYlou9bRKHIdIBSYVoINaXbDDY1kjFTpGJ04lNolRdjWRsTYZp8BHk7FACpDfMCDqHwdpsFA0JAy+tlySCppBxtbhWPhU2/bwm+ZLrnWM6IQzLfDPLGtTywXJiIG3q+GY4qS4G9Xt4Pmg4dlqQgpl5Sh9boVN5dzleL299cEzp5A4+fDCkua7MIsIAIpfV+SlFB0GoGNqlXnuWkKT0fyvnTTD0ZlnkG0puR6crho9XJKR6aNCS7PyZSrX5qQCV2HtTox5wEuZ9XbeemwRQsjbk/Ha1x+9TJ5vUYVgVvRqfoccKVxs5f71NnWa3VM7VXID3AF55TMpQG0VoIsDAODVjvH34PQmeSc7KP2hqEhZ05vph1yA1C3LSeDmdaeQ42WL1z6hIZUt3H7locAdkFAQO1wE7o1BjkBIM7sRoarva7rmvm7UeGP+/Yge+kzX1UWVTUx4zSlG6ceoETzBB195Gf3WaI9JuB6ljpPo96nI0Dk5iTvzf3I3H7y0dhbgrlj9LEuSm4ss+4LueyMVBJgeNceETvp8vyF8br8jnHnQuLPk+3eN/s+cM71ERp6sjC+9Vob7P9DrDD2/4cwE5i/wMQ+O8D9N8e0wAAAABJRU5ErkJggg==",
+    "price": 1000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 5,
+    "tuc": 7,
+    "incPDD": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shield"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 5,
+      "min": 2,
+      "max": 8
+    }
+  }
+}

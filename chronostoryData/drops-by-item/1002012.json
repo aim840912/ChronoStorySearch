@@ -1,0 +1,19 @@
+{
+  "itemId": 1002012,
+  "itemName": "Red Baseball Cap",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 1210111,
+      "mobName": "Alpha Ribbon Pig",
+      "chineseMobName": "奇怪的豬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

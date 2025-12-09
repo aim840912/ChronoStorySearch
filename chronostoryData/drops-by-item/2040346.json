@@ -1,0 +1,19 @@
+{
+  "itemId": 2040346,
+  "itemName": "Dark Scroll for Accessory for DEX 30%",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 5090000,
+      "mobName": "Shade",
+      "chineseMobName": "冥界幽靈",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

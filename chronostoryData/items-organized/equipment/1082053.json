@@ -1,0 +1,72 @@
+{
+  "id": 1082053,
+  "description": {
+    "id": 1082053,
+    "name": "Black Lutia",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB8klEQVR4nKWVjXHDIAyFxV0WwCPYIzgj2CMkIzQrdIWO0IzQjpAV3BHCCGYEisAiAgN2Et3pzAGnz08/9gHeM7NxLmjxDsiY+QNADnbZW2/ZkQLQVxDNlyHYqyALscFlC+N4jQ601jBNP7gCc5cgOu1gbyhScDz+gpTSObeuG+E+OWrYewVk2raF4yizEDTcazoF8w1gtuKaM5hnQQ5CgBJEMyVke0Guu/q+D8FzkNTE0SvaA3KALRV7rASKAGh7IZg2cr9RBhlMEdkzKlIIpk2rPMikdUghuULnYNhxoB77K0W8FhwUpaOiRCkVIHi9+3RXooE1wzAUQSVVHIBPc/Pp4pCVojRl5BggNx8ryOQhzSVcWX1Uzel0ysJovRtyjgEpKGtcCYHSejjIvQ4hkOs0Csoh6dtXIWMZEhTluilVk4O4e9jCCjYtC0qLn4OhURsvxS+qCaB5/oZmuU1B0jSmc+Sm/g/CJ2aXIhvWwmYQQkQDykForrO0V+FShrPyta2GQDb+aKwBuo98cf/8B8kDKLiDPQFhihAmjAdpnw691GgRtrRuarsgHBRglbtNZq/2WY+qlw4sBeMBaN3DftPs6ZxAsuAlaC5obn9pHVAHFrRlTx70lX/3Cs4VlS7VJkVX1pEf4CFvK0WyAK29WFj/A1wNeofz0NWwAAAAAElFTkSuQmCCANsBeyJub3RpY2UiOiJHZW5lcmF0ZWQgYnkgTWFwbGVTdG9yeS5JTyIsImNvbnRhaW5lciI6ImlvLTVkODc0ZjhmZmYtcDliZ3MiLCJnaXRIYXNoIjoiNGVhMGY5NjY5MGIwYzhkNWQ5OTMzNjY2NGZiNGZiMTFjYzYxOWRmNCIsInVybCI6Ii9hcGkvR01TLzgzL2l0ZW0vMTA4MjA1My9pY29uIiwiY3JlYXRlZEF0IjoiMjAyNS0xMi0wOFQxNzoyNjowNi41Njc3ODUyWiIsIm1ldGEiOm51bGx9",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB8klEQVR4nKWVjXHDIAyFxV0WwCPYIzgj2CMkIzQrdIWO0IzQjpAV3BHCCGYEisAiAgN2Et3pzAGnz08/9gHeM7NxLmjxDsiY+QNADnbZW2/ZkQLQVxDNlyHYqyALscFlC+N4jQ601jBNP7gCc5cgOu1gbyhScDz+gpTSObeuG+E+OWrYewVk2raF4yizEDTcazoF8w1gtuKaM5hnQQ5CgBJEMyVke0Guu/q+D8FzkNTE0SvaA3KALRV7rASKAGh7IZg2cr9RBhlMEdkzKlIIpk2rPMikdUghuULnYNhxoB77K0W8FhwUpaOiRCkVIHi9+3RXooE1wzAUQSVVHIBPc/Pp4pCVojRl5BggNx8ryOQhzSVcWX1Uzel0ysJovRtyjgEpKGtcCYHSejjIvQ4hkOs0Csoh6dtXIWMZEhTluilVk4O4e9jCCjYtC0qLn4OhURsvxS+qCaB5/oZmuU1B0jSmc+Sm/g/CJ2aXIhvWwmYQQkQDykForrO0V+FShrPyta2GQDb+aKwBuo98cf/8B8kDKLiDPQFhihAmjAdpnw691GgRtrRuarsgHBRglbtNZq/2WY+qlw4sBeMBaN3DftPs6ZxAsuAlaC5obn9pHVAHFrRlTx70lX/3Cs4VlS7VJkVX1pEf4CFvK0WyAK29WFj/A1wNeofz0NWwAAAAAElFTkSuQmCCANsBeyJub3RpY2UiOiJHZW5lcmF0ZWQgYnkgTWFwbGVTdG9yeS5JTyIsImNvbnRhaW5lciI6ImlvLTVkODc0ZjhmZmYtcDliZ3MiLCJnaXRIYXNoIjoiNGVhMGY5NjY5MGIwYzhkNWQ5OTMzNjY2NGZiNGZiMTFjYzYxOWRmNCIsInVybCI6Ii9hcGkvR01TLzgzL2l0ZW0vMTA4MjA1My9pY29uIiwiY3JlYXRlZEF0IjoiMjAyNS0xMi0wOFQxNzoyNjowNi41Njc3ODUyWiIsIm1ldGEiOm51bGx9",
+    "price": 27500,
+    "reqLevel": 30,
+    "reqINT": 92,
+    "reqLUK": 33,
+    "incPDD": 12,
+    "incINT": 2,
+    "tuc": 5,
+    "reqJob": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove",
+    "lowItemId": 1080000,
+    "highItemId": 1090000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incDEX": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incINT": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incLUK": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incPAD": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incMAD": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incPDD": {
+      "base": 12,
+      "min": 0,
+      "max": 27
+    },
+    "incMDD": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    }
+  }
+}

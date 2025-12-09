@@ -1,0 +1,39 @@
+{
+  "id": 1422009,
+  "description": {
+    "id": 1422009,
+    "name": "The Blessing",
+    "description": "",
+    "chineseName": "妖精之錘"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACSElEQVR4nL2WjZGCMBCF1xkbiCVgCVCClMCVACVoCWcJUMJRgpRASjhKkBJy2U02hBx6wglvRgmC+d7+kLCH7aXscbc1XGUnAV3Xg+xAbQknsK+t4OqcxdD1HUW9JdyBWdIMV6+5qbEF21oTGL/WhLsac6p98JrwXzUOwWvBXwKvAX/YXFM3vxM+AofNtSb85VQ/grs1NxjDxPm/wT5c5Xmu/9xB0zQqjoAnISheQ1VVpQJzgPe+WuMpuLrf7wRO0wSEwMnMRRzH8YnGdV0RCA1hpCwEN7KHSMwDu8gRfL2kNIGZ0Eblgfl3NHCtJczp6mfwXZIktBpFkdnu0ER8ykfgIdLBAG+PFHUPs0Vp5zRiJGhARJmJpql+ZcM3UDc9cH8s0d5BRWQ+OmIpJYF9RWLaAB6j8TY9C77TEejoAc7ljepfXQt3Q/sNkBzt+CYgSQcHDF5Sb4aTEIyixrO1R3CoKQP8FMCChlNt2xpwkboLaCA5Ggib4POpEuBa4K0DL8OpxrWXat+A/9ozuuYZyLIclohqXhSFedRs0/Hz+3X71N/FUHOXgWECXAvsyoins9Pu5Hc9jj/SizZQ6gxcXAZCMErKBpaI4dTx/L4VGkD5PUDgYBFa0nR+5A8NsLgHGByuBXMV7ud/GsjPJTVo39XGkG28pWt7qIcGzp83AotewwFGe4HQ9cftGBam/amB8su0utn9BkP+XjBXz16jyAAO2rakHw6HAx2zk8kxbixlaa7px5X+8y64mwy3XP+cTYFdI/xrc/QD+YiXNvJFK0MAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACjElEQVR4nL2Wi5GjMAyGlZltwCmBLQFKCCVwJUAJSQlJCVDCUkIoAUo4SohL4CzZMsILe4E70IzBvPz9etjmA463wZ1PR8OH7KKg7zV0PQxHwgks7Sj4cM1i6HVPXh8J92C2znZ3z7nNsQO7XBMYD3vCfY451BK8J/xbjkPwXvC3wHvAF4tr7uX/CZ+Aw+LaE/52qJfgfs0N+jBz/c9gCR/yPDcf99A0zRBHwIMQFJ+hVVU1BOIA3303x3Pw4fV6EThNE1AKB7MPsR/HF+rXdUUgFISesiG46TREah3Ye47gxy2lAeyAzisB5vso4FF3sKaqf4KfkiSh1SiK7HaHIuJLPgGPno4CeHskrzWsNgo7hxE9QQEqyqw3TfUtGlJA3Wjg+thiHx6qItuMx13XEVhapOYF4DmabtOr4CfjgfEe4Fo+Kf/Vo/AvtL8Bkk/XfypI0lEBg7fkm+FkCEajwnO5R3BocwJ4FsCGghvatrXgIvUPUEDyaSEsgq/nUoBrgVgH3oZTjmsRailA/vZMngkBWZbDFqOcF0Vhp5orOp6/X8+7ORZjzn0ExgFwLXArI16uDrs3WfXY/5XejIDSRODmIxCC0bqugS3GcKp4/t8KBaDJGiBwsAhtKTrp+aIANq4BBodrwVoL9/O/CsivJRWo7msryBWem+tn08IlZ3HhnfuZWBRwvT8JrHRHI8q9QJn8m6J7mdupGEuLs4ZASAhXriVGQCsFlF+21O3uNwqSe4GzOBiTob1rXoCEMzhy55sRgHMN2rakF87nM52zi40xbixlaZ+Z6UraYBr2H/e6Oc/lhziiMlvu3d27Oai/NlDuF+I7OUbYZuEcGimA+0lwT15zP/RSL/S9/QEY6q9eM5t5SAAAAABJRU5ErkJggg==",
+    "price": 190000,
+    "reqSTR": 190,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incPAD": 82,
+    "attack": 5,
+    "attackSpeed": 7
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Two-Handed Blunt"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 82,
+      "min": 79,
+      "max": 85
+    }
+  }
+}

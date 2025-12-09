@@ -1,0 +1,37 @@
+{
+  "id": 1082019,
+  "description": {
+    "id": 1082019,
+    "name": "Lemona",
+    "description": "",
+    "chineseName": "魔法手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAXCAYAAAARIY8tAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABxklEQVR4nJ2VYbWDMAyF23MwgAUmoRawwCRggUl4FtCAhM1CLWABCbzekJS0rIMtf0ZL+G4SLl1lfos1W9tS4i8Cq3NtsuH9SwsmYt8KRHhdN/S7LLPBXte15vF4UI4W+kaA4AJ+PkczTZOZ55nWgOvOuCt7VSDCBWxtOva27WNHCORD5IpAhI/jEMFtN6RZy0I/yIOIdHYmsI+lrvdqA3z8683tdtuFcD+ICJw7OR+RhjdNE/cF3nfO3O/3pCOBn3VwsKOOw4gKURJIRoPK0Tbmv64rXXvvKTGpPuSGbHkPRRe9hSP6YTy6h+E671MHG7xxZplDhcEY9Agcwu9B7Ng4twHZPbgmEe7snUACxwOu7aIznOv2CoOYwMX3GI3cg5D3qU1XjOQAN5sjsK+BJBYqxXX4mOij2uzJ8HnvohI4gAd4WAPOSqmYChFBTn6vkir9a6INgctsc7heA2zY7zgWNnM4ntTmpEoSsIh2y4FZ5PBPkbyDT9XqdSEsdWFMMqbEpvk70GeLY4GT6m3+5yMCFiOCcDxvNFwJvvuYchG90B3sItymeBwGEGF9kF2J/EsmEflIjDLAeeHXBErVWT68SveL8Q/cSGDho2jKDQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACDUlEQVR4nJ2VgZWDIAyGw3suYEegI3AjuIKO4Ap1hN4I3gqO0I5wruAI5wgeiQQDKLXNe30iRr784ccW8Hks0b3KJX8KWoypgolxfEpwAv0E5CFlqek6zxPgXF1X0HUd5cTAd0EEYcDj0cMwDDBNE90jRCp1KtW7IA9hgFJhh6qqpSsqxMB8hp0FeUjf3zygqm9h1jzTBfMQxkrPKtraVZZb9RbS31u4Xq8bEJ9bGEOcsvOtkxCttZ9nSFsbaJomUCghZ0CJjWUkrctEDhS0DJVgO3B/lmWh8TiOlBiosbk2m/fppet2IRjtrU/d5iAy74yiFaINzJOt2BqJXkVHuX1iG2tj1oWd23BMMKc0Bwog+KKpau8kY+qtYgtlCJ8bbBk/Q+A47tt7wVYlEFgdhPNyYYLaynFsDyUdztXWDjKFqgoJwYUTiL1HiCOGUBEMw5y9ffKKqLLnQGOGcO9jiLxHADhn4edmNZFxHdycxyDlYIu3abxwFDHkVSR7lKte3h+EIlUASfsSe8d7JL9dxoFeqFF7f4ISpLB1WIj/nkmIAB8dynjxnKINBiC/wGQULsDNXQCPznEE/Y1B+OLFLvQnDtuXW/w3ErLvkhAy849BZfRrRLX8+e4s7O7G32L+yBkMwfKmQiyuxZXh8orxszOXU+RDKjpKOvRy9CweB78CNnkStldxeQDNFebH//Y/fKoynD0ZAAAAAElFTkSuQmCC",
+    "price": 5000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 48,
+    "reqLUK": 18,
+    "reqJob": 2,
+    "reqLevelEquip": 15,
+    "tuc": 5,
+    "incPDD": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 4,
+      "min": 0,
+      "max": 12
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": 1302010,
+  "description": {
+    "id": 1302010,
+    "name": "Jeweled Katar",
+    "description": "",
+    "chineseName": "樹靈之劍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABQklEQVR4nL3UgXHCMAwFUHHXBWCEdIR0hHYEMkIZoYzQjNAV6hHKCGgEMgIZwY2cyImLExQsV3e5wzkfjy9bPEH+sn/Wm9yotfYHoHlzixYBdhXY/0jqsG05rnOiPuUUzInetDU3GgW7s+RSv0hL4IY3aaB+JCSgBton4xKAGmgUWwJTUbv/CGeBRmP4A5gFU9CurRf3oTpW8P05nqWkHkE9WJsDlOW2g48Obo0MXosGIGLr0P37q4NN7ffNtnYtGrSUMHqKsj9XU+NdbC0aJKSilJTQ/YjnWgxK0WhLOeFaUIIGYFEQhEngPfQmIeLp4ZZK0f7Lh0tDpQEuoS4lz6EmOId6kCrllkpRD9KlMaY/wwFTAWOor6bBKaiCxdAxZeJISNEA1G7nHArYnqZgFmyK2vP1C152B36XFWSUwewY1y/yTcWqU0p3AgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABeUlEQVR4nL3VgXGDIBQG4Je7LqAjmBHMCO0IcYRmhGaEOkJXKCM0I4QRwghlBOpDQDCgINh3x0VP4+f/gOQF9i8xOz/sjQohfgDYmzzhFKDuQPxHUolV7XS+J2pS2uCe6FNb90a94DCXuoovpCXwoG8qgZotEQOWQMdkuiLAEqgXWwJzUXH+cPcCbg31AxAEc9ChrQ950F07+P6c5jKmtqAG7MkF2rYa4KuEOYmDU1EHpJRL9Pz+KmHSm/uCrU1FnZYihqNpx3klPV3FUlEnIRamxITyJY59NBiLeluqE6aCMagDNg1CNAtcQ58SUnrb3NJYdHy4WjRYJcAlVKbU+7AkGEINiJWzSmNRA+KiIWScQ4UVAX2oKcaoDRbBfOiUMrwlqg0GD6EOaLXzOIxmBqbA3PrUY0pK+c0GT+rhbQDzwRz8pTGmBkdU3H+/4FRf9E34/9RAXsLFF5FJFVgrqAp8IZRkfm1+PB8StRcKg/U2VoEXWHpJ59ofV3rgBF+b7R0AAAAASUVORK5CYII=",
+    "price": 120000,
+    "reqSTR": 155,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incPAD": 67,
+    "attack": 1,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 67,
+      "min": 64,
+      "max": 70
+    }
+  }
+}

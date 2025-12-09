@@ -1,0 +1,41 @@
+{
+  "itemId": 1072300,
+  "itemName": "Brown Leather Krag",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 3220000,
+      "mobName": "Stumpy",
+      "chineseMobName": "樹妖王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3210800,
+      "mobName": "Lupin",
+      "chineseMobName": "猴子",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8645263,
+      "mobName": "Turbo Robo",
+      "chineseMobName": null,
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0,
+      "displayChance": "0.000%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

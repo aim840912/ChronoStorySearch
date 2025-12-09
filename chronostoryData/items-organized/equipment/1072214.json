@@ -1,0 +1,55 @@
+{
+  "id": 1072214,
+  "description": {
+    "id": 1072214,
+    "name": "Blue Katina Boots ",
+    "description": "",
+    "chineseName": "藍色蒂娜長靴"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAgCAYAAAD9oDOIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB6klEQVR4nKWWi5GCMBBAlxkbiCVwJWAJUgKWcJagJRwl3JVgSpASjhZSgpSQy24+xJCYxNsZRonweNnsGnYQDxmcN1ARPtSB2PFCn4sQwNoWlmmUNWALle3nTUFmAuEBy2x+aqE2dhYoJq5HDIx1g7N9BwqCX90AwljbkbUbU+moScHOB7WYv2WhwwfX2iK0IQtlg7dasLPEc1ywClu7UA6sqMAY+5etX1IEFiYNBDLGtbab4kczPw3v2IbQaBpqbWNt+pSGmG0OnOp9DUnY5iIFJVt06466s6DCNmkKkTT4tq/Ar6DGak0DBO2bihw0umj6YWnbrGloW5KGEmiyxOSNw6yehwVxhhVcZGpt/WJ63L9g3+s03AYO92GEw1QxffA6zTWC+FHDOr8nPhDYpqEUKukGu9WQ+gSPb/W0nm0uLp4+BmvX/ao5De7774VTXu0DS6BkaUuJJNX07epbIKYgZ+q2a9wU/W3GBi4MhgMK7iYRQqUPwpjVLjuTmS36GR5fI3DFOM86zwYYLX7aqrHAn4u8M+8Duj0RiLWZAm6mrzune5qmHxbY8zRwA8WboJOqqK/hdcXADXR/vaja61W33NVNvdGfCIbHYcQVfg0ModQ1zYe+fn1JC4o7A9yY+hebP4dYZF8m/gB5XpZ5iF2DEgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNElEQVR4nK2Wi3GDMAyGxV0WcEagI5ARwghkhGaEMEIYoRkhHiGMUFZghHgEasmPCNeAIdGdD5uHPv+yZLyDeRuCcQYbLQbyzsXxQlfV9yDyHFTbDFthIWjIv+/acUfOsYHq7KMc3jEOIkjfSjOyAFFUZojQD4Ggl7XvI0DkBanz93Qot4ZvBHLOc1wPpahx2DuqOCij2epZozsH85PAMSbFRlVhMniYJoEQ4mOqYulNsN6GkJxbZe+omixYVMBD+K6qKVA0hGhbVc1tQaMQxlStgS3tdcbxhKo1tgQiVaihOJodAjaqWlQEkRCiOVWpsBSQnf0rhBBsTSmWCoomhplAmqpkRcbpdGIswdaAJtN9uEvo9BwwEc8Qh61S5FTxxH4+rrAvTQjvlYRH1cCh/f/dWpDfMXzx9jd926zXSVYEi4VwLWggJ+43j6ZaeP5oj6WY/XB16NBE/jo/ZKfK938vktYptmusAZEal9ZoGDqXdQ6C4YtZ8rkODy78F+8MFx/NQ3rpHiVl3cCdo3X6dNSRAleoHTyvDUjt99yZdbOQ5IKlYxcW5bgwC3veM1sPQrB2UiCTiswOUIxCxM1BSjmC7HE+3M0cSDhHUAy6EGsIbQKiSxYK9ppiV2oOJFiDfX3RtVHqqn9oR6X9pCUAtkODmeUhdQDhMGVehH7HALm91rqqr9kXvpuxg35QkAZyg3G4QkXeuCL+0tndQyjErQ4chv1R2zF5HMb7B3Yvlh1qZuz7fxQpsCjbutQaAAAAAElFTkSuQmCC",
+    "price": 170000,
+    "reqSTR": 0,
+    "reqDEX": 140,
+    "reqINT": 0,
+    "reqLUK": 260,
+    "reqJob": 8,
+    "reqLevelEquip": 100,
+    "tuc": 5,
+    "incDEX": 4,
+    "incLUK": 2,
+    "incPDD": 58,
+    "incEVA": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 4,
+      "min": 0,
+      "max": 9
+    },
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 11
+    },
+    "incPDD": {
+      "base": 58,
+      "min": 8,
+      "max": 108
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": 1072225,
+  "description": {
+    "id": 1072225,
+    "name": "Red Varr Shoes",
+    "description": "",
+    "chineseName": "紅色巴爾鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACzElEQVR4nK3VjdGiMBAG4GXmGggl8JUAJcQSoAS+EqAEKEFKMCVICVKCKUFK4HY3bIiIoHOXGUaUn8c3WZY/8P2YNn4bcMuOLvwGY2S65QCpwr0GtxqZEUZr0rjg49H/wKbHBUDlJSOmiGGwHTlwvZegIIdrZeDU7oOfYNM0LQgAIjY83IDt44/+8RH2BIWIS/XAnV+wuJ+of8deIEJoCNS1xv2QANxxGX9qX0Av07mHTVwMVATrNFwYv9AbAwki1rqNwNvtBn3fQ13XL+u3nyw9+1QhZLuOD8vMCajyG35aKMuSsJfbHU5jCNkuBoWC8gpg2Qt0YUg2jYd7eK7OA6z20GhmKMn5iB2Mg+YztdaM8FVZxqnpTBOAHz1nDM0If7cLpKsHI2qO2xUFQ1RH9Fnh1s7gPoax6KHleNQ1XLfAVA7KG1d4CS7aMAycSIaA4SO5h0VRZiZpT6eTK4omxa+IJOPIQJqmnKxFKA0uDpELxiuwu+yWfn5W8FO48taoDFgtHaZrEKJpk0QE6Q0EJJ09Tgbn8gpZm0GFf02rBuc+w/ZusaxjaJoHP08jrlEZQMkGKIOwt82zwweXxmCxiJOak1Fh0GbimG9Ma5NgSotptyCNq1C7JuMLZAuM6myYdKWwwnBtKgdRkaRoa7U0Q4Ik2d5gjJptFHWbCa0ZAR1oW3fD66h869hC7LyNq1QeG023BU53+vfU0XMNJVUJ383d2uJ6radvD1owu/Q5mN/IBCXYFWCFCLSVbA8SLKLXwiNx6fqow5PzF0QADwaQYHuQTybpAKdTI9gRGCZDkPbfJZL9o/enx7gjzWA5gwm9rw6q7midNrF1QgEFCMcak6Z7NASLqHdRD6N+68Gb6/R1Zt5ikojP20kVYn5Ig2cQ3NXVxX2Xl69kLaulSI+gNcbpaIcSOvn55Hz+XQA8Pxy70BrzFwj6wYjgi/EXF9ivugkP7S8AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAfCAYAAAAWRbZDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADDElEQVR4nK2VgZGzIBCF15lrAEswJWgJpARTgleClqAlnCWEEmIJWkIoIZbgv7u4hqjB3Py3M4woyMeDx/IFv49p59uAJTv68Tcwhkx9DpAqrNVYKsSMMFqTxhduj/4CNj2uACovGGIuMQy2JQ7c7gUoyOFWGjg3YeAnsGmanhAAhFi/uQbbxR/N+Aj2AvIhTtUDK99gsZ6o/4dtQAShEFDbGPchAbjjNp6qxUCb5QzBJjYDmWCtho3xDZ0xkCDEWlcI2Pc9dF0HVVVt9i+sLP1ZVPkg27bcLCsnQJX3+LRQFAXBNsMdLqMPsm0MCglqoQDaXkBXBknR2NzBqzsPYNUCGs0MSnJusYNxoLmn1poh/FeWsWrqaTzgR+eMQTOE3+0TpMsHQ9Qst71cGEQ+omeJpZmBYRjKokPL8ihruGyBqhwor53xEty0YRhYkYQA/SMZgkVRZiZJT+ezM0Wd4itCknFkQJqmrKxBUOr97EOuKO+C2SVo/fxHweni7K2RMqBbWlRXI4iWTRQRSO9AQNTZY2XwU9wgazIocWpa1bj2GaZ3i7aOoa4ffJ5G3KPCAyU7QAmCvU2eLR5cisGiiZOKlZExqJg45oFpbxJUaVHtHkjjLlQuySwG2QNGVTZMulToMNyb0oHIJCmytXomQwKJslAwjJJtFLW7Cq0ZATnQNG7A26iW1LEHsXMZV6oW2GjaPeB0p9lTRs81FOQSHs0NbXG/1ssXAj1h9pnnYL6RCZRgVoAVREB7ykIggUV0LTwSp66LWuycbyACWIAeSGAh0KJM1AEup0ZgS0BfGQKp/k6R1I/uzwXGGWkGFjMwofvqwHVH+7QLWysUoAD8WMMk6R6FwCLKXZTDKN8uwN5l+iozb2GiiPsFVPmwJSTBMxDc3+XVvcvlK1qL8mnSGRSvRL4siw9jdVQhhY78OpF8/i4A7O/HGYuf+EfvycWH0YxO9MRBevgsBDeuQD5QrjUrMDUXya2V991/riPki42z1sreddxacr9tXX8pX17D+lzuzVpu+xDw7QT+AV1TyoJkN0jrAAAAAElFTkSuQmCC",
+    "price": 140000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 308,
+    "reqLUK": 103,
+    "reqJob": 2,
+    "reqLevelEquip": 100,
+    "tuc": 5,
+    "incINT": 3,
+    "incLUK": 3,
+    "incPDD": 39,
+    "incMDD": 19
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incPDD": {
+      "base": 39,
+      "min": 0,
+      "max": 89
+    },
+    "incMDD": {
+      "base": 19,
+      "min": 0,
+      "max": 69
+    }
+  }
+}

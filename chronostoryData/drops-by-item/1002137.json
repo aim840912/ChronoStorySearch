@@ -1,0 +1,19 @@
+{
+  "itemId": 1002137,
+  "itemName": "Green Pole-Feather Hat",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 3000000,
+      "mobName": "Sentinel",
+      "chineseMobName": "石球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

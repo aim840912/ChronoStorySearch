@@ -1,0 +1,38 @@
+{
+  "id": 4031059,
+  "description": {
+    "id": 4031059,
+    "name": "Black Charm",
+    "description": "A charm earned by defeating the \"other self\" at the world of new dimension.",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAZCAYAAAAiwE4nAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACV0lEQVR4nJ2VgXWEMAiGufe6ACuwQlZwha7Q5brCrZAVsgIjWPgDMV71qsXX1mLk4ycQP+i+rSf+x4U1dBe4FhFS1eHIO/MNCDOP59sdUbP3bivUOYputzPknd0vaapzAGsA38M066D/AKaSpg0BPJQInyJ1/Op2B7gutn9QZhGEZAibKky1NSpIYNJu77jf7HFLoW86cFFWTYnmFBaoR1OR7hTP91eB6+dSkGXzTC0wyqiMaO7zEjP8AnW+NkFt6uorwAHzQFKkq4zUM4H0+f/M/AobM+rAnJ95cCn9SzFYtSASzWIBoc6Cttbnolg54TefxuVKHSZY19aMD4XeDM/uHOYLETRK5UHdKldMRutNEPDtHd+9rlpptPFkALrva1lGkOn0wI8UjkZg1BE+gAQJtbq9x30J7r2Bvp/1V0mj1i3K0JDcE+0teDH3HME19jKaQ9hKTs3W9IbyZLL8R/aRSpC5196ztgsz15PF8wSV2BvsK2/7irXRpdk4r+oS+LAAq4fXaLWEzvXPvkOj+F+7fPgTWorsGunsaN2NRQgFNaEOQrlZxqnR16YqGpPtlaixFUfqZuBQmWqUN6jMUM+Ko2EseG29mTpMkcCzVjqzw8FHR+oGhYK2NQzHeZZjgxJrX5tn5hXgpLJ/esamUm/xQj6vfQ6V2qgGmoWFrtjp0YbKuda+cVG+fprIvHF4fO3jewQcKpl5fMu8xHl0ueWRtcuO+uzSm3IeAX9BAYi5Gk18AL0COwPuoK/2Cp0+PX/C3gE3aOxZBk6lehN0BTigs+O/oLQfiut9J/avRBAAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACpElEQVR4nJ2WgZGcMAxFvTPbgK4EteAWSAlJCenlWrlrYVugBZcQlUCkb8kYLxCIdwicsPX0Zcnkme6P5cD+uDAn3QUumTmJSDPEk9oahIja+/UppaLrbiuU3ousjz3kbNxPaagzAIkDz2ESeZD/AIaSIgUOzBUzHSKl/VPHHeAy6f5BmXrgxE1Yl+E0l5IyAui06xqz63jcUmibDpynVUKiGpkY6lFUSTaK++erwOXnlBFlsUjVMdIoBG9msxQT7Ax1NjdApavqK8AGM0ecuar00COAsNnfRDTCWo8aMPqnb9wU9ikrbFYn7MWiDqFOnZZS+yJrOmFXm/jPlBqMMa8s4R8KrRhe1diGTYRTT5U5tTHTjM4otQgcvq6x3auqJbUy7gaAZvs9Tc1Jd3rg4kxeCIQ8wgYQI6Ayr+uoTsGzFdD3a35Lqee6eBoKgnuhvBkLY8/hXHwvvTiYNOWp6JxaUBZMpH9vPEMJIrfcW9T6Q8/VYPE+QNn3BvtK675irldpFM6oLoAPdbCYe/FSC2if/6g7FIrd9WfNH9CceVNIR0frpi1cKKgBNRDSTdxOjTo3VKXW2ZaJ2bdiT10PbCpDjdAK5R5qUZEXjDqfSy2mChME8JrndDR2Gx8VKSsUCspaMOTnWbQNUix1bpyZV4CdyvrpaZuaaonnZP1a+1BSadlAsRCnK+PwaEPmTGvdOE9fPU243zi8vvbx3QM2lUTUvmWW4ji6bMSRtYku1d5NJ+ncA75BAfC+akW8A70COwJuoOMYod2n5yNt8rxZ8k+gLfxQZ39iz8JxKO3+5/bD7/kEJnGNQBquXwr62nhYQZ9+n/aUDFB8Ku3qgQHh7t47HtN1pTTfgthTeDT5SMH4bnzeXM/hZRmgeyrW0+A8oN0g/gKg3Zhm5/kCzAAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -2,
+      "y": 28,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 28,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 1,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Quest Item",
+    "lowItemId": 4030000,
+    "highItemId": 4040000
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 4000109,
+  "itemName": "Toy Duckling",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 3210204,
+      "mobName": "Roloduck",
+      "chineseMobName": "玩具鴨",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

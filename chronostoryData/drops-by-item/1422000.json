@@ -1,0 +1,30 @@
+{
+  "itemId": 1422000,
+  "itemName": "Wooden Mallet",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 1120100,
+      "mobName": "Octopus",
+      "chineseMobName": "三眼章魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 1210100,
+      "mobName": "Pig",
+      "chineseMobName": "肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

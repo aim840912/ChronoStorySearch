@@ -1,0 +1,55 @@
+{
+  "id": 1002643,
+  "description": {
+    "id": 1002643,
+    "name": "Red Brave Hamal",
+    "description": "",
+    "chineseName": "紅色勇者頭巾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADH0lEQVR4nKWXgZGjPAyFlZm/AVpwC94S2BJICWwJoYSkhFBCKCGUcC7hXMK5BO7JlrKCBX72VjMeg238Sc9CIf/RMZt25k70TduDvkBPtKqqyNX1azKOY+7fUrIOHXJgCzo9HxdK5xs5GUgpEV08xffbbOEvOBN5Dnb+dHQXvgbNwHEYyFUMI/LXa74Ibx3RvSHXR0otHPjoKcpDWEp3dg6tK/BN8BI6/XaOKu8pRWw8RHJ8DQfYHObix0DV80rje0ceUVZwhkHRbHJBu+2ALTQDO5bw1lGLaGoAXdMUaaU5gEIM5B8tETsg4ErASaLGLPUb4C/yxhDIhbI5Rxw5SjkzNY/xAVI3zwscgCKAO4Gp7YEVmqN0bUsPF+DxCHgq8onUxSPp4YPLtykDE9TJ6859hgVe03jynBS3cVtefojaBlLxdmj97QXRCJIruRyR1dW9zYlUSeQ9gPW1RuTF2UFgDdqwiJah0x9EyOeW3t4pXpu8KT+o7+KaBQBdCTpH7HnzrqyP4ij3Hlk+9OFrpAnnGLjx9bm8h0GSw6sSVAqEmsOrE+QsYzdQjcSKHC3GR06wSykkI/ZdRpuhDOzFa2uv8ymC5yz1Oo6N1SHOZJbXQ94e4zWAY0CCjZHWrERqgInWTeEqXWWuA4DUOBohL5+rypzXYXwY5vDdgq/vnLVoxnSeWy4kRDMg24jx5R4MPX1Aby5hw0aklRm3G1j/VepGIlWHahMp7ieMnzTSGdjW062Il/aSGsBXVosC+iwqeK7LVt4M5irCD9kkrzau1SF7rapYZRjemD2XZ3qSspVLmEZwxCxwyzHt1xIpv0sWvpXRRPPzXkJ4TsvL+Dl32sveGVwd2AJbs3WslntOtC15N+FLB9ZMvzJieWbic7QqaGU6+mH2xYE1M+c/XeSeo2vnc/Rd6P9ZVkKBLOtV+pq+J+8hENtDNrbAtez/CXRSEMnm3Hq5v9NnZBqlVLzTT6D5fPmz02bvAz9//Nucf0tlzAL5/kfyOon2bn5nGagRcq+Rp8WXwz8DHwKLAhpW1qUjX4NHgdyfF1+J8eDfir9ZA3aOsynXZAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADSElEQVR4nKWWgZGjMAxFlZlrwFeCrwS2BLYEUgJbQlJCUkIoIZQQSjiXcC7hXAL3ZUtZhWA2O6cZB2MbP+lbEfyg12zemNvRN20Legfd0Jxz5Nv2PhmnKV/fUrIOveRADTrfrgdK+zN5GUgpER0aiu/nh4W/4UzkOdj+09FN+Bo0A6dxJO8YRtScTrkT3o5El478ECn1cOBjoCgPYSld2Dm0Y4FXwUvo/Md7ck1DKWLjMZLnPhxg85iLHyO524mm9yM1iNLBGQZFs8kB7bwBttAMPLKE5yP1iKYF0HddkVaaByjEQM21J2IHBOwEnCRqzNJQAT/JG0MgH8rmHHHkKOXM1BqMj5C6ux3gABQB3AtMbQus0Byl73u6+gCPJ8BTkU+kLh7JFT74fJsyMEGdvG4/ZFjgNV1DDSfFearLyw9R30Eq3g5tON8hGkHyJZcjstpd+pxITiIfAGxPLSIvzo4C69DGRbQMnf8iQj639PZO8dTlTflB/S+uWQDQl6BzxA1vfizrozjK1wZZPg7hOdKEcwzcuL8v/8MgydGoElQKhJrHXyfIWcbjSC0SK3K0GJ84wQ6lkEzYdxlthjJwEK+t3c+nCJ6ztNFxbKwOcSazvA3kHTDeAjgFJNgUac1KpAaYaN0UrtI50w8AUudpgrx8ripzXofxcXyEbxZ8/c9Zi2ZM57nlQkL0AGSbML7cg6G7D+jNJWysROrMuN3A+q9SdxKpOtSaSHE/Y3ynkT6AbT2tRby0u9QA3rNaFNBnUcFzXbbyZjBXEX7IJrmr9NUh21dVrDIM78yeyzPdSdnKJUwjeMUssOaYXtcSKf+XLLyW0USP572E8JyWl+lzbreVvQ9wdaAGtmbrWCv3nGg1eavwpQNrpl8ZsTwz8zlaFbQyvfph9uTAmpnznw9yz9H1j3P0XehXlpVQIMt6kmtL35P3JRDbVTa2wLXs/x/orCCSzbkNcn+hz8g0Sql4u6+gbmPsF//gs/OPXXTF64/fzfldKmMWyPdrUFe5Pjniy3c4Xcx7loEaIV81cgB/6pol1Jn2BLHGwKvAooDGlXWAvdGiftTktdXs6d2uEe4XX4mxAJbPPL2ql9BU6d+BPB6NVF/YagX9B1uggWD7dlG8AAAAAElFTkSuQmCC",
+    "price": 115000,
+    "reqSTR": 90,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 90,
+    "tuc": 7,
+    "incSTR": 3,
+    "incDEX": 2,
+    "incPDD": 57,
+    "incEVA": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 8
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 10
+    },
+    "incPDD": {
+      "base": 57,
+      "min": 12,
+      "max": 102
+    }
+  }
+}

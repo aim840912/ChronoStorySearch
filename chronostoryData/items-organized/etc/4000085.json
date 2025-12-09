@@ -1,0 +1,27 @@
+{
+  "id": 4000085,
+  "description": {
+    "id": 4000085,
+    "name": "Fire Sentinel Shellpiece",
+    "description": "A hard shellpiece that's a part of Fire Sentinel",
+    "chineseName": "火石球的石塊"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB/UlEQVR4nK2WgZGCMBBF44wN0AItcCVgCdqCJWgJUoK0QAmXEo4SLi1YApcf+XGJGxS8P3OTEJO8/Owu3Nas0/DGnI02uAQYId+nk3HOqZNs34e2c27QoO8AB0KkyrKcPOMAgPEglf/r72sn0FfAIQVFYFEad3u4lDBKg84Bn2CAaNC267JXnEJzwOG63886Sp+lirIK7c31T79pwBAzGSNsXlaVac9tHKvrOrSpO8DsCKp9H1DpMgUGZ9hg1zT+Tn+MG7MO7eVyNefzMTxbayNUdYk5Hkao5jDA4CwXDyiFlkWB6whr6K4web0sC8SJyQKXuFpApQ7Hg7pWujSjSwKjO5y68RvjOq3tIjQewN77db2PsHfcMY4ThxK22X3FYsc4xbjhMHPlkFMEYiFggGCzk786JA7apu/NfwnAmJlSdELHFJxLVSuA0d2vTwatmNu2iX0JZ/wWAwmz/T1W6Yv52HWT5/T3xUBcKWFQWtSIK7MSV8qMXg2U0q6IWUroJ5oACYM79NGiyGWipCWzCpgLPMaRMIRAdCtrcylw45NmQL1B2gs5hUKszbQsbgrEPl7ej68FNiBUc0xoWOXB6GfKQv3nidrKSXA698kBVAJqf0BrzKJafMpSvs6kPqm7V8DoVA5q+chvIhQidI/T7HVqwAmYSg8wjmXnz+kPuMpN9NHI4TgAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACPklEQVR4nK2WgXGDMBAE5Rk3QAu0QErAJTgtuAS7BFNCaIESohJCCVEJoQSikzn5ES9snNwMI1kgrU7/D96b1zQ+8cxOG9wCjJDP89k459SHbN+HtnNu1KDPAEdCpMqynP3GBgDjRip/9be5M+gj4JiCIrAojRvuLiWM0qBrwAUMEA3adl32iFNoDjh+HI+rjtLfUkVZhXZw/eKeBgwxkzHC4mVVmfbSxrG6rkObugPMTqDa9wGVLlNgcIYFDk3jz/TLuCnr0F6vH+ZyOYXf1toIVV3iGQ8jVHMYYHCWiweUQsuiwHGEOXRXmLwelgXixGSBSxwtoFLvp3d1rnRpJpcERnfYdeMXxnFa20Vo3IC99ev6GGHPuGMcZw4lbHd4i8WOcYpxw2bWyiGnCMREwADBYmd/dEgctE3fm/8SgDEzpeiEjik4l6peAEZ33z4ZtGJu2yb2JZzx2wwkzPa3WKUv5lPXzX6n9zcDcaSEQWlRI67MShwpM/ploJR2RMxSQv+iGZAwuEMfLYpcJkpaMi8Bc4HHOBKGEIhuZW1uBe580oyoN0h7IadQiLWZlsWgQOz95X3/WmABQjXHhIZZHox+pizUP0/UXj4Ep2ufHEAloPYbtMZsqsVFlvJ1JrWxBOT7e3HCKRBOC+/0Rw5q+chvIhQidIvTwdzDOoiW1wxYiOsg+jjq+QfQmPSFfplaLYdwuekaCOTipWg5DrVmXdpnUEvYhcPcw+pk5V7aT68IpG0J1XZdZOBrG5zd+wX2imjvuwE3zwAAAABJRU5ErkJggg==",
+    "slotMax": 200,
+    "price": 25,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

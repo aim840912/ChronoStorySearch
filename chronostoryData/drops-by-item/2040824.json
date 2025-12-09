@@ -1,0 +1,30 @@
+{
+  "itemId": 2040824,
+  "itemName": "Scroll for Gloves for Defense 60%",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 4230125,
+      "mobName": "Skeledog",
+      "chineseMobName": "骷髏犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5150000,
+      "mobName": "Mixed Golem",
+      "chineseMobName": "混種石巨人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

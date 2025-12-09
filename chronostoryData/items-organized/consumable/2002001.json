@@ -1,0 +1,27 @@
+{
+  "id": 2002001,
+  "description": {
+    "id": 2002001,
+    "name": "Speed Potion",
+    "description": "Increases speed.\\nSpeed +8 for 3 min.",
+    "chineseName": "速度藥水"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABjklEQVR4nK3Vi5GCMBAA0M0MDUAJsQQpAUrAEkgJUoKWACUcJUgJWoIpgZSQy64hl3iIYNwZzW/Mc5NFEwhD25bBF8NH9E9bUecgeu3NR4MT4gApFWB/X7U03mWZjoWSZ8C1vSDoPo7RUOJvrpSkNk05zaVSAuccYgMR1pwHfaz/NiOM124cm427eF60IAdhBzUURWEzfGQTAwUljNAUCNzouPamHwdNCBOHUtenNlhMU+8LmIFU6iPIz4R1jaDnAzEEuCkAKHNaHMyrGDUMGdsMPT/x9CHEjm0LSpTBIgIInTdCyYt5dhZCX65X6PPcTXKTnTTAcSOULKyxMs8DyFwJHWNvoW4ltIQEUGchrGpuoXol9A6ZhZRdIOjnAv0uW4TWIP8gzAarGzPqDiVUpxMMC9BaZDYjd3RNA0VVwe0FtAV5CWExDH0PeyPOQVuRWYguyUA3I85BnyCrID8+Rd5CqZdNDDILKa/ypohFAggDfx0woeI+0l/EtxAHYWfCECgf2bFvIbQZvk2YP/cL15AVGnmld/MAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABzUlEQVR4nK3Wi5GDIBAA0HXGBrAEUkIsQUvQEqSEWEIsQUs4S4glJCWEEqQEjiXoISf+4s4wfHbic5GYhDANafoATg4bkj91pgc5a6W1fgo6QCPCuQAcX7Nazy9RJM/AQhcZ+5Zp7N33p2ChDQjBdU8I1WuEc6CUwhmBUFBWnbwVfxfUIC3G+RlVjYeBJjXwjplJAUmSmEo/VX2LTY43YkMg8tJbd1Xj77EBClieyuJeT5KEWDehJlyIw5hdUdCUTH9/EESEqkMBaayTnWpJL6GLgkOY+2bQH0TwVtcgWDpJIoJYdQALPetBxZh8PJ/QxvG4SFWVXCG3A1i4kAvSOJ5g6hHpLW0N1uzAlqAJ1hgMTzw1WLEDW4NmMWESGvt5QHuJVrEt0D8Mq8KTj5U1eQrZ/Q7dCrYVmq1s3MayhCTL4LWA7YG8GB6Qrm3hqlQftheaxfRDU9hLqT7sCLQJc+MotIoRp6pvoFlMWCfSjq0QWchFCusRw8C3CBaWvHv98+KDiNP71txIFfbAwQAikn6qjGyIeJoPtWN4UZRajOO7lctVw/8IPLQuSq1+ayVzURlc2It2Re4d+ua+nDuetNAMOKxvEfGgSzc2jn8B0QIpjW2gBiAAAAAASUVORK5CYII=",
+    "slotMax": 0,
+    "price": 250,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Potion",
+    "lowItemId": 2000000,
+    "highItemId": 2010000
+  }
+}

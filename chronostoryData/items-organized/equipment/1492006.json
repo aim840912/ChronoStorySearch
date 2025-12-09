@@ -1,0 +1,39 @@
+{
+  "id": 1492006,
+  "description": {
+    "id": 1492006,
+    "name": "Lunar Shooter",
+    "description": "",
+    "chineseName": "銀月神射"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAXCAYAAACFxybfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB+0lEQVR4nMXWgXWDIBAAUHyvC9gRzAh0BB1BR5ARZAQZQUfQEeIIdYS4AiPYuwtQ1KeVts/ce9GoEb7HgXljAZEkyewfT9MUHf0Oru81tbgvCIHRdQ3TpnEh1exDbOePx+N5Qi8R4zjS/iMr/IeJghDYYVGI2WKauiKID+RJwmSRHbbzee8MmrP3220OzoR9csSUOV88dZZlhBj3h4HVAO/blr7zNKV9MMKPqu5YryR9HyDVdVOzIisOAZynTOeaKdUybs7/CoFj7zIAkZclayEL4zB+n8vzzX1SKreHNlzhBiMswGYAATgM2Omk6Tp9VNtv7q3KHIpzousYWutwhJ+BBMZzGoYFQKnnk0JR4HYzfQE2W4w5pt+dRvgZQADNgr4nQA97ni7SH+00E/kYe3wK4QPyqnYzAQtx6AcCmCzYzucDyAb5I2I9BASBOkCAFJKlZpqtOo9OQM4jMAQsPlhMVd2YdWAkAIZmcWgWwhCYBVwF4zhmI4y7MCsh55wygID/iF0EAlKeOMBkplMMS60w830ngoZiF2EBTdMwIYRbWBCwSr0fi5cSC4gNwg4Bjn0AILjjXYQPwJdMAOBP4RBrANbAFQCHsDWAbzhcB64EEMIVYXd368GVAELghmbBiwCEwH9Kt48M/iWlLwEQAjcIkao183y4FIDxBRZIKpPesVvfAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAbCAYAAADyBeakAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACPklEQVR4nMWWi3GEIBBAcSYNmBK8EkgJWoKWICVoCVKClqAlnCXEEo4WKMGwe0DwgyeXm8vOIIq6+9iffpAASZJkdq+FENHRc+q+T9XivSAIkL5vidTKWc1nF8QYv91u9wW5hJimCeevrHA3EwVBgMGiYLOBaZsKQVxAmiSkLrJDPd/XXkNT8nm5zMGeMDsHmDKni11nWYYQkz8MpFHgQ9fhOU1TnIMhXKmangy8xvNRubppG1JkxSEApSmRuSScd4Tq9acgIPbWA0rysiSd8sI0Tr9reb55r665nZUOm7jBEAbAeAAAIAxgVEi8j4N3w+bdqsxVcgq8DyKlDIdwPZCoeIpxXABwft+pSgo4bspXgc0GRl/jc6chXA8AAFbBMCDAoGaaLtwfedRELoy5PgXhAuRVYysBEnEcRgTQXjDG5wOQDeRDiHUIEETlAQDUrCapLrOV8egEyHkIEKaaDyRT1bS6D0wIACJJHOqFMAjwAnTBOI7JpOLOdCeklKIHAOAV4oUAgJQmFkDocopVq2W63j0SFAovhAFo25YwxmxjAYCV611ZfJRIgGwgTAgg9gEAwYa9EC4AfGQCAP4kFmINADnwDgALYXIAvnDQB94JgBA2Cfur7QfvBEAIOGAV/BMAQsCf0uUrU39JaQjAM11KeiHgACA173Sdjy5AvJp9a2cBpDOWEFrcncee4QPaM7i3DkPoYZ/b65jGYOLMrsGXhsIHsTa0VnCkUB6cr8chhHHZI7fHHqAj6N0N/ABRaUVgtPmubwAAAABJRU5ErkJggg==",
+    "price": 65000,
+    "reqSTR": 40,
+    "reqDEX": 105,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incPAD": 40,
+    "attack": 9,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Gun"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 40,
+      "min": 38,
+      "max": 42
+    }
+  }
+}

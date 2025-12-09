@@ -1,0 +1,37 @@
+{
+  "id": 1002021,
+  "description": {
+    "id": 1002021,
+    "name": "Steel Nordic Helm",
+    "description": "",
+    "chineseName": "諾曼頭盔"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNElEQVR4nM2W/5WCMAzHw3u3QFdgBR3hboRzBBxBR8ARdAQYAUaQFTqCGYFLAi2hlF/6z8WHllL66TdJU79gv7XBfbLn5T1AAV3yHKy1gHSBMVCXpVvAJvBWYFtVFVi00DQEAvQPvrNfue3Bq9AtwPb5fHYtYXUw+aa24V9SyuD6sQ5dA7av14vmxc6NPYxpRn64n4EIaZpCRu5+XK+L0CWgwLQxEGMjqROt4CEv7nA9nWehc8CWTBpO2aBOIXFocHfnCYR7VcD55xSFrsbQwTzUKJBro3OvlT5275zFgN6VqNS4tqGPdqzmo1dqSWVFKn8mKqMKjTFRlRNDGMdUYskhSAHi0Z4A44milYaLC/pcHNMUoSCVp0DlRKFTp0EaOALw2FFcuyfWNnSlYA5TlRo4qy7qzgWd+r1Q5eZaGoOG7hwGd4nDsUQzHuGAbVEUo2SJuXPO3FuovniLHA4wUekVhpn5nhkpc7JG7DeobKPBZoHb4xfYsCnlXeMSaw24ZjzeTTgUBZq7EylErq/cqePIQDnrYvHbIyj+rPsYWoWLoygsy5IO1ma0WudOqY+RRSzdY1+CLM3J7kwpe0yfWgLMskwKrt707pTghUyqTZDBuqhLmvRDDc3JMF3MfQyPx2PULbwYtrqudyeQrRu5WEiWXzwwIZgcfkvHypxtSTZeKB3KHsgmZYfc2MKCxRTuVJ2EpS08oWML2PU/NLR3/gh/ZP8PuLu0fQhMbrebjuNH8WP7A6Zvm2c+DnihAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACYklEQVR4nJ2VD5WDMAzGs/fOQE8CFjYJdxJuEpiETcImYScBJICEYaESFglcEiiEkvLnsscopfTXL0nTD9hvbfR82PPxHqCArvc7eO8B6QLnoC7LsIBN4K3Atqoq8OihaQgEOLz4yn/ksQevQrcA29fr1bWE1cHkn9qO76SUwfXvOnQN2L7fb5oXOzf2MKY5uXE/AxGyLIOc3P17uy1Cl4AC08ZAtEZSJ3rBw714wu18SUJTwJZMGkHZqE4hcWxwd+cJhGdVwOX7bEJXYxhgA9QpUGhjcK+XPnZvyizg4EpUakLb0U87VvNxUOpJZUUqv2cqTYXOOVPlzBCmMZVYcggyADvaM6CdKFppvLioL8QxyxAKUnmOVM4UBnUapIETAI+dxLV7431DVwbuOFepgUl1pjsXdOrvYpWba6kFjd05Du4Sh2OJbjoiANuiKCbJYrkzZeErVH+8RY5HmKkcFMaZ+T9zUuZkjdhvUNlGoyWB2+MX2bgp5VsXEmsNuGY8Pkw4FgWauxMpRK6v3KnjyEA566z47RFkv+t+jlYR4igKy7Kkg7WZrDa4U+qjsYilZ+xLkKc52Z0ZZY/rU0uAeZ5LwdWbPpwSvJBZtYkyWBd1SZN+qKM5GaaL+RDD0+lkuoUXw1bX9e4E8nUjFwvJ79cBeCCYHH5Lx0rKtiQbL5QO5QHIJmWH3NjCglkKd6o+xKUtPqGtBXzCPpusKFVLl/x0/AcslB2MgS66UkDrXcq3Acb7y2tggGTqbsVoT2bNPrYU6sGXx+PxVH23DRPH7cn1Eb30EZTb8QZNHYO48Dy0/wAwRbT0giCvvAAAAABJRU5ErkJggg==",
+    "price": 70000,
+    "reqSTR": 90,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incPDD": 40
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 40,
+      "min": 20,
+      "max": 60
+    }
+  }
+}

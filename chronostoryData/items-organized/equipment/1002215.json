@@ -1,0 +1,55 @@
+{
+  "id": 1002215,
+  "description": {
+    "id": 1002215,
+    "name": "Flame Golden Circlet",
+    "description": "",
+    "chineseName": "火黃金法冠"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACIAAAASCAYAAAA+PQxvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACG0lEQVR4nLWWjXHCMAyF5bssEEbICmEEOkIzAh2hjAAjkBHiEZoR8AqMQEZw9Sz/kqTQHtUdZ2Ir0ucn2VBRadaPiv7P7MKcqvJFeyGaDNHmwz2/CqZIbG8DkelouhJd+dO+c6ItWYBYNl5UDqLXRO8tkTYvgZHYEwe9djxSAQHTvYyiCDsGiD0TjsaBhN08A5PvuvTnDQLAjJx8SgCGv7c10WGUd+57BGWRyBcfdfsQxjrfyfu/JahhL/NQAJtrGtkoDJvGs/2SdwSEZau5HKb3AK3IqQ9ddFyBsQFYo6R7CZw/B0Ak3bUCBFWgiDFJIV8aJB9oOHdFFheIKIcpKS6Z73GQPiBRAElzNXIIQNFVyqK9kABRSHI7iyoSSZPalFCf/Dmi8dBdKPioUbbMkv/tTBEo7DgYIAIM/EIrzHpEgrugRSlOLMBOqbizN+9OC+aPv6jGajYZUCgLFNn0KUYEqZsAsdqYLBwnMOmZ1i2u3TdvKIsr3ZheSIrU9Iz9eHpW1uNc15M97kSRw6lcCyAKxxRO3EB/ucisr/dPPxFRGW3mi7MegXwgz6aehnJHt453T2EARfm1Xo6bgyioARAo42pJM6glK0Gn7Fg3Q7raSZps8R2aK6LyxAAC2M4fa3c71gJZNzG4K2V+UpJ19xOr6lYLc9HZ90thl08ZcUcEmEdJnrHqwfos+PZU3hGvsop+b/d3xEv+t3wDxUPxWv4CHkoAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACIAAAAYCAYAAACfpi8JAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACa0lEQVR4nLWWj3GrMAzG5TsWcEZgBTJCOkIZIW+EZoRkhDACHuExQrxCRggj+EmW/wIG2pfqjnOxhfTzJ9lpBbkZNwr4PTMLc6JKF80DYNQAhz/2/V0wWWLz6gF0C+MT4IlP84mJjmAIxKDhorAQnQL4bACUfgsMxx4x6LPFETIIMtXxyIqgo4c4I+GgLYjfzR6YdNe5P26QAPSAyccIoPHvRgJcBv5m2iNUFo78cFGPmzDG+o7O/yNC9WeeJwVoc3XNGyWjTdO7+cvfMAjKJrEcunMADcupLm1wLMAYD6yopGcOnL57QEp6ahiIVCFFtI4KudJQ8h76e5tlsYEAUpic4pH4XnvuA2AFKGmqRgpBUPDksignJIEISvK6syocSYE45FBf+Fyp8ai7qOCDorIlFv1fdwhAfsfeCMLDkJ9vhVmPcHAbNCvFDQU4CRF29uHcYcHc8WfVUM06AfJlIUUOXYwRQGTtIYqNicJhAh3foWxhbdq8viy2dEP8ICoiYY+tnp7CephrOzDXEytyueVrHkTQMSUnbKCfXGTG1XvtJyIoo/R8cdYjJB+RJ1O7oezRleHuyYxAqfxKLcdNQQSpQSCkjK0lzKCWLAcdk2Nd9/FqB26yxW9grohIExMQgZ3csba3o2RIWYfgtpTpSYnWTieK6lYLc8HZ9Utmjy8e6Y7wMFtJ9li1sT4Lfrzld8S7rILv2/SOeMv/LT8B8UY3zwH23kBs4/+AyMlYmtsLMSbPLhBZeEpQS0mX5t0vjX2CXwnEJ62TMU36HSW24FZBpsmmQdaCjit/T59NEC/fVglkAWoNfHET/wDt1gxg0sjfBwAAAABJRU5ErkJggg==",
+    "price": 40000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 158,
+    "reqLUK": 53,
+    "reqJob": 2,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incINT": 1,
+    "incLUK": 2,
+    "incPDD": 24,
+    "incMDD": 55
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 24,
+      "min": 0,
+      "max": 49
+    },
+    "incMDD": {
+      "base": 55,
+      "min": 30,
+      "max": 80
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "itemId": 1002289,
+  "itemName": "Dark Patriot",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 6400100,
+      "mobName": "Deep Buffoon",
+      "chineseMobName": "特貝爾芬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8140300,
+      "mobName": "Dark Klock",
+      "chineseMobName": "黑暗冥鐘",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

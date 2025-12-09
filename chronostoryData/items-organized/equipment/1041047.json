@@ -1,0 +1,43 @@
+{
+  "id": 1041047,
+  "description": {
+    "id": 1041047,
+    "name": "Red Steal",
+    "description": "",
+    "chineseName": "紅寂靜之服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAXCAYAAABqBU3hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACH0lEQVR4nLVVi3HDIAyV77IAHYEV3BHcEZwRmhGSEeoVMkI8gj1CGaGMEEagEgEisJ0Yp9WdL3YAvaeHPjvYZnbh/6rU0RYC9iIEKGOSP+nrfCNWRGKTAhrBBQM2sN1KCbjoDRJ4AFykQrECdV2DUgrRU/iR1vBRhf5KCNhByvghUAnwSrxiawnYoalB4s276P+QxBoCDryWNRitJ4uchIBymyOQ1PhP04BA6QlczxAwrCLIfB7wRMx7RpKgOQE71A2CKdijYwKXwwDQ95hlI6ogowqcDJFo8Rd3OTKMBFDVaK/Q8QLwtk+rZKKAUiNIIfy7gr56XFHh/jWkVcDfHfj37f2akeAE7BU3de+MDDIfocx4g3LfmDugxjvLLGMnCpADkuyIvx0+7QrQcBkhaqpWKlgS8gPBXes+YCJ/TsMJBCxJow5450IlfV7ANLtN9i79nqUmRCrQ1cL5ll8tnup9okYFVHdbzA0HDHxlwHPlFtYa36u6rGAor4hE3jMigQCuffTsfHXyM0AvNB3j95MHdT84KUM5M0WJgCu9QOJZVxMwHUIBHOaHUIV5EMubzpNIvmztLgDnDvvUYYV9IaoQ7JVRHKaKI6BNmRuuwpPoo1GQOkvuSKDFjncex+jwP4znDw/AEaCOV6O8NOu101VDr+epSJaMJbpRkMH3yHwTgXi/QYW1kZRYMsbxOTECEEhkZ/I7nduztHeyvuT/F3ACFV4O8qydAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAYAAAAdx42aAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACcElEQVR4nLVWi3HkIAyVZ9IAKYErwSnBKWFTQraEpIRsC1tCXIJdQighlLCU4JMwYgU2jnHuNMMYG5CeHvr4AY7JVPje1Co6AmD6VAqMc8lHervOwKpAHGLAonElDDs4LrUAvPcOAWwYrmKhmoG2bcEYg9ZT8yOt4TCV+moATIPW8UUhExCY+I3sBTANXQsab957/w9B7AHgjbe6BWftYlGCUFAvawCSHP/uOlBIPRm3KwCcyAiSEAcyEPOakQRoDmAa2g6NGXhBxWRcDwNA32OUjciCjixIMATihE/c5cEIEEBZYwNDb58Ajy9pliwYMGYErVSYG+ib7Yzi+7eQZoGce+Nf8/yWgZAAphtuujwJMIh8hDqRBcq/Y+yAGe8os4hdMEAKiLI3fF5wnHYY5ctgrylbKWGJyGc07kv3GQP5dekOA5iIGnPGO1cmqfMKltHtsrkOe0pFiFigq4XrHF8nPNWHQI0MmMu8mAs2GPjIDK+lG691oVZdsoShuCIQec2IANi4Dd6L88176AG2UHRc2E8azP3gIg31ShclAD71GMRPVU3BsgmxcVhvQg3GQUxvOk8khbSdHthwrrBPFTZYFyILLL9pxdxVPADr6tRIFn7wPgo5abPgjgBOWPGu4xgV/g+R8SMd8ACo4rVIL/V663m10Nt1KFoEYw1v5CTrHoVuAhDvl1nY60kmm80waeM43gUAYBDZmUYopecf3PNd0P8McyEsyROe/VrRn5RiGUScLSobZ0g95XknvpVu5gz3khHvYO1/gI1p8ZTGjvx3FMOl9EckjeSHt2LPbczzUQTANK1RnYMsVeY9oLz8BaDTKxr/GhyNAAAAAElFTkSuQmCC",
+    "price": 22500,
+    "reqSTR": 0,
+    "reqDEX": 60,
+    "reqINT": 0,
+    "reqLUK": 80,
+    "reqJob": 8,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incMHP": 20,
+    "incPDD": 26
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incMHP": {
+      "base": 20,
+      "min": 5,
+      "max": 35
+    },
+    "incPDD": {
+      "base": 26,
+      "min": 11,
+      "max": 41
+    }
+  }
+}

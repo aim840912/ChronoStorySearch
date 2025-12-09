@@ -1,0 +1,45 @@
+{
+  "id": 1462016,
+  "description": {
+    "id": 1462016,
+    "name": "Golden Neschere",
+    "description": "",
+    "chineseName": "金色獵鷹弓"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwklEQVR4nLXYgXWyMBAA4OO9LpCOwD8CjiAjyAjtCDqCjPA7go6gI8gIMgIZIb0LXDxCEkDbe6/a2jb5PO5ytB+wLkzgtQzejDUI03Wd+0IphY83yLLSvAtZijD3+x3atrVfFKrExx1KdmDM9W3IEsQIsFUVpQFAX/rvIuTdmENMARi61aByAflDxARAn+Y5jCF/jHCAXCNA82v9M2Oyz5N9YnhkqWS9xBDmfD5D0zSwy2v7wuYb4HEtMAONw+SgobsCfJb95lSkz3dQ2WxVB+yhxuGCmGgmCMBBAFrgX9mYCSSn3v3qC5RrBJ8ZYHEPIDF2EQS7aLY7GBD7vioEQBQqAa53gHJD2vQeIYS7FHVdRwGYYtjvh8L0AGXVF5AF0ALlOsQ6AJ8RXquej88C9jIZLFyJWAS4XJokQHMbQfBSJgtzEWASEQBl4dbA4vhYC+A60HAEBU9ECHDEmj2cXEdEJ7DNhGzHRJhuOAYafYW2ucGuGKffz8DXrv+gc8S2McdwKXnwuZoQWUhORAvA3egY16L1fMC2EPpHYM7YCWwQkplQi0YhrXrOErk5RQjAh5nM1mjwqa19IkSGWfCvlw9xw4wu3X5bg7TEMiCRk8FHpyrWFSN4Uz9GEAbQLIkBaO02cDoSwJ/AlFUewnPHtoVQ9+S4AiFoMZFdt3lVpxe6/xdwfQZZULM3NQSoqgpbcw9K16MxcDhNwNF1RgCC45vabOy5niVvajgDDBn6funGbh3OQghAD8n7CfphrgUBWHNDayiDeABgDYQBMcQEQJdBAJbeWVtAURR4CXsAZXOI0e8HM0GAy6XvZQ+wFOIAqc1jCJsFAgwnaCxSEAeY2zyEiA2y2GZyKLmf9QCL6mdulM+lfXSz8gpAIl4BuN7vOwBeAkgEz4+lgNHm7wAkQv5y7A8YP2KDb3Ws/f/EBAK/ED8a/8ENj4UtyAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADDklEQVR4nLWYjZGyMBCGl5lrIJbAlYAlSAlSwl0JWoKU8FmCloAlSAlSAimBbzdk4xKSAOPcziAnyO7jm/2J9wXbbAhcy+BD2wIx9H3v3iil8PUBWVYOn4KshRiezyd0XWfeFKrE1yOSHGEYmo9B1kBMAA6qIhkA9H28iyCf2hLEHABNdxpULkD+EGIGQH/mOUxB/hjCAeQaATRfG88Mk+2u5sTgEVfJfIlBDLfbDdq2hWNemwv7X4BXU6ACrYPJQUPfAOzKMTgl6fsbVEat6ow11Dq4IExUCQJgIwBy8F22wwwkp9r9GROUcwTPDGDgXkDEWEUQrKLF6mCA2H1VCACRqATQPAHKPdGmY4Qg3FLUdR0FQInhdLKJ6QGU1ZhABoAclNsgtgFwj/BK9XZ5J7CnZDBxJcQqgPu9TQJoLiMILmUyMVcBzCwCQCo8WlhtX1sBOA80XEDBGyIEcMGcPV9dRUQnsFFClmPCht62gVY30LUPOBZT+X0Ffo7jQX3ElDGbXUoefC4nhArJiWgAMBq1cS1Kzwc4FIL+FZgzZgIPCJINoRKNgnTqPUtkcLIQADczqdZk8KmDORFEhir46+WDuGFGS3c61CBZYgpIyNngo66KecUQHNS3CQgD0CyJAZDvLtAdCcCfwKQqD+Gltm1AqHpy9EAQ5Eyo64JXddrR858A1zeQCbW4qSGAqqqwNE+gdD0ZA+frDDjqZwJA4Pil9nvT17PkpoYVYBBb92sDOz+sQgiAXpL7Cfow54IA2LKhHUhBbACYA2GAGMQMgJZBAKzdWRuAoihwCUcAUtPa5PmgEgRwv4+17AGsBXEAqeAxCKMCAdgOGrOdBdkF7vUMIILT5zREbGmUUyXTz65vMBs0Y7zFLu09/pus8QD4Oj+rxTGD8AF29sGXdVSI4HKfz3KZ0eYBnO1zbBy8s4cDcUp4AMoCVMKRD+HG4lgBIAFqDza6FBKC5wcvASugAg7cew7uAfwGAuvAMYMAeGcur7NsjqGfWiWCN961fQoaIoqkOubCRt3Yx/+bIPsP4XvacfmeB7oAAAAASUVORK5CYII=",
+    "price": 450000,
+    "reqSTR": 100,
+    "reqDEX": 270,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 100,
+    "tuc": 7,
+    "incPAD": 98,
+    "incJump": 3,
+    "attack": 4,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Crossbow"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 98,
+      "min": 93,
+      "max": 103
+    },
+    "incJump": {
+      "base": 3,
+      "min": 0,
+      "max": 6
+    }
+  }
+}

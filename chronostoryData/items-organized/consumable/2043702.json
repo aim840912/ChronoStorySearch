@@ -1,0 +1,30 @@
+{
+  "id": 2043702,
+  "description": {
+    "id": 2043702,
+    "name": "Scroll for Wand for Magic Att.",
+    "description": "Improves magic on wand.\\nSuccess rate:10%, magic attack+5, INT+3, magic def.+1. The success rate of this scroll can be enhanced by Vega's Spell.",
+    "chineseName": "短杖魔力卷軸10%"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAYAAACgoey0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACpUlEQVR4nKWWjZWjIBCAx/euAa4EtgS2BC3BlJCUoCWsJcQWKCGUEFqghJ0SOBhAUfFnb3kvAQX55o8Z/sDvm/3B2ioN/ge8AH2/uzDA0DHOwpi7P8NgGHpo25rmPm4qfVtdBU8w+/6aKXljsUc3x30foKIWwBgDVj/BWoTh9gG9BHsFbAnGDWlAUMYCgIBRw+m9H5vZAl4iJgG1hHGcNz0DRyhG6KwVJiX9OIKN1m6MTksNSob1aDRIDe4dQF0zkBJPwfb7dZ80xQiJapBGyeBJDDIp/RxcCDBGgjZuzLkTxDgTTy664mPjeHz2KkZdce3n7BnDN86X0x4JmAaHYKUkCAK0KwYGLRHKjS2eqtKSPbB9P2vylVb+KOwRoCgA+tjC/W+OwNO2i81ZQQZWeM/gtO2Bq8+Hsq8v4SJROZOL8uZYfneBe565cDPYec4E84J6N3nBm1775LPx8zGYBX+drdloDsnP+x8fgrXSIO4FyJQeC8AIU+o4wI7Alc+pPhGE6BZ5xthpSAmEZHS9qA0lj2YwG3NfKxKbADo4Kln0Y26dVbsATmGKCyGSGX0RwEzTNEfFAffNfQaumt7YV8fJbEqxCeZBftO6jVmNC1eBFDSPUIK6Fg7P1Y8uAu29y+yXaRKht36EpPioEJ7iGrh4hbF0w4i74aoWE5QTtB9G4CsNteZwGyjKd8+xJYCT3NWyLIByzdZVidHRYVSPfembqYyMgA58fJxmKJ3BctUJ9dhExXHqtZSblQgsHvGTcyzlCG33XGiTskOAhH5ZicLNgztT161wgadDwqnDnLN+qsf7ZbFtMz8mSTHBILMCFo+wcncbD/eteeh8qghN4Kr67Omaw/x1xee6BWAeu4QPu22eq+BCS8FV/W3GKxfzS5teaf8Ah+x0GdFmj7YAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC30lEQVR4nKWWgZmrIAyA4/e9BbgRuBG4EXQEO0I7Qh3hOkJdgRGOEcoKjHAZgQcBFBXUvsf3WVJQ/iSEhD/w/82+8W6ThH8BL0C/r3sQMHSMsyBz92MYPB4D9H1Lc58Xlb5tzoInmH19z5S8sdijm+O+D1DRCmCMAWufYC3C4/IJgwR7BmwJxg1ZQFDGAoCA0cJp3Mtm9oDXiElALWEc50WPwBGKETpbhclIL0ew0drJ6KzUoGR4H40GqcGNAbQtAynxEGx/f66TpRgh0QyyKDk8qUEupcfBhQBjJGjjZM6dIsa5eNqiM3tsHI/Pu4rRVlzvc/YfwzduL6c1EjAJu2ClJAgC9CsGBisRyo0t/jWlV2pg+3q2tFda+aNQI0BRAfSxhfVv9sDTsovFWUEHVhhncNhq4ObrpuzPt3CRqJzLRXlxLI+d4B5nLtwIlf+ZYl5Rv01e8W7QPvls9nkfzMJ+Hb2zsRzSPtc/3gVrpUFcC5ApPRaAEabUfoDtgRufU30iCNEt8oxRaUgJhHR0vWgNJY/uYTbuPlckNgG0c1Sy6MfcO6t2ApzCFBdKJDf6IoCZpWmOigPW3X0EbrrB2J87J7cpxSaYB/lF2z5mNS5cBVLQ3UIJuvewe67eugj013vmv8ySCL0MIyTDR4XwFOfAxSuMpRtGXA1XtZignKDDYwS+slBrDpcHRXn1HFsCOM1dLcsCKLdsXZUYHR1G9diXvpnKyAnowPvHaYbSGSxXnVCPTTQcp15LuXkTgcUjfnCOpRyhvz8X1qTsECChX1aicPPgztVtL1zg6ZBw2jDnvJ/qcb0s9n22j0lTTDDIvIDFI6zc3cbDfetuOp/6gHJNI3DTfA10zWH+uuJz3QIwyy7hQ7XNc102KmAZJFOSTcHVfHTjmYv5kMmlU4oRVhr3j4kP5sepgbms86zPIRzeb8UIKyWQ3JKjKlybW8vrZwNO7sjhJZcWA+ZA0cXcX41Vj2pjayfpAAAAAElFTkSuQmCC",
+    "slotMax": 0,
+    "price": 1,
+    "incINT": 3,
+    "incMAD": 5,
+    "incMDD": 1,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Weapon Scroll",
+    "subCategory": "Wand",
+    "lowItemId": 2043700,
+    "highItemId": 2043800
+  }
+}

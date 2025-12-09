@@ -1,0 +1,45 @@
+{
+  "id": 1372003,
+  "description": {
+    "id": 1372003,
+    "name": "Mithril Wand",
+    "description": "",
+    "chineseName": "鋰礦短杖"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 28,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABOklEQVR4nL3W0XGDMAwG4N93XaCMkI5QRoARwghZIR6hXiEj0BFghGSEMEIYQZVMMZCHJGA5esA+684f0vl8/sD7guTzDtBD9Y1QZSY5SGjYs85jHCYlGLC6OTJo/WIqkBq68dCj/DmG6lKB/xjQ9h1Q5gFLAS4wly0xbfAppgm+hGmBL2Ma4CosFlyNxYCbsK3gZmwLGIWtBaOxNSBRzVAk9gykMGGs42tx5zK44dLfhD0Ch4r2QwstV3U45fiKxB6BxlSCZrDF2S9oYPcgzRNyQDpuoVR2OpyhFSNI/s1x4VnbhqRAckCuyOEUwQmz07altNCVMjXcTqk+up0jiMpxVS2LxfeUKQrMylLBAhgwRmoe9p/Ab88/Av1YnNIRSxkCGlws1fykGyuTmL+0tEG/MQN0l1PHJP4A4oitWAx54H0AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABdElEQVR4nL3WgXGDIBQA0M9dF4gj2BHqCDpCHCEZIYxQVsgIdgQdIRmhjiAj/H5QUDmrETD/joBieP5/nMcHvC9Q/bwD1FDVIZQJOxxEqMnjQmMU7EjQYlV9I5Drm0eBWGNHnYTi+2azOwocMIBGtgBFZrEjwBkmkjkWG9zEYoIvYbHAl7EY4C4sFNyNhYBemC/ojfmAQdheMBjbAyJWBAViWyDaAWEtfRZTkYDoP/pe2BrYZ3TuS8gpq8s9g89AbA1krFRoAjx/6BsxMBfE6YTaIC2VUGV2vzwgVhgQ9ZnjSaOmsZMKUhvkFzIQEcER4+OyhSqhKNSQUTlV9sHlNCCUgrJqSMy/xpk8h0laUTALWoyQirrzCeBH0ovMnz15rC+XwSEM5kQ6wfagctKbpkEGT44VHelMZiqGk9aVWu5AS6iE5TBQOzRpMkwI6JyH1bZJV5CtWHyJaUmzYWHTNv+8MOeO3WZBk/ZW6U7/4HLlejb3B9eax9gQYtQyAAAAAElFTkSuQmCC",
+    "price": 19000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 85,
+    "reqLUK": 30,
+    "reqJob": 2,
+    "reqLevelEquip": 28,
+    "tuc": 7,
+    "incPAD": 27,
+    "incMAD": 43,
+    "attack": 6,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "Wand"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 27,
+      "min": 26,
+      "max": 28
+    },
+    "incMAD": {
+      "base": 43,
+      "min": 42,
+      "max": 44
+    }
+  }
+}

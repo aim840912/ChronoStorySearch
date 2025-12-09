@@ -1,0 +1,43 @@
+{
+  "id": 1002073,
+  "description": {
+    "id": 1002073,
+    "name": "Red Wizardry Hat",
+    "description": "",
+    "chineseName": "紅色法師帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 20,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAaCAYAAADWm14/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACy0lEQVR4nLWWgZXiIBCGx/euAbYEWmBLiCVgCbEELWEtISnBlCAlHC1QgpTAzgwDoq6auHf41ISE/B//MEP+wL9pqTleLRn4WwAW/tKaT0KMMMaYlkD8BiANJKwUC0f8+jce8i5AGkyH2goinsTguJN8WArxDoCIa5y155krIBD6B+gRakkY3nJAScwVZAjUZAgKBTWLHdNMiKUA6dTvIIRstFYGjNHsAoEQVogAOTDz2mIHYgj8JRcizxjFEahIapUh/gdAOnaWxQsIaIFqAeW/wzC4GWFY5ECsH+AFB7EecStr4Lr3eZsLkKjYhDJ7EqKVJyEAgAVRfw8gx5ziX2ZZIEA4xJl6P8xLyTkAXG5DI15ae37xYr79cwBSOlO57WH7cbi6MJytKE9sAbFs1hfpAvOqJrx2QHX4tBGGv5Ru0qVFuKSBKB6Ha4e22wx0PgJ8bOBHiGcAOHuVRVA5Uu1RIk7dygpErACV2SZwbg2299CZ58vzhQMGvyJ+I3LVrsRPMLktHNwAJmwwNAFs9xjiKcDhM4BH9WFotBDmsCcbaAdkK3gxUnQ4BJHEj+C9w7EdHO1I9lNbtAaw6vW48h1LUCwHiW8Wp5Kbhbno4LHG4w3fh9BuYrDeGui65SFg8dbXAsErAn+0NmxtudZKeK+g0wH92YHVey4VBn/8fSakFqC+053sTnY3EZBiU9Y7ied3gZivlWooLowjpugXOTBx9/pT8VhzKUrcJD0ZIPWqzd8obzqqFppylfqVkneBnIt59jcFartXdZxqxpOOJBNIRmcHcNfKMeWTiS90xrLd5ITKiizq/FRjf4GG6lKFbaEhb1ReSjbkkNDJigBWSJPKTlYyLqBQJ7MtNd95zw8Y4+OFZeXeIlwaTTDIPulEvDoAP6QI7eU05LLtQiv8cHOhsts3GXLzzLvxz+rAamoWzSvh9p7xftzD8d/ZHYJwp+8U8AAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAYAAADLnm6HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADDUlEQVR4nLVWi3XjIBDcvHcNkBK4EpQScAm4BLkEuwS7BLkEqwSrhKOEUEIogdtdFowUW5acu81TzEcww+wH/YJ/Y7Fqv61Z+FMCDHzUmjs+BDiHENeQ+AmB2BGwUgwc8HEvbPIqgdg1BrEVBOwEP/Ag6bCWxCsEBFzjqR2fXAERoV+AFkmtccNLCijxuYJEAjGZBLmCzOJAv5DEWgLx2u7B+yS0Vg00jWYViAjR8gEgOWaZrVYgeM8PqRD4xAiOhDKkVonE/yAQL8YyeCYCWkjVBOXXoBuGBW5YpUAof8ABB6G02HIMjEfnbSmBSMXG59MTEEWeuAAAVnj9NQLJ5+T/fMpMAoSHKFPeh2UpuYQAl1tfgWer+zctlsu/hECMX1RuW9i9n0YT3ZcV5J4lIC7bzQ06k3lWE54roAzudobuD6WbDGkBzmkgiJdurNBulwh9XQDet3CXxBwBPL1KIIgcqPYoAadhZYVEKAQKZxthGDZgWwemmQ/PJwo0+Aj4BGRkI/Ar9MMOTkMHjd+iazxY85jELIHThweH6F1XYSGZ04FkoBuQpeBgJO+wCwKBX8C5AdcauNgzyU+2Kgaw6rUY+QNDkC878W8Cp5KbgLnoYFtje8vvIemhZ2KtbcCY9S5g8FrXTIIjAv9p3bC0ea6GcE6B0R712YPVBy4VDf5z3zMh1gTKN93V7uV2EwApNjneCTx9C4Q0l6uhqHA+Y4oeSYGehzcfitc2t6LEJunJBGKr6vwN8qWjSqHJszSulHwLpFxMp58UqN1BlXWqWk84kkwgGZ0UwFsr+ZQ7PU+YxrLcpIRKiAw6uL74/kYaikqFbE0a0kXlpGRDcgl13ojAG7KJ+SbLGecRyMhpc80fnOMNzuFxYFl5NwNnowN6uScHAS8KwJ0UobucltyuXaiBP6pDjgz9em2rDJnsmZsF71Ea0ua/cbPPyfhO5kz13tQOSPT4YF+qCB6q5LlHIMeNlgW6Gq/dPGenSb++LEc2p0C9GGb6j+am7enzkABNZpnuEarH7pGZI/zt/b8gSJcn9LcUcwAAAABJRU5ErkJggg==",
+    "price": 4000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 62,
+    "reqLUK": 23,
+    "reqJob": 2,
+    "reqLevelEquip": 20,
+    "tuc": 7,
+    "incPDD": 5,
+    "incMDD": 25
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 5,
+      "min": 0,
+      "max": 15
+    },
+    "incMDD": {
+      "base": 25,
+      "min": 15,
+      "max": 35
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": 1002185,
+  "description": {
+    "id": 1002185,
+    "name": "Dark Pilfer",
+    "description": "",
+    "chineseName": "黑海盜頭巾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAYAAAAAwr0iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACDUlEQVR4nL2WgbHBQBiE72Y0oAVKoARKoAUlUAIlaEELlEAJlEAJ9+w/2Zt9v8hLXJ6dySTC3f/t3n+JQShXeh7x08F9ABRB9AIwmUzC5XL5CKIUIKF4iUoA0mKxCLfbDe6/CoCoA50Ph0P/Xadl6AqQZrNZ6FNtAbLrx+NhN0aj0dcAkovZRJBvAORiaDgI7hWg2oa9A1js6PTD4ZBBCLHZbF7AZFzrRnwHkLQwtFwu7TO7H9er1coX7wxRB5Du97ttLxbFGW5xhvb7vRVer9eWBJaEIF17wwPkJxuLYUIcbES/DBC+U4gSAHOHaOkEkx+PxwzFZcFvKN2akkSrZVCA7J4T+sKA0y2Ja6ZTBxFa9MLbXYBJsbUYM671QUThcx/vAnNPd9vt1s5wwxRYiNFr0ev1Wjs5kpjP540pvCQAxwSAptOpRY+zikVPp5MddcWhqqfeQgAgPRVijLmbvUsUR0Ht8vF4HNoIW7UBIg2UltdcZ4DRZRVn/h2Xy7+UdC7Ms9vtDEKL+gTi002CQ7qiW6SiYkJNqnseAILF0Wv60Mo9gOJcV4KwAencd3zdW5LS3UJz+C+B8YCs5onWA1gj3PTrisIYrF2uE/vG9GKSnJfNqiYsAZDhRz5iHex1Pp/tqAPT8do3TpEA1gM6SOVjZqG/3DfoV2MN9Gb1/P714ilUp3fBC8h/FqZ+AANrbO2oFmDuAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACO0lEQVR4nL1Wjc2CMBBtExfgG0FHkBF0BF3BEWQEHcEVXEFH0BFkBBih8i685nIWPhDiSxpA6L2fXsGFm47QDP/t5DkETBIxi4D1eu2ez+dXIqYKCCCfgikCwm63c2VZwv1PBSBqR+dZltl7o5ZhrICw2WzcnBgqILqu61p+WC6XPxMQTMwCCvmFgEiGhgPgXgtot+HsAiR2dPr1eo1CKKIoig9hat7gRuwSEDQxsN/v5Zrdj/PD4WDJR4tICQhVVcn2IimOcIsjcLlchPh4PEoSWBIKGdsbVkB8s5EMBTHYiHYZANzTIqYIEHeIlk5Q/Ha7RVFcFjxD6K2pkhi0DFpAdM+Clhji9JbEOdNJiXADeqFzF6AothZjxrl+ERG4nuNbIO7p7nQ6yRFumAKJGL0mfb1eyeJIYrvd9qbwkQAcUwCQ57lEj6MGSe/3u4wUOdD2VKcICAgNnPc+drN1CXIQ6i5frVZuCLBVe0SEhVbLc64zhNFlG2d8jstlP0q6Fuqcz2cRoUltAr5xE+CQrugWqWgwoT6k3gcQQXL0mn5pxR4AOdeVQtiAdG47PvWVJPRuoTn8l8B8iGzreOkBrBF+tOsKYkzWXa4L28a0YJKsy2bVJiQBKMNDNmI92eLxeMhICdPzdd8YeAqQHtCTNGzMJPrPfQ/+UIYX7AHfFg+adIZ/PYU6r9uBiEuKsC8iCMka4moiMdue8XU66foW5O1kDl2sD3XPuR2dAnCzNIQp8sylndU91x/PvwEMhYB+ajcN2AAAAABJRU5ErkJggg==",
+    "price": 30000,
+    "reqSTR": 0,
+    "reqDEX": 80,
+    "reqINT": 0,
+    "reqLUK": 110,
+    "reqJob": 8,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incLUK": 2,
+    "incPDD": 27
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 27,
+      "min": 7,
+      "max": 47
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1372009,
+  "description": {
+    "id": 1372009,
+    "name": "Magicodar",
+    "description": "",
+    "chineseName": "聖權杖"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 88,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACC0lEQVR4nMWXjZGCMBCFNzPXgJSAJWAJUIItYAleCVgClnCUYEowJUgJRwm53YXFgD+nEOKbYQg/w355uxvgCz4nK4NPQHDwoiigrms4Ho/BIPpZ53kOcRwzAG2kEBB2nwOYOuXgBNE0DQNorem6CuIExobtVsP3IeXArgukIBBJglt6ga1ZQ6Xbc+JCOAgEgGbNMBgeQdLB9TCFiQDGAG+UhSTWoANCWPuLnkd3r6kQEC6AenbjUhAvAywF8RbAEhBvA/iE4GV5CoAvCJ49td8UAB8Q7ICsAVM1B6J3YJP159524RUIeQWre+ORA5MA/oOwKFxyFeXank/ti4jGvhy4B2GdcfvQFqCvepufcbzBryHoXkbzAVyIdtbyVKUs76Kr7awyAZOVkP/sJnfCMwgJzrN2Rcc0cxY6A3s8zvZwPh0oHRY8OtEGgMEbr8/97rtjjCRlByhntORjCICBC1L5XfFxR1h76b8NnPPeIJR0gGhU+W6nsOhe3+mwCZb7Jrt6nHTlb4y5ASiLeSvkIwgOSj8kGJS/hOWznHUF4FljjbgLlxcIS8FXqxWD0J4AqqpiIHGhk9fgLgTPmH5MKKjrBAsBxHpKA6lzwhsIQ7jW36TCEbWqgPhUXxMUWFwQUXpUZLgTaPNZjGMIhfm30g2UFhLBmDaq6lrRlf+aoIdSK9LADKerRvtF9AeRNh2ICu4bpgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACR0lEQVR4nMWXjXHCMAyF5bsuEEZIRwgjwAh0hDACjBBGgBHKCM0IeIRmhHoEV0+JjQkmhWBS3fni/Fz06UlynDf6P7Nu8h8Q4ryqKmqahg6Hw2QQPuqyLCnPcwHAgE0BYTclkW4W4hwQxhgBqOsa99UkSrBvWq1q2u4W4jhUATYJRFHwWHzTSr/TsW6vORWmg2AAMu8Cw+4ZZHFxf5rCZACtSQayUOQ11RNCWPvDms+i99QUECGAGnrwVRB3A7wK4iGAV0A8DJASQpblMQCpICR6tN8YgBQQooBbA8baMxBegfnSX3tYhXsg3CdYxeY9BUYB/AVh2XjJVci1PX21HyLMUykQg7DBvH1pC+Cr3pYnns95N0Tdx+h5gBCijdq9VSkrh9lZdrF9QXq5p/JzPboThiCcc4k6NJwjcjFWhjZ8vtzQ6WuHdFhKqETrgC6+eD73623HOHMp29H+iZa8DUF0oYKr/K74pCOs/fZ7g+B6MgjlOsBZr/LDThHDs6nTYQsu9/nyrHHRlb/W+gpgXz23Qt6CEKf4IWGnshN223KxM4BEzTUSLlxJICycZ1kmIDgC4Hg8CpBTobOkzkMIiRg/JnAaKiHGAE56pAHWKRHfOd42MwgRSn+VisDQqg6EraD7zQRHQz0gXxNw7FTwXjg9aqalEzB6xQiIbMBh7DpG0w3/HCAU59+6bkBaYIDRrdctt2LVeyHW0JzuNzN0068TaEVM9GW4H9RGu6Z41EPO+vP+uIIQkGCe9ZzGADKKR2gGzqOK/AJVKDVIeHZaygAAAABJRU5ErkJggg==",
+    "price": 325000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 265,
+    "reqLUK": 90,
+    "reqJob": 2,
+    "reqLevelEquip": 88,
+    "tuc": 7,
+    "incINT": 1,
+    "incPAD": 63,
+    "incMAD": 103,
+    "attack": 6,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "Wand"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 1,
+      "min": 0,
+      "max": 10
+    },
+    "incPAD": {
+      "base": 63,
+      "min": 59,
+      "max": 67
+    },
+    "incMAD": {
+      "base": 103,
+      "min": 99,
+      "max": 107
+    }
+  }
+}

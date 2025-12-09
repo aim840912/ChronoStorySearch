@@ -1,0 +1,55 @@
+{
+  "id": 1072114,
+  "description": {
+    "id": 1072114,
+    "name": "Red Moon Shoes",
+    "description": "",
+    "chineseName": "紅月鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACLUlEQVR4nJ2WgZWDIAyG8b0uYEewI/RG0BFcoR3BjtCOUFdwhDrCdQQZ4RyBI0jSmAPEy3t9IkK+/IRAD+p/ZhLfilDnXpADGOM580wfZt8+nk4YxAq4B2QQMGsdHfQzTRxIsBwQqUBADASqqvOZgBy2BTIwoawq51y/36osyz/Oefs9jqqy46WlQEmIBNRtu+qXqpOKQpAgAL7ZNofwcSmQwaQChDtGB2/b393vQYgMaFMRTgA1eyDaPmHOt1X7NQxuQ2Rtbw4AO8POSigBiAtuj6JzXav+8fi8W0h9uZBTnnTIaemh/fWqWjsWVUVBs5cPk7vnMySTnMt5AKnQh/8eAxWnpjHT67VEKWqHG4H8MgKk9uO1fR+HIQki2MuqgQJEh1xByfL0aBqnoo4EtZkjqhMfNd8AYABQHsCDgGUb7W/wQW+BiuJ4dEsIS4IOV4EIAJreW0du0u2mLnb3xUwWp1STAzKT3cqUH1Aj6meJ5FNDbtfZeuOQLRBBCLB4W593GZAYyN0/ExYl1AKcBBEAQpww+wxBJGi54Fhx0vHCTgCZDw4dEzcvgowDwPLgDvInA/0vYP3y6AGLLVlI0eLMX8WYdEx0ycdAn7+rcu1AavBEhskM4CywhHvUkCJ3tPsolXSUcanlKlJD36sWtrIsvAQA+3LUEEgz2JZjN973jztzVDy0Np1dNoCRs8BgHXCcowZBCmHQ6MQBqSNRD5/mJoSDaAICMywLgPYL1WjNVwC+1I8AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACYElEQVR4nJ2WgXGrMAyGzV0WICPACLwRyAhZIR0hGaGM0IzwGCGM0IyARygjuJKxFKHYBqo7LsbY+vTbkp2D+Zu5zLci1rkX5AHOBc408YcptI91TUEsgHtAjgCTtclBP+MogQzbAmIVBEiBUFXVNAyUsDWQwwllVXnn9vk0ZVm+OZft5zCYCsZry4GyEA1oz+dFv1adVRSDRAH4DdoSIsflQI42FSHSMTl4Qv/18zMK0QGtKqIJqGYPxMIvzvkGtf/63ifEpvSWALQGMyujBCE+uD2KmrY19657vQOkvVzYqdx03NMyQO8fH+YMY0lVEjQF+Tj5+vUVk8nO9TyEVOQjfE+Bivp0cuPjMUepakcag8IyIqQN4y28D32fBTHsAWqwAMmhVFCKfepOJ6+iTQS1ukdcJyFqmQBoCDABIIPAZRvg6UPQa6CiOB79EuKSkMNFIApAZvfWkZ90u5kLZF/KdHFqNVtAboRU5v1BNap+5kheNeSzDupNQtZADGHA7G153m2ApED+/hmpKLEW8CRIAAjihcFvDKJB8wUnipOPF3EC6P2Q0CFz8xLIeQAuD2VQOBn4f4Ho10cPWmrJYopmZ+Eqpk2njS7lGOwLd9VWO7AaOpFxsgB4iyzhHjWsyB/tIUqjHW241LYqMv39bs6YyrrwMgDqE2qORqwwDnkDWQFbc+zHh36VZU0EMtGDoKKz1l1h2RDGzsy72cj+BDU3BZIQnGQRhHJrgPl/I1d1QNpEZvWvZmeWSyYVsVF640A870sA/jfb7KYc6vbiOZiXPIqqjkRIwcTSbcq8c/sXiLflKDXESJUAAAAASUVORK5CYII=",
+    "price": 30000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 128,
+    "reqLUK": 43,
+    "reqJob": 2,
+    "reqLevelEquip": 40,
+    "tuc": 5,
+    "incLUK": 2,
+    "incMMP": 5,
+    "incPDD": 15,
+    "incMDD": 7
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incMMP": {
+      "base": 5,
+      "min": 0,
+      "max": 25
+    },
+    "incPDD": {
+      "base": 15,
+      "min": 0,
+      "max": 35
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 27
+    }
+  }
+}

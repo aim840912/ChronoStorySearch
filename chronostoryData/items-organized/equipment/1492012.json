@@ -1,0 +1,39 @@
+{
+  "id": 1492012,
+  "description": {
+    "id": 1492012,
+    "name": "Concerto",
+    "description": "",
+    "chineseName": "死亡協奏曲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACIAAAAbCAYAAAAZMl2nAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACZklEQVR4nMWWgZGjMAxFPzPXAFuCKSFbQlKCKSGUACVACaEEKGFpgRJwCy7BJ8nBQDa5BMLuaSbjMdjR4+sj8wf7hLuO0dY/2AsEzjlEUeS2wuwGwvmHBkjSbersBUJiiCjgn2kD0Ajj7u35CZAAc1VF5kopARgGIxcsDbb3i2fKydpdQMaE5dmgp2RaAT2U8wAOp9rg65wg7QZc4gQZjUOTyFqOtIDbChKehiDCE1dpjL63aAaeGQIYCIAq0A84ZQOanGAqgjkmOFUNjDF0rZC9W0Acm8GaSGRW2oQb59LKyAAkiSSMPkq60qI8VvhMG5zVJ5KsxEWnqNCEvZsUYTOwF5QWLpGeBEBD8jNcV/jEaZbLGEBVhqLz1+o2R04w1mwHYbe7OQTXn5/cHiB1H5PrY42itYvNpZ7AGIbXkIW3lsZDfHQdDkYJxCWmArTxNfEi+eI1pfve2Loe57LmFZBFDxghWAmGkHKQElwG/SD5TURzoHH+DOTGmBMEl4Pr255K1NaKxHFssSLWNTQ2ZkPG1/kEwcb0bwNwwASR1SHB6jPnGYh0R50vG5N0yLEcS4iwby3Mi2b1EL0ywZjzcsyUADao8RSE1RgGaZOiBB9mfe7PDG3je0psjocgHoJLEkl71p03ZUznSNdzLwjGHMtwO3/fIyOEPysSadUpNZ8J4luSezCr4hvIpISTNsme4DfjHxCbkz8EWSoRkRJ4psRuEUDuKcFvR6zsj0MEkEdK0NHxKxACMofQVYuoeNkT+4L4wYkS/wtCQOhzLUqSxH3R0cGfbQc1ffziF0MUEZj0vT7wbvwFXyFfRIUjnV8AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACIAAAAeCAYAAABJ/8wUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACrUlEQVR4nL2WgXGzMAyFxV0XoCOYEdIRkhHMCGEEGAFGCCPACGUFRsAreAT/khyMoRCCf1rfua4dw/t4EjIfcE4zzzEKvcFZIGCMgSiKTCjMaSCkPzQASRrmzlkgaAabAtRV64BGGLN2zW+AOJinKzwXQjDAMChe0Djo3m72nOO9p4CMguVdQY9iUgD0IIwFMHCrFXzfE0i7AR5xAhmOQ5PwXmppASYUxD0NQrgnrtIY+l5DM9BMIcCAABiBfoBbNkCTI0yFMNcEblUDSilcK/jaEBBDyaBVxDYLqdwP91LzSABoCQtGnyWutFBeK/hKG7iLL0iyEh4yhQoad22QI5QMlAtCMhdbjwZAg/YTXFdY4TTLeXSgIoOis2t1m0OOMFqFg1C2Gx+C4k9Pri/AcR/F5bWGotWzi0s5gREM7cEUDg2NhfjsOrgowRCPGAPQxk/hmfjsNcXfbWLLepzznndAZjVghCAnCILDgU5QGOSG+KJFPtA43wNZJOYEQeGg+La3Emqt2eI41nCgHStolJgNJr7MJwhKTPs2AFxggshqJ3D4zNkD4eoo83lh4go5hmMO4a47CvNmslqIXiiXmH44PCcAAtzYBSE3hoHLJDtBh1mf2zND6njNieC2CWIhKCQRl2fZ2aSM8RzpeqoFLjHHMCzn/58jI4Q9KxIu1SkWnwnih8gazKH2A2RywnCZpJygN+MFRLD4JsjciQidgD0nTmsOZM0JejtioX8dwoFsOYFHx59AMIgPIasWouLtnDgXxA6GnTgAEQdovTyIPvBzLUqSxHzj0UGfbRcxffx6gr7w2tq7ENrrcxD6wzDzr+pP7OIp5vctqDXRtXXq6tln+/zXdwzDKCq80Rc9PSxLEL/5YsubvLqpfvH/su+CjPbthSDegHoFvvkQ/wBl/3oeTNJbMwAAAABJRU5ErkJggg==",
+    "price": 450000,
+    "reqSTR": 100,
+    "reqDEX": 295,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 100,
+    "tuc": 7,
+    "incPAD": 74,
+    "attack": 9,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Gun"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 74,
+      "min": 69,
+      "max": 79
+    }
+  }
+}

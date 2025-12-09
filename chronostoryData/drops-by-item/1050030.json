@@ -1,0 +1,41 @@
+{
+  "itemId": 1050030,
+  "itemName": "Blue Chaos Robe",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 2230101,
+      "mobName": "Zombie Mushroom",
+      "chineseMobName": "殭屍菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3000005,
+      "mobName": "Brown Teddy",
+      "chineseMobName": "褐色發條熊",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3110101,
+      "mobName": "Pink Teddy",
+      "chineseMobName": "粉紅發條熊",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

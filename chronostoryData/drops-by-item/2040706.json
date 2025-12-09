@@ -1,0 +1,74 @@
+{
+  "itemId": 2040706,
+  "itemName": "Scroll for Shoes for Mobility 100%",
+  "chineseItemName": null,
+  "totalMonsters": 6,
+  "monsters": [
+    {
+      "mobId": 1110100,
+      "mobName": "Green Mushroom",
+      "chineseMobName": "綠菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 1210103,
+      "mobName": "Bubbling",
+      "chineseMobName": "藍水靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2110200,
+      "mobName": "Horny Mushroom",
+      "chineseMobName": "刺菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230101,
+      "mobName": "Jr. Wraith",
+      "chineseMobName": "小幽靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 1110100,
+      "mobName": "Green Mushroom",
+      "chineseMobName": "綠菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2130103,
+      "mobName": "Jr. Necki",
+      "chineseMobName": "青蛇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

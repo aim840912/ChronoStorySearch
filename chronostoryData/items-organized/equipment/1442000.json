@@ -1,0 +1,39 @@
+{
+  "id": 1442000,
+  "description": {
+    "id": 1442000,
+    "name": "Pole Arm",
+    "description": "",
+    "chineseName": "鐵戟"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 10,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTklEQVR4nL2WgdGiMBCFl5lrAEvIXwJXApYAJUAJWAKUACVICaQEUsKlBFMC/+4SEBzBxBOXUTCT+OW93ST8ge/HYO/Bt+FDkcWglAap9PBN+Aw2xnDDt+ArsNIM/4rtCE4QrFZg+joavgk+Gr4LPhL+EnwU3Al8BNxW9Wvwp+FPl9PegE/Bh8wT/Ck4g7Un2Bc+HwjL36xYKm7wAfvAh2vXg5QS2qYaSGFR1lBdclb8DtgVPoMpoiSDOIqhaiqIsxpkk0/9vMAucAYrNYI1Kq6LAlq0OY4TnFC7BR4Wz28ttRGMio0Fd3WJiluEa1QfghDxPLEl8N/tBiIMIQj2zXDKOYGTJEGwpJcABktlEIBpKEpoqsuQoSNCROATL+ESlfVdx2ClNUTiDg75E0JZX+f+SRJDiNf/woP0/HfA4BxrBJOVpDwSDz3pzSR0A+7CUcm9WNBG3jhwrxYoVVnLH/qvnvnCJptv9+2VwDcsFooWC61pNfycU6jLEtpWYoVPOaUSHKE0udCCo/gDOdf2BY8iihJA+6G+dqs+k15WHt5bfNyf4aS673t+Jpv1uGNNm0iQp+cx/+gAE+7iOYQQXBMUp9OJxzjDyT76A7KbuFTRz2LKseGbGXOM45a5N+b52C24rWrJiifwpHpzdCjscgNeetzZodAe4Svw3n5tbDVHlioW1rvavYSzato2L3m6BeU+FBEvtTU0TVOePPrtd6pRrmjGNk8vB4tFbvM8xwJsaaz3icZwV+gUpJK2WaP129AZ7gSmE2rMp7e1e/ELWER4BAOlX88AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACjklEQVR4nL2WgZWyMAzHw3suUEfojdAbAUeAEWQEHQFHgBFkBDuCHeHrCHYEviS0WDxQuFPi4wq91F/+SVrZwPrW+jFZG94e9ikYY0Eb264J78HOOZ5YCz4AG8vwVdKO4AzBZgCmP5+GT4I/DX8K/iT8JfhT8FngT8B9V78Gvxs+up2eLXgXvN0vBL8LzmC7ELwU3v8gxM+sWBueWAJeAm/PlytoraGpTy0pPJQVnI4FK/4NeC68B5OpbA+pSuFUnyDdV6DrIvgtAs+BM9iYDmxRcXU4QINpTtMMA2qmwG10/6ut1oFRsfPgS1Wi4gbhFtULkDLtA4uB/243kEJAkjxPxqyaEzjLMgRreglgsDYOAViGQwn16djuMSNSKlhiL+EalV0vFwYba0HJO1jwJaCszr1/lqUg8PNXeJLvvls0rrFFMKWSlCv54ElvJmIe8CkcldybBdPIBwee1RKlGp/yB//BPX9wytd7/vFK4Bs2C1mDjVY3Fr52OVRlCU2jscNDTakFOygFJzxYpW+oufUveGRKZYDph+p8GfgEvaxc3GeWZL+Hk+rr9cr3lGbbnVjhEEmKfNfVHzPAhLt4Nikl9wTZdrvlNbPhlD76Ako3camjxyzU2PHguhrjurj2zo2vnYL7rtasOICD6snVQvrtBrz12LlrNJIeF2A0ml55DI7Oa/qSwcZyvpuVp8oI4dO9w0sNltxHFz0znFXTsXks8jD/5SNXfjyTD5nirTaE5nnOwWO+jw/gOAA+pf3FAWyoVhSxr1NIl4zGgcmotkVRYAM2tLb2U2O9PtkAGw8NdRXwolakko5ZZ/nN5Tjh+3j/eHVwGDZUSE0cABc56epJqf32/x9T5J48//D/DytskuAqzcKQAAAAAElFTkSuQmCC",
+    "price": 1500,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 13,
+    "reqLevelEquip": 10,
+    "tuc": 7,
+    "incPAD": 32,
+    "attack": 2,
+    "attackSpeed": 8
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Pole Arm"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 32,
+      "min": 31,
+      "max": 33
+    }
+  }
+}

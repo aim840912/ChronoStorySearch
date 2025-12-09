@@ -1,0 +1,19 @@
+{
+  "itemId": 1041026,
+  "itemName": "Yellow Arianne",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 1120100,
+      "mobName": "Octopus",
+      "chineseMobName": "三眼章魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

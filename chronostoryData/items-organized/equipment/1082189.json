@@ -1,0 +1,101 @@
+{
+  "id": 1082189,
+  "description": {
+    "id": 1082189,
+    "name": "Yellow Tartis",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAaCAYAAABGiCfwAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACZUlEQVR4nKWVgXXjIAxAlfeygFZgBW4EbgTfCOkI7Qj1CPUIZYRmhGOE0wqM4CKBbLBxk1yU0tiC6EtCiDM8L/Pm/XS08BmYQP5+OIj8kP7FGOHPGBS+g/4PTIx9vVt5IRIUIKKMz1cr0JeJdtBHYAsE0RRVlI9GxUOh74MBSu/TNc4KvAdW0jWIETa4CoLBBOJBDEuRRhI9lhUXhwvwJ5hA/n1eFkULqpESHJhEJsrrSOdwXXcEmwWiK0uK+oIlmiw1UDxAdWUPy9F8vWYzJsPYFtYubuCG53AtFtURtOsU1qasLBBIAvKIpLo1ilqoFEeTgfQ4BXlfCmTe70sp5/SJIUeEVivQLM5A8Zw6KWZ92KjP9WSMJBhrnYSlYPE4BACtsWovVaTkAUv556lAa1QLjChIvm3y3hiToQwXnc1nSfMqhk2OKNCSQmvyvu2PRxvZ6fdbmLntoLECUiMCKsWgBkRHbfrYUWcRbsmSRn8NMAwoIDYyOJcNUk4tA4bBtfD09+ZJDm6sCoQ6+9XAsod7kJazgmqdRsZlzumXZ5NTPObsNM1YYafRp5big7SlcfKivCQA76dzViAsuh0hPfhrOQ6QC2zy1+yY4ya9PyJ1ZOLFrxc/c1rEYGCQgbEYEQeSoSmlzlfnZ/Q0W20AJUM96bWrU2mc8tOPC+ixk1YUqAXpb6p7DDzs5g9hzcLqXoJq13u38eENfQv2kJF75ZHL8/ZB2ktzAHow3Hwf6e4FabONNQwPxhG4Z7inlwLloTA1bKrv2vDTKWTZRna08Mjz7dz2uRnnaoLgdrrWO/5nZ7oOfAMqKZkC6olqVwAAAABJRU5ErkJgggDbAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby02ZDQ0ZDU4ODg3LXhwbm5sIiwiZ2l0SGFzaCI6ImM4NDM1OTk2MGYyN2FjMWU3YzA0YjNmMWI1YTZjNTBmZTI2OWUxMzUiLCJ1cmwiOiIvYXBpL0dNUy84My9pdGVtLzEwODIxODkvaWNvbiIsImNyZWF0ZWRBdCI6IjIwMjUtMTItMDVUMTY6MTM6MDIuMzU3NDkzNFoiLCJtZXRhIjpudWxsfQ==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAaCAYAAABGiCfwAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACZUlEQVR4nKWVgXXjIAxAlfeygFZgBW4EbgTfCOkI7Qj1CPUIZYRmhGOE0wqM4CKBbLBxk1yU0tiC6EtCiDM8L/Pm/XS08BmYQP5+OIj8kP7FGOHPGBS+g/4PTIx9vVt5IRIUIKKMz1cr0JeJdtBHYAsE0RRVlI9GxUOh74MBSu/TNc4KvAdW0jWIETa4CoLBBOJBDEuRRhI9lhUXhwvwJ5hA/n1eFkULqpESHJhEJsrrSOdwXXcEmwWiK0uK+oIlmiw1UDxAdWUPy9F8vWYzJsPYFtYubuCG53AtFtURtOsU1qasLBBIAvKIpLo1ilqoFEeTgfQ4BXlfCmTe70sp5/SJIUeEVivQLM5A8Zw6KWZ92KjP9WSMJBhrnYSlYPE4BACtsWovVaTkAUv556lAa1QLjChIvm3y3hiToQwXnc1nSfMqhk2OKNCSQmvyvu2PRxvZ6fdbmLntoLECUiMCKsWgBkRHbfrYUWcRbsmSRn8NMAwoIDYyOJcNUk4tA4bBtfD09+ZJDm6sCoQ6+9XAsod7kJazgmqdRsZlzumXZ5NTPObsNM1YYafRp5big7SlcfKivCQA76dzViAsuh0hPfhrOQ6QC2zy1+yY4ya9PyJ1ZOLFrxc/c1rEYGCQgbEYEQeSoSmlzlfnZ/Q0W20AJUM96bWrU2mc8tOPC+ixk1YUqAXpb6p7DDzs5g9hzcLqXoJq13u38eENfQv2kJF75ZHL8/ZB2ktzAHow3Hwf6e4FabONNQwPxhG4Z7inlwLloTA1bKrv2vDTKWTZRna08Mjz7dz2uRnnaoLgdrrWO/5nZ7oOfAMqKZkC6olqVwAAAABJRU5ErkJgggDbAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby02ZDQ0ZDU4ODg3LXhwbm5sIiwiZ2l0SGFzaCI6ImM4NDM1OTk2MGYyN2FjMWU3YzA0YjNmMWI1YTZjNTBmZTI2OWUxMzUiLCJ1cmwiOiIvYXBpL0dNUy84My9pdGVtLzEwODIxODkvaWNvbiIsImNyZWF0ZWRBdCI6IjIwMjUtMTItMDVUMTY6MTM6MDIuMzU3NDkzNFoiLCJtZXRhIjpudWxsfQ==",
+    "price": 25000,
+    "reqLevel": 30,
+    "reqSTR": 30,
+    "reqDEX": 30,
+    "incPDD": 10,
+    "tuc": 5,
+    "reqJob": 16
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove",
+    "lowItemId": 1080000,
+    "highItemId": 1090000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incDEX": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incINT": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incLUK": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incPAD": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incMAD": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incPDD": {
+      "base": 10,
+      "min": 0,
+      "max": 25
+    },
+    "incMDD": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    },
+    "incACC": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incEVA": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incSpeed": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incJump": {
+      "base": 0,
+      "min": 0,
+      "max": 1
+    },
+    "incMHP": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    },
+    "incMMP": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    }
+  }
+}

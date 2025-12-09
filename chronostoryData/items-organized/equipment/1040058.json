@@ -1,0 +1,72 @@
+{
+  "id": 1040058,
+  "description": {
+    "id": 1040058,
+    "name": "Dark Silver Stealer",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "iconRaw": "ewogICJlcnJvciI6ICJPbmUgb3IgbW9yZSBlcnJvcnMgb2NjdXJyZWQuIChSZXNwb25zZSBzdGF0dXMgY29kZSBkb2VzIG5vdCBpbmRpY2F0ZSBzdWNjZXNzOiA1MDAgKEludGVybmFsIFNlcnZlciBFcnJvcikuKSAoUmVzcG9uc2Ugc3RhdHVzIGNvZGUgZG9lcyBub3QgaW5kaWNhdGUgc3VjY2VzczogNTAwIChJbnRlcm5hbCBTZXJ2ZXIgRXJyb3IpLikgKFJlc3BvbnNlIHN0YXR1cyBjb2RlIGRvZXMgbm90IGluZGljYXRlIHN1Y2Nlc3M6IDUwMCAoSW50ZXJuYWwgU2VydmVyIEVycm9yKS4pIiwKICAicGVuZGluZyI6IGZhbHNlLAogICJjb21wbGV0ZSI6IGZhbHNlLAogICJtZXNzYWdlIjogIkFuIHVuZXhwZWN0ZWQgZXJyb3Igb2NjdXJyZWQgd2hpbGUgcHJvY2Vzc2luZyB5b3VyIHJlcXVlc3QiCn0=",
+    "icon": "ewogICJlcnJvciI6ICJPbmUgb3IgbW9yZSBlcnJvcnMgb2NjdXJyZWQuIChSZXNwb25zZSBzdGF0dXMgY29kZSBkb2VzIG5vdCBpbmRpY2F0ZSBzdWNjZXNzOiA1MDAgKEludGVybmFsIFNlcnZlciBFcnJvcikuKSAoUmVzcG9uc2Ugc3RhdHVzIGNvZGUgZG9lcyBub3QgaW5kaWNhdGUgc3VjY2VzczogNTAwIChJbnRlcm5hbCBTZXJ2ZXIgRXJyb3IpLikgKFJlc3BvbnNlIHN0YXR1cyBjb2RlIGRvZXMgbm90IGluZGljYXRlIHN1Y2Nlc3M6IDUwMCAoSW50ZXJuYWwgU2VydmVyIEVycm9yKS4pIiwKICAicGVuZGluZyI6IGZhbHNlLAogICJjb21wbGV0ZSI6IGZhbHNlLAogICJtZXNzYWdlIjogIkFuIHVuZXhwZWN0ZWQgZXJyb3Igb2NjdXJyZWQgd2hpbGUgcHJvY2Vzc2luZyB5b3VyIHJlcXVlc3QiCn0=",
+    "price": 22500,
+    "reqLevel": 30,
+    "reqDEX": 60,
+    "reqLUK": 80,
+    "incPDD": 26,
+    "incDEX": 2,
+    "tuc": 7,
+    "reqJob": 8
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top",
+    "lowItemId": 1040000,
+    "highItemId": 1050000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incINT": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incLUK": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incPAD": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incMAD": {
+      "base": 0,
+      "min": 0,
+      "max": 2
+    },
+    "incPDD": {
+      "base": 26,
+      "min": 11,
+      "max": 41
+    },
+    "incMDD": {
+      "base": 0,
+      "min": 0,
+      "max": 15
+    }
+  }
+}

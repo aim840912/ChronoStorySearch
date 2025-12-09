@@ -1,0 +1,27 @@
+{
+  "id": 4000002,
+  "description": {
+    "id": 4000002,
+    "name": "Pig's Ribbon",
+    "description": "Taken off from the pig with a ribbon",
+    "chineseName": "蝴蝶結"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACM0lEQVR4nK2WjXGrMBCEjxkaoAVcAi04JTyX4BbiEvJacAl2CXELlGBaoARFh2/xcjk5TMLOyPwJfXvS6UwtZSU6r2RjlcApHY/TyXA+y+5pYjMD5YgzUNXmdrdbZmATeAROn/lnMCgf7xvCa1khhm8lD56i3RsEjaFbRc3gR0LlteXIFNrn1sm2WkbsoFDn4JfcDn+MGuCkU/hqDZvcrrn9k200R9w7SOs66vVocHr26/29mOqbHfdmhA3wbOiU3+n6N8kWbqebAZFYkML9VNPzJLFCQwBXmiwXeUbNWykSgNpfi+u7XbdWapGou0LN54gn+AfdADwCemPz2lupFbtO1J9rvp/q6mSR40XWjYzoUXOho2telo76Ytmwc94yY1FA8OMjHe14llidDbx3JtiU17yPS1ULL749TjlRkj5HTvgIIw0UxDNigvLaFaCLfoBj+w2ujxAQqn0H77gELZnwpkc6Pz27z8lV7axs+sHWAHVtETVHHEDj7bSzv0U4/t92j0GHflVlitY4gnrw9FBTXUuAVqimaaab+2wggFdnKjqI+qcEi8DTdvqwl68GHsdR2qGXkrBlAIdg4GRjnlw9rwG8yHcNt6s0ZdPp6OCHoJNCW/n+H17j5EAG/Bq9ErK4K5iHfACL5IIBHkAHjZIDwscB4Kpe4uilkNXzQ47+8ALK8IKK75U+b3n6f9xGUQZHCbUGvDCwBojzYIpD+KoP+pIp/IU62KpPoL+AJ63JgUhfdmfCMy6am9YAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACYUlEQVR4nK2WjXGzMAyGxR0LeAUYgW8EOsKXEdIRygjpChkhGaEZoYwQVvAI1CJ6QQi5zbW8dw42/nkkWxYpKa9R1QvaWTnwOB6PU2U4n6lejNjNgLzHCciqUrnLKzFgF7gHHj/SzyBQ/bzvCC/pCWn4XrLgydtWICgaupfXGvwIqHS22jOG9qk0tK/WHhso1Bj4JZXDH70GeOQt/O4MQyrXVP7TPpo97g2kMgO5HQWu+n59v1dbfZNnK4ZoA/Ru8JbfVfs3weZep5sAEVgQw+1Wq/6RfLkGAVxwsFxo8VpfJU8A8nhOrm/SriTVIlDrTM7XHk/wk3oBuAe0hs1nL6mWpD2q8Trn260uOvEcE7VuyhB+ciw0qq2PpVFjcWy4OS+JsUog+LGeRnmeyVcjC7fGCG2U1XyPc1kLE18eVR0oI/cjJqyHngblxOKxguqzy0BX4wDH9RvMGFJAqLQDrMU5aM4Ia3RU9W4ZPgdXUUvatIs9A+SzhdfaYwfqX6daPouw+L1qHosO/VOZyTtjD2rBUyeHOqcAzlAhhOllmwxw4MVZJR14/VOAeeDpOp1k8lXAMUaqhp5ywpUBHIIBnazZmXxeAnihrYbblULe6PFo4AdnEEMr2n7DS1QOygB7Rt8JUdxkjIesA6vgggF6AV7UBMdqDfw5AJzVk+89ZaJ67tTeywK1rA3oBp4RpwHcqijzYg4cBBQS9FPYrerbyItgCaiPx2OCccFnIFpwoCXzBZmU9bRy6s4Wsw2v9mXOY8imWN3uklUndRzQqxkXnbIBYzs03Nve+awE+u8JQ1d9XzQs2iDOCXwiAAAAAElFTkSuQmCC",
+    "slotMax": 200,
+    "price": 5,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

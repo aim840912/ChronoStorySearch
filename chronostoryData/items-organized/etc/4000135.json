@@ -1,0 +1,38 @@
+{
+  "id": 4000135,
+  "description": {
+    "id": 4000135,
+    "name": "Gigantic Viking Hat",
+    "description": "A huge hat that Gigantic Viking donned.",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADCklEQVR4nK2XjZGbMBCF5ZlrgJSAS9CVACXgEuwSTAmmBFOCKcGUgEowJYQSiN6GlVey+EvuzTBnsNhv/7TyfantGu11+Kl1W8Gj2qdV+J6If1RbwOPr9VLH43Gz0Wn9YtRr4NFKtW2r9ur5fKo8z2fhS2CC9n0PA0ptayxah2gR9RJ8DkxQCOB/VZqms/AY2IPujJZFUbOd+/2uLpeLBw/BHvR/ogXEiuxlWfYBl+AP6IZoV/frMAyUcly3202VZUnvfM0t3hDt2HVP9f2dL8KTJIk+Z7CLVkp6GELRtcPQR+sn10AyiOv1qqqqGqMRa63J06ZpJFw4VFjYKcyKtyYsGy5kUiWDFzF9gTqw8BlNgeEBR7quozW4r6pSnc+ZGnrrXGtUURTKGGOfnWkt3mWnPKgQg732l+kBCNGHNTetf8+1DNcxlMFVWRPPSzUg8FYuhBB5nn/b+tw8w8Z+zrLC3aM0HD074tlK3jYl+IAJg0lDRu3LcASGeEsgxZAOSgJnkGK8wxAvtYkfbQh2cDI+NZjU7Xq2UfkHBtZIOB8oWaHdmgnooDGw+9J6P2KrsDjFOrOl6AdqKqQZUETKAhzRto0JI1+f1WpGZVVTN8ckO5nvA6eXZ/Xj8aAPp9PJet3YlBWqrit7ynRuKxWZDo16Qvo5UmP+pj48paKz2g53GhIQQK/X7yigbRu6dKq956Z/px5OFLY8mPtyyn2MTAZgn6ZpQtEdj7+cIU0pHdxn1Jw1TM9T6wiv6UV3y4MiOjKRbqQaAhhGHver19F4ptM3TEpCjemVmWxKfYC5KWStXbRTdAxDZ6+J7fBg+gCjrjg5MG8Zjm0Sc0AaXBO2FxT+sADY1Rcjr65rqoN8EY6Epw0PCv7L76CZ5OCRh0U0YukdKzxRWIBhfuOCQThrG4ayxeKshUCsU9zVfCTyJc9QnkpsiI9LKdzbwx1bxUUvp5kAEpQjdr+D2QlcbASSDcIgVrC/DxMkNv2iI/Mw/csRXWgba2QHZDkYGvlRuOu/xaXFB+nA3Pd79Adtl0uSprSEeAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAhCAYAAADOHBvaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADLklEQVR4nK1Wi5GjMAz1zmwDXAmkBFIClEBKSEoIJUAJoYRQQigBlxBKOJfA+emQIxsHyN2+GU/AyHr6Wcq32o/Jrq+fkttLPKnPsEn+icc/ij3E0/P5VIfDYbfSWX7V6y3iyUL1fa8+xePxUEVRvCVfIybScRyhQKl9hUVy8BZer5G/IyZSAMT/ijRN35LHiD3SD71lkNes53a7qcvl4pGHxB7p/3gLEgvSl+f5glwSL0h3eLt5X40xFHKsuq5VVVV05vud8A5vp2F4qOOxWCVPkiS6z8TOWwlpYUiKqjVmjOZPygDSiev1qpqmmaIeZ1lGlnZdJ8mFQaUlO4VR8WTCtGEhkioxnsf0AXlg4BlFgeYBQ4ZhIBm8N02lzudcmdEa12tVlqXSWtu9M8niLBvlkQowsVf+MjwggvdhznXvv3MuQzkmZeKmaonPCzVIYK0UBOB5URxtfmpPsbbPeV66d6SGvWdDPF3JS6ck/kKHQachpfYwDIEivhIIMZAFKYExCDHOMIkX2sT3NiR25KR8LjCJ+nq2XvkDAzKSnAdKXmZOZiZ0pDFi99FaP+GqMDjEWW5TMRoqKoQZpPCUAXJ423c69Hy7V6s3qJqWqjkGWcn8Hhi93qvv9zs9nE4na3VnQ1aqtm3slBncVSrzLFTqAeFnT7X+G/pwSkV7tW3u1CQAED2fv6MEfd/RytLM29fjK/QworTpQd+XXW7RMpkA9zRNE/LucPjlFGUUUuOekXOGmfdTawjLjKK65aCItkyEG6EGQAwl99vVq2jsZemLTEKSaj0qPeuUWBBzUchcO29n75gMlb0F1sONaUGMvGJyoN8yOa5JzACpcAu4XkD4xwLELr9oeW3bUh7kQRgSThtuFPzLZ1BMsvHIYRH1WFrHCCcKA2To31hQCGNtwVC0GBy1kBByiquaRyIvOUO5K7EiHpcSeLfDHVfFeS+7mSAkUvbY/Q9mI7BYCSALhIkYwf2uZpJaLYEigTDyYLx5HBEkJltYNRsg08Gk85/CdlYKNEKPmZcHbyzOB9P5NxEHKmlABFWgPHwO1+IeY5PDwZDPR7EXqzyz8u59+wPuTV8N02ijcgAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -1,
+      "y": 33,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 33,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "price": 145,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

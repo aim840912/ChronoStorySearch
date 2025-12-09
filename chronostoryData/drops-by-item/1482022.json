@@ -1,0 +1,63 @@
+{
+  "itemId": 1482022,
+  "itemName": "Maple Golden Claw",
+  "chineseItemName": null,
+  "totalMonsters": 5,
+  "monsters": [
+    {
+      "mobId": 5100002,
+      "mobName": "Firebomb",
+      "chineseMobName": "火精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5120003,
+      "mobName": "Grupin",
+      "chineseMobName": "藍獨角獅",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5130104,
+      "mobName": "Hector",
+      "chineseMobName": "野狼",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6230401,
+      "mobName": "Jr. Lucida",
+      "chineseMobName": "幼黑格里芬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6230601,
+      "mobName": "Dark Drake",
+      "chineseMobName": "黑龍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

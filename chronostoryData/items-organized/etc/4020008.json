@@ -1,0 +1,27 @@
+{
+  "id": 4020008,
+  "description": {
+    "id": 4020008,
+    "name": "Black Crystal Ore",
+    "description": "An ore of a crystal that has dark powers stored in it",
+    "chineseName": "黑水晶母礦"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABoklEQVR4nI2VDbGDMBCEw0wNYKEWsFAkUAlFApUAFpBALdRCLWABCXnsTTez3CPQm8kAIfdl74dwCecW3XPxg084A8e+7+1mnmcb7/c7/gI/AsdpmhL0er3ataqq8Pl8GEV2g0PF9/s9dF1n98MwpPnb7RaWZdEN/m2SAycHBdIYAdRjE9y3bbtJkQf7QoWmaUJZllBng2DMcZ5RaP4VHBG2KsQzHAB4vV4WPqAwAKGYcLzLpkJfIjy9AuAN6zHvoQqOj8fDFrD6GFDyfD7NmUrVNNdY+/W1dOwqpoo1Z+ZEyJ4yrkfaIILtCLB9BFSkIX9bKuQMCs9SsYEyd3TacwT0KP8X/wL3/ABgSAcBuoaDOWYt6AdwgeZmOlQtnrEJ08F5KgYQ7YlWJJTFT6lgkdiTzB8r7w2RYBDIDTEXpCuKuq7t0FHVPnQtJt9rFOqjxSvWQ8dSom3n4SwalHkRVOvBNrkWIR2XNHaGb0W/udre6WbKAYcyhq6gjNKkNgfewHkAwfDZw3i67QHPwAmujuM4pl+V5nPPzv553tFqkFOp9gfRgzgNn1f1wQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB8UlEQVR4nJ2VgbGCMAyGy50L9I3ACqwgI+gIOoKOoCs4gq7gCq7ACI8RkD/H3xdiU/DlrkepNV/+JC2bsM4G816FL20NaLhcLjLpuk7G8/kcvoUtgYb7/Z4gdV3Ls2ma8Hq9qHIVcFHRfr8Pp9NJ5tfrNa1vt9vQ970GFqElUHKgATQqhDpAMT8ej25KcyBb+LDb7UKMEdHLIAhrXIcB6NXPggakSSvAOxzA4ePxkHQBAgMAigjDb559KNKbkQ79hMPcfqyXIBY0HA4H+QO7CwORns9ncUYl2nStsHf670f6XEWMcsy5OKFTL3LsR5oRlGr/BCNIDiUj1imaWthNCRR8m7oZhLmnk5wjQEr1y4L0Rsx5IGFIHx3qPRysEWuZC4qgCoeN6dNq8A4o08d1KgIAxwGtTwibyU0di84zwfyzs6xBKQYBDABrodB1Vdu2colqVTZVujn4u1bp1co2QzVeopJC3eYWxiZA5DaonJocSDaNRU2fBxo7z7Z+ScUSKCkDDJEzVdqxoySrpgSawXihwnBNwXh7LwHWgBJMO7rdbunT7tXjPyA6itOA/Yw1/OVcrVubnVoLiubprbXTs1mA9BwERWd4UDdys46BK6LbKKe1enpK1toHXCvyNpXu/74wn41N+JO3lKLoQEuBpfkbpS1SmggsMD4AAAAASUVORK5CYII=",
+    "slotMax": 0,
+    "price": 1500,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Crafting",
+    "subCategory": "Rare Ore",
+    "lowItemId": 4020000,
+    "highItemId": 4020100
+  }
+}

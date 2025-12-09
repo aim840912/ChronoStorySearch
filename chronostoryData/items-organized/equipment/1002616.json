@@ -1,0 +1,43 @@
+{
+  "id": 1002616,
+  "description": {
+    "id": 1002616,
+    "name": "Brown Double Marine",
+    "description": "",
+    "chineseName": "褐色水手頭巾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 20,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACzUlEQVR4nJ2XjZGbMBCF5Zk0oJSgK4EWcAmkBCjBLuEowZRwlBCVEEqIWlAJnJ7QCv3jZGdsGCTv93ZXWosf7H3bG2M39h92BffAx9BXJ82rDIW9LaQG3wnIBWeccz+gtT6uSvtnobBAyKWIEnyHM9GJ6CFBySAqGndiSIgT0RSQwiNwCkxBLYOfKwEhfKc0A4pUh+n2YIy5qK9EDH3HVrlVBWRpLwEJms0tiFBunjB+8GkJIPhluktREtxmS51QCFCBj974lZvKBPjIASaolBtrWSdEVVAooFU+DxeuzgT9/edvNEltsZhp+uXvQ8eitkbM81L0gO+PcWDrKj1USnmCVZ6FYRyNs94L8Sl2GSERgGqXgWrkBCZo34fdrN7ZlmW2QsjmefYiQiDEiUL0vuYAE/Tj4ydr2ev15RhdlOr+qzfOpRUhKnUOzcIRNepqoa2t6/xRzcn95+fLiRG2HOLV2TkkgBZgKsjCAb7f75dKU2HaKZiekxPCjZBPFNtmJxRQMgtflqUO5KydjUiXZk8jhESEAij6DB46iHTWRPP0Np0IEU9718oA4Ld5Wcx2G9myrqVwIlIZVlf3nCYrAGUV5z+hXfEUuRUwmv0uV8mKdr1447n6vEIATJmOiDaO9KPfh2m/Lct6CMB+r9T58EmDp6Isq/y8Uqmxz1XQdNJ/NSvg8Rhduy2LONeGu7vIyqaUvdrtZq6m0VhW6SRzm+flOEY9ju61mcm+zTreGbu50/ytsiDt6vhl3OFSAfgiEbDBdD8C5v0eqeRZ6l2EYZ297xY8EgFb5XlCDXs/hPAkbIJidQ9dF9U5tH85t3shUsrkDK/tYiIwIkWdlW53p3fg2csCjkYwWkgEDQ1gHDooalpkV/AIFp7JyRFBkdL57AtwvNN8gNf4RFQ9w3lwCpuTpoPxLh7LnJYWV8myfZ68+mQOGq9Guxsv/q5k36c5qzsZRnzOAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC60lEQVR4nJ2Xj7HbIAzGyV0XoCOQEdwRnBHcEewRkhHiEcIIzyM8RohHKCswgoswwuKv0+ruxY7h6fdJApn8YJ/b1hi7sP+wM3gA3oe+OmleFBX2sZAafEMgF5xxzsOAMWa/ahOeUWFEyKmIEnwDZ6IT0UOEooGoaNyLQSFeRFNACo/AKTAFtQz8nAmg8A3TDFBINU13AMOYj/pMxNB3bFFrVUCW9hIQodncggjt5wnrB/5aAhB+mu5SlAh32dIHFARo4qO3ftWqMwEhcgAjVKmVtawToiqICmiVL8CFrzNCv99/okl6jcVM0+9wTx2L2hqxz0vRA3y7jwNbFhWgSqkDrPMsDONonfVBSEixzwiKAKjxGahGjmCE9j3tZvXOJuXshKDN8xxEUCCIE4XoQ80BjNDr9Sdr2ev15RldlOr+q7fOlRMhKnWm5uAQNdTVQVtb1/vDmqP75/PlxQhXDvHq3BwUgAswFeTgAL7dbqdKU2HGK5gekxfCrZAnFNtlhwoomYNLKetAztrZiHQZ9rBCUAQVgNFncOog0lkTzdPbdCKIeLi7VgYAfpmltNttZHJZSuFEpDKsru4xTU4AlFUcb0K34jFyJ2C0+10tihXtfPHGc81xBQFg2nZEaOOQfuj3NO0XKZddAOz3Sp13nzh4KMqyyo8rlhr2uSZNJ32rOQH3++jbbVnEsTb83UlWVq3d1W03e7WNxrFKJ5nLPMv9GHXfu9dqJ4c263lH7PbO8I/KAmnX+3/GHS4VAB8oAmyw3Q+Beb+HVPIs9T5CWufguwWPRIAt6jih0t4PQngSNkJhdQ9dF9WZ2r+c24MQpVRyhjduMSEYIoU6a9PuTp/Asx8LcDQCw4WEUGoAhkMHRo2L7AweweiZHB0hFFI6H30BXg7fOB/AS3wiurKkWRePzhQ2J00Hxrt4LHsjkcV1Y403Q7bPk58+YL/oFzv+roy9/Th+v5Ixk1yLcCeAtXctOk0jqp1AqpH/BShBsf25pF5BAAAAAElFTkSuQmCC",
+    "price": 6000,
+    "reqSTR": 20,
+    "reqDEX": 20,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 20,
+    "tuc": 7,
+    "incMHP": 5,
+    "incPDD": 15
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incMHP": {
+      "base": 5,
+      "min": 0,
+      "max": 15
+    },
+    "incPDD": {
+      "base": 15,
+      "min": 5,
+      "max": 25
+    }
+  }
+}

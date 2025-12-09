@@ -1,0 +1,49 @@
+{
+  "id": 1041079,
+  "description": {
+    "id": 1041079,
+    "name": "Brown Moon",
+    "description": "",
+    "chineseName": "黃月"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAYAAAARfGZ1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACfUlEQVR4nI1VjXGzMAwVd13AHcEdwR0BRkhG+BghHiEZIR2BjAAjxCt4hDKCP0m2/BOgre4SwJafnh6SeIOfLcDv1h1t7IFnwPDEP3MFcBbWBUD15dndALQBeLcNgSbQ2yugMQbWdQWlFLwPHr7nCGSma3RIgYZFAVBAVcDwXBOIwEMI8eAwLOC9B601P9P147xyMP35SACyF1GJBO2TPS8ON/DGI/IZQpEFGXmv2VkOJTaczasJIPkRiemEwU9XWG8WHl+1LA/LEUWO+qD8BFD25Sq+BEwECTglxeAdpRAmaBjPd8xt9ZwimBWGUTeM6wz4THoXBDy4onl0QpC+7zP42SrWl5kvlHoLvHdfsy6yYBQqqctF5w15saouhwNg9vEt6xq8OXS/a0LHVDFPo2G89Xn/VZa87jfLLTixJRuwvuOtTpWyNsElSP2MmYvlRqrBu2VZQl0hFIx+Nciezf0KqQ12O7Rx1FgdKsvvmpS9K/eyvifJHniHDLBhEVn/y4vKf2UUQ/JXoBRsj/Uu80iWThfASHnLkoCPWB+C0wFFaFgpPAXJ6L1iBkrHxiIfmoqE/dTMPsAvmofnCaLeJklDkkin1olU2lMQePyBOY3SGUvPQJJGtFcxiEpTj2JLoI+b4imJldWwr8GDtP9IJTh6rByP6VqgbEZvkjawW5o8lrGj6wANc6lvaXszYWl0FswFE7iVwVVPSblOxmPW+7KEb3xv1m/nCBu/VLcBlbFLwM5Jj+RPX5mK9H280xwZo5DzdcFZzFS6rrP8tZK9eubn+AjqXLNUpmL3SZ+7NLRwNke2tnHOe2IvzcSx49pGc2ZYHm122u4dWlPn/wGuknU2RyQE0AAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACzUlEQVR4nJVWjbXqIAxOz3EB7gg4Ao7QjqAjvI5gR9ARvCPoCHYEGeExwmWEviQQCpXa+3JOLeUnX74QPtzBZ5tg25pfzIEaUHI+vfDHXADsAH4EUO38ba8A2gB8DUUwq6AClCYbY8B7D0op+Ooc/DyDU3O/hAkRtBsVAIGr2RmuWwUloGmagpOuG8E5B1pr/qb3/uQZWB8e0ZmMBQQKiMbJXmeLA9hwiHLi4JscKEXqnOaF4iBGySyXJs5pHgV0P2Igxwv46wCP77XUPQaORFKWO5FHnMu4vGUugVCwBKJVHaghmtMdCibPG/L3jtMAxkPX64JJzozXxL0jkM7y0NsehQXosG3bBHQaFO8HMxopPSVIrb3GJgdqqEzPZ50GpCiUel+5BOE5bp1NwSh3cLtpQsJ0YC6Mhv7apvFl6lK/g49WABELsg7PT2jqWHG+CEQA82/MiFj10OZAzTiOU15pBExP7rBmz9ZDPGabylAs0lhlKm2XLdLi7NyW/q201YAajAyFAlH0n9Sp3HfyaGi7MgAC3mJTAwpmydPsnK0SPYH8hs0qEC1W5BkrjtWajGoCmSkdDjHNIfUmnJdmVoW2bQFNryOE/TExfZQ2UYicYLZXBAiP/2RE8v/EcjYQ0yd7pQKgiupMcQjo/qpYzbFCV1nlQJNIUE9l3TusQIcpGYBY9o7CDipeK3e+SlBJ1sAKRnJ+RHrMHUusGcCckdh1FtVczeV9Nw6zsZ266Qf3fHArisgFYd8A5KogEGvlDKbrva7e9H/gRrrWh8Q/LyPeHxxi0zQD38Iylt9ZKRYEsBZWLal3c6ArPQoq3i2BBQtYul7TmNji4HIcoe8Q13l5BIhyssfI/85e2GGPD2nBgGMX2DaJos1AGH4XQeih3T7FN2R9snGVfwKBUNZWlT623WJCbVJdst/Hlu3i2cFMLwerlZ9aAf0UWGr/Awwcj3aGZdELAAAAAElFTkSuQmCC",
+    "price": 75000,
+    "reqSTR": 0,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 140,
+    "reqJob": 8,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incDEX": 1,
+    "incLUK": 3,
+    "incPDD": 42
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 42,
+      "min": 17,
+      "max": 67
+    }
+  }
+}

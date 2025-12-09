@@ -1,0 +1,41 @@
+{
+  "itemId": 1072142,
+  "itemName": "Purple Goldwind Shoes",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 6400000,
+      "mobName": "Dark Yeti",
+      "chineseMobName": "黑吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6400001,
+      "mobName": "Transformed Dark Yeti",
+      "chineseMobName": "變形黑吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6400002,
+      "mobName": "Separated Dark Yeti",
+      "chineseMobName": "孤單黑吉拉",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

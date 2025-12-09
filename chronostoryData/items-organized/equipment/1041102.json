@@ -1,0 +1,49 @@
+{
+  "id": 1041102,
+  "description": {
+    "id": 1041102,
+    "name": "Pink Mystique",
+    "description": "",
+    "chineseName": "粉紅朱雀之甲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 70,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwklEQVR4nJVWgZWrIBDE99IAKYErwSvBlHCWEEuIJWgJSQlpIZYgJRwlHCXwd0BwMei/2/eSEFh2ZpZl9STK5uhTHayVrOTvSuslUOee5NG+AfsAUso0oZRKY611BKii76u5+4nm2mXxykqbG21Q4jJ1iWld1wgsrLUcKI0jGVp38/WFQSBWt2LsrjR6JN+d9DYUxHqmre6ToqZpkgcHN8ak8c8wL3NEdBBi/Li+Rd+CukHCaSKGX7SRAuugAiARiINsDXuUkgQ4EaBdskCkV45lpdV5FG4eieYzqYrAsKh8Cx7PEMA1m+9M78PugnJWPIVhTWbzAH9TTWv1rRXnj0AyZC63LWhFrJwPbkLgJx0MP1duHDCq9IQYj94+MpVFpdHOnRTft07oKaZs/xxhWptwlk3n98YsbLNVAnW4GtEZgFAdVZQsr2Ir2lEWs3IEmpn8z2bvg6NglR1/Mc/UZo3mVAqCjfPX06dra8awdDGVocjWK4WM7RkHdY7u9fmydhmjj8+RW1SIo6BOlq4ZE7LTBtVL/Nwv6JPFAjgyZMBakMwVft8IXPleniwD1R2A0BDalMYQ6HeGOw6VsPmuvQgxTeLRD+KufJPwaiOo82dYK6pYTQ6D7yK42L5Z/MJALiNIw6nHf1R+nrVMaVYkzEoFtfUHOQZa4VE2f8llf+57YruyaoShm7zqe/YMzckck93GXTLoAOri9TA6LLIG7dLGrbHqBDg6EU6ib7kL95GJ3CmPY99YNwMVhrqRnDHrqd7fRKXhUzp9D2ZldhtOEWzXEBiA9DYhVHyIT/5bLkRqFQgAmL3q7FpSutcIEEw2C7BY1WaFaqKqfD6slRt+xd+FFkt90t8YBMKvWtXKRS3I1GZV+vlY9xfi+rWodO9105c+2qO/6AAyl5WECIR4t9nEKsY9fMok4E+c0eXQR/zB/gHSHoo8O+vX+QAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADA0lEQVR4nI1WjZWzIBDE99IAKYGU4JVgSoglxBJiCVpCUkJaiCVICaGEowS+XXBxUfC7ec+T42dnZoE1J5GHg6c6GMshN9/lxnOkzr1hRrsj9gGklLFDKRXbWmsiqGjup3n6jubeJfHyTpsHLFDiOnVRaV3XGFhYazlRbJMYGHfz/YONIKxuxdjdofWKcwvpbSCI9Upb3UdHTdPEGZzcGBPbv8O89IHQQYjxct9F35K6QeKkCRTeYCEE1sEFkhARJ9kC1yglgXACQrtkAUSvGvNOq/Mo3DyCzHd0RcQIcr4lpz1E4pr1d6b3YYukXBVPYRiTST+S71zDWP1oxfkSRIbMpdiSVqDK+eAmBH7DxvB95eCE5NILYjp6+0pcZp0Szp0U30cn9EQpK+8jQmsT9rLp/FrKwjZbOVKHV4MmIyG6Jhc5pKfYinaU2awckSaQ/1ns5+BWsJNNb+xnbpNCc8oFwYXz7e3TtYUxLF3MZThk65XCjJXASZ2De32+rlXG6ON95CCHuBVQyeI1Y0YKZVB9xO/zinUyewCOgBmwFkWmDr8PIFe+lkckpLpDIiwIbUxjCPQ34B1Hl4j5qb0JMU3i1Q/iqXyR8G6J1Pk9rBWcWA0TBl9F8GL7YvEHoLhEIDSnHv/Hk59mLXGaHBKG3IHazkdxjLTCT9l8k8v6dO6JrUpOIwKryad+Jt/QVMyx2G3cJYMOSR1dD6PDICvQLi7cgp1OJMdKhDvRt3wKnyOjuFMax+5UNwMcDPUAO2NSU/18Q07Dk9t9T2ZlchtORFYEBkZC+DUhFH3EJ/9XLkJqFQQgMfupU0R0WioEGEw2C7FY3SYH1ZCrtD+M5Qt+xX8LLYh10t8YDIRvtbqVi1sUU5vV6c9rXZ+J68fIaennpj/6WB79RUcic11FiCCIVxvA2Wta2zurpa+MZO9L9SO+oFscgA/yOmjZm54dqSw8HRMiNm1EIzKONoRmeSwnJQLF3pwgXyGOkRWSc1pacPTZsQft7ZOQUgqO0kh9OQFHIpOxf1llpiqL0JCYAAAAAElFTkSuQmCC",
+    "price": 100000,
+    "reqSTR": 0,
+    "reqDEX": 110,
+    "reqINT": 0,
+    "reqLUK": 200,
+    "reqJob": 8,
+    "reqLevelEquip": 70,
+    "tuc": 7,
+    "incDEX": 2,
+    "incLUK": 4,
+    "incPDD": 58
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incLUK": {
+      "base": 4,
+      "min": 0,
+      "max": 8
+    },
+    "incPDD": {
+      "base": 58,
+      "min": 23,
+      "max": 93
+    }
+  }
+}

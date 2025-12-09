@@ -1,0 +1,49 @@
+{
+  "id": 1040079,
+  "description": {
+    "id": 1040079,
+    "name": "Brown Piette",
+    "description": "",
+    "chineseName": "褐貴族之服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEWElEQVR4nK1Xi9GqPBBdZv4GYgmxBCwBS8ASpAQoAUqAEqAEKcGUYEowJfDvbrKYaL7HvXPjMCgke86efST+B78f2y/mFPCH4zcEGPheA5wXgDI8VOHu8Bpb//047CR/TeQnAtsDjTubB6eh8WoGgLlV8GhdTKSAT9U+iOUI7It+Ao+/g9KgcLLDD6l1WmC7zfP+2jkHl6YRYl8S2O63G062cLk0CKDY4DvgVyRorhAm8KquwVrD76yxMI/jB4mYAIOXVQXnouC4HgcHtxqyQ4AnvB596aV6GwLO85ViimPfQ9N1O4lEAfJcFintn2mtkIRjr6o3jxl8vgKYJfFewuWsg59GQsDiAuderPv6axVicBuACLxH4guLQbbEc+8c5cH3BHCSBh08J3e9bLEKxGV5A+/wAdEmcFYuRMMDeiICbt9CFRMohmHa2vYKJnr4fKBnR8dqiLR8x1AJeI2gVwmZ8r8HTOJ2HndwAUYMxsoR2ChBgmKsAHPG31e03k2WSRDgjElnjdnBS2SkS5+IRIpUIKWokm6Y2GzPKX5HDpKjkEnCImQnjGjgcETvnw5Mp6AeZ5imE4eix1C8g7PsAZzSgfJY4/MeH5/P50TykAVZBeTFRkY5juqOxhsWvW1LuAyGO94FEzMGp34h4KT0ivcelbPak5Dc61wKniOQjKE4QbttYIcTVP0dn5y4TKtojoDnhg4kJCkhMy1LYNhznYbBvNAAITVRfe91SDoBF+/jJNfMwEGjyt3WTwS2GtsnZS0tIRCvwh1VaFCFEVZowC7GAwW7OXByokRgww64bA/IKjCWluudioFiHHP2JAyS8MhmSbumDArRumB31OmLEg0aY77cC14kNGZ5kJqglvMJaqwm0yi+qtFwXIkIeeZWuxOJVbAWGxuSoDsTM+tHED4JoAUqsT60X4njhGV5vfuyXBvfLKqWmhGpFHmKZJz1yo1uAW2jEGWcTRrRs00zmr3RvhXTcmwFcH047/2gYOr8vOpqwe7tF+uCZXNcBeKAVAOVJZZjfjdk2ZxnL3IKCRmkBG7tMCIRAl0nf0mOlbX72JnJFishJRlJIQR272Ux1XcMLKMMmd8c/b29we69kJkMnaZUkhRRJXOTEhWIwFbhIWRSFeJ10Fm/WPb3ePD2ioYqSk7re8IQddoqHE6TTIuOakljcpECoTwwbOW+WgXdYhLUYq9yJNG+V4giRGYdXnMvpoS5io9z3qkJi9RhX+ASx5IkArgND6zCa7aXj6G0ZyCZzbsMtmMJkRAkg96oHEgwTEazcwRMpSjNiA4p8l1yoFjX9XWEll5LJOzKB0o5jBybNQlR3IToN5Gg3bRZVz6U8lkgJIkAI5YsKZLtWL4cmnV7jlXU9L2BSYBCAGUnlGdxI6IZyyL7ycf4vhPShJ1EsBjv4/THg9/RkENsdIS/rCnId+O77diT6HX+rbgbcuIwJCX7z/6aFYfOZv+UHi7Tx1z4i/E/ab+DZY3ntlgAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEiElEQVR4nJVXi5GjMAwVM9eAU4JTAimBlAAlhBKgBCgBSoASQglxCXEJcQmcJFvEJuR2zzsMBGy9p6ePvX/g92P9xZwM/nP8hgADP0qA6wyQh5cq3B1eQ+Ofz/1G8tdEfiKwPtG4s8fgNDRedQ8wNQqejYuJZPCp2gexIwLbop/A42dQGhROdvhHal1mWO/TtH12zkFV10LsK4H1cb/jZAtVVSOAYoN7wG8kaK4QJvCiLMFaw9+ssTANwweJmACD50UB1yzjuJ57B/cSDocAj3g9u9xLtRsCzvOVYopD10HdthuJRAHyXBYp7d9prZCEY6+KnccMPt0AzJx4L+Fy1sFPIyFgcYFzb9Zd+V2FGNwGIALvkPjMYpAt8dw7R3nwbwI4SYMOnpO7XrZYBeIy78BbfEG0CZyVC9HwgJ6IgNtdqGICWd+Pa9PcwEQvX0/07OxYDZGW7xgqAS8R9CYhU/53j0ncTMMGLsCIwVhHBFZKkKAYK8Cc8fcNrbejZRIEOGHSWWM28BwZ6dwnIpEiFUgpqqQ7Jjbbc4q/kYPkKBwkYRayEwY0cDqj9y8HplVQDhOM44VD0WEo9uAsewCndKA81vi+w9fX6zWRPGTBoQLyYSWjHEf1QOM1i940OVS94Y5XYWLG4NQvBJyUXvDeoXJWexKSe61LwY8IJKPPLtCsK9j+AkX3wDcXLtMimiPgR0MHEpKUcDDtkEC/5ToNg3mhAUJqovre65B0Ai7ex0mumYGDWuWbrZ8IrCW2T8paWkIgXoUHqlCjCgMsUIOdjQcKdo/AyYkcgQ074A57wKECQ2653qkYKMYxZ0/CIAmPbOa0a8qgEC0zdkedfsjRoDHm617wJqExy4PUBDVfL1BiNZla8VUMhuNKRMgzt9iNSKyCtdjYkATdmZhZPoLwSQAtUIl1of1KHEcsy9vDl+VS+2ZRNNSMSKXIUyTjrFducDNoG4XowNmkEb2aNKPZG+1bMS3HVgC3p/Pe9wrG1s8rbhbs1n6xLlg2x1UgDkg1UFliOR7vhiyb8+xFTiEhg5TArR0GJEKgy+gvybG8dB87M9liJaQkIymEwOa9LKb6joFl5CHz67O/N3fYvBcyo6HTlEqSIqpkblKiAhFYCzyEjKpAvBZa6xfL/h4P3l7RUEHJaX1P6KNOW4TDaZJp0VEtaUwuUiCUB4Yt31aroFtMglrsTY4k2vcKUYTILP17bmVymIr4OOedGrFIHfYFLnEsSSKA23DPKrxne/kYSnsGktm8y2A7lhAJQTLojcqBBMNkNDtHwFSK0ozokCLPkgPZsizvI7T0WiJhFz5QymHkXC9JiOImRL+JBO2m9bLwoZTPAiFJBBixZEmWbMfycKqX9TUUUdP3BkYBCgGUnVDexY2IZsyz7Ccf49+dkDggiReTCBZDNGlvVviPR8ffaMghNjrCV97BdmfThYs3ejF5RECF64ok7q8u6eca5GAs7oacOPVJyfbbvDf44fimgCyuTq2dovfiBZyqcb+m3QHtn/fXVwKxTDTOkHpD4wKRjAfrv/3+mP8Xy6qYe6L/+B4AAAAASUVORK5CYII=",
+    "price": 45000,
+    "reqSTR": 0,
+    "reqDEX": 130,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incDEX": 3,
+    "incMMP": 10,
+    "incPDD": 34
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 30
+    },
+    "incPDD": {
+      "base": 34,
+      "min": 14,
+      "max": 54
+    }
+  }
+}

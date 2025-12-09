@@ -1,0 +1,63 @@
+{
+  "itemId": 1432008,
+  "itemName": "Fish Spear",
+  "chineseItemName": null,
+  "totalMonsters": 5,
+  "monsters": [
+    {
+      "mobId": 9308021,
+      "mobName": "Southperry Pirate Lord",
+      "chineseMobName": "海盜領主",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 1210103,
+      "mobName": "Bubbling",
+      "chineseMobName": "藍水靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230200,
+      "mobName": "Star Pixie",
+      "chineseMobName": "星光精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230108,
+      "mobName": "Jr. Cerebes",
+      "chineseMobName": "小獵犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5400000,
+      "mobName": "Jr. Pepe",
+      "chineseMobName": "小企鵝王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

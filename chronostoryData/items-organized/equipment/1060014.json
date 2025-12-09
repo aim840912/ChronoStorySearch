@@ -1,0 +1,49 @@
+{
+  "id": 1060014,
+  "description": {
+    "id": 1060014,
+    "name": "Black Split Pants",
+    "description": "",
+    "chineseName": "黑伽藍褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 18,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAaCAYAAABctMd+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABtUlEQVR4nK1W0XGDMAwVdyxAR4AR6Ah0BLICI4QRskIyQlghI8Qj4BHKCNQ2CJ6NDFyu+jHI8tPjSTqT0tZG+twSfJHAaXzPD/mNKKvXDVVMPt2610FN7qw0qN9bnBB8rOuaftqBlFKUZQ/K85dZs3m7pmF4kdb5lDvPzbM2vsGmcueRvch8CiYHugLT4mNQTIDnDsHtobIsxT1MYNeYIbiTBBkiGPqZYQR4kWbDnFmFcoSJOEkoE0ojyoLMj9jvmQguAUlg0tdJ4Kf0PjI453RPpU3Ukxnb1epaVZUXc4b5JoHk5wTYotg5XFQRfE8CnsSY9pI/xYAwEA9Ik3pGFq+YkrEc/Mz1kBJgUaN9HtoMnph1xCRooe6eLLGpDAt1VvcNc2Z0pOfeDPDZVHL+lznw572kptXeZJ4xjMMO681lVbTAXGq/T7/kpYG5vROf9xtdGrUJtMXkTpldSdd1YvvauP42UKdW8MRcruP46wdyl8TYY0H9ryVqHhOJtaCW/ZXM5VwtLPa6Jrzi7Pv7qhfWzJyYff8kr6cB2PsfIRimMJZZI7hzFBd7//kDIwBHE3w1fvwfj8I96YNWgSoAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB+ElEQVR4nK2WjXGDMAyFxR0LuCPACHQEOgIZoYwQRkhHSEaAFTJCGAGPUI9AbbCILGQIueouhyPb+vRk8ZOCbCO8b4nkjIFgfPhBdgFQ1XOiz2efbqa/pp/dqrCEzzhdAo1VVcFXY6Dve1DqBll2t1flpysw5g5aZ3MeWWbH2vqMw077JVVRRfNGmABPCCw+BFAY3XcI5AIURSHOUZi77hkHTWWjmdPA1I+ZRyCr8omKMFteMg5FIC+lVL5o6aiiPVWvWBQkBZUCS6r3QC+dz56RfcE5pbGFtP6oxF3dOZRlGaw5qmgFk/wIo21POxAbYhe0VSZ8AsTOaktdAOJlo9lKSbxTuqARJMOS4RjPT4JJDbF5H3HzoMReRwqkFjunVeliTwO++eg5iYow0736b91jfG+6t+C/bAG11wLqRgdPhFeMrqOdOtiXcN4IIL5QCnTE7qwfniD7DdBeL3Cq+9Um1wjYcd6VdF0n3hJu3XAx0LEwCErsh8U4/oaT2G1EleLzUqndsL4BTYw1g1N1BvthUi7Zse4L3uv8Ne7+P86aqnGT01cLglxauVU1DC0E9wyBuKMtCefHrjtzhc68mton5oLp1EOUp5/yE7TzXGA3P7/yW9g3dXzUS1KBUUVoteCLmSHrDfMHv9QPNAssQRQLRoPG/i/jPygnUgILat2yAAAAAElFTkSuQmCC",
+    "price": 4000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 55,
+    "reqLUK": 20,
+    "reqJob": 2,
+    "reqLevelEquip": 18,
+    "tuc": 7,
+    "incMHP": 5,
+    "incPDD": 12,
+    "incMDD": 8
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incMHP": {
+      "base": 5,
+      "min": 0,
+      "max": 14
+    },
+    "incPDD": {
+      "base": 12,
+      "min": 3,
+      "max": 21
+    },
+    "incMDD": {
+      "base": 8,
+      "min": 0,
+      "max": 17
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": 1060076,
+  "description": {
+    "id": 1060076,
+    "name": "Blue Shouldermail Pants",
+    "description": "",
+    "chineseName": "藍板金褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAcCAYAAACUJBTQAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC1UlEQVR4nKVWi5GjMAwVM9cAV4K3BFMCKYEWoISlhKQEXMK6hLiEuIRzCecSOD+BwWCT25vTTMYBJD3p6QM/KJeZ/l+q9KIEQv30pL6VJEWdPbPOJ//d4Z6zjowaMpszCGeh1SP8iO73ewASB4dnIDjme1af/WzZpCBzEHbADl1D4ziSt57+JrWs6TUZEnK3H27NBnTIJCrglOEaAELgJ8iF+/Fs25aMMdu1sxQAjvaXdN2GBzwvF2I9EgDvPQPkQJ5UoHfUj8Uo+iiBPKfPJBMTikOZQ5xnoEAY9T2RbKN9S2owZZAIgGJKuWdireUTAudnIKUsU2b9bn+ZyfjQW6pipTWN2C0dVoVzBnDXdaT10lXGgi79fbq0tiGTha40E5e0sQypAhgnnoexorvo1kwCrfaCLil+Uo0MgsEwyJBBzcWu63rlfuv9Sik196EQAO57SR8N0a9Xs2ZySOQAUlUVhmgpRgSIEZckpQz6H42MT9KA8rWCuUAN4CBmcKYqCp4DIAXiuTmpZiDO1dwte941z0FJjPFrRvqgf5YMZHpOvK+wHAdluB2FH0jpzJamCaP+yvTPSzIDWVaCI2WWfu/kQKNqEXcGgvuvqSHjXpu+LdCagUi6UaCWJxgD1gxtKH53aMkoXf9JzSjp97NhXWhgvtQbkLntpxCdxlrdBgqOtC53FwSz9fNGhwFs+w6UlbewkCJ0yvEdgsF8J9CJQ7xc+yyonC5MeLLD8N8b3q7VSbVSw23GWxQ1hJ0yNttbKQgrp6/bkvJ3hQMNGzkEx5RtmeCVS4F/KXZlpsC/pyu1W4IUS4CJ3QYSC8x8JgpXnXWwwzeBXldK0jDxnQIQ7ipE0YcCplmUiliS59fXnjl1Wz3rlTLOBF2VFhzyLzWJnXVV/OxDIlUoTe9ZFn1R/EbLQI7fVfv/i/aNUmHoQDe/fuUeZOoDINzvb4Kt6L1U63RfPv8DG7AbdVbpC6IAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADB0lEQVR4nKVWjZGsIAyOM9sAVwJXApbglmALWsJawm4JUsJRwlLCUsKjhKMEX4Ki/K333lxmHBSTfPmHC5S0wO+pyTdqQDDMTxg6AYKz4p+xLnq3yZ41FrQcq8g5kPdGyQc+APf7HcF4ojQHI+V+z6hcT+JVDLQgeSVeqW1hmiZwxsFPxASD16yBi0N+vLYJWOJRYKJV4DeBcE4PB4v7Ye26DrTW+7c1gCCpfE4J0HV8kPb1g29LBOKc8yAlmAOJoZ7UYxUKOt4BPedb5JHGZEGhlNYcDIMHwwAguiDfgRz1e6AAQgkW4vDIGONXIgLIwaQ0PnzGHfKnHk0PtbvNtzDHltu18hpcFwLv+x6UWqtNGwqd+r/QKWXQozV0sUc2KnGBLhM4rfQf2w7uvN88whCbk9AJ/gGMPEGhcRToCfMFwBjbcrGXayOlXAZMDIEPg4DPFuDPq908KhxKgJqmoUZbkxNAguU1isNH/J+tCH9io0qPiKhvKCekJHiShy0Q/SeQGMz3VclaAlnLfBUdMWC+T2qktds8Uwl/jQqg+Tn7+UYDdZTalyp3I0hVCs8zjYRXwV8brAXQOj4sSL32Qy9GmGRH9hfCtP+aW9D2tfObWtxqQAKugKH2nU5N2I4dFkRflCtRP9ygnQR8P1vPSxzUf/IHoKUbZrRS0Tjem46UKVWvOiLqvY8rJE3aDT2F7/305oJjBaVnEDXvGRFPaPT121UNK0NHkyCaefTutJ/K+fHcyPG60GlMOSU5qU11zsVAXiA+ut8J/At5Y3GSo4F7+HaP6PgGzIfgh4APhzsPXSy3GspXIzO5HSgk3cc3YnpXcYkc3THUNn6iIorPJALy1UbWDJjU2Jt3ic3p+fW1yyDEnl8Whc97RNUWFwFRJUf12QLHDemsIIrLScyUdbmACq38vHoHrAKl97bjfSvtaQPKtT2wMW8Uen+Ui8PQzEhGQB/YD98nxkjY70RV8mAn//1peIk+WPQAnOQkonB+jJCeqy5/LtuLzRTXQBhUD+liz9Xe/wLvwSqgGiQJsAAAAABJRU5ErkJggg==",
+    "price": 60000,
+    "reqSTR": 180,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incSTR": 1,
+    "incPDD": 44,
+    "incACC": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 44,
+      "min": 19,
+      "max": 69
+    }
+  }
+}

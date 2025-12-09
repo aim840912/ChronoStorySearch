@@ -1,0 +1,39 @@
+{
+  "id": 1302009,
+  "description": {
+    "id": 1302009,
+    "name": "Traus",
+    "description": "",
+    "chineseName": "黃沙之劍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABZUlEQVR4nL3VgZGCMBAF0M/MNWALoQQtQVqxBkuwBlqwBK4ErwTTAiXkNksSNh4nBJP8GTSDzrzdNcEv1Iuhq5E3auHG3C5orn1UQLXOdd/jqYBWzxOoOXbcR+B2AK7jVEBp3CIYFIM40vpI+EBXRxMoiRs7Zk2L3sG2AIzh82KdB/hHwhV2ewTb2FGLjrPgRqx9R4twp6PvfIQzapSQp+ODFHgvDvvA4NDZtRlcIXcx2jV4L964J1Uo4uyKwGHa2ZcN8F6cY5jvob8BNdCyoyJcAVvgvbgx5klv7QT7394VkJJUfBm2UQ96OXH3dg90+u+/2Cf4Kpyarfg6rPnIRUcwB74NbufbuTZcCsyYf+BsyTs8GXZZ7XgN3wsn5e3YS8L/4aHrKJnhJdzBomtGkR1ewl1c16JbFjPCr7gY9wPqbNGTRLPCr7hIuW6X8LnrGC0GSzzANVCJc9fNrBZHJe7haqjPL+Z0u5MfMtGnAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABoklEQVR4nL3WgZWDIAwA0PjeLdAbAUdoR6ir9FZwhM7gCh3BG6E3QlmBETiIAYNFFIvmPSpP+/qTFNQvOC60GRU/cRSu9f0GVdsFCRxWuew6eAmAWo4dOLLt8FAA9xNAq4YE9sYtAr1AEM5mfjZ4b0ZjOrAnrm2bpZl0BNsEQPnru1Xu4T8OH7DaA9iGbTWruAiu2dxVFIUbGXznIxxRLZg8bB/IgbfiYG8YGGbv2ugpkQdr7RK8Fa/oTuWTuFIScBpW9m0FvBXH0Mh3IH8BRG+mjUmCElgDb8W11i9zqAfY/feUQE7k4nHYhniajwtWb9dAI9+fYp/gi3BurMWXYYlbLtiCJfB1cD2eLrXgcmDE3A1nTaTwbJhiseIlfCucFcm27wnP4b7qIArDMZxgVjWiUByO4RRUNasWxYLwFGftfoK4WvTCURvfgI+OrFBzF2Yqf6u2JlRk4oodw9dHho9Vh6iNHxielhyNJTBXoUMlDf89Vnk9vU22dHSbLbfdqYQ8jlVXo9oQNMVSP6QS8+kIcAdXETRW7cyL8Ns5lbiG8Q+18tSBRWWHAwAAAABJRU5ErkJggg==",
+    "price": 90000,
+    "reqSTR": 125,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incPAD": 57,
+    "attack": 1,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 57,
+      "min": 55,
+      "max": 59
+    }
+  }
+}

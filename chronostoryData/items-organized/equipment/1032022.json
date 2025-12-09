@@ -1,0 +1,37 @@
+{
+  "id": 1032022,
+  "description": {
+    "id": 1032022,
+    "name": "Half Earrings",
+    "description": "",
+    "chineseName": "紅色時髦耳環"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 75,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAZCAYAAAAmNZ4aAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACw0lEQVR4nJ1WgZGjMAw0M9cAXwJfAl8CXwKUACVwJYQSQglHCZ8SziWcSziXkNcqEhGOyZPXDAMYWauVLIk397pcM2vFq0ZeAWbA0SzUcu/uzhx24CjwtWka118u/BLpGuTDKFd9d+AQ+BHga13X7uS9c2XJC79ipMfSVVXlItZJvHtN9oDXPAIUUgpojHG9A7ikSIQQOApuWf4bmAE/3I3BJIBnMpwCkxTLsmwO2hc58jOEQ+G2wJzHk4SuIwCwBSBfZBRSAtiAW2MANeBZnRSY86jhi2IczxxOaJBTDEzsn0ih4B3p9Y4PYTYCK2Ow+sChATMxrgfICVte63t3HoZdg5DfdP2hPTPZOe+AA5hDrCFlZvO8MYS3Xl+opBrjXE7gLMotkg5KLQf+tsdM1zcidVxRWj4pOlRWOdbF5XJhMlXbukr2fJEte/C2wAqIZzpkwbJKGEK/Jh2fDzmDj+PoFkpNSxE01XBnrMIhFQ+/idUPqsueNsKxdwI6CXiUO8KIkvMHO5Yttw1wyOQtSpda3xUc5UaGRnrv8jjFNE3MeqKwt0TCsgZwMc/zVZntCTYN9P3kNk3EVVINe306JfNJ+jgbK2NlZkNqw606aa4U/AzHHsG5u7V0yHQXkyPdh17Nxk04OS90OLAZ8q4DI2GOWO3VLPRm2tf4+yhRYPZMmQ1gnRjXiHDIzXcOp+jsgWOPDhK1t2FsQaxwXtA4pG0qOIZHyITegLOzAG3huNGxwMxajaesMLE6AtcxqTqjz09i/VOZxDEvayHH2Jmuk2PFTAjIgm/qe8cBXddR69I6tuBqvEMJ4cDJRwW3nW6QMjyJg7aA1tOcgOz9gRTee84RN3xjOAiLyUwwlXd5bpO8q4ayfQa8KgQZ6lzjMsEambUwqDm0Diw66WTd38/Bdjr9Q1g53ibRrSaffFdJKuOho/0FhLquUYkys88AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADCUlEQVR4nJ1WgXGrMAwVd12APwIdgY7AHwFGgBHICGGEMEIZoRmhHiEe4XuEfEmViOzYuaS6cwxG1tOTLCtv8LpcM2vVq0ZeAWbA2Sy0Mg83Z5524Fnga9d1MJ7P/BJwTPJhltHeHHgK/Bnga9u2cHQOoK554SMEfKyhaRoItI7i4DUpAe95JFCSWkBDCPtMwDVGwnvPUYBt+zUwA37CD4NFAE9oOAVGqbZtiw7aBR159/6pcFtgzuNRQjcgALElQB5olKQmYANujRGoAc/qpMCcRw1fEOP0zOEkDXSKgZH9A6kUfEC9EfgQZiOwMyZWn3RoiJkY1wMEwpbXxhFO01Q0SPIXxxfuWdHOqQBOwBxiDSkzW9fIEL2N+oIl1RnnckLOUrkF1KFSy4G/lZjpeiRSxw2m5Rujg2WVY12dz2cm0/Q9NLLngrbswYuBFZCe8ZB5yyphSPot6rh8yBl8nmfYMDU9RtBUw42xCodUPPyHrP5gXY64kRw7INBRwIPMFEYqOffkjWXLLQL2mbwFuaX2dwWnckNDM74PeZxqWRZmvWDYeyRhWRNwta7rVZmVhDZN+P0I0SUCjVRD6Z5OyXyjPp2NnbEysyG14VadNFcKfiLH7sH5duvxkOkuJoe6d3c1Gzfh5Lzg4aDNJAdtGAlzilWpZklvxX2du7USBWbPlNlErBPjGhEOufnO4RSdEjjt0Uai9iLGFsQK54UuDrk2FZyah8+E3oCzswTak+NGxwIzazWesqKONSC4tknVmV2+E+s/lUUcc7Lmc4zB3Do5VswEgSx4VN8FB3RdWy2kdWzB1fhAJUQHTj4quL3pJinDozhoC2g/zQlI6R9I5ZzjHPGFbwx7YbGYDqZykOc+ybtqKNtHwLuCl6bONS4drJNeSwY1h9aBTTudrLvbOYi7U0HU0jv9YM4vMkPcNLn90vqXXUwq4wN+ol7LnAWuC2OCOFX63Mm8QP58kbTyzcsIKbCCNGa2IOXLvCxZZ0qMS5tKjNJv6XM67oA1HLmQps7lnHjkaPTtP5Mlxsh9h8k+AAAAAElFTkSuQmCC",
+    "price": 140000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 75,
+    "tuc": 5,
+    "incMDD": 55
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Earrings"
+  },
+  "randomStats": {
+    "incMDD": {
+      "base": 55,
+      "min": 17,
+      "max": 93
+    }
+  }
+}

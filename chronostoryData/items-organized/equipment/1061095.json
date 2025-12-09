@@ -1,0 +1,50 @@
+{
+  "id": 1061095,
+  "description": {
+    "id": 1061095,
+    "name": "Umber Mantis Pants",
+    "description": "",
+    "chineseName": "黑飛影之褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAdCAYAAABfeMd1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACR0lEQVR4nJ1Wi5XjIAzE720DtOAWuBK4EpwSSAlOCbkS7BLOJSwlrEtYt+ASWAZbRGD82eitX0gsaaQBRvshrpk7eFedBZdANgm7rovraZrEPM/xe9/3pQIS4BzEtW2bJFFKiXEcIxhA8H0YhrBumiZJsL53HGjTCQAIBAFSyghwu93E8/kMAHliHp9bEYSCKIAAtNZJAcYY0CXObAPCOaeuqAP6HRRh/Xg8Yqe/6aRa+YyGSrEvACol4VTxPIedwJzx1WkjhO3F6HP+GUaxZ+5/G/3w3O2FPYHBWbHATsvwOfkurC/cKCn8X3g4wDiLohVBHt67XrlGYqwJwFvVj7MzShZ9L4N8ak6XFDeLRKkPgX53nC7pf3uTLu0R+oUL2tDKA7ivRr5Fl9O1P1HswOxRQMVsqcWnOL7xKVULBf92SsTv301KbemEbUByqjK6EmuVLPrntgH5a7dOSpY7WegSp8ZBHLQItzuXllUQ87kRjjIpM/fPlTjphBystWFNgEeG9/QgBlqWS8+u1M8Hpyr353G5YG5AUE1d18ERTz4F90Bo7pQAcpCgwDQFM9ub45Xfr735v3tPTv8p+EUB0ZLT9U6CK/EEEnQI537wmjC9LmAiD0cAGAc8FiLtb36I/yAHaFCQFLHeYr8s6VAJAHoXlL9+xUJykBdAoRO8AMB9XEQO1VgRQU6tQdfTS0wxAkhyOF3LBGxNQbrPUVC58d0I/ZotHBQgQR6UP+O50E0XLyRVzOP5JKVOKnB3L+c42/hq3eDd2B8pd+kvLDEB3AAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACb0lEQVR4nKVWi3WjMBAU77kBpQRSAi5BVwIuAZcAJfhKgBKOEo4SQgmhhFACtyO0sr6E+PaFWMDuzu5IGnER52w7eFecSZACipL2fW/Hy7KIdV3t/TAMqSIi8BBoa9vWS1RVlZjn2QICCPfjOOpxXddeAvN+C8GijgDCQAiSUlqQ2+0mHo+HBgmTu/EpSwJxIAcxiFLKK6JpGlAnzlgE5M4Bd8ed8HPQhXHXdbbjn3ZUGH6toWLME8BSiVza3DzfdgTbGqpSNUJMg5gp73WcRc62P631w3WfTs4RDAGVE9wrqX8X6maiBppKCvrTlwsypzHyQB1FlIZ7JMeYQciKYV63ppJJ3x8B/VUudVLcJiTzfRj4s3epk/TsP6hThDLsvPAkFwSyfdTyZeo2VdJKcxbSER1IHNOMX/G9Mvi07XT8zpSK55+1T3Nu5UVAIW0BdZ61lUz6pywC+jXFTpVMR+/UiVPmAm3QLqhAKENGRMPdrpc5K7rrn1JwryN2mqZJjxn0yPCeL8RA+1J6lz0m1oPVFvq7caHIJoFQVVmW2hlXeJrmgPjcyoGEQFq5+TQNLPddUND85b4nDvfRqQ+NV2K8VfdqkjPxDKR1C/tiJP1Ynps0kpIcCI4SNxbiTgph4y/sBM3S8iPMbqeho1tvByBf0Ed9apTPWMgT8jKY7ggvAXKfd2FEVZOwQLBSV5CxGt0vTwHG8cHyFFK3n6Rtk5B9/U8ZtyQYOmhQinqeTS4w4gD0RnPxVdEeCMXRcSwPqLOVu/HOiXx1O7oSlx/3dJ7uAAMQd4rtM+/fjc96MYPFPLStJoKk8U2BvQf30fgfq1vzeUOM5wIAAAAASUVORK5CYII=",
+    "price": 70000,
+    "reqSTR": 0,
+    "reqDEX": 100,
+    "reqINT": 0,
+    "reqLUK": 170,
+    "reqPOP": 20,
+    "reqJob": 8,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incLUK": 2,
+    "incPDD": 39,
+    "incEVA": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 8
+    },
+    "incEVA": {
+      "base": 1,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 39,
+      "min": 9,
+      "max": 69
+    }
+  }
+}

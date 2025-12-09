@@ -1,0 +1,19 @@
+{
+  "itemId": 2043200,
+  "itemName": "Scroll for One-Handed BW for ATT 100%",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 3110101,
+      "mobName": "Pink Teddy",
+      "chineseMobName": "粉紅發條熊",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

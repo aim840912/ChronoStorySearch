@@ -1,0 +1,19 @@
+{
+  "itemId": 1040043,
+  "itemName": "Red Pao",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 2300100,
+      "mobName": "Stirge",
+      "chineseMobName": "蝙蝠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

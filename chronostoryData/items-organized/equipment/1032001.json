@@ -1,0 +1,29 @@
+{
+  "id": 1032001,
+  "description": {
+    "id": 1032001,
+    "name": "Single Earring",
+    "description": "",
+    "chineseName": "單邊銀色耳環"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 15,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACT0lEQVR4nJ2VjbGqMBCFNzOvgVgCloAlYAlYgpagJUgJUoKUYEqQEqQEKSFvz5qFgMDl3p3JCBLOt7/hH82bn/jP0C9tCiDCx+NRblpelleSJHS5XBS6GjQG+PP5TG3b8mLhxFJVFKTA6+0moMN+79dCYoCHgA1eN3VNJYunaSoP66aRlWcZ/cYU4G8Qt1YWImjCg5pBKYvacM9p+hNAQsdigniP32Cmdm5Q8JzTVZXlqjQB4B+PRw/40CSSyAZCEEfEp9PJz+0ZRKCpUcN1qrBpMxAPEIKD+5nCT86BALi4z+eTdrvdbCogDgiL0/1+p8Ph8LVXACjqXyzPc4HAqqqahMxPMlLG4Pf7TZvNZioKw6IekIbbF8s595UuATQsZHlDEhVX5+GH6ASScRtjn7R0mJs4AnPisBBeXGy9hmcLUXyZY0hcuy5FEIrFY4NnS6ni1HgMI1Kq6YojEGvDw1gc/+EeRwQtQ7qUUkjV8/Wi3XbrFWCKopCDDoJaCz028HIdvJqB9FEEx7R2cRcJ5Hq99mkKnaSeVdwl7UJn2dH+MaDL9xdAPQqQxcKP6jcGSNuRHhXBGxVvwz06xfGAvRiy/UAGJvsDaGrQDA4zyyem1mCcV50MPYcwB8YYcjzNsBtafiaCDlIyBMdyn9NeOB6+C3+UbFnSnUGIugnPeA5EZ+mjL5HgKKB4mkeTLd3GwugygAfHPi2dRQpBTdgy/VRC8HPBQqGlIRraGvdcF3l3DaDb6MJXLctymSr1VOcFa/9JS/fOWsAIVPmf9sT2Hy+XdMjW+EG5AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACkklEQVR4nKWWgbGyMAzHw50L1BFwBBxBR8ARdAQdQUeQEWQEGUFGkBFkBL78YwOlr63P9+WuRwslvyRNAgtKyxC4l9EfJAYSwH6/l0XPw/DI85xOp5PCvwKGQMPxeKS+73kwIDdUXy6k4PP1KsDddjt8A/NBAxQZ60XXtlQxpCgKedh2nYxys6FvxQUNV0CMkQGPOvugZWDByo1dc/j+CyQhwWCSeIOrlaxtmllilBzGuqp+HT4FDff7fQK9qeKZIzOFgCACh8NhiO0JeqQhc9eFQsOSAWJhBEO3iQSJ1pGAOAkejwet1+uoAkAAYwjdbjfa7XbBvSMIh/8XKctSYJC6rqOwdGdAKNmA1+tFy+UyZGnGygfAOk57jKZpgmEcQR0rNLwxd5JA6+mDtwLbcPpjn5SCrbuQR9mB3YXbblLoHJYmvPohDcP8s52FDgpdiCuwNBVCDtmAokaoNYwhj0R6u8mF4B7WaD2Uho2hJhvCx/NJ69VK9rqg7HK5SEOFYj0rbUdQ0lorI7DJK2uge7Z+1gnsfD5P4bOZp5bWnFV9IhONtz8GEoHbP0BqoYUlE8Q73xhI0pW0BVnrFNLbNTKr4UJ9Mmz1hs1E9jvAWMFmaJqGO7Sekb48zu1G7XOooyzLqOHuALmiVD54NMIqhuFzMMV8ArgHfeKPo6kqujEQUejsM64j0fMJNHqGFuMeLHmdQrKTAchKGDD73PzCowmGM2PZ6Cccit8TVmhLAcptOWDN5zZ6EwIZ76pzxMBwndzfwFLuquVabxjbd7jIvgO3JJcWjrLQ8KHyO9Q09TERAf2hKCwEVd4tHKW5c415p1I5c7+1m8A9cj2KvZj6RvSJ+WwsaHLPPxdfgpZ+MGyc/wNO8Ixdq88+OgAAAABJRU5ErkJggg==",
+    "price": 3500,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 15,
+    "tuc": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Earrings"
+  }
+}

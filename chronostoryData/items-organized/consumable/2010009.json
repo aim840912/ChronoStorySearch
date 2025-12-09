@@ -1,0 +1,27 @@
+{
+  "id": 2010009,
+  "description": {
+    "id": 2010009,
+    "name": "Green Apple",
+    "description": "Sour and crunchy green apple.\\nRecovers MP +30.",
+    "chineseName": "青蘋果"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAYAAAAxFw7TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACB0lEQVR4nK2UDZHjMAyFlZklIAqmEAqhYApdCC2ELYRdCBcIFwhnCCcKguDVj+04bu7auTlP00h29PlJcvIG/2dkuSY1/hWY/7TwDNgHTtVfrgCUyix39hNgjtcAKRHQ5n4FFd9GgU2vKmyjqeID6AB7BpzWO+U5AoQFYLs/rp8FPVM4pRWyAv8GeQWYX5x/2GAEWkD8xDbBzMBSryCpA9qv1VHVj+AemD9+zmYgImypOwvgMAOiA2Uf0Pp24MPBzj9+X8xYwhXWdDOoS0FIEo1BAAEbPMifqqfEBq7QpjDgDDNeaqJNWBBIvHhwCMGkcRG8zBdImGDb9oOpwPz5axFYLCgSJVEUJgtGkUZSRDbbczakUUXdPAMRSeHJVA5NYbtc7WKBxJuoEWWy0RJEEa3io4CirW3i9xm9tU5qPXg1hWjA2LqB1g1XSky+dQER+/UA1J0VZsWRoASrKVO1BL7hmA2XbvejAKVL+saj10ZrhUxdIg7kboZIPNJPDfcZ7wo1HT9keisNKClDRXWBCvNSnShsz5ZVHqPx6Np6D6tvUAFO641z/MBG5qOxb3jmoLdt+7LJ6Xhseka1x170ispfwD2FCnSVV9yzs8awBQ2CfK3c9RTc31dj9ECH3ncolIBBWDMUpMfq9v7VYCOwQdVQ8M4th7vZDXSAnQHbAxXs46yQ51/vb89DFe9WKTvbAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACXUlEQVR4nK2VgZWbMAyGxXtZQB3BHYEV6AiskBshGeEywt0IZYQyQj3CaQWNQCXZGAM2IW314iCboE+/LJML/F+bZDSlG/8Kms7+8CwoD9jM8+4GQD6ucub/JWjqbw68J6AxzGdAnJtFSLFsZ0ErSyp4BTiEnAU1w4OmtgdwHcD42N8/k+BZRY0fYFLQK8FfAU0n15+CayAL1H9gWmBmYNkPJyUEtE/aJ1X7DFgCTe+/WnMQEUa/6VmMIAwg4YPuXwY8dWCnn19Xczp3g8HfDRZSR/ASFZ0EdpigTr5ULXk2YA22U+SwhRavccbLugTvryGoc86kcBTYtVfw6GEcR6hZDpo+fncC6SOCJPNeFHkLiiKFZJPY/FA7QxlN1LQtEJFsLBVVVZqBbQR1nQUkHiV7USIJdE4U0CBzFEBv90aZ5xU4LJ11ltabB1OEBoo7bWFVSVBGTOGZCCAO4zRIM1WIFV+CeRhMiaojCIls1XPsviPbgKRr9E2Jofa6F8iUFSSAOFshkhnpq5uPKrdXpGUJh0QvcePDLIACb3mGIvwVRSlGfIq3UXE9tfs5ZH5jPAE1w52n/h0TkdfOkkhpgqFdxk9bfH5gd7Fnv1SaWUH8cohQ26gtKKi64VIlawi2YBsB4V68alc+3oaimpoi+aNbYBADbYQkRwHa/ve3zyqkBkowdRS48OKhTX4CqH2DdS+sargF5b38XR0BflWene1HvLYFCM9jBmFlqN0LieTWQtlmiL6r6JIFddk1D1o7Gke2k54rqv3o6Mzzgb8aF1jk5bCSitohOUos+X8AGnov3qE6ZBYAAAAASUVORK5CYII=",
+    "slotMax": 0,
+    "price": 30,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Food and Drink",
+    "lowItemId": 2010000,
+    "highItemId": 2022000
+  }
+}

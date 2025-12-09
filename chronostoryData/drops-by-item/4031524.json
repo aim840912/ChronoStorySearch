@@ -1,0 +1,19 @@
+{
+  "itemId": 4031524,
+  "itemName": "Silk Feather",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 3210201,
+      "mobName": "Jr. Lioner",
+      "chineseMobName": "幼黃獨角獅",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 20,
+      "displayChance": "20.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

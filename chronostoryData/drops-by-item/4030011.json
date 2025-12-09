@@ -1,0 +1,19 @@
+{
+  "itemId": 4030011,
+  "itemName": "Omok Piece : Pig",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 1210100,
+      "mobName": "Pig",
+      "chineseMobName": "肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 7.7,
+      "displayChance": "7.7%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

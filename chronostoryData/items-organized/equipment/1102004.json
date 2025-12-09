@@ -1,0 +1,43 @@
+{
+  "id": 1102004,
+  "description": {
+    "id": 1102004,
+    "name": "Black Napoleon",
+    "description": "",
+    "chineseName": "黑色冒險披風"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACuElEQVR4nJ1XjZGyMBBdZq4BvhK8EmIJXAlYgpagJZwlSAlSginhUoK0QAl8vISQJWwwujOOkGTzdt++/PBFeTbQ+1Zsdb4CtoB/95KUquZGY/T83JledDxc52DFALaABwBi4p8TUVka1lUunssyvPd9T791R953CmAFngKeQU9NOU+IHzcOyG2nSrq21TRei2OSGevuTF3f0ePW0v7Qr4BiULwD6PlQdLqiNDvquo6qqiKt9SrrJDCcdrvdVNvWtvGM8czBMX541mOmavRz7/jFLL0CLpqmGeq6ph/d2wmL71bM2gNCcAAFkDFmAShlvalqX1dQfT9bpS7AAYr2/aEb2xShnlwLnhVJC0lxIUpQDSdFVwsKwR0uYRK8u6AMtV29oN8H4GsfZ53MmEcKlY5TWZDhWVla3TIL/WUfAL0ppSwrkknAAxxSwfzb6ykgF0zc78F9pjawkblYZGLGPNvYQVKpVT5brhwU/yPFvmtbXLEY+JLy0fuJU5tIZHk7F8/4du7npST1u+WDjGoREWUbl9fLDcSq+V2D6P7uLbXmmFUaCXjlxE+iLUM5WrOsL39+CbxV31yLhSnRLQJLgskUUbZxYLG+uVS7cUexT6J7s8bHKhyJn5qvc0x37p1rniS2UMeKGr3eybLE5Q8FP+Gnwoq3TB5gDPzR+uVgEnhsnO5NqnOFFcbKu5cUyBfvTJl35KcNN3dZGGl79nRp8rIHcJJm4c4MRUqX+1T7KkBP95zxudZWTIgYA9xSCg4Udp1iPNw5yLwbSWv5cSupbVzJLm1gygL/Hs10uwgOTNHSl8Dm5wk3BINrE+5m3CywpxTHH+5Rja7fEhYPlq/lo9KetQJfFPezuwYdjAMu2GeGpRA0p76JXhl8EYC7ly37/C2V2HKa6zdSLtYvw4qRscl3sekU0b+1/7E0tUn6asdsAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC5UlEQVR4nJ1XgZGqMBBdZ64BLEFLwBKwBChBS9ASzhKkBCnBlGBKkBI+JfB5CQtLWDDnztwISTZv9+1L2PuhOGvp77ZZm/wE7ABfj4TSNBsGrTXDc20b1bG4DcGqAawBtwDExsczUZJYMZVMnpNkfG+ahn7zmti3D2AGvgQ8gJ7LZNgQf9IkoLRdmtCtyvr1Rl2zmLGpL1Q3NT3vFR2KZgYUguIdQO9nSucbSrOjuq4pyzIyxsyyXgSG026362tbuTGZMZ4lONa377zLNO38/Dv+QpY+AW/KsmzzPKejadyGm32lZs2AEBxAAWStnQBqWa+qmusKqh8Xp9QJOEAxfijqbiwl1FNqgVnRtLAoLkQJquGU0s2BQnDFddwE7z4oS1WdT+jnALj2YdaLGctIodJuKwfSvjNHqz9m43zSjIBsaZo6VjTTgFs4LAWzPZg+IB9MOM/gnKkLrGMuFJmascw2dNBU6pQvjqsExW9HMU+tiysUgzxSHD1vvHSJBBZ3c8mM75dmOEravD8+yChXEVG27nh9vECcmv9qEN3rUVFlT1Gl0YBnTvJLtGYoR2Wn9ZXPH4HX6htroTA1ulVgTTCRIoo2CazWN5Zqv+6kzml0r9b4lI2fxG+N6xzSHdtzDZuENtYxo9LMb7IocfFHgTf8VljhlSkDDIG/Or8STAMPTdK9SnWssMa1+u2lBfIjJ5eMHeXXRppvFjra3g1dy7jsAbxIs9IzQ5Fac780PguQ6R4yvuTGiQkRY4E/SqNDvznS2XYf939iv20/rp7l5z2hqvQlu1YjUw7492T77mJ0EIre81D/C5Cj2FvvGnpDMGib0JtJc8BMKT5/6KNKk0thcR2m/z4oFp7lU2qYtaIDfzwuvg0qrAfe9P9mgDJHIWgW9WV+oi5r+CIA35dN57hLJXGcuH6HjvKXWHsWgGt3J+bOHWN3/zq5dA79/FbuIc8xBsHFXoxpWc67vNF/H7xrz87+AxaQwW8k6Uf3AAAAAElFTkSuQmCC",
+    "price": 50000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 50,
+    "tuc": 5,
+    "incPDD": 10,
+    "incMDD": 15
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Cape"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 10,
+      "min": 0,
+      "max": 35
+    },
+    "incMDD": {
+      "base": 15,
+      "min": 0,
+      "max": 40
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": 1052113,
+  "description": {
+    "id": 1052113,
+    "name": "Red Barbay",
+    "description": "",
+    "chineseName": "紅色麻布衣"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABIAAAAgCAYAAAAffCjxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACUklEQVR4nM2W7ZHjIAyGlZltgCuBLcEpwVtCUoJbiEsgLbiEuIS4hFBCKGEpgdXLV7DBt7l/p0nGGKQHIYTwB63FFe0D1eI271lnCyIliSZDZGojGniMfxjzwnouwUqQu/UytIyh1EzCXZS6jH2BE2ztUZxOihqimGy4sQAi1sDSI/dQHStamrTJiiI2pCgsYr+ldV8VIy+sI0SAWPsy8H3WNk2aoNvzm86ff3xb3R80fh3DsjVRz6wlwnwI7AaEZeXtiIA92caw6VHSkTIEN8l1IbowAUstU6AEORVHZg70hT1BLLxBhAE+9EEnjTU9gkF2O7b3DFZLpJDAI+fSB70h8PLKATdC0iBekHKyItjGbwCeXddVMIxdeHlWv1KjWhqMcb6eT97qzyPNGyWd7Ew7vxLogPNyP/F0siPlHNnxTJbTQSoV7McxTKZN9i7JEl7CWcOw2CRH+Y52r24kGQaohjf9iSlzTs4cI8GKKxDejfaGopGB6LOATVMGue/LKStgWf8iioGjse9t/zvyn4Kw1VU4OdBJMG7N9pjueRQNbayf8/FIw2NdSpBLOm631+PtJxGKUs5scz6HBBwGv+U4vBPD0CeXxfdh7G8eHb60cfdOvpTx5/zAUekWTX30RJTHInozhmzPt4iHoSTIeQoeUqiEmg2waJRYPV1zycZjCWGo7rW3ZK/+r0C+qLXqaBqLnrYk32u+3Ba3a8lrFXt0hRulddMWs5tf8mbPowPqrlpMhgDjUwXxsPBwvSwf7FiLSlCGUe2JVxxN/XVCxWfND9MeMJIXYhS1AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACjElEQVR4nOWW75WjIBDAJ++lAa4EUoKW4JYQS/BKiCWQEs4SYgmxBCkhlLCU4M3wxyBKJLv7befFODI4PwYHhiOkZQr0w4491WeWVyAQHKBTAGrtFBq04Y9sRrDf9AqWAk23iltNKfCqF2wC36T0E/wKlo7IDZezNUQgWaEyEIQtgSnZAk2jKNCRhk6q2RFzCmdLj9SuYYcCO9/ICPpgzEK0fjo0bXofkA26PT6hPv0xuriP0H6UdlolQIWswcHMFL/gboJo2uZ0coCUxN/wLZAX74Nz+/G9XAeACxJoKsMUfwc0Cfdmj4lwwUjoWxiHDkbwprJ9vO1LEZHDWM9xSD1pkG1iLe1nXSQU5RUTQjEODXtC9gaTSAZlEojuRVGs7GS74PRp+Uz9PVmByDntb48HpvKphD6yS+9Xba+vXNCB9qv7GYfLCxDTBLqtQWO6cyGs/7a1g5Fqjs7LYB/y9jp6nUWLI3wmvRI34AgjqKRoqjNS+nnxZoGMM3S0elbSOGYbK5TaNMG6Lhs0fV7O8wNN2zsiENgq/TPp/VX5BSBK5dXnxkQI7VrlbKM7oNCxdvW5L0toxmWpoLUkXTqbfpjewNJFaXNnUHVtF2jTmJSmzbVDGLXxYTBtZPtORIcPqaZ7wZ/O6ML1QVtRMUioXCQsXJwumtbuFtmnIAOjLZ/3nY0QbCWV6JAmlUq47K7zkYFug53mt891WbJxPgnzaGGJQXNHU/QSddrYXKSR+Jqig7u5PIgF12jKeXA6DXlbhxFqsiciuKPaRhB6VR0DAAdYL6H4YJIhmzkeRuTlL9b9f2JQM8QMSbt6o2lEy2kzyWBd10HT4joG4YWwEmEjrCMp6c/Y1nIKIBDr/wHUaEOlyeshrgAAAABJRU5ErkJggg==",
+    "price": 50000,
+    "reqSTR": 40,
+    "reqDEX": 40,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 40,
+    "tuc": 10,
+    "incSTR": 4,
+    "incMHP": 10,
+    "incPDD": 45
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 4,
+      "min": 0,
+      "max": 12
+    },
+    "incMHP": {
+      "base": 10,
+      "min": 0,
+      "max": 50
+    },
+    "incPDD": {
+      "base": 45,
+      "min": 5,
+      "max": 85
+    }
+  }
+}

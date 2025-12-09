@@ -1,0 +1,101 @@
+{
+  "id": 1462000,
+  "description": {
+    "id": 1462000,
+    "name": "Mountain Crossbow",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACPklEQVR4nL2Wi3WsIBBAh3PSgK8EU4KvBLYELcGU4JawlhBLcEtYSogt2IIlEGYEg4iAuzFzjusHlnuHn77B34VUB3Mf/oWA1GfmKzxbQDZ9D21V7VY4U8CGs71KZwnI2+MB4n6PVjxDgODTNIHoOrxnobpHBKTnmdv4Ah+ESGmLvYUK7XvpwTO2lrLhO9lTfV7Xptw/BAgzjRswY9s6W6nL/Ns2wIsGxNCatU81cVK6cl4BoebOo1cNVSvwSsEIYj03Hl8tXP43kOccxlHIUM/4BJgCBzcPuwzrGolWtd3UOgEl8f7Oo8OyNwmXbouExCzbbp5w48jh4wrweRMkkedCwevQnAguQyMR6gWKPOsVfFBXA91/XDlJYITgMYGk4EVN8HEa6Losf7bdIsdhCe8FrwjIuuxXcDF0kGVajKc18qzABj4PAcBd0Mw/VcALV2versPM6mi71wTciUhw7GoMB+4dZ1yWSmJ3Mh96F5jME+HUCygQilSBJXME51BEM0+NJAGTeZ4VJDGfX4cnCyCclyV03ZXufwueIkBbLcLN1w0usUS4NC80eHIjonHv7hVlrsFLGfxS7AksM16/1/HZkS5Pyt4nQJnZy+3Z8cYvstge4ArI2+0LxmF8GY7/0eBoGIFUeHZA4p8+TzGBDdyK3AM/IjFZ5wk8MtQDLlxnj1+YxQ7YJ7GXqQGP+ljVmwW28ErDbdiRzGNSKwGmP59NXDTM/XOosSlw7R4bAQwz2TKId7VPzic4BcqW+AYu7mz0A/M9AQAAAABJRU5ErkJgggDbAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby01ZDg3NGY4ZmZmLXo3Mmx0IiwiZ2l0SGFzaCI6IjRlYTBmOTY2OTBiMGM4ZDVkOTkzMzY2NjRmYjRmYjExY2M2MTlkZjQiLCJ1cmwiOiIvYXBpL0dNUy84My9pdGVtLzE0NjIwMDAvaWNvbiIsImNyZWF0ZWRBdCI6IjIwMjUtMTItMDZUMDk6NDc6MzYuMjcxMzMwNloiLCJtZXRhIjpudWxsfQ==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACPklEQVR4nL2Wi3WsIBBAh3PSgK8EU4KvBLYELcGU4JawlhBLcEtYSogt2IIlEGYEg4iAuzFzjusHlnuHn77B34VUB3Mf/oWA1GfmKzxbQDZ9D21V7VY4U8CGs71KZwnI2+MB4n6PVjxDgODTNIHoOrxnobpHBKTnmdv4Ah+ESGmLvYUK7XvpwTO2lrLhO9lTfV7Xptw/BAgzjRswY9s6W6nL/Ns2wIsGxNCatU81cVK6cl4BoebOo1cNVSvwSsEIYj03Hl8tXP43kOccxlHIUM/4BJgCBzcPuwzrGolWtd3UOgEl8f7Oo8OyNwmXbouExCzbbp5w48jh4wrweRMkkedCwevQnAguQyMR6gWKPOsVfFBXA91/XDlJYITgMYGk4EVN8HEa6Losf7bdIsdhCe8FrwjIuuxXcDF0kGVajKc18qzABj4PAcBd0Mw/VcALV2versPM6mi71wTciUhw7GoMB+4dZ1yWSmJ3Mh96F5jME+HUCygQilSBJXME51BEM0+NJAGTeZ4VJDGfX4cnCyCclyV03ZXufwueIkBbLcLN1w0usUS4NC80eHIjonHv7hVlrsFLGfxS7AksM16/1/HZkS5Pyt4nQJnZy+3Z8cYvstge4ArI2+0LxmF8GY7/0eBoGIFUeHZA4p8+TzGBDdyK3AM/IjFZ5wk8MtQDLlxnj1+YxQ7YJ7GXqQGP+ljVmwW28ErDbdiRzGNSKwGmP59NXDTM/XOosSlw7R4bAQwz2TKId7VPzic4BcqW+AYu7mz0A/M9AQAAAABJRU5ErkJgggDbAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby01ZDg3NGY4ZmZmLXo3Mmx0IiwiZ2l0SGFzaCI6IjRlYTBmOTY2OTBiMGM4ZDVkOTkzMzY2NjRmYjRmYjExY2M2MTlkZjQiLCJ1cmwiOiIvYXBpL0dNUy84My9pdGVtLzE0NjIwMDAvaWNvbiIsImNyZWF0ZWRBdCI6IjIwMjUtMTItMDZUMDk6NDc6MzYuMjcxMzMwNloiLCJtZXRhIjpudWxsfQ==",
+    "price": 15000,
+    "reqLevel": 28,
+    "reqSTR": 28,
+    "reqDEX": 80,
+    "incPAD": 44,
+    "tuc": 7,
+    "reqJob": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Crossbow",
+    "lowItemId": 1460000,
+    "highItemId": 1470000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incDEX": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incINT": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incLUK": {
+      "base": 0,
+      "min": 0,
+      "max": 0
+    },
+    "incPAD": {
+      "base": 44,
+      "min": 43,
+      "max": 45
+    },
+    "incMAD": {
+      "base": 0,
+      "min": 0,
+      "max": 1
+    },
+    "incPDD": {
+      "base": 0,
+      "min": 0,
+      "max": 14
+    },
+    "incMDD": {
+      "base": 0,
+      "min": 0,
+      "max": 14
+    },
+    "incACC": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incEVA": {
+      "base": 0,
+      "min": 0,
+      "max": 3
+    },
+    "incSpeed": {
+      "base": 0,
+      "min": 0,
+      "max": 1
+    },
+    "incJump": {
+      "base": 0,
+      "min": 0,
+      "max": 1
+    },
+    "incMHP": {
+      "base": 0,
+      "min": 0,
+      "max": 14
+    },
+    "incMMP": {
+      "base": 0,
+      "min": 0,
+      "max": 14
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "mobId": 6090001,
+  "mobName": "Snow Witch",
+  "chineseMobName": "冰之女巫",
+  "isBoss": true,
+  "inGame": true,
+  "totalDrops": 11,
+  "drops": [
+    {
+      "itemId": 4000415,
+      "itemName": "Ice Tear",
+      "chineseItemName": null,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 0,
+      "itemName": "Meso",
+      "chineseItemName": null,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 700,
+      "maxQty": 777,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 3010045,
+      "itemName": "Ice Chair",
+      "chineseItemName": null,
+      "chance": 10,
+      "displayChance": "10.0%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": false
+    },
+    {
+      "itemId": 2384037,
+      "itemName": "Snow Witch Card",
+      "chineseItemName": null,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": false
+    },
+    {
+      "itemId": 1032045,
+      "itemName": "Celestial Earrings",
+      "chineseItemName": null,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": false
+    },
+    {
+      "itemId": 1112407,
+      "itemName": "Circle of Ancient Thought -",
+      "chineseItemName": null,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": false
+    },
+    {
+      "itemId": 1122002,
+      "itemName": "Bow-tie (Red)",
+      "chineseItemName": null,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": false
+    },
+    {
+      "itemId": 1302028,
+      "itemName": "Light Purple Umbrella",
+      "chineseItemName": null,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1442018,
+      "itemName": "Frozen Tuna",
+      "chineseItemName": null,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 2040340,
+      "itemName": "Scroll for Accessory for STR 10%",
+      "chineseItemName": null,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 2040345,
+      "itemName": "Scroll for Accessory for DEX 60%",
+      "chineseItemName": null,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    }
+  ]
+}

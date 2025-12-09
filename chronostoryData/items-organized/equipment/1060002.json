@@ -1,0 +1,30 @@
+{
+  "id": 1060002,
+  "description": {
+    "id": 1060002,
+    "name": "Blue Jean Shorts",
+    "description": "",
+    "chineseName": "藍牛仔短褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAQCAYAAADj5tSrAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABhElEQVR4nKWU3XWDMAyFxTlZgI7gjuCMkIzgjgAjkBFgBBihjBBGKCPUI5QRXCQjV/4hL70P2GChT9cyXCCXg/+rkjclCDT9N43rukbPnyPAPD9oPi19eL5tfzF2+cjyFSHz9BAJLNS1ovn7Fa+ao6J3MO5MRYhperDWl7fMLehbR/N1GWjOIz9T2ng32wo2cV+CuFoZcsKV3cwIr8TQ4KTWCMO+hr5kTtAFip2cSak6xAUnUHYjIY4b/gpgrc1ifM9sACnd7aAhuLnkSbasiVuByTAPgZcqNp5Pk0yCSemkgT9JWsUxSU+KEPf8cjBM8aKsNlW6ppTYsh3UjT8wtG+0ZRcGoLpGRyAlqsVKj72mUSVOpMbeALaMQdF20ULjPzYJQ4A8PWfqOxPySCGkul+r4IYDGIb303ScKP/LqPbRwe0zuJGxUrsLimcnBCKrT5e90DSGTt2wxFsid0CqvYfvMDvC1REQ/sIBiICjKlkUumeASCzjIIVkARKYvgjC/cl60C+6dN2igVwsXgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAXCAYAAAAV1F8QAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABz0lEQVR4nKWVgXWDIBCGz/dcgI5ARyAjJCPQEcwIZgQdQUeoI8QR6ghlhDiC9TBHDgSStvceAfG87/7jNCXsbYH/WxFuxEBQNd92nqbJ2792AMNwset+bNz+PD98zPgRJUdBQ39hQQwIIe36/YC/iry8Z9AvZ1GQrhowZktzHM6gjrVdT2Nr1zTTnlR6UzVPYIIqpECLkNoqogyPustmSmCnSCgE4jl757RThGrQSFHKpBTOzylCS6jioIWaIAcxxux8tjM0DiZVvcJaT9VOEQYID3aOcAm4geCpRZuBuowHwsC2A2HrMCV9n+CMkqDl+rVA2/sOPOvQwntSsvKtsLq7QXt+c+UrCYJWV8qDSZY1ZnyvvZ1loIhb12jAI+Qwr3T2ZrW9kByIEN5VKWtq7eKEhqDidCicKnIiIF73/b3Tts9Lsc4LHD+dKu7LbVVj/QkEBLOyr8vuoarSthvb8bGH5eGV4HY+ua6Otndxd3JfbwdFCMuOV4EgLLgHiIF2ThwaedhVIRX8GSib2S/vvwwie+Hd35l3ciFIBHNq71XITINAIjFS0FjQ2D4OfDdMyYJKNv9VSRLOFaWccn9Mc2btjRIe8p6VSCSgucTc+geFdfeOYAyrewAAAABJRU5ErkJggg==",
+    "price": 25,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 0,
+    "tuc": 7,
+    "incPDD": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  }
+}

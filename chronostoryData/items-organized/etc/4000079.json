@@ -1,0 +1,27 @@
+{
+  "id": 4000079,
+  "description": {
+    "id": 4000079,
+    "name": "Cerebes Tooth",
+    "description": "A tooth removed from Cerebes. Very long and massive, enough for it to be a threat to someone.",
+    "chineseName": "地獄獵犬的尖牙"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABYAAAAfCAYAAADjuz3zAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACSklEQVR4nK2WgZHbIBBF1zNpgBZICaQEpQSnBKuEUwl2CVIJUQmhhFDCUcKpBGf/msVg6WQ8uZVle4R4/P0sSN+oLa4b1w57HVrA1/e/f+RPCIF+9cNTaAtYoMZaii9AW8ACXWKkyOcrsQfOFiAsD/BVYFFrDCumyL+Gfo9n2IGJ/D+PYYFxNtsB1a3wPfDh+4+f14+Pd1FN/Fl4AgE/n080DNMu/OnkqWoE7FiWhax5Dn8GXqmmZAnbvgtvWnlQDegr8BawqJbSK+DqdwyRxnGkvu8reOtekS3RKP2OS1jBW8ESpSVa22rJI/wlcBla29XADNdo3jZPp273hpsld7+btk18YZK4A1mu6c515JyTxmmepE3DHc2niqtNHUtYOjDIMnBhVcPQ0zRNcr07duIzz6NEmOcVWIA68+qfedjVjKy6UeBQCvWSEd8f+Dye3shzZgqWOsUT4nIZEsCIb0jYps5Qq4MC6Pko49busmKBwitJ2d4aMBFyeoagXpOnmomUWSoCqI1pUP0VxVCqUDQsalhSPvuZHHfWCdOAagiSFYjNivtfhgua7nUMmEJxAqjX8T/EkMHlwPB56+myqgrcaKzJS7aMkPYHTR/hAXa12hX4EaRqS9WatvqJhTNNnt7OtU0AH/CoQb364GUBQHVMe0GpXOwqJ6pY0qXaTSsQ1t09q/yOi1ZThhqpIl9BS3ClWpWijjXl4EMesIQ+Kt1SXMElbT5EZcpCy/EO9JvQLSsyPIejqvj5MZTvpZ3Y8viQ3hs+i6Z3t3+iCpXHkmkXHwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACgklEQVR4nLWWgXmjMAyFle/LAl7BHcEZITdCMkIYIYwAI8AIZYRjhHqEeoR6hJyeYhFDSSjcnVIXGoN+v2fZ7p62xW3mu92rF7aAbp8fv+XGe0/nolyEbAEJxFhLYQVkC0ggMQQK3NbEGtBgGcIy8H+BRI0xrIgCXw29NxXsQ2H82zmCZcbZwT6o+ilsDWj3dvh1+/r6FFXEP5ELArCqulBZti9hq4tBVSFgX4yRrFmGrQV9U0XJQp62l7BNOwNUAbIGtgUkqqTUM5jOV/CBmqahoihGsK173WChRj5fIfpvsK0gidxCXVtq4RT2V6A8dG2NBsIwjc3HxOVyfPnA3cLHfG06JvALk84JyPKaOrojOeeks+1a6dNwJyPXn4BGhxy2HEnAiS0DIo+6LAtq21a+P56OMk9cFxK+6xZBAtDKUv/NZNc2sis0AoMSqBPF/LzndrpcqWflz0CyTnCC1nWZEhrxHQbZlAxqdBAA9PzJ497vnioSCLwWi+z9QUystJ6TYr2kOVGlUtapyKAmpEHodVYRlCgED0Y1PCnr+o4cJ9MC0IAqDFB2CGy+/H5d1uh6vo6QXCFoAOj3uPfBD6B8IJinudN3serworFm2GKmyjWp/g/RA+TGahZB08SqJlelNgmMHcBCbtuertXY1jnQDkcz1kvve1mQUBXSXpYrE3vzic+2oFzNHMjMKbPu4flovkLU6h0gRqpUyvxA99MKo4oKMpN2ZlXvqkqVYB2pRb73wwBySFKCxecSBJ1hnyW32VXUM+yqMLGJP6IiqdTyfwBEST3nSq5ocCe7LxlW6f4m4Wi0GPnY1p7zJMeo7TN5OSy/PzDsg57H2+TvOHf/B/xvppIsgHxTAAAAAElFTkSuQmCC",
+    "slotMax": 200,
+    "price": 115,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

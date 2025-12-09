@@ -1,0 +1,43 @@
+{
+  "id": 1040050,
+  "description": {
+    "id": 1040050,
+    "name": "Black Sneak",
+    "description": "",
+    "chineseName": "黑敏捷之服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACV0lEQVR4nKWWDa0CMRCE2wQDWMACSMACSMACSAALSAAJIAEsYAEJfXzNTbO39HpH3iSk5Wh3Z2d/uFloI7nvMUyDvde80yKQdrtd3rzf73C9XmV4jES5B87nc/POmALWedhsNuwVXc1ocf58PvO6XC7ZD5JoElgsFsUQuN/vmQToiFij6Xg8htfrle/oHuetjZ8IrNfrskcF1ICEDBsS6fF4IHfP+RS0CMTVapUNG4PxQyKhDJGKxJDz7vcQ/lMDgDwCRfxxnniGcWS3zufzefgFYwRqKuTnXWH1cg4p0sSH9I1FP4VAgVeBPdHjRM4BCkidMGFu1Aj4IVJUECChivegPirOBweTJ5But1uR+3A4KNpCAmkVrZW+UnylQy6XSybLxw8mSyBHJcOAoeIvqA0F4zx2d5MlQUBSBgL4MIH1FdDgIY8qJl0gepzzu6rfRy6JRQJgA3s4Rz1WFNlut5mECGSZOAgJkQGfg8E779ITpJiN3HzPq+pEacOuVbGnAGyVqy5fRXbrHEAWEqTJ1oSfA5whOGzLFiSkAgRKnnQIqYgc4KDmXCskx0jYblEa9Gxm5dJhyctag4gKNRKWqFRQbVlSmYDyrULBoOS1f8ehMVjoFkvCzIMvNfjI58yysdLA2LXc2FSLXcsGvROo/wlGdnGslhSBSJshufIDYG/++1n861kVOBVOp1PZK2KloZcCkfDGUIALdgx7+HFck520UNRqW9Nh0bZhT2KmWKUGCnwhDj2z7xIuyO9J6FByut/vwy9whOPAPowRKBc+uZyU/5ajIfwBrV8Xj+IjS9kAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAYAAAAAwr0iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACm0lEQVR4nKWWgbHiMAxEnRka4EqgBSiBKwFKoAUoAVqgBCgBSoAWKOFSQo7n8forwnHI/J3x2CS2tFrJIrNQR+d+N+E72HPVMzUC3W63i4u2bcP1epXhMRL5HDifz9UzYwpY52Gz2bBWdCWj2fnz+YzzcrlkPUiiSmCxWGRD4H6/RxIgEbFGu+PxGF6vVzyjc+y3NiYRWK/XeY0KqAEJGTYkusfjgdw959+gRqBZrVbRsDHYvEl0KEOkIjHkPL0P4Tc1AMgjUMRv5x3PMI7s1vl8Pg9TMEagpEJ8ngqrl3NIkSYG6RuL/hsCGV4F1kSPEzkHKCB1whd9o0TAN5GsggAJVbwH9VFwPtiYPIHudrtluQ+Hg6LNJJBW0VrpC8WXb8jlcolkGb4xWQIxKhkGNBV/QNdQMM6bdLazJAhIykAAHyawvgJqPORRxaQDRI9z3qv6feSSWCQANrCHc9RjRpHtdhtJiECUiY2QEBnw3hi885SeIMVs5OZ3nFUnSht2rYo9BWCrXKV8ZdmtcwBZSJAmWxO+D7CH4LAtW5CQChDIedImpCJygIOSc82QHCNhb4vSoGczK5c2S17mEkRUKJGwRKWCasuSigSUbxUKBiWv/TsOlcbCbbEkTD/4UIMhnzPLxkoDY3flxrpak65s0DeB7j/ByC6OdSVFoOGaIbnyA2Bv/vuZ/OdZETgVTqdTXitipaGXApHwxlCAA7YNe/h2XJKdtFDUurbmhjX2GvYkposVaiDDF+LQM/st4YL87IQOOaf7/T5MgSP8xzu1GPs7joffufwXpuGvWXMtJE1rRpXA3I1tmoOZ/Vpok9PSc8YrjXaIgJwuzGydTfvm+nFeRE2BocODxtw7v/ZjkIBkGpN6PkCmRvhj/3931DIX1rji8AAAAABJRU5ErkJggg==",
+    "price": 8000,
+    "reqSTR": 0,
+    "reqDEX": 50,
+    "reqINT": 0,
+    "reqLUK": 65,
+    "reqJob": 8,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incSTR": 2,
+    "incPDD": 22
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 22,
+      "min": 9,
+      "max": 35
+    }
+  }
+}

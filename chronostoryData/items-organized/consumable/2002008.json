@@ -1,0 +1,38 @@
+{
+  "id": 2002008,
+  "description": {
+    "id": 2002008,
+    "name": "Sniper Pill",
+    "description": "A pill of concentrated sniper potion. Accuracy + 10 for 10 minutes",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAYAAAAYyi9XAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACAUlEQVR4nLWVgZGCMBBFlxkbwBJiCbQgJUgJWoKUoCVICVICtkAJpgQpIZe/sLhEQDzv/oyTBELe/s0mrui9nP9F9Ed6B3THXUXnMp2Duq5dFNQc0FXXOzWW6EiTUPeo/GM/Z32IFmViDMgRCwxKEqOhFC5c15aWKgQ6DYoNDaDX5M79LN8wWNxB121F2S196/LFIQAAGROTtc0A6kGEPV2oUbgG9u4ACwXY4+KwVzzW7qDYGO2Sqv2d0mLzAhVgD4MjOBO3kOwRWkChddqB/RjpDgOZ2tcVBfvWqHny0a0uKTF7RMyRAyBgkXaM7zCXJlIapdmGzxsWCkE8tsVrqKZrrepjbjlw9lLVktIIJY/SFwEmII6enmkUULxtYZwVlcbGtu3RnLg927wH66JhKFInrgQkqRqksXMlMBFgta17WOyL4pRcuZ/XmZu92oL0sCTtYzC8qwFpmmdc8bDiQ2DknbENKRII5Q75km9d6v3T8s+T7iW+1d/J+mMOeaMA3u/atGRlOpwRHJfeoYfpZxo05XAALso8rDInICkMrZt/hgtAvZu9aUahqu9wBgUm0aM4UBi+IPqxtF11jt40iyUwWViESowTokPRgi97X5kjx/cTYNTdjdxH9OIOUjB25PtvL+9F0G/nfpxSvSBcBqn81T/+v+pbYITriq+Xhen+AdgRLTTXWksBAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQUlEQVR4nK2UgXGDMAxFxV0WICM4I7BCGKGMkI6QjNCMUEYII5AVGCEeIYzg+htEhLAJvfbfcTa28dOXhXf0Xs4/Gf2T3gHd+aOla1OuQd3YbgpqDeja24N6S3SmJNQ9Wz/s1+w/s02ZiAFDxAyDisJIKOmNu87SVmmgk6Dc0Ax6Kx6hX10OAczuoNuxpepevnW5cAgAQMbkZG0/g3oQ4Uw3KgqXwMkdYFqAPb8dziq8S3dQbox0Se3pQWV9WEAZOMHgCM7YLcRnhBZQaF+OYP+OdOtAUue6I3VuvVjHH927hgpzQsQhcgAYzJKO8R3WUiKlWVkdwv+GjTQovNt6GaoZWyv6WNvMnC2qmlOaoeRR+izAGBSip1caGZQfB1jIikhjb4f2bL5Ce7WXCSyLJkCROnbFIE7VLI2jK4axAOtsN8FyXxRfxS30L13lVq82lZ4gTnsMhrkOkL5/xZXPK14DM+8s2OAigVDukC/5waU8Pyk/XoyT+FZ+x/vHHIaDAvj0MaSlasr5CvW7TA49TI5JUMrhDFw3F11ljkFcGFJ3P4YLQMyt3jRRqOg7/IMM4+hRHCgMXxDTO7djdUZvms1iGG/MQiXmBdFnPYC/T74yI7/vb4DZeDeGPqJnd5CABUe+//by3gT969rfAuVPtfcunyqVe7UG6uVLCpirNjWmVSRgPT8amCeeFPzqq/Mcrhd/c0WAEhbuJQnkzY1o5eYpZ/XKfK8HYg5TixcfJ+Z0f/bs1KSleOp0UDH4WoBT/wf6wEfIJO2A4QAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -2,
+      "y": 26,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 26,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 300,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Potion",
+    "lowItemId": 2000000,
+    "highItemId": 2010000
+  }
+}

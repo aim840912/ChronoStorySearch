@@ -1,0 +1,45 @@
+{
+  "id": 1452005,
+  "description": {
+    "id": 1452005,
+    "name": "Ryden",
+    "description": "",
+    "chineseName": "雷電"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABd0lEQVR4nMWWjW2EMAxGv0hdoCu0q3Aj3K3QEXoj9FboCMcIzQpd4VZghJTEmJAfKD+uayERWRHvEUPiJ8iHq+TM3GRpAYePhgbvlsjtGbi0Uykzzu3HkgKuD5jbieD9Zb69TAeWwstzlLmTmJSA8w807SXCTz5t01ks4u+PLgzFVsCd7wirO8Irdb9aN9w5I1mCX+DjJKo9J/7iL1iKBK4tUMA1BapwWYH5+s/CZQXqsQiXEvD7T/HLr4FLCLimaWCMhfvaDj8qEDYVa4c9P9Z/NfyIQHhzhiM7YLY8aI9AqLlf9qPwrQKO6EnuELwm4DATI3jn175GIByp/pjkZiKJITV8bMCOD25JoGgm8sjAkIBPBSrNROkwGYvAWYB2MrR4fAKvbwUsDzE4C1BYfXgiQA2kXZgqDx8FQuuMTh3OAia0ytyxKsJZgML37MrwqUBcBWqdRTaZLQJ5qMBLgWtxwqkJ0FFDJYBmxBWIcLW3TwX+Ae7jBxCIiz7j0G7IAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABr0lEQVR4nL2Xi3HDIAxAxV0XSEdwVugIzgjJCh2hGaFdoSPEI5QVuoJX8AjUIIQxFsQfFV2IOY74PSMbKy8gH4YZU7nJ0gIGPlvsfGgkd1eAWxdLqTB37EsKmDFAfV0QPn7Ur5UZgKSgOU0yDxSTEjD2hKq7TfCLHdbzWSRij/3gumIrYK4PcKsb4Eze79r4I41IpuAJPEzC3NPAfzwFpZjBawss4DUFWLisQD7/WbisAB9FuJSA3X8Wj/wauISAadsWlNJgfrbDjwq4TUVrv+dP+V8NPyLgrpzgkLxgtpxoj4DLuV32o/CtAgbps7FDcE7AQCYCeOfdvkbAvVLta5KKiVn4IX+zAey44UoCi2IijQQMEvBYgCkmlg5RXwROAriTQQf9N8D5fQFLQwxOAhi6PnwmgAWkLkyVhwcBVzrDUB1OAsqVylSxVoSTAIat2SvDY4FpFbB0Lm0yrOmTyOY39y6w8FcPi4Gn5LgFPkQtIzD9YTiPrYkEODAnkbtSAve+hXlhK3bfmAKI4E0CE13+WCCGv0Wg9Melkw2FftoYAYQryOcdkjFOpiTMyv8BciykcfKgrdIAAAAASUVORK5CYII=",
+    "price": 60000,
+    "reqSTR": 35,
+    "reqDEX": 95,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incDEX": 2,
+    "incPAD": 45,
+    "attack": 3,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Bow"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incPAD": {
+      "base": 45,
+      "min": 43,
+      "max": 47
+    }
+  }
+}

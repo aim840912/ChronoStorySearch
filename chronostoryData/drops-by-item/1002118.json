@@ -1,0 +1,19 @@
+{
+  "itemId": 1002118,
+  "itemName": "Blue Robin Hat",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 1130100,
+      "mobName": "Axe Stump",
+      "chineseMobName": "斧木妖",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

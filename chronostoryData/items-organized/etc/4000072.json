@@ -1,0 +1,27 @@
+{
+  "id": 4000072,
+  "description": {
+    "id": 4000072,
+    "name": "Grupin Tail",
+    "description": "A tail removed from Grupin. Very soft and ice cold.",
+    "chineseName": "藍獨角獅尾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAbCAYAAACAyoQSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC2ElEQVR4nK2WjXWjMAyAxXu3gBnBHYGOQEfgRkhHoCPACMkIZYQyQj3CeYRoBJ8kW9jkCCR95/eIE0fo0z/8gp+t8IRsdXvwLFRgIRwzPcb9pa5UeIE/CpUbrwTzHmB2AMbEP3i3JgtiCSbZ89dVvr+/1UHBj0DD13c01hFsmj00RGlbAwYyXBf/RIy7tbSjEa8ZruAjaOjPV3B01zTN0DQNDCcrGs3OTUsUkue8O4KfPwn8uw570ND2V7hcRrK4gc9zt+nZ1mJPNaeyo6Lj2vXUzY8DNZeiHzOCd58kVOYeVGKPbqTwxnxuAbGkpa8+EiSfCrXAecVo0A50KW9b5E+D5NUbk8Ferqi1oyJDn0OMBXAPKt6eP0M2V5VDqs4ElPz5qJgLjguNz5JdC5Cv8b0Wh/art4Bh8lCBALlg2EOubs49y3FrsQEahctHvYrgLpQVWgaZ3H981hhYrEc60DyyMZeJhwfCPNalqtUo3IVyaDwRDeYiWTog7c6zZzP0p048LIDVPb37UIYYzolZ5xAzWMLrHe1dHJEHwCNoNY11sGki2ZRIAUo1cThzSY7jBzRtD4+sw9kreeUdtAqp5+iQbWitDjr6dCNgO/wXaDV91DJ/dUmeKY6GqGhT2AnIsm6sgun+AE4vyxPlJ9ACpnnUVoh9yZOnOVEKLvEJkoC87oJvobeC4qU1RfVq18NE3/utmVwVujbBt9AKileRE81dLhYOpfe4ekAjULVSWG03SMhLb2/gh57K4kcaW+/miZR1aaTFolmBGWoGya3zCI+uLWhFvRZM00PfD3nyLFeKr3sT2bfXKpy/nnlP24YKsDsNeXBjrlrYcMhtH+9CV2a2ffzpMb9uRCAu1ate6j36lHkGKsXD/SX6nE5vkCkUx5668g8wtAO9IdI91CorQ46gIrz0V/sdT1i/xjfD1sCegRSFJ4AlNN80v96rilX/iuhYbf13uP4CDPfGHrhJObwAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADGUlEQVR4nK2WjZGrIBCA15nXAJbAleCVYErwlZArwZSgJSQlnCXEEo4SjhKyJfB2FxD0EZPc3M4QlCDf/rHwB34m7oW51XbgVajAnHvMtOj7t7qKkxf4s1D58EYwawFmA6CU/4N7rdJEzME093y9yfPHoXYR/AzUXb+8soZg02yhIUrbKlCQ4FH4FdH3WlOPSqxmeAQ/grr+fANDX03TDE3TwHDUsqLa+WjxQrCce0Pw8yeB/9ZuD+ra/gaXy0gaN/B57oqWlYQtjTGVHiPay66lZn4eGGMp62NCcG/DjDjnHlR8j2Yk9/p4loCY08Kj9QSJZ4Rq4LiiV2gHuqS3zuIXnWSjNSqBrTS/akdJhja5GDPgHlSsPX+6pG5cHEJ2BqDEz/qFOeE40Xgs6LUAuY0ftRi0n70ZDIOFEQiQEoYt5Ozm2PM83lqsQPTC5VSvPLgL5QU1g1TafzzWKFi0RxqIcWRlLhMXD4R5rPOlVqVwF8qusURUmJJk2QGhN5Ytm6E/dmJhBqzurbsPZYjimKh1DDGBxb3WUN/5EvkA+AhaTWPtdKhIOgRSgJJN7M6UkuN4gqbt4Rl5WHslrtxDzELaczTIOrQ6Fjr6NSNgO/wKtJpOtdTfKBJn8qMiKurgdgLyXDNWTnXfgNPbcqL8BJrBYhzjVvD7kitPc6QQXPwJEoAsd8Fb6HaiWKlVlr1x18NEz32pJlfZWkXwFlpBdhU5Ut3lZGFXWourAxqBspXcqrtBXJ5bu4E/tFSEjzTW3swTLdaFkuaTZgVmqBoktsYiPCslaEV7zammh74fUuVZWvCvOcjcw3vlztdX7mllqAC745AKN6ashYJBpjy8C12p2fb+1WK6bnggLtkbrOTSIykUT5kg25P3P30YKsnD+0vWM7F6g1QhX/aiKQuQfxpq13agGyJ9Q1slH98CMWuLe9P+ar+WaSb6N8FYTjyLWs9esVTgrQeeNsAcLDsuNMxj6t01v39DWS6h56p45Id5rPL/SjeoYqi3icQfHkKf3622ctpZfPu8bStodEEOKQFTlb8P3lME/gFfr+AV86oN8AAAAABJRU5ErkJggg==",
+    "slotMax": 200,
+    "price": 50,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

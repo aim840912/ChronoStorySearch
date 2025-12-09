@@ -1,0 +1,39 @@
+{
+  "id": 1422007,
+  "description": {
+    "id": 1422007,
+    "name": "Titan",
+    "description": "",
+    "chineseName": "巨人錘"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 40,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAiCAYAAACjv9J3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB5ElEQVR4nL3W8XWDIBAGcHivC9hV0hFghM6iI+AsHUFGaGZxBMqHfhQNKJqY+yNiXvTnneeZD/G+cPNWvgt1bduGRd/37h1oAO/3e/ziajRmiLDWYnNpeRcZEsTHVWg2Q+5fgRYzvArdzPAKdDfDV6NVGb4Src6wBnV7B+M3wzBgylSDW6hzv/7or004gMjwdrsR3gVLqHOe0lr5pS0dF8FxHA+BOTQBi/EUuEYD2HXowqkplFK4TyxxeDU9C6ZoAi6DMO6x7pSvghbo1rMgUQ8OAo3nzx86EI3BRwDrwVjR/bR+PR30DEhUSqn5Vg/lI4ww372w4yDQVMgaMT8ap4PljVfty+cIG+NBO63nMufO4dbnqEXTkIBxj9fgahsw3N+maXw/dDXDpIguwDSwz3vNUnM4GGOq4exEkhIZ/GdGPG2udP8ovHhO8cHhzXnKSEGUk+szcHxO0TyIFOOapcRJsSYEPAfvze3YvWgeZJkb3mgaZMCyptAabtWyQltoQPBHmFmtAxeUNlYOJuizXFz0Fhp+mMxahgvtLMTDs5rCGCJ+HItPvQ3m0OwBfDZLsGomqQYsoQ8XwSmVg5WaJVkH1qJFmC/5I+ARNAOfA4+iEZ76avCgPgyeQQPis8OfmlMg4g/sj3G7n+etDAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAjCAYAAABo4wHSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACMElEQVR4nL3WD3WDMBAG8PDeDFAJm4RWQpAwC7MAEoKFWpgEkLBK2CwgIbsvcPQSEkj/0HuPEljDjzuOdG/qdWGnffEq1NZ17QZt29pXoA68XC7zib3ROUNE3/fY7VpeL0MG8bEXGs2Qj/dAkxnuha5muAe6meGz0awMn4lmZ5iD2q3J+E7XdVhlssE11Nofmn1ahR2IDI/HI8ObYAq1lqiq0jTsU/NmcBiGm8AYKsBkPASGqAObBl04NoXWGs+JS+x+mh4FJSpAPxjGM64aTVWoFLr1XpBRAjuFxqPruw5EY/ArgHFnetV81zQeJz0CMloURcW/6q58DCPMZ6v6oVNoKmSNmF6Nu4PLO981lc8ybAyB/Tieyhy7hg2vkYvKKADjGYdgsHcYnm9ZltQPTc5ikkQ9UAaO+VlzqXlxMMZkw9EVqSiQwTUzxmVzyeNbYe89xQcv3ryeckgQ5eTxPfD8nqJ5EBLjMZcSF8WYIeAxeGvdnrsXzYMsY4s3mgYZcFklFMK19iu0hjoE/whzVmHghmRjxWAGKUvvptdQ90Wx1nJY185KLd5VCWMRoeVYHap1MIZGJ/C7mYJ1OUo5YApd3ASvUjFY60kaqQNtZTB/yEXLYP9B8G8I84/8BEI/JsBBbAu0TGyIhmBzhT2wjYASxvY3bYNEGXgX+zDrM8FfY191BLrSntWypGGmXsQyTU3g44ayM2M1VRP5bjgONw/lEkg4lgHOnSLnh5Vj72//vi6M8eEhTRMAAAAASUVORK5CYII=",
+    "price": 100000,
+    "reqSTR": 130,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 40,
+    "tuc": 7,
+    "incPAD": 62,
+    "attack": 5,
+    "attackSpeed": 7
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Two-Handed Blunt"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 62,
+      "min": 60,
+      "max": 64
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": 1002100,
+  "description": {
+    "id": 1002100,
+    "name": "Old Bronze Nordic Helm",
+    "description": "",
+    "chineseName": "舊青銅諾曼頭盔"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 55,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC3klEQVR4nL1WgXXjIAxV3usC3Ah0BDqCO4I7gjOCb4R4hHqEeoQwQhghjBBG8EkCY7ChSXr3Tnl5OA7W15e+hF/geZs3vw/PPPwMIAN9nU7grAWLXxAAw6SXAB4CfhRwvl0uDGKNAYefxU5dC/Tz9zTNj4A+Ajjfrld/5ZwHW/D40iFRAT0CD+N90HuAM5oHQnYZGOO7CAoCQVsEvcP0O0APtjhO1tQMBiIQjIJqmgbOX5/w/nGsgtYAI7Mtm+xe8l+L7KSUWGcHl8sZ3t7ei6B1hsExiURPE7KQO4bIi0Ho/jhOoJQAqRRIJ6tuS4DzfLsFj4KXBqOfxpEdSyEhLaSAdaul/7nedZZFhuRYBDAbakSg4zCCcTb+l7HFeyQeSqnEPeD2e0qAawsEIZAjaw2TUkouESGbvTNqDxcYOllmuWPIaZNrDQiQHcFeLAKyLoHQIKhcw3UUBVWngHOPsjYoENn3EXx1UzdOZ6peYuj8U1uWGcO261CR2m82fowJKXbtkCCV70OoPWZqW+8FcL6ez+yAe4nmJfqRWDOaMJkVWsPFVXAaWTwYsGp8llKWK8MQCW2gzU3fUZiwgdsB1Vj7MehVm7J8yfeS/BveZDG1QpUb2FXSSAAKaWmj/YxllUswWpcBOaUoHIEMx2GARjQxhQwSIs1EUqijorI4FxQPTAKHegScr5jjxRGvUmStsThOmcWUJvc0Xms9wSeKz+DK4gtxLnVkhlYbVpThwzWMKxpVmArLx9LqOLp33zcLbSfx0QXNVxUIMKDCseWZraxkONmFNiHS7CCMQSyrrQx2hWCp31jD4XhksWy112F6OAvhPaYqGLQmlGSi0wVXg8HSl0rVnfoIePj1+sonbSv3qkwP3+/nzd5E0mp4KGcMeexM1m5fAaH1T/C1trWurNg+G4ft8N6e0HMINc30U++hW3v8vVTAP7GfvHn/H0D3rGJ+CHj4GIZUSH9VP7I/4anSU9oLbAsAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADCklEQVR4nJ1WjXHzIAxV77oAHYGOQEdwR0hHSEZIR4hHqEeoRwgjhBHCCGEEf5L4MWBIk4+cDwxYT096iLzC822p3l+e+fgZQAb6PZ3AWQsWHxAA46yjAw8BPwq43C4XBrHGgMNfbKf9Duj1e56XR0AfAVxu16sfOefBIh4PHRIVcETgcfob9C/ABZsHQnYFGOO7BAoCQXcI+gfTe4AeLBrO+rwZdEQgGDk1DAOcf3/g8+vQBe0BJmY1m2IuW9shOykl5tnB5XKGj4/PJmifYTBMItHzjCzkhiHyYhCan6YZlBIglQLpZNdsC3BZbrdgUXA3oPfzNLFhKSTkiRSwbrW0zvnus2wyJMMigNmQIwKdxgmMs2mtYItzJB4KqcQ94LZ7WoDrEQhCIEPWGiallIweIZutMToeLjB0ss1yw5DDJtccECAbgq1YBBSnBMIBQeUazqNoqDoHXI4oa4MCkcdjAl/N9BuHM1cvMXT+q5plwXC336Mitd9sfBkTUmyOQ4bUnoeQe4xUne8IuFzPZzbAZ4nqJdqRmDOqMEVrHA2XesFhZPGgw2rwUcpZrgyDJ7SBNg/HPbkJFdwGqMfal0Gv2pzla7mX5D/wJouhFap9gF0njASgkJY22tdYVrkEo3UbkEOKwhHIcBpHGMSQQsggwdNCJI08KkqLc0HxwCSwqCfA5Yoxjoa4l6I4GtFwziyFNJvTONZ6hh8Un8GexRf8jHlkhlYbVpThyzWUKypVGArL19JqOJl39w8LbSfx0YDqqwoEGFBh2fLMVlYy3OxCm+BpcREmJ2JvO4VdIVhuN+VwPBxYLLX29hgejkL4H9MVDLYhpGSm2wV7g87SQ6nan44J8OXt/Z1v2p3cqjK/fO/Xm20T2VHDS7lgyGVntrb+Cwg7/wWPte2dyk7bRuOlLt71Db0EV/NIvz2HWgamd+OLOzPqP8CiOFwNKKqn1VRnrZfiCEb5sDlgBJFZv361muv/YXnAiRbDfPPhaxx/srnvBwzX4+J5rRZtBUrjj4ZTrfC5O+9p/A+rE+vgFdPl0gAAAABJRU5ErkJggg==",
+    "price": 110000,
+    "reqSTR": 160,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 55,
+    "tuc": 7,
+    "incPDD": 55
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 55,
+      "min": 27,
+      "max": 83
+    }
+  }
+}

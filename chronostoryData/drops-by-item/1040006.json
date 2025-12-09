@@ -1,0 +1,19 @@
+{
+  "itemId": 1040006,
+  "itemName": "Undershirt",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 100101,
+      "mobName": "Blue Snail",
+      "chineseMobName": "藍寶",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": 1041060,
+  "description": {
+    "id": 1041060,
+    "name": "Gold Sneak",
+    "description": "",
+    "chineseName": "綠敏捷之服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAYCAYAAADtaU2/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADAUlEQVR4nJWWjZHiMAyFlZlrwFeCtwRvCaaEbAlQApSQlEBKOJeAS8AlrFtwCTk9OXZC+Al4hvUGZH16kiX4Q++vcePz5gNftAWuMGOIQrg3aFslu3NpGdhmEK/A436vKcZIKWUo4OvFQIGXAGJMsB234M/ADM2OlFL8AjjdGBT1BQg7LK3xdxv+QrGiYYjVMXaoK+seqOQMMvQO/BFYUoyD2aF44XQnKll4tJBimML+HfgTxUlSezyaSVGqyu4sU9lxJood1DNb4OsSvQQPQ6Kus4t3nilNNMejBAxYhmZ429Ybf6N6DZY0o7Y5cijWrCayk9teSiI1ZwP/Ir1Y+ZbP8I8UY8FRcba1sm0GoOUAx31AQBDwSPUSPOaazs7eXQWKtRwyyArAKd2rfqgY6c71en2L12sBbbhcU3c8Vl3A4zhe6Pt7x6nKxtiXfbxeJSgEgBjSGwmaLp7Aq+KhP9D1+svwr8lhMdYb7tgQcH0PR9aKEFyy62VPf78GKorHyz9Dxu4ZvhN4ij3tfoaauuc9nKbAMnz9HXK95izm/8/khp7OnabDKY6i2LYdeXeidn8UeGSHRXEIiqN+3BIVjlmeNNvFOVgMD9+LECzvfqQ8PsSqWAygGBG1reXDgYYpfmMCPxvat4mc1/w5706R5ffxDBieeVwUaG0ZY48CzONUTd9caQYbexYDQPvBSf9NHdD0fRq7IyCW4XwXHG4oYFwe4yUoawN5P6V8WWMWhGxiAFFim+CotZptYwbHcKqKrdFTq8zp9aKYs+DMBNcC9d5IRqB4DS2KYxikHHgd+fCpd7NibbobxesxJ85FccqKbZTntWKlIi1nRS7hWYKCaimlRZuGDAbU8KwDVOMG89jzfjmNDB9YKdZeMrFUvB5QUBz8oV7CIqwobnY/YTx3SdLcD4j+5pI03vtRqfa5Yt4nf/VioazoFNQ4g2MtZU+hTq4GvbUIdv3F3TjnRpedU95L1/qnZ7KgQ30DiqcB0ixn9dYvw49+vpYzS0GH01D9/Acxif4D9nQmFAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADSklEQVR4nJWWgZHjIAxF5ZlrgCuBLYEtwSnBW0JSQlJCXEJcwlHCUkJcwlHCUYJPXxiCiR1nNeMQ20JPX4CSX/S+TTvvmx/Eoj1whhlDNI7PDl2nZLQ2lIntJvEKPB2Pmrz3FEKEAl4bAwWeEvA+wHfag2+BGRoDKaX4AjgsHJL6BIQfTGt87sNfKFY0DD4Hxgh1yZ6BSuagQu/A18BSYkyMASUKlztQqsKaocRwhf878A3FQUp7PptZUcjKnjxDGjHHix/UM1vg9RK9BA9DoOu1LZ5sKQ30yEcJGLAIjfCuyzt+oboGS5mxtjFzKNasxnOQ5VkKIjVWA19RXljc5Q/4jxTDECgF27PoGwE4coBjPyAhCFhTXYKnuKaPYO9agsLKJoOqABzCs+pVxSh3XK/Xu7i2Atrwcs2nY111Ak/T9E2fnwcuVXTGWJ7j2lJSSAA5hDcKNG88gWfFQ3+i+/0vwz/mgMlZ74RjR8D1MxxVS0Kwye7fR/r9MVBSPH3/MWTaI8MPAg++p8PXkEu3fYbDnFiE178h93usYvx+Izv0dLtqOl38JIrb7krOXqg7ngXuOWBSPI6Ks14/EhmOXh40+/lHsmgerhchMGe/ZHnc6LNicYBiZNR1LU8eaZjzN2bke0PHLpB1mt/zaBW1/Bz3gOGe20WC5iNj2rMAYztV8y9XeIBNexMHQPvByvmbT0DT92G6ngFpGc57wWKHAsbLY5wk1bYjOTeXvFxjFoRqogFRYJ/RUtdq9vUR7MdLVtwaPR+VR3mdKOYqWDPDtUCdM1IRKK6hSbEfB1kOXGeefOntQ7E214Xius1JcFEcouLWy32tWClPZa+IS3iTpKBalrLFMR0jGFDDvQ5QjR3Mbc+5shsZnlAp1k4qUSquGxQUj+6UN2ESlhQ3h69xul2DlLkfkP1ikzTOuUmpblsxj3O8vLGwrDgpWOMI9nkpexpz52pwtopk6x/uxlo72Ric4phOrducEwWd8gMonhtIU/bqvX+G6f1WA197/psF/Us3p8uQ47z6l6mqcevZnn3O4+KorIHVxrWVRGlbLS5B/XyFGpwguhhLyE+UvkxmS/HWpO2mvXxXf6+vJ3Aqx15J1UYSrxJdvPsP3FwWWp471JkAAAAASUVORK5CYII=",
+    "price": 9000,
+    "reqSTR": 0,
+    "reqDEX": 45,
+    "reqINT": 0,
+    "reqLUK": 30,
+    "reqJob": 8,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incDEX": 1,
+    "incLUK": 1,
+    "incPDD": 22
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 2
+    },
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 2
+    },
+    "incPDD": {
+      "base": 22,
+      "min": 9,
+      "max": 35
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": 1202003,
+  "description": {
+    "id": 1202003,
+    "name": "Vital Bullet",
+    "description": "",
+    "chineseName": "高等子彈"
+  },
+  "metaInfo": {
+    "reqLevel": 10,
+    "reqLevelEquip": 10,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "price": 50000,
+    "incPAD": 16
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Projectile"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 16,
+      "min": 16,
+      "max": 17
+    }
+  },
+  "fetchedFrom": "chronostory-api",
+  "externalIds": {
+    "mapleSaga": 2330003
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": 2040344,
+  "description": {
+    "id": 2040344,
+    "name": "Dark Scroll for Accessory for DEX 70%",
+    "description": "",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "iconRaw": "",
+    "icon": "",
+    "slotMax": 1000,
+    "price": 1,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Scroll",
+    "lowItemId": 2040000,
+    "highItemId": 2050000
+  },
+  "scroll": {
+    "category": "Accessory",
+    "success_rate": 70,
+    "destroy_rate": 50,
+    "stats": {
+      "str": null,
+      "dex": 2,
+      "int": null,
+      "luk": null,
+      "watk": null,
+      "matk": null,
+      "accuracy": null,
+      "avoidability": null,
+      "speed": null,
+      "jump": null,
+      "hp": null,
+      "mp": null,
+      "wdef": null,
+      "mdef": null
+    }
+  }
+}

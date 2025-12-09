@@ -1,0 +1,55 @@
+{
+  "id": 1082139,
+  "description": {
+    "id": 1082139,
+    "name": "Green Korben",
+    "description": "",
+    "chineseName": "綠色凱蘭特手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAZCAYAAADAHFVeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACrElEQVR4nKWWj5WjIBDGJ+9dA1wJbAleCaQEU4IpQUvQEmIJUoK0QAlLCWcJ3nwsw2LibjYe7yUohvnxzT/zi/5vrF+sn/YWj8IipG3beKO1jrNzLs7WWjnEBnoEttZ1HQEhhLiAGffGmAzHWoJm4CFlJaRcE4WY8cGhSuAhmPc+zk3TUFVVpJSKLhzHMf9mD3gIhljBEEDiMlwDjmuJnSiV8SpshVExBuMyRC0GYie/wcAefr6+AosgGBJV1+t1A5UYLsuSN2FNDvIMlutIsq103+12o2EYYqwkEwGCcQGUir+CRcjMZWTY7Y4PbD1OOBL21vV7PjEguAYUCvdAyY0PsA3k4vjL1Hw9JOhCY9B0ubwxsN+4DQbLbBSAeOEexsWqqdEhGgy6oqmxvMtRWGYGjazOUVtxsS4Vp3PHRupdBSVASuDBjQKaGj5xxbXjOcUXZBaDrKN50hT96DzxMViZ5WcfqiSu4sYSChdTUWdr04AeEojT2xsyrGq0IYOwFgLUWxq8IqMWYpHRcCpeOfcpKV6T6m0HCRwPy6dwTlFPkN9HkGMVAjI0UBf4IBKXVLNFwmXDO9efsHn+S+fzb4SbrovmFtSxkUBzzUlha2oSqNeezlZx7DjF2QkhlVRStftqeYCh4pUy0R3jeI1QDAAMR+jMbpvrR5D/rN9vQQJbeeS0RVMFdJqmqBTqgkIhc8IEH+Nkk9sASi58CsrKpHkCIFCsAdr3PbelP2yU1ZAizYpFTRGrzXvrWxhA8LlAAZBGCqVtC5XnXQP3TfcZ7MQNdRU1gKLtiFIxhNcKniOmSGeso47KF+iPlNGHC9ZyoyiVxiog3MPV0gdfGWUH2SiUGW6UdgNQ13X5JYlnP0n5PVjeJFABCLAE3XeLI7CNAU6Kh/+Fqc+9BJHxD3Nh4+AEUFlRAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC7UlEQVR4nKWVj5WjIBDGJ+9tA1wJXAleCaQEU4KWoCVoCbEEKUFasISjhLUEbz6WYdGY5JLlPQNinB/f/PODfjbWO/uno813YQHSNE240VqH2TkXZmutHGIDfQe2lmUZAN77sIEZ98aYBMdehCbgW8pySL4nCjHjwqFy4FuweZ7DXFUVFUVBSqngwmEY0n+OgG/BECsYAkhchjXgWEvsRKmMV2ErjIoxGJchajEQO/kPBt7h5+srsACCIVFV1/UGKjFcliW9hD05yDNYqiPJttx91+uV+r4PsZJMBAjGBZArvgcLkInLyLDbHR/YzjjhQHi3LP+mEwOCNaBQeASKbryBbSAXxz+m5HUfoQsNXtPl8puB3cZtMJhnowDEC3sYF6umSvtg0OuCxsryW478MjFoYHWOmoKLdSk4nVs2Uh4qyAFSAjduFNBY8YkLrp2ZU3xBZjHIOppGTcGPbiY+Biuz/OxLlcRV3JhD4WLK6mytKtB9BHF6z4YMqxqsTyDseQ/1lvpZkVELschgOBavnPsUFa9R9baDeI6H5VM4p6gjyO8CyLEKARnqqfV8EIlLrNks4ZLhg/U3bJo+6Xz+hXBTvWhuQS0b8TSVnBS2pCqCOj3T2SqOHac4O8HHkoqqDj8tNzBUvFImuGMY6gDFAMBwhM7stqm8Bc3f9fsQJLCVR0pbNFVAx3EMSqHOKxQyJ4yfQ5xsdBtA0YVPQUmZNE8ABIo9QLuu47b0h42yGlKkWbGoyWK1+W49hAEEnwsUAGmkUNo0UHk+NLBvus9gJ26oq6gBFG1HlIohfFbwHDFFOmMfdZR/QP9LGX25YM1fFKXSWAWEe7ha+uArI+8gG4Uyw43SbgBq2zZ9JPEspjxqRh3YX/KbfSOGQsXQz/RvBggwB2XdAsEsHoAWuXKYyi4YUJwU495C7HNhGWezV7AD4oKrvMAEorM5N3jkoqO9PWgz9sru/fHeyffP9uvN9ZE98DvgPTVH4EeHS+t/193+/TW67QIAAAAASUVORK5CYII=",
+    "price": 270000,
+    "reqSTR": 330,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 100,
+    "tuc": 5,
+    "incSTR": 5,
+    "incDEX": 2,
+    "incMMP": 10,
+    "incPDD": 39
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 5,
+      "min": 0,
+      "max": 10
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 7
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 60
+    },
+    "incPDD": {
+      "base": 39,
+      "min": 0,
+      "max": 89
+    }
+  }
+}

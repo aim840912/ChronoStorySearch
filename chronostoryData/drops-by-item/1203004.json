@@ -1,0 +1,41 @@
+{
+  "itemId": 1203004,
+  "itemName": "Wooden Top",
+  "chineseItemName": null,
+  "totalMonsters": 3,
+  "monsters": [
+    {
+      "mobId": 3220000,
+      "mobName": "Stumpy",
+      "chineseMobName": "樹妖王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.5,
+      "displayChance": "0.50%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2130100,
+      "mobName": "Dark Axe Stump",
+      "chineseMobName": "黑斧木妖",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 1130100,
+      "mobName": "Axe Stump",
+      "chineseMobName": "斧木妖",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.04,
+      "displayChance": "0.040%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

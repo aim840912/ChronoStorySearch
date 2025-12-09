@@ -1,0 +1,19 @@
+{
+  "itemId": 1082012,
+  "itemName": "Basic Archer Gloves",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 1210102,
+      "mobName": "Orange Mushroom",
+      "chineseMobName": "菇菇寶貝",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": 1482007,
+  "description": {
+    "id": 1482007,
+    "name": "Fury Claw",
+    "description": "",
+    "chineseName": "惡魔之爪"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNklEQVR4nL2WgXGrMAyGxV0X8ApkBDoCjEBHoCOEEcIIeAQYoR7hMUI8QjyCa8nIwcQ0rwmN7jhjB/TplyWHN3jObGIt23r4GZi1gwDIDUAxM6cMsvcogAj8lLKPsYQ8zwHGluan2kWAASBXC3hvNYOzZ2C2ruubxU/ZgDGG7nH8dwLQ2gUlCZo9rEw7L6RqdpwaP0cBx8KEdx6B2aIoQAjxI4jHbhIwNDmp+y3MlmW5CWJbz9n+F0YbvdwndMhQHHG+hvDvQKO+CyMIq+GXcb+WIJwznIERSNxXRn2E5c0v9uUIUjkFor5RFJzH0qApXDW2I842qzECIQSbV0oAZa4ghqu8TqZRjaO76PZOn+U+2r7vXYc6isbIrynqGxnBY0EClFIBwrYFy/DYsbanIwhBqIDaagIfwDgGOCvqa0NNLLVIOv2xQKqqcsVxAqFbmPsXhmGgAKQLHNeM8qCvZoKq9fdN6RT/FoYKpMsVZuTYYFWCB0kI8K+TIuUIMqKgNamm0MiwSOVmgZzPZyrpruuooqrWtwC1AfiDt5P+wnQyCC0X6cZOwQII0+hf9sXBSlsHKDGFC0AtNI06nCq3jtcwe7lcYJomBlEKWmUipRx9PgPmZ2g8Fr4a5/lmNbrqs1SyS1BCKa3LCU+XKHxa767rN//YDNsEpZQunSfsoc+CrQAetrcNp7uDGPYyI9hq8/9EVYC9yhCWHQ6H6GNzXeZ7wth2dXwPFqBrpXvDUqp2V/rSAvkGB3VdL98LJ9AAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACb0lEQVR4nL2WjZGjMAyFxUwacAtOCaQEKIErgS0hlBBKwCVACesSjhLiEuISOEtGYByTbJK704zHP4A+PSMZDvCZTYm1bO/mT2DT1AsAaQHymTlmkJ02AWzAHyn7NRQgpQQYGppfKhcBBoBcI+DUGAZnn8CmqqruFr9UDdZaGmP/+wJgjAtKETR7W5lxXkjV7DjVfw0CzrldnnkHNuV5DkKIhyDu21FAX0tS9ypsKopiF8QWz9l+CqMXHb4ndMhQ7HEeQ/g6UG+ewgjCavhhfF8hCOcMZ+AGJJ4rozrC9OYHu2IApZ0CUd0pWpxvpUGdu2xsBpztZuMGhBAsXqUAtF1BDNeySm6jHgbXaPikzqSPtus6V6GOYjDydYu6Wm3gW0ECtNYLhG0PluGxM00dHUEIQgVUViP4AIZhgbOirrJUxMqIpNOHCVKWpUuOCwjTwFy/0Pc9BaBc4LhmtQd91yOUjR/XhVP8KgwVKLdXuCPnGrMSPEjBAv++aFKOICtyWlN6XAoZgq3cTZDr9Uop3bYtZVTZ+BKgMgB/8LbKN9xOBqFJkS7sFGwB4Tb6h31ysNLGAQrcwgBQCUO9WU6Ve8cxbLrdbjCOI4NoCxptN0o5ejkD5nuoP+c+G+f5bja67JsoZUNQQimtqxFPl034tN6u63dfbIbtglJKQ+cJe+u3YC+At+2w4/Svgxj234xg0cv/J6oW2A9MwOt2V2kIy47HI/9ykdNA6dG1PLz2IsgGbaMMHcvooSKCpIDpH44VYuZmD4EDOY8bp/QSrb1qyQBY2Slwyjc2TyKPr8XjuBGMpcYK4k/S+qneBz4KAP4AQyt5c71cjOwAAAAASUVORK5CYII=",
+    "price": 130000,
+    "reqSTR": 120,
+    "reqDEX": 50,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incPAD": 50,
+    "attack": 8,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Knuckle"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 50,
+      "min": 47,
+      "max": 53
+    }
+  }
+}

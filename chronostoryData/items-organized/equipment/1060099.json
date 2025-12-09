@@ -1,0 +1,50 @@
+{
+  "id": 1060099,
+  "description": {
+    "id": 1060099,
+    "name": "Dark Pirate Pants",
+    "description": "",
+    "chineseName": "黑隱者之褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABmklEQVR4nK2UjZGCMBSEHzM2QAtp4SwBS7AFLAFKgBKkBClBStAWbIESuGxg48sDPce5HZnE/HzZJSE7STXJd8pY0cCpciL+J8651YzH4zGXeMalzZcuF+nHYCSzwAArm0a6ug7Qoixj/Xg8Stv3YVz546Qe5gWKGRhlI0sNwOJI1wf/uMUhYHAGh8OYzk+A9ZiHMs/nchzNaCqfwbGU57gECJB+fwRasP5v+wicANPObrdbqMfN8OXpdIoLa9DyP2zMTjcSSJjV9XqVw+Eg77R71cGJ5/M5OkNdCy5p4k+gFSIz/lcOEY8g1LuuS/qQYOsUADjRNgfu93u5XC5hxxGXURmdbm3c6FBvSFVV0rZtBOHBZLTBERbais6dTnYZ7gDQUDqCGv9Z0ilNvDqHUXTGd6gjYkEm0aWGroDoJJSHmXX20x0eG38FLP0NUxRFAHGwOsy4opKvyioB3u/34KD319TGuctkQ/YiSYBsHIZhc/AnWkWGS7uAcZd559OLr+Z5OagBm9HsxLcO4WRx8wnsrQDMeJfJP+gXQn4H9bNKqVUAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB5klEQVR4nKWWgZWCMAyG43ss0BuBG+EYAUfwRsARYAQZQUaQEWQEXcEVGIHrX0gvQFM4L8+8Vqj58qehmJBuA71nh9BFDTSUKZH9UJqmq5uv12sc4f10zY6pIWp7l+AKpipC+OJyoaaqHCwvCj8/nU5Ut61bV3ylVHUjOB9BQYuVjioEnhTIeWc9nRQBAiVQ1PV6LBVU9caNxoxj3ytRzAj0I4XXqSAA5P4waAmU39VkFNAAiFTyeDzc3DeBHc/ns09IAqbvq4YIKpIghiztfr/T8XikvZbQDuOA1+vVK8FcGlRxcm+DlobScRn32i4QysQAzJummd2D4lgjhEADy+cAWZbR7XZzHYiyccm4hKwuVragItkIZVlSXdceAEdQXIMCJBAqYajz1K6DGgSWMFYAu9jjiZVxcn99jryxEt4jBsGRCCuXowaLgvAjhvFDynO+z2rgsU6Mggp7Yud57gAcRDykqP/sFImZCno+ny7j1r4OAs9N8OUWO4BVEC/uum4zyB6Llg6qlmCaqzlYpYOyN9uHqvghL5absNyQD9phKxAyn7L/pPGNzoG3d1yEEaNzBpnJMwvBe+Hbeh4AhGDapjHE/YdJBISzr/6hRIVLRdqiWJv1kfnME/qVt1Uio0Bjifn5D7p8IfFcxRO7AAAAAElFTkSuQmCC",
+    "price": 120000,
+    "reqSTR": 0,
+    "reqDEX": 120,
+    "reqINT": 0,
+    "reqLUK": 220,
+    "reqPOP": 20,
+    "reqJob": 8,
+    "reqLevelEquip": 80,
+    "tuc": 7,
+    "incDEX": 1,
+    "incLUK": 3,
+    "incPDD": 51
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incPDD": {
+      "base": 51,
+      "min": 11,
+      "max": 91
+    }
+  }
+}

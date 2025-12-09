@@ -1,0 +1,21 @@
+{
+  "mobId": 9001001,
+  "mobName": "Grendel the Really Old's Clone",
+  "chineseMobName": null,
+  "isBoss": true,
+  "inGame": true,
+  "totalDrops": 1,
+  "drops": [
+    {
+      "itemId": 4031059,
+      "itemName": "Black Charm",
+      "chineseItemName": null,
+      "chance": 99.9999,
+      "displayChance": "100.0%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    }
+  ]
+}

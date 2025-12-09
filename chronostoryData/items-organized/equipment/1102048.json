@@ -1,0 +1,44 @@
+{
+  "id": 1102048,
+  "description": {
+    "id": 1102048,
+    "name": "Red Musketeer Cape",
+    "description": "",
+    "chineseName": "紅色西麗斯斗篷"
+  },
+  "metaInfo": {
+    "only": true,
+    "cash": false,
+    "reqLevel": 95,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADOUlEQVR4nJ2WjZGjMAyFxcw14C3BKQFKICWQEqCEpARSQighlBBKgBKOEk4lcHr+AUOAkNXMLgFkfdKzbPOHvrNh43n0TZAj0BH090mk9fSi7+31dJkl8zGBT9BhaKfgVT39NlAmap/OqUvMO5fALngPamLd7hYEwLO093FMlKX2Oe6VSojlfXkleonP+bYP/ihv+bRVXAqiurHPAAAMUgNEcWtfiF8o/6+gqERTYoKCnZwkqCJqOitrCPP+ofzfQo20xY3omltwchGGtlXiivv2mcwSNHJXUn1urpsSb1aKoJjDuwTpXPadm1tUG/rAvJ8DjsmvgTehSprlcrO/WYKxnysBIgftnku3Up5aRWAYo1yj1RWt2hp0SDMJGkt0GXzVTEkRJKOsxH653HtFSqNSNpXq1L7HX5Yb8Fu1q5UCGMdWw060bB+9AStfLYCPCQjfRmAamRywVagP7q9ry8A8CzoV4N75laIOmqqTJVYfhcYNizQsAzRlMnE/5yAhZecMz/69mG69GhPU8rsXXYtGrh1TruzWudylltDB76+VdI5SYfm0aqbJVCB9kJxMM6nmQKWQpMm0CcKmTaWrVkVaN0h7MxkqYqm2XOniN2gjjRMfJSgk1BhJtWsqNJmZU5rWNzaaKJkkfoPquwx4YAQ2gUlTEzTwY7W+yWKOy1jKc+pAOUrnPiF0eMq6gj+7TaEu3RIIVoLemFvz7szWt3XdnTrowmaVAtgXatwAkPHPCT38TrpK9CjpRbqUmqSRMdtrtLgo8eNR4hkU2W0dEupDlaFfLUlkbSbxaiqq90HzOXWNMRof61p2/3wLeMzdre8859mR56HmKEOGB4pZEGuiA6Mwt7lkVTEPY6XICktF7YwPj7Ut8/2AAmDwR69gXv3YERo2C7ueOPIVsGc2Js+AHjqUX2ha+Yxo/0RRKx5pxlRVrtLrS+Q4zx30g82XAbJFgGYKMTsbsQywHOqzGpvJS7wEXux2aJZMtBy4zNABD3/FcxAjk91NNxMQ//ycjmBzDsoG4XeS7hdAqOQNnzOe4X+E6zRyO4acgWygvHDes+xlvd1XfmgfP8wil90Q3n+wMdk9UGj/AdObcUmQiLfzAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADaElEQVR4nJ1Wi7GqQAyNM6+BtYS1BCgBS8ASoAQtAUuQEqQEKUFKuJRwUwIvZz+w4KJ4d0aBJclJTj7sP/puDSv7u2+MbAEdgX7uRFpPL/reXg+nmTMfHfgEOgzPyXjdTPcGlImedyfUpeadc+At8DtQY+tytUAAuFf2OUmI8szu41mplFjeV2eih8gcL++BP9Jb3W0Up5Koae0eAAAGqgFEydO+ELmQ/j+BIhJNqTEK7PQgRhVR21laQzAvH9L/LaihtrwQnQsLnJ4EQ9soccXz857OHDR01xJ9Ya6rFK9GCqPI4VWMdM77zuUW0YYyWF7OAY7Ox4BXQZUUy+li71mMsc+VAMIH7falWqnILCNY0FGu0JqaoisGOmS5GE3EuiifNVNaBs4oS7Fvl2uvSGlEyiZSndn3+OWFAX6JNhopAJPEctgJl89bb4CVjxaAtwkQsq2AaXiyYUVBvXF/jbWB2QsqFcC9k6uEHRRVJy3WbAVNWhZqWBQ05ZK4/TFwSNmcYe/3wXTp1eiglvteeC1buXZMhbKjczmllqCDn6+1VI5SYfgUXabIVEB94JykmVS7IVJQ0ubaGGFTplJVUZLiC9RejIeKWKKtIlX8AtpK4SRbERQcag2l2hUViszklKb+xqDZpRPFL6D6Kgo3aGAITJwao4Ecq/iQRY6rRMJz7IA5yuYyIehwl76CPLuh0FSuBYJO0Cu5Ne+ObGWfrrozB7pYs0gB2JdqHADweH9ADb8incX6Lu2FuozatBWd9R4tT0rkeKR4Bgrv1j4S6kOUoVwjTuTPXOw1VNavSvOcusIYF2+rWnZ/vgQ8zNX1d1Hw7JPnQc2nDB5uCGaB2BBt0EJuC/GqZh7GSOEVWkW90Q8/a2vL1wMCwII8agV59bojaFgs7Gpiyyng3bI2eQboQYfqC05r7xG9/6KoiESWM9W1i/T8EDqOcwF9Y3MygLcw0E4m9qGctMEv2qE5qrGYPMVLwJMdh6ZlduifUHHpoQP0B6KPU5IDG7lMN91OgPjzOR2BzXdQBoSfJJ1Vx9khHGarCQEgWPILxxm3UqfHYZ/uQRVufu5sQJ2qnHDNkeht5vOHlXan/HDB4Rl5y4FvvBGlR6DgwdYq5yLOVos9D8uR3wwUG70DObi9WHSxwkwje7xyT/8BiYqCKtEsjpUAAAAASUVORK5CYII=",
+    "price": 340000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 95,
+    "tuc": 5,
+    "incPDD": 39,
+    "incMDD": 44,
+    "tradeBlock": true
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Cape"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 39,
+      "min": 0,
+      "max": 87
+    },
+    "incMDD": {
+      "base": 44,
+      "min": 0,
+      "max": 92
+    }
+  }
+}

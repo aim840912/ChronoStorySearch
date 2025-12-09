@@ -1,0 +1,55 @@
+{
+  "id": 1050077,
+  "description": {
+    "id": 1050077,
+    "name": "Green Pris",
+    "description": "",
+    "chineseName": "綠宮衣"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAeCAYAAADZ7LXbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADjklEQVR4nKWWgbGiMBCG15nXQK6EvBJiCVgClgAlQAlQgpQAJUAJpgRTgimB+3eTIArqzVyc90AS9t9vd7Pxh76P+cv84ZuBbyJvBe63kZx3dDyWac1bsU8i8/Xaw8h5K3C/knNW7q/Xi1yj2K7QO5H5BgGrJprnO3l47B3+ZMrTYFuh4AcWzy9FT9exoeOp3hXaExGCzrVkTEbWd2RUQaQxA4OTn2SRUgpCQbbsAu0NIfz9PW2EXkVEYIBAe7bU3zII1DR0Ch5P5KynfpwwX5DCh0OmNV+9UJXtmUYQnV6INiRaw2UX7+FtZ3Mqipwyb2DMQUCT0TkoWMAFgdf3P4QrUNhAcZtH5MJSQQNIsgdJAxLknHPCojym1lPRaKzxdG5LGvuKTud2oXki0QoLo2MswDG3PpI4I963Mv8gcDaVA6UXQWN2SWYuRa89dUNIrLWWFOJdKCYx8p0NX4qJam/ELAsoxeEJuUmiZ+SmB8050iwkTDFMHdnai+dskF/vKKc8y0ibYKSGEQmTJ1mjIpHkgssaV55f5+ZnTZESLi/BW9s5qaDieiTjJUowisqySnKivFrWe4SJlzA9ryuRm/4CmrKdFxLZXHFYP+BfjkRaWgLugqPOPhIuU6iwLNNUnyaUfCFzDkJeCP1TTmRHTzbkg0OjFF7GXmiKMbQQdlCBqiJqhza87gM9C/MI+QmhWjv9s0yiclKJcH4Yu8p6EQgt5bEfqqxCR+iwXnGd0creQv6ak2UMqM+8UtFQEECboNfBfQ3lIC1G48NCFCO7rrLk1k+YMKisNiDrQJEEjDEbkV90Zi6WzGU06UlajMk9nf7UNN4Rz6hoIs0j8W4dDnTgaaB3g4XR2kVIS4WlHPhlfkGLIofD4c9yOHG/YorjqZTFKbZSov65T8l66QSxYDICTbualefLZkwdc3MSDsMzEQt7aR16Q0OhDNb2FpKnUWUXlPLDMBvlltI0F6rrcpdGudBaEg166edWz00Q5wHlef606dLQsW2ke6HBGeKlXcTKomdH3p7xbCDlgWmYItEURSF0a6pA43ZtbUnsw0se0zRtQpTmWEhoQM40+Br3yVeSeD5ECj7L9/KwN4zK4l33UeQQT7TNYI85VLymruu5qqrHHBxhmrWdTyLLAjbUNM1u8hfPtZafRJ7S/nIbgXciGwIen8S+jX/5Lfzf45OIxP71Wbq27W7udn+m/gVF3SlC6xcVEwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADxklEQVR4nI2Wj5WCMAzG43su0BuhNwKOgCPgCDgCjAAjyAgygoxgR7Aj2BG8L2kLlT96ueeJtuTLL0mDe/pury/ru3/4oG9CmyLPx42ss3Q4nOOej4KfhF73+xWOTkuR552sNXJ9v1/kPQhuim0JvR4QMWqg1+tJDpE7i5csOepNKzT8hcH3l/JK91tDh2O9KbYmJCSdbSnLcjKuo0yVRBorcDq4QTYppSDmpc+dp34gnb+/x1WxuZCI9BBpT4aujxwiNfWdQuQDWePoehuwXpLCH6dPa353QnduT3QD2XGFbEGkNUK34RpRd6agsiwodxkcWohoynQBGhaxXmR+/5fUeRrjaR6vG2pjqKQeRPlE1IAIfcA1YmG2oXVUNhp7HJ3aM92uFR1P7RvVG5FW2BwCZBGugXGByGZC0cr6RGJNbBGKN4Iq2yR6cZs67ajrfbGNMaSQ/1IxUSaf2fmlHKh2mbhmEaU4Vb5WUfiEWl1BdUqoRiKm6YeOTO2EgJ2yi44KKvKcdOYd1XAkKXMke1Qgk9pwy+Od1+e12qc0sQnkRkRtOiudVd4PlDnJGByj44ySGimnxv0OKeMtnAXed0atrhdQnT3VSCQHMJhxPf4VKK6hsQDWB2zN1ASyhM7Lc031ccBxKGXNQswJ6dSRoxCf/MH4+nCalIIDnJWmvPlxw4Eq0FVEbd96F85ngcXZfL182tLARyHZgI6KAXC9OAVVfhURP36m6Kq8wuTosF9x/9HMp/hZq9FoPXq3qFRw5kUwUmhuPAfRIjKONP5YjEKW0+5Lj/LeL2bouNbja08TRbJseSZ+MdG5gXKb06AHGUdZ4ej4U9PtidwG1SyhmprBpqnB5B562jIWx2NBxLR0XqyJG9dHxERot9v9jA84nm9Mczie5YaYa2lf9z7XZL9MjNBEOYGqTVbl+7cDG2fS4ona9+9kLO5kzOgFFfnWSP29Eb1ZlV/Q5pNzdszjp2kuVNfnVSpl/RiKVJi/3x8TPDjxPKGiKN4OZjQdRky8Fio8g5yMldBxtAxm8zcDO4l1YSqmiVRlWQplSuep7Ja7FSIzRcs2DMMiXXGNxYQKGWAqfAzn6F9E4fkSaPi3wVpd1ixTebjqvgrtwpNxYRw5pw32U9f1s6qqaQ3BMFViP9+EVNik4OzRNM1aQ4yjgk++CT/D/PmTvTyz4kiII9xFIbXyGknYEsGYny2LgUQRvtHuE8c6ef9k6h/ri6KmRNHiJmSvbmb7YyHqtm3na2zx97Obv/Y04aVi8frwIdK4No/erV3/Ae6kP1iuIn+dAAAAAElFTkSuQmCC",
+    "price": 140000,
+    "reqSTR": 0,
+    "reqDEX": 250,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 80,
+    "tuc": 10,
+    "incSTR": 2,
+    "incDEX": 6,
+    "incMMP": 30,
+    "incPDD": 85
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 10
+    },
+    "incDEX": {
+      "base": 6,
+      "min": 0,
+      "max": 14
+    },
+    "incMMP": {
+      "base": 30,
+      "min": 0,
+      "max": 110
+    },
+    "incPDD": {
+      "base": 85,
+      "min": 5,
+      "max": 165
+    }
+  }
+}

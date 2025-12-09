@@ -1,0 +1,49 @@
+{
+  "id": 1072147,
+  "description": {
+    "id": 1072147,
+    "name": "Sapphire Camel Boots",
+    "description": "",
+    "chineseName": "藍十字鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAeCAYAAADZ7LXbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC+UlEQVR4nJ2WDZGjQBCFm6ozQCQQCUQCSOAkgIQgIUgACYcEkLAjISMhSOD69dBkIPzsblclEBjeN/1L/tDvbVz9DvYW/hQyC9d1TcYY+VhraRiGcQ/0XYiIj+NITdOIcFmWEJabcRzLOcM2QWeQhXiapnIREAUkSSLnURRRGIa49wE6gowQ7/teANi5GkQRrrZtZ4BCt2wPMgMQbz80XdfJNR+gBk8QurU3W5ARuwSgqio5TtQZCoCKA6Qb8HPkgzY9yfNc4g9RP2TIBQyAJKvlvCgtJVG5eH4dujVEwgQx9aYoivmmVhE+VTUJDXYhipBN3u+HCwDsWq1+uPPedHKceoKP8MosxGEIJZ1VFwSyLKMkduV6uTnx1yOlZnAhknDFzewBAPh4mztMfMC54IjVHOuR2t6ygguJiqs3fuJhAACURAP1w4MfKQ8THwRBgdSQSTMnShFdym72xq8mFVeADV+4Q2HE+bOpgE7HioXg5Ika+kZz4BfDcv07X3uQ2ZuizLkYQnkY3oRUiLBvCoQHNLTuGjUUTf1y5ImAGLMQy+OB2iHefKC3IWMMRaGRterdWbiQOBmSLy6sa/NFFSf9HnGjUrLoDz3PEhRGuLh3OCDxhSpyE9aNlzpJqexx7R0mCHpz60Noc3bJ1+h64nZrqPvX0+0vV83gBDDe1VR0C4BSp43qGiHQdZkkHPbVFQ4weWHCO7auAnPs9bcnLoC1JyM63c2eSMbJjfsEAKsvKOTbVALy3oabu98NFwB1DSUrAOtPU679a/OUEq2TkhPvPNV8rGFbkBHjHbu/3J5cIRgZDvC6X+WIHnFNFi/CpKA9Lz48gQEgM4sFMUZKc5frz3tK1+rxdoyFMdJXOTn+tyJzqK2pvgdUT71W9DnHPhKBos8YxGHiAipalG4rVbZVslsQCRUWY2fG5IsF7/cH56lyfxi0hBVw5MXsCRbvNZKazitA/HVnAIUE00v/Y/D5psKrJJ8CFEI+6MhWfXEqvoZ8G/QTcbX//rcwFMnmVL4AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADMUlEQVR4nJ2WjZGjMAyFxcw2QEogJZASoASuBCghlBBKgBKOEqCEdQlxCaEETk9GxBB+9lYzBALmfZYsyXzR721c/Q+OBv8vaBav65qMMXJYa2kYhvEI9lOQAMZxpKZpRLwsS4jLwziO5ZqBu7Az0AKQpqncBEghSZLIdRRFFIYhnm3CjkAjAH3fCwQeqEEYoWvbdoYoeM/2QDME8ffD1HWd3PMhavAIYdzyags0YraAVFUl54k8gwFRAGA6CX/N1rBNj/I8l/WAsB8+rA0MkCSr5booLSVRuXh/K4xrkIQMgupVURTzQ80uHFU1iQ12IYzwTVE4Dh0gmL1a/XDXvenkPNUMn+GdWQBgCCv9JOsgkmUZJbFL5cvNAV6PlJrBhUtCFzezJ4Dg8CZ4mgwBrw1Hr+bYj9T2llVIwqMA9cpPBhgggCXRQP3w4FfK02QIgqDAUpFJMydMEV3KbvbKzzIFKMSGLzyhMOL1tOkMO21BFqKTR2qoK10TP0GW483inT3Q7FVR5pwgoQjAq5AKEfdNofCEhtbdo4Yir56OPBIYoxaCeTxQO8SbL/Q2ZJShKDQy1k/7s9AhvtJYX5xw1+abKk6Ee8TFTMlCSK+zBMkSfhTtYVPFD7LLdWbXiuokpbLHvXfIIOr1uU2xzV4nP6Ormdutoe5vT7c/nE2DE8HWoKbCWxCUAe1k3QiRrsskCWDfXeEgkzcmvMMFFZnXQv97gBmyBo3oCK5XRdJ6blxHgFjd5JADphKYt6vueuHbwiNA6hpqViDWX1CujWvzlPStk5KTwXms67MG7oFGbA3w4nJ7cuagvTjI636VM2rIFWK8CJnCjrz58AgGiPQ4FkXLKc1d7j/vKV2rx9tBFsd2sFqj868g6VttTfU9oHqqx6LPeS0iESn6jGEcMk6sokVat5J9e+m8BZKw4QXM0Jh8MeC9//C6Ve4jRNNbIZM3F3K9fp77h0d44ajYYNrfAPLHTRBsXn5fGryzHAAFU+P7aJa+qfhq4WHlCuLDcGCgBQjuXlnoSSe2qhvdTsOtoesbmgwYnDKso3PzP3mGg+vF8UVv98Szg1mGWzPduLcJ/wcRAUg7VxYklwAAAABJRU5ErkJggg==",
+    "price": 70000,
+    "reqSTR": 190,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 60,
+    "tuc": 5,
+    "incSTR": 1,
+    "incDEX": 3,
+    "incPDD": 36
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 36,
+      "min": 6,
+      "max": 66
+    }
+  }
+}

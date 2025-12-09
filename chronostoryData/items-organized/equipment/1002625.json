@@ -1,0 +1,43 @@
+{
+  "id": 1002625,
+  "description": {
+    "id": 1002625,
+    "name": "Blue Den Marine",
+    "description": "",
+    "chineseName": "海藍水手頭巾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 35,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADU0lEQVR4nJ2W4bWjIBCFyTnbgC2QEkwJpgQtQUvQErQELUFLeJawlBBKCCVk544MEaO+nJ0/oCDfnWEY+aO+s9fJ2EX9h/0GZuA4jmpySXjZ5ym38zyroijWor4WcQTmxZ7Pp0qSRA1WqcwPlHppnXMqyzKV9z/ho6m6i4hfBeyBX1hsLBdUY6zSiVbWWdWmOkzqrONW0ztLc2Aiwgs4hW/BDIUnawN0bcUwhz6HXS+hRxRg7eOhrtfrKXwNfiG08GQB6eAtTELM77zntU6ixZr5LTCrezV31SE88hhQQwnzU5f8LNAjw/7DEAFjZqW19u+1SqifEtwcwAXM3t6aTtV1GwbXIXY+q2U/dRqLStMswPPELaKo79JRMj+CB4+v90KVfc+wazV8eDct9AWS5Rxm7Gk1mTAHkbp3g2pIW5ulDJeoHHmsnn9/1LWouP8Y+2iSJI307xSZ2zx5z5fESvy2AG6tVQXNSdKU3+u8VnbqIq8BfpExVIAoDGJYZGt1loZ+Ny8e95R9mItQI8k0RcVC3EGasMcCFeD2OO15LoJq/1wNk3J2ATqfGwkdM2eNasuctmQHLF4KkM6gOrK+f28D9i/1oR6pxRrdNIUQlzTUDIYFt22rmqYJ4WYwvDXGBOBRQrBnVRU9Y0EYQgzhaCtKsDLHGgl73U0ztx8eA0opfwqUse0c8iL0y7JkcE8JBnidr7fMRd8F8JmtYQjb+lmKBmwYhiAAUPG0pGQc5pjx6/946+FZVESECKhJAOBDfDB4nwG+0L69kDTywTeQPYGS9RCAZySbeOuoqmVtTzU/4UomHgf4WvH/QNdi0Z8mf8zykucYX3LXoWY4OnVd86S94vEtVEzWcL7tJnbqst1jPmNd130tYF1UzgyhdubNOEquDwEC+UaEhBiWtSNXMtM1Yd0z8K4AESGAPW8FmNBvEqVyIKFuR+y319ugdC1CLM/zAEWC4scB2OR14adyWKsP7AOCWwXMzu+VxEvu04UBUFSvjjIYx8eX2f2LwB7oQZc2VLXBISsdLyjAlI7H3BQyFYu+sJ8wQFGCYdV7PLLosocbZpst1Qf3qO1fajnnmiuRh0YL4lu+BBSfY2fgC+7Dm62IPpZzvjPG72+32+53e/YPrFjfamGsLrkAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADgklEQVR4nJ2WbbWkMAyGe89ZA10JHQkggZEAEkACSAAJIAEkDBIWCYOEqYTZvKHpLQxwOTd/KPTjeZOmoX/UNXuf9H2pX9hPYAb2fa8Gq/3HNo34OY6jyrIsFHVZxBGYF3u9XkprrbpZqcR15GZ5WmtVkiQqbR9+0lDcRcSPAvbAbyzW5wuqmmZltFGznVUdGT+omS0/DX2baQxMRDgBp/AtmKHwJDRAQ8u60bc57GYJPaIAq59PdbvdTuEh+I3QwpMFZLy3MAkxf3Oel0avFqvGb4FJ2aqxKQ7hK48BnShhHmXO7wI9Muw/DBGYplEZY9x3ozS1I4JPB3ABs7dx1aiyrH1nGGLrslr200RrUVGUeHiq7SKK2jbqJfNXcO/x7Z6pvG0Zdiu6D++Ghb5AkpTDjD0thsmPQaTuTacq0lYnEcMlKkceq9e/h7plBbeffbsaJEkj7TtFJh4H5/mSWNptC+DzPKuMxugo4u8mLdU8NCuvAX6TMVSAKAxiWGRrZRL5djMuHreUfRiLUCPJDEVlhriDNGGPBSrA7XHa81wEle696AZl5wVoXW5oOmZ2nlSdp7QlO2DxUoB0BtWRte33NmD/Ihfqnp5YoxkGH+KcuqpuYsF1Xauqqny4GQxvp2nywKOEYM+KYvWOBWEIMYTjWVCC5SnW0Ox1M4z8/PAYUEr5U6D0bceQF76d5zmDW0owwMs03DK7mufBZxbCELbwXYoGrOs6LwBQ8TSnZOzGNePH//HWw7OoiAgRUJIAwLv1weB9BviL9u2NpJEJVyB7AiXrIQDvSDbx1lJVS+qWar7mSiYee3io+DfQUCzaw+COWZrzmMmV3DDUDEejLEsetFc8rkLFZA3rns3ATn1t95jPWNM0lwWEReXMEGo7fTOOkutDgECuiJAQw5K650o2NZVf9wy8K0BECGDPWwFq+k2iVHYk1O6IvXq99UpDEWJpmnooEhQ/DsAGpws/lcNafWAfENwqYPP4vZJ4yW26MACK6tVQBuP4uDK7fxHYAz3p0oaq1llkpeUFBRjR8RirTIaiyD+xnzBAUYJhrrL/3TqwuuzhhlknS/XBPWr7l1rOueFK5KB318WTMJcvAQs0DqbKOfNJsTrHuA9vtiIOJiFkj6DvHrT5exzHYZ9W2z9DYNtQ/w1AHyoDIdsF48273Wmv5mzB9qAtJtBrVeNk3H+sQex0JPRLYwAAAABJRU5ErkJggg==",
+    "price": 25000,
+    "reqSTR": 35,
+    "reqDEX": 35,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 35,
+    "tuc": 7,
+    "incSTR": 1,
+    "incPDD": 24
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 24,
+      "min": 6,
+      "max": 42
+    }
+  }
+}

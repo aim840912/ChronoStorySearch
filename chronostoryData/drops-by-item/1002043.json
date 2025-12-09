@@ -1,0 +1,19 @@
+{
+  "itemId": 1002043,
+  "itemName": "Bronze Koif",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 1210102,
+      "mobName": "Orange Mushroom",
+      "chineseMobName": "菇菇寶貝",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

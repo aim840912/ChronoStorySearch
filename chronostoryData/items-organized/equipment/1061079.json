@@ -1,0 +1,49 @@
+{
+  "id": 1061079,
+  "description": {
+    "id": 1061079,
+    "name": "Red Moon Pants",
+    "description": "",
+    "chineseName": "赤月褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 50,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAdCAYAAABfeMd1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB/ElEQVR4nJVWi3GDMAw1d1nAK9ARWIGOQEZoRyAjtCswQjJCswIreAVGoHpg+YT8wbw7BwdbepL1MTeTx2quo0m9zJGsP/TT07A0Wv/S+eci5s4P7HnshkVEJU8itF6hFXOGM3lkSeZhMM5aY63d/i/LEtYw53FYc2mqU0+gwCoynss9JRRJWKFWIr2oIUqRrH3fb0Jd10UKNEHbtmHu6LhoRMFPegIlEIYQk/FcgvcwQc6bJAlbx2c/z3NQwoqYmPfi/Rf9f9SSMEEmwDiKFQQ4VicyKpfGRRIo1R5IYI33DfD2KskVPIlgLqxrki2zrtTB3/sd2grgPTtkWOQJx0JWszguFmygaJx3+0GA2bcyLksi4VypI/k9nuROWWZN2uuqtlIiQLl+EIGsmRLJIR5n/QiYSPFEzwHNtOD1wZNUPICRnqkiS9US4L0Kwc8eFwhGn/vnkTFRp856whin6XD7TftD33gNtZsV7UVeB6XAr0/66V6v6MarQeqOSZFsaNUiyH4hXJEEgPRGxiWQyI8FqPz0luWOQHuiyeS7QHL3ub4RofGZa2ClKaNAstUHCOSG0iWklUOOO3LqyG7MzgLSIlnFuunBOJm22CuNkgZvJMgqfMh1fgPH5W0OH24RUKQ91dKZXIiJVRtr07hGDiQNPi9TlipExVgr9w83P12ti1OJuAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACH0lEQVR4nJ1Wi3HCMAw1dyxgRkhHSEcII4QR2hFgBLpCRoARYIWs4BHICKmesVLFke2k7y7E2LKeZH2cvUljNNuxSy2kiMYr/TT0WHqqMOnCexBjFx7IXN7GqWQ5jxaoglIrxgxn8kgS9W1rnLXGWuv/D8MwrWHMz2zNpemKHkGJjQh5LGVKyBKx0liR9GYtmUY0Nk3jN9Z1vVASk1RVNY0dHR09akKoHkERFGAjE/JYgmWYJOeVSsRWciz6vp8UsTImZ1nMf9H/yxYiJkkEHccyggRH7ESm5VI8SwTFsScSWGO5Fl7/h2gLbkTSF2RiIp9xW+rk8XxOLQgIHi4yb+ERx0ZWvTg63ryDsnP/9gMkGH1HBmaJJJwrdbC/hnqi7LMm7f2qFpQjQUl/EImsqRLRLD5r+ldHyjt6t2jABe9nHmnxAc701gpRqzUgeDdLiOTRgeQcaqMcKbPo8DFUonPXzW7R7v2KG+WOWtOIViSvklIyjDf6qe/3xc25BtodlSLyqKJFEP5AwYrEAKRXcZwmIvkBArXHYGHuOBjxurZnIjqFWvBkaJZmG1hxyjAQ+foBiRRSLjKVm+PDnTx1fHu2gjdJy2S10/yLXkfB8ZApDVlpWOyZJ0K24WOxDpMcp6eZfRwCjfQGhdxQra3YZ6cY2Ug4keI2NVHY5z06EOsrddcLxCIXmriu2HeADftgyCGyVgu8DbISn8rcoI1/AXxSZLPBnRu5AAAAAElFTkSuQmCC",
+    "price": 60000,
+    "reqSTR": 0,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 140,
+    "reqJob": 8,
+    "reqLevelEquip": 50,
+    "tuc": 7,
+    "incLUK": 1,
+    "incPDD": 33,
+    "incACC": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom"
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPDD": {
+      "base": 33,
+      "min": 8,
+      "max": 58
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": 1002274,
+  "description": {
+    "id": 1002274,
+    "name": "Dark Galaxy",
+    "description": "",
+    "chineseName": "黑十字帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAYAAAAdx42aAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC80lEQVR4nLVWgXGrMAwVd1nAHYGMACPACGEEGCEZoYwAI4QRYIQwQjxCGYHvZ1sEG0x/e43umhpj9J6eZNkneo/N3nMUWvgOAnPf9zQMA0kp9UTXdXOIxF8TcMCnadKTWZZhbpfEu1KgwUGECYTsbQQAniQJjeOon+M4hiobFf6cwDr3UAEkMAcCe/Y2BWAgwsBWgV8R+J8txWuiuq7n6/VKl8tlqQMe79kRAe10nl38KIoWMF4DgHtzoeijUM9iUiQEr0cBMrgQsRq6KoQIzAycpqnzAtsMluf5DFmfj0+VbFXtY6GJKEANzjsABgKQ//EpxbkipxD3CGhwAJuPXtKlN0G3220hokhQUXV0LzvK60wRMNsN4GvJhRAUMp+AA/7VT9RVJQ2jiebRSEVCallBhEnkU6ajBzBS0XUGvL8OdK5iXYD4y2vMhlOguxjAl4qNrxQnMSEukBjtt1zZaxKI0uz5C/WNei9bpcJr6/GO8HfCbg0gkq9nacBsFzO/LTXlRFXbUlmWGxJQ4Zze6NlIDa6Gzv4HuN+WmYCOHs609Ap8vMUaXGTqv4WXg0lHc5ULiXVEyDsAVaE5Su3t/40CR4uODCBrFUKNB6qgHr5NAST6OLc2BSqPKmqJ9or8Zi0hI1UrlhTsmQGz4z7TflB7nJqPwiUwN01DrZKUqxXOmQSDQ3ofnKNBAa5VANd7KaloVTryQQGTBsb6onXJbhRY92+StQJ/bcNk5zx5dTmxEELxoT/BQASEAHwvzXNqWokuxJPvjJuGViFvlaOWEvsejciPfm1QEWrqtRVyYFRgw5i/s2rNpz1nrALAzlW9kEJ9+FXvj0ECYyZSVZXjG/NcuLANgbUjlpZt3d9D5zubOpAWQPaPbzC/9nnyI+EbzFH/9kkfredI/XUWR9dAZDuTfvkdcAjQP++P/DA4frgII+tk5mvUT80HDDU2Ox88jiPL0LmFHN1qQ8Z3Qd+/MLeSZSJ0IXGuXZyiX9jm+uZfif4BoBb4Q1Q5DPMAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADKElEQVR4nLVWgXGrMAwVd1nAGYGMQEaAEZIRYIQwQhkBRggjwAhlhHiEMgLfz1jEdmz622t0R2KM0Xt6koUP9B5bvPsktvAdBJZhGGgcR5JS6om+75cYib8m4IDP86wn8zzHXJDEu1KgwUGECcTsbQQAnmUZTdOk79M0hSovKvw5ATv3UAEkMAcCIXubAjAQYWCjwK8I/M+W4jVJ0zTL7Xajy+Wy1QGPQ7ZHQDtdFhc/SZINjNcA4N5eKDle1b2YFQnB61GADC5EqoauCjECCwOfz2fnAbYZrCiKBbI+Pj9UslW1T1dNRAFqcN4BMBCA/J8fUpwqcgoxRECDA3h96SnduRZU1/VGRJGga9XTveypaHJFYN1uALclF0JQzHwCDvjXMFNflTROazSfrVQkpJYVRJhEMec6egAjFX2/gg+3kU5VqgsQV9FgNp4C3cUAvlVseqM0SwlxgcRk3uXKtkkgynXPX2ho1XPZKRWeW493hL8TgjWASL4e5Qpmutj621FbzlR1HZVl+UICKpzONT1aqcHV0Nn/APfbMhPQ0cOZll6BT3WqwUWu/g28HNd0tDe5kbAjQt4BqArNUSq0/18U2Fu0ZwCxVYg1HqiCevg2BZDoeOpMClQeVdQS7RX5zTtCRqpObCkI2QpmxkOu/aD2ODXHq0tgaduWOiUpVyucMwkGh/Q+OEeDArRVANd7KenaqXQUowImDYz1184l+6KA3b9JNgr8uQ2zwPfk2eXERgjFh/4EAxEQAvC9XO/PayvRhXjwnXHT0CoUnXLUUWaeoxH50dsGFaGmXlshB6sKbBjze0at5RByxioA7FQ1GynUh1/1/hgkMGYiVVU5vjHPhQt7IWA7YmnZ7P4e+76zqQ/SBsj+8Q7mbZ8HPxI+wez1b5/03nqO1F9ncHQNJKYz6YffAccA/e/9nh8Gxw8XYWKcLHyM+qn5gLHGZuajn+PEMHROIXun2pjxWdCzk1hPJdtE7EByVJfgSzka6HdmFwBQM3MkEuY+SICBU+u/NmOy/mNmF4MIzDkWU8AG8V+OOvOe+WP/ihLAQ5YpRMieC5HZI/yy/h8MmgxNUoY+sAAAAABJRU5ErkJggg==",
+    "price": 95000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 248,
+    "reqLUK": 83,
+    "reqJob": 2,
+    "reqLevelEquip": 80,
+    "tuc": 7,
+    "incINT": 5,
+    "incPDD": 42,
+    "incMDD": 70
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 5,
+      "min": 0,
+      "max": 13
+    },
+    "incPDD": {
+      "base": 42,
+      "min": 2,
+      "max": 82
+    },
+    "incMDD": {
+      "base": 70,
+      "min": 30,
+      "max": 110
+    }
+  }
+}

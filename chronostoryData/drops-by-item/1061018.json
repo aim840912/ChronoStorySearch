@@ -1,0 +1,19 @@
+{
+  "itemId": 1061018,
+  "itemName": "Brown Ramel Skirt",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 2130103,
+      "mobName": "Jr. Necki",
+      "chineseMobName": "青蛇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

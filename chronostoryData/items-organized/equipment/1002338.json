@@ -1,0 +1,43 @@
+{
+  "id": 1002338,
+  "description": {
+    "id": 1002338,
+    "name": "Red Dragon Babuta",
+    "description": "",
+    "chineseName": "赤龍頭盔"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADk0lEQVR4nLVXjXGzMAwVd13AjEBHCCMkI5ARnBHKCHQEGCGMEEYII5QRwgj+9GTsmB/n59pPd5RgbN6T9CS7H/SemeB3Qn9grxIQYHPbEamKaCwpSfs/IfOMgAU2FwEdCXfmoK5MJicaBqIs+xWZRwSMAIvtGfXK4CODKzuE5x2GRjLXTxnq8pEOb6YpRsBIuAH8wAAu9+zH0mQiQG+YSMb3gEyUyBaByfMAfMzFY+99n7L3t9XCAVFh07WNSH2y4ydLZJPEksDacwZv0p70zZIAODzUNX+v2CDBuhiyi0RH10caOEi65KhESIQEBBxCU+EMVn2GYDrP37BWnZnAQF8VM4iQcASMuSqefCY1Q++oSQ6Sz46jsOc58B524rh+jSkpvY7CighVpIuSmnb97sOBdwyeOfAp5yg92J41ASIOXPP8E4SmpCrtkoajU1gxOnGG1ihN16KhvJ1HwUag5wVZMFvqO78/MxE9eY+7zJ9Mtank2S4bHkbimwom0c5ICIHvsUJJ39lzWYniR0sC4fee5IF3OyUlqNy6JwRg5bhnEp0n4UWID8CDLAtCwWmA2rvT/COgU1+Vr/93DSR+qo4+SzLxTuh0UOxoOPWSIVxLH5GCsdgW4qOUlH1BkKcQgNcr750OsPlwGe7RHzDG+UcF4D52qRXhhugeEUF6XVMDgeR4PJqqquargk6nGVyaEdSP8sOGyF77ogkIjBEysfFVClwkVNgQoIVrKjmvay43baIffGThmqZpcLuL0KWhLMvZIt4Y7A9EBB/Q9jlN413xfD6/TMoTgMcAn+kAFJNkRsQ97/fxnZJT6n9rrVfvq11LbbsgcDgcVuAwjOF6BhymrCgKP4ZQu2cBV51UwPlcgKh5+Uz4CrCabyRiiABIYD3A0ZJrFnxYBd6cDpZjMVsCOpEtxxGBlmMuFb1oDX4zSvL3VL3lbUhk671sXvzOXY6AHCxtg/2/1nfTve8XKZi63bvWtu3meCg6N++nsu1XUjGJk1wfGIZMjt5JYkk8yvsCfOucZ5bEAN5nfNgZOhGjA8cfIQBGQmLq90k+bJLouu4ZL9GTpFRNrZ3PEm33Fd2YPAGIAhOLArm5p2MB+vyfDgG3p2N8s+8rBo/rSzYjNnO73TxjWMD41/8DuvLGtawO3we8Mv8IOLZZLbXjCCTcis3lcqFfGxzY3U9Y7h5scpvHck9ia9IblnBDM5Hlm4P/ANsV37PGwJgqAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADs0lEQVR4nLVXgZGjMAwUM9+AKYErIZRASiAlOCUcJXAlQAmhhFAClHCUEErgtTImxmBymb/XDOdgbHYlrWTuD71nk/M7ol+wnxIQ4OlxIlIl0VhQFPe/QuYVAQM83QV0JIzMQXVMJiUaBqIk+ScyRwQmARbLGLVj8JHBlZnC/QlTI03dh0y16UjnN9MUIjBJuAF8YACXMfk2NJkI0GsmkvDokAkS2SMwe+6Aj6l4vHjfx+z9Y7NxQFTYdGUiUl3N/NUQ2SXhE9h6zuB13JN+GBIAh4e64vflOyRYF0Nyl+jo6kIDB0kXHJUACZeAgENoyl3Bqk8QTOv5G9aoGxMY6LNkBgESlsA0dYoX30it0Fuqo7Pks+UoZLwG3sOuHNfPMSalt1HYEKGSdF5Q3Wyf/bHgLYMnFnzOOUoPlrEmQMSCa15/hdCUVKXZUnN0ciNGK07XaqWpy2tKm3UUTAR63pA4q6W+0+c9E9Gz9xhl/WyqiSXPZttwGIkvyplEsyIhBL7GEiX9ZM9lJYofDQmEf/Ekdbw7KSlBZfe9IAArxoxJtAuJRYR4ATxIEicUnAaovb2uXwI6VaeW+n/XQOK7bOmjoCncCa0O8hMN114yhMv3ESkY830hHqWk6HOCPIUAvN54b3WAw4fLMEN/wBznHxWAcWxjI8Id0R0RQXptUwOB6HK5TGVZrnc5nU4zuDQjqB/lhwORvV6KxiEwBsiE5jcpsJFQbkOAFrpYcl5VXG56Cr7wyNw9dV1jeIrQpqEoitUmPhjMD0QEL9DmPo7DXfF2u/2Y1EIAHgN8pQNQjKIVEXufZeGTklO6/NZab56Xp4aaxiNwPp834DDM4XoF7KYsz/NlDqG29wKuWqmA2y0H0enH34Q/AVbrg0QMEQAJ7Ac4WnLFgnerYDGrA38uZD6gFZk/jwg0HHOpaK81LIdRlL6n6j1vXSJ7z+Xw4mf2sgTkw9I02P9rfTuPfe+lYO5271rTNLvzrujsuu/StF9JxSxOsn1gGBL59I4iQ+Io7x743nfe5BMDeJ/wx87QihgtOP4IATASEnO/j9Jhl0Tbtv6Un+gH9CQpVXNr52+Jpv0MHkwLAYgCC/Mc73ymwwP9cEAxnsg3ATdfx3hn35cMHtaXHEZs0+PxWBjDHMbnGQxX5nkdLoUVJ1PeuPzqWPrAoswtsPVSeeOhhQ6rWR/LQWIJRNyKp/v9vrdnfHG/Njhwen5h2dE55GL3HW4nFBLOolehVjtkUm5oXeCfoHhnPf0F4brmwory1Y0AAAAASUVORK5CYII=",
+    "price": 190000,
+    "reqSTR": 210,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 80,
+    "tuc": 7,
+    "incDEX": 2,
+    "incPDD": 80
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 10
+    },
+    "incPDD": {
+      "base": 80,
+      "min": 40,
+      "max": 120
+    }
+  }
+}

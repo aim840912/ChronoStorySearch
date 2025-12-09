@@ -1,0 +1,18 @@
+{
+  "id": 4000621,
+  "description": {
+    "id": 4000621,
+    "name": "Dark Eye Tail",
+    "description": "A tail removed from a lizard",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "price": 55
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop"
+  },
+  "fetchedFrom": "chronostory-api"
+}

@@ -1,0 +1,30 @@
+{
+  "itemId": 1442018,
+  "itemName": "Frozen Tuna",
+  "chineseItemName": null,
+  "totalMonsters": 2,
+  "monsters": [
+    {
+      "mobId": 6090001,
+      "mobName": "Snow Witch",
+      "chineseMobName": "冰之女巫",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9308021,
+      "mobName": "Southperry Pirate Lord",
+      "chineseMobName": "海盜領主",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.2,
+      "displayChance": "0.20%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

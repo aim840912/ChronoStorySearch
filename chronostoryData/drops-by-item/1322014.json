@@ -1,0 +1,19 @@
+{
+  "itemId": 1322014,
+  "itemName": "War Hammer",
+  "chineseItemName": null,
+  "totalMonsters": 1,
+  "monsters": [
+    {
+      "mobId": 3000005,
+      "mobName": "Brown Teddy",
+      "chineseMobName": "褐色發條熊",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ]
+}

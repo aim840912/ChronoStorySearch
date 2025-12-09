@@ -1,0 +1,43 @@
+{
+  "id": 1002158,
+  "description": {
+    "id": 1002158,
+    "name": "Green Hunter",
+    "description": "",
+    "chineseName": "綠獵人帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAATCAYAAADxlA/3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACcklEQVR4nJ2WgY2zMAyFjXQLcCNwI9ARriOEEcoIZAQYoYxARigjlBF+RmhG4PycBKUB1Pa3VNGmjt9nO077RZ/ZcrCe0X/auwAi/HjcaJ5Gfk1U6ZGGe06qfFCWZQHsY5B3AJYgXNeajJkEhBigOtlU82OQtyoA8a4fSSklAPgMu7YNzfO88e968zbIK4BluDZ0Onc0DC1VlZbsx76TL/OcqCiKzabmolKQ2J6gYoCNMzKsahZniGmcZO37+yxPrIEAEKmVeUHWOhCGoOUWqZ+f2xQAltiJfFLZj8sUwWbrSn2/uYrsGhzjMFwdQOjJUO5jLv9CbAHJvoK44VTsbAkhrCFqS+fMjodaafZYq7WDQ/WCdZqr0ZJA9BOeOce2ArG2AK2cKUeqUoHOOhAH0UkmzaWQ7HEO0AppQ2QQX5aFz8pJ3oezsALOrrox9+YQgo58JcTmAGEkoFKliB9BmN6NKvzQ/7QKFMV9AkinSSiZVnPJsC+GQCViCKyt01D2Uv5fHtnWC2pdC9SeHY6hnAUPFUP4FosIxMOhXMs9XcgWHfVdlFE+0dD+yu3ZDr5S4wuA1AChOGbbGIZQcgFBFOLxZMjhtI1AwHbuKVLsFJoDgAyzeb9amst8k30cACHRcUBgOlw7niFw+NB/7sW6D+U3xDfpxcU1LFA5vmxTARnFeZ9cICYHgXZUncsjhkgNP1yG3SC+c2muLchOtavCtHOzmT75zK/7lW9Dr6dZASf86IKCOKz0oxWyjwFWCPLBQygvvvlRiX1VgG5pYyp/2rNqhTdpC7I4eOr8yhcwwUILT3q7J7ajKfjkj8Xqm4C/FesPqGxK4sql9WQAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAaCAYAAADWm14/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwUlEQVR4nK2WgZGrIBCG15lrgCvBV4Ip4a4ELCGWoCVoCbEEKSGWEEp4lBBK8O0u4BCUi968nWE0ZNn/210g+YBztmTmC/ilHQVg4efzDkbPODTU3QzTQ4CsnlAURQA7DXIEYAnCTdOBUppBAAHqi001T4McqgCJD+MMUkoGoM9kt74FY8zGfxjVYZB3AMt0a+HyPcA09VDXHWc/jwN/KQRAWZabRe1VpiCxvUDFABtnyrBuUBwh9Kx57vPzm580RwQEkVolSrDWgSAELPdI/fu1TQFgiZ3AJ1X8cZlSMGNdqR93V5FdI8c4DFaHIDqtQPiYy98Qm0GKjyCuMBVrLFAIqwD6yjmjY1YrzZ7mms7BUfWCDR1WoweGGDU9Bca2DLG2gFppQFCqXIHBOhAHMXAm7bXk7GkfUCu4DZGR+LIsuFcu/B72wgpoXHVj7s0mJDrwlWAzAUJxQCkrFs9BqNEdVfKj/qdVgCjuC0B6mpgSaTssGa2LIagSMQTNraehGrn8X3hkey/YdQ1D7Vn2GPJe8FAxhG8xi5B42JRrufUVbDnAOEQZCQ1T/8W3Zz/5Ss1vAFIjCIkx+1YhhOQLiERJPD4ZvDltyxBkO/cUSHQKzSGAgs7m42bBVGKTfRyAQlLHCYJOh2vHKwRtPuo/9mJdR+VXgDfp1cVVKFA7vmJTAT6KZp+cIbSDoHbUg8sjhkiNfrgUupH4zqW5tqC4NK4KeudmU2PyGcfjhreh1+tQgXZ47oIicbLKH62QfQywQoAPHkJ58c2PSuwrA3QPG5PiZc2qFV7SFhRx8NT5nS/BBAstvHTbNbHlTsGZPxarbwJ+KNbZv2SHYY7abwEEnDe7N/kOQCTP3NxRcRuNHwFEZuRg9sT25mkYP2wOIIiV0TMW+2/lzwGkIunibLDku/Q9HVmAUKZ3pRYZmJ+AN/7/AIdHZbvlyB6IAAAAAElFTkSuQmCC",
+    "price": 10000,
+    "reqSTR": 25,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incMHP": 5,
+    "incPDD": 18
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat"
+  },
+  "randomStats": {
+    "incMHP": {
+      "base": 5,
+      "min": 0,
+      "max": 18
+    },
+    "incPDD": {
+      "base": 18,
+      "min": 5,
+      "max": 31
+    }
+  }
+}

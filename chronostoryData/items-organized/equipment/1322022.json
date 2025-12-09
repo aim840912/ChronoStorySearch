@@ -1,0 +1,45 @@
+{
+  "id": 1322022,
+  "description": {
+    "id": 1322022,
+    "name": "Red Flowery Tube",
+    "description": "",
+    "chineseName": "紅花紋游泳圈"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACxklEQVR4nLWXgXWjMAyGxXu3gDMCjMCNEEbIjZCMwI1wGSGskBHKCGUEPEI8gk+SZSyIIU2a6r0UcBx9+mVZuL/g58yr+yI34SfgDP3XAtRnwwMNOL+YU7wbzgD/mQbO4Pg6nkuwcq+CKd4BD9BxL499uCCrPYTHc2uh7Q7hW9dPP/wu3DO0/BAgEt0fAJMCIGtLDOB4hQNmQNt34N77C16OCWyJRmMVfvYhCJOC0Kl/FR7STGB3Ch9zY7Dt0b1toMZim7JRF5x6Ut8hfA8ljBhRBdY/Cxe1IGBR1e94iJI68I0u7hEoEx1OP5pDGnb2KeUCRgdul8BDdIa3FoVeLgrgIGeFu/Llq/A5mB2P8lUFkGMocPcXON3WDZRuBtOfr8Azikfx78CZDyhdI6pvMifVAfQVz6Vi21/w+ZQcP4LnUx3Bom4Cw3VeBy6oLsFknW/Bvb+RQ/whVnAggqxxxYp5qG8S2J7SHKfSLREXQfXU57eVG4nYyd4dkvISm+QwwCaYqpvWmZTbTGGswTHdsl1i4SgwPzKY5nR3YG2lqTmAJnwxe7vl4JhuBbZxkRXYRjCNH0KBKXBcZ1Z9sVAt0r0GDwXmcJ67JfBQrYDvs6ILjMDFCnhNuTje3TnOgilABY7rTGu8BV7CferXAsNrLZ2LjLuX7lpqH0cwK+Z17uGR3Ssn39SbCXLdsfCpZVJhUZeI3S0DZqmhfW6q1nDPJxByzmBRekSIqQQKqeiGatpOrFQV16NUbysno3qhnJtqAYXpedlAngVHuPeYsuL3NZy/yJe1c7CCkunCIuM9/CQ4wtnotBkgxSaUbA/pOFSmo8pT4Bmcjrnn1kGbeT3qtV2+JPQr8iV4PFHGAMhaM1d6t7bORh8vgSO80Id6OmPTPu1wuyxVvrq2W/CZMzrYeai5oCgjjX6Jvwm6hGsrsEk8/D/rHfYf05WaQ0b2l5kAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/UlEQVR4nLWXgXWjMAyGxXu3gDMCjEBHgBFyIyQj0BEuI4QVMkIZ4RgBjxCP4JNkGQtiSHNt9R4FjONPvyzL7i/4OfPquch1+Ak4Q/90APXFcEMLzq/6FN8NZ4D/mxou4Pg+XUqw8qycKb4DHqBTI69DuCGrO4bXS2eh64/hqxvmH34V7hlafggQie43gEkOkHUlOnC6wREjoO0rcO/9FW+nBLZEo7YKryY4YZITOvT/Cw9hJrA7h8vcGWwHHN62UGOyzdGoCw49qe8R3kAJE3pUgfWvwkUtCFhUDQduoqCO/KCTewKKRI/dT+aYmp19SbmAcQB3SOAxDoaPFoVerwrgIGeFu/Hts/AlmAee5FMFkGMocP8OHG7rRgo3g+nPZ+AZxZOM78CZDyhdK6rv0iflAQwV96Vka674fk4DP4PnQx3Bom4Gw22ZBy6oLsFkB9+De3+nAfGHmMGBCDLHFSvmpqFNYHtOfZwKt3hcBNVznd9XbsRjJ2t3TMpLLJLjCLtgym6aZ1JuM4mxBcdwy3KJiaPA/Mpg6tM/gLWVpmYH2vBhsbvl4BhuBbZxkhXYRjC1H0OCKXCcZ1Z9tVCtwr0FDwnmsJ+7J/BYbYAfo6ITjMDFBnhLuQx8eBg4CyYHFTjOM83xHngN96leCwzvtVQuMq5eumqpdRzBrJjneYBn9qicxqbaTJDbgYXPJZMSi6pErG4ZMEsN5XNXtYZ7PoHQ4AwWpSeEmEqgkJJurOblxEpVcj0L9b5yMsoXirmpVlCY39cF5FVwhHuPISvebuH8RWNZuwQrKJlOLDJewy+CI5yNTpsBUuxCyRpIx6EyHVVeAi/gdMy9dA66zPao53a9ScgWSesyv3sEy27sDI8nyugAWWeWSh/m1tk4Bu069SfATl0zvNCHejpj0zrtcbmsVaq5fVdKG9Ulf3RJUCuXm5VDmi9MM4uVveaEooi0S2d7uS/PwPu25VB2qb1hkVD/d7DWvfnMQdbP6ysLj6GpVFsOrE7jmw7sOcT2D8DFtEevQ3hMAAAAAElFTkSuQmCC",
+    "price": 1,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incPAD": 40,
+    "incSpeed": 10,
+    "attack": 1,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Blunt Weapon"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 40,
+      "min": 39,
+      "max": 41
+    },
+    "incSpeed": {
+      "base": 10,
+      "min": 9,
+      "max": 11
+    }
+  }
+}

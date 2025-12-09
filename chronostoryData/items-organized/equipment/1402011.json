@@ -1,0 +1,39 @@
+{
+  "id": 1402011,
+  "description": {
+    "id": 1402011,
+    "name": "Sparta",
+    "description": "",
+    "chineseName": "無極劍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 60,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABlUlEQVR4nMXWgXGDIBQG4MddF7AjkBHsCHYEO0JWaEcwKzhCHaGuwAqs4AiEB4E8DRIbAf+7pncmufflB0ne4Jio23+GD0cglA6AZMBOBsOOaUIyq/nTgk9QpRGqbVv46Tl0zcVfLIkwAM45SCmxAZdiy6G6roNpmgxgGAYz3D2ZAzHb+XBrYA2QA2F3/sjMhsMLsQZyIPytB9zu/K++BSGEeXINkBoBYpygbu6Q3/NgIDFAcgSmv0g4f88hbIi/JxXCLAU2gVk24g4lKLEcLkJYjIc8SQqEbwGHV5W9KKWGjBoC4A6mbHvCAKS4A+raKk4f7/R10TpeRaibwDfAeaX/ZsOfr8MOhD0PdGgDBLB5+CsI/+lxuD4EQw38G7AV4YdjKGBvA1sRs+oxFFC5W2FnYgi/891wDAWkaCGGKAZYQ0QBORLdEyFA6hZCCEVvwRAgR6JNhACpW1gi1PIgKgFYIkxC5wAOx+QAUMTD17HbgGR4FgBFmNDvghLDKcK30DQPvwWyDqcIsxlxCUoPnyGOGu5yBe3nGROqg47yAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABzklEQVR4nMWWjZGCMBCFNzPXAFdCLEFL4ErAEmzhrgRswRKOEo4W0kJaSAm5bP5cYoioAd9M5Ffex9sl8AHvkfZLhj/vgNBGAJIB21kY9p4kJHM0f4bgC/TWELrrOvi5cOjbc9y5JYQF4JyDlBITCNqsHLrve1BKWYBhGKx5OLgGxKTzwScwB7AGhOv8kdmGwx2lBNaAiI8ecNf5x0sHQgh7cA6gNgSIUcG+vYL8ngYLUgKoDoG6nCWcvqcgbCj/pxaELQUmgUoTCZMSbFGOICEcTAS5oxoQMQU0bxq3U0oDMhoQgDAxrdYTFkCKK8B+7yh2h096XjGOZyG0J4gJcN6YMTG/X4cXINx8YEQTIACLzZ+BiHeP5mYSzCXwMMBSiGiOogCvJrAUYhI9igI04VF4USWI2PnBHEUBaqRQgtgMYA6iCLCGij2RA6idQg5C00cwB7CGiknkAGqnkELodCLaAiCFsMrNA2iOIgDP1EXdg7h5HYcGJOZ2FdzbGR4EUWSpIAGaJEHfBYn50Zu2iXkOZO6Og7n0I56HEDGFtr35FkBz7kcwrFqKAGGbEUtAzA/erMlcoHRBVVhPxxQi8yESAIBsp8oB5iBV4ZjVPw3jMt/ZYHvyAAAAAElFTkSuQmCC",
+    "price": 230000,
+    "reqSTR": 190,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 60,
+    "tuc": 7,
+    "incPAD": 80,
+    "attack": 5,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Two-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 80,
+      "min": 77,
+      "max": 83
+    }
+  }
+}

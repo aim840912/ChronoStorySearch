@@ -1,0 +1,39 @@
+{
+  "id": 1412010,
+  "description": {
+    "id": 1412010,
+    "name": "Colonian Axe",
+    "description": "",
+    "chineseName": "格洛斧"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 90,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAjCAYAAABsFtHvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACw0lEQVR4nLWWjZGyMBCGNzM2gCVgCVCCXwlagpSgJWAJWsJHCUcJpgQp4Sght7v5A0wC3OnOiAP5efZ9swls4LOhzL8INX4SrpT6BiG20Q6fVS5H4BcXPgFnCKmG+xaKHHPoyAUFTQdw3AllE3g3nK1mxQgurwCPBz7Nvhk8jXfDBa4xKyfFFgz9FvImg/LSc593wJ190wToQlY3TQ2HA7pgVNsleAc8lYC67Qto2xbkPYcrEou8h9spg2KP6iUOqtbB1ehG1ejxJdjv/63WYITKjmULUlycENxoMD1bpZyLiQLX0ICnqp3irPNg19p5MF1W2n5H8AXMufECDike9ZDjASn4xGZdtTFwUrEOgapHNZJU7mymSIBnFfvCHD2fsV3bPCySyYSwQHFsRzj49NxV1mbeowX5ygnYiVx7VWVziqOxcRPRSHM6DcGixPvHOIFh+6mQUDbjk8sLeOCcZRKuA89j2rscNPHAahyv8ysUnPfULhgs2wz6vg/Ny2DOeEY5w8i1XekPDYKxx6iUjkXI6O4KNdZAe7e9evh3hZBq4HqB2wI4gY/jSQQZgU4owIROeMU+jTxAJzM/+lqFwDjujHlhVtkCuFmW130pLvoNCQTuENyuANcwFxuIbAM9kba6kAKeaH1nlveIc9fIQMuH20iDJTbmsChi+5zBrLg74+/gVBdNBfUBYI+AL58AqOdJg12cfw3naLqx3UMwBf0zlIKqkIqbi1NbjuvGf6vh9h3wzHcgdDGy1fuppbb007tqMZwtN1mDMZJvyGJW6vfar8Ex+KxdUbBzZX69Y/A0dKg6pHjhesfgsfCWh6Cu0JapXgP3e/hN4KVwDw7FYGvZWFozs59RUbAtLgc+rwKH4O7lr1+JGH0ZPi4n0LXgENx8pdgcUi+IF+gqcAhu5hLG8vhX0AC4GpqCu8lsEqk+f4kfrit+coCQq+EAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAjCAYAAABsFtHvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC7UlEQVR4nLWWi7GyMBCFNzM2gCVgCVCCtwQtQUvQErAELeGnhEsJUoKUICXk3908CQmPO7ozgkCSb8/JJrCB74bUZxF7+E24lPINQmyTDb6rvB2ARy58A84QUg2PLRQ55tCRCxLqDuC4E9Ik8Gk4W82KEVzeAJ5PvJu9GRzGp+EC55iVk2IDhn4LeZ1Bee25zSfg1r4wATqQ1XVdweGALmjVZgo+AZ9KQN73BTRNA+0jhxsSi7yH+ymDYo/qW+x0XgeXgwtZocfXaLt/90qBEdp2LFuQ4uKE4FqB6d4q5VxMFDiHGhyqtoqzzoHt086B6bDS9geCr6D3jRE4pnjQoh12mIIHNquqTYEnFasQqHpQI5PKrc0UE+BZxa4wB/dnbFc2+0USDAgLFKdWhIWH+640NvMaLchXTsAMZJ+fz9mc4mRs7EDUU+9OPliUeP0cJuA/PxUtlPVw53ICnjhmOQlXgfsxrV0OGtizGvur/AoJlz09Fwxumwz6vo+Ny2DOeEY5w8i1Xek2DYKxx6iUtkXI6OoGFdZA8zCtevi5QUw1cL3AfQGcwMfhIIKMQCckYEInPGKbuj1A12au9+0cA2O/C+aFWWUL4HpaxutSXNUbEgjcIbhZAa5gLjaQWAZqIGV10Qp4ofWdnt4jjl0hAy33l5ECt/gwh0WRWucMZsXdBX8Hq7qoz1AdAPYI+HUJgHydFNjG5c9wjrob2u2DKejMUAqqQipuLk5lOc4bn1bDzTvgle9AqGJkq/ehpab0p1fVYjhbrrMGbSRfkMWs1K21P4NT8Fm7kmDryvx8p+DTUF91TPHC+U7BU+Esj0FtoS1TvQbu1vCHwEvhDhwLb2mZ0JbTp4fZi6Nvn9nPqCTYFJcFX3zwDziPeu/ce9cjuH35q1ciNS3j22UA9cBXGE+OgXb618fgZNVb7ekUUy+IEVR3gCxoGLU8BqcocTCW7ZIYhwekuAaQ8H/4i8KNNTsNeEE6Yt9H/cT1yIH/zfOWPt7obMQAAAAASUVORK5CYII=",
+    "price": 370000,
+    "reqSTR": 280,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 90,
+    "tuc": 7,
+    "incPAD": 97,
+    "attack": 5,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Two-Handed Axe"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 97,
+      "min": 92,
+      "max": 102
+    }
+  }
+}

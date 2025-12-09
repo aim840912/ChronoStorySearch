@@ -1,0 +1,21 @@
+{
+  "id": 2043115,
+  "description": {
+    "id": 2043115,
+    "name": "Scroll for One-Handed Axe for Accuracy 15%",
+    "description": "Improves accuracy on one-handed axes. Success rate: 15%, DEX +3, ATK +3, ACC +5",
+    "chineseName": ""
+  },
+  "metaInfo": {
+    "price": 1,
+    "incDEX": 3,
+    "incPAD": 3,
+    "incACC": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Weapon Scroll",
+    "subCategory": "One-Handed Axe"
+  },
+  "fetchedFrom": "chronostory-api"
+}

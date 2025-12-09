@@ -1,0 +1,37 @@
+{
+  "id": 1052095,
+  "description": {
+    "id": 1052095,
+    "name": "Brown Rocky Suit",
+    "description": "",
+    "chineseName": "褐色洛基外衣"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 10,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACRUlEQVR4nJWVfZnjIBDGp89zBrCABU5CTkJWQlZCK6GVUCRsJDQSGgkbC0jI8Q4MIQQut/MPX5PffMHkFx1lLdaXn5yXwPV5H2icJlpmR11vyNppB8C5CPSmaVlz6NFDpajve3rMlpZloWHo0tE8z3yOfcxhtJRayDvBxxDnnIcH77TWNNqJtFHU6RTFpQqEcimAXT1M+TMXDbSkAjQ8fn3d6ePjluYq7iNI7MO7/wKKAPB6v7xHM89lPJMcuH5/v9MCAAH/RHYeLh6CHKksjwKWOc67TuO6VMPeAZF8XAseG+LYaxgMxeGr1AIqtVk8ehrX3hi0xMuWh+v79dzlK3hyXLsYiTGGo4H4e1j3MHgSqlkWI18DVobaBJ6JXCEG+xTMxUVPQDwxRTFXB6+3j+S1SOG0D3tAExlnfn4Ars/nNT36x83S1XeUXYGiQR2LIpVelkZR8CkDolV4oLsuzZXo8IZLEZgIdSVQGsKn906r0OdgoOuHpHyD59c+VDdPR6z44PXRdf5ZFEl+XlHMc6gdR7+3+cjA338+Obk6xqJcUHSPMSni7GHHkFAK+0qTwHYdmxeLcytDNYrjGKqKcnNi8r3KC92FDJhiKDF0WrYvOr0Zk7EmB2DeFwARqBgzJjSPFrRZlOKDi/V/t/tgKDSkdkeqAtVJC8slRnH4SbF1EcBaOZLzlhQNlk49C5Vv5zEB0SyN0SlcUc5Dutk55tHt9PBIRScBcfAYZxp8J/YF4LHmAdZyLmPVQxvaOVczGw9ypvcXXQN1DPu2XVUAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACmElEQVR4nKVWjXGzMAx177KAV/A3gjsC3wh0BDJCMkIyQhihjBBGiEeoV/AIVE+2HEMgwPXd5WQso6c/5BzUMobJ88dO/QhLRMPt0qiu75V3QVW1VW3bjwxDL8C5vvfDO7LliLRWdV2rq2uV9141TZVVzjnWYx9rOLOGg9oIGAVCCEQaozHGqK7tlbFaVSZHPRvVIhGMTAGSE5Fo0oVEvBVviCzL7++L+vo657VO+0gW9hHNn4gEMHx/3CkCx2uRezFHNPz8PPIDDAvhXzAbkSfjqIEu6iSEsoa+qgzaelP6ZolQdLQvywVAEx2JTcEtv5dI66eHr5GlZ3ICpySqNUyJhsf9NqpH9Pz1GRIRW2s5eoC+o30RRc9jd02boHwGyVrKVonWIK3OhJRKt/IBvxBh1CARIckS5TSQ6SANYyh9DYZv52bHUEk03G6nPCyv51adaEKPGiM5YlIzSOd5v7MZYJINJy/hsamqvNZyhjdCjtgmsnczfEQkg/RI0Rgd7xkQV3WTjZwR6amO3VZAOrCh83NTfFMzSNHLDsO6JGu7jvaWYxoRff4/clFNyokO0UC4ds+oSXdtu1gwFfe1UUKy6YblQz6EgckMmiIwmZ60Hye43Fu/YOdTBxLNZIrJev+0VJmnEyK3YJGonKcwLmTihLVx6G4lW22GiaGPlv7tXBqr4oB/P+E3E+0xlKLe/OeEvRWAZJKWUVssOCFnRsqFi2/RSPYiduJsnWxBEuQnRHmy4BKz1uS0iZGUmjsdoTHoTrFOYXQOwyqdORckGIT+UJDw54EXrp1TDd2cVHiWE4/ZITyLXuQ7lBEx2ngtH0ne4BnJy+QdP3NOpMCVaZPUSXgg+1cQf6b1Z7EXJnuqeEdkWdy8/gX3EYmOVvAJUwAAAABJRU5ErkJggg==",
+    "price": 2000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 10,
+    "tuc": 10,
+    "incPDD": 15
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 15,
+      "min": 5,
+      "max": 25
+    }
+  }
+}

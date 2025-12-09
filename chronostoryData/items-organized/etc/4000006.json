@@ -1,0 +1,27 @@
+{
+  "id": 4000006,
+  "description": {
+    "id": 4000006,
+    "name": "Octopus Leg",
+    "description": "The leg removed from an octopus",
+    "chineseName": "章魚腳"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9UlEQVR4nLWWjXHiMBCF1zNpYFtwC0oJogRTAlcClAAlhBJwCbiEqIRTCyqB7NuVZJtAbmxymniIbGs/vf2T3+h3x+1u3kwnvwVTyNXtdcLM+vs+HAq8eQU2U1AgQiFuDUQx6f2UEm3jGe83a2C3v7sP6vueXOsyRP7atipKISpEL5kf2dMhDbelsG8gKGHXZoiYVsAISinWxYuV8c6TC2ag9U5BangIRMoqIPvV90Q1hRWwcDibAYFw5yhFcVkfTFkGRYXgYnLei3rxQjgvh8FOC9eJQp0/AbXO6/V+ei9LFyXI7er3umHO7ouHvrouZhiSxXd7gWyIBoMUA8uUmWcE5DS1p7Ep8fHdzkB3Bb0cpoOVaplnG0h5J4jNM9A6mGZeNGa+WBVzzToai/71doU0Z1+KmItYiiHQxR/lfyuNbbDOsQbWbMLpdml3FjpRpyxkJmhSAlCopWBbIrxbWtUj2H3XJpq7osFiA8IyU+5QCkxMNkd2QhzPgVOYprbuUlZolkmnyC9Ooc3kHl3crq7hjMUf+nHMpVDG2wwkAW47bzvrBzXwITvD+BNn/q9qc1ys88OlkGaiLZnkunYX2vRbbcQCOqp8t++sQM+D+L7UjhUXoHfAmZsRzysfrTFDZQr5caLia1MmRhmKIP00UAhhVj+1mv85bAVldXlS4zrGDJKhBpGd1I3OtUuQqOtEXf9InYWBa7Bqj5wWeoUhGcbdaIxkERIgH/WGnALrQLzUdd7OONRbMYZmTOFUlTXm7725k8cixbMtnuWYpuyBS04aLp8BbHHSE1qumKJ6wvmONuexfc3qDC7TjETbGQ/YZiMfLgrEO9lwjWA9MGNtzIAf4Bk50elBBxGDokDcEYdQXQPF+WUF6n2/112XLj9hmuvH8WPXb7JxdROMoWBLHZXF2BQ9H80Pz761K325dAios2KXjDpvq0paOZ414lqon92xFuWr4xnszlX/B6aQT5xJE1D+aFntvmcwGLzJNzo9uP/y+AI9AsT0543OXwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADN0lEQVR4nK2XjXHiMBCF1zNpQFeCrwSnBFGCKYGUACVACaEEXAIuISohKiEqgdu3K8mysJODiSYasLD309s/OS/0u+NWXTf1Db8FFNC128uFMUY+X8dD2kAGPwucKUkgJpFpFUY+yHoIgbb+fEvQZ4C3z907DcNAXdtFEP+1bVYWnBeQTL4+GkuHMAr0UeAdDIpM10YQmxfIBAvBzww8rNDsLHVOjbS2E5gYHx2R8BJMP+U+Vk/uSaA7nNUIg0zfUfDsvkGtJZgXEKahzlr2AnvDnZ8DwlYLN7JSuV6BtZ2V+Xp6TY8+nDS3q93Lxk10pT8M2Y0+ApFAtt8zaEM0TqA0HlOoXmJYJ2lfxirFy/Y7hS0U/eNAGUbImpG6iRB3g1h9B3sOKBnplRunEeWmzMa7DvM8EEwuAWNToZskmrxzdLFH/q5ls3VTh3kG2Gzc6XZpdxpKVik8ZCyIXB5QKmWi2yLcW7a1JWDd7anaYQMDCoV1Q7GbCTQY0mtkLUSae2gJlLSX3fJTkn3cUeLNJbgp1ujS7fIzJqLxhx7uY5mUIwEVxkFve6s7HEYx8s47xHibuyarjnHSEwPuhUQVrwnG89pfaDNsc/Nm2FFc0e17LeLzyLFItaXFB3AFnbkc8b2aozZzqA2xeUqnmGSqQjZsoAxuOI3knJvVV674H4c+QVFlvCh5RQwhH6oQ7aKu5Fq6CbHKnlUOSyo1JCYHL/fUuhlkIBJk2pXEjB9EUsTXBsWW0DwQP3Gj1TMS9ZiMoYGTO80UNur/vbrWTIWM37b4LcY4RE9cYiKZ9EphNG5y0vP0wYtHOtvT5jxvdbM6hPskU9GipoO62fDLkEBxTzSew5IPXZ+bOTZwgIf4zYBWOg0bZSXsGj+67CYojw8IVNbtXnafToeCq2GYxo+nRRMB4jIYRFGnOksGsDFaHw39MOrWJg+kTgKV2hA4085SuH/iXBtLtTNzxVrzFqOs+OujP5aF29L/FWQNS8UcamA65T7vl2XYemHB+NI6JtLQl0AY+cKXD5xpxXJ8EUJGtPTYuNtErRCWP/h/gvq+u4VvDNffZ/Ol+hGy/xZrS66b2sI6dHUT/wDNOt1h2vfFHAAAAABJRU5ErkJggg==",
+    "slotMax": 200,
+    "price": 8,
+    "setCompleteCount": 0,
+    "islots": []
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}
