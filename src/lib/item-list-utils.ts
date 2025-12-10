@@ -22,7 +22,7 @@ import {
   matchesJobClassFilter,
   matchesLevelRangeFilter,
 } from '@/lib/filter-utils'
-import { findGachaItemAttributes } from '@/lib/gacha-utils'
+import { findGachaItemEssential } from '@/lib/gacha-utils'
 
 // 統一的篩選資料介面（支援 Essential 和完整 Attributes）
 type FilterableItem = ItemAttributes | ItemAttributesEssential
@@ -188,7 +188,7 @@ export function applyItemFilters(
 
   filtered.forEach(item => {
     if (!extendedAttributesMap.has(item.itemId)) {
-      const gachaAttributes = findGachaItemAttributes(item.itemId, gachaMachines)
+      const gachaAttributes = findGachaItemEssential(item.itemId, gachaMachines)
       if (gachaAttributes) {
         extendedAttributesMap.set(item.itemId, gachaAttributes)
       }
@@ -233,7 +233,7 @@ export function sortItemsByLevel(
 
   items.forEach(item => {
     if (!extendedAttributesMap.has(item.itemId)) {
-      const gachaAttributes = findGachaItemAttributes(item.itemId, gachaMachines)
+      const gachaAttributes = findGachaItemEssential(item.itemId, gachaMachines)
       if (gachaAttributes) {
         extendedAttributesMap.set(item.itemId, gachaAttributes)
       }
