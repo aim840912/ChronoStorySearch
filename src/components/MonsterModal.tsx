@@ -112,7 +112,7 @@ export function MonsterModal({
   const mobInfo = useMemo(() => {
     if (!monsterId || !mobInfoData) return null
     return (
-      mobInfoData.find((info) => info.mob.mob_id === String(monsterId)) || null
+      mobInfoData.find((info) => info.mob.id === String(monsterId)) || null
     )
   }, [monsterId, mobInfoData])
 

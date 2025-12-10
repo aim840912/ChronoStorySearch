@@ -1,0 +1,2178 @@
+{
+  "machineId": 4,
+  "machineName": "Kerning City",
+  "chineseMachineName": "墮落城市",
+  "description": "墮落城市轉蛋機",
+  "totalItems": 241,
+  "items": [
+    {
+      "itemId": 1203013,
+      "itemName": "Hwabi Throwing-Stars",
+      "chineseName": "月牙鏢",
+      "probability": "0.07%",
+      "chance": 21429,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1203012,
+      "itemName": "Ilbi Throwing-Stars",
+      "chineseName": "日之鏢",
+      "probability": "0.09%",
+      "chance": 26923,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1472053,
+      "itemName": "Red Craven",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1332051,
+      "itemName": "Gold Double Knife",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1332052,
+      "itemName": "Blood Dagger",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1082135,
+      "itemName": "Blue Anelin",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082136,
+      "itemName": "Green Anelin",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082137,
+      "itemName": "Red Anelin",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082138,
+      "itemName": "Dark Anelin",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1002380,
+      "itemName": "Green Canal Hood",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002381,
+      "itemName": "Blue Canal Hood",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002382,
+      "itemName": "Red Canal Hood",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002383,
+      "itemName": "Dark Canal Hood",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1050096,
+      "itemName": "Green Katinas",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050097,
+      "itemName": "Blue Katinas",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050098,
+      "itemName": "Red Katinas",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050099,
+      "itemName": "Dark Katinas",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051090,
+      "itemName": "Green Katte",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051091,
+      "itemName": "Blue Katte",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051092,
+      "itemName": "Red Katte",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051093,
+      "itemName": "Dark Katte",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1203010,
+      "itemName": "Steely Throwing-Knives",
+      "chineseName": "雷之鏢",
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1072213,
+      "itemName": "Green Katina Boots",
+      "chineseName": "綠色蒂娜長靴",
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072214,
+      "itemName": "Blue Katina Boots",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072215,
+      "itemName": "Red Katina Boots",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072216,
+      "itemName": "Dark Katina Boots",
+      "chineseName": null,
+      "probability": "0.16%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1060104,
+      "itemName": "Green Osfa Pants",
+      "chineseName": "藍色勇者褲",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060105,
+      "itemName": "Brown Osfa Pants",
+      "chineseName": "褐色勇者褲",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060106,
+      "itemName": "Purple Osfa Pants",
+      "chineseName": "粉色勇者褲",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060107,
+      "itemName": "Red Osfa Pants",
+      "chineseName": "紅色勇者褲",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061114,
+      "itemName": "Green Osfa Pants",
+      "chineseName": "藍色勇者褲",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061115,
+      "itemName": "Brown Osfa Pants",
+      "chineseName": "褐色勇者褲",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061116,
+      "itemName": "Purple Osfa Pants",
+      "chineseName": "粉色勇者褲",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061117,
+      "itemName": "Red Osfa Pants",
+      "chineseName": null,
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1472033,
+      "itemName": "Casters",
+      "chineseName": "卡帝斯拳套",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1332026,
+      "itemName": "Cursayer",
+      "chineseName": "可撒之劍",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1332027,
+      "itemName": "Varkit",
+      "chineseName": "霸傑之刃",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1082142,
+      "itemName": "Green Mystra",
+      "chineseName": "綠色米斯特手套",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082143,
+      "itemName": "Purple Mystra",
+      "chineseName": "紫色米斯特手套",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082144,
+      "itemName": "Dark Mystra",
+      "chineseName": "黑色米斯特手套",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1002323,
+      "itemName": "Green Osfa Hat",
+      "chineseName": null,
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002324,
+      "itemName": "Brown Osfa Hat",
+      "chineseName": null,
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002325,
+      "itemName": "Purple Osfa Hat",
+      "chineseName": null,
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002326,
+      "itemName": "Red Osfa Hat",
+      "chineseName": "紅扣帶帽",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1203009,
+      "itemName": "Persimmon",
+      "chineseName": null,
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1072192,
+      "itemName": "Green Osfa Boots",
+      "chineseName": "藍扣帶靴",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072193,
+      "itemName": "Brown Osfa Boots",
+      "chineseName": "褐扣帶靴",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072194,
+      "itemName": "Purple Osfa Boots",
+      "chineseName": "紫扣帶靴",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072195,
+      "itemName": "Red Osfa Boots",
+      "chineseName": "紅扣帶靴",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1040115,
+      "itemName": "Green Osfa Suit",
+      "chineseName": "藍扣帶護甲",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040116,
+      "itemName": "Brown Osfa Suit",
+      "chineseName": "褐扣帶護甲",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040117,
+      "itemName": "Purple Osfa Suit",
+      "chineseName": "紫扣帶護甲",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040118,
+      "itemName": "Red Osfa Suit",
+      "chineseName": "紅扣帶護甲",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041115,
+      "itemName": "Green Osfa Suit",
+      "chineseName": "藍扣帶護甲",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041116,
+      "itemName": "Brown Osfa Suit",
+      "chineseName": "褐扣帶護甲",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041117,
+      "itemName": "Purple Osfa Suit",
+      "chineseName": "紫扣帶護甲",
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041118,
+      "itemName": "Red Osfa Suit",
+      "chineseName": null,
+      "probability": "0.20%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1060097,
+      "itemName": "Green Pirate Pants",
+      "chineseName": "綠隱者之褲",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060098,
+      "itemName": "Red Pirate Pants",
+      "chineseName": "紅隱者之褲",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060099,
+      "itemName": "Dark Pirate Pants",
+      "chineseName": "黑隱者之褲",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061104,
+      "itemName": "Green Pirate Skirt",
+      "chineseName": "綠隱者之裙",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061105,
+      "itemName": "Red Pirate Skirt",
+      "chineseName": "紅隱者之裙",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061106,
+      "itemName": "Dark Pirate Skirt",
+      "chineseName": "黑隱者之裙",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1472031,
+      "itemName": "Black Mamba",
+      "chineseName": "龍之拳",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1332022,
+      "itemName": "Angelic Betrayal",
+      "chineseName": "小妖精刀",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1332023,
+      "itemName": "Dragon's Tail",
+      "chineseName": "黑精靈拳刃",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1082118,
+      "itemName": "Green Larceny",
+      "chineseName": "德古拉藍手套",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082119,
+      "itemName": "Purple Larceny",
+      "chineseName": "德古拉紫手套",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082120,
+      "itemName": "Blood Larceny",
+      "chineseName": "德古拉紅手套",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1002327,
+      "itemName": "Brown Pireta Hat",
+      "chineseName": "褐色海盜帽",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002328,
+      "itemName": "Green Pireta Hat",
+      "chineseName": "綠色海盜帽",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002329,
+      "itemName": "Red Pireta Hat",
+      "chineseName": "紅色海盜帽",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002330,
+      "itemName": "Dark Pireta Hat",
+      "chineseName": "黑色海盜帽",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1203008,
+      "itemName": "Tobi Throwing-Stars",
+      "chineseName": "梅之鏢",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1072172,
+      "itemName": "Green Pirate Boots",
+      "chineseName": "綠飛影鞋",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072173,
+      "itemName": "Red Pirate Boots",
+      "chineseName": "紅飛影鞋",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072174,
+      "itemName": "Dark Pirate Boots",
+      "chineseName": "黑飛影鞋",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1040108,
+      "itemName": "Green Pirate Top",
+      "chineseName": "綠隱者之服",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040109,
+      "itemName": "Red Pirate Top",
+      "chineseName": "紅隱者之服",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040110,
+      "itemName": "Dark Pirate Top",
+      "chineseName": "黑隱者之服",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041105,
+      "itemName": "Green Pirate Blouse",
+      "chineseName": "綠隱者之服",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041106,
+      "itemName": "Red Pirate Blouse",
+      "chineseName": "紅隱者之服",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041107,
+      "itemName": "Dark Pirate Blouse",
+      "chineseName": "黑隱者之服",
+      "probability": "0.25%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1060093,
+      "itemName": "Brown Studded Pants",
+      "chineseName": "褐玄武之褲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060094,
+      "itemName": "Blue Studded Pants",
+      "chineseName": "藍玄武之褲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060095,
+      "itemName": "Dark Studded Pants",
+      "chineseName": "黑玄武之褲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061099,
+      "itemName": "Purple Mystique Pants",
+      "chineseName": "紫朱雀之褲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061100,
+      "itemName": "Blue Mystique Pants",
+      "chineseName": "藍朱雀之褲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061101,
+      "itemName": "Pink Mystique Pants",
+      "chineseName": "粉紅朱雀之褲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061102,
+      "itemName": "Red Mystique Pants",
+      "chineseName": "紅朱雀之褲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1472026,
+      "itemName": "Brown Scarab",
+      "chineseName": "黃閃電甲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1472027,
+      "itemName": "Green Scarab",
+      "chineseName": "綠閃電甲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1472028,
+      "itemName": "Blue Scarab",
+      "chineseName": "藍閃電甲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1472029,
+      "itemName": "Black Scarab",
+      "chineseName": "黑閃電甲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1332018,
+      "itemName": "Kandine",
+      "chineseName": "鳳凰刃",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1332019,
+      "itemName": "Golden River",
+      "chineseName": "金剛刃",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1082095,
+      "itemName": "Bronze Rover",
+      "chineseName": "青銅名譽手套",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082096,
+      "itemName": "Silver Rover",
+      "chineseName": "銀名譽手套",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082097,
+      "itemName": "Gold Rover",
+      "chineseName": "黃金名譽手套",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1002281,
+      "itemName": "Brown Nightfox",
+      "chineseName": "褐天空之帽",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002282,
+      "itemName": "Blue Nightfox",
+      "chineseName": "藍天空之帽",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002283,
+      "itemName": "Purple Nightfox",
+      "chineseName": "紫天空之帽",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002284,
+      "itemName": "White Nightfox",
+      "chineseName": "白天空之帽",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002285,
+      "itemName": "Blood Nightfox",
+      "chineseName": "紅天空之帽",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1203007,
+      "itemName": "Icicle",
+      "chineseName": "冰柱",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1072161,
+      "itemName": "Purple Mystique Shoes",
+      "chineseName": "紫龍皮鞋",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072162,
+      "itemName": "Blue Mystique Shoes",
+      "chineseName": "藍龍皮鞋",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072163,
+      "itemName": "Red Mystique Shoes",
+      "chineseName": "紅龍皮鞋",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1040105,
+      "itemName": "Brown Studded Top",
+      "chineseName": "褐玄武之甲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040106,
+      "itemName": "Blue Studded Top",
+      "chineseName": "藍玄武之甲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040107,
+      "itemName": "Dark Studded Top",
+      "chineseName": "黑玄武之甲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041100,
+      "itemName": "Purple Mystique",
+      "chineseName": "紫朱雀之甲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041101,
+      "itemName": "Blue Mystique",
+      "chineseName": "藍朱雀之甲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041102,
+      "itemName": "Pink Mystique",
+      "chineseName": "粉紅朱雀之甲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041103,
+      "itemName": "Red Mystique",
+      "chineseName": "紅朱雀之甲",
+      "probability": "0.30%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1060087,
+      "itemName": "Light Scorpio Pants",
+      "chineseName": "白飛影之褲",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060088,
+      "itemName": "Oaker Scorpio Pants",
+      "chineseName": "黃飛影之褲",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060089,
+      "itemName": "Dark Scorpio Pants",
+      "chineseName": "黑飛影之褲",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061093,
+      "itemName": "Light Mantis Pants",
+      "chineseName": "灰飛影之褲",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061094,
+      "itemName": "Bloody Mantis Pants",
+      "chineseName": "赤飛影之褲",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061095,
+      "itemName": "Umber Mantis Pants",
+      "chineseName": "黑飛影之褲",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1472022,
+      "itemName": "Bronze Gigantic",
+      "chineseName": "青銅戰神拳套",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1472023,
+      "itemName": "Blood Gigantic",
+      "chineseName": "赤紅戰神拳套",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1472024,
+      "itemName": "Sapphire Gigantic",
+      "chineseName": "藍寶戰神拳套",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1472025,
+      "itemName": "Dark Gigantic",
+      "chineseName": "黑戰神拳套",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1332015,
+      "itemName": "Deadly Fin",
+      "chineseName": "雙翼刃",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1332017,
+      "itemName": "Serpent's Coil",
+      "chineseName": "金蛇劍",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1082092,
+      "itemName": "Bronze Pow",
+      "chineseName": "青銅柔絲手套",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082093,
+      "itemName": "Steal Pow",
+      "chineseName": "鋼鐵柔絲手套",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082094,
+      "itemName": "Gold Pow",
+      "chineseName": "黃金柔絲手套",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1002247,
+      "itemName": "Bronze Identity",
+      "chineseName": "青銅忍者頭巾",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002248,
+      "itemName": "Silver Identity",
+      "chineseName": "銀忍者頭巾",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002249,
+      "itemName": "Dark Identity",
+      "chineseName": "黑忍者頭巾",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1203006,
+      "itemName": "Kumbi Throwing-Stars",
+      "chineseName": "雪花鏢",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1072150,
+      "itemName": "Blood Moss Boots",
+      "chineseName": "紅無痕之鞋",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072151,
+      "itemName": "Gold Moss Boots",
+      "chineseName": "金無痕之鞋",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072152,
+      "itemName": "Dark Moss Boots",
+      "chineseName": "黑無痕之鞋",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1040098,
+      "itemName": "Light Scorpio",
+      "chineseName": "白飛影之服",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040099,
+      "itemName": "Oaker Scorpio",
+      "chineseName": "黃飛影之服",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040100,
+      "itemName": "Dark Scorpio",
+      "chineseName": "黑飛影之服",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041094,
+      "itemName": "Light Mantis",
+      "chineseName": "灰飛影之服",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041095,
+      "itemName": "Bloody Mantis",
+      "chineseName": "赤飛影之服",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041096,
+      "itemName": "Umber Mantis",
+      "chineseName": "黑飛影之服",
+      "probability": "0.38%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1060083,
+      "itemName": "Red China Pants",
+      "chineseName": "赤陽褲",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060084,
+      "itemName": "Blue China Pants",
+      "chineseName": "青陽褲",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060085,
+      "itemName": "Brown China Pants",
+      "chineseName": "黃陽褲",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060086,
+      "itemName": "Green China Pants",
+      "chineseName": "綠陽褲",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061076,
+      "itemName": "Maroon Moon Pants",
+      "chineseName": "紫月褲",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061077,
+      "itemName": "Blue Moon Pants",
+      "chineseName": "青月褲",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061078,
+      "itemName": "Brown Moon Pants",
+      "chineseName": "黃月褲",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061079,
+      "itemName": "Red Moon Pants",
+      "chineseName": "赤月褲",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1472018,
+      "itemName": "Steel Slain",
+      "chineseName": "鋼鐵手甲",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1472019,
+      "itemName": "Blood Slain",
+      "chineseName": "赤紅手甲",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1472020,
+      "itemName": "Sapphire Slain",
+      "chineseName": "藍寶手甲",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1472021,
+      "itemName": "Dark Slain",
+      "chineseName": "黑手甲",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1332003,
+      "itemName": "Shinkita",
+      "chineseName": "破碎刃",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1332016,
+      "itemName": "Sai",
+      "chineseName": "華氏短劍",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1082065,
+      "itemName": "Blue Moon Gloves",
+      "chineseName": "藍月手套",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Gloves"
+    },
+    {
+      "itemId": 1082066,
+      "itemName": "Brown Moon Gloves",
+      "chineseName": "黃月手套",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Gloves"
+    },
+    {
+      "itemId": 1082067,
+      "itemName": "Red Moon Gloves",
+      "chineseName": "赤月手套",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Gloves"
+    },
+    {
+      "itemId": 1002207,
+      "itemName": "Red Sonata",
+      "chineseName": "紅黑太陽帽",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002208,
+      "itemName": "Blue Sonata",
+      "chineseName": "藍黑太陽帽",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002209,
+      "itemName": "Green Sonata",
+      "chineseName": "綠黑太陽帽",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002210,
+      "itemName": "Brown Sonata",
+      "chineseName": "黃黑太陽帽",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1203005,
+      "itemName": "Paper Fighter Plane",
+      "chineseName": null,
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1092018,
+      "itemName": "Seclusion Wristguard",
+      "chineseName": null,
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1092020,
+      "itemName": "Jurgen Wristguard",
+      "chineseName": "敏捷盾牌",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1072128,
+      "itemName": "Blue Goni Shoes",
+      "chineseName": "藍雷電鞋",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072129,
+      "itemName": "Green Goni Shoes",
+      "chineseName": "綠雷電鞋",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072130,
+      "itemName": "Red Goni Shoes",
+      "chineseName": "紅雷電鞋",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072131,
+      "itemName": "Purple Goni Shoes",
+      "chineseName": "紫雷電鞋",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1040094,
+      "itemName": "Red China",
+      "chineseName": "赤陽",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040095,
+      "itemName": "Blue China",
+      "chineseName": "青陽",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040096,
+      "itemName": "Brown China",
+      "chineseName": "黃陽",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040097,
+      "itemName": "Green China",
+      "chineseName": "綠陽",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041077,
+      "itemName": "Maroon Moon",
+      "chineseName": "紫月",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041078,
+      "itemName": "Blue Moon",
+      "chineseName": "青月",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041079,
+      "itemName": "Brown Moon",
+      "chineseName": "黃月",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041080,
+      "itemName": "Red Moon",
+      "chineseName": "赤月",
+      "probability": "0.49%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1060071,
+      "itemName": "Khaki Shadow Pants",
+      "chineseName": "樹林之褲",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060072,
+      "itemName": "Marine Shadow Pants",
+      "chineseName": "滄海之褲",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060073,
+      "itemName": "Dark Shadow Pants",
+      "chineseName": "黑暗之褲",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061069,
+      "itemName": "Purple Shadow Pants",
+      "chineseName": "樹林之褲",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061070,
+      "itemName": "Red Shadow Pants",
+      "chineseName": "滄海之褲",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061071,
+      "itemName": "Dark Shadow Pants",
+      "chineseName": "黑暗之褲",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1472014,
+      "itemName": "Steel Avarice",
+      "chineseName": "鋼鐵護腕",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1472015,
+      "itemName": "Blood Avarice",
+      "chineseName": "赤紅護腕",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1472016,
+      "itemName": "Adamantium Avarice",
+      "chineseName": "朱礦護腕",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1472017,
+      "itemName": "Dark Avarice",
+      "chineseName": "黑護腕",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1332011,
+      "itemName": "Bazlud",
+      "chineseName": "刺客短刀",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1332031,
+      "itemName": "Dragon Toenail",
+      "chineseName": "龍炎短劍",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1082074,
+      "itemName": "Dark Cleave",
+      "chineseName": "黑盜賊手套",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082075,
+      "itemName": "Red Cleave",
+      "chineseName": "紅盜賊手套",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082076,
+      "itemName": "Gold Cleave",
+      "chineseName": "黃金盜賊手套",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1002181,
+      "itemName": "Red Pilfer",
+      "chineseName": "紅海盜頭巾",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002182,
+      "itemName": "Blue Pilfer",
+      "chineseName": "藍海盜頭巾",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002183,
+      "itemName": "Green Pilfer",
+      "chineseName": null,
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002184,
+      "itemName": "Brown Pilfer",
+      "chineseName": "褐海盜頭巾",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002185,
+      "itemName": "Dark Pilfer",
+      "chineseName": "黑海盜頭巾",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1203004,
+      "itemName": "Wooden Top",
+      "chineseName": "木製陀螺",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1072107,
+      "itemName": "Black Red-Lined Shoes",
+      "chineseName": "紅流星鞋",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072108,
+      "itemName": "Black Green-Lined Shoes",
+      "chineseName": "綠流星鞋",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072109,
+      "itemName": "Black Yellow-Lined Shoes",
+      "chineseName": "黃流星鞋",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072110,
+      "itemName": "Black Blue-Lines Shoes",
+      "chineseName": "藍流星鞋",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1040082,
+      "itemName": "Khaki Shadow",
+      "chineseName": "樹林之影",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040083,
+      "itemName": "Marine Shadow",
+      "chineseName": "滄海之影",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040084,
+      "itemName": "Dark Shadow",
+      "chineseName": "黑暗之影",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041074,
+      "itemName": "Purple Shadow",
+      "chineseName": "花精之影",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041075,
+      "itemName": "Red Shadow",
+      "chineseName": "火焰之影",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041076,
+      "itemName": "Dark Shadow",
+      "chineseName": "深夜之影",
+      "probability": "0.66%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1060050,
+      "itemName": "Blue Knucklevest Pants",
+      "chineseName": "藍暗影之褲",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060051,
+      "itemName": "Red Knucklevest Pants",
+      "chineseName": "紅暗影之褲",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1060052,
+      "itemName": "Black Knucklevest Pants",
+      "chineseName": "黑暗影之褲",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1472011,
+      "itemName": "Bronze Guardian",
+      "chineseName": null,
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1472012,
+      "itemName": "Silver Guardian",
+      "chineseName": "銀守護拳套",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1472013,
+      "itemName": "Dark Guardian",
+      "chineseName": "黑守護拳套",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1332014,
+      "itemName": "Gephart",
+      "chineseName": "暗影刃",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1082045,
+      "itemName": "Gold Arbion",
+      "chineseName": "黃金追擊手套",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082046,
+      "itemName": "Steel Arbion",
+      "chineseName": "鋼鐵追擊手套",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082047,
+      "itemName": "Orihalcon Arbion",
+      "chineseName": "紫礦追擊手套",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1002176,
+      "itemName": "Red Burgler",
+      "chineseName": "紅防風帽",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002177,
+      "itemName": "Blue Burgler",
+      "chineseName": "藍防風帽",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002178,
+      "itemName": "Green Burgler",
+      "chineseName": "綠防風帽",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002179,
+      "itemName": "Brown Burgler",
+      "chineseName": "褐防風帽",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002180,
+      "itemName": "Dark Burgler",
+      "chineseName": "黑防風帽",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1051006,
+      "itemName": "Dark Avenger",
+      "chineseName": "黑飛影甲",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051007,
+      "itemName": "Red Avenger",
+      "chineseName": "紅飛影甲",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051008,
+      "itemName": "Blue Avenger",
+      "chineseName": "藍飛影甲",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051009,
+      "itemName": "Purple Avenger",
+      "chineseName": "紫飛影甲",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1072104,
+      "itemName": "Red White-Lined Boots",
+      "chineseName": null,
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072105,
+      "itemName": "Green White-Lined Boots",
+      "chineseName": "綠楊柳鞋",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072106,
+      "itemName": "Blue White-Lined Boots",
+      "chineseName": "藍楊柳鞋",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1040061,
+      "itemName": "Green Knucklevest",
+      "chineseName": "綠暗影之服",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040062,
+      "itemName": "Red Knucklevest",
+      "chineseName": "紅暗影之服",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1040063,
+      "itemName": "Black Knucklevest",
+      "chineseName": "黑暗影之服",
+      "probability": "0.77%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1332001,
+      "itemName": "Halfmoon Zamadar",
+      "chineseName": "半月刃",
+      "probability": "0.86%",
+      "chance": 262500,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1203001,
+      "itemName": "Wolbi Throwing-Stars",
+      "chineseName": "迴旋鏢",
+      "probability": "0.93%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1203002,
+      "itemName": "Snowball",
+      "chineseName": "雪球",
+      "probability": "0.93%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1203003,
+      "itemName": "Mokbi Throwing-Stars",
+      "chineseName": "黑色利刃",
+      "probability": "0.93%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1072171,
+      "itemName": "Black Snowshoes",
+      "chineseName": null,
+      "probability": "0.93%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1092019,
+      "itemName": "Nimble Wristguard",
+      "chineseName": null,
+      "probability": "0.93%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Shield"
+    }
+  ]
+}

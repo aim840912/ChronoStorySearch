@@ -212,7 +212,7 @@ export interface EnhancedScroll {
 
 export interface EnhancedGachaItem {
   // 轉蛋機基本欄位
-  chineseName: string
+  chineseName?: string | null
   probability: string
   chance: number
   itemId: string | number
@@ -224,7 +224,7 @@ export interface EnhancedGachaItem {
   maxStackCount?: number | null
   untradeable?: boolean | null
   itemDescription?: string | null
-  type?: string
+  type?: string | null
   subType?: string | null
   equipment?: EnhancedEquipment
   scroll?: EnhancedScroll
@@ -259,4 +259,84 @@ export interface EnhancedGachaItem {
     subversion: number
     locale: number
   }
+}
+
+// ========== Items-Organized JSON 格式（chronostoryData/items-organized/） ==========
+
+/**
+ * 物品描述資訊
+ */
+export interface ItemsOrganizedDescription {
+  id: number
+  name: string
+  description: string
+  chineseItemName?: string
+  chineseNameSource?: string
+}
+
+/**
+ * 物品元資料（根據物品類型可能有不同欄位）
+ */
+export interface ItemsOrganizedMetaInfo {
+  only: boolean
+  cash: boolean
+  mob?: number
+  slotMax?: number
+  price?: number
+  setCompleteCount?: number
+  // 裝備相關
+  reqLevel?: number
+  reqSTR?: number
+  reqDEX?: number
+  reqINT?: number
+  reqLUK?: number
+  reqJob?: number
+  reqLevelEquip?: number
+  tuc?: number  // Total Upgrade Count（可升級次數）
+  // 裝備屬性
+  incSTR?: number
+  incDEX?: number
+  incINT?: number
+  incLUK?: number
+  incPAD?: number  // Physical Attack
+  incMAD?: number  // Magic Attack
+  incPDD?: number  // Physical Defense
+  incMDD?: number  // Magic Defense
+  incACC?: number  // Accuracy
+  incEVA?: number  // Avoidability
+  incMHP?: number  // Max HP
+  incMMP?: number  // Max MP
+  incSpeed?: number
+  incJump?: number
+  attackSpeed?: number
+}
+
+/**
+ * 物品類型資訊
+ */
+export interface ItemsOrganizedTypeInfo {
+  overallCategory: string  // Equip, Use, Etc
+  category: string         // Armor, Weapon, Consumable, Armor Scroll, etc.
+  subCategory: string      // Hat, Sword, Potion, Gloves, etc.
+}
+
+/**
+ * 隨機屬性範圍
+ */
+export interface ItemsOrganizedRandomStat {
+  base: number
+  min: number
+  max: number
+}
+
+/**
+ * chronostoryData/items-organized/ 的物品資料格式
+ */
+export interface ItemsOrganizedData {
+  id: number
+  description: ItemsOrganizedDescription
+  metaInfo: ItemsOrganizedMetaInfo
+  typeInfo: ItemsOrganizedTypeInfo
+  randomStats?: Record<string, ItemsOrganizedRandomStat>
+  isGachapon?: boolean
 }

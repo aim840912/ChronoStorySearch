@@ -1,11 +1,30 @@
 'use client'
 
 import { useState, useEffect, useCallback, useMemo } from 'react'
-import type { ItemAttributesEssential, ItemAttributesDetailed, MobInfo, DropItem } from '@/types'
+import type {
+  ItemAttributesEssential,
+  MobInfo,
+  DropItem,
+  ItemsOrganizedData,
+} from '@/types'
 import { clientLogger } from '@/lib/logger'
-import essentialData from '@/../data/item-attributes-essential.json'
-import { ItemAttributesDetailedSchema } from '@/schemas/items.schema'
+import essentialData from '@/../chronostoryData/item-attributes-essential.json'
 import { DropItemsEssentialSchema } from '@/schemas/drops.schema'
+
+// ==================== Helper Functions ====================
+
+/**
+ * 根據物品 ID 判斷所在目錄
+ * - 1xxxxxx → equipment/
+ * - 2xxxxxx → consumable/
+ * - 其他 → etc/
+ */
+function getItemFolder(itemId: number): string {
+  const prefix = Math.floor(itemId / 1000000)
+  if (prefix === 1) return 'equipment'
+  if (prefix === 2) return 'consumable'
+  return 'etc'
+}
 
 /**
  * 預載入 Essential 物品資料 Hook
@@ -35,20 +54,26 @@ export function useItemAttributesEssential() {
 }
 
 /**
- * 懶加載單一物品 Detailed 資料 Hook
+ * 懶加載單一物品 Organized 資料 Hook
  *
  * 使用情境：
  * - 開啟 ItemModal 時
  * - 需要顯示物品完整屬性時
  *
  * 優化效果：
- * - 每個物品的 Detailed 資料僅 ~1.53 KB
+ * - 每個物品的資料僅 ~1.53 KB
  * - 只在需要時載入，大幅減少流量（94.5% 節省）
  *
+ * 資料來源：chronostoryData/items-organized/
+ * - equipment/ → 物品 ID 1xxxxxx
+ * - consumable/ → 物品 ID 2xxxxxx
+ * - etc/ → 其他物品 ID
+ *
  * @param itemId - 要載入的物品 ID（null 表示不載入）
+ * @returns 直接返回 ItemsOrganizedData 原始格式
  */
 export function useLazyItemDetailed(itemId: number | null) {
-  const [data, setData] = useState<ItemAttributesDetailed | null>(null)
+  const [data, setData] = useState<ItemsOrganizedData | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<Error | null>(null)
 
@@ -62,26 +87,30 @@ export function useLazyItemDetailed(itemId: number | null) {
       try {
         setIsLoading(true)
         setError(null)
-        clientLogger.info(`開始載入物品 ${itemId} 的 Detailed 資料...`)
+        const folder = getItemFolder(itemId)
+        clientLogger.info(`開始載入物品 ${itemId} 的資料（from ${folder}/）...`)
 
-        // 動態 import 單一物品的 Detailed JSON
-        const dataModule = await import(`@/../data/item-attributes-detailed/${itemId}.json`)
-        const rawData = dataModule.default
-
-        // 使用 Zod 驗證資料格式
-        const parseResult = ItemAttributesDetailedSchema.safeParse(rawData)
-
-        if (!parseResult.success) {
-          // 只在開發環境記錄驗證失敗警告
-          if (process.env.NODE_ENV === 'development') {
-            clientLogger.warn(`物品 ${itemId} 資料驗證失敗`, parseResult.error)
-          }
-          // 仍然使用原始資料，但記錄警告
-          setData(rawData as ItemAttributesDetailed)
+        // 動態 import 單一物品的 JSON（從 chronostoryData/items-organized/）
+        // 注意：Webpack 需要靜態路徑前綴，所以分開處理每個資料夾
+        let dataModule
+        if (folder === 'equipment') {
+          dataModule = await import(
+            `@/../chronostoryData/items-organized/equipment/${itemId}.json`
+          )
+        } else if (folder === 'consumable') {
+          dataModule = await import(
+            `@/../chronostoryData/items-organized/consumable/${itemId}.json`
+          )
         } else {
-          setData(parseResult.data as ItemAttributesDetailed)
-          clientLogger.info(`成功載入並驗證物品 ${itemId} 的 Detailed 資料`)
+          dataModule = await import(
+            `@/../chronostoryData/items-organized/etc/${itemId}.json`
+          )
         }
+        const rawData = dataModule.default as ItemsOrganizedData
+
+        // 直接返回原始 ItemsOrganizedData 格式
+        setData(rawData)
+        clientLogger.info(`成功載入物品 ${itemId} 的資料`)
       } catch (err) {
         const error = err instanceof Error ? err : new Error(`載入物品 ${itemId} 詳細資料失敗`)
         setError(error)
@@ -123,7 +152,7 @@ export function useLazyMobInfo() {
       clientLogger.info('開始懶加載怪物資訊資料...')
 
       // 動態 import JSON 資料
-      const dataModule = await import('@/../data/mob-info.json')
+      const dataModule = await import('@/../chronostoryData/mob-info.json')
       const mobInfo = dataModule.default as MobInfo[]
 
       setData(mobInfo)
@@ -137,15 +166,15 @@ export function useLazyMobInfo() {
     }
   }, [data, isLoading])
 
-  // 建立怪物血量 Map (mobId -> max_hp)
+  // 建立怪物血量 Map (mobId -> maxHP)
   const monsterHPMap = useMemo(() => {
     if (!data) return new Map<number, number | null>()
 
     const hpMap = new Map<number, number | null>()
     data.forEach((info) => {
-      const mobId = parseInt(info.mob.mob_id, 10)
+      const mobId = parseInt(info.mob.id, 10)
       if (!isNaN(mobId)) {
-        hpMap.set(mobId, info.mob.max_hp)
+        hpMap.set(mobId, info.mob.maxHP)
       }
     })
     return hpMap

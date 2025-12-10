@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import versionsData from '../../../data/maplestory-io-versions.json'
+import versionsData from '@/../data/maplestory-io-versions.json'
 
 type ApiType = 'item' | 'mob'
 type ResultType = { type: 'image' | 'json' | 'error' | 'loading'; data: string }

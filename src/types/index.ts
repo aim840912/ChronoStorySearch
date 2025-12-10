@@ -77,6 +77,11 @@ export type {
   EnhancedEquipment,
   EnhancedScroll,
   EnhancedGachaItem,
+  ItemsOrganizedDescription,
+  ItemsOrganizedMetaInfo,
+  ItemsOrganizedTypeInfo,
+  ItemsOrganizedRandomStat,
+  ItemsOrganizedData,
 } from './item-equipment'
 
 // ========== 篩選相關類型 ==========

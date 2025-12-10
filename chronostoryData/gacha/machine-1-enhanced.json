@@ -1,0 +1,1035 @@
+{
+  "machineId": 1,
+  "machineName": "Lith Harbor",
+  "chineseMachineName": "維多利亞港",
+  "description": "維多利亞港轉蛋機",
+  "totalItems": 114,
+  "items": [
+    {
+      "itemId": 1032026,
+      "itemName": "Gold Emerald Earrings",
+      "chineseName": null,
+      "probability": "0.07%",
+      "chance": 12500,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1102042,
+      "itemName": "Purple Adventurer Cape",
+      "chineseName": null,
+      "probability": "0.10%",
+      "chance": 16667,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1072239,
+      "itemName": "Yellow Snowshoes",
+      "chineseName": null,
+      "probability": "0.19%",
+      "chance": 33333,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082149,
+      "itemName": "Brown Work Gloves",
+      "chineseName": null,
+      "probability": "0.19%",
+      "chance": 33333,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1102041,
+      "itemName": "Pink Adventurer Cape",
+      "chineseName": null,
+      "probability": "0.19%",
+      "chance": 33333,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1032030,
+      "itemName": "Sword Earrings",
+      "chineseName": null,
+      "probability": "0.29%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1050127,
+      "itemName": "Bath Towel (Black)",
+      "chineseName": null,
+      "probability": "0.29%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051140,
+      "itemName": "Yellow Bath Towel",
+      "chineseName": null,
+      "probability": "0.29%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1072238,
+      "itemName": "Violet Snowshoes",
+      "chineseName": null,
+      "probability": "0.29%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1102046,
+      "itemName": "Blue Musketeer Cape",
+      "chineseName": null,
+      "probability": "0.32%",
+      "chance": 55263,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102047,
+      "itemName": "Turquoise Musketeer Cape",
+      "chineseName": null,
+      "probability": "0.32%",
+      "chance": 55263,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102048,
+      "itemName": "Red Musketeer Cape",
+      "chineseName": null,
+      "probability": "0.32%",
+      "chance": 55263,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1442026,
+      "itemName": "Red Surfboard",
+      "chineseName": null,
+      "probability": "0.32%",
+      "chance": 55263,
+      "type": "Eqp",
+      "subType": "Pole Arm"
+    },
+    {
+      "itemId": 1032017,
+      "itemName": "Rose Earrings",
+      "chineseName": "玫瑰耳環",
+      "probability": "0.35%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1102040,
+      "itemName": "Yellow Adventurer Cape",
+      "chineseName": null,
+      "probability": "0.35%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1432039,
+      "itemName": "Fishing Pole",
+      "chineseName": "釣魚杆",
+      "probability": "0.35%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Spear"
+    },
+    {
+      "itemId": 1032023,
+      "itemName": "Strawberry Earrings",
+      "chineseName": "草莓耳環",
+      "probability": "0.39%",
+      "chance": 67647,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1102031,
+      "itemName": "Green Giles Cape",
+      "chineseName": "綠龍紋披風",
+      "probability": "0.39%",
+      "chance": 67647,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102032,
+      "itemName": "Purple Giles Cape",
+      "chineseName": null,
+      "probability": "0.39%",
+      "chance": 67647,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102033,
+      "itemName": "Red Giles Cape",
+      "chineseName": null,
+      "probability": "0.39%",
+      "chance": 67647,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102034,
+      "itemName": "Blue Giles Cape",
+      "chineseName": null,
+      "probability": "0.39%",
+      "chance": 67647,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102035,
+      "itemName": "Black Giles Cape",
+      "chineseName": null,
+      "probability": "0.39%",
+      "chance": 67647,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1432018,
+      "itemName": "Sky Ski",
+      "chineseName": null,
+      "probability": "0.39%",
+      "chance": 67647,
+      "type": "Eqp",
+      "subType": "Spear"
+    },
+    {
+      "itemId": 1002392,
+      "itemName": "Brown Bandana",
+      "chineseName": null,
+      "probability": "0.43%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1032016,
+      "itemName": "Metal Heart Earrings",
+      "chineseName": "金屬心型耳環",
+      "probability": "0.43%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1032032,
+      "itemName": "Fallen Leaf Earrings",
+      "chineseName": null,
+      "probability": "0.43%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1302049,
+      "itemName": "Glowing Whip",
+      "chineseName": null,
+      "probability": "0.43%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "One-Handed Sword"
+    },
+    {
+      "itemId": 1032022,
+      "itemName": "Half Earrings",
+      "chineseName": "紅色時髦耳環",
+      "probability": "0.48%",
+      "chance": 83333,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1102026,
+      "itemName": "Green Seraph Cape",
+      "chineseName": null,
+      "probability": "0.48%",
+      "chance": 83333,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102027,
+      "itemName": "Blue Seraph Cape",
+      "chineseName": "藍妖精披風",
+      "probability": "0.48%",
+      "chance": 83333,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102028,
+      "itemName": "Red Seraph Cape",
+      "chineseName": "紅妖精披風",
+      "probability": "0.48%",
+      "chance": 83333,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102029,
+      "itemName": "White Seraph Cape",
+      "chineseName": "白妖精披風",
+      "probability": "0.48%",
+      "chance": 83333,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102030,
+      "itemName": "Black Seraph Cape",
+      "chineseName": "黑妖精披風",
+      "probability": "0.48%",
+      "chance": 83333,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1002391,
+      "itemName": "Green Bandana",
+      "chineseName": "綠色頭巾",
+      "probability": "0.53%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1032015,
+      "itemName": "Metal Silver Earrings",
+      "chineseName": "銀製耳環",
+      "probability": "0.53%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1322026,
+      "itemName": "Colorful Tube",
+      "chineseName": "彩虹游泳圈",
+      "probability": "0.53%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "One-Handed Blunt Weapon"
+    },
+    {
+      "itemId": 1032020,
+      "itemName": "Gold Drop Earrings",
+      "chineseName": "黃金耳環",
+      "probability": "0.59%",
+      "chance": 103846,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1102021,
+      "itemName": "Blue Gaia Cape",
+      "chineseName": "藍鬥士披風",
+      "probability": "0.59%",
+      "chance": 103846,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102022,
+      "itemName": "Red Gaia Cape",
+      "chineseName": "紅鬥士披風",
+      "probability": "0.59%",
+      "chance": 103846,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102023,
+      "itemName": "White Gaia Cape",
+      "chineseName": "白鬥士披風",
+      "probability": "0.59%",
+      "chance": 103846,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102024,
+      "itemName": "Black Gaia Cape",
+      "chineseName": "黑鬥士披風",
+      "probability": "0.59%",
+      "chance": 103846,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1032014,
+      "itemName": "Pink-Flowered Earrings",
+      "chineseName": "梅花耳環",
+      "probability": "0.67%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1092022,
+      "itemName": "Palette",
+      "chineseName": "調色盤",
+      "probability": "0.67%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1102015,
+      "itemName": "Blue Magic Cape",
+      "chineseName": "藍色魔法披風",
+      "probability": "0.67%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102016,
+      "itemName": "Red Magic Cape",
+      "chineseName": "紅色魔法披風",
+      "probability": "0.67%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102017,
+      "itemName": "White Magic Cape",
+      "chineseName": "白色魔法披風",
+      "probability": "0.67%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102018,
+      "itemName": "Black Magic Cape",
+      "chineseName": "黑色魔法披風",
+      "probability": "0.67%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1302021,
+      "itemName": "Pico-Pico Hammer",
+      "chineseName": null,
+      "probability": "0.67%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "One-Handed Sword"
+    },
+    {
+      "itemId": 1312013,
+      "itemName": "Green Paint Brush",
+      "chineseName": null,
+      "probability": "0.67%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "One-Handed Axe"
+    },
+    {
+      "itemId": 1322025,
+      "itemName": "Emergency Rescue Tube",
+      "chineseName": "救生圈",
+      "probability": "0.67%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "One-Handed Blunt Weapon"
+    },
+    {
+      "itemId": 1402014,
+      "itemName": "Thermometer",
+      "chineseName": null,
+      "probability": "0.67%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Two-Handed Sword"
+    },
+    {
+      "itemId": 1422011,
+      "itemName": "Sake Bottle",
+      "chineseName": null,
+      "probability": "0.67%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Two-Handed Blunt"
+    },
+    {
+      "itemId": 1442017,
+      "itemName": "Blood Snowboard",
+      "chineseName": null,
+      "probability": "0.67%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Pole Arm"
+    },
+    {
+      "itemId": 1032019,
+      "itemName": "Crystal Flower Earrings",
+      "chineseName": "水仙耳環",
+      "probability": "0.75%",
+      "chance": 131818,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1032021,
+      "itemName": "Holy Cross Earrings",
+      "chineseName": "聖十字耳環",
+      "probability": "0.75%",
+      "chance": 131818,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1102011,
+      "itemName": "Blue Justice Cape",
+      "chineseName": null,
+      "probability": "0.75%",
+      "chance": 131818,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102012,
+      "itemName": "Red Justice Cape",
+      "chineseName": null,
+      "probability": "0.75%",
+      "chance": 131818,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102013,
+      "itemName": "White Justice Cape",
+      "chineseName": null,
+      "probability": "0.75%",
+      "chance": 131818,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102014,
+      "itemName": "Black Justice Cape",
+      "chineseName": null,
+      "probability": "0.75%",
+      "chance": 131818,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1302025,
+      "itemName": "Red Umbrella",
+      "chineseName": null,
+      "probability": "0.75%",
+      "chance": 131818,
+      "type": "Eqp",
+      "subType": "One-Handed Sword"
+    },
+    {
+      "itemId": 1312014,
+      "itemName": "Black Paint Brush",
+      "chineseName": null,
+      "probability": "0.75%",
+      "chance": 131818,
+      "type": "Eqp",
+      "subType": "One-Handed Axe"
+    },
+    {
+      "itemId": 1432017,
+      "itemName": "Green Ski",
+      "chineseName": null,
+      "probability": "0.75%",
+      "chance": 131818,
+      "type": "Eqp",
+      "subType": "Spear"
+    },
+    {
+      "itemId": 1442027,
+      "itemName": "Green Surfboard",
+      "chineseName": "綠色衝浪板",
+      "probability": "0.75%",
+      "chance": 131818,
+      "type": "Eqp",
+      "subType": "Pole Arm"
+    },
+    {
+      "itemId": 1032012,
+      "itemName": "Skull Earrings",
+      "chineseName": "骷髏耳環",
+      "probability": "0.86%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1032013,
+      "itemName": "Red-Hearted Earrings",
+      "chineseName": "愛心耳環",
+      "probability": "0.86%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1032027,
+      "itemName": "Black Emerald Earrings",
+      "chineseName": null,
+      "probability": "0.86%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1102000,
+      "itemName": "Green Adventurer Cape",
+      "chineseName": "綠色冒險披風",
+      "probability": "0.86%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102001,
+      "itemName": "Blue Adventurer Cape",
+      "chineseName": "藍色冒險披風",
+      "probability": "0.86%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102002,
+      "itemName": "Red Adventurer Cape",
+      "chineseName": "紅色冒險披風",
+      "probability": "0.86%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102003,
+      "itemName": "White Adventurer Cape",
+      "chineseName": "白色冒險披風",
+      "probability": "0.86%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102004,
+      "itemName": "Black Adventurer Cape",
+      "chineseName": "黑色冒險披風",
+      "probability": "0.86%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1102043,
+      "itemName": "Brown Adventurer Cape",
+      "chineseName": null,
+      "probability": "0.86%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Cape"
+    },
+    {
+      "itemId": 1322021,
+      "itemName": "Black Tube",
+      "chineseName": "黑游泳圈",
+      "probability": "0.86%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "One-Handed Blunt Weapon"
+    },
+    {
+      "itemId": 1442018,
+      "itemName": "Frozen Tuna",
+      "chineseName": "冷凍金槍魚",
+      "probability": "0.86%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Pole Arm"
+    },
+    {
+      "itemId": 1442016,
+      "itemName": "Dark Snowboard",
+      "chineseName": null,
+      "probability": "0.91%",
+      "chance": 158333,
+      "type": "Eqp",
+      "subType": "Pole Arm"
+    },
+    {
+      "itemId": 1032018,
+      "itemName": "Pansy Earrings",
+      "chineseName": "紫荊花耳環",
+      "probability": "0.99%",
+      "chance": 172222,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1312012,
+      "itemName": "Hula Hoop",
+      "chineseName": null,
+      "probability": "0.99%",
+      "chance": 172222,
+      "type": "Eqp",
+      "subType": "One-Handed Axe"
+    },
+    {
+      "itemId": 1442028,
+      "itemName": "Black Surfboard",
+      "chineseName": "藍色衝浪板",
+      "probability": "0.99%",
+      "chance": 172222,
+      "type": "Eqp",
+      "subType": "Pole Arm"
+    },
+    {
+      "itemId": 1302029,
+      "itemName": "Beige Umbrella",
+      "chineseName": "褐色雨傘",
+      "probability": "1.05%",
+      "chance": 182558,
+      "type": "Eqp",
+      "subType": "One-Handed Sword"
+    },
+    {
+      "itemId": 1032011,
+      "itemName": "Blue Moon",
+      "chineseName": "藍月耳環",
+      "probability": "1.14%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1302016,
+      "itemName": "Yellow Umbrella",
+      "chineseName": "黃色雨傘",
+      "probability": "1.14%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "One-Handed Sword"
+    },
+    {
+      "itemId": 1322024,
+      "itemName": "Purple Tube",
+      "chineseName": "紫游泳圈",
+      "probability": "1.14%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "One-Handed Blunt Weapon"
+    },
+    {
+      "itemId": 1442015,
+      "itemName": "Golden Snowboard",
+      "chineseName": null,
+      "probability": "1.30%",
+      "chance": 227778,
+      "type": "Eqp",
+      "subType": "Pole Arm"
+    },
+    {
+      "itemId": 1032002,
+      "itemName": "Sapphire Earrings",
+      "chineseName": "藍寶石耳環",
+      "probability": "1.35%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1032008,
+      "itemName": "Cat's Eye",
+      "chineseName": "貓眼耳環",
+      "probability": "1.35%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1302013,
+      "itemName": "Red Whip",
+      "chineseName": "紅色鞭子",
+      "probability": "1.35%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "One-Handed Sword"
+    },
+    {
+      "itemId": 1432016,
+      "itemName": "Orange Ski",
+      "chineseName": null,
+      "probability": "1.45%",
+      "chance": 253030,
+      "type": "Eqp",
+      "subType": "Spear"
+    },
+    {
+      "itemId": 1002026,
+      "itemName": "Brown Bamboo Hat",
+      "chineseName": "褐色斗笠",
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002089,
+      "itemName": "Green Bamboo Hat",
+      "chineseName": "綠色斗笠",
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002090,
+      "itemName": "Blue Bamboo Hat",
+      "chineseName": "藍色斗笠",
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002393,
+      "itemName": "Pink Bandana",
+      "chineseName": null,
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002394,
+      "itemName": "Grey Bandana",
+      "chineseName": null,
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002452,
+      "itemName": "Black Starry Bandana",
+      "chineseName": null,
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002453,
+      "itemName": "White Starry Bandana",
+      "chineseName": null,
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002492,
+      "itemName": "White Baseball Cap",
+      "chineseName": null,
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1004765,
+      "itemName": "Purple Bamboo Hat",
+      "chineseName": "紫色斗笠",
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1050100,
+      "itemName": "Bathrobe for Men",
+      "chineseName": null,
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051098,
+      "itemName": "Bathrobe for Women",
+      "chineseName": null,
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1082145,
+      "itemName": "Yellow Work Gloves",
+      "chineseName": null,
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082146,
+      "itemName": "Red Work Gloves",
+      "chineseName": "紅色工作手套",
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082147,
+      "itemName": "Blue Work Gloves",
+      "chineseName": null,
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082148,
+      "itemName": "Purple Work Gloves",
+      "chineseName": null,
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082150,
+      "itemName": "Grey Work Gloves",
+      "chineseName": "灰色工作手套",
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1302027,
+      "itemName": "Green Umbrella",
+      "chineseName": null,
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "One-Handed Sword"
+    },
+    {
+      "itemId": 1302028,
+      "itemName": "Light Purple Umbrella",
+      "chineseName": "紫色雨傘",
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "One-Handed Sword"
+    },
+    {
+      "itemId": 1322003,
+      "itemName": "Lollipop",
+      "chineseName": "棒棒果",
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "One-Handed Blunt Weapon"
+    },
+    {
+      "itemId": 1322027,
+      "itemName": "Frying Pan",
+      "chineseName": "米伽勒的平底鍋",
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "One-Handed Blunt Weapon"
+    },
+    {
+      "itemId": 1322031,
+      "itemName": "Pig Illustrated",
+      "chineseName": null,
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "One-Handed Blunt Weapon"
+    },
+    {
+      "itemId": 1402010,
+      "itemName": "Aluminum Baseball Bat",
+      "chineseName": "鋁球棍",
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Two-Handed Sword"
+    },
+    {
+      "itemId": 1432015,
+      "itemName": "Red Ski",
+      "chineseName": null,
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Spear"
+    },
+    {
+      "itemId": 1442011,
+      "itemName": "Surfboard",
+      "chineseName": "滑水板",
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Pole Arm"
+    },
+    {
+      "itemId": 1442013,
+      "itemName": "Aqua Snowboard",
+      "chineseName": "滄海雪板",
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Pole Arm"
+    },
+    {
+      "itemId": 1442014,
+      "itemName": "Silver Snowboard",
+      "chineseName": "銀雪板",
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Pole Arm"
+    },
+    {
+      "itemId": 1442029,
+      "itemName": "Gold Surfboard",
+      "chineseName": "紫色衝浪板",
+      "probability": "1.62%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Pole Arm"
+    }
+  ]
+}

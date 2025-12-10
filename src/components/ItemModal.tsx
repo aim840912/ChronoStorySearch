@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState, useRef } from 'react'
-import type { DropsEssential, GachaMachine, ItemAttributes, ItemAttributesEssential } from '@/types'
+import type { DropsEssential, GachaMachine, ItemAttributesEssential, ItemsOrganizedData } from '@/types'
 import { MonsterDropCard } from './MonsterDropCard'
 import { MonsterDropList } from './MonsterDropList'
 import { ItemAttributesCard } from './ItemAttributesCard'
@@ -13,7 +13,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { useToast } from '@/hooks/useToast'
 import { useScreenshot } from '@/hooks/useScreenshot'
 import { useLazyMobInfo, useLazyItemDetailed } from '@/hooks/useLazyData'
-import { findGachaItemAttributes } from '@/lib/gacha-utils'
+import { findGachaItemOrganized } from '@/lib/gacha-utils'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 
 // 商人販售地點資料結構
@@ -220,44 +220,26 @@ export function ItemModal({
     return itemData.itemName
   }, [language, itemData, itemName])
 
-  // 查找物品屬性資料（組合 Essential + Detailed 資料）
-  const itemAttributes = useMemo(() => {
+  // 查找物品屬性資料（直接使用 ItemsOrganizedData 格式）
+  const itemOrganizedData = useMemo((): ItemsOrganizedData | null => {
     if (!itemId && itemId !== 0) return null
 
-    // 1. 優先組合 Essential + Detailed 資料
-    const essentialData = itemAttributesMap.get(itemId)
-    if (essentialData && itemDetailed) {
-      // 組合成完整的 ItemAttributes
-      const combined: ItemAttributes = {
-        item_id: essentialData.item_id,
-        item_name: essentialData.item_name,
-        type: essentialData.type,
-        sub_type: essentialData.sub_type,
-        // 從 Detailed 資料補充完整屬性
-        item_type_id: itemDetailed.item_type_id,
-        sale_price: itemDetailed.sale_price,
-        max_stack_count: itemDetailed.max_stack_count,
-        untradeable: itemDetailed.untradeable,
-        item_description: itemDetailed.item_description,
-        equipment: itemDetailed.equipment,
-        scroll: itemDetailed.scroll,
-        potion: itemDetailed.potion,
-      }
-      return combined
+    // 1. 優先使用 itemDetailed（來自 items-organized JSON）
+    if (itemDetailed) {
+      return itemDetailed
     }
 
     // 2. 如果 Detailed 資料還在載入中，返回 null 以顯示載入動畫
-    if (essentialData && isLoadingDetailed) {
+    if (shouldLoadDetailed && isLoadingDetailed) {
       clientLogger.info(`物品 ${itemId} Detailed 資料載入中，等待完整資料`)
-      // 返回 null，讓 UI 顯示載入動畫
       return null
     }
 
-    // 3. 如果找不到，嘗試從轉蛋機資料中查找並轉換
-    const attributesFromGacha = findGachaItemAttributes(itemId, gachaMachines)
-    if (attributesFromGacha) {
+    // 3. 如果找不到，嘗試從轉蛋機資料中查找並轉換為 ItemsOrganizedData
+    const organizedFromGacha = findGachaItemOrganized(itemId, gachaMachines)
+    if (organizedFromGacha) {
       clientLogger.info(`物品 ${itemId} 使用轉蛋機資料作為屬性來源`)
-      return attributesFromGacha
+      return organizedFromGacha
     }
 
     // 4. 如果載入失敗，記錄錯誤
@@ -266,7 +248,7 @@ export function ItemModal({
     }
 
     return null
-  }, [itemId, itemAttributesMap, itemDetailed, isLoadingDetailed, detailedError, gachaMachines])
+  }, [itemId, itemDetailed, shouldLoadDetailed, isLoadingDetailed, detailedError, gachaMachines])
 
   // 當 Modal 開啟時載入物品屬性資料與怪物資訊資料
   useEffect(() => {
@@ -418,13 +400,13 @@ export function ItemModal({
             </div>
 
             {/* 物品屬性卡片 - 載入中顯示動畫 */}
-            {isLoadingDetailed && !itemAttributes ? (
+            {isLoadingDetailed && !itemOrganizedData ? (
               <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-sm text-center">
                 <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 dark:border-blue-400"></div>
                 <p className="mt-4 text-white dark:text-gray-300">{t('loading')}</p>
               </div>
             ) : (
-              <ItemAttributesCard attributes={itemAttributes} />
+              <ItemAttributesCard itemData={itemOrganizedData} />
             )}
           </div>
 

@@ -1,4 +1,4 @@
-import type { GachaItem, ItemAttributes, ItemRequirements, ItemClasses, ItemEquipmentStats, ItemEquipment, StatVariation, ScrollInfo, EnhancedGachaItem, EnhancedRequirements, EnhancedStats, EnhancedStatVariation } from '@/types'
+import type { GachaItem, ItemAttributes, ItemRequirements, ItemClasses, ItemEquipmentStats, ItemEquipment, StatVariation, ScrollInfo, EnhancedGachaItem, EnhancedRequirements, EnhancedStats, EnhancedStatVariation, ItemsOrganizedData, ItemsOrganizedRandomStat } from '@/types'
 
 /**
  * 轉蛋物品屬性轉換工具
@@ -438,5 +438,210 @@ export function findGachaItemAttributes(
     }
   }
 
+  return null
+}
+
+/**
+ * 將轉蛋物品轉換為 ItemsOrganizedData 格式
+ *
+ * 用於在 items-organized JSON 中找不到物品時的回退方案
+ * ItemsOrganizedData 是新的資料格式，使用 metaInfo 和 randomStats 結構
+ *
+ * @param gachaItem - 轉蛋物品資料
+ * @param itemId - 物品 ID
+ * @returns ItemsOrganizedData 格式的物品資料，如果轉換失敗則返回 null
+ */
+export function convertGachaToOrganized(
+  gachaItem: GachaItem | undefined,
+  itemId: number
+): ItemsOrganizedData | null {
+  if (!gachaItem) {
+    return null
+  }
+
+  const enhancedItem = gachaItem as EnhancedGachaItem
+
+  // 從 Enhanced JSON 的 equipment 或原始格式取得屬性
+  const hasEquipment = !!enhancedItem.equipment
+  const stats = hasEquipment
+    ? enhancedItem.equipment?.stats
+    : gachaItem.stats
+  const requirements = hasEquipment
+    ? enhancedItem.equipment?.requirements
+    : gachaItem.requiredStats
+  const statVariation = hasEquipment
+    ? enhancedItem.equipment?.statVariation
+    : undefined
+
+  // 建立 randomStats（從 statVariation 轉換）
+  let randomStats: Record<string, ItemsOrganizedRandomStat> | undefined
+  if (statVariation && typeof statVariation === 'object') {
+    randomStats = {}
+    Object.entries(statVariation).forEach(([key, value]) => {
+      if (value && typeof value === 'object' && ('min' in value || 'max' in value)) {
+        // 將 statVariation 的 key 映射到 metaInfo 的 key 格式
+        // 例如: str -> incSTR, watk -> incPAD
+        const metaInfoKey = mapStatKeyToMetaInfo(key)
+        randomStats![metaInfoKey] = {
+          base: 0,
+          min: value.min ?? 0,
+          max: value.max ?? 0,
+        }
+      }
+    })
+    if (Object.keys(randomStats).length === 0) {
+      randomStats = undefined
+    }
+  }
+
+  // 計算 reqJob 位元遮罩
+  let reqJob: number | undefined
+  if (hasEquipment && enhancedItem.equipment?.classes) {
+    const classes = enhancedItem.equipment.classes
+    reqJob = 0
+    if (classes.warrior) reqJob |= 1
+    if (classes.magician) reqJob |= 2
+    if (classes.bowman) reqJob |= 4
+    if (classes.thief) reqJob |= 8
+    if (classes.pirate) reqJob |= 16
+    if (reqJob === 0) reqJob = undefined
+  } else if (gachaItem.requiredStats?.jobTrees) {
+    const jobTrees = gachaItem.requiredStats.jobTrees
+    reqJob = 0
+    jobTrees.forEach((job) => {
+      const jobLower = job.toLowerCase()
+      if (jobLower === 'warrior') reqJob! |= 1
+      if (jobLower === 'magician') reqJob! |= 2
+      if (jobLower === 'bowman') reqJob! |= 4
+      if (jobLower === 'thief') reqJob! |= 8
+      if (jobLower === 'pirate') reqJob! |= 16
+    })
+    if (reqJob === 0) reqJob = undefined
+  }
+
+  // 決定 overallCategory
+  const overallCategory = enhancedItem.type || gachaItem.overallCategory || 'Equip'
+
+  // 取得 requirements 資料（需要處理兩種可能的格式）
+  const reqLevel = hasEquipment
+    ? (requirements as EnhancedRequirements)?.reqLevel
+    : (gachaItem.requiredStats as { level?: number })?.level
+  const reqSTR = hasEquipment
+    ? (requirements as EnhancedRequirements)?.reqStr
+    : (gachaItem.requiredStats as { str?: number })?.str
+  const reqDEX = hasEquipment
+    ? (requirements as EnhancedRequirements)?.reqDex
+    : (gachaItem.requiredStats as { dex?: number })?.dex
+  const reqINT = hasEquipment
+    ? (requirements as EnhancedRequirements)?.reqInt
+    : (gachaItem.requiredStats as { int?: number })?.int
+  const reqLUK = hasEquipment
+    ? (requirements as EnhancedRequirements)?.reqLuk
+    : (gachaItem.requiredStats as { luk?: number })?.luk
+
+  return {
+    id: itemId,
+    description: {
+      id: itemId,
+      name: gachaItem.name || enhancedItem.itemName || '',
+      description: gachaItem.description || enhancedItem.itemDescription || '',
+      chineseItemName: gachaItem.chineseName || undefined,
+    },
+    metaInfo: {
+      only: enhancedItem.untradeable || false,
+      cash: gachaItem.availability?.cash || false,
+      price: enhancedItem.salePrice || gachaItem.availability?.shopPrice || undefined,
+      slotMax: enhancedItem.maxStackCount || undefined,
+      tuc: hasEquipment ? (stats as EnhancedStats)?.upgrades ?? undefined : undefined,
+      reqLevel: reqLevel || undefined,
+      reqSTR: reqSTR || undefined,
+      reqDEX: reqDEX || undefined,
+      reqINT: reqINT || undefined,
+      reqLUK: reqLUK || undefined,
+      reqJob,
+      incSTR: stats?.str || undefined,
+      incDEX: stats?.dex || undefined,
+      incINT: stats?.int || undefined,
+      incLUK: stats?.luk || undefined,
+      incPAD: stats?.watk || (stats as Record<string, number | undefined>)?.attack || undefined,
+      incMAD: stats?.matk || (stats as Record<string, number | undefined>)?.magicAttack || undefined,
+      incPDD: stats?.wdef || (stats as Record<string, number | undefined>)?.defense || undefined,
+      incMDD: stats?.mdef || (stats as Record<string, number | undefined>)?.magicDefense || undefined,
+      incMHP: stats?.hp || undefined,
+      incMMP: stats?.mp || undefined,
+      incACC: stats?.accuracy || undefined,
+      incEVA: stats?.avoidability || undefined,
+      incSpeed: stats?.speed || undefined,
+      incJump: stats?.jump || undefined,
+      attackSpeed: (stats as EnhancedStats)?.attackSpeed || undefined,
+    },
+    typeInfo: {
+      overallCategory: overallCategory === 'Equip' ? 'Equip' : overallCategory,
+      category: gachaItem.category || enhancedItem.equipment?.category || '',
+      subCategory: gachaItem.subcategory || '',
+    },
+    randomStats,
+    isGachapon: true,
+  }
+}
+
+/**
+ * 將 statVariation 的 key 映射到 metaInfo 的 key 格式
+ * 例如: str -> incSTR, watk -> incPAD
+ */
+function mapStatKeyToMetaInfo(key: string): string {
+  const mapping: Record<string, string> = {
+    'str': 'incSTR',
+    'dex': 'incDEX',
+    'int': 'incINT',
+    'luk': 'incLUK',
+    'watk': 'incPAD',
+    'matk': 'incMAD',
+    'wdef': 'incPDD',
+    'mdef': 'incMDD',
+    'hp': 'incMHP',
+    'mp': 'incMMP',
+    'accuracy': 'incACC',
+    'avoidability': 'incEVA',
+    'speed': 'incSpeed',
+    'jump': 'incJump',
+    'attackSpeed': 'attackSpeed',
+    // 如果已經是 incXXX 格式，直接返回
+    'incSTR': 'incSTR',
+    'incDEX': 'incDEX',
+    'incINT': 'incINT',
+    'incLUK': 'incLUK',
+    'incPAD': 'incPAD',
+    'incMAD': 'incMAD',
+    'incPDD': 'incPDD',
+    'incMDD': 'incMDD',
+    'incMHP': 'incMHP',
+    'incMMP': 'incMMP',
+    'incACC': 'incACC',
+    'incEVA': 'incEVA',
+    'incSpeed': 'incSpeed',
+    'incJump': 'incJump',
+  }
+  return mapping[key] || key
+}
+
+/**
+ * 從轉蛋機列表中查找指定物品並轉換為 ItemsOrganizedData 格式
+ *
+ * @param itemId - 物品 ID
+ * @param gachaMachines - 轉蛋機列表
+ * @returns ItemsOrganizedData 格式的物品資料，如果找不到則返回 null
+ */
+export function findGachaItemOrganized(
+  itemId: number,
+  gachaMachines: Array<{ items: GachaItem[] }>
+): ItemsOrganizedData | null {
+  for (let i = 0; i < gachaMachines.length; i++) {
+    const machine = gachaMachines[i]
+    const gachaItem = machine.items.find((item) => Number(item.itemId) === Number(itemId))
+    if (gachaItem) {
+      return convertGachaToOrganized(gachaItem, itemId)
+    }
+  }
   return null
 }
