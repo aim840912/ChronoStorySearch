@@ -28,6 +28,43 @@ export interface DropsEssential {
   maxQty: number
 }
 
+// 怪物索引項目（來自 monster-index.json）
+export interface MonsterIndexItem {
+  mobId: number
+  mobName: string
+  chineseMobName: string | null
+  isBoss: boolean
+  dropCount: number
+}
+
+// 怪物索引資料結構
+export interface MonsterIndex {
+  totalMonsters: number
+  lastUpdated: string
+  monsters: MonsterIndexItem[]
+}
+
+// 物品索引項目（來自 item-index.json）
+export interface ItemIndexItem {
+  itemId: number
+  itemName: string
+  chineseItemName: string | null
+  monsterCount: number
+}
+
+// 物品索引資料結構
+export interface ItemIndex {
+  totalItems: number
+  lastUpdated: string
+  items: ItemIndexItem[]
+}
+
+// 掉落關係資料結構（來自 drop-relations.json）
+export interface DropRelations {
+  lastUpdated: string
+  mobToItems: Record<string, number[]>
+}
+
 // 物品來源資訊（掉落、轉蛋或兩者）
 export interface ItemSource {
   fromDrops: boolean

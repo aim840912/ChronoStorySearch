@@ -30,60 +30,37 @@
 
 ## 二、需要建立的新檔案
 
-### 1. drops-essential.json
+### 1. 掉落搜尋（使用索引方案）
 
-**用途**：搜尋索引（扁平陣列格式）
+**用途**：搜尋索引和怪物/物品關係查詢
 
-**來源**：合併 `drops-by-monster/*.json`
+**方案**：使用現有的 3 個索引檔案，不需要建立新的 `drops-essential.json`
 
-**目標格式**：
-```json
-[
-  {
-    "mobId": 100100,
-    "mobName": "Snail",
-    "chineseMobName": "嫩寶",
-    "itemId": 4000019,
-    "itemName": "Snail Shell",
-    "chineseItemName": "嫩寶殼",
-    "chance": 60,
-    "minQty": 1,
-    "maxQty": 1
-  }
-]
+| 檔案 | 大小 | 用途 |
+|------|------|------|
+| `monster-index.json` | 28 KB | 怪物搜尋（名稱、Boss 標籤、dropCount） |
+| `item-index.json` | 224 KB | 物品搜尋（名稱、monsterCount） |
+| `drop-relations.json` | 484 KB | 怪物↔物品 ID 映射關係 |
+| **總計** | **736 KB** | 比合併方案節省 39% |
+
+**搜尋流程**：
+```
+1. 用戶搜尋 "Snail"
+2. 從 monster-index.json 找到 mobId: 100100
+3. 從 drop-relations.json 獲取掉落物品 ID 列表
+4. 從 item-index.json 獲取物品名稱（用於顯示）
+5. 點擊怪物 → 按需載入 drops-by-monster/100100.json（詳細機率、數量）
 ```
 
-**建立腳本**：
-```python
-# scripts/generate-drops-essential.py
-import json
-from pathlib import Path
+**優點**：
+- 初始載入減少 39% (736 KB vs 1.2 MB)
+- 詳細資訊按需載入
+- 資料不重複，索引結構清晰
 
-drops_dir = Path("chronostoryData/drops-by-monster")
-result = []
-
-for f in drops_dir.glob("*.json"):
-    with open(f) as fp:
-        data = json.load(fp)
-
-    for drop in data.get('drops', []):
-        if not drop.get('enabled', True):
-            continue
-        result.append({
-            "mobId": data['mobId'],
-            "mobName": data['mobName'],
-            "chineseMobName": data.get('chineseMobName'),
-            "itemId": drop['itemId'],
-            "itemName": drop['itemName'],
-            "chineseItemName": drop.get('chineseItemName'),
-            "chance": drop['chance'],
-            "minQty": drop['minQty'],
-            "maxQty": drop['maxQty']
-        })
-
-with open("chronostoryData/drops-essential.json", "w") as fp:
-    json.dump(result, fp, ensure_ascii=False, indent=2)
-```
+**程式碼修改**：
+- `src/hooks/useDataManagement.ts` - 載入 3 個索引檔案
+- `src/hooks/useSearchLogic.ts` - 使用索引建立搜尋 Map
+- `src/lib/cache/items-cache.ts` - 改用 item-index.json 初始化
 
 ---
 

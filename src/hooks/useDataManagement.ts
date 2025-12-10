@@ -1,9 +1,25 @@
 'use client'
 
 import { useState, useEffect, useMemo, useCallback } from 'react'
-import type { DropsEssential, GachaMachine, GachaItem, EnhancedGachaItem, MobInfo, ItemAttributesEssential, MerchantMapData } from '@/types'
+import type {
+  DropsEssential,
+  GachaMachine,
+  GachaItem,
+  EnhancedGachaItem,
+  MobInfo,
+  ItemAttributesEssential,
+  MerchantMapData,
+  MonsterIndex,
+  ItemIndex,
+  DropRelations,
+  MonsterIndexItem,
+  ItemIndexItem,
+} from '@/types'
 import { clientLogger } from '@/lib/logger'
-import dropsEssentialData from '@/../data/drops-essential.json'
+// 使用 chronostoryData 的索引檔案取代 drops-essential.json（節省 39% 載入大小）
+import monsterIndexData from '@/../chronostoryData/monster-index.json'
+import itemIndexData from '@/../chronostoryData/item-index.json'
+import dropRelationsData from '@/../chronostoryData/drop-relations.json'
 import mobInfoData from '@/../data/mob-info.json'
 import itemAttributesEssentialData from '@/../data/item-attributes-essential.json'
 import merchantDropsData from '@/../data/drops-100-percent.json'
@@ -69,27 +85,67 @@ export function useDataManagement() {
   const [gachaMachines, setGachaMachines] = useState<GachaMachine[]>([])
   const [isLoading, setIsLoading] = useState(true)
 
-  // 載入掉落 Essential 資料（僅用於搜尋索引）
+  // 從索引檔案重建 allDrops（節省 39% 載入大小）
   useEffect(() => {
-    async function loadDrops() {
+    async function loadDropsFromIndexes() {
       try {
         setIsLoading(true)
-        clientLogger.info('開始載入掉落 Essential 資料（搜尋索引用）...')
+        clientLogger.info('開始從索引檔案載入資料（節省 39% 載入大小）...')
 
         // 模擬短暫載入延遲以維持用戶體驗
         await new Promise(resolve => setTimeout(resolve, 300))
 
-        // 直接使用 imported Essential JSON 資料
-        setAllDrops(dropsEssentialData as DropsEssential[])
-        clientLogger.info(`成功載入 ${dropsEssentialData.length} 筆掉落 Essential 資料`)
+        // 建立怪物和物品的快速查詢 Map
+        const monsterIndex = monsterIndexData as MonsterIndex
+        const itemIndex = itemIndexData as ItemIndex
+        const dropRelations = dropRelationsData as DropRelations
+
+        const monsterMap = new Map<number, MonsterIndexItem>()
+        monsterIndex.monsters.forEach(m => monsterMap.set(m.mobId, m))
+
+        const itemMap = new Map<number, ItemIndexItem>()
+        itemIndex.items.forEach(i => itemMap.set(i.itemId, i))
+
+        // 從 drop-relations 重建 allDrops（不含 chance/qty，這些在 Modal 按需載入）
+        const reconstructedDrops: DropsEssential[] = []
+
+        Object.entries(dropRelations.mobToItems).forEach(([mobIdStr, itemIds]) => {
+          const mobId = parseInt(mobIdStr, 10)
+          const monster = monsterMap.get(mobId)
+          if (!monster) return
+
+          itemIds.forEach((itemId: number) => {
+            const item = itemMap.get(itemId)
+            // 如果物品不在索引中，使用預設值
+            const itemName = item?.itemName ?? (itemId === 0 ? 'Meso' : `Item ${itemId}`)
+            const chineseItemName = item?.chineseItemName ?? null
+
+            reconstructedDrops.push({
+              mobId: monster.mobId,
+              mobName: monster.mobName,
+              chineseMobName: monster.chineseMobName,
+              itemId,
+              itemName,
+              chineseItemName,
+              // 詳細掉落資訊在 Modal 按需載入
+              chance: 0,
+              minQty: 1,
+              maxQty: 1,
+            })
+          })
+        })
+
+        setAllDrops(reconstructedDrops)
+        clientLogger.info(`成功從索引重建 ${reconstructedDrops.length} 筆掉落資料`)
+        clientLogger.info(`怪物: ${monsterIndex.totalMonsters}, 物品: ${itemIndex.totalItems}`)
       } catch (error) {
-        clientLogger.error('載入掉落資料失敗', error)
+        clientLogger.error('載入索引資料失敗', error)
       } finally {
         setIsLoading(false)
       }
     }
 
-    loadDrops()
+    loadDropsFromIndexes()
   }, [])
 
   // 延遲載入轉蛋機資料 - 使用者搜尋時才載入
@@ -291,6 +347,22 @@ export function useDataManagement() {
     return index
   }, [])
 
+  // 怪物索引 Map（從 chronostoryData 載入）
+  const monsterIndexMap = useMemo(() => {
+    const monsterIndex = monsterIndexData as MonsterIndex
+    const map = new Map<number, MonsterIndexItem>()
+    monsterIndex.monsters.forEach(m => map.set(m.mobId, m))
+    return map
+  }, [])
+
+  // 物品索引 Map（從 chronostoryData 載入）
+  const itemIndexMap = useMemo(() => {
+    const itemIndex = itemIndexData as ItemIndex
+    const map = new Map<number, ItemIndexItem>()
+    itemIndex.items.forEach(i => map.set(i.itemId, i))
+    return map
+  }, [])
+
   return {
     // 資料
     allDrops,
@@ -307,6 +379,10 @@ export function useDataManagement() {
     mobLevelMap,
     mobInfoMap,
     itemAttributesMap,
+
+    // 索引資料（來自 chronostoryData）
+    monsterIndexMap,
+    itemIndexMap,
 
     // 按需載入函數
     loadGachaMachines,
