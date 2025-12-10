@@ -8,8 +8,8 @@
   "drops": [
     {
       "itemId": 4000998,
-      "itemName": "#N/A",
-      "chineseItemName": "穆王的爪子",
+      "itemName": "Tauroshield Horn",
+      "chineseItemName": null,
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,

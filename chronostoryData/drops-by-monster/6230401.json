@@ -8,8 +8,8 @@
   "drops": [
     {
       "itemId": 4000997,
-      "itemName": "#N/A",
-      "chineseItemName": "新鮮的蘿蔔",
+      "itemName": "Jr. Lucida's Wing",
+      "chineseItemName": null,
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
