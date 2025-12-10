@@ -4,7 +4,7 @@
     "id": 4000085,
     "name": "Fire Sentinel Shellpiece",
     "description": "A hard shellpiece that's a part of Fire Sentinel",
-    "chineseName": "火石球的石塊"
+    "chineseItemName": "火石球的石塊"
   },
   "metaInfo": {
     "only": false,

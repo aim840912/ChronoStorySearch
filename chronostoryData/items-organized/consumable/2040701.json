@@ -4,7 +4,7 @@
     "id": 2040701,
     "name": "Scroll for Shoes for Avoidability 60%",
     "description": "Improves dexterity on shoes.\\nSuccess rate:60%, Avoidability +2, Accuracy+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "鞋子迴避卷軸60%",
+    "chineseItemName": "鞋子迴避卷軸60%",
     "chineseNameSource": "gacha"
   },
   "metaInfo": {

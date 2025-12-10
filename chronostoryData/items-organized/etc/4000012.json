@@ -4,7 +4,7 @@
     "id": 4000012,
     "name": "Green Mushroom Cap",
     "description": "A cap removed from a mushroom",
-    "chineseName": "綠菇菇傘"
+    "chineseItemName": "綠菇菇傘"
   },
   "metaInfo": {
     "only": false,

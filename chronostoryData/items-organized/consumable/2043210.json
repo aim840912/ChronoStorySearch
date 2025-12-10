@@ -4,7 +4,7 @@
     "id": 2043210,
     "name": "Scroll for One-Handed BW for Accuracy 100%",
     "description": "Improves accuracy on one-handed blunt weapon.\\nSuccess rate:100%, accuracy+1",
-    "chineseName": "單手棍命中卷軸100%"
+    "chineseItemName": "單手棍命中卷軸100%"
   },
   "metaInfo": {
     "only": false,

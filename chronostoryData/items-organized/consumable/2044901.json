@@ -4,7 +4,7 @@
     "id": 2044901,
     "name": "Scroll for Gun for ATT 60%",
     "description": "Improves attack on Guns.\\nSuccess rate:60%, weapon att. +2, accuracy+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "火槍攻擊卷軸60%"
+    "chineseItemName": "火槍攻擊卷軸60%"
   },
   "metaInfo": {
     "only": false,

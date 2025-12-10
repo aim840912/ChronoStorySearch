@@ -4,7 +4,7 @@
     "id": 4000006,
     "name": "Octopus Leg",
     "description": "The leg removed from an octopus",
-    "chineseName": "章魚腳"
+    "chineseItemName": "章魚腳"
   },
   "metaInfo": {
     "only": false,

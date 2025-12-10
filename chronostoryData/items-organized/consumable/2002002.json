@@ -4,7 +4,7 @@
     "id": 2002002,
     "name": "Magic Potion",
     "description": "Increases magic attack.\\nMagic Attack +5 for 3 min.",
-    "chineseName": "魔力藥水"
+    "chineseItemName": "魔力藥水"
   },
   "metaInfo": {
     "only": false,

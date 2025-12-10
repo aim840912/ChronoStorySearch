@@ -4,7 +4,7 @@
     "id": 4031161,
     "name": "Rusty Screw",
     "description": "A rusty screw from an old, unusable box that has been broken down. Can this be recycled?",
-    "chineseName": "老舊螺絲"
+    "chineseItemName": "老舊螺絲"
   },
   "metaInfo": {
     "only": false,

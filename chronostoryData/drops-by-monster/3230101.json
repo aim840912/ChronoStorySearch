@@ -4,12 +4,12 @@
   "chineseMobName": "小幽靈",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 31,
+  "totalDrops": 26,
   "drops": [
     {
       "itemId": 4000035,
       "itemName": "Tablecloth",
-      "chineseItemName": null,
+      "chineseItemName": "桌布",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 2000002,
       "itemName": "White Potion",
-      "chineseItemName": null,
+      "chineseItemName": "白色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -40,31 +40,9 @@
       "enabled": true
     },
     {
-      "itemId": 4007000,
-      "itemName": "Magic Powder (Brown)",
-      "chineseItemName": null,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4007003,
-      "itemName": "Magic Powder (Green)",
-      "chineseItemName": null,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4010003,
       "itemName": "Adamantium Ore",
-      "chineseItemName": null,
+      "chineseItemName": "朱礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -75,7 +53,7 @@
     {
       "itemId": 4020004,
       "itemName": "Opal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "蛋白石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -84,42 +62,9 @@
       "enabled": true
     },
     {
-      "itemId": 2382019,
-      "itemName": "Jr. Wraith Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130007,
-      "itemName": "Two-Handed Mace Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130014,
-      "itemName": "Dagger Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4004000,
       "itemName": "Power Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "力量母礦",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -130,7 +75,7 @@
     {
       "itemId": 1082047,
       "itemName": "Orihalcon Arbion",
-      "chineseItemName": null,
+      "chineseItemName": "紫礦追擊手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -141,7 +86,7 @@
     {
       "itemId": 1082056,
       "itemName": "Dark Noel",
-      "chineseItemName": null,
+      "chineseItemName": "黑神聖手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -152,7 +97,7 @@
     {
       "itemId": 1082069,
       "itemName": "Mithril Scaler",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦名弓手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -163,7 +108,7 @@
     {
       "itemId": 1072114,
       "itemName": "Red Moon Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "紅月鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -174,7 +119,7 @@
     {
       "itemId": 1072118,
       "itemName": "Red Pierre Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "紅精靈鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -185,7 +130,7 @@
     {
       "itemId": 2040707,
       "itemName": "Scroll for Shoes for Mobility 60%",
-      "chineseItemName": null,
+      "chineseItemName": "鞋子速度卷軸60%",
       "chance": 0.075,
       "displayChance": "0.075%",
       "minQty": 1,
@@ -196,7 +141,7 @@
     {
       "itemId": 2040706,
       "itemName": "Scroll for Shoes for Mobility 100%",
-      "chineseItemName": null,
+      "chineseItemName": "鞋子速度卷軸100%",
       "chance": 0.075,
       "displayChance": "0.075%",
       "minQty": 1,
@@ -207,7 +152,7 @@
     {
       "itemId": 2043301,
       "itemName": "Scroll for Dagger for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "短劍攻擊卷軸60%",
       "chance": 0.075,
       "displayChance": "0.075%",
       "minQty": 1,
@@ -218,7 +163,7 @@
     {
       "itemId": 1040080,
       "itemName": "Dark Piette",
-      "chineseItemName": null,
+      "chineseItemName": "黑貴族之服",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -229,7 +174,7 @@
     {
       "itemId": 1050022,
       "itemName": "Dark Crusader Chainmail",
-      "chineseItemName": null,
+      "chineseItemName": "黑十字鎖子甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -240,7 +185,7 @@
     {
       "itemId": 1051008,
       "itemName": "Blue Avenger",
-      "chineseItemName": null,
+      "chineseItemName": "藍飛影甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -251,7 +196,7 @@
     {
       "itemId": 1051010,
       "itemName": "Dark Engrit",
-      "chineseItemName": null,
+      "chineseItemName": "黑護身鎧甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -262,7 +207,7 @@
     {
       "itemId": 1412004,
       "itemName": "Niam",
-      "chineseItemName": null,
+      "chineseItemName": "綠蛇刀",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -273,7 +218,7 @@
     {
       "itemId": 1203003,
       "itemName": "Mokbi Throwing-Stars",
-      "chineseItemName": null,
+      "chineseItemName": "黑色利刃",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -284,7 +229,7 @@
     {
       "itemId": 1452000,
       "itemName": "Battle Bow",
-      "chineseItemName": null,
+      "chineseItemName": "戰鬥弓",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -295,7 +240,7 @@
     {
       "itemId": 1472016,
       "itemName": "Adamantium Avarice",
-      "chineseItemName": null,
+      "chineseItemName": "朱礦護腕",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -306,7 +251,7 @@
     {
       "itemId": 1492005,
       "itemName": "Shooting Star",
-      "chineseItemName": null,
+      "chineseItemName": "流星",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -317,7 +262,7 @@
     {
       "itemId": 2040708,
       "itemName": "Scroll for Shoes for Mobility 10%",
-      "chineseItemName": null,
+      "chineseItemName": "鞋子速度卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -328,7 +273,7 @@
     {
       "itemId": 2040002,
       "itemName": "Scroll for Helmet for Defense 10%",
-      "chineseItemName": null,
+      "chineseItemName": "頭盔防禦卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -339,7 +284,7 @@
     {
       "itemId": 2040027,
       "itemName": "Scroll for Helmet for DEX 100%",
-      "chineseItemName": null,
+      "chineseItemName": "頭盔敏捷卷軸100%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

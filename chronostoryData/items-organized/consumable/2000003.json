@@ -4,7 +4,7 @@
     "id": 2000003,
     "name": "Blue Potion",
     "description": "A potion made out of blue herbs.\\nRecovers 100 MP.",
-    "chineseName": "藍色藥水"
+    "chineseItemName": "藍色藥水"
   },
   "metaInfo": {
     "only": false,

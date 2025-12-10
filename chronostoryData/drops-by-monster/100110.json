@@ -4,7 +4,7 @@
   "chineseMobName": "嫩寶",
   "isBoss": true,
   "inGame": true,
-  "totalDrops": 8,
+  "totalDrops": 7,
   "drops": [
     {
       "itemId": 0,
@@ -20,7 +20,7 @@
     {
       "itemId": 1102000,
       "itemName": "Green Napoleon",
-      "chineseItemName": null,
+      "chineseItemName": "綠色冒險披風",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 1102001,
       "itemName": "Blue Napoleon",
-      "chineseItemName": null,
+      "chineseItemName": "藍色冒險披風",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 1102002,
       "itemName": "Red Napoleon",
-      "chineseItemName": null,
+      "chineseItemName": "紅色冒險披風",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -53,7 +53,7 @@
     {
       "itemId": 1102003,
       "itemName": "White Napoleon",
-      "chineseItemName": null,
+      "chineseItemName": "白色冒險披風",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -64,7 +64,7 @@
     {
       "itemId": 1102004,
       "itemName": "Black Napoleon",
-      "chineseItemName": null,
+      "chineseItemName": "黑色冒險披風",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -73,20 +73,9 @@
       "enabled": true
     },
     {
-      "itemId": 1442023,
-      "itemName": "Maroon Mop",
-      "chineseItemName": null,
-      "chance": 0.1,
-      "displayChance": "0.10%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002391,
       "itemName": "Green Bandana",
-      "chineseItemName": null,
+      "chineseItemName": "綠色頭巾",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,

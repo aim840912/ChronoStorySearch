@@ -4,7 +4,7 @@
     "id": 4020003,
     "name": "Emerald Ore",
     "description": "The ore of a green jewel.",
-    "chineseName": "祖母綠母礦"
+    "chineseItemName": "祖母綠母礦"
   },
   "metaInfo": {
     "only": false,

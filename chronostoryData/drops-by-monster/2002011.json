@@ -9,7 +9,7 @@
     {
       "itemId": 4031198,
       "itemName": "Empty Potion Bottle",
-      "chineseItemName": null,
+      "chineseItemName": "空的藥水瓶",
       "chance": 100,
       "displayChance": "100%",
       "minQty": 1,
@@ -20,7 +20,7 @@
     {
       "itemId": 2000001,
       "itemName": "Orange Potion",
-      "chineseItemName": null,
+      "chineseItemName": "橘色藥水",
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 1,

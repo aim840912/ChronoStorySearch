@@ -4,7 +4,7 @@
     "id": 2000005,
     "name": "Power Elixir",
     "description": "A legendary potion.\\nRecovers all HP and MP.",
-    "chineseName": "超級藥水"
+    "chineseItemName": "超級藥水"
   },
   "metaInfo": {
     "only": false,

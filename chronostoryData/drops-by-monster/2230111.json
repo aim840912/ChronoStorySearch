@@ -4,12 +4,12 @@
   "chineseMobName": "石面怪人",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 27,
+  "totalDrops": 22,
   "drops": [
     {
       "itemId": 4000197,
       "itemName": "Slate",
-      "chineseItemName": null,
+      "chineseItemName": "石板",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -29,42 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 4032147,
-      "itemName": "Rocky Mask Doll",
-      "chineseItemName": null,
-      "chance": 4,
-      "displayChance": "4.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 20723,
-      "enabled": false
-    },
-    {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000001,
       "itemName": "Orange Potion",
-      "chineseItemName": null,
+      "chineseItemName": "橘色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -75,7 +42,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -86,7 +53,7 @@
     {
       "itemId": 2002000,
       "itemName": "Dexterity Potion",
-      "chineseItemName": null,
+      "chineseItemName": "敏捷藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -97,7 +64,7 @@
     {
       "itemId": 4010001,
       "itemName": "Steel Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鋼鐵母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -108,7 +75,7 @@
     {
       "itemId": 4010005,
       "itemName": "Orihalcon Ore",
-      "chineseItemName": null,
+      "chineseItemName": "紫礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -119,7 +86,7 @@
     {
       "itemId": 4020003,
       "itemName": "Emerald Ore",
-      "chineseItemName": null,
+      "chineseItemName": "祖母綠母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -128,20 +95,9 @@
       "enabled": true
     },
     {
-      "itemId": 2381018,
-      "itemName": "Rocky Mask Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1082049,
       "itemName": "Green Marker",
-      "chineseItemName": null,
+      "chineseItemName": "綠擊中手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -152,7 +108,7 @@
     {
       "itemId": 1082051,
       "itemName": "Red Lutia",
-      "chineseItemName": null,
+      "chineseItemName": "紅守護手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -163,7 +119,7 @@
     {
       "itemId": 1040042,
       "itemName": "Blue Pao",
-      "chineseItemName": null,
+      "chineseItemName": "藍唐裝",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -174,7 +130,7 @@
     {
       "itemId": 1041023,
       "itemName": "Sky Shark",
-      "chineseItemName": null,
+      "chineseItemName": "天藍騎士甲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -185,7 +141,7 @@
     {
       "itemId": 1060031,
       "itemName": "Blue Pao Bottom",
-      "chineseItemName": null,
+      "chineseItemName": "藍唐衫褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -196,7 +152,7 @@
     {
       "itemId": 1061019,
       "itemName": "Sky Shark Skirt",
-      "chineseItemName": null,
+      "chineseItemName": "天藍騎士裙",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -207,7 +163,7 @@
     {
       "itemId": 1082006,
       "itemName": "Orihalcon Missel",
-      "chineseItemName": null,
+      "chineseItemName": "紫礦機器手套",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -218,7 +174,7 @@
     {
       "itemId": 1302002,
       "itemName": "Viking Sword",
-      "chineseItemName": null,
+      "chineseItemName": "海盜劍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -229,7 +185,7 @@
     {
       "itemId": 1372004,
       "itemName": "Ice Wand",
-      "chineseItemName": null,
+      "chineseItemName": "冰精短杖",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -240,7 +196,7 @@
     {
       "itemId": 1482002,
       "itemName": "Double Tail Knuckler",
-      "chineseItemName": null,
+      "chineseItemName": "雙棘指虎",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -251,7 +207,7 @@
     {
       "itemId": 1452005,
       "itemName": "Ryden",
-      "chineseItemName": null,
+      "chineseItemName": "雷電",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -262,7 +218,7 @@
     {
       "itemId": 2040301,
       "itemName": "Scroll for Earring for INT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "耳環智力卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -273,7 +229,7 @@
     {
       "itemId": 2043801,
       "itemName": "Scroll for Staff for Magic ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "長杖魔力卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -284,24 +240,13 @@
     {
       "itemId": 2044301,
       "itemName": "Scroll for Spear for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "槍攻擊卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2049000,
-      "itemName": "Clean Slate Scroll 1%",
-      "chineseItemName": null,
-      "chance": 0.015,
-      "displayChance": "0.015%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     }
   ]
 }

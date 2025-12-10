@@ -4,7 +4,7 @@
     "id": 4000018,
     "name": "Firewood",
     "description": "A high-quality firewood from an Axe-Stump.",
-    "chineseName": "木柴"
+    "chineseItemName": "木柴"
   },
   "metaInfo": {
     "only": false,

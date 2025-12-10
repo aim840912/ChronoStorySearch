@@ -9,7 +9,7 @@
     {
       "itemId": 4000999,
       "itemName": "#N/A",
-      "chineseItemName": null,
+      "chineseItemName": "咒文的痕跡",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 4003004,
       "itemName": "Stiff Feather",
-      "chineseItemName": null,
+      "chineseItemName": "堅硬的羽毛",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 1002020,
       "itemName": "Red Starry Bandana",
-      "chineseItemName": null,
+      "chineseItemName": "紅星頭巾",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -53,7 +53,7 @@
     {
       "itemId": 1002026,
       "itemName": "Brown Bamboo Hat",
-      "chineseItemName": null,
+      "chineseItemName": "褐色斗笠",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -64,7 +64,7 @@
     {
       "itemId": 1002073,
       "itemName": "Red Wizardry Hat",
-      "chineseItemName": null,
+      "chineseItemName": "紅色法師帽",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -75,7 +75,7 @@
     {
       "itemId": 1002089,
       "itemName": "Green Bamboo Hat",
-      "chineseItemName": null,
+      "chineseItemName": "綠色斗笠",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -86,7 +86,7 @@
     {
       "itemId": 1002090,
       "itemName": "Blue Bamboo Hat",
-      "chineseItemName": null,
+      "chineseItemName": "藍色斗笠",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -97,7 +97,7 @@
     {
       "itemId": 1004765,
       "itemName": "#N/A",
-      "chineseItemName": null,
+      "chineseItemName": "迅速的闇黑幸運草",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -108,7 +108,7 @@
     {
       "itemId": 1050011,
       "itemName": "Black Dragon Robe",
-      "chineseItemName": null,
+      "chineseItemName": "黑龍袍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -119,7 +119,7 @@
     {
       "itemId": 1051007,
       "itemName": "Red Avenger",
-      "chineseItemName": null,
+      "chineseItemName": "紅飛影甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -130,7 +130,7 @@
     {
       "itemId": 1082032,
       "itemName": "Bronze Mischief",
-      "chineseItemName": null,
+      "chineseItemName": "青銅盜賊手套",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -141,7 +141,7 @@
     {
       "itemId": 2040029,
       "itemName": "Scroll for Helmet for DEX 60%",
-      "chineseItemName": null,
+      "chineseItemName": "頭盔敏捷卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

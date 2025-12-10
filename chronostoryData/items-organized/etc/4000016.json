@@ -4,7 +4,7 @@
     "id": 4000016,
     "name": "Red Snail Shell",
     "description": "A shell removed from a snail.",
-    "chineseName": "紅寶殼"
+    "chineseItemName": "紅寶殼"
   },
   "metaInfo": {
     "only": false,

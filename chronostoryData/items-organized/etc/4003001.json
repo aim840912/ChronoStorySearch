@@ -4,7 +4,7 @@
     "id": 4003001,
     "name": "Processed Wood",
     "description": "A processed wood made out of tree branches. Used as a material to make weapons or armors.",
-    "chineseName": "木材"
+    "chineseItemName": "木材"
   },
   "metaInfo": {
     "only": false,

@@ -9,7 +9,7 @@
     {
       "itemId": 4000996,
       "itemName": "#N/A",
-      "chineseItemName": null,
+      "chineseItemName": "新鮮的洋蔥",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 2000004,
       "itemName": "Elixir",
-      "chineseItemName": null,
+      "chineseItemName": "特殊藥水",
       "chance": 4,
       "displayChance": "4.0%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 2020028,
       "itemName": "Chocolate",
-      "chineseItemName": null,
+      "chineseItemName": "巧克力",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -53,7 +53,7 @@
     {
       "itemId": 4010006,
       "itemName": "Gold Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黃金母礦",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -64,7 +64,7 @@
     {
       "itemId": 4004004,
       "itemName": "Dark Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黑暗母礦",
       "chance": 0.5,
       "displayChance": "0.50%",
       "minQty": 1,
@@ -75,7 +75,7 @@
     {
       "itemId": 1002210,
       "itemName": "Brown Sonata",
-      "chineseItemName": null,
+      "chineseItemName": "黃黑太陽帽",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -86,7 +86,7 @@
     {
       "itemId": 1002631,
       "itemName": "Brown Leather Ocean Hat",
-      "chineseItemName": null,
+      "chineseItemName": "褐色皮製遠洋帽",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -97,7 +97,7 @@
     {
       "itemId": 1040075,
       "itemName": "Dark Legolier",
-      "chineseItemName": null,
+      "chineseItemName": "黑守護之服",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -108,7 +108,7 @@
     {
       "itemId": 1041093,
       "itemName": "Blue Ice Queen",
-      "chineseItemName": null,
+      "chineseItemName": "藍鋼玉鎧甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -119,7 +119,7 @@
     {
       "itemId": 1050036,
       "itemName": "Red Starlight",
-      "chineseItemName": null,
+      "chineseItemName": "紅星光長袍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -130,7 +130,7 @@
     {
       "itemId": 1050037,
       "itemName": "Green Starlight",
-      "chineseItemName": null,
+      "chineseItemName": "綠星光長袍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -141,7 +141,7 @@
     {
       "itemId": 1050039,
       "itemName": "Dark Starlight",
-      "chineseItemName": null,
+      "chineseItemName": "黑星光長袍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -152,7 +152,7 @@
     {
       "itemId": 1050059,
       "itemName": "Blue Tai",
-      "chineseItemName": null,
+      "chineseItemName": "青旋風甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -163,7 +163,7 @@
     {
       "itemId": 1050060,
       "itemName": "Red Tai",
-      "chineseItemName": null,
+      "chineseItemName": "赤旋風甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -174,7 +174,7 @@
     {
       "itemId": 1051001,
       "itemName": "Emerald Fitted Mail",
-      "chineseItemName": null,
+      "chineseItemName": "祖母綠鎧甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -185,7 +185,7 @@
     {
       "itemId": 1051014,
       "itemName": "Sapphire Fitted Mail",
-      "chineseItemName": null,
+      "chineseItemName": "藍寶石鎧甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -196,7 +196,7 @@
     {
       "itemId": 1051039,
       "itemName": "Red Lumati",
-      "chineseItemName": null,
+      "chineseItemName": "紅貴族禮服",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -207,7 +207,7 @@
     {
       "itemId": 1052116,
       "itemName": "Green Plasteer",
-      "chineseItemName": null,
+      "chineseItemName": "綠色強化服",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -218,7 +218,7 @@
     {
       "itemId": 1060064,
       "itemName": "Dark Legolier Pants",
-      "chineseItemName": null,
+      "chineseItemName": "黑守護之褲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -229,7 +229,7 @@
     {
       "itemId": 1060081,
       "itemName": "Blue Orientican Pants",
-      "chineseItemName": null,
+      "chineseItemName": "藍鋼玉褲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -240,7 +240,7 @@
     {
       "itemId": 1061092,
       "itemName": "Blue Ice Queen Skirt",
-      "chineseItemName": null,
+      "chineseItemName": "藍鋼玉裙",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -251,7 +251,7 @@
     {
       "itemId": 1402007,
       "itemName": "Zard",
-      "chineseItemName": null,
+      "chineseItemName": "半月巨刀",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -262,7 +262,7 @@
     {
       "itemId": 1492007,
       "itemName": "Mr",
-      "chineseItemName": null,
+      "chineseItemName": "拉斯菲特之槍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -273,7 +273,7 @@
     {
       "itemId": 1202002,
       "itemName": "Mighty Bullet",
-      "chineseItemName": null,
+      "chineseItemName": "強力子彈",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -284,7 +284,7 @@
     {
       "itemId": 2040513,
       "itemName": "Scroll for Overall Armor for INT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "套服智力卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -295,7 +295,7 @@
     {
       "itemId": 4020008,
       "itemName": "Black Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黑水晶母礦",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

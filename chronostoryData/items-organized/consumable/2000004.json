@@ -4,7 +4,7 @@
     "id": 2000004,
     "name": "Elixir",
     "description": "A legendary potion.\\nRecovers 50%  HP and 50% MP.",
-    "chineseName": "特殊藥水"
+    "chineseItemName": "特殊藥水"
   },
   "metaInfo": {
     "only": false,

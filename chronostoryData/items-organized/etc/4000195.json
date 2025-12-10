@@ -4,7 +4,7 @@
     "id": 4000195,
     "name": "Seedling",
     "description": "A branch from Ghost Stump.",
-    "chineseName": "苗木"
+    "chineseItemName": "苗木"
   },
   "metaInfo": {
     "only": false,

@@ -4,12 +4,12 @@
   "chineseMobName": "骷髏犬",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 29,
+  "totalDrops": 24,
   "drops": [
     {
       "itemId": 4000204,
       "itemName": "Skeledog's Bone",
-      "chineseItemName": null,
+      "chineseItemName": "骷髏犬骨頭",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -29,31 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000002,
       "itemName": "White Potion",
-      "chineseItemName": null,
+      "chineseItemName": "白色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -64,7 +42,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -75,7 +53,7 @@
     {
       "itemId": 4006000,
       "itemName": "The Magic Rock",
-      "chineseItemName": null,
+      "chineseItemName": "魔法石",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -86,7 +64,7 @@
     {
       "itemId": 4010000,
       "itemName": "Bronze Ore",
-      "chineseItemName": null,
+      "chineseItemName": "青銅母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -97,7 +75,7 @@
     {
       "itemId": 4010004,
       "itemName": "Silver Ore",
-      "chineseItemName": null,
+      "chineseItemName": "銀的母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -108,7 +86,7 @@
     {
       "itemId": 4020007,
       "itemName": "Diamond Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鑽石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -117,42 +95,9 @@
       "enabled": true
     },
     {
-      "itemId": 2382063,
-      "itemName": "Skeledog Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130002,
-      "itemName": "One-Handed Sword Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130011,
-      "itemName": "Staff Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002047,
       "itemName": "Great Red Helmet",
-      "chineseItemName": null,
+      "chineseItemName": "紅色戰鬥頭盔",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -163,7 +108,7 @@
     {
       "itemId": 1002081,
       "itemName": "Blue Bandana",
-      "chineseItemName": null,
+      "chineseItemName": "青頭巾",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -174,7 +119,7 @@
     {
       "itemId": 1002144,
       "itemName": "Brown Matty",
-      "chineseItemName": null,
+      "chineseItemName": "褐星魔法帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -185,7 +130,7 @@
     {
       "itemId": 1002178,
       "itemName": "Green Burgler",
-      "chineseItemName": null,
+      "chineseItemName": "綠防風帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -196,7 +141,7 @@
     {
       "itemId": 1072108,
       "itemName": "Black Green-Lined Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "綠流星鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -207,7 +152,7 @@
     {
       "itemId": 1072118,
       "itemName": "Red Pierre Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "紅精靈鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -218,7 +163,7 @@
     {
       "itemId": 1072126,
       "itemName": "Maroon Jangoon Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "紫金月鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -229,7 +174,7 @@
     {
       "itemId": 1050052,
       "itemName": "Blue-Lined Kismet",
-      "chineseItemName": null,
+      "chineseItemName": "青仙白宮",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -240,7 +185,7 @@
     {
       "itemId": 1382019,
       "itemName": "Hall Staff",
-      "chineseItemName": null,
+      "chineseItemName": "護法之杖",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -251,7 +196,7 @@
     {
       "itemId": 1422007,
       "itemName": "Titan",
-      "chineseItemName": null,
+      "chineseItemName": "巨人錘",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -262,7 +207,7 @@
     {
       "itemId": 1203003,
       "itemName": "Mokbi Throwing-Stars",
-      "chineseItemName": null,
+      "chineseItemName": "黑色利刃",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -273,7 +218,7 @@
     {
       "itemId": 1332016,
       "itemName": "Sai",
-      "chineseItemName": null,
+      "chineseItemName": "華氏短劍",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -284,7 +229,7 @@
     {
       "itemId": 2040705,
       "itemName": "Scroll for Shoes for Jump 10%",
-      "chineseItemName": null,
+      "chineseItemName": "鞋子跳躍卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -295,7 +240,7 @@
     {
       "itemId": 2040824,
       "itemName": "Scroll for Gloves for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "手套防禦卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -306,7 +251,7 @@
     {
       "itemId": 2040929,
       "itemName": "Scroll for Shield for STR 100%",
-      "chineseItemName": null,
+      "chineseItemName": "盾牌力量卷軸100%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -317,7 +262,7 @@
     {
       "itemId": 2044301,
       "itemName": "Scroll for Spear for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "槍攻擊卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

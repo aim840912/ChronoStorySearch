@@ -1,7 +1,7 @@
 {
   "itemId": 2000001,
   "itemName": "Orange Potion",
-  "chineseItemName": null,
+  "chineseItemName": "橘色藥水",
   "totalMonsters": 20,
   "monsters": [
     {

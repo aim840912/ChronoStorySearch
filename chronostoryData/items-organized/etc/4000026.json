@@ -4,7 +4,7 @@
     "id": 4000026,
     "name": "Lupin Doll",
     "description": "A miniature figure of Lupin",
-    "chineseName": "猴子娃娃"
+    "chineseItemName": "猴子娃娃"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 2002009,
     "name": "Dexterity Pill",
     "description": "A pill of concentrated dexterity potion. Avoidablity + 10 for 10 minutes",
-    "chineseName": "敏捷藥丸"
+    "chineseItemName": "敏捷藥丸"
   },
   "metaInfo": {
     "only": false,

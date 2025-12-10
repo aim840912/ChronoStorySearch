@@ -4,12 +4,12 @@
   "chineseMobName": "黑食人花",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 31,
+  "totalDrops": 27,
   "drops": [
     {
       "itemId": 4000062,
       "itemName": "Dark Nependeath Seed",
-      "chineseItemName": null,
+      "chineseItemName": "黑食人花的種子",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 2000002,
       "itemName": "White Potion",
-      "chineseItemName": null,
+      "chineseItemName": "白色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -53,7 +53,7 @@
     {
       "itemId": 2000004,
       "itemName": "Elixir",
-      "chineseItemName": null,
+      "chineseItemName": "特殊藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -64,7 +64,7 @@
     {
       "itemId": 4004000,
       "itemName": "Power Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "力量母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -75,7 +75,7 @@
     {
       "itemId": 4004004,
       "itemName": "Dark Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黑暗母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -86,7 +86,7 @@
     {
       "itemId": 4006001,
       "itemName": "The Summoning Rock",
-      "chineseItemName": null,
+      "chineseItemName": "召喚石",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -97,7 +97,7 @@
     {
       "itemId": 4010003,
       "itemName": "Adamantium Ore",
-      "chineseItemName": null,
+      "chineseItemName": "朱礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -108,7 +108,7 @@
     {
       "itemId": 4020006,
       "itemName": "Topaz Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黃晶母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -117,53 +117,9 @@
       "enabled": true
     },
     {
-      "itemId": 2383003,
-      "itemName": "Dark Nependeath Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130000,
-      "itemName": "Gloves Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130003,
-      "itemName": "One-Handed Axe Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130013,
-      "itemName": "Crossbow Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002092,
       "itemName": "Yellow Duke",
-      "chineseItemName": null,
+      "chineseItemName": "黃鐵頭盔",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -174,7 +130,7 @@
     {
       "itemId": 1082063,
       "itemName": "Blue Arten",
-      "chineseItemName": null,
+      "chineseItemName": "藍精靈手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -185,7 +141,7 @@
     {
       "itemId": 1082084,
       "itemName": "Blue Willow",
-      "chineseItemName": null,
+      "chineseItemName": "藍意志手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -196,7 +152,7 @@
     {
       "itemId": 1040080,
       "itemName": "Dark Piette",
-      "chineseItemName": null,
+      "chineseItemName": "黑貴族之服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -207,7 +163,7 @@
     {
       "itemId": 1040095,
       "itemName": "Blue China",
-      "chineseItemName": null,
+      "chineseItemName": "青陽",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -218,7 +174,7 @@
     {
       "itemId": 1041087,
       "itemName": "Red Shouldermail",
-      "chineseItemName": null,
+      "chineseItemName": "紅將軍鎧甲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -229,7 +185,7 @@
     {
       "itemId": 1060068,
       "itemName": "Dark Piette Pants",
-      "chineseItemName": null,
+      "chineseItemName": "黑貴族褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -240,7 +196,7 @@
     {
       "itemId": 1060084,
       "itemName": "Blue China Pants",
-      "chineseItemName": null,
+      "chineseItemName": "青陽褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -251,7 +207,7 @@
     {
       "itemId": 1061086,
       "itemName": "Red Shouldermail Pants",
-      "chineseItemName": null,
+      "chineseItemName": "紅將軍褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -262,7 +218,7 @@
     {
       "itemId": 1072110,
       "itemName": "Black Blue-Lines Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "藍流星鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -273,7 +229,7 @@
     {
       "itemId": 1072132,
       "itemName": "Emerald Hildon Boots",
-      "chineseItemName": null,
+      "chineseItemName": "祖母綠將軍靴",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -284,7 +240,7 @@
     {
       "itemId": 1040096,
       "itemName": "Brown China",
-      "chineseItemName": null,
+      "chineseItemName": "黃陽",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -295,7 +251,7 @@
     {
       "itemId": 1051027,
       "itemName": "Brown Moonlight",
-      "chineseItemName": null,
+      "chineseItemName": "褐色月光服",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -306,7 +262,7 @@
     {
       "itemId": 1060085,
       "itemName": "Brown China Pants",
-      "chineseItemName": null,
+      "chineseItemName": "黃陽褲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -317,7 +273,7 @@
     {
       "itemId": 1302013,
       "itemName": "Red Whip",
-      "chineseItemName": null,
+      "chineseItemName": "紅色鞭子",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -328,7 +284,7 @@
     {
       "itemId": 2041014,
       "itemName": "Scroll for Cape for STR 10%",
-      "chineseItemName": null,
+      "chineseItemName": "披風力量卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -339,7 +295,7 @@
     {
       "itemId": 2044201,
       "itemName": "Scroll for Two-Handed BW for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "雙手棍攻擊卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

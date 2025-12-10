@@ -4,12 +4,12 @@
   "chineseMobName": "冰石球",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 24,
+  "totalDrops": 21,
   "drops": [
     {
       "itemId": 4000084,
       "itemName": "Ice Sentinel Shellpiece",
-      "chineseItemName": null,
+      "chineseItemName": "冰石球的石塊",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 2000001,
       "itemName": "Orange Potion",
-      "chineseItemName": null,
+      "chineseItemName": "橘色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -53,7 +53,7 @@
     {
       "itemId": 4004001,
       "itemName": "Wisdom Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "智慧母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -64,7 +64,7 @@
     {
       "itemId": 4006000,
       "itemName": "The Magic Rock",
-      "chineseItemName": null,
+      "chineseItemName": "魔法石",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -75,7 +75,7 @@
     {
       "itemId": 4010002,
       "itemName": "Mithril Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -86,7 +86,7 @@
     {
       "itemId": 4020002,
       "itemName": "AquaMarine Ore",
-      "chineseItemName": null,
+      "chineseItemName": "海藍石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -95,20 +95,9 @@
       "enabled": true
     },
     {
-      "itemId": 2381037,
-      "itemName": "Ice Sentinel Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4006001,
       "itemName": "The Summoning Rock",
-      "chineseItemName": null,
+      "chineseItemName": "召喚石",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -119,7 +108,7 @@
     {
       "itemId": 1002142,
       "itemName": "Blue Matty",
-      "chineseItemName": null,
+      "chineseItemName": "藍星魔法帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -130,7 +119,7 @@
     {
       "itemId": 1040024,
       "itemName": "Blue Bennis Chainmail",
-      "chineseItemName": null,
+      "chineseItemName": "藍獵人服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -141,7 +130,7 @@
     {
       "itemId": 1041047,
       "itemName": "Red Steal",
-      "chineseItemName": null,
+      "chineseItemName": "紅寂靜之服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -152,7 +141,7 @@
     {
       "itemId": 1061043,
       "itemName": "Red Steal Pants",
-      "chineseItemName": null,
+      "chineseItemName": "紅寂靜裙",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -163,7 +152,7 @@
     {
       "itemId": 1062006,
       "itemName": "Bennis Chainpants",
-      "chineseItemName": null,
+      "chineseItemName": "打獵褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -172,20 +161,9 @@
       "enabled": true
     },
     {
-      "itemId": 1472030,
-      "itemName": "Maple Claw",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1050026,
       "itemName": "White Wizard Robe",
-      "chineseItemName": null,
+      "chineseItemName": "白牧師長袍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -196,7 +174,7 @@
     {
       "itemId": 1322009,
       "itemName": "Plunger",
-      "chineseItemName": null,
+      "chineseItemName": "通通樂",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -207,7 +185,7 @@
     {
       "itemId": 1422007,
       "itemName": "Titan",
-      "chineseItemName": null,
+      "chineseItemName": "巨人錘",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -218,7 +196,7 @@
     {
       "itemId": 1442003,
       "itemName": "Axe Pole Arm",
-      "chineseItemName": null,
+      "chineseItemName": "斧戟",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -229,7 +207,7 @@
     {
       "itemId": 1200001,
       "itemName": "Bronze Arrow for Bow",
-      "chineseItemName": null,
+      "chineseItemName": "青銅弓箭",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -240,7 +218,7 @@
     {
       "itemId": 1201001,
       "itemName": "Bronze Arrow for Crossbow",
-      "chineseItemName": null,
+      "chineseItemName": "青銅弩箭",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -251,24 +229,13 @@
     {
       "itemId": 2041016,
       "itemName": "Scroll for Cape for INT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "披風智力卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2049000,
-      "itemName": "Clean Slate Scroll 1%",
-      "chineseItemName": null,
-      "chance": 0.015,
-      "displayChance": "0.015%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     }
   ]
 }

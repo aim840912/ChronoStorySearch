@@ -4,7 +4,7 @@
     "id": 4000106,
     "name": "Teddy's Cotton",
     "description": "A soft piece of cotton from Teddy.",
-    "chineseName": "玩具熊的棉花團"
+    "chineseItemName": "玩具熊的棉花團"
   },
   "metaInfo": {
     "only": false,

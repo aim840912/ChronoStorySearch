@@ -4,7 +4,7 @@
     "id": 4010002,
     "name": "Mithril Ore",
     "description": "The ore of a light, solid Mithril.",
-    "chineseName": "鋰礦石母礦"
+    "chineseItemName": "鋰礦石母礦"
   },
   "metaInfo": {
     "only": false,

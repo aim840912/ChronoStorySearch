@@ -4,12 +4,12 @@
   "chineseMobName": "褐色發條熊",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 27,
+  "totalDrops": 21,
   "drops": [
     {
       "itemId": 4000106,
       "itemName": "Teddy's Cotton",
-      "chineseItemName": null,
+      "chineseItemName": "玩具熊的棉花團",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -29,31 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000002,
       "itemName": "White Potion",
-      "chineseItemName": null,
+      "chineseItemName": "白色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -64,7 +42,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -75,7 +53,7 @@
     {
       "itemId": 4004001,
       "itemName": "Wisdom Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "智慧母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -86,7 +64,7 @@
     {
       "itemId": 4010001,
       "itemName": "Steel Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鋼鐵母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -97,7 +75,7 @@
     {
       "itemId": 4020000,
       "itemName": "Garnet Ore",
-      "chineseItemName": null,
+      "chineseItemName": "石榴石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -106,31 +84,9 @@
       "enabled": true
     },
     {
-      "itemId": 2381034,
-      "itemName": "Brown Teddy Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4131003,
-      "itemName": "Two-Handed Sword Forging Manual",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002013,
       "itemName": "Golden Pride",
-      "chineseItemName": null,
+      "chineseItemName": "孫悟空頭箍",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -141,7 +97,7 @@
     {
       "itemId": 1040058,
       "itemName": "Dark Silver Stealer",
-      "chineseItemName": null,
+      "chineseItemName": "黑銀寂靜之服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -152,7 +108,7 @@
     {
       "itemId": 1041058,
       "itemName": "Blood Sneak",
-      "chineseItemName": null,
+      "chineseItemName": "紅敏捷之服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -163,7 +119,7 @@
     {
       "itemId": 1060044,
       "itemName": "Dark Silver Stealer Pants",
-      "chineseItemName": null,
+      "chineseItemName": "黑銀寂靜之褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -174,7 +130,7 @@
     {
       "itemId": 1061054,
       "itemName": "Blood Sneak Pants",
-      "chineseItemName": null,
+      "chineseItemName": "紅敏捷褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -185,7 +141,7 @@
     {
       "itemId": 1072101,
       "itemName": "Blue Silky Boots",
-      "chineseItemName": null,
+      "chineseItemName": "藍錦絲鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -194,31 +150,9 @@
       "enabled": true
     },
     {
-      "itemId": 1302030,
-      "itemName": "Maple Soul Singer",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1422014,
-      "itemName": "Maple Doom Singer",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1050030,
       "itemName": "Blue Chaos Robe",
-      "chineseItemName": null,
+      "chineseItemName": "藍魔力長袍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -229,7 +163,7 @@
     {
       "itemId": 1052107,
       "itemName": "Brown Pollard",
-      "chineseItemName": null,
+      "chineseItemName": "褐色無袖服",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -240,7 +174,7 @@
     {
       "itemId": 1082007,
       "itemName": "Bronze Missel",
-      "chineseItemName": null,
+      "chineseItemName": "青銅機器手套",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -251,7 +185,7 @@
     {
       "itemId": 1082046,
       "itemName": "Steel Arbion",
-      "chineseItemName": null,
+      "chineseItemName": "鋼鐵追擊手套",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -262,7 +196,7 @@
     {
       "itemId": 1322014,
       "itemName": "War Hammer",
-      "chineseItemName": null,
+      "chineseItemName": "大戰鬥錘",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -273,7 +207,7 @@
     {
       "itemId": 1472014,
       "itemName": "Steel Avarice",
-      "chineseItemName": null,
+      "chineseItemName": "鋼鐵護腕",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -284,7 +218,7 @@
     {
       "itemId": 1462000,
       "itemName": "Mountain Crossbow",
-      "chineseItemName": null,
+      "chineseItemName": "山羊弩",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -295,7 +229,7 @@
     {
       "itemId": 2040701,
       "itemName": "Scroll for Shoes for Avoidability 60%",
-      "chineseItemName": null,
+      "chineseItemName": "鞋子迴避卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

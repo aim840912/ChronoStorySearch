@@ -4,7 +4,7 @@
     "id": 4004003,
     "name": "LUK Crystal Ore",
     "description": "An ore of a crystal that possesses luck.",
-    "chineseName": "幸運母礦"
+    "chineseItemName": "幸運母礦"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 2043807,
     "name": "Scroll for Staff for Magic ATT 15%",
     "description": "Improves magic attack on the staff.\\nSuccess rate:15%, magic attack+5, INT+3, magic def.+1",
-    "chineseName": "長杖魔力卷軸15%"
+    "chineseItemName": "長杖魔力卷軸15%"
   },
   "metaInfo": {
     "only": false,

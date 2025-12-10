@@ -4,12 +4,12 @@
   "chineseMobName": "紅寶",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 25,
+  "totalDrops": 20,
   "drops": [
     {
       "itemId": 4000016,
       "itemName": "Red Snail Shell",
-      "chineseItemName": null,
+      "chineseItemName": "紅寶殼",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -29,53 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 4031846,
-      "itemName": "Black Magician's Token",
-      "chineseItemName": null,
-      "chance": 5,
-      "displayChance": "5.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 2173,
-      "enabled": false
-    },
-    {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4001359,
-      "itemName": "Small Snail Shell",
-      "chineseItemName": null,
-      "chance": 2.4,
-      "displayChance": "2.4%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 28248,
-      "enabled": false
-    },
-    {
       "itemId": 2000000,
       "itemName": "Red Potion",
-      "chineseItemName": null,
+      "chineseItemName": "紅色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -86,7 +42,7 @@
     {
       "itemId": 2010009,
       "itemName": "Green Apple",
-      "chineseItemName": null,
+      "chineseItemName": "青蘋果",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -97,7 +53,7 @@
     {
       "itemId": 4010004,
       "itemName": "Silver Ore",
-      "chineseItemName": null,
+      "chineseItemName": "銀的母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -108,7 +64,7 @@
     {
       "itemId": 4020004,
       "itemName": "Opal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "蛋白石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -117,20 +73,9 @@
       "enabled": true
     },
     {
-      "itemId": 2380004,
-      "itemName": "Red Snail Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1032003,
       "itemName": "Amethyst Earrings",
-      "chineseItemName": null,
+      "chineseItemName": "紫水晶耳環",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -141,7 +86,7 @@
     {
       "itemId": 1082029,
       "itemName": "Brown Duo",
-      "chineseItemName": null,
+      "chineseItemName": "褐短指手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -152,7 +97,7 @@
     {
       "itemId": 1061029,
       "itemName": "Red Cloth Pants",
-      "chineseItemName": null,
+      "chineseItemName": "紅夢褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -163,7 +108,7 @@
     {
       "itemId": 1072060,
       "itemName": "Brown Woodsman Boots",
-      "chineseItemName": null,
+      "chineseItemName": "褐軟布鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -174,7 +119,7 @@
     {
       "itemId": 1041006,
       "itemName": "Yellow T-Shirt",
-      "chineseItemName": null,
+      "chineseItemName": "黃色短T",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -185,7 +130,7 @@
     {
       "itemId": 1052095,
       "itemName": "Brown Rocky Suit",
-      "chineseItemName": null,
+      "chineseItemName": "褐色洛基外衣",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -196,7 +141,7 @@
     {
       "itemId": 1060022,
       "itemName": "Red Cloth Pants",
-      "chineseItemName": null,
+      "chineseItemName": "紅夢褲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -207,7 +152,7 @@
     {
       "itemId": 1072005,
       "itemName": "Leather Sandals",
-      "chineseItemName": null,
+      "chineseItemName": "皮製涼鞋",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -218,7 +163,7 @@
     {
       "itemId": 1302000,
       "itemName": "Sword",
-      "chineseItemName": null,
+      "chineseItemName": "劍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -229,7 +174,7 @@
     {
       "itemId": 1322007,
       "itemName": "Leather Purse",
-      "chineseItemName": null,
+      "chineseItemName": "皮製手提包",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -240,7 +185,7 @@
     {
       "itemId": 1372002,
       "itemName": "Metal Wand",
-      "chineseItemName": null,
+      "chineseItemName": "金屬短杖",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -251,7 +196,7 @@
     {
       "itemId": 1402001,
       "itemName": "Wooden Sword",
-      "chineseItemName": null,
+      "chineseItemName": "木劍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -262,7 +207,7 @@
     {
       "itemId": 2040502,
       "itemName": "Scroll for Overall Armor for DEX 10%",
-      "chineseItemName": null,
+      "chineseItemName": "套服敏捷卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -273,7 +218,7 @@
     {
       "itemId": 2041003,
       "itemName": "Scroll for Cape for Defense 100%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸100%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

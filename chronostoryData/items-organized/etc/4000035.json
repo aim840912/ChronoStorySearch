@@ -4,7 +4,7 @@
     "id": 4000035,
     "name": "Tablecloth",
     "description": "A tablecloth donned by Jr. Wraith.",
-    "chineseName": "桌布"
+    "chineseItemName": "桌布"
   },
   "metaInfo": {
     "only": false,

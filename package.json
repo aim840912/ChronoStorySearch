@@ -24,7 +24,8 @@
     "r2:check": "~/rclone check public/images r2:maplestory-images/images",
     "vercel:pause": "node scripts/vercel-manage.js pause",
     "vercel:unpause": "node scripts/vercel-manage.js unpause",
-    "vercel:status": "node scripts/vercel-manage.js status"
+    "vercel:status": "node scripts/vercel-manage.js status",
+    "convert-md-links": "npx tsx chronostoryData/scripts/convert-md-links.ts"
   },
   "dependencies": {
     "@types/uuid": "^10.0.0",

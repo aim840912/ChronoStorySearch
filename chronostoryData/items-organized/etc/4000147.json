@@ -4,7 +4,7 @@
     "id": 4000147,
     "name": "Sealed Teddy Bear",
     "description": "A sealed-up Teddy bear that's been controlled by Death Teddy.",
-    "chineseName": "封印發條熊"
+    "chineseItemName": "封印發條熊"
   },
   "metaInfo": {
     "only": false,

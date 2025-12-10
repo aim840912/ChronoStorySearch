@@ -4,7 +4,7 @@
     "id": 2044904,
     "name": "Scroll for Gun for Attack 30%",
     "description": "Improves attack on Guns.\\nSuccess rate:30%, weapon att. +5, accuracy+3, DEX+1nIf failed, the item will be destroyed at a 50% rate",
-    "chineseName": "火槍攻擊詛咒卷軸30%"
+    "chineseItemName": "火槍攻擊詛咒卷軸30%"
   },
   "metaInfo": {
     "only": false,

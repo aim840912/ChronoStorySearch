@@ -4,7 +4,7 @@
     "id": 2040400,
     "name": "Scroll for Topwear for Defense 100%",
     "description": "Improves weapon def. on topwear.\\nSuccess rate:100%, weapon def.+1",
-    "chineseName": "上衣防禦卷軸100%"
+    "chineseItemName": "上衣防禦卷軸100%"
   },
   "metaInfo": {
     "only": false,

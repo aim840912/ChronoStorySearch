@@ -4,7 +4,7 @@
     "id": 2041005,
     "name": "Scroll for Cape for Defense 10%",
     "description": "Improves weapon def. on the cape.\\nSuccess rate:10%, weapon def. +5, magic def.+3, MaxHP+10. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "披風防禦卷軸10%",
+    "chineseItemName": "披風防禦卷軸10%",
     "chineseNameSource": "gacha"
   },
   "metaInfo": {

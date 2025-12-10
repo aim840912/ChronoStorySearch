@@ -1,7 +1,7 @@
 {
   "itemId": 4000018,
   "itemName": "Firewood",
-  "chineseItemName": null,
+  "chineseItemName": "木柴",
   "totalMonsters": 4,
   "monsters": [
     {

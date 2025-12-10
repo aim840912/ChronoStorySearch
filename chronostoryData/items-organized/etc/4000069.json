@@ -4,7 +4,7 @@
     "id": 4000069,
     "name": "Zombie's Lost Tooth",
     "description": "A lost tooth from a Zombie. It's very decayed, looking to break apart any minute.",
-    "chineseName": "殭屍的臼齒"
+    "chineseItemName": "殭屍的臼齒"
   },
   "metaInfo": {
     "only": false,

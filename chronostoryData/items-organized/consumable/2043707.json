@@ -4,7 +4,7 @@
     "id": 2043707,
     "name": "Scroll for Wand for Magic ATT 15%",
     "description": "Improves magic attack on the wand.\\nSuccess rate:15%, magic attack+5, INT+3, magic def.+1",
-    "chineseName": "短杖魔力卷軸15%"
+    "chineseItemName": "短杖魔力卷軸15%"
   },
   "metaInfo": {
     "only": false,

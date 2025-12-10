@@ -4,7 +4,7 @@
     "id": 2040602,
     "name": "Scroll for Bottomwear for Defense 10%",
     "description": "Improves weapon def. on the bottomwear.\\nSuccess rate:10%, weapon def.+5, magic def.+3, MaxHP+10. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "褲裙防禦卷軸10%",
+    "chineseItemName": "褲裙防禦卷軸10%",
     "chineseNameSource": "gacha"
   },
   "metaInfo": {

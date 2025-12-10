@@ -4,7 +4,7 @@
     "id": 2040529,
     "name": "Scroll for Overall Armor for LUK 15%",
     "description": "Improves LUK on the overall armor.\\nSuccess rate:15%, LUK+5, avoidability+3, accuracy+1",
-    "chineseName": "套服幸運卷軸15%",
+    "chineseItemName": "套服幸運卷軸15%",
     "chineseNameSource": "gacha"
   },
   "metaInfo": {

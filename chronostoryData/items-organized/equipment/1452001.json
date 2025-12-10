@@ -4,7 +4,7 @@
     "id": 1452001,
     "name": "Hunter's Bow",
     "description": "",
-    "chineseName": "打獵弓"
+    "chineseItemName": "打獵弓"
   },
   "metaInfo": {
     "only": false,

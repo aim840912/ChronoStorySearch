@@ -4,7 +4,7 @@
     "id": 2002001,
     "name": "Speed Potion",
     "description": "Increases speed.\\nSpeed +8 for 3 min.",
-    "chineseName": "速度藥水"
+    "chineseItemName": "速度藥水"
   },
   "metaInfo": {
     "only": false,

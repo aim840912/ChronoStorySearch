@@ -4,7 +4,7 @@
     "id": 2044807,
     "name": "Scroll for Knuckler for Accuracy 60%",
     "description": "Improves accuracy on knuckles.\\nSuccess rate:60%, accuracy+3, DEX+2, weapon att.+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "指虎命中卷軸60%"
+    "chineseItemName": "指虎命中卷軸60%"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 2000006,
     "name": "Mana Elixir",
     "description": "A legendary potion.\\nRecovers around 300 MP.",
-    "chineseName": "活力藥水"
+    "chineseItemName": "活力藥水"
   },
   "metaInfo": {
     "only": false,

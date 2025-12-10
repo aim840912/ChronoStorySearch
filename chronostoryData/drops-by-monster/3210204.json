@@ -4,12 +4,12 @@
   "chineseMobName": "玩具鴨",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 30,
+  "totalDrops": 24,
   "drops": [
     {
       "itemId": 4000109,
       "itemName": "Toy Duckling",
-      "chineseItemName": null,
+      "chineseItemName": "玩具小鴨",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 4003004,
       "itemName": "Stiff Feather",
-      "chineseItemName": null,
+      "chineseItemName": "堅硬的羽毛",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 4003005,
       "itemName": "Soft Feather",
-      "chineseItemName": null,
+      "chineseItemName": "柔軟的羽毛",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
@@ -51,31 +51,9 @@
       "enabled": true
     },
     {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000002,
       "itemName": "White Potion",
-      "chineseItemName": null,
+      "chineseItemName": "白色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -86,7 +64,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -97,7 +75,7 @@
     {
       "itemId": 4004002,
       "itemName": "DEX Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "敏捷母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -108,7 +86,7 @@
     {
       "itemId": 4010004,
       "itemName": "Silver Ore",
-      "chineseItemName": null,
+      "chineseItemName": "銀的母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -119,7 +97,7 @@
     {
       "itemId": 4020006,
       "itemName": "Topaz Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黃晶母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -128,53 +106,9 @@
       "enabled": true
     },
     {
-      "itemId": 2382015,
-      "itemName": "Roloduck Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130000,
-      "itemName": "Gloves Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130015,
-      "itemName": "Claw Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130017,
-      "itemName": "Gun Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002004,
       "itemName": "Great Brown Helmet",
-      "chineseItemName": null,
+      "chineseItemName": "褐色戰鬥頭盔",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -185,7 +119,7 @@
     {
       "itemId": 1082053,
       "itemName": "Black Lutia",
-      "chineseItemName": null,
+      "chineseItemName": "黑守護手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -196,7 +130,7 @@
     {
       "itemId": 1082071,
       "itemName": "Aqua Brace",
-      "chineseItemName": null,
+      "chineseItemName": "藍勇氣手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -207,7 +141,7 @@
     {
       "itemId": 1040060,
       "itemName": "Silver Black Stealer",
-      "chineseItemName": null,
+      "chineseItemName": "銀黑寂靜之服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -218,7 +152,7 @@
     {
       "itemId": 1040070,
       "itemName": "Blue Hunter's Armor",
-      "chineseItemName": null,
+      "chineseItemName": "藍浪人之服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -229,7 +163,7 @@
     {
       "itemId": 1060046,
       "itemName": "Silver / Black Stealer Pants",
-      "chineseItemName": null,
+      "chineseItemName": "銀黑寂靜之褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -240,7 +174,7 @@
     {
       "itemId": 1060059,
       "itemName": "Blue Hunter's Pants",
-      "chineseItemName": null,
+      "chineseItemName": "藍遊俠之褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -251,7 +185,7 @@
     {
       "itemId": 1072002,
       "itemName": "Steel Trigger",
-      "chineseItemName": null,
+      "chineseItemName": "鐵頭皮鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -262,7 +196,7 @@
     {
       "itemId": 1050021,
       "itemName": "Blue Crusader Chainmail",
-      "chineseItemName": null,
+      "chineseItemName": "藍十字鎖子甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -273,7 +207,7 @@
     {
       "itemId": 1050031,
       "itemName": "White Chaos Robe",
-      "chineseItemName": null,
+      "chineseItemName": "白魔力長袍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -284,7 +218,7 @@
     {
       "itemId": 1052110,
       "itemName": "Blue Brace Look",
-      "chineseItemName": null,
+      "chineseItemName": "藍色緊身服",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -295,7 +229,7 @@
     {
       "itemId": 1060044,
       "itemName": "Dark Silver Stealer Pants",
-      "chineseItemName": null,
+      "chineseItemName": "黑銀寂靜之褲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -306,7 +240,7 @@
     {
       "itemId": 1332011,
       "itemName": "Bazlud",
-      "chineseItemName": null,
+      "chineseItemName": "刺客短刀",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -317,7 +251,7 @@
     {
       "itemId": 2040617,
       "itemName": "Scroll for Bottomwear for Mobility 100%",
-      "chineseItemName": null,
+      "chineseItemName": "褲裙移動卷軸100%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -328,7 +262,7 @@
     {
       "itemId": 2043202,
       "itemName": "Scroll for One-Handed BW for ATT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "單手棍攻擊卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

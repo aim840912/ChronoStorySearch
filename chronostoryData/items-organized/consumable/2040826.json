@@ -4,7 +4,7 @@
     "id": 2040826,
     "name": "Scroll for Gloves for Defense 15%",
     "description": "Improves ATT on Gloves.\\nSuccess rate: 60%, Weapons ATT +2. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "手套防禦卷軸15%",
+    "chineseItemName": "手套防禦卷軸15%",
     "chineseNameSource": "gacha"
   },
   "metaInfo": {

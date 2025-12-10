@@ -1,7 +1,7 @@
 {
   "itemId": 2000000,
   "itemName": "Red Potion",
-  "chineseItemName": null,
+  "chineseItemName": "紅色藥水",
   "totalMonsters": 16,
   "monsters": [
     {

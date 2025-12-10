@@ -4,7 +4,7 @@
     "id": 4020005,
     "name": "Sapphire Ore",
     "description": "The ore of a blue, transparent jewel.",
-    "chineseName": "藍寶石母礦"
+    "chineseItemName": "藍寶石母礦"
   },
   "metaInfo": {
     "only": false,

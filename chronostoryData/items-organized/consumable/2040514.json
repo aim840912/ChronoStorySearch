@@ -4,7 +4,7 @@
     "id": 2040514,
     "name": "Scroll for Overall Armor for INT 10%",
     "description": "Improves INT on the overall armor.\\nSuccess rate: 10%, INT + 5, magic def. + 3, MaxMP + 10. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "套服智力卷軸10%"
+    "chineseItemName": "套服智力卷軸10%"
   },
   "metaInfo": {
     "only": false,

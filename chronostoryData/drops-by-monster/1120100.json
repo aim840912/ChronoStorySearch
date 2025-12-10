@@ -4,12 +4,12 @@
   "chineseMobName": "三眼章魚",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 27,
+  "totalDrops": 17,
   "drops": [
     {
       "itemId": 4000006,
       "itemName": "Octopus Leg",
-      "chineseItemName": null,
+      "chineseItemName": "章魚腳",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -29,97 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 4001349,
-      "itemName": "Octopus Leg Stick",
-      "chineseItemName": null,
-      "chance": 20,
-      "displayChance": "20.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 28235,
-      "enabled": false
-    },
-    {
-      "itemId": 4030012,
-      "itemName": "Monster Card",
-      "chineseItemName": null,
-      "chance": 12.5,
-      "displayChance": "12.5%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4001365,
-      "itemName": "Octopus Sample",
-      "chineseItemName": null,
-      "chance": 8,
-      "displayChance": "8.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 28192,
-      "enabled": false
-    },
-    {
-      "itemId": 4032378,
-      "itemName": "Letter of Commendation",
-      "chineseItemName": null,
-      "chance": 8,
-      "displayChance": "8.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 2408,
-      "enabled": false
-    },
-    {
-      "itemId": 4030010,
-      "itemName": "Omok Piece : Octopus",
-      "chineseItemName": null,
-      "chance": 7.7,
-      "displayChance": "7.7%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4001361,
-      "itemName": "Ink",
-      "chineseItemName": null,
-      "chance": 7,
-      "displayChance": "7.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 28250,
-      "enabled": false
-    },
-    {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000000,
       "itemName": "Red Potion",
-      "chineseItemName": null,
+      "chineseItemName": "紅色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -130,7 +42,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -141,7 +53,7 @@
     {
       "itemId": 4010003,
       "itemName": "Adamantium Ore",
-      "chineseItemName": null,
+      "chineseItemName": "朱礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -152,7 +64,7 @@
     {
       "itemId": 4020002,
       "itemName": "AquaMarine Ore",
-      "chineseItemName": null,
+      "chineseItemName": "海藍石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -161,20 +73,9 @@
       "enabled": true
     },
     {
-      "itemId": 2380010,
-      "itemName": "Octopus Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1032001,
       "itemName": "Single Earring",
-      "chineseItemName": null,
+      "chineseItemName": "單邊銀色耳環",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -185,7 +86,7 @@
     {
       "itemId": 1040037,
       "itemName": "Brown Corporal",
-      "chineseItemName": null,
+      "chineseItemName": "青銅胸甲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -196,7 +97,7 @@
     {
       "itemId": 1041026,
       "itemName": "Yellow Arianne",
-      "chineseItemName": null,
+      "chineseItemName": "黃錦絲緊身衣",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -207,7 +108,7 @@
     {
       "itemId": 1060027,
       "itemName": "Brown Corporal Pants",
-      "chineseItemName": null,
+      "chineseItemName": "褐色鐵板褲子",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -218,7 +119,7 @@
     {
       "itemId": 1061022,
       "itemName": "Yellow Arianne Skirt",
-      "chineseItemName": null,
+      "chineseItemName": "黃錦絲緊身裙",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -227,20 +128,9 @@
       "enabled": true
     },
     {
-      "itemId": 1412011,
-      "itemName": "Maple Dragon Axe",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1092000,
       "itemName": "Steel Shield",
-      "chineseItemName": null,
+      "chineseItemName": "鋼盾",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -251,7 +141,7 @@
     {
       "itemId": 1092007,
       "itemName": "Battle Shield",
-      "chineseItemName": null,
+      "chineseItemName": "戰鬥盾牌",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -262,7 +152,7 @@
     {
       "itemId": 1422000,
       "itemName": "Wooden Mallet",
-      "chineseItemName": null,
+      "chineseItemName": "木錘",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -273,7 +163,7 @@
     {
       "itemId": 1442013,
       "itemName": "Aqua Snowboard",
-      "chineseItemName": null,
+      "chineseItemName": "滄海雪板",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -284,7 +174,7 @@
     {
       "itemId": 1482001,
       "itemName": "Leather Arms",
-      "chineseItemName": null,
+      "chineseItemName": "加固皮護手",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -295,7 +185,7 @@
     {
       "itemId": 2043002,
       "itemName": "Scroll for One-Handed Sword for ATT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "單手劍攻擊卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

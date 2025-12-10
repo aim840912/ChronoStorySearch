@@ -4,7 +4,7 @@
     "id": 2040914,
     "name": "Scroll for Shield for ATT 60%",
     "description": "Improves weapon attack on the shield.\\nSuccess Rate 60%, W. attack+2, STR+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "盾牌攻擊卷軸60%"
+    "chineseItemName": "盾牌攻擊卷軸60%"
   },
   "metaInfo": {
     "only": false,

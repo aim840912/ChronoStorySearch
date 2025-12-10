@@ -20,7 +20,7 @@
     {
       "itemId": 2010000,
       "itemName": "Apple",
-      "chineseItemName": null,
+      "chineseItemName": "蘋果",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 2010009,
       "itemName": "Green Apple",
-      "chineseItemName": null,
+      "chineseItemName": "青蘋果",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 1002082,
       "itemName": "Yellow Bandana",
-      "chineseItemName": null,
+      "chineseItemName": "黃頭巾",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -53,7 +53,7 @@
     {
       "itemId": 4010006,
       "itemName": "Gold Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黃金母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -64,7 +64,7 @@
     {
       "itemId": 1072043,
       "itemName": "Smelly Gomushin",
-      "chineseItemName": null,
+      "chineseItemName": "髒橡膠鞋",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -75,7 +75,7 @@
     {
       "itemId": 1082150,
       "itemName": "Grey Work Gloves",
-      "chineseItemName": null,
+      "chineseItemName": "灰色工作手套",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -86,7 +86,7 @@
     {
       "itemId": 1092008,
       "itemName": "Pan Lid",
-      "chineseItemName": null,
+      "chineseItemName": "鍋蓋",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -97,7 +97,7 @@
     {
       "itemId": 1302007,
       "itemName": "Long Sword",
-      "chineseItemName": null,
+      "chineseItemName": "大劍",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,

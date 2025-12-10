@@ -4,7 +4,7 @@
     "id": 2022001,
     "name": "Red Bean Porridge",
     "description": "A hot steamy porridge made out of red beans. At an HP-decreasing map, whenever such map damage is dealt, 10 HP will be protected.",
-    "chineseName": "小豆粥"
+    "chineseItemName": "小豆粥"
   },
   "metaInfo": {
     "only": false,

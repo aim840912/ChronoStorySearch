@@ -4,7 +4,7 @@
     "id": 4010003,
     "name": "Adamantium Ore",
     "description": "The ore of a heavy, strong Adamantium",
-    "chineseName": "朱礦石母礦"
+    "chineseItemName": "朱礦石母礦"
   },
   "metaInfo": {
     "only": false,

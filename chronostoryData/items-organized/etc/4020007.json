@@ -4,7 +4,7 @@
     "id": 4020007,
     "name": "Diamond Ore",
     "description": "The ore of a jewel that's transparent",
-    "chineseName": "鑽石母礦"
+    "chineseItemName": "鑽石母礦"
   },
   "metaInfo": {
     "only": false,

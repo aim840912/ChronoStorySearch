@@ -4,7 +4,7 @@
     "id": 2040530,
     "name": "Scroll for Overall Armor for STR 100%",
     "description": "Improves strength on overalls..\\nSuccess rate:100%, STR+1",
-    "chineseName": "套服力量卷軸100%"
+    "chineseItemName": "套服力量卷軸100%"
   },
   "metaInfo": {
     "only": false,

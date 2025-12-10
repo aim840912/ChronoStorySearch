@@ -4,7 +4,7 @@
     "id": 4000058,
     "name": "Nependeath Seed",
     "description": "A seed cut out of Nependeath. It's poisonous, so it shouldn't be taken lightly.",
-    "chineseName": "食人花的種子"
+    "chineseItemName": "食人花的種子"
   },
   "metaInfo": {
     "only": false,

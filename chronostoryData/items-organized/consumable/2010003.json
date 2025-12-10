@@ -4,7 +4,7 @@
     "id": 2010003,
     "name": "Orange",
     "description": "A sweet, tasty orange.\\nRecovers around 50 MP.",
-    "chineseName": "柳橙"
+    "chineseItemName": "柳橙"
   },
   "metaInfo": {
     "only": false,

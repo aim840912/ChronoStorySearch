@@ -4,7 +4,7 @@
     "id": 4000114,
     "name": "Table Clock",
     "description": "A very pretty-looking table clock. It's still running.",
-    "chineseName": "小鬧鐘"
+    "chineseItemName": "小鬧鐘"
   },
   "metaInfo": {
     "only": false,

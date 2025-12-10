@@ -4,7 +4,7 @@
     "id": 1402014,
     "name": "Thermometer",
     "description": "",
-    "chineseName": "溫度計"
+    "chineseItemName": "溫度計"
   },
   "metaInfo": {
     "only": false,

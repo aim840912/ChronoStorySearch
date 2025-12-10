@@ -4,7 +4,7 @@
     "id": 2040318,
     "name": "Scroll for Earring for DEX 10%",
     "description": "Improves DEX on earrings.\\nSuccess rate:10%, DEX+3. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "耳環敏捷卷軸10%"
+    "chineseItemName": "耳環敏捷卷軸10%"
   },
   "metaInfo": {
     "only": false,

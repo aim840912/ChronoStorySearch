@@ -4,7 +4,7 @@
     "id": 4000014,
     "name": "Drake Skull",
     "description": "It's a skull of Drake",
-    "chineseName": "暴龍的頭骨"
+    "chineseItemName": "暴龍的頭骨"
   },
   "metaInfo": {
     "only": false,

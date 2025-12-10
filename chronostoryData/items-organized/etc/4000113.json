@@ -4,7 +4,7 @@
     "id": 4000113,
     "name": "Clock Spring",
     "description": "A tiny spring of the clock.",
-    "chineseName": "鐘錶發條"
+    "chineseItemName": "鐘錶發條"
   },
   "metaInfo": {
     "only": false,

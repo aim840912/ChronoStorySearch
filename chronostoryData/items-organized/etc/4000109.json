@@ -4,7 +4,7 @@
     "id": 4000109,
     "name": "Toy Duckling",
     "description": "A miniature toy duckling with wheels.",
-    "chineseName": "玩具小鴨"
+    "chineseItemName": "玩具小鴨"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 2010009,
     "name": "Green Apple",
     "description": "Sour and crunchy green apple.\\nRecovers MP +30.",
-    "chineseName": "青蘋果"
+    "chineseItemName": "青蘋果"
   },
   "metaInfo": {
     "only": false,

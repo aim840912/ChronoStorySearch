@@ -20,7 +20,7 @@
     {
       "itemId": 4000621,
       "itemName": "#N/A",
-      "chineseItemName": null,
+      "chineseItemName": "爍展艾伊的尾巴",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 2000004,
       "itemName": "Elixir",
-      "chineseItemName": null,
+      "chineseItemName": "特殊藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 2020028,
       "itemName": "Chocolate",
-      "chineseItemName": null,
+      "chineseItemName": "巧克力",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -53,7 +53,7 @@
     {
       "itemId": 4010000,
       "itemName": "Bronze Ore",
-      "chineseItemName": null,
+      "chineseItemName": "青銅母礦",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -64,7 +64,7 @@
     {
       "itemId": 1050053,
       "itemName": "Blue Anakamoon",
-      "chineseItemName": null,
+      "chineseItemName": "藍神聖服",
       "chance": 0.18,
       "displayChance": "0.18%",
       "minQty": 1,
@@ -75,7 +75,7 @@
     {
       "itemId": 1050054,
       "itemName": "Red Anakamoon",
-      "chineseItemName": null,
+      "chineseItemName": "紅神聖服",
       "chance": 0.18,
       "displayChance": "0.18%",
       "minQty": 1,
@@ -86,7 +86,7 @@
     {
       "itemId": 1051032,
       "itemName": "Blue Calaf",
-      "chineseItemName": null,
+      "chineseItemName": "藍妖精禮服",
       "chance": 0.18,
       "displayChance": "0.18%",
       "minQty": 1,
@@ -97,7 +97,7 @@
     {
       "itemId": 1051033,
       "itemName": "Red Calaf",
-      "chineseItemName": null,
+      "chineseItemName": "紅妖精禮服",
       "chance": 0.18,
       "displayChance": "0.18%",
       "minQty": 1,
@@ -108,7 +108,7 @@
     {
       "itemId": 1052104,
       "itemName": "Brown Turk Gally",
-      "chineseItemName": null,
+      "chineseItemName": "褐色海盜服",
       "chance": 0.18,
       "displayChance": "0.18%",
       "minQty": 1,
@@ -119,7 +119,7 @@
     {
       "itemId": 1302016,
       "itemName": "Yellow Umbrella",
-      "chineseItemName": null,
+      "chineseItemName": "黃色雨傘",
       "chance": 0.18,
       "displayChance": "0.18%",
       "minQty": 1,
@@ -130,7 +130,7 @@
     {
       "itemId": 1482002,
       "itemName": "Double Tail Knuckler",
-      "chineseItemName": null,
+      "chineseItemName": "雙棘指虎",
       "chance": 0.18,
       "displayChance": "0.18%",
       "minQty": 1,
@@ -141,7 +141,7 @@
     {
       "itemId": 1492002,
       "itemName": "The Negotiator",
-      "chineseItemName": null,
+      "chineseItemName": "格蘭德火槍",
       "chance": 0.18,
       "displayChance": "0.18%",
       "minQty": 1,
@@ -152,7 +152,7 @@
     {
       "itemId": 1002213,
       "itemName": "Green Maro",
-      "chineseItemName": null,
+      "chineseItemName": "綠貴族軟帽",
       "chance": 0.12,
       "displayChance": "0.12%",
       "minQty": 1,
@@ -163,7 +163,7 @@
     {
       "itemId": 1002214,
       "itemName": "Black Maro",
-      "chineseItemName": null,
+      "chineseItemName": "黑貴族軟帽",
       "chance": 0.12,
       "displayChance": "0.12%",
       "minQty": 1,
@@ -174,7 +174,7 @@
     {
       "itemId": 1002216,
       "itemName": "Aqua Golden Circlet",
-      "chineseItemName": null,
+      "chineseItemName": "水黃金法冠",
       "chance": 0.12,
       "displayChance": "0.12%",
       "minQty": 1,
@@ -185,7 +185,7 @@
     {
       "itemId": 1002242,
       "itemName": "Red Seraphis",
-      "chineseItemName": null,
+      "chineseItemName": "紅和平之帽",
       "chance": 0.12,
       "displayChance": "0.12%",
       "minQty": 1,
@@ -196,7 +196,7 @@
     {
       "itemId": 1002243,
       "itemName": "Blue Seraphis",
-      "chineseItemName": null,
+      "chineseItemName": "藍和平之帽",
       "chance": 0.12,
       "displayChance": "0.12%",
       "minQty": 1,
@@ -207,7 +207,7 @@
     {
       "itemId": 1002619,
       "itemName": "Brown Pitz Bandana",
-      "chineseItemName": null,
+      "chineseItemName": "褐色皮茲頭巾",
       "chance": 0.12,
       "displayChance": "0.12%",
       "minQty": 1,
@@ -218,7 +218,7 @@
     {
       "itemId": 1040082,
       "itemName": "Khaki Shadow",
-      "chineseItemName": null,
+      "chineseItemName": "樹林之影",
       "chance": 0.12,
       "displayChance": "0.12%",
       "minQty": 1,
@@ -229,7 +229,7 @@
     {
       "itemId": 1040089,
       "itemName": "Umber Shouldermail",
-      "chineseItemName": null,
+      "chineseItemName": "黑板金鎧甲",
       "chance": 0.12,
       "displayChance": "0.12%",
       "minQty": 1,
@@ -240,7 +240,7 @@
     {
       "itemId": 1041027,
       "itemName": "Red Shivermail",
-      "chineseItemName": null,
+      "chineseItemName": "紅硬皮裝",
       "chance": 0.12,
       "displayChance": "0.12%",
       "minQty": 1,
@@ -251,7 +251,7 @@
     {
       "itemId": 1060071,
       "itemName": "Khaki Shadow Pants",
-      "chineseItemName": null,
+      "chineseItemName": "樹林之褲",
       "chance": 0.12,
       "displayChance": "0.12%",
       "minQty": 1,
@@ -262,7 +262,7 @@
     {
       "itemId": 1060078,
       "itemName": "Umber Shouldermail Pants",
-      "chineseItemName": null,
+      "chineseItemName": "黑板金褲",
       "chance": 0.12,
       "displayChance": "0.12%",
       "minQty": 1,
@@ -273,7 +273,7 @@
     {
       "itemId": 1061025,
       "itemName": "Red Shivermail Skirt",
-      "chineseItemName": null,
+      "chineseItemName": "紅硬皮裙",
       "chance": 0.12,
       "displayChance": "0.12%",
       "minQty": 1,
@@ -284,7 +284,7 @@
     {
       "itemId": 2043201,
       "itemName": "Scroll for One-Handed BW for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "單手棍攻擊卷軸60%",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -295,7 +295,7 @@
     {
       "itemId": 2044802,
       "itemName": "Scroll for Knuckler for ATT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "指虎攻擊卷軸10%",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -306,7 +306,7 @@
     {
       "itemId": 2043001,
       "itemName": "Scroll for One-Handed Sword for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "單手劍攻擊卷軸60%",
       "chance": 0.075,
       "displayChance": "0.075%",
       "minQty": 1,
@@ -317,7 +317,7 @@
     {
       "itemId": 1041087,
       "itemName": "Red Shouldermail",
-      "chineseItemName": null,
+      "chineseItemName": "紅將軍鎧甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -328,7 +328,7 @@
     {
       "itemId": 1302017,
       "itemName": "Sky Blue Umbrella",
-      "chineseItemName": null,
+      "chineseItemName": "藍色雨傘",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -339,7 +339,7 @@
     {
       "itemId": 1332001,
       "itemName": "Halfmoon Zamadar",
-      "chineseItemName": null,
+      "chineseItemName": "半月刃",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -350,7 +350,7 @@
     {
       "itemId": 4004004,
       "itemName": "Dark Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黑暗母礦",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -361,7 +361,7 @@
     {
       "itemId": 4020008,
       "itemName": "Black Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黑水晶母礦",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

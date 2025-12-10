@@ -4,7 +4,7 @@
     "id": 2040705,
     "name": "Scroll for Shoes for Jump 10%",
     "description": "Improves jump on shoes.\\nSuccess rate:10%, jump+5, DEX+3, speed+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "鞋子跳躍卷軸10%"
+    "chineseItemName": "鞋子跳躍卷軸10%"
   },
   "metaInfo": {
     "only": false,

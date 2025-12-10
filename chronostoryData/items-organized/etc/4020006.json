@@ -4,7 +4,7 @@
     "id": 4020006,
     "name": "Topaz Ore",
     "description": "The ore of a yellow jewel",
-    "chineseName": "黃晶母礦"
+    "chineseItemName": "黃晶母礦"
   },
   "metaInfo": {
     "only": false,

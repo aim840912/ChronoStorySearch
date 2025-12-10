@@ -4,7 +4,7 @@
     "id": 2002008,
     "name": "Sniper Pill",
     "description": "A pill of concentrated sniper potion. Accuracy + 10 for 10 minutes",
-    "chineseName": "命中藥丸"
+    "chineseItemName": "命中藥丸"
   },
   "metaInfo": {
     "only": false,

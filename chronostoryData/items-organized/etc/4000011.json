@@ -4,7 +4,7 @@
     "id": 4000011,
     "name": "Mushroom Spore",
     "description": "A spore of a mushroom",
-    "chineseName": "蘑菇芽孢"
+    "chineseItemName": "蘑菇芽孢"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 2040918,
     "name": "Scroll for Shield for Magic ATT 100%",
     "description": "Improves magic attack on the shield.\\nSuccess Rate 100%, magic attack+1",
-    "chineseName": "盾牌魔力卷軸100%"
+    "chineseItemName": "盾牌魔力卷軸100%"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 2020028,
     "name": "Chocolate",
     "description": "Milk chocolate that has a strong sweet scent. This is used to make the chocolate-dipped cookie stick.\\nRecovers each of HP and MP by 1000.",
-    "chineseName": "巧克力"
+    "chineseItemName": "巧克力"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 4000111,
     "name": "Cheap Battery",
     "description": "A cheap battery from the inside of a robot. Looks like it still can be used for a little bit.",
-    "chineseName": "便宜的乾電池"
+    "chineseItemName": "便宜的乾電池"
   },
   "metaInfo": {
     "only": false,

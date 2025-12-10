@@ -4,7 +4,7 @@
     "id": 4000107,
     "name": "Teddy's Yellow Ribbon",
     "description": "A yellow ribbon from Teddy.",
-    "chineseName": "玩具熊的黃絲帶"
+    "chineseItemName": "玩具熊的黃絲帶"
   },
   "metaInfo": {
     "only": false,

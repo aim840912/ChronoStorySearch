@@ -4,7 +4,7 @@
     "id": 4000207,
     "name": "Pelvic Bone",
     "description": "A pelvic bone from Skeleton Officer.",
-    "chineseName": "骨盆"
+    "chineseItemName": "骨盆"
   },
   "metaInfo": {
     "only": false,

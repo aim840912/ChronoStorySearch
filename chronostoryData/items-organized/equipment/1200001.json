@@ -4,7 +4,7 @@
     "id": 1200001,
     "name": "Bronze Arrow for Bow",
     "description": "",
-    "chineseName": "青銅弓箭"
+    "chineseItemName": "青銅弓箭"
   },
   "metaInfo": {
     "reqLevel": 10,

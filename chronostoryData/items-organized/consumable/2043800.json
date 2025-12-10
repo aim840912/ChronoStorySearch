@@ -4,7 +4,7 @@
     "id": 2043800,
     "name": "Scroll for Staff for Magic ATT 100%",
     "description": "Improves magic on staff.\\nSuccess rate:100%, magic attack+1",
-    "chineseName": "長杖魔力卷軸100%"
+    "chineseItemName": "長杖魔力卷軸100%"
   },
   "metaInfo": {
     "only": false,

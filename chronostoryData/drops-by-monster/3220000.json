@@ -4,12 +4,12 @@
   "chineseMobName": "樹妖王",
   "isBoss": true,
   "inGame": true,
-  "totalDrops": 61,
+  "totalDrops": 58,
   "drops": [
     {
       "itemId": 4000003,
       "itemName": "Tree Branch",
-      "chineseItemName": null,
+      "chineseItemName": "樹枝",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -20,7 +20,7 @@
     {
       "itemId": 4000005,
       "itemName": "Leaf",
-      "chineseItemName": null,
+      "chineseItemName": "葉子",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 4000018,
       "itemName": "Firewood",
-      "chineseItemName": null,
+      "chineseItemName": "木柴",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 4000195,
       "itemName": "Seedling",
-      "chineseItemName": null,
+      "chineseItemName": "苗木",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -62,31 +62,9 @@
       "enabled": true
     },
     {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 30,
-      "displayChance": "30.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 30,
-      "displayChance": "30.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000001,
       "itemName": "Orange Potion",
-      "chineseItemName": null,
+      "chineseItemName": "橘色藥水",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
@@ -97,7 +75,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
@@ -108,7 +86,7 @@
     {
       "itemId": 4010000,
       "itemName": "Bronze Ore",
-      "chineseItemName": null,
+      "chineseItemName": "青銅母礦",
       "chance": 9,
       "displayChance": "9.0%",
       "minQty": 1,
@@ -119,7 +97,7 @@
     {
       "itemId": 4020001,
       "itemName": "Amethyst Ore",
-      "chineseItemName": null,
+      "chineseItemName": "紫水晶母礦",
       "chance": 9,
       "displayChance": "9.0%",
       "minQty": 1,
@@ -130,7 +108,7 @@
     {
       "itemId": 2012002,
       "itemName": "Sap of Ancient Tree",
-      "chineseItemName": null,
+      "chineseItemName": "枯木樹液",
       "chance": 6,
       "displayChance": "6.0%",
       "minQty": 1,
@@ -141,7 +119,7 @@
     {
       "itemId": 1072087,
       "itemName": "Black Lappy Boots",
-      "chineseItemName": null,
+      "chineseItemName": "黑追擊鞋",
       "chance": 4,
       "displayChance": "4.0%",
       "minQty": 1,
@@ -150,20 +128,9 @@
       "enabled": true
     },
     {
-      "itemId": 2388025,
-      "itemName": "Stumpy Card",
-      "chineseItemName": null,
-      "chance": 2.4,
-      "displayChance": "2.4%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002098,
       "itemName": "Gold Nordic Helm",
-      "chineseItemName": null,
+      "chineseItemName": "黃金諾曼頭盔",
       "chance": 1.5,
       "displayChance": "1.5%",
       "minQty": 1,
@@ -174,7 +141,7 @@
     {
       "itemId": 1002154,
       "itemName": "Dark Guiltian",
-      "chineseItemName": null,
+      "chineseItemName": "黑魔道之帽",
       "chance": 1.5,
       "displayChance": "1.5%",
       "minQty": 1,
@@ -185,7 +152,7 @@
     {
       "itemId": 1002170,
       "itemName": "Dark Distinction",
-      "chineseItemName": null,
+      "chineseItemName": "黑羽絲絨帽",
       "chance": 1.5,
       "displayChance": "1.5%",
       "minQty": 1,
@@ -196,7 +163,7 @@
     {
       "itemId": 1002185,
       "itemName": "Dark Pilfer",
-      "chineseItemName": null,
+      "chineseItemName": "黑海盜頭巾",
       "chance": 1.5,
       "displayChance": "1.5%",
       "minQty": 1,
@@ -207,7 +174,7 @@
     {
       "itemId": 1002628,
       "itemName": "Red Misty",
-      "chineseItemName": null,
+      "chineseItemName": "紅色皇家頭巾",
       "chance": 1.5,
       "displayChance": "1.5%",
       "minQty": 1,
@@ -218,7 +185,7 @@
     {
       "itemId": 2041045,
       "itemName": "Scroll for Cape for Defense 15%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸15%",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -229,7 +196,7 @@
     {
       "itemId": 1082025,
       "itemName": "Dark Knuckle",
-      "chineseItemName": null,
+      "chineseItemName": "黑色長手套",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -240,7 +207,7 @@
     {
       "itemId": 1082064,
       "itemName": "Dark Arten",
-      "chineseItemName": null,
+      "chineseItemName": "黑精靈手套",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -251,7 +218,7 @@
     {
       "itemId": 1082073,
       "itemName": "Dark Brace",
-      "chineseItemName": null,
+      "chineseItemName": "黑勇氣手套",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -262,7 +229,7 @@
     {
       "itemId": 1082074,
       "itemName": "Dark Cleave",
-      "chineseItemName": null,
+      "chineseItemName": "黑盜賊手套",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -273,7 +240,7 @@
     {
       "itemId": 1082195,
       "itemName": "Brown Barbee",
-      "chineseItemName": null,
+      "chineseItemName": "褐色瑞恩手腕",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -284,7 +251,7 @@
     {
       "itemId": 2041045,
       "itemName": "Scroll for Cape for Defense 15%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸15%",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -295,7 +262,7 @@
     {
       "itemId": 2044201,
       "itemName": "Scroll for Two-Handed BW for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "雙手棍攻擊卷軸60%",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -306,7 +273,7 @@
     {
       "itemId": 1040080,
       "itemName": "Dark Piette",
-      "chineseItemName": null,
+      "chineseItemName": "黑貴族之服",
       "chance": 0.8,
       "displayChance": "0.80%",
       "minQty": 1,
@@ -317,7 +284,7 @@
     {
       "itemId": 1040084,
       "itemName": "Dark Shadow",
-      "chineseItemName": null,
+      "chineseItemName": "黑暗之影",
       "chance": 0.8,
       "displayChance": "0.80%",
       "minQty": 1,
@@ -328,7 +295,7 @@
     {
       "itemId": 1040085,
       "itemName": "Maroon Jangoon Armor",
-      "chineseItemName": null,
+      "chineseItemName": "紫金鎧甲",
       "chance": 0.8,
       "displayChance": "0.80%",
       "minQty": 1,
@@ -339,7 +306,7 @@
     {
       "itemId": 1041076,
       "itemName": "Dark Shadow",
-      "chineseItemName": null,
+      "chineseItemName": "深夜之影",
       "chance": 0.8,
       "displayChance": "0.80%",
       "minQty": 1,
@@ -350,7 +317,7 @@
     {
       "itemId": 1041083,
       "itemName": "Dark Piettra",
-      "chineseItemName": null,
+      "chineseItemName": "黑女貴族服",
       "chance": 0.8,
       "displayChance": "0.80%",
       "minQty": 1,
@@ -361,7 +328,7 @@
     {
       "itemId": 1041086,
       "itemName": "Black Jangoon Armor",
-      "chineseItemName": null,
+      "chineseItemName": "黑鎮月鎧甲",
       "chance": 0.8,
       "displayChance": "0.80%",
       "minQty": 1,
@@ -372,7 +339,7 @@
     {
       "itemId": 1072107,
       "itemName": "Black Red-Lined Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "紅流星鞋",
       "chance": 0.8,
       "displayChance": "0.80%",
       "minQty": 1,
@@ -383,7 +350,7 @@
     {
       "itemId": 1072117,
       "itemName": "Dark Moon Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "黑月鞋",
       "chance": 0.8,
       "displayChance": "0.80%",
       "minQty": 1,
@@ -394,7 +361,7 @@
     {
       "itemId": 1072118,
       "itemName": "Red Pierre Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "紅精靈鞋",
       "chance": 0.8,
       "displayChance": "0.80%",
       "minQty": 1,
@@ -405,7 +372,7 @@
     {
       "itemId": 1072126,
       "itemName": "Maroon Jangoon Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "紫金月鞋",
       "chance": 0.8,
       "displayChance": "0.80%",
       "minQty": 1,
@@ -416,7 +383,7 @@
     {
       "itemId": 1072300,
       "itemName": "Brown Leather Krag",
-      "chineseItemName": null,
+      "chineseItemName": "褐色尖頭皮鞋",
       "chance": 0.8,
       "displayChance": "0.80%",
       "minQty": 1,
@@ -427,7 +394,7 @@
     {
       "itemId": 1050039,
       "itemName": "Dark Starlight",
-      "chineseItemName": null,
+      "chineseItemName": "黑星光長袍",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -438,7 +405,7 @@
     {
       "itemId": 1051026,
       "itemName": "Dark Moonlight",
-      "chineseItemName": null,
+      "chineseItemName": "黑色月光服",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -449,7 +416,7 @@
     {
       "itemId": 1052113,
       "itemName": "Red Barbay",
-      "chineseItemName": null,
+      "chineseItemName": "紅色麻布衣",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -460,7 +427,7 @@
     {
       "itemId": 1322027,
       "itemName": "Frying Pan",
-      "chineseItemName": null,
+      "chineseItemName": "米伽勒的平底鍋",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -471,7 +438,7 @@
     {
       "itemId": 4003001,
       "itemName": "Processed Wood",
-      "chineseItemName": null,
+      "chineseItemName": "木材",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -482,7 +449,7 @@
     {
       "itemId": 1203004,
       "itemName": "Wooden Top",
-      "chineseItemName": null,
+      "chineseItemName": "木製陀螺",
       "chance": 0.5,
       "displayChance": "0.50%",
       "minQty": 1,
@@ -493,7 +460,7 @@
     {
       "itemId": 2041004,
       "itemName": "Scroll for Cape for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -504,7 +471,7 @@
     {
       "itemId": 2041004,
       "itemName": "Scroll for Cape for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -515,7 +482,7 @@
     {
       "itemId": 2040402,
       "itemName": "Scroll for Topwear for Defense 10%",
-      "chineseItemName": null,
+      "chineseItemName": "上衣防禦卷軸10%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -526,7 +493,7 @@
     {
       "itemId": 2040502,
       "itemName": "Scroll for Overall Armor for DEX 10%",
-      "chineseItemName": null,
+      "chineseItemName": "套服敏捷卷軸10%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -537,7 +504,7 @@
     {
       "itemId": 2040602,
       "itemName": "Scroll for Bottomwear for Defense 10%",
-      "chineseItemName": null,
+      "chineseItemName": "褲裙防禦卷軸10%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -548,7 +515,7 @@
     {
       "itemId": 2040701,
       "itemName": "Scroll for Shoes for Avoidability 60%",
-      "chineseItemName": null,
+      "chineseItemName": "鞋子迴避卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -559,7 +526,7 @@
     {
       "itemId": 2040801,
       "itemName": "Scroll for Gloves for Accuracy 60%",
-      "chineseItemName": null,
+      "chineseItemName": "手套命中卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -570,7 +537,7 @@
     {
       "itemId": 2040901,
       "itemName": "Scroll for Shield for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "盾牌防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -581,7 +548,7 @@
     {
       "itemId": 2041004,
       "itemName": "Scroll for Cape for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -592,7 +559,7 @@
     {
       "itemId": 2041016,
       "itemName": "Scroll for Cape for INT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "披風智力卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -603,7 +570,7 @@
     {
       "itemId": 2041017,
       "itemName": "Scroll for Cape for INT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "披風智力卷軸10%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -614,7 +581,7 @@
     {
       "itemId": 2043001,
       "itemName": "Scroll for One-Handed Sword for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "單手劍攻擊卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -625,7 +592,7 @@
     {
       "itemId": 2043101,
       "itemName": "Scroll for One-Handed Axe for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "單手斧攻擊卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -636,7 +603,7 @@
     {
       "itemId": 2043201,
       "itemName": "Scroll for One-Handed BW for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "單手棍攻擊卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -647,7 +614,7 @@
     {
       "itemId": 2044002,
       "itemName": "Scroll for Two-Handed Sword for ATT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "雙手劍攻擊卷軸10%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -658,7 +625,7 @@
     {
       "itemId": 2044112,
       "itemName": "Scroll for Two-Handed Axe for Accuracy 60%",
-      "chineseItemName": null,
+      "chineseItemName": "雙手斧命中卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -669,7 +636,7 @@
     {
       "itemId": 2044412,
       "itemName": "Scroll for Pole Arm for Accuracy 60%",
-      "chineseItemName": null,
+      "chineseItemName": "矛命中卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,

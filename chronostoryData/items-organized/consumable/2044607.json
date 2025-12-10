@@ -4,7 +4,7 @@
     "id": 2044607,
     "name": "Scroll for Crossbow for ATT 15%",
     "description": "Improves attack on the Crossbow. nSuccess rate:15%, weapon attack+5, accuracy+3, DEX+1",
-    "chineseName": "弩攻擊卷軸15%"
+    "chineseItemName": "弩攻擊卷軸15%"
   },
   "metaInfo": {
     "only": false,

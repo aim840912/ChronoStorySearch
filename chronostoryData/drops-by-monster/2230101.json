@@ -4,12 +4,12 @@
   "chineseMobName": "殭屍菇菇",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 41,
+  "totalDrops": 34,
   "drops": [
     {
       "itemId": 4000008,
       "itemName": "Charm of the Undead",
-      "chineseItemName": null,
+      "chineseItemName": "道符",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -29,42 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 4032399,
-      "itemName": "Recording Charm",
-      "chineseItemName": null,
-      "chance": 20,
-      "displayChance": "20.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 2251,
-      "enabled": false
-    },
-    {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000001,
       "itemName": "Orange Potion",
-      "chineseItemName": null,
+      "chineseItemName": "橘色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -75,7 +42,7 @@
     {
       "itemId": 2000002,
       "itemName": "White Potion",
-      "chineseItemName": null,
+      "chineseItemName": "白色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -86,7 +53,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -97,7 +64,7 @@
     {
       "itemId": 2002000,
       "itemName": "Dexterity Potion",
-      "chineseItemName": null,
+      "chineseItemName": "敏捷藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -108,7 +75,7 @@
     {
       "itemId": 4010002,
       "itemName": "Mithril Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -119,7 +86,7 @@
     {
       "itemId": 4010003,
       "itemName": "Adamantium Ore",
-      "chineseItemName": null,
+      "chineseItemName": "朱礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -130,7 +97,7 @@
     {
       "itemId": 4020003,
       "itemName": "Emerald Ore",
-      "chineseItemName": null,
+      "chineseItemName": "祖母綠母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -139,20 +106,9 @@
       "enabled": true
     },
     {
-      "itemId": 2381016,
-      "itemName": "Zombie Mushroom Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2020028,
       "itemName": "Chocolate",
-      "chineseItemName": null,
+      "chineseItemName": "巧克力",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -163,7 +119,7 @@
     {
       "itemId": 1002035,
       "itemName": "Pink Jester",
-      "chineseItemName": null,
+      "chineseItemName": "粉紅術士帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -174,7 +130,7 @@
     {
       "itemId": 1002158,
       "itemName": "Green Hunter",
-      "chineseItemName": null,
+      "chineseItemName": "綠獵人帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -185,7 +141,7 @@
     {
       "itemId": 1032000,
       "itemName": "Weighted Earrings",
-      "chineseItemName": null,
+      "chineseItemName": "錘珠耳環",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -196,7 +152,7 @@
     {
       "itemId": 1032004,
       "itemName": "Gold Earrings",
-      "chineseItemName": null,
+      "chineseItemName": "金耳環",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -207,7 +163,7 @@
     {
       "itemId": 1082183,
       "itemName": "Brown Leather Armor Glove",
-      "chineseItemName": null,
+      "chineseItemName": "褐色皮革手腕",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -218,7 +174,7 @@
     {
       "itemId": 1040009,
       "itemName": "Steel Corporal",
-      "chineseItemName": null,
+      "chineseItemName": "鐵胸甲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -229,7 +185,7 @@
     {
       "itemId": 1040021,
       "itemName": "Red Hwarang Shirt",
-      "chineseItemName": null,
+      "chineseItemName": "紅龍服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -240,7 +196,7 @@
     {
       "itemId": 1040026,
       "itemName": "Green Hwarang Shirt",
-      "chineseItemName": null,
+      "chineseItemName": "綠龍服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -251,7 +207,7 @@
     {
       "itemId": 1040048,
       "itemName": "Brown Sneak",
-      "chineseItemName": null,
+      "chineseItemName": "褐敏捷之服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -262,7 +218,7 @@
     {
       "itemId": 1060018,
       "itemName": "Red Martial Arts Pants",
-      "chineseItemName": null,
+      "chineseItemName": "紅武褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -273,7 +229,7 @@
     {
       "itemId": 1060038,
       "itemName": "Brown Sneak Pants",
-      "chineseItemName": null,
+      "chineseItemName": "褐敏捷之褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -282,31 +238,9 @@
       "enabled": true
     },
     {
-      "itemId": 1472030,
-      "itemName": "Maple Claw",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1482020,
-      "itemName": "Maple Knuckle",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002005,
       "itemName": "Iron Burgernet Helm",
-      "chineseItemName": null,
+      "chineseItemName": "鋼製騎士頭盔",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -317,7 +251,7 @@
     {
       "itemId": 1040044,
       "itemName": "Black Pao",
-      "chineseItemName": null,
+      "chineseItemName": "黑唐衫",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -328,7 +262,7 @@
     {
       "itemId": 1050030,
       "itemName": "Blue Chaos Robe",
-      "chineseItemName": null,
+      "chineseItemName": "藍魔力長袍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -339,7 +273,7 @@
     {
       "itemId": 1050031,
       "itemName": "White Chaos Robe",
-      "chineseItemName": null,
+      "chineseItemName": "白魔力長袍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -350,7 +284,7 @@
     {
       "itemId": 1082062,
       "itemName": "Red Arten",
-      "chineseItemName": null,
+      "chineseItemName": "紅精靈手套",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -361,7 +295,7 @@
     {
       "itemId": 1312007,
       "itemName": "Blue Counter",
-      "chineseItemName": null,
+      "chineseItemName": "青光斧",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -372,7 +306,7 @@
     {
       "itemId": 1372003,
       "itemName": "Mithril Wand",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦短杖",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -383,7 +317,7 @@
     {
       "itemId": 1412002,
       "itemName": "Iron Axe",
-      "chineseItemName": null,
+      "chineseItemName": "鋼鐵斧",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -394,7 +328,7 @@
     {
       "itemId": 2043001,
       "itemName": "Scroll for One-Handed Sword for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "單手劍攻擊卷軸60%",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -405,7 +339,7 @@
     {
       "itemId": 1432003,
       "itemName": "Nakamaki",
-      "chineseItemName": null,
+      "chineseItemName": "刺槍",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -416,7 +350,7 @@
     {
       "itemId": 1452001,
       "itemName": "Hunter's Bow",
-      "chineseItemName": null,
+      "chineseItemName": "打獵弓",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -427,7 +361,7 @@
     {
       "itemId": 1492003,
       "itemName": "Golden Hook",
-      "chineseItemName": null,
+      "chineseItemName": "黃金火槍",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -438,24 +372,13 @@
     {
       "itemId": 2044302,
       "itemName": "Scroll for Spear for ATT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "槍攻擊卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2049100,
-      "itemName": "Chaos Scroll 60%",
-      "chineseItemName": null,
-      "chance": 0.015,
-      "displayChance": "0.015%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     }
   ]
 }

@@ -4,7 +4,7 @@
     "id": 2041017,
     "name": "Scroll for Cape for INT 10%",
     "description": "Improves INT on the cape.\\nSuccess rate:10%, INT+3. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "披風智力卷軸10%"
+    "chineseItemName": "披風智力卷軸10%"
   },
   "metaInfo": {
     "only": false,

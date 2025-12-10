@@ -4,7 +4,7 @@
     "id": 4010001,
     "name": "Steel Ore",
     "description": "The ore of a tough steel",
-    "chineseName": "鋼鐵母礦"
+    "chineseItemName": "鋼鐵母礦"
   },
   "metaInfo": {
     "only": false,

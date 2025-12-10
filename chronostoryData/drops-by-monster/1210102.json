@@ -4,12 +4,12 @@
   "chineseMobName": "菇菇寶貝",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 25,
+  "totalDrops": 16,
   "drops": [
     {
       "itemId": 4000001,
       "itemName": "Orange Mushroom Cap",
-      "chineseItemName": null,
+      "chineseItemName": "菇菇寶貝傘",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -29,75 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 4032314,
-      "itemName": "Orange Mushroom Horn",
-      "chineseItemName": null,
-      "chance": 15,
-      "displayChance": "15.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 21709,
-      "enabled": false
-    },
-    {
-      "itemId": 4001354,
-      "itemName": "Young Soul",
-      "chineseItemName": null,
-      "chance": 8,
-      "displayChance": "8.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 28209,
-      "enabled": false
-    },
-    {
-      "itemId": 4001364,
-      "itemName": "Orange Mushroom Sample",
-      "chineseItemName": null,
-      "chance": 8,
-      "displayChance": "8.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 28192,
-      "enabled": false
-    },
-    {
-      "itemId": 4001345,
-      "itemName": "Sunglasses",
-      "chineseItemName": null,
-      "chance": 7,
-      "displayChance": "7.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 28170,
-      "enabled": false
-    },
-    {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000000,
       "itemName": "Red Potion",
-      "chineseItemName": null,
+      "chineseItemName": "紅色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -106,20 +40,9 @@
       "enabled": true
     },
     {
-      "itemId": 4030001,
-      "itemName": "Omok Piece : Mushroom",
-      "chineseItemName": null,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4010000,
       "itemName": "Bronze Ore",
-      "chineseItemName": null,
+      "chineseItemName": "青銅母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -130,7 +53,7 @@
     {
       "itemId": 4020007,
       "itemName": "Diamond Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鑽石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -139,20 +62,9 @@
       "enabled": true
     },
     {
-      "itemId": 2380007,
-      "itemName": "Orange Mushroom Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002043,
       "itemName": "Bronze Koif",
-      "chineseItemName": null,
+      "chineseItemName": "青銅頭盔",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -163,7 +75,7 @@
     {
       "itemId": 1082012,
       "itemName": "Basic Archer Gloves",
-      "chineseItemName": null,
+      "chineseItemName": "青狩獵手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -174,7 +86,7 @@
     {
       "itemId": 1072004,
       "itemName": "White Gomushin",
-      "chineseItemName": null,
+      "chineseItemName": "白橡膠鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -185,7 +97,7 @@
     {
       "itemId": 1072015,
       "itemName": "Brown Hard Leather Boots",
-      "chineseItemName": null,
+      "chineseItemName": "褐硬皮鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -196,7 +108,7 @@
     {
       "itemId": 1072031,
       "itemName": "Red Ninja Sandals",
-      "chineseItemName": null,
+      "chineseItemName": "紅忍者涼鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -207,7 +119,7 @@
     {
       "itemId": 2040001,
       "itemName": "Scroll for Helmet for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "頭盔防禦卷軸60%",
       "chance": 0.075,
       "displayChance": "0.075%",
       "minQty": 1,
@@ -218,7 +130,7 @@
     {
       "itemId": 2041003,
       "itemName": "Scroll for Cape for Defense 100%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸100%",
       "chance": 0.075,
       "displayChance": "0.075%",
       "minQty": 1,
@@ -229,7 +141,7 @@
     {
       "itemId": 1052095,
       "itemName": "Brown Rocky Suit",
-      "chineseItemName": null,
+      "chineseItemName": "褐色洛基外衣",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -240,7 +152,7 @@
     {
       "itemId": 1312000,
       "itemName": "Double Axe",
-      "chineseItemName": null,
+      "chineseItemName": "雙刃斧",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -249,20 +161,9 @@
       "enabled": true
     },
     {
-      "itemId": 1202000,
-      "itemName": "Bullet",
-      "chineseItemName": null,
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1432000,
       "itemName": "Spear",
-      "chineseItemName": null,
+      "chineseItemName": "長槍",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -273,7 +174,7 @@
     {
       "itemId": 2040705,
       "itemName": "Scroll for Shoes for Jump 10%",
-      "chineseItemName": null,
+      "chineseItemName": "鞋子跳躍卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

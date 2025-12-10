@@ -4,7 +4,7 @@
     "id": 2040002,
     "name": "Scroll for Helmet for Defense 10%",
     "description": "Improves helmet def.\\nSuccess Rate:10%, weapon def.+5, magic def.+3, accuracy+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "頭盔防禦卷軸10%"
+    "chineseItemName": "頭盔防禦卷軸10%"
   },
   "metaInfo": {
     "only": false,

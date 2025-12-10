@@ -4,40 +4,18 @@
   "chineseMobName": "巨人維京",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 44,
+  "totalDrops": 30,
   "drops": [
     {
       "itemId": 4000135,
       "itemName": "Gigantic Viking Hat",
-      "chineseItemName": null,
+      "chineseItemName": "巨人維京帽",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 4031170,
-      "itemName": "Tachion",
-      "chineseItemName": null,
-      "chance": 50,
-      "displayChance": "50.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 7100,
-      "enabled": false
-    },
-    {
-      "itemId": 4031175,
-      "itemName": "Tachion",
-      "chineseItemName": null,
-      "chance": 45,
-      "displayChance": "45.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 7101,
-      "enabled": false
     },
     {
       "itemId": 0,
@@ -51,53 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 4031171,
-      "itemName": "Mysterious Powder",
-      "chineseItemName": null,
-      "chance": 10,
-      "displayChance": "10.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 7101,
-      "enabled": false
-    },
-    {
-      "itemId": 4031177,
-      "itemName": "Piece of Cracked Dimension B",
-      "chineseItemName": null,
-      "chance": 10,
-      "displayChance": "10.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 7104,
-      "enabled": false
-    },
-    {
-      "itemId": 4031874,
-      "itemName": "Spirit Viking Token",
-      "chineseItemName": null,
-      "chance": 6,
-      "displayChance": "6.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 6390,
-      "enabled": false
-    },
-    {
-      "itemId": 4031176,
-      "itemName": "Piece of Cracked Dimension A",
-      "chineseItemName": null,
-      "chance": 5,
-      "displayChance": "5.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 7104,
-      "enabled": false
-    },
-    {
       "itemId": 2000005,
       "itemName": "Power Elixir",
-      "chineseItemName": null,
+      "chineseItemName": "超級藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -108,7 +42,7 @@
     {
       "itemId": 2000006,
       "itemName": "Mana Elixir",
-      "chineseItemName": null,
+      "chineseItemName": "活力藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -117,20 +51,9 @@
       "enabled": true
     },
     {
-      "itemId": 4031178,
-      "itemName": "Piece of Cracked Dimension C",
-      "chineseItemName": null,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 7104,
-      "enabled": false
-    },
-    {
       "itemId": 4004004,
       "itemName": "Dark Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黑暗母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -141,7 +64,7 @@
     {
       "itemId": 4006001,
       "itemName": "The Summoning Rock",
-      "chineseItemName": null,
+      "chineseItemName": "召喚石",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -152,7 +75,7 @@
     {
       "itemId": 4020008,
       "itemName": "Black Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黑水晶母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -161,75 +84,9 @@
       "enabled": true
     },
     {
-      "itemId": 2386009,
-      "itemName": "Gigantic Viking Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130000,
-      "itemName": "Gloves Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130010,
-      "itemName": "Wand Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130016,
-      "itemName": "Knuckler Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4131003,
-      "itemName": "Two-Handed Sword Forging Manual",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130011,
-      "itemName": "Staff Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002329,
       "itemName": "Red Pireta Hat",
-      "chineseItemName": null,
+      "chineseItemName": "紅色海盜帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -240,7 +97,7 @@
     {
       "itemId": 1082105,
       "itemName": "Dark Husk",
-      "chineseItemName": null,
+      "chineseItemName": "黑暗影手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -251,7 +108,7 @@
     {
       "itemId": 1082119,
       "itemName": "Purple Larceny",
-      "chineseItemName": null,
+      "chineseItemName": "德古拉紫手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -262,7 +119,7 @@
     {
       "itemId": 1082134,
       "itemName": "Dark Pachone",
-      "chineseItemName": null,
+      "chineseItemName": "黑色貴族手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -273,7 +130,7 @@
     {
       "itemId": 1041116,
       "itemName": "Brown Osfa Suit",
-      "chineseItemName": null,
+      "chineseItemName": "褐扣帶護甲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -284,7 +141,7 @@
     {
       "itemId": 1061115,
       "itemName": "Brown Osfa Pants",
-      "chineseItemName": null,
+      "chineseItemName": "褐色勇者褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -295,7 +152,7 @@
     {
       "itemId": 1072165,
       "itemName": "Baige Elf Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "黃箭魂鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -306,7 +163,7 @@
     {
       "itemId": 1072185,
       "itemName": "Dark Wing Boots",
-      "chineseItemName": null,
+      "chineseItemName": "黑飛翼鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -317,7 +174,7 @@
     {
       "itemId": 1050077,
       "itemName": "Green Pris",
-      "chineseItemName": null,
+      "chineseItemName": "綠宮衣",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -328,7 +185,7 @@
     {
       "itemId": 1050081,
       "itemName": "Red Battle Road",
-      "chineseItemName": null,
+      "chineseItemName": "紅白銀鎧甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -339,7 +196,7 @@
     {
       "itemId": 1050093,
       "itemName": "Blue Oriental Fury Coat",
-      "chineseItemName": null,
+      "chineseItemName": "青綢緞長袍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -350,7 +207,7 @@
     {
       "itemId": 1051058,
       "itemName": "Dark Enigma",
-      "chineseItemName": null,
+      "chineseItemName": "黑神仙之服",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -361,7 +218,7 @@
     {
       "itemId": 1051080,
       "itemName": "Dark Battle Empress",
-      "chineseItemName": null,
+      "chineseItemName": "黑白銀鎧甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -372,7 +229,7 @@
     {
       "itemId": 1051083,
       "itemName": "Blue Anes",
-      "chineseItemName": null,
+      "chineseItemName": "藍色高麗貴婦袍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -383,7 +240,7 @@
     {
       "itemId": 1060105,
       "itemName": "Brown Osfa Pants",
-      "chineseItemName": null,
+      "chineseItemName": "褐色勇者褲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -394,7 +251,7 @@
     {
       "itemId": 1402015,
       "itemName": "Heaven's Gate",
-      "chineseItemName": null,
+      "chineseItemName": "亞歷山大之劍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -403,20 +260,9 @@
       "enabled": true
     },
     {
-      "itemId": 2280005,
-      "itemName": "[Skill Book] Dragon's Breath",
-      "chineseItemName": null,
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1462012,
       "itemName": "Golden Raven",
-      "chineseItemName": null,
+      "chineseItemName": "金天弩弓",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -427,7 +273,7 @@
     {
       "itemId": 2040025,
       "itemName": "Scroll for Helmet for INT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "頭盔智力卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -438,7 +284,7 @@
     {
       "itemId": 2040031,
       "itemName": "Scroll for Helmet for DEX 10%",
-      "chineseItemName": null,
+      "chineseItemName": "頭盔敏捷卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -449,7 +295,7 @@
     {
       "itemId": 2040412,
       "itemName": "Scroll for Topwear for LUK 10%",
-      "chineseItemName": null,
+      "chineseItemName": "上衣幸運卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -460,7 +306,7 @@
     {
       "itemId": 2040418,
       "itemName": "Scroll for Topwear for STR 60%",
-      "chineseItemName": null,
+      "chineseItemName": "上衣力量卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -471,7 +317,7 @@
     {
       "itemId": 2040902,
       "itemName": "Scroll for Shield for Defense 10%",
-      "chineseItemName": null,
+      "chineseItemName": "盾牌防禦卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -482,7 +328,7 @@
     {
       "itemId": 2043002,
       "itemName": "Scroll for One-Handed Sword for ATT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "單手劍攻擊卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

@@ -4,12 +4,12 @@
   "chineseMobName": "殭屍猴王",
   "isBoss": true,
   "inGame": true,
-  "totalDrops": 55,
+  "totalDrops": 52,
   "drops": [
     {
       "itemId": 4000026,
       "itemName": "Lupin Doll",
-      "chineseItemName": null,
+      "chineseItemName": "猴子娃娃",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -20,7 +20,7 @@
     {
       "itemId": 4000029,
       "itemName": "Lupin's Banana",
-      "chineseItemName": null,
+      "chineseItemName": "香蕉",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 4000031,
       "itemName": "Cursed Doll",
-      "chineseItemName": null,
+      "chineseItemName": "詛咒娃娃",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 4000021,
       "itemName": "Leather",
-      "chineseItemName": null,
+      "chineseItemName": "動物皮",
       "chance": 50,
       "displayChance": "50.0%",
       "minQty": 1,
@@ -62,31 +62,9 @@
       "enabled": true
     },
     {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 30,
-      "displayChance": "30.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 30,
-      "displayChance": "30.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000002,
       "itemName": "White Potion",
-      "chineseItemName": null,
+      "chineseItemName": "白色藥水",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
@@ -97,7 +75,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
@@ -108,7 +86,7 @@
     {
       "itemId": 2002002,
       "itemName": "Magic Potion",
-      "chineseItemName": null,
+      "chineseItemName": "魔力藥水",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
@@ -119,7 +97,7 @@
     {
       "itemId": 2002003,
       "itemName": "Wizard Potion",
-      "chineseItemName": null,
+      "chineseItemName": "強效魔力水",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
@@ -130,7 +108,7 @@
     {
       "itemId": 4010005,
       "itemName": "Orihalcon Ore",
-      "chineseItemName": null,
+      "chineseItemName": "紫礦石母礦",
       "chance": 9,
       "displayChance": "9.0%",
       "minQty": 1,
@@ -141,7 +119,7 @@
     {
       "itemId": 4020005,
       "itemName": "Sapphire Ore",
-      "chineseItemName": null,
+      "chineseItemName": "藍寶石母礦",
       "chance": 9,
       "displayChance": "9.0%",
       "minQty": 1,
@@ -150,20 +128,9 @@
       "enabled": true
     },
     {
-      "itemId": 2388002,
-      "itemName": "Faust Card",
-      "chineseItemName": null,
-      "chance": 2.4,
-      "displayChance": "2.4%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2040930,
       "itemName": "Dark Scroll for Shield for STR 70%",
-      "chineseItemName": null,
+      "chineseItemName": "盾牌力量詛咒卷軸70%",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -174,7 +141,7 @@
     {
       "itemId": 2040932,
       "itemName": "Dark Scroll for Shield for STR 30%",
-      "chineseItemName": null,
+      "chineseItemName": "盾牌力量詛咒卷軸30%",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -185,7 +152,7 @@
     {
       "itemId": 2041028,
       "itemName": "Dark Scroll for Cape for Defense 70%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦力卷軸70%",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -196,7 +163,7 @@
     {
       "itemId": 2044804,
       "itemName": "Dark Scroll for Knuckler for ATT 30%",
-      "chineseItemName": null,
+      "chineseItemName": "指虎攻擊詛咒卷軸30%",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -207,7 +174,7 @@
     {
       "itemId": 2044902,
       "itemName": "Scroll for Gun for ATT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "火槍攻擊卷軸10%",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -218,7 +185,7 @@
     {
       "itemId": 1302010,
       "itemName": "Jeweled Katar",
-      "chineseItemName": null,
+      "chineseItemName": "樹靈之劍",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -229,7 +196,7 @@
     {
       "itemId": 1312008,
       "itemName": "Buck",
-      "chineseItemName": null,
+      "chineseItemName": "樹靈之斧",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -240,7 +207,7 @@
     {
       "itemId": 1322017,
       "itemName": "Knuckle Mace",
-      "chineseItemName": null,
+      "chineseItemName": "旋風錘",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -251,7 +218,7 @@
     {
       "itemId": 1372007,
       "itemName": "Cromi",
-      "chineseItemName": null,
+      "chineseItemName": "大魔法師短杖",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -262,7 +229,7 @@
     {
       "itemId": 1382006,
       "itemName": "Thorns",
-      "chineseItemName": null,
+      "chineseItemName": "白龍之杖",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -273,7 +240,7 @@
     {
       "itemId": 1402003,
       "itemName": "Lion's Fang",
-      "chineseItemName": null,
+      "chineseItemName": "虎劍",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -284,7 +251,7 @@
     {
       "itemId": 1412003,
       "itemName": "The Rising",
-      "chineseItemName": null,
+      "chineseItemName": "太陽之斧",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -295,7 +262,7 @@
     {
       "itemId": 1422005,
       "itemName": "Golden Mole",
-      "chineseItemName": null,
+      "chineseItemName": "黃金錘",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -306,7 +273,7 @@
     {
       "itemId": 1442005,
       "itemName": "The Nine Dragons",
-      "chineseItemName": null,
+      "chineseItemName": "九龍刀",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -317,7 +284,7 @@
     {
       "itemId": 1332003,
       "itemName": "Shinkita",
-      "chineseItemName": null,
+      "chineseItemName": "破碎刃",
       "chance": 0.5,
       "displayChance": "0.50%",
       "minQty": 1,
@@ -328,7 +295,7 @@
     {
       "itemId": 1432004,
       "itemName": "Serpent's Tongue",
-      "chineseItemName": null,
+      "chineseItemName": "丈八蛇矛",
       "chance": 0.5,
       "displayChance": "0.50%",
       "minQty": 1,
@@ -339,7 +306,7 @@
     {
       "itemId": 1432039,
       "itemName": "Fishing Pole",
-      "chineseItemName": null,
+      "chineseItemName": "釣魚杆",
       "chance": 0.5,
       "displayChance": "0.50%",
       "minQty": 1,
@@ -350,7 +317,7 @@
     {
       "itemId": 1452008,
       "itemName": "Olympus",
-      "chineseItemName": null,
+      "chineseItemName": "天弓",
       "chance": 0.5,
       "displayChance": "0.50%",
       "minQty": 1,
@@ -361,7 +328,7 @@
     {
       "itemId": 1462007,
       "itemName": "Rower",
-      "chineseItemName": null,
+      "chineseItemName": "炎弩",
       "chance": 0.5,
       "displayChance": "0.50%",
       "minQty": 1,
@@ -372,7 +339,7 @@
     {
       "itemId": 1472021,
       "itemName": "Dark Slain",
-      "chineseItemName": null,
+      "chineseItemName": "黑手甲",
       "chance": 0.5,
       "displayChance": "0.50%",
       "minQty": 1,
@@ -383,7 +350,7 @@
     {
       "itemId": 1482007,
       "itemName": "Fury Claw",
-      "chineseItemName": null,
+      "chineseItemName": "惡魔之爪",
       "chance": 0.5,
       "displayChance": "0.50%",
       "minQty": 1,
@@ -394,7 +361,7 @@
     {
       "itemId": 1492007,
       "itemName": "Mr",
-      "chineseItemName": null,
+      "chineseItemName": "拉斯菲特之槍",
       "chance": 0.5,
       "displayChance": "0.50%",
       "minQty": 1,
@@ -405,7 +372,7 @@
     {
       "itemId": 2040301,
       "itemName": "Scroll for Earring for INT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "耳環智力卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -416,7 +383,7 @@
     {
       "itemId": 2040504,
       "itemName": "Scroll for Overall Armor for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "套服防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -427,7 +394,7 @@
     {
       "itemId": 2040514,
       "itemName": "Scroll for Overall Armor for INT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "套服智力卷軸10%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -438,7 +405,7 @@
     {
       "itemId": 2040707,
       "itemName": "Scroll for Shoes for Mobility 60%",
-      "chineseItemName": null,
+      "chineseItemName": "鞋子速度卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -449,7 +416,7 @@
     {
       "itemId": 2040801,
       "itemName": "Scroll for Gloves for Accuracy 60%",
-      "chineseItemName": null,
+      "chineseItemName": "手套命中卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -460,7 +427,7 @@
     {
       "itemId": 2040901,
       "itemName": "Scroll for Shield for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "盾牌防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -471,7 +438,7 @@
     {
       "itemId": 2040928,
       "itemName": "Scroll for Shield for ATT 100%",
-      "chineseItemName": null,
+      "chineseItemName": "盾牌攻擊卷軸100%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -482,7 +449,7 @@
     {
       "itemId": 2040931,
       "itemName": "Scroll for Shield for STR 60%",
-      "chineseItemName": null,
+      "chineseItemName": "盾牌力量卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -493,7 +460,7 @@
     {
       "itemId": 2041005,
       "itemName": "Scroll for Cape for Defense 10%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸10%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -504,7 +471,7 @@
     {
       "itemId": 2041016,
       "itemName": "Scroll for Cape for INT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "披風智力卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -515,7 +482,7 @@
     {
       "itemId": 2041017,
       "itemName": "Scroll for Cape for INT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "披風智力卷軸10%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -526,7 +493,7 @@
     {
       "itemId": 2043702,
       "itemName": "Scroll for Wand for Magic ATT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "短杖魔力卷軸10%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -537,7 +504,7 @@
     {
       "itemId": 2043801,
       "itemName": "Scroll for Staff for Magic ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "長杖魔力卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -548,7 +515,7 @@
     {
       "itemId": 2044101,
       "itemName": "Scroll for Two-Handed Axe for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "雙手斧攻擊卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -559,7 +526,7 @@
     {
       "itemId": 2044302,
       "itemName": "Scroll for Spear for ATT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "槍攻擊卷軸10%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -570,7 +537,7 @@
     {
       "itemId": 2044601,
       "itemName": "Scroll for Crossbow for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "弩攻擊卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -581,7 +548,7 @@
     {
       "itemId": 2044701,
       "itemName": "Scroll for Claw for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "拳套攻擊卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -592,7 +559,7 @@
     {
       "itemId": 2044802,
       "itemName": "Scroll for Knuckler for ATT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "指虎攻擊卷軸10%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -603,7 +570,7 @@
     {
       "itemId": 2044901,
       "itemName": "Scroll for Gun for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "火槍攻擊卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,

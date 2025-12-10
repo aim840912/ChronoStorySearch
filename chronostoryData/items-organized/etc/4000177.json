@@ -4,7 +4,7 @@
     "id": 4000177,
     "name": "Mixed Block",
     "description": "A block from Mix Golem that consists of its chest area.",
-    "chineseName": "混種石塊"
+    "chineseItemName": "混種石塊"
   },
   "metaInfo": {
     "only": false,

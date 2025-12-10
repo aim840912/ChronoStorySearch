@@ -4,7 +4,7 @@
     "id": 2010004,
     "name": "Lemon",
     "description": "Very sour.\\nRecovers around 150 MP.",
-    "chineseName": "檸檬"
+    "chineseItemName": "檸檬"
   },
   "metaInfo": {
     "only": false,

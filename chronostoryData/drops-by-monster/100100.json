@@ -4,12 +4,12 @@
   "chineseMobName": "嫩寶",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 15,
+  "totalDrops": 12,
   "drops": [
     {
       "itemId": 4000019,
       "itemName": "Snail Shell",
-      "chineseItemName": null,
+      "chineseItemName": "嫩寶殼",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -29,31 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 2,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 2,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000000,
       "itemName": "Red Potion",
-      "chineseItemName": null,
+      "chineseItemName": "紅色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -64,7 +42,7 @@
     {
       "itemId": 2010009,
       "itemName": "Green Apple",
-      "chineseItemName": null,
+      "chineseItemName": "青蘋果",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -75,7 +53,7 @@
     {
       "itemId": 4010000,
       "itemName": "Bronze Ore",
-      "chineseItemName": null,
+      "chineseItemName": "青銅母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -86,7 +64,7 @@
     {
       "itemId": 4020000,
       "itemName": "Garnet Ore",
-      "chineseItemName": null,
+      "chineseItemName": "石榴石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -95,20 +73,9 @@
       "enabled": true
     },
     {
-      "itemId": 2380000,
-      "itemName": "Snail Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002067,
       "itemName": "Green Headband",
-      "chineseItemName": null,
+      "chineseItemName": "綠髮帶",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -119,7 +86,7 @@
     {
       "itemId": 1040002,
       "itemName": "White Undershirt",
-      "chineseItemName": null,
+      "chineseItemName": "白棉T恤",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -130,7 +97,7 @@
     {
       "itemId": 1052095,
       "itemName": "Brown Rocky Suit",
-      "chineseItemName": null,
+      "chineseItemName": "褐色洛基外衣",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -141,7 +108,7 @@
     {
       "itemId": 1302000,
       "itemName": "Sword",
-      "chineseItemName": null,
+      "chineseItemName": "劍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -152,7 +119,7 @@
     {
       "itemId": 2040002,
       "itemName": "Scroll for Helmet for Defense 10%",
-      "chineseItemName": null,
+      "chineseItemName": "頭盔防禦卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -163,7 +130,7 @@
     {
       "itemId": 2041004,
       "itemName": "Scroll for Cape for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

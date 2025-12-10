@@ -4,7 +4,7 @@
     "id": 2044812,
     "name": "Scroll for Knuckler for ATT 15%",
     "description": "Improves ATT on Knuckles.\\nSuccess Rate:15%, Weapon Att+5, STR+3, Weapon DEF+1",
-    "chineseName": "指虎攻擊卷軸15%"
+    "chineseItemName": "指虎攻擊卷軸15%"
   },
   "metaInfo": {
     "only": false,

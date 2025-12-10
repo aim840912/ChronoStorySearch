@@ -4,7 +4,7 @@
     "id": 2050000,
     "name": "Antidote",
     "description": "Cures the state of being poisoned.",
-    "chineseName": "解毒劑"
+    "chineseItemName": "解毒劑"
   },
   "metaInfo": {
     "only": false,

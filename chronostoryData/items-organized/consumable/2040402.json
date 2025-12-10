@@ -4,7 +4,7 @@
     "id": 2040402,
     "name": "Scroll for Topwear for Defense 10%",
     "description": "Improves weapon def. on topwear.\\nSuccess rate:10%, weapon def. +5, magic def. +3, MaxHP+10. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "上衣防禦卷軸10%"
+    "chineseItemName": "上衣防禦卷軸10%"
   },
   "metaInfo": {
     "only": false,

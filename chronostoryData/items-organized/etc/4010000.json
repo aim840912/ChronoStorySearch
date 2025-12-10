@@ -4,7 +4,7 @@
     "id": 4010000,
     "name": "Bronze Ore",
     "description": "The ore of a light and weak bronze.",
-    "chineseName": "青銅母礦"
+    "chineseItemName": "青銅母礦"
   },
   "metaInfo": {
     "only": false,

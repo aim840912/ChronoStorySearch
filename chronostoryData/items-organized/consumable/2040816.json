@@ -4,7 +4,7 @@
     "id": 2040816,
     "name": "Scroll for Gloves for Magic ATT 10%",
     "description": "Improves magic attack on the glove.\\nSuccess Rate 10%, magic defense+1, magic attack+3, INT+3. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "手套魔力卷軸10%"
+    "chineseItemName": "手套魔力卷軸10%"
   },
   "metaInfo": {
     "only": false,

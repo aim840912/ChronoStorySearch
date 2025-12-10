@@ -4,7 +4,7 @@
     "id": 4004002,
     "name": "DEX Crystal Ore",
     "description": "An ore of a crystal that possesses dexterity.",
-    "chineseName": "敏捷母礦"
+    "chineseItemName": "敏捷母礦"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 4020002,
     "name": "AquaMarine Ore",
     "description": "The ore of a blue jewel.",
-    "chineseName": "海藍石母礦"
+    "chineseItemName": "海藍石母礦"
   },
   "metaInfo": {
     "only": false,

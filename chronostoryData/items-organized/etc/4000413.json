@@ -4,7 +4,7 @@
     "id": 4000413,
     "name": "Someone's Hat",
     "description": "An abandoned hat that used to be worn by someone. It resembles that of the subway workers. No idea why Shade would have this.",
-    "chineseName": "某人的帽子"
+    "chineseItemName": "某人的帽子"
   },
   "metaInfo": {
     "only": false,

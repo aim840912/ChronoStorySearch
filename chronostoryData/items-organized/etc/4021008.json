@@ -4,7 +4,7 @@
     "id": 4021008,
     "name": "Black Crystal",
     "description": "A very rare crystal with a dark power that lay asleep in it.",
-    "chineseName": "黑水晶"
+    "chineseItemName": "黑水晶"
   },
   "metaInfo": {
     "only": false,

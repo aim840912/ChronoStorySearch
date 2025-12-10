@@ -4,12 +4,12 @@
   "chineseMobName": "火肥肥",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 38,
+  "totalDrops": 29,
   "drops": [
     {
       "itemId": 4000024,
       "itemName": "Fire Boar's Tooth",
-      "chineseItemName": null,
+      "chineseItemName": "火肥肥尖牙",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 4000021,
       "itemName": "Leather",
-      "chineseItemName": null,
+      "chineseItemName": "動物皮",
       "chance": 5,
       "displayChance": "5.0%",
       "minQty": 1,
@@ -40,20 +40,9 @@
       "enabled": true
     },
     {
-      "itemId": 4001000,
-      "itemName": "Arwen's Glass Shoes",
-      "chineseItemName": null,
-      "chance": 2,
-      "displayChance": "2.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 2017,
-      "enabled": false
-    },
-    {
       "itemId": 2000001,
       "itemName": "Orange Potion",
-      "chineseItemName": null,
+      "chineseItemName": "橘色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -64,7 +53,7 @@
     {
       "itemId": 2000002,
       "itemName": "White Potion",
-      "chineseItemName": null,
+      "chineseItemName": "白色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -75,7 +64,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -84,31 +73,9 @@
       "enabled": true
     },
     {
-      "itemId": 4007001,
-      "itemName": "Magic Powder (White)",
-      "chineseItemName": null,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4007003,
-      "itemName": "Magic Powder (Green)",
-      "chineseItemName": null,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4010001,
       "itemName": "Steel Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鋼鐵母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -119,7 +86,7 @@
     {
       "itemId": 4010002,
       "itemName": "Mithril Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -130,7 +97,7 @@
     {
       "itemId": 4020000,
       "itemName": "Garnet Ore",
-      "chineseItemName": null,
+      "chineseItemName": "石榴石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -141,7 +108,7 @@
     {
       "itemId": 4020007,
       "itemName": "Diamond Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鑽石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -150,20 +117,9 @@
       "enabled": true
     },
     {
-      "itemId": 2382003,
-      "itemName": "Fireboar Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4006001,
       "itemName": "The Summoning Rock",
-      "chineseItemName": null,
+      "chineseItemName": "召喚石",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -172,42 +128,9 @@
       "enabled": true
     },
     {
-      "itemId": 4130011,
-      "itemName": "Staff Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130016,
-      "itemName": "Knuckler Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130017,
-      "itemName": "Gun Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002141,
       "itemName": "Red Matty",
-      "chineseItemName": null,
+      "chineseItemName": "紅星魔法帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -218,7 +141,7 @@
     {
       "itemId": 1002178,
       "itemName": "Green Burgler",
-      "chineseItemName": null,
+      "chineseItemName": "綠防風帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -229,7 +152,7 @@
     {
       "itemId": 1082044,
       "itemName": "Gold Sylvia",
-      "chineseItemName": null,
+      "chineseItemName": "黃金暴風手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -240,7 +163,7 @@
     {
       "itemId": 1082052,
       "itemName": "Blue Lutia",
-      "chineseItemName": null,
+      "chineseItemName": "藍守護手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -251,7 +174,7 @@
     {
       "itemId": 1040026,
       "itemName": "Green Hwarang Shirt",
-      "chineseItemName": null,
+      "chineseItemName": "綠龍服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -262,7 +185,7 @@
     {
       "itemId": 1060019,
       "itemName": "Brown Martial Arts Pants",
-      "chineseItemName": null,
+      "chineseItemName": "黃武褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -273,7 +196,7 @@
     {
       "itemId": 1072079,
       "itemName": "Red Hunter Boots",
-      "chineseItemName": null,
+      "chineseItemName": "紅打獵鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -284,7 +207,7 @@
     {
       "itemId": 1072091,
       "itemName": "Black Salt Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "黑守護鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -295,7 +218,7 @@
     {
       "itemId": 1072103,
       "itemName": "Red Silky Boots",
-      "chineseItemName": null,
+      "chineseItemName": "紅錦絲鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -304,31 +227,9 @@
       "enabled": true
     },
     {
-      "itemId": 1382009,
-      "itemName": "Maple Staff",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1472032,
-      "itemName": "Maple Kandayo",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1052107,
       "itemName": "Brown Pollard",
-      "chineseItemName": null,
+      "chineseItemName": "褐色無袖服",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -339,7 +240,7 @@
     {
       "itemId": 1372003,
       "itemName": "Mithril Wand",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦短杖",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -350,7 +251,7 @@
     {
       "itemId": 1372012,
       "itemName": "Crystal Wand",
-      "chineseItemName": null,
+      "chineseItemName": "水晶短杖",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -361,7 +262,7 @@
     {
       "itemId": 1203001,
       "itemName": "Wolbi Throwing-Stars",
-      "chineseItemName": null,
+      "chineseItemName": "迴旋鏢",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -372,7 +273,7 @@
     {
       "itemId": 1332020,
       "itemName": "Korean Fan",
-      "chineseItemName": null,
+      "chineseItemName": "太極扇",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -383,7 +284,7 @@
     {
       "itemId": 1452005,
       "itemName": "Ryden",
-      "chineseItemName": null,
+      "chineseItemName": "雷電",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -394,7 +295,7 @@
     {
       "itemId": 1462005,
       "itemName": "Heckler",
-      "chineseItemName": null,
+      "chineseItemName": "雙弦弩",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -405,7 +306,7 @@
     {
       "itemId": 1472012,
       "itemName": "Silver Guardian",
-      "chineseItemName": null,
+      "chineseItemName": "銀守護拳套",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -416,7 +317,7 @@
     {
       "itemId": 1203006,
       "itemName": "Kumbi Throwing-Stars",
-      "chineseItemName": null,
+      "chineseItemName": "雪花鏢",
       "chance": 0.04,
       "displayChance": "0.040%",
       "minQty": 1,

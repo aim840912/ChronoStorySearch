@@ -4,7 +4,7 @@
     "id": 4000206,
     "name": "Rib",
     "description": "A rib from Skeleton Soldier.",
-    "chineseName": "肋骨"
+    "chineseItemName": "肋骨"
   },
   "metaInfo": {
     "only": false,

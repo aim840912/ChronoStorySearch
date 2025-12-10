@@ -4,7 +4,7 @@
     "id": 2043012,
     "name": "Scroll for One-Handed Sword for ATT 15%",
     "description": "Improves attack on the one-handed sword.\\nSuccess rate:15%, weapon attack+5, STR+3, weapon def.+1",
-    "chineseName": "單手劍攻擊卷軸15%"
+    "chineseItemName": "單手劍攻擊卷軸15%"
   },
   "metaInfo": {
     "only": false,

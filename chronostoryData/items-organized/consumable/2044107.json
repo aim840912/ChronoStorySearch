@@ -4,7 +4,7 @@
     "id": 2044107,
     "name": "Scroll for Two-Handed Axe for ATT 15%",
     "description": "Improves attack on the two-handed axe.\\nSuccess rate:15%, weapon attack+5, STR+3, weapon def.+1",
-    "chineseName": "雙手斧攻擊卷軸15%"
+    "chineseItemName": "雙手斧攻擊卷軸15%"
   },
   "metaInfo": {
     "only": false,

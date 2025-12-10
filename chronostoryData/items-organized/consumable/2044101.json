@@ -4,7 +4,7 @@
     "id": 2044101,
     "name": "Scroll for Two-Handed Axe for ATT 60%",
     "description": "Improves attack on two-handed axe.\\nSuccess rate:60%, weapon attack+2, STR+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "雙手斧攻擊卷軸60%"
+    "chineseItemName": "雙手斧攻擊卷軸60%"
   },
   "metaInfo": {
     "only": false,

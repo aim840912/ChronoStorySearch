@@ -4,7 +4,7 @@
     "id": 4020000,
     "name": "Garnet Ore",
     "description": "The ore of a red jewel.",
-    "chineseName": "石榴石母礦"
+    "chineseItemName": "石榴石母礦"
   },
   "metaInfo": {
     "only": false,

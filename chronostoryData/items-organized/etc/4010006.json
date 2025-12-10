@@ -4,7 +4,7 @@
     "id": 4010006,
     "name": "Gold Ore",
     "description": "The ore of gold, a very rare mineral",
-    "chineseName": "黃金母礦"
+    "chineseItemName": "黃金母礦"
   },
   "metaInfo": {
     "only": false,

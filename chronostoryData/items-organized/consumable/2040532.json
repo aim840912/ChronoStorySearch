@@ -4,7 +4,7 @@
     "id": 2040532,
     "name": "Scroll for Overall Armor for STR 60%",
     "description": "Improves strength on overalls.\\nSuccess rate:60%, STR+2, weapon def.+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "套服力量卷軸60%"
+    "chineseItemName": "套服力量卷軸60%"
   },
   "metaInfo": {
     "only": false,

@@ -4,12 +4,12 @@
   "chineseMobName": "菇菇仔",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 16,
+  "totalDrops": 13,
   "drops": [
     {
       "itemId": 4000011,
       "itemName": "Mushroom Spore",
-      "chineseItemName": null,
+      "chineseItemName": "蘑菇芽孢",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -29,31 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000000,
       "itemName": "Red Potion",
-      "chineseItemName": null,
+      "chineseItemName": "紅色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -64,7 +42,7 @@
     {
       "itemId": 2010009,
       "itemName": "Green Apple",
-      "chineseItemName": null,
+      "chineseItemName": "青蘋果",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -75,7 +53,7 @@
     {
       "itemId": 4010002,
       "itemName": "Mithril Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -86,7 +64,7 @@
     {
       "itemId": 4020002,
       "itemName": "AquaMarine Ore",
-      "chineseItemName": null,
+      "chineseItemName": "海藍石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -95,20 +73,9 @@
       "enabled": true
     },
     {
-      "itemId": 2380002,
-      "itemName": "Spore Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002610,
       "itemName": "Brown Rocky Bandana",
-      "chineseItemName": null,
+      "chineseItemName": "褐色洛基頭巾",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -119,7 +86,7 @@
     {
       "itemId": 1060007,
       "itemName": "Jean Capris",
-      "chineseItemName": null,
+      "chineseItemName": "藍馬褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -130,7 +97,7 @@
     {
       "itemId": 1061009,
       "itemName": "Green Avelin Skirt",
-      "chineseItemName": null,
+      "chineseItemName": "綠色旅行裙",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -141,7 +108,7 @@
     {
       "itemId": 1062000,
       "itemName": "Ice Jeans",
-      "chineseItemName": null,
+      "chineseItemName": "破爛牛仔褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -152,7 +119,7 @@
     {
       "itemId": 1312004,
       "itemName": "Hand Axe",
-      "chineseItemName": null,
+      "chineseItemName": "小斧",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -163,7 +130,7 @@
     {
       "itemId": 1332006,
       "itemName": "Field Dagger",
-      "chineseItemName": null,
+      "chineseItemName": "戰鬥短刀",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -174,7 +141,7 @@
     {
       "itemId": 2041004,
       "itemName": "Scroll for Cape for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

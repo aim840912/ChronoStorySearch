@@ -4,7 +4,7 @@
     "id": 2043301,
     "name": "Scroll for Dagger for ATT 60%",
     "description": "Improves attack on dagger.\\nSuccess rate:60%, weapon attack+2, LUK+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "短劍攻擊卷軸60%"
+    "chineseItemName": "短劍攻擊卷軸60%"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 2020015,
     "name": "Sunset Dew",
     "description": "Dew collected late in the afternoon. Recovers 5000 MP.",
-    "chineseName": "黃昏之露"
+    "chineseItemName": "黃昏之露"
   },
   "metaInfo": {
     "only": false,

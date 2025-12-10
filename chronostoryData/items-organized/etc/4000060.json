@@ -4,7 +4,7 @@
     "id": 4000060,
     "name": "Lunar Pixie's Moonpiece",
     "description": "A piece of moon dropped by Lunar Pixie. It glows beautifully.",
-    "chineseName": "月光精靈的碎片"
+    "chineseItemName": "月光精靈的碎片"
   },
   "metaInfo": {
     "only": false,

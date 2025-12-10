@@ -9,7 +9,7 @@
     {
       "itemId": 4000998,
       "itemName": "#N/A",
-      "chineseItemName": null,
+      "chineseItemName": "穆王的爪子",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 4004002,
       "itemName": "DEX Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "敏捷母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 4020003,
       "itemName": "Emerald Ore",
-      "chineseItemName": null,
+      "chineseItemName": "祖母綠母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -53,7 +53,7 @@
     {
       "itemId": 1092008,
       "itemName": "Pan Lid",
-      "chineseItemName": null,
+      "chineseItemName": "鍋蓋",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -64,7 +64,7 @@
     {
       "itemId": 1092020,
       "itemName": "Jurgen Wristguard",
-      "chineseItemName": null,
+      "chineseItemName": "敏捷盾牌",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -75,7 +75,7 @@
     {
       "itemId": 1092022,
       "itemName": "Palette",
-      "chineseItemName": null,
+      "chineseItemName": "調色盤",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -86,7 +86,7 @@
     {
       "itemId": 1092024,
       "itemName": "Silver Aquila Shield",
-      "chineseItemName": null,
+      "chineseItemName": "銀尖刺護盾",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -97,7 +97,7 @@
     {
       "itemId": 1092025,
       "itemName": "Gold Aquila Shield",
-      "chineseItemName": null,
+      "chineseItemName": "金尖刺護盾",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -108,7 +108,7 @@
     {
       "itemId": 1092029,
       "itemName": "Esther Shield",
-      "chineseItemName": null,
+      "chineseItemName": "鑽石護盾",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -119,7 +119,7 @@
     {
       "itemId": 2040805,
       "itemName": "Scroll for Gloves for ATT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "手套攻擊卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -130,7 +130,7 @@
     {
       "itemId": 2040918,
       "itemName": "Scroll for Shield for Magic ATT 100%",
-      "chineseItemName": null,
+      "chineseItemName": "盾牌魔力卷軸100%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -141,7 +141,7 @@
     {
       "itemId": 2040928,
       "itemName": "Scroll for Shield for ATT 100%",
-      "chineseItemName": null,
+      "chineseItemName": "盾牌攻擊卷軸100%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

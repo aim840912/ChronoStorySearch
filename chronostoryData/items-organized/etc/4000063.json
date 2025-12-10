@@ -4,7 +4,7 @@
     "id": 4000063,
     "name": "Sentinel Shellpiece",
     "description": "A hard shellpiece from Sentinel.",
-    "chineseName": "石球的石塊"
+    "chineseItemName": "石球的石塊"
   },
   "metaInfo": {
     "only": false,

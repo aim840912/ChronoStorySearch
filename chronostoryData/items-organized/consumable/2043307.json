@@ -4,7 +4,7 @@
     "id": 2043307,
     "name": "Scroll for Dagger for ATT 15%",
     "description": "Improves attack on the dagger.\\nSuccess rate:15%, weapon attack+5, LUK+3, weapon def.+1",
-    "chineseName": "短劍攻擊卷軸15%"
+    "chineseItemName": "短劍攻擊卷軸15%"
   },
   "metaInfo": {
     "only": false,

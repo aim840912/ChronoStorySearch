@@ -4,7 +4,7 @@
     "id": 2044012,
     "name": "Scroll for Two-Handed Sword for Accuracy 60%",
     "description": "Improves accuracy on two-handed swords.\\nSuccess rate:60%, accuracy+3, DEX+2, weapon att.+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "雙手劍命中卷軸60%"
+    "chineseItemName": "雙手劍命中卷軸60%"
   },
   "metaInfo": {
     "only": false,

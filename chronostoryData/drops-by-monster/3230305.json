@@ -4,12 +4,12 @@
   "chineseMobName": "木馬士兵",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 34,
+  "totalDrops": 25,
   "drops": [
     {
       "itemId": 4000003,
       "itemName": "Tree Branch",
-      "chineseItemName": null,
+      "chineseItemName": "樹枝",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -20,7 +20,7 @@
     {
       "itemId": 4000018,
       "itemName": "Firewood",
-      "chineseItemName": null,
+      "chineseItemName": "木柴",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 4000110,
       "itemName": "Toy Trojan Sword",
-      "chineseItemName": null,
+      "chineseItemName": "玩具士兵的刀",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -51,42 +51,9 @@
       "enabled": true
     },
     {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4030009,
-      "itemName": "Omok Table",
-      "chineseItemName": null,
-      "chance": 2.8,
-      "displayChance": "2.8%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000002,
       "itemName": "White Potion",
-      "chineseItemName": null,
+      "chineseItemName": "白色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -97,7 +64,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -108,7 +75,7 @@
     {
       "itemId": 4004001,
       "itemName": "Wisdom Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "智慧母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -119,7 +86,7 @@
     {
       "itemId": 4020003,
       "itemName": "Emerald Ore",
-      "chineseItemName": null,
+      "chineseItemName": "祖母綠母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -128,64 +95,9 @@
       "enabled": true
     },
     {
-      "itemId": 2382038,
-      "itemName": "Toy Trojan Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130003,
-      "itemName": "One-Handed Axe Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130004,
-      "itemName": "One-Handed Blunt Weapon Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130014,
-      "itemName": "Dagger Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130008,
-      "itemName": "Spear Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002099,
       "itemName": "Mithril Nordic Helm",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦諾曼頭盔",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -196,7 +108,7 @@
     {
       "itemId": 1002184,
       "itemName": "Brown Pilfer",
-      "chineseItemName": null,
+      "chineseItemName": "褐海盜頭巾",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -207,7 +119,7 @@
     {
       "itemId": 1032002,
       "itemName": "Sapphire Earrings",
-      "chineseItemName": null,
+      "chineseItemName": "藍寶石耳環",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -218,7 +130,7 @@
     {
       "itemId": 1082064,
       "itemName": "Dark Arten",
-      "chineseItemName": null,
+      "chineseItemName": "黑精靈手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -229,7 +141,7 @@
     {
       "itemId": 1082075,
       "itemName": "Red Cleave",
-      "chineseItemName": null,
+      "chineseItemName": "紅盜賊手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -240,7 +152,7 @@
     {
       "itemId": 1040029,
       "itemName": "Blue Dragon",
-      "chineseItemName": null,
+      "chineseItemName": "青龍衣",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -251,7 +163,7 @@
     {
       "itemId": 1041066,
       "itemName": "Blue Legolia",
-      "chineseItemName": null,
+      "chineseItemName": "藍守護之服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -262,7 +174,7 @@
     {
       "itemId": 1060020,
       "itemName": "White Martial Arts Shorts",
-      "chineseItemName": null,
+      "chineseItemName": "半白武褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -273,7 +185,7 @@
     {
       "itemId": 1061061,
       "itemName": "Blue Legolia Pants",
-      "chineseItemName": null,
+      "chineseItemName": "藍守護褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -284,7 +196,7 @@
     {
       "itemId": 1072119,
       "itemName": "Yellow Pierre Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "黃精靈鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -295,7 +207,7 @@
     {
       "itemId": 2041045,
       "itemName": "Scroll for Cape for Defense 15%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸15%",
       "chance": 0.075,
       "displayChance": "0.075%",
       "minQty": 1,
@@ -304,20 +216,9 @@
       "enabled": true
     },
     {
-      "itemId": 1432012,
-      "itemName": "Maple Impaler",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1051033,
       "itemName": "Red Calaf",
-      "chineseItemName": null,
+      "chineseItemName": "紅妖精禮服",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -328,7 +229,7 @@
     {
       "itemId": 1442009,
       "itemName": "Crescent Polearm",
-      "chineseItemName": null,
+      "chineseItemName": "月牙戟",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -339,7 +240,7 @@
     {
       "itemId": 1202001,
       "itemName": "Split Bullet",
-      "chineseItemName": null,
+      "chineseItemName": "子彈",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -350,7 +251,7 @@
     {
       "itemId": 1492005,
       "itemName": "Shooting Star",
-      "chineseItemName": null,
+      "chineseItemName": "流星",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -361,7 +262,7 @@
     {
       "itemId": 2040926,
       "itemName": "Scroll for Shield for Magic ATT 15%",
-      "chineseItemName": null,
+      "chineseItemName": "盾牌魔力卷軸15%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -372,7 +273,7 @@
     {
       "itemId": 2041004,
       "itemName": "Scroll for Cape for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

@@ -4,12 +4,12 @@
   "chineseMobName": "蝙蝠",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 30,
+  "totalDrops": 25,
   "drops": [
     {
       "itemId": 4000042,
       "itemName": "Stirge Wing",
-      "chineseItemName": null,
+      "chineseItemName": "蝙蝠翅膀",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 4003004,
       "itemName": "Stiff Feather",
-      "chineseItemName": null,
+      "chineseItemName": "堅硬的羽毛",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
@@ -40,31 +40,9 @@
       "enabled": true
     },
     {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000001,
       "itemName": "Orange Potion",
-      "chineseItemName": null,
+      "chineseItemName": "橘色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -75,7 +53,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -86,7 +64,7 @@
     {
       "itemId": 2010004,
       "itemName": "Lemon",
-      "chineseItemName": null,
+      "chineseItemName": "檸檬",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -97,7 +75,7 @@
     {
       "itemId": 4010001,
       "itemName": "Steel Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鋼鐵母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -108,7 +86,7 @@
     {
       "itemId": 4020000,
       "itemName": "Garnet Ore",
-      "chineseItemName": null,
+      "chineseItemName": "石榴石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -117,20 +95,9 @@
       "enabled": true
     },
     {
-      "itemId": 2381003,
-      "itemName": "Stirge Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002119,
       "itemName": "Green Robin Hat",
-      "chineseItemName": null,
+      "chineseItemName": "綠羽翼帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -141,7 +108,7 @@
     {
       "itemId": 1082002,
       "itemName": "Work Gloves",
-      "chineseItemName": null,
+      "chineseItemName": "工地手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -152,7 +119,7 @@
     {
       "itemId": 1040009,
       "itemName": "Steel Corporal",
-      "chineseItemName": null,
+      "chineseItemName": "鐵胸甲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -163,7 +130,7 @@
     {
       "itemId": 1040043,
       "itemName": "Red Pao",
-      "chineseItemName": null,
+      "chineseItemName": "紅唐裝",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -174,7 +141,7 @@
     {
       "itemId": 1041039,
       "itemName": "Pink Qi Pao",
-      "chineseItemName": null,
+      "chineseItemName": "粉紅旗袍",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -185,7 +152,7 @@
     {
       "itemId": 1060009,
       "itemName": "Steel Corporal Pants",
-      "chineseItemName": null,
+      "chineseItemName": "鐵板褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -196,7 +163,7 @@
     {
       "itemId": 1060032,
       "itemName": "Red Pao Bottom",
-      "chineseItemName": null,
+      "chineseItemName": "紅唐衫褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -207,7 +174,7 @@
     {
       "itemId": 1061041,
       "itemName": "Purple Qi Pao Skirt",
-      "chineseItemName": null,
+      "chineseItemName": "紫旗袍裙",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -218,7 +185,7 @@
     {
       "itemId": 2041028,
       "itemName": "Dark Scroll for Cape for Defense 70%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦力卷軸70%",
       "chance": 0.075,
       "displayChance": "0.075%",
       "minQty": 1,
@@ -227,31 +194,9 @@
       "enabled": true
     },
     {
-      "itemId": 1332025,
-      "itemName": "Maple Wagner",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1472030,
-      "itemName": "Maple Claw",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1052098,
       "itemName": "Brown Cotton Lagger",
-      "chineseItemName": null,
+      "chineseItemName": "褐色皮外套",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -262,7 +207,7 @@
     {
       "itemId": 1052101,
       "itemName": "Beige Carribean",
-      "chineseItemName": null,
+      "chineseItemName": "褐色加勒比套裝",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -273,7 +218,7 @@
     {
       "itemId": 1452005,
       "itemName": "Ryden",
-      "chineseItemName": null,
+      "chineseItemName": "雷電",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -284,7 +229,7 @@
     {
       "itemId": 2040024,
       "itemName": "Scroll for Helmet for INT 100%",
-      "chineseItemName": null,
+      "chineseItemName": "頭盔智力卷軸100%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -295,7 +240,7 @@
     {
       "itemId": 2040707,
       "itemName": "Scroll for Shoes for Mobility 60%",
-      "chineseItemName": null,
+      "chineseItemName": "鞋子速度卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -306,7 +251,7 @@
     {
       "itemId": 2041005,
       "itemName": "Scroll for Cape for Defense 10%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -317,7 +262,7 @@
     {
       "itemId": 2043112,
       "itemName": "Scroll for One-Handed Axe for Accuracy 60%",
-      "chineseItemName": null,
+      "chineseItemName": "單手斧命中卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -328,7 +273,7 @@
     {
       "itemId": 2044801,
       "itemName": "Scroll for Knuckler for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "指虎攻擊卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

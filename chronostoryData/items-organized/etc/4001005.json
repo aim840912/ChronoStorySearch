@@ -4,7 +4,7 @@
     "id": 4001005,
     "name": "Ancient Scroll",
     "description": "A scroll from long ago that contains powerful, mysterious magic from then.",
-    "chineseName": "古代卷軸"
+    "chineseItemName": "古代卷軸"
   },
   "metaInfo": {
     "only": false,

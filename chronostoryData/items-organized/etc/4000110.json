@@ -4,7 +4,7 @@
     "id": 4000110,
     "name": "Toy Trojan Sword",
     "description": "A plastic sword from the toy trojan.",
-    "chineseName": "玩具士兵的刀"
+    "chineseItemName": "玩具士兵的刀"
   },
   "metaInfo": {
     "only": false,

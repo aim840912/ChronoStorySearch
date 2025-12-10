@@ -4,7 +4,7 @@
     "id": 2040026,
     "name": "Scroll for Helmet for INT 10%",
     "description": "Improves INT on headwear.\\nSuccess rate 10%, INT+3. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "頭盔智力卷軸10%"
+    "chineseItemName": "頭盔智力卷軸10%"
   },
   "metaInfo": {
     "only": false,

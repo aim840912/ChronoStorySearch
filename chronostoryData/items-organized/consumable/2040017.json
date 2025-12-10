@@ -4,7 +4,7 @@
     "id": 2040017,
     "name": "Scroll for Helmet for Accuracy 60%",
     "description": "Improves the helmet's accuracy option.\\nSuccess Rate 60%, Dex+1, Accuracy +2. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "頭盔命中卷軸60%",
+    "chineseItemName": "頭盔命中卷軸60%",
     "chineseNameSource": "gacha"
   },
   "metaInfo": {

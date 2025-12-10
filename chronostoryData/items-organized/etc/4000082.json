@@ -4,7 +4,7 @@
     "id": 4000082,
     "name": "Zombie's Lost Gold Tooth",
     "description": "A lost gold tooth from the zombie.",
-    "chineseName": "殭屍的金齒"
+    "chineseItemName": "殭屍的金齒"
   },
   "metaInfo": {
     "only": false,

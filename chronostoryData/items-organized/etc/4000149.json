@@ -4,7 +4,7 @@
     "id": 4000149,
     "name": "Sealed Bottle",
     "description": "A pot that is a source of power that sealed up the phantom watch.",
-    "chineseName": "封印甕"
+    "chineseItemName": "封印甕"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 2050002,
     "name": "Tonic",
     "description": "Cures the state of weakness.",
-    "chineseName": "精力劑"
+    "chineseItemName": "精力劑"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 2043802,
     "name": "Scroll for Staff for Magic ATT 10%",
     "description": "Improves magic on staff.\\nSuccess rate:10%, magic attack+5, INT+3, magic def.+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "長杖魔力卷軸10%"
+    "chineseItemName": "長杖魔力卷軸10%"
   },
   "metaInfo": {
     "only": false,

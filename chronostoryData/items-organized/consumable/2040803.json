@@ -4,7 +4,7 @@
     "id": 2040803,
     "name": "Scroll for Gloves for ATT 100%",
     "description": "Improves attack on gloves.\\nSuccess rate:100%, weapon att. +1",
-    "chineseName": "手套攻擊卷軸100%"
+    "chineseItemName": "手套攻擊卷軸100%"
   },
   "metaInfo": {
     "only": false,
