@@ -13,7 +13,8 @@
 
 import itemsData from '@/../data/item-attributes-essential.json'
 import itemsDataDetailed from '@/../data/item-attributes.json'
-import dropsEssentialData from '@/../data/drops-essential.json'
+// 使用 chronostoryData 的 item-index.json 取代 drops-essential.json
+import itemIndexData from '@/../chronostoryData/item-index.json'
 import gachaMachine1 from '@/../data/gacha/machine-1-enhanced.json'
 import gachaMachine2 from '@/../data/gacha/machine-2-enhanced.json'
 import gachaMachine3 from '@/../data/gacha/machine-3-enhanced.json'
@@ -21,7 +22,7 @@ import gachaMachine4 from '@/../data/gacha/machine-4-enhanced.json'
 import gachaMachine5 from '@/../data/gacha/machine-5-enhanced.json'
 import gachaMachine6 from '@/../data/gacha/machine-6-enhanced.json'
 import gachaMachine7 from '@/../data/gacha/machine-7-enhanced.json'
-import type { ItemAttributesEssential, ItemAttributes, DropsEssential, GachaMachine, GachaItem } from '@/types'
+import type { ItemAttributesEssential, ItemAttributes, GachaMachine, GachaItem, ItemIndex } from '@/types'
 import { apiLogger } from '@/lib/logger'
 
 // ==================== 型別定義 ====================
@@ -89,22 +90,20 @@ function initializeItemsDetailedMap(): void {
 }
 
 /**
- * 初始化掉落物品名稱 Map
+ * 初始化掉落物品名稱 Map（使用 item-index.json）
  */
 function initializeDropsItemsMap(): void {
-  ;(dropsEssentialData as DropsEssential[]).forEach((drop) => {
-    const itemId = typeof drop.itemId === 'number' ? drop.itemId : parseInt(String(drop.itemId), 10)
-    if (!isNaN(itemId) && drop.itemName) {
-      // 只保留第一次出現的物品名稱（去重）
-      if (!dropsItemsMap.has(itemId)) {
-        dropsItemsMap.set(itemId, {
-          itemName: drop.itemName,
-          chineseItemName: drop.chineseItemName || null
-        })
-      }
+  const itemIndex = itemIndexData as ItemIndex
+  itemIndex.items.forEach((item) => {
+    const itemId = item.itemId
+    if (item.itemName) {
+      dropsItemsMap.set(itemId, {
+        itemName: item.itemName,
+        chineseItemName: item.chineseItemName || null
+      })
     }
   })
-  apiLogger.info('Drops items map initialized', { count: dropsItemsMap.size })
+  apiLogger.info('Drops items map initialized from item-index.json', { count: dropsItemsMap.size })
 }
 
 /**
