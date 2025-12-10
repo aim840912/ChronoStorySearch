@@ -4,7 +4,7 @@
     "id": 1004765,
     "name": "Purple Bamboo Hat",
     "description": "",
-    "chineseItemName": "迅速的闇黑幸運草"
+    "chineseItemName": "紫色斗笠"
   },
   "metaInfo": {
     "reqLevel": 25,
@@ -13,7 +13,7 @@
     "reqDEX": 0,
     "reqINT": 30,
     "reqLUK": 0,
-    "reqJob": -1,
+    "reqJob": 0,
     "price": 6000,
     "tuc": 7,
     "incINT": 3,
