@@ -3021,7 +3021,7 @@
       "isUndead": false,
       "isBoss": false
     },
-    "chineseMobName": null
+    "chineseMobName": "小石球"
   },
   {
     "mob": {
@@ -3981,5 +3981,149 @@
       "isBoss": true
     },
     "chineseMobName": "拉圖斯"
+  },
+  {
+    "mob": {
+      "InGame": true,
+      "id": "8645263",
+      "name": "Turbo Robo",
+      "maxHP": null,
+      "accuracy": 160,
+      "evasion": 39,
+      "level": 75,
+      "exp": null,
+      "physicalDefense": null,
+      "magicDefense": null,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "minimumPushDamage": 700,
+      "dark_weakness": null,
+      "isUndead": false,
+      "isBoss": false
+    },
+    "chineseMobName": "守護者機器人"
+  },
+  {
+    "mob": {
+      "InGame": true,
+      "id": "9001000",
+      "name": "Dances with Balrog's Clone",
+      "maxHP": 130000,
+      "accuracy": 49,
+      "evasion": 36,
+      "level": 70,
+      "exp": 2000,
+      "physicalDefense": 400,
+      "magicDefense": 100,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "minimumPushDamage": 1600,
+      "dark_weakness": null,
+      "isUndead": false,
+      "isBoss": true
+    },
+    "chineseMobName": "鎧長的分身"
+  },
+  {
+    "mob": {
+      "InGame": true,
+      "id": "9001001",
+      "name": "Grendel the Really Old's Clone",
+      "maxHP": 80000,
+      "accuracy": 49,
+      "evasion": 36,
+      "level": 70,
+      "exp": 2000,
+      "physicalDefense": 100,
+      "magicDefense": 300,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "minimumPushDamage": 1200,
+      "dark_weakness": null,
+      "isUndead": false,
+      "isBoss": true
+    },
+    "chineseMobName": "漢斯的分身"
+  },
+  {
+    "mob": {
+      "InGame": true,
+      "id": "9001002",
+      "name": "Athena Pierce's Clone",
+      "maxHP": 100000,
+      "accuracy": 49,
+      "evasion": 36,
+      "level": 70,
+      "exp": 2000,
+      "physicalDefense": 200,
+      "magicDefense": 200,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "minimumPushDamage": 1200,
+      "dark_weakness": null,
+      "isUndead": false,
+      "isBoss": true
+    },
+    "chineseMobName": "赫麗娜的分身"
+  },
+  {
+    "mob": {
+      "InGame": true,
+      "id": "9001003",
+      "name": "Dark Lord's Clone",
+      "maxHP": 100000,
+      "accuracy": 49,
+      "evasion": 36,
+      "level": 70,
+      "exp": 2000,
+      "physicalDefense": 200,
+      "magicDefense": 200,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "minimumPushDamage": 1200,
+      "dark_weakness": null,
+      "isUndead": false,
+      "isBoss": true
+    },
+    "chineseMobName": "達克魯的分身"
+  },
+  {
+    "mob": {
+      "InGame": true,
+      "id": "9001004",
+      "name": "Shadow Kyrin",
+      "maxHP": 110000,
+      "accuracy": 49,
+      "evasion": 36,
+      "level": 70,
+      "exp": 2000,
+      "physicalDefense": 200,
+      "magicDefense": 100,
+      "fire_weakness": null,
+      "ice_weakness": null,
+      "lightning_weakness": null,
+      "holy_weakness": null,
+      "poison_weakness": null,
+      "minimumPushDamage": 1200,
+      "dark_weakness": null,
+      "isUndead": false,
+      "isBoss": true
+    },
+    "chineseMobName": "卡伊鹐的分身"
   }
 ]
