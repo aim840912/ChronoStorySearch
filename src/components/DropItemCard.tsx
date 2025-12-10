@@ -1,7 +1,7 @@
 'use client'
 
-import { useState, useMemo } from 'react'
-import type { DropItem, ItemAttributesEssential, ItemAttributes } from '@/types'
+import { useState } from 'react'
+import type { DropItem, ItemAttributesEssential } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
 import { getItemImageUrl } from '@/lib/image-utils'
@@ -55,31 +55,11 @@ export function DropItemCard({
   }
 
   // 懶加載物品詳細資料（只在展開時載入）
+  // 現在 useLazyItemDetailed 直接返回 ItemsOrganizedData 格式
   const shouldLoadDetailed = isExpanded && essentialData !== undefined
   const { data: itemDetailed, isLoading: isLoadingDetailed } = useLazyItemDetailed(
     shouldLoadDetailed ? drop.itemId : null
   )
-
-  // 組合 Essential + Detailed 資料
-  const combinedAttributes = useMemo<ItemAttributes | null>(() => {
-    if (!essentialData) return null
-    if (!itemDetailed) return null
-
-    return {
-      item_id: essentialData.item_id,
-      item_name: essentialData.item_name,
-      type: essentialData.type,
-      sub_type: essentialData.sub_type,
-      item_type_id: itemDetailed.item_type_id,
-      sale_price: itemDetailed.sale_price,
-      max_stack_count: itemDetailed.max_stack_count,
-      untradeable: itemDetailed.untradeable,
-      item_description: itemDetailed.item_description,
-      equipment: itemDetailed.equipment,
-      scroll: itemDetailed.scroll,
-      potion: itemDetailed.potion,
-    }
-  }, [essentialData, itemDetailed])
 
   return (
     <div
@@ -186,12 +166,12 @@ export function DropItemCard({
         `}
       >
         <div className="border-t border-gray-200 dark:border-gray-700 pt-4">
-          {isLoadingDetailed && !combinedAttributes ? (
+          {isLoadingDetailed && !itemDetailed ? (
             <div className="flex justify-center py-6">
               <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-green-600 dark:border-green-400" />
             </div>
           ) : (
-            <ItemAttributesCard attributes={combinedAttributes} />
+            <ItemAttributesCard itemData={itemDetailed} />
           )}
         </div>
       </div>

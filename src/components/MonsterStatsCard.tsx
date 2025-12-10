@@ -26,7 +26,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
   const { t } = useLanguage()
 
   // 處理無屬性資料的情況
-  if (!mobInfo || !mobInfo.mob || mobInfo.mob.mob_name === null) {
+  if (!mobInfo || !mobInfo.mob || mobInfo.mob.name === null) {
     return (
       <div className="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 shadow-lg">
         <h3 className="text-xl font-bold text-gray-700 dark:text-gray-300 mb-4 flex items-center gap-2">
@@ -43,25 +43,28 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
 
   const stats = mobInfo.mob
 
-  // 屬性配置：每個屬性的 SVG 圖示、鍵值、顏色
+  // 屬性配置：dataKey 為資料欄位名稱，translationKey 為翻譯鍵值
   const statConfig = [
-    { key: 'level', Icon: StarIcon, color: 'text-yellow-600 dark:text-yellow-400' },
-    { key: 'max_hp', Icon: HeartIcon, color: 'text-red-600 dark:text-red-400' },
+    { dataKey: 'level', translationKey: 'level', Icon: StarIcon, color: 'text-yellow-600 dark:text-yellow-400' },
+    { dataKey: 'maxHP', translationKey: 'max_hp', Icon: HeartIcon, color: 'text-red-600 dark:text-red-400' },
     {
-      key: 'phys_def',
+      dataKey: 'physicalDefense',
+      translationKey: 'phys_def',
       Icon: ShieldIcon,
       color: 'text-gray-600 dark:text-gray-400',
     },
     {
-      key: 'mag_def',
+      dataKey: 'magicDefense',
+      translationKey: 'mag_def',
       Icon: StarShineIcon,
       color: 'text-indigo-600 dark:text-indigo-400',
     },
-    { key: 'acc', Icon: TargetIcon, color: 'text-pink-600 dark:text-pink-400' },
-    { key: 'avoid', Icon: WindIcon, color: 'text-cyan-600 dark:text-cyan-400' },
-    { key: 'exp', Icon: TrophyIcon, color: 'text-amber-600 dark:text-amber-400' },
+    { dataKey: 'accuracy', translationKey: 'acc', Icon: TargetIcon, color: 'text-pink-600 dark:text-pink-400' },
+    { dataKey: 'evasion', translationKey: 'avoid', Icon: WindIcon, color: 'text-cyan-600 dark:text-cyan-400' },
+    { dataKey: 'exp', translationKey: 'exp', Icon: TrophyIcon, color: 'text-amber-600 dark:text-amber-400' },
     {
-      key: 'minimumPushDamage',
+      dataKey: 'minimumPushDamage',
+      translationKey: 'minimumPushDamage',
       Icon: ZapIcon,
       color: 'text-rose-600 dark:text-rose-400',
     },
@@ -76,14 +79,14 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
 
       {/* 基本屬性 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {statConfig.map(({ key, Icon, color }) => {
-          const value = stats[key as keyof typeof stats]
-          const isAvoidField = key === 'avoid'
+        {statConfig.map(({ dataKey, translationKey, Icon, color }) => {
+          const value = stats[dataKey as keyof typeof stats]
+          const isAvoidField = dataKey === 'evasion'
           const isClickable = isAvoidField && onAccuracyClick && value !== null
 
           return (
             <div
-              key={key}
+              key={dataKey}
               className={`bg-white dark:bg-gray-800 rounded-lg p-3 shadow-sm transition-all ${
                 isClickable
                   ? 'cursor-pointer hover:shadow-lg hover:ring-2 hover:ring-cyan-500 hover:bg-cyan-50 dark:hover:bg-cyan-900/20 active:scale-95'
@@ -103,7 +106,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
                 <Icon className={`w-5 h-5 ${color}`} />
                 <div className="flex-1">
                   <div className="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-1">
-                    {t(`monster.${key}`)}
+                    {t(`monster.${translationKey}`)}
                     {isClickable && (
                       <svg className="w-3 h-3 text-cyan-600 dark:text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />

@@ -1,0 +1,1629 @@
+{
+  "machineId": 5,
+  "machineName": "Ellinia",
+  "chineseMachineName": "魔法森林",
+  "description": "魔法森林轉蛋機",
+  "totalItems": 180,
+  "items": [
+    {
+      "itemId": 1002398,
+      "itemName": "Green Varr Hat",
+      "chineseName": null,
+      "probability": "0.21%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002399,
+      "itemName": "Blue Varr Hat",
+      "chineseName": null,
+      "probability": "0.21%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002400,
+      "itemName": "Red Varr Hat",
+      "chineseName": null,
+      "probability": "0.21%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002401,
+      "itemName": "Dark Varr Hat",
+      "chineseName": null,
+      "probability": "0.21%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1072223,
+      "itemName": "Green Varr Shoes",
+      "chineseName": null,
+      "probability": "0.21%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072224,
+      "itemName": "Blue Varr Shoes",
+      "chineseName": null,
+      "probability": "0.21%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072225,
+      "itemName": "Red Varr Shoes",
+      "chineseName": null,
+      "probability": "0.21%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072226,
+      "itemName": "Dark Varr Shoes",
+      "chineseName": null,
+      "probability": "0.21%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082151,
+      "itemName": "Green Ciara",
+      "chineseName": null,
+      "probability": "0.21%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082152,
+      "itemName": "Blue Ciara",
+      "chineseName": null,
+      "probability": "0.21%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082153,
+      "itemName": "Red Ciara",
+      "chineseName": null,
+      "probability": "0.21%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082154,
+      "itemName": "Purple Ciara",
+      "chineseName": null,
+      "probability": "0.21%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1050102,
+      "itemName": "Green Varuna",
+      "chineseName": null,
+      "probability": "0.22%",
+      "chance": 52041,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050103,
+      "itemName": "Blue Varuna",
+      "chineseName": null,
+      "probability": "0.22%",
+      "chance": 52041,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050104,
+      "itemName": "Red Varuna",
+      "chineseName": null,
+      "probability": "0.22%",
+      "chance": 52041,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050105,
+      "itemName": "Dark Varuna",
+      "chineseName": null,
+      "probability": "0.22%",
+      "chance": 52041,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051101,
+      "itemName": "Green Bazura",
+      "chineseName": null,
+      "probability": "0.22%",
+      "chance": 52041,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051102,
+      "itemName": "Blue Bazura",
+      "chineseName": null,
+      "probability": "0.22%",
+      "chance": 52041,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051103,
+      "itemName": "Red Bazura",
+      "chineseName": null,
+      "probability": "0.22%",
+      "chance": 52041,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051104,
+      "itemName": "Dark Bazura",
+      "chineseName": null,
+      "probability": "0.22%",
+      "chance": 52041,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1372010,
+      "itemName": "Dimon Wand",
+      "chineseName": null,
+      "probability": "0.22%",
+      "chance": 52041,
+      "type": "Eqp",
+      "subType": "Wand"
+    },
+    {
+      "itemId": 1382035,
+      "itemName": "Blue Marine",
+      "chineseName": "怒濤之杖",
+      "probability": "0.23%",
+      "chance": 55263,
+      "type": "Eqp",
+      "subType": "Staff"
+    },
+    {
+      "itemId": 1002363,
+      "itemName": "Green Oriental Fury Hat",
+      "chineseName": null,
+      "probability": "0.26%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002364,
+      "itemName": "Blue Oriental Fury Hat",
+      "chineseName": null,
+      "probability": "0.26%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002365,
+      "itemName": "Red Oriental Fury Hat",
+      "chineseName": null,
+      "probability": "0.26%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002366,
+      "itemName": "Black Oriental Fury Hat",
+      "chineseName": "黑色綢緞帽",
+      "probability": "0.26%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1072206,
+      "itemName": "Blue Neli Shoes",
+      "chineseName": "藍色艾倫鞋",
+      "probability": "0.26%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072207,
+      "itemName": "Green Neli Shoes",
+      "chineseName": "綠色艾倫鞋",
+      "probability": "0.26%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072208,
+      "itemName": "Red Neli Shoes",
+      "chineseName": "紅色艾倫鞋",
+      "probability": "0.26%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072209,
+      "itemName": "Dark Neli Shoes",
+      "chineseName": "黑色艾倫鞋",
+      "probability": "0.26%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082131,
+      "itemName": "Blue Sage",
+      "chineseName": "藍色貴族手套",
+      "probability": "0.26%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082132,
+      "itemName": "Green Sage",
+      "chineseName": "綠色貴族手套",
+      "probability": "0.26%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082133,
+      "itemName": "Red Sage",
+      "chineseName": "紅色貴族手套",
+      "probability": "0.26%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082134,
+      "itemName": "Dark Pachone",
+      "chineseName": "黑色貴族手套",
+      "probability": "0.26%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1050092,
+      "itemName": "Green Oriental Fury Coat",
+      "chineseName": "綠綢緞長袍",
+      "probability": "0.27%",
+      "chance": 63636,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050093,
+      "itemName": "Blue Oriental Fury Coat",
+      "chineseName": "青綢緞長袍",
+      "probability": "0.27%",
+      "chance": 63636,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050094,
+      "itemName": "Red Oriental Fury Coat",
+      "chineseName": "紅綢緞長袍",
+      "probability": "0.27%",
+      "chance": 63636,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050095,
+      "itemName": "Black Oriental Fury Coat",
+      "chineseName": "黑綢緞長袍",
+      "probability": "0.27%",
+      "chance": 63636,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051094,
+      "itemName": "Green Oriental Fury Coat",
+      "chineseName": "綠綢緞長袍",
+      "probability": "0.27%",
+      "chance": 63636,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051095,
+      "itemName": "Blue Oriental Fury Coat",
+      "chineseName": "藍綢緞長袍",
+      "probability": "0.27%",
+      "chance": 63636,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051096,
+      "itemName": "Red Oriental Fury Coat",
+      "chineseName": "紅綢緞長袍",
+      "probability": "0.27%",
+      "chance": 63636,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051097,
+      "itemName": "Black Oriental Fury Coat",
+      "chineseName": "黑綢緞長袍",
+      "probability": "0.27%",
+      "chance": 63636,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1372009,
+      "itemName": "Magicodar",
+      "chineseName": null,
+      "probability": "0.27%",
+      "chance": 63636,
+      "type": "Eqp",
+      "subType": "Wand"
+    },
+    {
+      "itemId": 1382008,
+      "itemName": "Kage",
+      "chineseName": null,
+      "probability": "0.28%",
+      "chance": 67647,
+      "type": "Eqp",
+      "subType": "Staff"
+    },
+    {
+      "itemId": 1002271,
+      "itemName": "Green Galaxy",
+      "chineseName": "綠十字帽",
+      "probability": "0.31%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002272,
+      "itemName": "Blue Galaxy",
+      "chineseName": "藍十字帽",
+      "probability": "0.31%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002273,
+      "itemName": "Purple Galaxy",
+      "chineseName": "紫十字帽",
+      "probability": "0.31%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002274,
+      "itemName": "Dark Galaxy",
+      "chineseName": "黑十字帽",
+      "probability": "0.31%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1072177,
+      "itemName": "Green Enigma Shoes",
+      "chineseName": "綠密林之鞋",
+      "probability": "0.31%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072178,
+      "itemName": "Purple Enigma Shoes",
+      "chineseName": "紫密林之鞋",
+      "probability": "0.31%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072179,
+      "itemName": "Dark Enigma Shoes",
+      "chineseName": "黑密林之鞋",
+      "probability": "0.31%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082121,
+      "itemName": "Green Clarity",
+      "chineseName": "魔力綠手套",
+      "probability": "0.31%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082122,
+      "itemName": "Blue Clarity",
+      "chineseName": "魔力藍手套",
+      "probability": "0.31%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082123,
+      "itemName": "Dark Clarity",
+      "chineseName": "魔力青手套",
+      "probability": "0.31%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1050072,
+      "itemName": "Green Enigmatic",
+      "chineseName": "綠神仙之服",
+      "probability": "0.33%",
+      "chance": 78205,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050073,
+      "itemName": "Blue Enigmatic",
+      "chineseName": "藍神仙之服",
+      "probability": "0.33%",
+      "chance": 78205,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050074,
+      "itemName": "Dark Enigmatic",
+      "chineseName": "黑神仙之服",
+      "probability": "0.33%",
+      "chance": 78205,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051056,
+      "itemName": "Green Enigma",
+      "chineseName": "綠神仙之服",
+      "probability": "0.33%",
+      "chance": 78205,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051057,
+      "itemName": "Purple Enigma",
+      "chineseName": "紫神仙之服",
+      "probability": "0.33%",
+      "chance": 78205,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051058,
+      "itemName": "Dark Enigma",
+      "chineseName": "黑神仙之服",
+      "probability": "0.33%",
+      "chance": 78205,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1372016,
+      "itemName": "Phoenix Wand",
+      "chineseName": "鳳凰短杖",
+      "probability": "0.33%",
+      "chance": 78205,
+      "type": "Eqp",
+      "subType": "Wand"
+    },
+    {
+      "itemId": 1382010,
+      "itemName": "Dark Ritual",
+      "chineseName": "死靈法杖",
+      "probability": "0.35%",
+      "chance": 83333,
+      "type": "Eqp",
+      "subType": "Staff"
+    },
+    {
+      "itemId": 1002252,
+      "itemName": "Red Infinium Circlet",
+      "chineseName": "紅神聖之冠",
+      "probability": "0.39%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002253,
+      "itemName": "Blue Infinium Circlet",
+      "chineseName": "藍神聖之冠",
+      "probability": "0.39%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002254,
+      "itemName": "Dark Infinium Circlet",
+      "chineseName": "黑神聖之冠",
+      "probability": "0.39%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1072157,
+      "itemName": "Blue Lapiz Sandals",
+      "chineseName": "藍水晶涼鞋",
+      "probability": "0.39%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072158,
+      "itemName": "Red Lapiz Sandals",
+      "chineseName": "紅水晶涼鞋",
+      "probability": "0.39%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072159,
+      "itemName": "Brown Lapiz Sandals",
+      "chineseName": "褐水晶涼鞋",
+      "probability": "0.39%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072160,
+      "itemName": "Gold Lapiz Sandals",
+      "chineseName": "金水晶涼鞋",
+      "probability": "0.39%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082098,
+      "itemName": "Brown Lorin",
+      "chineseName": "褐戰魂手套",
+      "probability": "0.39%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082099,
+      "itemName": "Blue Lorin",
+      "chineseName": "藍戰魂手套",
+      "probability": "0.39%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082100,
+      "itemName": "Dark Lorin",
+      "chineseName": "黑戰魂手套",
+      "probability": "0.39%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1050067,
+      "itemName": "Blue Requiem",
+      "chineseName": "藍天上之衣",
+      "probability": "0.41%",
+      "chance": 97059,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050068,
+      "itemName": "Red Requiem",
+      "chineseName": "紅天上之衣",
+      "probability": "0.41%",
+      "chance": 97059,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050069,
+      "itemName": "Brown Requiem",
+      "chineseName": "褐天上之衣",
+      "probability": "0.41%",
+      "chance": 97059,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050070,
+      "itemName": "Dark Requiem",
+      "chineseName": "黑天上之衣",
+      "probability": "0.41%",
+      "chance": 97059,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051052,
+      "itemName": "Blue Requierre",
+      "chineseName": "藍天上之衣",
+      "probability": "0.41%",
+      "chance": 97059,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051053,
+      "itemName": "Red Requierre",
+      "chineseName": "紅天上之衣",
+      "probability": "0.41%",
+      "chance": 97059,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051054,
+      "itemName": "Brown Requierre",
+      "chineseName": "褐天上之衣",
+      "probability": "0.41%",
+      "chance": 97059,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051055,
+      "itemName": "Dark Requierre",
+      "chineseName": "黑天上之衣",
+      "probability": "0.41%",
+      "chance": 97059,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1372015,
+      "itemName": "Angel Wings",
+      "chineseName": "天使之翼",
+      "probability": "0.41%",
+      "chance": 97059,
+      "type": "Eqp",
+      "subType": "Wand"
+    },
+    {
+      "itemId": 1382007,
+      "itemName": "Evil Wings",
+      "chineseName": "魔靈之翼",
+      "probability": "0.44%",
+      "chance": 103846,
+      "type": "Eqp",
+      "subType": "Staff"
+    },
+    {
+      "itemId": 1002242,
+      "itemName": "Red Seraphis",
+      "chineseName": "紅和平之帽",
+      "probability": "0.49%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002243,
+      "itemName": "Blue Seraphis",
+      "chineseName": "藍和平之帽",
+      "probability": "0.49%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002244,
+      "itemName": "Green Seraphis",
+      "chineseName": "綠和平之帽",
+      "probability": "0.49%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002245,
+      "itemName": "White Seraphis",
+      "chineseName": "白和平之帽",
+      "probability": "0.49%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002246,
+      "itemName": "Dark Seraphis",
+      "chineseName": "黑和平之帽",
+      "probability": "0.49%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1072136,
+      "itemName": "Pink Goldrunners",
+      "chineseName": "粉紅天使鞋",
+      "probability": "0.49%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072137,
+      "itemName": "Green Goldrunners",
+      "chineseName": "綠天使鞋",
+      "probability": "0.49%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072138,
+      "itemName": "Orange Goldrunners",
+      "chineseName": "黃天使鞋",
+      "probability": "0.49%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072139,
+      "itemName": "Blue Goldrunners",
+      "chineseName": "藍天使鞋",
+      "probability": "0.49%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082086,
+      "itemName": "Steel Manute",
+      "chineseName": "鋼鐵封印手套",
+      "probability": "0.49%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082087,
+      "itemName": "Gold Manute",
+      "chineseName": "黃金封印手套",
+      "probability": "0.49%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082088,
+      "itemName": "Dark Manute",
+      "chineseName": "黑封印手套",
+      "probability": "0.49%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1372008,
+      "itemName": "Hinomaru Fan",
+      "chineseName": "日本扇",
+      "probability": "0.49%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Wand"
+    },
+    {
+      "itemId": 1050053,
+      "itemName": "Blue Anakamoon",
+      "chineseName": "藍神聖服",
+      "probability": "0.51%",
+      "chance": 122414,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050054,
+      "itemName": "Red Anakamoon",
+      "chineseName": "紅神聖服",
+      "probability": "0.51%",
+      "chance": 122414,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050055,
+      "itemName": "White Anakamoon",
+      "chineseName": "白神聖服",
+      "probability": "0.51%",
+      "chance": 122414,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050056,
+      "itemName": "Dark Anakamoon",
+      "chineseName": "黑神聖服",
+      "probability": "0.51%",
+      "chance": 122414,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051044,
+      "itemName": "Blue Anakarune",
+      "chineseName": "藍聖黨之服",
+      "probability": "0.51%",
+      "chance": 122414,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051045,
+      "itemName": "Red Anakarune",
+      "chineseName": "紅聖黨之服",
+      "probability": "0.51%",
+      "chance": 122414,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051046,
+      "itemName": "White Anakarune",
+      "chineseName": "白聖黨之服",
+      "probability": "0.51%",
+      "chance": 122414,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051047,
+      "itemName": "Dark Anakarune",
+      "chineseName": "黑聖黨之服",
+      "probability": "0.51%",
+      "chance": 122414,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1372014,
+      "itemName": "Evil Tale",
+      "chineseName": "火焰之杖",
+      "probability": "0.51%",
+      "chance": 122414,
+      "type": "Eqp",
+      "subType": "Wand"
+    },
+    {
+      "itemId": 1382006,
+      "itemName": "Thorns",
+      "chineseName": "白龍之杖",
+      "probability": "0.55%",
+      "chance": 131818,
+      "type": "Eqp",
+      "subType": "Staff"
+    },
+    {
+      "itemId": 1382011,
+      "itemName": "Mystic Cane",
+      "chineseName": null,
+      "probability": "0.61%",
+      "chance": 146078,
+      "type": "Eqp",
+      "subType": "Staff"
+    },
+    {
+      "itemId": 1002215,
+      "itemName": "Flame Golden Circlet",
+      "chineseName": "火黃金法冠",
+      "probability": "0.63%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002216,
+      "itemName": "Aqua Golden Circlet",
+      "chineseName": "水黃金法冠",
+      "probability": "0.63%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002217,
+      "itemName": "Orange Golden Circlet",
+      "chineseName": "土黃金法冠",
+      "probability": "0.63%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002218,
+      "itemName": "Dark Golden Circlet",
+      "chineseName": "黑黃金法冠",
+      "probability": "0.63%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1072140,
+      "itemName": "Pink Goldwind Shoes",
+      "chineseName": "粉紅黃金風",
+      "probability": "0.63%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072141,
+      "itemName": "Blue Goldwind Shoes",
+      "chineseName": "藍黃金風",
+      "probability": "0.63%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072142,
+      "itemName": "Purple Goldwind Shoes",
+      "chineseName": "紫黃金風",
+      "probability": "0.63%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072143,
+      "itemName": "Green Goldwind Shoes",
+      "chineseName": "綠黃金風",
+      "probability": "0.63%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082080,
+      "itemName": "Dark Penance",
+      "chineseName": null,
+      "probability": "0.63%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082081,
+      "itemName": "Red Pennance",
+      "chineseName": "紅元素手套",
+      "probability": "0.63%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082082,
+      "itemName": "Blue Pennance",
+      "chineseName": "藍元素手套",
+      "probability": "0.63%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1050045,
+      "itemName": "Blue Calas",
+      "chineseName": "藍魔法戰士衣",
+      "probability": "0.66%",
+      "chance": 158333,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050046,
+      "itemName": "Red Calas",
+      "chineseName": "紅魔法戰士衣",
+      "probability": "0.66%",
+      "chance": 158333,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050047,
+      "itemName": "Orange Calas",
+      "chineseName": "朱紅魔法戰士衣",
+      "probability": "0.66%",
+      "chance": 158333,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050048,
+      "itemName": "White Calas",
+      "chineseName": "白魔法戰士衣",
+      "probability": "0.66%",
+      "chance": 158333,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050049,
+      "itemName": "Dark Calas",
+      "chineseName": "黑魔法戰士衣",
+      "probability": "0.66%",
+      "chance": 158333,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051030,
+      "itemName": "Dark Calaf",
+      "chineseName": "黑妖精禮服",
+      "probability": "0.66%",
+      "chance": 158333,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051031,
+      "itemName": "White Calaf",
+      "chineseName": "白妖精禮服",
+      "probability": "0.66%",
+      "chance": 158333,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051032,
+      "itemName": "Blue Calaf",
+      "chineseName": "藍妖精禮服",
+      "probability": "0.66%",
+      "chance": 158333,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051033,
+      "itemName": "Red Calaf",
+      "chineseName": "紅妖精禮服",
+      "probability": "0.66%",
+      "chance": 158333,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051034,
+      "itemName": "Orange Calaf",
+      "chineseName": "朱紅妖精禮服",
+      "probability": "0.66%",
+      "chance": 158333,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1372007,
+      "itemName": "Cromi",
+      "chineseName": "大魔法師短杖",
+      "probability": "0.66%",
+      "chance": 158333,
+      "type": "Eqp",
+      "subType": "Wand"
+    },
+    {
+      "itemId": 1382001,
+      "itemName": "Arc Staff",
+      "chineseName": "精靈長杖",
+      "probability": "0.72%",
+      "chance": 172222,
+      "type": "Eqp",
+      "subType": "Staff"
+    },
+    {
+      "itemId": 1002151,
+      "itemName": "Brown Guiltian",
+      "chineseName": "褐魔道之帽",
+      "probability": "0.84%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002152,
+      "itemName": "Blue Guiltian",
+      "chineseName": "藍魔道之帽",
+      "probability": "0.84%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002153,
+      "itemName": "Red Guiltian",
+      "chineseName": "紅魔道之帽",
+      "probability": "0.84%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002154,
+      "itemName": "Dark Guiltian",
+      "chineseName": "黑魔道之帽",
+      "probability": "0.84%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002155,
+      "itemName": "White Guiltian",
+      "chineseName": "白魔道之帽",
+      "probability": "0.84%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1072114,
+      "itemName": "Red Moon Shoes",
+      "chineseName": "紅月鞋",
+      "probability": "0.84%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072115,
+      "itemName": "Blue Moon Shoes",
+      "chineseName": "藍月鞋",
+      "probability": "0.84%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072116,
+      "itemName": "Gold Moon Shoes",
+      "chineseName": "黃月鞋",
+      "probability": "0.84%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072117,
+      "itemName": "Dark Moon Shoes",
+      "chineseName": "黑月鞋",
+      "probability": "0.84%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082062,
+      "itemName": "Red Arten",
+      "chineseName": "紅精靈手套",
+      "probability": "0.84%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082063,
+      "itemName": "Blue Arten",
+      "chineseName": "藍精靈手套",
+      "probability": "0.84%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082064,
+      "itemName": "Dark Arten",
+      "chineseName": "黑精靈手套",
+      "probability": "0.84%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1382019,
+      "itemName": "Hall Staff",
+      "chineseName": "護法之杖",
+      "probability": "0.84%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Staff"
+    },
+    {
+      "itemId": 1050035,
+      "itemName": "Brown Starlight",
+      "chineseName": "褐星光長袍",
+      "probability": "0.89%",
+      "chance": 213158,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050036,
+      "itemName": "Red Starlight",
+      "chineseName": "紅星光長袍",
+      "probability": "0.89%",
+      "chance": 213158,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050037,
+      "itemName": "Green Starlight",
+      "chineseName": "綠星光長袍",
+      "probability": "0.89%",
+      "chance": 213158,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050038,
+      "itemName": "Blue Starlight",
+      "chineseName": "藍星光長袍",
+      "probability": "0.89%",
+      "chance": 213158,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050039,
+      "itemName": "Dark Starlight",
+      "chineseName": "黑星光長袍",
+      "probability": "0.89%",
+      "chance": 213158,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051023,
+      "itemName": "Purple Moonlight",
+      "chineseName": "紫色月光服",
+      "probability": "0.89%",
+      "chance": 213158,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051024,
+      "itemName": "Red Moonlight",
+      "chineseName": "紅色月光服",
+      "probability": "0.89%",
+      "chance": 213158,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051025,
+      "itemName": "Blue Moonlight",
+      "chineseName": "藍色月光服",
+      "probability": "0.89%",
+      "chance": 213158,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051026,
+      "itemName": "Dark Moonlight",
+      "chineseName": "黑色月光服",
+      "probability": "0.89%",
+      "chance": 213158,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1051027,
+      "itemName": "Brown Moonlight",
+      "chineseName": "褐色月光服",
+      "probability": "0.89%",
+      "chance": 213158,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1372000,
+      "itemName": "Fairy Wand",
+      "chineseName": "妖精短杖",
+      "probability": "0.89%",
+      "chance": 213158,
+      "type": "Eqp",
+      "subType": "Wand"
+    },
+    {
+      "itemId": 1372012,
+      "itemName": "Crystal Wand",
+      "chineseName": "水晶短杖",
+      "probability": "0.89%",
+      "chance": 213158,
+      "type": "Eqp",
+      "subType": "Wand"
+    },
+    {
+      "itemId": 1002141,
+      "itemName": "Red Matty",
+      "chineseName": "紅星魔法帽",
+      "probability": "0.99%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002142,
+      "itemName": "Blue Matty",
+      "chineseName": "藍星魔法帽",
+      "probability": "0.99%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002143,
+      "itemName": "Green Matty",
+      "chineseName": "綠星魔法帽",
+      "probability": "0.99%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002144,
+      "itemName": "Brown Matty",
+      "chineseName": "褐星魔法帽",
+      "probability": "0.99%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1002145,
+      "itemName": "Dark Matty",
+      "chineseName": "黑星魔法帽",
+      "probability": "0.99%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1072089,
+      "itemName": "Purple Salt Shoes",
+      "chineseName": "紫守護鞋",
+      "probability": "0.99%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072090,
+      "itemName": "Red Salt Shoes",
+      "chineseName": "紅守護鞋",
+      "probability": "0.99%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1072091,
+      "itemName": "Black Salt Shoes",
+      "chineseName": "黑守護鞋",
+      "probability": "0.99%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082054,
+      "itemName": "Red Noel",
+      "chineseName": "紅神聖手套",
+      "probability": "0.99%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082055,
+      "itemName": "Blue Noel",
+      "chineseName": "藍神聖手套",
+      "probability": "0.99%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1082056,
+      "itemName": "Dark Noel",
+      "chineseName": "黑神聖手套",
+      "probability": "0.99%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1382018,
+      "itemName": "Petal Staff",
+      "chineseName": "翡赤之杖",
+      "probability": "0.99%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Staff"
+    },
+    {
+      "itemId": 1041051,
+      "itemName": "Red Amoria Top",
+      "chineseName": "紅神聖法衣",
+      "probability": "1.06%",
+      "chance": 253030,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041052,
+      "itemName": "Blue Amoria Top",
+      "chineseName": null,
+      "probability": "1.06%",
+      "chance": 253030,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1041053,
+      "itemName": "Black Amoria Top",
+      "chineseName": "黑神聖法衣",
+      "probability": "1.06%",
+      "chance": 253030,
+      "type": "Eqp",
+      "subType": "Top"
+    },
+    {
+      "itemId": 1050002,
+      "itemName": "Blood Chaos Robe",
+      "chineseName": "紅魔力長袍",
+      "probability": "1.06%",
+      "chance": 253030,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050029,
+      "itemName": "Dark Chaos Robe",
+      "chineseName": "黑魔力長袍",
+      "probability": "1.06%",
+      "chance": 253030,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050030,
+      "itemName": "Blue Chaos Robe",
+      "chineseName": "藍魔力長袍",
+      "probability": "1.06%",
+      "chance": 253030,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1050031,
+      "itemName": "White Chaos Robe",
+      "chineseName": "白魔力長袍",
+      "probability": "1.06%",
+      "chance": 253030,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1061047,
+      "itemName": "Red Amoria Skirt",
+      "chineseName": "紅神聖裙",
+      "probability": "1.06%",
+      "chance": 253030,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061048,
+      "itemName": "Blue Amoria Skirt",
+      "chineseName": null,
+      "probability": "1.06%",
+      "chance": 253030,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1061049,
+      "itemName": "Black Amoria Skirt",
+      "chineseName": "黑神聖裙",
+      "probability": "1.06%",
+      "chance": 253030,
+      "type": "Eqp",
+      "subType": "Bottom"
+    },
+    {
+      "itemId": 1092029,
+      "itemName": "Esther Shield",
+      "chineseName": "鑽石護盾",
+      "probability": "1.06%",
+      "chance": 253030,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1372001,
+      "itemName": "Wizard Wand",
+      "chineseName": "法師短杖",
+      "probability": "1.06%",
+      "chance": 253030,
+      "type": "Eqp",
+      "subType": "Wand"
+    },
+    {
+      "itemId": 1072169,
+      "itemName": "Blue Snowshoes",
+      "chineseName": null,
+      "probability": "1.19%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1092021,
+      "itemName": "Mystic Shield",
+      "chineseName": "神祕護盾",
+      "probability": "1.19%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Shield"
+    }
+  ]
+}

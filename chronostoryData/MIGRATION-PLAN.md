@@ -8,11 +8,11 @@
 
 | data/ 檔案 | 狀態 | chronostoryData/ 對應 | 行動 |
 |------------|------|----------------------|------|
-| `drops-essential.json` | 需建立 | 從 `drops-by-monster/` 合併 | 建立腳本 |
-| `mob-info.json` | 需轉換 | `mob-info.json` (欄位不同) | 轉換欄位 |
-| `item-attributes-essential.json` | 需建立 | 從 `items-organized/` 提取 | 建立腳本 |
+| `drops-essential.json` | ✅ 完成 | 使用索引方案（不需合併） | 已移除 |
+| `mob-info.json` | ✅ 完成 | `mob-info.json` (使用 camelCase) | 已移除 |
+| `item-attributes-essential.json` | ✅ 完成 | 從 `items-organized/` 產生 | 已移除 |
 | `drops-100-percent.json` | 缺失 | ❌ 無對應 | 從 CSV 建立 |
-| `gacha/*.json` | 需補充 | `gachapon/*.json` (簡化格式) | 補充資料 |
+| `gacha/*.json` | ✅ 完成 | `gacha/machine-*-enhanced.json` (簡化格式) | 已移除 |
 | `available-images.json` | ✅ 相同 | `available-images.json` | 直接使用 |
 | `drops.json` | 可刪除 | `drops-by-monster/` | 不需要 |
 | `drops-detailed/` | 可刪除 | `drops-by-monster/` | 不需要 |
@@ -288,22 +288,22 @@ const level = info.mob.level
 
 ### 階段 1：建立相容檔案
 
-- [ ] 1.1 建立 `drops-essential.json`（從 drops-by-monster 合併）
-- [ ] 1.2 建立 `item-attributes-essential.json`（從 items-organized 提取）
+- [x] 1.1 ~~建立 `drops-essential.json`~~ 改用索引方案（monster-index + item-index + drop-relations）
+- [x] 1.2 建立 `item-attributes-essential.json`（從 items-organized 提取）
 - [ ] 1.3 建立 `drops-100-percent.json`（商人資料）
 
 ### 階段 2：補充轉蛋機資料
 
-- [ ] 2.1 補充 `gachapon/*.json` 的 machineId, machineName
-- [ ] 2.2 補充物品的 chineseName（從 items-organized）
-- [ ] 2.3 補充物品的 equipment, statVariation
+- [x] 2.1 ~~補充 `gachapon/*.json`~~ 改為從 gachapon 產生 enhanced 格式到 gacha/
+- [x] 2.2 補充物品的 chineseName（從 item-index.json）
+- [x] 2.3 ~~補充 equipment, statVariation~~ 簡化格式，移除 equipment 詳情
 
 ### 階段 3：修改程式碼
 
-- [ ] 3.1 修改 import 路徑
-- [ ] 3.2 修改 mob-info 欄位映射
-- [ ] 3.3 修改 item-attributes 欄位映射
-- [ ] 3.4 測試所有功能
+- [x] 3.1 修改 import 路徑（useDataManagement.ts, items-cache.ts, useGachaMachine.ts）
+- [x] 3.2 修改 mob-info 欄位映射（使用 camelCase）
+- [x] 3.3 修改 item-attributes 欄位映射
+- [x] 3.4 測試所有功能
 
 ### 階段 4：移除 data/
 

@@ -150,3 +150,4 @@ JSON_OPTIMIZATION_GUIDE.md
 # R2 同步快取和日誌
 .r2-sync-cache.txt
 .r2-usage.log
+_to-delete/

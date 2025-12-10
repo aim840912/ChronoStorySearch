@@ -36,7 +36,7 @@ export const MonsterSelector = memo(function MonsterSelector({
 
   // 選中的怪物資訊
   const selectedMonster = availableMonsters.find(
-    (info) => parseInt(info.mob.mob_id, 10) === selectedMobId
+    (info) => parseInt(info.mob.id, 10) === selectedMobId
   )
 
   // 點擊外部關閉下拉選單
@@ -112,13 +112,13 @@ export const MonsterSelector = memo(function MonsterSelector({
         {isDropdownOpen && availableMonsters.length > 0 && (
           <div className="absolute w-full mt-1 max-h-60 overflow-y-auto bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg shadow-lg z-20">
             {availableMonsters.map((info) => {
-              const mobId = parseInt(info.mob.mob_id, 10)
+              const mobId = parseInt(info.mob.id, 10)
               const displayName =
                 language === 'zh-TW'
-                  ? info.chineseMobName || info.mob.mob_name || `怪物 ${mobId}`
-                  : info.mob.mob_name || info.chineseMobName || `Monster ${mobId}`
+                  ? info.chineseMobName || info.mob.name || `怪物 ${mobId}`
+                  : info.mob.name || info.chineseMobName || `Monster ${mobId}`
               const level = info.mob.level
-              const avoid = info.mob.avoid
+              const avoid = info.mob.evasion
               const isSelected = selectedMobId === mobId
 
               return (

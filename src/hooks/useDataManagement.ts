@@ -20,8 +20,8 @@ import { clientLogger } from '@/lib/logger'
 import monsterIndexData from '@/../chronostoryData/monster-index.json'
 import itemIndexData from '@/../chronostoryData/item-index.json'
 import dropRelationsData from '@/../chronostoryData/drop-relations.json'
-import mobInfoData from '@/../data/mob-info.json'
-import itemAttributesEssentialData from '@/../data/item-attributes-essential.json'
+import mobInfoData from '@/../chronostoryData/mob-info.json'
+import itemAttributesEssentialData from '@/../chronostoryData/item-attributes-essential.json'
 import merchantDropsData from '@/../data/drops-100-percent.json'
 
 /**
@@ -159,13 +159,13 @@ export function useDataManagement() {
 
       // 使用動態 import 載入所有轉蛋機資料（Enhanced 版本，包含完整物品資料）
       const [m1, m2, m3, m4, m5, m6, m7] = await Promise.all([
-        import('@/../data/gacha/machine-1-enhanced.json'),
-        import('@/../data/gacha/machine-2-enhanced.json'),
-        import('@/../data/gacha/machine-3-enhanced.json'),
-        import('@/../data/gacha/machine-4-enhanced.json'),
-        import('@/../data/gacha/machine-5-enhanced.json'),
-        import('@/../data/gacha/machine-6-enhanced.json'),
-        import('@/../data/gacha/machine-7-enhanced.json'),
+        import('@/../chronostoryData/gacha/machine-1-enhanced.json'),
+        import('@/../chronostoryData/gacha/machine-2-enhanced.json'),
+        import('@/../chronostoryData/gacha/machine-3-enhanced.json'),
+        import('@/../chronostoryData/gacha/machine-4-enhanced.json'),
+        import('@/../chronostoryData/gacha/machine-5-enhanced.json'),
+        import('@/../chronostoryData/gacha/machine-6-enhanced.json'),
+        import('@/../chronostoryData/gacha/machine-7-enhanced.json'),
       ])
 
       // 正規化資料格式以符合 GachaMachine 型別
@@ -250,7 +250,7 @@ export function useDataManagement() {
     const mobInfoArray = mobInfoData as MobInfo[]
 
     mobInfoArray.forEach((info) => {
-      const mobId = parseInt(info.mob.mob_id, 10)
+      const mobId = parseInt(info.mob.id, 10)
       if (!isNaN(mobId)) {
         levelMap.set(mobId, info.mob.level)
       }
@@ -265,7 +265,7 @@ export function useDataManagement() {
     const mobInfoArray = mobInfoData as MobInfo[]
 
     mobInfoArray.forEach((info) => {
-      const mobId = parseInt(info.mob.mob_id, 10)
+      const mobId = parseInt(info.mob.id, 10)
       if (!isNaN(mobId)) {
         infoMap.set(mobId, info)
       }

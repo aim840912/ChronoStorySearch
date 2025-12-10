@@ -1,0 +1,513 @@
+{
+  "machineId": 6,
+  "machineName": "Nautilus",
+  "chineseMachineName": "鯨魚號",
+  "description": "鯨魚號轉蛋機",
+  "totalItems": 56,
+  "items": [
+    {
+      "itemId": 1002646,
+      "itemName": "Black Polax Hat",
+      "chineseName": null,
+      "probability": "0.70%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1052131,
+      "itemName": "Red Belly Duke",
+      "chineseName": "紅色公爵套裝",
+      "probability": "0.70%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1072318,
+      "itemName": "Black Duke Barkin Shoes",
+      "chineseName": null,
+      "probability": "0.70%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082213,
+      "itemName": "Black Skellduke",
+      "chineseName": null,
+      "probability": "0.70%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Glove"
+    },
+    {
+      "itemId": 1202007,
+      "itemName": "Eternal Bullet",
+      "chineseName": null,
+      "probability": "0.70%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1482012,
+      "itemName": "King Cent",
+      "chineseName": null,
+      "probability": "0.70%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Knuckle"
+    },
+    {
+      "itemId": 1492012,
+      "itemName": "Concerto",
+      "chineseName": null,
+      "probability": "0.70%",
+      "chance": 50000,
+      "type": "Eqp",
+      "subType": "Gun"
+    },
+    {
+      "itemId": 1002643,
+      "itemName": "Red Brave Hamal",
+      "chineseName": "紅色勇者頭巾",
+      "probability": "0.85%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1052128,
+      "itemName": "White Marquini",
+      "chineseName": "白色馬其尼套裝",
+      "probability": "0.85%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1072315,
+      "itemName": "Black Markintz",
+      "chineseName": "黑色馬金斯靴",
+      "probability": "0.85%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082210,
+      "itemName": "Red Martier",
+      "chineseName": "紅色馬蒂爾手套",
+      "probability": "0.85%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Gloves"
+    },
+    {
+      "itemId": 1482011,
+      "itemName": "White Fangz",
+      "chineseName": "吸血鬼之爪",
+      "probability": "0.85%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Knuckle"
+    },
+    {
+      "itemId": 1492011,
+      "itemName": "The Peacemaker",
+      "chineseName": "調停者",
+      "probability": "0.85%",
+      "chance": 61111,
+      "type": "Eqp",
+      "subType": "Gun"
+    },
+    {
+      "itemId": 1002640,
+      "itemName": "Blue Sun Boat Hat",
+      "chineseName": "藍色船型帽",
+      "probability": "1.04%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1052125,
+      "itemName": "White Pioneer",
+      "chineseName": "白色潘尼爾套裝",
+      "probability": "1.04%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1072312,
+      "itemName": "Blue Pageant",
+      "chineseName": "藍色伯爵靴",
+      "probability": "1.04%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082207,
+      "itemName": "Blue Halfglove",
+      "chineseName": "藍色伯爵手套",
+      "probability": "1.04%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Gloves"
+    },
+    {
+      "itemId": 1482010,
+      "itemName": "Steelno",
+      "chineseName": "紗羅毀滅拳套",
+      "probability": "1.04%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Knuckle"
+    },
+    {
+      "itemId": 1492010,
+      "itemName": "Infinity's Wrath",
+      "chineseName": "因弗蒂之槍",
+      "probability": "1.04%",
+      "chance": 75000,
+      "type": "Eqp",
+      "subType": "Gun"
+    },
+    {
+      "itemId": 1002637,
+      "itemName": "Black Pirate's Bandana",
+      "chineseName": "黑色海盜頭巾",
+      "probability": "1.29%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1052122,
+      "itemName": "Red Viska",
+      "chineseName": "紅色威斯克套裝",
+      "probability": "1.29%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1072309,
+      "itemName": "Black Voyson Shoes",
+      "chineseName": "黑色航海靴",
+      "probability": "1.29%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082204,
+      "itemName": "Black Bisk",
+      "chineseName": "黑色威斯克手套",
+      "probability": "1.29%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Gloves"
+    },
+    {
+      "itemId": 1202006,
+      "itemName": "Shiny Bullet",
+      "chineseName": null,
+      "probability": "1.29%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1482009,
+      "itemName": "Beia Crash",
+      "chineseName": "拜爾毀滅拳套",
+      "probability": "1.29%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Knuckle"
+    },
+    {
+      "itemId": 1492009,
+      "itemName": "Abyss Shooter",
+      "chineseName": "深淵射手",
+      "probability": "1.29%",
+      "chance": 92857,
+      "type": "Eqp",
+      "subType": "Gun"
+    },
+    {
+      "itemId": 1002634,
+      "itemName": "Purple Cast Linen",
+      "chineseName": "紫色亞麻水手頭巾",
+      "probability": "1.62%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1052119,
+      "itemName": "Black Royal Barone",
+      "chineseName": "紫色皇家套裝",
+      "probability": "1.62%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1072306,
+      "itemName": "Black Basile Boots",
+      "chineseName": "黑色巴西里靴",
+      "probability": "1.62%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082201,
+      "itemName": "Black Schult",
+      "chineseName": "黑色舒爾特手套",
+      "probability": "1.62%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Gloves"
+    },
+    {
+      "itemId": 1202004,
+      "itemName": "Blaze Capsule",
+      "chineseName": "火炎膠囊",
+      "probability": "1.62%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1202005,
+      "itemName": "Glaze Capsule",
+      "chineseName": "寒冰膠囊",
+      "probability": "1.62%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1482008,
+      "itemName": "Psycho Claw",
+      "chineseName": "塞爾拉利刃拳套",
+      "probability": "1.62%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Knuckle"
+    },
+    {
+      "itemId": 1492008,
+      "itemName": "Burning Hell",
+      "chineseName": "灼熱地獄",
+      "probability": "1.62%",
+      "chance": 116667,
+      "type": "Eqp",
+      "subType": "Gun"
+    },
+    {
+      "itemId": 1002631,
+      "itemName": "Brown Leather Ocean Hat",
+      "chineseName": "褐色皮製遠洋帽",
+      "probability": "2.09%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1052116,
+      "itemName": "Green Plasteer",
+      "chineseName": "綠色強化服",
+      "probability": "2.09%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1072303,
+      "itemName": "Brown Double Boots",
+      "chineseName": "褐色強化皮靴",
+      "probability": "2.09%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082198,
+      "itemName": "Brown Royce",
+      "chineseName": "褐色羅伊斯手套",
+      "probability": "2.09%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Gloves"
+    },
+    {
+      "itemId": 1202003,
+      "itemName": "Vital Bullet",
+      "chineseName": "高等子彈",
+      "probability": "2.09%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1482007,
+      "itemName": "Fury Claw",
+      "chineseName": "惡魔之爪",
+      "probability": "2.09%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Knuckle"
+    },
+    {
+      "itemId": 1492007,
+      "itemName": "Mr. Rasfelt",
+      "chineseName": "拉斯菲特之槍",
+      "probability": "2.09%",
+      "chance": 150000,
+      "type": "Eqp",
+      "subType": "Gun"
+    },
+    {
+      "itemId": 1002628,
+      "itemName": "Red Misty",
+      "chineseName": "紅色皇家頭巾",
+      "probability": "2.79%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1052113,
+      "itemName": "Red Barbay",
+      "chineseName": "紅色麻布衣",
+      "probability": "2.79%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1072300,
+      "itemName": "Brown Leather Krag",
+      "chineseName": "褐色尖頭皮鞋",
+      "probability": "2.79%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082195,
+      "itemName": "Brown Barbee",
+      "chineseName": "褐色瑞恩手腕",
+      "probability": "2.79%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Gloves"
+    },
+    {
+      "itemId": 1202002,
+      "itemName": "Mighty Bullet",
+      "chineseName": "強力子彈",
+      "probability": "2.79%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Projectile"
+    },
+    {
+      "itemId": 1482006,
+      "itemName": "Neozard",
+      "chineseName": "尼奧札德毀滅拳套",
+      "probability": "2.79%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Knuckle"
+    },
+    {
+      "itemId": 1492006,
+      "itemName": "Lunar Shooter",
+      "chineseName": "銀月神射",
+      "probability": "2.79%",
+      "chance": 200000,
+      "type": "Eqp",
+      "subType": "Gun"
+    },
+    {
+      "itemId": 1002625,
+      "itemName": "Blue Den Marine",
+      "chineseName": "海藍水手頭巾",
+      "probability": "3.28%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 1052110,
+      "itemName": "Blue Brace Look",
+      "chineseName": "藍色緊身服",
+      "probability": "3.28%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 1072297,
+      "itemName": "Brown Locote Shoes",
+      "chineseName": "褐色洛卡特鞋",
+      "probability": "3.28%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1082192,
+      "itemName": "Brown Jeweled",
+      "chineseName": "褐色寶石手套",
+      "probability": "3.28%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Gloves"
+    },
+    {
+      "itemId": 1482005,
+      "itemName": "Silver Maiden",
+      "chineseName": "利刃拳套",
+      "probability": "3.28%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Knuckle"
+    },
+    {
+      "itemId": 1492005,
+      "itemName": "Shooting Star",
+      "chineseName": "流星",
+      "probability": "3.28%",
+      "chance": 235714,
+      "type": "Eqp",
+      "subType": "Gun"
+    },
+    {
+      "itemId": 1072338,
+      "itemName": "Purple Snowshoes",
+      "chineseName": null,
+      "probability": "3.95%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 1202001,
+      "itemName": "Split Bullet",
+      "chineseName": "子彈",
+      "probability": "3.95%",
+      "chance": 283333,
+      "type": "Eqp",
+      "subType": "Projectile"
+    }
+  ]
+}

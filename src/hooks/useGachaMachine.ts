@@ -124,13 +124,13 @@ export function useGachaMachine({
         clientLogger.info('載入轉蛋機資料（Enhanced JSON）...')
 
         const [m1, m2, m3, m4, m5, m6, m7] = await Promise.all([
-          import('@/../data/gacha/machine-1-enhanced.json'),
-          import('@/../data/gacha/machine-2-enhanced.json'),
-          import('@/../data/gacha/machine-3-enhanced.json'),
-          import('@/../data/gacha/machine-4-enhanced.json'),
-          import('@/../data/gacha/machine-5-enhanced.json'),
-          import('@/../data/gacha/machine-6-enhanced.json'),
-          import('@/../data/gacha/machine-7-enhanced.json'),
+          import('@/../chronostoryData/gacha/machine-1-enhanced.json'),
+          import('@/../chronostoryData/gacha/machine-2-enhanced.json'),
+          import('@/../chronostoryData/gacha/machine-3-enhanced.json'),
+          import('@/../chronostoryData/gacha/machine-4-enhanced.json'),
+          import('@/../chronostoryData/gacha/machine-5-enhanced.json'),
+          import('@/../chronostoryData/gacha/machine-6-enhanced.json'),
+          import('@/../chronostoryData/gacha/machine-7-enhanced.json'),
         ])
 
         const loadedMachines: GachaMachine[] = [

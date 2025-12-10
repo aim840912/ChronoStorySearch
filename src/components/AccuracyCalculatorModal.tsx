@@ -76,13 +76,13 @@ export function AccuracyCalculatorModal({ isOpen, onClose, initialMonsterId }: A
     // 過濾掉沒有等級或迴避的怪物
     return mobInfoData
       .filter((info) => {
-        const hasValidData = info.mob.level !== null && info.mob.avoid !== null
+        const hasValidData = info.mob.level !== null && info.mob.evasion !== null
         if (!hasValidData) return false
 
         // 搜尋過濾
         if (monsterSearchTerm) {
           const searchLower = monsterSearchTerm.toLowerCase()
-          const mobName = info.mob.mob_name?.toLowerCase() || ''
+          const mobName = info.mob.name?.toLowerCase() || ''
           const chineseName = info.chineseMobName?.toLowerCase() || ''
           return mobName.includes(searchLower) || chineseName.includes(searchLower)
         }
@@ -94,7 +94,7 @@ export function AccuracyCalculatorModal({ isOpen, onClose, initialMonsterId }: A
   // 選中的怪物資訊
   const selectedMonster = useMemo(() => {
     if (!selectedMobId || !mobInfoData) return null
-    return mobInfoData.find((info) => parseInt(info.mob.mob_id, 10) === selectedMobId) || null
+    return mobInfoData.find((info) => parseInt(info.mob.id, 10) === selectedMobId) || null
   }, [selectedMobId, mobInfoData])
 
   // 當選擇怪物時，自動填入等級和迴避
@@ -103,8 +103,8 @@ export function AccuracyCalculatorModal({ isOpen, onClose, initialMonsterId }: A
       if (selectedMonster.mob.level !== null) {
         setMonsterLevel(selectedMonster.mob.level)
       }
-      if (selectedMonster.mob.avoid !== null) {
-        setMonsterAvoid(selectedMonster.mob.avoid)
+      if (selectedMonster.mob.evasion !== null) {
+        setMonsterAvoid(selectedMonster.mob.evasion)
       }
     }
   }, [selectedMonster])
@@ -112,11 +112,11 @@ export function AccuracyCalculatorModal({ isOpen, onClose, initialMonsterId }: A
   // 當語言切換時，如果有選中怪物，更新搜尋框顯示的名稱
   useEffect(() => {
     if (selectedMonster) {
-      const mobId = parseInt(selectedMonster.mob.mob_id, 10)
+      const mobId = parseInt(selectedMonster.mob.id, 10)
       const displayName =
         language === 'zh-TW'
-          ? selectedMonster.chineseMobName || selectedMonster.mob.mob_name || `怪物 ${mobId}`
-          : selectedMonster.mob.mob_name || selectedMonster.chineseMobName || `Monster ${mobId}`
+          ? selectedMonster.chineseMobName || selectedMonster.mob.name || `怪物 ${mobId}`
+          : selectedMonster.mob.name || selectedMonster.chineseMobName || `Monster ${mobId}`
       setMonsterSearchTerm(displayName)
     }
   }, [language, selectedMonster])

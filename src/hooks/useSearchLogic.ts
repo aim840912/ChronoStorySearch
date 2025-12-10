@@ -105,35 +105,37 @@ export function useSearchLogic({
     // 建立轉蛋機物品索引
     gachaMachines.forEach((machine) => {
       machine.items.forEach((item) => {
-        // 為中文名稱建立索引
-        const chineseNameLower = item.chineseName.toLowerCase()
-        const existingChinese = gachaMap.get(chineseNameLower)
-        if (existingChinese) {
-          // 如果已存在，增加計數（可能同一物品在多台轉蛋機出現）
-          existingChinese.count++
-        } else {
-          gachaMap.set(chineseNameLower, {
-            name: item.chineseName, // 保留原始大小寫
-            type: 'gacha',
-            count: 1,
-            id: item.itemId, // 物品 ID（用於打開 ItemModal）
-            machineId: machine.machineId,
-            machineName: machine.machineName,
-          })
+        // 使用英文名稱作為主要索引（確保每個物品都有索引）
+        const englishName = item.name || item.itemName || ''
+        const englishNameLower = englishName.toLowerCase()
+
+        // 為英文名稱建立索引（跳過空名稱）
+        if (englishNameLower) {
+          const existingEnglish = gachaMap.get(englishNameLower)
+          if (existingEnglish) {
+            existingEnglish.count++
+          } else {
+            gachaMap.set(englishNameLower, {
+              name: englishName,
+              type: 'gacha',
+              count: 1,
+              id: item.itemId, // 物品 ID（用於打開 ItemModal）
+              machineId: machine.machineId,
+              machineName: machine.machineName,
+            })
+          }
         }
 
-        // 為英文名稱建立索引（如果與中文名稱不同）
-        // 使用 name 或 itemName（備援機制，處理 API 整合失敗的物品）
-        const englishName = item.name || item.itemName
-        if (englishName && typeof englishName === 'string') {
-          const englishNameLower = englishName.toLowerCase()
-          if (englishNameLower !== chineseNameLower) {
-            const existingEnglish = gachaMap.get(englishNameLower)
-            if (existingEnglish) {
-              existingEnglish.count++
+        // 為中文名稱建立索引（如果存在且與英文名稱不同）
+        if (item.chineseName && typeof item.chineseName === 'string') {
+          const chineseNameLower = item.chineseName.toLowerCase()
+          if (chineseNameLower !== englishNameLower) {
+            const existingChinese = gachaMap.get(chineseNameLower)
+            if (existingChinese) {
+              existingChinese.count++
             } else {
-              gachaMap.set(englishNameLower, {
-                name: englishName, // 使用英文名稱
+              gachaMap.set(chineseNameLower, {
+                name: item.chineseName, // 保留原始大小寫
                 type: 'gacha',
                 count: 1,
                 id: item.itemId, // 物品 ID（用於打開 ItemModal）

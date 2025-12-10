@@ -11,18 +11,17 @@
  * - 查找效能 O(1)（使用 Map）
  */
 
-import itemsData from '@/../data/item-attributes-essential.json'
-import itemsDataDetailed from '@/../data/item-attributes.json'
+import itemsData from '@/../chronostoryData/item-attributes-essential.json'
 // 使用 chronostoryData 的 item-index.json 取代 drops-essential.json
 import itemIndexData from '@/../chronostoryData/item-index.json'
-import gachaMachine1 from '@/../data/gacha/machine-1-enhanced.json'
-import gachaMachine2 from '@/../data/gacha/machine-2-enhanced.json'
-import gachaMachine3 from '@/../data/gacha/machine-3-enhanced.json'
-import gachaMachine4 from '@/../data/gacha/machine-4-enhanced.json'
-import gachaMachine5 from '@/../data/gacha/machine-5-enhanced.json'
-import gachaMachine6 from '@/../data/gacha/machine-6-enhanced.json'
-import gachaMachine7 from '@/../data/gacha/machine-7-enhanced.json'
-import type { ItemAttributesEssential, ItemAttributes, GachaMachine, GachaItem, ItemIndex } from '@/types'
+import gachaMachine1 from '@/../chronostoryData/gacha/machine-1-enhanced.json'
+import gachaMachine2 from '@/../chronostoryData/gacha/machine-2-enhanced.json'
+import gachaMachine3 from '@/../chronostoryData/gacha/machine-3-enhanced.json'
+import gachaMachine4 from '@/../chronostoryData/gacha/machine-4-enhanced.json'
+import gachaMachine5 from '@/../chronostoryData/gacha/machine-5-enhanced.json'
+import gachaMachine6 from '@/../chronostoryData/gacha/machine-6-enhanced.json'
+import gachaMachine7 from '@/../chronostoryData/gacha/machine-7-enhanced.json'
+import type { ItemAttributesEssential, GachaMachine, GachaItem, ItemIndex } from '@/types'
 import { apiLogger } from '@/lib/logger'
 
 // ==================== 型別定義 ====================
@@ -43,11 +42,6 @@ export interface GachaItemData {
  * 物品屬性資料 Map（用於查找物品詳細屬性）
  */
 const itemsMap = new Map<number, ItemAttributesEssential>()
-
-/**
- * 物品完整屬性資料 Map（包含 equipment 物件，用於怪物掉落等需要完整資訊的場景）
- */
-const itemsDetailedMap = new Map<number, ItemAttributes>()
 
 /**
  * 掉落物品名稱 Map（最完整的中英文物品名稱來源）
@@ -74,19 +68,6 @@ function initializeItemsMap(): void {
     }
   })
   apiLogger.info('Items map initialized', { count: itemsMap.size })
-}
-
-/**
- * 初始化物品完整屬性 Map
- */
-function initializeItemsDetailedMap(): void {
-  ;(itemsDataDetailed as ItemAttributes[]).forEach((item) => {
-    const itemId = parseInt(item.item_id, 10)
-    if (!isNaN(itemId)) {
-      itemsDetailedMap.set(itemId, item)
-    }
-  })
-  apiLogger.info('Items detailed map initialized', { count: itemsDetailedMap.size })
 }
 
 /**
@@ -141,7 +122,6 @@ function initializeGachaItemsMap(): void {
 
 // 在模組載入時立即初始化所有 Maps
 initializeItemsMap()
-initializeItemsDetailedMap()
 initializeDropsItemsMap()
 initializeGachaItemsMap()
 
@@ -155,16 +135,6 @@ initializeGachaItemsMap()
  */
 export function getItemAttributes(itemId: number): ItemAttributesEssential | undefined {
   return itemsMap.get(itemId)
-}
-
-/**
- * 獲取物品完整屬性資料（包含 equipment 物件）
- *
- * @param itemId - 物品 ID
- * @returns 物品完整屬性資料或 undefined
- */
-export function getItemAttributesDetailed(itemId: number): ItemAttributes | undefined {
-  return itemsDetailedMap.get(itemId)
 }
 
 /**
@@ -198,20 +168,18 @@ export function getItemNames(itemId: number): {
 export function getItemsCacheStats() {
   return {
     itemsCount: itemsMap.size,
-    itemsDetailedCount: itemsDetailedMap.size,
     dropsItemsCount: dropsItemsMap.size,
     gachaItemsCount: gachaItemsMap.size,
-    totalCount: itemsMap.size + itemsDetailedMap.size + dropsItemsMap.size + gachaItemsMap.size
+    totalCount: itemsMap.size + dropsItemsMap.size + gachaItemsMap.size
   }
 }
 
 /**
  * 直接存取 Maps（向後相容，供需要直接操作 Map 的程式碼使用）
- * @deprecated 建議使用 getItemAttributes(), getItemAttributesDetailed() 和 getItemNames() 函數
+ * @deprecated 建議使用 getItemAttributes() 和 getItemNames() 函數
  */
 export const itemsCacheMaps = {
   itemsMap,
-  itemsDetailedMap,
   dropsItemsMap,
   gachaItemsMap
 }

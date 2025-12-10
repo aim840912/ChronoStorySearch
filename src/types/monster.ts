@@ -13,18 +13,18 @@ export interface AccuracyCalculatorState {
   selectedMobId: number | null
 }
 
-// 怪物屬性資料類型（來自 mob-info.json）
+// 怪物屬性資料類型（來自 chronostoryData/mob-info.json）
 export interface MonsterStats {
-  mob_id: string
-  mob_name: string | null
-  released: number | null
-  max_hp: number | null
-  acc: number | null
-  avoid: number | null
+  id: string                      // was mob_id
+  name: string | null             // was mob_name
+  InGame: boolean                 // was released (number → boolean)
+  maxHP: number | null            // was max_hp
+  accuracy: number | null         // was acc
+  evasion: number | null          // was avoid
   level: number | null
   exp: number | null
-  phys_def: number | null
-  mag_def: number | null
+  physicalDefense: number | null  // was phys_def
+  magicDefense: number | null     // was mag_def
   fire_weakness: number | null
   ice_weakness: number | null
   lightning_weakness: number | null
