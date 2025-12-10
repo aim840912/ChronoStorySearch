@@ -1097,49 +1097,49 @@
     {
       "mobId": 8645263,
       "mobName": "Turbo Robo",
-      "chineseMobName": null,
+      "chineseMobName": "守護者機器人",
       "isBoss": false,
       "dropCount": 30
     },
     {
       "mobId": 9001000,
       "mobName": "Dances with Balrog's Clone",
-      "chineseMobName": null,
+      "chineseMobName": "酋長的分身",
       "isBoss": true,
       "dropCount": 1
     },
     {
       "mobId": 9001001,
       "mobName": "Grendel the Really Old's Clone",
-      "chineseMobName": null,
+      "chineseMobName": "漢斯的分身",
       "isBoss": true,
       "dropCount": 1
     },
     {
       "mobId": 9001002,
       "mobName": "Athena Pierce's Clone",
-      "chineseMobName": null,
+      "chineseMobName": "赫麗娜的分身",
       "isBoss": true,
       "dropCount": 1
     },
     {
       "mobId": 9001003,
       "mobName": "Dark Lord's Clone",
-      "chineseMobName": null,
+      "chineseMobName": "達克魯的分身",
       "isBoss": true,
       "dropCount": 1
     },
     {
       "mobId": 9001004,
       "mobName": "Shadow Kyrin",
-      "chineseMobName": null,
+      "chineseMobName": "卡伊琳的分身",
       "isBoss": true,
       "dropCount": 1
     },
     {
       "mobId": 9300018,
       "mobName": "Tutorial Jr. Sentinel",
-      "chineseMobName": null,
+      "chineseMobName": "小石球",
       "isBoss": false,
       "dropCount": 1
     },
