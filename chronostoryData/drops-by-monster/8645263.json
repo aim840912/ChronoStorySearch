@@ -272,8 +272,8 @@
     },
     {
       "itemId": 4000995,
-      "itemName": "#N/A",
-      "chineseItemName": "小妖精的書籤",
+      "itemName": "Supercharged Battery",
+      "chineseItemName": null,
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,

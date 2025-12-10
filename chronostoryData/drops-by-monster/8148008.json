@@ -8,8 +8,8 @@
   "drops": [
     {
       "itemId": 4000999,
-      "itemName": "#N/A",
-      "chineseItemName": "咒文的痕跡",
+      "itemName": "Crimson Stirge Wing",
+      "chineseItemName": null,
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -96,8 +96,8 @@
     },
     {
       "itemId": 1004765,
-      "itemName": "#N/A",
-      "chineseItemName": "迅速的闇黑幸運草",
+      "itemName": "Purple Bamboo Hat",
+      "chineseItemName": "紫色斗笠",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
