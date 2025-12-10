@@ -10,8 +10,6 @@
     "only": false,
     "cash": false,
     "mob": 0,
-    "iconRaw": null,
-    "icon": null,
     "slotMax": 200,
     "price": 0,
     "setCompleteCount": 0

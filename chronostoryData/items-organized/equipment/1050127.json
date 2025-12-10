@@ -14,7 +14,7 @@
     "reqDEX": 0,
     "reqINT": 0,
     "reqLUK": 0,
-    "reqJob": -1,
+    "reqJob": 0,
     "price": 500,
     "tuc": 10,
     "incDEX": 3,
