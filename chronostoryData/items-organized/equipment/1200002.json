@@ -4,7 +4,7 @@
     "id": 1200002,
     "name": "Steel Arrow for Bow",
     "description": "",
-    "chineseName": "鋼鐵弓箭"
+    "chineseItemName": "鋼鐵弓箭"
   },
   "metaInfo": {
     "reqLevel": 10,

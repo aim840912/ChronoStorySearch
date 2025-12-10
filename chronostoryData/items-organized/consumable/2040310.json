@@ -4,7 +4,7 @@
     "id": 2040310,
     "name": "Scroll for Earring for Defense 10%",
     "description": "Improves DEF on earrings.\\nSuccess Rate 10%, weapon defense+3, magic defense+3, Accuracy+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "耳環防禦卷軸10%",
+    "chineseItemName": "耳環防禦卷軸10%",
     "chineseNameSource": "gacha"
   },
   "metaInfo": {

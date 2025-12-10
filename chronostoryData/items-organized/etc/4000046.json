@@ -4,7 +4,7 @@
     "id": 4000046,
     "name": "Taurospear Horn",
     "description": "A very tough and heavy piece of horn from Taurospear.",
-    "chineseName": "長槍牛魔王之角"
+    "chineseItemName": "長槍牛魔王之角"
   },
   "metaInfo": {
     "only": false,

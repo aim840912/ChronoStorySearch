@@ -4,7 +4,7 @@
     "id": 2040416,
     "name": "Scroll for Topwear for Defense 15%",
     "description": "Improves Weapon Def. on Topwear.\\nSuccess rate: 15%, Weapon Def. +5, Magic Def. +3, MaxHP +10",
-    "chineseName": "上衣防禦卷軸15%"
+    "chineseItemName": "上衣防禦卷軸15%"
   },
   "metaInfo": {
     "only": false,

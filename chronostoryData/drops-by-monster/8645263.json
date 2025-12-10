@@ -4,12 +4,12 @@
   "chineseMobName": null,
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 30,
+  "totalDrops": 28,
   "drops": [
     {
       "itemId": 1202001,
       "itemName": "Split Bullet",
-      "chineseItemName": null,
+      "chineseItemName": "子彈",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -20,7 +20,7 @@
     {
       "itemId": 4010001,
       "itemName": "Steel Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鋼鐵母礦",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 4020002,
       "itemName": "AquaMarine Ore",
-      "chineseItemName": null,
+      "chineseItemName": "海藍石母礦",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -53,7 +53,7 @@
     {
       "itemId": 1002024,
       "itemName": "Emerald Dome",
-      "chineseItemName": null,
+      "chineseItemName": "祖母綠武士頭盔",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -64,7 +64,7 @@
     {
       "itemId": 1002628,
       "itemName": "Red Misty",
-      "chineseItemName": null,
+      "chineseItemName": "紅色皇家頭巾",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -75,7 +75,7 @@
     {
       "itemId": 1032018,
       "itemName": "Pansy Earrings",
-      "chineseItemName": null,
+      "chineseItemName": "紫荊花耳環",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 800,
@@ -86,7 +86,7 @@
     {
       "itemId": 1052113,
       "itemName": "Red Barbay",
-      "chineseItemName": null,
+      "chineseItemName": "紅色麻布衣",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 800,
@@ -97,7 +97,7 @@
     {
       "itemId": 1060078,
       "itemName": "Umber Shouldermail Pants",
-      "chineseItemName": null,
+      "chineseItemName": "黑板金褲",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -108,7 +108,7 @@
     {
       "itemId": 1072134,
       "itemName": "Orihalcon Hildon Boots",
-      "chineseItemName": null,
+      "chineseItemName": "紫礦將軍靴",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -119,7 +119,7 @@
     {
       "itemId": 1072285,
       "itemName": "Brown Lagger Slipper",
-      "chineseItemName": null,
+      "chineseItemName": "褐色拖鞋",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -130,7 +130,7 @@
     {
       "itemId": 1072300,
       "itemName": "Brown Leather Krag",
-      "chineseItemName": null,
+      "chineseItemName": "褐色尖頭皮鞋",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -141,7 +141,7 @@
     {
       "itemId": 1082050,
       "itemName": "Black Marker",
-      "chineseItemName": null,
+      "chineseItemName": "黑擊中手套",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -152,7 +152,7 @@
     {
       "itemId": 1082195,
       "itemName": "Brown Barbee",
-      "chineseItemName": null,
+      "chineseItemName": "褐色瑞恩手腕",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -163,7 +163,7 @@
     {
       "itemId": 1102003,
       "itemName": "White Napoleon",
-      "chineseItemName": null,
+      "chineseItemName": "白色冒險披風",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -174,7 +174,7 @@
     {
       "itemId": 1302016,
       "itemName": "Yellow Umbrella",
-      "chineseItemName": null,
+      "chineseItemName": "黃色雨傘",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 800,
@@ -185,7 +185,7 @@
     {
       "itemId": 1322017,
       "itemName": "Knuckle Mace",
-      "chineseItemName": null,
+      "chineseItemName": "旋風錘",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 800,
@@ -196,7 +196,7 @@
     {
       "itemId": 1332016,
       "itemName": "Sai",
-      "chineseItemName": null,
+      "chineseItemName": "華氏短劍",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 287,
@@ -207,7 +207,7 @@
     {
       "itemId": 1372012,
       "itemName": "Crystal Wand",
-      "chineseItemName": null,
+      "chineseItemName": "水晶短杖",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 800,
@@ -218,7 +218,7 @@
     {
       "itemId": 2000010,
       "itemName": "Blue Pill",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥丸",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -229,7 +229,7 @@
     {
       "itemId": 2040516,
       "itemName": "Scroll for Overall Armor for LUK 60%",
-      "chineseItemName": null,
+      "chineseItemName": "套服幸運卷軸60%",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -240,7 +240,7 @@
     {
       "itemId": 2040704,
       "itemName": "Scroll for Shoes for Jump 60%",
-      "chineseItemName": null,
+      "chineseItemName": "鞋子跳躍卷軸60%",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -251,7 +251,7 @@
     {
       "itemId": 2044501,
       "itemName": "Scroll for Bow for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "弓攻擊卷軸60%",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -262,7 +262,7 @@
     {
       "itemId": 2050004,
       "itemName": "All Cure Potion",
-      "chineseItemName": null,
+      "chineseItemName": "萬能療傷藥",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -273,7 +273,7 @@
     {
       "itemId": 4000995,
       "itemName": "#N/A",
-      "chineseItemName": null,
+      "chineseItemName": "小妖精的書籤",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -284,7 +284,7 @@
     {
       "itemId": 4004001,
       "itemName": "Wisdom Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "智慧母礦",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -295,7 +295,7 @@
     {
       "itemId": 4006000,
       "itemName": "The Magic Rock",
-      "chineseItemName": null,
+      "chineseItemName": "魔法石",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
@@ -306,35 +306,13 @@
     {
       "itemId": 4010000,
       "itemName": "Bronze Ore",
-      "chineseItemName": null,
+      "chineseItemName": "青銅母礦",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 4130000,
-      "itemName": "Gloves Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0,
-      "displayChance": "0.000%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4131008,
-      "itemName": "Wand Production Manual",
-      "chineseItemName": null,
-      "chance": 0,
-      "displayChance": "0.000%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     }
   ]
 }

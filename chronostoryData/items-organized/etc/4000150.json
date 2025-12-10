@@ -4,7 +4,7 @@
     "id": 4000150,
     "name": "Ice Piece",
     "description": "An ice piece formed after the death of Grim Phantom Watch.",
-    "chineseName": "寒冰碎塊"
+    "chineseItemName": "寒冰碎塊"
   },
   "metaInfo": {
     "only": false,

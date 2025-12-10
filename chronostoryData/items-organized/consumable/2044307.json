@@ -4,7 +4,7 @@
     "id": 2044307,
     "name": "Scroll for Spear for ATT 15%",
     "description": "Improves attack on the Spear. nSuccess rate:15%, weapon attack+5, STR+3, weapon def.+1",
-    "chineseName": "槍攻擊卷軸15%"
+    "chineseItemName": "槍攻擊卷軸15%"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 4010004,
     "name": "Silver Ore",
     "description": "The ore of a shiny silver",
-    "chineseName": "銀的母礦"
+    "chineseItemName": "銀的母礦"
   },
   "metaInfo": {
     "only": false,

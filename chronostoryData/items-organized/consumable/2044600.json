@@ -4,7 +4,7 @@
     "id": 2044600,
     "name": "Scroll for Crossbow for ATT 100%",
     "description": "Improves attack on crossbow.\\nSuccess rate:100%, weapon attack+1",
-    "chineseName": "弩攻擊卷軸100%"
+    "chineseItemName": "弩攻擊卷軸100%"
   },
   "metaInfo": {
     "only": false,

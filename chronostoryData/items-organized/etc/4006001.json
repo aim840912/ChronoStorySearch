@@ -4,7 +4,7 @@
     "id": 4006001,
     "name": "The Summoning Rock",
     "description": "A mythical rock with the power of summoning in it. Used with high-leveled skills.",
-    "chineseName": "召喚石"
+    "chineseItemName": "召喚石"
   },
   "metaInfo": {
     "only": false,

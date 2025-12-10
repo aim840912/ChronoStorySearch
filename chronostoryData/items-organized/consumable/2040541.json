@@ -4,7 +4,7 @@
     "id": 2040541,
     "name": "Scroll for Overall Armor for STR 15%",
     "description": "Improves STR on Overall Armor.\\nSuccess Rate: 15%, STR+5, Weapon Attack+3, MaxHP+5",
-    "chineseName": "套服力量卷軸15%",
+    "chineseItemName": "套服力量卷軸15%",
     "chineseNameSource": "gacha"
   },
   "metaInfo": {

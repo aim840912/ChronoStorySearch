@@ -4,12 +4,12 @@
   "chineseMobName": "木乃伊犬",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 35,
+  "totalDrops": 28,
   "drops": [
     {
       "itemId": 4000205,
       "itemName": "Dirty Bandage",
-      "chineseItemName": null,
+      "chineseItemName": "繃帶",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -29,31 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000002,
       "itemName": "White Potion",
-      "chineseItemName": null,
+      "chineseItemName": "白色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -64,7 +42,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -75,7 +53,7 @@
     {
       "itemId": 2000004,
       "itemName": "Elixir",
-      "chineseItemName": null,
+      "chineseItemName": "特殊藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -86,7 +64,7 @@
     {
       "itemId": 4006001,
       "itemName": "The Summoning Rock",
-      "chineseItemName": null,
+      "chineseItemName": "召喚石",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -97,7 +75,7 @@
     {
       "itemId": 4010003,
       "itemName": "Adamantium Ore",
-      "chineseItemName": null,
+      "chineseItemName": "朱礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -108,7 +86,7 @@
     {
       "itemId": 4020003,
       "itemName": "Emerald Ore",
-      "chineseItemName": null,
+      "chineseItemName": "祖母綠母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -119,7 +97,7 @@
     {
       "itemId": 4020006,
       "itemName": "Topaz Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黃晶母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -128,20 +106,9 @@
       "enabled": true
     },
     {
-      "itemId": 2383005,
-      "itemName": "Mummy Dog Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4006000,
       "itemName": "The Magic Rock",
-      "chineseItemName": null,
+      "chineseItemName": "魔法石",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -150,42 +117,9 @@
       "enabled": true
     },
     {
-      "itemId": 4130004,
-      "itemName": "One-Handed Blunt Weapon Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130008,
-      "itemName": "Spear Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130012,
-      "itemName": "Bow Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002631,
       "itemName": "Brown Leather Ocean Hat",
-      "chineseItemName": null,
+      "chineseItemName": "褐色皮製遠洋帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -196,7 +130,7 @@
     {
       "itemId": 1082010,
       "itemName": "Mithril Brist",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦合金手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -207,7 +141,7 @@
     {
       "itemId": 1082059,
       "itemName": "Bronze Clench",
-      "chineseItemName": null,
+      "chineseItemName": "青銅戰鬥手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -218,7 +152,7 @@
     {
       "itemId": 1082066,
       "itemName": "Brown Moon Gloves",
-      "chineseItemName": null,
+      "chineseItemName": "黃月手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -229,7 +163,7 @@
     {
       "itemId": 1082089,
       "itemName": "Oaker Garner",
-      "chineseItemName": null,
+      "chineseItemName": "黃神功手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -240,7 +174,7 @@
     {
       "itemId": 1082092,
       "itemName": "Bronze Pow",
-      "chineseItemName": null,
+      "chineseItemName": "青銅柔絲手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -251,7 +185,7 @@
     {
       "itemId": 1041082,
       "itemName": "Brown Piettra",
-      "chineseItemName": null,
+      "chineseItemName": "褐女貴族服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -262,7 +196,7 @@
     {
       "itemId": 1041084,
       "itemName": "Red Jangoon Armor",
-      "chineseItemName": null,
+      "chineseItemName": "紅鎮月鎧甲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -273,7 +207,7 @@
     {
       "itemId": 1060069,
       "itemName": "Brown Piette Pants",
-      "chineseItemName": null,
+      "chineseItemName": "褐貴族褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -284,7 +218,7 @@
     {
       "itemId": 1060075,
       "itemName": "Brown Jangoon Pants",
-      "chineseItemName": null,
+      "chineseItemName": "黃金褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -295,7 +229,7 @@
     {
       "itemId": 2040705,
       "itemName": "Scroll for Shoes for Jump 10%",
-      "chineseItemName": null,
+      "chineseItemName": "鞋子跳躍卷軸10%",
       "chance": 0.075,
       "displayChance": "0.075%",
       "minQty": 1,
@@ -306,7 +240,7 @@
     {
       "itemId": 1041079,
       "itemName": "Brown Moon",
-      "chineseItemName": null,
+      "chineseItemName": "黃月",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -317,7 +251,7 @@
     {
       "itemId": 1050048,
       "itemName": "White Calas",
-      "chineseItemName": null,
+      "chineseItemName": "白魔法戰士衣",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -328,7 +262,7 @@
     {
       "itemId": 1051032,
       "itemName": "Blue Calaf",
-      "chineseItemName": null,
+      "chineseItemName": "藍妖精禮服",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -339,7 +273,7 @@
     {
       "itemId": 2040413,
       "itemName": "Scroll for Topwear for LUK 60%",
-      "chineseItemName": null,
+      "chineseItemName": "上衣幸運卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -350,7 +284,7 @@
     {
       "itemId": 2040419,
       "itemName": "Scroll for Topwear for STR 10%",
-      "chineseItemName": null,
+      "chineseItemName": "上衣力量卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -361,7 +295,7 @@
     {
       "itemId": 2041014,
       "itemName": "Scroll for Cape for STR 10%",
-      "chineseItemName": null,
+      "chineseItemName": "披風力量卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -372,24 +306,13 @@
     {
       "itemId": 2044201,
       "itemName": "Scroll for Two-Handed BW for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "雙手棍攻擊卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2049000,
-      "itemName": "Clean Slate Scroll 1%",
-      "chineseItemName": null,
-      "chance": 0.015,
-      "displayChance": "0.015%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     }
   ]
 }

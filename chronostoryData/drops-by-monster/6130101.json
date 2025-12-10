@@ -4,12 +4,12 @@
   "chineseMobName": "蘑菇王",
   "isBoss": true,
   "inGame": true,
-  "totalDrops": 33,
+  "totalDrops": 31,
   "drops": [
     {
       "itemId": 4000040,
       "itemName": "Mushmom Spore",
-      "chineseItemName": null,
+      "chineseItemName": "蘑菇王芽孢",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 1032013,
       "itemName": "Red-Hearted Earrings",
-      "chineseItemName": null,
+      "chineseItemName": "愛心耳環",
       "chance": 4,
       "displayChance": "4.0%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 1372000,
       "itemName": "Fairy Wand",
-      "chineseItemName": null,
+      "chineseItemName": "妖精短杖",
       "chance": 4,
       "displayChance": "4.0%",
       "minQty": 1,
@@ -51,20 +51,9 @@
       "enabled": true
     },
     {
-      "itemId": 2388006,
-      "itemName": "Mushmom Card",
-      "chineseItemName": null,
-      "chance": 2.4,
-      "displayChance": "2.4%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2041045,
       "itemName": "Scroll for Cape for Defense 15%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸15%",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -73,20 +62,9 @@
       "enabled": false
     },
     {
-      "itemId": 4030001,
-      "itemName": "Omok Piece : Mushroom",
-      "chineseItemName": null,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1032019,
       "itemName": "Crystal Flower Earrings",
-      "chineseItemName": null,
+      "chineseItemName": "水仙耳環",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -97,7 +75,7 @@
     {
       "itemId": 2041045,
       "itemName": "Scroll for Cape for Defense 15%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸15%",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -108,7 +86,7 @@
     {
       "itemId": 1092012,
       "itemName": "Steel Tower Shield",
-      "chineseItemName": null,
+      "chineseItemName": "鋼鐵方盾",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -119,7 +97,7 @@
     {
       "itemId": 1382006,
       "itemName": "Thorns",
-      "chineseItemName": null,
+      "chineseItemName": "白龍之杖",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -130,7 +108,7 @@
     {
       "itemId": 1202004,
       "itemName": "Blaze Capsule",
-      "chineseItemName": null,
+      "chineseItemName": "火炎膠囊",
       "chance": 0.5,
       "displayChance": "0.50%",
       "minQty": 1,
@@ -141,7 +119,7 @@
     {
       "itemId": 2040001,
       "itemName": "Scroll for Helmet for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "頭盔防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -152,7 +130,7 @@
     {
       "itemId": 2041004,
       "itemName": "Scroll for Cape for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -163,7 +141,7 @@
     {
       "itemId": 2040001,
       "itemName": "Scroll for Helmet for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "頭盔防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -174,7 +152,7 @@
     {
       "itemId": 2040024,
       "itemName": "Scroll for Helmet for INT 100%",
-      "chineseItemName": null,
+      "chineseItemName": "頭盔智力卷軸100%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -185,7 +163,7 @@
     {
       "itemId": 2040301,
       "itemName": "Scroll for Earring for INT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "耳環智力卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -196,7 +174,7 @@
     {
       "itemId": 2040401,
       "itemName": "Scroll for Topwear for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "上衣防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -207,7 +185,7 @@
     {
       "itemId": 2040412,
       "itemName": "Scroll for Topwear for LUK 10%",
-      "chineseItemName": null,
+      "chineseItemName": "上衣幸運卷軸10%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -218,7 +196,7 @@
     {
       "itemId": 2040501,
       "itemName": "Scroll for Overall Armor for DEX 60%",
-      "chineseItemName": null,
+      "chineseItemName": "套服敏捷卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -229,7 +207,7 @@
     {
       "itemId": 2040504,
       "itemName": "Scroll for Overall Armor for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "套服防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -240,7 +218,7 @@
     {
       "itemId": 2040601,
       "itemName": "Scroll for Bottomwear for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "褲裙防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -251,7 +229,7 @@
     {
       "itemId": 2040618,
       "itemName": "Scroll for Bottomwear for Mobility 60%",
-      "chineseItemName": null,
+      "chineseItemName": "褲裙移動卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -262,7 +240,7 @@
     {
       "itemId": 2040619,
       "itemName": "Scroll for Bottomwear for Mobility 10%",
-      "chineseItemName": null,
+      "chineseItemName": "褲裙移動卷軸10%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -273,7 +251,7 @@
     {
       "itemId": 2040701,
       "itemName": "Scroll for Shoes for Avoidability 60%",
-      "chineseItemName": null,
+      "chineseItemName": "鞋子迴避卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -284,7 +262,7 @@
     {
       "itemId": 2040704,
       "itemName": "Scroll for Shoes for Jump 60%",
-      "chineseItemName": null,
+      "chineseItemName": "鞋子跳躍卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -295,7 +273,7 @@
     {
       "itemId": 2040707,
       "itemName": "Scroll for Shoes for Mobility 60%",
-      "chineseItemName": null,
+      "chineseItemName": "鞋子速度卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -306,7 +284,7 @@
     {
       "itemId": 2040801,
       "itemName": "Scroll for Gloves for Accuracy 60%",
-      "chineseItemName": null,
+      "chineseItemName": "手套命中卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -317,7 +295,7 @@
     {
       "itemId": 2040804,
       "itemName": "Scroll for Gloves for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "手套攻擊卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -328,7 +306,7 @@
     {
       "itemId": 2040901,
       "itemName": "Scroll for Shield for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "盾牌防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -339,7 +317,7 @@
     {
       "itemId": 2041004,
       "itemName": "Scroll for Cape for Defense 60%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -350,7 +328,7 @@
     {
       "itemId": 2043212,
       "itemName": "Scroll for One-Handed BW for Accuracy 60%",
-      "chineseItemName": null,
+      "chineseItemName": "單手棍命中卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -361,7 +339,7 @@
     {
       "itemId": 1203012,
       "itemName": "Ilbi Throwing-Stars",
-      "chineseItemName": null,
+      "chineseItemName": "日之鏢",
       "chance": 0.2,
       "displayChance": "0.20%",
       "minQty": 1,

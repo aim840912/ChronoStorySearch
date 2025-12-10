@@ -4,7 +4,7 @@
     "id": 2000010,
     "name": "Blue Pill",
     "description": "A pill of concentrated blue potion, which restores 100 MP. You can carry more pills than potions because they're smaller",
-    "chineseName": "藍色藥丸"
+    "chineseItemName": "藍色藥丸"
   },
   "metaInfo": {
     "only": false,

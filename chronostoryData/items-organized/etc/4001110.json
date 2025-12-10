@@ -4,7 +4,7 @@
     "id": 4001110,
     "name": "[Storybook] Unknown Letter",
     "description": "It's an anonymous letter.  It just said #c 'I have what you want.  Meet me at the Cloud Balcony'#.\\nOnly for : #cNight Lord#",
-    "chineseName": "來歷不明的信"
+    "chineseItemName": "來歷不明的信"
   },
   "metaInfo": {
     "only": true,

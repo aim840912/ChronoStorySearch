@@ -9,7 +9,7 @@
     {
       "itemId": 4000672,
       "itemName": "#N/A",
-      "chineseItemName": null,
+      "chineseItemName": "燃燒的石頭",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 1002252,
       "itemName": "Red Infinium Circlet",
-      "chineseItemName": null,
+      "chineseItemName": "紅神聖之冠",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 1002285,
       "itemName": "Blood Nightfox",
-      "chineseItemName": null,
+      "chineseItemName": "紅天空之帽",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -53,7 +53,7 @@
     {
       "itemId": 1040102,
       "itemName": "Bronze Platine",
-      "chineseItemName": null,
+      "chineseItemName": "青銅暴風甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -64,7 +64,7 @@
     {
       "itemId": 1051053,
       "itemName": "Red Requierre",
-      "chineseItemName": null,
+      "chineseItemName": "紅天上之衣",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -75,7 +75,7 @@
     {
       "itemId": 1052122,
       "itemName": "Red Viska",
-      "chineseItemName": null,
+      "chineseItemName": "紅色威斯克套裝",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -86,7 +86,7 @@
     {
       "itemId": 1060090,
       "itemName": "Bronze Platine Pants",
-      "chineseItemName": null,
+      "chineseItemName": "青銅暴風褲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -97,7 +97,7 @@
     {
       "itemId": 1072158,
       "itemName": "Red Lapiz Sandals",
-      "chineseItemName": null,
+      "chineseItemName": "紅水晶涼鞋",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -108,7 +108,7 @@
     {
       "itemId": 1072163,
       "itemName": "Red Mystique Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "紅龍皮鞋",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -119,7 +119,7 @@
     {
       "itemId": 1102022,
       "itemName": "Red Gaia Cape",
-      "chineseItemName": null,
+      "chineseItemName": "紅鬥士披風",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -130,7 +130,7 @@
     {
       "itemId": 1302012,
       "itemName": "Red Katana",
-      "chineseItemName": null,
+      "chineseItemName": "火焰刀",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -141,7 +141,7 @@
     {
       "itemId": 1312010,
       "itemName": "Mikhail",
-      "chineseItemName": null,
+      "chineseItemName": "黃金斧",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -152,7 +152,7 @@
     {
       "itemId": 1322019,
       "itemName": "The Judgement",
-      "chineseItemName": null,
+      "chineseItemName": "暴風錘",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -163,7 +163,7 @@
     {
       "itemId": 1332018,
       "itemName": "Kandine",
-      "chineseItemName": null,
+      "chineseItemName": "鳳凰刃",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -174,7 +174,7 @@
     {
       "itemId": 1382007,
       "itemName": "Evil Wings",
-      "chineseItemName": null,
+      "chineseItemName": "魔靈之翼",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -185,7 +185,7 @@
     {
       "itemId": 1442008,
       "itemName": "The Gold Dragon",
-      "chineseItemName": null,
+      "chineseItemName": "黃龍刀",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -196,7 +196,7 @@
     {
       "itemId": 1452009,
       "itemName": "Red Hinkel",
-      "chineseItemName": null,
+      "chineseItemName": "赤神弓",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -207,7 +207,7 @@
     {
       "itemId": 1482009,
       "itemName": "Beia Crash",
-      "chineseItemName": null,
+      "chineseItemName": "拜爾毀滅拳套",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -218,7 +218,7 @@
     {
       "itemId": 1200003,
       "itemName": "Red Arrow for Bow",
-      "chineseItemName": null,
+      "chineseItemName": "炎晶弓箭",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -229,7 +229,7 @@
     {
       "itemId": 1202004,
       "itemName": "Blaze Capsule",
-      "chineseItemName": null,
+      "chineseItemName": "火炎膠囊",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -240,7 +240,7 @@
     {
       "itemId": 2040817,
       "itemName": "Scroll for Gloves for Magic ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "手套魔力卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

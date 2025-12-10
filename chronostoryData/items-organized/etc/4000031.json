@@ -4,7 +4,7 @@
     "id": 4000031,
     "name": "Cursed Doll",
     "description": "A cursed doll possessed by the Zombie Lupin's.",
-    "chineseName": "詛咒娃娃"
+    "chineseItemName": "詛咒娃娃"
   },
   "metaInfo": {
     "only": false,

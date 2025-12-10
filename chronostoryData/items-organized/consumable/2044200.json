@@ -4,7 +4,7 @@
     "id": 2044200,
     "name": "Scroll for Two-Handed BW for ATT 100%",
     "description": "Improves attack on two-handed blunt weapon.\\nSuccess rate:100%, weapon attack+1",
-    "chineseName": "雙手棍攻擊卷軸100%"
+    "chineseItemName": "雙手棍攻擊卷軸100%"
   },
   "metaInfo": {
     "only": false,

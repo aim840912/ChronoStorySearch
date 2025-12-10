@@ -4,7 +4,7 @@
     "id": 2050003,
     "name": "Holy Water",
     "description": "Allows you to recover from the state of curse or being sealed up.",
-    "chineseName": "聖水"
+    "chineseItemName": "聖水"
   },
   "metaInfo": {
     "only": false,

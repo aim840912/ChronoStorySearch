@@ -4,7 +4,7 @@
     "id": 2010000,
     "name": "Apple",
     "description": "A red, ripe, and tasty apple.\\nRecovers around 30 HP",
-    "chineseName": "蘋果"
+    "chineseItemName": "蘋果"
   },
   "metaInfo": {
     "only": false,

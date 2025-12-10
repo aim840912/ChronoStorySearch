@@ -4,7 +4,7 @@
     "id": 2043001,
     "name": "Scroll for One-Handed Sword for ATT 60%",
     "description": "Improves attack on one-handed sword.\\nSuccess rate:60%, weapon attack+2, STR+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "單手劍攻擊卷軸60%"
+    "chineseItemName": "單手劍攻擊卷軸60%"
   },
   "metaInfo": {
     "only": false,

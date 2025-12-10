@@ -4,7 +4,7 @@
     "id": 2044400,
     "name": "Scroll for Pole Arm for ATT 100%",
     "description": "Improves attack on pole arm.\\nSuccess rate:100%, weapon attack+1",
-    "chineseName": "矛攻擊卷軸100%"
+    "chineseItemName": "矛攻擊卷軸100%"
   },
   "metaInfo": {
     "only": false,

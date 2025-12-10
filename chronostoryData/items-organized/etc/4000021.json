@@ -4,7 +4,7 @@
     "id": 4000021,
     "name": "Leather",
     "description": "An animal's skin that's been cut away",
-    "chineseName": "動物皮"
+    "chineseItemName": "動物皮"
   },
   "metaInfo": {
     "only": false,

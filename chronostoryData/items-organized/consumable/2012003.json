@@ -4,7 +4,7 @@
     "id": 2012003,
     "name": "Drake's Meat",
     "description": "Drake's meat.nWeapon Def. +10 for 5 min.",
-    "chineseName": "暴龍之肉"
+    "chineseItemName": "暴龍之肉"
   },
   "metaInfo": {
     "only": false,

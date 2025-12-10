@@ -9,7 +9,7 @@
     {
       "itemId": 2022001,
       "itemName": "Red Bean Porridge",
-      "chineseItemName": null,
+      "chineseItemName": "小豆粥",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,

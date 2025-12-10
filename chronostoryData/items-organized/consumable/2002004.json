@@ -4,7 +4,7 @@
     "id": 2002004,
     "name": "Warrior Potion",
     "description": "Increases attacking ability.\\nAttack +5 for 3 min.",
-    "chineseName": "攻擊藥水"
+    "chineseItemName": "攻擊藥水"
   },
   "metaInfo": {
     "only": false,

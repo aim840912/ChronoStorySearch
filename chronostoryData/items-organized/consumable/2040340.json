@@ -4,7 +4,7 @@
     "id": 2040340,
     "name": "Scroll for Earring for HP 15%",
     "description": "Improves HP on Earrings.\\nSuccess Rate: 15%, MaxHP+30",
-    "chineseName": "耳環生命卷軸15%"
+    "chineseItemName": "耳環生命卷軸15%"
   },
   "metaInfo": {
     "only": false,

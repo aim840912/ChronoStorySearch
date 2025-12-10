@@ -4,12 +4,12 @@
   "chineseMobName": "大幽靈",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 37,
+  "totalDrops": 27,
   "drops": [
     {
       "itemId": 4000036,
       "itemName": "Medicine With Weird Vibes",
-      "chineseItemName": null,
+      "chineseItemName": "怪藥",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -29,20 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 4030012,
-      "itemName": "Monster Card",
-      "chineseItemName": null,
-      "chance": 12.5,
-      "displayChance": "12.5%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000002,
       "itemName": "White Potion",
-      "chineseItemName": null,
+      "chineseItemName": "白色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -53,7 +42,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -64,7 +53,7 @@
     {
       "itemId": 2000004,
       "itemName": "Elixir",
-      "chineseItemName": null,
+      "chineseItemName": "特殊藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -73,42 +62,9 @@
       "enabled": true
     },
     {
-      "itemId": 4007000,
-      "itemName": "Magic Powder (Brown)",
-      "chineseItemName": null,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4007003,
-      "itemName": "Magic Powder (Green)",
-      "chineseItemName": null,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4007006,
-      "itemName": "Magic Powder (Red)",
-      "chineseItemName": null,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4004004,
       "itemName": "Dark Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黑暗母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -119,7 +75,7 @@
     {
       "itemId": 4006001,
       "itemName": "The Summoning Rock",
-      "chineseItemName": null,
+      "chineseItemName": "召喚石",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -130,7 +86,7 @@
     {
       "itemId": 4010001,
       "itemName": "Steel Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鋼鐵母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -141,7 +97,7 @@
     {
       "itemId": 4020000,
       "itemName": "Garnet Ore",
-      "chineseItemName": null,
+      "chineseItemName": "石榴石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -150,53 +106,9 @@
       "enabled": true
     },
     {
-      "itemId": 2383008,
-      "itemName": "Wraith Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130007,
-      "itemName": "Two-Handed Mace Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130008,
-      "itemName": "Spear Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130018,
-      "itemName": "Armor Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2020028,
       "itemName": "Chocolate",
-      "chineseItemName": null,
+      "chineseItemName": "巧克力",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -207,7 +119,7 @@
     {
       "itemId": 1002099,
       "itemName": "Mithril Nordic Helm",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦諾曼頭盔",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -218,7 +130,7 @@
     {
       "itemId": 1002207,
       "itemName": "Red Sonata",
-      "chineseItemName": null,
+      "chineseItemName": "紅黑太陽帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -229,7 +141,7 @@
     {
       "itemId": 1002211,
       "itemName": "Blue Maro",
-      "chineseItemName": null,
+      "chineseItemName": "藍貴族軟帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -240,7 +152,7 @@
     {
       "itemId": 1002212,
       "itemName": "Red Maro",
-      "chineseItemName": null,
+      "chineseItemName": "紅貴族軟帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -251,7 +163,7 @@
     {
       "itemId": 1002215,
       "itemName": "Flame Golden Circlet",
-      "chineseItemName": null,
+      "chineseItemName": "火黃金法冠",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -262,7 +174,7 @@
     {
       "itemId": 1032008,
       "itemName": "Cat's Eye",
-      "chineseItemName": null,
+      "chineseItemName": "貓眼耳環",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -273,7 +185,7 @@
     {
       "itemId": 1082066,
       "itemName": "Brown Moon Gloves",
-      "chineseItemName": null,
+      "chineseItemName": "黃月手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -284,7 +196,7 @@
     {
       "itemId": 1040061,
       "itemName": "Green Knucklevest",
-      "chineseItemName": null,
+      "chineseItemName": "綠暗影之服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -295,7 +207,7 @@
     {
       "itemId": 1040085,
       "itemName": "Maroon Jangoon Armor",
-      "chineseItemName": null,
+      "chineseItemName": "紫金鎧甲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -306,7 +218,7 @@
     {
       "itemId": 1060050,
       "itemName": "Blue Knucklevest Pants",
-      "chineseItemName": null,
+      "chineseItemName": "藍暗影之褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -317,7 +229,7 @@
     {
       "itemId": 1060074,
       "itemName": "White Jangoon Pants",
-      "chineseItemName": null,
+      "chineseItemName": "白金褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -328,7 +240,7 @@
     {
       "itemId": 1072141,
       "itemName": "Blue Goldwind Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "藍黃金風",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -339,7 +251,7 @@
     {
       "itemId": 1072303,
       "itemName": "Brown Double Boots",
-      "chineseItemName": null,
+      "chineseItemName": "褐色強化皮靴",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -348,31 +260,9 @@
       "enabled": true
     },
     {
-      "itemId": 1302030,
-      "itemName": "Maple Soul Singer",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1472030,
-      "itemName": "Maple Claw",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1072114,
       "itemName": "Red Moon Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "紅月鞋",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -383,7 +273,7 @@
     {
       "itemId": 1302013,
       "itemName": "Red Whip",
-      "chineseItemName": null,
+      "chineseItemName": "紅色鞭子",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -394,7 +284,7 @@
     {
       "itemId": 1202002,
       "itemName": "Mighty Bullet",
-      "chineseItemName": null,
+      "chineseItemName": "強力子彈",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -405,7 +295,7 @@
     {
       "itemId": 2040026,
       "itemName": "Scroll for Helmet for INT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "頭盔智力卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

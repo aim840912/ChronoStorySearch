@@ -4,7 +4,7 @@
     "id": 4000151,
     "name": "Gatekeeper Armband",
     "description": "An armband from the Gatekeeper.",
-    "chineseName": "通道守門人臂章"
+    "chineseItemName": "通道守門人臂章"
   },
   "metaInfo": {
     "only": false,

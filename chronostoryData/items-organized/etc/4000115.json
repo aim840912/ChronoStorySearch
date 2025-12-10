@@ -4,7 +4,7 @@
     "id": 4000115,
     "name": "Cog",
     "description": "An important part of a clock.",
-    "chineseName": "齒輪"
+    "chineseItemName": "齒輪"
   },
   "metaInfo": {
     "only": false,

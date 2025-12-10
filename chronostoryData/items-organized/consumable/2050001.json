@@ -4,7 +4,7 @@
     "id": 2050001,
     "name": "Eyedrop",
     "description": "Cures the state of darkness",
-    "chineseName": "眼藥水"
+    "chineseItemName": "眼藥水"
   },
   "metaInfo": {
     "only": false,

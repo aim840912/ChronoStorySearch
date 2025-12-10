@@ -4,7 +4,7 @@
     "id": 2043702,
     "name": "Scroll for Wand for Magic ATT 10%",
     "description": "Improves magic on wand.\\nSuccess rate:10%, magic attack+5, INT+3, magic def.+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "短杖魔力卷軸10%"
+    "chineseItemName": "短杖魔力卷軸10%"
   },
   "metaInfo": {
     "only": false,

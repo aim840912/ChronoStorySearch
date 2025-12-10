@@ -4,7 +4,7 @@
     "id": 4000030,
     "name": "Dragon Skin",
     "description": "A solid piece of dragon's skin that gives off a mysterious light.",
-    "chineseName": "龍皮"
+    "chineseItemName": "龍皮"
   },
   "metaInfo": {
     "only": false,

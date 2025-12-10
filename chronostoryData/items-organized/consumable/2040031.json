@@ -4,7 +4,7 @@
     "id": 2040031,
     "name": "Scroll for Helmet for DEX 10%",
     "description": "Improves DEX on headwear.\\nSuccess rate 10%, DEX+3. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "頭盔敏捷卷軸10%"
+    "chineseItemName": "頭盔敏捷卷軸10%"
   },
   "metaInfo": {
     "only": false,

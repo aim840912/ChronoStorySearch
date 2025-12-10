@@ -4,7 +4,7 @@
     "id": 4000022,
     "name": "Stone Golem Rubble",
     "description": "A mystic rubble that was a part of Stone Golem.",
-    "chineseName": "石塊"
+    "chineseItemName": "石塊"
   },
   "metaInfo": {
     "only": false,

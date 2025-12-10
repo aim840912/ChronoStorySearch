@@ -4,7 +4,7 @@
     "id": 2040934,
     "name": "Scroll for Shield for ATT 15%",
     "description": "Improves ATK on shields. Success rate: 15%, ATK +3",
-    "chineseName": "盾牌攻擊卷軸15%",
+    "chineseItemName": "盾牌攻擊卷軸15%",
     "chineseNameSource": "gacha"
   },
   "metaInfo": {

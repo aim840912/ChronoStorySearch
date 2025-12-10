@@ -4,7 +4,7 @@
     "id": 2040930,
     "name": "Scroll for Shield for STR 70%",
     "description": "Improves strength on shields..\\nSuccess rate:70%, STR+2nIf failed, the item will be destroyed at a 50% rate.",
-    "chineseName": "盾牌力量詛咒卷軸70%"
+    "chineseItemName": "盾牌力量詛咒卷軸70%"
   },
   "metaInfo": {
     "only": false,

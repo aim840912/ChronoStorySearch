@@ -4,7 +4,7 @@
     "id": 2044701,
     "name": "Scroll for Claw for ATT 60%",
     "description": "Improves attack on claw.\\nSuccess rate:60%, weapon attack+2, accuracy+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "拳套攻擊卷軸60%"
+    "chineseItemName": "拳套攻擊卷軸60%"
   },
   "metaInfo": {
     "only": false,

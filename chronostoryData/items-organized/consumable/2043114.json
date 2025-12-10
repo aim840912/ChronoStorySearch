@@ -4,7 +4,7 @@
     "id": 2043114,
     "name": "Scroll for One-Handed Axe for Accuracy 10%",
     "description": "Improves accuracy on one-handed axe.\\nSuccess rate:10%, accuracy+5, DEX+3, weapon att.+3. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "單手斧命中卷軸10%"
+    "chineseItemName": "單手斧命中卷軸10%"
   },
   "metaInfo": {
     "only": false,

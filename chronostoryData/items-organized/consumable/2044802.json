@@ -4,7 +4,7 @@
     "id": 2044802,
     "name": "Scroll for Knuckler for ATT 10%",
     "description": "Improves attack on Knucklers.\\nSuccess rate:10%, weapon att. +5, STR+3, weapon def. +1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "指虎攻擊卷軸10%"
+    "chineseItemName": "指虎攻擊卷軸10%"
   },
   "metaInfo": {
     "only": false,

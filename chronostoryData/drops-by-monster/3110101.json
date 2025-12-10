@@ -4,12 +4,12 @@
   "chineseMobName": "粉紅發條熊",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 32,
+  "totalDrops": 25,
   "drops": [
     {
       "itemId": 4000107,
       "itemName": "Teddy's Yellow Ribbon",
-      "chineseItemName": null,
+      "chineseItemName": "玩具熊的黃絲帶",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -29,53 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 4031527,
-      "itemName": "White/Purple Ribbon Gift Box",
-      "chineseItemName": null,
-      "chance": 40,
-      "displayChance": "40.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 8849,
-      "enabled": false
-    },
-    {
-      "itemId": 4030014,
-      "itemName": "Omok Piece : Pink Teddy",
-      "chineseItemName": null,
-      "chance": 7.7,
-      "displayChance": "7.7%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000002,
       "itemName": "White Potion",
-      "chineseItemName": null,
+      "chineseItemName": "白色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -86,7 +42,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -97,7 +53,7 @@
     {
       "itemId": 2002009,
       "itemName": "Dexterity Pill",
-      "chineseItemName": null,
+      "chineseItemName": "敏捷藥丸",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -108,7 +64,7 @@
     {
       "itemId": 4004001,
       "itemName": "Wisdom Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "智慧母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -119,7 +75,7 @@
     {
       "itemId": 4020001,
       "itemName": "Amethyst Ore",
-      "chineseItemName": null,
+      "chineseItemName": "紫水晶母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -128,42 +84,9 @@
       "enabled": true
     },
     {
-      "itemId": 2382004,
-      "itemName": "Pink Teddy Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130002,
-      "itemName": "One-Handed Sword Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4131001,
-      "itemName": "One-Handed Axe Forging Manual",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1082007,
       "itemName": "Bronze Missel",
-      "chineseItemName": null,
+      "chineseItemName": "青銅機器手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -174,7 +97,7 @@
     {
       "itemId": 1082035,
       "itemName": "Yellow Briggon",
-      "chineseItemName": null,
+      "chineseItemName": "黃輕便手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -185,7 +108,7 @@
     {
       "itemId": 1082189,
       "itemName": "Yellow Tartis",
-      "chineseItemName": null,
+      "chineseItemName": "金色護手",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -196,7 +119,7 @@
     {
       "itemId": 1040062,
       "itemName": "Red Knucklevest",
-      "chineseItemName": null,
+      "chineseItemName": "紅暗影之服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -207,7 +130,7 @@
     {
       "itemId": 1041055,
       "itemName": "Black Huntress Armor",
-      "chineseItemName": null,
+      "chineseItemName": "黑浪人之服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -218,7 +141,7 @@
     {
       "itemId": 1060051,
       "itemName": "Red Knucklevest Pants",
-      "chineseItemName": null,
+      "chineseItemName": "紅暗影之褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -229,7 +152,7 @@
     {
       "itemId": 1061051,
       "itemName": "Black Huntress Pants",
-      "chineseItemName": null,
+      "chineseItemName": "黑遊俠裙",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -240,7 +163,7 @@
     {
       "itemId": 1072077,
       "itemName": "White Magicshoes",
-      "chineseItemName": null,
+      "chineseItemName": "白魔法鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -251,7 +174,7 @@
     {
       "itemId": 1072090,
       "itemName": "Red Salt Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "紅守護鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -262,7 +185,7 @@
     {
       "itemId": 2043200,
       "itemName": "Scroll for One-Handed BW for ATT 100%",
-      "chineseItemName": null,
+      "chineseItemName": "單手棍攻擊卷軸100%",
       "chance": 0.075,
       "displayChance": "0.075%",
       "minQty": 1,
@@ -273,7 +196,7 @@
     {
       "itemId": 1050002,
       "itemName": "Blood Chaos Robe",
-      "chineseItemName": null,
+      "chineseItemName": "紅魔力長袍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -284,7 +207,7 @@
     {
       "itemId": 1050030,
       "itemName": "Blue Chaos Robe",
-      "chineseItemName": null,
+      "chineseItemName": "藍魔力長袍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -295,7 +218,7 @@
     {
       "itemId": 1092007,
       "itemName": "Battle Shield",
-      "chineseItemName": null,
+      "chineseItemName": "戰鬥盾牌",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -306,7 +229,7 @@
     {
       "itemId": 1202001,
       "itemName": "Split Bullet",
-      "chineseItemName": null,
+      "chineseItemName": "子彈",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -317,7 +240,7 @@
     {
       "itemId": 1462004,
       "itemName": "Eagle Crow",
-      "chineseItemName": null,
+      "chineseItemName": "鷹弩",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -328,7 +251,7 @@
     {
       "itemId": 1472014,
       "itemName": "Steel Avarice",
-      "chineseItemName": null,
+      "chineseItemName": "鋼鐵護腕",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -339,7 +262,7 @@
     {
       "itemId": 2041017,
       "itemName": "Scroll for Cape for INT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "披風智力卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -350,7 +273,7 @@
     {
       "itemId": 2044012,
       "itemName": "Scroll for Two-Handed Sword for Accuracy 60%",
-      "chineseItemName": null,
+      "chineseItemName": "雙手劍命中卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

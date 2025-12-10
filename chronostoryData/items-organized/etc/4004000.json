@@ -4,7 +4,7 @@
     "id": 4004000,
     "name": "Power Crystal Ore",
     "description": "An ore of a crystal that possesses power.",
-    "chineseName": "力量母礦"
+    "chineseItemName": "力量母礦"
   },
   "metaInfo": {
     "only": false,

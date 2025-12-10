@@ -4,7 +4,7 @@
     "id": 4000197,
     "name": "Slate",
     "description": "A slate that Stone Mask wears.",
-    "chineseName": "石板"
+    "chineseItemName": "石板"
   },
   "metaInfo": {
     "only": false,

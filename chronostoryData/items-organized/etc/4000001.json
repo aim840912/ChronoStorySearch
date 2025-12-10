@@ -4,7 +4,7 @@
     "id": 4000001,
     "name": "Orange Mushroom Cap",
     "description": "A cap removed from a mushroom",
-    "chineseName": "菇菇寶貝傘"
+    "chineseItemName": "菇菇寶貝傘"
   },
   "metaInfo": {
     "only": false,

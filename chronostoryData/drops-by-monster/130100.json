@@ -4,12 +4,12 @@
   "chineseMobName": "木妖",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 26,
+  "totalDrops": 19,
   "drops": [
     {
       "itemId": 4000003,
       "itemName": "Tree Branch",
-      "chineseItemName": null,
+      "chineseItemName": "樹枝",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 4031773,
       "itemName": "Dry Branch",
-      "chineseItemName": null,
+      "chineseItemName": "乾枯的樹枝",
       "chance": 8,
       "displayChance": "8.0%",
       "minQty": 1,
@@ -40,75 +40,9 @@
       "enabled": false
     },
     {
-      "itemId": 4032374,
-      "itemName": "Letter of Commendation",
-      "chineseItemName": null,
-      "chance": 8,
-      "displayChance": "8.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 2405,
-      "enabled": false
-    },
-    {
-      "itemId": 4032378,
-      "itemName": "Letter of Commendation",
-      "chineseItemName": null,
-      "chance": 8,
-      "displayChance": "8.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 2408,
-      "enabled": false
-    },
-    {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4030009,
-      "itemName": "Omok Table",
-      "chineseItemName": null,
-      "chance": 2.8,
-      "displayChance": "2.8%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4001358,
-      "itemName": "Long Strong Stick",
-      "chineseItemName": null,
-      "chance": 2,
-      "displayChance": "2.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 28248,
-      "enabled": false
-    },
-    {
       "itemId": 2000000,
       "itemName": "Red Potion",
-      "chineseItemName": null,
+      "chineseItemName": "紅色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -119,7 +53,7 @@
     {
       "itemId": 2010009,
       "itemName": "Green Apple",
-      "chineseItemName": null,
+      "chineseItemName": "青蘋果",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -130,7 +64,7 @@
     {
       "itemId": 4010003,
       "itemName": "Adamantium Ore",
-      "chineseItemName": null,
+      "chineseItemName": "朱礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -141,7 +75,7 @@
     {
       "itemId": 4020003,
       "itemName": "Emerald Ore",
-      "chineseItemName": null,
+      "chineseItemName": "祖母綠母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -150,20 +84,9 @@
       "enabled": true
     },
     {
-      "itemId": 2380003,
-      "itemName": "Stump Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1082003,
       "itemName": "Juno",
-      "chineseItemName": null,
+      "chineseItemName": "腕甲",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -174,7 +97,7 @@
     {
       "itemId": 1061014,
       "itemName": "Rookie Pants",
-      "chineseItemName": null,
+      "chineseItemName": "紅皮甲褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -185,7 +108,7 @@
     {
       "itemId": 1072007,
       "itemName": "Brown High Boots",
-      "chineseItemName": null,
+      "chineseItemName": "褐旅行鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -196,7 +119,7 @@
     {
       "itemId": 1041002,
       "itemName": "White Tubetop",
-      "chineseItemName": null,
+      "chineseItemName": "白色無袖短T",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -207,7 +130,7 @@
     {
       "itemId": 1072008,
       "itemName": "Bronze Aroa Boots",
-      "chineseItemName": null,
+      "chineseItemName": "褐短鞋",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -218,7 +141,7 @@
     {
       "itemId": 1322005,
       "itemName": "Wooden Club",
-      "chineseItemName": null,
+      "chineseItemName": "棍棒",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -229,7 +152,7 @@
     {
       "itemId": 1482001,
       "itemName": "Leather Arms",
-      "chineseItemName": null,
+      "chineseItemName": "加固皮護手",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -240,7 +163,7 @@
     {
       "itemId": 1332000,
       "itemName": "Triangular Zamadar",
-      "chineseItemName": null,
+      "chineseItemName": "三角刃",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -251,7 +174,7 @@
     {
       "itemId": 1452003,
       "itemName": "Composite Bow",
-      "chineseItemName": null,
+      "chineseItemName": "鋼鐵弓",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -262,7 +185,7 @@
     {
       "itemId": 1492000,
       "itemName": "Pistol",
-      "chineseItemName": null,
+      "chineseItemName": "火槍",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -273,7 +196,7 @@
     {
       "itemId": 2040402,
       "itemName": "Scroll for Topwear for Defense 10%",
-      "chineseItemName": null,
+      "chineseItemName": "上衣防禦卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -284,7 +207,7 @@
     {
       "itemId": 2041005,
       "itemName": "Scroll for Cape for Defense 10%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

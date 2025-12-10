@@ -4,7 +4,7 @@
     "id": 2012000,
     "name": "Drake's Blood",
     "description": "Drake's blood. nAttack +8 for 5 min.",
-    "chineseName": "暴龍之血"
+    "chineseItemName": "暴龍之血"
   },
   "metaInfo": {
     "only": false,

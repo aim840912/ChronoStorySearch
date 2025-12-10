@@ -4,7 +4,7 @@
     "id": 2010001,
     "name": "Meat",
     "description": "A tasty-looking meat. .\\nRecovers around 100 HP.",
-    "chineseName": "烤肉"
+    "chineseItemName": "烤肉"
   },
   "metaInfo": {
     "only": false,

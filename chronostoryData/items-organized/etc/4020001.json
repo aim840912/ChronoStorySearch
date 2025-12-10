@@ -4,7 +4,7 @@
     "id": 4020001,
     "name": "Amethyst Ore",
     "description": "The ore of a purple jewel.",
-    "chineseName": "紫水晶母礦"
+    "chineseItemName": "紫水晶母礦"
   },
   "metaInfo": {
     "only": false,

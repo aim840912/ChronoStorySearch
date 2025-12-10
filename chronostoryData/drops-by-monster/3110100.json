@@ -4,29 +4,18 @@
   "chineseMobName": "鱷魚",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 35,
+  "totalDrops": 27,
   "drops": [
     {
       "itemId": 4000032,
       "itemName": "Ligator Skin",
-      "chineseItemName": null,
+      "chineseItemName": "鱷魚皮",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 4031405,
-      "itemName": "Glass Shoes",
-      "chineseItemName": null,
-      "chance": 50,
-      "displayChance": "50.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 8732,
-      "enabled": false
     },
     {
       "itemId": 0,
@@ -42,7 +31,7 @@
     {
       "itemId": 4031164,
       "itemName": "Alligator Skin Pouch",
-      "chineseItemName": null,
+      "chineseItemName": "鱷魚皮革袋",
       "chance": 30,
       "displayChance": "30.0%",
       "minQty": 1,
@@ -53,7 +42,7 @@
     {
       "itemId": 2000002,
       "itemName": "White Potion",
-      "chineseItemName": null,
+      "chineseItemName": "白色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -64,7 +53,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -75,7 +64,7 @@
     {
       "itemId": 2000004,
       "itemName": "Elixir",
-      "chineseItemName": null,
+      "chineseItemName": "特殊藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -84,20 +73,9 @@
       "enabled": true
     },
     {
-      "itemId": 4007005,
-      "itemName": "Magic Powder (Purple)",
-      "chineseItemName": null,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4006000,
       "itemName": "The Magic Rock",
-      "chineseItemName": null,
+      "chineseItemName": "魔法石",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -108,7 +86,7 @@
     {
       "itemId": 4010002,
       "itemName": "Mithril Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -119,7 +97,7 @@
     {
       "itemId": 4020002,
       "itemName": "AquaMarine Ore",
-      "chineseItemName": null,
+      "chineseItemName": "海藍石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -128,53 +106,9 @@
       "enabled": true
     },
     {
-      "itemId": 2382002,
-      "itemName": "Ligator Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130002,
-      "itemName": "One-Handed Sword Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130008,
-      "itemName": "Spear Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130010,
-      "itemName": "Wand Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002622,
       "itemName": "White Oceania Cap",
-      "chineseItemName": null,
+      "chineseItemName": "白色遠洋帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -185,7 +119,7 @@
     {
       "itemId": 1082046,
       "itemName": "Steel Arbion",
-      "chineseItemName": null,
+      "chineseItemName": "鋼鐵追擊手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -196,7 +130,7 @@
     {
       "itemId": 1082049,
       "itemName": "Green Marker",
-      "chineseItemName": null,
+      "chineseItemName": "綠擊中手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -207,7 +141,7 @@
     {
       "itemId": 1041051,
       "itemName": "Red Amoria Top",
-      "chineseItemName": null,
+      "chineseItemName": "紅神聖法衣",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -218,7 +152,7 @@
     {
       "itemId": 1061047,
       "itemName": "Red Amoria Skirt",
-      "chineseItemName": null,
+      "chineseItemName": "紅神聖裙",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -229,7 +163,7 @@
     {
       "itemId": 1072112,
       "itemName": "Mithril Trigger",
-      "chineseItemName": null,
+      "chineseItemName": "藍鐵頭鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -240,7 +174,7 @@
     {
       "itemId": 2041028,
       "itemName": "Dark Scroll for Cape for Defense 70%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦力卷軸70%",
       "chance": 0.075,
       "displayChance": "0.075%",
       "minQty": 1,
@@ -249,31 +183,9 @@
       "enabled": true
     },
     {
-      "itemId": 1382009,
-      "itemName": "Maple Staff",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1442024,
-      "itemName": "Maple Scorpio",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1051013,
       "itemName": "Yellow Engrit",
-      "chineseItemName": null,
+      "chineseItemName": "黃護身鎧甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -284,7 +196,7 @@
     {
       "itemId": 1061078,
       "itemName": "Brown Moon Pants",
-      "chineseItemName": null,
+      "chineseItemName": "黃月褲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -295,7 +207,7 @@
     {
       "itemId": 1092012,
       "itemName": "Steel Tower Shield",
-      "chineseItemName": null,
+      "chineseItemName": "鋼鐵方盾",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -306,7 +218,7 @@
     {
       "itemId": 1322009,
       "itemName": "Plunger",
-      "chineseItemName": null,
+      "chineseItemName": "通通樂",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -317,7 +229,7 @@
     {
       "itemId": 1422001,
       "itemName": "Mithril Maul",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦錘",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -328,7 +240,7 @@
     {
       "itemId": 1442011,
       "itemName": "Surfboard",
-      "chineseItemName": null,
+      "chineseItemName": "滑水板",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -339,7 +251,7 @@
     {
       "itemId": 1442028,
       "itemName": "Black Surfboard",
-      "chineseItemName": null,
+      "chineseItemName": "藍色衝浪板",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -350,7 +262,7 @@
     {
       "itemId": 1332014,
       "itemName": "Gephart",
-      "chineseItemName": null,
+      "chineseItemName": "暗影刃",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -361,7 +273,7 @@
     {
       "itemId": 1432005,
       "itemName": "Zeco",
-      "chineseItemName": null,
+      "chineseItemName": "雙天戟",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -372,7 +284,7 @@
     {
       "itemId": 2041005,
       "itemName": "Scroll for Cape for Defense 10%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -383,7 +295,7 @@
     {
       "itemId": 2044802,
       "itemName": "Scroll for Knuckler for ATT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "指虎攻擊卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

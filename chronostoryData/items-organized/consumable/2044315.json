@@ -4,7 +4,7 @@
     "id": 2044315,
     "name": "Scroll for Spear for Accuracy 15%",
     "description": "Improves accuracy on spears. Success rate: 15%, DEX +3, ATK +3, ACC +5",
-    "chineseName": "槍命中卷軸15%",
+    "chineseItemName": "槍命中卷軸15%",
     "chineseNameSource": "gacha"
   },
   "metaInfo": {

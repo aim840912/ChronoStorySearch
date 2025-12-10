@@ -4,7 +4,7 @@
     "id": 2044215,
     "name": "Scroll for Two-Handed BW for Accuracy 15%",
     "description": "Improves accuracy on two-handed blunt weapons. Success rate: 15%, DEX +3, ATK +3, ACC +5",
-    "chineseName": "雙手棍命中卷軸15%",
+    "chineseItemName": "雙手棍命中卷軸15%",
     "chineseNameSource": "gacha"
   },
   "metaInfo": {

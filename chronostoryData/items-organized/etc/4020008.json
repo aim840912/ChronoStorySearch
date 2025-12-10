@@ -4,7 +4,7 @@
     "id": 4020008,
     "name": "Black Crystal Ore",
     "description": "An ore of a crystal that has dark powers stored in it",
-    "chineseName": "黑水晶母礦"
+    "chineseItemName": "黑水晶母礦"
   },
   "metaInfo": {
     "only": false,

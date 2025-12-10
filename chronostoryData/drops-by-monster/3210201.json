@@ -4,12 +4,12 @@
   "chineseMobName": "幼黃獨角獅",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 34,
+  "totalDrops": 28,
   "drops": [
     {
       "itemId": 4000073,
       "itemName": "Solid Horn",
-      "chineseItemName": null,
+      "chineseItemName": "獨角獅硬角",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -29,20 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 4031524,
-      "itemName": "Silk Feather",
-      "chineseItemName": null,
-      "chance": 20,
-      "displayChance": "20.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 8848,
-      "enabled": false
-    },
-    {
       "itemId": 4003004,
       "itemName": "Stiff Feather",
-      "chineseItemName": null,
+      "chineseItemName": "堅硬的羽毛",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
@@ -51,20 +40,9 @@
       "enabled": true
     },
     {
-      "itemId": 4030012,
-      "itemName": "Monster Card",
-      "chineseItemName": null,
-      "chance": 12.5,
-      "displayChance": "12.5%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4000021,
       "itemName": "Leather",
-      "chineseItemName": null,
+      "chineseItemName": "動物皮",
       "chance": 5,
       "displayChance": "5.0%",
       "minQty": 1,
@@ -75,7 +53,7 @@
     {
       "itemId": 2000002,
       "itemName": "White Potion",
-      "chineseItemName": null,
+      "chineseItemName": "白色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -86,7 +64,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -97,7 +75,7 @@
     {
       "itemId": 4004001,
       "itemName": "Wisdom Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "智慧母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -108,7 +86,7 @@
     {
       "itemId": 4006001,
       "itemName": "The Summoning Rock",
-      "chineseItemName": null,
+      "chineseItemName": "召喚石",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -119,7 +97,7 @@
     {
       "itemId": 4010002,
       "itemName": "Mithril Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -130,7 +108,7 @@
     {
       "itemId": 4020003,
       "itemName": "Emerald Ore",
-      "chineseItemName": null,
+      "chineseItemName": "祖母綠母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -141,7 +119,7 @@
     {
       "itemId": 4020007,
       "itemName": "Diamond Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鑽石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -150,20 +128,9 @@
       "enabled": true
     },
     {
-      "itemId": 2382012,
-      "itemName": "Jr. Lioner Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4001006,
       "itemName": "Flaming Feather",
-      "chineseItemName": null,
+      "chineseItemName": "火焰羽毛",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -174,7 +141,7 @@
     {
       "itemId": 4006000,
       "itemName": "The Magic Rock",
-      "chineseItemName": null,
+      "chineseItemName": "魔法石",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -183,42 +150,9 @@
       "enabled": true
     },
     {
-      "itemId": 4130003,
-      "itemName": "One-Handed Axe Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130004,
-      "itemName": "One-Handed Blunt Weapon Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130012,
-      "itemName": "Bow Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002172,
       "itemName": "Blue Guise",
-      "chineseItemName": null,
+      "chineseItemName": "藍假面帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -229,7 +163,7 @@
     {
       "itemId": 1082070,
       "itemName": "Gold Scaler",
-      "chineseItemName": null,
+      "chineseItemName": "黃金名弓手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -240,7 +174,7 @@
     {
       "itemId": 1072083,
       "itemName": "Brown Hunter Boots",
-      "chineseItemName": null,
+      "chineseItemName": "褐打獵鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -251,7 +185,7 @@
     {
       "itemId": 1072089,
       "itemName": "Purple Salt Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "紫守護鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -262,7 +196,7 @@
     {
       "itemId": 1050036,
       "itemName": "Red Starlight",
-      "chineseItemName": null,
+      "chineseItemName": "紅星光長袍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -273,7 +207,7 @@
     {
       "itemId": 1051016,
       "itemName": "Silver Fitted Mail",
-      "chineseItemName": null,
+      "chineseItemName": "銀制鎧甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -284,7 +218,7 @@
     {
       "itemId": 1051024,
       "itemName": "Red Moonlight",
-      "chineseItemName": null,
+      "chineseItemName": "紅色月光服",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -295,7 +229,7 @@
     {
       "itemId": 1442001,
       "itemName": "Mithril Pole Arm",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦戟",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -306,7 +240,7 @@
     {
       "itemId": 1332012,
       "itemName": "Reef Claw",
-      "chineseItemName": null,
+      "chineseItemName": "水晶刃",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -317,7 +251,7 @@
     {
       "itemId": 1472013,
       "itemName": "Dark Guardian",
-      "chineseItemName": null,
+      "chineseItemName": "黑守護拳套",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -328,7 +262,7 @@
     {
       "itemId": 1492004,
       "itemName": "Cold Mind",
-      "chineseItemName": null,
+      "chineseItemName": "冷酷之心",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -339,7 +273,7 @@
     {
       "itemId": 1203006,
       "itemName": "Kumbi Throwing-Stars",
-      "chineseItemName": null,
+      "chineseItemName": "雪花鏢",
       "chance": 0.04,
       "displayChance": "0.040%",
       "minQty": 1,
@@ -350,7 +284,7 @@
     {
       "itemId": 2043114,
       "itemName": "Scroll for One-Handed Axe for Accuracy 10%",
-      "chineseItemName": null,
+      "chineseItemName": "單手斧命中卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -361,7 +295,7 @@
     {
       "itemId": 2044501,
       "itemName": "Scroll for Bow for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "弓攻擊卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -372,7 +306,7 @@
     {
       "itemId": 4001006,
       "itemName": "Flaming Feather",
-      "chineseItemName": null,
+      "chineseItemName": "火焰羽毛",
       "chance": 0,
       "displayChance": "0.000%",
       "minQty": 1,

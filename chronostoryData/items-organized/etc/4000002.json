@@ -4,7 +4,7 @@
     "id": 4000002,
     "name": "Pig's Ribbon",
     "description": "Taken off from the pig with a ribbon",
-    "chineseName": "蝴蝶結"
+    "chineseItemName": "蝴蝶結"
   },
   "metaInfo": {
     "only": false,

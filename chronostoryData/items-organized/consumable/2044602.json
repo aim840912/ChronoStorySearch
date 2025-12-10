@@ -4,7 +4,7 @@
     "id": 2044602,
     "name": "Scroll for Crossbow for ATT 10%",
     "description": "Improves attack on crossbow.\\nSuccess rate:10%, weapon attack+5, accuracy+3, DEX+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "弩攻擊卷軸10%"
+    "chineseItemName": "弩攻擊卷軸10%"
   },
   "metaInfo": {
     "only": false,

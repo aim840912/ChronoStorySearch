@@ -4,7 +4,7 @@
     "id": 2044905,
     "name": "Scroll for Gun for ATT 15%",
     "description": "Improves the attact on Maple Canon Shooter. nSuccess rate:40%, weapon att.+3,naccuracy+2nIf failed, the item will be destroyed at a 30% rate.",
-    "chineseName": "火槍攻擊卷軸15%",
+    "chineseItemName": "火槍攻擊卷軸15%",
     "chineseNameSource": "gacha"
   },
   "metaInfo": {

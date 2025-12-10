@@ -9,7 +9,7 @@
     {
       "itemId": 4000671,
       "itemName": "#N/A",
-      "chineseItemName": null,
+      "chineseItemName": "結冰的石頭",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 1002095,
       "itemName": "Mithril Planet",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦戰盔",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 1002286,
       "itemName": "Blue Patriot",
-      "chineseItemName": null,
+      "chineseItemName": "藍司令帽",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -53,7 +53,7 @@
     {
       "itemId": 1040106,
       "itemName": "Blue Studded Top",
-      "chineseItemName": null,
+      "chineseItemName": "藍玄武之甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -64,7 +64,7 @@
     {
       "itemId": 1041097,
       "itemName": "Aqua Platina",
-      "chineseItemName": null,
+      "chineseItemName": "藍暴風甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -75,7 +75,7 @@
     {
       "itemId": 1050061,
       "itemName": "Blue Linnex",
-      "chineseItemName": null,
+      "chineseItemName": "藍飄雲之衣",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -86,7 +86,7 @@
     {
       "itemId": 1050067,
       "itemName": "Blue Requiem",
-      "chineseItemName": null,
+      "chineseItemName": "藍天上之衣",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -97,7 +97,7 @@
     {
       "itemId": 1060094,
       "itemName": "Blue Studded Pants",
-      "chineseItemName": null,
+      "chineseItemName": "藍玄武之褲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -108,7 +108,7 @@
     {
       "itemId": 1061096,
       "itemName": "Aqua Platina Pants",
-      "chineseItemName": null,
+      "chineseItemName": "藍暴風褲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -119,7 +119,7 @@
     {
       "itemId": 1072154,
       "itemName": "Blue Carzen Boots",
-      "chineseItemName": null,
+      "chineseItemName": "藍飛魂鞋",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -130,7 +130,7 @@
     {
       "itemId": 1072164,
       "itemName": "Blue Elf Shoes",
-      "chineseItemName": null,
+      "chineseItemName": "藍箭魂鞋",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -141,7 +141,7 @@
     {
       "itemId": 1332019,
       "itemName": "Golden River",
-      "chineseItemName": null,
+      "chineseItemName": "金剛刃",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -152,7 +152,7 @@
     {
       "itemId": 1372015,
       "itemName": "Angel Wings",
-      "chineseItemName": null,
+      "chineseItemName": "天使之翼",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -163,7 +163,7 @@
     {
       "itemId": 1402012,
       "itemName": "Doombringer",
-      "chineseItemName": null,
+      "chineseItemName": "霸王劍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -174,7 +174,7 @@
     {
       "itemId": 1412008,
       "itemName": "Chrono",
-      "chineseItemName": null,
+      "chineseItemName": "雷電斧",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -185,7 +185,7 @@
     {
       "itemId": 1422010,
       "itemName": "Gigantic Sledge",
-      "chineseItemName": null,
+      "chineseItemName": "封魂之錘",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -196,7 +196,7 @@
     {
       "itemId": 1432007,
       "itemName": "Redemption",
-      "chineseItemName": null,
+      "chineseItemName": "銀龍槍",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -207,7 +207,7 @@
     {
       "itemId": 1462009,
       "itemName": "Gross Jaeger",
-      "chineseItemName": null,
+      "chineseItemName": "破天弩弓",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -218,7 +218,7 @@
     {
       "itemId": 1472028,
       "itemName": "Blue Scarab",
-      "chineseItemName": null,
+      "chineseItemName": "藍閃電甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -229,7 +229,7 @@
     {
       "itemId": 1492009,
       "itemName": "Abyss Shooter",
-      "chineseItemName": null,
+      "chineseItemName": "深淵射手",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -240,7 +240,7 @@
     {
       "itemId": 1102021,
       "itemName": "Blue Gaia Cape",
-      "chineseItemName": null,
+      "chineseItemName": "藍鬥士披風",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -251,7 +251,7 @@
     {
       "itemId": 1201003,
       "itemName": "Blue Arrow for Crossbow",
-      "chineseItemName": null,
+      "chineseItemName": "冰晶弩箭",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -262,7 +262,7 @@
     {
       "itemId": 1202005,
       "itemName": "Glaze Capsule",
-      "chineseItemName": null,
+      "chineseItemName": "寒冰膠囊",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -273,7 +273,7 @@
     {
       "itemId": 2044602,
       "itemName": "Scroll for Crossbow for ATT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "弩攻擊卷軸10%",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -284,7 +284,7 @@
     {
       "itemId": 2040816,
       "itemName": "Scroll for Gloves for Magic ATT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "手套魔力卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

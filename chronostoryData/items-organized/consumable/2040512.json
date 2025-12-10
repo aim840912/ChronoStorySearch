@@ -4,7 +4,7 @@
     "id": 2040512,
     "name": "Scroll for Overall Armor for INT 100%",
     "description": "Improves INT on the overall armor.\\nSuccess rate: 100%, INT + 1",
-    "chineseName": "套服智力卷軸100%"
+    "chineseItemName": "套服智力卷軸100%"
   },
   "metaInfo": {
     "only": false,

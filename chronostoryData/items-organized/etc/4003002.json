@@ -4,7 +4,7 @@
     "id": 4003002,
     "name": "Piece of Ice",
     "description": "Water frozen through the power of magic. Doesn't melt easily.",
-    "chineseName": "冰塊"
+    "chineseItemName": "冰塊"
   },
   "metaInfo": {
     "only": false,

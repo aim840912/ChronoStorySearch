@@ -4,7 +4,7 @@
     "id": 4000108,
     "name": "Panda Doll",
     "description": "A small, adorable-looking panda doll. Looks so real that it may just get up and walk around any minute.",
-    "chineseName": "玩具熊貓"
+    "chineseItemName": "玩具熊貓"
   },
   "metaInfo": {
     "only": false,

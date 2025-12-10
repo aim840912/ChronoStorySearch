@@ -4,7 +4,7 @@
     "id": 4000004,
     "name": "Squishy Liquid",
     "description": "Very thick and sticky liquid",
-    "chineseName": "綠液球"
+    "chineseItemName": "綠液球"
   },
   "metaInfo": {
     "only": false,

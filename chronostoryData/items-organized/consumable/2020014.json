@@ -4,7 +4,7 @@
     "id": 2020014,
     "name": "Sunrise Dew",
     "description": "Dew collected early morning. Recovers 4000 MP",
-    "chineseName": "清晨之露"
+    "chineseItemName": "清晨之露"
   },
   "metaInfo": {
     "only": false,

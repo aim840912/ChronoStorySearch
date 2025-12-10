@@ -4,7 +4,7 @@
     "id": 4031146,
     "name": "Animal Fossil",
     "description": "A fossil of an animal from thousands of years ago.",
-    "chineseName": "動物骨化石"
+    "chineseItemName": "動物骨化石"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 4000176,
     "name": "Poisonous Mushroom",
     "description": "A poisonous mushroom that lives on the humongous Zombie Mushroom.",
-    "chineseName": "毒菇"
+    "chineseItemName": "毒菇"
   },
   "metaInfo": {
     "only": false,

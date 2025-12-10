@@ -4,7 +4,7 @@
     "id": 4000010,
     "name": "Slime Bubble",
     "description": "A bubble removed from the slime",
-    "chineseName": "綠水靈珠"
+    "chineseItemName": "綠水靈珠"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 4000186,
     "name": "Dark Drake's Horn",
     "description": "A horn from Dark Drake's head.",
-    "chineseName": "黑龍之角"
+    "chineseItemName": "黑龍之角"
   },
   "metaInfo": {
     "only": false,

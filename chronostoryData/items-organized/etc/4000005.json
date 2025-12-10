@@ -4,7 +4,7 @@
     "id": 4000005,
     "name": "Leaf",
     "description": "The leaf that's taken out of a tree",
-    "chineseName": "葉子"
+    "chineseItemName": "葉子"
   },
   "metaInfo": {
     "only": false,

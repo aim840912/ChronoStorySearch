@@ -4,7 +4,7 @@
     "id": 4001006,
     "name": "Flaming Feather",
     "description": "A flame with the look of a feather. It never stops burning.",
-    "chineseName": "火焰羽毛"
+    "chineseItemName": "火焰羽毛"
   },
   "metaInfo": {
     "only": false,

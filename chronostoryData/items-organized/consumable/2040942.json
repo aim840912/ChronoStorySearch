@@ -4,7 +4,7 @@
     "id": 2040942,
     "name": "Scroll for Shield for STR 15%",
     "description": "Improves STR on Shields.\\nSuccess Rate: 15%, STR+3",
-    "chineseName": "盾牌力量卷軸15%"
+    "chineseItemName": "盾牌力量卷軸15%"
   },
   "metaInfo": {
     "only": false,

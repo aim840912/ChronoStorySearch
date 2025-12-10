@@ -4,7 +4,7 @@
     "id": 2044707,
     "name": "Scroll for Claw for ATT 15%",
     "description": "Improves attack on the Claw. nSuccess rate:15%, weapon attack+5, accuracy+3, LUK+1",
-    "chineseName": "拳套攻擊卷軸15%"
+    "chineseItemName": "拳套攻擊卷軸15%"
   },
   "metaInfo": {
     "only": false,

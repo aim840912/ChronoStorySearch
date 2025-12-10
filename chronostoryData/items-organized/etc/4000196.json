@@ -4,7 +4,7 @@
     "id": 4000196,
     "name": "Wooden Board",
     "description": "A wooden board that Wooden Mask wears.",
-    "chineseName": "木板"
+    "chineseItemName": "木板"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 4000040,
     "name": "Mushmom Spore",
     "description": "A spore from Mushmom, a humongous mushroom",
-    "chineseName": "蘑菇王芽孢"
+    "chineseItemName": "蘑菇王芽孢"
   },
   "metaInfo": {
     "only": false,

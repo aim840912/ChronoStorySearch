@@ -4,7 +4,7 @@
     "id": 2040824,
     "name": "Scroll for Gloves for Defense 60%",
     "description": "Improves HP on gloves.\\nSuccess rate:60%, MaxHP+15. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "手套防禦卷軸60%",
+    "chineseItemName": "手套防禦卷軸60%",
     "chineseNameSource": "gacha"
   },
   "metaInfo": {

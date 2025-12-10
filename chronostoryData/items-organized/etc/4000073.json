@@ -4,7 +4,7 @@
     "id": 4000073,
     "name": "Solid Horn",
     "description": "A horn that can be obtained from Jr. Cellion, Jr. Lioner, and Jr. Grupin.",
-    "chineseName": "獨角獅硬角"
+    "chineseItemName": "獨角獅硬角"
   },
   "metaInfo": {
     "only": false,

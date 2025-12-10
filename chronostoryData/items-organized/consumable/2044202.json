@@ -4,7 +4,7 @@
     "id": 2044202,
     "name": "Scroll for Two-Handed BW for ATT 10%",
     "description": "Improves attack on two-handed blunt weapon.\\nSuccess rate:10%, weapon attack+5, STR+3, weapon def.+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "雙手棍攻擊卷軸10%"
+    "chineseItemName": "雙手棍攻擊卷軸10%"
   },
   "metaInfo": {
     "only": false,

@@ -4,40 +4,18 @@
   "chineseMobName": "小丑瑞奇",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 45,
+  "totalDrops": 35,
   "drops": [
     {
       "itemId": 4000129,
       "itemName": "Lazy Buffy Marble",
-      "chineseItemName": null,
+      "chineseItemName": "小丑瑞奇的球",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 4031170,
-      "itemName": "Tachion",
-      "chineseItemName": null,
-      "chance": 50,
-      "displayChance": "50.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 7100,
-      "enabled": false
-    },
-    {
-      "itemId": 4031195,
-      "itemName": "Aurora Marble",
-      "chineseItemName": null,
-      "chance": 50,
-      "displayChance": "50.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 3449,
-      "enabled": false
     },
     {
       "itemId": 0,
@@ -51,42 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 4031175,
-      "itemName": "Tachion",
-      "chineseItemName": null,
-      "chance": 30,
-      "displayChance": "30.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 7101,
-      "enabled": false
-    },
-    {
-      "itemId": 4031171,
-      "itemName": "Mysterious Powder",
-      "chineseItemName": null,
-      "chance": 10,
-      "displayChance": "10.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 7101,
-      "enabled": false
-    },
-    {
-      "itemId": 4031189,
-      "itemName": "Aurora Marble",
-      "chineseItemName": null,
-      "chance": 10,
-      "displayChance": "10.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 3448,
-      "enabled": false
-    },
-    {
       "itemId": 2000002,
       "itemName": "White Potion",
-      "chineseItemName": null,
+      "chineseItemName": "白色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -97,7 +42,7 @@
     {
       "itemId": 2000004,
       "itemName": "Elixir",
-      "chineseItemName": null,
+      "chineseItemName": "特殊藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -108,7 +53,7 @@
     {
       "itemId": 4004003,
       "itemName": "LUK Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "幸運母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -119,7 +64,7 @@
     {
       "itemId": 4004004,
       "itemName": "Dark Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黑暗母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -130,7 +75,7 @@
     {
       "itemId": 4006000,
       "itemName": "The Magic Rock",
-      "chineseItemName": null,
+      "chineseItemName": "魔法石",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -141,7 +86,7 @@
     {
       "itemId": 4010006,
       "itemName": "Gold Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黃金母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -152,7 +97,7 @@
     {
       "itemId": 4020008,
       "itemName": "Black Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黑水晶母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -161,31 +106,9 @@
       "enabled": true
     },
     {
-      "itemId": 2384012,
-      "itemName": "Lazy Buffy Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130001,
-      "itemName": "Shoes Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002101,
       "itemName": "Old Mithril Nordic Helm",
-      "chineseItemName": null,
+      "chineseItemName": "舊鋰礦諾曼頭盔",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -196,7 +119,7 @@
     {
       "itemId": 1002242,
       "itemName": "Red Seraphis",
-      "chineseItemName": null,
+      "chineseItemName": "紅和平之帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -207,7 +130,7 @@
     {
       "itemId": 1032015,
       "itemName": "Metal Silver Earrings",
-      "chineseItemName": null,
+      "chineseItemName": "銀製耳環",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -218,7 +141,7 @@
     {
       "itemId": 1082060,
       "itemName": "Sapphire Clench",
-      "chineseItemName": null,
+      "chineseItemName": "藍戰鬥手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -229,7 +152,7 @@
     {
       "itemId": 1082065,
       "itemName": "Blue Moon Gloves",
-      "chineseItemName": null,
+      "chineseItemName": "藍月手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -240,7 +163,7 @@
     {
       "itemId": 1082096,
       "itemName": "Silver Rover",
-      "chineseItemName": null,
+      "chineseItemName": "銀名譽手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -251,7 +174,7 @@
     {
       "itemId": 1102024,
       "itemName": "Black Gaia Cape",
-      "chineseItemName": null,
+      "chineseItemName": "黑鬥士披風",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -262,7 +185,7 @@
     {
       "itemId": 1040089,
       "itemName": "Umber Shouldermail",
-      "chineseItemName": null,
+      "chineseItemName": "黑板金鎧甲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -273,7 +196,7 @@
     {
       "itemId": 1040099,
       "itemName": "Oaker Scorpio",
-      "chineseItemName": null,
+      "chineseItemName": "黃飛影之服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -284,7 +207,7 @@
     {
       "itemId": 1060078,
       "itemName": "Umber Shouldermail Pants",
-      "chineseItemName": null,
+      "chineseItemName": "黑板金褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -295,7 +218,7 @@
     {
       "itemId": 1060088,
       "itemName": "Oaker Scorpio Pants",
-      "chineseItemName": null,
+      "chineseItemName": "黃飛影之褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -306,7 +229,7 @@
     {
       "itemId": 1072125,
       "itemName": "Purple Steel-Tip Boots",
-      "chineseItemName": null,
+      "chineseItemName": "紫弓手鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -317,7 +240,7 @@
     {
       "itemId": 1072158,
       "itemName": "Red Lapiz Sandals",
-      "chineseItemName": null,
+      "chineseItemName": "紅水晶涼鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -326,31 +249,9 @@
       "enabled": true
     },
     {
-      "itemId": 1092045,
-      "itemName": "Maple Magician shield",
-      "chineseItemName": null,
-      "chance": 0.075,
-      "displayChance": "0.075%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1332056,
-      "itemName": "Maple Asura Dagger",
-      "chineseItemName": null,
-      "chance": 0.075,
-      "displayChance": "0.075%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2043701,
       "itemName": "Scroll for Wand for Magic ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "短杖魔力卷軸60%",
       "chance": 0.075,
       "displayChance": "0.075%",
       "minQty": 1,
@@ -359,20 +260,9 @@
       "enabled": true
     },
     {
-      "itemId": 1432012,
-      "itemName": "Maple Impaler",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1050061,
       "itemName": "Blue Linnex",
-      "chineseItemName": null,
+      "chineseItemName": "藍飄雲之衣",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -383,7 +273,7 @@
     {
       "itemId": 1051031,
       "itemName": "White Calaf",
-      "chineseItemName": null,
+      "chineseItemName": "白妖精禮服",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -394,7 +284,7 @@
     {
       "itemId": 1051042,
       "itemName": "Blue Choro",
-      "chineseItemName": null,
+      "chineseItemName": "藍草露",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -405,7 +295,7 @@
     {
       "itemId": 1072152,
       "itemName": "Dark Moss Boots",
-      "chineseItemName": null,
+      "chineseItemName": "黑無痕之鞋",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -416,7 +306,7 @@
     {
       "itemId": 1082087,
       "itemName": "Gold Manute",
-      "chineseItemName": null,
+      "chineseItemName": "黃金封印手套",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -427,7 +317,7 @@
     {
       "itemId": 1322026,
       "itemName": "Colorful Tube",
-      "chineseItemName": null,
+      "chineseItemName": "彩虹游泳圈",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -438,7 +328,7 @@
     {
       "itemId": 1432007,
       "itemName": "Redemption",
-      "chineseItemName": null,
+      "chineseItemName": "銀龍槍",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -449,7 +339,7 @@
     {
       "itemId": 1482008,
       "itemName": "Psycho Claw",
-      "chineseItemName": null,
+      "chineseItemName": "塞爾拉利刃拳套",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -460,7 +350,7 @@
     {
       "itemId": 2040301,
       "itemName": "Scroll for Earring for INT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "耳環智力卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -471,7 +361,7 @@
     {
       "itemId": 2040318,
       "itemName": "Scroll for Earring for DEX 10%",
-      "chineseItemName": null,
+      "chineseItemName": "耳環敏捷卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -482,7 +372,7 @@
     {
       "itemId": 2040602,
       "itemName": "Scroll for Bottomwear for Defense 10%",
-      "chineseItemName": null,
+      "chineseItemName": "褲裙防禦卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -493,7 +383,7 @@
     {
       "itemId": 2044801,
       "itemName": "Scroll for Knuckler for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "指虎攻擊卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

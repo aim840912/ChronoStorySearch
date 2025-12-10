@@ -4,7 +4,7 @@
     "id": 2000002,
     "name": "White Potion",
     "description": "A highly-concentrated potion made out of red herbs.\\nRecovers 300 HP.",
-    "chineseName": "白色藥水"
+    "chineseItemName": "白色藥水"
   },
   "metaInfo": {
     "only": false,

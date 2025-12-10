@@ -4,7 +4,7 @@
     "id": 2044401,
     "name": "Scroll for Pole Arm for ATT 60%",
     "description": "Improves attack on pole arm.\\nSuccess rate:60%, weapon attack+2, STR+1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "矛攻擊卷軸60%"
+    "chineseItemName": "矛攻擊卷軸60%"
   },
   "metaInfo": {
     "only": false,

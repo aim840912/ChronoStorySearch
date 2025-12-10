@@ -4,7 +4,7 @@
     "id": 2044000,
     "name": "Scroll for Two-Handed Sword for ATT 100%",
     "description": "Improves attack on two-handed sword.\\nSuccess rate:100%, weapon attack+1",
-    "chineseName": "雙手劍攻擊卷軸100%"
+    "chineseItemName": "雙手劍攻擊卷軸100%"
   },
   "metaInfo": {
     "only": false,

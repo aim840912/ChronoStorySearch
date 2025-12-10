@@ -4,7 +4,7 @@
     "id": 2002006,
     "name": "Warrior Pill",
     "description": "A pill of concentrated warrior potion. Att. + 5 for 10 minutes",
-    "chineseName": "攻擊藥丸"
+    "chineseItemName": "攻擊藥丸"
   },
   "metaInfo": {
     "only": false,

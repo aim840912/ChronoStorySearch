@@ -4,7 +4,7 @@
     "id": 4000112,
     "name": "Mechanical Heart",
     "description": "A mechanical heart from the inside of the robot. Looks like it's still working.",
-    "chineseName": "機器心臟"
+    "chineseItemName": "機器心臟"
   },
   "metaInfo": {
     "only": false,

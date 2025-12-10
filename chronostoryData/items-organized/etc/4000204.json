@@ -4,7 +4,7 @@
     "id": 4000204,
     "name": "Skeledog's Bone",
     "description": "A bone that fell out of Skeledog.",
-    "chineseName": "骷髏犬骨頭"
+    "chineseItemName": "骷髏犬骨頭"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 2040516,
     "name": "Scroll for Overall Armor for LUK 60%",
     "description": "Improves LUK on the overall armor.\\nSuccess rate: 60%, LUK + 2, avoidability + 1. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "套服幸運卷軸60%"
+    "chineseItemName": "套服幸運卷軸60%"
   },
   "metaInfo": {
     "only": false,

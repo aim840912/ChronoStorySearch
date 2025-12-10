@@ -4,7 +4,7 @@
     "id": 2040432,
     "name": "Scroll for Topwear for STR 15%",
     "description": "Improves STR on Topwear.\\nSuccess Rate 15%, STR+3",
-    "chineseName": "上衣力量卷軸15%"
+    "chineseItemName": "上衣力量卷軸15%"
   },
   "metaInfo": {
     "only": false,

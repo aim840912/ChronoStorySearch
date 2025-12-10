@@ -4,7 +4,7 @@
     "id": 2043215,
     "name": "Scroll for One-Handed BW for Accuracy 15%",
     "description": "Improves accuracy on one-handed blunt weapons. Success rate: 15%, DEX +3, ATK +3, ACC +5",
-    "chineseName": "單手棍命中卷軸15%",
+    "chineseItemName": "單手棍命中卷軸15%",
     "chineseNameSource": "gacha"
   },
   "metaInfo": {

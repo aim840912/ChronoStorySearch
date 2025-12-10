@@ -4,7 +4,7 @@
     "id": 4000208,
     "name": "Horse Skull",
     "description": "A horse skull from the horse of Skeleton Commander.",
-    "chineseName": "馬頭骨"
+    "chineseItemName": "馬頭骨"
   },
   "metaInfo": {
     "only": false,

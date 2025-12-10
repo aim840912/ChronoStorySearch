@@ -4,7 +4,7 @@
     "id": 2040044,
     "name": "Scroll for Helmet for DEX 15%",
     "description": "Improves DEX on Helmets.\\nSuccess Rate 15%, DEX+3",
-    "chineseName": "頭盔敏捷卷軸15%"
+    "chineseItemName": "頭盔敏捷卷軸15%"
   },
   "metaInfo": {
     "only": false,

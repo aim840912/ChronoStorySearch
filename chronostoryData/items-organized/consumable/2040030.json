@@ -4,7 +4,7 @@
     "id": 2040030,
     "name": "Scroll for Helmet for DEX 30%",
     "description": "Improves DEX on headwear..Success rate 30%, DEX+3nIf failed, the item will be destroyed at a 50% rate.",
-    "chineseName": "頭盔敏捷詛咒卷軸30%"
+    "chineseItemName": "頭盔敏捷詛咒卷軸30%"
   },
   "metaInfo": {
     "only": false,

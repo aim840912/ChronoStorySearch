@@ -4,7 +4,7 @@
     "id": 4000019,
     "name": "Snail Shell",
     "description": "Shell removed from a snail",
-    "chineseName": "嫩寶殼"
+    "chineseItemName": "嫩寶殼"
   },
   "metaInfo": {
     "only": false,

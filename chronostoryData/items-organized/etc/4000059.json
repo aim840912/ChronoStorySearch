@@ -4,7 +4,7 @@
     "id": 4000059,
     "name": "Star Pixie's Starpiece",
     "description": "A piece of star dropped by Star Pixie. It glows beautifully.",
-    "chineseName": "星光精靈的碎片"
+    "chineseItemName": "星光精靈的碎片"
   },
   "metaInfo": {
     "only": false,

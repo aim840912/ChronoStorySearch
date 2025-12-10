@@ -4,7 +4,7 @@
     "id": 4001112,
     "name": "[Storybook] Indecipherable Book",
     "description": "It's a book written with monster language that I can't read.  Would Manji know about the book?\\nOnly for : #c4th Job Warrior#",
-    "chineseName": "無法閱讀的書"
+    "chineseItemName": "無法閱讀的書"
   },
   "metaInfo": {
     "only": true,

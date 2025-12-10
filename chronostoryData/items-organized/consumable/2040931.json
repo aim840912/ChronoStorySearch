@@ -4,7 +4,7 @@
     "id": 2040931,
     "name": "Scroll for Shield for STR 60%",
     "description": "Improves strength on shields.\\nSuccess rate:60%, STR+2. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "盾牌力量卷軸60%"
+    "chineseItemName": "盾牌力量卷軸60%"
   },
   "metaInfo": {
     "only": false,

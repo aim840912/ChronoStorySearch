@@ -4,7 +4,7 @@
     "id": 4006000,
     "name": "The Magic Rock",
     "description": "A mythical rock with the power of magic in it. Used with high-leveled skills.",
-    "chineseName": "魔法石"
+    "chineseItemName": "魔法石"
   },
   "metaInfo": {
     "only": false,

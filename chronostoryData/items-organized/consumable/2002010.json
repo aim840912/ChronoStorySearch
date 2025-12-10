@@ -4,7 +4,7 @@
     "id": 2002010,
     "name": "Speed Pill",
     "description": "A pill of concentrated speed potion. Increased speed for 10 minutes",
-    "chineseName": "速度藥丸"
+    "chineseItemName": "速度藥丸"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 4000134,
     "name": "Viking Sail",
     "description": "A sail on the ship that Viking was riding on.",
-    "chineseName": "維京船帆"
+    "chineseItemName": "維京船帆"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 4031198,
     "name": "Empty Potion Bottle",
     "description": "An empty bottle that used to contain spell ingredients.",
-    "chineseName": "空的藥水瓶"
+    "chineseItemName": "空的藥水瓶"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 2040419,
     "name": "Scroll for Topwear for STR 10%",
     "description": "Improves strength on topwear.\\nSuccess rate 10%, STR+3. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "上衣力量卷軸10%"
+    "chineseItemName": "上衣力量卷軸10%"
   },
   "metaInfo": {
     "only": false,

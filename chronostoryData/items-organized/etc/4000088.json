@@ -4,7 +4,7 @@
     "id": 4000088,
     "name": "Jr. Pepe's Fish",
     "description": "A snackery of Jr. Pepe : a live, fresh fish.",
-    "chineseName": "小企鵝王的魚"
+    "chineseItemName": "小企鵝王的魚"
   },
   "metaInfo": {
     "only": false,

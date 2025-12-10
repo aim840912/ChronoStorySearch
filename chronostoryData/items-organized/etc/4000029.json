@@ -4,7 +4,7 @@
     "id": 4000029,
     "name": "Lupin's Banana",
     "description": "It's Lupin's favorite: a tasty banana",
-    "chineseName": "香蕉"
+    "chineseItemName": "香蕉"
   },
   "metaInfo": {
     "only": false,

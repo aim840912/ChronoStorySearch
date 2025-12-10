@@ -4,7 +4,7 @@
     "id": 4000008,
     "name": "Charm of the Undead",
     "description": "A charm taken out of an undead monster.",
-    "chineseName": "道符"
+    "chineseItemName": "道符"
   },
   "metaInfo": {
     "only": false,

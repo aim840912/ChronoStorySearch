@@ -4,7 +4,7 @@
     "id": 2000001,
     "name": "Orange Potion",
     "description": "A concentrated potion made out of red herbs.\\nRecovers 150 HP.",
-    "chineseName": "橘色藥水"
+    "chineseItemName": "橘色藥水"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 1102040,
     "name": "Yellow Adventurer Cape",
     "description": "A yellow cape for the prototypical adventurer.",
-    "chineseName": "黃色冒險家披風"
+    "chineseItemName": "黃色冒險家披風"
   },
   "metaInfo": {
     "only": false,

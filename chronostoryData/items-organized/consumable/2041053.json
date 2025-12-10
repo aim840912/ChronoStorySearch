@@ -4,7 +4,7 @@
     "id": 2041053,
     "name": "Scroll for Cape for INT 15%",
     "description": "Improves INT on the cape.\\nSuccess rate:15%, INT+3",
-    "chineseName": "披風智力卷軸15%"
+    "chineseItemName": "披風智力卷軸15%"
   },
   "metaInfo": {
     "only": false,

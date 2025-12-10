@@ -4,7 +4,7 @@
     "id": 4000041,
     "name": "Malady's Experimental Frog",
     "description": "A bottle containing frogs that Malady had for various experiments.",
-    "chineseName": "巫婆的青蛙實驗"
+    "chineseItemName": "巫婆的青蛙實驗"
   },
   "metaInfo": {
     "only": false,

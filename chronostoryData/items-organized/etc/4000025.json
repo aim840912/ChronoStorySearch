@@ -4,7 +4,7 @@
     "id": 4000025,
     "name": "Dark Stone Golem Rubble",
     "description": "A mystic rubble that was a part of Dark Stone Golem.",
-    "chineseName": "黑石塊"
+    "chineseItemName": "黑石塊"
   },
   "metaInfo": {
     "only": false,

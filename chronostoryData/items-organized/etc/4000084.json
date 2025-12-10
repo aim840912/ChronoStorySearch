@@ -4,7 +4,7 @@
     "id": 4000084,
     "name": "Ice Sentinel Shellpiece",
     "description": "A hard shellpiece that's a part of Ice Sentinel.",
-    "chineseName": "冰石球的石塊"
+    "chineseItemName": "冰石球的石塊"
   },
   "metaInfo": {
     "only": false,

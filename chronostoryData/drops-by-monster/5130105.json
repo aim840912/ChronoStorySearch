@@ -4,12 +4,12 @@
   "chineseMobName": "黑色小雪球",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 36,
+  "totalDrops": 31,
   "drops": [
     {
       "itemId": 4000055,
       "itemName": "Dark Jr. Yeti Skin",
-      "chineseItemName": null,
+      "chineseItemName": "黑吉拉之皮",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 4003004,
       "itemName": "Stiff Feather",
-      "chineseItemName": null,
+      "chineseItemName": "堅硬的羽毛",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 4000021,
       "itemName": "Leather",
-      "chineseItemName": null,
+      "chineseItemName": "動物皮",
       "chance": 5,
       "displayChance": "5.0%",
       "minQty": 1,
@@ -53,7 +53,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -64,7 +64,7 @@
     {
       "itemId": 2000004,
       "itemName": "Elixir",
-      "chineseItemName": null,
+      "chineseItemName": "特殊藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -75,7 +75,7 @@
     {
       "itemId": 2022001,
       "itemName": "Red Bean Porridge",
-      "chineseItemName": null,
+      "chineseItemName": "小豆粥",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -86,7 +86,7 @@
     {
       "itemId": 4004002,
       "itemName": "DEX Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "敏捷母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -97,7 +97,7 @@
     {
       "itemId": 4004004,
       "itemName": "Dark Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "黑暗母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -108,7 +108,7 @@
     {
       "itemId": 4010005,
       "itemName": "Orihalcon Ore",
-      "chineseItemName": null,
+      "chineseItemName": "紫礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -119,7 +119,7 @@
     {
       "itemId": 4020004,
       "itemName": "Opal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "蛋白石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -128,42 +128,9 @@
       "enabled": true
     },
     {
-      "itemId": 2383033,
-      "itemName": "Dark Jr. Yeti Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130007,
-      "itemName": "Two-Handed Mace Forging Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130017,
-      "itemName": "Gun Production Stimulator",
-      "chineseItemName": null,
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002208,
       "itemName": "Blue Sonata",
-      "chineseItemName": null,
+      "chineseItemName": "藍黑太陽帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -174,7 +141,7 @@
     {
       "itemId": 1002216,
       "itemName": "Aqua Golden Circlet",
-      "chineseItemName": null,
+      "chineseItemName": "水黃金法冠",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -185,7 +152,7 @@
     {
       "itemId": 1032021,
       "itemName": "Holy Cross Earrings",
-      "chineseItemName": null,
+      "chineseItemName": "聖十字耳環",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -196,7 +163,7 @@
     {
       "itemId": 1082059,
       "itemName": "Bronze Clench",
-      "chineseItemName": null,
+      "chineseItemName": "青銅戰鬥手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -207,7 +174,7 @@
     {
       "itemId": 1082090,
       "itemName": "Sephia Garner",
-      "chineseItemName": null,
+      "chineseItemName": "赤神功手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -218,7 +185,7 @@
     {
       "itemId": 1102015,
       "itemName": "Blue Magic Cape",
-      "chineseItemName": null,
+      "chineseItemName": "藍色魔法披風",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -229,7 +196,7 @@
     {
       "itemId": 1040102,
       "itemName": "Bronze Platine",
-      "chineseItemName": null,
+      "chineseItemName": "青銅暴風甲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -240,7 +207,7 @@
     {
       "itemId": 1041082,
       "itemName": "Brown Piettra",
-      "chineseItemName": null,
+      "chineseItemName": "褐女貴族服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -251,7 +218,7 @@
     {
       "itemId": 1041086,
       "itemName": "Black Jangoon Armor",
-      "chineseItemName": null,
+      "chineseItemName": "黑鎮月鎧甲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -262,7 +229,7 @@
     {
       "itemId": 1060090,
       "itemName": "Bronze Platine Pants",
-      "chineseItemName": null,
+      "chineseItemName": "青銅暴風褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -273,7 +240,7 @@
     {
       "itemId": 1061081,
       "itemName": "Brown Piettra Skirt",
-      "chineseItemName": null,
+      "chineseItemName": "褐貴族裙",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -284,7 +251,7 @@
     {
       "itemId": 1061085,
       "itemName": "Black Jangoon Skirt",
-      "chineseItemName": null,
+      "chineseItemName": "黑鎮月裙",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -295,7 +262,7 @@
     {
       "itemId": 1072138,
       "itemName": "Orange Goldrunners",
-      "chineseItemName": null,
+      "chineseItemName": "黃天使鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -306,7 +273,7 @@
     {
       "itemId": 1072151,
       "itemName": "Gold Moss Boots",
-      "chineseItemName": null,
+      "chineseItemName": "金無痕之鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -315,31 +282,9 @@
       "enabled": true
     },
     {
-      "itemId": 1422029,
-      "itemName": "Maple Belzet",
-      "chineseItemName": null,
-      "chance": 0.075,
-      "displayChance": "0.075%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1382012,
-      "itemName": "Maple Lama Staff",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1092010,
       "itemName": "Silver Legend Shield",
-      "chineseItemName": null,
+      "chineseItemName": "古老銀盾",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -350,7 +295,7 @@
     {
       "itemId": 1382006,
       "itemName": "Thorns",
-      "chineseItemName": null,
+      "chineseItemName": "白龍之杖",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -361,7 +306,7 @@
     {
       "itemId": 2040027,
       "itemName": "Scroll for Helmet for DEX 100%",
-      "chineseItemName": null,
+      "chineseItemName": "頭盔敏捷卷軸100%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -372,7 +317,7 @@
     {
       "itemId": 2040317,
       "itemName": "Scroll for Earring for DEX 60%",
-      "chineseItemName": null,
+      "chineseItemName": "耳環敏捷卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -383,7 +328,7 @@
     {
       "itemId": 2043701,
       "itemName": "Scroll for Wand for Magic ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "短杖魔力卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -394,7 +339,7 @@
     {
       "itemId": 2044112,
       "itemName": "Scroll for Two-Handed Axe for Accuracy 60%",
-      "chineseItemName": null,
+      "chineseItemName": "雙手斧命中卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

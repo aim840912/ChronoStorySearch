@@ -4,7 +4,7 @@
     "id": 4003005,
     "name": "Soft Feather",
     "description": "A soft and light feather. Used to make arrows.",
-    "chineseName": "柔軟的羽毛"
+    "chineseItemName": "柔軟的羽毛"
   },
   "metaInfo": {
     "only": false,

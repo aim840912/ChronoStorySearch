@@ -4,7 +4,7 @@
     "id": 4000000,
     "name": "Blue Snail Shell",
     "description": "A shell removed from a snail",
-    "chineseName": "藍寶殼"
+    "chineseItemName": "藍寶殼"
   },
   "metaInfo": {
     "only": false,

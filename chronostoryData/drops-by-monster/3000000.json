@@ -4,12 +4,12 @@
   "chineseMobName": "石球",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 29,
+  "totalDrops": 25,
   "drops": [
     {
       "itemId": 4000063,
       "itemName": "Sentinel Shellpiece",
-      "chineseItemName": null,
+      "chineseItemName": "石球的石塊",
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
@@ -29,31 +29,9 @@
       "enabled": true
     },
     {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": null,
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000001,
       "itemName": "Orange Potion",
-      "chineseItemName": null,
+      "chineseItemName": "橘色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -64,7 +42,7 @@
     {
       "itemId": 2000003,
       "itemName": "Blue Potion",
-      "chineseItemName": null,
+      "chineseItemName": "藍色藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -75,7 +53,7 @@
     {
       "itemId": 4004000,
       "itemName": "Power Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "力量母礦",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -86,7 +64,7 @@
     {
       "itemId": 4006000,
       "itemName": "The Magic Rock",
-      "chineseItemName": null,
+      "chineseItemName": "魔法石",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -97,7 +75,7 @@
     {
       "itemId": 4010002,
       "itemName": "Mithril Ore",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -108,7 +86,7 @@
     {
       "itemId": 4020004,
       "itemName": "Opal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "蛋白石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -117,20 +95,9 @@
       "enabled": true
     },
     {
-      "itemId": 2381032,
-      "itemName": "Sentinel Card",
-      "chineseItemName": null,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002137,
       "itemName": "Green Pole-Feather Hat",
-      "chineseItemName": null,
+      "chineseItemName": "綠羽翼三角帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -141,7 +108,7 @@
     {
       "itemId": 1002622,
       "itemName": "White Oceania Cap",
-      "chineseItemName": null,
+      "chineseItemName": "白色遠洋帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -152,7 +119,7 @@
     {
       "itemId": 1032006,
       "itemName": "Lightning Earrings",
-      "chineseItemName": null,
+      "chineseItemName": "來電耳環",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -163,7 +130,7 @@
     {
       "itemId": 1082037,
       "itemName": "Bronze Wolfskin",
-      "chineseItemName": null,
+      "chineseItemName": "青銅精神手套",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -174,7 +141,7 @@
     {
       "itemId": 1040021,
       "itemName": "Red Hwarang Shirt",
-      "chineseItemName": null,
+      "chineseItemName": "紅龍服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -185,7 +152,7 @@
     {
       "itemId": 1040061,
       "itemName": "Green Knucklevest",
-      "chineseItemName": null,
+      "chineseItemName": "綠暗影之服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -196,7 +163,7 @@
     {
       "itemId": 1060017,
       "itemName": "White Martial Arts Pants",
-      "chineseItemName": null,
+      "chineseItemName": "白武褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -207,7 +174,7 @@
     {
       "itemId": 1060050,
       "itemName": "Blue Knucklevest Pants",
-      "chineseItemName": null,
+      "chineseItemName": "藍暗影之褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -218,7 +185,7 @@
     {
       "itemId": 2041028,
       "itemName": "Dark Scroll for Cape for Defense 70%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦力卷軸70%",
       "chance": 0.075,
       "displayChance": "0.075%",
       "minQty": 1,
@@ -229,7 +196,7 @@
     {
       "itemId": 2041045,
       "itemName": "Scroll for Cape for Defense 15%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸15%",
       "chance": 0.075,
       "displayChance": "0.075%",
       "minQty": 1,
@@ -238,20 +205,9 @@
       "enabled": true
     },
     {
-      "itemId": 1382009,
-      "itemName": "Maple Staff",
-      "chineseItemName": null,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1312005,
       "itemName": "Fireman's Axe",
-      "chineseItemName": null,
+      "chineseItemName": "赤斧",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -262,7 +218,7 @@
     {
       "itemId": 1312016,
       "itemName": "Contra Axe",
-      "chineseItemName": null,
+      "chineseItemName": "昆德拉斧頭",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -273,7 +229,7 @@
     {
       "itemId": 1382018,
       "itemName": "Petal Staff",
-      "chineseItemName": null,
+      "chineseItemName": "翡赤之杖",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -284,7 +240,7 @@
     {
       "itemId": 2040316,
       "itemName": "Scroll for Earring for DEX 100%",
-      "chineseItemName": null,
+      "chineseItemName": "耳環敏捷卷軸100%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -295,7 +251,7 @@
     {
       "itemId": 2040620,
       "itemName": "Scroll for Bottomwear for Mobility 15%",
-      "chineseItemName": null,
+      "chineseItemName": "褲裙移動卷軸15%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -306,7 +262,7 @@
     {
       "itemId": 2041005,
       "itemName": "Scroll for Cape for Defense 10%",
-      "chineseItemName": null,
+      "chineseItemName": "披風防禦卷軸10%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -317,7 +273,7 @@
     {
       "itemId": 2041016,
       "itemName": "Scroll for Cape for INT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "披風智力卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

@@ -4,7 +4,7 @@
     "id": 4000215,
     "name": "Axe",
     "description": "An axe stuck in a trunk.",
-    "chineseName": "遺失的斧頭"
+    "chineseItemName": "遺失的斧頭"
   },
   "metaInfo": {
     "only": false,

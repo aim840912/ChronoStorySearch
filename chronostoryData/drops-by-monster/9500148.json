@@ -20,7 +20,7 @@
     {
       "itemId": 4000218,
       "itemName": "Ice Shell",
-      "chineseItemName": null,
+      "chineseItemName": "冰背殼",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
@@ -31,7 +31,7 @@
     {
       "itemId": 2000006,
       "itemName": "Mana Elixir",
-      "chineseItemName": null,
+      "chineseItemName": "活力藥水",
       "chance": 4,
       "displayChance": "4.0%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 4003002,
       "itemName": "Piece of Ice",
-      "chineseItemName": null,
+      "chineseItemName": "冰塊",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -53,7 +53,7 @@
     {
       "itemId": 4004000,
       "itemName": "Power Crystal Ore",
-      "chineseItemName": null,
+      "chineseItemName": "力量母礦",
       "chance": 0.5,
       "displayChance": "0.50%",
       "minQty": 1,
@@ -64,7 +64,7 @@
     {
       "itemId": 4006001,
       "itemName": "The Summoning Rock",
-      "chineseItemName": null,
+      "chineseItemName": "召喚石",
       "chance": 0.5,
       "displayChance": "0.50%",
       "minQty": 1,
@@ -75,7 +75,7 @@
     {
       "itemId": 2020014,
       "itemName": "Sunrise Dew",
-      "chineseItemName": null,
+      "chineseItemName": "清晨之露",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -86,7 +86,7 @@
     {
       "itemId": 1002099,
       "itemName": "Mithril Nordic Helm",
-      "chineseItemName": null,
+      "chineseItemName": "鋰礦諾曼頭盔",
       "chance": 0.2,
       "displayChance": "0.20%",
       "minQty": 1,
@@ -97,7 +97,7 @@
     {
       "itemId": 1002184,
       "itemName": "Brown Pilfer",
-      "chineseItemName": null,
+      "chineseItemName": "褐海盜頭巾",
       "chance": 0.2,
       "displayChance": "0.20%",
       "minQty": 1,
@@ -108,7 +108,7 @@
     {
       "itemId": 1002216,
       "itemName": "Aqua Golden Circlet",
-      "chineseItemName": null,
+      "chineseItemName": "水黃金法冠",
       "chance": 0.2,
       "displayChance": "0.20%",
       "minQty": 1,
@@ -119,7 +119,7 @@
     {
       "itemId": 1040089,
       "itemName": "Umber Shouldermail",
-      "chineseItemName": null,
+      "chineseItemName": "黑板金鎧甲",
       "chance": 0.2,
       "displayChance": "0.20%",
       "minQty": 1,
@@ -130,7 +130,7 @@
     {
       "itemId": 1040096,
       "itemName": "Brown China",
-      "chineseItemName": null,
+      "chineseItemName": "黃陽",
       "chance": 0.2,
       "displayChance": "0.20%",
       "minQty": 1,
@@ -141,7 +141,7 @@
     {
       "itemId": 1041080,
       "itemName": "Red Moon",
-      "chineseItemName": null,
+      "chineseItemName": "赤月",
       "chance": 0.2,
       "displayChance": "0.20%",
       "minQty": 1,
@@ -152,7 +152,7 @@
     {
       "itemId": 1060085,
       "itemName": "Brown China Pants",
-      "chineseItemName": null,
+      "chineseItemName": "黃陽褲",
       "chance": 0.2,
       "displayChance": "0.20%",
       "minQty": 1,
@@ -163,7 +163,7 @@
     {
       "itemId": 1072303,
       "itemName": "Brown Double Boots",
-      "chineseItemName": null,
+      "chineseItemName": "褐色強化皮靴",
       "chance": 0.2,
       "displayChance": "0.20%",
       "minQty": 1,
@@ -174,7 +174,7 @@
     {
       "itemId": 1082072,
       "itemName": "Gold Brace",
-      "chineseItemName": null,
+      "chineseItemName": "黃金勇氣手套",
       "chance": 0.2,
       "displayChance": "0.20%",
       "minQty": 1,
@@ -185,7 +185,7 @@
     {
       "itemId": 1082083,
       "itemName": "Dark Willow",
-      "chineseItemName": null,
+      "chineseItemName": "黑意志手套",
       "chance": 0.2,
       "displayChance": "0.20%",
       "minQty": 1,
@@ -196,7 +196,7 @@
     {
       "itemId": 1082198,
       "itemName": "Brown Royce",
-      "chineseItemName": null,
+      "chineseItemName": "褐色羅伊斯手套",
       "chance": 0.2,
       "displayChance": "0.20%",
       "minQty": 1,
@@ -207,7 +207,7 @@
     {
       "itemId": 1051030,
       "itemName": "Dark Calaf",
-      "chineseItemName": null,
+      "chineseItemName": "黑妖精禮服",
       "chance": 0.18,
       "displayChance": "0.18%",
       "minQty": 1,
@@ -218,7 +218,7 @@
     {
       "itemId": 1051038,
       "itemName": "Green Lumati",
-      "chineseItemName": null,
+      "chineseItemName": "綠貴族禮服",
       "chance": 0.18,
       "displayChance": "0.18%",
       "minQty": 1,
@@ -229,7 +229,7 @@
     {
       "itemId": 1052098,
       "itemName": "Brown Cotton Lagger",
-      "chineseItemName": null,
+      "chineseItemName": "褐色皮外套",
       "chance": 0.18,
       "displayChance": "0.18%",
       "minQty": 1,
@@ -240,7 +240,7 @@
     {
       "itemId": 1092009,
       "itemName": "Wooden Legend Shield",
-      "chineseItemName": null,
+      "chineseItemName": "古老木盾",
       "chance": 0.18,
       "displayChance": "0.18%",
       "minQty": 1,
@@ -251,7 +251,7 @@
     {
       "itemId": 1402010,
       "itemName": "Aluminum Baseball Bat",
-      "chineseItemName": null,
+      "chineseItemName": "鋁球棍",
       "chance": 0.18,
       "displayChance": "0.18%",
       "minQty": 1,
@@ -262,7 +262,7 @@
     {
       "itemId": 1412003,
       "itemName": "The Rising",
-      "chineseItemName": null,
+      "chineseItemName": "太陽之斧",
       "chance": 0.18,
       "displayChance": "0.18%",
       "minQty": 1,
@@ -273,7 +273,7 @@
     {
       "itemId": 1472021,
       "itemName": "Dark Slain",
-      "chineseItemName": null,
+      "chineseItemName": "黑手甲",
       "chance": 0.13,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -284,7 +284,7 @@
     {
       "itemId": 1452008,
       "itemName": "Olympus",
-      "chineseItemName": null,
+      "chineseItemName": "天弓",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -295,7 +295,7 @@
     {
       "itemId": 1462006,
       "itemName": "Silver Crow",
-      "chineseItemName": null,
+      "chineseItemName": "白銀弩",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -306,7 +306,7 @@
     {
       "itemId": 2040302,
       "itemName": "Scroll for Earring for INT 10%",
-      "chineseItemName": null,
+      "chineseItemName": "耳環智力卷軸10%",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -317,7 +317,7 @@
     {
       "itemId": 2040801,
       "itemName": "Scroll for Gloves for Accuracy 60%",
-      "chineseItemName": null,
+      "chineseItemName": "手套命中卷軸60%",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -328,7 +328,7 @@
     {
       "itemId": 2040804,
       "itemName": "Scroll for Gloves for ATT 60%",
-      "chineseItemName": null,
+      "chineseItemName": "手套攻擊卷軸60%",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -339,7 +339,7 @@
     {
       "itemId": 1040091,
       "itemName": "Red Orientican",
-      "chineseItemName": null,
+      "chineseItemName": "紅鋼玉鎧甲",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -350,7 +350,7 @@
     {
       "itemId": 1082028,
       "itemName": "Dark Mesana",
-      "chineseItemName": null,
+      "chineseItemName": "黑賢者手套",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,

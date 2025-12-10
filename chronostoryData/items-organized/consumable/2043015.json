@@ -4,7 +4,7 @@
     "id": 2043015,
     "name": "Scroll for One-Handed Sword for Accuracy 100%",
     "description": "Improves accuracy on one-handed swords.\\nSuccess rate:100%, accuracy+1",
-    "chineseName": "單手劍命中卷軸100%"
+    "chineseItemName": "單手劍命中卷軸100%"
   },
   "metaInfo": {
     "only": false,

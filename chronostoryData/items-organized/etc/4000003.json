@@ -4,7 +4,7 @@
     "id": 4000003,
     "name": "Tree Branch",
     "description": "The branch bent away from a tree",
-    "chineseName": "樹枝"
+    "chineseItemName": "樹枝"
   },
   "metaInfo": {
     "only": false,

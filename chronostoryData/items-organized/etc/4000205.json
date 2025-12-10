@@ -4,7 +4,7 @@
     "id": 4000205,
     "name": "Dirty Bandage",
     "description": "A string of dirty bandage that was wrapped around Mummydog.",
-    "chineseName": "繃帶"
+    "chineseItemName": "繃帶"
   },
   "metaInfo": {
     "only": false,

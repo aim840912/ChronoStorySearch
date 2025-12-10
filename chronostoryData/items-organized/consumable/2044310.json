@@ -4,7 +4,7 @@
     "id": 2044310,
     "name": "Scroll for Spear for Accuracy 100%",
     "description": "Improves accuracy on spears.\\nSuccess rate:100%, accuracy+1",
-    "chineseName": "槍命中卷軸100%"
+    "chineseItemName": "槍命中卷軸100%"
   },
   "metaInfo": {
     "only": false,

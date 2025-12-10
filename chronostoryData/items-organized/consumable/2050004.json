@@ -4,7 +4,7 @@
     "id": 2050004,
     "name": "All Cure Potion",
     "description": "Allows you to recover from any abnormal state.",
-    "chineseName": "萬能療傷藥"
+    "chineseItemName": "萬能療傷藥"
   },
   "metaInfo": {
     "only": false,

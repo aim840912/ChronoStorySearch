@@ -4,7 +4,7 @@
     "id": 2043019,
     "name": "Scroll for One-Handed Sword for Accuracy 10%",
     "description": "Improves accuracy on one-handed swords.\\nSuccess rate:10%, accuracy+5, DEX+3, weapon att.+3. The success rate of this scroll can be enhanced by Vega's Spell.",
-    "chineseName": "單手劍命中卷軸10%"
+    "chineseItemName": "單手劍命中卷軸10%"
   },
   "metaInfo": {
     "only": false,

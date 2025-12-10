@@ -4,7 +4,7 @@
     "id": 4010005,
     "name": "Orihalcon Ore",
     "description": "An ore of a very rare mineral, Orihalcon.",
-    "chineseName": "紫礦石母礦"
+    "chineseItemName": "紫礦石母礦"
   },
   "metaInfo": {
     "only": false,

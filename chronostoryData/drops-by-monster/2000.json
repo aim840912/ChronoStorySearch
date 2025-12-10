@@ -9,7 +9,7 @@
     {
       "itemId": 4031161,
       "itemName": "Rusty Screw",
-      "chineseItemName": null,
+      "chineseItemName": "老舊螺絲",
       "chance": 100,
       "displayChance": "100%",
       "minQty": 1,
@@ -20,7 +20,7 @@
     {
       "itemId": 4031162,
       "itemName": "Old Wooden Board",
-      "chineseItemName": null,
+      "chineseItemName": "老舊木板",
       "chance": 100,
       "displayChance": "100%",
       "minQty": 1,
@@ -42,7 +42,7 @@
     {
       "itemId": 2010000,
       "itemName": "Apple",
-      "chineseItemName": null,
+      "chineseItemName": "蘋果",
       "chance": 10,
       "displayChance": "10.0%",
       "minQty": 1,
@@ -53,7 +53,7 @@
     {
       "itemId": 2010009,
       "itemName": "Green Apple",
-      "chineseItemName": null,
+      "chineseItemName": "青蘋果",
       "chance": 10,
       "displayChance": "10.0%",
       "minQty": 1,

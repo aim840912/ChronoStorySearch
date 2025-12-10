@@ -4,7 +4,7 @@
     "id": 2012002,
     "name": "Sap of Ancient Tree",
     "description": "Sap of a thousands-of-years-old tree. \\nMagic Attack +10 for 5 min.",
-    "chineseName": "枯木樹液"
+    "chineseItemName": "枯木樹液"
   },
   "metaInfo": {
     "only": false,

@@ -4,7 +4,7 @@
     "id": 4000218,
     "name": "Ice Shell",
     "description": "A turtle shell shaped like an igloo that is made of ice.",
-    "chineseName": "冰背殼"
+    "chineseItemName": "冰背殼"
   },
   "metaInfo": {
     "only": false,

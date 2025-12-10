@@ -4,7 +4,7 @@
     "id": 4031155,
     "name": "Broken Mirror Glass",
     "description": "A piece of a shattered mirror.",
-    "chineseName": "鏡子碎片"
+    "chineseItemName": "鏡子碎片"
   },
   "metaInfo": {
     "only": false,
