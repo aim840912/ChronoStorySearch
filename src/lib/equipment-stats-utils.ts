@@ -167,12 +167,3 @@ export function calculateMaxStatCombinations(
   return combinations.length > 0 ? combinations : null
 }
 
-/**
- * 格式化屬性名稱（用於顯示）
- *
- * @param stat - 屬性鍵名
- * @returns 大寫格式的屬性名稱
- */
-export function formatStatName(stat: PrimaryStat): string {
-  return stat.toUpperCase()
-}
