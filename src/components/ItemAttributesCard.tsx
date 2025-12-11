@@ -2,7 +2,6 @@
 
 import type { ItemsOrganizedData } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { Lock, Check } from 'lucide-react'
 
 interface ItemAttributesCardProps {
   itemData: ItemsOrganizedData | null
@@ -140,6 +139,9 @@ export function ItemAttributesCard({ itemData }: ItemAttributesCardProps) {
 
   // 處理非裝備類型物品（消耗品、其他類型）
   if (!isEquipment) {
+    // 從 metaInfo.effects 讀取預處理的效果資料
+    const effects = metaInfo.effects || []
+
     return (
       <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-6 shadow-lg border border-green-200 dark:border-green-800">
         <h3 className="text-xl font-bold text-green-900 dark:text-green-100 mb-4">
@@ -152,31 +154,31 @@ export function ItemAttributesCard({ itemData }: ItemAttributesCardProps) {
             {t('item.basicInfo')}
           </h4>
           <div className="space-y-2 text-sm">
-            {/* 物品類型 */}
-            <div>
-              <span className="text-gray-500 dark:text-gray-400">{t('item.type')}:</span>
-              <span className="ml-2 font-medium text-gray-900 dark:text-white">
-                {t(`item.type.${typeInfo.overallCategory}`)}
-              </span>
-            </div>
-
-            {/* 賣價 */}
-            {metaInfo.price !== undefined && metaInfo.price > 0 && (
-              <div className="pt-2 border-t border-gray-200 dark:border-gray-700">
-                <span className="text-gray-500 dark:text-gray-400">{t('item.salePrice')}:</span>
-                <div className="mt-1">
-                  <span className="text-2xl font-bold text-yellow-600 dark:text-yellow-400">
-                    {metaInfo.price.toLocaleString()}
-                  </span>
-                  <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">
-                    {t('item.mesos')}
-                  </span>
+            {/* 效果（從預處理資料讀取） */}
+            {effects.length > 0 && (
+              <div>
+                <span className="text-gray-500 dark:text-gray-400">{t('item.effect')}:</span>
+                <div className="ml-2 flex flex-wrap gap-2">
+                  {effects.map((effect, index) => (
+                    <span
+                      key={index}
+                      className={`font-bold ${
+                        effect.includes('HP')
+                          ? 'text-red-600 dark:text-red-400'
+                          : effect.includes('MP')
+                            ? 'text-blue-600 dark:text-blue-400'
+                            : 'text-green-600 dark:text-green-400'
+                      }`}
+                    >
+                      {effect}
+                    </span>
+                  ))}
                 </div>
               </div>
             )}
 
             {/* 堆疊數量 */}
-            {metaInfo.slotMax && metaInfo.slotMax > 1 && (
+            {metaInfo.slotMax !== undefined && metaInfo.slotMax > 1 && (
               <div>
                 <span className="text-gray-500 dark:text-gray-400">{t('item.maxStack')}:</span>
                 <span className="ml-2 font-medium text-gray-900 dark:text-white">
@@ -185,23 +187,6 @@ export function ItemAttributesCard({ itemData }: ItemAttributesCardProps) {
               </div>
             )}
 
-            {/* 可交易性 */}
-            <div>
-              <span className="text-gray-500 dark:text-gray-400">{t('item.tradeable')}:</span>
-              <span className="ml-2 font-medium">
-                {metaInfo.only ? (
-                  <span className="text-red-600 dark:text-red-400 inline-flex items-center gap-1">
-                    <Lock className="w-4 h-4" />
-                    {t('item.untradeable')}
-                  </span>
-                ) : (
-                  <span className="text-green-600 dark:text-green-400 inline-flex items-center gap-1">
-                    <Check className="w-4 h-4" />
-                    {t('item.tradeableYes')}
-                  </span>
-                )}
-              </span>
-            </div>
           </div>
         </div>
       </div>
@@ -257,24 +242,6 @@ export function ItemAttributesCard({ itemData }: ItemAttributesCardProps) {
         {t('item.attributes')}
       </h3>
 
-      {/* 基本資訊 - 類型與分類 */}
-      <div className="grid grid-cols-2 gap-3 mb-4">
-        {/* 類型卡片 */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg p-3 shadow-sm">
-          <div className="text-xs text-gray-500 dark:text-gray-400">{t('item.type')}</div>
-          <div className="text-lg font-bold text-gray-900 dark:text-white">
-            {t(`item.type.${typeInfo.overallCategory}`)}
-          </div>
-        </div>
-        {/* 分類卡片 */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg p-3 shadow-sm">
-          <div className="text-xs text-gray-500 dark:text-gray-400">{t('item.category')}</div>
-          <div className="text-lg font-bold text-gray-900 dark:text-white">
-            {t(`item.category.${typeInfo.subCategory || typeInfo.category}`)}
-          </div>
-        </div>
-      </div>
-
       {/* 需求條件 */}
       {requirementStats.length > 0 && (
         <div className="mb-4">
@@ -315,13 +282,23 @@ export function ItemAttributesCard({ itemData }: ItemAttributesCardProps) {
       )}
 
       {/* 裝備屬性 */}
-      {equipmentStats.length > 0 && (
-        <div>
-          <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-            {t('item.stats')}
-          </h4>
-          <div className="flex flex-col gap-2">
-            {equipmentStats.map(({ key, label, value }) => {
+      <div>
+        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+          {t('item.stats')}
+        </h4>
+        <div className="flex flex-col gap-2">
+          {/* 分類（第一項） */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg px-4 py-2 shadow-sm">
+            <div className="flex justify-between items-center gap-4">
+              <div className="text-sm text-gray-600 dark:text-gray-400 min-w-[80px]">
+                {t('item.category')}
+              </div>
+              <div className="text-lg font-bold text-gray-900 dark:text-gray-100">
+                {t(`item.category.${typeInfo.subCategory || typeInfo.category}`)}
+              </div>
+            </div>
+          </div>
+          {equipmentStats.map(({ key, label, value }) => {
               // 直接從 randomStats 取得浮動值（使用相同的 key）
               const variation = randomStats?.[key]
               const hasVariation = variation && variation.max !== null && variation.max !== 0
@@ -371,7 +348,6 @@ export function ItemAttributesCard({ itemData }: ItemAttributesCardProps) {
             })}
           </div>
         </div>
-      )}
     </div>
   )
 }

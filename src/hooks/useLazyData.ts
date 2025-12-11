@@ -6,10 +6,10 @@ import type {
   MobInfo,
   DropItem,
   ItemsOrganizedData,
+  DropsByItemData,
 } from '@/types'
 import { clientLogger } from '@/lib/logger'
 import essentialData from '@/../chronostoryData/item-attributes-essential.json'
-import { DropItemsEssentialSchema } from '@/schemas/drops.schema'
 
 // ==================== Helper Functions ====================
 
@@ -219,21 +219,16 @@ export function useLazyDropsDetailed(mobId: number | null) {
         setError(null)
         clientLogger.info(`開始載入怪物 ${mobId} 的 Detailed 掉落資料...`)
 
-        // 動態 import 單一怪物的 Detailed JSON
-        const dataModule = await import(`@/../data/drops-detailed/${mobId}.json`)
+        // 動態 import 單一怪物的掉落資料 JSON（從 chronostoryData/drops-by-monster/）
+        const dataModule = await import(
+          `@/../chronostoryData/drops-by-monster/${mobId}.json`
+        )
         const rawData = dataModule.default
 
-        // 使用 Zod 驗證資料格式
-        const parseResult = DropItemsEssentialSchema.safeParse(rawData)
-
-        if (!parseResult.success) {
-          clientLogger.warn(`怪物 ${mobId} 掉落資料驗證失敗`, parseResult.error)
-          // 仍然使用原始資料，但記錄警告
-          setData(rawData as DropItem[])
-        } else {
-          setData(parseResult.data as DropItem[])
-          clientLogger.info(`成功載入並驗證怪物 ${mobId} 的 Detailed 掉落資料（${parseResult.data.length} 個物品）`)
-        }
+        // drops-by-monster 格式是包裝物件，掉落資料在 .drops 陣列中
+        const drops = rawData.drops as DropItem[]
+        setData(drops)
+        clientLogger.info(`成功載入怪物 ${mobId} 的掉落資料（${drops.length} 個物品）`)
       } catch (err) {
         const error = err instanceof Error ? err : new Error(`載入怪物 ${mobId} 掉落資料失敗`)
         setError(error)
@@ -245,6 +240,67 @@ export function useLazyDropsDetailed(mobId: number | null) {
 
     loadData()
   }, [mobId])
+
+  return { data, isLoading, error }
+}
+
+/**
+ * 懶加載單一物品的掉落怪物資料 Hook
+ *
+ * 使用情境：
+ * - 開啟 ItemModal 時
+ * - 需要顯示哪些怪物會掉落該物品（包含機率、數量）
+ *
+ * 優化效果：
+ * - 每個物品的掉落資料平均 ~2-5 KB
+ * - 只在需要時載入，避免載入全部掉落資料
+ *
+ * 資料來源：chronostoryData/drops-by-item/{itemId}.json
+ *
+ * @param itemId - 要載入的物品 ID（null 表示不載入）
+ */
+export function useLazyDropsByItem(itemId: number | null) {
+  const [data, setData] = useState<DropsByItemData | null>(null)
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState<Error | null>(null)
+
+  useEffect(() => {
+    if (!itemId) {
+      setData(null)
+      return
+    }
+
+    const loadData = async () => {
+      try {
+        setIsLoading(true)
+        setError(null)
+        clientLogger.info(`開始載入物品 ${itemId} 的掉落怪物資料...`)
+
+        // 動態 import 單一物品的掉落資料 JSON
+        const dataModule = await import(
+          `@/../chronostoryData/drops-by-item/${itemId}.json`
+        )
+        const rawData = dataModule.default as DropsByItemData
+
+        setData(rawData)
+        clientLogger.info(
+          `成功載入物品 ${itemId} 的掉落資料（${rawData.totalMonsters} 隻怪物）`
+        )
+      } catch (err) {
+        const error =
+          err instanceof Error
+            ? err
+            : new Error(`載入物品 ${itemId} 掉落資料失敗`)
+        setError(error)
+        // 使用 debug 而非 error，因為某些物品可能只來自轉蛋或商人，沒有怪物掉落
+        clientLogger.debug(`物品 ${itemId} 無掉落資料檔案`, err)
+      } finally {
+        setIsLoading(false)
+      }
+    }
+
+    loadData()
+  }, [itemId])
 
   return { data, isLoading, error }
 }

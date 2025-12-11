@@ -12,7 +12,10 @@
     "mob": 0,
     "slotMax": 150,
     "price": 100,
-    "setCompleteCount": 0
+    "setCompleteCount": 0,
+    "effects": [
+      "+100 MP"
+    ]
   },
   "typeInfo": {
     "overallCategory": "Use",

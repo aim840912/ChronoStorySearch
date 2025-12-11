@@ -177,6 +177,7 @@
   "item.merchantSources": "Merchant Shop",
   "item.noSources": "This item has no drop sources",
   "item.basicInfo": "Basic Info",
+  "item.effect": "Effect",
   "item.type": "Type",
   "item.category": "Category",
   "item.salePrice": "Sale Price",

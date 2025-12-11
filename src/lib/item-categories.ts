@@ -57,6 +57,8 @@ export const EQUIPMENT_CATEGORY_MAP: Record<string, ItemCategoryGroup> = {
 const SUB_TYPE_FALLBACK_MAP: Record<string, ItemCategoryGroup> = {
   'Scroll': 'scroll',
   'Potion': 'potion',
+  'Food and Drink': 'potion',
+  'Status Cure': 'potion',
   'Projectile': 'projectile',
   // 舊版相容性（如果有物品仍使用舊的 sub_type）
   'Cap': 'hat',

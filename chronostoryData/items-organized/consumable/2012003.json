@@ -12,7 +12,10 @@
     "mob": 0,
     "slotMax": 0,
     "price": 500,
-    "setCompleteCount": 0
+    "setCompleteCount": 0,
+    "effects": [
+      "+10 Defense"
+    ]
   },
   "typeInfo": {
     "overallCategory": "Use",
