@@ -11,6 +11,12 @@ import {
   WindIcon,
   TrophyIcon,
   ZapIcon,
+  ElementFireIcon,
+  ElementIceIcon,
+  ElementLightningIcon,
+  ElementHolyIcon,
+  ElementPoisonIcon,
+  NoDataIcon,
 } from './icons/MonsterStatIcons'
 
 interface MonsterStatsCardProps {
@@ -34,7 +40,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
           {t('monster.stats')}
         </h3>
         <div className="flex flex-col items-center justify-center py-8 text-gray-500 dark:text-gray-400">
-          <span className="text-6xl mb-4">🚫</span>
+          <NoDataIcon className="w-16 h-16 mb-4" />
           <p className="text-lg font-medium">{t('monster.noStats')}</p>
         </div>
       </div>
@@ -142,7 +148,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
             {stats.fire_weakness === 3 && (
               <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-2 border border-red-200 dark:border-red-800">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg">🔥</span>
+                  <ElementFireIcon className="w-5 h-5 text-red-600 dark:text-red-400" />
                   <div className="text-sm font-medium text-red-700 dark:text-red-300">
                     {t('monster.fire_weakness')}
                   </div>
@@ -152,7 +158,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
             {stats.ice_weakness === 3 && (
               <div className="bg-cyan-50 dark:bg-cyan-900/20 rounded-lg p-2 border border-cyan-200 dark:border-cyan-800">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg">❄️</span>
+                  <ElementIceIcon className="w-5 h-5 text-cyan-600 dark:text-cyan-400" />
                   <div className="text-sm font-medium text-cyan-700 dark:text-cyan-300">
                     {t('monster.ice_weakness')}
                   </div>
@@ -162,7 +168,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
             {stats.lightning_weakness === 3 && (
               <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-2 border border-yellow-200 dark:border-yellow-800">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg">⚡</span>
+                  <ElementLightningIcon className="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
                   <div className="text-sm font-medium text-yellow-700 dark:text-yellow-300">
                     {t('monster.lightning_weakness')}
                   </div>
@@ -172,7 +178,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
             {stats.holy_weakness === 3 && (
               <div className="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-2 border border-purple-200 dark:border-purple-800">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg">✨</span>
+                  <ElementHolyIcon className="w-5 h-5 text-purple-600 dark:text-purple-400" />
                   <div className="text-sm font-medium text-purple-700 dark:text-purple-300">
                     {t('monster.holy_weakness')}
                   </div>
@@ -182,7 +188,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
             {stats.poison_weakness === 3 && (
               <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-2 border border-green-200 dark:border-green-800">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg">☠️</span>
+                  <ElementPoisonIcon className="w-5 h-5 text-green-600 dark:text-green-400" />
                   <div className="text-sm font-medium text-green-700 dark:text-green-300">
                     {t('monster.poison_weakness')}
                   </div>
@@ -207,7 +213,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
             {stats.fire_weakness === 2 && (
               <div className="bg-red-900/20 dark:bg-red-950/40 rounded-lg p-2 border border-red-900 dark:border-red-950">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg">🔥</span>
+                  <ElementFireIcon className="w-5 h-5 text-red-400 dark:text-red-500" />
                   <div className="text-sm font-medium text-red-200 dark:text-red-300">
                     {t('monster.fire_resistance')}
                   </div>
@@ -217,7 +223,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
             {stats.ice_weakness === 2 && (
               <div className="bg-cyan-900/20 dark:bg-cyan-950/40 rounded-lg p-2 border border-cyan-900 dark:border-cyan-950">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg">❄️</span>
+                  <ElementIceIcon className="w-5 h-5 text-cyan-400 dark:text-cyan-500" />
                   <div className="text-sm font-medium text-cyan-200 dark:text-cyan-300">
                     {t('monster.ice_resistance')}
                   </div>
@@ -227,7 +233,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
             {stats.lightning_weakness === 2 && (
               <div className="bg-amber-900/20 dark:bg-amber-950/40 rounded-lg p-2 border border-amber-900 dark:border-amber-950">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg">⚡</span>
+                  <ElementLightningIcon className="w-5 h-5 text-amber-400 dark:text-amber-500" />
                   <div className="text-sm font-medium text-amber-200 dark:text-amber-300">
                     {t('monster.lightning_resistance')}
                   </div>
@@ -237,7 +243,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
             {stats.holy_weakness === 2 && (
               <div className="bg-purple-900/20 dark:bg-purple-950/40 rounded-lg p-2 border border-purple-900 dark:border-purple-950">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg">✨</span>
+                  <ElementHolyIcon className="w-5 h-5 text-purple-400 dark:text-purple-500" />
                   <div className="text-sm font-medium text-purple-200 dark:text-purple-300">
                     {t('monster.holy_resistance')}
                   </div>
@@ -247,7 +253,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
             {stats.poison_weakness === 2 && (
               <div className="bg-green-900/20 dark:bg-green-950/40 rounded-lg p-2 border border-green-900 dark:border-green-950">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg">☠️</span>
+                  <ElementPoisonIcon className="w-5 h-5 text-green-400 dark:text-green-500" />
                   <div className="text-sm font-medium text-green-200 dark:text-green-300">
                     {t('monster.poison_resistance')}
                   </div>
@@ -272,7 +278,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
             {stats.fire_weakness === 1 && (
               <div className="bg-gray-800 dark:bg-gray-900 rounded-lg p-2 border border-gray-600 dark:border-gray-700">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg">🔥</span>
+                  <ElementFireIcon className="w-5 h-5 text-gray-400 dark:text-gray-500" />
                   <div className="text-sm font-medium text-gray-100 dark:text-gray-200">
                     {t('monster.fire_immunity')}
                   </div>
@@ -282,7 +288,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
             {stats.ice_weakness === 1 && (
               <div className="bg-gray-800 dark:bg-gray-900 rounded-lg p-2 border border-gray-600 dark:border-gray-700">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg">❄️</span>
+                  <ElementIceIcon className="w-5 h-5 text-gray-400 dark:text-gray-500" />
                   <div className="text-sm font-medium text-gray-100 dark:text-gray-200">
                     {t('monster.ice_immunity')}
                   </div>
@@ -292,7 +298,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
             {stats.lightning_weakness === 1 && (
               <div className="bg-gray-800 dark:bg-gray-900 rounded-lg p-2 border border-gray-600 dark:border-gray-700">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg">⚡</span>
+                  <ElementLightningIcon className="w-5 h-5 text-gray-400 dark:text-gray-500" />
                   <div className="text-sm font-medium text-gray-100 dark:text-gray-200">
                     {t('monster.lightning_immunity')}
                   </div>
@@ -302,7 +308,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
             {stats.holy_weakness === 1 && (
               <div className="bg-gray-800 dark:bg-gray-900 rounded-lg p-2 border border-gray-600 dark:border-gray-700">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg">✨</span>
+                  <ElementHolyIcon className="w-5 h-5 text-gray-400 dark:text-gray-500" />
                   <div className="text-sm font-medium text-gray-100 dark:text-gray-200">
                     {t('monster.holy_immunity')}
                   </div>
@@ -312,7 +318,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
             {stats.poison_weakness === 1 && (
               <div className="bg-gray-800 dark:bg-gray-900 rounded-lg p-2 border border-gray-600 dark:border-gray-700">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg">☠️</span>
+                  <ElementPoisonIcon className="w-5 h-5 text-gray-400 dark:text-gray-500" />
                   <div className="text-sm font-medium text-gray-100 dark:text-gray-200">
                     {t('monster.poison_immunity')}
                   </div>

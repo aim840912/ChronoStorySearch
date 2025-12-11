@@ -244,3 +244,132 @@ export function ZapIcon({ className }: IconProps) {
     </svg>
   )
 }
+
+// ========== 屬性元素圖示 ==========
+
+// 🔥 火屬性
+export function ElementFireIcon({ className }: IconProps) {
+  return (
+    <svg
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"
+      />
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"
+      />
+    </svg>
+  )
+}
+
+// ❄️ 冰屬性
+export function ElementIceIcon({ className }: IconProps) {
+  return (
+    <svg
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+    >
+      {/* 雪花圖示 */}
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 3v18M12 3l3 3M12 3L9 6M12 21l3-3M12 21l-3-3M3 12h18M3 12l3 3M3 12l3-3M21 12l-3 3M21 12l-3-3M5.636 5.636l12.728 12.728M5.636 5.636l2.122 3.535M5.636 5.636l3.535 2.122M18.364 18.364l-2.122-3.535M18.364 18.364l-3.535-2.122M18.364 5.636L5.636 18.364M18.364 5.636l-3.535 2.122M18.364 5.636l-2.122 3.535M5.636 18.364l3.535-2.122M5.636 18.364l2.122-3.535"
+      />
+    </svg>
+  )
+}
+
+// ⚡ 雷屬性
+export function ElementLightningIcon({ className }: IconProps) {
+  return (
+    <svg
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+      />
+    </svg>
+  )
+}
+
+// ✨ 神聖屬性
+export function ElementHolyIcon({ className }: IconProps) {
+  return (
+    <svg
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+    >
+      {/* 太陽/光芒圖示 */}
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+      />
+    </svg>
+  )
+}
+
+// ☠️ 毒屬性
+export function ElementPoisonIcon({ className }: IconProps) {
+  return (
+    <svg
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+    >
+      {/* 骷髏頭圖示 */}
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 2C8.134 2 5 5.134 5 9c0 2.386 1.174 4.494 2.975 5.782V17a1 1 0 001 1h6.05a1 1 0 001-1v-2.218C17.826 13.494 19 11.386 19 9c0-3.866-3.134-7-7-7z"
+      />
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M9.5 10.5a1 1 0 100-2 1 1 0 000 2zM14.5 10.5a1 1 0 100-2 1 1 0 000 2zM10 14h4M9 18v3M15 18v3M12 18v3"
+      />
+    </svg>
+  )
+}
+
+// 🚫 無資料
+export function NoDataIcon({ className }: IconProps) {
+  return (
+    <svg
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
+      />
+    </svg>
+  )
+}
