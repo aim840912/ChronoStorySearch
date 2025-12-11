@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const BASE_DIR = path.join(__dirname, '..');
-const CSV_FILE = path.join(BASE_DIR, 'public-drop-table.csv');
+const CSV_FILE = path.join(BASE_DIR, 'csv-data', 'public-drop-table.csv');
 const MOB_INFO_FILE = path.join(BASE_DIR, 'mob-info.json');
 
 // 輸出目錄
@@ -17,13 +17,34 @@ function ensureDir(dir) {
   }
 }
 
+// 正確解析 CSV 行（處理引號內的逗號，如 "1,000"）
+function parseCSVLine(line) {
+  const result = [];
+  let current = '';
+  let inQuotes = false;
+
+  for (let i = 0; i < line.length; i++) {
+    const char = line[i];
+    if (char === '"') {
+      inQuotes = !inQuotes;
+    } else if (char === ',' && !inQuotes) {
+      result.push(current.replace(/"/g, '').trim());
+      current = '';
+    } else {
+      current += char;
+    }
+  }
+  result.push(current.replace(/"/g, '').trim());
+  return result;
+}
+
 // 解析 CSV
 function parseCSV(content) {
   const lines = content.split('\n').filter(line => line.trim());
-  const headers = lines[0].split(',').map(h => h.trim());
+  const headers = parseCSVLine(lines[0]).map(h => h.trim());
 
   return lines.slice(1).map(line => {
-    const values = line.split(',');
+    const values = parseCSVLine(line);
     const row = {};
     headers.forEach((header, i) => {
       row[header] = values[i]?.trim() || '';
@@ -44,7 +65,9 @@ function loadMobChineseNames() {
 
 // 轉換機率（百萬分之 -> 百分比）
 function convertChance(chance) {
-  const num = parseInt(chance, 10);
+  // 移除逗號（如 "400,000" → "400000"）
+  const cleanedChance = String(chance).replace(/,/g, '');
+  const num = parseInt(cleanedChance, 10);
   if (isNaN(num)) return 0;
   return num / 10000; // 轉為百分比數值
 }

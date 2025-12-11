@@ -43,8 +43,8 @@
       "chineseMobName": "幼紅獨角獅",
       "isBoss": false,
       "inGame": true,
-      "chance": 0,
-      "displayChance": "0.000%",
+      "chance": 0.7,
+      "displayChance": "0.70%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -54,8 +54,8 @@
       "chineseMobName": "幼黃獨角獅",
       "isBoss": false,
       "inGame": true,
-      "chance": 0,
-      "displayChance": "0.000%",
+      "chance": 0.7,
+      "displayChance": "0.70%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -65,8 +65,8 @@
       "chineseMobName": "赤龍",
       "isBoss": false,
       "inGame": true,
-      "chance": 0,
-      "displayChance": "0.000%",
+      "chance": 0.7,
+      "displayChance": "0.70%",
       "minQty": 1,
       "maxQty": 1
     }
