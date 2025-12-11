@@ -1,6 +1,6 @@
 {
-  "totalItems": 1583,
-  "lastUpdated": "2025-12-08",
+  "totalItems": 1891,
+  "lastUpdated": "2025-12-11",
   "items": [
     {
       "itemId": 0,
@@ -153,10 +153,22 @@
       "monsterCount": 2
     },
     {
+      "itemId": 1002046,
+      "itemName": "Red Bone Helm",
+      "chineseItemName": "紅色骷髏頭盔",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1002047,
       "itemName": "Great Red Helmet",
       "chineseItemName": "紅色戰鬥頭盔",
       "monsterCount": 3
+    },
+    {
+      "itemId": 1002048,
+      "itemName": "Great Blue Helmet",
+      "chineseItemName": "藍色戰鬥頭盔",
+      "monsterCount": 0
     },
     {
       "itemId": 1002049,
@@ -241,6 +253,12 @@
       "itemName": "Blue Bamboo Hat",
       "chineseItemName": "藍色斗笠",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1002091,
+      "itemName": "Dark Dome",
+      "chineseItemName": "黑青武士頭盔",
+      "monsterCount": 0
     },
     {
       "itemId": 1002092,
@@ -349,6 +367,12 @@
       "itemName": "Green Loosecap",
       "chineseItemName": "綠色自由帽",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1002135,
+      "itemName": "Brown Pole-Feather Hat",
+      "chineseItemName": "褐羽翼三角帽",
+      "monsterCount": 0
     },
     {
       "itemId": 1002136,
@@ -471,6 +495,12 @@
       "monsterCount": 4
     },
     {
+      "itemId": 1002167,
+      "itemName": "Blue Distinction",
+      "chineseItemName": "藍羽絲絨帽",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1002168,
       "itemName": "Green Distinction",
       "chineseItemName": "綠羽絲絨帽",
@@ -547,6 +577,12 @@
       "itemName": "Blue Pilfer",
       "chineseItemName": "藍海盜頭巾",
       "monsterCount": 4
+    },
+    {
+      "itemId": 1002183,
+      "itemName": "Green Pilfer",
+      "chineseItemName": "綠海盜頭巾",
+      "monsterCount": 0
     },
     {
       "itemId": 1002184,
@@ -825,6 +861,24 @@
       "monsterCount": 2
     },
     {
+      "itemId": 1002323,
+      "itemName": "Green Osfa Hat",
+      "chineseItemName": "藍扣帶帽",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002324,
+      "itemName": "Brown Osfa Hat",
+      "chineseItemName": "褐扣帶帽",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002325,
+      "itemName": "Purple Osfa Hat",
+      "chineseItemName": "紫扣帶帽",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1002326,
       "itemName": "Red Osfa Hat",
       "chineseItemName": "紅扣帶帽",
@@ -873,16 +927,118 @@
       "monsterCount": 2
     },
     {
+      "itemId": 1002363,
+      "itemName": "Green Oriental Fury Hat",
+      "chineseItemName": "綠色綢緞帽",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002364,
+      "itemName": "Blue Oriental Fury Hat",
+      "chineseItemName": "青色綢緞帽",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002365,
+      "itemName": "Red Oriental Fury Hat",
+      "chineseItemName": "紅色綢緞帽",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1002366,
       "itemName": "Black Oriental Fury Hat",
       "chineseItemName": "黑色綢緞帽",
       "monsterCount": 1
     },
     {
+      "itemId": 1002377,
+      "itemName": "Green Valhalla Helmet",
+      "chineseItemName": "綠色尼爾哲頭盔",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002378,
+      "itemName": "Blue Valhalla Helmet",
+      "chineseItemName": "藍色尼爾哲頭盔",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002379,
+      "itemName": "Dark Valhalla Helmet",
+      "chineseItemName": "黑色尼爾哲頭盔",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002380,
+      "itemName": "Green Canal Hood",
+      "chineseItemName": "綠色卡奈頭巾",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002381,
+      "itemName": "Blue Canal Hood",
+      "chineseItemName": "藍色卡奈頭巾",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002382,
+      "itemName": "Red Canal Hood",
+      "chineseItemName": "紅色卡奈頭巾",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002383,
+      "itemName": "Dark Canal Hood",
+      "chineseItemName": "黑色卡奈頭巾",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1002391,
       "itemName": "Green Bandana",
       "chineseItemName": "綠色頭巾",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1002392,
+      "itemName": "Brown Bandana",
+      "chineseItemName": "褐色頭巾",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002393,
+      "itemName": "Pink Bandana",
+      "chineseItemName": "粉紅頭巾",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002394,
+      "itemName": "Grey Bandana",
+      "chineseItemName": "灰色頭巾",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002398,
+      "itemName": "Green Varr Hat",
+      "chineseItemName": "綠色巴爾帽",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002399,
+      "itemName": "Blue Varr Hat",
+      "chineseItemName": "藍色巴爾帽",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002400,
+      "itemName": "Red Varr Hat",
+      "chineseItemName": "紅色巴爾帽",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002401,
+      "itemName": "Dark Varr Hat",
+      "chineseItemName": "黑色巴爾帽",
+      "monsterCount": 0
     },
     {
       "itemId": 1002402,
@@ -909,10 +1065,70 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1002406,
+      "itemName": "Red Arnah Cap",
+      "chineseItemName": "紅色阿爾納帽",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002407,
+      "itemName": "Blue Arnah Cap",
+      "chineseItemName": "藍色阿爾納帽",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002408,
+      "itemName": "Green Arnah Cap",
+      "chineseItemName": "綠色阿爾納帽",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1002441,
       "itemName": "Ribboned Pig Headband",
       "chineseItemName": "緞帶肥肥髮圈",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1002452,
+      "itemName": "Black Starry Bandana",
+      "chineseItemName": "黑星白頭巾",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002453,
+      "itemName": "White Starry Bandana",
+      "chineseItemName": "白星黑頭巾",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002492,
+      "itemName": "White Baseball Cap",
+      "chineseItemName": "白色棒球帽",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002528,
+      "itemName": "Green Grace Helmet",
+      "chineseItemName": "綠色格萊西頭盔",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002529,
+      "itemName": "Blue Grace Helmet",
+      "chineseItemName": "藍色格萊西頭盔",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002530,
+      "itemName": "Red Grace Helmet",
+      "chineseItemName": "紅色格萊西頭盔",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002531,
+      "itemName": "Silver Grace Helmet",
+      "chineseItemName": "銀色格萊西頭盔",
+      "monsterCount": 0
     },
     {
       "itemId": 1002532,
@@ -991,6 +1207,18 @@
       "itemName": "Red Brave Hamal",
       "chineseItemName": "紅色勇者頭巾",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1002646,
+      "itemName": "Black Polax Hat",
+      "chineseItemName": "黑色的航海帽",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1003840,
+      "itemName": "Shadow Knight Hat",
+      "chineseItemName": "暗影騎士帽",
+      "monsterCount": 0
     },
     {
       "itemId": 1004765,
@@ -1129,6 +1357,30 @@
       "itemName": "Strawberry Earrings",
       "chineseItemName": "草莓耳環",
       "monsterCount": 2
+    },
+    {
+      "itemId": 1032026,
+      "itemName": "Gold Emerald Earrings",
+      "chineseItemName": "金祖母綠耳環",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1032027,
+      "itemName": "Black Emerald Earrings",
+      "chineseItemName": "黑祖母綠耳環",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1032030,
+      "itemName": "Sword Earrings",
+      "chineseItemName": "刀劍耳環",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1032032,
+      "itemName": "Fallen Leaf Earrings",
+      "chineseItemName": "枯葉耳環",
+      "monsterCount": 0
     },
     {
       "itemId": 1040000,
@@ -1611,6 +1863,24 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1040120,
+      "itemName": "Green Neos",
+      "chineseItemName": "綠色涅奧斯盔甲",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1040121,
+      "itemName": "Blue Neos",
+      "chineseItemName": "藍色涅奧斯盔甲",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1040122,
+      "itemName": "Black Neos",
+      "chineseItemName": "黑色涅奧斯盔甲 ",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1041002,
       "itemName": "White Tubetop",
       "chineseItemName": "白色無袖短T",
@@ -1765,6 +2035,12 @@
       "itemName": "Red Amoria Top",
       "chineseItemName": "紅神聖法衣",
       "monsterCount": 2
+    },
+    {
+      "itemId": 1041052,
+      "itemName": "Blue Amoria Top",
+      "chineseItemName": "藍神聖法衣",
+      "monsterCount": 0
     },
     {
       "itemId": 1041053,
@@ -2067,6 +2343,12 @@
       "monsterCount": 2
     },
     {
+      "itemId": 1041118,
+      "itemName": "Red Osfa Suit",
+      "chineseItemName": "紅扣帶護甲",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1041119,
       "itemName": "Green Valkyrie",
       "chineseItemName": "綠貴族鎧甲",
@@ -2083,6 +2365,24 @@
       "itemName": "Dark Valkyrie",
       "chineseItemName": "黑貴族鎧甲",
       "monsterCount": 2
+    },
+    {
+      "itemId": 1041122,
+      "itemName": "Green Lucida",
+      "chineseItemName": "綠色厄索爾盔甲",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1041123,
+      "itemName": "Purple Lucida",
+      "chineseItemName": "紫色厄索爾盔甲",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1041124,
+      "itemName": "Dark Lucida",
+      "chineseItemName": "黑色厄索爾盔甲",
+      "monsterCount": 0
     },
     {
       "itemId": 1050000,
@@ -2445,6 +2745,84 @@
       "monsterCount": 2
     },
     {
+      "itemId": 1050096,
+      "itemName": "Green Katinas",
+      "chineseItemName": "綠色貓裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1050097,
+      "itemName": "Blue Katinas",
+      "chineseItemName": "藍色貓裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1050098,
+      "itemName": "Red Katinas",
+      "chineseItemName": "紅色貓裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1050099,
+      "itemName": "Dark Katinas",
+      "chineseItemName": "黑色貓裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1050100,
+      "itemName": "Bathrobe for Men",
+      "chineseItemName": "藍色浴巾",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1050102,
+      "itemName": "Green Varuna",
+      "chineseItemName": "綠色羅赤裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1050103,
+      "itemName": "Blue Varuna",
+      "chineseItemName": "藍色羅赤裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1050104,
+      "itemName": "Red Varuna",
+      "chineseItemName": "紅色羅赤裝 ",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1050105,
+      "itemName": "Dark Varuna",
+      "chineseItemName": "黑色羅赤裝 ",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1050106,
+      "itemName": "Green Arzuna",
+      "chineseItemName": "綠色卡那裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1050107,
+      "itemName": "Blue Arzuna",
+      "chineseItemName": "藍色卡那裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1050108,
+      "itemName": "Red Arzuna",
+      "chineseItemName": "紅色卡那裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1050127,
+      "itemName": "Bath Towel (Black)",
+      "chineseItemName": "黑色浴巾",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1051000,
       "itemName": "Steel Fitted Mail",
       "chineseItemName": "鋼鐵鎧甲",
@@ -2521,6 +2899,12 @@
       "itemName": "Sapphire Fitted Mail",
       "chineseItemName": "藍寶石鎧甲",
       "monsterCount": 2
+    },
+    {
+      "itemId": 1051015,
+      "itemName": "Blood Fitted Mail",
+      "chineseItemName": "赤紅鎧甲",
+      "monsterCount": 0
     },
     {
       "itemId": 1051016,
@@ -2787,6 +3171,30 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1051090,
+      "itemName": "Green Katte",
+      "chineseItemName": "綠色貓裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1051091,
+      "itemName": "Blue Katte",
+      "chineseItemName": "藍色貓裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1051092,
+      "itemName": "Red Katte",
+      "chineseItemName": "紅色貓裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1051093,
+      "itemName": "Dark Katte",
+      "chineseItemName": "黑色貓裝",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1051094,
       "itemName": "Green Oriental Fury Coat",
       "chineseItemName": "綠綢緞長袍",
@@ -2809,6 +3217,60 @@
       "itemName": "Black Oriental Fury Coat",
       "chineseItemName": "黑綢緞長袍",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1051098,
+      "itemName": "Bathrobe for Women",
+      "chineseItemName": "紅色浴巾",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1051101,
+      "itemName": "Green Bazura",
+      "chineseItemName": "綠色拜爾裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1051102,
+      "itemName": "Blue Bazura",
+      "chineseItemName": "藍色拜爾裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1051103,
+      "itemName": "Red Bazura",
+      "chineseItemName": "紅色拜爾裝 ",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1051104,
+      "itemName": "Dark Bazura",
+      "chineseItemName": "黑色拜爾裝 ",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1051105,
+      "itemName": "Green Armis",
+      "chineseItemName": "綠色米斯裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1051106,
+      "itemName": "Blue Armis",
+      "chineseItemName": "藍色米斯裝",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1051107,
+      "itemName": "Red Armis",
+      "chineseItemName": "紅色米斯裝 ",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1051140,
+      "itemName": "Yellow Bath Towel",
+      "chineseItemName": "黃色浴巾",
+      "monsterCount": 0
     },
     {
       "itemId": 1052095,
@@ -3339,6 +3801,24 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1060109,
+      "itemName": "Green Neos Pants",
+      "chineseItemName": "綠色涅奧斯長褲",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1060110,
+      "itemName": "Blue Neos Pants",
+      "chineseItemName": "藍色涅奧斯長褲",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1060111,
+      "itemName": "Black Neos Pants",
+      "chineseItemName": "黑色涅奧斯長褲 ",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1061006,
       "itemName": "Green Able Armor Skirt",
       "chineseItemName": "綠旅行皮裙",
@@ -3463,6 +3943,12 @@
       "itemName": "Red Amoria Skirt",
       "chineseItemName": "紅神聖裙",
       "monsterCount": 2
+    },
+    {
+      "itemId": 1061048,
+      "itemName": "Blue Amoria Skirt",
+      "chineseItemName": "藍神聖裙",
+      "monsterCount": 0
     },
     {
       "itemId": 1061049,
@@ -3759,6 +4245,12 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1061117,
+      "itemName": "Red Osfa Pants",
+      "chineseItemName": "紅色勇者褲",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1061118,
       "itemName": "Green Valkyrie Skirt",
       "chineseItemName": "綠色虎雲裙",
@@ -3775,6 +4267,24 @@
       "itemName": "Blood Valkyrie Skirt",
       "chineseItemName": "紅色虎雲裙",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1061121,
+      "itemName": "Green Lucida Skirt",
+      "chineseItemName": "綠色厄索爾裙子",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1061122,
+      "itemName": "Purple Lucida Skirt",
+      "chineseItemName": "紫色厄索爾裙子",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1061123,
+      "itemName": "Dark Lucida Skirt",
+      "chineseItemName": "黑色厄索爾裙子",
+      "monsterCount": 0
     },
     {
       "itemId": 1062000,
@@ -4057,6 +4567,12 @@
       "itemName": "Red Silky Boots",
       "chineseItemName": "紅錦絲鞋",
       "monsterCount": 2
+    },
+    {
+      "itemId": 1072104,
+      "itemName": "Red White-Lined Boots",
+      "chineseItemName": "紅楊柳鞋",
+      "monsterCount": 0
     },
     {
       "itemId": 1072105,
@@ -4425,6 +4941,30 @@
       "monsterCount": 2
     },
     {
+      "itemId": 1072168,
+      "itemName": "Red Snowshoes",
+      "chineseItemName": "紅雪鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072169,
+      "itemName": "Blue Snowshoes",
+      "chineseItemName": "藍雪鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072170,
+      "itemName": "Green Snowshoes",
+      "chineseItemName": "綠雪鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072171,
+      "itemName": "Black Snowshoes",
+      "chineseItemName": "黑雪鞋",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1072172,
       "itemName": "Green Pirate Boots",
       "chineseItemName": "綠飛影鞋",
@@ -4533,6 +5073,12 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1072204,
+      "itemName": "Green Ades Shoes",
+      "chineseItemName": "綠色昂斯鞋",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1072205,
       "itemName": "Dark Ades Shoes",
       "chineseItemName": "黑色昂斯鞋",
@@ -4587,10 +5133,94 @@
       "monsterCount": 2
     },
     {
+      "itemId": 1072214,
+      "itemName": "Blue Katina Boots ",
+      "chineseItemName": "藍色蒂娜長靴",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072215,
+      "itemName": "Red Katina Boots",
+      "chineseItemName": "紅色蒂娜長靴",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072216,
+      "itemName": "Dark Katina Boots",
+      "chineseItemName": "黑色蒂娜長靴",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072220,
+      "itemName": "Green Crescent Boots",
+      "chineseItemName": "綠色新月型長靴",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072221,
+      "itemName": "Blue Crescent Boots",
+      "chineseItemName": "藍色新月型長靴",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072222,
+      "itemName": "Dark Crescent Boots",
+      "chineseItemName": "黑色新月型長靴",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072223,
+      "itemName": "Green Varr Shoes",
+      "chineseItemName": "綠色巴爾鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072224,
+      "itemName": "Blue Varr Shoes",
+      "chineseItemName": "藍色巴爾鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072225,
+      "itemName": "Red Varr Shoes",
+      "chineseItemName": "紅色巴爾鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072226,
+      "itemName": "Dark Varr Shoes",
+      "chineseItemName": "黑色巴爾鞋",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1072227,
       "itemName": "Red Arnah Shoes",
       "chineseItemName": "紅色阿爾納鞋",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1072228,
+      "itemName": "Blue Arnah Shoes",
+      "chineseItemName": "藍色阿爾納鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072229,
+      "itemName": "Green Arnah Shoes",
+      "chineseItemName": "綠色阿爾納鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072238,
+      "itemName": "Violet Snowshoes",
+      "chineseItemName": "紫色釘鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072239,
+      "itemName": "Yellow Snowshoes",
+      "chineseItemName": "黃色釘鞋",
+      "monsterCount": 0
     },
     {
       "itemId": 1072285,
@@ -4647,6 +5277,18 @@
       "monsterCount": 2
     },
     {
+      "itemId": 1072318,
+      "itemName": "Black Duke Barkin Shoes",
+      "chineseItemName": "黑色公爵靴",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072338,
+      "itemName": "Purple Snowshoes",
+      "chineseItemName": "紫雪鞋",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1082000,
       "itemName": "Steel Fingerless Gloves",
       "chineseItemName": "鋼製短手套",
@@ -4687,6 +5329,12 @@
       "itemName": "Bronze Missel",
       "chineseItemName": "青銅機器手套",
       "monsterCount": 2
+    },
+    {
+      "itemId": 1082008,
+      "itemName": "Steel Briggon",
+      "chineseItemName": "鐵製輕便手套",
+      "monsterCount": 0
     },
     {
       "itemId": 1082009,
@@ -4947,6 +5595,12 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1082068,
+      "itemName": "Bronze Scaler",
+      "chineseItemName": "青銅名弓手套",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1082069,
       "itemName": "Mithril Scaler",
       "chineseItemName": "鋰礦名弓手套",
@@ -4993,6 +5647,12 @@
       "itemName": "Gold Cleave",
       "chineseItemName": "黃金盜賊手套",
       "monsterCount": 3
+    },
+    {
+      "itemId": 1082080,
+      "itemName": "Dark Penance",
+      "chineseItemName": "黑元素手套",
+      "monsterCount": 0
     },
     {
       "itemId": 1082081,
@@ -5295,6 +5955,48 @@
       "monsterCount": 2
     },
     {
+      "itemId": 1082135,
+      "itemName": "Blue Anelin",
+      "chineseItemName": "藍色亞納林手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1082136,
+      "itemName": "Green Anelin",
+      "chineseItemName": "綠色亞納林手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1082137,
+      "itemName": "Red Anelin",
+      "chineseItemName": "紅色亞納林手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1082138,
+      "itemName": "Dark Anelin",
+      "chineseItemName": "黑色亞納林手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1082139,
+      "itemName": "Green Korben",
+      "chineseItemName": "綠色凱蘭特手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1082140,
+      "itemName": "Blue Korben",
+      "chineseItemName": "藍色凱蘭特手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1082141,
+      "itemName": "Dark Korben",
+      "chineseItemName": "黑色凱蘭特手套",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1082142,
       "itemName": "Green Mystra",
       "chineseItemName": "綠色米斯特手套",
@@ -5313,16 +6015,82 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1082145,
+      "itemName": "Yellow Work Gloves",
+      "chineseItemName": "黃色工作手套",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1082146,
       "itemName": "Red Work Gloves",
       "chineseItemName": "紅色工作手套",
       "monsterCount": 1
     },
     {
+      "itemId": 1082147,
+      "itemName": "Blue Work Gloves",
+      "chineseItemName": "藍色工作手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1082148,
+      "itemName": "Purple Work Gloves",
+      "chineseItemName": "紫色工作手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1082149,
+      "itemName": "Brown Work Gloves",
+      "chineseItemName": "褐色工作手套",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1082150,
       "itemName": "Grey Work Gloves",
       "chineseItemName": "灰色工作手套",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1082151,
+      "itemName": "Green Ciara",
+      "chineseItemName": "綠色希亞手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1082152,
+      "itemName": "Blue Ciara",
+      "chineseItemName": "藍色希亞手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1082153,
+      "itemName": "Red Ciara",
+      "chineseItemName": "紅色希亞手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1082154,
+      "itemName": "Purple Ciara",
+      "chineseItemName": "紫色希亞手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1082158,
+      "itemName": "Red Arcina",
+      "chineseItemName": "紅色條紋手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1082159,
+      "itemName": "Blue Arcina",
+      "chineseItemName": "藍色條紋手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1082160,
+      "itemName": "Green Arcina",
+      "chineseItemName": "星紋手套",
+      "monsterCount": 0
     },
     {
       "itemId": 1082180,
@@ -5389,6 +6157,12 @@
       "itemName": "Red Martier",
       "chineseItemName": "紅色馬蒂爾手套",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1082213,
+      "itemName": "Black Skellduke",
+      "chineseItemName": "黑色斯卡洛伯爵手套",
+      "monsterCount": 0
     },
     {
       "itemId": 1092000,
@@ -5487,6 +6261,18 @@
       "monsterCount": 3
     },
     {
+      "itemId": 1092018,
+      "itemName": "Seclusion Wristguard",
+      "chineseItemName": "幸運盾牌",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1092019,
+      "itemName": "Nimble Wristguard",
+      "chineseItemName": "力量盾牌",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1092020,
       "itemName": "Jurgen Wristguard",
       "chineseItemName": "敏捷盾牌",
@@ -5547,6 +6333,24 @@
       "monsterCount": 2
     },
     {
+      "itemId": 1092036,
+      "itemName": "Green Hoflon",
+      "chineseItemName": "綠色斯巴達盾",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1092037,
+      "itemName": "Violet Hoflon",
+      "chineseItemName": "紫色斯巴達盾",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1092038,
+      "itemName": "Blue Hoflon",
+      "chineseItemName": "藍色斯巴達盾",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1102000,
       "itemName": "Green Napoleon",
       "chineseItemName": "綠色冒險披風",
@@ -5575,6 +6379,30 @@
       "itemName": "Black Napoleon",
       "chineseItemName": "黑色冒險披風",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1102011,
+      "itemName": "Blue Justice Cape",
+      "chineseItemName": "藍色守護披風",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1102012,
+      "itemName": "Red Justice Cape",
+      "chineseItemName": "紅色守護披風",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1102013,
+      "itemName": "White Justice Cape",
+      "chineseItemName": "白色守護披風",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1102014,
+      "itemName": "Black Justice Cape",
+      "chineseItemName": "黑色守護披風",
+      "monsterCount": 0
     },
     {
       "itemId": 1102015,
@@ -5625,6 +6453,12 @@
       "monsterCount": 4
     },
     {
+      "itemId": 1102026,
+      "itemName": "Green Seraph Cape",
+      "chineseItemName": "綠妖精披風",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1102027,
       "itemName": "Blue Seraph Cape",
       "chineseItemName": "藍妖精披風",
@@ -5655,10 +6489,82 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1102032,
+      "itemName": "Purple Giles Cape",
+      "chineseItemName": "紫龍紋披風",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1102033,
+      "itemName": "Red Giles Cape",
+      "chineseItemName": "紅龍紋披風",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1102034,
+      "itemName": "Blue Giles Cape",
+      "chineseItemName": "藍龍紋披風",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1102035,
+      "itemName": "Black Giles Cape",
+      "chineseItemName": "黑龍紋披風",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1102040,
+      "itemName": "Yellow Adventurer Cape",
+      "chineseItemName": "黃色冒險家披風",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1102041,
+      "itemName": "Pink Adventurer Cape",
+      "chineseItemName": "粉紅冒險家披風",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1102042,
+      "itemName": "Purple Adventurer Cape",
+      "chineseItemName": "紫色冒險家披風",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1102043,
+      "itemName": "Brown Adventurer Cape",
+      "chineseItemName": "褐色冒險家披風",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1102046,
+      "itemName": "Blue Musketeer Cape",
+      "chineseItemName": "淺藍色西麗斯斗篷",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1102047,
+      "itemName": "Turquoise Musketeer Cape",
+      "chineseItemName": "深藍色西麗斯斗篷",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1102048,
+      "itemName": "Red Musketeer Cape",
+      "chineseItemName": "紅色西麗斯斗篷",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1200001,
       "itemName": "Bronze Arrow for Bow",
       "chineseItemName": "青銅弓箭",
       "monsterCount": 6
+    },
+    {
+      "itemId": 1200002,
+      "itemName": "Steel Arrow for Bow",
+      "chineseItemName": "鋼鐵弓箭",
+      "monsterCount": 0
     },
     {
       "itemId": 1200003,
@@ -5667,16 +6573,34 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1200004,
+      "itemName": "Diamond Arrow for Bow",
+      "chineseItemName": "鑽石箭矢",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1201001,
       "itemName": "Bronze Arrow for Crossbow",
       "chineseItemName": "青銅弩箭",
       "monsterCount": 6
     },
     {
+      "itemId": 1201002,
+      "itemName": "Steel Bolt for Crossbow",
+      "chineseItemName": "鋼鐵弩箭",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1201003,
       "itemName": "Blue Arrow for Crossbow",
       "chineseItemName": "冰晶弩箭",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1201004,
+      "itemName": "Diamond Bolt for Crossbow",
+      "chineseItemName": "鑽石弩矢",
+      "monsterCount": 0
     },
     {
       "itemId": 1202001,
@@ -5709,6 +6633,18 @@
       "monsterCount": 4
     },
     {
+      "itemId": 1202006,
+      "itemName": "Shiny Bullet",
+      "chineseItemName": "高爆彈",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1202007,
+      "itemName": "Eternal Bullet",
+      "chineseItemName": "穿甲彈",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1203001,
       "itemName": "Wolbi Throwing-Stars",
       "chineseItemName": "迴旋鏢",
@@ -5733,6 +6669,12 @@
       "monsterCount": 3
     },
     {
+      "itemId": 1203005,
+      "itemName": "Paper Fighter Plane",
+      "chineseItemName": "紙飛機",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1203006,
       "itemName": "Kumbi Throwing-Stars",
       "chineseItemName": "雪花鏢",
@@ -5749,6 +6691,12 @@
       "itemName": "Tobi Throwing-Stars",
       "chineseItemName": "梅之鏢",
       "monsterCount": 10
+    },
+    {
+      "itemId": 1203009,
+      "itemName": "Orange",
+      "chineseItemName": "橘子",
+      "monsterCount": 0
     },
     {
       "itemId": 1203010,
@@ -5835,6 +6783,12 @@
       "monsterCount": 4
     },
     {
+      "itemId": 1302015,
+      "itemName": "Hero's Gladius",
+      "chineseItemName": "英雄戰劍",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1302016,
       "itemName": "Yellow Umbrella",
       "chineseItemName": "黃色雨傘",
@@ -5853,16 +6807,40 @@
       "monsterCount": 2
     },
     {
+      "itemId": 1302019,
+      "itemName": "Nameless Sword",
+      "chineseItemName": "無名劍",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1302021,
+      "itemName": "Pico-Pico Hammer",
+      "chineseItemName": "橡皮榔頭",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1302023,
       "itemName": "Fraute",
       "chineseItemName": "坲羅劍",
       "monsterCount": 1
     },
     {
+      "itemId": 1302025,
+      "itemName": "Red Umbrella",
+      "chineseItemName": "紅色雨傘",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1302026,
       "itemName": "Black Umbrella",
       "chineseItemName": "黑色雨傘",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1302027,
+      "itemName": "Green Umbrella",
+      "chineseItemName": "綠色雨傘",
+      "monsterCount": 0
     },
     {
       "itemId": 1302028,
@@ -5875,6 +6853,18 @@
       "itemName": "Beige Umbrella",
       "chineseItemName": "褐色雨傘",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1302049,
+      "itemName": "Glowing Whip",
+      "chineseItemName": "光線鞭子",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1302056,
+      "itemName": "Sparta",
+      "chineseItemName": "紫凌劍",
+      "monsterCount": 0
     },
     {
       "itemId": 1312000,
@@ -5931,6 +6921,24 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1312012,
+      "itemName": "Hula Hoop",
+      "chineseItemName": "呼啦圈",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1312013,
+      "itemName": "Green Paint Brush",
+      "chineseItemName": "綠畫筆",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1312014,
+      "itemName": "Black Paint Brush",
+      "chineseItemName": "黑畫筆",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1312015,
       "itemName": "Vifennis",
       "chineseItemName": "雙利刃斧",
@@ -5941,6 +6949,12 @@
       "itemName": "Contra Axe",
       "chineseItemName": "昆德拉斧頭",
       "monsterCount": 2
+    },
+    {
+      "itemId": 1312030,
+      "itemName": "Tomahawk",
+      "chineseItemName": "印第安戰斧",
+      "monsterCount": 0
     },
     {
       "itemId": 1322000,
@@ -6093,6 +7107,18 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1322031,
+      "itemName": "Pig Illustrated",
+      "chineseItemName": "世界肥肥圖鑑",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1322045,
+      "itemName": "Battle Hammer",
+      "chineseItemName": "海克力斯之錘",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1332000,
       "itemName": "Triangular Zamadar",
       "chineseItemName": "三角刃",
@@ -6213,6 +7239,18 @@
       "monsterCount": 2
     },
     {
+      "itemId": 1332051,
+      "itemName": "Gold Double Knife",
+      "chineseItemName": "黃金雙刃",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1332052,
+      "itemName": "Blood Dagger",
+      "chineseItemName": "赤玉短刀",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1372000,
       "itemName": "Fairy Wand",
       "chineseItemName": "妖精短杖",
@@ -6253,6 +7291,18 @@
       "itemName": "Hinomaru Fan",
       "chineseItemName": "日本扇",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1372009,
+      "itemName": "Magicodar",
+      "chineseItemName": "聖權杖",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1372010,
+      "itemName": "Dimon Wand",
+      "chineseItemName": "鬼頭杖",
+      "monsterCount": 0
     },
     {
       "itemId": 1372012,
@@ -6321,10 +7371,22 @@
       "monsterCount": 8
     },
     {
+      "itemId": 1382008,
+      "itemName": "Kage",
+      "chineseItemName": "魔靈之魂",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1382010,
       "itemName": "Dark Ritual",
       "chineseItemName": "死靈法杖",
       "monsterCount": 4
+    },
+    {
+      "itemId": 1382011,
+      "itemName": "Mystic Cane",
+      "chineseItemName": "黃金杖",
+      "monsterCount": 0
     },
     {
       "itemId": 1382017,
@@ -6375,6 +7437,12 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1402005,
+      "itemName": "Berzerker",
+      "chineseItemName": "斬魔刀",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1402006,
       "itemName": "Lionheart",
       "chineseItemName": "高原之劍",
@@ -6411,6 +7479,12 @@
       "monsterCount": 6
     },
     {
+      "itemId": 1402014,
+      "itemName": "Thermometer",
+      "chineseItemName": "溫度計",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1402015,
       "itemName": "Heaven's Gate",
       "chineseItemName": "亞歷山大之劍",
@@ -6427,6 +7501,12 @@
       "itemName": "Wooden Samurai Sword",
       "chineseItemName": "幻木劍",
       "monsterCount": 3
+    },
+    {
+      "itemId": 1402035,
+      "itemName": "The Beheader",
+      "chineseItemName": "赤焰刀",
+      "monsterCount": 0
     },
     {
       "itemId": 1412001,
@@ -6495,6 +7575,12 @@
       "monsterCount": 5
     },
     {
+      "itemId": 1412021,
+      "itemName": "Tavar",
+      "chineseItemName": "雷神大斧",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1422000,
       "itemName": "Wooden Mallet",
       "chineseItemName": "木錘",
@@ -6537,6 +7623,12 @@
       "monsterCount": 5
     },
     {
+      "itemId": 1422011,
+      "itemName": "Sake Bottle",
+      "chineseItemName": "清酒",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1422012,
       "itemName": "The Morningstar",
       "chineseItemName": "雷神之錘",
@@ -6547,6 +7639,12 @@
       "itemName": "Leomite",
       "chineseItemName": "鐳奧釘錘",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1422027,
+      "itemName": "Golden Smith Hammer",
+      "chineseItemName": "神匠之錘",
+      "monsterCount": 0
     },
     {
       "itemId": 1432000,
@@ -6615,6 +7713,36 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1432015,
+      "itemName": "Red Ski",
+      "chineseItemName": "紅色滑雪板",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1432016,
+      "itemName": "Orange Ski",
+      "chineseItemName": "橙色滑雪板",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1432017,
+      "itemName": "Green Ski",
+      "chineseItemName": "綠色滑雪板",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1432018,
+      "itemName": "Sky Ski",
+      "chineseItemName": "藍色滑雪板",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1432030,
+      "itemName": "Pinaka",
+      "chineseItemName": "火尖槍",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1432039,
       "itemName": "Fishing Pole",
       "chineseItemName": "釣魚杆",
@@ -6631,6 +7759,12 @@
       "itemName": "Mithril Pole Arm",
       "chineseItemName": "鋰礦戟",
       "monsterCount": 5
+    },
+    {
+      "itemId": 1442002,
+      "itemName": "Eviscerator",
+      "chineseItemName": "月靈戟",
+      "monsterCount": 0
     },
     {
       "itemId": 1442003,
@@ -6681,6 +7815,24 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1442015,
+      "itemName": "Golden Snowboard",
+      "chineseItemName": "黃金雪板",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1442016,
+      "itemName": "Dark Snowboard",
+      "chineseItemName": "黑雪板",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1442017,
+      "itemName": "Blood Snowboard",
+      "chineseItemName": "赤血雪板",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1442018,
       "itemName": "Frozen Tuna",
       "chineseItemName": "冷凍金槍魚",
@@ -6699,6 +7851,12 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1442026,
+      "itemName": "Red Surfboard",
+      "chineseItemName": "紅色衝浪板",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1442027,
       "itemName": "Green Surfboard",
       "chineseItemName": "綠色衝浪板",
@@ -6715,6 +7873,12 @@
       "itemName": "Gold Surfboard",
       "chineseItemName": "紫色衝浪板",
       "monsterCount": 2
+    },
+    {
+      "itemId": 1442044,
+      "itemName": "Zedbug",
+      "chineseItemName": "阿基里斯斧矛",
+      "monsterCount": 0
     },
     {
       "itemId": 1452000,
@@ -6813,6 +7977,36 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1452019,
+      "itemName": "White Nisrock",
+      "chineseItemName": "白色雷鳥弓",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1452020,
+      "itemName": "Golden Nisrock",
+      "chineseItemName": "金色雷鳥弓",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1452021,
+      "itemName": "Dark Nisrock",
+      "chineseItemName": "黑色雷鳥弓",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1452025,
+      "itemName": "Blue Metus",
+      "chineseItemName": "藍色梅杜斯",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1452026,
+      "itemName": "Black Metus",
+      "chineseItemName": "黑色梅杜斯",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1462000,
       "itemName": "Mountain Crossbow",
       "chineseItemName": "山羊弩",
@@ -6885,10 +8079,34 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1462015,
+      "itemName": "White Neschere",
+      "chineseItemName": "白色獵鷹弓",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1462016,
+      "itemName": "Golden Neschere",
+      "chineseItemName": "金色獵鷹弓",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1462017,
+      "itemName": "Dark Neschere",
+      "chineseItemName": "黑色獵鷹弓",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1462018,
       "itemName": "Casa Crow",
       "chineseItemName": "可撒之弩",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1462022,
+      "itemName": "Yellow Crow",
+      "chineseItemName": "黃色可撒弩",
+      "monsterCount": 0
     },
     {
       "itemId": 1472000,
@@ -6907,6 +8125,12 @@
       "itemName": "Mithril Guards",
       "chineseItemName": "鋰礦鬥拳",
       "monsterCount": 3
+    },
+    {
+      "itemId": 1472011,
+      "itemName": "Bronze Guardian",
+      "chineseItemName": "青銅守護拳套",
+      "monsterCount": 0
     },
     {
       "itemId": 1472012,
@@ -7029,6 +8253,12 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1472053,
+      "itemName": "Red Craven",
+      "chineseItemName": "克利思拳套",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1482000,
       "itemName": "Steel Knuckler",
       "chineseItemName": "鐵指虎",
@@ -7101,6 +8331,12 @@
       "monsterCount": 1
     },
     {
+      "itemId": 1482012,
+      "itemName": "King Cent",
+      "chineseItemName": "王者毀滅拳套",
+      "monsterCount": 0
+    },
+    {
       "itemId": 1492000,
       "itemName": "Pistol",
       "chineseItemName": "火槍",
@@ -7171,6 +8407,12 @@
       "itemName": "The Peacemaker",
       "chineseItemName": "調停者",
       "monsterCount": 2
+    },
+    {
+      "itemId": 1492012,
+      "itemName": "Concerto",
+      "chineseItemName": "死亡協奏曲",
+      "monsterCount": 0
     },
     {
       "itemId": 2000000,
@@ -7371,6 +8613,12 @@
       "monsterCount": 1
     },
     {
+      "itemId": 2040000,
+      "itemName": "Scroll for Helmet for Defense 100%",
+      "chineseItemName": "頭盔防禦卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2040001,
       "itemName": "Scroll for Helmet for Defense 60%",
       "chineseItemName": "頭盔防禦卷軸60%",
@@ -7381,6 +8629,24 @@
       "itemName": "Scroll for Helmet for Defense 10%",
       "chineseItemName": "頭盔防禦卷軸10%",
       "monsterCount": 6
+    },
+    {
+      "itemId": 2040016,
+      "itemName": "Scroll for Helmet for Accuracy 10%",
+      "chineseItemName": "頭盔命中卷軸10%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040017,
+      "itemName": "Scroll for Helmet for Accuracy 60%",
+      "chineseItemName": "頭盔命中卷軸60%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040018,
+      "itemName": "Scroll for Helmet for Accuracy 100%",
+      "chineseItemName": "頭盔命中卷軸100%",
+      "monsterCount": 0
     },
     {
       "itemId": 2040024,
@@ -7425,6 +8691,30 @@
       "monsterCount": 4
     },
     {
+      "itemId": 2040034,
+      "itemName": "Scroll for Helmet for Accuracy 15%",
+      "chineseItemName": "頭盔命中卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040036,
+      "itemName": "Scroll for Helmet for INT 15%",
+      "chineseItemName": "頭盔智力卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040044,
+      "itemName": "Scroll for Helmet for DEX 15%",
+      "chineseItemName": "頭盔敏捷卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040300,
+      "itemName": "Scroll for Earring for INT 100%",
+      "chineseItemName": "耳環智力卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2040301,
       "itemName": "Scroll for Earring for INT 60%",
       "chineseItemName": "耳環智力卷軸60%",
@@ -7437,6 +8727,12 @@
       "monsterCount": 8
     },
     {
+      "itemId": 2040310,
+      "itemName": "Scroll for Earring for Defense 10%",
+      "chineseItemName": "耳環防禦卷軸10%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2040311,
       "itemName": "Scroll for Earring for Defense 60%",
       "chineseItemName": "耳環防禦力卷軸60%",
@@ -7447,6 +8743,18 @@
       "itemName": "Scroll for Earring for Defense 100%",
       "chineseItemName": "耳環防禦卷軸100%",
       "monsterCount": 1
+    },
+    {
+      "itemId": 2040313,
+      "itemName": "Scroll for Earring for Defense 15%",
+      "chineseItemName": "耳環防禦卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040314,
+      "itemName": "Scroll for Earring for INT 15%",
+      "chineseItemName": "耳環智力卷軸15%",
+      "monsterCount": 0
     },
     {
       "itemId": 2040316,
@@ -7497,10 +8805,40 @@
       "monsterCount": 3
     },
     {
+      "itemId": 2040330,
+      "itemName": "Scroll for Earring for STR 60%",
+      "chineseItemName": "耳環力量卷軸60%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040332,
+      "itemName": "Scroll for Earring for STR 10%",
+      "chineseItemName": "耳環力量卷軸10%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040333,
+      "itemName": "Scroll for Earring for STR 15%",
+      "chineseItemName": "耳環力量卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040336,
+      "itemName": "Scroll for Earring for DEX 15%",
+      "chineseItemName": "耳環敏捷卷軸15%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2040337,
       "itemName": "Dark Scroll for Accessory for STR 70%",
       "chineseItemName": "耳環幸運卷軸65%",
       "monsterCount": 1
+    },
+    {
+      "itemId": 2040338,
+      "itemName": "Scroll for Earring for LUK 15%",
+      "chineseItemName": "耳環幸運卷軸15%",
+      "monsterCount": 0
     },
     {
       "itemId": 2040340,
@@ -7563,6 +8901,12 @@
       "monsterCount": 1
     },
     {
+      "itemId": 2040400,
+      "itemName": "Scroll for Topwear for Defense 100%",
+      "chineseItemName": "上衣防禦卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2040401,
       "itemName": "Scroll for Topwear for Defense 60%",
       "chineseItemName": "上衣防禦卷軸60%",
@@ -7599,6 +8943,12 @@
       "monsterCount": 3
     },
     {
+      "itemId": 2040416,
+      "itemName": "Scroll for Topwear for Defense 15%",
+      "chineseItemName": "上衣防禦卷軸15%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2040417,
       "itemName": "Scroll for Topwear for STR 100%",
       "chineseItemName": "上衣力量卷軸100%",
@@ -7617,6 +8967,24 @@
       "monsterCount": 6
     },
     {
+      "itemId": 2040432,
+      "itemName": "Scroll for Topwear for STR 15%",
+      "chineseItemName": "上衣力量卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040436,
+      "itemName": "Scroll for Topwear for LUK 15%",
+      "chineseItemName": "上衣幸運卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040500,
+      "itemName": "Scroll for Overall Armor for DEX 100%",
+      "chineseItemName": "套服敏捷卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2040501,
       "itemName": "Scroll for Overall Armor for DEX 60%",
       "chineseItemName": "套服敏捷卷軸60%",
@@ -7627,6 +8995,12 @@
       "itemName": "Scroll for Overall Armor for DEX 10%",
       "chineseItemName": "套服敏捷卷軸10%",
       "monsterCount": 6
+    },
+    {
+      "itemId": 2040503,
+      "itemName": "Scroll for Overall Armor for Defense 100%",
+      "chineseItemName": "套服防禦卷軸100%",
+      "monsterCount": 0
     },
     {
       "itemId": 2040504,
@@ -7671,16 +9045,64 @@
       "monsterCount": 5
     },
     {
+      "itemId": 2040517,
+      "itemName": "Scroll for Overall Armor for LUK 10%",
+      "chineseItemName": "套服幸運卷軸10%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040523,
+      "itemName": "Scroll for Overall Armor for DEX 15%",
+      "chineseItemName": "套服敏捷卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040525,
+      "itemName": "Scroll for Overall Armor for Defense 15%",
+      "chineseItemName": "套服防禦卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040527,
+      "itemName": "Scroll for Overall Armor for INT 15%",
+      "chineseItemName": "套服智力卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040529,
+      "itemName": "Scroll for Overall Armor for LUK 15%",
+      "chineseItemName": "套服幸運卷軸15%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2040530,
       "itemName": "Scroll for Overall Armor for STR 100%",
       "chineseItemName": "套服力量卷軸100%",
       "monsterCount": 1
     },
     {
+      "itemId": 2040532,
+      "itemName": "Scroll for Overall Armor for STR 60%",
+      "chineseItemName": "套服力量卷軸60%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2040534,
       "itemName": "Scroll for Overall Armor for STR 10%",
       "chineseItemName": "套服力量卷軸10%",
       "monsterCount": 1
+    },
+    {
+      "itemId": 2040541,
+      "itemName": "Scroll for Overall Armor for STR 15%",
+      "chineseItemName": "套服力量卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040600,
+      "itemName": "Scroll for Bottomwear for Defense 100%",
+      "chineseItemName": "褲裙防禦卷軸100%",
+      "monsterCount": 0
     },
     {
       "itemId": 2040601,
@@ -7713,6 +9135,18 @@
       "monsterCount": 5
     },
     {
+      "itemId": 2040615,
+      "itemName": "Scroll for Bottomwear for DEX 15%",
+      "chineseItemName": "褲裙敏捷卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040616,
+      "itemName": "Scroll for Bottomwear for Defense 15%",
+      "chineseItemName": "褲裙防禦卷軸15%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2040617,
       "itemName": "Scroll for Bottomwear for Mobility 100%",
       "chineseItemName": "褲裙移動卷軸100%",
@@ -7737,6 +9171,24 @@
       "monsterCount": 4
     },
     {
+      "itemId": 2040623,
+      "itemName": "Scroll for Bottomwear for DEX 100%",
+      "chineseItemName": "褲裙敏捷卷軸100%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040627,
+      "itemName": "Scroll for Bottomwear for DEX 10%",
+      "chineseItemName": "褲裙敏捷卷軸10%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040700,
+      "itemName": "Scroll for Shoes for Avoidability 100%",
+      "chineseItemName": "鞋子迴避卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2040701,
       "itemName": "Scroll for Shoes for Avoidability 60%",
       "chineseItemName": "鞋子迴避卷軸60%",
@@ -7747,6 +9199,12 @@
       "itemName": "Scroll for Shoes for Avoidability 10%",
       "chineseItemName": "鞋子迴避卷軸10%",
       "monsterCount": 4
+    },
+    {
+      "itemId": 2040703,
+      "itemName": "Scroll for Shoes for Jump 100%",
+      "chineseItemName": "鞋子跳躍卷軸100%",
+      "monsterCount": 0
     },
     {
       "itemId": 2040704,
@@ -7779,6 +9237,30 @@
       "monsterCount": 5
     },
     {
+      "itemId": 2040719,
+      "itemName": "Scroll for Shoes for Avoidability 15%",
+      "chineseItemName": "鞋子迴避卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040721,
+      "itemName": "Scroll for Shoes for Jump 15%",
+      "chineseItemName": "鞋子跳躍卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040723,
+      "itemName": "Scroll for Shoes for Mobility 15%",
+      "chineseItemName": "鞋子移動卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040800,
+      "itemName": "Scroll for Gloves for Accuracy 100%",
+      "chineseItemName": "手套命中卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2040801,
       "itemName": "Scroll for Gloves for Accuracy 60%",
       "chineseItemName": "手套命中卷軸60%",
@@ -7789,6 +9271,12 @@
       "itemName": "Scroll for Gloves for Accuracy 10%",
       "chineseItemName": "手套命中卷軸10%",
       "monsterCount": 4
+    },
+    {
+      "itemId": 2040803,
+      "itemName": "Scroll for Gloves for ATT 100%",
+      "chineseItemName": "手套攻擊卷軸100%",
+      "monsterCount": 0
     },
     {
       "itemId": 2040804,
@@ -7815,6 +9303,24 @@
       "monsterCount": 1
     },
     {
+      "itemId": 2040818,
+      "itemName": "Scroll for Gloves for Magic ATT 100%",
+      "chineseItemName": "手套魔力卷軸100%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040820,
+      "itemName": "Scroll for Gloves for Magic ATT 15%",
+      "chineseItemName": "手套魔力卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040822,
+      "itemName": "Scroll for Gloves for ATT 15%",
+      "chineseItemName": "手套攻擊卷軸15%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2040823,
       "itemName": "Scroll for Gloves for Defense 100%",
       "chineseItemName": "手套防禦卷軸100%",
@@ -7833,6 +9339,24 @@
       "monsterCount": 3
     },
     {
+      "itemId": 2040826,
+      "itemName": "Scroll for Gloves for Defense 15%",
+      "chineseItemName": "手套防禦卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040829,
+      "itemName": "Scroll for Gloves for Accuracy 15%",
+      "chineseItemName": "手套命中卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040900,
+      "itemName": "Scroll for Shield for Defense 100%",
+      "chineseItemName": "盾牌防禦卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2040901,
       "itemName": "Scroll for Shield for Defense 60%",
       "chineseItemName": "盾牌防禦卷軸60%",
@@ -7845,10 +9369,40 @@
       "monsterCount": 7
     },
     {
+      "itemId": 2040911,
+      "itemName": "Scroll for Shield for Defense 15%",
+      "chineseItemName": "盾牌防禦卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040914,
+      "itemName": "Scroll for Shield for ATT 60%",
+      "chineseItemName": "盾牌攻擊卷軸60%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040915,
+      "itemName": "Scroll for Shield for ATT 10%",
+      "chineseItemName": "盾牌攻擊卷軸10%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2040918,
       "itemName": "Scroll for Shield for Magic ATT 100%",
       "chineseItemName": "盾牌魔力卷軸100%",
       "monsterCount": 1
+    },
+    {
+      "itemId": 2040919,
+      "itemName": "Scroll for Shield for Magic ATT 60%",
+      "chineseItemName": "盾牌魔力卷軸60%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040920,
+      "itemName": "Scroll for Shield for Magic ATT 10%",
+      "chineseItemName": "盾牌魔力卷軸10%",
+      "monsterCount": 0
     },
     {
       "itemId": 2040923,
@@ -7909,6 +9463,24 @@
       "itemName": "Scroll for Shield for STR 10%",
       "chineseItemName": "盾牌力量卷軸10%",
       "monsterCount": 4
+    },
+    {
+      "itemId": 2040934,
+      "itemName": "Scroll for Shield for ATT 15%",
+      "chineseItemName": "盾牌攻擊卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040938,
+      "itemName": "Scroll for Shield for LUK 15%",
+      "chineseItemName": "盾牌幸運卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2040942,
+      "itemName": "Scroll for Shield for STR 15%",
+      "chineseItemName": "盾牌力量卷軸15%",
+      "monsterCount": 0
     },
     {
       "itemId": 2041003,
@@ -8013,6 +9585,36 @@
       "monsterCount": 12
     },
     {
+      "itemId": 2041051,
+      "itemName": "Scroll for Cape for STR 15%",
+      "chineseItemName": "披風力量卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2041053,
+      "itemName": "Scroll for Cape for INT 15%",
+      "chineseItemName": "披風智力卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2041055,
+      "itemName": "Scroll for Cape for DEX 15%",
+      "chineseItemName": "披風敏捷卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2041057,
+      "itemName": "Scroll for Cape for LUK 15%",
+      "chineseItemName": "披風幸運卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2043000,
+      "itemName": "Scroll for One-Handed Sword for ATT 100%",
+      "chineseItemName": "單手劍攻擊卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2043001,
       "itemName": "Scroll for One-Handed Sword for ATT 60%",
       "chineseItemName": "單手劍攻擊卷軸60%",
@@ -8023,6 +9625,12 @@
       "itemName": "Scroll for One-Handed Sword for ATT 10%",
       "chineseItemName": "單手劍攻擊卷軸10%",
       "monsterCount": 4
+    },
+    {
+      "itemId": 2043012,
+      "itemName": "Scroll for One-Handed Sword for ATT 15%",
+      "chineseItemName": "單手劍攻擊卷軸15%",
+      "monsterCount": 0
     },
     {
       "itemId": 2043015,
@@ -8043,6 +9651,18 @@
       "monsterCount": 3
     },
     {
+      "itemId": 2043020,
+      "itemName": "Scroll for One-Handed Sword for Accuracy 15%",
+      "chineseItemName": "單手劍命中卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2043100,
+      "itemName": "Scroll for One-Handed Axe for ATT 100%",
+      "chineseItemName": "單手斧攻擊卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2043101,
       "itemName": "Scroll for One-Handed Axe for ATT 60%",
       "chineseItemName": "單手斧攻擊卷軸60%",
@@ -8053,6 +9673,12 @@
       "itemName": "Scroll for One-Handed Axe for ATT 10%",
       "chineseItemName": "單手斧攻擊卷軸10%",
       "monsterCount": 5
+    },
+    {
+      "itemId": 2043107,
+      "itemName": "Scroll for One-Handed Axe for ATT 15%",
+      "chineseItemName": "單手斧攻擊卷軸15%",
+      "monsterCount": 0
     },
     {
       "itemId": 2043110,
@@ -8073,6 +9699,12 @@
       "monsterCount": 3
     },
     {
+      "itemId": 2043115,
+      "itemName": "Scroll for One-Handed Axe for Accuracy 15%",
+      "chineseItemName": "單手斧命中卷軸15%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2043200,
       "itemName": "Scroll for One-Handed BW for ATT 100%",
       "chineseItemName": "單手棍攻擊卷軸100%",
@@ -8089,6 +9721,12 @@
       "itemName": "Scroll for One-Handed BW for ATT 10%",
       "chineseItemName": "單手棍攻擊卷軸10%",
       "monsterCount": 5
+    },
+    {
+      "itemId": 2043207,
+      "itemName": "Scroll for One-Handed BW for ATT 15%",
+      "chineseItemName": "單手棍攻擊卷軸15%",
+      "monsterCount": 0
     },
     {
       "itemId": 2043210,
@@ -8109,6 +9747,18 @@
       "monsterCount": 2
     },
     {
+      "itemId": 2043215,
+      "itemName": "Scroll for One-Handed BW for Accuracy 15%",
+      "chineseItemName": "單手棍命中卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2043300,
+      "itemName": "Scroll for Dagger for ATT 100%",
+      "chineseItemName": "短劍攻擊卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2043301,
       "itemName": "Scroll for Dagger for ATT 60%",
       "chineseItemName": "短劍攻擊卷軸60%",
@@ -8119,6 +9769,18 @@
       "itemName": "Scroll for Dagger for ATT 10%",
       "chineseItemName": "短劍攻擊卷軸10%",
       "monsterCount": 5
+    },
+    {
+      "itemId": 2043307,
+      "itemName": "Scroll for Dagger for ATT 15%",
+      "chineseItemName": "短劍攻擊卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2043700,
+      "itemName": "Scroll for Wand for Magic ATT 100%",
+      "chineseItemName": "短杖魔力卷軸100%",
+      "monsterCount": 0
     },
     {
       "itemId": 2043701,
@@ -8133,6 +9795,18 @@
       "monsterCount": 5
     },
     {
+      "itemId": 2043707,
+      "itemName": "Scroll for Wand for Magic ATT 15%",
+      "chineseItemName": "短杖魔力卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2043800,
+      "itemName": "Scroll for Staff for Magic ATT 100%",
+      "chineseItemName": "長杖魔力卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2043801,
       "itemName": "Scroll for Staff for Magic ATT 60%",
       "chineseItemName": "長杖魔力卷軸60%",
@@ -8145,6 +9819,18 @@
       "monsterCount": 7
     },
     {
+      "itemId": 2043807,
+      "itemName": "Scroll for Staff for Magic ATT 15%",
+      "chineseItemName": "長杖魔力卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2044000,
+      "itemName": "Scroll for Two-Handed Sword for ATT 100%",
+      "chineseItemName": "雙手劍攻擊卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2044001,
       "itemName": "Scroll for Two-Handed Sword for ATT 60%",
       "chineseItemName": "雙手劍攻擊卷軸60%",
@@ -8155,6 +9841,12 @@
       "itemName": "Scroll for Two-Handed Sword for ATT 10%",
       "chineseItemName": "雙手劍攻擊卷軸10%",
       "monsterCount": 5
+    },
+    {
+      "itemId": 2044007,
+      "itemName": "Scroll for Two-Handed Sword for ATT 15%",
+      "chineseItemName": "雙手劍攻擊卷軸15%",
+      "monsterCount": 0
     },
     {
       "itemId": 2044010,
@@ -8175,6 +9867,18 @@
       "monsterCount": 1
     },
     {
+      "itemId": 2044015,
+      "itemName": "Scroll for Two-Handed Sword for Accuracy 15%",
+      "chineseItemName": "雙手劍命中卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2044100,
+      "itemName": "Scroll for Two-Handed Axe for ATT 100%",
+      "chineseItemName": "雙手斧攻擊卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2044101,
       "itemName": "Scroll for Two-Handed Axe for ATT 60%",
       "chineseItemName": "雙手斧攻擊卷軸60%",
@@ -8185,6 +9889,12 @@
       "itemName": "Scroll for Two-Handed Axe for ATT 10%",
       "chineseItemName": "雙手斧攻擊卷軸10%",
       "monsterCount": 4
+    },
+    {
+      "itemId": 2044107,
+      "itemName": "Scroll for Two-Handed Axe for ATT 15%",
+      "chineseItemName": "雙手斧攻擊卷軸15%",
+      "monsterCount": 0
     },
     {
       "itemId": 2044110,
@@ -8205,6 +9915,18 @@
       "monsterCount": 4
     },
     {
+      "itemId": 2044115,
+      "itemName": "Scroll for Two-Handed Axe for Accuracy 15%",
+      "chineseItemName": "雙手斧命中卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2044200,
+      "itemName": "Scroll for Two-Handed BW for ATT 100%",
+      "chineseItemName": "雙手棍攻擊卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2044201,
       "itemName": "Scroll for Two-Handed BW for ATT 60%",
       "chineseItemName": "雙手棍攻擊卷軸60%",
@@ -8215,6 +9937,12 @@
       "itemName": "Scroll for Two-Handed BW for ATT 10%",
       "chineseItemName": "雙手棍攻擊卷軸10%",
       "monsterCount": 2
+    },
+    {
+      "itemId": 2044207,
+      "itemName": "Scroll for Two-Handed BW for ATT 15%",
+      "chineseItemName": "雙手棍攻擊卷軸15%",
+      "monsterCount": 0
     },
     {
       "itemId": 2044210,
@@ -8235,6 +9963,18 @@
       "monsterCount": 5
     },
     {
+      "itemId": 2044215,
+      "itemName": "Scroll for Two-Handed BW for Accuracy 15%",
+      "chineseItemName": "雙手棍命中卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2044300,
+      "itemName": "Scroll for Spear for ATT 100%",
+      "chineseItemName": "槍攻擊卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2044301,
       "itemName": "Scroll for Spear for ATT 60%",
       "chineseItemName": "槍攻擊卷軸60%",
@@ -8245,6 +9985,18 @@
       "itemName": "Scroll for Spear for ATT 10%",
       "chineseItemName": "槍攻擊卷軸10%",
       "monsterCount": 5
+    },
+    {
+      "itemId": 2044307,
+      "itemName": "Scroll for Spear for ATT 15%",
+      "chineseItemName": "槍攻擊卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2044310,
+      "itemName": "Scroll for Spear for Accuracy 100%",
+      "chineseItemName": "槍命中卷軸100%",
+      "monsterCount": 0
     },
     {
       "itemId": 2044312,
@@ -8265,6 +10017,18 @@
       "monsterCount": 2
     },
     {
+      "itemId": 2044315,
+      "itemName": "Scroll for Spear for Accuracy 15%",
+      "chineseItemName": "槍命中卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2044400,
+      "itemName": "Scroll for Pole Arm for ATT 100%",
+      "chineseItemName": "矛攻擊卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2044401,
       "itemName": "Scroll for Pole Arm for ATT 60%",
       "chineseItemName": "矛攻擊卷軸60%",
@@ -8275,6 +10039,18 @@
       "itemName": "Scroll for Pole Arm for ATT 10%",
       "chineseItemName": "矛攻擊卷軸10%",
       "monsterCount": 3
+    },
+    {
+      "itemId": 2044407,
+      "itemName": "Scroll for Pole Arm for ATT 15%",
+      "chineseItemName": "矛攻擊卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2044410,
+      "itemName": "Scroll for Pole Arm for Accuracy 100%",
+      "chineseItemName": "矛命中卷軸100%",
+      "monsterCount": 0
     },
     {
       "itemId": 2044412,
@@ -8289,6 +10065,18 @@
       "monsterCount": 4
     },
     {
+      "itemId": 2044415,
+      "itemName": "Scroll for Pole Arm for Accuracy 15%",
+      "chineseItemName": "矛命中卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2044500,
+      "itemName": "Scroll for Bow for ATT 100%",
+      "chineseItemName": "弓攻擊卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2044501,
       "itemName": "Scroll for Bow for ATT 60%",
       "chineseItemName": "弓攻擊卷軸60%",
@@ -8299,6 +10087,18 @@
       "itemName": "Scroll for Bow for ATT 10%",
       "chineseItemName": "弓攻擊卷軸10%",
       "monsterCount": 4
+    },
+    {
+      "itemId": 2044507,
+      "itemName": "Scroll for Bow for ATT 15%",
+      "chineseItemName": "弓攻擊卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2044600,
+      "itemName": "Scroll for Crossbow for ATT 100%",
+      "chineseItemName": "弩攻擊卷軸100%",
+      "monsterCount": 0
     },
     {
       "itemId": 2044601,
@@ -8313,6 +10113,18 @@
       "monsterCount": 5
     },
     {
+      "itemId": 2044607,
+      "itemName": "Scroll for Crossbow for ATT 15%",
+      "chineseItemName": "弩攻擊卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2044700,
+      "itemName": "Scroll for Claw for ATT 100%",
+      "chineseItemName": "拳套攻擊卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2044701,
       "itemName": "Scroll for Claw for ATT 60%",
       "chineseItemName": "拳套攻擊卷軸60%",
@@ -8323,6 +10135,18 @@
       "itemName": "Scroll for Claw for ATT 10%",
       "chineseItemName": "拳套攻擊卷軸10%",
       "monsterCount": 5
+    },
+    {
+      "itemId": 2044707,
+      "itemName": "Scroll for Claw for ATT 15%",
+      "chineseItemName": "拳套攻擊卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2044800,
+      "itemName": "Scroll for Knuckler for ATT 100%",
+      "chineseItemName": "指虎攻擊卷軸100%",
+      "monsterCount": 0
     },
     {
       "itemId": 2044801,
@@ -8367,6 +10191,24 @@
       "monsterCount": 4
     },
     {
+      "itemId": 2044810,
+      "itemName": "Scroll for Knuckler for Accuracy 15%",
+      "chineseItemName": "指虎命中卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2044812,
+      "itemName": "Scroll for Knuckler for ATT 15%",
+      "chineseItemName": "指虎攻擊卷軸15%",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2044900,
+      "itemName": "Scroll for Gun for ATT 100%",
+      "chineseItemName": "火槍攻擊卷軸100%",
+      "monsterCount": 0
+    },
+    {
       "itemId": 2044901,
       "itemName": "Scroll for Gun for ATT 60%",
       "chineseItemName": "火槍攻擊卷軸60%",
@@ -8383,6 +10225,12 @@
       "itemName": "Dark Scroll for Gun for ATT 30%",
       "chineseItemName": "火槍攻擊詛咒卷軸30%",
       "monsterCount": 3
+    },
+    {
+      "itemId": 2044905,
+      "itemName": "Scroll for Gun for ATT 15%",
+      "chineseItemName": "火槍攻擊卷軸15%",
+      "monsterCount": 0
     },
     {
       "itemId": 2050000,

@@ -232,20 +232,6 @@ export function ItemModal({
     return []
   }, [itemId, itemName, allDrops, gachaMachines, merchantItemIndex])
 
-  // 根據語言選擇顯示名稱
-  const displayItemName = useMemo(() => {
-    // 如果沒有找到 itemData，才回退到 prop
-    if (!itemData) return itemName
-
-    // 總是從 itemData 中取名稱（保證數據源一致）
-    if (language === 'zh-TW') {
-      // 中文模式：優先用中文，沒有就用英文
-      return itemData.chineseItemName || itemData.itemName
-    }
-    // 英文模式：直接用英文名稱
-    return itemData.itemName
-  }, [language, itemData, itemName])
-
   // 查找物品屬性資料（直接使用 ItemsOrganizedData 格式）
   const itemOrganizedData = useMemo((): ItemsOrganizedData | null => {
     if (!itemId && itemId !== 0) return null
@@ -275,6 +261,19 @@ export function ItemModal({
 
     return null
   }, [itemId, itemDetailed, shouldLoadDetailed, isLoadingDetailed, detailedError, gachaMachines])
+
+  // 根據語言選擇顯示名稱（優先從 items-organized 取）
+  const displayItemName = useMemo(() => {
+    if (language === 'zh-TW') {
+      // 中文模式：優先從 items-organized 取中文名稱
+      const organizedChineseName = itemOrganizedData?.description?.chineseItemName
+      if (organizedChineseName) return organizedChineseName
+      // 再從 itemData 取（fallback）
+      if (itemData?.chineseItemName) return itemData.chineseItemName
+    }
+    // 英文名稱：優先從 items-organized 取
+    return itemOrganizedData?.description?.name || itemData?.itemName || itemName
+  }, [language, itemOrganizedData, itemData, itemName])
 
   // 當 Modal 開啟時載入物品屬性資料與怪物資訊資料
   useEffect(() => {

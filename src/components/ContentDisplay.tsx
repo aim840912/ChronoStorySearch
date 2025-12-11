@@ -1,7 +1,7 @@
 'use client'
 
 import { memo } from 'react'
-import type { FilterMode, ItemAttributesEssential, ViewHistoryItem, DropsEssential, GachaMachine } from '@/types'
+import type { FilterMode, ItemAttributesEssential, ViewHistoryItem, DropsEssential, GachaMachine, ItemIndexItem } from '@/types'
 import { FavoriteMonstersList } from '@/components/lists/FavoriteMonstersList'
 import { FavoriteItemsList } from '@/components/lists/FavoriteItemsList'
 import { AllItemsView } from '@/components/lists/AllItemsView'
@@ -81,6 +81,9 @@ interface ContentDisplayProps {
   viewHistory: ViewHistoryItem[]
   allDrops: DropsEssential[]
   gachaMachines: GachaMachine[]
+
+  // 物品索引（用於查詢中文名稱）
+  itemIndexMap: Map<number, ItemIndexItem>
 }
 
 /**
@@ -118,6 +121,7 @@ export const ContentDisplay = memo(function ContentDisplay({
   viewHistory,
   allDrops,
   gachaMachines,
+  itemIndexMap,
 }: ContentDisplayProps) {
   const { t } = useLanguage()
 
@@ -176,6 +180,7 @@ export const ContentDisplay = memo(function ContentDisplay({
           viewHistory={viewHistory}
           allDrops={allDrops}
           gachaMachines={gachaMachines}
+          itemIndexMap={itemIndexMap}
           t={t}
         />
       )}

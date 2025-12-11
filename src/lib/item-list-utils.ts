@@ -23,6 +23,7 @@ import {
   matchesLevelRangeFilter,
 } from '@/lib/filter-utils'
 import { findGachaItemEssential } from '@/lib/gacha-utils'
+import { getItemNames } from '@/lib/cache/items-cache'
 
 // 統一的篩選資料介面（支援 Essential 和完整 Attributes）
 type FilterableItem = ItemAttributes | ItemAttributesEssential
@@ -110,10 +111,12 @@ export function integrateGachaItems(
         })
       } else {
         // 純轉蛋物品（不是掉落物品）
+        // 優先從 item-index 查詢中文名稱，再 fallback 到 gacha
+        const itemNames = getItemNames(gachaItem.itemId)
         itemMap.set(gachaItem.itemId, {
           itemId: gachaItem.itemId,
           itemName: gachaItem.name || gachaItem.itemName || '',
-          chineseItemName: gachaItem.chineseName || null,
+          chineseItemName: itemNames.chineseItemName || gachaItem.chineseName || null,
           monsterCount: 0,
           source: {
             fromDrops: false,
@@ -147,10 +150,12 @@ export function addRandomGachaItems(
   }>
 ): void {
   randomGachaItems.forEach((gachaItem) => {
+    // 優先從 item-index 查詢中文名稱，再 fallback 到 gacha
+    const itemNames = getItemNames(gachaItem.itemId)
     itemMap.set(gachaItem.itemId, {
       itemId: gachaItem.itemId,
       itemName: gachaItem.name,
-      chineseItemName: gachaItem.chineseName || null,
+      chineseItemName: itemNames.chineseItemName || gachaItem.chineseName || null,
       monsterCount: 0,
       source: {
         fromDrops: false,
