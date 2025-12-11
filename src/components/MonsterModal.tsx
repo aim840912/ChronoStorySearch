@@ -71,6 +71,10 @@ export function MonsterModal({
   // 視圖模式切換狀態（'grid' = 卡片視圖, 'list' = 列表視圖）
   const [viewMode, setViewMode] = useLocalStorage<'grid' | 'list'>('monster-drops-view', 'grid')
 
+  // 掉落物品篩選狀態
+  const [dropFilter, setDropFilter] = useState<'all' | 'equipment' | 'scroll' | 'other'>('all')
+  const [isDropFilterOpen, setIsDropFilterOpen] = useState(false)
+
   // 懶加載怪物資訊資料
   const {
     data: mobInfoData,
@@ -87,6 +91,21 @@ export function MonsterModal({
   const monsterDrops = useMemo(() => {
     return monsterDropsDetailed || []
   }, [monsterDropsDetailed])
+
+  // 根據 itemAttributesMap 判斷物品類別
+  const getItemCategory = (itemId: number): 'equipment' | 'scroll' | 'other' => {
+    const attrs = itemAttributesMap.get(itemId)
+    if (!attrs) return 'other'
+    if (attrs.equipment_category || attrs.type === 'Eqp') return 'equipment'
+    if (attrs.scroll_category) return 'scroll'
+    return 'other'
+  }
+
+  // 過濾後的掉落物品
+  const filteredDrops = useMemo(() => {
+    if (dropFilter === 'all') return monsterDrops
+    return monsterDrops.filter(drop => getItemCategory(drop.itemId) === dropFilter)
+  }, [monsterDrops, dropFilter, itemAttributesMap])
 
   // 從 allDrops 查找怪物數據（用於獲取中英文名稱）
   const monsterData = useMemo(() => {
@@ -208,7 +227,7 @@ export function MonsterModal({
                   : 'text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
               }`}
             >
-              {t('monster.drops') || '掉落物品'} ({monsterDrops.length})
+              {t('monster.drops') || '掉落物品'} ({filteredDrops.length})
             </button>
           </div>
         </div>
@@ -279,34 +298,74 @@ export function MonsterModal({
             mobileTab === 'info' ? 'hidden min-[1120px]:block' : ''
           }`}>
             {/* 掉落標題和視圖切換 */}
-            <div className="flex items-center justify-between mb-3 sm:mb-4">
+            <div className="flex items-center justify-between mb-3 sm:mb-4 gap-2">
               <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 hidden min-[1120px]:block">
-                {t('monster.drops')} ({monsterDrops.length})
+                {t('monster.drops')} ({filteredDrops.length})
               </h3>
-              {/* 視圖切換按鈕（>= 1120px 放右邊，< 1120px 放左邊） */}
-              <button
-                onClick={() => setViewMode(viewMode === 'grid' ? 'list' : 'grid')}
-                className="p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 min-[1120px]:ml-auto"
-                aria-label={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
-                title={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
-              >
-                {viewMode === 'grid' ? (
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                  </svg>
-                ) : (
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                )}
-              </button>
+              {/* 下拉選單 + 視圖切換按鈕群組 */}
+              <div className="flex items-center gap-2 min-[1120px]:ml-auto">
+                {/* 掉落物品篩選下拉選單 */}
+                <div className="relative">
+                  <button
+                    onClick={() => setIsDropFilterOpen(!isDropFilterOpen)}
+                    className="px-3 py-2 text-sm rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors flex items-center gap-1.5"
+                  >
+                    {t(`monster.dropFilter.${dropFilter}`)}
+                    <svg
+                      className={`w-4 h-4 transition-transform ${isDropFilterOpen ? 'rotate-180' : ''}`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  {isDropFilterOpen && (
+                    <div className="absolute top-full left-0 mt-1 w-32 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 z-50 py-1">
+                      {(['all', 'equipment', 'scroll', 'other'] as const).map((filter) => (
+                        <button
+                          key={filter}
+                          onClick={() => {
+                            setDropFilter(filter)
+                            setIsDropFilterOpen(false)
+                          }}
+                          className={`w-full px-3 py-1.5 text-left text-sm transition-colors ${
+                            dropFilter === filter
+                              ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300'
+                              : 'hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300'
+                          }`}
+                        >
+                          {t(`monster.dropFilter.${filter}`)}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                {/* 視圖切換按鈕 */}
+                <button
+                  onClick={() => setViewMode(viewMode === 'grid' ? 'list' : 'grid')}
+                  className="p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600"
+                  aria-label={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
+                  title={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
+                >
+                  {viewMode === 'grid' ? (
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                    </svg>
+                  ) : (
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  )}
+                </button>
+              </div>
             </div>
             {/* 根據視圖模式渲染不同的佈局 */}
             {viewMode === 'grid' ? (
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 p-1 items-start">
                 {/* 左欄 */}
                 <div className="flex-1 space-y-3 sm:space-y-4 w-full sm:w-auto">
-                  {monsterDrops
+                  {filteredDrops
                     .filter((_, index) => index % 2 === 0)
                     .map((drop) => (
                       <DropItemCard
@@ -321,7 +380,7 @@ export function MonsterModal({
                 </div>
                 {/* 右欄 */}
                 <div className="flex-1 space-y-3 sm:space-y-4 w-full sm:w-auto">
-                  {monsterDrops
+                  {filteredDrops
                     .filter((_, index) => index % 2 === 1)
                     .map((drop) => (
                       <DropItemCard
@@ -337,7 +396,7 @@ export function MonsterModal({
               </div>
             ) : (
               <DropItemList
-                drops={monsterDrops}
+                drops={filteredDrops}
                 itemAttributesMap={itemAttributesMap}
                 isItemFavorite={isItemFavorite}
                 onToggleFavorite={onToggleItemFavorite}
