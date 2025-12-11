@@ -29,6 +29,30 @@ import { getItemNames } from '@/lib/cache/items-cache'
 type FilterableItem = ItemAttributes | ItemAttributesEssential
 
 /**
+ * 建構擴展的物品屬性 Map（包含 Gacha 物品）
+ *
+ * 用於篩選和排序時，確保轉蛋專屬物品也有屬性資料
+ */
+function buildExtendedAttributesMap(
+  itemAttributesMap: Map<number, ItemAttributesEssential>,
+  items: ExtendedUniqueItem[],
+  gachaMachines: GachaMachine[]
+): Map<number, FilterableItem> {
+  const extendedMap: Map<number, FilterableItem> = new Map(itemAttributesMap)
+
+  for (const item of items) {
+    if (!extendedMap.has(item.itemId)) {
+      const gachaAttributes = findGachaItemEssential(item.itemId, gachaMachines)
+      if (gachaAttributes) {
+        extendedMap.set(item.itemId, gachaAttributes)
+      }
+    }
+  }
+
+  return extendedMap
+}
+
+/**
  * 從掉落資料建立物品 Map
  */
 export function buildItemMapFromDrops(
@@ -189,16 +213,11 @@ export function applyItemFilters(
   }
 
   // 為轉蛋物品建立擴展屬性 Map
-  const extendedAttributesMap: Map<number, FilterableItem> = new Map(itemAttributesMap)
-
-  filtered.forEach(item => {
-    if (!extendedAttributesMap.has(item.itemId)) {
-      const gachaAttributes = findGachaItemEssential(item.itemId, gachaMachines)
-      if (gachaAttributes) {
-        extendedAttributesMap.set(item.itemId, gachaAttributes)
-      }
-    }
-  })
+  const extendedAttributesMap = buildExtendedAttributesMap(
+    itemAttributesMap,
+    filtered,
+    gachaMachines
+  )
 
   // 物品類別篩選
   if (advancedFilter.enabled && advancedFilter.itemCategories.length > 0) {
@@ -234,16 +253,11 @@ export function sortItemsByLevel(
   gachaMachines: GachaMachine[]
 ): ExtendedUniqueItem[] {
   // 建立擴展屬性 Map（包含轉蛋物品屬性）
-  const extendedAttributesMap: Map<number, FilterableItem> = new Map(itemAttributesMap)
-
-  items.forEach(item => {
-    if (!extendedAttributesMap.has(item.itemId)) {
-      const gachaAttributes = findGachaItemEssential(item.itemId, gachaMachines)
-      if (gachaAttributes) {
-        extendedAttributesMap.set(item.itemId, gachaAttributes)
-      }
-    }
-  })
+  const extendedAttributesMap = buildExtendedAttributesMap(
+    itemAttributesMap,
+    items,
+    gachaMachines
+  )
 
   return [...items].sort((a, b) => {
     const attrA = extendedAttributesMap.get(a.itemId)

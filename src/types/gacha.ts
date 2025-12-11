@@ -76,6 +76,7 @@ export interface GachaSearchResult {
 }
 
 // 隨機裝備屬性（用於抽獎機的隨機屬性計算）
+// 所有欄位為可選且為純數字（非 null）
 export interface RandomEquipmentStats {
   str?: number
   dex?: number
@@ -85,12 +86,12 @@ export interface RandomEquipmentStats {
   matk?: number
   wdef?: number
   mdef?: number
+  hp?: number
+  mp?: number
   accuracy?: number
   avoidability?: number
   speed?: number
   jump?: number
-  hp?: number
-  mp?: number
   attack_speed?: number
   upgrades?: number
 }

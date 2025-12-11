@@ -1,6 +1,29 @@
 import type { ItemAttributes, ItemEquipment } from '@/types'
 
 /**
+ * 計算裝備數值的隨機範圍
+ *
+ * 根據 Random Equipment Stats.md:
+ * - 基礎公式: Req Lv / 10
+ * - Overall (連體服) 需要 × 2（因為取代了上衣+下裝）
+ *
+ * @param reqLevel 裝備需求等級
+ * @param category 裝備類別
+ * @returns 數值範圍 (±range)
+ */
+export function calculateEquipmentStatRange(
+  reqLevel: number | null | undefined,
+  category: string | null | undefined
+): number {
+  if (!reqLevel || reqLevel <= 0) return 0
+
+  const baseRange = reqLevel / 10
+  const isOverall = category?.toLowerCase().includes('overall') ?? false
+
+  return isOverall ? baseRange * 2 : baseRange
+}
+
+/**
  * 主屬性列表（STR, DEX, INT, LUK）
  */
 const PRIMARY_STATS = ['str', 'dex', 'int', 'luk'] as const
@@ -27,22 +50,14 @@ export interface StatCombination {
 /**
  * 計算裝備的總屬性預算
  *
- * 根據 Random Equipment Stats.md:
- * - 基礎公式: Req Lv / 10
- * - Overall (連體服) 需要 × 2（因為取代了上衣+下裝）
- *
  * @param equipment - 裝備數據
  * @returns 總屬性預算（用於主屬性分配）
  */
 export function calculateStatBudget(equipment: ItemEquipment): number {
-  const reqLevel = equipment.requirements.req_level
-  if (!reqLevel) return 0
-
-  const baseRange = reqLevel / 10
-
-  // Overall 類型的預算要 × 2
-  const isOverall = equipment.category === 'Overall'
-  return isOverall ? baseRange * 2 : baseRange
+  return calculateEquipmentStatRange(
+    equipment.requirements.req_level,
+    equipment.category
+  )
 }
 
 /**
