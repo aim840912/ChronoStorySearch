@@ -8,7 +8,7 @@
     {
       "itemId": 1452025,
       "itemName": "Blue Metus",
-      "chineseName": null,
+      "chineseName": "藍色梅杜斯",
       "probability": "0.13%",
       "chance": 33333,
       "type": "Eqp",
@@ -17,7 +17,7 @@
     {
       "itemId": 1002406,
       "itemName": "Red Arnah Cap",
-      "chineseName": null,
+      "chineseName": "紅色阿爾納帽",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -26,7 +26,7 @@
     {
       "itemId": 1002407,
       "itemName": "Blue Arnah Cap",
-      "chineseName": null,
+      "chineseName": "藍色阿爾納帽",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -35,7 +35,7 @@
     {
       "itemId": 1002408,
       "itemName": "Green Arnah Cap",
-      "chineseName": null,
+      "chineseName": "綠色阿爾納帽",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -44,7 +44,7 @@
     {
       "itemId": 1050106,
       "itemName": "Green Arzuna",
-      "chineseName": null,
+      "chineseName": "綠色卡那裝",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -53,7 +53,7 @@
     {
       "itemId": 1050107,
       "itemName": "Blue Arzuna",
-      "chineseName": null,
+      "chineseName": "藍色卡那裝",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -62,7 +62,7 @@
     {
       "itemId": 1050108,
       "itemName": "Red Arzuna",
-      "chineseName": null,
+      "chineseName": "紅色卡那裝",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -71,7 +71,7 @@
     {
       "itemId": 1051105,
       "itemName": "Green Armis",
-      "chineseName": null,
+      "chineseName": "綠色米斯裝",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -80,7 +80,7 @@
     {
       "itemId": 1051106,
       "itemName": "Blue Armis",
-      "chineseName": null,
+      "chineseName": "藍色米斯裝",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -89,7 +89,7 @@
     {
       "itemId": 1051107,
       "itemName": "Red Armis",
-      "chineseName": null,
+      "chineseName": "紅色米斯裝 ",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -107,7 +107,7 @@
     {
       "itemId": 1072228,
       "itemName": "Blue Arnah Shoes",
-      "chineseName": null,
+      "chineseName": "藍色阿爾納鞋",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -116,7 +116,7 @@
     {
       "itemId": 1072229,
       "itemName": "Green Arnah Shoes",
-      "chineseName": null,
+      "chineseName": "綠色阿爾納鞋",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -125,7 +125,7 @@
     {
       "itemId": 1082158,
       "itemName": "Red Arcina",
-      "chineseName": null,
+      "chineseName": "紅色條紋手套",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -134,7 +134,7 @@
     {
       "itemId": 1082159,
       "itemName": "Blue Arcina",
-      "chineseName": null,
+      "chineseName": "藍色條紋手套",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -143,7 +143,7 @@
     {
       "itemId": 1082160,
       "itemName": "Green Arcina",
-      "chineseName": null,
+      "chineseName": "星紋手套",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -152,7 +152,7 @@
     {
       "itemId": 1200004,
       "itemName": "Diamond Arrow for Bow",
-      "chineseName": null,
+      "chineseName": "鑽石箭矢",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -161,7 +161,7 @@
     {
       "itemId": 1201004,
       "itemName": "Diamond Bolt for Crossbow",
-      "chineseName": null,
+      "chineseName": "鑽石弩矢",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -170,7 +170,7 @@
     {
       "itemId": 1452019,
       "itemName": "White Nisrock",
-      "chineseName": null,
+      "chineseName": "白色雷鳥弓",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -179,7 +179,7 @@
     {
       "itemId": 1452020,
       "itemName": "Golden Nisrock",
-      "chineseName": null,
+      "chineseName": "金色雷鳥弓",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -188,7 +188,7 @@
     {
       "itemId": 1452021,
       "itemName": "Dark Nisrock",
-      "chineseName": null,
+      "chineseName": "黑色雷鳥弓",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -197,7 +197,7 @@
     {
       "itemId": 1462015,
       "itemName": "White Neschere",
-      "chineseName": null,
+      "chineseName": "白色獵鷹弓",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -206,7 +206,7 @@
     {
       "itemId": 1462016,
       "itemName": "Golden Neschere",
-      "chineseName": null,
+      "chineseName": "金色獵鷹弓",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -215,7 +215,7 @@
     {
       "itemId": 1462017,
       "itemName": "Dark Neschere",
-      "chineseName": null,
+      "chineseName": "黑色獵鷹弓",
       "probability": "0.19%",
       "chance": 50000,
       "type": "Eqp",
@@ -341,7 +341,7 @@
     {
       "itemId": 1072204,
       "itemName": "Green Ades Shoes",
-      "chineseName": null,
+      "chineseName": "綠色昂斯鞋",
       "probability": "0.23%",
       "chance": 61111,
       "type": "Eqp",
@@ -395,7 +395,7 @@
     {
       "itemId": 1452026,
       "itemName": "Black Metus",
-      "chineseName": null,
+      "chineseName": "黑色梅杜斯",
       "probability": "0.23%",
       "chance": 61111,
       "type": "Eqp",
@@ -413,7 +413,7 @@
     {
       "itemId": 1462022,
       "itemName": "Yellow Crow",
-      "chineseName": null,
+      "chineseName": "黃色可撒弩",
       "probability": "0.23%",
       "chance": 61111,
       "type": "Eqp",
@@ -1205,7 +1205,7 @@
     {
       "itemId": 1200002,
       "itemName": "Steel Arrow for Bow",
-      "chineseName": null,
+      "chineseName": "鋼鐵弓箭",
       "probability": "0.57%",
       "chance": 150000,
       "type": "Eqp",
@@ -1214,7 +1214,7 @@
     {
       "itemId": 1201002,
       "itemName": "Steel Bolt for Crossbow",
-      "chineseName": null,
+      "chineseName": "鋼鐵弩箭",
       "probability": "0.57%",
       "chance": 150000,
       "type": "Eqp",
@@ -1259,7 +1259,7 @@
     {
       "itemId": 1002167,
       "itemName": "Blue Distinction",
-      "chineseName": null,
+      "chineseName": "藍羽絲絨帽",
       "probability": "0.77%",
       "chance": 200000,
       "type": "Eqp",
@@ -1484,7 +1484,7 @@
     {
       "itemId": 1002135,
       "itemName": "Brown Pole-Feather Hat",
-      "chineseName": null,
+      "chineseName": "褐羽翼三角帽",
       "probability": "0.90%",
       "chance": 235714,
       "type": "Eqp",
@@ -1736,7 +1736,7 @@
     {
       "itemId": 1082068,
       "itemName": "Bronze Scaler",
-      "chineseName": null,
+      "chineseName": "青銅名弓手套",
       "probability": "0.90%",
       "chance": 235714,
       "type": "Eqp",
@@ -1781,7 +1781,7 @@
     {
       "itemId": 1072170,
       "itemName": "Green Snowshoes",
-      "chineseName": null,
+      "chineseName": "綠雪鞋",
       "probability": "1.09%",
       "chance": 283333,
       "type": "Eqp",

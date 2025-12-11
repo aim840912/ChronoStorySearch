@@ -8,7 +8,7 @@
     {
       "itemId": 1002646,
       "itemName": "Black Polax Hat",
-      "chineseName": null,
+      "chineseName": "黑色的航海帽",
       "probability": "0.70%",
       "chance": 50000,
       "type": "Eqp",
@@ -26,7 +26,7 @@
     {
       "itemId": 1072318,
       "itemName": "Black Duke Barkin Shoes",
-      "chineseName": null,
+      "chineseName": "黑色公爵靴",
       "probability": "0.70%",
       "chance": 50000,
       "type": "Eqp",
@@ -35,7 +35,7 @@
     {
       "itemId": 1082213,
       "itemName": "Black Skellduke",
-      "chineseName": null,
+      "chineseName": "黑色斯卡洛伯爵手套",
       "probability": "0.70%",
       "chance": 50000,
       "type": "Eqp",
@@ -44,7 +44,7 @@
     {
       "itemId": 1202007,
       "itemName": "Eternal Bullet",
-      "chineseName": null,
+      "chineseName": "穿甲彈",
       "probability": "0.70%",
       "chance": 50000,
       "type": "Eqp",
@@ -53,7 +53,7 @@
     {
       "itemId": 1482012,
       "itemName": "King Cent",
-      "chineseName": null,
+      "chineseName": "王者毀滅拳套",
       "probability": "0.70%",
       "chance": 50000,
       "type": "Eqp",
@@ -62,7 +62,7 @@
     {
       "itemId": 1492012,
       "itemName": "Concerto",
-      "chineseName": null,
+      "chineseName": "死亡協奏曲",
       "probability": "0.70%",
       "chance": 50000,
       "type": "Eqp",
@@ -215,7 +215,7 @@
     {
       "itemId": 1202006,
       "itemName": "Shiny Bullet",
-      "chineseName": null,
+      "chineseName": "高爆彈",
       "probability": "1.29%",
       "chance": 92857,
       "type": "Eqp",
@@ -494,7 +494,7 @@
     {
       "itemId": 1072338,
       "itemName": "Purple Snowshoes",
-      "chineseName": null,
+      "chineseName": "紫雪鞋",
       "probability": "3.95%",
       "chance": 283333,
       "type": "Eqp",
