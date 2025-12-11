@@ -23,7 +23,7 @@ interface DropCardProps {
 export const DropCard = memo(function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite, maxHP }: DropCardProps) {
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
-  const chancePercent = (drop.chance * 100).toFixed(4)
+  const chancePercent = drop.chance.toFixed(4)
 
   // 獲取顯示名稱（支援中英文切換）
   const displayMobName = getMonsterDisplayName(drop.mobName, drop.chineseMobName, language)

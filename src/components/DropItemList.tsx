@@ -120,7 +120,7 @@ function DropItemListRow({
   const { language, t } = useLanguage()
   const [isExpanded, setIsExpanded] = useState(false)
 
-  const chancePercent = (drop.chance * 100).toFixed(4)
+  const chancePercent = drop.chance.toFixed(4)
   const qtyRange =
     drop.minQty === drop.maxQty ? `${drop.minQty}` : `${drop.minQty}-${drop.maxQty}`
 
