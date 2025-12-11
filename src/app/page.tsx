@@ -81,6 +81,7 @@ export default function Home() {
     mobLevelMap,
     mobInfoMap,
     itemAttributesMap,
+    itemIndexMap,
     loadGachaMachines,
   } = useDataManagement()
 
@@ -396,6 +397,7 @@ export default function Home() {
           viewHistory={viewHistory.history}
           allDrops={allDrops}
           gachaMachines={gachaMachines}
+          itemIndexMap={itemIndexMap}
         />
       </div>
 

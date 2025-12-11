@@ -18,18 +18,24 @@ export const EQUIPMENT_CATEGORY_MAP: Record<string, ItemCategoryGroup> = {
   'Hat': 'hat',
   'Top': 'top',
   'Bottom': 'bottom',
+  'Bottomwear': 'bottom',
   'Overall': 'overall',
   'Shoes': 'shoes',
+  'Glove': 'gloves',
   'Gloves': 'gloves',
   'Cape': 'cape',
 
-  // 武器類（拆分單手/雙手劍、斧、棍）
-  'One Handed Sword': 'oneHandedSword',
-  'Two Handed Sword': 'twoHandedSword',
-  'One Handed Axe': 'oneHandedAxe',
-  'Two Handed Axe': 'twoHandedAxe',
-  'One Handed BW': 'oneHandedBW',
-  'Two Handed BW': 'twoHandedBW',
+  // 武器類（使用資料中的格式：連字符命名）
+  'One-Handed Sword': 'oneHandedSword',
+  'Two-Handed Sword': 'twoHandedSword',
+  'One-Handed Axe': 'oneHandedAxe',
+  'Two-Handed Axe': 'twoHandedAxe',
+  'One-Handed Blunt Weapon': 'oneHandedBW',
+  'One-Handed BW': 'oneHandedBW',
+  'Two-Handed Blunt Weapon': 'twoHandedBW',
+  'Two-Handed Blunt': 'twoHandedBW',
+  'Two-Handed BW': 'twoHandedBW',
+  'Pole Arm': 'polearm',
   'Polearm': 'polearm',
   'Spear': 'spear',
   'Dagger': 'dagger',
@@ -43,7 +49,7 @@ export const EQUIPMENT_CATEGORY_MAP: Record<string, ItemCategoryGroup> = {
   'Shield': 'shield',
 
   // 飾品類
-  'Earring': 'earring',
+  'Earrings': 'earring',
   'Accessory': 'accessory',
 
   // 投擲物（特殊：既是武器也是消耗品）
@@ -59,6 +65,8 @@ const SUB_TYPE_FALLBACK_MAP: Record<string, ItemCategoryGroup> = {
   'Potion': 'potion',
   'Food and Drink': 'potion',
   'Status Cure': 'potion',
+  'Consumable': 'potion',
+  'Transformation': 'potion',
   'Projectile': 'projectile',
   // 舊版相容性（如果有物品仍使用舊的 sub_type）
   'Cap': 'hat',
@@ -92,6 +100,14 @@ export function getItemCategoryGroup(item: FilterableItem): ItemCategoryGroup | 
   // 優先使用 equipment.category
   if (equipmentCategory && equipmentCategory in EQUIPMENT_CATEGORY_MAP) {
     return EQUIPMENT_CATEGORY_MAP[equipmentCategory]
+  }
+
+  // 檢查是否為卷軸（有 scroll_category 或 scroll 欄位）
+  const scrollCategory = ('scroll_category' in item)
+    ? item.scroll_category
+    : (item as ItemAttributes).scroll?.category
+  if (scrollCategory) {
+    return 'scroll'
   }
 
   // 降級：使用 sub_type

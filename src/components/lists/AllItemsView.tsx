@@ -1,6 +1,6 @@
 'use client'
 
-import type { ExtendedUniqueItem, ItemAttributesEssential, ViewHistoryItem, DropsEssential, GachaMachine, GachaItem } from '@/types'
+import type { ExtendedUniqueItem, ItemAttributesEssential, ViewHistoryItem, DropsEssential, GachaMachine, GachaItem, ItemIndexItem } from '@/types'
 import type { RefObject } from 'react'
 import { MonsterCard } from '@/components/MonsterCard'
 import { ItemCard } from '@/components/ItemCard'
@@ -67,6 +67,9 @@ interface AllItemsViewProps {
   allDrops: DropsEssential[]
   gachaMachines: GachaMachine[]
 
+  // 物品索引（用於查詢中文名稱）
+  itemIndexMap: Map<number, ItemIndexItem>
+
   // 翻譯函數
   t: (key: string) => string
 }
@@ -111,6 +114,7 @@ export function AllItemsView({
   viewHistory,
   allDrops,
   gachaMachines,
+  itemIndexMap,
   t,
 }: AllItemsViewProps) {
   // 沒有任何資料時顯示空狀態
@@ -170,7 +174,8 @@ export function AllItemsView({
               if (!displayItemId) return null
               // 轉蛋物品優先使用 name（英文），若無則使用 chineseName
               const displayItemName = itemData?.itemName ?? gachaItemData?.name ?? gachaItemData?.chineseName ?? ''
-              const displayChineseName = itemData?.chineseItemName ?? gachaItemData?.chineseName ?? ''
+              // 中文名稱查詢順序：item-index.json > allDrops > gacha JSON
+              const displayChineseName = itemIndexMap.get(displayItemId)?.chineseItemName ?? itemData?.chineseItemName ?? gachaItemData?.chineseName ?? ''
               // 只要在轉蛋中找到就標記為轉蛋物品（即使同時在掉落中）
               const isFromGacha = !!gachaItemData
               // 取得等級：優先從 itemAttributesMap，fallback 到轉蛋資料
