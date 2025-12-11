@@ -8,7 +8,7 @@
     {
       "itemId": 1442002,
       "itemName": "Eviscerator",
-      "chineseName": null,
+      "chineseName": "月靈戟",
       "probability": "0.10%",
       "chance": 33333,
       "type": "Eqp",
@@ -17,7 +17,7 @@
     {
       "itemId": 1002377,
       "itemName": "Green Valhalla Helmet",
-      "chineseName": null,
+      "chineseName": "綠色尼爾哲頭盔",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -26,7 +26,7 @@
     {
       "itemId": 1002378,
       "itemName": "Blue Valhalla Helmet",
-      "chineseName": null,
+      "chineseName": "藍色尼爾哲頭盔",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -35,7 +35,7 @@
     {
       "itemId": 1002379,
       "itemName": "Dark Valhalla Helmet",
-      "chineseName": null,
+      "chineseName": "黑色尼爾哲頭盔",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -44,7 +44,7 @@
     {
       "itemId": 1003840,
       "itemName": "Shadow Knight Hat",
-      "chineseName": null,
+      "chineseName": "暗影騎士帽",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -53,7 +53,7 @@
     {
       "itemId": 1040120,
       "itemName": "Green Neos",
-      "chineseName": null,
+      "chineseName": "綠色涅奧斯盔甲",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -62,7 +62,7 @@
     {
       "itemId": 1040121,
       "itemName": "Blue Neos",
-      "chineseName": null,
+      "chineseName": "藍色涅奧斯盔甲",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -71,7 +71,7 @@
     {
       "itemId": 1040122,
       "itemName": "Black Neos",
-      "chineseName": null,
+      "chineseName": "黑色涅奧斯盔甲 ",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -80,7 +80,7 @@
     {
       "itemId": 1041122,
       "itemName": "Green Lucida",
-      "chineseName": null,
+      "chineseName": "綠色厄索爾盔甲",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -89,7 +89,7 @@
     {
       "itemId": 1041123,
       "itemName": "Purple Lucida",
-      "chineseName": null,
+      "chineseName": "紫色厄索爾盔甲",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -98,7 +98,7 @@
     {
       "itemId": 1041124,
       "itemName": "Dark Lucida",
-      "chineseName": null,
+      "chineseName": "黑色厄索爾盔甲",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -107,7 +107,7 @@
     {
       "itemId": 1060109,
       "itemName": "Green Neos Pants",
-      "chineseName": null,
+      "chineseName": "綠色涅奧斯長褲",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -116,7 +116,7 @@
     {
       "itemId": 1060110,
       "itemName": "Blue Neos Pants",
-      "chineseName": null,
+      "chineseName": "藍色涅奧斯長褲",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -125,7 +125,7 @@
     {
       "itemId": 1060111,
       "itemName": "Black Neos Pants",
-      "chineseName": null,
+      "chineseName": "黑色涅奧斯長褲 ",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -134,7 +134,7 @@
     {
       "itemId": 1061121,
       "itemName": "Green Lucida Skirt",
-      "chineseName": null,
+      "chineseName": "綠色厄索爾裙子",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -143,7 +143,7 @@
     {
       "itemId": 1061122,
       "itemName": "Purple Lucida Skirt",
-      "chineseName": null,
+      "chineseName": "紫色厄索爾裙子",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -152,7 +152,7 @@
     {
       "itemId": 1061123,
       "itemName": "Dark Lucida Skirt",
-      "chineseName": null,
+      "chineseName": "黑色厄索爾裙子",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -161,7 +161,7 @@
     {
       "itemId": 1072220,
       "itemName": "Green Crescent Boots",
-      "chineseName": null,
+      "chineseName": "綠色新月型長靴",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -170,7 +170,7 @@
     {
       "itemId": 1072221,
       "itemName": "Blue Crescent Boots",
-      "chineseName": null,
+      "chineseName": "藍色新月型長靴",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -179,7 +179,7 @@
     {
       "itemId": 1072222,
       "itemName": "Dark Crescent Boots",
-      "chineseName": null,
+      "chineseName": "黑色新月型長靴",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -188,7 +188,7 @@
     {
       "itemId": 1082139,
       "itemName": "Green Korben",
-      "chineseName": null,
+      "chineseName": "綠色凱蘭特手套",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -197,7 +197,7 @@
     {
       "itemId": 1082140,
       "itemName": "Blue Korben",
-      "chineseName": null,
+      "chineseName": "藍色凱蘭特手套",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -206,7 +206,7 @@
     {
       "itemId": 1082141,
       "itemName": "Dark Korben",
-      "chineseName": null,
+      "chineseName": "黑色凱蘭特手套",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -215,7 +215,7 @@
     {
       "itemId": 1092036,
       "itemName": "Green Hoflon",
-      "chineseName": null,
+      "chineseName": "綠色斯巴達盾",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -224,7 +224,7 @@
     {
       "itemId": 1092037,
       "itemName": "Violet Hoflon",
-      "chineseName": null,
+      "chineseName": "紫色斯巴達盾",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -233,7 +233,7 @@
     {
       "itemId": 1092038,
       "itemName": "Blue Hoflon",
-      "chineseName": null,
+      "chineseName": "藍色斯巴達盾",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -242,7 +242,7 @@
     {
       "itemId": 1302056,
       "itemName": "Sparta",
-      "chineseName": null,
+      "chineseName": "紫凌劍",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -251,7 +251,7 @@
     {
       "itemId": 1312030,
       "itemName": "Tomahawk",
-      "chineseName": null,
+      "chineseName": "印第安戰斧",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -260,7 +260,7 @@
     {
       "itemId": 1322045,
       "itemName": "Battle Hammer",
-      "chineseName": null,
+      "chineseName": "海克力斯之錘",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -269,7 +269,7 @@
     {
       "itemId": 1402035,
       "itemName": "The Beheader",
-      "chineseName": null,
+      "chineseName": "赤焰刀",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -278,7 +278,7 @@
     {
       "itemId": 1412021,
       "itemName": "Tavar",
-      "chineseName": null,
+      "chineseName": "雷神大斧",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -287,7 +287,7 @@
     {
       "itemId": 1422027,
       "itemName": "Golden Smith Hammer",
-      "chineseName": null,
+      "chineseName": "神匠之錘",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -296,7 +296,7 @@
     {
       "itemId": 1432030,
       "itemName": "Pinaka",
-      "chineseName": null,
+      "chineseName": "火尖槍",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -305,7 +305,7 @@
     {
       "itemId": 1442044,
       "itemName": "Zedbug",
-      "chineseName": null,
+      "chineseName": "阿基里斯斧矛",
       "probability": "0.15%",
       "chance": 50000,
       "type": "Eqp",
@@ -314,7 +314,7 @@
     {
       "itemId": 1002528,
       "itemName": "Green Grace Helmet",
-      "chineseName": null,
+      "chineseName": "綠色格萊西頭盔",
       "probability": "0.19%",
       "chance": 61111,
       "type": "Eqp",
@@ -323,7 +323,7 @@
     {
       "itemId": 1002529,
       "itemName": "Blue Grace Helmet",
-      "chineseName": null,
+      "chineseName": "藍色格萊西頭盔",
       "probability": "0.19%",
       "chance": 61111,
       "type": "Eqp",
@@ -332,7 +332,7 @@
     {
       "itemId": 1002530,
       "itemName": "Red Grace Helmet",
-      "chineseName": null,
+      "chineseName": "紅色格萊西頭盔",
       "probability": "0.19%",
       "chance": 61111,
       "type": "Eqp",
@@ -341,7 +341,7 @@
     {
       "itemId": 1002531,
       "itemName": "Silver Grace Helmet",
-      "chineseName": null,
+      "chineseName": "銀色格萊西頭盔",
       "probability": "0.19%",
       "chance": 61111,
       "type": "Eqp",
@@ -575,7 +575,7 @@
     {
       "itemId": 1402005,
       "itemName": "Berzerker",
-      "chineseName": null,
+      "chineseName": "斬魔刀",
       "probability": "0.19%",
       "chance": 61111,
       "type": "Eqp",
@@ -1808,7 +1808,7 @@
     {
       "itemId": 1002091,
       "itemName": "Dark Dome",
-      "chineseName": null,
+      "chineseName": "黑青武士頭盔",
       "probability": "0.49%",
       "chance": 162766,
       "type": "Eqp",
@@ -1817,7 +1817,7 @@
     {
       "itemId": 1302015,
       "itemName": "Hero's Gladius",
-      "chineseName": null,
+      "chineseName": "英雄戰劍",
       "probability": "0.52%",
       "chance": 172222,
       "type": "Eqp",
@@ -1826,7 +1826,7 @@
     {
       "itemId": 1302019,
       "itemName": "Nameless Sword",
-      "chineseName": null,
+      "chineseName": "無名劍",
       "probability": "0.52%",
       "chance": 172222,
       "type": "Eqp",
@@ -1844,7 +1844,7 @@
     {
       "itemId": 1002046,
       "itemName": "Red Bone Helm",
-      "chineseName": null,
+      "chineseName": "紅色骷髏頭盔",
       "probability": "0.57%",
       "chance": 188095,
       "type": "Eqp",
@@ -2186,7 +2186,7 @@
     {
       "itemId": 1002048,
       "itemName": "Great Blue Helmet",
-      "chineseName": null,
+      "chineseName": "藍色戰鬥頭盔",
       "probability": "0.72%",
       "chance": 235714,
       "type": "Eqp",
@@ -2258,7 +2258,7 @@
     {
       "itemId": 1051015,
       "itemName": "Blood Fitted Mail",
-      "chineseName": null,
+      "chineseName": "赤紅鎧甲",
       "probability": "0.72%",
       "chance": 235714,
       "type": "Eqp",
@@ -2312,7 +2312,7 @@
     {
       "itemId": 1082008,
       "itemName": "Steel Briggon",
-      "chineseName": null,
+      "chineseName": "鐵製輕便手套",
       "probability": "0.72%",
       "chance": 235714,
       "type": "Eqp",
@@ -2420,7 +2420,7 @@
     {
       "itemId": 1072168,
       "itemName": "Red Snowshoes",
-      "chineseName": null,
+      "chineseName": "紅雪鞋",
       "probability": "0.86%",
       "chance": 283333,
       "type": "Eqp",

@@ -26,7 +26,7 @@
     {
       "itemId": 1472053,
       "itemName": "Red Craven",
-      "chineseName": null,
+      "chineseName": "克利思拳套",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -35,7 +35,7 @@
     {
       "itemId": 1332051,
       "itemName": "Gold Double Knife",
-      "chineseName": null,
+      "chineseName": "黃金雙刃",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -44,7 +44,7 @@
     {
       "itemId": 1332052,
       "itemName": "Blood Dagger",
-      "chineseName": null,
+      "chineseName": "赤玉短刀",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -53,7 +53,7 @@
     {
       "itemId": 1082135,
       "itemName": "Blue Anelin",
-      "chineseName": null,
+      "chineseName": "藍色亞納林手套",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -62,7 +62,7 @@
     {
       "itemId": 1082136,
       "itemName": "Green Anelin",
-      "chineseName": null,
+      "chineseName": "綠色亞納林手套",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -71,7 +71,7 @@
     {
       "itemId": 1082137,
       "itemName": "Red Anelin",
-      "chineseName": null,
+      "chineseName": "紅色亞納林手套",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -80,7 +80,7 @@
     {
       "itemId": 1082138,
       "itemName": "Dark Anelin",
-      "chineseName": null,
+      "chineseName": "黑色亞納林手套",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -89,7 +89,7 @@
     {
       "itemId": 1002380,
       "itemName": "Green Canal Hood",
-      "chineseName": null,
+      "chineseName": "綠色卡奈頭巾",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -98,7 +98,7 @@
     {
       "itemId": 1002381,
       "itemName": "Blue Canal Hood",
-      "chineseName": null,
+      "chineseName": "藍色卡奈頭巾",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -107,7 +107,7 @@
     {
       "itemId": 1002382,
       "itemName": "Red Canal Hood",
-      "chineseName": null,
+      "chineseName": "紅色卡奈頭巾",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -116,7 +116,7 @@
     {
       "itemId": 1002383,
       "itemName": "Dark Canal Hood",
-      "chineseName": null,
+      "chineseName": "黑色卡奈頭巾",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -125,7 +125,7 @@
     {
       "itemId": 1050096,
       "itemName": "Green Katinas",
-      "chineseName": null,
+      "chineseName": "綠色貓裝",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -134,7 +134,7 @@
     {
       "itemId": 1050097,
       "itemName": "Blue Katinas",
-      "chineseName": null,
+      "chineseName": "藍色貓裝",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -143,7 +143,7 @@
     {
       "itemId": 1050098,
       "itemName": "Red Katinas",
-      "chineseName": null,
+      "chineseName": "紅色貓裝",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -152,7 +152,7 @@
     {
       "itemId": 1050099,
       "itemName": "Dark Katinas",
-      "chineseName": null,
+      "chineseName": "黑色貓裝",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -161,7 +161,7 @@
     {
       "itemId": 1051090,
       "itemName": "Green Katte",
-      "chineseName": null,
+      "chineseName": "綠色貓裝",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -170,7 +170,7 @@
     {
       "itemId": 1051091,
       "itemName": "Blue Katte",
-      "chineseName": null,
+      "chineseName": "藍色貓裝",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -179,7 +179,7 @@
     {
       "itemId": 1051092,
       "itemName": "Red Katte",
-      "chineseName": null,
+      "chineseName": "紅色貓裝",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -188,7 +188,7 @@
     {
       "itemId": 1051093,
       "itemName": "Dark Katte",
-      "chineseName": null,
+      "chineseName": "黑色貓裝",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -215,7 +215,7 @@
     {
       "itemId": 1072214,
       "itemName": "Blue Katina Boots",
-      "chineseName": null,
+      "chineseName": "藍色蒂娜長靴",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -224,7 +224,7 @@
     {
       "itemId": 1072215,
       "itemName": "Red Katina Boots",
-      "chineseName": null,
+      "chineseName": "紅色蒂娜長靴",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -233,7 +233,7 @@
     {
       "itemId": 1072216,
       "itemName": "Dark Katina Boots",
-      "chineseName": null,
+      "chineseName": "黑色蒂娜長靴",
       "probability": "0.16%",
       "chance": 50000,
       "type": "Eqp",
@@ -305,7 +305,7 @@
     {
       "itemId": 1061117,
       "itemName": "Red Osfa Pants",
-      "chineseName": null,
+      "chineseName": "紅色勇者褲",
       "probability": "0.20%",
       "chance": 61111,
       "type": "Eqp",
@@ -368,7 +368,7 @@
     {
       "itemId": 1002323,
       "itemName": "Green Osfa Hat",
-      "chineseName": null,
+      "chineseName": "藍扣帶帽",
       "probability": "0.20%",
       "chance": 61111,
       "type": "Eqp",
@@ -377,7 +377,7 @@
     {
       "itemId": 1002324,
       "itemName": "Brown Osfa Hat",
-      "chineseName": null,
+      "chineseName": "褐扣帶帽",
       "probability": "0.20%",
       "chance": 61111,
       "type": "Eqp",
@@ -386,7 +386,7 @@
     {
       "itemId": 1002325,
       "itemName": "Purple Osfa Hat",
-      "chineseName": null,
+      "chineseName": "紫扣帶帽",
       "probability": "0.20%",
       "chance": 61111,
       "type": "Eqp",
@@ -404,7 +404,7 @@
     {
       "itemId": 1203009,
       "itemName": "Persimmon",
-      "chineseName": null,
+      "chineseName": "橘子",
       "probability": "0.20%",
       "chance": 61111,
       "type": "Eqp",
@@ -512,7 +512,7 @@
     {
       "itemId": 1041118,
       "itemName": "Red Osfa Suit",
-      "chineseName": null,
+      "chineseName": "紅扣帶護甲",
       "probability": "0.20%",
       "chance": 61111,
       "type": "Eqp",
@@ -1484,7 +1484,7 @@
     {
       "itemId": 1203005,
       "itemName": "Paper Fighter Plane",
-      "chineseName": null,
+      "chineseName": "紙飛機",
       "probability": "0.49%",
       "chance": 150000,
       "type": "Eqp",
@@ -1493,7 +1493,7 @@
     {
       "itemId": 1092018,
       "itemName": "Seclusion Wristguard",
-      "chineseName": null,
+      "chineseName": "幸運盾牌",
       "probability": "0.49%",
       "chance": 150000,
       "type": "Eqp",
@@ -1772,7 +1772,7 @@
     {
       "itemId": 1002183,
       "itemName": "Green Pilfer",
-      "chineseName": null,
+      "chineseName": "綠海盜頭巾",
       "probability": "0.66%",
       "chance": 200000,
       "type": "Eqp",
@@ -1925,7 +1925,7 @@
     {
       "itemId": 1472011,
       "itemName": "Bronze Guardian",
-      "chineseName": null,
+      "chineseName": "青銅守護拳套",
       "probability": "0.77%",
       "chance": 235714,
       "type": "Eqp",
@@ -2069,7 +2069,7 @@
     {
       "itemId": 1072104,
       "itemName": "Red White-Lined Boots",
-      "chineseName": null,
+      "chineseName": "紅楊柳鞋",
       "probability": "0.77%",
       "chance": 235714,
       "type": "Eqp",
@@ -2159,7 +2159,7 @@
     {
       "itemId": 1072171,
       "itemName": "Black Snowshoes",
-      "chineseName": null,
+      "chineseName": "黑雪鞋",
       "probability": "0.93%",
       "chance": 283333,
       "type": "Eqp",
@@ -2168,7 +2168,7 @@
     {
       "itemId": 1092019,
       "itemName": "Nimble Wristguard",
-      "chineseName": null,
+      "chineseName": "力量盾牌",
       "probability": "0.93%",
       "chance": 283333,
       "type": "Eqp",

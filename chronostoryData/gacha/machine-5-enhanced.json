@@ -8,7 +8,7 @@
     {
       "itemId": 1002398,
       "itemName": "Green Varr Hat",
-      "chineseName": null,
+      "chineseName": "綠色巴爾帽",
       "probability": "0.21%",
       "chance": 50000,
       "type": "Eqp",
@@ -17,7 +17,7 @@
     {
       "itemId": 1002399,
       "itemName": "Blue Varr Hat",
-      "chineseName": null,
+      "chineseName": "藍色巴爾帽",
       "probability": "0.21%",
       "chance": 50000,
       "type": "Eqp",
@@ -26,7 +26,7 @@
     {
       "itemId": 1002400,
       "itemName": "Red Varr Hat",
-      "chineseName": null,
+      "chineseName": "紅色巴爾帽",
       "probability": "0.21%",
       "chance": 50000,
       "type": "Eqp",
@@ -35,7 +35,7 @@
     {
       "itemId": 1002401,
       "itemName": "Dark Varr Hat",
-      "chineseName": null,
+      "chineseName": "黑色巴爾帽",
       "probability": "0.21%",
       "chance": 50000,
       "type": "Eqp",
@@ -44,7 +44,7 @@
     {
       "itemId": 1072223,
       "itemName": "Green Varr Shoes",
-      "chineseName": null,
+      "chineseName": "綠色巴爾鞋",
       "probability": "0.21%",
       "chance": 50000,
       "type": "Eqp",
@@ -53,7 +53,7 @@
     {
       "itemId": 1072224,
       "itemName": "Blue Varr Shoes",
-      "chineseName": null,
+      "chineseName": "藍色巴爾鞋",
       "probability": "0.21%",
       "chance": 50000,
       "type": "Eqp",
@@ -62,7 +62,7 @@
     {
       "itemId": 1072225,
       "itemName": "Red Varr Shoes",
-      "chineseName": null,
+      "chineseName": "紅色巴爾鞋",
       "probability": "0.21%",
       "chance": 50000,
       "type": "Eqp",
@@ -71,7 +71,7 @@
     {
       "itemId": 1072226,
       "itemName": "Dark Varr Shoes",
-      "chineseName": null,
+      "chineseName": "黑色巴爾鞋",
       "probability": "0.21%",
       "chance": 50000,
       "type": "Eqp",
@@ -80,7 +80,7 @@
     {
       "itemId": 1082151,
       "itemName": "Green Ciara",
-      "chineseName": null,
+      "chineseName": "綠色希亞手套",
       "probability": "0.21%",
       "chance": 50000,
       "type": "Eqp",
@@ -89,7 +89,7 @@
     {
       "itemId": 1082152,
       "itemName": "Blue Ciara",
-      "chineseName": null,
+      "chineseName": "藍色希亞手套",
       "probability": "0.21%",
       "chance": 50000,
       "type": "Eqp",
@@ -98,7 +98,7 @@
     {
       "itemId": 1082153,
       "itemName": "Red Ciara",
-      "chineseName": null,
+      "chineseName": "紅色希亞手套",
       "probability": "0.21%",
       "chance": 50000,
       "type": "Eqp",
@@ -107,7 +107,7 @@
     {
       "itemId": 1082154,
       "itemName": "Purple Ciara",
-      "chineseName": null,
+      "chineseName": "紫色希亞手套",
       "probability": "0.21%",
       "chance": 50000,
       "type": "Eqp",
@@ -116,7 +116,7 @@
     {
       "itemId": 1050102,
       "itemName": "Green Varuna",
-      "chineseName": null,
+      "chineseName": "綠色羅赤裝",
       "probability": "0.22%",
       "chance": 52041,
       "type": "Eqp",
@@ -125,7 +125,7 @@
     {
       "itemId": 1050103,
       "itemName": "Blue Varuna",
-      "chineseName": null,
+      "chineseName": "藍色羅赤裝",
       "probability": "0.22%",
       "chance": 52041,
       "type": "Eqp",
@@ -134,7 +134,7 @@
     {
       "itemId": 1050104,
       "itemName": "Red Varuna",
-      "chineseName": null,
+      "chineseName": "紅色羅赤裝 ",
       "probability": "0.22%",
       "chance": 52041,
       "type": "Eqp",
@@ -143,7 +143,7 @@
     {
       "itemId": 1050105,
       "itemName": "Dark Varuna",
-      "chineseName": null,
+      "chineseName": "黑色羅赤裝 ",
       "probability": "0.22%",
       "chance": 52041,
       "type": "Eqp",
@@ -152,7 +152,7 @@
     {
       "itemId": 1051101,
       "itemName": "Green Bazura",
-      "chineseName": null,
+      "chineseName": "綠色拜爾裝",
       "probability": "0.22%",
       "chance": 52041,
       "type": "Eqp",
@@ -161,7 +161,7 @@
     {
       "itemId": 1051102,
       "itemName": "Blue Bazura",
-      "chineseName": null,
+      "chineseName": "藍色拜爾裝",
       "probability": "0.22%",
       "chance": 52041,
       "type": "Eqp",
@@ -170,7 +170,7 @@
     {
       "itemId": 1051103,
       "itemName": "Red Bazura",
-      "chineseName": null,
+      "chineseName": "紅色拜爾裝 ",
       "probability": "0.22%",
       "chance": 52041,
       "type": "Eqp",
@@ -179,7 +179,7 @@
     {
       "itemId": 1051104,
       "itemName": "Dark Bazura",
-      "chineseName": null,
+      "chineseName": "黑色拜爾裝 ",
       "probability": "0.22%",
       "chance": 52041,
       "type": "Eqp",
@@ -188,7 +188,7 @@
     {
       "itemId": 1372010,
       "itemName": "Dimon Wand",
-      "chineseName": null,
+      "chineseName": "鬼頭杖",
       "probability": "0.22%",
       "chance": 52041,
       "type": "Eqp",
@@ -206,7 +206,7 @@
     {
       "itemId": 1002363,
       "itemName": "Green Oriental Fury Hat",
-      "chineseName": null,
+      "chineseName": "綠色綢緞帽",
       "probability": "0.26%",
       "chance": 61111,
       "type": "Eqp",
@@ -215,7 +215,7 @@
     {
       "itemId": 1002364,
       "itemName": "Blue Oriental Fury Hat",
-      "chineseName": null,
+      "chineseName": "青色綢緞帽",
       "probability": "0.26%",
       "chance": 61111,
       "type": "Eqp",
@@ -224,7 +224,7 @@
     {
       "itemId": 1002365,
       "itemName": "Red Oriental Fury Hat",
-      "chineseName": null,
+      "chineseName": "紅色綢緞帽",
       "probability": "0.26%",
       "chance": 61111,
       "type": "Eqp",
@@ -386,7 +386,7 @@
     {
       "itemId": 1372009,
       "itemName": "Magicodar",
-      "chineseName": null,
+      "chineseName": "聖權杖",
       "probability": "0.27%",
       "chance": 63636,
       "type": "Eqp",
@@ -395,7 +395,7 @@
     {
       "itemId": 1382008,
       "itemName": "Kage",
-      "chineseName": null,
+      "chineseName": "魔靈之魂",
       "probability": "0.28%",
       "chance": 67647,
       "type": "Eqp",
@@ -953,7 +953,7 @@
     {
       "itemId": 1382011,
       "itemName": "Mystic Cane",
-      "chineseName": null,
+      "chineseName": "黃金杖",
       "probability": "0.61%",
       "chance": 146078,
       "type": "Eqp",
@@ -1034,7 +1034,7 @@
     {
       "itemId": 1082080,
       "itemName": "Dark Penance",
-      "chineseName": null,
+      "chineseName": "黑元素手套",
       "probability": "0.63%",
       "chance": 150000,
       "type": "Eqp",
@@ -1511,7 +1511,7 @@
     {
       "itemId": 1041052,
       "itemName": "Blue Amoria Top",
-      "chineseName": null,
+      "chineseName": "藍神聖法衣",
       "probability": "1.06%",
       "chance": 253030,
       "type": "Eqp",
@@ -1574,7 +1574,7 @@
     {
       "itemId": 1061048,
       "itemName": "Blue Amoria Skirt",
-      "chineseName": null,
+      "chineseName": "藍神聖裙",
       "probability": "1.06%",
       "chance": 253030,
       "type": "Eqp",
@@ -1610,7 +1610,7 @@
     {
       "itemId": 1072169,
       "itemName": "Blue Snowshoes",
-      "chineseName": null,
+      "chineseName": "藍雪鞋",
       "probability": "1.19%",
       "chance": 283333,
       "type": "Eqp",

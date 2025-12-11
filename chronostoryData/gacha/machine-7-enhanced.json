@@ -17,7 +17,7 @@
     {
       "itemId": 2040600,
       "itemName": "Scroll for Bottomwear for Defense 100%",
-      "chineseName": null,
+      "chineseName": "褲裙防禦卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -26,7 +26,7 @@
     {
       "itemId": 2040616,
       "itemName": "Scroll for Bottomwear for Defense 15%",
-      "chineseName": null,
+      "chineseName": "褲裙防禦卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -62,7 +62,7 @@
     {
       "itemId": 2040615,
       "itemName": "Scroll for Bottomwear for DEX 15%",
-      "chineseName": null,
+      "chineseName": "褲裙敏捷卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -125,7 +125,7 @@
     {
       "itemId": 2044500,
       "itemName": "Scroll for Bow for ATT 100%",
-      "chineseName": null,
+      "chineseName": "弓攻擊卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -134,7 +134,7 @@
     {
       "itemId": 2044507,
       "itemName": "Scroll for Bow for ATT 15%",
-      "chineseName": null,
+      "chineseName": "弓攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -206,7 +206,7 @@
     {
       "itemId": 2041055,
       "itemName": "Scroll for Cape for DEX 15%",
-      "chineseName": null,
+      "chineseName": "披風敏捷卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -242,7 +242,7 @@
     {
       "itemId": 2041053,
       "itemName": "Scroll for Cape for INT 15%",
-      "chineseName": null,
+      "chineseName": "披風智力卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -278,7 +278,7 @@
     {
       "itemId": 2041057,
       "itemName": "Scroll for Cape for LUK 15%",
-      "chineseName": null,
+      "chineseName": "披風幸運卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -314,7 +314,7 @@
     {
       "itemId": 2041051,
       "itemName": "Scroll for Cape for STR 15%",
-      "chineseName": null,
+      "chineseName": "披風力量卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -341,7 +341,7 @@
     {
       "itemId": 2044700,
       "itemName": "Scroll for Claw for ATT 100%",
-      "chineseName": null,
+      "chineseName": "拳套攻擊卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -350,7 +350,7 @@
     {
       "itemId": 2044707,
       "itemName": "Scroll for Claw for ATT 15%",
-      "chineseName": null,
+      "chineseName": "拳套攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -377,7 +377,7 @@
     {
       "itemId": 2044600,
       "itemName": "Scroll for Crossbow for ATT 100%",
-      "chineseName": null,
+      "chineseName": "弩攻擊卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -386,7 +386,7 @@
     {
       "itemId": 2044607,
       "itemName": "Scroll for Crossbow for ATT 15%",
-      "chineseName": null,
+      "chineseName": "弩攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -413,7 +413,7 @@
     {
       "itemId": 2043300,
       "itemName": "Scroll for Dagger for ATT 100%",
-      "chineseName": null,
+      "chineseName": "短劍攻擊卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -422,7 +422,7 @@
     {
       "itemId": 2043307,
       "itemName": "Scroll for Dagger for ATT 15%",
-      "chineseName": null,
+      "chineseName": "短劍攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -440,7 +440,7 @@
     {
       "itemId": 2040310,
       "itemName": "Scroll for Earring for Defense 10%",
-      "chineseName": null,
+      "chineseName": "耳環防禦卷軸10%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -458,7 +458,7 @@
     {
       "itemId": 2040313,
       "itemName": "Scroll for Earring for Defense 15%",
-      "chineseName": null,
+      "chineseName": "耳環防禦卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -494,7 +494,7 @@
     {
       "itemId": 2040336,
       "itemName": "Scroll for Earring for DEX 15%",
-      "chineseName": null,
+      "chineseName": "耳環敏捷卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -521,7 +521,7 @@
     {
       "itemId": 2040300,
       "itemName": "Scroll for Earring for INT 100%",
-      "chineseName": null,
+      "chineseName": "耳環智力卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -530,7 +530,7 @@
     {
       "itemId": 2040314,
       "itemName": "Scroll for Earring for INT 15%",
-      "chineseName": null,
+      "chineseName": "耳環智力卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -566,7 +566,7 @@
     {
       "itemId": 2040338,
       "itemName": "Scroll for Earring for LUK 15%",
-      "chineseName": null,
+      "chineseName": "耳環幸運卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -584,7 +584,7 @@
     {
       "itemId": 2040332,
       "itemName": "Scroll for Earring for STR 10%",
-      "chineseName": null,
+      "chineseName": "耳環力量卷軸10%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -602,7 +602,7 @@
     {
       "itemId": 2040333,
       "itemName": "Scroll for Earring for STR 15%",
-      "chineseName": null,
+      "chineseName": "耳環力量卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -611,7 +611,7 @@
     {
       "itemId": 2040330,
       "itemName": "Scroll for Earring for STR 60%",
-      "chineseName": null,
+      "chineseName": "耳環力量卷軸60%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -629,7 +629,7 @@
     {
       "itemId": 2040800,
       "itemName": "Scroll for Gloves for Accuracy 100%",
-      "chineseName": null,
+      "chineseName": "手套命中卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -638,7 +638,7 @@
     {
       "itemId": 2040829,
       "itemName": "Scroll for Gloves for Accuracy 15%",
-      "chineseName": null,
+      "chineseName": "手套命中卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -665,7 +665,7 @@
     {
       "itemId": 2040803,
       "itemName": "Scroll for Gloves for ATT 100%",
-      "chineseName": null,
+      "chineseName": "手套攻擊卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -674,7 +674,7 @@
     {
       "itemId": 2040822,
       "itemName": "Scroll for Gloves for ATT 15%",
-      "chineseName": null,
+      "chineseName": "手套攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -710,7 +710,7 @@
     {
       "itemId": 2040826,
       "itemName": "Scroll for Gloves for Defense 15%",
-      "chineseName": null,
+      "chineseName": "手套防禦卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -737,7 +737,7 @@
     {
       "itemId": 2040818,
       "itemName": "Scroll for Gloves for Magic ATT 100%",
-      "chineseName": null,
+      "chineseName": "手套魔力卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -746,7 +746,7 @@
     {
       "itemId": 2040820,
       "itemName": "Scroll for Gloves for Magic ATT 15%",
-      "chineseName": null,
+      "chineseName": "手套魔力卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -773,7 +773,7 @@
     {
       "itemId": 2044900,
       "itemName": "Scroll for Gun for ATT 100%",
-      "chineseName": null,
+      "chineseName": "火槍攻擊卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -782,7 +782,7 @@
     {
       "itemId": 2044905,
       "itemName": "Scroll for Gun for ATT 15%",
-      "chineseName": null,
+      "chineseName": "火槍攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -800,7 +800,7 @@
     {
       "itemId": 2040016,
       "itemName": "Scroll for Helmet for Accuracy 10%",
-      "chineseName": null,
+      "chineseName": "頭盔命中卷軸10%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -809,7 +809,7 @@
     {
       "itemId": 2040018,
       "itemName": "Scroll for Helmet for Accuracy 100%",
-      "chineseName": null,
+      "chineseName": "頭盔命中卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -818,7 +818,7 @@
     {
       "itemId": 2040034,
       "itemName": "Scroll for Helmet for Accuracy 15%",
-      "chineseName": null,
+      "chineseName": "頭盔命中卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -827,7 +827,7 @@
     {
       "itemId": 2040017,
       "itemName": "Scroll for Helmet for Accuracy 60%",
-      "chineseName": null,
+      "chineseName": "頭盔命中卷軸60%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -845,7 +845,7 @@
     {
       "itemId": 2040000,
       "itemName": "Scroll for Helmet for Defense 100%",
-      "chineseName": null,
+      "chineseName": "頭盔防禦卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -881,7 +881,7 @@
     {
       "itemId": 2040044,
       "itemName": "Scroll for Helmet for DEX 15%",
-      "chineseName": null,
+      "chineseName": "頭盔敏捷卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -917,7 +917,7 @@
     {
       "itemId": 2040036,
       "itemName": "Scroll for Helmet for INT 15%",
-      "chineseName": null,
+      "chineseName": "頭盔智力卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -953,7 +953,7 @@
     {
       "itemId": 2044810,
       "itemName": "Scroll for Knuckler for Accuracy 15%",
-      "chineseName": null,
+      "chineseName": "指虎命中卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -980,7 +980,7 @@
     {
       "itemId": 2044800,
       "itemName": "Scroll for Knuckler for ATT 100%",
-      "chineseName": null,
+      "chineseName": "指虎攻擊卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -989,7 +989,7 @@
     {
       "itemId": 2044812,
       "itemName": "Scroll for Knuckler for ATT 15%",
-      "chineseName": null,
+      "chineseName": "指虎攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1025,7 +1025,7 @@
     {
       "itemId": 2043115,
       "itemName": "Scroll for One-Handed Axe for Accuracy 15%",
-      "chineseName": null,
+      "chineseName": "單手斧命中卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1052,7 +1052,7 @@
     {
       "itemId": 2043100,
       "itemName": "Scroll for One-Handed Axe for ATT 100%",
-      "chineseName": null,
+      "chineseName": "單手斧攻擊卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1061,7 +1061,7 @@
     {
       "itemId": 2043107,
       "itemName": "Scroll for One-Handed Axe for ATT 15%",
-      "chineseName": null,
+      "chineseName": "單手斧攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1097,7 +1097,7 @@
     {
       "itemId": 2043215,
       "itemName": "Scroll for One-Handed BW for Accuracy 15%",
-      "chineseName": null,
+      "chineseName": "單手棍命中卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1133,7 +1133,7 @@
     {
       "itemId": 2043207,
       "itemName": "Scroll for One-Handed BW for ATT 15%",
-      "chineseName": null,
+      "chineseName": "單手棍攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1169,7 +1169,7 @@
     {
       "itemId": 2043020,
       "itemName": "Scroll for One-Handed Sword for Accuracy 15%",
-      "chineseName": null,
+      "chineseName": "單手劍命中卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1196,7 +1196,7 @@
     {
       "itemId": 2043000,
       "itemName": "Scroll for One-Handed Sword for ATT 100%",
-      "chineseName": null,
+      "chineseName": "單手劍攻擊卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1205,7 +1205,7 @@
     {
       "itemId": 2043012,
       "itemName": "Scroll for One-Handed Sword for ATT 15%",
-      "chineseName": null,
+      "chineseName": "單手劍攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1232,7 +1232,7 @@
     {
       "itemId": 2040503,
       "itemName": "Scroll for Overall Armor for Defense 100%",
-      "chineseName": null,
+      "chineseName": "套服防禦卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1241,7 +1241,7 @@
     {
       "itemId": 2040525,
       "itemName": "Scroll for Overall Armor for Defense 15%",
-      "chineseName": null,
+      "chineseName": "套服防禦卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1268,7 +1268,7 @@
     {
       "itemId": 2040500,
       "itemName": "Scroll for Overall Armor for DEX 100%",
-      "chineseName": null,
+      "chineseName": "套服敏捷卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1277,7 +1277,7 @@
     {
       "itemId": 2040523,
       "itemName": "Scroll for Overall Armor for DEX 15%",
-      "chineseName": null,
+      "chineseName": "套服敏捷卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1313,7 +1313,7 @@
     {
       "itemId": 2040527,
       "itemName": "Scroll for Overall Armor for INT 15%",
-      "chineseName": null,
+      "chineseName": "套服智力卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1331,7 +1331,7 @@
     {
       "itemId": 2040517,
       "itemName": "Scroll for Overall Armor for LUK 10%",
-      "chineseName": null,
+      "chineseName": "套服幸運卷軸10%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1349,7 +1349,7 @@
     {
       "itemId": 2040529,
       "itemName": "Scroll for Overall Armor for LUK 15%",
-      "chineseName": null,
+      "chineseName": "套服幸運卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1385,7 +1385,7 @@
     {
       "itemId": 2040541,
       "itemName": "Scroll for Overall Armor for STR 15%",
-      "chineseName": null,
+      "chineseName": "套服力量卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1394,7 +1394,7 @@
     {
       "itemId": 2040532,
       "itemName": "Scroll for Overall Armor for STR 60%",
-      "chineseName": null,
+      "chineseName": "套服力量卷軸60%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1412,7 +1412,7 @@
     {
       "itemId": 2044410,
       "itemName": "Scroll for Pole Arm for Accuracy 100%",
-      "chineseName": null,
+      "chineseName": "矛命中卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1421,7 +1421,7 @@
     {
       "itemId": 2044415,
       "itemName": "Scroll for Pole Arm for Accuracy 15%",
-      "chineseName": null,
+      "chineseName": "矛命中卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1448,7 +1448,7 @@
     {
       "itemId": 2044400,
       "itemName": "Scroll for Pole Arm for ATT 100%",
-      "chineseName": null,
+      "chineseName": "矛攻擊卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1457,7 +1457,7 @@
     {
       "itemId": 2044407,
       "itemName": "Scroll for Pole Arm for ATT 15%",
-      "chineseName": null,
+      "chineseName": "矛攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1475,7 +1475,7 @@
     {
       "itemId": 2040915,
       "itemName": "Scroll for Shield for ATT 10%",
-      "chineseName": null,
+      "chineseName": "盾牌攻擊卷軸10%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1493,7 +1493,7 @@
     {
       "itemId": 2040934,
       "itemName": "Scroll for Shield for ATT 15%",
-      "chineseName": null,
+      "chineseName": "盾牌攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1502,7 +1502,7 @@
     {
       "itemId": 2040914,
       "itemName": "Scroll for Shield for ATT 60%",
-      "chineseName": null,
+      "chineseName": "盾牌攻擊卷軸60%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1520,7 +1520,7 @@
     {
       "itemId": 2040900,
       "itemName": "Scroll for Shield for Defense 100%",
-      "chineseName": null,
+      "chineseName": "盾牌防禦卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1529,7 +1529,7 @@
     {
       "itemId": 2040911,
       "itemName": "Scroll for Shield for Defense 15%",
-      "chineseName": null,
+      "chineseName": "盾牌防禦卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1565,7 +1565,7 @@
     {
       "itemId": 2040938,
       "itemName": "Scroll for Shield for LUK 15%",
-      "chineseName": null,
+      "chineseName": "盾牌幸運卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1583,7 +1583,7 @@
     {
       "itemId": 2040920,
       "itemName": "Scroll for Shield for Magic ATT 10%",
-      "chineseName": null,
+      "chineseName": "盾牌魔力卷軸10%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1610,7 +1610,7 @@
     {
       "itemId": 2040919,
       "itemName": "Scroll for Shield for Magic ATT 60%",
-      "chineseName": null,
+      "chineseName": "盾牌魔力卷軸60%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1637,7 +1637,7 @@
     {
       "itemId": 2040942,
       "itemName": "Scroll for Shield for STR 15%",
-      "chineseName": null,
+      "chineseName": "盾牌力量卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1664,7 +1664,7 @@
     {
       "itemId": 2040700,
       "itemName": "Scroll for Shoes for Avoidability 100%",
-      "chineseName": null,
+      "chineseName": "鞋子迴避卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1673,7 +1673,7 @@
     {
       "itemId": 2040719,
       "itemName": "Scroll for Shoes for Avoidability 15%",
-      "chineseName": null,
+      "chineseName": "鞋子迴避卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1700,7 +1700,7 @@
     {
       "itemId": 2040703,
       "itemName": "Scroll for Shoes for Jump 100%",
-      "chineseName": null,
+      "chineseName": "鞋子跳躍卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1709,7 +1709,7 @@
     {
       "itemId": 2040721,
       "itemName": "Scroll for Shoes for Jump 15%",
-      "chineseName": null,
+      "chineseName": "鞋子跳躍卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1745,7 +1745,7 @@
     {
       "itemId": 2040723,
       "itemName": "Scroll for Shoes for Mobility 15%",
-      "chineseName": null,
+      "chineseName": "鞋子移動卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1772,7 +1772,7 @@
     {
       "itemId": 2044310,
       "itemName": "Scroll for Spear for Accuracy 100%",
-      "chineseName": null,
+      "chineseName": "槍命中卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1781,7 +1781,7 @@
     {
       "itemId": 2044315,
       "itemName": "Scroll for Spear for Accuracy 15%",
-      "chineseName": null,
+      "chineseName": "槍命中卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1808,7 +1808,7 @@
     {
       "itemId": 2044300,
       "itemName": "Scroll for Spear for ATT 100%",
-      "chineseName": null,
+      "chineseName": "槍攻擊卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1817,7 +1817,7 @@
     {
       "itemId": 2044307,
       "itemName": "Scroll for Spear for ATT 15%",
-      "chineseName": null,
+      "chineseName": "槍攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1844,7 +1844,7 @@
     {
       "itemId": 2043800,
       "itemName": "Scroll for Staff for Magic ATT 100%",
-      "chineseName": null,
+      "chineseName": "長杖魔力卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1853,7 +1853,7 @@
     {
       "itemId": 2043807,
       "itemName": "Scroll for Staff for Magic ATT 15%",
-      "chineseName": null,
+      "chineseName": "長杖魔力卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1880,7 +1880,7 @@
     {
       "itemId": 2040400,
       "itemName": "Scroll for Topwear for Defense 100%",
-      "chineseName": null,
+      "chineseName": "上衣防禦卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1889,7 +1889,7 @@
     {
       "itemId": 2040416,
       "itemName": "Scroll for Topwear for Defense 15%",
-      "chineseName": null,
+      "chineseName": "上衣防禦卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1925,7 +1925,7 @@
     {
       "itemId": 2040436,
       "itemName": "Scroll for Topwear for LUK 15%",
-      "chineseName": null,
+      "chineseName": "上衣幸運卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1961,7 +1961,7 @@
     {
       "itemId": 2040432,
       "itemName": "Scroll for Topwear for STR 15%",
-      "chineseName": null,
+      "chineseName": "上衣力量卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -1997,7 +1997,7 @@
     {
       "itemId": 2044115,
       "itemName": "Scroll for Two-Handed Axe for Accuracy 15%",
-      "chineseName": null,
+      "chineseName": "雙手斧命中卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -2024,7 +2024,7 @@
     {
       "itemId": 2044100,
       "itemName": "Scroll for Two-Handed Axe for ATT 100%",
-      "chineseName": null,
+      "chineseName": "雙手斧攻擊卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -2033,7 +2033,7 @@
     {
       "itemId": 2044107,
       "itemName": "Scroll for Two-Handed Axe for ATT 15%",
-      "chineseName": null,
+      "chineseName": "雙手斧攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -2069,7 +2069,7 @@
     {
       "itemId": 2044215,
       "itemName": "Scroll for Two-Handed BW for Accuracy 15%",
-      "chineseName": null,
+      "chineseName": "雙手棍命中卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -2096,7 +2096,7 @@
     {
       "itemId": 2044200,
       "itemName": "Scroll for Two-Handed BW for ATT 100%",
-      "chineseName": null,
+      "chineseName": "雙手棍攻擊卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -2105,7 +2105,7 @@
     {
       "itemId": 2044207,
       "itemName": "Scroll for Two-Handed BW for ATT 15%",
-      "chineseName": null,
+      "chineseName": "雙手棍攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -2141,7 +2141,7 @@
     {
       "itemId": 2044015,
       "itemName": "Scroll for Two-Handed Sword for Accuracy 15%",
-      "chineseName": null,
+      "chineseName": "雙手劍命中卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -2168,7 +2168,7 @@
     {
       "itemId": 2044000,
       "itemName": "Scroll for Two-Handed Sword for ATT 100%",
-      "chineseName": null,
+      "chineseName": "雙手劍攻擊卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -2177,7 +2177,7 @@
     {
       "itemId": 2044007,
       "itemName": "Scroll for Two-Handed Sword for ATT 15%",
-      "chineseName": null,
+      "chineseName": "雙手劍攻擊卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -2204,7 +2204,7 @@
     {
       "itemId": 2043700,
       "itemName": "Scroll for Wand for Magic ATT 100%",
-      "chineseName": null,
+      "chineseName": "短杖魔力卷軸100%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",
@@ -2213,7 +2213,7 @@
     {
       "itemId": 2043707,
       "itemName": "Scroll for Wand for Magic ATT 15%",
-      "chineseName": null,
+      "chineseName": "短杖魔力卷軸15%",
       "probability": "0.40%",
       "chance": 1000000,
       "type": "Consume",

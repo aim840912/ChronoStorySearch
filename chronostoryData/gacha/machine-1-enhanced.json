@@ -8,7 +8,7 @@
     {
       "itemId": 1032026,
       "itemName": "Gold Emerald Earrings",
-      "chineseName": null,
+      "chineseName": "金祖母綠耳環",
       "probability": "0.07%",
       "chance": 12500,
       "type": "Eqp",
@@ -17,7 +17,7 @@
     {
       "itemId": 1102042,
       "itemName": "Purple Adventurer Cape",
-      "chineseName": null,
+      "chineseName": "紫色冒險家披風",
       "probability": "0.10%",
       "chance": 16667,
       "type": "Eqp",
@@ -26,7 +26,7 @@
     {
       "itemId": 1072239,
       "itemName": "Yellow Snowshoes",
-      "chineseName": null,
+      "chineseName": "黃色釘鞋",
       "probability": "0.19%",
       "chance": 33333,
       "type": "Eqp",
@@ -35,7 +35,7 @@
     {
       "itemId": 1082149,
       "itemName": "Brown Work Gloves",
-      "chineseName": null,
+      "chineseName": "褐色工作手套",
       "probability": "0.19%",
       "chance": 33333,
       "type": "Eqp",
@@ -44,7 +44,7 @@
     {
       "itemId": 1102041,
       "itemName": "Pink Adventurer Cape",
-      "chineseName": null,
+      "chineseName": "粉紅冒險家披風",
       "probability": "0.19%",
       "chance": 33333,
       "type": "Eqp",
@@ -53,7 +53,7 @@
     {
       "itemId": 1032030,
       "itemName": "Sword Earrings",
-      "chineseName": null,
+      "chineseName": "刀劍耳環",
       "probability": "0.29%",
       "chance": 50000,
       "type": "Eqp",
@@ -62,7 +62,7 @@
     {
       "itemId": 1050127,
       "itemName": "Bath Towel (Black)",
-      "chineseName": null,
+      "chineseName": "黑色浴巾",
       "probability": "0.29%",
       "chance": 50000,
       "type": "Eqp",
@@ -71,7 +71,7 @@
     {
       "itemId": 1051140,
       "itemName": "Yellow Bath Towel",
-      "chineseName": null,
+      "chineseName": "黃色浴巾",
       "probability": "0.29%",
       "chance": 50000,
       "type": "Eqp",
@@ -80,7 +80,7 @@
     {
       "itemId": 1072238,
       "itemName": "Violet Snowshoes",
-      "chineseName": null,
+      "chineseName": "紫色釘鞋",
       "probability": "0.29%",
       "chance": 50000,
       "type": "Eqp",
@@ -89,7 +89,7 @@
     {
       "itemId": 1102046,
       "itemName": "Blue Musketeer Cape",
-      "chineseName": null,
+      "chineseName": "淺藍色西麗斯斗篷",
       "probability": "0.32%",
       "chance": 55263,
       "type": "Eqp",
@@ -98,7 +98,7 @@
     {
       "itemId": 1102047,
       "itemName": "Turquoise Musketeer Cape",
-      "chineseName": null,
+      "chineseName": "深藍色西麗斯斗篷",
       "probability": "0.32%",
       "chance": 55263,
       "type": "Eqp",
@@ -107,7 +107,7 @@
     {
       "itemId": 1102048,
       "itemName": "Red Musketeer Cape",
-      "chineseName": null,
+      "chineseName": "紅色西麗斯斗篷",
       "probability": "0.32%",
       "chance": 55263,
       "type": "Eqp",
@@ -116,7 +116,7 @@
     {
       "itemId": 1442026,
       "itemName": "Red Surfboard",
-      "chineseName": null,
+      "chineseName": "紅色衝浪板",
       "probability": "0.32%",
       "chance": 55263,
       "type": "Eqp",
@@ -134,7 +134,7 @@
     {
       "itemId": 1102040,
       "itemName": "Yellow Adventurer Cape",
-      "chineseName": null,
+      "chineseName": "黃色冒險家披風",
       "probability": "0.35%",
       "chance": 61111,
       "type": "Eqp",
@@ -170,7 +170,7 @@
     {
       "itemId": 1102032,
       "itemName": "Purple Giles Cape",
-      "chineseName": null,
+      "chineseName": "紫龍紋披風",
       "probability": "0.39%",
       "chance": 67647,
       "type": "Eqp",
@@ -179,7 +179,7 @@
     {
       "itemId": 1102033,
       "itemName": "Red Giles Cape",
-      "chineseName": null,
+      "chineseName": "紅龍紋披風",
       "probability": "0.39%",
       "chance": 67647,
       "type": "Eqp",
@@ -188,7 +188,7 @@
     {
       "itemId": 1102034,
       "itemName": "Blue Giles Cape",
-      "chineseName": null,
+      "chineseName": "藍龍紋披風",
       "probability": "0.39%",
       "chance": 67647,
       "type": "Eqp",
@@ -197,7 +197,7 @@
     {
       "itemId": 1102035,
       "itemName": "Black Giles Cape",
-      "chineseName": null,
+      "chineseName": "黑龍紋披風",
       "probability": "0.39%",
       "chance": 67647,
       "type": "Eqp",
@@ -206,7 +206,7 @@
     {
       "itemId": 1432018,
       "itemName": "Sky Ski",
-      "chineseName": null,
+      "chineseName": "藍色滑雪板",
       "probability": "0.39%",
       "chance": 67647,
       "type": "Eqp",
@@ -215,7 +215,7 @@
     {
       "itemId": 1002392,
       "itemName": "Brown Bandana",
-      "chineseName": null,
+      "chineseName": "褐色頭巾",
       "probability": "0.43%",
       "chance": 75000,
       "type": "Eqp",
@@ -233,7 +233,7 @@
     {
       "itemId": 1032032,
       "itemName": "Fallen Leaf Earrings",
-      "chineseName": null,
+      "chineseName": "枯葉耳環",
       "probability": "0.43%",
       "chance": 75000,
       "type": "Eqp",
@@ -242,7 +242,7 @@
     {
       "itemId": 1302049,
       "itemName": "Glowing Whip",
-      "chineseName": null,
+      "chineseName": "光線鞭子",
       "probability": "0.43%",
       "chance": 75000,
       "type": "Eqp",
@@ -260,7 +260,7 @@
     {
       "itemId": 1102026,
       "itemName": "Green Seraph Cape",
-      "chineseName": null,
+      "chineseName": "綠妖精披風",
       "probability": "0.48%",
       "chance": 83333,
       "type": "Eqp",
@@ -431,7 +431,7 @@
     {
       "itemId": 1302021,
       "itemName": "Pico-Pico Hammer",
-      "chineseName": null,
+      "chineseName": "橡皮榔頭",
       "probability": "0.67%",
       "chance": 116667,
       "type": "Eqp",
@@ -440,7 +440,7 @@
     {
       "itemId": 1312013,
       "itemName": "Green Paint Brush",
-      "chineseName": null,
+      "chineseName": "綠畫筆",
       "probability": "0.67%",
       "chance": 116667,
       "type": "Eqp",
@@ -458,7 +458,7 @@
     {
       "itemId": 1402014,
       "itemName": "Thermometer",
-      "chineseName": null,
+      "chineseName": "溫度計",
       "probability": "0.67%",
       "chance": 116667,
       "type": "Eqp",
@@ -467,7 +467,7 @@
     {
       "itemId": 1422011,
       "itemName": "Sake Bottle",
-      "chineseName": null,
+      "chineseName": "清酒",
       "probability": "0.67%",
       "chance": 116667,
       "type": "Eqp",
@@ -476,7 +476,7 @@
     {
       "itemId": 1442017,
       "itemName": "Blood Snowboard",
-      "chineseName": null,
+      "chineseName": "赤血雪板",
       "probability": "0.67%",
       "chance": 116667,
       "type": "Eqp",
@@ -503,7 +503,7 @@
     {
       "itemId": 1102011,
       "itemName": "Blue Justice Cape",
-      "chineseName": null,
+      "chineseName": "藍色守護披風",
       "probability": "0.75%",
       "chance": 131818,
       "type": "Eqp",
@@ -512,7 +512,7 @@
     {
       "itemId": 1102012,
       "itemName": "Red Justice Cape",
-      "chineseName": null,
+      "chineseName": "紅色守護披風",
       "probability": "0.75%",
       "chance": 131818,
       "type": "Eqp",
@@ -521,7 +521,7 @@
     {
       "itemId": 1102013,
       "itemName": "White Justice Cape",
-      "chineseName": null,
+      "chineseName": "白色守護披風",
       "probability": "0.75%",
       "chance": 131818,
       "type": "Eqp",
@@ -530,7 +530,7 @@
     {
       "itemId": 1102014,
       "itemName": "Black Justice Cape",
-      "chineseName": null,
+      "chineseName": "黑色守護披風",
       "probability": "0.75%",
       "chance": 131818,
       "type": "Eqp",
@@ -539,7 +539,7 @@
     {
       "itemId": 1302025,
       "itemName": "Red Umbrella",
-      "chineseName": null,
+      "chineseName": "紅色雨傘",
       "probability": "0.75%",
       "chance": 131818,
       "type": "Eqp",
@@ -548,7 +548,7 @@
     {
       "itemId": 1312014,
       "itemName": "Black Paint Brush",
-      "chineseName": null,
+      "chineseName": "黑畫筆",
       "probability": "0.75%",
       "chance": 131818,
       "type": "Eqp",
@@ -557,7 +557,7 @@
     {
       "itemId": 1432017,
       "itemName": "Green Ski",
-      "chineseName": null,
+      "chineseName": "綠色滑雪板",
       "probability": "0.75%",
       "chance": 131818,
       "type": "Eqp",
@@ -593,7 +593,7 @@
     {
       "itemId": 1032027,
       "itemName": "Black Emerald Earrings",
-      "chineseName": null,
+      "chineseName": "黑祖母綠耳環",
       "probability": "0.86%",
       "chance": 150000,
       "type": "Eqp",
@@ -647,7 +647,7 @@
     {
       "itemId": 1102043,
       "itemName": "Brown Adventurer Cape",
-      "chineseName": null,
+      "chineseName": "褐色冒險家披風",
       "probability": "0.86%",
       "chance": 150000,
       "type": "Eqp",
@@ -674,7 +674,7 @@
     {
       "itemId": 1442016,
       "itemName": "Dark Snowboard",
-      "chineseName": null,
+      "chineseName": "黑雪板",
       "probability": "0.91%",
       "chance": 158333,
       "type": "Eqp",
@@ -692,7 +692,7 @@
     {
       "itemId": 1312012,
       "itemName": "Hula Hoop",
-      "chineseName": null,
+      "chineseName": "呼啦圈",
       "probability": "0.99%",
       "chance": 172222,
       "type": "Eqp",
@@ -746,7 +746,7 @@
     {
       "itemId": 1442015,
       "itemName": "Golden Snowboard",
-      "chineseName": null,
+      "chineseName": "黃金雪板",
       "probability": "1.30%",
       "chance": 227778,
       "type": "Eqp",
@@ -782,7 +782,7 @@
     {
       "itemId": 1432016,
       "itemName": "Orange Ski",
-      "chineseName": null,
+      "chineseName": "橙色滑雪板",
       "probability": "1.45%",
       "chance": 253030,
       "type": "Eqp",
@@ -818,7 +818,7 @@
     {
       "itemId": 1002393,
       "itemName": "Pink Bandana",
-      "chineseName": null,
+      "chineseName": "粉紅頭巾",
       "probability": "1.62%",
       "chance": 283333,
       "type": "Eqp",
@@ -827,7 +827,7 @@
     {
       "itemId": 1002394,
       "itemName": "Grey Bandana",
-      "chineseName": null,
+      "chineseName": "灰色頭巾",
       "probability": "1.62%",
       "chance": 283333,
       "type": "Eqp",
@@ -836,7 +836,7 @@
     {
       "itemId": 1002452,
       "itemName": "Black Starry Bandana",
-      "chineseName": null,
+      "chineseName": "黑星白頭巾",
       "probability": "1.62%",
       "chance": 283333,
       "type": "Eqp",
@@ -845,7 +845,7 @@
     {
       "itemId": 1002453,
       "itemName": "White Starry Bandana",
-      "chineseName": null,
+      "chineseName": "白星黑頭巾",
       "probability": "1.62%",
       "chance": 283333,
       "type": "Eqp",
@@ -854,7 +854,7 @@
     {
       "itemId": 1002492,
       "itemName": "White Baseball Cap",
-      "chineseName": null,
+      "chineseName": "白色棒球帽",
       "probability": "1.62%",
       "chance": 283333,
       "type": "Eqp",
@@ -872,7 +872,7 @@
     {
       "itemId": 1050100,
       "itemName": "Bathrobe for Men",
-      "chineseName": null,
+      "chineseName": "藍色浴巾",
       "probability": "1.62%",
       "chance": 283333,
       "type": "Eqp",
@@ -881,7 +881,7 @@
     {
       "itemId": 1051098,
       "itemName": "Bathrobe for Women",
-      "chineseName": null,
+      "chineseName": "紅色浴巾",
       "probability": "1.62%",
       "chance": 283333,
       "type": "Eqp",
@@ -890,7 +890,7 @@
     {
       "itemId": 1082145,
       "itemName": "Yellow Work Gloves",
-      "chineseName": null,
+      "chineseName": "黃色工作手套",
       "probability": "1.62%",
       "chance": 283333,
       "type": "Eqp",
@@ -908,7 +908,7 @@
     {
       "itemId": 1082147,
       "itemName": "Blue Work Gloves",
-      "chineseName": null,
+      "chineseName": "藍色工作手套",
       "probability": "1.62%",
       "chance": 283333,
       "type": "Eqp",
@@ -917,7 +917,7 @@
     {
       "itemId": 1082148,
       "itemName": "Purple Work Gloves",
-      "chineseName": null,
+      "chineseName": "紫色工作手套",
       "probability": "1.62%",
       "chance": 283333,
       "type": "Eqp",
@@ -935,7 +935,7 @@
     {
       "itemId": 1302027,
       "itemName": "Green Umbrella",
-      "chineseName": null,
+      "chineseName": "綠色雨傘",
       "probability": "1.62%",
       "chance": 283333,
       "type": "Eqp",
@@ -971,7 +971,7 @@
     {
       "itemId": 1322031,
       "itemName": "Pig Illustrated",
-      "chineseName": null,
+      "chineseName": "世界肥肥圖鑑",
       "probability": "1.62%",
       "chance": 283333,
       "type": "Eqp",
@@ -989,7 +989,7 @@
     {
       "itemId": 1432015,
       "itemName": "Red Ski",
-      "chineseName": null,
+      "chineseName": "紅色滑雪板",
       "probability": "1.62%",
       "chance": 283333,
       "type": "Eqp",
