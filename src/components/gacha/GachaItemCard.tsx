@@ -3,6 +3,7 @@
 import { memo } from 'react'
 import type { GachaItem } from '@/types'
 import { getItemImageUrl } from '@/lib/image-utils'
+import { getItemDisplayName } from '@/lib/display-name'
 
 interface GachaItemCardProps {
   item: GachaItem
@@ -11,8 +12,12 @@ interface GachaItemCardProps {
 }
 
 export const GachaItemCard = memo(function GachaItemCard({ item, language, onItemClick }: GachaItemCardProps) {
-  // 根據語言選擇顯示名稱
-  const displayName = language === 'zh-TW' ? item.chineseName : (item.name || item.itemName || item.chineseName)
+  // 根據語言選擇顯示名稱（使用統一工具函數處理 null fallback）
+  const displayName = getItemDisplayName(
+    item.name || item.itemName || '',
+    item.chineseName,
+    language
+  )
 
   // 物品圖示 URL（傳入 itemName 以支援卷軸圖示）
   const itemIconUrl = getItemImageUrl(item.itemId, { itemName: item.name || item.itemName })

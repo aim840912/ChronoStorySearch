@@ -38,6 +38,11 @@ interface SearchHeaderProps {
   advancedFilter: AdvancedFilterOptions
   onAdvancedFilterChange: (filter: AdvancedFilterOptions) => void
 
+  // 轉蛋相關
+  isGachaMode?: boolean
+  selectedGachaMachineId?: number | null
+  onGachaSelect?: (machineId: number | null) => void
+  onGachaClose?: () => void
 }
 
 /**
@@ -69,6 +74,10 @@ export const SearchHeader = memo(function SearchHeader({
   onResetAdvancedFilter,
   advancedFilter,
   onAdvancedFilterChange,
+  isGachaMode = false,
+  selectedGachaMachineId = null,
+  onGachaSelect,
+  onGachaClose,
 }: SearchHeaderProps) {
   const { t } = useLanguage()
 
@@ -116,6 +125,10 @@ export const SearchHeader = memo(function SearchHeader({
             advancedFilterCount={advancedFilterCount}
             advancedFilter={advancedFilter}
             onResetAdvancedFilter={onResetAdvancedFilter}
+            isGachaMode={isGachaMode}
+            selectedGachaMachineId={selectedGachaMachineId}
+            onGachaSelect={onGachaSelect}
+            onGachaClose={onGachaClose}
           />
       </div>
 

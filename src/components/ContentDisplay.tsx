@@ -5,6 +5,8 @@ import type { FilterMode, ItemAttributesEssential, ViewHistoryItem, DropsEssenti
 import { FavoriteMonstersList } from '@/components/lists/FavoriteMonstersList'
 import { FavoriteItemsList } from '@/components/lists/FavoriteItemsList'
 import { AllItemsView } from '@/components/lists/AllItemsView'
+import { GachaMachineList } from '@/components/lists/GachaMachineList'
+import { GachaItemsView } from '@/components/lists/GachaItemsView'
 import { SkeletonGrid } from '@/components/CardSkeleton'
 import { useLanguage } from '@/contexts/LanguageContext'
 
@@ -84,6 +86,11 @@ interface ContentDisplayProps {
 
   // 物品索引（用於查詢中文名稱）
   itemIndexMap: Map<number, ItemIndexItem>
+
+  // 轉蛋模式
+  isGachaMode?: boolean
+  selectedGachaMachineId?: number | null
+  onGachaMachineSelect?: (machineId: number) => void
 }
 
 /**
@@ -122,12 +129,37 @@ export const ContentDisplay = memo(function ContentDisplay({
   allDrops,
   gachaMachines,
   itemIndexMap,
+  isGachaMode = false,
+  selectedGachaMachineId = null,
+  onGachaMachineSelect,
 }: ContentDisplayProps) {
   const { t } = useLanguage()
 
   // 載入中 - 使用骨架屏提升感知載入速度
   if (isLoading) {
     return <SkeletonGrid count={6} />
+  }
+
+  // 轉蛋模式優先處理
+  if (isGachaMode) {
+    if (selectedGachaMachineId === null) {
+      // 顯示轉蛋機列表
+      return (
+        <GachaMachineList
+          gachaMachines={gachaMachines}
+          onSelect={onGachaMachineSelect ?? (() => {})}
+        />
+      )
+    } else {
+      // 顯示特定轉蛋機的物品
+      return (
+        <GachaItemsView
+          machineId={selectedGachaMachineId}
+          gachaMachines={gachaMachines}
+          onItemClick={onItemCardClick}
+        />
+      )
+    }
   }
 
   return (

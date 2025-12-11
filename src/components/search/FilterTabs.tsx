@@ -10,6 +10,8 @@ interface FilterTabsProps {
   onFilterChange: (mode: FilterMode) => void
   favoriteMonsterCount: number
   favoriteItemCount: number
+  /** 是否處於轉蛋模式（轉蛋模式時所有按鈕取消選中） */
+  isGachaMode?: boolean
 }
 
 /**
@@ -23,6 +25,7 @@ export function FilterTabs({
   onFilterChange,
   favoriteMonsterCount,
   favoriteItemCount,
+  isGachaMode = false,
 }: FilterTabsProps) {
   const { t } = useLanguage()
 
@@ -37,7 +40,7 @@ export function FilterTabs({
       <button
         onClick={() => handleTypeChange('all')}
         className={`px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
-          searchType === 'all' && filterMode === 'all'
+          searchType === 'all' && filterMode === 'all' && !isGachaMode
             ? 'bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 shadow-sm'
             : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-700/50'
         }`}
@@ -47,7 +50,7 @@ export function FilterTabs({
       <button
         onClick={() => handleTypeChange('monster')}
         className={`px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
-          searchType === 'monster' && filterMode === 'all'
+          searchType === 'monster' && filterMode === 'all' && !isGachaMode
             ? 'bg-white dark:bg-gray-700 text-red-600 dark:text-red-400 shadow-sm'
             : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-700/50'
         }`}
@@ -57,24 +60,13 @@ export function FilterTabs({
       <button
         onClick={() => handleTypeChange('item')}
         className={`px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
-          searchType === 'item' && filterMode === 'all'
+          searchType === 'item' && filterMode === 'all' && !isGachaMode
             ? 'bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 shadow-sm'
             : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-700/50'
         }`}
       >
         {t('search.type.item')}
       </button>
-      <button
-        onClick={() => handleTypeChange('gacha')}
-        className={`px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
-          searchType === 'gacha' && filterMode === 'all'
-            ? 'bg-white dark:bg-gray-700 text-purple-600 dark:text-purple-400 shadow-sm'
-            : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-700/50'
-        }`}
-      >
-        {t('search.type.gacha')}
-      </button>
-
       {/* 分隔線 */}
       <div className="w-px h-8 bg-gray-300 dark:bg-gray-600 mx-1 self-center" />
 
@@ -82,7 +74,7 @@ export function FilterTabs({
       <button
         onClick={() => onFilterChange('favorite-monsters')}
         className={`px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center gap-1.5 ${
-          filterMode === 'favorite-monsters'
+          filterMode === 'favorite-monsters' && !isGachaMode
             ? 'bg-white dark:bg-gray-700 text-red-600 dark:text-red-400 shadow-sm'
             : favoriteMonsterCount > 0
             ? 'text-red-500 dark:text-red-400 hover:text-red-600 dark:hover:text-red-300 hover:bg-white/50 dark:hover:bg-gray-700/50'
@@ -100,7 +92,7 @@ export function FilterTabs({
       <button
         onClick={() => onFilterChange('favorite-items')}
         className={`px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center gap-1.5 ${
-          filterMode === 'favorite-items'
+          filterMode === 'favorite-items' && !isGachaMode
             ? 'bg-white dark:bg-gray-700 text-green-600 dark:text-green-400 shadow-sm'
             : favoriteItemCount > 0
             ? 'text-green-500 dark:text-green-400 hover:text-green-600 dark:hover:text-green-300 hover:bg-white/50 dark:hover:bg-gray-700/50'
