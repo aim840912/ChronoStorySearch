@@ -31,7 +31,7 @@ export const MonsterDropCard = memo(function MonsterDropCard({
   const { language, t } = useLanguage()
   const { format } = useImageFormat()
   const isDev = process.env.NODE_ENV === 'development'
-  const chancePercent = (drop.chance * 100).toFixed(4)
+  const chancePercent = drop.chance.toFixed(4)
 
   // 計算怪物血量顯示值
   const monsterHP = monsterHPMap.get(drop.mobId)

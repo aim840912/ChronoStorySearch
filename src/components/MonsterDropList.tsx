@@ -158,7 +158,7 @@ const MonsterDropListRow = memo(function MonsterDropListRow({
   const { language, t } = useLanguage()
   const { format } = useImageFormat()
 
-  const chancePercent = (drop.chance * 100).toFixed(4)
+  const chancePercent = drop.chance.toFixed(4)
 
   // 計算怪物血量顯示值
   const monsterHP = monsterHPMap.get(drop.mobId)
