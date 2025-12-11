@@ -39,7 +39,7 @@ export function FilterTabs({
       {/* 類型篩選按鈕 */}
       <button
         onClick={() => handleTypeChange('all')}
-        className={`px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
+        className={`px-2 min-[400px]:px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
           searchType === 'all' && filterMode === 'all' && !isGachaMode
             ? 'bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 shadow-sm'
             : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-700/50'
@@ -49,17 +49,18 @@ export function FilterTabs({
       </button>
       <button
         onClick={() => handleTypeChange('monster')}
-        className={`px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
+        className={`px-2 min-[400px]:px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
           searchType === 'monster' && filterMode === 'all' && !isGachaMode
             ? 'bg-white dark:bg-gray-700 text-red-600 dark:text-red-400 shadow-sm'
             : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-700/50'
         }`}
       >
-        {t('search.type.monster')}
+        <span className="hidden min-[500px]:inline">{t('search.type.monster')}</span>
+        <span className="min-[500px]:hidden">Mon</span>
       </button>
       <button
         onClick={() => handleTypeChange('item')}
-        className={`px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
+        className={`px-2 min-[400px]:px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
           searchType === 'item' && filterMode === 'all' && !isGachaMode
             ? 'bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 shadow-sm'
             : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-700/50'
@@ -73,7 +74,7 @@ export function FilterTabs({
       {/* 收藏按鈕 */}
       <button
         onClick={() => onFilterChange('favorite-monsters')}
-        className={`px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center gap-1.5 ${
+        className={`px-2 min-[400px]:px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center gap-1.5 ${
           filterMode === 'favorite-monsters' && !isGachaMode
             ? 'bg-white dark:bg-gray-700 text-red-600 dark:text-red-400 shadow-sm'
             : favoriteMonsterCount > 0
@@ -84,14 +85,15 @@ export function FilterTabs({
         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
           <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
         </svg>
-        <span>{t('filter.favoriteMonsters')}</span>
+        <span className="hidden min-[500px]:inline">{t('filter.favoriteMonsters')}</span>
+        <span className="min-[500px]:hidden">Mon</span>
         {favoriteMonsterCount > 0 && (
           <span className="text-xs opacity-70">({favoriteMonsterCount})</span>
         )}
       </button>
       <button
         onClick={() => onFilterChange('favorite-items')}
-        className={`px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center gap-1.5 ${
+        className={`px-2 min-[400px]:px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center gap-1.5 ${
           filterMode === 'favorite-items' && !isGachaMode
             ? 'bg-white dark:bg-gray-700 text-green-600 dark:text-green-400 shadow-sm'
             : favoriteItemCount > 0
@@ -102,7 +104,8 @@ export function FilterTabs({
         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
           <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
         </svg>
-        <span>{t('filter.favoriteItems')}</span>
+        <span className="hidden min-[500px]:inline">{t('filter.favoriteItems')}</span>
+        <span className="min-[500px]:hidden">Itm</span>
         {favoriteItemCount > 0 && (
           <span className="text-xs opacity-70">({favoriteItemCount})</span>
         )}

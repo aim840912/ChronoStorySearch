@@ -156,28 +156,18 @@ export function SearchBar({
 
       {/* 篩選按鈕行 */}
       {onFilterChange && (
-        <div className="flex flex-col min-[554px]:flex-row min-[554px]:items-center min-[554px]:justify-between gap-2">
-          <div className="flex flex-wrap items-center gap-2">
-            <FilterTabs
-              searchType={searchType}
-              onSearchTypeChange={onSearchTypeChange}
-              filterMode={filterMode}
-              onFilterChange={onFilterChange}
-              favoriteMonsterCount={favoriteMonsterCount}
-              favoriteItemCount={favoriteItemCount}
-              isGachaMode={isGachaMode}
-            />
-            {onGachaSelect && onGachaClose && (
-              <GachaDropdown
-                isGachaMode={isGachaMode}
-                selectedMachineId={selectedGachaMachineId ?? null}
-                onSelect={onGachaSelect}
-                onClose={onGachaClose}
-              />
-            )}
-          </div>
+        <div className="flex flex-wrap items-center gap-2">
+          <FilterTabs
+            searchType={searchType}
+            onSearchTypeChange={onSearchTypeChange}
+            filterMode={filterMode}
+            onFilterChange={onFilterChange}
+            favoriteMonsterCount={favoriteMonsterCount}
+            favoriteItemCount={favoriteItemCount}
+            isGachaMode={isGachaMode}
+          />
 
-          {/* 進階篩選按鈕 - 只在 554-767px 顯示（FilterTabs 旁） */}
+          {/* 進階篩選按鈕 - 只在 554-767px 顯示（緊接 FilterTabs） */}
           {onAdvancedFilterToggle && onResetAdvancedFilter && (
             <div className="hidden min-[554px]:block md:hidden">
               <ActionButtons
@@ -188,6 +178,15 @@ export function SearchBar({
                 filterSummary={getFilterSummary()}
               />
             </div>
+          )}
+
+          {onGachaSelect && onGachaClose && (
+            <GachaDropdown
+              isGachaMode={isGachaMode}
+              selectedMachineId={selectedGachaMachineId ?? null}
+              onSelect={onGachaSelect}
+              onClose={onGachaClose}
+            />
           )}
         </div>
       )}
