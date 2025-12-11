@@ -2,8 +2,9 @@
 
 import { useEffect, useState, useMemo } from 'react'
 import { createPortal } from 'react-dom'
-import type { GachaResult } from '@/types'
+import type { GachaResult, ItemEquipmentStats } from '@/types'
 import { EquipmentStatsCard } from '@/components/equipment/EquipmentStatsCard'
+import { mergeRandomStats } from '@/lib/random-equipment-stats'
 
 interface GachaItemTooltipProps {
   isOpen: boolean
@@ -32,57 +33,11 @@ export function GachaItemTooltip({ isOpen, item, triggerRect }: GachaItemTooltip
   const equipmentStats = useMemo(() => {
     if (!item) return null
 
-    // GachaResult 實際上包含 EnhancedGachaItem 的所有欄位
-    const enhancedItem = item as GachaResult & {
-      equipment?: {
-        stats: {
-          str: number | null
-          dex: number | null
-          int: number | null
-          luk: number | null
-          watk: number | null
-          matk: number | null
-          wdef: number | null
-          mdef: number | null
-          accuracy: number | null
-          avoidability: number | null
-          speed: number | null
-          jump: number | null
-          hp: number | null
-          mp: number | null
-          attack_speed: number | null
-          upgrades: number | null
-        }
-      }
-    }
+    // 檢查是否有裝備資訊
+    const equipment = (item as GachaResult & { equipment?: { stats: ItemEquipmentStats } }).equipment
+    if (!equipment) return null
 
-    // 如果沒有裝備資訊，返回 null
-    if (!enhancedItem.equipment) return null
-
-    const originalStats = enhancedItem.equipment.stats
-
-    // 應用隨機屬性到裝備數值
-    const statsWithRandom = item.randomStats
-      ? {
-        ...originalStats,
-        str: item.randomStats.str ?? originalStats.str,
-        dex: item.randomStats.dex ?? originalStats.dex,
-        int: item.randomStats.int ?? originalStats.int,
-        luk: item.randomStats.luk ?? originalStats.luk,
-        watk: item.randomStats.watk ?? originalStats.watk,
-        matk: item.randomStats.matk ?? originalStats.matk,
-        wdef: item.randomStats.wdef ?? originalStats.wdef,
-        mdef: item.randomStats.mdef ?? originalStats.mdef,
-        accuracy: item.randomStats.accuracy ?? originalStats.accuracy,
-        avoidability: item.randomStats.avoidability ?? originalStats.avoidability,
-        speed: item.randomStats.speed ?? originalStats.speed,
-        jump: item.randomStats.jump ?? originalStats.jump,
-        hp: item.randomStats.hp ?? originalStats.hp,
-        mp: item.randomStats.mp ?? originalStats.mp,
-      }
-      : originalStats
-
-    return statsWithRandom
+    return mergeRandomStats(equipment.stats, item.randomStats)
   }, [item])
 
   // 計算 tooltip 位置（智能避免超出視窗）

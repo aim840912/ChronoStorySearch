@@ -5,6 +5,7 @@ import type { GachaResult } from '@/types'
 import { BaseModal } from '@/components/common/BaseModal'
 import { EquipmentStatsCard } from '@/components/equipment/EquipmentStatsCard'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { mergeRandomStats } from '@/lib/random-equipment-stats'
 
 interface EquipmentDetailsModalProps {
   isOpen: boolean
@@ -25,33 +26,8 @@ export function EquipmentDetailsModal({
 
   // 應用隨機屬性到裝備數值
   const statsWithRandom = useMemo(() => {
-    // GachaResult 已經包含完整的 equipment 物件
     if (!equipment.equipment) return null
-
-    const originalStats = equipment.equipment.stats
-
-    // 如果有隨機屬性，覆蓋原始數值
-    const statsWithRandom = equipment.randomStats
-      ? {
-          ...originalStats,
-          str: equipment.randomStats.str ?? originalStats.str,
-          dex: equipment.randomStats.dex ?? originalStats.dex,
-          int: equipment.randomStats.int ?? originalStats.int,
-          luk: equipment.randomStats.luk ?? originalStats.luk,
-          watk: equipment.randomStats.watk ?? originalStats.watk,
-          matk: equipment.randomStats.matk ?? originalStats.matk,
-          wdef: equipment.randomStats.wdef ?? originalStats.wdef,
-          mdef: equipment.randomStats.mdef ?? originalStats.mdef,
-          accuracy: equipment.randomStats.accuracy ?? originalStats.accuracy,
-          avoidability: equipment.randomStats.avoidability ?? originalStats.avoidability,
-          speed: equipment.randomStats.speed ?? originalStats.speed,
-          jump: equipment.randomStats.jump ?? originalStats.jump,
-          hp: equipment.randomStats.hp ?? originalStats.hp,
-          mp: equipment.randomStats.mp ?? originalStats.mp,
-        }
-      : originalStats
-
-    return statsWithRandom
+    return mergeRandomStats(equipment.equipment.stats, equipment.randomStats)
   }, [equipment])
 
   // 如果不是裝備類物品，不顯示 Modal

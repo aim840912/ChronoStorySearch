@@ -17,8 +17,45 @@
  * - HP, MP, WDEF, MDEF = Range × 5
  */
 
-import { ItemAttributes, ItemEquipmentStats, RandomEquipmentStats } from '@/types'
+import { ItemEquipmentStats, RandomEquipmentStats } from '@/types'
 import { calculateEquipmentStatRange } from './equipment-stats-utils'
+
+/**
+ * 主屬性列表（用於計算 mainStatMultiplier）
+ */
+const MAIN_STATS = ['str', 'dex', 'int', 'luk'] as const
+
+/**
+ * 屬性配置：定義每個屬性的倍率計算方式
+ * - mainStat: 使用 mainStatMultiplier（1 / 有值的主屬性數量）
+ * - fixed: 使用固定倍率
+ */
+type StatConfig =
+  | { key: keyof ItemEquipmentStats; type: 'mainStat' }
+  | { key: keyof ItemEquipmentStats; type: 'fixed'; multiplier: number }
+
+const STAT_CONFIGS: StatConfig[] = [
+  // 主屬性 - Range / 主屬性數量
+  { key: 'str', type: 'mainStat' },
+  { key: 'dex', type: 'mainStat' },
+  { key: 'int', type: 'mainStat' },
+  { key: 'luk', type: 'mainStat' },
+  // 攻擊力 - Range × 0.5
+  { key: 'watk', type: 'fixed', multiplier: 0.5 },
+  { key: 'matk', type: 'fixed', multiplier: 0.5 },
+  // 命中/迴避 - Range × 1
+  { key: 'accuracy', type: 'fixed', multiplier: 1 },
+  { key: 'avoidability', type: 'fixed', multiplier: 1 },
+  // 速度 - Range × 0.5
+  { key: 'speed', type: 'fixed', multiplier: 0.5 },
+  // 跳躍 - Range × 0.25
+  { key: 'jump', type: 'fixed', multiplier: 0.25 },
+  // HP/MP/防禦 - Range × 5
+  { key: 'hp', type: 'fixed', multiplier: 5 },
+  { key: 'mp', type: 'fixed', multiplier: 5 },
+  { key: 'wdef', type: 'fixed', multiplier: 5 },
+  { key: 'mdef', type: 'fixed', multiplier: 5 },
+]
 
 /**
  * 生成隨機 ROLL 值（-1, 0, 1）
@@ -37,35 +74,25 @@ function randomRNG(): number {
 
 /**
  * 計算單個屬性的隨機變化
- * @param baseValue 基礎值
- * @param range 浮動範圍
- * @param multiplier 倍率
- * @returns 計算後的屬性值（四捨五入到整數，最小為 0）
  */
-function calculateStatVariation(
-  baseValue: number,
-  range: number,
-  multiplier: number
-): number {
-  const roll = randomRoll()
-  const rng = randomRNG()
-  const variation = range * multiplier * roll * rng
-  const result = baseValue + variation
-
-  // 確保屬性值不會低於 0
-  return Math.max(0, Math.round(result))
+function calculateStatVariation(baseValue: number, range: number, multiplier: number): number {
+  const variation = range * multiplier * randomRoll() * randomRNG()
+  return Math.max(0, Math.round(baseValue + variation))
 }
 
 /**
  * 計算裝備的主要屬性數量（有值的 STR/DEX/INT/LUK）
  */
 function countMainStats(stats: ItemEquipmentStats): number {
-  let count = 0
-  if (stats.str !== null && stats.str !== 0) count++
-  if (stats.dex !== null && stats.dex !== 0) count++
-  if (stats.int !== null && stats.int !== 0) count++
-  if (stats.luk !== null && stats.luk !== 0) count++
-  return count > 0 ? count : 1 // 至少為 1 避免除以 0
+  const count = MAIN_STATS.filter(key => stats[key] !== null && stats[key] !== 0).length
+  return Math.max(count, 1) // 至少為 1 避免除以 0
+}
+
+/**
+ * 檢查屬性值是否有效（非 null 且非 0）
+ */
+function isValidStat(value: number | null | undefined): value is number {
+  return value !== null && value !== undefined && value !== 0
 }
 
 /**
@@ -74,17 +101,8 @@ function countMainStats(stats: ItemEquipmentStats): number {
 function hasEquipment(
   item: unknown
 ): item is { equipment: { category: string; requirements: { req_level?: number | null; reqLevel?: number | null }; stats: ItemEquipmentStats } } {
-  const potentialItem = item as { equipment?: unknown }
-  if (!potentialItem.equipment || typeof potentialItem.equipment !== 'object') {
-    return false
-  }
-
-  const equipment = potentialItem.equipment as { category?: unknown; requirements?: unknown; stats?: unknown }
-  return (
-    typeof equipment.category === 'string' &&
-    equipment.requirements !== null && equipment.requirements !== undefined &&
-    equipment.stats !== null && equipment.stats !== undefined
-  )
+  const eq = (item as { equipment?: { category?: unknown; requirements?: unknown; stats?: unknown } })?.equipment
+  return !!(eq && typeof eq.category === 'string' && eq.requirements && eq.stats)
 }
 
 /**
@@ -93,121 +111,46 @@ function hasEquipment(
  * @returns 隨機計算後的屬性，如果不是裝備則返回 null
  */
 export function calculateRandomStats(item: unknown): RandomEquipmentStats | null {
-  // 只處理裝備類物品
-  if (!hasEquipment(item)) {
-    return null
-  }
+  if (!hasEquipment(item)) return null
 
   const { equipment } = item
   const { requirements, stats, category } = equipment
 
-  // 獲取需求等級（支援兩種命名方式：req_level 或 reqLevel）
+  // 獲取需求等級（支援兩種命名方式）
   const reqLevel = requirements.req_level ?? requirements.reqLevel ?? 0
-
-  // 計算 Range（使用共用函數，已處理 Overall × 2）
   const range = calculateEquipmentStatRange(reqLevel, category)
-  if (range === 0) {
-    return null // 沒有等級需求的裝備不計算隨機屬性
-  }
+  if (range === 0) return null
 
-  // 計算主要屬性數量（用於 STR/DEX/INT/LUK 的倍率）
-  const mainStatCount = countMainStats(stats)
-
-  // 計算隨機屬性結果
+  // 計算主屬性倍率
+  const mainStatMultiplier = 1 / countMainStats(stats)
   const randomStats: RandomEquipmentStats = {}
 
-  // STR, DEX, INT, LUK - Range 平均分配
-  const mainStatMultiplier = 1 / mainStatCount
-
-  if (stats.str !== null && stats.str !== 0) {
-    randomStats.str = calculateStatVariation(stats.str, range, mainStatMultiplier)
-  }
-
-  if (stats.dex !== null && stats.dex !== 0) {
-    randomStats.dex = calculateStatVariation(stats.dex, range, mainStatMultiplier)
-  }
-
-  if (stats.int !== null && stats.int !== 0) {
-    randomStats.int = calculateStatVariation(stats.int, range, mainStatMultiplier)
-  }
-
-  if (stats.luk !== null && stats.luk !== 0) {
-    randomStats.luk = calculateStatVariation(stats.luk, range, mainStatMultiplier)
-  }
-
-  // WATK, MATK - Range × 0.5
-  if (stats.watk !== null && stats.watk !== 0) {
-    randomStats.watk = calculateStatVariation(stats.watk, range, 0.5)
-  }
-
-  if (stats.matk !== null && stats.matk !== 0) {
-    randomStats.matk = calculateStatVariation(stats.matk, range, 0.5)
-  }
-
-  // ACC (accuracy), AVOID (avoidability) - Range × 1
-  if (stats.accuracy !== null && stats.accuracy !== 0) {
-    randomStats.accuracy = calculateStatVariation(stats.accuracy, range, 1)
-  }
-
-  if (stats.avoidability !== null && stats.avoidability !== 0) {
-    randomStats.avoidability = calculateStatVariation(stats.avoidability, range, 1)
-  }
-
-  // Speed - Range × 0.5
-  if (stats.speed !== null && stats.speed !== 0) {
-    randomStats.speed = calculateStatVariation(stats.speed, range, 0.5)
-  }
-
-  // Jump - Range × 0.25
-  if (stats.jump !== null && stats.jump !== 0) {
-    randomStats.jump = calculateStatVariation(stats.jump, range, 0.25)
-  }
-
-  // HP, MP, WDEF, MDEF - Range × 5
-  if (stats.hp !== null && stats.hp !== 0) {
-    randomStats.hp = calculateStatVariation(stats.hp, range, 5)
-  }
-
-  if (stats.mp !== null && stats.mp !== 0) {
-    randomStats.mp = calculateStatVariation(stats.mp, range, 5)
-  }
-
-  if (stats.wdef !== null && stats.wdef !== 0) {
-    randomStats.wdef = calculateStatVariation(stats.wdef, range, 5)
-  }
-
-  if (stats.mdef !== null && stats.mdef !== 0) {
-    randomStats.mdef = calculateStatVariation(stats.mdef, range, 5)
+  // 使用配置陣列計算所有屬性
+  for (const config of STAT_CONFIGS) {
+    const value = stats[config.key]
+    if (isValidStat(value)) {
+      const multiplier = config.type === 'mainStat' ? mainStatMultiplier : config.multiplier
+      randomStats[config.key] = calculateStatVariation(value, range, multiplier)
+    }
   }
 
   // 保留固定屬性（不參與隨機計算）
-  if (stats.attack_speed !== null && stats.attack_speed !== 0) {
-    randomStats.attack_speed = stats.attack_speed
-  }
-
-  if (stats.upgrades !== null && stats.upgrades !== 0) {
-    randomStats.upgrades = stats.upgrades
-  }
+  if (isValidStat(stats.attack_speed)) randomStats.attack_speed = stats.attack_speed
+  if (isValidStat(stats.upgrades)) randomStats.upgrades = stats.upgrades
 
   return randomStats
 }
 
 /**
- * 批次計算多個裝備的隨機屬性
- * @param items 物品列表
- * @returns 每個物品對應的隨機屬性（Map: itemId -> RandomEquipmentStats）
+ * 合併隨機屬性與原始裝備屬性
+ * @param originalStats 原始裝備屬性
+ * @param randomStats 隨機計算後的屬性（可選）
+ * @returns 合併後的屬性（randomStats 的值會覆蓋 originalStats）
  */
-export function calculateBatchRandomStats(
-  items: ItemAttributes[]
-): Map<string, RandomEquipmentStats> {
-  const results = new Map<string, RandomEquipmentStats>()
-
-  for (const item of items) {
-    const randomStats = calculateRandomStats(item)
-    if (randomStats) {
-      results.set(item.item_id, randomStats)
-    }
-  }
-
-  return results
+export function mergeRandomStats(
+  originalStats: ItemEquipmentStats,
+  randomStats?: RandomEquipmentStats | null
+): ItemEquipmentStats {
+  if (!randomStats) return originalStats
+  return { ...originalStats, ...randomStats }
 }
