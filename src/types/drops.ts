@@ -28,6 +28,28 @@ export interface DropsEssential {
   maxQty: number
 }
 
+// 按物品 ID 分類的掉落資料中的怪物項目（來自 drops-by-item/*.json）
+export interface DropsByItemMonster {
+  mobId: number
+  mobName: string
+  chineseMobName: string | null
+  isBoss: boolean
+  inGame: boolean
+  chance: number
+  displayChance: string
+  minQty: number
+  maxQty: number
+}
+
+// 按物品 ID 分類的掉落資料結構（來自 drops-by-item/*.json）
+export interface DropsByItemData {
+  itemId: number
+  itemName: string
+  chineseItemName: string | null
+  totalMonsters: number
+  monsters: DropsByItemMonster[]
+}
+
 // 怪物索引項目（來自 monster-index.json）
 export interface MonsterIndexItem {
   mobId: number

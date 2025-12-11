@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState, useRef } from 'react'
-import type { DropsEssential, GachaMachine, ItemAttributesEssential, ItemsOrganizedData } from '@/types'
+import type { DropsEssential, GachaMachine, ItemAttributesEssential, ItemsOrganizedData, DropsByItemMonster } from '@/types'
 import { MonsterDropCard } from './MonsterDropCard'
 import { MonsterDropList } from './MonsterDropList'
 import { ItemAttributesCard } from './ItemAttributesCard'
@@ -12,7 +12,7 @@ import { getItemImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useToast } from '@/hooks/useToast'
 import { useScreenshot } from '@/hooks/useScreenshot'
-import { useLazyMobInfo, useLazyItemDetailed } from '@/hooks/useLazyData'
+import { useLazyMobInfo, useLazyItemDetailed, useLazyDropsByItem } from '@/hooks/useLazyData'
 import { findGachaItemOrganized } from '@/lib/gacha-utils'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 
@@ -89,6 +89,9 @@ export function ItemModal({
     loadData: loadMobInfo,
   } = useLazyMobInfo()
 
+  // 懶加載該物品的詳細掉落資料（包含 chance）
+  const { data: dropsByItemData } = useLazyDropsByItem(itemId)
+
   // 懶加載物品詳細資料 (用於顯示完整物品屬性)
   // 只對存在於 itemAttributesMap 的物品載入 Detailed 資料
   // 純轉蛋物品會直接使用轉蛋機資料，無需載入 Detailed（避免 console 錯誤）
@@ -101,10 +104,33 @@ export function ItemModal({
   } = useLazyItemDetailed(shouldLoadDetailed ? itemId : null)
 
   // 過濾該物品的所有掉落來源怪物
-  const itemDrops = useMemo(() => {
+  // 優先使用懶加載的 dropsByItemData（包含正確的 chance），fallback 到 allDrops
+  const itemDrops = useMemo((): DropsEssential[] => {
     if (!itemId && itemId !== 0) return []
+
+    // 如果有懶加載的詳細資料，使用它（包含正確的 chance）
+    if (dropsByItemData && dropsByItemData.monsters.length > 0) {
+      // 從 allDrops 找到物品名稱資訊
+      const dropItem = allDrops.find((drop) => drop.itemId === itemId)
+      const itemName = dropItem?.itemName ?? dropsByItemData.itemName
+      const chineseItemName = dropItem?.chineseItemName ?? dropsByItemData.chineseItemName
+
+      return dropsByItemData.monsters.map((monster: DropsByItemMonster) => ({
+        mobId: monster.mobId,
+        mobName: monster.mobName,
+        chineseMobName: monster.chineseMobName,
+        itemId,
+        itemName,
+        chineseItemName,
+        chance: monster.chance,
+        minQty: monster.minQty,
+        maxQty: monster.maxQty,
+      }))
+    }
+
+    // Fallback: 使用 allDrops（chance 可能是 0）
     return allDrops.filter((drop) => drop.itemId === itemId)
-  }, [itemId, allDrops])
+  }, [itemId, allDrops, dropsByItemData])
 
   // 計算該物品來自哪些轉蛋機
   const itemGachaSources = useMemo(() => {

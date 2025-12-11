@@ -284,6 +284,8 @@ export interface ItemsOrganizedMetaInfo {
   slotMax?: number
   price?: number
   setCompleteCount?: number
+  // 消耗品效果（預處理的效果描述陣列）
+  effects?: string[]
   // 裝備相關
   reqLevel?: number
   reqSTR?: number

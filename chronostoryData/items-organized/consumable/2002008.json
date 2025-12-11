@@ -12,7 +12,10 @@
     "mob": 0,
     "slotMax": 0,
     "price": 300,
-    "setCompleteCount": 0
+    "setCompleteCount": 0,
+    "effects": [
+      "+10 Accuracy"
+    ]
   },
   "typeInfo": {
     "overallCategory": "Use",

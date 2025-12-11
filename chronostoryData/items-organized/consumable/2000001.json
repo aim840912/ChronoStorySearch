@@ -12,7 +12,10 @@
     "mob": 0,
     "slotMax": 0,
     "price": 80,
-    "setCompleteCount": 0
+    "setCompleteCount": 0,
+    "effects": [
+      "+150 HP"
+    ]
   },
   "typeInfo": {
     "overallCategory": "Use",

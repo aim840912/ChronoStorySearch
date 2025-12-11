@@ -12,7 +12,11 @@
     "mob": 0,
     "slotMax": 0,
     "price": 150,
-    "setCompleteCount": 0
+    "setCompleteCount": 0,
+    "effects": [
+      "Cure Curse",
+      "Cure Seal"
+    ]
   },
   "typeInfo": {
     "overallCategory": "Use",

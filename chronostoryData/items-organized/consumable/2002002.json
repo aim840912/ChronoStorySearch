@@ -12,7 +12,10 @@
     "mob": 0,
     "slotMax": 0,
     "price": 250,
-    "setCompleteCount": 0
+    "setCompleteCount": 0,
+    "effects": [
+      "+5 Magic Attack"
+    ]
   },
   "typeInfo": {
     "overallCategory": "Use",

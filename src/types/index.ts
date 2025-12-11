@@ -9,6 +9,8 @@
 export type {
   DropItem,
   DropsEssential,
+  DropsByItemMonster,
+  DropsByItemData,
   MonsterIndexItem,
   MonsterIndex,
   ItemIndexItem,
