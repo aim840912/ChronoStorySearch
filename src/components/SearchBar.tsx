@@ -1,7 +1,7 @@
 'use client'
 
 import { useLanguage } from '@/contexts/LanguageContext'
-import { SearchInput, SuggestionList, FilterTabs, ActionButtons } from '@/components/search'
+import { SearchInput, SuggestionList, FilterTabs, ActionButtons, GachaDropdown } from '@/components/search'
 import type { RefObject, KeyboardEvent } from 'react'
 import type { SuggestionItem, SearchTypeFilter, FilterMode, AdvancedFilterOptions } from '@/types'
 
@@ -30,6 +30,11 @@ interface SearchBarProps {
   advancedFilterCount?: number
   advancedFilter?: AdvancedFilterOptions
   onResetAdvancedFilter?: () => void
+  // 轉蛋相關
+  isGachaMode?: boolean
+  selectedGachaMachineId?: number | null
+  onGachaSelect?: (machineId: number | null) => void
+  onGachaClose?: () => void
 }
 
 /**
@@ -59,6 +64,10 @@ export function SearchBar({
   advancedFilterCount = 0,
   advancedFilter,
   onResetAdvancedFilter,
+  isGachaMode = false,
+  selectedGachaMachineId = null,
+  onGachaSelect,
+  onGachaClose,
 }: SearchBarProps) {
   const { t } = useLanguage()
 
@@ -148,14 +157,25 @@ export function SearchBar({
       {/* 篩選按鈕行 */}
       {onFilterChange && (
         <div className="flex flex-col min-[554px]:flex-row min-[554px]:items-center min-[554px]:justify-between gap-2">
-          <FilterTabs
-            searchType={searchType}
-            onSearchTypeChange={onSearchTypeChange}
-            filterMode={filterMode}
-            onFilterChange={onFilterChange}
-            favoriteMonsterCount={favoriteMonsterCount}
-            favoriteItemCount={favoriteItemCount}
-          />
+          <div className="flex flex-wrap items-center gap-2">
+            <FilterTabs
+              searchType={searchType}
+              onSearchTypeChange={onSearchTypeChange}
+              filterMode={filterMode}
+              onFilterChange={onFilterChange}
+              favoriteMonsterCount={favoriteMonsterCount}
+              favoriteItemCount={favoriteItemCount}
+              isGachaMode={isGachaMode}
+            />
+            {onGachaSelect && onGachaClose && (
+              <GachaDropdown
+                isGachaMode={isGachaMode}
+                selectedMachineId={selectedGachaMachineId ?? null}
+                onSelect={onGachaSelect}
+                onClose={onGachaClose}
+              />
+            )}
+          </div>
 
           {/* 進階篩選按鈕 - 只在 554-767px 顯示（FilterTabs 旁） */}
           {onAdvancedFilterToggle && onResetAdvancedFilter && (

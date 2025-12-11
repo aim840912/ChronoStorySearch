@@ -39,6 +39,10 @@ export default function Home() {
   const [advancedFilter, setAdvancedFilter] = useState<AdvancedFilterOptions>(getDefaultAdvancedFilter())
   const [isAdvancedFilterExpanded, setIsAdvancedFilterExpanded] = useState(false)
 
+  // 轉蛋模式狀態
+  const [isGachaMode, setIsGachaMode] = useState(false)
+  const [selectedGachaMachineId, setSelectedGachaMachineId] = useState<number | null>(null)
+
 
   // 追蹤首次掛載，避免初始載入時觸發滾動
   const isFirstMount = useRef(true)
@@ -303,6 +307,35 @@ export default function Home() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
+  // 轉蛋模式處理函數
+  const handleGachaSelect = useCallback((machineId: number | null) => {
+    setIsGachaMode(true)
+    setSelectedGachaMachineId(machineId)
+    // 載入轉蛋機資料
+    loadGachaMachines()
+    // 滾動到頂部
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [loadGachaMachines])
+
+  const handleGachaClose = useCallback(() => {
+    setIsGachaMode(false)
+    setSelectedGachaMachineId(null)
+  }, [])
+
+  const handleGachaMachineSelect = useCallback((machineId: number) => {
+    setSelectedGachaMachineId(machineId)
+  }, [])
+
+  // 處理 filterMode 變更（同時關閉轉蛋模式）
+  const handleFilterModeChange = useCallback((mode: FilterMode) => {
+    setFilterMode(mode)
+    // 點擊 FilterTabs 時自動退出轉蛋模式
+    if (isGachaMode) {
+      setIsGachaMode(false)
+      setSelectedGachaMachineId(null)
+    }
+  }, [isGachaMode])
+
 
   // 鍵盤導航處理 - 包裝 search.handleKeyDown 以處理轉蛋建議
   const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -356,7 +389,7 @@ export default function Home() {
           onFocusedIndexChange={search.setFocusedIndex}
           searchContainerRef={search.searchContainerRef}
           filterMode={filterMode}
-          onFilterChange={setFilterMode}
+          onFilterChange={handleFilterModeChange}
           favoriteMonsterCount={favoriteCount}
           favoriteItemCount={favoriteItemCount}
           isAdvancedFilterExpanded={isAdvancedFilterExpanded}
@@ -365,6 +398,10 @@ export default function Home() {
           onResetAdvancedFilter={handleResetAdvancedFilter}
           advancedFilter={advancedFilter}
           onAdvancedFilterChange={setAdvancedFilter}
+          isGachaMode={isGachaMode}
+          selectedGachaMachineId={selectedGachaMachineId}
+          onGachaSelect={handleGachaSelect}
+          onGachaClose={handleGachaClose}
         />
 
         {/* 內容顯示區域 */}
@@ -398,6 +435,9 @@ export default function Home() {
           allDrops={allDrops}
           gachaMachines={gachaMachines}
           itemIndexMap={itemIndexMap}
+          isGachaMode={isGachaMode}
+          selectedGachaMachineId={selectedGachaMachineId}
+          onGachaMachineSelect={handleGachaMachineSelect}
         />
       </div>
 
