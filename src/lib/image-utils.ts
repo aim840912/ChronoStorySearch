@@ -148,6 +148,11 @@ export function getItemImageUrl(
     return fallback
   }
 
+  // 臨時修復：item ID 0 (Meso) 的 CDN 快取問題
+  if (itemId === 0) {
+    return `${R2_PUBLIC_URL}/images/items/${itemId}.png?v=2`
+  }
+
   return `${R2_PUBLIC_URL}/images/items/${itemId}.png`
 }
 

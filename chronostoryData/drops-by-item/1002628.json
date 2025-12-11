@@ -65,8 +65,8 @@
       "chineseMobName": null,
       "isBoss": false,
       "inGame": true,
-      "chance": 0,
-      "displayChance": "0.000%",
+      "chance": 0.2,
+      "displayChance": "0.20%",
       "minQty": 1,
       "maxQty": 1
     }
