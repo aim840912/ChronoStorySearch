@@ -61,6 +61,7 @@ export type {
 
 // ========== 物品裝備屬性類型 ==========
 export type {
+  BaseEquipmentStats,
   ItemRequirements,
   ItemClasses,
   ItemEquipmentStats,

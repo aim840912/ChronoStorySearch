@@ -1,4 +1,5 @@
 import type { GachaItem, EnhancedGachaItem, EnhancedRequirements, EnhancedStats, ItemsOrganizedData, ItemsOrganizedRandomStat, ItemAttributesEssential } from '@/types'
+import { mapStatToOrganized } from './stat-mappings'
 
 /**
  * 轉蛋物品屬性轉換工具
@@ -30,31 +31,6 @@ export function weightedRandomDraw(items: GachaItem[]): GachaItem {
 
   // 容錯：如果因為浮點數誤差沒有返回，返回最後一個物品
   return items[items.length - 1]
-}
-
-/**
- * 將 statVariation 的 key 映射到 metaInfo 的 key 格式
- * 例如: str -> incSTR, watk -> incPAD
- */
-function mapStatKeyToMetaInfo(key: string): string {
-  const mapping: Record<string, string> = {
-    'str': 'incSTR',
-    'dex': 'incDEX',
-    'int': 'incINT',
-    'luk': 'incLUK',
-    'watk': 'incPAD',
-    'matk': 'incMAD',
-    'wdef': 'incPDD',
-    'mdef': 'incMDD',
-    'hp': 'incMHP',
-    'mp': 'incMMP',
-    'accuracy': 'incACC',
-    'avoidability': 'incEVA',
-    'speed': 'incSpeed',
-    'jump': 'incJump',
-    'attackSpeed': 'attackSpeed',
-  }
-  return mapping[key] || key
 }
 
 /**
@@ -97,7 +73,7 @@ export function convertGachaToOrganized(
       if (value && typeof value === 'object' && ('min' in value || 'max' in value)) {
         // 將 statVariation 的 key 映射到 metaInfo 的 key 格式
         // 例如: str -> incSTR, watk -> incPAD
-        const metaInfoKey = mapStatKeyToMetaInfo(key)
+        const metaInfoKey = mapStatToOrganized(key)
         randomStats![metaInfoKey] = {
           base: 0,
           min: value.min ?? 0,

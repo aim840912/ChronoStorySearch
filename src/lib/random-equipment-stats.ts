@@ -18,6 +18,7 @@
  */
 
 import { ItemAttributes, ItemEquipmentStats, RandomEquipmentStats } from '@/types'
+import { calculateEquipmentStatRange } from './equipment-stats-utils'
 
 /**
  * 生成隨機 ROLL 值（-1, 0, 1）
@@ -68,13 +69,6 @@ function countMainStats(stats: ItemEquipmentStats): number {
 }
 
 /**
- * 判斷是否為 Overall 類裝備
- */
-function isOverall(category: string): boolean {
-  return category.toLowerCase().includes('overall')
-}
-
-/**
  * 判斷物品是否有有效的裝備資料
  */
 function hasEquipment(
@@ -109,14 +103,11 @@ export function calculateRandomStats(item: unknown): RandomEquipmentStats | null
 
   // 獲取需求等級（支援兩種命名方式：req_level 或 reqLevel）
   const reqLevel = requirements.req_level ?? requirements.reqLevel ?? 0
-  if (reqLevel === 0) {
-    return null // 沒有等級需求的裝備不計算隨機屬性
-  }
 
-  // 計算 Range（Overall 需要 × 2）
-  let range = reqLevel / 10
-  if (isOverall(category)) {
-    range *= 2
+  // 計算 Range（使用共用函數，已處理 Overall × 2）
+  const range = calculateEquipmentStatRange(reqLevel, category)
+  if (range === 0) {
+    return null // 沒有等級需求的裝備不計算隨機屬性
   }
 
   // 計算主要屬性數量（用於 STR/DEX/INT/LUK 的倍率）

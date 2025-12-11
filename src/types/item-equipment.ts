@@ -2,6 +2,29 @@
  * 物品裝備屬性相關類型
  */
 
+/**
+ * 裝備基礎數值類型（所有裝備/卷軸/藥水共用）
+ *
+ * 包含所有 MapleStory 裝備可能具有的基礎屬性
+ * 所有欄位為 required，值可為 null
+ */
+export interface BaseEquipmentStats {
+  str: number | null
+  dex: number | null
+  int: number | null
+  luk: number | null
+  watk: number | null
+  matk: number | null
+  wdef: number | null
+  mdef: number | null
+  hp: number | null
+  mp: number | null
+  accuracy: number | null
+  avoidability: number | null
+  speed: number | null
+  jump: number | null
+}
+
 // 物品需求條件
 export interface ItemRequirements {
   req_level: number | null
@@ -22,23 +45,9 @@ export interface ItemClasses {
   pirate: boolean | null
 }
 
-// 裝備屬性
-export interface ItemEquipmentStats {
+// 裝備屬性（繼承基礎屬性，新增攻速和升級次數）
+export interface ItemEquipmentStats extends BaseEquipmentStats {
   attack_speed: number | null
-  str: number | null
-  dex: number | null
-  int: number | null
-  luk: number | null
-  watk: number | null
-  matk: number | null
-  accuracy: number | null
-  avoidability: number | null
-  speed: number | null
-  jump: number | null
-  hp: number | null
-  mp: number | null
-  wdef: number | null
-  mdef: number | null
   upgrades: number | null
 }
 
@@ -57,23 +66,8 @@ export interface ItemEquipment {
   stat_variation?: Record<string, StatVariation>
 }
 
-// Scroll (卷軸) 相關類型定義
-export interface ScrollStats {
-  str: number | null
-  dex: number | null
-  int: number | null
-  luk: number | null
-  watk: number | null
-  matk: number | null
-  wdef: number | null
-  mdef: number | null
-  hp: number | null
-  mp: number | null
-  accuracy: number | null
-  avoidability: number | null
-  speed: number | null
-  jump: number | null
-}
+// Scroll (卷軸) 相關類型定義（使用基礎屬性的 Partial，因為卷軸只增加部分屬性）
+export type ScrollStats = Partial<BaseEquipmentStats>
 
 export interface ScrollInfo {
   category: string
@@ -82,23 +76,9 @@ export interface ScrollInfo {
   stats: ScrollStats
 }
 
-// Potion (藥水) 相關類型定義
-export interface PotionStats {
-  attack_speed: number | null
-  str: number | null
-  dex: number | null
-  int: number | null
-  luk: number | null
-  watk: number | null
-  matk: number | null
-  accuracy: number | null
-  avoidability: number | null
-  speed: number | null
-  jump: number | null
-  hp: number | null
-  mp: number | null
-  wdef: number | null
-  mdef: number | null
+// Potion (藥水) 相關類型定義（使用基礎屬性的 Partial，新增攻速）
+export type PotionStats = Partial<BaseEquipmentStats> & {
+  attack_speed?: number | null
 }
 
 export interface PotionInfo {
