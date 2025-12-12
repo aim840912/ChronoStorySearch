@@ -52,17 +52,27 @@ export function useDisplayStrategy({
     // 如果 searchType 是 'monster'，不匹配物品
     if (searchType === 'monster') return false
 
-    // 檢查 drops 中是否有物品名匹配
-    const hasDropMatch = filteredDrops.some(drop =>
-      matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
-      (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
-    )
+    // 檢查是否為 ID 搜尋（純數字）
+    const trimmedSearch = debouncedSearchTerm.trim()
+    const isIdSearch = /^\d+$/.test(trimmedSearch)
+
+    // 檢查 drops 中是否有物品匹配（支援 ID 搜尋）
+    const hasDropMatch = filteredDrops.some(drop => {
+      if (isIdSearch) {
+        return drop.itemId.toString() === trimmedSearch
+      }
+      return matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
+             (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
+    })
 
     if (hasDropMatch) return true
 
-    // 檢查轉蛋機中是否有物品名匹配（支援純轉蛋物品搜尋）
+    // 檢查轉蛋機中是否有物品名匹配（支援純轉蛋物品搜尋和 ID 搜尋）
     const hasGachaMatch = gachaMachines.some(machine =>
       machine.items.some(item => {
+        if (isIdSearch) {
+          return item.itemId.toString() === trimmedSearch
+        }
         const itemName = item.name || item.itemName || ''
         const chineseItemName = item.chineseName || ''
         return matchesAllKeywords(itemName, debouncedSearchTerm) ||

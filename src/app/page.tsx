@@ -19,6 +19,7 @@ import { useHashNavigation } from '@/hooks/useHashNavigation'
 import { SearchHeader } from '@/components/SearchHeader'
 import { ContentDisplay } from '@/components/ContentDisplay'
 import { ModalManager } from '@/components/ModalManager'
+import { GachaDrawSection } from '@/components/gacha/GachaDrawSection'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
 import { trackEvent } from '@/lib/analytics/ga4'
@@ -322,10 +323,6 @@ export default function Home() {
     setSelectedGachaMachineId(null)
   }, [])
 
-  const handleGachaMachineSelect = useCallback((machineId: number) => {
-    setSelectedGachaMachineId(machineId)
-  }, [])
-
   // 處理 filterMode 變更（同時關閉轉蛋模式）
   const handleFilterModeChange = useCallback((mode: FilterMode) => {
     setFilterMode(mode)
@@ -360,15 +357,12 @@ export default function Home() {
     modals.openMonsterModal(mobId, mobName, true) // saveHistory=true，不再關閉 ItemModal
   }, [modals])
 
-  // ItemModal 中點擊轉蛋機：打開 GachaMachineModal（保存導航歷史）
+  // ItemModal 中點擊轉蛋機：進入轉蛋模式並選擇對應轉蛋機
   const handleGachaMachineClick = useCallback((machineId: number) => {
-    modals.openGachaModal(machineId, true) // saveHistory=true
-  }, [modals])
-
-  // GachaMachineModal 中點擊物品：打開 ItemModal（保存導航歷史）
-  const handleItemClickFromGachaModal = useCallback((itemId: number, itemName: string) => {
-    modals.openItemModal(itemId, itemName, true) // saveHistory=true
-  }, [modals])
+    // 關閉 ItemModal 並進入轉蛋模式
+    modals.closeItemModal()
+    handleGachaSelect(machineId)
+  }, [modals, handleGachaSelect])
 
 
   return (
@@ -404,8 +398,18 @@ export default function Home() {
           onGachaClose={handleGachaClose}
         />
 
-        {/* 內容顯示區域 */}
-        <ContentDisplay
+        {/* 轉蛋抽獎區域 - 選擇轉蛋機後顯示 */}
+        {isGachaMode && selectedGachaMachineId !== null && (
+          <GachaDrawSection
+            machineId={selectedGachaMachineId}
+            gachaMachines={gachaMachines}
+            onClose={handleGachaClose}
+          />
+        )}
+
+        {/* 內容顯示區域 - 轉蛋模式且已選擇轉蛋機時隱藏 */}
+        {!(isGachaMode && selectedGachaMachineId !== null) && (
+          <ContentDisplay
           isLoading={isLoading}
           filterMode={filterMode}
           hasSearchTerm={!!search.searchTerm}
@@ -435,10 +439,8 @@ export default function Home() {
           allDrops={allDrops}
           gachaMachines={gachaMachines}
           itemIndexMap={itemIndexMap}
-          isGachaMode={isGachaMode}
-          selectedGachaMachineId={selectedGachaMachineId}
-          onGachaMachineSelect={handleGachaMachineSelect}
         />
+        )}
       </div>
 
       {/* Modal 和浮動按鈕管理器 */}
@@ -447,14 +449,12 @@ export default function Home() {
         isItemModalOpen={modals.isItemModalOpen}
         isBugReportModalOpen={modals.isBugReportModalOpen}
         isClearModalOpen={modals.isClearModalOpen}
-        isGachaModalOpen={modals.isGachaModalOpen}
         isMerchantShopModalOpen={modals.isMerchantShopModalOpen}
         isAccuracyCalculatorOpen={modals.isAccuracyCalculatorOpen}
         selectedMonsterId={modals.selectedMonsterId ?? undefined}
         selectedMonsterName={modals.selectedMonsterName}
         selectedItemId={modals.selectedItemId}
         selectedItemName={modals.selectedItemName}
-        selectedGachaMachineId={modals.selectedGachaMachineId ?? null}
         selectedMerchantMapId={modals.selectedMerchantMapId}
         clearModalType={modals.clearModalType}
         accuracyInitialMonsterId={modals.accuracyInitialMonsterId}
@@ -463,11 +463,9 @@ export default function Home() {
         closeItemModal={modals.closeItemModal}
         closeBugReportModal={modals.closeBugReportModal}
         closeClearModal={modals.closeClearModal}
-        closeGachaModal={modals.closeGachaModal}
         closeMerchantShopModal={modals.closeMerchantShopModal}
         closeAccuracyCalculator={modals.closeAccuracyCalculator}
         goBack={modals.goBack}
-        openGachaModal={modals.openGachaModal}
         openBugReportModal={modals.openBugReportModal}
         openMerchantShopModal={modals.openMerchantShopModal}
         openAccuracyCalculator={modals.openAccuracyCalculator}
@@ -484,7 +482,6 @@ export default function Home() {
         handleItemClickFromMonsterModal={handleItemClickFromMonsterModal}
         handleMonsterClickFromItemModal={handleMonsterClickFromItemModal}
         handleGachaMachineClick={handleGachaMachineClick}
-        handleItemClickFromGachaModal={handleItemClickFromGachaModal}
         handleClearConfirm={handleClearConfirm}
         isAccuracyCalcOpen={isAccuracyCalcOpen}
         setIsAccuracyCalcOpen={setIsAccuracyCalcOpen}
