@@ -19,6 +19,8 @@ interface GachaDrawSectionProps {
   machineId: number
   gachaMachines: GachaMachine[]
   onClose: () => void
+  /** 點擊物品時的回調（瀏覽模式） */
+  onItemClick?: (itemId: number, itemName: string) => void
 }
 
 /**
@@ -29,6 +31,7 @@ export function GachaDrawSection({
   machineId,
   gachaMachines,
   onClose,
+  onItemClick,
 }: GachaDrawSectionProps) {
   const { t, language } = useLanguage()
   const MAX_DRAWS = 100
@@ -86,15 +89,13 @@ export function GachaDrawSection({
     setIsDetailsModalOpen(true)
   }, [])
 
-  // 顯示物品詳情（瀏覽模式 - 將 GachaItem 轉換為 GachaResult）
+  // 顯示物品詳情（瀏覽模式 - 打開 ItemModal）
   const handleBrowseItemClick = useCallback((item: GachaItem) => {
-    const result: GachaResult = {
-      ...item,
-      drawId: 0, // 瀏覽模式沒有抽獎 ID
+    if (onItemClick) {
+      const itemName = item.name || item.itemName || ''
+      onItemClick(item.itemId, itemName)
     }
-    setSelectedEquipment(result)
-    setIsDetailsModalOpen(true)
-  }, [])
+  }, [onItemClick])
 
   // 關閉裝備詳情
   const closeDetailsModal = useCallback(() => {

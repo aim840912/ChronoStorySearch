@@ -404,6 +404,7 @@ export default function Home() {
             machineId={selectedGachaMachineId}
             gachaMachines={gachaMachines}
             onClose={handleGachaClose}
+            onItemClick={modals.openItemModal}
           />
         )}
 
