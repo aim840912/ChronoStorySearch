@@ -524,7 +524,7 @@ export function ItemModal({
             {itemDrops.length > 0 && (
               <div>
                 {/* 掉落來源標題和視圖切換 */}
-                <div className="flex items-center justify-between mb-3 sm:mb-4">
+                <div className="flex items-center justify-between mb-3 sm:mb-4 sticky top-0 bg-white dark:bg-gray-800 z-10 py-2 -mt-2">
                   <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 hidden lg:block">
                     {t('card.droppedBy')} ({itemDrops.length})
                   </h3>

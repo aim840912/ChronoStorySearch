@@ -69,10 +69,9 @@ export const MonsterDropList = memo(function MonsterDropList({
   }, [drops, sortOrder])
 
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full border-collapse">
-        <thead>
-          <tr className="bg-gray-100 dark:bg-gray-700 border-b-2 border-gray-200 dark:border-gray-600">
+    <table className="w-full border-collapse">
+      <thead className="sticky top-12 z-[5] bg-gray-100 dark:bg-gray-700">
+        <tr className="bg-gray-100 dark:bg-gray-700 border-b-2 border-gray-200 dark:border-gray-600">
             <th className="text-left p-3 text-sm font-semibold text-gray-700 dark:text-gray-200">
               {/* 最愛欄位（圖示） */}
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -128,7 +127,6 @@ export const MonsterDropList = memo(function MonsterDropList({
           ))}
         </tbody>
       </table>
-    </div>
   )
 })
 

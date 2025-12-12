@@ -18,7 +18,7 @@ export function LanguageToggle() {
   return (
     <button
       onClick={toggleLanguage}
-      className="p-1.5 sm:p-2 rounded-lg bg-white/60 dark:bg-gray-800/60 border border-gray-200/50 dark:border-gray-700/50 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-gray-500 dark:text-gray-400 flex items-center gap-1"
+      className="p-1.5 sm:p-2 rounded-lg bg-pink-500 hover:bg-pink-600 dark:bg-pink-600 dark:hover:bg-pink-700 transition-colors text-white flex items-center gap-1"
       aria-label="切換語言 / Switch Language"
       title={t(`language.${language === 'zh-TW' ? 'zhTW' : 'en'}`)}
     >

@@ -298,7 +298,7 @@ export function MonsterModal({
             mobileTab === 'info' ? 'hidden min-[1120px]:block' : ''
           }`}>
             {/* 掉落標題和視圖切換 */}
-            <div className="flex items-center justify-between mb-3 sm:mb-4 gap-2">
+            <div className="flex items-center justify-between mb-3 sm:mb-4 gap-2 sticky top-0 bg-white dark:bg-gray-800 z-10 py-2 -mt-2">
               <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 hidden min-[1120px]:block">
                 {t('monster.drops')} ({filteredDrops.length})
               </h3>
