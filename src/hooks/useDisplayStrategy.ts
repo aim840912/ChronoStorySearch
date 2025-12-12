@@ -31,6 +31,8 @@ interface UseDisplayStrategyParams {
 interface UseDisplayStrategyReturn {
   /** 是否有物品匹配搜尋詞 */
   hasItemMatch: boolean
+  /** 是否有怪物匹配搜尋詞 */
+  hasMonsterMatch: boolean
   /** 是否應該顯示物品列表 */
   shouldShowItems: boolean
   /** 是否應該顯示怪物列表 */
@@ -59,10 +61,16 @@ export function useDisplayStrategy({
     // 檢查 drops 中是否有物品匹配（支援 ID 搜尋）
     const hasDropMatch = filteredDrops.some(drop => {
       if (isIdSearch) {
-        return drop.itemId.toString() === trimmedSearch
+        // 搜尋怪物 ID 時，該怪物的掉落物品也應該顯示
+        // 搜尋物品 ID 時，直接匹配物品 ID
+        return drop.itemId.toString() === trimmedSearch || drop.mobId.toString() === trimmedSearch
       }
+      // 檢查物品名稱或怪物名稱是否匹配
+      // 當搜尋怪物名稱時，該怪物的掉落物品也應該顯示
       return matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
-             (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
+             (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm)) ||
+             matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
+             (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm))
     })
 
     if (hasDropMatch) return true
@@ -82,6 +90,27 @@ export function useDisplayStrategy({
 
     return hasGachaMatch
   }, [filterMode, debouncedSearchTerm, searchType, filteredDrops, gachaMachines])
+
+  // 判斷搜尋上下文 - 決定是否有怪物匹配
+  const hasMonsterMatch = useMemo(() => {
+    if (filterMode !== 'all' || !debouncedSearchTerm.trim()) return false
+
+    // 如果 searchType 是 'item' 或 'gacha'，不匹配怪物
+    if (searchType === 'item' || searchType === 'gacha') return false
+
+    // 檢查是否為 ID 搜尋（純數字）
+    const trimmedSearch = debouncedSearchTerm.trim()
+    const isIdSearch = /^\d+$/.test(trimmedSearch)
+
+    // 檢查 drops 中是否有怪物匹配（支援 ID 搜尋）
+    return filteredDrops.some(drop => {
+      if (isIdSearch) {
+        return drop.mobId.toString() === trimmedSearch
+      }
+      return matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
+             (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm))
+    })
+  }, [filterMode, debouncedSearchTerm, searchType, filteredDrops])
 
   // 顯示策略 - 物品
   const shouldShowItems = useMemo(() => {
@@ -127,12 +156,13 @@ export function useDisplayStrategy({
       }
     }
 
-    // 預設邏輯：全部模式下總是顯示怪物
-    return true
-  }, [filterMode, searchType, advancedFilter])
+    // 預設邏輯：無搜尋詞時顯示，或有怪物匹配時顯示
+    return !debouncedSearchTerm.trim() || hasMonsterMatch
+  }, [filterMode, searchType, advancedFilter, debouncedSearchTerm, hasMonsterMatch])
 
   return {
     hasItemMatch,
+    hasMonsterMatch,
     shouldShowItems,
     shouldShowMonsters,
   }
