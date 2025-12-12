@@ -108,14 +108,30 @@ export function integrateGachaItems(
 
       // 如果有搜尋詞，先檢查轉蛋物品是否匹配搜尋條件
       if (debouncedSearchTerm.trim() !== '') {
-        const itemName = gachaItem.name || gachaItem.itemName || ''
-        const chineseItemName = gachaItem.chineseName || ''
+        const trimmedSearch = debouncedSearchTerm.trim()
+        const isIdSearch = /^\d+$/.test(trimmedSearch)
 
-        const matches = matchesAllKeywords(itemName, debouncedSearchTerm) ||
-                       (chineseItemName && matchesAllKeywords(chineseItemName, debouncedSearchTerm))
+        if (isIdSearch) {
+          // ID 搜尋時：只整合已在 itemMap 中的物品（來自匹配怪物的掉落）
+          // 或者 itemId 直接匹配搜尋的 ID
+          const existing = itemMap.get(gachaItem.itemId)
+          if (!existing && gachaItem.itemId.toString() !== trimmedSearch) {
+            return
+          }
+        } else {
+          // 名稱搜尋：檢查物品名稱或是否為已匹配怪物的掉落物品
+          const existing = itemMap.get(gachaItem.itemId)
+          const itemName = gachaItem.name || gachaItem.itemName || ''
+          const chineseItemName = gachaItem.chineseName || ''
 
-        if (!matches) {
-          return
+          const matches = matchesAllKeywords(itemName, debouncedSearchTerm) ||
+                         (chineseItemName && matchesAllKeywords(chineseItemName, debouncedSearchTerm))
+
+          // 如果物品名稱不匹配且物品不在 itemMap 中，跳過
+          // 如果物品已在 itemMap 中，表示它是匹配怪物的掉落物品，應該整合轉蛋資訊
+          if (!matches && !existing) {
+            return
+          }
         }
       }
 
