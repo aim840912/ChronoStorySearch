@@ -6,7 +6,6 @@ import { MonsterModal } from '@/components/MonsterModal'
 import { ItemModal } from '@/components/ItemModal'
 import { BugReportModal } from '@/components/BugReportModal'
 import { ClearConfirmModal } from '@/components/ClearConfirmModal'
-import { GachaMachineModal } from '@/components/GachaMachineModal'
 import { AccuracyCalculatorModal } from '@/components/AccuracyCalculatorModal'
 import { GameCommandsModal } from '@/components/GameCommandsModal'
 import { MerchantShopModal } from '@/components/MerchantShopModal'
@@ -23,14 +22,12 @@ interface ModalManagerProps {
   isItemModalOpen: boolean
   isBugReportModalOpen: boolean
   isClearModalOpen: boolean
-  isGachaModalOpen: boolean
   isMerchantShopModalOpen: boolean
   isAccuracyCalculatorOpen: boolean
   selectedMonsterId: number | null | undefined
   selectedMonsterName: string
   selectedItemId: number | null
   selectedItemName: string
-  selectedGachaMachineId: number | null
   selectedMerchantMapId?: string
   clearModalType: 'monsters' | 'items'
   accuracyInitialMonsterId: number | null | undefined
@@ -41,13 +38,11 @@ interface ModalManagerProps {
   closeItemModal: () => void
   closeBugReportModal: () => void
   closeClearModal: () => void
-  closeGachaModal: () => void
   closeMerchantShopModal: () => void
   closeAccuracyCalculator: () => void
   goBack: () => void
 
   // Modal 開啟函數
-  openGachaModal: (machineId?: number) => void
   openBugReportModal: () => void
   openMerchantShopModal: (initialMapId?: string) => void
   openAccuracyCalculator: (initialMonsterId?: number | null) => void
@@ -75,7 +70,6 @@ interface ModalManagerProps {
   handleItemClickFromMonsterModal: (itemId: number, itemName: string) => void
   handleMonsterClickFromItemModal: (mobId: number, mobName: string) => void
   handleGachaMachineClick: (machineId: number) => void
-  handleItemClickFromGachaModal: (itemId: number, itemName: string) => void
   handleClearConfirm: () => void
 
   // 工具 Modal 狀態（舊的，僅用於 GameCommands）
@@ -106,14 +100,12 @@ export const ModalManager = memo(function ModalManager({
   isItemModalOpen,
   isBugReportModalOpen,
   isClearModalOpen,
-  isGachaModalOpen,
   isMerchantShopModalOpen,
   isAccuracyCalculatorOpen,
   selectedMonsterId,
   selectedMonsterName,
   selectedItemId,
   selectedItemName,
-  selectedGachaMachineId,
   selectedMerchantMapId,
   clearModalType,
   accuracyInitialMonsterId,
@@ -122,11 +114,9 @@ export const ModalManager = memo(function ModalManager({
   closeItemModal,
   closeBugReportModal,
   closeClearModal,
-  closeGachaModal,
   closeMerchantShopModal,
   closeAccuracyCalculator,
   goBack,
-  openGachaModal,
   openBugReportModal,
   openMerchantShopModal,
   openAccuracyCalculator,
@@ -143,7 +133,6 @@ export const ModalManager = memo(function ModalManager({
   handleItemClickFromMonsterModal,
   handleMonsterClickFromItemModal,
   handleGachaMachineClick,
-  handleItemClickFromGachaModal,
   handleClearConfirm,
   isAccuracyCalcOpen: _isAccuracyCalcOpen,
   setIsAccuracyCalcOpen: _setIsAccuracyCalcOpen,
@@ -166,7 +155,6 @@ export const ModalManager = memo(function ModalManager({
   // 判斷是否有任何 Modal 開啟（用於顯示懸浮翻譯按鈕）
   const isAnyModalOpen = isMonsterModalOpen ||
                          isItemModalOpen ||
-                         isGachaModalOpen ||
                          isBugReportModalOpen ||
                          isClearModalOpen ||
                          isMerchantShopModalOpen ||
@@ -233,16 +221,6 @@ export const ModalManager = memo(function ModalManager({
         onConfirm={handleClearConfirm}
         type={clearModalType}
         count={clearModalType === 'monsters' ? favoriteMonsterCount : favoriteItemCount}
-      />
-
-      {/* Gacha Machine Modal */}
-      <GachaMachineModal
-        isOpen={isGachaModalOpen}
-        onClose={closeGachaModal}
-        initialMachineId={selectedGachaMachineId ?? undefined}
-        onItemClick={handleItemClickFromGachaModal}
-        hasPreviousModal={hasPreviousModal}
-        onGoBack={goBack}
       />
 
       {/* Accuracy Calculator Modal */}
@@ -315,35 +293,10 @@ export const ModalManager = memo(function ModalManager({
         </div>
       )}
 
-      {/* 浮動轉蛋機按鈕 */}
-      <button
-        onClick={() => openGachaModal()}
-        className="fixed bottom-4 sm:bottom-6 left-4 sm:left-6 z-40 p-3 sm:p-4 bg-purple-500 hover:bg-purple-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
-        aria-label={t('gacha.button')}
-      >
-        <div className="flex items-center gap-2">
-          <svg
-            className="w-5 h-5 sm:w-6 sm:h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <circle cx="12" cy="10" r="7" strokeWidth={2}/>
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10h14"/>
-            <rect x="8" y="16" width="8" height="5" rx="1" strokeWidth={2}/>
-            <circle cx="10" cy="8" r="1.5" strokeWidth={1.5}/>
-            <circle cx="14" cy="12" r="1.5" strokeWidth={1.5}/>
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 10l2 2"/>
-            <rect x="10" y="18" width="4" height="1.5" rx="0.5" strokeWidth={1}/>
-          </svg>
-          <span className="text-sm font-medium hidden group-hover:inline-block">{t('gacha.button')}</span>
-        </div>
-      </button>
-
       {/* 浮動商人專賣按鈕 */}
       <button
         onClick={() => openMerchantShopModal()}
-        className="fixed bottom-[184px] sm:bottom-[240px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-stone-600 hover:bg-stone-700 dark:bg-stone-700 dark:hover:bg-stone-800 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        className="fixed bottom-[128px] sm:bottom-[168px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-stone-600 hover:bg-stone-700 dark:bg-stone-700 dark:hover:bg-stone-800 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('merchant.button')}
       >
         <div className="flex items-center gap-2">
@@ -357,7 +310,7 @@ export const ModalManager = memo(function ModalManager({
       {/* 浮動遊戲指令按鈕 */}
       <button
         onClick={() => setIsGameCommandsOpen(true)}
-        className="fixed bottom-[128px] sm:bottom-[168px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        className="fixed bottom-[72px] sm:bottom-[96px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('commands.button')}
       >
         <div className="flex items-center gap-2">
@@ -376,7 +329,7 @@ export const ModalManager = memo(function ModalManager({
       {/* 浮動命中率計算器按鈕 */}
       <button
         onClick={() => openAccuracyCalculator()}
-        className="fixed bottom-[72px] sm:bottom-[96px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        className="fixed bottom-4 sm:bottom-6 left-4 sm:left-6 z-40 p-3 sm:p-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label={t('accuracy.button')}
       >
         <div className="flex items-center gap-2">
