@@ -4,7 +4,7 @@
   "chineseMobName": "小幽靈",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 26,
+  "totalDrops": 24,
   "drops": [
     {
       "itemId": 4000035,
@@ -128,17 +128,6 @@
       "enabled": true
     },
     {
-      "itemId": 2040707,
-      "itemName": "Scroll for Shoes for Mobility 60%",
-      "chineseItemName": "鞋子速度卷軸60%",
-      "chance": 0.075,
-      "displayChance": "0.075%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2040706,
       "itemName": "Scroll for Shoes for Mobility 100%",
       "chineseItemName": "鞋子速度卷軸100%",
@@ -258,17 +247,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2040708,
-      "itemName": "Scroll for Shoes for Mobility 10%",
-      "chineseItemName": "鞋子速度卷軸10%",
-      "chance": 0.03,
-      "displayChance": "0.030%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 2040002,

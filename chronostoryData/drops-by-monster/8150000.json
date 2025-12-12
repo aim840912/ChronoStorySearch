@@ -4,7 +4,7 @@
   "chineseMobName": "地獄巴洛古",
   "isBoss": true,
   "inGame": true,
-  "totalDrops": 38,
+  "totalDrops": 37,
   "drops": [
     {
       "itemId": 0,
@@ -49,17 +49,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2040002,
-      "itemName": "Scroll for Helmet for Defense 10%",
-      "chineseItemName": "頭盔防禦卷軸10%",
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 2040029,

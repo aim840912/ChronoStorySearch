@@ -4,7 +4,7 @@
   "chineseMobName": "長槍牛魔王",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 35,
+  "totalDrops": 34,
   "drops": [
     {
       "itemId": 4000046,
@@ -71,17 +71,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 4001112,
-      "itemName": "[Storybook] Indecipherable Book",
-      "chineseItemName": "無法閱讀的書",
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 1002284,

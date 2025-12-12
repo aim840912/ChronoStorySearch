@@ -2,7 +2,7 @@
   "itemId": 2040901,
   "itemName": "Scroll for Shield for Defense 60%",
   "chineseItemName": "盾牌防禦卷軸60%",
-  "totalMonsters": 11,
+  "totalMonsters": 10,
   "monsters": [
     {
       "mobId": 3220000,
@@ -30,17 +30,6 @@
       "mobId": 6130101,
       "mobName": "Mushmom",
       "chineseMobName": "蘑菇王",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 8220001,
-      "mobName": "Snowman",
-      "chineseMobName": "雪毛怪人",
       "isBoss": true,
       "inGame": true,
       "chance": 0.3,
