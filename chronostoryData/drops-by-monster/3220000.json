@@ -4,7 +4,7 @@
   "chineseMobName": "樹妖王",
   "isBoss": true,
   "inGame": true,
-  "totalDrops": 58,
+  "totalDrops": 55,
   "drops": [
     {
       "itemId": 4000003,
@@ -249,17 +249,6 @@
       "enabled": true
     },
     {
-      "itemId": 2041045,
-      "itemName": "Scroll for Cape for Defense 15%",
-      "chineseItemName": "披風防禦卷軸15%",
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 4,
-      "questId": 0,
-      "enabled": true
-    },
-    {
       "itemId": 2044201,
       "itemName": "Scroll for Two-Handed BW for ATT 60%",
       "chineseItemName": "雙手棍攻擊卷軸60%",
@@ -469,17 +458,6 @@
       "enabled": false
     },
     {
-      "itemId": 2041004,
-      "itemName": "Scroll for Cape for Defense 60%",
-      "chineseItemName": "披風防禦卷軸60%",
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2040402,
       "itemName": "Scroll for Topwear for Defense 10%",
       "chineseItemName": "上衣防禦卷軸10%",
@@ -538,17 +516,6 @@
       "itemId": 2040901,
       "itemName": "Scroll for Shield for Defense 60%",
       "chineseItemName": "盾牌防禦卷軸60%",
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 2041004,
-      "itemName": "Scroll for Cape for Defense 60%",
-      "chineseItemName": "披風防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,

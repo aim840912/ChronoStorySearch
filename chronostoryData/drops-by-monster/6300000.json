@@ -4,7 +4,7 @@
   "chineseMobName": "雪吉拉",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 34,
+  "totalDrops": 33,
   "drops": [
     {
       "itemId": 4000049,
@@ -93,17 +93,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 4005004,
-      "itemName": "Dark Crystal",
-      "chineseItemName": "黑暗水晶",
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 1002022,

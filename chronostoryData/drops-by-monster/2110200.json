@@ -4,7 +4,7 @@
   "chineseMobName": "刺菇菇",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 32,
+  "totalDrops": 31,
   "drops": [
     {
       "itemId": 4000015,
@@ -181,17 +181,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2041028,
-      "itemName": "Dark Scroll for Cape for Defense 70%",
-      "chineseItemName": "披風防禦力卷軸70%",
-      "chance": 0.075,
-      "displayChance": "0.075%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 2040706,

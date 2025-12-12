@@ -4,7 +4,7 @@
   "chineseMobName": "妖魔隊長",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 34,
+  "totalDrops": 33,
   "drops": [
     {
       "itemId": 4000115,
@@ -203,17 +203,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2040030,
-      "itemName": "Dark Scroll for Helmet for DEX 30%",
-      "chineseItemName": "頭盔敏捷詛咒卷軸30%",
-      "chance": 0.075,
-      "displayChance": "0.075%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 2044101,

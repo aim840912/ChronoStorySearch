@@ -4,7 +4,7 @@
   "chineseMobName": "食人花",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 26,
+  "totalDrops": 25,
   "drops": [
     {
       "itemId": 4000058,
@@ -192,17 +192,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2041045,
-      "itemName": "Scroll for Cape for Defense 15%",
-      "chineseItemName": "披風防禦卷軸15%",
-      "chance": 0.075,
-      "displayChance": "0.075%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 2044501,

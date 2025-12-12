@@ -4,7 +4,7 @@
   "chineseMobName": "蘑菇王",
   "isBoss": true,
   "inGame": true,
-  "totalDrops": 31,
+  "totalDrops": 28,
   "drops": [
     {
       "itemId": 4000040,
@@ -73,17 +73,6 @@
       "enabled": true
     },
     {
-      "itemId": 2041045,
-      "itemName": "Scroll for Cape for Defense 15%",
-      "chineseItemName": "披風防禦卷軸15%",
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 4,
-      "questId": 0,
-      "enabled": true
-    },
-    {
       "itemId": 1092012,
       "itemName": "Steel Tower Shield",
       "chineseItemName": "鋼鐵方盾",
@@ -137,17 +126,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": false
-    },
-    {
-      "itemId": 2040001,
-      "itemName": "Scroll for Helmet for Defense 60%",
-      "chineseItemName": "頭盔防禦卷軸60%",
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
     },
     {
       "itemId": 2040024,
@@ -307,17 +285,6 @@
       "itemId": 2040901,
       "itemName": "Scroll for Shield for Defense 60%",
       "chineseItemName": "盾牌防禦卷軸60%",
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 2041004,
-      "itemName": "Scroll for Cape for Defense 60%",
-      "chineseItemName": "披風防禦卷軸60%",
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,

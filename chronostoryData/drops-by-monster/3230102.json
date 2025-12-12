@@ -4,7 +4,7 @@
   "chineseMobName": "紅螃蟹",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 37,
+  "totalDrops": 36,
   "drops": [
     {
       "itemId": 4000043,
@@ -357,17 +357,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2040708,
-      "itemName": "Scroll for Shoes for Mobility 10%",
-      "chineseItemName": "鞋子速度卷軸10%",
-      "chance": 0.03,
-      "displayChance": "0.030%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 2040024,

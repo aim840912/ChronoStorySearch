@@ -4,7 +4,7 @@
   "chineseMobName": "幼紅獨角獅",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 37,
+  "totalDrops": 36,
   "drops": [
     {
       "itemId": 4000073,
@@ -397,17 +397,6 @@
       "chineseItemName": "拳套攻擊卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 4001006,
-      "itemName": "Flaming Feather",
-      "chineseItemName": "火焰羽毛",
-      "chance": 0.7,
-      "displayChance": "0.70%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,

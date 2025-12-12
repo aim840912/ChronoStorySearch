@@ -4,7 +4,7 @@
   "chineseMobName": "黑龍",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 39,
+  "totalDrops": 38,
   "drops": [
     {
       "itemId": 4000186,
@@ -417,17 +417,6 @@
       "itemId": 2040613,
       "itemName": "Scroll for Bottomwear for DEX 60%",
       "chineseItemName": "褲裙敏捷卷軸60%",
-      "chance": 0.03,
-      "displayChance": "0.030%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 2041004,
-      "itemName": "Scroll for Cape for Defense 60%",
-      "chineseItemName": "披風防禦卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

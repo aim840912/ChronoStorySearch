@@ -4,7 +4,7 @@
   "chineseMobName": "赤龍",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 46,
+  "totalDrops": 45,
   "drops": [
     {
       "itemId": 4000014,
@@ -496,17 +496,6 @@
       "chineseItemName": "耳環幸運卷軸100%",
       "chance": 0.03,
       "displayChance": "0.030%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 4001006,
-      "itemName": "Flaming Feather",
-      "chineseItemName": "火焰羽毛",
-      "chance": 0.7,
-      "displayChance": "0.70%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,

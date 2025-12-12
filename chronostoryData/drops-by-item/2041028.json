@@ -2,7 +2,7 @@
   "itemId": 2041028,
   "itemName": "Dark Scroll for Cape for Defense 70%",
   "chineseItemName": "披風防禦力卷軸70%",
-  "totalMonsters": 7,
+  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 5220002,
@@ -25,17 +25,6 @@
       "displayChance": "1.0%",
       "minQty": 1,
       "maxQty": 4
-    },
-    {
-      "mobId": 2110200,
-      "mobName": "Horny Mushroom",
-      "chineseMobName": "刺菇菇",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.075,
-      "displayChance": "0.075%",
-      "minQty": 1,
-      "maxQty": 1
     },
     {
       "mobId": 2300100,
