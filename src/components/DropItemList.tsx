@@ -2,11 +2,11 @@
  * 掉落物品列表元件（表格視圖）
  *
  * 功能：
- * - 表格式佈局，適合快速掃描和比較
+ * - 桌面版：表格式佈局，適合快速掃描和比較
+ * - 手機版：垂直堆疊佈局，更適合小螢幕
  * - 支援點擊查看物品詳情
  * - 支援最愛功能
- * - 響應式設計（手機版簡化欄位）
- * - 點擊按鈕展開顯示物品屬性
+ * - 響應式設計
  */
 
 'use client'
@@ -34,12 +34,31 @@ export function DropItemList({
   onToggleFavorite,
   onItemClick,
 }: DropItemListProps) {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
 
   return (
-    <table className="w-full border-collapse">
-      <thead className="sticky top-12 z-[5] bg-gray-100 dark:bg-gray-700">
+    <>
+      {/* 手機版：垂直堆疊佈局 */}
+      <div className="sm:hidden divide-y divide-gray-200 dark:divide-gray-700">
+        {drops.map((drop, index) => (
+          <DropItemListMobileRow
+            key={drop.itemId}
+            drop={drop}
+            itemAttributesMap={itemAttributesMap}
+            isFavorite={isItemFavorite(drop.itemId)}
+            onToggleFavorite={onToggleFavorite}
+            onItemClick={onItemClick}
+            isEvenRow={index % 2 === 0}
+            language={language}
+            t={t}
+          />
+        ))}
+      </div>
+
+      {/* 桌面版：表格佈局 */}
+      <table className="w-full border-collapse hidden sm:table">
+        <thead className="sticky top-12 z-[5] bg-gray-100 dark:bg-gray-700">
           <tr className="bg-gray-100 dark:bg-gray-700 border-b-2 border-gray-200 dark:border-gray-600">
             <th className="text-left p-3 text-sm font-semibold text-gray-700 dark:text-gray-200">
               {/* 最愛欄位（圖示） */}
@@ -58,7 +77,7 @@ export function DropItemList({
             <th className="text-center p-3 text-sm font-semibold text-gray-700 dark:text-gray-200">
               {t('card.dropChance') || '掉落率'}
             </th>
-            <th className="text-center p-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hidden sm:table-cell">
+            <th className="text-center p-3 text-sm font-semibold text-gray-700 dark:text-gray-200">
               {t('card.quantity') || '數量/等級'}
             </th>
             {isDev && (
@@ -76,7 +95,7 @@ export function DropItemList({
         </thead>
         <tbody>
           {drops.map((drop, index) => (
-            <DropItemListRow
+            <DropItemListDesktopRow
               key={drop.itemId}
               drop={drop}
               itemAttributesMap={itemAttributesMap}
@@ -89,14 +108,116 @@ export function DropItemList({
           ))}
         </tbody>
       </table>
+    </>
   )
 }
 
 // ============================================
-// 列表行元件（單一物品）
+// 手機版列表項目元件
 // ============================================
 
-interface DropItemListRowProps {
+interface DropItemListMobileRowProps {
+  drop: DropItem
+  itemAttributesMap: Map<number, ItemAttributesEssential>
+  isFavorite: boolean
+  onToggleFavorite: (itemId: number, itemName: string) => void
+  onItemClick: (itemId: number, itemName: string) => void
+  isEvenRow: boolean
+  language: string
+  t: (key: string) => string
+}
+
+function DropItemListMobileRow({
+  drop,
+  isFavorite,
+  onToggleFavorite,
+  onItemClick,
+  isEvenRow,
+  language,
+  t,
+}: DropItemListMobileRowProps) {
+  // 手機版用 2 位小數節省空間
+  const chancePercent = drop.chance.toFixed(2)
+
+  // 獲取顯示名稱
+  const displayItemName = getItemDisplayName(drop.itemName, drop.chineseItemName, language)
+
+  // 物品圖示 URL（傳入 itemName 以支援卷軸圖示）
+  const itemIconUrl = getItemImageUrl(drop.itemId, { itemName: drop.itemName })
+
+  return (
+    <div
+      onClick={() => onItemClick(drop.itemId, displayItemName)}
+      className={`
+        flex items-center gap-3 p-3 cursor-pointer
+        transition-all duration-200
+        hover:bg-blue-50 dark:hover:bg-blue-900/20
+        active:bg-blue-100 dark:active:bg-blue-900/30
+        ${isEvenRow ? 'bg-white dark:bg-gray-800' : 'bg-gray-50 dark:bg-gray-800/50'}
+      `}
+    >
+      {/* 最愛按鈕 */}
+      <button
+        onClick={(e) => {
+          e.stopPropagation()
+          onToggleFavorite(drop.itemId, displayItemName)
+        }}
+        className={`
+          p-2 rounded-full transition-all duration-200 flex-shrink-0
+          hover:scale-110 active:scale-95
+          ${
+            isFavorite
+              ? 'bg-red-500 hover:bg-red-600 text-white'
+              : 'bg-white dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-400 dark:text-gray-500 border border-gray-300 dark:border-gray-600'
+          }
+        `}
+        aria-label={isFavorite ? t('card.unfavorite') : t('card.favorite')}
+      >
+        <svg
+          className="w-4 h-4"
+          fill={isFavorite ? 'currentColor' : 'none'}
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+          />
+        </svg>
+      </button>
+
+      {/* 物品圖示 */}
+      <img
+        src={itemIconUrl}
+        alt={displayItemName}
+        width={40}
+        height={40}
+        className="object-contain flex-shrink-0"
+        loading="lazy"
+      />
+
+      {/* 物品名稱 - 允許換行最多 2 行 */}
+      <div className="flex-1 min-w-0">
+        <div className="font-semibold text-gray-900 dark:text-white text-sm leading-tight line-clamp-2">
+          {displayItemName}
+        </div>
+      </div>
+
+      {/* 掉落率 - 使用較小字體和 padding 節省空間 */}
+      <span className="flex-shrink-0 px-1.5 py-0.5 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 font-semibold text-xs">
+        {chancePercent}%
+      </span>
+    </div>
+  )
+}
+
+// ============================================
+// 桌面版列表行元件（單一物品）
+// ============================================
+
+interface DropItemListDesktopRowProps {
   drop: DropItem
   itemAttributesMap: Map<number, ItemAttributesEssential>
   isFavorite: boolean
@@ -106,7 +227,7 @@ interface DropItemListRowProps {
   isDev: boolean
 }
 
-function DropItemListRow({
+function DropItemListDesktopRow({
   drop,
   itemAttributesMap,
   isFavorite,
@@ -114,7 +235,7 @@ function DropItemListRow({
   onItemClick,
   isEvenRow,
   isDev,
-}: DropItemListRowProps) {
+}: DropItemListDesktopRowProps) {
   const { language, t } = useLanguage()
   const [isExpanded, setIsExpanded] = useState(false)
 
@@ -223,8 +344,8 @@ function DropItemListRow({
           </span>
         </td>
 
-        {/* 數量/等級（手機版隱藏） */}
-        <td className="p-3 text-center hidden sm:table-cell">
+        {/* 數量/等級 */}
+        <td className="p-3 text-center">
           <span className="inline-block px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 font-semibold text-sm">
             {value}
           </span>

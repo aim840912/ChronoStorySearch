@@ -214,7 +214,7 @@ export function MonsterModal({
               className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
                 mobileTab === 'info'
                   ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 bg-blue-50 dark:bg-blue-900/20'
-                  : 'text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
               }`}
             >
               {t('monster.info') || '怪物資訊'}
@@ -224,7 +224,7 @@ export function MonsterModal({
               className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
                 mobileTab === 'drops'
                   ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 bg-blue-50 dark:bg-blue-900/20'
-                  : 'text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50'
               }`}
             >
               {t('monster.drops') || '掉落物品'} ({filteredDrops.length})
