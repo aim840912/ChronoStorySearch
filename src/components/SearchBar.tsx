@@ -1,7 +1,7 @@
 'use client'
 
 import { useLanguage } from '@/contexts/LanguageContext'
-import { SearchInput, SuggestionList, FilterTabs, ActionButtons, GachaDropdown } from '@/components/search'
+import { SearchInput, SuggestionList, FilterTabs, ActionButtons, GachaDropdown, MerchantShopDropdown } from '@/components/search'
 import type { RefObject, KeyboardEvent } from 'react'
 import type { SuggestionItem, SearchTypeFilter, FilterMode, AdvancedFilterOptions } from '@/types'
 
@@ -35,6 +35,11 @@ interface SearchBarProps {
   selectedGachaMachineId?: number | null
   onGachaSelect?: (machineId: number | null) => void
   onGachaClose?: () => void
+  // 商人商店相關
+  isMerchantMode?: boolean
+  selectedMerchantMapId?: string | null
+  onMerchantSelect?: (mapId: string | null) => void
+  onMerchantClose?: () => void
 }
 
 /**
@@ -68,6 +73,10 @@ export function SearchBar({
   selectedGachaMachineId = null,
   onGachaSelect,
   onGachaClose,
+  isMerchantMode = false,
+  selectedMerchantMapId = null,
+  onMerchantSelect,
+  onMerchantClose,
 }: SearchBarProps) {
   const { t } = useLanguage()
 
@@ -172,6 +181,7 @@ export function SearchBar({
             favoriteMonsterCount={favoriteMonsterCount}
             favoriteItemCount={favoriteItemCount}
             isGachaMode={isGachaMode}
+            isMerchantMode={isMerchantMode}
           />
 
           {/* 進階篩選按鈕 - 只在 554-767px 顯示（緊接 FilterTabs） */}
@@ -193,6 +203,15 @@ export function SearchBar({
               selectedMachineId={selectedGachaMachineId ?? null}
               onSelect={onGachaSelect}
               onClose={onGachaClose}
+            />
+          )}
+
+          {onMerchantSelect && onMerchantClose && (
+            <MerchantShopDropdown
+              isMerchantMode={isMerchantMode}
+              selectedMapId={selectedMerchantMapId ?? null}
+              onSelect={onMerchantSelect}
+              onClose={onMerchantClose}
             />
           )}
         </div>

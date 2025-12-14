@@ -424,6 +424,7 @@
   "commands.mutesmegasASIA2": "Mute ASIA2 server megaphones",
   "commands.mswavatar": "Allows you to wear your MSW Avatar (client-side only)",
   "merchant.button": "Merchant Shop",
+  "merchant.viewAll": "All Maps",
   "merchant.title": "Merchant Shop - 100% Drops",
   "merchant.description": "These scrolls have 100% drop rate at specific maps",
   "merchant.mapTitle": "Map",

@@ -12,6 +12,8 @@ interface FilterTabsProps {
   favoriteItemCount: number
   /** 是否處於轉蛋模式（轉蛋模式時所有按鈕取消選中） */
   isGachaMode?: boolean
+  /** 是否處於商人模式（商人模式時所有按鈕取消選中） */
+  isMerchantMode?: boolean
 }
 
 /**
@@ -26,6 +28,7 @@ export function FilterTabs({
   favoriteMonsterCount,
   favoriteItemCount,
   isGachaMode = false,
+  isMerchantMode = false,
 }: FilterTabsProps) {
   const { t } = useLanguage()
 
@@ -40,7 +43,7 @@ export function FilterTabs({
       <button
         onClick={() => handleTypeChange('all')}
         className={`px-2 min-[400px]:px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
-          searchType === 'all' && filterMode === 'all' && !isGachaMode
+          searchType === 'all' && filterMode === 'all' && !isGachaMode && !isMerchantMode
             ? 'bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 shadow-sm'
             : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-700/50'
         }`}
@@ -50,7 +53,7 @@ export function FilterTabs({
       <button
         onClick={() => handleTypeChange('monster')}
         className={`px-2 min-[400px]:px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
-          searchType === 'monster' && filterMode === 'all' && !isGachaMode
+          searchType === 'monster' && filterMode === 'all' && !isGachaMode && !isMerchantMode
             ? 'bg-white dark:bg-gray-700 text-red-600 dark:text-red-400 shadow-sm'
             : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-700/50'
         }`}
@@ -61,7 +64,7 @@ export function FilterTabs({
       <button
         onClick={() => handleTypeChange('item')}
         className={`px-2 min-[400px]:px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
-          searchType === 'item' && filterMode === 'all' && !isGachaMode
+          searchType === 'item' && filterMode === 'all' && !isGachaMode && !isMerchantMode
             ? 'bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 shadow-sm'
             : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-700/50'
         }`}
@@ -75,7 +78,7 @@ export function FilterTabs({
       <button
         onClick={() => onFilterChange('favorite-monsters')}
         className={`px-2 min-[400px]:px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center gap-1.5 ${
-          filterMode === 'favorite-monsters' && !isGachaMode
+          filterMode === 'favorite-monsters' && !isGachaMode && !isMerchantMode
             ? 'bg-white dark:bg-gray-700 text-red-600 dark:text-red-400 shadow-sm'
             : favoriteMonsterCount > 0
             ? 'text-red-500 dark:text-red-400 hover:text-red-600 dark:hover:text-red-300 hover:bg-white/50 dark:hover:bg-gray-700/50'
@@ -94,7 +97,7 @@ export function FilterTabs({
       <button
         onClick={() => onFilterChange('favorite-items')}
         className={`px-2 min-[400px]:px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center gap-1.5 ${
-          filterMode === 'favorite-items' && !isGachaMode
+          filterMode === 'favorite-items' && !isGachaMode && !isMerchantMode
             ? 'bg-white dark:bg-gray-700 text-green-600 dark:text-green-400 shadow-sm'
             : favoriteItemCount > 0
             ? 'text-green-500 dark:text-green-400 hover:text-green-600 dark:hover:text-green-300 hover:bg-white/50 dark:hover:bg-gray-700/50'

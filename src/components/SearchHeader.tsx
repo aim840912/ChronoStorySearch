@@ -43,6 +43,12 @@ interface SearchHeaderProps {
   selectedGachaMachineId?: number | null
   onGachaSelect?: (machineId: number | null) => void
   onGachaClose?: () => void
+
+  // 商人商店相關
+  isMerchantMode?: boolean
+  selectedMerchantMapId?: string | null
+  onMerchantSelect?: (mapId: string | null) => void
+  onMerchantClose?: () => void
 }
 
 /**
@@ -78,6 +84,10 @@ export const SearchHeader = memo(function SearchHeader({
   selectedGachaMachineId = null,
   onGachaSelect,
   onGachaClose,
+  isMerchantMode = false,
+  selectedMerchantMapId = null,
+  onMerchantSelect,
+  onMerchantClose,
 }: SearchHeaderProps) {
   const { t } = useLanguage()
 
@@ -93,8 +103,17 @@ export const SearchHeader = memo(function SearchHeader({
           />
           <span className="truncate">{t('app.title')}</span>
         </h1>
-        {/* 主題、語言、圖片格式切換 */}
-        <div className="flex gap-1.5 sm:gap-2 flex-shrink-0">
+        {/* 主題、語言、圖片格式切換 - 大於 460px 時顯示在標題旁 */}
+        <div className="hidden min-[460px]:flex gap-1.5 sm:gap-2 flex-shrink-0">
+          <ImageFormatToggle />
+          <ThemeToggle />
+          <LanguageToggle />
+        </div>
+      </div>
+
+      {/* 主題、語言、圖片格式切換 - 小於 460px 時顯示在搜尋欄上方 */}
+      <div className="flex min-[460px]:hidden px-2 mb-1 max-w-7xl mx-auto">
+        <div className="grid grid-cols-3 gap-1 w-full [&>button]:w-full [&>button]:justify-center">
           <ImageFormatToggle />
           <ThemeToggle />
           <LanguageToggle />
@@ -129,6 +148,10 @@ export const SearchHeader = memo(function SearchHeader({
             selectedGachaMachineId={selectedGachaMachineId}
             onGachaSelect={onGachaSelect}
             onGachaClose={onGachaClose}
+            isMerchantMode={isMerchantMode}
+            selectedMerchantMapId={selectedMerchantMapId}
+            onMerchantSelect={onMerchantSelect}
+            onMerchantClose={onMerchantClose}
           />
       </div>
 
