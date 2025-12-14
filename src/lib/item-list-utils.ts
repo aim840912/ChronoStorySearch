@@ -22,6 +22,7 @@ import {
   matchesJobClassFilter,
   matchesLevelRangeFilter,
   matchesAttackSpeedFilter,
+  matchesStatFilter,
 } from '@/lib/filter-utils'
 import { findGachaItemEssential } from '@/lib/gacha-utils'
 import { getItemNames } from '@/lib/cache/items-cache'
@@ -263,6 +264,13 @@ export function applyItemFilters(
       (advancedFilter.attackSpeedRange.min !== null || advancedFilter.attackSpeedRange.max !== null)) {
     filtered = filtered.filter(item =>
       matchesAttackSpeedFilter(item.itemId, extendedAttributesMap, advancedFilter)
+    )
+  }
+
+  // 主屬性篩選
+  if (advancedFilter.enabled && advancedFilter.statBoosts.length > 0) {
+    filtered = filtered.filter(item =>
+      matchesStatFilter(item.itemId, extendedAttributesMap, advancedFilter)
     )
   }
 

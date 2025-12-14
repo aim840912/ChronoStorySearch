@@ -16,7 +16,9 @@ type FilterableItem = ItemAttributes | ItemAttributesEssential
 export const EQUIPMENT_CATEGORY_MAP: Record<string, ItemCategoryGroup> = {
   // 穿著類
   'Hat': 'hat',
+  'Helmet': 'hat',       // 卷軸使用此格式
   'Top': 'top',
+  'Topwear': 'top',      // 卷軸使用此格式
   'Bottom': 'bottom',
   'Bottomwear': 'bottom',
   'Overall': 'overall',
@@ -79,9 +81,11 @@ const SUB_TYPE_FALLBACK_MAP: Record<string, ItemCategoryGroup> = {
  * 分組映射：每個分組包含哪些類別
  */
 export const CATEGORY_GROUP_MAP: Record<CategoryGroupType, ItemCategoryGroup[]> = {
-  apparel: ['hat', 'top', 'bottom', 'overall', 'shoes', 'gloves', 'cape'],
+  // 穿著類（含耳環、飾品）
+  apparel: ['hat', 'top', 'bottom', 'overall', 'shoes', 'gloves', 'cape', 'earring', 'accessory'],
+  // 武器防具類
   weapon: ['oneHandedSword', 'twoHandedSword', 'oneHandedAxe', 'twoHandedAxe', 'oneHandedBW', 'twoHandedBW', 'polearm', 'spear', 'dagger', 'claw', 'bow', 'crossbow', 'wand', 'staff', 'knuckle', 'gun', 'shield'],
-  accessory: ['earring', 'accessory'],
+  // 消耗品類
   consumable: ['scroll', 'potion', 'projectile'],
 }
 

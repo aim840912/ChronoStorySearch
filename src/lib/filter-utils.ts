@@ -10,6 +10,7 @@ import type {
   ItemAttributesEssential,
   MobInfo,
   ElementType,
+  StatType,
 } from '@/types'
 import { isItemInAnyCategoryGroup, EQUIPMENT_CATEGORY_MAP } from './item-categories'
 
@@ -255,6 +256,47 @@ export function matchesAttackSpeedFilter(
 }
 
 /**
+ * 判斷物品是否符合主屬性篩選（增加屬性）
+ * @param itemId 物品 ID
+ * @param itemAttributes 物品屬性 Map
+ * @param filter 進階篩選選項
+ * @returns 是否符合篩選
+ */
+export function matchesStatFilter(
+  itemId: number | null | undefined,
+  itemAttributes: Map<number, FilterableItem>,
+  filter: AdvancedFilterOptions
+): boolean {
+  // 未啟用篩選或未選擇任何主屬性
+  if (!filter.enabled || filter.statBoosts.length === 0) {
+    return true
+  }
+
+  // 如果 itemId 為 null，讓記錄通過（可能是怪物資料）
+  if (itemId === null || itemId === undefined) {
+    return true
+  }
+
+  // 取得物品屬性
+  const item = itemAttributes.get(itemId)
+  if (!item) {
+    return false
+  }
+
+  // 檢查是否為 Essential 格式（有 inc_str 等欄位）
+  if (!('inc_str' in item)) {
+    return false
+  }
+
+  // 使用 AND 邏輯：必須同時增加所有選中的屬性
+  return filter.statBoosts.every((stat: StatType) => {
+    const key = `inc_${stat}` as keyof typeof item
+    const value = item[key]
+    return typeof value === 'number' && value > 0
+  })
+}
+
+/**
  * 判斷怪物是否符合等級範圍篩選
  * @param mobId 怪物 ID
  * @param mobLevelMap 怪物等級 Map
@@ -355,8 +397,11 @@ export function applyAdvancedFilter(
     // 檢查等級範圍篩選
     const matchesLevelRange = matchesLevelRangeFilter(drop.itemId, itemAttributes, filter)
 
+    // 檢查主屬性篩選
+    const matchesStat = matchesStatFilter(drop.itemId, itemAttributes, filter)
+
     // 使用 AND 邏輯：必須同時符合所有條件
-    return matchesDataType && matchesCategory && matchesJobClass && matchesLevelRange
+    return matchesDataType && matchesCategory && matchesJobClass && matchesLevelRange && matchesStat
   })
 }
 
@@ -430,6 +475,7 @@ export function getDefaultAdvancedFilter(): AdvancedFilterOptions {
     isUndead: false,
     levelRange: { min: null, max: null },
     attackSpeedRange: { min: null, max: null },
+    statBoosts: [],
     enabled: false,
   }
 }

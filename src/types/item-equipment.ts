@@ -124,6 +124,11 @@ export interface ItemAttributesEssential {
   } | null
   scroll_category: string | null
   attack_speed: number | null  // 攻擊速度 (2=最快, 9=最慢)
+  // 增加屬性（用於主屬性篩選）
+  inc_str: number
+  inc_dex: number
+  inc_int: number
+  inc_luk: number
 }
 
 // Detailed 資料類型（用於 Modal 詳細顯示）
