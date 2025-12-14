@@ -12,7 +12,7 @@
 'use client'
 
 import { memo, useState, useMemo } from 'react'
-import type { DropItem } from '@/types'
+import type { DropItem, Language } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { getMonsterDisplayName } from '@/lib/display-name'
@@ -161,7 +161,7 @@ interface MonsterDropListMobileRowProps {
   onToggleFavorite: (mobId: number, mobName: string) => void
   onMonsterClick: (mobId: number, mobName: string) => void
   isEvenRow: boolean
-  language: string
+  language: Language
   t: (key: string) => string
 }
 
