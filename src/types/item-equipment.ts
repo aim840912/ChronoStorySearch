@@ -123,6 +123,7 @@ export interface ItemAttributesEssential {
     pirate: boolean | null
   } | null
   scroll_category: string | null
+  attack_speed: number | null  // 攻擊速度 (2=最快, 9=最慢)
 }
 
 // Detailed 資料類型（用於 Modal 詳細顯示）

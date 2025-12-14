@@ -235,6 +235,7 @@ export function convertOrganizedToEssential(
     equipment_category: organized.typeInfo.subCategory || organized.typeInfo.category || null,
     equipment_classes,
     scroll_category: null,
+    attack_speed: organized.metaInfo.attackSpeed ?? null,  // 攻擊速度 (2=最快, 9=最慢)
   }
 }
 

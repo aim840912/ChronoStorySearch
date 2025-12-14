@@ -21,6 +21,7 @@ import {
   matchesItemCategoryFilter,
   matchesJobClassFilter,
   matchesLevelRangeFilter,
+  matchesAttackSpeedFilter,
 } from '@/lib/filter-utils'
 import { findGachaItemEssential } from '@/lib/gacha-utils'
 import { getItemNames } from '@/lib/cache/items-cache'
@@ -254,6 +255,14 @@ export function applyItemFilters(
       (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null)) {
     filtered = filtered.filter(item =>
       matchesLevelRangeFilter(item.itemId, extendedAttributesMap, advancedFilter)
+    )
+  }
+
+  // 攻擊速度範圍篩選
+  if (advancedFilter.enabled &&
+      (advancedFilter.attackSpeedRange.min !== null || advancedFilter.attackSpeedRange.max !== null)) {
+    filtered = filtered.filter(item =>
+      matchesAttackSpeedFilter(item.itemId, extendedAttributesMap, advancedFilter)
     )
   }
 

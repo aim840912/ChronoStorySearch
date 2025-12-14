@@ -233,7 +233,9 @@ export function useFilterLogic({
         advancedFilter.itemCategories.length > 0 ||
         advancedFilter.jobClasses.length > 0 ||
         advancedFilter.levelRange.min !== null ||
-        advancedFilter.levelRange.max !== null
+        advancedFilter.levelRange.max !== null ||
+        advancedFilter.attackSpeedRange.min !== null ||
+        advancedFilter.attackSpeedRange.max !== null
       ))
 
     if (shouldIncludeAllGacha) {

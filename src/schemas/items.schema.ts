@@ -84,6 +84,7 @@ export const ItemAttributesEssentialSchema = z.object({
   equipment_category: z.string().nullable().optional(),
   equipment_classes: z.record(z.string(), z.boolean()).nullable().optional(),
   scroll_category: z.string().nullable().optional(),
+  attack_speed: z.number().int().nullable().optional(),  // 攻擊速度 (2=最快, 9=最慢)
 })
 
 /**

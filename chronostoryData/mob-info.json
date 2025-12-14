@@ -2336,7 +2336,7 @@
       "accuracy": 210,
       "evasion": 31,
       "level": 64,
-      "exp": 1400,
+      "exp": 500,
       "physicalDefense": 220,
       "magicDefense": 240,
       "fire_weakness": null,

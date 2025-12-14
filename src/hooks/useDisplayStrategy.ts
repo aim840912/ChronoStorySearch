@@ -144,7 +144,9 @@ export function useDisplayStrategy({
       const hasItemSpecificFilter =
         advancedFilter.itemCategories.length > 0 ||
         // 在 'all' 模式下（能執行到這裡表示 searchType === 'all'），等級範圍視為物品專屬篩選
-        (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null)
+        (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null) ||
+        // 攻擊速度僅適用於武器物品
+        (advancedFilter.attackSpeedRange.min !== null || advancedFilter.attackSpeedRange.max !== null)
 
       // 如果有怪物專屬篩選，則顯示怪物（即使也有物品篩選）
       if (hasMonsterSpecificFilter) {

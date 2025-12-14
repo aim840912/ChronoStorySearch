@@ -94,6 +94,13 @@ export function SearchBar({
       labels.push(`Lv ${min}-${max}`)
     }
 
+    // 攻擊速度範圍
+    if (advancedFilter.attackSpeedRange.min !== null || advancedFilter.attackSpeedRange.max !== null) {
+      const min = advancedFilter.attackSpeedRange.min ?? 2
+      const max = advancedFilter.attackSpeedRange.max ?? 9
+      labels.push(`${t('filter.attackSpeed')}: ${min}-${max}`)
+    }
+
     // 限制顯示數量（最多3個），其餘用「...」表示
     if (labels.length === 0) {
       return ''

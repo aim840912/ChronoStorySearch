@@ -63,6 +63,7 @@ export default function Home() {
     advancedFilter.isBoss ? 1 : 0,
     advancedFilter.isUndead ? 1 : 0,
     (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null) ? 1 : 0,
+    (advancedFilter.attackSpeedRange.min !== null || advancedFilter.attackSpeedRange.max !== null) ? 1 : 0,
   ].reduce((a, b) => a + b, 0)
 
   // 使用自定義 hooks
