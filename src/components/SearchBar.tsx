@@ -1,7 +1,8 @@
 'use client'
 
 import { useLanguage } from '@/contexts/LanguageContext'
-import { SearchInput, SuggestionList, FilterTabs, ActionButtons, GachaDropdown, MerchantShopDropdown } from '@/components/search'
+import { useWindowHeight } from '@/hooks/useWindowHeight'
+import { SearchInput, SuggestionList, FilterTabs, ActionButtons, GachaDropdown, MerchantShopDropdown, MoreFiltersDropdown } from '@/components/search'
 import type { RefObject, KeyboardEvent } from 'react'
 import type { SuggestionItem, SearchTypeFilter, FilterMode, AdvancedFilterOptions } from '@/types'
 
@@ -79,6 +80,7 @@ export function SearchBar({
   onMerchantClose,
 }: SearchBarProps) {
   const { t } = useLanguage()
+  const { isShortScreen } = useWindowHeight()
 
   // 生成篩選條件摘要
   const getFilterSummary = (): string => {
@@ -120,6 +122,43 @@ export function SearchBar({
     }
   }
 
+  // 生成篩選條件摘要（縮寫版，用於窄視窗）
+  const getAbbreviatedFilterSummary = (): string => {
+    if (!advancedFilter) return ''
+
+    const labels: string[] = []
+
+    // 物品類別 - 取第一個字
+    advancedFilter.itemCategories.forEach(cat => {
+      const fullLabel = t(`filter.itemCategory.${cat}`)
+      labels.push(fullLabel.charAt(0))
+    })
+
+    // 職業 - 取第一個字
+    advancedFilter.jobClasses.forEach(job => {
+      const fullLabel = t(`filter.jobClass.${job}`)
+      labels.push(fullLabel.charAt(0))
+    })
+
+    // 等級範圍 - 簡化為 "L"
+    if (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null) {
+      labels.push('L')
+    }
+
+    // 攻擊速度範圍 - 簡化為 "A"
+    if (advancedFilter.attackSpeedRange.min !== null || advancedFilter.attackSpeedRange.max !== null) {
+      labels.push('A')
+    }
+
+    if (labels.length === 0) {
+      return ''
+    } else if (labels.length <= 3) {
+      return labels.join('、')
+    } else {
+      return labels.slice(0, 3).join('、') + '...'
+    }
+  }
+
   return (
     <div className="max-w-7xl mx-auto mb-6 px-2 sm:px-4">
       {/* 搜尋輸入框行 */}
@@ -151,13 +190,14 @@ export function SearchBar({
               advancedFilterCount={advancedFilterCount}
               onResetAdvancedFilter={onResetAdvancedFilter}
               filterSummary={getFilterSummary()}
+              abbreviatedFilterSummary={getAbbreviatedFilterSummary()}
             />
           </div>
         )}
       </div>
 
-      {/* 進階篩選按鈕 - 只在 <=553px 顯示（獨立一行） */}
-      {onAdvancedFilterToggle && onResetAdvancedFilter && (
+      {/* 進階篩選按鈕 - 只在 <=553px 且非短螢幕時顯示（獨立一行） */}
+      {onAdvancedFilterToggle && onResetAdvancedFilter && !isShortScreen && (
         <div className="block min-[554px]:hidden mb-3">
           <ActionButtons
             isAdvancedFilterExpanded={isAdvancedFilterExpanded}
@@ -165,6 +205,7 @@ export function SearchBar({
             advancedFilterCount={advancedFilterCount}
             onResetAdvancedFilter={onResetAdvancedFilter}
             filterSummary={getFilterSummary()}
+            abbreviatedFilterSummary={getAbbreviatedFilterSummary()}
             fullWidth
           />
         </div>
@@ -173,46 +214,86 @@ export function SearchBar({
       {/* 篩選按鈕行 */}
       {onFilterChange && (
         <div className="flex flex-wrap items-center gap-2">
-          <FilterTabs
-            searchType={searchType}
-            onSearchTypeChange={onSearchTypeChange}
-            filterMode={filterMode}
-            onFilterChange={onFilterChange}
-            favoriteMonsterCount={favoriteMonsterCount}
-            favoriteItemCount={favoriteItemCount}
-            isGachaMode={isGachaMode}
-            isMerchantMode={isMerchantMode}
-          />
-
-          {/* 進階篩選按鈕 - 只在 554-767px 顯示（緊接 FilterTabs） */}
-          {onAdvancedFilterToggle && onResetAdvancedFilter && (
-            <div className="hidden min-[554px]:block md:hidden">
-              <ActionButtons
-                isAdvancedFilterExpanded={isAdvancedFilterExpanded}
-                onAdvancedFilterToggle={onAdvancedFilterToggle}
-                advancedFilterCount={advancedFilterCount}
-                onResetAdvancedFilter={onResetAdvancedFilter}
-                filterSummary={getFilterSummary()}
-              />
+          {/* 短螢幕時顯示 MoreFiltersDropdown，正常高度時顯示完整按鈕 */}
+          {isShortScreen ? (
+            <div className="flex items-center gap-2 w-full">
+              {/* 短螢幕：All 按鈕、進階篩選、清除按鈕同列並佔滿寬度 */}
+              {onGachaSelect && onGachaClose && onMerchantSelect && onMerchantClose && (
+                <MoreFiltersDropdown
+                  searchType={searchType}
+                  onSearchTypeChange={onSearchTypeChange}
+                  filterMode={filterMode}
+                  onFilterChange={onFilterChange}
+                  favoriteMonsterCount={favoriteMonsterCount}
+                  favoriteItemCount={favoriteItemCount}
+                  isGachaMode={isGachaMode}
+                  selectedGachaMachineId={selectedGachaMachineId ?? null}
+                  onGachaSelect={onGachaSelect}
+                  onGachaClose={onGachaClose}
+                  isMerchantMode={isMerchantMode}
+                  selectedMerchantMapId={selectedMerchantMapId ?? null}
+                  onMerchantSelect={onMerchantSelect}
+                  onMerchantClose={onMerchantClose}
+                />
+              )}
+              {onAdvancedFilterToggle && onResetAdvancedFilter && (
+                <ActionButtons
+                  isAdvancedFilterExpanded={isAdvancedFilterExpanded}
+                  onAdvancedFilterToggle={onAdvancedFilterToggle}
+                  advancedFilterCount={advancedFilterCount}
+                  onResetAdvancedFilter={onResetAdvancedFilter}
+                  filterSummary={getFilterSummary()}
+                  abbreviatedFilterSummary={getAbbreviatedFilterSummary()}
+                  fullWidth
+                />
+              )}
             </div>
-          )}
+          ) : (
+            <>
+              {/* 正常高度：顯示完整按鈕 */}
+              <FilterTabs
+                searchType={searchType}
+                onSearchTypeChange={onSearchTypeChange}
+                filterMode={filterMode}
+                onFilterChange={onFilterChange}
+                favoriteMonsterCount={favoriteMonsterCount}
+                favoriteItemCount={favoriteItemCount}
+                isGachaMode={isGachaMode}
+                isMerchantMode={isMerchantMode}
+              />
 
-          {onGachaSelect && onGachaClose && (
-            <GachaDropdown
-              isGachaMode={isGachaMode}
-              selectedMachineId={selectedGachaMachineId ?? null}
-              onSelect={onGachaSelect}
-              onClose={onGachaClose}
-            />
-          )}
+              {/* 進階篩選按鈕 - 只在 554-767px 顯示（緊接 FilterTabs） */}
+              {onAdvancedFilterToggle && onResetAdvancedFilter && (
+                <div className="hidden min-[554px]:block md:hidden">
+                  <ActionButtons
+                    isAdvancedFilterExpanded={isAdvancedFilterExpanded}
+                    onAdvancedFilterToggle={onAdvancedFilterToggle}
+                    advancedFilterCount={advancedFilterCount}
+                    onResetAdvancedFilter={onResetAdvancedFilter}
+                    filterSummary={getFilterSummary()}
+                    abbreviatedFilterSummary={getAbbreviatedFilterSummary()}
+                  />
+                </div>
+              )}
 
-          {onMerchantSelect && onMerchantClose && (
-            <MerchantShopDropdown
-              isMerchantMode={isMerchantMode}
-              selectedMapId={selectedMerchantMapId ?? null}
-              onSelect={onMerchantSelect}
-              onClose={onMerchantClose}
-            />
+              {onGachaSelect && onGachaClose && (
+                <GachaDropdown
+                  isGachaMode={isGachaMode}
+                  selectedMachineId={selectedGachaMachineId ?? null}
+                  onSelect={onGachaSelect}
+                  onClose={onGachaClose}
+                />
+              )}
+
+              {onMerchantSelect && onMerchantClose && (
+                <MerchantShopDropdown
+                  isMerchantMode={isMerchantMode}
+                  selectedMapId={selectedMerchantMapId ?? null}
+                  onSelect={onMerchantSelect}
+                  onClose={onMerchantClose}
+                />
+              )}
+            </>
           )}
         </div>
       )}
