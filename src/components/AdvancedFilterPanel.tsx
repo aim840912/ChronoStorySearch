@@ -1,7 +1,7 @@
 'use client'
 
 import { useLanguage } from '@/contexts/LanguageContext'
-import type { AdvancedFilterOptions, ItemCategoryGroup, JobClass, ElementType } from '@/types'
+import type { AdvancedFilterOptions, ItemCategoryGroup, JobClass, ElementType, StatType } from '@/types'
 
 interface AdvancedFilterPanelProps {
   filter: AdvancedFilterOptions
@@ -26,6 +26,7 @@ export function AdvancedFilterPanel({
       filterToCheck.itemCategories.length > 0 ||
       filterToCheck.jobClasses.length > 0 ||
       filterToCheck.elementWeaknesses.length > 0 ||
+      filterToCheck.statBoosts.length > 0 ||
       filterToCheck.isBoss ||
       filterToCheck.isUndead ||
       filterToCheck.levelRange.min !== null ||
@@ -148,6 +149,23 @@ export function AdvancedFilterPanel({
     })
   }
 
+  // 處理主屬性變更（多選）
+  const handleStatToggle = (stat: StatType) => {
+    const newStatBoosts = filter.statBoosts.includes(stat)
+      ? filter.statBoosts.filter((s) => s !== stat)
+      : [...filter.statBoosts, stat]
+
+    const newFilter = {
+      ...filter,
+      statBoosts: newStatBoosts,
+    }
+
+    onFilterChange({
+      ...newFilter,
+      enabled: hasAnyFilterCriteria(newFilter),
+    })
+  }
+
   // 驗證等級範圍是否有效（最高等級必須 >= 最低等級）
   const isLevelRangeValid =
     filter.levelRange.min === null ||
@@ -180,14 +198,14 @@ export function AdvancedFilterPanel({
 
             {/* 穿著類 + 飾品類 + 消耗品類 - 同一列 */}
             <div className="mb-4 flex flex-col lg:flex-row gap-6">
-              {/* 穿著類 */}
+              {/* 穿著類（含耳環、飾品） */}
               <div className="flex-1">
                 <h5 className="text-xs font-semibold text-indigo-600 dark:text-indigo-400 mb-2 flex items-center">
                   <span className="w-1 h-4 bg-indigo-500 rounded mr-2"></span>
                   {t('filter.categoryGroup.apparel')}
                 </h5>
                 <div className="flex flex-wrap gap-2">
-                  {(['hat', 'top', 'bottom', 'overall', 'shoes', 'gloves', 'cape'] as const).map((category) => (
+                  {(['hat', 'top', 'bottom', 'overall', 'shoes', 'gloves', 'cape', 'earring', 'accessory'] as const).map((category) => (
                     <button
                       key={category}
                       onClick={() => handleCategoryToggle(category)}
@@ -203,26 +221,26 @@ export function AdvancedFilterPanel({
                 </div>
               </div>
 
-              {/* 飾品類 + 消耗品類容器 - iPad mini 時並排，桌面版並排 */}
+              {/* 主屬性 + 消耗品類容器 - iPad mini 時並排，桌面版並排 */}
               <div className="flex flex-col md:flex-row lg:contents md:gap-6">
-                {/* 飾品類 */}
+                {/* 主屬性篩選 */}
                 <div className="flex-1">
                   <h5 className="text-xs font-semibold text-pink-600 dark:text-pink-400 mb-2 flex items-center">
                     <span className="w-1 h-4 bg-pink-500 rounded mr-2"></span>
-                    {t('filter.categoryGroup.accessory')}
+                    {t('filter.categoryGroup.stat')}
                   </h5>
                   <div className="flex flex-wrap gap-2">
-                    {(['earring', 'accessory'] as const).map((category) => (
+                    {(['str', 'dex', 'int', 'luk'] as const).map((stat) => (
                       <button
-                        key={category}
-                        onClick={() => handleCategoryToggle(category)}
+                        key={stat}
+                        onClick={() => handleStatToggle(stat)}
                         className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
-                          filter.itemCategories.includes(category)
+                          filter.statBoosts.includes(stat)
                             ? 'bg-pink-500 text-white shadow-md'
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                         }`}
                       >
-                        {t(`filter.itemCategory.${category}`)}
+                        {t(`filter.stat.${stat}`)}
                       </button>
                     ))}
                   </div>

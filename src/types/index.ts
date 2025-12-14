@@ -96,6 +96,7 @@ export type {
   JobClass,
   ElementType,
   LevelRange,
+  StatType,
   AdvancedFilterOptions,
 } from './filters'
 

@@ -236,6 +236,10 @@ export function convertOrganizedToEssential(
     equipment_classes,
     scroll_category: null,
     attack_speed: organized.metaInfo.attackSpeed ?? null,  // 攻擊速度 (2=最快, 9=最慢)
+    inc_str: organized.metaInfo.incSTR ?? 0,
+    inc_dex: organized.metaInfo.incDEX ?? 0,
+    inc_int: organized.metaInfo.incINT ?? 0,
+    inc_luk: organized.metaInfo.incLUK ?? 0,
   }
 }
 
