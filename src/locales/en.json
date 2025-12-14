@@ -15,6 +15,7 @@
   "filter.favoriteItems": "Items",
   "filter.marketListings": "Market Listings",
   "filter.clear": "Clear",
+  "favorites.title": "Favorites",
   "stats.loadSuccess": "MapleStory drop data loaded successfully",
   "stats.loadSuccessDev": "MapleStory drop data loaded successfully (Local mode)",
   "stats.showing": "Showing",

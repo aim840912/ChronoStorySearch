@@ -15,6 +15,7 @@
   "filter.favoriteItems": "物品",
   "filter.marketListings": "市場刊登",
   "filter.clear": "清除",
+  "favorites.title": "收藏",
   "stats.loadSuccess": "成功載入楓之谷掉落資料",
   "stats.loadSuccessDev": "成功載入楓之谷掉落資料（本地模式）",
   "stats.showing": "顯示",

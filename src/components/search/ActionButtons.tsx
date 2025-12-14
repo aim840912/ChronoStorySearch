@@ -8,6 +8,7 @@ interface ActionButtonsProps {
   advancedFilterCount: number
   onResetAdvancedFilter: () => void
   filterSummary?: string
+  abbreviatedFilterSummary?: string
   fullWidth?: boolean
 }
 
@@ -21,12 +22,13 @@ export function ActionButtons({
   advancedFilterCount,
   onResetAdvancedFilter,
   filterSummary,
+  abbreviatedFilterSummary,
   fullWidth = false,
 }: ActionButtonsProps) {
   const { t } = useLanguage()
 
   return (
-    <div className={`flex gap-2 ${fullWidth ? 'w-full' : 'flex-shrink-0'}`}>
+    <div className={`flex gap-2 ${fullWidth ? 'flex-1' : 'flex-shrink-0'}`}>
       {/* 進階篩選按鈕 */}
       <button
         onClick={onAdvancedFilterToggle}
@@ -47,7 +49,18 @@ export function ActionButtons({
         </svg>
         <span>
           {t('filter.advanced')}
-          {advancedFilterCount > 0 && filterSummary && `: ${filterSummary}`}
+          {advancedFilterCount > 0 && filterSummary && (
+            <>
+              {/* 窄視窗顯示縮寫 */}
+              <span className="inline min-[450px]:hidden">
+                : {abbreviatedFilterSummary || filterSummary}
+              </span>
+              {/* 寬視窗顯示完整 */}
+              <span className="hidden min-[450px]:inline">
+                : {filterSummary}
+              </span>
+            </>
+          )}
         </span>
       </button>
 
@@ -55,13 +68,13 @@ export function ActionButtons({
       {advancedFilterCount > 0 && (
         <button
           onClick={onResetAdvancedFilter}
-          className="px-4 py-2.5 rounded-xl font-medium transition-all duration-200 flex items-center gap-2 border-2 border-red-500/50 hover:border-red-500 text-red-500 hover:text-red-600 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow-md hover:shadow-lg whitespace-nowrap"
+          className="px-3 min-[450px]:px-4 py-2.5 rounded-xl font-medium transition-all duration-200 flex items-center gap-2 border-2 border-red-500/50 hover:border-red-500 text-red-500 hover:text-red-600 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow-md hover:shadow-lg whitespace-nowrap flex-shrink-0"
           title={t('filter.clear')}
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
-          {t('filter.clear')}
+          <span className="hidden min-[450px]:inline">{t('filter.clear')}</span>
         </button>
       )}
     </div>
