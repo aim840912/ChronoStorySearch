@@ -83,6 +83,7 @@ function transformItem(item, sourceDir) {
     equipment_category: isEquipment ? item.typeInfo?.subCategory || null : null,
     equipment_classes: isEquipment ? reqJobToClasses(item.metaInfo?.reqJob ?? 0) : null,
     scroll_category: isScrollItem ? item.typeInfo?.subCategory || null : null,
+    attack_speed: isEquipment ? (item.metaInfo?.attackSpeed ?? null) : null,  // 攻擊速度 (2=最快, 9=最慢)
   }
 
   return essential

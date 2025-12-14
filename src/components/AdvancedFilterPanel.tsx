@@ -29,7 +29,9 @@ export function AdvancedFilterPanel({
       filterToCheck.isBoss ||
       filterToCheck.isUndead ||
       filterToCheck.levelRange.min !== null ||
-      filterToCheck.levelRange.max !== null
+      filterToCheck.levelRange.max !== null ||
+      filterToCheck.attackSpeedRange.min !== null ||
+      filterToCheck.attackSpeedRange.max !== null
     )
   }
 
@@ -128,11 +130,35 @@ export function AdvancedFilterPanel({
     })
   }
 
+  // 處理攻擊速度範圍變更
+  const handleAttackSpeedRangeChange = (type: 'min' | 'max', value: string) => {
+    const numValue = value === '' ? null : parseInt(value, 10)
+
+    const newFilter = {
+      ...filter,
+      attackSpeedRange: {
+        ...filter.attackSpeedRange,
+        [type]: numValue,
+      },
+    }
+
+    onFilterChange({
+      ...newFilter,
+      enabled: hasAnyFilterCriteria(newFilter),
+    })
+  }
+
   // 驗證等級範圍是否有效（最高等級必須 >= 最低等級）
   const isLevelRangeValid =
     filter.levelRange.min === null ||
     filter.levelRange.max === null ||
     filter.levelRange.max >= filter.levelRange.min
+
+  // 驗證攻速範圍是否有效（最慢必須 >= 最快，因為數值越大越慢）
+  const isAttackSpeedRangeValid =
+    filter.attackSpeedRange.min === null ||
+    filter.attackSpeedRange.max === null ||
+    filter.attackSpeedRange.max >= filter.attackSpeedRange.min
 
   return (
     <div className="max-w-7xl mx-auto mb-4">
@@ -348,44 +374,90 @@ export function AdvancedFilterPanel({
                 </div>
               </div>
 
-              {/* 等級範圍篩選 */}
-              <div className="flex-1">
-              <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
-                {t('filter.levelRange')}
-              </h4>
-              <div className="flex items-center gap-4">
-                <input
-                  id="level-min"
-                  type="number"
-                  min="0"
-                  max="200"
-                  value={filter.levelRange.min ?? ''}
-                  onChange={(e) => handleLevelRangeChange('min', e.target.value)}
-                  placeholder={t('filter.levelRange.min')}
-                  className="flex-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                />
-                <span className="text-gray-500 dark:text-gray-400">-</span>
-                <input
-                  id="level-max"
-                  type="number"
-                  min="0"
-                  max="200"
-                  value={filter.levelRange.max ?? ''}
-                  onChange={(e) => handleLevelRangeChange('max', e.target.value)}
-                  placeholder={t('filter.levelRange.max')}
-                  className={`flex-1 px-3 py-2 rounded-lg border bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:border-transparent ${
-                    !isLevelRangeValid
-                      ? 'border-red-500 focus:ring-red-500'
-                      : 'border-gray-300 dark:border-gray-600 focus:ring-purple-500'
-                  }`}
-                />
-              </div>
-              {/* 錯誤訊息 */}
-              {!isLevelRangeValid && (
-                <p className="mt-2 text-sm text-red-600 dark:text-red-400">
-                  {t('filter.levelRange.error')}
-                </p>
-              )}
+              {/* 數值範圍篩選區塊（等級 + 攻速） */}
+              <div className="flex-1 space-y-4">
+                {/* 等級範圍篩選 */}
+                <div>
+                  <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                    {t('filter.levelRange')}
+                  </h4>
+                  <div className="flex items-center gap-4">
+                    <input
+                      id="level-min"
+                      type="number"
+                      min="0"
+                      max="200"
+                      value={filter.levelRange.min ?? ''}
+                      onChange={(e) => handleLevelRangeChange('min', e.target.value)}
+                      placeholder={t('filter.levelRange.min')}
+                      className="flex-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    />
+                    <span className="text-gray-500 dark:text-gray-400">-</span>
+                    <input
+                      id="level-max"
+                      type="number"
+                      min="0"
+                      max="200"
+                      value={filter.levelRange.max ?? ''}
+                      onChange={(e) => handleLevelRangeChange('max', e.target.value)}
+                      placeholder={t('filter.levelRange.max')}
+                      className={`flex-1 px-3 py-2 rounded-lg border bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:border-transparent ${
+                        !isLevelRangeValid
+                          ? 'border-red-500 focus:ring-red-500'
+                          : 'border-gray-300 dark:border-gray-600 focus:ring-purple-500'
+                      }`}
+                    />
+                  </div>
+                  {/* 錯誤訊息 */}
+                  {!isLevelRangeValid && (
+                    <p className="mt-2 text-sm text-red-600 dark:text-red-400">
+                      {t('filter.levelRange.error')}
+                    </p>
+                  )}
+                </div>
+
+                {/* 攻擊速度範圍篩選 */}
+                <div>
+                  <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                    {t('filter.attackSpeed')}
+                    <span className="text-xs font-normal text-gray-500 dark:text-gray-400 ml-2">
+                      (2={t('filter.attackSpeed.fastest')}, 9={t('filter.attackSpeed.slowest')})
+                    </span>
+                  </h4>
+                  <div className="flex items-center gap-4">
+                    <input
+                      id="attack-speed-min"
+                      type="number"
+                      min="2"
+                      max="9"
+                      value={filter.attackSpeedRange.min ?? ''}
+                      onChange={(e) => handleAttackSpeedRangeChange('min', e.target.value)}
+                      placeholder={t('filter.attackSpeed.min')}
+                      className="flex-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    />
+                    <span className="text-gray-500 dark:text-gray-400">-</span>
+                    <input
+                      id="attack-speed-max"
+                      type="number"
+                      min="2"
+                      max="9"
+                      value={filter.attackSpeedRange.max ?? ''}
+                      onChange={(e) => handleAttackSpeedRangeChange('max', e.target.value)}
+                      placeholder={t('filter.attackSpeed.max')}
+                      className={`flex-1 px-3 py-2 rounded-lg border bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:border-transparent ${
+                        !isAttackSpeedRangeValid
+                          ? 'border-red-500 focus:ring-red-500'
+                          : 'border-gray-300 dark:border-gray-600 focus:ring-purple-500'
+                      }`}
+                    />
+                  </div>
+                  {/* 錯誤訊息 */}
+                  {!isAttackSpeedRangeValid && (
+                    <p className="mt-2 text-sm text-red-600 dark:text-red-400">
+                      {t('filter.attackSpeed.error')}
+                    </p>
+                  )}
+                </div>
               </div>
           </div>
           </div>

@@ -74,6 +74,12 @@ export interface LevelRange {
   max: number | null
 }
 
+// 攻擊速度範圍 (2=最快, 9=最慢)
+export interface AttackSpeedRange {
+  min: number | null  // 最快（數值小）
+  max: number | null  // 最慢（數值大）
+}
+
 // 進階篩選選項
 export interface AdvancedFilterOptions {
   // 資料類型篩選
@@ -94,6 +100,9 @@ export interface AdvancedFilterOptions {
 
   // 等級範圍篩選
   levelRange: LevelRange
+
+  // 攻擊速度範圍篩選（僅適用於武器）
+  attackSpeedRange: AttackSpeedRange
 
   // 是否啟用進階篩選
   enabled: boolean
