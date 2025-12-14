@@ -12,7 +12,7 @@
 'use client'
 
 import { useState } from 'react'
-import type { DropItem, ItemAttributesEssential } from '@/types'
+import type { DropItem, ItemAttributesEssential, Language } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
 import { getItemImageUrl } from '@/lib/image-utils'
@@ -123,7 +123,7 @@ interface DropItemListMobileRowProps {
   onToggleFavorite: (itemId: number, itemName: string) => void
   onItemClick: (itemId: number, itemName: string) => void
   isEvenRow: boolean
-  language: string
+  language: Language
   t: (key: string) => string
 }
 
