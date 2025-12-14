@@ -84,6 +84,19 @@ public/images/        # 本地圖片資源
 | 物品屬性 | `/data/item-attributes-essential.json` |
 | 圖片資源 | Cloudflare R2 CDN |
 
+### 響應式設計
+
+| 項目 | 說明 |
+|------|------|
+| **最低支援寬度** | 320px |
+| **自訂斷點** | 400px, 500px, 554px, 1120px |
+
+自訂斷點用途：
+- `min-[400px]` - 按鈕 padding 調整
+- `min-[500px]` - 文字顯示切換（縮寫/完整）
+- `min-[554px]` - FilterTabs 佈局、ActionButtons 位置
+- `min-[1120px]` - MonsterModal 桌面版雙欄佈局
+
 ### 建置時間標準
 
 本專案為中型專案，建置時間 **> 2 分鐘** 視為警告，需調查原因。

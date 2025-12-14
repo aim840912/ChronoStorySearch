@@ -20,6 +20,7 @@ import { SearchHeader } from '@/components/SearchHeader'
 import { ContentDisplay } from '@/components/ContentDisplay'
 import { ModalManager } from '@/components/ModalManager'
 import { GachaDrawSection } from '@/components/gacha/GachaDrawSection'
+import { MerchantShopSection } from '@/components/merchant/MerchantShopSection'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
 import { trackEvent } from '@/lib/analytics/ga4'
@@ -44,6 +45,9 @@ export default function Home() {
   const [isGachaMode, setIsGachaMode] = useState(false)
   const [selectedGachaMachineId, setSelectedGachaMachineId] = useState<number | null>(null)
 
+  // 商人商店模式狀態
+  const [isMerchantMode, setIsMerchantMode] = useState(false)
+  const [selectedMerchantMapId, setSelectedMerchantMapId] = useState<string | null>(null)
 
   // 追蹤首次掛載，避免初始載入時觸發滾動
   const isFirstMount = useRef(true)
@@ -313,6 +317,9 @@ export default function Home() {
   const handleGachaSelect = useCallback((machineId: number | null) => {
     setIsGachaMode(true)
     setSelectedGachaMachineId(machineId)
+    // 關閉商人模式（互斥）
+    setIsMerchantMode(false)
+    setSelectedMerchantMapId(null)
     // 載入轉蛋機資料
     loadGachaMachines()
     // 滾動到頂部
@@ -324,15 +331,35 @@ export default function Home() {
     setSelectedGachaMachineId(null)
   }, [])
 
-  // 處理 filterMode 變更（同時關閉轉蛋模式）
+  // 商人商店模式處理函數
+  const handleMerchantSelect = useCallback((mapId: string | null) => {
+    setIsMerchantMode(true)
+    setSelectedMerchantMapId(mapId)
+    // 關閉轉蛋模式（互斥）
+    setIsGachaMode(false)
+    setSelectedGachaMachineId(null)
+    // 滾動到頂部
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [])
+
+  const handleMerchantClose = useCallback(() => {
+    setIsMerchantMode(false)
+    setSelectedMerchantMapId(null)
+  }, [])
+
+  // 處理 filterMode 變更（同時關閉轉蛋/商人模式）
   const handleFilterModeChange = useCallback((mode: FilterMode) => {
     setFilterMode(mode)
-    // 點擊 FilterTabs 時自動退出轉蛋模式
+    // 點擊 FilterTabs 時自動退出轉蛋模式和商人模式
     if (isGachaMode) {
       setIsGachaMode(false)
       setSelectedGachaMachineId(null)
     }
-  }, [isGachaMode])
+    if (isMerchantMode) {
+      setIsMerchantMode(false)
+      setSelectedMerchantMapId(null)
+    }
+  }, [isGachaMode, isMerchantMode])
 
 
   // 鍵盤導航處理 - 包裝 search.handleKeyDown 以處理轉蛋建議
@@ -397,6 +424,10 @@ export default function Home() {
           selectedGachaMachineId={selectedGachaMachineId}
           onGachaSelect={handleGachaSelect}
           onGachaClose={handleGachaClose}
+          isMerchantMode={isMerchantMode}
+          selectedMerchantMapId={selectedMerchantMapId}
+          onMerchantSelect={handleMerchantSelect}
+          onMerchantClose={handleMerchantClose}
         />
 
         {/* 轉蛋抽獎區域 - 選擇轉蛋機後顯示 */}
@@ -409,8 +440,16 @@ export default function Home() {
           />
         )}
 
-        {/* 內容顯示區域 - 轉蛋模式且已選擇轉蛋機時隱藏 */}
-        {!(isGachaMode && selectedGachaMachineId !== null) && (
+        {/* 商人商店區域 - 選擇商人地圖後顯示 */}
+        {isMerchantMode && (
+          <MerchantShopSection
+            mapId={selectedMerchantMapId}
+            onClose={handleMerchantClose}
+          />
+        )}
+
+        {/* 內容顯示區域 - 轉蛋模式或商人模式時隱藏 */}
+        {!(isGachaMode && selectedGachaMachineId !== null) && !isMerchantMode && (
           <ContentDisplay
           isLoading={isLoading}
           filterMode={filterMode}
