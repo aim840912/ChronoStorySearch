@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useCallback, useMemo } from 'react'
+import { useState, useEffect, useCallback, useMemo, useRef } from 'react'
 import type {
   ItemAttributesEssential,
   MobInfo,
@@ -77,16 +77,25 @@ export function useLazyItemDetailed(itemId: number | null) {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<Error | null>(null)
 
+  // 追蹤當前請求以處理競態條件
+  const currentRequestRef = useRef<number | null>(null)
+
   useEffect(() => {
     if (!itemId) {
       setData(null)
+      setError(null)
+      currentRequestRef.current = null
       return
     }
+
+    // ID 變化時重置狀態，避免顯示舊資料
+    setData(null)
+    setError(null)
+    currentRequestRef.current = itemId
 
     const loadData = async () => {
       try {
         setIsLoading(true)
-        setError(null)
         const folder = getItemFolder(itemId)
         clientLogger.info(`開始載入物品 ${itemId} 的資料（from ${folder}/）...`)
 
@@ -108,15 +117,27 @@ export function useLazyItemDetailed(itemId: number | null) {
         }
         const rawData = dataModule.default as ItemsOrganizedData
 
-        // 直接返回原始 ItemsOrganizedData 格式
+        // 檢查請求是否仍為最新（競態條件防護）
+        if (currentRequestRef.current !== itemId) {
+          clientLogger.info(`物品 ${itemId} 的請求已過時，忽略結果`)
+          return
+        }
+
         setData(rawData)
         clientLogger.info(`成功載入物品 ${itemId} 的資料`)
       } catch (err) {
+        // 檢查請求是否仍為最新
+        if (currentRequestRef.current !== itemId) {
+          return
+        }
         const error = err instanceof Error ? err : new Error(`載入物品 ${itemId} 詳細資料失敗`)
         setError(error)
         clientLogger.debug(`物品 ${itemId} 無 detailed 檔案，將嘗試從其他來源載入`, err)
       } finally {
-        setIsLoading(false)
+        // 只有當請求仍為最新時才更新 loading 狀態
+        if (currentRequestRef.current === itemId) {
+          setIsLoading(false)
+        }
       }
     }
 
@@ -207,16 +228,25 @@ export function useLazyDropsDetailed(mobId: number | null) {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<Error | null>(null)
 
+  // 追蹤當前請求以處理競態條件
+  const currentRequestRef = useRef<number | null>(null)
+
   useEffect(() => {
     if (!mobId) {
       setData(null)
+      setError(null)
+      currentRequestRef.current = null
       return
     }
+
+    // ID 變化時重置狀態，避免顯示舊資料
+    setData(null)
+    setError(null)
+    currentRequestRef.current = mobId
 
     const loadData = async () => {
       try {
         setIsLoading(true)
-        setError(null)
         clientLogger.info(`開始載入怪物 ${mobId} 的 Detailed 掉落資料...`)
 
         // 動態 import 單一怪物的掉落資料 JSON（從 chronostoryData/drops-by-monster/）
@@ -225,16 +255,29 @@ export function useLazyDropsDetailed(mobId: number | null) {
         )
         const rawData = dataModule.default
 
+        // 檢查請求是否仍為最新（競態條件防護）
+        if (currentRequestRef.current !== mobId) {
+          clientLogger.info(`怪物 ${mobId} 的請求已過時，忽略結果`)
+          return
+        }
+
         // drops-by-monster 格式是包裝物件，掉落資料在 .drops 陣列中
         const drops = rawData.drops as DropItem[]
         setData(drops)
         clientLogger.info(`成功載入怪物 ${mobId} 的掉落資料（${drops.length} 個物品）`)
       } catch (err) {
+        // 檢查請求是否仍為最新
+        if (currentRequestRef.current !== mobId) {
+          return
+        }
         const error = err instanceof Error ? err : new Error(`載入怪物 ${mobId} 掉落資料失敗`)
         setError(error)
         clientLogger.error(`載入怪物 ${mobId} 掉落資料失敗`, err)
       } finally {
-        setIsLoading(false)
+        // 只有當請求仍為最新時才更新 loading 狀態
+        if (currentRequestRef.current === mobId) {
+          setIsLoading(false)
+        }
       }
     }
 
@@ -264,16 +307,25 @@ export function useLazyDropsByItem(itemId: number | null) {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<Error | null>(null)
 
+  // 追蹤當前請求以處理競態條件
+  const currentRequestRef = useRef<number | null>(null)
+
   useEffect(() => {
     if (!itemId) {
       setData(null)
+      setError(null)
+      currentRequestRef.current = null
       return
     }
+
+    // ID 變化時重置狀態，避免顯示舊資料
+    setData(null)
+    setError(null)
+    currentRequestRef.current = itemId
 
     const loadData = async () => {
       try {
         setIsLoading(true)
-        setError(null)
         clientLogger.info(`開始載入物品 ${itemId} 的掉落怪物資料...`)
 
         // 動態 import 單一物品的掉落資料 JSON
@@ -282,11 +334,21 @@ export function useLazyDropsByItem(itemId: number | null) {
         )
         const rawData = dataModule.default as DropsByItemData
 
+        // 檢查請求是否仍為最新（競態條件防護）
+        if (currentRequestRef.current !== itemId) {
+          clientLogger.info(`物品 ${itemId} 的掉落資料請求已過時，忽略結果`)
+          return
+        }
+
         setData(rawData)
         clientLogger.info(
           `成功載入物品 ${itemId} 的掉落資料（${rawData.totalMonsters} 隻怪物）`
         )
       } catch (err) {
+        // 檢查請求是否仍為最新
+        if (currentRequestRef.current !== itemId) {
+          return
+        }
         const error =
           err instanceof Error
             ? err
@@ -295,7 +357,10 @@ export function useLazyDropsByItem(itemId: number | null) {
         // 使用 debug 而非 error，因為某些物品可能只來自轉蛋或商人，沒有怪物掉落
         clientLogger.debug(`物品 ${itemId} 無掉落資料檔案`, err)
       } finally {
-        setIsLoading(false)
+        // 只有當請求仍為最新時才更新 loading 狀態
+        if (currentRequestRef.current === itemId) {
+          setIsLoading(false)
+        }
       }
     }
 

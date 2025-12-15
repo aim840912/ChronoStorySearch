@@ -381,6 +381,7 @@
   "filter.attackSpeed.fastest": "Fastest",
   "filter.attackSpeed.slowest": "Slowest",
   "filter.attackSpeed.error": "Slowest must be >= fastest",
+  "filter.attackSpeed.all": "All",
   "filter.multiSelect": "Multi-select",
   "filter.activeFilters": "Active Filters",
   "filter.reset": "Reset",

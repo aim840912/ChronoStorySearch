@@ -381,6 +381,7 @@
   "filter.attackSpeed.fastest": "最快",
   "filter.attackSpeed.slowest": "最慢",
   "filter.attackSpeed.error": "最慢速度必須大於等於最快速度",
+  "filter.attackSpeed.all": "不限",
   "filter.multiSelect": "可多選",
   "filter.activeFilters": "已啟用的篩選條件",
   "filter.reset": "重置",
