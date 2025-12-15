@@ -84,7 +84,7 @@ export const CATEGORY_GROUP_MAP: Record<CategoryGroupType, ItemCategoryGroup[]> 
   // 穿著類（含耳環、飾品）
   apparel: ['hat', 'top', 'bottom', 'overall', 'shoes', 'gloves', 'cape', 'earring', 'accessory'],
   // 武器防具類
-  weapon: ['oneHandedSword', 'twoHandedSword', 'oneHandedAxe', 'twoHandedAxe', 'oneHandedBW', 'twoHandedBW', 'polearm', 'spear', 'dagger', 'claw', 'bow', 'crossbow', 'wand', 'staff', 'knuckle', 'gun', 'shield'],
+  weapon: ['oneHandedSword', 'twoHandedSword', 'oneHandedAxe', 'twoHandedAxe', 'oneHandedBW', 'twoHandedBW', 'polearm', 'spear', 'wand', 'staff', 'bow', 'crossbow', 'dagger', 'claw', 'knuckle', 'gun', 'shield'],
   // 消耗品類
   consumable: ['scroll', 'potion', 'projectile'],
 }

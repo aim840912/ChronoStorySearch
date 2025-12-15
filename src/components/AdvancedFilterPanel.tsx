@@ -131,15 +131,16 @@ export function AdvancedFilterPanel({
     })
   }
 
-  // 處理攻擊速度範圍變更
-  const handleAttackSpeedRangeChange = (type: 'min' | 'max', value: string) => {
+  // 處理攻擊速度變更（單選下拉選單）
+  const handleAttackSpeedChange = (value: string) => {
     const numValue = value === '' ? null : parseInt(value, 10)
 
+    // 單選模式：min 和 max 設為相同值
     const newFilter = {
       ...filter,
       attackSpeedRange: {
-        ...filter.attackSpeedRange,
-        [type]: numValue,
+        min: numValue,
+        max: numValue,
       },
     }
 
@@ -171,12 +172,6 @@ export function AdvancedFilterPanel({
     filter.levelRange.min === null ||
     filter.levelRange.max === null ||
     filter.levelRange.max >= filter.levelRange.min
-
-  // 驗證攻速範圍是否有效（最慢必須 >= 最快，因為數值越大越慢）
-  const isAttackSpeedRangeValid =
-    filter.attackSpeedRange.min === null ||
-    filter.attackSpeedRange.max === null ||
-    filter.attackSpeedRange.max >= filter.attackSpeedRange.min
 
   return (
     <div className="max-w-7xl mx-auto mb-4">
@@ -434,47 +429,22 @@ export function AdvancedFilterPanel({
                   )}
                 </div>
 
-                {/* 攻擊速度範圍篩選 */}
+                {/* 攻擊速度篩選（單選下拉選單） */}
                 <div>
                   <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
                     {t('filter.attackSpeed')}
-                    <span className="text-xs font-normal text-gray-500 dark:text-gray-400 ml-2">
-                      (2={t('filter.attackSpeed.fastest')}, 9={t('filter.attackSpeed.slowest')})
-                    </span>
                   </h4>
-                  <div className="flex items-center gap-4">
-                    <input
-                      id="attack-speed-min"
-                      type="number"
-                      min="2"
-                      max="9"
-                      value={filter.attackSpeedRange.min ?? ''}
-                      onChange={(e) => handleAttackSpeedRangeChange('min', e.target.value)}
-                      placeholder={t('filter.attackSpeed.min')}
-                      className="flex-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                    />
-                    <span className="text-gray-500 dark:text-gray-400">-</span>
-                    <input
-                      id="attack-speed-max"
-                      type="number"
-                      min="2"
-                      max="9"
-                      value={filter.attackSpeedRange.max ?? ''}
-                      onChange={(e) => handleAttackSpeedRangeChange('max', e.target.value)}
-                      placeholder={t('filter.attackSpeed.max')}
-                      className={`flex-1 px-3 py-2 rounded-lg border bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:border-transparent ${
-                        !isAttackSpeedRangeValid
-                          ? 'border-red-500 focus:ring-red-500'
-                          : 'border-gray-300 dark:border-gray-600 focus:ring-purple-500'
-                      }`}
-                    />
-                  </div>
-                  {/* 錯誤訊息 */}
-                  {!isAttackSpeedRangeValid && (
-                    <p className="mt-2 text-sm text-red-600 dark:text-red-400">
-                      {t('filter.attackSpeed.error')}
-                    </p>
-                  )}
+                  <select
+                    id="attack-speed"
+                    value={filter.attackSpeedRange.min ?? ''}
+                    onChange={(e) => handleAttackSpeedChange(e.target.value)}
+                    className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                  >
+                    <option value="">{t('filter.attackSpeed.all')}</option>
+                    {[2, 3, 4, 5, 6, 7, 8, 9].map((speed) => (
+                      <option key={speed} value={speed}>{speed}</option>
+                    ))}
+                  </select>
                 </div>
               </div>
           </div>
