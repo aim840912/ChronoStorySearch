@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
+import { AdSenseScript } from '@/components/adsense';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +39,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <GoogleAnalytics />
+        <AdSenseScript />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
