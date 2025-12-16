@@ -84,18 +84,21 @@ export function useLazyItemDetailed(itemId: number | null) {
     if (!itemId) {
       setData(null)
       setError(null)
+      setIsLoading(false)
       currentRequestRef.current = null
       return
     }
 
     // ID 變化時重置狀態，避免顯示舊資料
+    // 重要：setIsLoading 必須在這裡同步設置，而非在 async 函數內
+    // 否則會有短暫的 data=null + isLoading=false 狀態，造成 UI 誤判
     setData(null)
     setError(null)
+    setIsLoading(true)
     currentRequestRef.current = itemId
 
     const loadData = async () => {
       try {
-        setIsLoading(true)
         const folder = getItemFolder(itemId)
         clientLogger.info(`開始載入物品 ${itemId} 的資料（from ${folder}/）...`)
 
@@ -235,18 +238,20 @@ export function useLazyDropsDetailed(mobId: number | null) {
     if (!mobId) {
       setData(null)
       setError(null)
+      setIsLoading(false)
       currentRequestRef.current = null
       return
     }
 
     // ID 變化時重置狀態，避免顯示舊資料
+    // 重要：setIsLoading 必須在這裡同步設置，而非在 async 函數內
     setData(null)
     setError(null)
+    setIsLoading(true)
     currentRequestRef.current = mobId
 
     const loadData = async () => {
       try {
-        setIsLoading(true)
         clientLogger.info(`開始載入怪物 ${mobId} 的 Detailed 掉落資料...`)
 
         // 動態 import 單一怪物的掉落資料 JSON（從 chronostoryData/drops-by-monster/）
@@ -314,18 +319,20 @@ export function useLazyDropsByItem(itemId: number | null) {
     if (!itemId) {
       setData(null)
       setError(null)
+      setIsLoading(false)
       currentRequestRef.current = null
       return
     }
 
     // ID 變化時重置狀態，避免顯示舊資料
+    // 重要：setIsLoading 必須在這裡同步設置，而非在 async 函數內
     setData(null)
     setError(null)
+    setIsLoading(true)
     currentRequestRef.current = itemId
 
     const loadData = async () => {
       try {
-        setIsLoading(true)
         clientLogger.info(`開始載入物品 ${itemId} 的掉落怪物資料...`)
 
         // 動態 import 單一物品的掉落資料 JSON
