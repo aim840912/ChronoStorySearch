@@ -2,8 +2,10 @@
 
 import type { ExtendedUniqueItem, ItemAttributesEssential, ViewHistoryItem, DropsEssential, GachaMachine, GachaItem, ItemIndexItem } from '@/types'
 import type { RefObject } from 'react'
+import { Fragment } from 'react'
 import { MonsterCard } from '@/components/MonsterCard'
 import { ItemCard } from '@/components/ItemCard'
+import { AdSenseCard } from '@/components/adsense'
 import { EmptyState } from './EmptyState'
 
 type UniqueMonster = { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number }
@@ -141,18 +143,23 @@ export function AllItemsView({
               if (!monsterData) return null // 找不到資料時跳過
 
               return (
-                <MonsterCard
-                  key={`history-monster-${historyItem.id}-${index}`}
-                  mobId={monsterData.mobId}
-                  mobName={monsterData.mobName}
-                  chineseMobName={monsterData.chineseMobName}
-                  dropCount={1} // 瀏覽歷史不顯示 dropCount，設為 1
-                  onCardClick={onMonsterCardClick}
-                  isFavorite={isFavorite(monsterData.mobId)}
-                  onToggleFavorite={onToggleFavorite}
-                  level={mobLevelMap.get(monsterData.mobId) ?? null}
-                  index={index}
-                />
+                <Fragment key={`history-monster-${historyItem.id}-${index}`}>
+                  <MonsterCard
+                    mobId={monsterData.mobId}
+                    mobName={monsterData.mobName}
+                    chineseMobName={monsterData.chineseMobName}
+                    dropCount={1} // 瀏覽歷史不顯示 dropCount，設為 1
+                    onCardClick={onMonsterCardClick}
+                    isFavorite={isFavorite(monsterData.mobId)}
+                    onToggleFavorite={onToggleFavorite}
+                    level={mobLevelMap.get(monsterData.mobId) ?? null}
+                    index={index}
+                  />
+                  {/* 每 8 張卡片後插入廣告 */}
+                  {(index + 1) % 8 === 0 && index < viewHistory.length - 1 && (
+                    <AdSenseCard className="col-span-1" />
+                  )}
+                </Fragment>
               )
             } else {
               // 從 allDrops 查找物品完整資料
@@ -186,20 +193,25 @@ export function AllItemsView({
                 ?? null
 
               return (
-                <ItemCard
-                  key={`history-item-${historyItem.id}-${index}`}
-                  itemId={displayItemId}
-                  itemName={displayItemName}
-                  chineseItemName={displayChineseName}
-                  monsterCount={1} // 瀏覽歷史不顯示 monsterCount，設為 1
-                  onCardClick={onItemCardClick}
-                  isFavorite={isItemFavorite(displayItemId)}
-                  onToggleFavorite={onToggleItemFavorite}
-                  source={{ fromDrops: !!itemData, fromGacha: isFromGacha }}
-                  reqLevel={reqLevel}
-                  index={index}
-                  fromMerchant={merchantItemIndex.has(displayItemName.toLowerCase())}
-                />
+                <Fragment key={`history-item-${historyItem.id}-${index}`}>
+                  <ItemCard
+                    itemId={displayItemId}
+                    itemName={displayItemName}
+                    chineseItemName={displayChineseName}
+                    monsterCount={1} // 瀏覽歷史不顯示 monsterCount，設為 1
+                    onCardClick={onItemCardClick}
+                    isFavorite={isItemFavorite(displayItemId)}
+                    onToggleFavorite={onToggleItemFavorite}
+                    source={{ fromDrops: !!itemData, fromGacha: isFromGacha }}
+                    reqLevel={reqLevel}
+                    index={index}
+                    fromMerchant={merchantItemIndex.has(displayItemName.toLowerCase())}
+                  />
+                  {/* 每 8 張卡片後插入廣告 */}
+                  {(index + 1) % 8 === 0 && index < viewHistory.length - 1 && (
+                    <AdSenseCard className="col-span-1" />
+                  )}
+                </Fragment>
               )
             }
           })}
@@ -214,38 +226,48 @@ export function AllItemsView({
           {mixedCards.map((card, index) => {
             if (card.type === 'monster') {
               return (
-                <MonsterCard
-                  key={`monster-${card.data.mobId}-${index}`}
-                  mobId={card.data.mobId}
-                  mobName={card.data.mobName}
-                  chineseMobName={card.data.chineseMobName}
-                  dropCount={card.data.dropCount}
-                  onCardClick={onMonsterCardClick}
-                  isFavorite={isFavorite(card.data.mobId)}
-                  onToggleFavorite={onToggleFavorite}
-                  level={mobLevelMap.get(card.data.mobId) ?? null}
-                  index={index}
-                />
+                <Fragment key={`monster-${card.data.mobId}-${index}`}>
+                  <MonsterCard
+                    mobId={card.data.mobId}
+                    mobName={card.data.mobName}
+                    chineseMobName={card.data.chineseMobName}
+                    dropCount={card.data.dropCount}
+                    onCardClick={onMonsterCardClick}
+                    isFavorite={isFavorite(card.data.mobId)}
+                    onToggleFavorite={onToggleFavorite}
+                    level={mobLevelMap.get(card.data.mobId) ?? null}
+                    index={index}
+                  />
+                  {/* 每 8 張卡片後插入廣告 */}
+                  {(index + 1) % 8 === 0 && index < mixedCards.length - 1 && (
+                    <AdSenseCard className="col-span-1" />
+                  )}
+                </Fragment>
               )
             } else {
               return (
-                <ItemCard
-                  key={`item-${card.data.itemId}-${index}`}
-                  itemId={card.data.itemId}
-                  itemName={card.data.itemName}
-                  chineseItemName={card.data.chineseItemName}
-                  monsterCount={card.data.monsterCount}
-                  onCardClick={onItemCardClick}
-                  isFavorite={isItemFavorite(card.data.itemId)}
-                  onToggleFavorite={onToggleItemFavorite}
-                  source={card.data.source}
-                  reqLevel={
-                    itemAttributesMap.get(card.data.itemId)?.req_level
-                    ?? (card.data.source.fromGacha ? getGachaItemReqLevel(gachaMachines, card.data.itemId) : null)
-                  }
-                  index={index}
-                  fromMerchant={merchantItemIndex.has(card.data.itemName.toLowerCase())}
-                />
+                <Fragment key={`item-${card.data.itemId}-${index}`}>
+                  <ItemCard
+                    itemId={card.data.itemId}
+                    itemName={card.data.itemName}
+                    chineseItemName={card.data.chineseItemName}
+                    monsterCount={card.data.monsterCount}
+                    onCardClick={onItemCardClick}
+                    isFavorite={isItemFavorite(card.data.itemId)}
+                    onToggleFavorite={onToggleItemFavorite}
+                    source={card.data.source}
+                    reqLevel={
+                      itemAttributesMap.get(card.data.itemId)?.req_level
+                      ?? (card.data.source.fromGacha ? getGachaItemReqLevel(gachaMachines, card.data.itemId) : null)
+                    }
+                    index={index}
+                    fromMerchant={merchantItemIndex.has(card.data.itemName.toLowerCase())}
+                  />
+                  {/* 每 8 張卡片後插入廣告 */}
+                  {(index + 1) % 8 === 0 && index < mixedCards.length - 1 && (
+                    <AdSenseCard className="col-span-1" />
+                  )}
+                </Fragment>
               )
             }
           })}
@@ -262,18 +284,23 @@ export function AllItemsView({
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 mx-auto mt-6 sm:mt-8">
             {displayedMonsters.map((monster, index) => (
-              <MonsterCard
-                key={monster.mobId}
-                mobId={monster.mobId}
-                mobName={monster.mobName}
-                chineseMobName={monster.chineseMobName}
-                dropCount={monster.dropCount}
-                onCardClick={onMonsterCardClick}
-                isFavorite={isFavorite(monster.mobId)}
-                onToggleFavorite={onToggleFavorite}
-                level={mobLevelMap.get(monster.mobId) ?? null}
-                index={index}
-              />
+              <Fragment key={monster.mobId}>
+                <MonsterCard
+                  mobId={monster.mobId}
+                  mobName={monster.mobName}
+                  chineseMobName={monster.chineseMobName}
+                  dropCount={monster.dropCount}
+                  onCardClick={onMonsterCardClick}
+                  isFavorite={isFavorite(monster.mobId)}
+                  onToggleFavorite={onToggleFavorite}
+                  level={mobLevelMap.get(monster.mobId) ?? null}
+                  index={index}
+                />
+                {/* 每 8 張卡片後插入廣告 */}
+                {(index + 1) % 8 === 0 && index < displayedMonsters.length - 1 && (
+                  <AdSenseCard className="col-span-1" />
+                )}
+              </Fragment>
             ))}
           </div>
 
@@ -308,23 +335,28 @@ export function AllItemsView({
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 mx-auto mt-6 sm:mt-8">
             {displayedItems.map((item, index) => (
-              <ItemCard
-                key={item.itemId}
-                itemId={item.itemId}
-                itemName={item.itemName}
-                chineseItemName={item.chineseItemName}
-                monsterCount={item.monsterCount}
-                onCardClick={onItemCardClick}
-                isFavorite={isItemFavorite(item.itemId)}
-                onToggleFavorite={onToggleItemFavorite}
-                source={item.source}
-                reqLevel={
-                  itemAttributesMap.get(item.itemId)?.req_level
-                  ?? (item.source.fromGacha ? getGachaItemReqLevel(gachaMachines, item.itemId) : null)
-                }
-                index={index}
-                fromMerchant={merchantItemIndex.has(item.itemName.toLowerCase())}
-              />
+              <Fragment key={item.itemId}>
+                <ItemCard
+                  itemId={item.itemId}
+                  itemName={item.itemName}
+                  chineseItemName={item.chineseItemName}
+                  monsterCount={item.monsterCount}
+                  onCardClick={onItemCardClick}
+                  isFavorite={isItemFavorite(item.itemId)}
+                  onToggleFavorite={onToggleItemFavorite}
+                  source={item.source}
+                  reqLevel={
+                    itemAttributesMap.get(item.itemId)?.req_level
+                    ?? (item.source.fromGacha ? getGachaItemReqLevel(gachaMachines, item.itemId) : null)
+                  }
+                  index={index}
+                  fromMerchant={merchantItemIndex.has(item.itemName.toLowerCase())}
+                />
+                {/* 每 8 張卡片後插入廣告 */}
+                {(index + 1) % 8 === 0 && index < displayedItems.length - 1 && (
+                  <AdSenseCard className="col-span-1" />
+                )}
+              </Fragment>
             ))}
           </div>
 
