@@ -356,6 +356,7 @@
   "filter.itemCategory.potion": "Potion",
   "filter.itemCategory.projectile": "Projectile",
   "filter.jobClass": "Job Class",
+  "filter.jobClass.all": "All Jobs",
   "filter.jobClass.beginner": "Beginner",
   "filter.jobClass.warrior": "Warrior",
   "filter.jobClass.magician": "Magician",
