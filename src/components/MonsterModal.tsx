@@ -7,6 +7,8 @@ import { DropItemList } from './DropItemList'
 import { MonsterStatsCard } from './MonsterStatsCard'
 import { Toast } from './Toast'
 import { BaseModal } from './common/BaseModal'
+import { AdSenseDisplay } from './adsense/AdSenseDisplay'
+import { AdSenseAnchor } from './adsense/AdSenseAnchor'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
@@ -222,6 +224,9 @@ export function MonsterModal({
           </button>
         </>
       }
+      floatingLeftAd={<AdSenseDisplay />}
+      floatingRightAd={<AdSenseDisplay />}
+      floatingTopAd={<AdSenseAnchor />}
     >
       {/* 截圖範圍 */}
       <div ref={screenshotRef} className="bg-white dark:bg-gray-800 rounded-xl flex-1 flex flex-col min-h-0 overflow-hidden">
