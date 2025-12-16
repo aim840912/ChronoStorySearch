@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState, useRef } from 'react'
-import type { DropsEssential, ItemAttributesEssential } from '@/types'
+import type { DropsEssential, ItemAttributesEssential, JobClass } from '@/types'
 import { DropItemCard } from './DropItemCard'
 import { DropItemList } from './DropItemList'
 import { MonsterStatsCard } from './MonsterStatsCard'
@@ -75,6 +75,10 @@ export function MonsterModal({
   const [dropFilter, setDropFilter] = useState<'all' | 'equipment' | 'scroll' | 'other'>('all')
   const [isDropFilterOpen, setIsDropFilterOpen] = useState(false)
 
+  // 職業篩選狀態（僅在裝備模式下啟用）
+  const [jobFilter, setJobFilter] = useState<'all' | JobClass>('all')
+  const [isJobFilterOpen, setIsJobFilterOpen] = useState(false)
+
   // 懶加載怪物資訊資料
   const {
     data: mobInfoData,
@@ -103,9 +107,24 @@ export function MonsterModal({
 
   // 過濾後的掉落物品
   const filteredDrops = useMemo(() => {
-    if (dropFilter === 'all') return monsterDrops
-    return monsterDrops.filter(drop => getItemCategory(drop.itemId) === dropFilter)
-  }, [monsterDrops, dropFilter, itemAttributesMap])
+    let result = monsterDrops
+
+    // 類別篩選
+    if (dropFilter !== 'all') {
+      result = result.filter(drop => getItemCategory(drop.itemId) === dropFilter)
+    }
+
+    // 職業篩選（僅在裝備模式下啟用）
+    if (dropFilter === 'equipment' && jobFilter !== 'all') {
+      result = result.filter(drop => {
+        const attrs = itemAttributesMap.get(drop.itemId)
+        if (!attrs?.equipment_classes) return false
+        return attrs.equipment_classes[jobFilter] === true
+      })
+    }
+
+    return result
+  }, [monsterDrops, dropFilter, jobFilter, itemAttributesMap])
 
   // 從 allDrops 查找怪物數據（用於獲取中英文名稱）
   const monsterData = useMemo(() => {
@@ -327,6 +346,10 @@ export function MonsterModal({
                           key={filter}
                           onClick={() => {
                             setDropFilter(filter)
+                            // 當離開裝備模式時重置職業篩選
+                            if (filter !== 'equipment') {
+                              setJobFilter('all')
+                            }
                             setIsDropFilterOpen(false)
                           }}
                           className={`w-full px-3 py-1.5 text-left text-sm transition-colors ${
@@ -341,6 +364,45 @@ export function MonsterModal({
                     </div>
                   )}
                 </div>
+                {/* 職業篩選下拉選單 - 僅在裝備模式時顯示 */}
+                {dropFilter === 'equipment' && (
+                  <div className="relative">
+                    <button
+                      onClick={() => setIsJobFilterOpen(!isJobFilterOpen)}
+                      className="px-3 py-2 text-sm rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors flex items-center gap-1.5"
+                    >
+                      {t(`filter.jobClass.${jobFilter}`)}
+                      <svg
+                        className={`w-4 h-4 transition-transform ${isJobFilterOpen ? 'rotate-180' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    {isJobFilterOpen && (
+                      <div className="absolute top-full left-0 mt-1 w-32 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 z-50 py-1">
+                        {(['all', 'warrior', 'magician', 'bowman', 'thief', 'pirate', 'beginner'] as const).map((job) => (
+                          <button
+                            key={job}
+                            onClick={() => {
+                              setJobFilter(job)
+                              setIsJobFilterOpen(false)
+                            }}
+                            className={`w-full px-3 py-1.5 text-left text-sm transition-colors ${
+                              jobFilter === job
+                                ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300'
+                                : 'hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300'
+                            }`}
+                          >
+                            {t(`filter.jobClass.${job}`)}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
                 {/* 視圖切換按鈕 */}
                 <button
                   onClick={() => setViewMode(viewMode === 'grid' ? 'list' : 'grid')}

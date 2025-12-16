@@ -356,6 +356,7 @@
   "filter.itemCategory.potion": "藥水",
   "filter.itemCategory.projectile": "投擲物",
   "filter.jobClass": "職業",
+  "filter.jobClass.all": "全部職業",
   "filter.jobClass.beginner": "初心者",
   "filter.jobClass.warrior": "戰士",
   "filter.jobClass.magician": "法師",
