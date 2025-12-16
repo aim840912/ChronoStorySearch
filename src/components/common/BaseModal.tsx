@@ -28,6 +28,12 @@ export interface BaseModalProps {
   floatingLeft?: ReactNode
   /** 右側懸浮內容（固定在 Modal 右邊框外側） */
   floatingRight?: ReactNode
+  /** 左側廣告區（垂直置中，僅桌面版顯示） */
+  floatingLeftAd?: ReactNode
+  /** 右側廣告區（垂直置中，僅桌面版顯示） */
+  floatingRightAd?: ReactNode
+  /** 頂部廣告區（Modal 上方，僅手機/平板版顯示） */
+  floatingTopAd?: ReactNode
 }
 
 /**
@@ -60,6 +66,9 @@ export function BaseModal({
   onEscape,
   floatingLeft,
   floatingRight,
+  floatingLeftAd,
+  floatingRightAd,
+  floatingTopAd,
 }: BaseModalProps) {
   // Hydration 安全：確保只在客戶端渲染
   const [mounted, setMounted] = useState(false)
@@ -135,6 +144,33 @@ export function BaseModal({
             onClick={(e) => e.stopPropagation()}
           >
             {floatingRight}
+          </div>
+        )}
+        {/* 左側廣告區（底部對齊，僅桌面版 >= 1120px 顯示） */}
+        {floatingLeftAd && (
+          <div
+            className="absolute right-[calc(100%_+_8px)] bottom-0 z-10 hidden min-[1120px]:block"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {floatingLeftAd}
+          </div>
+        )}
+        {/* 右側廣告區（底部對齊，僅桌面版 >= 1120px 顯示） */}
+        {floatingRightAd && (
+          <div
+            className="absolute left-[calc(100%_+_8px)] bottom-0 z-10 hidden min-[1120px]:block"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {floatingRightAd}
+          </div>
+        )}
+        {/* 頂部廣告區（Modal 上方，僅手機/平板版 < 1120px 顯示） */}
+        {floatingTopAd && (
+          <div
+            className="w-full mb-2 min-[1120px]:hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {floatingTopAd}
           </div>
         )}
         {/* Modal 主容器 */}
