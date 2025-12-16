@@ -77,6 +77,10 @@ export function useLazyItemDetailed(itemId: number | null) {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<Error | null>(null)
 
+  // 追蹤目前正在處理的 itemId
+  // 用於偵測「首次渲染時 useEffect 還未執行」的情況
+  const [activeItemId, setActiveItemId] = useState<number | null>(null)
+
   // 追蹤當前請求以處理競態條件
   const currentRequestRef = useRef<number | null>(null)
 
@@ -85,6 +89,7 @@ export function useLazyItemDetailed(itemId: number | null) {
       setData(null)
       setError(null)
       setIsLoading(false)
+      setActiveItemId(null)
       currentRequestRef.current = null
       return
     }
@@ -95,6 +100,7 @@ export function useLazyItemDetailed(itemId: number | null) {
     setData(null)
     setError(null)
     setIsLoading(true)
+    setActiveItemId(itemId)
     currentRequestRef.current = itemId
 
     const loadData = async () => {
@@ -147,7 +153,16 @@ export function useLazyItemDetailed(itemId: number | null) {
     loadData()
   }, [itemId])
 
-  return { data, isLoading, error }
+  // 關鍵修復：推導正確的載入狀態
+  // 返回 true 如果：
+  // 1. 有 itemId 需要載入
+  // 2. 且：isLoading 為 true（正在載入）
+  //    或：activeItemId !== itemId（useEffect 還未執行）
+  const effectiveIsLoading = itemId !== null && (
+    isLoading || activeItemId !== itemId
+  )
+
+  return { data, isLoading: effectiveIsLoading, error }
 }
 
 /**
