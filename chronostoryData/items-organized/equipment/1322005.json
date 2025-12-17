@@ -25,5 +25,12 @@
     "overallCategory": "Equip",
     "category": "One-Handed Weapon",
     "subCategory": "One-Handed Blunt Weapon"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 19,
+      "min": 19,
+      "max": 19
+    }
   }
 }

@@ -17,20 +17,13 @@
     "reqLUK": 0,
     "reqJob": 0,
     "reqLevelEquip": 35,
-    "tuc": 5,
-    "incMDD": 15
+    "tuc": 5
   },
   "typeInfo": {
     "overallCategory": "Equip",
     "category": "Accessory",
     "subCategory": "Earrings"
   },
-  "randomStats": {
-    "incMDD": {
-      "base": 15,
-      "min": 0,
-      "max": 33
-    }
-  },
+  "randomStats": {},
   "isGachapon": true
 }

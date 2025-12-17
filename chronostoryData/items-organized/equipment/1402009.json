@@ -16,7 +16,8 @@
     "reqJob": 0,
     "price": 1,
     "tuc": 7,
-    "incPAD": 20
+    "incPAD": 20,
+    "attackSpeed": 5
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -26,8 +27,8 @@
   "randomStats": {
     "incPAD": {
       "base": 20,
-      "min": 19,
-      "max": 21
+      "min": 20,
+      "max": 20
     }
   },
   "fetchedFrom": "chronostory-api"

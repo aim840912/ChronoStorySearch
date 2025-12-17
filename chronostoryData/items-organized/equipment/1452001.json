@@ -18,7 +18,6 @@
     "reqJob": 4,
     "reqLevelEquip": 20,
     "tuc": 7,
-    "incDEX": 1,
     "incPAD": 35,
     "attackSpeed": 6
   },
@@ -28,11 +27,6 @@
     "subCategory": "Bow"
   },
   "randomStats": {
-    "incDEX": {
-      "base": 1,
-      "min": 0,
-      "max": 3
-    },
     "incPAD": {
       "base": 35,
       "min": 34,

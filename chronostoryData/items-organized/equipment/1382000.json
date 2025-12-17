@@ -20,7 +20,7 @@
     "tuc": 7,
     "incPAD": 20,
     "incMAD": 25,
-    "attackSpeed": 8
+    "attackSpeed": 6
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -30,12 +30,12 @@
   "randomStats": {
     "incPAD": {
       "base": 20,
-      "min": 19,
+      "min": 20,
       "max": 21
     },
     "incMAD": {
       "base": 25,
-      "min": 24,
+      "min": 25,
       "max": 26
     }
   }

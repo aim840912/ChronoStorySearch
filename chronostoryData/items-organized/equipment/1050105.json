@@ -18,8 +18,8 @@
     "reqJob": 2,
     "reqLevelEquip": 98,
     "tuc": 10,
-    "incINT": 7,
-    "incLUK": 4,
+    "incINT": 3,
+    "incLUK": 7,
     "incMMP": 45,
     "incPDD": 84,
     "incMDD": 42
@@ -31,14 +31,14 @@
   },
   "randomStats": {
     "incINT": {
+      "base": 3,
+      "min": 0,
+      "max": 13
+    },
+    "incLUK": {
       "base": 7,
       "min": 0,
       "max": 17
-    },
-    "incLUK": {
-      "base": 4,
-      "min": 0,
-      "max": 14
     },
     "incMMP": {
       "base": 45,

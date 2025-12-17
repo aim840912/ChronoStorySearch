@@ -30,7 +30,7 @@
   "randomStats": {
     "incMAD": {
       "base": 7,
-      "min": 4,
+      "min": 5,
       "max": 10
     },
     "incPDD": {

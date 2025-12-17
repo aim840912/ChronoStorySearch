@@ -20,7 +20,7 @@
     "tuc": 10,
     "incSTR": 4,
     "incMHP": 10,
-    "incPDD": 45
+    "incPDD": 40
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -39,9 +39,9 @@
       "max": 50
     },
     "incPDD": {
-      "base": 45,
-      "min": 5,
-      "max": 85
+      "base": 40,
+      "min": 0,
+      "max": 80
     }
   },
   "isGachapon": true

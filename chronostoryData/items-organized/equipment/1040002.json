@@ -24,5 +24,12 @@
     "overallCategory": "Equip",
     "category": "Armor",
     "subCategory": "Top"
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 3,
+      "min": 3,
+      "max": 3
+    }
   }
 }

@@ -18,8 +18,10 @@
     "reqJob": 0,
     "reqLevelEquip": 10,
     "tuc": 5,
-    "incPDD": 3,
-    "incMDD": 1
+    "incPDD": 10,
+    "incMDD": 10,
+    "incMHP": 100,
+    "incMMP": 100
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -27,15 +29,25 @@
     "subCategory": "Glove"
   },
   "randomStats": {
+    "incMHP": {
+      "base": 100,
+      "min": 95,
+      "max": 105
+    },
+    "incMMP": {
+      "base": 100,
+      "min": 95,
+      "max": 105
+    },
     "incPDD": {
-      "base": 3,
-      "min": 0,
-      "max": 8
+      "base": 10,
+      "min": 5,
+      "max": 15
     },
     "incMDD": {
-      "base": 1,
-      "min": 0,
-      "max": 6
+      "base": 10,
+      "min": 5,
+      "max": 15
     }
   },
   "isGachapon": true

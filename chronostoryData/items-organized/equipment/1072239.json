@@ -31,12 +31,12 @@
   "randomStats": {
     "incDEX": {
       "base": 3,
-      "min": 0,
+      "min": 1,
       "max": 6
     },
     "incINT": {
       "base": 3,
-      "min": 0,
+      "min": 1,
       "max": 6
     },
     "incPDD": {

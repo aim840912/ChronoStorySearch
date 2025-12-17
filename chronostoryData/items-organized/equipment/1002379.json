@@ -18,8 +18,7 @@
     "reqJob": 1,
     "reqLevelEquip": 100,
     "tuc": 7,
-    "incSTR": 4,
-    "incDEX": 1,
+    "incSTR": 3,
     "incPDD": 100
   },
   "typeInfo": {
@@ -29,14 +28,9 @@
   },
   "randomStats": {
     "incSTR": {
-      "base": 4,
+      "base": 3,
       "min": 0,
-      "max": 9
-    },
-    "incDEX": {
-      "base": 1,
-      "min": 0,
-      "max": 6
+      "max": 13
     },
     "incPDD": {
       "base": 100,

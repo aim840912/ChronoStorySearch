@@ -29,7 +29,7 @@
   "randomStats": {
     "incPAD": {
       "base": 13,
-      "min": 12,
+      "min": 13,
       "max": 14
     }
   }

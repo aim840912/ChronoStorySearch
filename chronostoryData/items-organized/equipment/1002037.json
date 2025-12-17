@@ -20,8 +20,7 @@
     "tuc": 7,
     "incMHP": 10,
     "incMMP": 10,
-    "incPDD": 12,
-    "incMDD": 40
+    "incPDD": 12
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -43,11 +42,6 @@
       "base": 12,
       "min": 0,
       "max": 27
-    },
-    "incMDD": {
-      "base": 40,
-      "min": 25,
-      "max": 55
     }
   }
 }
