@@ -20,7 +20,7 @@
     "tuc": 7,
     "incLUK": 6,
     "incPAD": 34,
-    "incPDD": 5,
+    "incPDD": 4,
     "attackSpeed": 4
   },
   "typeInfo": {
@@ -36,13 +36,13 @@
     },
     "incPAD": {
       "base": 34,
-      "min": 30,
+      "min": 31,
       "max": 38
     },
     "incPDD": {
-      "base": 5,
+      "base": 4,
       "min": 0,
-      "max": 40
+      "max": 39
     }
   },
   "isGachapon": true

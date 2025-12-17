@@ -30,12 +30,12 @@
   "randomStats": {
     "incPAD": {
       "base": 80,
-      "min": 76,
+      "min": 77,
       "max": 84
     },
     "incSpeed": {
       "base": 10,
-      "min": 6,
+      "min": 7,
       "max": 14
     }
   },

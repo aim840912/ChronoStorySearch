@@ -26,5 +26,17 @@
     "overallCategory": "Equip",
     "category": "One-Handed Weapon",
     "subCategory": "One-Handed Sword"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 15,
+      "min": 15,
+      "max": 15
+    },
+    "incMAD": {
+      "base": 15,
+      "min": 15,
+      "max": 15
+    }
   }
 }

@@ -19,7 +19,7 @@
     "reqLevelEquip": 70,
     "tuc": 7,
     "incPAD": 87,
-    "attackSpeed": 7
+    "attackSpeed": 5
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -29,7 +29,7 @@
   "randomStats": {
     "incPAD": {
       "base": 87,
-      "min": 83,
+      "min": 84,
       "max": 91
     }
   },

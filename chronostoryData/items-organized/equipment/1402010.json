@@ -16,7 +16,8 @@
     "reqJob": 0,
     "price": 1,
     "tuc": 7,
-    "incPAD": 48
+    "incPAD": 48,
+    "attackSpeed": 5
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -26,7 +27,7 @@
   "randomStats": {
     "incPAD": {
       "base": 48,
-      "min": 46,
+      "min": 47,
       "max": 50
     }
   },

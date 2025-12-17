@@ -36,7 +36,7 @@
     },
     "incPAD": {
       "base": 26,
-      "min": 23,
+      "min": 24,
       "max": 29
     },
     "incEVA": {

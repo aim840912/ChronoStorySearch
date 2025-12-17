@@ -18,7 +18,7 @@
     "reqJob": 4,
     "reqLevelEquip": 80,
     "tuc": 7,
-    "incPAD": 88,
+    "incPAD": 89,
     "incACC": 1,
     "attackSpeed": 6
   },
@@ -29,9 +29,9 @@
   },
   "randomStats": {
     "incPAD": {
-      "base": 88,
-      "min": 84,
-      "max": 92
+      "base": 89,
+      "min": 85,
+      "max": 93
     },
     "incACC": {
       "base": 1,

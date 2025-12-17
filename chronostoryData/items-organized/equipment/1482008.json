@@ -16,7 +16,8 @@
     "reqJob": 16,
     "price": 240000,
     "tuc": 7,
-    "incPAD": 58
+    "incPAD": 58,
+    "attackSpeed": 5
   },
   "typeInfo": {
     "overallCategory": "Equip",

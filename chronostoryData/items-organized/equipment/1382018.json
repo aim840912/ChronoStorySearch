@@ -20,7 +20,7 @@
     "tuc": 7,
     "incPAD": 35,
     "incMAD": 50,
-    "attackSpeed": 8
+    "attackSpeed": 6
   },
   "typeInfo": {
     "overallCategory": "Equip",

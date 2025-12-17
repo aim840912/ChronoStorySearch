@@ -16,7 +16,7 @@
     "reqLUK": 0,
     "reqJob": 8,
     "price": 2500,
-    "incPAD": 20
+    "incPAD": 24
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -25,9 +25,9 @@
   },
   "randomStats": {
     "incPAD": {
-      "base": 20,
-      "min": 20,
-      "max": 21
+      "base": 24,
+      "min": 24,
+      "max": 25
     }
   },
   "fetchedFrom": "chronostory-api",

@@ -36,12 +36,12 @@
     },
     "incMHP": {
       "base": 25,
-      "min": 12,
+      "min": 13,
       "max": 38
     },
     "incMMP": {
       "base": 25,
-      "min": 12,
+      "min": 13,
       "max": 38
     },
     "incMDD": {

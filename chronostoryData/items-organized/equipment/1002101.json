@@ -19,7 +19,6 @@
     "reqLevelEquip": 55,
     "tuc": 7,
     "incSTR": 1,
-    "incMMP": 30,
     "incPDD": 55
   },
   "typeInfo": {
@@ -33,14 +32,9 @@
       "min": 0,
       "max": 7
     },
-    "incMMP": {
-      "base": 30,
-      "min": 2,
-      "max": 58
-    },
     "incPDD": {
       "base": 55,
-      "min": 27,
+      "min": 28,
       "max": 83
     }
   },

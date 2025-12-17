@@ -31,7 +31,7 @@
   "randomStats": {
     "incPAD": {
       "base": 90,
-      "min": 85,
+      "min": 86,
       "max": 95
     },
     "incEVA": {
@@ -41,7 +41,7 @@
     },
     "incSpeed": {
       "base": 8,
-      "min": 3,
+      "min": 4,
       "max": 13
     }
   },

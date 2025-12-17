@@ -19,7 +19,8 @@
     "reqLevelEquip": 80,
     "tuc": 7,
     "incPDD": 64,
-    "incMDD": 25
+    "incMDD": 25,
+    "incSTR": 2
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -27,6 +28,11 @@
     "subCategory": "Shield"
   },
   "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 10
+    },
     "incPDD": {
       "base": 64,
       "min": 24,

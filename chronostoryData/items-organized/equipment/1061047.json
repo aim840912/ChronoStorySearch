@@ -41,7 +41,7 @@
     },
     "incPDD": {
       "base": 18,
-      "min": 1,
+      "min": 2,
       "max": 35
     },
     "incMDD": {

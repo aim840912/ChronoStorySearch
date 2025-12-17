@@ -28,7 +28,7 @@
   "randomStats": {
     "incPDD": {
       "base": 18,
-      "min": 5,
+      "min": 6,
       "max": 31
     }
   }

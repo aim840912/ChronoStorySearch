@@ -36,12 +36,12 @@
     },
     "incACC": {
       "base": 5,
-      "min": 1,
+      "min": 2,
       "max": 9
     },
     "incEVA": {
       "base": 5,
-      "min": 1,
+      "min": 2,
       "max": 9
     }
   }
