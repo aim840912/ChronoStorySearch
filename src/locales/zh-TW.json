@@ -195,6 +195,8 @@
   "monster.onlyThisMonster": "僅此怪物",
   "item.attributes": "物品屬性",
   "item.noAttributes": "無屬性資料",
+  "item.loadFailed": "屬性載入失敗",
+  "retry": "重新載入",
   "item.gachaSources": "轉蛋機來源",
   "item.merchantSources": "商人販售",
   "item.noSources": "此物品無任何掉落來源",

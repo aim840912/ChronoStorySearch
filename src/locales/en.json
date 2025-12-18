@@ -195,6 +195,8 @@
   "monster.onlyThisMonster": "Only this monster",
   "item.attributes": "Item Attributes",
   "item.noAttributes": "No attributes available",
+  "item.loadFailed": "Failed to load attributes",
+  "retry": "Reload",
   "item.gachaSources": "Gacha Machine Sources",
   "item.merchantSources": "Merchant Shop",
   "item.noSources": "This item has no drop sources",
