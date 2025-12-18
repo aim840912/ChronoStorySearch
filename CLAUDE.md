@@ -115,6 +115,33 @@ public/images/        # 本地圖片資源
 
 ---
 
+## 資料維護腳本
+
+### 裝備資料驗證與修正
+
+| 腳本 | 用途 |
+|------|------|
+| `node scripts/compare-random-stats.js` | 比對本地 metaInfo 與 API stats，產生 `random-stats-diff.md` |
+| `node scripts/fix-equipment-stats.js` | 依 diff 報告修正 metaInfo 並重算 randomStats |
+| `node scripts/recalc-random-stats.js` | 重新計算所有裝備的 randomStats |
+
+### randomStats 計算公式
+
+```
+O = reqLevel / 10（套服 Overall 類型 ×2）
+
+A 值依屬性類型：
+- 主屬性 (STR/DEX/INT/LUK): A = O / 屬性數量
+- 攻擊/魔攻/速度: A = O / 2
+- 命中/迴避: A = O
+- 跳躍: A = O / 4
+- HP/MP/物防/魔防: A = O × 5
+
+randomStats = { base, min: max(0, base-A), max: base+A }
+```
+
+---
+
 ## 環境變數
 
 必要的環境變數（參考 `.env.example`）：
