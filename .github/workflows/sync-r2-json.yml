@@ -1,0 +1,123 @@
+name: Sync JSON to R2
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'chronostoryData/**/*.json'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install rclone
+        run: |
+          curl https://rclone.org/install.sh | sudo bash
+
+      - name: Configure rclone for R2
+        env:
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+        run: |
+          mkdir -p ~/.config/rclone
+          cat > ~/.config/rclone/rclone.conf << EOF
+          [r2]
+          type = s3
+          provider = Cloudflare
+          access_key_id = ${R2_ACCESS_KEY_ID}
+          secret_access_key = ${R2_SECRET_ACCESS_KEY}
+          endpoint = https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com
+          acl = private
+          EOF
+
+      - name: Get changed JSON files
+        id: changed
+        run: |
+          # Get list of changed JSON files in chronostoryData
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- 'chronostoryData/**/*.json' | tr '\n' ' ')
+          echo "files=$CHANGED_FILES" >> $GITHUB_OUTPUT
+          echo "Changed files: $CHANGED_FILES"
+
+      - name: Sync changed files to R2
+        if: steps.changed.outputs.files != ''
+        env:
+          CHANGED_FILES: ${{ steps.changed.outputs.files }}
+        run: |
+          for file in $CHANGED_FILES; do
+            if [ -f "$file" ]; then
+              # Convert local path to R2 path
+              # chronostoryData/items-organized/equipment/1002004.json -> data/items-organized/equipment/1002004.json
+              R2_PATH=$(echo "$file" | sed 's|^chronostoryData/|data/|')
+              R2_DIR=$(dirname "$R2_PATH")
+
+              echo "Uploading $file to r2:maplestory-images/$R2_PATH"
+              rclone copy "$file" "r2:maplestory-images/$R2_DIR/"
+            fi
+          done
+
+      - name: Update version numbers
+        if: steps.changed.outputs.files != ''
+        env:
+          CHANGED_FILES: ${{ steps.changed.outputs.files }}
+        run: |
+          node << 'EOF'
+          const fs = require('fs');
+
+          const versionsPath = './data/r2-versions.json';
+          const versions = JSON.parse(fs.readFileSync(versionsPath, 'utf8'));
+
+          const changedFiles = process.env.CHANGED_FILES.trim().split(' ').filter(f => f);
+          let updated = false;
+
+          for (const file of changedFiles) {
+            // Parse file path to get category and ID
+            const match = file.match(/chronostoryData\/(items-organized|drops-by-monster|drops-by-item)\/(?:equipment|consumable|etc\/)?(\d+)\.json/);
+            if (!match) continue;
+
+            const [, category, id] = match;
+
+            // Ensure category exists
+            if (!versions.json[category]) {
+              versions.json[category] = {};
+            }
+
+            // Increment version or set to "1"
+            const current = versions.json[category][id];
+            versions.json[category][id] = current ? String(parseInt(current) + 1) : "1";
+            updated = true;
+            console.log(`Updated ${category}/${id} to version ${versions.json[category][id]}`);
+          }
+
+          if (updated) {
+            fs.writeFileSync(versionsPath, JSON.stringify(versions, null, 2) + '\n');
+            console.log('Saved r2-versions.json');
+          }
+          EOF
+
+      - name: Commit version updates
+        if: steps.changed.outputs.files != ''
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet data/r2-versions.json; then
+            echo "No version changes to commit"
+          else
+            git add data/r2-versions.json
+            git commit -m "chore: auto-update R2 JSON versions [skip ci]"
+            git push
+          fi

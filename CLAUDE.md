@@ -137,7 +137,21 @@ git add data/available-images.json data/r2-versions.json
 git commit -m "chore: sync R2 image manifest"
 ```
 
-**手動更新 JSON 版本號**（當 JSON 檔案更新時）：
+**JSON 自動同步**（GitHub Actions）：
+
+當 push 到 `main` 分支時，若 `chronostoryData/` 目錄有 JSON 變更：
+1. 自動上傳變更的 JSON 到 R2
+2. 自動更新 `r2-versions.json` 版本號
+3. 自動 commit 回 repo
+
+**需要設定的 GitHub Secrets**：
+| Secret | 說明 |
+|--------|------|
+| `R2_ACCESS_KEY_ID` | Cloudflare R2 Access Key |
+| `R2_SECRET_ACCESS_KEY` | Cloudflare R2 Secret Key |
+| `R2_ACCOUNT_ID` | Cloudflare Account ID |
+
+**手動更新 JSON 版本號**（如需手動覆蓋）：
 編輯 `data/r2-versions.json`：
 ```json
 { "json": { "items-organized": { "1234": "2" } } }
@@ -146,6 +160,7 @@ git commit -m "chore: sync R2 image manifest"
 **問題排查**：
 - 新圖片不顯示 → 執行 `npm run r2:sync-manifest` 更新清單
 - 更新後顯示舊版 → 執行 `npm run r2:sync-manifest`（自動檢測並更新版本號）
+- JSON 未同步到 R2 → 檢查 GitHub Actions 執行狀態
 
 ---
 
