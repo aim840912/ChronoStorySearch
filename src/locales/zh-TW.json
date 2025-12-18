@@ -197,6 +197,8 @@
   "item.noAttributes": "無屬性資料",
   "item.loadFailed": "屬性載入失敗",
   "retry": "重新載入",
+  "error.versionMismatch": "偵測到網站版本更新，請重新整理頁面",
+  "error.refreshPage": "重新整理頁面",
   "item.gachaSources": "轉蛋機來源",
   "item.merchantSources": "商人販售",
   "item.noSources": "此物品無任何掉落來源",
