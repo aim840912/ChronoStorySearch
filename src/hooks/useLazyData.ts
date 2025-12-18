@@ -104,8 +104,9 @@ export function useLazyItemDetailed(itemId: number | null) {
     currentRequestRef.current = itemId
 
     const loadData = async () => {
+      // 在 try 外計算 folder，讓 catch 也能存取
+      const folder = getItemFolder(itemId)
       try {
-        const folder = getItemFolder(itemId)
         clientLogger.info(`開始載入物品 ${itemId} 的資料（from ${folder}/）...`)
 
         // 動態 import 單一物品的 JSON（從 chronostoryData/items-organized/）
@@ -141,7 +142,12 @@ export function useLazyItemDetailed(itemId: number | null) {
         }
         const error = err instanceof Error ? err : new Error(`載入物品 ${itemId} 詳細資料失敗`)
         setError(error)
-        clientLogger.debug(`物品 ${itemId} 無 detailed 檔案，將嘗試從其他來源載入`, err)
+        // 詳細記錄載入失敗的資訊，便於除錯
+        clientLogger.warn(`物品 ${itemId} 載入失敗`, {
+          folder,
+          path: `items-organized/${folder}/${itemId}.json`,
+          errorMessage: err instanceof Error ? err.message : String(err),
+        })
       } finally {
         // 只有當請求仍為最新時才更新 loading 狀態
         if (currentRequestRef.current === itemId) {
