@@ -18,9 +18,9 @@
     "reqJob": 1,
     "reqLevelEquip": 55,
     "tuc": 7,
-    "incDEX": 1,
     "incMMP": 30,
-    "incPDD": 55
+    "incPDD": 55,
+    "incACC": 1
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -28,19 +28,19 @@
     "subCategory": "Hat"
   },
   "randomStats": {
-    "incDEX": {
+    "incACC": {
       "base": 1,
       "min": 0,
       "max": 7
     },
     "incMMP": {
       "base": 30,
-      "min": 2,
+      "min": 3,
       "max": 58
     },
     "incPDD": {
       "base": 55,
-      "min": 27,
+      "min": 28,
       "max": 83
     }
   },

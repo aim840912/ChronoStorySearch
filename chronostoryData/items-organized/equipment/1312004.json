@@ -25,5 +25,12 @@
     "overallCategory": "Equip",
     "category": "One-Handed Weapon",
     "subCategory": "One-Handed Axe"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 17,
+      "min": 17,
+      "max": 17
+    }
   }
 }

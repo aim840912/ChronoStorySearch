@@ -18,7 +18,7 @@
     "reqJob": 1,
     "reqLevelEquip": 70,
     "tuc": 7,
-    "incPAD": 83,
+    "incPAD": 82,
     "attackSpeed": 6
   },
   "typeInfo": {
@@ -28,9 +28,9 @@
   },
   "randomStats": {
     "incPAD": {
-      "base": 83,
+      "base": 82,
       "min": 79,
-      "max": 87
+      "max": 86
     }
   },
   "isGachapon": true

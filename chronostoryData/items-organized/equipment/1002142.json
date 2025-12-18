@@ -30,7 +30,7 @@
   "randomStats": {
     "incMMP": {
       "base": 20,
-      "min": 2,
+      "min": 3,
       "max": 38
     },
     "incPDD": {
@@ -40,7 +40,7 @@
     },
     "incMDD": {
       "base": 45,
-      "min": 27,
+      "min": 28,
       "max": 63
     }
   },

@@ -119,7 +119,7 @@ export function DropItemCard({
           alt={displayItemName}
           width={64}
           height={64}
-          className="object-contain flex-shrink-0"
+          className="w-16 h-16 object-contain flex-shrink-0"
           loading="lazy"
         />
         <div className="flex-1">

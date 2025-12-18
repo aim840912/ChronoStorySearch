@@ -19,8 +19,7 @@
     "reqLevelEquip": 50,
     "tuc": 7,
     "incSTR": 2,
-    "incPDD": 54,
-    "incMDD": 24
+    "incPDD": 54
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -37,11 +36,6 @@
       "base": 54,
       "min": 29,
       "max": 79
-    },
-    "incMDD": {
-      "base": 24,
-      "min": 0,
-      "max": 49
     }
   },
   "isGachapon": true

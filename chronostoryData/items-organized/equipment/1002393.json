@@ -19,7 +19,8 @@
     "reqLevelEquip": 10,
     "tuc": 7,
     "incPDD": 8,
-    "incSpeed": 3
+    "incSpeed": 5,
+    "incJump": 5
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -28,9 +29,14 @@
   },
   "randomStats": {
     "incSpeed": {
-      "base": 3,
-      "min": 2,
-      "max": 4
+      "base": 5,
+      "min": 5,
+      "max": 6
+    },
+    "incJump": {
+      "base": 5,
+      "min": 5,
+      "max": 5
     },
     "incPDD": {
       "base": 8,

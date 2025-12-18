@@ -23,15 +23,15 @@
     "subCategory": "Top"
   },
   "randomStats": {
-    "incPDD": {
-      "base": 26,
-      "min": 11,
-      "max": 41
-    },
     "incMMP": {
       "base": 20,
       "min": 5,
       "max": 35
+    },
+    "incPDD": {
+      "base": 26,
+      "min": 11,
+      "max": 41
     }
   }
 }

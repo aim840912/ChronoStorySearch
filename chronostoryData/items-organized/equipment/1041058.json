@@ -15,7 +15,8 @@
     "reqLUK": 30,
     "incPDD": 22,
     "tuc": 7,
-    "reqJob": 8
+    "reqJob": 8,
+    "incMHP": 20
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -23,6 +24,11 @@
     "subCategory": "Top"
   },
   "randomStats": {
+    "incMHP": {
+      "base": 20,
+      "min": 8,
+      "max": 33
+    },
     "incPDD": {
       "base": 22,
       "min": 10,

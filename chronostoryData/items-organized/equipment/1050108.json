@@ -20,7 +20,7 @@
     "reqLevelEquip": 100,
     "tuc": 10,
     "incSTR": 6,
-    "incDEX": 7,
+    "incDEX": 5,
     "incPDD": 105,
     "incEVA": 2
   },
@@ -36,9 +36,9 @@
       "max": 16
     },
     "incDEX": {
-      "base": 7,
+      "base": 5,
       "min": 0,
-      "max": 17
+      "max": 15
     },
     "incEVA": {
       "base": 2,

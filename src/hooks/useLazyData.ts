@@ -9,6 +9,11 @@ import type {
   DropsByItemData,
 } from '@/types'
 import { clientLogger } from '@/lib/logger'
+import {
+  getItemDataUrl,
+  getMonsterDropsUrl,
+  getItemDropsUrl,
+} from '@/lib/json-utils'
 import essentialData from '@/../chronostoryData/item-attributes-essential.json'
 
 // ==================== Helper Functions ====================
@@ -104,27 +109,18 @@ export function useLazyItemDetailed(itemId: number | null) {
     currentRequestRef.current = itemId
 
     const loadData = async () => {
+      // 在 try 外計算 folder，讓 catch 也能存取
+      const folder = getItemFolder(itemId)
+      const url = getItemDataUrl(itemId)
       try {
-        const folder = getItemFolder(itemId)
-        clientLogger.info(`開始載入物品 ${itemId} 的資料（from ${folder}/）...`)
+        clientLogger.info(`開始載入物品 ${itemId} 的資料（from R2 CDN）...`)
 
-        // 動態 import 單一物品的 JSON（從 chronostoryData/items-organized/）
-        // 注意：Webpack 需要靜態路徑前綴，所以分開處理每個資料夾
-        let dataModule
-        if (folder === 'equipment') {
-          dataModule = await import(
-            `@/../chronostoryData/items-organized/equipment/${itemId}.json`
-          )
-        } else if (folder === 'consumable') {
-          dataModule = await import(
-            `@/../chronostoryData/items-organized/consumable/${itemId}.json`
-          )
-        } else {
-          dataModule = await import(
-            `@/../chronostoryData/items-organized/etc/${itemId}.json`
-          )
+        // 從 R2 CDN 載入 JSON（避免 Webpack chunk 版本不匹配問題）
+        const response = await fetch(url)
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`)
         }
-        const rawData = dataModule.default as ItemsOrganizedData
+        const rawData = (await response.json()) as ItemsOrganizedData
 
         // 檢查請求是否仍為最新（競態條件防護）
         if (currentRequestRef.current !== itemId) {
@@ -139,9 +135,18 @@ export function useLazyItemDetailed(itemId: number | null) {
         if (currentRequestRef.current !== itemId) {
           return
         }
-        const error = err instanceof Error ? err : new Error(`載入物品 ${itemId} 詳細資料失敗`)
+
+        const error =
+          err instanceof Error
+            ? err
+            : new Error(`載入物品 ${itemId} 詳細資料失敗`)
         setError(error)
-        clientLogger.debug(`物品 ${itemId} 無 detailed 檔案，將嘗試從其他來源載入`, err)
+        // 詳細記錄載入失敗的資訊，便於除錯
+        clientLogger.warn(`物品 ${itemId} 載入失敗`, {
+          folder,
+          url,
+          errorMessage: err instanceof Error ? err.message : String(err),
+        })
       } finally {
         // 只有當請求仍為最新時才更新 loading 狀態
         if (currentRequestRef.current === itemId) {
@@ -266,14 +271,16 @@ export function useLazyDropsDetailed(mobId: number | null) {
     currentRequestRef.current = mobId
 
     const loadData = async () => {
+      const url = getMonsterDropsUrl(mobId)
       try {
-        clientLogger.info(`開始載入怪物 ${mobId} 的 Detailed 掉落資料...`)
+        clientLogger.info(`開始載入怪物 ${mobId} 的掉落資料（from R2 CDN）...`)
 
-        // 動態 import 單一怪物的掉落資料 JSON（從 chronostoryData/drops-by-monster/）
-        const dataModule = await import(
-          `@/../chronostoryData/drops-by-monster/${mobId}.json`
-        )
-        const rawData = dataModule.default
+        // 從 R2 CDN 載入 JSON（避免 Webpack chunk 版本不匹配問題）
+        const response = await fetch(url)
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`)
+        }
+        const rawData = await response.json()
 
         // 檢查請求是否仍為最新（競態條件防護）
         if (currentRequestRef.current !== mobId) {
@@ -292,7 +299,7 @@ export function useLazyDropsDetailed(mobId: number | null) {
         }
         const error = err instanceof Error ? err : new Error(`載入怪物 ${mobId} 掉落資料失敗`)
         setError(error)
-        clientLogger.error(`載入怪物 ${mobId} 掉落資料失敗`, err)
+        clientLogger.error(`載入怪物 ${mobId} 掉落資料失敗`, { url, error: err })
       } finally {
         // 只有當請求仍為最新時才更新 loading 狀態
         if (currentRequestRef.current === mobId) {
@@ -347,14 +354,21 @@ export function useLazyDropsByItem(itemId: number | null) {
     currentRequestRef.current = itemId
 
     const loadData = async () => {
+      const url = getItemDropsUrl(itemId)
       try {
-        clientLogger.info(`開始載入物品 ${itemId} 的掉落怪物資料...`)
+        clientLogger.info(`開始載入物品 ${itemId} 的掉落怪物資料（from R2 CDN）...`)
 
-        // 動態 import 單一物品的掉落資料 JSON
-        const dataModule = await import(
-          `@/../chronostoryData/drops-by-item/${itemId}.json`
-        )
-        const rawData = dataModule.default as DropsByItemData
+        // 從 R2 CDN 載入 JSON（避免 Webpack chunk 版本不匹配問題）
+        const response = await fetch(url)
+        if (!response.ok) {
+          // 404 是正常情況（某些物品只來自轉蛋或商人，沒有怪物掉落）
+          if (response.status === 404) {
+            clientLogger.debug(`物品 ${itemId} 無掉落資料檔案（404）`)
+            return
+          }
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`)
+        }
+        const rawData = (await response.json()) as DropsByItemData
 
         // 檢查請求是否仍為最新（競態條件防護）
         if (currentRequestRef.current !== itemId) {
@@ -376,8 +390,7 @@ export function useLazyDropsByItem(itemId: number | null) {
             ? err
             : new Error(`載入物品 ${itemId} 掉落資料失敗`)
         setError(error)
-        // 使用 debug 而非 error，因為某些物品可能只來自轉蛋或商人，沒有怪物掉落
-        clientLogger.debug(`物品 ${itemId} 無掉落資料檔案`, err)
+        clientLogger.debug(`物品 ${itemId} 掉落資料載入失敗`, { url, error: err })
       } finally {
         // 只有當請求仍為最新時才更新 loading 狀態
         if (currentRequestRef.current === itemId) {

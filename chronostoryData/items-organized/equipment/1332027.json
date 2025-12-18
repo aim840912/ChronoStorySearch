@@ -19,7 +19,6 @@
     "reqLevelEquip": 90,
     "tuc": 7,
     "incPAD": 88,
-    "incEVA": 4,
     "attackSpeed": 4
   },
   "typeInfo": {
@@ -30,13 +29,8 @@
   "randomStats": {
     "incPAD": {
       "base": 88,
-      "min": 83,
+      "min": 84,
       "max": 93
-    },
-    "incEVA": {
-      "base": 4,
-      "min": 0,
-      "max": 13
     }
   },
   "isGachapon": true

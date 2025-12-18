@@ -235,15 +235,17 @@ export function SearchBar({
                 />
               )}
               {onAdvancedFilterToggle && onResetAdvancedFilter && (
-                <ActionButtons
-                  isAdvancedFilterExpanded={isAdvancedFilterExpanded}
-                  onAdvancedFilterToggle={onAdvancedFilterToggle}
-                  advancedFilterCount={advancedFilterCount}
-                  onResetAdvancedFilter={onResetAdvancedFilter}
-                  filterSummary={getFilterSummary()}
-                  abbreviatedFilterSummary={getAbbreviatedFilterSummary()}
-                  fullWidth
-                />
+                <div className="md:hidden flex-1">
+                  <ActionButtons
+                    isAdvancedFilterExpanded={isAdvancedFilterExpanded}
+                    onAdvancedFilterToggle={onAdvancedFilterToggle}
+                    advancedFilterCount={advancedFilterCount}
+                    onResetAdvancedFilter={onResetAdvancedFilter}
+                    filterSummary={getFilterSummary()}
+                    abbreviatedFilterSummary={getAbbreviatedFilterSummary()}
+                    fullWidth
+                  />
+                </div>
               )}
             </div>
           ) : (
@@ -262,7 +264,7 @@ export function SearchBar({
 
               {/* 進階篩選按鈕 - 只在 554-767px 顯示（緊接 FilterTabs） */}
               {onAdvancedFilterToggle && onResetAdvancedFilter && (
-                <div className="hidden min-[554px]:block md:hidden">
+                <div className="hidden min-[554px]:max-md:block">
                   <ActionButtons
                     isAdvancedFilterExpanded={isAdvancedFilterExpanded}
                     onAdvancedFilterToggle={onAdvancedFilterToggle}

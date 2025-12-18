@@ -35,7 +35,7 @@
     },
     "incDEX": {
       "base": 5,
-      "min": 0,
+      "min": 1,
       "max": 10
     },
     "incPDD": {
