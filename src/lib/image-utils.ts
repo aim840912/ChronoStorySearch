@@ -62,7 +62,7 @@ function extractScrollSuccessRate(itemName: string): number | null {
  * 檢查物品是否為卷軸
  * 卷軸 ID 範圍: 2040000 - 2049999
  */
-function isScrollItem(itemId: number): boolean {
+export function isScrollItem(itemId: number): boolean {
   return itemId >= 2040000 && itemId < 2050000
 }
 
