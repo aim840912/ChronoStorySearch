@@ -3,7 +3,7 @@
   "description": {
     "id": 2040926,
     "name": "Scroll for Shield for Magic ATT 15%",
-    "description": "Improves HP on shields..\\nSuccess rate:100%, MaxHP+5",
+    "description": "Improves Magic ATT on Shield.\\nSuccess rate: 15%, Magic ATT +3, INT +2",
     "chineseItemName": "盾牌魔力卷軸15%",
     "chineseNameSource": "gacha"
   },

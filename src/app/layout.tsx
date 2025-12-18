@@ -24,6 +24,11 @@ export const metadata: Metadata = {
   formatDetection: {
     telephone: false,
   },
+  icons: {
+    icon: "https://cdn.chronostorysearch.com/images/chrono.png",
+    shortcut: "https://cdn.chronostorysearch.com/images/chrono.png",
+    apple: "https://cdn.chronostorysearch.com/images/chrono.png",
+  },
 };
 
 export default function RootLayout({

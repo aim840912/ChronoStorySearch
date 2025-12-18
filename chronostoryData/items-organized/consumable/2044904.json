@@ -2,7 +2,7 @@
   "id": 2044904,
   "description": {
     "id": 2044904,
-    "name": "Scroll for Gun for Attack 30%",
+    "name": "Dark Scroll for Gun for ATT 30%",
     "description": "Improves attack on Guns.\\nSuccess rate:30%, weapon att. +5, accuracy+3, DEX+1nIf failed, the item will be destroyed at a 50% rate",
     "chineseItemName": "火槍攻擊詛咒卷軸30%"
   },
@@ -12,9 +12,9 @@
     "mob": 0,
     "slotMax": 0,
     "price": 1,
-    "incDEX": 1,
+    "incDEX": 3,
     "incPAD": 5,
-    "incACC": 3,
+    "incACC": 1,
     "setCompleteCount": 0
   },
   "typeInfo": {
