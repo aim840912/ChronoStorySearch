@@ -11,6 +11,7 @@
     "cash": false,
     "slotMax": 1000,
     "price": 1,
+    "incDEX": 2,
     "setCompleteCount": 0
   },
   "typeInfo": {
