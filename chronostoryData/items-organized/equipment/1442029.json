@@ -32,6 +32,11 @@
       "base": 39,
       "min": 38,
       "max": 40
+    },
+    "incJump": {
+      "base": 5,
+      "min": 5,
+      "max": 5
     }
   },
   "isGachapon": true

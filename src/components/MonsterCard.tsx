@@ -1,12 +1,13 @@
 'use client'
 
-import { memo } from 'react'
+import { memo, useMemo } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { useAutoFitText } from '@/hooks/useAutoFitText'
+import { useDropRelations } from '@/hooks/useDropRelations'
 import { getMonsterDisplayName } from '@/lib/display-name'
-import { getMonsterImageUrl } from '@/lib/image-utils'
-import { BaseCard, CardImage, FavoriteButton, TypeBadge } from './cards'
+import { getItemImageUrl, getMonsterImageUrl } from '@/lib/image-utils'
+import { BaseCard, CardHeader, CardImage, FavoriteButton, TypeBadge } from './cards'
 
 interface MonsterCardProps {
   mobId: number
@@ -43,10 +44,20 @@ export const MonsterCard = memo(function MonsterCard({
   void dropCount
   const { language, t } = useLanguage()
   const { format } = useImageFormat()
+  const { getScrollsForMob } = useDropRelations()
   const isDev = process.env.NODE_ENV === 'development'
 
   const displayMobName = getMonsterDisplayName(mobName, chineseMobName, language)
   const monsterIconUrl = getMonsterImageUrl(mobId, { format })
+
+  // 取得此怪物會掉落的卷軸預覽圖示（全部傳入，由 CardHeader 動態顯示）
+  const allIcons = useMemo(() => {
+    const scrollIds = getScrollsForMob(mobId)
+    return scrollIds.map((scrollId) => ({
+      id: scrollId,
+      imageUrl: getItemImageUrl(scrollId),
+    }))
+  }, [mobId, getScrollsForMob])
 
   // 自動縮放文字以適應兩行
   const { ref: titleRef, fontSize } = useAutoFitText({
@@ -62,21 +73,22 @@ export const MonsterCard = memo(function MonsterCard({
       onClick={() => onCardClick(mobId, displayMobName)}
       index={index}
     >
-      {/* 右上角愛心 - 絕對定位 */}
-      <div className="absolute top-3 right-3">
-        <FavoriteButton
-          isFavorite={isFavorite}
-          onToggle={() => onToggleFavorite(mobId, displayMobName)}
-          ariaLabel={isFavorite ? t('card.unfavorite') : t('card.favorite')}
-        />
-      </div>
-
-      {/* 等級標籤 - 絕對定位在左上角 */}
-      {level !== null && level !== undefined && (
-        <div className="absolute top-3 left-5">
-          <TypeBadge variant="monster" level={level} />
-        </div>
-      )}
+      {/* 頂部區域：標籤 + 預覽圖示 + 愛心 */}
+      <CardHeader
+        badges={
+          level !== null && level !== undefined ? (
+            <TypeBadge variant="monster" level={level} />
+          ) : undefined
+        }
+        allIcons={allIcons}
+        favoriteButton={
+          <FavoriteButton
+            isFavorite={isFavorite}
+            onToggle={() => onToggleFavorite(mobId, displayMobName)}
+            ariaLabel={isFavorite ? t('card.unfavorite') : t('card.favorite')}
+          />
+        }
+      />
 
       {/* 內容：圖片和名稱 - 固定 margin-top 確保位置一致 */}
       <div className="flex items-center gap-4 mt-10">

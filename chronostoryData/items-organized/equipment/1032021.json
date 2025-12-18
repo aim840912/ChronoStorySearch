@@ -28,7 +28,7 @@
   "randomStats": {
     "incMDD": {
       "base": 35,
-      "min": 7,
+      "min": 8,
       "max": 63
     }
   },

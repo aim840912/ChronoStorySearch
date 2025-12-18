@@ -36,7 +36,7 @@
     },
     "incPAD": {
       "base": 34,
-      "min": 30,
+      "min": 31,
       "max": 38
     },
     "incPDD": {

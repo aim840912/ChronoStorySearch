@@ -7,10 +7,31 @@
  * - 直接返回 R2 CDN URL
  * - 依賴瀏覽器原生 HTTP 快取機制
  * - 減少應用層複雜度和記憶體佔用
+ * - 支援 Cache Busting（透過 r2-versions.json 管理版本號）
  */
 
 import imageManifest from '@/../data/available-images.json'
+import r2Versions from '@/../data/r2-versions.json'
 import { clientLogger } from './logger'
+
+// 版本資料類型
+type R2Versions = typeof r2Versions
+
+/**
+ * 取得圖片版本查詢參數
+ * @param category 圖片類別（items, monsters, monsters-gif, monsters-die, monsters-hit）
+ * @param id 圖片 ID
+ * @returns 版本查詢字串（如 ?v=2）或空字串
+ */
+function getImageVersionQuery(
+  category: keyof R2Versions['images'],
+  id: number
+): string {
+  const version = (r2Versions.images[category] as Record<string, string>)?.[
+    String(id)
+  ]
+  return version ? `?v=${version}` : ''
+}
 
 // Cloudflare R2 Public URL（從環境變數讀取）
 const R2_PUBLIC_URL = process.env.NEXT_PUBLIC_R2_PUBLIC_URL
@@ -62,7 +83,7 @@ function extractScrollSuccessRate(itemName: string): number | null {
  * 檢查物品是否為卷軸
  * 卷軸 ID 範圍: 2040000 - 2049999
  */
-function isScrollItem(itemId: number): boolean {
+export function isScrollItem(itemId: number): boolean {
   return itemId >= 2040000 && itemId < 2050000
 }
 
@@ -148,12 +169,9 @@ export function getItemImageUrl(
     return fallback
   }
 
-  // 臨時修復：item ID 0 (Meso) 的 CDN 快取問題
-  if (itemId === 0) {
-    return `${R2_PUBLIC_URL}/images/items/${itemId}.png?v=2`
-  }
-
-  return `${R2_PUBLIC_URL}/images/items/${itemId}.png`
+  // 加入版本查詢參數（Cache Busting）
+  const versionQuery = getImageVersionQuery('items', itemId)
+  return `${R2_PUBLIC_URL}/images/items/${itemId}.png${versionQuery}`
 }
 
 /**
@@ -184,28 +202,32 @@ export function getMonsterImageUrl(
     return fallback
   }
 
-  // 根據格式返回對應的圖片
+  // 根據格式返回對應的圖片（加入版本查詢參數）
   switch (format) {
     case 'stand':
       // 待機動畫（原本的 GIF）
       if (hasMonsterGif(mobId)) {
-        return `${R2_PUBLIC_URL}/images/monsters-gif/${mobId}.gif`
+        const versionQuery = getImageVersionQuery('monsters-gif', mobId)
+        return `${R2_PUBLIC_URL}/images/monsters-gif/${mobId}.gif${versionQuery}`
       }
       break
     case 'hit':
       // 受擊動畫
       if (hasMonsterHit(mobId)) {
-        return `${R2_PUBLIC_URL}/images/monsters-hit/${mobId}.gif`
+        const versionQuery = getImageVersionQuery('monsters-hit', mobId)
+        return `${R2_PUBLIC_URL}/images/monsters-hit/${mobId}.gif${versionQuery}`
       }
       break
     case 'die':
       // 死亡動畫
       if (hasMonsterDie(mobId)) {
-        return `${R2_PUBLIC_URL}/images/monsters-die/${mobId}.gif`
+        const versionQuery = getImageVersionQuery('monsters-die', mobId)
+        return `${R2_PUBLIC_URL}/images/monsters-die/${mobId}.gif${versionQuery}`
       }
       break
   }
 
-  // 預設返回 PNG
-  return `${R2_PUBLIC_URL}/images/monsters/${mobId}.png`
+  // 預設返回 PNG（加入版本查詢參數）
+  const versionQuery = getImageVersionQuery('monsters', mobId)
+  return `${R2_PUBLIC_URL}/images/monsters/${mobId}.png${versionQuery}`
 }

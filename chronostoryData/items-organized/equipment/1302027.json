@@ -27,5 +27,17 @@
     "category": "One-Handed Weapon",
     "subCategory": "One-Handed Sword"
   },
-  "isGachapon": true
+  "isGachapon": true,
+  "randomStats": {
+    "incPAD": {
+      "base": 12,
+      "min": 12,
+      "max": 12
+    },
+    "incMAD": {
+      "base": 25,
+      "min": 25,
+      "max": 25
+    }
+  }
 }

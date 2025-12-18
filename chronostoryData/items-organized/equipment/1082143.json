@@ -19,7 +19,6 @@
     "reqLevelEquip": 90,
     "tuc": 5,
     "incDEX": 3,
-    "incLUK": 3,
     "incPDD": 30
   },
   "typeInfo": {
@@ -31,12 +30,7 @@
     "incDEX": {
       "base": 3,
       "min": 0,
-      "max": 8
-    },
-    "incLUK": {
-      "base": 3,
-      "min": 0,
-      "max": 8
+      "max": 12
     },
     "incPDD": {
       "base": 30,

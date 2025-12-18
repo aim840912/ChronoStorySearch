@@ -115,6 +115,65 @@ public/images/        # 本地圖片資源
 
 ---
 
+## 資料維護腳本
+
+### R2 資源維護（圖片 + JSON）
+
+**關鍵檔案**：
+| 檔案 | 用途 |
+|------|------|
+| `data/available-images.json` | R2 圖片清單（判斷圖片是否存在） |
+| `data/r2-versions.json` | 圖片/JSON 版本號 + hash（Cache Busting） |
+| `scripts/generate-image-manifest.js` | 從 R2 同步圖片清單，自動更新版本號 |
+
+**新增或更新圖片到 R2 後**：
+```bash
+npm run r2:sync-manifest
+# 腳本會自動：
+# 1. 更新 available-images.json（圖片清單）
+# 2. 檢測變更並自動更新版本號（r2-versions.json）
+
+git add data/available-images.json data/r2-versions.json
+git commit -m "chore: sync R2 image manifest"
+```
+
+**手動更新 JSON 版本號**（當 JSON 檔案更新時）：
+編輯 `data/r2-versions.json`：
+```json
+{ "json": { "items-organized": { "1234": "2" } } }
+```
+
+**問題排查**：
+- 新圖片不顯示 → 執行 `npm run r2:sync-manifest` 更新清單
+- 更新後顯示舊版 → 執行 `npm run r2:sync-manifest`（自動檢測並更新版本號）
+
+---
+
+### 裝備資料驗證與修正
+
+| 腳本 | 用途 |
+|------|------|
+| `node scripts/compare-random-stats.js` | 比對本地 metaInfo 與 API stats，產生 `random-stats-diff.md` |
+| `node scripts/fix-equipment-stats.js` | 依 diff 報告修正 metaInfo 並重算 randomStats |
+| `node scripts/recalc-random-stats.js` | 重新計算所有裝備的 randomStats |
+
+### randomStats 計算公式
+
+```
+O = reqLevel / 10（套服 Overall 類型 ×2）
+
+A 值依屬性類型：
+- 主屬性 (STR/DEX/INT/LUK): A = O / 屬性數量
+- 攻擊/魔攻/速度: A = O / 2
+- 命中/迴避: A = O
+- 跳躍: A = O / 4
+- HP/MP/物防/魔防: A = O × 5
+
+randomStats = { base, min: max(0, base-A), max: base+A }
+```
+
+---
+
 ## 環境變數
 
 必要的環境變數（參考 `.env.example`）：

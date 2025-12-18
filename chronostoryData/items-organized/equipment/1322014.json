@@ -14,7 +14,8 @@
     "reqSTR": 95,
     "incPAD": 49,
     "tuc": 7,
-    "reqJob": 1
+    "reqJob": 1,
+    "attackSpeed": 6
   },
   "typeInfo": {
     "overallCategory": "Equip",

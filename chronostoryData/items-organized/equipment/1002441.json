@@ -29,7 +29,7 @@
   "randomStats": {
     "incMHP": {
       "base": 50,
-      "min": 37,
+      "min": 38,
       "max": 63
     },
     "incPDD": {

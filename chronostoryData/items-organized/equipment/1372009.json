@@ -18,7 +18,6 @@
     "reqJob": 2,
     "reqLevelEquip": 88,
     "tuc": 7,
-    "incINT": 1,
     "incPAD": 63,
     "incMAD": 103,
     "attackSpeed": 6
@@ -29,11 +28,6 @@
     "subCategory": "Wand"
   },
   "randomStats": {
-    "incINT": {
-      "base": 1,
-      "min": 0,
-      "max": 10
-    },
     "incPAD": {
       "base": 63,
       "min": 59,

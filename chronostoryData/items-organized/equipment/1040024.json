@@ -29,12 +29,12 @@
   "randomStats": {
     "incMMP": {
       "base": 20,
-      "min": 7,
+      "min": 8,
       "max": 33
     },
     "incPDD": {
       "base": 22,
-      "min": 9,
+      "min": 10,
       "max": 35
     }
   }

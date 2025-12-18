@@ -19,9 +19,9 @@
     "reqLevelEquip": 100,
     "tuc": 7,
     "incDEX": 3,
-    "incLUK": 4,
-    "incMHP": 15,
-    "incPDD": 63
+    "incLUK": 3,
+    "incPDD": 63,
+    "incMMP": 15
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -35,11 +35,11 @@
       "max": 8
     },
     "incLUK": {
-      "base": 4,
+      "base": 3,
       "min": 0,
-      "max": 9
+      "max": 8
     },
-    "incMHP": {
+    "incMMP": {
       "base": 15,
       "min": 0,
       "max": 65

@@ -15,7 +15,8 @@
     "reqDEX": 80,
     "incPAD": 44,
     "tuc": 7,
-    "reqJob": 4
+    "reqJob": 4,
+    "attackSpeed": 6
   },
   "typeInfo": {
     "overallCategory": "Equip",

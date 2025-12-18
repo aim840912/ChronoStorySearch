@@ -18,8 +18,10 @@
     "reqJob": 0,
     "reqLevelEquip": 10,
     "tuc": 7,
-    "incPDD": 8,
-    "incJump": 3
+    "incPDD": 20,
+    "incMHP": 100,
+    "incMMP": 100,
+    "incMDD": 20
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -27,10 +29,25 @@
     "subCategory": "Hat"
   },
   "randomStats": {
+    "incMHP": {
+      "base": 100,
+      "min": 95,
+      "max": 105
+    },
+    "incMMP": {
+      "base": 100,
+      "min": 95,
+      "max": 105
+    },
     "incPDD": {
-      "base": 8,
-      "min": 3,
-      "max": 13
+      "base": 20,
+      "min": 15,
+      "max": 25
+    },
+    "incMDD": {
+      "base": 20,
+      "min": 15,
+      "max": 25
     }
   },
   "isGachapon": true

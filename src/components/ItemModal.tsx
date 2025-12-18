@@ -429,13 +429,33 @@ export function ItemModal({
               )}
             </div>
 
-            {/* 物品屬性卡片 - 載入中顯示動畫 */}
-            {isLoadingDetailed && !itemOrganizedData ? (
+            {/* 物品屬性卡片 - 改進載入狀態判斷 */}
+            {isLoadingDetailed ? (
+              // 狀態 1: 載入中 - 顯示 spinner
               <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-sm text-center">
                 <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 dark:border-blue-400"></div>
-                <p className="mt-4 text-white dark:text-gray-300">{t('loading')}</p>
+                <p className="mt-4 text-gray-600 dark:text-gray-300">{t('loading')}</p>
+              </div>
+            ) : detailedError && !itemOrganizedData ? (
+              // 狀態 2: 載入失敗且無 fallback - 顯示重試按鈕
+              <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-8 shadow-sm text-center border border-yellow-200 dark:border-yellow-800">
+                <svg className="mx-auto h-12 w-12 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+                <p className="mt-4 text-yellow-700 dark:text-yellow-300">
+                  {detailedError.message === 'CHUNK_LOAD_ERROR'
+                    ? t('error.versionMismatch')
+                    : t('item.loadFailed')}
+                </p>
+                <button
+                  onClick={() => window.location.reload()}
+                  className="mt-4 px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg transition-colors"
+                >
+                  {t('error.refreshPage')}
+                </button>
               </div>
             ) : (
+              // 狀態 3: 有資料或無屬性 - 顯示屬性卡片
               <ItemAttributesCard itemData={itemOrganizedData} />
             )}
           </div>

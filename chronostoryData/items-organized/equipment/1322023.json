@@ -19,12 +19,24 @@
     "reqLevelEquip": 0,
     "tuc": 7,
     "incPAD": 15,
-    "incACC": 10,
+    "incACC": 15,
     "attackSpeed": 5
   },
   "typeInfo": {
     "overallCategory": "Equip",
     "category": "One-Handed Weapon",
     "subCategory": "One-Handed Blunt Weapon"
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 15,
+      "min": 15,
+      "max": 15
+    },
+    "incACC": {
+      "base": 15,
+      "min": 15,
+      "max": 15
+    }
   }
 }

@@ -21,7 +21,6 @@
     "incSTR": 2,
     "incDEX": 5,
     "incPDD": 95,
-    "incMDD": 0,
     "incACC": 1
   },
   "typeInfo": {
@@ -37,7 +36,7 @@
     },
     "incDEX": {
       "base": 5,
-      "min": 0,
+      "min": 1,
       "max": 10
     },
     "incACC": {

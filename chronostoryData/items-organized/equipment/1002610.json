@@ -18,8 +18,7 @@
     "reqJob": 16,
     "reqLevelEquip": 10,
     "tuc": 7,
-    "incPDD": 9,
-    "incMDD": 0
+    "incPDD": 9
   },
   "typeInfo": {
     "overallCategory": "Equip",
