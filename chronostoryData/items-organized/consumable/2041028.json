@@ -2,7 +2,7 @@
   "id": 2041028,
   "description": {
     "id": 2041028,
-    "name": "Dark scroll for Cape for Weapon Def. 70%",
+    "name": "Dark Scroll for Cape for Defense 70%",
     "description": "Improves weapon def. on the cape.\\nSuccess rate:70%, weapon def.+3, magic def.+1nIf failed, the item will be destroyed at a 50% rate.",
     "chineseItemName": "披風防禦力卷軸70%"
   },
@@ -12,8 +12,10 @@
     "mob": 0,
     "slotMax": 0,
     "price": 1,
-    "incPDD": 3,
-    "incMDD": 1,
+    "incEVA": 3,
+    "incMHP": 15,
+    "incPDD": 15,
+    "incMDD": 15,
     "setCompleteCount": 0
   },
   "typeInfo": {

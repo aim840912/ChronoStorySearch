@@ -3,7 +3,7 @@
   "description": {
     "id": 2044810,
     "name": "Scroll for Knuckler for Accuracy 15%",
-    "description": "Improves the attack on Maple Golden Claw. nSuccess rate:40%,weapon att.+3,STR+2nIf failed, the item will be destroyed at a 30% rate.",
+    "description": "Improves accuracy on Knucklers.\\nSuccess rate: 15%, accuracy +5, weapon ATT +3, DEX +3",
     "chineseItemName": "指虎命中卷軸15%",
     "chineseNameSource": "gacha"
   },

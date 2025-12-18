@@ -2,9 +2,9 @@
   "id": 2040337,
   "description": {
     "id": 2040337,
-    "name": "Scroll for Earring for LUK 65%",
-    "description": "Improves LUK on Earrings.\\nSuccess Rate: 65%, LUK+2",
-    "chineseItemName": "耳環幸運卷軸65%"
+    "name": "Dark Scroll for Accessory for STR 70%",
+    "description": "Improves STR on Accessories.\\nSuccess Rate: 70%, STR+2\\nIf failed, the item will be destroyed at a 50% rate.",
+    "chineseItemName": "飾品力量詛咒卷軸70%"
   },
   "metaInfo": {
     "only": false,
@@ -12,13 +12,13 @@
     "mob": 0,
     "slotMax": 0,
     "price": 1,
-    "incLUK": 2,
+    "incSTR": 2,
     "tradeBlock": true,
     "setCompleteCount": 0
   },
   "typeInfo": {
     "overallCategory": "Use",
     "category": "Armor Scroll",
-    "subCategory": "Earrings"
+    "subCategory": "Accessory"
   }
 }

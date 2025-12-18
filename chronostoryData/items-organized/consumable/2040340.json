@@ -2,9 +2,9 @@
   "id": 2040340,
   "description": {
     "id": 2040340,
-    "name": "Scroll for Earring for HP 15%",
-    "description": "Improves HP on Earrings.\\nSuccess Rate: 15%, MaxHP+30",
-    "chineseItemName": "耳環生命卷軸15%"
+    "name": "Scroll for Accessory for STR 10%",
+    "description": "Improves STR on Accessories.\\nSuccess rate: 10%",
+    "chineseItemName": "飾品力量卷軸10%"
   },
   "metaInfo": {
     "only": false,
@@ -12,7 +12,7 @@
     "mob": 0,
     "slotMax": 0,
     "price": 1,
-    "incMHP": 30,
+    "incSTR": 3,
     "tradeBlock": true,
     "setCompleteCount": 0
   },
