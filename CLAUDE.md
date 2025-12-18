@@ -117,6 +117,38 @@ public/images/        # 本地圖片資源
 
 ## 資料維護腳本
 
+### R2 資源維護（圖片 + JSON）
+
+**關鍵檔案**：
+| 檔案 | 用途 |
+|------|------|
+| `data/available-images.json` | R2 圖片清單（判斷圖片是否存在） |
+| `data/r2-versions.json` | 圖片/JSON 版本號 + hash（Cache Busting） |
+| `scripts/generate-image-manifest.js` | 從 R2 同步圖片清單，自動更新版本號 |
+
+**新增或更新圖片到 R2 後**：
+```bash
+npm run r2:sync-manifest
+# 腳本會自動：
+# 1. 更新 available-images.json（圖片清單）
+# 2. 檢測變更並自動更新版本號（r2-versions.json）
+
+git add data/available-images.json data/r2-versions.json
+git commit -m "chore: sync R2 image manifest"
+```
+
+**手動更新 JSON 版本號**（當 JSON 檔案更新時）：
+編輯 `data/r2-versions.json`：
+```json
+{ "json": { "items-organized": { "1234": "2" } } }
+```
+
+**問題排查**：
+- 新圖片不顯示 → 執行 `npm run r2:sync-manifest` 更新清單
+- 更新後顯示舊版 → 執行 `npm run r2:sync-manifest`（自動檢測並更新版本號）
+
+---
+
 ### 裝備資料驗證與修正
 
 | 腳本 | 用途 |

@@ -18,6 +18,7 @@
     "test:cache": "playwright test tests/image-cache.spec.ts",
     "test:report": "playwright show-report",
     "generate-images": "node scripts/generate-image-manifest.js",
+    "r2:sync-manifest": "node scripts/generate-image-manifest.js",
     "r2:upload": "bash scripts/upload-to-r2-wrangler.sh",
     "r2:sync": "~/rclone copy public/images r2:maplestory-images/images --progress --transfers=16 --checkers=16",
     "r2:list": "~/rclone ls r2:maplestory-images/images | head -20",
