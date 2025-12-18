@@ -3,6 +3,7 @@
 import Script from 'next/script'
 
 const ADSENSE_CLIENT_ID = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID
+const ADS_ENABLED = process.env.NEXT_PUBLIC_ADS_ENABLED !== 'false'
 
 /**
  * Google AdSense 腳本載入元件
@@ -11,7 +12,8 @@ const ADSENSE_CLIENT_ID = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID
  * 需要在 .env.local 設定 NEXT_PUBLIC_ADSENSE_CLIENT_ID
  */
 export function AdSenseScript() {
-  if (!ADSENSE_CLIENT_ID) {
+  // 廣告已關閉或沒有設定 Client ID
+  if (!ADS_ENABLED || !ADSENSE_CLIENT_ID) {
     return null
   }
 

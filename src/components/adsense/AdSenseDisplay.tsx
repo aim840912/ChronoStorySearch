@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react'
 
 const ADSENSE_CLIENT_ID = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID
 const ADSENSE_DISPLAY_SLOT = process.env.NEXT_PUBLIC_ADSENSE_DISPLAY_SLOT
+const ADS_ENABLED = process.env.NEXT_PUBLIC_ADS_ENABLED !== 'false'
 
 interface AdSenseDisplayProps {
   className?: string
@@ -42,6 +43,9 @@ export function AdSenseDisplay({
       console.error('AdSense error:', err)
     }
   }, [])
+
+  // 廣告已關閉
+  if (!ADS_ENABLED) return null
 
   // 開發環境：顯示佔位區塊（方便調整位置）
   if (process.env.NODE_ENV === 'development') {
