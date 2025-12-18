@@ -3,7 +3,7 @@
   "description": {
     "id": 2044015,
     "name": "Scroll for Two-Handed Sword for Accuracy 15%",
-    "description": "Improves ATT on Two-Handed Swords. nSuccess rate: 10%, Weapons ATT +5, STR +3, Weapons Defense +1",
+    "description": "Improves accuracy on Two-Handed Swords.\\nSuccess rate: 15%, accuracy +5, weapon ATT +3, DEX +3",
     "chineseItemName": "雙手劍命中卷軸15%",
     "chineseNameSource": "gacha"
   },
