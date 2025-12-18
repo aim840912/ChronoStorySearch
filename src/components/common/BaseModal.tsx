@@ -131,7 +131,7 @@ export function BaseModal({
         {/* 左側懸浮內容（固定在 Modal 左邊框外側，所有尺寸一致 8px 距離） */}
         {floatingLeft && (
           <div
-            className="absolute right-[calc(100%_+_8px)] top-4 z-10"
+            className="absolute right-[calc(100%_+_8px)] top-4 z-20"
             onClick={(e) => e.stopPropagation()}
           >
             {floatingLeft}
@@ -140,7 +140,7 @@ export function BaseModal({
         {/* 右側懸浮內容（固定在 Modal 右邊框外側，所有尺寸一致 8px 距離） */}
         {floatingRight && (
           <div
-            className="absolute left-[calc(100%_+_8px)] top-4 z-10 flex flex-col gap-2"
+            className="absolute left-[calc(100%_+_8px)] top-4 z-20 flex flex-col gap-2"
             onClick={(e) => e.stopPropagation()}
           >
             {floatingRight}
