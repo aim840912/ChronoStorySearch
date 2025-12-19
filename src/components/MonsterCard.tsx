@@ -52,10 +52,10 @@ export const MonsterCard = memo(function MonsterCard({
 
   // 取得此怪物會掉落的卷軸預覽圖示（全部傳入，由 CardHeader 動態顯示）
   const allIcons = useMemo(() => {
-    const scrollIds = getScrollsForMob(mobId)
-    return scrollIds.map((scrollId) => ({
-      id: scrollId,
-      imageUrl: getItemImageUrl(scrollId),
+    const scrolls = getScrollsForMob(mobId)
+    return scrolls.map((scroll) => ({
+      id: scroll.id,
+      imageUrl: getItemImageUrl(scroll.id, { itemName: scroll.name }),
     }))
   }, [mobId, getScrollsForMob])
 
