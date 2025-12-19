@@ -111,7 +111,7 @@ export interface ExtendedUniqueItem {
 // 搜尋建議項目類型
 export interface SuggestionItem {
   name: string
-  type: 'monster' | 'item' | 'gacha' | 'merchant'
+  type: 'monster' | 'item' | 'gacha' | 'merchant' | 'quiz'
   count: number
   id?: number
   machineId?: number
@@ -119,6 +119,11 @@ export interface SuggestionItem {
   mapId?: string           // 商人地圖 ID
   mapName?: string         // 商人地圖英文名稱
   chineseMapName?: string  // 商人地圖中文名稱
+  // Quiz 專用欄位
+  questionEn?: string      // 英文題目
+  questionZh?: string      // 中文題目
+  answerEn?: string        // 英文答案
+  answerZh?: string        // 中文答案
 }
 
 // 最愛怪物介面
@@ -147,7 +152,35 @@ export interface ViewHistoryItem {
 export type FilterMode = 'all' | 'favorite-monsters' | 'favorite-items' | 'market-listings'
 
 // 搜尋類型篩選
-export type SearchTypeFilter = 'all' | 'monster' | 'item' | 'gacha' | 'merchant'
+export type SearchTypeFilter = 'all' | 'monster' | 'item' | 'gacha' | 'merchant' | 'quiz'
+
+// Quiz 題目選項類型
+export interface QuizOption {
+  en: string
+  zh: string
+  isCorrect: boolean
+}
+
+// Quiz 題目類型
+export interface QuizQuestion {
+  questionEn: string
+  questionZh: string
+  options: QuizOption[]
+  answer: { en: string; zh: string } | null
+}
+
+// Quiz 資料結構（來自 chronostory-quiz.json）
+export interface QuizData {
+  metadata: {
+    source: string
+    url: string
+    editor: string
+    thanks: string
+    totalQuestions: number
+    generatedAt: string
+  }
+  questions: QuizQuestion[]
+}
 
 // 清除模態框類型
 export type ClearModalType = 'monsters' | 'items' | null

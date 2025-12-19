@@ -1,13 +1,14 @@
 'use client'
 
 import { useMemo } from 'react'
-import type { DropsEssential, GachaMachine, SuggestionItem, SearchTypeFilter, MerchantMapData } from '@/types'
+import type { DropsEssential, GachaMachine, SuggestionItem, SearchTypeFilter, MerchantMapData, QuizQuestion } from '@/types'
 import { matchesAllKeywords } from '@/lib/search-utils'
 
 interface UseSearchLogicParams {
   allDrops: DropsEssential[]  // 改為 Essential（只需要基本資訊用於搜尋索引）
   gachaMachines: GachaMachine[]
   merchantMaps: MerchantMapData[]  // 商人 100% 掉落資料
+  quizQuestions: QuizQuestion[]    // Quiz 題庫資料
   debouncedSearchTerm: string
   searchType: SearchTypeFilter
 }
@@ -23,6 +24,7 @@ export function useSearchLogic({
   allDrops,
   gachaMachines,
   merchantMaps,
+  quizQuestions,
   debouncedSearchTerm,
   searchType,
 }: UseSearchLogicParams) {
@@ -32,6 +34,7 @@ export function useSearchLogic({
     const itemMap = new Map<string, SuggestionItem>()
     const gachaMap = new Map<string, SuggestionItem>()
     const merchantMap = new Map<string, SuggestionItem>()
+    const quizMap = new Map<string, SuggestionItem>()
 
     // 建立怪物和物品索引
     allDrops.forEach((drop) => {
@@ -186,8 +189,31 @@ export function useSearchLogic({
       })
     })
 
-    return { monsterMap, itemMap, gachaMap, merchantMap }
-  }, [allDrops, gachaMachines, merchantMaps])
+    // 建立 Quiz 索引（目前只用英文）
+    quizQuestions.forEach((question, index) => {
+      // 建立題目的搜尋索引（用英文題目的前 40 字作為顯示名稱）
+      const displayName = question.questionEn.length > 40
+        ? question.questionEn.slice(0, 40) + '...'
+        : question.questionEn
+
+      // 為這個題目建立索引項目
+      const quizItem: SuggestionItem = {
+        name: displayName,
+        type: 'quiz',
+        count: 1,
+        id: index,
+        questionEn: question.questionEn,
+        questionZh: question.questionZh,
+        answerEn: question.answer?.en || '',
+        answerZh: question.answer?.zh || '',
+      }
+
+      // 使用唯一鍵（題目索引）存入 Map
+      quizMap.set(`quiz-${index}`, quizItem)
+    })
+
+    return { monsterMap, itemMap, gachaMap, merchantMap, quizMap }
+  }, [allDrops, gachaMachines, merchantMaps, quizQuestions])
 
   // 計算搜尋建議列表（使用索引優化效能，支援多關鍵字搜尋和類型過濾）
   const suggestions = useMemo(() => {
@@ -232,6 +258,19 @@ export function useSearchLogic({
           results.push(suggestion)
         }
       })
+    } else if (searchType === 'quiz') {
+      // 只從 Quiz 索引中搜尋（只用英文搜尋）
+      nameIndex.quizMap.forEach((suggestion) => {
+        // 只用英文欄位搜尋（中文資料保留但暫不用於搜尋）
+        const searchableText = [
+          suggestion.questionEn,
+          suggestion.answerEn,
+        ].filter(Boolean).join(' ')
+
+        if (matchesAllKeywords(searchableText, debouncedSearchTerm)) {
+          results.push(suggestion)
+        }
+      })
     } else {
       // 'all': 從所有索引中搜尋（原有邏輯）
       nameIndex.monsterMap.forEach((suggestion) => {
@@ -252,6 +291,17 @@ export function useSearchLogic({
       // 加入商人索引搜尋
       nameIndex.merchantMap.forEach((suggestion) => {
         if (matchesAllKeywords(suggestion.name, debouncedSearchTerm)) {
+          results.push(suggestion)
+        }
+      })
+      // 加入 Quiz 索引搜尋（只用英文搜尋）
+      nameIndex.quizMap.forEach((suggestion) => {
+        const searchableText = [
+          suggestion.questionEn,
+          suggestion.answerEn,
+        ].filter(Boolean).join(' ')
+
+        if (matchesAllKeywords(searchableText, debouncedSearchTerm)) {
           results.push(suggestion)
         }
       })

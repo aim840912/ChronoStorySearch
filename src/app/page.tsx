@@ -86,6 +86,7 @@ export default function Home() {
     gachaMachines,
     merchantMaps,
     merchantItemIndex,
+    quizQuestions,
     isLoading,
     initialRandomDrops,
     initialRandomGachaItems,
@@ -101,6 +102,7 @@ export default function Home() {
     allDrops,
     gachaMachines,
     merchantMaps,
+    quizQuestions,
     debouncedSearchTerm,
     searchType,
   })

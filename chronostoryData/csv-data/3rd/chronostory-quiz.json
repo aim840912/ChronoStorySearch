@@ -1,0 +1,1342 @@
+{
+  "metadata": {
+    "source": "Google Sheets",
+    "url": "https://docs.google.com/spreadsheets/d/1rTZ-_vu-bEAqwfKxKDy3DzrHrmBtI6-RvnaK23LCvIw/edit?gid=9211077",
+    "editor": "philip.c.",
+    "thanks": "涼子秋",
+    "totalQuestions": 38,
+    "generatedAt": "2025-12-19T08:07:12.300Z"
+  },
+  "questions": [
+    {
+      "questionEn": "Who is the founder of ChronoStory?",
+      "questionZh": "《ChronoStory》的創始人是谁？",
+      "options": [
+        {
+          "en": "Vaft",
+          "zh": "瓦夫特",
+          "isCorrect": false
+        },
+        {
+          "en": "Cody",
+          "zh": "科迪",
+          "isCorrect": false
+        },
+        {
+          "en": "Dinofries",
+          "zh": "恐龍薯條",
+          "isCorrect": false
+        },
+        {
+          "en": "Boutei",
+          "zh": "布泰",
+          "isCorrect": true
+        },
+        {
+          "en": "Inkwell",
+          "zh": "墨水瓶",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Boutei",
+        "zh": "布泰"
+      }
+    },
+    {
+      "questionEn": "Which of these monsters will you NOT be facing in Ossyria?",
+      "questionZh": "在艾納斯大陸中，你不會面对以下哪種怪物？",
+      "options": [
+        {
+          "en": "Lunar Pixie",
+          "zh": "月光精靈",
+          "isCorrect": false
+        },
+        {
+          "en": "Lioner",
+          "zh": "黃獨角獅",
+          "isCorrect": false
+        },
+        {
+          "en": "Cellion",
+          "zh": "紅獨角獅",
+          "isCorrect": false
+        },
+        {
+          "en": "Clang",
+          "zh": "青螃蟹",
+          "isCorrect": true
+        },
+        {
+          "en": "Hector",
+          "zh": "野狼",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Clang",
+        "zh": "青螃蟹"
+      }
+    },
+    {
+      "questionEn": "Which of the following monsters can fly?",
+      "questionZh": "以下哪個怪物可以飛行？",
+      "options": [
+        {
+          "en": "Malady",
+          "zh": "巫婆",
+          "isCorrect": true
+        },
+        {
+          "en": "Ligator",
+          "zh": "鱷魚",
+          "isCorrect": false
+        },
+        {
+          "en": "Cold Eye",
+          "zh": "冰獨眼獸",
+          "isCorrect": false
+        },
+        {
+          "en": "Meerkat",
+          "zh": "狐蒙",
+          "isCorrect": false
+        },
+        {
+          "en": "Alishar",
+          "zh": "艾利沙爾",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Malady",
+        "zh": "巫婆"
+      }
+    },
+    {
+      "questionEn": "Which of the following monsters is not involved in a Wanted Quest?",
+      "questionZh": "以下哪個怪物沒有參與通辑任務？",
+      "options": [
+        {
+          "en": "Horny Mushroom",
+          "zh": "刺菇菇",
+          "isCorrect": false
+        },
+        {
+          "en": "Drake",
+          "zh": "土龍",
+          "isCorrect": false
+        },
+        {
+          "en": "Wild Boar",
+          "zh": "黑肥肥",
+          "isCorrect": true
+        },
+        {
+          "en": "Curse Eye",
+          "zh": "風獨眼獸",
+          "isCorrect": false
+        },
+        {
+          "en": "Evil Eye",
+          "zh": "火獨眼獸",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Wild Boar",
+        "zh": "黑肥肥"
+      }
+    },
+    {
+      "questionEn": "Which monster cannot be found in El Nath?",
+      "questionZh": "艾納斯沒有下列哪種怪物？",
+      "options": [
+        {
+          "en": "Dark Yeti",
+          "zh": "黑吉拉",
+          "isCorrect": false
+        },
+        {
+          "en": "Cold Eye",
+          "zh": "冰獨眼獸",
+          "isCorrect": true
+        },
+        {
+          "en": "Yeti and Pepe",
+          "zh": "雪吉拉戰車",
+          "isCorrect": false
+        },
+        {
+          "en": "Bain",
+          "zh": "班恩",
+          "isCorrect": false
+        },
+        {
+          "en": "Coolie Zombie",
+          "zh": "殭屍",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Cold Eye",
+        "zh": "冰獨眼獸"
+      }
+    },
+    {
+      "questionEn": "Green Mushroom, Tree Stump, Bubbling, Axe Stump, Octopus, which isthe highest level?",
+      "questionZh": "綠菇菇、樹楓、泡泡魚、斧木楓、章魚，哪個等級最高？",
+      "options": [
+        {
+          "en": "Tree Stump",
+          "zh": "樹楓",
+          "isCorrect": false
+        },
+        {
+          "en": "Bubbling",
+          "zh": "藍水靈 Lv.15",
+          "isCorrect": false
+        },
+        {
+          "en": "Axe Stump",
+          "zh": "斧木妖 Lv.22",
+          "isCorrect": true
+        },
+        {
+          "en": "Octopus",
+          "zh": "三眼章魚 Lv.12",
+          "isCorrect": false
+        },
+        {
+          "en": "Green Mushroom",
+          "zh": "綠菇菇 Lv.15",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Axe Stump",
+        "zh": "斧木妖 Lv.22"
+      }
+    },
+    {
+      "questionEn": "Which monster does not appear in MapleIsland?",
+      "questionZh": "在楓之島不會出現哪種怪物？",
+      "options": [
+        {
+          "en": "Southperry Pirate Lord",
+          "zh": "海盜領主（南港的Pirate's Hideout）",
+          "isCorrect": false
+        },
+        {
+          "en": "Green Mushroom",
+          "zh": "綠菇菇",
+          "isCorrect": false
+        },
+        {
+          "en": "King Slime",
+          "zh": "綠水靈王",
+          "isCorrect": true
+        },
+        {
+          "en": "Alpha Ribbon Pig",
+          "zh": "奇怪的豬",
+          "isCorrect": false
+        },
+        {
+          "en": "Chunky Snail",
+          "zh": "矮胖蝸牛",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "King Slime",
+        "zh": "綠水靈王"
+      }
+    },
+    {
+      "questionEn": "Which of following monsters's item CORRECTLY corresponds to the monster?",
+      "questionZh": "以下哪個怪物掉落的道具對應正確？",
+      "options": [
+        {
+          "en": "Horny Mushroom – Spiky Mushroom Cap",
+          "zh": "色情蘑菇 – 尖刺蘑菇帽",
+          "isCorrect": false
+        },
+        {
+          "en": "Wild Boar – Wild Boar Fang",
+          "zh": "野豬 – 野豬的獠牙",
+          "isCorrect": false
+        },
+        {
+          "en": "Tauroshield – Tauroshield Antler",
+          "zh": "牛頭盾 – 牛頭盾鹿角",
+          "isCorrect": false
+        },
+        {
+          "en": "Hot Mixed Golem – Fire Stone Block",
+          "zh": "熱混合石頭人 – 火石塊",
+          "isCorrect": false
+        },
+        {
+          "en": "Stirge – Stirge's Wing",
+          "zh": "蝙蝠 – 蝙蝠翅膀",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Stirge – Stirge's Wing",
+        "zh": "蝙蝠 – 蝙蝠翅膀"
+      }
+    },
+    {
+      "questionEn": "Which monster cannot be found in Victoria Island?",
+      "questionZh": "在維多利亞島上找不到哪種怪物？",
+      "options": [
+        {
+          "en": "Evil Eye",
+          "zh": "火獨眼獸",
+          "isCorrect": false
+        },
+        {
+          "en": "Sentinel",
+          "zh": "石球",
+          "isCorrect": true
+        },
+        {
+          "en": "Jr. Balrog",
+          "zh": "巴洛古",
+          "isCorrect": false
+        },
+        {
+          "en": "Ghost Stump",
+          "zh": "發芽木妖",
+          "isCorrect": false
+        },
+        {
+          "en": "Miner Zombie",
+          "zh": "礦山殭屍（地鐵二號線[地區03]）",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Sentinel",
+        "zh": "石球"
+      }
+    },
+    {
+      "questionEn": "What is not a monster found in ChronoStory?",
+      "questionZh": "以下哪種怪物不會出現在ChronoStory？",
+      "options": [
+        {
+          "en": "Snowball Pepe",
+          "zh": "雪球企鵝王",
+          "isCorrect": false
+        },
+        {
+          "en": "Tauroshield",
+          "zh": "盾牌牛魔王",
+          "isCorrect": false
+        },
+        {
+          "en": "Chunky Snail",
+          "zh": "矮胖蝸牛",
+          "isCorrect": false
+        },
+        {
+          "en": "Red Stirge",
+          "zh": "紅色枯萎蝙蝠",
+          "isCorrect": true
+        },
+        {
+          "en": "Trtice",
+          "zh": "冰烏龜",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Red Stirge",
+        "zh": "紅色枯萎蝙蝠"
+      }
+    },
+    {
+      "questionEn": "Which monster will be seen during the ride to Orbis/Ellinia?",
+      "questionZh": "前往天空之城／魔法密林的旅途中會遇到哪種怪物？",
+      "options": [
+        {
+          "en": "Werewolf",
+          "zh": "狼人",
+          "isCorrect": false
+        },
+        {
+          "en": "Slime",
+          "zh": "綠水靈",
+          "isCorrect": false
+        },
+        {
+          "en": "Crimson Balrog",
+          "zh": "地獄巴洛古",
+          "isCorrect": true
+        },
+        {
+          "en": "Zakum",
+          "zh": "",
+          "isCorrect": false
+        },
+        {
+          "en": "Star Pixie",
+          "zh": "星光精靈",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Crimson Balrog",
+        "zh": "地獄巴洛古"
+      }
+    },
+    {
+      "questionEn": "Maple Island doesn't have which of the following monsters?",
+      "questionZh": "楓之島沒有下列哪種怪物？",
+      "options": [
+        {
+          "en": "Shroom",
+          "zh": "菇菇仔",
+          "isCorrect": false
+        },
+        {
+          "en": "Green Mushroom",
+          "zh": "綠菇菇",
+          "isCorrect": false
+        },
+        {
+          "en": "Slime",
+          "zh": "綠水靈",
+          "isCorrect": false
+        },
+        {
+          "en": "Red Snail",
+          "zh": "紅寶",
+          "isCorrect": false
+        },
+        {
+          "en": "Blue Mushroom",
+          "zh": "藍菇菇",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Blue Mushroom",
+        "zh": "藍菇菇"
+      }
+    },
+    {
+      "questionEn": "Which of following monsters's item INCORRECTLY corresponds to the monster?",
+      "questionZh": "以下哪個怪物的物品對應不正確？",
+      "options": [
+        {
+          "en": "Dark Eye – Dark Eye Tail",
+          "zh": "黑獨眼獸 — 黑獨眼獸尾巴",
+          "isCorrect": false
+        },
+        {
+          "en": "Nependeath – Nependeath's Nut",
+          "zh": "食人花 — 食人花果實",
+          "isCorrect": true
+        },
+        {
+          "en": "Ghost Stump – Seedling",
+          "zh": "發芽木妖 — 苗木",
+          "isCorrect": false
+        },
+        {
+          "en": "Cold Mixed Golem – Cold Stone Block",
+          "zh": "冰之混種石巨人 — 冰石塊",
+          "isCorrect": false
+        },
+        {
+          "en": "Miner Zombie – Zombie's Lost Tooth",
+          "zh": "礦山殭屍 — 殭屍的臼齒",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Nependeath – Nependeath's Nut",
+        "zh": "食人花 — 食人花果實"
+      }
+    },
+    {
+      "questionEn": "Which of following potions has WRONG info.?",
+      "questionZh": "以下哪種藥水的資訊有誤？",
+      "options": [
+        {
+          "en": "Mana Elixir – Recover 300 MP",
+          "zh": "魔力藥水 – 回復 300 MP",
+          "isCorrect": false
+        },
+        {
+          "en": "Tonic – Cures state of weakness",
+          "zh": "補劑 – 治癒虛弱狀態",
+          "isCorrect": false
+        },
+        {
+          "en": "Apple – Recover 30 HP",
+          "zh": "蘋果 – 回復 30 HP",
+          "isCorrect": false
+        },
+        {
+          "en": "Sunrise Dew – Recover 3000 MP",
+          "zh": "朝露 – 回復 3000 MP",
+          "isCorrect": true
+        },
+        {
+          "en": "Unagi – Recover 1000 HP",
+          "zh": "鰻魚 – 回復 1000 HP",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Sunrise Dew – Recover 3000 MP",
+        "zh": "朝露 – 回復 3000 MP"
+      }
+    },
+    {
+      "questionEn": "Which of following potions has CORRECT info.?",
+      "questionZh": "以下哪種藥水具有正確資訊？",
+      "options": [
+        {
+          "en": "Warrior Pill – Attack +5 for 3 minutes",
+          "zh": "戰士藥丸 – 攻擊力 +5，持續 3 分鐘",
+          "isCorrect": false
+        },
+        {
+          "en": "Pure Water – Recover 700 MP",
+          "zh": "純水 – 回復 700 MP",
+          "isCorrect": false
+        },
+        {
+          "en": "Cake – Recover 150 HP & MP",
+          "zh": "蛋糕 – 回復 150 HP & MP",
+          "isCorrect": false
+        },
+        {
+          "en": "Salad – Recover 300 MP",
+          "zh": "沙拉 – 回復 300 MP",
+          "isCorrect": false
+        },
+        {
+          "en": "Pizza – Recover 400 HP",
+          "zh": "披薩 – 回復 400 HP",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Pizza – Recover 400 HP",
+        "zh": "披薩 – 回復 400 HP"
+      }
+    },
+    {
+      "questionEn": "Which of the following debuffs is incorrect?",
+      "questionZh": "以下哪個減益效果不正確？",
+      "options": [
+        {
+          "en": "Sealed – skills become disabled",
+          "zh": "封印 – 技能失效",
+          "isCorrect": false
+        },
+        {
+          "en": "Undead – turns undead & halved recovery amounts",
+          "zh": "不死族 – 像是不死生物＆恢復量減半",
+          "isCorrect": false
+        },
+        {
+          "en": "Weaken – slow down moving speed",
+          "zh": "削弱 – 降低移動速度",
+          "isCorrect": true
+        },
+        {
+          "en": "Cursed – EXP received is decreased",
+          "zh": "詛咒 – 獲得的經驗值減少",
+          "isCorrect": false
+        },
+        {
+          "en": "Stunned – cannot move",
+          "zh": "眩迷 – 無法移動",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Weaken – slow down moving speed",
+        "zh": "削弱 – 降低移動速度"
+      }
+    },
+    {
+      "questionEn": "Which NPC is not involved in Mr. Wetbottom's Secret Book?",
+      "questionZh": "哪個 NPC 沒有參與《泰實夫的秘密之書》？",
+      "options": [
+        {
+          "en": "Ronnie",
+          "zh": "洛尼",
+          "isCorrect": false
+        },
+        {
+          "en": "Rina",
+          "zh": "麗娜",
+          "isCorrect": false
+        },
+        {
+          "en": "Rowen the Fairy",
+          "zh": "妖精羅雯",
+          "isCorrect": false
+        },
+        {
+          "en": "Mr. Wetbottom",
+          "zh": "泰實夫",
+          "isCorrect": false
+        },
+        {
+          "en": "Ria",
+          "zh": "里亞",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Ria",
+        "zh": "里亞"
+      }
+    },
+    {
+      "questionEn": "Which NPC cannot be seen in Maple Island?",
+      "questionZh": "在楓之島上看不到哪個 NPC？",
+      "options": [
+        {
+          "en": "Bari",
+          "zh": "白瑞德",
+          "isCorrect": false
+        },
+        {
+          "en": "Teo",
+          "zh": "特奧",
+          "isCorrect": true
+        },
+        {
+          "en": "Pio",
+          "zh": "皮奧",
+          "isCorrect": false
+        },
+        {
+          "en": "Sid",
+          "zh": "武器店老闆",
+          "isCorrect": false
+        },
+        {
+          "en": "Maria",
+          "zh": "瑪莉亞",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Teo",
+        "zh": "特奧"
+      }
+    },
+    {
+      "questionEn": "Which NPC is not involved in The Chaos Behind Alfonse Green and the Nependeath Juice?",
+      "questionZh": "哪個 NPC 沒有參與《阿爾馮絲小綠的食人花汁》？",
+      "options": [
+        {
+          "en": "Ericsson",
+          "zh": "艾利遜",
+          "isCorrect": false
+        },
+        {
+          "en": "Elma the Housekeeper",
+          "zh": "管家艾瑪",
+          "isCorrect": false
+        },
+        {
+          "en": "Estelle",
+          "zh": "艾斯達",
+          "isCorrect": false
+        },
+        {
+          "en": "Lisa",
+          "zh": "麗莎",
+          "isCorrect": true
+        },
+        {
+          "en": "Alfonse Green",
+          "zh": "阿爾馮絲小綠",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Lisa",
+        "zh": "麗莎"
+      }
+    },
+    {
+      "questionEn": "Which NPC cannot be seen in Sleepywood?",
+      "questionZh": "在奇幻村中看不到哪個 NPC ？",
+      "options": [
+        {
+          "en": "Mr. Oh",
+          "zh": "倉庫吴老闆",
+          "isCorrect": false
+        },
+        {
+          "en": "Lakelis",
+          "zh": "拉克里斯",
+          "isCorrect": true
+        },
+        {
+          "en": "Chrishrama",
+          "zh": "克利斯拉瑪",
+          "isCorrect": false
+        },
+        {
+          "en": "The Rememberer",
+          "zh": "記憶者",
+          "isCorrect": false
+        },
+        {
+          "en": "Sabitrama",
+          "zh": "薩比特拉瑪",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Lakelis",
+        "zh": "拉克里斯"
+      }
+    },
+    {
+      "questionEn": "Which NPC cannot be seen in Orbis?",
+      "questionZh": "在天空之城看不到哪個 NPC？",
+      "options": [
+        {
+          "en": "Elma the Housekeeper",
+          "zh": "管家艾瑪",
+          "isCorrect": false
+        },
+        {
+          "en": "Lisa",
+          "zh": "麗莎",
+          "isCorrect": false
+        },
+        {
+          "en": "Trina",
+          "zh": "倉庫老闆丁妮",
+          "isCorrect": false
+        },
+        {
+          "en": "Moppie",
+          "zh": "波達",
+          "isCorrect": false
+        },
+        {
+          "en": "Jeff",
+          "zh": "傑夫",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Jeff",
+        "zh": "傑夫"
+      }
+    },
+    {
+      "questionEn": "Who do you see in the monitor in the navigation room with Kyrin?",
+      "questionZh": "你在導航室的監視器裡和珈琳一起看到了誰？",
+      "options": [
+        {
+          "en": "Lucas",
+          "zh": "路卡斯",
+          "isCorrect": false
+        },
+        {
+          "en": "Dr. Kim",
+          "zh": "金博士",
+          "isCorrect": true
+        },
+        {
+          "en": "Chief Stan",
+          "zh": "長老坦斯",
+          "isCorrect": false
+        },
+        {
+          "en": "Scadur",
+          "zh": "史卡圖勒",
+          "isCorrect": false
+        },
+        {
+          "en": "Professor Foxwit",
+          "zh": "福克斯威特教授",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Dr. Kim",
+        "zh": "金博士"
+      }
+    },
+    {
+      "questionEn": "Which is the first NPC you meet in Maple Island?",
+      "questionZh": "在楓之島遇到的第一個 NPC 是誰？",
+      "options": [
+        {
+          "en": "Sera",
+          "zh": "莎麗",
+          "isCorrect": false
+        },
+        {
+          "en": "Heena",
+          "zh": "希娜",
+          "isCorrect": true
+        },
+        {
+          "en": "Lucas",
+          "zh": "路卡斯",
+          "isCorrect": false
+        },
+        {
+          "en": "Roger",
+          "zh": "羅傑",
+          "isCorrect": false
+        },
+        {
+          "en": "Shanks",
+          "zh": "桑克斯",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Heena",
+        "zh": "希娜"
+      }
+    },
+    {
+      "questionEn": "Which NPC cannot be seen in Kerning City?",
+      "questionZh": "在墮落城市看不到哪個 NPC？",
+      "options": [
+        {
+          "en": "Dr. Faymus",
+          "zh": "雜貨店老闆",
+          "isCorrect": false
+        },
+        {
+          "en": "Mong from Kong",
+          "zh": "來自剛果的蒙",
+          "isCorrect": false
+        },
+        {
+          "en": "Alex",
+          "zh": "阿勒斯",
+          "isCorrect": false
+        },
+        {
+          "en": "Luke",
+          "zh": "魯克",
+          "isCorrect": true
+        },
+        {
+          "en": "Nella",
+          "zh": "內拉",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Luke",
+        "zh": "魯克"
+      }
+    },
+    {
+      "questionEn": "Which NPC cannot be seen in Perion?",
+      "questionZh": "在勇士之村中，那個 NPC 是無法看到的？",
+      "options": [
+        {
+          "en": "Ayan",
+          "zh": "義安",
+          "isCorrect": false
+        },
+        {
+          "en": "Sophia",
+          "zh": "索非亞",
+          "isCorrect": false
+        },
+        {
+          "en": "Mr. Smith",
+          "zh": "史密斯",
+          "isCorrect": false
+        },
+        {
+          "en": "Francois",
+          "zh": "易德",
+          "isCorrect": true
+        },
+        {
+          "en": "Manji",
+          "zh": "麥吉",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Francois",
+        "zh": "易德"
+      }
+    },
+    {
+      "questionEn": "Which NPC cannot be seen in Henesys?",
+      "questionZh": "在弓箭手村無法看到哪個 NPC ？",
+      "options": [
+        {
+          "en": "Teo",
+          "zh": "特奧",
+          "isCorrect": true
+        },
+        {
+          "en": "Vicious",
+          "zh": "比休斯",
+          "isCorrect": false
+        },
+        {
+          "en": "Mia",
+          "zh": "米雅",
+          "isCorrect": false
+        },
+        {
+          "en": "Doofus",
+          "zh": "科爾",
+          "isCorrect": false
+        },
+        {
+          "en": "Pia",
+          "zh": "皮亞",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Teo",
+        "zh": "特奧"
+      }
+    },
+    {
+      "questionEn": "Which NPC cannot be seen in El Nath?",
+      "questionZh": "在艾納斯大陸看不到哪個 NPC？",
+      "options": [
+        {
+          "en": "Vogen",
+          "zh": "沃根",
+          "isCorrect": false
+        },
+        {
+          "en": "Sophia",
+          "zh": "索菲亞",
+          "isCorrect": true
+        },
+        {
+          "en": "Pedro",
+          "zh": "佩德羅",
+          "isCorrect": false
+        },
+        {
+          "en": "Master Sergeant Fox",
+          "zh": "一級軍士長福克斯",
+          "isCorrect": false
+        },
+        {
+          "en": "Rumi",
+          "zh": "魯米",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Sophia",
+        "zh": "索菲亞"
+      }
+    },
+    {
+      "questionEn": "Which NPC cannot be seen in Ellinia?",
+      "questionZh": "在魔法密林看不到哪個 NPC？",
+      "options": [
+        {
+          "en": "Mr.Park",
+          "zh": "朴先生",
+          "isCorrect": false
+        },
+        {
+          "en": "Mar the Fairy",
+          "zh": "妖精瑪爾",
+          "isCorrect": false
+        },
+        {
+          "en": "Roel",
+          "zh": "羅爾",
+          "isCorrect": true
+        },
+        {
+          "en": "Ria",
+          "zh": "利亞",
+          "isCorrect": false
+        },
+        {
+          "en": "Shane",
+          "zh": "謝恩",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Roel",
+        "zh": "羅爾"
+      }
+    },
+    {
+      "questionEn": "What do you receive in return for giving 30 Dark Marbles to the 2nd job advancement NPC?",
+      "questionZh": "將 30 顆黑暗彈珠給予 第 2 次轉職 NPC 後，你會收到什麽回報？",
+      "options": [
+        {
+          "en": "Old Ring",
+          "zh": "舊戒指",
+          "isCorrect": false
+        },
+        {
+          "en": "Memory Powder",
+          "zh": "記憶粉末",
+          "isCorrect": false
+        },
+        {
+          "en": "Fairy Dust",
+          "zh": "仙女粉末",
+          "isCorrect": false
+        },
+        {
+          "en": "Proof of Hero",
+          "zh": "英雄的證明",
+          "isCorrect": true
+        },
+        {
+          "en": "Scroll of Secrets",
+          "zh": "秘密卷軸",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Proof of Hero",
+        "zh": "英雄的證明"
+      }
+    },
+    {
+      "questionEn": "Which town is not at Victoria Island?",
+      "questionZh": "維多利亞島上沒有那個城鎮？",
+      "options": [
+        {
+          "en": "Nautilus",
+          "zh": "鸚鵡螺號",
+          "isCorrect": false
+        },
+        {
+          "en": "Southperry",
+          "zh": "南港",
+          "isCorrect": true
+        },
+        {
+          "en": "Kerning City",
+          "zh": "廢棄都市",
+          "isCorrect": false
+        },
+        {
+          "en": "Perion",
+          "zh": "勇士部落",
+          "isCorrect": false
+        },
+        {
+          "en": "Sleepywood",
+          "zh": "奇幻村",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Southperry",
+        "zh": "南港"
+      }
+    },
+    {
+      "questionEn": "What color are Athena Pierce's eyes?",
+      "questionZh": "雅典娜・皮爾斯的眼睛是什麼顏色？",
+      "options": [
+        {
+          "en": "Blue",
+          "zh": "藍色",
+          "isCorrect": false
+        },
+        {
+          "en": "Green",
+          "zh": "綠色",
+          "isCorrect": true
+        },
+        {
+          "en": "Brown",
+          "zh": "棕色",
+          "isCorrect": false
+        },
+        {
+          "en": "Red",
+          "zh": "紅色",
+          "isCorrect": false
+        },
+        {
+          "en": "Black",
+          "zh": "黑色",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Green",
+        "zh": "綠色"
+      }
+    },
+    {
+      "questionEn": "What is the color of the orb that Grendel the Really Old is holding in Ellinia?",
+      "questionZh": "艾利尼亞的格蘭戴爾頭隨身攜帶的寶珠是什麼顏色？",
+      "options": [
+        {
+          "en": "White",
+          "zh": "白色",
+          "isCorrect": false
+        },
+        {
+          "en": "Orange",
+          "zh": "橙色",
+          "isCorrect": false
+        },
+        {
+          "en": "Blue",
+          "zh": "藍色",
+          "isCorrect": true
+        },
+        {
+          "en": "Purple",
+          "zh": "紫色",
+          "isCorrect": false
+        },
+        {
+          "en": "Green",
+          "zh": "綠色",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Blue",
+        "zh": "藍色"
+      }
+    },
+    {
+      "questionEn": "Which of the following is not a 2nd job class?",
+      "questionZh": "以下哪個不是 2 轉職業？",
+      "options": [
+        {
+          "en": "Mage",
+          "zh": "法師",
+          "isCorrect": true
+        },
+        {
+          "en": "Cleric",
+          "zh": "牧師",
+          "isCorrect": false
+        },
+        {
+          "en": "Assassin",
+          "zh": "刺客",
+          "isCorrect": false
+        },
+        {
+          "en": "Gunslinger",
+          "zh": "神槍手",
+          "isCorrect": false
+        },
+        {
+          "en": "Fighter",
+          "zh": "鬥士",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Mage",
+        "zh": "法師"
+      }
+    },
+    {
+      "questionEn": "How many feathers are there on Dances with Barlog's Hat?",
+      "questionZh": "巴洛古勇士之帽上有多少根羽毛？",
+      "options": [
+        {
+          "en": "7",
+          "zh": "",
+          "isCorrect": false
+        },
+        {
+          "en": "8",
+          "zh": "",
+          "isCorrect": false
+        },
+        {
+          "en": "3",
+          "zh": "",
+          "isCorrect": false
+        },
+        {
+          "en": "13",
+          "zh": "",
+          "isCorrect": true
+        },
+        {
+          "en": "16",
+          "zh": "",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "13",
+        "zh": ""
+      }
+    },
+    {
+      "questionEn": "What item do you give Maya at Henesys in order to cure her sickness?",
+      "questionZh": "在弓箭手村，你要給瑪雅什麼物品來治好她的病？",
+      "options": [
+        {
+          "en": "Apple",
+          "zh": "蘋果",
+          "isCorrect": false
+        },
+        {
+          "en": "Power Elixir",
+          "zh": "能量藥水",
+          "isCorrect": false
+        },
+        {
+          "en": "Weird Medicine",
+          "zh": "奇怪的藥",
+          "isCorrect": true
+        },
+        {
+          "en": "Fresh Milk",
+          "zh": "鮮奶",
+          "isCorrect": false
+        },
+        {
+          "en": "Orange Juice",
+          "zh": "柳橙汁",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Weird Medicine",
+        "zh": "奇怪的藥"
+      }
+    },
+    {
+      "questionEn": "In MapleStory, what is the EXP needed to level up from Lv1 to Lv2?",
+      "questionZh": "從1級升到2級需要多少經驗？",
+      "options": [
+        {
+          "en": "20",
+          "zh": "",
+          "isCorrect": false
+        },
+        {
+          "en": "15",
+          "zh": "",
+          "isCorrect": true
+        },
+        {
+          "en": "4",
+          "zh": "",
+          "isCorrect": false
+        },
+        {
+          "en": "12",
+          "zh": "",
+          "isCorrect": false
+        },
+        {
+          "en": "16",
+          "zh": "",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "15",
+        "zh": ""
+      }
+    },
+    {
+      "questionEn": "For the 1st job advancement, which of the following is the WRONG requirement?",
+      "questionZh": "對於第1次轉職，以下哪一項是錯誤的要求？",
+      "options": [
+        {
+          "en": "Magician – Level 8",
+          "zh": "魔法師 - 等級8",
+          "isCorrect": false
+        },
+        {
+          "en": "Pirate – 20 DEX or more",
+          "zh": "海盗 - 20點 DEX 或以上的 DEX",
+          "isCorrect": false
+        },
+        {
+          "en": "Archer – 25 DEX or more",
+          "zh": "弓箭手 - 25 DEX 或更高",
+          "isCorrect": false
+        },
+        {
+          "en": "Thief – 20 LUK or more",
+          "zh": "盜賊 - 20 LUK或更高",
+          "isCorrect": true
+        },
+        {
+          "en": "Swordman – 35 STR or more",
+          "zh": "劍士 - 35 STR 或更高",
+          "isCorrect": false
+        }
+      ],
+      "answer": {
+        "en": "Thief – 20 LUK or more",
+        "zh": "盜賊 - 20 LUK或更高"
+      }
+    },
+    {
+      "questionEn": "For the 1st job advancement, which job correctly states the job advancement requirement?",
+      "questionZh": "對於第1次轉職，哪個職業正確地説明了轉職要求？",
+      "options": [
+        {
+          "en": "Pirate-25 LUK",
+          "zh": "海盜 - 25 LUK",
+          "isCorrect": false
+        },
+        {
+          "en": "Magician-Level 10",
+          "zh": "魔法師 - 等級 10",
+          "isCorrect": false
+        },
+        {
+          "en": "Thief-25 LUK",
+          "zh": "盜賊 - 25 LUK",
+          "isCorrect": false
+        },
+        {
+          "en": "Warrior-30 STR",
+          "zh": "戰士 - 30 STR",
+          "isCorrect": false
+        },
+        {
+          "en": "Bowman-25 DEX",
+          "zh": "弓箭手 - 25 敏捷",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Bowman-25 DEX",
+        "zh": "弓箭手 - 25 敏捷"
+      }
+    }
+  ]
+}

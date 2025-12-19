@@ -47,7 +47,7 @@ export function SuggestionList({
     <div className="absolute z-50 w-full mt-2 bg-white/95 dark:bg-gray-800/95 backdrop-blur-xl border border-gray-200/50 dark:border-gray-700/50 rounded-xl shadow-xl max-h-80 overflow-y-auto">
       {suggestions.map((suggestion, index) => (
         <div
-          key={`${suggestion.type}-${suggestion.name}`}
+          key={suggestion.type === 'quiz' ? `quiz-${suggestion.id}` : `${suggestion.type}-${suggestion.name}`}
           onClick={() => onSelect(suggestion.name, suggestion)}
           onMouseEnter={() => onFocusedIndexChange(index)}
           className={`flex items-center justify-between px-4 py-2 cursor-pointer transition-colors ${
@@ -92,6 +92,11 @@ export function SuggestionList({
               <svg className="w-6 h-6 text-stone-600 dark:text-stone-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
               </svg>
+            ) : suggestion.type === 'quiz' ? (
+              /* Quiz 圖示 - question mark icon (amber 色系) */
+              <svg className="w-6 h-6 text-amber-600 dark:text-amber-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
             ) : (
               /* 轉蛋物品圖示 */
               suggestion.id !== undefined && !hasImageFailed('item', suggestion.id) ? (
@@ -107,20 +112,35 @@ export function SuggestionList({
                 </svg>
               )
             )}
-            <div>
-              <p className="text-sm font-medium text-gray-900 dark:text-white">
-                {suggestion.name}
-              </p>
-              <p className="text-xs text-gray-500 dark:text-gray-400">
-                {suggestion.type === 'monster'
-                  ? `${t('suggestion.monster')} · ${suggestion.count} ${t('suggestion.records')}`
-                  : suggestion.type === 'item'
-                  ? `${t('suggestion.item')} · ${suggestion.count} ${t('suggestion.records')}`
-                  : suggestion.type === 'merchant'
-                  ? `${t('suggestion.merchant')} · ${suggestion.chineseMapName || suggestion.mapName}`
-                  : `${t('suggestion.gacha')} · ${suggestion.machineName || t('suggestion.machine')}`
-                }
-              </p>
+            <div className="flex-1 min-w-0">
+              {suggestion.type === 'quiz' ? (
+                /* Quiz 專用顯示：題目 + 答案（目前只顯示英文） */
+                <>
+                  <p className="text-sm text-gray-700 dark:text-gray-300 line-clamp-2">
+                    {suggestion.questionEn}
+                  </p>
+                  <p className="text-sm font-bold text-amber-600 dark:text-amber-400 mt-1">
+                    {t('suggestion.quiz.answer')}: {suggestion.answerEn}
+                  </p>
+                </>
+              ) : (
+                /* 其他類型的顯示 */
+                <>
+                  <p className="text-sm font-medium text-gray-900 dark:text-white">
+                    {suggestion.name}
+                  </p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                    {suggestion.type === 'monster'
+                      ? `${t('suggestion.monster')} · ${suggestion.count} ${t('suggestion.records')}`
+                      : suggestion.type === 'item'
+                      ? `${t('suggestion.item')} · ${suggestion.count} ${t('suggestion.records')}`
+                      : suggestion.type === 'merchant'
+                      ? `${t('suggestion.merchant')} · ${suggestion.chineseMapName || suggestion.mapName}`
+                      : `${t('suggestion.gacha')} · ${suggestion.machineName || t('suggestion.machine')}`
+                    }
+                  </p>
+                </>
+              )}
             </div>
           </div>
         </div>

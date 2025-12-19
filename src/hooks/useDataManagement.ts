@@ -14,6 +14,7 @@ import type {
   DropRelations,
   MonsterIndexItem,
   ItemIndexItem,
+  QuizData,
 } from '@/types'
 import { clientLogger } from '@/lib/logger'
 // 使用 chronostoryData 的索引檔案取代 drops-essential.json（節省 39% 載入大小）
@@ -23,6 +24,7 @@ import dropRelationsData from '@/../chronostoryData/drop-relations.json'
 import mobInfoData from '@/../chronostoryData/mob-info.json'
 import itemAttributesEssentialData from '@/../chronostoryData/item-attributes-essential.json'
 import merchantDropsData from '@/../data/drops-100-percent.json'
+import quizData from '@/../chronostoryData/csv-data/3rd/chronostory-quiz.json'
 
 /**
  * Enhanced JSON 的轉蛋機格式
@@ -297,6 +299,13 @@ export function useDataManagement() {
     return merchantDropsData as MerchantMapData[]
   }, [])
 
+  // Quiz 題庫資料
+  const quizQuestions = useMemo(() => {
+    const data = quizData as QuizData
+    clientLogger.info(`載入 Quiz 題庫: ${data.questions.length} 題`)
+    return data.questions
+  }, [])
+
   // 建立商人物品索引 (itemName -> 販售該物品的地圖列表)
   // 用於 ItemModal 顯示商人販售資訊
   const merchantItemIndex = useMemo(() => {
@@ -369,6 +378,7 @@ export function useDataManagement() {
     gachaMachines,
     merchantMaps,
     merchantItemIndex,
+    quizQuestions,
     isLoading,
 
     // 初始隨機資料
