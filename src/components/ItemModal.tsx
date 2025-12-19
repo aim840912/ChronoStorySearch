@@ -574,38 +574,39 @@ export function ItemModal({
                 </div>
                 {/* 根據視圖模式渲染不同的佈局 */}
                 {viewMode === 'grid' ? (
-                  (() => {
-                    // 信息流廣告邏輯：每 8 個怪物插入一個廣告，< 8 個則在底部顯示
-                    const groupSize = 8
-                    const groups: typeof itemDrops[] = []
-                    for (let i = 0; i < itemDrops.length; i += groupSize) {
-                      groups.push(itemDrops.slice(i, i + groupSize))
-                    }
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
+                    {/* 將廣告混入卡片網格中 */}
+                    {(() => {
+                      const elements: Array<{ type: 'monster'; data: typeof itemDrops[0] } | { type: 'ad'; key: string }> = []
+                      itemDrops.forEach((drop, index) => {
+                        elements.push({ type: 'monster', data: drop })
+                        // 每 8 個怪物後插入廣告（但不在最後一個怪物後）
+                        if ((index + 1) % 8 === 0 && index < itemDrops.length - 1) {
+                          elements.push({ type: 'ad', key: `ad-${index}` })
+                        }
+                      })
+                      // 如果怪物 < 8 隻，在最後加廣告
+                      if (itemDrops.length > 0 && itemDrops.length < 8) {
+                        elements.push({ type: 'ad', key: 'ad-end' })
+                      }
 
-                    return groups.map((group, groupIndex) => (
-                      <div key={`group-${groupIndex}`}>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
-                          {group.map((drop, index) => (
-                            <MonsterDropCard
-                              key={`${drop.mobId}-${groupIndex * groupSize + index}`}
-                              drop={drop}
-                              monsterHPMap={monsterHPMap}
-                              isFavorite={isMonsterFavorite(drop.mobId)}
-                              onToggleFavorite={onToggleMonsterFavorite}
-                              onMonsterClick={onMonsterClick}
-                            />
-                          ))}
-                        </div>
-                        {/* 信息流廣告：≥8 個時在每組後插入，<8 個時在最後一組後插入 */}
-                        {(itemDrops.length >= groupSize
-                          ? groupIndex < groups.length - 1
-                          : groupIndex === groups.length - 1
-                        ) && (
-                          <AdSenseCard className="mt-3 sm:mt-4 sm:w-[calc(50%-0.5rem)]" />
-                        )}
-                      </div>
-                    ))
-                  })()
+                      return elements.map((element, idx) => {
+                        if (element.type === 'ad') {
+                          return <AdSenseCard key={element.key} />
+                        }
+                        return (
+                          <MonsterDropCard
+                            key={`${element.data.mobId}-${idx}`}
+                            drop={element.data}
+                            monsterHPMap={monsterHPMap}
+                            isFavorite={isMonsterFavorite(element.data.mobId)}
+                            onToggleFavorite={onToggleMonsterFavorite}
+                            onMonsterClick={onMonsterClick}
+                          />
+                        )
+                      })
+                    })()}
+                  </div>
                 ) : (
                   <>
                     <MonsterDropList
@@ -616,7 +617,7 @@ export function ItemModal({
                       onMonsterClick={onMonsterClick}
                     />
                     {/* 列表視圖底部廣告 */}
-                    <AdSenseCard className="mt-3 sm:mt-4 sm:w-[calc(50%-0.5rem)]" />
+                    <AdSenseCard className="mt-3 sm:mt-4" />
                   </>
                 )}
               </div>
