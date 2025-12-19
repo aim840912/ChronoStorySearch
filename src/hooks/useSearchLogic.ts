@@ -203,9 +203,7 @@ export function useSearchLogic({
         count: 1,
         id: index,
         questionEn: question.questionEn,
-        questionZh: question.questionZh,
         answerEn: question.answer?.en || '',
-        answerZh: question.answer?.zh || '',
       }
 
       // 使用唯一鍵（題目索引）存入 Map

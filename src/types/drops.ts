@@ -121,9 +121,7 @@ export interface SuggestionItem {
   chineseMapName?: string  // 商人地圖中文名稱
   // Quiz 專用欄位
   questionEn?: string      // 英文題目
-  questionZh?: string      // 中文題目
   answerEn?: string        // 英文答案
-  answerZh?: string        // 中文答案
 }
 
 // 最愛怪物介面
@@ -157,16 +155,14 @@ export type SearchTypeFilter = 'all' | 'monster' | 'item' | 'gacha' | 'merchant'
 // Quiz 題目選項類型
 export interface QuizOption {
   en: string
-  zh: string
   isCorrect: boolean
 }
 
 // Quiz 題目類型
 export interface QuizQuestion {
   questionEn: string
-  questionZh: string
   options: QuizOption[]
-  answer: { en: string; zh: string } | null
+  answer: { en: string } | null
 }
 
 // Quiz 資料結構（來自 chronostory-quiz.json）
