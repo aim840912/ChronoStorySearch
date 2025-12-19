@@ -1,11 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import type { DropItem, ItemAttributesEssential } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
-import { getItemImageUrl } from '@/lib/image-utils'
+import { getItemImageUrl, getMonsterImageUrl } from '@/lib/image-utils'
 import { useLazyItemDetailed } from '@/hooks/useLazyData'
+import { useDropRelations } from '@/hooks/useDropRelations'
 import { ItemAttributesCard } from './ItemAttributesCard'
 
 interface DropItemCardProps {
@@ -14,6 +15,8 @@ interface DropItemCardProps {
   isFavorite: boolean
   onToggleFavorite: (itemId: number, itemName: string) => void
   onItemClick: (itemId: number, itemName: string) => void
+  /** 是否顯示掉落來源圖示 */
+  showIcons?: boolean
 }
 
 /**
@@ -26,11 +29,23 @@ export function DropItemCard({
   isFavorite,
   onToggleFavorite,
   onItemClick,
+  showIcons = false,
 }: DropItemCardProps) {
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
   const [isExpanded, setIsExpanded] = useState(false)
   const chancePercent = drop.chance.toFixed(4)
+
+  // 取得掉落此物品的怪物列表（用於顯示圖示）
+  const { getMobsForItem } = useDropRelations()
+  const dropMobIcons = useMemo(() => {
+    if (!showIcons) return []
+    const mobIds = getMobsForItem(drop.itemId)
+    return mobIds.slice(0, 8).map((mobId) => ({
+      id: mobId,
+      imageUrl: getMonsterImageUrl(mobId, { format: 'png' }),
+    }))
+  }, [showIcons, drop.itemId, getMobsForItem])
   const qtyRange =
     drop.minQty === drop.maxQty ? `${drop.minQty}` : `${drop.minQty}-${drop.maxQty}`
 
@@ -111,6 +126,26 @@ export function DropItemCard({
           />
         </svg>
       </button>
+
+      {/* 掉落來源圖示區域 */}
+      {showIcons && dropMobIcons.length > 0 && (
+        <div className="flex items-center gap-1 mb-3 flex-wrap">
+          {dropMobIcons.map((icon) => (
+            <img
+              key={icon.id}
+              src={icon.imageUrl}
+              alt=""
+              className="w-7 h-7 object-contain"
+              loading="lazy"
+            />
+          ))}
+          {getMobsForItem(drop.itemId).length > 8 && (
+            <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">
+              +{getMobsForItem(drop.itemId).length - 8}
+            </span>
+          )}
+        </div>
+      )}
 
       {/* 物品資訊 */}
       <div className="flex items-center gap-3 mb-4">

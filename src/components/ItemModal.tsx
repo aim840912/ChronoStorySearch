@@ -86,6 +86,9 @@ export function ItemModal({
   // 視圖模式切換狀態（'grid' = 卡片視圖, 'list' = 列表視圖）
   const [viewMode, setViewMode] = useLocalStorage<'grid' | 'list'>('item-sources-view', 'grid')
 
+  // 是否顯示掉落來源圖示（預設隱藏）
+  const [showDropIcons, setShowDropIcons] = useLocalStorage<boolean>('item-sources-show-icons', false)
+
   // 懶加載怪物資訊資料 (用於顯示怪物血量)
   const {
     monsterHPMap,
@@ -380,9 +383,11 @@ export function ItemModal({
         </div>
 
         {/* Modal Content - 左右分欄佈局（手機版上下堆疊） */}
-        <div className="p-3 sm:p-6 flex flex-col lg:flex-row gap-3 sm:gap-6 flex-1 min-h-0 overflow-y-auto lg:overflow-hidden">
+        {/* 手機版移除上方 padding，讓按鈕列貼齊 Tab */}
+        <div className="px-3 pb-3 lg:p-6 flex flex-col lg:flex-row gap-3 sm:gap-6 flex-1 min-h-0 overflow-hidden">
           {/* 左側：物品屬性（桌面版顯示 / 手機版根據 Tab 顯示） */}
-          <div className={`lg:w-[320px] lg:flex-shrink-0 space-y-4 lg:h-full lg:overflow-y-auto scrollbar-hide ${
+          {/* 手機版需要上方 padding，因為內容區域沒有 */}
+          <div className={`pt-3 lg:pt-0 lg:w-[320px] lg:flex-shrink-0 space-y-4 flex-1 lg:flex-none h-full overflow-y-auto scrollbar-hide ${
             mobileTab === 'sources' ? 'hidden lg:block' : ''
           }`}>
             {/* 物品圖示與收藏按鈕 */}
@@ -462,7 +467,7 @@ export function ItemModal({
           </div>
 
           {/* 右側：轉蛋機來源 + 掉落來源怪物列表（桌面版顯示 / 手機版根據 Tab 顯示） */}
-          <div className={`lg:w-2/3 lg:h-full lg:overflow-y-auto scrollbar-hide ${
+          <div className={`flex-1 lg:w-2/3 h-full overflow-y-auto scrollbar-hide ${
             mobileTab === 'info' ? 'hidden lg:block' : ''
           }`}>
             {/* 轉蛋機來源區塊 */}
@@ -550,27 +555,52 @@ export function ItemModal({
             {itemDrops.length > 0 && (
               <div>
                 {/* 掉落來源標題和視圖切換 */}
-                <div className="flex items-center justify-between mb-3 sm:mb-4 sticky top-0 bg-white dark:bg-gray-800 z-10 py-2 -mt-2">
+                <div className="flex items-center justify-between mb-3 sm:mb-4 sticky top-0 bg-white dark:bg-gray-800 z-10 py-2">
                   <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 hidden lg:block">
                     {t('card.droppedBy')} ({itemDrops.length})
                   </h3>
-                  {/* 視圖切換按鈕（桌面版放右邊，手機版放左邊） */}
-                  <button
-                    onClick={() => setViewMode(viewMode === 'grid' ? 'list' : 'grid')}
-                    className="p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 lg:ml-auto"
-                    aria-label={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
-                    title={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
-                  >
-                    {viewMode === 'grid' ? (
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                      </svg>
-                    ) : (
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                      </svg>
-                    )}
-                  </button>
+                  {/* 切換按鈕區域 */}
+                  <div className="flex gap-2 lg:ml-auto">
+                    {/* 顯示圖示切換按鈕 */}
+                    <button
+                      onClick={() => setShowDropIcons(!showDropIcons)}
+                      className={`p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 ${
+                        showDropIcons
+                          ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400'
+                          : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                      }`}
+                      aria-label={showDropIcons ? t('card.hideDropIcons') : t('card.showDropIcons')}
+                      title={showDropIcons ? t('card.hideDropIcons') : t('card.showDropIcons')}
+                    >
+                      {showDropIcons ? (
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                      ) : (
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+                        </svg>
+                      )}
+                    </button>
+                    {/* 視圖切換按鈕 */}
+                    <button
+                      onClick={() => setViewMode(viewMode === 'grid' ? 'list' : 'grid')}
+                      className="p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600"
+                      aria-label={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
+                      title={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
+                    >
+                      {viewMode === 'grid' ? (
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                        </svg>
+                      ) : (
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                      )}
+                    </button>
+                  </div>
                 </div>
                 {/* 根據視圖模式渲染不同的佈局 */}
                 {viewMode === 'grid' ? (
@@ -602,6 +632,7 @@ export function ItemModal({
                             isFavorite={isMonsterFavorite(element.data.mobId)}
                             onToggleFavorite={onToggleMonsterFavorite}
                             onMonsterClick={onMonsterClick}
+                            showIcons={showDropIcons}
                           />
                         )
                       })

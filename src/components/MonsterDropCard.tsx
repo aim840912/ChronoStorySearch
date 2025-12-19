@@ -1,11 +1,12 @@
 'use client'
 
-import { memo } from 'react'
+import { memo, useMemo } from 'react'
 import type { DropItem } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
+import { useDropRelations } from '@/hooks/useDropRelations'
 import { getMonsterDisplayName } from '@/lib/display-name'
-import { getMonsterImageUrl } from '@/lib/image-utils'
+import { getMonsterImageUrl, getItemImageUrl } from '@/lib/image-utils'
 
 interface MonsterDropCardProps {
   drop: DropItem
@@ -13,6 +14,8 @@ interface MonsterDropCardProps {
   isFavorite: boolean
   onToggleFavorite: (mobId: number, mobName: string) => void
   onMonsterClick: (mobId: number, mobName: string) => void
+  /** 是否顯示掉落來源圖示 */
+  showIcons?: boolean
 }
 
 /**
@@ -27,11 +30,27 @@ export const MonsterDropCard = memo(function MonsterDropCard({
   isFavorite,
   onToggleFavorite,
   onMonsterClick,
+  showIcons = false,
 }: MonsterDropCardProps) {
   const { language, t } = useLanguage()
   const { format } = useImageFormat()
   const isDev = process.env.NODE_ENV === 'development'
   const chancePercent = drop.chance.toFixed(4)
+
+  // 取得此怪物掉落的卷軸列表（用於顯示圖示）
+  const { getScrollsForMob } = useDropRelations()
+  const scrollIcons = useMemo(() => {
+    if (!showIcons) return []
+    const scrolls = getScrollsForMob(drop.mobId)
+    return scrolls.slice(0, 8).map((scroll) => ({
+      id: scroll.id,
+      imageUrl: getItemImageUrl(scroll.id, { itemName: scroll.name }),
+    }))
+  }, [showIcons, drop.mobId, getScrollsForMob])
+  const totalScrolls = useMemo(() => {
+    if (!showIcons) return 0
+    return getScrollsForMob(drop.mobId).length
+  }, [showIcons, drop.mobId, getScrollsForMob])
 
   // 計算怪物血量顯示值
   const monsterHP = monsterHPMap.get(drop.mobId)
@@ -76,6 +95,26 @@ export const MonsterDropCard = memo(function MonsterDropCard({
           />
         </svg>
       </button>
+
+      {/* 掉落卷軸圖示區域 */}
+      {showIcons && scrollIcons.length > 0 && (
+        <div className="flex items-center gap-1 mb-3 flex-wrap">
+          {scrollIcons.map((icon) => (
+            <img
+              key={icon.id}
+              src={icon.imageUrl}
+              alt=""
+              className="w-7 h-7 object-contain"
+              loading="lazy"
+            />
+          ))}
+          {totalScrolls > 8 && (
+            <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">
+              +{totalScrolls - 8}
+            </span>
+          )}
+        </div>
+      )}
 
       {/* 怪物資訊 */}
       <div className="flex items-center gap-3 mb-4">
