@@ -1,12 +1,4 @@
 {
-  "metadata": {
-    "source": "Google Sheets",
-    "url": "https://docs.google.com/spreadsheets/d/1rTZ-_vu-bEAqwfKxKDy3DzrHrmBtI6-RvnaK23LCvIw/edit?gid=9211077",
-    "editor": "philip.c.",
-    "thanks": "涼子秋",
-    "totalQuestions": 38,
-    "generatedAt": "2025-12-19T08:07:12.300Z"
-  },
   "questions": [
     {
       "questionEn": "Who is the founder of ChronoStory?",
@@ -149,7 +141,7 @@
       }
     },
     {
-      "questionEn": "Green Mushroom, Tree Stump, Bubbling, Axe Stump, Octopus, which isthe highest level?",
+      "questionEn": "Green Mushroom, Tree Stump, Bubbling, Axe Stump, Octopus, which is the highest level?",
       "options": [
         {
           "en": "Tree Stump",
@@ -208,28 +200,28 @@
       "questionEn": "Which of following monsters's item CORRECTLY corresponds to the monster?",
       "options": [
         {
-          "en": "Horny Mushroom – Spiky Mushroom Cap",
+          "en": "Horny Mushroom - Spiky Mushroom Cap",
           "isCorrect": false
         },
         {
-          "en": "Wild Boar – Wild Boar Fang",
+          "en": "Wild Boar - Wild Boar Fang",
           "isCorrect": false
         },
         {
-          "en": "Tauroshield – Tauroshield Antler",
+          "en": "Tauroshield - Tauroshield Antler",
           "isCorrect": false
         },
         {
-          "en": "Hot Mixed Golem – Fire Stone Block",
+          "en": "Hot Mixed Golem - Fire Stone Block",
           "isCorrect": false
         },
         {
-          "en": "Stirge – Stirge's Wing",
+          "en": "Stirge - Stirge's Wing",
           "isCorrect": true
         }
       ],
       "answer": {
-        "en": "Stirge – Stirge's Wing"
+        "en": "Stirge - Stirge's Wing"
       }
     },
     {
@@ -348,116 +340,116 @@
       "questionEn": "Which of following monsters's item INCORRECTLY corresponds to the monster?",
       "options": [
         {
-          "en": "Dark Eye – Dark Eye Tail",
+          "en": "Dark Eye - Dark Eye Tail",
           "isCorrect": false
         },
         {
-          "en": "Nependeath – Nependeath's Nut",
+          "en": "Nependeath - Nependeath's Nut",
           "isCorrect": true
         },
         {
-          "en": "Ghost Stump – Seedling",
+          "en": "Ghost Stump - Seedling",
           "isCorrect": false
         },
         {
-          "en": "Cold Mixed Golem – Cold Stone Block",
+          "en": "Cold Mixed Golem - Cold Stone Block",
           "isCorrect": false
         },
         {
-          "en": "Miner Zombie – Zombie's Lost Tooth",
+          "en": "Miner Zombie - Zombie's Lost Tooth",
           "isCorrect": false
         }
       ],
       "answer": {
-        "en": "Nependeath – Nependeath's Nut"
+        "en": "Nependeath - Nependeath's Nut"
       }
     },
     {
       "questionEn": "Which of following potions has WRONG info.?",
       "options": [
         {
-          "en": "Mana Elixir – Recover 300 MP",
+          "en": "Mana Elixir - Recover 300 MP",
           "isCorrect": false
         },
         {
-          "en": "Tonic – Cures state of weakness",
+          "en": "Tonic - Cures state of weakness",
           "isCorrect": false
         },
         {
-          "en": "Apple – Recover 30 HP",
+          "en": "Apple - Recover 30 HP",
           "isCorrect": false
         },
         {
-          "en": "Sunrise Dew – Recover 3000 MP",
+          "en": "Sunrise Dew - Recover 3000 MP",
           "isCorrect": true
         },
         {
-          "en": "Unagi – Recover 1000 HP",
+          "en": "Unagi - Recover 1000 HP",
           "isCorrect": false
         }
       ],
       "answer": {
-        "en": "Sunrise Dew – Recover 3000 MP"
+        "en": "Sunrise Dew - Recover 3000 MP"
       }
     },
     {
       "questionEn": "Which of following potions has CORRECT info.?",
       "options": [
         {
-          "en": "Warrior Pill – Attack +5 for 3 minutes",
+          "en": "Warrior Pill - Attack +5 for 3 minutes",
           "isCorrect": false
         },
         {
-          "en": "Pure Water – Recover 700 MP",
+          "en": "Pure Water - Recover 700 MP",
           "isCorrect": false
         },
         {
-          "en": "Cake – Recover 150 HP & MP",
+          "en": "Cake - Recover 150 HP & MP",
           "isCorrect": false
         },
         {
-          "en": "Salad – Recover 300 MP",
+          "en": "Salad - Recover 300 MP",
           "isCorrect": false
         },
         {
-          "en": "Pizza – Recover 400 HP",
+          "en": "Pizza - Recover 400 HP",
           "isCorrect": true
         }
       ],
       "answer": {
-        "en": "Pizza – Recover 400 HP"
+        "en": "Pizza - Recover 400 HP"
       }
     },
     {
       "questionEn": "Which of the following debuffs is incorrect?",
       "options": [
         {
-          "en": "Sealed – skills become disabled",
+          "en": "Sealed - skills become disabled",
           "isCorrect": false
         },
         {
-          "en": "Undead – turns undead & halved recovery amounts",
+          "en": "Undead - turns undead & halved recovery amounts",
           "isCorrect": false
         },
         {
-          "en": "Weaken – slow down moving speed",
+          "en": "Weaken - slow down moving speed",
           "isCorrect": true
         },
         {
-          "en": "Cursed – EXP received is decreased",
+          "en": "Cursed - EXP received is decreased",
           "isCorrect": false
         },
         {
-          "en": "Stunned – cannot move",
+          "en": "Stunned - cannot move",
           "isCorrect": false
         }
       ],
       "answer": {
-        "en": "Weaken – slow down moving speed"
+        "en": "Weaken - slow down moving speed"
       }
     },
     {
-      "questionEn": "Which NPC is not involved in Mr. Wetbottom's Secret Book?",
+      "questionEn": "Which NPC is not involved in Mr.Wetbottom's Secret Book?",
       "options": [
         {
           "en": "Ronnie",
@@ -472,7 +464,7 @@
           "isCorrect": false
         },
         {
-          "en": "Mr. Wetbottom",
+          "en": "Mr.Wetbottom",
           "isCorrect": false
         },
         {
@@ -1017,35 +1009,35 @@
       }
     },
     {
-      "questionEn": "For the 1st job advancement, which of the following is the WRONG requirement?",
+      "questionEn": "For the 1st job advancement,which of the following is the WRONG requirement?",
       "options": [
         {
-          "en": "Magician – Level 8",
+          "en": "Magician - Level 8",
           "isCorrect": false
         },
         {
-          "en": "Pirate – 20 DEX or more",
+          "en": "Pirate - 20 DEX or more",
           "isCorrect": false
         },
         {
-          "en": "Archer – 25 DEX or more",
+          "en": "Archer - 25 DEX or more",
           "isCorrect": false
         },
         {
-          "en": "Thief – 20 LUK or more",
+          "en": "Thief - 20 LUK or more",
           "isCorrect": true
         },
         {
-          "en": "Swordman – 35 STR or more",
+          "en": "Swordman - 35 STR or more",
           "isCorrect": false
         }
       ],
       "answer": {
-        "en": "Thief – 20 LUK or more"
+        "en": "Thief - 20 LUK or more"
       }
     },
     {
-      "questionEn": "For the 1st job advancement, which job correctly states the job advancement requirement?",
+      "questionEn": "For the 1st job advancement,which job correctly states the job advancement requirement?",
       "options": [
         {
           "en": "Pirate-25 LUK",
@@ -1070,6 +1062,174 @@
       ],
       "answer": {
         "en": "Bowman-25 DEX"
+      }
+    },
+    {
+      "questionEn": "Which of these monsters will you NOT be facing in Ossyria?",
+      "options": [
+        {
+          "en": "Croco",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Croco"
+      }
+    },
+    {
+      "questionEn": "El Nath doesn't have which of the following monsters?",
+      "options": [
+        {
+          "en": "Dark Ligator",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Dark Ligator"
+      }
+    },
+    {
+      "questionEn": "Which monster has not appeared in Maple Island?",
+      "options": [
+        {
+          "en": "Evil Eye",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Evil Eye"
+      }
+    },
+    {
+      "questionEn": "Maple Island doesn't have which of the following monsters?",
+      "options": [
+        {
+          "en": "Pig",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Pig"
+      }
+    },
+    {
+      "questionEn": "Which town is not at Victoria Island?",
+      "options": [
+        {
+          "en": "Amherst",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Amherst"
+      }
+    },
+    {
+      "questionEn": "In GM Event, how many FRUIT CAKE you can get as reward?",
+      "options": [
+        {
+          "en": "5",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "5"
+      }
+    },
+    {
+      "questionEn": "Which material doesn't need for awaken Hero's Gladius?",
+      "options": [
+        {
+          "en": "Fairy Wing",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Fairy Wing"
+      }
+    },
+    {
+      "questionEn": "Which of following quests can be repeated?",
+      "options": [
+        {
+          "en": "Arwen and the Glass Shoe",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Arwen and the Glass Shoe"
+      }
+    },
+    {
+      "questionEn": "Which of the following is the highest level quest?",
+      "options": [
+        {
+          "en": "Alcaster and the Dark Crystal",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Alcaster and the Dark Crystal"
+      }
+    },
+    {
+      "questionEn": "Which NPC cannot be seen in El Nath snowfield?",
+      "options": [
+        {
+          "en": "Elma the Housekeeper",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Elma the Housekeeper"
+      }
+    },
+    {
+      "questionEn": "Which NPC is not related to pets?",
+      "options": [
+        {
+          "en": "Vicious",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Vicious"
+      }
+    },
+    {
+      "questionEn": "In Kerning City, who is the father of Alex, the runaway kid?",
+      "options": [
+        {
+          "en": "Chief Stan",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Chief Stan"
+      }
+    },
+    {
+      "questionEn": "Which NPC does not belong to Alpha Platoon's Network of Communication?",
+      "options": [
+        {
+          "en": "Peter",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Peter"
+      }
+    },
+    {
+      "questionEn": "Which of the following NPC is not related to item synthesis/refine?",
+      "options": [
+        {
+          "en": "Shane",
+          "isCorrect": true
+        }
+      ],
+      "answer": {
+        "en": "Shane"
       }
     }
   ]
