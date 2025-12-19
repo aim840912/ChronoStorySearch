@@ -430,59 +430,37 @@ export function MonsterModal({
             </div>
             {/* 根據視圖模式渲染不同的佈局 */}
             {viewMode === 'grid' ? (
-              <div className="space-y-3 sm:space-y-4 p-1">
-                {/* 將物品分成每 8 個一組，每組後插入廣告 */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
+                {/* 將廣告混入卡片網格中 */}
                 {(() => {
-                  const groupSize = 8
-                  const groups: typeof filteredDrops[] = []
-                  for (let i = 0; i < filteredDrops.length; i += groupSize) {
-                    groups.push(filteredDrops.slice(i, i + groupSize))
+                  const elements: Array<{ type: 'item'; data: typeof filteredDrops[0] } | { type: 'ad'; key: string }> = []
+                  filteredDrops.forEach((drop, index) => {
+                    elements.push({ type: 'item', data: drop })
+                    // 每 8 個物品後插入廣告（但不在最後一個物品後）
+                    if ((index + 1) % 8 === 0 && index < filteredDrops.length - 1) {
+                      elements.push({ type: 'ad', key: `ad-${index}` })
+                    }
+                  })
+                  // 如果物品 < 8 個，在最後加廣告
+                  if (filteredDrops.length > 0 && filteredDrops.length < 8) {
+                    elements.push({ type: 'ad', key: 'ad-end' })
                   }
 
-                  return groups.map((group, groupIndex) => (
-                    <div key={`group-${groupIndex}`}>
-                      {/* 雙欄佈局 */}
-                      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start">
-                        {/* 左欄 */}
-                        <div className="flex-1 space-y-3 sm:space-y-4 w-full sm:w-auto">
-                          {group
-                            .filter((_, index) => index % 2 === 0)
-                            .map((drop) => (
-                              <DropItemCard
-                                key={drop.itemId}
-                                drop={drop}
-                                itemAttributesMap={itemAttributesMap}
-                                isFavorite={isItemFavorite(drop.itemId)}
-                                onToggleFavorite={onToggleItemFavorite}
-                                onItemClick={onItemClick}
-                              />
-                            ))}
-                        </div>
-                        {/* 右欄 */}
-                        <div className="flex-1 space-y-3 sm:space-y-4 w-full sm:w-auto">
-                          {group
-                            .filter((_, index) => index % 2 === 1)
-                            .map((drop) => (
-                              <DropItemCard
-                                key={drop.itemId}
-                                drop={drop}
-                                itemAttributesMap={itemAttributesMap}
-                                isFavorite={isItemFavorite(drop.itemId)}
-                                onToggleFavorite={onToggleItemFavorite}
-                                onItemClick={onItemClick}
-                              />
-                            ))}
-                        </div>
-                      </div>
-                      {/* 信息流廣告：每 8 個物品後插入，或物品 < 8 時在底部插入 */}
-                      {(filteredDrops.length >= groupSize
-                        ? groupIndex < groups.length - 1  // >= 8 個：非最後一組才插入
-                        : groupIndex === groups.length - 1  // < 8 個：最後一組插入
-                      ) && (
-                        <AdSenseCard className="mt-3 sm:mt-4 sm:w-[calc(50%-0.5rem)]" />
-                      )}
-                    </div>
-                  ))
+                  return elements.map((element) => {
+                    if (element.type === 'ad') {
+                      return <AdSenseCard key={element.key} />
+                    }
+                    return (
+                      <DropItemCard
+                        key={element.data.itemId}
+                        drop={element.data}
+                        itemAttributesMap={itemAttributesMap}
+                        isFavorite={isItemFavorite(element.data.itemId)}
+                        onToggleFavorite={onToggleItemFavorite}
+                        onItemClick={onItemClick}
+                      />
+                    )
+                  })
                 })()}
               </div>
             ) : (
@@ -495,7 +473,7 @@ export function MonsterModal({
                   onItemClick={onItemClick}
                 />
                 {/* 信息流廣告：列表底部 */}
-                {filteredDrops.length > 0 && <AdSenseCard className="sm:w-[calc(50%-0.5rem)]" />}
+                {filteredDrops.length > 0 && <AdSenseCard />}
               </div>
             )}
           </div>
