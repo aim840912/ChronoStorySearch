@@ -1,5 +1,7 @@
 'use client'
 
+import { AdSenseMultiplex } from '@/components/adsense/AdSenseMultiplex'
+
 interface EmptyStateProps {
   hasSearchTerm: boolean
   mode: 'favorite-monsters' | 'favorite-items' | 'all'
@@ -91,16 +93,20 @@ export function EmptyState({ hasSearchTerm, mode, t }: EmptyStateProps) {
   const config = getEmptyConfig()
 
   return (
-    <div className="text-center py-12 mt-8">
-      {config.icon}
-      <p className="text-gray-600 dark:text-gray-400 text-lg font-medium mb-2">
-        {config.title}
-      </p>
-      {config.subtitle && (
-        <p className="text-gray-500 dark:text-gray-500 text-sm">
-          {config.subtitle}
+    <div className="mt-8">
+      <div className="text-center py-12">
+        {config.icon}
+        <p className="text-gray-600 dark:text-gray-400 text-lg font-medium mb-2">
+          {config.title}
         </p>
-      )}
+        {config.subtitle && (
+          <p className="text-gray-500 dark:text-gray-500 text-sm">
+            {config.subtitle}
+          </p>
+        )}
+      </div>
+      {/* Multiplex 多重廣告 */}
+      <AdSenseMultiplex className="mt-8" />
     </div>
   )
 }

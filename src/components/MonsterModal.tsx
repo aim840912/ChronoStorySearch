@@ -9,6 +9,7 @@ import { Toast } from './Toast'
 import { BaseModal } from './common/BaseModal'
 import { AdSenseDisplay } from './adsense/AdSenseDisplay'
 import { AdSenseAnchor } from './adsense/AdSenseAnchor'
+import { AdSenseCard } from './adsense/AdSenseCard'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
@@ -429,46 +430,73 @@ export function MonsterModal({
             </div>
             {/* 根據視圖模式渲染不同的佈局 */}
             {viewMode === 'grid' ? (
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 p-1 items-start">
-                {/* 左欄 */}
-                <div className="flex-1 space-y-3 sm:space-y-4 w-full sm:w-auto">
-                  {filteredDrops
-                    .filter((_, index) => index % 2 === 0)
-                    .map((drop) => (
-                      <DropItemCard
-                        key={drop.itemId}
-                        drop={drop}
-                        itemAttributesMap={itemAttributesMap}
-                        isFavorite={isItemFavorite(drop.itemId)}
-                        onToggleFavorite={onToggleItemFavorite}
-                        onItemClick={onItemClick}
-                      />
-                    ))}
-                </div>
-                {/* 右欄 */}
-                <div className="flex-1 space-y-3 sm:space-y-4 w-full sm:w-auto">
-                  {filteredDrops
-                    .filter((_, index) => index % 2 === 1)
-                    .map((drop) => (
-                      <DropItemCard
-                        key={drop.itemId}
-                        drop={drop}
-                        itemAttributesMap={itemAttributesMap}
-                        isFavorite={isItemFavorite(drop.itemId)}
-                        onToggleFavorite={onToggleItemFavorite}
-                        onItemClick={onItemClick}
-                      />
-                    ))}
-                </div>
+              <div className="space-y-3 sm:space-y-4 p-1">
+                {/* 將物品分成每 8 個一組，每組後插入廣告 */}
+                {(() => {
+                  const groupSize = 8
+                  const groups: typeof filteredDrops[] = []
+                  for (let i = 0; i < filteredDrops.length; i += groupSize) {
+                    groups.push(filteredDrops.slice(i, i + groupSize))
+                  }
+
+                  return groups.map((group, groupIndex) => (
+                    <div key={`group-${groupIndex}`}>
+                      {/* 雙欄佈局 */}
+                      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start">
+                        {/* 左欄 */}
+                        <div className="flex-1 space-y-3 sm:space-y-4 w-full sm:w-auto">
+                          {group
+                            .filter((_, index) => index % 2 === 0)
+                            .map((drop) => (
+                              <DropItemCard
+                                key={drop.itemId}
+                                drop={drop}
+                                itemAttributesMap={itemAttributesMap}
+                                isFavorite={isItemFavorite(drop.itemId)}
+                                onToggleFavorite={onToggleItemFavorite}
+                                onItemClick={onItemClick}
+                              />
+                            ))}
+                        </div>
+                        {/* 右欄 */}
+                        <div className="flex-1 space-y-3 sm:space-y-4 w-full sm:w-auto">
+                          {group
+                            .filter((_, index) => index % 2 === 1)
+                            .map((drop) => (
+                              <DropItemCard
+                                key={drop.itemId}
+                                drop={drop}
+                                itemAttributesMap={itemAttributesMap}
+                                isFavorite={isItemFavorite(drop.itemId)}
+                                onToggleFavorite={onToggleItemFavorite}
+                                onItemClick={onItemClick}
+                              />
+                            ))}
+                        </div>
+                      </div>
+                      {/* 信息流廣告：每 8 個物品後插入，或物品 < 8 時在底部插入 */}
+                      {(filteredDrops.length >= groupSize
+                        ? groupIndex < groups.length - 1  // >= 8 個：非最後一組才插入
+                        : groupIndex === groups.length - 1  // < 8 個：最後一組插入
+                      ) && (
+                        <AdSenseCard className="mt-3 sm:mt-4 sm:w-[calc(50%-0.5rem)]" />
+                      )}
+                    </div>
+                  ))
+                })()}
               </div>
             ) : (
-              <DropItemList
-                drops={filteredDrops}
-                itemAttributesMap={itemAttributesMap}
-                isItemFavorite={isItemFavorite}
-                onToggleFavorite={onToggleItemFavorite}
-                onItemClick={onItemClick}
-              />
+              <div className="space-y-3 sm:space-y-4">
+                <DropItemList
+                  drops={filteredDrops}
+                  itemAttributesMap={itemAttributesMap}
+                  isItemFavorite={isItemFavorite}
+                  onToggleFavorite={onToggleItemFavorite}
+                  onItemClick={onItemClick}
+                />
+                {/* 信息流廣告：列表底部 */}
+                {filteredDrops.length > 0 && <AdSenseCard className="sm:w-[calc(50%-0.5rem)]" />}
+              </div>
             )}
           </div>
         </div>

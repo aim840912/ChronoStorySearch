@@ -21,6 +21,7 @@ import { ContentDisplay } from '@/components/ContentDisplay'
 import { ModalManager } from '@/components/ModalManager'
 import { GachaDrawSection } from '@/components/gacha/GachaDrawSection'
 import { MerchantShopSection } from '@/components/merchant/MerchantShopSection'
+import { AdSenseMultiplex } from '@/components/adsense/AdSenseMultiplex'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
 import { trackEvent } from '@/lib/analytics/ga4'
@@ -481,6 +482,11 @@ export default function Home() {
           gachaMachines={gachaMachines}
           itemIndexMap={itemIndexMap}
         />
+        )}
+
+        {/* Multiplex 多重廣告 - 列表結束後顯示 */}
+        {!(isGachaMode && selectedGachaMachineId !== null) && !isMerchantMode && (
+          <AdSenseMultiplex className="mt-8" />
         )}
       </div>
 

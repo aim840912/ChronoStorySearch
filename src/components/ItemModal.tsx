@@ -9,6 +9,7 @@ import { Toast } from './Toast'
 import { BaseModal } from './common/BaseModal'
 import { AdSenseDisplay } from './adsense/AdSenseDisplay'
 import { AdSenseAnchor } from './adsense/AdSenseAnchor'
+import { AdSenseCard } from './adsense/AdSenseCard'
 import { clientLogger } from '@/lib/logger'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
@@ -573,26 +574,50 @@ export function ItemModal({
                 </div>
                 {/* 根據視圖模式渲染不同的佈局 */}
                 {viewMode === 'grid' ? (
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
-                    {itemDrops.map((drop, index) => (
-                      <MonsterDropCard
-                        key={`${drop.mobId}-${index}`}
-                        drop={drop}
-                        monsterHPMap={monsterHPMap}
-                        isFavorite={isMonsterFavorite(drop.mobId)}
-                        onToggleFavorite={onToggleMonsterFavorite}
-                        onMonsterClick={onMonsterClick}
-                      />
-                    ))}
-                  </div>
+                  (() => {
+                    // 信息流廣告邏輯：每 8 個怪物插入一個廣告，< 8 個則在底部顯示
+                    const groupSize = 8
+                    const groups: typeof itemDrops[] = []
+                    for (let i = 0; i < itemDrops.length; i += groupSize) {
+                      groups.push(itemDrops.slice(i, i + groupSize))
+                    }
+
+                    return groups.map((group, groupIndex) => (
+                      <div key={`group-${groupIndex}`}>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
+                          {group.map((drop, index) => (
+                            <MonsterDropCard
+                              key={`${drop.mobId}-${groupIndex * groupSize + index}`}
+                              drop={drop}
+                              monsterHPMap={monsterHPMap}
+                              isFavorite={isMonsterFavorite(drop.mobId)}
+                              onToggleFavorite={onToggleMonsterFavorite}
+                              onMonsterClick={onMonsterClick}
+                            />
+                          ))}
+                        </div>
+                        {/* 信息流廣告：≥8 個時在每組後插入，<8 個時在最後一組後插入 */}
+                        {(itemDrops.length >= groupSize
+                          ? groupIndex < groups.length - 1
+                          : groupIndex === groups.length - 1
+                        ) && (
+                          <AdSenseCard className="mt-3 sm:mt-4 sm:w-[calc(50%-0.5rem)]" />
+                        )}
+                      </div>
+                    ))
+                  })()
                 ) : (
-                  <MonsterDropList
-                    drops={itemDrops}
-                    monsterHPMap={monsterHPMap}
-                    isMonsterFavorite={isMonsterFavorite}
-                    onToggleFavorite={onToggleMonsterFavorite}
-                    onMonsterClick={onMonsterClick}
-                  />
+                  <>
+                    <MonsterDropList
+                      drops={itemDrops}
+                      monsterHPMap={monsterHPMap}
+                      isMonsterFavorite={isMonsterFavorite}
+                      onToggleFavorite={onToggleMonsterFavorite}
+                      onMonsterClick={onMonsterClick}
+                    />
+                    {/* 列表視圖底部廣告 */}
+                    <AdSenseCard className="mt-3 sm:mt-4 sm:w-[calc(50%-0.5rem)]" />
+                  </>
                 )}
               </div>
             )}
