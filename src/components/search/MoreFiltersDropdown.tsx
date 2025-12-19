@@ -165,13 +165,15 @@ export function MoreFiltersDropdown({
           <div className="px-3 py-1.5 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">
             {t('search.type.all')}
           </div>
-          {(['all', 'monster', 'item'] as const).map((type) => (
+          {(['all', 'monster', 'item', 'quiz'] as const).map((type) => (
             <button
               key={type}
               onClick={() => handleTypeChange(type)}
               className={`w-full px-4 py-2 text-left text-sm transition-colors ${
                 searchType === type && filterMode === 'all' && !isSpecialMode
-                  ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300'
+                  ? type === 'quiz'
+                    ? 'bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300'
+                    : 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300'
                   : 'hover:bg-gray-50 dark:hover:bg-gray-700/50 text-gray-700 dark:text-gray-300'
               }`}
             >

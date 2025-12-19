@@ -31,6 +31,10 @@ export type {
   Theme,
   MerchantDropItem,
   MerchantMapData,
+  // Quiz 類型
+  QuizOption,
+  QuizQuestion,
+  QuizData,
 } from './drops'
 
 // ========== 轉蛋相關類型 ==========

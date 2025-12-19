@@ -71,6 +71,16 @@ export function FilterTabs({
       >
         {t('search.type.item')}
       </button>
+      <button
+        onClick={() => handleTypeChange('quiz')}
+        className={`px-2 min-[400px]:px-3 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
+          searchType === 'quiz' && filterMode === 'all' && !isGachaMode && !isMerchantMode
+            ? 'bg-white dark:bg-gray-700 text-amber-600 dark:text-amber-400 shadow-sm'
+            : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-700/50'
+        }`}
+      >
+        {t('search.type.quiz')}
+      </button>
       {/* 分隔線 */}
       <div className="w-px h-8 bg-gray-300 dark:bg-gray-600 mx-1 self-center" />
 
