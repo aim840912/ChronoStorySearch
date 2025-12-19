@@ -61,7 +61,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-2">
         <div className="flex flex-wrap items-center justify-center gap-1 sm:gap-2 text-sm text-slate-300 dark:text-slate-400 text-center">
           <span className="inline-flex items-center gap-1">
-            {t('footer.serverBy')}
+            <span className="hidden min-[420px]:inline">{t('footer.serverBy')}</span>
             <Link
               href={discordInviteUrl}
               target="_blank"
@@ -85,7 +85,7 @@ export default function Footer() {
             title={t('footer.buyCoffee')}
           >
             <CoffeeIcon className="w-4 h-4" />
-            <span className="text-sm">{t('footer.buyCoffee')}</span>
+            <span className="hidden min-[607px]:inline text-sm">{t('footer.buyCoffee')}</span>
           </Link>
           <span className="text-slate-500 dark:text-slate-600 hidden sm:inline">
             |
