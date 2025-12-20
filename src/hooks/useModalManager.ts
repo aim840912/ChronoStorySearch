@@ -6,7 +6,7 @@ import { GA4_EVENTS } from '@/lib/analytics/events'
 /**
  * Modal 類型定義
  */
-type ModalType = 'monster' | 'item' | 'gacha' | 'bug' | 'clear' | 'merchant' | 'accuracy' | 'createListing' | 'myListings' | 'interests' | 'listingDetail'
+type ModalType = 'monster' | 'item' | 'gacha' | 'bug' | 'clear' | 'merchant' | 'accuracy' | 'createListing' | 'myListings' | 'interests' | 'listingDetail' | 'screenRecorder' | 'expTracker'
 
 /**
  * Monster Modal 資料結構
@@ -310,6 +310,28 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     setHistory({ previous: null })
   }, [])
 
+  // 開啟 Screen Recorder Modal
+  const openScreenRecorderModal = useCallback(() => {
+    setModal({ type: 'screenRecorder', data: null })
+  }, [])
+
+  // 關閉 Screen Recorder Modal
+  const closeScreenRecorderModal = useCallback(() => {
+    setModal({ type: null, data: null })
+    setHistory({ previous: null })
+  }, [])
+
+  // 開啟 EXP Tracker Modal
+  const openExpTrackerModal = useCallback(() => {
+    setModal({ type: 'expTracker', data: null })
+  }, [])
+
+  // 關閉 EXP Tracker Modal
+  const closeExpTrackerModal = useCallback(() => {
+    setModal({ type: null, data: null })
+    setHistory({ previous: null })
+  }, [])
+
   // 用於 URL 參數處理的 setters（向後相容）
   const setSelectedMonsterId = useCallback((mobId: number | null) => {
     if (mobId !== null && modal.type === 'monster') {
@@ -458,6 +480,16 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     selectedListingId: listingDetailData?.listingId ?? null,
     openListingDetailModal,
     closeListingDetailModal,
+
+    // Screen Recorder Modal
+    isScreenRecorderModalOpen: modal.type === 'screenRecorder',
+    openScreenRecorderModal,
+    closeScreenRecorderModal,
+
+    // EXP Tracker Modal
+    isExpTrackerModalOpen: modal.type === 'expTracker',
+    openExpTrackerModal,
+    closeExpTrackerModal,
 
     // 暴露原始 modal 狀態（用於複雜條件判斷）
     modal,

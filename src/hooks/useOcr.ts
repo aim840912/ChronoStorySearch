@@ -1,0 +1,227 @@
+'use client'
+
+import { useState, useCallback, useRef, useEffect } from 'react'
+import { createWorker, Worker, PSM } from 'tesseract.js'
+import type { UseOcrReturn, OcrResult } from '@/types/exp-tracker'
+
+// 預處理模式配置
+const PREPROCESSING_MODES = [
+  { name: 'raw', threshold: 0, invert: false, useRaw: true },
+  { name: 'binary-128', threshold: 128, invert: false, useRaw: false },
+  { name: 'binary-128-inv', threshold: 128, invert: true, useRaw: false },
+  { name: 'binary-80', threshold: 80, invert: false, useRaw: false },
+  { name: 'binary-180', threshold: 180, invert: false, useRaw: false },
+  { name: 'binary-80-inv', threshold: 80, invert: true, useRaw: false },
+]
+
+// 數字匹配模式 - 支援逗號分隔或 4 位以上連續數字
+const NUMBER_PATTERN = /(\d{1,3}(?:,\d{3})+|\d{4,})/g
+
+/**
+ * OCR Hook - 使用 Tesseract.js 進行數字辨識
+ * 優化：多種預處理方式提升辨識率
+ */
+export function useOcr(): UseOcrReturn {
+  const [isLoading, setIsLoading] = useState(false)
+  const [isReady, setIsReady] = useState(false)
+  const [error, setError] = useState<Error | null>(null)
+
+  const workerRef = useRef<Worker | null>(null)
+  const initializingRef = useRef(false)
+
+  // 初始化 Worker
+  const initWorker = useCallback(async () => {
+    if (workerRef.current || initializingRef.current) return
+
+    initializingRef.current = true
+    setIsLoading(true)
+    setError(null)
+
+    try {
+      const worker = await createWorker('eng', 1, {
+        logger: () => {},
+      })
+
+      // 不設定白名單，讓 OCR 自由辨識所有字元
+      await worker.setParameters({
+        tessedit_pageseg_mode: PSM.SINGLE_LINE,
+      })
+
+      workerRef.current = worker
+      setIsReady(true)
+    } catch (err) {
+      setError(
+        err instanceof Error ? err : new Error('Failed to initialize OCR')
+      )
+    } finally {
+      setIsLoading(false)
+      initializingRef.current = false
+    }
+  }, [])
+
+  // 圖像預處理函數
+  const preprocessImage = useCallback(
+    (
+      sourceCanvas: HTMLCanvasElement,
+      threshold: number,
+      invert: boolean,
+      useRaw: boolean
+    ): HTMLCanvasElement => {
+      if (useRaw) {
+        return sourceCanvas
+      }
+
+      const canvas = document.createElement('canvas')
+      canvas.width = sourceCanvas.width
+      canvas.height = sourceCanvas.height
+
+      const ctx = canvas.getContext('2d')
+      if (!ctx) return sourceCanvas
+
+      ctx.drawImage(sourceCanvas, 0, 0)
+
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height)
+      const data = imageData.data
+
+      for (let i = 0; i < data.length; i += 4) {
+        const gray = 0.299 * data[i] + 0.587 * data[i + 1] + 0.114 * data[i + 2]
+        let value = gray > threshold ? 255 : 0
+        if (invert) value = 255 - value
+        data[i] = value
+        data[i + 1] = value
+        data[i + 2] = value
+      }
+
+      ctx.putImageData(imageData, 0, 0)
+      return canvas
+    },
+    []
+  )
+
+  // 從文字中提取最大的數字（經驗值通常是最大的）
+  const extractLargestNumber = useCallback((text: string): number | null => {
+    const matches = text.match(NUMBER_PATTERN)
+    if (!matches || matches.length === 0) return null
+
+    // 找最大的數字
+    let largest: string | null = null
+    let largestValue = 0
+
+    for (const match of matches) {
+      const value = parseInt(match.replace(/,/g, ''), 10)
+      if (!isNaN(value) && value > largestValue) {
+        largestValue = value
+        largest = match
+      }
+    }
+
+    return largest ? largestValue : null
+  }, [])
+
+  // 執行 OCR 辨識
+  const recognize = useCallback(
+    async (imageData: ImageData | HTMLCanvasElement): Promise<OcrResult> => {
+      // 如果 worker 未初始化，先初始化
+      if (!workerRef.current) {
+        await initWorker()
+      }
+
+      if (!workerRef.current) {
+        return {
+          text: '',
+          confidence: 0,
+          expValue: null,
+        }
+      }
+
+      try {
+        // 如果是 ImageData，先轉換為 Canvas
+        let sourceCanvas: HTMLCanvasElement
+
+        if (imageData instanceof ImageData) {
+          sourceCanvas = document.createElement('canvas')
+          sourceCanvas.width = imageData.width
+          sourceCanvas.height = imageData.height
+          const ctx = sourceCanvas.getContext('2d')
+          if (ctx) {
+            ctx.putImageData(imageData, 0, 0)
+          }
+        } else {
+          sourceCanvas = imageData
+        }
+
+        // 嘗試多種預處理方式，收集所有有效結果
+        const validResults: Array<{
+          mode: string
+          text: string
+          confidence: number
+          expValue: number
+        }> = []
+
+        for (const mode of PREPROCESSING_MODES) {
+          const processedCanvas = preprocessImage(
+            sourceCanvas,
+            mode.threshold,
+            mode.invert,
+            mode.useRaw
+          )
+
+          const result = await workerRef.current.recognize(processedCanvas)
+          const text = result.data.text.trim()
+          const confidence = result.data.confidence
+
+          // 嘗試提取數字（不管信心度高低都嘗試）
+          const expValue = extractLargestNumber(text)
+
+          if (expValue !== null) {
+            validResults.push({ mode: mode.name, text, confidence, expValue })
+          }
+        }
+
+        // 從有效結果中選信心度最高的
+        if (validResults.length > 0) {
+          const best = validResults.sort((a, b) => b.confidence - a.confidence)[0]
+          return {
+            text: best.text,
+            confidence: best.confidence,
+            expValue: best.expValue,
+          }
+        }
+
+        // 所有模式都無法提取數字
+        return {
+          text: '',
+          confidence: 0,
+          expValue: null,
+        }
+      } catch (err) {
+        console.error('OCR recognition failed:', err)
+        return {
+          text: '',
+          confidence: 0,
+          expValue: null,
+        }
+      }
+    },
+    [initWorker, preprocessImage, extractLargestNumber]
+  )
+
+  // 組件掛載時初始化
+  useEffect(() => {
+    initWorker()
+
+    return () => {
+      if (workerRef.current) {
+        workerRef.current.terminate()
+        workerRef.current = null
+      }
+    }
+  }, [initWorker])
+
+  return {
+    isLoading,
+    isReady,
+    recognize,
+    error,
+  }
+}

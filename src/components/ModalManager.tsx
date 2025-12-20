@@ -11,6 +11,8 @@ import { GameCommandsModal } from '@/components/GameCommandsModal'
 import { MerchantShopModal } from '@/components/MerchantShopModal'
 import { PrivacySettingsModal } from '@/components/settings/PrivacySettingsModal'
 import { DevApiTester } from '@/components/dev/DevApiTester'
+import { ScreenRecorderModal } from '@/components/tools/screen-recorder'
+import { ExpTrackerModal } from '@/components/tools/exp-tracker'
 import { Toast } from '@/components/Toast'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useTheme } from '@/contexts/ThemeContext'
@@ -78,6 +80,16 @@ interface ModalManagerProps {
   isGameCommandsOpen: boolean
   setIsGameCommandsOpen: (open: boolean) => void
 
+  // Screen Recorder Modal
+  isScreenRecorderModalOpen: boolean
+  openScreenRecorderModal: () => void
+  closeScreenRecorderModal: () => void
+
+  // EXP Tracker Modal
+  isExpTrackerModalOpen: boolean
+  openExpTrackerModal: () => void
+  closeExpTrackerModal: () => void
+
   // 浮動按鈕
   showBackToTop: boolean
   scrollToTop: () => void
@@ -138,6 +150,12 @@ export const ModalManager = memo(function ModalManager({
   setIsAccuracyCalcOpen: _setIsAccuracyCalcOpen,
   isGameCommandsOpen,
   setIsGameCommandsOpen,
+  isScreenRecorderModalOpen,
+  openScreenRecorderModal,
+  closeScreenRecorderModal,
+  isExpTrackerModalOpen,
+  openExpTrackerModal,
+  closeExpTrackerModal,
   showBackToTop,
   scrollToTop,
   toastMessage,
@@ -160,7 +178,9 @@ export const ModalManager = memo(function ModalManager({
                          isMerchantShopModalOpen ||
                          isAccuracyCalculatorOpen ||
                          isGameCommandsOpen ||
-                         isPrivacyModalOpen
+                         isPrivacyModalOpen ||
+                         isScreenRecorderModalOpen ||
+                         isExpTrackerModalOpen
 
   return (
     <>
@@ -241,6 +261,18 @@ export const ModalManager = memo(function ModalManager({
         isOpen={isMerchantShopModalOpen}
         onClose={closeMerchantShopModal}
         initialMapId={selectedMerchantMapId}
+      />
+
+      {/* Screen Recorder Modal */}
+      <ScreenRecorderModal
+        isOpen={isScreenRecorderModalOpen}
+        onClose={closeScreenRecorderModal}
+      />
+
+      {/* EXP Tracker Modal */}
+      <ExpTrackerModal
+        isOpen={isExpTrackerModalOpen}
+        onClose={closeExpTrackerModal}
       />
 
       {/* 懸浮按鈕群組（僅在 Modal 開啟時顯示） */}
@@ -325,6 +357,46 @@ export const ModalManager = memo(function ModalManager({
             <circle cx="12" cy="12" r="2" fill="currentColor"/>
           </svg>
           <span className="text-sm font-medium hidden group-hover:inline-block">{t('accuracy.buttonShort')}</span>
+        </div>
+      </button>
+
+      {/* 浮動螢幕錄影按鈕 */}
+      <button
+        onClick={openScreenRecorderModal}
+        className="fixed bottom-[140px] sm:bottom-[168px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-red-500 hover:bg-red-600 dark:bg-red-600 dark:hover:bg-red-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        aria-label={t('recorder.button')}
+      >
+        <div className="flex items-center gap-2">
+          {/* 攝影機圖示 */}
+          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+            />
+          </svg>
+          <span className="text-sm font-medium hidden group-hover:inline-block">{t('recorder.buttonShort')}</span>
+        </div>
+      </button>
+
+      {/* 浮動 EXP 追蹤器按鈕 */}
+      <button
+        onClick={openExpTrackerModal}
+        className="fixed bottom-[208px] sm:bottom-[240px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-purple-500 hover:bg-purple-600 dark:bg-purple-600 dark:hover:bg-purple-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
+        aria-label={t('expTracker.button')}
+      >
+        <div className="flex items-center gap-2">
+          {/* 圖表圖示 */}
+          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+            />
+          </svg>
+          <span className="text-sm font-medium hidden group-hover:inline-block">{t('expTracker.buttonShort')}</span>
         </div>
       </button>
 
