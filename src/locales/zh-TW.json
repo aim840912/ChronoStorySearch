@@ -544,6 +544,7 @@
   "recorder.duration": "錄影時長",
   "recorder.durationUnit": "分鐘",
   "recorder.includeAudio": "錄製音訊",
+  "recorder.videoFormat": "影片格式",
   "recorder.start": "開始錄影",
   "recorder.pause": "暫停",
   "recorder.resume": "繼續",

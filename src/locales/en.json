@@ -543,6 +543,7 @@
   "recorder.duration": "Recording Duration",
   "recorder.durationUnit": "minutes",
   "recorder.includeAudio": "Include Audio",
+  "recorder.videoFormat": "Video Format",
   "recorder.start": "Start Recording",
   "recorder.pause": "Pause",
   "recorder.resume": "Resume",
