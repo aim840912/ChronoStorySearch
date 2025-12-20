@@ -12,7 +12,7 @@ export type RecordingStatus =
   | 'stopped' // 錄影完成
 
 /** 影片格式 */
-export type VideoFormat = 'webm' | 'mp4'
+export type VideoFormat = 'mp4'
 
 /** 錄影設定 */
 export interface ScreenRecorderSettings {

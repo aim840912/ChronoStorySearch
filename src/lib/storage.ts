@@ -167,7 +167,7 @@ export function setImageFormat(format: ImageFormat): boolean {
 const DEFAULT_SCREEN_RECORDER_SETTINGS: ScreenRecorderSettings = {
   duration: 2,
   includeAudio: false,
-  videoFormat: 'webm',
+  videoFormat: 'mp4',
 }
 
 export function getScreenRecorderSettings(): ScreenRecorderSettings {
