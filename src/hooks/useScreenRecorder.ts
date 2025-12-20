@@ -15,7 +15,7 @@ import type {
 export function useScreenRecorder(
   options: UseScreenRecorderOptions
 ): UseScreenRecorderReturn {
-  const { duration, includeAudio, onComplete, onError } = options
+  const { duration, includeAudio, videoFormat, onComplete, onError } = options
 
   const [status, setStatus] = useState<RecordingStatus>('idle')
   const [elapsedTime, setElapsedTime] = useState(0)
@@ -27,6 +27,8 @@ export function useScreenRecorder(
   const chunksRef = useRef<Blob[]>([])
   const timerRef = useRef<NodeJS.Timeout | null>(null)
   const startTimeRef = useRef<Date | null>(null)
+  const mimeTypeRef = useRef<string>('video/webm')
+  const stopRef = useRef<() => void>(() => {})
 
   // 檢查瀏覽器是否支援
   const isSupported =
@@ -79,12 +81,22 @@ export function useScreenRecorder(
       )
       streamRef.current = stream
 
-      // 檢查支援的 MIME 類型
-      const mimeType = MediaRecorder.isTypeSupported('video/webm;codecs=vp9')
-        ? 'video/webm;codecs=vp9'
-        : MediaRecorder.isTypeSupported('video/webm')
-          ? 'video/webm'
-          : 'video/mp4'
+      // 根據使用者選擇的格式決定 MIME 類型
+      let mimeType: string
+      if (videoFormat === 'mp4') {
+        mimeType = MediaRecorder.isTypeSupported('video/mp4')
+          ? 'video/mp4'
+          : MediaRecorder.isTypeSupported('video/webm;codecs=vp9')
+            ? 'video/webm;codecs=vp9'
+            : 'video/webm'
+      } else {
+        mimeType = MediaRecorder.isTypeSupported('video/webm;codecs=vp9')
+          ? 'video/webm;codecs=vp9'
+          : MediaRecorder.isTypeSupported('video/webm')
+            ? 'video/webm'
+            : 'video/mp4'
+      }
+      mimeTypeRef.current = mimeType
 
       // 建立 MediaRecorder
       const mediaRecorder = new MediaRecorder(stream, {
@@ -128,9 +140,7 @@ export function useScreenRecorder(
 
       // 監聽使用者停止分享
       stream.getVideoTracks()[0].onended = () => {
-        if (status === 'recording' || status === 'paused') {
-          stop()
-        }
+        stopRef.current()
       }
 
       // 開始錄製
@@ -144,7 +154,7 @@ export function useScreenRecorder(
           const newTime = prev + 1
           // 達到時限自動停止
           if (newTime >= duration * 60) {
-            stop()
+            stopRef.current()
           }
           return newTime
         })
@@ -160,7 +170,7 @@ export function useScreenRecorder(
       onError?.(err instanceof Error ? err : new Error('Unknown error'))
       cleanup()
     }
-  }, [isSupported, includeAudio, duration, onComplete, onError, cleanup, status])
+  }, [isSupported, includeAudio, videoFormat, duration, onComplete, onError, cleanup])
 
   // 暫停錄影
   const pause = useCallback(() => {
@@ -186,7 +196,7 @@ export function useScreenRecorder(
         setElapsedTime((prev) => {
           const newTime = prev + 1
           if (newTime >= duration * 60) {
-            stop()
+            stopRef.current()
           }
           return newTime
         })
@@ -209,13 +219,20 @@ export function useScreenRecorder(
     }
   }, [status])
 
+  // 同步 stopRef，確保 interval callback 總是呼叫最新版本
+  useEffect(() => {
+    stopRef.current = stop
+  }, [stop])
+
   // 下載錄製的影片
   const download = useCallback(
     (filename?: string) => {
       if (!recordedBlob) return
 
+      // 根據實際 mimeType 決定副檔名
+      const extension = mimeTypeRef.current.includes('mp4') ? 'mp4' : 'webm'
       const timestamp = new Date().toISOString().replace(/[:.]/g, '-')
-      const defaultFilename = `recording_${timestamp}.webm`
+      const defaultFilename = `recording_${timestamp}.${extension}`
       const finalFilename = filename || defaultFilename
 
       const url = URL.createObjectURL(recordedBlob)

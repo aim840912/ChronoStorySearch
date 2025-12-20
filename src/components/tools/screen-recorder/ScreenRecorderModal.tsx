@@ -12,6 +12,7 @@ import {
 import { RecordingSettings } from './RecordingSettings'
 import { RecordingStatus } from './RecordingStatus'
 import { RecordingControls } from './RecordingControls'
+import type { VideoFormat } from '@/types/screen-recorder'
 
 interface ScreenRecorderModalProps {
   isOpen: boolean
@@ -38,6 +39,7 @@ export function ScreenRecorderModal({
   // 載入儲存的設定
   const [duration, setDuration] = useState(2)
   const [includeAudio, setIncludeAudio] = useState(false)
+  const [videoFormat, setVideoFormat] = useState<VideoFormat>('webm')
 
   // 載入設定
   useEffect(() => {
@@ -45,20 +47,22 @@ export function ScreenRecorderModal({
       const settings = getScreenRecorderSettings()
       setDuration(settings.duration)
       setIncludeAudio(settings.includeAudio)
+      setVideoFormat(settings.videoFormat || 'webm')
     }
   }, [isOpen])
 
   // 儲存設定
   useEffect(() => {
     if (isOpen) {
-      setScreenRecorderSettings({ duration, includeAudio })
+      setScreenRecorderSettings({ duration, includeAudio, videoFormat })
     }
-  }, [duration, includeAudio, isOpen])
+  }, [duration, includeAudio, videoFormat, isOpen])
 
   // 使用錄影 Hook
   const recorder = useScreenRecorder({
     duration,
     includeAudio,
+    videoFormat,
     onComplete: () => {
       showToast(t('status.stopped'), 'success')
     },
@@ -150,8 +154,10 @@ export function ScreenRecorderModal({
               <RecordingSettings
                 duration={duration}
                 includeAudio={includeAudio}
+                videoFormat={videoFormat}
                 onDurationChange={setDuration}
                 onAudioToggle={setIncludeAudio}
+                onFormatChange={setVideoFormat}
                 disabled={!canModifySettings}
                 t={t}
               />

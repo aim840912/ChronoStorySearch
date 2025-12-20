@@ -11,12 +11,17 @@ export type RecordingStatus =
   | 'paused' // 已暫停
   | 'stopped' // 錄影完成
 
+/** 影片格式 */
+export type VideoFormat = 'webm' | 'mp4'
+
 /** 錄影設定 */
 export interface ScreenRecorderSettings {
   /** 錄影時長（分鐘），預設 2，範圍 1-5 */
   duration: number
   /** 是否錄製音訊 */
   includeAudio: boolean
+  /** 影片格式 */
+  videoFormat: VideoFormat
 }
 
 /** 錄影結果 */
@@ -37,6 +42,8 @@ export interface UseScreenRecorderOptions {
   duration: number
   /** 是否錄製音訊 */
   includeAudio: boolean
+  /** 影片格式 */
+  videoFormat: VideoFormat
   /** 錄影完成回調 */
   onComplete?: (result: RecordingResult) => void
   /** 錯誤回調 */
@@ -91,8 +98,10 @@ export interface RecordingStatusProps {
 export interface RecordingSettingsProps {
   duration: number
   includeAudio: boolean
+  videoFormat: VideoFormat
   onDurationChange: (minutes: number) => void
   onAudioToggle: (include: boolean) => void
+  onFormatChange: (format: VideoFormat) => void
   disabled: boolean
   t: (key: string) => string
 }
