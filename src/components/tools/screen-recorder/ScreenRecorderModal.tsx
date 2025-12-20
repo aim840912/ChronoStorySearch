@@ -75,6 +75,13 @@ export function ScreenRecorderModal({
     },
   })
 
+  // 當 Modal 關閉時，停止錄影並釋放資源
+  useEffect(() => {
+    if (!isOpen && (recorder.status === 'recording' || recorder.status === 'paused')) {
+      recorder.stop()
+    }
+  }, [isOpen, recorder.status, recorder.stop])
+
   // 下載處理
   const handleDownload = useCallback(() => {
     recorder.download()
