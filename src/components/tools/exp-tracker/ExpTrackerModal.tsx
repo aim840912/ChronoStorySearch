@@ -210,7 +210,12 @@ export function ExpTrackerModal({ isOpen, onClose }: ExpTrackerModalProps) {
           <div className="flex items-center gap-3">
             <ChartIcon />
             <div>
-              <h2 className="text-lg font-bold">{t('title')}</h2>
+              <h2 className="text-lg font-bold flex items-center gap-2">
+                {t('title')}
+                <span className="text-xs px-2 py-0.5 bg-white/20 rounded-full">
+                  {t('testing')}
+                </span>
+              </h2>
               <p className="text-sm text-purple-100">{t('subtitle')}</p>
             </div>
           </div>
