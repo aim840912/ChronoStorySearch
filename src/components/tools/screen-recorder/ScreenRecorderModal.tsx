@@ -39,7 +39,7 @@ export function ScreenRecorderModal({
   // 載入儲存的設定
   const [duration, setDuration] = useState(2)
   const [includeAudio, setIncludeAudio] = useState(false)
-  const [videoFormat, setVideoFormat] = useState<VideoFormat>('webm')
+  const [videoFormat, setVideoFormat] = useState<VideoFormat>('mp4')
 
   // 載入設定
   useEffect(() => {
@@ -47,7 +47,7 @@ export function ScreenRecorderModal({
       const settings = getScreenRecorderSettings()
       setDuration(settings.duration)
       setIncludeAudio(settings.includeAudio)
-      setVideoFormat(settings.videoFormat || 'webm')
+      setVideoFormat(settings.videoFormat || 'mp4')
     }
   }, [isOpen])
 
@@ -166,10 +166,8 @@ export function ScreenRecorderModal({
               <RecordingSettings
                 duration={duration}
                 includeAudio={includeAudio}
-                videoFormat={videoFormat}
                 onDurationChange={setDuration}
                 onAudioToggle={setIncludeAudio}
-                onFormatChange={setVideoFormat}
                 disabled={!canModifySettings}
                 t={t}
               />
