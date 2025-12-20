@@ -536,6 +536,12 @@ export default function Home() {
         setIsAccuracyCalcOpen={setIsAccuracyCalcOpen}
         isGameCommandsOpen={isGameCommandsOpen}
         setIsGameCommandsOpen={setIsGameCommandsOpen}
+        isScreenRecorderModalOpen={modals.isScreenRecorderModalOpen}
+        openScreenRecorderModal={modals.openScreenRecorderModal}
+        closeScreenRecorderModal={modals.closeScreenRecorderModal}
+        isExpTrackerModalOpen={modals.isExpTrackerModalOpen}
+        openExpTrackerModal={modals.openExpTrackerModal}
+        closeExpTrackerModal={modals.closeExpTrackerModal}
         showBackToTop={showBackToTop}
         scrollToTop={scrollToTop}
         toastMessage={toast.message}

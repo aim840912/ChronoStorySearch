@@ -6,6 +6,8 @@
 import { storageLogger } from './logger'
 import type { FavoriteMonster, FavoriteItem, Language, Theme, AccuracyCalculatorState, ViewHistoryItem } from '@/types'
 import type { ImageFormat } from '@/lib/image-utils'
+import type { ScreenRecorderSettings } from '@/types/screen-recorder'
+import type { ExpTrackerState } from '@/types/exp-tracker'
 
 // Storage keys
 export const STORAGE_KEYS = {
@@ -16,6 +18,8 @@ export const STORAGE_KEYS = {
   ACCURACY_CALCULATOR: 'chronostory-accuracy-calculator',
   VIEW_HISTORY: 'chronostory-view-history',
   IMAGE_FORMAT: 'chronostory-image-format',
+  SCREEN_RECORDER: 'chronostory-screen-recorder',
+  EXP_TRACKER: 'chronostory-exp-tracker',
 } as const
 
 /**
@@ -157,4 +161,46 @@ export function getImageFormat(): ImageFormat {
 
 export function setImageFormat(format: ImageFormat): boolean {
   return setStorageItem(STORAGE_KEYS.IMAGE_FORMAT, format)
+}
+
+// Screen Recorder 設定
+const DEFAULT_SCREEN_RECORDER_SETTINGS: ScreenRecorderSettings = {
+  duration: 2,
+  includeAudio: false,
+}
+
+export function getScreenRecorderSettings(): ScreenRecorderSettings {
+  return getStorageItem<ScreenRecorderSettings>(
+    STORAGE_KEYS.SCREEN_RECORDER,
+    DEFAULT_SCREEN_RECORDER_SETTINGS
+  )
+}
+
+export function setScreenRecorderSettings(settings: ScreenRecorderSettings): boolean {
+  return setStorageItem(STORAGE_KEYS.SCREEN_RECORDER, settings)
+}
+
+// EXP Tracker 狀態
+const DEFAULT_EXP_TRACKER_STATE: ExpTrackerState = {
+  region: null,
+  captureInterval: 5,
+  targetLevel: 200,
+  currentLevel: 1,
+  history: [],
+}
+
+export function getExpTrackerState(): ExpTrackerState {
+  return getStorageItem<ExpTrackerState>(
+    STORAGE_KEYS.EXP_TRACKER,
+    DEFAULT_EXP_TRACKER_STATE
+  )
+}
+
+export function setExpTrackerState(state: ExpTrackerState): boolean {
+  // 僅保存最近 100 筆歷史記錄
+  const limitedState: ExpTrackerState = {
+    ...state,
+    history: state.history.slice(-100),
+  }
+  return setStorageItem(STORAGE_KEYS.EXP_TRACKER, limitedState)
 }
