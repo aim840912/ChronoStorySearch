@@ -16,7 +16,7 @@ export type VideoFormat = 'webm' | 'mp4'
 
 /** 錄影設定 */
 export interface ScreenRecorderSettings {
-  /** 錄影時長（分鐘），預設 2，範圍 1-5 */
+  /** 錄影時長（分鐘），預設 2，範圍 1-3 */
   duration: number
   /** 是否錄製音訊 */
   includeAudio: boolean

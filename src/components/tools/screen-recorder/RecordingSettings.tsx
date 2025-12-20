@@ -17,7 +17,7 @@ export const RecordingSettings = memo(function RecordingSettings({
   disabled,
   t,
 }: RecordingSettingsProps) {
-  const durationOptions = [1, 2, 3, 4, 5]
+  const durationOptions = [1, 2, 3]
   const formatOptions: { value: VideoFormat; label: string }[] = [
     { value: 'webm', label: 'WebM' },
     { value: 'mp4', label: 'MP4' },

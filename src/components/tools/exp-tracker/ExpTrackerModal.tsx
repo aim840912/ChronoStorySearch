@@ -426,9 +426,14 @@ export function ExpTrackerModal({ isOpen, onClose }: ExpTrackerModalProps) {
                     t={t}
                   />
 
-                  {/* OCR 信心度 */}
-                  {tracker.currentExp !== null && (
-                    <OcrConfidence confidence={tracker.confidence} t={t} />
+                  {/* OCR 信心度 (DEV only) */}
+                  {process.env.NODE_ENV === 'development' && tracker.currentExp !== null && (
+                    <div className="relative">
+                      <span className="absolute -top-2 -right-2 text-xs px-1 py-0.5 bg-yellow-500 text-white rounded z-10">
+                        DEV
+                      </span>
+                      <OcrConfidence confidence={tracker.confidence} t={t} />
+                    </div>
                   )}
 
                   {/* 統計資訊 */}
