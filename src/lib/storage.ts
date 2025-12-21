@@ -236,6 +236,10 @@ export interface ExpTrackerFloatingState {
   isPinned: boolean
   /** 影像預覽是否展開 */
   isVideoExpanded: boolean
+  /** 視窗尺寸（展開狀態） */
+  size: { width: number; height: number }
+  /** 最小化時的寬度 */
+  minimizedWidth: number
 }
 
 const DEFAULT_EXP_TRACKER_FLOATING_STATE: ExpTrackerFloatingState = {
@@ -243,6 +247,8 @@ const DEFAULT_EXP_TRACKER_FLOATING_STATE: ExpTrackerFloatingState = {
   isMinimized: false,
   isPinned: false,
   isVideoExpanded: false,
+  size: { width: 320, height: 400 },
+  minimizedWidth: 180,
 }
 
 export function getExpTrackerFloatingState(): ExpTrackerFloatingState {
