@@ -11,7 +11,7 @@ export type TrackingStatus =
   | 'tracking' // 追蹤中
   | 'paused' // 已暫停
 
-/** 區域選擇 */
+/** 區域選擇（像素座標） */
 export interface Region {
   /** 起始 X 座標（相對於 video 元素） */
   x: number
@@ -23,6 +23,20 @@ export interface Region {
   height: number
 }
 
+/** 正規化區域（0-1 比例座標）
+ * 使用比例座標可確保視窗大小改變時，框選區域仍對應正確位置
+ */
+export interface NormalizedRegion {
+  /** X 座標比例 (0-1) */
+  x: number
+  /** Y 座標比例 (0-1) */
+  y: number
+  /** 寬度比例 (0-1) */
+  width: number
+  /** 高度比例 (0-1) */
+  height: number
+}
+
 /** 經驗記錄 */
 export interface ExpRecord {
   /** 記錄時間戳 */
@@ -31,6 +45,22 @@ export interface ExpRecord {
   exp: number
   /** OCR 信心度 (0-100) */
   confidence: number
+}
+
+/** 已儲存的經驗記錄 */
+export interface SavedExpRecord {
+  /** 唯一識別碼 */
+  id: string
+  /** 怪物名稱 */
+  monsterName: string
+  /** 分鐘數 */
+  minutes: number
+  /** 每分鐘經驗 */
+  expPerMinute: number
+  /** 總經驗 (expPerMinute × minutes) */
+  totalExp: number
+  /** 儲存時間戳 */
+  savedAt: number
 }
 
 /** 經驗統計 */
@@ -67,16 +97,14 @@ export interface ExpTrackerSettings {
 
 /** EXP Tracker 儲存狀態 */
 export interface ExpTrackerState {
-  /** 選取的區域 */
-  region: Region | null
+  /** 選取的區域（正規化座標） */
+  region: NormalizedRegion | null
   /** 擷取間隔（秒） */
   captureInterval: number
-  /** 目標等級 */
-  targetLevel: number
-  /** 當前等級 */
-  currentLevel: number
   /** 歷史記錄（僅保存最近 100 筆） */
   history: ExpRecord[]
+  /** 已儲存的經驗記錄 */
+  savedRecords: SavedExpRecord[]
 }
 
 /** useExpTracker Hook 選項 */
@@ -125,22 +153,26 @@ export interface UseOcrReturn {
 
 /** useRegionSelector Hook 回傳值 */
 export interface UseRegionSelectorReturn {
-  /** 選取的區域 */
-  region: Region | null
+  /** 選取的區域（正規化座標） */
+  normalizedRegion: NormalizedRegion | null
+  /** 選取的區域（像素座標，用於拖曳時預覽） */
+  pixelRegion: Region | null
   /** 是否正在選擇 */
   isSelecting: boolean
   /** 開始選擇 */
   startSelection: () => void
   /** 清除選擇 */
   clearSelection: () => void
-  /** 設定區域 */
-  setRegion: (region: Region) => void
+  /** 設定區域（正規化座標） */
+  setNormalizedRegion: (region: NormalizedRegion) => void
   /** 事件處理器（綁定到容器元素） */
   handlers: {
     onMouseDown: (e: React.MouseEvent) => void
     onMouseMove: (e: React.MouseEvent) => void
     onMouseUp: () => void
   }
+  /** 取得當前像素區域（根據容器大小計算） */
+  getPixelRegion: (containerWidth: number, containerHeight: number) => Region | null
 }
 
 /** ExpTrackerModal 元件 Props */
@@ -171,8 +203,7 @@ export interface RegionSelectorProps {
 /** ExpDisplay 元件 Props */
 export interface ExpDisplayProps {
   currentExp: number | null
-  previousExp: number | null
-  confidence: number
+  expPerMinute: number
   isTracking: boolean
   t: (key: string) => string
 }
@@ -180,10 +211,24 @@ export interface ExpDisplayProps {
 /** ExpStats 元件 Props */
 export interface ExpStatsProps {
   stats: ExpStats
-  currentLevel: number
-  targetLevel: number
-  onCurrentLevelChange: (level: number) => void
-  onTargetLevelChange: (level: number) => void
+  t: (key: string) => string
+}
+
+/** SaveExpForm 元件 Props */
+export interface SaveExpFormProps {
+  expPerMinute: number
+  editingRecord: SavedExpRecord | null
+  onSave: (record: Omit<SavedExpRecord, 'id' | 'savedAt'>) => void
+  onUpdate: (record: SavedExpRecord) => void
+  onCancelEdit: () => void
+  t: (key: string) => string
+}
+
+/** SavedRecords 元件 Props */
+export interface SavedRecordsProps {
+  records: SavedExpRecord[]
+  onEdit: (record: SavedExpRecord) => void
+  onDelete: (id: string) => void
   t: (key: string) => string
 }
 

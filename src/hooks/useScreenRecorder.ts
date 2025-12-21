@@ -45,6 +45,9 @@ export function useScreenRecorder(
     }
 
     if (streamRef.current) {
+      console.log('[ScreenRecorder] 正在釋放 MediaStream', {
+        tracks: streamRef.current.getTracks().length,
+      })
       streamRef.current.getTracks().forEach((track) => track.stop())
       streamRef.current = null
     }
@@ -80,6 +83,9 @@ export function useScreenRecorder(
         displayMediaOptions
       )
       streamRef.current = stream
+      console.log('[ScreenRecorder] MediaStream 已建立', {
+        tracks: stream.getTracks().length,
+      })
 
       // 根據使用者選擇的格式決定 MIME 類型
       let mimeType: string
@@ -140,6 +146,7 @@ export function useScreenRecorder(
 
       // 監聽使用者停止分享
       stream.getVideoTracks()[0].onended = () => {
+        console.log('[ScreenRecorder] 用戶停止分享')
         stopRef.current()
       }
 

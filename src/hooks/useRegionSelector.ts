@@ -1,14 +1,23 @@
 'use client'
 
 import { useState, useCallback, useRef } from 'react'
-import type { Region, UseRegionSelectorReturn } from '@/types/exp-tracker'
+import type {
+  Region,
+  NormalizedRegion,
+  UseRegionSelectorReturn,
+} from '@/types/exp-tracker'
 
 /**
  * 區域選擇 Hook
  * 提供可拖曳的區域選擇功能
+ * 使用正規化座標（0-1 比例）確保視窗大小改變時區域仍正確
  */
 export function useRegionSelector(): UseRegionSelectorReturn {
-  const [region, setRegion] = useState<Region | null>(null)
+  // 正規化座標（持久化用）
+  const [normalizedRegion, setNormalizedRegion] =
+    useState<NormalizedRegion | null>(null)
+  // 像素座標（拖曳預覽用）
+  const [pixelRegion, setPixelRegion] = useState<Region | null>(null)
   const [isSelecting, setIsSelecting] = useState(false)
 
   const startPointRef = useRef<{ x: number; y: number } | null>(null)
@@ -17,12 +26,14 @@ export function useRegionSelector(): UseRegionSelectorReturn {
   // 開始選擇
   const startSelection = useCallback(() => {
     setIsSelecting(true)
-    setRegion(null)
+    setPixelRegion(null)
+    setNormalizedRegion(null)
   }, [])
 
   // 清除選擇
   const clearSelection = useCallback(() => {
-    setRegion(null)
+    setPixelRegion(null)
+    setNormalizedRegion(null)
     setIsSelecting(false)
     startPointRef.current = null
   }, [])
@@ -39,6 +50,33 @@ export function useRegionSelector(): UseRegionSelectorReturn {
     []
   )
 
+  // 將像素座標正規化為 0-1 比例
+  const normalizeRegion = useCallback(
+    (region: Region, containerWidth: number, containerHeight: number): NormalizedRegion => {
+      return {
+        x: region.x / containerWidth,
+        y: region.y / containerHeight,
+        width: region.width / containerWidth,
+        height: region.height / containerHeight,
+      }
+    },
+    []
+  )
+
+  // 將正規化座標轉換為像素座標
+  const getPixelRegion = useCallback(
+    (containerWidth: number, containerHeight: number): Region | null => {
+      if (!normalizedRegion) return null
+      return {
+        x: normalizedRegion.x * containerWidth,
+        y: normalizedRegion.y * containerHeight,
+        width: normalizedRegion.width * containerWidth,
+        height: normalizedRegion.height * containerHeight,
+      }
+    },
+    [normalizedRegion]
+  )
+
   // 滑鼠按下
   const onMouseDown = useCallback(
     (e: React.MouseEvent) => {
@@ -49,7 +87,7 @@ export function useRegionSelector(): UseRegionSelectorReturn {
       const coords = getRelativeCoords(e, container)
       startPointRef.current = coords
 
-      setRegion({
+      setPixelRegion({
         x: coords.x,
         y: coords.y,
         width: 0,
@@ -75,12 +113,12 @@ export function useRegionSelector(): UseRegionSelectorReturn {
       const width = Math.abs(coords.x - startX)
       const height = Math.abs(coords.y - startY)
 
-      setRegion({ x, y, width, height })
+      setPixelRegion({ x, y, width, height })
     },
     [isSelecting, getRelativeCoords]
   )
 
-  // 滑鼠放開
+  // 滑鼠放開 - 將像素座標正規化
   const onMouseUp = useCallback(() => {
     if (!isSelecting) return
 
@@ -88,17 +126,29 @@ export function useRegionSelector(): UseRegionSelectorReturn {
     startPointRef.current = null
 
     // 如果區域太小，清除
-    if (region && (region.width < 10 || region.height < 10)) {
-      setRegion(null)
+    if (pixelRegion && (pixelRegion.width < 10 || pixelRegion.height < 10)) {
+      setPixelRegion(null)
+      setNormalizedRegion(null)
+      return
     }
-  }, [isSelecting, region])
+
+    // 正規化座標
+    if (pixelRegion && containerRef.current) {
+      const containerWidth = containerRef.current.clientWidth
+      const containerHeight = containerRef.current.clientHeight
+      const normalized = normalizeRegion(pixelRegion, containerWidth, containerHeight)
+      setNormalizedRegion(normalized)
+    }
+  }, [isSelecting, pixelRegion, normalizeRegion])
 
   return {
-    region,
+    normalizedRegion,
+    pixelRegion,
     isSelecting,
     startSelection,
     clearSelection,
-    setRegion,
+    setNormalizedRegion,
+    getPixelRegion,
     handlers: {
       onMouseDown,
       onMouseMove,
