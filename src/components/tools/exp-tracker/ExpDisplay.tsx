@@ -6,19 +6,14 @@ import { formatExp } from '@/lib/exp-calculator'
 
 /**
  * 經驗值顯示元件
- * 顯示當前經驗值和變化量
+ * 顯示當前經驗值和每分鐘經驗
  */
 export const ExpDisplay = memo(function ExpDisplay({
   currentExp,
-  previousExp,
-  confidence: _confidence, // Used by OcrConfidence component separately
+  expPerMinute,
   isTracking,
   t,
 }: ExpDisplayProps) {
-  // 計算經驗變化
-  const expChange =
-    currentExp !== null && previousExp !== null ? currentExp - previousExp : null
-
   return (
     <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
       <div className="grid grid-cols-2 gap-4">
@@ -32,25 +27,20 @@ export const ExpDisplay = memo(function ExpDisplay({
           </p>
         </div>
 
-        {/* 變化量 */}
+        {/* 每分鐘經驗 */}
         <div>
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">
-            {t('expChange')}
+            {t('expPerMinute')}
           </p>
           <p
             className={`text-2xl font-bold font-mono ${
-              expChange !== null && expChange > 0
+              expPerMinute > 0
                 ? 'text-green-500'
-                : expChange !== null && expChange < 0
-                  ? 'text-red-500'
-                  : 'text-gray-900 dark:text-white'
+                : 'text-gray-900 dark:text-white'
             }`}
           >
-            {expChange !== null ? (
-              <>
-                {expChange > 0 ? '+' : ''}
-                {formatExp(expChange)}
-              </>
+            {expPerMinute > 0 ? (
+              <>+{formatExp(expPerMinute)}</>
             ) : (
               '--'
             )}
@@ -66,7 +56,7 @@ export const ExpDisplay = memo(function ExpDisplay({
             <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
           </span>
           <span className="text-sm text-purple-600 dark:text-purple-400">
-            追蹤中...
+            {t('tracking')}
           </span>
         </div>
       )}

@@ -185,16 +185,35 @@ export function setScreenRecorderSettings(settings: ScreenRecorderSettings): boo
 const DEFAULT_EXP_TRACKER_STATE: ExpTrackerState = {
   region: null,
   captureInterval: 5,
-  targetLevel: 200,
-  currentLevel: 1,
   history: [],
+  savedRecords: [],
+}
+
+/**
+ * 檢查區域是否為舊格式（像素座標）
+ * 新格式使用 0-1 的正規化座標，舊格式使用像素座標
+ */
+function isLegacyRegionFormat(region: { x: number; y: number; width: number; height: number }): boolean {
+  // 如果任何值大於 1，則是舊的像素座標格式
+  return region.x > 1 || region.y > 1 || region.width > 1 || region.height > 1
 }
 
 export function getExpTrackerState(): ExpTrackerState {
-  return getStorageItem<ExpTrackerState>(
+  const state = getStorageItem<ExpTrackerState>(
     STORAGE_KEYS.EXP_TRACKER,
     DEFAULT_EXP_TRACKER_STATE
   )
+
+  // 向下相容：如果是舊的像素座標格式，清除區域讓使用者重新選擇
+  if (state.region && isLegacyRegionFormat(state.region)) {
+    storageLogger.info('偵測到舊版像素座標格式，清除區域設定')
+    return {
+      ...state,
+      region: null,
+    }
+  }
+
+  return state
 }
 
 export function setExpTrackerState(state: ExpTrackerState): boolean {
