@@ -128,7 +128,10 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
   useEffect(() => {
     if (isOpen) {
       const state = getExpTrackerState()
-      setCaptureInterval(state.captureInterval)
+      // 驗證 captureInterval 是否在有效範圍內（30, 60, 120）
+      const validIntervals = [30, 60, 120]
+      const savedInterval = state.captureInterval
+      setCaptureInterval(validIntervals.includes(savedInterval) ? savedInterval : 60)
       setSavedRecords(state.savedRecords || [])
       if (state.region) {
         regionSelector.setNormalizedRegion(state.region)
@@ -205,20 +208,26 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     const playVideo = async () => {
       try {
         await video.play()
-        console.log('[EXP] Video playing:', {
-          paused: video.paused,
-          readyState: video.readyState,
-          videoWidth: video.videoWidth,
-          videoHeight: video.videoHeight,
-        })
+        if (process.env.NODE_ENV === 'development') {
+          console.log('[EXP] Video playing:', {
+            paused: video.paused,
+            readyState: video.readyState,
+            videoWidth: video.videoWidth,
+            videoHeight: video.videoHeight,
+          })
+        }
       } catch (err) {
-        console.error('[EXP] Video play failed:', err)
+        if (process.env.NODE_ENV === 'development') {
+          console.error('[EXP] Video play failed:', err)
+        }
       }
     }
 
     // 監聽可播放事件
     const handleCanPlay = () => {
-      console.log('[EXP] Video can play, starting...')
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[EXP] Video can play, starting...')
+      }
       playVideo()
     }
 
@@ -239,11 +248,13 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     if (videoRef.current && regionSelector.normalizedRegion && videoSize.width > 0) {
       const pixelRegion = regionSelector.getPixelRegion(videoSize.width, videoSize.height)
       if (pixelRegion) {
-        console.log('[EXP] Setting region:', {
-          normalizedRegion: regionSelector.normalizedRegion,
-          pixelRegion,
-          videoSize,
-        })
+        if (process.env.NODE_ENV === 'development') {
+          console.log('[EXP] Setting region:', {
+            normalizedRegion: regionSelector.normalizedRegion,
+            pixelRegion,
+            videoSize,
+          })
+        }
         tracker.setVideoAndRegion(videoRef.current, pixelRegion)
       }
     }
@@ -259,7 +270,9 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
       // 而非 clientWidth/clientHeight（DOM 顯示尺寸）
       // 只在有效尺寸時更新，避免時序問題
       if (video.videoWidth > 0 && video.videoHeight > 0) {
-        console.log('[EXP] Video size updated:', video.videoWidth, 'x', video.videoHeight)
+        if (process.env.NODE_ENV === 'development') {
+          console.log('[EXP] Video size updated:', video.videoWidth, 'x', video.videoHeight)
+        }
         setVideoSize({
           width: video.videoWidth,
           height: video.videoHeight,

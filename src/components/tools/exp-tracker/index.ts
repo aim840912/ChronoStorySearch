@@ -1,4 +1,3 @@
-export { ExpTrackerModal } from './ExpTrackerModal'
 export { ExpTrackerFloating } from './ExpTrackerFloating'
 export { ExpDisplay } from './ExpDisplay'
 export { ExpStats } from './ExpStats'
