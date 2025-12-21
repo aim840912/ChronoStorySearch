@@ -152,3 +152,24 @@ export function downloadCsv(history: ExpRecord[], filename?: string): void {
   document.body.removeChild(a)
   URL.revokeObjectURL(url)
 }
+
+/**
+ * 根據擷取間隔生成動態標籤
+ * @param seconds 擷取間隔（秒）
+ * @returns 標籤字串（如 "min", "30s", "2min"）
+ */
+export function getIntervalLabel(seconds: number): string {
+  if (seconds === 60) return '1min'
+  if (seconds >= 60 && seconds % 60 === 0) return `${seconds / 60}min`
+  return `${seconds}s`
+}
+
+/**
+ * 計算每個擷取間隔的經驗值
+ * @param expPerMinute 每分鐘經驗
+ * @param intervalSeconds 擷取間隔（秒）
+ * @returns 每間隔經驗
+ */
+export function calculateExpPerInterval(expPerMinute: number, intervalSeconds: number): number {
+  return Math.round((expPerMinute / 60) * intervalSeconds)
+}

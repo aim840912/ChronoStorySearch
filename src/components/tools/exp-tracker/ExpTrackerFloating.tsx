@@ -16,7 +16,7 @@ import {
   getExpTrackerFloatingState,
   setExpTrackerFloatingState,
 } from '@/lib/storage'
-import { formatExp } from '@/lib/exp-calculator'
+import { formatExp, getIntervalLabel, calculateExpPerInterval } from '@/lib/exp-calculator'
 import { ExpDisplay } from './ExpDisplay'
 import { ExpStats } from './ExpStats'
 import { SaveExpForm } from './SaveExpForm'
@@ -54,12 +54,13 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
 
   // 資料狀態
   const [stream, setStream] = useState<MediaStream | null>(null)
-  const [captureInterval, setCaptureInterval] = useState(5)
+  const [captureInterval, setCaptureInterval] = useState(60)
   const [savedRecords, setSavedRecords] = useState<SavedExpRecord[]>([])
   const [editingRecord, setEditingRecord] = useState<SavedExpRecord | null>(null)
   const [videoSize, setVideoSize] = useState({ width: 0, height: 0 })
 
   const videoRef = useRef<HTMLVideoElement>(null)
+  const pendingRegionSelectRef = useRef(false)
 
   // Hooks
   const ocr = useOcr()
@@ -263,6 +264,12 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
           width: video.videoWidth,
           height: video.videoHeight,
         })
+
+        // 如果有待處理的區域選擇，在 video 載入完成後開啟
+        if (pendingRegionSelectRef.current) {
+          pendingRegionSelectRef.current = false
+          setIsRegionModalOpen(true)
+        }
       }
     }
 
@@ -287,6 +294,9 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
         audio: false,
       })
       setStream(displayStream)
+
+      // 標記需要在 video 載入後開啟區域選擇
+      pendingRegionSelectRef.current = true
 
       displayStream.getVideoTracks()[0].onended = () => {
         setStream(null)
@@ -413,7 +423,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
             <span className="text-sm font-medium shrink-0">EXP</span>
             <span className="text-sm font-mono truncate">
               {tracker.stats.expPerMinute > 0
-                ? `+${formatExp(tracker.stats.expPerMinute)}/min`
+                ? `+${formatExp(calculateExpPerInterval(tracker.stats.expPerMinute, captureInterval))}/${getIntervalLabel(captureInterval)}`
                 : '--'}
             </span>
           </div>
@@ -597,16 +607,42 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
           </div>
         )}
 
+        {/* 擷取間隔設定 */}
+        <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+            {t('captureInterval')}
+          </p>
+          <div className="flex gap-1">
+            {[30, 60, 120].map((seconds) => (
+              <button
+                key={seconds}
+                type="button"
+                onClick={() => setCaptureInterval(seconds)}
+                disabled={tracker.isTracking}
+                className={`flex-1 px-2 py-1.5 text-xs font-medium rounded transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
+                  captureInterval === seconds
+                    ? 'bg-purple-500 text-white'
+                    : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+                }`}
+              >
+                {getIntervalLabel(seconds)}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* 經驗顯示 */}
         <ExpDisplay
           currentExp={tracker.currentExp}
           expPerMinute={tracker.stats.expPerMinute}
           isTracking={tracker.isTracking}
+          secondsUntilNextCapture={tracker.secondsUntilNextCapture}
+          captureInterval={captureInterval}
           t={t}
         />
 
         {/* 統計資訊 */}
-        <ExpStats stats={tracker.stats} t={t} />
+        <ExpStats stats={tracker.stats} captureInterval={captureInterval} t={t} />
 
         {/* 儲存經驗表單 */}
         <SaveExpForm

@@ -9,6 +9,7 @@ import { useRegionSelector } from '@/hooks/useRegionSelector'
 import { useExpTracker } from '@/hooks/useExpTracker'
 import { useAutoRegionDetector } from '@/hooks/useAutoRegionDetector'
 import { getExpTrackerState, setExpTrackerState } from '@/lib/storage'
+import { getIntervalLabel } from '@/lib/exp-calculator'
 import { ExpDisplay } from './ExpDisplay'
 import { ExpStats } from './ExpStats'
 import { ExpHistory } from './ExpHistory'
@@ -38,7 +39,7 @@ export function ExpTrackerModal({ isOpen, onClose }: ExpTrackerModalProps) {
 
   // 狀態
   const [stream, setStream] = useState<MediaStream | null>(null)
-  const [captureInterval, setCaptureInterval] = useState(5)
+  const [captureInterval, setCaptureInterval] = useState(60)
   const [savedRecords, setSavedRecords] = useState<SavedExpRecord[]>([])
   const [editingRecord, setEditingRecord] = useState<SavedExpRecord | null>(null)
   // video 尺寸追蹤（用於正規化座標轉換）
@@ -46,6 +47,7 @@ export function ExpTrackerModal({ isOpen, onClose }: ExpTrackerModalProps) {
 
   const videoRef = useRef<HTMLVideoElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
+  const pendingRegionSelectRef = useRef(false)
 
   // Hooks
   const ocr = useOcr()
@@ -128,6 +130,12 @@ export function ExpTrackerModal({ isOpen, onClose }: ExpTrackerModalProps) {
         width: video.clientWidth,
         height: video.clientHeight,
       })
+
+      // 如果有待處理的區域選擇，在 video 載入完成後啟動
+      if (pendingRegionSelectRef.current && video.readyState >= 1) {
+        pendingRegionSelectRef.current = false
+        regionSelector.startSelection()
+      }
     }
 
     // 初始設定尺寸
@@ -144,7 +152,7 @@ export function ExpTrackerModal({ isOpen, onClose }: ExpTrackerModalProps) {
       video.removeEventListener('loadedmetadata', updateSize)
       resizeObserver.disconnect()
     }
-  }, [stream])
+  }, [stream, regionSelector])
 
   // 選擇遊戲視窗
   const selectWindow = useCallback(async () => {
@@ -157,6 +165,9 @@ export function ExpTrackerModal({ isOpen, onClose }: ExpTrackerModalProps) {
       console.log('[ExpTracker] MediaStream 已建立', {
         tracks: displayStream.getTracks().length,
       })
+
+      // 標記需要在 video 載入後啟動區域選擇
+      pendingRegionSelectRef.current = true
 
       // 監聽停止分享
       displayStream.getVideoTracks()[0].onended = () => {
@@ -484,7 +495,7 @@ export function ExpTrackerModal({ isOpen, onClose }: ExpTrackerModalProps) {
                       {t('captureInterval')}
                     </label>
                     <div className="flex gap-2">
-                      {[3, 5, 10, 15].map((sec) => (
+                      {[30, 60, 120].map((sec) => (
                         <button
                           key={sec}
                           type="button"
@@ -499,7 +510,7 @@ export function ExpTrackerModal({ isOpen, onClose }: ExpTrackerModalProps) {
                             ${tracker.isTracking ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}
                           `}
                         >
-                          {sec} {t('seconds')}
+                          {getIntervalLabel(sec)}
                         </button>
                       ))}
                     </div>
@@ -539,6 +550,8 @@ export function ExpTrackerModal({ isOpen, onClose }: ExpTrackerModalProps) {
                 currentExp={tracker.currentExp}
                 expPerMinute={tracker.stats.expPerMinute}
                 isTracking={tracker.isTracking}
+                secondsUntilNextCapture={tracker.secondsUntilNextCapture}
+                captureInterval={captureInterval}
                 t={t}
               />
 
@@ -553,7 +566,7 @@ export function ExpTrackerModal({ isOpen, onClose }: ExpTrackerModalProps) {
               )}
 
               {/* 統計資訊 */}
-              <ExpStats stats={tracker.stats} t={t} />
+              <ExpStats stats={tracker.stats} captureInterval={captureInterval} t={t} />
 
               {/* 儲存經驗表單 */}
               <SaveExpForm

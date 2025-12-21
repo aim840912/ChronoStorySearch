@@ -185,7 +185,7 @@ export function setScreenRecorderSettings(settings: ScreenRecorderSettings): boo
 // EXP Tracker 狀態
 const DEFAULT_EXP_TRACKER_STATE: ExpTrackerState = {
   region: null,
-  captureInterval: 5,
+  captureInterval: 60,
   history: [],
   savedRecords: [],
 }

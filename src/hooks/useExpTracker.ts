@@ -31,8 +31,10 @@ export function useExpTracker(
     timeToLevelUp: null,
   })
   const [confidence, setConfidence] = useState(0)
+  const [secondsUntilNextCapture, setSecondsUntilNextCapture] = useState(0)
 
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
+  const countdownIntervalRef = useRef<NodeJS.Timeout | null>(null)
   const videoRef = useRef<HTMLVideoElement | null>(null)
   const regionRef = useRef<Region | null>(null)
   const ocrFnRef = useRef<
@@ -176,10 +178,34 @@ export function useExpTracker(
 
     setIsTracking(true)
 
+    // 清空歷史記錄，從這次追蹤開始重新計算
+    setExpHistory([])
+
+    // 同時重置 stats（因為 useEffect 只在 expHistory.length >= 2 時才更新）
+    setStats({
+      expPerMinute: 0,
+      expPer10Minutes: 0,
+      expPerHour: 0,
+      timeToLevelUp: null,
+    })
+
     // 立即執行一次
     captureAndRecognize()
 
-    // 設定定時器
+    // 初始化倒數計時
+    setSecondsUntilNextCapture(captureInterval)
+
+    // 每秒更新倒數
+    countdownIntervalRef.current = setInterval(() => {
+      setSecondsUntilNextCapture((prev) => {
+        if (prev <= 1) {
+          return captureInterval // 重置為完整間隔
+        }
+        return prev - 1
+      })
+    }, 1000)
+
+    // 設定擷取定時器
     intervalRef.current = setInterval(() => {
       captureAndRecognize()
     }, captureInterval * 1000)
@@ -188,10 +214,15 @@ export function useExpTracker(
   // 停止追蹤
   const stop = useCallback(() => {
     setIsTracking(false)
+    setSecondsUntilNextCapture(0)
 
     if (intervalRef.current) {
       clearInterval(intervalRef.current)
       intervalRef.current = null
+    }
+    if (countdownIntervalRef.current) {
+      clearInterval(countdownIntervalRef.current)
+      countdownIntervalRef.current = null
     }
   }, [])
 
@@ -227,6 +258,9 @@ export function useExpTracker(
       if (intervalRef.current) {
         clearInterval(intervalRef.current)
       }
+      if (countdownIntervalRef.current) {
+        clearInterval(countdownIntervalRef.current)
+      }
     }
   }, [])
 
@@ -237,6 +271,7 @@ export function useExpTracker(
     expHistory,
     stats,
     confidence,
+    secondsUntilNextCapture,
     start,
     stop,
     reset,

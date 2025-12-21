@@ -129,6 +129,8 @@ export interface UseExpTrackerReturn {
   stats: ExpStats
   /** 最近一次 OCR 信心度 */
   confidence: number
+  /** 距離下次擷取的秒數 */
+  secondsUntilNextCapture: number
   /** 開始追蹤 */
   start: () => void
   /** 停止追蹤 */
@@ -205,12 +207,15 @@ export interface ExpDisplayProps {
   currentExp: number | null
   expPerMinute: number
   isTracking: boolean
+  secondsUntilNextCapture: number
+  captureInterval: number
   t: (key: string) => string
 }
 
 /** ExpStats 元件 Props */
 export interface ExpStatsProps {
   stats: ExpStats
+  captureInterval: number
   t: (key: string) => string
 }
 
