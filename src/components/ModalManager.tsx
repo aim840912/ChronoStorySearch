@@ -171,6 +171,7 @@ export const ModalManager = memo(function ModalManager({
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false)
 
   // 判斷是否有任何 Modal 開啟（用於顯示懸浮翻譯按鈕）
+  // 注意：不包含 ExpTracker，因為它是獨立懸浮視窗，不需要額外的懸浮按鈕
   const isAnyModalOpen = isMonsterModalOpen ||
                          isItemModalOpen ||
                          isBugReportModalOpen ||
@@ -179,8 +180,7 @@ export const ModalManager = memo(function ModalManager({
                          isAccuracyCalculatorOpen ||
                          isGameCommandsOpen ||
                          isPrivacyModalOpen ||
-                         isScreenRecorderModalOpen ||
-                         isExpTrackerModalOpen
+                         isScreenRecorderModalOpen
 
   return (
     <>

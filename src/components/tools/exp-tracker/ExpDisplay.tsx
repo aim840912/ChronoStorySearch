@@ -5,11 +5,34 @@ import type { ExpDisplayProps } from '@/types/exp-tracker'
 import { formatExp, getIntervalLabel, calculateExpPerInterval } from '@/lib/exp-calculator'
 
 /**
+ * 格式化時間（分鐘轉為可讀格式）
+ */
+function formatTime(minutes: number, t: (key: string) => string): string {
+  if (minutes < 60) {
+    return `${minutes} ${t('minuteUnit')}`
+  }
+  const hours = Math.floor(minutes / 60)
+  const mins = minutes % 60
+  if (hours < 24) {
+    return mins > 0
+      ? `${hours} ${t('hours')} ${mins} ${t('minuteUnit')}`
+      : `${hours} ${t('hours')}`
+  }
+  const days = Math.floor(hours / 24)
+  const remainingHours = hours % 24
+  return remainingHours > 0
+    ? `${days} ${t('days')} ${remainingHours} ${t('hours')}`
+    : `${days} ${t('days')}`
+}
+
+/**
  * 經驗值顯示元件
- * 顯示當前經驗值和每間隔經驗
+ * 顯示當前經驗值、百分比和升級預估
  */
 export const ExpDisplay = memo(function ExpDisplay({
   currentExp,
+  currentPercentage,
+  levelUpEstimate,
   expPerMinute,
   isTracking,
   secondsUntilNextCapture,
@@ -29,6 +52,11 @@ export const ExpDisplay = memo(function ExpDisplay({
           </p>
           <p className="text-2xl font-bold text-gray-900 dark:text-white font-mono">
             {currentExp !== null ? formatExp(currentExp) : '--'}
+            {currentPercentage != null && (
+              <span className="text-sm text-purple-500 ml-2">
+                [{currentPercentage.toFixed(2)}%]
+              </span>
+            )}
           </p>
         </div>
 
@@ -52,6 +80,30 @@ export const ExpDisplay = memo(function ExpDisplay({
           </p>
         </div>
       </div>
+
+      {/* 升級預估 */}
+      {levelUpEstimate && (
+        <div className="mt-3 pt-3 border-t border-gray-200 dark:border-gray-700">
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-xs text-gray-500 dark:text-gray-400">
+                {t('timeToLevelUp')}
+              </p>
+              <p className="text-lg font-bold text-purple-600 dark:text-purple-400">
+                {formatTime(levelUpEstimate.minutesToLevelUp, t)}
+              </p>
+            </div>
+            <div className="text-right">
+              <p className="text-xs text-gray-400 dark:text-gray-500">
+                {t('remainingExp')}
+              </p>
+              <p className="text-sm font-mono text-gray-600 dark:text-gray-300">
+                {formatExp(levelUpEstimate.remainingExp)}
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* 追蹤狀態指示 */}
       {isTracking && (

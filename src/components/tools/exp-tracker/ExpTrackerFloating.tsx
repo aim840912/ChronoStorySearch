@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react'
 import { createPortal } from 'react-dom'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useToast } from '@/hooks/useToast'
@@ -73,7 +73,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     onExpChange: () => {},
   }) as ReturnType<typeof useExpTracker> & {
     setOcrFunction: (
-      fn: (canvas: HTMLCanvasElement) => Promise<{ expValue: number | null; confidence: number }>
+      fn: (canvas: HTMLCanvasElement) => Promise<{ expValue: number | null; confidence: number; percentage: number | null }>
     ) => void
     setVideoAndRegion: (video: HTMLVideoElement, region: { x: number; y: number; width: number; height: number }) => void
     setInitialExp: (exp: number) => void
@@ -167,10 +167,25 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     }
   }, [captureInterval, savedRecords, regionSelector.normalizedRegion, isOpen])
 
-  // 儲存懸浮視窗狀態
+  // Debounced 儲存懸浮視窗狀態（避免拖曳時頻繁寫入 localStorage）
+  const debouncedSaveFloatingState = useMemo(() => {
+    let timeoutId: ReturnType<typeof setTimeout> | null = null
+    const debounced = (state: Parameters<typeof setExpTrackerFloatingState>[0]) => {
+      if (timeoutId) clearTimeout(timeoutId)
+      timeoutId = setTimeout(() => {
+        setExpTrackerFloatingState(state)
+      }, 300)
+    }
+    debounced.cancel = () => {
+      if (timeoutId) clearTimeout(timeoutId)
+    }
+    return debounced
+  }, [])
+
+  // 儲存懸浮視窗狀態（使用 debounce 減少寫入頻率）
   useEffect(() => {
     if (isOpen) {
-      setExpTrackerFloatingState({
+      debouncedSaveFloatingState({
         position,
         isMinimized,
         isPinned,
@@ -179,7 +194,14 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
         minimizedWidth,
       })
     }
-  }, [isOpen, position, isMinimized, isPinned, isVideoExpanded, windowSize, minimizedWidth])
+  }, [isOpen, position, isMinimized, isPinned, isVideoExpanded, windowSize, minimizedWidth, debouncedSaveFloatingState])
+
+  // 清理 debounce timer
+  useEffect(() => {
+    return () => {
+      debouncedSaveFloatingState.cancel()
+    }
+  }, [debouncedSaveFloatingState])
 
   // 設定 OCR 函數
   useEffect(() => {
@@ -189,6 +211,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
         return {
           expValue: result.expValue,
           confidence: result.confidence,
+          percentage: result.percentage,
         }
       })
     }
@@ -731,6 +754,8 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
         {/* 經驗顯示 */}
         <ExpDisplay
           currentExp={tracker.currentExp}
+          currentPercentage={tracker.currentPercentage}
+          levelUpEstimate={tracker.levelUpEstimate}
           expPerMinute={tracker.stats.expPerMinute}
           isTracking={tracker.isTracking}
           secondsUntilNextCapture={tracker.secondsUntilNextCapture}

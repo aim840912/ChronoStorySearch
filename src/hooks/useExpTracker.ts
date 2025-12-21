@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback, useRef, useEffect } from 'react'
+import { useState, useCallback, useRef, useEffect, useMemo } from 'react'
 import type {
   ExpRecord,
   ExpStats,
@@ -23,6 +23,7 @@ export function useExpTracker(
   const [isTracking, setIsTracking] = useState(false)
   const [currentExp, setCurrentExp] = useState<number | null>(null)
   const [previousExp, setPreviousExp] = useState<number | null>(null)
+  const [currentPercentage, setCurrentPercentage] = useState<number | null>(null)
   const [expHistory, setExpHistory] = useState<ExpRecord[]>([])
   const [stats, setStats] = useState<ExpStats>({
     expPerMinute: 0,
@@ -33,12 +34,33 @@ export function useExpTracker(
   const [confidence, setConfidence] = useState(0)
   const [secondsUntilNextCapture, setSecondsUntilNextCapture] = useState(0)
 
+  // 升級預估計算
+  const levelUpEstimate = useMemo(() => {
+    // 需要當前經驗、百分比、和每分鐘經驗才能計算
+    if (!currentExp || !currentPercentage || currentPercentage <= 0 || !stats.expPerMinute || stats.expPerMinute <= 0) {
+      return null
+    }
+
+    // 總經驗需求 = 當前經驗 / (百分比 / 100)
+    const totalExpNeeded = currentExp / (currentPercentage / 100)
+    // 剩餘經驗 = 總經驗 - 當前經驗
+    const remainingExp = totalExpNeeded - currentExp
+    // 升級時間（分鐘）= 剩餘經驗 / 每分鐘經驗
+    const minutesToLevelUp = remainingExp / stats.expPerMinute
+
+    return {
+      totalExpNeeded: Math.round(totalExpNeeded),
+      remainingExp: Math.round(remainingExp),
+      minutesToLevelUp: Math.round(minutesToLevelUp),
+    }
+  }, [currentExp, currentPercentage, stats.expPerMinute])
+
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
   const countdownIntervalRef = useRef<NodeJS.Timeout | null>(null)
   const videoRef = useRef<HTMLVideoElement | null>(null)
   const regionRef = useRef<Region | null>(null)
   const ocrFnRef = useRef<
-    ((canvas: HTMLCanvasElement) => Promise<{ expValue: number | null; confidence: number }>) | null
+    ((canvas: HTMLCanvasElement) => Promise<{ expValue: number | null; confidence: number; percentage: number | null }>) | null
   >(null)
 
   // 載入儲存的歷史記錄
@@ -73,7 +95,7 @@ export function useExpTracker(
 
   // 設定 OCR 函數引用
   const setOcrFunction = useCallback(
-    (fn: (canvas: HTMLCanvasElement) => Promise<{ expValue: number | null; confidence: number }>) => {
+    (fn: (canvas: HTMLCanvasElement) => Promise<{ expValue: number | null; confidence: number; percentage: number | null }>) => {
       ocrFnRef.current = fn
     },
     []
@@ -161,6 +183,11 @@ export function useExpTracker(
       setCurrentExp(result.expValue)
       setConfidence(result.confidence)
 
+      // 更新百分比（如果 OCR 有偵測到）
+      if (result.percentage !== null) {
+        setCurrentPercentage(result.percentage)
+      }
+
       setExpHistory((prev) => {
         const newHistory = [...prev, record]
         // 限制最多 500 筆記錄
@@ -170,7 +197,7 @@ export function useExpTracker(
         return newHistory
       })
 
-      // 統計會由 useEffect 自動更新（監聽 expHistory 變化）
+      // 統計會由 useEffect 自動更新（監聯 expHistory 變化）
 
       onExpChange?.(record)
     }
@@ -236,6 +263,7 @@ export function useExpTracker(
     setExpHistory([])
     setCurrentExp(null)
     setPreviousExp(null)
+    setCurrentPercentage(null)
     setConfidence(0)
     setStats({
       expPerMinute: 0,
@@ -272,6 +300,8 @@ export function useExpTracker(
     isTracking,
     currentExp,
     previousExp,
+    currentPercentage,
+    levelUpEstimate,
     expHistory,
     stats,
     confidence,
@@ -288,5 +318,7 @@ export function useExpTracker(
     setOcrFunction: typeof setOcrFunction
     setVideoAndRegion: typeof setVideoAndRegion
     setInitialExp: typeof setInitialExp
+    currentPercentage: typeof currentPercentage
+    levelUpEstimate: typeof levelUpEstimate
   }
 }
