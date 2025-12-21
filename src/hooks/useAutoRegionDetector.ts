@@ -20,7 +20,7 @@ const REGION_HEIGHT = 30         // 條帶高度
 const SCAN_STRIDE = 8            // 掃描間隔
 const SCALE = 3                  // 放大倍率
 const MIN_CONFIDENCE = 20        // 最低信心度閾值
-const EXP_REGION_WIDTH = 80      // EXP 標籤區域寬度
+const EXP_REGION_WIDTH = 120     // EXP 標籤區域寬度（擴大以適應不同格式）
 
 // 經驗值數字格式 - 專門匹配 EXP 後面的數字
 const EXP_AFTER_PATTERN = /EXP\s*[:\s]*(\d{1,3}(?:,\d{3})+|\d{4,})/i
@@ -51,7 +51,7 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
     })
 
     await worker.setParameters({
-      tessedit_char_whitelist: 'EXPexp:',
+      tessedit_char_whitelist: 'EXPexp:. ',
       tessedit_pageseg_mode: PSM.SINGLE_LINE,
     })
 
@@ -150,10 +150,16 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
       const startY = Math.floor(videoHeight * (1 - BOTTOM_SCAN_RATIO))
       const endY = videoHeight
 
-      // 從右側開始掃描（EXP 通常在右下角）
-      const xPositions = []
-      for (let x = videoWidth - EXP_REGION_WIDTH; x >= 0; x -= 40) {
-        xPositions.push(x)
+      // 從中間開始掃描，向左右擴展（EXP 可能在中間下方）
+      const xPositions: number[] = []
+      const centerX = Math.floor(videoWidth / 2)
+      for (let offset = 0; offset <= centerX; offset += 40) {
+        if (centerX + offset < videoWidth - EXP_REGION_WIDTH) {
+          xPositions.push(centerX + offset)
+        }
+        if (centerX - offset >= 0 && offset > 0) {
+          xPositions.push(centerX - offset)
+        }
       }
 
       for (let y = startY; y < endY - REGION_HEIGHT; y += SCAN_STRIDE) {
