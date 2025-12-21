@@ -624,5 +624,18 @@
   "expTracker.editRecord": "編輯記錄",
   "expTracker.cancelEdit": "取消編輯",
   "expTracker.update": "更新",
-  "expTracker.recordUpdated": "記錄已更新"
+  "expTracker.recordUpdated": "記錄已更新",
+  "expTracker.expand": "展開",
+  "expTracker.minimize": "最小化",
+  "expTracker.videoPreview": "影像預覽",
+  "expTracker.pin": "釘選置頂",
+  "expTracker.unpin": "取消釘選",
+  "expTracker.changeWindow": "切換視窗",
+  "expTracker.regionReady": "區域已設定，可開始追蹤",
+  "expTracker.pleaseSelectRegion": "請先選擇 EXP 區域",
+  "expTracker.selectRegionTitle": "選擇 EXP 區域",
+  "expTracker.dragToSelect": "拖曳框選 EXP 數字區域",
+  "expTracker.reselect": "重新選擇",
+  "expTracker.confirmRegion": "確認選擇",
+  "expTracker.error.noStream": "請先選擇遊戲視窗"
 }

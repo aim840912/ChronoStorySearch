@@ -274,39 +274,41 @@ export const SaveExpForm = memo(function SaveExpForm({
         </button>
       </div>
 
-      {/* 總經驗輸入（可手動或自動計算） */}
-      <div className="flex items-center gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+      {/* 總經驗輸入（可手動或自動計算）- 垂直佈局節省空間 */}
+      <div className="p-3 bg-white dark:bg-gray-800 rounded-lg space-y-1">
         <label
           htmlFor="total-exp"
-          className="text-sm text-gray-600 dark:text-gray-400 whitespace-nowrap"
+          className="block text-xs text-gray-600 dark:text-gray-400"
         >
           {t('totalExp')}
         </label>
-        <input
-          id="total-exp"
-          type="text"
-          value={manualTotalExp !== null ? totalExpInput : (autoTotalExp > 0 ? formatExp(autoTotalExp) : '')}
-          onChange={(e) => handleTotalExpChange(e.target.value)}
-          placeholder={autoTotalExp > 0 ? formatExp(autoTotalExp) : '--'}
-          className="flex-1 px-3 py-1.5 text-right text-lg font-bold font-mono rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-blue-600 dark:text-blue-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-        />
-        {manualTotalExp !== null && (
-          <button
-            type="button"
-            onClick={handleResetTotalExp}
-            className="p-1.5 text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
-            title={t('resetToAuto')}
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-              />
-            </svg>
-          </button>
-        )}
+        <div className="flex items-center gap-2">
+          <input
+            id="total-exp"
+            type="text"
+            value={manualTotalExp !== null ? totalExpInput : (autoTotalExp > 0 ? formatExp(autoTotalExp) : '')}
+            onChange={(e) => handleTotalExpChange(e.target.value)}
+            placeholder={autoTotalExp > 0 ? formatExp(autoTotalExp) : '--'}
+            className="flex-1 min-w-0 px-3 py-1.5 text-right text-base font-bold font-mono rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-blue-600 dark:text-blue-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          />
+          {manualTotalExp !== null && (
+            <button
+              type="button"
+              onClick={handleResetTotalExp}
+              className="flex-shrink-0 p-1.5 text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+              title={t('resetToAuto')}
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                />
+              </svg>
+            </button>
+          )}
+        </div>
       </div>
     </div>
   )

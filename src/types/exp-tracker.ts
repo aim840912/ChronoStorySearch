@@ -101,7 +101,7 @@ export interface ExpTrackerState {
   region: NormalizedRegion | null
   /** 擷取間隔（秒） */
   captureInterval: number
-  /** 歷史記錄（僅保存最近 100 筆） */
+  /** 歷史記錄（僅保存最近 500 筆） */
   history: ExpRecord[]
   /** 已儲存的經驗記錄 */
   savedRecords: SavedExpRecord[]

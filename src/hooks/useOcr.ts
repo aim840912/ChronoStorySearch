@@ -166,7 +166,15 @@ export function useOcr(): UseOcrReturn {
             mode.useRaw
           )
 
-          const result = await workerRef.current.recognize(processedCanvas)
+          // 將 Canvas 轉換為 Blob（Tesseract.js 需要 Blob 而非 Canvas）
+          const blob = await new Promise<Blob>((resolve, reject) => {
+            processedCanvas.toBlob((b) => {
+              if (b) resolve(b)
+              else reject(new Error('Failed to convert canvas to blob'))
+            }, 'image/png')
+          })
+
+          const result = await workerRef.current.recognize(blob)
           const text = result.data.text.trim()
           const confidence = result.data.confidence
 

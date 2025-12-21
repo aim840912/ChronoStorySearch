@@ -623,5 +623,18 @@
   "expTracker.editRecord": "Edit Record",
   "expTracker.cancelEdit": "Cancel",
   "expTracker.update": "Update",
-  "expTracker.recordUpdated": "Record updated"
+  "expTracker.recordUpdated": "Record updated",
+  "expTracker.expand": "Expand",
+  "expTracker.minimize": "Minimize",
+  "expTracker.videoPreview": "Video Preview",
+  "expTracker.pin": "Pin to top",
+  "expTracker.unpin": "Unpin",
+  "expTracker.changeWindow": "Change Window",
+  "expTracker.regionReady": "Region set, ready to track",
+  "expTracker.pleaseSelectRegion": "Please select EXP region first",
+  "expTracker.selectRegionTitle": "Select EXP Region",
+  "expTracker.dragToSelect": "Drag to select EXP display area",
+  "expTracker.reselect": "Reselect",
+  "expTracker.confirmRegion": "Confirm",
+  "expTracker.error.noStream": "Please select game window first"
 }
