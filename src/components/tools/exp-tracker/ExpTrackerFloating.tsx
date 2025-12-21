@@ -9,6 +9,7 @@ import { useRegionSelector } from '@/hooks/useRegionSelector'
 import { useExpTracker } from '@/hooks/useExpTracker'
 // import { useAutoRegionDetector } from '@/hooks/useAutoRegionDetector'
 import { useDraggable } from '@/hooks/useDraggable'
+import { useResizable } from '@/hooks/useResizable'
 import {
   getExpTrackerState,
   setExpTrackerState,
@@ -48,6 +49,8 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
   const [isPinned, setIsPinned] = useState(false)
   const [isRegionModalOpen, setIsRegionModalOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
+  const [windowSize, setWindowSize] = useState({ width: 320, height: 400 })
+  const [minimizedWidth, setMinimizedWidth] = useState(180)
 
   // 資料狀態
   const [stream, setStream] = useState<MediaStream | null>(null)
@@ -81,6 +84,40 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     },
   })
 
+  // 調整大小功能（展開狀態）
+  const resizable = useResizable({
+    initialSize: windowSize,
+    minSize: { width: 280, height: 200 },
+    maxSize: { width: 500, height: 800 },
+    enabled: !isMinimized,
+    onSizeChange: (size) => {
+      setWindowSize(size)
+      const floatingState = getExpTrackerFloatingState()
+      setExpTrackerFloatingState({ ...floatingState, size })
+    },
+    onPositionChange: ({ dx, dy }) => {
+      // 拖曳左/上邊時調整位置
+      setPosition({ x: position.x + dx, y: position.y + dy })
+    },
+  })
+
+  // 調整大小功能（最小化狀態）- 只調整寬度
+  const minimizedResizable = useResizable({
+    initialSize: { width: minimizedWidth, height: 40 },
+    minSize: { width: 120, height: 40 },
+    maxSize: { width: 300, height: 40 },
+    enabled: isMinimized,
+    onSizeChange: (size) => {
+      setMinimizedWidth(size.width)
+      const floatingState = getExpTrackerFloatingState()
+      setExpTrackerFloatingState({ ...floatingState, minimizedWidth: size.width })
+    },
+    onPositionChange: ({ dx }) => {
+      // 拖曳左邊時調整位置
+      setPosition({ x: position.x + dx, y: position.y })
+    },
+  })
+
   // Client-side mounting
   useEffect(() => {
     setMounted(true)
@@ -103,6 +140,15 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
       setIsPinned(floatingState.isPinned ?? false)
       if (floatingState.position.x >= 0 && floatingState.position.y >= 0) {
         setPosition(floatingState.position)
+      }
+      // 載入尺寸
+      if (floatingState.size) {
+        setWindowSize(floatingState.size)
+        resizable.setSize(floatingState.size)
+      }
+      if (floatingState.minimizedWidth) {
+        setMinimizedWidth(floatingState.minimizedWidth)
+        minimizedResizable.setSize({ width: floatingState.minimizedWidth, height: 40 })
       }
     }
   }, [isOpen])
@@ -128,9 +174,11 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
         isMinimized,
         isPinned,
         isVideoExpanded,
+        size: windowSize,
+        minimizedWidth,
       })
     }
-  }, [isOpen, position, isMinimized, isPinned, isVideoExpanded])
+  }, [isOpen, position, isMinimized, isPinned, isVideoExpanded, windowSize, minimizedWidth])
 
   // 設定 OCR 函數
   useEffect(() => {
@@ -347,48 +395,61 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
   if (isMinimized) {
     return createPortal(
       <div
-        className={`fixed ${zIndex} bg-purple-500 text-white rounded-lg shadow-lg cursor-move select-none`}
-        style={{ left: position.x, top: position.y }}
-        {...dragHandlers}
+        ref={minimizedResizable.containerRef}
+        className={`fixed ${zIndex} bg-purple-500 text-white rounded-lg shadow-lg select-none`}
+        style={{
+          left: position.x,
+          top: position.y,
+          width: minimizedResizable.size.width,
+          cursor: minimizedResizable.cursorStyle || (isDragging ? 'grabbing' : 'grab'),
+        }}
       >
-        <div className="flex items-center gap-2 px-3 py-2">
-          <span className="text-sm font-medium">EXP</span>
-          <span className="text-sm font-mono">
-            {tracker.stats.expPerMinute > 0
-              ? `+${formatExp(tracker.stats.expPerMinute)}/min`
-              : '--'}
-          </span>
-          {/* 釘選按鈕 */}
-          <button
-            type="button"
-            onClick={() => setIsPinned(!isPinned)}
-            className={`p-1 rounded ${isPinned ? 'bg-purple-600' : 'hover:bg-purple-600'}`}
-            aria-label={isPinned ? t('unpin') : t('pin')}
-          >
-            <svg className="w-4 h-4" fill={isPinned ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 4v6l-2 4v2h10v-2l-2-4V4M12 16v5M8 4h8" />
-            </svg>
-          </button>
-          <button
-            type="button"
-            onClick={() => setIsMinimized(false)}
-            className="p-1 hover:bg-purple-600 rounded"
-            aria-label={t('expand')}
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
-            </svg>
-          </button>
-          <button
-            type="button"
-            onClick={onClose}
-            className="p-1 hover:bg-purple-600 rounded"
-            aria-label={t('close')}
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
+        {/* 拖曳區域 */}
+        <div
+          className="flex items-center justify-between gap-2 px-3 py-2"
+          {...dragHandlers}
+        >
+          <div className="flex items-center gap-2 overflow-hidden flex-1">
+            <span className="text-sm font-medium shrink-0">EXP</span>
+            <span className="text-sm font-mono truncate">
+              {tracker.stats.expPerMinute > 0
+                ? `+${formatExp(tracker.stats.expPerMinute)}/min`
+                : '--'}
+            </span>
+          </div>
+          <div className="flex items-center gap-1 shrink-0">
+            {/* 釘選按鈕 */}
+            <button
+              type="button"
+              onClick={() => setIsPinned(!isPinned)}
+              className={`p-1 rounded ${isPinned ? 'bg-purple-600' : 'hover:bg-purple-600'}`}
+              aria-label={isPinned ? t('unpin') : t('pin')}
+            >
+              <svg className="w-4 h-4" fill={isPinned ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 4v6l-2 4v2h10v-2l-2-4V4M12 16v5M8 4h8" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              onClick={() => setIsMinimized(false)}
+              className="p-1 hover:bg-purple-600 rounded"
+              aria-label={t('expand')}
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              onClick={onClose}
+              className="p-1 hover:bg-purple-600 rounded"
+              aria-label={t('close')}
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>,
       document.body
@@ -398,15 +459,24 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
   // 完整視窗
   return createPortal(
     <div
-      className={`fixed ${zIndex} w-80 bg-white dark:bg-gray-800 rounded-lg shadow-2xl border border-gray-200 dark:border-gray-700 ${
-        isDragging ? 'cursor-grabbing' : ''
-      }`}
-      style={{ left: position.x, top: position.y }}
+      ref={resizable.containerRef}
+      className={`fixed ${zIndex} bg-white dark:bg-gray-800 rounded-lg shadow-2xl border border-gray-200 dark:border-gray-700 flex flex-col`}
+      style={{
+        left: position.x,
+        top: position.y,
+        width: resizable.size.width,
+        height: resizable.size.height,
+        cursor: resizable.cursorStyle || (isDragging ? 'grabbing' : ''),
+      }}
     >
       {/* 標題列（可拖曳） */}
       <div
-        className="flex items-center justify-between px-3 py-2 bg-purple-500 text-white rounded-t-lg cursor-grab select-none"
-        {...dragHandlers}
+        className="shrink-0 flex items-center justify-between px-3 py-2 bg-purple-500 text-white rounded-t-lg cursor-grab select-none"
+        onMouseDown={(e) => {
+          // 如果在 resize 邊緣，不啟動拖曳
+          if (resizable.activeEdge) return
+          dragHandlers.onMouseDown(e)
+        }}
       >
         <div className="flex items-center gap-2">
           <svg className="w-4 h-4 opacity-50" fill="currentColor" viewBox="0 0 24 24">
@@ -452,7 +522,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
       </div>
 
       {/* 內容區 */}
-      <div className="max-h-[70vh] overflow-y-auto scrollbar-hide p-3 space-y-3">
+      <div className="flex-1 min-h-0 overflow-y-auto scrollbar-hide p-3 space-y-3">
         {/* OCR 載入狀態 */}
         {ocr.isLoading && (
           <div className="p-2 bg-blue-50 dark:bg-blue-900/30 rounded-lg flex items-center gap-2">
