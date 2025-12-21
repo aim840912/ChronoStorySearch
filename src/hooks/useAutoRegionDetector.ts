@@ -15,11 +15,11 @@ import type {
  */
 
 // 掃描參數
-const BOTTOM_SCAN_RATIO = 0.25  // 掃描底部 25%
+const BOTTOM_SCAN_RATIO = 0.35  // 掃描底部 35%（擴大範圍以涵蓋更多區域）
 const REGION_HEIGHT = 30         // 條帶高度
 const SCAN_STRIDE = 8            // 掃描間隔
 const SCALE = 3                  // 放大倍率
-const MIN_CONFIDENCE = 20        // 最低信心度閾值
+const MIN_CONFIDENCE = 10        // 最低信心度閾值（降低以適應遊戲字體）
 const EXP_REGION_WIDTH = 120     // EXP 標籤區域寬度（擴大以適應不同格式）
 
 // 經驗值數字格式 - 專門匹配 EXP 後面的數字
@@ -33,6 +33,8 @@ interface ExpLabelResult {
   width: number
   height: number
   confidence: number
+  /** 掃描時找到的原始文字（可能已包含 EXP 數字） */
+  text?: string
 }
 
 export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
@@ -50,8 +52,8 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
       logger: () => {},
     })
 
+    // 移除白名單限制，讓 OCR 自由辨識所有字元（遊戲字體可能需要更靈活的辨識）
     await worker.setParameters({
-      tessedit_char_whitelist: 'EXPexp:. ',
       tessedit_pageseg_mode: PSM.SINGLE_LINE,
     })
 
@@ -180,6 +182,11 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
           const text = result.data.text.trim().toUpperCase()
           const confidence = result.data.confidence
 
+          // 調試日誌：顯示掃描結果
+          if (process.env.NODE_ENV === 'development' && text.length > 0) {
+            console.log('[AutoDetect] Scanning:', { x, y, text, confidence })
+          }
+
           // 檢查是否包含 EXP
           if (text.includes('EXP') && confidence >= MIN_CONFIDENCE) {
             return {
@@ -188,6 +195,7 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
               width: EXP_REGION_WIDTH,
               height: REGION_HEIGHT,
               confidence,
+              text: result.data.text.trim(), // 保留原始文字（包含大小寫）
             }
           }
         }
@@ -205,22 +213,110 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
       expLabel: ExpLabelResult,
       worker: import('tesseract.js').Worker
     ): Promise<AutoDetectResult | null> => {
-      const videoWidth = video.clientWidth
+      const clientWidth = video.clientWidth
+      const clientHeight = video.clientHeight
 
-      // 擴大擷取區域 - 包含 EXP 左右兩側
+      // 將 client 座標轉換為 video 實際座標（用於返回結果）
+      const scaleX = video.videoWidth / clientWidth
+      const scaleY = video.videoHeight / clientHeight
+
+      // 優先策略：檢查掃描文字是否已包含 EXP 數字
+      // 如果掃描階段就找到完整資訊，直接使用原掃描區域
+      if (expLabel.text) {
+        const expMatch = expLabel.text.match(EXP_AFTER_PATTERN)
+        const allNumbers = expLabel.text.match(ANY_NUMBER_PATTERN)
+
+        if (process.env.NODE_ENV === 'development') {
+          console.log('[AutoDetect] Checking scan text:', {
+            text: expLabel.text,
+            expMatch,
+            allNumbers
+          })
+        }
+
+        // 如果掃描文字包含 EXP 數字，直接使用原掃描區域
+        if (expMatch) {
+          const scanRegion: Region = {
+            x: expLabel.x * scaleX,
+            y: expLabel.y * scaleY,
+            width: expLabel.width * scaleX,
+            height: expLabel.height * scaleY,
+          }
+
+          if (process.env.NODE_ENV === 'development') {
+            console.log('[AutoDetect] Using scan region directly:', { scanRegion, expNumber: expMatch[1] })
+          }
+
+          return {
+            region: scanRegion,
+            confidence: expLabel.confidence,
+            text: expMatch[1],
+          }
+        }
+
+        // 如果有大數字（可能是經驗值）
+        if (allNumbers && allNumbers.length > 0) {
+          const largestNumber = allNumbers.reduce((max, num) => {
+            const numValue = parseInt(num.replace(/,/g, ''), 10)
+            const maxValue = parseInt(max.replace(/,/g, ''), 10)
+            return numValue > maxValue ? num : max
+          })
+
+          // 只接受 4 位數以上的數字（經驗值通常較大）
+          const numValue = parseInt(largestNumber.replace(/,/g, ''), 10)
+          if (numValue >= 1000) {
+            const scanRegion: Region = {
+              x: expLabel.x * scaleX,
+              y: expLabel.y * scaleY,
+              width: expLabel.width * scaleX,
+              height: expLabel.height * scaleY,
+            }
+
+            if (process.env.NODE_ENV === 'development') {
+              console.log('[AutoDetect] Using scan region with largest number:', { scanRegion, largestNumber })
+            }
+
+            return {
+              region: scanRegion,
+              confidence: expLabel.confidence,
+              text: largestNumber,
+            }
+          }
+        }
+      }
+
+      // 備用策略：擴大擷取區域（如果掃描文字沒有數字）
       const leftExtend = 100  // 往左延伸 100px
       const rightExtend = 200 // 往右延伸 200px
 
-      const numberRegion: Region = {
+      // 先在 client 座標中計算區域
+      const clientRegion: Region = {
         x: Math.max(0, expLabel.x - leftExtend),
         y: expLabel.y,
         width: leftExtend + expLabel.width + rightExtend,
         height: expLabel.height, // OCR 搜索區域保持原本高度
       }
 
-      // 確保不超出視頻範圍
-      if (numberRegion.x + numberRegion.width > videoWidth) {
-        numberRegion.width = videoWidth - numberRegion.x
+      // 確保不超出視頻範圍（client 座標）
+      if (clientRegion.x + clientRegion.width > clientWidth) {
+        clientRegion.width = clientWidth - clientRegion.x
+      }
+
+      const numberRegion: Region = {
+        x: clientRegion.x * scaleX,
+        y: clientRegion.y * scaleY,
+        width: clientRegion.width * scaleX,
+        height: clientRegion.height * scaleY,
+      }
+
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[AutoDetect] Fallback: Extended region:', {
+          clientSize: { width: clientWidth, height: clientHeight },
+          videoSize: { width: video.videoWidth, height: video.videoHeight },
+          scale: { x: scaleX, y: scaleY },
+          clientRegion,
+          numberRegion,
+        })
       }
 
       // 嘗試多種預處理方式
@@ -234,9 +330,10 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
       ]
 
       for (const mode of preprocessingModes) {
+        // 使用 clientRegion 進行擷取（captureRegion 內部會轉換座標）
         const canvas = mode.useRaw
-          ? captureRegionRaw(video, numberRegion)
-          : captureRegion(video, numberRegion, mode.threshold, mode.invert)
+          ? captureRegionRaw(video, clientRegion)
+          : captureRegion(video, clientRegion, mode.threshold, mode.invert)
 
         if (!canvas) continue
 
@@ -244,8 +341,14 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
         const text = result.data.text.trim()
         const confidence = result.data.confidence
 
-        // 優先：提取 EXP 後面的數字
+        // 調試日誌
         const expMatch = text.match(EXP_AFTER_PATTERN)
+        const allNumbers = text.match(ANY_NUMBER_PATTERN)
+        if (process.env.NODE_ENV === 'development') {
+          console.log('[AutoDetect] findExpNumber:', { mode: mode.name, text, confidence, expMatch, allNumbers })
+        }
+
+        // 優先：提取 EXP 後面的數字
         if (expMatch && confidence >= MIN_CONFIDENCE) {
           const expNumber = expMatch[1]
 
@@ -258,7 +361,6 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
         }
 
         // 備用：找最大的數字（可能是經驗值）
-        const allNumbers = text.match(ANY_NUMBER_PATTERN)
         if (allNumbers && allNumbers.length > 0 && confidence >= MIN_CONFIDENCE) {
           // 找最大的數字（經驗值通常是最大的）
           const largestNumber = allNumbers.reduce((max, num) => {

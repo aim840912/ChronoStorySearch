@@ -637,5 +637,8 @@
   "expTracker.dragToSelect": "拖曳框選 EXP 數字區域",
   "expTracker.reselect": "重新選擇",
   "expTracker.confirmRegion": "確認選擇",
-  "expTracker.error.noStream": "請先選擇遊戲視窗"
+  "expTracker.error.noStream": "請先選擇遊戲視窗",
+  "expTracker.remainingExp": "剩餘經驗",
+  "expTracker.hours": "小時",
+  "expTracker.days": "天"
 }

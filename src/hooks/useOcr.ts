@@ -17,6 +17,9 @@ const PREPROCESSING_MODES = [
 // 數字匹配模式 - 支援逗號分隔或 4 位以上連續數字
 const NUMBER_PATTERN = /(\d{1,3}(?:,\d{3})+|\d{4,})/g
 
+// 百分比匹配模式 - 支援 [34.74%]、(34.74%)、34.74% 三種格式
+const PERCENTAGE_PATTERN = /[\[(]?\s*(\d+\.?\d*)\s*%\s*[\])]?/
+
 /**
  * OCR Hook - 使用 Tesseract.js 進行數字辨識
  * 優化：多種預處理方式提升辨識率
@@ -118,6 +121,28 @@ export function useOcr(): UseOcrReturn {
     return largest ? largestValue : null
   }, [])
 
+  // 從文字中提取百分比（例如 [17.09%] 或 17.09%）
+  const extractPercentage = useCallback((text: string): number | null => {
+    // 調試：顯示 OCR 讀取的原始文字
+    if (process.env.NODE_ENV === 'development') {
+      console.log('[OCR] Raw text for percentage extraction:', text)
+    }
+
+    const match = text.match(PERCENTAGE_PATTERN)
+
+    if (process.env.NODE_ENV === 'development') {
+      console.log('[OCR] Percentage match result:', match)
+    }
+
+    if (!match) return null
+
+    const percentage = parseFloat(match[1])
+    // 百分比應該在 0-100 範圍內
+    if (isNaN(percentage) || percentage < 0 || percentage > 100) return null
+
+    return percentage
+  }, [])
+
   // 執行 OCR 辨識
   const recognize = useCallback(
     async (imageData: ImageData | HTMLCanvasElement): Promise<OcrResult> => {
@@ -131,6 +156,7 @@ export function useOcr(): UseOcrReturn {
           text: '',
           confidence: 0,
           expValue: null,
+          percentage: null,
         }
       }
 
@@ -156,6 +182,7 @@ export function useOcr(): UseOcrReturn {
           text: string
           confidence: number
           expValue: number
+          percentage: number | null
         }> = []
 
         for (const mode of PREPROCESSING_MODES) {
@@ -180,9 +207,11 @@ export function useOcr(): UseOcrReturn {
 
           // 嘗試提取數字（不管信心度高低都嘗試）
           const expValue = extractLargestNumber(text)
+          // 同時嘗試提取百分比
+          const percentage = extractPercentage(text)
 
           if (expValue !== null) {
-            validResults.push({ mode: mode.name, text, confidence, expValue })
+            validResults.push({ mode: mode.name, text, confidence, expValue, percentage })
           }
         }
 
@@ -193,6 +222,7 @@ export function useOcr(): UseOcrReturn {
             text: best.text,
             confidence: best.confidence,
             expValue: best.expValue,
+            percentage: best.percentage,
           }
         }
 
@@ -201,6 +231,7 @@ export function useOcr(): UseOcrReturn {
           text: '',
           confidence: 0,
           expValue: null,
+          percentage: null,
         }
       } catch (err) {
         console.error('OCR recognition failed:', err)
@@ -208,10 +239,11 @@ export function useOcr(): UseOcrReturn {
           text: '',
           confidence: 0,
           expValue: null,
+          percentage: null,
         }
       }
     },
-    [initWorker, preprocessImage, extractLargestNumber]
+    [initWorker, preprocessImage, extractLargestNumber, extractPercentage]
   )
 
   // 組件掛載時初始化

@@ -83,6 +83,8 @@ export interface OcrResult {
   confidence: number
   /** 解析後的經驗值，null 表示解析失敗 */
   expValue: number | null
+  /** 解析後的百分比 (0-100)，null 表示未偵測到 */
+  percentage: number | null
 }
 
 /** EXP Tracker 設定 */
@@ -123,6 +125,10 @@ export interface UseExpTrackerReturn {
   currentExp: number | null
   /** 上一次經驗值 */
   previousExp: number | null
+  /** 當前百分比 */
+  currentPercentage: number | null
+  /** 升級預估資訊 */
+  levelUpEstimate: LevelUpEstimate | null
   /** 經驗歷史記錄 */
   expHistory: ExpRecord[]
   /** 統計資訊 */
@@ -202,9 +208,21 @@ export interface RegionSelectorProps {
   handlers: UseRegionSelectorReturn['handlers']
 }
 
+/** 升級預估資訊 */
+export interface LevelUpEstimate {
+  /** 升級所需總經驗 */
+  totalExpNeeded: number
+  /** 剩餘經驗 */
+  remainingExp: number
+  /** 預估升級時間（分鐘） */
+  minutesToLevelUp: number
+}
+
 /** ExpDisplay 元件 Props */
 export interface ExpDisplayProps {
   currentExp: number | null
+  currentPercentage: number | null
+  levelUpEstimate: LevelUpEstimate | null
   expPerMinute: number
   isTracking: boolean
   secondsUntilNextCapture: number

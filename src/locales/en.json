@@ -636,5 +636,8 @@
   "expTracker.dragToSelect": "Drag to select EXP display area",
   "expTracker.reselect": "Reselect",
   "expTracker.confirmRegion": "Confirm",
-  "expTracker.error.noStream": "Please select game window first"
+  "expTracker.error.noStream": "Please select game window first",
+  "expTracker.remainingExp": "Remaining EXP",
+  "expTracker.hours": "hr",
+  "expTracker.days": "day"
 }
