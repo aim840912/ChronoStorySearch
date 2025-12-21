@@ -108,14 +108,16 @@ export function useExpTracker(
     if (!ctx) return
 
     // 調試日誌 - 包含 video 播放狀態
-    console.log('[EXP] captureAndRecognize:', {
-      region,
-      canvasSize: { width: canvas.width, height: canvas.height },
-      videoSize: { width: video.videoWidth, height: video.videoHeight },
-      videoPaused: video.paused,
-      videoReadyState: video.readyState,
-      videoCurrentTime: video.currentTime,
-    })
+    if (process.env.NODE_ENV === 'development') {
+      console.log('[EXP] captureAndRecognize:', {
+        region,
+        canvasSize: { width: canvas.width, height: canvas.height },
+        videoSize: { width: video.videoWidth, height: video.videoHeight },
+        videoPaused: video.paused,
+        videoReadyState: video.readyState,
+        videoCurrentTime: video.currentTime,
+      })
+    }
 
     // region 已經是實際影片座標（由 ExpTrackerFloating 使用 videoWidth/videoHeight 計算）
     // 不需要額外的縮放轉換
@@ -138,8 +140,10 @@ export function useExpTracker(
 
     // 輸出 canvas 預覽到 console（調試用）
     // 可在 Console 中點擊預覽或複製 data URL 到瀏覽器查看
-    const previewUrl = canvas.toDataURL('image/png')
-    console.log('[EXP] Canvas preview (click to expand):', previewUrl)
+    if (process.env.NODE_ENV === 'development') {
+      const previewUrl = canvas.toDataURL('image/png')
+      console.log('[EXP] Canvas preview (click to expand):', previewUrl)
+    }
 
     // 不做預處理，讓 useOcr 統一處理多種預處理方式
 
