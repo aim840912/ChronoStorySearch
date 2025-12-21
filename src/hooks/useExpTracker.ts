@@ -61,6 +61,14 @@ export function useExpTracker(
     })
   }, [expHistory])
 
+  // 當 expHistory 變化時，自動重新計算統計
+  // 這樣可以避免閉包問題（captureAndRecognize 中的 expHistory 是舊值）
+  useEffect(() => {
+    if (expHistory.length >= 2) {
+      setStats(calculateExpStats(expHistory))
+    }
+  }, [expHistory])
+
   // 設定 OCR 函數引用
   const setOcrFunction = useCallback(
     (fn: (canvas: HTMLCanvasElement) => Promise<{ expValue: number | null; confidence: number }>) => {
@@ -97,9 +105,18 @@ export function useExpTracker(
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
-    // 計算實際影片座標（考慮影片縮放）
-    const scaleX = video.videoWidth / video.clientWidth
-    const scaleY = video.videoHeight / video.clientHeight
+    // 調試日誌 - 包含 video 播放狀態
+    console.log('[EXP] captureAndRecognize:', {
+      region,
+      canvasSize: { width: canvas.width, height: canvas.height },
+      videoSize: { width: video.videoWidth, height: video.videoHeight },
+      videoPaused: video.paused,
+      videoReadyState: video.readyState,
+      videoCurrentTime: video.currentTime,
+    })
+
+    // region 已經是實際影片座標（由 ExpTrackerFloating 使用 videoWidth/videoHeight 計算）
+    // 不需要額外的縮放轉換
 
     // 使用較好的圖像縮放演算法
     ctx.imageSmoothingEnabled = true
@@ -107,15 +124,20 @@ export function useExpTracker(
 
     ctx.drawImage(
       video,
-      region.x * scaleX,
-      region.y * scaleY,
-      region.width * scaleX,
-      region.height * scaleY,
+      region.x,
+      region.y,
+      region.width,
+      region.height,
       0,
       0,
       canvas.width,
       canvas.height
     )
+
+    // 輸出 canvas 預覽到 console（調試用）
+    // 可在 Console 中點擊預覽或複製 data URL 到瀏覽器查看
+    const previewUrl = canvas.toDataURL('image/png')
+    console.log('[EXP] Canvas preview (click to expand):', previewUrl)
 
     // 不做預處理，讓 useOcr 統一處理多種預處理方式
 
@@ -142,15 +164,11 @@ export function useExpTracker(
         return newHistory
       })
 
-      // 更新統計
-      setStats(() => {
-        const newHistory = [...expHistory, record]
-        return calculateExpStats(newHistory)
-      })
+      // 統計會由 useEffect 自動更新（監聽 expHistory 變化）
 
       onExpChange?.(record)
     }
-  }, [currentExp, expHistory, onExpChange])
+  }, [currentExp, onExpChange])
 
   // 開始追蹤
   const start = useCallback(() => {

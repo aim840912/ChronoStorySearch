@@ -1,5 +1,7 @@
 export { ExpTrackerModal } from './ExpTrackerModal'
+export { ExpTrackerFloating } from './ExpTrackerFloating'
 export { ExpDisplay } from './ExpDisplay'
 export { ExpStats } from './ExpStats'
 export { ExpHistory } from './ExpHistory'
 export { OcrConfidence } from './OcrConfidence'
+export { RegionSelectorModal } from './RegionSelectorModal'

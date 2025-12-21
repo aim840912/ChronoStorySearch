@@ -108,6 +108,8 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
   const { recordView } = options
   const [modal, setModal] = useState<ModalState>({ type: null, data: null })
   const [history, setHistory] = useState<ModalHistoryState>({ previous: null })
+  // ExpTrackerFloating 使用獨立狀態，不受其他 Modal 影響
+  const [isExpTrackerFloatingOpen, setIsExpTrackerFloatingOpen] = useState(false)
 
   // 開啟 Monster Modal
   const openMonsterModal = useCallback((mobId: number, mobName: string, saveHistory = false) => {
@@ -321,15 +323,14 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     setHistory({ previous: null })
   }, [])
 
-  // 開啟 EXP Tracker Modal
+  // 開啟 EXP Tracker Modal（使用獨立狀態）
   const openExpTrackerModal = useCallback(() => {
-    setModal({ type: 'expTracker', data: null })
+    setIsExpTrackerFloatingOpen(true)
   }, [])
 
-  // 關閉 EXP Tracker Modal
+  // 關閉 EXP Tracker Modal（使用獨立狀態）
   const closeExpTrackerModal = useCallback(() => {
-    setModal({ type: null, data: null })
-    setHistory({ previous: null })
+    setIsExpTrackerFloatingOpen(false)
   }, [])
 
   // 用於 URL 參數處理的 setters（向後相容）
@@ -486,8 +487,8 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     openScreenRecorderModal,
     closeScreenRecorderModal,
 
-    // EXP Tracker Modal
-    isExpTrackerModalOpen: modal.type === 'expTracker',
+    // EXP Tracker Modal（使用獨立狀態，不受其他 Modal 影響）
+    isExpTrackerModalOpen: isExpTrackerFloatingOpen,
     openExpTrackerModal,
     closeExpTrackerModal,
 

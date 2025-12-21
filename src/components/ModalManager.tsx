@@ -12,7 +12,7 @@ import { MerchantShopModal } from '@/components/MerchantShopModal'
 import { PrivacySettingsModal } from '@/components/settings/PrivacySettingsModal'
 import { DevApiTester } from '@/components/dev/DevApiTester'
 import { ScreenRecorderModal } from '@/components/tools/screen-recorder'
-import { ExpTrackerModal } from '@/components/tools/exp-tracker'
+import { ExpTrackerFloating } from '@/components/tools/exp-tracker'
 import { Toast } from '@/components/Toast'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useTheme } from '@/contexts/ThemeContext'
@@ -269,8 +269,8 @@ export const ModalManager = memo(function ModalManager({
         onClose={closeScreenRecorderModal}
       />
 
-      {/* EXP Tracker Modal */}
-      <ExpTrackerModal
+      {/* EXP Tracker 懸浮視窗 */}
+      <ExpTrackerFloating
         isOpen={isExpTrackerModalOpen}
         onClose={closeExpTrackerModal}
       />

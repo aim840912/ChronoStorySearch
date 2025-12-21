@@ -20,6 +20,7 @@ export const STORAGE_KEYS = {
   IMAGE_FORMAT: 'chronostory-image-format',
   SCREEN_RECORDER: 'chronostory-screen-recorder',
   EXP_TRACKER: 'chronostory-exp-tracker',
+  EXP_TRACKER_FLOATING: 'chronostory-exp-tracker-floating',
 } as const
 
 /**
@@ -223,4 +224,34 @@ export function setExpTrackerState(state: ExpTrackerState): boolean {
     history: state.history.slice(-100),
   }
   return setStorageItem(STORAGE_KEYS.EXP_TRACKER, limitedState)
+}
+
+// EXP Tracker 懸浮視窗狀態
+export interface ExpTrackerFloatingState {
+  /** 視窗位置 */
+  position: { x: number; y: number }
+  /** 是否最小化 */
+  isMinimized: boolean
+  /** 是否釘選（保持在 Modal 上層） */
+  isPinned: boolean
+  /** 影像預覽是否展開 */
+  isVideoExpanded: boolean
+}
+
+const DEFAULT_EXP_TRACKER_FLOATING_STATE: ExpTrackerFloatingState = {
+  position: { x: -1, y: -1 }, // -1 表示使用預設位置（右上角）
+  isMinimized: false,
+  isPinned: false,
+  isVideoExpanded: false,
+}
+
+export function getExpTrackerFloatingState(): ExpTrackerFloatingState {
+  return getStorageItem<ExpTrackerFloatingState>(
+    STORAGE_KEYS.EXP_TRACKER_FLOATING,
+    DEFAULT_EXP_TRACKER_FLOATING_STATE
+  )
+}
+
+export function setExpTrackerFloatingState(state: ExpTrackerFloatingState): boolean {
+  return setStorageItem(STORAGE_KEYS.EXP_TRACKER_FLOATING, state)
 }
