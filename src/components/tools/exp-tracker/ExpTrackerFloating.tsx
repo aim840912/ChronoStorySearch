@@ -7,7 +7,7 @@ import { useToast } from '@/hooks/useToast'
 import { useOcr } from '@/hooks/useOcr'
 import { useRegionSelector } from '@/hooks/useRegionSelector'
 import { useExpTracker } from '@/hooks/useExpTracker'
-// import { useAutoRegionDetector } from '@/hooks/useAutoRegionDetector'
+import { useAutoRegionDetector } from '@/hooks/useAutoRegionDetector'
 import { useDraggable } from '@/hooks/useDraggable'
 import { useResizable } from '@/hooks/useResizable'
 import {
@@ -49,6 +49,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
   const [isVideoExpanded, setIsVideoExpanded] = useState(false)
   const [isPinned, setIsPinned] = useState(false)
   const [isRegionModalOpen, setIsRegionModalOpen] = useState(false)
+  const [isAutoDetecting, setIsAutoDetecting] = useState(false)
   const [mounted, setMounted] = useState(false)
   const [windowSize, setWindowSize] = useState({ width: 320, height: 400 })
   const [minimizedWidth, setMinimizedWidth] = useState(180)
@@ -66,6 +67,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
   // Hooks
   const ocr = useOcr()
   const regionSelector = useRegionSelector()
+  const autoDetector = useAutoRegionDetector()
   const tracker = useExpTracker({
     captureInterval,
     onExpChange: () => {},
@@ -273,10 +275,13 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
           height: video.videoHeight,
         })
 
-        // 如果有待處理的區域選擇，在 video 載入完成後開啟
+        // 如果有待處理的區域選擇，在 video 載入完成後自動偵測
         if (pendingRegionSelectRef.current) {
           pendingRegionSelectRef.current = false
-          setIsRegionModalOpen(true)
+          // 延遲一幀確保 video 完全準備好
+          requestAnimationFrame(() => {
+            handleAutoDetect()
+          })
         }
       }
     }
@@ -293,6 +298,56 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
       video.removeEventListener('loadedmetadata', updateSize)
     }
   }, [stream])
+
+  // 自動偵測 EXP 區域
+  const handleAutoDetect = useCallback(async () => {
+    if (!videoRef.current || videoSize.width === 0) return
+
+    setIsAutoDetecting(true)
+    const MAX_RETRIES = 3
+
+    try {
+      for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+        if (process.env.NODE_ENV === 'development') {
+          console.log(`[EXP] Auto-detect attempt ${attempt}/${MAX_RETRIES}`)
+        }
+
+        const result = await autoDetector.detect(videoRef.current)
+
+        if (result && result.region) {
+          // 成功：轉換為正規化座標並設定
+          const normalized = {
+            x: result.region.x / videoSize.width,
+            y: result.region.y / videoSize.height,
+            width: result.region.width / videoSize.width,
+            height: result.region.height / videoSize.height,
+          }
+
+          if (process.env.NODE_ENV === 'development') {
+            console.log('[EXP] Auto-detect success:', { result, normalized })
+          }
+
+          regionSelector.setNormalizedRegion(normalized)
+          showToast(`${t('autoDetectSuccess')}: ${result.text}`, 'success')
+          return
+        }
+
+        // 重試等待
+        if (attempt < MAX_RETRIES) {
+          await new Promise((r) => setTimeout(r, 500))
+        }
+      }
+
+      // 全部失敗：開啟手動框選
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[EXP] Auto-detect failed, opening manual selection')
+      }
+      showToast(t('autoDetectFailed'), 'info')
+      setIsRegionModalOpen(true)
+    } finally {
+      setIsAutoDetecting(false)
+    }
+  }, [videoSize, autoDetector, regionSelector, showToast, t])
 
   // 選擇遊戲視窗
   const selectWindow = useCallback(async () => {
@@ -571,6 +626,14 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
           </div>
         )}
 
+        {/* 自動偵測中 */}
+        {isAutoDetecting && (
+          <div className="p-2 bg-purple-50 dark:bg-purple-900/30 rounded-lg flex items-center gap-2">
+            <div className="animate-spin rounded-full h-3 w-3 border-2 border-purple-500 border-t-transparent" />
+            <p className="text-purple-800 dark:text-purple-200 text-xs">{t('detecting')}</p>
+          </div>
+        )}
+
         {/* 選擇視窗 / 追蹤控制 */}
         {isSupported && (
           <div className="space-y-2">
@@ -603,7 +666,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
                   <button
                     type="button"
                     onClick={handleStartTracking}
-                    disabled={!regionSelector.normalizedRegion || !ocr.isReady}
+                    disabled={!regionSelector.normalizedRegion || !ocr.isReady || isAutoDetecting}
                     className="flex-1 px-3 py-2 text-sm font-medium bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {t('startTracking')}
@@ -623,7 +686,11 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
             {/* 區域狀態提示 */}
             {stream && (
               <div className="text-xs text-center">
-                {regionSelector.normalizedRegion ? (
+                {isAutoDetecting ? (
+                  <span className="text-purple-600 dark:text-purple-400">
+                    {t('detecting')}
+                  </span>
+                ) : regionSelector.normalizedRegion ? (
                   <span className="text-green-600 dark:text-green-400">
                     {t('regionReady')}
                   </span>
