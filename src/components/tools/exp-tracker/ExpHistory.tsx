@@ -61,6 +61,23 @@ export const ExpHistory = memo(function ExpHistory({
     })
   }
 
+  // 計算每分鐘經驗（與前一筆記錄比較）
+  // recentHistory 是反向排序（最新在前），所以 index+1 是時間上的前一筆
+  const calculateExpPerMin = (currentIndex: number): number | null => {
+    const nextIndex = currentIndex + 1
+    if (nextIndex >= recentHistory.length) return null
+
+    const current = recentHistory[currentIndex]
+    const previous = recentHistory[nextIndex]
+    const timeDiffMs = current.timestamp - previous.timestamp
+    const expDiff = current.exp - previous.exp
+
+    if (timeDiffMs <= 0) return null
+
+    const timeDiffMin = timeDiffMs / 60000
+    return Math.round(expDiff / timeDiffMin)
+  }
+
   return (
     <div className="space-y-3">
       {/* 標題和操作按鈕 */}
@@ -105,30 +122,33 @@ export const ExpHistory = memo(function ExpHistory({
         </div>
       ) : (
         <div className="max-h-40 overflow-y-auto space-y-1">
-          {recentHistory.map((record) => (
-            <div
-              key={record.timestamp}
-              className="flex items-center justify-between p-2 bg-gray-50 dark:bg-gray-800 rounded text-sm"
-            >
-              <span className="text-gray-500 dark:text-gray-400 font-mono text-xs">
-                {formatTime(record.timestamp)}
-              </span>
-              <span className="font-mono font-medium text-gray-900 dark:text-white">
-                {formatExp(record.exp)}
-              </span>
-              <span
-                className={`text-xs font-medium px-1.5 py-0.5 rounded ${
-                  record.confidence >= 80
-                    ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300'
-                    : record.confidence >= 50
-                      ? 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300'
-                      : 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300'
-                }`}
+          {recentHistory.map((record, index) => {
+            const expPerMin = calculateExpPerMin(index)
+            return (
+              <div
+                key={record.timestamp}
+                className="flex items-center justify-between p-2 bg-gray-50 dark:bg-gray-800 rounded text-sm"
               >
-                {record.confidence.toFixed(0)}%
-              </span>
-            </div>
-          ))}
+                <span className="text-gray-500 dark:text-gray-400 font-mono text-xs">
+                  {formatTime(record.timestamp)}
+                </span>
+                <span className="font-mono font-medium text-gray-900 dark:text-white">
+                  {formatExp(record.exp)}
+                </span>
+                <span
+                  className={`text-xs font-medium px-1.5 py-0.5 rounded ${
+                    expPerMin === null
+                      ? 'bg-gray-100 text-gray-500 dark:bg-gray-700 dark:text-gray-400'
+                      : expPerMin >= 0
+                        ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300'
+                        : 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300'
+                  }`}
+                >
+                  {expPerMin === null ? '-' : `${expPerMin >= 0 ? '+' : ''}${formatExp(expPerMin)}/min`}
+                </span>
+              </div>
+            )
+          })}
         </div>
       )}
     </div>

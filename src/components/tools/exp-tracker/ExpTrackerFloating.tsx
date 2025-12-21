@@ -19,6 +19,7 @@ import {
 import { formatExp, getIntervalLabel, calculateExpPerInterval } from '@/lib/exp-calculator'
 import { ExpDisplay } from './ExpDisplay'
 import { ExpStats } from './ExpStats'
+import { ExpHistory } from './ExpHistory'
 import { SaveExpForm } from './SaveExpForm'
 import { SavedRecords } from './SavedRecords'
 import { RegionSelectorModal } from './RegionSelectorModal'
@@ -78,11 +79,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
 
   // 拖曳功能
   const { position, isDragging, setPosition, dragHandlers } = useDraggable({
-    onPositionChange: (pos) => {
-      // 儲存位置
-      const floatingState = getExpTrackerFloatingState()
-      setExpTrackerFloatingState({ ...floatingState, position: pos })
-    },
+    // 儲存邏輯已移至 useEffect 統一處理，避免重複儲存
   })
 
   // 調整大小功能（展開狀態）
@@ -93,8 +90,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     enabled: !isMinimized,
     onSizeChange: (size) => {
       setWindowSize(size)
-      const floatingState = getExpTrackerFloatingState()
-      setExpTrackerFloatingState({ ...floatingState, size })
+      // 儲存邏輯已移至 useEffect 統一處理，避免重複儲存
     },
     onPositionChange: ({ dx, dy }) => {
       // 拖曳左/上邊時調整位置
@@ -110,8 +106,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     enabled: isMinimized,
     onSizeChange: (size) => {
       setMinimizedWidth(size.width)
-      const floatingState = getExpTrackerFloatingState()
-      setExpTrackerFloatingState({ ...floatingState, minimizedWidth: size.width })
+      // 儲存邏輯已移至 useEffect 統一處理，避免重複儲存
     },
     onPositionChange: ({ dx }) => {
       // 拖曳左邊時調整位置
@@ -258,7 +253,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
         tracker.setVideoAndRegion(videoRef.current, pixelRegion)
       }
     }
-  }, [regionSelector.normalizedRegion, regionSelector.getPixelRegion, videoSize, tracker])
+  }, [regionSelector.normalizedRegion, regionSelector.getPixelRegion, videoSize, tracker.setVideoAndRegion])
 
   // 監聽 video 尺寸變化
   useEffect(() => {
@@ -308,6 +303,10 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
       })
       setStream(displayStream)
 
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[EXP] Window selected')
+      }
+
       // 標記需要在 video 載入後開啟區域選擇
       pendingRegionSelectRef.current = true
 
@@ -332,11 +331,29 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
       showToast(t('error.ocrLoading'), 'error')
       return
     }
+    if (process.env.NODE_ENV === 'development') {
+      console.log('[EXP] Tracking started')
+    }
     tracker.start()
   }, [regionSelector.normalizedRegion, ocr.isReady, tracker, showToast, t])
 
+  // 停止追蹤（同時釋放視訊串流，避免干擾 Windows 鍵）
+  const handleStopTracking = useCallback(() => {
+    if (process.env.NODE_ENV === 'development') {
+      console.log('[EXP] Tracking stopped, stream released')
+    }
+    tracker.stop()
+    if (stream) {
+      stream.getTracks().forEach((track) => track.stop())
+      setStream(null)
+    }
+  }, [tracker, stream])
+
   // 從大螢幕 Modal 選擇區域
   const handleRegionSelected = useCallback((region: NormalizedRegion) => {
+    if (process.env.NODE_ENV === 'development') {
+      console.log('[EXP] Region selected:', region)
+    }
     regionSelector.setNormalizedRegion(region)
     showToast(t('regionSelected'), 'success')
   }, [regionSelector, showToast, t])
@@ -594,7 +611,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
                 ) : (
                   <button
                     type="button"
-                    onClick={tracker.stop}
+                    onClick={handleStopTracking}
                     className="flex-1 px-3 py-2 text-sm font-medium bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors"
                   >
                     {t('stopTracking')}
@@ -664,6 +681,14 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
           onSave={handleSaveRecord}
           onUpdate={handleUpdateRecord}
           onCancelEdit={handleCancelEdit}
+          t={t}
+        />
+
+        {/* 歷史記錄 */}
+        <ExpHistory
+          history={tracker.expHistory}
+          onExport={tracker.exportCsv}
+          onClear={tracker.reset}
           t={t}
         />
 
