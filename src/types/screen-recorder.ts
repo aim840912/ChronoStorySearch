@@ -83,6 +83,8 @@ export interface UseScreenRecorderReturn {
   stop: () => void
   /** 下載錄製的影片 */
   download: (filename?: string) => void
+  /** 強制清理資源（回傳是否有 stream 被釋放） */
+  cleanup: () => Promise<boolean>
   /** 錯誤訊息 */
   error: Error | null
 }

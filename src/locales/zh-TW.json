@@ -571,6 +571,7 @@
   "recorder.bufferStatus": "已緩衝",
   "recorder.totalRecorded": "已錄製",
   "recorder.keepLatest": "保留最新",
+  "recorder.resourcesReleased": "螢幕擷取資源已釋放",
   "expTracker.title": "EXP 經驗追蹤器",
   "expTracker.subtitle": "透過 OCR 追蹤練功效率",
   "expTracker.testing": "還在測試當中 可能會有問題",
@@ -657,5 +658,6 @@
   "expTracker.debugRegion": "區域",
   "expTracker.debugPreprocess": "預處理",
   "expTracker.debugMatch": "匹配",
-  "expTracker.debugClose": "關閉詳情"
+  "expTracker.debugClose": "關閉詳情",
+  "expTracker.resourcesReleased": "螢幕擷取資源已釋放"
 }

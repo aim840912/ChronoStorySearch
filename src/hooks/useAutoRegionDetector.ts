@@ -21,6 +21,7 @@ const BOTTOM_SCAN_RATIO = 0.12   // 掃描底部 12%（原 10%）
 const CENTER_SCAN_RATIO = 0.70   // 掃描中間 70% 寬度（原 50%）
 const SCALE = 3                  // 放大倍率
 const MIN_CONFIDENCE = 10        // 最低信心度閾值（降低以適應遊戲字體）
+const MAX_DETECT_TIME = 30000    // 最大偵測時間（30 秒），防止無限掃描影響系統
 
 // 基準解析度的掃描參數（以 640px 寬為基準）
 const BASE_WIDTH = 640
@@ -82,6 +83,7 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
   const [debugMode, setDebugMode] = useState(false)
   const [debugScans, setDebugScans] = useState<ScanDebugInfo[]>([])
   const cancelledRef = useRef(false)
+  const detectStartTimeRef = useRef<number>(0) // 偵測開始時間，用於超時檢查
   const labelWorkerRef = useRef<import('tesseract.js').Worker | null>(null)
   const numberWorkerRef = useRef<import('tesseract.js').Worker | null>(null)
   // Canvas 複用，避免頻繁建立/銷毀
@@ -92,6 +94,11 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
   useEffect(() => {
     debugModeRef.current = debugMode
   }, [debugMode])
+
+  // 檢查是否超時（防止長時間掃描影響系統）
+  const isTimeout = useCallback(() => {
+    return performance.now() - detectStartTimeRef.current > MAX_DETECT_TIME
+  }, [])
 
   // 清除 Debug 記錄
   const clearDebugScans = useCallback(() => {
@@ -245,7 +252,11 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
       }
 
       for (let y = startY; y < endY - regionHeight; y += scanStride) {
-        if (cancelledRef.current) return null
+        // 檢查取消或超時
+        if (cancelledRef.current || isTimeout()) {
+          if (isTimeout()) console.warn('[AutoDetect] findExpLabel 超時')
+          return null
+        }
 
         for (const x of xPositions) {
           const region: Region = {
@@ -501,7 +512,11 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
 
       // 掃描底部區域
       for (let y = startY; y < endY - regionHeight; y += scanStride) {
-        if (cancelledRef.current) return null
+        // 檢查取消或超時
+        if (cancelledRef.current || isTimeout()) {
+          if (isTimeout()) console.warn('[AutoDetect] findExpByPattern 超時')
+          return null
+        }
 
         // 從右到左掃描（EXP 通常在右側）
         for (let x = videoWidth - regionWidth; x >= videoWidth * 0.3; x -= Math.round(40 * resolutionScale)) {
@@ -573,6 +588,7 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
 
       setIsDetecting(true)
       cancelledRef.current = false
+      detectStartTimeRef.current = performance.now() // 設定超時檢查起始時間
 
       try {
         const detectStartTime = performance.now()

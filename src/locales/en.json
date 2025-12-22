@@ -570,6 +570,7 @@
   "recorder.bufferStatus": "Buffered",
   "recorder.totalRecorded": "Total Recorded",
   "recorder.keepLatest": "Keep Latest",
+  "recorder.resourcesReleased": "Screen capture resources released",
   "expTracker.title": "EXP Tracker",
   "expTracker.subtitle": "Track leveling efficiency with OCR",
   "expTracker.testing": "Beta - May have issues",
@@ -656,5 +657,6 @@
   "expTracker.debugRegion": "Region",
   "expTracker.debugPreprocess": "Preprocess",
   "expTracker.debugMatch": "Match",
-  "expTracker.debugClose": "Close Details"
+  "expTracker.debugClose": "Close Details",
+  "expTracker.resourcesReleased": "Screen capture resources released"
 }

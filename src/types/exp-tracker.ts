@@ -65,14 +65,16 @@ export interface SavedExpRecord {
 
 /** 經驗統計 */
 export interface ExpStats {
-  /** 每分鐘經驗值 */
+  /** 每分鐘經驗值（歷史平均） */
   expPerMinute: number
-  /** 每 10 分鐘經驗值 */
+  /** 每 10 分鐘經驗值（歷史平均） */
   expPer10Minutes: number
-  /** 每小時經驗值 */
+  /** 每小時經驗值（歷史平均） */
   expPerHour: number
   /** 預估升級所需時間（秒），null 表示無法計算 */
   timeToLevelUp: number | null
+  /** 即時經驗增量（本次擷取 - 上次擷取），停止打怪時為 0 */
+  instantExpGain: number
 }
 
 /** OCR 辨識結果 */
@@ -226,6 +228,8 @@ export interface ExpDisplayProps {
   currentPercentage: number | null
   levelUpEstimate: LevelUpEstimate | null
   expPerMinute: number
+  /** 即時經驗增量（本次擷取 - 上次擷取） */
+  instantExpGain: number
   isTracking: boolean
   secondsUntilNextCapture: number
   captureInterval: number

@@ -30,6 +30,7 @@ export function useExpTracker(
     expPer10Minutes: 0,
     expPerHour: 0,
     timeToLevelUp: null,
+    instantExpGain: 0,
   })
   const [confidence, setConfidence] = useState(0)
   const [secondsUntilNextCapture, setSecondsUntilNextCapture] = useState(0)
@@ -245,6 +246,7 @@ export function useExpTracker(
       expPer10Minutes: 0,
       expPerHour: 0,
       timeToLevelUp: null,
+      instantExpGain: 0,
     })
 
     // 立即執行一次
@@ -301,6 +303,7 @@ export function useExpTracker(
       expPer10Minutes: 0,
       expPerHour: 0,
       timeToLevelUp: null,
+      instantExpGain: 0,
     })
   }, [stop])
 
