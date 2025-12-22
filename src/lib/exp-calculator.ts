@@ -16,6 +16,7 @@ export function calculateExpStats(history: ExpRecord[]): ExpStats {
     expPer10Minutes: 0,
     expPerHour: 0,
     timeToLevelUp: null,
+    instantExpGain: 0,
   }
 
   if (history.length < 2) {
@@ -43,15 +44,21 @@ export function calculateExpStats(history: ExpRecord[]): ExpStats {
   // 轉換為分鐘
   const timeRangeMinutes = timeRangeMs / (1000 * 60)
 
-  // 計算每分鐘經驗
+  // 計算每分鐘經驗（歷史平均）
   const expPerMinute =
     timeRangeMinutes > 0 ? totalExpGain / timeRangeMinutes : 0
+
+  // 計算即時經驗增量（最後兩筆記錄的差值）
+  // 停止打怪時，這個值會是 0
+  const lastDiff = history[history.length - 1].exp - history[history.length - 2].exp
+  const instantExpGain = Math.max(0, lastDiff)
 
   return {
     expPerMinute: Math.round(expPerMinute),
     expPer10Minutes: Math.round(expPerMinute * 10),
     expPerHour: Math.round(expPerMinute * 60),
     timeToLevelUp: null, // 需要額外資訊計算
+    instantExpGain,
   }
 }
 

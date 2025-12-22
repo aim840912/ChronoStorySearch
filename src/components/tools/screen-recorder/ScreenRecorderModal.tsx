@@ -87,14 +87,20 @@ export function ScreenRecorderModal({
     },
   })
 
-  // 明確的關閉處理（涵蓋所有活躍狀態）
-  const handleClose = useCallback(() => {
+  // 明確的關閉處理（涵蓋所有活躍狀態，使用 async 確保資源完全釋放）
+  const handleClose = useCallback(async () => {
     // 任何活躍狀態都需停止
     if (recorder.status !== 'idle' && recorder.status !== 'stopped') {
       recorder.stop()
     }
+    // 強制清理資源並等待瀏覽器回收
+    const hadStream = await recorder.cleanup()
+    // 顯示資源已釋放提示（只在有 stream 時顯示）
+    if (hadStream) {
+      showToast(t('resourcesReleased'), 'success')
+    }
     onClose()
-  }, [recorder, onClose])
+  }, [recorder, onClose, showToast, t])
 
   // 下載處理
   const handleDownload = useCallback(() => {

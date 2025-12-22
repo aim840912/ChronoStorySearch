@@ -2,7 +2,7 @@
 
 import { memo } from 'react'
 import type { ExpDisplayProps } from '@/types/exp-tracker'
-import { formatExp, getIntervalLabel, calculateExpPerInterval } from '@/lib/exp-calculator'
+import { formatExp, getIntervalLabel } from '@/lib/exp-calculator'
 
 /**
  * 格式化時間（分鐘轉為可讀格式）
@@ -33,47 +33,46 @@ export const ExpDisplay = memo(function ExpDisplay({
   currentExp,
   currentPercentage,
   levelUpEstimate,
-  expPerMinute,
+  instantExpGain,
   isTracking,
   secondsUntilNextCapture,
   captureInterval,
   t,
 }: ExpDisplayProps) {
-  // 計算每間隔經驗和動態標籤
-  const expPerInterval = calculateExpPerInterval(expPerMinute, captureInterval)
+  // 動態標籤（如 "30s", "1min"）
   const intervalLabel = getIntervalLabel(captureInterval)
   return (
     <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 min-[280px]:grid-cols-2 gap-3">
         {/* 當前經驗值 */}
-        <div>
+        <div className="min-w-0">
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">
             {t('currentExp')}
           </p>
-          <p className="text-2xl font-bold text-gray-900 dark:text-white font-mono">
+          <p className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white font-mono truncate">
             {currentExp !== null ? formatExp(currentExp) : '--'}
-            {currentPercentage != null && (
-              <span className="text-sm text-purple-500 ml-2">
-                [{currentPercentage.toFixed(2)}%]
-              </span>
-            )}
           </p>
+          {currentPercentage != null && (
+            <p className="text-sm text-purple-500">
+              [{currentPercentage.toFixed(2)}%]
+            </p>
+          )}
         </div>
 
-        {/* 每間隔經驗 */}
-        <div>
+        {/* 每間隔經驗（即時差值） */}
+        <div className="min-w-0">
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">
             EXP/{intervalLabel}
           </p>
           <p
-            className={`text-2xl font-bold font-mono ${
-              expPerInterval > 0
+            className={`text-xl sm:text-2xl font-bold font-mono truncate ${
+              instantExpGain > 0
                 ? 'text-green-500'
                 : 'text-gray-900 dark:text-white'
             }`}
           >
-            {expPerInterval > 0 ? (
-              <>+{formatExp(expPerInterval)}</>
+            {instantExpGain > 0 ? (
+              <>+{formatExp(instantExpGain)}</>
             ) : (
               '--'
             )}

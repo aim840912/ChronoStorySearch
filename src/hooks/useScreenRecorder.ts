@@ -62,8 +62,8 @@ export function useScreenRecorder(
     !!navigator.mediaDevices?.getDisplayMedia &&
     typeof MediaRecorder !== 'undefined'
 
-  // 清理資源
-  const cleanup = useCallback(() => {
+  // 清理資源（async 以便添加延遲讓瀏覽器完成資源回收）
+  const cleanup = useCallback(async (): Promise<boolean> => {
     if (timerRef.current) {
       clearInterval(timerRef.current)
       timerRef.current = null
@@ -76,6 +76,7 @@ export function useScreenRecorder(
       mediaRecorderRef.current.onerror = null
     }
 
+    const hadStream = !!streamRef.current
     if (streamRef.current) {
       console.log('[ScreenRecorder] 正在釋放 MediaStream', {
         tracks: streamRef.current.getTracks().length,
@@ -96,6 +97,11 @@ export function useScreenRecorder(
     pauseStartTimeRef.current = null
     bufferDurationRef.current = 0
     initSegmentRef.current = null
+
+    // 微延遲讓瀏覽器完成資源回收（避免 Windows DWM hook 殘留）
+    await new Promise((resolve) => setTimeout(resolve, 50))
+
+    return hadStream
   }, [])
 
   // 開始錄影
@@ -438,6 +444,20 @@ export function useScreenRecorder(
     }
   }, [status, duration, recordingMode])
 
+  // 頁面卸載時強制釋放 MediaStream（防止 Windows DWM hook 殘留）
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      if (streamRef.current) {
+        streamRef.current.getTracks().forEach((track) => {
+          track.onended = null
+          track.stop()
+        })
+      }
+    }
+    window.addEventListener('beforeunload', handleBeforeUnload)
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload)
+  }, [])
+
   // 組件卸載時清理
   useEffect(() => {
     return () => {
@@ -456,6 +476,7 @@ export function useScreenRecorder(
     resume,
     stop,
     download,
+    cleanup,
     error,
   }
 }

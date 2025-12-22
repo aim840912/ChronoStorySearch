@@ -16,7 +16,7 @@ import {
   getExpTrackerFloatingState,
   setExpTrackerFloatingState,
 } from '@/lib/storage'
-import { formatExp, getIntervalLabel, calculateExpPerInterval } from '@/lib/exp-calculator'
+import { formatExp, getIntervalLabel } from '@/lib/exp-calculator'
 import { ExpDisplay } from './ExpDisplay'
 import { ExpStats } from './ExpStats'
 import { ExpHistory } from './ExpHistory'
@@ -530,8 +530,8 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     setEditingRecord(null)
   }, [])
 
-  // 關閉視窗（明確清理所有資源）
-  const handleClose = useCallback(() => {
+  // 關閉視窗（明確清理所有資源，使用 async 確保資源完全釋放）
+  const handleClose = useCallback(async () => {
     // 取消 pending 的 requestAnimationFrame
     if (rafIdRef.current) {
       cancelAnimationFrame(rafIdRef.current)
@@ -540,6 +540,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     // 停止追蹤
     tracker.stop()
     // 釋放 MediaStream（先移除 onended 處理器避免閉包持有引用）
+    const hadStream = !!streamRef.current
     if (streamRef.current) {
       streamRef.current.getTracks().forEach((track) => {
         track.onended = null
@@ -554,9 +555,15 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     // 終止 Tesseract Workers（避免資源洩漏導致系統延遲）
     ocr.terminateWorker()
     autoDetector.cleanup()
+    // 微延遲讓瀏覽器有時間完成資源回收（避免 Windows DWM hook 殘留）
+    await new Promise((resolve) => setTimeout(resolve, 50))
+    // 顯示資源已釋放提示（只在有 stream 時顯示）
+    if (hadStream) {
+      showToast(t('resourcesReleased'), 'success')
+    }
     // 呼叫父層的 onClose
     onClose()
-  }, [tracker, onClose, ocr, autoDetector])
+  }, [tracker, onClose, ocr, autoDetector, showToast, t])
 
   // 同步 refs（避免 stale closure 問題）
   useEffect(() => {
@@ -566,6 +573,20 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
   useEffect(() => {
     trackerRef.current = tracker
   }, [tracker])
+
+  // 頁面卸載時強制釋放 MediaStream（防止 Windows DWM hook 殘留）
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      if (streamRef.current) {
+        streamRef.current.getTracks().forEach((track) => {
+          track.onended = null
+          track.stop()
+        })
+      }
+    }
+    window.addEventListener('beforeunload', handleBeforeUnload)
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload)
+  }, [])
 
   // 元件卸載時確保清理所有資源（使用 ref 確保清理最新值）
   useEffect(() => {
@@ -621,8 +642,8 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
           <div className="flex items-center gap-2 overflow-hidden flex-1">
             <span className="text-sm font-medium shrink-0">EXP</span>
             <span className="text-sm font-mono truncate">
-              {tracker.stats.expPerMinute > 0
-                ? `+${formatExp(calculateExpPerInterval(tracker.stats.expPerMinute, captureInterval))}/${getIntervalLabel(captureInterval)}`
+              {tracker.stats.instantExpGain > 0
+                ? `+${formatExp(tracker.stats.instantExpGain)}/${getIntervalLabel(captureInterval)}`
                 : '--'}
             </span>
           </div>
@@ -877,6 +898,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
           currentPercentage={tracker.currentPercentage}
           levelUpEstimate={tracker.levelUpEstimate}
           expPerMinute={tracker.stats.expPerMinute}
+          instantExpGain={tracker.stats.instantExpGain}
           isTracking={tracker.isTracking}
           secondsUntilNextCapture={tracker.secondsUntilNextCapture}
           captureInterval={captureInterval}
