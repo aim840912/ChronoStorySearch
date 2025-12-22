@@ -291,6 +291,24 @@ export interface AutoDetectResult {
   text: string
 }
 
+/** Debug 掃描資訊 */
+export interface ScanDebugInfo {
+  /** 掃描時間戳 */
+  timestamp: number
+  /** 掃描區域 */
+  region: Region
+  /** 擷取的圖片（base64 data URL） */
+  capturedImage: string
+  /** OCR 辨識文字 */
+  ocrText: string
+  /** OCR 信心度 */
+  confidence: number
+  /** 是否符合關鍵字 */
+  matched: boolean
+  /** 預處理模式名稱 */
+  preprocessMode?: string
+}
+
 /** useAutoRegionDetector Hook 回傳值 */
 export interface UseAutoRegionDetectorReturn {
   /** 是否正在偵測 */
@@ -301,4 +319,12 @@ export interface UseAutoRegionDetectorReturn {
   cancel: () => void
   /** 清理 Workers 和 Canvas（釋放資源） */
   cleanup: () => void
+  /** Debug 模式是否啟用 */
+  debugMode: boolean
+  /** 設定 Debug 模式 */
+  setDebugMode: (enabled: boolean) => void
+  /** Debug 掃描記錄 */
+  debugScans: ScanDebugInfo[]
+  /** 清除 Debug 記錄 */
+  clearDebugScans: () => void
 }

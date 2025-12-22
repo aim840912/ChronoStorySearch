@@ -647,5 +647,14 @@
   "expTracker.error.noStream": "Please select game window first",
   "expTracker.remainingExp": "Remaining EXP",
   "expTracker.hours": "hr",
-  "expTracker.days": "day"
+  "expTracker.days": "day",
+  "expTracker.debugMode": "Debug Mode",
+  "expTracker.debugScansCount": "scans",
+  "expTracker.debugScans": "Scan Results",
+  "expTracker.debugClear": "Clear",
+  "expTracker.debugEmpty": "No scan records. Start auto-detect to capture.",
+  "expTracker.debugRegion": "Region",
+  "expTracker.debugPreprocess": "Preprocess",
+  "expTracker.debugMatch": "Match",
+  "expTracker.debugClose": "Close Details"
 }

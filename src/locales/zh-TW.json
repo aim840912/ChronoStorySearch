@@ -648,5 +648,14 @@
   "expTracker.error.noStream": "請先選擇遊戲視窗",
   "expTracker.remainingExp": "剩餘經驗",
   "expTracker.hours": "小時",
-  "expTracker.days": "天"
+  "expTracker.days": "天",
+  "expTracker.debugMode": "Debug 模式",
+  "expTracker.debugScansCount": "筆記錄",
+  "expTracker.debugScans": "掃描記錄",
+  "expTracker.debugClear": "清除",
+  "expTracker.debugEmpty": "尚無掃描記錄，請啟動自動偵測",
+  "expTracker.debugRegion": "區域",
+  "expTracker.debugPreprocess": "預處理",
+  "expTracker.debugMatch": "匹配",
+  "expTracker.debugClose": "關閉詳情"
 }
