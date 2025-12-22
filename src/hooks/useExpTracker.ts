@@ -255,6 +255,10 @@ export function useExpTracker(
       clearInterval(countdownIntervalRef.current)
       countdownIntervalRef.current = null
     }
+    // 清理 video srcObject 引用（讓 MediaStream 可以被正確釋放）
+    if (videoRef.current) {
+      videoRef.current.srcObject = null
+    }
   }, [])
 
   // 重置記錄

@@ -47,8 +47,15 @@ export const RegionSelectorModal = memo(function RegionSelectorModal({
 
   // 設定視訊串流到 video 元素
   useEffect(() => {
-    if (videoRef.current && stream && isOpen) {
-      videoRef.current.srcObject = stream
+    const video = videoRef.current
+    if (video && stream && isOpen) {
+      video.srcObject = stream
+    }
+    return () => {
+      // 清理 srcObject 引用，讓 stream 可以被正確釋放
+      if (video) {
+        video.srcObject = null
+      }
     }
   }, [stream, isOpen])
 

@@ -246,7 +246,7 @@ export function useOcr(): UseOcrReturn {
     [initWorker, preprocessImage, extractLargestNumber, extractPercentage]
   )
 
-  // 組件掛載時初始化
+  // 組件掛載時初始化（只在掛載/卸載時執行）
   useEffect(() => {
     initWorker()
 
@@ -256,7 +256,8 @@ export function useOcr(): UseOcrReturn {
         workerRef.current = null
       }
     }
-  }, [initWorker])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []) // 空依賴，確保只在掛載時初始化、卸載時清理
 
   return {
     isLoading,
