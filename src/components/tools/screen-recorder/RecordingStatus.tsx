@@ -5,12 +5,15 @@ import type { RecordingStatusProps } from '@/types/screen-recorder'
 
 /**
  * 錄影狀態顯示
- * 顯示錄影中狀態、倒數計時、進度條
+ * 顯示錄影中狀態、倒數計時/緩衝狀態、進度條
  */
 export const RecordingStatus = memo(function RecordingStatus({
   status,
   elapsedTime,
   totalDuration,
+  recordingMode,
+  bufferDuration,
+  loopDuration,
   t,
 }: RecordingStatusProps) {
   // 格式化時間為 MM:SS
@@ -22,7 +25,12 @@ export const RecordingStatus = memo(function RecordingStatus({
 
   const totalSeconds = totalDuration * 60
   const remainingSeconds = Math.max(0, totalSeconds - elapsedTime)
-  const progress = (elapsedTime / totalSeconds) * 100
+
+  // 固定模式：進度 = 已錄時間 / 總時長
+  // 循環模式：進度 = 緩衝時長 / 保留時長
+  const progress = recordingMode === 'fixed'
+    ? (elapsedTime / totalSeconds) * 100
+    : (bufferDuration / loopDuration) * 100
 
   // 根據狀態決定顯示的樣式
   const getStatusColor = () => {
@@ -74,12 +82,22 @@ export const RecordingStatus = memo(function RecordingStatus({
           </span>
         </div>
 
-        {/* 剩餘時間 */}
-        {(status === 'recording' || status === 'paused') && (
+        {/* 固定模式：剩餘時間 */}
+        {recordingMode === 'fixed' && (status === 'recording' || status === 'paused') && (
           <div className="text-sm text-gray-600 dark:text-gray-400">
             <span className="mr-1">{t('timeRemaining')}:</span>
             <span className="font-mono font-bold text-gray-900 dark:text-white">
               {formatTime(remainingSeconds)}
+            </span>
+          </div>
+        )}
+
+        {/* 循環模式：緩衝狀態 */}
+        {recordingMode === 'loop' && (status === 'recording' || status === 'paused') && (
+          <div className="text-sm text-gray-600 dark:text-gray-400">
+            <span className="mr-1">{t('bufferStatus')}:</span>
+            <span className="font-mono font-bold text-gray-900 dark:text-white">
+              {formatTime(bufferDuration)} / {formatTime(loopDuration)}
             </span>
           </div>
         )}
@@ -95,10 +113,21 @@ export const RecordingStatus = memo(function RecordingStatus({
             ></div>
           </div>
           <div className="flex justify-between mt-1 text-xs text-gray-500 dark:text-gray-400">
-            <span>
-              {t('timeElapsed')}: {formatTime(elapsedTime)}
-            </span>
-            <span>{formatTime(totalSeconds)}</span>
+            {recordingMode === 'fixed' ? (
+              <>
+                <span>
+                  {t('timeElapsed')}: {formatTime(elapsedTime)}
+                </span>
+                <span>{formatTime(totalSeconds)}</span>
+              </>
+            ) : (
+              <>
+                <span>
+                  {t('totalRecorded')}: {formatTime(elapsedTime)}
+                </span>
+                <span>{t('keepLatest')}: {formatTime(loopDuration)}</span>
+              </>
+            )}
           </div>
         </div>
       )}

@@ -14,14 +14,21 @@ export type RecordingStatus =
 /** 影片格式 */
 export type VideoFormat = 'mp4'
 
+/** 錄影模式 */
+export type RecordingMode = 'fixed' | 'loop'
+
 /** 錄影設定 */
 export interface ScreenRecorderSettings {
-  /** 錄影時長（分鐘），預設 2，範圍 1-3 */
+  /** 錄影時長（分鐘），預設 2，範圍 1-3（固定模式用） */
   duration: number
   /** 是否錄製音訊 */
   includeAudio: boolean
   /** 影片格式 */
   videoFormat: VideoFormat
+  /** 錄影模式：fixed=固定時長，loop=循環錄影 */
+  recordingMode: RecordingMode
+  /** 循環模式的保留時長（秒），預設 120（2 分鐘） */
+  loopDuration: number
 }
 
 /** 錄影結果 */
@@ -38,12 +45,16 @@ export interface RecordingResult {
 
 /** useScreenRecorder Hook 選項 */
 export interface UseScreenRecorderOptions {
-  /** 錄影時長（分鐘） */
+  /** 錄影時長（分鐘）- 固定模式用 */
   duration: number
   /** 是否錄製音訊 */
   includeAudio: boolean
   /** 影片格式 */
   videoFormat: VideoFormat
+  /** 錄影模式 */
+  recordingMode: RecordingMode
+  /** 循環模式的保留時長（秒） */
+  loopDuration: number
   /** 錄影完成回調 */
   onComplete?: (result: RecordingResult) => void
   /** 錯誤回調 */
@@ -56,6 +67,8 @@ export interface UseScreenRecorderReturn {
   status: RecordingStatus
   /** 已錄製時間（秒） */
   elapsedTime: number
+  /** 緩衝區時長（秒）- 循環模式用 */
+  bufferDuration: number
   /** 瀏覽器是否支援錄影功能 */
   isSupported: boolean
   /** 錄製的影片 Blob（錄影完成後可用） */
@@ -91,6 +104,9 @@ export interface RecordingStatusProps {
   status: RecordingStatus
   elapsedTime: number
   totalDuration: number
+  recordingMode: RecordingMode
+  bufferDuration: number
+  loopDuration: number
   t: (key: string) => string
 }
 
@@ -99,9 +115,13 @@ export interface RecordingSettingsProps {
   duration: number
   includeAudio: boolean
   videoFormat: VideoFormat
+  recordingMode: RecordingMode
+  loopDuration: number
   onDurationChange: (minutes: number) => void
   onAudioToggle: (include: boolean) => void
   onFormatChange: (format: VideoFormat) => void
+  onModeChange: (mode: RecordingMode) => void
+  onLoopDurationChange: (seconds: number) => void
   disabled: boolean
   t: (key: string) => string
 }
