@@ -63,6 +63,8 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
 
   const videoRef = useRef<HTMLVideoElement>(null)
   const pendingRegionSelectRef = useRef(false)
+  const streamRef = useRef<MediaStream | null>(null)
+  const trackerRef = useRef<ReturnType<typeof useExpTracker> | null>(null)
 
   // Hooks
   const ocr = useOcr()
@@ -218,9 +220,11 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
   }, [ocr.isReady, ocr.recognize, tracker])
 
   // 設定視訊串流到 video 元素，並確保播放
+  // 注意：當 RegionSelectorModal 開啟時，由 modal 處理 srcObject，避免競爭條件
   useEffect(() => {
     const video = videoRef.current
-    if (!video || !stream) return
+    // 當 modal 開啟時，不設定 srcObject（由 modal 處理）
+    if (!video || !stream || isRegionModalOpen) return
 
     video.srcObject = stream
 
@@ -260,8 +264,12 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
 
     return () => {
       video.removeEventListener('canplay', handleCanPlay)
+      // 清理 srcObject 引用
+      if (video) {
+        video.srcObject = null
+      }
     }
-  }, [stream])
+  }, [stream, isRegionModalOpen])
 
   // 設定 Video 和 Region
   useEffect(() => {
@@ -390,14 +398,19 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
 
       displayStream.getVideoTracks()[0].onended = () => {
         setStream(null)
-        tracker.stop()
+        trackerRef.current?.stop()  // 使用 ref 避免 stale closure
       }
     } catch (error) {
+      // 確保清理任何可能的殘留 stream
+      if (streamRef.current) {
+        streamRef.current.getTracks().forEach((track) => track.stop())
+        setStream(null)
+      }
       if ((error as Error).name !== 'NotAllowedError') {
         showToast(t('error.notSupported'), 'error')
       }
     }
-  }, [showToast, t, tracker])
+  }, [showToast, t])
 
   // 開始追蹤
   const handleStartTracking = useCallback(() => {
@@ -421,11 +434,12 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
       console.log('[EXP] Tracking stopped, stream released')
     }
     tracker.stop()
-    if (stream) {
-      stream.getTracks().forEach((track) => track.stop())
+    // 使用 ref 確保獲取最新的 stream 值（避免 stale closure）
+    if (streamRef.current) {
+      streamRef.current.getTracks().forEach((track) => track.stop())
       setStream(null)
     }
-  }, [tracker, stream])
+  }, [tracker])
 
   // 從大螢幕 Modal 選擇區域
   const handleRegionSelected = useCallback((region: NormalizedRegion) => {
@@ -490,14 +504,45 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     setEditingRecord(null)
   }, [])
 
-  // 清理
+  // 關閉視窗（明確清理所有資源）
+  const handleClose = useCallback(() => {
+    // 停止追蹤
+    tracker.stop()
+    // 釋放 MediaStream
+    if (streamRef.current) {
+      streamRef.current.getTracks().forEach((track) => track.stop())
+      setStream(null)
+    }
+    // 清理 video srcObject
+    if (videoRef.current) {
+      videoRef.current.srcObject = null
+    }
+    // 呼叫父層的 onClose
+    onClose()
+  }, [tracker, onClose])
+
+  // 同步 refs（避免 stale closure 問題）
+  useEffect(() => {
+    streamRef.current = stream
+  }, [stream])
+
+  useEffect(() => {
+    trackerRef.current = tracker
+  }, [tracker])
+
+  // 元件卸載時確保清理 MediaStream（使用 ref 確保清理最新值）
   useEffect(() => {
     return () => {
-      if (stream) {
-        stream.getTracks().forEach((track) => track.stop())
+      if (streamRef.current) {
+        streamRef.current.getTracks().forEach((track) => track.stop())
       }
+      if (videoRef.current) {
+        videoRef.current.srcObject = null
+      }
+      trackerRef.current?.stop()
     }
-  }, [stream])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []) // 空依賴，只在卸載時執行
 
   // 瀏覽器支援檢查
   const isSupported =
@@ -559,7 +604,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
             </button>
             <button
               type="button"
-              onClick={onClose}
+              onClick={handleClose}
               className="p-1 hover:bg-purple-600 rounded"
               aria-label={t('close')}
             >
@@ -628,7 +673,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
           </button>
           <button
             type="button"
-            onClick={onClose}
+            onClick={handleClose}
             className="p-1 hover:bg-purple-600 rounded"
             aria-label={t('close')}
           >
@@ -776,19 +821,19 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
           t={t}
         />
 
-        {/* 歷史記錄 */}
-        <ExpHistory
-          history={tracker.expHistory}
-          onExport={tracker.exportCsv}
-          onClear={tracker.reset}
-          t={t}
-        />
-
         {/* 已儲存記錄 */}
         <SavedRecords
           records={savedRecords}
           onEdit={handleEditRecord}
           onDelete={handleDeleteRecord}
+          t={t}
+        />
+
+        {/* 歷史記錄 */}
+        <ExpHistory
+          history={tracker.expHistory}
+          onExport={tracker.exportCsv}
+          onClear={tracker.reset}
           t={t}
         />
       </div>

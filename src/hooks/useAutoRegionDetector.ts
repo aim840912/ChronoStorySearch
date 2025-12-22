@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback, useRef } from 'react'
+import { useState, useCallback, useRef, useEffect } from 'react'
 import type {
   Region,
   AutoDetectResult,
@@ -423,6 +423,20 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
   // 取消偵測
   const cancel = useCallback(() => {
     cancelledRef.current = true
+  }, [])
+
+  // 清理 Tesseract workers（避免記憶體洩漏）
+  useEffect(() => {
+    return () => {
+      if (labelWorkerRef.current) {
+        labelWorkerRef.current.terminate()
+        labelWorkerRef.current = null
+      }
+      if (numberWorkerRef.current) {
+        numberWorkerRef.current.terminate()
+        numberWorkerRef.current = null
+      }
+    }
   }, [])
 
   return {
