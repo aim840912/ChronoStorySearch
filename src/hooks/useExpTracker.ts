@@ -6,7 +6,7 @@ import type {
   ExpStats,
   UseExpTrackerOptions,
   UseExpTrackerReturn,
-  Region,
+  NormalizedRegion,
 } from '@/types/exp-tracker'
 import { calculateExpStats, downloadCsv } from '@/lib/exp-calculator'
 import { getExpTrackerState, setExpTrackerState } from '@/lib/storage'
@@ -58,7 +58,10 @@ export function useExpTracker(
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
   const countdownIntervalRef = useRef<NodeJS.Timeout | null>(null)
   const videoRef = useRef<HTMLVideoElement | null>(null)
-  const regionRef = useRef<Region | null>(null)
+  // 使用正規化座標（0-1 比例），確保視窗大小變化時仍能正確追蹤
+  const normalizedRegionRef = useRef<NormalizedRegion | null>(null)
+  // 追蹤最新的視訊尺寸，用於動態計算像素座標
+  const videoSizeRef = useRef<{ width: number; height: number }>({ width: 0, height: 0 })
   const ocrFnRef = useRef<
     ((canvas: HTMLCanvasElement) => Promise<{ expValue: number | null; confidence: number; percentage: number | null }>) | null
   >(null)
@@ -113,21 +116,37 @@ export function useExpTracker(
     []
   )
 
-  // 設定 Video 和 Region 引用
+  // 設定 Video 和正規化區域（追蹤開始時呼叫）
   const setVideoAndRegion = useCallback(
-    (video: HTMLVideoElement, region: Region) => {
+    (video: HTMLVideoElement, normalizedRegion: NormalizedRegion, videoSize: { width: number; height: number }) => {
       videoRef.current = video
-      regionRef.current = region
+      normalizedRegionRef.current = normalizedRegion
+      videoSizeRef.current = videoSize
     },
     []
   )
 
+  // 更新視訊尺寸（視窗大小變化時呼叫，動態適應新尺寸）
+  const updateVideoSize = useCallback((size: { width: number; height: number }) => {
+    videoSizeRef.current = size
+  }, [])
+
   // 執行一次擷取和辨識
   const captureAndRecognize = useCallback(async () => {
-    if (!videoRef.current || !regionRef.current || !ocrFnRef.current) return
-
     const video = videoRef.current
-    const region = regionRef.current
+    const normalized = normalizedRegionRef.current
+    const size = videoSizeRef.current
+
+    if (!video || !normalized || !ocrFnRef.current || size.width === 0) return
+
+    // 動態計算像素座標（每次擷取時根據最新的視訊尺寸計算）
+    // 這確保了視窗大小變化後仍能正確追蹤
+    const region = {
+      x: normalized.x * size.width,
+      y: normalized.y * size.height,
+      width: normalized.width * size.width,
+      height: normalized.height * size.height,
+    }
 
     // 放大倍率（提升 OCR 辨識率）
     // Tesseract.js 在較大的圖像上表現更好
@@ -142,17 +161,15 @@ export function useExpTracker(
     // 調試日誌 - 包含 video 播放狀態
     if (process.env.NODE_ENV === 'development') {
       console.log('[EXP] captureAndRecognize:', {
+        normalized,
         region,
         canvasSize: { width: canvas.width, height: canvas.height },
-        videoSize: { width: video.videoWidth, height: video.videoHeight },
+        videoSize: size,
         videoPaused: video.paused,
         videoReadyState: video.readyState,
         videoCurrentTime: video.currentTime,
       })
     }
-
-    // region 已經是實際影片座標（由 ExpTrackerFloating 使用 videoWidth/videoHeight 計算）
-    // 不需要額外的縮放轉換
 
     // 使用較好的圖像縮放演算法
     ctx.imageSmoothingEnabled = true
@@ -369,9 +386,11 @@ export function useExpTracker(
     // 內部使用的設定函數
     setOcrFunction,
     setVideoAndRegion,
+    updateVideoSize,
   } as UseExpTrackerReturn & {
     setOcrFunction: typeof setOcrFunction
     setVideoAndRegion: typeof setVideoAndRegion
+    updateVideoSize: typeof updateVideoSize
     setInitialExp: typeof setInitialExp
     currentPercentage: typeof currentPercentage
     levelUpEstimate: typeof levelUpEstimate

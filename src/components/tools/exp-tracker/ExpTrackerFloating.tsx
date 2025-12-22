@@ -78,7 +78,12 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     setOcrFunction: (
       fn: (canvas: HTMLCanvasElement) => Promise<{ expValue: number | null; confidence: number; percentage: number | null }>
     ) => void
-    setVideoAndRegion: (video: HTMLVideoElement, region: { x: number; y: number; width: number; height: number }) => void
+    setVideoAndRegion: (
+      video: HTMLVideoElement,
+      normalizedRegion: NormalizedRegion,
+      videoSize: { width: number; height: number }
+    ) => void
+    updateVideoSize: (size: { width: number; height: number }) => void
     setInitialExp: (exp: number) => void
   }
 
@@ -272,22 +277,30 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     }
   }, [stream, isRegionModalOpen])
 
-  // 設定 Video 和 Region
+  // 設定 Video 和正規化區域（傳遞正規化座標，讓追蹤器動態計算像素座標）
   useEffect(() => {
     if (videoRef.current && regionSelector.normalizedRegion && videoSize.width > 0) {
-      const pixelRegion = regionSelector.getPixelRegion(videoSize.width, videoSize.height)
-      if (pixelRegion) {
-        if (process.env.NODE_ENV === 'development') {
-          console.log('[EXP] Setting region:', {
-            normalizedRegion: regionSelector.normalizedRegion,
-            pixelRegion,
-            videoSize,
-          })
-        }
-        tracker.setVideoAndRegion(videoRef.current, pixelRegion)
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[EXP] Setting region:', {
+          normalizedRegion: regionSelector.normalizedRegion,
+          videoSize,
+        })
       }
+      // 傳遞正規化座標和當前視訊尺寸，讓追蹤器能夠動態適應視窗大小變化
+      tracker.setVideoAndRegion(videoRef.current, regionSelector.normalizedRegion, videoSize)
     }
-  }, [regionSelector.normalizedRegion, regionSelector.getPixelRegion, videoSize, tracker.setVideoAndRegion])
+  }, [regionSelector.normalizedRegion, videoSize, tracker.setVideoAndRegion])
+
+  // 追蹤期間視訊尺寸變化時，更新追蹤器的尺寸資訊
+  // 這確保了調整遊戲視窗大小後，追蹤仍能正確運作
+  useEffect(() => {
+    if (tracker.isTracking && videoSize.width > 0) {
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[EXP] Updating video size during tracking:', videoSize)
+      }
+      tracker.updateVideoSize(videoSize)
+    }
+  }, [videoSize, tracker.isTracking, tracker.updateVideoSize])
 
   // 監聽 video 尺寸變化
   useEffect(() => {
@@ -333,8 +346,11 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
   }, [stream])
 
   // 自動偵測 EXP 區域
+  // 注意：使用 video.videoWidth/videoHeight 而非 videoSize state
+  // 避免 React state 批次更新造成的閉包陷阱（stale closure）
   const handleAutoDetect = useCallback(async () => {
-    if (!videoRef.current || videoSize.width === 0) return
+    const video = videoRef.current
+    if (!video || video.videoWidth === 0) return
 
     setIsAutoDetecting(true)
     const MAX_RETRIES = 3
@@ -345,15 +361,16 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
           console.log(`[EXP] Auto-detect attempt ${attempt}/${MAX_RETRIES}`)
         }
 
-        const result = await autoDetector.detect(videoRef.current)
+        const result = await autoDetector.detect(video)
 
         if (result && result.region) {
           // 成功：轉換為正規化座標並設定
+          // 使用 video.videoWidth/videoHeight 確保取得最新值
           const normalized = {
-            x: result.region.x / videoSize.width,
-            y: result.region.y / videoSize.height,
-            width: result.region.width / videoSize.width,
-            height: result.region.height / videoSize.height,
+            x: result.region.x / video.videoWidth,
+            y: result.region.y / video.videoHeight,
+            width: result.region.width / video.videoWidth,
+            height: result.region.height / video.videoHeight,
           }
 
           if (process.env.NODE_ENV === 'development') {
@@ -380,7 +397,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     } finally {
       setIsAutoDetecting(false)
     }
-  }, [videoSize, autoDetector, regionSelector, showToast, t])
+  }, [autoDetector, regionSelector, showToast, t])
 
   // 選擇遊戲視窗
   const selectWindow = useCallback(async () => {
