@@ -23,6 +23,7 @@ import { ExpHistory } from './ExpHistory'
 import { SaveExpForm } from './SaveExpForm'
 import { SavedRecords } from './SavedRecords'
 import { RegionSelectorModal } from './RegionSelectorModal'
+import { DebugScanPanel } from './DebugScanPanel'
 import type { SavedExpRecord, NormalizedRegion } from '@/types/exp-tracker'
 
 interface ExpTrackerFloatingProps {
@@ -814,7 +815,36 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
                 )}
               </div>
             )}
+
+            {/* Debug 模式開關（僅開發環境） */}
+            {process.env.NODE_ENV === 'development' && stream && (
+              <div className="flex items-center justify-between pt-2 border-t border-gray-200 dark:border-gray-700">
+                <label className="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-400 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={autoDetector.debugMode}
+                    onChange={(e) => autoDetector.setDebugMode(e.target.checked)}
+                    className="w-3.5 h-3.5 rounded border-gray-300 text-purple-600 focus:ring-purple-500"
+                  />
+                  {t('debugMode') || 'Debug 模式'}
+                </label>
+                {autoDetector.debugMode && autoDetector.debugScans.length > 0 && (
+                  <span className="text-xs text-gray-500">
+                    {autoDetector.debugScans.length} {t('debugScansCount') || '筆記錄'}
+                  </span>
+                )}
+              </div>
+            )}
           </div>
+        )}
+
+        {/* Debug 面板（僅開發環境） */}
+        {process.env.NODE_ENV === 'development' && autoDetector.debugMode && autoDetector.debugScans.length > 0 && (
+          <DebugScanPanel
+            scans={autoDetector.debugScans}
+            onClear={autoDetector.clearDebugScans}
+            t={contextT}
+          />
         )}
 
         {/* 擷取間隔設定 */}

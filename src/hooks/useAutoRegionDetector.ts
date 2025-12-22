@@ -5,32 +5,67 @@ import type {
   Region,
   AutoDetectResult,
   UseAutoRegionDetectorReturn,
+  ScanDebugInfo,
 } from '@/types/exp-tracker'
 
 /**
  * 自動偵測 EXP 區域 Hook
- * 兩階段策略：
- * 1. 掃描找 "EXP" 標籤
- * 2. 從 EXP 位置往右延伸找數字
+ * 多策略偵測：
+ * 1. 掃描找 "EXP" 標籤（含 OCR 誤讀容錯）
+ * 2. 備用：尋找「大數字 + 百分比」模式
+ * 3. 從找到的位置往右延伸找數字
  */
 
-// 掃描參數（根據遊戲截圖優化：EXP 在底部 5-8%，中間 50-75% 位置）
-const BOTTOM_SCAN_RATIO = 0.10   // 掃描底部 10%（實際 EXP 在 5-8%）
-const CENTER_SCAN_RATIO = 0.50   // 只掃描中間 50% 寬度
+// 掃描參數（擴大範圍以提高偵測率）
+const BOTTOM_SCAN_RATIO = 0.12   // 掃描底部 12%（原 10%）
+const CENTER_SCAN_RATIO = 0.70   // 掃描中間 70% 寬度（原 50%）
 const SCALE = 3                  // 放大倍率
 const MIN_CONFIDENCE = 10        // 最低信心度閾值（降低以適應遊戲字體）
 
 // 基準解析度的掃描參數（以 640px 寬為基準）
 const BASE_WIDTH = 640
-const BASE_REGION_HEIGHT = 30     // 條帶高度
-const BASE_SCAN_STRIDE = 15       // 掃描間隔（原本 8，增大減少掃描次數）
-const BASE_EXP_REGION_WIDTH = 120 // EXP 標籤區域寬度
-const BASE_X_STEP = 60            // X 方向掃描步進（原本 40，增大減少掃描次數）
+const BASE_REGION_HEIGHT = 35     // 條帶高度（原 30，加高）
+const BASE_SCAN_STRIDE = 12       // 掃描間隔（原 15，縮小提高精度）
+const BASE_EXP_REGION_WIDTH = 150 // EXP 標籤區域寬度（原 120，加寬）
+const BASE_X_STEP = 50            // X 方向掃描步進（原 60，縮小提高精度）
+
+// OCR 關鍵字容錯（常見誤讀變體，包含全形和相似字元）
+const EXP_KEYWORDS = [
+  'EXP', 'EXR', 'FXP', 'EXB', 'EXF', 'FXR', 'EKP', 'EXD', 'EX9',
+  'EYP', 'EAP', 'ENP', 'EVP', // 常見 OCR 誤讀
+  'E×P', // 乘號代替 X
+]
+
+/**
+ * 正規化 OCR 文字（全形轉半形、相似字元轉換）
+ * 解決 OCR 辨識遊戲字體時產生的非標準字元問題
+ */
+function normalizeOcrText(text: string): string {
+  return text
+    // 全形英文字母轉半形 (Ａ-Ｚ → A-Z)
+    .replace(/[Ａ-Ｚ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0))
+    .replace(/[ａ-ｚ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0))
+    // 全形數字轉半形 (０-９ → 0-9)
+    .replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0))
+    // 常見相似字元替換
+    .replace(/[×✕✖Ｘ]/g, 'X')
+    .replace(/[—–－]/g, '-')
+    .replace(/[，]/g, ',')
+    .replace(/[．]/g, '.')
+    .replace(/[％]/g, '%')
+    .replace(/[（]/g, '(')
+    .replace(/[）]/g, ')')
+    // 移除零寬字元和不可見字元
+    .replace(/[\u200B-\u200D\uFEFF\u00A0]/g, '')
+}
 
 // 經驗值數字格式 - 專門匹配 EXP 後面的數字
-const EXP_AFTER_PATTERN = /EXP\s*[:\s]*(\d{1,3}(?:,\d{3})+|\d{4,})/i
+const EXP_AFTER_PATTERN = /(?:EXP|EXR|FXP|EXB|EXF|FXR|EKP)\s*[:\s]*(\d{1,3}(?:,\d{3})+|\d{4,})/i
 // 備用：匹配任意大數字（4位以上或帶逗號）
 const ANY_NUMBER_PATTERN = /\d{1,3}(?:,\d{3})+|\d{4,}/g
+// 備用策略：「大數字 + 百分比」模式（MapleStory EXP 特徵）
+// 支援格式：983,500 (73.77% 或 983,500 73.77%
+const EXP_PATTERN_FALLBACK = /(\d{1,3}(?:,\d{3})+|\d{4,})\s*[\s\/]*\s*[([]?\s*(\d{1,3}\.\d{1,2})\s*%/
 
 interface ExpLabelResult {
   x: number
@@ -44,11 +79,31 @@ interface ExpLabelResult {
 
 export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
   const [isDetecting, setIsDetecting] = useState(false)
+  const [debugMode, setDebugMode] = useState(false)
+  const [debugScans, setDebugScans] = useState<ScanDebugInfo[]>([])
   const cancelledRef = useRef(false)
   const labelWorkerRef = useRef<import('tesseract.js').Worker | null>(null)
   const numberWorkerRef = useRef<import('tesseract.js').Worker | null>(null)
   // Canvas 複用，避免頻繁建立/銷毀
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
+  const debugModeRef = useRef(debugMode)
+
+  // 同步 debugMode 到 ref（避免閉包問題）
+  useEffect(() => {
+    debugModeRef.current = debugMode
+  }, [debugMode])
+
+  // 清除 Debug 記錄
+  const clearDebugScans = useCallback(() => {
+    setDebugScans([])
+  }, [])
+
+  // 新增 Debug 掃描記錄
+  const addDebugScan = useCallback((info: ScanDebugInfo) => {
+    if (debugModeRef.current) {
+      setDebugScans(prev => [...prev.slice(-49), info]) // 最多保留 50 筆
+    }
+  }, [])
 
   // 初始化 EXP 標籤 OCR Worker
   const initLabelWorker = useCallback(async () => {
@@ -200,27 +255,56 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
             height: regionHeight,
           }
 
-          const canvas = captureRegion(video, region)
-          if (!canvas) continue
+          // 嘗試多種預處理模式（與 findExpByPattern 一致）
+          const preprocessingModes = [
+            { name: 'raw', threshold: 0, invert: false, useRaw: true },
+            { name: 'binary-128', threshold: 128, invert: false, useRaw: false },
+            { name: 'binary-128-inv', threshold: 128, invert: true, useRaw: false },
+          ]
 
-          const result = await worker.recognize(canvas)
-          const text = result.data.text.trim().toUpperCase()
-          const confidence = result.data.confidence
+          for (const mode of preprocessingModes) {
+            const canvas = mode.useRaw
+              ? captureRegionRaw(video, region)
+              : captureRegion(video, region, mode.threshold, mode.invert)
+            if (!canvas) continue
 
-          // 調試日誌：顯示掃描結果
-          if (process.env.NODE_ENV === 'development' && text.length > 0) {
-            console.log('[AutoDetect] Scanning:', { x, y, text, confidence })
-          }
+            const result = await worker.recognize(canvas)
+            const rawText = result.data.text.trim()
+            // 正規化文字（全形轉半形、相似字元轉換）後再轉大寫
+            const text = normalizeOcrText(rawText).toUpperCase()
+            const confidence = result.data.confidence
 
-          // 檢查是否包含 EXP
-          if (text.includes('EXP') && confidence >= MIN_CONFIDENCE) {
-            return {
-              x,
-              y,
-              width: expRegionWidth,
-              height: regionHeight,
-              confidence,
-              text: result.data.text.trim(), // 保留原始文字（包含大小寫）
+            // 檢查是否包含 EXP 關鍵字（含誤讀容錯）
+            const hasExpKeyword = EXP_KEYWORDS.some(kw => text.includes(kw))
+
+            // 調試日誌：顯示掃描結果
+            if (process.env.NODE_ENV === 'development' && text.length > 0) {
+              console.log('[AutoDetect] Scanning:', { x, y, mode: mode.name, text, confidence, hasExpKeyword })
+            }
+
+            // Debug 模式：記錄掃描結果
+            if (debugModeRef.current && text.length > 0) {
+              addDebugScan({
+                timestamp: Date.now(),
+                region,
+                capturedImage: canvas.toDataURL('image/png'),
+                ocrText: text,
+                confidence,
+                matched: hasExpKeyword && confidence >= MIN_CONFIDENCE,
+                preprocessMode: mode.name,
+              })
+            }
+
+            // 檢查是否包含 EXP（使用容錯關鍵字）
+            if (hasExpKeyword && confidence >= MIN_CONFIDENCE) {
+              return {
+                x,
+                y,
+                width: expRegionWidth,
+                height: regionHeight,
+                confidence,
+                text: result.data.text.trim(), // 保留原始文字（包含大小寫）
+              }
             }
           }
         }
@@ -228,7 +312,7 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
 
       return null
     },
-    [captureRegion]
+    [captureRegion, captureRegionRaw, addDebugScan]
   )
 
   // 階段 2：從 EXP 位置往右找數字（嘗試多種預處理方式）
@@ -396,6 +480,92 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
     [captureRegion, captureRegionRaw]
   )
 
+  // 備用策略：直接尋找「大數字 + 百分比」模式
+  // 當 findExpLabel 找不到 "EXP" 關鍵字時使用
+  const findExpByPattern = useCallback(
+    async (
+      video: HTMLVideoElement,
+      worker: import('tesseract.js').Worker
+    ): Promise<AutoDetectResult | null> => {
+      const videoWidth = video.videoWidth
+      const videoHeight = video.videoHeight
+
+      // 根據解析度縮放參數
+      const resolutionScale = videoWidth / BASE_WIDTH
+      const regionHeight = Math.round(BASE_REGION_HEIGHT * resolutionScale)
+      const scanStride = Math.round(BASE_SCAN_STRIDE * resolutionScale)
+      const regionWidth = Math.round(200 * resolutionScale) // 較寬的區域以涵蓋數字
+
+      const startY = Math.floor(videoHeight * (1 - BOTTOM_SCAN_RATIO))
+      const endY = videoHeight
+
+      // 掃描底部區域
+      for (let y = startY; y < endY - regionHeight; y += scanStride) {
+        if (cancelledRef.current) return null
+
+        // 從右到左掃描（EXP 通常在右側）
+        for (let x = videoWidth - regionWidth; x >= videoWidth * 0.3; x -= Math.round(40 * resolutionScale)) {
+          const region: Region = {
+            x,
+            y,
+            width: regionWidth,
+            height: regionHeight,
+          }
+
+          // 嘗試多種預處理
+          const preprocessingModes = [
+            { name: 'raw', threshold: 0, invert: false, useRaw: true },
+            { name: 'binary-128', threshold: 128, invert: false, useRaw: false },
+            { name: 'binary-128-inv', threshold: 128, invert: true, useRaw: false },
+          ]
+
+          for (const mode of preprocessingModes) {
+            const canvas = mode.useRaw
+              ? captureRegionRaw(video, region)
+              : captureRegion(video, region, mode.threshold, mode.invert)
+
+            if (!canvas) continue
+
+            const result = await worker.recognize(canvas)
+            const rawText = result.data.text.trim()
+            // 正規化文字（全形轉半形）
+            const text = normalizeOcrText(rawText)
+            const confidence = result.data.confidence
+
+            // Debug 模式記錄
+            if (debugModeRef.current && text.length > 0) {
+              addDebugScan({
+                timestamp: Date.now(),
+                region,
+                capturedImage: canvas.toDataURL('image/png'),
+                ocrText: text,
+                confidence,
+                matched: EXP_PATTERN_FALLBACK.test(text),
+                preprocessMode: mode.name,
+              })
+            }
+
+            // 尋找「大數字 + 百分比」模式
+            const patternMatch = text.match(EXP_PATTERN_FALLBACK)
+            if (patternMatch && confidence >= MIN_CONFIDENCE) {
+              if (process.env.NODE_ENV === 'development') {
+                console.log('[AutoDetect] Pattern match found:', { text, patternMatch })
+              }
+              return {
+                region,
+                confidence,
+                text: patternMatch[1], // 返回數字部分
+              }
+            }
+          }
+        }
+      }
+
+      return null
+    },
+    [captureRegion, captureRegionRaw, addDebugScan]
+  )
+
   // 執行自動偵測
   const detect = useCallback(
     async (video: HTMLVideoElement): Promise<AutoDetectResult | null> => {
@@ -412,28 +582,38 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
           initNumberWorker(),
         ])
 
-        // 階段 1：找 EXP 標籤
+        // 階段 1：找 EXP 標籤（使用關鍵字容錯）
         const labelStartTime = performance.now()
         const expLabel = await findExpLabel(video, labelWorker)
         if (process.env.NODE_ENV === 'development') {
           console.log(`[AutoDetect] findExpLabel 耗時: ${Math.round(performance.now() - labelStartTime)}ms`)
         }
-        if (!expLabel) {
-          return null
+
+        // 如果找到 EXP 標籤，從該位置找數字
+        if (expLabel) {
+          const numberStartTime = performance.now()
+          const result = await findExpNumber(video, expLabel, numberWorker)
+          if (process.env.NODE_ENV === 'development') {
+            console.log(`[AutoDetect] findExpNumber 耗時: ${Math.round(performance.now() - numberStartTime)}ms`)
+            console.log(`[AutoDetect] 總偵測耗時: ${Math.round(performance.now() - detectStartTime)}ms`)
+          }
+          if (result) {
+            return result
+          }
         }
 
-        // 階段 2：從 EXP 位置找數字
-        const numberStartTime = performance.now()
-        const result = await findExpNumber(video, expLabel, numberWorker)
+        // 備用策略：如果找不到 EXP 關鍵字，使用「大數字 + 百分比」模式
         if (process.env.NODE_ENV === 'development') {
-          console.log(`[AutoDetect] findExpNumber 耗時: ${Math.round(performance.now() - numberStartTime)}ms`)
+          console.log('[AutoDetect] 使用備用策略：尋找大數字+百分比模式')
+        }
+        const patternStartTime = performance.now()
+        const patternResult = await findExpByPattern(video, numberWorker)
+        if (process.env.NODE_ENV === 'development') {
+          console.log(`[AutoDetect] findExpByPattern 耗時: ${Math.round(performance.now() - patternStartTime)}ms`)
           console.log(`[AutoDetect] 總偵測耗時: ${Math.round(performance.now() - detectStartTime)}ms`)
         }
-        if (!result) {
-          return null
-        }
 
-        return result
+        return patternResult
       } catch (error) {
         console.error('[AutoDetect] Error:', error)
         return null
@@ -441,7 +621,7 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
         setIsDetecting(false)
       }
     },
-    [isDetecting, initLabelWorker, initNumberWorker, findExpLabel, findExpNumber]
+    [isDetecting, initLabelWorker, initNumberWorker, findExpLabel, findExpNumber, findExpByPattern]
   )
 
   // 取消偵測
@@ -474,5 +654,9 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
     detect,
     cancel,
     cleanup,
+    debugMode,
+    setDebugMode,
+    debugScans,
+    clearDebugScans,
   }
 }
