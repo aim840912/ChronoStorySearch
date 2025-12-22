@@ -62,6 +62,18 @@ export function useExpTracker(
   const ocrFnRef = useRef<
     ((canvas: HTMLCanvasElement) => Promise<{ expValue: number | null; confidence: number; percentage: number | null }>) | null
   >(null)
+  // Canvas 複用，避免每次擷取都建立新的 canvas
+  const canvasRef = useRef<HTMLCanvasElement | null>(null)
+
+  // 取得或建立 Canvas（複用以減少 GC 壓力）
+  const getCanvas = useCallback((width: number, height: number): HTMLCanvasElement => {
+    if (!canvasRef.current) {
+      canvasRef.current = document.createElement('canvas')
+    }
+    canvasRef.current.width = width
+    canvasRef.current.height = height
+    return canvasRef.current
+  }, [])
 
   // 載入儲存的歷史記錄
   useEffect(() => {
@@ -121,10 +133,8 @@ export function useExpTracker(
     // Tesseract.js 在較大的圖像上表現更好
     const SCALE = 3
 
-    // 建立 Canvas 並繪製選取區域（放大 3 倍）
-    const canvas = document.createElement('canvas')
-    canvas.width = region.width * SCALE
-    canvas.height = region.height * SCALE
+    // 使用複用的 Canvas（減少 GC 壓力）
+    const canvas = getCanvas(region.width * SCALE, region.height * SCALE)
 
     const ctx = canvas.getContext('2d')
     if (!ctx) return
@@ -201,7 +211,7 @@ export function useExpTracker(
 
       onExpChange?.(record)
     }
-  }, [currentExp, onExpChange])
+  }, [currentExp, onExpChange, getCanvas])
 
   // 開始追蹤
   const start = useCallback(() => {
@@ -288,6 +298,45 @@ export function useExpTracker(
     setCurrentExp(exp)
   }, [])
 
+  // Page Visibility 處理：頁面隱藏時暫停計時器，減少資源消耗
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden && isTracking) {
+        // 頁面隱藏時，暫停計時器
+        if (intervalRef.current) {
+          clearInterval(intervalRef.current)
+          intervalRef.current = null
+        }
+        if (countdownIntervalRef.current) {
+          clearInterval(countdownIntervalRef.current)
+          countdownIntervalRef.current = null
+        }
+      } else if (!document.hidden && isTracking) {
+        // 頁面恢復可見時，重啟計時器
+        setSecondsUntilNextCapture(captureInterval)
+
+        countdownIntervalRef.current = setInterval(() => {
+          setSecondsUntilNextCapture((prev) => {
+            if (prev <= 1) return captureInterval
+            return prev - 1
+          })
+        }, 1000)
+
+        intervalRef.current = setInterval(() => {
+          captureAndRecognize()
+        }, captureInterval * 1000)
+
+        // 恢復時立即執行一次
+        captureAndRecognize()
+      }
+    }
+
+    document.addEventListener('visibilitychange', handleVisibilityChange)
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange)
+    }
+  }, [isTracking, captureInterval, captureAndRecognize])
+
   // 清理
   useEffect(() => {
     return () => {
@@ -297,6 +346,8 @@ export function useExpTracker(
       if (countdownIntervalRef.current) {
         clearInterval(countdownIntervalRef.current)
       }
+      // 清理複用的 Canvas
+      canvasRef.current = null
     }
   }, [])
 

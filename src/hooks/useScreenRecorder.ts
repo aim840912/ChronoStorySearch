@@ -69,11 +69,22 @@ export function useScreenRecorder(
       timerRef.current = null
     }
 
+    // 移除 MediaRecorder 事件處理器，避免閉包持有引用
+    if (mediaRecorderRef.current) {
+      mediaRecorderRef.current.ondataavailable = null
+      mediaRecorderRef.current.onstop = null
+      mediaRecorderRef.current.onerror = null
+    }
+
     if (streamRef.current) {
       console.log('[ScreenRecorder] 正在釋放 MediaStream', {
         tracks: streamRef.current.getTracks().length,
       })
-      streamRef.current.getTracks().forEach((track) => track.stop())
+      // 移除 track 的 onended 處理器
+      streamRef.current.getTracks().forEach((track) => {
+        track.onended = null
+        track.stop()
+      })
       streamRef.current = null
     }
 
@@ -389,6 +400,43 @@ export function useScreenRecorder(
       mountedRef.current = false
     }
   }, [])
+
+  // Page Visibility 處理：頁面隱藏時暫停 UI 計時器（但不暫停實際錄製）
+  // 這減少了後台 CPU 消耗，同時確保錄製可以在其他視窗繼續
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden && status === 'recording') {
+        // 頁面隱藏時，暫停 UI 計時器（實際錄製繼續）
+        if (timerRef.current) {
+          clearInterval(timerRef.current)
+          timerRef.current = null
+        }
+      } else if (!document.hidden && status === 'recording') {
+        // 頁面恢復可見時，重啟 UI 計時器
+        if (!timerRef.current) {
+          timerRef.current = setInterval(() => {
+            setElapsedTime((prev) => {
+              const newTime = prev + 1
+              elapsedTimeRef.current = newTime
+              if (recordingMode === 'fixed' && newTime >= duration * 60) {
+                stopRef.current()
+              }
+              return newTime
+            })
+
+            if (recordingMode === 'loop') {
+              setBufferDuration(bufferDurationRef.current)
+            }
+          }, 1000)
+        }
+      }
+    }
+
+    document.addEventListener('visibilitychange', handleVisibilityChange)
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange)
+    }
+  }, [status, duration, recordingMode])
 
   // 組件卸載時清理
   useEffect(() => {

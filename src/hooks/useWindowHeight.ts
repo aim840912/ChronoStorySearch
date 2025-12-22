@@ -21,7 +21,7 @@ export function useWindowHeight() {
     checkHeight()
 
     // 監聽視窗大小變化
-    window.addEventListener('resize', checkHeight)
+    window.addEventListener('resize', checkHeight, { passive: true })
 
     return () => {
       window.removeEventListener('resize', checkHeight)

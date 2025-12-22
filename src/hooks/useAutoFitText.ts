@@ -56,6 +56,8 @@ export function useAutoFitText({
   const ref = useRef<HTMLElement | null>(null)
   const [fontSize, setFontSize] = useState(maxFontSize)
   const [isReady, setIsReady] = useState(false)
+  // 追蹤 ResizeObserver 的 raf，確保可以在 cleanup 時取消
+  const resizeRafIdRef = useRef<number | null>(null)
 
   const calculateFontSize = useCallback(() => {
     const element = ref.current
@@ -107,21 +109,32 @@ export function useAutoFitText({
     return () => cancelAnimationFrame(rafId)
   }, [text, calculateFontSize, maxFontSize])
 
-  // 監聽容器大小變化
+  // 監聯容器大小變化
   useLayoutEffect(() => {
     const element = ref.current
     if (!element) return
 
     const resizeObserver = new ResizeObserver(() => {
-      // 防抖處理
-      requestAnimationFrame(() => {
+      // 取消前一個 pending 的 raf（防抖處理）
+      if (resizeRafIdRef.current !== null) {
+        cancelAnimationFrame(resizeRafIdRef.current)
+      }
+      resizeRafIdRef.current = requestAnimationFrame(() => {
+        resizeRafIdRef.current = null
         calculateFontSize()
       })
     })
 
     resizeObserver.observe(element.parentElement || element)
 
-    return () => resizeObserver.disconnect()
+    return () => {
+      // 確保取消 pending 的 raf
+      if (resizeRafIdRef.current !== null) {
+        cancelAnimationFrame(resizeRafIdRef.current)
+        resizeRafIdRef.current = null
+      }
+      resizeObserver.disconnect()
+    }
   }, [calculateFontSize])
 
   return { ref, fontSize, isReady }

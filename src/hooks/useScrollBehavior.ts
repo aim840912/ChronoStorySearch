@@ -69,7 +69,7 @@ export function useScrollBehavior({
       }
     }
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [isAdvancedFilterExpanded, setIsAdvancedFilterExpanded, showBackToTopThreshold, collapseFilterThreshold])
 

@@ -42,9 +42,9 @@ export function useResponsiveItemsPerPage(): number {
       setItemsPerPage(calculateItemsPerPage())
     }
 
-    window.addEventListener('resize', handleResize)
+    window.addEventListener('resize', handleResize, { passive: true })
 
-    // 清理監聽器
+    // 清理監聯器
     return () => {
       window.removeEventListener('resize', handleResize)
     }
