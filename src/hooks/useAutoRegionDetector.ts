@@ -14,13 +14,18 @@ import type {
  * 2. 從 EXP 位置往右延伸找數字
  */
 
-// 掃描參數
-const BOTTOM_SCAN_RATIO = 0.35  // 掃描底部 35%（擴大範圍以涵蓋更多區域）
-const REGION_HEIGHT = 30         // 條帶高度
-const SCAN_STRIDE = 8            // 掃描間隔
+// 掃描參數（根據遊戲截圖優化：EXP 在底部 5-8%，中間 50-75% 位置）
+const BOTTOM_SCAN_RATIO = 0.10   // 掃描底部 10%（實際 EXP 在 5-8%）
+const CENTER_SCAN_RATIO = 0.50   // 只掃描中間 50% 寬度
 const SCALE = 3                  // 放大倍率
 const MIN_CONFIDENCE = 10        // 最低信心度閾值（降低以適應遊戲字體）
-const EXP_REGION_WIDTH = 120     // EXP 標籤區域寬度（擴大以適應不同格式）
+
+// 基準解析度的掃描參數（以 640px 寬為基準）
+const BASE_WIDTH = 640
+const BASE_REGION_HEIGHT = 30     // 條帶高度
+const BASE_SCAN_STRIDE = 15       // 掃描間隔（原本 8，增大減少掃描次數）
+const BASE_EXP_REGION_WIDTH = 120 // EXP 標籤區域寬度
+const BASE_X_STEP = 60            // X 方向掃描步進（原本 40，增大減少掃描次數）
 
 // 經驗值數字格式 - 專門匹配 EXP 後面的數字
 const EXP_AFTER_PATTERN = /EXP\s*[:\s]*(\d{1,3}(?:,\d{3})+|\d{4,})/i
@@ -92,6 +97,7 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
   }, [])
 
   // 從視頻擷取區域（不做預處理，保留原始顏色）
+  // 注意：region 座標必須是 video 座標（videoWidth/videoHeight 空間）
   const captureRegionRaw = useCallback(
     (video: HTMLVideoElement, region: Region): HTMLCanvasElement | null => {
       const canvas = getCanvas(region.width * SCALE, region.height * SCALE)
@@ -99,18 +105,16 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
       const ctx = canvas.getContext('2d')
       if (!ctx) return null
 
-      const scaleX = video.videoWidth / video.clientWidth
-      const scaleY = video.videoHeight / video.clientHeight
-
       ctx.imageSmoothingEnabled = true
       ctx.imageSmoothingQuality = 'high'
 
+      // 直接使用 video 座標繪製（不需要縮放轉換）
       ctx.drawImage(
         video,
-        region.x * scaleX,
-        region.y * scaleY,
-        region.width * scaleX,
-        region.height * scaleY,
+        region.x,
+        region.y,
+        region.width,
+        region.height,
         0,
         0,
         canvas.width,
@@ -151,22 +155,33 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
   )
 
   // 階段 1：掃描找 EXP 標籤
+  // 注意：所有座標都使用 video 原始解析度（videoWidth/videoHeight）
   const findExpLabel = useCallback(
     async (
       video: HTMLVideoElement,
       worker: import('tesseract.js').Worker
     ): Promise<ExpLabelResult | null> => {
-      const videoWidth = video.clientWidth
-      const videoHeight = video.clientHeight
+      // 使用 video 實際解析度（不是 DOM 顯示尺寸）
+      const videoWidth = video.videoWidth
+      const videoHeight = video.videoHeight
+
+      // 根據解析度縮放掃描參數
+      const resolutionScale = videoWidth / BASE_WIDTH
+      const regionHeight = Math.round(BASE_REGION_HEIGHT * resolutionScale)
+      const scanStride = Math.round(BASE_SCAN_STRIDE * resolutionScale)
+      const expRegionWidth = Math.round(BASE_EXP_REGION_WIDTH * resolutionScale)
+      const xStep = Math.round(BASE_X_STEP * resolutionScale)
 
       const startY = Math.floor(videoHeight * (1 - BOTTOM_SCAN_RATIO))
       const endY = videoHeight
 
-      // 從中間開始掃描，向左右擴展（EXP 可能在中間下方）
+      // 從中間開始掃描，只掃描中間 50% 寬度（根據遊戲截圖，EXP 在中間偏右）
       const xPositions: number[] = []
       const centerX = Math.floor(videoWidth / 2)
-      for (let offset = 0; offset <= centerX; offset += 40) {
-        if (centerX + offset < videoWidth - EXP_REGION_WIDTH) {
+      const scanHalfWidth = Math.floor(videoWidth * CENTER_SCAN_RATIO / 2)  // 左右各 25%
+
+      for (let offset = 0; offset <= scanHalfWidth; offset += xStep) {
+        if (centerX + offset < videoWidth - expRegionWidth) {
           xPositions.push(centerX + offset)
         }
         if (centerX - offset >= 0 && offset > 0) {
@@ -174,15 +189,15 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
         }
       }
 
-      for (let y = startY; y < endY - REGION_HEIGHT; y += SCAN_STRIDE) {
+      for (let y = startY; y < endY - regionHeight; y += scanStride) {
         if (cancelledRef.current) return null
 
         for (const x of xPositions) {
           const region: Region = {
             x,
             y,
-            width: EXP_REGION_WIDTH,
-            height: REGION_HEIGHT,
+            width: expRegionWidth,
+            height: regionHeight,
           }
 
           const canvas = captureRegion(video, region)
@@ -202,8 +217,8 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
             return {
               x,
               y,
-              width: EXP_REGION_WIDTH,
-              height: REGION_HEIGHT,
+              width: expRegionWidth,
+              height: regionHeight,
               confidence,
               text: result.data.text.trim(), // 保留原始文字（包含大小寫）
             }
@@ -217,18 +232,16 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
   )
 
   // 階段 2：從 EXP 位置往右找數字（嘗試多種預處理方式）
+  // 注意：expLabel 的座標已經是 video 座標（videoWidth/videoHeight 空間）
   const findExpNumber = useCallback(
     async (
       video: HTMLVideoElement,
       expLabel: ExpLabelResult,
       worker: import('tesseract.js').Worker
     ): Promise<AutoDetectResult | null> => {
-      const clientWidth = video.clientWidth
-      const clientHeight = video.clientHeight
-
-      // 將 client 座標轉換為 video 實際座標（用於返回結果）
-      const scaleX = video.videoWidth / clientWidth
-      const scaleY = video.videoHeight / clientHeight
+      // 直接使用 video 實際解析度（不需要 client↔video 座標轉換）
+      const videoWidth = video.videoWidth
+      const videoHeight = video.videoHeight
 
       // 優先策略：檢查掃描文字是否已包含 EXP 數字
       // 如果掃描階段就找到完整資訊，直接使用原掃描區域
@@ -244,13 +257,13 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
           })
         }
 
-        // 如果掃描文字包含 EXP 數字，直接使用原掃描區域
+        // 如果掃描文字包含 EXP 數字，直接使用原掃描區域（已是 video 座標）
         if (expMatch) {
           const scanRegion: Region = {
-            x: expLabel.x * scaleX,
-            y: expLabel.y * scaleY,
-            width: expLabel.width * scaleX,
-            height: expLabel.height * scaleY,
+            x: expLabel.x,
+            y: expLabel.y,
+            width: expLabel.width,
+            height: expLabel.height,
           }
 
           if (process.env.NODE_ENV === 'development') {
@@ -276,10 +289,10 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
           const numValue = parseInt(largestNumber.replace(/,/g, ''), 10)
           if (numValue >= 1000) {
             const scanRegion: Region = {
-              x: expLabel.x * scaleX,
-              y: expLabel.y * scaleY,
-              width: expLabel.width * scaleX,
-              height: expLabel.height * scaleY,
+              x: expLabel.x,
+              y: expLabel.y,
+              width: expLabel.width,
+              height: expLabel.height,
             }
 
             if (process.env.NODE_ENV === 'development') {
@@ -296,35 +309,28 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
       }
 
       // 備用策略：擴大擷取區域（如果掃描文字沒有數字）
-      const leftExtend = 100  // 往左延伸 100px
-      const rightExtend = 200 // 往右延伸 200px
+      // 按 video 解析度比例調整延伸範圍
+      const scale = videoWidth / 1920 // 假設基準解析度為 1920px
+      const leftExtend = Math.round(100 * scale)   // 往左延伸
+      const rightExtend = Math.round(200 * scale)  // 往右延伸
 
-      // 先在 client 座標中計算區域
-      const clientRegion: Region = {
+      // 直接在 video 座標中計算區域
+      const numberRegion: Region = {
         x: Math.max(0, expLabel.x - leftExtend),
         y: expLabel.y,
         width: leftExtend + expLabel.width + rightExtend,
-        height: expLabel.height, // OCR 搜索區域保持原本高度
+        height: expLabel.height,
       }
 
-      // 確保不超出視頻範圍（client 座標）
-      if (clientRegion.x + clientRegion.width > clientWidth) {
-        clientRegion.width = clientWidth - clientRegion.x
-      }
-
-      const numberRegion: Region = {
-        x: clientRegion.x * scaleX,
-        y: clientRegion.y * scaleY,
-        width: clientRegion.width * scaleX,
-        height: clientRegion.height * scaleY,
+      // 確保不超出視頻範圍
+      if (numberRegion.x + numberRegion.width > videoWidth) {
+        numberRegion.width = videoWidth - numberRegion.x
       }
 
       if (process.env.NODE_ENV === 'development') {
         console.log('[AutoDetect] Fallback: Extended region:', {
-          clientSize: { width: clientWidth, height: clientHeight },
-          videoSize: { width: video.videoWidth, height: video.videoHeight },
-          scale: { x: scaleX, y: scaleY },
-          clientRegion,
+          videoSize: { width: videoWidth, height: videoHeight },
+          expLabel: { x: expLabel.x, y: expLabel.y, width: expLabel.width, height: expLabel.height },
           numberRegion,
         })
       }
@@ -340,10 +346,10 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
       ]
 
       for (const mode of preprocessingModes) {
-        // 使用 clientRegion 進行擷取（captureRegion 內部會轉換座標）
+        // 直接使用 video 座標（captureRegion 現在接受 video 座標）
         const canvas = mode.useRaw
-          ? captureRegionRaw(video, clientRegion)
-          : captureRegion(video, clientRegion, mode.threshold, mode.invert)
+          ? captureRegionRaw(video, numberRegion)
+          : captureRegion(video, numberRegion, mode.threshold, mode.invert)
 
         if (!canvas) continue
 
@@ -362,7 +368,6 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
         if (expMatch && confidence >= MIN_CONFIDENCE) {
           const expNumber = expMatch[1]
 
-          // 使用 OCR 成功讀取數字的區域作為追蹤區域
           return {
             region: numberRegion,
             confidence,
@@ -372,14 +377,12 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
 
         // 備用：找最大的數字（可能是經驗值）
         if (allNumbers && allNumbers.length > 0 && confidence >= MIN_CONFIDENCE) {
-          // 找最大的數字（經驗值通常是最大的）
           const largestNumber = allNumbers.reduce((max, num) => {
             const numValue = parseInt(num.replace(/,/g, ''), 10)
             const maxValue = parseInt(max.replace(/,/g, ''), 10)
             return numValue > maxValue ? num : max
           })
 
-          // 使用 OCR 成功讀取數字的區域作為追蹤區域
           return {
             region: numberRegion,
             confidence,
@@ -402,19 +405,30 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
       cancelledRef.current = false
 
       try {
+        const detectStartTime = performance.now()
+
         const [labelWorker, numberWorker] = await Promise.all([
           initLabelWorker(),
           initNumberWorker(),
         ])
 
         // 階段 1：找 EXP 標籤
+        const labelStartTime = performance.now()
         const expLabel = await findExpLabel(video, labelWorker)
+        if (process.env.NODE_ENV === 'development') {
+          console.log(`[AutoDetect] findExpLabel 耗時: ${Math.round(performance.now() - labelStartTime)}ms`)
+        }
         if (!expLabel) {
           return null
         }
 
         // 階段 2：從 EXP 位置找數字
+        const numberStartTime = performance.now()
         const result = await findExpNumber(video, expLabel, numberWorker)
+        if (process.env.NODE_ENV === 'development') {
+          console.log(`[AutoDetect] findExpNumber 耗時: ${Math.round(performance.now() - numberStartTime)}ms`)
+          console.log(`[AutoDetect] 總偵測耗時: ${Math.round(performance.now() - detectStartTime)}ms`)
+        }
         if (!result) {
           return null
         }
