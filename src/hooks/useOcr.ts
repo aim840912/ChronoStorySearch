@@ -31,6 +31,9 @@ export function useOcr(): UseOcrReturn {
 
   const workerRef = useRef<Worker | null>(null)
   const initializingRef = useRef(false)
+  // Canvas 複用，避免頻繁建立/銷毀
+  const canvasRef = useRef<HTMLCanvasElement | null>(null)
+  const sourceCanvasRef = useRef<HTMLCanvasElement | null>(null)
 
   // 初始化 Worker
   const initWorker = useCallback(async () => {
@@ -62,6 +65,26 @@ export function useOcr(): UseOcrReturn {
     }
   }, [])
 
+  // 取得或建立 Canvas（複用以減少 GC 壓力）
+  const getCanvas = useCallback((width: number, height: number): HTMLCanvasElement => {
+    if (!canvasRef.current) {
+      canvasRef.current = document.createElement('canvas')
+    }
+    canvasRef.current.width = width
+    canvasRef.current.height = height
+    return canvasRef.current
+  }, [])
+
+  // 取得或建立 Source Canvas（用於 ImageData 轉換）
+  const getSourceCanvas = useCallback((width: number, height: number): HTMLCanvasElement => {
+    if (!sourceCanvasRef.current) {
+      sourceCanvasRef.current = document.createElement('canvas')
+    }
+    sourceCanvasRef.current.width = width
+    sourceCanvasRef.current.height = height
+    return sourceCanvasRef.current
+  }, [])
+
   // 圖像預處理函數
   const preprocessImage = useCallback(
     (
@@ -74,9 +97,7 @@ export function useOcr(): UseOcrReturn {
         return sourceCanvas
       }
 
-      const canvas = document.createElement('canvas')
-      canvas.width = sourceCanvas.width
-      canvas.height = sourceCanvas.height
+      const canvas = getCanvas(sourceCanvas.width, sourceCanvas.height)
 
       const ctx = canvas.getContext('2d')
       if (!ctx) return sourceCanvas
@@ -98,7 +119,7 @@ export function useOcr(): UseOcrReturn {
       ctx.putImageData(imageData, 0, 0)
       return canvas
     },
-    []
+    [getCanvas]
   )
 
   // 從文字中提取最大的數字（經驗值通常是最大的）
@@ -161,13 +182,11 @@ export function useOcr(): UseOcrReturn {
       }
 
       try {
-        // 如果是 ImageData，先轉換為 Canvas
+        // 如果是 ImageData，先轉換為 Canvas（複用 sourceCanvas）
         let sourceCanvas: HTMLCanvasElement
 
         if (imageData instanceof ImageData) {
-          sourceCanvas = document.createElement('canvas')
-          sourceCanvas.width = imageData.width
-          sourceCanvas.height = imageData.height
+          sourceCanvas = getSourceCanvas(imageData.width, imageData.height)
           const ctx = sourceCanvas.getContext('2d')
           if (ctx) {
             ctx.putImageData(imageData, 0, 0)
@@ -243,18 +262,26 @@ export function useOcr(): UseOcrReturn {
         }
       }
     },
-    [initWorker, preprocessImage, extractLargestNumber, extractPercentage]
+    [initWorker, preprocessImage, extractLargestNumber, extractPercentage, getSourceCanvas]
   )
+
+  // 主動終止 Worker 和清理 Canvas（供外部呼叫，避免資源洩漏）
+  const terminateWorker = useCallback(() => {
+    if (workerRef.current) {
+      workerRef.current.terminate()
+      workerRef.current = null
+    }
+    canvasRef.current = null
+    sourceCanvasRef.current = null
+    setIsReady(false)
+  }, [])
 
   // 組件掛載時初始化（只在掛載/卸載時執行）
   useEffect(() => {
     initWorker()
 
     return () => {
-      if (workerRef.current) {
-        workerRef.current.terminate()
-        workerRef.current = null
-      }
+      terminateWorker()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []) // 空依賴，確保只在掛載時初始化、卸載時清理
@@ -264,5 +291,6 @@ export function useOcr(): UseOcrReturn {
     isReady,
     recognize,
     error,
+    terminateWorker,
   }
 }

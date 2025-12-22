@@ -42,6 +42,8 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
   const cancelledRef = useRef(false)
   const labelWorkerRef = useRef<import('tesseract.js').Worker | null>(null)
   const numberWorkerRef = useRef<import('tesseract.js').Worker | null>(null)
+  // Canvas 複用，避免頻繁建立/銷毀
+  const canvasRef = useRef<HTMLCanvasElement | null>(null)
 
   // 初始化 EXP 標籤 OCR Worker
   const initLabelWorker = useCallback(async () => {
@@ -79,12 +81,20 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
     return worker
   }, [])
 
+  // 取得或建立 Canvas（複用以減少 GC 壓力）
+  const getCanvas = useCallback((width: number, height: number): HTMLCanvasElement => {
+    if (!canvasRef.current) {
+      canvasRef.current = document.createElement('canvas')
+    }
+    canvasRef.current.width = width
+    canvasRef.current.height = height
+    return canvasRef.current
+  }, [])
+
   // 從視頻擷取區域（不做預處理，保留原始顏色）
   const captureRegionRaw = useCallback(
     (video: HTMLVideoElement, region: Region): HTMLCanvasElement | null => {
-      const canvas = document.createElement('canvas')
-      canvas.width = region.width * SCALE
-      canvas.height = region.height * SCALE
+      const canvas = getCanvas(region.width * SCALE, region.height * SCALE)
 
       const ctx = canvas.getContext('2d')
       if (!ctx) return null
@@ -109,7 +119,7 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
 
       return canvas
     },
-    []
+    [getCanvas]
   )
 
   // 從視頻擷取區域並進行二值化預處理
@@ -425,23 +435,30 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
     cancelledRef.current = true
   }, [])
 
-  // 清理 Tesseract workers（避免記憶體洩漏）
+  // 主動清理 Workers 和 Canvas（供外部呼叫，避免資源洩漏）
+  const cleanup = useCallback(() => {
+    if (labelWorkerRef.current) {
+      labelWorkerRef.current.terminate()
+      labelWorkerRef.current = null
+    }
+    if (numberWorkerRef.current) {
+      numberWorkerRef.current.terminate()
+      numberWorkerRef.current = null
+    }
+    canvasRef.current = null
+  }, [])
+
+  // 元件卸載時清理 Tesseract workers
   useEffect(() => {
     return () => {
-      if (labelWorkerRef.current) {
-        labelWorkerRef.current.terminate()
-        labelWorkerRef.current = null
-      }
-      if (numberWorkerRef.current) {
-        numberWorkerRef.current.terminate()
-        numberWorkerRef.current = null
-      }
+      cleanup()
     }
-  }, [])
+  }, [cleanup])
 
   return {
     isDetecting,
     detect,
     cancel,
+    cleanup,
   }
 }

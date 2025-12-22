@@ -157,6 +157,8 @@ export interface UseOcrReturn {
   recognize: (imageData: ImageData | HTMLCanvasElement) => Promise<OcrResult>
   /** 錯誤 */
   error: Error | null
+  /** 終止 Worker 並清理資源 */
+  terminateWorker: () => void
 }
 
 /** useRegionSelector Hook 回傳值 */
@@ -297,4 +299,6 @@ export interface UseAutoRegionDetectorReturn {
   detect: (video: HTMLVideoElement) => Promise<AutoDetectResult | null>
   /** 取消偵測 */
   cancel: () => void
+  /** 清理 Workers 和 Canvas（釋放資源） */
+  cleanup: () => void
 }

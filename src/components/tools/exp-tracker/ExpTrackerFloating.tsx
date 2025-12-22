@@ -65,6 +65,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
   const pendingRegionSelectRef = useRef(false)
   const streamRef = useRef<MediaStream | null>(null)
   const trackerRef = useRef<ReturnType<typeof useExpTracker> | null>(null)
+  const rafIdRef = useRef<number | null>(null)
 
   // Hooks
   const ocr = useOcr()
@@ -309,8 +310,9 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
         // 如果有待處理的區域選擇，在 video 載入完成後自動偵測
         if (pendingRegionSelectRef.current) {
           pendingRegionSelectRef.current = false
-          // 延遲一幀確保 video 完全準備好
-          requestAnimationFrame(() => {
+          // 延遲一幀確保 video 完全準備好（追蹤 ID 以便取消）
+          rafIdRef.current = requestAnimationFrame(() => {
+            rafIdRef.current = null
             handleAutoDetect()
           })
         }
@@ -403,7 +405,10 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     } catch (error) {
       // 確保清理任何可能的殘留 stream
       if (streamRef.current) {
-        streamRef.current.getTracks().forEach((track) => track.stop())
+        streamRef.current.getTracks().forEach((track) => {
+          track.onended = null
+          track.stop()
+        })
         setStream(null)
       }
       if ((error as Error).name !== 'NotAllowedError') {
@@ -436,7 +441,10 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     tracker.stop()
     // 使用 ref 確保獲取最新的 stream 值（避免 stale closure）
     if (streamRef.current) {
-      streamRef.current.getTracks().forEach((track) => track.stop())
+      streamRef.current.getTracks().forEach((track) => {
+        track.onended = null
+        track.stop()
+      })
       setStream(null)
     }
   }, [tracker])
@@ -506,20 +514,31 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
 
   // 關閉視窗（明確清理所有資源）
   const handleClose = useCallback(() => {
+    // 取消 pending 的 requestAnimationFrame
+    if (rafIdRef.current) {
+      cancelAnimationFrame(rafIdRef.current)
+      rafIdRef.current = null
+    }
     // 停止追蹤
     tracker.stop()
-    // 釋放 MediaStream
+    // 釋放 MediaStream（先移除 onended 處理器避免閉包持有引用）
     if (streamRef.current) {
-      streamRef.current.getTracks().forEach((track) => track.stop())
+      streamRef.current.getTracks().forEach((track) => {
+        track.onended = null
+        track.stop()
+      })
       setStream(null)
     }
     // 清理 video srcObject
     if (videoRef.current) {
       videoRef.current.srcObject = null
     }
+    // 終止 Tesseract Workers（避免資源洩漏導致系統延遲）
+    ocr.terminateWorker()
+    autoDetector.cleanup()
     // 呼叫父層的 onClose
     onClose()
-  }, [tracker, onClose])
+  }, [tracker, onClose, ocr, autoDetector])
 
   // 同步 refs（避免 stale closure 問題）
   useEffect(() => {
@@ -530,11 +549,20 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     trackerRef.current = tracker
   }, [tracker])
 
-  // 元件卸載時確保清理 MediaStream（使用 ref 確保清理最新值）
+  // 元件卸載時確保清理所有資源（使用 ref 確保清理最新值）
   useEffect(() => {
     return () => {
+      // 取消 pending 的 requestAnimationFrame
+      if (rafIdRef.current) {
+        cancelAnimationFrame(rafIdRef.current)
+        rafIdRef.current = null
+      }
+      // 停止 MediaStream
       if (streamRef.current) {
-        streamRef.current.getTracks().forEach((track) => track.stop())
+        streamRef.current.getTracks().forEach((track) => {
+          track.onended = null
+          track.stop()
+        })
       }
       if (videoRef.current) {
         videoRef.current.srcObject = null
