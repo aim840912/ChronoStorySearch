@@ -169,6 +169,8 @@ const DEFAULT_SCREEN_RECORDER_SETTINGS: ScreenRecorderSettings = {
   duration: 2,
   includeAudio: false,
   videoFormat: 'mp4',
+  recordingMode: 'fixed',
+  loopDuration: 120,
 }
 
 export function getScreenRecorderSettings(): ScreenRecorderSettings {

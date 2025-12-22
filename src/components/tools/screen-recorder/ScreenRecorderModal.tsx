@@ -12,7 +12,7 @@ import {
 import { RecordingSettings } from './RecordingSettings'
 import { RecordingStatus } from './RecordingStatus'
 import { RecordingControls } from './RecordingControls'
-import type { VideoFormat } from '@/types/screen-recorder'
+import type { VideoFormat, RecordingMode } from '@/types/screen-recorder'
 
 interface ScreenRecorderModalProps {
   isOpen: boolean
@@ -40,6 +40,8 @@ export function ScreenRecorderModal({
   const [duration, setDuration] = useState(2)
   const [includeAudio, setIncludeAudio] = useState(false)
   const [videoFormat, setVideoFormat] = useState<VideoFormat>('mp4')
+  const [recordingMode, setRecordingMode] = useState<RecordingMode>('fixed')
+  const [loopDuration, setLoopDuration] = useState(120)
 
   // 載入設定
   useEffect(() => {
@@ -48,21 +50,31 @@ export function ScreenRecorderModal({
       setDuration(settings.duration)
       setIncludeAudio(settings.includeAudio)
       setVideoFormat(settings.videoFormat || 'mp4')
+      setRecordingMode(settings.recordingMode || 'fixed')
+      setLoopDuration(settings.loopDuration || 120)
     }
   }, [isOpen])
 
   // 儲存設定
   useEffect(() => {
     if (isOpen) {
-      setScreenRecorderSettings({ duration, includeAudio, videoFormat })
+      setScreenRecorderSettings({
+        duration,
+        includeAudio,
+        videoFormat,
+        recordingMode,
+        loopDuration,
+      })
     }
-  }, [duration, includeAudio, videoFormat, isOpen])
+  }, [duration, includeAudio, videoFormat, recordingMode, loopDuration, isOpen])
 
   // 使用錄影 Hook
   const recorder = useScreenRecorder({
     duration,
     includeAudio,
     videoFormat,
+    recordingMode,
+    loopDuration,
     onComplete: () => {
       showToast(t('status.stopped'), 'success')
     },
@@ -75,12 +87,14 @@ export function ScreenRecorderModal({
     },
   })
 
-  // 當 Modal 關閉時，停止錄影並釋放資源
-  useEffect(() => {
-    if (!isOpen && (recorder.status === 'recording' || recorder.status === 'paused')) {
+  // 明確的關閉處理（涵蓋所有活躍狀態）
+  const handleClose = useCallback(() => {
+    // 任何活躍狀態都需停止
+    if (recorder.status !== 'idle' && recorder.status !== 'stopped') {
       recorder.stop()
     }
-  }, [isOpen, recorder.status, recorder.stop])
+    onClose()
+  }, [recorder, onClose])
 
   // 下載處理
   const handleDownload = useCallback(() => {
@@ -111,7 +125,7 @@ export function ScreenRecorderModal({
   )
 
   return (
-    <BaseModal isOpen={isOpen} onClose={onClose} maxWidth="max-w-md">
+    <BaseModal isOpen={isOpen} onClose={handleClose} maxWidth="max-w-md">
       <div className="flex flex-col h-full">
         {/* Header */}
         <div className="flex-shrink-0 flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700 bg-red-500 text-white rounded-t-lg">
@@ -129,7 +143,7 @@ export function ScreenRecorderModal({
           </div>
           <button
             type="button"
-            onClick={onClose}
+            onClick={handleClose}
             className="p-2 hover:bg-red-600 rounded-lg transition-colors"
             aria-label={t('close')}
           >
@@ -166,8 +180,12 @@ export function ScreenRecorderModal({
               <RecordingSettings
                 duration={duration}
                 includeAudio={includeAudio}
+                recordingMode={recordingMode}
+                loopDuration={loopDuration}
                 onDurationChange={setDuration}
                 onAudioToggle={setIncludeAudio}
+                onModeChange={setRecordingMode}
+                onLoopDurationChange={setLoopDuration}
                 disabled={!canModifySettings}
                 t={t}
               />
@@ -178,6 +196,9 @@ export function ScreenRecorderModal({
                   status={recorder.status}
                   elapsedTime={recorder.elapsedTime}
                   totalDuration={duration}
+                  recordingMode={recordingMode}
+                  bufferDuration={recorder.bufferDuration}
+                  loopDuration={loopDuration}
                   t={t}
                 />
               )}
