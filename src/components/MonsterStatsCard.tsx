@@ -3,7 +3,14 @@
 import { useState } from 'react'
 import type { MobInfo } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { NoDataIcon } from './icons/MonsterStatIcons'
+
+// 預設屬性順序
+const DEFAULT_STAT_ORDER = ['level', 'maxHP', 'physicalDefense', 'magicDefense', 'accuracy', 'evasion', 'exp', 'minimumPushDamage']
+
+// 預設顯示所有屬性
+const DEFAULT_VISIBLE_STATS = ['level', 'maxHP', 'physicalDefense', 'magicDefense', 'accuracy', 'evasion', 'exp', 'minimumPushDamage']
 
 interface MonsterStatsCardProps {
   mobInfo: MobInfo | null
@@ -16,7 +23,69 @@ interface MonsterStatsCardProps {
  */
 export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardProps) {
   const { t } = useLanguage()
-  const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid')
+  const [viewMode, setViewMode] = useLocalStorage<'grid' | 'list'>('monster-stats-view-mode', 'grid')
+  const [statOrder, setStatOrder] = useLocalStorage<string[]>('monster-stats-order', DEFAULT_STAT_ORDER)
+  const [visibleStats, setVisibleStats] = useLocalStorage<string[]>('monster-stats-visible', DEFAULT_VISIBLE_STATS)
+  const [draggedItem, setDraggedItem] = useState<string | null>(null)
+  const [showSettings, setShowSettings] = useState(false)
+
+  // 拖放處理函數
+  const handleDragStart = (e: React.DragEvent, dataKey: string) => {
+    setDraggedItem(dataKey)
+    e.dataTransfer.effectAllowed = 'move'
+  }
+
+  const handleDragOver = (e: React.DragEvent) => {
+    e.preventDefault()
+    e.dataTransfer.dropEffect = 'move'
+  }
+
+  const handleDrop = (e: React.DragEvent, targetKey: string) => {
+    e.preventDefault()
+    if (!draggedItem || draggedItem === targetKey) {
+      setDraggedItem(null)
+      return
+    }
+    const newOrder = [...statOrder]
+    const dragIndex = newOrder.indexOf(draggedItem)
+    const dropIndex = newOrder.indexOf(targetKey)
+    if (dragIndex !== -1 && dropIndex !== -1) {
+      newOrder.splice(dragIndex, 1)
+      newOrder.splice(dropIndex, 0, draggedItem)
+      setStatOrder(newOrder)
+    }
+    setDraggedItem(null)
+  }
+
+  const handleDragEnd = () => {
+    setDraggedItem(null)
+  }
+
+  const resetOrder = () => {
+    setStatOrder(DEFAULT_STAT_ORDER)
+  }
+
+  // 切換屬性可見性
+  const toggleStatVisibility = (dataKey: string) => {
+    setVisibleStats(prev => {
+      // 如果是最後一個可見屬性，不允許隱藏
+      if (prev.includes(dataKey) && prev.length === 1) {
+        return prev
+      }
+      if (prev.includes(dataKey)) {
+        return prev.filter(key => key !== dataKey)
+      }
+      return [...prev, dataKey]
+    })
+  }
+
+  // 重置可見性設定
+  const resetVisibility = () => {
+    setVisibleStats(DEFAULT_VISIBLE_STATS)
+  }
+
+  // 檢查是否有自訂可見性設定
+  const isCustomVisibility = JSON.stringify([...visibleStats].sort()) !== JSON.stringify([...DEFAULT_VISIBLE_STATS].sort())
 
   // 處理無屬性資料的情況
   if (!mobInfo || !mobInfo.mob || mobInfo.mob.name === null) {
@@ -48,6 +117,15 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
     { dataKey: 'minimumPushDamage', translationKey: 'minimumPushDamage', color: 'text-rose-600 dark:text-rose-400' },
   ]
 
+  // 根據用戶自訂順序排序，並過濾可見屬性
+  const sortedStatConfig = statOrder
+    .map(key => statConfig.find(s => s.dataKey === key))
+    .filter((s): s is typeof statConfig[number] => s !== undefined)
+    .filter(s => visibleStats.includes(s.dataKey))
+
+  // 檢查是否為自訂順序
+  const isCustomOrder = JSON.stringify(statOrder) !== JSON.stringify(DEFAULT_STAT_ORDER)
+
   return (
     <div className="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/30 rounded-xl p-6 shadow-lg border border-blue-200 dark:border-blue-800">
       <div className="flex items-center justify-between mb-4">
@@ -55,54 +133,146 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
           <span className="text-2xl"></span>
           {t('monster.stats')}
         </h3>
-        {/* 視圖切換按鈕 */}
-        <div className="flex gap-1 bg-white dark:bg-gray-800 rounded-lg p-1 shadow-sm">
-          <button
-            onClick={() => setViewMode('grid')}
-            className={`p-1.5 rounded transition-colors ${
-              viewMode === 'grid'
-                ? 'bg-blue-500 text-white'
-                : 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'
-            }`}
-            title={t('monster.viewGrid')}
-            aria-label={t('monster.viewGrid')}
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-            </svg>
-          </button>
-          <button
-            onClick={() => setViewMode('list')}
-            className={`p-1.5 rounded transition-colors ${
-              viewMode === 'list'
-                ? 'bg-blue-500 text-white'
-                : 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'
-            }`}
-            title={t('monster.viewList')}
-            aria-label={t('monster.viewList')}
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
+        {/* 設定按鈕 */}
+        <button
+          onClick={() => setShowSettings(!showSettings)}
+          className={`p-1.5 rounded transition-colors ${
+            showSettings
+              ? 'bg-blue-500 text-white'
+              : 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'
+          }`}
+          title={t('monster.statsSettings')}
+          aria-label={t('monster.statsSettings')}
+          aria-expanded={showSettings}
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        </button>
       </div>
+
+      {/* 設定面板 */}
+      {showSettings && (
+        <div className="mb-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 divide-y divide-gray-200 dark:divide-gray-700">
+          {/* 視圖模式 */}
+          <div className="p-3 flex items-center justify-between">
+            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+              {t('monster.viewMode')}
+            </span>
+            <div className="flex gap-1 bg-gray-100 dark:bg-gray-700 rounded-lg p-1">
+              <button
+                onClick={() => setViewMode('grid')}
+                className={`p-1.5 rounded transition-colors ${
+                  viewMode === 'grid'
+                    ? 'bg-blue-500 text-white'
+                    : 'text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
+                }`}
+                title={t('monster.viewGrid')}
+                aria-label={t('monster.viewGrid')}
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                </svg>
+              </button>
+              <button
+                onClick={() => setViewMode('list')}
+                className={`p-1.5 rounded transition-colors ${
+                  viewMode === 'list'
+                    ? 'bg-blue-500 text-white'
+                    : 'text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
+                }`}
+                title={t('monster.viewList')}
+                aria-label={t('monster.viewList')}
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          {/* 顯示的屬性 */}
+          <div className="p-3">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                {t('monster.selectVisibleStats')}
+              </span>
+              {isCustomVisibility && (
+                <button
+                  onClick={resetVisibility}
+                  className="text-xs text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  {t('monster.resetVisibility')}
+                </button>
+              )}
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              {statConfig.map(({ dataKey, translationKey }) => (
+                <label
+                  key={dataKey}
+                  className="flex items-center gap-2 cursor-pointer p-1.5 rounded hover:bg-gray-50 dark:hover:bg-gray-700"
+                >
+                  <input
+                    type="checkbox"
+                    checked={visibleStats.includes(dataKey)}
+                    onChange={() => toggleStatVisibility(dataKey)}
+                    className="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    disabled={visibleStats.includes(dataKey) && visibleStats.length === 1}
+                  />
+                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                    {t(`monster.${translationKey}`)}
+                  </span>
+                </label>
+              ))}
+            </div>
+          </div>
+
+          {/* 排序 */}
+          <div className="p-3">
+            <div className="flex items-center justify-between">
+              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                {t('monster.sortOrder')}
+              </span>
+              {isCustomOrder && (
+                <button
+                  onClick={resetOrder}
+                  className="text-xs text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  {t('monster.resetOrder')}
+                </button>
+              )}
+            </div>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+              {t('monster.dragToReorder')}
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* 基本屬性 */}
       {viewMode === 'grid' ? (
         /* 網格視圖 */
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {statConfig.map(({ dataKey, translationKey, color }) => {
+          {sortedStatConfig.map(({ dataKey, translationKey, color }) => {
             const value = stats[dataKey as keyof typeof stats]
             const isAvoidField = dataKey === 'evasion'
             const isClickable = isAvoidField && onAccuracyClick && value !== null
+            const isDragging = draggedItem === dataKey
 
             return (
               <div
                 key={dataKey}
-                className={`bg-white dark:bg-gray-800 rounded-lg p-3 shadow-sm transition-all ${
+                draggable
+                onDragStart={(e) => handleDragStart(e, dataKey)}
+                onDragOver={handleDragOver}
+                onDrop={(e) => handleDrop(e, dataKey)}
+                onDragEnd={handleDragEnd}
+                className={`bg-white dark:bg-gray-800 rounded-lg p-3 shadow-sm transition-all cursor-grab active:cursor-grabbing ${
+                  isDragging ? 'opacity-50 scale-95' : ''
+                } ${
                   isClickable
-                    ? 'cursor-pointer hover:shadow-lg hover:ring-2 hover:ring-cyan-500 hover:bg-cyan-50 dark:hover:bg-cyan-900/20 active:scale-95'
+                    ? 'hover:shadow-lg hover:ring-2 hover:ring-cyan-500 hover:bg-cyan-50 dark:hover:bg-cyan-900/20'
                     : 'hover:shadow-md'
                 }`}
                 onClick={isClickable ? onAccuracyClick : undefined}
@@ -137,17 +307,25 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
       ) : (
         /* 列表視圖 */
         <div className="flex flex-col gap-2">
-          {statConfig.map(({ dataKey, translationKey, color }) => {
+          {sortedStatConfig.map(({ dataKey, translationKey, color }) => {
             const value = stats[dataKey as keyof typeof stats]
             const isAvoidField = dataKey === 'evasion'
             const isClickable = isAvoidField && onAccuracyClick && value !== null
+            const isDragging = draggedItem === dataKey
 
             return (
               <div
                 key={dataKey}
-                className={`bg-white dark:bg-gray-800 rounded-lg px-4 py-2.5 flex justify-between items-center transition-colors ${
+                draggable
+                onDragStart={(e) => handleDragStart(e, dataKey)}
+                onDragOver={handleDragOver}
+                onDrop={(e) => handleDrop(e, dataKey)}
+                onDragEnd={handleDragEnd}
+                className={`bg-white dark:bg-gray-800 rounded-lg px-4 py-2.5 flex justify-between items-center transition-colors cursor-grab active:cursor-grabbing ${
+                  isDragging ? 'opacity-50 scale-95' : ''
+                } ${
                   isClickable
-                    ? 'cursor-pointer hover:bg-cyan-50 dark:hover:bg-cyan-900/20 hover:ring-2 hover:ring-cyan-500'
+                    ? 'hover:bg-cyan-50 dark:hover:bg-cyan-900/20 hover:ring-2 hover:ring-cyan-500'
                     : 'hover:bg-gray-50 dark:hover:bg-gray-700'
                 }`}
                 onClick={isClickable ? onAccuracyClick : undefined}
