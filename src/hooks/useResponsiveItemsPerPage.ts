@@ -1,6 +1,8 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
+
+const RESIZE_DEBOUNCE_MS = 100
 
 /**
  * 響應式每頁項目數量 Hook
@@ -13,6 +15,7 @@ import { useState, useEffect } from 'react'
  */
 export function useResponsiveItemsPerPage(): number {
   const [itemsPerPage, setItemsPerPage] = useState<number>(24) // 預設桌面數量
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   useEffect(() => {
     // 計算當前應該使用的數量
@@ -37,15 +40,23 @@ export function useResponsiveItemsPerPage(): number {
     // 初始設定
     setItemsPerPage(calculateItemsPerPage())
 
-    // 監聽視窗大小變化
+    // 帶 debounce 的 resize handler
     const handleResize = () => {
-      setItemsPerPage(calculateItemsPerPage())
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
+      timeoutRef.current = setTimeout(() => {
+        setItemsPerPage(calculateItemsPerPage())
+      }, RESIZE_DEBOUNCE_MS)
     }
 
     window.addEventListener('resize', handleResize, { passive: true })
 
     // 清理監聯器
     return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
       window.removeEventListener('resize', handleResize)
     }
   }, [])

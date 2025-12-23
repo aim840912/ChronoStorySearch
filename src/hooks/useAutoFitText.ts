@@ -2,6 +2,9 @@
 
 import { useRef, useState, useLayoutEffect, useCallback } from 'react'
 
+// Debounce 延遲時間（毫秒）- 用於 ResizeObserver
+const RESIZE_DEBOUNCE_MS = 150
+
 interface UseAutoFitTextOptions {
   /** 文字內容（用於觸發重新計算） */
   text: string
@@ -56,8 +59,8 @@ export function useAutoFitText({
   const ref = useRef<HTMLElement | null>(null)
   const [fontSize, setFontSize] = useState(maxFontSize)
   const [isReady, setIsReady] = useState(false)
-  // 追蹤 ResizeObserver 的 raf，確保可以在 cleanup 時取消
-  const resizeRafIdRef = useRef<number | null>(null)
+  // 追蹤 ResizeObserver 的 debounce timeout，確保可以在 cleanup 時取消
+  const resizeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const calculateFontSize = useCallback(() => {
     const element = ref.current
@@ -109,29 +112,30 @@ export function useAutoFitText({
     return () => cancelAnimationFrame(rafId)
   }, [text, calculateFontSize, maxFontSize])
 
-  // 監聯容器大小變化
+  // 監聯容器大小變化（使用 debounce 避免頻繁重新計算）
   useLayoutEffect(() => {
     const element = ref.current
     if (!element) return
 
     const resizeObserver = new ResizeObserver(() => {
-      // 取消前一個 pending 的 raf（防抖處理）
-      if (resizeRafIdRef.current !== null) {
-        cancelAnimationFrame(resizeRafIdRef.current)
+      // 取消前一個 pending 的 timeout（debounce 處理）
+      if (resizeTimeoutRef.current !== null) {
+        clearTimeout(resizeTimeoutRef.current)
       }
-      resizeRafIdRef.current = requestAnimationFrame(() => {
-        resizeRafIdRef.current = null
+      // 使用 setTimeout 進行 debounce，避免 resize 期間頻繁觸發
+      resizeTimeoutRef.current = setTimeout(() => {
+        resizeTimeoutRef.current = null
         calculateFontSize()
-      })
+      }, RESIZE_DEBOUNCE_MS)
     })
 
     resizeObserver.observe(element.parentElement || element)
 
     return () => {
-      // 確保取消 pending 的 raf
-      if (resizeRafIdRef.current !== null) {
-        cancelAnimationFrame(resizeRafIdRef.current)
-        resizeRafIdRef.current = null
+      // 確保取消 pending 的 timeout
+      if (resizeTimeoutRef.current !== null) {
+        clearTimeout(resizeTimeoutRef.current)
+        resizeTimeoutRef.current = null
       }
       resizeObserver.disconnect()
     }

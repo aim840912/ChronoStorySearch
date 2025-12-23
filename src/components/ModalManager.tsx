@@ -10,6 +10,7 @@ import { AccuracyCalculatorModal } from '@/components/AccuracyCalculatorModal'
 import { GameCommandsModal } from '@/components/GameCommandsModal'
 import { MerchantShopModal } from '@/components/MerchantShopModal'
 import { PrivacySettingsModal } from '@/components/settings/PrivacySettingsModal'
+import { GlobalSettingsModal } from '@/components/settings/GlobalSettingsModal'
 import { AboutModal } from '@/components/AboutModal'
 import { DevApiTester } from '@/components/dev/DevApiTester'
 import { ScreenRecorderModal } from '@/components/tools/screen-recorder'
@@ -99,6 +100,11 @@ interface ModalManagerProps {
   openAboutModal: () => void
   closeAboutModal: () => void
 
+  // Global Settings Modal（外部控制）
+  isGlobalSettingsOpen: boolean
+  openGlobalSettings: () => void
+  closeGlobalSettings: () => void
+
   // API Tester Modal（外部控制，僅開發環境）
   isApiTesterOpen: boolean
   openApiTester: () => void
@@ -171,11 +177,14 @@ export const ModalManager = memo(function ModalManager({
   openExpTrackerModal: _openExpTrackerModal,
   closeExpTrackerModal,
   isPrivacyModalOpen,
-  openPrivacyModal: _openPrivacyModal,
+  openPrivacyModal,
   closePrivacyModal,
   isAboutModalOpen,
   openAboutModal: _openAboutModal,
   closeAboutModal,
+  isGlobalSettingsOpen,
+  openGlobalSettings: _openGlobalSettings,
+  closeGlobalSettings,
   isApiTesterOpen,
   openApiTester: _openApiTester,
   closeApiTester,
@@ -244,6 +253,13 @@ export const ModalManager = memo(function ModalManager({
       <AboutModal
         isOpen={isAboutModalOpen}
         onClose={closeAboutModal}
+      />
+
+      {/* Global Settings Modal */}
+      <GlobalSettingsModal
+        isOpen={isGlobalSettingsOpen}
+        onClose={closeGlobalSettings}
+        onOpenPrivacySettings={openPrivacyModal}
       />
 
       {/* Confirm Clear Modal */}
