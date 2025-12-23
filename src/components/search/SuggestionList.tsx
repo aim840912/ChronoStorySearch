@@ -126,9 +126,17 @@ export function SuggestionList({
               ) : (
                 /* 其他類型的顯示 */
                 <>
-                  <p className="text-sm font-medium text-gray-900 dark:text-white">
-                    {suggestion.name}
-                  </p>
+                  <div className="flex items-center gap-2">
+                    <p className="text-sm font-medium text-gray-900 dark:text-white">
+                      {suggestion.name}
+                    </p>
+                    {/* 未上線標籤 */}
+                    {suggestion.type === 'monster' && suggestion.inGame === false && (
+                      <span className="inline-flex items-center px-1.5 py-0.5 rounded-full bg-amber-500/90 text-white text-[10px] font-medium">
+                        {t('card.unreleased')}
+                      </span>
+                    )}
+                  </div>
                   <p className="text-xs text-gray-500 dark:text-gray-400">
                     {suggestion.type === 'monster'
                       ? `${t('suggestion.monster')} · ${suggestion.count} ${t('suggestion.records')}`

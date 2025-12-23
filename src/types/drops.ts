@@ -26,6 +26,7 @@ export interface DropsEssential {
   chance: number
   minQty: number
   maxQty: number
+  inGame?: boolean  // 怪物是否已在遊戲中（undefined 視為 true）
 }
 
 // 按物品 ID 分類的掉落資料中的怪物項目（來自 drops-by-item/*.json）
@@ -57,6 +58,7 @@ export interface MonsterIndexItem {
   chineseMobName: string | null
   isBoss: boolean
   dropCount: number
+  inGame?: boolean  // 是否已在遊戲中（undefined 視為 true）
 }
 
 // 怪物索引資料結構
@@ -122,6 +124,8 @@ export interface SuggestionItem {
   // Quiz 專用欄位
   questionEn?: string      // 英文題目
   answerEn?: string        // 英文答案
+  // 怪物專用欄位
+  inGame?: boolean         // 是否已在遊戲中（undefined 視為 true）
 }
 
 // 最愛怪物介面

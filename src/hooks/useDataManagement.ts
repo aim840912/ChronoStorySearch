@@ -116,6 +116,23 @@ export function useDataManagement() {
           const monster = monsterMap.get(mobId)
           if (!monster) return
 
+          // 如果沒有掉落物品，仍然建立一筆虛擬記錄（讓怪物可以被搜尋）
+          if ((itemIds as number[]).length === 0) {
+            reconstructedDrops.push({
+              mobId: monster.mobId,
+              mobName: monster.mobName,
+              chineseMobName: monster.chineseMobName,
+              itemId: -1,  // 虛擬物品 ID
+              itemName: '',
+              chineseItemName: null,
+              chance: 0,
+              minQty: 0,
+              maxQty: 0,
+              inGame: monster.inGame,
+            })
+            return
+          }
+
           itemIds.forEach((itemId: number) => {
             const item = itemMap.get(itemId)
             // 如果物品不在索引中，使用預設值
@@ -133,6 +150,8 @@ export function useDataManagement() {
               chance: 0,
               minQty: 1,
               maxQty: 1,
+              // 怪物上線狀態
+              inGame: monster.inGame,
             })
           })
         })
