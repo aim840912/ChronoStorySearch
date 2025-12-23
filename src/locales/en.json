@@ -1,7 +1,7 @@
 {
   "app.title": "ChronoStory",
   "app.description": "Explore your MapleStory companions, view character details, jobs, levels and more",
-  "search.placeholder": "Search monsters or items...",
+  "search.placeholder": "Search monsters or items... Also supports 3rd job quiz",
   "search.placeholder.market": "Search market items...",
   "search.placeholder.detail": "Supports multiple keywords",
   "search.clear": "Clear",
@@ -192,6 +192,8 @@
   "monster.poison_status_immunity": "Poison Status Immune",
   "monster.stats": "Monster Stats",
   "monster.noStats": "No stats available",
+  "monster.viewGrid": "Grid View",
+  "monster.viewList": "List View",
   "monster.info": "Monster Info",
   "monster.drops": "Dropped Items",
   "monster.dropFilter.all": "All",

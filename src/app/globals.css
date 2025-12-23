@@ -145,6 +145,23 @@ body::-webkit-scrollbar {
 }
 
 /* ========================================
+   水平彈跳動畫（用於迴避率箭頭提示）
+   ======================================== */
+
+@keyframes bounce-x {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(25%);
+  }
+}
+
+.animate-bounce-x {
+  animation: bounce-x 1s infinite;
+}
+
+/* ========================================
    減少動畫偏好支援（系統設定）
    ======================================== */
 
@@ -155,6 +172,10 @@ body::-webkit-scrollbar {
   }
 
   .animate-heartbeat {
+    animation: none;
+  }
+
+  .animate-bounce-x {
     animation: none;
   }
 }
