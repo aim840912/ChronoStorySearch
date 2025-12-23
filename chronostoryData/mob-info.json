@@ -2353,7 +2353,7 @@
   },
   {
     "mob": {
-      "InGame": null,
+      "InGame": true,
       "id": "6230201",
       "name": "Separated Dark Pepe",
       "maxHP": 7800,
@@ -3168,7 +3168,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3000005",
       "name": "Brown Teddy",
       "maxHP": 950,
@@ -3192,7 +3192,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3110101",
       "name": "Pink Teddy",
       "maxHP": 1050,
@@ -3216,7 +3216,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3110102",
       "name": "Ratz",
       "maxHP": 1000,
@@ -3240,7 +3240,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3210204",
       "name": "Roloduck",
       "maxHP": 1200,
@@ -3264,7 +3264,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3210205",
       "name": "Black Ratz",
       "maxHP": 1150,
@@ -3288,7 +3288,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3210207",
       "name": "Tick",
       "maxHP": 1100,
@@ -3312,7 +3312,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3210203",
       "name": "Panda Teddy",
       "maxHP": 1400,
@@ -3336,7 +3336,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3230306",
       "name": "Chronos",
       "maxHP": 1750,
@@ -3360,7 +3360,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3230305",
       "name": "Toy Trojan",
       "maxHP": 1920,
@@ -3384,7 +3384,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "4230113",
       "name": "Tick-Tock",
       "maxHP": 1900,
@@ -3408,7 +3408,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "4230111",
       "name": "Robo",
       "maxHP": 2000,
@@ -3432,7 +3432,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "4230114",
       "name": "Platoon Chronos",
       "maxHP": 2050,
@@ -3456,7 +3456,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "4230112",
       "name": "Master Robo",
       "maxHP": 2450,
@@ -3480,7 +3480,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "4230115",
       "name": "Master Chronos",
       "maxHP": 2600,
@@ -3504,7 +3504,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "5220003",
       "name": "Timer",
       "maxHP": 21000,
@@ -3528,7 +3528,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "6130200",
       "name": "Buffy",
       "maxHP": 7400,
@@ -3552,7 +3552,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "6230400",
       "name": "Soul Teddy",
       "maxHP": 7600,
@@ -3576,7 +3576,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "6230300",
       "name": "Lazy Buffy",
       "maxHP": 9400,
@@ -3600,7 +3600,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "6230500",
       "name": "Master Soul Teddy",
       "maxHP": 11000,
@@ -3624,7 +3624,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "8140200",
       "name": "Klock",
       "maxHP": 15000,
@@ -3648,7 +3648,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "6300100",
       "name": "Buffoon",
       "maxHP": 16000,
@@ -3672,7 +3672,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "8140300",
       "name": "Dark Klock",
       "maxHP": 18000,
@@ -3696,7 +3696,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "6400100",
       "name": "Deep Buffoon",
       "maxHP": 19000,
@@ -3720,7 +3720,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "7140000",
       "name": "Ghost Pirate",
       "maxHP": 30000,
@@ -3744,7 +3744,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "7130010",
       "name": "Death Teddy",
       "maxHP": 32000,
@@ -3768,7 +3768,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "7160000",
       "name": "Dual Ghost Pirate",
       "maxHP": 35000,
@@ -3792,7 +3792,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "7130300",
       "name": "Master Death Teddy",
       "maxHP": 40000,
@@ -3816,7 +3816,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "8141000",
       "name": "Spirit Viking",
       "maxHP": 50000,
@@ -3840,7 +3840,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "8142000",
       "name": "Phantom Watch",
       "maxHP": 53000,
@@ -3864,7 +3864,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "8141100",
       "name": "Gigantic Spirit Viking",
       "maxHP": 58000,
@@ -3888,7 +3888,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "8143000",
       "name": "Grim Phantom Watch",
       "maxHP": 60000,
@@ -3912,7 +3912,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "8160000",
       "name": "Gatekeeper",
       "maxHP": 78000,
@@ -3936,7 +3936,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "8170000",
       "name": "Thanatos",
       "maxHP": 70000,
@@ -3960,7 +3960,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "8500002",
       "name": "Papulatus",
       "maxHP": 1590000,

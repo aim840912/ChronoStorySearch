@@ -9,6 +9,7 @@ interface FavoriteMonstersListProps {
   monsters: UniqueMonster[]
   hasSearchTerm: boolean
   mobLevelMap: Map<number, number | null>
+  mobInGameMap: Map<number, boolean>
   onCardClick: (mobId: number, mobName: string) => void
   onToggleFavorite: (mobId: number, mobName: string) => void
   onClearClick: () => void
@@ -22,6 +23,7 @@ export function FavoriteMonstersList({
   monsters,
   hasSearchTerm,
   mobLevelMap,
+  mobInGameMap,
   onCardClick,
   onToggleFavorite,
   onClearClick,
@@ -67,6 +69,7 @@ export function FavoriteMonstersList({
             onToggleFavorite={onToggleFavorite}
             level={mobLevelMap.get(monster.mobId) ?? null}
             index={index}
+            inGame={mobInGameMap.get(monster.mobId) ?? true}
           />
         ))}
       </div>

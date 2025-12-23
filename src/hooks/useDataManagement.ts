@@ -261,6 +261,21 @@ export function useDataManagement() {
     return levelMap
   }, [])
 
+  // 建立怪物上線狀態 Map (mobId -> InGame)
+  const mobInGameMap = useMemo(() => {
+    const inGameMap = new Map<number, boolean>()
+    const mobInfoArray = mobInfoData as MobInfo[]
+
+    mobInfoArray.forEach((info) => {
+      const mobId = parseInt(info.mob.id, 10)
+      if (!isNaN(mobId)) {
+        inGameMap.set(mobId, info.mob.InGame)
+      }
+    })
+
+    return inGameMap
+  }, [])
+
   // 建立怪物資訊 Map (mobId -> MobInfo)
   const mobInfoMap = useMemo(() => {
     const infoMap = new Map<number, MobInfo>()
@@ -387,6 +402,7 @@ export function useDataManagement() {
 
     // 怪物與物品屬性資料
     mobLevelMap,
+    mobInGameMap,
     mobInfoMap,
     itemAttributesMap,
 

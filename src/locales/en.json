@@ -145,6 +145,7 @@
   "card.hideDropIcons": "Hide drop source icons",
   "card.expand": "Expand details",
   "card.collapse": "Collapse details",
+  "card.unreleased": "Unreleased",
   "share.button": "Share",
   "share.success": "Link copied to clipboard!",
   "share.error": "Failed to copy link",

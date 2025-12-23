@@ -19,6 +19,7 @@ interface MonsterCardProps {
   onToggleFavorite: (mobId: number, mobName: string) => void
   level?: number | null
   index?: number // 用於 staggered 動畫
+  inGame?: boolean // 是否已在遊戲中
 }
 
 /**
@@ -40,6 +41,7 @@ export const MonsterCard = memo(function MonsterCard({
   onToggleFavorite,
   level,
   index = 0,
+  inGame = true,
 }: MonsterCardProps) {
   void dropCount
   const { language, t } = useLanguage()
@@ -76,9 +78,16 @@ export const MonsterCard = memo(function MonsterCard({
       {/* 頂部區域：標籤 + 預覽圖示 + 愛心 */}
       <CardHeader
         badges={
-          level !== null && level !== undefined ? (
-            <TypeBadge variant="monster" level={level} />
-          ) : undefined
+          <div className="flex gap-1.5">
+            {level !== null && level !== undefined && (
+              <TypeBadge variant="monster" level={level} />
+            )}
+            {!inGame && (
+              <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-amber-500/90 text-white text-xs font-medium">
+                {t('card.unreleased')}
+              </span>
+            )}
+          </div>
         }
         allIcons={allIcons}
         favoriteButton={

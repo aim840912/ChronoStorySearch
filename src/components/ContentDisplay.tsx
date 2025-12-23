@@ -47,6 +47,7 @@ interface ContentDisplayProps {
     dropCount: number
   }>
   mobLevelMap: Map<number, number | null>
+  mobInGameMap: Map<number, boolean>
   onMonsterCardClick: (mobId: number, mobName: string) => void
   onToggleFavorite: (mobId: number, mobName: string) => void
   isFavorite: (mobId: number) => boolean
@@ -98,6 +99,7 @@ export const ContentDisplay = memo(function ContentDisplay({
   hasSearchTerm,
   filteredUniqueMonsters,
   mobLevelMap,
+  mobInGameMap,
   onMonsterCardClick,
   onToggleFavorite,
   isFavorite,
@@ -138,6 +140,7 @@ export const ContentDisplay = memo(function ContentDisplay({
           monsters={filteredUniqueMonsters}
           hasSearchTerm={hasSearchTerm}
           mobLevelMap={mobLevelMap}
+          mobInGameMap={mobInGameMap}
           onCardClick={onMonsterCardClick}
           onToggleFavorite={onToggleFavorite}
           onClearClick={onClearMonsters}
@@ -169,6 +172,7 @@ export const ContentDisplay = memo(function ContentDisplay({
           hasAnyData={hasAnyData}
           hasSearchTerm={hasSearchTerm}
           mobLevelMap={mobLevelMap}
+          mobInGameMap={mobInGameMap}
           itemAttributesMap={itemAttributesMap}
           merchantItemIndex={merchantItemIndex}
           onMonsterCardClick={onMonsterCardClick}
