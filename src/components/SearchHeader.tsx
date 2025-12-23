@@ -7,6 +7,7 @@ import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
 import { LanguageToggle } from '@/components/LanguageToggle'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { ToolbarDropdown, type ToolbarMenuGroup } from '@/components/toolbar'
+import { TipBubble } from '@/components/TipBubble'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import type { ImageFormat } from '@/lib/image-utils'
@@ -277,38 +278,84 @@ export const SearchHeader = memo(function SearchHeader({
         </h1>
         {/* 工具列和語言切換 - 大於 460px 時顯示在標題旁 */}
         <div className="hidden min-[460px]:flex gap-1.5 sm:gap-2 flex-shrink-0 items-center">
-          {/* 工具列下拉選單 */}
-          <ToolbarDropdown
-            label={t('toolbar.menu')}
-            icon={
-              <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            }
-            groups={toolbarGroups}
-            align="right"
-          />
-          <ThemeToggle />
-          <LanguageToggle />
+          {/* 工具列下拉選單 + 提示 */}
+          <div className="relative">
+            <ToolbarDropdown
+              label={t('toolbar.menu')}
+              icon={
+                <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              }
+              groups={toolbarGroups}
+              align="right"
+            />
+            <TipBubble
+              tipId="tools-dropdown"
+              prerequisiteTipId="search-job-advancement"
+              message={t('tip.toolsDropdown')}
+            />
+          </div>
+          {/* 光暗模式切換 + 提示 */}
+          <div className="relative">
+            <ThemeToggle />
+            <TipBubble
+              tipId="theme-toggle"
+              prerequisiteTipId="tools-dropdown"
+              message={t('tip.themeToggle')}
+            />
+          </div>
+          {/* 語言切換 + 提示 */}
+          <div className="relative">
+            <LanguageToggle />
+            <TipBubble
+              tipId="language-toggle"
+              prerequisiteTipId="theme-toggle"
+              message={t('tip.languageToggle')}
+            />
+          </div>
         </div>
       </div>
 
       {/* 工具列和語言切換 - 小於 460px 時顯示在搜尋欄上方 */}
       <div className="flex min-[460px]:hidden px-2 mb-1 max-w-7xl mx-auto">
         <div className="grid grid-cols-3 gap-1 w-full [&>button]:w-full [&>button]:justify-center [&>div]:w-full [&>div>button]:w-full [&>div>button]:justify-center">
-          {/* 工具列下拉選單 */}
-          <ToolbarDropdown
-            label={t('toolbar.menu')}
-            icon={
-              <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            }
-            groups={toolbarGroups}
-            align="left"
-          />
-          <ThemeToggle />
-          <LanguageToggle />
+          {/* 工具列下拉選單 + 提示 */}
+          <div className="relative">
+            <ToolbarDropdown
+              label={t('toolbar.menu')}
+              icon={
+                <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              }
+              groups={toolbarGroups}
+              align="left"
+            />
+            <TipBubble
+              tipId="tools-dropdown"
+              prerequisiteTipId="search-job-advancement"
+              message={t('tip.toolsDropdown')}
+            />
+          </div>
+          {/* 光暗模式切換 + 提示 */}
+          <div className="relative">
+            <ThemeToggle />
+            <TipBubble
+              tipId="theme-toggle"
+              prerequisiteTipId="tools-dropdown"
+              message={t('tip.themeToggle')}
+            />
+          </div>
+          {/* 語言切換 + 提示 */}
+          <div className="relative">
+            <LanguageToggle />
+            <TipBubble
+              tipId="language-toggle"
+              prerequisiteTipId="theme-toggle"
+              message={t('tip.languageToggle')}
+            />
+          </div>
         </div>
       </div>
 

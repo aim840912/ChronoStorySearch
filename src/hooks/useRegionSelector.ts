@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback, useRef } from 'react'
+import { useState, useCallback, useRef, useMemo } from 'react'
 import type {
   Region,
   NormalizedRegion,
@@ -141,18 +141,33 @@ export function useRegionSelector(): UseRegionSelectorReturn {
     }
   }, [isSelecting, pixelRegion, normalizeRegion])
 
-  return {
-    normalizedRegion,
-    pixelRegion,
-    isSelecting,
-    startSelection,
-    clearSelection,
-    setNormalizedRegion,
-    getPixelRegion,
-    handlers: {
+  // 使用 useMemo 確保回傳值穩定，避免每次渲染都產生新物件導致無限迴圈
+  return useMemo(
+    () => ({
+      normalizedRegion,
+      pixelRegion,
+      isSelecting,
+      startSelection,
+      clearSelection,
+      setNormalizedRegion,
+      getPixelRegion,
+      handlers: {
+        onMouseDown,
+        onMouseMove,
+        onMouseUp,
+      },
+    }),
+    [
+      normalizedRegion,
+      pixelRegion,
+      isSelecting,
+      startSelection,
+      clearSelection,
+      setNormalizedRegion,
+      getPixelRegion,
       onMouseDown,
       onMouseMove,
       onMouseUp,
-    },
-  }
+    ]
+  )
 }

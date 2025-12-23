@@ -99,7 +99,7 @@ export function useOcr(): UseOcrReturn {
 
       const canvas = getCanvas(sourceCanvas.width, sourceCanvas.height)
 
-      const ctx = canvas.getContext('2d')
+      const ctx = canvas.getContext('2d', { willReadFrequently: true })
       if (!ctx) return sourceCanvas
 
       ctx.drawImage(sourceCanvas, 0, 0)
@@ -187,7 +187,7 @@ export function useOcr(): UseOcrReturn {
 
         if (imageData instanceof ImageData) {
           sourceCanvas = getSourceCanvas(imageData.width, imageData.height)
-          const ctx = sourceCanvas.getContext('2d')
+          const ctx = sourceCanvas.getContext('2d', { willReadFrequently: true })
           if (ctx) {
             ctx.putImageData(imageData, 0, 0)
           }

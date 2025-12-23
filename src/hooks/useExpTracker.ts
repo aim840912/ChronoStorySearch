@@ -156,7 +156,7 @@ export function useExpTracker(
     // 使用複用的 Canvas（減少 GC 壓力）
     const canvas = getCanvas(region.width * SCALE, region.height * SCALE)
 
-    const ctx = canvas.getContext('2d')
+    const ctx = canvas.getContext('2d', { willReadFrequently: true })
     if (!ctx) return
 
     // 調試日誌 - 包含 video 播放狀態

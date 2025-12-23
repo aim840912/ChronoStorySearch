@@ -2,6 +2,7 @@
 
 import { useLanguage } from '@/contexts/LanguageContext'
 import { SearchInput, SuggestionList, FilterTabs, ActionButtons } from '@/components/search'
+import { TipBubble } from '@/components/TipBubble'
 import type { RefObject, KeyboardEvent } from 'react'
 import type { SuggestionItem, SearchTypeFilter, FilterMode, AdvancedFilterOptions } from '@/types'
 
@@ -159,7 +160,7 @@ export function SearchBar({
     <div className="max-w-7xl mx-auto mb-6 px-2 sm:px-4">
       {/* 搜尋輸入框行 */}
       <div className="flex gap-3 items-center mb-3">
-        {/* 搜尋輸入框 + 建議列表 */}
+        {/* 搜尋輸入框 + 建議列表 + 首次使用提示 */}
         <div className="relative flex-1" ref={searchContainerRef}>
           <SearchInput
             value={searchTerm}
@@ -174,6 +175,11 @@ export function SearchBar({
             focusedIndex={focusedIndex}
             onSelect={onSelectSuggestion}
             onFocusedIndexChange={onFocusedIndexChange}
+          />
+          {/* 首次使用提示 */}
+          <TipBubble
+            tipId="search-job-advancement"
+            message={t('tip.searchJobAdvancement')}
           />
         </div>
 

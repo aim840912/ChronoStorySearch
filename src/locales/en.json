@@ -707,5 +707,12 @@
   "settings.managePrivacy": "Manage Privacy Settings",
   "monster.imageFormat.stand": "Stand",
   "monster.imageFormat.hit": "Hit",
-  "monster.imageFormat.die": "Die"
+  "monster.imageFormat.die": "Die",
+  "tip.searchJobAdvancement": "You can also search for 3rd job advancement quizzes!",
+  "tip.toolsDropdown": "There are some useful features here! Let me know if you have any questions, thanks!",
+  "tip.themeToggle": "Click here to switch between dark/light mode",
+  "tip.languageToggle": "Click here to switch language",
+  "tip.monsterStatsSettings": "Click here to customize display order",
+  "tip.monsterStatsDrag": "Drag to reorder",
+  "warning.testingFeature": "Currently in testing, may have issues"
 }

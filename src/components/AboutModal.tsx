@@ -50,10 +50,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
                 alt="ChronoStory Logo"
                 className="w-10 h-10"
               />
-              <div>
-                <h2 className="text-2xl font-bold text-white">{t('about.title')}</h2>
-                <p className="text-indigo-100 text-sm mt-1">{t('about.subtitle')}</p>
-              </div>
+              <h2 className="text-2xl font-bold text-white">{t('toolbar.aboutPage')}</h2>
             </div>
             {/* 關閉按鈕 */}
             <button
@@ -77,7 +74,14 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
             </svg>
             <div>
               <p className="text-sm font-medium text-gray-900 dark:text-white">{t('about.dataSource')}</p>
-              <p className="text-sm text-gray-500 dark:text-gray-400">{t('about.dataSourceDesc')}</p>
+              <a
+                href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpKuZGJQIFFxSi6kzYx4ALI0MQborpLEkh3J1qIGSd0Bw7U4NYg5CK-3ESzyK580z4D8NO59SUeC3k/pubhtml?gid=1888753114&single=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline"
+              >
+                {t('about.dataSourceDesc')}
+              </a>
             </div>
           </div>
 

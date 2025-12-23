@@ -169,6 +169,11 @@ export function ScreenRecorderModal({
           </button>
         </div>
 
+        {/* 測試警告 */}
+        <div className="px-4 py-2 bg-red-600 text-white text-center text-sm font-medium">
+          {contextT('warning.testingFeature')}
+        </div>
+
         {/* Content */}
         <div className="flex-1 overflow-y-auto p-4 space-y-6">
           {/* 瀏覽器不支援提示 */}
