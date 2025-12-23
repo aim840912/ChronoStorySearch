@@ -60,6 +60,15 @@ export default function Home() {
   // 遊戲指令 Modal 狀態
   const [isGameCommandsOpen, setIsGameCommandsOpen] = useState(false)
 
+  // 隱私設定 Modal 狀態
+  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false)
+
+  // 關於本站 Modal 狀態
+  const [isAboutModalOpen, setIsAboutModalOpen] = useState(false)
+
+  // API 測試工具 Modal 狀態（僅開發環境）
+  const [isApiTesterOpen, setIsApiTesterOpen] = useState(false)
+
   // 計算已啟用的進階篩選數量
   const advancedFilterCount = [
     advancedFilter.itemCategories.length > 0 ? 1 : 0,
@@ -431,6 +440,15 @@ export default function Home() {
           selectedMerchantMapId={selectedMerchantMapId}
           onMerchantSelect={handleMerchantSelect}
           onMerchantClose={handleMerchantClose}
+          // Toolbar callbacks
+          onExpTrackerClick={modals.openExpTrackerModal}
+          onScreenRecorderClick={modals.openScreenRecorderModal}
+          onAccuracyCalculatorClick={() => modals.openAccuracyCalculator()}
+          onGameCommandsClick={() => setIsGameCommandsOpen(true)}
+          onPrivacySettingsClick={() => setIsPrivacyModalOpen(true)}
+          onBugReportClick={modals.openBugReportModal}
+          onAboutClick={() => setIsAboutModalOpen(true)}
+          onApiTesterClick={() => setIsApiTesterOpen(true)}
         />
 
         {/* 轉蛋抽獎區域 - 選擇轉蛋機後顯示 */}
@@ -542,6 +560,15 @@ export default function Home() {
         isExpTrackerModalOpen={modals.isExpTrackerModalOpen}
         openExpTrackerModal={modals.openExpTrackerModal}
         closeExpTrackerModal={modals.closeExpTrackerModal}
+        isPrivacyModalOpen={isPrivacyModalOpen}
+        openPrivacyModal={() => setIsPrivacyModalOpen(true)}
+        closePrivacyModal={() => setIsPrivacyModalOpen(false)}
+        isAboutModalOpen={isAboutModalOpen}
+        openAboutModal={() => setIsAboutModalOpen(true)}
+        closeAboutModal={() => setIsAboutModalOpen(false)}
+        isApiTesterOpen={isApiTesterOpen}
+        openApiTester={() => setIsApiTesterOpen(true)}
+        closeApiTester={() => setIsApiTesterOpen(false)}
         showBackToTop={showBackToTop}
         scrollToTop={scrollToTop}
         toastMessage={toast.message}
