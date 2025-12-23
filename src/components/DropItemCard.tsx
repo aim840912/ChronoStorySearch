@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useRef, useEffect } from 'react'
 import type { DropItem, ItemAttributesEssential } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
@@ -38,14 +38,34 @@ export function DropItemCard({
 
   // 取得掉落此物品的怪物列表（用於顯示圖示）
   const { getMobsForItem } = useDropRelations()
+  const iconsContainerRef = useRef<HTMLDivElement>(null)
+  const [maxIcons, setMaxIcons] = useState(8)
+
+  // 根據容器寬度動態計算可顯示的圖示數量
+  useEffect(() => {
+    const container = iconsContainerRef.current
+    if (!container || !showIcons) return
+
+    const observer = new ResizeObserver((entries) => {
+      const width = entries[0].contentRect.width
+      const iconWidth = 32 // w-7 (28px) + gap-1 (4px)
+      const reservedWidth = 40 // "+N" 文字預留空間
+      const count = Math.floor((width - reservedWidth) / iconWidth)
+      setMaxIcons(Math.max(1, Math.min(count, 8)))
+    })
+
+    observer.observe(container)
+    return () => observer.disconnect()
+  }, [showIcons])
+
   const dropMobIcons = useMemo(() => {
     if (!showIcons) return []
     const mobIds = getMobsForItem(drop.itemId)
-    return mobIds.slice(0, 8).map((mobId) => ({
+    return mobIds.slice(0, maxIcons).map((mobId) => ({
       id: mobId,
       imageUrl: getMonsterImageUrl(mobId, { format: 'png' }),
     }))
-  }, [showIcons, drop.itemId, getMobsForItem])
+  }, [showIcons, drop.itemId, getMobsForItem, maxIcons])
   const qtyRange =
     drop.minQty === drop.maxQty ? `${drop.minQty}` : `${drop.minQty}-${drop.maxQty}`
 
@@ -128,20 +148,20 @@ export function DropItemCard({
       </button>
 
       {/* 掉落來源圖示區域 */}
-      {showIcons && dropMobIcons.length > 0 && (
-        <div className="flex items-center gap-1 mb-3 flex-wrap">
+      {showIcons && (
+        <div ref={iconsContainerRef} className="flex items-center gap-1 mb-3">
           {dropMobIcons.map((icon) => (
             <img
               key={icon.id}
               src={icon.imageUrl}
               alt=""
-              className="w-7 h-7 object-contain"
+              className="w-7 h-7 object-contain flex-shrink-0"
               loading="lazy"
             />
           ))}
-          {getMobsForItem(drop.itemId).length > 8 && (
-            <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">
-              +{getMobsForItem(drop.itemId).length - 8}
+          {getMobsForItem(drop.itemId).length > maxIcons && (
+            <span className="text-xs text-gray-500 dark:text-gray-400 font-medium flex-shrink-0">
+              +{getMobsForItem(drop.itemId).length - maxIcons}
             </span>
           )}
         </div>

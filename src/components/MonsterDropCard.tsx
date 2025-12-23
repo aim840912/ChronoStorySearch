@@ -1,6 +1,6 @@
 'use client'
 
-import { memo, useMemo } from 'react'
+import { memo, useMemo, useRef, useEffect, useState } from 'react'
 import type { DropItem } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
@@ -39,14 +39,34 @@ export const MonsterDropCard = memo(function MonsterDropCard({
 
   // 取得此怪物掉落的卷軸列表（用於顯示圖示）
   const { getScrollsForMob } = useDropRelations()
+  const iconsContainerRef = useRef<HTMLDivElement>(null)
+  const [maxIcons, setMaxIcons] = useState(8)
+
+  // 根據容器寬度動態計算可顯示的圖示數量
+  useEffect(() => {
+    const container = iconsContainerRef.current
+    if (!container || !showIcons) return
+
+    const observer = new ResizeObserver((entries) => {
+      const width = entries[0].contentRect.width
+      const iconWidth = 32 // w-7 (28px) + gap-1 (4px)
+      const reservedWidth = 40 // "+N" 文字預留空間
+      const count = Math.floor((width - reservedWidth) / iconWidth)
+      setMaxIcons(Math.max(1, Math.min(count, 8)))
+    })
+
+    observer.observe(container)
+    return () => observer.disconnect()
+  }, [showIcons])
+
   const scrollIcons = useMemo(() => {
     if (!showIcons) return []
     const scrolls = getScrollsForMob(drop.mobId)
-    return scrolls.slice(0, 8).map((scroll) => ({
+    return scrolls.slice(0, maxIcons).map((scroll) => ({
       id: scroll.id,
       imageUrl: getItemImageUrl(scroll.id, { itemName: scroll.name }),
     }))
-  }, [showIcons, drop.mobId, getScrollsForMob])
+  }, [showIcons, drop.mobId, getScrollsForMob, maxIcons])
   const totalScrolls = useMemo(() => {
     if (!showIcons) return 0
     return getScrollsForMob(drop.mobId).length
@@ -97,20 +117,20 @@ export const MonsterDropCard = memo(function MonsterDropCard({
       </button>
 
       {/* 掉落卷軸圖示區域 */}
-      {showIcons && scrollIcons.length > 0 && (
-        <div className="flex items-center gap-1 mb-3 flex-wrap">
+      {showIcons && (
+        <div ref={iconsContainerRef} className="flex items-center gap-1 mb-3">
           {scrollIcons.map((icon) => (
             <img
               key={icon.id}
               src={icon.imageUrl}
               alt=""
-              className="w-7 h-7 object-contain"
+              className="w-7 h-7 object-contain flex-shrink-0"
               loading="lazy"
             />
           ))}
-          {totalScrolls > 8 && (
-            <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">
-              +{totalScrolls - 8}
+          {totalScrolls > maxIcons && (
+            <span className="text-xs text-gray-500 dark:text-gray-400 font-medium flex-shrink-0">
+              +{totalScrolls - maxIcons}
             </span>
           )}
         </div>
