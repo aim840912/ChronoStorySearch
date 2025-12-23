@@ -21,6 +21,7 @@ export const STORAGE_KEYS = {
   SCREEN_RECORDER: 'chronostory-screen-recorder',
   EXP_TRACKER: 'chronostory-exp-tracker',
   EXP_TRACKER_FLOATING: 'chronostory-exp-tracker-floating',
+  TIPS_SHOWN: 'chronostory-tips-shown',
 } as const
 
 /**
@@ -262,4 +263,23 @@ export function getExpTrackerFloatingState(): ExpTrackerFloatingState {
 
 export function setExpTrackerFloatingState(state: ExpTrackerFloatingState): boolean {
   return setStorageItem(STORAGE_KEYS.EXP_TRACKER_FLOATING, state)
+}
+
+// 首次使用提示追蹤
+export function getTipsShown(): string[] {
+  return getStorageItem<string[]>(STORAGE_KEYS.TIPS_SHOWN, [])
+}
+
+export function hasTipBeenShown(tipId: string): boolean {
+  const tipsShown = getTipsShown()
+  return tipsShown.includes(tipId)
+}
+
+export function markTipAsShown(tipId: string): boolean {
+  const tipsShown = getTipsShown()
+  if (!tipsShown.includes(tipId)) {
+    tipsShown.push(tipId)
+    return setStorageItem(STORAGE_KEYS.TIPS_SHOWN, tipsShown)
+  }
+  return true
 }

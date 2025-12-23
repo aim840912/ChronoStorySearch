@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback, useRef, useEffect } from 'react'
+import { useState, useCallback, useRef, useEffect, useMemo } from 'react'
 import type {
   Region,
   AutoDetectResult,
@@ -164,7 +164,7 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
     (video: HTMLVideoElement, region: Region): HTMLCanvasElement | null => {
       const canvas = getCanvas(region.width * SCALE, region.height * SCALE)
 
-      const ctx = canvas.getContext('2d')
+      const ctx = canvas.getContext('2d', { willReadFrequently: true })
       if (!ctx) return null
 
       ctx.imageSmoothingEnabled = true
@@ -194,7 +194,7 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
       const canvas = captureRegionRaw(video, region)
       if (!canvas) return null
 
-      const ctx = canvas.getContext('2d')
+      const ctx = canvas.getContext('2d', { willReadFrequently: true })
       if (!ctx) return null
 
       // 圖像預處理：灰階 + 二值化
@@ -323,7 +323,7 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
 
       return null
     },
-    [captureRegion, captureRegionRaw, addDebugScan]
+    [captureRegion, captureRegionRaw, addDebugScan, isTimeout]
   )
 
   // 階段 2：從 EXP 位置往右找數字（嘗試多種預處理方式）
@@ -578,7 +578,7 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
 
       return null
     },
-    [captureRegion, captureRegionRaw, addDebugScan]
+    [captureRegion, captureRegionRaw, addDebugScan, isTimeout]
   )
 
   // 執行自動偵測
@@ -665,14 +665,27 @@ export function useAutoRegionDetector(): UseAutoRegionDetectorReturn {
     }
   }, [cleanup])
 
-  return {
-    isDetecting,
-    detect,
-    cancel,
-    cleanup,
-    debugMode,
-    setDebugMode,
-    debugScans,
-    clearDebugScans,
-  }
+  // 使用 useMemo 確保回傳值穩定，避免每次渲染都產生新物件導致無限迴圈
+  return useMemo(
+    () => ({
+      isDetecting,
+      detect,
+      cancel,
+      cleanup,
+      debugMode,
+      setDebugMode,
+      debugScans,
+      clearDebugScans,
+    }),
+    [
+      isDetecting,
+      detect,
+      cancel,
+      cleanup,
+      debugMode,
+      setDebugMode,
+      debugScans,
+      clearDebugScans,
+    ]
+  )
 }

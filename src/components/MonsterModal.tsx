@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useState, useRef } from 'react'
+import { useEffect, useMemo, useState, useRef, useCallback } from 'react'
 import type { DropsEssential, ItemAttributesEssential, JobClass } from '@/types'
 import { DropItemCard } from './DropItemCard'
 import { DropItemList } from './DropItemList'
@@ -103,13 +103,13 @@ export function MonsterModal({
   }, [monsterDropsDetailed])
 
   // 根據 itemAttributesMap 判斷物品類別
-  const getItemCategory = (itemId: number): 'equipment' | 'scroll' | 'other' => {
+  const getItemCategory = useCallback((itemId: number): 'equipment' | 'scroll' | 'other' => {
     const attrs = itemAttributesMap.get(itemId)
     if (!attrs) return 'other'
     if (attrs.equipment_category || attrs.type === 'Eqp') return 'equipment'
     if (attrs.scroll_category) return 'scroll'
     return 'other'
-  }
+  }, [itemAttributesMap])
 
   // 過濾後的掉落物品
   const filteredDrops = useMemo(() => {
@@ -130,7 +130,7 @@ export function MonsterModal({
     }
 
     return result
-  }, [monsterDrops, dropFilter, jobFilter, itemAttributesMap])
+  }, [monsterDrops, dropFilter, jobFilter, itemAttributesMap, getItemCategory])
 
   // 從 allDrops 查找怪物數據（用於獲取中英文名稱）
   const monsterData = useMemo(() => {

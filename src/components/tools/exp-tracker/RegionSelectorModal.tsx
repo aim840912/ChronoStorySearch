@@ -43,7 +43,8 @@ export const RegionSelectorModal = memo(function RegionSelectorModal({
     if (isOpen && initialRegion) {
       regionSelector.setNormalizedRegion(initialRegion)
     }
-  }, [isOpen, initialRegion])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOpen, initialRegion]) // regionSelector.setNormalizedRegion 是穩定的 setter
 
   // 設定視訊串流到 video 元素
   useEffect(() => {
@@ -87,7 +88,8 @@ export const RegionSelectorModal = memo(function RegionSelectorModal({
     if (isOpen && !regionSelector.normalizedRegion) {
       regionSelector.startSelection()
     }
-  }, [isOpen])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOpen]) // 只在 modal 開啟時檢查，regionSelector 的狀態變化不應重新觸發
 
   // 區域選擇完成時的處理
   const handleConfirm = useCallback(() => {

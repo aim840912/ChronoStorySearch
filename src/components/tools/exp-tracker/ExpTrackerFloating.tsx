@@ -161,7 +161,8 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
         minimizedResizable.setSize({ width: floatingState.minimizedWidth, height: 40 })
       }
     }
-  }, [isOpen])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOpen]) // 只在 modal 開啟時載入狀態，其他依賴（setPosition, resizable, regionSelector）都是穩定的 setter
 
   // 儲存設定
   useEffect(() => {
@@ -224,7 +225,8 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
         }
       })
     }
-  }, [ocr.isReady, ocr.recognize, tracker])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ocr.isReady, ocr.recognize, tracker.setOcrFunction]) // 只依賴需要的屬性，避免整個 ocr/tracker 物件變化時觸發
 
   // 設定視訊串流到 video 元素，並確保播放
   // 注意：當 RegionSelectorModal 開啟時，由 modal 處理 srcObject，避免競爭條件
@@ -279,6 +281,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
   }, [stream, isRegionModalOpen])
 
   // 設定 Video 和正規化區域（傳遞正規化座標，讓追蹤器動態計算像素座標）
+  const setVideoAndRegion = tracker.setVideoAndRegion
   useEffect(() => {
     if (videoRef.current && regionSelector.normalizedRegion && videoSize.width > 0) {
       if (process.env.NODE_ENV === 'development') {
@@ -288,65 +291,23 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
         })
       }
       // 傳遞正規化座標和當前視訊尺寸，讓追蹤器能夠動態適應視窗大小變化
-      tracker.setVideoAndRegion(videoRef.current, regionSelector.normalizedRegion, videoSize)
+      setVideoAndRegion(videoRef.current, regionSelector.normalizedRegion, videoSize)
     }
-  }, [regionSelector.normalizedRegion, videoSize, tracker.setVideoAndRegion])
+  }, [regionSelector.normalizedRegion, videoSize, setVideoAndRegion])
 
   // 追蹤期間視訊尺寸變化時，更新追蹤器的尺寸資訊
   // 這確保了調整遊戲視窗大小後，追蹤仍能正確運作
+  const { isTracking, updateVideoSize } = tracker
   useEffect(() => {
-    if (tracker.isTracking && videoSize.width > 0) {
+    if (isTracking && videoSize.width > 0) {
       if (process.env.NODE_ENV === 'development') {
         console.log('[EXP] Updating video size during tracking:', videoSize)
       }
-      tracker.updateVideoSize(videoSize)
+      updateVideoSize(videoSize)
     }
-  }, [videoSize, tracker.isTracking, tracker.updateVideoSize])
+  }, [videoSize, isTracking, updateVideoSize])
 
-  // 監聽 video 尺寸變化
-  useEffect(() => {
-    const video = videoRef.current
-    if (!video) return
-
-    const updateSize = () => {
-      // 使用 videoWidth/videoHeight（影片實際尺寸）
-      // 而非 clientWidth/clientHeight（DOM 顯示尺寸）
-      // 只在有效尺寸時更新，避免時序問題
-      if (video.videoWidth > 0 && video.videoHeight > 0) {
-        if (process.env.NODE_ENV === 'development') {
-          console.log('[EXP] Video size updated:', video.videoWidth, 'x', video.videoHeight)
-        }
-        setVideoSize({
-          width: video.videoWidth,
-          height: video.videoHeight,
-        })
-
-        // 如果有待處理的區域選擇，在 video 載入完成後自動偵測
-        if (pendingRegionSelectRef.current) {
-          pendingRegionSelectRef.current = false
-          // 延遲一幀確保 video 完全準備好（追蹤 ID 以便取消）
-          rafIdRef.current = requestAnimationFrame(() => {
-            rafIdRef.current = null
-            handleAutoDetect()
-          })
-        }
-      }
-    }
-
-    // 監聽 loadedmetadata 事件
-    video.addEventListener('loadedmetadata', updateSize)
-
-    // 如果影片已經載入（readyState >= 1），立即更新
-    if (video.readyState >= 1) {
-      updateSize()
-    }
-
-    return () => {
-      video.removeEventListener('loadedmetadata', updateSize)
-    }
-  }, [stream])
-
-  // 自動偵測 EXP 區域
+  // 自動偵測 EXP 區域（必須在 useEffect 之前定義，因為 useEffect 依賴它）
   // 注意：使用 video.videoWidth/videoHeight 而非 videoSize state
   // 避免 React state 批次更新造成的閉包陷阱（stale closure）
   const handleAutoDetect = useCallback(async () => {
@@ -399,6 +360,49 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
       setIsAutoDetecting(false)
     }
   }, [autoDetector, regionSelector, showToast, t])
+
+  // 監聽 video 尺寸變化
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+
+    const updateSize = () => {
+      // 使用 videoWidth/videoHeight（影片實際尺寸）
+      // 而非 clientWidth/clientHeight（DOM 顯示尺寸）
+      // 只在有效尺寸時更新，避免時序問題
+      if (video.videoWidth > 0 && video.videoHeight > 0) {
+        if (process.env.NODE_ENV === 'development') {
+          console.log('[EXP] Video size updated:', video.videoWidth, 'x', video.videoHeight)
+        }
+        setVideoSize({
+          width: video.videoWidth,
+          height: video.videoHeight,
+        })
+
+        // 如果有待處理的區域選擇，在 video 載入完成後自動偵測
+        if (pendingRegionSelectRef.current) {
+          pendingRegionSelectRef.current = false
+          // 延遲一幀確保 video 完全準備好（追蹤 ID 以便取消）
+          rafIdRef.current = requestAnimationFrame(() => {
+            rafIdRef.current = null
+            handleAutoDetect()
+          })
+        }
+      }
+    }
+
+    // 監聽 loadedmetadata 事件
+    video.addEventListener('loadedmetadata', updateSize)
+
+    // 如果影片已經載入（readyState >= 1），立即更新
+    if (video.readyState >= 1) {
+      updateSize()
+    }
+
+    return () => {
+      video.removeEventListener('loadedmetadata', updateSize)
+    }
+  }, [stream, handleAutoDetect])
 
   // 選擇遊戲視窗
   const selectWindow = useCallback(async () => {
@@ -590,6 +594,8 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
 
   // 元件卸載時確保清理所有資源（使用 ref 確保清理最新值）
   useEffect(() => {
+    // 在 effect 設置時捕獲 ref 值，確保清理時使用正確的參考
+    const video = videoRef.current
     return () => {
       // 取消 pending 的 requestAnimationFrame
       if (rafIdRef.current) {
@@ -603,12 +609,11 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
           track.stop()
         })
       }
-      if (videoRef.current) {
-        videoRef.current.srcObject = null
+      if (video) {
+        video.srcObject = null
       }
       trackerRef.current?.stop()
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []) // 空依賴，只在卸載時執行
 
   // 瀏覽器支援檢查
@@ -749,6 +754,11 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
             </svg>
           </button>
         </div>
+      </div>
+
+      {/* 測試警告 */}
+      <div className="shrink-0 px-3 py-2 bg-red-500 text-white text-center text-xs font-medium">
+        {contextT('warning.testingFeature')}
       </div>
 
       {/* 內容區 */}

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import versionsData from '@/../data/maplestory-io-versions.json'
 
 type ApiType = 'item' | 'mob'
@@ -42,16 +42,18 @@ export function DevApiTester({ isOpen, onClose }: DevApiTesterProps) {
   const [includeIcon, setIncludeIcon] = useState(false)
   const [result, setResult] = useState<ResultType | null>(null)
 
-  // 根據選擇的 region 取得可用版本
-  const regionVersions = typedVersionsData[region]
-  const availableVersions = Array.isArray(regionVersions) ? regionVersions : []
+  // 根據選擇的 region 取得可用版本（使用 useMemo 避免每次渲染都產生新陣列）
+  const availableVersions = useMemo(() => {
+    const regionVersions = typedVersionsData[region]
+    return Array.isArray(regionVersions) ? regionVersions : []
+  }, [region])
 
   // 當 region 改變時，重設 version 為該 region 的第一個版本
   useEffect(() => {
     if (availableVersions.length > 0 && !availableVersions.includes(version)) {
       setVersion(availableVersions[0])
     }
-  }, [region, availableVersions, version])
+  }, [availableVersions, version])
 
   // 產生 API URL
   const apiUrl = id
@@ -257,7 +259,6 @@ export function DevApiTester({ isOpen, onClose }: DevApiTesterProps) {
 
             {result.type === 'image' && (
               <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 flex items-center justify-center min-h-[200px]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={result.data}
                   alt="API Result"
