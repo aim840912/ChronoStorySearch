@@ -25,12 +25,16 @@ const regionMeta = typedVersionsData._meta as {
   regions: Record<string, string>
 }
 
+interface DevApiTesterProps {
+  isOpen: boolean
+  onClose: () => void
+}
+
 /**
  * 開發者 API 測試工具
  * 只在開發環境顯示，用於測試 maplestory.io API
  */
-export function DevApiTester() {
-  const [isOpen, setIsOpen] = useState(false)
+export function DevApiTester({ isOpen, onClose }: DevApiTesterProps) {
   const [apiType, setApiType] = useState<ApiType>('item')
   const [region, setRegion] = useState('GMS')
   const [version, setVersion] = useState('83')
@@ -118,184 +122,165 @@ export function DevApiTester() {
 
   // 只在開發環境顯示
   if (process.env.NODE_ENV !== 'development') return null
+  if (!isOpen) return null
 
   return (
-    <>
-      {/* 浮動按鈕 */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-[240px] sm:bottom-[312px] left-4 sm:left-6 z-40 p-3 sm:p-4 bg-orange-500 hover:bg-orange-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
-        aria-label="API 測試工具"
-        title="MapleStory.io API 測試工具（開發模式）"
-      >
-        <div className="flex items-center gap-2">
-          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+    <div className="fixed bottom-20 left-4 sm:left-6 z-50 bg-white dark:bg-gray-800 rounded-lg shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden">
+      {/* 標題列 */}
+      <div className="flex items-center justify-between px-4 py-3 bg-orange-500 text-white">
+        <h3 className="font-semibold text-sm">MapleStory.io API 測試</h3>
+        <button
+          onClick={onClose}
+          className="p-1 hover:bg-orange-600 rounded transition-colors"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
-          <span className="text-sm font-medium hidden group-hover:inline-block">API</span>
-        </div>
-      </button>
+        </button>
+      </div>
 
-      {/* 展開面板 */}
-      {isOpen && (
-        <div className="fixed bottom-20 left-4 sm:left-6 z-50 bg-white dark:bg-gray-800 rounded-lg shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden">
-          {/* 標題列 */}
-          <div className="flex items-center justify-between px-4 py-3 bg-orange-500 text-white">
-            <h3 className="font-semibold text-sm">MapleStory.io API 測試</h3>
+      {/* 內容區域 - 左右分欄 */}
+      <div className="flex">
+        {/* 左側：控制面板 */}
+        <div className="w-80 p-4 space-y-3">
+          {/* API 類型切換 */}
+          <div className="flex gap-2">
             <button
-              onClick={() => setIsOpen(false)}
-              className="p-1 hover:bg-orange-600 rounded transition-colors"
+              onClick={() => setApiType('item')}
+              className={`flex-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                apiType === 'item'
+                  ? 'bg-orange-500 text-white'
+                  : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+              }`}
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
+              物品 Item
+            </button>
+            <button
+              onClick={() => setApiType('mob')}
+              className={`flex-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                apiType === 'mob'
+                  ? 'bg-orange-500 text-white'
+                  : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+              }`}
+            >
+              怪物 Mob
             </button>
           </div>
 
-          {/* 內容區域 - 左右分欄 */}
-          <div className="flex">
-            {/* 左側：控制面板 */}
-            <div className="w-80 p-4 space-y-3">
-              {/* API 類型切換 */}
-              <div className="flex gap-2">
-                <button
-                  onClick={() => setApiType('item')}
-                  className={`flex-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    apiType === 'item'
-                      ? 'bg-orange-500 text-white'
-                      : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                  }`}
-                >
-                  物品 Item
-                </button>
-                <button
-                  onClick={() => setApiType('mob')}
-                  className={`flex-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    apiType === 'mob'
-                      ? 'bg-orange-500 text-white'
-                      : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                  }`}
-                >
-                  怪物 Mob
-                </button>
-              </div>
+          {/* /icon 開關 */}
+          <label className="flex items-center gap-2 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={includeIcon}
+              onChange={(e) => setIncludeIcon(e.target.checked)}
+              className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            />
+            <span className="text-sm text-gray-700 dark:text-gray-300">
+              /icon <span className="text-xs text-gray-500 dark:text-gray-400">(勾選取得圖片)</span>
+            </span>
+          </label>
 
-              {/* /icon 開關 */}
-              <label className="flex items-center gap-2 cursor-pointer">
-                <input
-                  type="checkbox"
-                  checked={includeIcon}
-                  onChange={(e) => setIncludeIcon(e.target.checked)}
-                  className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                />
-                <span className="text-sm text-gray-700 dark:text-gray-300">
-                  /icon <span className="text-xs text-gray-500 dark:text-gray-400">(勾選取得圖片)</span>
-                </span>
-              </label>
+          {/* Region 選擇 */}
+          <div>
+            <label className="block text-xs text-gray-500 dark:text-gray-400 mb-1">Region</label>
+            <select
+              value={region}
+              onChange={(e) => setRegion(e.target.value)}
+              className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 text-sm focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+            >
+              {regions.map((r) => (
+                <option key={r} value={r}>
+                  {r} - {regionMeta?.regions?.[r] || r}
+                </option>
+              ))}
+            </select>
+          </div>
 
-              {/* Region 選擇 */}
-              <div>
-                <label className="block text-xs text-gray-500 dark:text-gray-400 mb-1">Region</label>
-                <select
-                  value={region}
-                  onChange={(e) => setRegion(e.target.value)}
-                  className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 text-sm focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                >
-                  {regions.map((r) => (
-                    <option key={r} value={r}>
-                      {r} - {regionMeta?.regions?.[r] || r}
-                    </option>
-                  ))}
-                </select>
-              </div>
+          {/* Version 選擇 */}
+          <div>
+            <label className="block text-xs text-gray-500 dark:text-gray-400 mb-1">Version</label>
+            <select
+              value={version}
+              onChange={(e) => setVersion(e.target.value)}
+              className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 text-sm focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+            >
+              {availableVersions.map((v: string) => (
+                <option key={v} value={v}>{v}</option>
+              ))}
+            </select>
+          </div>
 
-              {/* Version 選擇 */}
-              <div>
-                <label className="block text-xs text-gray-500 dark:text-gray-400 mb-1">Version</label>
-                <select
-                  value={version}
-                  onChange={(e) => setVersion(e.target.value)}
-                  className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 text-sm focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                >
-                  {availableVersions.map((v: string) => (
-                    <option key={v} value={v}>{v}</option>
-                  ))}
-                </select>
-              </div>
-
-              {/* ID 輸入 */}
-              <div>
-                <label className="block text-xs text-gray-500 dark:text-gray-400 mb-1">
-                  {apiType === 'item' ? 'Item ID' : 'Mob ID'}
-                </label>
-                <div className="flex gap-2">
-                  <input
-                    type="text"
-                    value={id}
-                    onChange={(e) => setId(e.target.value)}
-                    onKeyDown={handleKeyDown}
-                    placeholder={apiType === 'item' ? '例: 1302000' : '例: 100100'}
-                    className="flex-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 text-sm focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                  />
-                  <button
-                    onClick={handleTest}
-                    disabled={!id}
-                    className="px-4 py-2 bg-orange-500 hover:bg-orange-600 disabled:bg-gray-300 dark:disabled:bg-gray-600 text-white rounded-lg text-sm font-medium transition-colors"
-                  >
-                    測試
-                  </button>
-                </div>
-              </div>
-
-              {/* URL 顯示 - 點擊複製 */}
-              {apiUrl && (
-                <button
-                  onClick={() => navigator.clipboard.writeText(apiUrl)}
-                  className="w-full text-left text-xs text-gray-500 dark:text-gray-400 break-all bg-gray-50 dark:bg-gray-900 p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer"
-                  title="點擊複製 URL"
-                >
-                  {apiUrl}
-                </button>
-              )}
+          {/* ID 輸入 */}
+          <div>
+            <label className="block text-xs text-gray-500 dark:text-gray-400 mb-1">
+              {apiType === 'item' ? 'Item ID' : 'Mob ID'}
+            </label>
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={id}
+                onChange={(e) => setId(e.target.value)}
+                onKeyDown={handleKeyDown}
+                placeholder={apiType === 'item' ? '例: 1302000' : '例: 100100'}
+                className="flex-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 text-sm focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              />
+              <button
+                onClick={handleTest}
+                disabled={!id}
+                className="px-4 py-2 bg-orange-500 hover:bg-orange-600 disabled:bg-gray-300 dark:disabled:bg-gray-600 text-white rounded-lg text-sm font-medium transition-colors"
+              >
+                測試
+              </button>
             </div>
+          </div>
 
-            {/* 右側：結果顯示區域 */}
-            {result && (
-              <div className="w-96 p-4 border-l border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900">
-                {result.type === 'loading' && (
-                  <div className="flex items-center justify-center h-full min-h-[200px]">
-                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-orange-500"></div>
-                  </div>
-                )}
+          {/* URL 顯示 - 點擊複製 */}
+          {apiUrl && (
+            <button
+              onClick={() => navigator.clipboard.writeText(apiUrl)}
+              className="w-full text-left text-xs text-gray-500 dark:text-gray-400 break-all bg-gray-50 dark:bg-gray-900 p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer"
+              title="點擊複製 URL"
+            >
+              {apiUrl}
+            </button>
+          )}
+        </div>
 
-                {result.type === 'image' && (
-                  <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 flex items-center justify-center min-h-[200px]">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={result.data}
-                      alt="API Result"
-                      className="max-w-full max-h-48 object-contain"
-                      onError={() => setResult({ type: 'error', data: '圖片載入失敗' })}
-                    />
-                  </div>
-                )}
+        {/* 右側：結果顯示區域 */}
+        {result && (
+          <div className="w-96 p-4 border-l border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900">
+            {result.type === 'loading' && (
+              <div className="flex items-center justify-center h-full min-h-[200px]">
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-orange-500"></div>
+              </div>
+            )}
 
-                {result.type === 'json' && (
-                  <pre className="bg-gray-900 text-green-400 p-3 rounded-lg text-xs overflow-auto max-h-[60vh]">
-                    {result.data}
-                  </pre>
-                )}
+            {result.type === 'image' && (
+              <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 flex items-center justify-center min-h-[200px]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={result.data}
+                  alt="API Result"
+                  className="max-w-full max-h-48 object-contain"
+                  onError={() => setResult({ type: 'error', data: '圖片載入失敗' })}
+                />
+              </div>
+            )}
 
-                {result.type === 'error' && (
-                  <div className="bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 p-3 rounded-lg text-xs">
-                    {result.data}
-                  </div>
-                )}
+            {result.type === 'json' && (
+              <pre className="bg-gray-900 text-green-400 p-3 rounded-lg text-xs overflow-auto max-h-[60vh]">
+                {result.data}
+              </pre>
+            )}
+
+            {result.type === 'error' && (
+              <div className="bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 p-3 rounded-lg text-xs">
+                {result.data}
               </div>
             )}
           </div>
-        </div>
-      )}
-    </>
+        )}
+      </div>
+    </div>
   )
 }
