@@ -49,6 +49,7 @@ export function useSearchLogic({
           type: 'monster',
           count: 1,
           id: drop.mobId, // 記錄怪物 ID
+          inGame: drop.inGame, // 是否已在遊戲中
         })
       }
 
@@ -65,6 +66,7 @@ export function useSearchLogic({
               type: 'monster',
               count: 1,
               id: drop.mobId, // 記錄怪物 ID
+              inGame: drop.inGame, // 是否已在遊戲中
             })
           }
         }
