@@ -61,7 +61,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-2">
         <div className="flex flex-wrap items-center justify-center gap-1 sm:gap-2 text-sm text-slate-300 dark:text-slate-400 text-center">
           <span className="inline-flex items-center gap-1">
-            <span className="hidden min-[420px]:inline">{t('footer.serverBy')}</span>
+            <span className="hidden min-[525px]:inline">{t('footer.serverBy')}</span>
             <Link
               href={discordInviteUrl}
               target="_blank"
@@ -85,12 +85,12 @@ export default function Footer() {
             title={t('footer.buyCoffee')}
           >
             <CoffeeIcon className="w-4 h-4" />
-            <span className="hidden min-[607px]:inline text-sm">{t('footer.buyCoffee')}</span>
+            <span className="hidden min-[768px]:inline text-sm">{t('footer.buyCoffee')}</span>
           </Link>
           <span className="text-slate-500 dark:text-slate-600 hidden sm:inline">
             |
           </span>
-          <span>
+          <span className="hidden min-[370px]:inline">
             {t('footer.dataSource')}{' '}
             <Link
               href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpKuZGJQIFFxSi6kzYx4ALI0MQborpLEkh3J1qIGSd0Bw7U4NYg5CK-3ESzyK580z4D8NO59SUeC3k/pubhtml?gid=1888753114&single=true"
@@ -101,6 +101,20 @@ export default function Footer() {
             >
               Google Sheets
               <ExternalLinkIcon className="w-3 h-3" />
+            </Link>
+          </span>
+          <span className="text-slate-500 dark:text-slate-600 hidden sm:inline">
+            |
+          </span>
+          <span>
+            {t('footer.assets')}{' '}
+            <Link
+              href="https://www.nexon.com/main/en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 dark:text-blue-500 dark:hover:text-blue-400 transition-colors"
+            >
+              NEXON
             </Link>
           </span>
         </div>

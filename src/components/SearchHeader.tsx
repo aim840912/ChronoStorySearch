@@ -209,6 +209,12 @@ export const SearchHeader = memo(function SearchHeader({
           onClick: toggleFormat,
           keepOpen: true,
         },
+      ],
+    },
+    {
+      id: 'about',
+      label: t('toolbar.about'),
+      items: [
         {
           id: 'privacy-settings',
           icon: (
@@ -219,12 +225,6 @@ export const SearchHeader = memo(function SearchHeader({
           label: t('toolbar.privacySettings'),
           onClick: () => onPrivacySettingsClick?.(),
         },
-      ],
-    },
-    {
-      id: 'about',
-      label: t('toolbar.about'),
-      items: [
         {
           id: 'bug-report',
           icon: (
