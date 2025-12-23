@@ -66,6 +66,9 @@ export default function Home() {
   // 關於本站 Modal 狀態
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false)
 
+  // 全域設定 Modal 狀態
+  const [isGlobalSettingsOpen, setIsGlobalSettingsOpen] = useState(false)
+
   // API 測試工具 Modal 狀態（僅開發環境）
   const [isApiTesterOpen, setIsApiTesterOpen] = useState(false)
 
@@ -450,6 +453,7 @@ export default function Home() {
           onBugReportClick={modals.openBugReportModal}
           onAboutClick={() => setIsAboutModalOpen(true)}
           onApiTesterClick={() => setIsApiTesterOpen(true)}
+          onGlobalSettingsClick={() => setIsGlobalSettingsOpen(true)}
         />
 
         {/* 轉蛋抽獎區域 - 選擇轉蛋機後顯示 */}
@@ -568,6 +572,9 @@ export default function Home() {
         isAboutModalOpen={isAboutModalOpen}
         openAboutModal={() => setIsAboutModalOpen(true)}
         closeAboutModal={() => setIsAboutModalOpen(false)}
+        isGlobalSettingsOpen={isGlobalSettingsOpen}
+        openGlobalSettings={() => setIsGlobalSettingsOpen(true)}
+        closeGlobalSettings={() => setIsGlobalSettingsOpen(false)}
         isApiTesterOpen={isApiTesterOpen}
         openApiTester={() => setIsApiTesterOpen(true)}
         closeApiTester={() => setIsApiTesterOpen(false)}

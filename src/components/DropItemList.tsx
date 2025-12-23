@@ -59,7 +59,7 @@ export function DropItemList({
       {/* 桌面版：表格佈局（>= 768px），可水平滾動 */}
       <div className="hidden md:block overflow-x-auto">
         <table className="w-full border-collapse min-w-[550px]">
-        <thead className="sticky top-12 z-[5] bg-gray-100 dark:bg-gray-700">
+        <thead className="bg-gray-100 dark:bg-gray-700">
           <tr className="bg-gray-100 dark:bg-gray-700 border-b-2 border-gray-200 dark:border-gray-600">
             <th className="text-left p-3 text-sm font-semibold text-gray-700 dark:text-gray-200">
               {/* 最愛欄位（圖示） */}
@@ -332,7 +332,7 @@ function DropItemListDesktopRow({
               loading="lazy"
             />
             <div className="flex-1 min-w-0">
-              <div className="font-semibold text-gray-900 dark:text-white truncate">
+              <div className="font-semibold text-gray-900 dark:text-white line-clamp-2">
                 {displayItemName}
               </div>
             </div>
