@@ -53,6 +53,7 @@ interface AllItemsViewProps {
 
   // 資料映射
   mobLevelMap: Map<number, number | null>
+  mobInGameMap: Map<number, boolean>
   itemAttributesMap: Map<number, ItemAttributesEssential>
   merchantItemIndex: Map<string, MerchantLocation[]>
 
@@ -105,6 +106,7 @@ export function AllItemsView({
   hasAnyData,
   hasSearchTerm,
   mobLevelMap,
+  mobInGameMap,
   itemAttributesMap,
   merchantItemIndex,
   onMonsterCardClick,
@@ -170,6 +172,7 @@ export function AllItemsView({
               onToggleFavorite={onToggleFavorite}
               level={mobLevelMap.get(monsterData.mobId) ?? null}
               index={index}
+              inGame={mobInGameMap.get(monsterData.mobId) ?? true}
             />
             {/* 每 8 張卡片後插入廣告 */}
             {(index + 1) % 8 === 0 && index < totalCards - 1 && (
@@ -248,6 +251,7 @@ export function AllItemsView({
               onToggleFavorite={onToggleFavorite}
               level={mobLevelMap.get(card.data.mobId) ?? null}
               index={index}
+              inGame={mobInGameMap.get(card.data.mobId) ?? true}
             />
             {/* 每 8 張卡片後插入廣告 */}
             {(index + 1) % 8 === 0 && index < totalCards - 1 && (
@@ -315,6 +319,7 @@ export function AllItemsView({
                   onToggleFavorite={onToggleFavorite}
                   level={mobLevelMap.get(monster.mobId) ?? null}
                   index={index}
+                  inGame={mobInGameMap.get(monster.mobId) ?? true}
                 />
                 {/* 每 8 張卡片後插入廣告 */}
                 {(index + 1) % 8 === 0 && index < displayedMonsters.length - 1 && (

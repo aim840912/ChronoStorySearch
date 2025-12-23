@@ -100,6 +100,7 @@ export default function Home() {
     initialRandomDrops,
     initialRandomGachaItems,
     mobLevelMap,
+    mobInGameMap,
     mobInfoMap,
     itemAttributesMap,
     itemIndexMap,
@@ -477,6 +478,7 @@ export default function Home() {
           hasSearchTerm={!!search.searchTerm}
           filteredUniqueMonsters={filteredUniqueMonsters}
           mobLevelMap={mobLevelMap}
+          mobInGameMap={mobInGameMap}
           onMonsterCardClick={modals.openMonsterModal}
           onToggleFavorite={toggleFavorite}
           isFavorite={isFavorite}
