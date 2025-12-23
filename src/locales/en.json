@@ -41,6 +41,7 @@
   "footer.chronostoryLink": "ChronoStory Data Source",
   "footer.discordLink": "Discord Community",
   "footer.buyCoffee": "Buy Boutei. & Vaft a coffee",
+  "footer.assets": "Assets ©",
   "gacha.title": "Gacha Machine Collection",
   "gacha.button": "Gacha Machines",
   "gacha.searchPlaceholder": "Search items (supports multiple keywords)...",
@@ -678,6 +679,6 @@
   "about.version": "Data Version",
   "about.dataSource": "Data Source",
   "about.dataSourceDesc": "ChronoStory Drop Table",
-  "about.community": "Community",
+  "about.community": "Contact",
   "about.disclaimer": "This is an unofficial fan site and is not affiliated with NEXON. All data is for reference only."
 }
