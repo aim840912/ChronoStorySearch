@@ -39,8 +39,8 @@ export function DropItemList({
 
   return (
     <>
-      {/* 手機版：垂直堆疊佈局 */}
-      <div className="sm:hidden divide-y divide-gray-200 dark:divide-gray-700">
+      {/* 手機版：垂直堆疊佈局（< 768px） */}
+      <div className="md:hidden divide-y divide-gray-200 dark:divide-gray-700">
         {drops.map((drop, index) => (
           <DropItemListMobileRow
             key={drop.itemId}
@@ -56,8 +56,9 @@ export function DropItemList({
         ))}
       </div>
 
-      {/* 桌面版：表格佈局 */}
-      <table className="w-full border-collapse hidden sm:table">
+      {/* 桌面版：表格佈局（>= 768px），可水平滾動 */}
+      <div className="hidden md:block overflow-x-auto">
+        <table className="w-full border-collapse min-w-[550px]">
         <thead className="sticky top-12 z-[5] bg-gray-100 dark:bg-gray-700">
           <tr className="bg-gray-100 dark:bg-gray-700 border-b-2 border-gray-200 dark:border-gray-600">
             <th className="text-left p-3 text-sm font-semibold text-gray-700 dark:text-gray-200">
@@ -107,7 +108,8 @@ export function DropItemList({
             />
           ))}
         </tbody>
-      </table>
+        </table>
+      </div>
     </>
   )
 }
