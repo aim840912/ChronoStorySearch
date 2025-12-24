@@ -17,8 +17,15 @@ const PREPROCESSING_MODES = [
 // 數字匹配模式 - 支援逗號分隔或 4 位以上連續數字
 const NUMBER_PATTERN = /(\d{1,3}(?:,\d{3})+|\d{4,})/g
 
-// 百分比匹配模式 - 支援 [34.74%]、(34.74%)、34.74% 三種格式
-const PERCENTAGE_PATTERN = /[\[(]?\s*(\d+\.?\d*)\s*%\s*[\])]?/
+// 百分比匹配模式（多層級，必須有小數點以過濾誤讀）
+const PERCENTAGE_PATTERNS = [
+  // 優先級 1：方括號格式 [xx.xx%]
+  /\[\s*(\d{1,2}\.\d{1,2})\s*%\s*\]/,
+  // 優先級 2：圓括號格式 (xx.xx%)
+  /\(\s*(\d{1,2}\.\d{1,2})\s*%\s*\)/,
+  // 優先級 3：獨立格式 xx.xx%（前面不能緊接數字，避免匹配大數字的一部分）
+  /(?<![0-9,])(\d{1,2}\.\d{1,2})\s*%/,
+]
 
 /**
  * OCR Hook - 使用 Tesseract.js 進行數字辨識
@@ -142,26 +149,32 @@ export function useOcr(): UseOcrReturn {
     return largest ? largestValue : null
   }, [])
 
-  // 從文字中提取百分比（例如 [17.09%] 或 17.09%）
+  // 從文字中提取百分比（多層級匹配，必須有小數點）
   const extractPercentage = useCallback((text: string): number | null => {
     // 調試：顯示 OCR 讀取的原始文字
     if (process.env.NODE_ENV === 'development') {
       console.log('[OCR] Raw text for percentage extraction:', text)
     }
 
-    const match = text.match(PERCENTAGE_PATTERN)
-
-    if (process.env.NODE_ENV === 'development') {
-      console.log('[OCR] Percentage match result:', match)
+    // 多層級匹配，按優先級嘗試
+    for (const pattern of PERCENTAGE_PATTERNS) {
+      const match = text.match(pattern)
+      if (match) {
+        const percentage = parseFloat(match[1])
+        // 百分比應該在 0-100 範圍內
+        if (!isNaN(percentage) && percentage >= 0 && percentage <= 100) {
+          if (process.env.NODE_ENV === 'development') {
+            console.log('[OCR] Percentage match result:', match, 'value:', percentage)
+          }
+          return percentage
+        }
+      }
     }
 
-    if (!match) return null
-
-    const percentage = parseFloat(match[1])
-    // 百分比應該在 0-100 範圍內
-    if (isNaN(percentage) || percentage < 0 || percentage > 100) return null
-
-    return percentage
+    if (process.env.NODE_ENV === 'development') {
+      console.log('[OCR] No percentage match found')
+    }
+    return null
   }, [])
 
   // 執行 OCR 辨識

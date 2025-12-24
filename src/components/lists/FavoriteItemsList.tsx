@@ -1,7 +1,8 @@
 'use client'
 
+import { useState } from 'react'
 import type { ItemAttributesEssential } from '@/types'
-import { ItemCard } from '@/components/ItemCard'
+import { ExpandableFavoriteItemCard } from '@/components/ExpandableFavoriteItemCard'
 import { EmptyState } from './EmptyState'
 
 type UniqueFavoriteItem = { itemId: number; itemName: string; chineseItemName?: string | null; monsterCount: number }
@@ -22,11 +23,13 @@ interface FavoriteItemsListProps {
   onCardClick: (itemId: number, itemName: string) => void
   onToggleFavorite: (itemId: number, itemName: string) => void
   onClearClick: () => void
+  onReorder: (fromIndex: number, toIndex: number) => void
   t: (key: string) => string
 }
 
 /**
  * 最愛物品列表元件 - 顯示使用者收藏的物品
+ * 支援拖曳排序功能
  */
 export function FavoriteItemsList({
   items,
@@ -36,8 +39,42 @@ export function FavoriteItemsList({
   onCardClick,
   onToggleFavorite,
   onClearClick,
+  onReorder,
   t,
 }: FavoriteItemsListProps) {
+  // 拖曳狀態
+  const [draggedItemId, setDraggedItemId] = useState<number | null>(null)
+
+  // 拖曳處理函數
+  const handleDragStart = (e: React.DragEvent, itemId: number) => {
+    setDraggedItemId(itemId)
+    e.dataTransfer.effectAllowed = 'move'
+  }
+
+  const handleDragOver = (e: React.DragEvent) => {
+    e.preventDefault()
+    e.dataTransfer.dropEffect = 'move'
+  }
+
+  const handleDrop = (e: React.DragEvent, targetItemId: number) => {
+    e.preventDefault()
+    if (!draggedItemId || draggedItemId === targetItemId) {
+      setDraggedItemId(null)
+      return
+    }
+    // 找到 index 並呼叫 reorder
+    const fromIndex = items.findIndex((item) => item.itemId === draggedItemId)
+    const toIndex = items.findIndex((item) => item.itemId === targetItemId)
+    if (fromIndex !== -1 && toIndex !== -1) {
+      onReorder(fromIndex, toIndex)
+    }
+    setDraggedItemId(null)
+  }
+
+  const handleDragEnd = () => {
+    setDraggedItemId(null)
+  }
+
   if (items.length === 0) {
     return (
       <EmptyState
@@ -64,10 +101,10 @@ export function FavoriteItemsList({
         </button>
       </div>
 
-      {/* 卡片網格 */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+      {/* 卡片網格 - items-start 防止展開時撐高其他卡片 */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 items-start">
         {items.map((item, index) => (
-          <ItemCard
+          <ExpandableFavoriteItemCard
             key={item.itemId}
             itemId={item.itemId}
             itemName={item.itemName}
@@ -79,6 +116,12 @@ export function FavoriteItemsList({
             reqLevel={itemAttributesMap.get(item.itemId)?.req_level ?? null}
             index={index}
             fromMerchant={merchantItemIndex.has(item.itemName.toLowerCase())}
+            // 拖曳相關
+            isDragging={draggedItemId === item.itemId}
+            onDragStart={handleDragStart}
+            onDragOver={handleDragOver}
+            onDrop={handleDrop}
+            onDragEnd={handleDragEnd}
           />
         ))}
       </div>

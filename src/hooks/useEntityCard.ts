@@ -45,6 +45,8 @@ interface UseEntityCardReturn<T> {
   clearAll: () => void
   /** 最愛數量 */
   favoriteCount: number
+  /** 重新排序（拖曳用） */
+  reorder: (fromIndex: number, toIndex: number) => void
 }
 
 export function useEntityCard<T>({
@@ -94,11 +96,24 @@ export function useEntityCard<T>({
     saveFavorites([])
   }
 
+  // 重新排序（拖曳用）
+  const reorder = (fromIndex: number, toIndex: number) => {
+    if (fromIndex === toIndex) return
+    if (fromIndex < 0 || fromIndex >= favorites.length) return
+    if (toIndex < 0 || toIndex >= favorites.length) return
+
+    const newFavorites = [...favorites]
+    const [removed] = newFavorites.splice(fromIndex, 1)
+    newFavorites.splice(toIndex, 0, removed)
+    saveFavorites(newFavorites)
+  }
+
   return {
     favorites,
     toggleFavorite,
     isFavorite,
     favoriteCount: favorites.length,
     clearAll,
+    reorder,
   }
 }
