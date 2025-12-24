@@ -136,6 +136,7 @@ export default function Home() {
     isFavorite: isItemFavorite,
     favoriteCount: favoriteItemCount,
     clearAll: clearAllItems,
+    reorder: reorderItems,
   } = useFavoriteItems()
 
   // 篩選邏輯 Hook - 處理最愛和搜尋過濾
@@ -494,6 +495,7 @@ export default function Home() {
           onToggleItemFavorite={toggleItemFavorite}
           isItemFavorite={isItemFavorite}
           onClearItems={() => modals.openClearModal('items')}
+          onReorderItems={reorderItems}
           mixedCards={mixedCards}
           displayedMonsters={displayedMonsters}
           displayedItems={displayedItems}

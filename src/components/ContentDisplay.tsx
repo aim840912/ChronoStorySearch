@@ -66,6 +66,7 @@ interface ContentDisplayProps {
   onToggleItemFavorite: (itemId: number, itemName: string) => void
   isItemFavorite: (itemId: number) => boolean
   onClearItems: () => void
+  onReorderItems: (fromIndex: number, toIndex: number) => void
 
   // 全部模式
   mixedCards: MixedCard[]
@@ -111,6 +112,7 @@ export const ContentDisplay = memo(function ContentDisplay({
   onToggleItemFavorite,
   isItemFavorite,
   onClearItems,
+  onReorderItems,
   mixedCards,
   displayedMonsters,
   displayedItems,
@@ -156,6 +158,7 @@ export const ContentDisplay = memo(function ContentDisplay({
           onCardClick={onItemCardClick}
           onToggleFavorite={onToggleItemFavorite}
           onClearClick={onClearItems}
+          onReorder={onReorderItems}
           t={t}
         />
       ) : (

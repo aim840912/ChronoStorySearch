@@ -240,6 +240,7 @@
   "item.pirate": "Pirate",
   "item.beginner": "Beginner",
   "item.stats": "Equipment Stats",
+  "item.maxValue": "Max",
   "item.attack_speed": "Attack Speed",
   "item.watk": "Physical ATK",
   "item.matk": "Magic ATK",
@@ -279,6 +280,12 @@
   "item.destroyRate": "Destroy Rate",
   "item.statBonus": "Stat Bonus",
   "item.noStatBonus": "No Stat Bonus",
+  "item.viewMode": "View Mode",
+  "item.showAttributes": "Show Attributes",
+  "item.showMaxOnlyOption": "Show Max Only",
+  "item.resetOrder": "Reset Order",
+  "item.dragToReorder": "Drag to Reorder",
+  "item.resetVisible": "Reset Visible",
   "item.dataIncomplete": "Data Incomplete",
   "item.potionInfo": "Potion Information",
   "item.potionEffect": "Potion Effects",
@@ -714,5 +721,6 @@
   "tip.languageToggle": "Click here to switch language",
   "tip.monsterStatsSettings": "Click here to customize display order",
   "tip.monsterStatsDrag": "Drag to reorder",
+  "tip.itemStatsSettings": "Click here to customize displayed attributes",
   "warning.testingFeature": "Currently in testing, may have issues"
 }

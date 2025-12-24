@@ -462,7 +462,7 @@ export function ItemModal({
               </div>
             ) : (
               // 狀態 3: 有資料或無屬性 - 顯示屬性卡片
-              <ItemAttributesCard itemData={itemOrganizedData} />
+              <ItemAttributesCard itemData={itemOrganizedData} enableSettings />
             )}
           </div>
 
