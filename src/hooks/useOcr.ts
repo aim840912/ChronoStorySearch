@@ -247,14 +247,19 @@ export function useOcr(): UseOcrReturn {
           }
         }
 
-        // 從有效結果中選信心度最高的
+        // 從有效結果中選信心度最高的 expValue
         if (validResults.length > 0) {
           const best = validResults.sort((a, b) => b.confidence - a.confidence)[0]
+
+          // 單獨找百分比：從所有結果中找第一個有效的 percentage
+          // 因為高信心度的結果可能沒有識別到百分比，但低信心度的結果有
+          const percentageResult = validResults.find(r => r.percentage !== null)
+
           return {
             text: best.text,
             confidence: best.confidence,
             expValue: best.expValue,
-            percentage: best.percentage,
+            percentage: percentageResult?.percentage ?? null,
           }
         }
 

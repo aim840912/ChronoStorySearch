@@ -83,51 +83,65 @@ export function useFavoriteFilters({
   }, [filterMode, favoriteMonsters, allDrops])
 
   // 計算去重的最愛物品清單（每個物品只出現一次）
+  // 重要：保持 favoriteItems 的原始順序，以支援拖曳排序功能
   const uniqueFavoriteItems = useMemo(() => {
     if (filterMode !== 'favorite-items' || favoriteItems.length === 0) return []
 
-    const favItemIds = new Set(favoriteItems.map((fav) => fav.itemId))
-    const itemMap = new Map<number, UniqueItem>()
+    // 1. 先統計每個物品的怪物數量和中文名稱（不關心順序）
+    const itemStatsMap = new Map<number, {
+      monsterCount: number
+      chineseItemName: string | null
+    }>()
 
-    // 統計每個物品被多少怪物掉落
     allDrops.forEach((drop) => {
-      if (favItemIds.has(drop.itemId)) {
-        if (!itemMap.has(drop.itemId)) {
-          itemMap.set(drop.itemId, {
-            itemId: drop.itemId,
-            itemName: drop.itemName,
-            chineseItemName: drop.chineseItemName,
-            monsterCount: 0,
-          })
-        }
-        // 統計獨特的怪物數量（避免重複計算同一怪物）
+      if (!itemStatsMap.has(drop.itemId)) {
+        // 計算獨特怪物數量
         const uniqueMonsters = new Set<number>()
         allDrops.forEach((d) => {
           if (d.itemId === drop.itemId) {
             uniqueMonsters.add(d.mobId)
           }
         })
-        itemMap.get(drop.itemId)!.monsterCount = uniqueMonsters.size
+        itemStatsMap.set(drop.itemId, {
+          monsterCount: uniqueMonsters.size,
+          chineseItemName: drop.chineseItemName ?? null,
+        })
       }
     })
 
-    // 處理純轉蛋物品（不在 allDrops 中的收藏物品）
-    gachaMachines.forEach((machine) => {
-      machine.items.forEach((gachaItem) => {
-        const itemId = gachaItem.itemId
-        // 只處理已收藏且不在 itemMap 中的物品（純轉蛋物品）
-        if (favItemIds.has(itemId) && !itemMap.has(itemId)) {
-          itemMap.set(itemId, {
-            itemId: itemId,
-            itemName: gachaItem.name || gachaItem.itemName || '',
-            chineseItemName: gachaItem.chineseName || null,
-            monsterCount: 0, // 純轉蛋物品沒有怪物掉落
-          })
-        }
-      })
-    })
+    // 2. 以 favoriteItems 順序為主，附加統計資訊
+    const result: UniqueItem[] = []
 
-    return Array.from(itemMap.values())
+    for (const fav of favoriteItems) {
+      const stats = itemStatsMap.get(fav.itemId)
+      if (stats) {
+        // 在 allDrops 中找到的物品
+        result.push({
+          itemId: fav.itemId,
+          itemName: fav.itemName,
+          chineseItemName: stats.chineseItemName,
+          monsterCount: stats.monsterCount,
+        })
+      } else {
+        // 純轉蛋物品（不在 allDrops 中）- 從 gachaMachines 查找中文名稱
+        let chineseName: string | null = null
+        for (const machine of gachaMachines) {
+          const gachaItem = machine.items.find(item => item.itemId === fav.itemId)
+          if (gachaItem) {
+            chineseName = gachaItem.chineseName ?? null
+            break
+          }
+        }
+        result.push({
+          itemId: fav.itemId,
+          itemName: fav.itemName,
+          chineseItemName: chineseName,
+          monsterCount: 0, // 純轉蛋物品沒有怪物掉落
+        })
+      }
+    }
+
+    return result
   }, [filterMode, favoriteItems, allDrops, gachaMachines])
 
   // 最愛怪物搜尋過濾（支援多關鍵字搜尋 + 中英文搜尋）
