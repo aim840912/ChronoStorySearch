@@ -291,17 +291,21 @@ export const ModalManager = memo(function ModalManager({
         initialMapId={selectedMerchantMapId}
       />
 
-      {/* Screen Recorder Modal */}
-      <ScreenRecorderModal
-        isOpen={isScreenRecorderModalOpen}
-        onClose={closeScreenRecorderModal}
-      />
+      {/* Screen Recorder Modal（條件渲染，關閉時卸載以釋放 MediaRecorder 資源） */}
+      {isScreenRecorderModalOpen && (
+        <ScreenRecorderModal
+          isOpen={isScreenRecorderModalOpen}
+          onClose={closeScreenRecorderModal}
+        />
+      )}
 
-      {/* EXP Tracker 懸浮視窗 */}
-      <ExpTrackerFloating
-        isOpen={isExpTrackerModalOpen}
-        onClose={closeExpTrackerModal}
-      />
+      {/* EXP Tracker 懸浮視窗（條件渲染，關閉時卸載以釋放 Tesseract Workers） */}
+      {isExpTrackerModalOpen && (
+        <ExpTrackerFloating
+          isOpen={isExpTrackerModalOpen}
+          onClose={closeExpTrackerModal}
+        />
+      )}
 
       {/* 返回頂部按鈕（唯一保留的浮動按鈕） */}
       {showBackToTop && (
