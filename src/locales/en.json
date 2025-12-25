@@ -722,5 +722,10 @@
   "tip.monsterStatsSettings": "Click here to customize display order",
   "tip.monsterStatsDrag": "Drag to reorder",
   "tip.itemStatsSettings": "Click here to customize displayed attributes",
-  "warning.testingFeature": "Currently in testing, may have issues"
+  "warning.testingFeature": "Currently in testing, may have issues",
+  "auth.signIn": "Sign In",
+  "auth.signOut": "Sign Out",
+  "auth.signingIn": "Signing in...",
+  "auth.signInWithDiscord": "Sign in with Discord",
+  "auth.userMenu": "User Menu"
 }

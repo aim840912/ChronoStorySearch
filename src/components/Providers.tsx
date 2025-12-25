@@ -5,6 +5,8 @@ import { Toaster } from 'sonner'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 import { ImageFormatProvider } from '@/contexts/ImageFormatContext'
+import { AuthProvider } from '@/contexts/AuthContext'
+import { PreferencesSyncProvider } from '@/contexts/PreferencesSyncContext'
 import { SWRProvider } from '@/providers/SWRProvider'
 import { MaintenanceBanner } from '@/components/common/MaintenanceBanner'
 import { CookieConsentBanner } from '@/components/common/CookieConsentBanner'
@@ -22,18 +24,22 @@ interface ProvidersProps {
  */
 export function Providers({ children }: ProvidersProps) {
   return (
-    <SWRProvider>
-      <ThemeProvider>
-        <LanguageProvider>
-          <ImageFormatProvider>
-            <Toaster position="top-center" richColors />
-            <MaintenanceBanner />
-            <div className="min-h-screen">{children}</div>
-            <CookieConsentBanner />
-            <Footer />
-          </ImageFormatProvider>
-        </LanguageProvider>
-      </ThemeProvider>
-    </SWRProvider>
+    <AuthProvider>
+      <PreferencesSyncProvider>
+        <SWRProvider>
+          <ThemeProvider>
+            <LanguageProvider>
+              <ImageFormatProvider>
+                <Toaster position="top-center" richColors />
+                <MaintenanceBanner />
+                <div className="min-h-screen">{children}</div>
+                <CookieConsentBanner />
+                <Footer />
+              </ImageFormatProvider>
+            </LanguageProvider>
+          </ThemeProvider>
+        </SWRProvider>
+      </PreferencesSyncProvider>
+    </AuthProvider>
   )
 }

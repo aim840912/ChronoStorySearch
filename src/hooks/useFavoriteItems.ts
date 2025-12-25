@@ -18,5 +18,6 @@ export function useFavoriteItems() {
       addedAt: Date.now(),
     }),
     getEntityId: (entity) => entity.itemId,
+    preferenceField: 'favoriteItems',
   })
 }

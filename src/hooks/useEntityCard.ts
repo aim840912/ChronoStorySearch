@@ -32,6 +32,8 @@ interface UseEntityCardParams<T> {
   createEntity: (id: number, name: string) => T
   /** 從實體中提取 ID 的函數 */
   getEntityId: (entity: T) => number
+  /** 偏好設定欄位名稱（用於雲端同步事件） */
+  preferenceField: 'favoriteMonsters' | 'favoriteItems'
 }
 
 interface UseEntityCardReturn<T> {
@@ -54,6 +56,7 @@ export function useEntityCard<T>({
   setEntities,
   createEntity,
   getEntityId,
+  preferenceField,
 }: UseEntityCardParams<T>): UseEntityCardReturn<T> {
   const [favorites, setFavorites] = useState<T[]>([])
 
@@ -63,11 +66,25 @@ export function useEntityCard<T>({
     setFavorites(stored)
   }, [getEntities])
 
-  // 儲存到 localStorage
+  // 監聽雲端同步事件，重新載入最愛
+  useEffect(() => {
+    const handleSync = () => {
+      const stored = getEntities()
+      setFavorites(stored)
+    }
+    window.addEventListener('preferences-synced', handleSync)
+    return () => window.removeEventListener('preferences-synced', handleSync)
+  }, [getEntities])
+
+  // 儲存到 localStorage 並觸發雲端同步
   const saveFavorites = (newFavorites: T[]) => {
     const success = setEntities(newFavorites)
     if (success) {
       setFavorites(newFavorites)
+      // 觸發雲端同步事件
+      window.dispatchEvent(new CustomEvent('preference-changed', {
+        detail: { field: preferenceField, value: newFavorites }
+      }))
     }
   }
 

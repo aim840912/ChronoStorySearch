@@ -723,5 +723,10 @@
   "tip.monsterStatsSettings": "點這裡自訂顯示順序",
   "tip.monsterStatsDrag": "可拖曳排序",
   "tip.itemStatsSettings": "點這裡自訂顯示的屬性",
-  "warning.testingFeature": "目前還在測試，可能有問題"
+  "warning.testingFeature": "目前還在測試，可能有問題",
+  "auth.signIn": "登入",
+  "auth.signOut": "登出",
+  "auth.signingIn": "登入中...",
+  "auth.signInWithDiscord": "使用 Discord 登入",
+  "auth.userMenu": "用戶選單"
 }
