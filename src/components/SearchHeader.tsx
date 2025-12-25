@@ -8,6 +8,7 @@ import { LanguageToggle } from '@/components/LanguageToggle'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { ToolbarDropdown, type ToolbarMenuGroup } from '@/components/toolbar'
 import { TipBubble } from '@/components/TipBubble'
+import { LoginButton } from '@/components/auth/LoginButton'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import type { ImageFormat } from '@/lib/image-utils'
@@ -314,12 +315,14 @@ export const SearchHeader = memo(function SearchHeader({
               message={t('tip.languageToggle')}
             />
           </div>
+          {/* 登入按鈕 */}
+          <LoginButton />
         </div>
       </div>
 
       {/* 工具列和語言切換 - 小於 460px 時顯示在搜尋欄上方 */}
       <div className="flex min-[460px]:hidden px-2 mb-1 max-w-7xl mx-auto">
-        <div className="grid grid-cols-3 gap-1 w-full [&>button]:w-full [&>button]:justify-center [&>div]:w-full [&>div>button]:w-full [&>div>button]:justify-center">
+        <div className="grid grid-cols-4 gap-1 w-full [&>button]:w-full [&>button]:justify-center [&>div]:w-full [&>div>button]:w-full [&>div>button]:justify-center">
           {/* 工具列下拉選單 + 提示 */}
           <div className="relative">
             <ToolbarDropdown
@@ -355,6 +358,10 @@ export const SearchHeader = memo(function SearchHeader({
               prerequisiteTipId="theme-toggle"
               message={t('tip.languageToggle')}
             />
+          </div>
+          {/* 登入按鈕 */}
+          <div className="flex justify-center">
+            <LoginButton />
           </div>
         </div>
       </div>

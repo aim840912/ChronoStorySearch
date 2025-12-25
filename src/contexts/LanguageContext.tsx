@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
+import { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react'
 import type { Language, Translations } from '@/types'
 import { getLanguage, setLanguage as saveLanguage } from '@/lib/storage'
 import zhTW from '@/locales/zh-TW.json'
@@ -22,20 +22,39 @@ const translations: Record<Language, Translations> = {
 /**
  * Language Provider
  * 提供語言切換和翻譯功能
+ * 支援雲端同步：監聽 'preferences-synced' 事件重新載入設定
  */
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguageState] = useState<Language>('en')
   const [isClient, setIsClient] = useState(false)
 
+  // 載入語言設定
+  const loadLanguage = useCallback(() => {
+    const savedLanguage = getLanguage()
+    setLanguageState(savedLanguage)
+    // 更新 HTML lang 屬性
+    if (typeof document !== 'undefined') {
+      document.documentElement.lang = savedLanguage
+    }
+  }, [])
+
   // 從 localStorage 載入語言偏好
   useEffect(() => {
     setIsClient(true)
-    const savedLanguage = getLanguage()
-    setLanguageState(savedLanguage)
-  }, [])
+    loadLanguage()
+  }, [loadLanguage])
+
+  // 監聽雲端同步事件，重新載入設定
+  useEffect(() => {
+    const handleSync = () => {
+      loadLanguage()
+    }
+    window.addEventListener('preferences-synced', handleSync)
+    return () => window.removeEventListener('preferences-synced', handleSync)
+  }, [loadLanguage])
 
   // 切換語言並儲存到 localStorage
-  const setLanguage = (lang: Language) => {
+  const setLanguage = useCallback((lang: Language) => {
     setLanguageState(lang)
     saveLanguage(lang)
 
@@ -43,7 +62,12 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     if (typeof document !== 'undefined') {
       document.documentElement.lang = lang
     }
-  }
+
+    // 觸發雲端同步事件
+    window.dispatchEvent(new CustomEvent('preference-changed', {
+      detail: { field: 'language', value: lang }
+    }))
+  }, [])
 
   // 翻譯函數
   const t = (key: string, params?: Record<string, string | number>): string => {

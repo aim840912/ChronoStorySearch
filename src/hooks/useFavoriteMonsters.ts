@@ -18,5 +18,6 @@ export function useFavoriteMonsters() {
       addedAt: Date.now(),
     }),
     getEntityId: (entity) => entity.mobId,
+    preferenceField: 'favoriteMonsters',
   })
 }

@@ -28,6 +28,7 @@ const formatCycle: ImageFormat[] = ['png', 'stand', 'hit', 'die']
  * 圖片格式 Provider
  * 提供全域的圖片格式設定（PNG/Stand/Die）
  * 自動從 localStorage 載入並持久化用戶設定
+ * 支援雲端同步：監聽 'preferences-synced' 事件重新載入設定
  */
 export function ImageFormatProvider({
   children,
@@ -35,16 +36,34 @@ export function ImageFormatProvider({
 }: ImageFormatProviderProps) {
   const [format, setFormatState] = useState<ImageFormat>(defaultFormat)
 
-  // 從 localStorage 載入已儲存的格式
-  useEffect(() => {
+  // 載入圖片格式設定
+  const loadFormat = useCallback(() => {
     const savedFormat = getImageFormat()
     setFormatState(savedFormat)
   }, [])
+
+  // 從 localStorage 載入已儲存的格式
+  useEffect(() => {
+    loadFormat()
+  }, [loadFormat])
+
+  // 監聽雲端同步事件，重新載入設定
+  useEffect(() => {
+    const handleSync = () => {
+      loadFormat()
+    }
+    window.addEventListener('preferences-synced', handleSync)
+    return () => window.removeEventListener('preferences-synced', handleSync)
+  }, [loadFormat])
 
   // 設定格式並儲存到 localStorage
   const setFormat = useCallback((newFormat: ImageFormat) => {
     setFormatState(newFormat)
     saveImageFormat(newFormat)
+    // 觸發雲端同步事件
+    window.dispatchEvent(new CustomEvent('preference-changed', {
+      detail: { field: 'imageFormat', value: newFormat }
+    }))
   }, [])
 
   // 切換格式並儲存到 localStorage
@@ -54,6 +73,10 @@ export function ImageFormatProvider({
       const nextIndex = (currentIndex + 1) % formatCycle.length
       const newFormat = formatCycle[nextIndex]
       saveImageFormat(newFormat)
+      // 觸發雲端同步事件
+      window.dispatchEvent(new CustomEvent('preference-changed', {
+        detail: { field: 'imageFormat', value: newFormat }
+      }))
       return newFormat
     })
   }, [])
