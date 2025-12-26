@@ -13,6 +13,9 @@ import type { ExpTrackerState } from '@/types/exp-tracker'
 export const STORAGE_KEYS = {
   FAVORITE_MONSTERS: 'chronostory-favorite-monsters',
   FAVORITE_ITEMS: 'chronostory-favorite-items',
+  // Guest 版本的收藏 keys（非登入用戶使用）
+  GUEST_FAVORITE_MONSTERS: 'chronostory-guest-favorite-monsters',
+  GUEST_FAVORITE_ITEMS: 'chronostory-guest-favorite-items',
   LANGUAGE: 'chronostory-language',
   THEME: 'chronostory-theme',
   ACCURACY_CALCULATOR: 'chronostory-accuracy-calculator',
@@ -84,7 +87,7 @@ export function removeStorageItem(key: string): boolean {
 }
 
 /**
- * 清空所有專案相關的 localStorage
+ * 清空所有專案相關的 localStorage（包含 guest 資料）
  */
 export function clearAllStorage(): boolean {
   try {
@@ -100,6 +103,33 @@ export function clearAllStorage(): boolean {
     return true
   } catch (error) {
     storageLogger.error('清空儲存失敗', error)
+    return false
+  }
+}
+
+/**
+ * 清空登入用戶的 localStorage（保留 guest 資料）
+ * 用於登出時清除用戶資料
+ */
+export function clearUserStorage(): boolean {
+  try {
+    if (typeof window === 'undefined') {
+      return false
+    }
+
+    // 只清除非 guest 的 storage keys
+    const userKeys = Object.entries(STORAGE_KEYS)
+      .filter(([name]) => !name.startsWith('GUEST_'))
+      .map(([, value]) => value)
+
+    userKeys.forEach((key) => {
+      localStorage.removeItem(key)
+    })
+
+    storageLogger.info('成功清空用戶儲存（保留 guest 資料）')
+    return true
+  } catch (error) {
+    storageLogger.error('清空用戶儲存失敗', error)
     return false
   }
 }
@@ -120,6 +150,23 @@ export function getFavoriteItems(): FavoriteItem[] {
 
 export function setFavoriteItems(items: FavoriteItem[]): boolean {
   return setStorageItem(STORAGE_KEYS.FAVORITE_ITEMS, items)
+}
+
+// Guest 版本的收藏函數（非登入用戶使用）
+export function getGuestFavoriteMonsters(): FavoriteMonster[] {
+  return getStorageItem<FavoriteMonster[]>(STORAGE_KEYS.GUEST_FAVORITE_MONSTERS, [])
+}
+
+export function setGuestFavoriteMonsters(monsters: FavoriteMonster[]): boolean {
+  return setStorageItem(STORAGE_KEYS.GUEST_FAVORITE_MONSTERS, monsters)
+}
+
+export function getGuestFavoriteItems(): FavoriteItem[] {
+  return getStorageItem<FavoriteItem[]>(STORAGE_KEYS.GUEST_FAVORITE_ITEMS, [])
+}
+
+export function setGuestFavoriteItems(items: FavoriteItem[]): boolean {
+  return setStorageItem(STORAGE_KEYS.GUEST_FAVORITE_ITEMS, items)
 }
 
 export function getLanguage(): Language {

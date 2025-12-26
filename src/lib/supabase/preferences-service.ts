@@ -14,9 +14,9 @@ export interface UserPreferences {
 }
 
 /**
- * Supabase 資料表的原始結構
+ * Supabase 資料表的原始結構（匯出供 Realtime 使用）
  */
-interface UserPreferencesRow {
+export interface UserPreferencesRow {
   id: string
   user_id: string
   theme: string
@@ -40,9 +40,9 @@ export const DEFAULT_PREFERENCES: UserPreferences = {
 }
 
 /**
- * 將資料庫 row 轉換為 UserPreferences
+ * 將資料庫 row 轉換為 UserPreferences（匯出供 Realtime 使用）
  */
-function rowToPreferences(row: UserPreferencesRow): UserPreferences {
+export function rowToPreferences(row: UserPreferencesRow): UserPreferences {
   return {
     theme: (row.theme as Theme) || DEFAULT_PREFERENCES.theme,
     language: (row.language as Language) || DEFAULT_PREFERENCES.language,
