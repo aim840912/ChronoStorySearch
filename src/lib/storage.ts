@@ -25,6 +25,14 @@ export const STORAGE_KEYS = {
   EXP_TRACKER: 'chronostory-exp-tracker',
   EXP_TRACKER_FLOATING: 'chronostory-exp-tracker-floating',
   TIPS_SHOWN: 'chronostory-tips-shown',
+  // 怪物/物品屬性顯示設定（與 GlobalSettingsModal 共用）
+  MONSTER_STATS_VIEW_MODE: 'monster-stats-view-mode',
+  MONSTER_STATS_ORDER: 'monster-stats-order',
+  MONSTER_STATS_VISIBLE: 'monster-stats-visible',
+  ITEM_STATS_VIEW_MODE: 'item-stats-view-mode',
+  ITEM_STATS_ORDER: 'item-stats-order',
+  ITEM_STATS_VISIBLE: 'item-stats-visible',
+  ITEM_STATS_SHOW_MAX_ONLY: 'item-stats-show-max-only',
 } as const
 
 /**
@@ -329,4 +337,62 @@ export function markTipAsShown(tipId: string): boolean {
     return setStorageItem(STORAGE_KEYS.TIPS_SHOWN, tipsShown)
   }
   return true
+}
+
+// 怪物屬性顯示設定
+export function getMonsterStatsViewMode(): 'grid' | 'list' {
+  return getStorageItem<'grid' | 'list'>(STORAGE_KEYS.MONSTER_STATS_VIEW_MODE, 'grid')
+}
+
+export function setMonsterStatsViewMode(mode: 'grid' | 'list'): boolean {
+  return setStorageItem(STORAGE_KEYS.MONSTER_STATS_VIEW_MODE, mode)
+}
+
+export function getMonsterStatsOrder(): string[] {
+  return getStorageItem<string[]>(STORAGE_KEYS.MONSTER_STATS_ORDER, [])
+}
+
+export function setMonsterStatsOrder(order: string[]): boolean {
+  return setStorageItem(STORAGE_KEYS.MONSTER_STATS_ORDER, order)
+}
+
+export function getMonsterStatsVisible(): string[] {
+  return getStorageItem<string[]>(STORAGE_KEYS.MONSTER_STATS_VISIBLE, [])
+}
+
+export function setMonsterStatsVisible(visible: string[]): boolean {
+  return setStorageItem(STORAGE_KEYS.MONSTER_STATS_VISIBLE, visible)
+}
+
+// 物品屬性顯示設定
+export function getItemStatsViewMode(): 'grid' | 'list' {
+  return getStorageItem<'grid' | 'list'>(STORAGE_KEYS.ITEM_STATS_VIEW_MODE, 'grid')
+}
+
+export function setItemStatsViewMode(mode: 'grid' | 'list'): boolean {
+  return setStorageItem(STORAGE_KEYS.ITEM_STATS_VIEW_MODE, mode)
+}
+
+export function getItemStatsOrder(): string[] {
+  return getStorageItem<string[]>(STORAGE_KEYS.ITEM_STATS_ORDER, [])
+}
+
+export function setItemStatsOrder(order: string[]): boolean {
+  return setStorageItem(STORAGE_KEYS.ITEM_STATS_ORDER, order)
+}
+
+export function getItemStatsVisible(): string[] {
+  return getStorageItem<string[]>(STORAGE_KEYS.ITEM_STATS_VISIBLE, [])
+}
+
+export function setItemStatsVisible(visible: string[]): boolean {
+  return setStorageItem(STORAGE_KEYS.ITEM_STATS_VISIBLE, visible)
+}
+
+export function getItemStatsShowMaxOnly(): boolean {
+  return getStorageItem<boolean>(STORAGE_KEYS.ITEM_STATS_SHOW_MAX_ONLY, false)
+}
+
+export function setItemStatsShowMaxOnly(showMaxOnly: boolean): boolean {
+  return setStorageItem(STORAGE_KEYS.ITEM_STATS_SHOW_MAX_ONLY, showMaxOnly)
 }

@@ -21,6 +21,17 @@ CREATE TABLE IF NOT EXISTS user_preferences (
   favorite_monsters JSONB DEFAULT '[]'::jsonb,
   favorite_items JSONB DEFAULT '[]'::jsonb,
 
+  -- 怪物屬性顯示設定
+  monster_stats_view_mode TEXT DEFAULT 'grid',
+  monster_stats_order JSONB DEFAULT '[]'::jsonb,
+  monster_stats_visible JSONB DEFAULT '[]'::jsonb,
+
+  -- 物品屬性顯示設定
+  item_stats_view_mode TEXT DEFAULT 'grid',
+  item_stats_order JSONB DEFAULT '[]'::jsonb,
+  item_stats_visible JSONB DEFAULT '[]'::jsonb,
+  item_stats_show_max_only BOOLEAN DEFAULT false,
+
   -- 時間戳記
   created_at TIMESTAMPTZ DEFAULT NOW(),
   updated_at TIMESTAMPTZ DEFAULT NOW(),
@@ -75,3 +86,17 @@ SELECT
 FROM information_schema.columns
 WHERE table_name = 'user_preferences'
 ORDER BY ordinal_position;
+
+-- =====================================================
+-- Migration: 新增怪物/物品屬性顯示設定欄位
+-- 執行時機：已有 user_preferences 表時執行
+-- =====================================================
+
+-- ALTER TABLE user_preferences
+-- ADD COLUMN IF NOT EXISTS monster_stats_view_mode TEXT DEFAULT 'grid',
+-- ADD COLUMN IF NOT EXISTS monster_stats_order JSONB DEFAULT '[]'::jsonb,
+-- ADD COLUMN IF NOT EXISTS monster_stats_visible JSONB DEFAULT '[]'::jsonb,
+-- ADD COLUMN IF NOT EXISTS item_stats_view_mode TEXT DEFAULT 'grid',
+-- ADD COLUMN IF NOT EXISTS item_stats_order JSONB DEFAULT '[]'::jsonb,
+-- ADD COLUMN IF NOT EXISTS item_stats_visible JSONB DEFAULT '[]'::jsonb,
+-- ADD COLUMN IF NOT EXISTS item_stats_show_max_only BOOLEAN DEFAULT false;

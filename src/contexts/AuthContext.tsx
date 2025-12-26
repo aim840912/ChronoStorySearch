@@ -24,15 +24,30 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [session, setSession] = useState<Session | null>(null)
   const [isLoading, setIsLoading] = useState(true)
 
-  // 初始化：檢查現有 session
+  // 初始化：驗證現有 session
+  // 使用 getUser() 驗證 token 有效性
+  // session 由 onAuthStateChange 提供，避免重複 API 調用
   useEffect(() => {
     const initAuth = async () => {
       try {
-        const { data: { session } } = await supabase.auth.getSession()
-        setSession(session)
-        setUser(session?.user ?? null)
+        // 只調用一次 getUser() 驗證 token 是否有效
+        // 這節省了一次 Supabase API 調用（減少 Edge Requests）
+        const { data: { user }, error: userError } = await supabase.auth.getUser()
+
+        if (userError || !user) {
+          // Token 無效或不存在，清除狀態
+          setSession(null)
+          setUser(null)
+          return
+        }
+
+        // Token 有效，設置 user
+        // session 會由 onAuthStateChange 自動提供
+        setUser(user)
       } catch (error) {
         console.error('Auth initialization error:', error)
+        setSession(null)
+        setUser(null)
       } finally {
         setIsLoading(false)
       }

@@ -708,6 +708,7 @@
   "settings.themeDark": "深色",
   "settings.imageFormat": "圖片格式",
   "settings.monsterStats": "怪物屬性顯示",
+  "settings.itemStats": "物品屬性顯示",
   "settings.viewMode": "視圖模式",
   "settings.visibleStats": "顯示的屬性",
   "settings.resetToDefault": "重置為預設",

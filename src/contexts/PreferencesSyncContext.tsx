@@ -33,6 +33,21 @@ import {
   getFavoriteItems,
   setFavoriteItems,
   clearUserStorage,
+  // 怪物/物品屬性顯示設定
+  getMonsterStatsViewMode,
+  setMonsterStatsViewMode,
+  getMonsterStatsOrder,
+  setMonsterStatsOrder,
+  getMonsterStatsVisible,
+  setMonsterStatsVisible,
+  getItemStatsViewMode,
+  setItemStatsViewMode,
+  getItemStatsOrder,
+  setItemStatsOrder,
+  getItemStatsVisible,
+  setItemStatsVisible,
+  getItemStatsShowMaxOnly,
+  setItemStatsShowMaxOnly,
 } from '@/lib/storage'
 
 interface PreferencesSyncContextType {
@@ -96,6 +111,14 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
         setImageFormat(cloudPrefs.imageFormat)
         setFavoriteMonsters(cloudPrefs.favoriteMonsters)
         setFavoriteItems(cloudPrefs.favoriteItems)
+        // 怪物/物品屬性顯示設定
+        setMonsterStatsViewMode(cloudPrefs.monsterStatsViewMode)
+        setMonsterStatsOrder(cloudPrefs.monsterStatsOrder)
+        setMonsterStatsVisible(cloudPrefs.monsterStatsVisible)
+        setItemStatsViewMode(cloudPrefs.itemStatsViewMode)
+        setItemStatsOrder(cloudPrefs.itemStatsOrder)
+        setItemStatsVisible(cloudPrefs.itemStatsVisible)
+        setItemStatsShowMaxOnly(cloudPrefs.itemStatsShowMaxOnly)
 
         console.log('[PreferencesSync] 已從雲端載入設定')
 
@@ -128,6 +151,14 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
         imageFormat: getImageFormat(),
         favoriteMonsters: getFavoriteMonsters(),
         favoriteItems: getFavoriteItems(),
+        // 怪物/物品屬性顯示設定
+        monsterStatsViewMode: getMonsterStatsViewMode(),
+        monsterStatsOrder: getMonsterStatsOrder(),
+        monsterStatsVisible: getMonsterStatsVisible(),
+        itemStatsViewMode: getItemStatsViewMode(),
+        itemStatsOrder: getItemStatsOrder(),
+        itemStatsVisible: getItemStatsVisible(),
+        itemStatsShowMaxOnly: getItemStatsShowMaxOnly(),
       }
 
       await preferencesService.upsert(localPrefs)
@@ -208,6 +239,14 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
     setImageFormat(prefs.imageFormat)
     setFavoriteMonsters(prefs.favoriteMonsters)
     setFavoriteItems(prefs.favoriteItems)
+    // 怪物/物品屬性顯示設定
+    setMonsterStatsViewMode(prefs.monsterStatsViewMode)
+    setMonsterStatsOrder(prefs.monsterStatsOrder)
+    setMonsterStatsVisible(prefs.monsterStatsVisible)
+    setItemStatsViewMode(prefs.itemStatsViewMode)
+    setItemStatsOrder(prefs.itemStatsOrder)
+    setItemStatsVisible(prefs.itemStatsVisible)
+    setItemStatsShowMaxOnly(prefs.itemStatsShowMaxOnly)
     window.dispatchEvent(new CustomEvent('preferences-synced'))
   }, [])
 
@@ -245,8 +284,11 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
           const newPrefs = rowToPreferences(payload.new)
           applyPreferences(newPrefs)
 
-          // 廣播給其他分頁
-          tabLeaderRef.current?.broadcastUpdate(newPrefs)
+          // 廣播給其他分頁（包含 userId 供驗證）
+          tabLeaderRef.current?.broadcastUpdate({
+            userId: user.id,
+            preferences: newPrefs,
+          })
         })
         channelRef.current = channel
       },
@@ -260,8 +302,23 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
       },
       // onRealtimeUpdate: 收到 Leader 廣播的更新
       (payload) => {
+        // 安全驗證：確保廣播來自同一用戶
+        // 防止多用戶分頁相互干擾
+        const typedPayload = payload as { userId?: string; preferences?: UserPreferences }
+
+        if (typedPayload.userId && typedPayload.userId !== user.id) {
+          console.warn(
+            '[PreferencesSync] Tab Leader 廣播用戶不匹配，忽略',
+            { expected: user.id, received: typedPayload.userId }
+          )
+          return
+        }
+
         console.log('[PreferencesSync] 收到 Leader 廣播的更新')
-        applyPreferences(payload as UserPreferences)
+
+        // 支援新舊格式：新格式有 preferences 欄位，舊格式直接是 UserPreferences
+        const preferences = typedPayload.preferences ?? (payload as UserPreferences)
+        applyPreferences(preferences)
       }
     )
 

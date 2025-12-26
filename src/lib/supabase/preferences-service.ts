@@ -11,6 +11,14 @@ export interface UserPreferences {
   imageFormat: ImageFormat
   favoriteMonsters: FavoriteMonster[]
   favoriteItems: FavoriteItem[]
+  // 怪物/物品屬性顯示設定
+  monsterStatsViewMode: 'grid' | 'list'
+  monsterStatsOrder: string[]
+  monsterStatsVisible: string[]
+  itemStatsViewMode: 'grid' | 'list'
+  itemStatsOrder: string[]
+  itemStatsVisible: string[]
+  itemStatsShowMaxOnly: boolean
 }
 
 /**
@@ -24,6 +32,14 @@ export interface UserPreferencesRow {
   image_format: string
   favorite_monsters: FavoriteMonster[]
   favorite_items: FavoriteItem[]
+  // 怪物/物品屬性顯示設定
+  monster_stats_view_mode: string | null
+  monster_stats_order: string[] | null
+  monster_stats_visible: string[] | null
+  item_stats_view_mode: string | null
+  item_stats_order: string[] | null
+  item_stats_visible: string[] | null
+  item_stats_show_max_only: boolean | null
   created_at: string
   updated_at: string
 }
@@ -37,6 +53,14 @@ export const DEFAULT_PREFERENCES: UserPreferences = {
   imageFormat: 'png',
   favoriteMonsters: [],
   favoriteItems: [],
+  // 怪物/物品屬性顯示設定（空陣列表示使用元件預設值）
+  monsterStatsViewMode: 'grid',
+  monsterStatsOrder: [],
+  monsterStatsVisible: [],
+  itemStatsViewMode: 'grid',
+  itemStatsOrder: [],
+  itemStatsVisible: [],
+  itemStatsShowMaxOnly: false,
 }
 
 /**
@@ -49,6 +73,14 @@ export function rowToPreferences(row: UserPreferencesRow): UserPreferences {
     imageFormat: (row.image_format as ImageFormat) || DEFAULT_PREFERENCES.imageFormat,
     favoriteMonsters: row.favorite_monsters || [],
     favoriteItems: row.favorite_items || [],
+    // 怪物/物品屬性顯示設定
+    monsterStatsViewMode: (row.monster_stats_view_mode as 'grid' | 'list') || DEFAULT_PREFERENCES.monsterStatsViewMode,
+    monsterStatsOrder: row.monster_stats_order || [],
+    monsterStatsVisible: row.monster_stats_visible || [],
+    itemStatsViewMode: (row.item_stats_view_mode as 'grid' | 'list') || DEFAULT_PREFERENCES.itemStatsViewMode,
+    itemStatsOrder: row.item_stats_order || [],
+    itemStatsVisible: row.item_stats_visible || [],
+    itemStatsShowMaxOnly: row.item_stats_show_max_only ?? DEFAULT_PREFERENCES.itemStatsShowMaxOnly,
   }
 }
 
@@ -100,6 +132,13 @@ export const preferencesService = {
         image_format: preferences.imageFormat,
         favorite_monsters: preferences.favoriteMonsters,
         favorite_items: preferences.favoriteItems,
+        monster_stats_view_mode: preferences.monsterStatsViewMode,
+        monster_stats_order: preferences.monsterStatsOrder,
+        monster_stats_visible: preferences.monsterStatsVisible,
+        item_stats_view_mode: preferences.itemStatsViewMode,
+        item_stats_order: preferences.itemStatsOrder,
+        item_stats_visible: preferences.itemStatsVisible,
+        item_stats_show_max_only: preferences.itemStatsShowMaxOnly,
       }, {
         onConflict: 'user_id',
       })
@@ -114,6 +153,8 @@ export const preferencesService = {
 
   /**
    * 更新單一欄位
+   * 使用 upsert 直接處理「不存在就建立，存在就更新」，省去額外的 SELECT 請求
+   *
    * @param field 欄位名稱
    * @param value 欄位值
    */
@@ -131,23 +172,26 @@ export const preferencesService = {
       imageFormat: 'image_format',
       favoriteMonsters: 'favorite_monsters',
       favoriteItems: 'favorite_items',
+      monsterStatsViewMode: 'monster_stats_view_mode',
+      monsterStatsOrder: 'monster_stats_order',
+      monsterStatsVisible: 'monster_stats_visible',
+      itemStatsViewMode: 'item_stats_view_mode',
+      itemStatsOrder: 'item_stats_order',
+      itemStatsVisible: 'item_stats_visible',
+      itemStatsShowMaxOnly: 'item_stats_show_max_only',
     }
 
     const dbField = fieldMap[field]
 
-    // 先檢查是否存在記錄，如果不存在則建立
-    const existing = await this.get()
-    if (existing === null) {
-      // 建立新記錄
-      const newPreferences = { ...DEFAULT_PREFERENCES, [field]: value }
-      return this.upsert(newPreferences)
-    }
-
-    // 更新現有記錄
+    // 直接使用 upsert，不需要先查詢是否存在
+    // - 記錄不存在時：INSERT，其他欄位使用資料庫 DEFAULT 值
+    // - 記錄存在時：UPDATE 只更新該欄位
     const { error } = await supabase
       .from('user_preferences')
-      .update({ [dbField]: value })
-      .eq('user_id', user.id)
+      .upsert(
+        { user_id: user.id, [dbField]: value },
+        { onConflict: 'user_id' }
+      )
 
     if (error) {
       console.error(`更新 ${field} 失敗:`, error)
