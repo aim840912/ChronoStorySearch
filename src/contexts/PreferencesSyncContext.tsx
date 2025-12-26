@@ -6,13 +6,21 @@ import {
   useState,
   useEffect,
   useCallback,
+  useRef,
   type ReactNode,
 } from 'react'
+import type { RealtimeChannel } from '@supabase/supabase-js'
 import { useAuth } from './AuthContext'
 import {
   preferencesService,
+  rowToPreferences,
   type UserPreferences,
 } from '@/lib/supabase/preferences-service'
+import {
+  subscribeToPreferences,
+  unsubscribeFromPreferences,
+} from '@/lib/supabase/realtime-preferences'
+import { createTabLeader } from '@/lib/tab-leader'
 import {
   getTheme,
   setTheme,
@@ -24,6 +32,7 @@ import {
   setFavoriteMonsters,
   getFavoriteItems,
   setFavoriteItems,
+  clearUserStorage,
 } from '@/lib/storage'
 
 interface PreferencesSyncContextType {
@@ -53,10 +62,20 @@ const PreferencesSyncContext = createContext<PreferencesSyncContextType | undefi
  * 2. 設定變更時：同時儲存到本地和雲端
  * 3. 登出時：保留本地設定不變
  */
+// 防止循環更新的時間閾值（毫秒）
+const REALTIME_DEBOUNCE_MS = 1000
+
 export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
   const { user, isLoading: isAuthLoading } = useAuth()
   const [isSyncing, setIsSyncing] = useState(false)
   const [hasLoadedFromCloud, setHasLoadedFromCloud] = useState(false)
+
+  // Realtime 訂閱相關
+  const channelRef = useRef<RealtimeChannel | null>(null)
+  const lastLocalUpdateRef = useRef<number>(0)
+  const tabLeaderRef = useRef<ReturnType<typeof createTabLeader> | null>(null)
+  // 追蹤前一個用戶 ID，用於偵測用戶切換
+  const previousUserIdRef = useRef<string | null>(null)
 
   const syncEnabled = !!user
 
@@ -129,6 +148,9 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
   ) => {
     if (!user) return
 
+    // 記錄本地變更時間，防止 Realtime 循環更新
+    lastLocalUpdateRef.current = Date.now()
+
     try {
       await preferencesService.updateField(field, value)
       console.log(`[PreferencesSync] 已同步 ${field} 到雲端`)
@@ -137,14 +159,27 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
     }
   }, [user])
 
-  // 登入後自動載入雲端設定
+  // 登入後自動載入雲端設定，並處理用戶切換
   useEffect(() => {
+    const currentUserId = user?.id ?? null
+    const previousUserId = previousUserIdRef.current
+
+    // 偵測用戶切換（不同用戶登入）
+    if (previousUserId && currentUserId && previousUserId !== currentUserId) {
+      console.log('[PreferencesSync] 偵測到用戶切換，清除舊用戶資料')
+      clearUserStorage()
+      setHasLoadedFromCloud(false)
+    }
+
+    // 更新追蹤的用戶 ID
+    previousUserIdRef.current = currentUserId
+
     if (!isAuthLoading && user && !hasLoadedFromCloud) {
       setHasLoadedFromCloud(true)
       loadFromCloud()
     }
 
-    // 登出時重置狀態
+    // 登出時重置狀態（localStorage 已在 AuthContext.signOut 中清除）
     if (!user) {
       setHasLoadedFromCloud(false)
     }
@@ -163,6 +198,84 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
     window.addEventListener('preference-changed', handlePreferenceChanged)
     return () => window.removeEventListener('preference-changed', handlePreferenceChanged)
   }, [user, syncToCloud])
+
+  /**
+   * 套用偏好設定到 localStorage 並通知 UI
+   */
+  const applyPreferences = useCallback((prefs: UserPreferences) => {
+    setTheme(prefs.theme)
+    setLanguage(prefs.language)
+    setImageFormat(prefs.imageFormat)
+    setFavoriteMonsters(prefs.favoriteMonsters)
+    setFavoriteItems(prefs.favoriteItems)
+    window.dispatchEvent(new CustomEvent('preferences-synced'))
+  }, [])
+
+  // Realtime 訂閱：使用 Tab Leader 機制減少連線數
+  useEffect(() => {
+    // 登出時清理
+    if (!user) {
+      if (channelRef.current) {
+        unsubscribeFromPreferences(channelRef.current)
+        channelRef.current = null
+      }
+      if (tabLeaderRef.current) {
+        tabLeaderRef.current.cleanup()
+        tabLeaderRef.current = null
+      }
+      return
+    }
+
+    // 創建 Tab Leader 控制器
+    const tabLeader = createTabLeader(
+      // onBecomeLeader: 成為 Leader，建立 Realtime 連線
+      () => {
+        console.log('[PreferencesSync] 成為 Leader，建立 Realtime 連線')
+        const channel = subscribeToPreferences(user.id, (payload) => {
+          // 防止循環：忽略自己 1 秒內的變更
+          const now = Date.now()
+          if (now - lastLocalUpdateRef.current < REALTIME_DEBOUNCE_MS) {
+            console.log('[Realtime] 忽略自己的變更')
+            return
+          }
+
+          console.log('[Realtime] 收到其他裝置的變更')
+
+          // 更新本地設定
+          const newPrefs = rowToPreferences(payload.new)
+          applyPreferences(newPrefs)
+
+          // 廣播給其他分頁
+          tabLeaderRef.current?.broadcastUpdate(newPrefs)
+        })
+        channelRef.current = channel
+      },
+      // onBecomeFollower: 成為 Follower，關閉 Realtime 連線
+      () => {
+        console.log('[PreferencesSync] 成為 Follower，關閉 Realtime 連線')
+        if (channelRef.current) {
+          unsubscribeFromPreferences(channelRef.current)
+          channelRef.current = null
+        }
+      },
+      // onRealtimeUpdate: 收到 Leader 廣播的更新
+      (payload) => {
+        console.log('[PreferencesSync] 收到 Leader 廣播的更新')
+        applyPreferences(payload as UserPreferences)
+      }
+    )
+
+    tabLeaderRef.current = tabLeader
+
+    return () => {
+      if (channelRef.current) {
+        unsubscribeFromPreferences(channelRef.current)
+        channelRef.current = null
+      }
+      tabLeader.cleanup()
+      tabLeaderRef.current = null
+    }
+  }, [user, applyPreferences])
 
   return (
     <PreferencesSyncContext.Provider

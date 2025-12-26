@@ -1,9 +1,13 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { LogIn, LogOut, User, ChevronDown } from 'lucide-react'
+import { LogOut, User, ChevronDown, Settings } from 'lucide-react'
 import { useAuth } from '@/contexts/AuthContext'
 import { useLanguage } from '@/contexts/LanguageContext'
+
+interface LoginButtonProps {
+  onGlobalSettingsClick?: () => void
+}
 
 /**
  * Discord 圖示 SVG 元件
@@ -23,9 +27,10 @@ function DiscordIcon({ className }: { className?: string }) {
 
 /**
  * 登入按鈕元件
- * 未登入時顯示 Discord 登入按鈕，已登入時顯示用戶頭像和下拉選單
+ * 未登入時顯示齒輪圖示和下拉選單（全域設定 + Discord 登入）
+ * 已登入時顯示用戶頭像和下拉選單（用戶資訊 + 全域設定 + 登出）
  */
-export function LoginButton() {
+export function LoginButton({ onGlobalSettingsClick }: LoginButtonProps) {
   const { user, isLoading, signInWithDiscord, signOut } = useAuth()
   const { t } = useLanguage()
   const [isOpen, setIsOpen] = useState(false)
@@ -72,23 +77,51 @@ export function LoginButton() {
     )
   }
 
-  // 未登入：顯示 Discord 登入按鈕
+  // 未登入：顯示齒輪圖示和下拉選單
   if (!user) {
     return (
-      <button
-        onClick={handleSignIn}
-        disabled={isSigningIn}
-        className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-white bg-[#5865F2] hover:bg-[#4752C4] rounded-md transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-        aria-label={t('auth.signInWithDiscord')}
-      >
-        <DiscordIcon className="w-4 h-4" />
-        <span className="hidden sm:inline">
-          {isSigningIn ? t('auth.signingIn') : t('auth.signIn')}
-        </span>
-        {isSigningIn && (
-          <LogIn className="w-4 h-4 sm:hidden animate-pulse" aria-hidden="true" />
+      <div className="relative" ref={dropdownRef}>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex items-center justify-center w-8 h-8 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          aria-expanded={isOpen}
+          aria-haspopup="true"
+          aria-label={t('toolbar.settings')}
+        >
+          <Settings className="w-5 h-5 text-gray-600 dark:text-gray-300" aria-hidden="true" />
+        </button>
+
+        {/* 下拉選單 */}
+        {isOpen && (
+          <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 z-50">
+            {/* 全域設定 */}
+            <button
+              onClick={() => {
+                onGlobalSettingsClick?.()
+                setIsOpen(false)
+              }}
+              className="w-full flex items-center gap-2 px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            >
+              <Settings className="w-4 h-4" aria-hidden="true" />
+              {t('toolbar.globalSettings')}
+            </button>
+            {/* 分隔線 */}
+            <div className="border-t border-gray-200 dark:border-gray-700 my-1" />
+            {/* Discord 登入 */}
+            <button
+              onClick={() => {
+                handleSignIn()
+                setIsOpen(false)
+              }}
+              disabled={isSigningIn}
+              className="w-full flex items-center gap-2 px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors disabled:opacity-50"
+            >
+              <DiscordIcon className="w-4 h-4 text-[#5865F2]" />
+              {isSigningIn ? t('auth.signingIn') : t('auth.signInWithDiscord')}
+            </button>
+          </div>
         )}
-      </button>
+      </div>
     )
   }
 
@@ -127,6 +160,7 @@ export function LoginButton() {
       {/* 下拉選單 */}
       {isOpen && (
         <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 z-50">
+          {/* 用戶資訊 */}
           <div className="px-4 py-2 border-b border-gray-200 dark:border-gray-700">
             <p className="text-sm font-medium text-gray-900 dark:text-gray-100 truncate">
               {username}
@@ -135,6 +169,20 @@ export function LoginButton() {
               {user.email}
             </p>
           </div>
+          {/* 全域設定 */}
+          <button
+            onClick={() => {
+              onGlobalSettingsClick?.()
+              setIsOpen(false)
+            }}
+            className="w-full flex items-center gap-2 px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          >
+            <Settings className="w-4 h-4" aria-hidden="true" />
+            {t('toolbar.globalSettings')}
+          </button>
+          {/* 分隔線 */}
+          <div className="border-t border-gray-200 dark:border-gray-700 my-1" />
+          {/* 登出 */}
           <button
             onClick={handleSignOut}
             className="w-full flex items-center gap-2 px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"

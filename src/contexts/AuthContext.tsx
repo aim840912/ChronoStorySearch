@@ -3,6 +3,7 @@
 import { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react'
 import { User, Session } from '@supabase/supabase-js'
 import { supabase } from '@/lib/supabase/client'
+import { clearUserStorage } from '@/lib/storage'
 
 interface AuthContextType {
   user: User | null
@@ -74,6 +75,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     try {
       const { error } = await supabase.auth.signOut()
       if (error) throw error
+
+      // 清除登入用戶的 localStorage（保留 guest 資料）
+      clearUserStorage()
+      console.log('[Auth] 已清除用戶儲存（保留 guest 資料）')
     } catch (error) {
       console.error('Sign out error:', error)
       throw error
