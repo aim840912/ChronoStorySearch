@@ -9,6 +9,7 @@ interface AuthContextType {
   user: User | null
   session: Session | null
   isLoading: boolean
+  authEnabled: boolean
   signInWithDiscord: () => Promise<void>
   signOut: () => Promise<void>
 }
@@ -18,16 +19,42 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined)
 /**
  * Auth Provider
  * 提供 Discord OAuth 登入功能，使用 Supabase Auth
+ *
+ * 可透過環境變數 NEXT_PUBLIC_AUTH_ENABLED=false 關閉認證功能
+ * 關閉時會強制登出所有用戶並隱藏登入按鈕
  */
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
   const [session, setSession] = useState<Session | null>(null)
   const [isLoading, setIsLoading] = useState(true)
 
+  // 檢查認證功能是否啟用
+  const authEnabled = process.env.NEXT_PUBLIC_AUTH_ENABLED !== 'false'
+
   // 初始化：驗證現有 session
   // 使用 getUser() 驗證 token 有效性
   // session 由 onAuthStateChange 提供，避免重複 API 調用
   useEffect(() => {
+    // 如果認證關閉，強制登出並跳過初始化
+    if (!authEnabled) {
+      const forceLogout = async () => {
+        try {
+          // 嘗試登出（清除 Supabase session cookie）
+          await supabase.auth.signOut()
+          clearUserStorage()
+          console.log('[Auth] 認證已關閉，強制登出用戶')
+        } catch (error) {
+          // 即使登出失敗也清除本地狀態
+          console.error('[Auth] 強制登出時發生錯誤:', error)
+        }
+        setSession(null)
+        setUser(null)
+        setIsLoading(false)
+      }
+      forceLogout()
+      return
+    }
+
     const initAuth = async () => {
       try {
         // 只調用一次 getUser() 驗證 token 是否有效
@@ -67,10 +94,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return () => {
       subscription.unsubscribe()
     }
-  }, [])
+  }, [authEnabled])
 
   // Discord OAuth 登入
   const signInWithDiscord = useCallback(async () => {
+    // 如果認證功能關閉，拋出錯誤
+    if (!authEnabled) {
+      throw new Error('認證功能已關閉')
+    }
+
     try {
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'discord',
@@ -83,7 +115,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       console.error('Discord sign in error:', error)
       throw error
     }
-  }, [])
+  }, [authEnabled])
 
   // 登出
   const signOut = useCallback(async () => {
@@ -106,6 +138,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         user,
         session,
         isLoading,
+        authEnabled,
         signInWithDiscord,
         signOut,
       }}

@@ -728,5 +728,9 @@
   "auth.signOut": "Sign Out",
   "auth.signingIn": "Signing in...",
   "auth.signInWithDiscord": "Sign in with Discord",
-  "auth.userMenu": "User Menu"
+  "auth.userMenu": "User Menu",
+  "auth.loginWarningTitle": "Beta Feature Notice",
+  "auth.loginWarningMessage": "This login feature is currently in beta. It will remember some of your preferences. This feature may be adjusted or disabled at any time.",
+  "auth.loginWarningConfirm": "I understand, continue",
+  "auth.loginWarningCancel": "Cancel"
 }

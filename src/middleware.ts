@@ -8,8 +8,20 @@ import { NextResponse, type NextRequest } from 'next/server'
  * - 讀取現有的 session
  * - 刷新即將過期的 token
  * - 將更新的 session 寫回 cookie
+ *
+ * 可透過環境變數控制：
+ * - NEXT_PUBLIC_AUTH_ENABLED=false: 停止認證功能
+ * - NEXT_PUBLIC_MIDDLEWARE_ENABLED=false: 停止 Middleware 執行
  */
 export async function middleware(request: NextRequest) {
+  // 檢查開關：任一關閉時直接放行，不執行 Supabase 調用
+  const authEnabled = process.env.NEXT_PUBLIC_AUTH_ENABLED !== 'false'
+  const middlewareEnabled = process.env.NEXT_PUBLIC_MIDDLEWARE_ENABLED !== 'false'
+
+  if (!authEnabled || !middlewareEnabled) {
+    return NextResponse.next({ request })
+  }
+
   const response = NextResponse.next({ request })
 
   const supabase = createServerClient(

@@ -336,8 +336,10 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
   )
 
   // 根據用戶設定排序和過濾（僅在 enableSettings 時）
+  // 如果 statOrder 是空陣列，使用預設順序（修復 localStorage 空陣列導致屬性不顯示的 bug）
+  const effectiveStatOrder = statOrder.length > 0 ? statOrder : DEFAULT_STAT_ORDER
   const sortedStats = enableSettings
-    ? statOrder
+    ? effectiveStatOrder
         .map(key => filteredStats.find(s => s.key === key))
         .filter((s): s is typeof filteredStats[number] => s !== undefined)
         .filter(s => visibleStats.includes(s.key))
