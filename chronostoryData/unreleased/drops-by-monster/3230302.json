@@ -1,0 +1,241 @@
+{
+  "mobId": 3230302,
+  "mobName": "Bloctopus",
+  "chineseMobName": "機器章魚",
+  "isBoss": false,
+  "inGame": false,
+  "totalDrops": 21,
+  "drops": [
+    {
+      "itemId": 4000099,
+      "itemName": "Bloctopus Key Chain",
+      "chineseItemName": "章魚鑰匙環",
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 0,
+      "itemName": "Meso",
+      "chineseItemName": "楓幣",
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 76,
+      "maxQty": 114,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 2000002,
+      "itemName": "White Potion",
+      "chineseItemName": "白色藥水",
+      "chance": 2,
+      "displayChance": "2.0%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 2000003,
+      "itemName": "Blue Potion",
+      "chineseItemName": "藍色藥水",
+      "chance": 2,
+      "displayChance": "2.0%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 4004003,
+      "itemName": "LUK Crystal Ore",
+      "chineseItemName": "幸運母礦",
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 4010006,
+      "itemName": "Gold Ore",
+      "chineseItemName": "黃金母礦",
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 4020004,
+      "itemName": "Opal Ore",
+      "chineseItemName": "蛋白石母礦",
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 4004001,
+      "itemName": "Wisdom Crystal Ore",
+      "chineseItemName": "智慧母礦",
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1002141,
+      "itemName": "Red Matty",
+      "chineseItemName": "紅星魔法帽",
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1040075,
+      "itemName": "Dark Legolier",
+      "chineseItemName": "黑守護之服",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1040082,
+      "itemName": "Khaki Shadow",
+      "chineseItemName": "樹林之影",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1060064,
+      "itemName": "Dark Legolier Pants",
+      "chineseItemName": "黑守護之褲",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1060071,
+      "itemName": "Khaki Shadow Pants",
+      "chineseItemName": "樹林之褲",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072040,
+      "itemName": "Silver Battle Grieves",
+      "chineseItemName": "銀鬥士鞋",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072078,
+      "itemName": "Black Magicshoes",
+      "chineseItemName": "黑魔法鞋",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1051009,
+      "itemName": "Purple Avenger",
+      "chineseItemName": "紫飛影甲",
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1052110,
+      "itemName": "Blue Brace Look",
+      "chineseItemName": "藍色緊身服",
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1442009,
+      "itemName": "Crescent Polearm",
+      "chineseItemName": "月牙戟",
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1462006,
+      "itemName": "Silver Crow",
+      "chineseItemName": "白銀弩",
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1472010,
+      "itemName": "Adamantium Guards",
+      "chineseItemName": "朱礦鬥拳",
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 2041023,
+      "itemName": "Scroll for Cape for LUK 10%",
+      "chineseItemName": "披風幸運卷軸10%",
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    }
+  ]
+}

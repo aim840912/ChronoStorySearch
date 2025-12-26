@@ -2358,7 +2358,7 @@
       "name": "Separated Dark Pepe",
       "maxHP": 7800,
       "accuracy": 210,
-      "evasion": null,
+      "evasion": 31,
       "level": 64,
       "exp": 1400,
       "physicalDefense": 220,
