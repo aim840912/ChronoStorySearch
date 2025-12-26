@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import { LogOut, User, ChevronDown, Settings } from 'lucide-react'
 import { useAuth } from '@/contexts/AuthContext'
 import { useLanguage } from '@/contexts/LanguageContext'
@@ -31,10 +32,11 @@ function DiscordIcon({ className }: { className?: string }) {
  * 已登入時顯示用戶頭像和下拉選單（用戶資訊 + 全域設定 + 登出）
  */
 export function LoginButton({ onGlobalSettingsClick }: LoginButtonProps) {
-  const { user, isLoading, signInWithDiscord, signOut } = useAuth()
+  const { user, isLoading, signInWithDiscord, signOut, authEnabled } = useAuth()
   const { t } = useLanguage()
   const [isOpen, setIsOpen] = useState(false)
   const [isSigningIn, setIsSigningIn] = useState(false)
+  const [showWarning, setShowWarning] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
   // 點擊外部關閉下拉選單
@@ -47,6 +49,21 @@ export function LoginButton({ onGlobalSettingsClick }: LoginButtonProps) {
     document.addEventListener('mousedown', handleClickOutside)
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
+
+  // ESC 鍵關閉警告對話框
+  useEffect(() => {
+    function handleEsc(e: KeyboardEvent) {
+      if (e.key === 'Escape') setShowWarning(false)
+    }
+    if (showWarning) {
+      window.addEventListener('keydown', handleEsc)
+      document.body.style.overflow = 'hidden'
+    }
+    return () => {
+      window.removeEventListener('keydown', handleEsc)
+      document.body.style.overflow = 'unset'
+    }
+  }, [showWarning])
 
   // 處理登入
   const handleSignIn = async () => {
@@ -80,48 +97,109 @@ export function LoginButton({ onGlobalSettingsClick }: LoginButtonProps) {
   // 未登入：顯示齒輪圖示和下拉選單
   if (!user) {
     return (
-      <div className="relative" ref={dropdownRef}>
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center justify-center w-8 h-8 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-          aria-expanded={isOpen}
-          aria-haspopup="true"
-          aria-label={t('toolbar.settings')}
-        >
-          <Settings className="w-5 h-5 text-gray-600 dark:text-gray-300" aria-hidden="true" />
-        </button>
+      <>
+        <div className="relative" ref={dropdownRef}>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="flex items-center justify-center w-8 h-8 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            aria-expanded={isOpen}
+            aria-haspopup="true"
+            aria-label={t('toolbar.settings')}
+          >
+            <Settings className="w-5 h-5 text-gray-600 dark:text-gray-300" aria-hidden="true" />
+          </button>
 
-        {/* 下拉選單 */}
-        {isOpen && (
-          <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 z-50">
-            {/* 全域設定 */}
-            <button
-              onClick={() => {
-                onGlobalSettingsClick?.()
-                setIsOpen(false)
-              }}
-              className="w-full flex items-center gap-2 px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          {/* 下拉選單 */}
+          {isOpen && (
+            <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 z-50">
+              {/* 全域設定 - 始終顯示 */}
+              <button
+                onClick={() => {
+                  onGlobalSettingsClick?.()
+                  setIsOpen(false)
+                }}
+                className="w-full flex items-center gap-2 px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+              >
+                <Settings className="w-4 h-4" aria-hidden="true" />
+                {t('toolbar.globalSettings')}
+              </button>
+              {/* Discord 登入 - 只在 authEnabled 時顯示 */}
+              {authEnabled && (
+                <>
+                  {/* 分隔線 */}
+                  <div className="border-t border-gray-200 dark:border-gray-700 my-1" />
+                  {/* Discord 登入 */}
+                  <button
+                    onClick={() => {
+                      setShowWarning(true)
+                      setIsOpen(false)
+                    }}
+                    disabled={isSigningIn}
+                    className="w-full flex items-center gap-2 px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors disabled:opacity-50"
+                  >
+                    <DiscordIcon className="w-4 h-4 text-[#5865F2]" />
+                    {isSigningIn ? t('auth.signingIn') : t('auth.signInWithDiscord')}
+                  </button>
+                </>
+              )}
+            </div>
+          )}
+        </div>
+
+        {/* 登入警告對話框 - 使用 Portal 渲染到 body 確保置中 */}
+        {showWarning && createPortal(
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+            onClick={() => setShowWarning(false)}
+          >
+            <div
+              className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-md"
+              onClick={(e) => e.stopPropagation()}
             >
-              <Settings className="w-4 h-4" aria-hidden="true" />
-              {t('toolbar.globalSettings')}
-            </button>
-            {/* 分隔線 */}
-            <div className="border-t border-gray-200 dark:border-gray-700 my-1" />
-            {/* Discord 登入 */}
-            <button
-              onClick={() => {
-                handleSignIn()
-                setIsOpen(false)
-              }}
-              disabled={isSigningIn}
-              className="w-full flex items-center gap-2 px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors disabled:opacity-50"
-            >
-              <DiscordIcon className="w-4 h-4 text-[#5865F2]" />
-              {isSigningIn ? t('auth.signingIn') : t('auth.signInWithDiscord')}
-            </button>
-          </div>
+              {/* Modal Header - 提示背景 (橘色) */}
+              <div className="bg-amber-500 dark:bg-amber-600 p-6 rounded-t-xl">
+                <div className="flex items-center gap-3">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
+                  <div>
+                    <h2 className="text-2xl font-bold text-white">{t('auth.loginWarningTitle')}</h2>
+                  </div>
+                </div>
+              </div>
+
+              {/* Modal Content */}
+              <div className="p-6">
+                <p className="text-gray-700 dark:text-gray-300 text-base mb-6">
+                  {t('auth.loginWarningMessage')}
+                </p>
+
+                {/* 按鈕組 */}
+                <div className="flex gap-3">
+                  <button
+                    onClick={() => setShowWarning(false)}
+                    className="flex-1 px-4 py-3 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white rounded-lg font-medium transition-colors"
+                  >
+                    {t('auth.loginWarningCancel')}
+                  </button>
+                  <button
+                    onClick={() => {
+                      setShowWarning(false)
+                      handleSignIn()
+                    }}
+                    disabled={isSigningIn}
+                    className="flex-1 px-4 py-3 bg-[#5865F2] hover:bg-[#4752C4] text-white rounded-lg font-medium transition-all shadow-md hover:shadow-lg disabled:opacity-50 flex items-center justify-center gap-2"
+                  >
+                    <DiscordIcon className="w-5 h-5" />
+                    {t('auth.loginWarningConfirm')}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>,
+          document.body
         )}
-      </div>
+      </>
     )
   }
 

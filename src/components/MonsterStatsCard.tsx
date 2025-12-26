@@ -119,7 +119,9 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
   ]
 
   // 根據用戶自訂順序排序，並過濾可見屬性
-  const sortedStatConfig = statOrder
+  // 如果 statOrder 是空陣列，使用預設順序（修復 localStorage 空陣列導致屬性不顯示的 bug）
+  const effectiveStatOrder = statOrder.length > 0 ? statOrder : DEFAULT_STAT_ORDER
+  const sortedStatConfig = effectiveStatOrder
     .map(key => statConfig.find(s => s.dataKey === key))
     .filter((s): s is typeof statConfig[number] => s !== undefined)
     .filter(s => visibleStats.includes(s.dataKey))

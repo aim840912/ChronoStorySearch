@@ -729,5 +729,9 @@
   "auth.signOut": "登出",
   "auth.signingIn": "登入中...",
   "auth.signInWithDiscord": "使用 Discord 登入",
-  "auth.userMenu": "用戶選單"
+  "auth.userMenu": "用戶選單",
+  "auth.loginWarningTitle": "測試功能提示",
+  "auth.loginWarningMessage": "此登入功能目前為測試階段，會記住您的一些偏好設定。此功能隨時可能會調整或關閉。",
+  "auth.loginWarningConfirm": "我了解，繼續登入",
+  "auth.loginWarningCancel": "取消"
 }
