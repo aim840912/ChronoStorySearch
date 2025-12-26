@@ -6,6 +6,7 @@
  * - TypeScript 泛型支援
  * - SSR 安全（Next.js 相容）
  * - 自動序列化/反序列化 JSON
+ * - 支援雲端同步：監聽 'preferences-synced' 事件重新載入設定
  *
  * 使用範例：
  * ```tsx
@@ -13,31 +14,39 @@
  * ```
  */
 
-import { useState } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
 export function useLocalStorage<T>(
   key: string,
   initialValue: T
 ): [T, (value: T | ((val: T) => T)) => void] {
-  // State to store our value
-  // Pass initial state function to useState so logic is only executed once
-  const [storedValue, setStoredValue] = useState<T>(() => {
+  // 從 localStorage 讀取值的函數
+  const readValue = useCallback((): T => {
     // SSR 檢查：伺服器端無 window 物件
     if (typeof window === 'undefined') {
       return initialValue
     }
 
     try {
-      // Get from local storage by key
       const item = window.localStorage.getItem(key)
-      // Parse stored json or if none return initialValue
       return item ? (JSON.parse(item) as T) : initialValue
     } catch (error) {
-      // If error also return initialValue
       console.warn(`Error loading localStorage key "${key}":`, error)
       return initialValue
     }
-  })
+  }, [key, initialValue])
+
+  const [storedValue, setStoredValue] = useState<T>(readValue)
+
+  // 監聽 preferences-synced 事件，重新從 localStorage 讀取值
+  // 這確保當雲端設定同步完成後，UI 能正確更新
+  useEffect(() => {
+    const handleSync = () => {
+      setStoredValue(readValue())
+    }
+    window.addEventListener('preferences-synced', handleSync)
+    return () => window.removeEventListener('preferences-synced', handleSync)
+  }, [readValue])
 
   // Return a wrapped version of useState's setter function that
   // persists the new value to localStorage.
