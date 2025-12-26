@@ -43,10 +43,22 @@ export function subscribeToPreferences(
         filter: `user_id=eq.${userId}`,
       },
       (payload: RealtimePostgresChangesPayload<UserPreferencesRow>) => {
+        const newRow = payload.new as UserPreferencesRow
+
+        // 安全驗證：確保收到的資料確實屬於當前用戶
+        // 這是防禦性編程，即使 RLS 失效也不會套用別人的資料
+        if (newRow.user_id !== userId) {
+          console.error(
+            '[Realtime] 安全警告：收到不匹配的用戶資料',
+            { expected: userId, received: newRow.user_id }
+          )
+          return
+        }
+
         // 轉換為我們的型別
         const typedPayload: PreferencesRealtimePayload = {
           eventType: 'UPDATE',
-          new: payload.new as UserPreferencesRow,
+          new: newRow,
           old: payload.old as UserPreferencesRow,
         }
         onUpdate(typedPayload)

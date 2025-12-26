@@ -707,6 +707,7 @@
   "settings.themeDark": "Dark",
   "settings.imageFormat": "Image Format",
   "settings.monsterStats": "Monster Stats Display",
+  "settings.itemStats": "Item Stats Display",
   "settings.viewMode": "View Mode",
   "settings.visibleStats": "Visible Stats",
   "settings.resetToDefault": "Reset to Default",
