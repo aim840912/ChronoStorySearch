@@ -33,6 +33,11 @@ export const STORAGE_KEYS = {
   ITEM_STATS_ORDER: 'item-stats-order',
   ITEM_STATS_VISIBLE: 'item-stats-visible',
   ITEM_STATS_SHOW_MAX_ONLY: 'item-stats-show-max-only',
+  // 物品掉落來源顯示設定（與 ItemModal 共用）
+  ITEM_SOURCES_VIEW_MODE: 'item-sources-view',
+  // 怪物掉落顯示設定（與 MonsterModal 共用）
+  MONSTER_DROPS_VIEW_MODE: 'monster-drops-view',
+  MONSTER_DROPS_SHOW_MAX_ONLY: 'monster-drops-show-max-only',
   // 進階篩選歷史紀錄
   FILTER_HISTORY: 'chronostory-filter-history',
 } as const
@@ -406,4 +411,30 @@ export function getFilterHistory(): FilterHistoryRecord[] {
 
 export function setFilterHistory(history: FilterHistoryRecord[]): boolean {
   return setStorageItem(STORAGE_KEYS.FILTER_HISTORY, history)
+}
+
+// 物品掉落來源顯示設定
+export function getItemSourcesViewMode(): 'grid' | 'list' {
+  return getStorageItem<'grid' | 'list'>(STORAGE_KEYS.ITEM_SOURCES_VIEW_MODE, 'grid')
+}
+
+export function setItemSourcesViewMode(mode: 'grid' | 'list'): boolean {
+  return setStorageItem(STORAGE_KEYS.ITEM_SOURCES_VIEW_MODE, mode)
+}
+
+// 怪物掉落顯示設定
+export function getMonsterDropsViewMode(): 'grid' | 'list' {
+  return getStorageItem<'grid' | 'list'>(STORAGE_KEYS.MONSTER_DROPS_VIEW_MODE, 'grid')
+}
+
+export function setMonsterDropsViewMode(mode: 'grid' | 'list'): boolean {
+  return setStorageItem(STORAGE_KEYS.MONSTER_DROPS_VIEW_MODE, mode)
+}
+
+export function getMonsterDropsShowMaxOnly(): boolean {
+  return getStorageItem<boolean>(STORAGE_KEYS.MONSTER_DROPS_SHOW_MAX_ONLY, false)
+}
+
+export function setMonsterDropsShowMaxOnly(show: boolean): boolean {
+  return setStorageItem(STORAGE_KEYS.MONSTER_DROPS_SHOW_MAX_ONLY, show)
 }

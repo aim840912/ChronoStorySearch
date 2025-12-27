@@ -32,6 +32,13 @@ CREATE TABLE IF NOT EXISTS user_preferences (
   item_stats_visible JSONB DEFAULT '[]'::jsonb,
   item_stats_show_max_only BOOLEAN DEFAULT false,
 
+  -- 物品掉落來源顯示設定
+  item_sources_view_mode TEXT DEFAULT 'grid',
+
+  -- 怪物掉落顯示設定
+  monster_drops_view_mode TEXT DEFAULT 'grid',
+  monster_drops_show_max_only BOOLEAN DEFAULT false,
+
   -- 時間戳記
   created_at TIMESTAMPTZ DEFAULT NOW(),
   updated_at TIMESTAMPTZ DEFAULT NOW(),
@@ -100,3 +107,13 @@ ORDER BY ordinal_position;
 -- ADD COLUMN IF NOT EXISTS item_stats_order JSONB DEFAULT '[]'::jsonb,
 -- ADD COLUMN IF NOT EXISTS item_stats_visible JSONB DEFAULT '[]'::jsonb,
 -- ADD COLUMN IF NOT EXISTS item_stats_show_max_only BOOLEAN DEFAULT false;
+
+-- =====================================================
+-- Migration: 新增掉落來源顯示設定欄位
+-- 執行時機：已有 user_preferences 表時執行
+-- =====================================================
+
+-- ALTER TABLE user_preferences
+-- ADD COLUMN IF NOT EXISTS item_sources_view_mode TEXT DEFAULT 'grid',
+-- ADD COLUMN IF NOT EXISTS monster_drops_view_mode TEXT DEFAULT 'grid',
+-- ADD COLUMN IF NOT EXISTS monster_drops_show_max_only BOOLEAN DEFAULT false;

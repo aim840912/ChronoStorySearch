@@ -48,6 +48,14 @@ import {
   setItemStatsVisible,
   getItemStatsShowMaxOnly,
   setItemStatsShowMaxOnly,
+  // 物品掉落來源顯示設定
+  getItemSourcesViewMode,
+  setItemSourcesViewMode,
+  // 怪物掉落顯示設定
+  getMonsterDropsViewMode,
+  setMonsterDropsViewMode,
+  getMonsterDropsShowMaxOnly,
+  setMonsterDropsShowMaxOnly,
 } from '@/lib/storage'
 
 interface PreferencesSyncContextType {
@@ -124,6 +132,11 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
         setItemStatsOrder(cloudPrefs.itemStatsOrder)
         setItemStatsVisible(cloudPrefs.itemStatsVisible)
         setItemStatsShowMaxOnly(cloudPrefs.itemStatsShowMaxOnly)
+        // 物品掉落來源顯示設定
+        setItemSourcesViewMode(cloudPrefs.itemSourcesViewMode)
+        // 怪物掉落顯示設定
+        setMonsterDropsViewMode(cloudPrefs.monsterDropsViewMode)
+        setMonsterDropsShowMaxOnly(cloudPrefs.monsterDropsShowMaxOnly)
 
         console.log('[PreferencesSync] 已從雲端載入設定')
 
@@ -164,6 +177,11 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
         itemStatsOrder: getItemStatsOrder(),
         itemStatsVisible: getItemStatsVisible(),
         itemStatsShowMaxOnly: getItemStatsShowMaxOnly(),
+        // 物品掉落來源顯示設定
+        itemSourcesViewMode: getItemSourcesViewMode(),
+        // 怪物掉落顯示設定
+        monsterDropsViewMode: getMonsterDropsViewMode(),
+        monsterDropsShowMaxOnly: getMonsterDropsShowMaxOnly(),
       }
 
       await preferencesService.upsert(localPrefs)
@@ -184,15 +202,8 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
     const changes = pendingChangesRef.current
     if (Object.keys(changes).length === 0) return
 
-    // 清空佇列
-    pendingChangesRef.current = {}
-
-    // 記錄本地變更時間，防止 Realtime 循環更新
-    lastLocalUpdateRef.current = Date.now()
-
-    try {
-      // 批次更新：一次 upsert 取代多次 updateField
-      const currentPrefs: UserPreferences = {
+    // 先讀取當前所有 localStorage 值（避免 race condition）
+    const currentPrefs: UserPreferences = {
         theme: getTheme(),
         language: getLanguage(),
         imageFormat: getImageFormat(),
@@ -205,8 +216,20 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
         itemStatsOrder: getItemStatsOrder(),
         itemStatsVisible: getItemStatsVisible(),
         itemStatsShowMaxOnly: getItemStatsShowMaxOnly(),
+        // 物品掉落來源顯示設定
+        itemSourcesViewMode: getItemSourcesViewMode(),
+        // 怪物掉落顯示設定
+        monsterDropsViewMode: getMonsterDropsViewMode(),
+        monsterDropsShowMaxOnly: getMonsterDropsShowMaxOnly(),
       }
 
+    // 記錄本地變更時間，防止 Realtime 循環更新
+    lastLocalUpdateRef.current = Date.now()
+
+    // 清空佇列（在讀取值之後，確保新變更不會遺失）
+    pendingChangesRef.current = {}
+
+    try {
       // 合併待處理的變更
       const mergedPrefs = { ...currentPrefs, ...changes }
       await preferencesService.upsert(mergedPrefs)
@@ -305,6 +328,11 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
     setItemStatsOrder(prefs.itemStatsOrder)
     setItemStatsVisible(prefs.itemStatsVisible)
     setItemStatsShowMaxOnly(prefs.itemStatsShowMaxOnly)
+    // 物品掉落來源顯示設定
+    setItemSourcesViewMode(prefs.itemSourcesViewMode)
+    // 怪物掉落顯示設定
+    setMonsterDropsViewMode(prefs.monsterDropsViewMode)
+    setMonsterDropsShowMaxOnly(prefs.monsterDropsShowMaxOnly)
     window.dispatchEvent(new CustomEvent('preferences-synced'))
   }, [])
 

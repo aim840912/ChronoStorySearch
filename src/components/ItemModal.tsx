@@ -87,7 +87,22 @@ export function ItemModal({
   const [viewMode, setViewMode] = useLocalStorage<'grid' | 'list'>('item-sources-view', 'grid')
 
   // 是否顯示掉落來源圖示（預設隱藏）
-  const [showDropIcons, setShowDropIcons] = useLocalStorage<boolean>('item-sources-show-icons', false)
+  const [showDropIcons, setShowDropIconsLocal] = useLocalStorage<boolean>('item-sources-show-icons', false)
+
+  // 包裝 setter 函數以觸發雲端同步
+  const setViewModeWithSync = (mode: 'grid' | 'list') => {
+    setViewMode(mode)
+    window.dispatchEvent(new CustomEvent('preference-changed', {
+      detail: { field: 'itemSourcesViewMode', value: mode }
+    }))
+  }
+
+  const setShowDropIconsWithSync = (show: boolean) => {
+    setShowDropIconsLocal(show)
+    window.dispatchEvent(new CustomEvent('preference-changed', {
+      detail: { field: 'itemSourcesShowIcons', value: show }
+    }))
+  }
 
   // 懶加載怪物資訊資料 (用於顯示怪物血量)
   const {
@@ -563,7 +578,7 @@ export function ItemModal({
                   <div className="flex gap-2 lg:ml-auto">
                     {/* 顯示圖示切換按鈕 */}
                     <button
-                      onClick={() => setShowDropIcons(!showDropIcons)}
+                      onClick={() => setShowDropIconsWithSync(!showDropIcons)}
                       className={`p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 ${
                         showDropIcons
                           ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400'
@@ -585,7 +600,7 @@ export function ItemModal({
                     </button>
                     {/* 視圖切換按鈕 */}
                     <button
-                      onClick={() => setViewMode(viewMode === 'grid' ? 'list' : 'grid')}
+                      onClick={() => setViewModeWithSync(viewMode === 'grid' ? 'list' : 'grid')}
                       className="p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600"
                       aria-label={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
                       title={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}

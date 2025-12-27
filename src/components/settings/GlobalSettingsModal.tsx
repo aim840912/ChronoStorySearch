@@ -6,6 +6,50 @@ import { useTheme } from '@/contexts/ThemeContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import type { ImageFormat } from '@/lib/image-utils'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
+import { X, Sun, Moon, LayoutGrid, List, ChevronRight } from 'lucide-react'
+
+/**
+ * 視圖模式切換元件
+ * 用於在 Grid 和 List 視圖之間切換
+ */
+function ViewModeToggle({
+  value,
+  onChange,
+  gridTitle,
+  listTitle,
+}: {
+  value: 'grid' | 'list'
+  onChange: (mode: 'grid' | 'list') => void
+  gridTitle: string
+  listTitle: string
+}) {
+  return (
+    <div className="flex gap-1 bg-gray-100 dark:bg-gray-700 rounded-lg p-1">
+      <button
+        onClick={() => onChange('grid')}
+        className={`p-1.5 rounded transition-colors ${
+          value === 'grid'
+            ? 'bg-blue-500 text-white'
+            : 'text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
+        }`}
+        title={gridTitle}
+      >
+        <LayoutGrid className="w-5 h-5" />
+      </button>
+      <button
+        onClick={() => onChange('list')}
+        className={`p-1.5 rounded transition-colors ${
+          value === 'list'
+            ? 'bg-blue-500 text-white'
+            : 'text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
+        }`}
+        title={listTitle}
+      >
+        <List className="w-5 h-5" />
+      </button>
+    </div>
+  )
+}
 
 // 怪物屬性設定常量（與 MonsterStatsCard 共用）
 const DEFAULT_STAT_ORDER = ['level', 'maxHP', 'physicalDefense', 'magicDefense', 'accuracy', 'evasion', 'exp', 'minimumPushDamage']
@@ -83,6 +127,13 @@ export function GlobalSettingsModal({
   const [itemVisibleStats, setItemVisibleStatsLocal] = useLocalStorage<string[]>('item-stats-visible', DEFAULT_ITEM_VISIBLE_STATS)
   const [showMaxOnly, setShowMaxOnlyLocal] = useLocalStorage<boolean>('item-stats-show-max-only', false)
 
+  // 物品掉落來源顯示設定（與 ItemModal 共用相同 localStorage 鍵）
+  const [itemSourcesViewMode, setItemSourcesViewModeLocal] = useLocalStorage<'grid' | 'list'>('item-sources-view', 'grid')
+
+  // 怪物掉落顯示設定（與 MonsterModal 共用相同 localStorage 鍵）
+  const [monsterDropsViewMode, setMonsterDropsViewModeLocal] = useLocalStorage<'grid' | 'list'>('monster-drops-view', 'grid')
+  const [monsterDropsShowMaxOnly, setMonsterDropsShowMaxOnlyLocal] = useLocalStorage<boolean>('monster-drops-show-max-only', false)
+
   // 雲端同步包裝函數 - 怪物設定
   const setViewMode = (mode: 'grid' | 'list') => {
     setViewModeLocal(mode)
@@ -134,6 +185,29 @@ export function GlobalSettingsModal({
     }))
   }
 
+  // 雲端同步包裝函數 - 物品掉落來源設定
+  const setItemSourcesViewMode = (mode: 'grid' | 'list') => {
+    setItemSourcesViewModeLocal(mode)
+    window.dispatchEvent(new CustomEvent('preference-changed', {
+      detail: { field: 'itemSourcesViewMode', value: mode }
+    }))
+  }
+
+  // 雲端同步包裝函數 - 怪物掉落設定
+  const setMonsterDropsViewMode = (mode: 'grid' | 'list') => {
+    setMonsterDropsViewModeLocal(mode)
+    window.dispatchEvent(new CustomEvent('preference-changed', {
+      detail: { field: 'monsterDropsViewMode', value: mode }
+    }))
+  }
+
+  const setMonsterDropsShowMaxOnly = (show: boolean) => {
+    setMonsterDropsShowMaxOnlyLocal(show)
+    window.dispatchEvent(new CustomEvent('preference-changed', {
+      detail: { field: 'monsterDropsShowMaxOnly', value: show }
+    }))
+  }
+
   // 檢查是否有自訂設定（怪物）
   const isCustomOrder = JSON.stringify(statOrder) !== JSON.stringify(DEFAULT_STAT_ORDER)
   const isCustomVisibility = JSON.stringify([...visibleStats].sort()) !== JSON.stringify([...DEFAULT_VISIBLE_STATS].sort())
@@ -142,6 +216,12 @@ export function GlobalSettingsModal({
   const isItemCustomOrder = JSON.stringify(itemStatOrder) !== JSON.stringify(DEFAULT_ITEM_STAT_ORDER)
   const isItemCustomVisibility = JSON.stringify([...itemVisibleStats].sort()) !== JSON.stringify([...DEFAULT_ITEM_VISIBLE_STATS].sort())
   const isItemCustomShowMaxOnly = showMaxOnly !== false
+
+  // 檢查是否有自訂設定（物品掉落來源）
+  const isItemSourcesCustom = itemSourcesViewMode !== 'grid'
+
+  // 檢查是否有自訂設定（怪物掉落）
+  const isMonsterDropsCustom = monsterDropsViewMode !== 'grid' || monsterDropsShowMaxOnly !== false
 
   // 切換屬性可見性（怪物）
   const toggleStatVisibility = (dataKey: string) => {
@@ -182,6 +262,17 @@ export function GlobalSettingsModal({
     setShowMaxOnly(false)
   }
 
+  // 重置物品掉落來源設定
+  const resetItemSourcesSettings = () => {
+    setItemSourcesViewMode('grid')
+  }
+
+  // 重置怪物掉落設定
+  const resetMonsterDropsSettings = () => {
+    setMonsterDropsViewMode('grid')
+    setMonsterDropsShowMaxOnly(false)
+  }
+
   // 處理隱私設定點擊
   const handlePrivacyClick = () => {
     onClose()
@@ -213,9 +304,7 @@ export function GlobalSettingsModal({
             className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
             aria-label={t('common.close')}
           >
-            <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
+            <X className="w-5 h-5 text-gray-500" />
           </button>
         </div>
 
@@ -266,9 +355,7 @@ export function GlobalSettingsModal({
                       : 'text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
                   }`}
                 >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                  </svg>
+                  <Sun className="w-4 h-4" />
                   {t('settings.themeLight')}
                 </button>
                 <button
@@ -279,9 +366,7 @@ export function GlobalSettingsModal({
                       : 'text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
                   }`}
                 >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                  </svg>
+                  <Moon className="w-4 h-4" />
                   {t('settings.themeDark')}
                 </button>
               </div>
@@ -330,40 +415,18 @@ export function GlobalSettingsModal({
             {/* 視圖模式 */}
             <div className="flex items-center justify-between">
               <span className="text-gray-700 dark:text-gray-300">{t('settings.viewMode')}</span>
-              <div className="flex gap-1 bg-gray-100 dark:bg-gray-700 rounded-lg p-1">
-                <button
-                  onClick={() => setViewMode('grid')}
-                  className={`p-1.5 rounded transition-colors ${
-                    viewMode === 'grid'
-                      ? 'bg-blue-500 text-white'
-                      : 'text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
-                  }`}
-                  title={t('monster.viewGrid')}
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                  </svg>
-                </button>
-                <button
-                  onClick={() => setViewMode('list')}
-                  className={`p-1.5 rounded transition-colors ${
-                    viewMode === 'list'
-                      ? 'bg-blue-500 text-white'
-                      : 'text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
-                  }`}
-                  title={t('monster.viewList')}
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                </button>
-              </div>
+              <ViewModeToggle
+                value={viewMode}
+                onChange={setViewMode}
+                gridTitle={t('monster.viewGrid')}
+                listTitle={t('monster.viewList')}
+              />
             </div>
 
             {/* 顯示的屬性 */}
             <div className="space-y-2">
               <span className="text-gray-700 dark:text-gray-300">{t('settings.visibleStats')}</span>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
                 {STAT_CONFIG.map(({ dataKey, translationKey }) => (
                   <label
                     key={dataKey}
@@ -407,34 +470,12 @@ export function GlobalSettingsModal({
             {/* 視圖模式 */}
             <div className="flex items-center justify-between">
               <span className="text-gray-700 dark:text-gray-300">{t('settings.viewMode')}</span>
-              <div className="flex gap-1 bg-gray-100 dark:bg-gray-700 rounded-lg p-1">
-                <button
-                  onClick={() => setItemViewMode('grid')}
-                  className={`p-1.5 rounded transition-colors ${
-                    itemViewMode === 'grid'
-                      ? 'bg-blue-500 text-white'
-                      : 'text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
-                  }`}
-                  title={t('monster.viewGrid')}
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                  </svg>
-                </button>
-                <button
-                  onClick={() => setItemViewMode('list')}
-                  className={`p-1.5 rounded transition-colors ${
-                    itemViewMode === 'list'
-                      ? 'bg-blue-500 text-white'
-                      : 'text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
-                  }`}
-                  title={t('monster.viewList')}
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                </button>
-              </div>
+              <ViewModeToggle
+                value={itemViewMode}
+                onChange={setItemViewMode}
+                gridTitle={t('monster.viewGrid')}
+                listTitle={t('monster.viewList')}
+              />
             </div>
 
             {/* 只顯示最大值 */}
@@ -459,7 +500,7 @@ export function GlobalSettingsModal({
             {/* 顯示的屬性 */}
             <div className="space-y-2">
               <span className="text-gray-700 dark:text-gray-300">{t('settings.visibleStats')}</span>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
                 {ITEM_STAT_CONFIG.map(({ dataKey, translationKey }) => (
                   <label
                     key={dataKey}
@@ -484,6 +525,88 @@ export function GlobalSettingsModal({
           {/* 分隔線 */}
           <hr className="border-gray-200 dark:border-gray-700" />
 
+          {/* 物品掉落來源顯示設定 */}
+          <section className="space-y-4">
+            <div className="flex items-center justify-between">
+              <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                {t('settings.itemSources')}
+              </h3>
+              {isItemSourcesCustom && (
+                <button
+                  onClick={resetItemSourcesSettings}
+                  className="text-xs text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  {t('settings.resetToDefault')}
+                </button>
+              )}
+            </div>
+
+            {/* 視圖模式 */}
+            <div className="flex items-center justify-between">
+              <span className="text-gray-700 dark:text-gray-300">{t('settings.viewMode')}</span>
+              <ViewModeToggle
+                value={itemSourcesViewMode}
+                onChange={setItemSourcesViewMode}
+                gridTitle={t('monster.viewGrid')}
+                listTitle={t('monster.viewList')}
+              />
+            </div>
+
+          </section>
+
+          {/* 分隔線 */}
+          <hr className="border-gray-200 dark:border-gray-700" />
+
+          {/* 怪物掉落顯示設定 */}
+          <section className="space-y-4">
+            <div className="flex items-center justify-between">
+              <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                {t('settings.monsterDrops')}
+              </h3>
+              {isMonsterDropsCustom && (
+                <button
+                  onClick={resetMonsterDropsSettings}
+                  className="text-xs text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  {t('settings.resetToDefault')}
+                </button>
+              )}
+            </div>
+
+            {/* 視圖模式 */}
+            <div className="flex items-center justify-between">
+              <span className="text-gray-700 dark:text-gray-300">{t('settings.viewMode')}</span>
+              <ViewModeToggle
+                value={monsterDropsViewMode}
+                onChange={setMonsterDropsViewMode}
+                gridTitle={t('monster.viewGrid')}
+                listTitle={t('monster.viewList')}
+              />
+            </div>
+
+            {/* 只顯示最大值 */}
+            <div className="flex items-center justify-between">
+              <span className="text-gray-700 dark:text-gray-300">{t('item.showMaxOnlyOption')}</span>
+              <button
+                onClick={() => setMonsterDropsShowMaxOnly(!monsterDropsShowMaxOnly)}
+                className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                  monsterDropsShowMaxOnly ? 'bg-blue-500' : 'bg-gray-300 dark:bg-gray-600'
+                }`}
+                role="switch"
+                aria-checked={monsterDropsShowMaxOnly}
+              >
+                <span
+                  className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                    monsterDropsShowMaxOnly ? 'translate-x-6' : 'translate-x-1'
+                  }`}
+                />
+              </button>
+            </div>
+          </section>
+
+          {/* 分隔線 */}
+          <hr className="border-gray-200 dark:border-gray-700" />
+
           {/* 隱私設定 */}
           <section className="space-y-4">
             <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
@@ -494,9 +617,7 @@ export function GlobalSettingsModal({
               className="w-full px-4 py-3 text-left text-gray-700 dark:text-gray-300 bg-gray-50 dark:bg-gray-700/50 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center justify-between"
             >
               <span>{t('settings.managePrivacy')}</span>
-              <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+              <ChevronRight className="w-5 h-5 text-gray-400" />
             </button>
           </section>
         </div>

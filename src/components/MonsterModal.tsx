@@ -73,13 +73,35 @@ export function MonsterModal({
   const [mobileTab, setMobileTab] = useState<'info' | 'drops'>('info')
 
   // 視圖模式切換狀態（'grid' = 卡片視圖, 'list' = 列表視圖）
-  const [viewMode, setViewMode] = useLocalStorage<'grid' | 'list'>('monster-drops-view', 'grid')
+  const [viewMode, setViewModeLocal] = useLocalStorage<'grid' | 'list'>('monster-drops-view', 'grid')
 
   // 顯示掉落來源圖示狀態（預設隱藏）
-  const [showDropIcons, setShowDropIcons] = useLocalStorage<boolean>('monster-drops-show-icons', false)
+  const [showDropIcons, setShowDropIconsLocal] = useLocalStorage<boolean>('monster-drops-show-icons', false)
 
   // 只顯示最大屬性狀態
-  const [showMaxOnly, setShowMaxOnly] = useLocalStorage<boolean>('monster-drops-show-max-only', false)
+  const [showMaxOnly, setShowMaxOnlyLocal] = useLocalStorage<boolean>('monster-drops-show-max-only', false)
+
+  // 包裝 setter 函數以觸發雲端同步
+  const setViewMode = (mode: 'grid' | 'list') => {
+    setViewModeLocal(mode)
+    window.dispatchEvent(new CustomEvent('preference-changed', {
+      detail: { field: 'monsterDropsViewMode', value: mode }
+    }))
+  }
+
+  const setShowDropIcons = (show: boolean) => {
+    setShowDropIconsLocal(show)
+    window.dispatchEvent(new CustomEvent('preference-changed', {
+      detail: { field: 'monsterDropsShowIcons', value: show }
+    }))
+  }
+
+  const setShowMaxOnly = (show: boolean) => {
+    setShowMaxOnlyLocal(show)
+    window.dispatchEvent(new CustomEvent('preference-changed', {
+      detail: { field: 'monsterDropsShowMaxOnly', value: show }
+    }))
+  }
 
   // 掉落物品篩選狀態
   const [dropFilter, setDropFilter] = useState<'all' | 'equipment' | 'scroll' | 'other'>('all')
