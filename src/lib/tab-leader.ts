@@ -10,7 +10,23 @@
  * 3. Leader 定期發送 HEARTBEAT
  * 4. 如果 Follower 超過 LEADER_TIMEOUT 沒收到心跳，嘗試成為新 Leader
  * 5. Leader 關閉時發送 LEADER_RESIGN，讓其他分頁接管
+ *
+ * 安全性：
+ * - 使用 Zod Schema 驗證訊息格式，防止惡意訊息注入
  */
+
+import { z } from 'zod'
+
+// ============================================
+// 訊息格式驗證 Schema
+// ============================================
+
+const TabMessageSchema = z.object({
+  type: z.enum(['HEARTBEAT', 'LEADER_CLAIM', 'REALTIME_UPDATE', 'LEADER_RESIGN', 'TAB_PING', 'TAB_PONG']),
+  tabId: z.string().regex(/^tab_\d+_[a-z0-9]+$/),
+  timestamp: z.number().int().positive(),
+  payload: z.unknown().optional(),
+})
 
 const CHANNEL_NAME = 'chronostory-realtime'
 const HEARTBEAT_INTERVAL = 2000 // 心跳間隔 2 秒
@@ -174,8 +190,15 @@ export function createTabLeader(
   }
 
   // 監聽訊息
-  channel.onmessage = (event: MessageEvent<TabMessage>) => {
-    const msg = event.data
+  channel.onmessage = (event: MessageEvent) => {
+    // 安全驗證：驗證訊息格式，防止惡意訊息注入
+    const parseResult = TabMessageSchema.safeParse(event.data)
+    if (!parseResult.success) {
+      console.warn('[TabLeader] 收到無效訊息格式，忽略:', parseResult.error.issues)
+      return
+    }
+
+    const msg = parseResult.data
     if (msg.tabId === tabId) return // 忽略自己的訊息
 
     switch (msg.type) {
