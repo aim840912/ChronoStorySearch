@@ -22,6 +22,16 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next({ request })
   }
 
+  // 優化：檢查是否有 Supabase session cookie
+  // 未登入用戶沒有這些 cookie，直接放行，節省 Auth API 調用
+  const hasSbCookie = request.cookies.getAll().some(
+    cookie => cookie.name.startsWith('sb-') && cookie.name.includes('-auth-token')
+  )
+
+  if (!hasSbCookie) {
+    return NextResponse.next({ request })
+  }
+
   const response = NextResponse.next({ request })
 
   const supabase = createServerClient(

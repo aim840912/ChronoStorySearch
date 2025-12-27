@@ -102,5 +102,6 @@ export type {
   LevelRange,
   StatType,
   AdvancedFilterOptions,
+  FilterHistoryRecord,
 } from './filters'
 

@@ -5,6 +5,59 @@ import { User, Session } from '@supabase/supabase-js'
 import { supabase } from '@/lib/supabase/client'
 import { clearUserStorage } from '@/lib/storage'
 
+// Auth Token 快取 key
+const AUTH_CACHE_KEY = 'chronostory-auth-cache'
+// 快取有效期（毫秒）- 設為 55 分鐘（Supabase access token 預設 1 小時過期）
+const AUTH_CACHE_TTL = 55 * 60 * 1000
+
+interface AuthCache {
+  userId: string
+  expiresAt: number
+}
+
+/**
+ * 從 localStorage 讀取 Auth 快取
+ */
+function getAuthCache(): AuthCache | null {
+  if (typeof window === 'undefined') return null
+
+  try {
+    const cached = localStorage.getItem(AUTH_CACHE_KEY)
+    if (!cached) return null
+
+    const data: AuthCache = JSON.parse(cached)
+    // 檢查是否過期
+    if (Date.now() > data.expiresAt) {
+      localStorage.removeItem(AUTH_CACHE_KEY)
+      return null
+    }
+    return data
+  } catch {
+    return null
+  }
+}
+
+/**
+ * 設置 Auth 快取
+ */
+function setAuthCache(userId: string): void {
+  if (typeof window === 'undefined') return
+
+  const cache: AuthCache = {
+    userId,
+    expiresAt: Date.now() + AUTH_CACHE_TTL,
+  }
+  localStorage.setItem(AUTH_CACHE_KEY, JSON.stringify(cache))
+}
+
+/**
+ * 清除 Auth 快取
+ */
+function clearAuthCache(): void {
+  if (typeof window === 'undefined') return
+  localStorage.removeItem(AUTH_CACHE_KEY)
+}
+
 interface AuthContextType {
   user: User | null
   session: Session | null
@@ -57,24 +110,37 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     const initAuth = async () => {
       try {
-        // 只調用一次 getUser() 驗證 token 是否有效
-        // 這節省了一次 Supabase API 調用（減少 Edge Requests）
-        const { data: { user }, error: userError } = await supabase.auth.getUser()
+        // 優化：先檢查本地快取，減少 Supabase API 調用
+        const cache = getAuthCache()
 
-        if (userError || !user) {
-          // Token 無效或不存在，清除狀態
-          setSession(null)
-          setUser(null)
+        if (cache) {
+          // 快取有效，延遲驗證（讓 onAuthStateChange 處理）
+          // 這樣可以減少初始化時的 API 調用
+          console.log('[Auth] 使用快取的認證狀態，跳過 getUser() 調用')
+          setIsLoading(false)
+          // onAuthStateChange 會自動更新 user 和 session
           return
         }
 
-        // Token 有效，設置 user
-        // session 會由 onAuthStateChange 自動提供
+        // 沒有快取或快取過期，需要驗證 token
+        const { data: { user }, error: userError } = await supabase.auth.getUser()
+
+        if (userError || !user) {
+          // Token 無效或不存在，清除狀態和快取
+          setSession(null)
+          setUser(null)
+          clearAuthCache()
+          return
+        }
+
+        // Token 有效，設置 user 並更新快取
         setUser(user)
+        setAuthCache(user.id)
       } catch (error) {
         console.error('Auth initialization error:', error)
         setSession(null)
         setUser(null)
+        clearAuthCache()
       } finally {
         setIsLoading(false)
       }
@@ -84,10 +150,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     // 監聽 auth 狀態變化
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      (_event, session) => {
+      (event, session) => {
         setSession(session)
         setUser(session?.user ?? null)
         setIsLoading(false)
+
+        // 更新快取
+        if (session?.user) {
+          setAuthCache(session.user.id)
+        } else if (event === 'SIGNED_OUT') {
+          clearAuthCache()
+        }
       }
     )
 
@@ -125,7 +198,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
       // 清除登入用戶的 localStorage（保留 guest 資料）
       clearUserStorage()
-      console.log('[Auth] 已清除用戶儲存（保留 guest 資料）')
+      // 清除 auth 快取
+      clearAuthCache()
+      console.log('[Auth] 已清除用戶儲存和認證快取')
     } catch (error) {
       console.error('Sign out error:', error)
       throw error
