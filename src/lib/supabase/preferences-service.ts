@@ -1,6 +1,7 @@
 import { supabase } from './client'
 import type { FavoriteMonster, FavoriteItem, Language, Theme } from '@/types'
 import type { ImageFormat } from '@/lib/image-utils'
+import { UserPreferencesSchema, PreferencesFieldSchemas } from '@/schemas/preferences.schema'
 
 /**
  * 用戶偏好設定的資料結構
@@ -19,6 +20,11 @@ export interface UserPreferences {
   itemStatsOrder: string[]
   itemStatsVisible: string[]
   itemStatsShowMaxOnly: boolean
+  // 物品掉落來源顯示設定
+  itemSourcesViewMode: 'grid' | 'list'
+  // 怪物掉落顯示設定
+  monsterDropsViewMode: 'grid' | 'list'
+  monsterDropsShowMaxOnly: boolean
 }
 
 /**
@@ -32,14 +38,19 @@ export interface UserPreferencesRow {
   image_format: string
   favorite_monsters: FavoriteMonster[]
   favorite_items: FavoriteItem[]
-  // 怪物/物品屬性顯示設定
-  monster_stats_view_mode: string | null
-  monster_stats_order: string[] | null
-  monster_stats_visible: string[] | null
-  item_stats_view_mode: string | null
-  item_stats_order: string[] | null
-  item_stats_visible: string[] | null
-  item_stats_show_max_only: boolean | null
+  // 怪物/物品屬性顯示設定（SQL DEFAULT 確保永不為 null）
+  monster_stats_view_mode: string
+  monster_stats_order: string[]
+  monster_stats_visible: string[]
+  item_stats_view_mode: string
+  item_stats_order: string[]
+  item_stats_visible: string[]
+  item_stats_show_max_only: boolean
+  // 物品掉落來源顯示設定
+  item_sources_view_mode: string
+  // 怪物掉落顯示設定
+  monster_drops_view_mode: string
+  monster_drops_show_max_only: boolean
   created_at: string
   updated_at: string
 }
@@ -61,6 +72,11 @@ export const DEFAULT_PREFERENCES: UserPreferences = {
   itemStatsOrder: [],
   itemStatsVisible: [],
   itemStatsShowMaxOnly: false,
+  // 物品掉落來源顯示設定
+  itemSourcesViewMode: 'grid',
+  // 怪物掉落顯示設定
+  monsterDropsViewMode: 'grid',
+  monsterDropsShowMaxOnly: false,
 }
 
 /**
@@ -81,6 +97,11 @@ export function rowToPreferences(row: UserPreferencesRow): UserPreferences {
     itemStatsOrder: row.item_stats_order || [],
     itemStatsVisible: row.item_stats_visible || [],
     itemStatsShowMaxOnly: row.item_stats_show_max_only ?? DEFAULT_PREFERENCES.itemStatsShowMaxOnly,
+    // 物品掉落來源顯示設定
+    itemSourcesViewMode: (row.item_sources_view_mode as 'grid' | 'list') || DEFAULT_PREFERENCES.itemSourcesViewMode,
+    // 怪物掉落顯示設定
+    monsterDropsViewMode: (row.monster_drops_view_mode as 'grid' | 'list') || DEFAULT_PREFERENCES.monsterDropsViewMode,
+    monsterDropsShowMaxOnly: row.monster_drops_show_max_only ?? DEFAULT_PREFERENCES.monsterDropsShowMaxOnly,
   }
 }
 
@@ -120,6 +141,13 @@ export const preferencesService = {
    * @param preferences 完整的偏好設定
    */
   async upsert(preferences: UserPreferences): Promise<boolean> {
+    // 安全驗證：在傳送到資料庫前驗證資料結構
+    const parseResult = UserPreferencesSchema.safeParse(preferences)
+    if (!parseResult.success) {
+      console.error('偏好設定驗證失敗:', parseResult.error.issues)
+      return false
+    }
+
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) return false
 
@@ -139,6 +167,9 @@ export const preferencesService = {
         item_stats_order: preferences.itemStatsOrder,
         item_stats_visible: preferences.itemStatsVisible,
         item_stats_show_max_only: preferences.itemStatsShowMaxOnly,
+        item_sources_view_mode: preferences.itemSourcesViewMode,
+        monster_drops_view_mode: preferences.monsterDropsViewMode,
+        monster_drops_show_max_only: preferences.monsterDropsShowMaxOnly,
       }, {
         onConflict: 'user_id',
       })
@@ -162,6 +193,14 @@ export const preferencesService = {
     field: K,
     value: UserPreferences[K]
   ): Promise<boolean> {
+    // 安全驗證：驗證單一欄位的值
+    const schema = PreferencesFieldSchemas[field]
+    const parseResult = schema.safeParse(value)
+    if (!parseResult.success) {
+      console.error(`欄位 ${field} 驗證失敗:`, parseResult.error.issues)
+      return false
+    }
+
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) return false
 
@@ -179,6 +218,9 @@ export const preferencesService = {
       itemStatsOrder: 'item_stats_order',
       itemStatsVisible: 'item_stats_visible',
       itemStatsShowMaxOnly: 'item_stats_show_max_only',
+      itemSourcesViewMode: 'item_sources_view_mode',
+      monsterDropsViewMode: 'monster_drops_view_mode',
+      monsterDropsShowMaxOnly: 'monster_drops_show_max_only',
     }
 
     const dbField = fieldMap[field]
