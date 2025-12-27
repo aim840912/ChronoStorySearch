@@ -111,3 +111,10 @@ export interface AdvancedFilterOptions {
   // 是否啟用進階篩選
   enabled: boolean
 }
+
+// 篩選歷史紀錄
+export interface FilterHistoryRecord {
+  id: string                         // 唯一 ID (timestamp + random)
+  filter: AdvancedFilterOptions      // 儲存的篩選條件
+  createdAt: number                  // 建立時間戳（毫秒）
+}

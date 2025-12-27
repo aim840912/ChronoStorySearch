@@ -79,6 +79,8 @@ const PreferencesSyncContext = createContext<PreferencesSyncContextType | undefi
  */
 // 防止循環更新的時間閾值（毫秒）
 const REALTIME_DEBOUNCE_MS = 1000
+// 設定變更 debounce 時間（毫秒）- 減少頻繁的資料庫寫入
+const SYNC_DEBOUNCE_MS = 1000
 
 export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
   const { user, isLoading: isAuthLoading } = useAuth()
@@ -91,6 +93,9 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
   const tabLeaderRef = useRef<ReturnType<typeof createTabLeader> | null>(null)
   // 追蹤前一個用戶 ID，用於偵測用戶切換
   const previousUserIdRef = useRef<string | null>(null)
+  // Debounce: 待同步的變更佇列
+  const pendingChangesRef = useRef<Partial<UserPreferences>>({})
+  const syncTimeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   const syncEnabled = !!user
 
@@ -171,24 +176,71 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
   }, [user])
 
   /**
-   * 同步單一設定到雲端
+   * 執行批次同步（內部使用）
    */
-  const syncToCloud = useCallback(async <K extends keyof UserPreferences>(
-    field: K,
-    value: UserPreferences[K]
-  ) => {
+  const flushPendingChanges = useCallback(async () => {
     if (!user) return
+
+    const changes = pendingChangesRef.current
+    if (Object.keys(changes).length === 0) return
+
+    // 清空佇列
+    pendingChangesRef.current = {}
 
     // 記錄本地變更時間，防止 Realtime 循環更新
     lastLocalUpdateRef.current = Date.now()
 
     try {
-      await preferencesService.updateField(field, value)
-      console.log(`[PreferencesSync] 已同步 ${field} 到雲端`)
+      // 批次更新：一次 upsert 取代多次 updateField
+      const currentPrefs: UserPreferences = {
+        theme: getTheme(),
+        language: getLanguage(),
+        imageFormat: getImageFormat(),
+        favoriteMonsters: getFavoriteMonsters(),
+        favoriteItems: getFavoriteItems(),
+        monsterStatsViewMode: getMonsterStatsViewMode(),
+        monsterStatsOrder: getMonsterStatsOrder(),
+        monsterStatsVisible: getMonsterStatsVisible(),
+        itemStatsViewMode: getItemStatsViewMode(),
+        itemStatsOrder: getItemStatsOrder(),
+        itemStatsVisible: getItemStatsVisible(),
+        itemStatsShowMaxOnly: getItemStatsShowMaxOnly(),
+      }
+
+      // 合併待處理的變更
+      const mergedPrefs = { ...currentPrefs, ...changes }
+      await preferencesService.upsert(mergedPrefs)
+
+      console.log(`[PreferencesSync] 已批次同步 ${Object.keys(changes).join(', ')} 到雲端`)
     } catch (error) {
-      console.error(`[PreferencesSync] 同步 ${field} 失敗:`, error)
+      console.error('[PreferencesSync] 批次同步失敗:', error)
     }
   }, [user])
+
+  /**
+   * 同步單一設定到雲端（使用 debounce 減少寫入次數）
+   * 多個設定變更會在 1 秒內合併為一次批次寫入
+   */
+  const syncToCloud = useCallback(async <K extends keyof UserPreferences>(
+    field: K,
+    value: UserPreferences[K]
+  ): Promise<void> => {
+    if (!user) return
+
+    // 加入待處理佇列
+    pendingChangesRef.current[field] = value
+
+    // 清除之前的 timeout
+    if (syncTimeoutRef.current) {
+      clearTimeout(syncTimeoutRef.current)
+    }
+
+    // 設定新的 debounce timeout
+    syncTimeoutRef.current = setTimeout(() => {
+      flushPendingChanges()
+      syncTimeoutRef.current = null
+    }, SYNC_DEBOUNCE_MS)
+  }, [user, flushPendingChanges])
 
   // 登入後自動載入雲端設定，並處理用戶切換
   useEffect(() => {
@@ -213,6 +265,12 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
     // 登出時重置狀態（localStorage 已在 AuthContext.signOut 中清除）
     if (!user) {
       setHasLoadedFromCloud(false)
+      // 清理 debounce timeout 和待處理的變更
+      if (syncTimeoutRef.current) {
+        clearTimeout(syncTimeoutRef.current)
+        syncTimeoutRef.current = null
+      }
+      pendingChangesRef.current = {}
     }
   }, [user, isAuthLoading, hasLoadedFromCloud, loadFromCloud])
 

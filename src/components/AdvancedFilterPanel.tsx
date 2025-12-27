@@ -1,7 +1,10 @@
 'use client'
 
+import { useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getCategoriesInGroup } from '@/lib/item-categories'
+import { useFilterHistory } from '@/hooks/useFilterHistory'
+import { FilterHistoryModal } from '@/components/FilterHistoryModal'
 import type { AdvancedFilterOptions, ItemCategoryGroup, JobClass, ElementType, StatType } from '@/types'
 
 interface AdvancedFilterPanelProps {
@@ -20,6 +23,8 @@ export function AdvancedFilterPanel({
   isExpanded,
 }: AdvancedFilterPanelProps) {
   const { t } = useLanguage()
+  const [isHistoryModalOpen, setIsHistoryModalOpen] = useState(false)
+  const { history, saveFilter, loadFilter, deleteRecord, clearHistory, historyCount } = useFilterHistory()
 
   // 判斷是否有任何篩選條件被設定
   const hasAnyFilterCriteria = (filterToCheck: Omit<AdvancedFilterOptions, 'enabled'>): boolean => {
@@ -168,6 +173,19 @@ export function AdvancedFilterPanel({
     })
   }
 
+  // 處理載入歷史篩選
+  const handleLoadFilter = (id: string) => {
+    const savedFilter = loadFilter(id)
+    if (savedFilter) {
+      onFilterChange(savedFilter)
+    }
+  }
+
+  // 處理儲存當前篩選
+  const handleSaveFilter = () => {
+    saveFilter(filter)
+  }
+
   // 驗證等級範圍是否有效（最高等級必須 >= 最低等級）
   const isLevelRangeValid =
     filter.levelRange.min === null ||
@@ -262,6 +280,40 @@ export function AdvancedFilterPanel({
                         {t(`filter.itemCategory.${category}`)}
                       </button>
                     ))}
+                  </div>
+                </div>
+
+                {/* 查詢紀錄 */}
+                <div className="flex-1">
+                  <h5 className="text-xs font-semibold text-blue-600 dark:text-blue-400 mb-2 flex items-center">
+                    <span className="w-1 h-4 bg-blue-500 rounded mr-2"></span>
+                    {t('filterHistory.title')}
+                  </h5>
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      onClick={() => setIsHistoryModalOpen(true)}
+                      className="px-4 py-2 rounded-lg font-medium text-sm transition-all bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800/50 flex items-center gap-2"
+                    >
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      {t('filterHistory.button')}
+                      {historyCount > 0 && (
+                        <span className="inline-flex items-center justify-center w-5 h-5 text-xs font-bold bg-blue-500 text-white rounded-full">
+                          {historyCount}
+                        </span>
+                      )}
+                    </button>
                   </div>
                 </div>
               </div>
@@ -452,6 +504,18 @@ export function AdvancedFilterPanel({
           </div>
         </div>
       </div>
+
+      {/* 篩選歷史 Modal */}
+      <FilterHistoryModal
+        isOpen={isHistoryModalOpen}
+        onClose={() => setIsHistoryModalOpen(false)}
+        history={history}
+        currentFilter={filter}
+        onSave={handleSaveFilter}
+        onLoad={handleLoadFilter}
+        onDelete={deleteRecord}
+        onClearAll={clearHistory}
+      />
     </div>
   )
 }

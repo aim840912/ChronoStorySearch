@@ -16,9 +16,10 @@ const CHANNEL_NAME = 'chronostory-realtime'
 const HEARTBEAT_INTERVAL = 2000 // 心跳間隔 2 秒
 const LEADER_TIMEOUT = 5000 // Leader 超時 5 秒
 const CLAIM_DELAY = 500 // 宣告 Leader 前等待時間
+const TAB_DISCOVERY_DELAY = 300 // 分頁發現等待時間
 
 interface TabMessage {
-  type: 'HEARTBEAT' | 'LEADER_CLAIM' | 'REALTIME_UPDATE' | 'LEADER_RESIGN'
+  type: 'HEARTBEAT' | 'LEADER_CLAIM' | 'REALTIME_UPDATE' | 'LEADER_RESIGN' | 'TAB_PING' | 'TAB_PONG'
   tabId: string
   timestamp: number
   payload?: unknown
@@ -61,13 +62,32 @@ export function createTabLeader(
   const channel = new BroadcastChannel(CHANNEL_NAME)
 
   let isLeaderState = false
+  let hasMultipleTabs = false // 是否有多個分頁
+  let realtimeConnected = false // 是否已建立 Realtime 連線
   let heartbeatTimer: ReturnType<typeof setInterval> | null = null
   let leaderTimeoutTimer: ReturnType<typeof setTimeout> | null = null
   let claimTimer: ReturnType<typeof setTimeout> | null = null
+  let discoveryTimer: ReturnType<typeof setTimeout> | null = null
   let lastLeaderHeartbeat = 0
 
   const log = (msg: string, ...args: unknown[]) => {
     console.log(`[TabLeader:${tabId.slice(-6)}] ${msg}`, ...args)
+  }
+
+  /**
+   * 當偵測到多分頁時，啟動 Realtime 連線
+   */
+  const enableRealtimeIfNeeded = () => {
+    if (!hasMultipleTabs || realtimeConnected) return
+
+    hasMultipleTabs = true
+    log('偵測到多分頁，啟動 Realtime 同步')
+
+    // 只有 Leader 建立 Realtime 連線
+    if (isLeaderState) {
+      realtimeConnected = true
+      onBecomeLeader()
+    }
   }
 
   const sendMessage = (msg: Omit<TabMessage, 'tabId' | 'timestamp'>) => {
@@ -103,7 +123,12 @@ export function createTabLeader(
     // 立即發送一次心跳
     sendMessage({ type: 'HEARTBEAT' })
 
-    onBecomeLeader()
+    // 優化：只在有多分頁時才建立 Realtime 連線
+    // 單分頁不需要跨分頁同步，節省 Supabase Realtime 連線
+    if (hasMultipleTabs && !realtimeConnected) {
+      realtimeConnected = true
+      onBecomeLeader()
+    }
   }
 
   const becomeFollower = () => {
@@ -156,6 +181,12 @@ export function createTabLeader(
     switch (msg.type) {
       case 'HEARTBEAT':
         lastLeaderHeartbeat = msg.timestamp
+        // 收到心跳意味著有多分頁
+        if (!hasMultipleTabs) {
+          hasMultipleTabs = true
+          log('收到心跳，偵測到多分頁')
+          enableRealtimeIfNeeded()
+        }
         if (isLeaderState) {
           // 有其他 Leader 存在，降級為 Follower
           log('檢測到其他 Leader，降級為 Follower')
@@ -185,6 +216,26 @@ export function createTabLeader(
           onRealtimeUpdate(msg.payload)
         }
         break
+
+      case 'TAB_PING':
+        // 收到其他分頁的探測，回應 PONG
+        sendMessage({ type: 'TAB_PONG' })
+        // 偵測到多分頁
+        if (!hasMultipleTabs) {
+          hasMultipleTabs = true
+          log('收到其他分頁 PING，偵測到多分頁')
+          enableRealtimeIfNeeded()
+        }
+        break
+
+      case 'TAB_PONG':
+        // 收到其他分頁的回應，確認有多分頁
+        if (!hasMultipleTabs) {
+          hasMultipleTabs = true
+          log('收到其他分頁 PONG，確認有多分頁')
+          enableRealtimeIfNeeded()
+        }
+        break
     }
   }
 
@@ -198,8 +249,19 @@ export function createTabLeader(
 
   window.addEventListener('beforeunload', handleBeforeUnload)
 
-  // 初始化：嘗試成為 Leader
-  tryClaimLeader()
+  // 初始化：發送 PING 探測其他分頁
+  sendMessage({ type: 'TAB_PING' })
+
+  // 等待一小段時間看是否有其他分頁回應
+  discoveryTimer = setTimeout(() => {
+    discoveryTimer = null
+    // 無論是否有多分頁，都嘗試成為 Leader（用於心跳機制）
+    tryClaimLeader()
+
+    if (!hasMultipleTabs) {
+      log('未偵測到其他分頁，跳過 Realtime 連線（節省資源）')
+    }
+  }, TAB_DISCOVERY_DELAY)
 
   const cleanup = () => {
     window.removeEventListener('beforeunload', handleBeforeUnload)
@@ -215,6 +277,10 @@ export function createTabLeader(
     if (claimTimer) {
       clearTimeout(claimTimer)
       claimTimer = null
+    }
+    if (discoveryTimer) {
+      clearTimeout(discoveryTimer)
+      discoveryTimer = null
     }
 
     channel.close()

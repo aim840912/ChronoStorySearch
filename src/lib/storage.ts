@@ -4,7 +4,7 @@
  */
 
 import { storageLogger } from './logger'
-import type { FavoriteMonster, FavoriteItem, Language, Theme, AccuracyCalculatorState, ViewHistoryItem } from '@/types'
+import type { FavoriteMonster, FavoriteItem, Language, Theme, AccuracyCalculatorState, ViewHistoryItem, FilterHistoryRecord } from '@/types'
 import type { ImageFormat } from '@/lib/image-utils'
 import type { ScreenRecorderSettings } from '@/types/screen-recorder'
 import type { ExpTrackerState } from '@/types/exp-tracker'
@@ -33,6 +33,8 @@ export const STORAGE_KEYS = {
   ITEM_STATS_ORDER: 'item-stats-order',
   ITEM_STATS_VISIBLE: 'item-stats-visible',
   ITEM_STATS_SHOW_MAX_ONLY: 'item-stats-show-max-only',
+  // 進階篩選歷史紀錄
+  FILTER_HISTORY: 'chronostory-filter-history',
 } as const
 
 /**
@@ -395,4 +397,13 @@ export function getItemStatsShowMaxOnly(): boolean {
 
 export function setItemStatsShowMaxOnly(showMaxOnly: boolean): boolean {
   return setStorageItem(STORAGE_KEYS.ITEM_STATS_SHOW_MAX_ONLY, showMaxOnly)
+}
+
+// 進階篩選歷史紀錄
+export function getFilterHistory(): FilterHistoryRecord[] {
+  return getStorageItem<FilterHistoryRecord[]>(STORAGE_KEYS.FILTER_HISTORY, [])
+}
+
+export function setFilterHistory(history: FilterHistoryRecord[]): boolean {
+  return setStorageItem(STORAGE_KEYS.FILTER_HISTORY, history)
 }

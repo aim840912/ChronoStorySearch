@@ -17,6 +17,8 @@ interface DropItemCardProps {
   onItemClick: (itemId: number, itemName: string) => void
   /** 是否顯示掉落來源圖示 */
   showIcons?: boolean
+  /** 是否只顯示最大屬性值 */
+  showMaxOnly?: boolean
 }
 
 /**
@@ -30,6 +32,7 @@ export function DropItemCard({
   onToggleFavorite,
   onItemClick,
   showIcons = false,
+  showMaxOnly = false,
 }: DropItemCardProps) {
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
@@ -107,7 +110,7 @@ export function DropItemCard({
           e.stopPropagation()
           setIsExpanded(!isExpanded)
         }}
-        className="absolute top-3 right-12 p-2 transition-all duration-200 hover:scale-110 active:scale-95 text-gray-400 hover:text-blue-500"
+        className="absolute top-12 right-3 p-2 transition-all duration-200 hover:scale-110 active:scale-95 text-gray-400 hover:text-blue-500"
         aria-label={isExpanded ? t('card.collapse') : t('card.expand')}
       >
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -226,7 +229,7 @@ export function DropItemCard({
               <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-green-600 dark:border-green-400" />
             </div>
           ) : (
-            <ItemAttributesCard itemData={itemDetailed} />
+            <ItemAttributesCard itemData={itemDetailed} showMaxOnly={showMaxOnly} />
           )}
         </div>
       </div>

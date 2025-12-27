@@ -7,6 +7,7 @@ import { DropItemList } from './DropItemList'
 import { MonsterStatsCard } from './MonsterStatsCard'
 import { Toast } from './Toast'
 import { BaseModal } from './common/BaseModal'
+import { TipBubble } from '@/components/TipBubble'
 import { AdSenseDisplay } from './adsense/AdSenseDisplay'
 import { AdSenseAnchor } from './adsense/AdSenseAnchor'
 import { AdSenseCard } from './adsense/AdSenseCard'
@@ -77,6 +78,9 @@ export function MonsterModal({
   // 顯示掉落來源圖示狀態（預設隱藏）
   const [showDropIcons, setShowDropIcons] = useLocalStorage<boolean>('monster-drops-show-icons', false)
 
+  // 只顯示最大屬性狀態
+  const [showMaxOnly, setShowMaxOnly] = useLocalStorage<boolean>('monster-drops-show-max-only', false)
+
   // 掉落物品篩選狀態
   const [dropFilter, setDropFilter] = useState<'all' | 'equipment' | 'scroll' | 'other'>('all')
   const [isDropFilterOpen, setIsDropFilterOpen] = useState(false)
@@ -129,7 +133,18 @@ export function MonsterModal({
       })
     }
 
-    return result
+    // 按類別排序（卷軸 → 裝備 → 其他）
+    const categoryOrder: Record<'scroll' | 'equipment' | 'other', number> = {
+      scroll: 0,
+      equipment: 1,
+      other: 2
+    }
+
+    return result.sort((a, b) => {
+      const categoryA = getItemCategory(a.itemId)
+      const categoryB = getItemCategory(b.itemId)
+      return categoryOrder[categoryA] - categoryOrder[categoryB]
+    })
   }, [monsterDrops, dropFilter, jobFilter, itemAttributesMap, getItemCategory])
 
   // 從 allDrops 查找怪物數據（用於獲取中英文名稱）
@@ -453,6 +468,28 @@ export function MonsterModal({
                     </svg>
                   )}
                 </button>
+                {/* 只顯示最大屬性按鈕 */}
+                <div className="relative">
+                  <button
+                    onClick={() => setShowMaxOnly(!showMaxOnly)}
+                    className={`p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 ${
+                      showMaxOnly
+                        ? 'bg-green-500 text-white'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                    }`}
+                    aria-label={showMaxOnly ? t('monster.showAllStats') : t('monster.showMaxOnly')}
+                    title={showMaxOnly ? t('monster.showAllStats') : t('monster.showMaxOnly')}
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
+                  </button>
+                  <TipBubble
+                    tipId="monster-show-max-only"
+                    message={t('tip.showMaxOnly')}
+                    position="right"
+                  />
+                </div>
               </div>
             </div>
             {/* 根據視圖模式渲染不同的佈局 */}
@@ -486,6 +523,7 @@ export function MonsterModal({
                         onToggleFavorite={onToggleItemFavorite}
                         onItemClick={onItemClick}
                         showIcons={showDropIcons}
+                        showMaxOnly={showMaxOnly}
                       />
                     )
                   })
