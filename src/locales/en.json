@@ -732,6 +732,8 @@
   "settings.resetToDefault": "Reset to Default",
   "settings.privacy": "Privacy",
   "settings.managePrivacy": "Manage Privacy Settings",
+  "settings.itemSources": "Item Sources Display",
+  "settings.monsterDrops": "Monster Drops Display",
   "monster.imageFormat.stand": "Stand",
   "monster.imageFormat.hit": "Hit",
   "monster.imageFormat.die": "Die",
@@ -750,7 +752,7 @@
   "auth.signInWithDiscord": "Sign in with Discord",
   "auth.userMenu": "User Menu",
   "auth.loginWarningTitle": "Beta Feature Notice",
-  "auth.loginWarningMessage": "This login feature is currently in beta. It will remember some of your preferences. This feature may be adjusted or disabled at any time.",
+  "auth.loginWarningMessage": "This login feature is currently in beta. Please note: The feature may be unstable or have bugs, and security has not been fully tested. This feature may be adjusted or disabled at any time.",
   "auth.loginWarningConfirm": "I understand, continue",
   "auth.loginWarningCancel": "Cancel"
 }
