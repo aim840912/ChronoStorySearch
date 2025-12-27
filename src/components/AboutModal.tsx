@@ -1,7 +1,12 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { useLanguage } from '@/contexts/LanguageContext'
+
+// 環境變數控制
+const PATREON_ENABLED = process.env.NEXT_PUBLIC_PATREON_ENABLED !== 'false'
+const PATREON_URL = 'https://www.patreon.com/15318832/join'
 
 interface AboutModalProps {
   isOpen: boolean
@@ -14,6 +19,7 @@ interface AboutModalProps {
  */
 export function AboutModal({ isOpen, onClose }: AboutModalProps) {
   const { t } = useLanguage()
+  const [showPatreonWarning, setShowPatreonWarning] = useState(false)
 
   // ESC 鍵關閉 modal
   useEffect(() => {
@@ -112,6 +118,18 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
                 </svg>
                 <span className="text-sm font-medium">Email</span>
               </a>
+              {/* Patreon - 贊助 */}
+              {PATREON_ENABLED && (
+                <button
+                  onClick={() => setShowPatreonWarning(true)}
+                  className="flex-1 flex items-center justify-center gap-2 p-3 bg-[#FF424D] hover:bg-[#E03E48] text-white rounded-lg transition-colors cursor-pointer"
+                >
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14.82 2.41c3.96 0 7.18 3.24 7.18 7.21 0 3.96-3.22 7.18-7.18 7.18-3.97 0-7.21-3.22-7.21-7.18 0-3.97 3.24-7.21 7.21-7.21M2 21.6h3.5V2.41H2V21.6z"/>
+                  </svg>
+                  <span className="text-sm font-medium">Patreon</span>
+                </button>
+              )}
             </div>
           </div>
         </div>
@@ -123,6 +141,56 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
           </p>
         </div>
       </div>
+
+      {/* Patreon 警告對話框 - 使用 Portal 渲染到 body */}
+      {showPatreonWarning && createPortal(
+        <div
+          className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+          onClick={() => setShowPatreonWarning(false)}
+        >
+          <div
+            className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-sm"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Header - 橘色 Patreon 風格 */}
+            <div className="bg-[#FF424D] p-5 rounded-t-xl">
+              <div className="flex items-center gap-3">
+                <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.82 2.41c3.96 0 7.18 3.24 7.18 7.21 0 3.96-3.22 7.18-7.18 7.18-3.97 0-7.21-3.22-7.21-7.18 0-3.97 3.24-7.21 7.21-7.21M2 21.6h3.5V2.41H2V21.6z"/>
+                </svg>
+                <h3 className="text-xl font-bold text-white">{t('about.patreonWarningTitle')}</h3>
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="p-5">
+              <p className="text-gray-700 dark:text-gray-300 text-sm mb-5">
+                {t('about.patreonWarningMessage')}
+              </p>
+
+              {/* 按鈕組 */}
+              <div className="flex gap-3">
+                <button
+                  onClick={() => setShowPatreonWarning(false)}
+                  className="flex-1 px-4 py-2.5 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white rounded-lg font-medium transition-colors"
+                >
+                  {t('about.patreonCancel')}
+                </button>
+                <button
+                  onClick={() => {
+                    window.open(PATREON_URL, '_blank')
+                    setShowPatreonWarning(false)
+                  }}
+                  className="flex-1 px-4 py-2.5 bg-[#FF424D] hover:bg-[#E03E48] text-white rounded-lg font-medium transition-colors"
+                >
+                  {t('about.patreonConfirm')}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>,
+        document.body
+      )}
     </div>
   )
 }
