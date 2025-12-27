@@ -170,8 +170,11 @@ export function LoginButton({ onGlobalSettingsClick }: LoginButtonProps) {
 
               {/* Modal Content */}
               <div className="p-6">
-                <p className="text-gray-700 dark:text-gray-300 text-base mb-6">
+                <p className="text-gray-700 dark:text-gray-300 text-base mb-4">
                   {t('auth.loginWarningMessage')}
+                </p>
+                <p className="text-gray-700 dark:text-gray-300 text-base mb-6">
+                  {t('auth.loginBenefits')}
                 </p>
 
                 {/* 按鈕組 */}

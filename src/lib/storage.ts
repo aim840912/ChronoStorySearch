@@ -13,9 +13,22 @@ import type { ExpTrackerState } from '@/types/exp-tracker'
 export const STORAGE_KEYS = {
   FAVORITE_MONSTERS: 'chronostory-favorite-monsters',
   FAVORITE_ITEMS: 'chronostory-favorite-items',
-  // Guest 版本的收藏 keys（非登入用戶使用）
+  // Guest 版本的 keys（保存登入前的設定，登出時恢復）
   GUEST_FAVORITE_MONSTERS: 'chronostory-guest-favorite-monsters',
   GUEST_FAVORITE_ITEMS: 'chronostory-guest-favorite-items',
+  GUEST_THEME: 'chronostory-guest-theme',
+  GUEST_LANGUAGE: 'chronostory-guest-language',
+  GUEST_IMAGE_FORMAT: 'chronostory-guest-image-format',
+  GUEST_MONSTER_STATS_VIEW_MODE: 'chronostory-guest-monster-stats-view-mode',
+  GUEST_MONSTER_STATS_ORDER: 'chronostory-guest-monster-stats-order',
+  GUEST_MONSTER_STATS_VISIBLE: 'chronostory-guest-monster-stats-visible',
+  GUEST_ITEM_STATS_VIEW_MODE: 'chronostory-guest-item-stats-view-mode',
+  GUEST_ITEM_STATS_ORDER: 'chronostory-guest-item-stats-order',
+  GUEST_ITEM_STATS_VISIBLE: 'chronostory-guest-item-stats-visible',
+  GUEST_ITEM_STATS_SHOW_MAX_ONLY: 'chronostory-guest-item-stats-show-max-only',
+  GUEST_ITEM_SOURCES_VIEW_MODE: 'chronostory-guest-item-sources-view-mode',
+  GUEST_MONSTER_DROPS_VIEW_MODE: 'chronostory-guest-monster-drops-view-mode',
+  GUEST_MONSTER_DROPS_SHOW_MAX_ONLY: 'chronostory-guest-monster-drops-show-max-only',
   LANGUAGE: 'chronostory-language',
   THEME: 'chronostory-theme',
   ACCURACY_CALCULATOR: 'chronostory-accuracy-calculator',
@@ -437,4 +450,87 @@ export function getMonsterDropsShowMaxOnly(): boolean {
 
 export function setMonsterDropsShowMaxOnly(show: boolean): boolean {
   return setStorageItem(STORAGE_KEYS.MONSTER_DROPS_SHOW_MAX_ONLY, show)
+}
+
+// ============================================================
+// Guest 偏好設定保存與恢復（登入/登出時使用）
+// ============================================================
+
+/**
+ * 保存當前偏好設定到 Guest keys
+ * 用於登入時保存本地設定，以便登出時恢復
+ */
+export function saveCurrentPreferencesToGuest(): void {
+  try {
+    if (typeof window === 'undefined') return
+
+    // 保存當前設定到 Guest keys
+    setStorageItem(STORAGE_KEYS.GUEST_THEME, getTheme())
+    setStorageItem(STORAGE_KEYS.GUEST_LANGUAGE, getLanguage())
+    setStorageItem(STORAGE_KEYS.GUEST_IMAGE_FORMAT, getImageFormat())
+    setStorageItem(STORAGE_KEYS.GUEST_FAVORITE_MONSTERS, getFavoriteMonsters())
+    setStorageItem(STORAGE_KEYS.GUEST_FAVORITE_ITEMS, getFavoriteItems())
+    setStorageItem(STORAGE_KEYS.GUEST_MONSTER_STATS_VIEW_MODE, getMonsterStatsViewMode())
+    setStorageItem(STORAGE_KEYS.GUEST_MONSTER_STATS_ORDER, getMonsterStatsOrder())
+    setStorageItem(STORAGE_KEYS.GUEST_MONSTER_STATS_VISIBLE, getMonsterStatsVisible())
+    setStorageItem(STORAGE_KEYS.GUEST_ITEM_STATS_VIEW_MODE, getItemStatsViewMode())
+    setStorageItem(STORAGE_KEYS.GUEST_ITEM_STATS_ORDER, getItemStatsOrder())
+    setStorageItem(STORAGE_KEYS.GUEST_ITEM_STATS_VISIBLE, getItemStatsVisible())
+    setStorageItem(STORAGE_KEYS.GUEST_ITEM_STATS_SHOW_MAX_ONLY, getItemStatsShowMaxOnly())
+    setStorageItem(STORAGE_KEYS.GUEST_ITEM_SOURCES_VIEW_MODE, getItemSourcesViewMode())
+    setStorageItem(STORAGE_KEYS.GUEST_MONSTER_DROPS_VIEW_MODE, getMonsterDropsViewMode())
+    setStorageItem(STORAGE_KEYS.GUEST_MONSTER_DROPS_SHOW_MAX_ONLY, getMonsterDropsShowMaxOnly())
+
+    storageLogger.info('已保存當前偏好設定到 Guest')
+  } catch (error) {
+    storageLogger.error('保存 Guest 偏好設定失敗', error)
+  }
+}
+
+/**
+ * 從 Guest keys 恢復偏好設定
+ * 用於登出時恢復登入前的本地設定
+ */
+export function restorePreferencesFromGuest(): void {
+  try {
+    if (typeof window === 'undefined') return
+
+    // 從 Guest keys 讀取並恢復設定
+    const guestTheme = getStorageItem<Theme>(STORAGE_KEYS.GUEST_THEME, 'light')
+    const guestLanguage = getStorageItem<Language>(STORAGE_KEYS.GUEST_LANGUAGE, 'en')
+    const guestImageFormat = getStorageItem<ImageFormat>(STORAGE_KEYS.GUEST_IMAGE_FORMAT, 'png')
+    const guestFavoriteMonsters = getStorageItem<FavoriteMonster[]>(STORAGE_KEYS.GUEST_FAVORITE_MONSTERS, [])
+    const guestFavoriteItems = getStorageItem<FavoriteItem[]>(STORAGE_KEYS.GUEST_FAVORITE_ITEMS, [])
+    const guestMonsterStatsViewMode = getStorageItem<'grid' | 'list'>(STORAGE_KEYS.GUEST_MONSTER_STATS_VIEW_MODE, 'grid')
+    const guestMonsterStatsOrder = getStorageItem<string[]>(STORAGE_KEYS.GUEST_MONSTER_STATS_ORDER, [])
+    const guestMonsterStatsVisible = getStorageItem<string[]>(STORAGE_KEYS.GUEST_MONSTER_STATS_VISIBLE, [])
+    const guestItemStatsViewMode = getStorageItem<'grid' | 'list'>(STORAGE_KEYS.GUEST_ITEM_STATS_VIEW_MODE, 'grid')
+    const guestItemStatsOrder = getStorageItem<string[]>(STORAGE_KEYS.GUEST_ITEM_STATS_ORDER, [])
+    const guestItemStatsVisible = getStorageItem<string[]>(STORAGE_KEYS.GUEST_ITEM_STATS_VISIBLE, [])
+    const guestItemStatsShowMaxOnly = getStorageItem<boolean>(STORAGE_KEYS.GUEST_ITEM_STATS_SHOW_MAX_ONLY, false)
+    const guestItemSourcesViewMode = getStorageItem<'grid' | 'list'>(STORAGE_KEYS.GUEST_ITEM_SOURCES_VIEW_MODE, 'grid')
+    const guestMonsterDropsViewMode = getStorageItem<'grid' | 'list'>(STORAGE_KEYS.GUEST_MONSTER_DROPS_VIEW_MODE, 'grid')
+    const guestMonsterDropsShowMaxOnly = getStorageItem<boolean>(STORAGE_KEYS.GUEST_MONSTER_DROPS_SHOW_MAX_ONLY, false)
+
+    // 恢復到主要的 storage keys
+    setTheme(guestTheme)
+    setLanguage(guestLanguage)
+    setImageFormat(guestImageFormat)
+    setFavoriteMonsters(guestFavoriteMonsters)
+    setFavoriteItems(guestFavoriteItems)
+    setMonsterStatsViewMode(guestMonsterStatsViewMode)
+    setMonsterStatsOrder(guestMonsterStatsOrder)
+    setMonsterStatsVisible(guestMonsterStatsVisible)
+    setItemStatsViewMode(guestItemStatsViewMode)
+    setItemStatsOrder(guestItemStatsOrder)
+    setItemStatsVisible(guestItemStatsVisible)
+    setItemStatsShowMaxOnly(guestItemStatsShowMaxOnly)
+    setItemSourcesViewMode(guestItemSourcesViewMode)
+    setMonsterDropsViewMode(guestMonsterDropsViewMode)
+    setMonsterDropsShowMaxOnly(guestMonsterDropsShowMaxOnly)
+
+    storageLogger.info('已從 Guest 恢復偏好設定')
+  } catch (error) {
+    storageLogger.error('從 Guest 恢復偏好設定失敗', error)
+  }
 }

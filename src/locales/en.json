@@ -754,5 +754,6 @@
   "auth.loginWarningTitle": "Beta Feature Notice",
   "auth.loginWarningMessage": "This login feature is currently in beta. Please note: The feature may be unstable or have bugs, and security has not been fully tested. This feature may be adjusted or disabled at any time.",
   "auth.loginWarningConfirm": "I understand, continue",
-  "auth.loginWarningCancel": "Cancel"
+  "auth.loginWarningCancel": "Cancel",
+  "auth.loginBenefits": "After signing in, you can sync favorites and preferences to the cloud."
 }

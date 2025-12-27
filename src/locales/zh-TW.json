@@ -755,5 +755,6 @@
   "auth.loginWarningTitle": "測試功能提示",
   "auth.loginWarningMessage": "此登入功能目前為測試階段。請注意：功能可能不穩定或有 bug，且安全性尚未經過完整測試。此功能隨時可能會調整或關閉。",
   "auth.loginWarningConfirm": "我了解，繼續登入",
-  "auth.loginWarningCancel": "取消"
+  "auth.loginWarningCancel": "取消",
+  "auth.loginBenefits": "登入後可同步收藏與偏好設定至雲端。"
 }
