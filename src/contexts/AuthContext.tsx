@@ -3,7 +3,7 @@
 import { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react'
 import { User, Session } from '@supabase/supabase-js'
 import { supabase } from '@/lib/supabase/client'
-import { clearUserStorage } from '@/lib/storage'
+import { clearUserStorage, restorePreferencesFromGuest } from '@/lib/storage'
 
 // Auth Token 快取 key
 const AUTH_CACHE_KEY = 'chronostory-auth-cache'
@@ -200,7 +200,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       clearUserStorage()
       // 清除 auth 快取
       clearAuthCache()
-      console.log('[Auth] 已清除用戶儲存和認證快取')
+
+      // 從 Guest 恢復登入前的偏好設定
+      restorePreferencesFromGuest()
+
+      // 通知所有 Context 重新讀取設定
+      window.dispatchEvent(new CustomEvent('preferences-synced'))
+
+      console.log('[Auth] 已清除用戶儲存、恢復登入前設定並通知 Context')
     } catch (error) {
       console.error('Sign out error:', error)
       throw error

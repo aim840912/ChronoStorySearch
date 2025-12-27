@@ -33,6 +33,7 @@ import {
   getFavoriteItems,
   setFavoriteItems,
   clearUserStorage,
+  saveCurrentPreferencesToGuest,
   // 怪物/物品屬性顯示設定
   getMonsterStatsViewMode,
   setMonsterStatsViewMode,
@@ -112,6 +113,9 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
    */
   const loadFromCloud = useCallback(async () => {
     if (!user) return
+
+    // 先保存當前本地設定到 Guest，以便登出時恢復
+    saveCurrentPreferencesToGuest()
 
     setIsSyncing(true)
     try {
