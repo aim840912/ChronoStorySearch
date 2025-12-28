@@ -2,6 +2,7 @@
 
 import { memo } from 'react'
 import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode } from '@/types'
+import type { TradeType } from '@/types/trade'
 import { SearchBar } from '@/components/SearchBar'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
 import { LanguageToggle } from '@/components/LanguageToggle'
@@ -54,6 +55,16 @@ interface SearchHeaderProps {
   onMerchantSelect?: (mapId: string | null) => void
   onMerchantClose?: () => void
 
+  // 交易市場模式相關
+  isTradeMode?: boolean
+  onTradeModeToggle?: () => void
+
+  // 交易篩選器狀態（交易模式時使用）
+  tradeTypeFilter?: TradeType | 'all'
+  onTradeTypeFilterChange?: (type: TradeType | 'all') => void
+  tradeSearchQuery?: string
+  onTradeSearchQueryChange?: (query: string) => void
+
   // 工具列相關
   onExpTrackerClick?: () => void
   onScreenRecorderClick?: () => void
@@ -104,6 +115,14 @@ export const SearchHeader = memo(function SearchHeader({
   selectedMerchantMapId = null,
   onMerchantSelect,
   onMerchantClose,
+  // 交易市場模式相關
+  isTradeMode = false,
+  onTradeModeToggle,
+  // 交易篩選器狀態
+  tradeTypeFilter = 'all',
+  onTradeTypeFilterChange,
+  tradeSearchQuery = '',
+  onTradeSearchQueryChange,
   // 工具列相關
   onExpTrackerClick,
   onScreenRecorderClick,
@@ -303,6 +322,19 @@ export const SearchHeader = memo(function SearchHeader({
               message={t('tip.manualExpRecorder')}
             />
           </div>
+          {/* 交易市場切換按鈕 */}
+          <button
+            type="button"
+            onClick={onTradeModeToggle}
+            className={`p-2 text-sm font-medium rounded-lg transition-colors ${
+              isTradeMode
+                ? 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300'
+                : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
+            }`}
+            title={isTradeMode ? t('trade.backToSearch') : t('trade.title')}
+          >
+            {isTradeMode ? t('search.short') : t('trade.short')}
+          </button>
           {/* 光暗模式切換 + 提示 */}
           <div className="relative">
             <ThemeToggle />
@@ -328,7 +360,7 @@ export const SearchHeader = memo(function SearchHeader({
 
       {/* 工具列和語言切換 - 小於 460px 時顯示在搜尋欄上方 */}
       <div className="flex min-[460px]:hidden px-2 mb-1 max-w-7xl mx-auto">
-        <div className="grid grid-cols-4 gap-1 w-full [&>button]:w-full [&>button]:justify-center [&>div]:w-full [&>div>button]:w-full [&>div>button]:justify-center">
+        <div className="grid grid-cols-5 gap-1 w-full [&>button]:w-full [&>button]:justify-center [&>div]:w-full [&>div>button]:w-full [&>div>button]:justify-center">
           {/* 工具列下拉選單 + 提示 */}
           <div className="relative">
             <ToolbarDropdown
@@ -352,6 +384,19 @@ export const SearchHeader = memo(function SearchHeader({
               message={t('tip.manualExpRecorder')}
             />
           </div>
+          {/* 交易市場切換按鈕 */}
+          <button
+            type="button"
+            onClick={onTradeModeToggle}
+            className={`flex items-center justify-center p-2 text-sm font-medium rounded-lg transition-colors ${
+              isTradeMode
+                ? 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300'
+                : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400'
+            }`}
+            title={isTradeMode ? t('trade.backToSearch') : t('trade.title')}
+          >
+            {isTradeMode ? t('search.short') : t('trade.short')}
+          </button>
           {/* 光暗模式切換 + 提示 */}
           <div className="relative">
             <ThemeToggle />
@@ -377,9 +422,71 @@ export const SearchHeader = memo(function SearchHeader({
         </div>
       </div>
 
-      {/* 搜尋列 - 視覺焦點 */}
-      <div>
-        <SearchBar
+      {/* 搜尋列 - 交易模式時顯示交易篩選器 */}
+      {isTradeMode ? (
+        <div className="px-2 sm:px-4 max-w-7xl mx-auto">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
+            {/* 交易類型篩選 */}
+            <div className="flex gap-1.5 sm:gap-2">
+              {(['all', 'sell', 'buy'] as const).map((type) => (
+                <button
+                  key={type}
+                  type="button"
+                  onClick={() => onTradeTypeFilterChange?.(type)}
+                  className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+                    tradeTypeFilter === type
+                      ? type === 'sell'
+                        ? 'bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300'
+                        : type === 'buy'
+                        ? 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300'
+                        : 'bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200'
+                      : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
+                  }`}
+                >
+                  {type === 'all' ? t('trade.allTypes') : type === 'sell' ? t('trade.sell') : t('trade.buy')}
+                </button>
+              ))}
+            </div>
+
+            {/* 物品搜尋 */}
+            <div className="relative flex-1">
+              <input
+                type="text"
+                value={tradeSearchQuery}
+                onChange={(e) => onTradeSearchQueryChange?.(e.target.value)}
+                placeholder={t('trade.searchPlaceholder')}
+                className="w-full px-4 py-2 pl-10 text-sm rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+              <svg
+                className="absolute left-3 top-2.5 w-4 h-4 text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+              {tradeSearchQuery && (
+                <button
+                  type="button"
+                  onClick={() => onTradeSearchQueryChange?.('')}
+                  className="absolute right-3 top-2.5 p-0.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      ) : (
+        <>
+          <SearchBar
             searchTerm={searchTerm}
             onSearchChange={onSearchChange}
             searchType={searchType}
@@ -410,14 +517,14 @@ export const SearchHeader = memo(function SearchHeader({
             onMerchantSelect={onMerchantSelect}
             onMerchantClose={onMerchantClose}
           />
-      </div>
-
-      {/* 進階篩選面板 */}
-      <AdvancedFilterPanel
-        filter={advancedFilter}
-        onFilterChange={onAdvancedFilterChange}
-        isExpanded={isAdvancedFilterExpanded}
-      />
+          {/* 進階篩選面板 - 僅搜尋模式顯示 */}
+          <AdvancedFilterPanel
+            filter={advancedFilter}
+            onFilterChange={onAdvancedFilterChange}
+            isExpanded={isAdvancedFilterExpanded}
+          />
+        </>
+      )}
     </div>
   )
 })
