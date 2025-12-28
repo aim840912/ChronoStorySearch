@@ -16,10 +16,13 @@ interface Command {
 }
 
 const GAME_COMMANDS: Command[] = [
+  { command: '/discord', descriptionKey: 'commands.discord' },
   { command: '/mswavatar', descriptionKey: 'commands.mswavatar' },
+  { command: '/changeunderwear', descriptionKey: 'commands.changeunderwear' },
   { command: '/reply', descriptionKey: 'commands.reply' },
   { command: '/check', descriptionKey: 'commands.check', parameters: '[username]' },
   { command: '/partyinfo', descriptionKey: 'commands.partyinfo' },
+  { command: '/maporder', descriptionKey: 'commands.maporder' },
   { command: '/mutesmegas', descriptionKey: 'commands.mutesmegas' },
   { command: '/mutesmegasNA', descriptionKey: 'commands.mutesmegasNA' },
   { command: '/mutesmegasEU', descriptionKey: 'commands.mutesmegasEU' },

@@ -507,6 +507,11 @@ export function ItemModal({
                           <div>
                             <p className="font-semibold text-gray-900 dark:text-white">
                               {displayMachineName}
+                              {source.machineId === 7 && (
+                                <span className="text-red-500 dark:text-red-400 ml-1">
+                                  {t('gacha.closed')}
+                                </span>
+                              )}
                             </p>
                             {isDev && (
                               <p className="text-xs text-gray-500 dark:text-gray-400">
