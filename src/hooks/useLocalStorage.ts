@@ -48,6 +48,18 @@ export function useLocalStorage<T>(
     return () => window.removeEventListener('preferences-synced', handleSync)
   }, [readValue])
 
+  // 監聽同頁面內其他組件對同一 key 的修改
+  // 這確保全域設定修改後，使用相同 key 的組件能即時更新
+  useEffect(() => {
+    const handleStorageChange = (e: CustomEvent<{ key: string; newValue: unknown }>) => {
+      if (e.detail.key === key) {
+        setStoredValue(e.detail.newValue as T)
+      }
+    }
+    window.addEventListener('local-storage-change', handleStorageChange as EventListener)
+    return () => window.removeEventListener('local-storage-change', handleStorageChange as EventListener)
+  }, [key])
+
   // Return a wrapped version of useState's setter function that
   // persists the new value to localStorage.
   const setValue = (value: T | ((val: T) => T)) => {
@@ -61,6 +73,10 @@ export function useLocalStorage<T>(
       // Save to local storage
       if (typeof window !== 'undefined') {
         window.localStorage.setItem(key, JSON.stringify(valueToStore))
+        // 通知同頁面內其他使用相同 key 的組件
+        window.dispatchEvent(new CustomEvent('local-storage-change', {
+          detail: { key, newValue: valueToStore }
+        }))
       }
     } catch (error) {
       // A more advanced implementation would handle the error case
