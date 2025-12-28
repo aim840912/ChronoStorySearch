@@ -35,6 +35,19 @@ export const FavoriteItemSchema = z.object({
 })
 
 // ============================================
+// 手動經驗記錄 Schema
+// ============================================
+
+export const ManualExpRecordSchema = z.object({
+  id: z.string(),
+  monsterName: z.string(),
+  mobId: z.number().int().positive().optional(),
+  expPerHour: z.number(),
+  createdAt: z.number(),
+  updatedAt: z.number(),
+})
+
+// ============================================
 // 完整偏好設定 Schema
 // ============================================
 
@@ -57,6 +70,8 @@ export const UserPreferencesSchema = z.object({
   itemSourcesViewMode: ViewModeSchema,
   monsterDropsViewMode: ViewModeSchema,
   monsterDropsShowMaxOnly: z.boolean(),
+  // 手動經驗記錄
+  manualExpRecords: z.array(ManualExpRecordSchema),
 })
 
 // ============================================
@@ -80,6 +95,7 @@ export const PreferencesFieldSchemas = {
   itemSourcesViewMode: ViewModeSchema,
   monsterDropsViewMode: ViewModeSchema,
   monsterDropsShowMaxOnly: z.boolean(),
+  manualExpRecords: z.array(ManualExpRecordSchema),
 } as const
 
 // 型別推導

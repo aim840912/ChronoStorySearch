@@ -448,6 +448,7 @@ export default function Home() {
           // Toolbar callbacks
           onExpTrackerClick={modals.openExpTrackerModal}
           onScreenRecorderClick={modals.openScreenRecorderModal}
+          onManualExpRecorderClick={modals.openManualExpRecorderModal}
           onAccuracyCalculatorClick={() => modals.openAccuracyCalculator()}
           onGameCommandsClick={() => setIsGameCommandsOpen(true)}
           onPrivacySettingsClick={() => setIsPrivacyModalOpen(true)}
@@ -565,6 +566,9 @@ export default function Home() {
         isScreenRecorderModalOpen={modals.isScreenRecorderModalOpen}
         openScreenRecorderModal={modals.openScreenRecorderModal}
         closeScreenRecorderModal={modals.closeScreenRecorderModal}
+        isManualExpRecorderModalOpen={modals.isManualExpRecorderModalOpen}
+        openManualExpRecorderModal={modals.openManualExpRecorderModal}
+        closeManualExpRecorderModal={modals.closeManualExpRecorderModal}
         isExpTrackerModalOpen={modals.isExpTrackerModalOpen}
         openExpTrackerModal={modals.openExpTrackerModal}
         closeExpTrackerModal={modals.closeExpTrackerModal}

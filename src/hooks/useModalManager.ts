@@ -6,7 +6,7 @@ import { GA4_EVENTS } from '@/lib/analytics/events'
 /**
  * Modal 類型定義
  */
-type ModalType = 'monster' | 'item' | 'gacha' | 'bug' | 'clear' | 'merchant' | 'accuracy' | 'createListing' | 'myListings' | 'interests' | 'listingDetail' | 'screenRecorder' | 'expTracker'
+type ModalType = 'monster' | 'item' | 'gacha' | 'bug' | 'clear' | 'merchant' | 'accuracy' | 'createListing' | 'myListings' | 'interests' | 'listingDetail' | 'screenRecorder' | 'expTracker' | 'manualExpRecorder'
 
 /**
  * Monster Modal 資料結構
@@ -323,6 +323,17 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     setHistory({ previous: null })
   }, [])
 
+  // 開啟 Manual EXP Recorder Modal
+  const openManualExpRecorderModal = useCallback(() => {
+    setModal({ type: 'manualExpRecorder', data: null })
+  }, [])
+
+  // 關閉 Manual EXP Recorder Modal
+  const closeManualExpRecorderModal = useCallback(() => {
+    setModal({ type: null, data: null })
+    setHistory({ previous: null })
+  }, [])
+
   // 開啟 EXP Tracker Modal（使用獨立狀態）
   const openExpTrackerModal = useCallback(() => {
     setIsExpTrackerFloatingOpen(true)
@@ -491,6 +502,11 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     isExpTrackerModalOpen: isExpTrackerFloatingOpen,
     openExpTrackerModal,
     closeExpTrackerModal,
+
+    // Manual EXP Recorder Modal
+    isManualExpRecorderModalOpen: modal.type === 'manualExpRecorder',
+    openManualExpRecorderModal,
+    closeManualExpRecorderModal,
 
     // 暴露原始 modal 狀態（用於複雜條件判斷）
     modal,

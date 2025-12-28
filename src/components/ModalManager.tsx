@@ -14,6 +14,7 @@ import { GlobalSettingsModal } from '@/components/settings/GlobalSettingsModal'
 import { AboutModal } from '@/components/AboutModal'
 import { DevApiTester } from '@/components/dev/DevApiTester'
 import { ScreenRecorderModal } from '@/components/tools/screen-recorder'
+import { ManualExpRecorderModal } from '@/components/tools/manual-exp-recorder'
 import { ExpTrackerFloating } from '@/components/tools/exp-tracker'
 import { Toast } from '@/components/Toast'
 import { useLanguage } from '@/contexts/LanguageContext'
@@ -84,6 +85,9 @@ interface ModalManagerProps {
   isScreenRecorderModalOpen: boolean
   openScreenRecorderModal: () => void
   closeScreenRecorderModal: () => void
+  isManualExpRecorderModalOpen: boolean
+  openManualExpRecorderModal: () => void
+  closeManualExpRecorderModal: () => void
 
   // EXP Tracker Modal
   isExpTrackerModalOpen: boolean
@@ -173,6 +177,9 @@ export const ModalManager = memo(function ModalManager({
   isScreenRecorderModalOpen,
   openScreenRecorderModal: _openScreenRecorderModal,
   closeScreenRecorderModal,
+  isManualExpRecorderModalOpen,
+  openManualExpRecorderModal: _openManualExpRecorderModal,
+  closeManualExpRecorderModal,
   isExpTrackerModalOpen,
   openExpTrackerModal: _openExpTrackerModal,
   closeExpTrackerModal,
@@ -296,6 +303,13 @@ export const ModalManager = memo(function ModalManager({
         <ScreenRecorderModal
           isOpen={isScreenRecorderModalOpen}
           onClose={closeScreenRecorderModal}
+        />
+      )}
+
+      {isManualExpRecorderModalOpen && (
+        <ManualExpRecorderModal
+          isOpen={isManualExpRecorderModalOpen}
+          onClose={closeManualExpRecorderModal}
         />
       )}
 

@@ -8,6 +8,7 @@ import type { FavoriteMonster, FavoriteItem, Language, Theme, AccuracyCalculator
 import type { ImageFormat } from '@/lib/image-utils'
 import type { ScreenRecorderSettings } from '@/types/screen-recorder'
 import type { ExpTrackerState } from '@/types/exp-tracker'
+import type { ManualExpRecord } from '@/types/manual-exp-record'
 
 // Storage keys
 export const STORAGE_KEYS = {
@@ -29,6 +30,7 @@ export const STORAGE_KEYS = {
   GUEST_ITEM_SOURCES_VIEW_MODE: 'chronostory-guest-item-sources-view-mode',
   GUEST_MONSTER_DROPS_VIEW_MODE: 'chronostory-guest-monster-drops-view-mode',
   GUEST_MONSTER_DROPS_SHOW_MAX_ONLY: 'chronostory-guest-monster-drops-show-max-only',
+  GUEST_MANUAL_EXP_RECORDS: 'chronostory-guest-manual-exp-records',
   LANGUAGE: 'chronostory-language',
   THEME: 'chronostory-theme',
   ACCURACY_CALCULATOR: 'chronostory-accuracy-calculator',
@@ -53,6 +55,8 @@ export const STORAGE_KEYS = {
   MONSTER_DROPS_SHOW_MAX_ONLY: 'monster-drops-show-max-only',
   // 進階篩選歷史紀錄
   FILTER_HISTORY: 'chronostory-filter-history',
+  // 手動經驗記錄器
+  MANUAL_EXP_RECORDS: 'chronostory-manual-exp-records',
 } as const
 
 /**
@@ -480,6 +484,7 @@ export function saveCurrentPreferencesToGuest(): void {
     setStorageItem(STORAGE_KEYS.GUEST_ITEM_SOURCES_VIEW_MODE, getItemSourcesViewMode())
     setStorageItem(STORAGE_KEYS.GUEST_MONSTER_DROPS_VIEW_MODE, getMonsterDropsViewMode())
     setStorageItem(STORAGE_KEYS.GUEST_MONSTER_DROPS_SHOW_MAX_ONLY, getMonsterDropsShowMaxOnly())
+    setStorageItem(STORAGE_KEYS.GUEST_MANUAL_EXP_RECORDS, getManualExpRecords())
 
     storageLogger.info('已保存當前偏好設定到 Guest')
   } catch (error) {
@@ -511,6 +516,7 @@ export function restorePreferencesFromGuest(): void {
     const guestItemSourcesViewMode = getStorageItem<'grid' | 'list'>(STORAGE_KEYS.GUEST_ITEM_SOURCES_VIEW_MODE, 'grid')
     const guestMonsterDropsViewMode = getStorageItem<'grid' | 'list'>(STORAGE_KEYS.GUEST_MONSTER_DROPS_VIEW_MODE, 'grid')
     const guestMonsterDropsShowMaxOnly = getStorageItem<boolean>(STORAGE_KEYS.GUEST_MONSTER_DROPS_SHOW_MAX_ONLY, false)
+    const guestManualExpRecords = getStorageItem<ManualExpRecord[]>(STORAGE_KEYS.GUEST_MANUAL_EXP_RECORDS, [])
 
     // 恢復到主要的 storage keys
     setTheme(guestTheme)
@@ -528,9 +534,36 @@ export function restorePreferencesFromGuest(): void {
     setItemSourcesViewMode(guestItemSourcesViewMode)
     setMonsterDropsViewMode(guestMonsterDropsViewMode)
     setMonsterDropsShowMaxOnly(guestMonsterDropsShowMaxOnly)
+    setManualExpRecords(guestManualExpRecords)
 
     storageLogger.info('已從 Guest 恢復偏好設定')
   } catch (error) {
     storageLogger.error('從 Guest 恢復偏好設定失敗', error)
   }
+}
+
+// ============================================================
+// 手動經驗記錄器
+// ============================================================
+
+export function getManualExpRecords(): ManualExpRecord[] {
+  return getStorageItem<ManualExpRecord[]>(STORAGE_KEYS.MANUAL_EXP_RECORDS, [])
+}
+
+export function setManualExpRecords(records: ManualExpRecord[]): boolean {
+  return setStorageItem(STORAGE_KEYS.MANUAL_EXP_RECORDS, records)
+}
+
+/**
+ * 設定手動經驗記錄並觸發雲端同步
+ * 登入狀態下會同步到 Supabase
+ */
+export function setManualExpRecordsWithSync(records: ManualExpRecord[]): boolean {
+  const success = setManualExpRecords(records)
+  if (success && typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent('preference-changed', {
+      detail: { field: 'manualExpRecords', value: records }
+    }))
+  }
+  return success
 }
