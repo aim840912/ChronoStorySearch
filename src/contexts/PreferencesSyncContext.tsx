@@ -57,6 +57,9 @@ import {
   setMonsterDropsViewMode,
   getMonsterDropsShowMaxOnly,
   setMonsterDropsShowMaxOnly,
+  // 手動經驗記錄
+  getManualExpRecords,
+  setManualExpRecords,
 } from '@/lib/storage'
 
 interface PreferencesSyncContextType {
@@ -141,6 +144,8 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
         // 怪物掉落顯示設定
         setMonsterDropsViewMode(cloudPrefs.monsterDropsViewMode)
         setMonsterDropsShowMaxOnly(cloudPrefs.monsterDropsShowMaxOnly)
+        // 手動經驗記錄
+        setManualExpRecords(cloudPrefs.manualExpRecords)
 
         console.log('[PreferencesSync] 已從雲端載入設定')
 
@@ -186,6 +191,8 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
         // 怪物掉落顯示設定
         monsterDropsViewMode: getMonsterDropsViewMode(),
         monsterDropsShowMaxOnly: getMonsterDropsShowMaxOnly(),
+        // 手動經驗記錄
+        manualExpRecords: getManualExpRecords(),
       }
 
       await preferencesService.upsert(localPrefs)
@@ -225,6 +232,8 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
         // 怪物掉落顯示設定
         monsterDropsViewMode: getMonsterDropsViewMode(),
         monsterDropsShowMaxOnly: getMonsterDropsShowMaxOnly(),
+        // 手動經驗記錄
+        manualExpRecords: getManualExpRecords(),
       }
 
     // 記錄本地變更時間，防止 Realtime 循環更新
@@ -337,6 +346,8 @@ export function PreferencesSyncProvider({ children }: { children: ReactNode }) {
     // 怪物掉落顯示設定
     setMonsterDropsViewMode(prefs.monsterDropsViewMode)
     setMonsterDropsShowMaxOnly(prefs.monsterDropsShowMaxOnly)
+    // 手動經驗記錄
+    setManualExpRecords(prefs.manualExpRecords)
     window.dispatchEvent(new CustomEvent('preferences-synced'))
   }, [])
 

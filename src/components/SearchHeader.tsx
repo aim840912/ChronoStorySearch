@@ -57,6 +57,7 @@ interface SearchHeaderProps {
   // 工具列相關
   onExpTrackerClick?: () => void
   onScreenRecorderClick?: () => void
+  onManualExpRecorderClick?: () => void
   onAccuracyCalculatorClick?: () => void
   onGameCommandsClick?: () => void
   onPrivacySettingsClick?: () => void
@@ -106,6 +107,7 @@ export const SearchHeader = memo(function SearchHeader({
   // 工具列相關
   onExpTrackerClick,
   onScreenRecorderClick,
+  onManualExpRecorderClick,
   onAccuracyCalculatorClick,
   onGameCommandsClick,
   onPrivacySettingsClick,
@@ -150,6 +152,16 @@ export const SearchHeader = memo(function SearchHeader({
           ),
           label: t('toolbar.screenRecorder'),
           onClick: () => onScreenRecorderClick?.(),
+        },
+        {
+          id: 'manual-exp-recorder',
+          icon: (
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+          ),
+          label: t('toolbar.manualExpRecorder'),
+          onClick: () => onManualExpRecorderClick?.(),
         },
         {
           id: 'accuracy-calculator',
@@ -285,13 +297,18 @@ export const SearchHeader = memo(function SearchHeader({
               prerequisiteTipId="search-job-advancement"
               message={t('tip.toolsDropdown')}
             />
+            <TipBubble
+              tipId="manual-exp-recorder"
+              prerequisiteTipId="tools-dropdown"
+              message={t('tip.manualExpRecorder')}
+            />
           </div>
           {/* 光暗模式切換 + 提示 */}
           <div className="relative">
             <ThemeToggle />
             <TipBubble
               tipId="theme-toggle"
-              prerequisiteTipId="tools-dropdown"
+              prerequisiteTipId="manual-exp-recorder"
               message={t('tip.themeToggle')}
             />
           </div>
@@ -329,13 +346,18 @@ export const SearchHeader = memo(function SearchHeader({
               prerequisiteTipId="search-job-advancement"
               message={t('tip.toolsDropdown')}
             />
+            <TipBubble
+              tipId="manual-exp-recorder"
+              prerequisiteTipId="tools-dropdown"
+              message={t('tip.manualExpRecorder')}
+            />
           </div>
           {/* 光暗模式切換 + 提示 */}
           <div className="relative">
             <ThemeToggle />
             <TipBubble
               tipId="theme-toggle"
-              prerequisiteTipId="tools-dropdown"
+              prerequisiteTipId="manual-exp-recorder"
               message={t('tip.themeToggle')}
             />
           </div>

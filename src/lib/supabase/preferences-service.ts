@@ -1,6 +1,7 @@
 import { supabase } from './client'
 import type { FavoriteMonster, FavoriteItem, Language, Theme } from '@/types'
 import type { ImageFormat } from '@/lib/image-utils'
+import type { ManualExpRecord } from '@/types/manual-exp-record'
 import { UserPreferencesSchema, PreferencesFieldSchemas } from '@/schemas/preferences.schema'
 
 /**
@@ -25,6 +26,8 @@ export interface UserPreferences {
   // 怪物掉落顯示設定
   monsterDropsViewMode: 'grid' | 'list'
   monsterDropsShowMaxOnly: boolean
+  // 手動經驗記錄
+  manualExpRecords: ManualExpRecord[]
 }
 
 /**
@@ -51,6 +54,8 @@ export interface UserPreferencesRow {
   // 怪物掉落顯示設定
   monster_drops_view_mode: string
   monster_drops_show_max_only: boolean
+  // 手動經驗記錄
+  manual_exp_records: ManualExpRecord[]
   created_at: string
   updated_at: string
 }
@@ -77,6 +82,8 @@ export const DEFAULT_PREFERENCES: UserPreferences = {
   // 怪物掉落顯示設定
   monsterDropsViewMode: 'grid',
   monsterDropsShowMaxOnly: false,
+  // 手動經驗記錄
+  manualExpRecords: [],
 }
 
 /**
@@ -102,6 +109,8 @@ export function rowToPreferences(row: UserPreferencesRow): UserPreferences {
     // 怪物掉落顯示設定
     monsterDropsViewMode: (row.monster_drops_view_mode as 'grid' | 'list') || DEFAULT_PREFERENCES.monsterDropsViewMode,
     monsterDropsShowMaxOnly: row.monster_drops_show_max_only ?? DEFAULT_PREFERENCES.monsterDropsShowMaxOnly,
+    // 手動經驗記錄
+    manualExpRecords: row.manual_exp_records || [],
   }
 }
 
@@ -170,6 +179,7 @@ export const preferencesService = {
         item_sources_view_mode: preferences.itemSourcesViewMode,
         monster_drops_view_mode: preferences.monsterDropsViewMode,
         monster_drops_show_max_only: preferences.monsterDropsShowMaxOnly,
+        manual_exp_records: preferences.manualExpRecords,
       }, {
         onConflict: 'user_id',
       })
@@ -221,6 +231,7 @@ export const preferencesService = {
       itemSourcesViewMode: 'item_sources_view_mode',
       monsterDropsViewMode: 'monster_drops_view_mode',
       monsterDropsShowMaxOnly: 'monster_drops_show_max_only',
+      manualExpRecords: 'manual_exp_records',
     }
 
     const dbField = fieldMap[field]
