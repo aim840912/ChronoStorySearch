@@ -124,11 +124,28 @@ export interface ItemAttributesEssential {
   } | null
   scroll_category: string | null
   attack_speed: number | null  // 攻擊速度 (2=最快, 9=最慢)
-  // 增加屬性（用於主屬性篩選）
+  // 四維屬性
   inc_str: number
   inc_dex: number
   inc_int: number
   inc_luk: number
+  // 攻擊/魔攻
+  inc_pad: number    // 物理攻擊
+  inc_mad: number    // 魔法攻擊
+  // 防禦
+  inc_pdd: number    // 物理防禦
+  inc_mdd: number    // 魔法防禦
+  // HP/MP
+  inc_mhp: number    // HP
+  inc_mmp: number    // MP
+  // 命中/迴避
+  inc_acc: number    // 命中
+  inc_eva: number    // 迴避
+  // 速度/跳躍
+  inc_speed: number  // 速度
+  inc_jump: number   // 跳躍
+  // 升級次數
+  tuc: number        // 升級次數 (slots)
 }
 
 // Detailed 資料類型（用於 Modal 詳細顯示）

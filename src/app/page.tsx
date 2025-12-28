@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react'
 import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter } from '@/types'
+import type { TradeType } from '@/types/trade'
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 import { useFavoriteMonsters } from '@/hooks/useFavoriteMonsters'
 import { useFavoriteItems } from '@/hooks/useFavoriteItems'
@@ -13,6 +14,7 @@ import { useSearchWithSuggestions } from '@/hooks/useSearchWithSuggestions'
 import { useDataManagement } from '@/hooks/useDataManagement'
 import { useSearchLogic } from '@/hooks/useSearchLogic'
 import { useFilterLogic } from '@/hooks/useFilterLogic'
+import { useItemsData } from '@/hooks/useItemsData'
 import { useInfiniteScroll } from '@/hooks/useInfiniteScroll'
 import { useScrollBehavior } from '@/hooks/useScrollBehavior'
 import { useHashNavigation } from '@/hooks/useHashNavigation'
@@ -21,6 +23,7 @@ import { ContentDisplay } from '@/components/ContentDisplay'
 import { ModalManager } from '@/components/ModalManager'
 import { GachaDrawSection } from '@/components/gacha/GachaDrawSection'
 import { MerchantShopSection } from '@/components/merchant/MerchantShopSection'
+import { TradeSection } from '@/components/trade/TradeSection'
 import { AdSenseMultiplex } from '@/components/adsense/AdSenseMultiplex'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
@@ -50,6 +53,11 @@ export default function Home() {
   const [isMerchantMode, setIsMerchantMode] = useState(false)
   const [selectedMerchantMapId, setSelectedMerchantMapId] = useState<string | null>(null)
 
+  // 交易市場模式狀態
+  const [isTradeMode, setIsTradeMode] = useState(false)
+  const [tradeTypeFilter, setTradeTypeFilter] = useState<TradeType | 'all'>('all')
+  const [tradeSearchQuery, setTradeSearchQuery] = useState('')
+
   // 追蹤首次掛載，避免初始載入時觸發滾動
   const isFirstMount = useRef(true)
   const isFirstSearchChange = useRef(true)
@@ -71,6 +79,7 @@ export default function Home() {
 
   // API 測試工具 Modal 狀態（僅開發環境）
   const [isApiTesterOpen, setIsApiTesterOpen] = useState(false)
+
 
   // 計算已啟用的進階篩選數量
   const advancedFilterCount = [
@@ -109,6 +118,12 @@ export default function Home() {
     itemIndexMap,
     loadGachaMachines,
   } = useDataManagement()
+
+  // 物品資料 Hook - 提供物品搜尋功能（用於 TradeSection）
+  const { searchItems } = useItemsData({
+    allDrops,
+    gachaMachines,
+  })
 
   // 搜尋邏輯 Hook - 處理搜尋索引和建議
   const { suggestions } = useSearchLogic({
@@ -364,10 +379,27 @@ export default function Home() {
     setSelectedMerchantMapId(null)
   }, [])
 
-  // 處理 filterMode 變更（同時關閉轉蛋/商人模式）
+  // 交易市場模式切換
+  const handleTradeModeToggle = useCallback(() => {
+    setIsTradeMode(prev => {
+      const newValue = !prev
+      if (newValue) {
+        // 進入交易模式時關閉轉蛋/商人模式（互斥）
+        setIsGachaMode(false)
+        setSelectedGachaMachineId(null)
+        setIsMerchantMode(false)
+        setSelectedMerchantMapId(null)
+        // 滾動到頂部
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
+      return newValue
+    })
+  }, [])
+
+  // 處理 filterMode 變更（同時關閉轉蛋/商人/交易模式）
   const handleFilterModeChange = useCallback((mode: FilterMode) => {
     setFilterMode(mode)
-    // 點擊 FilterTabs 時自動退出轉蛋模式和商人模式
+    // 點擊 FilterTabs 時自動退出轉蛋模式、商人模式和交易模式
     if (isGachaMode) {
       setIsGachaMode(false)
       setSelectedGachaMachineId(null)
@@ -376,7 +408,10 @@ export default function Home() {
       setIsMerchantMode(false)
       setSelectedMerchantMapId(null)
     }
-  }, [isGachaMode, isMerchantMode])
+    if (isTradeMode) {
+      setIsTradeMode(false)
+    }
+  }, [isGachaMode, isMerchantMode, isTradeMode])
 
 
   // 鍵盤導航處理 - 包裝 search.handleKeyDown 以處理轉蛋建議
@@ -445,6 +480,13 @@ export default function Home() {
           selectedMerchantMapId={selectedMerchantMapId}
           onMerchantSelect={handleMerchantSelect}
           onMerchantClose={handleMerchantClose}
+          // 交易市場模式
+          isTradeMode={isTradeMode}
+          onTradeModeToggle={handleTradeModeToggle}
+          tradeTypeFilter={tradeTypeFilter}
+          onTradeTypeFilterChange={setTradeTypeFilter}
+          tradeSearchQuery={tradeSearchQuery}
+          onTradeSearchQueryChange={setTradeSearchQuery}
           // Toolbar callbacks
           onExpTrackerClick={modals.openExpTrackerModal}
           onScreenRecorderClick={modals.openScreenRecorderModal}
@@ -458,8 +500,19 @@ export default function Home() {
           onGlobalSettingsClick={() => setIsGlobalSettingsOpen(true)}
         />
 
-        {/* 轉蛋抽獎區域 - 選擇轉蛋機後顯示 */}
-        {isGachaMode && selectedGachaMachineId !== null && (
+        {/* 交易市場區域 - 交易模式時顯示 */}
+        {isTradeMode && (
+          <TradeSection
+            searchItems={searchItems}
+            typeFilter={tradeTypeFilter}
+            searchQuery={tradeSearchQuery}
+            itemAttributesMap={itemAttributesMap}
+            onRecordView={viewHistory.recordView}
+          />
+        )}
+
+        {/* 轉蛋抽獎區域 - 選擇轉蛋機後顯示（交易模式時隱藏） */}
+        {!isTradeMode && isGachaMode && selectedGachaMachineId !== null && (
           <GachaDrawSection
             machineId={selectedGachaMachineId}
             gachaMachines={gachaMachines}
@@ -468,16 +521,16 @@ export default function Home() {
           />
         )}
 
-        {/* 商人商店區域 - 選擇商人地圖後顯示 */}
-        {isMerchantMode && (
+        {/* 商人商店區域 - 選擇商人地圖後顯示（交易模式時隱藏） */}
+        {!isTradeMode && isMerchantMode && (
           <MerchantShopSection
             mapId={selectedMerchantMapId}
             onClose={handleMerchantClose}
           />
         )}
 
-        {/* 內容顯示區域 - 轉蛋模式或商人模式時隱藏 */}
-        {!(isGachaMode && selectedGachaMachineId !== null) && !isMerchantMode && (
+        {/* 內容顯示區域 - 轉蛋模式、商人模式或交易模式時隱藏 */}
+        {!isTradeMode && !(isGachaMode && selectedGachaMachineId !== null) && !isMerchantMode && (
           <ContentDisplay
           isLoading={isLoading}
           filterMode={filterMode}
@@ -513,8 +566,8 @@ export default function Home() {
         />
         )}
 
-        {/* Multiplex 多重廣告 - 列表結束後顯示 */}
-        {!(isGachaMode && selectedGachaMachineId !== null) && !isMerchantMode && (
+        {/* Multiplex 多重廣告 - 列表結束後顯示（交易/轉蛋/商人模式時隱藏） */}
+        {!isTradeMode && !(isGachaMode && selectedGachaMachineId !== null) && !isMerchantMode && (
           <AdSenseMultiplex className="mt-8" />
         )}
       </div>

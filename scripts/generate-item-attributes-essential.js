@@ -84,6 +84,28 @@ function transformItem(item, sourceDir) {
     equipment_classes: isEquipment ? reqJobToClasses(item.metaInfo?.reqJob ?? 0) : null,
     scroll_category: isScrollItem ? item.typeInfo?.subCategory || null : null,
     attack_speed: isEquipment ? (item.metaInfo?.attackSpeed ?? null) : null,  // 攻擊速度 (2=最快, 9=最慢)
+    // 四維屬性
+    inc_str: isEquipment ? (item.metaInfo?.incSTR ?? 0) : 0,
+    inc_dex: isEquipment ? (item.metaInfo?.incDEX ?? 0) : 0,
+    inc_int: isEquipment ? (item.metaInfo?.incINT ?? 0) : 0,
+    inc_luk: isEquipment ? (item.metaInfo?.incLUK ?? 0) : 0,
+    // 攻擊/魔攻
+    inc_pad: isEquipment ? (item.metaInfo?.incPAD ?? 0) : 0,
+    inc_mad: isEquipment ? (item.metaInfo?.incMAD ?? 0) : 0,
+    // 防禦
+    inc_pdd: isEquipment ? (item.metaInfo?.incPDD ?? 0) : 0,
+    inc_mdd: isEquipment ? (item.metaInfo?.incMDD ?? 0) : 0,
+    // HP/MP
+    inc_mhp: isEquipment ? (item.metaInfo?.incMHP ?? 0) : 0,
+    inc_mmp: isEquipment ? (item.metaInfo?.incMMP ?? 0) : 0,
+    // 命中/迴避
+    inc_acc: isEquipment ? (item.metaInfo?.incACC ?? 0) : 0,
+    inc_eva: isEquipment ? (item.metaInfo?.incEVA ?? 0) : 0,
+    // 速度/跳躍
+    inc_speed: isEquipment ? (item.metaInfo?.incSpeed ?? 0) : 0,
+    inc_jump: isEquipment ? (item.metaInfo?.incJump ?? 0) : 0,
+    // 升級次數
+    tuc: isEquipment ? (item.metaInfo?.tuc ?? 0) : 0,
   }
 
   return essential

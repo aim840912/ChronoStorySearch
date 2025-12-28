@@ -85,6 +85,28 @@ export const ItemAttributesEssentialSchema = z.object({
   equipment_classes: z.record(z.string(), z.boolean()).nullable().optional(),
   scroll_category: z.string().nullable().optional(),
   attack_speed: z.number().int().nullable().optional(),  // 攻擊速度 (2=最快, 9=最慢)
+  // 四維屬性
+  inc_str: z.number().int().default(0),
+  inc_dex: z.number().int().default(0),
+  inc_int: z.number().int().default(0),
+  inc_luk: z.number().int().default(0),
+  // 攻擊/魔攻
+  inc_pad: z.number().int().default(0),
+  inc_mad: z.number().int().default(0),
+  // 防禦
+  inc_pdd: z.number().int().default(0),
+  inc_mdd: z.number().int().default(0),
+  // HP/MP
+  inc_mhp: z.number().int().default(0),
+  inc_mmp: z.number().int().default(0),
+  // 命中/迴避
+  inc_acc: z.number().int().default(0),
+  inc_eva: z.number().int().default(0),
+  // 速度/跳躍
+  inc_speed: z.number().int().default(0),
+  inc_jump: z.number().int().default(0),
+  // 升級次數
+  tuc: z.number().int().default(0),
 })
 
 /**

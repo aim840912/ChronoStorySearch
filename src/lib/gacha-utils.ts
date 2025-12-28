@@ -236,10 +236,28 @@ export function convertOrganizedToEssential(
     equipment_classes,
     scroll_category: null,
     attack_speed: organized.metaInfo.attackSpeed ?? null,  // 攻擊速度 (2=最快, 9=最慢)
+    // 四維屬性
     inc_str: organized.metaInfo.incSTR ?? 0,
     inc_dex: organized.metaInfo.incDEX ?? 0,
     inc_int: organized.metaInfo.incINT ?? 0,
     inc_luk: organized.metaInfo.incLUK ?? 0,
+    // 攻擊/魔攻
+    inc_pad: organized.metaInfo.incPAD ?? 0,
+    inc_mad: organized.metaInfo.incMAD ?? 0,
+    // 防禦
+    inc_pdd: organized.metaInfo.incPDD ?? 0,
+    inc_mdd: organized.metaInfo.incMDD ?? 0,
+    // HP/MP
+    inc_mhp: organized.metaInfo.incMHP ?? 0,
+    inc_mmp: organized.metaInfo.incMMP ?? 0,
+    // 命中/迴避
+    inc_acc: organized.metaInfo.incACC ?? 0,
+    inc_eva: organized.metaInfo.incEVA ?? 0,
+    // 速度/跳躍
+    inc_speed: organized.metaInfo.incSpeed ?? 0,
+    inc_jump: organized.metaInfo.incJump ?? 0,
+    // 升級次數
+    tuc: organized.metaInfo.tuc ?? 0,
   }
 }
 
