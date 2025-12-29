@@ -12,6 +12,7 @@ import { TipBubble } from '@/components/TipBubble'
 import { LoginButton } from '@/components/auth/LoginButton'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
+import { useAuth } from '@/contexts/AuthContext'
 import type { ImageFormat } from '@/lib/image-utils'
 
 interface SearchHeaderProps {
@@ -137,6 +138,7 @@ export const SearchHeader = memo(function SearchHeader({
 }: SearchHeaderProps) {
   const { t } = useLanguage()
   const { format, toggleFormat } = useImageFormat()
+  const { user } = useAuth()
 
   // 圖片格式標籤對應
   const formatLabels: Record<ImageFormat, string> = {
@@ -322,19 +324,21 @@ export const SearchHeader = memo(function SearchHeader({
               message={t('tip.manualExpRecorder')}
             />
           </div>
-          {/* 交易市場切換按鈕 */}
-          <button
-            type="button"
-            onClick={onTradeModeToggle}
-            className={`p-2 text-sm font-medium rounded-lg transition-colors ${
-              isTradeMode
-                ? 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300'
-                : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
-            }`}
-            title={isTradeMode ? t('trade.backToSearch') : t('trade.title')}
-          >
-            {isTradeMode ? t('search.short') : t('trade.short')}
-          </button>
+          {/* 交易市場切換按鈕 - 僅登入後顯示 */}
+          {user && (
+            <button
+              type="button"
+              onClick={onTradeModeToggle}
+              className={`p-1.5 sm:p-2 text-sm font-medium rounded-lg transition-colors flex items-center ${
+                isTradeMode
+                  ? 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300'
+                  : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
+              }`}
+              title={isTradeMode ? t('trade.backToSearch') : t('trade.title')}
+            >
+              {isTradeMode ? t('search.short') : t('trade.short')}
+            </button>
+          )}
           {/* 光暗模式切換 + 提示 */}
           <div className="relative">
             <ThemeToggle />
@@ -360,7 +364,7 @@ export const SearchHeader = memo(function SearchHeader({
 
       {/* 工具列和語言切換 - 小於 460px 時顯示在搜尋欄上方 */}
       <div className="flex min-[460px]:hidden px-2 mb-1 max-w-7xl mx-auto">
-        <div className="grid grid-cols-5 gap-1 w-full [&>button]:w-full [&>button]:justify-center [&>div]:w-full [&>div>button]:w-full [&>div>button]:justify-center">
+        <div className={`grid ${user ? 'grid-cols-5' : 'grid-cols-4'} gap-1 w-full [&>button]:w-full [&>button]:justify-center [&>div]:w-full [&>div>button]:w-full [&>div>button]:justify-center`}>
           {/* 工具列下拉選單 + 提示 */}
           <div className="relative">
             <ToolbarDropdown
@@ -384,19 +388,21 @@ export const SearchHeader = memo(function SearchHeader({
               message={t('tip.manualExpRecorder')}
             />
           </div>
-          {/* 交易市場切換按鈕 */}
-          <button
-            type="button"
-            onClick={onTradeModeToggle}
-            className={`flex items-center justify-center p-2 text-sm font-medium rounded-lg transition-colors ${
-              isTradeMode
-                ? 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300'
-                : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400'
-            }`}
-            title={isTradeMode ? t('trade.backToSearch') : t('trade.title')}
-          >
-            {isTradeMode ? t('search.short') : t('trade.short')}
-          </button>
+          {/* 交易市場切換按鈕 - 僅登入後顯示 */}
+          {user && (
+            <button
+              type="button"
+              onClick={onTradeModeToggle}
+              className={`flex items-center justify-center h-[30px] sm:h-auto p-1.5 sm:p-2 text-sm font-medium rounded-lg transition-colors ${
+                isTradeMode
+                  ? 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300'
+                  : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400'
+              }`}
+              title={isTradeMode ? t('trade.backToSearch') : t('trade.title')}
+            >
+              {isTradeMode ? t('search.short') : t('trade.short')}
+            </button>
+          )}
           {/* 光暗模式切換 + 提示 */}
           <div className="relative">
             <ThemeToggle />
