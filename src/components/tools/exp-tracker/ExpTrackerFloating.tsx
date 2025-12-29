@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useCallback, useRef, useMemo } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useToast } from '@/hooks/useToast'
@@ -10,11 +10,11 @@ import { useExpTracker } from '@/hooks/useExpTracker'
 import { useAutoRegionDetector } from '@/hooks/useAutoRegionDetector'
 import { useDraggable } from '@/hooks/useDraggable'
 import { useResizable } from '@/hooks/useResizable'
+import { useExpTrackerUI } from '@/hooks/useExpTrackerUI'
+import { useExpTrackerRecords } from '@/hooks/useExpTrackerRecords'
 import {
   getExpTrackerState,
   setExpTrackerState,
-  getExpTrackerFloatingState,
-  setExpTrackerFloatingState,
 } from '@/lib/storage'
 import { formatExp, getIntervalLabel } from '@/lib/exp-calculator'
 import { ExpDisplay } from './ExpDisplay'
@@ -24,7 +24,7 @@ import { SaveExpForm } from './SaveExpForm'
 import { SavedRecords } from './SavedRecords'
 import { RegionSelectorModal } from './RegionSelectorModal'
 import { DebugScanPanel } from './DebugScanPanel'
-import type { SavedExpRecord, NormalizedRegion } from '@/types/exp-tracker'
+import type { NormalizedRegion } from '@/types/exp-tracker'
 
 interface ExpTrackerFloatingProps {
   isOpen: boolean
@@ -45,21 +45,12 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     [contextT]
   )
 
-  // UI 狀態
-  const [isMinimized, setIsMinimized] = useState(false)
-  const [isVideoExpanded, setIsVideoExpanded] = useState(false)
-  const [isPinned, setIsPinned] = useState(false)
-  const [isRegionModalOpen, setIsRegionModalOpen] = useState(false)
-  const [isAutoDetecting, setIsAutoDetecting] = useState(false)
-  const [mounted, setMounted] = useState(false)
-  const [windowSize, setWindowSize] = useState({ width: 320, height: 400 })
-  const [minimizedWidth, setMinimizedWidth] = useState(180)
+  // 拖曳功能（需要先初始化，因為 UI hook 需要 position）
+  const { position, isDragging, setPosition, dragHandlers } = useDraggable({})
 
   // 資料狀態
   const [stream, setStream] = useState<MediaStream | null>(null)
   const [captureInterval, setCaptureInterval] = useState(60)
-  const [savedRecords, setSavedRecords] = useState<SavedExpRecord[]>([])
-  const [editingRecord, setEditingRecord] = useState<SavedExpRecord | null>(null)
   const [videoSize, setVideoSize] = useState({ width: 0, height: 0 })
 
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -88,47 +79,43 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     setInitialExp: (exp: number) => void
   }
 
-  // 拖曳功能
-  const { position, isDragging, setPosition, dragHandlers } = useDraggable({
-    // 儲存邏輯已移至 useEffect 統一處理，避免重複儲存
-  })
-
-  // 調整大小功能（展開狀態）
+  // 調整大小功能（展開狀態）- 先初始化才能傳給 UI hook
   const resizable = useResizable({
-    initialSize: windowSize,
+    initialSize: { width: 320, height: 400 },
     minSize: { width: 280, height: 200 },
     maxSize: { width: 500, height: 800 },
-    enabled: !isMinimized,
-    onSizeChange: (size) => {
-      setWindowSize(size)
-      // 儲存邏輯已移至 useEffect 統一處理，避免重複儲存
-    },
+    enabled: true,
     onPositionChange: ({ dx, dy }) => {
-      // 拖曳左/上邊時調整位置
       setPosition({ x: position.x + dx, y: position.y + dy })
     },
   })
 
   // 調整大小功能（最小化狀態）- 只調整寬度
   const minimizedResizable = useResizable({
-    initialSize: { width: minimizedWidth, height: 40 },
+    initialSize: { width: 180, height: 40 },
     minSize: { width: 120, height: 40 },
     maxSize: { width: 300, height: 40 },
-    enabled: isMinimized,
-    onSizeChange: (size) => {
-      setMinimizedWidth(size.width)
-      // 儲存邏輯已移至 useEffect 統一處理，避免重複儲存
-    },
+    enabled: false,
     onPositionChange: ({ dx }) => {
-      // 拖曳左邊時調整位置
       setPosition({ x: position.x + dx, y: position.y })
     },
   })
 
-  // Client-side mounting
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+  // UI 狀態管理 Hook
+  const ui = useExpTrackerUI({
+    isOpen,
+    position,
+    onPositionChange: setPosition,
+    resizable,
+    minimizedResizable,
+  })
+
+  // 紀錄管理 Hook
+  const records = useExpTrackerRecords({
+    isOpen,
+    showToast,
+    t,
+  })
 
   // 載入儲存的設定
   useEffect(() => {
@@ -138,80 +125,26 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
       const validIntervals = [30, 60, 120]
       const savedInterval = state.captureInterval
       setCaptureInterval(validIntervals.includes(savedInterval) ? savedInterval : 60)
-      setSavedRecords(state.savedRecords || [])
       if (state.region) {
         regionSelector.setNormalizedRegion(state.region)
       }
-
-      // 載入懸浮視窗狀態
-      const floatingState = getExpTrackerFloatingState()
-      setIsMinimized(floatingState.isMinimized)
-      setIsVideoExpanded(floatingState.isVideoExpanded)
-      setIsPinned(floatingState.isPinned ?? false)
-      if (floatingState.position.x >= 0 && floatingState.position.y >= 0) {
-        setPosition(floatingState.position)
-      }
-      // 載入尺寸
-      if (floatingState.size) {
-        setWindowSize(floatingState.size)
-        resizable.setSize(floatingState.size)
-      }
-      if (floatingState.minimizedWidth) {
-        setMinimizedWidth(floatingState.minimizedWidth)
-        minimizedResizable.setSize({ width: floatingState.minimizedWidth, height: 40 })
-      }
+      // 載入 UI 狀態（位置、尺寸、最小化等）
+      ui.loadState()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isOpen]) // 只在 modal 開啟時載入狀態，其他依賴（setPosition, resizable, regionSelector）都是穩定的 setter
+  }, [isOpen]) // 只在 modal 開啟時載入狀態
 
-  // 儲存設定
+  // 儲存設定（captureInterval 和 region，records 由 hook 處理）
   useEffect(() => {
     if (isOpen) {
       const state = getExpTrackerState()
       setExpTrackerState({
         ...state,
         captureInterval,
-        savedRecords,
         region: regionSelector.normalizedRegion,
       })
     }
-  }, [captureInterval, savedRecords, regionSelector.normalizedRegion, isOpen])
-
-  // Debounced 儲存懸浮視窗狀態（避免拖曳時頻繁寫入 localStorage）
-  const debouncedSaveFloatingState = useMemo(() => {
-    let timeoutId: ReturnType<typeof setTimeout> | null = null
-    const debounced = (state: Parameters<typeof setExpTrackerFloatingState>[0]) => {
-      if (timeoutId) clearTimeout(timeoutId)
-      timeoutId = setTimeout(() => {
-        setExpTrackerFloatingState(state)
-      }, 300)
-    }
-    debounced.cancel = () => {
-      if (timeoutId) clearTimeout(timeoutId)
-    }
-    return debounced
-  }, [])
-
-  // 儲存懸浮視窗狀態（使用 debounce 減少寫入頻率）
-  useEffect(() => {
-    if (isOpen) {
-      debouncedSaveFloatingState({
-        position,
-        isMinimized,
-        isPinned,
-        isVideoExpanded,
-        size: windowSize,
-        minimizedWidth,
-      })
-    }
-  }, [isOpen, position, isMinimized, isPinned, isVideoExpanded, windowSize, minimizedWidth, debouncedSaveFloatingState])
-
-  // 清理 debounce timer
-  useEffect(() => {
-    return () => {
-      debouncedSaveFloatingState.cancel()
-    }
-  }, [debouncedSaveFloatingState])
+  }, [captureInterval, regionSelector.normalizedRegion, isOpen])
 
   // 設定 OCR 函數
   useEffect(() => {
@@ -233,7 +166,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
   useEffect(() => {
     const video = videoRef.current
     // 當 modal 開啟時，不設定 srcObject（由 modal 處理）
-    if (!video || !stream || isRegionModalOpen) return
+    if (!video || !stream || ui.isRegionModalOpen) return
 
     video.srcObject = stream
 
@@ -256,7 +189,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
       }
     }
 
-    // 監聽可播放事件
+    // 監聯可播放事件
     const handleCanPlay = () => {
       if (process.env.NODE_ENV === 'development') {
         console.log('[EXP] Video can play, starting...')
@@ -278,7 +211,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
         video.srcObject = null
       }
     }
-  }, [stream, isRegionModalOpen])
+  }, [stream, ui.isRegionModalOpen])
 
   // 設定 Video 和正規化區域（傳遞正規化座標，讓追蹤器動態計算像素座標）
   const setVideoAndRegion = tracker.setVideoAndRegion
@@ -314,7 +247,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     const video = videoRef.current
     if (!video || video.videoWidth === 0) return
 
-    setIsAutoDetecting(true)
+    ui.setIsAutoDetecting(true)
     const MAX_RETRIES = 3
 
     try {
@@ -355,11 +288,11 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
         console.log('[EXP] Auto-detect failed, opening manual selection')
       }
       showToast(t('autoDetectFailed'), 'info')
-      setIsRegionModalOpen(true)
+      ui.setIsRegionModalOpen(true)
     } finally {
-      setIsAutoDetecting(false)
+      ui.setIsAutoDetecting(false)
     }
-  }, [autoDetector, regionSelector, showToast, t])
+  }, [autoDetector, regionSelector, showToast, t, ui])
 
   // 監聽 video 尺寸變化
   useEffect(() => {
@@ -486,53 +419,8 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
       showToast(t('error.noStream'), 'error')
       return
     }
-    setIsRegionModalOpen(true)
-  }, [stream, showToast, t])
-
-  // 儲存經驗記錄
-  const handleSaveRecord = useCallback(
-    (record: Omit<SavedExpRecord, 'id' | 'savedAt'>) => {
-      const newRecord: SavedExpRecord = {
-        ...record,
-        id: crypto.randomUUID(),
-        savedAt: Date.now(),
-      }
-      setSavedRecords((prev) => [newRecord, ...prev])
-      showToast(t('recordSaved'), 'success')
-    },
-    [showToast, t]
-  )
-
-  // 刪除經驗記錄
-  const handleDeleteRecord = useCallback(
-    (id: string) => {
-      setSavedRecords((prev) => prev.filter((r) => r.id !== id))
-      showToast(t('recordDeleted'), 'success')
-    },
-    [showToast, t]
-  )
-
-  // 編輯經驗記錄
-  const handleEditRecord = useCallback((record: SavedExpRecord) => {
-    setEditingRecord(record)
-  }, [])
-
-  // 更新經驗記錄
-  const handleUpdateRecord = useCallback(
-    (updatedRecord: SavedExpRecord) => {
-      setSavedRecords((prev) =>
-        prev.map((r) => (r.id === updatedRecord.id ? updatedRecord : r))
-      )
-      setEditingRecord(null)
-      showToast(t('recordUpdated'), 'success')
-    },
-    [showToast, t]
-  )
-
-  // 取消編輯
-  const handleCancelEdit = useCallback(() => {
-    setEditingRecord(null)
-  }, [])
+    ui.setIsRegionModalOpen(true)
+  }, [stream, showToast, t, ui])
 
   // 關閉視窗（明確清理所有資源，使用 async 確保資源完全釋放）
   const handleClose = useCallback(async () => {
@@ -621,13 +509,13 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
     typeof window !== 'undefined' &&
     !!navigator.mediaDevices?.getDisplayMedia
 
-  if (!isOpen || !mounted) return null
+  if (!isOpen || !ui.mounted) return null
 
   // 動態 z-index：釘選時在 Modal 上層
-  const zIndex = isPinned ? 'z-[70]' : 'z-50'
+  const zIndex = ui.isPinned ? 'z-[70]' : 'z-50'
 
   // 最小化狀態
-  if (isMinimized) {
+  if (ui.isMinimized) {
     return createPortal(
       <div
         ref={minimizedResizable.containerRef}
@@ -656,17 +544,17 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
             {/* 釘選按鈕 */}
             <button
               type="button"
-              onClick={() => setIsPinned(!isPinned)}
-              className={`p-1 rounded ${isPinned ? 'bg-purple-600' : 'hover:bg-purple-600'}`}
-              aria-label={isPinned ? t('unpin') : t('pin')}
+              onClick={ui.togglePinned}
+              className={`p-1 rounded ${ui.isPinned ? 'bg-purple-600' : 'hover:bg-purple-600'}`}
+              aria-label={ui.isPinned ? t('unpin') : t('pin')}
             >
-              <svg className="w-4 h-4" fill={isPinned ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4" fill={ui.isPinned ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 4v6l-2 4v2h10v-2l-2-4V4M12 16v5M8 4h8" />
               </svg>
             </button>
             <button
               type="button"
-              onClick={() => setIsMinimized(false)}
+              onClick={() => ui.setIsMinimized(false)}
               className="p-1 hover:bg-purple-600 rounded"
               aria-label={t('expand')}
             >
@@ -724,18 +612,18 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
           {/* 釘選按鈕 */}
           <button
             type="button"
-            onClick={() => setIsPinned(!isPinned)}
-            className={`p-1 rounded ${isPinned ? 'bg-purple-600' : 'hover:bg-purple-600'}`}
-            aria-label={isPinned ? t('unpin') : t('pin')}
-            title={isPinned ? t('unpin') : t('pin')}
+            onClick={ui.togglePinned}
+            className={`p-1 rounded ${ui.isPinned ? 'bg-purple-600' : 'hover:bg-purple-600'}`}
+            aria-label={ui.isPinned ? t('unpin') : t('pin')}
+            title={ui.isPinned ? t('unpin') : t('pin')}
           >
-            <svg className="w-4 h-4" fill={isPinned ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4" fill={ui.isPinned ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 4v6l-2 4v2h10v-2l-2-4V4M12 16v5M8 4h8" />
             </svg>
           </button>
           <button
             type="button"
-            onClick={() => setIsMinimized(true)}
+            onClick={() => ui.setIsMinimized(true)}
             className="p-1 hover:bg-purple-600 rounded"
             aria-label={t('minimize')}
           >
@@ -772,7 +660,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
         )}
 
         {/* 自動偵測中 */}
-        {isAutoDetecting && (
+        {ui.isAutoDetecting && (
           <div className="p-2 bg-purple-50 dark:bg-purple-900/30 rounded-lg flex items-center gap-2">
             <div className="animate-spin rounded-full h-3 w-3 border-2 border-purple-500 border-t-transparent" />
             <p className="text-purple-800 dark:text-purple-200 text-xs">{t('detecting')}</p>
@@ -811,7 +699,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
                   <button
                     type="button"
                     onClick={handleStartTracking}
-                    disabled={!regionSelector.normalizedRegion || !ocr.isReady || isAutoDetecting}
+                    disabled={!regionSelector.normalizedRegion || !ocr.isReady || ui.isAutoDetecting}
                     className="flex-1 px-3 py-2 text-sm font-medium bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {t('startTracking')}
@@ -831,7 +719,7 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
             {/* 區域狀態提示 */}
             {stream && (
               <div className="text-xs text-center">
-                {isAutoDetecting ? (
+                {ui.isAutoDetecting ? (
                   <span className="text-purple-600 dark:text-purple-400">
                     {t('detecting')}
                   </span>
@@ -921,18 +809,18 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
         {/* 儲存經驗表單 */}
         <SaveExpForm
           expPerMinute={tracker.stats.expPerMinute}
-          editingRecord={editingRecord}
-          onSave={handleSaveRecord}
-          onUpdate={handleUpdateRecord}
-          onCancelEdit={handleCancelEdit}
+          editingRecord={records.editingRecord}
+          onSave={records.saveRecord}
+          onUpdate={records.updateRecord}
+          onCancelEdit={records.cancelEdit}
           t={t}
         />
 
         {/* 已儲存記錄 */}
         <SavedRecords
-          records={savedRecords}
-          onEdit={handleEditRecord}
-          onDelete={handleDeleteRecord}
+          records={records.savedRecords}
+          onEdit={records.editRecord}
+          onDelete={records.deleteRecord}
           t={t}
         />
 
@@ -971,8 +859,8 @@ export function ExpTrackerFloating({ isOpen, onClose }: ExpTrackerFloatingProps)
       {/* 區域選擇 Modal */}
       {stream && (
         <RegionSelectorModal
-          isOpen={isRegionModalOpen}
-          onClose={() => setIsRegionModalOpen(false)}
+          isOpen={ui.isRegionModalOpen}
+          onClose={() => ui.setIsRegionModalOpen(false)}
           stream={stream}
           initialRegion={regionSelector.normalizedRegion}
           onRegionSelected={handleRegionSelected}
