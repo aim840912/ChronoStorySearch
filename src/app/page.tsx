@@ -2,10 +2,9 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react'
 import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter } from '@/types'
-import type { TradeType } from '@/types/trade'
+// TradeType 已移至 usePageModes hook 中管理
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
-import { useFavoriteMonsters } from '@/hooks/useFavoriteMonsters'
-import { useFavoriteItems } from '@/hooks/useFavoriteItems'
+import { useFavorites } from '@/hooks/useFavorites'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useToast } from '@/hooks/useToast'
 import { useModalManager } from '@/hooks/useModalManager'
@@ -18,6 +17,8 @@ import { useItemsData } from '@/hooks/useItemsData'
 import { useInfiniteScroll } from '@/hooks/useInfiniteScroll'
 import { useScrollBehavior } from '@/hooks/useScrollBehavior'
 import { useHashNavigation } from '@/hooks/useHashNavigation'
+import { usePageModes } from '@/hooks/usePageModes'
+import { useToolModals } from '@/hooks/useToolModals'
 import { SearchHeader } from '@/components/SearchHeader'
 import { ContentDisplay } from '@/components/ContentDisplay'
 import { ModalManager } from '@/components/ModalManager'
@@ -32,53 +33,23 @@ import { GA4_EVENTS } from '@/lib/analytics/events'
 
 export default function Home() {
   const { t, language } = useLanguage()
-  // 注意：不再需要 user 變數，因為批次 API 已返回所有用戶資訊
 
-  // 篩選模式：全部 or 最愛怪物 or 最愛物品
+  // ===== 核心篩選狀態 =====
   const [filterMode, setFilterMode] = useState<FilterMode>('all')
-
-
-  // 搜尋類型篩選：全部 or 怪物 or 物品
   const [searchType, setSearchType] = useState<SearchTypeFilter>('all')
-
-  // 進階篩選狀態
   const [advancedFilter, setAdvancedFilter] = useState<AdvancedFilterOptions>(getDefaultAdvancedFilter())
   const [isAdvancedFilterExpanded, setIsAdvancedFilterExpanded] = useState(false)
 
-  // 轉蛋模式狀態
-  const [isGachaMode, setIsGachaMode] = useState(false)
-  const [selectedGachaMachineId, setSelectedGachaMachineId] = useState<number | null>(null)
+  // ===== 整合的 Hooks =====
+  // 頁面模式管理（轉蛋/商人/交易模式 - 互斥）
+  const pageModes = usePageModes()
 
-  // 商人商店模式狀態
-  const [isMerchantMode, setIsMerchantMode] = useState(false)
-  const [selectedMerchantMapId, setSelectedMerchantMapId] = useState<string | null>(null)
-
-  // 交易市場模式狀態
-  const [isTradeMode, setIsTradeMode] = useState(false)
-  const [tradeTypeFilter, setTradeTypeFilter] = useState<TradeType | 'all'>('all')
-  const [tradeSearchQuery, setTradeSearchQuery] = useState('')
+  // 工具 Modal 管理（設定/關於/遊戲指令等）
+  const toolModals = useToolModals()
 
   // 追蹤首次掛載，避免初始載入時觸發滾動
   const isFirstMount = useRef(true)
   const isFirstSearchChange = useRef(true)
-
-  // 命中率計算器 Modal 狀態
-  const [isAccuracyCalcOpen, setIsAccuracyCalcOpen] = useState(false)
-
-  // 遊戲指令 Modal 狀態
-  const [isGameCommandsOpen, setIsGameCommandsOpen] = useState(false)
-
-  // 隱私設定 Modal 狀態
-  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false)
-
-  // 關於本站 Modal 狀態
-  const [isAboutModalOpen, setIsAboutModalOpen] = useState(false)
-
-  // 全域設定 Modal 狀態
-  const [isGlobalSettingsOpen, setIsGlobalSettingsOpen] = useState(false)
-
-  // API 測試工具 Modal 狀態（僅開發環境）
-  const [isApiTesterOpen, setIsApiTesterOpen] = useState(false)
 
 
   // 計算已啟用的進階篩選數量
@@ -135,24 +106,8 @@ export default function Home() {
     searchType,
   })
 
-  // 最愛怪物管理
-  const {
-    favorites: favoriteMonsters,
-    toggleFavorite,
-    isFavorite,
-    favoriteCount,
-    clearAll: clearAllMonsters,
-  } = useFavoriteMonsters()
-
-  // 最愛物品管理
-  const {
-    favorites: favoriteItems,
-    toggleFavorite: toggleItemFavorite,
-    isFavorite: isItemFavorite,
-    favoriteCount: favoriteItemCount,
-    clearAll: clearAllItems,
-    reorder: reorderItems,
-  } = useFavoriteItems()
+  // 收藏管理（怪物 + 物品）
+  const favorites = useFavorites()
 
   // 篩選邏輯 Hook - 處理最愛和搜尋過濾
   const {
@@ -165,8 +120,8 @@ export default function Home() {
     shouldShowMonsters,
   } = useFilterLogic({
     filterMode,
-    favoriteMonsters,
-    favoriteItems,
+    favoriteMonsters: favorites.monsters.list,
+    favoriteItems: favorites.items.list,
     allDrops,
     initialRandomDrops,
     debouncedSearchTerm, // 延遲搜尋詞（已 debounce）
@@ -330,11 +285,11 @@ export default function Home() {
   // 清除最愛確認處理
   const handleClearConfirm = useCallback(() => {
     if (modals.clearModalType === 'monsters') {
-      clearAllMonsters()
+      favorites.monsters.clearAll()
     } else {
-      clearAllItems()
+      favorites.items.clearAll()
     }
-  }, [modals.clearModalType, clearAllMonsters, clearAllItems])
+  }, [modals.clearModalType, favorites.monsters, favorites.items])
 
   // 重置進階篩選
   const handleResetAdvancedFilter = useCallback(() => {
@@ -345,73 +300,18 @@ export default function Home() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
-  // 轉蛋模式處理函數
+  // 轉蛋模式處理函數（包裝 usePageModes，加載轉蛋機資料）
   const handleGachaSelect = useCallback((machineId: number | null) => {
-    setIsGachaMode(true)
-    setSelectedGachaMachineId(machineId)
-    // 關閉商人模式（互斥）
-    setIsMerchantMode(false)
-    setSelectedMerchantMapId(null)
-    // 載入轉蛋機資料
+    pageModes.selectGacha(machineId)
     loadGachaMachines()
-    // 滾動到頂部
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }, [loadGachaMachines])
-
-  const handleGachaClose = useCallback(() => {
-    setIsGachaMode(false)
-    setSelectedGachaMachineId(null)
-  }, [])
-
-  // 商人商店模式處理函數
-  const handleMerchantSelect = useCallback((mapId: string | null) => {
-    setIsMerchantMode(true)
-    setSelectedMerchantMapId(mapId)
-    // 關閉轉蛋模式（互斥）
-    setIsGachaMode(false)
-    setSelectedGachaMachineId(null)
-    // 滾動到頂部
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }, [])
-
-  const handleMerchantClose = useCallback(() => {
-    setIsMerchantMode(false)
-    setSelectedMerchantMapId(null)
-  }, [])
-
-  // 交易市場模式切換
-  const handleTradeModeToggle = useCallback(() => {
-    setIsTradeMode(prev => {
-      const newValue = !prev
-      if (newValue) {
-        // 進入交易模式時關閉轉蛋/商人模式（互斥）
-        setIsGachaMode(false)
-        setSelectedGachaMachineId(null)
-        setIsMerchantMode(false)
-        setSelectedMerchantMapId(null)
-        // 滾動到頂部
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-      }
-      return newValue
-    })
-  }, [])
+  }, [pageModes, loadGachaMachines])
 
   // 處理 filterMode 變更（同時關閉轉蛋/商人/交易模式）
   const handleFilterModeChange = useCallback((mode: FilterMode) => {
     setFilterMode(mode)
-    // 點擊 FilterTabs 時自動退出轉蛋模式、商人模式和交易模式
-    if (isGachaMode) {
-      setIsGachaMode(false)
-      setSelectedGachaMachineId(null)
-    }
-    if (isMerchantMode) {
-      setIsMerchantMode(false)
-      setSelectedMerchantMapId(null)
-    }
-    if (isTradeMode) {
-      setIsTradeMode(false)
-    }
-  }, [isGachaMode, isMerchantMode, isTradeMode])
+    // 點擊 FilterTabs 時自動退出所有特殊模式
+    pageModes.closeAllModes()
+  }, [pageModes])
 
 
   // 鍵盤導航處理 - 包裝 search.handleKeyDown 以處理轉蛋建議
@@ -464,73 +364,73 @@ export default function Home() {
           searchContainerRef={search.searchContainerRef}
           filterMode={filterMode}
           onFilterChange={handleFilterModeChange}
-          favoriteMonsterCount={favoriteCount}
-          favoriteItemCount={favoriteItemCount}
+          favoriteMonsterCount={favorites.monsters.count}
+          favoriteItemCount={favorites.items.count}
           isAdvancedFilterExpanded={isAdvancedFilterExpanded}
           onAdvancedFilterToggle={() => setIsAdvancedFilterExpanded(!isAdvancedFilterExpanded)}
           advancedFilterCount={advancedFilterCount}
           onResetAdvancedFilter={handleResetAdvancedFilter}
           advancedFilter={advancedFilter}
           onAdvancedFilterChange={setAdvancedFilter}
-          isGachaMode={isGachaMode}
-          selectedGachaMachineId={selectedGachaMachineId}
+          isGachaMode={pageModes.isGachaMode}
+          selectedGachaMachineId={pageModes.selectedGachaMachineId}
           onGachaSelect={handleGachaSelect}
-          onGachaClose={handleGachaClose}
-          isMerchantMode={isMerchantMode}
-          selectedMerchantMapId={selectedMerchantMapId}
-          onMerchantSelect={handleMerchantSelect}
-          onMerchantClose={handleMerchantClose}
+          onGachaClose={pageModes.closeGacha}
+          isMerchantMode={pageModes.isMerchantMode}
+          selectedMerchantMapId={pageModes.selectedMerchantMapId}
+          onMerchantSelect={pageModes.selectMerchant}
+          onMerchantClose={pageModes.closeMerchant}
           // 交易市場模式
-          isTradeMode={isTradeMode}
-          onTradeModeToggle={handleTradeModeToggle}
-          tradeTypeFilter={tradeTypeFilter}
-          onTradeTypeFilterChange={setTradeTypeFilter}
-          tradeSearchQuery={tradeSearchQuery}
-          onTradeSearchQueryChange={setTradeSearchQuery}
+          isTradeMode={pageModes.isTradeMode}
+          onTradeModeToggle={pageModes.toggleTradeMode}
+          tradeTypeFilter={pageModes.tradeTypeFilter}
+          onTradeTypeFilterChange={pageModes.setTradeTypeFilter}
+          tradeSearchQuery={pageModes.tradeSearchQuery}
+          onTradeSearchQueryChange={pageModes.setTradeSearchQuery}
           // Toolbar callbacks
           onExpTrackerClick={modals.openExpTrackerModal}
           onScreenRecorderClick={modals.openScreenRecorderModal}
           onManualExpRecorderClick={modals.openManualExpRecorderModal}
           onAccuracyCalculatorClick={() => modals.openAccuracyCalculator()}
-          onGameCommandsClick={() => setIsGameCommandsOpen(true)}
-          onPrivacySettingsClick={() => setIsPrivacyModalOpen(true)}
+          onGameCommandsClick={toolModals.openGameCommands}
+          onPrivacySettingsClick={toolModals.openPrivacyModal}
           onBugReportClick={modals.openBugReportModal}
-          onAboutClick={() => setIsAboutModalOpen(true)}
-          onApiTesterClick={() => setIsApiTesterOpen(true)}
-          onGlobalSettingsClick={() => setIsGlobalSettingsOpen(true)}
+          onAboutClick={toolModals.openAboutModal}
+          onApiTesterClick={toolModals.openApiTester}
+          onGlobalSettingsClick={toolModals.openGlobalSettings}
         />
 
         {/* 交易市場區域 - 交易模式時顯示 */}
-        {isTradeMode && (
+        {pageModes.isTradeMode && (
           <TradeSection
             searchItems={searchItems}
-            typeFilter={tradeTypeFilter}
-            searchQuery={tradeSearchQuery}
+            typeFilter={pageModes.tradeTypeFilter}
+            searchQuery={pageModes.tradeSearchQuery}
             itemAttributesMap={itemAttributesMap}
             onRecordView={viewHistory.recordView}
           />
         )}
 
         {/* 轉蛋抽獎區域 - 選擇轉蛋機後顯示（交易模式時隱藏） */}
-        {!isTradeMode && isGachaMode && selectedGachaMachineId !== null && (
+        {!pageModes.isTradeMode && pageModes.isGachaMode && pageModes.selectedGachaMachineId !== null && (
           <GachaDrawSection
-            machineId={selectedGachaMachineId}
+            machineId={pageModes.selectedGachaMachineId}
             gachaMachines={gachaMachines}
-            onClose={handleGachaClose}
+            onClose={pageModes.closeGacha}
             onItemClick={modals.openItemModal}
           />
         )}
 
         {/* 商人商店區域 - 選擇商人地圖後顯示（交易模式時隱藏） */}
-        {!isTradeMode && isMerchantMode && (
+        {!pageModes.isTradeMode && pageModes.isMerchantMode && (
           <MerchantShopSection
-            mapId={selectedMerchantMapId}
-            onClose={handleMerchantClose}
+            mapId={pageModes.selectedMerchantMapId}
+            onClose={pageModes.closeMerchant}
           />
         )}
 
         {/* 內容顯示區域 - 轉蛋模式、商人模式或交易模式時隱藏 */}
-        {!isTradeMode && !(isGachaMode && selectedGachaMachineId !== null) && !isMerchantMode && (
+        {!pageModes.isTradeMode && !(pageModes.isGachaMode && pageModes.selectedGachaMachineId !== null) && !pageModes.isMerchantMode && (
           <ContentDisplay
           isLoading={isLoading}
           filterMode={filterMode}
@@ -539,17 +439,17 @@ export default function Home() {
           mobLevelMap={mobLevelMap}
           mobInGameMap={mobInGameMap}
           onMonsterCardClick={modals.openMonsterModal}
-          onToggleFavorite={toggleFavorite}
-          isFavorite={isFavorite}
+          onToggleFavorite={favorites.monsters.toggle}
+          isFavorite={favorites.monsters.isFavorite}
           onClearMonsters={() => modals.openClearModal('monsters')}
           filteredUniqueItems={filteredUniqueItems}
           itemAttributesMap={itemAttributesMap}
           merchantItemIndex={merchantItemIndex}
           onItemCardClick={modals.openItemModal}
-          onToggleItemFavorite={toggleItemFavorite}
-          isItemFavorite={isItemFavorite}
+          onToggleItemFavorite={favorites.items.toggle}
+          isItemFavorite={favorites.items.isFavorite}
           onClearItems={() => modals.openClearModal('items')}
-          onReorderItems={reorderItems}
+          onReorderItems={favorites.items.reorder}
           mixedCards={mixedCards}
           displayedMonsters={displayedMonsters}
           displayedItems={displayedItems}
@@ -567,7 +467,7 @@ export default function Home() {
         )}
 
         {/* Multiplex 多重廣告 - 列表結束後顯示（交易/轉蛋/商人模式時隱藏） */}
-        {!isTradeMode && !(isGachaMode && selectedGachaMachineId !== null) && !isMerchantMode && (
+        {!pageModes.isTradeMode && !(pageModes.isGachaMode && pageModes.selectedGachaMachineId !== null) && !pageModes.isMerchantMode && (
           <AdSenseMultiplex className="mt-8" />
         )}
       </div>
@@ -602,20 +502,20 @@ export default function Home() {
         gachaMachines={gachaMachines}
         itemAttributesMap={itemAttributesMap}
         merchantItemIndex={merchantItemIndex}
-        isFavorite={isFavorite}
-        toggleFavorite={toggleFavorite}
-        isItemFavorite={isItemFavorite}
-        toggleItemFavorite={toggleItemFavorite}
-        favoriteMonsterCount={favoriteCount}
-        favoriteItemCount={favoriteItemCount}
+        isFavorite={favorites.monsters.isFavorite}
+        toggleFavorite={favorites.monsters.toggle}
+        isItemFavorite={favorites.items.isFavorite}
+        toggleItemFavorite={favorites.items.toggle}
+        favoriteMonsterCount={favorites.monsters.count}
+        favoriteItemCount={favorites.items.count}
         handleItemClickFromMonsterModal={handleItemClickFromMonsterModal}
         handleMonsterClickFromItemModal={handleMonsterClickFromItemModal}
         handleGachaMachineClick={handleGachaMachineClick}
         handleClearConfirm={handleClearConfirm}
-        isAccuracyCalcOpen={isAccuracyCalcOpen}
-        setIsAccuracyCalcOpen={setIsAccuracyCalcOpen}
-        isGameCommandsOpen={isGameCommandsOpen}
-        setIsGameCommandsOpen={setIsGameCommandsOpen}
+        isAccuracyCalcOpen={toolModals.isAccuracyCalcOpen}
+        setIsAccuracyCalcOpen={toolModals.setAccuracyCalcOpen}
+        isGameCommandsOpen={toolModals.isGameCommandsOpen}
+        setIsGameCommandsOpen={toolModals.setGameCommandsOpen}
         isScreenRecorderModalOpen={modals.isScreenRecorderModalOpen}
         openScreenRecorderModal={modals.openScreenRecorderModal}
         closeScreenRecorderModal={modals.closeScreenRecorderModal}
@@ -625,18 +525,18 @@ export default function Home() {
         isExpTrackerModalOpen={modals.isExpTrackerModalOpen}
         openExpTrackerModal={modals.openExpTrackerModal}
         closeExpTrackerModal={modals.closeExpTrackerModal}
-        isPrivacyModalOpen={isPrivacyModalOpen}
-        openPrivacyModal={() => setIsPrivacyModalOpen(true)}
-        closePrivacyModal={() => setIsPrivacyModalOpen(false)}
-        isAboutModalOpen={isAboutModalOpen}
-        openAboutModal={() => setIsAboutModalOpen(true)}
-        closeAboutModal={() => setIsAboutModalOpen(false)}
-        isGlobalSettingsOpen={isGlobalSettingsOpen}
-        openGlobalSettings={() => setIsGlobalSettingsOpen(true)}
-        closeGlobalSettings={() => setIsGlobalSettingsOpen(false)}
-        isApiTesterOpen={isApiTesterOpen}
-        openApiTester={() => setIsApiTesterOpen(true)}
-        closeApiTester={() => setIsApiTesterOpen(false)}
+        isPrivacyModalOpen={toolModals.isPrivacyModalOpen}
+        openPrivacyModal={toolModals.openPrivacyModal}
+        closePrivacyModal={toolModals.closePrivacyModal}
+        isAboutModalOpen={toolModals.isAboutModalOpen}
+        openAboutModal={toolModals.openAboutModal}
+        closeAboutModal={toolModals.closeAboutModal}
+        isGlobalSettingsOpen={toolModals.isGlobalSettingsOpen}
+        openGlobalSettings={toolModals.openGlobalSettings}
+        closeGlobalSettings={toolModals.closeGlobalSettings}
+        isApiTesterOpen={toolModals.isApiTesterOpen}
+        openApiTester={toolModals.openApiTester}
+        closeApiTester={toolModals.closeApiTester}
         showBackToTop={showBackToTop}
         scrollToTop={scrollToTop}
         toastMessage={toast.message}
