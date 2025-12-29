@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { AboutModal } from '@/components/AboutModal'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 // 連結常數
 const KOFI_URL = 'https://ko-fi.com/U7U21O9JVQ'
@@ -15,6 +16,7 @@ const KofiIcon = ({ className = 'w-5 h-5' }: { className?: string }) => (
 )
 
 export default function Footer() {
+  const { t } = useLanguage()
   const [isAboutOpen, setIsAboutOpen] = useState(false)
   const coffeeChatUrl = 'https://ko-fi.com/chronostory'
 
@@ -32,7 +34,7 @@ export default function Footer() {
           >
             <KofiIcon className="w-4 h-4" />
             <span className="text-sm hidden sm:inline">Ko-fi (Boutei. & Vaft)</span>
-            <span className="text-sm sm:hidden">遊戲作者</span>
+            <span className="text-sm sm:hidden">{t('footer.gameAuthor')}</span>
           </Link>
           <span className="text-slate-500 dark:text-slate-600">|</span>
           <Link
@@ -40,12 +42,12 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#FF5E5B] hover:text-[#ff7572] transition-colors inline-flex items-center gap-1"
-            aria-label="Ko-fi - 贊助網站作者"
-            title="Ko-fi - 贊助網站作者"
+            aria-label={t('footer.siteAuthorAria')}
+            title={t('footer.siteAuthorAria')}
           >
             <KofiIcon className="w-4 h-4" />
-            <span className="text-sm hidden sm:inline">Ko-fi (網站作者)</span>
-            <span className="text-sm sm:hidden">網站作者</span>
+            <span className="text-sm hidden sm:inline">{t('footer.siteAuthorFull')}</span>
+            <span className="text-sm sm:hidden">{t('footer.siteAuthor')}</span>
           </Link>
           <span className="text-slate-500 dark:text-slate-600">|</span>
           <span className="inline-flex items-center gap-1">
@@ -64,8 +66,8 @@ export default function Footer() {
             onClick={() => setIsAboutOpen(true)}
             className="text-emerald-400 hover:text-emerald-300 dark:text-emerald-500 dark:hover:text-emerald-400 transition-colors font-medium"
           >
-            <span className="hidden sm:inline">關於本站</span>
-            <span className="sm:hidden">關於</span>
+            <span className="hidden sm:inline">{t('footer.aboutSite')}</span>
+            <span className="sm:hidden">{t('footer.aboutShort')}</span>
           </button>
         </div>
       </div>
