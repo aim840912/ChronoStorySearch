@@ -387,6 +387,7 @@ export default function Home() {
           onTradeTypeFilterChange={pageModes.setTradeTypeFilter}
           tradeSearchQuery={pageModes.tradeSearchQuery}
           onTradeSearchQueryChange={pageModes.setTradeSearchQuery}
+          searchItems={searchItems}
           // Toolbar callbacks
           onExpTrackerClick={modals.openExpTrackerModal}
           onScreenRecorderClick={modals.openScreenRecorderModal}

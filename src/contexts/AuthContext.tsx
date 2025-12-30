@@ -169,7 +169,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, [authEnabled])
 
-  // Discord OAuth 登入
+  // Discord OAuth 登入（使用 popup 模式避免桌面應用程式攔截）
   const signInWithDiscord = useCallback(async () => {
     // 如果認證功能關閉，拋出錯誤
     if (!authEnabled) {
@@ -177,13 +177,28 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
 
     try {
-      const { error } = await supabase.auth.signInWithOAuth({
+      const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'discord',
         options: {
-          redirectTo: `${window.location.origin}/auth/callback`,
+          redirectTo: `${window.location.origin}/auth/callback?popup=true`,
+          skipBrowserRedirect: true, // 不自動重導向，獲取 URL
         },
       })
       if (error) throw error
+
+      if (data.url) {
+        // 在新視窗中打開，避免 Discord 桌面應用程式攔截
+        const width = 500
+        const height = 700
+        const left = window.screenX + (window.outerWidth - width) / 2
+        const top = window.screenY + (window.outerHeight - height) / 2
+
+        window.open(
+          data.url,
+          'discord-oauth',
+          `width=${width},height=${height},left=${left},top=${top},scrollbars=yes`
+        )
+      }
     } catch (error) {
       console.error('Discord sign in error:', error)
       throw error

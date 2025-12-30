@@ -1,7 +1,7 @@
 'use client'
 
-import { memo } from 'react'
-import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode } from '@/types'
+import { memo, useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode, ExtendedUniqueItem } from '@/types'
 import type { TradeType } from '@/types/trade'
 import { SearchBar } from '@/components/SearchBar'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
@@ -14,6 +14,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { useAuth } from '@/contexts/AuthContext'
 import type { ImageFormat } from '@/lib/image-utils'
+import { getItemImageUrl } from '@/lib/image-utils'
 
 interface SearchHeaderProps {
   // 搜尋相關
@@ -65,6 +66,9 @@ interface SearchHeaderProps {
   onTradeTypeFilterChange?: (type: TradeType | 'all') => void
   tradeSearchQuery?: string
   onTradeSearchQueryChange?: (query: string) => void
+
+  // 交易搜尋自動完成
+  searchItems?: (query: string, limit?: number) => ExtendedUniqueItem[]
 
   // 工具列相關
   onExpTrackerClick?: () => void
@@ -124,6 +128,8 @@ export const SearchHeader = memo(function SearchHeader({
   onTradeTypeFilterChange,
   tradeSearchQuery = '',
   onTradeSearchQueryChange,
+  // 交易搜尋自動完成
+  searchItems,
   // 工具列相關
   onExpTrackerClick,
   onScreenRecorderClick,
@@ -136,9 +142,46 @@ export const SearchHeader = memo(function SearchHeader({
   onApiTesterClick,
   onGlobalSettingsClick,
 }: SearchHeaderProps) {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   const { format, toggleFormat } = useImageFormat()
   const { user } = useAuth()
+
+  // 交易搜尋自動完成狀態
+  const [isTradeDropdownOpen, setIsTradeDropdownOpen] = useState(false)
+  const tradeDropdownRef = useRef<HTMLDivElement>(null)
+  const MAX_TRADE_RESULTS = 10
+
+  // 計算搜尋結果
+  const filteredTradeItems = useMemo(() => {
+    if (!tradeSearchQuery?.trim() || !searchItems) return []
+    return searchItems(tradeSearchQuery, MAX_TRADE_RESULTS)
+  }, [tradeSearchQuery, searchItems])
+
+  // 點擊外部關閉下拉選單
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (tradeDropdownRef.current && !tradeDropdownRef.current.contains(event.target as Node)) {
+        setIsTradeDropdownOpen(false)
+      }
+    }
+
+    if (isTradeDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isTradeDropdownOpen])
+
+  // 選擇物品
+  const handleSelectTradeItem = useCallback((item: ExtendedUniqueItem) => {
+    const displayName = language === 'zh-TW'
+      ? item.chineseItemName || item.itemName
+      : item.itemName || item.chineseItemName
+    onTradeSearchQueryChange?.(displayName || '')
+    setIsTradeDropdownOpen(false)
+  }, [language, onTradeSearchQueryChange])
 
   // 圖片格式標籤對應
   const formatLabels: Record<ImageFormat, string> = {
@@ -301,6 +344,21 @@ export const SearchHeader = memo(function SearchHeader({
         </h1>
         {/* 工具列和語言切換 - 大於 460px 時顯示在標題旁 */}
         <div className="hidden min-[460px]:flex gap-1.5 sm:gap-2 flex-shrink-0 items-center">
+          {/* 交易市場切換按鈕 - 僅登入後顯示 */}
+          {user && (
+            <button
+              type="button"
+              onClick={onTradeModeToggle}
+              className={`p-1.5 sm:p-2 text-sm font-medium rounded-lg transition-colors flex items-center ${
+                isTradeMode
+                  ? 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300'
+                  : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
+              }`}
+              title={isTradeMode ? t('trade.backToSearch') : t('trade.title')}
+            >
+              {isTradeMode ? t('search.short') : t('trade.short')}
+            </button>
+          )}
           {/* 工具列下拉選單 + 提示 */}
           <div className="relative">
             <ToolbarDropdown
@@ -324,21 +382,6 @@ export const SearchHeader = memo(function SearchHeader({
               message={t('tip.manualExpRecorder')}
             />
           </div>
-          {/* 交易市場切換按鈕 - 僅登入後顯示 */}
-          {user && (
-            <button
-              type="button"
-              onClick={onTradeModeToggle}
-              className={`p-1.5 sm:p-2 text-sm font-medium rounded-lg transition-colors flex items-center ${
-                isTradeMode
-                  ? 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300'
-                  : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
-              }`}
-              title={isTradeMode ? t('trade.backToSearch') : t('trade.title')}
-            >
-              {isTradeMode ? t('search.short') : t('trade.short')}
-            </button>
-          )}
           {/* 光暗模式切換 + 提示 */}
           <div className="relative">
             <ThemeToggle />
@@ -365,6 +408,21 @@ export const SearchHeader = memo(function SearchHeader({
       {/* 工具列和語言切換 - 小於 460px 時顯示在搜尋欄上方 */}
       <div className="flex min-[460px]:hidden px-2 mb-1 max-w-7xl mx-auto">
         <div className={`grid ${user ? 'grid-cols-5' : 'grid-cols-4'} gap-1 w-full [&>button]:w-full [&>button]:justify-center [&>div]:w-full [&>div>button]:w-full [&>div>button]:justify-center`}>
+          {/* 交易市場切換按鈕 - 僅登入後顯示 */}
+          {user && (
+            <button
+              type="button"
+              onClick={onTradeModeToggle}
+              className={`flex items-center justify-center h-[30px] sm:h-auto p-1.5 sm:p-2 text-sm font-medium rounded-lg transition-colors ${
+                isTradeMode
+                  ? 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300'
+                  : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400'
+              }`}
+              title={isTradeMode ? t('trade.backToSearch') : t('trade.title')}
+            >
+              {isTradeMode ? t('search.short') : t('trade.short')}
+            </button>
+          )}
           {/* 工具列下拉選單 + 提示 */}
           <div className="relative">
             <ToolbarDropdown
@@ -388,21 +446,6 @@ export const SearchHeader = memo(function SearchHeader({
               message={t('tip.manualExpRecorder')}
             />
           </div>
-          {/* 交易市場切換按鈕 - 僅登入後顯示 */}
-          {user && (
-            <button
-              type="button"
-              onClick={onTradeModeToggle}
-              className={`flex items-center justify-center h-[30px] sm:h-auto p-1.5 sm:p-2 text-sm font-medium rounded-lg transition-colors ${
-                isTradeMode
-                  ? 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300'
-                  : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400'
-              }`}
-              title={isTradeMode ? t('trade.backToSearch') : t('trade.title')}
-            >
-              {isTradeMode ? t('search.short') : t('trade.short')}
-            </button>
-          )}
           {/* 光暗模式切換 + 提示 */}
           <div className="relative">
             <ThemeToggle />
@@ -455,11 +498,15 @@ export const SearchHeader = memo(function SearchHeader({
             </div>
 
             {/* 物品搜尋 */}
-            <div className="relative flex-1">
+            <div className="relative flex-1" ref={tradeDropdownRef}>
               <input
                 type="text"
                 value={tradeSearchQuery}
-                onChange={(e) => onTradeSearchQueryChange?.(e.target.value)}
+                onChange={(e) => {
+                  onTradeSearchQueryChange?.(e.target.value)
+                  setIsTradeDropdownOpen(true)
+                }}
+                onFocus={() => setIsTradeDropdownOpen(true)}
                 placeholder={t('trade.searchPlaceholder')}
                 className="w-full px-4 py-2 pl-10 text-sm rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
@@ -486,6 +533,33 @@ export const SearchHeader = memo(function SearchHeader({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </button>
+              )}
+
+              {/* 自動完成下拉選單 */}
+              {isTradeDropdownOpen && filteredTradeItems.length > 0 && (
+                <div className="absolute w-full mt-1 max-h-48 overflow-y-auto bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg shadow-lg z-20">
+                  {filteredTradeItems.map((item) => {
+                    const displayName = language === 'zh-TW'
+                      ? item.chineseItemName || item.itemName
+                      : item.itemName || item.chineseItemName
+
+                    return (
+                      <button
+                        key={item.itemId}
+                        type="button"
+                        onClick={() => handleSelectTradeItem(item)}
+                        className="w-full text-left px-3 py-2 text-sm hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors flex items-center gap-2"
+                      >
+                        <img
+                          src={getItemImageUrl(item.itemId, { itemName: item.itemName })}
+                          alt=""
+                          className="w-6 h-6 object-contain flex-shrink-0"
+                        />
+                        <span className="text-gray-900 dark:text-white">{displayName}</span>
+                      </button>
+                    )
+                  })}
+                </div>
               )}
             </div>
           </div>
