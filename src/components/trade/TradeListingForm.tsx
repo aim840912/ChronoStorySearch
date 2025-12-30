@@ -5,6 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { useAuth } from '@/contexts/AuthContext'
 import { tradeService } from '@/lib/supabase/trade-service'
 import { useToast } from '@/hooks/useToast'
+import { getItemImageUrl } from '@/lib/image-utils'
 import type { TradeType, TradeListing, CreateTradeListingInput, EquipmentStats, CustomStat } from '@/types/trade'
 import type { ExtendedUniqueItem, ItemAttributesEssential } from '@/types'
 
@@ -361,6 +362,11 @@ export const TradeListingForm = memo(function TradeListingForm({
                       onClick={() => handleSelectItem(item)}
                       className="w-full text-left px-3 py-2 text-sm hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors flex items-center gap-2"
                     >
+                      <img
+                        src={getItemImageUrl(item.itemId, { itemName: item.itemName })}
+                        alt=""
+                        className="w-6 h-6 object-contain flex-shrink-0"
+                      />
                       <span className="text-gray-900 dark:text-white">{displayName}</span>
                     </button>
                   )
@@ -368,6 +374,20 @@ export const TradeListingForm = memo(function TradeListingForm({
               </div>
             )}
           </div>
+
+          {/* 已選擇物品的預覽 */}
+          {selectedItemId && (
+            <div className="mt-3 flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+              <img
+                src={getItemImageUrl(selectedItemId, { itemName })}
+                alt={itemName}
+                className="w-12 h-12 object-contain"
+              />
+              <span className="text-sm font-medium text-gray-900 dark:text-white">
+                {itemName}
+              </span>
+            </div>
+          )}
         </div>
       )}
 

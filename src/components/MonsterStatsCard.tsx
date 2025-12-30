@@ -268,8 +268,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
           prerequisiteTipId="monster-stats-settings"
           message={t('tip.monsterStatsDrag')}
         />
-      </div>
-      {viewMode === 'grid' ? (
+        {viewMode === 'grid' ? (
         /* 網格視圖 */
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {sortedStatConfig.map(({ dataKey, translationKey, color }) => {
@@ -374,6 +373,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
           })}
         </div>
       )}
+      </div>
 
       {/* 屬性弱點 - 顯示 weakness === 3 (新 API 格式) */}
       {(stats.fire_weakness === 3 ||

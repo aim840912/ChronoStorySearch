@@ -77,7 +77,12 @@ export function TradeSection({ searchItems, typeFilter, searchQuery, itemAttribu
         setListings(result.data)
         setOffset(ITEMS_PER_PAGE)
       } else {
-        setListings(prev => [...prev, ...result.data])
+        // 合併時去重，避免分頁載入過程中產生重複項目
+        setListings(prev => {
+          const existingIds = new Set(prev.map(l => l.id))
+          const newItems = result.data.filter(l => !existingIds.has(l.id))
+          return [...prev, ...newItems]
+        })
         setOffset(newOffset + ITEMS_PER_PAGE)
       }
 
@@ -173,23 +178,36 @@ export function TradeSection({ searchItems, typeFilter, searchQuery, itemAttribu
   return (
     <div className="w-full">
       {/* 標籤列 */}
-      <div className="flex border-b border-gray-200 dark:border-gray-700 mb-4 overflow-x-auto">
-        {tabs.map((tab) => (
+      <div className="flex items-center border-b border-gray-200 dark:border-gray-700 mb-4">
+        <div className="flex overflow-x-auto flex-1">
+          {tabs.map((tab) => (
+            <button
+              key={tab.key}
+              type="button"
+              onClick={() => handleTabChange(tab.key)}
+              className={`min-w-fit px-4 py-2.5 text-sm font-medium whitespace-nowrap transition-colors ${
+                activeTab === tab.key
+                  ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
+                  : tab.requiresAuth && !user
+                  ? 'text-gray-400 dark:text-gray-600'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+        {/* 刷新按鈕 - 只在列表頁顯示 */}
+        {activeTab !== 'create' && (
           <button
-            key={tab.key}
             type="button"
-            onClick={() => handleTabChange(tab.key)}
-            className={`min-w-fit px-4 py-2.5 text-sm font-medium whitespace-nowrap transition-colors ${
-              activeTab === tab.key
-                ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
-                : tab.requiresAuth && !user
-                ? 'text-gray-400 dark:text-gray-600'
-                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
-            }`}
+            onClick={() => loadListings(true)}
+            disabled={isLoading}
+            className="ml-2 px-3 py-1.5 text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors disabled:opacity-50 whitespace-nowrap"
           >
-            {tab.label}
+            {isLoading ? t('common.loading') : t('trade.refresh')}
           </button>
-        ))}
+        )}
       </div>
 
       {/* 內容區 */}

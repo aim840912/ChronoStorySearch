@@ -1,7 +1,9 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import type { TradeType } from '@/types/trade'
+
+const TRADE_MODE_KEY = 'chronostory-trade-mode'
 
 /**
  * 頁面模式狀態管理 Hook
@@ -60,6 +62,14 @@ export function usePageModes(): UsePageModesReturn {
   const [isTradeMode, setIsTradeMode] = useState(false)
   const [tradeTypeFilter, setTradeTypeFilter] = useState<TradeType | 'all'>('all')
   const [tradeSearchQuery, setTradeSearchQuery] = useState('')
+
+  // 從 localStorage 讀取交易模式初始狀態（避免 SSR hydration 不匹配）
+  useEffect(() => {
+    const saved = localStorage.getItem(TRADE_MODE_KEY)
+    if (saved === 'true') {
+      setIsTradeMode(true)
+    }
+  }, [])
 
   /**
    * 關閉所有模式（內部使用）
@@ -123,10 +133,13 @@ export function usePageModes(): UsePageModesReturn {
   /**
    * 切換交易模式
    * 進入時會關閉其他模式（互斥）
+   * 同步狀態到 localStorage
    */
   const toggleTradeMode = useCallback(() => {
     setIsTradeMode(prev => {
       const newValue = !prev
+      // 同步到 localStorage
+      localStorage.setItem(TRADE_MODE_KEY, String(newValue))
       if (newValue) {
         // 進入交易模式時關閉其他模式
         setIsGachaMode(false)
