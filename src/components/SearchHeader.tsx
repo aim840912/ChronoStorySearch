@@ -2,7 +2,7 @@
 
 import { memo, useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode, ExtendedUniqueItem } from '@/types'
-import type { TradeType } from '@/types/trade'
+import type { TradeType, EquipmentStatsFilter } from '@/types/trade'
 import { SearchBar } from '@/components/SearchBar'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
 import { LanguageToggle } from '@/components/LanguageToggle'
@@ -66,6 +66,9 @@ interface SearchHeaderProps {
   onTradeTypeFilterChange?: (type: TradeType | 'all') => void
   tradeSearchQuery?: string
   onTradeSearchQueryChange?: (query: string) => void
+  tradeStatsFilter?: EquipmentStatsFilter
+  onTradeStatsFilterChange?: (filter: EquipmentStatsFilter) => void
+  onTradeStatsFilterReset?: () => void
 
   // 交易搜尋自動完成
   searchItems?: (query: string, limit?: number) => ExtendedUniqueItem[]
@@ -128,6 +131,9 @@ export const SearchHeader = memo(function SearchHeader({
   onTradeTypeFilterChange,
   tradeSearchQuery = '',
   onTradeSearchQueryChange,
+  tradeStatsFilter = {},
+  onTradeStatsFilterChange,
+  onTradeStatsFilterReset,
   // 交易搜尋自動完成
   searchItems,
   // 工具列相關
@@ -150,6 +156,40 @@ export const SearchHeader = memo(function SearchHeader({
   const [isTradeDropdownOpen, setIsTradeDropdownOpen] = useState(false)
   const tradeDropdownRef = useRef<HTMLDivElement>(null)
   const MAX_TRADE_RESULTS = 10
+  const isZh = language === 'zh-TW'
+
+  // 素質篩選展開狀態
+  const [isStatsFilterExpanded, setIsStatsFilterExpanded] = useState(false)
+  const statsFilterCount = Object.values(tradeStatsFilter).filter(v => v !== undefined && v !== null).length
+
+  // 素質欄位配置
+  const STAT_FIELDS: Array<{ key: keyof EquipmentStatsFilter; labelZh: string; labelEn: string }> = [
+    { key: 'str', labelZh: '力量', labelEn: 'STR' },
+    { key: 'dex', labelZh: '敏捷', labelEn: 'DEX' },
+    { key: 'int', labelZh: '智力', labelEn: 'INT' },
+    { key: 'luk', labelZh: '幸運', labelEn: 'LUK' },
+    { key: 'attack', labelZh: '攻擊', labelEn: 'ATK' },
+    { key: 'magic', labelZh: '魔攻', labelEn: 'MAG' },
+    { key: 'pDef', labelZh: '物防', labelEn: 'PDD' },
+    { key: 'mDef', labelZh: '魔防', labelEn: 'MDD' },
+    { key: 'hp', labelZh: 'HP', labelEn: 'HP' },
+    { key: 'mp', labelZh: 'MP', labelEn: 'MP' },
+    { key: 'accuracy', labelZh: '命中', labelEn: 'ACC' },
+    { key: 'avoid', labelZh: '迴避', labelEn: 'EVA' },
+    { key: 'speed', labelZh: '速度', labelEn: 'SPD' },
+    { key: 'jump', labelZh: '跳躍', labelEn: 'JMP' },
+    { key: 'slots', labelZh: '卷數', labelEn: 'Slots' },
+  ]
+
+  // 更新單個素質篩選
+  const handleStatChange = useCallback((key: keyof EquipmentStatsFilter, value: string) => {
+    const numValue = value === '' ? undefined : parseInt(value, 10)
+    if (value !== '' && isNaN(numValue!)) return
+    onTradeStatsFilterChange?.({
+      ...tradeStatsFilter,
+      [key]: numValue,
+    })
+  }, [tradeStatsFilter, onTradeStatsFilterChange])
 
   // 計算搜尋結果
   const filteredTradeItems = useMemo(() => {
@@ -497,8 +537,9 @@ export const SearchHeader = memo(function SearchHeader({
               ))}
             </div>
 
-            {/* 物品搜尋 */}
-            <div className="relative flex-1" ref={tradeDropdownRef}>
+            {/* 物品搜尋 + 素質篩選按鈕 */}
+            <div className="flex gap-2 flex-1">
+              <div className="relative flex-1" ref={tradeDropdownRef}>
               <input
                 type="text"
                 value={tradeSearchQuery}
@@ -561,8 +602,69 @@ export const SearchHeader = memo(function SearchHeader({
                   })}
                 </div>
               )}
+              </div>
+
+              {/* 素質篩選按鈕 */}
+              <button
+                type="button"
+                onClick={() => setIsStatsFilterExpanded(!isStatsFilterExpanded)}
+                className={`flex items-center gap-1.5 px-3 py-2 text-sm font-medium rounded-lg transition-colors whitespace-nowrap ${
+                  isStatsFilterExpanded || statsFilterCount > 0
+                    ? 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300'
+                    : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
+                }`}
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+                </svg>
+                {isZh ? '素質' : 'Stats'}
+                {statsFilterCount > 0 && (
+                  <span className="flex items-center justify-center w-5 h-5 text-xs font-bold bg-blue-600 text-white rounded-full">
+                    {statsFilterCount}
+                  </span>
+                )}
+              </button>
             </div>
           </div>
+
+          {/* 素質篩選展開面板 */}
+          {isStatsFilterExpanded && (
+            <div className="px-2 sm:px-4 max-w-7xl mx-auto mt-3">
+              <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                    {isZh ? '素質篩選（最小值）' : 'Stats Filter (Min)'}
+                  </span>
+                  {statsFilterCount > 0 && (
+                    <button
+                      type="button"
+                      onClick={() => onTradeStatsFilterReset?.()}
+                      className="text-xs text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400"
+                    >
+                      {isZh ? '重置' : 'Reset'}
+                    </button>
+                  )}
+                </div>
+                <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
+                  {STAT_FIELDS.map((field) => (
+                    <div key={field.key} className="flex flex-col">
+                      <label className="text-xs text-gray-500 dark:text-gray-400 mb-1">
+                        {isZh ? field.labelZh : field.labelEn}
+                      </label>
+                      <input
+                        type="number"
+                        min="0"
+                        value={tradeStatsFilter[field.key] ?? ''}
+                        onChange={(e) => handleStatChange(field.key, e.target.value)}
+                        placeholder={isZh ? '最小' : 'Min'}
+                        className="w-full px-2 py-1.5 text-sm rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       ) : (
         <>

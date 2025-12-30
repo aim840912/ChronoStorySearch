@@ -74,15 +74,21 @@ export const TradeListingForm = memo(function TradeListingForm({
 
   const isEditing = !!editingListing
 
-  // 載入 Discord 用戶名
+  // 載入 Discord 用戶名和角色名稱
   useEffect(() => {
-    const loadDiscordUsername = async () => {
-      const username = await tradeService.getDiscordUsername()
+    const loadUserDefaults = async () => {
+      const [username, charName] = await Promise.all([
+        tradeService.getDiscordUsername(),
+        tradeService.getLastCharacterName(),
+      ])
       if (username && !discordUsername) {
         setDiscordUsername(username)
       }
+      if (charName && !characterName) {
+        setCharacterName(charName)
+      }
     }
-    loadDiscordUsername()
+    loadUserDefaults()
   }, [])
 
   // 編輯模式：載入現有資料
@@ -174,8 +180,18 @@ export const TradeListingForm = memo(function TradeListingForm({
   }
 
   const handlePriceChange = (value: string) => {
-    const cleaned = value.replace(/[^\d,]/g, '')
-    setPrice(cleaned)
+    // 移除所有非數字字元
+    const digitsOnly = value.replace(/\D/g, '')
+
+    // 空值時清空
+    if (!digitsOnly) {
+      setPrice('')
+      return
+    }
+
+    // 轉換為數字再格式化為千分位
+    const number = parseInt(digitsOnly, 10)
+    setPrice(number.toLocaleString())
   }
 
   const handleSelectItem = useCallback((item: ExtendedUniqueItem) => {
@@ -211,7 +227,7 @@ export const TradeListingForm = memo(function TradeListingForm({
       return
     }
 
-    if (!discordUsername.trim() || !characterName.trim()) {
+    if (!discordUsername.trim()) {
       showToast(t('trade.contactRequired'), 'error')
       return
     }
@@ -242,7 +258,7 @@ export const TradeListingForm = memo(function TradeListingForm({
           quantity: quantityNum,
           price: priceNum,
           discordUsername: discordUsername.trim(),
-          characterName: characterName.trim(),
+          characterName: characterName.trim() || undefined,
           note: note.trim() || undefined,
           equipmentStats: isEquipment && (Object.keys(equipmentStats).length > 0 || customStats.length > 0)
             ? {
@@ -277,7 +293,7 @@ export const TradeListingForm = memo(function TradeListingForm({
 
   const isDisabled = !selectedItemId || !itemName.trim() ||
     parseInt(quantity, 10) <= 0 || parseNumberInput(price) <= 0 ||
-    !discordUsername.trim() || !characterName.trim() || isSubmitting
+    !discordUsername.trim() || isSubmitting
 
   return (
     <div className="space-y-4">

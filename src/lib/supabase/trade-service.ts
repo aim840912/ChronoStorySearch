@@ -3,12 +3,9 @@ import type {
   TradeListing,
   TradeListingWithFavorite,
   TradeListingRow,
-  TradeReportRow,
   CreateTradeListingInput,
   UpdateTradeListingInput,
   TradeListingFilters,
-  CreateReportInput,
-  TradeReport,
 } from '@/types/trade'
 
 /**
@@ -31,22 +28,6 @@ function rowToListing(row: TradeListingRow): TradeListing {
     createdAt: row.created_at,
     updatedAt: row.updated_at,
     expiresAt: row.expires_at,
-  }
-}
-
-/**
- * 將資料庫 row 轉換為 TradeReport
- */
-function rowToReport(row: TradeReportRow): TradeReport {
-  return {
-    id: row.id,
-    reporterId: row.reporter_id,
-    listingId: row.listing_id,
-    reason: row.reason,
-    description: row.description ?? undefined,
-    status: row.status,
-    createdAt: row.created_at,
-    reviewedAt: row.reviewed_at ?? undefined,
   }
 }
 
@@ -392,61 +373,6 @@ export const tradeService = {
   },
 
   // ============================================
-  // 檢舉功能
-  // ============================================
-
-  /**
-   * 檢舉刊登
-   */
-  async reportListing(input: CreateReportInput): Promise<TradeReport | null> {
-    const { data: { user } } = await supabase.auth.getUser()
-    if (!user) {
-      console.error('檢舉失敗: 未登入')
-      return null
-    }
-
-    const { data, error } = await supabase
-      .from('trade_reports')
-      .insert({
-        reporter_id: user.id,
-        listing_id: input.listingId,
-        reason: input.reason,
-        description: input.description,
-      })
-      .select()
-      .single()
-
-    if (error) {
-      // 23505: unique_violation - 已經檢舉過
-      if (error.code === '23505') {
-        console.error('檢舉失敗: 你已經檢舉過此刊登')
-        return null
-      }
-      console.error('檢舉失敗:', error)
-      return null
-    }
-
-    return rowToReport(data as TradeReportRow)
-  },
-
-  /**
-   * 檢查是否已檢舉過
-   */
-  async hasReported(listingId: string): Promise<boolean> {
-    const { data: { user } } = await supabase.auth.getUser()
-    if (!user) return false
-
-    const { data } = await supabase
-      .from('trade_reports')
-      .select('id')
-      .eq('reporter_id', user.id)
-      .eq('listing_id', listingId)
-      .single()
-
-    return !!data
-  },
-
-  // ============================================
   // 用戶相關
   // ============================================
 
@@ -480,5 +406,13 @@ export const tradeService = {
     // Discord OAuth 會將用戶名存在 user_metadata
     const metadata = user.user_metadata
     return metadata?.full_name || metadata?.name || metadata?.preferred_username || null
+  },
+
+  /**
+   * 取得最近使用的角色名稱（從最近一筆刊登）
+   */
+  async getLastCharacterName(): Promise<string | null> {
+    const { data } = await this.getMyListings(1, 0)
+    return data[0]?.characterName ?? null
   },
 }
