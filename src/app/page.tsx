@@ -387,6 +387,9 @@ export default function Home() {
           onTradeTypeFilterChange={pageModes.setTradeTypeFilter}
           tradeSearchQuery={pageModes.tradeSearchQuery}
           onTradeSearchQueryChange={pageModes.setTradeSearchQuery}
+          tradeStatsFilter={pageModes.tradeStatsFilter}
+          onTradeStatsFilterChange={pageModes.setTradeStatsFilter}
+          onTradeStatsFilterReset={pageModes.resetTradeStatsFilter}
           searchItems={searchItems}
           // Toolbar callbacks
           onExpTrackerClick={modals.openExpTrackerModal}
@@ -407,6 +410,7 @@ export default function Home() {
             searchItems={searchItems}
             typeFilter={pageModes.tradeTypeFilter}
             searchQuery={pageModes.tradeSearchQuery}
+            statsFilter={pageModes.tradeStatsFilter}
             itemAttributesMap={itemAttributesMap}
             onRecordView={viewHistory.recordView}
           />

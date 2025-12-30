@@ -1,13 +1,15 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useMemo } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useAuth } from '@/contexts/AuthContext'
 import { useToast } from '@/hooks/useToast'
+import { useBlacklist } from '@/hooks/useBlacklist'
 import { tradeService } from '@/lib/supabase/trade-service'
 import { TradeListingList } from './TradeListingList'
 import { TradeListingForm } from './TradeListingForm'
-import type { TradeType, TradeListingWithFavorite, TradeListing } from '@/types/trade'
+import { BlacklistModal } from './BlacklistModal'
+import type { TradeType, TradeListingWithFavorite, TradeListing, EquipmentStatsFilter, EquipmentStats } from '@/types/trade'
 import type { ExtendedUniqueItem, ItemAttributesEssential } from '@/types'
 
 type TabType = 'browse' | 'favorites' | 'my' | 'create'
@@ -17,10 +19,38 @@ interface TradeSectionProps {
   // 篩選狀態（由 Header 控制）
   typeFilter: TradeType | 'all'
   searchQuery: string
+  statsFilter?: EquipmentStatsFilter
   // 物品屬性（用於判斷裝備類型及取得基本素質）
   itemAttributesMap: Map<number, ItemAttributesEssential>
   // 瀏覽歷史記錄（選擇物品時記錄）
   onRecordView?: (type: 'monster' | 'item', id: number, name: string) => void
+}
+
+/**
+ * 檢查裝備素質是否符合篩選條件
+ * 每個啟用的篩選條件都要求 >= 該最小值
+ */
+function matchesStatsFilter(
+  equipmentStats: EquipmentStats | undefined,
+  filter: EquipmentStatsFilter
+): boolean {
+  // 沒有篩選條件時，所有項目都符合
+  const filterKeys = Object.keys(filter) as Array<keyof EquipmentStatsFilter>
+  const activeFilters = filterKeys.filter(key => filter[key] !== undefined && filter[key] !== null)
+
+  if (activeFilters.length === 0) return true
+
+  // 有篩選條件但沒有裝備素質時，不符合
+  if (!equipmentStats) return false
+
+  // 檢查每個篩選條件
+  return activeFilters.every(key => {
+    const minValue = filter[key]!
+    const actualValue = equipmentStats[key as keyof EquipmentStats]
+    // 如果該素質不存在或小於最小值，則不符合
+    if (actualValue === undefined || actualValue === null) return false
+    return (actualValue as number) >= minValue
+  })
 }
 
 const ITEMS_PER_PAGE = 20
@@ -29,16 +59,32 @@ const ITEMS_PER_PAGE = 20
  * 交易市場區塊（全頁面版本）
  * 包含四個標籤：瀏覽全部、我的收藏、我的刊登、發布新刊登
  */
-export function TradeSection({ searchItems, typeFilter, searchQuery, itemAttributesMap, onRecordView }: TradeSectionProps) {
-  const { t } = useLanguage()
+export function TradeSection({ searchItems, typeFilter, searchQuery, statsFilter = {}, itemAttributesMap, onRecordView }: TradeSectionProps) {
+  const { t, language } = useLanguage()
   const { user } = useAuth()
   const { showToast } = useToast()
+  const { entries: blacklistEntries, isBlocked, addToBlacklist, removeFromBlacklist } = useBlacklist()
+  const isZh = language === 'zh-TW'
 
   // 標籤狀態
   const [activeTab, setActiveTab] = useState<TabType>('browse')
+  // 黑名單 Modal 狀態
+  const [isBlacklistModalOpen, setIsBlacklistModalOpen] = useState(false)
 
-  // 列表狀態
+  // 列表狀態（原始資料，未經素質過濾）
   const [listings, setListings] = useState<TradeListingWithFavorite[]>([])
+
+  // 套用素質篩選與黑名單過濾後的列表
+  const filteredListings = useMemo(() => {
+    return listings.filter(listing => {
+      // 過濾黑名單用戶（瀏覽和收藏模式下生效，我的刊登不過濾）
+      if (activeTab !== 'my' && isBlocked(listing.discordUsername)) {
+        return false
+      }
+      // 過濾素質
+      return matchesStatsFilter(listing.equipmentStats, statsFilter)
+    })
+  }, [listings, statsFilter, activeTab, isBlocked])
   const [isLoading, setIsLoading] = useState(false)
   const [hasMore, setHasMore] = useState(true)
   const [offset, setOffset] = useState(0)
@@ -112,6 +158,7 @@ export function TradeSection({ searchItems, typeFilter, searchQuery, itemAttribu
     setEditingListing(null)
     setOffset(0)
     setHasMore(true)
+    setListings([])  // 立即清除舊資料，避免切換時顯示前一個標籤的內容
   }, [user, showToast, t])
 
   // 處理編輯
@@ -152,6 +199,16 @@ export function TradeSection({ searchItems, typeFilter, searchQuery, itemAttribu
       )
     )
   }, [])
+
+  // 處理加入黑名單
+  const handleAddToBlacklist = useCallback(async (discordUsername: string) => {
+    const success = await addToBlacklist(discordUsername)
+    if (success) {
+      showToast(isZh ? '已加入黑名單' : 'Added to blacklist', 'success')
+    } else {
+      showToast(isZh ? '操作失敗' : 'Failed', 'error')
+    }
+  }, [addToBlacklist, showToast, isZh])
 
   // 處理表單儲存
   const handleFormSave = useCallback(() => {
@@ -197,16 +254,31 @@ export function TradeSection({ searchItems, typeFilter, searchQuery, itemAttribu
             </button>
           ))}
         </div>
-        {/* 刷新按鈕 - 只在列表頁顯示 */}
+        {/* 刷新按鈕 + 黑名單按鈕 - 只在列表頁顯示 */}
         {activeTab !== 'create' && (
-          <button
-            type="button"
-            onClick={() => loadListings(true)}
-            disabled={isLoading}
-            className="ml-2 px-3 py-1.5 text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors disabled:opacity-50 whitespace-nowrap"
-          >
-            {isLoading ? t('common.loading') : t('trade.refresh')}
-          </button>
+          <div className="flex items-center gap-1">
+            <button
+              type="button"
+              onClick={() => loadListings(true)}
+              disabled={isLoading}
+              className="px-3 py-1.5 text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors disabled:opacity-50 whitespace-nowrap"
+            >
+              {isLoading ? t('common.loading') : t('trade.refresh')}
+            </button>
+            {/* 黑名單按鈕 - 只在登入時顯示 */}
+            {user && (
+              <button
+                type="button"
+                onClick={() => setIsBlacklistModalOpen(true)}
+                className="px-3 py-1.5 text-sm text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors whitespace-nowrap"
+              >
+                {isZh ? '黑名單' : 'Blacklist'}
+                {blacklistEntries.length > 0 && (
+                  <span className="ml-1 text-xs">({blacklistEntries.length})</span>
+                )}
+              </button>
+            )}
+          </div>
         )}
       </div>
 
@@ -225,7 +297,7 @@ export function TradeSection({ searchItems, typeFilter, searchQuery, itemAttribu
         ) : (
           // 列表區
           <TradeListingList
-              listings={listings}
+              listings={filteredListings}
               isLoading={isLoading}
               hasMore={hasMore}
               onLoadMore={() => loadListings(false)}
@@ -233,6 +305,7 @@ export function TradeSection({ searchItems, typeFilter, searchQuery, itemAttribu
               onDelete={handleDelete}
               onMarkComplete={handleMarkComplete}
               onFavoriteToggle={handleFavoriteToggle}
+              onAddToBlacklist={handleAddToBlacklist}
               emptyMessage={
                 activeTab === 'favorites'
                   ? t('trade.noFavorites')
@@ -243,6 +316,14 @@ export function TradeSection({ searchItems, typeFilter, searchQuery, itemAttribu
             />
         )}
       </div>
+
+      {/* 黑名單 Modal */}
+      <BlacklistModal
+        isOpen={isBlacklistModalOpen}
+        onClose={() => setIsBlacklistModalOpen(false)}
+        entries={blacklistEntries}
+        onRemove={removeFromBlacklist}
+      />
     </div>
   )
 }

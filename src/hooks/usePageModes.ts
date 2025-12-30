@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useCallback, useEffect } from 'react'
-import type { TradeType } from '@/types/trade'
+import type { TradeType, EquipmentStatsFilter } from '@/types/trade'
 
 const TRADE_MODE_KEY = 'chronostory-trade-mode'
 
@@ -26,6 +26,7 @@ export interface PageModesState {
   isTradeMode: boolean
   tradeTypeFilter: TradeType | 'all'
   tradeSearchQuery: string
+  tradeStatsFilter: EquipmentStatsFilter
 }
 
 export interface PageModesActions {
@@ -39,6 +40,8 @@ export interface PageModesActions {
   toggleTradeMode: () => void
   setTradeTypeFilter: (filter: TradeType | 'all') => void
   setTradeSearchQuery: (query: string) => void
+  setTradeStatsFilter: (filter: EquipmentStatsFilter) => void
+  resetTradeStatsFilter: () => void
   // 通用
   closeAllModes: () => void
 }
@@ -62,6 +65,14 @@ export function usePageModes(): UsePageModesReturn {
   const [isTradeMode, setIsTradeMode] = useState(false)
   const [tradeTypeFilter, setTradeTypeFilter] = useState<TradeType | 'all'>('all')
   const [tradeSearchQuery, setTradeSearchQuery] = useState('')
+  const [tradeStatsFilter, setTradeStatsFilter] = useState<EquipmentStatsFilter>({})
+
+  /**
+   * 重置素質篩選
+   */
+  const resetTradeStatsFilter = useCallback(() => {
+    setTradeStatsFilter({})
+  }, [])
 
   // 從 localStorage 讀取交易模式初始狀態（避免 SSR hydration 不匹配）
   useEffect(() => {
@@ -162,6 +173,7 @@ export function usePageModes(): UsePageModesReturn {
     isTradeMode,
     tradeTypeFilter,
     tradeSearchQuery,
+    tradeStatsFilter,
     // 操作
     selectGacha,
     closeGacha,
@@ -170,6 +182,8 @@ export function usePageModes(): UsePageModesReturn {
     toggleTradeMode,
     setTradeTypeFilter,
     setTradeSearchQuery,
+    setTradeStatsFilter,
+    resetTradeStatsFilter,
     closeAllModes,
   }
 }

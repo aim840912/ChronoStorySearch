@@ -36,14 +36,30 @@ export interface EquipmentStats {
   custom?: CustomStat[]  // 自訂屬性
 }
 
+/**
+ * 裝備素質篩選條件（用於交易市場篩選）
+ * 每個欄位代表該屬性的最小值要求
+ */
+export interface EquipmentStatsFilter {
+  str?: number        // 最小力量
+  dex?: number        // 最小敏捷
+  int?: number        // 最小智力
+  luk?: number        // 最小幸運
+  attack?: number     // 最小攻擊力
+  magic?: number      // 最小魔力
+  pDef?: number       // 最小物防
+  mDef?: number       // 最小魔防
+  hp?: number         // 最小 HP
+  mp?: number         // 最小 MP
+  accuracy?: number   // 最小命中
+  avoid?: number      // 最小迴避
+  speed?: number      // 最小速度
+  jump?: number       // 最小跳躍
+  slots?: number      // 最小剩餘升級次數
+}
+
 // 交易狀態
 export type TradeStatus = 'active' | 'completed' | 'cancelled' | 'expired'
-
-// 檢舉原因
-export type ReportReason = 'spam' | 'scam' | 'inappropriate' | 'wrong_price' | 'other'
-
-// 檢舉狀態
-export type ReportStatus = 'pending' | 'reviewed' | 'resolved' | 'dismissed'
 
 /**
  * 交易刊登
@@ -83,7 +99,7 @@ export interface CreateTradeListingInput {
   quantity: number
   price: number
   discordUsername: string
-  characterName: string
+  characterName?: string  // 可選，會自動帶入上次填寫的值
   note?: string
   equipmentStats?: EquipmentStats  // 裝備素質（僅裝備物品需要）
 }
@@ -121,29 +137,6 @@ export interface TradeFavorite {
 }
 
 /**
- * 交易檢舉
- */
-export interface TradeReport {
-  id: string
-  reporterId: string
-  listingId: string
-  reason: ReportReason
-  description?: string
-  status: ReportStatus
-  createdAt: string
-  reviewedAt?: string
-}
-
-/**
- * 建立檢舉輸入
- */
-export interface CreateReportInput {
-  listingId: string
-  reason: ReportReason
-  description?: string
-}
-
-/**
  * 資料庫行轉換為前端類型的輔助類型
  */
 export interface TradeListingRow {
@@ -169,15 +162,4 @@ export interface TradeFavoriteRow {
   user_id: string
   listing_id: string
   created_at: string
-}
-
-export interface TradeReportRow {
-  id: string
-  reporter_id: string
-  listing_id: string
-  reason: ReportReason
-  description: string | null
-  status: ReportStatus
-  created_at: string
-  reviewed_at: string | null
 }

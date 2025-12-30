@@ -14,6 +14,7 @@ interface TradeListingListProps {
   onDelete?: (id: string) => void
   onMarkComplete?: (id: string) => void
   onFavoriteToggle?: (id: string, isFavorited: boolean) => void
+  onAddToBlacklist?: (discordUsername: string) => void
   emptyMessage?: string
 }
 
@@ -29,6 +30,7 @@ export const TradeListingList = memo(function TradeListingList({
   onDelete,
   onMarkComplete,
   onFavoriteToggle,
+  onAddToBlacklist,
   emptyMessage,
 }: TradeListingListProps) {
   const { t } = useLanguage()
@@ -79,6 +81,7 @@ export const TradeListingList = memo(function TradeListingList({
             onDelete={onDelete}
             onMarkComplete={onMarkComplete}
             onFavoriteToggle={onFavoriteToggle}
+            onAddToBlacklist={onAddToBlacklist}
           />
         ))}
       </div>
