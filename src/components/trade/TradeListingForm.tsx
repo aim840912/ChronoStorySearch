@@ -52,7 +52,7 @@ export const TradeListingForm = memo(function TradeListingForm({
   onRecordView,
 }: TradeListingFormProps) {
   const { t, language } = useLanguage()
-  const { user } = useAuth()
+  const { user, isVerified } = useAuth()
   const { showToast } = useToast()
 
   // 表單狀態
@@ -270,7 +270,7 @@ export const TradeListingForm = memo(function TradeListingForm({
             : undefined,
         }
 
-        const created = await tradeService.createListing(input)
+        const created = await tradeService.createListing(input, isVerified ?? false)
 
         if (created) {
           showToast(t('trade.createSuccess'), 'success')
@@ -288,7 +288,7 @@ export const TradeListingForm = memo(function TradeListingForm({
   }, [
     user, selectedItemId, itemName, quantity, price, discordUsername,
     characterName, note, type, isEditing, editingListing, onSave, showToast, t,
-    isEquipment, equipmentStats, customStats
+    isEquipment, equipmentStats, customStats, isVerified
   ])
 
   const isDisabled = !selectedItemId || !itemName.trim() ||

@@ -4,6 +4,13 @@ import { createContext, useContext, useState, useEffect, ReactNode, useCallback 
 import { User, Session } from '@supabase/supabase-js'
 import { supabase } from '@/lib/supabase/client'
 import { clearUserStorage, restorePreferencesFromGuest } from '@/lib/storage'
+import {
+  discordService,
+  clearMembershipCache,
+  DISCORD_INVITE_URL,
+  LISTING_LIMIT_DEFAULT,
+  LISTING_LIMIT_VERIFIED,
+} from '@/lib/supabase/discord-service'
 
 // Auth Token 快取 key
 const AUTH_CACHE_KEY = 'chronostory-auth-cache'
@@ -63,8 +70,13 @@ interface AuthContextType {
   session: Session | null
   isLoading: boolean
   authEnabled: boolean
+  isServerMember: boolean | null // null = 檢查中，true/false = 結果
+  isVerified: boolean | null // null = 檢查中，true/false = 是否有 Support 角色
+  listingLimit: number // 刊登上限（根據認證狀態計算）
+  discordInviteUrl: string
   signInWithDiscord: () => Promise<void>
   signOut: () => Promise<void>
+  refreshMembership: () => Promise<void>
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
@@ -80,9 +92,41 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
   const [session, setSession] = useState<Session | null>(null)
   const [isLoading, setIsLoading] = useState(true)
+  const [isServerMember, setIsServerMember] = useState<boolean | null>(null)
+  const [isVerified, setIsVerified] = useState<boolean | null>(null)
 
   // 檢查認證功能是否啟用
   const authEnabled = process.env.NEXT_PUBLIC_AUTH_ENABLED !== 'false'
+
+  // 檢查 Discord 伺服器成員資格和角色
+  const checkMembership = useCallback(async (providerToken: string | undefined) => {
+    if (!providerToken) {
+      // 無 token，嘗試使用快取
+      const cached = discordService.getCachedStatus()
+      if (cached) {
+        setIsServerMember(cached.isMember)
+        setIsVerified(cached.isVerified)
+      } else {
+        setIsServerMember(null)
+        setIsVerified(null)
+      }
+      return
+    }
+
+    try {
+      const { isMember, isVerified } = await discordService.checkServerMembership(providerToken)
+      setIsServerMember(isMember)
+      setIsVerified(isVerified)
+    } catch (error) {
+      console.error('[Auth] 檢查伺服器成員資格失敗:', error)
+      // 失敗時嘗試使用快取
+      const cached = discordService.getCachedStatus()
+      if (cached) {
+        setIsServerMember(cached.isMember)
+        setIsVerified(cached.isVerified)
+      }
+    }
+  }, [])
 
   // 初始化：驗證現有 session
   // 使用 getUser() 驗證 token 有效性
@@ -158,8 +202,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         // 更新快取
         if (session?.user) {
           setAuthCache(session.user.id)
+          // 檢查 Discord 伺服器成員資格
+          checkMembership(session.provider_token ?? undefined)
         } else if (event === 'SIGNED_OUT') {
           clearAuthCache()
+          clearMembershipCache()
+          setIsServerMember(null)
+          setIsVerified(null)
         }
       }
     )
@@ -167,7 +216,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return () => {
       subscription.unsubscribe()
     }
-  }, [authEnabled])
+  }, [authEnabled, checkMembership])
 
   // Discord OAuth 登入（使用 popup 模式避免桌面應用程式攔截）
   const signInWithDiscord = useCallback(async () => {
@@ -180,6 +229,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'discord',
         options: {
+          scopes: 'identify guilds guilds.members.read', // guilds.members.read 用於獲取伺服器角色
           redirectTo: `${window.location.origin}/auth/callback?popup=true`,
           skipBrowserRedirect: true, // 不自動重導向，獲取 URL
         },
@@ -229,6 +279,25 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, [])
 
+  // 手動刷新成員資格（用於用戶加入伺服器後重新檢查）
+  const refreshMembership = useCallback(async () => {
+    const token = session?.provider_token
+    if (!token) {
+      console.warn('[Auth] 無法刷新成員資格：缺少 provider_token')
+      return
+    }
+    clearMembershipCache()
+    await checkMembership(token)
+  }, [session, checkMembership])
+
+  // 根據認證狀態計算刊登上限
+  // 未加入伺服器 = 0，加入但未認證 = DEFAULT，已認證 = VERIFIED
+  const listingLimit = isServerMember === false
+    ? 0
+    : isVerified
+      ? LISTING_LIMIT_VERIFIED
+      : LISTING_LIMIT_DEFAULT
+
   return (
     <AuthContext.Provider
       value={{
@@ -236,8 +305,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         session,
         isLoading,
         authEnabled,
+        isServerMember,
+        isVerified,
+        listingLimit,
+        discordInviteUrl: DISCORD_INVITE_URL,
         signInWithDiscord,
         signOut,
+        refreshMembership,
       }}
     >
       {children}

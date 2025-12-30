@@ -24,6 +24,7 @@ function rowToListing(row: TradeListingRow): TradeListing {
     characterName: row.character_name,
     note: row.note ?? undefined,
     equipmentStats: row.equipment_stats ?? undefined,
+    isVerified: row.is_verified ?? false,
     status: row.status,
     createdAt: row.created_at,
     updatedAt: row.updated_at,
@@ -164,8 +165,10 @@ export const tradeService = {
 
   /**
    * 建立刊登
+   * @param input 刊登資料
+   * @param isVerified 刊登者是否有 Support 身分組（建立時記錄）
    */
-  async createListing(input: CreateTradeListingInput): Promise<TradeListing | null> {
+  async createListing(input: CreateTradeListingInput, isVerified: boolean = false): Promise<TradeListing | null> {
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) {
       console.error('建立刊登失敗: 未登入')
@@ -185,6 +188,7 @@ export const tradeService = {
         character_name: input.characterName,
         note: input.note,
         equipment_stats: input.equipmentStats ?? null,
+        is_verified: isVerified,
         expires_at: getExpiresAt(),
       })
       .select()
@@ -414,5 +418,27 @@ export const tradeService = {
   async getLastCharacterName(): Promise<string | null> {
     const { data } = await this.getMyListings(1, 0)
     return data[0]?.characterName ?? null
+  },
+
+  /**
+   * 取得當前用戶進行中的刊登數量
+   * 只計算 status = 'active' 的刊登，不含已完成/已取消
+   */
+  async getActiveListingCount(): Promise<number> {
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) return 0
+
+    const { count, error } = await supabase
+      .from('trade_listings')
+      .select('*', { count: 'exact', head: true })
+      .eq('user_id', user.id)
+      .eq('status', 'active')
+
+    if (error) {
+      console.error('取得進行中刊登數量失敗:', error)
+      return 0
+    }
+
+    return count ?? 0
   },
 }
