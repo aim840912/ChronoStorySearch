@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { getMonsterImageUrl, getItemImageUrl } from '@/lib/image-utils'
+import { getMonsterImageUrl, getItemImageUrl, getArtaleImageUrl } from '@/lib/image-utils'
 import type { SuggestionItem } from '@/types'
 
 interface SuggestionListProps {
@@ -11,6 +11,7 @@ interface SuggestionListProps {
   focusedIndex: number
   onSelect: (name: string, suggestion?: SuggestionItem) => void
   onFocusedIndexChange: (index: number) => void
+  isArtaleMode?: boolean  // Artale 模式使用中文名稱作為圖片來源
 }
 
 /**
@@ -23,11 +24,12 @@ export function SuggestionList({
   focusedIndex,
   onSelect,
   onFocusedIndexChange,
+  isArtaleMode = false,
 }: SuggestionListProps) {
   const { t } = useLanguage()
   const [failedImageIds, setFailedImageIds] = useState<Set<string>>(new Set())
 
-  const handleImageError = (type: 'monster' | 'item', id: number) => {
+  const handleImageError = (type: 'monster' | 'item', id: number | string) => {
     setFailedImageIds(prev => {
       const newSet = new Set(prev)
       newSet.add(`${type}-${id}`)
@@ -35,8 +37,13 @@ export function SuggestionList({
     })
   }
 
-  const hasImageFailed = (type: 'monster' | 'item', id: number) => {
+  const hasImageFailed = (type: 'monster' | 'item', id: number | string) => {
     return failedImageIds.has(`${type}-${id}`)
+  }
+
+  // 檢查是否為數字 ID（ChronoStory 模式使用數字，Artale 使用字串）
+  const isNumericId = (id: number | string | undefined): id is number => {
+    return typeof id === 'number'
   }
 
   if (!isVisible || suggestions.length === 0) {
@@ -61,31 +68,63 @@ export function SuggestionList({
           <div className="flex items-center gap-3 flex-1">
             {/* 怪物圖示 */}
             {suggestion.type === 'monster' ? (
-              suggestion.id !== undefined && !hasImageFailed('monster', suggestion.id) ? (
-                <img
-                  src={getMonsterImageUrl(suggestion.id)}
-                  alt={suggestion.name}
-                  className="w-8 h-8 object-contain flex-shrink-0"
-                  onError={() => handleImageError('monster', suggestion.id!)}
-                />
+              // Artale 模式：使用中文名稱取得圖片
+              isArtaleMode ? (
+                !hasImageFailed('monster', suggestion.name) ? (
+                  <img
+                    src={getArtaleImageUrl(suggestion.name)}
+                    alt={suggestion.name}
+                    className="w-8 h-8 object-contain flex-shrink-0"
+                    onError={() => handleImageError('monster', suggestion.name)}
+                  />
+                ) : (
+                  <svg className="w-6 h-6 text-red-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd"/>
+                  </svg>
+                )
               ) : (
-                <svg className="w-6 h-6 text-red-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd"/>
-                </svg>
+                // ChronoStory 模式：使用數字 ID 取得圖片
+                isNumericId(suggestion.id) && !hasImageFailed('monster', suggestion.id) ? (
+                  <img
+                    src={getMonsterImageUrl(suggestion.id)}
+                    alt={suggestion.name}
+                    className="w-8 h-8 object-contain flex-shrink-0"
+                    onError={() => handleImageError('monster', suggestion.id!)}
+                  />
+                ) : (
+                  <svg className="w-6 h-6 text-red-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd"/>
+                  </svg>
+                )
               )
             ) : suggestion.type === 'item' ? (
               /* 物品圖示 */
-              suggestion.id !== undefined && !hasImageFailed('item', suggestion.id) ? (
-                <img
-                  src={getItemImageUrl(suggestion.id, { itemName: suggestion.name })}
-                  alt={suggestion.name}
-                  className="w-8 h-8 object-contain flex-shrink-0"
-                  onError={() => handleImageError('item', suggestion.id!)}
-                />
+              isArtaleMode ? (
+                !hasImageFailed('item', suggestion.name) ? (
+                  <img
+                    src={getArtaleImageUrl(suggestion.name)}
+                    alt={suggestion.name}
+                    className="w-8 h-8 object-contain flex-shrink-0"
+                    onError={() => handleImageError('item', suggestion.name)}
+                  />
+                ) : (
+                  <svg className="w-6 h-6 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                  </svg>
+                )
               ) : (
-                <svg className="w-6 h-6 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
-                </svg>
+                isNumericId(suggestion.id) && !hasImageFailed('item', suggestion.id) ? (
+                  <img
+                    src={getItemImageUrl(suggestion.id, { itemName: suggestion.name })}
+                    alt={suggestion.name}
+                    className="w-8 h-8 object-contain flex-shrink-0"
+                    onError={() => handleImageError('item', suggestion.id!)}
+                  />
+                ) : (
+                  <svg className="w-6 h-6 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                  </svg>
+                )
               )
             ) : suggestion.type === 'merchant' ? (
               /* 商人圖示 - store icon (stone 色系) */
@@ -99,7 +138,7 @@ export function SuggestionList({
               </svg>
             ) : (
               /* 轉蛋物品圖示 */
-              suggestion.id !== undefined && !hasImageFailed('item', suggestion.id) ? (
+              isNumericId(suggestion.id) && !hasImageFailed('item', suggestion.id) ? (
                 <img
                   src={getItemImageUrl(suggestion.id, { itemName: suggestion.name })}
                   alt={suggestion.name}

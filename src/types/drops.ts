@@ -115,7 +115,7 @@ export interface SuggestionItem {
   name: string
   type: 'monster' | 'item' | 'gacha' | 'merchant' | 'quiz'
   count: number
-  id?: number
+  id?: number | string  // string for Artale mode (uses name as ID)
   machineId?: number
   machineName?: string
   mapId?: string           // 商人地圖 ID

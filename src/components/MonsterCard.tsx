@@ -6,7 +6,7 @@ import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { useAutoFitText } from '@/hooks/useAutoFitText'
 import { useDropRelations } from '@/hooks/useDropRelations'
 import { getMonsterDisplayName } from '@/lib/display-name'
-import { getItemImageUrl, getMonsterImageUrl } from '@/lib/image-utils'
+import { getItemImageUrl, getMonsterImageUrl, getArtaleImageUrl } from '@/lib/image-utils'
 import { BaseCard, CardHeader, CardImage, FavoriteButton, TypeBadge } from './cards'
 
 interface MonsterCardProps {
@@ -20,6 +20,7 @@ interface MonsterCardProps {
   level?: number | null
   index?: number // 用於 staggered 動畫
   inGame?: boolean // 是否已在遊戲中
+  isArtaleMode?: boolean // Artale 模式使用中文名稱作為圖片來源
 }
 
 /**
@@ -42,6 +43,7 @@ export const MonsterCard = memo(function MonsterCard({
   level,
   index = 0,
   inGame = true,
+  isArtaleMode = false,
 }: MonsterCardProps) {
   void dropCount
   const { language, t } = useLanguage()
@@ -50,7 +52,10 @@ export const MonsterCard = memo(function MonsterCard({
   const isDev = process.env.NODE_ENV === 'development'
 
   const displayMobName = getMonsterDisplayName(mobName, chineseMobName, language)
-  const monsterIconUrl = getMonsterImageUrl(mobId, { format })
+  // Artale 模式使用中文名稱取得圖片，ChronoStory 使用數字 ID
+  const monsterIconUrl = isArtaleMode
+    ? getArtaleImageUrl(chineseMobName || mobName)
+    : getMonsterImageUrl(mobId, { format })
 
   // 取得此怪物會掉落的卷軸預覽圖示（全部傳入，由 CardHeader 動態顯示）
   const allIcons = useMemo(() => {

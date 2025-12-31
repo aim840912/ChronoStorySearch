@@ -2,6 +2,8 @@
 
 import { useMemo } from 'react'
 import type { DropsEssential, GachaMachine, SuggestionItem, SearchTypeFilter, MerchantMapData, QuizQuestion } from '@/types'
+import type { ArtaleDropsEssential } from '@/hooks/useArtaleData'
+import type { GameMode } from '@/hooks/usePageModes'
 import { matchesAllKeywords } from '@/lib/search-utils'
 
 interface UseSearchLogicParams {
@@ -11,6 +13,9 @@ interface UseSearchLogicParams {
   quizQuestions: QuizQuestion[]    // Quiz 題庫資料
   debouncedSearchTerm: string
   searchType: SearchTypeFilter
+  // Artale 支援
+  gameMode?: GameMode
+  artaleDrops?: ArtaleDropsEssential[]
 }
 
 /**
@@ -27,6 +32,8 @@ export function useSearchLogic({
   quizQuestions,
   debouncedSearchTerm,
   searchType,
+  gameMode = 'chronostory',
+  artaleDrops = [],
 }: UseSearchLogicParams) {
   // 預建名稱索引 - 只在資料載入時計算一次
   const nameIndex = useMemo(() => {
@@ -36,6 +43,46 @@ export function useSearchLogic({
     const merchantMap = new Map<string, SuggestionItem>()
     const quizMap = new Map<string, SuggestionItem>()
 
+    // ===== Artale 模式：只建立怪物和物品索引 =====
+    if (gameMode === 'artale') {
+      artaleDrops.forEach((drop) => {
+        // 建立怪物索引（只有中文名稱）
+        const mobNameLower = drop.mobName.toLowerCase()
+        const existingMonster = monsterMap.get(mobNameLower)
+        if (existingMonster) {
+          existingMonster.count++
+        } else {
+          monsterMap.set(mobNameLower, {
+            name: drop.mobName,
+            type: 'monster',
+            count: 1,
+            id: drop.mobId,  // 字串 ID（怪物名稱）
+            inGame: drop.inGame,
+          })
+        }
+
+        // 建立物品索引（只有中文名稱，跳過空物品）
+        if (drop.itemName) {
+          const itemNameLower = drop.itemName.toLowerCase()
+          const existingItem = itemMap.get(itemNameLower)
+          if (existingItem) {
+            existingItem.count++
+          } else {
+            itemMap.set(itemNameLower, {
+              name: drop.itemName,
+              type: 'item',
+              count: 1,
+              id: drop.itemId,  // 字串 ID
+            })
+          }
+        }
+      })
+
+      // Artale 模式不建立 gacha、merchant、quiz 索引
+      return { monsterMap, itemMap, gachaMap, merchantMap, quizMap }
+    }
+
+    // ===== ChronoStory 模式：原有邏輯 =====
     // 建立怪物和物品索引
     allDrops.forEach((drop) => {
       // 建立怪物英文名稱索引
@@ -213,7 +260,7 @@ export function useSearchLogic({
     })
 
     return { monsterMap, itemMap, gachaMap, merchantMap, quizMap }
-  }, [allDrops, gachaMachines, merchantMaps, quizQuestions])
+  }, [allDrops, gachaMachines, merchantMaps, quizQuestions, gameMode, artaleDrops])
 
   // 計算搜尋建議列表（使用索引優化效能，支援多關鍵字搜尋和類型過濾）
   const suggestions = useMemo(() => {

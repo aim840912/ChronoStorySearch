@@ -32,8 +32,8 @@ interface UseEntityCardParams<T> {
   createEntity: (id: number, name: string) => T
   /** 從實體中提取 ID 的函數 */
   getEntityId: (entity: T) => number
-  /** 偏好設定欄位名稱（用於雲端同步事件） */
-  preferenceField: 'favoriteMonsters' | 'favoriteItems'
+  /** 偏好設定欄位名稱（用於雲端同步事件，傳入 null 則跳過同步） */
+  preferenceField: 'favoriteMonsters' | 'favoriteItems' | null
 }
 
 interface UseEntityCardReturn<T> {
@@ -81,10 +81,12 @@ export function useEntityCard<T>({
     const success = setEntities(newFavorites)
     if (success) {
       setFavorites(newFavorites)
-      // 觸發雲端同步事件
-      window.dispatchEvent(new CustomEvent('preference-changed', {
-        detail: { field: preferenceField, value: newFavorites }
-      }))
+      // 觸發雲端同步事件（preferenceField 為 null 時跳過，如 Artale 模式）
+      if (preferenceField) {
+        window.dispatchEvent(new CustomEvent('preference-changed', {
+          detail: { field: preferenceField, value: newFavorites }
+        }))
+      }
     }
   }
 

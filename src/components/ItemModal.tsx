@@ -11,7 +11,7 @@ import { AdSenseDisplay } from './adsense/AdSenseDisplay'
 import { AdSenseAnchor } from './adsense/AdSenseAnchor'
 import { AdSenseCard } from './adsense/AdSenseCard'
 import { clientLogger } from '@/lib/logger'
-import { getItemImageUrl } from '@/lib/image-utils'
+import { getItemImageUrl, getArtaleImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useToast } from '@/hooks/useToast'
 import { useScreenshot } from '@/hooks/useScreenshot'
@@ -47,6 +47,8 @@ interface ItemModalProps {
   // 導航相關 props
   hasPreviousModal?: boolean
   onGoBack?: () => void
+  // Artale 模式（使用中文名稱取得圖片）
+  isArtaleMode?: boolean
 }
 
 /**
@@ -70,6 +72,7 @@ export function ItemModal({
   onGachaMachineClick,
   hasPreviousModal,
   onGoBack,
+  isArtaleMode = false,
 }: ItemModalProps) {
   const { t, language } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
@@ -306,7 +309,10 @@ export function ItemModal({
   if (itemId === null && itemId !== 0) return null
 
   // 傳入 itemName 以支援卷軸圖示
-  const itemIconUrl = getItemImageUrl(itemId, { itemName })
+  // Artale 模式使用中文名稱取得圖片，ChronoStory 使用數字 ID
+  const itemIconUrl = isArtaleMode
+    ? getArtaleImageUrl(itemName)
+    : getItemImageUrl(itemId, { itemName })
 
   return (
     <BaseModal
@@ -653,6 +659,7 @@ export function ItemModal({
                             onToggleFavorite={onToggleMonsterFavorite}
                             onMonsterClick={onMonsterClick}
                             showIcons={showDropIcons}
+                            isArtaleMode={isArtaleMode}
                           />
                         )
                       })
@@ -666,6 +673,7 @@ export function ItemModal({
                       isMonsterFavorite={isMonsterFavorite}
                       onToggleFavorite={onToggleMonsterFavorite}
                       onMonsterClick={onMonsterClick}
+                      isArtaleMode={isArtaleMode}
                     />
                     {/* 列表視圖底部廣告 */}
                     <AdSenseCard className="mt-3 sm:mt-4" />

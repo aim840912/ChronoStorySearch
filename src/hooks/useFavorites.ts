@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef } from 'react'
 import {
+  // ChronoStory
   getFavoriteMonsters,
   setFavoriteMonsters,
   getGuestFavoriteMonsters,
@@ -10,22 +11,35 @@ import {
   setFavoriteItems,
   getGuestFavoriteItems,
   setGuestFavoriteItems,
+  // Artale（僅 localStorage，不同步雲端）
+  getArtaleFavoriteMonsters,
+  setArtaleFavoriteMonsters,
+  getArtaleFavoriteItems,
+  setArtaleFavoriteItems,
 } from '@/lib/storage'
 import type { FavoriteMonster, FavoriteItem } from '@/types'
 import { useEntityCard } from './useEntityCard'
 import { useAuth } from '@/contexts/AuthContext'
 
+// 遊戲模式類型
+type GameMode = 'chronostory' | 'artale'
+
 /**
  * 統一的收藏管理 Hook
  * 整合怪物和物品的收藏功能
  *
- * 根據登入狀態使用不同的 storage key：
- * - 登入用戶：chronostory-favorite-* (會同步到雲端)
- * - 非登入用戶：chronostory-guest-favorite-* (僅本地)
+ * 根據遊戲模式和登入狀態使用不同的 storage key：
+ * - ChronoStory 登入用戶：chronostory-favorite-* (會同步到雲端)
+ * - ChronoStory 非登入用戶：chronostory-guest-favorite-* (僅本地)
+ * - Artale：artale-favorite-* (僅本地，不分登入狀態，不同步雲端)
+ *
+ * @param gameMode 遊戲模式（預設 'chronostory'）
  *
  * @example
  * ```tsx
- * const favorites = useFavorites()
+ * const favorites = useFavorites('chronostory')
+ * // 或
+ * const favorites = useFavorites('artale')
  *
  * // 怪物收藏
  * favorites.monsters.list        // FavoriteMonster[]
@@ -64,13 +78,16 @@ export interface UseFavoritesReturn {
   items: FavoriteEntityActions<FavoriteItem>
 }
 
-export function useFavorites(): UseFavoritesReturn {
+export function useFavorites(gameMode: GameMode = 'chronostory'): UseFavoritesReturn {
   const { user } = useAuth()
   const hasMigratedMonsters = useRef(false)
   const hasMigratedItems = useRef(false)
+  const isArtale = gameMode === 'artale'
 
-  // ===== 怪物收藏遷移 =====
+  // ===== 怪物收藏遷移（僅 ChronoStory）=====
   useEffect(() => {
+    // Artale 不需要遷移邏輯
+    if (isArtale) return
     if (hasMigratedMonsters.current) return
     if (user) return
 
@@ -83,10 +100,12 @@ export function useFavorites(): UseFavoritesReturn {
       console.log('[Migration] 已遷移怪物收藏到 guest storage')
     }
     hasMigratedMonsters.current = true
-  }, [user])
+  }, [user, isArtale])
 
-  // ===== 物品收藏遷移 =====
+  // ===== 物品收藏遷移（僅 ChronoStory）=====
   useEffect(() => {
+    // Artale 不需要遷移邏輯
+    if (isArtale) return
     if (hasMigratedItems.current) return
     if (user) return
 
@@ -99,16 +118,26 @@ export function useFavorites(): UseFavoritesReturn {
       console.log('[Migration] 已遷移物品收藏到 guest storage')
     }
     hasMigratedItems.current = true
-  }, [user])
+  }, [user, isArtale])
 
   // ===== 怪物收藏 =====
   const getMonsterEntities = useCallback(() => {
+    if (isArtale) {
+      // Artale: 只用 localStorage，不分登入狀態
+      return getArtaleFavoriteMonsters()
+    }
+    // ChronoStory: 根據登入狀態決定
     return user ? getFavoriteMonsters() : getGuestFavoriteMonsters()
-  }, [user])
+  }, [user, isArtale])
 
   const setMonsterEntities = useCallback((monsters: FavoriteMonster[]) => {
+    if (isArtale) {
+      // Artale: 只用 localStorage，不同步雲端
+      return setArtaleFavoriteMonsters(monsters)
+    }
+    // ChronoStory: 根據登入狀態決定
     return user ? setFavoriteMonsters(monsters) : setGuestFavoriteMonsters(monsters)
-  }, [user])
+  }, [user, isArtale])
 
   const monsterCard = useEntityCard<FavoriteMonster>({
     getEntities: getMonsterEntities,
@@ -119,17 +148,28 @@ export function useFavorites(): UseFavoritesReturn {
       addedAt: Date.now(),
     }),
     getEntityId: (entity) => entity.mobId,
-    preferenceField: 'favoriteMonsters',
+    // Artale 不同步雲端，傳入 null 跳過雲端同步
+    preferenceField: isArtale ? null : 'favoriteMonsters',
   })
 
   // ===== 物品收藏 =====
   const getItemEntities = useCallback(() => {
+    if (isArtale) {
+      // Artale: 只用 localStorage，不分登入狀態
+      return getArtaleFavoriteItems()
+    }
+    // ChronoStory: 根據登入狀態決定
     return user ? getFavoriteItems() : getGuestFavoriteItems()
-  }, [user])
+  }, [user, isArtale])
 
   const setItemEntities = useCallback((items: FavoriteItem[]) => {
+    if (isArtale) {
+      // Artale: 只用 localStorage，不同步雲端
+      return setArtaleFavoriteItems(items)
+    }
+    // ChronoStory: 根據登入狀態決定
     return user ? setFavoriteItems(items) : setGuestFavoriteItems(items)
-  }, [user])
+  }, [user, isArtale])
 
   const itemCard = useEntityCard<FavoriteItem>({
     getEntities: getItemEntities,
@@ -140,7 +180,8 @@ export function useFavorites(): UseFavoritesReturn {
       addedAt: Date.now(),
     }),
     getEntityId: (entity) => entity.itemId,
-    preferenceField: 'favoriteItems',
+    // Artale 不同步雲端，傳入 null 跳過雲端同步
+    preferenceField: isArtale ? null : 'favoriteItems',
   })
 
   return {

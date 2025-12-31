@@ -1,7 +1,7 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback } from 'react'
-import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter } from '@/types'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
+import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, DropsEssential } from '@/types'
 // TradeType 已移至 usePageModes hook 中管理
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
 import { useFavorites } from '@/hooks/useFavorites'
@@ -11,6 +11,7 @@ import { useModalManager } from '@/hooks/useModalManager'
 import { useViewHistory } from '@/hooks/useViewHistory'
 import { useSearchWithSuggestions } from '@/hooks/useSearchWithSuggestions'
 import { useDataManagement } from '@/hooks/useDataManagement'
+import { useArtaleData } from '@/hooks/useArtaleData'
 import { useSearchLogic } from '@/hooks/useSearchLogic'
 import { useFilterLogic } from '@/hooks/useFilterLogic'
 import { useItemsData } from '@/hooks/useItemsData'
@@ -30,6 +31,31 @@ import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
 import { trackEvent } from '@/lib/analytics/ga4'
 import { GA4_EVENTS } from '@/lib/analytics/events'
+
+// 簡單字串雜湊函數（用於建立穩定的數字 ID）
+// 放在元件外部避免每次渲染重建，防止 useMemo 無限迴圈
+const hashString = (str: string): number => {
+  let hash = 0
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charCodeAt(i)
+    hash = ((hash << 5) - hash) + char
+    hash = hash & hash // 轉換為 32-bit 整數
+  }
+  return Math.abs(hash)
+}
+
+// 常量空陣列（避免每次渲染創建新引用，防止 useMemo 無限迴圈）
+const EMPTY_DROPS_ARRAY: import('@/types').DropsEssential[] = []
+const EMPTY_GACHA_MACHINES_ARRAY: import('@/types').GachaMachine[] = []
+const EMPTY_RANDOM_GACHA_ITEMS_ARRAY: Array<{
+  itemId: number
+  name: string
+  chineseName?: string
+  machineId: number
+  machineName: string
+  chineseMachineName?: string
+  probability: string
+}> = []
 
 export default function Home() {
   const { t, language } = useLanguage()
@@ -72,14 +98,14 @@ export default function Home() {
   // Debounced 搜尋詞 - 延遲 500ms 以減少計算頻率
   const debouncedSearchTerm = useDebouncedValue(search.searchTerm, 500)
 
-  // 資料管理 Hook - 處理資料載入和索引
+  // 資料管理 Hook - 處理資料載入和索引（ChronoStory）
   const {
-    allDrops,
+    allDrops: chronoDrops,
     gachaMachines,
     merchantMaps,
     merchantItemIndex,
     quizQuestions,
-    isLoading,
+    isLoading: chronoLoading,
     initialRandomDrops,
     initialRandomGachaItems,
     mobLevelMap,
@@ -89,6 +115,105 @@ export default function Home() {
     itemIndexMap,
     loadGachaMachines,
   } = useDataManagement()
+
+  // Artale 資料管理 Hook
+  const {
+    allDrops: artaleDrops,
+    isLoading: artaleLoading,
+    mobLevelMap: artaleMobLevelMap,
+    mobInfoMap: artaleMobInfoMap,
+    availableAreas: artaleAreas,
+    getMobNamesByAreas,
+  } = useArtaleData()
+
+  // Artale 區域篩選狀態（Phase 15）
+  const [selectedArtaleAreas, setSelectedArtaleAreas] = useState<Set<string>>(new Set())
+
+  // 根據遊戲模式選擇資料
+  const isArtaleMode = pageModes.gameMode === 'artale'
+  const isLoading = isArtaleMode ? artaleLoading : chronoLoading
+
+  // 將 Artale 資料轉換為 DropsEssential 相容格式
+  const convertedArtaleDrops = useMemo<DropsEssential[]>(() => {
+    if (!isArtaleMode || artaleDrops.length === 0) return []
+
+    return artaleDrops.map(drop => ({
+      mobId: hashString(drop.mobId),
+      mobName: drop.mobName,
+      chineseMobName: drop.chineseMobName || null,
+      itemId: drop.itemName ? hashString(drop.itemId) : 0,
+      itemName: drop.itemName || '',
+      chineseItemName: drop.chineseItemName || null,
+      chance: drop.chance,
+      minQty: drop.minQty,
+      maxQty: drop.maxQty,
+      inGame: drop.inGame,
+    }))
+  }, [isArtaleMode, artaleDrops])
+
+  // 為 Artale 建立相容的 mobLevelMap（使用雜湊 ID）
+  const convertedArtaleMobLevelMap = useMemo(() => {
+    if (!isArtaleMode) return new Map<number, number | null>()
+
+    const map = new Map<number, number | null>()
+    artaleMobLevelMap.forEach((level, mobName) => {
+      map.set(hashString(mobName), level)
+    })
+    return map
+  }, [isArtaleMode, artaleMobLevelMap])
+
+  // 為 Artale 建立相容的 mobInGameMap（使用雜湊 ID）
+  const convertedArtaleMobInGameMap = useMemo(() => {
+    if (!isArtaleMode || artaleDrops.length === 0) return new Map<number, boolean>()
+
+    const map = new Map<number, boolean>()
+    const seen = new Set<string>()
+    artaleDrops.forEach(drop => {
+      if (!seen.has(drop.mobId)) {
+        seen.add(drop.mobId)
+        map.set(hashString(drop.mobId), drop.inGame)
+      }
+    })
+    return map
+  }, [isArtaleMode, artaleDrops])
+
+  // 為 Artale 建立隨機初始資料（Fisher-Yates shuffle）
+  const initialRandomArtaleDrops = useMemo<DropsEssential[]>(() => {
+    if (!isArtaleMode || convertedArtaleDrops.length === 0) return EMPTY_DROPS_ARRAY
+
+    // 複製陣列避免修改原始資料
+    const shuffled = [...convertedArtaleDrops]
+
+    // Fisher-Yates shuffle（只 shuffle 前 10 個）
+    const sampleSize = Math.min(10, shuffled.length)
+    for (let i = 0; i < sampleSize; i++) {
+      const randomIndex = i + Math.floor(Math.random() * (shuffled.length - i))
+      ;[shuffled[i], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[i]]
+    }
+
+    return shuffled.slice(0, sampleSize)
+  }, [isArtaleMode, convertedArtaleDrops])
+
+  // 根據選中區域篩選 Artale 掉落資料（Phase 15）
+  const filteredArtaleDrops = useMemo<DropsEssential[]>(() => {
+    if (!isArtaleMode) return EMPTY_DROPS_ARRAY
+
+    // 沒有選擇任何區域 = 顯示全部
+    if (selectedArtaleAreas.size === 0) return convertedArtaleDrops
+
+    // 取得選中區域的怪物名稱 Set
+    const mobNamesInSelectedAreas = getMobNamesByAreas(selectedArtaleAreas)
+
+    // 篩選掉落資料
+    return convertedArtaleDrops.filter(drop =>
+      mobNamesInSelectedAreas.has(drop.chineseMobName || drop.mobName)
+    )
+  }, [isArtaleMode, selectedArtaleAreas, convertedArtaleDrops, getMobNamesByAreas])
+
+  // 選擇適當的資料來源（Artale 使用經區域篩選的資料）
+  const allDrops = isArtaleMode ? filteredArtaleDrops : chronoDrops
+  const activeMobLevelMap = isArtaleMode ? convertedArtaleMobLevelMap : mobLevelMap
+  const activeMobInGameMap = isArtaleMode ? convertedArtaleMobInGameMap : mobInGameMap
 
   // 物品資料 Hook - 提供物品搜尋功能（用於 TradeSection）
   const { searchItems } = useItemsData({
@@ -104,10 +229,12 @@ export default function Home() {
     quizQuestions,
     debouncedSearchTerm,
     searchType,
+    gameMode: pageModes.gameMode,
+    artaleDrops,
   })
 
-  // 收藏管理（怪物 + 物品）
-  const favorites = useFavorites()
+  // 收藏管理（怪物 + 物品）- 根據遊戲模式使用不同的 storage
+  const favorites = useFavorites(pageModes.gameMode)
 
   // 篩選邏輯 Hook - 處理最愛和搜尋過濾
   const {
@@ -123,15 +250,15 @@ export default function Home() {
     favoriteMonsters: favorites.monsters.list,
     favoriteItems: favorites.items.list,
     allDrops,
-    initialRandomDrops,
+    initialRandomDrops: isArtaleMode ? initialRandomArtaleDrops : initialRandomDrops,
     debouncedSearchTerm, // 延遲搜尋詞（已 debounce）
     searchType,
     advancedFilter,
     itemAttributesMap,
-    mobLevelMap,
+    mobLevelMap: activeMobLevelMap,
     mobInfoMap,
-    gachaMachines,
-    initialRandomGachaItems,
+    gachaMachines: isArtaleMode ? EMPTY_GACHA_MACHINES_ARRAY : gachaMachines, // Artale 無轉蛋資料
+    initialRandomGachaItems: isArtaleMode ? EMPTY_RANDOM_GACHA_ITEMS_ARRAY : initialRandomGachaItems,
   })
 
 
@@ -272,7 +399,8 @@ export default function Home() {
     }
 
     // 如果是轉蛋物品，開啟物品 Modal（而不是轉蛋機 Modal）
-    if (suggestion && suggestion.type === 'gacha' && suggestion.id) {
+    // 轉蛋只存在於 ChronoStory 模式，ID 一定是數字
+    if (suggestion && suggestion.type === 'gacha' && typeof suggestion.id === 'number') {
       modals.openItemModal(suggestion.id, suggestionName)
     } else if (suggestion && suggestion.type === 'merchant' && suggestion.mapId) {
       // 如果是商人物品，開啟商人 Modal 並自動展開對應地圖
@@ -313,6 +441,19 @@ export default function Home() {
     pageModes.closeAllModes()
   }, [pageModes])
 
+  // Artale 區域 Toggle 處理（Phase 15）
+  const handleArtaleAreaToggle = useCallback((area: string) => {
+    setSelectedArtaleAreas(prev => {
+      const next = new Set(prev)
+      if (next.has(area)) {
+        next.delete(area)
+      } else {
+        next.add(area)
+      }
+      return next
+    })
+  }, [])
+
 
   // 鍵盤導航處理 - 包裝 search.handleKeyDown 以處理轉蛋建議
   const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -350,6 +491,8 @@ export default function Home() {
       <div className="container mx-auto px-4 pb-20 sm:pb-24">
         {/* Sticky Header - 固定搜尋區域 */}
         <SearchHeader
+          gameMode={pageModes.gameMode}
+          onGameModeChange={pageModes.setGameMode}
           searchTerm={search.searchTerm}
           onSearchChange={search.setSearchTerm}
           searchType={searchType}
@@ -391,6 +534,10 @@ export default function Home() {
           onTradeStatsFilterChange={pageModes.setTradeStatsFilter}
           onTradeStatsFilterReset={pageModes.resetTradeStatsFilter}
           searchItems={searchItems}
+          // Artale 區域篩選（Phase 15）
+          artaleAreas={artaleAreas}
+          selectedArtaleAreas={selectedArtaleAreas}
+          onArtaleAreaToggle={handleArtaleAreaToggle}
           // Toolbar callbacks
           onExpTrackerClick={modals.openExpTrackerModal}
           onScreenRecorderClick={modals.openScreenRecorderModal}
@@ -404,8 +551,8 @@ export default function Home() {
           onGlobalSettingsClick={toolModals.openGlobalSettings}
         />
 
-        {/* 交易市場區域 - 交易模式時顯示 */}
-        {pageModes.isTradeMode && (
+        {/* 交易市場區域 - 交易模式時顯示（僅 ChronoStory 模式） */}
+        {!isArtaleMode && pageModes.isTradeMode && (
           <TradeSection
             searchItems={searchItems}
             typeFilter={pageModes.tradeTypeFilter}
@@ -416,8 +563,8 @@ export default function Home() {
           />
         )}
 
-        {/* 轉蛋抽獎區域 - 選擇轉蛋機後顯示（交易模式時隱藏） */}
-        {!pageModes.isTradeMode && pageModes.isGachaMode && pageModes.selectedGachaMachineId !== null && (
+        {/* 轉蛋抽獎區域 - 選擇轉蛋機後顯示（僅 ChronoStory 模式，交易模式時隱藏） */}
+        {!isArtaleMode && !pageModes.isTradeMode && pageModes.isGachaMode && pageModes.selectedGachaMachineId !== null && (
           <GachaDrawSection
             machineId={pageModes.selectedGachaMachineId}
             gachaMachines={gachaMachines}
@@ -426,8 +573,8 @@ export default function Home() {
           />
         )}
 
-        {/* 商人商店區域 - 選擇商人地圖後顯示（交易模式時隱藏） */}
-        {!pageModes.isTradeMode && pageModes.isMerchantMode && (
+        {/* 商人商店區域 - 選擇商人地圖後顯示（僅 ChronoStory 模式，交易模式時隱藏） */}
+        {!isArtaleMode && !pageModes.isTradeMode && pageModes.isMerchantMode && (
           <MerchantShopSection
             mapId={pageModes.selectedMerchantMapId}
             onClose={pageModes.closeMerchant}
@@ -441,8 +588,8 @@ export default function Home() {
           filterMode={filterMode}
           hasSearchTerm={!!search.searchTerm}
           filteredUniqueMonsters={filteredUniqueMonsters}
-          mobLevelMap={mobLevelMap}
-          mobInGameMap={mobInGameMap}
+          mobLevelMap={activeMobLevelMap}
+          mobInGameMap={activeMobInGameMap}
           onMonsterCardClick={modals.openMonsterModal}
           onToggleFavorite={favorites.monsters.toggle}
           isFavorite={favorites.monsters.isFavorite}
@@ -468,6 +615,7 @@ export default function Home() {
           allDrops={allDrops}
           gachaMachines={gachaMachines}
           itemIndexMap={itemIndexMap}
+          isArtaleMode={isArtaleMode}
         />
         )}
 
@@ -548,6 +696,8 @@ export default function Home() {
         toastIsVisible={toast.isVisible}
         toastType={toast.type}
         hideToast={toast.hideToast}
+        isArtaleMode={isArtaleMode}
+        artaleMobInfoMap={isArtaleMode ? artaleMobInfoMap : undefined}
       />
     </div>
   )

@@ -245,8 +245,12 @@ export function useLazyMobInfo() {
  * - 只在需要時載入，大幅減少流量（~85-90% 節省）
  *
  * @param mobId - 要載入的怪物 ID（null 表示不載入）
+ * @param options.skipFetch - 跳過 CDN 載入（用於 Artale 模式，資料來自本地）
  */
-export function useLazyDropsDetailed(mobId: number | null) {
+export function useLazyDropsDetailed(
+  mobId: number | null,
+  options?: { skipFetch?: boolean }
+) {
   const [data, setData] = useState<DropItem[] | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<Error | null>(null)
@@ -255,6 +259,15 @@ export function useLazyDropsDetailed(mobId: number | null) {
   const currentRequestRef = useRef<number | null>(null)
 
   useEffect(() => {
+    // Artale 模式跳過 CDN 載入，資料由外部傳入
+    if (options?.skipFetch) {
+      setData(null)
+      setError(null)
+      setIsLoading(false)
+      currentRequestRef.current = null
+      return
+    }
+
     if (!mobId) {
       setData(null)
       setError(null)
@@ -309,7 +322,7 @@ export function useLazyDropsDetailed(mobId: number | null) {
     }
 
     loadData()
-  }, [mobId])
+  }, [mobId, options?.skipFetch])
 
   return { data, isLoading, error }
 }

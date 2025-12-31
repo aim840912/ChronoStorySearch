@@ -3,6 +3,7 @@
 import { memo, useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import type { AdvancedFilterOptions, SuggestionItem, SearchTypeFilter, FilterMode, ExtendedUniqueItem } from '@/types'
 import type { TradeType, EquipmentStatsFilter } from '@/types/trade'
+import type { GameMode } from '@/hooks/usePageModes'
 import { SearchBar } from '@/components/SearchBar'
 import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
 import { LanguageToggle } from '@/components/LanguageToggle'
@@ -17,6 +18,10 @@ import type { ImageFormat } from '@/lib/image-utils'
 import { getItemImageUrl } from '@/lib/image-utils'
 
 interface SearchHeaderProps {
+  // 遊戲模式
+  gameMode?: GameMode
+  onGameModeChange?: (mode: GameMode) => void
+
   // 搜尋相關
   searchTerm: string
   onSearchChange: (term: string) => void
@@ -73,6 +78,11 @@ interface SearchHeaderProps {
   // 交易搜尋自動完成
   searchItems?: (query: string, limit?: number) => ExtendedUniqueItem[]
 
+  // Artale 區域篩選（Phase 15）
+  artaleAreas?: string[]
+  selectedArtaleAreas?: Set<string>
+  onArtaleAreaToggle?: (area: string) => void
+
   // 工具列相關
   onExpTrackerClick?: () => void
   onScreenRecorderClick?: () => void
@@ -93,6 +103,10 @@ interface SearchHeaderProps {
  * 使用 React.memo 優化以避免不必要的重新渲染
  */
 export const SearchHeader = memo(function SearchHeader({
+  // 遊戲模式
+  gameMode = 'chronostory',
+  onGameModeChange,
+  // 搜尋相關
   searchTerm,
   onSearchChange,
   searchType,
@@ -136,6 +150,10 @@ export const SearchHeader = memo(function SearchHeader({
   onTradeStatsFilterReset,
   // 交易搜尋自動完成
   searchItems,
+  // Artale 區域篩選
+  artaleAreas = [],
+  selectedArtaleAreas = new Set(),
+  onArtaleAreaToggle,
   // 工具列相關
   onExpTrackerClick,
   onScreenRecorderClick,
@@ -374,18 +392,42 @@ export const SearchHeader = memo(function SearchHeader({
     <div className="sticky top-0 z-40 bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl border-b border-gray-200/50 dark:border-gray-700/50 shadow-lg shadow-gray-200/20 dark:shadow-gray-900/30 pt-1 sm:pt-1.5 pb-1 sm:pb-1.5">
       {/* 標題區域 - 緊湊設計 */}
       <div className="flex items-center justify-between mb-1 px-2 sm:px-4 max-w-7xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
-          <img
-            src="/images/chrono.png"
-            alt="ChronoStory Logo"
-            className="w-12 h-12 sm:w-14 sm:h-14 flex-shrink-0"
-          />
-          <span className="truncate">{t('app.title')}</span>
-        </h1>
+        <div className="flex items-center gap-2">
+          {/* Logo 和標題 - Artale 模式不顯示 Logo */}
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
+            {gameMode === 'chronostory' && (
+              <img
+                src="/images/chrono.png"
+                alt="ChronoStory Logo"
+                className="w-12 h-12 sm:w-14 sm:h-14 flex-shrink-0"
+              />
+            )}
+            <span className="truncate">
+              {gameMode === 'artale' ? 'Artale' : t('app.title')}
+            </span>
+          </h1>
+
+          {/* 遊戲切換按鈕 */}
+          <button
+            type="button"
+            onClick={() => onGameModeChange?.(gameMode === 'chronostory' ? 'artale' : 'chronostory')}
+            className="ml-1 px-2 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors border border-gray-300 dark:border-gray-600"
+            title={t('gameSelector.switchGame')}
+          >
+            <span className="flex items-center gap-1">
+              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+              </svg>
+              <span className="hidden sm:inline">
+                {gameMode === 'chronostory' ? 'Artale' : 'ChronoStory'}
+              </span>
+            </span>
+          </button>
+        </div>
         {/* 工具列和語言切換 - 大於 460px 時顯示在標題旁 */}
         <div className="hidden min-[460px]:flex gap-1.5 sm:gap-2 flex-shrink-0 items-center">
-          {/* 交易市場切換按鈕 - 僅登入後顯示 */}
-          {user && (
+          {/* 交易市場切換按鈕 - 僅登入後且 ChronoStory 模式顯示 */}
+          {user && gameMode === 'chronostory' && (
             <button
               type="button"
               onClick={onTradeModeToggle}
@@ -447,9 +489,9 @@ export const SearchHeader = memo(function SearchHeader({
 
       {/* 工具列和語言切換 - 小於 460px 時顯示在搜尋欄上方 */}
       <div className="flex min-[460px]:hidden px-2 mb-1 max-w-7xl mx-auto">
-        <div className={`grid ${user ? 'grid-cols-5' : 'grid-cols-4'} gap-1 w-full [&>button]:w-full [&>button]:justify-center [&>div]:w-full [&>div>button]:w-full [&>div>button]:justify-center`}>
-          {/* 交易市場切換按鈕 - 僅登入後顯示 */}
-          {user && (
+        <div className={`grid ${user && gameMode === 'chronostory' ? 'grid-cols-5' : 'grid-cols-4'} gap-1 w-full [&>button]:w-full [&>button]:justify-center [&>div]:w-full [&>div>button]:w-full [&>div>button]:justify-center`}>
+          {/* 交易市場切換按鈕 - 僅登入後且 ChronoStory 模式顯示 */}
+          {user && gameMode === 'chronostory' && (
             <button
               type="button"
               onClick={onTradeModeToggle}
@@ -698,6 +740,10 @@ export const SearchHeader = memo(function SearchHeader({
             selectedMerchantMapId={selectedMerchantMapId}
             onMerchantSelect={onMerchantSelect}
             onMerchantClose={onMerchantClose}
+            isArtaleMode={gameMode === 'artale'}
+            artaleAreas={artaleAreas}
+            selectedArtaleAreas={selectedArtaleAreas}
+            onArtaleAreaToggle={onArtaleAreaToggle}
           />
           {/* 進階篩選面板 - 僅搜尋模式顯示 */}
           <AdvancedFilterPanel

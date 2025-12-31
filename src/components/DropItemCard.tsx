@@ -4,7 +4,7 @@ import { useState, useMemo, useRef, useEffect } from 'react'
 import type { DropItem, ItemAttributesEssential } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
-import { getItemImageUrl, getMonsterImageUrl } from '@/lib/image-utils'
+import { getItemImageUrl, getMonsterImageUrl, getArtaleImageUrl } from '@/lib/image-utils'
 import { useLazyItemDetailed } from '@/hooks/useLazyData'
 import { useDropRelations } from '@/hooks/useDropRelations'
 import { ItemAttributesCard } from './ItemAttributesCard'
@@ -19,6 +19,8 @@ interface DropItemCardProps {
   showIcons?: boolean
   /** 是否只顯示最大屬性值 */
   showMaxOnly?: boolean
+  /** 是否為 Artale 模式（使用中文名稱取得圖片） */
+  isArtaleMode?: boolean
 }
 
 /**
@@ -33,6 +35,7 @@ export function DropItemCard({
   onItemClick,
   showIcons = false,
   showMaxOnly = false,
+  isArtaleMode = false,
 }: DropItemCardProps) {
   const { language, t } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
@@ -75,8 +78,10 @@ export function DropItemCard({
   // 獲取顯示名稱（支援中英文切換）
   const displayItemName = getItemDisplayName(drop.itemName, drop.chineseItemName, language)
 
-  // 物品圖示 URL（傳入 itemName 以支援卷軸圖示）
-  const itemIconUrl = getItemImageUrl(drop.itemId, { itemName: drop.itemName })
+  // 物品圖示 URL（Artale 使用中文名稱，ChronoStory 使用數字 ID）
+  const itemIconUrl = isArtaleMode
+    ? getArtaleImageUrl(drop.chineseItemName || drop.itemName)
+    : getItemImageUrl(drop.itemId, { itemName: drop.itemName })
 
   // 根據物品類型決定顯示內容
   const essentialData = itemAttributesMap.get(drop.itemId)

@@ -75,6 +75,9 @@ interface AllItemsViewProps {
 
   // 翻譯函數
   t: (key: string) => string
+
+  // Artale 模式
+  isArtaleMode?: boolean
 }
 
 // 從轉蛋資料查找物品的 reqLevel
@@ -120,6 +123,7 @@ export function AllItemsView({
   gachaMachines,
   itemIndexMap,
   t,
+  isArtaleMode = false,
 }: AllItemsViewProps) {
   // 沒有任何資料時顯示空狀態
   if (!hasAnyData) {
@@ -173,6 +177,7 @@ export function AllItemsView({
               level={mobLevelMap.get(monsterData.mobId) ?? null}
               index={index}
               inGame={mobInGameMap.get(monsterData.mobId) ?? true}
+              isArtaleMode={isArtaleMode}
             />
             {/* 每 8 張卡片後插入廣告 */}
             {(index + 1) % 8 === 0 && index < totalCards - 1 && (
@@ -225,6 +230,7 @@ export function AllItemsView({
               reqLevel={reqLevel}
               index={index}
               fromMerchant={merchantItemIndex.has(displayItemName.toLowerCase())}
+              isArtaleMode={isArtaleMode}
             />
             {/* 每 8 張卡片後插入廣告 */}
             {(index + 1) % 8 === 0 && index < totalCards - 1 && (
@@ -252,6 +258,7 @@ export function AllItemsView({
               level={mobLevelMap.get(card.data.mobId) ?? null}
               index={index}
               inGame={mobInGameMap.get(card.data.mobId) ?? true}
+              isArtaleMode={isArtaleMode}
             />
             {/* 每 8 張卡片後插入廣告 */}
             {(index + 1) % 8 === 0 && index < totalCards - 1 && (
@@ -277,6 +284,7 @@ export function AllItemsView({
               }
               index={index}
               fromMerchant={merchantItemIndex.has(card.data.itemName.toLowerCase())}
+              isArtaleMode={isArtaleMode}
             />
             {/* 每 8 張卡片後插入廣告 */}
             {(index + 1) % 8 === 0 && index < totalCards - 1 && (
@@ -320,6 +328,7 @@ export function AllItemsView({
                   level={mobLevelMap.get(monster.mobId) ?? null}
                   index={index}
                   inGame={mobInGameMap.get(monster.mobId) ?? true}
+                  isArtaleMode={isArtaleMode}
                 />
                 {/* 每 8 張卡片後插入廣告 */}
                 {(index + 1) % 8 === 0 && index < displayedMonsters.length - 1 && (
@@ -376,6 +385,7 @@ export function AllItemsView({
                   }
                   index={index}
                   fromMerchant={merchantItemIndex.has(item.itemName.toLowerCase())}
+                  isArtaleMode={isArtaleMode}
                 />
                 {/* 每 8 張卡片後插入廣告 */}
                 {(index + 1) % 8 === 0 && index < displayedItems.length - 1 && (

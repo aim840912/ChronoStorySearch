@@ -11,6 +11,7 @@
  */
 
 import imageManifest from '@/../data/available-images.json'
+import artaleImageManifest from '@/../data/artale-available-images.json'
 import r2Versions from '@/../data/r2-versions.json'
 import { clientLogger } from './logger'
 
@@ -62,6 +63,9 @@ const availableMonsterDies = new Set(
 const availableMonsterHits = new Set(
   (imageManifest as { 'monsters-hit'?: number[] })['monsters-hit'] || []
 )
+
+// Artale 圖片清單（使用中文名稱作為 key）
+const availableArtaleImages = new Set(artaleImageManifest.images)
 
 // 圖片格式類型：png（靜態）, stand（待機GIF）, hit（受擊GIF）, die（死亡GIF）
 export type ImageFormat = 'png' | 'stand' | 'hit' | 'die'
@@ -230,4 +234,50 @@ export function getMonsterImageUrl(
   // 預設返回 PNG（加入版本查詢參數）
   const versionQuery = getImageVersionQuery('monsters', mobId)
   return `${R2_PUBLIC_URL}/images/monsters/${mobId}.png${versionQuery}`
+}
+
+// ==================== Artale 圖片工具函數 ====================
+
+/**
+ * 檢查 Artale 圖片是否存在
+ * @param name 中文名稱（怪物或物品名稱）
+ * @returns 圖片是否存在
+ */
+export function hasArtaleImage(name: string): boolean {
+  return availableArtaleImages.has(name)
+}
+
+/**
+ * 取得 Artale 圖片 URL
+ *
+ * Artale 使用中文名稱作為圖片檔名，儲存在獨立的 R2 路徑。
+ * 例如：嫩寶、藍菇菇、[技能書]元氣彈20
+ *
+ * @param name 中文名稱（怪物或物品名稱）
+ * @param options 選項
+ * @param options.fallback 預設圖片路徑
+ * @returns 圖片 URL（使用 R2 CDN）
+ */
+export function getArtaleImageUrl(
+  name: string,
+  options: {
+    fallback?: string
+  } = {}
+): string {
+  const { fallback = '/images/monsters/default.svg' } = options
+
+  // 強制使用 R2 CDN
+  if (!R2_PUBLIC_URL) {
+    clientLogger.error(`無法載入 Artale 圖片 ${name}：R2_PUBLIC_URL 未設置`)
+    return fallback
+  }
+
+  // 檢查圖片是否存在
+  if (!hasArtaleImage(name)) {
+    return fallback
+  }
+
+  // URL 編碼中文名稱（處理特殊字元如 []、空格等）
+  const encodedName = encodeURIComponent(name)
+  return `${R2_PUBLIC_URL}/artale/images/${encodedName}.png`
 }

@@ -45,6 +45,11 @@ interface FilterTabsProps {
   selectedMerchantMapId?: string | null
   onMerchantSelect?: (mapId: string | null) => void
   onMerchantClose?: () => void
+  // Artale 區域篩選（Phase 15）
+  isArtaleMode?: boolean
+  artaleAreas?: string[]
+  selectedArtaleAreas?: Set<string>
+  onArtaleAreaToggle?: (area: string) => void
 }
 
 /**
@@ -67,6 +72,11 @@ export function FilterTabs({
   selectedMerchantMapId: _selectedMerchantMapId,
   onMerchantSelect: _onMerchantSelect,
   onMerchantClose: _onMerchantClose,
+  // Artale 區域篩選（Phase 15）
+  isArtaleMode = false,
+  artaleAreas = [],
+  selectedArtaleAreas = new Set(),
+  onArtaleAreaToggle,
 }: FilterTabsProps) {
   // 暫時抑制 unused variable 警告
   void _selectedMerchantMapId
@@ -74,9 +84,11 @@ export function FilterTabs({
   void _onMerchantClose
   const { t, language } = useLanguage()
   const [gachaOpen, setGachaOpen] = useState(false)
+  const [artaleAreaOpen, setArtaleAreaOpen] = useState(false)
   // 商人 - 暫時停用
   // const [merchantOpen, setMerchantOpen] = useState(false)
   const gachaRef = useRef<HTMLDivElement>(null)
+  const artaleAreaRef = useRef<HTMLDivElement>(null)
   // const merchantRef = useRef<HTMLDivElement>(null)
 
   // 點擊外部關閉下拉選單
@@ -84,6 +96,9 @@ export function FilterTabs({
     const handleClickOutside = (event: MouseEvent) => {
       if (gachaRef.current && !gachaRef.current.contains(event.target as Node)) {
         setGachaOpen(false)
+      }
+      if (artaleAreaRef.current && !artaleAreaRef.current.contains(event.target as Node)) {
+        setArtaleAreaOpen(false)
       }
       // 商人 - 暫時停用
       // if (merchantRef.current && !merchantRef.current.contains(event.target as Node)) {
@@ -280,13 +295,64 @@ export function FilterTabs({
         <span className="min-[518px]:hidden">{language === 'zh-TW' ? '物' : 'I'}</span>
       </button>
 
-      {/* 分隔線 */}
-      {onGachaSelect && (
+      {/* 分隔線 - 在有 Artale 區域或轉蛋選單時顯示 */}
+      {((isArtaleMode && artaleAreas.length > 0) || (!isArtaleMode && onGachaSelect)) && (
         <div className="hidden min-[460px]:block w-px h-8 bg-gray-300 dark:bg-gray-600 mx-1 self-center" />
       )}
 
-      {/* 轉蛋下拉選單 */}
-      {onGachaSelect && onGachaClose && (
+      {/* Artale 區域下拉選單 */}
+      {isArtaleMode && artaleAreas.length > 0 && (
+        <div className="relative flex-1 lg:flex-initial" ref={artaleAreaRef}>
+          <button
+            onClick={() => setArtaleAreaOpen(!artaleAreaOpen)}
+            className={`w-full px-2 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center justify-center lg:justify-start gap-1.5 ${
+              selectedArtaleAreas.size > 0
+                ? 'bg-emerald-600 text-white shadow-md'
+                : 'text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-white/50 dark:hover:bg-gray-700/50'
+            }`}
+          >
+            <span className="hidden min-[518px]:inline">
+              {language === 'zh-TW' ? '區域' : 'Area'}
+              {selectedArtaleAreas.size > 0 && ` (${selectedArtaleAreas.size})`}
+            </span>
+            <span className="min-[518px]:hidden">
+              {language === 'zh-TW' ? '區' : 'A'}
+              {selectedArtaleAreas.size > 0 && ` (${selectedArtaleAreas.size})`}
+            </span>
+            <svg
+              className={`w-4 h-4 transition-transform ${artaleAreaOpen ? 'rotate-180' : ''}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          {artaleAreaOpen && (
+            <div className="absolute top-full left-0 mt-1 w-[90vw] max-w-[600px] bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 z-50 p-2">
+              <div className="grid grid-cols-[repeat(auto-fill,minmax(80px,1fr))] gap-1">
+                {artaleAreas.map((area) => (
+                  <button
+                    key={area}
+                    onClick={() => onArtaleAreaToggle?.(area)}
+                    className={`px-2 py-1.5 text-xs font-medium rounded-lg transition-colors text-center ${
+                      selectedArtaleAreas.has(area)
+                        ? 'bg-emerald-600 text-white'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-emerald-100 dark:hover:bg-emerald-900/30'
+                    }`}
+                  >
+                    {area}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* 轉蛋下拉選單 - 只在 ChronoStory 模式顯示 */}
+      {!isArtaleMode && onGachaSelect && onGachaClose && (
         <div className="relative flex-1 lg:flex-initial" ref={gachaRef}>
           <button
             onClick={() => setGachaOpen(!gachaOpen)}

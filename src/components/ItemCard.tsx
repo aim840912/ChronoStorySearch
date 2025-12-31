@@ -5,7 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { useAutoFitText } from '@/hooks/useAutoFitText'
 import { useDropRelations } from '@/hooks/useDropRelations'
 import { getItemDisplayName } from '@/lib/display-name'
-import { getItemImageUrl, getMonsterImageUrl } from '@/lib/image-utils'
+import { getItemImageUrl, getMonsterImageUrl, getArtaleImageUrl } from '@/lib/image-utils'
 import type { ItemSource } from '@/types'
 import { BaseCard, CardHeader, CardImage, FavoriteButton, TypeBadge } from './cards'
 
@@ -21,6 +21,7 @@ interface ItemCardProps {
   reqLevel?: number | null
   index?: number // 用於 staggered 動畫
   fromMerchant?: boolean // 是否有商人販售
+  isArtaleMode?: boolean // Artale 模式使用中文名稱作為圖片來源
 }
 
 /**
@@ -45,6 +46,7 @@ export const ItemCard = memo(function ItemCard({
   reqLevel,
   index = 0,
   fromMerchant,
+  isArtaleMode = false,
 }: ItemCardProps) {
   void monsterCount
   const { language, t } = useLanguage()
@@ -52,8 +54,10 @@ export const ItemCard = memo(function ItemCard({
   const isDev = process.env.NODE_ENV === 'development'
 
   const displayItemName = getItemDisplayName(itemName, chineseItemName, language)
-  // 傳入 itemName 以支援卷軸圖示
-  const itemIconUrl = getItemImageUrl(itemId, { itemName })
+  // Artale 模式使用中文名稱取得圖片，ChronoStory 使用數字 ID
+  const itemIconUrl = isArtaleMode
+    ? getArtaleImageUrl(chineseItemName || itemName)
+    : getItemImageUrl(itemId, { itemName })
 
   // 取得會掉落此物品的怪物預覽圖示（全部傳入，由 CardHeader 動態顯示）
   const allIcons = useMemo(() => {

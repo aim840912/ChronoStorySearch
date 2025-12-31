@@ -1,7 +1,8 @@
 'use client'
 
 import { useEffect, useMemo, useState, useRef, useCallback } from 'react'
-import type { DropsEssential, ItemAttributesEssential, JobClass } from '@/types'
+import type { DropsEssential, ItemAttributesEssential, JobClass, MobInfo } from '@/types'
+import type { ArtaleMobInfo } from '@/hooks/useArtaleData'
 import { DropItemCard } from './DropItemCard'
 import { DropItemList } from './DropItemList'
 import { MonsterStatsCard } from './MonsterStatsCard'
@@ -11,7 +12,7 @@ import { TipBubble } from '@/components/TipBubble'
 import { AdSenseDisplay } from './adsense/AdSenseDisplay'
 import { AdSenseAnchor } from './adsense/AdSenseAnchor'
 import { AdSenseCard } from './adsense/AdSenseCard'
-import { getMonsterImageUrl } from '@/lib/image-utils'
+import { getMonsterImageUrl, getArtaleImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { useToast } from '@/hooks/useToast'
@@ -37,6 +38,10 @@ interface MonsterModalProps {
   onGoBack?: () => void
   // 命中率計算器相關 props
   onOpenAccuracyCalculator?: (monsterId: number) => void
+  // Artale 模式（跳過 CDN 載入，使用本地資料）
+  isArtaleMode?: boolean
+  // Artale 怪物資訊（從 page.tsx 傳入）
+  artaleMobInfo?: ArtaleMobInfo | null
 }
 
 /**
@@ -58,6 +63,8 @@ export function MonsterModal({
   hasPreviousModal,
   onGoBack,
   onOpenAccuracyCalculator,
+  isArtaleMode = false,
+  artaleMobInfo,
 }: MonsterModalProps) {
   const { t, language } = useLanguage()
   const { format } = useImageFormat()
@@ -118,15 +125,33 @@ export function MonsterModal({
   } = useLazyMobInfo()
 
   // 懶加載該怪物的 Detailed 掉落資料（包含機率、數量等完整資訊）
+  // Artale 模式跳過 CDN 載入，改用本地 allDrops 資料
   const {
     data: monsterDropsDetailed,
-  } = useLazyDropsDetailed(monsterId)
+  } = useLazyDropsDetailed(monsterId, { skipFetch: isArtaleMode })
 
   // 使用 Detailed 資料（包含完整掉落資訊）
-  // 用 useMemo 包裹以避免 useEffect 依賴變化
+  // Artale 模式：從 allDrops 過濾出該怪物的掉落物品
+  // ChronoStory 模式：使用 CDN 載入的詳細資料
   const monsterDrops = useMemo(() => {
+    if (isArtaleMode && monsterId) {
+      // Artale 模式：從 allDrops 過濾，轉換為 DropItem 格式
+      return allDrops
+        .filter(drop => drop.mobId === monsterId && drop.itemName)
+        .map(drop => ({
+          mobId: drop.mobId,
+          mobName: drop.mobName,
+          chineseMobName: drop.chineseMobName,
+          itemId: drop.itemId,
+          itemName: drop.itemName,
+          chineseItemName: drop.chineseItemName,
+          chance: drop.chance,
+          minQty: drop.minQty,
+          maxQty: drop.maxQty,
+        }))
+    }
     return monsterDropsDetailed || []
-  }, [monsterDropsDetailed])
+  }, [isArtaleMode, monsterId, allDrops, monsterDropsDetailed])
 
   // 根據 itemAttributesMap 判斷物品類別
   const getItemCategory = useCallback((itemId: number): 'equipment' | 'scroll' | 'other' => {
@@ -190,12 +215,41 @@ export function MonsterModal({
   }, [language, monsterData, monsterName])
 
   // 查找怪物詳細資訊
-  const mobInfo = useMemo(() => {
+  const mobInfo = useMemo((): MobInfo | null => {
+    // Artale 模式：將 ArtaleMobInfo 轉換為 MobInfo 格式
+    if (isArtaleMode && artaleMobInfo) {
+      const artaleMob = artaleMobInfo.mob
+      // 轉換為 MobInfo 格式，Artale 資料中沒有的欄位設為 null
+      return {
+        mob: {
+          id: artaleMob.id,
+          name: artaleMob.name,
+          InGame: artaleMob.InGame,
+          maxHP: typeof artaleMob.hp === 'number' ? artaleMob.hp : parseInt(String(artaleMob.hp)) || null,
+          accuracy: null,  // Artale 資料無此欄位
+          evasion: null,   // Artale 資料無此欄位
+          level: artaleMob.level,
+          exp: typeof artaleMob.exp === 'number' ? artaleMob.exp : parseInt(String(artaleMob.exp)) || null,
+          physicalDefense: artaleMob.def,
+          magicDefense: artaleMob.mdef,
+          fire_weakness: null,
+          ice_weakness: null,
+          lightning_weakness: null,
+          holy_weakness: null,
+          poison_weakness: null,
+          minimumPushDamage: null,
+          isBoss: false,
+          isUndead: false,
+        },
+        chineseMobName: artaleMob.chineseName,
+      }
+    }
+    // ChronoStory 模式：從 CDN 載入的資料中查找
     if (!monsterId || !mobInfoData) return null
     return (
       mobInfoData.find((info) => info.mob.id === String(monsterId)) || null
     )
-  }, [monsterId, mobInfoData])
+  }, [isArtaleMode, artaleMobInfo, monsterId, mobInfoData])
 
   // 當 Modal 開啟時載入怪物資訊資料
   useEffect(() => {
@@ -206,7 +260,10 @@ export function MonsterModal({
 
   if (!monsterId) return null
 
-  const monsterIconUrl = getMonsterImageUrl(monsterId, { format })
+  // Artale 模式使用中文名稱取得圖片，ChronoStory 使用數字 ID
+  const monsterIconUrl = isArtaleMode
+    ? getArtaleImageUrl(monsterName)
+    : getMonsterImageUrl(monsterId, { format })
 
   return (
     <BaseModal
@@ -546,6 +603,7 @@ export function MonsterModal({
                         onItemClick={onItemClick}
                         showIcons={showDropIcons}
                         showMaxOnly={showMaxOnly}
+                        isArtaleMode={isArtaleMode}
                       />
                     )
                   })
@@ -559,6 +617,7 @@ export function MonsterModal({
                   isItemFavorite={isItemFavorite}
                   onToggleFavorite={onToggleItemFavorite}
                   onItemClick={onItemClick}
+                  isArtaleMode={isArtaleMode}
                 />
                 {/* 信息流廣告：列表底部 */}
                 {filteredDrops.length > 0 && <AdSenseCard />}

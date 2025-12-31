@@ -15,7 +15,7 @@ import { useState } from 'react'
 import type { DropItem, ItemAttributesEssential, Language } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getItemDisplayName } from '@/lib/display-name'
-import { getItemImageUrl } from '@/lib/image-utils'
+import { getItemImageUrl, getArtaleImageUrl } from '@/lib/image-utils'
 import { useLazyItemDetailed } from '@/hooks/useLazyData'
 import { ItemAttributesCard } from './ItemAttributesCard'
 
@@ -25,6 +25,8 @@ interface DropItemListProps {
   isItemFavorite: (itemId: number) => boolean
   onToggleFavorite: (itemId: number, itemName: string) => void
   onItemClick: (itemId: number, itemName: string) => void
+  /** 是否為 Artale 模式（使用中文名稱取得圖片） */
+  isArtaleMode?: boolean
 }
 
 export function DropItemList({
@@ -33,6 +35,7 @@ export function DropItemList({
   isItemFavorite,
   onToggleFavorite,
   onItemClick,
+  isArtaleMode = false,
 }: DropItemListProps) {
   const { t, language } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
@@ -52,6 +55,7 @@ export function DropItemList({
             isEvenRow={index % 2 === 0}
             language={language}
             t={t}
+            isArtaleMode={isArtaleMode}
           />
         ))}
       </div>
@@ -105,6 +109,7 @@ export function DropItemList({
               onItemClick={onItemClick}
               isEvenRow={index % 2 === 0}
               isDev={isDev}
+              isArtaleMode={isArtaleMode}
             />
           ))}
         </tbody>
@@ -127,6 +132,7 @@ interface DropItemListMobileRowProps {
   isEvenRow: boolean
   language: Language
   t: (key: string) => string
+  isArtaleMode?: boolean
 }
 
 function DropItemListMobileRow({
@@ -137,6 +143,7 @@ function DropItemListMobileRow({
   isEvenRow,
   language,
   t,
+  isArtaleMode = false,
 }: DropItemListMobileRowProps) {
   // 手機版用 2 位小數節省空間
   const chancePercent = drop.chance.toFixed(2)
@@ -144,8 +151,10 @@ function DropItemListMobileRow({
   // 獲取顯示名稱
   const displayItemName = getItemDisplayName(drop.itemName, drop.chineseItemName, language)
 
-  // 物品圖示 URL（傳入 itemName 以支援卷軸圖示）
-  const itemIconUrl = getItemImageUrl(drop.itemId, { itemName: drop.itemName })
+  // 物品圖示 URL（Artale 使用中文名稱，ChronoStory 使用數字 ID）
+  const itemIconUrl = isArtaleMode
+    ? getArtaleImageUrl(drop.chineseItemName || drop.itemName)
+    : getItemImageUrl(drop.itemId, { itemName: drop.itemName })
 
   return (
     <div
@@ -227,6 +236,7 @@ interface DropItemListDesktopRowProps {
   onItemClick: (itemId: number, itemName: string) => void
   isEvenRow: boolean
   isDev: boolean
+  isArtaleMode?: boolean
 }
 
 function DropItemListDesktopRow({
@@ -237,6 +247,7 @@ function DropItemListDesktopRow({
   onItemClick,
   isEvenRow,
   isDev,
+  isArtaleMode = false,
 }: DropItemListDesktopRowProps) {
   const { language, t } = useLanguage()
   const [isExpanded, setIsExpanded] = useState(false)
@@ -248,8 +259,10 @@ function DropItemListDesktopRow({
   // 獲取顯示名稱
   const displayItemName = getItemDisplayName(drop.itemName, drop.chineseItemName, language)
 
-  // 物品圖示 URL（傳入 itemName 以支援卷軸圖示）
-  const itemIconUrl = getItemImageUrl(drop.itemId, { itemName: drop.itemName })
+  // 物品圖示 URL（Artale 使用中文名稱，ChronoStory 使用數字 ID）
+  const itemIconUrl = isArtaleMode
+    ? getArtaleImageUrl(drop.chineseItemName || drop.itemName)
+    : getItemImageUrl(drop.itemId, { itemName: drop.itemName })
 
   // 根據物品類型決定顯示內容
   const essentialData = itemAttributesMap.get(drop.itemId)

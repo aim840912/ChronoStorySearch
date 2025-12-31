@@ -26,7 +26,11 @@
     "vercel:pause": "node scripts/vercel-manage.js pause",
     "vercel:unpause": "node scripts/vercel-manage.js unpause",
     "vercel:status": "node scripts/vercel-manage.js status",
-    "convert-md-links": "npx tsx chronostoryData/scripts/convert-md-links.ts"
+    "convert-md-links": "npx tsx chronostoryData/scripts/convert-md-links.ts",
+    "sync:artale": "node scripts/sync-artale-data.js",
+    "artale:sync-images": "node scripts/sync-artale-images.js",
+    "artale:r2-upload": "bash scripts/r2-sync-artale.sh",
+    "artale:images": "npm run artale:sync-images && npm run artale:r2-upload"
   },
   "dependencies": {
     "@supabase/ssr": "^0.8.0",

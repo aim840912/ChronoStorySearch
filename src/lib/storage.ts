@@ -57,6 +57,9 @@ export const STORAGE_KEYS = {
   FILTER_HISTORY: 'chronostory-filter-history',
   // 手動經驗記錄器
   MANUAL_EXP_RECORDS: 'chronostory-manual-exp-records',
+  // Artale 專用收藏（僅 localStorage，不同步雲端）
+  ARTALE_FAVORITE_MONSTERS: 'artale-favorite-monsters',
+  ARTALE_FAVORITE_ITEMS: 'artale-favorite-items',
 } as const
 
 /**
@@ -199,6 +202,23 @@ export function getGuestFavoriteItems(): FavoriteItem[] {
 
 export function setGuestFavoriteItems(items: FavoriteItem[]): boolean {
   return setStorageItem(STORAGE_KEYS.GUEST_FAVORITE_ITEMS, items)
+}
+
+// Artale 專用收藏函數（僅 localStorage，不同步雲端）
+export function getArtaleFavoriteMonsters(): FavoriteMonster[] {
+  return getStorageItem<FavoriteMonster[]>(STORAGE_KEYS.ARTALE_FAVORITE_MONSTERS, [])
+}
+
+export function setArtaleFavoriteMonsters(monsters: FavoriteMonster[]): boolean {
+  return setStorageItem(STORAGE_KEYS.ARTALE_FAVORITE_MONSTERS, monsters)
+}
+
+export function getArtaleFavoriteItems(): FavoriteItem[] {
+  return getStorageItem<FavoriteItem[]>(STORAGE_KEYS.ARTALE_FAVORITE_ITEMS, [])
+}
+
+export function setArtaleFavoriteItems(items: FavoriteItem[]): boolean {
+  return setStorageItem(STORAGE_KEYS.ARTALE_FAVORITE_ITEMS, items)
 }
 
 export function getLanguage(): Language {

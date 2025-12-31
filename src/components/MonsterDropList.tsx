@@ -16,7 +16,7 @@ import type { DropItem, Language } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { getMonsterDisplayName } from '@/lib/display-name'
-import { getMonsterImageUrl } from '@/lib/image-utils'
+import { getMonsterImageUrl, getArtaleImageUrl } from '@/lib/image-utils'
 
 // localStorage key for sorting preference
 const SORT_ORDER_STORAGE_KEY = 'monster-drop-sort-order'
@@ -27,6 +27,8 @@ interface MonsterDropListProps {
   isMonsterFavorite: (mobId: number) => boolean
   onToggleFavorite: (mobId: number, mobName: string) => void
   onMonsterClick: (mobId: number, mobName: string) => void
+  /** 是否為 Artale 模式（使用中文名稱取得圖片） */
+  isArtaleMode?: boolean
 }
 
 export const MonsterDropList = memo(function MonsterDropList({
@@ -35,6 +37,7 @@ export const MonsterDropList = memo(function MonsterDropList({
   isMonsterFavorite,
   onToggleFavorite,
   onMonsterClick,
+  isArtaleMode = false,
 }: MonsterDropListProps) {
   const { t, language } = useLanguage()
   const isDev = process.env.NODE_ENV === 'development'
@@ -83,6 +86,7 @@ export const MonsterDropList = memo(function MonsterDropList({
             isEvenRow={index % 2 === 0}
             language={language}
             t={t}
+            isArtaleMode={isArtaleMode}
           />
         ))}
       </div>
@@ -142,6 +146,7 @@ export const MonsterDropList = memo(function MonsterDropList({
               onMonsterClick={onMonsterClick}
               isEvenRow={index % 2 === 0}
               isDev={isDev}
+              isArtaleMode={isArtaleMode}
             />
           ))}
         </tbody>
@@ -163,6 +168,7 @@ interface MonsterDropListMobileRowProps {
   isEvenRow: boolean
   language: Language
   t: (key: string) => string
+  isArtaleMode?: boolean
 }
 
 const MonsterDropListMobileRow = memo(function MonsterDropListMobileRow({
@@ -173,6 +179,7 @@ const MonsterDropListMobileRow = memo(function MonsterDropListMobileRow({
   isEvenRow,
   language,
   t,
+  isArtaleMode = false,
 }: MonsterDropListMobileRowProps) {
   const { format } = useImageFormat()
   // 手機版用 2 位小數節省空間
@@ -181,8 +188,10 @@ const MonsterDropListMobileRow = memo(function MonsterDropListMobileRow({
   // 獲取顯示名稱
   const displayMobName = getMonsterDisplayName(drop.mobName, drop.chineseMobName, language)
 
-  // 怪物圖示 URL
-  const monsterIconUrl = getMonsterImageUrl(drop.mobId, { format })
+  // 怪物圖示 URL（Artale 使用中文名稱，ChronoStory 使用數字 ID）
+  const monsterIconUrl = isArtaleMode
+    ? getArtaleImageUrl(drop.chineseMobName || drop.mobName)
+    : getMonsterImageUrl(drop.mobId, { format })
 
   return (
     <div
@@ -264,6 +273,7 @@ interface MonsterDropListDesktopRowProps {
   onMonsterClick: (mobId: number, mobName: string) => void
   isEvenRow: boolean
   isDev: boolean
+  isArtaleMode?: boolean
 }
 
 const MonsterDropListDesktopRow = memo(function MonsterDropListDesktopRow({
@@ -274,6 +284,7 @@ const MonsterDropListDesktopRow = memo(function MonsterDropListDesktopRow({
   onMonsterClick,
   isEvenRow,
   isDev,
+  isArtaleMode = false,
 }: MonsterDropListDesktopRowProps) {
   const { language, t } = useLanguage()
   const { format } = useImageFormat()
@@ -289,8 +300,10 @@ const MonsterDropListDesktopRow = memo(function MonsterDropListDesktopRow({
   // 獲取顯示名稱
   const displayMobName = getMonsterDisplayName(drop.mobName, drop.chineseMobName, language)
 
-  // 怪物圖示 URL
-  const monsterIconUrl = getMonsterImageUrl(drop.mobId, { format })
+  // 怪物圖示 URL（Artale 使用中文名稱，ChronoStory 使用數字 ID）
+  const monsterIconUrl = isArtaleMode
+    ? getArtaleImageUrl(drop.chineseMobName || drop.mobName)
+    : getMonsterImageUrl(drop.mobId, { format })
 
   return (
     <tr

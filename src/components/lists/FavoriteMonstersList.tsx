@@ -14,6 +14,8 @@ interface FavoriteMonstersListProps {
   onToggleFavorite: (mobId: number, mobName: string) => void
   onClearClick: () => void
   t: (key: string) => string
+  /** 是否為 Artale 模式（使用中文名稱取得圖片） */
+  isArtaleMode?: boolean
 }
 
 /**
@@ -28,6 +30,7 @@ export function FavoriteMonstersList({
   onToggleFavorite,
   onClearClick,
   t,
+  isArtaleMode = false,
 }: FavoriteMonstersListProps) {
   if (monsters.length === 0) {
     return (
@@ -70,6 +73,7 @@ export function FavoriteMonstersList({
             level={mobLevelMap.get(monster.mobId) ?? null}
             index={index}
             inGame={mobInGameMap.get(monster.mobId) ?? true}
+            isArtaleMode={isArtaleMode}
           />
         ))}
       </div>

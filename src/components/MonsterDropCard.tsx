@@ -6,7 +6,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { useDropRelations } from '@/hooks/useDropRelations'
 import { getMonsterDisplayName } from '@/lib/display-name'
-import { getMonsterImageUrl, getItemImageUrl } from '@/lib/image-utils'
+import { getMonsterImageUrl, getItemImageUrl, getArtaleImageUrl } from '@/lib/image-utils'
 
 interface MonsterDropCardProps {
   drop: DropItem
@@ -16,6 +16,8 @@ interface MonsterDropCardProps {
   onMonsterClick: (mobId: number, mobName: string) => void
   /** 是否顯示掉落來源圖示 */
   showIcons?: boolean
+  /** 是否為 Artale 模式（使用中文名稱取得圖片） */
+  isArtaleMode?: boolean
 }
 
 /**
@@ -31,6 +33,7 @@ export const MonsterDropCard = memo(function MonsterDropCard({
   onToggleFavorite,
   onMonsterClick,
   showIcons = false,
+  isArtaleMode = false,
 }: MonsterDropCardProps) {
   const { language, t } = useLanguage()
   const { format } = useImageFormat()
@@ -64,9 +67,11 @@ export const MonsterDropCard = memo(function MonsterDropCard({
     const scrolls = getScrollsForMob(drop.mobId)
     return scrolls.slice(0, maxIcons).map((scroll) => ({
       id: scroll.id,
-      imageUrl: getItemImageUrl(scroll.id, { itemName: scroll.name }),
+      imageUrl: isArtaleMode
+        ? getArtaleImageUrl(scroll.name)
+        : getItemImageUrl(scroll.id, { itemName: scroll.name }),
     }))
-  }, [showIcons, drop.mobId, getScrollsForMob, maxIcons])
+  }, [showIcons, drop.mobId, getScrollsForMob, maxIcons, isArtaleMode])
   const totalScrolls = useMemo(() => {
     if (!showIcons) return 0
     return getScrollsForMob(drop.mobId).length
@@ -81,7 +86,10 @@ export const MonsterDropCard = memo(function MonsterDropCard({
   // 獲取顯示名稱（支援中英文切換）
   const displayMobName = getMonsterDisplayName(drop.mobName, drop.chineseMobName, language)
 
-  const monsterIconUrl = getMonsterImageUrl(drop.mobId, { format })
+  // 怪物圖示 URL（Artale 使用中文名稱，ChronoStory 使用數字 ID）
+  const monsterIconUrl = isArtaleMode
+    ? getArtaleImageUrl(drop.chineseMobName || drop.mobName)
+    : getMonsterImageUrl(drop.mobId, { format })
 
   return (
     <div

@@ -2,6 +2,7 @@
 
 import { memo } from 'react'
 import type { DropsEssential, ItemAttributesEssential, GachaMachine } from '@/types'
+import type { ArtaleMobInfo } from '@/hooks/useArtaleData'
 import { MonsterModal } from '@/components/MonsterModal'
 import { ItemModal } from '@/components/ItemModal'
 import { BugReportModal } from '@/components/BugReportModal'
@@ -123,6 +124,11 @@ interface ModalManagerProps {
   toastIsVisible: boolean
   toastType: 'success' | 'error' | 'info'
   hideToast: () => void
+
+  // Artale 模式（跳過 CDN 載入，使用本地資料）
+  isArtaleMode?: boolean
+  // Artale 怪物資訊 Map（從 page.tsx 傳入）
+  artaleMobInfoMap?: Map<string, ArtaleMobInfo>
 }
 
 /**
@@ -201,6 +207,8 @@ export const ModalManager = memo(function ModalManager({
   toastIsVisible,
   toastType,
   hideToast,
+  isArtaleMode = false,
+  artaleMobInfoMap,
 }: ModalManagerProps) {
   const { t } = useLanguage()
 
@@ -222,6 +230,8 @@ export const ModalManager = memo(function ModalManager({
         hasPreviousModal={hasPreviousModal}
         onGoBack={goBack}
         onOpenAccuracyCalculator={openAccuracyCalculator}
+        isArtaleMode={isArtaleMode}
+        artaleMobInfo={isArtaleMode ? artaleMobInfoMap?.get(selectedMonsterName) : undefined}
       />
 
       {/* Item Drops Modal */}
@@ -242,6 +252,7 @@ export const ModalManager = memo(function ModalManager({
         onGachaMachineClick={handleGachaMachineClick}
         hasPreviousModal={hasPreviousModal}
         onGoBack={goBack}
+        isArtaleMode={isArtaleMode}
       />
 
       {/* Bug Report Modal */}

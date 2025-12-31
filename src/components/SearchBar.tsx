@@ -41,6 +41,12 @@ interface SearchBarProps {
   selectedMerchantMapId?: string | null
   onMerchantSelect?: (mapId: string | null) => void
   onMerchantClose?: () => void
+  // Artale 模式
+  isArtaleMode?: boolean
+  // Artale 區域篩選（Phase 15）
+  artaleAreas?: string[]
+  selectedArtaleAreas?: Set<string>
+  onArtaleAreaToggle?: (area: string) => void
 }
 
 /**
@@ -78,6 +84,10 @@ export function SearchBar({
   selectedMerchantMapId = null,
   onMerchantSelect,
   onMerchantClose,
+  isArtaleMode = false,
+  artaleAreas = [],
+  selectedArtaleAreas = new Set(),
+  onArtaleAreaToggle,
 }: SearchBarProps) {
   const { t } = useLanguage()
 
@@ -175,6 +185,7 @@ export function SearchBar({
             focusedIndex={focusedIndex}
             onSelect={onSelectSuggestion}
             onFocusedIndexChange={onFocusedIndexChange}
+            isArtaleMode={isArtaleMode}
           />
           {/* 首次使用提示 */}
           <TipBubble
@@ -230,6 +241,10 @@ export function SearchBar({
           selectedMerchantMapId={selectedMerchantMapId ?? null}
           onMerchantSelect={onMerchantSelect}
           onMerchantClose={onMerchantClose}
+          isArtaleMode={isArtaleMode}
+          artaleAreas={artaleAreas}
+          selectedArtaleAreas={selectedArtaleAreas}
+          onArtaleAreaToggle={onArtaleAreaToggle}
         />
       )}
     </div>

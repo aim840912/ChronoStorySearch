@@ -6,7 +6,7 @@ import { useAutoFitText } from '@/hooks/useAutoFitText'
 import { useDropRelations } from '@/hooks/useDropRelations'
 import { useLazyItemDetailed } from '@/hooks/useLazyData'
 import { getItemDisplayName } from '@/lib/display-name'
-import { getItemImageUrl, getMonsterImageUrl } from '@/lib/image-utils'
+import { getItemImageUrl, getMonsterImageUrl, getArtaleImageUrl } from '@/lib/image-utils'
 import type { ItemSource } from '@/types'
 import { ItemAttributesCard } from './ItemAttributesCard'
 import { CardHeader } from '@/components/cards/CardHeader'
@@ -29,6 +29,8 @@ interface ExpandableFavoriteItemCardProps {
   onDragOver?: (e: React.DragEvent) => void
   onDrop?: (e: React.DragEvent, itemId: number) => void
   onDragEnd?: () => void
+  /** 是否為 Artale 模式（使用中文名稱取得圖片） */
+  isArtaleMode?: boolean
 }
 
 /**
@@ -56,6 +58,7 @@ export function ExpandableFavoriteItemCard({
   onDragOver,
   onDrop,
   onDragEnd,
+  isArtaleMode = false,
 }: ExpandableFavoriteItemCardProps) {
   void monsterCount
   const { language, t } = useLanguage()
@@ -71,7 +74,11 @@ export function ExpandableFavoriteItemCard({
   )
 
   const displayItemName = getItemDisplayName(itemName, chineseItemName, language)
-  const itemIconUrl = getItemImageUrl(itemId, { itemName })
+
+  // 物品圖示 URL（Artale 使用中文名稱，ChronoStory 使用數字 ID）
+  const itemIconUrl = isArtaleMode
+    ? getArtaleImageUrl(chineseItemName || itemName)
+    : getItemImageUrl(itemId, { itemName })
 
   // 取得會掉落此物品的怪物預覽圖示（CardHeader 會自動處理顯示數量）
   const allIcons = useMemo(() => {

@@ -86,6 +86,9 @@ interface ContentDisplayProps {
 
   // 物品索引（用於查詢中文名稱）
   itemIndexMap: Map<number, ItemIndexItem>
+
+  // Artale 模式
+  isArtaleMode?: boolean
 }
 
 /**
@@ -126,6 +129,7 @@ export const ContentDisplay = memo(function ContentDisplay({
   allDrops,
   gachaMachines,
   itemIndexMap,
+  isArtaleMode = false,
 }: ContentDisplayProps) {
   const { t } = useLanguage()
 
@@ -147,6 +151,7 @@ export const ContentDisplay = memo(function ContentDisplay({
           onToggleFavorite={onToggleFavorite}
           onClearClick={onClearMonsters}
           t={t}
+          isArtaleMode={isArtaleMode}
         />
       ) : filterMode === 'favorite-items' ? (
         /* 最愛物品模式 */
@@ -160,6 +165,7 @@ export const ContentDisplay = memo(function ContentDisplay({
           onClearClick={onClearItems}
           onReorder={onReorderItems}
           t={t}
+          isArtaleMode={isArtaleMode}
         />
       ) : (
         /* 全部模式 */
@@ -189,6 +195,7 @@ export const ContentDisplay = memo(function ContentDisplay({
           gachaMachines={gachaMachines}
           itemIndexMap={itemIndexMap}
           t={t}
+          isArtaleMode={isArtaleMode}
         />
       )}
     </>

@@ -25,6 +25,8 @@ interface FavoriteItemsListProps {
   onClearClick: () => void
   onReorder: (fromIndex: number, toIndex: number) => void
   t: (key: string) => string
+  /** 是否為 Artale 模式（使用中文名稱取得圖片） */
+  isArtaleMode?: boolean
 }
 
 /**
@@ -41,6 +43,7 @@ export function FavoriteItemsList({
   onClearClick,
   onReorder,
   t,
+  isArtaleMode = false,
 }: FavoriteItemsListProps) {
   // 拖曳狀態
   const [draggedItemId, setDraggedItemId] = useState<number | null>(null)
@@ -122,6 +125,7 @@ export function FavoriteItemsList({
             onDragOver={handleDragOver}
             onDrop={handleDrop}
             onDragEnd={handleDragEnd}
+            isArtaleMode={isArtaleMode}
           />
         ))}
       </div>
