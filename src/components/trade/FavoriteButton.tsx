@@ -9,6 +9,7 @@ interface FavoriteButtonProps {
   isFavorited: boolean
   onToggle?: (isFavorited: boolean) => void
   size?: 'sm' | 'md'
+  disabled?: boolean  // 外部傳入的禁用狀態（如：非伺服器成員）
 }
 
 /**
@@ -20,6 +21,7 @@ export const FavoriteButton = memo(function FavoriteButton({
   isFavorited: initialFavorited,
   onToggle,
   size = 'md',
+  disabled: externalDisabled = false,
 }: FavoriteButtonProps) {
   const { user } = useAuth()
   const [isFavorited, setIsFavorited] = useState(initialFavorited)
@@ -28,8 +30,8 @@ export const FavoriteButton = memo(function FavoriteButton({
   const handleClick = useCallback(async (e: React.MouseEvent) => {
     e.stopPropagation()
 
-    if (!user) {
-      // 未登入時不執行任何動作
+    if (!user || externalDisabled) {
+      // 未登入或外部禁用時不執行任何動作
       return
     }
 
@@ -48,7 +50,7 @@ export const FavoriteButton = memo(function FavoriteButton({
     } finally {
       setIsLoading(false)
     }
-  }, [user, listingId, isFavorited, isLoading, onToggle])
+  }, [user, externalDisabled, listingId, isFavorited, isLoading, onToggle])
 
   const sizeClasses = size === 'sm' ? 'w-5 h-5' : 'w-6 h-6'
   const buttonPadding = size === 'sm' ? 'p-1' : 'p-1.5'
@@ -57,7 +59,7 @@ export const FavoriteButton = memo(function FavoriteButton({
     <button
       type="button"
       onClick={handleClick}
-      disabled={!user || isLoading}
+      disabled={!user || isLoading || externalDisabled}
       className={`${buttonPadding} rounded-full transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
         isFavorited
           ? 'text-red-500 hover:text-red-600'

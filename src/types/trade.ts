@@ -76,6 +76,7 @@ export interface TradeListing {
   characterName: string
   note?: string
   equipmentStats?: EquipmentStats  // 裝備素質（僅裝備物品有）
+  isVerified: boolean  // 刊登者是否有 Support 身分組
   status: TradeStatus
   createdAt: string
   updatedAt: string
@@ -151,6 +152,7 @@ export interface TradeListingRow {
   character_name: string
   note: string | null
   equipment_stats: EquipmentStats | null  // 裝備素質 JSONB
+  is_verified: boolean  // 刊登者是否有 Support 身分組
   status: TradeStatus
   created_at: string
   updated_at: string

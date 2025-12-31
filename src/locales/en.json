@@ -849,5 +849,11 @@
   "trade.customStats": "Custom Stats",
   "trade.addCustomStat": "Add",
   "trade.selectStat": "Select Stat",
-  "trade.customStatValue": "Value"
+  "trade.customStatValue": "Value",
+  "trade.joinServerRequired": "Please join our Discord server to use this feature",
+  "trade.joinServerBanner": "Join our Discord server to access full trade features (publish, favorite, view contact info)",
+  "trade.joinServer": "Join Server",
+  "trade.listingLimitReached": "Listing limit reached",
+  "trade.listingCount": "Current listings: {count}/{limit}",
+  "trade.getVerifiedForMore": "Get the Support role in our Discord server to increase your listing limit"
 }
