@@ -18,13 +18,16 @@ const PREPROCESSING_MODES = [
 const NUMBER_PATTERN = /(\d{1,3}(?:,\d{3})+|\d{4,})/g
 
 // 百分比匹配模式（多層級，必須有小數點以過濾誤讀）
-const PERCENTAGE_PATTERNS = [
+// 注意：第三個模式使用 (^|[^0-9,]) 替代 lookbehind (?<![0-9,])
+// 因為 Safari 15 以下不支援 lookbehind 語法
+const PERCENTAGE_PATTERNS: Array<{ pattern: RegExp; captureIndex: number }> = [
   // 優先級 1：方括號格式 [xx.xx%]
-  /\[\s*(\d{1,2}\.\d{1,2})\s*%\s*\]/,
+  { pattern: /\[\s*(\d{1,2}\.\d{1,2})\s*%\s*\]/, captureIndex: 1 },
   // 優先級 2：圓括號格式 (xx.xx%)
-  /\(\s*(\d{1,2}\.\d{1,2})\s*%\s*\)/,
+  { pattern: /\(\s*(\d{1,2}\.\d{1,2})\s*%\s*\)/, captureIndex: 1 },
   // 優先級 3：獨立格式 xx.xx%（前面不能緊接數字，避免匹配大數字的一部分）
-  /(?<![0-9,])(\d{1,2}\.\d{1,2})\s*%/,
+  // 使用 (^|[^0-9,]) 替代 lookbehind，captureIndex 為 2（跳過第一個捕獲組）
+  { pattern: /(^|[^0-9,])(\d{1,2}\.\d{1,2})\s*%/, captureIndex: 2 },
 ]
 
 /**
@@ -157,10 +160,10 @@ export function useOcr(): UseOcrReturn {
     }
 
     // 多層級匹配，按優先級嘗試
-    for (const pattern of PERCENTAGE_PATTERNS) {
+    for (const { pattern, captureIndex } of PERCENTAGE_PATTERNS) {
       const match = text.match(pattern)
       if (match) {
-        const percentage = parseFloat(match[1])
+        const percentage = parseFloat(match[captureIndex])
         // 百分比應該在 0-100 範圍內
         if (!isNaN(percentage) && percentage >= 0 && percentage <= 100) {
           if (process.env.NODE_ENV === 'development') {
