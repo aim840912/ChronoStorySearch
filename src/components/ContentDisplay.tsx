@@ -89,6 +89,7 @@ interface ContentDisplayProps {
 
   // Artale 模式
   isArtaleMode?: boolean
+  hasArtaleAreaFilter?: boolean
 }
 
 /**
@@ -130,6 +131,7 @@ export const ContentDisplay = memo(function ContentDisplay({
   gachaMachines,
   itemIndexMap,
   isArtaleMode = false,
+  hasArtaleAreaFilter = false,
 }: ContentDisplayProps) {
   const { t } = useLanguage()
 
@@ -196,6 +198,7 @@ export const ContentDisplay = memo(function ContentDisplay({
           itemIndexMap={itemIndexMap}
           t={t}
           isArtaleMode={isArtaleMode}
+          hasArtaleAreaFilter={hasArtaleAreaFilter}
         />
       )}
     </>

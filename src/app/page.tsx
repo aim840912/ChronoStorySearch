@@ -32,6 +32,9 @@ import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
 import { trackEvent } from '@/lib/analytics/ga4'
 import { GA4_EVENTS } from '@/lib/analytics/events'
 
+// localStorage key 常量
+const ARTALE_SELECTED_AREAS_KEY = 'chronostory-artale-selected-areas'
+
 // 簡單字串雜湊函數（用於建立穩定的數字 ID）
 // 放在元件外部避免每次渲染重建，防止 useMemo 無限迴圈
 const hashString = (str: string): number => {
@@ -128,6 +131,21 @@ export default function Home() {
 
   // Artale 區域篩選狀態（Phase 15）
   const [selectedArtaleAreas, setSelectedArtaleAreas] = useState<Set<string>>(new Set())
+
+  // 從 localStorage 讀取已儲存的區域選擇
+  useEffect(() => {
+    const saved = localStorage.getItem(ARTALE_SELECTED_AREAS_KEY)
+    if (saved) {
+      try {
+        const areas = JSON.parse(saved) as string[]
+        if (Array.isArray(areas)) {
+          setSelectedArtaleAreas(new Set(areas))
+        }
+      } catch {
+        // 忽略解析錯誤
+      }
+    }
+  }, [])
 
   // 根據遊戲模式選擇資料
   const isArtaleMode = pageModes.gameMode === 'artale'
@@ -259,6 +277,8 @@ export default function Home() {
     mobInfoMap,
     gachaMachines: isArtaleMode ? EMPTY_GACHA_MACHINES_ARRAY : gachaMachines, // Artale 無轉蛋資料
     initialRandomGachaItems: isArtaleMode ? EMPTY_RANDOM_GACHA_ITEMS_ARRAY : initialRandomGachaItems,
+    // Artale 區域篩選：選擇區域後只顯示怪物
+    hasArtaleAreaFilter: isArtaleMode && selectedArtaleAreas.size > 0,
   })
 
 
@@ -450,6 +470,8 @@ export default function Home() {
       } else {
         next.add(area)
       }
+      // 同步到 localStorage
+      localStorage.setItem(ARTALE_SELECTED_AREAS_KEY, JSON.stringify([...next]))
       return next
     })
   }, [])
@@ -616,6 +638,7 @@ export default function Home() {
           gachaMachines={gachaMachines}
           itemIndexMap={itemIndexMap}
           isArtaleMode={isArtaleMode}
+          hasArtaleAreaFilter={isArtaleMode && selectedArtaleAreas.size > 0}
         />
         )}
 

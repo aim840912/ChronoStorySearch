@@ -78,6 +78,7 @@ interface AllItemsViewProps {
 
   // Artale 模式
   isArtaleMode?: boolean
+  hasArtaleAreaFilter?: boolean
 }
 
 // 從轉蛋資料查找物品的 reqLevel
@@ -124,6 +125,7 @@ export function AllItemsView({
   itemIndexMap,
   t,
   isArtaleMode = false,
+  hasArtaleAreaFilter = false,
 }: AllItemsViewProps) {
   // 沒有任何資料時顯示空狀態
   if (!hasAnyData) {
@@ -136,8 +138,8 @@ export function AllItemsView({
     )
   }
 
-  // 無搜尋詞且無進階篩選：顯示瀏覽歷史 + 隨機混合卡片，共 40 個
-  if (!hasSearchOrFilter) {
+  // 無搜尋詞且無進階篩選且無區域篩選：顯示瀏覽歷史 + 隨機混合卡片，共 40 個
+  if (!hasSearchOrFilter && !hasArtaleAreaFilter) {
     const TOTAL_DISPLAY_COUNT = 40
     const historyCount = viewHistory.length
     const randomNeeded = Math.max(0, TOTAL_DISPLAY_COUNT - historyCount)
@@ -364,8 +366,8 @@ export function AllItemsView({
         </>
       )}
 
-      {/* 物品區塊 */}
-      {shouldShowItems && displayedItems.length > 0 && (
+      {/* 物品區塊 - Artale 區域篩選時隱藏 */}
+      {shouldShowItems && !hasArtaleAreaFilter && displayedItems.length > 0 && (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 mx-auto mt-6 sm:mt-8">
             {displayedItems.map((item, index) => (

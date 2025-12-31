@@ -262,6 +262,20 @@ export function useArtaleData(): UseArtaleDataReturn {
 
   // ==================== 區域篩選功能（Phase 15） ====================
 
+  /**
+   * 區域別名映射
+   * 將使用者友善的區域名稱映射到 map.json 中的實際地圖前綴
+   * 例如：「時間神殿」在 map.json 中實際是「時間之路」和「神殿深處」
+   */
+  const AREA_ALIASES: Record<string, string[]> = {
+    '時間神殿': ['時間之路', '神殿深處'],
+    '納希沙漠': ['炎熱之路', '日落之路', '納希競技大會'],
+    '上海灘': ['東方神州', '少林寺'],
+    '西門町': ['福爾摩沙'],
+    '台北101': ['福爾摩沙'],  // 台北101 也屬於福爾摩沙區域
+    '日本': ['昭和村', '江戶村', '日本'],  // 菇菇神社區域（昭和村、江戶村）+ 未來東京
+  }
+
   // 處理後的可用區域列表（只包含開放的區域）
   const availableAreas = useMemo(() => {
     const areas = areaData as ArtaleAreaData
@@ -274,6 +288,18 @@ export function useArtaleData(): UseArtaleDataReturn {
   const getMobNamesByAreas = useCallback((selectedAreas: Set<string>): Set<string> => {
     if (selectedAreas.size === 0) return new Set()  // 空選擇 = 全部（由呼叫端處理）
 
+    // 展開區域別名：將選中的區域轉換為所有可能的地圖前綴
+    const expandedPrefixes = new Set<string>()
+    selectedAreas.forEach(area => {
+      // 加入原始區域名稱
+      expandedPrefixes.add(area)
+      // 如果有別名，也加入別名
+      const aliases = AREA_ALIASES[area]
+      if (aliases) {
+        aliases.forEach(alias => expandedPrefixes.add(alias))
+      }
+    })
+
     const maps = mapData as ArtaleMapData
     const result = new Set<string>()
 
@@ -283,7 +309,7 @@ export function useArtaleData(): UseArtaleDataReturn {
       const inSelectedArea = mapNames.some(mapName => {
         // 地圖名稱格式：「區域：地圖名」（如「天空之城：天空階梯 II」）
         const areaPrefix = mapName.split('：')[0]
-        return selectedAreas.has(areaPrefix)
+        return expandedPrefixes.has(areaPrefix)
       })
       if (inSelectedArea) {
         result.add(mobName)

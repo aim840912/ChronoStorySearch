@@ -64,6 +64,8 @@ interface UseFilterLogicParams {
     chineseMachineName?: string
     probability: string
   }>
+  // Artale 區域篩選：選擇區域後只顯示怪物
+  hasArtaleAreaFilter?: boolean
 }
 
 export function useFilterLogic({
@@ -80,6 +82,7 @@ export function useFilterLogic({
   mobInfoMap,
   gachaMachines,
   initialRandomGachaItems,
+  hasArtaleAreaFilter = false,
 }: UseFilterLogicParams) {
   // 使用最愛篩選 Hook
   const {
@@ -101,7 +104,8 @@ export function useFilterLogic({
     if (filterMode !== 'all') return []
 
     // 根據篩選模式選擇基礎資料
-    const baseDrops = (debouncedSearchTerm.trim() === '' && !advancedFilter.enabled)
+    // 當有區域篩選時，使用 allDrops（已過濾）而非 initialRandomDrops（未過濾）
+    const baseDrops = (debouncedSearchTerm.trim() === '' && !advancedFilter.enabled && !hasArtaleAreaFilter)
       ? initialRandomDrops
       : allDrops
 
@@ -279,7 +283,8 @@ export function useFilterLogic({
       | { type: 'item'; data: ExtendedUniqueItem }
 
     const includeMonsters = searchType === 'all' || searchType === 'monster'
-    const includeItems = searchType === 'all' || searchType === 'item' || searchType === 'gacha'
+    // Artale 區域篩選時只顯示怪物，不顯示物品
+    const includeItems = !hasArtaleAreaFilter && (searchType === 'all' || searchType === 'item' || searchType === 'gacha')
 
     const mixed: MixedCard[] = [
       ...(includeMonsters ? uniqueAllMonsters.map((m): MixedCard => ({ type: 'monster', data: m })) : []),
@@ -316,7 +321,7 @@ export function useFilterLogic({
     const itemCount = includeItems ? uniqueAllItems.length : 0
     clientLogger.info(`建立等級排序混合卡片: ${monsterCount} 怪物 + ${itemCount} 物品 = ${mixed.length} 張卡片`)
     return mixed
-  }, [filterMode, debouncedSearchTerm, searchType, uniqueAllMonsters, uniqueAllItems, mobLevelMap, itemAttributesMap])
+  }, [filterMode, debouncedSearchTerm, searchType, uniqueAllMonsters, uniqueAllItems, mobLevelMap, itemAttributesMap, hasArtaleAreaFilter])
 
   return {
     // 最愛模式資料
