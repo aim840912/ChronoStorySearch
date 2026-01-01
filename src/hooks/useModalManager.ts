@@ -110,6 +110,9 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
   const [history, setHistory] = useState<ModalHistoryState>({ previous: null })
   // ExpTrackerFloating 使用獨立狀態，不受其他 Modal 影響
   const [isExpTrackerFloatingOpen, setIsExpTrackerFloatingOpen] = useState(false)
+  // AccuracyCalculatorFloating 使用獨立狀態，可與 MonsterModal 同時開啟
+  const [isAccuracyFloatingOpen, setIsAccuracyFloatingOpen] = useState(false)
+  const [accuracyFloatingMonsterId, setAccuracyFloatingMonsterId] = useState<number | null>(null)
 
   // 開啟 Monster Modal
   const openMonsterModal = useCallback((mobId: number, mobName: string, saveHistory = false) => {
@@ -254,18 +257,16 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     setHistory({ previous: null })
   }, [])
 
-  // 開啟 Accuracy Calculator Modal
+  // 開啟 Accuracy Calculator 懸浮視窗（獨立狀態，不影響其他 Modal）
   const openAccuracyCalculator = useCallback((initialMonsterId?: number | null) => {
-    setModal({
-      type: 'accuracy',
-      data: { initialMonsterId }
-    })
+    setIsAccuracyFloatingOpen(true)
+    setAccuracyFloatingMonsterId(initialMonsterId ?? null)
   }, [])
 
-  // 關閉 Accuracy Calculator Modal
+  // 關閉 Accuracy Calculator 懸浮視窗
   const closeAccuracyCalculator = useCallback(() => {
-    setModal({ type: null, data: null })
-    setHistory({ previous: null })
+    setIsAccuracyFloatingOpen(false)
+    setAccuracyFloatingMonsterId(null)
   }, [])
 
   // 開啟 Create Listing Modal
@@ -410,7 +411,7 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
   const itemData = modal.type === 'item' ? (modal.data as ItemModalData) : null
   const clearData = modal.type === 'clear' ? (modal.data as ClearModalData) : null
   const gachaData = modal.type === 'gacha' ? (modal.data as GachaModalData | null) : null
-  const accuracyData = modal.type === 'accuracy' ? (modal.data as AccuracyModalData | null) : null
+  // accuracyData 不再需要，AccuracyCalculator 使用獨立狀態
   const merchantData = modal.type === 'merchant' ? (modal.data as MerchantModalData | null) : null
   const listingDetailData = modal.type === 'listingDetail' ? (modal.data as ListingDetailModalData) : null
 
@@ -466,9 +467,9 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     openMerchantShopModal,
     closeMerchantShopModal,
 
-    // Accuracy Calculator Modal
-    isAccuracyCalculatorOpen: modal.type === 'accuracy',
-    accuracyInitialMonsterId: accuracyData?.initialMonsterId,
+    // Accuracy Calculator 懸浮視窗（獨立狀態）
+    isAccuracyCalculatorOpen: isAccuracyFloatingOpen,
+    accuracyInitialMonsterId: accuracyFloatingMonsterId,
     openAccuracyCalculator,
     closeAccuracyCalculator,
 
