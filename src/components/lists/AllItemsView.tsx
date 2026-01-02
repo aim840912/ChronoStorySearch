@@ -174,8 +174,8 @@ export function AllItemsView({
               index={index}
               inGame={mobInGameMap.get(monsterData.mobId) ?? true}
             />
-            {/* 每 8 張卡片後插入廣告 */}
-            {(index + 1) % 8 === 0 && index < totalCards - 1 && (
+            {/* 每 20 張卡片後插入廣告（降低密度避免誤點擊） */}
+            {(index + 1) % 20 === 0 && index < totalCards - 1 && (
               <AdSenseCard className="col-span-1" />
             )}
           </Fragment>
@@ -226,8 +226,8 @@ export function AllItemsView({
               index={index}
               fromMerchant={merchantItemIndex.has(displayItemName.toLowerCase())}
             />
-            {/* 每 8 張卡片後插入廣告 */}
-            {(index + 1) % 8 === 0 && index < totalCards - 1 && (
+            {/* 每 20 張卡片後插入廣告（降低密度避免誤點擊） */}
+            {(index + 1) % 20 === 0 && index < totalCards - 1 && (
               <AdSenseCard className="col-span-1" />
             )}
           </Fragment>
@@ -253,8 +253,8 @@ export function AllItemsView({
               index={index}
               inGame={mobInGameMap.get(card.data.mobId) ?? true}
             />
-            {/* 每 8 張卡片後插入廣告 */}
-            {(index + 1) % 8 === 0 && index < totalCards - 1 && (
+            {/* 每 20 張卡片後插入廣告（降低密度避免誤點擊） */}
+            {(index + 1) % 20 === 0 && index < totalCards - 1 && (
               <AdSenseCard className="col-span-1" />
             )}
           </Fragment>
@@ -278,8 +278,8 @@ export function AllItemsView({
               index={index}
               fromMerchant={merchantItemIndex.has(card.data.itemName.toLowerCase())}
             />
-            {/* 每 8 張卡片後插入廣告 */}
-            {(index + 1) % 8 === 0 && index < totalCards - 1 && (
+            {/* 每 20 張卡片後插入廣告（降低密度避免誤點擊） */}
+            {(index + 1) % 20 === 0 && index < totalCards - 1 && (
               <AdSenseCard className="col-span-1" />
             )}
           </Fragment>
@@ -321,8 +321,8 @@ export function AllItemsView({
                   index={index}
                   inGame={mobInGameMap.get(monster.mobId) ?? true}
                 />
-                {/* 每 8 張卡片後插入廣告 */}
-                {(index + 1) % 8 === 0 && index < displayedMonsters.length - 1 && (
+                {/* 每 20 張卡片後插入廣告（降低密度避免誤點擊） */}
+                {(index + 1) % 20 === 0 && index < displayedMonsters.length - 1 && (
                   <AdSenseCard className="col-span-1" />
                 )}
               </Fragment>
@@ -377,8 +377,8 @@ export function AllItemsView({
                   index={index}
                   fromMerchant={merchantItemIndex.has(item.itemName.toLowerCase())}
                 />
-                {/* 每 8 張卡片後插入廣告 */}
-                {(index + 1) % 8 === 0 && index < displayedItems.length - 1 && (
+                {/* 每 20 張卡片後插入廣告（降低密度避免誤點擊） */}
+                {(index + 1) % 20 === 0 && index < displayedItems.length - 1 && (
                   <AdSenseCard className="col-span-1" />
                 )}
               </Fragment>

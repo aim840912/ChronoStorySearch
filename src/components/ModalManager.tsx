@@ -6,7 +6,7 @@ import { MonsterModal } from '@/components/MonsterModal'
 import { ItemModal } from '@/components/ItemModal'
 import { BugReportModal } from '@/components/BugReportModal'
 import { ClearConfirmModal } from '@/components/ClearConfirmModal'
-import { AccuracyCalculatorModal } from '@/components/AccuracyCalculatorModal'
+import { AccuracyCalculatorFloating } from '@/components/AccuracyCalculatorFloating'
 import { GameCommandsModal } from '@/components/GameCommandsModal'
 import { MerchantShopModal } from '@/components/MerchantShopModal'
 import { PrivacySettingsModal } from '@/components/settings/PrivacySettingsModal'
@@ -278,12 +278,14 @@ export const ModalManager = memo(function ModalManager({
         count={clearModalType === 'monsters' ? favoriteMonsterCount : favoriteItemCount}
       />
 
-      {/* Accuracy Calculator Modal */}
-      <AccuracyCalculatorModal
-        isOpen={isAccuracyCalculatorOpen}
-        onClose={closeAccuracyCalculator}
-        initialMonsterId={accuracyInitialMonsterId ?? null}
-      />
+      {/* Accuracy Calculator 懸浮視窗（條件渲染，保持與 ExpTracker 一致） */}
+      {isAccuracyCalculatorOpen && (
+        <AccuracyCalculatorFloating
+          isOpen={isAccuracyCalculatorOpen}
+          onClose={closeAccuracyCalculator}
+          initialMonsterId={accuracyInitialMonsterId ?? null}
+        />
+      )}
 
       {/* Game Commands Modal */}
       <GameCommandsModal

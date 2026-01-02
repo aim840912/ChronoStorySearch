@@ -84,6 +84,7 @@ interface SearchHeaderProps {
   onAboutClick?: () => void
   onApiTesterClick?: () => void
   onGlobalSettingsClick?: () => void
+  onMerchantShopClick?: () => void
 }
 
 /**
@@ -147,6 +148,7 @@ export const SearchHeader = memo(function SearchHeader({
   onAboutClick,
   onApiTesterClick,
   onGlobalSettingsClick,
+  onMerchantShopClick,
 }: SearchHeaderProps) {
   const { t, language } = useLanguage()
   const { format, toggleFormat } = useImageFormat()
@@ -289,6 +291,16 @@ export const SearchHeader = memo(function SearchHeader({
           label: t('toolbar.gameCommands'),
           onClick: () => onGameCommandsClick?.(),
         },
+        {
+          id: 'merchant-shop',
+          icon: (
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          ),
+          label: t('merchant.button'),
+          onClick: () => onMerchantShopClick?.(),
+        },
         // API 測試工具 - 只在開發環境顯示
         ...(process.env.NODE_ENV === 'development' ? [{
           id: 'api-tester',
@@ -384,8 +396,11 @@ export const SearchHeader = memo(function SearchHeader({
         </h1>
         {/* 工具列和語言切換 - 大於 460px 時顯示在標題旁 */}
         <div className="hidden min-[460px]:flex gap-1.5 sm:gap-2 flex-shrink-0 items-center">
-          {/* 交易市場切換按鈕 - 僅登入後顯示 */}
-          {user && (
+          {/* 交易市場切換按鈕
+              - 交易模式中：總是顯示（讓用戶可以退出）
+              - 非交易模式：只有登入用戶才顯示（進入交易需登入）
+          */}
+          {(isTradeMode || user) && (
             <button
               type="button"
               onClick={onTradeModeToggle}
@@ -447,9 +462,12 @@ export const SearchHeader = memo(function SearchHeader({
 
       {/* 工具列和語言切換 - 小於 460px 時顯示在搜尋欄上方 */}
       <div className="flex min-[460px]:hidden px-2 mb-1 max-w-7xl mx-auto">
-        <div className={`grid ${user ? 'grid-cols-5' : 'grid-cols-4'} gap-1 w-full [&>button]:w-full [&>button]:justify-center [&>div]:w-full [&>div>button]:w-full [&>div>button]:justify-center`}>
-          {/* 交易市場切換按鈕 - 僅登入後顯示 */}
-          {user && (
+        <div className={`grid ${(isTradeMode || user) ? 'grid-cols-5' : 'grid-cols-4'} gap-1 w-full [&>button]:w-full [&>button]:justify-center [&>div]:w-full [&>div>button]:w-full [&>div>button]:justify-center`}>
+          {/* 交易市場切換按鈕
+              - 交易模式中：總是顯示（讓用戶可以退出）
+              - 非交易模式：只有登入用戶才顯示（進入交易需登入）
+          */}
+          {(isTradeMode || user) && (
             <button
               type="button"
               onClick={onTradeModeToggle}

@@ -168,6 +168,8 @@ export function SearchBar({
             onFocus={onFocus}
             onKeyDown={onKeyDown}
             placeholder={placeholder}
+            searchType={searchType}
+            onSearchTypeChange={onSearchTypeChange}
           />
           <SuggestionList
             suggestions={suggestions}
@@ -216,8 +218,6 @@ export function SearchBar({
       {/* 篩選按鈕行 */}
       {onFilterChange && (
         <FilterTabs
-          searchType={searchType}
-          onSearchTypeChange={onSearchTypeChange}
           filterMode={filterMode}
           onFilterChange={onFilterChange}
           favoriteMonsterCount={favoriteMonsterCount}

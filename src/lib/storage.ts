@@ -34,6 +34,7 @@ export const STORAGE_KEYS = {
   LANGUAGE: 'chronostory-language',
   THEME: 'chronostory-theme',
   ACCURACY_CALCULATOR: 'chronostory-accuracy-calculator',
+  ACCURACY_CALCULATOR_FLOATING: 'chronostory-accuracy-calculator-floating',
   VIEW_HISTORY: 'chronostory-view-history',
   IMAGE_FORMAT: 'chronostory-image-format',
   SCREEN_RECORDER: 'chronostory-screen-recorder',
@@ -342,6 +343,39 @@ export function getExpTrackerFloatingState(): ExpTrackerFloatingState {
 
 export function setExpTrackerFloatingState(state: ExpTrackerFloatingState): boolean {
   return setStorageItem(STORAGE_KEYS.EXP_TRACKER_FLOATING, state)
+}
+
+// 命中計算器懸浮視窗狀態
+export interface AccuracyCalculatorFloatingState {
+  /** 視窗位置 */
+  position: { x: number; y: number }
+  /** 是否最小化 */
+  isMinimized: boolean
+  /** 是否釘選（保持在 Modal 上層） */
+  isPinned: boolean
+  /** 視窗尺寸（展開狀態） */
+  size: { width: number; height: number }
+  /** 最小化時的寬度 */
+  minimizedWidth: number
+}
+
+const DEFAULT_ACCURACY_CALCULATOR_FLOATING_STATE: AccuracyCalculatorFloatingState = {
+  position: { x: -1, y: -1 }, // -1 表示使用預設位置（右上角）
+  isMinimized: false,
+  isPinned: false,
+  size: { width: 400, height: 500 },
+  minimizedWidth: 200,
+}
+
+export function getAccuracyCalculatorFloatingState(): AccuracyCalculatorFloatingState {
+  return getStorageItem<AccuracyCalculatorFloatingState>(
+    STORAGE_KEYS.ACCURACY_CALCULATOR_FLOATING,
+    DEFAULT_ACCURACY_CALCULATOR_FLOATING_STATE
+  )
+}
+
+export function setAccuracyCalculatorFloatingState(state: AccuracyCalculatorFloatingState): boolean {
+  return setStorageItem(STORAGE_KEYS.ACCURACY_CALCULATOR_FLOATING, state)
 }
 
 // 首次使用提示追蹤
