@@ -895,5 +895,18 @@
   "report.card.reviewedAt": "Reviewed at",
   "report.review.confirm": "Confirm Bot",
   "report.review.reject": "Not a Bot",
-  "report.empty": "No reports yet"
+  "report.empty": "No reports yet",
+  "report.search.placeholder": "Search reporter or reported character...",
+  "report.search.all": "All",
+  "report.search.reporter": "Reporter",
+  "report.search.reported": "Reported Character",
+  "report.viewMode.flat": "Flat",
+  "report.viewMode.grouped": "Grouped",
+  "report.grouped.reportCount": "{count} reports",
+  "report.grouped.reporters": "Reporters",
+  "report.grouped.latestReport": "Latest report",
+  "report.grouped.expand": "Expand",
+  "report.grouped.collapse": "Collapse",
+  "report.grouped.bulkConfirm": "Confirm All ({count})",
+  "report.grouped.bulkReject": "Reject All ({count})"
 }
