@@ -34,6 +34,8 @@ export interface BaseModalProps {
   floatingRightAd?: ReactNode
   /** 頂部廣告區（Modal 上方，僅手機/平板版顯示） */
   floatingTopAd?: ReactNode
+  /** 全螢幕模式（填滿視窗，手機無圓角，桌面有邊距和圓角） */
+  fullscreen?: boolean
 }
 
 /**
@@ -69,6 +71,7 @@ export function BaseModal({
   floatingLeftAd,
   floatingRightAd,
   floatingTopAd,
+  fullscreen = false,
 }: BaseModalProps) {
   // Hydration 安全：確保只在客戶端渲染
   const [mounted, setMounted] = useState(false)
@@ -120,14 +123,27 @@ export function BaseModal({
   // 未掛載或未開啟時不渲染
   if (!isOpen || !mounted) return null
 
+  // 全螢幕模式的樣式
+  const backdropClass = fullscreen
+    ? `fixed inset-0 ${zIndex} flex items-center justify-center bg-black/90 backdrop-blur-sm`
+    : `fixed inset-0 ${zIndex} flex items-start justify-center pt-8 sm:pt-16 p-0 sm:px-4 sm:pb-4 bg-black/90 backdrop-blur-sm overflow-y-auto scrollbar-hide`
+
+  const containerClass = fullscreen
+    ? 'relative w-full h-full sm:w-[calc(100%-2rem)] sm:h-[calc(100%-2rem)] sm:max-w-6xl'
+    : `relative my-auto w-[70vw] lg:min-w-[60vw] ${maxWidth}`
+
+  const modalClass = fullscreen
+    ? 'bg-white dark:bg-gray-800 shadow-2xl w-full h-full sm:rounded-xl overflow-hidden flex flex-col'
+    : 'bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full h-[90vh] overflow-hidden flex flex-col'
+
   // 使用 Portal 將 Modal 渲染到 document.body，逃脫父容器的堆疊上下文限制
   return createPortal(
     <div
-      className={`fixed inset-0 ${zIndex} flex items-start justify-center pt-8 sm:pt-16 p-0 sm:px-4 sm:pb-4 bg-black/90 backdrop-blur-sm overflow-y-auto scrollbar-hide`}
+      className={backdropClass}
       onClick={handleBackdropClick}
     >
       {/* 相對定位容器，用於放置懸浮內容（寬度設定在此以確保 absolute 定位正確） */}
-      <div className={`relative my-auto w-[70vw] lg:min-w-[60vw] ${maxWidth}`}>
+      <div className={containerClass}>
         {/* 左側懸浮內容（固定在 Modal 左邊框外側，所有尺寸一致 8px 距離） */}
         {floatingLeft && (
           <div
@@ -175,7 +191,7 @@ export function BaseModal({
         )}
         {/* Modal 主容器 */}
         <div
-          className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full h-[90vh] overflow-hidden flex flex-col"
+          className={modalClass}
           onClick={(e) => e.stopPropagation()}
         >
           {children}

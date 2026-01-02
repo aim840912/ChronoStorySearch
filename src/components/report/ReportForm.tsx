@@ -25,11 +25,11 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  // 從 user metadata 取得 Discord 用戶名
+  // 從 user metadata 取得 Discord 用戶名（開發模式下使用預設值）
   const discordUsername = user?.user_metadata?.full_name ||
     user?.user_metadata?.name ||
     user?.user_metadata?.preferred_username ||
-    ''
+    (process.env.NODE_ENV === 'development' ? 'Dev User' : '')
 
   // 驗證影片網址
   const videoType = videoUrl ? getVideoType(videoUrl) : null
@@ -84,7 +84,10 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
     }
   }, [videoUrl, reportedCharacter, description, discordUsername, isValidUrl, t, onSuccess])
 
-  if (!user) {
+  // 開發環境下即使未登入也可使用
+  const isDev = process.env.NODE_ENV === 'development'
+
+  if (!user && !isDev) {
     return (
       <div className="p-4 text-center text-zinc-500 dark:text-zinc-400">
         {t('report.loginRequired')}
