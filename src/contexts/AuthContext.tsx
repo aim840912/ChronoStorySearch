@@ -169,6 +169,41 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, [authEnabled])
 
+  // 監聽 popup 登入成功的通知
+  // popup 完成 OAuth 後會透過 postMessage 通知主視窗
+  useEffect(() => {
+    if (!authEnabled) return
+
+    const handleMessage = async (event: MessageEvent) => {
+      // 只處理 AUTH_SUCCESS 訊息
+      if (event.data?.type !== 'AUTH_SUCCESS') return
+
+      console.log('[Auth] 收到 popup 登入成功通知，刷新 session')
+
+      try {
+        // 強制從 server 獲取最新 session
+        const { data: { session }, error } = await supabase.auth.getSession()
+
+        if (error) {
+          console.error('[Auth] 刷新 session 失敗:', error)
+          return
+        }
+
+        if (session) {
+          setUser(session.user)
+          setSession(session)
+          setAuthCache(session.user.id)
+          console.log('[Auth] Session 已更新，用戶:', session.user.email)
+        }
+      } catch (error) {
+        console.error('[Auth] 處理登入通知時發生錯誤:', error)
+      }
+    }
+
+    window.addEventListener('message', handleMessage)
+    return () => window.removeEventListener('message', handleMessage)
+  }, [authEnabled])
+
   // Discord OAuth 登入（使用 popup 模式避免桌面應用程式攔截）
   const signInWithDiscord = useCallback(async () => {
     // 如果認證功能關閉，拋出錯誤

@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
-import type { SearchTypeFilter, FilterMode } from '@/types'
+import type { FilterMode } from '@/types'
 
 /**
  * 轉蛋機靜態資料
@@ -27,8 +27,6 @@ const GACHA_MACHINES = [
 // ] as const
 
 interface FilterTabsProps {
-  searchType: SearchTypeFilter
-  onSearchTypeChange: (type: SearchTypeFilter) => void
   filterMode: FilterMode
   onFilterChange: (mode: FilterMode) => void
   favoriteMonsterCount: number
@@ -49,11 +47,9 @@ interface FilterTabsProps {
 
 /**
  * 篩選按鈕群組元件
- * 包含類型篩選、收藏篩選、轉蛋和商人下拉選單
+ * 包含收藏篩選和轉蛋下拉選單
  */
 export function FilterTabs({
-  searchType,
-  onSearchTypeChange,
   filterMode,
   onFilterChange,
   favoriteMonsterCount,
@@ -93,11 +89,6 @@ export function FilterTabs({
     document.addEventListener('mousedown', handleClickOutside)
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
-
-  const handleTypeChange = (type: SearchTypeFilter) => {
-    onSearchTypeChange(type)
-    onFilterChange('all')
-  }
 
   // 轉蛋按鈕文字
   const getGachaButtonText = () => {
@@ -186,64 +177,34 @@ export function FilterTabs({
   //   setMerchantOpen(false)
   // }
 
+  // 處理「全部」按鈕點擊
+  const handleShowAll = () => {
+    onFilterChange('all')
+    onGachaClose?.()  // 同時關閉轉蛋模式
+  }
+
   return (
     <div className="flex flex-wrap w-full lg:w-fit justify-evenly lg:justify-start rounded-xl bg-gray-100/80 dark:bg-gray-800/80 backdrop-blur-sm p-1.5 gap-1">
-      {/* 類型篩選按鈕 */}
+      {/* 全部按鈕 */}
       <button
-        onClick={() => handleTypeChange('all')}
-        className={`flex-1 lg:flex-initial px-2 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
-          searchType === 'all' && filterMode === 'all' && !isGachaMode && !isMerchantMode
+        onClick={handleShowAll}
+        className={`flex-1 lg:flex-initial px-2 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center justify-center gap-1.5 ${
+          filterMode === 'all' && !isGachaMode && !isMerchantMode
             ? 'bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 shadow-sm'
-            : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-700/50'
+            : 'text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white/50 dark:hover:bg-gray-700/50'
         }`}
       >
-        <span className="hidden min-[518px]:inline">{t('search.type.all')}</span>
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+        </svg>
+        <span className="hidden min-[518px]:inline">{t('filter.all')}</span>
         <span className="min-[518px]:hidden">{language === 'zh-TW' ? '全' : 'A'}</span>
       </button>
-      <button
-        onClick={() => handleTypeChange('monster')}
-        className={`flex-1 lg:flex-initial px-2 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
-          searchType === 'monster' && filterMode === 'all' && !isGachaMode && !isMerchantMode
-            ? 'bg-white dark:bg-gray-700 text-red-600 dark:text-red-400 shadow-sm'
-            : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-700/50'
-        }`}
-      >
-        <span className="hidden min-[537px]:inline">{t('search.type.monster')}</span>
-        <span className="hidden min-[518px]:inline min-[537px]:hidden">
-          {language === 'zh-TW' ? t('search.type.monster') : 'Mon'}
-        </span>
-        <span className="min-[518px]:hidden">{language === 'zh-TW' ? '怪' : 'M'}</span>
-      </button>
-      <button
-        onClick={() => handleTypeChange('item')}
-        className={`flex-1 lg:flex-initial px-2 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
-          searchType === 'item' && filterMode === 'all' && !isGachaMode && !isMerchantMode
-            ? 'bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 shadow-sm'
-            : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-700/50'
-        }`}
-      >
-        <span className="hidden min-[518px]:inline">{t('search.type.item')}</span>
-        <span className="min-[518px]:hidden">{language === 'zh-TW' ? '物' : 'I'}</span>
-      </button>
-      <button
-        onClick={() => handleTypeChange('quiz')}
-        className={`flex-1 lg:flex-initial px-2 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap ${
-          searchType === 'quiz' && filterMode === 'all' && !isGachaMode && !isMerchantMode
-            ? 'bg-white dark:bg-gray-700 text-amber-600 dark:text-amber-400 shadow-sm'
-            : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:bg-white/50 dark:hover:bg-gray-700/50'
-        }`}
-      >
-        <span className="hidden min-[518px]:inline">{t('search.type.quiz')}</span>
-        <span className="min-[518px]:hidden">{language === 'zh-TW' ? '問' : 'Q'}</span>
-      </button>
 
-      {/* 分隔線 */}
-      <div className="hidden min-[460px]:block w-px h-8 bg-gray-300 dark:bg-gray-600 mx-1 self-center" />
-
-      {/* 收藏按鈕 */}
+      {/* 收藏怪物按鈕 */}
       <button
         onClick={() => onFilterChange('favorite-monsters')}
-        className={`flex-1 lg:flex-initial px-2 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center gap-1.5 ${
+        className={`flex-1 lg:flex-initial px-2 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center justify-center gap-1.5 ${
           filterMode === 'favorite-monsters' && !isGachaMode && !isMerchantMode
             ? 'bg-white dark:bg-gray-700 text-red-600 dark:text-red-400 shadow-sm'
             : favoriteMonsterCount > 0
@@ -262,7 +223,7 @@ export function FilterTabs({
       </button>
       <button
         onClick={() => onFilterChange('favorite-items')}
-        className={`flex-1 lg:flex-initial px-2 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center gap-1.5 ${
+        className={`flex-1 lg:flex-initial px-2 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center justify-center gap-1.5 ${
           filterMode === 'favorite-items' && !isGachaMode && !isMerchantMode
             ? 'bg-white dark:bg-gray-700 text-green-600 dark:text-green-400 shadow-sm'
             : favoriteItemCount > 0

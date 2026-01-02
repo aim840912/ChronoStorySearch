@@ -402,6 +402,7 @@ export default function Home() {
           onAboutClick={toolModals.openAboutModal}
           onApiTesterClick={toolModals.openApiTester}
           onGlobalSettingsClick={toolModals.openGlobalSettings}
+          onMerchantShopClick={() => modals.openMerchantShopModal()}
         />
 
         {/* 交易市場區域 - 交易模式時顯示 */}
