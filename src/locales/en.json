@@ -725,6 +725,7 @@
   "toolbar.accuracyCalculator": "Accuracy Calculator",
   "toolbar.gameCommands": "Game Commands",
   "toolbar.apiTester": "API Tester (DEV)",
+  "toolbar.report": "Report",
   "toolbar.settings": "Settings",
   "toolbar.globalSettings": "Settings",
   "toolbar.imageFormat": "Image Format",

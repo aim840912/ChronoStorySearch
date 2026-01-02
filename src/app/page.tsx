@@ -25,6 +25,7 @@ import { ModalManager } from '@/components/ModalManager'
 import { GachaDrawSection } from '@/components/gacha/GachaDrawSection'
 import { MerchantShopSection } from '@/components/merchant/MerchantShopSection'
 import { TradeSection } from '@/components/trade/TradeSection'
+import { ReportModal } from '@/components/report/ReportModal'
 import { AdSenseMultiplex } from '@/components/adsense/AdSenseMultiplex'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
@@ -403,6 +404,7 @@ export default function Home() {
           onApiTesterClick={toolModals.openApiTester}
           onGlobalSettingsClick={toolModals.openGlobalSettings}
           onMerchantShopClick={() => modals.openMerchantShopModal()}
+          onReportClick={toolModals.openReportModal}
         />
 
         {/* 交易市場區域 - 交易模式時顯示 */}
@@ -549,6 +551,12 @@ export default function Home() {
         toastIsVisible={toast.isVisible}
         toastType={toast.type}
         hideToast={toast.hideToast}
+      />
+
+      {/* Report Modal */}
+      <ReportModal
+        isOpen={toolModals.isReportModalOpen}
+        onClose={toolModals.closeReportModal}
       />
     </div>
   )

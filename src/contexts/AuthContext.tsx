@@ -204,18 +204,43 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return () => window.removeEventListener('message', handleMessage)
   }, [authEnabled])
 
-  // Discord OAuth 登入（使用 popup 模式避免桌面應用程式攔截）
+  // Discord OAuth 登入
+  // - Production: 使用 popup 模式避免桌面應用程式攔截
+  // - Development: 使用直接重定向模式（解決 PKCE cookie 跨域問題）
   const signInWithDiscord = useCallback(async () => {
     // 如果認證功能關閉，拋出錯誤
     if (!authEnabled) {
       throw new Error('認證功能已關閉')
     }
 
+    const isDev = process.env.NODE_ENV === 'development'
+
     try {
+      // 開發環境使用直接重定向，不使用 popup（解決 PKCE cookie 問題）
+      if (isDev) {
+        const redirectTo = `${window.location.origin}/auth/callback`
+        console.log('[Auth] Dev mode - 直接重定向模式, redirectTo:', redirectTo)
+
+        const { error } = await supabase.auth.signInWithOAuth({
+          provider: 'discord',
+          options: {
+            redirectTo,
+            // 開發環境不使用 skipBrowserRedirect，讓瀏覽器直接重定向
+          },
+        })
+        if (error) throw error
+        // 瀏覽器會自動重定向到 Discord
+        return
+      }
+
+      // Production: 使用 popup 模式
+      const redirectTo = `${window.location.origin}/auth/callback?popup=true`
+      console.log('[Auth] OAuth redirectTo:', redirectTo)
+
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'discord',
         options: {
-          redirectTo: `${window.location.origin}/auth/callback?popup=true`,
+          redirectTo,
           skipBrowserRedirect: true, // 不自動重導向，獲取 URL
         },
       })

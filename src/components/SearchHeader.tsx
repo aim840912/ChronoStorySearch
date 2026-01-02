@@ -85,6 +85,7 @@ interface SearchHeaderProps {
   onApiTesterClick?: () => void
   onGlobalSettingsClick?: () => void
   onMerchantShopClick?: () => void
+  onReportClick?: () => void
 }
 
 /**
@@ -149,6 +150,7 @@ export const SearchHeader = memo(function SearchHeader({
   onApiTesterClick,
   onGlobalSettingsClick,
   onMerchantShopClick,
+  onReportClick,
 }: SearchHeaderProps) {
   const { t, language } = useLanguage()
   const { format, toggleFormat } = useImageFormat()
@@ -301,6 +303,17 @@ export const SearchHeader = memo(function SearchHeader({
           label: t('merchant.button'),
           onClick: () => onMerchantShopClick?.(),
         },
+        // 檢舉系統 - 只在登入或開發環境顯示
+        ...((user || process.env.NODE_ENV === 'development') ? [{
+          id: 'report',
+          icon: (
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+            </svg>
+          ),
+          label: t('toolbar.report'),
+          onClick: () => onReportClick?.(),
+        }] : []),
         // API 測試工具 - 只在開發環境顯示
         ...(process.env.NODE_ENV === 'development' ? [{
           id: 'api-tester',
