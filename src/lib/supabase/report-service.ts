@@ -56,6 +56,14 @@ export const reportService = {
     if (filters?.reporterId) {
       query = query.eq('reporter_id', filters.reporterId)
     }
+    // 模糊搜尋：檢舉人 Discord 名稱
+    if (filters?.reporterDiscord) {
+      query = query.ilike('reporter_discord', `%${filters.reporterDiscord}%`)
+    }
+    // 模糊搜尋：被檢舉角色名稱
+    if (filters?.reportedCharacter) {
+      query = query.ilike('reported_character', `%${filters.reportedCharacter}%`)
+    }
 
     // 排序與分頁
     query = query

@@ -896,5 +896,18 @@
   "report.card.reviewedAt": "審核時間",
   "report.review.confirm": "確認外掛",
   "report.review.reject": "不是外掛",
-  "report.empty": "目前沒有檢舉紀錄"
+  "report.empty": "目前沒有檢舉紀錄",
+  "report.search.placeholder": "搜尋檢舉人或被檢舉角色...",
+  "report.search.all": "全部",
+  "report.search.reporter": "檢舉人",
+  "report.search.reported": "被檢舉角色",
+  "report.viewMode.flat": "平鋪",
+  "report.viewMode.grouped": "分組",
+  "report.grouped.reportCount": "{count} 筆檢舉",
+  "report.grouped.reporters": "檢舉者",
+  "report.grouped.latestReport": "最新檢舉",
+  "report.grouped.expand": "展開詳情",
+  "report.grouped.collapse": "收合",
+  "report.grouped.bulkConfirm": "批量確認 ({count})",
+  "report.grouped.bulkReject": "批量駁回 ({count})"
 }

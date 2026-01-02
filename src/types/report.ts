@@ -63,6 +63,77 @@ export interface ReviewReportInput {
 export interface ReportFilters {
   status?: ReportStatus
   reporterId?: string
+  /** 搜尋檢舉人 Discord 名稱（模糊搜尋） */
+  reporterDiscord?: string
+  /** 搜尋被檢舉角色名稱（模糊搜尋） */
+  reportedCharacter?: string
+}
+
+// 視圖模式
+export type ReportViewMode = 'flat' | 'grouped'
+
+// 分組後的檢舉（依被檢舉角色）
+export interface GroupedReport {
+  /** 被檢舉角色名稱 */
+  reportedCharacter: string
+  /** 該角色的所有檢舉（依時間降序） */
+  reports: Report[]
+  /** 檢舉總數 */
+  totalCount: number
+  /** 各狀態的數量 */
+  statusCounts: {
+    pending: number
+    confirmed: number
+    rejected: number
+  }
+  /** 不重複的檢舉者列表 */
+  reporters: string[]
+  /** 最新檢舉時間 */
+  latestReportAt: string
+}
+
+/**
+ * 將檢舉列表依被檢舉角色分組
+ * - 區分大小寫（PlayerName ≠ playername）
+ * - 依最新檢舉時間排序
+ */
+export function groupReportsByCharacter(reports: Report[]): GroupedReport[] {
+  const grouped = new Map<string, Report[]>()
+
+  // 依角色名稱分組
+  for (const report of reports) {
+    const key = report.reportedCharacter
+    if (!grouped.has(key)) {
+      grouped.set(key, [])
+    }
+    grouped.get(key)!.push(report)
+  }
+
+  // 轉換為 GroupedReport 陣列
+  const result: GroupedReport[] = Array.from(grouped.entries()).map(([characterName, characterReports]) => {
+    // 依時間降序排序
+    const sortedReports = characterReports.sort(
+      (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+    )
+
+    return {
+      reportedCharacter: characterName,
+      reports: sortedReports,
+      totalCount: sortedReports.length,
+      statusCounts: {
+        pending: sortedReports.filter(r => r.status === 'pending').length,
+        confirmed: sortedReports.filter(r => r.status === 'confirmed').length,
+        rejected: sortedReports.filter(r => r.status === 'rejected').length,
+      },
+      reporters: [...new Set(sortedReports.map(r => r.reporterDiscord))],
+      latestReportAt: sortedReports[0].createdAt,
+    }
+  })
+
+  // 依最新檢舉時間排序（最新的在前）
+  return result.sort(
+    (a, b) => new Date(b.latestReportAt).getTime() - new Date(a.latestReportAt).getTime()
+  )
 }
 
 /**
