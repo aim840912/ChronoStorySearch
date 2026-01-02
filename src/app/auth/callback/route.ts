@@ -39,6 +39,7 @@ function createPopupHtml(success: boolean, errorMessage?: string): string {
     <p class="sub">${subMessage}</p>
   </div>
   <script>
+    ${success ? `if(window.opener){window.opener.postMessage({type:'AUTH_SUCCESS'},'*');}` : ''}
     setTimeout(function(){window.close()},${success ? 800 : 2000});
   </script>
 </body>
