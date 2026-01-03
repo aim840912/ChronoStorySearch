@@ -70,7 +70,7 @@ export function ModeDropdown({
   // 根據權限過濾可見的模式
   const visibleModes = modes.filter((mode) => {
     if (mode.id === 'search') return true
-    if (mode.id === 'trade') return isLoggedIn
+    if (mode.id === 'trade') return isAdmin
     if (mode.id === 'report') return isAdmin
     return false
   })
@@ -103,14 +103,9 @@ export function ModeDropdown({
     setIsOpen(false)
   }, [currentMode, onModeChange])
 
-  // 如果只有一個選項（未登入），不顯示下拉功能
+  // 如果只有一個選項（未登入），完全隱藏
   if (visibleModes.length <= 1) {
-    return (
-      <div className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-lg ${currentModeInfo.activeColor}`}>
-        {currentModeInfo.icon}
-        <span>{t(currentModeInfo.labelKey)}</span>
-      </div>
-    )
+    return null
   }
 
   return (
