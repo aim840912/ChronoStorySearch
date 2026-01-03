@@ -1,9 +1,19 @@
 'use client'
 
-import { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react'
+import { createContext, useContext, useState, useEffect, ReactNode, useCallback, useMemo } from 'react'
 import { User, Session } from '@supabase/supabase-js'
 import { supabase } from '@/lib/supabase/client'
 import { clearUserStorage, restorePreferencesFromGuest } from '@/lib/storage'
+
+// 用戶角色類型
+export type UserRole = 'user' | 'reviewer' | 'admin'
+
+// 角色權限等級（數字越大權限越高）
+const ROLE_LEVELS: Record<UserRole, number> = {
+  user: 0,
+  reviewer: 1,
+  admin: 2,
+}
 
 // Auth Token 快取 key
 const AUTH_CACHE_KEY = 'chronostory-auth-cache'
@@ -65,6 +75,11 @@ interface AuthContextType {
   authEnabled: boolean
   signInWithDiscord: () => Promise<void>
   signOut: () => Promise<void>
+  // 權限相關
+  role: UserRole
+  isAdmin: boolean
+  isReviewer: boolean
+  hasRole: (requiredRole: UserRole) => boolean
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
@@ -289,6 +304,26 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, [])
 
+  // 計算用戶角色（從 app_metadata 取得）
+  const role: UserRole = useMemo(() => {
+    if (!user) return 'user'
+    const appRole = user.app_metadata?.role as UserRole | undefined
+    // 確保是有效的角色，否則預設為 user
+    if (appRole && ['user', 'reviewer', 'admin'].includes(appRole)) {
+      return appRole
+    }
+    return 'user'
+  }, [user])
+
+  // 權限判斷
+  const isAdmin = role === 'admin'
+  const isReviewer = role === 'reviewer' || role === 'admin' // admin 也有 reviewer 權限
+
+  // 檢查是否有指定角色的權限（包含更高權限）
+  const hasRole = useCallback((requiredRole: UserRole): boolean => {
+    return ROLE_LEVELS[role] >= ROLE_LEVELS[requiredRole]
+  }, [role])
+
   return (
     <AuthContext.Provider
       value={{
@@ -298,6 +333,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         authEnabled,
         signInWithDiscord,
         signOut,
+        // 權限相關
+        role,
+        isAdmin,
+        isReviewer,
+        hasRole,
       }}
     >
       {children}

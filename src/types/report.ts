@@ -69,9 +69,6 @@ export interface ReportFilters {
   reportedCharacter?: string
 }
 
-// 視圖模式
-export type ReportViewMode = 'flat' | 'grouped'
-
 // 分組後的檢舉（依被檢舉角色）
 export interface GroupedReport {
   /** 被檢舉角色名稱 */

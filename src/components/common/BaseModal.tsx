@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState, ReactNode } from 'react'
+import { useEffect, useState, useRef, ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 
 export interface BaseModalProps {
@@ -111,13 +111,26 @@ export function BaseModal({
     }
   }, [isOpen])
 
-  // 背景點擊處理
-  const handleBackdropClick = () => {
-    if (onBackdropClick) {
-      onBackdropClick()
-    } else if (!preventBackdropClose) {
-      onClose()
+  // 追蹤 mousedown 是否發生在背景（防止從 Modal 內部拖曳到背景時誤關閉）
+  const mouseDownOnBackdropRef = useRef(false)
+
+  // 背景 mousedown 事件
+  const handleBackdropMouseDown = (e: React.MouseEvent) => {
+    // 只有直接點擊背景才標記（e.target === e.currentTarget 表示不是從子元素冒泡上來的）
+    mouseDownOnBackdropRef.current = e.target === e.currentTarget
+  }
+
+  // 背景 mouseup 事件
+  const handleBackdropMouseUp = (e: React.MouseEvent) => {
+    // 只有 mousedown 和 mouseup 都發生在背景時才關閉
+    if (mouseDownOnBackdropRef.current && e.target === e.currentTarget) {
+      if (onBackdropClick) {
+        onBackdropClick()
+      } else if (!preventBackdropClose) {
+        onClose()
+      }
     }
+    mouseDownOnBackdropRef.current = false
   }
 
   // 未掛載或未開啟時不渲染
@@ -140,7 +153,8 @@ export function BaseModal({
   return createPortal(
     <div
       className={backdropClass}
-      onClick={handleBackdropClick}
+      onMouseDown={handleBackdropMouseDown}
+      onMouseUp={handleBackdropMouseUp}
     >
       {/* 相對定位容器，用於放置懸浮內容（寬度設定在此以確保 absolute 定位正確） */}
       <div className={containerClass}>

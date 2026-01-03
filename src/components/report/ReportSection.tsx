@@ -105,28 +105,24 @@ export function ReportSection() {
         ))}
       </div>
 
-      {/* Tab 內容 */}
+      {/* Tab 內容 - 使用 CSS 隱藏保留表單狀態 */}
       <div className="min-h-[300px]">
-        {activeTab === 'create' && (
-          <div>
-            <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
-              {t('report.title.create')}
-            </h2>
-            <ReportForm onSuccess={handleSubmitSuccess} />
-          </div>
-        )}
+        <div className={activeTab === 'create' ? '' : 'hidden'}>
+          <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
+            {t('report.title.create')}
+          </h2>
+          <ReportForm onSuccess={handleSubmitSuccess} />
+        </div>
 
-        {activeTab === 'my-reports' && (
-          <div>
-            <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
-              {t('report.title.myReports')}
-            </h2>
-            <ReportList isReviewer={false} showMyReports />
-          </div>
-        )}
+        <div className={activeTab === 'my-reports' ? '' : 'hidden'}>
+          <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
+            {t('report.title.myReports')}
+          </h2>
+          <ReportList isReviewer={false} showMyReports />
+        </div>
 
-        {activeTab === 'all-reports' && isReviewer && (
-          <div>
+        {isReviewer && (
+          <div className={activeTab === 'all-reports' ? '' : 'hidden'}>
             <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
               {t('report.title.allReports')}
             </h2>

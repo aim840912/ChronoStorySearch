@@ -154,7 +154,7 @@ export const SearchHeader = memo(function SearchHeader({
 }: SearchHeaderProps) {
   const { t, language } = useLanguage()
   const { format, toggleFormat } = useImageFormat()
-  const { user } = useAuth()
+  const { user, isAdmin } = useAuth()
 
   // 交易搜尋自動完成狀態
   const [isTradeDropdownOpen, setIsTradeDropdownOpen] = useState(false)
@@ -303,8 +303,8 @@ export const SearchHeader = memo(function SearchHeader({
           label: t('merchant.button'),
           onClick: () => onMerchantShopClick?.(),
         },
-        // 檢舉系統 - 只在登入或開發環境顯示
-        ...((user || process.env.NODE_ENV === 'development') ? [{
+        // 檢舉系統 - 僅 admin 可見（開發中功能）
+        ...(isAdmin ? [{
           id: 'report',
           icon: (
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
