@@ -861,6 +861,8 @@
   "common.loadMore": "載入更多",
   "common.error": "發生錯誤，請稍後再試",
 
+  "report.short": "檢舉",
+  "report.backToSearch": "返回搜尋",
   "report.loginRequired": "請先登入以提交檢舉",
   "report.tab.create": "提交檢舉",
   "report.tab.myReports": "我的檢舉",
@@ -918,5 +920,8 @@
   "report.grouped.expand": "展開詳情",
   "report.grouped.collapse": "收合",
   "report.grouped.bulkConfirm": "批量確認 ({count})",
-  "report.grouped.bulkReject": "批量駁回 ({count})"
+  "report.grouped.bulkReject": "批量駁回 ({count})",
+  "mode.search": "搜尋",
+  "mode.trade": "交易",
+  "mode.report": "檢舉"
 }

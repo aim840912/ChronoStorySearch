@@ -72,7 +72,7 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
       return
     }
 
-    // Debounce 300ms
+    // Debounce 500ms
     const timer = setTimeout(async () => {
       setIsCheckingDuplicate(true)
       try {
@@ -84,7 +84,7 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
       } finally {
         setIsCheckingDuplicate(false)
       }
-    }, 300)
+    }, 500)
 
     return () => clearTimeout(timer)
   }, [reportedCharacter])

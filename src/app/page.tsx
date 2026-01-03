@@ -25,7 +25,7 @@ import { ModalManager } from '@/components/ModalManager'
 import { GachaDrawSection } from '@/components/gacha/GachaDrawSection'
 import { MerchantShopSection } from '@/components/merchant/MerchantShopSection'
 import { TradeSection } from '@/components/trade/TradeSection'
-import { ReportModal } from '@/components/report/ReportModal'
+import { ReportSection } from '@/components/report/ReportSection'
 import { AdSenseMultiplex } from '@/components/adsense/AdSenseMultiplex'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
@@ -404,8 +404,17 @@ export default function Home() {
           onApiTesterClick={toolModals.openApiTester}
           onGlobalSettingsClick={toolModals.openGlobalSettings}
           onMerchantShopClick={() => modals.openMerchantShopModal()}
-          onReportClick={toolModals.openReportModal}
+          // 檢舉模式
+          isReportMode={pageModes.isReportMode}
+          onReportModeToggle={pageModes.toggleReportMode}
         />
+
+        {/* 檢舉系統區域 - 檢舉模式時顯示 */}
+        {pageModes.isReportMode && (
+          <div className="mt-4">
+            <ReportSection />
+          </div>
+        )}
 
         {/* 交易市場區域 - 交易模式時顯示 */}
         {pageModes.isTradeMode && (
@@ -419,8 +428,8 @@ export default function Home() {
           />
         )}
 
-        {/* 轉蛋抽獎區域 - 選擇轉蛋機後顯示（交易模式時隱藏） */}
-        {!pageModes.isTradeMode && pageModes.isGachaMode && pageModes.selectedGachaMachineId !== null && (
+        {/* 轉蛋抽獎區域 - 選擇轉蛋機後顯示（交易/檢舉模式時隱藏） */}
+        {!pageModes.isTradeMode && !pageModes.isReportMode && pageModes.isGachaMode && pageModes.selectedGachaMachineId !== null && (
           <GachaDrawSection
             machineId={pageModes.selectedGachaMachineId}
             gachaMachines={gachaMachines}
@@ -429,16 +438,16 @@ export default function Home() {
           />
         )}
 
-        {/* 商人商店區域 - 選擇商人地圖後顯示（交易模式時隱藏） */}
-        {!pageModes.isTradeMode && pageModes.isMerchantMode && (
+        {/* 商人商店區域 - 選擇商人地圖後顯示（交易/檢舉模式時隱藏） */}
+        {!pageModes.isTradeMode && !pageModes.isReportMode && pageModes.isMerchantMode && (
           <MerchantShopSection
             mapId={pageModes.selectedMerchantMapId}
             onClose={pageModes.closeMerchant}
           />
         )}
 
-        {/* 內容顯示區域 - 轉蛋模式、商人模式或交易模式時隱藏 */}
-        {!pageModes.isTradeMode && !(pageModes.isGachaMode && pageModes.selectedGachaMachineId !== null) && !pageModes.isMerchantMode && (
+        {/* 內容顯示區域 - 轉蛋模式、商人模式、交易模式或檢舉模式時隱藏 */}
+        {!pageModes.isTradeMode && !pageModes.isReportMode && !(pageModes.isGachaMode && pageModes.selectedGachaMachineId !== null) && !pageModes.isMerchantMode && (
           <ContentDisplay
           isLoading={isLoading}
           filterMode={filterMode}
@@ -474,8 +483,8 @@ export default function Home() {
         />
         )}
 
-        {/* Multiplex 多重廣告 - 列表結束後顯示（交易/轉蛋/商人模式時隱藏） */}
-        {!pageModes.isTradeMode && !(pageModes.isGachaMode && pageModes.selectedGachaMachineId !== null) && !pageModes.isMerchantMode && (
+        {/* Multiplex 多重廣告 - 列表結束後顯示（交易/轉蛋/商人/檢舉模式時隱藏） */}
+        {!pageModes.isTradeMode && !pageModes.isReportMode && !(pageModes.isGachaMode && pageModes.selectedGachaMachineId !== null) && !pageModes.isMerchantMode && (
           <AdSenseMultiplex className="mt-8" />
         )}
       </div>
@@ -553,11 +562,6 @@ export default function Home() {
         hideToast={toast.hideToast}
       />
 
-      {/* Report Modal */}
-      <ReportModal
-        isOpen={toolModals.isReportModalOpen}
-        onClose={toolModals.closeReportModal}
-      />
     </div>
   )
 }

@@ -860,6 +860,8 @@
   "trade.selectStat": "Select Stat",
   "trade.customStatValue": "Value",
 
+  "report.short": "Report",
+  "report.backToSearch": "Back to Search",
   "report.loginRequired": "Please sign in to submit a report",
   "report.tab.create": "Submit Report",
   "report.tab.myReports": "My Reports",
@@ -917,5 +919,8 @@
   "report.grouped.expand": "Expand",
   "report.grouped.collapse": "Collapse",
   "report.grouped.bulkConfirm": "Confirm All ({count})",
-  "report.grouped.bulkReject": "Reject All ({count})"
+  "report.grouped.bulkReject": "Reject All ({count})",
+  "mode.search": "Search",
+  "mode.trade": "Trade",
+  "mode.report": "Report"
 }

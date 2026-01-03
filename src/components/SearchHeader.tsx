@@ -8,6 +8,7 @@ import { AdvancedFilterPanel } from '@/components/AdvancedFilterPanel'
 import { LanguageToggle } from '@/components/LanguageToggle'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { ToolbarDropdown, type ToolbarMenuGroup } from '@/components/toolbar'
+import { ModeDropdown, type PageMode } from '@/components/ModeDropdown'
 import { TipBubble } from '@/components/TipBubble'
 import { LoginButton } from '@/components/auth/LoginButton'
 import { useLanguage } from '@/contexts/LanguageContext'
@@ -73,6 +74,10 @@ interface SearchHeaderProps {
   // 交易搜尋自動完成
   searchItems?: (query: string, limit?: number) => ExtendedUniqueItem[]
 
+  // 檢舉模式相關
+  isReportMode?: boolean
+  onReportModeToggle?: () => void
+
   // 工具列相關
   onExpTrackerClick?: () => void
   onScreenRecorderClick?: () => void
@@ -85,7 +90,6 @@ interface SearchHeaderProps {
   onApiTesterClick?: () => void
   onGlobalSettingsClick?: () => void
   onMerchantShopClick?: () => void
-  onReportClick?: () => void
 }
 
 /**
@@ -138,6 +142,9 @@ export const SearchHeader = memo(function SearchHeader({
   onTradeStatsFilterReset,
   // 交易搜尋自動完成
   searchItems,
+  // 檢舉模式相關
+  isReportMode = false,
+  onReportModeToggle,
   // 工具列相關
   onExpTrackerClick,
   onScreenRecorderClick,
@@ -150,11 +157,30 @@ export const SearchHeader = memo(function SearchHeader({
   onApiTesterClick,
   onGlobalSettingsClick,
   onMerchantShopClick,
-  onReportClick,
 }: SearchHeaderProps) {
   const { t, language } = useLanguage()
   const { format, toggleFormat } = useImageFormat()
   const { user, isAdmin } = useAuth()
+
+  // 計算當前模式
+  const currentMode: PageMode = isReportMode ? 'report' : isTradeMode ? 'trade' : 'search'
+
+  // 處理模式切換
+  const handleModeChange = useCallback((mode: PageMode) => {
+    if (mode === 'search') {
+      // 切換到搜尋模式：關閉其他模式
+      if (isTradeMode) onTradeModeToggle?.()
+      if (isReportMode) onReportModeToggle?.()
+    } else if (mode === 'trade') {
+      // 切換到交易模式
+      if (isReportMode) onReportModeToggle?.()
+      if (!isTradeMode) onTradeModeToggle?.()
+    } else if (mode === 'report') {
+      // 切換到檢舉模式
+      if (isTradeMode) onTradeModeToggle?.()
+      if (!isReportMode) onReportModeToggle?.()
+    }
+  }, [isTradeMode, isReportMode, onTradeModeToggle, onReportModeToggle])
 
   // 交易搜尋自動完成狀態
   const [isTradeDropdownOpen, setIsTradeDropdownOpen] = useState(false)
@@ -303,17 +329,6 @@ export const SearchHeader = memo(function SearchHeader({
           label: t('merchant.button'),
           onClick: () => onMerchantShopClick?.(),
         },
-        // 檢舉系統 - 僅 admin 可見（開發中功能）
-        ...(isAdmin ? [{
-          id: 'report',
-          icon: (
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
-            </svg>
-          ),
-          label: t('toolbar.report'),
-          onClick: () => onReportClick?.(),
-        }] : []),
         // API 測試工具 - 只在開發環境顯示
         ...(process.env.NODE_ENV === 'development' ? [{
           id: 'api-tester',
@@ -409,24 +424,13 @@ export const SearchHeader = memo(function SearchHeader({
         </h1>
         {/* 工具列和語言切換 - 大於 460px 時顯示在標題旁 */}
         <div className="hidden min-[460px]:flex gap-1.5 sm:gap-2 flex-shrink-0 items-center">
-          {/* 交易市場切換按鈕
-              - 交易模式中：總是顯示（讓用戶可以退出）
-              - 非交易模式：只有登入用戶才顯示（進入交易需登入）
-          */}
-          {(isTradeMode || user) && (
-            <button
-              type="button"
-              onClick={onTradeModeToggle}
-              className={`p-1.5 sm:p-2 text-sm font-medium rounded-lg transition-colors flex items-center ${
-                isTradeMode
-                  ? 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300'
-                  : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
-              }`}
-              title={isTradeMode ? t('trade.backToSearch') : t('trade.title')}
-            >
-              {isTradeMode ? t('search.short') : t('trade.short')}
-            </button>
-          )}
+          {/* 模式切換下拉選單 */}
+          <ModeDropdown
+            currentMode={currentMode}
+            onModeChange={handleModeChange}
+            isAdmin={isAdmin}
+            isLoggedIn={!!user}
+          />
           {/* 工具列下拉選單 + 提示 */}
           <div className="relative">
             <ToolbarDropdown
@@ -475,25 +479,14 @@ export const SearchHeader = memo(function SearchHeader({
 
       {/* 工具列和語言切換 - 小於 460px 時顯示在搜尋欄上方 */}
       <div className="flex min-[460px]:hidden px-2 mb-1 max-w-7xl mx-auto">
-        <div className={`grid ${(isTradeMode || user) ? 'grid-cols-5' : 'grid-cols-4'} gap-1 w-full [&>button]:w-full [&>button]:justify-center [&>div]:w-full [&>div>button]:w-full [&>div>button]:justify-center`}>
-          {/* 交易市場切換按鈕
-              - 交易模式中：總是顯示（讓用戶可以退出）
-              - 非交易模式：只有登入用戶才顯示（進入交易需登入）
-          */}
-          {(isTradeMode || user) && (
-            <button
-              type="button"
-              onClick={onTradeModeToggle}
-              className={`flex items-center justify-center h-[30px] sm:h-auto p-1.5 sm:p-2 text-sm font-medium rounded-lg transition-colors ${
-                isTradeMode
-                  ? 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300'
-                  : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400'
-              }`}
-              title={isTradeMode ? t('trade.backToSearch') : t('trade.title')}
-            >
-              {isTradeMode ? t('search.short') : t('trade.short')}
-            </button>
-          )}
+        <div className="grid gap-1 w-full grid-cols-5 [&>button]:w-full [&>button]:justify-center [&>div]:w-full [&>div>button]:w-full [&>div>button]:justify-center">
+          {/* 模式切換下拉選單 */}
+          <ModeDropdown
+            currentMode={currentMode}
+            onModeChange={handleModeChange}
+            isAdmin={isAdmin}
+            isLoggedIn={!!user}
+          />
           {/* 工具列下拉選單 + 提示 */}
           <div className="relative">
             <ToolbarDropdown
@@ -542,8 +535,20 @@ export const SearchHeader = memo(function SearchHeader({
         </div>
       </div>
 
-      {/* 搜尋列 - 交易模式時顯示交易篩選器 */}
-      {isTradeMode ? (
+      {/* 搜尋列 - 根據模式顯示不同內容 */}
+      {isReportMode ? (
+        // 檢舉模式：顯示簡化標題
+        <div className="px-2 sm:px-4 max-w-7xl mx-auto">
+          <div className="flex items-center gap-2 py-2">
+            <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+            </svg>
+            <span className="text-lg font-semibold text-gray-900 dark:text-white">
+              {t('toolbar.report')}
+            </span>
+          </div>
+        </div>
+      ) : isTradeMode ? (
         <div className="px-2 sm:px-4 max-w-7xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
             {/* 交易類型篩選 */}
