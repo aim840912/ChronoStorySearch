@@ -206,4 +206,65 @@ export const reportService = {
 
     return count ?? 0
   },
+
+  /**
+   * 檢查重複檢舉
+   * @param characterIdSuffix - 角色 ID 後綴（#後的5個英文字母）
+   */
+  async checkDuplicateReport(characterIdSuffix: string): Promise<{
+    totalCount: number
+    myActiveReportExists: boolean
+    myRejectedReportExists: boolean
+    existingStatuses: {
+      pending: number
+      confirmed: number
+      rejected: number
+    }
+  }> {
+    const { data: { user } } = await supabase.auth.getUser()
+
+    // 查詢所有包含此 ID 後綴的檢舉
+    const { data, error } = await supabase
+      .from('reports')
+      .select('reporter_id, status')
+      .ilike('reported_character', `%#${characterIdSuffix}`)
+
+    if (error) {
+      console.error('檢查重複檢舉失敗:', error)
+      return {
+        totalCount: 0,
+        myActiveReportExists: false,
+        myRejectedReportExists: false,
+        existingStatuses: { pending: 0, confirmed: 0, rejected: 0 },
+      }
+    }
+
+    // 統計狀態分佈
+    const statuses = { pending: 0, confirmed: 0, rejected: 0 }
+    let myActiveReportExists = false
+    let myRejectedReportExists = false
+
+    for (const report of data || []) {
+      // 統計狀態
+      if (report.status === 'pending') statuses.pending++
+      else if (report.status === 'confirmed') statuses.confirmed++
+      else if (report.status === 'rejected') statuses.rejected++
+
+      // 檢查是否為當前用戶的檢舉
+      if (user && report.reporter_id === user.id) {
+        if (report.status === 'pending' || report.status === 'confirmed') {
+          myActiveReportExists = true
+        } else if (report.status === 'rejected') {
+          myRejectedReportExists = true
+        }
+      }
+    }
+
+    return {
+      totalCount: data?.length ?? 0,
+      myActiveReportExists,
+      myRejectedReportExists,
+      existingStatuses: statuses,
+    }
+  },
 }
