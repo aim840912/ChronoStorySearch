@@ -82,7 +82,7 @@ export function ReportList({ isReviewer, showMyReports = false }: ReportListProp
         )
       } else if (isReviewer) {
         // Reviewer 可以看所有檢舉
-        let { data } = await reportService.getReports(
+        const { data } = await reportService.getReports(
           Object.keys(filters).length > 0 ? filters : undefined,
           50,
           0
