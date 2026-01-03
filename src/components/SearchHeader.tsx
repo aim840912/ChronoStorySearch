@@ -160,7 +160,7 @@ export const SearchHeader = memo(function SearchHeader({
 }: SearchHeaderProps) {
   const { t, language } = useLanguage()
   const { format, toggleFormat } = useImageFormat()
-  const { user, isAdmin } = useAuth()
+  const { isAdmin } = useAuth()
 
   // 計算當前模式
   const currentMode: PageMode = isReportMode ? 'report' : isTradeMode ? 'trade' : 'search'
@@ -429,7 +429,6 @@ export const SearchHeader = memo(function SearchHeader({
             currentMode={currentMode}
             onModeChange={handleModeChange}
             isAdmin={isAdmin}
-            isLoggedIn={!!user}
           />
           {/* 工具列下拉選單 + 提示 */}
           <div className="relative">
@@ -485,7 +484,6 @@ export const SearchHeader = memo(function SearchHeader({
             currentMode={currentMode}
             onModeChange={handleModeChange}
             isAdmin={isAdmin}
-            isLoggedIn={!!user}
           />
           {/* 工具列下拉選單 + 提示 */}
           <div className="relative">
