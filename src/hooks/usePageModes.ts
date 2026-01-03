@@ -27,6 +27,8 @@ export interface PageModesState {
   tradeTypeFilter: TradeType | 'all'
   tradeSearchQuery: string
   tradeStatsFilter: EquipmentStatsFilter
+  // 檢舉模式
+  isReportMode: boolean
 }
 
 export interface PageModesActions {
@@ -42,6 +44,8 @@ export interface PageModesActions {
   setTradeSearchQuery: (query: string) => void
   setTradeStatsFilter: (filter: EquipmentStatsFilter) => void
   resetTradeStatsFilter: () => void
+  // 檢舉模式
+  toggleReportMode: () => void
   // 通用
   closeAllModes: () => void
 }
@@ -67,6 +71,9 @@ export function usePageModes(): UsePageModesReturn {
   const [tradeSearchQuery, setTradeSearchQuery] = useState('')
   const [tradeStatsFilter, setTradeStatsFilter] = useState<EquipmentStatsFilter>({})
 
+  // 檢舉模式狀態
+  const [isReportMode, setIsReportMode] = useState(false)
+
   /**
    * 重置素質篩選
    */
@@ -91,6 +98,7 @@ export function usePageModes(): UsePageModesReturn {
     setIsMerchantMode(false)
     setSelectedMerchantMapId(null)
     setIsTradeMode(false)
+    setIsReportMode(false)
   }, [])
 
   /**
@@ -102,6 +110,7 @@ export function usePageModes(): UsePageModesReturn {
     setIsMerchantMode(false)
     setSelectedMerchantMapId(null)
     setIsTradeMode(false)
+    setIsReportMode(false)
     // 開啟轉蛋模式
     setIsGachaMode(true)
     setSelectedGachaMachineId(machineId)
@@ -126,6 +135,7 @@ export function usePageModes(): UsePageModesReturn {
     setIsGachaMode(false)
     setSelectedGachaMachineId(null)
     setIsTradeMode(false)
+    setIsReportMode(false)
     // 開啟商人模式
     setIsMerchantMode(true)
     setSelectedMerchantMapId(mapId)
@@ -157,6 +167,28 @@ export function usePageModes(): UsePageModesReturn {
         setSelectedGachaMachineId(null)
         setIsMerchantMode(false)
         setSelectedMerchantMapId(null)
+        setIsReportMode(false)
+        // 滾動到頂部
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
+      return newValue
+    })
+  }, [])
+
+  /**
+   * 切換檢舉模式
+   * 進入時會關閉其他模式（互斥）
+   */
+  const toggleReportMode = useCallback(() => {
+    setIsReportMode(prev => {
+      const newValue = !prev
+      if (newValue) {
+        // 進入檢舉模式時關閉其他模式
+        setIsGachaMode(false)
+        setSelectedGachaMachineId(null)
+        setIsMerchantMode(false)
+        setSelectedMerchantMapId(null)
+        setIsTradeMode(false)
         // 滾動到頂部
         window.scrollTo({ top: 0, behavior: 'smooth' })
       }
@@ -174,6 +206,7 @@ export function usePageModes(): UsePageModesReturn {
     tradeTypeFilter,
     tradeSearchQuery,
     tradeStatsFilter,
+    isReportMode,
     // 操作
     selectGacha,
     closeGacha,
@@ -184,6 +217,7 @@ export function usePageModes(): UsePageModesReturn {
     setTradeSearchQuery,
     setTradeStatsFilter,
     resetTradeStatsFilter,
+    toggleReportMode,
     closeAllModes,
   }
 }
