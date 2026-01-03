@@ -179,15 +179,15 @@ export const reportService = {
   },
 
   /**
-   * 檢查當前用戶是否為 reviewer
+   * 檢查當前用戶是否為 reviewer（admin 也有 reviewer 權限）
    */
   async isReviewer(): Promise<boolean> {
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) return false
 
-    // 檢查 app_metadata 中的 role
+    // 檢查 app_metadata 中的 role（admin 也視為 reviewer）
     const role = user.app_metadata?.role
-    return role === 'reviewer'
+    return role === 'reviewer' || role === 'admin'
   },
 
   /**

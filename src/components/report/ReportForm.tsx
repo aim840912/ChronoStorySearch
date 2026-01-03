@@ -35,6 +35,12 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
   const videoType = videoUrl ? getVideoType(videoUrl) : null
   const isValidUrl = videoType === 'youtube' || videoType === 'discord'
 
+  // 驗證角色 ID 格式：角色名稱#XXXXX（5個英文字母，大小寫敏感）
+  // 允許名稱和 # 之間有空格
+  const CHARACTER_ID_REGEX = /^.+#[a-zA-Z]{5}$/
+  const isValidCharacterId = reportedCharacter.trim() ? CHARACTER_ID_REGEX.test(reportedCharacter.trim()) : false
+  const hasCharacterInput = reportedCharacter.trim().length > 0
+
   const handleSubmit = useCallback(async (e: React.FormEvent) => {
     e.preventDefault()
     setError(null)
@@ -50,6 +56,10 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
     }
     if (!reportedCharacter.trim()) {
       setError(t('report.error.characterRequired'))
+      return
+    }
+    if (!isValidCharacterId) {
+      setError(t('report.error.invalidCharacterId'))
       return
     }
     if (!discordUsername) {
@@ -127,21 +137,50 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
         </div>
       )}
 
-      {/* 被檢舉者角色名稱 */}
+      {/* 被檢舉者角色 ID */}
       <div>
         <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-1">
           {t('report.form.reportedCharacter')} *
         </label>
-        <input
-          type="text"
-          value={reportedCharacter}
-          onChange={(e) => setReportedCharacter(e.target.value)}
-          placeholder={t('report.form.reportedCharacterPlaceholder')}
-          className="w-full px-3 py-2 rounded-lg border border-zinc-300 dark:border-zinc-600
-                     bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100
-                     focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-          disabled={isSubmitting}
-        />
+        <div className="relative">
+          <input
+            type="text"
+            value={reportedCharacter}
+            onChange={(e) => setReportedCharacter(e.target.value)}
+            placeholder={t('report.form.reportedCharacterPlaceholder')}
+            className={`w-full px-3 py-2 pr-10 rounded-lg border
+                       bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100
+                       focus:ring-2 focus:border-transparent
+                       ${hasCharacterInput
+                         ? isValidCharacterId
+                           ? 'border-green-500 focus:ring-green-500'
+                           : 'border-red-500 focus:ring-red-500'
+                         : 'border-zinc-300 dark:border-zinc-600 focus:ring-blue-500'
+                       }`}
+            disabled={isSubmitting}
+          />
+          {/* 驗證狀態圖示 */}
+          {hasCharacterInput && (
+            <div className="absolute right-3 top-1/2 -translate-y-1/2">
+              {isValidCharacterId ? (
+                <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              ) : (
+                <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              )}
+            </div>
+          )}
+        </div>
+        {/* 格式說明 */}
+        <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
+          {t('report.form.characterIdHint')}
+        </p>
+        <p className="text-xs text-zinc-400 dark:text-zinc-500">
+          {t('report.form.characterIdExample')}
+        </p>
       </div>
 
       {/* 檢舉說明 */}
@@ -192,7 +231,7 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
           type="submit"
           className="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600
                      disabled:opacity-50 disabled:cursor-not-allowed"
-          disabled={isSubmitting || !isValidUrl || !reportedCharacter.trim()}
+          disabled={isSubmitting || !isValidUrl || !isValidCharacterId}
         >
           {isSubmitting ? t('common.submitting') : t('report.form.submit')}
         </button>

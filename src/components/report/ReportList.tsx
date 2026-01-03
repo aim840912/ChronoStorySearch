@@ -3,11 +3,9 @@
 import { useState, useEffect, useCallback, useMemo } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { reportService } from '@/lib/supabase/report-service'
-import type { Report, ReportStatus, ReportFilters, ReportViewMode } from '@/types/report'
+import type { Report, ReportStatus, ReportFilters } from '@/types/report'
 import { groupReportsByCharacter } from '@/types/report'
-import { ReportCard } from './ReportCard'
 import { GroupedReportCard } from './GroupedReportCard'
-import { ViewModeToggle } from './ViewModeToggle'
 
 // 搜尋類型
 type SearchType = 'all' | 'reporter' | 'reported'
@@ -31,17 +29,13 @@ export function ReportList({ isReviewer, showMyReports = false }: ReportListProp
   const [searchType, setSearchType] = useState<SearchType>('all')
   const [debouncedQuery, setDebouncedQuery] = useState('')
 
-  // 視圖模式（預設平鋪）
-  const [viewMode, setViewMode] = useState<ReportViewMode>('flat')
-
-  // 是否顯示搜尋和視圖切換（僅 reviewer 在 All Reports 時顯示）
+  // 是否顯示搜尋（僅 reviewer 在 All Reports 時顯示）
   const showSearch = isReviewer && !showMyReports
 
-  // 分組後的資料（僅在分組模式時計算）
+  // 分組後的資料
   const groupedReports = useMemo(() => {
-    if (viewMode !== 'grouped') return []
     return groupReportsByCharacter(reports)
-  }, [reports, viewMode])
+  }, [reports])
 
   // Debounce 搜尋輸入
   useEffect(() => {
@@ -205,8 +199,6 @@ export function ReportList({ isReviewer, showMyReports = false }: ReportListProp
                 </option>
               ))}
             </select>
-            {/* 視圖模式切換 */}
-            <ViewModeToggle viewMode={viewMode} onViewModeChange={setViewMode} />
           </div>
         </div>
       )}
@@ -229,30 +221,17 @@ export function ReportList({ isReviewer, showMyReports = false }: ReportListProp
         ))}
       </div>
 
-      {/* 檢舉列表 */}
+      {/* 檢舉列表（分組檢視） */}
       {reports.length === 0 ? (
         <div className="text-center py-8 text-zinc-500 dark:text-zinc-400">
           {t('report.empty')}
         </div>
-      ) : viewMode === 'grouped' && showSearch ? (
-        // 分組檢視（僅 reviewer 在 All Reports 時可用）
+      ) : (
         <div className="space-y-3">
           {groupedReports.map((group) => (
             <GroupedReportCard
               key={group.reportedCharacter}
               group={group}
-              isReviewer={isReviewer}
-              onReviewed={handleReviewed}
-            />
-          ))}
-        </div>
-      ) : (
-        // 平鋪檢視（預設）
-        <div className="space-y-3">
-          {reports.map((report) => (
-            <ReportCard
-              key={report.id}
-              report={report}
               isReviewer={isReviewer}
               onReviewed={handleReviewed}
             />
