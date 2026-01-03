@@ -1,5 +1,3 @@
-'use client'
-
 import { getVideoType, extractYouTubeId } from '@/types/report'
 
 interface VideoPreviewProps {
