@@ -1,11 +1,23 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useAuth } from '@/contexts/AuthContext'
 import { reportService } from '@/lib/supabase/report-service'
 import { getVideoType } from '@/types/report'
 import { VideoPreview } from './VideoPreview'
+
+// 重複檢舉檢查結果
+interface DuplicateCheckResult {
+  totalCount: number
+  myActiveReportExists: boolean
+  myRejectedReportExists: boolean
+  existingStatuses: {
+    pending: number
+    confirmed: number
+    rejected: number
+  }
+}
 
 interface ReportFormProps {
   onSuccess?: () => void
@@ -25,6 +37,10 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
+  // 重複檢舉檢查狀態
+  const [duplicateCheck, setDuplicateCheck] = useState<DuplicateCheckResult | null>(null)
+  const [isCheckingDuplicate, setIsCheckingDuplicate] = useState(false)
+
   // 從 user metadata 取得 Discord 用戶名（開發模式下使用預設值）
   const discordUsername = user?.user_metadata?.full_name ||
     user?.user_metadata?.name ||
@@ -40,6 +56,41 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
   const CHARACTER_ID_REGEX = /^.+#[a-zA-Z]{5}$/
   const isValidCharacterId = reportedCharacter.trim() ? CHARACTER_ID_REGEX.test(reportedCharacter.trim()) : false
   const hasCharacterInput = reportedCharacter.trim().length > 0
+
+  // 提取角色 ID 後綴（#後的5個英文字母）
+  const extractCharacterIdSuffix = (input: string): string | null => {
+    const match = input.trim().match(/#([a-zA-Z]{5})$/)
+    return match ? match[1] : null
+  }
+
+  // 當角色 ID 格式正確時，檢查重複檢舉
+  useEffect(() => {
+    const suffix = extractCharacterIdSuffix(reportedCharacter)
+
+    if (!suffix) {
+      setDuplicateCheck(null)
+      return
+    }
+
+    // Debounce 300ms
+    const timer = setTimeout(async () => {
+      setIsCheckingDuplicate(true)
+      try {
+        const result = await reportService.checkDuplicateReport(suffix)
+        setDuplicateCheck(result)
+      } catch (err) {
+        console.error('檢查重複檢舉失敗:', err)
+        setDuplicateCheck(null)
+      } finally {
+        setIsCheckingDuplicate(false)
+      }
+    }, 300)
+
+    return () => clearTimeout(timer)
+  }, [reportedCharacter])
+
+  // 判斷是否可以提交（有進行中的檢舉時不可提交）
+  const canSubmit = !duplicateCheck?.myActiveReportExists
 
   const handleSubmit = useCallback(async (e: React.FormEvent) => {
     e.preventDefault()
@@ -60,6 +111,10 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
     }
     if (!isValidCharacterId) {
       setError(t('report.error.invalidCharacterId'))
+      return
+    }
+    if (duplicateCheck?.myActiveReportExists) {
+      setError(t('report.error.duplicateActive'))
       return
     }
     if (!discordUsername) {
@@ -92,7 +147,7 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
     } finally {
       setIsSubmitting(false)
     }
-  }, [videoUrl, reportedCharacter, description, discordUsername, isValidUrl, t, onSuccess])
+  }, [videoUrl, reportedCharacter, description, discordUsername, isValidUrl, isValidCharacterId, duplicateCheck, t, onSuccess])
 
   // 開發環境下即使未登入也可使用
   const isDev = process.env.NODE_ENV === 'development'
@@ -181,6 +236,47 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
         <p className="text-xs text-zinc-400 dark:text-zinc-500">
           {t('report.form.characterIdExample')}
         </p>
+
+        {/* 重複檢舉提示 */}
+        {isCheckingDuplicate && (
+          <div className="mt-2 p-2 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-xs text-zinc-500 flex items-center gap-2">
+            <div className="animate-spin w-3 h-3 border border-zinc-400 border-t-transparent rounded-full" />
+            {t('report.duplicate.checking')}
+          </div>
+        )}
+        {!isCheckingDuplicate && duplicateCheck && (
+          <>
+            {/* 情況 C: 我有進行中的檢舉（阻擋） */}
+            {duplicateCheck.myActiveReportExists && (
+              <div className="mt-2 p-2 bg-red-100 dark:bg-red-900/30 rounded-lg text-xs text-red-600 dark:text-red-400 flex items-center gap-2">
+                <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                {duplicateCheck.existingStatuses.pending > 0 && duplicateCheck.existingStatuses.confirmed === 0
+                  ? t('report.duplicate.myPending')
+                  : t('report.duplicate.myConfirmed')}
+              </div>
+            )}
+            {/* 情況 D: 我只有被駁回的檢舉（可提交） */}
+            {!duplicateCheck.myActiveReportExists && duplicateCheck.myRejectedReportExists && (
+              <div className="mt-2 p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg text-xs text-blue-600 dark:text-blue-400 flex items-center gap-2">
+                <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                {t('report.duplicate.myRejected')}
+              </div>
+            )}
+            {/* 情況 B: 有他人的檢舉（可提交） */}
+            {!duplicateCheck.myActiveReportExists && !duplicateCheck.myRejectedReportExists && duplicateCheck.totalCount > 0 && (
+              <div className="mt-2 p-2 bg-yellow-100 dark:bg-yellow-900/30 rounded-lg text-xs text-yellow-700 dark:text-yellow-400 flex items-center gap-2">
+                <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+                {t('report.duplicate.existingReports', { count: duplicateCheck.totalCount })}
+              </div>
+            )}
+          </>
+        )}
       </div>
 
       {/* 檢舉說明 */}
@@ -231,7 +327,7 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
           type="submit"
           className="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600
                      disabled:opacity-50 disabled:cursor-not-allowed"
-          disabled={isSubmitting || !isValidUrl || !isValidCharacterId}
+          disabled={isSubmitting || !isValidUrl || !isValidCharacterId || !canSubmit}
         >
           {isSubmitting ? t('common.submitting') : t('report.form.submit')}
         </button>
