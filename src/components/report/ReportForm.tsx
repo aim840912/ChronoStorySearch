@@ -32,7 +32,8 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
   const { user } = useAuth()
 
   const [videoUrl, setVideoUrl] = useState('')
-  const [reportedCharacter, setReportedCharacter] = useState('')
+  const [characterName, setCharacterName] = useState('')
+  const [characterId, setCharacterId] = useState('')
   const [description, setDescription] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -51,23 +52,26 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
   const videoType = videoUrl ? getVideoType(videoUrl) : null
   const isValidUrl = videoType === 'youtube' || videoType === 'discord'
 
-  // 驗證角色 ID 格式：角色名稱#XXXXX（5個英文字母，大小寫敏感）
-  // 允許名稱和 # 之間有空格
-  const CHARACTER_ID_REGEX = /^.+#[a-zA-Z]{5}$/
-  const isValidCharacterId = reportedCharacter.trim() ? CHARACTER_ID_REGEX.test(reportedCharacter.trim()) : false
-  const hasCharacterInput = reportedCharacter.trim().length > 0
+  // 驗證角色名稱和 ID
+  const isValidCharacterName = characterName.trim().length > 0
+  const CHARACTER_ID_REGEX = /^[a-zA-Z]{5}$/
+  const isValidCharacterIdFormat = CHARACTER_ID_REGEX.test(characterId)
+  const isValidCharacterId = isValidCharacterName && isValidCharacterIdFormat
 
-  // 提取角色 ID 後綴（#後的5個英文字母）
-  const extractCharacterIdSuffix = (input: string): string | null => {
-    const match = input.trim().match(/#([a-zA-Z]{5})$/)
-    return match ? match[1] : null
+  // 合併後的完整角色 ID（用於提交和顯示）
+  const fullCharacterId = characterName.trim() && characterId
+    ? `${characterName.trim()}#${characterId}`
+    : ''
+
+  // 處理角色 ID 輸入（只允許英文字母，最多5個）
+  const handleCharacterIdChange = (value: string) => {
+    const filtered = value.replace(/[^a-zA-Z]/g, '').slice(0, 5)
+    setCharacterId(filtered)
   }
 
   // 當角色 ID 格式正確時，檢查重複檢舉
   useEffect(() => {
-    const suffix = extractCharacterIdSuffix(reportedCharacter)
-
-    if (!suffix) {
+    if (!isValidCharacterIdFormat) {
       setDuplicateCheck(null)
       return
     }
@@ -76,7 +80,7 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
     const timer = setTimeout(async () => {
       setIsCheckingDuplicate(true)
       try {
-        const result = await reportService.checkDuplicateReport(suffix)
+        const result = await reportService.checkDuplicateReport(characterId)
         setDuplicateCheck(result)
       } catch (err) {
         console.error('檢查重複檢舉失敗:', err)
@@ -87,7 +91,7 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
     }, 500)
 
     return () => clearTimeout(timer)
-  }, [reportedCharacter])
+  }, [characterId, isValidCharacterIdFormat])
 
   // 判斷是否可以提交（有進行中的檢舉時不可提交）
   const canSubmit = !duplicateCheck?.myActiveReportExists
@@ -105,11 +109,11 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
       setError(t('report.error.invalidUrl'))
       return
     }
-    if (!reportedCharacter.trim()) {
-      setError(t('report.error.characterRequired'))
+    if (!characterName.trim()) {
+      setError(t('report.error.characterNameRequired'))
       return
     }
-    if (!isValidCharacterId) {
+    if (!isValidCharacterIdFormat) {
       setError(t('report.error.invalidCharacterId'))
       return
     }
@@ -127,7 +131,7 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
     try {
       const result = await reportService.createReport({
         videoUrl: videoUrl.trim(),
-        reportedCharacter: reportedCharacter.trim(),
+        reportedCharacter: fullCharacterId,
         description: description.trim() || undefined,
         reporterDiscord: discordUsername,
       })
@@ -135,7 +139,8 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
       if (result) {
         // 重置表單
         setVideoUrl('')
-        setReportedCharacter('')
+        setCharacterName('')
+        setCharacterId('')
         setDescription('')
         onSuccess?.()
       } else {
@@ -147,7 +152,7 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
     } finally {
       setIsSubmitting(false)
     }
-  }, [videoUrl, reportedCharacter, description, discordUsername, isValidUrl, isValidCharacterId, duplicateCheck, t, onSuccess])
+  }, [videoUrl, fullCharacterId, description, discordUsername, isValidUrl, isValidCharacterIdFormat, isValidCharacterName, duplicateCheck, t, onSuccess])
 
   // 開發環境下即使未登入也可使用
   const isDev = process.env.NODE_ENV === 'development'
@@ -192,49 +197,85 @@ export function ReportForm({ onSuccess, onCancel }: ReportFormProps) {
         </div>
       )}
 
-      {/* 被檢舉者角色 ID */}
+      {/* 被檢舉者角色 */}
       <div>
         <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-1">
           {t('report.form.reportedCharacter')} *
         </label>
-        <div className="relative">
-          <input
-            type="text"
-            value={reportedCharacter}
-            onChange={(e) => setReportedCharacter(e.target.value)}
-            placeholder={t('report.form.reportedCharacterPlaceholder')}
-            className={`w-full px-3 py-2 pr-10 rounded-lg border
-                       bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100
-                       focus:ring-2 focus:border-transparent
-                       ${hasCharacterInput
-                         ? isValidCharacterId
-                           ? 'border-green-500 focus:ring-green-500'
-                           : 'border-red-500 focus:ring-red-500'
-                         : 'border-zinc-300 dark:border-zinc-600 focus:ring-blue-500'
-                       }`}
-            disabled={isSubmitting}
-          />
-          {/* 驗證狀態圖示 */}
-          {hasCharacterInput && (
-            <div className="absolute right-3 top-1/2 -translate-y-1/2">
-              {isValidCharacterId ? (
-                <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              ) : (
-                <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              )}
-            </div>
-          )}
+        <div className="flex gap-2 items-center">
+          {/* 角色名稱 */}
+          <div className="relative flex-1">
+            <input
+              type="text"
+              value={characterName}
+              onChange={(e) => setCharacterName(e.target.value)}
+              placeholder={t('report.form.characterNamePlaceholder')}
+              className={`w-full px-3 py-2 pr-10 rounded-lg border
+                         bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100
+                         focus:ring-2 focus:border-transparent
+                         ${characterName.trim()
+                           ? isValidCharacterName
+                             ? 'border-green-500 focus:ring-green-500'
+                             : 'border-red-500 focus:ring-red-500'
+                           : 'border-zinc-300 dark:border-zinc-600 focus:ring-blue-500'
+                         }`}
+              disabled={isSubmitting}
+            />
+            {characterName.trim() && (
+              <div className="absolute right-3 top-1/2 -translate-y-1/2">
+                {isValidCharacterName ? (
+                  <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                ) : (
+                  <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                )}
+              </div>
+            )}
+          </div>
+
+          {/* # 分隔符 */}
+          <span className="text-lg font-bold text-zinc-500 dark:text-zinc-400">#</span>
+
+          {/* 角色 ID（5個英文字母） */}
+          <div className="relative flex-1">
+            <input
+              type="text"
+              value={characterId}
+              onChange={(e) => handleCharacterIdChange(e.target.value)}
+              placeholder="abcDE"
+              maxLength={5}
+              className={`w-full px-3 py-2 pr-10 rounded-lg border font-mono uppercase
+                         bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100
+                         focus:ring-2 focus:border-transparent
+                         ${characterId.length > 0
+                           ? isValidCharacterIdFormat
+                             ? 'border-green-500 focus:ring-green-500'
+                             : 'border-red-500 focus:ring-red-500'
+                           : 'border-zinc-300 dark:border-zinc-600 focus:ring-blue-500'
+                         }`}
+              disabled={isSubmitting}
+            />
+            {characterId.length > 0 && (
+              <div className="absolute right-2 top-1/2 -translate-y-1/2">
+                {isValidCharacterIdFormat ? (
+                  <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                ) : (
+                  <svg className="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                )}
+              </div>
+            )}
+          </div>
         </div>
         {/* 格式說明 */}
         <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
           {t('report.form.characterIdHint')}
-        </p>
-        <p className="text-xs text-zinc-400 dark:text-zinc-500">
-          {t('report.form.characterIdExample')}
         </p>
 
         {/* 重複檢舉提示 */}
