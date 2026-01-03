@@ -16,7 +16,6 @@ interface ModeDropdownProps {
   currentMode: PageMode
   onModeChange: (mode: PageMode) => void
   isAdmin: boolean
-  isLoggedIn: boolean
 }
 
 /**
@@ -27,7 +26,6 @@ export function ModeDropdown({
   currentMode,
   onModeChange,
   isAdmin,
-  isLoggedIn,
 }: ModeDropdownProps) {
   const { t } = useLanguage()
   const [isOpen, setIsOpen] = useState(false)
