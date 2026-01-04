@@ -344,4 +344,6 @@ export interface ItemsOrganizedData {
   typeInfo: ItemsOrganizedTypeInfo
   randomStats?: Record<string, ItemsOrganizedRandomStat>
   isGachapon?: boolean
+  /** 外部版本對應 ID（如 MapleSaga） */
+  externalIds?: Record<string, number>
 }
