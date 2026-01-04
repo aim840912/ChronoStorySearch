@@ -15,6 +15,7 @@ import { memo, useState, useMemo } from 'react'
 import type { DropItem, Language } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
+import { useShowDevInfo } from '@/hooks/useShowDevInfo'
 import { getMonsterDisplayName } from '@/lib/display-name'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 
@@ -37,7 +38,7 @@ export const MonsterDropList = memo(function MonsterDropList({
   onMonsterClick,
 }: MonsterDropListProps) {
   const { t, language } = useLanguage()
-  const isDev = process.env.NODE_ENV === 'development'
+  const showDevInfo = useShowDevInfo()
 
   // 排序狀態（從 localStorage 讀取，預設高到低）
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>(() => {
@@ -124,7 +125,7 @@ export const MonsterDropList = memo(function MonsterDropList({
             <th className="text-center p-3 text-sm font-semibold text-gray-700 dark:text-gray-200">
               {t('card.hp') || '血量'}
             </th>
-            {isDev && (
+            {showDevInfo && (
               <th className="text-center p-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hidden md:table-cell">
                 ID
               </th>
@@ -141,7 +142,7 @@ export const MonsterDropList = memo(function MonsterDropList({
               onToggleFavorite={onToggleFavorite}
               onMonsterClick={onMonsterClick}
               isEvenRow={index % 2 === 0}
-              isDev={isDev}
+              showDevInfo={showDevInfo}
             />
           ))}
         </tbody>
@@ -263,7 +264,7 @@ interface MonsterDropListDesktopRowProps {
   onToggleFavorite: (mobId: number, mobName: string) => void
   onMonsterClick: (mobId: number, mobName: string) => void
   isEvenRow: boolean
-  isDev: boolean
+  showDevInfo: boolean
 }
 
 const MonsterDropListDesktopRow = memo(function MonsterDropListDesktopRow({
@@ -273,7 +274,7 @@ const MonsterDropListDesktopRow = memo(function MonsterDropListDesktopRow({
   onToggleFavorite,
   onMonsterClick,
   isEvenRow,
-  isDev,
+  showDevInfo,
 }: MonsterDropListDesktopRowProps) {
   const { language, t } = useLanguage()
   const { format } = useImageFormat()
@@ -371,7 +372,7 @@ const MonsterDropListDesktopRow = memo(function MonsterDropListDesktopRow({
       </td>
 
       {/* 開發模式：怪物 ID（桌面版才顯示） */}
-      {isDev && (
+      {showDevInfo && (
         <td className="p-3 text-center text-xs text-gray-500 dark:text-gray-400 hidden md:table-cell">
           {drop.mobId}
         </td>

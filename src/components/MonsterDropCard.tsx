@@ -5,6 +5,7 @@ import type { DropItem } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { useDropRelations } from '@/hooks/useDropRelations'
+import { useShowDevInfo } from '@/hooks/useShowDevInfo'
 import { getMonsterDisplayName } from '@/lib/display-name'
 import { getMonsterImageUrl, getItemImageUrl } from '@/lib/image-utils'
 
@@ -34,7 +35,7 @@ export const MonsterDropCard = memo(function MonsterDropCard({
 }: MonsterDropCardProps) {
   const { language, t } = useLanguage()
   const { format } = useImageFormat()
-  const isDev = process.env.NODE_ENV === 'development'
+  const showDevInfo = useShowDevInfo()
   const chancePercent = drop.chance.toFixed(4)
 
   // 取得此怪物掉落的卷軸列表（用於顯示圖示）
@@ -147,7 +148,7 @@ export const MonsterDropCard = memo(function MonsterDropCard({
           <h3 className="text-lg font-bold text-gray-900 dark:text-white">
             {displayMobName}
           </h3>
-          {isDev && (
+          {showDevInfo && (
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
               {t('card.monsterId')}: {drop.mobId}
             </p>

@@ -18,6 +18,7 @@ import { useToast } from '@/hooks/useToast'
 import { useScreenshot } from '@/hooks/useScreenshot'
 import { useLazyMobInfo, useLazyDropsDetailed } from '@/hooks/useLazyData'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
+import { useShowDevInfo } from '@/hooks/useShowDevInfo'
 
 interface MonsterModalProps {
   isOpen: boolean
@@ -61,7 +62,7 @@ export function MonsterModal({
 }: MonsterModalProps) {
   const { t, language } = useLanguage()
   const { format } = useImageFormat()
-  const isDev = process.env.NODE_ENV === 'development'
+  const showDevInfo = useShowDevInfo()
   const toast = useToast()
 
   // 截圖功能
@@ -343,7 +344,7 @@ export function MonsterModal({
               <h2 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-white text-center mt-2">
                 {displayMonsterName}
               </h2>
-              {isDev && (
+              {showDevInfo && (
                 <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
                   {t('modal.monsterId')}: {monsterId}
                 </p>

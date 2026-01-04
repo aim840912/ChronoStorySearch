@@ -3,6 +3,7 @@
 import { memo } from 'react'
 import type { DropItem } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useShowDevInfo } from '@/hooks/useShowDevInfo'
 import { getMonsterDisplayName, getItemDisplayName } from '@/lib/display-name'
 import { getItemImageUrl, getMonsterImageUrl } from '@/lib/image-utils'
 
@@ -22,7 +23,7 @@ interface DropCardProps {
  */
 export const DropCard = memo(function DropCard({ drop, onCardClick, isFavorite, onToggleFavorite, maxHP }: DropCardProps) {
   const { language, t } = useLanguage()
-  const isDev = process.env.NODE_ENV === 'development'
+  const showDevInfo = useShowDevInfo()
   const chancePercent = drop.chance.toFixed(4)
 
   // 獲取顯示名稱（支援中英文切換）
@@ -78,7 +79,7 @@ export const DropCard = memo(function DropCard({ drop, onCardClick, isFavorite, 
         />
         <div className="flex-1">
           <h3 className="text-lg font-bold text-gray-900 dark:text-white">{displayMobName}</h3>
-          {isDev && (
+          {showDevInfo && (
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
               {t('card.monsterId')}: {drop.mobId}
             </p>
@@ -127,7 +128,7 @@ export const DropCard = memo(function DropCard({ drop, onCardClick, isFavorite, 
         </div>
 
         {/* 物品 ID */}
-        {isDev && (
+        {showDevInfo && (
           <div className="mt-3 text-xs text-gray-400 dark:text-gray-500">
             {t('card.itemId')}: {drop.itemId}
           </div>

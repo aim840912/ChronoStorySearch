@@ -14,6 +14,7 @@
 import { useState } from 'react'
 import type { DropItem, ItemAttributesEssential, Language } from '@/types'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useShowDevInfo } from '@/hooks/useShowDevInfo'
 import { getItemDisplayName } from '@/lib/display-name'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useLazyItemDetailed } from '@/hooks/useLazyData'
@@ -35,7 +36,7 @@ export function DropItemList({
   onItemClick,
 }: DropItemListProps) {
   const { t, language } = useLanguage()
-  const isDev = process.env.NODE_ENV === 'development'
+  const showDevInfo = useShowDevInfo()
 
   return (
     <>
@@ -81,7 +82,7 @@ export function DropItemList({
             <th className="text-center p-3 text-sm font-semibold text-gray-700 dark:text-gray-200">
               {t('card.quantity') || '數量/等級'}
             </th>
-            {isDev && (
+            {showDevInfo && (
               <th className="text-center p-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hidden md:table-cell">
                 ID
               </th>
@@ -104,7 +105,7 @@ export function DropItemList({
               onToggleFavorite={onToggleFavorite}
               onItemClick={onItemClick}
               isEvenRow={index % 2 === 0}
-              isDev={isDev}
+              showDevInfo={showDevInfo}
             />
           ))}
         </tbody>
@@ -226,7 +227,7 @@ interface DropItemListDesktopRowProps {
   onToggleFavorite: (itemId: number, itemName: string) => void
   onItemClick: (itemId: number, itemName: string) => void
   isEvenRow: boolean
-  isDev: boolean
+  showDevInfo: boolean
 }
 
 function DropItemListDesktopRow({
@@ -236,7 +237,7 @@ function DropItemListDesktopRow({
   onToggleFavorite,
   onItemClick,
   isEvenRow,
-  isDev,
+  showDevInfo,
 }: DropItemListDesktopRowProps) {
   const { language, t } = useLanguage()
   const [isExpanded, setIsExpanded] = useState(false)
@@ -271,7 +272,7 @@ function DropItemListDesktopRow({
   )
 
   // 計算 colspan（根據是否為開發模式，+1 是展開按鈕欄）
-  const colSpan = isDev ? 6 : 5
+  const colSpan = showDevInfo ? 6 : 5
 
   return (
     <>
@@ -354,7 +355,7 @@ function DropItemListDesktopRow({
         </td>
 
         {/* 開發模式：物品 ID（桌面版才顯示） */}
-        {isDev && (
+        {showDevInfo && (
           <td className="p-3 text-center text-xs text-gray-500 dark:text-gray-400 hidden md:table-cell">
             {drop.itemId}
           </td>
