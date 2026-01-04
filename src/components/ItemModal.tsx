@@ -445,9 +445,14 @@ export function ItemModal({
                 {displayItemName}
               </h2>
               {showDevInfo && (
-                <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
-                  {t('modal.itemId')}: {itemId}
-                </p>
+                <div className="text-xs text-gray-500 dark:text-gray-400 text-center space-y-0.5">
+                  <p>{t('modal.itemId')}: {itemId}</p>
+                  {itemOrganizedData?.externalIds && Object.entries(itemOrganizedData.externalIds).map(([key, value]) => (
+                    <p key={key} className="text-purple-600 dark:text-purple-400">
+                      {key}: {value}
+                    </p>
+                  ))}
+                </div>
               )}
             </div>
 
