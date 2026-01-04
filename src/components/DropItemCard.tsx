@@ -7,6 +7,7 @@ import { getItemDisplayName } from '@/lib/display-name'
 import { getItemImageUrl, getMonsterImageUrl } from '@/lib/image-utils'
 import { useLazyItemDetailed } from '@/hooks/useLazyData'
 import { useDropRelations } from '@/hooks/useDropRelations'
+import { useShowDevInfo } from '@/hooks/useShowDevInfo'
 import { ItemAttributesCard } from './ItemAttributesCard'
 
 interface DropItemCardProps {
@@ -35,7 +36,7 @@ export function DropItemCard({
   showMaxOnly = false,
 }: DropItemCardProps) {
   const { language, t } = useLanguage()
-  const isDev = process.env.NODE_ENV === 'development'
+  const showDevInfo = useShowDevInfo()
   const [isExpanded, setIsExpanded] = useState(false)
   const chancePercent = drop.chance.toFixed(4)
 
@@ -184,7 +185,7 @@ export function DropItemCard({
           <h3 className="text-lg font-bold text-gray-900 dark:text-white">
             {displayItemName}
           </h3>
-          {isDev && (
+          {showDevInfo && (
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
               {t('card.itemId')}: {drop.itemId}
             </p>

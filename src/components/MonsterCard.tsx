@@ -5,6 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { useAutoFitText } from '@/hooks/useAutoFitText'
 import { useDropRelations } from '@/hooks/useDropRelations'
+import { useShowDevInfo } from '@/hooks/useShowDevInfo'
 import { getMonsterDisplayName } from '@/lib/display-name'
 import { getItemImageUrl, getMonsterImageUrl } from '@/lib/image-utils'
 import { BaseCard, CardHeader, CardImage, FavoriteButton, TypeBadge } from './cards'
@@ -47,7 +48,7 @@ export const MonsterCard = memo(function MonsterCard({
   const { language, t } = useLanguage()
   const { format } = useImageFormat()
   const { getScrollsForMob } = useDropRelations()
-  const isDev = process.env.NODE_ENV === 'development'
+  const showDevInfo = useShowDevInfo()
 
   const displayMobName = getMonsterDisplayName(mobName, chineseMobName, language)
   const monsterIconUrl = getMonsterImageUrl(mobId, { format })
@@ -114,7 +115,7 @@ export const MonsterCard = memo(function MonsterCard({
           >
             {displayMobName}
           </h3>
-          {isDev && (
+          {showDevInfo && (
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
               {t('card.monsterId')}: {mobId}
             </p>

@@ -5,6 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { useAutoFitText } from '@/hooks/useAutoFitText'
 import { useDropRelations } from '@/hooks/useDropRelations'
 import { useLazyItemDetailed } from '@/hooks/useLazyData'
+import { useShowDevInfo } from '@/hooks/useShowDevInfo'
 import { getItemDisplayName } from '@/lib/display-name'
 import { getItemImageUrl, getMonsterImageUrl } from '@/lib/image-utils'
 import type { ItemSource } from '@/types'
@@ -60,7 +61,7 @@ export function ExpandableFavoriteItemCard({
   void monsterCount
   const { language, t } = useLanguage()
   const { getMobsForItem } = useDropRelations()
-  const isDev = process.env.NODE_ENV === 'development'
+  const showDevInfo = useShowDevInfo()
 
   // 展開狀態
   const [isExpanded, setIsExpanded] = useState(false)
@@ -205,7 +206,7 @@ export function ExpandableFavoriteItemCard({
           >
             {displayItemName}
           </h3>
-          {isDev && (
+          {showDevInfo && (
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
               {t('card.itemId')}: {itemId}
             </p>

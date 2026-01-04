@@ -18,6 +18,7 @@ import { useScreenshot } from '@/hooks/useScreenshot'
 import { useLazyMobInfo, useLazyItemDetailed, useLazyDropsByItem } from '@/hooks/useLazyData'
 import { findGachaItemOrganized } from '@/lib/gacha-utils'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
+import { useShowDevInfo } from '@/hooks/useShowDevInfo'
 
 // 商人販售地點資料結構
 interface MerchantLocation {
@@ -72,7 +73,7 @@ export function ItemModal({
   onGoBack,
 }: ItemModalProps) {
   const { t, language } = useLanguage()
-  const isDev = process.env.NODE_ENV === 'development'
+  const showDevInfo = useShowDevInfo()
   const toast = useToast()
 
   // 截圖功能
@@ -443,7 +444,7 @@ export function ItemModal({
               <h2 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-white text-center mt-2">
                 {displayItemName}
               </h2>
-              {isDev && (
+              {showDevInfo && (
                 <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
                   {t('modal.itemId')}: {itemId}
                 </p>
@@ -513,7 +514,7 @@ export function ItemModal({
                                 </span>
                               )}
                             </p>
-                            {isDev && (
+                            {showDevInfo && (
                               <p className="text-xs text-gray-500 dark:text-gray-400">
                                 {t('modal.machineId')}: {source.machineId}
                               </p>
