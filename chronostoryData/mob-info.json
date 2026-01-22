@@ -673,7 +673,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "2230103",
       "name": "Trixter",
       "maxHP": 450,
@@ -697,7 +697,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "2230104",
       "name": "Green Trixter",
       "maxHP": 780,
@@ -1129,7 +1129,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3210206",
       "name": "Helly",
       "maxHP": 1350,
@@ -1177,7 +1177,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3210208",
       "name": "Retz",
       "maxHP": 1400,
@@ -1321,7 +1321,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3230103",
       "name": "King Bloctopus",
       "maxHP": 1850,
@@ -1393,7 +1393,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3230302",
       "name": "Bloctopus",
       "maxHP": 1300,
@@ -1417,7 +1417,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3230303",
       "name": "Propelly",
       "maxHP": 1700,
@@ -1441,7 +1441,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3230304",
       "name": "Planey",
       "maxHP": 1830,
@@ -1513,7 +1513,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3230307",
       "name": "Chirppy",
       "maxHP": 800,
@@ -1537,7 +1537,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3230308",
       "name": "Tweeter",
       "maxHP": 1900,
@@ -1561,7 +1561,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "3230400",
       "name": "Drumming Bunny",
       "maxHP": 950,
@@ -1657,7 +1657,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "4130103",
       "name": "Rombot",
       "maxHP": 11000,
@@ -1897,7 +1897,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "4230109",
       "name": "Block Golem",
       "maxHP": 2400,
@@ -1921,7 +1921,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "4230110",
       "name": "King Block Golem",
       "maxHP": 2600,
@@ -2065,7 +2065,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "4230116",
       "name": "Barnard Gray",
       "maxHP": 47000,
@@ -2089,7 +2089,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "4230117",
       "name": "Zeta Gray",
       "maxHP": 52000,
@@ -2113,7 +2113,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "4230118",
       "name": "Ultra Gray",
       "maxHP": 55000,
@@ -2137,7 +2137,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "4230119",
       "name": "Mateon",
       "maxHP": 28000,
@@ -2161,7 +2161,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "4230120",
       "name": "Plateon",
       "maxHP": 31000,
@@ -2185,7 +2185,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "4230121",
       "name": "Mecateon",
       "maxHP": 46000,
@@ -2401,7 +2401,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "4240000",
       "name": "Chief Gray",
       "maxHP": 115000,
@@ -2689,7 +2689,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "5120100",
       "name": "MT-09",
       "maxHP": 105000,
@@ -3529,7 +3529,7 @@
   },
   {
     "mob": {
-      "InGame": false,
+      "InGame": true,
       "id": "6220001",
       "name": "Zeno",
       "maxHP": 3500000,
