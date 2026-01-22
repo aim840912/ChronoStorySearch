@@ -2,8 +2,18 @@
   "itemId": 1492010,
   "itemName": "Infinity's Wrath",
   "chineseItemName": "因弗蒂之槍",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 5120100,
+      "mobName": "MT-09",
+      "chineseMobName": "機器人堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 6300100,
       "mobName": "Buffoon",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

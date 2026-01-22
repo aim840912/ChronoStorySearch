@@ -2,7 +2,6 @@
   "itemId": 1482002,
   "itemName": "Double Tail Knuckler",
   "chineseItemName": "雙棘指虎",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 2230113,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

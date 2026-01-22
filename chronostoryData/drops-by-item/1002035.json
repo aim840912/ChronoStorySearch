@@ -2,7 +2,6 @@
   "itemId": 1002035,
   "itemName": "Pink Jester",
   "chineseItemName": "粉紅術士帽",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 2230101,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

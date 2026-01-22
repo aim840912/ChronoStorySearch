@@ -2,7 +2,6 @@
   "itemId": 4004001,
   "itemName": "Wisdom Crystal Ore",
   "chineseItemName": "智慧母礦",
-  "totalMonsters": 26,
   "monsters": [
     {
       "mobId": 5220003,
@@ -10,6 +9,17 @@
       "chineseMobName": "咕咕鐘",
       "isBoss": true,
       "inGame": true,
+      "chance": 10,
+      "displayChance": "10.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6220001,
+      "mobName": "Zeno",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": true,
+      "inGame": false,
       "chance": 10,
       "displayChance": "10.0%",
       "minQty": 1,
@@ -61,10 +71,21 @@
     },
     {
       "mobId": 3230300,
-      "mobName": "Jr. Boogie 1",
+      "mobName": "Jr. Boogie",
       "chineseMobName": "幼魔精靈",
       "isBoss": false,
       "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230303,
+      "mobName": "Propelly",
+      "chineseMobName": "粉紅色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -76,6 +97,17 @@
       "chineseMobName": "木馬士兵",
       "isBoss": false,
       "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230307,
+      "mobName": "Chirppy",
+      "chineseMobName": "邱布",
+      "isBoss": false,
+      "inGame": false,
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -107,6 +139,39 @@
       "mobId": 4230112,
       "mobName": "Master Robo",
       "chineseMobName": "紅色機器人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230118,
+      "mobName": "Ultra Gray",
+      "chineseMobName": "葛雷隊長",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230120,
+      "mobName": "Plateon",
+      "chineseMobName": "培利堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230137,
+      "mobName": "White Alien Drone",
+      "chineseMobName": "無人機白",
       "isBoss": false,
       "inGame": true,
       "chance": 1,
@@ -248,7 +313,7 @@
     },
     {
       "mobId": 8140100,
-      "mobName": "Dark Yeti and Pepe",
+      "mobName": "Dark Yeti & Pepe",
       "chineseMobName": "黑吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -258,11 +323,33 @@
       "maxQty": 1
     },
     {
+      "mobId": 8645263,
+      "mobName": "Turbo Robo",
+      "chineseMobName": "守護者機器人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.5,
+      "displayChance": "0.50%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 3210202,
       "mobName": "Jr. Grupin",
       "chineseMobName": "幼藍獨角獅",
       "isBoss": false,
       "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230302,
+      "mobName": "Bloctopus",
+      "chineseMobName": "機器章魚",
+      "isBoss": false,
+      "inGame": false,
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -280,15 +367,16 @@
       "maxQty": 1
     },
     {
-      "mobId": 8645263,
-      "mobName": "Turbo Robo",
-      "chineseMobName": null,
+      "mobId": 4240000,
+      "mobName": "Chief Gray",
+      "chineseMobName": "葛雷元老",
       "isBoss": false,
-      "inGame": true,
-      "chance": 0.5,
-      "displayChance": "0.50%",
+      "inGame": false,
+      "chance": 0.3,
+      "displayChance": "0.30%",
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 34
 }

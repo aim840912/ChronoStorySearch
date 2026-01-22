@@ -2,7 +2,6 @@
   "itemId": 1072117,
   "itemName": "Dark Moon Shoes",
   "chineseItemName": "黑月鞋",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3220000,
@@ -12,6 +11,28 @@
       "inGame": true,
       "chance": 0.8,
       "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3210208,
+      "mobName": "Retz",
+      "chineseMobName": "發條楓葉鼠",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230109,
+      "mobName": "Block Golem",
+      "chineseMobName": "積木泥人",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -26,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

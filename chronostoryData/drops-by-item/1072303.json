@@ -2,7 +2,6 @@
   "itemId": 1072303,
   "itemName": "Brown Double Boots",
   "chineseItemName": "褐色強化皮靴",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 9500148,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

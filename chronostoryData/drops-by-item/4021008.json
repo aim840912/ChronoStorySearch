@@ -2,7 +2,6 @@
   "itemId": 4021008,
   "itemName": "Black Crystal",
   "chineseItemName": "黑水晶",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8130100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

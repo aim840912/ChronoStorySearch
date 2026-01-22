@@ -2,7 +2,6 @@
   "itemId": 1002075,
   "itemName": "Red Apprentice Hat",
   "chineseItemName": "紅色舊魔法帽",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1210103,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

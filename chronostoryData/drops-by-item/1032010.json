@@ -2,7 +2,6 @@
   "itemId": 1032010,
   "itemName": "Star Earrings",
   "chineseItemName": "星星耳環",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 9308021,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

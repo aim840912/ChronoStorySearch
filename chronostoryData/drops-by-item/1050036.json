@@ -2,7 +2,6 @@
   "itemId": 1050036,
   "itemName": "Red Starlight",
   "chineseItemName": "紅星光長袍",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 3210200,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

@@ -4,12 +4,11 @@
   "chineseMobName": "黑獨眼獸",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 33,
   "drops": [
     {
       "itemId": 0,
       "itemName": "Meso",
-      "chineseItemName": null,
+      "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 146,
@@ -216,17 +215,6 @@
       "enabled": true
     },
     {
-      "itemId": 1040082,
-      "itemName": "Khaki Shadow",
-      "chineseItemName": "樹林之影",
-      "chance": 0.12,
-      "displayChance": "0.12%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
       "itemId": 1040089,
       "itemName": "Umber Shouldermail",
       "chineseItemName": "黑板金鎧甲",
@@ -249,17 +237,6 @@
       "enabled": true
     },
     {
-      "itemId": 1060071,
-      "itemName": "Khaki Shadow Pants",
-      "chineseItemName": "樹林之褲",
-      "chance": 0.12,
-      "displayChance": "0.12%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
       "itemId": 1060078,
       "itemName": "Umber Shouldermail Pants",
       "chineseItemName": "黑板金褲",
@@ -274,6 +251,28 @@
       "itemId": 1061025,
       "itemName": "Red Shivermail Skirt",
       "chineseItemName": "紅硬皮裙",
+      "chance": 0.12,
+      "displayChance": "0.12%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1040082,
+      "itemName": "Khaki Shadow",
+      "chineseItemName": "樹林之影",
+      "chance": 0.12,
+      "displayChance": "0.12%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1060071,
+      "itemName": "Khaki Shadow Pants",
+      "chineseItemName": "樹林之褲",
       "chance": 0.12,
       "displayChance": "0.12%",
       "minQty": 1,
@@ -369,5 +368,6 @@
       "questId": 0,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 33
 }

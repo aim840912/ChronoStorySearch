@@ -2,7 +2,6 @@
   "itemId": 1002245,
   "itemName": "White Seraphis",
   "chineseItemName": "白和平之帽",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6400000,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

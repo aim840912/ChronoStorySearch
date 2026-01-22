@@ -2,7 +2,6 @@
   "itemId": 4000072,
   "itemName": "Grupin Tail",
   "chineseItemName": "藍獨角獅尾",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 5120003,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

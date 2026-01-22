@@ -2,7 +2,6 @@
   "itemId": 4020004,
   "itemName": "Opal Ore",
   "chineseItemName": "蛋白石母礦",
-  "totalMonsters": 15,
   "monsters": [
     {
       "mobId": 8220001,
@@ -82,11 +81,44 @@
       "maxQty": 1
     },
     {
+      "mobId": 3230302,
+      "mobName": "Bloctopus",
+      "chineseMobName": "機器章魚",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230303,
+      "mobName": "Propelly",
+      "chineseMobName": "粉紅色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230107,
       "mobName": "Flyeye",
       "chineseMobName": "獨眼蝙蝠",
       "isBoss": false,
       "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230121,
+      "mobName": "Mecateon",
+      "chineseMobName": "梅卡堤安",
+      "isBoss": false,
+      "inGame": false,
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -169,5 +201,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 18
 }

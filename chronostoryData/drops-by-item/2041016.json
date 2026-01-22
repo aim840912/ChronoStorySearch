@@ -2,13 +2,12 @@
   "itemId": 2041016,
   "itemName": "Scroll for Cape for INT 60%",
   "chineseItemName": "披風智力卷軸60%",
-  "totalMonsters": 12,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.3,
       "displayChance": "0.30%",
@@ -43,6 +42,17 @@
       "chineseMobName": "咕咕鐘",
       "isBoss": true,
       "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6220001,
+      "mobName": "Zeno",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": true,
+      "inGame": false,
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -136,5 +146,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 13
 }

@@ -2,7 +2,6 @@
   "itemId": 4000001,
   "itemName": "Orange Mushroom Cap",
   "chineseItemName": "菇菇寶貝傘",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1210102,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

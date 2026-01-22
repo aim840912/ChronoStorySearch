@@ -2,8 +2,18 @@
   "itemId": 1072132,
   "itemName": "Emerald Hildon Boots",
   "chineseItemName": "祖母綠將軍靴",
-  "totalMonsters": 3,
   "monsters": [
+    {
+      "mobId": 3210206,
+      "mobName": "Helly",
+      "chineseMobName": "黃色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 4130102,
       "mobName": "Dark Nependeath",
@@ -36,6 +46,18 @@
       "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230400,
+      "mobName": "Drumming Bunny",
+      "chineseMobName": "兔子鼓手",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

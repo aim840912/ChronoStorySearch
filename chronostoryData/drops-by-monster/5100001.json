@@ -4,7 +4,6 @@
   "chineseMobName": "小雪球",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 1,
   "drops": [
     {
       "itemId": 2022001,
@@ -17,5 +16,6 @@
       "questId": 0,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 1
 }

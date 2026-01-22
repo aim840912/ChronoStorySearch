@@ -2,7 +2,6 @@
   "itemId": 2040344,
   "itemName": "Dark Scroll for Accessory for DEX 70%",
   "chineseItemName": "飾品敏捷詛咒卷軸70%",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8143000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

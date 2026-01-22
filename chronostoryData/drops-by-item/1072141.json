@@ -2,7 +2,6 @@
   "itemId": 1072141,
   "itemName": "Blue Goldwind Shoes",
   "chineseItemName": "藍黃金風",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 4230102,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

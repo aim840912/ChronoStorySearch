@@ -2,8 +2,18 @@
   "itemId": 1072134,
   "itemName": "Orihalcon Hildon Boots",
   "chineseItemName": "紫礦將軍靴",
-  "totalMonsters": 4,
   "monsters": [
+    {
+      "mobId": 8645263,
+      "mobName": "Turbo Robo",
+      "chineseMobName": "守護者機器人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.2,
+      "displayChance": "0.20%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 4230107,
       "mobName": "Flyeye",
@@ -36,17 +46,7 @@
       "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1
-    },
-    {
-      "mobId": 8645263,
-      "mobName": "Turbo Robo",
-      "chineseMobName": null,
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.2,
-      "displayChance": "0.20%",
-      "minQty": 1,
-      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

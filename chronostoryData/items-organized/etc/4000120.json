@@ -1,0 +1,37 @@
+{
+  "id": 4000120,
+  "description": {
+    "id": 4000120,
+    "name": "馬堤安的觸角",
+    "description": "露在頭盔外面的馬堤安觸角，透過觸角好像可收集各種資訊。",
+    "chineseItemName": "馬堤安的觸角"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAcCAYAAACK7SRjAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABpUlEQVR4nKWW3ZHDIAyE8YwboAVaoIXUkirTAi3QAiX4kMwq4jd4bu8hPhO+XUsGcpqxrsn9wzxQC2foy72Ms64aiCmaT/zAdMtEwy9AbQMm+XyPxp6YAL4EW2vLpzc2dSZTA0kOcMqTejkxuY0cPwlpZXAiNYnAJRH/j/uOwWScxICufRmfGVQNVeBDTbobPDFwgzJ28BZcJCZv/64LlaEhBTYk81F6gQ/Alcgc6bk/LqdP6/SzRdTq0OnZKDpJTxqlPzHRPFx9MFkJybfAdtG8FfyXqoa6TZMdOIOR2jvPzUwxcTP/A6/AWqh3WtR9Be/AtHDwpujUs8aO4LwqNRgbFxRi6FKP1km15Y6g2AFv2DctwHGjLFcL9d5z03bAs9V9/gK3b8QELE9edLRlqbQL9vkAaZW3BF7xp56ILTWE0EHpPv3ptCOwVpVcG7TiNyYZNvgeLtVsuSJTSn/iMbGkYaANKxNjC4oODXznHtEGSM67ohxp5RytDdbLfCbZFWGAZgENcDK9wawsZY8/dM0P9XtE6jqH9VAN1snFABfa6KGE8QcXhT6/ITZowwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB50lEQVR4nK2WgXHDIAxF8Z0XoCPQEVghM3SEdJXO0FmygkcoK2iEFMnIESBh3OvPOXbA1uMbIbK6cz2N9sVd0AhEgFu4ueBD1ZEguUd68ACmgBboyQDfQFAxt2HfFaAGGkK89+UcnYcOaMJURwyBHEDpPYA7NJBD1AjWgsgNCiFlpPSb2wNBcBBwwPA6ln4LZiaDgCwiwJ4cBiwor3oIaiFFB/Ae79X9CNhgIzgORHOlghRINxB2RfMZsisYu5pZsK0W6YqgKRyuUJqrVQviLq56Bo6kOZqC+MHEz4LOVCVDmAReBRGE3cQQKREgASXCf4EqiBTPDwzmaRbUQXCRcsZJN1ZSnIGoGkgIF1XWlvaUlm60dWhuExqAK/Ue+OWCIeniq3u2gBgjTfgMxKoqXfUeQdrMMiAUR9y2WI46zUJi3gxb5bJElUYFYRDeBrZt6/qwHT/ShQaRMh1JWCvKPHAEe22U1dPHFQ4AXXUgWhtljhgm4RXQ+RIWN0C+Z++RMM0RVe9j2y7/G2rYuNRYUqs3w3iiGcMQcD3MenVlj+qSgZf9e4b9cCM7tAP3AAF5wy8GeeX45L4M/XJ/04fbX0haReAgzgzn8/cgGBhtVbt0ZD04mn0YXFfHWi5SA6tL9KvNGv0p/BcY2FLLwO5GagAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -4,
+      "y": 31,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -7,
+      "y": 31,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

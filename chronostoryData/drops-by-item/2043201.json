@@ -2,13 +2,23 @@
   "itemId": 2043201,
   "itemName": "Scroll for One-Handed BW for ATT 60%",
   "chineseItemName": "單手棍攻擊卷軸60%",
-  "totalMonsters": 8,
   "monsters": [
+    {
+      "mobId": 6220001,
+      "mobName": "Zeno",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 4
+    },
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.3,
       "displayChance": "0.30%",
@@ -71,6 +81,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 3230400,
+      "mobName": "Drumming Bunny",
+      "chineseMobName": "兔子鼓手",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 6230100,
       "mobName": "Wild Kargo",
       "chineseMobName": "魔龍",
@@ -92,5 +113,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 10
 }

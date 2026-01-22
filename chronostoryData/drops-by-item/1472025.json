@@ -2,7 +2,6 @@
   "itemId": 1472025,
   "itemName": "Dark Gigantic",
   "chineseItemName": "黑戰神拳套",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 5220003,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

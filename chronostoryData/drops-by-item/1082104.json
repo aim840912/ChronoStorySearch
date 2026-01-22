@@ -2,7 +2,6 @@
   "itemId": 1082104,
   "itemName": "Mithril Husk",
   "chineseItemName": "鋰礦暗影手套",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 7130101,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

@@ -2,7 +2,6 @@
   "itemId": 1432003,
   "itemName": "Nakamaki",
   "chineseItemName": "刺槍",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 9834178,
@@ -47,6 +46,18 @@
       "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

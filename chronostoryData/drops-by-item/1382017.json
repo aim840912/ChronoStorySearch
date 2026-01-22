@@ -2,7 +2,6 @@
   "itemId": 1382017,
   "itemName": "Circle-Winded Staff",
   "chineseItemName": "風輪長杖",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 2230102,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

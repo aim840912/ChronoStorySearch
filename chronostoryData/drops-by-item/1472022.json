@@ -2,11 +2,10 @@
   "itemId": 1472022,
   "itemName": "Bronze Gigantic",
   "chineseItemName": "青銅戰神拳套",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 7130102,
-      "mobName": "Yeti and Pepe",
+      "mobName": "Yeti & Pepe",
       "chineseMobName": "雪吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -17,7 +16,7 @@
     },
     {
       "mobId": 8140100,
-      "mobName": "Dark Yeti and Pepe",
+      "mobName": "Dark Yeti & Pepe",
       "chineseMobName": "黑吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

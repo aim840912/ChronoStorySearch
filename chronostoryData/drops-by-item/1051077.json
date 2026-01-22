@@ -2,8 +2,18 @@
   "itemId": 1051077,
   "itemName": "Yellow Battle Empress",
   "chineseItemName": "黃白銀鎧甲",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 4230116,
+      "mobName": "Barnard Gray",
+      "chineseMobName": "葛雷族人",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 7130010,
       "mobName": "Death Teddy",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

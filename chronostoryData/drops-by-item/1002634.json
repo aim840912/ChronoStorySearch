@@ -2,7 +2,6 @@
   "itemId": 1002634,
   "itemName": "Purple Cast Linen",
   "chineseItemName": "紫色亞麻水手頭巾",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5120003,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

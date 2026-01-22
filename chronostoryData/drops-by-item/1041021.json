@@ -2,7 +2,6 @@
   "itemId": 1041021,
   "itemName": "Brown Lamelle",
   "chineseItemName": "褐十字軍甲",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2130103,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

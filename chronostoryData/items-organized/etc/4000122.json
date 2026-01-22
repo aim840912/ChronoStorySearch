@@ -1,0 +1,37 @@
+{
+  "id": 4000122,
+  "description": {
+    "id": 4000122,
+    "name": "梅卡堤安的光線槍",
+    "description": "梅卡堤安所用的光線槍，應該有特別的啟動方法。",
+    "chineseItemName": "梅卡堤安的光線槍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADf0lEQVR4nL2XjXGrMBCEzzNpgBZICbwSeCVACbgEXIJdginBtKASTAmhBUrg3d6xRDjExvl5N9EMYJA+7a1Oyov8TozR9W7LB98FuR3Q7o+VSJok0g+DHBp79hDmOyBjVVXzTdM0HyD0T6pcfwuPYb4KMh6PR7vo+14SHZhQh6ZRGId4Jp4FsVnneS4hBOE1Y9DRi6JQmFbqQh7BMK27Z0EWqUBAiRgIIHiG61MbmJZ5sBhgvKaq5iCv5WBp2woycqA0Ta0hJYgsy+w5gPCcMIgJYgHwdkn0vcQg8O6lFilPMm4BMQh2DgA0ghEIEF3XGZgaV87n86xaWZarENOnFl8yKzrHoOgMAwOGagHier3O0Hj3crnY/WtZKox7iaFqILalpo/QaU52xpS0bWv38BFgAADjMvA+VtpreZDrWRZqIDaBVPkkv3Z+aD3x9AYCA3PWDIAQDkBUDKB/9g29gdi0akY4v5+UTNNMjkVnxQpGRMdQpK5rUw1waEgb1QMAgJhCwpSn5jlF9DtTQpJMQhcmZVylQ9MbBI0MADQMRFN7H546KNMvczIv63sgsxpQIM90hqmXbvQ1jb0C7ipxZdHIUAQwgGbh0/u59N9VBGowTI3BnwGC6WJBQ0AdBGcN78SVl6mJ39miiHcW/EMzrAJ0vaeGK/BSU/5ETejui1MAUG4JcSG8jXsgu1ObjEXhhoM5i8w7gRpB/XiuHcxAslyXZbBiVZ7cnAxADDcbz2TobR7hsmOe0Rca/ZFnXiklyeelmqWuEpZmvMRjJW4hbkHiQ445nxBmvGwQzgmlhGp0PYynauVeukM3GAxiWNl+1yBikPGoNcIPMz4gjBbVhF0blqBQgwE1BltZiUEgbXXeafF73wIexQshEuyqmL1PRXSb0w4X9B+28rJxH1wqvKeVNPgyh4eI+SglC0U6VEWRhSIPDli7v4dET2leuEotkuciTIOtf3APYgYZJhhee7uLYkdFQNgubD5yJZixvVXw9Sp6F4TxyfALf2CDIwRanfdzXdm/byGb/o2IQXY6pzGbskol+vfOxreskA4raHAP6UGHJdre2TfP/x+zBiKEuflthkhRnCzHuiQUpkr0ADRBfGfwNZBPO2v7TnC8iRVZqw8/CbIa/QTDa66q/w5i1XWq6b+hxFaQndbMsZjGJ0bwq2/74hmQGeb2mfxw/AOVVWDiuuDNXAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACIAAAAgCAYAAAB3j6rJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADtklEQVR4nLWXgXGzMAyFlbsuwAp0BDoC/wgwAhmBjJCMEEaAFRghjFCv4BH49SSLGkqAtFddfQUC9uenZxne6G9ijI5PRx74LchyQDm/VkRpkpDzni6NXNuF+Q3IWFXVdNI0zTcI/qMq59/6fZifgozX61UOnHOU8MAGdWkahlGIV+JVEJl1nufU9z3ZsYXn0YuiYJiO6oL2YCytp1dBZqlAQIkYCCC4huNb11tapsFigPGRspqe3ksvaTsKMtpAaZpKQ0oQWZbJdQDhusEgAsQM4LNN+L5EIHBvWxOVNxqPgAiEdQ4ANAMzIEAMwyBgbFy63++TamVZrkKERyV+ZFZ0jkHRGQYGjKkFiMfjMUHj3rZt5fy9LBlGvWTBaiCOpcZF6GZO68xS0nWdnMNHgAEAjGuB+7HS3ssLPe40UwNxCKTKg/zc+aXTxJs3EBjYZm0BEIMDkCkG0I9zY95AHFo1I5zvgpJpmtG1GKRYwYjoGIrUdS2qAQ4NaTP1AAAgS6HBlLfmNUX4OVGCkoz6oQ/KqEqXxgmEGRkAaBjITK19aOqgjJvnZFrWWyCTGlAgz3iGqZZu9BXGXgFXlWxlmZGhCGAAbYWPz6fSv6kI1LAQNbxeA4SlywoaAuogbNbwTlx5LTXxPUcU0c56fVAMywCD09TYCmxrkz9hE6r74hQA1LaEuBAuYwvkdOuSsSjUcDBnkWknUKNnP95rBROQLOdl2UuxKm9qTgtA+MXGEwx9zCO27CzP6AvN/JFnWikpyaelmqWqEpZmvMRjJZYQS5D4JUecbxBivMyTzQmlxNQYHIzHauVauvvBCwzCr2y/axAxyHjlGqEvMzogjBbVhFPXz0GhhgXU8LKyEoFA2up84OL3tQXsxZtBJNhVMXudCvE2xx3O6L9t5WWjPmgr3MeVtNdlDg8Z5l5KZooMqIpEM0V2XrBO/y4Jv6Vp4Sq5SN6LPgy2/sAWxATiA4wda9tEkVdFQMguLD5SJSxjZ6ng61V0E8TiyfAzf2CDMwi0OndTXTl/bSGHPiNikBPPacxCVk0J99XZ+JkVNGAFefUQv+hYiZZ7zs3r3zFrIGQwi98miBTFSXLMS4JhqoRfgALEbwZfA3naWecGwutNrEhUH55sfauxabrdvcYFGDu2VRUio2Pho/+ri/IZSBKaVtdQ01cqZU7f49nMDcCFNrtvDcQgUKhLrplt4ecj9HrU0PHU7H73bSlicWaY++L3y4EBl8fLtgti8sUwH09g12bqN86fKvMfDV96gOoYKaIAAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": 1,
+      "y": 32,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 1,
+      "y": 32,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

@@ -2,8 +2,18 @@
   "itemId": 1082023,
   "itemName": "Iron Knuckle",
   "chineseItemName": "鋼鐵長手套",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 3230307,
+      "mobName": "Chirppy",
+      "chineseMobName": "邱布",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 4230113,
       "mobName": "Tick-Tock",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

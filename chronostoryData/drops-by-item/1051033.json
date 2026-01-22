@@ -2,7 +2,6 @@
   "itemId": 1051033,
   "itemName": "Red Calaf",
   "chineseItemName": "紅妖精禮服",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 2230113,
@@ -27,6 +26,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 3230308,
+      "mobName": "Tweeter",
+      "chineseMobName": "特威德",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5120000,
       "mobName": "Luster Pixie",
       "chineseMobName": "日光精靈",
@@ -37,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

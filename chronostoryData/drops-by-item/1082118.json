@@ -2,7 +2,6 @@
   "itemId": 1082118,
   "itemName": "Green Larceny",
   "chineseItemName": "德古拉藍手套",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 7130010,
@@ -27,6 +26,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 4230117,
+      "mobName": "Zeta Gray",
+      "chineseMobName": "葛雷士兵",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 7140000,
       "mobName": "Ghost Pirate",
       "chineseMobName": "百烈",
@@ -37,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

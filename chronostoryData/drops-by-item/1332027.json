@@ -2,7 +2,6 @@
   "itemId": 1332027,
   "itemName": "Varkit",
   "chineseItemName": "霸傑之刃",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8220001,
@@ -14,6 +13,18 @@
       "displayChance": "0.50%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230131,
+      "mobName": "Gray Commuter Saucer",
+      "chineseMobName": "新葛雷白",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

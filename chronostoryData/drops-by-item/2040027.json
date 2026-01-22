@@ -2,7 +2,6 @@
   "itemId": 2040027,
   "itemName": "Scroll for Helmet for DEX 100%",
   "chineseItemName": "頭盔敏捷卷軸100%",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 3230101,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

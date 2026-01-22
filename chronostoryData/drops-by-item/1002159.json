@@ -2,18 +2,18 @@
   "itemId": 1002159,
   "itemName": "Black Hunter",
   "chineseItemName": "黑獵人帽",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 1.5,
       "displayChance": "1.5%",
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

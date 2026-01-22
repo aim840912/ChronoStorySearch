@@ -1,10 +1,9 @@
 {
   "mobId": 9300018,
   "mobName": "Tutorial Jr. Sentinel",
-  "chineseMobName": null,
+  "chineseMobName": "小石球",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 1,
   "drops": [
     {
       "itemId": 4031802,
@@ -17,5 +16,6 @@
       "questId": 1035,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 1
 }

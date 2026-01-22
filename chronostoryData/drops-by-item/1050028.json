@@ -1,0 +1,19 @@
+{
+  "itemId": 1050028,
+  "itemName": "Green Wizard Robe",
+  "chineseItemName": "綠牧師長袍",
+  "monsters": [
+    {
+      "mobId": 2230104,
+      "mobName": "Green Trixter",
+      "chineseMobName": "紅蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

@@ -2,7 +2,6 @@
   "itemId": 1082143,
   "itemName": "Purple Mystra",
   "chineseItemName": "紫色米斯特手套",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 7130300,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 1082126,
   "itemName": "Green Focus",
   "chineseItemName": "綠色亞達夫手套",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8140500,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 1041027,
   "itemName": "Red Shivermail",
   "chineseItemName": "紅硬皮裝",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 2230113,
@@ -17,7 +16,7 @@
     },
     {
       "mobId": 2220100,
-      "mobName": "Blue Mushroom",
+      "mobName": "BlueMushroom",
       "chineseMobName": "藍菇菇",
       "isBoss": false,
       "inGame": true,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

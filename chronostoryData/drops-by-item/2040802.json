@@ -2,7 +2,6 @@
   "itemId": 2040802,
   "itemName": "Scroll for Gloves for Accuracy 10%",
   "chineseItemName": "手套命中卷軸10%",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 8150000,
@@ -21,6 +20,17 @@
       "chineseMobName": "黑木妖",
       "isBoss": false,
       "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230118,
+      "mobName": "Ultra Gray",
+      "chineseMobName": "葛雷隊長",
+      "isBoss": false,
+      "inGame": false,
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -48,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

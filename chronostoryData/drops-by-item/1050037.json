@@ -2,8 +2,29 @@
   "itemId": 1050037,
   "itemName": "Green Starlight",
   "chineseItemName": "綠星光長袍",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 3210205,
+      "mobName": "Black Ratz",
+      "chineseMobName": "黑色發條鼠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230109,
+      "mobName": "Block Golem",
+      "chineseMobName": "積木泥人",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 9300038,
       "mobName": "Ghost Pixie",
@@ -15,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

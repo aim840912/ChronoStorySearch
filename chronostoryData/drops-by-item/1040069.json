@@ -1,0 +1,19 @@
+{
+  "itemId": 1040069,
+  "itemName": "Red Hunter's Armor",
+  "chineseItemName": "紅浪人之服",
+  "monsters": [
+    {
+      "mobId": 3230307,
+      "mobName": "Chirppy",
+      "chineseMobName": "邱布",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

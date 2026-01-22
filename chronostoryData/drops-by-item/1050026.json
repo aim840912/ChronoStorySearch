@@ -2,7 +2,6 @@
   "itemId": 1050026,
   "itemName": "White Wizard Robe",
   "chineseItemName": "白牧師長袍",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 2230100,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

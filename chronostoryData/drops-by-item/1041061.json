@@ -2,7 +2,6 @@
   "itemId": 1041061,
   "itemName": "Yellow Avelin",
   "chineseItemName": "黃旅行服",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1110101,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

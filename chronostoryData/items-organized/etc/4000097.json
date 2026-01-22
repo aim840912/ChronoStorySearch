@@ -1,0 +1,37 @@
+{
+  "id": 4000097,
+  "description": {
+    "id": 4000097,
+    "name": "蜘蛛網",
+    "description": "製作精巧的小蜘蛛網，有良好的黏力。",
+    "chineseItemName": "蜘蛛網"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAZCAYAAADAHFVeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQUlEQVR4nJ1WgZEaMQy0Zr6Bp4RQwn0JpIRcK58SoBVSQigBSsiX8JTgsPKvbi18kIlmbjhjWavVyj6/lH+zKu9W/tOegTlIrQuWmdUV36dJPAKrCgLbXsyBL+XXnfObzTmJO/ARWLBBcNqfqQbgyM716L9T+dGQWgU6ZwXrSoagH2/N+du5zV1Pt+fnuFzzea5IiMkgTgYkWJRsc7DyuisBlI3Aa/OP7IVAAPHsb5lfU2CW8PN90QtMNBBZIQmsG+kaZUQg2Ha3dFvWCeP5MndzCEqdaABEMrmUAaYB83/MVoNtzxas4afraJldgFF8DcJACgQ/Zc7SYZ2Pb7/UMzMGmIGqt/quOTK4Zox3PCj3pljXea/7Uj2JqSWD9cfpuM5szbS83kRT05cN5VpPrWR4fr+3/fb90LTF/vva8NaBaYnyeHOyaCIARUOlTU7GkASMHzJTBwaEIWuWFdljzOy50VVbmurWgWnwYHSwbp6sqJ/7FIuNro2SY3VgGhinCETmuzYEjWMFZaMQfLO3St0IFh0JQK/3V0kUCIu1zGxxsAAIQUenxx0zdeIpkBkhETCAbpj3/Xnq10NLL/nenjTIjclVxgjAcvI8RHAKz1b3+cvSMEhIz9IhGA2dlVkRlJpgzI7MXwqMdYtkMIOIEFPLpwH0pFeN+KXQ1vfEJm+GiH/HDOVRRvr96jKXRqFPMC9+TQiQEbMw1YkJcN/kU0ZBBKADWQOztdtT3DGm5UTgWThiMbIRs+GCwe3p6ZpsfwE37JL59KgsywAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAdCAYAAABbjRdIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACg0lEQVR4nJ1WgXHjIBCEGTdglRCXQEpwSni1kpRgt+Iv4V2CXMK7hFcJRAtetJzAzvzNMBLmuL29PbB27mcW5d27/7RXYAkkxhXLex87vi+TeAYWFQR2uPkEfHO/N87vfrRJbMBbYIUNgtP+hlgAWzbFS3oG9ysj5QpUzgpWlQxB7+/Z+W3Ka/N1GV/tco3TGJEQk0EcC0iwUrLh7N3+6AqQNQL31p/ZjkAASdkvmc8mMEv473PVC0w0EFkhCexr6VrKiECww3HtNqsT5uNtrNYQlDrRAIhkbCkLmAa0vzFbDXaYfGENP91Hs+wKGMXXIAykQPBT5iwd9qX58qSeljHAPKimVj9mRwbXjPGOgXIPzledtz+5mJIIORnsv4RLn1nPtLypiULWlw2VtA65ZBh/PvN5+zhnbXH+HgfeV2BaIjsfrr40EYBKQ5lDTsaQBIyfMlMHBoQha5YV2WPO7HnQVVua6laBafDC6OyrdbKifsnH+XLQtVFsrApMA+MWgch814agca6gbBSCDycfqRvBSkcCMNX7URIFwmYtM1scLABC0NbtsWGmTrwFLCMkAgbQDevpfF7r/dAylfzkXzTIwmSWOQKwnLwPEZzCs9XT+m1tGCSkd2kTjIbOsqwISk0wZ0fafwrM9YhYMA8RIaaWTwPoTa8a8Z9CWz8lFlIzlPgbZiiPMtL/rypzaRT6FOYufSYUkBazYqoTE+C5sbeMgghABdID872vp/KNEdYbgXehgAyyZe/qXmsy44a9blwCTq5vH49nkN9meaahYPvO4NpXIwlacG0j0B2DYAz8Jk8N3AJ4ZbP9wTLrOW42dtbsezV2snA3gC02G9F/kFx5/wZFu6zW3waJHwAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -3,
+      "y": 29,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -3,
+      "y": 29,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

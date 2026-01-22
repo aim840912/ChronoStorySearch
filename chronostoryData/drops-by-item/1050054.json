@@ -2,7 +2,6 @@
   "itemId": 1050054,
   "itemName": "Red Anakamoon",
   "chineseItemName": "紅神聖服",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 2230113,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

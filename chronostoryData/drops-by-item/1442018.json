@@ -2,7 +2,6 @@
   "itemId": 1442018,
   "itemName": "Frozen Tuna",
   "chineseItemName": "冷凍金槍魚",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 6090001,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

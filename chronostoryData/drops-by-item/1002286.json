@@ -2,7 +2,6 @@
   "itemId": 1002286,
   "itemName": "Blue Patriot",
   "chineseItemName": "藍司令帽",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 6130102,
@@ -38,6 +37,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 4230119,
+      "mobName": "Mateon",
+      "chineseMobName": "馬堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5150002,
       "mobName": "Cold Mixed Golem",
       "chineseMobName": "冰之混種石巨人",
@@ -48,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

@@ -2,7 +2,6 @@
   "itemId": 1002270,
   "itemName": "Black Polyfeather Hat",
   "chineseItemName": "黑弓羽",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 6230500,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

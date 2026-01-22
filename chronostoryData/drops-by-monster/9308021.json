@@ -4,12 +4,11 @@
   "chineseMobName": "海盜領主",
   "isBoss": true,
   "inGame": true,
-  "totalDrops": 12,
   "drops": [
     {
       "itemId": 0,
       "itemName": "Meso",
-      "chineseItemName": null,
+      "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 60,
@@ -138,5 +137,6 @@
       "questId": 0,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 12
 }

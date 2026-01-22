@@ -2,7 +2,6 @@
   "itemId": 1040034,
   "itemName": "Dark Nightshift",
   "chineseItemName": "黑夜",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 1210100,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

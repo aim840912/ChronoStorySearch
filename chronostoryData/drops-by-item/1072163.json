@@ -2,7 +2,6 @@
   "itemId": 1072163,
   "itemName": "Red Mystique Shoes",
   "chineseItemName": "紅龍皮鞋",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6130200,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

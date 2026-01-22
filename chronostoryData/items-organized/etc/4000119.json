@@ -1,0 +1,37 @@
+{
+  "id": 4000119,
+  "description": {
+    "id": 4000119,
+    "name": "接收機",
+    "description": "可從遙遠的地方接收資訊的接收機，應該有特別的啟動方法。",
+    "chineseItemName": "接收機"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC0UlEQVR4nKWX67mjIBCGx+c5DZgSaMEtgZRAStASYglagpRwKCGWsJawlBBLcGe4GC8oJPl+HIgi78wwDJwfCGtybQbf6XSeEHyapieM4wCXy3X6woDoPEHP6QOlevhWsXlC8MxZ+rVwnnnOVLgfPJXlA6R825Dlt4fgM7jRMPRQFHd4PBrsH4/TWkNd18AYw3GtAdO3MUXgLTyfkwHT5EXBcR015DlbtZxzEKLE9ZVQll0SOAY34fM/mqYxHgIw92Tb7g2HyE459XwpylryMiSKwLvgZDiBNade2Evd9mZJ3lWy56MeoBN3TCoHdEGg39f2s5qQDPegWmrQGH6GoW5KBrdjcLQ6vgUnEbgRHGpcilqC6VfhKuYT9rN9vgNrC6MIUJugUwOS4IJACkC2NuO1Xmd9QrIFT7dkz4XzdAv2Gobwc9IDC1Xbj9DfLqsoxOB4yGSmXJKKgpkS6kWGeChVNXonZQWw8ZDAISV53jTclFgp5e5d15Vz3T8oq5nzeGdUDD513T8sMta7bSUj1fULeFLZVqX6DD4PIvAyzEei0JPXeS4wIVUou4PH8haOVx8aZ9fI3kTAGMBNvuWL53Gj/JyUcBShQV4PE24HbluFrcBjkgWfUwJ6ryn5aEdIqXZgSricF8DGX9DqNhuw8lzK2rRae5AFhJ6TluAjj32ma1cFy+YvyPqPMcDDJ39poIm2y8xY43ovyBZsvV5vs+vlhitVAMcd4dXjd96AXcKdJZh/d1Roll6TMxeCE7CSwPhrXukOo5+l17GJCe4LS8xrmo7/dljVKjuvGoAJu1wwDjN83sfmIzexr9fr/mtcgvdGZIDenHplc8ewKwsPVa5ltTq7EIa8pv4Vy7JPOEYn4cJYXG8zZrXmsZC/KWPA0Tv6Q/CM7tpCdHavYoRzBI3YX7ZS2ivy1tjQQbKFHMl7nilVGSvXNWItpYIvP/5P9j9HVcJ16tdGpwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC+UlEQVR4nKVWi7GrIBBdZ24DWgIt+ErAEkwJpoRrCVqClHApIZbwLOFRQizBt8vHIKKYmzOTgSDs2bMsC18Qx2LbDD7DqZ0Y+bIsT5jnCYqiWj5wIGknqpwWSDnCp0jZiZFn1tOPgXZWm1fJ3eSlaR4gxNuO+GsPic/INaZphLL8hsejw/7xPKUUtG0LjDGc12tiWptCgryH53PRxGS8LDnuo4I8Z5uWcw513eD+Cmia4RJxilyHz/3puk4rBGB2JGz3jkPipJwq90FZSypjoAi8S3yZnIgVp15cpepHvSXv4rLyWU0w1N+YVJbQBoH+V/3vasJlckfUCgUKw88w1F3D4HZMnKyOb5ETiLirObS4Fa0A3b/Hq5hL2N+d8x2xMmQUAWov4NSBS+Q1EUkA0ZuMV2qb9ReSLXq7XVZeW6UhscM0xccJDyxU/TjDeCs2UUiR4yWT6XJJKEumS6gDOeJIqarRNyHuAIFCIo7hkvKu47rECiF234ahWev+QVnNrOKdUynyZRj+YZEx6sJKRmjbF+FJZduU6jPydRIR+2E+AoWeVOd5jQkpY9kdvZZDcnz60DyzR+YlAtoBrvMt98bTTjmblHAUoUlUhwm3I+57iW2N1ySLjlMCOtWUfHQihJA7Ykq4nJfA5h9Q8rY6sFEuRKtbpRyRIYiNE3ziI8Uu05Wtgk33F0T7RzvgyBf3aCBD4TYz1tneiyQkNqq3x6wqbrhTJXA8EQ4jrnMO7BLuLMHct6NC46smMQWRE+FdAOMvu8JeRl++6pRhIneFJaWazPGfAava3diVE7DabBfM00q+nmO9yBp29Xrbf807cDIPB8gBFdx6TfeNYZeGPFa5/Gp19iD0VNM7ubTDVVVkD5dwjG5Cz1ncb2qyzZ6nQp4Ahccv4i060B3MXY9aRm/tuh7MWUUTORLN2PdbIcwTOXTWqqbQ7UKO6K1D7qfAOzJOeSblXZfAbY3YQsrox9a2vuqwH/425NoB2+aBipiiPCCIkZ45pPEfUZjU8LERkScAAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": 0,
+      "y": 32,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 0,
+      "y": 32,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

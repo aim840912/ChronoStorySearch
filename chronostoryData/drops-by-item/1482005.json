@@ -2,7 +2,6 @@
   "itemId": 1482005,
   "itemName": "Silver Maiden",
   "chineseItemName": "利刃拳套",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3210203,
@@ -25,6 +24,29 @@
       "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230303,
+      "mobName": "Propelly",
+      "chineseMobName": "粉紅色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230308,
+      "mobName": "Tweeter",
+      "chineseMobName": "特威德",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

@@ -2,12 +2,11 @@
   "itemId": 4031802,
   "itemName": "Jr. Sentinel Shellpiece",
   "chineseItemName": "小石球的石塊",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 9300018,
       "mobName": "Tutorial Jr. Sentinel",
-      "chineseMobName": null,
+      "chineseMobName": "小石球",
       "isBoss": false,
       "inGame": true,
       "chance": 99.9999,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 4000082,
   "itemName": "Zombie's Lost Gold Tooth",
   "chineseItemName": "殭屍的金齒",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 5130108,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

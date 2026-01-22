@@ -2,7 +2,6 @@
   "itemId": 1050089,
   "itemName": "Blue Ades",
   "chineseItemName": "藍色昂斯",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 7140000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

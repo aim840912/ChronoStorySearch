@@ -2,7 +2,6 @@
   "itemId": 1051024,
   "itemName": "Red Moonlight",
   "chineseItemName": "紅色月光服",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3210201,
@@ -14,6 +13,18 @@
       "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230109,
+      "mobName": "Block Golem",
+      "chineseMobName": "積木泥人",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

@@ -2,7 +2,6 @@
   "itemId": 1072146,
   "itemName": "Green Gore Boots",
   "chineseItemName": "綠花精鞋",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5150000,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

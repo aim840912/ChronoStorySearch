@@ -2,7 +2,6 @@
   "itemId": 4000022,
   "itemName": "Stone Golem Rubble",
   "chineseItemName": "石塊",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 5130101,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

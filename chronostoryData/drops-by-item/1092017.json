@@ -2,7 +2,6 @@
   "itemId": 1092017,
   "itemName": "Gold Ancient Shield",
   "chineseItemName": "黃金古代盾牌",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6230601,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

@@ -2,7 +2,6 @@
   "itemId": 1402009,
   "itemName": "Wooden Baseball Bat",
   "chineseItemName": "木球棍",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1130100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

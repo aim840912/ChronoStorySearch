@@ -1,0 +1,37 @@
+{
+  "id": 4000095,
+  "description": {
+    "id": 4000095,
+    "name": "捕鼠器",
+    "description": "不知道是誰放的捕鼠器，使用時要小心，不要被夾到。",
+    "chineseItemName": "捕鼠器"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACWElEQVR4nKWWj3WDIBDGL+91ATsCGcGOgCPYEdIR4ghxhDpCHUFHKCOUEcoI9I4DRLSVpPdeIgrcj+/+mDzB/83666l0w3+hFg3meYamaYrhj0KtJ4J6PUHlx6XwR6BOHRkBa8kPTYdwXQa/B7pSJwREIFlF96IMXgq10zQhSLC6C3rXenehg0v8GhA+78OPoFEdbVRvZ2hbcMBZTG6B1A1o+RU3mO6Mh8IBHtBdEzhF4bkH+xfU2nceEND0DbQTwwnkgFJC39+gxkPQWOPVXCZQQ8OhpxzgRwjt5uiWbA/K6jyQVpLDsefCkR+WlyA8mFKKQ4swquQI9FbdLM6dYBz3oayONlRyNSHQG+WSQkTpZLifmzuoVFJYLq5h/O5CTEDykUIXdSIUybA6rTN8XmGR1AARfiX49erCDvDG64yPAuU6AwYoq1udLtm4V6UET1okKNd6crlzOb/YFVAbgFd2ydWrZuIMcGhi2yqhRfq+B6k6ELcvmGECmeSQLACDUufLgWXifCVsARnNoHxNi70kqg4UtgxFcjSLwpdxAUZo8Kl8RGuZhZTCGFrhg/utAr0qOGF67k3cm+cwt6h0UZXCfQiHM0gse5B2ed+GTWaG1HJgGtYUeqK3xGfrRfm0hZAHeCiYCMxaCsOwAeZhXSmlCVxgv68LMFydv0y5A6p14XUY3bbmHBL4N2AKhaCYBgRPbQOHLbBOUvQXMIfGhcVwuQXu5fAIWgxPCy60Bn1K7OinbQMP7RUrXi2LS1SWQA/hZOkrrsTZvf+RNvD6TuAj0F34PUCyH966V+XSEguXAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACoklEQVR4nKWWi3HrIBBF1zOvAaUEXIJeCagEpQSnBKsEq4S4hLgEqYRQQighlEB2gZUAYRknO0NA4nO4+1H8D/5uNvSH2g1/hVo0mOcZuq6rhv8WagMR1OsBmjCuhf8G6tSREbCV/qUZEK7r4M9AE3VCwAIka+hZ1MFroXaaJgQJr+6Ep2tdXOjgEv9cET6X4Y+gizraqN6O0PfggLOY3AKpO9Dya9lghiNeCgd4QddHcPLCywh2D2rtux8Q0Iwd9JOHE8gBpYRxvECLl6Cxxt6cJlDXzrueYoBNCO3m6JGsBPXqApBW0oG30SeO/LB+CcLZlFLetQijTF6AwZqLxbkD3G5lqFdHGxqZTAg8jWJJLqJweniYmwdoVJRYzq88fncuJiCdEUNXdYKT5Jrc1hm+bzBJWoAFfib4+ezcDvDm15ngBYp1BmSoV5fcLtpYylKCRyXCyrWeXOxczE82AWoD8OqP9NmrZuJc4aGJbalwiYzjCFINIC5fMMMEMoohGQNZqTvLgWV0eCJsBRntQfmaHmtJNAMoLBny5M2sCv/fVuAC5TNV8GgrM5eSG7kUPny9NaCThBNm9LWJe/MY5rYoXVXF8ODC6xEkpj1Iu35veZOZIbYcGLs1hh7oK/HZB1EhbOxyhnPCLMCspNANG2Du1kQpTeAC+31egdy78zLlDqjSxBvQu33rY0jge8AYCqyYBgSPbQOHLbCNQrQHzKHLwmq43AJLMXwErYbHCcelQa3GHv1r28C5vJaMV+viGpU10IdwsvgTV3PYs7+RXgL8m+HtCqS50idh4/R70Cbr83ddgE/hHT23O0ATtQ20udPuXWAMvYSCogyoQzMxlAEi6nOFz1rxIiWl9zbsFYTZGectgbILSm7ML1a6wN4lk7kfqW10BtlvR54AAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -2,
+      "y": 29,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 29,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

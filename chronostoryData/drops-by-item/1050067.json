@@ -2,7 +2,6 @@
   "itemId": 1050067,
   "itemName": "Blue Requiem",
   "chineseItemName": "藍天上之衣",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 5150002,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

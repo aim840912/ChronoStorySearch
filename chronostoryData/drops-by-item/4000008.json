@@ -2,7 +2,6 @@
   "itemId": 4000008,
   "itemName": "Charm of the Undead",
   "chineseItemName": "道符",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2230101,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 1322012,
   "itemName": "Red Brick",
   "chineseItemName": "紅色磚頭",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1210111,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

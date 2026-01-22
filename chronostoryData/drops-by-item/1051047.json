@@ -2,7 +2,6 @@
   "itemId": 1051047,
   "itemName": "Dark Anakarune",
   "chineseItemName": "黑聖黨之服",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 9834178,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

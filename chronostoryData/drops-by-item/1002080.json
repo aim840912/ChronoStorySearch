@@ -2,7 +2,6 @@
   "itemId": 1002080,
   "itemName": "Red Bandana",
   "chineseItemName": "紅頭巾",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 1210111,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

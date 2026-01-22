@@ -2,7 +2,6 @@
   "itemId": 1203013,
   "itemName": "Hwabi Throwing-Stars",
   "chineseItemName": "月牙鏢",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6300005,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

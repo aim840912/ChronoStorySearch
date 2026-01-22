@@ -2,7 +2,6 @@
   "itemId": 1102027,
   "itemName": "Blue Seraph Cape",
   "chineseItemName": "藍妖精披風",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 7130100,
@@ -14,6 +13,18 @@
       "displayChance": "0.10%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230121,
+      "mobName": "Mecateon",
+      "chineseMobName": "梅卡堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

@@ -1,0 +1,19 @@
+{
+  "itemId": 4000100,
+  "itemName": "Plastic Crown",
+  "chineseItemName": "塑膠王冠",
+  "monsters": [
+    {
+      "mobId": 3230103,
+      "mobName": "King Bloctopus",
+      "chineseMobName": "機器章魚王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

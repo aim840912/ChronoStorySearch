@@ -1,0 +1,54 @@
+{
+  "id": 1041041,
+  "description": {
+    "id": 1041041,
+    "name": "紫色妖精之服",
+    "description": "",
+    "chineseItemName": "紫色妖精之服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 28,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAWCAYAAAAxSueLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQElEQVR4nLWVgZWzIAyA43u3ADcCHYGO4I1gR7Aj4AgyQh1BRvgdoYxQRigj8CcorYh61767vNcHlpgviUn4gFz8tBbwnvjZPrGxhPmKtYo22jX+DaBvRR/eN9ZmNrLIUEH29VVVcFWn7ujhBSFHJ4hcO5/DPEGsQWXTSfztGi5FGVbG2OjkoB+QWXYSaBZZY05Bwd9xYe3zwDUAVj0ei+OwGpkDI3nppGCV0gt/EximTfrrwgJBViTomXFvcT2QYW6l4BwY/gajs1QmMH+ZNlzC+exwc16o1+CcC7u+1QBiBHJcbzUBO7hVErqoUz++e5HBQnRNBUIwKEuR/G/xw8eVgKQXAp8MX8QzrS1+zrPJs5GmUVeJcY7piJA5cC5UIAT80pw0YHCc4oepbrZh9BK9vATNITGS5f75HxYZBllXUpkhdS7C/P3q1eexkJzxLKI12Tp3zkJ7aZXVuSNJZP/am/pqDpJ67V2hiObPNFGwnUKRZAUSG3s2CV4ZWbsT5wFjgtqEIcTBX8kH/LIwzjbPHjBnnspYImGvDbwiYbauHdAYoxuAYJ4KA35BRMnD5yDHrd2pRoeHHU57Z1zoHwGlih7B90WyGdUqrNNKtv3YH+SVUo0kaCVqunL2gJ50jNPSGDYOZ+tCc0enE1gAyTbxrORVeJ6unL3ICnLmfvEqppCyRA6HbKHtOGkCDD1TdMjQs7FA8AXBw5UDP+uzAqdP6LFbf1cRRP3KQCiak8YNkmDFzvX/SkMH3cPpc9PWf+M5VZHD7Oj3AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACiUlEQVR4nLVVjZXCIAxO33MBHAFHwBF6I9QR6gh0hDKCHcGOcB1BRpARZAQuoaVC/zx9d3mPlxTSfElIwg7m5AaewWfkIjmxMQVzBasVCa2t3AeArhZX/782ZmZjFhkqyGt5UwXc1Kk5OniDyNEBRC6dx2COQIxGZd1IXJuGc5F7zhjrnezaESTKTgI6i6zSJ6/gHshY/TywFYBR42d27BYjs6Alz60UrFDtxN8EDNMm3W1igUAWyOvpXjbID2SYGyk4B4ar0+0slQmYuwwCl3A+WxTOE/USrLVeutYtgOgBOfJ7SYAN3AsJTdApx3vPZmA+uqoAIRjkuUj2DV584ARIej7wwfBFPNNa43We9TwbaRrbIjHOMR0BJAaMiQqEAL9aThrQWU7xw1A362D0E/08BYpBQiRT+bmHRYZBloVUukudC2DucXNqf8wkZ3wW0RKtnVtroL7UyrRzR5LIvuu7+qoOknrtU6KI4m+aKNhOvkhmBRIaO5oE74yszYkzgjFBbcIQxMJ/0Q7+mBhnq2cjmNVPZSwRL7ca3iE/W5cOaIzRC0BgjgoD/oBEzv11kOPGbFSjxcMGp73V1vePgFwFj+B1kaxGtQjWtErW174/yCulKkmghSjpydkCdKSjbSu1Zv1wNtY3d3A6AfNAsk48y3nhv4cnZyuyjJx5XJwKKaQskcM+W2g7TBoPhp4pOmToWV8g+IPg/smB3/VZhtPH99j9+lABiPqVgVA0J7XtJIFlG8//Ow3tdQ+n/aqtXaz4ghj8jvaRnJTkUlOzCV/be0U24n7FYGxlrQEvGV7ap0WT3QSwYJhHPDb8TkSrDkwjW1Pcms52Q07WLjow8DpdbAV4y7lR/gFQEm+JI3Z3RAAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -3,
+      "y": 28,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -3,
+      "y": 28,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 3100,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 85,
+    "reqLUK": 0,
+    "reqJob": 2,
+    "reqLevelEquip": 28,
+    "tuc": 7,
+    "incINT": 2,
+    "incPDD": 21,
+    "incMDD": 15,
+    "vslots": [
+      "Ma",
+      "Gw"
+    ],
+    "islots": [
+      "Ma"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top",
+    "lowItemId": 1040000,
+    "highItemId": 1050000
+  }
+}

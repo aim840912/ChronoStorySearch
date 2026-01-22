@@ -2,7 +2,6 @@
   "itemId": 1072159,
   "itemName": "Brown Lapiz Sandals",
   "chineseItemName": "褐水晶涼鞋",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 6230500,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

@@ -2,7 +2,6 @@
   "itemId": 1322027,
   "itemName": "Frying Pan",
   "chineseItemName": "米伽勒的平底鍋",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3220000,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

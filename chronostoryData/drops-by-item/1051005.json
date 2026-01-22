@@ -2,13 +2,12 @@
   "itemId": 1051005,
   "itemName": "Red Doroness Robe",
   "chineseItemName": "紅魔者之袍",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.7,
       "displayChance": "0.70%",
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

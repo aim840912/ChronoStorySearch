@@ -2,7 +2,6 @@
   "itemId": 4000040,
   "itemName": "Mushmom Spore",
   "chineseItemName": "蘑菇王芽孢",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6130101,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,8 +2,18 @@
   "itemId": 1051009,
   "itemName": "Purple Avenger",
   "chineseItemName": "紫飛影甲",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 3230302,
+      "mobName": "Bloctopus",
+      "chineseMobName": "機器章魚",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 4230101,
       "mobName": "Zombie Lupin",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

@@ -1,0 +1,96 @@
+{
+  "itemId": 4031013,
+  "itemName": "Dark Marble",
+  "chineseItemName": "黑珠",
+  "monsters": [
+    {
+      "mobId": 9000001,
+      "mobName": "Exam Curse Eye",
+      "chineseMobName": "天使猴",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 70,
+      "displayChance": "70.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9000002,
+      "mobName": "Exam Horny Mushroom",
+      "chineseMobName": "刺菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 70,
+      "displayChance": "70.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9000100,
+      "mobName": "Exam Fire Boar",
+      "chineseMobName": "骷髏犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 70,
+      "displayChance": "70.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9000101,
+      "mobName": "Exam Lupin",
+      "chineseMobName": "猴子",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 70,
+      "displayChance": "70.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9000200,
+      "mobName": "Exam Evil Eye",
+      "chineseMobName": "火獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 70,
+      "displayChance": "70.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9000201,
+      "mobName": "Exam Zombie Mushroom",
+      "chineseMobName": "石巨人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 70,
+      "displayChance": "70.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9000300,
+      "mobName": "Exam Octopus",
+      "chineseMobName": "沼地怪物",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 70,
+      "displayChance": "70.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9000301,
+      "mobName": "Exam Blue Mushroom",
+      "chineseMobName": "藍菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 70,
+      "displayChance": "70.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 8
+}

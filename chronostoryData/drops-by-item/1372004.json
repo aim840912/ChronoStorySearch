@@ -2,7 +2,6 @@
   "itemId": 1372004,
   "itemName": "Ice Wand",
   "chineseItemName": "冰精短杖",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2230111,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

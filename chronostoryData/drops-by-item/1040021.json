@@ -2,7 +2,6 @@
   "itemId": 1040021,
   "itemName": "Red Hwarang Shirt",
   "chineseItemName": "紅龍服",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 2230100,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

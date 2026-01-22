@@ -1,0 +1,54 @@
+{
+  "id": 1092050,
+  "description": {
+    "id": 1092050,
+    "name": "銀牙劍盾",
+    "description": "",
+    "chineseItemName": "銀牙劍盾"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 80,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAdCAYAAAAkXAW5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQElEQVR4nMWVjZGzIBCGl5mvASwBSyAlaAmxBC3BlBBL0BK0hFhCKCGUICXwsSicf7lcciT3zqj4M74Py+7yD/5GeroSPP0FhNZ6ANXHEKUKYcinITTnCWSHGNprDcOlsCCfhNDJMQcpeugVGJACzvn44lMQ+lieQXQNXM4Axt9KiHAQiyTbe5/kuQVQSlkAvHYGoBshwuSEvlIghzHJtgAlyL6zxnjsAYdZDoaLWy3M8cST4xpgN1ohIAiJKlt2ZjCZJxhzUFI8BAgFMUnCkeOZjwCz4zuAEBB25qXJ/OxwgPZSQ5YWIBS7B7CbxK9CeHOJmd73OH/AOKDuAbQ5BcZMiZ6WSfwKhK7b1po0TecfCjCdMK2gLgGKSrnyWwBkjYJbSzc/fBZCX683yIpi8ZBzPpH0QDmF2jSkLrWRsBFzAEYkzpSGlZ6B0MMwwCHNNgBd81WeJFagb9TsCxSUGPtCfFoszSZJfwphI1BVDVBKfdOZASx+bEDWsw1XHf3U7BEkMQBVdbpn8K3pKxB2GTAKTg8AntaPIyGk9GPGGYTUIwjTjrWphpNdAjy4ASgym5xBouAg9nY/D1DNegHKl2NAuUisQTyAEMuus201gSDQkBDiywrvXQ7MS9LdvwXCGTshgBDSGjKGm5HEjXEBExqCYBQQAk1wQ0IApzEhOUgDdi5ziKIIHwdLSgexMGRTuNezZix8Qq4hfDSoNWR25tZ8Ks3pI3t5F4QHwQHCcMbmL/wQ3qB1syKT6VMb0G/1H1RcLiXd3GaFAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAdCAYAAAAkXAW5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACbUlEQVR4nMWVgbHiIBCGl5lrAEvAEkgJsQRTQlKClmBKMCUkJZgSpAQpIZTAsWvgQoz64nC+nSEQ0Pwfy+7yB37H7NgzfPwGhLV2ANNvYbMzCMO+DWGlzKHIttBezzBcKgL5JoTN9yVo1UNvwIFUcCrvC9+CsPvDCVTXwOUE4PTJlEoHEQXZ0npelgRgjCEA7DsH0N0h0sSEvXJg2T3IHgEOoPuOhLEtAac5DoGHW0fi+JD5fg6w6K0UEIxtako7NxjFc/Q5GK3eAqSCGE3DXuJT3gEm7RVACgja+cFFfpFl0F7OUOwqUEY8A1gM4k8hgrjGSO973D+gH9CeAbQlByFcih7jIP4Ewp7blkSapguTClwl3NVwPgBUtfHpFwEUjYFbyx8+uBbCXq83KKoqmpRSjiQ9cMnh7ApStyNPkMc8gDO2LYyFma2BsMMwQLYrHgC65l96sq0Be+PuXuBg1L0ubI/R0TwE6U8hyAN13QDnPBSdCUD0YQcy32267OjHYo8guQOo6+MzgZein0DQMaAXvL0BWG0/9oTSOoyFFJDS3kG4cmxdNhzpCLBJB1AVFJxJvOAhlm6/AFBPagFaSMeE5j0xBwkASsVV57HUJIJAQcZYSCt89zEwTUn//l8gvLA3BFBKk6AQeBlpvBgjGFjvFPNsASEYegEhUAQvJAQIShSQErQDOx1K2Gw2OJ25tiY4zKQ3MAOKsoN2Prp7tmvnkUgz9395Ibg0j02PLfzOQwRvcBIUtHMSH1Nz/BF2WLXWFgrzanHqCeaDE2GkENMFPzyuEJuP520RgvRG0fkFlC0IcljeoXnxvuiRv/WsRb4M8x8kAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": 0,
+      "y": 29,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 0,
+      "y": 29,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 12000,
+    "reqSTR": 60,
+    "reqDEX": 120,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 8,
+    "reqLevelEquip": 80,
+    "tuc": 7,
+    "incLUK": 1,
+    "incPAD": 7,
+    "incPDD": 3,
+    "incMDD": 1,
+    "vslots": [
+      "Si"
+    ],
+    "islots": [
+      "Si"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shield",
+    "lowItemId": 1090000,
+    "highItemId": 1100000
+  }
+}

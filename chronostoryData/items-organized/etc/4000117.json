@@ -1,0 +1,37 @@
+{
+  "id": 4000117,
+  "description": {
+    "id": 4000117,
+    "name": "宇宙糧食",
+    "description": "從宇宙帶回來的糧食，不能隨便吃。",
+    "chineseItemName": "宇宙糧食"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEHElEQVR4nK1Wi3GrOhBdz6QBpQSlBFICtwS5BCgBSjAlmBJMCVclhBKsEqISeHt2JVC45D7H72mSEQih89kPfqH/dyz8f3p0838B3wMt91tHb+fhiMAhqWfBl49rTe+tz4diphjnI7Dld2fp1xD+IPC08hgCZQJQnMf9VgmJRIw+LriPh2c8C36CkqaOQmAYR+qaRkkx8OyV2DipE7xX3nkWfCmBKcXXT5M4AGBc184JcFVbWTdCJtLO9vWsh5XjAGOt2AlVGAADKJECQ3UG5j9yuE6WZwJXZ4mPETceBVebq0BNpQuwujJGwIiKZGMwg/VKVc9MIvCMvSUwzvwO/LA0ro1hVZH60VPXdWV208hrjasS/pZgFYOZYGhOBMr4H4Evy9XQqY1fyiUrzmMYBrHVVk6uLxyJnhMMBKZZgTAASolLbyPZi6XQa/wPlUNdQYAL1a3PTN3QtR7ZS0/tyCr8wHaK22wvO4CEY+A5bOqnRPwaDZ37vys/vQ5Qz5tZTdM5GodJZhlBgWcfJQzjpCBnzjsLtVHVesfXSAfGggcXEGLgGwf9HDblf5TRcv8tIJXhUvIKPI8TVY1bgata46/lxIdfOur7gULDoWBH7MgW80PXaWUgDyKTOc875Z/coIxVm2G3qOMBMIBavwHLegLWclJwOw904y1nBuamJlnde1qB/Sig1PG7g4+rcrH5s9M4Y8DmyigI/uUAU7NKPS1WFzKxTeXEYQ86450SGAkZpiDxr1hcy9coN5gBAjnmKwF0RIkvqxSQuddEw5xKyPiWynaNUocLcyIA4IoZyFoBDByejzscO0xwNyu3oaUxk5kn2TPzPRRDrXUcr2kQUAkHv+NnyTFCgvugcc/ARV59AV/ozoxx9UsXLONNBfAIG6ukLiUZgEtQBKVvEnIbhGBpM333Sf3kupgs777Le0LCoFQSMABgI+Z877cGp6A87vysHdWZbDMIrJ1mB74sn/qmS9lMJYkWTYdSqm1DVF5prWUBBle2D8tv29Yc58NP6un0OkoS3JJjDVKWg+u4Fb5ew7Y77N626hjpt0W/ZqjlpLrYefi77qV4uBDHBrnRSfPnWn4LtFxSb2Qy8aIoxtRfDolRfZnYpbo6IPnNWBMONS4di9vilFqmNJF+1rbJZMx7lM9jJG1CCHl9t6tqOMDNj27M7ez//ZfsSwnMtU6odefMugFE5l2yhFLZqD8cAIp+9M4V+eEeIyDKua3m+7XZ5AEiE5/s6o1QDJsze2CcwXP5vfir8j0zIfCRPmIzF3bj1BmUz76bTan8MnA+41Hw/VjwoQFAOpCbi7bdXOuiOmrTGX5g8yPgJbAcBCcwAwSg51T0gzYZsfnD0Y/H4Y+JFLN9nS62aCj75wfvPAW+P3hdyw5895x+OP4BfVWEyRw7kKcAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEXklEQVR4nK1Xi3GrOhBdz6QBpQSlBFICKQGXACVACaYEU4Ip4VJCKMEqISqBd86uwAqX5GXyniYMIAudz34gT/L/jgXH6aeL/wv4Hmi531p5OfdHBA5J/RZ8eb+W8tpM66Y8S4zzEdjyp/Xy1oe/CPxaeQxBVgJUvI77rVASiZi8X3gfD/f4LfiJSuoyKoF+GKStayMF4HkyYsNoTmCtPvNb8CUHlhTfaRzVAQLzuqwqBS5Kr/NOyUTZ2b7t9WPl3MB5r3ZSFQfBCCpiwFS9AuNPKl4ny1cC18oLtlE3fgpuNhdB6sImaHXhnIKJZMkGMMf5wlTPIBFw5tocmHt+BX5YGtfaQVWUbpikbds8u2XAXF0VCf+RYAXAXHAyJwJ5/I/Al+Xq5NTET+WyKl5H3/dqqy8qvb4gEh0SjATG2YA4CCqJS+ej+IuX0Fn8D5VTXUYAhVptv7mylms5wMtJmgEqph52qtuwFw4w4QA8h4f6MRG/Rifn7nvlp+ee6rEYauq2kqEf9awjGPA8RQ3DMBrIGXnnqTaa2qnCNdMBWPTgQkIAviHo5/BQ/lcZLfc/ClI4lNJkwPMwSlFXG3BRWvytnLD5pZWu6yXUCAUc8QMsxo9Va5XBPIggc553yj/QoJw3m2m3qsMgGEH99ADW+QRs5WTgfu7lhiVnAKOpaVZ3k2zA06Cg0uLZfoqbcrX5o7U4c9DmwhkID93AlVBpu8XiIi42qZwQ9mBnPpMDMyHDGDT+BcQ1uGa50QwSWGO+EWBH1PhCpYLMnSUaz6mE3NRI3q5Z6nRhTgQIXICBzmXAxMH5uMPBYaG7q3IfGhlWMvOoa2bcUzHV+grxGnsF1XDgmWnWHBMm+BQs7itwllefwBe5gzGv3mzCA2/MgAfaWCR1KckInIMyKF2dkJugBHOb5atX6gfqYvRYfdfnlIRjqSRgAtBGntf76dHgDBTjjt+awZxZbSaBrdPswJflw56sUjZLTqJh05GUao+hKq+y1bICkyvs4/TLY+ka58NX6un0PGgS3JJjNVMWwa3QCp+v4bE67J725pjYu8XeZqzlpDpbefhd95T9uAhiw9xotfmjll+CLJfUG0EmXgzFufLTJjGaLyNcKosDkl+MLeFY49qx0BbH1DK1iXSztU2Qca9RX49RrAkx5OXdb6rpAJqf3MDtPP37l+xTDoxaF9Z6VbltAYnMu2QJubLBPhwIyn70iop8r35GQJWjra73W7NZB4mM2LkqH4RieDizB+YeOOfvi2+V75kpgff0EptR2HVlzrB89t1sTOWXgJ/FXmLPPwXfj4UvGgKkDdFcrO2uta6qozWd/rPNH7K1KR0xO0fZFfseXL3NgM+cgxMsXQUh6DkVfW9Npsfa9v3xvbH75tlAQzo2Ajm4S8cbNsMLXbutT3Pso63PGgrGkD034Jk6rXPZnsf/LXynfFW8+62DA5f1+kBdcwAYD45D8NWaHHRP4DXNHSmK39wfOvAPapieh0p3IQ0AAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

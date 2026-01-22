@@ -4,7 +4,6 @@
   "chineseMobName": "雪毛怪人",
   "isBoss": true,
   "inGame": true,
-  "totalDrops": 52,
   "drops": [
     {
       "itemId": 2000004,
@@ -75,7 +74,7 @@
     {
       "itemId": 0,
       "itemName": "Meso",
-      "chineseItemName": null,
+      "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 700,
@@ -139,17 +138,6 @@
       "enabled": true
     },
     {
-      "itemId": 1032017,
-      "itemName": "Rose Earrings",
-      "chineseItemName": "玫瑰耳環",
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
       "itemId": 2040513,
       "itemName": "Scroll for Overall Armor for INT 60%",
       "chineseItemName": "套服智力卷軸60%",
@@ -157,6 +145,17 @@
       "displayChance": "1.0%",
       "minQty": 1,
       "maxQty": 4,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1032017,
+      "itemName": "Rose Earrings",
+      "chineseItemName": "玫瑰耳環",
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
@@ -272,7 +271,7 @@
     },
     {
       "itemId": 1201001,
-      "itemName": "Bronze Arrow for Crossbow",
+      "itemName": "Bronze Bolt for Crossbow",
       "chineseItemName": "青銅弩箭",
       "chance": 0.5,
       "displayChance": "0.50%",
@@ -458,6 +457,17 @@
       "enabled": true
     },
     {
+      "itemId": 2040901,
+      "itemName": "Scroll for Shield for Defense 60%",
+      "chineseItemName": "盾牌防禦卷軸60%",
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
       "itemId": 2041004,
       "itemName": "Scroll for Cape for Defense 60%",
       "chineseItemName": "披風防禦卷軸60%",
@@ -578,5 +588,6 @@
       "questId": 0,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 53
 }

@@ -2,7 +2,6 @@
   "itemId": 1050006,
   "itemName": "Red Kendo Robe",
   "chineseItemName": "紅劍道服",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2110200,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

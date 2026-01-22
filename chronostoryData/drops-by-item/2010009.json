@@ -2,13 +2,12 @@
   "itemId": 2010009,
   "itemName": "Green Apple",
   "chineseItemName": "青蘋果",
-  "totalMonsters": 10,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 20,
       "displayChance": "20.0%",
@@ -114,5 +113,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 10
 }

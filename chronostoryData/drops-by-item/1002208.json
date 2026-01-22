@@ -2,7 +2,6 @@
   "itemId": 1002208,
   "itemName": "Blue Sonata",
   "chineseItemName": "藍黑太陽帽",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5130105,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

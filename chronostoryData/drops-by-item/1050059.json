@@ -2,7 +2,6 @@
   "itemId": 1050059,
   "itemName": "Blue Tai",
   "chineseItemName": "青旋風甲",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 5130102,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

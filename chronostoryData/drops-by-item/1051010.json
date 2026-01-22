@@ -2,7 +2,6 @@
   "itemId": 1051010,
   "itemName": "Dark Engrit",
   "chineseItemName": "黑護身鎧甲",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3230101,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

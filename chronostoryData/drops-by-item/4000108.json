@@ -2,7 +2,6 @@
   "itemId": 4000108,
   "itemName": "Panda Doll",
   "chineseItemName": "玩具熊貓",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3210203,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

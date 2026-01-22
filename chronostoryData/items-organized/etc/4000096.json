@@ -1,0 +1,37 @@
+{
+  "id": 4000096,
+  "description": {
+    "id": 4000096,
+    "name": "堅硬的核桃",
+    "description": "不知是誰咬過的堅硬核桃。",
+    "chineseItemName": "堅硬的核桃"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACcklEQVR4nKWVjZGjMAyFlZk04C3BW4JTgltwSkhKgBKOEkgJuAWXEJcQl3AugZOE5Zif3Znb1QzDAEaf3kMWZ/h9zF/cPx3d/A2QQc8/hi+U1qCMA8iJrz8uvRSyAv8UOD9Hi8kzX0RkOOcgR4+3Mt+nQqiIz6ufW+hPgPNrcpjMQIqBk9/GCZLvUVxaLQwhAa1tof8LXGBiHcJMN1VlpNRoXKXU8kwDF0FuXO6Bod8Bd83QwkgdWZZT5CPGXGEKDza7FAHLFRwprJC/r4nPVD0F2sI28j0EUDJ9G/k5WdfCaF0Onq+NXqCisgXOLcT3dzDGwPAI4NOiDjOxOrFPF3USAjuM0mACZBiB+t5Dd7MMizFuXno3hbV6l5NhWBTlYbtz3q2pCgUmITBrFCrMS1eiTdq6L+1si6q2HgDneX7B5eOTb4ydZRtJZQt+i4z13Nq5fc5bBqA0zUahLNKlSIIJKMT8TiQq5NwEdyYVgepV2RZHcRb50+jgevcrdQQTS7kgY9+qSvNUZWXCAIPToboKjMOVNzD1qEApCEbNAz4sCSvsoPq68XPjQoaExTqr4NLzu6eiUK+gAQGPkFlhwG/hsClwD/FeUhs7KaHhkZJXzRPLp9B6vZ6AJ5p1NGwF6kwES+MqScdp8LjxKWkuVilUq5rk7UgTK7fqqqWSVOzl6d91OMbKi36A8Wb4RfkdkcX0TZ3L4GkywGKhgCi2sBZYVRIYdxz4YVjZRtHhZqcEBCdVSsX6PWWN2EiKt7CVQnqAC3CWRh5jMkgWW1VNSkWVRPDU5V+ISuh8f+z25e6vfz5aUP5fhzGE97qlwO8B2/gHQFKpabp/0VEAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAYAAABvCO8sAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwElEQVR4nKWVgXGzMAyF1bss4I7gjuCMwApkhGQEGOFnBDJCvAIjxCOEEX6PQCVhGWNM2jS64wAj9Ok9bHOA92PaGf8oDb4DZND9n+EbpTUoUwP4ke8/j600sgL/FTjd+wqLe75xyKjrGryzOOR5nBqhJr5OdkqhfwFOj1uNxQyMbuDi5/4Go21R3LhKHIYRKDeFvgqcYWIdwkxzi8pIqdGYpdT8TAM3QW4cLwNDnwE3kyGFkTqyzI+OD+d8hCk82OzQBMx3UFIYIf8fNz5T9xRoC9vIYwigYvrc83OyLoVRnh8s3xs9Q0VlCpxSiG0vYIyB7jqAHWd1WInViX06qJMQWDHCBBMgwwjUthaac8Uw51z20jIpqkpvajIMm6I6bLf3m5yoUGASAquMQoV+npVok67qXTvTpqKtBeA0TQ84fn7xQN9UbCOpTMGLSBfPqZ35c14yAGHSZAolSYcmCSagwfmlkKiQcxI8M6kJVK/CsijFQeTf+hpOF7tSRzCxlBsy1aIqTJ6oLOwwwOCxqC4CXXfiBUxzVKAUBKPJA3aYC0ZYofu48H3igocRm60rBceW3/0ICvUKOiDgOnhWOOC3qHFS4BritaQyO6mg4S3FryaPC59C63U+AT9or6PNVqC1cVDRdjXKjNNgceFTUR+sUqhWJcXTLU2szNVFS6Wo2Mu7f9PgNhZetB30Z8Mvyu+ILKZvWtceLO0MMFsoIIoclgKjSgLjigPbdSvbKBpc7FSA4KRKKRe/p+SIjaQ4h60U0gNMwL3U8TYmG8lsq4pFqalQCO46/AtRCZ0v18263Pz1D6WE8P8qRjcseXODzwE/AX/94ot5PwL3QsHrsVq0e0CVnffGfgvzcuRAtXPswUvFS+N00OwbU6AU18k5Lf62nRQlhXvJewryZ/n16jhkD5dFt20gHSvBnzUYr78BQd/DVBc+cv0AAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -2,
+      "y": 27,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 27,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

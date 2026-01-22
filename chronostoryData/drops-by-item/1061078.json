@@ -2,7 +2,6 @@
   "itemId": 1061078,
   "itemName": "Brown Moon Pants",
   "chineseItemName": "黃月褲",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5130103,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

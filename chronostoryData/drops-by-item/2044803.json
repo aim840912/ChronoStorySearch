@@ -2,7 +2,6 @@
   "itemId": 2044803,
   "itemName": "Dark Scroll for Knuckler for ATT 70%",
   "chineseItemName": "指虎攻擊詛咒卷軸70%",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5220003,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

@@ -2,7 +2,6 @@
   "itemId": 1482011,
   "itemName": "White Fangz",
   "chineseItemName": "吸血鬼之爪",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8220001,
@@ -14,6 +13,18 @@
       "displayChance": "0.50%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4240000,
+      "mobName": "Chief Gray",
+      "chineseMobName": "葛雷元老",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

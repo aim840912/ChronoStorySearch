@@ -2,7 +2,6 @@
   "itemId": 1051084,
   "itemName": "Green Anes",
   "chineseItemName": "綠色高麗貴婦袍",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8143000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

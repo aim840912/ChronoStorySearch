@@ -2,7 +2,6 @@
   "itemId": 1002254,
   "itemName": "Dark Infinium Circlet",
   "chineseItemName": "黑神聖之冠",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 7130200,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

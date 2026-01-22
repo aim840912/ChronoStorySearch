@@ -2,7 +2,6 @@
   "itemId": 4000061,
   "itemName": "Luster Pixie's Sunpiece",
   "chineseItemName": "日光精靈的碎片",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 5120000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

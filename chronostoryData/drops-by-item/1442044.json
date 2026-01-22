@@ -1,0 +1,19 @@
+{
+  "itemId": 1442044,
+  "itemName": "Zedbug",
+  "chineseItemName": "阿基里斯斧矛",
+  "monsters": [
+    {
+      "mobId": 4230138,
+      "mobName": "Black Alien Drone",
+      "chineseMobName": "無人機黑",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 4000122,
+  "itemName": "Mecateon's Laser Gun",
+  "chineseItemName": "梅卡堤安的光線槍",
+  "monsters": [
+    {
+      "mobId": 4230121,
+      "mobName": "Mecateon",
+      "chineseMobName": "梅卡堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

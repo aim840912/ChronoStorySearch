@@ -2,7 +2,6 @@
   "itemId": 1051097,
   "itemName": "Black Oriental Fury Coat",
   "chineseItemName": "黑綢緞長袍",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8220000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

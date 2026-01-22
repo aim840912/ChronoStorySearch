@@ -2,13 +2,12 @@
   "itemId": 1072069,
   "itemName": "Red Jack Boots",
   "chineseItemName": "紅皮製長靴",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.8,
       "displayChance": "0.80%",
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

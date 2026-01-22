@@ -1,0 +1,37 @@
+{
+  "id": 4000105,
+  "description": {
+    "id": 4000105,
+    "name": "飛機操縱桿",
+    "description": "用於操縱玩具飛機的操縱桿。",
+    "chineseItemName": "飛機操縱桿"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACC0lEQVR4nLWWgZWCMAyG2/dYAEfAEWQEGEFH0BF0hHMEO8I5go5wrsAIOkIvf2kxlID1OP/nUc6GfkmaRjJFsu6jlHafzylzIEtXrdWJ7ncfBGZXulQEMjQWr+3txNxLJ7OajE5+kfoV4HuCtdF8UgS7PYtSZ72xjQE/63YsH5E3h53S3JEnuAfNBAdgcO8gFUFyGRJAV2PUhf5qPFMxB1toB5RgNhgjEgDESKqTWxhjDxSeO3soA8YwyyNKjYSDBhn4orlDC5Qi6x60u41S57O7R9XWd9uPJEzwcUIcZnkx2AVFjvPXNEotl4qu6kLfAVJPVSVX48f1nZxe2GFkFTdu1Kgmpnq6UU7ztsICzLrcRmsVFBFkJNBN2FBJHsRhA2E9vg0FnwggttCkjCtGPQpDMWCPet9hr0L6AsgktVKx9DtdsBYVyFW3ix2lovAeq0SJMIDq8ujuqY6GVb3KcXbeAomwDnQzBGocaJOvngbYvNRKHIVh04tc1YlFNg8GRR4vQkSFb/c4gwg14YdvCqZxwt0OGcrjfk8Vwazwv+/+ZQDOgPXVeECQ7yrlzBRz2DM6VFtIKVImRRL9fLwLa4XDimJZ+UPLoVx/qMgYRm8+5O3WCr0vak2Yh51Jj05+LQjABwPe5p+JsXalvcet99AjgqU24QRYC4QMe0XbRv3xP3qjCI3B8VyCfgFv18/c15cWLAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACRklEQVR4nLWWgZWCMAxA0/dYAEfAEXQEGEFH0BHOEc4R7AjnCDrCuQIjyAi9pDSYllDxfOYJLTTtT9I0UgCK8z8A43+fk8KDHN6NgRP29x8EFle81Qiy2FbP9V1m7KmRRYNKp7BI8wzwk2FtjRxUwX7PktC5oOxSwO+mb9ddYs1hD0Ya8gBH0EIxgBTuA6RGSKlDGHS1Fi54NTSnFgb20AGowRwrkycEUD2pT35haiMQzzsHqACmMCc9muuJBI0i8I1jhx6oeTZMdPstwPns+5S1zd3FnvCAbDMiYU4mg1ug53T+2hZguQS8wwXfEaTJZaWUNrSbOxq9cGPPaqncwqRkhiK5YUzLPsMY5nxsk7Uq9IjEaqCbsqGaBJCEjYTWk9tQyQEGiYWyYn0ymkkYJQPtUfSO9orDxyA7q5SqqT/IhdbCBLmafrGjlhTBYpgpKoxAzfro+5hH46xelXR2XgKpsAF0swhqPWhbrh4KtHlzM3ESRpteldDMTLL3YCSJxQv2qArlns4guTrjjy8HM3TC/Q5ZjOPXF2aE0KLnUP3XDHwDFksbACyhqqzfDLGEPbyjbOOQUsg0T5K/j1dhvdBhpWRZhUMroVL+kZEpDL980NqdU2pfUpponPTsfO/0zwIGdgKYL7xTRTKapMFo4gKBd/+0C2WqS2BxEV7BWDrR+kvCyuTa+tbSl16QXVIf+9p4nIBJEO1wyzAGVKLl90fgMFmzSxazMDOEJKlnU4r8fHiyaNqPrkIMtAlQs7jULM4YF/X/ADT16kpDRj1KAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -3,
+      "y": 30,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -3,
+      "y": 30,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

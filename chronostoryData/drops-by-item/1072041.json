@@ -2,7 +2,6 @@
   "itemId": 1072041,
   "itemName": "Blood Battle Grieves",
   "chineseItemName": "紅鬥士鞋",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 3210200,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

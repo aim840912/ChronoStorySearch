@@ -2,7 +2,6 @@
   "itemId": 1060090,
   "itemName": "Bronze Platine Pants",
   "chineseItemName": "青銅暴風褲",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5130105,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

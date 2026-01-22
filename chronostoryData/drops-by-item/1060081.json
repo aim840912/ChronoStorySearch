@@ -2,7 +2,6 @@
   "itemId": 1060081,
   "itemName": "Blue Orientican Pants",
   "chineseItemName": "藍鋼玉褲",
-  "totalMonsters": 8,
   "monsters": [
     {
       "mobId": 5130107,
@@ -92,5 +91,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 8
 }

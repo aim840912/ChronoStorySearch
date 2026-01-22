@@ -2,7 +2,6 @@
   "itemId": 4001004,
   "itemName": "Blackbull's deed to the land",
   "chineseItemName": "酋長的地契",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3230100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -1,0 +1,55 @@
+{
+  "id": 1002036,
+  "description": {
+    "id": 1002036,
+    "name": "綠色術士帽",
+    "description": "",
+    "chineseItemName": "綠色術士帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAUCAYAAADskT9PAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACiUlEQVR4nKVWgZXqIBBc3rsGaIErAUvwStAStISkhKQELcGUoCWYEqQFSsjfgSwBjPfPu3kvzwTCzOyyS/ygElP1rOjvCJzGGHLOPXHmBqbubsl7TzvydDx7Godk6F0jKZDmagIf8dV7TcPeF5xiIIk7vlrnSVsiO0/ORhQ9Z2gV96tmMY5a6/A8kJ5nOLiLpoYfN1/BiPoQcQEWjcExBRN+JNp2RO5spt3pWezAZDAMuMGT2ekgaHScA85+ed/zuz1Pduyi7f0UMoAUYZFm8YZF95wq7xYT1hraXnQiwTvtzSdymEbmIC5R18ISHFkOcHQ0uDgWDCACa+JCIQ7iJhLqjBTb1N6eM5ELvwJM1khFOHKFWq5UzQ6JTRTiBquj+E9EJCM5kNEDj595HNuKzHLagwGFykRxQEA7nSKSLQH6F4LdVhdZyyNFsaEYZTvRhX5OPUygNVMGDA8460OwyEQcjAQ0L4KhOgu1uEQb5vIx5m+5SO0uPnNngViJAdVzRaJnO8NqpisZbXbvFtr9qJ/2XsRFVDopZIRTcptbnIY4ls6B6UEx1Fp8RVhwsfGAyZF3kJhAtIj85taLcBan1+Jv4GK87Bgd+bpF3wqHmaQfwD3Gym9BHaUYWol+FXOAKCEU3Am/TPHVxpPUj2bqGj6I5rpZinBe6NzCFepwZGFdktfvvQP+GKn9MT/OYxEqtaHpceGUZb12ajIjlfDxVU9ma78xKd+U4mOkPvfRhAiIiBj5TtRUh2B/jr+7Lf0XeQ0EE7gRI+8K52gORMyXuLOpabrzwIbS17CYQOqyhYWZd/BS/LHwIuAiA3B17cqFkpVfYO1PjFKf0cRsUNV/ydAyPyH6E9hEwj84Bjrs/O6afgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAaCAYAAADWm14/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC00lEQVR4nKVWgbGrIBA8Zl4DtMArgZSQV0JSQlKClqAlJCXEEmIJsYTQAiX478BDQDHJz844Ksjt3nKAP5BizN4FfA8XUykFxphFzFjA2Dw0WGvhABbOVwtDFwR9KiQkUt2Viwd4tVZCd7RJTBYQyA1etbEgNYCeOichApYOreJxl0iGWUvp3juQUw8md5NQ4evuzwkRP0zOoEGDUwxOhB0A9g2AuarxcFmSnTAYCSaYzoI6SEeopO8jXO38vcVvW+xsUEXd2tE5QBbRIInkFZIe0SprZhFaK9jfZAhC39S9DcFJNDlH5Jx1TszJgcYEBwOd8W1OAGWglR/IgR258gFlFJSmqe6XTsTEJZDIHKEIB6xQjZUqUSGgiIRc0WhP/g4JOxKDHD1h+xXbaVrJWbTdCRBUmVQcRCCNDBnxlBDaAmGzl4lrcaZUbFSMPJ20Cu1kPYmgpRkcUNhgtHXJkhO+0QeAaRAJyl3IyTlb1xe3Yfwai1Qf/DuuLAosWIBosSJpzTYK2VSTRtTRs5nDHge5mHsmZ1JeSc4RtKSfljh0vi3sA+MTfKo5+Qox46b9BhMjXkEsgrKlzHuzXoQTOZTJP8BNWZ4xOOPVe92CNjO2n0DP1JaeBXmWLGgl+1VMCVIJUcFd6I4h/mq/k9pBjU2FG9FUN3MRTgONmWO5OhyQWKbB8+8+AR5G4niOt3NfhELsYHze0LJorV2qSEhGfC6tyWjshkg+U5LDSPwevQgmYBIWskWqsk2wvfr7YQ8vEdeAE0EPLORT4hjVCQDjhdhR1zg+sGEH4TRMOsi6aGAi5hMUyZ9zXEo4cYBU3Zt0ILvyH1j7iRHi14uYBIr8l4yWzDuBvgKKCMgFvEv2+uxdghdy8Z9wi0i+aHuX3EbXpgBZuEpi1sjW2vlsNfzdmgAmU9E9JvvG/gW2HCgN3votshvP+VUUwDa9sloWxGwJXnz/DwhmVcLOKCmuAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": 0,
+      "y": 26,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 0,
+      "y": 26,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 2300,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 92,
+    "reqLUK": 0,
+    "reqJob": 2,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incINT": 2,
+    "incPDD": 12,
+    "incMDD": 40,
+    "vslots": [
+      "Cp",
+      "H1",
+      "H5"
+    ],
+    "islots": [
+      "Cp"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat",
+    "lowItemId": 1000000,
+    "highItemId": 1010000
+  }
+}

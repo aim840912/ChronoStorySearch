@@ -2,7 +2,6 @@
   "itemId": 1002643,
   "itemName": "Red Brave Hamal",
   "chineseItemName": "紅色勇者頭巾",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8220000,
@@ -14,6 +13,18 @@
       "displayChance": "1.5%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230131,
+      "mobName": "Gray Commuter Saucer",
+      "chineseMobName": "新葛雷白",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

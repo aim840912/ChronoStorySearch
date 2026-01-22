@@ -1,0 +1,38 @@
+{
+  "id": 4032810,
+  "description": {
+    "id": 4032810,
+    "name": "葛雷的手套",
+    "description": "葛雷金剛戴在手臂的手套，雖然無法知道其材料，但相當輕盈且堅固。",
+    "chineseItemName": "葛雷的手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADpElEQVR4nK2Wi3WqQBCGN+fcBkgJ2wKWgCVgCViClgAlSAlaQihBWtgSQgnc+QYGF0QTk4zHgyK7/2Me6z/3t9FHn9++evgvwfuyPLksS5333r2/vxuRhyR+A94vb4QuCHCunz8/P/X6jMRPwfvT6ezS1OsXlBKb7dZtmkbUZ648HFwIwV2v1+G3zaZfEvgJ+Cowcf34mEgc5Rra4MryMPwmJJYEfqR8DRiVFufTye32e3XgeKwmAmcht9tuJwKvgvc+TXVjn3h3Pp/ugEPXrRIoDsXdZi8rB9SL8tQLid1+ABISEDBgI1GWpQAflUAz1kKs/jvgU1WjmgCYyPPctaFVEmatRRcGIkYA0o28vqtcQQup2kJALL8oxEYDNyJYjNUoNmAjYQRc66ZU1VXVPwLvsccnyayoVL33k82Q8FZ8ogwCAC0jJnOsqqfKe9oCkMulcW0b3FpQ8RSR5VRJiDK+QwDAxCeaa+JQHFxVS+FlhSm/A58B53mm16LIZw/V9WVUm8xyag7wHTCAGTax2tiFGHwGDKCBzCyUnFJk1uuxKiMQB8A4U1e1XnmOaww+5HiRXwUZC8qA1wJ7rZ20FeUNCKTUKQG2ziBsz0k5o9Cl6WzT01g8gOKGEZrWRGQAZ9OlA5fLZQYc2tbt9zs+3vpcWYuVmRAg11jONXaBOBSFANR36uNcErH6G/BUvPPxynGIPfK0EiCnWu2yEEDeBMD0vak2UAOI7Y/vA4wDTXOrI8B7BgkLjECQDazCIRErXQKzubXTMnSqjUQANrtjcM0Vo4+HIGCbkQbaCcDBnW4VmMlGsdp8516sfg14Zruxsw31IJCXS+cdENvMM1bRugfdIgSsldTNqMCWzig4rRKTGFRKCi61843XzZLk9gzAUfEMboQwa1XcrNtqFTQGf+OIy7JcSXRtNx2bAFgafOSA3UcVFb0Wpv5ZmO1vUoV9vMgGQWgGIHdr7wmYMKKsszqA3KMiXAPX4KDQapfNccF3flKx3IyzHQI8m8s/VgrTpcngnu8e5vkRuNpP26HWZrGNyyIvRsWDE9oZYkc8r3Errp+XlEOAQ15dKItJLcWmm4rTPvNaiAwL/sVyn1bkLKddh0PkeaE9ArdFvebRDXbbfIZEfLhoauQe1W5j9LvAj8B1saXAFMZVre2YDn1shfkq8DNw3cRSgEKUdTrhhrzb6Bx7eVrjXoiv/r3qZrjAec8MIOJWexXwFfAJYPyvfUfsN/EfqB2EL9srMN4AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD0ElEQVR4nK1Wi5GiQBAdqy4BNoS5EDAEDAFDwBA0BAhBQtAQlhAkhQlBQuD69fCwYUdvf21RCMK8T3/GP+53YzTfN/97+DfBx7o+u6LInffevb29kchTEj8BH9c3whAEuNTv9/tdz69IfBd8PJ8vLs+9XkApYrvbuW3XifrC1cejCyG42+0Wf9tuxzWB74AngRG39/eZxEnOoQ+uro/xNyGxJvAt5SlgqGRczme3PxzUgdOpmQlchNx+t5sJfBV89HmuC/vMu8vl/AE4DEOSQHWsPiz2ZeUA9aI890Jif4hAQgIECEwSdV0L8EkJdFMtWPWfAZ+rGqoRAEaUZen60CsJWssYQiRCAiDdyeezyhW0kqqtBIT5hULYSHASgcWwGooJTBIk4Ho3p6ptmvEZ+Ah7fJYtikrVez/bDBKexSfKQABA67BkTk3zUvmItgDI9dq5vg8uFah4FBFzqiREGa5BAICZzzTXiGN1dE0rhVdUVP4BfAFcloWeq6pcPNS210lttsgpHcA1wACMYWPVWhcs+AIYgARZWCg5RZGx160qErABYDjTNq2e8RzOFjzmeJVfBZkKisCpgL1sJ21FOQACUuqUALMzEFxzVo5R6PJ8seh5Kh6Awg0Smt8xZACORdcOXK/XBXDoe3c47PH10efKWqwshAByDctxti4gjlUlAO0H9TaXCKv+ATwX73K8YjuEPfK0EkBOtdrlRQDiQAAYfU/VBCWAtd/eBzAc6LpHHQF8xCDBCyQQZAFWOEhYpWtgLM52WodOtYkIgGm3BddcYfThIRDgYkgD2gmA0Z0hCYzJhmLlfMc9qz4FvLCd7LigbgTycfmyA6zNeIYVrWugW4QAW0ndNAW2dkbB0SqWRFQpKbi2zndeF8uyxzMANsUT3Qhh0apws+2bJKgF32CLK4pSSQz9MG+bAGAavHGA96EKFZ0Kqn8VtH0jVTjalzgIQheB3KO9Z2AEieI91gHIPSvCFLgGNgqtdlkcLvjBzyrWi2FvBwE8W8o/VhSmy7Ponh+e5vkZuNqPtoNazmKOy6qsJsXRCe0MscPOa7hl60eCF8m5vN7VNtjk1YW6mtWi2HRRcdoXXgsRwwL/YnEfrYi9HO0aNxGtg50cuQEezJEER7zJcdc8umg35zNI2M1FUyP3UO0coxPwaQJmEDRMx5ACz6ZjJyl4j5MvKrRVre2Yxz5mYRrgxj3sJnAyUsr54l4Wu1AhlA064WLeOTqnXmYcEoBD4kiC0xoS+Ivv4sIN+z1mAMK2msT2hcrhxW9J5UPiwc30X3txz/0w/gElCZ0MsCVBWwAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": 0,
+      "y": 32,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 0,
+      "y": 32,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 1,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Quest Item",
+    "lowItemId": 4030000,
+    "highItemId": 4040000
+  }
+}

@@ -2,7 +2,6 @@
   "itemId": 1002622,
   "itemName": "White Oceania Cap",
   "chineseItemName": "白色遠洋帽",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3000000,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

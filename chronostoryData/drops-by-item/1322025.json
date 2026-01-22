@@ -2,7 +2,6 @@
   "itemId": 1322025,
   "itemName": "Emergency Rescue Tube",
   "chineseItemName": "救生圈",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 5120003,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

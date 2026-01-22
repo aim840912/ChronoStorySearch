@@ -2,7 +2,6 @@
   "itemId": 1082134,
   "itemName": "Dark Pachone",
   "chineseItemName": "黑色貴族手套",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 8220000,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

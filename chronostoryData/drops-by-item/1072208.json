@@ -2,7 +2,6 @@
   "itemId": 1072208,
   "itemName": "Red Neli Shoes",
   "chineseItemName": "紅色艾倫鞋",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8140500,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 4000018,
   "itemName": "Firewood",
   "chineseItemName": "木柴",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 1130100,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

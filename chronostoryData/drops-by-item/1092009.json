@@ -2,7 +2,6 @@
   "itemId": 1092009,
   "itemName": "Wooden Legend Shield",
   "chineseItemName": "古老木盾",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 8130100,
@@ -39,7 +38,7 @@
     },
     {
       "mobId": 8140100,
-      "mobName": "Dark Yeti and Pepe",
+      "mobName": "Dark Yeti & Pepe",
       "chineseMobName": "黑吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

@@ -1,0 +1,19 @@
+{
+  "itemId": 1072288,
+  "itemName": "Brown Skeedy Sandals",
+  "chineseItemName": "褐色防滑涼鞋",
+  "monsters": [
+    {
+      "mobId": 2230103,
+      "mobName": "Trixter",
+      "chineseMobName": "黃蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

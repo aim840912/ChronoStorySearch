@@ -1,0 +1,19 @@
+{
+  "itemId": 1041052,
+  "itemName": "Blue Amoria Top",
+  "chineseItemName": "藍神聖法衣",
+  "monsters": [
+    {
+      "mobId": 3210208,
+      "mobName": "Retz",
+      "chineseMobName": "發條楓葉鼠",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

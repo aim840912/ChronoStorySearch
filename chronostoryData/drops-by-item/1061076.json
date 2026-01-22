@@ -2,7 +2,6 @@
   "itemId": 1061076,
   "itemName": "Maroon Moon Pants",
   "chineseItemName": "紫月褲",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5130100,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

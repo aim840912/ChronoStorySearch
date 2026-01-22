@@ -2,7 +2,6 @@
   "itemId": 1472017,
   "itemName": "Dark Avarice",
   "chineseItemName": "黑護腕",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5130100,
@@ -36,6 +35,18 @@
       "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230109,
+      "mobName": "Block Golem",
+      "chineseMobName": "積木泥人",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

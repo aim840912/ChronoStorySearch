@@ -2,7 +2,6 @@
   "itemId": 1002210,
   "itemName": "Brown Sonata",
   "chineseItemName": "黃黑太陽帽",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 9834178,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

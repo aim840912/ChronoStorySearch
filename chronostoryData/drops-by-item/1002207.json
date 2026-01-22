@@ -2,8 +2,18 @@
   "itemId": 1002207,
   "itemName": "Red Sonata",
   "chineseItemName": "紅黑太陽帽",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 3210206,
+      "mobName": "Helly",
+      "chineseMobName": "黃色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 4230102,
       "mobName": "Wraith",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

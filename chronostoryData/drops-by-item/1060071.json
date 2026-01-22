@@ -2,7 +2,6 @@
   "itemId": 1060071,
   "itemName": "Khaki Shadow Pants",
   "chineseItemName": "樹林之褲",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 2230113,
@@ -27,6 +26,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 3230302,
+      "mobName": "Bloctopus",
+      "chineseMobName": "機器章魚",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230107,
       "mobName": "Flyeye",
       "chineseMobName": "獨眼蝙蝠",
@@ -36,6 +46,18 @@
       "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

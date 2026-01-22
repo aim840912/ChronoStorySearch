@@ -1,0 +1,54 @@
+{
+  "id": 1302143,
+  "description": {
+    "id": 1302143,
+    "name": "1st不速之客單手劍",
+    "description": "",
+    "chineseItemName": "1st不速之客單手劍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 47,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAjCAYAAAAaLGNkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADfElEQVR4nMWXj3GrMAzGxd1bgIzgjJCMACMkI9ARkhGSEWCEvBHKCPEIZYQwgp9kW7ZsICW9vlZ3pGDA+vnTH9M/8DtmxHnxGxDGPB6w3e9BXT6gPxbmpyEsgL5e4XY4wPG8tYM/CREAyI5//4JSCoZh+DGIWYC+7+nyv+ZESL5nAPTzNQhjSvwtxcgIRTHmAOb+bi8Y4Kz1BOB1iOhcCYjRHsYMHsQ0ZQndiFz7Gui8aZowRQ7wGkQE2HkIBhnw0P6pO0nf1TWY9mIh2vcbvNVHCzIHsB4iBaCjsuNdt8PZtb1XFA3s4ophV0GJKmwQ4OFB/Fz0LoWPwVdAPANgQwBjDK78DXXRoLHsAMMx4lFVlVWkumGaHK0I9H6/XoknAAblLbqOAHbQIgCe3quYq5SMpIT1iiA9ARizBxdGLd0sQ3wCwHY/nXD153DN8d8jBN3b0X2E2W63lDyjVSGtpAWIlQD0QK1U+u7lAg2FQyhCQA0lrFNhwPlBgiwpMQvwQIAzLobebvERV4/N5OUNhqlsW9j7a4VOEaDz89HcWoJMIZwKSkAEgA7GQEh2aA5Q+7HRj9Px8GA8ZnOnaXg+TkrtH8kgpgBlGgKGcBi3pGli8uN9jWP0l5SqeVqXxFzOFcQGZzttrgRDKAa4NVVyM7ejB2tFA6VzCsWHXF8K4nLDTSkg0pYcesABYuJxJp28Q8qPMgEgx1gJOH6n/kVhyM2BDHJIKpECiDD0CF3hLSWgrjB4BZSFe8Pfmw2BA9i4PEj6gVjLINbkIVIVwtI1PisLWqpywvOzB2FFeCWfOM7PgxKyJIMKvXfCE7O8lP2lB2FIDkk7VUFDrIT0CCUaKyJRAcQFBaIQE2/8vsHhkjkxA9D7lcc8mOmYk57AkyuPIQHkxsXKnLBfkF3SYPAWr9Fpkoi5MUQoyQeW5IjvlwsAeYfkJV1J3eUwPDWpRLBZAGGcsDw7IZMK1/gIy59/9i1CZGHQ8wAzKlQihWZUSMrwMwiVDz4D0D6/Kk7WqUWAFSowROKk6PSz51E24XwaKs6D1SpECGEEQ9vQhvt8AjjrnJtPeqxUIYFYkBaS+6nz3PGkCb0CoWHmw8Sa/JaMAFz/uXN41bmE4I422TvsvPO1H9vwFx3nELyqfCt3MBGgB6nANziPENRS3f4BEP+jGi2I2/dl4jkFvhGA7B+oiQABpfX7FgAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAjCAYAAAAaLGNkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD3UlEQVR4nMWXgXHrIAyG5bu3ABmBjJCM4IzgjOCOkIyQjGCPkI5QjxBGKCOEEXgSICNsx03f3Wu5o8UYo49fQpA/8DvFi3b1GxDePx6w3e9BXz5hOFb+pyECgLle4dY0cDxvQ+dPQowAVI7v76C1Bmvtj0EsAgzDQI//NSbG4FsDoD//BuG9wr9K9DioKjcF8PeP8MAAZ2NmAN+HyMa1gHChem8TiG+Vgt4h1/4A1G7bdpxiCvA9iAywSxAMYrGaNOpO0veHA/juEiC6jxu8HY4BZAngdYgSgGod+vt+h7Ob8K6qWtjlFcOuBoUqbBDgkUDSXPQtuY/BX4BYA+CCAN57XPkb6mLA4LYDdIfDWtd1UKS+YZgcgwj0/fC6EisAHuWt+p4AdtAhADbvdY5VCkZSIlhFkIEAvN9DdKORZp5DfAHA5X464erP4zP7f48Q9G5H7xFmu91S8LigQrmTnkC8CEADDlqX314u0JI7hCIE1FLARhUszg8S5JkSiwAPBDjjYujrDofE/djOPt6gm1TXwT49azSKAH2aj+Y2EmQOEVXQAmIE6MGNhFSatoFD6nOpn+ojgXFfiJ225fk4KE0aMoGYA6jSBQwRMW5F0sTgx/cG++g/KXXgaWMQ83auISe4kGmnSjCEZoBbWxcvp+WYwDqRQKlNrviU6ytBYmzEKQVEmZLHHNBADjyOpFMySPGhCgAyjDsB+++Uv8gN0xJBrOySSpQAwg0DQtf4SguoK9ikgA5wb/j3FlwQATYxDop8INZixZoSRKnCuHSDY+WGlqqcsH1OIKwIr+QLw9P2qITckqMKQzLCE7O8FP0qgTAku6Sbq2Ag74Syjls074hCBRAP5IhKTLxJ5wa7S8bEAsCQVp7jYCFjznICT64ThgSQBxcrc8J8QeVSOoOPeINGi0CcFoYYt+QDt6TD79UTgGmG5CVdSd3nblgtUomxLAKIwgHLsxMyqXDNQ1j+6bXvKcTEDWYZYEGFWoTQggrFNvwKQk871wBMiq+ag3VeIgDdaDablyEKI1Vv1sajbMJ4mflcCCbnLP6icUD3SbrVOJffr0KIQjB0DG04vfa9zoDJeJOMRwPxHsfGDdVBYVsvAMg8MYdYlFYMDe+bJvU4FQyGSgDWBYPWZuPOuYXZOFvO0raBMuDUuMr3qEIAqJt4m3FptdYQBAQQtheNK8hXiYXlzAtBcEYrj/ElBejXq0HjxtgCIK9aGpu2p7WA4O0UDzGX8oZScetSXEQFDBozQf7RFXZphW7leVGRPyGlxvMDIF6a8gnXtlFa6lPa4g9Jg/d3TEDnl7beq+UvKl9k3Ht61eUAAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": 0,
+      "y": 34,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 0,
+      "y": 34,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 11000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 47,
+    "tuc": 7,
+    "incSTR": 1,
+    "incPAD": 65,
+    "attack": 1,
+    "attackSpeed": 5,
+    "vslots": [
+      "Wp"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Sword",
+    "lowItemId": 1300000,
+    "highItemId": 1310000
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": 1472010,
+  "description": {
+    "id": 1472010,
+    "name": "朱礦鬥拳",
+    "description": "",
+    "chineseItemName": "朱礦鬥拳"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACbUlEQVR4nJ2WgZHjIAxFtTPXgK8EWuBK8JbAlZCU4C3BLuFSwlHCUsLSgkoIJXiRjDB2cNZEkxkEDn76kiD5Ba/bfLD+Vlt8FTRfjILgEXrTQ6c0aK3Bew9/r5MEsAG+AsqQ+AFTQAJ6oGdaKbhObi5hrSCGkJGSPo4EcfbGax4x+ghq6GAcNHxMPsNaQFkJmZPROh610aBUB5cIIEMMrO5mkWFNiiRdVbOeYQLZWxOIIJ3u2acGIFOxHhhT5u3EsE6rTWCiqglUg8gY4jPvHWhAhol6mrcr8i45LtbiH7ukpoSXMIGcBfG5kG6jgivVx/Ny5XlvBm7rGqy0n0Bzr9eJQBAdty8V/RZro1NKCUiwEEGctrVcT0EZQgFjbjfPLSydtRTbbWHRDynNdtn2vL1TRngjRSrFv02StqXjKCDnV5iYQPaKNpfk12jgfYpnozccpbSxRExGhzWVZQPLTVO5gvLVEnueIQSACPLOLj6kdi6ANUuQhxt8k7oSQoD758jrv98/gF4r6sRIGfpV1V7FHjSn08sQ6xzYoGA0i4p4r8D9Hn1vGZiV7cz5Y0hWVCpZIDpDlnxYHj7ThUm1E/sf18r5UxC9IATkdJVKSgg9ExMg7XHrLXuoJoG6GBGmF1AnTdCPXw8QSinoC5gOa5AziujgdTzJQPjDI10vWckBZHLhRzUJRKe7419Hz6kuFMKUv2iWWJqVbEClrdAVyNBhGUvIWTVV0GrLT/EeOvTtkAzyuEZZ+jXo5FIOua4BzhqDQvH90j+C0nnFxjIR6C1uyn/6Cv8EtA3EgGIt+0dQxIc9p0FHVoW2Qsi+AWS5jVWbI0DLAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAdCAYAAABbjRdIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACmElEQVR4nKWVjZGjMAyFdTPbAFuCrwSnBFICW0JSQrYEKGFTwlHCuoR1Cy4hLoGThGULMJOffRPGxgE+PVm23+B3mnbG/9QGfwObTp2B6AO0XQuNsWCtBe89fJwHCWIBfRWWQfiDToFi8ED/WWPgPLhJA1+BMYhEjlpsCeTGK4/5ELAfwFwa6C8WPgefgc/CsiOSk3Z03NrOgjENnBBCCiGyy+sYGPi0M0ldVaNnoIDWehpGoMa23KeiIBmcn4Dp8+PAwMaaRXDi7mlYDSRtxP+8d2AhMFCyQPevOfMudRzOzRd3yZUOQAMF9AyM141UIRWBMS2upzPft92FS74G1HoENrW23AgoBMelTYVwxbmyKb0EJWBEGKewTN9dWAZR4CGXoefyloqbC8AtgdiPKeXj/Nr90k/Z4ZcpYimI6yApnCuRgnK+AEUCqjlbbKw/fQfHAddO23G0UuISOYkWdJqmBTAX0s52lbchXBMMIgggzLtx7kMqdQWtKYE2O/8mjRpEkNt3z+Pvx0+gT4tLETkMvrhbu6nBprTKGTQ6B2M00HezG9yD4HbDvh8Zmh2u5Pw+aOFMO5pBNoNYCCJ9p02W5lL0D8f0/V0YfSTGwKnTjjSI/tPPk+gdV3bmXVcK1mBkIX2EKmyAtv/ZgCi9YE/QNaEGetRZZCApQ+HALW1F2dEOaHDxrisFo12g4VPW+5VTGPLDXQMvOdrAtAq4QBl8mVsNSq7eQVJTtDk972xX87G+Bl/aBegIdGTVQVFdBeZDiVb3a+DBiQlqo4W6BBLSFd/SGzgP6inV3wPTmpYzcwe0kTg74Iup1uGM/a/HwfmE1IBYuRgmVv+qhw/5SyWIBThxDxUXcaefnUXYsQ5q/SBgqo0/qv8peKWr9rOvggAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -4,
+      "y": 29,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -5,
+      "y": 29,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 4100,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 80,
+    "reqJob": 8,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incLUK": 2,
+    "incPAD": 18,
+    "incPDD": 2,
+    "attack": 7,
+    "attackSpeed": 4,
+    "vslots": [
+      "Wp"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Claw",
+    "lowItemId": 1470000,
+    "highItemId": 1480000
+  }
+}

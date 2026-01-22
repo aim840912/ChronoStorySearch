@@ -2,7 +2,6 @@
   "itemId": 1072075,
   "itemName": "Red Magicshoes",
   "chineseItemName": "紅魔法鞋",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 5300000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 2044302,
   "itemName": "Scroll for Spear for ATT 10%",
   "chineseItemName": "槍攻擊卷軸10%",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 5220002,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

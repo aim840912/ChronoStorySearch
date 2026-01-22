@@ -2,7 +2,6 @@
   "itemId": 4020005,
   "itemName": "Sapphire Ore",
   "chineseItemName": "藍寶石母礦",
-  "totalMonsters": 13,
   "monsters": [
     {
       "mobId": 5220002,
@@ -39,7 +38,7 @@
     },
     {
       "mobId": 2220100,
-      "mobName": "Blue Mushroom",
+      "mobName": "BlueMushroom",
       "chineseMobName": "藍菇菇",
       "isBoss": false,
       "inGame": true,
@@ -71,6 +70,39 @@
       "maxQty": 1
     },
     {
+      "mobId": 3210205,
+      "mobName": "Black Ratz",
+      "chineseMobName": "黑色發條鼠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3210206,
+      "mobName": "Helly",
+      "chineseMobName": "黃色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230103,
       "mobName": "Iron Hog",
       "chineseMobName": "鋼之肥肥",
@@ -87,6 +119,17 @@
       "chineseMobName": "月光精靈",
       "isBoss": false,
       "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230121,
+      "mobName": "Mecateon",
+      "chineseMobName": "梅卡堤安",
+      "isBoss": false,
+      "inGame": false,
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -138,7 +181,7 @@
     },
     {
       "mobId": 7130102,
-      "mobName": "Yeti and Pepe",
+      "mobName": "Yeti & Pepe",
       "chineseMobName": "雪吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -147,5 +190,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 17
 }

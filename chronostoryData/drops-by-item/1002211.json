@@ -2,7 +2,6 @@
   "itemId": 1002211,
   "itemName": "Blue Maro",
   "chineseItemName": "藍貴族軟帽",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 4230102,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

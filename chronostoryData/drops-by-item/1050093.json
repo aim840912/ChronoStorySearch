@@ -2,8 +2,18 @@
   "itemId": 1050093,
   "itemName": "Blue Oriental Fury Coat",
   "chineseItemName": "青綢緞長袍",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 5120100,
+      "mobName": "MT-09",
+      "chineseMobName": "機器人堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.16,
+      "displayChance": "0.16%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 8141100,
       "mobName": "Gigantic Spirit Viking",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

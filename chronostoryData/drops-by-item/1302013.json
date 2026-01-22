@@ -2,7 +2,6 @@
   "itemId": 1302013,
   "itemName": "Red Whip",
   "chineseItemName": "紅色鞭子",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 9308021,
@@ -12,6 +11,17 @@
       "inGame": true,
       "chance": 0.5,
       "displayChance": "0.50%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230400,
+      "mobName": "Drumming Bunny",
+      "chineseMobName": "兔子鼓手",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -47,6 +57,18 @@
       "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

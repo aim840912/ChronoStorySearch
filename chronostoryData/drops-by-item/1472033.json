@@ -2,7 +2,6 @@
   "itemId": 1472033,
   "itemName": "Casters",
   "chineseItemName": "卡帝斯拳套",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8220001,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -1,0 +1,38 @@
+{
+  "id": 4031206,
+  "description": {
+    "id": 4031206,
+    "name": "破損的旅遊券之一",
+    "description": "被撕破的旅遊券其中的一部份。",
+    "chineseItemName": "破損的旅遊券之一"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABYAAAAaCAYAAACzdqxAAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB/ElEQVR4nJXTC5GDMBAA0M1MDeQkpBJAAkigEkACSCgSQMIhoSuhkdBIaCTkdhPKAeWbDlO63bxsfhc431z/LbaSzsIOfh0oW4ApWreFn4E92iQIhW5AlhnYOl3Fj8IevSdAaOIDmb5Bu9HhCOzRZwYQYwjc2yuYnU578CJ6pG3BHnWEipPoFvyFlifQNfgLfdB+Ie2UpXfZJ+nmDQkFMBaLJ2MOL1eavIYExvH+AinDKJKOiq3wCx/Dq5WO24DyILqidwWwgF+20KHEOUox9oyxYK2BvHxAa1u6MMWAXxanX0+nP6+U0U9jdKn5ir/QWavoNgyV0ndEr6cuyBKKTag0owfpoZmDkeF0ZHnjcyIa0CoaLqPfXVgOD3O1fqPq5UqNDaivVP0fuQ966zTF5Hg7fMUCUuEwUZA8XoDpdYLm9HS9xNNfQ/mjshw0/0FVf5ZC1GgcEMr4BO0TGMQuhoyXgN+jJ9xQQ6IUnQ7Ol5NBx2vscaSkJ003tVNUY0oDSbpt1qMVoWUSQYd2QLFruVoY1niM66tw6dtBSZltj8q+SoYr+QvtDjqveMDxRzjpHOTcoQ8yGps7baTZRddgn9AJ4VSPc+U/ugQ+yEfQLTisOeHQ43wSeaOOoHvwgNfNE155BGl7DD0Ch45F7K7YTKMb6FE4AOGqTmMb7Q9XPB/+9ymlPAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTElEQVR4nKXWi5GDIBAG4N+Za4CUYEqIJWgJpgRTgpYQS9ASzhJCCbGEUMJRAreLj1PEqDkyjIQAH8vDyRc+S6Z/Bns7fAIZfBuE+gZ1q81e7ChkkSqWuLUVRJ5Cl8ku7AhkkXsMQmJbkbZX1Ds774Us8kyBSHYV9/oMdWCWeyAvcjRtQRYxhAT/QLagBZJ/iLyDFsiD9l/Szmsqi75RW/0gpgoZBZsnzwf5I4lfYwPG5P0FITpV0FHUhXyLudBqJNM0Ioy2BZVDYAObQl5kDMFFqI7HV0pDa4Usf6DWNV3gmxcboOVylfPlciNhZEiMbKUxogXipIJu5xgJPS9U/NeF9SGy6iJJKUvKtFJQojt9aVbZNheagA6JT+l7s1y+EeJo7MaX/kiU7hAbSfh3xAfk2rRUJ6bb6Y0oQBIYGYeIHy/I5DxDMspNPzIv1xrCnzDN0PIPTlTTpQtKqQwIYWyG9A0YkE2ElJeMy5cnrrJFHIZ0+ri9mE3Cu3RTTFKnJy1PoudIKxOCBb0NtEUKQvL4gkbqEZFNzdEAa3s0xdpzYJIfg5x61j0i+igYKsQ36gPIGmQbylNghDHIeIC+kpFI3elgqEPIO8h2aILAhD3GkZ3aHHyRjiJbkO1YEoYe45PPG38U2QONWFk98couSGovcgIWB252pVxIOM+hHOEWPc+ymrfukATdPfYhesgDJFbyFC1o4LszYOlBphhnvuPqazJoOHmuRef+u1q7n4s30TSitUZrry/3N7c8y1/4C8/dFzeJFfTdxMbyL80OOrVEDoWJAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -4,
+      "y": 29,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -5,
+      "y": 29,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 1,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Quest Item",
+    "lowItemId": 4030000,
+    "highItemId": 4040000
+  }
+}

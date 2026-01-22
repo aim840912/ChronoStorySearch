@@ -2,7 +2,6 @@
   "itemId": 1002005,
   "itemName": "Iron Burgernet Helm",
   "chineseItemName": "鋼製騎士頭盔",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 2110200,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

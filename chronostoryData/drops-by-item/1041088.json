@@ -2,7 +2,6 @@
   "itemId": 1041088,
   "itemName": "Ivory Shouldermail",
   "chineseItemName": "褐將軍鎧甲",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 4230115,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

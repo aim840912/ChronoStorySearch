@@ -4,7 +4,6 @@
   "chineseMobName": "黑斧木妖",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 25,
   "drops": [
     {
       "itemId": 4000018,
@@ -31,7 +30,7 @@
     {
       "itemId": 0,
       "itemName": "Meso",
-      "chineseItemName": null,
+      "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 40,
@@ -281,5 +280,6 @@
       "questId": 0,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 25
 }

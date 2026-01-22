@@ -2,7 +2,6 @@
   "itemId": 1060061,
   "itemName": "Red Legolier Pants",
   "chineseItemName": "紅守護之褲",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 4230107,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

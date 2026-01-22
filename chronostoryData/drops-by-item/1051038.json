@@ -2,7 +2,6 @@
   "itemId": 1051038,
   "itemName": "Green Lumati",
   "chineseItemName": "綠貴族禮服",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 9500148,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

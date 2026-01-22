@@ -2,7 +2,6 @@
   "itemId": 2040816,
   "itemName": "Scroll for Gloves for Magic ATT 10%",
   "chineseItemName": "手套魔力卷軸10%",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 5150002,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

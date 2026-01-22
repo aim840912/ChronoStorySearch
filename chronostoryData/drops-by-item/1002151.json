@@ -2,7 +2,6 @@
   "itemId": 1002151,
   "itemName": "Brown Guiltian",
   "chineseItemName": "褐魔道之帽",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 2230102,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

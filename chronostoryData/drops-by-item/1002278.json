@@ -2,7 +2,6 @@
   "itemId": 1002278,
   "itemName": "Dark Falcon",
   "chineseItemName": "黑色飛翔帽",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8141000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

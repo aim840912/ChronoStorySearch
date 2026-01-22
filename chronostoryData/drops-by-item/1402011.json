@@ -2,7 +2,6 @@
   "itemId": 1402011,
   "itemName": "Sparta",
   "chineseItemName": "無極劍",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 5220003,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

@@ -2,7 +2,6 @@
   "itemId": 1002172,
   "itemName": "Blue Guise",
   "chineseItemName": "藍假面帽",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3210201,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

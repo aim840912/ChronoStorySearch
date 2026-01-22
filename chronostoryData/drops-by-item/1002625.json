@@ -2,8 +2,18 @@
   "itemId": 1002625,
   "itemName": "Blue Den Marine",
   "chineseItemName": "海藍水手頭巾",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 3230103,
+      "mobName": "King Bloctopus",
+      "chineseMobName": "機器章魚王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 3230200,
       "mobName": "Star Pixie",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

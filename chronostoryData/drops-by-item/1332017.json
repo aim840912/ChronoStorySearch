@@ -2,7 +2,6 @@
   "itemId": 1332017,
   "itemName": "Serpent's Coil",
   "chineseItemName": "金蛇劍",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 5220003,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

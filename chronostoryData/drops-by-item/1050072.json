@@ -2,7 +2,6 @@
   "itemId": 1050072,
   "itemName": "Green Enigmatic",
   "chineseItemName": "綠神仙之服",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 8141000,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

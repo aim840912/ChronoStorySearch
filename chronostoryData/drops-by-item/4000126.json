@@ -1,0 +1,19 @@
+{
+  "itemId": 4000126,
+  "itemName": "MT-09's Fuel",
+  "chineseItemName": "機器人堤安的燃料",
+  "monsters": [
+    {
+      "mobId": 5120100,
+      "mobName": "MT-09",
+      "chineseMobName": "機器人堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

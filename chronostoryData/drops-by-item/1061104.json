@@ -2,8 +2,18 @@
   "itemId": 1061104,
   "itemName": "Green Pirate Skirt",
   "chineseItemName": "綠隱者之裙",
-  "totalMonsters": 3,
   "monsters": [
+    {
+      "mobId": 4230120,
+      "mobName": "Plateon",
+      "chineseMobName": "培利堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 7130200,
       "mobName": "Werewolf",
@@ -37,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

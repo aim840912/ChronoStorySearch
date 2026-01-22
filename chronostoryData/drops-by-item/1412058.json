@@ -1,0 +1,30 @@
+{
+  "itemId": 1412058,
+  "itemName": "#N/A",
+  "chineseItemName": "1st不速之客雙手斧",
+  "monsters": [
+    {
+      "mobId": 9300476,
+      "mobName": "Zenomega",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.2,
+      "displayChance": "0.20%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230117,
+      "mobName": "Zeta Gray",
+      "chineseMobName": "葛雷士兵",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.01,
+      "displayChance": "0.010%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 2
+}

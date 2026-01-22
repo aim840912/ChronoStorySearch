@@ -1,10 +1,9 @@
 {
   "mobId": 6220000,
-  "mobName": "Dyle",
+  "mobName": "Dyle\t",
   "chineseMobName": "沼澤巨鱷",
   "isBoss": true,
   "inGame": true,
-  "totalDrops": 48,
   "drops": [
     {
       "itemId": 4000032,
@@ -42,7 +41,7 @@
     {
       "itemId": 0,
       "itemName": "Meso",
-      "chineseItemName": null,
+      "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 765,
@@ -534,5 +533,6 @@
       "questId": 0,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 48
 }

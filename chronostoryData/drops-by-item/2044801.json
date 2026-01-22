@@ -2,13 +2,12 @@
   "itemId": 2044801,
   "itemName": "Scroll for Knuckler for ATT 60%",
   "chineseItemName": "指虎攻擊卷軸60%",
-  "totalMonsters": 8,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.3,
       "displayChance": "0.30%",
@@ -92,5 +91,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 8
 }

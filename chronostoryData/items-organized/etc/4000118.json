@@ -1,0 +1,37 @@
+{
+  "id": 4000118,
+  "description": {
+    "id": 4000118,
+    "name": "小型宇宙船",
+    "description": "宇宙人的小型宇宙船，應該有特別的啟動方法。",
+    "chineseItemName": "小型宇宙船"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAYAAADLnm6HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACzElEQVR4nJ2XgZGDIBBFycw14JVgC14JXgmmBFOCKcGUEEuIJcQSjhLOFijB4+MuLkiM3s44ApH9bxcWJh/qfza9GD8ddXQUwAlPz2VgpLcxSn2dPdhukCMAkxfOoUhNM0NkmVI/D9u2nfPVgeyC2Aswi2fcLak9rCBgTa3UrdsHsQdgEXfP3T5WAZIGAJcAIrfZGc1+iIN7oKT3GI0NwVe5BdVmn8d3ANOzld3Br70z06/E2bAcjWW7DdtZ2AKYqmJOZ281Kg4+kxDUTkVLY/DR69cQKQBXSm3bKt1fva8AQkZNQlgUI0DQ5m5VVarv+2SJxgAThGG53U3avgsbgdYpiMWkuB7mrKGf2Q1p9AIBIxAPIQGcOIQD52MI0aWWPIpckThbZjeEIUKRjZMEmOq6XolXzUP1t7MCPCBchDotPFJhZMUyPmr06xVEYZ1prR3Eh4zcDrofX0HMk8PgWbjIl9SzeF42lBXjIaABLTzIhMsAR05kK4i6faru+k0pVCvT4lgYKUNF1Xpxjn60tPBtxG5dVQFDcBuT8bSPX/e+fH+qLSvr+yrqYaAjmwKVy+EAbCr8LpXCI+WXo4CD5v7j+jIKNh6T8xxUWfp2PA8AJ65RhsjoVoEgZ0BGEjuJ+3Izy0xwIABE0Io2oZIQqAY2KY7JcCzXVH6XApHC3MbysjhngO0kTitnfCjFlhKKxaRpUbtSPAZIQkiT2dkyXqpI1GvITuou8B8ARq5n13W7AGTEtCH/dxvmthpG66xKnYIbVuVzFdirWJGPQ7dhII6JuE4BUWRj8FGeqZd2m1fhBPEtiOR1LMVpzENIUW7nVAUZDX5dg7RvQqyu40Q/gEDjXi3CLAqbhY0Uf+czvI6bpnFlhM2GQwkbSIfU7n3p2SmXnC+9OMVvfQYZ4COUP9yw3X883vlMAsBeHTZH7Z3P4CSk1MR2+P/eEZ9/ZXnE8DXE6qMAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADCklEQVR4nJ2WgZWzIAzH43u3ADeCK3gjtCPYEewIdgQ7Qh3hHKGOcIzwMcIxgh/BBAOitZf3fAJq/r8EAn7A32zaGC/edfQugBeensuAobu1AF+XAHYY5B2AKQiXqEhNO0MoBfDz7dquc7l5kEMQRwFmccXdE7XHFQRa2wDc+2MQRwAWcX893OUUUNIiwDWCKF12jD0O8eYaONHdJGNj9FbpQLU95vEVwPTsZHcMc+/NDitxNpyO1rHdx/0s7AFMdTWnc3AaNQevJAS1c9HSGPoY9DZEDsCXUtd1oIdb8BVByKhJCCfFChBsc7euaxiGIVuiKcCEwmilW03a3SsXgdY5iMWkuB7nrGFfuQVp9QKBRiABQgJ4cRSOnJsYos9NeRI5kDibcgvCEqHIRiEBpqZpVuJ1+w3D/QIIjxA+Qp0XNlQYqlrGjcZ+s4KonDOttYf4kJG7Qf9wC2L+OA6ehatyST2Ll6eWsmIDBGqgFl6YCZ8BjpzIVhBN94T+dqYUwsq02BYMZaiquyDO0RtHi76tWK2rKmAIbuPHeHXf//z9ev6EPTs1j1XU40hbNgUqp8MDuFSEVSqFDeWXo0AH7ePH92UUbDwmv/NQp1Nop98hQME1yhCKThUU5AzISFInaV8uZpkJDgQBMWigRQgSAquBTYrjx+hYzql8LwcihbmN08vinAG2QuxW3nhTSi0nlIpJ06J2pXgKkIWQJrOzZzxViWjQkJ3cWRBeQBg5n33fHwKQEdOC/NtpWLpqMM5ZndsFd6wu5ypwRzGQj7dOw0gcP8TjFCEqZaKXSgWbdp9noUDxPYjscSzFaSxASFFul1QFiga/blHadyFWx3GmH0Fg41EvwiyKNgtbKf7KZ3wct23rywgXG25KuIB0TI13dR3gd+5yyYXS432a8/T7ymeUAd5C+UVhXArs+Ax5q9KBHZ+wCeBjijeU8EcoxnJLcLUL7fhcARSUmtTwxzDNwFG7O59tZnxzJ/wkMSUuaXt/+3ajfYbl33n1D50C4EMDr1OtNmDsTj8L/x8bT9SjJ/T3RQAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": 0,
+      "y": 31,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 0,
+      "y": 31,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

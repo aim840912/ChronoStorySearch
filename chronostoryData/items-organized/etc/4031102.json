@@ -1,0 +1,38 @@
+{
+  "id": 4031102,
+  "description": {
+    "id": 4031102,
+    "name": "記事本",
+    "description": "看起來像是記載葛雷一族過去歷史的記事本。",
+    "chineseItemName": "記事本"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADEElEQVR4nK1WjXGrMAxW7roAK7gjOCPkjUBGICPACMkKjBBGeIwQj1CvwAhUn2QbQwihvSrHgU3w9yMh80H7YlyMD/QHsRecyrIkb3oy/kRd1/0JmT3gI4D7oqPCEPneCxEE5k5D+Wsyu5UbZ4kc0VA5wm9wOudpIoOAO+427CLzDny0dUH90JEhK8BFa/UOX4OMt0zEZvPeMBmTiGylaZdyUc0BtcXK/QgMIhLBIcxvObMFLrlGjrEoCODI1WO+sBMYzhjPnCCtjSjAFiX/raXdymXBkhdsrC76YJSeHeFrzKs9YbwAjsTjtaXp3itwybUznSwKUAmAHq0cxUNBixMlMjIOwOIEKaEYJVXUtu1bcCkUWI5FhqubCAQSjkvGjoEMx/VBdANo9l8QkefdVDdZHNbANdfez5RIMFANED4LMIdzbOWowExHnciewxlFaq2dqd5UjhDrYDsftbF0PjgBYTyyTCACJ1J4BvZn6mPOvXEz1WvgKdfCOFN9DkCw+z7qvBCRMdwgSUdxVKvjawdgUd20tIwn5THXopwVDKi5mgef8//BBZC4VHDDqRv5OuG1lEa0onoJnnKd7IZ1TIDOzP4rFpdLwDgjXEvJfoQ0F9jdvla9qjw+LMqrKXfuU6v7zvpgMdQiQEIsP6pT3NDk+ZXqnqnOwSXX0e4EHBsKqvtL83sbXSo4kIH6qBpEpeuFNdYqfFW55Jr81DIjiV77+eB1MSgEqANofOVCkSFV1E3Pvsp1Dj7LtXQkl6mPaoIp0kSOWgOD12uZd6GbodJ5gdpcqWka2opZzmcNhaZdLN/LkVMppnPo4zRtKnENsd3Mlnq9nw/W826jjcB4JdDxzrMsmtS14tiSqDQRkJRYeSqpOW+rTuB9A9oxP3quqop8OZHpbfu8WwXQvH/LYSxlyX/5SfURbi6/NLIqVTKnKy9qQ8uEQ13WPsNWGklfLhfaEzHnS3ZPZObuMMi9DK7wB6TTj4X0JTPF5ofkq43lLZn2DFvV2uv/Ws6F3696C/xHZJp/tz3P/Br8R2T2xjcjPMonWJRt3gAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADXUlEQVR4nK1WjXGrMAxW77oAK7gjOCOkI5ARkhHCCMkKjFBGeIwQj1CvwAh5+iQLDDGU967KcYDB/n6kyLzTvngu7t/oF2IvONV1TdH15OKRuq77FTJ7wJ8A7quOKkcU+yhEEBg7DvV/k9mt3AVPFIiGcyD8hqBjkSYyCLgT7sMuMj+BP/21on7oyJEX4Kr1+oSvQSZ6JuKz8eiYjBuJbKVpl3JRzQG1VeG5AYOIRHII41vObIFLrpFjLAoCOHL1GK/8BIYz7mdOkNaGCfBVza+1tFu5LFjzgo3XRR+M0rMjfI1xtSfdL4CNuF17mp6tgUuug+tkUYBKAPTg5ageClodaSQj9wlYnCAlZFHTmdq2/RFcCgWWY5HhFiYCiUTgkvHPRIbj9iC6AzR7F0RkfpjqJou3ErjmOsaZEgkGugKEzwLMEQJb+VRgpqNOZPNwRpF672eqN5UjxDrYzsfVeTq9BQFhPPJMwIBHUpgD+zP1lvPowkx1CXzMtTDOVJ8SEOz+euq4EJF7uEGSjuqgVtvfDsCiumlpGS/KLdeinBUMqLkr33zM34MLIHE5w42gbuTrpL+lNKKC6iX4mOvRbljHBOjE7L+tuMIIjDMitDTaj5DmArvbddVF5TZZlJ+n3IUPre4v1geLoRYBEmL5QZ3ihibzC9U9U52DS67N7hHYGgqq+1vze3+GseBABupNNYhK10trlCq8qFxyTXFqmUai134+RF0MCgEaAGp/uVRkSBV109y1XOfgs1xLRwqZelOTTJEmctAaGKJey3hI3QyVzgtc3Y2apqGtmOV81lBo2sXyvRw5lWI6pT5O06Zia4jtbrbU+n4++Mi7jTYCF5VAxzvPsmjGrmX3nkSlM0BSYvWxpua0rXoE7xvQtvzo+Xw+U6wnMr1vX3erBJr3bzmcpyz5q59U7+nh8ksjq1Ilc7zxoj61TDjUZe0zbaVG+nK50J6wnC/ZvZCZu8MgX3VyhT8gg34sjF8yU2x+SK5tLD+SaU+wVa29/bnKuYovqq0Uhn8Bzyfi/LEYe+QvNp/30vxP0nZvwEN2rIJXK0cO3mTXiGthnfyvYqAxHUMJ3IBcds5BSx+vCKvO3N5Ny0vgS4DlxNWFFs+W18ujCG7W5ASKn+orRLbIvrz/F0Ee5hHW4kpsAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -1,
+      "y": 30,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 30,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 1,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Quest Item",
+    "lowItemId": 4030000,
+    "highItemId": 4040000
+  }
+}

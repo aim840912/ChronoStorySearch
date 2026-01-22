@@ -2,7 +2,6 @@
   "itemId": 1060104,
   "itemName": "Green Osfa Pants",
   "chineseItemName": "藍色勇者褲",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 8140500,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

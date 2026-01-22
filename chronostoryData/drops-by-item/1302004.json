@@ -2,7 +2,6 @@
   "itemId": 1302004,
   "itemName": "Cutlus",
   "chineseItemName": "彎刀",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6300005,
@@ -36,6 +35,18 @@
       "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230307,
+      "mobName": "Chirppy",
+      "chineseMobName": "邱布",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }
