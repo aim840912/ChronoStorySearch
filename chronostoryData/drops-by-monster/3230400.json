@@ -3,7 +3,7 @@
   "mobName": "Drumming Bunny",
   "chineseMobName": "兔子鼓手",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "drops": [
     {
       "itemId": 4000127,

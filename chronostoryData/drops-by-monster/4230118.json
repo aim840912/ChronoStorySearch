@@ -3,7 +3,7 @@
   "mobName": "Ultra Gray",
   "chineseMobName": "葛雷隊長",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "drops": [
     {
       "itemId": 4000119,

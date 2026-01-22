@@ -3,7 +3,7 @@
   "mobName": "Retz",
   "chineseMobName": "發條楓葉鼠",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "drops": [
     {
       "itemId": 4000168,

@@ -3,7 +3,7 @@
   "mobName": "Zeno",
   "chineseMobName": "葛雷金剛",
   "isBoss": true,
-  "inGame": false,
+  "inGame": true,
   "drops": [
     {
       "itemId": 4000117,

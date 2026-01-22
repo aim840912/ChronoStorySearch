@@ -3,7 +3,7 @@
   "mobName": "Chirppy",
   "chineseMobName": "邱布",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "drops": [
     {
       "itemId": 4000003,
