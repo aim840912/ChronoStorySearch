@@ -1,0 +1,37 @@
+{
+  "id": 4000123,
+  "description": {
+    "id": 4000123,
+    "name": "舊的太陽鏡",
+    "description": "因磨損而變舊的太陽鏡，因為太小好像戴不上。",
+    "chineseItemName": "舊的太陽鏡"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACV0lEQVR4nK2WDZGDMBCFk5kzQCVggUqgEjgJIAEkgAQi4ZAAEhoLkVAkcNk9dkkgFHrtm2n5C3kf+xP4Eq9rOrguX5nsDIBn+FNmvB9F28G3qnPHH8LsAfAkbZ5ao8VJdcNTgL5eAM/AhAAmMCV1gxZnRJA0PtqH8UDWAGi+ZzqY8QnCKPI0ZnMcP88zOjAzCEO4AEhYqEGksR9bx/hpTtVgOOTlDEOChxrHEUFcCAKYrETTNHhQVRVDzOZnK5vHNTNMvgKBGnIhOAJS+h5nn/oIhqKSJVFwEAPUdY3bsiz9WaT0cvZfkE6PE0DYLIhGLVEAgInMQZQGAIGcPR4Pcblc3oVAEIBY1xdHYBj++jtNUwah/Q9K2tR6EF4btj+9gNRr/FMIlSSJ6Pte3G63T0RhIw+AzY/1zvsAo1BH8QIAuQaRubHHWVYK3TVBY2hZEt1rjOFz1+s1uOqFtFmK0TyJbdUaQR1cFAV2iVJK3O/3zSSuOQjGANhO2qZ7W9pOUAwgbcFNUPVD8y3Ktkdzktba24KoU0KCwqWokOG8lWvzYATW5vCDQiQp5+aQqJvgnjiORZ7neGxXVzSvGoVvUduSCEUAHAWtCjwRReGVi0y8jpkF6YtNx/BrgTnIDZAbAYTIskys1XV/k8ITcdEFzLF2RCYivUQpBOK+X9YpkNYs1GI42BYbXwuaayOeKfR+CX2QHLYO5BcKFhTnrWdubArd9K06ZDP3qx+lnCYyAUO3J/jLyKaNindOw+lPskMISpML4mquGWmNDxek/wDwhDv14hoepvMXViFfIpIHpMMAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAYAAAAAwr0iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACoElEQVR4nK2WDbGrMBCFw8wzQCVggUqgEngSQAKVABKIhIsEkFAsRAJI4GX3ZrdJSIC+e88MJdCQ87E/wB/xubaT/5NPFrsC4Bh+NSWP03Q/+fEc7PmnMDEAXqSvCm30dpLDdAgwtm/AKzAhgA1MScM0iysiSJqfxmEcEB8AzWOmk1oPEFZRFRmb43yzzmrBGBCGsAGQsJaTKDI3tpbxYU7lpDjkjYEhwU2t64ogNgQBbFqi6zo8eD6fDGHMr1Y2z+sMTOWBQA3ZEByBJHE9rt71GQxFpczT4CQGaNsW903TuKskiZOz/wUZ5nUDCJ0F0cl3FABgI3MQpQFAIGfLsojb7fZTCAQBCL++OALT9N3fRVEwCI1/UYlOrQPhtGH/NQpI/Yw/EqHyPBfjOIrH4/EbUdjJAWDzc/3kfYBRaNPsDQC5BpG50sdl2Yh56ILG0LIkulYpxefu93vwqRfS7lGM5nmmq1YJ6uC6rrFLpJTi9XrtFrHNQTAHwCJp2159oztBMkCiC26Dqp+6v6LpRzQnzfPs7EHUKSFB4VJUyNDsE988GAHfHDYoRJK0Lg6JugmuybJMVFWFx/rpiubPTuJbVLckQhEAR2GWNZ5I0/CTi0ycjjGC9GVqYHhfYA6yA2RHACHKshS+huF7UbgjLrqAOdaOKEU6v6MUArHfL34KEm0WajGcrIuN/wuaz0ocKfR+CX2QnLYO5BcKFpRVvWOudArt9Hkdslv7049SThOZgKHdE/xlpNNGxWvScPmT7Ew3vfgCAxvElqmZmzZeCDy22BFA6u3t8cMYjZFr4f/c7FczXq3tECCNbCEY/4lEi+eB87ApszGED0BmmbW3jeMPh7gO326xCMQuPv4sjo/9LQpAYQrl3YcMwRwBB+H/AZKIeofOnzMeAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": 0,
+      "y": 28,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 0,
+      "y": 28,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

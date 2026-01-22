@@ -2,7 +2,6 @@
   "itemId": 1061024,
   "itemName": "Green Shivermail Skirt",
   "chineseItemName": "綠硬皮裙",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2230102,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

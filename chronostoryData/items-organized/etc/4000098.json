@@ -1,0 +1,37 @@
+{
+  "id": 4000098,
+  "description": {
+    "id": 4000098,
+    "name": "黏稠的蜘蛛網",
+    "description": "黏性很強的黏稠蜘蛛網，比一般蜘蛛網有著更強的附著力。",
+    "chineseItemName": "黏稠的蜘蛛網"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAWCAYAAAA8VJfMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACYElEQVR4nK2VjXGjMBBGlxk3QEogJcglJCVACU4JcglQwqUEu4SkBLuEUEIogdsns4qEZeduxsvYM6Cftz/fShsp27x6r+SBVoLOavHlfdzL2/MwPxK8hgbgApK6F/n2s7zJII+0YnoBqlXTXtPs5eF2BZ3knL5War+ldr4zVlx3BR31+fPl0zqWFkZQWv+zHLNJ26orOryGVkw8zQf5nk/yVG2LURgISPiNWXZkmC4aYJ8SuFTTDFyLywbXoF3Ti2vabNyPXvbHQTp9SuBiy/CnE7OPKLlvfYjiy80BBAClp2ZOOO/kddA9cp+L0BChkx/Pn8+VTJ+X1sGcPgYimtRwKmZjlfJ70AgE5msvB6dOuDao+jgeM5BBiM7MgMxjvAS/grIIMDDSU79ISCe13TX6872U1tjm5pSVYtyG17tCiiICTEqJ0Fqh0Sc12guYqRXDSTMc704d4JtCiu2BiOwIrEMVXUxvCiD9TqM/6LO27twJUz+8qldyURo0O+QxICYiFhJ5SK/0uQPnHwfM+M46xsjEum02BnwaFKCi5DTCe4xaInkgKLbVViByq2+7iI40mwHBgeFFwSJRUKVIAxADaHWyVgHSLuW0dmGeKd0lzdg0l4nBIf1MRpYLJGSUaDeWSqLVwz3Uk5OINL7X+5ABPLW22C1ZAP567MJY2kZTflaEfXdzHy8SjlagVXLGVjYAmGhQI5vu5ZImvqFinKB9UHYQy+oEs72WWyr7vkknpAPmSDh/nQubFzaOhljMSHtyJf56y1x5urppbt6rizqjLeX6p6vtJvx/5927/P8C+mdcSjc7O3MAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAaCAYAAABLlle3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACqElEQVR4nK2V7XWzMAyF5XOyABmBjOCMkIwAI6QjmBFghHaEMELfEcIIZYQwAtU1iMrGkPdHLocE8McjyZJ9oLTG6N3QG5WCjqzl5auv6OPUjO8Ex1APnEGU1URPN9IHNfROJcMLIMsMFYfZ0du1gg7U6VfDehXacactOW4F7fn6/HF6HVMDF5Be/47aoNPZlEmDY6hBx8d4p+f4oKM5J70QECD+7oPoUDNMOYB5UuDUmgbgjGzQGINueU02L4J21zuq2oZKvlLgZMnghzsGH5HJdeG8Fz929CAAkOlaYoR1lq4NzxHanIR6Dy39WX7qDA3/ptKBLF8CgjdaMGqJRhTyPegCBMxlju6WjbCFz+q2bwOQQOCdSIDoh/YUfAXFIIABQ3iyC/lwYm1vOd+uptQYmVyMkqXoz/51N5GWJAIYIYWHUgo5X1ooL8AkWyEYKYLh5aMEeDORlvJAEskWmPlVtEt4NQDht+z9na9YZVcSun47zl4Kk1KgwSYPASJJhIHw3IeX6tCA7s8AEb5jHNoQibhsDgI8NgzgpMRuBOshrCVSHhBkbMGlAM9lfYs56RBmESAwoLkwmGhJqJSnHggBKOskpQJIMS+nlAv6SaZbVYx5PnX0BvFnRGQ+QHxE4e1BQglveXP364mdCGH8yiofAVgqZXGbowD4tS19my6jIdwr/Ly3sV4OEmytgBq1xxppABjeIBsxaUVTmPANWQwjUD7IbJ8s0Q4mc82nVPD9oDvoBjHE77/W+skTEy9CsogQdnUkvjxlVpZGJ81xqzMb9NTv83L919EmytT/ST3nqi3WNbDYmG/YQtOWP6h7Bc02bm1I/Cwaonek1EXB+vkeNFQAufrXgC0P9zSkPqY83RqQnCDRFj/HdwCVELwKY7ZhwJ6RQdsvukh2je7/qYEAAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -2,
+      "y": 26,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 26,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

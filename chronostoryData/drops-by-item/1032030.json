@@ -1,0 +1,19 @@
+{
+  "itemId": 1032030,
+  "itemName": "Sword Earrings",
+  "chineseItemName": "刀劍耳環",
+  "monsters": [
+    {
+      "mobId": 4230120,
+      "mobName": "Plateon",
+      "chineseMobName": "培利堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

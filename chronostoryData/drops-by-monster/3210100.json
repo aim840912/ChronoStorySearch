@@ -4,7 +4,6 @@
   "chineseMobName": "火肥肥",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 29,
   "drops": [
     {
       "itemId": 4000024,
@@ -20,7 +19,7 @@
     {
       "itemId": 0,
       "itemName": "Meso",
-      "chineseItemName": null,
+      "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 76,
@@ -325,5 +324,6 @@
       "questId": 0,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 29
 }

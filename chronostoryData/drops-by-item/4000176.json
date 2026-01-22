@@ -2,7 +2,6 @@
   "itemId": 4000176,
   "itemName": "Poisonous Mushroom",
   "chineseItemName": "毒菇",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6300005,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

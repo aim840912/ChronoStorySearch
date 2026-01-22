@@ -2,7 +2,6 @@
   "itemId": 1072142,
   "itemName": "Purple Goldwind Shoes",
   "chineseItemName": "紫黃金風",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6400000,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

@@ -2,7 +2,6 @@
   "itemId": 1002138,
   "itemName": "Blue Pole-Feather Hat",
   "chineseItemName": "藍羽翼三角帽",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 4130100,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

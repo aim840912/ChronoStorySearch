@@ -1,0 +1,19 @@
+{
+  "itemId": 1032080,
+  "itemName": "1st Uninvited Guest Earring",
+  "chineseItemName": "1st不速之客耳環",
+  "monsters": [
+    {
+      "mobId": 9300476,
+      "mobName": "Zenomega",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

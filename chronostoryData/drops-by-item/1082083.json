@@ -2,7 +2,6 @@
   "itemId": 1082083,
   "itemName": "Dark Willow",
   "chineseItemName": "黑意志手套",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 9500148,
@@ -12,6 +11,28 @@
       "inGame": true,
       "chance": 0.2,
       "displayChance": "0.20%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230308,
+      "mobName": "Tweeter",
+      "chineseMobName": "特威德",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1,
+      "displayChance": "0.10%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -26,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

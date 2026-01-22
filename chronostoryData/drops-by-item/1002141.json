@@ -2,7 +2,6 @@
   "itemId": 1002141,
   "itemName": "Red Matty",
   "chineseItemName": "紅星魔法帽",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3210100,
@@ -14,6 +13,18 @@
       "displayChance": "0.13%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230302,
+      "mobName": "Bloctopus",
+      "chineseMobName": "機器章魚",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

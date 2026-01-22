@@ -2,7 +2,6 @@
   "itemId": 1072194,
   "itemName": "Purple Osfa Boots",
   "chineseItemName": "紫扣帶靴",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8220000,
@@ -14,6 +13,18 @@
       "displayChance": "0.80%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4240000,
+      "mobName": "Chief Gray",
+      "chineseMobName": "葛雷元老",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.16,
+      "displayChance": "0.16%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

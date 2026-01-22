@@ -2,7 +2,6 @@
   "itemId": 1072158,
   "itemName": "Red Lapiz Sandals",
   "chineseItemName": "紅水晶涼鞋",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 6230300,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

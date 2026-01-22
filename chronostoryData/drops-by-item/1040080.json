@@ -2,7 +2,6 @@
   "itemId": 1040080,
   "itemName": "Dark Piette",
   "chineseItemName": "黑貴族之服",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 3220000,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

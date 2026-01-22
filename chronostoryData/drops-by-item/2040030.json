@@ -2,7 +2,6 @@
   "itemId": 2040030,
   "itemName": "Dark Scroll for Helmet for DEX 30%",
   "chineseItemName": "頭盔敏捷詛咒卷軸30%",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8150000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 4
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,8 +2,18 @@
   "itemId": 1092027,
   "itemName": "Silver Kalkan",
   "chineseItemName": "銀圓盾",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 4240000,
+      "mobName": "Chief Gray",
+      "chineseMobName": "葛雷元老",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.16,
+      "displayChance": "0.16%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 8170000,
       "mobName": "Thanatos",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

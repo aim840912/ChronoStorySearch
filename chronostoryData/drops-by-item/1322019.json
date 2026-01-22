@@ -2,11 +2,10 @@
   "itemId": 1322019,
   "itemName": "The Judgement",
   "chineseItemName": "暴風錘",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 6220000,
-      "mobName": "Dyle",
+      "mobName": "Dyle\t",
       "chineseMobName": "沼澤巨鱷",
       "isBoss": true,
       "inGame": true,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

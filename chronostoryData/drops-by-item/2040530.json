@@ -2,8 +2,18 @@
   "itemId": 2040530,
   "itemName": "Scroll for Overall Armor for STR 100%",
   "chineseItemName": "套服力量卷軸100%",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 4230120,
+      "mobName": "Plateon",
+      "chineseMobName": "培利堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 6230400,
       "mobName": "Soul Teddy",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

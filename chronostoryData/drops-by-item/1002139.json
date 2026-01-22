@@ -2,7 +2,6 @@
   "itemId": 1002139,
   "itemName": "Red Pole-Feather Hat",
   "chineseItemName": "紅羽翼三角帽",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3210207,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

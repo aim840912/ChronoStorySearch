@@ -2,13 +2,12 @@
   "itemId": 2043701,
   "itemName": "Scroll for Wand for Magic ATT 60%",
   "chineseItemName": "短杖魔力卷軸60%",
-  "totalMonsters": 13,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.3,
       "displayChance": "0.30%",
@@ -147,5 +146,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 13
 }

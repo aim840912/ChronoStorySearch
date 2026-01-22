@@ -2,8 +2,18 @@
   "itemId": 1072172,
   "itemName": "Green Pirate Boots",
   "chineseItemName": "綠飛影鞋",
-  "totalMonsters": 4,
   "monsters": [
+    {
+      "mobId": 4230116,
+      "mobName": "Barnard Gray",
+      "chineseMobName": "葛雷族人",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 6230601,
       "mobName": "Dark Drake",
@@ -48,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

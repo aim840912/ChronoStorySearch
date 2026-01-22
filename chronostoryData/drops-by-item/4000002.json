@@ -2,7 +2,6 @@
   "itemId": 4000002,
   "itemName": "Pig's Ribbon",
   "chineseItemName": "蝴蝶結",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1210101,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

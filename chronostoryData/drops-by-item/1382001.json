@@ -2,7 +2,6 @@
   "itemId": 1382001,
   "itemName": "Arc Staff",
   "chineseItemName": "精靈長杖",
-  "totalMonsters": 7,
   "monsters": [
     {
       "mobId": 4130100,
@@ -81,5 +80,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 7
 }

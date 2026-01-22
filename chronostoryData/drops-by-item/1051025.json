@@ -2,7 +2,6 @@
   "itemId": 1051025,
   "itemName": "Blue Moonlight",
   "chineseItemName": "藍色月光服",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 6230401,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

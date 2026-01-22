@@ -2,7 +2,6 @@
   "itemId": 1051083,
   "itemName": "Blue Anes",
   "chineseItemName": "藍色高麗貴婦袍",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8141100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

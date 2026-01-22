@@ -2,7 +2,6 @@
   "itemId": 1051007,
   "itemName": "Red Avenger",
   "chineseItemName": "紅飛影甲",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 4230111,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

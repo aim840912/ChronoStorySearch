@@ -2,7 +2,6 @@
   "itemId": 1002029,
   "itemName": "Red Oriental Helmet",
   "chineseItemName": "將軍的紅頭盔",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5140000,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

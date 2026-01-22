@@ -4,7 +4,6 @@
   "chineseMobName": "變形雪吉拉",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 34,
   "drops": [
     {
       "itemId": 4000049,
@@ -20,7 +19,7 @@
     {
       "itemId": 0,
       "itemName": "Meso",
-      "chineseItemName": null,
+      "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 417,
@@ -89,17 +88,6 @@
       "chineseItemName": "鑽石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 4005004,
-      "itemName": "Dark Crystal",
-      "chineseItemName": "黑暗水晶",
-      "chance": 0.3,
-      "displayChance": "0.30%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
@@ -380,5 +368,6 @@
       "questId": 0,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 33
 }

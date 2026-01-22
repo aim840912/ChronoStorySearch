@@ -2,7 +2,6 @@
   "itemId": 1050056,
   "itemName": "Dark Anakamoon",
   "chineseItemName": "黑神聖服",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 6130100,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

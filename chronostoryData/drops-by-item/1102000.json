@@ -2,7 +2,6 @@
   "itemId": 1102000,
   "itemName": "Green Napoleon",
   "chineseItemName": "綠色冒險披風",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 100110,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

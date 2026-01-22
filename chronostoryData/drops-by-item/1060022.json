@@ -2,7 +2,6 @@
   "itemId": 1060022,
   "itemName": "Red Cloth Pants",
   "chineseItemName": "紅夢褲",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 130101,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

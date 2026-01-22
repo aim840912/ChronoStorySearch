@@ -1,0 +1,19 @@
+{
+  "itemId": 1072003,
+  "itemName": "Emerald Battle Grieves",
+  "chineseItemName": "綠鬥士鞋",
+  "monsters": [
+    {
+      "mobId": 3210206,
+      "mobName": "Helly",
+      "chineseMobName": "黃色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

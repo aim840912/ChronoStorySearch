@@ -2,7 +2,6 @@
   "itemId": 4000999,
   "itemName": "Crimson Stirge Wing",
   "chineseItemName": null,
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8148008,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

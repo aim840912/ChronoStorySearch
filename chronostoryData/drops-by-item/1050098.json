@@ -1,0 +1,19 @@
+{
+  "itemId": 1050098,
+  "itemName": "Red Katinas",
+  "chineseItemName": "紅色貓裝",
+  "monsters": [
+    {
+      "mobId": 4230137,
+      "mobName": "White Alien Drone",
+      "chineseMobName": "無人機白",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

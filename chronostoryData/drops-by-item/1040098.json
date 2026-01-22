@@ -2,7 +2,6 @@
   "itemId": 1040098,
   "itemName": "Light Scorpio",
   "chineseItemName": "白飛影之服",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5130103,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

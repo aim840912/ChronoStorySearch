@@ -2,7 +2,6 @@
   "itemId": 4000041,
   "itemName": "Malady's Experimental Frog",
   "chineseItemName": "巫婆的青蛙實驗",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 5300100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

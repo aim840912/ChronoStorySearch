@@ -2,8 +2,18 @@
   "itemId": 1072210,
   "itemName": "Red Rivers Boots",
   "chineseItemName": "紅色水晶靴",
-  "totalMonsters": 3,
   "monsters": [
+    {
+      "mobId": 4230118,
+      "mobName": "Ultra Gray",
+      "chineseMobName": "葛雷隊長",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 7130000,
       "mobName": "Lucida",
@@ -37,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

@@ -2,7 +2,6 @@
   "itemId": 1322015,
   "itemName": "Heavy Hammer",
   "chineseItemName": "鐵釘錘",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3210202,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

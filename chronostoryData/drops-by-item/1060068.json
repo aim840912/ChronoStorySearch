@@ -2,7 +2,6 @@
   "itemId": 1060068,
   "itemName": "Dark Piette Pants",
   "chineseItemName": "黑貴族褲",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 3230102,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

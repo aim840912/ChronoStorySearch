@@ -1,0 +1,19 @@
+{
+  "itemId": 4000121,
+  "itemName": "Plateon's Helmet",
+  "chineseItemName": "培利堤安的頭盔",
+  "monsters": [
+    {
+      "mobId": 4230120,
+      "mobName": "Plateon",
+      "chineseMobName": "培利堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

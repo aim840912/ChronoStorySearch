@@ -1,0 +1,19 @@
+{
+  "itemId": 2040900,
+  "itemName": "Scroll for Shield for Defense 100%",
+  "chineseItemName": "盾牌防禦卷軸100%",
+  "monsters": [
+    {
+      "mobId": 2230103,
+      "mobName": "Trixter",
+      "chineseMobName": "黃蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

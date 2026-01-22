@@ -1,0 +1,19 @@
+{
+  "itemId": 1082080,
+  "itemName": "Dark Penance",
+  "chineseItemName": "黑元素手套",
+  "monsters": [
+    {
+      "mobId": 3230303,
+      "mobName": "Propelly",
+      "chineseMobName": "粉紅色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

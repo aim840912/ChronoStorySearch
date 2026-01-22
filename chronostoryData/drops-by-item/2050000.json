@@ -2,7 +2,6 @@
   "itemId": 2050000,
   "itemName": "Antidote",
   "chineseItemName": "解毒劑",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 5300001,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

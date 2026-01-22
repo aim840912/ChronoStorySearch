@@ -2,7 +2,6 @@
   "itemId": 2020015,
   "itemName": "Sunset Dew",
   "chineseItemName": "黃昏之露",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 7130010,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

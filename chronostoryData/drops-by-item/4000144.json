@@ -2,7 +2,6 @@
   "itemId": 4000144,
   "itemName": "Free Spirit",
   "chineseItemName": "自由之靈",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6230500,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

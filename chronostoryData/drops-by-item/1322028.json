@@ -2,7 +2,6 @@
   "itemId": 1322028,
   "itemName": "Heaven's Justice",
   "chineseItemName": "釘頭錘",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8141000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

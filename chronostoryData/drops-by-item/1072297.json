@@ -2,7 +2,6 @@
   "itemId": 1072297,
   "itemName": "Brown Locote Shoes",
   "chineseItemName": "褐色洛卡特鞋",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3210207,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

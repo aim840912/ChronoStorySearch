@@ -2,7 +2,6 @@
   "itemId": 1072164,
   "itemName": "Blue Elf Shoes",
   "chineseItemName": "藍箭魂鞋",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 6230200,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

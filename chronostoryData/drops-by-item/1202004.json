@@ -2,7 +2,6 @@
   "itemId": 1202004,
   "itemName": "Blaze Capsule",
   "chineseItemName": "火炎膠囊",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 6300005,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

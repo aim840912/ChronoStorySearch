@@ -1,0 +1,39 @@
+{
+  "id": 4031013,
+  "description": {
+    "id": 4031013,
+    "name": "黑珠",
+    "description": "用怪物的邪惡的心做成的珠子。",
+    "chineseItemName": "黑珠"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABqElEQVR4nH2UDbXDIAyF03OegVhgEpgEKqEaJm4WagELWIiEviQQftv1HMYK4ePmEvoHv5/rYXx7WvAEVFAIYZkgAojxtI0W8AysIOfcBCJtgADOeyWnlBZwD7wEhIjgeYH0PUjekwBTApJxbohON6AM3haFssjUSaOsQkGUBKpBINpT2UzJNylfBjJovwmdkf/kxVSUyy8hlRhXVS4KLdXhQahKOIL/kvbDRKewemeeSZo1ZRoX1LdhX/b9OCB+v9eg0GBqeIzDuB3EInnK7LYO2Q+AqhiAhrSojle4AOEGaCVjJ9szBKpw6hLH7Kmq6xVaEEGrO5q965RSiQ7hUI7Mefb82xQKACFyeSRMZbPmOhmKrLdGOV1princYoyXnmpOgEsOc93NzpnKMiXWSJmH4OGz7zLU6lBj+DZIsWI2p3e3aaXuVIvn3rd7b8BNKl2DCKdTte3KDZlggdv+eimjBxYh2MqrMbpp8yvf9UOv6xjUA7dyH/PnqSrKKZvx9uGQU31nZVXdqrBMJD4k6cNxFFVOYV4/Hg729wp6Ag6BJ9/NX/N3zz91COZfCjIYagAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACAklEQVR4nJ2WjXHDIAyF5bssoI5ARnBHwCN4hg6XFbICK7CCRnCRQBgIGLfcEWx+9PEkgfOAe+UY9C8318MMJABr7ccAEYBzb93AFDgCZYAxpgGQVEAAs65C9N5PgT3QwQBEhDUY4rYE8LtnkPdA3B8qohEwRWAX1lXExlQNV4q7FgB5hskkYK0+bUKIF6UFHQpQWAmntwsP0SglpfxLSGmOGaoaKlKX1QOQdx5mhEeSthq4oSjHhou6K7uOakP5rdpPiOu+g3u9PlR1FSlEAu1c1a8J8CERLjwBk3MU/A2QFQJQ5R7K/RnKIPgDSFNbM620zTCB0gkTBiQ1dxTpYnFPOjfUxqZQRmm2tbvY57E1xPQ1V8SGEVxIY48+bQ7L0YggbbVSdBtXM1e0OOcOybLoiHBkMJ6baiuQXaieYxfz8bV2hZ9tE1sTRWltOP18CDE6vyiYZ0URZ1w4putqYFRa0MInWxYTNlmm20g3QgOxoW7PZ1dNV1Gych6P03YxrPGId+Eu11Y/NlegJd1X8TOQFchvDrheuJxl31HJUM1YUVrgQ3Jwa/c9qTACWeXSNbB9zwEzUGXgHe+u4fidcvc/w9eg/yowVSa1IGzaUd+slKkkVUE4qCNoz2ivnyt/hP2jMGqK9r9KhvBS0WjS1aeTLp6r+oBT3sxFo+/11cby8y/v3gBmPbTXtQAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -4,
+      "y": 26,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -6,
+      "y": 26,
+      "isEmpty": false
+    },
+    "slotMax": 30,
+    "price": 1,
+    "tradeBlock": true,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Quest Item",
+    "lowItemId": 4030000,
+    "highItemId": 4040000
+  }
+}

@@ -2,7 +2,6 @@
   "itemId": 1202002,
   "itemName": "Mighty Bullet",
   "chineseItemName": "強力子彈",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 4230102,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

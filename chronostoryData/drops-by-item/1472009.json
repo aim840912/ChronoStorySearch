@@ -2,7 +2,6 @@
   "itemId": 1472009,
   "itemName": "Mithril Guards",
   "chineseItemName": "鋰礦鬥拳",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 2230102,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

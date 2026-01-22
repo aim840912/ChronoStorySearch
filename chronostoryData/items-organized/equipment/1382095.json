@@ -1,0 +1,55 @@
+{
+  "id": 1382095,
+  "description": {
+    "id": 1382095,
+    "name": "1st不速之客長杖",
+    "description": "",
+    "chineseItemName": "1st不速之客長杖"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 49,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACUAAAAmCAYAAABDClKtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADR0lEQVR4nMWYjZWiMBSFH+dsA9MClhBKwBK0BCghliAlQAlDCVKClGBKGErIvpsfAi6szhicew4jJghf3m+YP7S1tP7gv/4YKEnUo59sC2WBBB8pVU1NstjzGMCG34EKQAcGKtxoygcs9Qao4KKpUg90k4J2VU8L12wEpXXqAFLycWM/BQMdADTREvwGUHhI1VxmI7LoeCzX0npNUe9nQNjzQtT/4ioG1MAQJ4Y4X2RuBvYM5CcB9MFGvEliF/K4LGxMad2vgcWBwrPZOoC5yQN5OD9pY5vIxhYHvbPgGtjrULgp3EHGR3nKdlGMkrN1kqqZXQqoCVhPK5kYqyQM05uPQIitiXYTt7q6lS3dLHqdanjxZdWNwT6bDJCwEM43iykiH1esKdAnxxbyf2/HGnNd1Uh3vloa4kD5uJJFRbY+5fWYiZ23ULCKjalqDSym+2xcTYCOc6CxcF55PrMWU7wY/1v7yQvcpPfhCaeluLoLfEJOhC4AAVJtv3VhIbaM1Zwm0Y1ucJ5dzBkZsyH7/kf5XahMgRZ/zsXUlRDEWdSGnHsowVCSrVPZthKIXEY+0BC9IRfcZqAz+DyY0z8ZyXNffH1P42a0jwU1NmQAHZix5KGmao1bznz0/L1zkXScAKFHYs5BwnUqVvaZwpkKgeWmrQPCg5P7ig5NCusQIFFMO3IF+BUoU2B4ZYirncrFiR9ybqsmdfP9QgnwCWGAygDUmuvdjuGnUPozF3S4XPlWHd8ruTFY1ncdXFlSaDv3vQ1AZt++BvQKlAFq9xmlYvRQqvL8NMIsbeDwJuNl4dU90E+hNGsEatsOA7DWJ5/sV4Gg0CMz8m0pwiZPX69XABDcB6BGFNS14/zjt5UtXkaFEFTXNR3L0g6okvq2hP2s6x68aD6j10oCZx2FVytFRA+t8Iy+A2ViqWkaKq2VElcOrGUiWOg7UNoRzYG8IsI8AzXCQItAG2kNSrs0NzDQu4DmUHZPBHd8yVSYSn2VkjKfZW8CClB+T5QkF1jotMs4zTtSDIZ6dOx6eqf+jLtGBsKAdxeAIAf0NitZKCvjuo9DTYq3pSKlqXXeCmShfD/SuhySpDabZPU7MAHKyv97xjbKJ/rTlvoLbejL0rraBOQAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACUAAAAmCAYAAABDClKtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADhUlEQVR4nMWYjZGqMBCAl5lr4K6EWEIoAUvQEqCEWIKUACVICVKClGBKkBLydpMsRB4Id8LdzqCYBPJlfxM/YGsx5hM/+WohivTcI9tCOSCJl4C8LECle2wjsPZvoHqgAwKlvlXgRZr6BajeRKEIBrorCbu8gZExG0EZIzyAAPYb9y0R6EBAgYzBbwBFk+Tl9alFpTW2JUY5q2louIcIG1yIfuVXa0C1CHFCiPNVJbZhj0DcSUCfqMS7AjQhtqvU+ZQxzRTYOlA0N2qHYO7qAAzHnc63AZxvodN7DU6BvQ9FLyVzgLVRIlAvGlES1E6Ul09DCSoAa2AiEtdKCW348g6IfCuQXWBWn7fisZetnqdKXHyW152zP3X2kKQhut/MpwDYr1BCoAv6FsX/3rWVdlxeKn8/mRrWgWK/UmkOLj8lRReJNWuo14rzqXwKbE3zOb8KgI7PQF3ivGF/7DSmcTH8rPvGBW5S+2iG05hfDRwfKCb6KkBCkHr7rQsK+ZbVmpfAu6kanJ8GY0SuWZC5/kEycJUQaPRxTKY+hZCfrVqQE4aSCKVQO7krKz2Rj8gZaVcvyCmWGZIz8TGYl/8iEvseOL6BbjParAXVFWQCOiBjhk1lXlmznPFq8HftPekYAFGNpD4PSabTa0WfTZxCSlquqDwQTRwNMzpJkFjbHpKSaQ0+Ab8DZRMMroz8aqcTecJJzlVeCt/fjKQADggLlPVAlR3vdww/hTKXRMLhesNX1fiu6I5gcVPXZMoM+rIzrG0EZPftU0DvQFmgah+DkJ2FhE6SUwcztoGjkwyLg9dDoJ9CGZQOqKpqaiBtXfBmPwlE0tfIGLgsrbDJM7fbjQCAzEdApUyhrrr++dPKFodRKSUURQHHLHMNOoOmykh/znQzB80l8l5KwKiD/milAWBWC0vkO1DWl8qyhMxpKbLp4PFoXawhzz5+W0tLoYwnegZi+foKxy46AcMbx/YOhiQAYpOFEEthQqAWBgeOOSjjw9zCkHggCnk5ATMGNqURhmE/nMhTbk9EIftQQtpMfVMKYo4yLFMeKAT4jobmQAdQvCeKoitp6LSLMcxr0AhG+ehYd/8FDF/4aoL2xf3wGkDxrhGBqIHNRUAkHmgXPDOmnXCf/Qq6fdEXQAUTfR4K0LgtlQJC7UTwy/LR1SNjsjaKCrtJ1n8D00M54b9nXKFcUJ+2lH9BNudJMG7ahQAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": 2,
+      "y": 35,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 2,
+      "y": 35,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 11000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 2,
+    "reqLevelEquip": 49,
+    "tuc": 7,
+    "incINT": 5,
+    "incPAD": 44,
+    "incMAD": 65,
+    "attack": 6,
+    "attackSpeed": 8,
+    "vslots": [
+      "Wp"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "Staff",
+    "lowItemId": 1380000,
+    "highItemId": 1390000
+  }
+}

@@ -2,7 +2,6 @@
   "itemId": 1002038,
   "itemName": "Brown Jester",
   "chineseItemName": "褐色術士帽",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 2110200,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

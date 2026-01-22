@@ -2,7 +2,6 @@
   "itemId": 1072085,
   "itemName": "Red Lappy Boots",
   "chineseItemName": "紅追擊鞋",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 2130100,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

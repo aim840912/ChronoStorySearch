@@ -2,7 +2,6 @@
   "itemId": 1050022,
   "itemName": "Dark Crusader Chainmail",
   "chineseItemName": "黑十字鎖子甲",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3230101,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

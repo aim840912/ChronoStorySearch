@@ -2,7 +2,6 @@
   "itemId": 1203008,
   "itemName": "Tobi Throwing-Stars",
   "chineseItemName": "梅之鏢",
-  "totalMonsters": 10,
   "monsters": [
     {
       "mobId": 4230115,
@@ -61,7 +60,7 @@
     },
     {
       "mobId": 8140100,
-      "mobName": "Dark Yeti and Pepe",
+      "mobName": "Dark Yeti & Pepe",
       "chineseMobName": "黑吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -114,5 +113,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 10
 }

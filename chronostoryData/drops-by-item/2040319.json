@@ -2,8 +2,18 @@
   "itemId": 2040319,
   "itemName": "Scroll for Earring for LUK 100%",
   "chineseItemName": "耳環幸運卷軸100%",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 2230103,
+      "mobName": "Trixter",
+      "chineseMobName": "黃蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 4230106,
       "mobName": "Lunar Pixie",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

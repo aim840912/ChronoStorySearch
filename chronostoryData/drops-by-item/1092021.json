@@ -2,8 +2,18 @@
   "itemId": 1092021,
   "itemName": "Mystic Shield",
   "chineseItemName": "神祕護盾",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 3230303,
+      "mobName": "Propelly",
+      "chineseMobName": "粉紅色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 3230306,
       "mobName": "Chronos",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

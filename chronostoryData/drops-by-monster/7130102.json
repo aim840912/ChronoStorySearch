@@ -1,15 +1,14 @@
 {
   "mobId": 7130102,
-  "mobName": "Yeti and Pepe",
+  "mobName": "Yeti & Pepe",
   "chineseMobName": "雪吉拉戰車",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 57,
   "drops": [
     {
       "itemId": 0,
       "itemName": "Meso",
-      "chineseItemName": null,
+      "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 391,
@@ -633,5 +632,6 @@
       "questId": 0,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 57
 }

@@ -1,0 +1,19 @@
+{
+  "itemId": 4000124,
+  "itemName": "Rombot's Memory Card",
+  "chineseItemName": "泥人領導者的記憶卡",
+  "monsters": [
+    {
+      "mobId": 4130103,
+      "mobName": "Rombot",
+      "chineseMobName": "泥人領導者",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

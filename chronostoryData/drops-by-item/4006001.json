@@ -2,7 +2,6 @@
   "itemId": 4006001,
   "itemName": "The Summoning Rock",
   "chineseItemName": "召喚石",
-  "totalMonsters": 28,
   "monsters": [
     {
       "mobId": 2130100,
@@ -32,6 +31,17 @@
       "chineseMobName": "紅螃蟹",
       "isBoss": false,
       "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230400,
+      "mobName": "Drumming Bunny",
+      "chineseMobName": "兔子鼓手",
+      "isBoss": false,
+      "inGame": false,
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -82,11 +92,33 @@
       "maxQty": 1
     },
     {
+      "mobId": 4230120,
+      "mobName": "Plateon",
+      "chineseMobName": "培利堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230126,
       "mobName": "Mummydog",
       "chineseMobName": "木乃伊犬",
       "isBoss": false,
       "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4240000,
+      "mobName": "Chief Gray",
+      "chineseMobName": "葛雷元老",
+      "isBoss": false,
+      "inGame": false,
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -312,5 +344,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 31
 }

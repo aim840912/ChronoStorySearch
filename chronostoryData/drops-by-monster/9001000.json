@@ -1,10 +1,9 @@
 {
   "mobId": 9001000,
   "mobName": "Dances with Balrog's Clone",
-  "chineseMobName": null,
-  "isBoss": true,
+  "chineseMobName": "鎧長的分身",
+  "isBoss": false,
   "inGame": true,
-  "totalDrops": 1,
   "drops": [
     {
       "itemId": 4031059,
@@ -17,5 +16,6 @@
       "questId": 0,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 1
 }

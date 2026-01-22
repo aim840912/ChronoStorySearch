@@ -1,0 +1,37 @@
+{
+  "id": 4000116,
+  "description": {
+    "id": 4000116,
+    "name": "鳥蛋",
+    "description": "小鳥的蛋，要小心防止弄破。",
+    "chineseItemName": "鳥蛋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAaCAYAAABLlle3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACgElEQVR4nKWWjZGCMBCF1xkboIW0kBbSAlcClKAlaAlQgpQgJRwl3LZACbndxRdjBG9Od8Yx/O23P28De3ptceXcjj60LajBYvyxg/P5nC4cjz0CeRu+Bo3Xa0chhHTCe2//0zTR4RDkONDX1zG+Cy6hBlRjZnJOwWwBjONo55umETjT5XJ6G7xaXudcfpTA+mOe6FPLoVF7iIyWLMmApXnvLNuua6ht+39n+5Rp3ss1GwYE5ehdAzRCqXd7zhAqnme2TBXcNIH6fkS2ayNGVFQiZaq9cs7TBxZPp8YWrnL34ESQt6AS/KG8ORi9zcVT1+GhvNJPW18vi+Kn233oua3lvuCXIMaJrSIKjSr/HAzH5khmU2GwpZdOx4V+vi/kbIYd8YRgqnRvJRkPwyD/lWQ9p/P7xbE+ECzCV4boS6DBZMNwngW+PVK3SsVU3hyclxFZ5kDt3SDlP/hcA8/CUwvBS6umtFa/TyMD5xgJHJfmpfejOAhZ6ZFl+YzCVFAwgzLPklFNfxmyNMfSe5+pXYEDNpbqdZv2iETlXb24Wa/DIWMtokF2AM6S0SSl1pcCnlmD7nQr0y1NlaZWZl0+XG/sWjOvQ9agS6Q34ai8Fa7Zw1QIkPyyG9GT0jWQvl/mtsxS+8nSZ0wNoLtx5BiCS84hBl6JHuDSFIbrJbByDontcvUaWBddd8gAuVvOznMKCLASuGXlyNje2LbnrY2b2mNvm/zM92iYH9sBw5jUTa0+k/+tb6RX70cLCG1QDWzBtuyvr8HVgPStodku4phl+3MJxNhcbkLT76s8y3ehD+DceMp7vsx/CfwEmsC6gPBy0alSodbywU+gyeGG8DZ18QsITn3QYZh9WwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACyUlEQVR4nKWWj7GiMBDG44wNcCWkhVwJuRJ4JWAJWoKWICVICVLCUcLbEi4l5HYXNq4hwXm6M0gIsL/98yWyN9sWC3M786HVoAyL8ZsvLpdLunE69RLI2/ASNN7vV+O9TxPOOT5P02SOR4/X3nx9neK74BzKQDIAMNYSGDiAcRx5vus6hIO53c5vg4vltdbqqwSmA2Ayn5qGRuqhZDRnaRiYm3OWs71eO3M49D/OdpWp7mXJhkGCsuZdE2gUpT5snaGoOATgTAncdd70/SjZlpaYMVklUqbUK2ud+cDi+dzxwDb2ERwKcgkqwZ/Kq8HSWy2etvVP5cV+8vh+mxU/Lc9Jz3mMz3k3BzFOwBUhaCT5a7A4Zke4NgkmNvfS0nIx339vxvIatgYmCaZJzzaY8TAMeG4w65Dm97NjesFzhFsm0edAhuGGYR0gvL6klkrFVF4N1mWULDWQejdg+Y9Oa2AtPDLvHbZqSmPyu1oy4lyWhFzn5rD3IzrwqvSSZf4OwUhQYgwFCJhRa16ZZMmOsfdOqZ2Ag2wszXab9hIJybvZeJjui0OQMYpGshNgwIwmLDX9Kcg7JeiOtjLa0khpZHnW+cttZdcKUIaUoHOki3BI3gSn7MVICCL5eTcyK6VTIH0/r9s8S+onYJ9l1Qh0N44QvbfJuYgBCtELODeCyf0c2Fgrie20ehlMg+v1qADaLah5SAEJLAfWLF8yvDceDpfaxm0Op543+QCPaACe2yEmy6TtWvKZ/Ne+kbb+HzkgaQNpoAar2auvwWJA9K9B2c7iCLj92QQC2VwWodH3lc7yXegTWBtMuufz+s+BP4XmdfyF4H80EOFp0ZFSRa25oxK0yc61ObI/9IPZ3At+fi9nqnNYjhW0qRy1ALSdCnNewWA5goYKwKqzBpRAryzUbuSZ1l6oOsju5eP8eIJKCV6VsakEsBXk6vn/w/iV8Y+XNuYAAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -2,
+      "y": 30,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 30,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

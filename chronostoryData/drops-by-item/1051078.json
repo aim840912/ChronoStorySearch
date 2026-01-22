@@ -2,7 +2,6 @@
   "itemId": 1051078,
   "itemName": "Red Battle Empress",
   "chineseItemName": "紅白銀鎧甲",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 7130010,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

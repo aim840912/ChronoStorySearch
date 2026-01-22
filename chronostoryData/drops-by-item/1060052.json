@@ -2,8 +2,18 @@
   "itemId": 1060052,
   "itemName": "Black Knucklevest Pants",
   "chineseItemName": "黑暗影之褲",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 4130103,
+      "mobName": "Rombot",
+      "chineseMobName": "泥人領導者",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 3230100,
       "mobName": "Curse Eye",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

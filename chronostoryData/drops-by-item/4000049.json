@@ -2,7 +2,6 @@
   "itemId": 4000049,
   "itemName": "Yeti Horn",
   "chineseItemName": "雪吉拉之角",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 6300000,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

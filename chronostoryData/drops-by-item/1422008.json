@@ -2,8 +2,18 @@
   "itemId": 1422008,
   "itemName": "Sledgehammer",
   "chineseItemName": "大錘",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 3230308,
+      "mobName": "Tweeter",
+      "chineseMobName": "特威德",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 5140000,
       "mobName": "White Fang",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

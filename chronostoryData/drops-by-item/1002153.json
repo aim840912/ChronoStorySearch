@@ -2,7 +2,6 @@
   "itemId": 1002153,
   "itemName": "Red Guiltian",
   "chineseItemName": "紅魔道之帽",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 3210203,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

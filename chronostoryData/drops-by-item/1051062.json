@@ -2,8 +2,18 @@
   "itemId": 1051062,
   "itemName": "Blue Lineros",
   "chineseItemName": "藍飄雲之衣",
-  "totalMonsters": 5,
   "monsters": [
+    {
+      "mobId": 4230120,
+      "mobName": "Plateon",
+      "chineseMobName": "培利堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 6300000,
       "mobName": "Yeti",
@@ -59,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

@@ -2,7 +2,6 @@
   "itemId": 1040111,
   "itemName": "Green Commodore",
   "chineseItemName": "綠色崇高服",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8142000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 1041047,
   "itemName": "Red Steal",
   "chineseItemName": "紅寂靜之服",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 5200001,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

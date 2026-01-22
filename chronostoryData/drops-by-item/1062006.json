@@ -2,7 +2,6 @@
   "itemId": 1062006,
   "itemName": "Bennis Chainpants",
   "chineseItemName": "打獵褲",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 2230100,
@@ -10,6 +9,17 @@
       "chineseMobName": "火獨眼獸",
       "isBoss": false,
       "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230400,
+      "mobName": "Drumming Bunny",
+      "chineseMobName": "兔子鼓手",
+      "isBoss": false,
+      "inGame": false,
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

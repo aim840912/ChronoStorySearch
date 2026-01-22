@@ -2,13 +2,12 @@
   "itemId": 1041060,
   "itemName": "Gold Sneak",
   "chineseItemName": "綠敏捷之服",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.8,
       "displayChance": "0.80%",
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

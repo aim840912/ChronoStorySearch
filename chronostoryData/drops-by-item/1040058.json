@@ -2,7 +2,6 @@
   "itemId": 1040058,
   "itemName": "Dark Silver Stealer",
   "chineseItemName": "黑銀寂靜之服",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3000005,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

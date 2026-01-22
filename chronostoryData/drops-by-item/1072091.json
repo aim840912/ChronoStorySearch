@@ -2,7 +2,6 @@
   "itemId": 1072091,
   "itemName": "Black Salt Shoes",
   "chineseItemName": "黑守護鞋",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3210100,
@@ -14,6 +13,18 @@
       "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230303,
+      "mobName": "Propelly",
+      "chineseMobName": "粉紅色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

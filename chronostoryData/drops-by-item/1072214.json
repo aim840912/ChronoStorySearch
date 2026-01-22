@@ -1,0 +1,19 @@
+{
+  "itemId": 1072214,
+  "itemName": "Blue Katina Boots ",
+  "chineseItemName": "藍色蒂娜長靴",
+  "monsters": [
+    {
+      "mobId": 4230137,
+      "mobName": "White Alien Drone",
+      "chineseMobName": "無人機白",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

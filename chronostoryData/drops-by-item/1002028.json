@@ -2,7 +2,6 @@
   "itemId": 1002028,
   "itemName": "Silver Crusader Helm",
   "chineseItemName": "銀製十字軍帽子",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 5120001,
@@ -17,7 +16,7 @@
     },
     {
       "mobId": 7130102,
-      "mobName": "Yeti and Pepe",
+      "mobName": "Yeti & Pepe",
       "chineseMobName": "雪吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

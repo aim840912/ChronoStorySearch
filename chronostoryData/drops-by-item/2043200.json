@@ -2,7 +2,6 @@
   "itemId": 2043200,
   "itemName": "Scroll for One-Handed BW for ATT 100%",
   "chineseItemName": "單手棍攻擊卷軸100%",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3110101,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 1061009,
   "itemName": "Green Avelin Skirt",
   "chineseItemName": "綠色旅行裙",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 120100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

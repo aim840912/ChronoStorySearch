@@ -2,7 +2,6 @@
   "itemId": 1002152,
   "itemName": "Blue Guiltian",
   "chineseItemName": "藍魔道之帽",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3230200,
@@ -14,6 +13,18 @@
       "displayChance": "0.13%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230307,
+      "mobName": "Chirppy",
+      "chineseMobName": "邱布",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

@@ -1,0 +1,37 @@
+{
+  "id": 4000121,
+  "description": {
+    "id": 4000121,
+    "name": "培利堤安的頭盔",
+    "description": "培利堤安曾經用過的宇宙頭盔，裡面有黏稠的液體。",
+    "chineseItemName": "培利堤安的頭盔"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAZCAYAAAAmNZ4aAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADFUlEQVR4nLWWjZGjMAyFlZltwCnBlAAlsCWQEkgJpIRQAi5hU0IoAUrAJcQlcJL8g52Y5OZuVjMMNmB/erIs8wXWVtjsAL9jCYPA67IsIKUErTUURbH+AnxF4/mNMVBV1cqKqUMP/8Hz2N4666HzPHOfwdQpy/KvoPfpAd5ZvjuHz+fvt5GKoR58OJ/PrGIYBpimiUMRTRIUTouFVsUxmXQY7nw5uLcwnuYkKHLCu6/4I3KA4HR5Z7qfhxYgzOV0KPtLD921Cw440axG9T23624ZWZ2qgpgIGiLiwcETDydruwH601FieEMCKHUDIQTDfJh92MkE6HpU3zxW9VbhMzQHDvCm6QL8uzrKZXnoojhK6udsHBU03R1uvYWS0Rw56B54LevWKkFFAreZF7M8EH48yswYhsbmo0FzzaN6Sbxn8NpeJ1CXCherBYkhpXBNuM8JDBhRVG40RnnWAu862QoEIwcUqia1mtYaIyGb+6hvadbnFEM7LKDOBVDyOygyjYUTn5sG3RIoS1DXvpRQI3tEeE0hJ5PNz5hjxOC1QbXGzg7XH6xmAiA88KoMu4A0AW4nR+/ESH2NdwTGr6Bsp9Fl+mFXMTgJdOmUy2qdYhcBXgL72PihPgZPXu8ofmaj525mP947ZCIxti3ClrKOGb84wrv3Fuy+pCGCQhnBYJv3qW18lxbfj9DRjPjilZyAraPCifOaRPp+UwlJVDe5FHppGyFeL7JTMHrv82lrpAGJSSbbDqPtHgg8k8wWgw+zOq0lZaP/1C2yHxuva3AjzGfSjwRV1jJIwIymzv4+NpyihgNkj8pcZhq3nIk7kTGVDgdMuqT6ZRWzan3DOs3lz7yqicD7ZqFkZVmzz7dLRQ8+lMy2w98gDbOW6HG26GQcEOG2ZbDAOl1ibbtx5FD955JJ1tS0j5vRxOp2hIrsZqWCquo9519CrVS/XvE8pn+krpG1xAIssHZKFz7N5zCVxfQfTevtt4aTEm12J5T75fl8Hl/wPPZwzLKR6ub89BE6UMd9D+N2tHNy0D1wgLt2Df9n2R/AP9Gr5gy2R5/gAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADVklEQVR4nLWWjZGjMAyFlZltwJRgSoASSAlsCaQEUkIoIS5hU0IoAUrAJcQlcJL8E5uY5OZuVjMMNmB/erIs8wXWVnjaAX7HEgaB12VZQEoJWmsoy3L9BfiKxvMbY6Cu65UVU4ce/oPnsb111kPneeY+g6lTVdVfQe/TA7yzfHcOn07Ht5GKoR58OJ1OrOJ6vcI0TRyKaJKgcFostC6LZNLr9c6Xg3sL42lOgiInvPuKPyIHCE6Xd6b/eWgBwpy/D9VwHqC/9MEBJ5rVqGHgdtMvI6tTdRATQUNEPDh44uFkXX+F4buQGN6QAErdQAjBMB9mH3YyAboZ1ZHHqsEq3EJz4ABv2z7Aj3Uhl+Why7KQ1M/ZOCpo+zvcBgslozly0D3wWjWdVYKKBG4zL2Z5ILwoZGYMQ2Pz0aC55lG9JN4WvHaXCdS5xsXqQGJIKVwT7nMCA0YUlRuNUZ61wLtOtgLByAGFqkmtprXGSMj2PupbmvU5xdBdF1CnEij5HRSZxsKJz02DbgmUJahrX0pokD0ivKGQk8n2Z8wxYvDaolpjZ4fLD1YzARAeeFWGXUCaALeTo3dipL7GOwLjV1B10+gy/bCrGJwEunTKZbVOsYsAL4F9bPxQH4ON1zuKt2z03M3sx3uHTCTGtkXYUtYx4xdHePfegt2XNERQKCMYPOfdtI3v0uL7ETqaEV+8khOwdVQ4cV6TSN8/VUIS1adcCr20jRCvF9kpGL33+fRspAGJSSbbDqPtHgg8k8wWgw+z+l4rykb/qVtkPzZe1+BGmM+kHwmqrFWQgBlNnf19bDhFDQfIHpW5zDRuORN3ImMqHQ6YdEn1yypm1fqGdZrLn3lVE4H3zULJqqphn2/nmh58KJldj79BGmYt0eNs0ck4IMLtmcEC63SFte3GkUP1n0smWdvQPm5HE6vbESqym5UKqmr2nH8JtVLDesHzmP6R+lY2EguwwNopXfg0n8NUFtN/NK2fvzWclGizO6HcL8/n8/iM57GHY5aNVDfnzUfoQBP3PYzb0c7JQffAZAXCH67dwP8ZnrFUUEL5z4JFdB2jNkC6iLnKv5fqfk9qd5kt2ENkdI8h+WPmve3uu5zivUHvNq95095eL+Dc8ZtTmaniHx19+f4P95L9gyl4Rd8AAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -1,
+      "y": 29,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 29,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

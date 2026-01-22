@@ -1,0 +1,19 @@
+{
+  "itemId": 1472011,
+  "itemName": "Bronze Guardian",
+  "chineseItemName": "青銅守護拳套",
+  "monsters": [
+    {
+      "mobId": 3230103,
+      "mobName": "King Bloctopus",
+      "chineseMobName": "機器章魚王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

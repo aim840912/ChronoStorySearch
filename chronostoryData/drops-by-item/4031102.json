@@ -1,0 +1,19 @@
+{
+  "itemId": 4031102,
+  "itemName": "Note",
+  "chineseItemName": "記事本",
+  "monsters": [
+    {
+      "mobId": 4240000,
+      "mobName": "Chief Gray",
+      "chineseMobName": "葛雷元老",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 10,
+      "displayChance": "10.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

@@ -2,7 +2,6 @@
   "itemId": 2040337,
   "itemName": "Dark Scroll for Accessory for STR 70%",
   "chineseItemName": "飾品力量詛咒卷軸70%",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 7130101,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

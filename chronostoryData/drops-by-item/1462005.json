@@ -2,7 +2,6 @@
   "itemId": 1462005,
   "itemName": "Heckler",
   "chineseItemName": "雙弦弩",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3210100,
@@ -25,6 +24,18 @@
       "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

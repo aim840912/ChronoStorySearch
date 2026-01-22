@@ -2,7 +2,6 @@
   "itemId": 2041014,
   "itemName": "Scroll for Cape for STR 10%",
   "chineseItemName": "披風力量卷軸10%",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 4130102,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

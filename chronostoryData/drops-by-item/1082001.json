@@ -2,18 +2,18 @@
   "itemId": 1082001,
   "itemName": "White Fingerless Gloves",
   "chineseItemName": "白紋短手套",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

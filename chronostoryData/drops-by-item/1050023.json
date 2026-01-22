@@ -1,0 +1,19 @@
+{
+  "itemId": 1050023,
+  "itemName": "Blue Doros Robe",
+  "chineseItemName": "藍魔者之袍",
+  "monsters": [
+    {
+      "mobId": 2230103,
+      "mobName": "Trixter",
+      "chineseMobName": "黃蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

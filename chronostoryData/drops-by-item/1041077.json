@@ -2,7 +2,6 @@
   "itemId": 1041077,
   "itemName": "Maroon Moon",
   "chineseItemName": "紫月",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5130100,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

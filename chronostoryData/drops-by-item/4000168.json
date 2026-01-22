@@ -1,0 +1,19 @@
+{
+  "itemId": 4000168,
+  "itemName": "Sunflower Seed",
+  "chineseItemName": "向日葵子",
+  "monsters": [
+    {
+      "mobId": 3210208,
+      "mobName": "Retz",
+      "chineseMobName": "發條楓葉鼠",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

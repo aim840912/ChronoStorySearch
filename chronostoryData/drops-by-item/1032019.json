@@ -2,7 +2,6 @@
   "itemId": 1032019,
   "itemName": "Crystal Flower Earrings",
   "chineseItemName": "水仙耳環",
-  "totalMonsters": 7,
   "monsters": [
     {
       "mobId": 6130101,
@@ -81,5 +80,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 7
 }

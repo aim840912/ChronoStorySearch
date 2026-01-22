@@ -2,8 +2,18 @@
   "itemId": 1072167,
   "itemName": "Dark Elf Shoes",
   "chineseItemName": "黑箭魂鞋",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 4230119,
+      "mobName": "Mateon",
+      "chineseMobName": "馬堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 7130101,
       "mobName": "Taurospear",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

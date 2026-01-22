@@ -2,7 +2,6 @@
   "itemId": 1072106,
   "itemName": "Blue White-Lined Boots",
   "chineseItemName": "藍楊柳鞋",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3230200,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

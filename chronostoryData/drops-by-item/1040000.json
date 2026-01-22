@@ -2,8 +2,18 @@
   "itemId": 1040000,
   "itemName": "Yellow Jangoon Armor",
   "chineseItemName": "黃金鎧甲",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 3210206,
+      "mobName": "Helly",
+      "chineseMobName": "黃色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 4230101,
       "mobName": "Zombie Lupin",
@@ -14,6 +24,18 @@
       "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

@@ -2,7 +2,6 @@
   "itemId": 1050060,
   "itemName": "Red Tai",
   "chineseItemName": "赤旋風甲",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 6230100,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

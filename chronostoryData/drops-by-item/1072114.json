@@ -2,7 +2,6 @@
   "itemId": 1072114,
   "itemName": "Red Moon Shoes",
   "chineseItemName": "紅月鞋",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 3230101,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

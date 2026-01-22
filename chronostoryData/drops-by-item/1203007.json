@@ -2,7 +2,6 @@
   "itemId": 1203007,
   "itemName": "Icicle",
   "chineseItemName": "冰柱",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 4230100,
@@ -28,7 +27,7 @@
     },
     {
       "mobId": 7130102,
-      "mobName": "Yeti and Pepe",
+      "mobName": "Yeti & Pepe",
       "chineseMobName": "雪吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

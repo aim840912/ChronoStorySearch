@@ -2,7 +2,6 @@
   "itemId": 1072149,
   "itemName": "Blood Camel Boots",
   "chineseItemName": "紅十字鞋",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6230400,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

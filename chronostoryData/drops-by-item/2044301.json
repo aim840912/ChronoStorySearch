@@ -2,7 +2,6 @@
   "itemId": 2044301,
   "itemName": "Scroll for Spear for ATT 60%",
   "chineseItemName": "槍攻擊卷軸60%",
-  "totalMonsters": 9,
   "monsters": [
     {
       "mobId": 5220003,
@@ -10,6 +9,17 @@
       "chineseMobName": "咕咕鐘",
       "isBoss": true,
       "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6220001,
+      "mobName": "Zeno",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": true,
+      "inGame": false,
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -71,6 +81,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230125,
       "mobName": "Skeledog",
       "chineseMobName": "骷髏犬",
@@ -103,5 +124,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 11
 }

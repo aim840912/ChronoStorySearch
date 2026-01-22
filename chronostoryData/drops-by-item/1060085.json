@@ -2,7 +2,6 @@
   "itemId": 1060085,
   "itemName": "Brown China Pants",
   "chineseItemName": "黃陽褲",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 9500148,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

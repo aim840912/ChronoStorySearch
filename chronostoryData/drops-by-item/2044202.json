@@ -2,7 +2,6 @@
   "itemId": 2044202,
   "itemName": "Scroll for Two-Handed BW for ATT 10%",
   "chineseItemName": "雙手棍攻擊卷軸10%",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 8150000,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

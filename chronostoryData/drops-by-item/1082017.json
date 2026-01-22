@@ -1,0 +1,19 @@
+{
+  "itemId": 1082017,
+  "itemName": "Red Savata",
+  "chineseItemName": "紅命中手套",
+  "monsters": [
+    {
+      "mobId": 2230103,
+      "mobName": "Trixter",
+      "chineseMobName": "黃蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

@@ -2,7 +2,6 @@
   "itemId": 2002003,
   "itemName": "Wizard Potion",
   "chineseItemName": "強效魔力水",
-  "totalMonsters": 7,
   "monsters": [
     {
       "mobId": 5220002,
@@ -81,5 +80,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 7
 }

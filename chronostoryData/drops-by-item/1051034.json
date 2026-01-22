@@ -2,7 +2,6 @@
   "itemId": 1051034,
   "itemName": "Orange Calaf",
   "chineseItemName": "朱紅妖精禮服",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 9834178,
@@ -61,7 +60,7 @@
     },
     {
       "mobId": 8140100,
-      "mobName": "Dark Yeti and Pepe",
+      "mobName": "Dark Yeti & Pepe",
       "chineseMobName": "黑吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

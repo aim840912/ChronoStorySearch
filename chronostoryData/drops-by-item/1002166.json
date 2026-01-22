@@ -2,7 +2,6 @@
   "itemId": 1002166,
   "itemName": "Red Distinction",
   "chineseItemName": "紅羽絲絨帽",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 2230102,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

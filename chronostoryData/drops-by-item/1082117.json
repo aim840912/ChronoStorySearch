@@ -2,7 +2,6 @@
   "itemId": 1082117,
   "itemName": "Dark Emperor",
   "chineseItemName": "馬爾斯黑拳套",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 8140500,
@@ -25,6 +24,18 @@
       "displayChance": "0.10%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230117,
+      "mobName": "Zeta Gray",
+      "chineseMobName": "葛雷士兵",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

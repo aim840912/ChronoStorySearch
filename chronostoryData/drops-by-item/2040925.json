@@ -2,8 +2,18 @@
   "itemId": 2040925,
   "itemName": "Scroll for Shield for LUK 10%",
   "chineseItemName": "盾牌幸運卷軸10%",
-  "totalMonsters": 4,
   "monsters": [
+    {
+      "mobId": 6220001,
+      "mobName": "Zeno",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 5120003,
       "mobName": "Grupin",
@@ -48,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

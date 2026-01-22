@@ -2,8 +2,18 @@
   "itemId": 1082081,
   "itemName": "Red Pennance",
   "chineseItemName": "紅元素手套",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 5120002,
       "mobName": "Lioner",
@@ -17,7 +27,7 @@
     },
     {
       "mobId": 7130102,
-      "mobName": "Yeti and Pepe",
+      "mobName": "Yeti & Pepe",
       "chineseMobName": "雪吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

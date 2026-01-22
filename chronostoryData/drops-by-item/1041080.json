@@ -2,8 +2,18 @@
   "itemId": 1041080,
   "itemName": "Red Moon",
   "chineseItemName": "赤月",
-  "totalMonsters": 4,
   "monsters": [
+    {
+      "mobId": 4130103,
+      "mobName": "Rombot",
+      "chineseMobName": "泥人領導者",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 4,
+      "displayChance": "4.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 9500148,
       "mobName": "Tortice",
@@ -48,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

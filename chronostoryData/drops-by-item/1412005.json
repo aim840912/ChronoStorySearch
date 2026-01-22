@@ -2,7 +2,6 @@
   "itemId": 1412005,
   "itemName": "Sabretooth",
   "chineseItemName": "格鬥斧",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 2230102,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

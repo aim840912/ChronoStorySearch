@@ -2,7 +2,6 @@
   "itemId": 1092026,
   "itemName": "Bronze Kalkan",
   "chineseItemName": "青銅圓盾",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 8160000,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

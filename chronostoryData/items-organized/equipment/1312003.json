@@ -1,0 +1,53 @@
+{
+  "id": 1312003,
+  "description": {
+    "id": 1312003,
+    "name": "鋰狂斧",
+    "description": "",
+    "chineseItemName": "鋰狂斧"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAhCAYAAADOHBvaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACDUlEQVR4nL3WgXWDIBAA0OO9LpCMQEfAEZIRyAjJCDpCHCGOEEaoIzQjlBHiCJQ7hUdUDImae69NsMrngMN+wWfDdJ/sUzCB97uB7ZZR+xOwy5JQh68Nm+PxCJvNBsqy9DisPNWEVlVFjTzPQSkFWmtqrwX7TF0EKFsLnsqUuZuWhp9mugaclOnScHKmIWxgOhgkRGqmIQzGGHuzfvgDPqxUkWKa4ERKQj08IwitqtpfSEE93DRtA0d7ueRQ1xqklN21wkQ68mhR7JOwARwGorsdf4bPQkfhJzjFXHQAI4LTjZ99HJcAMaWq2aiH3Y68Xv9GcSzPsmw3kBC72aiDfQeHw7fp4yHq3ixLRH+NWYhLyQdoY0tACAm3m4rt9rdgj+OhMoZqfQPOBcIwJ6IHyBSKIeU53OmLlBPV6H5/oI00hrpAXGtls7/Fzvvps9qB+MvVqJRH2r1t50PUBefSDrB9M+HsYNnZodpK2cJUOJjWNMsOlKlDccQ4ndhpHOb+uxCC0PD1+AxmNsz5/EMHRK9OGU51XZcmz6/+Qcwu7B8HgCD+2L7C5ydhutGChI/tWMTD7PB7071dXIZCbPy11Iwf8Mho2emU2Rr/hX7fnONSQHK2Y/DkQ5ilEJxgnGpsI+rWNRWNwdGwZdMh7bS20aafZVky+ips6/s+uPhqpu/AgwhqdZl/BBKgt0EX/9KkYe98p51qAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAhCAYAAADOHBvaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQklEQVR4nL2VjXGDMAyFxV0XICO4I5gRkhGcEZIRYIQwQhkhjFBGaEaoR4ARXEsgn8L/lRDdOY4B+9OTLPsD3muu66N3gQlY1w4Oh4jG7wCzSoIyfG+wu1wuEMcx5Hke4LBzqAlaFAUN0jSFsizBWkvjvcBBKZuARnuB55RG/NGrwYtK9wCvUvpq8GqlEuxg3iJYYWuVSjA45/zH9ukFTi7LbA3TiRNpFTSANxhBi6IKD9ZAA7hp2gF6+/WVQlVZMMZ0zzI3sVCAZtlpFWwAlobQ41EtwTdBR8ELcLKt0AEYIRhu7PtwTAHCyrLYDA1g3pH3++8oHMszz9sNpPVxM5TBYYHz+dP14RLKN8srrJ/jSMKNUQNo40tAawOPRzm12/8FDnA8VMag1j5AKY1g2GKTB8gcFM2Ym9zpLyknqtHT6UwbaQzKhnBrS6/+MXXez5/VDMQfrlFjLrR728WHUDaljHewvZkwOlh23lVfKQeYMwZTTpPkTEoZih5jOHHRabAK/7XWBJXX4xI48uZut286IHp1GmGoqyp3aXoPE1GdXB8dQCA2v5acPwumDz2Q4GM7FuFSHf5vutuFFWodh2drFT/BJ7yNrtfE1/gP9NdWClMBUi0mmOMx6sloHYtJMlkxqtRaERhDjWOEcl47KOaJN0Qj+kaMB+B4otE7XzYdpA2rXDtJEuwyAQXxATbbtaYPZogSvVSd1nXdj45UmvciJBUPbEzx4iQ2UavXiXnNSBuAORxPeZ0AsSUzjjYz7+APt+h6hwA/KnEAAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -1,
+      "y": 33,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 33,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 1600,
+    "reqSTR": 80,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incPAD": 42,
+    "attack": 1,
+    "attackSpeed": 5,
+    "vslots": [
+      "Wp"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Axe",
+    "lowItemId": 1310000,
+    "highItemId": 1320000
+  }
+}

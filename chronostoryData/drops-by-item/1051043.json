@@ -2,7 +2,6 @@
   "itemId": 1051043,
   "itemName": "Brown Choro",
   "chineseItemName": "黃草露",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5130108,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

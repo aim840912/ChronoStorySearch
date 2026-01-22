@@ -2,7 +2,6 @@
   "itemId": 2044601,
   "itemName": "Scroll for Crossbow for ATT 60%",
   "chineseItemName": "弩攻擊卷軸60%",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 5220002,
@@ -17,7 +16,7 @@
     },
     {
       "mobId": 6220000,
-      "mobName": "Dyle",
+      "mobName": "Dyle\t",
       "chineseMobName": "沼澤巨鱷",
       "isBoss": true,
       "inGame": true,
@@ -49,6 +48,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 5120100,
+      "mobName": "MT-09",
+      "chineseMobName": "機器人堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5130101,
       "mobName": "Stone Golem",
       "chineseMobName": "石巨人",
@@ -70,5 +80,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 7
 }

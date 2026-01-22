@@ -1,0 +1,19 @@
+{
+  "itemId": 1382008,
+  "itemName": "Kage",
+  "chineseItemName": "魔靈之魂",
+  "monsters": [
+    {
+      "mobId": 5120100,
+      "mobName": "MT-09",
+      "chineseMobName": "機器人堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

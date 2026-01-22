@@ -2,8 +2,18 @@
   "itemId": 2043112,
   "itemName": "Scroll for One-Handed Axe for Accuracy 60%",
   "chineseItemName": "單手斧命中卷軸60%",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 2230104,
+      "mobName": "Green Trixter",
+      "chineseMobName": "紅蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 2300100,
       "mobName": "Stirge",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

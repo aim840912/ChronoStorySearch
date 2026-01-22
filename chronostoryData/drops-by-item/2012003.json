@@ -2,7 +2,6 @@
   "itemId": 2012003,
   "itemName": "Drake's Meat",
   "chineseItemName": "暴龍之肉",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 4130100,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

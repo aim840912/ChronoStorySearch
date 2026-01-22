@@ -2,7 +2,6 @@
   "itemId": 1002269,
   "itemName": "White Polyfeather Hat",
   "chineseItemName": "白弓羽",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 5130107,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

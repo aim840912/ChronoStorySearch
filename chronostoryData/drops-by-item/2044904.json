@@ -2,7 +2,6 @@
   "itemId": 2044904,
   "itemName": "Dark Scroll for Gun for ATT 30%",
   "chineseItemName": "火槍攻擊詛咒卷軸30%",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5220003,
@@ -27,6 +26,17 @@
       "maxQty": 4
     },
     {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 6230400,
       "mobName": "Soul Teddy",
       "chineseMobName": "幽魂發條熊",
@@ -37,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

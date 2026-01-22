@@ -2,7 +2,6 @@
   "itemId": 1382018,
   "itemName": "Petal Staff",
   "chineseItemName": "翡赤之杖",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3000000,
@@ -14,6 +13,29 @@
       "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3210208,
+      "mobName": "Retz",
+      "chineseMobName": "發條楓葉鼠",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

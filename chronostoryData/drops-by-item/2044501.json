@@ -2,7 +2,6 @@
   "itemId": 2044501,
   "itemName": "Scroll for Bow for ATT 60%",
   "chineseItemName": "弓攻擊卷軸60%",
-  "totalMonsters": 9,
   "monsters": [
     {
       "mobId": 6300005,
@@ -23,6 +22,17 @@
       "inGame": true,
       "chance": 0.3,
       "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8645263,
+      "mobName": "Turbo Robo",
+      "chineseMobName": "守護者機器人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -82,6 +92,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 3210208,
+      "mobName": "Retz",
+      "chineseMobName": "發條楓葉鼠",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5130101,
       "mobName": "Stone Golem",
       "chineseMobName": "石巨人",
@@ -91,17 +112,7 @@
       "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1
-    },
-    {
-      "mobId": 8645263,
-      "mobName": "Turbo Robo",
-      "chineseMobName": null,
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.1,
-      "displayChance": "0.10%",
-      "minQty": 1,
-      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 10
 }

@@ -2,7 +2,6 @@
   "itemId": 1322026,
   "itemName": "Colorful Tube",
   "chineseItemName": "彩虹游泳圈",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6230300,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

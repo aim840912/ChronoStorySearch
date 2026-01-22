@@ -1,0 +1,19 @@
+{
+  "itemId": 1061034,
+  "itemName": "Purple Fairy Skirt",
+  "chineseItemName": "紫色妖精裙",
+  "monsters": [
+    {
+      "mobId": 2230104,
+      "mobName": "Green Trixter",
+      "chineseMobName": "紅蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

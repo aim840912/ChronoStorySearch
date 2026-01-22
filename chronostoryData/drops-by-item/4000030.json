@@ -2,7 +2,6 @@
   "itemId": 4000030,
   "itemName": "Dragon Skin",
   "chineseItemName": "龍皮",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 4130100,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

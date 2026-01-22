@@ -2,7 +2,6 @@
   "itemId": 1472024,
   "itemName": "Sapphire Gigantic",
   "chineseItemName": "藍寶戰神拳套",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 6230400,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

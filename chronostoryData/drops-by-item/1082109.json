@@ -2,7 +2,6 @@
   "itemId": 1082109,
   "itemName": "Red Cordon",
   "chineseItemName": "紅天使手套",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6230601,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

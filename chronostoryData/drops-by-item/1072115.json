@@ -2,7 +2,6 @@
   "itemId": 1072115,
   "itemName": "Blue Moon Shoes",
   "chineseItemName": "藍月鞋",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3210203,
@@ -10,6 +9,17 @@
       "chineseMobName": "發條貓熊",
       "isBoss": false,
       "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230308,
+      "mobName": "Tweeter",
+      "chineseMobName": "特威德",
+      "isBoss": false,
+      "inGame": false,
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

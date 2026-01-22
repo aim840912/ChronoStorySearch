@@ -1,0 +1,58 @@
+{
+  "id": 1032080,
+  "description": {
+    "id": 1032080,
+    "name": "1st不速之客耳環",
+    "description": "",
+    "chineseItemName": "1st不速之客耳環"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 47,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEBUlEQVR4nJ1Xi3WjMBBcv+cGSAlcCUoJSglQAi7BlIBLMCVACacSrBKiEkwJ3M4iyUJg+xLlKcboMzuzH8lHetPKeS74Q3EvktcTd+sOh4l+2VbAT0AUA5x3DLpwt781IgJ70IY36PJJ966jQpVEulpemJEOiTHeCPMTA4456P1+J2NsnGAuLTlriWFZhnEB5z7/HejUXmROvxhx/okBx3egOltw+vyMz9duIX3lPllHHz8wAIxVClrXXzIwDH9XEyE1GBpm/81sY/PyF2zhzHP+14AjJYEEUJ44yvPhUEFO24+kmiqCDlUlm4vPRZbx4Xv+fGJAy71PwffSafSfFTYqeQOA9gBVipxzMlh6FSJ41jAGw70Bnc8AswEuimKzmCM3Pt+YaQANLWUOZepxpDADbzXveR2uESJd+7KAyGJmCYkhN/HmAI+slZLPEN2uiyBiQI8HP5a3PWDsJr4YAksG+PNV0/c8IxAicAi4vmpgId0VaKm1KmfF6SaZoBBowc/HADJNk0QyB9U5BBhYOt5YUorBIf3M4Mr7FMa4242pl3QvnICm3ta0pOZ9vkmg+Qg3Adgi6j58Svm28oeuEGRWAgzgZZAT0r4BzRTQCDKwPuIfQp27RF9QKAWFpHXbCiDARGiWNgWdGCgvNilozlp8nICHsoUVkk4okyIp2DHYoB6bVXHq1rdpg1HJuLCOweWdLvr7Mir5+QrUslEl/70CTVvK+mU6ARQucJd+9T6ALtXAUfOGMVrGutgAJ2cyuaYhON2ECrUBJQ/t/On1HBxzVDK+m8dy8CNN+n7xI1cgyIxnHCF6Z5GTkHNPpTeBzR6wZ7vZdykMXELtEnum5Cn+edbaGzPKwmcGWK4TaZLmjIWtZr8a+ziXQ7p0ytE4OcZ8bHgwRsBH1mOBDNns2BDIW8W5Ez32zK8+wlaLD9lr7OPD6bQwu14liMRqZVfggKric0UhFB3v0vjIV+yu+omPI9twMoJhy+BMXwwA+FkqlC/8FnW8pGcNnHsG77ZDU3rnEraNWM+1QyXgiIxSrdh/qgsLpwS8Luwqx830uGxo3Ax4ZsOsW5RbvpXgRWAc2QbJ4BtL2QHP4GAY2H9piNGLIj0D832F+akEtJB3WZQvtdp/KQLbOOpztTU8pAphdjsXJNc/DqZwSQiBaLjI1OdGgIZCiZ/T/fK2W7kA+mlLnJXBRtK8aQsZPaCXDN/lqonjEmn1YZcdtJc+KKCTiE6BBaH3HV4eVBKpWi5/KaDcHP13PGtc8AcEpr+xhPZIpnVRCcByJpvkV4ShdUsBs6uqwWnDfar9esjfRJbKM4vGxBtIfixub31vfh9l6zXkNzvzQI68UrvH4m9aWO/Zmx0CK+P/ARmjelod4c8KAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEV0lEQVR4nJ1Xi3WrOhCUz3EDSgmkBLkEpQQoAZcAJdglmBKgBKsEq4SoBFQCb3b1sQA7ebnKIcZI7OzMfiQfxS+jWhaJD4VLFo89LusOBy/+cayA34AoAHQvHLrisv/qRAaOoC0MXLaL5stFSFUJoevwwEziUDgTnTB/ceC4BZ3nWRhj8wJz7YWzVgAWMkwBHNdyH8W5v/KaITjR/cWB42+gevPC+XTK97dLIH3D5a0TH39wgBirErRpvnhiHO+rhSQ1MTRg/w22eUT5JTxcsOb/OnAURSIRKBZOfH841CSnHSah2jqDjnXNxjnmLMv0jD0+3zjQ4xpK8FflNMXPmgxVMECgA4EqJZxzPFlFFTL4ZtAcOR4duMQKMDtgKeXuZWRuvn+AaQJNo2ROyjTTJNIKeqph8zbeMkT57o8NhF8GS5KY5BYwTuCZtVL8mbLbXTIIOzDQTZzbjlfAZI1jMSaWAPj8asT3slAiZOCUcEPdkodiVkRLrVXpFMqNK0FRoqU4HxOI954zGUnVpQQjlg6GuaQATtIvAFcxpuSMezxAvRKzdAxaRluLUJrz8uBEixluErClrPuIJRXHKh66piSznGAEXiU5SdpfQDcKaEoyYn2kf5TquDj7kkIlKEna9D0DEhgLDWlLUA+gbbMpQbesOcYFeGpb9AaXE7VJlpTYAWxUT2N1XrqPbTnIqWKeWefkikFn/WMb5fr8CdTCqQp/P4GWo2T9YzkRKIXAXYfV8wQauoET7S+MaWxYyx1wsScL17aCgm5Sh9qBigjt4u71HpzWqGL+ZR3zxk9lMgwhjuhAJDPd0xaiX7zkOOXcW+lNYvMKOLLd2Q2NAS3UhtwzFZbE+0Xr6MzEL75zwKJPlEW6ZcxsNeJq7HNfTuVyUU5M3gHzafBgDINP0CNApmp2cITkrfNaL542t0cfZqs5hogaYnw4nwOz242TiL1WdgVOUHW+r0VKRQcrbcx8hXA1b2Kc2aadkRj2AAd9doDAO+5QsfFb6uOVeDeI8wDwy37Kl2cuZtuy9+gdqgCnzKjUiv1JXSGcYvBG2lWNG/88bGg6GWBlC9Y9tVucSuhBYpzZJskoNlZsNniAE8PE/kuTGAMrMgAY5xXwUwWo5GebLA+9On6RiW2ejbXaG0wpycwenRR8/EMypUNCSkSDJtN0LQONUnGcS3uFyox1LL+UoCdb0V6ZfBQaRnuSMQJW3w+WA99ZJNouqaw+bLCgo/RJAV1kdAEcNpwhXhTlURWZqvnwF6S5j/DLOPfV8DuybZHIuoICaqTEjCeWNJ7FtG4qAdg5W83fV1P8OjBiPeQ4ojom58+9x3qSglXyw+DpXCwRczjH1kn+NrMMgLmGfSAZtsXPk5eXbmDjfNSC9OFcIqNj3vcZcD9ofhic7Doja61AQJsXy6plxs8Sb5+MCaK/Eugk1qeP/dEzPNs7YNEUSWLvpbzflaxkWJdPrzgxYIX7/OR3/wMalpGpyijZxgAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 7000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 47,
+    "tuc": 5,
+    "incSTR": 1,
+    "incDEX": 1,
+    "incINT": 1,
+    "incLUK": 1,
+    "incMHP": 10,
+    "incMMP": 10,
+    "incPDD": 15,
+    "incMDD": 15,
+    "vslots": [
+      "Ae"
+    ],
+    "islots": [
+      "Ae"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Earrings",
+    "lowItemId": 1030000,
+    "highItemId": 1040000
+  }
+}

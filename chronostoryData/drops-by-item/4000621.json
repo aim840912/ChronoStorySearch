@@ -2,7 +2,6 @@
   "itemId": 4000621,
   "itemName": "Dark Eye Tail",
   "chineseItemName": "爍展艾伊的尾巴",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2230113,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

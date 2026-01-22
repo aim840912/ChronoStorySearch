@@ -1,0 +1,38 @@
+{
+  "id": 4031926,
+  "description": {
+    "id": 4031926,
+    "name": "葛雷的觸角",
+    "description": "葛雷頭上的觸角，據說葛雷可以用觸腳發送超音波來和對方進行對話。",
+    "chineseItemName": "葛雷的觸角"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAZCAYAAADAHFVeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABUklEQVR4nNWUgXGDMAxF1TsWECPACGWWjtCu0BGaEZIR2hU6QhghHsEaIbWwZRRqcwRD7qI7Hz7Z56dvfVxBYSDiNZUnopdprgjGoNShugi9XqwsFwLRBa2GzamaQmXvbspS8RCYqHsOZboXu8M0UOa7wjRkicrNerbkWjc1SA6Y/c9Sb909JsgVwd8IE4i13yFzAjA9kDHQvi03wdx1VgKy9qzSxo13gOYECASXIzkoQHe4z+pJmI9msmR8DmEchVF5VcfEEsPJTwOIFbYf69UFZb0brwFgwpJRc7iBzsWc/T2MfnlXAEr8BBh5gW5gA0UxwNhx6MwQe0Q0ggwM5vBl5w9a8mx5WE+D6wBNbJMvYmRqk6z9Fyve1H3i9fJFt5WH2xMQuhuua4RtrI8BoJRJG4deFfYrwrhatjTP7Zn+9aZufaL02YrK5KC62/5tlPgD1uTKpcitUwAAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABmUlEQVR4nNWVgXHDIAxF1TsvII+AR6hHaFfoCM0KHaEdIRmhXaEjxCOEEdAICRhhYwzEDnbvqjvuFAnz9EGQCgoNEa+xOBE9xeJFQANLLewKCfPFClPmQGFRDwNz6kKwP3c3hSn7E6Cv8v8oDM9md6APdf7uQB+0VO1mZ7h0izdtmhQ0ew9jb+Paxsh9PwAdSKlvjpwAZAckJTRvyxvj3tZWDqbU2QtLPd4BxAkQCC5H0mCA9mv9NYgCrYkgJW0MYRwbWGXVHSMpUwBZl2FGaXMoU8kKOz2eGSI5JT0fJuCc3bsaFki/ZiZDnf0wkKxQPVBAsfVA04moG2Q4M6IRJqFvGFt+eqGlT5wFdtR3I6Acjs0WMnL9xim5q5WZ2H7g9fJJUwW8kw6GerfrGmG7a4EM8RS6Y+3PTkxmrjHyf9gt1VWbdje+OtNsybqxAT2vhWlnLYWRG4NC3iqsW1Szr4gOYMt44VBMJUHcHKzvCP/x7ttCL/7KvvDiAh57a2ZFhP8WQdvkP07kQn8yqiApA2hMFSbguQIH/wbLPOrE7dzPTgAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -2,
+      "y": 28,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 28,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 1,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Quest Item",
+    "lowItemId": 4030000,
+    "highItemId": 4040000
+  }
+}

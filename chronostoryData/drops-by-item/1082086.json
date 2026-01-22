@@ -2,7 +2,6 @@
   "itemId": 1082086,
   "itemName": "Steel Manute",
   "chineseItemName": "鋼鐵封印手套",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 5120000,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

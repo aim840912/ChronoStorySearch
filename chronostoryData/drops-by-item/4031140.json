@@ -1,0 +1,19 @@
+{
+  "itemId": 4031140,
+  "itemName": "Dull Crystal",
+  "chineseItemName": "暗沉水晶",
+  "monsters": [
+    {
+      "mobId": 3230400,
+      "mobName": "Drumming Bunny",
+      "chineseMobName": "兔子鼓手",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 10,
+      "displayChance": "10.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

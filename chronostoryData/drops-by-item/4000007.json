@@ -2,7 +2,6 @@
   "itemId": 4000007,
   "itemName": "Evil Eye Tail",
   "chineseItemName": "火獨眼獸之尾巴",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2230100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

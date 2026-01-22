@@ -2,8 +2,18 @@
   "itemId": 1041120,
   "itemName": "Purple Valkyrie",
   "chineseItemName": "紫貴族鎧甲",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 4240000,
+      "mobName": "Chief Gray",
+      "chineseMobName": "葛雷元老",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.16,
+      "displayChance": "0.16%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 8160000,
       "mobName": "Gatekeeper",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

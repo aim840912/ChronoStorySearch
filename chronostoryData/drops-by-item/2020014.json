@@ -2,13 +2,12 @@
   "itemId": 2020014,
   "itemName": "Sunrise Dew",
   "chineseItemName": "清晨之露",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 20,
       "displayChance": "20.0%",
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

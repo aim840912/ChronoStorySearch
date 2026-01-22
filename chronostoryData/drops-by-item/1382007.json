@@ -2,7 +2,6 @@
   "itemId": 1382007,
   "itemName": "Evil Wings",
   "chineseItemName": "魔靈之翼",
-  "totalMonsters": 8,
   "monsters": [
     {
       "mobId": 5220003,
@@ -92,5 +91,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 8
 }

@@ -2,7 +2,6 @@
   "itemId": 1492004,
   "itemName": "Cold Mind",
   "chineseItemName": "冷酷之心",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3210201,
@@ -25,6 +24,18 @@
       "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230400,
+      "mobName": "Drumming Bunny",
+      "chineseMobName": "兔子鼓手",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

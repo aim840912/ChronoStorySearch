@@ -2,7 +2,6 @@
   "itemId": 4000128,
   "itemName": "Buffy Hat",
   "chineseItemName": "小丑柏非帽",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6130200,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

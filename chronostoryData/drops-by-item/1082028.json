@@ -2,13 +2,12 @@
   "itemId": 1082028,
   "itemName": "Dark Mesana",
   "chineseItemName": "黑賢者手套",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 1,
       "displayChance": "1.0%",
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

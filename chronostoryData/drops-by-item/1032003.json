@@ -2,7 +2,6 @@
   "itemId": 1032003,
   "itemName": "Amethyst Earrings",
   "chineseItemName": "紫水晶耳環",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 130101,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

@@ -4,7 +4,6 @@
   "chineseMobName": "巴洛古",
   "isBoss": true,
   "inGame": true,
-  "totalDrops": 42,
   "drops": [
     {
       "itemId": 2000004,
@@ -31,7 +30,7 @@
     {
       "itemId": 0,
       "itemName": "Meso",
-      "chineseItemName": null,
+      "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 1621,
@@ -51,17 +50,6 @@
       "enabled": true
     },
     {
-      "itemId": 1092009,
-      "itemName": "Wooden Legend Shield",
-      "chineseItemName": "古老木盾",
-      "chance": 4,
-      "displayChance": "4.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
       "itemId": 2000006,
       "itemName": "Mana Elixir",
       "chineseItemName": "活力藥水",
@@ -69,6 +57,17 @@
       "displayChance": "4.0%",
       "minQty": 1,
       "maxQty": 4,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1092009,
+      "itemName": "Wooden Legend Shield",
+      "chineseItemName": "古老木盾",
+      "chance": 4,
+      "displayChance": "4.0%",
+      "minQty": 1,
+      "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
@@ -468,5 +467,6 @@
       "questId": 0,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 42
 }

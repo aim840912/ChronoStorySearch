@@ -2,7 +2,6 @@
   "itemId": 1041032,
   "itemName": "Green Bennis Chainmail",
   "chineseItemName": "綠打獵服",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2230100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

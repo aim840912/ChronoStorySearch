@@ -2,7 +2,6 @@
   "itemId": 4000079,
   "itemName": "Cerebes Tooth",
   "chineseItemName": "地獄獵犬的尖牙",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 7130001,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

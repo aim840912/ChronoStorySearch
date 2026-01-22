@@ -2,7 +2,6 @@
   "itemId": 1322009,
   "itemName": "Plunger",
   "chineseItemName": "通通樂",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 9308021,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

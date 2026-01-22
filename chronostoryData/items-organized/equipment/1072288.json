@@ -1,0 +1,52 @@
+{
+  "id": 1072288,
+  "description": {
+    "id": 1072288,
+    "name": "褐色防滑涼鞋",
+    "description": "",
+    "chineseItemName": "褐色防滑涼鞋"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 20,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAcCAYAAACUJBTQAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB/klEQVR4nJ2WjbWDIAyF9Zwu4AqswAqu4ApdoSv0jdCu4AquwAqu4Ag+buRioGixOad/AfJxQ4K9Nb/Zaq1tlmWJjnme8dGWJl+FSHCYcy4ZgN/71hLoCiQH6GDr2cJaSExPIS1r3/dJ6n6ByC6/AVT6PlJWna4MIOAM0DYHabt88HgbhkGgfCk4QYmaGogsRGAaAqv0FMtWW62SdhzHUiraA1+i5kq64nmEnsjHD8v4Up/wSwYQ/33ok8ld1zV/b1HfVvcJKgkLaT594s+Dl6yqT6wxzYJKUg2HQkD5jpNrht5+LMLY4z6ImjPIVq4+gPEQ2la2vjemSX5jDCBrtzkmqIXq9zgVlcS8M7BDwHnfLfwYIgyf8Dk3CwhqoRwAgKBIQ6Rq9K4pG4bd4jvOIDSgn+uDuA2EgABhnADaTQOyJksm8oJEgD6kBkq4W5oG8DaISjiRudUmZ+DhWAylk9+xURvQMZgJfd1UlTDSQhgVIvcEmfB731R6W39AusIOd9ieIg2f5NBt6cJMIK0flMZigNJDaDvuXQ2Cw84AGrK+no8ksFZEv2TbbuXK8W8AQtbn4x7km6ICXUEAuQCuAUQlvvXlCsgVaBX0s4trARGCyw+gMwMMIP2HogYQIbhReeEdKaGx22sBhMiTrPAQKhohtQBCZAFKuHJNdXDaPzXoZdkL0u43AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAfCAYAAAASsGZ+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACL0lEQVR4nJ2WgZWDIAyG8T0XcAU7Ait4I7hCV+gKvRGuK7iCK7CCKziCxx8JBoyKzXt3tQHy8YcEW5vvbLHWmnmeo2OaJnxU2uS7EAoOc84lA/B736KB7kBygAy2nC0shcT0KGlZuq5LUvcNhHZ5BRDp26WsOF0ZgMAZoDIHabt98PjX9z1B+U/AGZSoKYHQQgRmQ2CRHrVspZUqqYZh0FJRHfgSNXfSFc8j9EQ+fljGt/qEHzIA+Z99l0xumsb8fkh9VdwnqCQsZPPpI38eXLOiPrFta2ZUkmg4FALKdxid6Tu7W4Sx17MnNWeQtVx9gNZD2Nay9b0xjvQdYwBZu85pg1qo/gyjqiTmnQM7BJy23cKPIYbhEz7nJgJBLZQDABAUSQhVjdw1y4Zht3jGGYQG9HN9ELeCEBAgjDOArZaArMmSiXxBIkAXUgMlvFs2CeDbICrhiZxbaXQGHo7FUDr6HbdiAzIGZ0JeN0UljLQwjBUi9wxqw/dtU+ltvYM0yg432JYiCR/p0K12YSaQyg9SY3EA7SW0HvemBsFhZwAJWf7erySwVMR+yrZdy5XHrwAMWd6vZ5DfqgpkBQHkArgEEJX41qcrIFcgVbCfu7gUECG4/AA6M8AAkj8oSgARghuVL7wjJWzc7aUAhtCbTHkJqcYQbw8TakExubM5KWFTZj/hUwLyammkvxbOhxg02fOV5XMTaK0MNtrE4D/+mbhfw88xXfPBxBxwBVFj/AO+D3Yq1tcZpwAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -4,
+      "y": 31,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -4,
+      "y": 31,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 700,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 20,
+    "tuc": 5,
+    "incPDD": 10,
+    "exItem": "1",
+    "vslots": [
+      "So"
+    ],
+    "islots": [
+      "So"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shoes",
+    "lowItemId": 1070000,
+    "highItemId": 1080000
+  }
+}

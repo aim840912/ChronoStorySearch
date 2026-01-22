@@ -2,7 +2,6 @@
   "itemId": 1041069,
   "itemName": "Brown Legolia",
   "chineseItemName": "褐守護之服",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3210207,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }
