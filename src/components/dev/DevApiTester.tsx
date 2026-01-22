@@ -122,8 +122,6 @@ export function DevApiTester({ isOpen, onClose }: DevApiTesterProps) {
     }
   }
 
-  // 只在開發環境顯示
-  if (process.env.NODE_ENV !== 'development') return null
   if (!isOpen) return null
 
   return (
