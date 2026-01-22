@@ -3,7 +3,7 @@
   "mobName": "Plateon",
   "chineseMobName": "培利堤安",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "drops": [
     {
       "itemId": 4000121,

@@ -3,7 +3,7 @@
   "mobName": "Green Trixter",
   "chineseMobName": "紅蜘蛛",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "drops": [
     {
       "itemId": 4000098,

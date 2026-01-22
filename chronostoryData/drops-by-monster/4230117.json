@@ -3,7 +3,7 @@
   "mobName": "Zeta Gray",
   "chineseMobName": "葛雷士兵",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "drops": [
     {
       "itemId": 4000118,

@@ -3,7 +3,7 @@
   "mobName": "King Bloctopus",
   "chineseMobName": "機器章魚王",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "drops": [
     {
       "itemId": 4000100,

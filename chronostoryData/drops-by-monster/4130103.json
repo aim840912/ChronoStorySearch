@@ -3,7 +3,7 @@
   "mobName": "Rombot",
   "chineseMobName": "泥人領導者",
   "isBoss": true,
-  "inGame": false,
+  "inGame": true,
   "drops": [
     {
       "itemId": 2000004,

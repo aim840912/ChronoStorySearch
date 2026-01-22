@@ -3,7 +3,7 @@
   "mobName": "Propelly",
   "chineseMobName": "粉紅色戰鬥機",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "drops": [
     {
       "itemId": 4000104,

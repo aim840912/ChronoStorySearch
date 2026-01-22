@@ -3,7 +3,7 @@
   "mobName": "Chief Gray",
   "chineseMobName": "葛雷元老",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "drops": [
     {
       "itemId": 4031926,

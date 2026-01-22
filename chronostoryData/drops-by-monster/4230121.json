@@ -3,7 +3,7 @@
   "mobName": "Mecateon",
   "chineseMobName": "梅卡堤安",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "drops": [
     {
       "itemId": 4000122,

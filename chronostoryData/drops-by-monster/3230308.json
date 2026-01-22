@@ -3,7 +3,7 @@
   "mobName": "Tweeter",
   "chineseMobName": "特威德",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "drops": [
     {
       "itemId": 4000003,
