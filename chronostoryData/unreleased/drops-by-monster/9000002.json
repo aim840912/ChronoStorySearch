@@ -1,0 +1,21 @@
+{
+  "mobId": 9000002,
+  "mobName": "Horned Mushroom 2",
+  "chineseMobName": "",
+  "isBoss": false,
+  "inGame": true,
+  "totalDrops": 1,
+  "drops": [
+    {
+      "itemId": 4031013,
+      "itemName": "Dark Marble",
+      "chineseItemName": "",
+      "chance": 70.0,
+      "displayChance": "70.0%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    }
+  ]
+}

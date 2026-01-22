@@ -3,7 +3,7 @@
   "mobName": "Trixter",
   "chineseMobName": "黃蜘蛛",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "totalDrops": 23,
   "drops": [
     {

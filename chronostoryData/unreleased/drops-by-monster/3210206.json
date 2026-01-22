@@ -3,7 +3,7 @@
   "mobName": "Helly",
   "chineseMobName": "黃色戰鬥機",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "totalDrops": 27,
   "drops": [
     {

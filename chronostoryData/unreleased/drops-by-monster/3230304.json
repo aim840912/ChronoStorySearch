@@ -3,7 +3,7 @@
   "mobName": "Planey",
   "chineseMobName": "藍色戰鬥機",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "totalDrops": 31,
   "drops": [
     {
