@@ -3,7 +3,7 @@
   "mobName": "King Block Golem",
   "chineseMobName": "積木泥人王",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "totalDrops": 32,
   "drops": [
     {

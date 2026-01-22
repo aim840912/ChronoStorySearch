@@ -1,27 +1,16 @@
 {
-  "mobId": 3230307,
-  "mobName": "Chirppy",
-  "chineseMobName": "邱布",
+  "mobId": 4230113,
+  "mobName": "Tick-Tock",
+  "chineseMobName": "",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 27,
+  "totalDrops": 26,
   "drops": [
     {
-      "itemId": 4000003,
-      "itemName": "Tree Branch",
-      "chineseItemName": "樹枝",
-      "chance": 60,
-      "displayChance": "60.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 4000123,
-      "itemName": "Worn-Out Goggle",
-      "chineseItemName": "舊的太陽鏡",
-      "chance": 60,
+      "itemId": 4000114,
+      "itemName": "Table Clock",
+      "chineseItemName": "小鬧鐘",
+      "chance": 60.0,
       "displayChance": "60.0%",
       "minQty": 1,
       "maxQty": 1,
@@ -31,22 +20,11 @@
     {
       "itemId": 0,
       "itemName": "Meso",
-      "chineseItemName": "楓幣",
-      "chance": 40,
+      "chineseItemName": "",
+      "chance": 40.0,
       "displayChance": "40.0%",
-      "minQty": 100,
-      "maxQty": 144,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 4003004,
-      "itemName": "Stiff Feather",
-      "chineseItemName": "堅硬的羽毛",
-      "chance": 20,
-      "displayChance": "20.0%",
-      "minQty": 1,
-      "maxQty": 1,
+      "minQty": 108,
+      "maxQty": 162,
       "questId": 0,
       "enabled": true
     },
@@ -54,7 +32,7 @@
       "itemId": 2000002,
       "itemName": "White Potion",
       "chineseItemName": "白色藥水",
-      "chance": 2,
+      "chance": 2.0,
       "displayChance": "2.0%",
       "minQty": 1,
       "maxQty": 1,
@@ -65,7 +43,7 @@
       "itemId": 2000003,
       "itemName": "Blue Potion",
       "chineseItemName": "藍色藥水",
-      "chance": 2,
+      "chance": 2.0,
       "displayChance": "2.0%",
       "minQty": 1,
       "maxQty": 1,
@@ -73,10 +51,10 @@
       "enabled": true
     },
     {
-      "itemId": 4004001,
-      "itemName": "Wisdom Crystal Ore",
-      "chineseItemName": "智慧母礦",
-      "chance": 1,
+      "itemId": 4004003,
+      "itemName": "LUK Crystal Ore",
+      "chineseItemName": "幸運母礦",
+      "chance": 1.0,
       "displayChance": "1.0%",
       "minQty": 1,
       "maxQty": 1,
@@ -84,9 +62,9 @@
       "enabled": true
     },
     {
-      "itemId": 4010001,
-      "itemName": "Steel Ore",
-      "chineseItemName": "鋼鐵母礦",
+      "itemId": 4010003,
+      "itemName": "Adamantium Ore",
+      "chineseItemName": "朱礦石母礦",
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -95,20 +73,20 @@
       "enabled": true
     },
     {
-      "itemId": 4020008,
-      "itemName": "Black Crystal Ore",
-      "chineseItemName": "黑水晶母礦",
-      "chance": 0.9,
-      "displayChance": "0.90%",
+      "itemId": 4031098,
+      "itemName": "All-purpose Clock Spring",
+      "chineseItemName": "",
+      "chance": 0.7,
+      "displayChance": "0.70%",
       "minQty": 1,
       "maxQty": 1,
-      "questId": 0,
+      "questId": 3232,
       "enabled": true
     },
     {
-      "itemId": 1002036,
-      "itemName": "Green Jester",
-      "chineseItemName": "綠色術士帽",
+      "itemId": 1002047,
+      "itemName": "Great Red Helmet",
+      "chineseItemName": "紅色戰鬥頭盔",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -117,9 +95,9 @@
       "enabled": true
     },
     {
-      "itemId": 1002152,
-      "itemName": "Blue Guiltian",
-      "chineseItemName": "藍魔道之帽",
+      "itemId": 1002139,
+      "itemName": "Red Pole-Feather Hat",
+      "chineseItemName": "紅羽翼三角帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -128,9 +106,9 @@
       "enabled": true
     },
     {
-      "itemId": 1002183,
-      "itemName": "Green Pilfer",
-      "chineseItemName": "綠海盜頭巾",
+      "itemId": 1002142,
+      "itemName": "Blue Matty",
+      "chineseItemName": "藍星魔法帽",
       "chance": 0.1287,
       "displayChance": "0.13%",
       "minQty": 1,
@@ -139,9 +117,9 @@
       "enabled": true
     },
     {
-      "itemId": 1082008,
-      "itemName": "Steel Briggon",
-      "chineseItemName": "鐵製輕便手套",
+      "itemId": 1032018,
+      "itemName": "Pansy Earrings",
+      "chineseItemName": "紫荊花耳環",
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
@@ -161,9 +139,20 @@
       "enabled": true
     },
     {
-      "itemId": 1040069,
-      "itemName": "Red Hunter's Armor",
-      "chineseItemName": "紅浪人之服",
+      "itemId": 1082071,
+      "itemName": "Aqua Brace",
+      "chineseItemName": "藍勇氣手套",
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1040061,
+      "itemName": "Green Knucklevest",
+      "chineseItemName": "綠暗影之服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -172,9 +161,9 @@
       "enabled": true
     },
     {
-      "itemId": 1060058,
-      "itemName": "Red Hunter's Pants",
-      "chineseItemName": "紅遊俠之褲",
+      "itemId": 1060050,
+      "itemName": "Blue Knucklevest Pants",
+      "chineseItemName": "藍暗影之褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -183,9 +172,9 @@
       "enabled": true
     },
     {
-      "itemId": 1072104,
-      "itemName": "Red White-Lined Boots",
-      "chineseItemName": "紅楊柳鞋",
+      "itemId": 1072108,
+      "itemName": "Black Green-Lined Shoes",
+      "chineseItemName": "綠流星鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -194,20 +183,20 @@
       "enabled": true
     },
     {
-      "itemId": 1072120,
-      "itemName": "Brown Pierre Shoes",
-      "chineseItemName": "褐精靈鞋",
-      "chance": 0.08,
-      "displayChance": "0.080%",
+      "itemId": 2043102,
+      "itemName": "Scroll for One-Handed Axe for ATT 10%",
+      "chineseItemName": "單手斧攻擊卷軸10%",
+      "chance": 0.075,
+      "displayChance": "0.075%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 1051004,
-      "itemName": "Purple Doroness Robe",
-      "chineseItemName": "紫魔者之袍",
+      "itemId": 1051025,
+      "itemName": "Blue Moonlight",
+      "chineseItemName": "藍色月光服",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -216,9 +205,9 @@
       "enabled": true
     },
     {
-      "itemId": 1051032,
-      "itemName": "Blue Calaf",
-      "chineseItemName": "藍妖精禮服",
+      "itemId": 1052113,
+      "itemName": "Red Barbay",
+      "chineseItemName": "紅色麻布衣",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -227,9 +216,9 @@
       "enabled": true
     },
     {
-      "itemId": 1302004,
-      "itemName": "Cutlus",
-      "chineseItemName": "彎刀",
+      "itemId": 1322017,
+      "itemName": "Knuckle Mace",
+      "chineseItemName": "旋風錘",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -238,9 +227,9 @@
       "enabled": true
     },
     {
-      "itemId": 1312005,
-      "itemName": "Fireman's Axe",
-      "chineseItemName": "赤斧",
+      "itemId": 1372007,
+      "itemName": "Cromi",
+      "chineseItemName": "大魔法師短杖",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -249,9 +238,31 @@
       "enabled": true
     },
     {
-      "itemId": 1332004,
-      "itemName": "Forked Dagger",
-      "chineseItemName": "雙枝短刀",
+      "itemId": 1382001,
+      "itemName": "Arc Staff",
+      "chineseItemName": "精靈長杖",
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1382019,
+      "itemName": "Hall Staff",
+      "chineseItemName": "護法之杖",
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1332016,
+      "itemName": "Sai",
+      "chineseItemName": "華氏短劍",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -260,31 +271,9 @@
       "enabled": true
     },
     {
-      "itemId": 1482004,
-      "itemName": "Prime Hands",
-      "chineseItemName": "精鋼拳套",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1203006,
-      "itemName": "Kumbi Throwing-Stars",
-      "chineseItemName": "雪花鏢",
-      "chance": 0.04,
-      "displayChance": "0.040%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 2040929,
-      "itemName": "Scroll for Shield for STR 100%",
-      "chineseItemName": "盾牌力量卷軸100%",
+      "itemId": 2040401,
+      "itemName": "Scroll for Topwear for Defense 60%",
+      "chineseItemName": "上衣防禦卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -293,9 +282,9 @@
       "enabled": true
     },
     {
-      "itemId": 2044110,
-      "itemName": "Scroll for Two-Handed Axe for Accuracy 100%",
-      "chineseItemName": "雙手斧命中卷軸100%",
+      "itemId": 2044701,
+      "itemName": "Scroll for Claw for ATT 60%",
+      "chineseItemName": "拳套攻擊卷軸60%",
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,

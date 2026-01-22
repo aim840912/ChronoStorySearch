@@ -3,7 +3,7 @@
   "mobName": "Block Golem",
   "chineseMobName": "積木泥人",
   "isBoss": false,
-  "inGame": false,
+  "inGame": true,
   "totalDrops": 24,
   "drops": [
     {
