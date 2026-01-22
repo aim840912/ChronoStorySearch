@@ -117,7 +117,7 @@
     },
     {
       "itemId": 4010011,
-      "itemName": "#N/A",
+      "itemName": "Alien Ore",
       "chineseItemName": null,
       "chance": 0.1,
       "displayChance": "0.10%",
@@ -260,7 +260,7 @@
     },
     {
       "itemId": 1412058,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Greataxe",
       "chineseItemName": "1st不速之客雙手斧",
       "chance": 0.01,
       "displayChance": "0.010%",
@@ -271,7 +271,7 @@
     },
     {
       "itemId": 1462087,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Crossbow",
       "chineseItemName": "1st不速之客弩",
       "chance": 0.01,
       "displayChance": "0.010%",
@@ -282,7 +282,7 @@
     },
     {
       "itemId": 1482075,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Knuckle",
       "chineseItemName": "1st不速之客指虎",
       "chance": 0.01,
       "displayChance": "0.010%",

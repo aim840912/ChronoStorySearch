@@ -106,7 +106,7 @@
     },
     {
       "itemId": 4010011,
-      "itemName": "#N/A",
+      "itemName": "Alien Ore",
       "chineseItemName": null,
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -260,7 +260,7 @@
     },
     {
       "itemId": 1092070,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Warrior Shield",
       "chineseItemName": null,
       "chance": 0.02,
       "displayChance": "0.020%",
@@ -271,7 +271,7 @@
     },
     {
       "itemId": 1092075,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Magician Shield",
       "chineseItemName": null,
       "chance": 0.02,
       "displayChance": "0.020%",
@@ -282,7 +282,7 @@
     },
     {
       "itemId": 1092080,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Thief Shield",
       "chineseItemName": null,
       "chance": 0.02,
       "displayChance": "0.020%",
