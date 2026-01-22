@@ -2,8 +2,18 @@
   "itemId": 1472019,
   "itemName": "Blood Slain",
   "chineseItemName": "赤紅手甲",
-  "totalMonsters": 4,
   "monsters": [
+    {
+      "mobId": 4130103,
+      "mobName": "Rombot",
+      "chineseMobName": "泥人領導者",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 0.5,
+      "displayChance": "0.50%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 4230103,
       "mobName": "Iron Hog",
@@ -48,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

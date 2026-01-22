@@ -2,7 +2,6 @@
   "itemId": 4020002,
   "itemName": "AquaMarine Ore",
   "chineseItemName": "海藍石母礦",
-  "totalMonsters": 14,
   "monsters": [
     {
       "mobId": 120100,
@@ -60,6 +59,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 3110102,
+      "mobName": "Ratz",
+      "chineseMobName": "白色發條鼠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 3210207,
       "mobName": "Tick",
       "chineseMobName": "鼬鼠",
@@ -74,6 +84,28 @@
       "mobId": 4230104,
       "mobName": "Clang",
       "chineseMobName": "青螃蟹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230119,
+      "mobName": "Mateon",
+      "chineseMobName": "馬堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230131,
+      "mobName": "Gray Commuter Saucer",
+      "chineseMobName": "新葛雷白",
       "isBoss": false,
       "inGame": true,
       "chance": 0.9,
@@ -127,7 +159,7 @@
     },
     {
       "mobId": 8140100,
-      "mobName": "Dark Yeti and Pepe",
+      "mobName": "Dark Yeti & Pepe",
       "chineseMobName": "黑吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -150,7 +182,7 @@
     {
       "mobId": 8645263,
       "mobName": "Turbo Robo",
-      "chineseMobName": null,
+      "chineseMobName": "守護者機器人",
       "isBoss": false,
       "inGame": true,
       "chance": 0.03,
@@ -158,5 +190,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 17
 }

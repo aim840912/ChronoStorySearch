@@ -2,7 +2,6 @@
   "itemId": 1002640,
   "itemName": "Blue Sun Boat Hat",
   "chineseItemName": "藍色船型帽",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 7140000,
@@ -14,6 +13,18 @@
       "displayChance": "0.13%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230121,
+      "mobName": "Mecateon",
+      "chineseMobName": "梅卡堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

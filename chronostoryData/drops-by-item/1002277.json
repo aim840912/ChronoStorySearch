@@ -2,7 +2,6 @@
   "itemId": 1002277,
   "itemName": "Green Falcon",
   "chineseItemName": "綠色飛翔帽",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 7140000,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

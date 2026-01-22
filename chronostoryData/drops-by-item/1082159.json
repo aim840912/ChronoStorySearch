@@ -1,0 +1,19 @@
+{
+  "itemId": 1082159,
+  "itemName": "Blue Arcina",
+  "chineseItemName": "藍色條紋手套",
+  "monsters": [
+    {
+      "mobId": 6220001,
+      "mobName": "Zeno",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 1.5,
+      "displayChance": "1.5%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

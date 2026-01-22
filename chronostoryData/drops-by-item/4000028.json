@@ -2,7 +2,6 @@
   "itemId": 4000028,
   "itemName": "Tauromacis Horn",
   "chineseItemName": "月牙牛魔王的角",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 7130100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

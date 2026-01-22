@@ -2,7 +2,6 @@
   "itemId": 1050058,
   "itemName": "Orange Tai",
   "chineseItemName": "朱旋風甲",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 5120001,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

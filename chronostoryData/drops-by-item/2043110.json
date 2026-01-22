@@ -2,7 +2,6 @@
   "itemId": 2043110,
   "itemName": "Scroll for One-Handed Axe for Accuracy 100%",
   "chineseItemName": "單手斧命中卷軸100%",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 3210202,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

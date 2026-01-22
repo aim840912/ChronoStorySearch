@@ -2,7 +2,6 @@
   "itemId": 1442013,
   "itemName": "Aqua Snowboard",
   "chineseItemName": "滄海雪板",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 1110100,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

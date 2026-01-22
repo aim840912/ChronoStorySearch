@@ -2,7 +2,6 @@
   "itemId": 2040704,
   "itemName": "Scroll for Shoes for Jump 60%",
   "chineseItemName": "鞋子跳躍卷軸60%",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5220003,
@@ -29,13 +28,25 @@
     {
       "mobId": 8645263,
       "mobName": "Turbo Robo",
-      "chineseMobName": null,
+      "chineseMobName": "守護者機器人",
       "isBoss": false,
       "inGame": true,
       "chance": 0.1,
       "displayChance": "0.10%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230116,
+      "mobName": "Barnard Gray",
+      "chineseMobName": "葛雷族人",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

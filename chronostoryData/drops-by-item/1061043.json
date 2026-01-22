@@ -2,7 +2,6 @@
   "itemId": 1061043,
   "itemName": "Red Steal Pants",
   "chineseItemName": "紅寂靜裙",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 5200001,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

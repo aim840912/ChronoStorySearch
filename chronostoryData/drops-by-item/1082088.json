@@ -2,7 +2,6 @@
   "itemId": 1082088,
   "itemName": "Dark Manute",
   "chineseItemName": "黑封印手套",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5130102,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

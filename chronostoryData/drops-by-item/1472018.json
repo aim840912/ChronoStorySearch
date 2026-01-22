@@ -2,8 +2,18 @@
   "itemId": 1472018,
   "itemName": "Steel Slain",
   "chineseItemName": "鋼鐵手甲",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 3230303,
+      "mobName": "Propelly",
+      "chineseMobName": "粉紅色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 4230108,
       "mobName": "Jr. Cerebes",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

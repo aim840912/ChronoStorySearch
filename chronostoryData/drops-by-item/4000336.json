@@ -2,11 +2,10 @@
   "itemId": 4000336,
   "itemName": "Bible of the Corrupt",
   "chineseItemName": "厄運之書",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6090000,
-      "mobName": "Riche",
+      "mobName": "RIche",
       "chineseMobName": "厄運死神",
       "isBoss": true,
       "inGame": true,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

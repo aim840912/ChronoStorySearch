@@ -2,7 +2,6 @@
   "itemId": 1051046,
   "itemName": "White Anakarune",
   "chineseItemName": "白聖黨之服",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 9834178,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

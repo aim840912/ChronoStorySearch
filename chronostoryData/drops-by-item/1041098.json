@@ -2,7 +2,6 @@
   "itemId": 1041098,
   "itemName": "Violet Platina",
   "chineseItemName": "紫暴風甲",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 6230400,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

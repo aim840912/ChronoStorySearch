@@ -2,7 +2,6 @@
   "itemId": 1051044,
   "itemName": "Blue Anakarune",
   "chineseItemName": "藍聖黨之服",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 5100000,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

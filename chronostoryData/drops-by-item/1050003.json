@@ -2,7 +2,6 @@
   "itemId": 1050003,
   "itemName": "Blue Wizard Robe",
   "chineseItemName": "藍牧師長袍",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1140100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

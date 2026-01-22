@@ -4,7 +4,6 @@
   "chineseMobName": "蘑菇王",
   "isBoss": true,
   "inGame": true,
-  "totalDrops": 28,
   "drops": [
     {
       "itemId": 4000040,
@@ -20,7 +19,7 @@
     {
       "itemId": 0,
       "itemName": "Meso",
-      "chineseItemName": null,
+      "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 800,
@@ -59,7 +58,7 @@
       "minQty": 1,
       "maxQty": 4,
       "questId": 0,
-      "enabled": false
+      "enabled": true
     },
     {
       "itemId": 1032019,
@@ -114,18 +113,7 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 2041004,
-      "itemName": "Scroll for Cape for Defense 60%",
-      "chineseItemName": "披風防禦卷軸60%",
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
+      "enabled": true
     },
     {
       "itemId": 2040024,
@@ -293,6 +281,17 @@
       "enabled": true
     },
     {
+      "itemId": 2041004,
+      "itemName": "Scroll for Cape for Defense 60%",
+      "chineseItemName": "披風防禦卷軸60%",
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
       "itemId": 2043212,
       "itemName": "Scroll for One-Handed BW for Accuracy 60%",
       "chineseItemName": "單手棍命中卷軸60%",
@@ -314,5 +313,6 @@
       "questId": 0,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 28
 }

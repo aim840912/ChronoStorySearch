@@ -2,7 +2,6 @@
   "itemId": 1372016,
   "itemName": "Phoenix Wand",
   "chineseItemName": "鳳凰短杖",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 7130001,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

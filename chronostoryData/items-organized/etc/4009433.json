@@ -1,0 +1,37 @@
+{
+  "id": 4009433,
+  "description": {
+    "id": 4009433,
+    "name": "迷你UFO操作器",
+    "description": "使用在操作迷你UFO上。看起來是無線操作。",
+    "chineseItemName": "迷你UFO操作器"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAYAAACgoey0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB+0lEQVR4nK2WjZGCMBCF15lrgBawhFgClqAl2AJXgpYgJUgJUsKlBNMCJXB50cVkSQL+vBkmMSH58nYX5Ie+o0H8Xs0teBccgKqqGvt935PWepiDLwUnQVDXdcm5V8EBqK5r1xpjnCMfBJVlSeX1Rt16NcLtPVnXDI6CWKfTaQJyrYW5A23X7sI4DrXENcDDbrcLNsyBAGD5fehCijZkXH/O9RhqbM7AmKMYSEL3pBe7dmDkboQ98sXhy4lhELe+cq5Hx4Ajt861APoh9vsSxoe/9datndoqk3fMYF4oAam8oja40llXbfeobc2cWjqagn4TroPHKeeaQfJ+HwrpoidloWh1OBV3LF3zIVKKQR0YQwIayzXAK7zilFJZ4LF8PmLG5m9vFBVFMTlMq0qqzmcqtHaR600fpDDqWLoOoAfYQdF0VCpUtKa9fsKxDqlo23Zch4hgHnPSNYMnrlmXqr1DIdWRX8gXFcLtHg7eNI3ry4hkHTM4WASnDoqXQhdb4qLkH5jzj5Yj6Lv2wYHrQJqd3qFm+q6IwnkspuTfIudn0yj6OzxJPtQP8xyI93wcbpDgiWuGI5++YtAULPbYZT8E2DUugHyloCnQEnA015+CloAnG/vQd0Cy4EhUdTCReq7fBcmBr3zeLgG9Ao7mOuF+FvQKeIR/ConpH9EQYSZE91MxAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQ0lEQVR4nK2WjXHjIBCF1zPXgFKCUgIpQS7BLsEtOCVEJcQlWCVEJRwlhBJCCT4e8crL8mOdkzfDgEDw8XZB9h/6HV3U8+behEfBCWgYhqXtvSdr7eUefC24CoLmea6O/S84AR2Px1g756IjCYL6vqf+45Pm580CD+80XTO4CGKN45iBYh1gcUPb51jQj02tcQ3wZbfbJQu2QACwZBs6k6EXcrF9z/USaizOwJKjEkhD92RXu45g5G6BXfPF4WuJYRDXUi3Xi2PAkdvoWgFliGVbw3jznz64DUNb49qOGcwTNaCWV5wNPumsDxvWOIYzM0705jp6rbhOrlPLNYP0+xIK2c6TCVDUNh0qO9aueRM1laARjC4FLeUa4A0+ccaYJvCtv10xF/K3d4a6rss2M5mehvd36qyNkfPOJyksOtauE+gBdnBoZuoNTrSlvb3BMQ+pmKZpmYeIYBxj2jWDM9es8zB9QyEzkzzIZ5PCwxoRfjqdYltHpOmYwckkOI1QfBTm0pQYJblhzj9qjqB0LcGJ60SWnX5DXf6tKMK5r6TqzyLn5+Vk6O/hRpJQGeZ7IF7zurmLBmeuGY58SpWgNVjp2jX/CLBrFICkatAaaA24mOufgtaAs4Ul9BGQPnCkTnUyULvXj4J0x6/8vS2AnkS7GJ4aGLF9Cq6/dK4r7rfqmSd5UXvxnIE7VfYBflbvvF7HpAaqOBNAdy1egxnWixoaxTiJ/jWqnsKS49qk1lH2jbYuGZjDIeGly9tVNtHaaPb+P6UEfVQ6FsZoAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -2,
+      "y": 29,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 29,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

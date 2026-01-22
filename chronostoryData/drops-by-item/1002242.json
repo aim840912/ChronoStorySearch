@@ -2,7 +2,6 @@
   "itemId": 1002242,
   "itemName": "Red Seraphis",
   "chineseItemName": "紅和平之帽",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 5100002,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

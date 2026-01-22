@@ -2,7 +2,6 @@
   "itemId": 1092007,
   "itemName": "Battle Shield",
   "chineseItemName": "戰鬥盾牌",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 1120100,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

@@ -2,7 +2,6 @@
   "itemId": 4000051,
   "itemName": "Hector Tail",
   "chineseItemName": "野狼之尾巴",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 5130104,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

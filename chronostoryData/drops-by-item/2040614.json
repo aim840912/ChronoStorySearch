@@ -2,7 +2,6 @@
   "itemId": 2040614,
   "itemName": "Scroll for Bottomwear for DEX 100%",
   "chineseItemName": "褲裙敏捷卷軸100%",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 5220003,
@@ -17,7 +16,7 @@
     },
     {
       "mobId": 6220000,
-      "mobName": "Dyle",
+      "mobName": "Dyle\t",
       "chineseMobName": "沼澤巨鱷",
       "isBoss": true,
       "inGame": true,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

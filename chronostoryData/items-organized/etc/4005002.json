@@ -1,0 +1,38 @@
+{
+  "id": 4005002,
+  "description": {
+    "id": 4005002,
+    "name": "敏捷水晶",
+    "description": "具有敏捷泉源的神秘水晶。裝備、飾品、煉金術5級製作所需的材料。",
+    "chineseItemName": "敏捷水晶"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADeElEQVR4nLWXj5WyMAzAw3vfAnWE3gg4Ao5gR4ARYAQZQUaAEWAEGMGOQEfol6QUqQJ6+i48rwg2vzTNn94/+E4sfqJPJ38DtygQRdHHBnwKt6Pt+UYkAKb7zANb8D1lth6vwQORCjCV2Z2z9m4LHk0T/P2s5DpeQDhkMEFeBOjiyYA1HS/hbuZ9T2cFhJRC4ih3p9If2ppDdNz8UQCXqbC6Mt7KiMDWjmDwOkQ/rFBC/BJ8sy2bOYHnVT/oD+H0gn7g72k8lke4pheo0d2ZKnjV/B4GeHQ9BV/ftvgUt8CYYFFLnavwpQGTlRjKBjEDr56ExsEM0OkBzvK8snACa1BltgtehS8FJ8JQGihMBfnFgRrdILgDtmUFbghcZATj+XuyBncrnuAkcSygqTrI6xRKVSITA06Eik1noK1rOCF4+cbrgpV0e4TPqSTxOh4UP+wyzfuJawZcGAvBExHf4ficwOhzIMd4MNWEpmtAa4ySQgcGLOGWggo4lvGDikd74/1thgYG3GPdOPJQasj7HHzA0aodDWH1lQMOreM5DMa4EVJC2sdQHZvZAA+3/VjzatzlIprB2oHdNmCiyQRS/JyUgnOb8vO2v7Kn3FYIDspm6HCec0GMYCGdp3Kbwk90YgMIzg1iVdi1CcRJMrvZGza2NhiXQmlIKRknOY7hggDuxYvgXExoT98VbCRAxYcLySni77+dD9PK+YY6k3iRGry3U8CRa8UirmcD5AsdLvqDPXcGYGeiBuEFGwWP3DYRerv1GDwDKJU9Kb2Mbv9LVS1XByv61ssrvZg6k5s4eYJS5mYncFE4gxar5jTEOpCmZ4x2zHVM0XluYQL9yy9rRSZoiQ7c3sGYTlS/O/w+Fxp0te40VFgJ6vzMKYqNyBuwecjYLK+LDmT1VDKn8g7dgNUen6VJGs5BI1SpoM1r77HosZO9BffgFiuUB5vGuZiaCoHkQ1drFDabOoYTGkDb9BMdN8G7cJiOSyrLGDoJZwXkGOki7Ok+fdAAjhmF13XMITuUm8er3a6mDnNUB5P9Xm8cKvi3VMezotxTv3uAfILS83Prqkm8aCokK2c4P1r44AC5LoJqdYzw3aPUW7p+fW6nJuECTcC38lt4VBwqzID66cVj9foLOAOwglkqJF6W9fqv4QyiozS1Rp9inyj55h/F6Jt/Ekn+A7Dh0lTa72Q5AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADtklEQVR4nKVXDbWrMAwO5zwDRUIngUlgEoYEkAAShoQhASSABJCwSqASeEnassIt7L3dcFihJfmSND/dH/gdLXhH3zL/BnxBgiiKvlbgW/BlXkZ+ECmAHr7zwBH4mbClnZ+bCZEL0I0+5QmtHYFHlsE9r0Ke8wOEgdwwyIcAVf1QICTjI7jhfO/pKoAgpZA4ylNW+qGtiaPr4UcbcJmLRTXaaRkR8LLMoPGKowsLlJB8BH4tPatpgVerd/K34LRAH7hnGq/1FZ75A1p0d5FVbDWvwwR711PwjX2Ps7gFWm+M8mUGwX0FrJYYyhphJraeiMZJTzCoCe7yHjCcgBVkdXEKHAT3CRlhqjVUuoHyYYA61SHwAKxLAFwTcFUQGPOfUQjcWGzBiZJEQNcMULY51FmNmBhwYitYDxr6toUbAvsrThYE0m0PvqaSxOsaZzw5FIr3E20GNIyJwFORvMFxnoDR50COccBUE7qhA6UwSiq1UcAHXyiogGMZbxQ8Ly/e327qYMI9Vp1BnmoF5ViCCziy2qAhWPvkgEPtmIeBMW6ElJCPCTTXblXAgS/j3LI15jIRzcDKAJttwESTKeR437IM7n3O8/34ZE+ZrRAclN00IJ9xQYLAQhpPlUsOl+jGChA4N4ggsWtTSNJ0dbNTbO6XzegTpSGlZJKWOG4NAngXLwLnYkJ7+q+EjQSo+HAhuUX8/r/8YC3nB+pM4kNq8N7agCPXCi+uVwXkBxkm+jd7bhTAzkQNwhE2Ch65bSLo6zVi8EyQZcUPoY/Z7H+dNb51EJAXLq+0YDuTYbSeoJR5LRa4qoxCntWchlgH8vyO0Y65jim68lZ6I99/CRWZTUs0wP0bGNOJ6veA72uhQVerQUGDlaAt75yi2IicAoeHjMPy6nWgRdmSacs7DBNWe5zL03zLg0pkdQZ92TqPRftO9k/gDrjHCuWAdWdcTE2FgOSuq3UZNps2gRsqQNt0ia6HwKfgYI9LWVEwqCXOCigx0sW2p7v0QQU4ZjK8nnMJRVwfHq9Ou1oWr1HtmNlUt9eBQwUtxPSAdXwuqvpM/OkBkuhiR2kFj/feVJPEayr8gTnDUeW52SkaKUpGKy+GNWrC4MLeVzsm8D6urOfGRCYIfniUSnbvhQUlBuUr4IM7YOmNb1A7UpOQ66dB8hc0nFDI8iNGeq+quHn0c/tDkC0mxY5PB+4gOC2onQIh825YwXoqJCujqdeX3Xf64DkI7mv6iSI6SlNrdCkGX9Bv/ihGv/mTSPQX/7noUtizFocAAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "slotMax": 3000,
+    "price": 350,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

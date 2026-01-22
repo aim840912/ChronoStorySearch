@@ -2,7 +2,6 @@
   "itemId": 1203006,
   "itemName": "Kumbi Throwing-Stars",
   "chineseItemName": "雪花鏢",
-  "totalMonsters": 9,
   "monsters": [
     {
       "mobId": 3210202,
@@ -10,6 +9,17 @@
       "chineseMobName": "幼藍獨角獅",
       "isBoss": false,
       "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3210206,
+      "mobName": "Helly",
+      "chineseMobName": "黃色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -102,6 +112,18 @@
       "displayChance": "0.040%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230307,
+      "mobName": "Chirppy",
+      "chineseMobName": "邱布",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.04,
+      "displayChance": "0.040%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 11
 }

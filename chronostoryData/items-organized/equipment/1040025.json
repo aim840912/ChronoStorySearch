@@ -1,0 +1,52 @@
+{
+  "id": 1040025,
+  "description": {
+    "id": 1040025,
+    "name": "紅獵人服",
+    "description": "",
+    "chineseItemName": "紅獵人服"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAcCAYAAACZOmSXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADY0lEQVR4nK1Xi5GjMAwVM9uAtwRvCWwJpARSAikBSkhKgBKWEkIJoYS4hLgETpIlcFhMcjenGUd8jJ/ekyzIB7xnE/ydZe9MegXOoLey4BM3jpuTvPfB8zHAZQl2N4g98ElBh2GAERd1EEbKzgZ/cNQytw9BJANIgU8xW2sM9EgpBVzhsGZhvhfgO+Cz2Txn3wb3JP2T3BHw8D/AmTWCK2AMtgQQzRdgG90fd6RPgh/6gXMYMzXGBB8FAkZA/AIcg9NxKvdb4JxvKrIGFzw/8VxMr1IMnRwX+JzDoHOz3NvLf5J5hyzb9gyn4wlemc0tWGsRzJHMXICkksMQLQZQwjb7NTizVqlpgevtCn3f87lzjkG2fI61QY9VpYUTsm8JWAJIiLfNnPOJD+YWF3QjlGUJI6ahQE9AKV+h7zDQCgloAKwMbLP/BR4XmPMhYxQEFDAHs/bWoOSywbgoVx0vZb/AibXOJ7Z5gcU3Dgy056nGepxP4JeO05RhwU60Y6TxcTQx+xh8aqMuZfDn0nXQSk7pYsp79E7TtaJqVmrE8iv49LjfeVLz+Rkklwe5mJB9ypM6HpZiHMfn/uZhbgVs1U8LveygmTk9lOcFnB8P3OM99E3D1wmAGBV4j/Ibe5ZdAgjAIf+tcXDy4c1W3e7QfX/xWjXuHFKpriu4XLrpQ1lTcWnUI07wzsNVXi4g0m0NtVy3HFZ750VuG+7X94esO8ra7pn5lnHB0SJ1jcXUL2zXRUc7BEeBo5euRo1HWzCBEiADRzXxoay0xHUCnQ78EwKgveqQlYnrQa5r3r30d2qz1O0Uh1LhcGIu62OO0sypo90wPyQjFYd58QXTRAWuwAwIS6fEBjwHMMh6Sdm5c6HM/oySN5fNOVrXRZFjfi1LG9ot7JrWCoNv5YSrl1trpU/86ukgVa7PcOVTxWtvWCm0NgLPvr8P0xX3H0+khuH8zJx2AQXAgRRlaKv0gSG9nAOR81FeMJyuPujiJAUpcLLscDzFn8fZEc+v1595X8fbi3u58eGcRCEVELBE5tRiO2mv9BMTU2tCGrM45+svjexwOHIPYEkTL5V1s4mBE8Tm+68+ILPPry9WgLdfNLRn6psPGaZIpK7BO/9YWAE6oO1HLKmg1L8A3bV3/y7N+Uvd+xf7A5M+dUrzrS4rAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADoklEQVR4nK1WgY2zOgx2pVsgHSE3Ah2BjkBHoCPACO0IMMIxQhmhjNCM0IzAsx27pDTh7km/pWACiT9/tmP4gr/JDP9Pdn9Z9Bs4g96rkidumpKLvPdB8z3AdXF204kt8FlBx3GECY06CCMnF4MXHI2sHYITWQdy4HPM1hoDA1LKAdc4rFmYbzn4F/CX2KJg3QX1Fvq3cEfA478AZ9YIroAx2OJAtF6AbfR+2gh9Fvw4jJzDmKkxJujIETAC4hfgGJzuc7lPgXO+qchaNHh547mIPiUferkvcZ9DpwuzvNvKf5Z5jyy77gLn0xl+E1tYsNYimKMwcwFSlBy6aNGBCtLs1+DMWkNNBm73GwzDwHPnHIOkdIG1QdvqysIZ2XcELA5kgpdmzvnEjYVFg26CqqpgwjSUqAkop2vUPTpaIwF1gCMDafYf4HGBOR8yRk5ACS9n1toaDLkcMC7KVcfLyQc4sdb1xLYosfimkYG2NNXYgOsJ/NpzmnZYsDOdGGl87E3MPgafu6hLGbxc+x46ySk9zGmP2mm6VlTNKhpx+BV8fj4evKjd70PIZSMXE7LPaYqOh6UYp+m9v3l4tQKW+qeDQU7QizltKooSLs8nnvEBhrbl5wRAjEp8R/mNNYddHAjAIf+dcXD24ctW3x/QH77ZVoMnh6LUNDVcr/38paypuNTrCRd45+EmHxeQ0KWGSqFHDqu99xJuG943j6fYncS2e2eeEi44MtI0WEzDwnZddHRCcJQ4Bulq1Hi0BRMoATJwVBNfykpLXBfQdORLcIDOqkNWJq4Hea5599Lfqc1St1McSoXDhYXYxxzlmVNHu2N+KIxUHOaXP5g2KnAFZkBYOiU24JcDo9jLhp07F4bZXzDk7TW5Ruu6LAvMr+XQhnYLm6K1wuCpnHD1cmutdcdHTwepct3DlU8Vr71hFaG1EPjucDjONzx/vJAahvMv5nQKyAF2pKxCW6UfDOnl7IjMJ/nAcLqGEBcnKciBk+yOp3P8e7w74fx2+3md6/h4cS83PswpKBQFBKyQObXYXtorXWJiKm1I4y7O+fpPY3c8nrgHcEgzH5V1sxFgapPaBPZI7Lm2HTNPCW3e77+/nxQBPn7RUNP65UOGuo9uisgOJfwA0X+mvkiBm9U4YQR+6AUdP2JJBaU6Ar2K4SJhU0H119+nwBXQRloNE1CTMKy/cAbSkv2i55jnNraQF79xvx5JcA1N7ECKkYE0I78x/1j/H5EAkC/Exqy+AAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -1,
+      "y": 30,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 30,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 1300,
+    "reqSTR": 0,
+    "reqDEX": 90,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incMHP": 20,
+    "incPDD": 22,
+    "vslots": [
+      "Ma"
+    ],
+    "islots": [
+      "Ma"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Top",
+    "lowItemId": 1040000,
+    "highItemId": 1050000
+  }
+}

@@ -2,7 +2,6 @@
   "itemId": 1472012,
   "itemName": "Silver Guardian",
   "chineseItemName": "銀守護拳套",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 4130100,
@@ -36,6 +35,18 @@
       "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

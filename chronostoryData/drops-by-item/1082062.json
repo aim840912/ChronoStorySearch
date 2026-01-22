@@ -2,7 +2,6 @@
   "itemId": 1082062,
   "itemName": "Red Arten",
   "chineseItemName": "紅精靈手套",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5130107,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

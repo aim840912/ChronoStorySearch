@@ -2,8 +2,18 @@
   "itemId": 1050011,
   "itemName": "Black Dragon Robe",
   "chineseItemName": "黑龍袍",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 3230400,
+      "mobName": "Drumming Bunny",
+      "chineseMobName": "兔子鼓手",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 8148008,
       "mobName": "Crimson Stirge",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

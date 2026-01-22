@@ -2,7 +2,6 @@
   "itemId": 2040824,
   "itemName": "Scroll for Gloves for Defense 60%",
   "chineseItemName": "手套防禦卷軸60%",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 4230125,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

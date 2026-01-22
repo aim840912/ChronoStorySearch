@@ -2,7 +2,6 @@
   "itemId": 1072150,
   "itemName": "Blood Moss Boots",
   "chineseItemName": "紅無痕之鞋",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 5100002,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

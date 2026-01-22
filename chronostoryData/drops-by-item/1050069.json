@@ -2,7 +2,6 @@
   "itemId": 1050069,
   "itemName": "Brown Requiem",
   "chineseItemName": "褐天上之衣",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 7130001,
@@ -17,7 +16,7 @@
     },
     {
       "mobId": 7130102,
-      "mobName": "Yeti and Pepe",
+      "mobName": "Yeti & Pepe",
       "chineseMobName": "雪吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

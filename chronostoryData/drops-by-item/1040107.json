@@ -2,7 +2,6 @@
   "itemId": 1040107,
   "itemName": "Dark Studded Top",
   "chineseItemName": "黑玄武之甲",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 7140000,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

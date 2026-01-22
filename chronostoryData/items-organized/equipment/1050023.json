@@ -1,0 +1,55 @@
+{
+  "id": 1050023,
+  "description": {
+    "id": 1050023,
+    "name": "藍魔者之袍",
+    "description": "",
+    "chineseItemName": "藍魔者之袍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 23,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAcCAYAAACK7SRjAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACAklEQVR4nK1Wi3GDMAxV7lhAjAAjtCMkI8AIMEIYgYwQRiAjJCOUEZIR4hFSW2BH8gfaa5XjrAj56WPJIoM4veB3tIsJfXACHccR9vt9FEUpFcjKsrTOCCMc/MVBy/oC97GK8IPmG8GbfXV3A3gMwkiQlvwwwPPaCGBugAPb9dwU9AD00A6TNnIxRnYW/AUfR6hP+gWgAwzC1/I5LTI1Le0L0yU8R/1bpUi++e5FCaCoyPvMer2IATFhQAMrp/Uzg57nKY9T8rVILLh6zAsW6Q2RXItUJMB3dLr44Yz8mZQ54He1MGeKtV3xyPge5mAmFLjnIkUILnTHKk/XMI+Fnxz4XC0+sONtXvGNRwa8CEi2WGalCKFWgowhC8p5acH9i+QcAx51JO/ORG9NYs/gz+uRNpefdczddCQLmrlXqqoijGmaaG3bC2SwSsg6NnK4G0R1nuf5fFWaWo/5LHLLD37Oe9sN9My6kwA3tFteaCN2SKDLuYPeaHfbPD54QBv3I1P0+oORmERUnxZa3I5bOV7OAXXU6kaDwgd3iuLa5alADLtzRR4BtzWc8HnVwAa4qXk+5kwUpm7N7KS56eV37Cs9nONjMfMV7SDODycnt8C0HroA2BlADDs0RiYCS/xb5X7tqQt96pu5RzrziZEC/zrHP4bsJ4VPxusUCfC6ruE/6RueOPZNjvaLCwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACPElEQVR4nK2WgXHrIAxAlbssgEeIR+gfIRnBHiEeoRkhHaEewR0hHeF7hGaEMkI+EhYIEI57v8r5rHBIzxJIsAddHvAz2T2bkIMIME0THI9H1cBaW4y1bcsfVgVK0EMC2v4DvqZO0UennxMd7frLJ8B9rAKL1DWnEb5v5wQiYRLC7/fzgR6AKwzj7IAfjxzGoAe8vEL/5iaBCc5zwXGfujR9A9lZWJMkIuN+q2LXnLGtm3PoiqgQRNEsU8CYCsxBbJi1FR4li6giNV8bIRFk7/5lDnVjZW2SdG0A7Sif5iUA/1ssbg5910XBqOoe9IilTeVjI4jSJiYlaTQQ0hNUm81F5b7oswryuy6HBJ3XwUTfBMsio7HlKyrbG0qLiiCUAVJPaaqpskam0I2LMHYEk703cTzo+/ZKjto/vRYG1MV7xj7XdR35mOeZ3sOQtrHaeRQcxU6hbIwfCNVR0zS+vWMtZd/rGdKx3DR+nYbLSI+fW+44BqHslkkOyAeeCWsUMM9ajlKoOaiQJ31cTDzAlo6SnLC0/xmTdPFna7Ksm3HZsJ/FoZeDglFyVMh0GVN2hbXxdRDXSPy3yalawCsgrCl5lGN0WBd4V6B7QrYe07VzFxP96K+C0IgvIc3pLYwzhN6nSwEJsBBtWWzVXYeRsci73NftStWfy/Xsa/CC1y7XVtmUHwaFRfn7rl8c+ZqVC0ajyFFAMNf3/QIhUN9rve53REZ0klDYVrN2RU+ePcTwpGMNUuumduV/0P8BlpgLNJZhy20AAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -4,
+      "y": 30,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -4,
+      "y": 30,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 1300,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 70,
+    "reqLUK": 0,
+    "reqJob": 2,
+    "reqLevelEquip": 23,
+    "tuc": 10,
+    "incSTR": 3,
+    "incPDD": 24,
+    "incMDD": 12,
+    "vslots": [
+      "Ma",
+      "Pn"
+    ],
+    "islots": [
+      "Ma",
+      "Pn"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall",
+    "lowItemId": 1050000,
+    "highItemId": 1060000
+  }
+}

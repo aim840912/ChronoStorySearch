@@ -1,0 +1,52 @@
+{
+  "id": 1060043,
+  "description": {
+    "id": 1060043,
+    "name": "黑褐寂靜之褲",
+    "description": "",
+    "chineseItemName": "黑褐寂靜之褲"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAcCAYAAACK7SRjAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACL0lEQVR4nKVWgXGrMAx17rIAfwSv4BX4I7gj0BHSEZoRkhHiEcIIZYQyQhmB+gmeK4whzVV3OWyQn56lZzlHU7bRPG+H/EUJfPTem77vjbU2vWzb1lRVZYZhMHVdyzv4YD7/xjzAFnNZ0HWdPAEKc85JEA3KbyXbBMciMGcAGMYMTGB++zU4gcGQcw3C8R7wLngJQDPWwZ8CZ4ASaxoLzoBPgWumHOviNU0jAci+FCAHFxlqpeTBaFQNbd7hQo5F5iGEBZhijIVywHLGJUmuwMHo6/NmunBN87cwEFieYPjuq5iaUwzSyS5fr+virsA/b6c03lPD6XIzw6x7sEawmcQ2eBVPIRbxFHZ9WQmTT7dLYAWORdfreRNUG1K257cCBzBzCVYvZ9l63vEO//6/jePXPe3g9Rx2wUfvlrlEWuZc5h1PCkpDQU9x8TnE4vYm+S6Y3+73NGYut7Ytp3NmjYLC37tq4U9wYUL5kfWjxsTU6Vbg3WDiBoR9Ys5GhB+ig4CNOw9ThlY5j7UYoVr6dzGQs8uDtEgLHHHL1PO8VKTcHzXijuGv8Y+5I/LYtmGaxyLNaimavgZ1UTV4Ukm+6FG/ZlFhbM1NbU0bJYO8C3NfT6cSp/MvlgvgSAaovDU/CniklGmdE39afrEIeP43QrNAyigt9Xn8uPjf9RYA0UnLcc90P9ds80N0iL1YLgDolteZs5Pjns4vjU3pgM2FTD6UoizGggLJgylbIrXl/w2CadL9zz3+CwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACaklEQVR4nKVWgbHiIBDlz9hArgQsgRbyS+CXEEvQEs4STAlSginhKMGUICXkeITFDULMeTuTEZLdfbuPB7gTdZvEv9tX7UMNaNJai3EchZQyvRyGQTRNI5xzom3b8A4+mMdnqoGtdRSCrbXhFwAwpVQA5AD0bc1WgZAAHREYDGMqgkDo20dABILKac4T0ngLyFugUjLeCS/kYyACy0G5kVgI/GMgGE+SL3zXdQGMuloDKwEFaXPF5cBkpD6y2HlR4tWOjDGLxKwTJAmbOe9kTeZFIFT6uF+FNX2an4wjkPCLyn/rxtN39IA2dH/o68IoAt2vxzReU9XxchUu7it0A+BY0Dagxu9+JKDdb8dy8OxjN0m8CIQEfX+uAnADrVv8ikAAIe5R7c850JMr6evX92maHrfU2eFsNgNNWi25B3WR+1y2QQxkEMPRB5+NF8YoXiT+0tH1dktj4r5GTTgVYjcQA/y1aor+HChUSJKmbt4dLUQvP460csI3tuhq0REdknhQFQqTnh0zs/iyRn7tJuwE8rceVMnypn2hDkG4Pds4X1tg8seaEhPwL2HtSkHgfRjMPPcLHFVXNH7Vc0HUgJLa8gTvNiMJAkbXSddKMXjp8XVKHel2Pg1wKvyP1cSTgGYhWCHFU0lZUHGVpVTBPzlVLskElP+14tWBVk/Dww+/2efbn4vectahQJeAkJQCuMQza/mE30e8iywukLSLiHt/l9zxFvuCrmwl56Aool4s6eu9GrtLN7NAl14UAdkPDagjeIGWxgc/pfe0kyjbwRd4KbxHLsefXRyMrNq9KC98E31z22dzVxr/BQYw3/FUsfKJAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -4,
+      "y": 29,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -5,
+      "y": 29,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 3000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 80,
+    "reqJob": 8,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incLUK": 1,
+    "incPDD": 21,
+    "vslots": [
+      "Pn"
+    ],
+    "islots": [
+      "Pn"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom",
+    "lowItemId": 1060000,
+    "highItemId": 1070000
+  }
+}

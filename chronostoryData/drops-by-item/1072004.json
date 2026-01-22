@@ -2,7 +2,6 @@
   "itemId": 1072004,
   "itemName": "White Gomushin",
   "chineseItemName": "白橡膠鞋",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1210102,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

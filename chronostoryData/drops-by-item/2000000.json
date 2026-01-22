@@ -2,16 +2,26 @@
   "itemId": 2000000,
   "itemName": "Red Potion",
   "chineseItemName": "紅色藥水",
-  "totalMonsters": 16,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 20,
       "displayChance": "20.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230103,
+      "mobName": "Trixter",
+      "chineseMobName": "黃蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 4,
+      "displayChance": "4.0%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -180,5 +190,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 17
 }

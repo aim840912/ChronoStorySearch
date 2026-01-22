@@ -2,7 +2,6 @@
   "itemId": 1051013,
   "itemName": "Yellow Engrit",
   "chineseItemName": "黃護身鎧甲",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3110100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

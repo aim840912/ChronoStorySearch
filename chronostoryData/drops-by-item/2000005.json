@@ -2,7 +2,6 @@
   "itemId": 2000005,
   "itemName": "Power Elixir",
   "chineseItemName": "超級藥水",
-  "totalMonsters": 10,
   "monsters": [
     {
       "mobId": 8130100,
@@ -14,6 +13,28 @@
       "displayChance": "100.0%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 6220001,
+      "mobName": "Zeno",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 20,
+      "displayChance": "20.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9300476,
+      "mobName": "Zenomega",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 20,
+      "displayChance": "20.0%",
+      "minQty": 1,
+      "maxQty": 20
     },
     {
       "mobId": 6230100,
@@ -113,6 +134,51 @@
       "displayChance": "2.0%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230131,
+      "mobName": "Gray Commuter Saucer",
+      "chineseMobName": "新葛雷白",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230132,
+      "mobName": "Gray Luxury Saucer",
+      "chineseMobName": "新葛雷黑",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230137,
+      "mobName": "White Alien Drone",
+      "chineseMobName": "無人機白",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230138,
+      "mobName": "Black Alien Drone",
+      "chineseMobName": "無人機黑",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 16
 }

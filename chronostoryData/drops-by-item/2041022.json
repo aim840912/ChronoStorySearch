@@ -2,7 +2,6 @@
   "itemId": 2041022,
   "itemName": "Scroll for Cape for LUK 60%",
   "chineseItemName": "披風幸運卷軸60%",
-  "totalMonsters": 7,
   "monsters": [
     {
       "mobId": 6230500,
@@ -81,5 +80,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 7
 }

@@ -2,7 +2,6 @@
   "itemId": 1332001,
   "itemName": "Halfmoon Zamadar",
   "chineseItemName": "半月刃",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 2230113,
@@ -17,7 +16,7 @@
     },
     {
       "mobId": 2220100,
-      "mobName": "Blue Mushroom",
+      "mobName": "BlueMushroom",
       "chineseMobName": "藍菇菇",
       "isBoss": false,
       "inGame": true,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

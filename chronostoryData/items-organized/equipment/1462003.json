@@ -1,0 +1,56 @@
+{
+  "id": 1462003,
+  "description": {
+    "id": 1462003,
+    "name": "獵弩弓",
+    "description": "",
+    "chineseItemName": "獵弩弓"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 22,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABrElEQVR4nK3X63HDIAwAYLjLAu0IzgheoRmhXaUZIV2hIzQjJCswQhihGYFYnCULm4fA6I/v/OBDwsjJQdWHm49a7YgWWD0eN3U8ntwevAnuEU3wMIySrLNLUgP7gZz7F917+R7V+cfgcxtcCjsO3q+//pjI2n1+vCHKJx3gEtijiEGcvs4EF0qu1VLy4J4S7FFrDWFsQA/e/i4cV5Dt9f4MUFZ2ihxM6DQoYbGwxiC+QVnZi6Wml0iA6qkSPmuOc5RNJJoxrgO9tZJMMWAZIngS5TCB+BLNa1pC/bbJ4MnnEdZav7vVNREK6wclHYcFhyg1GL7GwV6UohDWPukC4sMYdLeN0fR14ihkCmHsMjC8cHDErYbBJqFTMG6HdZmKKHveTwBgWHecCJ6v6tVCNBqrBiTv1Q0oZRvbITk41n2qM01FMWPI1EwK60ISNJttCXaIQsCWgWx7oDk4aA6AzmAXNAVTG4x9znqgMZhQKDHrSKmuhuer0DW8QRPrGZ1EDcrhVKaloIxVZRxS6N59KoGDLdOIavww1MB6agyuQ0eqeoZ+CExglz9j0ngByyxhvtEXSkUAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB8UlEQVR4nK3Wi3GDMAwAUPsuC5ARyAh0hGaEdpVmhHSFjtCMkKzACGGEMoJr+ZAQRvKHoDuOHgE/SzaiB1Mfbjpb80Jsgc3zeTen09m9gm+C94hNcNt2JVknl6QGDgM591d07/WrM5fvHp9b4aWw4+Dj9hPOStbu471BlE96gZfAAUUM4vx5IThTcmvmki/uycEBHYaeMDZgAO+/V44byPb2GBcoKztFCibUD0qYFEPfI75CWdmzpaZNVIBaX4mQNcc5yiYiZozrQLu2JFMMWAYBV1EOE4ibaFrTHBpemwSuPo+wtfboot+KUFg/KGnXzjhErsHwNV68i6UoxDCM9APibbfobitj09eJo5ApRD/MA8OGgzO+ahhsElaD8XWIy5RF2fNhAgDDuuNE8HpVry5ExYgaUHmv3oBSttIbkoKl7lOdqRbZjCHT3iusC5WgyWxzsEMUAl4ZyHYPNAUvmgOgE7gLqsHUBqXP2R6oBBMKJWYdSetqeL0KjeEVqqynOIkalMNaprmgjE1lHDRUybYpGDO+R8zigCBEhB790QoDSvjZlxm/Bp2Ajuwg2PrG4KKO9DYN0CighGMz7qLrCA7TMSIMYT2I6wT/OrRmzjaVaS7UzcJ3NZYWgfih1I4bE3/HxwrGcuRK2iiTSE10df8/4TR8+eJnP+oAAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -2,
+      "y": 32,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 32,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 1000,
+    "reqSTR": 0,
+    "reqDEX": 70,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 22,
+    "tuc": 7,
+    "incSTR": 1,
+    "incPAD": 39,
+    "attack": 4,
+    "attackSpeed": 6,
+    "vslots": [
+      "Wp",
+      "Si"
+    ],
+    "islots": [
+      "Wp",
+      "Si"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Crossbow",
+    "lowItemId": 1460000,
+    "highItemId": 1470000
+  }
+}

@@ -2,7 +2,6 @@
   "itemId": 4000131,
   "itemName": "Deep Buffoon's Rock Piece",
   "chineseItemName": "特貝爾芬石塊",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6400100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

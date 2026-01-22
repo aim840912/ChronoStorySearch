@@ -2,7 +2,6 @@
   "itemId": 1082098,
   "itemName": "Brown Lorin",
   "chineseItemName": "褐戰魂手套",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 6130200,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

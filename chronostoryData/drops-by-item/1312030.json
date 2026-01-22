@@ -1,0 +1,19 @@
+{
+  "itemId": 1312030,
+  "itemName": "Tomahawk",
+  "chineseItemName": "印第安戰斧",
+  "monsters": [
+    {
+      "mobId": 6220001,
+      "mobName": "Zeno",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

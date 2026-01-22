@@ -2,7 +2,6 @@
   "itemId": 1312007,
   "itemName": "Blue Counter",
   "chineseItemName": "青光斧",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 2230101,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

@@ -2,11 +2,10 @@
   "itemId": 1372015,
   "itemName": "Angel Wings",
   "chineseItemName": "天使之翼",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 6220000,
-      "mobName": "Dyle",
+      "mobName": "Dyle\t",
       "chineseMobName": "沼澤巨鱷",
       "isBoss": true,
       "inGame": true,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

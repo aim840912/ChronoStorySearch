@@ -1,0 +1,38 @@
+{
+  "id": 4031098,
+  "description": {
+    "id": 4031098,
+    "name": "萬能鐘錶發條",
+    "description": "啟動掛鐘所需的萬能鐘錶發條。",
+    "chineseItemName": "萬能鐘錶發條"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACGUlEQVR4nL2VjZGCMBCFNzPXgJZAC1gClnCUgCVACVDCWYKUcJQgJVxKkBK43fyRYNAk3rkzMjFh8r3dtwkfkBazZ47FbpICnzHUcMTfIMmsmWMFxMIFeBoVY2cvtNECYuAO+NwsC/UXPngD860Ath+CBYTC78DNsCwWWP08x8E0RAmI9twCm80PJYlrRfZ8HCA0IuCj4/F9FGa9/USBvTkRmxWIgD/LKBfP/ow9cJmhnhjaBLA/wqYF0WWn5iKPqdR6Thw9hHUnCaYxxS5/vFconNEx0r5Sc4kxlZoy9oApuhLfyLBm3G9BTOZSAHYzdTWJ0B5vgREq4FUh58qza0Fs2Rkdo9sVuYHgjH6q/Fe07HBaBCTd7ZxLODVXVcNDsHh/9AtI/bDANFnjUTbXGoxlNnGpFgE0JguS4UMvs6YqDAriAZuSEOy7XeyiSPiwtJhh44AJSmGX2heU+cTT4PKoQY0Nhvdd3xhwkUFQkLAxAS7ABMzx6oRJftLWjWUg+eKr2eAHweqS5DwcboFbAaZNKOsKhZSd+3JbLAKuF+mxyFiBqVf0h+kZ3JRaZ6zBtLkCO7cWbjzbAuhU6FLb4GeZGzAeoiCwCqYFcO4urD/FW/A7jwPBjgDfvP3HB9/0OBDsBfliDY/2+JWw4akevwx/1eNk+F95nASHd3nshXdHJu/rN4I1XJ7JUk68C6zhAPalsLqF/jN+AWR2YaHpLl2wAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACV0lEQVR4nKWWi5HCIBCGNzPXgJbglZArIZZwKSGWYEqIJZwlaAmXEkwJRwlSQm6XN0gSwJ1BESLfvw8gH1Bmc2Ssyl2kBD6jqe6EbZTkqp9zBeTCBZhPirFzJ4ZsATlwD3zt7cT5Bz9YD/OzgWo/JgtIhb+A+9FONhj9usYOH7MEZOfcAZvFv1oSNwjv2TRCqmXAJy/Hr9aY+eEbBd7NjliMQAZ8y6NafN6vWAO3Gc68wjQB7I+wmILssFNxUY4p1HpMbD2EXU4STH2yXb2+Viq8om2k80rFJfoUavI4Aia7tPjEAWPG4inI8VwKwGqmqiYROsdLYIQKeNfIsfbqpyA37BVto+cDuYngAzUV/gem7OtkBRSd7YxJOBVXd4ZVsHh+igsovViAc6c/yeIKwRhmY7fOCqA+paAYPt6l1xSFUUEiYBMSgv0ONl1kBRfLgB72HpigZG6oY0aec1YGl1sNzlhgeN7dewNuDpBkJGwqgAswAWs8OoHLKy0sLAOpbV7NAn8IVockY+lwBzwIMC1CXncopL34Dw+NFfC4yRwLjxWYakVfTFtwE2rtsQbT4grsnVq48OwKoF2hQ+2Ctzw3YNxESWBllRbAmD8RXsVL8JccJ4I9AbFx90cMvpjjRHAUFLMQnp3jd8yFl+b4bfi7OS6G5+Z49U1uwXhsUHm+muNPbPoM2wXfOWDuNAu/HCt5Xr+CjyDfDGPQmICohw6UqcY1XO7JVj7lgFvQr6RlHm8JMgVnDwV5Ch0VKPzj4kLBXNgPmwcXAtT3DrbDGxMWE8dX5uAf2117P2wxXCUAAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -1,
+      "y": 32,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 32,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 1,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Quest Item",
+    "lowItemId": 4030000,
+    "highItemId": 4040000
+  }
+}

@@ -2,7 +2,6 @@
   "itemId": 2040620,
   "itemName": "Scroll for Bottomwear for Mobility 15%",
   "chineseItemName": "褲裙移動卷軸15%",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 3000000,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

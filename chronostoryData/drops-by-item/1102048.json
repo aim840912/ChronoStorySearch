@@ -1,0 +1,19 @@
+{
+  "itemId": 1102048,
+  "itemName": "Red Musketeer Cape",
+  "chineseItemName": "紅色西麗斯斗篷",
+  "monsters": [
+    {
+      "mobId": 4240000,
+      "mobName": "Chief Gray",
+      "chineseMobName": "葛雷元老",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.16,
+      "displayChance": "0.16%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

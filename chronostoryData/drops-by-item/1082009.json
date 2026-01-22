@@ -2,7 +2,6 @@
   "itemId": 1082009,
   "itemName": "Steel Brist",
   "chineseItemName": "鋼鐵合金手套",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 5120002,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

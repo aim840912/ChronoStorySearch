@@ -2,7 +2,6 @@
   "itemId": 2041003,
   "itemName": "Scroll for Cape for Defense 100%",
   "chineseItemName": "披風防禦卷軸100%",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 1210102,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

@@ -2,18 +2,18 @@
   "itemId": 1040023,
   "itemName": "Black Bennis Chainmail",
   "chineseItemName": "黑獵人服",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.8,
       "displayChance": "0.80%",
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

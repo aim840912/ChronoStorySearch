@@ -2,7 +2,6 @@
   "itemId": 1040013,
   "itemName": "Blue One-lined T-Shirt",
   "chineseItemName": "青色運動T恤",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 100101,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

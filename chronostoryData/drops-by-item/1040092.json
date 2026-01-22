@@ -2,7 +2,6 @@
   "itemId": 1040092,
   "itemName": "Blue Orientican",
   "chineseItemName": "藍鋼玉鎧甲",
-  "totalMonsters": 7,
   "monsters": [
     {
       "mobId": 5130107,
@@ -81,5 +80,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 7
 }

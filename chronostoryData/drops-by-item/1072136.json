@@ -2,7 +2,6 @@
   "itemId": 1072136,
   "itemName": "Pink Goldrunners",
   "chineseItemName": "粉紅天使鞋",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6130100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

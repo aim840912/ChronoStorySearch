@@ -1,0 +1,37 @@
+{
+  "id": 4000124,
+  "description": {
+    "id": 4000124,
+    "name": "泥人領導者的記憶卡",
+    "description": "裝有操縱泥人領導者程式的記憶卡。",
+    "chineseItemName": "泥人領導者的記憶卡"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAbCAYAAABr/T8RAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/UlEQVR4nK2VjXGjMBCF5ZlrQClBlLApgSsBSrBLgBKghLgEU0IowSrBKiEqwbdPfxYYDL7JzhAcbPTt231a/RG/G/dwP2z98DfAESaISOOutb5vwf8X/ARDWGvTsy34O+CXsPgVX1rsiC1wgjVNZY/Ho4wAw+vbkZikhaoq97DtWzuOxiWzpXoJPFFWlkoFoBQb0TWdHPsCqsUgXkuP4MUyliQVFjPWrC4Q1Y4fhcusjM+RCD/4sGJRNcD3HHa9Xul8Ptu+703XXZxKJZVYgxsGKvUAjhflk64Nv7OhGD2RUkaoALSqSAEG6Cu4CX/kreRtZBwwVYOvnxXVkx6zGQT3ExdZC5OYBAM4wj8/a1chBalEotOaVDGKUgValp9dUQ3wwRhz50X06XTSDHVmkgyRQW2eQF23GtXhd1yigMNIVZL/HEuqn1yNMqPc398XiuA8CSTGCRrAUwLskYZV+yo8Eoh5LKmO4KQai6HnsdR+MawpI1iiFTBg27ZJY7+gOi/AXPXiALlcLuRg0UwuZQvpTwng8zAMlojVF38Xq41WDDPVOXjSa3Y1Nc1X+Mp6OF+jPYv6s9dd18XBIqqqkhPVARZj5DVx596lA2R1ZA6D1s3ROEUC/ZVeqTKVuHY8KWHhUBGIgQe+7ndxOnj/dD831yqYMTSZd4pN82IOnvS6P/eiOTYOMFqvoST+H1dWCaRkzOi2G4C5KbOB5FWHGf7ykPCqBUUoDgWDgpb0cHqshHO49nudk5jtBOcHbL+69jNgCTxRjROnPJKMJ1EMlFF6WcIbTrL7y5RE255wUrleNE3DyykZoWvgSYSXFSmSodbpOzdS3agKls2SwJxntytsubjtWFB8edVcE9VccjOIk8D85uNEcp+eXoAf0JqoMN/jOXC3Yi/EDRXCwnylZ/PAb/imlxTOf/sKPFEt/LnuFs6hARZDbwH3gFNw6ShsB70G2wvcC3aquXTidrsRu9KdSCuwXcC94BThGJyX8i3Yu2CnuigKfN5dyq34BxLj54fwo6lqAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADQ0lEQVR4nK2WgXGrMAyG3bu3gDuCGcEdgY4AIyQjwAgwQjNCGKGMEI8Qj1CPkKfftogBA3nv6jvXCcH69Euy3D/id8cjrm9HL/4GmGFCa22wGmMeR/D/Ba9gGM656dkR/F/AuzD+iaYRL4wj8ARrmsqdTifJAEv23aiJZISqKv+w7Vs3jtY7c6Q6B54pK0ulIlCKg9E1nRz7AqrFIPalMzgbxlJLBWPW2U0DrHZ8L7xnJT+HI/Tg3YmsaoAfKex2u+nL5eL6vrddd/UqlVRiC24JqNQTOF5VcLq2tOdAMXIipWSoALSqtAIM0D24jX/kvaRjZD1wigbNnw3VsxxTMQjKJ6Z2DkViJxjADP/4qH2EFKRqLTpjtCpGUapIS/xzG6oBfrPWPsiIOZ/PhqC+mCRBZFSbOlDXrUF0aI93FHAUUjXJX4+c6lVVI8wI9/f3VTM4dQKOkYMW8MkBqpGGVIcoPB1gP3KqGTyphjHknEMdjMGmZLBEKlCAbdtOGvuM6jQAS9XZBnK9XrWHcTF5lx2krxzA52EYnNakvvjMRhupGBaqU/As11TVumm+4k8uwGmO7iLqj950XceNRVRVJWeqI4zHSDaxUu6mC2SzZQ6DMc3JekUC+ZVBqbKVuHXUKVHCMSIQgxr4ejzE+S3UT/dz96lCMcYk00lxU79Ygme57i+9aE6NB4wuaCg1fcdMIgGXrB39cQMwLcqkIQXVsYfvXhJBtdAMxaVgEdBSPyudI+Er3ISzTk4sToKvBxy/ug49IAeeqcaNU5605JuIB8IogywRCk5S9ZeTE217xk3lc9E0DZlTkqFb4NmIm5VWWsZYT7/5lupbVSzZxAn0eap2hSPHx44E8ebN4pqpppDbQZwF+jddJ5LytNqAekBqWGF6xlPgy4qDEN9UNAzTnJ4tB96hxeQULt/dA89Ui3Cve8MpNMJ4mCPgK+BpUOh0PA6YkmAq+TkX0ve4wsPs/bQFZkkFGbtT6MT9ftdUlf5GWsBSJz7jyg64ZHXJ9xVYZiYDqMJHv3GhuE+Mr6vuCbRxuiWYQSpZvWGCNkVRpJG4LPZtjc1/fnKKc5tasT/czuflXIE5HCk8p2arYNzO99X7fwHGbQNIRfa6mQAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -2,
+      "y": 29,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 29,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

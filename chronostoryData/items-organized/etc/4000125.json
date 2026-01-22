@@ -1,0 +1,37 @@
+{
+  "id": 4000125,
+  "description": {
+    "id": 4000125,
+    "name": "葛雷元老的標誌",
+    "description": "只有葛雷元老才能佩帶的標誌，透過標誌好像能得到神祕的力量。",
+    "chineseItemName": "葛雷元老的標誌"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAYAAADjaQM7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACo0lEQVR4nLWWj7GjIBDGl5lrwJTglWBKkBJiCViClhBL0BLyStASQglnCVICt7sI4otJzD1vZ/yHwI9vd138Bf/X7HwVdDoCZqN7EbdZewMhivDyEGX2D57SBCc2DJl6gCS/AYzFqt8RMCF+owjrlDAgxSuUYMZ1x8NiZgaDavAmJXFfeLR4HK/MBrfBBY9TeEFtpBjjRisQP4VZFy/nthAjjB8pJWVJSp1cPH8K43h5d/VXgCwDBpCdpO9muO8hCTJfraxdJlK8tC6+vz8sQew8qdUaIE8LIHAMOhLmTSDETtn2y6MqSKxAYKy+tx0Cs0/axVbjv8ACoG1bKMty98At2LPVsvV9H+7HcYRPLIYx5H6/Q5q6DyVJkvDSGLMC0LPv9ynMPoN4ozYPjJ9nV24mxBYsgGRRw71vd690a1HvYAyigRrrGW12qsqgvVarjrEqP4ZcSte96h4SpO9vIGUBXVO4/WnDvLs90I3rcZx8CXyASek2wWHgrYHvY1VxXH17DN2lbJmwQYh3YQVl3cC1UsFlHhTDNRXEHeoY5ieiWHWNZqA3elaXMSzmWabuUUcwcT6f7TRNrACnn4GkbgiqaUIPiv+YyLI8wbEXhr1KluBGv6oF2ISJyGjlC6RCl2WQ4z8HxZYSqsb/jjx7/Sl4GKsjn5P/1SXnIzb6Bmcd7jnswg3D9eAWp14UlVU2apwhQTfEZci7rr0qTJYOJyUX6wDFrZKBVZXyuFclbAVTkECHVXxsXRWhgXHaU1wolHXzNUN5iSuQdJLfbjHiBMZaVYEpa4yagaGqNleqLhmM2ZJ5e0APyqij6BoGqq5D73QM1ZTaSq06xlVELgH8rFx5IN306NYMD/QlaISPBDawZW8r/jNYGCzBLBvpErtdE2/ZX8GQO41JXrJ1AAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAhCAYAAAAoNdCeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC00lEQVR4nLWWjZWjIBCAh/e2AVOCW4IpQUqIJWAJWkIsQUvIlqAlhBLWEqQEbgYEwRjPvfXmPSLyM9/8BfyA/yt6fjL6OQOmgz4Lx7R+AGOFnzzFM/2NP2mCipWBTD1Akj8AxiJadwaMsU90QltPDCDFJ5SgxnjhaTlTg0JvsJOSc1/YWmzne6Z92OCG7eInaIw8xryRBey3MG3zZcPmc4T5I0/JsySlRTafv4WZfLlw9XeALAMDILlwt0yZtacUyPzUvLaVSPmSsljPn1YgelaqpQTI0wIIHILOhDlhCNFTtj151gkSesAwV+uxU2D6zTjbGvwXmAe0bQtlWR7euAV7Z62Rvu99fxxH+ImEMAN5Pp+QpvaPkiSJn1RKRQB6d+t+CtPvIE5ozAHD9zmUmwWxBfMgXtTw7NvDlm4Z9TeYAdFGiecZXXaiyqC9V9HC0Cu3h0JKz6PevRRI3z+A8wK6prD304a4cDug3dfjPr4LfIFxbi/BYTBXg+mHXoV5deMh9JBni8IGIS6EFZR1A/dK+JA5UAiXdCAe8M7AnCLKVddIA3RC7+I2emPeVeoR7wjGrternqbJeIDqZyB5N3ivSaEDhV9MJFme4N6bge0Viw+js2oBNl4RCVm+QCoMWQY5fnNQbqmgavzuyLP9v4KDGe8o5hR/cctNC4X+g7Mf9t3fwo2By8EaJ3YOlagaJWpIMAzhMeRC194FFkuHSinE0kPxqjTAqkrNvr0jLIIJSKDDU3xs7SlCG8Oyp7xQKuvma4YaEyMQty7TJxZZGZ0EIYxdQGktKlBljVlTMFTVpqXilsGYLZW3AvHZbQdSroUwsuSTdc03AUXXYXQ6A5VU2kJEwPAU4UsCa1jiG4LIstHBkrmRhgKB5pzqcSijYQylRPhI4PiIdNIEekJQJGvPnJjrl4NaroAldzXEonb6UfsIJsYVkPrXleKXpG9A3hrwBx9sU/dS8b97AAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -3,
+      "y": 33,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -3,
+      "y": 33,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

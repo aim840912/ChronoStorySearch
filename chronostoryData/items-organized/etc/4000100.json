@@ -1,0 +1,37 @@
+{
+  "id": 4000100,
+  "description": {
+    "id": 4000100,
+    "name": "塑膠王冠",
+    "description": "用塑膠做成的玩具王冠。",
+    "chineseItemName": "塑膠王冠"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADdklEQVR4nLWX4XGjMBCFlxk3gEuQSyAl4BJ0JZgSuBJCCaSEUwmhBFOCKcEqgdu30gphK/bcj9sMIc6h/fa9XYnLgZ5jzX6u6D9ECUrrytyviqpOCsjBK72Pt4UWoeR5ndnXId9G/qfB0hR/aa8uW8PXwsRzKuxHeAlaVccNArW4IxwDBfbNsJp/mLNVDFz4uvVcr6GSS2+UhodXqLpLAifJlmWifvQBMKGIurjY9j4VXAK/HCS1EQmGrpZkUAPnoUYKoKAwOFHv7sHz90qTlUh0Ghytd2TZHjBCjFfMbWL+vvU7B+DOaXhWm0PXu7E8KJvCW+9oOIYEUImAYmPaXaV2dGnwUBSenZ1l+FRUu1NaM4Q4n4VdcTCQQCtXSx0XZm0YKu8czR1PtPbbBL7jz1Lc4h6ZD/YiD0+k4ySoXncNFnusxdQuYaCYJeD6syfze6CWnxk6Bn8HcCh2Klqs0FV6p8A+VseLh3PNCaN7cKBhtTdPw4mtazjjvOijIZbwwcRfBJfE4gTelEZgqxlMSACVTbRy7pgT92gAn+mS9dfkamlrDYZzbq708fEh4IOo/A77TvoqAJcmM0VjyOTtAZiTD+dJwEv+bPYBhSzc15m/7vc7HY/H9aDeYNp0OLZmbkBcKMifmZdNK4ZnHjaOqhWV6EDj5O7bheHhqYNWnZJrpc1epfYOYLF53GRPOqlZCHB/ftM8zxk0Ty5ZKPUUQyXq1AXKhipTC3U5WFOhVt/2QctOKfe9sWwDJ7efOGT/MPhXSooaFIl9icAhoccgQreIAO3zgWB4nHNoVZ3CMM2Oko2PMbtt34rIrHdBBWg+KcSWCb3sBZiH2lvhPbhyn3DaBJNsOKFMsFhfawqlCBZ1jd9Z+ghsmkb6OQyDsPKeVuHdGQAAz3xv4kEBMNRg32nvcDKp0jxKQLU2V7oD46CfeAuZCK7tNqnol4kb1uohEuUv8QLQZoOHUJUlaLKHGIS9G0oP95r3XHuh/Xaa98ClHcmyOh0cqOy6LgFL0HUc8ULtCA6a/vkNkUC0nWKIyYzsQiP1qKUlYFEpbPli1mXpirwnUBNkK8x7nw6BErAIhSWXCzy8SILHqDNrYXpdb4c0nv/J0lfQCm+C6/UqPckTvgqFIXh9yvXT88X/gsZXkIQW8BgKyVS9hb2C7hbmBbyIf/rz4y9DPN90WWX2SAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADq0lEQVR4nLWW4ZWjMAyExXtpgJTglMCWQErwlhBKYEtYSsiWcC5hKSGUEEqIS+A0smUM8SW/Tvc4kizo04xkw4GeY8k+V/QfogSlZWHuT0VVJwXk4IXex9tCi1DyfJ/Z1iH/XflPg6Ux/mhvLruHj5mJ51TYP+ElaFUdVwjU4oxwDBTYL8Nq/jBldzFw5uPec72GSi69URouXqDqIQmcJJvnkfqrD4ARRdTFm23vU8El8MtBUhuRYOhqSQY1cB5qpAAKCoMT9eYcPH+vNFmJRKfB0fJAlvUCI8R4xNwm5u9bv3EA7pyGZ7U5dHkYy4OyKrz3joZjSACVCCg2pt1Uaq8uDR6KwrWTswwfi2o3SmuGEOezsCsOBhJo5Wqp48KsDUPlnaOp44nWfpvAd/xdipvdnrmzF3l4Ih0nQfW6anCzx72Y2jkMFLMEXH/3ZL4GavmaoWPwbwCHYseixQpdpHcK7GN1fPNwrjlhdA8ONKz27mk4sXUNZ5xmvTTEHL6Y+ENwSSxO4FVpBLaawYQEUNlEK6eOOXGNBvCZLll/Ta6W1tZgOKfmRh8fHwI+iMrfsO6krwJwaTJTNIZM3h6AOflwHgU859dmX1DIzH2d+N/j8aDj8bgc1BtMmw7H2swViAMF+TPzsmnF8EzDylG1ohIdaJycfTszPFx10KpTcq202arU3gEsNl9X2aNOahYC3O7fNE1TBs2TSxZKPcVQiTp1gbKhytRCXQ7WVKjVt33QslHKfW8s28DJ7Tc22T8M/kxJUYMisS4R2CR0G0ToEhGgfd4QDI9zDq2qUximyVGycR+TW9etiMx6F1SA5pNCLJnQy16Aeai9FZ6DC/cJu00wyYYdygSL9bGmUIpgUdf4jaV7YNM00s9hGISV97QKz84AAHjicxM3CoChButOe4edSZXmUQKqtbnSDRgb/chLyERwbddJRb9MXLBWN5Eof44HgDYbPISqLEGTPcQgrN1QejjXvObaC22X07QFzu2VLKvTwYHKrusSsARdrlc8UDuCg6Z/fkIkEK27GGI0V3ahkXrU0hKwqBS2/DDrMndF3hOoCbIV5r1Pm0AJWITCkssFHl4kwT7qzFqYXtfrJo3rd5YeS4U/DRKeBLfbTXqSJ3wVCkPw/fozbzVpzHx2PEFBOfGNd/1BC9iHQjJVGl/xrJ4oLL6PkM+hdTxA+NQquYDv91rph9aXodye4utgSen+hi96H/7F5/2xgaoFObjU1PT+8QL8qhD6CzaI+I0NcsZhAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -2,
+      "y": 30,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 30,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": 1082017,
+  "description": {
+    "id": 1082017,
+    "name": "紅命中手套",
+    "description": "",
+    "chineseItemName": "紅命中手套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAXCAYAAAARIY8tAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB/ElEQVR4nJVVC7GDMBA8ZmoACzwJVAJIAAlFAk8CSCgSioQioUhoJBQJedkLF0IetHRnOqRH2N37BE70PfRGLNrb/K2A1vd5lYlWRFG0El2JfSPA5HnphyyXE0Ukd2LRtwJMnsUJJUlCsfkBk1ImPiwujNjQmb29Te+ogG4SSwwIuQCiiwlFdbbcOyLgyENiuAdwT81riOU9rw+VaJf8KD5mkGbZZlzch1DTOv5OQF9iS3TUfUj+TkC/njeKTT2rn7MZ+eyfiD9FPpJLQY25/rb97hTpx/3K5JNxdH0+nEha1KTG3m0UcjQY7pvHjf933bInFGDyNE1pHEe+AiIChCJCjj0sataJl+3pHfk0icPJiUAgSQsa+9aNpjh3ZdoQ0LdrzaRt29LF1HFxOJkHYvugKZu4F3K4t3sUlzXmk65WAkxeFIUjl/oLeRxvHzCQd5OpeV4RshcRH5xBWbXUKFu7kNzHgPqi5nPdQU7ziT3nFU+eAKYNrz7JBowVXDiyYXDZAPnc5G4cCBGffF1Oa26zB3AM9xgzn1xwf0E5fGU7RMgCJpVa92DlIHQOwfJcWvL5AzNsuPdF/P8iEKFeTV1Q5r17MK6Lm5m8o0/Y/aJF6MONZxiv356bD2To9WCfy/td95sITzJnEroxJdEHnB8ScKRhbP4E7t3fxR80LitT2FauRwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACR0lEQVR4nJ2VgZGCMBBFlxkbyJXAlYAlQAlQgpbglQAlSAlSgpQgJVxKkBK4/IQNSQwi92cyxCXk7d8seKD/aYrEkncP/Ac0Tfd5ljMzoSTx4C/QvSANKSo3ZPa0cEQKC7XA3Y4AyUVKaZqSUAMapVTxfslGQftWre1muztBU50aAMQQFuBLMpIuuf/wpyALCQFwA+GenOeAFp2e7yrdKmSPPnKU5Xk0zm5CyfE1vgWaTsJs+KmbGGQLND1/byRUvc/fR/XK5C8wt+tcpaeSanX9abrNrpse96uGjCrD6+/DwrLyQnLo7EKGoBHgpn7c9O+27bwNYyANybKMhmHQV4hhUAhjCNZouJqngfsQ9AIZR854tDCA0qykoWtsS7MTW743oOl2vejNm6ahk6rzkvGoHhRmA1VOdsMQuDFrpC630F8O/9wOLqQsSwvh82GIEPEXFZB2VGdSnAnVYFgo66g6N1RLU9sQ4qpH/XEm87kAQnNnHYuz7lQWklf76s5jkF6IdkRWdtO+t+6gYm6GdugJERfil9kkGXXE5YMDuEF7uhDW/YkMwr8KqwSukKyU8TPyMgqdAFwdKwOZv/x9xI0Lc3+HoAT1rC8l5c63DW2+ZDdDWtrS5j9sgnO66XcAn/1ONwmUoyd683xhuvtLDUHr8g4pBOHBL7X504npDlClegROsg8gIw8GiWBUTrZcxx/lpJ7njRP328uHYaDu8uBsnjpXhrtXqI3E3jmych2tLVrLOLwXzr1xoMWeC4tlLFag7xKz8z/zgUcbYgf+ywAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -4,
+      "y": 26,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -5,
+      "y": 26,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 2600,
+    "reqSTR": 0,
+    "reqDEX": 75,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 25,
+    "tuc": 5,
+    "incDEX": 1,
+    "incPDD": 9,
+    "vslots": [
+      "Gl",
+      "Gw"
+    ],
+    "islots": [
+      "Gv"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Glove",
+    "lowItemId": 1080000,
+    "highItemId": 1090000
+  }
+}

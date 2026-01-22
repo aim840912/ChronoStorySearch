@@ -1,0 +1,37 @@
+{
+  "id": 4000099,
+  "description": {
+    "id": 4000099,
+    "name": "章魚鑰匙環",
+    "description": "用塑膠做成的小章魚形狀鑰匙環。",
+    "chineseItemName": "章魚鑰匙環"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABYAAAAeCAYAAAAo5+5WAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByUlEQVR4nK2VgXGDMAxF5bssQEegI5gR6AgwAoxARqAjwAjJCGUEGKEeoYygIoEcl8aYkPw7grDN49uWlRM8J1w9KwmeAWPf96C1vlGVQoEfBVvoBOMGekZECz/s2IHyT5Ik2DSN7X92jf997CVgmj45pdh1exTMa0hrSTC6xOn0Ebod2jx0XKqyLF+Wbkqga9BaW2DXjQB4+otT5RmzCcafC8LYtvzw3lmQcqGeMV4wFqDhnCe2gZ5bGHA9JhoGGMYR4ihyx9zdPMR+vR+zbDJdh7v9VVpA5Th3wQwdDWxLz05JXdexW1ffacPwYFYIhJXp8IcX/QGbc3sDFsWto57rAmb3l2kLbJdBHJppt+PlREkFe0QngbZ5zg1ZfbHw9voJRVbBEbHj0LpJprgz2gUOakmxCPaLwOotV3yK+OXJkZmuznSQxikclThmeBNntoOgsVO492rKYea5S6FKc0Ws+l0AI9kzHWnSx3C2HNexbVSfiU3W5fx74av+YHWzA6iofOma3dBdnHniYHUTIZ17EdUEmbYvDjm2omNNWVJ0muOU4kHPm0ox+Df3pX//D4FHPW9Q7caLY4p9B34LzLkdipfCzrH78i+XEuvQGeI61wAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACFUlEQVR4nLWVgZGjMAxF5Zk0wJbAlWBKYEsgJUAJSQmhBChhU8JRApSwlLCUoLMEcnzGTkLIasZBgNDzt2XlAPsNvXsVCtoLwr7vQWt9oyiFIdgekIWY5PyA7hExCNulyIHwT5Zl2DRNMPYde7SC/wqIlouUkB9TswfEe0B7QclpiBIDpctbigEdFaqqql8rbyWQe4m3gtzZSkJerkWJisRsAuHPF8LUtnzzp7OJlQuJxDwNwhI0nI+ZfUD3LQzoxyTDAMM0QZokbsxTxYDYI4TMFu91CL4/5SWcIKzMBzFkGuG+6VkJWdd1rMa177xZwZ6qOknKVujHEwnYCjSe2xugLG8vLnNfwyK8rFtAdtlEwWiqKV1OvHToV01ADGmPR74pLl8W1l5rKIsT7DWr6NG6SyW6il8CPbSlpBN4zQSkPo6KTzknMzMezejGDvI0h3eYq4hhTVrYBwRJI39k98ycIc4XA/HLarwinvqnEo5SnaYFkX0OZ5vHjw3tkVJ1Zg/L0r+iMO/95u5tP6Am+VdfeLZ0lZlH/M3dWwypb4lRT5NlivlbFVmjNkRVWHaa/Zz8Qc9FQj6sikVOwH/kQyTo1eNCph3IJENASWTM0Xre8IvrL4rI9xqUSBQI9Zzx4CRNnavAa3O2JE9r/DLg1+bcSEy9fLfaMFeRFeDFnO/4Elt5303+ODjyXFhoj4IzDTybQv4/El4GUMgATHsAAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -4,
+      "y": 32,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -5,
+      "y": 32,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

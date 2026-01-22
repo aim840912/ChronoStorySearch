@@ -2,7 +2,6 @@
   "itemId": 1060074,
   "itemName": "White Jangoon Pants",
   "chineseItemName": "白金褲",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 3230306,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

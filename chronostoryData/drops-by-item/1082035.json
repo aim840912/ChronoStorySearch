@@ -2,7 +2,6 @@
   "itemId": 1082035,
   "itemName": "Yellow Briggon",
   "chineseItemName": "黃輕便手套",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3110101,
@@ -14,6 +13,18 @@
       "displayChance": "0.10%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230103,
+      "mobName": "King Bloctopus",
+      "chineseMobName": "機器章魚王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

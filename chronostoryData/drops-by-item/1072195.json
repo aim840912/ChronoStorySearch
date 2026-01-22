@@ -2,7 +2,6 @@
   "itemId": 1072195,
   "itemName": "Red Osfa Boots",
   "chineseItemName": "紅扣帶靴",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8140500,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

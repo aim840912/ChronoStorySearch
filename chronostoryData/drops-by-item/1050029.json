@@ -2,7 +2,6 @@
   "itemId": 1050029,
   "itemName": "Dark Chaos Robe",
   "chineseItemName": "黑魔力長袍",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 5300000,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

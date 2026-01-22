@@ -2,12 +2,11 @@
   "itemId": 2000010,
   "itemName": "Blue Pill",
   "chineseItemName": "藍色藥丸",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8645263,
       "mobName": "Turbo Robo",
-      "chineseMobName": null,
+      "chineseMobName": "守護者機器人",
       "isBoss": false,
       "inGame": true,
       "chance": 4,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

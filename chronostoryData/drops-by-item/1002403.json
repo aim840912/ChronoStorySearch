@@ -2,7 +2,6 @@
   "itemId": 1002403,
   "itemName": "Blue Arlic Helmet",
   "chineseItemName": "藍色昂斯頭盔",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8160000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

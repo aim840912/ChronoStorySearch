@@ -2,7 +2,6 @@
   "itemId": 1492001,
   "itemName": "Dellinger Special",
   "chineseItemName": "迪林格火槍",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 9834178,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

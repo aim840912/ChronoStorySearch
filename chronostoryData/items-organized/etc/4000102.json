@@ -1,0 +1,37 @@
+{
+  "id": 4000102,
+  "description": {
+    "id": 4000102,
+    "name": "藍色玩具積木",
+    "description": "積木泥人身體的一部分玩具積木。",
+    "chineseItemName": "藍色玩具積木"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAXCAYAAAAV1F8QAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACJUlEQVR4nJ2WDZGDMBCFtzM1gIVYiIVUAicBC1hoJYCERsJFQmMhFpDA5S1sSCFQejvDNMCy3/4mvdJ5GVf3ly++pU+gZPz5epH3gde2f1DwfqR92TixB2Ijuq5pCIHuXUc/txu/UEpRFS8V1/ht2/bNgfg0OuHEiQQsgUYAlNaTYVOzoefvL1nnGDwMAxsEJHeAGF6R0Q2vXd8nYDEiQFSlSGuVngHirUv3ujb82947CkNAKqMTA1VVxZHyu+5Jztn4nR0PayQpgdTG8JW/wwWIOAB47mDf90l/FwQDHF2lNlA2OhuLsb85INEvKT4AQUnCXwNL0QIK40d2iiDkOzcLZQGWoCXAWnZBuJLHsQtR5DX0E/AIxO34mofTB8/eWWuL0KD2YVIfiU5ADDDorLpJs8GDqdBFOhl3M9Q0zWEEAuAaxewANNbRy/RwNiKKAQXFbMwg6CJCpFarbTRTqw9sK6/VNQewYljqk7fnWg/rOIjk4w7h4m6AYYVgltatnUBCNqYupkErzQ74VQtjBwEQcyTtXeq4BTRMWwe2C3wIw7lY2288/FY27Q2P/BwFAHvCwxgjYn0f6JOkiCBS8LMimcjhuT2In7p02r2hnMP4gyx9/0kbbMxNxWcSQBfn3IgZymEo/lnBTpFH45cB3xx8DMNCgKUk+mVbuvBRHu/zwXXLsXB4lPNLATbzCcseZoCN/nKKFgEl0Jty/3icMkAn/w39AfXNUHV1uHeLAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACcklEQVR4nJ2WgZHjIAxFyUwa4ErgSqAFbwm+EtxCWtiUEJcQSlhKCC3Qgkvw8hVkywTs5DTDGBvQk4QEPqv3ZS7eT+pDOYItgPvjoUKI1HfjVcUQZtWWqiEtGCmyfa+mGNX37ab+fX3RgDFG6dRM6uN5uVw2RqSvyRDPhmygNdgMiLH2qbzrSdn950c57wk+TRMpBUgaocgArTo7UN+P4wZa9Qwgo42y1izfAArOL++27+h5+b6pOEWENRkyKa01eUxjt7vy3qV1DtDT7p5xeCB911GTY2gAsREwQBo5juNGXxMGJeSlNi9gUpwVphhsjOAorOE+gGEih6KESs8kGIA9PU0Y4i9VYwFDa+AapCZNGNpiecpObHwJPoIewShVH7mAQwxkpXOuCo6mDeT9kl4yjCAdMq4fltqh4jXILrsAfAZ3w7DrBUNoz3KUAJv7ZO0ykBXx5IhNRu1kGObCU4TZmlevnmUwka5y784SQpPjul9l6sp56KdiVSGdJD6dGihoCGqtlvYLjC3our4aEmssGRGK9MZJAyjqjFO/lYkrbHoeMzhasBjKpTg3Vi39VF5SH5aF7A0gLaGCTZ7R/ND25gXGVnMSvCscEWmA1AcJz+xdT30skEBaJEL5PyGEjpxoy50G2Ml7P6PGJBAJ8a7gRJFehfUQqF6eBESHobWAhvUIO9FvQXqXxe3XK+Xwt4AmMHTINzVZKiAv89fbuAmpwTYLxuu1VKJzK+WP6Jfjm82uwXjBX/HNFmPvyCSe1CRMN1oJqQFb6cogZE9kGCs24ikVf1aADQNKz1oT9wpt2ulv2lkMRHUcLt0A7xm39H8BoohqviiP9joAAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -3,
+      "y": 28,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -3,
+      "y": 28,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

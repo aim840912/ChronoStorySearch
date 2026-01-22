@@ -2,7 +2,6 @@
   "itemId": 4000129,
   "itemName": "Lazy Buffy Marble",
   "chineseItemName": "小丑瑞奇的球",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6230300,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -1,0 +1,53 @@
+{
+  "id": 1332004,
+  "description": {
+    "id": 1332004,
+    "name": "雙枝短刀",
+    "description": "",
+    "chineseItemName": "雙枝短刀"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 27,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABS0lEQVR4nL3U0XGDMAwAUOmuC4QR2hHoCPEIWYHOFFbICGSEMkIyAh7BtRxLpxCHEkDRB/iA80OyrQ+wj6DGSBdrNARFIqYfQEs0gl28OcKA8MsvwNc3BPPyIuZbzJJQCitUikoZatAKDcd4aZomYk7KShFLS7H5moZh9wm7wx7atgUaI171+813b8qQQH86wyGCJy8g6g+XorxmPNldhgz+FMA1KNBxiGuW8FKGz8A1KBKYd2baNHMyXItmGDJ82zRzwKWonMGu6+RYqF06CS5BAzdT730BnjfJK+gD2Pc9OOdoKG2OeitsVN4EMsbgKDCD/8YcVMCqqtIDKilFXdcP8BboGKRJA4Pq2UsxhRZBynINOIWagc9QU7CEmoNj9C2gRuXgW4MaTYG3PmYKMpqyfBfI6B04DEN6YQUKqkFudVYgo9LaLLPT8QcwZOJ+RWHanQAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABiklEQVR4nL3Ui3GDMAwAUOmuC8AIZIR0hDBCOgKdqayQEegIZYRmBDyCazm2TnHEH1d3Dg4kfpaw/Qb5w4o+0kdu1FpBIvoJYE7UgZ271IQB4b8/AKd3sNnLixguLktCKXKhXFTKUIK5UPvlPpqmcVjNZaVwpaU4/J3aoaiguF6gbVugPuJdPj989foMCTS3b7g68GYYRPnDrWh8Z3Gwpwwj+KmAe1Cg7eDemce1DMfAPSgSGFamXzRLMtyLBhgC/Fg0S8CtKO/Brut4W4hVOgluQW08TI0xCrxskDXoC9j3PdR1TV0+5uhshYPK68GIRTAJDOBsLEEZLMvS36CSUpzP5xf4CDQFaVAbQXFvVUyhKkhZ7gGn0GzgGJoV1NDsYIr+CyhR3vi5QYn6wMc5lhWMqM9yAVhsGN9oN32mEhyGwT8I4Mm1SoBrYCOuRnzn8jIYjzoXH65dFEyD1YwEdg/NRJSPtgASVsH2DOcmwpmWAimUP4wOkDxL+2l7QmMJ5sqoTUiblJl4Bn9bp/3+SVVKHwAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -3,
+      "y": 31,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -3,
+      "y": 31,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 2800,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 70,
+    "reqJob": 8,
+    "reqLevelEquip": 27,
+    "tuc": 7,
+    "incPAD": 42,
+    "attack": 1,
+    "attackSpeed": 4,
+    "vslots": [
+      "Wp"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "Dagger",
+    "lowItemId": 1330000,
+    "highItemId": 1340000
+  }
+}

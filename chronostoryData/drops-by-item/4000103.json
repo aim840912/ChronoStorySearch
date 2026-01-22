@@ -1,0 +1,19 @@
+{
+  "itemId": 4000103,
+  "itemName": "Propeller",
+  "chineseItemName": "飛機螺旋槳",
+  "monsters": [
+    {
+      "mobId": 3210206,
+      "mobName": "Helly",
+      "chineseMobName": "黃色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

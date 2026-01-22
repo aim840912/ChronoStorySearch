@@ -2,7 +2,6 @@
   "itemId": 1060069,
   "itemName": "Brown Piette Pants",
   "chineseItemName": "褐貴族褲",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 2230102,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

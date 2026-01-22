@@ -2,7 +2,6 @@
   "itemId": 2044112,
   "itemName": "Scroll for Two-Handed Axe for Accuracy 60%",
   "chineseItemName": "雙手斧命中卷軸60%",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 3220000,
@@ -12,6 +11,17 @@
       "inGame": true,
       "chance": 0.3,
       "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230103,
+      "mobName": "King Bloctopus",
+      "chineseMobName": "機器章魚王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -37,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

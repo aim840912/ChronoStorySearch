@@ -2,7 +2,6 @@
   "itemId": 4000016,
   "itemName": "Red Snail Shell",
   "chineseItemName": "紅寶殼",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 130101,
@@ -19,12 +18,13 @@
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 60,
       "displayChance": "60.0%",
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

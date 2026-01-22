@@ -2,7 +2,6 @@
   "itemId": 1442027,
   "itemName": "Green Surfboard",
   "chineseItemName": "綠色衝浪板",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3230102,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

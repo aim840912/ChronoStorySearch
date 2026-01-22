@@ -2,7 +2,6 @@
   "itemId": 1072306,
   "itemName": "Black Basile Boots",
   "chineseItemName": "黑色巴西里靴",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 5120001,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

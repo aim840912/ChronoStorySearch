@@ -4,7 +4,6 @@
   "chineseMobName": "殭屍猴王",
   "isBoss": true,
   "inGame": true,
-  "totalDrops": 52,
   "drops": [
     {
       "itemId": 4000026,
@@ -53,7 +52,7 @@
     {
       "itemId": 0,
       "itemName": "Meso",
-      "chineseItemName": null,
+      "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 468,
@@ -152,7 +151,7 @@
     {
       "itemId": 2041028,
       "itemName": "Dark Scroll for Cape for Defense 70%",
-      "chineseItemName": "披風防禦力詛咒卷軸70%",
+      "chineseItemName": "披風防禦力卷軸70%",
       "chance": 1,
       "displayChance": "1.0%",
       "minQty": 1,
@@ -360,7 +359,7 @@
     },
     {
       "itemId": 1492007,
-      "itemName": "Mr",
+      "itemName": "Mr. Rasfelt",
       "chineseItemName": "拉斯菲特之槍",
       "chance": 0.5,
       "displayChance": "0.50%",
@@ -578,5 +577,6 @@
       "questId": 0,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 52
 }

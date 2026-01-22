@@ -4,7 +4,6 @@
   "chineseMobName": "神秘的植物",
   "isBoss": false,
   "inGame": true,
-  "totalDrops": 1,
   "drops": [
     {
       "itemId": 4031165,
@@ -17,5 +16,6 @@
       "questId": 2086,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 1
 }

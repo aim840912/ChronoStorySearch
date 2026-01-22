@@ -2,8 +2,18 @@
   "itemId": 1040110,
   "itemName": "Dark Pirate Top",
   "chineseItemName": "黑隱者之服",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 5120100,
+      "mobName": "MT-09",
+      "chineseMobName": "機器人堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.16,
+      "displayChance": "0.16%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 8142000,
       "mobName": "Phantom Watch",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

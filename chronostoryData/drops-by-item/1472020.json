@@ -2,7 +2,6 @@
   "itemId": 1472020,
   "itemName": "Sapphire Slain",
   "chineseItemName": "藍寶手甲",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 6130102,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

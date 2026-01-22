@@ -1,0 +1,52 @@
+{
+  "id": 1102082,
+  "description": {
+    "id": 1102082,
+    "name": "破舊的黑色披風",
+    "description": "",
+    "chineseItemName": "破舊的黑色披風"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAbCAYAAACAyoQSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABzElEQVR4nK1WUbGEMAyEGQxg4SxgAQtYwMJpwAIWsIAFLGABCbzbDtsJoQ153O0PUEI2m6QpVeHH7rApPY48pIGs67q4sG1b0nCeZwZmkt+R7m3bFk3TFMMwhIW6rk8GfIYNbPE8TdNuEVuk++v1Ck6WZSne73cghkqoxjtgXddwpXrY4r1FbCpF9HBGxyDGPRxLIknOYCzkSENa4QDqNBmC+SiJxlTOVOdqfkcaHJCQ+DRKDEDWFusIUpJZKc6SyjSBBMokEUhAxjXc930fbJ8oDalltyKl0vk4jtF5DrC1iJNKderwTEfHlgh11d/IgKyg/jORTkAG9J71Ikkq6/nUMXwcXX5pJk16qqdGLgCm3YuL0qfK+C1qCZVWF19IPRPFAreOBbORvlHtJTXr6YUONDWZKusD4K5JcnVDmTirNSpt+AuwmXKTiaQhtRJanaVYv5PNlJpMUSnbXRPfDW8LPIuPLRTrGkl5dn5DQLXyigxqMa7Z65k4KRsOCT0SQZqsp2ePgiiVfplWuUYEpYhCp8A6mhJArU7/xTj++NfBALhnK2mkopInw67TJ4KiXXk0ywkgg29pD9Ly00DmfyrfKadlzo44/F7W/wAhFjXkK3KxRAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACFElEQVR4nK1WgXGDMAykdyxAR6Aj0BHSEbJCOkI6QlmBFTJCs0JGKCOUESjv432PMMJN+nc5gxF6vSSLlEU+xgybpxxHOaSB7Hg8xo1hGJKG1+uVgbnke6Tj4XAomqYp2rYNG1VVLQx4DxvY4v5yuYwesUc61nUdnNxut+J8PgdiqIRqPAP6vg8r1cMWzz1iVymihzM6BjGu4ViJlJzBeNgiDWmFA6izZAhmUhKNqZyp3qr5HmlwQEJiapQYgNYW+whSybwUb5JqmkACZUoEEpBxD9en0ynY3qM0pJbdipSq867rovMtwNYjTiq1qcM9Hc1HItTVvqMBeUH9ZSItgAzYM5uLJKnW817H8DF3+aqZLOminhZbATDtuVgpvVcZ30UtodLr4hVpzkTxwKPjwW2kR1Tnkrr1zIUNNDWZSu8FYK9JtuqGMnFWW5TW8D/AZtqaTCQNqVVYdZ5i+0ybKTWZolK2uyXeG94e+C2ej1CsayTlt/MRAqrVFRm0YrJmb87ESdlwSNiRCNJkPXPOKIhS6de06h4RlCIKmwLv05TA8/T70Q18/vivgwHwzJZqZKJ6ER/fNn0S1BvixjrtfdloQAbfYh/S+zQ10DhHW8mvmVfgYyb6FH/sOtRmULto0La0f8XrtKNSEtayFkLKtROfe0UHwbsEFKHdq06soXdYB+fa/hak2OgNcUpJtRGAF+TK/hfbCExoxUpVWwAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -2,
+      "y": 30,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 30,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 1,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 25,
+    "tuc": 0,
+    "incPAD": 1,
+    "incMAD": 1,
+    "vslots": [
+      "Sr"
+    ],
+    "islots": [
+      "Sr"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Cape",
+    "lowItemId": 1100000,
+    "highItemId": 1110000
+  }
+}

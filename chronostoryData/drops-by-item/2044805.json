@@ -2,7 +2,6 @@
   "itemId": 2044805,
   "itemName": "Scroll for Knuckler for Accuracy 100%",
   "chineseItemName": "指虎命中卷軸100%",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2230110,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

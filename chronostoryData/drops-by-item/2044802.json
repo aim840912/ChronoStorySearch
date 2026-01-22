@@ -2,7 +2,6 @@
   "itemId": 2044802,
   "itemName": "Scroll for Knuckler for ATT 10%",
   "chineseItemName": "指虎攻擊卷軸10%",
-  "totalMonsters": 10,
   "monsters": [
     {
       "mobId": 5220002,
@@ -60,6 +59,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 2230103,
+      "mobName": "Trixter",
+      "chineseMobName": "黃蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 3110100,
       "mobName": "Ligator",
       "chineseMobName": "鱷魚",
@@ -94,7 +104,7 @@
     },
     {
       "mobId": 8140100,
-      "mobName": "Dark Yeti and Pepe",
+      "mobName": "Dark Yeti & Pepe",
       "chineseMobName": "黑吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -114,5 +124,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 11
 }

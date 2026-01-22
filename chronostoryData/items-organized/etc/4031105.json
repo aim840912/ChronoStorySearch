@@ -1,0 +1,38 @@
+{
+  "id": 4031105,
+  "description": {
+    "id": 4031105,
+    "name": "葛雷隊長的細胞",
+    "description": "紀錄著外星人各種資訊的DNA細胞。",
+    "chineseItemName": "葛雷隊長的細胞"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADpUlEQVR4nLWXj3HqMAzGxd1bwG8EdwQzghkhHSGMACPACM0IZAQ8Ah6hHgGPkKdP/kPSAk3aPt+15oqtnz5Jlt0/tGwMo8+rn+xZAh7O1wtZFckFos3LZpgBH07XMx1dpBg8hf2x7lkCXm3+rsV7OHB+P38FF+i+cwBWG+XD0lDLRjhgTqcvF0Nphn5ybim4DoQuj+HuAq2f7v82OPhAUK0ZEEKQGcO7npQ25Pf7XwdLmNvGkPORrFHkSDNMcxSCQMWJw2EclV8Bi+Gu93RoFPVRU2sCzyRw6BYnsnJ92E2q+bvgoblcxPDBcOEwplGeoabOiEDXOzK2qWF/pnjWmWyvVzJ8jjV5spxj0pG2ZOVvGJh9VPIZecdAuJEa//o6YQA8vA9nelk9P5OAQpWNDAn8ozm3StFbdJxjJeq5zKjjI2SslXyHvPlerkWxeqISvybQLhuxmrUmBwBFoSGsxmblOd9F+V1wCc8jIFwXCENDz5gmn9Gsuo2eNHLL4W85951nZ7JKqFX6szQBd2y4ubxTv34RYCmgN0phtMpV6GSoZBB5bpB3gaevSrg9g2OMd8Grfp1bYNNQs9tRq/i48CanLJt0KacQWJTubJphEHnmNR2l6lW5kUiOH4S5KgYcVYczh1BZLhiL8MQbFDlNUniWik5hRt4xS2FxiBHWAk1hNqhoYYzTODnHtuXDTjgirML3YjxJVbdKxjoz6sMqFRdGaSRJcYq57/uyUoD60HJD6W7nGHmFpzB80j7BkENT4AlCgVslf5+DTVtuGuX8uoC1SS2UAm5bQ2qHfo47mQQK9VPFDGF/2Fgyy1ulYiWkZZFOHSrkplE6VhklxLKU7Xl+NcRjN8ZMHwLYgOp2XBzWJKPiRK5YlysYDqDw/OhSiLmIPhaTYucy9PF9XK43VGXLIIRwS6kHC6x0JrpdClhvchWPleLKbDi8/fr+I2ACLg0d3m/zXJuBSVVbOhR6ndJln5sYnAMdg1e4unCcqIZQSyfC7HwKKYpI1QvfSZTg8HjMgU4UY6AYSp7KgQGsaMIdrEdPmrIWKqV6ee0c6Efwym32gz0f2FCsNwteF1CF+1WeqPnv4xtnKfST4gI3p12CoENxG5WZ+gqUyx33MqtPwPq+mvvIv/sC4fYpTxWCA0px5TYApOPk+BYwDA5HNz4+s4HPwNVQceDjULgkEnQx8CvwxIHRGOzljYJ7fOv8FngCNacEffTfwf8Cc+i35eOPoBj/ALMaKm7BRHrYAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD4UlEQVR4nK2XgZXiIBCGx/euAa4EtgQsAUuIJcQStAQtYVOCKUFKkBKWEqSE3PwDRKLR1b3lvRzZCHzzzwwD94fea0P1vvifOe+Ah9PlTFZFcoFo9bEaXoAPx8uJDi5SDJ7C7jDOeQe8WP1divUw4PR1+g4u0F3nABzXKC/vulomwgBzPH47GEoz9M64d8Fjg+tyG2YHaP10/o/BwQeCas2AEIL0aN71pLQhv9v9Oljc3DaGnI9kjSJHmmGavRAEKkbs97VXfgUsC3e9p32jqI+aWhO4J4FDtxiRlev9dpLNPwUPzfksC+8NJw5jGuUZasYeHuh6R8Y2o9ufKX5pT7aXCxnex5o8WY4x6UgbsvINDb2PSt4RdzS4G6Hx6/WEAfDwNZzoY/F8TwIKVTYyJPCjObZK0Wd0HGMl6jnNqOMtZKyVeIc8eS7Wolg9UYl/JtAuL2I1a00GAIpEg1uNzcpzvIvyWXBxzyMgTBcIQ0PPmCbv0ay6jZ40Ysvubzn2nWdjskqoVfpemoA7Xrg5f1G//BBgSaBPSm60yo3QSVNpQcS5QdwFnn4q7vYMjjHOghf9MpfApqFmu6VW8XbhSU5ZXtKlmEJgUbq1qceCiDOP6Shlr8qFRGL8wM2jYsCRddhzcJXlhLFwT7xCEdMkhXvJ6ORmxB29JBa7GG4t0ORmg4wWRh3GyT62LW92whZhFb6XxZNUdc1kjDNVHVYpudBKIUmKk89935eRAtT7lgtKd93HiCssxcJH7RMMMTQFniAUuFTy79nZtOGiUfavCxib1EIp4LY1pLao5ziTSaBQP1XMELaHF0vL8lTJWHFpGaRThQq5aJSKVVpxsQzl9TzfGuKhqzHTiwAmILsdJ4c1aVExImesyxkMA5B4vjoUYk6i22RSbFyGPj6Py/GGrGwZBBduKNVggZXKRNdDAeNNzuJaKY7Mht3bL+cvARNwKeiwfpP7sRiYlLWlQqHWKV3mucmCr0Br8AJHF7YTjS7UUonQO59ciiRS44HvxEswuG6vQCeK0ZAMJU5lwwBWNOEM1tWVpoyFSsleHvsK9Ba8cKvdYE97XiiOJwtuF1CF81WuqPl7feK8C71TXODmuE0QVCguo9JTPwLlcMe5zOoTcLxfvXrJn72BcPmUqwrBAKU4cxsA0nZyfAoYBoeDq7fP39zPnbBx5tvDq48sxAZc5n5UOCQSdJU/zd9vrtBYPbNgdfOs6aoC/d6ePym4Uamt5s4qq4AhP/EWXGC66st3tK05Jmj+30FHTy8vT42ZVfxwkl9vyuvtbT0+eb997sDFHTW8fl9W3+aUxCd/343/B+WIRT933PDZAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -2,
+      "y": 32,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 32,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 1,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Quest Item",
+    "lowItemId": 4030000,
+    "highItemId": 4040000
+  }
+}

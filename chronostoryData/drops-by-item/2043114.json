@@ -2,13 +2,12 @@
   "itemId": 2043114,
   "itemName": "Scroll for One-Handed Axe for Accuracy 10%",
   "chineseItemName": "單手斧命中卷軸10%",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.3,
       "displayChance": "0.30%",
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

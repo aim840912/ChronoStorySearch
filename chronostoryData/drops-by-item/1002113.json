@@ -2,7 +2,6 @@
   "itemId": 1002113,
   "itemName": "Blue Feather Hat",
   "chineseItemName": "藍羽毛帽",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1140100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

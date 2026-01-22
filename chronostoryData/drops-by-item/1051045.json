@@ -2,7 +2,6 @@
   "itemId": 1051045,
   "itemName": "Red Anakarune",
   "chineseItemName": "紅聖黨之服",
-  "totalMonsters": 7,
   "monsters": [
     {
       "mobId": 5100000,
@@ -81,5 +80,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 7
 }

@@ -2,7 +2,6 @@
   "itemId": 1061092,
   "itemName": "Blue Ice Queen Skirt",
   "chineseItemName": "藍鋼玉裙",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6300100,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

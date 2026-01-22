@@ -2,7 +2,6 @@
   "itemId": 1040093,
   "itemName": "Dark Orientican",
   "chineseItemName": "黑鋼玉鎧甲",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6130102,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

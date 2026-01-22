@@ -2,8 +2,18 @@
   "itemId": 1082042,
   "itemName": "Steel Sylvia",
   "chineseItemName": "鋼鐵暴風手套",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 2230104,
+      "mobName": "Green Trixter",
+      "chineseMobName": "紅蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 3210200,
       "mobName": "Jr. Cellion",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

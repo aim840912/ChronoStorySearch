@@ -2,7 +2,6 @@
   "itemId": 1092024,
   "itemName": "Silver Aquila Shield",
   "chineseItemName": "銀尖刺護盾",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 8140500,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

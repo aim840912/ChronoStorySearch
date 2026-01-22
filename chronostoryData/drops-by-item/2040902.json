@@ -2,8 +2,18 @@
   "itemId": 2040902,
   "itemName": "Scroll for Shield for Defense 10%",
   "chineseItemName": "盾牌防禦卷軸10%",
-  "totalMonsters": 7,
   "monsters": [
+    {
+      "mobId": 4130103,
+      "mobName": "Rombot",
+      "chineseMobName": "泥人領導者",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 8150000,
       "mobName": "Crimson Balrog",
@@ -60,6 +70,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 3230308,
+      "mobName": "Tweeter",
+      "chineseMobName": "特威德",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 8140000,
       "mobName": "Lycanthrope",
       "chineseMobName": "白狼人",
@@ -81,5 +102,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 9
 }

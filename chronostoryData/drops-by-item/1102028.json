@@ -2,7 +2,6 @@
   "itemId": 1102028,
   "itemName": "Red Seraph Cape",
   "chineseItemName": "紅妖精披風",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 7130101,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 1061077,
   "itemName": "Blue Moon Pants",
   "chineseItemName": "青月褲",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 5120003,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 2043101,
   "itemName": "Scroll for One-Handed Axe for ATT 60%",
   "chineseItemName": "單手斧攻擊卷軸60%",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 3220000,
@@ -10,6 +9,17 @@
       "chineseMobName": "樹妖王",
       "isBoss": true,
       "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6220001,
+      "mobName": "Zeno",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": true,
+      "inGame": false,
       "chance": 0.3,
       "displayChance": "0.30%",
       "minQty": 1,
@@ -48,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

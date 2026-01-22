@@ -2,7 +2,6 @@
   "itemId": 1041094,
   "itemName": "Light Mantis",
   "chineseItemName": "灰飛影之服",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 3210800,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

@@ -2,8 +2,18 @@
   "itemId": 1060076,
   "itemName": "Blue Shouldermail Pants",
   "chineseItemName": "藍板金褲",
-  "totalMonsters": 3,
   "monsters": [
+    {
+      "mobId": 4230109,
+      "mobName": "Block Golem",
+      "chineseMobName": "積木泥人",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 5100002,
       "mobName": "Firebomb",
@@ -37,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

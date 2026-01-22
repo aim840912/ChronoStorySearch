@@ -2,7 +2,6 @@
   "itemId": 1032012,
   "itemName": "Skull Earrings",
   "chineseItemName": "骷髏耳環",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6130200,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

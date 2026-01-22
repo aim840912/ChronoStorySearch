@@ -1,0 +1,19 @@
+{
+  "itemId": 4000099,
+  "itemName": "Bloctopus Key Chain",
+  "chineseItemName": "章魚鑰匙環",
+  "monsters": [
+    {
+      "mobId": 3230302,
+      "mobName": "Bloctopus",
+      "chineseMobName": "機器章魚",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

@@ -2,7 +2,6 @@
   "itemId": 1442029,
   "itemName": "Gold Surfboard",
   "chineseItemName": "紫色衝浪板",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 210100,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

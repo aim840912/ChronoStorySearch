@@ -2,7 +2,6 @@
   "itemId": 1082052,
   "itemName": "Blue Lutia",
   "chineseItemName": "藍守護手套",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3210100,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

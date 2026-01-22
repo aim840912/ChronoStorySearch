@@ -2,7 +2,6 @@
   "itemId": 1452006,
   "itemName": "Red Viper",
   "chineseItemName": "火焰之弓",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 3210207,
@@ -12,6 +11,17 @@
       "inGame": true,
       "chance": 0.07,
       "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230103,
+      "mobName": "King Bloctopus",
+      "chineseMobName": "機器章魚王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -37,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

@@ -2,7 +2,6 @@
   "itemId": 2043001,
   "itemName": "Scroll for One-Handed Sword for ATT 60%",
   "chineseItemName": "單手劍攻擊卷軸60%",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 3220000,
@@ -69,6 +68,18 @@
       "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3210206,
+      "mobName": "Helly",
+      "chineseMobName": "黃色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 7
 }

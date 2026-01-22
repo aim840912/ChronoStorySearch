@@ -1,0 +1,19 @@
+{
+  "itemId": 2043012,
+  "itemName": "Scroll for One-Handed Sword for ATT 15%",
+  "chineseItemName": "單手劍攻擊卷軸15%",
+  "monsters": [
+    {
+      "mobId": 4230131,
+      "mobName": "Gray Commuter Saucer",
+      "chineseMobName": "新葛雷白",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

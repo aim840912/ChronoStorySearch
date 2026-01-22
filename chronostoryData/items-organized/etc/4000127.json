@@ -1,0 +1,37 @@
+{
+  "id": 4000127,
+  "description": {
+    "id": 4000127,
+    "name": "玩具鼓",
+    "description": "兔子鼓手娃娃的玩具鼓。",
+    "chineseItemName": "玩具鼓"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABsAAAAZCAYAAADAHFVeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACgUlEQVR4nJWWjZGzIBCG15mvAa4ELMGUEEvQEmIJWIKWcJYgJSQlhBKkhKMEv12QKB6otzOZMbLy7L67/PyDuM3wN8uuOMVg83McQfU93DlPfmiqCozW9rlu2/kKcA+bp2kC0Ap4J4CxOIwVBUgMhhXM/qfgyro+BW5h8/R+g6xreOBkyYweD1BSAnADfJP5AdCXJAsyY4xZ6dj9vr5UagUZs/Hlu2cdiw2VGu3419dt9rD5B+UbMCtBoA1gn5XGOhlQwIAHUI5ikDL57eaz+4AkKQEbGRlmVGGd9C7qrXGUVy9NwTkLxtw34TutDf4kNE1Pf1cZNWZjBheBgbgxIWwHsiLMyj0z8CoLzucCgy/Lxg9nPjPb6rJpThvDZ5U0ZggEHS6L1kkXNIvNzJxMojFk8iEY23Xh1vpb/QH1Wv9aBh8ZqdO0SQnoAiIftnv/qlsXDP4qVGYBRedIbVe/MvO2rROBqkV6hQCJdRfPJ/R5noZVWPgiUnRvts9w0r5tA6gPgkBHqgQw2nrUMEBxsBcCrj+SkvO1iUg6D/IwcwC1MOuMH1WJbtSJeor3aJvCWzc9cQmdwLaTpmApIyCtMVrQxhx3tcts6Z4z3WPjDnTNCJYNUs4PXB+0mxcJKQ2OUZO0zQDfYxf3wZhxb6TH6FHzkVF0Hejtbg/h/kfdR7C6LK1cYdeeSxjAqK0pen50OiPsL7KlYB8p6XjZT+jbmdEY+gytBPEtAj/10nR42rnOYNYoK3WS3RoASUn1vSbhHpa1fW/vIPr1Cpx87XydbKPQ9aFz765ktYdZ5zzP5xGbhXYUd0aF7e6lKxY56dDFIE9BMZj9aLmaHVt4dbh0b/wPG+VQTBcGSLUAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACvElEQVR4nJWWgbGrIBBFNzO/AVIClmBKiCVoCbEELUFLeJYgJSQlxBJCCY8S/LsoBhDQtzNODCJn93IB/0E8ZvhbXM50igHn5zjC1Pdw5zz6sipLUFLq+6pt5zPQEHD+fD4AcgLeNcBYGMjyHAQmxHKm/1OCRVUdQn3g/Hm/QVQVPHDAWKjHAyYhALgCbimQgJrpuewqZIxpGdn9/m2cpi9MKasv9+5lKD9UbNTPr9fbbAPnX5RywOoaglkQvzqJ86ZgAgbcAXMUhRTKbjdT5QYTpAh4kjKsrMR5k172dnCUWq5G4Zw5z5Z33DYpFV4C6rqnv66kEqtSw5KJgnCwptHOZLlb3XLPwCjecD7nWEBR1Obxxa5QLwNR14dmMdVFgymCQYdLpl1kdAy0VagOBpKYOvUhIPPcaUd/qzZYL+VuiTiSkgOliom5JEV9mNf+qtolIbxKVGiFBcdIbW1OyMhyIFi5TsOEEIE+aJ5P6LMsDSzRDHnACCa0/3Dgvm0dsEmEYCl1dkDapqZhgDyxdwKuT5KV86+xSEYDM0CVAG9A/QK+WEZcKiPz27xHbRQT3eeJy+sE0B44BowFQWkN0qJXKu32b4Wrq47mIfR8gZ0LA7wMQswPXD90CuQRWRU+I+O09QA/Yxfug3njXqrHTAF1NF0H0j4lwN0vyZUErIpCS+e6+VjOHZAsT1Xw1CmPwL9ImAJustLR5A9qrM7oGfYZWgHNT+P0m16SDmA91hmgDqpuOqjymwTJSvN9Ts4Q8NL2vf6mka+Xl8hSiZk3bR76FOmWNqu6KyyHYtDuPpA6XrMs+x3RQLTzLGec+66RMV+lpYMbE6WmgpotmLIuB8i8q8LPvhGOwv0MaVeYCQOS66UM0EC49UvRW8mkwmTPAm27sCuMdU5tPSpx718b0JRtQ0NVxYyQSnDX/z+n5GxYdz5G8gAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -3,
+      "y": 28,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -4,
+      "y": 28,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

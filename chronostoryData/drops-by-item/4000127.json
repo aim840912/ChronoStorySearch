@@ -1,0 +1,19 @@
+{
+  "itemId": 4000127,
+  "itemName": "Toy Drum",
+  "chineseItemName": "玩具鼓",
+  "monsters": [
+    {
+      "mobId": 3230400,
+      "mobName": "Drumming Bunny",
+      "chineseMobName": "兔子鼓手",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

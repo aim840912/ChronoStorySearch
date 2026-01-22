@@ -1,0 +1,55 @@
+{
+  "id": 1482075,
+  "description": {
+    "id": 1482075,
+    "name": "1st不速之客指虎",
+    "description": "",
+    "chineseItemName": "1st不速之客指虎"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 47,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAXCAYAAABqBU3hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADQ0lEQVR4nLVWi3GrMBA8Zl4DcgmkBKUEXAIugZRgSoASQgmmBCghlBCVACXo7eoDgrE9zvtoRpYM4nZv7wO/5D8MNc8q7pfTaXl29p8QCIARVB3uOR6Rz5HQXxFIgO/NOJZ04pklJfJHBA7AebLm8piASSaJGJL4MYEEPALquF+6Pn/4XFVOAXwKUzE8LxNIEis/TA1gkpDvayWPGGRtxzMaRHYh+akCO+8BXPFicy3WAybcTEePq/ZaRSJuAyJnLi8RoPeI1/zofl2DhP2WM5QdEJELAKM81KTEBPBmryrruH+JAMHtZ9gbLWby0XgfR3jmobLszR+w1knUJDoQHKDcUqAxrC+HwPLno8ulUrmoYJfgX0UB4ySBQwjDhNR6yzIpoIZTxuHsxloFYT5VwAFLcXVLN7Y+3wHSTcaBc8yVJyEBLM9zGaGGsf7x1t0DWtenlbD2gkcELIHt0EjWI47aSPfWOmCOCJ4HNeZKi9KTZB+bASohzWeUnoA76Z81Ihs3BJf6LMvNJ4AC4hBQ8zXEiwN3DzZQox6lLEvp+z6CRwLpfv1/JGCZbKsnXS3N9yA1vKHXTF1dwhEDBZohMQkC7Xntf1pr5MOUoiqEoAQhqhBL+b4CzPKvQiHJWve/zloHrkP8PTnYabONNTyXapCl9dVVoy4tciApvbsvqiMBO1+3Evt0iGxdSnQDKXUlA8Ih2icdk60IuZDVncymllM3ys3O6AMhJKH5uDMbmbshWOPOMS2LlFqhWeNP6cE3Q+POAxLhfB99gl6gzozWcwKJBg5XoQlB/l72ubASsDTAuJ3a3nleFYlSSKaVAOMO6XneGONWyr1peJMbavXkSBSr5yH2aQ/YEVhH0zTyAYO9KmTQ8SJAOx9vxj+VfgVHuclVBQWYkAtIeMlD7ce5K8GVAL3ndMnDF0s+yrkvZBz3ySbu6cWVGFe8Iy7i34ZXgsYR3njR4ynZm3tfRBkMWhqN7VSjxgeqpv3/i/HxpeddB0mRHABn82c3MABkyaQfIimBuF/ufR/GENBNywRjyU29l5j93nmkvF2C86zz3oPt+rok9X289+jjNM0BRyKCpoOA4f52DQbDByfHdMf2U+A4fgOX66PraJjtgAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAYAAADLnm6HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADoklEQVR4nLVXC5GrMBS9zDwDqQRWQlYCSKASqIQiASQsEooEkLBI2EggEvLOzQcCA7R9n8ykCRByzj33Q/qL/kMT0yTCXF8u+mztPyHgAQOo2DyzPAKfLaG/IhAB7/XQdNzxjo6J/BGBDXAajSkdE1BRZyKKSbxNIAIPgDLMddulh++VxejBR98Fu+dlAlFgpZsuAcwk6Ode0hGDpGl5jQSRlUveVWBlPYBLvlnfs3mB8g/j1uGuuZeBiJ2ASM7DSwTYevhrOnpeVSBhfiiHsj08cgVgkIc1KdABvOxXFlWYv0SAwc2XnytJanTe+BwGWOagkuTDLTDGSlRHOjA4QHnKAg1+fNkFhn9ubUqlSEn4fRn8O8uwOZPAIrhhRGh9JAllUMMqY3FWbc4C308VsMCU3e3QDo2Ld4C0o7Lg3KbSkSAPlqYpDVBDGfd6Y58Bre3iTJhrwREBw8Cmrynp4EepqP1oLDC3AJ56NaZSkpAjJbdlA1aC6q8gPQOupD8rRCZMGJyqnPTDBYAAYu9R09nF2oLbF2uoUQ1UFAV1XRfAA4F4Pl9vCRgOttmStqL6p6cK1rDVHLqygCEKCtR9tCUINPlc/6SUiIcxRhVwQQFCrEJI5X0FOMq/M4Ega+x1lTQWXHr/O3LYp0kW1rCcyp5047KrQl4axECUersfqi0BM92XFPuyiFy6BMkaUsqSeriDpAs6DrbMx0JStTSpii7tQA8zoQ54l/jiY9csZHZdMPud26g1FVKgWOOicODLRsPKAibC/XNwAXqFOhNKzwUkahhc+iIE+Ttax8JMwPAG7LdL01nLyyxSCsE0E2C/Q3per5SyI8u9aPigB3L1Yklks+Xe93ENWBGYW13XdMOGnciol+EmQFvnb/Z/LP0MjnSju/AKcEBqkHCS+9wPfZWCMwG2nrsNHv6wpAPlXUbDsA42sm9rm2I84htxJfc1vDNoaP6LFyweo7naOxEl2NDwpqGcSuR4z6pJd31Vzr9sedtCUgQHwLn4czVQAOSUiQ8iMYEw13vnw+ACNtNwgHHKjZ2TmOu9tUi4fRmc11rrHdiqrlOU39tnR4fTOAYsiQAaNwb0z5fG64TQNlWEGFfWu/V21Hn+1qk4oefNAunbjTy4dj4R2rN1jN0Y1h+SOPsa7lWv5d4C8KzpaFwVoSMCZ8fsPTJ7YHv3t4G5S2DvqB2D7YE+a2//M9qe6V/dTJ/Mt/2QQJDpmdRHgXVGeJf8b7920yhO+FUvAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -1,
+      "y": 30,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 30,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 11000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 47,
+    "tuc": 7,
+    "incSTR": 3,
+    "incPAD": 48,
+    "incACC": 20,
+    "attack": 8,
+    "attackSpeed": 5,
+    "vslots": [
+      "Wp"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Knuckle",
+    "lowItemId": 1480000,
+    "highItemId": 1490000
+  }
+}

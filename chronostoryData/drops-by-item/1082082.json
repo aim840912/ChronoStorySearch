@@ -2,8 +2,18 @@
   "itemId": 1082082,
   "itemName": "Blue Pennance",
   "chineseItemName": "藍元素手套",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 5120003,
       "mobName": "Grupin",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

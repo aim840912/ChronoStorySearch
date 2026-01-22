@@ -2,7 +2,6 @@
   "itemId": 4000195,
   "itemName": "Seedling",
   "chineseItemName": "苗木",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 1140100,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

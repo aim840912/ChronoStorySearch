@@ -2,7 +2,6 @@
   "itemId": 4000039,
   "itemName": "Iron Hog's Metal Hoof",
   "chineseItemName": "肥肥盔甲",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 4230103,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

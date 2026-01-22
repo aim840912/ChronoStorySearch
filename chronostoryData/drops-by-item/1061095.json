@@ -2,7 +2,6 @@
   "itemId": 1061095,
   "itemName": "Umber Mantis Pants",
   "chineseItemName": "黑飛影之褲",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 6230401,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

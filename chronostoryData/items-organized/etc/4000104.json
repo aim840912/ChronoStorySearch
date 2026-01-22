@@ -1,0 +1,37 @@
+{
+  "id": 4000104,
+  "description": {
+    "id": 4000104,
+    "name": "飛機引擎",
+    "description": "玩具飛機零件之一的引擎。",
+    "chineseItemName": "飛機引擎"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACV0lEQVR4nJWUgXWrMAxFlXO6AB2BjMAfwYxARkhGCCPACDDCzwhhhHqE7xHCCP5+AjnChJKoJ7WrgO7Tk90v+jz8Rv6w9cInEC7+jzrKKXtmzbQ/DKXAV7B3If4vXUPxJGYAmZz8+UHkRjrUxxXsHUgEZOF37EIBKM8YQIMjb+5hDTA6eQHtQT4CcARAGr9BPgCMT8C9JiobeoTZfdOFu9mC7AOKsLcJgL9zNIYfS+7XTvz5fKbeWSqKgnKe9hjWnEyrAVI4m60K66PkAgK4B6Eltf7rFcA5NwOm8ySr6/Jp345rAApnrGdq6Kel4c911UkEVFUVCwPGvYxjzNlgSVYFI48ziCs/D7hp7EK5QLwUxAcgfNjqYeD1er0yCPksy6Znwmk1JXqwlPs6dkFmINcW65l0XRcLv4q2balpGhYhYDxvSR3ZmwlK5++wV5BokyiHUrEGgb8RdV3zHnYKKAZYlzCDn2c+ny2MncAKay3bIiHzQBcaJsGWhcdx6oZvvDcQ9MMqfSUjBABjTOwIBZGDath0Op24O+Rvtxvn+76fXDqPVPVZ7MgGq8LZpCNdkJkuI4rJwHWIZSjMd2cuKgLQfeqY6wtKY2GXWKDtk6Mb78p8h0QYVgGw4KSLBUQKSDGcNijHB8WgHiusklm9ihSwgGgAho/iojINdAdoatcrwKoTqNQhx1QuYQp5B7CAaNX6Duj7AhG6uOxh3xZAIIcA8HqIGpAqTgPvXS7bAN0Jg1L1GoAukE/nsAfQkMWDGqgVa4D8F9gDpBAd+kU/g2Ni3u8Wl/gPiwdcI6rP1ocAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACnElEQVR4nJWWgZWqMBBFx3NsIJaAJfhLCCVoCVKClAAlQAnfEqSETQmbEqQENi8wYYgBdfZkkw0wd95j4rqn72NY2d9tPfQNyAN+qaGM1Lyrx/Wuy7mAJPBT0PCfbg4QxQQhndFwfRLZnnblMQn8BBQgyv0OagSEMuUh1Fka9MPNDkiXQcLegb6C+HCQVGyBvoD0M+RREuUVPd27PFARVK2B3kNObm0iiL9mqXc/huxbRcP1eqXWGjqdTpT5DujdnJGuJYSTq8k2Nz9zn4AhD1dsTrVXtU9BrLUTZOwznm2Tjeu6f4UgufI1jcJ+aur+3ZKKAuR8PofkAHpNfR/2jLNHnZ2pxwnms8/NryvzYhODBk6KARgGous6P99uNw/DvlJqvMd1ss6hxVA2lEEN6Y5sfUqCqGmakDwVdV1TVVW+EIbjfkOine/aVTtdwzoCBctYASpmmxD4G1GWpV/DWoaFAK9w7+Rn3s+EnUERbDHGeIs4+P1AjQRyePvc7ejG7oDnOoIO2BYf2wACRGsdlCEp9lA9LLtcLl4l9u/3u99v23Z07NrTuVVBmXG2uZ6lIxXYmQ8sEnITyGD7kNyfrSkxFwEXYvdsu2yCpHVsh7SS2zqcpemMcXGYGeKLTqhZgDgJJ0QXQgEGEkIFZtjG7y4VKcgCJCFoCAC42jigEuDYujXIiyJUK4NbmA9qDPoUsgDJ6uUZkecJhUgAr2HlFoRBOwcZ5IuVkLjyOPBcUWxDpCIPi1VICNRgP34vn0AkaHGzhMrKJYQ/LVwciCgle1FR/P+IHziKvd8JHjamdc41bEB6HgxSKwNRJgpB8Mdz+tvIDEG72r1ImolZJt3uhnXIIqSitZvWKo6vxevF2NMsT8JSKsQ3gs1CkvA/XSp3ARHWG+8AAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -3,
+      "y": 29,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -3,
+      "y": 29,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

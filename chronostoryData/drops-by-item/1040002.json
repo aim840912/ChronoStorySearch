@@ -2,7 +2,6 @@
   "itemId": 1040002,
   "itemName": "White Undershirt",
   "chineseItemName": "白棉T恤",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 100100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

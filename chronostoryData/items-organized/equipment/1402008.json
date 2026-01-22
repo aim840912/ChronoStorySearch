@@ -1,0 +1,55 @@
+{
+  "id": 1402008,
+  "description": {
+    "id": 1402008,
+    "name": "鋼鐵劍",
+    "description": "",
+    "chineseItemName": "鋼鐵劍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 25,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABSUlEQVR4nMXW4Q2DIBAFYEw6iSvoCF3BFVxBR9BZnMUVXIX6rhyRFlH0wJdYG/7w5XGhfalnos27wMcTCL1GzfOs6roGpnikCQCWZVFd16lxHHVuhO7aFg0QoKoqWsyJ0FVZUgN4rw3werbjoAYAwDOvjzJDiUgjnKnnNW7AB5BG0NT3fU/DZjYKNpACQcGw8dQ37/chQByBFoZhoO8GQkMYAkgi6CimafJCQgAphAUgOA4PhGckCcIB4F2u9cdC7iC8gKZpvheSgSB8M+7lKiIIQPD7sLkVEdHjiAEEB/IqQhwQi0gCiEXYSAJiELYFacBZRFLAGcQuAJsjdwFnEE62gO0/I3UzIYTTggdwe/MjxB9Asv4zCC9Asv4jhHMh/QDEN99D2KSsP4SwLaSufw/hAyTf/BdBeQLACGqhKOy+WQGMYED2zTkfI01oY4X+YzQAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABjUlEQVR4nMXWgQ2DIBAFUEy6QDuCK+gI7Qiu0BV0BJ3FWVzBFRyBclcgoHCKnnoJ1ZjGe34utg9xT0l9zODjDoRUJYZhEGVZAia7JQkAjOMo6roWXdfJqxGy/n4hAQQURYEXr0TIIs8xATiqBMz1y7YDEwAArEEtoYcSihvhTb25ZhIIAbgROPVN0+Cw6UZkAmcgsGDYzNRX7/cqgB0BKbRti+cagkNIATgRuBV93wchFIALYQFQsB0BiJmRUxAeAI65ij8VcgQRBFRV9X8haQiUeTPGai+CBEDB74PzVoRi3Y4UADmQexHsgFTEKYBUhC1OQArCpsAN2Io4FbAFEQVAc6ijgC0Ir1yA+89IHCwK4aUQABxuvoZYADjj34IIAjjjX0N4L6QZgL15DGHrzPgphE2BiP+5o8e0FRECvHTTfAZIgUzOcRIRkLcdDqBUq9ANQ81DkNgTm+ajXovvAQJTyDKb+kf8n/5IAmuwBcIAXrqxaTa/AXXDiTifryDCHbxRrMf+jNyMQpOJ/ABOc4K95wmWhQAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": 0,
+      "y": 34,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 0,
+      "y": 34,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 1800,
+    "reqSTR": 85,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 25,
+    "tuc": 7,
+    "incPAD": 45,
+    "attack": 5,
+    "attackSpeed": 6,
+    "vslots": [
+      "Wp",
+      "Si"
+    ],
+    "islots": [
+      "Wp",
+      "Si"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Two-Handed Sword",
+    "lowItemId": 1400000,
+    "highItemId": 1410000
+  }
+}

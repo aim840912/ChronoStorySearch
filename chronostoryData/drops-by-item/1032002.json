@@ -2,7 +2,6 @@
   "itemId": 1032002,
   "itemName": "Sapphire Earrings",
   "chineseItemName": "藍寶石耳環",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 2230102,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

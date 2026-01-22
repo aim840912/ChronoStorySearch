@@ -2,7 +2,6 @@
   "itemId": 4000186,
   "itemName": "Dark Drake's Horn",
   "chineseItemName": "黑龍之角",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6230601,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

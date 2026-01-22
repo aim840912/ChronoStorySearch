@@ -1,0 +1,19 @@
+{
+  "itemId": 4000105,
+  "itemName": "Plane Controller",
+  "chineseItemName": "飛機操縱桿",
+  "monsters": [
+    {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

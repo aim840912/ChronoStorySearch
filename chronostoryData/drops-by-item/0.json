@@ -1,8 +1,7 @@
 {
   "itemId": 0,
   "itemName": "Meso",
-  "chineseItemName": null,
-  "totalMonsters": 159,
+  "chineseItemName": "楓幣",
   "monsters": [
     {
       "mobId": 2000,
@@ -239,7 +238,7 @@
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 40,
       "displayChance": "40.0%",
@@ -248,7 +247,7 @@
     },
     {
       "mobId": 2220100,
-      "mobName": "Blue Mushroom",
+      "mobName": "BlueMushroom",
       "chineseMobName": "藍菇菇",
       "isBoss": false,
       "inGame": true,
@@ -289,6 +288,28 @@
       "displayChance": "40.0%",
       "minQty": 44,
       "maxQty": 66
+    },
+    {
+      "mobId": 2230103,
+      "mobName": "Trixter",
+      "chineseMobName": "黃蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 47,
+      "maxQty": 62
+    },
+    {
+      "mobId": 2230104,
+      "mobName": "Green Trixter",
+      "chineseMobName": "紅蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 56,
+      "maxQty": 78
     },
     {
       "mobId": 2230110,
@@ -379,6 +400,17 @@
       "maxQty": 120
     },
     {
+      "mobId": 3110102,
+      "mobName": "Ratz",
+      "chineseMobName": "白色發條鼠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 80,
+      "maxQty": 120
+    },
+    {
       "mobId": 3210100,
       "mobName": "Fire Boar",
       "chineseMobName": "火肥肥",
@@ -445,6 +477,28 @@
       "maxQty": 126
     },
     {
+      "mobId": 3210205,
+      "mobName": "Black Ratz",
+      "chineseMobName": "黑色發條鼠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 84,
+      "maxQty": 126
+    },
+    {
+      "mobId": 3210206,
+      "mobName": "Helly",
+      "chineseMobName": "黃色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 76,
+      "maxQty": 114
+    },
+    {
       "mobId": 3210207,
       "mobName": "Tick",
       "chineseMobName": "鼬鼠",
@@ -454,6 +508,17 @@
       "displayChance": "40.0%",
       "minQty": 84,
       "maxQty": 126
+    },
+    {
+      "mobId": 3210208,
+      "mobName": "Retz",
+      "chineseMobName": "發條楓葉鼠",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 76,
+      "maxQty": 114
     },
     {
       "mobId": 3210800,
@@ -511,6 +576,17 @@
       "maxQty": 138
     },
     {
+      "mobId": 3230103,
+      "mobName": "King Bloctopus",
+      "chineseMobName": "機器章魚王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 96,
+      "maxQty": 144
+    },
+    {
       "mobId": 3230200,
       "mobName": "Star Pixie",
       "chineseMobName": "星光精靈",
@@ -523,13 +599,46 @@
     },
     {
       "mobId": 3230300,
-      "mobName": "Jr. Boogie 1",
+      "mobName": "Jr. Boogie",
       "chineseMobName": "幼魔精靈",
       "isBoss": false,
       "inGame": true,
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 94,
+      "maxQty": 144
+    },
+    {
+      "mobId": 3230302,
+      "mobName": "Bloctopus",
+      "chineseMobName": "機器章魚",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 76,
+      "maxQty": 114
+    },
+    {
+      "mobId": 3230303,
+      "mobName": "Propelly",
+      "chineseMobName": "粉紅色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 96,
+      "maxQty": 144
+    },
+    {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 96,
       "maxQty": 144
     },
     {
@@ -555,6 +664,39 @@
       "maxQty": 144
     },
     {
+      "mobId": 3230307,
+      "mobName": "Chirppy",
+      "chineseMobName": "邱布",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 100,
+      "maxQty": 144
+    },
+    {
+      "mobId": 3230308,
+      "mobName": "Tweeter",
+      "chineseMobName": "特威德",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 96,
+      "maxQty": 144
+    },
+    {
+      "mobId": 3230400,
+      "mobName": "Drumming Bunny",
+      "chineseMobName": "兔子鼓手",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 97,
+      "maxQty": 139
+    },
+    {
       "mobId": 4130100,
       "mobName": "Copper Drake",
       "chineseMobName": "土龍",
@@ -575,6 +717,17 @@
       "displayChance": "40.0%",
       "minQty": 172,
       "maxQty": 258
+    },
+    {
+      "mobId": 4130103,
+      "mobName": "Rombot",
+      "chineseMobName": "泥人領導者",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 423,
+      "maxQty": 2080
     },
     {
       "mobId": 4230100,
@@ -676,6 +829,28 @@
       "maxQty": 198
     },
     {
+      "mobId": 4230109,
+      "mobName": "Block Golem",
+      "chineseMobName": "積木泥人",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 123,
+      "maxQty": 190
+    },
+    {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 164,
+      "maxQty": 246
+    },
+    {
       "mobId": 4230111,
       "mobName": "Robo",
       "chineseMobName": "藍色機器人",
@@ -731,6 +906,72 @@
       "maxQty": 258
     },
     {
+      "mobId": 4230116,
+      "mobName": "Barnard Gray",
+      "chineseMobName": "葛雷族人",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 544,
+      "maxQty": 782
+    },
+    {
+      "mobId": 4230117,
+      "mobName": "Zeta Gray",
+      "chineseMobName": "葛雷士兵",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 561,
+      "maxQty": 806
+    },
+    {
+      "mobId": 4230118,
+      "mobName": "Ultra Gray",
+      "chineseMobName": "葛雷隊長",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 579,
+      "maxQty": 830
+    },
+    {
+      "mobId": 4230119,
+      "mobName": "Mateon",
+      "chineseMobName": "馬堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 437,
+      "maxQty": 634
+    },
+    {
+      "mobId": 4230120,
+      "mobName": "Plateon",
+      "chineseMobName": "培利堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 482,
+      "maxQty": 697
+    },
+    {
+      "mobId": 4230121,
+      "mobName": "Mecateon",
+      "chineseMobName": "梅卡堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 526,
+      "maxQty": 758
+    },
+    {
       "mobId": 4230125,
       "mobName": "Skeledog",
       "chineseMobName": "骷髏犬",
@@ -753,6 +994,50 @@
       "maxQty": 258
     },
     {
+      "mobId": 4230131,
+      "mobName": "Gray Commuter Saucer",
+      "chineseMobName": "新葛雷白",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 630,
+      "maxQty": 899
+    },
+    {
+      "mobId": 4230132,
+      "mobName": "Gray Luxury Saucer",
+      "chineseMobName": "新葛雷黑",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 647,
+      "maxQty": 921
+    },
+    {
+      "mobId": 4230137,
+      "mobName": "White Alien Drone",
+      "chineseMobName": "無人機白",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 679,
+      "maxQty": 964
+    },
+    {
+      "mobId": 4230138,
+      "mobName": "Black Alien Drone",
+      "chineseMobName": "無人機黑",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 695,
+      "maxQty": 985
+    },
+    {
       "mobId": 4230400,
       "mobName": "Iron Boar",
       "chineseMobName": "鋼之黑肥肥",
@@ -762,6 +1047,17 @@
       "displayChance": "40.0%",
       "minQty": 132,
       "maxQty": 195
+    },
+    {
+      "mobId": 4240000,
+      "mobName": "Chief Gray",
+      "chineseMobName": "葛雷元老",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 1226,
+      "maxQty": 1754
     },
     {
       "mobId": 5090000,
@@ -839,6 +1135,17 @@
       "displayChance": "40.0%",
       "minQty": 235,
       "maxQty": 348
+    },
+    {
+      "mobId": 5120100,
+      "mobName": "MT-09",
+      "chineseMobName": "機器人堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 1122,
+      "maxQty": 1612
     },
     {
       "mobId": 5130100,
@@ -1084,7 +1391,7 @@
     },
     {
       "mobId": 6090000,
-      "mobName": "Riche",
+      "mobName": "RIche",
       "chineseMobName": "厄運死神",
       "isBoss": true,
       "inGame": true,
@@ -1161,10 +1468,21 @@
     },
     {
       "mobId": 6220000,
-      "mobName": "Dyle",
+      "mobName": "Dyle\t",
       "chineseMobName": "沼澤巨鱷",
       "isBoss": true,
       "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 765,
+      "maxQty": 3770
+    },
+    {
+      "mobId": 6220001,
+      "mobName": "Zeno",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": true,
+      "inGame": false,
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 765,
@@ -1436,7 +1754,7 @@
     },
     {
       "mobId": 7130102,
-      "mobName": "Yeti and Pepe",
+      "mobName": "Yeti & Pepe",
       "chineseMobName": "雪吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -1524,7 +1842,7 @@
     },
     {
       "mobId": 8140100,
-      "mobName": "Dark Yeti and Pepe",
+      "mobName": "Dark Yeti & Pepe",
       "chineseMobName": "黑吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -1677,6 +1995,17 @@
       "maxQty": 900
     },
     {
+      "mobId": 8645263,
+      "mobName": "Turbo Robo",
+      "chineseMobName": "守護者機器人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 141,
+      "maxQty": 208
+    },
+    {
       "mobId": 9300038,
       "mobName": "Ghost Pixie",
       "chineseMobName": "鬼精靈",
@@ -1686,6 +2015,17 @@
       "displayChance": "40.0%",
       "minQty": 280,
       "maxQty": 420
+    },
+    {
+      "mobId": 9300476,
+      "mobName": "Zenomega",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 382500,
+      "maxQty": 1885000
     },
     {
       "mobId": 9300659,
@@ -1741,17 +2081,7 @@
       "displayChance": "40.0%",
       "minQty": 329,
       "maxQty": 482
-    },
-    {
-      "mobId": 8645263,
-      "mobName": "Turbo Robo",
-      "chineseMobName": null,
-      "isBoss": false,
-      "inGame": true,
-      "chance": 40,
-      "displayChance": "40.0%",
-      "minQty": 1,
-      "maxQty": 141
     }
-  ]
+  ],
+  "totalMonsters": 189
 }

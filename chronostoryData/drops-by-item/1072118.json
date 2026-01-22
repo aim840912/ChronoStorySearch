@@ -2,7 +2,6 @@
   "itemId": 1072118,
   "itemName": "Red Pierre Shoes",
   "chineseItemName": "紅精靈鞋",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 3220000,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

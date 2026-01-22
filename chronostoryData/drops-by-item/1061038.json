@@ -2,7 +2,6 @@
   "itemId": 1061038,
   "itemName": "Brown Nightshift Pants",
   "chineseItemName": "黃夜褲",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1130100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

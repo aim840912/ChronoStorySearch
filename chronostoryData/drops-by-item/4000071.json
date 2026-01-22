@@ -2,7 +2,6 @@
   "itemId": 4000071,
   "itemName": "Lioner Tail",
   "chineseItemName": "黃獨角獅尾",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 5120002,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

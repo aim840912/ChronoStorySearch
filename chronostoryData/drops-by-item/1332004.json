@@ -1,0 +1,19 @@
+{
+  "itemId": 1332004,
+  "itemName": "Forked Dagger",
+  "chineseItemName": "雙枝短刀",
+  "monsters": [
+    {
+      "mobId": 3230307,
+      "mobName": "Chirppy",
+      "chineseMobName": "邱布",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

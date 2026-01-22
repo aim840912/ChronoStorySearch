@@ -2,7 +2,6 @@
   "itemId": 1041105,
   "itemName": "Green Pirate Blouse",
   "chineseItemName": "綠隱者之服",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 7130200,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

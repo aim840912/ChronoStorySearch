@@ -2,7 +2,6 @@
   "itemId": 1082114,
   "itemName": "Sapphire Emperor",
   "chineseItemName": "馬爾斯藍拳套",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 7140000,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

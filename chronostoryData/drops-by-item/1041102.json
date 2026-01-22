@@ -2,8 +2,18 @@
   "itemId": 1041102,
   "itemName": "Pink Mystique",
   "chineseItemName": "粉紅朱雀之甲",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 4230119,
+      "mobName": "Mateon",
+      "chineseMobName": "馬堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 7130001,
       "mobName": "Cerebes",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

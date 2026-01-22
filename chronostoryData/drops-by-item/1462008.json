@@ -2,7 +2,6 @@
   "itemId": 1462008,
   "itemName": "Golden Crow",
   "chineseItemName": "黃金弩",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 5220003,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

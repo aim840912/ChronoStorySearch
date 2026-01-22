@@ -2,7 +2,6 @@
   "itemId": 1050002,
   "itemName": "Blood Chaos Robe",
   "chineseItemName": "紅魔力長袍",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3110101,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 1041068,
   "itemName": "Dark Legolia",
   "chineseItemName": "黑守護之服",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 9834178,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

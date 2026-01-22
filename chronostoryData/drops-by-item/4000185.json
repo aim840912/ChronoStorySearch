@@ -2,7 +2,6 @@
   "itemId": 4000185,
   "itemName": "Ice Backbone",
   "chineseItemName": "寒冰背部骨",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6230600,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

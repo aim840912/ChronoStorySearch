@@ -2,7 +2,6 @@
   "itemId": 2040357,
   "itemName": "Scroll for Accessory for LUK 100%",
   "chineseItemName": "飾品幸運卷軸100%",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6230500,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

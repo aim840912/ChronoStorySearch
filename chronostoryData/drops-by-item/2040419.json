@@ -2,7 +2,6 @@
   "itemId": 2040419,
   "itemName": "Scroll for Topwear for STR 10%",
   "chineseItemName": "上衣力量卷軸10%",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 8130100,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

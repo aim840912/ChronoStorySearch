@@ -2,7 +2,6 @@
   "itemId": 1452009,
   "itemName": "Red Hinkel",
   "chineseItemName": "赤神弓",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 8130100,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

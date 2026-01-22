@@ -2,7 +2,6 @@
   "itemId": 2040513,
   "itemName": "Scroll for Overall Armor for INT 60%",
   "chineseItemName": "套服智力卷軸60%",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 8220001,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

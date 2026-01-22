@@ -2,7 +2,6 @@
   "itemId": 1472028,
   "itemName": "Blue Scarab",
   "chineseItemName": "藍閃電甲",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5150002,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

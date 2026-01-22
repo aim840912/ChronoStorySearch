@@ -2,7 +2,6 @@
   "itemId": 1072121,
   "itemName": "Blue Pierre Shoes",
   "chineseItemName": "藍精靈鞋",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 3230102,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

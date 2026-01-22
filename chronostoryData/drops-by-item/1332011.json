@@ -2,7 +2,6 @@
   "itemId": 1332011,
   "itemName": "Bazlud",
   "chineseItemName": "刺客短刀",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3210204,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

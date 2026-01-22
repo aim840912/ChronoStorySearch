@@ -2,7 +2,6 @@
   "itemId": 1432001,
   "itemName": "Fork on a Stick",
   "chineseItemName": "叉槍",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 210100,
@@ -17,7 +16,7 @@
     },
     {
       "mobId": 2220100,
-      "mobName": "Blue Mushroom",
+      "mobName": "BlueMushroom",
       "chineseMobName": "藍菇菇",
       "isBoss": false,
       "inGame": true,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

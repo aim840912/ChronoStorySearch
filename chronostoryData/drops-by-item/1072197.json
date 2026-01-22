@@ -2,7 +2,6 @@
   "itemId": 1072197,
   "itemName": "Orihalcon War Greave",
   "chineseItemName": "紫鱗甲靴",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 7160000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 1072112,
   "itemName": "Mithril Trigger",
   "chineseItemName": "藍鐵頭鞋",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3110100,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

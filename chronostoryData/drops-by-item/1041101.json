@@ -2,7 +2,6 @@
   "itemId": 1041101,
   "itemName": "Blue Mystique",
   "chineseItemName": "藍朱雀之甲",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 6230601,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }
