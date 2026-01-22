@@ -7,7 +7,7 @@
   "drops": [
     {
       "itemId": 4009433,
-      "itemName": "#N/A",
+      "itemName": "Gray Saucer Controller",
       "chineseItemName": "迷你UFO操作器",
       "chance": 60,
       "displayChance": "60.0%",
@@ -73,7 +73,7 @@
     },
     {
       "itemId": 4010011,
-      "itemName": "#N/A",
+      "itemName": "Alien Ore",
       "chineseItemName": null,
       "chance": 0.1,
       "displayChance": "0.10%",

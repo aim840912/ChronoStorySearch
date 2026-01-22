@@ -7,7 +7,7 @@
   "drops": [
     {
       "itemId": 4032810,
-      "itemName": "#N/A",
+      "itemName": "Zenomega's Fist",
       "chineseItemName": "葛雷的手套",
       "chance": 100,
       "displayChance": "100.0%",
@@ -40,7 +40,7 @@
     },
     {
       "itemId": 4005005,
-      "itemName": "#N/A",
+      "itemName": "Chaos Crystal",
       "chineseItemName": null,
       "chance": 10,
       "displayChance": "10.0%",
@@ -51,7 +51,7 @@
     },
     {
       "itemId": 4010011,
-      "itemName": "#N/A",
+      "itemName": "Alien Ore",
       "chineseItemName": null,
       "chance": 10,
       "displayChance": "10.0%",
@@ -183,7 +183,7 @@
     },
     {
       "itemId": 1092070,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Warrior Shield",
       "chineseItemName": null,
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -194,7 +194,7 @@
     },
     {
       "itemId": 1092075,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Magician Shield",
       "chineseItemName": null,
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -205,7 +205,7 @@
     },
     {
       "itemId": 1092080,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Thief Shield",
       "chineseItemName": null,
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -216,7 +216,7 @@
     },
     {
       "itemId": 1302143,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Sword",
       "chineseItemName": "1st不速之客單手劍",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -227,7 +227,7 @@
     },
     {
       "itemId": 1312058,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Hatchet",
       "chineseItemName": "1st不速之客單手斧",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -238,7 +238,7 @@
     },
     {
       "itemId": 1322086,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Hammer",
       "chineseItemName": "1st不速之客單手鈍器",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -249,7 +249,7 @@
     },
     {
       "itemId": 1332116,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Dagger (LUK)",
       "chineseItemName": "1st不速之客短劍(LUK)",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -260,7 +260,7 @@
     },
     {
       "itemId": 1332121,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Dagger (STR)",
       "chineseItemName": "1st不速之客短劍(STR)",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -271,7 +271,7 @@
     },
     {
       "itemId": 1372074,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Wand",
       "chineseItemName": "1st不速之客短杖",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -282,7 +282,7 @@
     },
     {
       "itemId": 1382095,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Staff",
       "chineseItemName": "1st不速之客長杖",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -293,7 +293,7 @@
     },
     {
       "itemId": 1402086,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Greatsword",
       "chineseItemName": "1st不速之客雙手劍",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -304,7 +304,7 @@
     },
     {
       "itemId": 1412058,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Greataxe",
       "chineseItemName": "1st不速之客雙手斧",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -315,7 +315,7 @@
     },
     {
       "itemId": 1422059,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Greathammer",
       "chineseItemName": "1st不速之客雙手鈍器",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -326,7 +326,7 @@
     },
     {
       "itemId": 1432077,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Spear",
       "chineseItemName": "1st不速之客槍",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -337,7 +337,7 @@
     },
     {
       "itemId": 1442107,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Polearm",
       "chineseItemName": "1st不速之客矛",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -348,7 +348,7 @@
     },
     {
       "itemId": 1452102,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Bow",
       "chineseItemName": "1st不速之客弓",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -359,7 +359,7 @@
     },
     {
       "itemId": 1462087,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Crossbow",
       "chineseItemName": "1st不速之客弩",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -370,7 +370,7 @@
     },
     {
       "itemId": 1472113,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Claw",
       "chineseItemName": "1st不速之客拳套",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -381,7 +381,7 @@
     },
     {
       "itemId": 1482075,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Knuckle",
       "chineseItemName": "1st不速之客指虎",
       "chance": 0.2,
       "displayChance": "0.20%",
@@ -392,7 +392,7 @@
     },
     {
       "itemId": 1492075,
-      "itemName": "#N/A",
+      "itemName": "1st Unwelcome Guest Gun",
       "chineseItemName": "1st不速之客火槍",
       "chance": 0.2,
       "displayChance": "0.20%",
