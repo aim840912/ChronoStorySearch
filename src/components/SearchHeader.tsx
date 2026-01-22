@@ -298,8 +298,8 @@ export const SearchHeader = memo(function SearchHeader({
           label: t('merchant.button'),
           onClick: () => onMerchantShopClick?.(),
         },
-        // API 測試工具 - 只在開發環境顯示
-        ...(process.env.NODE_ENV === 'development' ? [{
+        // API 測試工具 - 只有 admin 才能看到
+        ...(isAdmin ? [{
           id: 'api-tester',
           icon: (
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
