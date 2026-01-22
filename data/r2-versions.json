@@ -3,7 +3,9 @@
     "items": {
       "0": "2"
     },
-    "monsters": {},
+    "monsters": {
+      "9300476": "1"
+    },
     "monsters-gif": {},
     "monsters-die": {},
     "monsters-hit": {}
