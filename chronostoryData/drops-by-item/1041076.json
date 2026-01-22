@@ -2,7 +2,6 @@
   "itemId": 1041076,
   "itemName": "Dark Shadow",
   "chineseItemName": "深夜之影",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 3220000,
@@ -27,6 +26,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5100002,
       "mobName": "Firebomb",
       "chineseMobName": "火精靈",
@@ -37,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

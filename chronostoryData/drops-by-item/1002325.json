@@ -1,0 +1,19 @@
+{
+  "itemId": 1002325,
+  "itemName": "Purple Osfa Hat",
+  "chineseItemName": "紫扣帶帽",
+  "monsters": [
+    {
+      "mobId": 4230132,
+      "mobName": "Gray Luxury Saucer",
+      "chineseMobName": "新葛雷黑",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

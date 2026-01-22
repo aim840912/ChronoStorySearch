@@ -1,0 +1,19 @@
+{
+  "itemId": 1041041,
+  "itemName": "Purple Fairy Top",
+  "chineseItemName": "紫色妖精之服",
+  "monsters": [
+    {
+      "mobId": 2230104,
+      "mobName": "Green Trixter",
+      "chineseMobName": "紅蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

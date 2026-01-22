@@ -2,7 +2,6 @@
   "itemId": 1052095,
   "itemName": "Brown Rocky Suit",
   "chineseItemName": "褐色洛基外衣",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 100100,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

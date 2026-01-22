@@ -2,7 +2,6 @@
   "itemId": 1002099,
   "itemName": "Mithril Nordic Helm",
   "chineseItemName": "鋰礦諾曼頭盔",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 9500148,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

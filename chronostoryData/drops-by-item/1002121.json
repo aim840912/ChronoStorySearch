@@ -2,7 +2,6 @@
   "itemId": 1002121,
   "itemName": "Brown Robin Hat",
   "chineseItemName": "褐羽翼帽",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2230110,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

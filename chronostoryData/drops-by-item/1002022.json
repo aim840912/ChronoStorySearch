@@ -2,7 +2,6 @@
   "itemId": 1002022,
   "itemName": "Old Steel Nordic Helm",
   "chineseItemName": "舊諾曼頭盔",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 5130102,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

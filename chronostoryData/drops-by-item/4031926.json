@@ -1,0 +1,52 @@
+{
+  "itemId": 4031926,
+  "itemName": "Gray Tentacle",
+  "chineseItemName": "葛雷的觸角",
+  "monsters": [
+    {
+      "mobId": 4240000,
+      "mobName": "Chief Gray",
+      "chineseMobName": "葛雷元老",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 100,
+      "displayChance": "100.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230116,
+      "mobName": "Barnard Gray",
+      "chineseMobName": "葛雷族人",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230117,
+      "mobName": "Zeta Gray",
+      "chineseMobName": "葛雷士兵",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230118,
+      "mobName": "Ultra Gray",
+      "chineseMobName": "葛雷隊長",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 4
+}

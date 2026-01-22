@@ -2,7 +2,6 @@
   "itemId": 1041092,
   "itemName": "Red Ice Queen",
   "chineseItemName": "紅鋼玉鎧甲",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 7130103,
@@ -17,7 +16,7 @@
     },
     {
       "mobId": 8140100,
-      "mobName": "Dark Yeti and Pepe",
+      "mobName": "Dark Yeti & Pepe",
       "chineseMobName": "黑吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

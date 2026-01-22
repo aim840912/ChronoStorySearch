@@ -1,0 +1,19 @@
+{
+  "itemId": 1102034,
+  "itemName": "Blue Giles Cape",
+  "chineseItemName": "藍龍紋披風",
+  "monsters": [
+    {
+      "mobId": 4230121,
+      "mobName": "Mecateon",
+      "chineseMobName": "梅卡堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

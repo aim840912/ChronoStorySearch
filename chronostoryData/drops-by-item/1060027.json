@@ -2,7 +2,6 @@
   "itemId": 1060027,
   "itemName": "Brown Corporal Pants",
   "chineseItemName": "褐色鐵板褲子",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1120100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

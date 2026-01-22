@@ -2,7 +2,6 @@
   "itemId": 1002170,
   "itemName": "Dark Distinction",
   "chineseItemName": "黑羽絲絨帽",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 3220000,
@@ -12,6 +11,17 @@
       "inGame": true,
       "chance": 1.5,
       "displayChance": "1.5%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -37,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

@@ -2,7 +2,6 @@
   "itemId": 2043802,
   "itemName": "Scroll for Staff for Magic ATT 10%",
   "chineseItemName": "長杖魔力卷軸10%",
-  "totalMonsters": 7,
   "monsters": [
     {
       "mobId": 5220003,
@@ -60,6 +59,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 4230121,
+      "mobName": "Mecateon",
+      "chineseMobName": "梅卡堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 6230400,
       "mobName": "Soul Teddy",
       "chineseMobName": "幽魂發條熊",
@@ -81,5 +91,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 8
 }

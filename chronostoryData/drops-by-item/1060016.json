@@ -2,7 +2,6 @@
   "itemId": 1060016,
   "itemName": "Black Martial Arts Pants",
   "chineseItemName": "黑武褲",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3230100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

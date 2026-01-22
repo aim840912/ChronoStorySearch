@@ -2,8 +2,18 @@
   "itemId": 1041085,
   "itemName": "Brown Jangoon Armor",
   "chineseItemName": "黃鎮月鎧甲",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 3230308,
+      "mobName": "Tweeter",
+      "chineseMobName": "特威德",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 5120003,
       "mobName": "Grupin",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

@@ -2,7 +2,6 @@
   "itemId": 1002441,
   "itemName": "Ribboned Pig Headband",
   "chineseItemName": "緞帶肥肥髮圈",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1210111,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

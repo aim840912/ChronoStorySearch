@@ -2,7 +2,6 @@
   "itemId": 1032015,
   "itemName": "Metal Silver Earrings",
   "chineseItemName": "銀製耳環",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 6230300,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

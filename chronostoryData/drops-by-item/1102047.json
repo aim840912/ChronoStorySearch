@@ -1,0 +1,19 @@
+{
+  "itemId": 1102047,
+  "itemName": "Turquoise Musketeer Cape",
+  "chineseItemName": "深藍色西麗斯斗篷",
+  "monsters": [
+    {
+      "mobId": 4230137,
+      "mobName": "White Alien Drone",
+      "chineseMobName": "無人機白",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

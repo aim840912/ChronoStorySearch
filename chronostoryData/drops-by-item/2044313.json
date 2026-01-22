@@ -2,11 +2,10 @@
   "itemId": 2044313,
   "itemName": "Dark Scroll for Spear for Accuracy 30%",
   "chineseItemName": "槍命中詛咒卷軸30%",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6220000,
-      "mobName": "Dyle",
+      "mobName": "Dyle\t",
       "chineseMobName": "沼澤巨鱷",
       "isBoss": true,
       "inGame": true,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 4
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

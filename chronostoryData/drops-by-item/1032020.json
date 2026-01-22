@@ -2,7 +2,6 @@
   "itemId": 1032020,
   "itemName": "Gold Drop Earrings",
   "chineseItemName": "黃金耳環",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 6230400,
@@ -50,7 +49,7 @@
     },
     {
       "mobId": 8140100,
-      "mobName": "Dark Yeti and Pepe",
+      "mobName": "Dark Yeti & Pepe",
       "chineseMobName": "黑吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

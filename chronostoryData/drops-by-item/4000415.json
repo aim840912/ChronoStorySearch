@@ -2,7 +2,6 @@
   "itemId": 4000415,
   "itemName": "Ice Tear",
   "chineseItemName": "冰之淚",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6090001,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

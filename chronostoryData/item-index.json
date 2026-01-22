@@ -1,6 +1,6 @@
 {
-  "totalItems": 1891,
-  "lastUpdated": "2025-12-11",
+  "totalItems": 1991,
+  "lastUpdated": "2026-01-22",
   "items": [
     {
       "itemId": 0,
@@ -11347,6 +11347,606 @@
       "itemName": "[Storybook] Formula for Black Cloud",
       "chineseItemName": "黑色雲霧製作法",
       "monsterCount": 1
+    },
+    {
+      "itemId": 1050023,
+      "itemName": "Blue Doros Robe",
+      "chineseItemName": "藍魔者之袍",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072288,
+      "itemName": "Brown Skeedy Sandals",
+      "chineseItemName": "褐色防滑涼鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1082017,
+      "itemName": "Red Savata",
+      "chineseItemName": "紅命中手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1312003,
+      "itemName": "Misthil Axe",
+      "chineseItemName": "鋰狂斧",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1462003,
+      "itemName": "Balanche",
+      "chineseItemName": "獵弩弓",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000097,
+      "itemName": "Spiderweb",
+      "chineseItemName": "蜘蛛網",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002162,
+      "itemName": "Blue Hawkeye",
+      "chineseItemName": "藍雙翼之帽",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1041041,
+      "itemName": "Purple Fairy Top",
+      "chineseItemName": "紫色妖精之服",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1050028,
+      "itemName": "Green Wizard Robe",
+      "chineseItemName": "綠牧師長袍",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1061034,
+      "itemName": "Purple Fairy Skirt",
+      "chineseItemName": "紫色妖精裙",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 2002007,
+      "itemName": "Magic Pill",
+      "chineseItemName": "魔力藥丸",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000098,
+      "itemName": "Sticky Spiderweb",
+      "chineseItemName": "黏稠的蜘蛛網",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4031129,
+      "itemName": "Savory Cheese",
+      "chineseItemName": "香濃起司",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002164,
+      "itemName": "Brown Hawkeye",
+      "chineseItemName": "褐雙翼之帽",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002173,
+      "itemName": "Green Guise",
+      "chineseItemName": "綠假面帽",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072035,
+      "itemName": "Silver Chain Boots",
+      "chineseItemName": "銀鏈鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072294,
+      "itemName": "Brown Paulie Boots",
+      "chineseItemName": "褐色短皮靴",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1332009,
+      "itemName": "Cass",
+      "chineseItemName": "偃月刃",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000095,
+      "itemName": "Rat Trap",
+      "chineseItemName": "捕鼠器",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1040057,
+      "itemName": "Dark Brown Stealer",
+      "chineseItemName": "黑褐寂靜之服",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1041043,
+      "itemName": "Blue Fairy Top",
+      "chineseItemName": "藍色妖精之服",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1060043,
+      "itemName": "Dark Brown Stealer Pants",
+      "chineseItemName": "黑褐寂靜之褲",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1061036,
+      "itemName": "Blue Fairy Skirt",
+      "chineseItemName": "藍色妖精裙",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000096,
+      "itemName": "Hard Walnut",
+      "chineseItemName": "堅硬的核桃",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072003,
+      "itemName": "Emerald Battle Grieves",
+      "chineseItemName": "綠鬥士鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072036,
+      "itemName": "Gold Chain Boots",
+      "chineseItemName": "金鏈鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072082,
+      "itemName": "Black Hunter Boots",
+      "chineseItemName": "黑打獵鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000103,
+      "itemName": "Propeller",
+      "chineseItemName": "飛機螺旋槳",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000168,
+      "itemName": "Sunflower Seed",
+      "chineseItemName": "向日葵子",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072078,
+      "itemName": "Black Magicshoes",
+      "chineseItemName": "黑魔法鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000100,
+      "itemName": "Plastic Crown",
+      "chineseItemName": "塑膠王冠",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1072040,
+      "itemName": "Silver Battle Grieves",
+      "chineseItemName": "銀鬥士鞋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1472010,
+      "itemName": "Adamantium Guards",
+      "chineseItemName": "朱礦鬥拳",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000099,
+      "itemName": "Bloctopus Key Chain",
+      "chineseItemName": "章魚鑰匙環",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000104,
+      "itemName": "Motor",
+      "chineseItemName": "飛機引擎",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000105,
+      "itemName": "Plane Controller",
+      "chineseItemName": "飛機操縱桿",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1002036,
+      "itemName": "Green Jester",
+      "chineseItemName": "綠色術士帽",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1040069,
+      "itemName": "Red Hunter's Armor",
+      "chineseItemName": "紅浪人之服",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1060058,
+      "itemName": "Red Hunter's Pants",
+      "chineseItemName": "紅遊俠之褲",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1332004,
+      "itemName": "Forked Dagger",
+      "chineseItemName": "雙枝短刀",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000123,
+      "itemName": "Worn-Out Goggle",
+      "chineseItemName": "舊的太陽鏡",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000116,
+      "itemName": "Small Egg",
+      "chineseItemName": "鳥蛋",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4031135,
+      "itemName": "Dull Crystal",
+      "chineseItemName": "暗沉水晶",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4031140,
+      "itemName": "Dull Crystal",
+      "chineseItemName": "暗沉水晶",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1040025,
+      "itemName": "Red Bennis Chainmail",
+      "chineseItemName": "紅獵人服",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1041049,
+      "itemName": "Blue Steal",
+      "chineseItemName": "藍寂靜之服",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1061045,
+      "itemName": "Blue Steal Pants",
+      "chineseItemName": "藍寂靜裙",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1402008,
+      "itemName": "Broadsword",
+      "chineseItemName": "鋼鐵劍",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000127,
+      "itemName": "Toy Drum",
+      "chineseItemName": "玩具鼓",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000124,
+      "itemName": "Rombot's Memory Card",
+      "chineseItemName": "泥人領導者的記憶卡",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4005002,
+      "itemName": "DEX Crystal",
+      "chineseItemName": "敏捷水晶",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000101,
+      "itemName": "Yellow Toy Block",
+      "chineseItemName": "黃色玩具積木",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000102,
+      "itemName": "Blue Toy Block",
+      "chineseItemName": "藍色玩具積木",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4031098,
+      "itemName": "All-purpose Clock Spring",
+      "chineseItemName": "萬能鐘錶發條",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4031103,
+      "itemName": "Barnard Gray's Cell",
+      "chineseItemName": "葛雷族人的細胞",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4031926,
+      "itemName": "Gray Tentacle",
+      "chineseItemName": "葛雷的觸角",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1302143,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客單手劍",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1382095,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客長杖",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000117,
+      "itemName": "Space Food",
+      "chineseItemName": "宇宙糧食",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4010011,
+      "itemName": "#N/A",
+      "chineseItemName": "",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4031104,
+      "itemName": "Zeta Gray's Cell",
+      "chineseItemName": "葛雷士兵的細胞",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1412058,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客雙手斧",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1462087,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客弩",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1482075,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客指虎",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000118,
+      "itemName": "Small Spaceship",
+      "chineseItemName": "小型宇宙船",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4031105,
+      "itemName": "Ultra Gray's Cell",
+      "chineseItemName": "葛雷隊長的細胞",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1442107,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客矛",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1332116,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客短劍(LUK)",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1492075,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客火槍",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1032070,
+      "itemName": "Shield Earrings",
+      "chineseItemName": "",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000119,
+      "itemName": "Receiving Apparatus",
+      "chineseItemName": "接收機",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4031090,
+      "itemName": "Piece of Memory",
+      "chineseItemName": "記憶碎片",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4031206,
+      "itemName": "Ripped Travel Ticket 1",
+      "chineseItemName": "破損的旅遊券之一",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1312058,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客單手斧",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1422059,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客雙手鈍器",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1332121,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客短劍(STR)",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000120,
+      "itemName": "Mateon's Tentacle",
+      "chineseItemName": "馬堤安的觸角",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1402086,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客雙手劍",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1322086,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客單手鈍器",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1372074,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客短杖",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000121,
+      "itemName": "Plateon's Helmet",
+      "chineseItemName": "培利堤安的頭盔",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1432077,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客槍",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1452102,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客弓",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1472113,
+      "itemName": "#N/A",
+      "chineseItemName": "1st不速之客拳套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000122,
+      "itemName": "Mecateon's Laser Gun",
+      "chineseItemName": "梅卡堤安的光線槍",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4009433,
+      "itemName": "#N/A",
+      "chineseItemName": "迷你UFO操作器",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4009436,
+      "itemName": "#N/A",
+      "chineseItemName": "無人機天線",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4031102,
+      "itemName": "Note",
+      "chineseItemName": "記事本",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4031106,
+      "itemName": "Chief Gray's Cell",
+      "chineseItemName": "葛雷元老的細胞",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000125,
+      "itemName": "Chief Gray's Sign",
+      "chineseItemName": "葛雷元老的標誌",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1092070,
+      "itemName": "#N/A",
+      "chineseItemName": "",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1092075,
+      "itemName": "#N/A",
+      "chineseItemName": "",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1092080,
+      "itemName": "#N/A",
+      "chineseItemName": "",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4000126,
+      "itemName": "MT-09's Fuel",
+      "chineseItemName": "機器人堤安的燃料",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1092050,
+      "itemName": "Khanjar",
+      "chineseItemName": "銀牙劍盾",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1102082,
+      "itemName": "Ragged Black Cape",
+      "chineseItemName": "破舊的黑色披風",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4031013,
+      "itemName": "Dark Marble",
+      "chineseItemName": "黑珠",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4032810,
+      "itemName": "#N/A",
+      "chineseItemName": "葛雷的手套",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 1032080,
+      "itemName": "1st Uninvited Guest Earring",
+      "chineseItemName": "1st不速之客耳環",
+      "monsterCount": 0
+    },
+    {
+      "itemId": 4005005,
+      "itemName": "#N/A",
+      "chineseItemName": "",
+      "monsterCount": 0
     }
   ]
 }

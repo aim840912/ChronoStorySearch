@@ -2,7 +2,6 @@
   "itemId": 1312015,
   "itemName": "Vifennis",
   "chineseItemName": "雙利刃斧",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8220001,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

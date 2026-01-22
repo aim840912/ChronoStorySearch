@@ -2,7 +2,6 @@
   "itemId": 1482007,
   "itemName": "Fury Claw",
   "chineseItemName": "惡魔之爪",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 5220002,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

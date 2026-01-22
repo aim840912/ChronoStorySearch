@@ -2,7 +2,6 @@
   "itemId": 1002338,
   "itemName": "Red Dragon Babuta",
   "chineseItemName": "赤龍頭盔",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 6400000,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

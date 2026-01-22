@@ -2,7 +2,6 @@
   "itemId": 2040352,
   "itemName": "Scroll for Accessory for INT 60%",
   "chineseItemName": "飾品智力卷軸60%",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 5090000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

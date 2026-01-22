@@ -2,7 +2,6 @@
   "itemId": 2040805,
   "itemName": "Scroll for Gloves for ATT 10%",
   "chineseItemName": "手套攻擊卷軸10%",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 8150000,
@@ -23,6 +22,17 @@
       "inGame": true,
       "chance": 0.075,
       "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230120,
+      "mobName": "Plateon",
+      "chineseMobName": "培利堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -48,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

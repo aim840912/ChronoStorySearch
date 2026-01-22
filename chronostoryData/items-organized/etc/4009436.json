@@ -1,0 +1,37 @@
+{
+  "id": 4009436,
+  "description": {
+    "id": 4009436,
+    "name": "無人機天線",
+    "description": "傳送與接收電波時使用的天線。使用地球沒有的材料製成。",
+    "chineseItemName": "無人機天線"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACD0lEQVR4nLWWgZGDIBBF15k0YAu2QEqwBdKCJZgStIS7EkIJoYRQwtmCJXC7rBBAjTrn7SQTQPHxdz+SC7yjxW8X9e/47eGk8CD7kgCirblnNH26q3Lg4iwQQx7U1QhBmKhBYPuFIwgjpX9W5hSxEj27KGQJoMbuNJALU8N/BoOwIJSuN1TD2UGgOxVe5KkrSzBqXJtns/6mYQjUk7uo8IkohDSDACGwbYydHuYA9mu6CSeou4abBn/9I8ityLlLJfsIWjTJMAwMRlgAYCgFIHEREh0LOzIdb9geMnf1fW/btg39ojFODUGOxmXrBlJUVVUCe2CKZVcfMs0mSOHyJebHw9rSgHxiw3gw/2TTYrMUW6BQk6JhmBzVBGE1CylMzcILcUbZoQhcqmABctOJmsQsgfzFsDWQtXZ6qNIMgBTSjwJC/iKIX0Bex8+KhM5U8CSC+JrFto9V0t6KC7UO+o47Oi66lbJadGKWyiTWQMVUxGTMN3InUty0ie+x9sVZ8Av8lLrVVwoXeA6bXlXgIDsVrTJ8PVyqMmXViCn8AfaISdJ9CLRYdEyjJRi+hSdIPYMcVyT4IbOiZ5Dbwnm8F2R93rOV2uDhCDKUs+PlqCLtbcxF95vabcpJicCaAYTj5aiisGr51G/fp/VwQWeUu2QSu+8GFcVVsxlMNNiEYyLeYzYfOwJiWLPrv8Li/vsFfFQW0zZdEQ8AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACZElEQVR4nL2WjZWjIBDHx/e2AVuwBVKCVwJpISVoCVrCXglLCUsJoYSzBUvghi8DAxjNXXZeeIKKv/n4A/mA1AZsUzQesc3wBovB+s4B2NC7kZLmN12EdaR5F9hBv0xXIhThrAeG/TveQbjJxH+NfIvYRSqzFxhvAcQ6vQ1sTfXwU/YAY0FNepPxD4BHIyRGU922oMRam6vJ+JQAA3g26jVCSoJG6G1hwBj2ldL+4xaoP/1LOEGMEq4SwvNTYOuxVa9I1jEMKLplWZwjCN+AaEIAcHSK44qAk5WhG8gMRL3zPOthGB7e3ZSN1kD/xT7ggJmIu65L4F9YEj71L4vwEFhgeBzzGeBDq4B/Y0cFR9yFTIvFl9X+GXiraXNzcL4KD3XRFlKeis85lgnvYMRgUwsF6FUmESXi2zz5zOF7YK21hwjpgJBC55XBlu8IGhza08HziJkkUbqPGGioebzM4iyYta2hbPvg3/FAxiLSnHdFpZPUV20P3Pi6JPdChyrd2FWq+B2t7y5LJdU/S3XVcyeYHO63VrDQHTukasoM9bSpJZF3K6b8DzjNVaJ9BVwUEaZdGzieKh7a70JfAbvjS8lcRAR6ffJ/5QxYh7qRSPS2ZiLo0mbH6ctgZ7iu/bJxIgqbjN0kfKQMaw6wHaclOw9GCP+Wj3WW1tOaOaPtI5Usr0PgllyNXZqLvFtxqcfN5rZth79CB8UWNtgLNuPGGrUiuK208GzEyCYyJ8iIRfdGf+0j4OLbSsEB0kXXOOpwTTZSSLNCrfpPsRRxbVL1I+QZ7dOWgUM6YngpmrbixJ6j2ft/AVUtMRLoBJyKAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -2,
+      "y": 30,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -3,
+      "y": 30,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

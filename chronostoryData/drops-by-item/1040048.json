@@ -2,7 +2,6 @@
   "itemId": 1040048,
   "itemName": "Brown Sneak",
   "chineseItemName": "褐敏捷之服",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2230101,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

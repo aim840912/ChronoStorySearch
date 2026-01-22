@@ -2,8 +2,29 @@
   "itemId": 1002144,
   "itemName": "Brown Matty",
   "chineseItemName": "褐星魔法帽",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 3230400,
+      "mobName": "Drumming Bunny",
+      "chineseMobName": "兔子鼓手",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 4230125,
       "mobName": "Skeledog",
@@ -15,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

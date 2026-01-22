@@ -2,7 +2,6 @@
   "itemId": 4000023,
   "itemName": "Cold Eye Tail",
   "chineseItemName": "冰獨眼獸之尾巴",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 4230100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,8 +2,18 @@
   "itemId": 1060075,
   "itemName": "Brown Jangoon Pants",
   "chineseItemName": "黃金褲",
-  "totalMonsters": 3,
   "monsters": [
+    {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 4230106,
       "mobName": "Lunar Pixie",
@@ -37,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

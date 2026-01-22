@@ -2,7 +2,6 @@
   "itemId": 1332003,
   "itemName": "Shinkita",
   "chineseItemName": "破碎刃",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5220002,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

@@ -2,7 +2,6 @@
   "itemId": 1002142,
   "itemName": "Blue Matty",
   "chineseItemName": "藍星魔法帽",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 4230113,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

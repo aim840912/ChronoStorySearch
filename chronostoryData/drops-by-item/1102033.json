@@ -1,0 +1,19 @@
+{
+  "itemId": 1102033,
+  "itemName": "Red Giles Cape",
+  "chineseItemName": "紅龍紋披風",
+  "monsters": [
+    {
+      "mobId": 4230116,
+      "mobName": "Barnard Gray",
+      "chineseMobName": "葛雷族人",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

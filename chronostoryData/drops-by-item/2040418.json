@@ -2,13 +2,12 @@
   "itemId": 2040418,
   "itemName": "Scroll for Topwear for STR 60%",
   "chineseItemName": "上衣力量卷軸60%",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.3,
       "displayChance": "0.30%",
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

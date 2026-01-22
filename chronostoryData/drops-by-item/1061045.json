@@ -1,0 +1,19 @@
+{
+  "itemId": 1061045,
+  "itemName": "Blue Steal Pants",
+  "chineseItemName": "藍寂靜裙",
+  "monsters": [
+    {
+      "mobId": 3230400,
+      "mobName": "Drumming Bunny",
+      "chineseMobName": "兔子鼓手",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

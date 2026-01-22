@@ -2,7 +2,6 @@
   "itemId": 2040801,
   "itemName": "Scroll for Gloves for Accuracy 60%",
   "chineseItemName": "手套命中卷軸60%",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 3220000,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

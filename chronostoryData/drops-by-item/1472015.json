@@ -2,8 +2,18 @@
   "itemId": 1472015,
   "itemName": "Blood Avarice",
   "chineseItemName": "赤紅護腕",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 4230101,
       "mobName": "Zombie Lupin",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

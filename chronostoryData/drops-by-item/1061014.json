@@ -2,7 +2,6 @@
   "itemId": 1061014,
   "itemName": "Rookie Pants",
   "chineseItemName": "紅皮甲褲",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 130100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 1082106,
   "itemName": "Blue Eyes",
   "chineseItemName": "藍神眼手套",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6130100,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

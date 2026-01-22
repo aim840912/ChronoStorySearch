@@ -2,7 +2,6 @@
   "itemId": 4000135,
   "itemName": "Gigantic Viking Hat",
   "chineseItemName": "巨人維京帽",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8141100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

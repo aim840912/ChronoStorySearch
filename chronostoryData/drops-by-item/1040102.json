@@ -2,8 +2,18 @@
   "itemId": 1040102,
   "itemName": "Bronze Platine",
   "chineseItemName": "青銅暴風甲",
-  "totalMonsters": 3,
   "monsters": [
+    {
+      "mobId": 4230119,
+      "mobName": "Mateon",
+      "chineseMobName": "馬堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 5130105,
       "mobName": "Dark Jr. Yeti",
@@ -37,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

@@ -2,7 +2,6 @@
   "itemId": 2040410,
   "itemName": "Dark Scroll for Topwear for LUK 70%",
   "chineseItemName": "上衣幸運詛咒卷軸70%",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6230400,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

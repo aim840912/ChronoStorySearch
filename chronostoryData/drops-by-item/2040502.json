@@ -2,7 +2,6 @@
   "itemId": 2040502,
   "itemName": "Scroll for Overall Armor for DEX 10%",
   "chineseItemName": "套服敏捷卷軸10%",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 3220000,
@@ -60,6 +59,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 5120100,
+      "mobName": "MT-09",
+      "chineseMobName": "機器人堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 7140000,
       "mobName": "Ghost Pirate",
       "chineseMobName": "百烈",
@@ -70,5 +80,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 7
 }

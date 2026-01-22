@@ -2,7 +2,6 @@
   "itemId": 1040061,
   "itemName": "Green Knucklevest",
   "chineseItemName": "綠暗影之服",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 3000000,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

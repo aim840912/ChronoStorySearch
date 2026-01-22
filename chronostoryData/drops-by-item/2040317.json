@@ -2,8 +2,29 @@
   "itemId": 2040317,
   "itemName": "Scroll for Earring for DEX 60%",
   "chineseItemName": "耳環敏捷卷軸60%",
-  "totalMonsters": 3,
   "monsters": [
+    {
+      "mobId": 9300476,
+      "mobName": "Zenomega",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230138,
+      "mobName": "Black Alien Drone",
+      "chineseMobName": "無人機黑",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 5130105,
       "mobName": "Dark Jr. Yeti",
@@ -37,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

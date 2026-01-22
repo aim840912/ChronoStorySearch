@@ -1,0 +1,37 @@
+{
+  "id": 4000126,
+  "description": {
+    "id": 4000126,
+    "name": "機器人堤安的燃料",
+    "description": "裝有不明液體的機器人堤安的燃料桶，只靠少量的燃料好像也能發揮巨大力量。",
+    "chineseItemName": "機器人堤安的燃料"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACVElEQVR4nJWUj5GrIBDG15nXAC3wSiAleCV4JWgJpoSkBC3hLEFKOEp4lHCUwNtvlQhG73I7yQgL7G//wR96XWI2rnbzI6nS4AhyePirbmmylozRdHE2Gp5DjDaiS+Kcl3nXvcUE2kPi5+fXYzKOEymtZHz1gag15AifpjjEBkmvOqWW/cMwP0A5JM66Jne5kNaa/O1GdVOTnSyF4Okn8W6SL2DOu2ItQSLSodgoWUfjNJHr3skMHz8C6rqmabpjWK2wCFB+7hFJAoQQJBLynn/bRqW2vOeCGuSpOdqzpWsF4A/jjlOrHoYctVwPRNi3Pd3vV1Al/4gEoP72Qffre0ypM7p/glTVdI8DaTFu4Hl/W2rDAG0WgERIgZq2JcudBkBAQ0DLX4Cwfx950V1qnsmskSwGF0F0PRsGyCPa1fBeoIdx1GMcO6KjFtYcPqqQAKkdcRek//mbAPlY9mq1GfJl/Z4uI0DINzw+E2sn2ZMckQ4bx6JO30IK2JnwGhoA9ZFaIf+ia7f5K5An750VL5GmRUIW7fIFIIiuzEIBwaE8gjxl8DLplF/25DVpmkbmcGYvBaRBXpNv0kXcBmbxHIWHpALD6wW06NHSsp7eLr4OHfni7Yqx6ekv9/i/1WjHmwfuspqNWfYSrZkAKOw+4lwnGTmLJAEQxbALWd6itTUBO+q+pNvfo6fCh4PD9ZqaJOqk8wr9+v4VkO3ZyDxb37BnOblDmYMm2wKI1ONQOH2IbLJbx6hv7k+xxsOZK/PmbXwpXUfrR7Czs4DIC0y/lUCvSvUfl2tI1kxoDhcAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACk0lEQVR4nJ2Uj5GrIBDGNzNpgBZ4JZASvBK8ErQEU0JSgpZwlhBKOEp4lHCU4NtvlYiKJu92kgFW2N/+gzO9L0MyP63WOTmlixwoa+CnqKi3lozRdHF2MLyGGG1EF8U5L+u6/hhS2Bo0fH//PBdd15PSSuZXH4gqQ44wlItDbJT0pFNq3N+2jwUsBQ0PXZC7XEhrTf52o6IsyPaWQvD0SrzrZQTQebf5HkEDUqPYMFlHXd+Tqz/JtF8vIUVRUN/fKXrOwAGw9blnRBESQpCIyHv+zZuV0pQT1GSdppzMqZsg+APgONXqacxRxfVBpE3V0P1+BVnqgYgAa25fdL9+DlNU3CRNFnQ69fehJS0Agwia21grhmgzQiRSClRWFVnuQEACmgRaHgHD/lwGFl2nHg8yU0Sj0VEQZcPGAfOIejK+FugBQH26ribaa2/NqUBVIiS2Ku6K3A8eIySdy16tZkN+W8/NhQUM+Yfne2JtL3uiM9J5Xbeo20vQArgn/A1NgXpJ7VAP0VXz+l3QJgpnxVukbJSQRD2OgATRbbOxAOFgGkmaPngbdcqPe9IalWUpaziUkwWoRJ6jj9Jd3BpmjADNAIlFh/cjbNSj3eV7fOv4qtTkN2/dMJQN/eE78HcyXPOBlruvYIOWvUXbRgiKvY481UlmjiKKEETTrjbK2zW1LYC5roy63D3bNEPIGCimNEVROx250E/v5QY0PzGJh9Obt5WdO5Y4aVZbAJL6ZIVTiQh7O3eSOrhfi288fXClPryVhngrdbnvOeDRWYDk5ab/lUDvyqK94yurVuOe7l03wnQuRJDa+e9Bc0ZzevzRev6cGNXJ+NtIduFpRHubjqoRDuaL/5nm8F6lSO1Ajxx7zv8BStdg29LdATQAAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -4,
+      "y": 27,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -4,
+      "y": 27,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

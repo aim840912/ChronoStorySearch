@@ -2,7 +2,6 @@
   "itemId": 1072110,
   "itemName": "Black Blue-Lines Shoes",
   "chineseItemName": "藍流星鞋",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 4130102,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

@@ -2,8 +2,18 @@
   "itemId": 1072309,
   "itemName": "Black Voyson Shoes",
   "chineseItemName": "黑色航海靴",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 4230119,
+      "mobName": "Mateon",
+      "chineseMobName": "馬堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 7130200,
       "mobName": "Werewolf",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

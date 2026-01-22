@@ -2,7 +2,6 @@
   "itemId": 1002247,
   "itemName": "Bronze Identity",
   "chineseItemName": "青銅忍者頭巾",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5130101,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

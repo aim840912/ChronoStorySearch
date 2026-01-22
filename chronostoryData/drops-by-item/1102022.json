@@ -2,7 +2,6 @@
   "itemId": 1102022,
   "itemName": "Red Gaia Cape",
   "chineseItemName": "紅鬥士披風",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 6130100,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

@@ -2,7 +2,6 @@
   "itemId": 1072087,
   "itemName": "Black Lappy Boots",
   "chineseItemName": "黑追擊鞋",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 3220000,
@@ -19,7 +18,7 @@
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.8,
       "displayChance": "0.80%",
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

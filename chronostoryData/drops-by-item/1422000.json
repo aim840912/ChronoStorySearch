@@ -2,7 +2,6 @@
   "itemId": 1422000,
   "itemName": "Wooden Mallet",
   "chineseItemName": "木錘",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 1120100,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

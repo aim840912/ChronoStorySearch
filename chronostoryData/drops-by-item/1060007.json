@@ -2,7 +2,6 @@
   "itemId": 1060007,
   "itemName": "Jean Capris",
   "chineseItemName": "藍馬褲",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 120100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

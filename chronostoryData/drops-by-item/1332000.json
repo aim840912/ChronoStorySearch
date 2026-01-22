@@ -2,7 +2,6 @@
   "itemId": 1332000,
   "itemName": "Triangular Zamadar",
   "chineseItemName": "三角刃",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 130100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 1082049,
   "itemName": "Green Marker",
   "chineseItemName": "綠擊中手套",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 2230111,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

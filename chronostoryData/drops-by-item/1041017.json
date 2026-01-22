@@ -2,7 +2,6 @@
   "itemId": 1041017,
   "itemName": "Purple Arianne",
   "chineseItemName": "紫錦絲緊身衣",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1110100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

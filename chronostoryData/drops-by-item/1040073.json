@@ -2,7 +2,6 @@
   "itemId": 1040073,
   "itemName": "Blue Legolier",
   "chineseItemName": "藍守護之服",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3210200,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

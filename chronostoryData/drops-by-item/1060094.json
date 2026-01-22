@@ -2,7 +2,6 @@
   "itemId": 1060094,
   "itemName": "Blue Studded Pants",
   "chineseItemName": "藍玄武之褲",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6300100,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

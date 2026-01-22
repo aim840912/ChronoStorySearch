@@ -2,8 +2,29 @@
   "itemId": 2040350,
   "itemName": "Scroll for Accessory for INT 100%",
   "chineseItemName": "飾品智力卷軸100%",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 4230118,
+      "mobName": "Ultra Gray",
+      "chineseMobName": "葛雷隊長",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4240000,
+      "mobName": "Chief Gray",
+      "chineseMobName": "葛雷元老",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 6400100,
       "mobName": "Deep Buffoon",
@@ -26,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

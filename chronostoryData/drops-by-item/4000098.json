@@ -1,0 +1,19 @@
+{
+  "itemId": 4000098,
+  "itemName": "Sticky Spiderweb",
+  "chineseItemName": "黏稠的蜘蛛網",
+  "monsters": [
+    {
+      "mobId": 2230104,
+      "mobName": "Green Trixter",
+      "chineseMobName": "紅蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

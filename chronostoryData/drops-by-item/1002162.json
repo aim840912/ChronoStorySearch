@@ -1,0 +1,19 @@
+{
+  "itemId": 1002162,
+  "itemName": "Blue Hawkeye",
+  "chineseItemName": "藍雙翼之帽",
+  "monsters": [
+    {
+      "mobId": 2230104,
+      "mobName": "Green Trixter",
+      "chineseMobName": "紅蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

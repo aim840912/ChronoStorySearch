@@ -2,7 +2,6 @@
   "itemId": 1002271,
   "itemName": "Green Galaxy",
   "chineseItemName": "綠十字帽",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 6400000,
@@ -47,6 +46,18 @@
       "displayChance": "0.13%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230118,
+      "mobName": "Ultra Gray",
+      "chineseMobName": "葛雷隊長",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

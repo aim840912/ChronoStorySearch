@@ -2,7 +2,6 @@
   "itemId": 1472026,
   "itemName": "Brown Scarab",
   "chineseItemName": "黃閃電甲",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 8130100,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

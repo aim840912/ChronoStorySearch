@@ -2,7 +2,6 @@
   "itemId": 1072033,
   "itemName": "Iron Chain Boots",
   "chineseItemName": "鋼鐵鏈鞋",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2230102,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

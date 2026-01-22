@@ -2,7 +2,6 @@
   "itemId": 1002249,
   "itemName": "Dark Identity",
   "chineseItemName": "黑忍者頭巾",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 5130102,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

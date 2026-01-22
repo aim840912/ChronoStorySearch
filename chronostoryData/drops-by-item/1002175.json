@@ -2,7 +2,6 @@
   "itemId": 1002175,
   "itemName": "Dark Guise",
   "chineseItemName": "黑假面帽",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 5300001,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

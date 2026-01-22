@@ -1,0 +1,38 @@
+{
+  "id": 4031135,
+  "description": {
+    "id": 4031135,
+    "name": "暗沉水晶",
+    "description": "兔子鼓手的力量全部消失時進而喪失光輝的水晶。",
+    "chineseItemName": "暗沉水晶"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADZElEQVR4nK1XjXWjMAwW790C7gjuCGQEZwQYgYxARigjwAhhhNMIYQVGqEfgJPkHYgK5kuqVgsHSJ32WZOcPvCcTXdlR5XfAp7Zt8XK5HHbgKPhk6i/UWvMzwkEGtsD3jE2qqjAMlFJgrX3lwNNvW+CZVwjPsxEPTJAenS5+1BphHKfV/LWNl+Ai9+9vPH18PBhgLE3/FVHOUW+I6NzudyxPJ7M1KQVfep4xMDvQ9T10LrEEWHtMy5TH0GcbeVVjURXggVMm4jgFX9FN2Qx1XcNABoeuicDjaOka02DQVBUUhYGEk6f0P6M9OCAKAyL0RQUqz120ZHawIyXZCMYSD9Y+xp0b4Co4n8+7wFvgswMuiaC/lGCqmpMKkEAJ2YVpEy2fA+fPTzd2+in1u+DTk3eARDnxCdB17s6ypJ2eaa0BydEdm7u0SymFjOY1FvGRQrLGmhIA7Rx+nL9wiHuCDXqImwk3EbcRmBNLU6JRXskai1DWhzsZBUM0967JRCP8nvWBVAbKhgjMS1IUlEB9dCCAS3lI46COqZV2kfQjDGoRrac7p+8cZdG2Mr5QUkrtE4ASQGJEDTNjDMzfLAXlqkYcYPDpTs3A9+koXMMDGbDKSvQcQEF05LlLKt1+eX8KuYZhCK1WdCtrJHqVq3jnyuB5YG5YluXE4NnpdGJPUC0oVAmd4CZIi+Nvt/ZGjuRi7Hq9yj2d/yChG7o5JkQOfg0mv0H4OWtD8k7+LDS07l9kkIEREV7KbC+W3jLh5toOkmQ3d6+BGWka/3l0NLLQNxEuxaUslzOp+XV7dTtTUMTgRArsgrEzQ1wJtPZc61JyAdQBLgOMstVeg6I4UtQ1ctu05TkywEnY9Qtm2AmiXxnD86FvGrOyl8jelhrqcWJgvM6dyzUWC0YXjxr0HokBacUz8OYhYw9cFIvbX+yvF2LBzvRxYtISFIa7YKwKI9ErhdyK+ZiFzXX3eLUbuQCX53TNptg0fOkttrWMHJClIgdQTj1ddyhyWAA/VZaUWlekm8tOpJn/n+Bbe/Ak/ZkkH5U0mZ0zXBZ1Dhwgn4ty7VLnfrzT1F7ZOnRuDwdHbjK7LfWF/BQ84wTinYkHD21158TyW+DiAG+Juq6XDf3HwEfBxQHqYJOh32pHgd8BFwfe+ZHI8g9MjbrTCxUCnwAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADn0lEQVR4nKVWi5GjMAxVZq4Bbwm+EkgJTglOCaQEKCGUEEoIJZxKCC1QwroETpI/eM1nd7KaEAO29KRnSfgP/E5muk7vKv8GfH48Hni73d524F3w2TR31FrzPcKbDOyBHxmbVV1jfFBKgXPuOwc25/bAT0Eh3i9GAjBBBnS6+FZrhGmaV+vXNr4FF3l9fuL54+OLAcbS9K+Ico56R0Tn+Xrh9Xw2e4tK8NzzEwOzA/0wQO8TS4B1wHRMeQp9sVHVDdraQgAumUjPJfiKbspmaJoGRjI49l0CniZH11QGg6auwVoDBSeb9G/RHh0QhRERBluDqiofLZkd3URJNoFxxINzX+OuDHAVXC6XQ+A98MUBn0Qw3K5g6oaTCpBACdmH6QqtkAOXv3/9s9cvqT8EnzfeARLlxCdA3/uRJaed7mmvAcnRA5uHtEspxYzmPRYJkUKxx5oSAN0SflqfOcQ9wUU9xN2Em4nbBMyJpSnRKK9kj0Uo6+NIRsEQzYNvMskIv2d9IJWRsiEB85ZYSwk0JAciuJSHNA7qmFppH8kwwaiyaAPdFc1zlPbxkOcbJaXUPgEoASRG1LgwxsA85ygoXzXiAIPPL2oGoU8n4RoeyYBTTqLnACzRUVU+qfTjHvyxco3jGFut6NbOSPSqUmnkyuB1YJ54vV5nBj+dz2f2BFVGoSroBL9AWhzPPR9PcqQSY23byliu/yKxG/o1JkYOYQ/m8IEIa9aG5J38HHS073cyyMCICN/KYi+VXp5wS21HKbKbu9fIjHRdmJ48jSw0J8KlmEu+nUXNr9ur/zJFRYxOlMA+GLcwxJVAe8+1LiUXQT1gHmCSvfYaFcUR2zTIbdNdL4kBTsJ+yJhhJ4h+ZQyvh6HrzMpeIUef1FiPMwNju3Qu31gcGG2/atB7JAakFS/Au4eMI3BRtM9/OLQ3YsEt9HFi0hZYw10wVYWR6JVCbsV8zMKuPTxeHUYuwNdLuWdzahqh9LLP2okckK0iB1BOPX3/VuSQAW8qS0qtK9KvZSfKzP8h+N43eJb+TFJNSprMwRnulHTeOEBui/LtUvuzBfXxVejlwe4DtviBY9pVMWbwSjI7NRjxItmvivUuG132vAmudi6Wlvbxrqyd+Dg14JCDa5lfg+fAU7jcFngE0tkY38exn4ah1rbOD2/yHtYs5ZGvZC/yPcX43OLQ36t7MwUH22JteV9em+CRmtyBrWj43blruxePP3B2aw7+A34E2klvsSrSAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -3,
+      "y": 32,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -3,
+      "y": 32,
+      "isEmpty": false
+    },
+    "slotMax": 100,
+    "price": 1,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Quest Item",
+    "lowItemId": 4030000,
+    "highItemId": 4040000
+  }
+}

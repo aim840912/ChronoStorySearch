@@ -2,8 +2,29 @@
   "itemId": 2040320,
   "itemName": "Dark Scroll for Earring for LUK 70%",
   "chineseItemName": "耳環幸運詛咒卷軸70%",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 3230103,
+      "mobName": "King Bloctopus",
+      "chineseMobName": "機器章魚王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 7130200,
       "mobName": "Werewolf",
@@ -26,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

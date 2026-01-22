@@ -2,7 +2,6 @@
   "itemId": 1002021,
   "itemName": "Steel Nordic Helm",
   "chineseItemName": "諾曼頭盔",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 4230111,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

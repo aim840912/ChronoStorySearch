@@ -2,13 +2,12 @@
   "itemId": 2040928,
   "itemName": "Scroll for Shield for ATT 100%",
   "chineseItemName": "盾牌攻擊卷軸100%",
-  "totalMonsters": 7,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.3,
       "displayChance": "0.30%",
@@ -81,5 +80,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 7
 }

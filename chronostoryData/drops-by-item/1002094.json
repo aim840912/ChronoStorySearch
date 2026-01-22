@@ -2,7 +2,6 @@
   "itemId": 1002094,
   "itemName": "Bronze Planet",
   "chineseItemName": "青銅戰盔",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 7130000,
@@ -25,6 +24,18 @@
       "displayChance": "0.13%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230120,
+      "mobName": "Plateon",
+      "chineseMobName": "培利堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

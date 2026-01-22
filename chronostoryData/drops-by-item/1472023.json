@@ -2,7 +2,6 @@
   "itemId": 1472023,
   "itemName": "Blood Gigantic",
   "chineseItemName": "赤紅戰神拳套",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 6230100,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

@@ -2,7 +2,6 @@
   "itemId": 4000050,
   "itemName": "Pepe Beak",
   "chineseItemName": "企鵝王的嘴",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6130102,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

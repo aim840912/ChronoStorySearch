@@ -1,0 +1,19 @@
+{
+  "itemId": 4000102,
+  "itemName": "Blue Toy Block",
+  "chineseItemName": "藍色玩具積木",
+  "monsters": [
+    {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

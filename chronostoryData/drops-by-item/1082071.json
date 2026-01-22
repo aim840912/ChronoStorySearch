@@ -2,8 +2,18 @@
   "itemId": 1082071,
   "itemName": "Aqua Brace",
   "chineseItemName": "藍勇氣手套",
-  "totalMonsters": 4,
   "monsters": [
+    {
+      "mobId": 4130103,
+      "mobName": "Rombot",
+      "chineseMobName": "泥人領導者",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 3210204,
       "mobName": "Roloduck",
@@ -48,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

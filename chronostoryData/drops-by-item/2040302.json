@@ -2,13 +2,12 @@
   "itemId": 2040302,
   "itemName": "Scroll for Earring for INT 10%",
   "chineseItemName": "耳環智力卷軸10%",
-  "totalMonsters": 8,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.3,
       "displayChance": "0.30%",
@@ -71,6 +70,28 @@
       "maxQty": 1
     },
     {
+      "mobId": 3230103,
+      "mobName": "King Bloctopus",
+      "chineseMobName": "機器章魚王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 7130200,
       "mobName": "Werewolf",
       "chineseMobName": "狼人",
@@ -92,5 +113,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 10
 }

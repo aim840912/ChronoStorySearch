@@ -2,8 +2,18 @@
   "itemId": 1050064,
   "itemName": "Dark Linnex",
   "chineseItemName": "黑飄雲之衣",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 4230120,
+      "mobName": "Plateon",
+      "chineseMobName": "培利堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 8140000,
       "mobName": "Lycanthrope",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

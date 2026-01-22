@@ -2,7 +2,6 @@
   "itemId": 1462004,
   "itemName": "Eagle Crow",
   "chineseItemName": "鷹弩",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 2110200,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

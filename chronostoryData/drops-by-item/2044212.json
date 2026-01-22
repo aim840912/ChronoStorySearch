@@ -2,7 +2,6 @@
   "itemId": 2044212,
   "itemName": "Scroll for Two-Handed BW for Accuracy 60%",
   "chineseItemName": "雙手棍命中卷軸60%",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 8150000,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

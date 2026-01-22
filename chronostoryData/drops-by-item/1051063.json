@@ -2,7 +2,6 @@
   "itemId": 1051063,
   "itemName": "Beige Lineros",
   "chineseItemName": "褐飄雲之衣",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 5130108,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

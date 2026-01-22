@@ -1,0 +1,19 @@
+{
+  "itemId": 1201004,
+  "itemName": "Diamond Bolt for Crossbow",
+  "chineseItemName": "鑽石弩矢",
+  "monsters": [
+    {
+      "mobId": 9300476,
+      "mobName": "Zenomega",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.2,
+      "displayChance": "0.20%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

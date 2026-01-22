@@ -2,7 +2,6 @@
   "itemId": 1092008,
   "itemName": "Pan Lid",
   "chineseItemName": "鍋蓋",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 9300659,
@@ -49,6 +48,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 3230400,
+      "mobName": "Drumming Bunny",
+      "chineseMobName": "兔子鼓手",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5130100,
       "mobName": "Drake",
       "chineseMobName": "青龍",
@@ -59,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

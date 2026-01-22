@@ -1,0 +1,55 @@
+{
+  "id": 1332116,
+  "description": {
+    "id": 1332116,
+    "name": "1st不速之客短劍(LUK)",
+    "description": "",
+    "chineseItemName": "1st不速之客短劍(LUK)"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 47,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADFElEQVR4nMWWjXWrMAyF5XO6ABmBjEBGICMkIzgj0BHqEfAIyQhhhDBCPEIYgSfJP9gBWmjT13uOU7Dd6EO+EnmDv1H/dC/+AqTv6w8AWYEQAqqqAqVU/1sg9MRiblGc3nlDf7+B2O547jdA+s/WyrIMMHcpw8KrQTjtFGQOwhgztfYNjzz6DDaim4TAVEPTjObpgyCaaI2ysdWaIehjOQgBPF8PQD0KwLSTACSCoGxdMPixNQnEMpABIItm6boDCi6i7Dw98e5yCVk4F3mAgAkjL81IFobWV5Byz7OdQ0UgczrhagZ5HiXuo2K/EARpDuJrEJuNFMJiUb4NiE1NvvAQJGO6cP50FGWRQVGU/ihmNQ8yAVFWEhql6Tgq2kKBDN63bQNFeYCtUslXGMxAXRwgx4w8m3UZyAREjxCCIN5PDOADEQSJIe7oGbpt0bTaNiqCAIKwJT3b5MYgA4SVg2DNQMTqcavQxQDhWvlnEGOQuERtJm4EsUNX3ojto4ZQI3nB43xRfCxwwKBbMYq2BGIM4gGGEUQwITNORze8ZD90d40A3GEf/Qb7zVccEciML3auRmlyD+OGKnFPF1Fr5aoDs4dlvoWFenuCcN82+MJPUrBbmiQGi98cZ/pXpuM+M/Ua+AQkhUh8UeC4Qs4BCUKotBfYfRbz6tcHCDum30sTIBMQpIN72r0LEo6lkg0HUPpAt9QzL+rytRsXgCQQHbR4U3AAIqzjTFiIRMYDSnmE4ThWZcODjCoE3EQSVUqNX90hMHfVouKEIHAGN9vszok3VkAMIGjOe1UkC3vVYEWUU3xQ47zEyyOM1EVjlYJHcrZm8nsCS7GBMoXhABJ3azyU0l07k+6+C5GAeGUxkJTqqOxRcAA8FvKRdkU7C0HH0mM1ijUe0bp+uGPJxlnpCIavHIQHID1BQIDgxfUeYQAbtYWNCtl4D0+JsCFwrBSiW2vQEYgvWYaIAXwQ/4ssVbrnBxABhOTSTBAGpt0fe6lL/v4QIoC4TJyi4B4m1jjYCwASkCj1q98RrwOxhosh4H9DkP4BNZ6ftRG3yhcAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADdklEQVR4nMWXi3HyMAyA5bsukI4QRggjhBFgBDNCGKEeAY8AIzQjkBHwCPUI+SX5TRIaen+vunPr2K716Zn0Df5Gxodn8Rcg43j+AJAdCCGg6zpQSo2/BUIWi6VNcTzxgfF+A7HZ8tpvgIzP9tq2jTB3KePG/wZht5OSJQhjzNzeD3Lka6zgXdhZCHQ19P1knX4QRJ/tkTc2WjME/VgPQgCP8wQ0ogCYYRaAhCDIW1dUfhhMAbEOJAFU2SrNLZBykXnnweLt9Rq9cGnqCAEzibzWI1UcWn+ClDtetR4VgczxiLsV1HXmuI+O84UgSJYgvgdx3ighHBb524B4P1NeBAgSY2yMP4WibSpomjaEYlGWQWYg2k5CrzSFo6MjpMjg8zD00LR72ChVXGHQA+dmDzV65DFZ14HMQIwIIQjidGSAoIggSBjijjlDjwMmrXaNiiCAIFxJLza5KUiCcOIhWBYgchnxqNBNgvCt/BnEFCQvUeeJG0FsMStvxPZxhlgjdcPjclUcFtij0o2YaFsDMQUJAGlEIZjoGS8HP4LIMXV3jQDcYb/Gd+w333FkIAt5sfU1Sos7mDZUiWdsRq2Vrw70Hpb5BlbK2wOEvy3lRVgkZbfSSQyWvzku9KdMx31m7jXwBKSEKPKiwfEJNSskCKHKXuDOOczPsJ8g3Jh/L82AzECQ7L21O68khqWTPStQek+P1DOv6vp9Nq4AKSAsDPjQsAIiPOeecBCFmAAo5QFSOF7yRgCZVAj4hUKrlBqvtgjMXbXp2CEIXMHNNbtLkRsvQCQQTM571xQbO9VjRbRzfHDGdYnTA0zEZuMliTlSc2oW3xNYij20JQwrkHhaY1BaP/dJuv0pRAESpMqBpFQH5ULBCjAslEfaF+0iBIVlxGoUr+SI1ucvH5Zq6hVLMDzzEAGAhCH2CGGtU0i/ths3F6/nCAM4rQO8q+iNU7QSYaPiXJpmB0NfMQB9iJiBPj5o7qByg9aAhJJlCAIgC+lidxl9dh29xVW0nM5cdQ3GWl63/jyNus5BypJegIrvGh/rk7PMAFvHllEOeSAa1t9pPRDYBBAUTv9lCADGjwkMg3hPHPkC+qih74zBkJUJwElK7BwICusfe9LqFu/eDy7OzhMEYwovhkmpxBaJ8Gz+OGZAXOmlP04uh5gjU6kWLrRPnp965h8Py/vVqONunQAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": 1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 11000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 8,
+    "reqLevelEquip": 47,
+    "tuc": 7,
+    "incPAD": 61,
+    "incACC": 12,
+    "incEVA": 18,
+    "attack": 1,
+    "attackSpeed": 4,
+    "vslots": [
+      "Wp"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "Dagger",
+    "lowItemId": 1330000,
+    "highItemId": 1340000
+  }
+}

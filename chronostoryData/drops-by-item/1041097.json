@@ -2,7 +2,6 @@
   "itemId": 1041097,
   "itemName": "Aqua Platina",
   "chineseItemName": "藍暴風甲",
-  "totalMonsters": 7,
   "monsters": [
     {
       "mobId": 5140000,
@@ -81,5 +80,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 7
 }

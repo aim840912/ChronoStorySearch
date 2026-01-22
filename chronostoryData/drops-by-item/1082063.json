@@ -2,7 +2,6 @@
   "itemId": 1082063,
   "itemName": "Blue Arten",
   "chineseItemName": "藍精靈手套",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 4130102,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

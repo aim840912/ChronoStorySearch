@@ -2,7 +2,6 @@
   "itemId": 1050094,
   "itemName": "Red Oriental Fury Coat",
   "chineseItemName": "紅綢緞長袍",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8142000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -1,0 +1,53 @@
+{
+  "id": 1332009,
+  "description": {
+    "id": 1332009,
+    "name": "偃月刃",
+    "description": "",
+    "chineseItemName": "偃月刃"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABs0lEQVR4nLWWDXGEMBCFl5kawAJIwMKdBSQUCYeEOwkggUpoJBQJIOGQkGY3PwQa0gDhzTDhL3x5b3aBD7hGXI2J76Yr4Pz95tC2X1DXJfct4CrnkGUFPJ+ddwGx4eSasTFoATHhBjyOfdCEWPAFWDg1F9C55V4riQGnBzrAJmKEIrzrBjOpLHN+Bm6gqC2wLQG0Dw875xtQF5iryJ2L2gvnO9wSmDG2dX0XfAGelYpt8oHpGGK0mnSs4Sk0TQdVdbcrGayoqdAYa53P2g3X4Lq+E7woCgH4Eedn9/KadIqVjQtQFb5wHwqnyPM8h8ejsR4+Qd8zcj5NE9xun665iW6ttaL0uQCTIxEv34j5cMGpr5QuHhMvH4aB0rAhWy6PwkmvV2X20V2ajmJLXbeiy6AF/Ac37fVXmW+e9yciFE6y+xo/k3KE0/LBjWtRzTQ2zTeNmDZGvhF7FDgJXWuoVpZJcJJQukER74Ev/kiWYOk8hlxwJxih6BiFrlWLHXbtgove5fQKRZh4aZFLHbPW2bhdcC6kdmUp4ytTQxXQ8CGCNNwCz7KKKhpwDSfqypmt6FCtX0d7/mvZFAjMAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB8ElEQVR4nLWWjZGDIBCF15lrwCtBS7CFpIWUcCkhlpCUYErwSjhKuJSgJYQSCLv8ZPWQQ0PeDIOK8vHeLOoHvEfK9kXspnfA1f2u4Hr9hrY9qNgC3uUcqqqB87mPLiA3nFwLMSYtICfcg8fxlvRALvgErJ36AXTO3DsVOeA0YQDsI0Yowvt+8A8dDrV6Be6hqCUwlwby083O1QI0BFY28uCi1sLVCrcEFkIsja+CT8BPlbrJGJjOIcdWM44dvISu6+F43PNKBhY1FZoQ1+Bcq+EO3LZ7gjdNowG/+vrTvRkzTrGycQG2wifuU+EUeV3XcDp1bHIJt5sg51JK2O2+Qs8WbmvNlWWfazA50vGqhZg3F5z9Srni8fGqYRgoDQ5ZcrkVTrpcjv4Y3ZXlqFsZuhVdJi3gP7jfXn9VxZ6L/kSkwkl8X+Nn0vTwsmJw71pXM/Vd90M9po2RL8SeBU5C1w7qVFUGXBSUblLEa+CTP5Ip2DjPoRA8CEYoOkaha7vFNrsOwfXeVfQKRZh+aZFLF7OTjfsTzFclRTJ0kcOVlj00pYyvTAe1QCeswGYlWLI2gTPwU6yoUPiWcU4bCLsOOmTQ0Tbp4ESdOeNqLaiC9JhTFkRwTuUQ15Immo3Nj+fNw+cTjDNoyG3w9yVwTUbG4AEK7Bk+8xfPiQAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": 0,
+      "y": 29,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 0,
+      "y": 29,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 3100,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 9,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incPAD": 45,
+    "attack": 1,
+    "attackSpeed": 3,
+    "vslots": [
+      "Wp"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "Dagger",
+    "lowItemId": 1330000,
+    "highItemId": 1340000
+  }
+}

@@ -2,7 +2,6 @@
   "itemId": 4000054,
   "itemName": "Lycanthrope Toenail",
   "chineseItemName": "白狼人指甲",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8140000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

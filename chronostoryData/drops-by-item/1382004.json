@@ -2,7 +2,6 @@
   "itemId": 1382004,
   "itemName": "Old Wooden Staff",
   "chineseItemName": "古樹長杖",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1130100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 1041006,
   "itemName": "Yellow T-Shirt",
   "chineseItemName": "黃色短T",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 130101,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

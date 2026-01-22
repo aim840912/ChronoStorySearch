@@ -2,7 +2,6 @@
   "itemId": 1061099,
   "itemName": "Purple Mystique Pants",
   "chineseItemName": "紫朱雀之褲",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 5130108,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

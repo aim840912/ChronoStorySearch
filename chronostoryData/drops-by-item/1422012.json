@@ -2,7 +2,6 @@
   "itemId": 1422012,
   "itemName": "The Morningstar",
   "chineseItemName": "雷神之錘",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8143000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

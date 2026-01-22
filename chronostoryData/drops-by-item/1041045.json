@@ -2,7 +2,6 @@
   "itemId": 1041045,
   "itemName": "Brown Nightshift",
   "chineseItemName": "黃夜",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1130100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

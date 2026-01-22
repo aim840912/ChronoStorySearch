@@ -2,7 +2,6 @@
   "itemId": 2040323,
   "itemName": "Scroll for Earring for LUK 10%",
   "chineseItemName": "耳環幸運卷軸10%",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 8220001,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

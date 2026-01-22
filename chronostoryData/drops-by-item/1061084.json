@@ -2,8 +2,18 @@
   "itemId": 1061084,
   "itemName": "Brown Jangoon Skirt",
   "chineseItemName": "黃鎮月裙",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 3230308,
+      "mobName": "Tweeter",
+      "chineseMobName": "特威德",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 5120003,
       "mobName": "Grupin",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

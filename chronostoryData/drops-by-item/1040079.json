@@ -2,7 +2,6 @@
   "itemId": 1040079,
   "itemName": "Brown Piette",
   "chineseItemName": "褐貴族之服",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 2230102,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

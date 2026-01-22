@@ -2,7 +2,6 @@
   "itemId": 1072143,
   "itemName": "Green Goldwind Shoes",
   "chineseItemName": "綠黃金風",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 5130101,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

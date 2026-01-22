@@ -2,11 +2,10 @@
   "itemId": 2040347,
   "itemName": "Scroll for Accessory for DEX 10%",
   "chineseItemName": "飾品敏捷卷軸10%",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6090000,
-      "mobName": "Riche",
+      "mobName": "RIche",
       "chineseMobName": "厄運死神",
       "isBoss": true,
       "inGame": true,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 2002009,
   "itemName": "Dexterity Pill",
   "chineseItemName": "敏捷藥丸",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3110101,
@@ -14,6 +13,29 @@
       "displayChance": "2.0%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230116,
+      "mobName": "Barnard Gray",
+      "chineseMobName": "葛雷族人",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 2,
+      "displayChance": "2.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230118,
+      "mobName": "Ultra Gray",
+      "chineseMobName": "葛雷隊長",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 2,
+      "displayChance": "2.0%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

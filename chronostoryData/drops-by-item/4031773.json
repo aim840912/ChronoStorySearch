@@ -2,7 +2,6 @@
   "itemId": 4031773,
   "itemName": "Dry Branch",
   "chineseItemName": "乾枯的樹枝",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 1110101,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

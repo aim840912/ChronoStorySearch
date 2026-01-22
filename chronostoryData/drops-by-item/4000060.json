@@ -2,7 +2,6 @@
   "itemId": 4000060,
   "itemName": "Lunar Pixie's Moonpiece",
   "chineseItemName": "月光精靈的碎片",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 4230106,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

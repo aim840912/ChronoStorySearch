@@ -2,7 +2,6 @@
   "itemId": 1032017,
   "itemName": "Rose Earrings",
   "chineseItemName": "玫瑰耳環",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 8220001,
@@ -36,6 +35,18 @@
       "displayChance": "0.10%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230131,
+      "mobName": "Gray Commuter Saucer",
+      "chineseMobName": "新葛雷白",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

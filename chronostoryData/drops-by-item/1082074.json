@@ -2,7 +2,6 @@
   "itemId": 1082074,
   "itemName": "Dark Cleave",
   "chineseItemName": "黑盜賊手套",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 3220000,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

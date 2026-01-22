@@ -1,0 +1,37 @@
+{
+  "id": 4000103,
+  "description": {
+    "id": 4000103,
+    "name": "飛機螺旋槳",
+    "description": "玩具飛機零件之一的螺旋槳。",
+    "chineseItemName": "飛機螺旋槳"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABx0lEQVR4nL2W3XXDIAyFxTldwCvYI2SFrNCM0BXiEcIKHqFZwSPUI4QRmhEoQmAEiWtBf/QSkIEvki6yX6DdLBsr6aZWoLWfZ4DuAmAUqMHDRdAWIMFm7YaaHDcQQ9sivOt8bhzUBavGfehPauhSWr+lHdjlv+b+d0CF9bIf0GQl0BbzfeW5CM0EMGjZeg60zpwgxlUUQXnPD2qoHweS1K8qOwzlzsAR6v/EeKLJ21EeXQRafzDeq/JfmwSO0dr3fMlYAYtAgAW2U4R+p8DzAeDikgCH4F/Ijz59qu00hh0UzMxpPM0M1rOyTjinqNVJ3mkUdgjsFPwuDUUzuUC1PVV8FI0KbelhQbZ5Ye4lX4wp10s6w4sQLVe84tdivwaYgWn7sRdfF0BzSBFTPEKlnUZhjbxC++JJR0r1NfZR56B1fKVhTWtLUO6M99HB+gM8qr2Y1wD9fY0XXqca+lI4kdlbyGb/mm8019QcpEBqDktInVmBvO4KoTi4FZt5J5JH6MVAO795Fa3RPvNLgeyTQmybiq97HwYB9EdKW4hE3EflwLtufh21AaP9AlQCpE8KbKbH/wESdEz3DG2ofA/WAv3hhdyrYWhfzFqe3kRiPP0AAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACCklEQVR4nLWWjXHDIAyFxV0XYAV7BK+QFZoR0hHiEcII9QjNCh6hHsGMUI9AET9GEJMAverOZ8DAZ0kP2W/Qboq0WemiVqBSP1cAfgOQDFhv4EXQFqCFzUI3hR1YoRja5uEm4r7UUO0sG19D/5JDHdL6Je1AHt/l9n9AhvlS39BkKVAl/dfK0x7KCaAXZfMpUGnTghh3UTjlHW/UkD8KtFK/s2gzlDsBe6h5ifFsO5dTuXceqMzGeK7St5YB7L1VX/GUsQLmgQAL5EOE41qB1wHgpoMAgxtf7DiOiXNtpZFkI2dyDu1pJrCOpHXCvvWancsrDcMKgZWCnqU+KSY3qLZDxXvRMFeWHiZEixcyvMSTMeRiCXsYEaLFimf0WLzOAUZgyj824uMONLsQEcUjtLTSMMyRUWiXPOFWqSbHxusYtLfvtllT2gKUDvrzqGHdAI9qT/o1QHNe/YEXIYcmFVpkanXR7N7jhfIeikMp0BaHxYVO7kCad4ZQbKzJYlqJyj00YrArn3yKdm+PxkuB5Jei2LKKr/seOgF0Jxs250lxHS0HbqL5c9QG9MYrRoNFGc8B6R9LryvEirUWTodzB8jbRu7mSoE8c33oWvvpzxmak7ogr5HTrofhN0lSoN+8I3c/jjZpyIXMn6AynGhHHuYmY38s2DhtR9db8lDCY9lNjcNx+LYn/b39C2tHun/RH8kpAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -2,
+      "y": 30,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 30,
+      "isEmpty": false
+    },
+    "slotMax": 200,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Monster Drop",
+    "lowItemId": 4000000,
+    "highItemId": 4010000
+  }
+}

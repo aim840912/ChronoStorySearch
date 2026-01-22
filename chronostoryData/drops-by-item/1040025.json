@@ -1,0 +1,19 @@
+{
+  "itemId": 1040025,
+  "itemName": "Red Bennis Chainmail",
+  "chineseItemName": "紅獵人服",
+  "monsters": [
+    {
+      "mobId": 3230400,
+      "mobName": "Drumming Bunny",
+      "chineseMobName": "兔子鼓手",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

@@ -2,11 +2,10 @@
   "itemId": 2040708,
   "itemName": "Scroll for Shoes for Mobility 10%",
   "chineseItemName": "鞋子速度卷軸10%",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6220000,
-      "mobName": "Dyle",
+      "mobName": "Dyle\t",
       "chineseMobName": "沼澤巨鱷",
       "isBoss": true,
       "inGame": true,
@@ -36,6 +35,18 @@
       "displayChance": "0.075%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230103,
+      "mobName": "King Bloctopus",
+      "chineseMobName": "機器章魚王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

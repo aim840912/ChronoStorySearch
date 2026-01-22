@@ -2,7 +2,6 @@
   "itemId": 1002004,
   "itemName": "Great Brown Helmet",
   "chineseItemName": "褐色戰鬥頭盔",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3210204,
@@ -14,6 +13,18 @@
       "displayChance": "0.13%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

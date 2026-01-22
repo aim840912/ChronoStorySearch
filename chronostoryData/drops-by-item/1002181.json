@@ -2,8 +2,29 @@
   "itemId": 1002181,
   "itemName": "Red Pilfer",
   "chineseItemName": "紅海盜頭巾",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 3230303,
+      "mobName": "Propelly",
+      "chineseMobName": "粉紅色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 5120003,
       "mobName": "Grupin",
@@ -26,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

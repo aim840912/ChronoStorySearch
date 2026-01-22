@@ -1,0 +1,38 @@
+{
+  "id": 4031129,
+  "description": {
+    "id": 4031129,
+    "name": "香濃起司",
+    "description": "散發著香味的柔滑起司，看起來應該能煮出美味的湯。",
+    "chineseItemName": "香濃起司"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAVCAYAAABc6S4mAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB2ElEQVR4nKVVi3HDIAyV77IAHcEdgY7gFewR0hHSEdIRkhHCCPUI9Qj1CGEEigQIEE7bpLrzOebz3tOTAjv4Xzjx3ckFjxIQsLuOAGrM6N3kJMkjBI6AU1gDsPhHj37i0pDcS+CkaiLQI/+WJL8RVB67D4hqoSJZ3g29+77m/omAPS4329UD9PXCChzXGEP7uidDWUiCpnj66EneJljXAEJ2CJkJHEMKSASbXZFCHy9wK3DOnqecXRTg3Ei1QAJH3haFSqmzsuE2Aanei3nEiEJDBggwT81GtAX8o7Vp5lCAPrTZEjA+UeiOGTGDJbecBgPL7N8DhPFSYKpHMY5jIUxVhx2zJhI7h5legd7jTluoU/St9IbwQcW0bbbbk3EXpXbTeyV2qpaEZdv6N87FIvsC4yi1aYfVvp6C58vZBm9TJn4jO5dA1ADzaxCEduiyFLiv6ETOABeidesKdShhlQCnP+ACtW0214YJsEgIzp3hgTiLDasSuOrLAsd9ReQMfC+ziKRAkvwx/DFBr5KgiycgBx/JJQlmsRoYTiPZhMLR1soe8n/DIhAXRTysMuFX0T1IchCylei+DQIZNeGzldcjuE8BjtmKE+GeC6e5b7uXdF+k4ptm7TcUvtPdHzjKuAAAAABJRU5ErkJggg==",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACI0lEQVR4nKWWjXGDMAyFxR0LuCPQEdwRWAFGSEdIR0hHSEaIRygjlBHKCPEIruV/C5uQRHc+E9vok54EpIXXTJHfTe3gsyADULcBgA2R0oyqBnsGpAzAmxQAsx580BvXKuxRkKJZGBAfwnUNdg+U1UD9gIseMtj8LczcdXkMe0ChBqkTuWhHXX4wg+AZIcx9zZvIsqKgVZH5ScO+RlgW68zIRML2EDQaCAUVu8gbP12hZrgnL2PM1gWi1JDVCkHKaJ8U1EsSIu3rIJPFgeyjDxKwzQgdTePKAcoFenAuVnsYCD8WKs+cKjK/pw0RYEZzbFUOAuZJzz3Y9TRgX69kHdesiWKd2hCFh8nJ7nQM+AE9yCRaZn4zXkikZ04GGcsAMZDQdb5N+YERD2wNC2nI/Br3XDPoRsDVrL0b7I7b2dZkvkirvc9MOwiKemesh+nTBoYy8bRUeF+hc0NGeANKuyzkBCMSEoh5kGfI5ZTr5gkgLCZCQidphyErL1kilYewLm0Ed1/BYkb6WQhB+YgobKfp14+ZSqDGPcXBwqcghWFWi4D+PBj5MBGUO5PN1GdDOhqBeylG8F/SbQg7Ek+MdOsGiFoOfpf0sw3ql0Aw+8Ib5h5oE2wWPvz3yjeJqJ599c9JAzttL4jB4ybTHxTEyFxb2wuRfngQq4watOS0tI7DfGzaxGmXzM9mUoWnGdUO1SKme/Q6Gy3E9O5JxCrQrcDC9T8PZO3I+Co6GwAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -4,
+      "y": 28,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -4,
+      "y": 28,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 1,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Quest Item",
+    "lowItemId": 4030000,
+    "highItemId": 4040000
+  }
+}

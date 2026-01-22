@@ -1,9 +1,19 @@
 {
   "itemId": 1492007,
-  "itemName": "Mr",
+  "itemName": "Mr. Rasfelt",
   "chineseItemName": "拉斯菲特之槍",
-  "totalMonsters": 4,
   "monsters": [
+    {
+      "mobId": 4130103,
+      "mobName": "Rombot",
+      "chineseMobName": "泥人領導者",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 0.5,
+      "displayChance": "0.50%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 5220002,
       "mobName": "Faust",
@@ -48,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

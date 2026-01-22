@@ -1,0 +1,230 @@
+{
+  "mobId": 4230132,
+  "mobName": "Gray Luxury Saucer",
+  "chineseMobName": "新葛雷黑",
+  "isBoss": false,
+  "inGame": true,
+  "drops": [
+    {
+      "itemId": 4009433,
+      "itemName": "#N/A",
+      "chineseItemName": "迷你UFO操作器",
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 0,
+      "itemName": "Meso",
+      "chineseItemName": "楓幣",
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 647,
+      "maxQty": 921,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 2000005,
+      "itemName": "Power Elixir",
+      "chineseItemName": "超級藥水",
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 4004003,
+      "itemName": "LUK Crystal Ore",
+      "chineseItemName": "幸運母礦",
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 4010006,
+      "itemName": "Gold Ore",
+      "chineseItemName": "黃金母礦",
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 4020003,
+      "itemName": "Emerald Ore",
+      "chineseItemName": "祖母綠母礦",
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 4010011,
+      "itemName": "#N/A",
+      "chineseItemName": null,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1002325,
+      "itemName": "Purple Osfa Hat",
+      "chineseItemName": "紫扣帶帽",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1050104,
+      "itemName": "Red Varuna",
+      "chineseItemName": "紅色羅赤裝 ",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1050102,
+      "itemName": "Green Varuna",
+      "chineseItemName": "綠色羅赤裝",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1002404,
+      "itemName": "Green Arlic Helmet",
+      "chineseItemName": "綠色昂斯頭盔",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1060107,
+      "itemName": "Red Osfa Pants",
+      "chineseItemName": "紅色勇者褲",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1051082,
+      "itemName": "Red Anes",
+      "chineseItemName": "紅色高麗貴婦袍",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072204,
+      "itemName": "Green Ades Shoes",
+      "chineseItemName": "綠色昂斯鞋",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1332026,
+      "itemName": "Cursayer",
+      "chineseItemName": "可撒之劍",
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1412010,
+      "itemName": "Colonian Axe",
+      "chineseItemName": "格洛斧",
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1302023,
+      "itemName": "Fraute",
+      "chineseItemName": "坲羅劍",
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 2044701,
+      "itemName": "Scroll for Claw for ATT 60%",
+      "chineseItemName": "拳套攻擊卷軸60%",
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 2040516,
+      "itemName": "Scroll for Overall Armor for LUK 60%",
+      "chineseItemName": "套服幸運卷軸60%",
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 2041013,
+      "itemName": "Scroll for Cape for STR 60%",
+      "chineseItemName": "披風力量卷軸60%",
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    }
+  ],
+  "totalDrops": 20
+}

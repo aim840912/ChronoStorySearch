@@ -2,7 +2,6 @@
   "itemId": 1060102,
   "itemName": "Dark Commodore Pants",
   "chineseItemName": "黑色強化褲",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8170000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 1492000,
   "itemName": "Pistol",
   "chineseItemName": "火槍",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 130100,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

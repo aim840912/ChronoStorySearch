@@ -2,7 +2,6 @@
   "itemId": 2044602,
   "itemName": "Scroll for Crossbow for ATT 10%",
   "chineseItemName": "弩攻擊卷軸10%",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 8150000,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

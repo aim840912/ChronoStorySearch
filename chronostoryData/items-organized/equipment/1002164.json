@@ -1,0 +1,54 @@
+{
+  "id": 1002164,
+  "description": {
+    "id": 1002164,
+    "name": "褐雙翼之帽",
+    "description": "",
+    "chineseItemName": "褐雙翼之帽"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 30,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACx0lEQVR4nL1Wi5GrMAwUM2mAK4GUACVACaQEKAFKOJcAJYQScAmhhLiEcwl+krAdzCf3MsncXjJnbEe7KwnMCY5h8BvB5+HjnuBvYZYXR+Sma1KoxfRJ96YpExCD+pWcYTd/QoAZuxSk1MHkIXmSACgFH4PS27k9clbp8AH3u66PyCEtR5iGgsdlc0XyDN7BnutDckJe3TD3Et6EQUB7Of8/OblmcsQgLu8KwFgdxHHM42UWD533IgM1aXgXUh5n77Dmqp9rTqrFXH8Dr4EbVPb1a+SU9qq5seqiKOB+G3ms8N7Ly3zeZJOitYKY7ktNH/zD7qJ9oh+e1vuIPCrqyXQ6g7qdmFghAQXU+B1EH2xuug7LMzExKnHEfp0yR6CaZ1nmM3LonEDE49gxsbaO9c5TZ5qkSwGOZ2L3GH3mek0e1NQ5JkIKqoewcTj9toMttyfmjFgB4zguXTue4FQzPz93H+jr68zEBKpnlZcPh5YpxTmfbgBOt4PTRAKoZ+j//X7z6+dzxgJOjrita0hiTFWvON0cEB1PO7cKuSbiwPYCsc+I9hnQ0PJMjxkkISQgqPkqRtjdC6xdh8SbKStgNkHEvRA8ZnJK6Td2LaXb1do53EBDSLxqtIcK+sSYyTlDrqyibf0W7zyoqYVEtXsdvm42h+WLgoMjHfp+s3b8MqHpTE8gTpPNUrpuQIsKReV5GgiTctjUU9vrk7ugJqEnUhQ9ju3r9XtXFxFfLu1mvrd13S3Xdh93e4SBDHW4lD0L0Lbm1ANNVaLTNPgxEdO+hxPl3cjBOnXuceyMq1UJN2kfBuHHREyNVO3UfbnPRddPDkFHbB+9wUMmKorauPvbReIOJudUd+uEDo4Ge4HcX7tmQzLhnZCmaaBkj3jtnAUsAxExNd3SFmmgue67gUstYA2aJ9Ttdg1W74Gng0WzUPoSFqS/vnD+A/4ysGUi75uwAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/UlEQVR4nL1WgbGqMBA8Z2yAVwKWACVICVqClAAlPEqAEqQEUoKUYEp4KYF/GxNMQuL/b3T+CkNIYnb37gLsKY2Fzx19Huu6e/q/WNybFPnSNwXV3fxJ90tzyqkb5V/JNczkTwhYpr4gIZTXmSTPcyIp6WOQatsXI9cqLT7gPuo6RU7FaaJ5rHT71FyZvKR3EHOdJAeOlxvHXtCbWBjUng//Tg7Xmpwxdud3BfBaPWVZpttuFJPOh64kOSt6F0Kko5fMuRweOYfq7pH/hX4HXaBiqH9HjrBfmptWXVUV3W+Tbkvee8fT8THJBEUpSRn2pcLBP64uzOuG8WW+U+S7qp6XXpVUt7MmlkyABRWfYzd4k5u+5/TMmpiVWOJ1HJEDkPOyLNeIJJ0DIJ6mXhMr41hFnjrzLGwIuP0gto/RV65Dci+n1jEIsaga/cLR4TcVbLhXYh0RI2CaJte15fHeasvPz31d6OvroIkB5PNyPD0dGqaC+9ZwE+lwW1hNEICawfV+v63jh0OpBewtcVvXlGccqkHqcOsF2fEc2SpwDWLPtoNsjYhaI6Co1T0DRxBCIMDLebCGX90OQtc+8abLCHiYAPHQdbqtyRHSb65ahNvm2jrcQJFPHBTaUwWOjCP5iJBNa9e265TVuZdTA8FqYxUeFpuF+6FgYUnHYdiMpT8mFN7pOWVFvhkqwgI0uLCo47HwhAkxbvKpzP3e3qBI8ETa7Z6v7ev1O6oLxOdzu+kfTF6j6drO09W+44UWVLgQgxagTM5RA83lxE4L788gxrynE7m6EaNxat1z2xqXQQo3YR/Hbm2DGIV0ieTdnWdXVy9egpbYPHq9h8yuqurF7m+7kq5gOEfejRO8OBquBbi/9s2GZOadUBSFpyRGHDrXAtyFQIyic21BA/r674bOdUch0A/U7XaM8eXehGGHKlj8cZT+Cg6pW5HKnHAiTXtDnpmzMtfc6XevKbhZzyJ9HmL73CUI//jqu0q9aIdnlBwDMhAQc5slhLwSu5n/BxIXxaXgdeAhAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -1,
+      "y": 30,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 30,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 2300,
+    "reqSTR": 0,
+    "reqDEX": 95,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 4,
+    "reqLevelEquip": 30,
+    "tuc": 7,
+    "incSTR": 1,
+    "incPDD": 21,
+    "vslots": [
+      "Cp",
+      "H1",
+      "H5"
+    ],
+    "islots": [
+      "Cp"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Hat",
+    "lowItemId": 1000000,
+    "highItemId": 1010000
+  }
+}

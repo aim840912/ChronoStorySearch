@@ -2,8 +2,18 @@
   "itemId": 2040321,
   "itemName": "Scroll for Earring for LUK 60%",
   "chineseItemName": "耳環幸運卷軸60%",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 9300476,
+      "mobName": "Zenomega",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 5100000,
       "mobName": "Jr. Yeti",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

@@ -2,7 +2,6 @@
   "itemId": 1482000,
   "itemName": "Steel Knuckler",
   "chineseItemName": "鐵指虎",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 210100,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

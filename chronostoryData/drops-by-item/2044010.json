@@ -2,7 +2,6 @@
   "itemId": 2044010,
   "itemName": "Scroll for Two-Handed Sword for Accuracy 100%",
   "chineseItemName": "雙手劍命中卷軸100%",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 2230100,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

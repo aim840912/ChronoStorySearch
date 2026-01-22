@@ -2,7 +2,6 @@
   "itemId": 1051001,
   "itemName": "Emerald Fitted Mail",
   "chineseItemName": "祖母綠鎧甲",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 4230101,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

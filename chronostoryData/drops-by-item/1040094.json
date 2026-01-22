@@ -2,7 +2,6 @@
   "itemId": 1040094,
   "itemName": "Red China",
   "chineseItemName": "赤陽",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5120001,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

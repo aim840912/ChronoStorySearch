@@ -2,8 +2,18 @@
   "itemId": 1041106,
   "itemName": "Red Pirate Blouse",
   "chineseItemName": "紅隱者之服",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 5120100,
+      "mobName": "MT-09",
+      "chineseMobName": "機器人堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.16,
+      "displayChance": "0.16%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 8141000,
       "mobName": "Spirit Viking",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

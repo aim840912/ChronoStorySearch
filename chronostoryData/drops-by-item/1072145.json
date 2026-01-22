@@ -2,7 +2,6 @@
   "itemId": 1072145,
   "itemName": "Blue Gore Boots",
   "chineseItemName": "藍花精鞋",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6130102,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

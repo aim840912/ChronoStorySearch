@@ -2,7 +2,6 @@
   "itemId": 1061093,
   "itemName": "Light Mantis Pants",
   "chineseItemName": "灰飛影之褲",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 5150000,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

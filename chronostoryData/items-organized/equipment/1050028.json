@@ -1,0 +1,55 @@
+{
+  "id": 1050028,
+  "description": {
+    "id": 1050028,
+    "name": "綠牧師長袍",
+    "description": "",
+    "chineseItemName": "綠牧師長袍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 28,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC5ElEQVR4nKWXDXXjMAyAlfeOgAfBg+BCyEFwIaQQUggbhBZCSyEQEgg1hBpCTvKv7CRNd9N7a35s6ZNsSfH+wGuZ4XfSrL1cg2ZQrwHuw3vmdeuvk8nvhinaKuA1dIYOlYUIjyIb24LHcWODCurYcN8qDk9gDi2BpCcsPgp3m4zXYozXkVHPemdJK7AdnIEj1AOjRL0UMbt3Edk8rxYhA9APXjoDp6sspqRIn3cDkzUgxhYOV3qTJ4ponwylBz7AncNFwZ/L3Tp7phMODHg9Ha2LlqDziKDpMARHcSmEccrMVACy/SpWIC6Nn9drBN4rZ+pIJzOBQrADonRygMFosEGnw6g7NGAxmQat4GxZUoVllzh+0zlzxU06u1EwSrqkPW182AM8nh7a6w4uQjNPLdiPI26ngX7sQdvlZloGSKBzuDEZmCKNLz4/vmdQCsYLwpRmyyZAPG/QOv37LvBwrByQkrJ8kb3cAirRzV9Y35O1lK2EIIKVkCl1llAlc1epyya+tHaZUNEfmq9kBtJ8emSNagl1hS590TuPK6M1hNePCDVMMNLl46xBLKEmlEasGb5MyQGRazQyuUNT5XDl7HqkxpTPvLUFZlrmOM6bBl1jr17ZhaL3zvPoshNzCZOpAvNeWjvE9x2fH6PGVqx90NM5DU24ilSee9/T18KjS074W3I+gmspoLEGfSfJXxtmawW8bI1Ut7G70ZWeeXfi0MY1hygyZ4F1icM/XRwKpUeod3B9nP6+19xcZG/+wrsOEusNtnr3K2m2Bt7c0x1qHe2ObEHzR73Ys43C+yF1J1LhzdWl8YOo/gPKJELXPuS1VGeit6EtnnWoPRS9KIAljsUebnxugxI+6cinCefh4WfTp03oVzgFUJ1RkVMNT9gelcwJVX5HbapFyobTdZO5DSUDbdvhIc3Cs6fyw0OL8sYbPBI8vlQq/DifTn3uELYjm1B/pvHF3ZyXbn9e1w7fCH7jH4J/pCBSPxW9hvQAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADEElEQVR4nKWXgXXjIAxA5fe6AB2BjuCM4BvBGcEZIRmhHSEZIVnBI9gjhBHCCD4JEAiMk/RO76UGg/gSSDL9gOeywP9JU3tZgybQsQe4je8t33f+OZv0bpx5rQxeQhcYUFmp0FVpsS04jxsbVFDHhnbXSngES2gOJD1lsatcMy5eijFeR7Oe9caSVmA7uAAz1ANZWC96LNrOI5vmlaJ0APrB82DgcNHZlOjp42ZgtgbU1MHuQm/SRMXr00KxIwekcbgp+Od8s249MygHBnwe9tZ5S9BlQtC8G4OhuBXKOGWxVACK88p2gLfGzzv2CLwVxpSezmaGFsEOiDLoEUbTgw06A3o94AIWg2nsWzhZEVRh2zWOX/sUueqq3bos6CU94pk23u0R7g8PPfYDnFUvLLVgP/d4nAaO0xF6uz5MKwARdAoNk4DRU37x9fmzQNvCdEZY24ttU6AeV+ic/u0lcLcvDNCaonwVvXIFVKLGH6ifSS1kCyGIEilkcp01tNWpqpRpwy+tXQcU20PzW52ANJ+6olCtoS7RtU96Z3GxaAmR+aNCDhOMdOW4KBBrqAmpwTkjtykaoFKOMlMaNBcGF8bWPTUm78vSFphxm3lcFg16cq2unEJWe5dlctGJsYTBVIBlLS0NkueO/fvUYynuvdPzKQ7NuIuUnq++p89FeheN8E0ynsGlZFDOQV9J0tdGrFUBr0sj5S1XN3pSX1YnCW1ccWDRKQqsCxz56ZJQyC1CvZ2r4/T7qZm5it70hXcVhPMNtmr3M2m2Bt480xfU0tsXsgVNH/XszDYS75fUF54qv1yZGr/w6h+gQhha+5CXUtyJ3oZ2eNeh8pDVogDWOMY13PjYhlb5oCObZpyHlx+AjX3fhH6HWwDlGSU55fCM5bHVKaDy76iNuUjRcHD3rHjRsuK3goZK7wtE1w14SbPwOFL64aWl9foNXgnu321MfJ5Ptz53CRMbJmAm/OxHBeis83can9zN6bLaia9L7fKN4Df+Iah5SrIX7XfKgn3SLn8ZlLdAQmrAraS0T/rZ2F9G6Wg3u+bYpgAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -2,
+      "y": 30,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 30,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 3000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 85,
+    "reqLUK": 0,
+    "reqJob": 2,
+    "reqLevelEquip": 28,
+    "tuc": 10,
+    "incMMP": 30,
+    "incPDD": 28,
+    "incMDD": 14,
+    "vslots": [
+      "Ma",
+      "Pn"
+    ],
+    "islots": [
+      "Ma",
+      "Pn"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Overall",
+    "lowItemId": 1050000,
+    "highItemId": 1060000
+  }
+}

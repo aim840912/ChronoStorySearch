@@ -2,7 +2,6 @@
   "itemId": 2043002,
   "itemName": "Scroll for One-Handed Sword for ATT 10%",
   "chineseItemName": "單手劍攻擊卷軸10%",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 8150000,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

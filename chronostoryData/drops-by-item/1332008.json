@@ -2,7 +2,6 @@
   "itemId": 1332008,
   "itemName": "Coconut Knife",
   "chineseItemName": "牙刀",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 2130103,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

@@ -2,7 +2,6 @@
   "itemId": 1082129,
   "itemName": "Purple Imperial",
   "chineseItemName": "紫色費洛奇拳頭",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8140000,
@@ -14,6 +13,18 @@
       "displayChance": "0.10%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230131,
+      "mobName": "Gray Commuter Saucer",
+      "chineseMobName": "新葛雷白",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

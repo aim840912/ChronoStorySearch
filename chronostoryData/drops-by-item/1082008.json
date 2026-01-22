@@ -1,0 +1,19 @@
+{
+  "itemId": 1082008,
+  "itemName": "Steel Briggon",
+  "chineseItemName": "鐵製輕便手套",
+  "monsters": [
+    {
+      "mobId": 3230307,
+      "mobName": "Chirppy",
+      "chineseMobName": "邱布",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

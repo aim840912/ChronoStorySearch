@@ -1,0 +1,19 @@
+{
+  "itemId": 4000104,
+  "itemName": "Motor",
+  "chineseItemName": "飛機引擎",
+  "monsters": [
+    {
+      "mobId": 3230303,
+      "mobName": "Propelly",
+      "chineseMobName": "粉紅色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

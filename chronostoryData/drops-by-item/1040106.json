@@ -2,7 +2,6 @@
   "itemId": 1040106,
   "itemName": "Blue Studded Top",
   "chineseItemName": "藍玄武之甲",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 6300100,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

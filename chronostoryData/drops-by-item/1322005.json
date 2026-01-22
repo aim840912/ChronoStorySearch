@@ -2,7 +2,6 @@
   "itemId": 1322005,
   "itemName": "Wooden Club",
   "chineseItemName": "棍棒",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 130100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

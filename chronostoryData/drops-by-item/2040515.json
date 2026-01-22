@@ -2,7 +2,6 @@
   "itemId": 2040515,
   "itemName": "Scroll for Overall Armor for LUK 100%",
   "chineseItemName": "套服幸運卷軸100%",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 5130107,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

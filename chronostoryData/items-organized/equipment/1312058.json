@@ -1,0 +1,54 @@
+{
+  "id": 1312058,
+  "description": {
+    "id": 1312058,
+    "name": "1st不速之客單手斧",
+    "description": "",
+    "chineseItemName": "1st不速之客單手斧"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 47,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACYAAAAfCAYAAACLSL/LAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEbUlEQVR4nJ2Yi5WqMBCGJ+fYAJaAJWAJUIKWgCVgCVKClCAlLCVICaQEKSF3Jpk8Adm7cw4LBDZ8/PPI4AH+x5TKgrMMvtus/woxwx/s92AGysKk+zUouib1//0B7juYVyjnB61tKRBoIH88B8ep6sZWwLfBvEJZAJYCrlkI5+eKHx7/r1ILwHWwGCoEKtw9bVduvtT9ls53DJRKXywE/gLmoQoGslsEMzUFDhY82wjHdnRAihQYJYjziU5Oweyp+iGQZOVmUi4G81B5tDGQaurFe4i2MwcI9brU0M1zChXHjxA/OH7DOR/Q1D3EMej2HmypVGlVskB9EDZ0Y9UOgJMPDOZdO7r7fMkIg16IJ54POPdFn5s5rIKkXKRYqpaDahmo4eEOz68hFFtZlnBv79APvQVI1Zo+zxccb1c39MGQOJJHPJwuNYdErch9Vim680FDAWAS3hL2TIhPWV4Wwxk66NOAhZP8fHlIoIoQ6opIL7w0cwJJ3NPR3XNQGdAZoN4TnK4VPArjUYq3a98pr+YF6my9wmT6sSOAd2d2cNdstiBU2Zg3ezHQE/cE2be9n40y8H4rFNeg0+nkoMguLwyjsYHh3sFN9hoKQTFQu1W4wKW9BVvE1k9S/yqEGggqqE8UK1lRoGDCjV2leaiFtVAErKGUouAqgb3ybkrUSSuFmjnVshRMq1WwWmdOqDcOaygKTsy8qX4aiB5zFAPdKXS5wDiOIKXUWbkB5RNLw+QwbIRnDMYgJ4SaWDULiNKUFCc3iVPJEZ75BSrpXdv3/nhGQIJ6Nw+TgUrdnVJkHMMdQ61F3m53Eeb7MPiHV7KFPM/hPU0YG3jX/RjcF1URgI0SFJafX4FNrJoMg10pCqABfNH8IbcdTxVA/VrMkedFdJquHgR113lujtsYbl4Fc1C+gFJUSrD1Sog3lQe97KBrQ7VCo+Tg+0t4PMGWIDJbhtK1iA+XYCtQ0m0IpN8aoSiOuFaZu5Q6g1mApwUhQtkSZDtIWyNvjNT6lUQPHMAvoloNhuoDoJkV01ZQiUClCMpZuFhji3PlKq8VZaXIKJEouapAH1sjA7VkqJgDQ6g2USruQAPjMrDqR50oD1NabJYTlIUjI0Cqmb33kHvegU8yhqqCuX17bBZjRWpRraK9c2G6UNMSZ9xKKUf+yyQGPpVhUs7CkdGxbpu8C0dIYswqFnaVERQVUFurLBztd8yEFD0Y4ULlyM6xI2a36UbR90o+QWIVVF1jMeziNY6hBHy3zU+8JMkWYWMU8yBpLGmlUqhNoGVf/xuoMLakZflW+RVVdnKfzUCOq/9XCd2Yc7lwrfhSqajCboEp6hD66819F+VZAV8t/Upvu2d42a0ivs8fk/3u55v6KZuonXljR5EXO78IpH19U1OPFH6Hph/DcSlKsnsNTFRDq+DxwdXV9ObnzvVhe24EiDN8XrkWbpu/bWzG2KfJ4Ai8OJu1cB8qznC7+qRgZr/ze8YWmDgKocJz+K0ZuLUrc3TPjv0Drgx5Sq81OFoAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACYAAAAhCAYAAAC1ONkWAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE5ElEQVR4nJ2Yi7GqMBCGlxkbiCVgCVgCloAlaAlQgpQgJUgJhxKkBFOCKSF3N9k8AT3nZkYhEJOPP/vCHfylaS2inoDPTZnvolDwH+33YBbKweTHNSi6J83v/gPuM1hQqOSF1j45EBigcK6i81x121bAt8GCQiICywHXWgwX5koXT3+r9QJwHSyFioEqP6Yf6s2H6q75fPtIqfzBYuAPYAGqYiD3SWBebYUXK55thn0/eyBNCswSiuOBOodo9lz9GEiycoqUS8ECVJl8GEi3l8VzFP1gTxDq0VxgUCqHSu2nKH7w+hXnvEF7GSG1QX8MYEulaqeSAxojs6GBp34CnHxisLC1sx8XQkZs9EVxx/6Eczemb+dwCpJyiWK5Wh6qZ6CWLw/YP8dQ3Oq6hq7vYJxGB5Cr9XrfH7C/nv2lN5rEnnYkwJlQs8vUSrbPKUUjb3QpAszMW8K3VhTvum4WlwVu0LsFByd5fbnLoKoY6oxID7yl2IEkHumsCxwUBowH6OcLDucT3Cq7o2Rv53HQQc0GLmI9wgiz7AwQtlPs/D3nLQhVt/bJHgx0xyNBjv0YZiMP7K6V5hh0OBw8FLXmgWY0tzB1A1zlaKAQFA11WIWLtnR0YAvb+sni3wmhJoKK4hPZiqgqFKzw187SLupgHRQBGyitybhq4F15tjXqZJRCzbxqIgczalWs1pEd6omXDRQZJ3re63K3ECP6KBq6V6hpYJ5nkFIar9yACo5lYEqYNswzBWOQA0K9WDUHiNLUZCdXiVPJGe5lAycZtnYcw7lCQIJ6tjfrgVp3XilqbMMDQ61Z3tfqIvb3aQqLn2QPZVnC8/VC28BR3T4al0QRgI0QFIefX4G9WDUZG7vWZEAThKD5Q9u2P5wALo/FHGVZJd08exBUZ/zcnvcpnFoF81AhgJJVSnDxqiieFB5M2sGtjdWKGzkHj6/hdgcXgqi5MJTnIj5dgq1ASf9BIPPUCEV2xLHKjtL6CDYBvxaECOVCkKsgXYy8MlIfMom5sIOQRI0aDDVGQIoVM62iEIFKEZRvcbLGEufMUd4oykpRI0ci5zpF+rgYGaklY8U8GEL1mVJpBRo1DgOr+2gc5WZDi/NygnJw1AiQYuYYdsivt+OOYKhTNHcoj20y1qQWxSo6+i3MEzWlOLut5HK0f0Ki4VMYJuUcHDU6N2VT2MIZMhtzisVVZQJFAdTFKgdHxy/NmhQtjHCxctSO6UYo/zGFYqiVgoOkKujLBYPhkOY4hirgc9t8xcucbGE2VrEAktuSUSqH2gRa1vW/gYptSzqWT5FfU2Sn7XMeyHb1d5VwG0sOF74UXyqVRNgtME0Vwni++veiUlTwsT2fApMoFmxGLIEy3+PbPouEOn/Ojl9f3/RP3SblzBMrirLa3BkLMwwC8xDlImEGN02Hd0qArDpUrJBSFPglnZkh+9S718CK09RruL1xMVubHwdfh1HMil+77KJKYW00EYOFpFRER1GGrOO+lbQGLukoqE+lye/fxN+tQApOzjYXUmyqIDXscKQ6zMAIMEnQjCrtCOXXxXHUUaSYDU9KLaA+gRX7otBRnwJvXOSt/6ni10BbUwQ5q+y+sspZNvsQ6/+3fPLKAtI3Z54xXWrxKxZk5X7+J4titf6kWDxZnBEA1uNTHKDz32/1P/419Q+i2rBO2hDORAAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": 3,
+      "y": 33,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 3,
+      "y": 32,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 11000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 47,
+    "tuc": 7,
+    "incSTR": 1,
+    "incPAD": 65,
+    "attack": 1,
+    "attackSpeed": 5,
+    "vslots": [
+      "Wp"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "One-Handed Weapon",
+    "subCategory": "One-Handed Axe",
+    "lowItemId": 1310000,
+    "highItemId": 1320000
+  }
+}

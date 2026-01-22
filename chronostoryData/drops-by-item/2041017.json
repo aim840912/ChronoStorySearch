@@ -2,7 +2,6 @@
   "itemId": 2041017,
   "itemName": "Scroll for Cape for INT 10%",
   "chineseItemName": "披風智力卷軸10%",
-  "totalMonsters": 7,
   "monsters": [
     {
       "mobId": 3220000,
@@ -81,5 +80,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 7
 }

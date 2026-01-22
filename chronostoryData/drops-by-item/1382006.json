@@ -2,7 +2,6 @@
   "itemId": 1382006,
   "itemName": "Thorns",
   "chineseItemName": "白龍之杖",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 5220002,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

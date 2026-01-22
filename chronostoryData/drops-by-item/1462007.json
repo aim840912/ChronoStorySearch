@@ -2,7 +2,6 @@
   "itemId": 1462007,
   "itemName": "Rower",
   "chineseItemName": "炎弩",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 5220002,
@@ -16,6 +15,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 3230303,
+      "mobName": "Propelly",
+      "chineseMobName": "粉紅色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230101,
       "mobName": "Zombie Lupin",
       "chineseMobName": "天使猴",
@@ -25,6 +35,18 @@
       "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230109,
+      "mobName": "Block Golem",
+      "chineseMobName": "積木泥人",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

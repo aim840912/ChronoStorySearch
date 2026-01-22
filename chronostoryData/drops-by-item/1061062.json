@@ -2,8 +2,18 @@
   "itemId": 1061062,
   "itemName": "Green Legolia Pants",
   "chineseItemName": "綠守護褲",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 5400000,
       "mobName": "Jr. Pepe",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

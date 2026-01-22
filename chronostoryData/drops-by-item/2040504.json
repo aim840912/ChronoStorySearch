@@ -2,7 +2,6 @@
   "itemId": 2040504,
   "itemName": "Scroll for Overall Armor for Defense 60%",
   "chineseItemName": "套服防禦卷軸60%",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 5220002,
@@ -38,6 +37,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5120000,
       "mobName": "Luster Pixie",
       "chineseMobName": "日光精靈",
@@ -48,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

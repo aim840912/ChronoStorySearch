@@ -1,0 +1,38 @@
+{
+  "id": 4031090,
+  "description": {
+    "id": 4031090,
+    "name": "記憶碎片",
+    "description": "打倒外星人而得到柯林遺失的記憶碎片。",
+    "chineseItemName": "記憶碎片"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAZCAYAAADJ9/UkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADEklEQVR4nK2WgZWDIAyG43tdgI6AI9gRdAQdQUfQEXCEOoKOoCPICDKCjOAlCB721OvdK+9RFYUvyR9Cb/B+W7AH8MH2LnzJyxiaevioAe/Cg0+Dr+CLg/oGwIfbEXx5PgVINbwV5mUZmb1l3rCmnyB46L/CEdyBgst5Pvi1a9fx/aUBR3DUV/phX/x3L2Du9Ve4oo7fqTMDzjR3EJPlEY+hUw0MtTIyeB4TNKKOgNgzbMCLtI+nEfg12wlMHL6T1LQNTmDWr09aGa1jAnoReN9zl0RhmIDUHVKYmc1wdJ73OhtwC9DHEYaghZqHUPebARL2clzCF4aEMMxgmtrHNPVJlhW9xqkap5YiJYNmHH94i5rAE5hcj7E30Zau3994DHsNfPhSCtI3BaUHqKp6FKKs2/bZ1HWT84j8R+9yDY9HNo5jm7mJGv0jjw2Y9gn5m+IYzhsGmff9M3QMfxtvcAop6UueRywy+mHoSvMypbAKNEqaNLJg1jRNPs8t3IsMapxvPMb3ugGYxBOjhXIxBfd7MoFNYn8bO/jCOEd9BwPmeP/oCvCTKKkr6MsnRLGGoqhbMjZOIxPVpTXZvIk6jhaMA0zv5N5t45sLBXmlpMaPNWQNgtOXJAIyoIARDSCNFVlk1tSrAWt2U1Nd13GN4xrXkpTszCSNq5ZbrbitoRjIRLNOWeZNFTQ5iOMkIlmoccbNLrg32bqjO3AG6DRN6yyrSilxDq4ryvKwXN/AnlicM6Dsxuf4NIkQAEJb+Aqm9KCc0LnJkW2btq2gvJA4Np2Va6d5gGBXNKgiDbRPab9uSZQYzxRmL3EhrLKf0qz7m3uHzQ+dj+CuuYokbUmMnb22ZOo4jtbC0WFQxOn+fm2HJ+MGp9prNVPOEK9CmcMC976gRyHyznxwJM23E78eizvPrQGuFivwSmOSFH2e50D5i0akF9IMHvxv57kXAQ1eaVRKmQKx3pvLmTQSLg6TS7gzwN76CwR1NZjaP8+mtrvk3EljwQb+r38yFy2gwuHBdtL4/Tfwf+CrBSfSwJv/3Vz7AmAP7jv9BD5dAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADdElEQVR4nK2Wj/F7MBTAn7sukI6QjqAjMAIjMAIjxAg1AiMwAiM0I/SN4PdeJBq++LV3zV2IkHze/7jA522iHsAP26fwKSsiqKv+pwJ8Cg9+DT6DTw7qCwA/bnvw6fFQMOr+IzNP0yDsUHjTyJcguOO3cAK3oOF0nQ/ednSd3p8KsAcn/46+2Sf/3QYsvb6Fa+70nT4S4MjnDmKiPJQRtLqGvtLGDZ7GDA25EyDyBOvpNtrHQwv8N9oZzBy5cqlpC5zBopufUBtfRwz0LPC55i6IbrcYRmyJIsxqQbOv19rPBtwAdFFIJmigkjeoukWAEdbuOIVPggi3WwrPZ3N/Prs4TfMOaSnS0kIlLNCL5u/epsbwDGbVI+p1uITr+xuPYe+BD58Kxf5NQGMPZVkNShVV0zzqqqozGbL+pF2GcL+nwzA0qVuIpB9rbMCcJ6xvQnO0ru/HrOseN8fw03iBs0nZv6x5KELjPzJdYV4mbFZFQo0mjCxY1HWdvV4NXPMUKlpvNKb3WAM81YOsRe4SGq7X+Ak2iP00dvBJSEn+7Q1Y0vje5uAHUVyV0BUPCCOEPK8aFjZKQmPVqTHRvDh1GCyYJgSu3L1K44szBWulR6SPEdKawMkmiIAFyGEgAdjHmiUye+IswBzd3HTbthJpHmmvkYNdmKBx1XKpFZfZFD2LaPYpiqwugzoDtR9E7BZuUkiTBdc6nTO6BScAJklSpWlZjCOtoX1VUeyW6wvYE0tKARzd9BwdBhEBQKGFz2AOD44JzEyMLGnaNIrjYqS551G5dj4PCOyKBleknvOU83UJothopil6mQu3Mv3rmjm/pXfY/PHzHtw1V5FGWxIjJ68tmRhF4Vw4WjKKOszvbds9GRc4117rM+0E8SqUOSwo9xU/KpW15oM917yV+O+xuNLcCuBqsQavNMZx3mVZBhy/JERy4preg393nnsWQPBKo9baFIh5bG5Hrhnh5DA5hTsB7NDfIKjK3tR+qmpU21Fyfm5dM5cklhWRzojv/2ROWlAUiWjbnmQQmjqKOfEN3DXKb+6C05eEcGu/Ps///J/RYSFsg/d9PvWIK2xHD+qDV7FwBBcHnSG8OY/M81zwZqvjm7dn7tXvFY/34P4vkrvvWsEKs2Xh9psDYU41P1p4FkR4Mt72Xbif43vC+HNH5v1EIPgHOjgxrKb/xykAAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": 0,
+      "y": 29,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 0,
+      "y": 29,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 1,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Etc",
+    "category": "Other",
+    "subCategory": "Quest Item",
+    "lowItemId": 4030000,
+    "highItemId": 4040000
+  }
+}

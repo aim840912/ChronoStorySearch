@@ -1,0 +1,19 @@
+{
+  "itemId": 4000120,
+  "itemName": "Mateon's Tentacle",
+  "chineseItemName": "馬堤安的觸角",
+  "monsters": [
+    {
+      "mobId": 4230119,
+      "mobName": "Mateon",
+      "chineseMobName": "馬堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

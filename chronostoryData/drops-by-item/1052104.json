@@ -2,13 +2,12 @@
   "itemId": 1052104,
   "itemName": "Brown Turk Gally",
   "chineseItemName": "褐色海盜服",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.7,
       "displayChance": "0.70%",
@@ -36,6 +35,18 @@
       "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 2230104,
+      "mobName": "Green Trixter",
+      "chineseMobName": "紅蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

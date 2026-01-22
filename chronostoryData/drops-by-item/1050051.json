@@ -2,7 +2,6 @@
   "itemId": 1050051,
   "itemName": "Red-Lined Kismet",
   "chineseItemName": "赤仙白宮",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 4230103,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

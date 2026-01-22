@@ -2,7 +2,6 @@
   "itemId": 1402004,
   "itemName": "Blue Screamer",
   "chineseItemName": "青雲劍",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 8140000,
@@ -14,6 +13,18 @@
       "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230118,
+      "mobName": "Ultra Gray",
+      "chineseMobName": "葛雷隊長",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

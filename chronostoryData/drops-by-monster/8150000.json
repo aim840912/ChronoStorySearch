@@ -4,12 +4,11 @@
   "chineseMobName": "地獄巴洛古",
   "isBoss": true,
   "inGame": true,
-  "totalDrops": 37,
   "drops": [
     {
       "itemId": 0,
       "itemName": "Meso",
-      "chineseItemName": null,
+      "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
       "minQty": 2142,
@@ -413,5 +412,6 @@
       "questId": 0,
       "enabled": true
     }
-  ]
+  ],
+  "totalDrops": 37
 }

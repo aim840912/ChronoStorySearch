@@ -2,7 +2,6 @@
   "itemId": 1072139,
   "itemName": "Blue Goldrunners",
   "chineseItemName": "藍天使鞋",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 5130102,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

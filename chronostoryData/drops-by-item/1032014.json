@@ -2,7 +2,6 @@
   "itemId": 1032014,
   "itemName": "Pink-Flowered Earrings",
   "chineseItemName": "梅花耳環",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 6300005,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

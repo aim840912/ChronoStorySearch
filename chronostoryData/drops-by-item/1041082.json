@@ -2,8 +2,18 @@
   "itemId": 1041082,
   "itemName": "Brown Piettra",
   "chineseItemName": "褐女貴族服",
-  "totalMonsters": 5,
   "monsters": [
+    {
+      "mobId": 3230103,
+      "mobName": "King Bloctopus",
+      "chineseMobName": "機器章魚王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 4230104,
       "mobName": "Clang",
@@ -59,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

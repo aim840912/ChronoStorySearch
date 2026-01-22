@@ -2,7 +2,6 @@
   "itemId": 1040009,
   "itemName": "Steel Corporal",
   "chineseItemName": "鐵胸甲",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 2230101,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

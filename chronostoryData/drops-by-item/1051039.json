@@ -2,7 +2,6 @@
   "itemId": 1051039,
   "itemName": "Red Lumati",
   "chineseItemName": "紅貴族禮服",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 5130107,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

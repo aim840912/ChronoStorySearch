@@ -2,8 +2,18 @@
   "itemId": 1002093,
   "itemName": "Blue Duke",
   "chineseItemName": "藍鐵頭盔",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 3230103,
+      "mobName": "King Bloctopus",
+      "chineseMobName": "機器章魚王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 6130200,
       "mobName": "Buffy",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

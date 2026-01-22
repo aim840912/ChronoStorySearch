@@ -1,0 +1,53 @@
+{
+  "id": 1061034,
+  "description": {
+    "id": 1061034,
+    "name": "紫色妖精裙",
+    "description": "",
+    "chineseItemName": "紫色妖精裙"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 28,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAXCAYAAAAYyi9XAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC1klEQVR4nJ1WgZGsIAyNM78BtgS2BK4EWvBK0BKwhKWEtYSjBUv4lHCUcJTgJUFAXfX/2cywuoTk8R4B+QPXNsN71pw5/gUI8xN/WgMgHltHHNIz2PT0+IrtPl7nuwKcW9nB4CSAQzwxYhMQY+SGPQk3PrAF7iN/S8PDSMocsrxk2MoIAZMIickjcEIyBqYO7kNmQaxiAgK+xxCBYGGRZs+AlDvW/jKBZQzZQ33ZwX8esjwDnClo9JN5GJzxtCCv8BAeokCeIZYgLQLYCUCKc4rXkqrOjs6Zrg0webWjj4mVAEodQoBOA1iXYjz+P2N5BMjspJJp7XxaJ7IqW4R37ZKh5GIhHVUCqcWZSPK6xvqU1Uks/wdwy66YRnYjV6aKO2kPTEkJZ7KeMiR2WVKAKRGkqpS7gczuOMcRyzUgs+McCxgpacDYYRiwcCI4PATyVlhL26mABwRuetVyfPAVaM/yhSHJeWyaUtXCWRjzXj2ooSzrFUPI7KQ80Qh2mx0SUYHbA1wqmvW+JNuDbgAzuyxnxPWjBPX8pD2HhaPSyVJklWnr0EQ9+inPmawZsKzfnl0Ir3pVWSN/IVjtJW7N8kjWDUOWU1uTP0VCDqA7gNGxbgjulorMZ2cO1Pg+gWwFf1n2LNegBZAGaH03zY3+2TJg/jHw9cSPnB9hxJqtNKFIGqaALcLanW3PkgDn744AP0zzkfRez665fZY081/L+9JOT5ZaZoreg+n4xchWoTIktQOlBU/GB2XXgAiGiftXMLJWPKyLgyGmzS3Fzc8+MfMptndpTjLgAYGHRPQIGJZvJY4xrTfaa+j9NBNgg2AzXyVUYmP7VECbBcerhFaai6Xp3UY2Zk5Q07fVBifsYik2j6Xugjejt5s1ZNC6bt7wXWW5pzhcQpJ7/lHbuw3da5xlXwK+G4gGK90CqloUWN1zmnWVlgMWpdvf1prab+HAkv8DLv1kv+BakOjuSRFAAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADJklEQVR4nJ1Wi3HkIAyVZ9IAKYGUQErgSnBK8JaAS1hKWJcQWnAJRwmhhFCCTxLGxqxxbqIZ1iwfPd5DCF7g2hb4nXWtjp8AYXngT28AxP3YEcf0DTZ9PVaxvE3X/q4Al14OMDoJ4BBPTFgExBi5YEvCjXcsgduov6fhYSJlTlleMuxlhIBOhETnEdghGQNTA7chsyCKOQEBf8cQgWBlkVbPgOQ77u3bAtYxZHf1aUf/ccqyBbjQpMnP5m5wxfOKXOAhPESBPEPcJmkRwM4AUrQpXkuqBjs5Z4Y+wOxVRR8dKwHkOoQAgwawLs3x+L/F8gyQ2Ukl0975tE9ku2wRfmuXDCUHC+moEsgenIkk72vcv3LvJJb/A3hkt5lGdhNHpoqVtCempISWrE2GxC5LCjAnghSVshrI7M59nLEsAZkd+1jBSEkDxo7jiIETwWESyEehlHZQARMEHnrV8/zgd6Ca5RNDkvPcNLnaA2dlzGf1JIayrFcMIbOTsqERVIcdElGBxwNcCpryXJLVoAfAzC7LGXH/yMGeP+nMYeColFk2WWU6OrRQj/3kpyVrBtz2r2YXwrNeu6yRbwhWe51XsjyT9cCQ5dTW5KtIyBH0ADA51g3B3RqROXfmiRrrM8he8M1SsyxBN0AaoPWb6V7pn90GLN8GPh94yfkJJozZnSZskoY5YIlQdmerWRLg8jUQ4Lvp3pPe5eq614/NzfLX8rm084Ollpmi92AGrhjZK1SGpHagtODF+KBsCYhg6Pj2DEbWi7t1cTTEtHtN85bHLTHzae7NpTXJgAkCk0T0CBjWuxLHmN4b7TXc/LwQYIdgCz8lVGJjbymADhuOTwmtNAdLd3MH2Zg5Qc1fVhtcsItbsHkMdRe8mbw97CGD7vvmDb9V1neKwy0kuZdvdXzb0LvGWe5LwG8GosFIt4CqbgoU75yujNItwaJ09Wut29stnBiHGgJ/N/p/TN6v67c42lx/h0MW3SxfIX+q9nyIcwKMNaBolBK8rtfOz9qp8OOgBMzOZfEtnbcTbNueFnHGsDX46l0RL+qH8lJ1BvhZutaj5mqBW/0f9Vqpy4iXfXcAAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": -2,
+      "y": 28,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 28,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 3000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 85,
+    "reqLUK": 0,
+    "reqJob": 2,
+    "reqLevelEquip": 28,
+    "tuc": 7,
+    "incINT": 1,
+    "incPDD": 16,
+    "incMDD": 12,
+    "vslots": [
+      "Pn"
+    ],
+    "islots": [
+      "Pn"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Bottom",
+    "lowItemId": 1060000,
+    "highItemId": 1070000
+  }
+}

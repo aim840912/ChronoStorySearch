@@ -2,7 +2,6 @@
   "itemId": 1102016,
   "itemName": "Red Magic Cape",
   "chineseItemName": "紅色魔法披風",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 5130107,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

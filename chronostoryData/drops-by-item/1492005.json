@@ -2,8 +2,18 @@
   "itemId": 1492005,
   "itemName": "Shooting Star",
   "chineseItemName": "流星",
-  "totalMonsters": 3,
   "monsters": [
+    {
+      "mobId": 3210206,
+      "mobName": "Helly",
+      "chineseMobName": "黃色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 3230101,
       "mobName": "Jr. Wraith",
@@ -37,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

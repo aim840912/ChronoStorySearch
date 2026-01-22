@@ -2,7 +2,6 @@
   "itemId": 1442005,
   "itemName": "The Nine Dragons",
   "chineseItemName": "九龍刀",
-  "totalMonsters": 6,
   "monsters": [
     {
       "mobId": 5220002,
@@ -70,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

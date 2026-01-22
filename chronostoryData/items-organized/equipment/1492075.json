@@ -1,0 +1,55 @@
+{
+  "id": 1492075,
+  "description": {
+    "id": 1492075,
+    "name": "1st不速之客火槍",
+    "description": "",
+    "chineseItemName": "1st不速之客火槍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 47,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAhCAYAAAAlK6DZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACtElEQVR4nLWWi5GjMAyG5ZlrgBa4EqAEUoJTQrYEXAKUEErAJUAJoQWXcJTglWSLcBuzZDdEMx4ecfzx62X/gaPN+4yvSs30FN+q9ZTjoAGWx0HAoe97OJ/PD1OPgQZggaPKTFtDpE7TlJz+OvQLUDc1XPFBtWbzL0coZbcKkEwpBXVdv1EpQhF4LYocnLUwrmI4jiN/w9FQj7I4fmN8UVUVw7ZUvgr1aGBPJT+4eearQWCeo2rnDocyEKag7zzeVRFwz34D9X1V8I01hoECWiucswKyooB5si9Dvb8NDCOVBKQYfnUlAfWtDx9Wnj2Cf92R2KXmbwlN34AqTwyk0XUdT/gKd8am1nkaugCxMhbg5XIBY+5NYNYXvl7RpR9lKJ2hyqGcuAcvap+BctMWoLhUgKSOYklAag5Uq4B59Q/dO5l0V9qDeqm7tdE7Y7bbHFvM7LJt6fJ0TBdgnRdLHKm9SQxT9UgZu2dbUAZ+Z+JWuYemtp21+qL1ModUxg97PqakUhJIVFqbyEjvqS1p2De/BfW0+YoLU5Zw6xwHb2vpQgHfYCaayT1Al26zNspacI+bcoHxi0m2QFNGOUFrSH9eQ+/dZscE1kpm4k6D/3agtVHWNtSLJjs+/I9U0vwf915ya5soA2BfBKO1JxeynizLSGG2TBQoq9yzVb0+bMyo1uEqM57EoPHxEIi1GjyXyU6k1tDvAGwUa92EWt20cOzk40rqV7kh6LI3Shwoc3Ost2Z2S2f5gam9CXelVAYbAFLIqwWVu4s+D81Cd+ko4NjMYdUEVi59Gfg/NAKHYYCP+Myn84PUJaGn04mB4uCJ8t572hRHUIcyA1SAZORUamVdU1MxOsnIY6HYrEdrbyrGMEOFETjCquCPhVLP1JoCR5mUzZpBYbxBZYBKJ7mrmt8FE/sEtPtqm5R2SQgAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAhCAYAAAAlK6DZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC6UlEQVR4nLWWC7GrMBCGl5ka4ErgSgAJVEIqgSOBSKASDhIaCUVCsRAJNxJydzeP5pRQ+jo7k+EV8rGvP+zg02ZtyceiMHTl7xbplM9BHazyg4Dn0+kEh8NhMfUzUAescbSlPPbgqfM8Z6e/D70BiqGHb7wojnL1lU94ymENQLKiKKDv+1/0FKEI/K7rCrRSMCU5nKaJv+HTUItucf4mf6NtW4atefku1KKB2jd8oY3ho0RgVaHXWn8cykCYnX+H6eoVAbfsFag9tTWfKCkZGECph6asoaxrMLN6G2rt5cww8pKAlMPbUBJQXE7uw5qDRfDLisQhlX8bGE4DFM2egTTGceQJt3AtVW6dh6ERiJ0RgV3XgZRXETCi4+M3hvSrca1zbitoZtbg6O0jUBbtAAwhDUDyjnJJQBIH6lXAuvqH4Z1lXpW2oDb0XWp0T8p1mWPzld0cj3R4OKcR2Fd1zCPJW8hhrh+pYrdsDcrAexbCGs5h6NWolOiEiHPIS/9hj+eUvAwFFLxUKlOR1pIsCdg2uwa1tPmGEOYsE1bjB29r+UYBO2AlylkvoFFtUqOqBb3clGvMny+yCM0Z1QStEfQ5hV7VZsMC7BgqE3cafFuDELJQaiAtmtW0eI+8pPlPay+F9ZhpA+BYOKO1Z+2qnqwsycMyTgxQ9nLLkn5dbMzorcZVDP6JwWD9TyD2qotcGXaiIoXeA7BRrsXgenXV3G8n/67knoYTgsa9MeSBKrfCfhuMjsryhBVbE66eUhusAMhDXs15+QfSBG3boqqv0NKpy0jroZhDIgJJSEkEtnVuCTTJ+JlTAp7PZ/jy1/x37oB0i7wL2pjzdK1PA0z7YSJ0v98zMAR4profBgWjMhj3Cp4L6d0P2aVAMgoqSdnY1ljvSoPR5t4CmWe357cDoSjWk1KXwuewRA/HToxgzIxDZ2DlygeYO9c/nu34hhCUOA6hET72VaUxqfe8e9l2UUmuMmZCk/+W/QeBQI1EXwp97gAAAABJRU5ErkJggg==",
+    "iconOrigin": {
+      "x": -2,
+      "y": 33,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -2,
+      "y": 33,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 11000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 16,
+    "reqLevelEquip": 47,
+    "tuc": 7,
+    "incDEX": 3,
+    "incPAD": 47,
+    "incEVA": 20,
+    "attack": 9,
+    "attackSpeed": 5,
+    "vslots": [
+      "Wp"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Gun",
+    "lowItemId": 1490000,
+    "highItemId": 1500000
+  }
+}

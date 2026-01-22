@@ -2,7 +2,6 @@
   "itemId": 4000003,
   "itemName": "Tree Branch",
   "chineseItemName": "樹枝",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 130100,
@@ -36,6 +35,29 @@
       "displayChance": "60.0%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230307,
+      "mobName": "Chirppy",
+      "chineseMobName": "邱布",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230308,
+      "mobName": "Tweeter",
+      "chineseMobName": "特威德",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

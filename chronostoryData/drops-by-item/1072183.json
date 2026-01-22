@@ -2,8 +2,18 @@
   "itemId": 1072183,
   "itemName": "Red Wing Boots",
   "chineseItemName": "紅飛翼鞋",
-  "totalMonsters": 1,
   "monsters": [
+    {
+      "mobId": 4230118,
+      "mobName": "Ultra Gray",
+      "chineseMobName": "葛雷隊長",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 8143000,
       "mobName": "Grim Phantom Watch",
@@ -15,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

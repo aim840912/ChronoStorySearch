@@ -2,7 +2,6 @@
   "itemId": 1060017,
   "itemName": "White Martial Arts Pants",
   "chineseItemName": "白武褲",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 3000000,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

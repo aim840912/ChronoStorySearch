@@ -2,7 +2,6 @@
   "itemId": 1002184,
   "itemName": "Brown Pilfer",
   "chineseItemName": "褐海盜頭巾",
-  "totalMonsters": 4,
   "monsters": [
     {
       "mobId": 9500148,
@@ -48,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

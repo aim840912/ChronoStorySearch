@@ -2,7 +2,6 @@
   "itemId": 1002217,
   "itemName": "Orange Golden Circlet",
   "chineseItemName": "土黃金法冠",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 4230104,
@@ -17,7 +16,7 @@
     },
     {
       "mobId": 8140100,
-      "mobName": "Dark Yeti and Pepe",
+      "mobName": "Dark Yeti & Pepe",
       "chineseMobName": "黑吉拉戰車",
       "isBoss": false,
       "inGame": true,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

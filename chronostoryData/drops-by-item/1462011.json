@@ -2,7 +2,6 @@
   "itemId": 1462011,
   "itemName": "Fire Raven",
   "chineseItemName": "炎帝弩弓",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 7140000,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

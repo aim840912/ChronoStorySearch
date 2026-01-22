@@ -2,7 +2,6 @@
   "itemId": 1041062,
   "itemName": "Yellow Able Armor",
   "chineseItemName": "黃皮製旅行服",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 1140100,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

@@ -2,13 +2,12 @@
   "itemId": 2040002,
   "itemName": "Scroll for Helmet for Defense 10%",
   "chineseItemName": "頭盔防禦卷軸10%",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.3,
       "displayChance": "0.30%",
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

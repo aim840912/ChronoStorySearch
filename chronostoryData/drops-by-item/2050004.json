@@ -2,7 +2,6 @@
   "itemId": 2050004,
   "itemName": "All Cure Potion",
   "chineseItemName": "萬能療傷藥",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 7130000,
@@ -29,7 +28,7 @@
     {
       "mobId": 8645263,
       "mobName": "Turbo Robo",
-      "chineseMobName": null,
+      "chineseMobName": "守護者機器人",
       "isBoss": false,
       "inGame": true,
       "chance": 0.5,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

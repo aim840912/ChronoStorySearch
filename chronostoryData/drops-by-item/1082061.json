@@ -2,7 +2,6 @@
   "itemId": 1082061,
   "itemName": "Dark Clench",
   "chineseItemName": "黑戰鬥手套",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 6130200,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

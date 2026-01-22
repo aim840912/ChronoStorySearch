@@ -2,7 +2,6 @@
   "itemId": 1041026,
   "itemName": "Yellow Arianne",
   "chineseItemName": "黃錦絲緊身衣",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1120100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

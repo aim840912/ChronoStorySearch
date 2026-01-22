@@ -2,7 +2,6 @@
   "itemId": 1051004,
   "itemName": "Purple Doroness Robe",
   "chineseItemName": "紫魔者之袍",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 2130100,
@@ -25,6 +24,18 @@
       "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230307,
+      "mobName": "Chirppy",
+      "chineseMobName": "邱布",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

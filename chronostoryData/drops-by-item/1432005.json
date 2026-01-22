@@ -2,7 +2,6 @@
   "itemId": 1432005,
   "itemName": "Zeco",
   "chineseItemName": "雙天戟",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 1110100,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

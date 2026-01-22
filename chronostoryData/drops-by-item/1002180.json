@@ -2,7 +2,6 @@
   "itemId": 1002180,
   "itemName": "Dark Burgler",
   "chineseItemName": "黑防風帽",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3230100,
@@ -14,6 +13,18 @@
       "displayChance": "0.13%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230109,
+      "mobName": "Block Golem",
+      "chineseMobName": "積木泥人",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

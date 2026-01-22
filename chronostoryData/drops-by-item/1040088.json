@@ -2,8 +2,18 @@
   "itemId": 1040088,
   "itemName": "Oaker Shouldermail",
   "chineseItemName": "褐板金鎧甲",
-  "totalMonsters": 2,
   "monsters": [
+    {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 5120000,
       "mobName": "Luster Pixie",
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

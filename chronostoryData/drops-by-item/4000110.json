@@ -2,7 +2,6 @@
   "itemId": 4000110,
   "itemName": "Toy Trojan Sword",
   "chineseItemName": "玩具士兵的刀",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 3230305,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

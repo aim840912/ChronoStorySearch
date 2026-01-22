@@ -2,7 +2,6 @@
   "itemId": 1061071,
   "itemName": "Dark Shadow Pants",
   "chineseItemName": "黑暗之褲",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 9834178,
@@ -12,6 +11,17 @@
       "inGame": true,
       "chance": 0.2,
       "displayChance": "0.20%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -26,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

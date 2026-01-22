@@ -2,7 +2,6 @@
   "itemId": 2040923,
   "itemName": "Scroll for Shield for LUK 100%",
   "chineseItemName": "盾牌幸運卷軸100%",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 3210203,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

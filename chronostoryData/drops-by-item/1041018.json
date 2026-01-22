@@ -2,7 +2,6 @@
   "itemId": 1041018,
   "itemName": "Green Arianne",
   "chineseItemName": "綠錦絲緊身衣",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 1110101,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

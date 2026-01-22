@@ -2,7 +2,6 @@
   "itemId": 2040706,
   "itemName": "Scroll for Shoes for Mobility 100%",
   "chineseItemName": "鞋子速度卷軸100%",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 1110100,
@@ -59,5 +58,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 5
 }

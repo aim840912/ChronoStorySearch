@@ -1,0 +1,57 @@
+{
+  "id": 1412058,
+  "description": {
+    "id": 1412058,
+    "name": "1st不速之客雙手斧",
+    "description": "",
+    "chineseItemName": "1st不速之客雙手斧"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 47,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACQAAAAiCAYAAAA3WXuFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEcElEQVR4nMWXi5GjMAyG5Zk0QEpgSyAlJCVACaQEU0IoAUoIJSwlhBKOEo4SfPptGRQ22SW3O3eaMQ8/P0uyBDv6P+Ie1Blc/geQc81leTseifqezLkCpPnXQDMMA/h7kje4zh3+JZDL83wGAdi+T+j3taS3jmiinuh6zX4GyLmUrygjGTM+g5lfoKXS0nQ2ZA5tMNv12qLt+0DO8WxUEjZJ1Hko1YpLhBmGwd+9llCc2/Orlb7sSGb4HpBzMH5Y7XQqecVSWoxv/XUj83aYYcZxZjXhatCr9ZsxBhv6ER8a6HBo3O1G+6KlZqypGEbvvGPbPYeZ3+5N/BEo7DqVzrdPQIzsqsmuTsP4xnGcaOg7eX4C80AWoEX98Ak8T1xX86IWqqc045kHHzP8zCFucBeJcVnG5hm9w8JH3uqarll6v4ENslMwJUXnrNts7nFpyHRwxkEqEnLJRDGeFPu9v+dpMp+evKpD27BdM/dAQTMlg/gtOVvSZ2LqlvI6xJPMWj61R6pPJyri6VFd6UXZSQzxMAAZWUEdX3N2I9xjDD3yey9aQj8jdzhsz2a07+84aV5TeVnOAfB1IDiwmAg7j9LYI1MCYpQAA8jM31suHor7R21GKGgK6hZfcq9qCUAJ2XKi4Mij3Kcza2xiKAte0VSrNKahgnBLzxq0Fyqqirpp+msNhRMVykjBqfPSHn2HM1c1lH4YWHF9JVBaYFQfCsMmUTiBme41IHFmkvgTYeIZOatsEDV04a6VmG+dvCyPr+sWmk98V+eGJznuIdDgd8MTrHdb8AYnP2PAyFaDAVUwTirPd23RnLYMhwZK3QRkTO/ziS1LI1AHCva/MciJnyu694eopeh4gIm+ZEW7qHML1HovnwAFwWwZDzzGkwMolJv6eHosSVzUv7GpZpOr+k3mWoBg35B1AZWsodYCSNRf+f7R3YOJVzAvOXWUQQbP6m2UdrJVR0hBj4/2vu4izCTdB9ooGihuNroGn675UTV9lMzmNCiz0XI4IhAnOkfxm2crUEYhBHjHDrMEmAtFDT32p4N+uT+pMS1duL5jqO6rmBSzPdY7Ih7dBObgnbMk/BMUXK5cTrREUS34aOq570lrKcikYhzWgK/2n2lqN3euW380DiqfJXPjst1mNUEloJxaKWeYTo3HFL+47i3UJb58YbadaAdRdaCoAE62CGx21TkCnuUZAy8ChTpokZ5/uiS0ITjuePEbT4LTFU4C5zENg70d5VnnF7TjM6wTqHq1Win91PE/b3fqYGe/nobBYpmUTgHF9vjeqrpatSmYjjbGop33ftYKnFnHmlEmjXWJlJ4Wx8Y9aq+XugimYHrPuUE7AQgDONewM6e/eQKdpzK1cCrPsyppyQeDAlvBQCr8ANJGAVCwhi3zvfqm1pohiv/JC1hsm1TdPp6wBebwCkwAgirxu4P1GArrGPmkBZiO1TpvRZi9Pubho4yEvZAcmWw1VwCChAGtD1ohBHgGBnv/coZwQidVEPgWyhdgIH8AeqITo49FavgAAAAASUVORK5CYII=",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACQAAAAiCAYAAAA3WXuFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAElElEQVR4nMWXi5GjMAxA5Zk0ACWwJZASkhJICaQEU0IoAUoIJSwlhBLOJZxL8Em2BAqb7+3OnWfMxxb2s342G/g/JdxoM3T5H0AhdKflbbcDGEcwx4Ygzb8GmmEQIN6zqqPrLPAvgUJVVTMIgeVjBr/PNXwMAB5GgPO5/BmgEAq8UnVgjLsHM7+QlmoL/mjAbPtktvO5p77vA4WAo0ENtEiAIUKpXroIzDRN8R61RDWEHF8ty6Ijmel7QCGQ8dNs+32NM9bcY2LvrwuYj+0M49zMatLVkFQfF2MMLehHfGiC7bYLlwvkhx4618JhctF5XT/ch5nfrk38FSitumDhywMQw6vqynPQMLHTOQ/TOPDzHZgbZQFa1E8+Qc8e21qc1JLqoShx5CnmjDhyyhsowjmuLNE8Ljos+chH28K5LK4X8ELZKJgaxDnbvpwlTh2YgZxx4oYMQuZB8skhz+O9KrI5eqqmTX3T65q5BkqaqREkLinYGh4V0/ZQtSmflNZi1O6g3e/hINGjROHNsuEcEmEIxKGCBrxW6EZ0lxy6w/eRtURyhu/ksCOa0X5+UqRFTVV1PSfA94HIgdlEtHIpnd0hJUE4TjAEWcZ7jzVCobxoU6BIU6Ru9qXwrpYIKANbe0iO7Pjuj6gxj1CWeFlTvdKYhkoFe0bUoD3BoWlg8P6vNZQiKlUHyamr2u6iwBGbOii+fNhge8NQupBRYypMi6SKG5gZ3gNiZwbOPwIjMXJUu4Fo6ISiDZtvvXlZ/L5te9J8FkVDmO7scTeBprgaHGC92gMu0McRE0a5+pigDohT8PNVn5jT1iloSKkvARkzxv3E1rVhqC0k+18QZI/PDVz7g2hJHI9gxJcsa5fawgK1XssDoFRotBI/3EnkEBTVizo83S6ZTBrf0FSzyVX7S+ZagMi+adclqGwNtS4ESe1nvH9192TiFcxbTi1l4o9n9XZKO+VKkMoBbod23g4C41l8gheLBpLFimtgdM2PqutrKW0FkzIbLMEhQLjRBZAzz6tAJaQUEB07jZJgTiAauu1PW/1yHamyLZ2wfUCo4VlOkt2e5ttRProwzDY6Zw30T3DAesa6hyWL6kKHphFl91pLqXiV42gO8tXxkaY2s3Dbx9DYqv0smzuX5XarARoGxa0VKoQZ1Pc0xC9s+0htWaxPzLZh7VBWnUAUgJstJTa7EhbAIz/ThyeGojbSItw/umTg/dPkuMHJLzgIRVeKBNzHNAytbcfPen+hfjqGDQzVwnUqrlluDn/vj9A8T9YbhpD/KtAwNFnJdVBA0i/vvWprVd8M49yIMA6GQSf5O0Dk/agVcmadaxwPKm0Z1xEWx6a7aG/kNgFTMHgsaCaEKWA54rh7UJs4Fu416MzFbxxAL6FUExf8PKsSlv1gUmBXMFSaZkSYlw9HBJSsYesqV2dqrRkA+U9ewKTPq7ZcIkxgjniOHYakjSwjPxLNPDAZhSH97tB8CEXjGwWmc7XetwQm12FuKx97PB4X2/YYYU6nLPpPOkG+mKlTbuhj0kopIDIg2OezAThCvaoj5PlC2bx32P8DeKU1CB90eP0AAAAASUVORK5CYII=",
+    "iconOrigin": {
+      "x": 2,
+      "y": 33,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": 2,
+      "y": 33,
+      "isEmpty": false
+    },
+    "slotMax": 0,
+    "price": 11000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 1,
+    "reqLevelEquip": 47,
+    "tuc": 7,
+    "incSTR": 3,
+    "incPAD": 70,
+    "incACC": 30,
+    "attack": 5,
+    "attackSpeed": 7,
+    "vslots": [
+      "Wp",
+      "Si"
+    ],
+    "islots": [
+      "Wp",
+      "Si"
+    ],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Two-Handed Weapon",
+    "subCategory": "Two-Handed Axe",
+    "lowItemId": 1410000,
+    "highItemId": 1420000
+  }
+}

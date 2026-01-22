@@ -2,13 +2,12 @@
   "itemId": 2040601,
   "itemName": "Scroll for Bottomwear for Defense 60%",
   "chineseItemName": "褲裙防禦卷軸60%",
-  "totalMonsters": 5,
   "monsters": [
     {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
-      "isBoss": false,
+      "isBoss": true,
       "inGame": true,
       "chance": 0.3,
       "displayChance": "0.30%",
@@ -38,6 +37,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 2230104,
+      "mobName": "Green Trixter",
+      "chineseMobName": "紅蜘蛛",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4130100,
       "mobName": "Copper Drake",
       "chineseMobName": "土龍",
@@ -59,5 +69,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 6
 }

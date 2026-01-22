@@ -2,7 +2,6 @@
   "itemId": 1060084,
   "itemName": "Blue China Pants",
   "chineseItemName": "青陽褲",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 4130102,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

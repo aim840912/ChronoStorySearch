@@ -2,7 +2,6 @@
   "itemId": 2040534,
   "itemName": "Scroll for Overall Armor for STR 10%",
   "chineseItemName": "套服力量卷軸10%",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6400100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

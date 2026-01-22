@@ -2,7 +2,6 @@
   "itemId": 1040019,
   "itemName": "Orange Split Piece",
   "chineseItemName": "朱紅伽藍",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 1130100,
@@ -15,5 +14,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 1
 }

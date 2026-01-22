@@ -2,8 +2,18 @@
   "itemId": 2002005,
   "itemName": "Sniper Potion",
   "chineseItemName": "命中藥水",
-  "totalMonsters": 3,
   "monsters": [
+    {
+      "mobId": 3210208,
+      "mobName": "Retz",
+      "chineseMobName": "發條楓葉鼠",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 2,
+      "displayChance": "2.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
     {
       "mobId": 3230100,
       "mobName": "Curse Eye",
@@ -37,5 +47,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 4
 }

@@ -1,0 +1,19 @@
+{
+  "itemId": 1092050,
+  "itemName": "Khanjar",
+  "chineseItemName": "銀牙劍盾",
+  "monsters": [
+    {
+      "mobId": 6220001,
+      "mobName": "Zeno",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

@@ -2,7 +2,6 @@
   "itemId": 4000114,
   "itemName": "Table Clock",
   "chineseItemName": "小鬧鐘",
-  "totalMonsters": 2,
   "monsters": [
     {
       "mobId": 4230113,
@@ -26,5 +25,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 2
 }

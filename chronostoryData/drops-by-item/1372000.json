@@ -2,7 +2,6 @@
   "itemId": 1372000,
   "itemName": "Fairy Wand",
   "chineseItemName": "妖精短杖",
-  "totalMonsters": 1,
   "monsters": [
     {
       "mobId": 6130101,
@@ -14,6 +13,29 @@
       "displayChance": "4.0%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 3230308,
+      "mobName": "Tweeter",
+      "chineseMobName": "特威德",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230400,
+      "mobName": "Drumming Bunny",
+      "chineseMobName": "兔子鼓手",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

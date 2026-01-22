@@ -2,7 +2,6 @@
   "itemId": 1041086,
   "itemName": "Black Jangoon Armor",
   "chineseItemName": "黑鎮月鎧甲",
-  "totalMonsters": 3,
   "monsters": [
     {
       "mobId": 3220000,
@@ -37,5 +36,6 @@
       "minQty": 1,
       "maxQty": 1
     }
-  ]
+  ],
+  "totalMonsters": 3
 }

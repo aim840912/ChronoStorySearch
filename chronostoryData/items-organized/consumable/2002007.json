@@ -1,0 +1,38 @@
+{
+  "id": 2002007,
+  "description": {
+    "id": 2002007,
+    "name": "魔力藥丸",
+    "description": "將魔力藥水提煉成藥丸形狀，10分鐘魔法攻擊力增加5。",
+    "chineseItemName": "魔力藥丸"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "mob": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAbCAYAAACAyoQSAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACB0lEQVR4nK3V7ZmCMAwA4PA8LtAV6gjcCDDCOQKOwI2gI+gIOgKOICPICHaEXpM2pUCh+JH70QMxrylNu4Hvhh5dZ7GHPkUHyPP59P8rpWC73eoY/Co6QLTWc88R+ng8onAKHWStLraS069YxFIxRieIwD823Hi8AdTFEAoxU13sx/tqQ1QXpydIk1gIAdFagiL2VwV1Pq0KQZxWyiH6LFmWeZhRXRweBObSgl1klpSvyk1jvg7ECN8vojo3ICU1eQppH2pbqyhgxLI9rODnCHCvZRIE952maaAsS73hEpSw6t+1f8jPqMfji2QNGI4bvsBJRZg+cIgfF2IN2HXd4J5FXRXCqCnEJzuXNCKIEQMRG1fpUZ8oATLEwaCUMgmO0cwk06Jq1mDcazqv77A3/SpxWs3sHYK+DUFGMXa7HeXgSifwqKpwG6P2wumUrr0w5e6s4FKJCcjvk0Gu1CdGeAYagIhhhSx2HbeQglOh6AeFCygEx+gctAy698X9W5qKmwpmwRj6MkhV4iWNdlqXwLVoD0rXFgsgxv4meE28dYh78DcXtDdf2xGo1KTVlsA1KAWtVFdki0g33INfAVOolqYXMSVWdTUvsvsCmEJtAwq3Qtv+APgETKK86VPf8b0PwSTKCB2mgo6gye78KphC/dZoz9TpYfAOmEIHcAR7C1yDenh8Dz6If13mn8MhZwFxAAAAAElFTkSuQmCC",
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACUklEQVR4nK3WgXWDIBAA0PO9LEBHICPYEXSEZoRkBDtCM0IyQjOCHaGOICOEESgHHAKimCb0WaLR+x56kB28tqlkv8qd9CwaIff73X+WUsJ+v1c5+FE0QpRSS+cZdBzHLFxCo6jHb5vJ5YOtYqWWojOE4R8Zrj//AHRNDIWYzi538z7bEFXN5Q5cB2aMQTaXIInTTUJXz7NCEIfVxGBTlKqqPEyoar5GA9bcgiIzStJn5Yax3gZiC58voqrWoAmq4zTcnjQMVpFAiGUnWML7GeC340UQ3DV930PbtmpHKUhm1c/bdJIfUY/nX5ItYNjvaAcHFWHzhUN8v9K2gEKI6JhFXRZMqyXEB7u2pkcQWw5ELM3Soz5QASSIGoGc8yKYopUOptix34JRram6+4WTrleOw6pH7yuo2xAkFNvhcDAxKNMZnGQVTmOmvHA4uSsvDHm4Svg+shlIz5NAytQHRngBikDEMEMShaASknBppLmh8AUKwRRdgtZB97yofludcX+ERTCHPgyaLHHX9HZY18Ct6ARyVxYrILbTD6N34l+LuAc/ambm5tuQgFLOSm0N3IKaZt5Ul+SAiIjn4EfAEqq4rkUMiVnd9IMULwBLqC1A5t7QYVoAngGLKE36pu7o2JNgESXELKbMLEGz2dmBbwDZHxvZyTyH0sV7HXDEqdGuqfPrHYj/apg3GfQy2I9QltlOOvAlXQyCeVn/doBmKaMAE26TIUoID3o6ftZIlwS7Bt8vtcV1Ms106YLPjcHTz+kWoTQEIZzLglayNXjtRkz7A3Vcu5fPMGFUAAAAAElFTkSuQmCC",
+    "iconOrigin": {
+      "x": -3,
+      "y": 29,
+      "isEmpty": false
+    },
+    "iconRawOrigin": {
+      "x": -3,
+      "y": 29,
+      "isEmpty": false
+    },
+    "slotMax": 600,
+    "price": 300,
+    "vslots": [],
+    "islots": [],
+    "setCompleteCount": 0
+  },
+  "typeInfo": {
+    "overallCategory": "Use",
+    "category": "Consumable",
+    "subCategory": "Potion",
+    "lowItemId": 2000000,
+    "highItemId": 2010000
+  }
+}
