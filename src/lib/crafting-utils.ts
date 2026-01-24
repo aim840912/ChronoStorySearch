@@ -8,6 +8,8 @@
  * - Last: 前一階段武器 x1 + 黑水晶 x5 + 母岩的碎塊 x4
  */
 
+import { getItemImageUrl } from '@/lib/image-utils'
+
 // 材料常數定義（ID 從 maplestory.io API 驗證）
 export const CRAFTING_MATERIALS = {
   SAPPHIRE: { id: 4021005, en: 'Sapphire', zh: '藍寶石' },
@@ -248,10 +250,12 @@ export function getUnwelcomeGuestRecipe(itemId: number): CraftingRecipe | null {
 }
 
 /**
- * 取得材料圖片 URL（使用 maplestory.io API）
+ * 取得材料圖片 URL（使用 R2 CDN）
  */
 export function getMaterialImageUrl(itemId: number): string {
-  return `https://maplestory.io/api/GMS/217/item/${itemId}/icon`
+  // 使用專案統一的圖片 URL 函數
+  // 會自動檢查圖片是否存在於 R2，並加入版本號進行 Cache Busting
+  return getItemImageUrl(itemId)
 }
 
 /**
