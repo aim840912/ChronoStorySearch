@@ -921,5 +921,7 @@
   "report.grouped.bulkReject": "Reject All ({count})",
   "mode.search": "Search",
   "mode.trade": "Trade",
-  "mode.report": "Report"
+  "mode.report": "Report",
+  "item.craftingRecipe": "Crafting Recipe",
+  "item.craftingClickToView": "Click to view details"
 }

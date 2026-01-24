@@ -240,6 +240,7 @@ export const ModalManager = memo(function ModalManager({
         onToggleMonsterFavorite={toggleFavorite}
         onMonsterClick={handleMonsterClickFromItemModal}
         onGachaMachineClick={handleGachaMachineClick}
+        onItemClick={handleItemClickFromMonsterModal}
         hasPreviousModal={hasPreviousModal}
         onGoBack={goBack}
       />
