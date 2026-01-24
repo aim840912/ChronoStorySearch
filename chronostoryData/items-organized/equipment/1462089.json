@@ -51,5 +51,22 @@
     "subCategory": "Crossbow",
     "lowItemId": 1460000,
     "highItemId": 1470000
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 3,
+      "min": 0,
+      "max": 12
+    },
+    "incPAD": {
+      "base": 91,
+      "min": 87,
+      "max": 95
+    },
+    "incSpeed": {
+      "base": 10,
+      "min": 6,
+      "max": 14
+    }
   }
 }

@@ -52,5 +52,27 @@
     "subCategory": "Polearm",
     "lowItemId": 1440000,
     "highItemId": 1450000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incPAD": {
+      "base": 79,
+      "min": 76,
+      "max": 82
+    },
+    "incACC": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 41
+    }
   }
 }

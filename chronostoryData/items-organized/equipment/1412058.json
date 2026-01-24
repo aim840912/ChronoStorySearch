@@ -52,5 +52,27 @@
     "subCategory": "Two-Handed Axe",
     "lowItemId": 1410000,
     "highItemId": 1420000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPAD": {
+      "base": 70,
+      "min": 68,
+      "max": 72
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 31
+    }
   }
 }

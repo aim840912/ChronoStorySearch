@@ -52,5 +52,27 @@
     "subCategory": "Two-Handed Blunt Weapon",
     "lowItemId": 1420000,
     "highItemId": 1430000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPAD": {
+      "base": 65,
+      "min": 63,
+      "max": 67
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 31
+    }
   }
 }

@@ -53,5 +53,32 @@
     "subCategory": "Wand",
     "lowItemId": 1370000,
     "highItemId": 1380000
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 4,
+      "min": 0,
+      "max": 15
+    },
+    "incPAD": {
+      "base": 74,
+      "min": 69,
+      "max": 79
+    },
+    "incMAD": {
+      "base": 120,
+      "min": 115,
+      "max": 125
+    },
+    "incMHP": {
+      "base": 400,
+      "min": 347,
+      "max": 454
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 61
+    }
   }
 }

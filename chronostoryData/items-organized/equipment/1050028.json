@@ -51,5 +51,22 @@
     "subCategory": "Overall",
     "lowItemId": 1050000,
     "highItemId": 1060000
+  },
+  "randomStats": {
+    "incMMP": {
+      "base": 30,
+      "min": 2,
+      "max": 58
+    },
+    "incPDD": {
+      "base": 28,
+      "min": 0,
+      "max": 56
+    },
+    "incMDD": {
+      "base": 14,
+      "min": 0,
+      "max": 42
+    }
   }
 }

@@ -48,5 +48,12 @@
     "subCategory": "Shoes",
     "lowItemId": 1070000,
     "highItemId": 1080000
+  },
+  "randomStats": {
+    "incPDD": {
+      "base": 10,
+      "min": 0,
+      "max": 20
+    }
   }
 }

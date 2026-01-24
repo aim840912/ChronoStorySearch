@@ -50,5 +50,27 @@
     "subCategory": "Knuckle",
     "lowItemId": 1480000,
     "highItemId": 1490000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 5,
+      "min": 2,
+      "max": 8
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incMAD": {
+      "base": 61,
+      "min": 58,
+      "max": 64
+    },
+    "incEVA": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    }
   }
 }

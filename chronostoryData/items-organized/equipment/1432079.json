@@ -52,5 +52,27 @@
     "subCategory": "Spear",
     "lowItemId": 1430000,
     "highItemId": 1440000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 12
+    },
+    "incPAD": {
+      "base": 90,
+      "min": 86,
+      "max": 94
+    },
+    "incACC": {
+      "base": 3,
+      "min": 0,
+      "max": 12
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 51
+    }
   }
 }

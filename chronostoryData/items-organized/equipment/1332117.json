@@ -51,5 +51,22 @@
     "subCategory": "Dagger",
     "lowItemId": 1330000,
     "highItemId": 1340000
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incPAD": {
+      "base": 76,
+      "min": 73,
+      "max": 79
+    },
+    "incEVA": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    }
   }
 }

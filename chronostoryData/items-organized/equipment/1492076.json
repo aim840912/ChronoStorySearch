@@ -52,5 +52,32 @@
     "subCategory": "Gun",
     "lowItemId": 1490000,
     "highItemId": 1500000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 5,
+      "min": 2,
+      "max": 8
+    },
+    "incINT": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incMAD": {
+      "base": 61,
+      "min": 58,
+      "max": 64
+    },
+    "incJump": {
+      "base": 2,
+      "min": 0,
+      "max": 4
+    },
+    "incMHP": {
+      "base": 1,
+      "min": 0,
+      "max": 35
+    }
   }
 }

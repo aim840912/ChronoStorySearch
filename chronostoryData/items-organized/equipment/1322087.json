@@ -52,5 +52,27 @@
     "subCategory": "One-Handed Blunt Weapon",
     "lowItemId": 1320000,
     "highItemId": 1330000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incPAD": {
+      "base": 81,
+      "min": 78,
+      "max": 84
+    },
+    "incACC": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 41
+    }
   }
 }

@@ -53,5 +53,42 @@
     "subCategory": "Earrings",
     "lowItemId": 1030000,
     "highItemId": 1040000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 1,
+      "max": 5
+    },
+    "incDEX": {
+      "base": 3,
+      "min": 1,
+      "max": 5
+    },
+    "incINT": {
+      "base": 3,
+      "min": 1,
+      "max": 5
+    },
+    "incLUK": {
+      "base": 3,
+      "min": 1,
+      "max": 5
+    },
+    "incJump": {
+      "base": 200,
+      "min": 198,
+      "max": 202
+    },
+    "incPDD": {
+      "base": 35,
+      "min": 0,
+      "max": 79
+    },
+    "incMDD": {
+      "base": 5,
+      "min": 0,
+      "max": 49
+    }
   }
 }

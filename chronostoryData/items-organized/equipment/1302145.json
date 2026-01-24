@@ -52,5 +52,27 @@
     "subCategory": "One-Handed Sword",
     "lowItemId": 1300000,
     "highItemId": 1310000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 12
+    },
+    "incPAD": {
+      "base": 96,
+      "min": 92,
+      "max": 100
+    },
+    "incACC": {
+      "base": 3,
+      "min": 0,
+      "max": 12
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 51
+    }
   }
 }

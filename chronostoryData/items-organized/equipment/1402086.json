@@ -52,5 +52,27 @@
     "subCategory": "Two-Handed Sword",
     "lowItemId": 1400000,
     "highItemId": 1410000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPAD": {
+      "base": 66,
+      "min": 64,
+      "max": 68
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 31
+    }
   }
 }

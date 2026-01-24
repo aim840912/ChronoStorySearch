@@ -50,5 +50,27 @@
     "subCategory": "Shield",
     "lowItemId": 1090000,
     "highItemId": 1100000
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 6,
+      "min": 0,
+      "max": 17
+    },
+    "incMMP": {
+      "base": 51,
+      "min": 0,
+      "max": 105
+    },
+    "incPDD": {
+      "base": 92,
+      "min": 39,
+      "max": 146
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 61
+    }
   }
 }

@@ -52,5 +52,27 @@
     "subCategory": "One-Handed Axe",
     "lowItemId": 1310000,
     "highItemId": 1320000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 12
+    },
+    "incPAD": {
+      "base": 91,
+      "min": 87,
+      "max": 95
+    },
+    "incACC": {
+      "base": 3,
+      "min": 0,
+      "max": 12
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 51
+    }
   }
 }

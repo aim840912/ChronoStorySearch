@@ -53,5 +53,32 @@
     "subCategory": "Staff",
     "lowItemId": 1380000,
     "highItemId": 1390000
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPAD": {
+      "base": 44,
+      "min": 42,
+      "max": 46
+    },
+    "incMAD": {
+      "base": 61,
+      "min": 59,
+      "max": 63
+    },
+    "incMHP": {
+      "base": 100,
+      "min": 77,
+      "max": 124
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 31
+    }
   }
 }

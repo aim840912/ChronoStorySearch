@@ -51,5 +51,22 @@
     "subCategory": "Bow",
     "lowItemId": 1450000,
     "highItemId": 1460000
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incPAD": {
+      "base": 79,
+      "min": 76,
+      "max": 82
+    },
+    "incSpeed": {
+      "base": 5,
+      "min": 2,
+      "max": 8
+    }
   }
 }
