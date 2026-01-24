@@ -16,6 +16,8 @@ import { useLazyMobInfo, useLazyItemDetailed, useLazyDropsByItem } from '@/hooks
 import { findGachaItemOrganized } from '@/lib/gacha-utils'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { useShowDevInfo } from '@/hooks/useShowDevInfo'
+import { isUnwelcomeGuestItem, getMultiStageRecipe } from '@/lib/crafting-utils'
+import { CraftingRecipeCard } from './CraftingRecipeCard'
 
 // 商人販售地點資料結構
 interface MerchantLocation {
@@ -42,6 +44,8 @@ interface ItemModalProps {
   onMonsterClick: (mobId: number, mobName: string) => void
   // 轉蛋機相關 props
   onGachaMachineClick: (machineId: number) => void
+  // 物品跳轉（用於製作配方點擊前階武器）
+  onItemClick?: (itemId: number, itemName: string) => void
   // 導航相關 props
   hasPreviousModal?: boolean
   onGoBack?: () => void
@@ -66,6 +70,7 @@ export function ItemModal({
   onToggleMonsterFavorite,
   onMonsterClick,
   onGachaMachineClick,
+  onItemClick,
   hasPreviousModal,
   onGoBack,
 }: ItemModalProps) {
@@ -250,6 +255,13 @@ export function ItemModal({
 
     return []
   }, [itemId, itemName, allDrops, gachaMachines, merchantItemIndex])
+
+  // 計算 Unwelcome Guest 製作配方（如果適用）
+  const craftingRecipe = useMemo(() => {
+    if (!itemId && itemId !== 0) return null
+    if (!isUnwelcomeGuestItem(itemId)) return null
+    return getMultiStageRecipe(itemId)
+  }, [itemId])
 
   // 查找物品屬性資料（直接使用 ItemsOrganizedData 格式）
   const itemOrganizedData = useMemo((): ItemsOrganizedData | null => {
@@ -568,6 +580,22 @@ export function ItemModal({
                     )
                   })}
                 </div>
+              </div>
+            )}
+
+            {/* 製作配方區塊（Unwelcome Guest 系列） */}
+            {craftingRecipe && (
+              <div className="mb-8">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden lg:block">
+                  {language === 'zh-TW' ? '製作方法' : 'Crafting Recipe'}
+                </h3>
+                <CraftingRecipeCard
+                  recipe={craftingRecipe}
+                  onItemClick={(itemId) => {
+                    // 跳轉到前階武器詳情（使用空字串作為名稱，Modal 會自動獲取）
+                    onItemClick?.(itemId, '')
+                  }}
+                />
               </div>
             )}
 

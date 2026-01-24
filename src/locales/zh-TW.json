@@ -922,5 +922,7 @@
   "report.grouped.bulkReject": "批量駁回 ({count})",
   "mode.search": "搜尋",
   "mode.trade": "交易",
-  "mode.report": "檢舉"
+  "mode.report": "檢舉",
+  "item.craftingRecipe": "製作方法",
+  "item.craftingClickToView": "點擊查看詳情"
 }
