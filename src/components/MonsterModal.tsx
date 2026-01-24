@@ -8,9 +8,6 @@ import { MonsterStatsCard } from './MonsterStatsCard'
 import { Toast } from './Toast'
 import { BaseModal } from './common/BaseModal'
 import { TipBubble } from '@/components/TipBubble'
-import { AdSenseDisplay } from './adsense/AdSenseDisplay'
-import { AdSenseAnchor } from './adsense/AdSenseAnchor'
-import { AdSenseCard } from './adsense/AdSenseCard'
 import { getMonsterImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
@@ -266,9 +263,6 @@ export function MonsterModal({
           </button>
         </>
       }
-      floatingLeftAd={<AdSenseDisplay />}
-      floatingRightAd={<AdSenseDisplay />}
-      floatingTopAd={<AdSenseAnchor />}
     >
       {/* 截圖範圍 */}
       <div ref={screenshotRef} className="bg-white dark:bg-gray-800 rounded-xl flex-1 flex flex-col min-h-0 overflow-hidden">
@@ -518,52 +512,27 @@ export function MonsterModal({
             {/* 根據視圖模式渲染不同的佈局 */}
             {viewMode === 'grid' ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
-                {/* 將廣告混入卡片網格中 */}
-                {(() => {
-                  const elements: Array<{ type: 'item'; data: typeof filteredDrops[0] } | { type: 'ad'; key: string }> = []
-                  filteredDrops.forEach((drop, index) => {
-                    elements.push({ type: 'item', data: drop })
-                    // 每 8 個物品後插入廣告（但不在最後一個物品後）
-                    if ((index + 1) % 8 === 0 && index < filteredDrops.length - 1) {
-                      elements.push({ type: 'ad', key: `ad-${index}` })
-                    }
-                  })
-                  // 如果物品 < 8 個，在最後加廣告
-                  if (filteredDrops.length > 0 && filteredDrops.length < 8) {
-                    elements.push({ type: 'ad', key: 'ad-end' })
-                  }
-
-                  return elements.map((element) => {
-                    if (element.type === 'ad') {
-                      return <AdSenseCard key={element.key} />
-                    }
-                    return (
-                      <DropItemCard
-                        key={element.data.itemId}
-                        drop={element.data}
-                        itemAttributesMap={itemAttributesMap}
-                        isFavorite={isItemFavorite(element.data.itemId)}
-                        onToggleFavorite={onToggleItemFavorite}
-                        onItemClick={onItemClick}
-                        showIcons={showDropIcons}
-                        showMaxOnly={showMaxOnly}
-                      />
-                    )
-                  })
-                })()}
+                {filteredDrops.map((drop) => (
+                  <DropItemCard
+                    key={drop.itemId}
+                    drop={drop}
+                    itemAttributesMap={itemAttributesMap}
+                    isFavorite={isItemFavorite(drop.itemId)}
+                    onToggleFavorite={onToggleItemFavorite}
+                    onItemClick={onItemClick}
+                    showIcons={showDropIcons}
+                    showMaxOnly={showMaxOnly}
+                  />
+                ))}
               </div>
             ) : (
-              <div className="space-y-3 sm:space-y-4">
-                <DropItemList
-                  drops={filteredDrops}
-                  itemAttributesMap={itemAttributesMap}
-                  isItemFavorite={isItemFavorite}
-                  onToggleFavorite={onToggleItemFavorite}
-                  onItemClick={onItemClick}
-                />
-                {/* 信息流廣告：列表底部 */}
-                {filteredDrops.length > 0 && <AdSenseCard />}
-              </div>
+              <DropItemList
+                drops={filteredDrops}
+                itemAttributesMap={itemAttributesMap}
+                isItemFavorite={isItemFavorite}
+                onToggleFavorite={onToggleItemFavorite}
+                onItemClick={onItemClick}
+              />
             )}
           </div>
         </div>

@@ -7,9 +7,6 @@ import { MonsterDropList } from './MonsterDropList'
 import { ItemAttributesCard } from './ItemAttributesCard'
 import { Toast } from './Toast'
 import { BaseModal } from './common/BaseModal'
-import { AdSenseDisplay } from './adsense/AdSenseDisplay'
-import { AdSenseAnchor } from './adsense/AdSenseAnchor'
-import { AdSenseCard } from './adsense/AdSenseCard'
 import { clientLogger } from '@/lib/logger'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
@@ -366,9 +363,6 @@ export function ItemModal({
           </button>
         </>
       }
-      floatingLeftAd={<AdSenseDisplay />}
-      floatingRightAd={<AdSenseDisplay />}
-      floatingTopAd={<AdSenseAnchor />}
     >
       {/* 截圖區域包裹 */}
       <div ref={screenshotRef} className="bg-white dark:bg-gray-800 rounded-xl flex-1 flex flex-col min-h-0 overflow-hidden">
@@ -631,51 +625,26 @@ export function ItemModal({
                 {/* 根據視圖模式渲染不同的佈局 */}
                 {viewMode === 'grid' ? (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
-                    {/* 將廣告混入卡片網格中 */}
-                    {(() => {
-                      const elements: Array<{ type: 'monster'; data: typeof itemDrops[0] } | { type: 'ad'; key: string }> = []
-                      itemDrops.forEach((drop, index) => {
-                        elements.push({ type: 'monster', data: drop })
-                        // 每 8 個怪物後插入廣告（但不在最後一個怪物後）
-                        if ((index + 1) % 8 === 0 && index < itemDrops.length - 1) {
-                          elements.push({ type: 'ad', key: `ad-${index}` })
-                        }
-                      })
-                      // 如果怪物 < 8 隻，在最後加廣告
-                      if (itemDrops.length > 0 && itemDrops.length < 8) {
-                        elements.push({ type: 'ad', key: 'ad-end' })
-                      }
-
-                      return elements.map((element, idx) => {
-                        if (element.type === 'ad') {
-                          return <AdSenseCard key={element.key} />
-                        }
-                        return (
-                          <MonsterDropCard
-                            key={`${element.data.mobId}-${idx}`}
-                            drop={element.data}
-                            monsterHPMap={monsterHPMap}
-                            isFavorite={isMonsterFavorite(element.data.mobId)}
-                            onToggleFavorite={onToggleMonsterFavorite}
-                            onMonsterClick={onMonsterClick}
-                            showIcons={showDropIcons}
-                          />
-                        )
-                      })
-                    })()}
+                    {itemDrops.map((drop, idx) => (
+                      <MonsterDropCard
+                        key={`${drop.mobId}-${idx}`}
+                        drop={drop}
+                        monsterHPMap={monsterHPMap}
+                        isFavorite={isMonsterFavorite(drop.mobId)}
+                        onToggleFavorite={onToggleMonsterFavorite}
+                        onMonsterClick={onMonsterClick}
+                        showIcons={showDropIcons}
+                      />
+                    ))}
                   </div>
                 ) : (
-                  <>
-                    <MonsterDropList
-                      drops={itemDrops}
-                      monsterHPMap={monsterHPMap}
-                      isMonsterFavorite={isMonsterFavorite}
-                      onToggleFavorite={onToggleMonsterFavorite}
-                      onMonsterClick={onMonsterClick}
-                    />
-                    {/* 列表視圖底部廣告 */}
-                    <AdSenseCard className="mt-3 sm:mt-4" />
-                  </>
+                  <MonsterDropList
+                    drops={itemDrops}
+                    monsterHPMap={monsterHPMap}
+                    isMonsterFavorite={isMonsterFavorite}
+                    onToggleFavorite={onToggleMonsterFavorite}
+                    onMonsterClick={onMonsterClick}
+                  />
                 )}
               </div>
             )}
