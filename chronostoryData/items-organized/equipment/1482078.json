@@ -1,0 +1,54 @@
+{
+  "id": 1482078,
+  "description": {
+    "id": 1482078,
+    "name": "Last Unwelcome Guest Knuckle",
+    "description": "",
+    "chineseItemName": "Last不速之客指虎"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 107,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 500000,
+    "reqSTR": 291,
+    "reqDEX": 107,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 107,
+    "tuc": 7,
+    "vslots": [
+      "Wp"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAXCAYAAABqBU3hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADNklEQVR4nLVWi3WjMBBcv3cN4BJICVwJpARcAikBSoASTAmmhNACJYQSTAm6mZVWFpydc+4um6cgAdLMzn7MD/kGy67XzObr8bh+9u5/IRAADTTbPVMexmdP6J8IJMD3htmaDuxZUyJ/RWAHnCfXXB4TWJJBIgtJfJlAAm6Ahc3XYcwf7qurOYDPYWQMz9MEksTKd6MAMEnIR1PLIwaHfuA7BYhsQvJVBTbeA7jmza4p4wtLeJjaiLuuqY2ITkDklZenCNB7xOv66HnbgoT7kFco+46InABo8lCTCgPAt/PqqrX5UwQIXleF34y/ZfWVNE6zdDWOz3M5HV78y86pRF2iA8EByikFmsL16RA4/hvGWaqyQOZkupfgXLfDqCQuXYN7k7wcDlJCDVVGcTYWqyCMTxVQYCkbv5p6BfUJLApOawBOEmZUY4Iai/Pb+37SK/IlrYTYCx4RcAR2750ccHZdLDK89PGhgROMVlelnkmVzKiEdGeTnoAb6T9rRM4mBJf2VdbLWdcZAMs8CyRKmZcFJ0U1NQyntpeqqmQcRwMXubVim8f1noBjskVPhla6j3dp4Q29XpmC2SplUUrVdFIlG/u3U5wXRSHzPKeoGUJQgRBVsFK+rwCznGDj5CVvD72u6fGAHCA5JdjeQkLPm/NFxt5XV4u6dMiBpPTu/lDtCTjG0krM3iwBfsbhmca7lRprysz4l6VvQFw3CEePRLu4K/qAV9CaDy0hczcEMe60CZ7WiF9BkKoO4BLBUiMRDl8heI5cuyI4R5Do4EYdmhDkH2WbC5GA4wGM28DEwY1z19zIjIPGm6bX4P0Cj3ml3DcNL3JBJzwqiTJ6HmKf9oANgWhd1+mBjHUdSo2gb6efOmfsU+kjOMpNmiwoACX6FSS85KH2bWxKMBKg9xw8kAk1zZOSmNDZZCc5y44lxit+I5j6/DVsCGoWfvHM4zmZL/e+iA440PFQa6fstjnKzdbz4vfQ82EYtB0DnM2fybEAkCzTD5GUgM3Xe9+HFgK0LXHaRFjv4TVLON//RcH5rnrvwTZ9XZL63j979HGa5oCSsGxOzXc7fX67hwPDByft901/ADb7BQQ1tMcHosANAAAAAElFTkSuQmCCAN8BeyJub3RpY2UiOiJHZW5lcmF0ZWQgYnkgTWFwbGVTdG9yeS5JTyIsImNvbnRhaW5lciI6ImlvLTc0ZmJiY2M1ZDYtbDU4NnIiLCJnaXRIYXNoIjoiMzQ4NWMyNzQ4NjNmOGI4MDI3ZDlkZjY1NGIzMDcyNDU3MWNjMDIwNCIsInVybCI6Ii9hcGkvR01TLzI2My9pdGVtLzE0ODIwNzgvaWNvblJhdyIsImNyZWF0ZWRBdCI6IjIwMjYtMDEtMjRUMTE6MDU6NTYuNTExNTE2NFoiLCJtZXRhIjpudWxsfQ==",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADlUlEQVR4nLVWi3WjMBBcv3cN4BJwCVwJpARcAikBSoASTAlQQmiBEkIJVgm6nZVWFgSwk7vbPAWBkGZ29mN+0X+w5H5PdG7OZ3P07j8h4AEVNFmtCQ/lsyb0VwQi4K2hZuLBe0xM5EcEVsBpdE1pn8AcDRCZQeLbBCJwBcx0broh3d1XFpMHn/xIEJ6XCUSJla5GxsAgQZ9VSXsMTm2HdzImsgjJdxVYeM/AJR42VR5emP1ibAM/tVWpRGTCRN5weYkAvOd43ffW65pJ2E96Y2U/OCJXBlR5oEnBg4Ef55VFrfOXCAC8LDK3mf9m4yppGCdqSj4+Tel6uriXrRWJmkgHgDMophBo9NeXQ2DxrxsmKvKMMyeRvQDHfd0NQqJvKn420uV0opzVEGUEZ2GhCvw4VECAKa/c3dgKqEtgEnBYxeAgoQY1RlZjtm57245y5XyJKyH0gj0CFsD2o6ETn11mM3WXNiwqOMBgZZHLmVBJDUpQc1PpAbiQ/qgRWZ0AnOo3Mv1N7hMGzNPEk8hpmmc+KagpYbjWLRVFQcMwKDjRoxXrPNyvCVgkW/Ckq6n5/KCavYHXBimYGMqznIqqoSLa2L5fwzzLMpqmKUZNOAQFE4IKWsrbCiDLATaMTvL61Mo9PO44B0BOCNaPkMDz6tbT0LrqqrkuLedAVHqbP1RrAhax1BLTN3MGv/HhicS7ppLvITPin+euAeG+4nC0nGi9vXMfcApq84FFZDZDEOIOG9nTkuOXAaQoPTgFsNhABMNVCK9zrt05OGcm0bAbpW9CLP9Ay1wIBCwOQNw6JA4/uDXVg8zQSbxhcvXez+wxrpD7oWFPPXfCs5DIg+c+9nEPWBAI1jSNHIhYl77UAPp+/S1zxD6WPoBzuVGVeAVYidYwCSe5r30dixIMBOA9Bg5EQo3TKCRG7my0khxlhxLDlX8jkPr4NawAquZ/8dTjKZrPW19EJz7Q4lBtp+i2KZeb3k+z2wPPu66TdszgaP5IjpkBwTL+EIkJ6NxsfR9qCLhtkZUmgnr3r2nCuf5PAo53xXsHtujrFNX3em3v4zTOASGh2Ryb63ay/njGB/oPTtjXTU+Atwh8AXlm/nABSPpeZDLX6yHgMwKv2peOxsC7a/rKTwhstdDdtnpgJroe/hjFIHvf+ltktsC2nq+rY5PA1vd+DPYdz5+ROlRgb/NRkpmD+XrsElCZnkkd1/wRQXOwRn8AlJDYPQPk1scAAAAASUVORK5CYIIA3AF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi1nODhkOSIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTQ4MjA3OC9pY29uIiwiY3JlYXRlZEF0IjoiMjAyNi0wMS0xOFQwNjo1OTowNi43NDI3MzAzWiIsIm1ldGEiOm51bGx9",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incSTR": 5,
+    "incDEX": 4,
+    "incMAD": 77,
+    "incEVA": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Knuckle",
+    "lowItemId": 1480000,
+    "highItemId": 1490000
+  }
+}

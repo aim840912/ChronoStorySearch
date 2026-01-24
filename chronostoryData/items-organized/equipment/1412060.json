@@ -1,0 +1,56 @@
+{
+  "id": 1412060,
+  "description": {
+    "id": 1412060,
+    "name": "3rd Unwelcome Guest Greataxe",
+    "description": "",
+    "chineseItemName": "3rd不速之客雙手斧"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 87,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 340000,
+    "reqSTR": 261,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 87,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "WpSi"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACQAAAAiCAYAAAA3WXuFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEV0lEQVR4nMWXj5GqMBDGlxkbwBKwBChBS4ASsAQsQUqQEqSEowQp4VHCUULeftkNrJx6OHfz3s4EQhKSX/ZfYEP/R9yDtgiX/wHkPv9IJU5yvl6FJooAGf1rIA8TJw4A/NhSnDd3A/4lkMvznLa7lmAdgO1OF/q8loSmkTpW1jX9HSDnEr6iDLz14RlMkGCysT1SlLGG9nvAeFX9HMg5no1KzE+wAaBMLy4Bpu97f9/upne3fK30qePN9D8Dci7Ger5+OJS8Yqk9ke91wVcEZhgmVmlEn3ON30wUYUO/4kM9ZdnF3W60LRr6yI+UFeK84/ACZnq6N/FXINl1ooNvL0Ai3dUlvToL42UO6eg5zAOZgWb1wydQH7mt5kUr5+Z8IVJwc+vkNc1xeectAM3AR7if+4r7DayQjYEpKThn3aTTiPOFohqVOV985u0UKbudeOj1PFDIMUkibYB6B2YGEs2UDOJN5aqSXokAKm85ctTuqSgKNc3d2qtBZiDJIR4GIAMrqOVrzm6Ee6wD9/zckYQtxkV14+9w2K7rOI1cPRQ0laQmtN8GggOribBIkEu1Z0pADJpgAJn6e8PFQkEs1O1jCL7k3tUSgGKqypHEkQe9j0fW2MhQFXhVU43RmIUS4Z6ONVhWlB1qG1lva0giSspA4tR5We39gCM3XTQLWDlx+0mhrMCoGSqySZTcevc6IHVm0vwTYMIej+Y0CBo689CTmm+pi4rfr+sGmo/9UOf6J2fcQ6De74YnWO624A2OfkbBSBcvA4pjy+/ivNDiOZizKiVooNRVQFHU+fOkKstIoTKPQXRjkAPXT/ocJGgpOB5ggi9Vql20uRlquZcXQCKYLeUX9yFyAIVym5Z/JnFY1D+xqSaTm/bVHi5AsK+cuoCKl1BLASTar3z/6u5i4gXMW04dpNeXJ/VejHbSxUBI8QAWsq3bADPq8J5WigUKmw2uwdE1VU3XV0mrnHpjNpqDIwDFhENYv3nWAqUkKcA7tswiMGcKGnrsT5l9uI/UcCyduR3Hf/tdTgqnPdbbIx/dFCbzzlmy2WAa+fg40JxFreCjqeOxB6slkdHkOKwBX+1eaWozDa4bHxqZOc/iqXPe7mUxwUlBP7jkDNPWd7818R9u20lb7Ms3ZtuodpBVewoK4MMWia1aDA6AR63jxbNCoc1/wj3/dIlpRXLc8OI3ngTRJZHA55iFwd72WrfnC/rxWdQqVL1YrdRxJvyP651a7OzXszBYLNXSGqDQH54b01abPgPT0spctPHez1qBM9tcM+ikoS3W0tHs2LgH7XXaFsAMTOc5V2hHgPACnzXszMknT2DPqdQsnGh9UiXN50FvwBYwkBN+AGmlAEisUZX51nxTW80Qhf/kGSz0jaZtGyJshsnegREgqBK/O1iPobBOpJ+0ALO52p5bAWZrw1w+ykjZCz0j47XmEiCIvND4pCUpwDMw2Me3M0iEjqYg8c2Ub8BA/gJCjAOkaELuQQAAAABJRU5ErkJgggDfAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby03NGZiYmNjNWQ2LXY5cWdtIiwiZ2l0SGFzaCI6IjM0ODVjMjc0ODYzZjhiODAyN2Q5ZGY2NTRiMzA3MjQ1NzFjYzAyMDQiLCJ1cmwiOiIvYXBpL0dNUy8yNjMvaXRlbS8xNDEyMDYwL2ljb25SYXciLCJjcmVhdGVkQXQiOiIyMDI2LTAxLTI0VDExOjA1OjMxLjQ0MDA4NzZaIiwibWV0YSI6bnVsbH0=",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACQAAAAiCAYAAAA3WXuFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEfElEQVR4nMWXC9GjMBDHl5kaAAlUAkhoJVAJIAEkgIQioUj4kFAkHBK+SMjtP8nClq/PuZu7nQmPJCS/7CthR/9H7J26CJf/AWS/f/mHOC34evE0UQTI6F8DOZg4tQDg14Hior/p8C+BbFEUlOwHgnUAtm/O9H0pCVWGRlbWJfs7QNamfEWZeenzIxgRMZkZKopy1tDhABinqj8HspZHoxLjE2wAKNWKi8BM0+TuyX75NuFrHd5GXsz0Z0DWxpjPPR+PJc9YhpbItVrxFQ8zzwurr0Sbtb1bTBRhQX/FhybK87O9Xik59fRVVJSfvPOa+QnM8nZr4p9AftVp6Hx9AhKFVZ2zi9UwTtaQjh7D3JEVaFU/fALPhus6nrS2ds0XXk5cPVj/WchxxegsAM3AR7id2063C3hDdgqmJHHOrs+WHu2Zog4Pa774LoYlUvZ776GXdibJMWnq6wD1CcwK5DVTMogzla1LeiYeMPCWhqP2QKfTKZjmZu63QVYgn0McDEBmVtDA14LdCPc4dDzw+0g+bNEv6np3h8OO48hp5OKgoKk0U6H9MRAcOJgIk4ic6wNTAmIOCQaQmbv3XDQURENdv2bxJfuplgAUU10a8o48h7upWGOGoWrwBk31SmMaygu3jKzBsqb82OnI+lhDPqJ8mck7dVHWB9eh4qpzyAJaGq5vApQWGDXHg18kSqG9+z2g4MwU8o/AyBortRuIhlru2gTzbXVR8/dd10Pzsetq7fRgj7sLNLnV8ADb1Z54gcaN6DGyzceA4thyq2g3WmzFnHXpgwZKfQsoika3n9RlGQWo3GEQXRnkyM9NeBcRLYnjAUZ8qQ7aRZ1dobZreQLkBaNl/OFBIgdQKNdl+kcSy6TujU21mFzVv+3hHgj29bsuoOIt1FYAifoL33+6uzfxBuYjpxaZwseLes9KO9mmI+R0BxaSdIPAmNB9ojdFA8lixTU4upZH1fRTsrqgSZmN1uAQoJiwCYczz7tAGfkU4Bzbj+JhWhIN3fenXL/cRqpsSy3XY/sfXuUk2e0x3wH56BpgcuecJZsNpvGHjyOtWVQLDk0j9z1qLXkxKsdhDvjq+ExTu6Vz17vQyNV+Fi+N63LPmwGaAPrFpWCYobv5rYl/cd3e18WuvDDbLmgHWXUiUQBvtkhs9aazAFbhGR+2AQp17gj3+OgSkzEvk+OOJ7/yIIguHwm8j2kYrO0QnvX+gnYci4YA1dFtKi5DvyX8jamoeZ2sdwFC/qtIw2CyLJRBAUm7vPeqrlNtC8w8jwwz0zDoJP8ACN7PWoEz61wzh0GlLg5lpNWxcRftjaFOwBQMHwuaiWFSWo848yOonRuL9xp25vSbB9BLyNTEaXheVEnrfjApsBsYSNOMDPMy/2ggb426LBJ1ptaaIZL/5BVM2oyqSyTCBKaqGobx2ohj+JFo5onJEIb43cF8DIXxIwWmc7XetwQm0WFeF8a1GMOR2lUOpm1j5z/GMbyZqX1u6F3S8inAMTDY16sBQoQaVUZKkpWyeesYtMhvQI8lCb0H+xgAAAAASUVORK5CYIIA3AF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi1yZnJmdCIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTQxMjA2MC9pY29uIiwiY3JlYXRlZEF0IjoiMjAyNi0wMS0yMlQwMzowNzo1MC42MjQ3NzMxWiIsIm1ldGEiOm51bGx9",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incSTR": 3,
+    "incPAD": 96,
+    "incACC": 3,
+    "incMDD": 7,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Two-Handed Axe",
+    "lowItemId": 1410000,
+    "highItemId": 1420000
+  }
+}

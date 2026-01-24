@@ -1,0 +1,57 @@
+{
+  "id": 1382096,
+  "description": {
+    "id": 1382096,
+    "name": "2nd Unwelcome Guest Staff",
+    "description": "",
+    "chineseItemName": "2nd不速之客長杖"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 67,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 225000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 201,
+    "reqLUK": 70,
+    "reqJob": 0,
+    "reqLevelEquip": 67,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "WpSi"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACUAAAAmCAYAAABDClKtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADP0lEQVR4nMWYi3GjMBRFHzPbgFvAJeASoARSApQAJZgSoIRQginBKsEqIZSgfVcfBF5YO7Fw7gwxljAcva/IH9pbSh34rztGiiL56Cf7QhmghI+Ymq6lqsh4DGDj70B5oJyBCjsa8wFLvQHKu2iu2AHdqoSOjaCVa3aCUiq2ADG5uDGfCQPlAJppDX4HKDyk6S6LkaoYeCxVlfGaJOFmQCh4IfJ/cRUCamSImiHOlyrVAxkDuUkAHdiIt4rYhTxeFSamlBJbYGGg8Gy2DmBuVU4Ozk2a2CYyscVBby24BfY6FG4Kd5D2URqzXSSjpGydqOkWlwJqBiZoIxNDlYRxfvMJCLE103HmVlu3Tms3C16nOl582QxTsC8mPSQshPPdYorIxRVrDvTJsYX8z8xYp69rusqeb5aGMFAurqqiIVOf0nbKxMFZyFvFxFSzBRbSfSauZkAfS6CpcF55/mQsJnkx7rfmkxe4S+/DE+q1uLoLfEJO+C4AAVLuv3VhIba01axm0Y1ucF5czBkZsiG7/kfpXajMgVZ/zsXUlhDEWdCGnDqohKEqtk5j2oonshn5QGPwhlxwm4HO4HNgVv9kJM998fWCps2oCAU1NWQA5cxY8lDX9NotZz4Efx9sJH3MgNAjMWch4ToZKvt04YyTBMuNewuEB0f3FR2aFdbRQ6KYDmQL8CtQusDwyhBXR5kmNT/k3DddbOfFSglwCaGBSg/U6+vtjuGnUKptWyqKgqSUdIyiG4OdxDDAlSX5tnPf2wCk9+1bQK9AaaCu6yhJpu1uLNO0nmDWNnB4k3Ey8PIe6KdQijUB1XWNAb5v9Mkn2SYQ5HvkiVxbCrDJU9frFQAE9wFIHHI69dP847eVPV5GYR0AlWVpRwYSfQn7Gdc9eNF8Rq+VBM468q9WkogeWuEZfQdqiiVrpciWA2OZABb6DpSyREsgp4Awz0BNMNAq0E7aglI2zTUM9C6gJZTZE8EdX2ma6kqN9D+dpregtwB5KLcniqILLJRlGY3jSEKIu/R/F5TbNTIQBpy7AAS9020eyki77pC31Pc95Xk+t85bgQyU60dKlWMUtdhrDMPwKzAeysj9e8Y0yif60576C7Z8ztKUcp7HAAAAAElFTkSuQmCCAN8BeyJub3RpY2UiOiJHZW5lcmF0ZWQgYnkgTWFwbGVTdG9yeS5JTyIsImNvbnRhaW5lciI6ImlvLTc0ZmJiY2M1ZDYtdjlxZ20iLCJnaXRIYXNoIjoiMzQ4NWMyNzQ4NjNmOGI4MDI3ZDlkZjY1NGIzMDcyNDU3MWNjMDIwNCIsInVybCI6Ii9hcGkvR01TLzI2My9pdGVtLzEzODIwOTYvaWNvblJhdyIsImNyZWF0ZWRBdCI6IjIwMjYtMDEtMjRUMTE6MDU6MjMuMzY3MDAxOFoiLCJtZXRhIjpudWxsfQ==",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACUAAAAmCAYAAABDClKtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADeklEQVR4nMWYDXWDMBCAL+/NQCeBSgAJIIFKAAkgoUgACUPCkNBIaCQ0ErK7/JEyKN0K273HSpOUfNx/9gZ7i1IH/OsuCYyJtZ/sC2WAYrwiaLoWqiLDMQKT/wM1AuUIVNjRCC/S1B9AjSYKJXJA1yqGY8NhZs1OUEpFFiAC5zfmM0agnIACmYPfAYo2abrPu5GqGHAsVZWxmgDuZoiQ44uIR361BZREiBohzp9VqgcyBHKTBHRAJV4rQBPieFUYn1KKL4FtA0V7o3YI5lrl4ODcpPFtAONb6PRWg0tgr0PRQ8kcoG2URqgXgSgpaoc13d1SggrAOCxE4lYpQYYP90DkW4EcA7PavJXMPWzzPNXhy5fN4J39bnKEJA3R/W4+BeD8CiUE+kDfovjPzFin1zVdZe8XU8M2UM6vqqIBk5/S1kfi4DQ0asX4VLMEtqX5jF8FQKd7IJ84LzifGI0JfBn3W/OJL7hL7aMd6jm/mjg+UEyMVYCEIMX+rQsK+ZbWmpXAu6kanO8WY0RuWZBd/YN04ioh0OzPMZnaFEJ+tmlBTh1UjFAVaqcxZWUkshG5InLzglxgmSE5E58Ds/ItInHuhus5+GaUbwXlCzIB5chY4lDX9NosZ7w4fh+sJ50CIKqRNGchyXRiq+jTiTOKY3rdqLdAtDGbZnSSILHKEZKS6QA2Ab8CpRMMvhn51VGkcY2bnPumi+w8n0kBLiA0UDkC9Xq97Rh+C6XatoWiKEAIAUfGrgiW8GEgU5Ywlp1pbSMg3bcvAb0CpYG6roM49u1uJNK09jBzDRydZJwYeDEF+i2UQvFAdV3TAD6XfeBNtghEMtbIBFxZ2qDJU5fLhQCAzEdA/JBD0vv59dPKHodR0g4BlWVpRwbgfUn6M6ZbOWg+I6+lBIw6GI9WAgBWtfCM/ATK+5LVEtPp4HaTJtaQJ0te1tKzUMoS3QM5eX8P1z51AoYXju0ehiQAciYLIZ6FCYEkTA4ca1DKhrmGIbFAFPLxAswc2JJGHIzzw4U8ZXoiCtlbmqY6U1P4J4k/BZ0sUAjwEw2tgU6gXE/E2CdpKMsykFIC53wS/t8e+GgD+eB+ek2gXNeIQDTgzEVAJIEfOZnTTthnP4KWD+YCqGCjQ95C3/eQ53moHQZ/LG++HilVSsZa6jWGYfgXmBHKiPv3jCmUT9SnPeULicrqSUDrF3sAAAAASUVORK5CYIIA3AF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi00a201OCIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTM4MjA5Ni9pY29uIiwiY3JlYXRlZEF0IjoiMjAyNi0wMS0yMVQwMzoxNTozMS44NDY3NDMyWiIsIm1ldGEiOm51bGx9",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incINT": 2,
+    "incPAD": 56,
+    "incMAD": 86,
+    "incMHP": 200,
+    "incMDD": 7,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Staff",
+    "lowItemId": 1380000,
+    "highItemId": 1390000
+  }
+}

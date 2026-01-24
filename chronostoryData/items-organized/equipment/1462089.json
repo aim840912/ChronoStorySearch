@@ -1,0 +1,55 @@
+{
+  "id": 1462089,
+  "description": {
+    "id": 1462089,
+    "name": "3rd Unwelcome Guest Crossbow",
+    "description": "",
+    "chineseItemName": "3rd不速之客弩"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 87,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 385000,
+    "reqSTR": 87,
+    "reqDEX": 261,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 87,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "WpSi"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEQklEQVR4nMWYi3WjOhCGR+e4AVwCLgGXQErAJZASoASrhFCCKWEpIZQQSoASdOchCcT7brK744NtkCx9+jUajXyBf2cGLzV/+K+AzFbB3wTyEMZkoFS9WmkdyJgI36PgmVJfJzpVG88NQbA1nYNZrRsCGRPju7si/OVz0uKk4gPaSkaY5LYjeGF15SpNOxMYBNFVC2W9C26BRpCEL11lUL7PILClRvu7JE74Uz+c9Aqelg07DR0WYdpmF8Z3dLEwqQXJ6eFXkcKtpFnaHIi3z+KwCiuz0rlr3Ex8Sl0syAeXFMQzQIfXl/nCd5It4pezFp82XBLx+11dA7D7KKLtbFS5wKlmH3prJ+VZ4FMXkKmCvkiwg5Y7uunmcNTPImNZ9RPHUuTl3fpbHMeQZRlorQWmuUPbCUDTUNXEw/AUI+DUAqe+akte5ITcsVxiEThH11X6xCkt8Gvpi7GuMVccak83CAMO5lqzF0CfVaistE8gKbaWpB4uABqouyvNs4C09hoWQLp60U2JCpauBVSHgZTiul3XBTD9R85zoe4tPOPAl9jR7RR7Z71YJQDyXNvv7bQDb8YM2PmbV8opM16jv1iYOM3h+qi4sm8MpSnfArBg5QhQnj949AV+bplSHUO5AYgNFnzivGMTXV1JpY7UqaB4ZbtB0QFRgy2PXle/rAoRUAdzleR+mLWxgKFl3ucVqFJ85CyMAFEn0mA3g+pWoTZMPxR3ShG7JE/De+cztLIIhlYg+tg02m7s9t+EcgGUQtEdRYhwqtJUyiiiU9whGGcUs2i1LyI6TJf9N6Ao7tR1zb18DEri/sxo9TmYPQs31/8PZQjGjd5FYI4z6agOq0AZhI1T/sfYpt2Qg2Uf2nkorkTKEJCDIiU46DkYCpiyacf4nSP6qNJyUa/nQyehXAB0PuKmhYOdtsoITIptPOGEbWeMe1BR1Ju+594+m9YrA/NVI4keRfhnYfe+Bj9pQza/Ep9TnQPagmpq+OxzuNFqaiq4V2PtlRbcHghP2gZll9q145x6CoUwkGY8slfywCXebIEsTOPPaQ+kjdkZZ5vvoUrnknyCwmkiZQjmfcg4iEDf30BS3b04xWWlTWnSQKPXYjxnTx3G9BlmsBWmDKnApJyv0nTsxalx7yvyhlKX5GDSjoCM0OA0lRh9M1rKjVMmPoxTMt2d3bSzoCxdj5CHCglMzckU5TQgGkdwNnhKliD1A8tkyzHmBpPcfQ/IgERSXqI+4o4jBzgf0X2WMMD+Xr2rUIKu0mUfCPO+LPzNva/7BpBqH6sHv9+B8ifhyP+Up6ucN3nkQ8cx5ghqBPL5Bx2x7MlmkfD9zJ8N21CuMz4N90XKZzyl6/FkM5van/v3Yx2KlnsEssFaPi+UHCZm9rN/x6xDaahIHWFSGFzxWcVAFBL+KNAS6oEwfJbzh1CxVXX+DFAI1eIRa+0st6oO2X9aepieD1U2KwAAAABJRU5ErkJgggDfAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby03NGZiYmNjNWQ2LXY5cWdtIiwiZ2l0SGFzaCI6IjM0ODVjMjc0ODYzZjhiODAyN2Q5ZGY2NTRiMzA3MjQ1NzFjYzAyMDQiLCJ1cmwiOiIvYXBpL0dNUy8yNjMvaXRlbS8xNDYyMDg5L2ljb25SYXciLCJjcmVhdGVkQXQiOiIyMDI2LTAxLTI0VDExOjAzOjI3LjAyMjAwOTlaIiwibWV0YSI6bnVsbH0=",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "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",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incDEX": 3,
+    "incPAD": 91,
+    "incSpeed": 10,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Crossbow",
+    "lowItemId": 1460000,
+    "highItemId": 1470000
+  }
+}

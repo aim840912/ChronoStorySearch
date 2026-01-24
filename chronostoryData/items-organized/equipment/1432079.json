@@ -1,0 +1,56 @@
+{
+  "id": 1432079,
+  "description": {
+    "id": 1432079,
+    "name": "3rd Unwelcome Guest Spear",
+    "description": "",
+    "chineseItemName": "3rd不速之客槍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 87,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 340000,
+    "reqSTR": 261,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 87,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "WpSi"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAkCAYAAAAD3IPhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC4klEQVR4nMWXi7WiMBCGJ+dsA1BCLCGWgCVACVAClnAp4VIClLApwZRASiAlZGeS8FCvuyqYnXMkQ0Dy+c+D+Av+h1mbBC+Btu2gLAtgTMeH8SDcgUhZgwHhfJyPC2MtDyD+o3QWrjil4sF4RSZVBDRtaesMWCMnmEjKLKHxIH5cWyRlfgJp2mysr5giwNyDiAkkcafX9jmYByBDADGg1nebz8Asibok6wqEo6sR5NAo8KFabF+Y64pZVEGQDiuH3+Rt2szqkDJmH5h7NZZPAMnRJUW4C1GwupTY+Og7mk63wzwKi1IcpOJfAaTH9QpUYqgBjqQIgQDSZRmBGHwdmL3CtIAwVk+TX3aAegaRDuCASuHYg1dDhXG3BPaqMNbRyYBHnlv06N13gPNM9u1HIVSAUAHCqbIdhkLE2ODdHI+dn9cpaGXAjvjqSegWFCITpIDGcVJjDs/0uG0wjI1d12F6KKgqA8YUbjrPBeQcc7OVwEXYLQhBoVmH5QpkOwxa0zRuJKDJKHd7kSMQrq/n9daKwC3IVhhr7Riem0Ly2wJFhZ0q0LKdobTWdOcJvBr6J4g9YPDRuAb3jcwoXCeoNF/2IEd4EJa9YGz35QhoxXkyqb/B9JQa7QSSugv/gNgCg+HxZdqeKyhzAwOeHqoDrFZkAeKlB78dJqMrmXFIqjOIGquagBKeQHp6SoRdYFCVXBndCq14VoQUkU3ID6/Na3K8AWM9SQ5GSmGwXIsGZcGGtirptyFegbHU2OiXFwUtnDkfOSaQzRCvwLjGxrnvGcaYEBLYFeRpmMulRBmwmSmqmv0hnoXxZRwB5G8wIWHjgdzC2Nlx24FMIYiIBbKGcRUjpXQVIiVuO5JKUGcPveTjIDMM9QuqEAKhamkq9HEne+7jgUwwdhwH7CEVVs0FaK8sCxYdZIJBO+Em1kBatGCEmLc/ENk8DIYH/1GAaltQ/b5d9VUYxo5TJUUC8Rv5u9f7H8Xmdbc/ea5+AAAAAElFTkSuQmCCAN8BeyJub3RpY2UiOiJHZW5lcmF0ZWQgYnkgTWFwbGVTdG9yeS5JTyIsImNvbnRhaW5lciI6ImlvLTc0ZmJiY2M1ZDYtdjlxZ20iLCJnaXRIYXNoIjoiMzQ4NWMyNzQ4NjNmOGI4MDI3ZDlkZjY1NGIzMDcyNDU3MWNjMDIwNCIsInVybCI6Ii9hcGkvR01TLzI2My9pdGVtLzE0MzIwNzkvaWNvblJhdyIsImNyZWF0ZWRBdCI6IjIwMjYtMDEtMjRUMTE6MDU6MzkuNDAzMjQ3NloiLCJtZXRhIjpudWxsfQ==",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAkCAYAAAAD3IPhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADHElEQVR4nMWXi5WrIBCGh3NuA1gCKYEtwZSgJcQSTAlrCWsJpoRLCUsJUkIogTvDQ415bBJdL+cYEA3z5Z8H5A/8j+YcjyMObdvB4VACY2Z7mAAiPIhSNViQfozz28I4JyJIuLTJ4xOv1HYwQZGkioSmPbg6B9aoBLORMqNrAkjop20jZW6BNG1+ri+YNoC5BpEJhPvby/Z7MHdA+ghiQU/ftr8DMwbqGKwTEIFDgyC7RkNw1djWhbnMmFEVBOkwc8QsbrNmUIeUsevAXKsxXhGkwCEpIryLYqsPCgsffcfQ7XKYe27RWoDS4jOCnNBeiUr0NcAHKUIggHR5TiAWtwO7lptGEMbqNPnpeqgHEOUBdqgU9icIaujYrxbAQRXGOrrp8VMUDke09+3gOJB9hV5KHSF0hPCqLIchFzHWh2GBn12YNxkYbcGdcevh9AoKkUtSwGCf1Bjck5ZbBsPYues6DA8NVWXB2tJPF4WEQmBstgqEjKcFKck1U7dcgCyHwdY0je8JKDWK3ZMsEAjtm8HeVBGYgyyFcc6d47oZ8L8OyCtsX4FR7QBljKE39xDUMLcg1oDBpdGGCIXMarQTVRoeB5APuOOWtWBc9+kJyOIwyesvsCcKjTaBZP7BDxBLYNA9IU3bYwWHwkKPt7tqBxOLLEK8tPDbbrKmUrkAXh1B1pjVBMQFh2z/lAirwKAqhbamlUaLvIwhopoYH0Gb1+R4A8YFkgKsUtJiupYNyoIFbZLSb0O8AuOosNEvL0synPsxciSQxRCvwPjCJkSoGdba6BJYFeRpmO/vA8qAxUxT1qwP8SxMSOMNQB7BxIB9CMLh9fZ0BXbDwB8Hco0gcgKyg/GPDp/1r4DYyXUTxmeMUspniFJ47OCVpMoeawltdPIOxC2gewokiPE8M4ehekEZQiCULU2FYzR9PPl3yggyNby6ixKMO597rCEVZs030FlZlSyB7KPh+UKPFrYPxvPrCsbb5PgsK1uwUqbjTwY/u+MW6C1Y++DZDAbdg/8oQLct6NNFVX1/13ujEQxjHymT1i3vd1s4yF/90H+0cZA/Rin/eQAAAABJRU5ErkJgggDcAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby03NGZiYmNjNWQ2LWc4OGQ5IiwiZ2l0SGFzaCI6IjM0ODVjMjc0ODYzZjhiODAyN2Q5ZGY2NTRiMzA3MjQ1NzFjYzAyMDQiLCJ1cmwiOiIvYXBpL0dNUy8yNjMvaXRlbS8xNDMyMDc5L2ljb24iLCJjcmVhdGVkQXQiOiIyMDI2LTAxLTEzVDA4OjA0OjQ3Ljc1NjI1NjlaIiwibWV0YSI6bnVsbH0=",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incSTR": 3,
+    "incPAD": 90,
+    "incACC": 3,
+    "incMDD": 7,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Spear",
+    "lowItemId": 1430000,
+    "highItemId": 1440000
+  }
+}

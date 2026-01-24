@@ -1,0 +1,54 @@
+{
+  "id": 1482076,
+  "description": {
+    "id": 1482076,
+    "name": "2nd Unwelcome Guest Knuckle",
+    "description": "",
+    "chineseItemName": "2nd不速之客指虎"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 67,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 295000,
+    "reqSTR": 171,
+    "reqDEX": 67,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 67,
+    "tuc": 7,
+    "vslots": [
+      "Wp"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAXCAYAAADz/ZRUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADF0lEQVR4nLWWgZGjMAxFxcw1ACWQEqAEKIGUQEqAEqCEpQQoAUoIJcQlhBJ8+rblGLLZy97tacbBgO0nfckOv+g/WHy/x9LfkmR7Ne5H4A4mwPjwzvggvoTO/BM8gH7WxLaw8ZxNnPgr+AGaBteUXsNV0OCE+jY8AAssk/42TOnLeXW1OvDqWvw2PCii9NAyhsIBujU1vaJH/YAxGTvhU/DdyHdRM7TGw64p/ADlXoY28VPd1OKE6bAT5VtwRM0Fcn/1vm3ZAX2jktWcOQtnhoks0KLixtDHenXV4voWHOC73TKkVkXrupr+pb0Qniu1UR6d7GCtjTRdED/ADDTTuS3u+pbsGj95nlNTN5RmqQd/dB+UJIlx4Hq90bosdIoiKlgFo4hh7MxX+5/gBkpFY2ctPfVDb/tKGTBsnmfjgFiaprSwCkrb6X2/mCvXR1jxX8I1oHruKJo4b5mi4dQbKEzAogIcyLJs5wQUIB7n5AbMy01fHDJaOgBTW9I2WljMUXV1swPDAIZB+jw/UVVVNE2TgAUe9s39Ea6RPx/B0FJ3m6nlKBDttExU8YIosCzbb6hte6wPZ1CUATFm2St2BtHLdn2OHNUMEAoK1ka9uc+KwsBDacUQMZzZNrsLWt57mnMebK9P/3RCuL7OV7+NaidvxlIj2jiOqXO5hrQorKIo/D3yXpYljfrO+9yuIQcLLHDkSXafZ9jKhVVVBQNThsQGLAZQaHAC7XKxSp25ru58rCTsQMeB1u6AYckn2ufewDUmI095mZuI6/rhsc2vhUueMR6Vjyskfmg30sgnXGIcKHzELtfhHn+SnWXtzGJKrV5im0s7HvkO5fZgjG1iFzlL3m/sgJXZ7W1pfpt5OKJGw2IoHkh9PrOAy0JHgyPYRrjymX8m+6/WACjm/rkk0jXoq+OXTMSLaSwoR2TKBTaOo5Ec93KyIeJhGEwNMBjJRx4UwzAg/IgI4dLfjt9zInuEjKGYzH4eJvNQtpsUHMAYa6K2IH9iSdBBf/fusw/JMOfGAQEepXbvH894MfdxCFvp2V5CxX4DtMyu4zZC4L0AAAAASUVORK5CYIIA3gF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi12OXFnbSIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTQ4MjA3Ni9pY29uUmF3IiwiY3JlYXRlZEF0IjoiMjAyNi0wMS0yNFQxMTowNTo1NC4yMTcyMTJaIiwibWV0YSI6bnVsbH0=",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAYAAABSZrcyAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADd0lEQVR4nLWXDbGrMBCFl5lngEqgEkACSKASqASQABIuEoqEIqFIaCQ0EvL2JFkaKP17PzuTmxRCvt2zm8D9Rf/B4tstlrHe7fSzef8E7mECjFf3rA/iS+jMX8ED6FYT02HjZ7Q48UfwFTQJ+oSew1XQ4IT6Gh6ABZbKWPdD8vS5qpw8ePIt/hgeFFGyailD4QBd64qe0aOux5yUnZhT8G3ki6gZWuFiW+fzBOVvhjbwVVNX4oQdsBPFR3BEzQVye3a/adgBc6WC1TxzFg4ME1mgRcmNoff1qrJB/xEc4JvbMqQmRdM02fGxORKuK6Upi/ZusjFWmjaIH2AG2se5jb7/SHaDP1mWUV3VlKTJDP5pf2i321kHLpcrTeNI+yiinFWwiljGwuZqfwe3UMpr99TYUdd3bqyUBcPO57N1QCxJEhpZBWXc41032p7rI6z4l3ADqDm3FA2ct1RRv+8sFCZgUQEOpGm6cAIKEM/zcgM2y00vDhkjA4CpKUifHCzmqNqqXoBhAMMgfZbtqSxLGoZBwAIPx/b3Gm6QvzmCvqH2eqaGo0C0wzhQyQuiwNJ0uaG0vq8PZ1CUATFm2Ut2BtHLdn2MHNUMEAoK1kSd/Z3muYWH0oohYjijtdsFDe89wzkPttfmSyeEm8v5Mm+jysubstSINo5jan2uIS0KK8/z+TfyXhQFncyN97lbQw4WWODIg+xznmETF1ZZ5gxMGBJbsBhAocEJtOPRKXXgurrxsbJjB1oOtPIHDEs+0DL3Fm7wMPKUFZmNuKruHrv8OrjkGfNR+egh8V27E534hNtZB/I5Yp/rcI8/yM6ytnYxpaZZYpdLNx/5DuWewZhbxz5ylrzT7ICT2e9tafM2m+GIGg2LoXgg9eHAAo4jrQ2OYBuh5zP/QO6tVgMo5t9cEukUjNX6SybixQwWlCMy4QI7nU5WcvyWkw0R931va4DBSD7yoBiGCeFHRAiXsV5/z4nsETKGYrL7uR/sRdluUnAAY66N2oHmE0uCDsaLe1sfkmHOrQMCXEvt798NKYlj9gJuxNMiajff9rooPv56jei9WYjG1nJg7fIQa++p89b1Mn/TgVdvta1T6X7tvvg700EfpmgT/upTeMuRLdDW9XURPsC3PodD0BbwnX31H8v6m/ujhVb3tl6hb2UXad7J+6yIXjn7MP83gGneIJi1UZIAAAAASUVORK5CYIIA3AF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi00a201OCIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTQ4MjA3Ni9pY29uIiwiY3JlYXRlZEF0IjoiMjAyNi0wMS0yNFQwMzowMDoyMy4zMjM0NjMzWiIsIm1ldGEiOm51bGx9",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incSTR": 5,
+    "incDEX": 2,
+    "incMAD": 61,
+    "incEVA": 2
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Knuckle",
+    "lowItemId": 1480000,
+    "highItemId": 1490000
+  }
+}

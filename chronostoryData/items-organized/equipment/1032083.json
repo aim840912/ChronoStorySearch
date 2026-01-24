@@ -1,0 +1,57 @@
+{
+  "id": 1032083,
+  "description": {
+    "id": 1032083,
+    "name": "Last Unwelcome Guest Earrings",
+    "description": "",
+    "chineseItemName": "Last不速之客耳環"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 107,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 220000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 107,
+    "tuc": 7,
+    "vslots": [
+      "Ae"
+    ],
+    "islots": [
+      "Ae"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADy0lEQVR4nJ2XgXGDMAxFzV0WoCOwgjuCOwKMQEaAEcoIZQQYoR4hXoERwgipvrAcQdymrXs0EIye9CXZ5GSejOp2K+nD0lGqr1c6wlIUq/nn2IG/gVgCdBmHBjrCf51I4AhtycD7cZJzbvPAWtN1mw8vypnohP+LA6cj9Hq9Gu9DmnA+N2ZZFlNVlQkhmGEYkjO4xoiKdH9x4PQMirGua4KP45juQ4GMCr9yABFbDW2aN74xTZ9pUlmWKWIByhAVAIeN3zoAcCokQGnizOdFUU/TZPq+T1BEjvPj0HCMjAM9HaOG59ppjp81/mkohpb9OCT/MsSRgRSNHeAfwJDzOJqmSecAAZiDQ/p5nvl7cRD2JEWC0LZ/XEC0M2JADMsAVApu7e6duMox9FnbObCNzzBYQJC7bdtUYBrKQGfN1SIsuzO2dpZy/crTUWiS55NAAEAlU1F1UmAir8ClgHDgnKGfn5horuXC0FlBqdP583q7cKHFCvcCDqi6l9hSorL2WiSHAwJM0j6BHhRwKDJEfcI/lDod8EqStIqUetWylObQfmw3SVoNXQnkDjnT0GPUnGMFlwTiiRqSAsjtRNEFgk1q8ajT1Mfc6gGn1H2OOhVXTDrrH5dRbieBmgw0kLgV/f0E1UNH/WM7sbxYSodx971At9VgMe2TiDEOUZcPYLUnm7Wu2ai391VqDzURTXXwBI45Vt3P9jFvc5eLofLd8khVDZlxji3EZR6CYcMO5KX3Ek0OHKN9sLstDMYUcfHwlUMe+PxG+/LmzMwPfudAwFqgmvQYMUfrqLW8WqGkXd7tYuZ1IebdYOE9w2fSY0NKNy/kCOSt09zV3G0eX304Wsc5pKzRElmcz1tkHx+cb/bahh0cqDqd10ZKcSErbax8S+lqvslxilZ2RkTYE5zCZwcA73iFittfWIyxj9ujDMQ8Evz98daq37k42pa9r6ltFRyVUdld9K92IOEsw5sy7Hrcqx3MlTBLGwxF3RcFvxjiC4k4RSuSITdht/pucEQo0b85iDGyIiOBJ3rCKzkdumHfv5tOWKvjRSnRpruxV3tPt2zJkV260vQQhoqpIO/ZeCxELDJN1zJoKi3nWds7juzKBehrqLAdiY/GkVFs6T4Co2S45vebGzmAtnoJmwUXpRcFnKpoDWbCGA9kebKqUh2//GkgvznGa5w7UqCbUJgE1K14b6b9oiJg3pO9+hXhzX5o4OFV1WO3oWNt4vOQv01R2hhZcia9gRy3xce3vie/jw7PO8jvM/MQnIlKZbfF/wx5PkbvMwHsnP8Ch2+IaA0Ee4wAAAAASUVORK5CYIIA3wF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi05dzg4ZyIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTAzMjA4My9pY29uUmF3IiwiY3JlYXRlZEF0IjoiMjAyNi0wMS0yNFQxMTowNDo0Ny43NDU0NzA0WiIsIm1ldGEiOm51bGx9",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEIklEQVR4nJ2XgXWjMAyGzXtZwB2BjuCO4I4AI5ARYIQyQhkBRohHiEc4RohHyOmXLccQ2t7V92hIMPqkX5LtO6kfRn2/a/owdOni50CXX6sqqF+ODfgLiCFAf+DQSJf/rRMZnKAdGfjYT7LWRg+MUX0ffXgpnElOuP9x4LSH3m435ZzPE87nVq3rquq6Vt57NY5jdgbfMZIi/f84cPoJihFCyPBpmvJzKHCgwj85gIhNCW3bd34wz5c8SWudIxagDFEBcNj4VwcAzoUEKE1c+L6qmnme1TAMGYrIcb8fJRzjwIGBrqmEH7XTkj4b/CmhGKXs+yH5lyGOjKRo6gD3BIac+9G2bb4HCMAjOKRfloV/FwdhT1IkiNL2twtI6YwYEMMyAJWCC/2jE4Nc43Bo+whs0jsMFhDk7rouF1gJZaA16mYQltkYC72hXL/xdBSa5PkkEABQyVRUvRSYyCtwKSBcuGfo5YKJ6qZXhi4FlDqdP2/3KxdaqnAnYI+qe0ktJSqXXovkcECAWdofoDsFLIoMUZ/wB6VOF7ySJAWRsly1DKXZd5/xIUlbQgOB7C5nJXQfNee4gEsC8UYDSQHkdqLoPMHmYvFo8tTn3JYDThXPOepcXCnprH9aRrmdBKoOoJ7Erenfd9BylFF/204sL5bScdr8LtC4Gqyq+yFijF3U+glc7MkqNA0bdeaxSm2hKqGpDn6AY44pnh/2MW9z16ui8o15pKqGzLjHFmIPXoJhxQ4cS+8kmiNwivbJblwYlKrS4uFqizzw/Z325ejMwi9+5YDHWlA06T5ijtZSa7lihZJ2+TCrWsJKzIfByjmGL6RHREo3r+QI5G3y3KAeNvdHH47Wcg4pa7REVudzjOzzk/PNXhu/gQPV5PtGSSmuZKVLlW8oXe0XOc7Rys6ICAeCU/jsAOA9r1Bp+/OrUuZ5e5SBmCeCfzw/CuWZi6Pt2PuG2raAozJqs4n+zYwknGF4q/2mx12xg1kNs7TBUNRDVfHBED9IxDlakQy58ZvVN8IRoUT/biHGxIpMBJ7pDVfIadEN2/6NOmGtTl+0RJufpl4dHD0ymiO79loNEIaKqSLv2XgqRCwybd8xaNaG81zaK1Rm1qn8UkLffI3tSHxUloxiS3cJWP+5shz0nUW6kwNoqxcfLdgkvShgi4ouwNwJ7GWsyIZyVlSq5cNflOYyk19uXd9bfkd3HRWyrUkBM6MwCVi24qOZtotKBK+rr29/Rlf878Cp7dDzTN2xrOE84MAFKVilME0B52JNOSfn2Drk73KUEZh7OMQg47b4+hb0Rz+xcYUGJunjuUQnx0IYMvB54Pk0rbrvnW6soQCsO5hW32+DWoN/RAzEMAK6qO3p4/noGX97dsDTogiJQ9D6cjG61nFePjBqnKH8+vrK7/4FiGKft+BjQB4AAAAASUVORK5CYIIA3AF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi1nODhkOSIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTAzMjA4My9pY29uIiwiY3JlYXRlZEF0IjoiMjAyNS0xMi0yOFQwNTozNjozNS41MzUyOTQyWiIsIm1ldGEiOm51bGx9",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incSTR": 4,
+    "incDEX": 4,
+    "incINT": 4,
+    "incLUK": 4,
+    "incJump": 300,
+    "incPDD": 45,
+    "incMDD": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Earrings",
+    "lowItemId": 1030000,
+    "highItemId": 1040000
+  }
+}

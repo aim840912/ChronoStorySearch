@@ -1,0 +1,55 @@
+{
+  "id": 1472116,
+  "description": {
+    "id": 1472116,
+    "name": "Last Unwelcome Guest Claw",
+    "description": "",
+    "chineseItemName": "Last不速之客拳套"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 107,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 560000,
+    "reqSTR": 0,
+    "reqDEX": 147,
+    "reqINT": 0,
+    "reqLUK": 311,
+    "reqJob": 0,
+    "reqLevelEquip": 107,
+    "tuc": 7,
+    "vslots": [
+      "Wp"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEW0lEQVR4nLWYjXGjMBCF1zNpAJeAS+BKgBJICaYEU0IowSohlGBaoIRQgl2Cb9+iFSuQc4lzkUcDCJA+vf2R8Av9p5JdrxmOt/3+9mwfT8P4wTO9NO0Kc/su2LdhDMS6CoCpePZbSn0ZZgWRr46ZgZh8Vbgvl3/CJCCienN9nnzvWP8xkD+HMSA6eKFHhhDT3E/H8PyucwrS0BPlIYwHsRDFGuJGYwTCEAOfojE48YN+o6J+lYQxIBaiUIh18SBrn4lADIR1eGFRR9/AJEBK+IWFmLwiOd/2IGQgFCQV2uLw3N/Fm1LhJfIimEcgHwZk4HdLvjUZE/mB5R3uw/H5lOg3+B+DdNzvGccwP+7jJfGCwmxAnI9YBdrtdjNJ22R5ntM0yf1H0RP65n6PUJpVPRmgyEyRKgC5eJCO+z/xbQzV7Q7hhffzuxzbrmVpbpRlGWx/NX3uUn0nIKW+JFRB7igUpGEQ9TaA3O93Oe9dT6/NqwCEXvkc1SuUUlsCYRUEuCc2V2XW+WSeMYO8eZQDmwQgapr8fJE6NRXBRNLGIHVdUtN2ADnQkqELSqsSlbWZMlVFQSo/OExiQY7HkpzjtJKXrMQgQABRMIoztfpgMjUEmFQSQlEQ9YvOdQFk6jpCrp2yEnekHaaBIqaUFuYTkJAgo9CGl7N391XnamobAXGuk6fHcQwg948L7Q5VAEE5v51ElY7zzjCKCyD5wP/k/hpklSg3GVgJRwapAQIHLYuC1tLNIL5Mw6yYD20BeTuTLqDXE94vZOnIti4TJckXZElkPzQyacXXF4A07XatgyprCCjihpGq10bOUZCb8jDKSD5YUkCfKiMxWXN6hyrGGUWhYRzCtSqHZ9iXxYfUZ+akmPuwLAJIUHYx0ajMYW0ya8gV4bvf7ylVMPMsmzsHcN7NppnblsEAMskPIXpjnPmdlSq6uieV2RQMlBd+cA5bC3I4zJn4eHqjP1VF4zBQUZZyJD/d0msz8k+BjCrBX1JbiLtNalrgkBoprZs3T0j/MNv5/T2A1HVNBbfhfF4+clnLjrK2bxxXzRNtNTbKWD9B530/hyb8ofQqnT8+5lkyONTQd9q2pQtPCFeOloVbfegzVTYwvc8JCqIwHbcrSFnOJtL1B0oARqEB0sp6lsniSkQU7ScohNdmA6Ywd0QH5FcQnSkGUhDHA8JsJ/aZcZzkWpTxi+PFL6JHhlB9J7kOqkQg683XxkwKogUgru+jawWBn+g7UAYAr2aVV2U8yPSZKhuYDFmU9yWYqXTO11ACsxd92SQj39eIUdPIkbPugQfVRVaBqgVEN+tJVSKYrnehUUEyszUgndYMIiHHmRsPlL7Wug7ptiMBIjCPvjIVZseD3O0NcVB10qU5xL3ZONmvghCK3wWJlLEDPVN0m1otH3IK8CWQNcxPikhYLR9y07p+5Q+AH8OwIrL7YojWNtODxPabMDfzgR+1a/2Vv0Q2FMs+SAePbj/zD9Zf0Yqns4ezTPAAAAAASUVORK5CYIIA3wF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi1zOGN0eCIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTQ3MjExNi9pY29uUmF3IiwiY3JlYXRlZEF0IjoiMjAyNi0wMS0yNFQxMTowMzozMi40OTEzMDYyWiIsIm1ldGEiOm51bGx9",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "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",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incLUK": 4,
+    "incPAD": 49,
+    "incEVA": 4,
+    "incPDD": 8,
+    "attackSpeed": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Claw",
+    "lowItemId": 1470000,
+    "highItemId": 1480000
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": 1442110,
+  "description": {
+    "id": 1442110,
+    "name": "Last Unwelcome Guest Polearm",
+    "description": "",
+    "chineseItemName": "Last不速之客矛"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 107,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 550000,
+    "reqSTR": 331,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 107,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "WpSi"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD6klEQVR4nMWYgZGqMBCGNzOvASgBS8ASsAQsAUuAEqQELUFKOEqQEqQEKSFv/2WTi9yJMOPz7QxmCCT5svvvhrs/NGORtREadzt9jJ+hPn9FZbHTvkH7rty3DfvQDsYMNGOzMDzp/WH1sjhMQI73MqV4BKp14RBoH/bx5mgO6CmMemXDk96wIIwXPSlUS4GnFKjU/iHou+j74jkGuU2WMYtgHBN2h0ltWfAC5KCyh5colWfTfoyRFUfPbXmDGwBZ9pD0G2NDqFcw41psHfW8ZMptJ4v03DoQ11r1oLNB31EvIWybkcHY2+1Gl8uFmqbBBSizBEas5yuVdlw+UYjOQ/3cQVx302m8XrbbLaVpSn3fU5IkaO1TGAiN3erF12t/zhhnvYv0F32wlvt3dfsNNIq60zl6nlMSAosDpG1byrKMum6EfuUZmQRZVLF4+zIXgFoXPJYZlQxSi7+ICoXi9zuFADVS+stNiPDAAACYPM8lVEtgSCc7sZcO58dsShgwAeBJIRxg1TRRlOcORtxYlqUAbDYbOh6PvKGaTqcT7ffI/gUC1ppwh/rNCIQUjbh/TFlrGwbMTyxozhgZUzBckWdJ8w2COQwvbgEEbwAKngxBlnomtN6lJsPhvqUkSvY0pNz27I3m3DQZt5V7NxwMb0AvshG03aPAF8FA8QpwQzpiR5IBo7d4e8OFKxJC1zGIFD6AQB/wAjSBOYbhu/iqaFcVPT8QFwAOh4PvF/FxyFprt1Hm693gPAJ9/GbQDMzVl1Uw2BlgkI4AcH0+G4y5sofiYIj5ZRrrRAzPBqH2ttgzrnVpGEWRXAHQneZNROxvzE/eJTAG1VGrpNzjh+NvAQNzQLg0Q8QyDR08qiBTAhveLD8OAhBMAnGipN/vd0LVr3exQEHgeDf0Ivrp99CtF/BkoOzGhS7enynJx9MZngoF7jwHgyefAK2G8SAQIeoFdo0wtG1FPV+opgAJARBad++89A4YAblerxKasNa4xXAPzWhIxKTS8nNoZokthREQJ0606cVSt3/wukHdCFPfncjoA1BVVbOhWgJjURNQwFwphwUgD5MHGWXYSxZACB+EjvH87CnQKxgB2e12VBQFdhY++3XCyeHngeI4fjgO1sJIaACCyRRkNhuePYduIPxXczyDERAMXgHy1KCXMMRrYN4KgrEQrvsAX6MZDwJ7A4gH4gSwr14CjH8JIOEX+5vt5ab+hBAwVFfYzHnyzwwwhquqP4Ghej0UP24SJveXHaolPIPagpO42pqXh9u7YUSo4fkRnsSfNIHBN6k7+hGuvjlQ18j9xzXj/6pDmCYfUR81EXDwr4n/BgL7C4AwVWobyV39AAAAAElFTkSuQmCCAN8BeyJub3RpY2UiOiJHZW5lcmF0ZWQgYnkgTWFwbGVTdG9yeS5JTyIsImNvbnRhaW5lciI6ImlvLTc0ZmJiY2M1ZDYtOXc4OGciLCJnaXRIYXNoIjoiMzQ4NWMyNzQ4NjNmOGI4MDI3ZDlkZjY1NGIzMDcyNDU3MWNjMDIwNCIsInVybCI6Ii9hcGkvR01TLzI2My9pdGVtLzE0NDIxMTAvaWNvblJhdyIsImNyZWF0ZWRBdCI6IjIwMjYtMDEtMjRUMTE6MDU6NDUuNjk2MTI3NloiLCJtZXRhIjpudWxsfQ==",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEIklEQVR4nMWYD5GrMBDGNzPPAEigEqgEKoFKoBJAQpHQSigSDglFQpFQJOTtt2y4wAGFmZv3dobmEsjml/0XuD+0IoG1ARrXnd7GT1fev4I8O+lYp2NPHjv6Y2g7YzpakVUYVvoerZ5nlwnI9Z3HFPZApS7sA539Md4crQEtwqhVDqz0hQUhvOhNoWryLKVAuY533thDnxfLMchrsozZBOOYsDsotXnGC5CDSkYPUSz3puOYIyv2ljvyBg8AsmwhGTfG+lCfYPq1WBpqecmY20YWabl1IK61akEnnT6jVoLbDj2Dsa/Xix6PB1VVhQtQZguMSMtXLG2/fKQQzQD1cwdh2UzVDPFyPB4pjmNq25aiKEJrF2EQaGzWIfhaHU8Z4669QH8xBql5/FTW30B9UDeqo2WdkhBYHCB1XVOSJNQ0PfQny4gSZFHBwdvmqQCUuuA1TyhnkFLsRZQpFD/fKASokdJfTiHcAwEAYNI0FVdtgSFVdmMrXe7jbIoYMALgTSEcYFFVQZCmDkbMmOe5ABwOB7per7yhkm63G53PyP4NAaw14Y3oNz0QUjTg8T5lra0YML1xQHPGyJyM4bI0iapvEOgwvLgFEKwBKFjSB9lqGV9al5oMh35NURCdqYu5bdka1b2qEm4L96w/GdZAvMhG0DbjAN8Eg4hXgBfSETuSDOitxdvrHlyR4LqGQaTwAQTxASsgJqCj676LrwbtrqI3TMQFgMvlMoxL8LHLamuPQTLUu85ZBPExJ4gZiKsvu2CwM8AgHQHgxoZsMObJFgq9KWZGjXVBDMt6rh5ks2Vc69IwCAK5PKA3rYsE8dAxP3m3wBhUR62S0scP+98CBuKAcGmGiCTqOlhUQaYE1u9sPw48EChBcKKkv99vQtUvT6FAIcDxrG9FjNO86/YH8GSi7Ma5LjzfKUr70xmW8gPcWQ4CSy4A7YYZQBCEqBfYNdxQ1wW1fKGaAsQHgGtd31npN2AE5Pl8imv8WuMWQx8xoy4RkUrL9xEzW2QrjIC44EQbPyw155HVDeqGn/ruRMYYgIqiWHXVFhiLmoAC5ko5xAMZKfcyyrCVLIDgPgQ65vO9RaBPMAJyOp0oyzLszL83q3By+A1AYRiOjoO9MOIagECZgqxmw9J9xA0C/5OOJRgBweQdIIuCePFdvAfmV0EwF4HrXsD3xMwAAvkFkAGIE8B+eggww0MA8d/YP0hA+wSn+ufPWwcBQXWFeOfJ3Lf20vf3mnRe29EMGGAMV9XhBEbU66EIiXRB/1oCm1t4bly+OOj7/XgEY92XHaolLIPagpO4OMob21mh/IX3umgNcAQjgeqfH/5JvKBoTXG38vf0+gmDd1J39MNdbXWhppK+/xI7Z41gAWwNfv1fIu6rDm6avET9U5EA9v418d9AIH8BrVduSNjASugAAAAASUVORK5CYIIA3AF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi05dzg4ZyIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTQ0MjExMC9pY29uIiwiY3JlYXRlZEF0IjoiMjAyNi0wMS0yMlQwMzowNzo1MC42MzQyMzA1WiIsIm1ldGEiOm51bGx9",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incSTR": 4,
+    "incPAD": 98,
+    "incACC": 4,
+    "incMDD": 7,
+    "attackSpeed": 7
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Polearm",
+    "lowItemId": 1440000,
+    "highItemId": 1450000
+  }
+}

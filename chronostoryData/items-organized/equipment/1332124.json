@@ -1,0 +1,55 @@
+{
+  "id": 1332124,
+  "description": {
+    "id": 1332124,
+    "name": "Last Unwelcome Guest Dagger (STR)",
+    "description": "",
+    "chineseItemName": "Last不速之客短劍(STR)"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 107,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 440000,
+    "reqSTR": 74,
+    "reqDEX": 147,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 107,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "WpSi"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAfCAYAAABtYXSPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADFklEQVR4nMWWjZWqMBCFh3O2gWwJWAKUgCVoCVoClqAlSAlaApYgJTxLeCmBNzd/TiC4sD9v7zloTJT5Mrkz+Ea/p37wOfstmL6uazoej5RlGWF8Op36n4TBzrOpRQ5OXdd5EDP3UzD9q7WqqszgdrvR4/EICz8B08vdpkAkgNDnPNMrUpkmPQWC9A/n8QIQZMMrz3MPZo5zEQwghmMB1bPocDgkISCAYAxYrXUEMhtGQCgxjbF2Lg1ZklnBzhHUZ0MpFUAoYe4lmVH+6jS1haL1E4n+Iiur1coASBVFYWAAAk2BzIJxWYlA7F0JuX9kpM51vRuBeD9sNpsAM2HceTApkKLaUHe7Yms1vlNVBV2vVxMIANKgENYw76/h+iyYJAgfRccds6SnKQHhd2wC/WEXIR6805QhS2H9RSNMwggQIw8CTYFEv99xxKYIIG3bmrb/CiQJI8uXbEbuBqRkv95butstRr9Zsx/giQuDlatsFHEOSBLGQ4jrKQbyGQra7qm9NigTu5ld/YRoTuZoeIPvWapFvoKZ8gmVW4fI0+vt6CYFAADjyrdr7KMAWeQWsKKZeuNQCk3rlU/srLKt7X6J7wA46ZvLmY17IteHZuRDwOBlACJ8skXXImovNiiDdFl89MFPUGvXBYi5Jp5jCRiLMAaBNlwWj86CGKC9BbDFq3llYya4Yjr4JvvQox/APBVAED9HZebMqHhwrkNGHEgsd0ycERjKZ2FRVjxMunIMHjerG++YKh8MHzRDm5IpCjuPzBR30xAv0itLQCIYGDa/x2Xbrd+5Uo4jRANy5kfUrjKlPZAW1yL5Y7L1UliLREDNgQrXcUUwC9LwifGzCmNn3PKzIB5mdETwi3ZQHODUbUvfycwRGYM3zjoTIDgi3zYWwXCAs3JHlLvsCDoNIAwCiIMwczEIeRDz/pk+4yEggOgyM3fhIAe/WwD74FIDEL3UtEkYX84AkRA+UPhnFyv6zldAIhjIpRwgD0pXhfSW7CdfBvEw5iYuI3sB4IGkRgG/A2IEI45h8TPlW2GcCSUI/W8Q6B9ul6dqODAl8gAAAABJRU5ErkJgggDeAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby03NGZiYmNjNWQ2LWw1ODZyIiwiZ2l0SGFzaCI6IjM0ODVjMjc0ODYzZjhiODAyN2Q5ZGY2NTRiMzA3MjQ1NzFjYzAyMDQiLCJ1cmwiOiIvYXBpL0dNUy8yNjMvaXRlbS8xMzMyMTI0L2ljb25SYXciLCJjcmVhdGVkQXQiOiIyMDI2LTAxLTI0VDExOjA1OjE3Ljg3MDAxM1oiLCJtZXRhIjpudWxsfQ==",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAfCAYAAABtYXSPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADbUlEQVR4nMWXgXGzMAyFxV0XcEcgI8AIZIRkhGQEMkIyQhghGYGMEI/wM0I9Ar+ebTkGDCW961V3UGMb9Fl+ktMP+jvrR8/ZX8H0dV3T+XymLMsI7cvl0v8mDFaezQ2yc9JaC4jt+y2YfmmsqirbeDwe1HVdGPgNmD5ebQokBojsZ5rpFanMkJkDQfjH/bgBBNEQy/NcwOx2vgUDiHE7gurZ6HQ6JSFgAEEbsMaYAchqmAhCRd1oG6/SEKU4Klg5nEo0lFIBhBLificySi5tqC0UbV9I9IWobDYbCxBbURQWBiCwOZBVMD4qAxD3VULsu4zUta4PExDRw263CzAzwl0HkwIpqh3pxx1LqzGnqgq63+/WEQBigcIwhn65xuOrYJIgvBWaK2ZJL1ECQlZsHf1jFcEftNOUIUphfKEQJmEiEGsCApsDGbx/YI9NEUDatrVlfwkkCROnL7mIPC1IyXp9tvR0Sxy8s2U9QBM3Bis32cTjGpAkjEBE18sYSCIUbH+k9t4gTdxiDvULornYreEFfmapErkEM6cTKvcekbu3+8lHCgAAxqevbtxRgChyCdjQSvtgVwpFa0knrle50va8Db8AuFg3tysL90K+Dq2IRwSD2wgk0skeVYuovTmnDKKz4dYHPcFaNx6B2GvmHEvAOIQpCGzHadFpB2KBjg7AJa/hkZ3t4IzR0E32rUa/gXlZAIH/HJmZM6PixrUOEfEgQ/PbxBGBoCQKb0VFYNKZY/G4WD14xVSJMzwYhrYpUxSuH5EpnrYg3mKtvAMygIFg8+cwbfX2kzPlPEG0IFc+og6VTe2Rmeh6y2SbXL4UTiIDoOZEha+4kTMH0vCO8VmFthdu+VMQgZlsEfRiPBQ7uOh9KZXMbpEVeOOlMwOCLZKy8RYMO7gqv0W5j05EZwCERgDxELbPgxjvFLeN10r2kzojEDCAmDKzX2EnJ1ktgMX5wFiwD0MKkzoXUOw22mOSb8ECjKQzQACBlXbhxLHOjv6LSr5s5xjKjT8MZL59Bz8bXpV5kO5zYIOzyYf81DknpJ0DgXFxiGBiqJEHQ9OfFjKlo2TgHIzbaxeRI2bxltjK1kUwFFXpsYf4r2+Oa9bK48BPRLESbERE0ySe0hzDGJrOSbXHVxrGp6V7yUzfplR1lv8LpmYWnhcj9B/hMtskL3xMQwAAAABJRU5ErkJgggDcAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby03NGZiYmNjNWQ2LXY5cWdtIiwiZ2l0SGFzaCI6IjM0ODVjMjc0ODYzZjhiODAyN2Q5ZGY2NTRiMzA3MjQ1NzFjYzAyMDQiLCJ1cmwiOiIvYXBpL0dNUy8yNjMvaXRlbS8xMzMyMTI0L2ljb24iLCJjcmVhdGVkQXQiOiIyMDI2LTAxLTIxVDAyOjE0OjQ1Ljk1NDI5NzZaIiwibWV0YSI6bnVsbH0=",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incINT": 4,
+    "incLUK": 100,
+    "incACC": 4,
+    "incMDD": 7
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Dagger",
+    "lowItemId": 1330000,
+    "highItemId": 1340000
+  }
+}

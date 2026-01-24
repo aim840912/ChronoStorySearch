@@ -1,0 +1,56 @@
+{
+  "id": 1492078,
+  "description": {
+    "id": 1492078,
+    "name": "Last Unwelcome Guest Gun",
+    "description": "",
+    "chineseItemName": "Last不速之客火槍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 107,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 510000,
+    "reqSTR": 107,
+    "reqDEX": 306,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 107,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "GlGw"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAhCAYAAAAlK6DZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACn0lEQVR4nLWWjZHCIBCFl5lrAEtIC7EELQFL0BKSErSESwlSginh0kJKOErg9hE2x0U0nsadYUL++Hi7y8IHLW3e63BVyuEuPlXpJ8tBB1gRG4CX8/lMu93u6tNloAOw5LbR9amiSO26Lvv569AJ0Bwr+uQbdapv/rKE0uBWAcKUUlRV1RuVMpSBn2VZUG8ttUkM27YNc1ga6llWiF8bH2w2mwC7pfJVqGej7XYbbvq+D1cAi6IY75eEBuDhcBhBYgDO2TNQX8aBoUaUCVAUOl2SLktynX0Z6vf7PXUMgkoAEcOpKwE0X+fQt+udZ/DTFSm4dLVakTGGmqYJQDT0YVN4X9vcOA9DR2DJLhMgVNf1bxFwZh+uhW2gcOhTT91Qg0e1j0BD0RaguFSAUIdYAojigLXqWOA3u3e9Xj+l1Mu6Sw3PUoU5k8yO6/XhmI5ArfUYR5Q3iWFuPYaMnVFyCxqA90zcKn06Vrax1ux5cmJQGSf2eEyhUhJIVFqbyUjvETxD8+ZvQT02X3FhzjJudbGFbS2fPuTlvyk069aCY9o5d1XEJZtTaM6QE/hWJppCQ7W5V6insNPphFuFnYZd3HO21craI3b03C4Tx1b/rr34cYRNXo0d9gpxg0IXr6kJNKics2S9Xm3MrLZntY5PYvTth0Mg1mq65cl/N5WmBUFzAmy4IRHuJVg8dobjSu6tdAAd90a4wvHMMHDB601zXKSy/MPU3AejUlScGKsrkyIQVc4O+jA01FNWBVcS4psUgcSlLwP/QGEAXi4XEoe2DO4WUpeF4oAFoKRP1/WINjbFltSizAEqQBicilLWHCsEuJeMXBbKxZrd+KViDDUrjMCWkgW/LBQ10xgcXpGi2pkAGtobVA5QqSS/qty7YGI/kgt3fVpzZLYAAAAASUVORK5CYIIA3wF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi1zOGN0eCIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTQ5MjA3OC9pY29uUmF3IiwiY3JlYXRlZEF0IjoiMjAyNi0wMS0yNFQxMTowNjowMS4zNjE0MDc1WiIsIm1ldGEiOm51bGx9",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAhCAYAAAAlK6DZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC00lEQVR4nLWWjXHDIAyF5bss4IzgFZwR3BGcEZIR7BGSEeoRwgjxCGUFRigjUD2MKHVw/qs7zuC/jycJwYrebc6V/loUFqNwt0hfeR90glWhAXg+nU603W4vXn0PdALW3JqyP3YUqFrr7OuvQ2fA9tDRJw+KY7/4yTuUercKEFYUBXVd949KGcrAz7quyChFYxLDcRz9HN4NdSzLx28MN5qm8bAlla9CHRt9fHz4gTHGXwGsqiqO3wn1wP1+H0FiAN6yZ6CuDj+GGlEmQFFoy5rKuiar1ctQt9vtSDMIKgFEDOeuBLD9Ovm+2mwdg5+uSN6l6/Wa2ralYRg8EA192BxuepX7z93QCKzZZQKE6r7/LQK23flrpQYonPpkSE81OKq9B+qLtgDFpQKEOsQSQBQHrFXLAr/ZvZvN5imlTtZdariXKsyZZHZYr3fHNALLsoxxRHmTGObWo8/YG0qWoB54zcSt0qdDpwal2h1PTgwqw8TujylUSgKJSqUyGekcgtfSbXNLUIfNV1yYs4xbbWh+W8unDzn5bg7NurXimGprL4q4ZHMKzRlyAu/KRFOorzbXCvUcdjweMSyw07CLDWdbXyh1wI6e22XCv4uHay8+jLDZo9hhrxA3KLThmppAvcpblqzXi42Z1RpWa/kkRt9uOgRiraZbnny3qDQtCCUnQMMNiXAtwcKx0x9Xck+lA2jcG+EKyzPDjytebyXHRSrLA1bceiEqRcUJsbowKQJB5Zqmw9i9dpHVEerrKauCKwnxTYpA4lIswfoJoE3a35gCeD6fSRw6MlhPQNyCOlnEOaVL61RgJjQboThgASjpozXq6UHRoCwZXdFjLr06kVUKhMGpKGVDU4/sYsOZZa/9IPNs3p83hnKxZjd+FSGGJSscdu3Aqay5mQysXJiAvTL+82zlb7QtDq/ehbYNvq8qwwv91tb4lK1iJfktY1YW+X/ZD15QmiYGOPMvAAAAAElFTkSuQmCCANwBeyJub3RpY2UiOiJHZW5lcmF0ZWQgYnkgTWFwbGVTdG9yeS5JTyIsImNvbnRhaW5lciI6ImlvLTc0ZmJiY2M1ZDYtcmZyZnQiLCJnaXRIYXNoIjoiMzQ4NWMyNzQ4NjNmOGI4MDI3ZDlkZjY1NGIzMDcyNDU3MWNjMDIwNCIsInVybCI6Ii9hcGkvR01TLzI2My9pdGVtLzE0OTIwNzgvaWNvbiIsImNyZWF0ZWRBdCI6IjIwMjYtMDEtMjJUMDk6MDU6MjAuODc0MzQxMloiLCJtZXRhIjpudWxsfQ==",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incSTR": 5,
+    "incINT": 4,
+    "incMAD": 77,
+    "incJump": 8,
+    "incMHP": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Gun",
+    "lowItemId": 1490000,
+    "highItemId": 1500000
+  }
+}

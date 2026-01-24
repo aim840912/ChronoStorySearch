@@ -1,0 +1,57 @@
+{
+  "id": 1372075,
+  "description": {
+    "id": 1372075,
+    "name": "2nd Unwelcome Guest Wand",
+    "description": "",
+    "chineseItemName": "2nd不速之客短杖"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 67,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 245000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 202,
+    "reqLUK": 69,
+    "reqJob": 0,
+    "reqLevelEquip": 67,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "WpSi"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAETklEQVR4nMWXi7WqPBSEN2udBmIJWAKWgCVgCVACliAlSAlSgpQgJZyUACXwz4QEAz7A9XvvnbM4CuTxZe/JBn/kjZK+V/ysgqCbXe8r/0JRTjvmqSRDv0A+0M/C/QhHjMnz2l4gVTUD6DF5J41sisaAiGsD6E+gfpabSESAbpycZ8oAyHjFA5lFqWKUGMkVQEswDQ/kKkzyNKww0S2PEa7IA9ETkBz3qVyGzG5wrbZAOD3gqOdpZwTZ9y0MOyWDPUKeE2iHTtccuQOQxt+2rEeQOE/kJMpCNvgWSZsPQB3a4M6FFInhkiOboffZRf0lDFfCsDivkKaxnfaIxDVXAApFOlklzcP2T4YUn1z6mfJgITIFkpFXdgCCpUiBsjfjIVgTnTBlY8GVTaX2YKge0Qtm5nd6B8P0xFhFRCAfhMow/BnT8nrJwTHozq6S6gyW4NrdT731E4FkMtoCDPzSIFUZFwyguPRWQ5PSEQ5IPKDgSc3xQaZ5Hb4HRW1St2RgB5Sice66Fxg8wur0C6CJPBCN3kpcCrXMtVhnAKQBVMjg5RSDJf59gjwAefrNIwPhpLyyQLmosA4tPQ7oxVjuCeZyGucjRmePia4AcZ9io+CS0rixrOEb/Dnrsz7FawwMEC7h5I07auVufimuiMZO7iDbtzB2TncMD8xZCpqiMtHZocnNBu/8ZMubvqNHlBxsaqyOtMJbGM8rbEifhCa3Jj0pJp9PtqQQEJOi57qNXdfsJsLUFihCjqMag+4x4NUbybma54f59rbiIry4sWnhorIIY4GYptpC0T9nZqQuAZQOQExTYdszXUwdU+i2eSiuKhu5t5CSi/XnWvMK4aAIU4a325nnMUBSOyoBdrad88/OAJWiAGQ3s/ZAKj8iH8Eopfqu6wKA9BJFx0sUnTBiaZORluIXd4Vtzv8uQqU0AxCDwwJaPwNZBUMQfhKki6IMYTnj2X9IdXc51su2JaUGtkqNXxjVI1JOD+r5e81bGIK0bSubzUa6Pcpa15X6tz0jPQaEE9j5VsnWiJM9LbhbfaCXMAS53H7H8+jcSpNt+mK3JZR5heyyrEe7sQjGbft8G82GfnXjbWQOmNgB1UUmMYCu2MOIFD0kw5vkIEYPKmSduodXzyWYKIomQPtDhgcb3keQOupYDp4pj5mJVvXZL5MHvYLpCdI0jbTexNfLSeJQjeenNBlhvqEHGHrlGUgcxxOQNBlAjLmth74OQxHk9vscJNjBO/lZdlvjka+BPMC4HRSqewSegTQF6mzbsuhqCb7GMoXhDtnbFTvFiJB2vteVNChX3e3GLcw88fP/vt48h6HCMDQHVdfDrybtIPt+1/HH4qBaXpT1b8D0DkSpe13yIsV88MYQjdkT95swpnpprU1toaqqcgB32dcJ+UMiTM9KSl9s9xkgxor+PWeuheFuqUGyPxzNTqlZ0Jvyr4MYGJq0tr6oDyYq/wSE+g9qzUPGig18YgAAAABJRU5ErkJgggDfAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby03NGZiYmNjNWQ2LXY5cWdtIiwiZ2l0SGFzaCI6IjM0ODVjMjc0ODYzZjhiODAyN2Q5ZGY2NTRiMzA3MjQ1NzFjYzAyMDQiLCJ1cmwiOiIvYXBpL0dNUy8yNjMvaXRlbS8xMzcyMDc1L2ljb25SYXciLCJjcmVhdGVkQXQiOiIyMDI2LTAxLTI0VDExOjA1OjE5Ljk2NzEwNTJaIiwibWV0YSI6bnVsbH0=",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEkklEQVR4nK2XgbGqMBBFl5nXAJaAJWAJWAKWgCVgCVKClPAowZRgSpASTAn8e0OCARVw/lsHFUiyJ7s3S/iRGcu7LuZvE0Vmcr1rwgtVPe5YFpL3/SL5wn4W7qc4MjgvlbtAqmYC0MG5ES2bSlsQ8W0A/Q3Uz3ITSQlgBuc8iy2ADFcCkEmUGkaJkVwBtASjeSBXSV4WSQNHtzJDuNIApB2BlLhPK6XP7AbXlAPC6QGHmqadEWTfWRh2ynt5JDwn0A6driVyB6AWn22tBpCszOUssYPU+JfKo+yBDNrgzi8pcsslJzZD74uP+kcYzoRh8VohjXad9ojEtYwBlIgYWWUtD9c/71N89ulnyqOFyFRIRtm4AQhWIAWxu5n1wRrZGS61A49dKtsAhtYhetFE/N7mYJieDLNICRSC0I4Y/gK3vF5zcAy6c7OkGYsluPbUU+f0RCAZjbYAA71opOrICQMoq4PZUKRUhAeSACh6U3NCkHFe+/9RpWzqlgTsgQo0Ln33CoOnmF37AWhkAUiL3rH4FLYytcU6A6AWQJX0Wi4wWB7eJ8gLUGD3MrUQ3uKgLNB8VFiHlh4H1GImzwRzOtrriNHZw9EVIP5XXBR8UrQfywle4+Olz/qUrREwQDiFczDuYCtX80fjjCjs/AmynYVxPv3RPzAnKdBVY6OzQ5ObC97lzZK3fQeNxHJwqXF2ohRmYQKtsCF1ktjc2vQUcD51tmQJIEZFz3cbuq5ZTYRRDihFjlOFQfcY8BqM5FXN88N0eTvjJIK4sWnlo7II44CYJuWgqJ8LM6JqABU9ENNUufZMF1PHFPplnoivytb8LqTmZENfa7YQHoowdXK7XXieAaRwoxJg59p5/ewsUC0xgNxibgOQJozIVzBxHHfGmAggnaTp6TdNzxixdskoagmLe4xlzm8foVp0D8TgsICqdyCrYAjCX4KYND0iLBc8+w9Fa35Palm2pGyBHRdWL4zqCSmnBtvpvmYWhiCPx0M2m42YPcqaMXV7f1yQHgtCB87fKnM14uxOK67WEOgjDEF+b/fhPL08RB83XbXbEspuIc3x2KHdUASzx+P9MpoM/enGbGQOcOyBVHWUDEBXrGFEihqSfifZG6MHq2SdmZet5xJMmqYjoP3hiAcb9iNIHe1U95qpT0cbrea7N5MX+wTTEURrLY/A8fX3LFkSD+fnIh9g/sJeYKiVdyBZlo1AirwHseJ2GvpzGBpBbvf3INEO2ikvsttajfwZyAuMX0FJ/IzAOxBdoc7e7/gyeFfZ/hXLGIYrZO9m7C1DhFqv+7YRjXJlrlcqt0AIUc1ibORW73BmG76kKUkSe9CU6t+aWg95uRxMnhfWuVJaTicUGZPKOjPBr5E3YCFM50Hi+FmXgkgd8DRKpG3xIolYKZUApN9ff3b87jqPVp4PzhcYW73ohyuJ1jS2huyds34XoPHarfWw85P1T4I5wBFMx0pKXWz3R0AMFX0XOJsONDewmfk/PcYwXC0KJPvDya4UxYKu68iBhDN/F4X4A9gc/MeJ/FCkyulCHWxUoqDT/74IfGX/AMAkc9UbI0FmAAAAAElFTkSuQmCCANwBeyJub3RpY2UiOiJHZW5lcmF0ZWQgYnkgTWFwbGVTdG9yeS5JTyIsImNvbnRhaW5lciI6ImlvLTc0ZmJiY2M1ZDYtNW13c3oiLCJnaXRIYXNoIjoiMzQ4NWMyNzQ4NjNmOGI4MDI3ZDlkZjY1NGIzMDcyNDU3MWNjMDIwNCIsInVybCI6Ii9hcGkvR01TLzI2My9pdGVtLzEzNzIwNzUvaWNvbiIsImNyZWF0ZWRBdCI6IjIwMjYtMDEtMDRUMjM6NTA6MjUuMjEyNTU5M1oiLCJtZXRhIjpudWxsfQ==",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incINT": 2,
+    "incPAD": 50,
+    "incMAD": 82,
+    "incMHP": 200,
+    "incMDD": 7,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Wand",
+    "lowItemId": 1370000,
+    "highItemId": 1380000
+  }
+}

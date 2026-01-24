@@ -1,0 +1,56 @@
+{
+  "id": 1422062,
+  "description": {
+    "id": 1422062,
+    "name": "Last Unwelcome Guest Greathammer",
+    "description": "",
+    "chineseItemName": "Last不速之客雙手鈍器"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 107,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 490000,
+    "reqSTR": 331,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 107,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "WpSi"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADVklEQVR4nL2XjbGqMBCFNzOvASxBS5ASoAQsAUvQEqAELUFKgBKuJUgJWkLenk0WI+ozPOdy7ngJP2Y/9i/xD30je0nIrG70pb6DMKurjvzRjs5/AWK3s8O4rvl054e1XD8cDrTdbmmq4iEYwFaVDHv+WzGEar1eU1mWdD6f5Xg8HgEV7Y04CAHYUUcNm09oa3J5axjcbDbyCMbqhaIoqGmaaJDPEAKQkWZfSRltvdH9fk+n04nSNJUxwCDATPFIZDiW/P5nNl88XL3dboNBzgtaLpcSElzv+17O+fgRJBKi51D0dORw7BiFS5OMMWJc7rJBfMZJOUrctyCREGyYEaDULJ7udl33cK5VAjB4xustyKQSbcyGrLWI9fDWgRGOWiYf3FMQhASJ6oFegkRD5MZNjASEMDFgUJ4CwsbtpSWTu9KFcQghwX0856EtlRymYz3AfIaoa2M4pvCAAqgGABjlHiIAvQsN3hwKS1f1cygpTTg8tQOJ8YQAhBOPx9ClWJMZQargtTBvOq60K/edBTmQqHCgIXHzGSZ8pZyrR8LBVYOw1b6tazPT70MZsQcZxVYFEsTGQBh0P0yIifFGWZY9PID4d3lDeesANTG1owLA9wxqubwTfiYh5IxrgVHhwD91pxjksSbeoG5PnXHhAPArgMwe2PiNix2NL5EWGAtB1+uVFovFAIFkxKTojBBCVAerasVJqgC4Foai4TAk3rjrP10cBCbRdWHUmCS70RHVM3oMAdQLLa88vfw9NreonOAYW23RKvXCJ3gArG3Frr/RngNREebJ+PxeXZN3VkFpPnU+9YL2BeeBij2wE4CCq6LjYyYg0yAsYjxqVE8AyAsYD0sYlYB3Vg84AIAiHJnrKxF9YgDw+4OXALimW7xQCb8tEtGFoPMA3jhAPnRMmRCJBQBdJ+jf+wK553dUonTbkPUJ/cq46hWE1bfWSvAlFrtnvD/Hc5gkCTfHn5fyhL8A9yO2uuo9TTxVbwy/g7BoSuGK51fI/weIlEKIy3zcZxcgbNu2D1sxv2XH8Ne9oBCU5/lwAbnwtDjNASHK3K+rc7enuSUQ2DmZVX4HCTevc0FgN7Q8/VDvW3O4d5wNQoxuUrmALjn+HTEHhPG/B6BwDZilMqC/VgnavpUoYgYAAAAASUVORK5CYIIA3wF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi1zOGN0eCIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTQyMjA2Mi9pY29uUmF3IiwiY3JlYXRlZEF0IjoiMjAyNi0wMS0yNFQxMTowNTozNi42MTM0MTg1WiIsIm1ldGEiOm51bGx9",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADjElEQVR4nL2XjbWiMBCFJ+dsA1gCliAlQAlYgpagJUAJWoKUACWsJTxKkBKyc4cMBgQN+/bteCIhYObL/CX+ou+I/YrIbDv6pnwPwmwf2nNXO7n/AYjTyQ79suTbk+uWMn65XOh4PNJaCYdgAFsU0m35s2UIld1uR4fDge73u1yv1yuggq0RBiEAJ2qoYvURHU0mq4bC/X4vr6CvVsjznKqqCgb5DCEAKWn0HSilo1N6Pp/pdrtRkiTSBxgEMGssEuiOmNd/Z/X5aLTrukEhxwXFcSwuwXjbtnLP148ggRAtu6KlK7vjxCicmmSMEeXylBWiTYNyEriLIIEQrJgRIInZvDxtmmZ0r1kCMFjGySLIqhStzJ6stfD1sGpPCXstlYZnCgKXIFAd0CxIMERm+okRgBBMDBikp4CwcvtVk8n61IVyCFyC53jPQVs6sJuu5QDzGaIsjWGfwgIKoDIAQCnXEAFoe9dg5RA/dVV+Xw6UROyesgcJsYQA+BNP+5CvfEdmAqkCq/lx03CmPbjubKgHCXIHChIXn2HCOck4e8QdnDVwW+nKuhYz/T0kJbYgo9giR4DYEAiD6ocJMTFWlKbp6AX4v8kqyuoeUANTKyoAXM2gmtM74nciQsz0JTDIHfhSc4pC7mvgDdKcqTG9OwA8B5DaCyvvONlR+CIpgaEQ9Hg8aLPZDBAIRkyKygiBi0pvVy04SBUAY74rKnZD5JT39acJg8Akui9MCpNENyqiWkavPoBaoeadp5XPuLgFxQT72GqJVlErfIIHwM4WbPqOzuyIgjBPyvfP7Fp9svJS86XyqRW0LvQWKNgCJwHIOSsavqYCsg7CwseTQvUCgLiAcj+FkQlYs1qgBwAo3JH2dSWgTgwA7nwwC4AxPeL5EvFqEYi9CxoH4JQD5EPFlAkRWADQfYLenwvkmTtRiSTHiqwL6DnlKnMQVletmeBSLPTM+HyP5zBR5B+OP2/lEf8A5odvddd7mXitLChegrAoSv6O53bIvwcIFIUQkzm//3cBhK3renQUc0d2dJesENF6WaxuYoksy4YBxIK3OUWT69JYKEDntTGESNr/u7o3o6IUO2XaloDmFM6No7WuDe8JBE5OZps9QZ6H19g1X+E/dcUAgdNQfPtNrSvN/tlxZoJ3E3Zv+tM2hhCl+0QGUCW97VpJ5lYfLQC9g55dACCM+z8A8feAH68PKn8AKvD0FC3OJfcAAAAASUVORK5CYIIA3AF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi00a201OCIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTQyMjA2Mi9pY29uIiwiY3JlYXRlZEF0IjoiMjAyNi0wMS0xOVQxODo0OToxOC4wNTMxNDM2WiIsIm1ldGEiOm51bGx9",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incSTR": 4,
+    "incPAD": 99,
+    "incACC": 4,
+    "incMDD": 7,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Two-Handed Blunt Weapon",
+    "lowItemId": 1420000,
+    "highItemId": 1430000
+  }
+}

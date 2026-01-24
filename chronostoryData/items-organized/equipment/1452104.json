@@ -1,0 +1,55 @@
+{
+  "id": 1452104,
+  "description": {
+    "id": 1452104,
+    "name": "3rd Unwelcome Guest Bow",
+    "description": "",
+    "chineseItemName": "3rd不速之客弓"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 87,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 390000,
+    "reqSTR": 92,
+    "reqDEX": 239,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 87,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "WpSi"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACQAAAAlCAYAAAAqXEs9AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADdUlEQVR4nMWXi5GjMAyG5ZlrgJSQLYErAUqAEkgJUAKUsJSASwglLCWsS4hL8EmWH0BeexfIaYbEYECff8uy+AV7mjFH/KUjwUPZQwj96JFtgIxJ7D87M7OeHK+d3T0N/o54TPsBMYhXQeM5KSBsjzHUPGMLUokUQrTYLt09d1V6VSECyoCcMSA51ESCZqEOZW/nCtKKFByw/3BjUP7QrwPxyL0Kg+9oC/ot4VIpUBPOUooyfhXEesH7P2YDYoW7voW6yl8FstInTgVjitChOonO5fLuJpxnEFUhGP9g8hqQEN80LaQEAyy7j8bk6PHIh8ZJS9JcIlTff8bhAFzqDA7daNubLfuPhv8zcykLSKqeV1OFwVWQDCnwQvwuMlRTB3nILExdddhU2wCNKjbllEGRQg1JTcEhQWt0nEwIcerHoMrCauK3KWEbIBu03opMjlJ+HlEJp0LS9JJB2DGAj5+uz5wynJ8wHWyaqeu6ho5zz6nHOGmrDBqeDgk8hWoGQ6vqFK673HQLiKJUwG0zi5PZqlrZBFXVNOSUbXQw2sGcaYmHa7NEuQYy8MR4Vc1s/H3rNmUh2ClAjJyHMLeAnppwa9ucU/Y8i5+u6/xN5GRaZWHKN8MjmDWQ33/usdh+pRSmkR5E3sUOC2fB7j2c/ARmDeS8UnqX6zgyfqoIJijh7hH5dD3VUZ3js2m6D0TxkH3hiH97J4sRN03jYdZKLM//EWYNJAiCYCguaHPErSeM/AHM0l6AWQNZ63oO0nowmG1L6EqJbZrG/WHWQGa5pMuwJdDG+dQ2gJkDWZL1CvumnTENG+d9dTaCmQOJUI5K2WZFZl/yIQ5F6H8DzBwIIFZvKW6LtDtrGIYJiuIEXBlev3xjmAgUi/WMqgWsfqEhR5oKT3tdXT25AwwD8YvJcYEvrto6C1K5Lch/V0UnO8EwEL84JZhPhKnQB1XISeCxsMp9Teg9YTyQrfgHhCkopvHdBEUVHgGeqACvq8lCcFrYDcYDaarkSlTI1FWAKl3RbY2LqQl+UM9sAQTOERYwHLslV3n+szcWVn+xa78CpGEWsHmE8WUnvAvGAwVLYnOC6xp4d5groBu2awDfAwrfbDOFfCrS74SZAx1X170y7TthIhDmGvq+XgD9BxgPZB0dlnmHvijLd8N4IOWc+2nzaWB6NwzZH8C3GP6ljIwBAAAAAElFTkSuQmCCAN4BeyJub3RpY2UiOiJHZW5lcmF0ZWQgYnkgTWFwbGVTdG9yeS5JTyIsImNvbnRhaW5lciI6ImlvLTc0ZmJiY2M1ZDYtdjlxZ20iLCJnaXRIYXNoIjoiMzQ4NWMyNzQ4NjNmOGI4MDI3ZDlkZjY1NGIzMDcyNDU3MWNjMDIwNCIsInVybCI6Ii9hcGkvR01TLzI2My9pdGVtLzE0NTIxMDQvaWNvblJhdyIsImNyZWF0ZWRBdCI6IjIwMjYtMDEtMjRUMTE6MDM6MjEuOTE2ODE0WiIsIm1ldGEiOm51bGx9",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACQAAAAlCAYAAAAqXEs9AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD9klEQVR4nL2Xi3WrMAyGxTl3AXcEMgJ3BDKCGYGMACOEEcoI8QhhhHqEeoR4BF/Jss0j5HEbUvU4BQzo829ZFn/gneZcjr/UBDbjW5bZe49sA+Sc8P/ZmZv07PHaOdzT4u+ATb8PiEGiChbPSYHM9zhHh2c8gkIhRZYd8bgK99xU6VWFCKgEcsaA5NASCZqH+qh6P1dQ1KTgCfs/VgYVm30diEceVTjFjqOk3woutQGjcZYKlPFLEusF799NBsQKd/0Rmnr/KpCXXgQVnJOpw3QKnav53W06L2FUhWDig+I1oCz7pmkhJRhg3p07t0ePOTeLkyaKvUKovv8chwNwaUr46AZ/vNmy37X8v3SXSoKoe15NNQaXJBkK4IX4LUtU0yZ5yDxMU3d4aLYBGsx4qHQJsoAGREPBocBadCw0Qhz6Iakys4b4fUrYBsgHbTRZqkGpzxyVCCqItlcMwo4BYvx0fRmU4fyE6WDTTN00DXScew49xsmxLqHl6VDAU2gmMLSqDul6yE1rQBSlGaybm51MVtXCNNR125JTtiHA2ABzpiWerk0S5RLIwQPjVTWx4e/abcZDsFOAMXLuwqwBPbQsrG13LtjzJH66ros3kRO9yMKUb073YJZAcf+5xeL7jTGYRnrI9t3Y4eE82K2HxTMwS6DgldK7WsaRi1NFMEmJcE+219dTPaqTP5qm20AUD+UXjvhvdDIbcdu2EWapxPz8hzBLoIwgCIbigjZH3HrSyO/AzO0FmCWQt67nIG1ODrNtBV2l8Jim8f0wSyA3X9JV2hJo43xoG8BMgTzJcoV9085YpI3ztjobwUyBslSOKnUsZelfsss+ZOr/BZgpEMBYvRW4LdLubOF00iDlAbgyvH75xjAj0Fisl1QtYPULLTmyVHj66+bqyTfAMBC/mBxLfHF9bMokVdiC4nfV6ORNMAzELy4I5hNhavRBFbJIPB7WhK8J+06YCOQr/hPCSIppfDdBUYVHgAcqwJtaewhOC2+DiUCWKrkKFXJNnaCqUHR742JKw7KesfRnLOx2m8BEIAiOsIDh2K24youfvaxArMt73LWlrEBrC8Ng8RxgrNefsYd7mZ3etB9hqD7XXKP7FScQ4BOK/AAKIYYBz71o+Q9gLCz8ToGSTYapwSCM6hFDCGw5nmPeth0qIlAdgYXRjUevnK9dp2ZgLGvXgeaPmfEzl2Cs6UHjNYOqGPM/U/QM5AwofbNNvLAqOfJEZUgRg3HDyjx6sb1zvGyrQMs4yBHIeBiKGY0ryVpDu8mKzZPmOsg9yBUgzDX0fT2zXh1TnsENBdrDZkv7nsVVlj72vfEXZQUbJ71ngUxwHqctzq3+bRiyfzVTVOhrERrHAAAAAElFTkSuQmCCANwBeyJub3RpY2UiOiJHZW5lcmF0ZWQgYnkgTWFwbGVTdG9yeS5JTyIsImNvbnRhaW5lciI6ImlvLTc0ZmJiY2M1ZDYtcmZyZnQiLCJnaXRIYXNoIjoiMzQ4NWMyNzQ4NjNmOGI4MDI3ZDlkZjY1NGIzMDcyNDU3MWNjMDIwNCIsInVybCI6Ii9hcGkvR01TLzI2My9pdGVtLzE0NTIxMDQvaWNvbiIsImNyZWF0ZWRBdCI6IjIwMjYtMDEtMjNUMTc6MTQ6MzEuMzM1MDIxOVoiLCJtZXRhIjpudWxsfQ==",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incDEX": 3,
+    "incPAD": 89,
+    "incSpeed": 10,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Bow",
+    "lowItemId": 1450000,
+    "highItemId": 1460000
+  }
+}

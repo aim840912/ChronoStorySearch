@@ -2,7 +2,7 @@
   "id": 1322086,
   "description": {
     "id": 1322086,
-    "name": "1st不速之客單手鈍器",
+    "name": "1st Unwelcome Guest Hammer",
     "description": "",
     "chineseItemName": "1st不速之客單手鈍器"
   },
@@ -24,7 +24,7 @@
       "isEmpty": false
     },
     "slotMax": 0,
-    "price": 11000,
+    "price": 120000,
     "reqSTR": 0,
     "reqDEX": 0,
     "reqINT": 0,

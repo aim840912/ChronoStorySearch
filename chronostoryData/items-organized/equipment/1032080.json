@@ -2,7 +2,7 @@
   "id": 1032080,
   "description": {
     "id": 1032080,
-    "name": "1st不速之客耳環",
+    "name": "1st Unwelcome Guest Earrings",
     "description": "",
     "chineseItemName": "1st不速之客耳環"
   },
@@ -24,7 +24,7 @@
       "isEmpty": false
     },
     "slotMax": 0,
-    "price": 7000,
+    "price": 70000,
     "reqSTR": 0,
     "reqDEX": 0,
     "reqINT": 0,

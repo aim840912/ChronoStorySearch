@@ -1,0 +1,55 @@
+{
+  "id": 1092073,
+  "description": {
+    "id": 1092073,
+    "name": "Last Unwelcome Guest Warrior Shield",
+    "description": "",
+    "chineseItemName": "Last不速之客戰士盾牌"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 107,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 290000,
+    "reqSTR": 331,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 107,
+    "tuc": 7,
+    "vslots": [
+      "Si"
+    ],
+    "islots": [
+      "Si"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAkCAYAAAAHKVPcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEc0lEQVR4nJWYi5HqMAxF5RkaYEvIKyGUEEqAEqCE3RLYEqCEpQQoAZdAStiUkKfr+DqySYDVDJOPPzq68i8s5In1IpVeav0t9dfp7+qG61Prh/qNaee1XTtXfxYiAqAj8SJHJdmbTukoPE+AhTLTrumHACZBJiFKgKLzB4X6x0iXvHkH5AGiBFjeeulWjsVdVKAuIq37XBHcH2+opO39yj0FySAeUtD30urNaig+avmakbLcO2dBWhnTFNrdQ0FW7wFkMQeACADwT1W4XC6yXgf/lcxbVZajHdrfta9niiwiACVOAJU+Oeek1yj2+72wjA6oko2yGD9yPp/fAqESFSWeArher6njKWdlGfoQdcx2FmQihd3CqhBo9K7zwz06wa9tW7lFJ6yHOksZ62YgGu2vOvyYAPl9BKkWzCMHGm7QeLPZpDSw81QPkVrHucwJBPcIwIKgbyhsmy+sClOGTmatHqhmigCU0ua9l+VyOZYbNRYpustvKHRKWtd1aFQCJLWuuhw0yxFEnwuJWx1wl8/PzzA40U9VVUERvON4o43rBDo9j2ER4Hg8ZmkJdTZ1fl+0FbMGIKCnakq5Ynb5FgB6GHLp1mssVnu/XQ1qnOKMwXXXiL5nCrBa3gFfOu+66b0vg3D7dUoFADA4cT2dTuHq2nYAgeyfmu7DTuTrhDSkgasAPwRAKtAf2jIlTdPI9/f3EyUKAzkAAIWO0YHmM+wJSTUTHfYLqMZpTWNK5tIyCUEVGA0j+/r6soTZFQAYbKhjnWFG2DQgkLcgaBYAlkXycxivbpQXdezMgpKvbBYCecN0sgCAgoWBudqmuuFZxwUcInLIX05zjgu7BbyEgFHG6VH9+A5O4JyOcM8rgOZsFoLTkwBJBXSI2VCPuR2e66Qeo4ZjgnB2ZONqCqLXjp2/pmk1BXA4HGSlZ4ubH2XF4YVrP0EswCsbIVZreWXoGECYBVh6abvdLhuAiBqzi+sEjOokMOMvQIRdz1+PdbOZBWBe6QzrAQyOsvOG1uNhhgqWgQQzmxkgvFBNLeg3O3HnU6KfU8Q65gwo5ceaAOjyPXx49cFVFhBtaA81zqdhX3DzcxvSY+0ABCO1KyQjxTs7u1De61gZqLOZ5RcufjeIOVf0OvhcHMVc4TjQmA6AwLDDcm0ojTMiWUyBP3/bU1o6Y45qYHOCGgqBCDAbyg0HQHDOgwoBccW+sooAVCKoEKFVytA3u4IIAWJSjZ8fcdttmteh84lpVwLM2lIV2TR2x+3EHvmNGlWmhkg2AEsQC9BfBgS/XqXokwooa+psy6cKGYRRoyEI1aDVtzu+UfQI+C9TIjhBWvS9PVsGgNs9eswApr/AIkiLE2QC2W7DIcbFb051cqxUoV/9fcTFilHq6rWPieoIx3MH1JkDeIAoQGrmLn6DZqmyB9UYZQhe4vm7jx9CrwAmIQwIIkr/P/BbtRwzxUDzse4H68qojv/T/xMRpBOzX8cOTupgRxC8nxpo8fq4Zs/YQv5obgDZvBvlO/YfbxlFgd2Y/n8AAAAASUVORK5CYIIA3wF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi00a201OCIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTA5MjA3My9pY29uUmF3IiwiY3JlYXRlZEF0IjoiMjAyNi0wMS0yNFQxMTowNDo1MS41NjMwNTI5WiIsIm1ldGEiOm51bGx9",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAkCAYAAAAHKVPcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAExklEQVR4nJWYjbGqMBCFNzM0wC2BWwKUACVgCVqClqAlSAlSgpRgSpASpATeniQbkgh63844IAnZb89ufjSjDzYTFXwp+ZPzZ+LPoOz1o822fx28p/m9cav/JoQDwECkia5McggGFUfm+wqYaQveq2cbwCrIKkQKkAz+ptD8HmkuN38BeYNIAfLHTFOlpHlyCpRJpOUcK4L76wOd+H1dqY8gEcRbCuaZRr6pbPOV2xuJVNq1UiHISEuazHtP0xD1ewPJtgAQAQB+WYX7/U5NY/wXtG1F2o738P6Tx/qkSOYARGIPUPA3pRTNHMXhcCBpEweiUhhlUj/U9/2fQESJQiReAxiGwQ+85ixtwxjEjuW9EGQlhVMWqmBo+G7S9h6D4DOOIz2cE+mHPjktfSMQjvbFDn9WQF7vIEUmeZRCww1ebtvWp0EG9/0Qaeg4ltmD4B4BhCAYGwqHr2ehCmuGQTattFQbTQDyadNaU57nS3ugRuaju79Mo2LSsizNSymAV2vg5aDOFxD+nkg8csHdj8ejKU6MUxSFUQTPpN7ElnUCg/ZLWAJwvV6jtJg+bRnfJ+9SsAYgoI9qUrpiTvEWAHoYcqmaBovVQe8qq0bnZgyu+5r4uaQAq+UT8KnzaVrf+yIIdWh8KgCA4sS16zpzVeNoQSD7kdN93hOdOqTBFy4D3AQAqcB4eFdSUtc1XS6XD0okBnIAAAoDYwDOp9kTvGpBdNgvoJpMazFJyVZaViFEBYlGIjudTiFhdAUAig19QmeYEWEaEMifIMRCAFgUye28XNUiL/qEMwtKfrNNCOQN0ykEABTMFGa1833Nd64LOETkkD+d5lIX4RbwFQImMq5X9fszOIFzcYR7uQJoyzYhZHoKgFcBA2I2lEtu7ffSqydRw7GAyOyI6moNYuaBlR78tFoDOJ/PVPHZ4qEXWXF4kbVfQEKAb7ZAVA19MwwMIMwCLL1i+/0+KkBEjdkl6wRM1PFggT8DYXY9PVzLut0EkLyKM6wHMDiKzhvcTw4zomAaiLFgMwOEJlGTG+Z2T6rvPP2WIqFjmQGp/FgTAJ0+hw/NPmSVBcRo3ocafWf3BbU9tyE91g5ASKThCimR4lk4u9A+c61Y6mhm6Uy53w0UnCtmLj7lqlhWOCk0SQdAYNhhZW1ITWaEN5cC3V/CU5o/Yy5qYHOCGgyBCDAb0g0HQHAuBxUBxBX7SuUARAmjgoNmKc3YMhREMBCratxupHY7P6/N4CvTLgXYtJwVaetox6XwyL+pBlFUgClICDDfLYJuKh+9VwFttV3kOCEnVxHDj1t2PQTU4APekNtzkgERNcTKxxO/UfgI+BspYZwgLfyckVGtrQd4PJ3uClF2PHbOnofd2i8wGJONN+7PwtXc40K7HY4uPWvX8uADVb91wQq9+PPjFiuJ8qKUSJYLnJw7oA7nukfDgKZPv0VhXIIjz4eRBS9BjmdHFwEG4qWyRarCg6qTeeL+02Ad1Ff77h4ACAhzRCO7FiKao28QrgOKdITj0T1jsII/JTde2OlRagYAk3MCtRAl178ubZGf3C8rABoF9Mr2u7qLus7pM80q9eyafdiaIYp+lQ2Nk5klGDvD9DfL6D+NK6Gb7UFfnH/9O+ib/QP6XFlNnlV+hAAAAABJRU5ErkJgggDbAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby03NGZiYmNjNWQ2LWc4OGQ5IiwiZ2l0SGFzaCI6IjM0ODVjMjc0ODYzZjhiODAyN2Q5ZGY2NTRiMzA3MjQ1NzFjYzAyMDQiLCJ1cmwiOiIvYXBpL0dNUy8yNjMvaXRlbS8xMDkyMDczL2ljb24iLCJjcmVhdGVkQXQiOiIyMDI1LTEyLTI4VDA2OjI1OjE3LjUzNjg5NFoiLCJtZXRhIjpudWxsfQ==",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incSTR": 6,
+    "incACC": 3,
+    "incMMP": 77,
+    "incPDD": 28,
+    "incMDD": 7
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Armor",
+    "subCategory": "Shield",
+    "lowItemId": 1090000,
+    "highItemId": 1100000
+  }
+}

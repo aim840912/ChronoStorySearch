@@ -1,0 +1,56 @@
+{
+  "id": 1302144,
+  "description": {
+    "id": 1302144,
+    "name": "2nd Unwelcome Guest Sword",
+    "description": "",
+    "chineseItemName": "2nd不速之客單手劍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 67,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 240000,
+    "reqSTR": 201,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 67,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "WpSi"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAjCAYAAAAaLGNkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADfElEQVR4nMWXj5GqMBDGl5nXAJYQS9ASsISzBCzhKEFLgBK8Eh4lmBKgBCiBt5tkk00AD2/u3e0MCgGyv3z7J/oHfscmcZ79BsSEBvv9HtS1g/acTT8NYQDIuq4zIGQ/CeEB2n6Ey+kISino+/7HIBYB2ralof+aEz75ngHQx9cgpinHz1yMjJBlYwrwtxugULkHuF3OM4DXIYJzJSBGc0xT70Cm6/0B1fkIp/3OgJBp3VuYBOA1iABwcBAMQrNr99SjGyb4aDXQ936XeedrANshYgA6CjPeNAcoS23uZVkJhxKc+uY7z3MMwQnG0UYqx1CMXUfvUvgYfAPEMwA2BKDky44Xczn22jxKzouiMAoU9wn07Qju/Xa7Ek8AprKErGkI4AA1AuDp9KihF+lJShivBHLOaD6ioDBq6WYd4hMANoo9h4AAqqqCe31FtsyXJhl1x94mcZtU0grERgB64PjRxO8eFFQ3O0ZlSSVKQOUwQGNV6IHgBMiaEosAAwJUuBh6u8ZHTD0KKLYdhimvazi1H+ZaoVMEaNx8NLeWIHMIq4ISEB6ggdETkr2Vb3ByY6Mbp2NwYDxmcqcseT5OSu0eSSDmAHkcAoawGPeoaQKc8b7GMfompU48rU1iLucCQoMznTZVgiEUA9zLIrqZ2tmB1aKB0jmVQSfXF4PY3LBTCoi4Jfse8GYupQ4A784h5UceAZDjHPY4/qD+1SRJS2ZBejkklYgBRBhahC7wlhJQN+idAsrAXfDzbkJgAXY2D6J+INbSizU5iFgFv3SNz8qClqq843nlQFgRXsknjtNzr4QsSa9C65zwxCwvZX/uQBiSQ1LPVdAQKiE+fImGiohUAHFBgcjExDu3b3C4ZE4sALRu5SEPFjrmrCfw5MphSAC5cbEy79gvyK5xMHiL1+g0SsTUGMKX5IAlOeL7+QpA2iF5STdSdz0MT00q4W0RQBgnLM9OyKTCLTzC8qc/+1YhkjDoZYAFFQqRQgsqRGX4GYRKB58BaJdfBSfr3ALABhUYInKSNfrZ8yibcD4PFefBZhUChDCCoW1ox30+Alx0zs0nPjaqEEGsSAvR/dh56njWhF6B0LDww8SY/C0ZALj+U+fwqnMJwR1ttneYeZdrP7ThLzpOIXhV6VZuYQJAC1KBb3AeIKil2v0DIPyjGg2I3fdl4lkFvhGA7B9hdAaFwXREBAAAAABJRU5ErkJgggDfAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby03NGZiYmNjNWQ2LXJmcmZ0IiwiZ2l0SGFzaCI6IjM0ODVjMjc0ODYzZjhiODAyN2Q5ZGY2NTRiMzA3MjQ1NzFjYzAyMDQiLCJ1cmwiOiIvYXBpL0dNUy8yNjMvaXRlbS8xMzAyMTQ0L2ljb25SYXciLCJjcmVhdGVkQXQiOiIyMDI2LTAxLTI0VDExOjA1OjAyLjE2ODkwMDZaIiwibWV0YSI6bnVsbH0=",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAjCAYAAAAaLGNkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD3UlEQVR4nMWXj5GqMBDGl5lrIJQQS9ASsAQtAUs4S9ASoAQt4VGCKYGUYErg7SbZsAHkvDfz7nYGhQDZX779A3zA79gg9ovfgBjQYLPZgL700B2L4achPABZ3/cehOwnIRJAZx2c9jvQWoO19scgFgG6rqOh/5oTKfnWAOjn3yCGQeGvEiMOisJNAf70T6i0SgDX03EG8H2I0bkWEM5vw2AjyHC5PeB83MF+U3oQMmNsgJkAfA9iBNhGCAah2U286tE/B7h3Buh/UxbJ+SuA9yFyANoqP962W6hr488VRQ3bGqL6/l8phSHYg3MhUgpD4fqe7qXwMfgbEGsAbAhAyVfsTv7QWeMvJedVVXkFqtsA5rqDeH/3vhIrAENdQ9G2BLCFBgFwd3g0YEV6khLeK4EcC5qPKCiMRrp5DfEFABvFnkNAAOfzGW7NBdmKVJpk1B1tSOJuUkkvIN4EoAt29za/d6vhfA1jVJZUogRUP5/QBhUsEJwAeaXEIsATAc64GLq7wUt8PQoothLDpJoG9t3dH2t0igBtnI/mNhJkDhFU0AIiAbTgEiHZoT7APo65OE7bM4LxmM+duub5OClNvGQCMQdQeQgYImDcsqYJcMTzBsfon5Ta87QhibmcKxgbnO+0UyUYQjPAra6yk1M7RrBGNFDapzLo5fpykJAbYUoBkbfk1AMO/lDqAPAZHVJ+qAyAHCvY4PiD+lc7SVqyAGLlkFQiBxBh6BC6wlNaQF3BRgW0hzvh782HIACUIQ+yfiDWYsWaIkSuQlq6wWtlQUtVPnH/HEFYEV7JF46n+0kJWZJJhS464YlZXsp+FUEYkkPSzFUwMFZCvqUSHSsiUwHEAQWiEBOX8bnB4ZI5sQDQxZWPebDQMWc9gSfXEUMCyAcXK/OJ/YLskgeDH/EGnWaJODWGSCX5xJJ0eL96ATDtkLykK6n7OgyrJpVItgggjBOWZydkUuE6XsLyT1/7XkJMwmCWARZUqEQKLaiQleFXEHo6uAZgYn5VnKxzCwD0RlOWb0NkTorWrF2PsgnneedzPpmcs/hF44DeJ+mtxrnx/CqEMIKhx1DJ7bVt9QgYnR+i8+DA+VWzc0Nbp3BfLwDIPjGHWJRWXOrPHw5xxCnv0G8EYJ13aO3o3Dm3MBt3y1nbNpAnnEqrvAcVPEB1CG8zLq7WGoIAD8L+gnMF46vEwnLmRhDc0fLH+JIC9PVq0Dl9TEiAcdXS2XR/umUQXE7hIeZi31AqlC7lRVDAoDPj5U+hsEsrdCvHi4p8+JYanh8A4aVpfMLVdZCWxpS2+CFp8P0dG9D5rdJ71/4C4ztrYPERm/AAAAAASUVORK5CYIIA3AF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi1nODhkOSIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTMwMjE0NC9pY29uIiwiY3JlYXRlZEF0IjoiMjAyNS0xMi0yOFQwNjozMzo0OC4xMTEwMzg0WiIsIm1ldGEiOm51bGx9",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incSTR": 2,
+    "incPAD": 85,
+    "incACC": 2,
+    "incMDD": 7,
+    "attackSpeed": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "One-Handed Sword",
+    "lowItemId": 1300000,
+    "highItemId": 1310000
+  }
+}
