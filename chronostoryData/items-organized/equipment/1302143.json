@@ -2,7 +2,7 @@
   "id": 1302143,
   "description": {
     "id": 1302143,
-    "name": "1st不速之客單手劍",
+    "name": "1st Unwelcome Guest Sword",
     "description": "",
     "chineseItemName": "1st不速之客單手劍"
   },
@@ -24,7 +24,7 @@
       "isEmpty": false
     },
     "slotMax": 0,
-    "price": 11000,
+    "price": 100000,
     "reqSTR": 0,
     "reqDEX": 0,
     "reqINT": 0,
@@ -50,5 +50,17 @@
     "subCategory": "One-Handed Sword",
     "lowItemId": 1300000,
     "highItemId": 1310000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPAD": {
+      "base": 65,
+      "min": 63,
+      "max": 67
+    }
   }
 }

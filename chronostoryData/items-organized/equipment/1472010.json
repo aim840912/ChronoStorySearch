@@ -51,5 +51,22 @@
     "subCategory": "Claw",
     "lowItemId": 1470000,
     "highItemId": 1480000
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incPAD": {
+      "base": 18,
+      "min": 17,
+      "max": 20
+    },
+    "incPDD": {
+      "base": 2,
+      "min": 0,
+      "max": 17
+    }
   }
 }

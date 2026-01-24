@@ -21,7 +21,8 @@ import type {
   GachaMachine,
   ExtendedUniqueItem,
   SearchTypeFilter,
-  MobInfo
+  MobInfo,
+  ItemIndexItem
 } from '@/types'
 import { matchesAllKeywords } from '@/lib/search-utils'
 import {
@@ -55,6 +56,7 @@ interface UseFilterLogicParams {
   mobLevelMap: Map<number, number | null>
   mobInfoMap: Map<number, MobInfo>
   gachaMachines: GachaMachine[]
+  itemIndexMap?: Map<number, ItemIndexItem>  // 物品索引（補充沒有掉落的物品）
   initialRandomGachaItems: Array<{
     itemId: number
     name: string
@@ -79,6 +81,7 @@ export function useFilterLogic({
   mobLevelMap,
   mobInfoMap,
   gachaMachines,
+  itemIndexMap,
   initialRandomGachaItems,
 }: UseFilterLogicParams) {
   // 使用最愛篩選 Hook
@@ -245,6 +248,42 @@ export function useFilterLogic({
       addRandomGachaItems(itemMap, initialRandomGachaItems)
     }
 
+    // 2.5. 補充 item-index 中沒有掉落的物品（如 Unwelcome Guest 武器）
+    // 只在有搜尋詞且不是只搜尋怪物時補充
+    if (debouncedSearchTerm.trim() !== '' && searchType !== 'monster' && itemIndexMap) {
+      const trimmedSearch = debouncedSearchTerm.trim()
+      const isIdSearch = /^\d+$/.test(trimmedSearch)
+
+      itemIndexMap.forEach((indexItem) => {
+        // 如果物品已在 itemMap 中，跳過
+        if (itemMap.has(indexItem.itemId)) return
+
+        // 檢查是否匹配搜尋條件
+        let matches = false
+        if (isIdSearch) {
+          // ID 搜尋
+          matches = indexItem.itemId.toString() === trimmedSearch
+        } else {
+          // 名稱搜尋
+          matches = matchesAllKeywords(indexItem.itemName, debouncedSearchTerm) ||
+                   (indexItem.chineseItemName !== null && matchesAllKeywords(indexItem.chineseItemName, debouncedSearchTerm))
+        }
+
+        if (matches) {
+          itemMap.set(indexItem.itemId, {
+            itemId: indexItem.itemId,
+            itemName: indexItem.itemName,
+            chineseItemName: indexItem.chineseItemName,
+            monsterCount: 0,  // 沒有怪物掉落
+            source: {
+              fromDrops: false,
+              fromGacha: false,  // 也不是轉蛋物品
+            }
+          })
+        }
+      })
+    }
+
     // 3. 應用篩選
     let items = applyItemFilters(
       Array.from(itemMap.values()),
@@ -258,7 +297,7 @@ export function useFilterLogic({
     items = sortItemsByLevel(items, itemAttributesMap, gachaMachines)
 
     return items
-  }, [filterMode, filteredDrops, gachaMachines, debouncedSearchTerm, searchType, advancedFilter, itemAttributesMap, initialRandomGachaItems])
+  }, [filterMode, filteredDrops, gachaMachines, debouncedSearchTerm, searchType, advancedFilter, itemAttributesMap, itemIndexMap, initialRandomGachaItems])
 
   // 使用顯示策略 Hook
   const { hasItemMatch, shouldShowItems, shouldShowMonsters } = useDisplayStrategy({
@@ -268,6 +307,7 @@ export function useFilterLogic({
     advancedFilter,
     filteredDrops,
     gachaMachines,
+    itemIndexMap,
   })
 
   // 建立混合卡片資料（怪物 + 物品按等級排序）

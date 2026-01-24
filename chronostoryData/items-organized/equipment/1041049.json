@@ -48,5 +48,17 @@
     "subCategory": "Top",
     "lowItemId": 1040000,
     "highItemId": 1050000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 26,
+      "min": 11,
+      "max": 41
+    }
   }
 }

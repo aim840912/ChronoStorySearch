@@ -1,0 +1,78 @@
+{
+  "id": 1432078,
+  "description": {
+    "id": 1432078,
+    "name": "2nd Unwelcome Guest Spear",
+    "description": "",
+    "chineseItemName": "2nd不速之客槍"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 67,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 245000,
+    "reqSTR": 211,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 67,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "WpSi"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAkCAYAAAAD3IPhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACxElEQVR4nMWWjXGDMAyF5bsuQEaAEZwRyAjJCGQEGAFGCCPACGWEeAQ8Ah7BlfwDJG165Seu7lw7boq/vifJfEDo0DrCn9Oo6xKy7IJrFRZmAonN3HUZKOBuT4VWxoPYIWQ6248+RmLG1FsxHlXhUNWZzlNgVedhIIwyFsQrwt08j0AwP4FUdTrkD0wzm8KBcA8SmY+P8T6YFyC9A1Eg5t+mfHXVtGfyPvaRbyAxLiWCJJUAa9UU+yrzWDGTKgjSYOXET3l7qEZ11H4w39WYhgM545IUiY1FLvKsw8ZHfyNhl6b3yhYhYuhEXDqQFs+7oBJ9DnAkRQgEkC5NDQilyl42TSCM5X6z1D3kI0hnABJUCucWrBrCzbvZZFVhrKEPTdPA+XwGKSUkLIFiJLvZmXPhIISDUL6AtsHYa6SnZd/3EMc2QYUQBuZ+v0MURZAkCUDKSQGJs1djtMc/bhsMYwMpQYdXVQVK2eemaYoCcLPvAXGDrJnbop5bymabCIKCDvZBa4KhoZQct2FS5MfetgVGY7jnMog+NQz4QsBOV5BdPUKRXfjNE1g15G8NdpMydBjlBIUSeI5TyYcDOcILW/aC0WVZWgg1PT/Kb6BqSo3agxzML/543ayBMfYQBOULlXHT3OBySWB2InMQix68ShkCQYs6zuOoKAqeZRYoimI4nU6wNpbCaOwnyCE4AqVFYXOEZmOLjWVyrIAxZUONDQ/lVK4EQMk7K+nVEEtgNDU2+s/RErNB6xnIZoglMCZRqZMSBOXLHpashqE7xjYwgVVz3R3irzCmjEOA/AajHUkwkGcY7Rf+dSAkyBzGVEzXdQaABiVq27b+Vn47yAhDZUoV4iGqqjDXf23umTAgHkYPwwDH49FUDb0rt9ckOIiHGfvG4VKDQkVAyOAgIwxZk+cZ2lODaPftqkthGFqkZ3v/AkLxBT0Wlah0AkJmAAAAAElFTkSuQmCCAN8BeyJub3RpY2UiOiJHZW5lcmF0ZWQgYnkgTWFwbGVTdG9yeS5JTyIsImNvbnRhaW5lciI6ImlvLTc0ZmJiY2M1ZDYtbDU4NnIiLCJnaXRIYXNoIjoiMzQ4NWMyNzQ4NjNmOGI4MDI3ZDlkZjY1NGIzMDcyNDU3MWNjMDIwNCIsInVybCI6Ii9hcGkvR01TLzI2My9pdGVtLzE0MzIwNzgvaWNvblJhdyIsImNyZWF0ZWRBdCI6IjIwMjYtMDEtMjRUMTE6MDU6MzguMzgzMjg2M1oiLCJtZXRhIjpudWxsfQ==",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAkCAYAAAAD3IPhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADAElEQVR4nL2Yi5WqMBCGJ+dsA7EEKCGWgCVoCVgClCAlLCVACZcSTAlQgikhdyYPXiIriMw52YToJp//PBL9gb1Na45/u5bnN4jjC47VvjAdSGD6qopBgXBzam9lPIhtsol68/ynJWZMfRVjqIqALI91EgHLKg8D+yhjQbwiwvV92wlmCiTLo0cyYOq5aT8Q4UG4eRza92BegNQORIHsv5vi1WXTlsE7rCNPIAEOGwQJMwnWVZ1tq8wwYzpVEKTAzAlGcXvIWnXUdjDPanTNgZxxSIoExkXOkrjCwkf/08AmRe+VW6QMoJLBzYGUuN8FlagTgCMpQiCAdFFkQChUtnJTB8JY4idvuoakBakMQIhKYV+CVUO6fjM3WVUYK+ihKAo4n8/QNA2ELIS0Jfu1vRDSQUgHoXwCfQZjj5GahnVdQxDYAJVSGpj7/Q6ccwjDECASpECDvVejdY9f7jMYxh6kBG2eZRkoZdeNoggFEGbeA+IEuabvFjUuKR+7iSDIaGNvNCYYako17TR0ikzWtk9gNJpblwH/p+GBFwJ2ukJT5S0UuQvfeQKrRjNXYD9ShjajmCBTEvdxKnlzIEd44ZatYPTtdrMQqlufJ7+gcgqN3IMczAtvHjdrYIx7CILihdK4KH7hcgmhtyNzEIsWXqUMgaCLKiECnqapiGMLxHkAp9MJ1tpSGI31BDmkQKAoTW2MUG/cYm2ZHCtgTNpQYcNNBaUrAVDw9lJ6NcQSGE2FjT45usRM0LgH8jHEEhgTqFRJCYLiZQuXrIahM8YWMIlZc90c4l0Yk8Z7gMzBaEcyB8JX7Pd2BdZ+4K8DIxC8B7SXWD7ql4CoXpuEMRlTVZUBoEaBWpalP5Wpkvkv6GOIKaBXCniI7j4zhqE0pQzxEFmWmuM/N+cMXBxIf+PNXeRh9OPxgOPxaLKG7srlNfQgJ7fxeKG5hdXMeNyeYNq6cbjkoFARkOb5AH+7Ywp0ClbNvDaEIdckSYzuyUGWg6r63Z9JJmAYukj35r5WR/6y/yuhsDCCpYohAAAAAElFTkSuQmCCANsBeyJub3RpY2UiOiJHZW5lcmF0ZWQgYnkgTWFwbGVTdG9yeS5JTyIsImNvbnRhaW5lciI6ImlvLTc0ZmJiY2M1ZDYtbDU4NnIiLCJnaXRIYXNoIjoiMzQ4NWMyNzQ4NjNmOGI4MDI3ZDlkZjY1NGIzMDcyNDU3MWNjMDIwNCIsInVybCI6Ii9hcGkvR01TLzI2My9pdGVtLzE0MzIwNzgvaWNvbiIsImNyZWF0ZWRBdCI6IjIwMjYtMDEtMTNUMDg6MDQ6NDcuODY1Mzg0WiIsIm1ldGEiOm51bGx9",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incSTR": 2,
+    "incPAD": 80,
+    "incACC": 2,
+    "incMDD": 7,
+    "attackSpeed": 6
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Spear",
+    "lowItemId": 1430000,
+    "highItemId": 1440000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incPAD": {
+      "base": 80,
+      "min": 77,
+      "max": 83
+    },
+    "incACC": {
+      "base": 2,
+      "min": 0,
+      "max": 9
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 41
+    }
+  }
+}

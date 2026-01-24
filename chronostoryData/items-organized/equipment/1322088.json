@@ -1,0 +1,78 @@
+{
+  "id": 1322088,
+  "description": {
+    "id": 1322088,
+    "name": "3rd Unwelcome Guest Hammer",
+    "description": "",
+    "chineseItemName": "3rd不速之客單手鈍器"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 87,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 380000,
+    "reqSTR": 251,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 87,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "WpSi"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "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",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "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",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incSTR": 3,
+    "incPAD": 91,
+    "incACC": 3,
+    "incMDD": 7,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "One-Handed Blunt Weapon",
+    "lowItemId": 1320000,
+    "highItemId": 1330000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 3,
+      "min": 0,
+      "max": 12
+    },
+    "incPAD": {
+      "base": 91,
+      "min": 87,
+      "max": 95
+    },
+    "incACC": {
+      "base": 3,
+      "min": 0,
+      "max": 12
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 51
+    }
+  }
+}

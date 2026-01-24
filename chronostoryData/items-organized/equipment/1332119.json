@@ -1,0 +1,72 @@
+{
+  "id": 1332119,
+  "description": {
+    "id": 1332119,
+    "name": "Last Unwelcome Guest Dagger (LUK)",
+    "description": "",
+    "chineseItemName": "Last不速之客短劍(LUK)"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 107,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 435000,
+    "reqSTR": 0,
+    "reqDEX": 147,
+    "reqINT": 0,
+    "reqLUK": 264,
+    "reqJob": 0,
+    "reqLevelEquip": 107,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "WpSi"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAfCAYAAABtYXSPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADBUlEQVR4nMWWgXHyMAyFlbsuEEaAEcIIYQQYwR0hjEBGwCOUEcIIMEIZAY+QX5Itx04cSGj5++7cGttEn6Vnhw/4O7W9z9lfwbRVVcHhcIAsy4D6dV2374ShnWdjkxgcrtergPDYu2DaR3NlWXLnfD7D7XbzE++AacPdpkBCgEAveube5rDIzBgIpb8/Tn8IhLIhWi6XAsblnAdDEP1+B9WiYL/fJyFIBEJ9gjXGRCDTYTqIPBilvkEEfFyXpTArtHMKKtnI89yDQMLcczKT+6Z1A0pteNQ4XIRarVYMEKooCoYhEF4+AjINxmYlBrFolPsbZIsj+aQPIn7YbrceZsS4E2ESIGWl4FxrKk1FS8gDp9OJAxFAaFASzdG4tP78NJgESIsgGYHsP70pCUJ2zIG+0UMUj7yj1zwuGXMgoxdhGqYDsXIgrBGQUC0uzXThQZqm4Wv/EUgaJjy+NiMXAlmjUy/EdzhCP9F5vbeeUFi5VTaIOAUkDSMQXfMiIJ8hpx22E8ihAlBt9ybQCMGlubcLvI+esfRgRnyydqFocAPDi1fhGhOQa/IVCbOIV8AKJuoDL62cL60HPpFBCniJk8VwoWu+6KtMyPdQ6pXxAIYUg0Q+KbA1sOSgBJLJrp3sOovayHwHYlv6PZaA6SoQgZC2btcbF8iXqFJnDlLrLX2kg3uqT88d+hSmkwcxcMUPBQchymOYEQsS6SaQSu2gK82srAhM8uSAG4giK6Xx8Qah+fYtKk4MQudwsRfiV+SVGSAxDBr2uyqiyU19xpNSphjhiOMKu7vhM03QZknKxAGWbNf4h5FGoDIG4iAKV2ssUOn6zrjrV0EEZlCiPIRSqt7VtiwcBEtEvtLuQI+CUInk2pgFo/Xx7kqUD7NjCIh7DkQgSD0Q8CA8mb1wzzgIG/kKi9pnZQ+yWwT2wUPFIGauaZMwcpwZJISQQPLLLla85gcgEQzJpZxAbpA+FaG3TPT/hyACww9xGfkMAAQo1DDgL0AMYIIyzH6n/C6MNWEIAv8bhPQPctmoAsJtabsAAAAASUVORK5CYIIA3wF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi05dzg4ZyIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTMzMjExOS9pY29uUmF3IiwiY3JlYXRlZEF0IjoiMjAyNi0wMS0yNFQxMTowMzowNi43MzY4NDk5WiIsIm1ldGEiOm51bGx9",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAfCAYAAABtYXSPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADbElEQVR4nMWWi3HDIAyG5bsu4IyQjOCM4IyQjEBHcEaIRwgj1CMkI8Qj1COUEVz9Agz4kTq961V3tBgI+vRA8Eb/J/3oO/svmL6qKrpcLpRlGaFf13X/lzCwPFuaZOXUtq0HkbG/gumfzZVlKZ37/U5d1w0TfwHTx9bOgcQAkfwyZ776nDaZWQKB+8fj+AMQeMPLdrv1YBLO12AAMe4HqJ6FzufzLAQEIOgD1hiTgKyHCRB5NIq+YQTeLngp9gosh1LvjTzPBxCaSe5XPJMPTesbKXWQUeNwGWq32wlALEVRCAxAZPkCyDoY65UUxKLB9x1lmyvyZAzi8+F4PA4wC4m7EmYGpKwU3WuN0FRYghxomkYUASBOUAjmMO7beH4dzAxIzyAZQM7vQ1ICwlssij45h6APuaP3Mu495kAWC+E8TACx4kBEFkBi6XlpposB5Ha7Sdl/BjIPEx9f65EHQPacqQ/wXa40dnRen21OKI7cLptoXAMyD+MhQhsEQIOHnJy4NeQPFZHqw02gGUJC89VvuB79xDKCWciTvVOFwQNNC6/iNSYi18grCHuRS8COVsobF61citaTPPGDUPhInSVwcdZ84KdCKHVo7sp4AgNJQZI8KbjdaCtKAZJ5q53YdRb15ucDiG3z99gMTIhAAgI5OqsPTtEQokrdRUmtj/jEwW3q5ucM/REmyABiqOWPQpSA8hp7xIIk0nlIpU4UQvOSVzzM7MkhN5BoVkrz9oahpfoWlTiGoXN62IL4keTKCyApDCfsZ1Ukk4f6zielnGOkK48r7p6me5qovSQ+TKJgK+maPow0A5UpkChRvFpzgErXd4m7/y2Ih5mEKI+hlKpPtQ2LKOEQIa+0O9CLIAiRLxsvwWh9/XIhyqfeMQCSngPxEBABOTKIe6gQ/u13tp9lv6gzDsJqbmlTD145D9Yy8KA8lqI4UHvPBaLruBa0vFWBvgWLjVoL44+zgADCPlKN2zDn6/fdWe6fbPbZ1mh+RRkj48atR8OzIcCkx30BLLmbXOzP1kK2DFaKhcgpB4Vm3L7GQZEJEF7p9GnhITrXJkBvftB55F02wcOo5QrTdrA2QFgJyR5DUeKFcc1aeR34hShWNu7WIwDqEo/6TqrIJInxrD9uCzD2WIYNgvtpyJmp5AubmiffTz30DYHGBDGi6ni2AAAAAElFTkSuQmCCANwBeyJub3RpY2UiOiJHZW5lcmF0ZWQgYnkgTWFwbGVTdG9yeS5JTyIsImNvbnRhaW5lciI6ImlvLTc0ZmJiY2M1ZDYtNW13c3oiLCJnaXRIYXNoIjoiMzQ4NWMyNzQ4NjNmOGI4MDI3ZDlkZjY1NGIzMDcyNDU3MWNjMDIwNCIsInVybCI6Ii9hcGkvR01TLzI2My9pdGVtLzEzMzIxMTkvaWNvbiIsImNyZWF0ZWRBdCI6IjIwMjUtMTItMjlUMDE6MjU6MzMuODUzNTkwMVoiLCJtZXRhIjpudWxsfQ==",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incLUK": 4,
+    "incPAD": 97,
+    "incEVA": 4,
+    "attackSpeed": 4
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Dagger",
+    "lowItemId": 1330000,
+    "highItemId": 1340000
+  },
+  "randomStats": {
+    "incLUK": {
+      "base": 4,
+      "min": 0,
+      "max": 15
+    },
+    "incPAD": {
+      "base": 97,
+      "min": 92,
+      "max": 102
+    },
+    "incEVA": {
+      "base": 4,
+      "min": 0,
+      "max": 15
+    }
+  }
+}

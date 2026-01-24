@@ -1,0 +1,77 @@
+{
+  "id": 1332123,
+  "description": {
+    "id": 1332123,
+    "name": "3rd Unwelcome Guest Dagger (STR)",
+    "description": "",
+    "chineseItemName": "3rd不速之客短劍(STR)"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 87,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 320000,
+    "reqSTR": 64,
+    "reqDEX": 127,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 87,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "WpSi"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAfCAYAAABtYXSPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADIElEQVR4nMWWjZGyMBCGNzPXQCwBS4ASsAQsQUvgSjhKkBKkBC1BSjhKMCXw7W5+3EhwRO++2xkUEmQf3n038QP+Lsa7a/VXMOM4Vvh1BKUU1HUNTdOMvwlDb67mJpXqkGgLBKVUw2O/BTM+mivLMgBdjreJ34AZ7dt2syDDMKTmXvPMqEErAyYNQqJsJ+P0QSDn8zkMkiqFvZXLuQiGIO7PBVQKJEBQEAipZoYOVusY5GkYAaHFMJ0b59KUSvzmm70Oaly/IYBAwtxLlNH+6A2ccg2bGxJcSZW+U5BXVfSj67Vk/xAIxRzIUzBOlQiEJwyQ9oMCfRjH6wTE+4EqVyL5gD8stvAwHsKkQPKygv7c0avVfM9YMkiHlcgrmHRR33XwVQODlqWJDPw0TBKESoErZsEQVUjWueczyDdKQdd9D9AWPO4VcyCzC2ESRoDYhA6EYg4k+v0OM7a5ALHL/iOQJIxsX7CKXBikQL9eTnAhCFEKSpWhOQcUomrxtrWaZHwGJAnjIcRxCwTyCoXY7qFft7eX2dU3iLaxe5CGlUo2/wOYOZ+ENtA4vJm2RE4Axth5jL61Gx+piI20hifjA1NpWrQe+cSOaru0yZ2NguDkXnM8oHEbcOvQE3oIGPq4AxE+wUQ5GvF0tEkRpFdx6YOfKE52XoDwMbOPJWAswhSEotpZZxIIA+0tgG1e01v/ooMz7KyWnArvhPRMAKH8GXVmhowaTw51UMSBxOHKhIqQobwKi1TxMOnOYbwMU1OnlD4ZXRiE5pbJcztOyuQXXhCP0itLQCIYMmx2idu236ywU74miAxywC1qV3Jr34URx6LwZbL9kluLREDtJ+Tu/4hIZkFarBjuVXTujFu8CuJhJiUivxgHhQmaflv4lYxLxAZvnXVmQKhEftlYBIMJDtqVKHPqCDpDQHQSQBwEj8Ug4EH4+5V1xkNQEIgpFD8Fk3z6tyVgn1zGHYhZatokjG9nApEQPlH4ZxdHdM87IBEMhZOcQAZId4X0llxP3gbxMPwQp8heAHggGZOEPwExgRFlWLyn/CiMM6EEgf8NQvEPpZ2XU4N/zNMAAAAASUVORK5CYIIA3gF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi1yZnJmdCIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTMzMjEyMy9pY29uUmF3IiwiY3JlYXRlZEF0IjoiMjAyNi0wMS0yNFQxMTowNToxNi43NDMyMTdaIiwibWV0YSI6bnVsbH0=",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAfCAYAAABtYXSPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADd0lEQVR4nMWXjZGyMBCGNzPXQK4ELAFKwBKwBC2BK+EoQUqQErQEKeEowZTAt282wQCBD+/m5nYGDSGwD+/+RN/o76yfnKu/gun7vuCvCymlqCxLqqqq/00YvLlauqhUw0QHApRSlZ37LZh+7Vqe5wPQ/fK88BswvbxtswjSdV3s2vdypteklSETB4Eoh9k8PgByu92GSaiSyVIbzpdgADEdB1AxkAECBhCoZrqG3ndjkM0wAYQOpjE2LktjKtk335/0oMbjiwYQiiT3K8pof7SGrqmm/ROJHlClbRSlRTG66fHIbf4ABLYEsgnGqTICsRcMQftOkT73/WMG4vMBkcuZvOMbswOt2ipMDCTNC2pvDV6ttGv63II0HIm0oFkVtU1DnyVZ0Dw3owTeDBMFQSi4Y2YWohicNe75FuSLpcB52xLVmZ33ijmQxUYYhQlAxKEDgS2BjO4/ssc6DUCk7a+BRGHC8iVR5G5BMs7X+5XugAhCAVcJJ2fHQhQ1L9upmcctIFEYDxEcT2Mgr9BghxO1u/r5MsfyCVFXsgdpelfR4l+BWcqToQw0T+/nJZECwBi5ztbWsvFBRS6kHW20N3al0bTW8kRmtbS2cGeDAS7cay5nTtyKXB/aoEcAg48JSJAn7CjlRLxexCmDtGoc+iGfYFe5HoDYY2Efi8AIwhwEVhwlMwFigU4CIMVrWslfzuCEK6tGptJPLMyZAQT+E1RmwoyaB+dyUMSBjM2FiRVBQnkVXlLFw8Qrx+Il7BqVkntnODEMbUsmTWUeyqR32xAvYa68AjKCQcIm93HZtvt3rpTPGaIFOfMWdcxtaU/MBMdL5sMk9ZJKioyA6g9K3e+RwJmA1Bwx3qswdombfRfEw8xChHwxDoodVO0h853MhsgmeO1SZwEEIfJt4yUYdnDWLkSJUyegMwDCYABxEHbOgRjnFB87lyvqO33GQ8AAYjJln8JOPvzbAtg7Hxkn7M2QxqJOBEW0MZ6S/BdsgPHlDBBA4E07afLWJX+f3BO1f7JdYygxbjPw6+09XGFBZx6V+xLYaG9ykn904oRaceBhRIcAJoSaeDA0/zvil3QUFU5gJNaiyAmrOCS2s3UBDAVdeuoh/HbDac/auB24hWhWHhuKtDTT0w+nMIbma2Lj6RGHcWUpN5n53RTrzv5/wdzMyvmqQv8AGEfLDQYKD5MAAAAASUVORK5CYIIA3AF7Im5vdGljZSI6IkdlbmVyYXRlZCBieSBNYXBsZVN0b3J5LklPIiwiY29udGFpbmVyIjoiaW8tNzRmYmJjYzVkNi05dzg4ZyIsImdpdEhhc2giOiIzNDg1YzI3NDg2M2Y4YjgwMjdkOWRmNjU0YjMwNzI0NTcxY2MwMjA0IiwidXJsIjoiL2FwaS9HTVMvMjYzL2l0ZW0vMTMzMjEyMy9pY29uIiwiY3JlYXRlZEF0IjoiMjAyNi0wMS0yMVQyMzo1MzoxMy41MDE4MzIxWiIsIm1ldGEiOm51bGx9",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incINT": 3,
+    "incLUK": 89,
+    "incACC": 3,
+    "incMDD": 7
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "Dagger",
+    "lowItemId": 1330000,
+    "highItemId": 1340000
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 3,
+      "min": 0,
+      "max": 7
+    },
+    "incLUK": {
+      "base": 89,
+      "min": 85,
+      "max": 93
+    },
+    "incACC": {
+      "base": 3,
+      "min": 0,
+      "max": 12
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 51
+    }
+  }
+}

@@ -73,7 +73,9 @@ function scanR2DirectoryWithHash(r2Path, extension = '.png') {
     console.log(`🔍 掃描 R2 路徑: ${r2Path} (${extension})`)
 
     // 使用 rclone lsjson --hash 取得檔案清單和 hash
-    const command = `~/rclone lsjson ${r2Path} --hash`
+    // 支援 Windows/Unix: 優先使用 RCLONE_PATH 環境變數，否則使用 ~/rclone 或系統 PATH 中的 rclone
+    const rclonePath = process.env.RCLONE_PATH || (process.platform === 'win32' ? 'rclone' : '~/rclone')
+    const command = `${rclonePath} lsjson ${r2Path} --hash`
     const output = execSync(command, { encoding: 'utf-8' })
     const files = JSON.parse(output)
 
