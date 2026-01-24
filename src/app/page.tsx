@@ -103,6 +103,7 @@ export default function Home() {
     gachaMachines,
     merchantMaps,
     quizQuestions,
+    itemIndexMap,
     debouncedSearchTerm,
     searchType,
   })
@@ -132,6 +133,7 @@ export default function Home() {
     mobLevelMap,
     mobInfoMap,
     gachaMachines,
+    itemIndexMap,
     initialRandomGachaItems,
   })
 

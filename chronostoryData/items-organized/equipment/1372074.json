@@ -2,54 +2,83 @@
   "id": 1372074,
   "description": {
     "id": 1372074,
-    "name": "1st不速之客短杖",
+    "name": "1st Unwelcome Guest Wand",
     "description": "",
     "chineseItemName": "1st不速之客短杖"
   },
   "metaInfo": {
     "only": false,
     "cash": false,
-    "reqLevel": 43,
+    "reqLevel": 47,
     "mob": 0,
-    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEaUlEQVR4nMWXgXGrOhBFl5k0gEvAJYgScAm4BFwCLgFKMCWEEkwJpoSoBFQC/14hEYFj48z3e28zBAOS9mj3ahEf8sTycYx5bqPIrO6PbXijbpYdy0LyqV8kv7CPjecKRwbnZedukKpdAYxwbqSXXd1bEPFtAP0bqI/tJqIIYGbnvIotgMx3ApBVlFpGiZF8AWgLpueBXCV5WSQtHN3KDOFSAYhegJR4TitlyuwO9zoHhMsjjm6ddkaQfZ/CsFM+ySPhNYFSdLqWyB2ANP72TTeDZGUulcQOsscvJUM5ARm0wZNPUuSWS85sht4XH/WHMJwJw+K1QpredTogEtcyBlAiYuQl0zxc/3xKceXTz5RHG5GpkYyydQMQrEAKYvcwm4K1sAouewceu1TqAIY2InrRSvzensEwPRlmoQgUgtBOGP4Ct7zfcHAMmrpZ0ozFEtz71tPo9EQgWYy2AQO99EjViRMGUNYEs6FIqQgPJAFQ9EPNCUGWeZ1+R3VnU7clYA9UoHHpu9cYXGF2+gHQwgIQjd6x+BRqWdtmnQGQBlAtk5YLDJaHzwlyBxTYV6kshLc4KAs0HxXWoa3XAbWYyXeCOZ3e64jROcDRFSD+LC4KPim9H8sJvseflz7rU/aKgAHCKVTBuLO9uJofGmdEYeffIPunMM6nP6YX5ioFfd3a6KRocnPBu/yw5G3fWSOxHF1qnJ0phacwgVbYkDpJbG5tego4XzvbsgQQi6Lnu81dX1lNhOkckEKOVYdBDxjwGozkVc3r43p5O+Mkgrixae2jsgnjgJimzkFRPxdmpGsAVExATFPt2jNdTB1T6Jd5Ir4qW/O7kIaTDX29soXwUIRpktvtwusMIIUblQCpa+f1k1qgRmIAucWsA5A2jMivYOI4Ho0xEUBGUer8qVSFERuXjKKRsLjHWOb87yPUSD8BMTgsoN1PIC/BEIRnghilTgjLBe/+Y6HN57nbli0pNbDjwuqFUT0j5dSgXu9rnsIQZBgG2e12Yg4oa8Y0+mu4ID0WhA6cv5fM1YjKXdZcrSHQQxiC3OhMTxpTl0H6026s0z2h7BbSnE4j2s1FMBuGRrbtIfvTyKQIr68nXX2SDEBXrGFEihqS8eu72uxSKmVeVFtm7raeWzBKqQnIpWMPoAjuxor7zkzOh5O93xhto9X+7svkzh7BjATp+16G29XeoOOvHPu7JJ5Bqiv0mChpoKl32B0MtbIAgbPzPsWGBiBFPoNV5fTbittp6O0wNAtSlZPjFUh0xFdAdZPdidGo3wZyB+NXkE2FTBEofGo8SHlBIUOdHQYWXS3R21iWMFwh+3q5IAq/nek6linpcTK3G5cwQ8Xz/93e/AxDS5LEHpP/6atJawc5jqnhx6LDkwdl/R0wowdhIfMWRIr54IMpGqs37jth7PtHa21rC61tWw/wbW47IX/ICDPab/KmlqjRgJgr+vuU+SpMhgKmz2fZd8aulI5Z6Zu/DmJhKNK9E2p3tFH5JyC0/wCN5kJk/eXY1wAAAABJRU5ErkJggg==",
-    "icon": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEqElEQVR4nK2XAZGzMBCFl5kzQCVQCVQClUAlUAkgASSAhENCkdBIKBIaCfzvhYQLtAVu/tsbjgJJ9svuyxK+ZMXSYQh5boNAL+4PrX+jauYd80zSsV8gv7CvjecxjgTO887eIFW7ABjgXIuSQ6UMiLg2gP4N1Nd2E4kJoCfnvAoNgEx3PJBFlFpGiZHcAbQFo3ggV1GaZ1ELR/c8QbhiD6SfgeR4TstlzOwB9zoLhMsLjm6ZdkaQfVdh2Ckd5RHxmkAndLrlyB2Aevwdm24CSfJUSgktpMKvWJ75CKTRBk++SZEaLinYDL1rF/WPMJwJw+K0QhplO50RiVseAigS0bLLeh62fzqmuHTpZ8qDjchUSEbe2gEIliEFoX2YjMGaWQmXyoKHNpW9B0MbEL1gIX5nazBMT4JZxATyQWhXDF/DLe83HByDnuwsadpgCe796GmweiKQzEbbgIFeFFJ15YQBlDTebChSKsIBiQcUvKk5Psg8r+PvoOpM6rYE7IAyNM5d9wqDx5hd/wFoZh5Ij96huBT2srTNOgOgHkCVjFrOMFjqPyfIC5Bnjzw2EM5CryzQXFRYh7ZeB9RiIj8J5nSU0xGjc4ajG0DcWWwUXFKUG8sKXuHPSZ/1KdkjYIBwCqU37mQ7V/NH44wo7PQH5LgKY326Y3xhLlKgqtZE54Qmdxu8+s2SN30njYRysamxVlAKqzCeVtiQOolMbk16MjhfOtuyCBCzoue6TV33rCbCdBYoRo7jDoOeMeDNG8mpmteX5fK2xkl4cWPTykVlE8YCMU2dhaJ+amakawCUjUBMU2XbM11MHVPolnkkriobc7uQhpP1fe3ZQjgowjTR/V7zOgFIZkclwMm2c/o5GaBGQgDZxdx7IK0fkV/BhGE4aK0DgAwSx8V3HJcYsbHJyBrxi3uIZc7/LkKNqBGIwWEB7d6B7IIhCM8E0XF8RVhqvPsvWa+/i25btqTsgR1mRi+MaoGUU4P9cl+zCkOQ5/Mph8NB9BllTeumfzxrpMeA0IH1t8tsjSjtZcXV6gN9hCHInc76UWNx/RR1PQzV6Ugos4XU1+uAdlMRTJ7PRrbtI/tqZE4Ir6snXXWVBEA3rGFEihqS4fFTbQ4nKmVaVFumX7aeWzBxHI9ANh1HAAVwN5TcdyZSnK/mfqN7E632d18mL/YJZiCIUkqe95u5QcePFPu7KJxAyhv0GMXSQFN/YS8w1MoMBM6K4wkbGoBk6QRW5uNvI26roT+HoRmQMh8dL0CCC74CyrscroxG9WcgLzBuBZlUyBiBzKXGgeQ1Chnq7OOBfxDL8fhXLHMYrpBjNV8QmdvOdB3LlCic9O3WmkdKoZqFVO9ef6sNX9IURZE5Rv/jV1PfW8i6vug0zYzzrlNSFCgyOpZ9pr2zljdgPszgQFjInHmRuuBtFIGsN3RdFwFk3F9/dvzuPo9efl6cLzDm/UM/XEm0tjXvnbN1Nu4CFD67lZp2frL/TbAGOIMZzDd5U0nQ9ICYKvrJc7YcaG1gvfJ7ecxhEhSwvijk2GmzUjpmRTWBBfFn/i4K4QewNfiPE/miSI9WqN3FRCXwOv3vh8Cv7B/jPXJzcBZ0dgAAAABJRU5ErkJggg==",
-    "iconOrigin": {
-      "x": 1,
-      "y": 34,
-      "isEmpty": false
-    },
-    "iconRawOrigin": {
-      "x": 1,
-      "y": 34,
-      "isEmpty": false
-    },
     "slotMax": 0,
-    "price": 11000,
+    "price": 180000,
     "reqSTR": 0,
     "reqDEX": 0,
-    "reqINT": 0,
-    "reqLUK": 0,
-    "reqJob": 2,
-    "reqLevelEquip": 43,
+    "reqINT": 142,
+    "reqLUK": 49,
+    "reqJob": 0,
+    "reqLevelEquip": 47,
     "tuc": 7,
-    "incINT": 5,
-    "incPAD": 26,
-    "incMAD": 58,
-    "attack": 6,
-    "attackSpeed": 6,
     "vslots": [
-      "Wp"
+      "Wp",
+      "WpSi"
     ],
     "islots": [
       "Wp"
     ],
-    "setCompleteCount": 0
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEaUlEQVR4nMWXgXGrOhBFl5k0gEvAJYgScAm4BFwCLgFKMCWEEkwJpoSoBFQC/14hEYFj48z3e28zBAOS9mj3ahEf8sTycYx5bqPIrO6PbXijbpYdy0LyqV8kv7CPjecKRwbnZedukKpdAYxwbqSXXd1bEPFtAP0bqI/tJqIIYGbnvIotgMx3ApBVlFpGiZF8AWgLpueBXCV5WSQtHN3KDOFSAYhegJR4TitlyuwO9zoHhMsjjm6ddkaQfZ/CsFM+ySPhNYFSdLqWyB2ANP72TTeDZGUulcQOsscvJUM5ARm0wZNPUuSWS85sht4XH/WHMJwJw+K1QpredTogEtcyBlAiYuQl0zxc/3xKceXTz5RHG5GpkYyydQMQrEAKYvcwm4K1sAouewceu1TqAIY2InrRSvzensEwPRlmoQgUgtBOGP4Ct7zfcHAMmrpZ0ozFEtz71tPo9EQgWYy2AQO99EjViRMGUNYEs6FIqQgPJAFQ9EPNCUGWeZ1+R3VnU7clYA9UoHHpu9cYXGF2+gHQwgIQjd6x+BRqWdtmnQGQBlAtk5YLDJaHzwlyBxTYV6kshLc4KAs0HxXWoa3XAbWYyXeCOZ3e64jROcDRFSD+LC4KPim9H8sJvseflz7rU/aKgAHCKVTBuLO9uJofGmdEYeffIPunMM6nP6YX5ioFfd3a6KRocnPBu/yw5G3fWSOxHF1qnJ0phacwgVbYkDpJbG5tego4XzvbsgQQi6Lnu81dX1lNhOkckEKOVYdBDxjwGozkVc3r43p5O+Mkgrixae2jsgnjgJimzkFRPxdmpGsAVExATFPt2jNdTB1T6Jd5Ir4qW/O7kIaTDX29soXwUIRpktvtwusMIIUblQCpa+f1k1qgRmIAucWsA5A2jMivYOI4Ho0xEUBGUer8qVSFERuXjKKRsLjHWOb87yPUSD8BMTgsoN1PIC/BEIRnghilTgjLBe/+Y6HN57nbli0pNbDjwuqFUT0j5dSgXu9rnsIQZBgG2e12Yg4oa8Y0+mu4ID0WhA6cv5fM1YjKXdZcrSHQQxiC3OhMTxpTl0H6026s0z2h7BbSnE4j2s1FMBuGRrbtIfvTyKQIr68nXX2SDEBXrGFEihqS8eu72uxSKmVeVFtm7raeWzBKqQnIpWMPoAjuxor7zkzOh5O93xhto9X+7svkzh7BjATp+16G29XeoOOvHPu7JJ5Bqiv0mChpoKl32B0MtbIAgbPzPsWGBiBFPoNV5fTbittp6O0wNAtSlZPjFUh0xFdAdZPdidGo3wZyB+NXkE2FTBEofGo8SHlBIUOdHQYWXS3R21iWMFwh+3q5IAq/nek6linpcTK3G5cwQ8Xz/93e/AxDS5LEHpP/6atJawc5jqnhx6LDkwdl/R0wowdhIfMWRIr54IMpGqs37jth7PtHa21rC61tWw/wbW47IX/ICDPab/KmlqjRgJgr+vuU+SpMhgKmz2fZd8aulI5Z6Zu/DmJhKNK9E2p3tFH5JyC0/wCN5kJk/eXY1wAAAABJRU5ErkJgggDfAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby03NGZiYmNjNWQ2LXM4Y3R4IiwiZ2l0SGFzaCI6IjM0ODVjMjc0ODYzZjhiODAyN2Q5ZGY2NTRiMzA3MjQ1NzFjYzAyMDQiLCJ1cmwiOiIvYXBpL0dNUy8yNjMvaXRlbS8xMzcyMDc0L2ljb25SYXciLCJjcmVhdGVkQXQiOiIyMDI2LTAxLTI0VDExOjAzOjA4Ljk1ODIzMjlaIiwibWV0YSI6bnVsbH0=",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEqElEQVR4nK2XAZGzMBCFl5kzQCVQCVQClUAlUAkgASSAhENCkdBIKBIaCfzvhYQLtAVu/tsbjgJJ9svuyxK+ZMXSYQh5boNAL+4PrX+jauYd80zSsV8gv7CvjecxjgTO887eIFW7ABjgXIuSQ6UMiLg2gP4N1Nd2E4kJoCfnvAoNgEx3PJBFlFpGiZHcAbQFo3ggV1GaZ1ELR/c8QbhiD6SfgeR4TstlzOwB9zoLhMsLjm6ZdkaQfVdh2Ckd5RHxmkAndLrlyB2Aevwdm24CSfJUSgktpMKvWJ75CKTRBk++SZEaLinYDL1rF/WPMJwJw+K0QhplO50RiVseAigS0bLLeh62fzqmuHTpZ8qDjchUSEbe2gEIliEFoX2YjMGaWQmXyoKHNpW9B0MbEL1gIX5nazBMT4JZxATyQWhXDF/DLe83HByDnuwsadpgCe796GmweiKQzEbbgIFeFFJ15YQBlDTebChSKsIBiQcUvKk5Psg8r+PvoOpM6rYE7IAyNM5d9wqDx5hd/wFoZh5Ij96huBT2srTNOgOgHkCVjFrOMFjqPyfIC5Bnjzw2EM5CryzQXFRYh7ZeB9RiIj8J5nSU0xGjc4ajG0DcWWwUXFKUG8sKXuHPSZ/1KdkjYIBwCqU37mQ7V/NH44wo7PQH5LgKY326Y3xhLlKgqtZE54Qmdxu8+s2SN30njYRysamxVlAKqzCeVtiQOolMbk16MjhfOtuyCBCzoue6TV33rCbCdBYoRo7jDoOeMeDNG8mpmteX5fK2xkl4cWPTykVlE8YCMU2dhaJ+amakawCUjUBMU2XbM11MHVPolnkkriobc7uQhpP1fe3ZQjgowjTR/V7zOgFIZkclwMm2c/o5GaBGQgDZxdx7IK0fkV/BhGE4aK0DgAwSx8V3HJcYsbHJyBrxi3uIZc7/LkKNqBGIwWEB7d6B7IIhCM8E0XF8RVhqvPsvWa+/i25btqTsgR1mRi+MaoGUU4P9cl+zCkOQ5/Mph8NB9BllTeumfzxrpMeA0IH1t8tsjSjtZcXV6gN9hCHInc76UWNx/RR1PQzV6Ugos4XU1+uAdlMRTJ7PRrbtI/tqZE4Ir6snXXWVBEA3rGFEihqS4fFTbQ4nKmVaVFumX7aeWzBxHI9ANh1HAAVwN5TcdyZSnK/mfqN7E632d18mL/YJZiCIUkqe95u5QcePFPu7KJxAyhv0GMXSQFN/YS8w1MoMBM6K4wkbGoBk6QRW5uNvI26roT+HoRmQMh8dL0CCC74CyrscroxG9WcgLzBuBZlUyBiBzKXGgeQ1Chnq7OOBfxDL8fhXLHMYrpBjNV8QmdvOdB3LlCic9O3WmkdKoZqFVO9ef6sNX9IURZE5Rv/jV1PfW8i6vug0zYzzrlNSFCgyOpZ9pr2zljdgPszgQFjInHmRuuBtFIGsN3RdFwFk3F9/dvzuPo9efl6cLzDm/UM/XEm0tjXvnbN1Nu4CFD67lZp2frL/TbAGOIMZzDd5U0nQ9ICYKvrJc7YcaG1gvfJ7ecxhEhSwvijk2GmzUjpmRTWBBfFn/i4K4QewNfiPE/miSI9WqN3FRCXwOv3vh8Cv7B/jPXJzcBZ0dgAAAABJRU5ErkJgggDcAXsibm90aWNlIjoiR2VuZXJhdGVkIGJ5IE1hcGxlU3RvcnkuSU8iLCJjb250YWluZXIiOiJpby03NGZiYmNjNWQ2LTVtd3N6IiwiZ2l0SGFzaCI6IjM0ODVjMjc0ODYzZjhiODAyN2Q5ZGY2NTRiMzA3MjQ1NzFjYzAyMDQiLCJ1cmwiOiIvYXBpL0dNUy8yNjMvaXRlbS8xMzcyMDc0L2ljb24iLCJjcmVhdGVkQXQiOiIyMDI2LTAxLTEzVDA4OjA0OjQ3LjQwNjYyMDZaIiwibWV0YSI6bnVsbH0=",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incINT": 1,
+    "incPAD": 26,
+    "incMAD": 58,
+    "incMHP": 100,
+    "incMDD": 7,
+    "attackSpeed": 5
   },
   "typeInfo": {
     "overallCategory": "Equip",
-    "category": "One-Handed Weapon",
+    "category": "Weapon",
     "subCategory": "Wand",
     "lowItemId": 1370000,
     "highItemId": 1380000
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPAD": {
+      "base": 26,
+      "min": 24,
+      "max": 28
+    },
+    "incMAD": {
+      "base": 58,
+      "min": 56,
+      "max": 60
+    },
+    "incMHP": {
+      "base": 100,
+      "min": 77,
+      "max": 124
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 31
+    }
   }
 }

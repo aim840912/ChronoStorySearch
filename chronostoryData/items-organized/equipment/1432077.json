@@ -2,7 +2,7 @@
   "id": 1432077,
   "description": {
     "id": 1432077,
-    "name": "1st不速之客槍",
+    "name": "1st Unwelcome Guest Spear",
     "description": "",
     "chineseItemName": "1st不速之客槍"
   },
@@ -11,45 +11,68 @@
     "cash": false,
     "reqLevel": 47,
     "mob": 0,
-    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAkCAYAAAAD3IPhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC+klEQVR4nMWYjbHiIBSFLzPbAJZASsiWkFeCKUFLiCWYEh4lmBKkBCkhlCAlsOcC+fGt782qMcuMAUkMn+fce4n+ov/VQpA4KtL6k3a7moRw68MMEESejDniWGIseX5dmBBUBkkv66p8hgEzDNMK4d8MIvOiDFJSq3ehqUi0ZoChdZSZrEkgqZ+3lWDugbS6ujY3TDOb1gMpBxAZ396298F8A9JnEE92fjXHq08wSwbvFKhTsM5AFIYOIEVrKVk1tWWVuc2YSRWAnJA56kvcbtpRHb8czN9qTK8MssWQFVHRotyanUHh4884Gm1aFiTZYq0iY9Uxg3RYr4YSfUP0mxVhEAJdVUUQDpWlbJpAhGiGyWPoqRlBTAQooBT6jpIaNveL2ZRUEeLEb8L5TPi2REZjqqDDSPaZ+rK0GcJmCD8k0GswaRvpEwQWq3Zpvj2Qc47C6QhMXPKxx7mSFXDoBzVGe4bbvQYjxPV0OiE8LO07S17XcXqrJG0BYTCnlEzXliVbM7fFfy0pL9vUtm3sGWhoViFOypK2Hmu5cb25Indr2yswIYRrvu+G5DnQFaHCljjEy7g67MKVH5TUcD8V2NeU0Vg02+At1skqDS2D/KZvbFkKJpw4Y3gxL8dJ2Xwibjg09ACyiSf+cbt5BiaE/hwHen+gHWKj31ZUHAqarSgyxEM3ftomr7WppJT7zpRNqSKQROBuWv3sLR+GCagn1huDoiGrOmeQQbxEW1J7TI4nYEI8oLB5Y0uPhWsAQJh5Sj8N8QhM4MLG37zW8eEZYz8HeRniEZhY2BTigYE8CtkSljwNc+E9RvPeK6nollXjEZiUxgwCNYrOvA3kJ5gUsCuCfIUJ44AfB5SyACnXApnDxIwxxsQM4bpRIYU7jGvzvhi5C8NpygowCGdLiypqsQEerFsNZIAJ12tPdb2ny+VC/KxsPjargwwwRJ0m6R1tak0eGx95vzrIBAMVGq6oDvZ068XIPRghWh1mc+8Fuf2dJfGAdox/o8GPPyHQjRyhR03WAAAAAElFTkSuQmCC",
-    "icon": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAkCAYAAAAD3IPhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADNklEQVR4nMWYi7GqMBCGNzO3gVBCKCGnBCxBStASsAQp4aQEKMGUYEqAEkgJubtJeMhB70HRmxlIDJj9+PcR9A/8r+Ycx7MApb7hcMiBsfbzMD0EgAWtz3iWOOY0/1kY50QECYdps3iFACMM0TJm3wzCo1ECkVCqgysyYKXuYeAzyoyuCSChn7YPwSyBlCrrihumiZs+ByJ7EO4/3rb3wdwBaSKIBTO9m+LVBpgtg3cM1DFYJyAChy2CpKWB4KqxbavMbcaMqiBIhZkjZnGblIM6djuYn2qMRwTZ45AUEd5FsRUHjYWPvtPC4KZtQYJbjBGgjThHkBrt5ahEUwB8kSIEAkiXZR6EQmUrN40gjBX95Nk1UAwg2gOkqBT2NQQ1TOw3c1NQhbGKPrjLBfBpAbTCqRROA9l36KU0EcJECNsn0GswYRtpAgQayw5hvjxB27bgqjNi4i27I16TpECLfa/G4J5+uddgGOuqqsLwMHCsDViV++m94LBHCI1zQvBwr5Tkmqlb7LykvOymsix9T0B9MwLjRErYW7TVDvamiizWtldgnHNdXDcBfnHQYaiQS1qMl8E6ugvv3EFQo31UYF9TRqHR6AZr0E5UqW8R5AvuuGUrGFdRxpAxy4dJXnxj3FBoqB4k8Rd+ud08A+Ncc/EDdTzBAWOj2WeQnlKYWGQRYtXCT7vJKqUzzvmx1rKQwgNxDNykVM8uuRrGYT0xVmssGjzLYwZpjBfvltDWyfEEjPMnLGxWG2nRcI4AKMw0pZ+GWAPjqLDRk+fKvzzj2E5BXoZYA+MLm8B4ICCLhWwLlzwNc6U9RtHeyyGtt1VjDUxIYwJBNdJavw3kEUwI2McgHNa3X1dgNwzodYALgyByApLC+EOHz/o1IHZyLML4jNFa+wyhupFZI2sc59rHCG108g7EEtA9BXqI8X1mDkNpSgoQCGVLiVXU4AZ4Mj5r8ggyNby5i3oY13UN5PkRrtcr0Luy3iU9yC4ani/0aGH7YDw/fsAA1Aq4bSHJFVjc+MD6+xL4tzuWQJdg7YNrMxhUoaCK2qJ7buvIe/8mWYBhrFRuMve2OuLb7e8sji9oZ/83Gj74X3Pmp8bKVRowAAAAAElFTkSuQmCC",
-    "iconOrigin": {
-      "x": 1,
-      "y": 34,
-      "isEmpty": false
-    },
-    "iconRawOrigin": {
-      "x": 1,
-      "y": 34,
-      "isEmpty": false
-    },
     "slotMax": 0,
-    "price": 11000,
-    "reqSTR": 0,
+    "price": 130000,
+    "reqSTR": 151,
     "reqDEX": 0,
     "reqINT": 0,
     "reqLUK": 0,
-    "reqJob": 1,
+    "reqJob": 0,
     "reqLevelEquip": 47,
     "tuc": 7,
-    "incSTR": 1,
-    "incPAD": 70,
-    "incACC": 30,
-    "attack": 2,
-    "attackSpeed": 6,
     "vslots": [
-      "Wp"
+      "Wp",
+      "WpSi"
     ],
     "islots": [
       "Wp"
     ],
-    "setCompleteCount": 0
+    "setCompleteCount": 0,
+    "iconRaw": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAkCAYAAAAD3IPhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC+klEQVR4nMWYjbHiIBSFLzPbAJZASsiWkFeCKUFLiCWYEh4lmBKkBCkhlCAlsOcC+fGt782qMcuMAUkMn+fce4n+ov/VQpA4KtL6k3a7moRw68MMEESejDniWGIseX5dmBBUBkkv66p8hgEzDNMK4d8MIvOiDFJSq3ehqUi0ZoChdZSZrEkgqZ+3lWDugbS6ujY3TDOb1gMpBxAZ396298F8A9JnEE92fjXHq08wSwbvFKhTsM5AFIYOIEVrKVk1tWWVuc2YSRWAnJA56kvcbtpRHb8czN9qTK8MssWQFVHRotyanUHh4884Gm1aFiTZYq0iY9Uxg3RYr4YSfUP0mxVhEAJdVUUQDpWlbJpAhGiGyWPoqRlBTAQooBT6jpIaNveL2ZRUEeLEb8L5TPi2REZjqqDDSPaZ+rK0GcJmCD8k0GswaRvpEwQWq3Zpvj2Qc47C6QhMXPKxx7mSFXDoBzVGe4bbvQYjxPV0OiE8LO07S17XcXqrJG0BYTCnlEzXliVbM7fFfy0pL9vUtm3sGWhoViFOypK2Hmu5cb25Indr2yswIYRrvu+G5DnQFaHCljjEy7g67MKVH5TUcD8V2NeU0Vg02+At1skqDS2D/KZvbFkKJpw4Y3gxL8dJ2Xwibjg09ACyiSf+cbt5BiaE/hwHen+gHWKj31ZUHAqarSgyxEM3ftomr7WppJT7zpRNqSKQROBuWv3sLR+GCagn1huDoiGrOmeQQbxEW1J7TI4nYEI8oLB5Y0uPhWsAQJh5Sj8N8QhM4MLG37zW8eEZYz8HeRniEZhY2BTigYE8CtkSljwNc+E9RvPeK6nollXjEZiUxgwCNYrOvA3kJ5gUsCuCfIUJ44AfB5SyACnXApnDxIwxxsQM4bpRIYU7jGvzvhi5C8NpygowCGdLiypqsQEerFsNZIAJ12tPdb2ny+VC/KxsPjargwwwRJ0m6R1tak0eGx95vzrIBAMVGq6oDvZ068XIPRghWh1mc+8Fuf2dJfGAdox/o8GPPyHQjRyhR03WAAAAAElFTkSuQmCCAN8BeyJub3RpY2UiOiJHZW5lcmF0ZWQgYnkgTWFwbGVTdG9yeS5JTyIsImNvbnRhaW5lciI6ImlvLTc0ZmJiY2M1ZDYtbDU4NnIiLCJnaXRIYXNoIjoiMzQ4NWMyNzQ4NjNmOGI4MDI3ZDlkZjY1NGIzMDcyNDU3MWNjMDIwNCIsInVybCI6Ii9hcGkvR01TLzI2My9pdGVtLzE0MzIwNzcvaWNvblJhdyIsImNyZWF0ZWRBdCI6IjIwMjYtMDEtMjRUMTE6MDM6MTYuNjY2NjEwNVoiLCJtZXRhIjpudWxsfQ==",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAACMAAAAkCAYAAAAD3IPhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADNklEQVR4nMWYi7GqMBCGNzO3gVBCKCGnBCxBStASsAQp4aQEKMGUYEqAEkgJubtJeMhB70HRmxlIDJj9+PcR9A/8r+Ycx7MApb7hcMiBsfbzMD0EgAWtz3iWOOY0/1kY50QECYdps3iFACMM0TJm3wzCo1ECkVCqgysyYKXuYeAzyoyuCSChn7YPwSyBlCrrihumiZs+ByJ7EO4/3rb3wdwBaSKIBTO9m+LVBpgtg3cM1DFYJyAChy2CpKWB4KqxbavMbcaMqiBIhZkjZnGblIM6djuYn2qMRwTZ45AUEd5FsRUHjYWPvtPC4KZtQYJbjBGgjThHkBrt5ahEUwB8kSIEAkiXZR6EQmUrN40gjBX95Nk1UAwg2gOkqBT2NQQ1TOw3c1NQhbGKPrjLBfBpAbTCqRROA9l36KU0EcJECNsn0GswYRtpAgQayw5hvjxB27bgqjNi4i27I16TpECLfa/G4J5+uddgGOuqqsLwMHCsDViV++m94LBHCI1zQvBwr5Tkmqlb7LykvOymsix9T0B9MwLjRErYW7TVDvamiizWtldgnHNdXDcBfnHQYaiQS1qMl8E6ugvv3EFQo31UYF9TRqHR6AZr0E5UqW8R5AvuuGUrGFdRxpAxy4dJXnxj3FBoqB4k8Rd+ud08A+Ncc/EDdTzBAWOj2WeQnlKYWGQRYtXCT7vJKqUzzvmx1rKQwgNxDNykVM8uuRrGYT0xVmssGjzLYwZpjBfvltDWyfEEjPMnLGxWG2nRcI4AKMw0pZ+GWAPjqLDRk+fKvzzj2E5BXoZYA+MLm8B4ICCLhWwLlzwNc6U9RtHeyyGtt1VjDUxIYwJBNdJavw3kEUwI2McgHNa3X1dgNwzodYALgyByApLC+EOHz/o1IHZyLML4jNFa+wyhupFZI2sc59rHCG108g7EEtA9BXqI8X1mDkNpSgoQCGVLiVXU4AZ4Mj5r8ggyNby5i3oY13UN5PkRrtcr0Luy3iU9yC4ani/0aGH7YDw/fsAA1Aq4bSHJFVjc+MD6+xL4tzuWQJdg7YNrMxhUoaCK2qJ7buvIe/8mWYBhrFRuMve2OuLb7e8sji9oZ/83Gj74X3Pmp8bKVRowAAAAAElFTkSuQmCCANwBeyJub3RpY2UiOiJHZW5lcmF0ZWQgYnkgTWFwbGVTdG9yeS5JTyIsImNvbnRhaW5lciI6ImlvLTc0ZmJiY2M1ZDYtczhjdHgiLCJnaXRIYXNoIjoiMzQ4NWMyNzQ4NjNmOGI4MDI3ZDlkZjY1NGIzMDcyNDU3MWNjMDIwNCIsInVybCI6Ii9hcGkvR01TLzI2My9pdGVtLzE0MzIwNzcvaWNvbiIsImNyZWF0ZWRBdCI6IjIwMjYtMDEtMjRUMTE6MDM6MTYuMjExMTA3MloiLCJtZXRhIjpudWxsfQ==",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incSTR": 1,
+    "incPAD": 65,
+    "incACC": 1,
+    "incMDD": 7,
+    "attackSpeed": 6
   },
   "typeInfo": {
     "overallCategory": "Equip",
-    "category": "Two-Handed Weapon",
+    "category": "Weapon",
     "subCategory": "Spear",
     "lowItemId": 1430000,
     "highItemId": 1440000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPAD": {
+      "base": 65,
+      "min": 63,
+      "max": 67
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 31
+    }
   }
 }

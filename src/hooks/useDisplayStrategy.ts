@@ -16,6 +16,7 @@ import type {
   DropsEssential,
   GachaMachine,
   SearchTypeFilter,
+  ItemIndexItem,
 } from '@/types'
 import { matchesAllKeywords } from '@/lib/search-utils'
 
@@ -26,6 +27,7 @@ interface UseDisplayStrategyParams {
   advancedFilter: AdvancedFilterOptions
   filteredDrops: DropsEssential[]
   gachaMachines: GachaMachine[]
+  itemIndexMap?: Map<number, ItemIndexItem>  // 物品索引（補充沒有掉落的物品）
 }
 
 interface UseDisplayStrategyReturn {
@@ -46,6 +48,7 @@ export function useDisplayStrategy({
   advancedFilter,
   filteredDrops,
   gachaMachines,
+  itemIndexMap,
 }: UseDisplayStrategyParams): UseDisplayStrategyReturn {
   // 判斷搜尋上下文 - 決定「全部」模式的顯示策略
   const hasItemMatch = useMemo(() => {
@@ -88,8 +91,24 @@ export function useDisplayStrategy({
       })
     )
 
-    return hasGachaMatch
-  }, [filterMode, debouncedSearchTerm, searchType, filteredDrops, gachaMachines])
+    if (hasGachaMatch) return true
+
+    // 檢查 item-index 中是否有物品匹配（補充沒有掉落的物品，如 Unwelcome Guest 武器）
+    if (itemIndexMap) {
+      for (const indexItem of itemIndexMap.values()) {
+        if (isIdSearch) {
+          if (indexItem.itemId.toString() === trimmedSearch) return true
+        } else {
+          if (matchesAllKeywords(indexItem.itemName, debouncedSearchTerm) ||
+              (indexItem.chineseItemName && matchesAllKeywords(indexItem.chineseItemName, debouncedSearchTerm))) {
+            return true
+          }
+        }
+      }
+    }
+
+    return false
+  }, [filterMode, debouncedSearchTerm, searchType, filteredDrops, gachaMachines, itemIndexMap])
 
   // 判斷搜尋上下文 - 決定是否有怪物匹配
   const hasMonsterMatch = useMemo(() => {

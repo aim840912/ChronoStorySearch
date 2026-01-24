@@ -49,5 +49,17 @@
     "subCategory": "Glove",
     "lowItemId": 1080000,
     "highItemId": 1090000
+  },
+  "randomStats": {
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 4
+    },
+    "incPDD": {
+      "base": 9,
+      "min": 0,
+      "max": 22
+    }
   }
 }

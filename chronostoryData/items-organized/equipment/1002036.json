@@ -51,5 +51,22 @@
     "subCategory": "Hat",
     "lowItemId": 1000000,
     "highItemId": 1010000
+  },
+  "randomStats": {
+    "incINT": {
+      "base": 2,
+      "min": 0,
+      "max": 5
+    },
+    "incPDD": {
+      "base": 12,
+      "min": 0,
+      "max": 27
+    },
+    "incMDD": {
+      "base": 40,
+      "min": 25,
+      "max": 55
+    }
   }
 }

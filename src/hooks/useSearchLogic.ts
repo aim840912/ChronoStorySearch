@@ -1,7 +1,7 @@
 'use client'
 
 import { useMemo } from 'react'
-import type { DropsEssential, GachaMachine, SuggestionItem, SearchTypeFilter, MerchantMapData, QuizQuestion } from '@/types'
+import type { DropsEssential, GachaMachine, SuggestionItem, SearchTypeFilter, MerchantMapData, QuizQuestion, ItemIndexItem } from '@/types'
 import { matchesAllKeywords } from '@/lib/search-utils'
 
 interface UseSearchLogicParams {
@@ -9,6 +9,7 @@ interface UseSearchLogicParams {
   gachaMachines: GachaMachine[]
   merchantMaps: MerchantMapData[]  // 商人 100% 掉落資料
   quizQuestions: QuizQuestion[]    // Quiz 題庫資料
+  itemIndexMap?: Map<number, ItemIndexItem>  // 物品索引（補充沒有掉落的物品）
   debouncedSearchTerm: string
   searchType: SearchTypeFilter
 }
@@ -25,6 +26,7 @@ export function useSearchLogic({
   gachaMachines,
   merchantMaps,
   quizQuestions,
+  itemIndexMap,
   debouncedSearchTerm,
   searchType,
 }: UseSearchLogicParams) {
@@ -106,6 +108,36 @@ export function useSearchLogic({
         }
       }
     })
+
+    // 補充 item-index 中沒有在 allDrops 的物品（如 Unwelcome Guest 武器）
+    // 這些物品沒有怪物掉落，但應該可以被搜尋到
+    if (itemIndexMap) {
+      itemIndexMap.forEach((indexItem) => {
+        const itemNameLower = indexItem.itemName.toLowerCase()
+        // 只補充不存在於 itemMap 的物品（避免重複）
+        if (!itemMap.has(itemNameLower)) {
+          itemMap.set(itemNameLower, {
+            name: indexItem.itemName,
+            type: 'item',
+            count: 1,
+            id: indexItem.itemId,
+          })
+        }
+
+        // 補充中文名稱索引（如果存在且與英文不同）
+        if (indexItem.chineseItemName) {
+          const chineseNameLower = indexItem.chineseItemName.toLowerCase()
+          if (chineseNameLower !== itemNameLower && !itemMap.has(chineseNameLower)) {
+            itemMap.set(chineseNameLower, {
+              name: indexItem.chineseItemName,
+              type: 'item',
+              count: 1,
+              id: indexItem.itemId,
+            })
+          }
+        }
+      })
+    }
 
     // 建立轉蛋機物品索引
     gachaMachines.forEach((machine) => {
@@ -213,7 +245,7 @@ export function useSearchLogic({
     })
 
     return { monsterMap, itemMap, gachaMap, merchantMap, quizMap }
-  }, [allDrops, gachaMachines, merchantMaps, quizQuestions])
+  }, [allDrops, gachaMachines, merchantMaps, quizQuestions, itemIndexMap])
 
   // 計算搜尋建議列表（使用索引優化效能，支援多關鍵字搜尋和類型過濾）
   const suggestions = useMemo(() => {

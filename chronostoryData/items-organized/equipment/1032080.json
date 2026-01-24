@@ -2,7 +2,7 @@
   "id": 1032080,
   "description": {
     "id": 1032080,
-    "name": "1st不速之客耳環",
+    "name": "1st Unwelcome Guest Earrings",
     "description": "",
     "chineseItemName": "1st不速之客耳環"
   },
@@ -24,7 +24,7 @@
       "isEmpty": false
     },
     "slotMax": 0,
-    "price": 7000,
+    "price": 70000,
     "reqSTR": 0,
     "reqDEX": 0,
     "reqINT": 0,
@@ -54,5 +54,47 @@
     "subCategory": "Earrings",
     "lowItemId": 1030000,
     "highItemId": 1040000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 2
+    },
+    "incDEX": {
+      "base": 1,
+      "min": 0,
+      "max": 2
+    },
+    "incINT": {
+      "base": 1,
+      "min": 0,
+      "max": 2
+    },
+    "incLUK": {
+      "base": 1,
+      "min": 0,
+      "max": 2
+    },
+    "incMHP": {
+      "base": 10,
+      "min": 0,
+      "max": 34
+    },
+    "incMMP": {
+      "base": 10,
+      "min": 0,
+      "max": 34
+    },
+    "incPDD": {
+      "base": 15,
+      "min": 0,
+      "max": 39
+    },
+    "incMDD": {
+      "base": 15,
+      "min": 0,
+      "max": 39
+    }
   }
 }

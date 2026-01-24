@@ -1,0 +1,78 @@
+{
+  "id": 1322089,
+  "description": {
+    "id": 1322089,
+    "name": "Last Unwelcome Guest Hammer",
+    "description": "",
+    "chineseItemName": "Last不速之客單手鈍器"
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 107,
+    "mob": 0,
+    "slotMax": 0,
+    "price": 477000,
+    "reqSTR": 311,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 107,
+    "tuc": 7,
+    "vslots": [
+      "Wp",
+      "WpSi"
+    ],
+    "islots": [
+      "Wp"
+    ],
+    "setCompleteCount": 0,
+    "iconRaw": "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",
+    "iconRawOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "icon": "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",
+    "iconOrigin": {
+      "x": -1,
+      "y": 31,
+      "isEmpty": false
+    },
+    "incSTR": 4,
+    "incPAD": 102,
+    "incACC": 4,
+    "incMDD": 7,
+    "attackSpeed": 5
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Weapon",
+    "subCategory": "One-Handed Blunt Weapon",
+    "lowItemId": 1320000,
+    "highItemId": 1330000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 4,
+      "min": 0,
+      "max": 15
+    },
+    "incPAD": {
+      "base": 102,
+      "min": 97,
+      "max": 107
+    },
+    "incACC": {
+      "base": 4,
+      "min": 0,
+      "max": 15
+    },
+    "incMDD": {
+      "base": 7,
+      "min": 0,
+      "max": 61
+    }
+  }
+}

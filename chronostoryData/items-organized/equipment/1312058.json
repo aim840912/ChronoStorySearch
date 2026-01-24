@@ -2,7 +2,7 @@
   "id": 1312058,
   "description": {
     "id": 1312058,
-    "name": "1st不速之客單手斧",
+    "name": "1st Unwelcome Guest Hatchet",
     "description": "",
     "chineseItemName": "1st不速之客單手斧"
   },
@@ -24,7 +24,7 @@
       "isEmpty": false
     },
     "slotMax": 0,
-    "price": 11000,
+    "price": 100000,
     "reqSTR": 0,
     "reqDEX": 0,
     "reqINT": 0,
@@ -50,5 +50,17 @@
     "subCategory": "One-Handed Axe",
     "lowItemId": 1310000,
     "highItemId": 1320000
+  },
+  "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
+    "incPAD": {
+      "base": 65,
+      "min": 63,
+      "max": 67
+    }
   }
 }

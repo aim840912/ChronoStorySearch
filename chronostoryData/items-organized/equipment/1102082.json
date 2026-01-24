@@ -48,5 +48,17 @@
     "subCategory": "Cape",
     "lowItemId": 1100000,
     "highItemId": 1110000
+  },
+  "randomStats": {
+    "incPAD": {
+      "base": 1,
+      "min": 0,
+      "max": 2
+    },
+    "incMAD": {
+      "base": 1,
+      "min": 0,
+      "max": 2
+    }
   }
 }
