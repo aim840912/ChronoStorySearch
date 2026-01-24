@@ -105,10 +105,16 @@ export function useDisplayStrategy({
     // 檢查 drops 中是否有怪物匹配（支援 ID 搜尋）
     return filteredDrops.some(drop => {
       if (isIdSearch) {
-        return drop.mobId.toString() === trimmedSearch
+        // 搜尋 mobId 直接匹配
+        // 搜尋 itemId 時，如果有怪物掉落該物品，也匹配（顯示掉落來源怪物）
+        return drop.mobId.toString() === trimmedSearch || drop.itemId.toString() === trimmedSearch
       }
+      // 搜尋怪物名稱時，直接匹配
+      // 搜尋物品名稱時，如果有怪物掉落該物品，也匹配（顯示掉落來源怪物）
       return matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
-             (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm))
+             (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm)) ||
+             matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
+             (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
     })
   }, [filterMode, debouncedSearchTerm, searchType, filteredDrops])
 

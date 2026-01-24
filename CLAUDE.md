@@ -157,6 +157,16 @@ git commit -m "chore: sync R2 image manifest"
 { "json": { "items-organized": { "1234": "2" } } }
 ```
 
+**手動修復壞圖片**（使用 rclone）：
+
+rclone 已安裝於 `~/rclone`，設定檔位於 `~/.config/rclone/rclone.conf`。
+
+1. 下載正確圖片（例如從 [Hidden Street](https://bc.hidden-street.net)）
+2. 上傳到 R2：`~/rclone copy {file} r2:maplestory-images/images/{type}/ -v`
+3. 更新 `data/r2-versions.json` 版本號（+1 繞過 CDN 快取）
+4. 驗證：`curl -I "https://cdn.chronostorysearch.com/images/{type}/{id}.png?v=NEW"`
+5. 提交：`git commit -m "fix: replace broken image {id}"`
+
 **問題排查**：
 - 新圖片不顯示 → 執行 `npm run r2:sync-manifest` 更新清單
 - 更新後顯示舊版 → 執行 `npm run r2:sync-manifest`（自動檢測並更新版本號）

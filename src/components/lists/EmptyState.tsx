@@ -1,7 +1,5 @@
 'use client'
 
-import { AdSenseMultiplex } from '@/components/adsense/AdSenseMultiplex'
-
 interface EmptyStateProps {
   hasSearchTerm: boolean
   mode: 'favorite-monsters' | 'favorite-items' | 'all'
@@ -105,8 +103,6 @@ export function EmptyState({ hasSearchTerm, mode, t }: EmptyStateProps) {
           </p>
         )}
       </div>
-      {/* Multiplex 多重廣告 */}
-      <AdSenseMultiplex className="mt-8" />
     </div>
   )
 }
