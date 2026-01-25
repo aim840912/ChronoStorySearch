@@ -33,16 +33,17 @@
     "reqLevelEquip": 47,
     "tuc": 7,
     "incSTR": 1,
-    "incPAD": 65,
+    "incPAD": 68,
     "attack": 1,
-    "attackSpeed": 5,
+    "attackSpeed": 4,
     "vslots": [
       "Wp"
     ],
     "islots": [
       "Wp"
     ],
-    "setCompleteCount": 0
+    "setCompleteCount": 0,
+    "incACC": 1
   },
   "typeInfo": {
     "overallCategory": "Equip",

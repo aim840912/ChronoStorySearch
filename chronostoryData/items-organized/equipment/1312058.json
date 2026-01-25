@@ -42,7 +42,8 @@
     "islots": [
       "Wp"
     ],
-    "setCompleteCount": 0
+    "setCompleteCount": 0,
+    "incACC": 1
   },
   "typeInfo": {
     "overallCategory": "Equip",

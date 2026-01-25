@@ -29,16 +29,12 @@
     "reqDEX": 0,
     "reqINT": 0,
     "reqLUK": 0,
-    "reqJob": 0,
     "reqLevelEquip": 47,
     "tuc": 5,
     "incSTR": 1,
     "incDEX": 1,
     "incINT": 1,
     "incLUK": 1,
-    "incMHP": 10,
-    "incMMP": 10,
-    "incPDD": 15,
     "incMDD": 15,
     "vslots": [
       "Ae"

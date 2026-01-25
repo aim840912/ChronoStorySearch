@@ -17,7 +17,7 @@
     "reqDEX": 0,
     "reqINT": 262,
     "reqLUK": 89,
-    "reqJob": 0,
+    "reqJob": 2,
     "reqLevelEquip": 87,
     "tuc": 7,
     "vslots": [
@@ -44,7 +44,6 @@
     "incPAD": 61,
     "incMAD": 98,
     "incMHP": 300,
-    "incMDD": 7,
     "attackSpeed": 5
   },
   "typeInfo": {
