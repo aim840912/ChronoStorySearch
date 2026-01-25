@@ -40,9 +40,8 @@
       "y": 31,
       "isEmpty": false
     },
-    "incSTR": 5,
-    "incINT": 1,
-    "incMAD": 47
+    "incDEX": 1,
+    "incPAD": 47
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -52,17 +51,12 @@
     "highItemId": 1500000
   },
   "randomStats": {
-    "incSTR": {
-      "base": 5,
-      "min": 3,
-      "max": 7
-    },
-    "incINT": {
+    "incDEX": {
       "base": 1,
       "min": 0,
-      "max": 3
+      "max": 6
     },
-    "incMAD": {
+    "incPAD": {
       "base": 47,
       "min": 45,
       "max": 49

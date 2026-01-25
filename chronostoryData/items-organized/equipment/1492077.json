@@ -40,11 +40,10 @@
       "y": 31,
       "isEmpty": false
     },
-    "incSTR": 5,
-    "incINT": 3,
-    "incMAD": 69,
-    "incJump": 4,
-    "incMHP": 2
+    "incDEX": 3,
+    "incPAD": 69,
+    "incSpeed": 4,
+    "incJump": 2
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -54,30 +53,25 @@
     "highItemId": 1500000
   },
   "randomStats": {
-    "incSTR": {
-      "base": 5,
-      "min": 1,
-      "max": 9
-    },
-    "incINT": {
+    "incDEX": {
       "base": 3,
       "min": 0,
-      "max": 7
+      "max": 12
     },
-    "incMAD": {
+    "incPAD": {
       "base": 69,
       "min": 65,
       "max": 73
     },
-    "incJump": {
+    "incSpeed": {
       "base": 4,
-      "min": 2,
-      "max": 6
+      "min": 0,
+      "max": 8
     },
-    "incMHP": {
+    "incJump": {
       "base": 2,
       "min": 0,
-      "max": 46
+      "max": 4
     }
   }
 }
