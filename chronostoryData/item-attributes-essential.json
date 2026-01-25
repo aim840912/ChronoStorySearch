@@ -43965,7 +43965,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "One-Handed Sword",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -44002,7 +44002,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "One-Handed Sword",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -44039,7 +44039,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "One-Handed Sword",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -44668,7 +44668,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "One-Handed Sword",
+    "equipment_category": "One-Handed Axe",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -44705,7 +44705,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "One-Handed Axe",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -44742,7 +44742,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "One-Handed Axe",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -44779,7 +44779,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "One-Handed Axe",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -45852,7 +45852,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "One-Handed Blunt Weapon",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -45889,7 +45889,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "One-Handed Blunt Weapon",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -45926,7 +45926,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "One-Handed Blunt Weapon",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -46888,7 +46888,7 @@
     "req_dex": 107,
     "req_int": 0,
     "req_luk": 184,
-    "equipment_category": "Weapon",
+    "equipment_category": "Dagger",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -46925,7 +46925,7 @@
     "req_dex": 127,
     "req_int": 0,
     "req_luk": 224,
-    "equipment_category": "Weapon",
+    "equipment_category": "Dagger",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -46962,7 +46962,7 @@
     "req_dex": 147,
     "req_int": 0,
     "req_luk": 264,
-    "equipment_category": "Weapon",
+    "equipment_category": "Dagger",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -47036,7 +47036,7 @@
     "req_dex": 107,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Dagger",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -47073,7 +47073,7 @@
     "req_dex": 127,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Dagger",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -47110,7 +47110,7 @@
     "req_dex": 147,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Dagger",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -47702,7 +47702,7 @@
     "req_dex": 0,
     "req_int": 202,
     "req_luk": 69,
-    "equipment_category": "Weapon",
+    "equipment_category": "Wand",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -47739,7 +47739,7 @@
     "req_dex": 0,
     "req_int": 262,
     "req_luk": 89,
-    "equipment_category": "Weapon",
+    "equipment_category": "Wand",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -47776,7 +47776,7 @@
     "req_dex": 0,
     "req_int": 322,
     "req_luk": 109,
-    "equipment_category": "Weapon",
+    "equipment_category": "Wand",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -48331,7 +48331,7 @@
     "req_dex": 0,
     "req_int": 201,
     "req_luk": 70,
-    "equipment_category": "Weapon",
+    "equipment_category": "Staff",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -48368,7 +48368,7 @@
     "req_dex": 0,
     "req_int": 261,
     "req_luk": 90,
-    "equipment_category": "Weapon",
+    "equipment_category": "Staff",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -48405,7 +48405,7 @@
     "req_dex": 0,
     "req_int": 321,
     "req_luk": 110,
-    "equipment_category": "Weapon",
+    "equipment_category": "Staff",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -49108,7 +49108,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Two-Handed Sword",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -49145,7 +49145,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Two-Handed Sword",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -49182,7 +49182,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Two-Handed Sword",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -49700,7 +49700,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Two-Handed Axe",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -49737,7 +49737,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Two-Handed Axe",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -49774,7 +49774,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Two-Handed Axe",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -50255,7 +50255,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Two-Handed Blunt Weapon",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -50292,7 +50292,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Two-Handed Blunt Weapon",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -50329,7 +50329,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Two-Handed Blunt Weapon",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -51032,7 +51032,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Spear",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -51069,7 +51069,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Spear",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -51106,7 +51106,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Spear",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -51994,7 +51994,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Polearm",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -52031,7 +52031,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Polearm",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -52068,7 +52068,7 @@
     "req_dex": 0,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Polearm",
     "equipment_classes": {
       "beginner": null,
       "warrior": true,
@@ -52919,7 +52919,7 @@
     "req_dex": 199,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Bow",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -52956,7 +52956,7 @@
     "req_dex": 239,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Bow",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -52993,7 +52993,7 @@
     "req_dex": 279,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Bow",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -53733,7 +53733,7 @@
     "req_dex": 211,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Crossbow",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -53770,7 +53770,7 @@
     "req_dex": 261,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Crossbow",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -53807,7 +53807,7 @@
     "req_dex": 291,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Crossbow",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -54843,7 +54843,7 @@
     "req_dex": 107,
     "req_int": 0,
     "req_luk": 191,
-    "equipment_category": "Weapon",
+    "equipment_category": "Claw",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -54880,7 +54880,7 @@
     "req_dex": 127,
     "req_int": 0,
     "req_luk": 251,
-    "equipment_category": "Weapon",
+    "equipment_category": "Claw",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -54917,7 +54917,7 @@
     "req_dex": 147,
     "req_int": 0,
     "req_luk": 311,
-    "equipment_category": "Weapon",
+    "equipment_category": "Claw",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -55472,7 +55472,7 @@
     "req_dex": 67,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Knuckle",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -55509,7 +55509,7 @@
     "req_dex": 87,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Knuckle",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -55546,7 +55546,7 @@
     "req_dex": 107,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Knuckle",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -56101,7 +56101,7 @@
     "req_dex": 201,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Gun",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -56138,7 +56138,7 @@
     "req_dex": 266,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Gun",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
@@ -56175,7 +56175,7 @@
     "req_dex": 306,
     "req_int": 0,
     "req_luk": 0,
-    "equipment_category": "Weapon",
+    "equipment_category": "Gun",
     "equipment_classes": {
       "beginner": null,
       "warrior": null,
