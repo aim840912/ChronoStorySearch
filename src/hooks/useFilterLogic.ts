@@ -249,8 +249,11 @@ export function useFilterLogic({
     }
 
     // 2.5. 補充 item-index 中沒有掉落的物品（如 Unwelcome Guest 武器）
-    // 只在有搜尋詞且不是只搜尋怪物時補充
-    if (debouncedSearchTerm.trim() !== '' && searchType !== 'monster' && itemIndexMap) {
+    // 條件：有搜尋詞 OR 進階篩選啟用了裝備類別篩選
+    const hasSearchTerm = debouncedSearchTerm.trim() !== ''
+    const hasCategoryFilter = advancedFilter.enabled && advancedFilter.itemCategories.length > 0
+
+    if ((hasSearchTerm || hasCategoryFilter) && searchType !== 'monster' && itemIndexMap) {
       const trimmedSearch = debouncedSearchTerm.trim()
       const isIdSearch = /^\d+$/.test(trimmedSearch)
 
@@ -258,9 +261,13 @@ export function useFilterLogic({
         // 如果物品已在 itemMap 中，跳過
         if (itemMap.has(indexItem.itemId)) return
 
-        // 檢查是否匹配搜尋條件
+        // 檢查是否匹配條件
         let matches = false
-        if (isIdSearch) {
+
+        if (hasCategoryFilter && !hasSearchTerm) {
+          // 純類別篩選模式：加入所有物品，讓 applyItemFilters 做篩選
+          matches = true
+        } else if (isIdSearch) {
           // ID 搜尋
           matches = indexItem.itemId.toString() === trimmedSearch
         } else {
