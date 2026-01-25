@@ -416,18 +416,13 @@ export const SearchHeader = memo(function SearchHeader({
               prerequisiteTipId="search-job-advancement"
               message={t('tip.toolsDropdown')}
             />
-            <TipBubble
-              tipId="manual-exp-recorder"
-              prerequisiteTipId="tools-dropdown"
-              message={t('tip.manualExpRecorder')}
-            />
           </div>
           {/* 光暗模式切換 + 提示 */}
           <div className="relative">
             <ThemeToggle />
             <TipBubble
               tipId="theme-toggle"
-              prerequisiteTipId="manual-exp-recorder"
+              prerequisiteTipId="tools-dropdown"
               message={t('tip.themeToggle')}
             />
           </div>
@@ -471,18 +466,13 @@ export const SearchHeader = memo(function SearchHeader({
               prerequisiteTipId="search-job-advancement"
               message={t('tip.toolsDropdown')}
             />
-            <TipBubble
-              tipId="manual-exp-recorder"
-              prerequisiteTipId="tools-dropdown"
-              message={t('tip.manualExpRecorder')}
-            />
           </div>
           {/* 光暗模式切換 + 提示 */}
           <div className="relative">
             <ThemeToggle />
             <TipBubble
               tipId="theme-toggle"
-              prerequisiteTipId="manual-exp-recorder"
+              prerequisiteTipId="tools-dropdown"
               message={t('tip.themeToggle')}
             />
           </div>
