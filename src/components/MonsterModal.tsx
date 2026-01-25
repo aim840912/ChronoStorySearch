@@ -512,9 +512,9 @@ export function MonsterModal({
             {/* 根據視圖模式渲染不同的佈局 */}
             {viewMode === 'grid' ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
-                {filteredDrops.map((drop) => (
+                {filteredDrops.map((drop, index) => (
                   <DropItemCard
-                    key={drop.itemId}
+                    key={`${drop.itemId}-${index}`}
                     drop={drop}
                     itemAttributesMap={itemAttributesMap}
                     isFavorite={isItemFavorite(drop.itemId)}

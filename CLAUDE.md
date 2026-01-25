@@ -28,6 +28,12 @@ npm run type-check   # TypeScript 檢查
 npm run lint         # ESLint 檢查
 ```
 
+### 開發伺服器規則
+
+- **假設開發伺服器已在 port 3000 運行**，不要自動執行 `npm run dev`
+- 如需啟動開發伺服器，使用 `/dev` skill（會自動清理佔用的 port）
+- 遇到 port 3000 被佔用時，詢問用戶而不是自動清理
+
 ---
 
 ## 專案架構

@@ -34,7 +34,6 @@ export function AdvancedFilterPanel({
       filterToCheck.elementWeaknesses.length > 0 ||
       filterToCheck.statBoosts.length > 0 ||
       filterToCheck.isBoss ||
-      filterToCheck.isUndead ||
       filterToCheck.levelRange.min !== null ||
       filterToCheck.levelRange.max !== null ||
       filterToCheck.attackSpeedRange.min !== null ||
@@ -98,19 +97,6 @@ export function AdvancedFilterPanel({
     const newFilter = {
       ...filter,
       isBoss: !filter.isBoss,
-    }
-
-    onFilterChange({
-      ...newFilter,
-      enabled: hasAnyFilterCriteria(newFilter),
-    })
-  }
-
-  // 處理不死篩選變更
-  const handleUndeadToggle = () => {
-    const newFilter = {
-      ...filter,
-      isUndead: !filter.isUndead,
     }
 
     onFilterChange({
@@ -425,17 +411,6 @@ export function AdvancedFilterPanel({
                     }`}
                   >
                     {t('filter.monsterType.boss')}
-                  </button>
-                  {/* 不死按鈕 */}
-                  <button
-                    onClick={handleUndeadToggle}
-                    className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
-                      filter.isUndead
-                        ? 'bg-teal-500 text-white shadow-md'
-                        : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                    }`}
-                  >
-                    {t('filter.monsterType.undead')}
                   </button>
                 </div>
               </div>

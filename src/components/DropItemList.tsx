@@ -44,7 +44,7 @@ export function DropItemList({
       <div className="md:hidden divide-y divide-gray-200 dark:divide-gray-700">
         {drops.map((drop, index) => (
           <DropItemListMobileRow
-            key={drop.itemId}
+            key={`${drop.itemId}-${index}`}
             drop={drop}
             itemAttributesMap={itemAttributesMap}
             isFavorite={isItemFavorite(drop.itemId)}
@@ -98,7 +98,7 @@ export function DropItemList({
         <tbody>
           {drops.map((drop, index) => (
             <DropItemListDesktopRow
-              key={drop.itemId}
+              key={`${drop.itemId}-${index}`}
               drop={drop}
               itemAttributesMap={itemAttributesMap}
               isFavorite={isItemFavorite(drop.itemId)}

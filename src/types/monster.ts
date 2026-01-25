@@ -33,6 +33,11 @@ export interface MonsterStats {
   minimumPushDamage: number | null
   isBoss: boolean
   isUndead: boolean
+  // 狀態免疫欄位（來自 CSV 同步）
+  immuneToHeal: boolean
+  immuneToPoison: boolean
+  immuneToBurn: boolean
+  immuneToFreeze: boolean
 }
 
 // 怪物完整資訊類型（mob-info.json 的頂層結構）

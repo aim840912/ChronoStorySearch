@@ -30,7 +30,6 @@ import {
   matchesMonsterLevelRangeFilter,
   matchesElementWeaknessFilter,
   matchesBossFilter,
-  matchesUndeadFilter
 } from '@/lib/filter-utils'
 import {
   buildItemMapFromDrops,
@@ -197,13 +196,6 @@ export function useFilterLogic({
     if (advancedFilter.enabled && advancedFilter.isBoss) {
       monsters = monsters.filter(monster =>
         matchesBossFilter(monster.mobId, mobInfoMap, advancedFilter)
-      )
-    }
-
-    // 應用不死篩選
-    if (advancedFilter.enabled && advancedFilter.isUndead) {
-      monsters = monsters.filter(monster =>
-        matchesUndeadFilter(monster.mobId, mobInfoMap, advancedFilter)
       )
     }
 

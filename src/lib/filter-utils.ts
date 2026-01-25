@@ -357,13 +357,13 @@ export function matchesElementWeaknessFilter(
   const mob = mobInfo.mob
 
   // 使用 AND 邏輯：檢查怪物是否同時具有所有選中的屬性弱點
-  // API 數值含義：1=免疫, 2=抵抗(50%減傷), 3=弱點(增傷)
+  // 數值含義：1=弱點(增傷), 0=普通, -1=抗性(減傷)
   return filter.elementWeaknesses.every((element: ElementType) => {
     const weaknessKey = `${element}_weakness` as keyof typeof mob
     const weaknessValue = mob[weaknessKey]
 
-    // 只有當弱點值為 3 時才符合條件（3 表示該屬性會造成額外傷害）
-    return weaknessValue === 3
+    // 只有當弱點值為 1 時才符合條件（1 表示該屬性會造成額外傷害）
+    return weaknessValue === 1
   })
 }
 
@@ -431,34 +431,6 @@ export function matchesBossFilter(
 
   // 檢查是否為 Boss
   return mobInfo.mob.isBoss === true
-}
-
-/**
- * 判斷怪物是否符合不死系篩選
- * @param mobId 怪物 ID
- * @param mobInfoMap 怪物資訊 Map
- * @param filter 進階篩選選項
- * @returns 是否符合篩選
- */
-export function matchesUndeadFilter(
-  mobId: number,
-  mobInfoMap: Map<number, MobInfo>,
-  filter: AdvancedFilterOptions
-): boolean {
-  // 未啟用篩選或未選擇不死篩選
-  if (!filter.enabled || !filter.isUndead) {
-    return true
-  }
-
-  // 取得怪物資訊
-  const mobInfo = mobInfoMap.get(mobId)
-  if (!mobInfo || !mobInfo.mob) {
-    // 怪物資訊不存在，不符合篩選
-    return false
-  }
-
-  // 檢查是否為不死系
-  return mobInfo.mob.isUndead === true
 }
 
 /**

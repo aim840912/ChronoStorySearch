@@ -400,18 +400,7 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 4001006,
-      "itemName": "Flaming Feather",
-      "chineseItemName": "火焰羽毛",
-      "chance": 0,
-      "displayChance": "0.000%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
     }
   ],
-  "totalDrops": 37
+  "totalDrops": 36
 }

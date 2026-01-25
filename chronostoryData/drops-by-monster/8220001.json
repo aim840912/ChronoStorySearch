@@ -457,17 +457,6 @@
       "enabled": true
     },
     {
-      "itemId": 2040901,
-      "itemName": "Scroll for Shield for Defense 60%",
-      "chineseItemName": "盾牌防禦卷軸60%",
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
       "itemId": 2041004,
       "itemName": "Scroll for Cape for Defense 60%",
       "chineseItemName": "披風防禦卷軸60%",
@@ -589,5 +578,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 53
+  "totalDrops": 52
 }
