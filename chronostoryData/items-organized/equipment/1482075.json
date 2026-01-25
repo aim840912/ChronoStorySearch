@@ -39,10 +39,9 @@
       "y": 31,
       "isEmpty": false
     },
-    "incSTR": 5,
-    "incDEX": 1,
-    "incMAD": 48,
-    "incEVA": 1
+    "incSTR": 1,
+    "incPAD": 48,
+    "incACC": 1
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -53,21 +52,16 @@
   },
   "randomStats": {
     "incSTR": {
-      "base": 5,
-      "min": 3,
-      "max": 7
-    },
-    "incDEX": {
       "base": 1,
       "min": 0,
-      "max": 3
+      "max": 6
     },
-    "incMAD": {
+    "incPAD": {
       "base": 48,
       "min": 46,
       "max": 50
     },
-    "incEVA": {
+    "incACC": {
       "base": 1,
       "min": 0,
       "max": 6
