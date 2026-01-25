@@ -51,7 +51,8 @@ export const EQUIPMENT_CATEGORY_MAP: Record<string, ItemCategoryGroup> = {
   'Shield': 'shield',
 
   // 飾品類
-  'Earrings': 'earring',
+  'Earring': 'earring',   // 單數形式（Unwelcome Guest 使用此格式）
+  'Earrings': 'earring',  // 複數形式
   'Accessory': 'accessory',
 
   // 投擲物（特殊：既是武器也是消耗品）

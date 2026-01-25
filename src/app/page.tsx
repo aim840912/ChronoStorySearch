@@ -138,11 +138,8 @@ export default function Home() {
   })
 
 
-  // 滾動行為 Hook - 管理返回頂部按鈕和進階篩選自動收合
-  const { showBackToTop, scrollToTop } = useScrollBehavior({
-    isAdvancedFilterExpanded,
-    setIsAdvancedFilterExpanded,
-  })
+  // 滾動行為 Hook - 管理返回頂部按鈕
+  const { showBackToTop, scrollToTop } = useScrollBehavior()
 
   // Hash 導航 Hook - 處理 URL hash 連結
   useHashNavigation({
