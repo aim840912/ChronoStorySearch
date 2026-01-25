@@ -48,6 +48,13 @@ export interface MultiStageRecipe {
   stages: StageRecipe[] // 從 1st 到當前階段的所有配方
 }
 
+export interface UpgradeRecipe {
+  currentStage: CraftingStage
+  nextStage: CraftingStage
+  nextWeaponId: number
+  materials: CraftingMaterial[]
+}
+
 // Unwelcome Guest 武器 ID 映射表
 // 每個武器類型有 4 個版本：[1st, 2nd, 3rd, Last]
 const UNWELCOME_GUEST_WEAPONS: Record<string, number[]> = {
@@ -356,5 +363,35 @@ export function getMultiStageRecipe(itemId: number): MultiStageRecipe | null {
   return {
     currentStage,
     stages,
+  }
+}
+
+/**
+ * 取得升級到下一階段的配方
+ * @param itemId 當前物品 ID
+ * @returns 升級配方，若為 Last 階段則返回 null
+ */
+export function getNextStageRecipe(itemId: number): UpgradeRecipe | null {
+  const info = ITEM_ID_TO_WEAPON_INFO.get(itemId)
+  if (!info) return null
+
+  const { weaponType, stageIndex } = info
+
+  // Last 階段（index = 3）無法再升級
+  if (stageIndex >= 3) return null
+
+  const currentStage = STAGE_NAMES[stageIndex]
+  const nextStage = STAGE_NAMES[stageIndex + 1]
+  const weaponIds = UNWELCOME_GUEST_WEAPONS[weaponType]
+  const nextWeaponId = weaponIds[stageIndex + 1]
+
+  // 取得下一階段的材料（不包含前階武器，因為前階武器就是當前物品）
+  const materials = getStageMaterials(nextStage)
+
+  return {
+    currentStage,
+    nextStage,
+    nextWeaponId,
+    materials,
   }
 }

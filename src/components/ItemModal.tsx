@@ -16,8 +16,9 @@ import { useLazyMobInfo, useLazyItemDetailed, useLazyDropsByItem } from '@/hooks
 import { findGachaItemOrganized } from '@/lib/gacha-utils'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { useShowDevInfo } from '@/hooks/useShowDevInfo'
-import { isUnwelcomeGuestItem, getMultiStageRecipe } from '@/lib/crafting-utils'
+import { isUnwelcomeGuestItem, getMultiStageRecipe, getNextStageRecipe } from '@/lib/crafting-utils'
 import { CraftingRecipeCard } from './CraftingRecipeCard'
+import { UpgradePathCard } from './UpgradePathCard'
 
 // 商人販售地點資料結構
 interface MerchantLocation {
@@ -261,6 +262,13 @@ export function ItemModal({
     if (!itemId && itemId !== 0) return null
     if (!isUnwelcomeGuestItem(itemId)) return null
     return getMultiStageRecipe(itemId)
+  }, [itemId])
+
+  // 計算升級到下一階段的配方（如果適用）
+  const upgradeRecipe = useMemo(() => {
+    if (!itemId && itemId !== 0) return null
+    if (!isUnwelcomeGuestItem(itemId)) return null
+    return getNextStageRecipe(itemId)
   }, [itemId])
 
   // 查找物品屬性資料（直接使用 ItemsOrganizedData 格式）
@@ -596,6 +604,15 @@ export function ItemModal({
                     onItemClick?.(itemId, '')
                   }}
                 />
+                {/* 升級路徑（1st/2nd/3rd 階段顯示） */}
+                {upgradeRecipe && (
+                  <div className="mt-4">
+                    <UpgradePathCard
+                      recipe={upgradeRecipe}
+                      onItemClick={(itemId) => onItemClick?.(itemId, '')}
+                    />
+                  </div>
+                )}
               </div>
             )}
 
