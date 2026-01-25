@@ -1,85 +1,85 @@
-Item Name,Category,ReqLevel,ReqSTR,ReqDEX,ReqINT,ReqLUK,ReqFAM,Beginner,Warrior,Magician,Bowman,Thief,Pirate,AttackSpeed,STR,DEX,INT,LUK,WATK,MATK,ACCURACY,AVOIDABILITY,SPEED,JUMP,HP,MP,WDEF,MDEF,Upgrades,SellPrice,Untradeable
-1st Unwelcome Guest Earrings,Earring,47,0,0,0,0,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,1,1,1,1,,,,,,,,,,15,5,70000,
-2nd Unwelcome Guest Earrings,Earring,67,0,0,0,0,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,2,2,2,2,,,,,,,100,,,25,5,120000,TRUE
-3rd Unwelcome Guest Earrings,Earring,87,0,0,0,0,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,3,3,3,3,,,,,,,200,,,35,5,180000,TRUE
-Last Unwelcome Guest Earrings,Earring,107,0,0,0,0,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,4,4,4,4,,,,,,,300,,,45,5,220000,TRUE
-1st Unwelcome Guest Warrior Shield,Shield,47,151,0,0,0,,,TRUE,,,,,,1,,,,,,,,,,,,48,19,7,140000,
-2nd Unwelcome Guest Warrior Shield,Shield,67,211,0,0,0,,,TRUE,,,,,,2,,,,,,1,,,,,,55,22,7,200000,TRUE
-3rd Unwelcome Guest Warrior Shield,Shield,87,271,0,0,0,,,TRUE,,,,,,4,,,,,,2,,,,,,65,25,7,240000,TRUE
-Last Unwelcome Guest Warrior Shield,Shield,107,331,0,0,0,,,TRUE,,,,,,6,,,,,,3,,,,,,77,28,7,290000,TRUE
-1st Unwelcome Guest Magician Shield,Shield,47,0,0,142,49,,,,TRUE,,,,,,,1,,,,,,,,,,24,36,7,150000,
-2nd Unwelcome Guest Magician Shield,Shield,67,0,0,202,69,,,,TRUE,,,,,,,2,,,,,,,,,,34,56,7,240000,TRUE
-3rd Unwelcome Guest Magician Shield,Shield,87,0,0,262,89,,,,TRUE,,,,,,,4,,,,,,,,,,42,74,7,280000,TRUE
-Last Unwelcome Guest Magician Shield,Shield,107,0,0,322,109,,,,TRUE,,,,,,,6,,,,,,,,,,51,92,7,320000,TRUE
-1st Unwelcome Guest Thief Shield,Shield,47,0,87,0,144,,,,,,TRUE,,,,,,1,,,,,,,,,30,5,7,120000,
-2nd Unwelcome Guest Thief Shield,Shield,67,0,107,0,184,,,,,,TRUE,,,,,,2,,,,1,,,,,44,10,7,240000,TRUE
-3rd Unwelcome Guest Thief Shield,Shield,87,0,127,0,224,,,,,,TRUE,,,,,,4,,,,2,,,,,58,15,7,280000,TRUE
-Last Unwelcome Guest Thief Shield,Shield,107,0,147,0,264,,,,,,TRUE,,,,,,6,,,,3,,,,,70,20,7,320000,TRUE
-1st Unwelcome Guest Sword,One Handed Sword,47,146,0,0,0,,,TRUE,,,,,4,1,,,,68,,1,,,,,,,,7,100000,
-2nd Unwelcome Guest Sword,One Handed Sword,67,201,0,0,0,,,TRUE,,,,,4,2,,,,85,,2,,,,,,,,7,240000,TRUE
-3rd Unwelcome Guest Sword,One Handed Sword,87,251,0,0,0,,,TRUE,,,,,4,3,,,,96,,3,,,,,,,,7,330000,TRUE
-Last Unwelcome Guest Sword,One Handed Sword,107,311,0,0,0,,,TRUE,,,,,4,4,,,,107,,4,,,,,,,,7,530000,TRUE
-1st Unwelcome Guest Hatchet,One Handed Axe,47,146,0,0,0,,,TRUE,,,,,5,1,,,,65,,1,,,,,,,,7,100000,
-2nd Unwelcome Guest Hatchet,One Handed Axe,67,201,0,0,0,,,TRUE,,,,,5,2,,,,81,,2,,,,,,,,7,240000,TRUE
-3rd Unwelcome Guest Hatchet,One Handed Axe,87,251,0,0,0,,,TRUE,,,,,5,3,,,,91,,3,,,,,,,,7,330000,TRUE
-Last Unwelcome Guest Hatchet,One Handed Axe,107,311,0,0,0,,,TRUE,,,,,5,4,,,,102,,4,,,,,,,,7,680000,TRUE
-1st Unwelcome Guest Hammer,One Handed BW,47,146,0,0,0,,,TRUE,,,,,5,1,,,,65,,1,,,,,,,,7,120000,
-2nd Unwelcome Guest Hammer,One Handed BW,67,201,0,0,0,,,TRUE,,,,,5,2,,,,81,,2,,,,,,,,7,245000,TRUE
-3rd Unwelcome Guest Hammer,One Handed BW,87,251,0,0,0,,,TRUE,,,,,5,3,,,,91,,3,,,,,,,,7,380000,TRUE
-Last Unwelcome Guest Hammer,One Handed BW,107,311,0,0,0,,,TRUE,,,,,5,4,,,,102,,4,,,,,,,,7,477000,TRUE
-1st Unwelcome Guest Dagger (LUK),Dagger,47,0,87,0,144,,,,,,TRUE,,4,,,,1,61,,,1,,,,,,,7,190000,
-2nd Unwelcome Guest Dagger (LUK),Dagger,67,0,107,0,184,,,,,,TRUE,,4,,,,2,76,,,2,,,,,,,7,270000,TRUE
-3rd Unwelcome Guest Dagger (LUK),Dagger,87,0,127,0,224,,,,,,TRUE,,4,,,,3,86,,,3,,,,,,,7,315000,TRUE
-Last Unwelcome Guest Dagger (LUK),Dagger,107,0,147,0,264,,,,,,TRUE,,4,,,,4,97,,,4,,,,,,,7,435000,TRUE
-1st Unwelcome Guest Dagger (STR),Dagger,47,37,87,0,0,,,TRUE,,,TRUE,,3,,,,1,64,,,1,,,,,,,7,210000,
-2nd Unwelcome Guest Dagger (STR),Dagger,67,54,107,0,0,,,TRUE,,,TRUE,,3,,,,2,79,,,2,,,,,,,7,270000,TRUE
-3rd Unwelcome Guest Dagger (STR),Dagger,87,64,127,0,0,,,TRUE,,,TRUE,,3,,,,3,89,,,3,,,,,,,7,320000,TRUE
-Last Unwelcome Guest Dagger (STR),Dagger,107,74,147,0,0,,,TRUE,,,TRUE,,3,,,,4,100,,,4,,,,,,,7,440000,TRUE
-1st Unwelcome Guest Wand,Wand,47,0,0,142,49,,,,TRUE,,,,5,,,1,,26,58,,,,,100,,,,7,180000,
-2nd Unwelcome Guest Wand,Wand,67,0,0,202,69,,,,TRUE,,,,5,,,2,,50,82,,,,,200,,,,7,245000,TRUE
-3rd Unwelcome Guest Wand,Wand,87,0,0,262,89,,,,TRUE,,,,5,,,3,,61,98,,,,,300,,,,7,310000,TRUE
-Last Unwelcome Guest Wand,Wand,107,0,0,322,109,,,,TRUE,,,,5,,,4,,74,120,,,,,400,,,,7,420000,TRUE
-1st Unwelcome Guest Staff,Staff,47,0,0,144,50,,,,TRUE,,,,6,,,1,,44,61,,,,,100,,,,7,125000,
-2nd Unwelcome Guest Staff,Staff,67,0,0,201,70,,,,TRUE,,,,6,,,2,,56,86,,,,,200,,,,7,225000,TRUE
-3rd Unwelcome Guest Staff,Staff,87,0,0,261,90,,,,TRUE,,,,6,,,3,,68,103,,,,,300,,,,7,350000,TRUE
-Last Unwelcome Guest Staff,Staff,107,0,0,321,110,,,,TRUE,,,,6,,,4,,78,127,,,,,400,,,,7,450000,TRUE
-1st Unwelcome Guest Greatsword,Two Handed SwordL,47,151,0,0,0,,,TRUE,,,,,5,1,,,,66,,1,,,,,,,,7,190000,
-2nd Unwelcome Guest Greatsword,Two Handed SwordL,67,211,0,0,0,,,TRUE,,,,,5,2,,,,81,,2,,,,,,,,7,245000,TRUE
-3rd Unwelcome Guest Greatsword,Two Handed SwordL,87,261,0,0,0,,,TRUE,,,,,5,3,,,,90,,3,,,,,,,,7,360000,TRUE
-Last Unwelcome Guest Greatsword,Two Handed SwordL,107,331,0,0,0,,,TRUE,,,,,5,4,,,,100,,4,,,,,,,,7,530000,TRUE
-1st Unwelcome Guest Greataxe,Two Handed Axe,47,151,0,0,0,,,TRUE,,,,,6,1,,,,70,,1,,,,,,,,7,120000,
-2nd Unwelcome Guest Greataxe,Two Handed Axe,67,211,0,0,0,,,TRUE,,,,,6,2,,,,86,,2,,,,,,,,7,245000,TRUE
-3rd Unwelcome Guest Greataxe,Two Handed Axe,87,261,0,0,0,,,TRUE,,,,,6,3,,,,96,,3,,,,,,,,7,340000,TRUE
-Last Unwelcome Guest Greataxe,Two Handed Axe,107,331,0,0,0,,,TRUE,,,,,6,4,,,,106,,4,,,,,,,,7,510000,TRUE
-1st Unwelcome Guest Greathammer,Two Handed BW,47,151,0,0,0,,,TRUE,,,,,6,1,,,,65,,1,,,,,,,,7,130000,
-2nd Unwelcome Guest Greathammer,Two Handed BW,67,211,0,0,0,,,TRUE,,,,,6,2,,,,80,,2,,,,,,,,7,245000,TRUE
-3rd Unwelcome Guest Greathammer,Two Handed BW,87,261,0,0,0,,,TRUE,,,,,6,3,,,,90,,3,,,,,,,,7,340000,TRUE
-Last Unwelcome Guest Greathammer,Two Handed BW,107,331,0,0,0,,,TRUE,,,,,6,4,,,,99,,4,,,,,,,,7,490000,TRUE
-1st Unwelcome Guest Spear,Spear,47,151,0,0,0,,,TRUE,,,,,6,1,,,,65,,1,,,,,,,,7,130000,
-2nd Unwelcome Guest Spear,Spear,67,211,0,0,0,,,TRUE,,,,,6,2,,,,80,,2,,,,,,,,7,245000,TRUE
-3rd Unwelcome Guest Spear,Spear,87,261,0,0,0,,,TRUE,,,,,6,3,,,,90,,3,,,,,,,,7,340000,TRUE
-Last Unwelcome Guest Spear,Spear,107,331,0,0,0,,,TRUE,,,,,6,4,,,,99,,4,,,,,,,,7,515000,TRUE
-1st Unwelcome Guest Polearm,Polearm,47,151,0,0,0,,,TRUE,,,,,7,1,,,,65,,1,,,,,,,,7,130000,
-2nd Unwelcome Guest Polearm,Polearm,67,211,0,0,0,,,TRUE,,,,,7,2,,,,79,,2,,,,,,,,7,270000,TRUE
-3rd Unwelcome Guest Polearm,Polearm,87,261,0,0,0,,,TRUE,,,,,7,3,,,,89,,3,,,,,,,,7,410000,TRUE
-Last Unwelcome Guest Polearm,Polearm,107,331,0,0,0,,,TRUE,,,,,7,4,,,,98,,4,,,,,,,,7,550000,TRUE
-1st Unwelcome Guest Bow,Bow,47,54,159,0,0,,,,,TRUE,,,6,,1,,,62,,,,,,,,,,7,180000,
-2nd Unwelcome Guest Bow,Bow,67,72,199,0,0,,,,,TRUE,,,6,,2,,,79,,,,5,,,,,,7,285000,TRUE
-3rd Unwelcome Guest Bow,Bow,87,92,239,0,0,,,,,TRUE,,,6,,3,,,89,,,,10,,,,,,7,390000,TRUE
-Last Unwelcome Guest Bow,Bow,107,112,279,0,0,,,,,TRUE,,,6,,4,,,99,,,,15,,,,,,7,480000,TRUE
-1st Unwelcome Guest Crossbow,Crossbow,47,47,140,0,0,,,,,TRUE,,,6,,1,,,65,,,,,,,,,,7,155000,
-2nd Unwelcome Guest Crossbow,Crossbow,67,67,211,0,0,,,,,TRUE,,,6,,2,,,82,,,,5,,,,,,7,285000,TRUE
-3rd Unwelcome Guest Crossbow,Crossbow,87,87,261,0,0,,,,,TRUE,,,6,,3,,,91,,,,10,,,,,,7,385000,TRUE
-Last Unwelcome Guest Crossbow,Crossbow,107,107,291,0,0,,,,,TRUE,,,6,,4,,,102,,,,15,,,,,,7,490000,TRUE
-1st Unwelcome Guest Claw,Claw,47,0,87,0,131,,,,,,TRUE,,4,,,,1,25,,,1,,,,,1,,7,80000,
-2nd Unwelcome Guest Claw,Claw,67,0,107,0,191,,,,,,TRUE,,4,,,,2,33,,,2,,,,,2,,7,290000,TRUE
-3rd Unwelcome Guest Claw,Claw,87,0,127,0,251,,,,,,TRUE,,4,,,,3,40,,,3,,,,,4,,7,435000,TRUE
-Last Unwelcome Guest Claw,Claw,107,0,147,0,311,,,,,,TRUE,,4,,,,4,49,,,4,,,,,8,,7,560000,TRUE
-1st Unwelcome Guest Knuckle,Knuckle,47,111,47,0,0,,,,,,,TRUE,5,1,,,,48,,1,,,,,,,,7,115000,
-2nd Unwelcome Guest Knuckle,Knuckle,67,171,67,0,0,,,,,,,TRUE,5,2,,,,61,,2,,,,,,,,7,295000,TRUE
-3rd Unwelcome Guest Knuckle,Knuckle,87,231,87,0,0,,,,,,,TRUE,5,3,,,,69,,3,,,,,,,,7,380000,TRUE
-Last Unwelcome Guest Knuckle,Knuckle,107,291,107,0,0,,,,,,,TRUE,5,4,,,,77,,4,,,,,,,,7,500000,TRUE
-1st Unwelcome Guest Gun,Gun,47,47,131,0,0,,,,,,,TRUE,5,,1,,,47,,,,,,,,,,7,120000,
-2nd Unwelcome Guest Gun,Gun,67,67,201,0,0,,,,,,,TRUE,5,,2,,,61,,,,2,1,,,,,7,295000,TRUE
-3rd Unwelcome Guest Gun,Gun,87,87,266,0,0,,,,,,,TRUE,5,,3,,,69,,,,4,2,,,,,7,390000,TRUE
-Last Unwelcome Guest Gun,Gun,107,107,306,0,0,,,,,,,TRUE,5,,4,,,77,,,,8,4,,,,,7,510000,TRUE
+Item Name                           , Category         , ReqLevel, ReqSTR, ReqDEX, ReqINT, ReqLUK, ReqFAM, Beginner, Warrior, Magician, Bowman, Thief, Pirate, AttackSpeed, STR, DEX, INT, LUK, WATK, MATK, ACCURACY, AVOIDABILITY, SPEED, JUMP, HP , MP, WDEF, MDEF, Upgrades, SellPrice, Untradeable
+1st Unwelcome Guest Earrings        , Earring          ,       47,      0,      0,      0,      0,       , TRUE    , TRUE   , TRUE    , TRUE  , TRUE , TRUE  ,            ,   1,   1,   1,   1,     ,     ,         ,             ,      ,     ,    ,   ,     ,   15,        5,     70000, 
+2nd Unwelcome Guest Earrings        , Earring          ,       67,      0,      0,      0,      0,       , TRUE    , TRUE   , TRUE    , TRUE  , TRUE , TRUE  ,            ,   2,   2,   2,   2,     ,     ,         ,             ,      ,     , 100,   ,     ,   25,        5,    120000, TRUE
+3rd Unwelcome Guest Earrings        , Earring          ,       87,      0,      0,      0,      0,       , TRUE    , TRUE   , TRUE    , TRUE  , TRUE , TRUE  ,            ,   3,   3,   3,   3,     ,     ,         ,             ,      ,     , 200,   ,     ,   35,        5,    180000, TRUE
+Last Unwelcome Guest Earrings       , Earring          ,      107,      0,      0,      0,      0,       , TRUE    , TRUE   , TRUE    , TRUE  , TRUE , TRUE  ,            ,   4,   4,   4,   4,     ,     ,         ,             ,      ,     , 300,   ,     ,   45,        5,    220000, TRUE
+1st Unwelcome Guest Warrior Shield  , Shield           ,       47,    151,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,            ,   1,    ,    ,    ,     ,     ,         ,             ,      ,     ,    ,   ,   48,   19,        7,    140000, 
+2nd Unwelcome Guest Warrior Shield  , Shield           ,       67,    211,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,            ,   2,    ,    ,    ,     ,     ,        1,             ,      ,     ,    ,   ,   55,   22,        7,    200000, TRUE
+3rd Unwelcome Guest Warrior Shield  , Shield           ,       87,    271,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,            ,   4,    ,    ,    ,     ,     ,        2,             ,      ,     ,    ,   ,   65,   25,        7,    240000, TRUE
+Last Unwelcome Guest Warrior Shield , Shield           ,      107,    331,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,            ,   6,    ,    ,    ,     ,     ,        3,             ,      ,     ,    ,   ,   77,   28,        7,    290000, TRUE
+1st Unwelcome Guest Magician Shield , Shield           ,       47,      0,      0,    142,     49,       ,         ,        , TRUE    ,       ,      ,       ,            ,    ,    ,   1,    ,     ,     ,         ,             ,      ,     ,    ,   ,   24,   36,        7,    150000, 
+2nd Unwelcome Guest Magician Shield , Shield           ,       67,      0,      0,    202,     69,       ,         ,        , TRUE    ,       ,      ,       ,            ,    ,    ,   2,    ,     ,     ,         ,             ,      ,     ,    ,   ,   34,   56,        7,    240000, TRUE
+3rd Unwelcome Guest Magician Shield , Shield           ,       87,      0,      0,    262,     89,       ,         ,        , TRUE    ,       ,      ,       ,            ,    ,    ,   4,    ,     ,     ,         ,             ,      ,     ,    ,   ,   42,   74,        7,    280000, TRUE
+Last Unwelcome Guest Magician Shield, Shield           ,      107,      0,      0,    322,    109,       ,         ,        , TRUE    ,       ,      ,       ,            ,    ,    ,   6,    ,     ,     ,         ,             ,      ,     ,    ,   ,   51,   92,        7,    320000, TRUE
+1st Unwelcome Guest Thief Shield    , Shield           ,       47,      0,     87,      0,    144,       ,         ,        ,         ,       , TRUE ,       ,            ,    ,    ,    ,   1,     ,     ,         ,             ,      ,     ,    ,   ,   30,    5,        7,    120000, 
+2nd Unwelcome Guest Thief Shield    , Shield           ,       67,      0,    107,      0,    184,       ,         ,        ,         ,       , TRUE ,       ,            ,    ,    ,    ,   2,     ,     ,         ,            1,      ,     ,    ,   ,   44,   10,        7,    240000, TRUE
+3rd Unwelcome Guest Thief Shield    , Shield           ,       87,      0,    127,      0,    224,       ,         ,        ,         ,       , TRUE ,       ,            ,    ,    ,    ,   4,     ,     ,         ,            2,      ,     ,    ,   ,   58,   15,        7,    280000, TRUE
+Last Unwelcome Guest Thief Shield   , Shield           ,      107,      0,    147,      0,    264,       ,         ,        ,         ,       , TRUE ,       ,            ,    ,    ,    ,   6,     ,     ,         ,            3,      ,     ,    ,   ,   70,   20,        7,    320000, TRUE
+1st Unwelcome Guest Sword           , One Handed Sword ,       47,    146,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           4,   1,    ,    ,    ,   68,     ,        1,             ,      ,     ,    ,   ,     ,     ,        7,    100000, 
+2nd Unwelcome Guest Sword           , One Handed Sword ,       67,    201,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           4,   2,    ,    ,    ,   85,     ,        2,             ,      ,     ,    ,   ,     ,     ,        7,    240000, TRUE
+3rd Unwelcome Guest Sword           , One Handed Sword ,       87,    251,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           4,   3,    ,    ,    ,   96,     ,        3,             ,      ,     ,    ,   ,     ,     ,        7,    330000, TRUE
+Last Unwelcome Guest Sword          , One Handed Sword ,      107,    311,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           4,   4,    ,    ,    ,  107,     ,        4,             ,      ,     ,    ,   ,     ,     ,        7,    530000, TRUE
+1st Unwelcome Guest Hatchet         , One Handed Axe   ,       47,    146,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           5,   1,    ,    ,    ,   65,     ,        1,             ,      ,     ,    ,   ,     ,     ,        7,    100000, 
+2nd Unwelcome Guest Hatchet         , One Handed Axe   ,       67,    201,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           5,   2,    ,    ,    ,   81,     ,        2,             ,      ,     ,    ,   ,     ,     ,        7,    240000, TRUE
+3rd Unwelcome Guest Hatchet         , One Handed Axe   ,       87,    251,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           5,   3,    ,    ,    ,   91,     ,        3,             ,      ,     ,    ,   ,     ,     ,        7,    330000, TRUE
+Last Unwelcome Guest Hatchet        , One Handed Axe   ,      107,    311,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           5,   4,    ,    ,    ,  102,     ,        4,             ,      ,     ,    ,   ,     ,     ,        7,    680000, TRUE
+1st Unwelcome Guest Hammer          , One Handed BW    ,       47,    146,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           5,   1,    ,    ,    ,   65,     ,        1,             ,      ,     ,    ,   ,     ,     ,        7,    120000, 
+2nd Unwelcome Guest Hammer          , One Handed BW    ,       67,    201,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           5,   2,    ,    ,    ,   81,     ,        2,             ,      ,     ,    ,   ,     ,     ,        7,    245000, TRUE
+3rd Unwelcome Guest Hammer          , One Handed BW    ,       87,    251,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           5,   3,    ,    ,    ,   91,     ,        3,             ,      ,     ,    ,   ,     ,     ,        7,    380000, TRUE
+Last Unwelcome Guest Hammer         , One Handed BW    ,      107,    311,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           5,   4,    ,    ,    ,  102,     ,        4,             ,      ,     ,    ,   ,     ,     ,        7,    477000, TRUE
+1st Unwelcome Guest Dagger (LUK)    , Dagger           ,       47,      0,     87,      0,    144,       ,         ,        ,         ,       , TRUE ,       ,           4,    ,    ,    ,   1,   61,     ,         ,            1,      ,     ,    ,   ,     ,     ,        7,    190000, 
+2nd Unwelcome Guest Dagger (LUK)    , Dagger           ,       67,      0,    107,      0,    184,       ,         ,        ,         ,       , TRUE ,       ,           4,    ,    ,    ,   2,   76,     ,         ,            2,      ,     ,    ,   ,     ,     ,        7,    270000, TRUE
+3rd Unwelcome Guest Dagger (LUK)    , Dagger           ,       87,      0,    127,      0,    224,       ,         ,        ,         ,       , TRUE ,       ,           4,    ,    ,    ,   3,   86,     ,         ,            3,      ,     ,    ,   ,     ,     ,        7,    315000, TRUE
+Last Unwelcome Guest Dagger (LUK)   , Dagger           ,      107,      0,    147,      0,    264,       ,         ,        ,         ,       , TRUE ,       ,           4,    ,    ,    ,   4,   97,     ,         ,            4,      ,     ,    ,   ,     ,     ,        7,    435000, TRUE
+1st Unwelcome Guest Dagger (STR)    , Dagger           ,       47,     37,     87,      0,      0,       ,         , TRUE   ,         ,       , TRUE ,       ,           3,    ,    ,    ,   1,   64,     ,         ,            1,      ,     ,    ,   ,     ,     ,        7,    210000, 
+2nd Unwelcome Guest Dagger (STR)    , Dagger           ,       67,     54,    107,      0,      0,       ,         , TRUE   ,         ,       , TRUE ,       ,           3,    ,    ,    ,   2,   79,     ,         ,            2,      ,     ,    ,   ,     ,     ,        7,    270000, TRUE
+3rd Unwelcome Guest Dagger (STR)    , Dagger           ,       87,     64,    127,      0,      0,       ,         , TRUE   ,         ,       , TRUE ,       ,           3,    ,    ,    ,   3,   89,     ,         ,            3,      ,     ,    ,   ,     ,     ,        7,    320000, TRUE
+Last Unwelcome Guest Dagger (STR)   , Dagger           ,      107,     74,    147,      0,      0,       ,         , TRUE   ,         ,       , TRUE ,       ,           3,    ,    ,    ,   4,  100,     ,         ,            4,      ,     ,    ,   ,     ,     ,        7,    440000, TRUE
+1st Unwelcome Guest Wand            , Wand             ,       47,      0,      0,    142,     49,       ,         ,        , TRUE    ,       ,      ,       ,           5,    ,    ,   1,    ,   26,   58,         ,             ,      ,     , 100,   ,     ,     ,        7,    180000, 
+2nd Unwelcome Guest Wand            , Wand             ,       67,      0,      0,    202,     69,       ,         ,        , TRUE    ,       ,      ,       ,           5,    ,    ,   2,    ,   50,   82,         ,             ,      ,     , 200,   ,     ,     ,        7,    245000, TRUE
+3rd Unwelcome Guest Wand            , Wand             ,       87,      0,      0,    262,     89,       ,         ,        , TRUE    ,       ,      ,       ,           5,    ,    ,   3,    ,   61,   98,         ,             ,      ,     , 300,   ,     ,     ,        7,    310000, TRUE
+Last Unwelcome Guest Wand           , Wand             ,      107,      0,      0,    322,    109,       ,         ,        , TRUE    ,       ,      ,       ,           5,    ,    ,   4,    ,   74,  120,         ,             ,      ,     , 400,   ,     ,     ,        7,    420000, TRUE
+1st Unwelcome Guest Staff           , Staff            ,       47,      0,      0,    144,     50,       ,         ,        , TRUE    ,       ,      ,       ,           6,    ,    ,   1,    ,   44,   61,         ,             ,      ,     , 100,   ,     ,     ,        7,    125000, 
+2nd Unwelcome Guest Staff           , Staff            ,       67,      0,      0,    201,     70,       ,         ,        , TRUE    ,       ,      ,       ,           6,    ,    ,   2,    ,   56,   86,         ,             ,      ,     , 200,   ,     ,     ,        7,    225000, TRUE
+3rd Unwelcome Guest Staff           , Staff            ,       87,      0,      0,    261,     90,       ,         ,        , TRUE    ,       ,      ,       ,           6,    ,    ,   3,    ,   68,  103,         ,             ,      ,     , 300,   ,     ,     ,        7,    350000, TRUE
+Last Unwelcome Guest Staff          , Staff            ,      107,      0,      0,    321,    110,       ,         ,        , TRUE    ,       ,      ,       ,           6,    ,    ,   4,    ,   78,  127,         ,             ,      ,     , 400,   ,     ,     ,        7,    450000, TRUE
+1st Unwelcome Guest Greatsword      , Two Handed SwordL,       47,    151,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           5,   1,    ,    ,    ,   66,     ,        1,             ,      ,     ,    ,   ,     ,     ,        7,    190000, 
+2nd Unwelcome Guest Greatsword      , Two Handed SwordL,       67,    211,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           5,   2,    ,    ,    ,   81,     ,        2,             ,      ,     ,    ,   ,     ,     ,        7,    245000, TRUE
+3rd Unwelcome Guest Greatsword      , Two Handed SwordL,       87,    261,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           5,   3,    ,    ,    ,   90,     ,        3,             ,      ,     ,    ,   ,     ,     ,        7,    360000, TRUE
+Last Unwelcome Guest Greatsword     , Two Handed SwordL,      107,    331,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           5,   4,    ,    ,    ,  100,     ,        4,             ,      ,     ,    ,   ,     ,     ,        7,    530000, TRUE
+1st Unwelcome Guest Greataxe        , Two Handed Axe   ,       47,    151,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           6,   1,    ,    ,    ,   70,     ,        1,             ,      ,     ,    ,   ,     ,     ,        7,    120000, 
+2nd Unwelcome Guest Greataxe        , Two Handed Axe   ,       67,    211,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           6,   2,    ,    ,    ,   86,     ,        2,             ,      ,     ,    ,   ,     ,     ,        7,    245000, TRUE
+3rd Unwelcome Guest Greataxe        , Two Handed Axe   ,       87,    261,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           6,   3,    ,    ,    ,   96,     ,        3,             ,      ,     ,    ,   ,     ,     ,        7,    340000, TRUE
+Last Unwelcome Guest Greataxe       , Two Handed Axe   ,      107,    331,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           6,   4,    ,    ,    ,  106,     ,        4,             ,      ,     ,    ,   ,     ,     ,        7,    510000, TRUE
+1st Unwelcome Guest Greathammer     , Two Handed BW    ,       47,    151,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           6,   1,    ,    ,    ,   65,     ,        1,             ,      ,     ,    ,   ,     ,     ,        7,    130000, 
+2nd Unwelcome Guest Greathammer     , Two Handed BW    ,       67,    211,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           6,   2,    ,    ,    ,   80,     ,        2,             ,      ,     ,    ,   ,     ,     ,        7,    245000, TRUE
+3rd Unwelcome Guest Greathammer     , Two Handed BW    ,       87,    261,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           6,   3,    ,    ,    ,   90,     ,        3,             ,      ,     ,    ,   ,     ,     ,        7,    340000, TRUE
+Last Unwelcome Guest Greathammer    , Two Handed BW    ,      107,    331,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           6,   4,    ,    ,    ,   99,     ,        4,             ,      ,     ,    ,   ,     ,     ,        7,    490000, TRUE
+1st Unwelcome Guest Spear           , Spear            ,       47,    151,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           6,   1,    ,    ,    ,   65,     ,        1,             ,      ,     ,    ,   ,     ,     ,        7,    130000, 
+2nd Unwelcome Guest Spear           , Spear            ,       67,    211,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           6,   2,    ,    ,    ,   80,     ,        2,             ,      ,     ,    ,   ,     ,     ,        7,    245000, TRUE
+3rd Unwelcome Guest Spear           , Spear            ,       87,    261,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           6,   3,    ,    ,    ,   90,     ,        3,             ,      ,     ,    ,   ,     ,     ,        7,    340000, TRUE
+Last Unwelcome Guest Spear          , Spear            ,      107,    331,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           6,   4,    ,    ,    ,   99,     ,        4,             ,      ,     ,    ,   ,     ,     ,        7,    515000, TRUE
+1st Unwelcome Guest Polearm         , Polearm          ,       47,    151,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           7,   1,    ,    ,    ,   65,     ,        1,             ,      ,     ,    ,   ,     ,     ,        7,    130000, 
+2nd Unwelcome Guest Polearm         , Polearm          ,       67,    211,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           7,   2,    ,    ,    ,   79,     ,        2,             ,      ,     ,    ,   ,     ,     ,        7,    270000, TRUE
+3rd Unwelcome Guest Polearm         , Polearm          ,       87,    261,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           7,   3,    ,    ,    ,   89,     ,        3,             ,      ,     ,    ,   ,     ,     ,        7,    410000, TRUE
+Last Unwelcome Guest Polearm        , Polearm          ,      107,    331,      0,      0,      0,       ,         , TRUE   ,         ,       ,      ,       ,           7,   4,    ,    ,    ,   98,     ,        4,             ,      ,     ,    ,   ,     ,     ,        7,    550000, TRUE
+1st Unwelcome Guest Bow             , Bow              ,       47,     54,    159,      0,      0,       ,         ,        ,         , TRUE  ,      ,       ,           6,    ,   1,    ,    ,   62,     ,         ,             ,      ,     ,    ,   ,     ,     ,        7,    180000, 
+2nd Unwelcome Guest Bow             , Bow              ,       67,     72,    199,      0,      0,       ,         ,        ,         , TRUE  ,      ,       ,           6,    ,   2,    ,    ,   79,     ,         ,             ,     5,     ,    ,   ,     ,     ,        7,    285000, TRUE
+3rd Unwelcome Guest Bow             , Bow              ,       87,     92,    239,      0,      0,       ,         ,        ,         , TRUE  ,      ,       ,           6,    ,   3,    ,    ,   89,     ,         ,             ,    10,     ,    ,   ,     ,     ,        7,    390000, TRUE
+Last Unwelcome Guest Bow            , Bow              ,      107,    112,    279,      0,      0,       ,         ,        ,         , TRUE  ,      ,       ,           6,    ,   4,    ,    ,   99,     ,         ,             ,    15,     ,    ,   ,     ,     ,        7,    480000, TRUE
+1st Unwelcome Guest Crossbow        , Crossbow         ,       47,     47,    140,      0,      0,       ,         ,        ,         , TRUE  ,      ,       ,           6,    ,   1,    ,    ,   65,     ,         ,             ,      ,     ,    ,   ,     ,     ,        7,    155000, 
+2nd Unwelcome Guest Crossbow        , Crossbow         ,       67,     67,    211,      0,      0,       ,         ,        ,         , TRUE  ,      ,       ,           6,    ,   2,    ,    ,   82,     ,         ,             ,     5,     ,    ,   ,     ,     ,        7,    285000, TRUE
+3rd Unwelcome Guest Crossbow        , Crossbow         ,       87,     87,    261,      0,      0,       ,         ,        ,         , TRUE  ,      ,       ,           6,    ,   3,    ,    ,   91,     ,         ,             ,    10,     ,    ,   ,     ,     ,        7,    385000, TRUE
+Last Unwelcome Guest Crossbow       , Crossbow         ,      107,    107,    291,      0,      0,       ,         ,        ,         , TRUE  ,      ,       ,           6,    ,   4,    ,    ,  102,     ,         ,             ,    15,     ,    ,   ,     ,     ,        7,    490000, TRUE
+1st Unwelcome Guest Claw            , Claw             ,       47,      0,     87,      0,    131,       ,         ,        ,         ,       , TRUE ,       ,           4,    ,    ,    ,   1,   25,     ,         ,            1,      ,     ,    ,   ,    1,     ,        7,     80000, 
+2nd Unwelcome Guest Claw            , Claw             ,       67,      0,    107,      0,    191,       ,         ,        ,         ,       , TRUE ,       ,           4,    ,    ,    ,   2,   33,     ,         ,            2,      ,     ,    ,   ,    2,     ,        7,    290000, TRUE
+3rd Unwelcome Guest Claw            , Claw             ,       87,      0,    127,      0,    251,       ,         ,        ,         ,       , TRUE ,       ,           4,    ,    ,    ,   3,   40,     ,         ,            3,      ,     ,    ,   ,    4,     ,        7,    435000, TRUE
+Last Unwelcome Guest Claw           , Claw             ,      107,      0,    147,      0,    311,       ,         ,        ,         ,       , TRUE ,       ,           4,    ,    ,    ,   4,   49,     ,         ,            4,      ,     ,    ,   ,    8,     ,        7,    560000, TRUE
+1st Unwelcome Guest Knuckle         , Knuckle          ,       47,    111,     47,      0,      0,       ,         ,        ,         ,       ,      , TRUE  ,           5,   1,    ,    ,    ,   48,     ,        1,             ,      ,     ,    ,   ,     ,     ,        7,    115000, 
+2nd Unwelcome Guest Knuckle         , Knuckle          ,       67,    171,     67,      0,      0,       ,         ,        ,         ,       ,      , TRUE  ,           5,   2,    ,    ,    ,   61,     ,        2,             ,      ,     ,    ,   ,     ,     ,        7,    295000, TRUE
+3rd Unwelcome Guest Knuckle         , Knuckle          ,       87,    231,     87,      0,      0,       ,         ,        ,         ,       ,      , TRUE  ,           5,   3,    ,    ,    ,   69,     ,        3,             ,      ,     ,    ,   ,     ,     ,        7,    380000, TRUE
+Last Unwelcome Guest Knuckle        , Knuckle          ,      107,    291,    107,      0,      0,       ,         ,        ,         ,       ,      , TRUE  ,           5,   4,    ,    ,    ,   77,     ,        4,             ,      ,     ,    ,   ,     ,     ,        7,    500000, TRUE
+1st Unwelcome Guest Gun             , Gun              ,       47,     47,    131,      0,      0,       ,         ,        ,         ,       ,      , TRUE  ,           5,    ,   1,    ,    ,   47,     ,         ,             ,      ,     ,    ,   ,     ,     ,        7,    120000, 
+2nd Unwelcome Guest Gun             , Gun              ,       67,     67,    201,      0,      0,       ,         ,        ,         ,       ,      , TRUE  ,           5,    ,   2,    ,    ,   61,     ,         ,             ,     2,    1,    ,   ,     ,     ,        7,    295000, TRUE
+3rd Unwelcome Guest Gun             , Gun              ,       87,     87,    266,      0,      0,       ,         ,        ,         ,       ,      , TRUE  ,           5,    ,   3,    ,    ,   69,     ,         ,             ,     4,    2,    ,   ,     ,     ,        7,    390000, TRUE
+Last Unwelcome Guest Gun            , Gun              ,      107,    107,    306,      0,      0,       ,         ,        ,         ,       ,      , TRUE  ,           5,    ,   4,    ,    ,   77,     ,         ,             ,     8,    4,    ,   ,     ,     ,        7,    510000, TRUE
