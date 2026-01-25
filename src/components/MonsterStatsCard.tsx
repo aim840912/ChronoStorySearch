@@ -375,46 +375,46 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
       )}
       </div>
 
-      {/* 屬性弱點 - 顯示 weakness === 3 (新 API 格式) */}
-      {(stats.fire_weakness === 3 ||
-        stats.ice_weakness === 3 ||
-        stats.lightning_weakness === 3 ||
-        stats.holy_weakness === 3 ||
-        stats.poison_weakness === 3) && (
+      {/* 屬性弱點 - 顯示 weakness === 1 (受到增加傷害) */}
+      {(stats.fire_weakness === 1 ||
+        stats.ice_weakness === 1 ||
+        stats.lightning_weakness === 1 ||
+        stats.holy_weakness === 1 ||
+        stats.poison_weakness === 1) && (
         <div className="mt-4">
           <h4 className="text-sm font-semibold text-blue-900 dark:text-blue-100 mb-2">
             {t('monster.weaknesses')}
           </h4>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-            {stats.fire_weakness === 3 && (
+            {stats.fire_weakness === 1 && (
               <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-2 border border-red-200 dark:border-red-800">
                 <div className="text-sm font-medium text-red-700 dark:text-red-300">
                   {t('monster.fire_weakness')}
                 </div>
               </div>
             )}
-            {stats.ice_weakness === 3 && (
+            {stats.ice_weakness === 1 && (
               <div className="bg-cyan-50 dark:bg-cyan-900/20 rounded-lg p-2 border border-cyan-200 dark:border-cyan-800">
                 <div className="text-sm font-medium text-cyan-700 dark:text-cyan-300">
                   {t('monster.ice_weakness')}
                 </div>
               </div>
             )}
-            {stats.lightning_weakness === 3 && (
+            {stats.lightning_weakness === 1 && (
               <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-2 border border-yellow-200 dark:border-yellow-800">
                 <div className="text-sm font-medium text-yellow-700 dark:text-yellow-300">
                   {t('monster.lightning_weakness')}
                 </div>
               </div>
             )}
-            {stats.holy_weakness === 3 && (
+            {stats.holy_weakness === 1 && (
               <div className="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-2 border border-purple-200 dark:border-purple-800">
                 <div className="text-sm font-medium text-purple-700 dark:text-purple-300">
                   {t('monster.holy_weakness')}
                 </div>
               </div>
             )}
-            {stats.poison_weakness === 3 && (
+            {stats.poison_weakness === 1 && (
               <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-2 border border-green-200 dark:border-green-800">
                 <div className="text-sm font-medium text-green-700 dark:text-green-300">
                   {t('monster.poison_weakness')}
@@ -425,46 +425,46 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
         </div>
       )}
 
-      {/* 屬性抗性 - 顯示 weakness === 2 (新 API 格式) */}
-      {(stats.fire_weakness === 2 ||
-        stats.ice_weakness === 2 ||
-        stats.lightning_weakness === 2 ||
-        stats.holy_weakness === 2 ||
-        stats.poison_weakness === 2) && (
+      {/* 屬性抗性 - 顯示 weakness === -1 (受到減少傷害) */}
+      {(stats.fire_weakness === -1 ||
+        stats.ice_weakness === -1 ||
+        stats.lightning_weakness === -1 ||
+        stats.holy_weakness === -1 ||
+        stats.poison_weakness === -1) && (
         <div className="mt-4">
           <h4 className="text-sm font-semibold text-blue-900 dark:text-blue-100 mb-2">
             {t('monster.resistances')}
           </h4>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-            {stats.fire_weakness === 2 && (
+            {stats.fire_weakness === -1 && (
               <div className="bg-red-900/20 dark:bg-red-950/40 rounded-lg p-2 border border-red-900 dark:border-red-950">
                 <div className="text-sm font-medium text-red-200 dark:text-red-300">
                   {t('monster.fire_resistance')}
                 </div>
               </div>
             )}
-            {stats.ice_weakness === 2 && (
+            {stats.ice_weakness === -1 && (
               <div className="bg-cyan-900/20 dark:bg-cyan-950/40 rounded-lg p-2 border border-cyan-900 dark:border-cyan-950">
                 <div className="text-sm font-medium text-cyan-200 dark:text-cyan-300">
                   {t('monster.ice_resistance')}
                 </div>
               </div>
             )}
-            {stats.lightning_weakness === 2 && (
+            {stats.lightning_weakness === -1 && (
               <div className="bg-amber-900/20 dark:bg-amber-950/40 rounded-lg p-2 border border-amber-900 dark:border-amber-950">
                 <div className="text-sm font-medium text-amber-200 dark:text-amber-300">
                   {t('monster.lightning_resistance')}
                 </div>
               </div>
             )}
-            {stats.holy_weakness === 2 && (
+            {stats.holy_weakness === -1 && (
               <div className="bg-purple-900/20 dark:bg-purple-950/40 rounded-lg p-2 border border-purple-900 dark:border-purple-950">
                 <div className="text-sm font-medium text-purple-200 dark:text-purple-300">
                   {t('monster.holy_resistance')}
                 </div>
               </div>
             )}
-            {stats.poison_weakness === 2 && (
+            {stats.poison_weakness === -1 && (
               <div className="bg-green-900/20 dark:bg-green-950/40 rounded-lg p-2 border border-green-900 dark:border-green-950">
                 <div className="text-sm font-medium text-green-200 dark:text-green-300">
                   {t('monster.poison_resistance')}
@@ -475,57 +475,49 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
         </div>
       )}
 
-      {/* 屬性免疫 - 顯示 weakness === 1 (新 API 格式) */}
-      {(stats.fire_weakness === 1 ||
-        stats.ice_weakness === 1 ||
-        stats.lightning_weakness === 1 ||
-        stats.holy_weakness === 1 ||
-        stats.poison_weakness === 1) && (
+      {/* 註：weakness === 0 或 null 代表「普通」，不需要顯示任何內容 */}
+
+      {/* 狀態免疫 - 顯示 immuneToHeal/Poison/Burn/Freeze === true */}
+      {(stats.immuneToHeal ||
+        stats.immuneToPoison ||
+        stats.immuneToBurn ||
+        stats.immuneToFreeze) && (
         <div className="mt-4">
           <h4 className="text-sm font-semibold text-blue-900 dark:text-blue-100 mb-2">
-            {t('monster.immunities')}
+            {t('monster.status_immunities')}
           </h4>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-            {stats.fire_weakness === 1 && (
-              <div className="bg-gray-800 dark:bg-gray-900 rounded-lg p-2 border border-gray-600 dark:border-gray-700">
-                <div className="text-sm font-medium text-gray-100 dark:text-gray-200">
-                  {t('monster.fire_immunity')}
+            {stats.immuneToHeal && (
+              <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-2 border border-gray-300 dark:border-gray-600">
+                <div className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  {t('monster.immuneToHeal')}
                 </div>
               </div>
             )}
-            {stats.ice_weakness === 1 && (
-              <div className="bg-gray-800 dark:bg-gray-900 rounded-lg p-2 border border-gray-600 dark:border-gray-700">
-                <div className="text-sm font-medium text-gray-100 dark:text-gray-200">
-                  {t('monster.ice_immunity')}
+            {stats.immuneToPoison && (
+              <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-2 border border-gray-300 dark:border-gray-600">
+                <div className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  {t('monster.immuneToPoison')}
                 </div>
               </div>
             )}
-            {stats.lightning_weakness === 1 && (
-              <div className="bg-gray-800 dark:bg-gray-900 rounded-lg p-2 border border-gray-600 dark:border-gray-700">
-                <div className="text-sm font-medium text-gray-100 dark:text-gray-200">
-                  {t('monster.lightning_immunity')}
+            {stats.immuneToBurn && (
+              <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-2 border border-gray-300 dark:border-gray-600">
+                <div className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  {t('monster.immuneToBurn')}
                 </div>
               </div>
             )}
-            {stats.holy_weakness === 1 && (
-              <div className="bg-gray-800 dark:bg-gray-900 rounded-lg p-2 border border-gray-600 dark:border-gray-700">
-                <div className="text-sm font-medium text-gray-100 dark:text-gray-200">
-                  {t('monster.holy_immunity')}
-                </div>
-              </div>
-            )}
-            {stats.poison_weakness === 1 && (
-              <div className="bg-gray-800 dark:bg-gray-900 rounded-lg p-2 border border-gray-600 dark:border-gray-700">
-                <div className="text-sm font-medium text-gray-100 dark:text-gray-200">
-                  {t('monster.poison_immunity')}
+            {stats.immuneToFreeze && (
+              <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-2 border border-gray-300 dark:border-gray-600">
+                <div className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  {t('monster.immuneToFreeze')}
                 </div>
               </div>
             )}
           </div>
         </div>
       )}
-
-      {/* 註：weakness === null 代表「普通」，不需要顯示任何內容 */}
 
     </div>
   )
