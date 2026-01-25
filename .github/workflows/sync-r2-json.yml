@@ -18,7 +18,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0  # 需要完整歷史以比較多 commit push
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
@@ -50,8 +50,16 @@ jobs:
       - name: Get changed JSON files
         id: changed
         run: |
-          # Get list of changed JSON files in chronostoryData
-          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- 'chronostoryData/**/*.json' | tr '\n' ' ')
+          # 比較整個 push 範圍，而非只比較最新 commit
+          if [ "${{ github.event.before }}" = "0000000000000000000000000000000000000000" ]; then
+            # 新分支的第一次 push，只能比較最新 commit
+            echo "First push to branch, comparing HEAD~1"
+            CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- 'chronostoryData/**/*.json' | tr '\n' ' ')
+          else
+            # 正常 push，比較整個範圍（從上次 push 到現在）
+            echo "Comparing ${{ github.event.before }}..${{ github.sha }}"
+            CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- 'chronostoryData/**/*.json' | tr '\n' ' ')
+          fi
           echo "files=$CHANGED_FILES" >> $GITHUB_OUTPUT
           echo "Changed files: $CHANGED_FILES"
 
