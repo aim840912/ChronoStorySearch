@@ -17,7 +17,7 @@
     "reqDEX": 107,
     "reqINT": 0,
     "reqLUK": 184,
-    "reqJob": 0,
+    "reqJob": 8,
     "reqLevelEquip": 67,
     "tuc": 7,
     "vslots": [
@@ -39,11 +39,10 @@
       "y": 31,
       "isEmpty": false
     },
-    "incPAD": 2,
-    "incSpeed": 1,
-    "incMMP": 44,
-    "incPDD": 10,
-    "incMDD": 7
+    "incPDD": 44,
+    "incMDD": 10,
+    "incLUK": 2,
+    "incEVA": 1
   },
   "typeInfo": {
     "overallCategory": "Equip",
