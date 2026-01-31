@@ -778,6 +778,7 @@
   "tip.monsterStatsDrag": "可拖曳排序",
   "tip.itemStatsSettings": "點這裡自訂顯示的屬性",
   "tip.showMaxOnly": "點擊可切換只顯示裝備的最大屬性值",
+  "tip.clickToClose": "點擊關閉",
   "warning.testingFeature": "目前還在測試，可能有問題",
   "auth.signIn": "登入",
   "auth.signOut": "登出",

@@ -777,6 +777,7 @@
   "tip.monsterStatsDrag": "Drag to reorder",
   "tip.itemStatsSettings": "Click here to customize displayed attributes",
   "tip.showMaxOnly": "Toggle to show only max equipment stats",
+  "tip.clickToClose": "Click to close",
   "warning.testingFeature": "Currently in testing, may have issues",
   "auth.signIn": "Sign In",
   "auth.signOut": "Sign Out",

@@ -1,8 +1,8 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { X } from 'lucide-react'
 import { hasTipBeenShown, markTipAsShown } from '@/lib/storage'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 interface TipBubbleProps {
   tipId: string
@@ -15,6 +15,7 @@ interface TipBubbleProps {
 }
 
 export function TipBubble({ tipId, message, prerequisiteTipId, position = 'center', onDismiss }: TipBubbleProps) {
+  const { t } = useLanguage()
   const [isVisible, setIsVisible] = useState(false)
   const [isAnimating, setIsAnimating] = useState(false)
 
@@ -65,23 +66,15 @@ export function TipBubble({ tipId, message, prerequisiteTipId, position = 'cente
         transition-all duration-200 ease-out
         ${isAnimating ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'}
       `}
+      onClick={handleDismiss}
     >
       {/* 箭頭 */}
       <div className={`absolute ${arrowClasses} -top-2 w-0 h-0 border-l-8 border-r-8 border-b-8 border-l-transparent border-r-transparent border-b-purple-600`} />
 
       {/* 氣泡本體 */}
-      <div className="bg-purple-600 text-white rounded-lg shadow-lg px-4 py-3 pr-10 min-w-[200px] max-w-[300px]">
+      <div className="bg-purple-600 text-white rounded-lg shadow-lg px-4 py-3 min-w-[200px] max-w-[300px] cursor-pointer">
         <p className="text-sm leading-relaxed">{message}</p>
-
-        {/* 關閉按鈕 */}
-        <button
-          type="button"
-          onClick={handleDismiss}
-          className="absolute top-2 right-2 p-1 hover:bg-purple-500 rounded transition-colors"
-          aria-label="關閉提示"
-        >
-          <X size={16} />
-        </button>
+        <p className="text-[10px] text-purple-200 mt-1.5 text-center">{t('tip.clickToClose')}</p>
       </div>
     </div>
   )
