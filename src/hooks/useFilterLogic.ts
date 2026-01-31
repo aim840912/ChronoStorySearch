@@ -178,7 +178,7 @@ export function useFilterLogic({
     let monsters = Array.from(monsterMap.values())
 
     // 應用怪物等級範圍篩選
-    if (searchType === 'monster' && advancedFilter.enabled &&
+    if (advancedFilter.enabled &&
         (advancedFilter.levelRange.min !== null || advancedFilter.levelRange.max !== null)) {
       monsters = monsters.filter(monster =>
         matchesMonsterLevelRangeFilter(monster.mobId, mobLevelMap, advancedFilter)

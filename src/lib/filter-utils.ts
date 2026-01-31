@@ -184,13 +184,8 @@ export function matchesLevelRangeFilter(
     ? item.req_level
     : item.equipment?.requirements?.req_level
 
-  // 非裝備類物品（無等級需求），不符合等級範圍篩選條件
+  // 非裝備類物品（無等級需求）通過篩選，由怪物等級篩選處理
   if (reqLevel === null || reqLevel === undefined) {
-    return false
-  }
-
-  // 如果物品沒有等級需求，預設通過
-  if (reqLevel === null) {
     return true
   }
 
