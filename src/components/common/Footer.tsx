@@ -69,6 +69,20 @@ export default function Footer() {
             <span className="hidden sm:inline">{t('footer.aboutSite')}</span>
             <span className="sm:hidden">{t('footer.aboutShort')}</span>
           </button>
+          <span className="text-slate-500 dark:text-slate-600">|</span>
+          <Link
+            href="/privacy"
+            className="text-slate-400 hover:text-slate-300 dark:text-slate-500 dark:hover:text-slate-400 transition-colors"
+          >
+            {t('footer.privacy')}
+          </Link>
+          <span className="text-slate-500 dark:text-slate-600">|</span>
+          <Link
+            href="/terms"
+            className="text-slate-400 hover:text-slate-300 dark:text-slate-500 dark:hover:text-slate-400 transition-colors"
+          >
+            {t('footer.terms')}
+          </Link>
         </div>
       </div>
 
