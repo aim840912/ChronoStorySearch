@@ -53,10 +53,20 @@
     "highItemId": 1330000
   },
   "randomStats": {
+    "incSTR": {
+      "base": 1,
+      "min": 0,
+      "max": 6
+    },
     "incPAD": {
-      "base": 67,
-      "min": 65,
-      "max": 69
+      "base": 65,
+      "min": 63,
+      "max": 67
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 6
     }
   }
 }
