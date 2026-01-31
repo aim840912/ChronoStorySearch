@@ -73,20 +73,15 @@
       "min": 0,
       "max": 4
     },
-    "incJump": {
+    "incMHP": {
       "base": 100,
-      "min": 98,
-      "max": 102
+      "min": 67,
+      "max": 134
     },
-    "incPDD": {
+    "incMDD": {
       "base": 25,
       "min": 0,
       "max": 59
-    },
-    "incMDD": {
-      "base": 5,
-      "min": 0,
-      "max": 39
     }
   }
 }

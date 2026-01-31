@@ -52,30 +52,25 @@
     "highItemId": 1100000
   },
   "randomStats": {
-    "incPAD": {
+    "incLUK": {
       "base": 2,
       "min": 0,
-      "max": 5
+      "max": 9
     },
-    "incSpeed": {
+    "incEVA": {
       "base": 1,
       "min": 0,
-      "max": 4
+      "max": 8
     },
-    "incMMP": {
+    "incPDD": {
       "base": 44,
       "min": 11,
       "max": 78
     },
-    "incPDD": {
+    "incMDD": {
       "base": 10,
       "min": 0,
       "max": 44
-    },
-    "incMDD": {
-      "base": 7,
-      "min": 0,
-      "max": 41
     }
   }
 }

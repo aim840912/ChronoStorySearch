@@ -51,25 +51,20 @@
     "highItemId": 1100000
   },
   "randomStats": {
-    "incLUK": {
+    "incINT": {
       "base": 1,
       "min": 0,
       "max": 6
     },
-    "incMMP": {
+    "incPDD": {
       "base": 24,
       "min": 1,
       "max": 48
     },
-    "incPDD": {
+    "incMDD": {
       "base": 36,
       "min": 13,
       "max": 60
-    },
-    "incMDD": {
-      "base": 7,
-      "min": 0,
-      "max": 31
     }
   }
 }

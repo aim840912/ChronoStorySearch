@@ -62,20 +62,15 @@
       "min": 0,
       "max": 14
     },
-    "incMMP": {
+    "incPDD": {
       "base": 77,
       "min": 24,
       "max": 131
     },
-    "incPDD": {
+    "incMDD": {
       "base": 28,
       "min": 0,
       "max": 82
-    },
-    "incMDD": {
-      "base": 7,
-      "min": 0,
-      "max": 61
     }
   }
 }

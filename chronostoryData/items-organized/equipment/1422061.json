@@ -67,11 +67,6 @@
       "base": 3,
       "min": 0,
       "max": 12
-    },
-    "incMDD": {
-      "base": 7,
-      "min": 0,
-      "max": 51
     }
   }
 }
