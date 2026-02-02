@@ -7,7 +7,7 @@
     "chineseItemName": "紅色西麗斯斗篷"
   },
   "metaInfo": {
-    "only": true,
+    "only": false,
     "cash": false,
     "reqLevel": 95,
     "price": 340000,
@@ -18,9 +18,10 @@
     "reqJob": 0,
     "reqLevelEquip": 95,
     "tuc": 5,
+    "incSTR": 2,
+    "incDEX": 2,
     "incPDD": 39,
-    "incMDD": 44,
-    "tradeBlock": true
+    "incMDD": 44
   },
   "typeInfo": {
     "overallCategory": "Equip",
@@ -28,6 +29,16 @@
     "subCategory": "Cape"
   },
   "randomStats": {
+    "incSTR": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
     "incPDD": {
       "base": 39,
       "min": 0,

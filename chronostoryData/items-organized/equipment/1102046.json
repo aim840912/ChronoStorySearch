@@ -18,6 +18,8 @@
     "reqJob": 0,
     "reqLevelEquip": 95,
     "tuc": 5,
+    "incDEX": 2,
+    "incLUK": 2,
     "incPDD": 37,
     "incMDD": 42
   },
@@ -27,6 +29,16 @@
     "subCategory": "Cape"
   },
   "randomStats": {
+    "incDEX": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
+    "incLUK": {
+      "base": 2,
+      "min": 0,
+      "max": 6
+    },
     "incPDD": {
       "base": 37,
       "min": 0,
