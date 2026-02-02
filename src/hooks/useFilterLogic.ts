@@ -30,6 +30,10 @@ import {
   matchesMonsterLevelRangeFilter,
   matchesElementWeaknessFilter,
   matchesBossFilter,
+  matchesHealableFilter,
+  matchesPoisonableFilter,
+  matchesBurnableFilter,
+  matchesFreezableFilter,
 } from '@/lib/filter-utils'
 import {
   buildItemMapFromDrops,
@@ -196,6 +200,34 @@ export function useFilterLogic({
     if (advancedFilter.enabled && advancedFilter.isBoss) {
       monsters = monsters.filter(monster =>
         matchesBossFilter(monster.mobId, mobInfoMap, advancedFilter)
+      )
+    }
+
+    // 應用可被治癒攻擊篩選
+    if (advancedFilter.enabled && advancedFilter.healable) {
+      monsters = monsters.filter(monster =>
+        matchesHealableFilter(monster.mobId, mobInfoMap, advancedFilter)
+      )
+    }
+
+    // 應用可中毒篩選
+    if (advancedFilter.enabled && advancedFilter.poisonable) {
+      monsters = monsters.filter(monster =>
+        matchesPoisonableFilter(monster.mobId, mobInfoMap, advancedFilter)
+      )
+    }
+
+    // 應用可燃燒篩選
+    if (advancedFilter.enabled && advancedFilter.burnable) {
+      monsters = monsters.filter(monster =>
+        matchesBurnableFilter(monster.mobId, mobInfoMap, advancedFilter)
+      )
+    }
+
+    // 應用可冰凍篩選
+    if (advancedFilter.enabled && advancedFilter.freezable) {
+      monsters = monsters.filter(monster =>
+        matchesFreezableFilter(monster.mobId, mobInfoMap, advancedFilter)
       )
     }
 
