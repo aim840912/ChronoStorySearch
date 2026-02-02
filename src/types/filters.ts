@@ -98,6 +98,10 @@ export interface AdvancedFilterOptions {
   // 怪物類型篩選（簡單布林，選中時只顯示符合的）
   isBoss: boolean      // true=只顯示Boss, false=不篩選
   isUndead: boolean    // true=只顯示不死系, false=不篩選
+  healable: boolean    // true=只顯示可被治癒攻擊的怪物, false=不篩選
+  poisonable: boolean  // true=只顯示可中毒的怪物, false=不篩選
+  burnable: boolean    // true=只顯示可燃燒的怪物, false=不篩選
+  freezable: boolean   // true=只顯示可冰凍的怪物, false=不篩選
 
   // 等級範圍篩選
   levelRange: LevelRange

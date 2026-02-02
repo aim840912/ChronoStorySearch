@@ -94,6 +94,10 @@ function generateFilterDescription(
 
   // 怪物類型
   if (filter.isBoss) parts.push('Boss')
+  if (filter.healable) parts.push(t('filter.monsterType.healable'))
+  if (filter.poisonable) parts.push(t('filter.monsterType.poisonable'))
+  if (filter.burnable) parts.push(t('filter.monsterType.burnable'))
+  if (filter.freezable) parts.push(t('filter.monsterType.freezable'))
 
   // 攻擊速度
   if (
@@ -116,6 +120,10 @@ function hasAnyFilter(filter: AdvancedFilterOptions): boolean {
     filter.elementWeaknesses.length > 0 ||
     filter.statBoosts.length > 0 ||
     filter.isBoss ||
+    filter.healable ||
+    filter.poisonable ||
+    filter.burnable ||
+    filter.freezable ||
     filter.levelRange.min !== null ||
     filter.levelRange.max !== null ||
     filter.attackSpeedRange.min !== null ||

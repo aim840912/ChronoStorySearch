@@ -34,6 +34,10 @@ export function AdvancedFilterPanel({
       filterToCheck.elementWeaknesses.length > 0 ||
       filterToCheck.statBoosts.length > 0 ||
       filterToCheck.isBoss ||
+      filterToCheck.healable ||
+      filterToCheck.poisonable ||
+      filterToCheck.burnable ||
+      filterToCheck.freezable ||
       filterToCheck.levelRange.min !== null ||
       filterToCheck.levelRange.max !== null ||
       filterToCheck.attackSpeedRange.min !== null ||
@@ -97,6 +101,58 @@ export function AdvancedFilterPanel({
     const newFilter = {
       ...filter,
       isBoss: !filter.isBoss,
+    }
+
+    onFilterChange({
+      ...newFilter,
+      enabled: hasAnyFilterCriteria(newFilter),
+    })
+  }
+
+  // 處理可被治癒攻擊篩選變更
+  const handleHealableToggle = () => {
+    const newFilter = {
+      ...filter,
+      healable: !filter.healable,
+    }
+
+    onFilterChange({
+      ...newFilter,
+      enabled: hasAnyFilterCriteria(newFilter),
+    })
+  }
+
+  // 處理可中毒篩選變更
+  const handlePoisonableToggle = () => {
+    const newFilter = {
+      ...filter,
+      poisonable: !filter.poisonable,
+    }
+
+    onFilterChange({
+      ...newFilter,
+      enabled: hasAnyFilterCriteria(newFilter),
+    })
+  }
+
+  // 處理可燃燒篩選變更
+  const handleBurnableToggle = () => {
+    const newFilter = {
+      ...filter,
+      burnable: !filter.burnable,
+    }
+
+    onFilterChange({
+      ...newFilter,
+      enabled: hasAnyFilterCriteria(newFilter),
+    })
+  }
+
+  // 處理可冰凍篩選變更
+  const handleFreezableToggle = () => {
+    const newFilter = {
+      ...filter,
+      freezable: !filter.freezable,
     }
 
     onFilterChange({
@@ -411,6 +467,50 @@ export function AdvancedFilterPanel({
                     }`}
                   >
                     {t('filter.monsterType.boss')}
+                  </button>
+                  {/* 可被治癒攻擊按鈕 */}
+                  <button
+                    onClick={handleHealableToggle}
+                    className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
+                      filter.healable
+                        ? 'bg-green-500 text-white shadow-md'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                    }`}
+                  >
+                    {t('filter.monsterType.healable')}
+                  </button>
+                  {/* 可中毒按鈕 */}
+                  <button
+                    onClick={handlePoisonableToggle}
+                    className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
+                      filter.poisonable
+                        ? 'bg-purple-500 text-white shadow-md'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                    }`}
+                  >
+                    {t('filter.monsterType.poisonable')}
+                  </button>
+                  {/* 可燃燒按鈕 */}
+                  <button
+                    onClick={handleBurnableToggle}
+                    className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
+                      filter.burnable
+                        ? 'bg-red-500 text-white shadow-md'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                    }`}
+                  >
+                    {t('filter.monsterType.burnable')}
+                  </button>
+                  {/* 可冰凍按鈕 */}
+                  <button
+                    onClick={handleFreezableToggle}
+                    className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
+                      filter.freezable
+                        ? 'bg-cyan-500 text-white shadow-md'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                    }`}
+                  >
+                    {t('filter.monsterType.freezable')}
                   </button>
                 </div>
               </div>

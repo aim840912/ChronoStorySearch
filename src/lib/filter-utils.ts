@@ -429,6 +429,94 @@ export function matchesBossFilter(
 }
 
 /**
+ * 判斷怪物是否可被治癒攻擊（immuneToHeal === false）
+ * @param mobId 怪物 ID
+ * @param mobInfoMap 怪物資訊 Map
+ * @param filter 進階篩選選項
+ * @returns 是否符合篩選
+ */
+export function matchesHealableFilter(
+  mobId: number,
+  mobInfoMap: Map<number, MobInfo>,
+  filter: AdvancedFilterOptions
+): boolean {
+  // 未啟用篩選或未選擇 healable 篩選
+  if (!filter.enabled || !filter.healable) {
+    return true
+  }
+
+  // 取得怪物資訊
+  const mobInfo = mobInfoMap.get(mobId)
+  if (!mobInfo || !mobInfo.mob) {
+    // 怪物資訊不存在，不符合篩選
+    return false
+  }
+
+  // 檢查是否可被治癒攻擊（immuneToHeal 為 false 表示可被 Heal 攻擊）
+  return mobInfo.mob.immuneToHeal === false
+}
+
+/**
+ * 判斷怪物是否可中毒（immuneToPoison === false）
+ */
+export function matchesPoisonableFilter(
+  mobId: number,
+  mobInfoMap: Map<number, MobInfo>,
+  filter: AdvancedFilterOptions
+): boolean {
+  if (!filter.enabled || !filter.poisonable) {
+    return true
+  }
+
+  const mobInfo = mobInfoMap.get(mobId)
+  if (!mobInfo || !mobInfo.mob) {
+    return false
+  }
+
+  return mobInfo.mob.immuneToPoison === false
+}
+
+/**
+ * 判斷怪物是否可燃燒（immuneToBurn === false）
+ */
+export function matchesBurnableFilter(
+  mobId: number,
+  mobInfoMap: Map<number, MobInfo>,
+  filter: AdvancedFilterOptions
+): boolean {
+  if (!filter.enabled || !filter.burnable) {
+    return true
+  }
+
+  const mobInfo = mobInfoMap.get(mobId)
+  if (!mobInfo || !mobInfo.mob) {
+    return false
+  }
+
+  return mobInfo.mob.immuneToBurn === false
+}
+
+/**
+ * 判斷怪物是否可冰凍（immuneToFreeze === false）
+ */
+export function matchesFreezableFilter(
+  mobId: number,
+  mobInfoMap: Map<number, MobInfo>,
+  filter: AdvancedFilterOptions
+): boolean {
+  if (!filter.enabled || !filter.freezable) {
+    return true
+  }
+
+  const mobInfo = mobInfoMap.get(mobId)
+  if (!mobInfo || !mobInfo.mob) {
+    return false
+  }
+
+  return mobInfo.mob.immuneToFreeze === false
+}
+
+/**
  * 取得預設的進階篩選選項
  * @returns 預設篩選選項
  */
@@ -440,6 +528,10 @@ export function getDefaultAdvancedFilter(): AdvancedFilterOptions {
     elementWeaknesses: [],
     isBoss: false,
     isUndead: false,
+    healable: false,
+    poisonable: false,
+    burnable: false,
+    freezable: false,
     levelRange: { min: null, max: null },
     attackSpeedRange: { min: null, max: null },
     statBoosts: [],
