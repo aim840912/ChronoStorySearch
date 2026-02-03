@@ -78,8 +78,6 @@ const UNWELCOME_GUEST_WEAPONS: Record<string, number[]> = {
   'Warrior Shield': [1092070, 1092071, 1092072, 1092073],
   'Magician Shield': [1092075, 1092076, 1092077, 1092078],
   'Thief Shield': [1092080, 1092081, 1092082, 1092083],
-  // 飾品類型
-  Earrings: [1032080, 1032081, 1032082, 1032083],
 }
 
 // 建立 itemId -> 武器資訊的反向映射
@@ -144,8 +142,6 @@ function getWeaponTypeZhName(weaponType: string): string {
     'Warrior Shield': '戰士盾牌',
     'Magician Shield': '法師盾牌',
     'Thief Shield': '盜賊盾牌',
-    // 飾品類型
-    Earrings: '耳環',
   }
   return typeMap[weaponType] || weaponType
 }
