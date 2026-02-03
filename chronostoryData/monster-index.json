@@ -1605,7 +1605,7 @@
     {
       "mobId": 9000001,
       "mobName": "Exam Curse Eye",
-      "chineseMobName": "天使猴",
+      "chineseMobName": "風獨眼獸",
       "isBoss": false,
       "dropCount": 0,
       "inGame": true
@@ -1621,7 +1621,7 @@
     {
       "mobId": 9000100,
       "mobName": "Exam Fire Boar",
-      "chineseMobName": "骷髏犬",
+      "chineseMobName": "火肥肥",
       "isBoss": false,
       "dropCount": 0,
       "inGame": true
@@ -1645,7 +1645,7 @@
     {
       "mobId": 9000201,
       "mobName": "Exam Zombie Mushroom",
-      "chineseMobName": "石巨人",
+      "chineseMobName": "殭屍菇菇",
       "isBoss": false,
       "dropCount": 0,
       "inGame": true
@@ -1653,7 +1653,7 @@
     {
       "mobId": 9000300,
       "mobName": "Exam Octopus",
-      "chineseMobName": "沼地怪物",
+      "chineseMobName": "三眼章魚",
       "isBoss": false,
       "dropCount": 0,
       "inGame": true
