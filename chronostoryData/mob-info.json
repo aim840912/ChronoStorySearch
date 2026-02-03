@@ -6325,7 +6325,7 @@
       "immuneToBurn": false,
       "immuneToFreeze": false
     },
-    "chineseMobName": "天使猴"
+    "chineseMobName": "風獨眼獸"
   },
   {
     "mob": {
@@ -6389,7 +6389,7 @@
       "immuneToBurn": true,
       "immuneToFreeze": false
     },
-    "chineseMobName": "骷髏犬"
+    "chineseMobName": "火肥肥"
   },
   {
     "mob": {
@@ -6485,7 +6485,7 @@
       "immuneToBurn": false,
       "immuneToFreeze": false
     },
-    "chineseMobName": "石巨人"
+    "chineseMobName": "殭屍菇菇"
   },
   {
     "mob": {
@@ -6517,7 +6517,7 @@
       "immuneToBurn": false,
       "immuneToFreeze": false
     },
-    "chineseMobName": "沼地怪物"
+    "chineseMobName": "三眼章魚"
   },
   {
     "mob": {
