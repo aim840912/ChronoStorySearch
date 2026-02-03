@@ -1,0 +1,3036 @@
+{
+  "85": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Cold Eye",
+      "hidden": false
+    }
+  ],
+  "210": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Sleepywood",
+      "map": "Mixed Golem",
+      "hidden": false
+    }
+  ],
+  "250": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Ice Drake",
+      "hidden": false
+    }
+  ],
+  "Snail": [
+    {
+      "region": "Lith Harbor",
+      "section": "Victoria Road - Lith Harbor East",
+      "map": "Right Around Lith Harbor",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Mushroom Town",
+      "map": "A Split Road",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Mushroom Town",
+      "map": "Snail Garden",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Mushroom Town",
+      "map": "Snail Hunting Ground I",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Mushroom Town",
+      "map": "Snail Hunting Ground II",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Mushroom Town",
+      "map": "Snail Hunting Ground III",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Rainbow Street - Amherst",
+      "map": "Snail Field of Flowers",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Perion Street Corner",
+      "hidden": false
+    }
+  ],
+  "Blue Snail": [
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "Forest West of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "Henesys Hunting Ground I",
+      "hidden": false
+    },
+    {
+      "region": "Lith Harbor",
+      "section": "Victoria Road - Lith Harbor East",
+      "map": "Right Around Lith Harbor",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Mushroom Town",
+      "map": "A Split Road",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Mushroom Town",
+      "map": "Snail Hunting Ground II",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Mushroom Town",
+      "map": "Snail Hunting Ground III",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Mushroom Town",
+      "map": "The Field West of Amherst",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Perion Street Corner",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Street Corner of Perion",
+      "hidden": false
+    }
+  ],
+  "Red Snail": [
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "Forest West of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "Henesys Hunting Ground I",
+      "hidden": false
+    },
+    {
+      "region": "Lith Harbor",
+      "section": "Victoria Road - Lith Harbor East",
+      "map": "3-Way Road-Split",
+      "hidden": false
+    },
+    {
+      "region": "Lith Harbor",
+      "section": "Victoria Road - Lith Harbor East",
+      "map": "Hidden Street - Beach Hunting Ground",
+      "hidden": true
+    },
+    {
+      "region": "Lith Harbor",
+      "section": "Victoria Road - Lith Harbor East",
+      "map": "Right Around Lith Harbor",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Mushroom Town",
+      "map": "A Split Road",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Mushroom Town",
+      "map": "Snail Hunting Ground III",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Southperry",
+      "map": "The Field West of Southperry",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Rainbow Street - Amherst",
+      "map": "The Field East of Amherst",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Rocky Mountain I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Perion Street Corner",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Rocky Road I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Rocky Road II",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Domain of Perion",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Rocky Mountain I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Street Corner of Perion",
+      "hidden": false
+    }
+  ],
+  "Shroom": [
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys East",
+      "map": "The Hill East of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "A Hill West of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Lith Harbor",
+      "section": "Victoria Road - Lith Harbor East",
+      "map": "3-Way Road-Split",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Mushroom Town",
+      "map": "A Split Road",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Mushroom Town",
+      "map": "Mushroom Garden",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Mushroom Town",
+      "map": "The Field West of Amherst",
+      "hidden": false
+    }
+  ],
+  "Amherst Crate": [
+    {
+      "region": "Maple Island",
+      "section": "Rainbow Street - Amherst",
+      "map": "Amherst Townstreet",
+      "hidden": false
+    }
+  ],
+  "#N/A": [
+    {
+      "region": "Maple Island",
+      "section": "Rainbow Street - Amherst",
+      "map": "Snail Field of Flowers",
+      "hidden": false
+    }
+  ],
+  "Ribbon Pig": [
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys East",
+      "map": "Henesys Pig Farm",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys East",
+      "map": "The Forest East of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "A Hill West of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "Forest West of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Lith Harbor",
+      "section": "Victoria Road - Lith Harbor East",
+      "map": "3-Way Road-Split",
+      "hidden": false
+    },
+    {
+      "region": "Lith Harbor",
+      "section": "Victoria Road - Lith Harbor East",
+      "map": "Right Around Lith Harbor",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Rainbow Street - Amherst",
+      "map": "The Field East of Amherst",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Rainbow Street - Amherst",
+      "map": "Tomato Field",
+      "hidden": false
+    }
+  ],
+  "Stump": [
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia North",
+      "map": "The Field Up North of Ellinia",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "The Field South of Ellinia",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "The Forest South of Ellinia",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys East",
+      "map": "The Forest East of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "Henesys Hunting Ground II",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City East",
+      "map": "Construction Site North of Kerning City",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "Kerning City Construction Site",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Southperry",
+      "map": "In A Small Forest",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Southperry",
+      "map": "The Field West of Southperry",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Rainbow Street - Amherst",
+      "map": "The Field East of Amherst",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Domain of Perion",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Rocky Mountain I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Rocky Mountain II",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Perion Street Corner",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Rocky Road I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Rocky Road II",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Rocky Road III",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Domain of Perion",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Rocky Mountain I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Street Corner of Perion",
+      "hidden": false
+    }
+  ],
+  "Slime": [
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia North",
+      "map": "The Field Up North of Ellinia",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia North",
+      "map": "The Tree That Grew I",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia North",
+      "map": "Tree Dungeon, Forest Up North I",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "Dungeon, Southern Forest I",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "The Field South of Ellinia",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "The Forest of Wisdom",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "The Forest South of Ellinia",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys East",
+      "map": "The Forest East of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "Forest West of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "Henesys Hunting Ground I",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "L Forest I",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "L Forest II",
+      "hidden": false
+    },
+    {
+      "region": "Lith Harbor",
+      "section": "Victoria Road - Lith Harbor East",
+      "map": "3-Way Road-Split",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Rainbow Street - Amherst",
+      "map": "Hunting Ground Middle of the Forest II",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Rainbow Street - Amherst",
+      "map": "The Field East of Amherst",
+      "hidden": false
+    }
+  ],
+  "Pig": [
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys East",
+      "map": "The Forest East of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys East",
+      "map": "The Rain-Forest East of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "A Hill West of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "Forest West of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Lith Harbor",
+      "section": "Victoria Road - Lith Harbor East",
+      "map": "3-Way Road-Split",
+      "hidden": false
+    },
+    {
+      "region": "Lith Harbor",
+      "section": "Victoria Road - Lith Harbor East",
+      "map": "Hidden Street - Beach Hunting Ground",
+      "hidden": true
+    },
+    {
+      "region": "Maple Island",
+      "section": "Rainbow Street - Amherst",
+      "map": "The Field East of Amherst",
+      "hidden": false
+    }
+  ],
+  "Orange Mushroom": [
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys East",
+      "map": "The Hill East of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "A Hill West of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "Henesys Hunting Ground I",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "Henesys Hunting Ground III",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "Hidden Street - Mushroom Garden",
+      "hidden": true
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City East",
+      "map": "Construction Site North of Kerning City",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "Kerning City Construction Site",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "Kerning City Middle Forest I",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "L Forest I",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "L Forest II",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "L Forest III",
+      "hidden": false
+    },
+    {
+      "region": "Lith Harbor",
+      "section": "Victoria Road - Lith Harbor East",
+      "map": "3-Way Road-Split",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Southperry",
+      "map": "The Field West of Southperry",
+      "hidden": false
+    }
+  ],
+  "Green Mushroom": [
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia North",
+      "map": "The Tree That Grew III",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia North",
+      "map": "Tree Dungeon, Forest Up North IV",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "Dungeon, Southern Forest I",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "The Forest of Wisdom",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "The Forest South of Ellinia",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys West",
+      "map": "Henesys Hunting Ground I",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "L Forest I",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "L Forest II",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "L Forest III",
+      "hidden": false
+    },
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Southperry",
+      "map": "The Field West of Southperry",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Outside Sleepywood",
+      "map": "Deep Forest",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Outside Sleepywood",
+      "map": "Swampy Land in a Deep Forest",
+      "hidden": false
+    }
+  ],
+  "Southperry Pirate Lord": [
+    {
+      "region": "Maple Island",
+      "section": "Maple Road - Southperry",
+      "map": "Pirate's Hideout",
+      "hidden": false
+    }
+  ],
+  "Mano": [
+    {
+      "region": "Lith Harbor",
+      "section": "Victoria Road - Lith Harbor East",
+      "map": "Right Around Lith Harbor",
+      "hidden": false
+    }
+  ],
+  "Lorang": [
+    {
+      "region": "Lith Harbor",
+      "section": "Victoria Road - Lith Harbor East",
+      "map": "3-Way Road-Split",
+      "hidden": false
+    }
+  ],
+  "Bubbling": [
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia North",
+      "map": "Tree Dungeon, Forest Up North V",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City Subway",
+      "map": "Line 1 <Area 1> - Kerning City Subway",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Outside Sleepywood",
+      "map": "Damp Forest",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Outside Sleepywood",
+      "map": "Damp Tree-Forest",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Outside Sleepywood",
+      "map": "Deep Forest",
+      "hidden": false
+    }
+  ],
+  "Axe Stump": [
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City East",
+      "map": "Construction Site North of Kerning City",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Domain of Perion",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Rocky Mountain IV",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Rocky Mountain V",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Rocky Road II",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Rocky Road III",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Street Corner of Perion",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Deep Valley I",
+      "hidden": false
+    }
+  ],
+  "Octopus": [
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia North",
+      "map": "Tree Dungeon, Forest Up North III",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City East",
+      "map": "Hidden Street - Northern Top of Construction Site",
+      "hidden": true
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "Hidden Street - Caution Falling Down",
+      "hidden": true
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "Kerning City Construction Site",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Domain of Perion",
+      "hidden": false
+    }
+  ],
+  "Jr. Necki": [
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "Dangerous Croco II",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "Hidden Street - Swamp of the Jr. Necki",
+      "hidden": true
+    },
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "The Swamp of Despair I",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "The Swamp of Despair II",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "The Swamp of Despair III",
+      "hidden": false
+    }
+  ],
+  "Ligator": [
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "The Swamp of Despair I",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "The Swamp of Despair II",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "The Swamp of Despair III",
+      "hidden": false
+    }
+  ],
+  "Croco": [
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "Dangerous Croco I",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "Dangerous Croco II",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "The Swamp of Despair III",
+      "hidden": false
+    }
+  ],
+  "Dyle": [
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "Dangerous Croco I",
+      "hidden": false
+    }
+  ],
+  "Lupin": [
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "Hidden Street - Downstairs at the Forest",
+      "hidden": true
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "Hidden Street - Monkey Forest II",
+      "hidden": true
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "The Forest of Wisdom",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "Dangerous Croco II",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "Hidden Street - Monkey Swamp I",
+      "hidden": true
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Rocky Mountain II",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Rocky Mountain IV",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Outside Sleepywood",
+      "map": "Damp Tree-Forest",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Outside Sleepywood",
+      "map": "Deep Forest",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Outside Sleepywood",
+      "map": "Hunting Ground in the Deep Forest II",
+      "hidden": false
+    }
+  ],
+  "Zombie Lupin": [
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "Hidden Street - Downstairs at the Forest",
+      "hidden": true
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "Hidden Street - Monkey Forest II",
+      "hidden": true
+    },
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "Hidden Street - Monkey Swamp I",
+      "hidden": true
+    },
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "Hidden Street - Monkey Swamp III",
+      "hidden": true
+    }
+  ],
+  "Clang": [
+    {
+      "region": "Kerning City",
+      "section": "Warning Street - Kerning City Swamp",
+      "map": "Dangerous Croco II",
+      "hidden": false
+    }
+  ],
+  "Iron Hog": [
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "Kerning City Middle Forest III",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "L Forest I",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "L Forest II",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "L Forest III",
+      "hidden": false
+    }
+  ],
+  "Horny Mushroom": [
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "Dungeon, Southern Forest IV",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "The Forest South of Ellinia",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Warning Street - Henesys Dungeon Entrance",
+      "map": "Henesys Dungeon Entrance",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Warning Street - Henesys Dungeon Entrance",
+      "map": "The Road to the Dungeon",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "Kerning City Middle Forest I",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "L Forest III",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Ant Tunnel I",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Ant Tunnel II",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Ant Tunnel III",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Ant Tunnel IV",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Outside Sleepywood",
+      "map": "Swampy Land in a Deep Forest",
+      "hidden": false
+    }
+  ],
+  "Blue Mushroom": [
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys East",
+      "map": "Hidden Street - The Blue Mushroom Forest",
+      "hidden": true
+    },
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys East",
+      "map": "The Forest East of Henesys",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Warning Street - Henesys Dungeon Entrance",
+      "map": "The Road to the Dungeon",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "Kerning City Middle Forest I",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City West",
+      "map": "Kerning City Middle Forest II",
+      "hidden": false
+    }
+  ],
+  "?": [
+    {
+      "region": "Henesys",
+      "section": "Victoria Road - Henesys East",
+      "map": "Hidden Street - The Blue Mushroom Forest",
+      "hidden": true
+    }
+  ],
+  "Fairy": [
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia North",
+      "map": "Tree Dungeon, Forest Up North IX",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Warning Street - Henesys Dungeon Entrance",
+      "map": "Hidden Street - The Breathing Rock",
+      "hidden": true
+    }
+  ],
+  "Stone Golem": [
+    {
+      "region": "Henesys",
+      "section": "Warning Street - Henesys Dungeon Entrance",
+      "map": "Golem's Temple I",
+      "hidden": false
+    },
+    {
+      "region": "Henesys",
+      "section": "Warning Street - Henesys Dungeon Entrance",
+      "map": "The Entrance of Golem's Temple",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Sleepywood",
+      "map": "Sleepy Dungeon III",
+      "hidden": false
+    }
+  ],
+  "Dark Stone Golem": [
+    {
+      "region": "Henesys",
+      "section": "Warning Street - Henesys Dungeon Entrance",
+      "map": "Golem's Temple II",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Sleepywood",
+      "map": "Golem's Castle Ruins",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Sleepywood",
+      "map": "Sleepy Dungeon IV",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Sleepywood",
+      "map": "Sleepy Dungeon V",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Sleepywood",
+      "map": "The Forest of Golem",
+      "hidden": false
+    }
+  ],
+  "Mixed Golem": [
+    {
+      "region": "Henesys",
+      "section": "Warning Street - Henesys Dungeon Entrance",
+      "map": "Golem's Temple III",
+      "hidden": false
+    }
+  ],
+  "Hot Mixed Golem": [
+    {
+      "region": "Henesys",
+      "section": "Warning Street - Henesys Dungeon Entrance",
+      "map": "Golem's Temple IV",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "The Burnt Land V",
+      "hidden": false
+    }
+  ],
+  "Cold Mixed Golem": [
+    {
+      "region": "Henesys",
+      "section": "Warning Street - Henesys Dungeon Entrance",
+      "map": "Golem's Temple V",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Sanctuary Entrance I",
+      "hidden": false
+    }
+  ],
+  "Dark Stump": [
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia North",
+      "map": "The Tree That Grew II",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia North",
+      "map": "Tree Dungeon, Forest Up North II",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "Dungeon, Southern Forest I",
+      "hidden": false
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "The Forest South of Ellinia",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Domain of Perion",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Rocky Mountain I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Rocky Mountain III",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Rocky Mountain V",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Rocky Road I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Rocky Road II",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Domain of Perion",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Rocky Mountain I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Street Corner of Perion",
+      "hidden": false
+    }
+  ],
+  "Dark Axe Stump": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Domain of Perion",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Rocky Mountain I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Rocky Mountain II",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Street Corner of Perion",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Deep Valley I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Deep Valley II",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Deep Valley III",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Perion Dungeon Entrance",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Outside Sleepywood",
+      "map": "Deep Forest",
+      "hidden": false
+    }
+  ],
+  "Wild Boar": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Domain of Perion",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Hidden Street - Land of Wild Boar",
+      "hidden": true
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Hidden Street - The Land of Wild Boar II",
+      "hidden": true
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Perion Street Corner",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Rocky Road III",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Rocky Mountain I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Rocky Mountain II",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Deep Valley I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Deep Valley II",
+      "hidden": false
+    }
+  ],
+  "Fire Boar": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Rocky Mountain II",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion West",
+      "map": "West Rocky Mountain IV",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Deep Valley I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Deep Valley II",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Deep Valley III",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Perion Dungeon Entrance",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "The Burnt Land I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "The Burnt Land II",
+      "hidden": false
+    }
+  ],
+  "Iron Boar": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Hidden Street - Land of Wild Boar",
+      "hidden": true
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Deep Valley III",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Perion Dungeon Entrance",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "The Burnt Land II",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "The Burnt Land III",
+      "hidden": false
+    }
+  ],
+  "Jr. Boogie": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Hidden Street - Over the Wall",
+      "hidden": true
+    }
+  ],
+  "Stumpy": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Rocky Mountain V",
+      "hidden": false
+    }
+  ],
+  "Copper Drake": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Rocky Mountain V",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Rocky Mountain VI",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Rocky Mountain VII",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Deep Valley I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Hidden Street - Dangerous Valley",
+      "hidden": true
+    }
+  ],
+  "Red Drake": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Rocky Mountain VI",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "East Rocky Mountain VII",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "Hidden Street - Dangerous Valley",
+      "hidden": true
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "The Burnt Land III",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Warning Street - Perion Dungeon Entrance",
+      "map": "The Burnt Land IV",
+      "hidden": false
+    }
+  ],
+  "Ghost Stump": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Excavation Site I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Rocky Road III",
+      "hidden": false
+    }
+  ],
+  "Wooden Mask": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Excavation Site I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Excavation Site III",
+      "hidden": false
+    }
+  ],
+  "Skeledog": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Remains <Tomb> I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Remains <Tomb> II",
+      "hidden": false
+    }
+  ],
+  "Mummydog": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Remains <Tomb> I",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Remains <Tomb> II",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Remains <Tomb> III",
+      "hidden": false
+    }
+  ],
+  "Skeleton Soldier": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Camp 1",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Camp 2",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Remains <Tomb> III",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Remains <Tomb> IV",
+      "hidden": false
+    }
+  ],
+  "Officer Skeleton": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Camp 1",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Camp 2",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Camp 3",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Remains <Tomb> III",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Remains <Tomb> IV",
+      "hidden": false
+    }
+  ],
+  "Commander Skeleton": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Camp 3",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Remains <Cliff>",
+      "hidden": false
+    },
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Remains <Tomb> IV",
+      "hidden": false
+    }
+  ],
+  "Evil Eye": [
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia North",
+      "map": "Tree Dungeon, Forest Up North VI",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Deep Ant Tunnel II",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "The Cave of Evil Eye",
+      "hidden": false
+    }
+  ],
+  "Curse Eye": [
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia North",
+      "map": "Tree Dungeon, Forest Up North VII",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "The Cave of Curse Eye",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Outside Sleepywood",
+      "map": "Deep Forest",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Outside Sleepywood",
+      "map": "Hunting Ground in the Deep Forest I",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Outside Sleepywood",
+      "map": "Hunting Ground in the Deep Forest II",
+      "hidden": false
+    }
+  ],
+  "Cold Eye": [
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia North",
+      "map": "Tree Dungeon, Forest Up North VIII",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "The Cave of Cold Eye",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Sleepywood",
+      "map": "Sleepy Dungeon II",
+      "hidden": false
+    }
+  ],
+  "Malady": [
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "Hidden Street - The Forest of Evil I",
+      "hidden": true
+    },
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "Hidden Street - The Forest of Evil II",
+      "hidden": true
+    }
+  ],
+  "Faust": [
+    {
+      "region": "Ellinia",
+      "section": "Victoria Road - Ellinia South",
+      "map": "Hidden Street - The Forest of Evil II",
+      "hidden": true
+    }
+  ],
+  "Zombie Mushroom": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Ant Tunnel II",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Ant Tunnel III",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Ant Tunnel IV",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Ant Tunnel Park",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Cave of Mushrooms",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Deep Ant Tunnel I",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Deep Ant Tunnel II",
+      "hidden": false
+    }
+  ],
+  "Stirge": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Dark Cave",
+      "hidden": false
+    }
+  ],
+  "Crimson Stirge": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Dangerous Steam",
+      "hidden": false
+    }
+  ],
+  "Dark Eye": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Another Path",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "The Cave of Dark Eye",
+      "hidden": false
+    }
+  ],
+  "Drake": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Drake Hunting Ground",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Ice Drake",
+      "hidden": false
+    }
+  ],
+  "Zombie Mushmom": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Cave of Mushrooms",
+      "hidden": false
+    }
+  ],
+  "Bob": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Cold Eye",
+      "hidden": false
+    }
+  ],
+  "Wild Kargo": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Ice Drake",
+      "hidden": false
+    }
+  ],
+  "Ice Drake": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Cold Cradle",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Drake's Blue Cave",
+      "hidden": false
+    }
+  ],
+  "Dark Drake": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Cold Cradle",
+      "hidden": false
+    },
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Drake's Blue Cave",
+      "hidden": false
+    }
+  ],
+  "Tauromacis": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Sanctuary Entrance II",
+      "hidden": false
+    }
+  ],
+  "Taurospear": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Sanctuary Entrance III",
+      "hidden": false
+    }
+  ],
+  "Tauroshield": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "Sanctuary Entrance IV",
+      "hidden": false
+    }
+  ],
+  "Jr. Balrog": [
+    {
+      "region": "Sleepywood",
+      "section": "Dungeon - Ant Tunnel",
+      "map": "The Cursed Sanctuary",
+      "hidden": false
+    }
+  ],
+  "Jr. Cellion": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Garden of Red I",
+      "hidden": false
+    },
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "The Road to Garden of 3 Colors",
+      "hidden": false
+    }
+  ],
+  "Cellion": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Garden of Blue II",
+      "hidden": false
+    },
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Garden of Red II",
+      "hidden": false
+    }
+  ],
+  "Jr. Lionel": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Garden of Yellow I",
+      "hidden": false
+    }
+  ],
+  "Lionel": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Garden of Yellow II",
+      "hidden": false
+    }
+  ],
+  "Jr. Grupin": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Garden of Blue I",
+      "hidden": false
+    }
+  ],
+  "Grupin": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Garden of Blue II",
+      "hidden": false
+    }
+  ],
+  "Jr. Lucida": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Garden of Blue II",
+      "hidden": false
+    }
+  ],
+  "Lucida": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Garden of Darkness I",
+      "hidden": false
+    },
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Garden of Darkness II",
+      "hidden": false
+    }
+  ],
+  "Nependeath": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Disposed Flower Garden",
+      "hidden": false
+    },
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Strolling Path",
+      "hidden": false
+    }
+  ],
+  "Dark Nependeath": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Strolling Path II",
+      "hidden": false
+    }
+  ],
+  "Jr. Sentinel": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Orbis Tower",
+      "map": "Orbis Tower <5th Floor>",
+      "hidden": false
+    }
+  ],
+  "Sentinel": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Orbis Tower",
+      "map": "Orbis Tower <4th Floor>",
+      "hidden": false
+    }
+  ],
+  "Fire Sentinel": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Orbis Tower",
+      "map": "Orbis Tower <3rd Floor>",
+      "hidden": false
+    }
+  ],
+  "Ice Sentinel": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Orbis Tower",
+      "map": "Orbis Tower <2nd Floor>",
+      "hidden": false
+    }
+  ],
+  "Leatty": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Orbis Tower",
+      "map": "Orbis Tower <1st Floor>",
+      "hidden": false
+    }
+  ],
+  "Dark Leatty": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath West",
+      "map": "Snowy Hill",
+      "hidden": false
+    }
+  ],
+  "Jr. Yeti": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Watch Out for Icy Path I",
+      "hidden": false
+    }
+  ],
+  "Dark Jr. Yeti": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Watch Out for Icy Path II",
+      "hidden": false
+    }
+  ],
+  "Hector": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Cold Field I",
+      "hidden": false
+    }
+  ],
+  "Tortice": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Hidden Street - Chill Field",
+      "hidden": true
+    }
+  ],
+  "Pepe": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Hidden Street - The Crown-Flyer 1",
+      "hidden": true
+    }
+  ],
+  "Snowball Pepe": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Hidden Street - The Crown-Flyer 2",
+      "hidden": true
+    }
+  ],
+  "White Fang": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Cold Field II",
+      "hidden": false
+    }
+  ],
+  "Dark Pepe": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Icy Cold Field",
+      "hidden": false
+    }
+  ],
+  "Snow Witch": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Icy Cold Field",
+      "hidden": false
+    }
+  ],
+  "Yeti": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Hidden Street - Valley of Snowman",
+      "hidden": true
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Ice Valley I",
+      "hidden": false
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Ice Valley II",
+      "hidden": false
+    }
+  ],
+  "Dark Yeti": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Sharp Cliff I",
+      "hidden": false
+    }
+  ],
+  "Snowman": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Hidden Street - Valley of Snowman",
+      "hidden": true
+    }
+  ],
+  "Yeti and Pepe": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Hidden Street - Valley of Snowman",
+      "hidden": true
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Sharp Cliff II",
+      "hidden": false
+    }
+  ],
+  "Werewolf": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Wolf Territory I",
+      "hidden": false
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Wolf Territory II",
+      "hidden": false
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Wolf Territory III",
+      "hidden": false
+    }
+  ],
+  "Dark Yeti and Pepe": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Dangerous Cliff",
+      "hidden": false
+    }
+  ],
+  "Lycanthrope": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Wolf Territory IV",
+      "hidden": false
+    }
+  ],
+  "Coolie Zombie": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Forest of Dead Trees I",
+      "hidden": false
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Forest of Dead Trees II",
+      "hidden": false
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Forest of Dead Trees III",
+      "hidden": false
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Forest of Dead Trees IV",
+      "hidden": false
+    }
+  ],
+  "Flyeye": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Dead Mine I",
+      "hidden": false
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Dead Mine II",
+      "hidden": false
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Dead Mine III",
+      "hidden": false
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Dead Mine IV",
+      "hidden": false
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "The Passage",
+      "hidden": false
+    }
+  ],
+  "Jr. Cerebes": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "The Cave of Trial I",
+      "hidden": false
+    }
+  ],
+  "Cerebes": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "The Cave of Trial II",
+      "hidden": false
+    }
+  ],
+  "Bain": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Hidden Street - Cave Within the Cave",
+      "hidden": true
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "The Cave of Trial III",
+      "hidden": false
+    }
+  ],
+  "Pink Teddy": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Cloud Terrace<1>",
+      "hidden": false
+    }
+  ],
+  "Roloduck": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Cloud Terrace<2>",
+      "hidden": false
+    }
+  ],
+  "Panda Teddy": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Sky Terrace<1>",
+      "hidden": false
+    }
+  ],
+  "Toy Trojan": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Sky Terrace<2>",
+      "hidden": false
+    }
+  ],
+  "Brown Teddy": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Terrace Hall",
+      "hidden": false
+    }
+  ],
+  "Robo": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Toy Factory Processing Zone",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Toy Factory<Apparatus Room>",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Toy Factory<Main Process 1>",
+      "hidden": false
+    }
+  ],
+  "Chronos": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "The Path of Time <2>",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "The Path of Time <3>",
+      "hidden": false
+    }
+  ],
+  "Platoon Chronos": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "The Path of Time <1>",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "The Path of Time <4>",
+      "hidden": false
+    }
+  ],
+  "Master Robo": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Toy Factory<Main Process 2>",
+      "hidden": false
+    }
+  ],
+  "Master Chronos": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "The Path of Time <4>",
+      "hidden": false
+    }
+  ],
+  "Buffy": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Warped Path of Time<1>",
+      "hidden": false
+    }
+  ],
+  "Buffoon": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Warped Path of Time<2>",
+      "hidden": false
+    }
+  ],
+  "Ghost Pirate": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Warped Path of Time<3>",
+      "hidden": false
+    }
+  ],
+  "Dual Ghost Pirate": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Warped Path of Time<3>",
+      "hidden": false
+    }
+  ],
+  "Spirit Viking": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Warped Path of Time<4>",
+      "hidden": false
+    }
+  ],
+  "Gigantic Spirit Viking": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Warped Path of Time<4>",
+      "hidden": false
+    }
+  ],
+  "Gatekeeper": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Warped Passage",
+      "hidden": false
+    }
+  ],
+  "Soul Teddy": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Forgotten Path of Time<1>",
+      "hidden": false
+    }
+  ],
+  "Klock": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Forgotten Path of Time<2>",
+      "hidden": false
+    }
+  ],
+  "Death Teddy": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Forgotten Path of Time<3>",
+      "hidden": false
+    }
+  ],
+  "Master Death Teddy": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Hidden Street - Lost Time",
+      "hidden": true
+    }
+  ],
+  "Phantom Watch": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Forgotten Path of Time<4>",
+      "hidden": false
+    }
+  ],
+  "Grim Phantom Watch": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Hidden Street - Forbidden Time",
+      "hidden": true
+    }
+  ],
+  "Thanatos": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Forgotten Passage",
+      "hidden": false
+    }
+  ],
+  "Ratz": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 100th Floor",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 99th Floor",
+      "hidden": false
+    }
+  ],
+  "Black Ratz": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 97th Floor",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 98th Floor",
+      "hidden": false
+    }
+  ],
+  "Trixter": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 96th Floor",
+      "hidden": false
+    }
+  ],
+  "Green Trixter": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 95th Floor",
+      "hidden": false
+    }
+  ],
+  "Chirppy": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 58th Floor",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 59th Floor",
+      "hidden": false
+    }
+  ],
+  "Helly": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 56th Floor",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 57th Floor",
+      "hidden": false
+    }
+  ],
+  "Propelly": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 24th Floor",
+      "hidden": false
+    }
+  ],
+  "Bloctopus": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 22nd Floor",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 23rd Floor",
+      "hidden": false
+    }
+  ],
+  "Planey": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 20th Floor",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 21st Floor",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 6th Floor",
+      "hidden": false
+    }
+  ],
+  "Tweeter": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 5th Floor",
+      "hidden": false
+    }
+  ],
+  "Block Golem": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 3rd Floor",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 4th Floor",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Hidden Tower",
+      "hidden": true
+    }
+  ],
+  "Drumming Bunny": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Hidden Street - Drummer Bunny's Lair",
+      "hidden": true
+    }
+  ],
+  "King Block Golem": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 1st Floor",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 2nd Floor",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Hidden Tower",
+      "hidden": true
+    }
+  ],
+  "Rombot": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Hidden Tower",
+      "hidden": true
+    }
+  ],
+  "Mateon": [
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Boswell Field I",
+      "hidden": false
+    },
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Mateon Field",
+      "hidden": false
+    }
+  ],
+  "Plateon": [
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Boswell Field II",
+      "hidden": false
+    },
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Plateon Field",
+      "hidden": false
+    }
+  ],
+  "Mecateon": [
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Boswell Field III",
+      "hidden": false
+    },
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Mecateon Field",
+      "hidden": false
+    }
+  ],
+  "MT-09": [
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Boswell Field IV",
+      "hidden": false
+    },
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "MT-09 Field",
+      "hidden": false
+    }
+  ],
+  "Barnard Gray": [
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Barnard Field",
+      "hidden": false
+    },
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Kulan Field I",
+      "hidden": false
+    }
+  ],
+  "Zeta Gray": [
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Kulan Field II",
+      "hidden": false
+    },
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Zeta Field",
+      "hidden": false
+    }
+  ],
+  "Ultra Gray": [
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Kulan Field III",
+      "hidden": false
+    },
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Ultra Field",
+      "hidden": false
+    }
+  ],
+  "Chief Gray": [
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Chief's Prairie",
+      "hidden": false
+    },
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Kulan Field IV",
+      "hidden": false
+    }
+  ],
+  "Zeno": [
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Omega Sector West",
+      "map": "Kulan Field V",
+      "hidden": false
+    }
+  ],
+  "Gray Commuter Saucer": [
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Mothership",
+      "map": "Corridor 101",
+      "hidden": false
+    },
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Mothership",
+      "map": "Corridor 102",
+      "hidden": false
+    },
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Mothership",
+      "map": "Corridor 104",
+      "hidden": false
+    }
+  ],
+  "Gray Luxury Saucer": [
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Mothership",
+      "map": "Corridor 103",
+      "hidden": false
+    },
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Mothership",
+      "map": "Corridor 201",
+      "hidden": false
+    }
+  ],
+  "White Alien Drone": [
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Mothership",
+      "map": "Corridor 202",
+      "hidden": false
+    },
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Mothership",
+      "map": "Corridor 203",
+      "hidden": false
+    },
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Mothership",
+      "map": "Corridor 304",
+      "hidden": false
+    }
+  ],
+  "Black Alien Drone": [
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Mothership",
+      "map": "Corridor 301",
+      "hidden": false
+    },
+    {
+      "region": "Omega Sector",
+      "section": "Omega Sector - Mothership",
+      "map": "Corridor 302",
+      "hidden": false
+    }
+  ]
+}

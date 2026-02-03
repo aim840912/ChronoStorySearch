@@ -1,0 +1,5876 @@
+{
+  "metadata": {
+    "title": "ChronoStory Map and Monster Database",
+    "author": "helloshorty",
+    "extractedAt": "2026-02-03",
+    "source": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSIUj-72ADgwMqShxt4Dn7OP7dBN54l0wda1IPwlIVTZUN_ZtTlRx5DDidr43VXv2HYQ5RNqccLbbGS/pubhtml",
+    "totalSheets": 12,
+    "description": "Complete map and monster database for ChronoStory (MapleStory Worlds)"
+  },
+  "documentation": {
+    "description": "For ChronoStory - Created by helloshorty",
+    "notes": [
+      "PM me in Discord (helloshorty) to request modifications or supplement missing information",
+      "Special thanks to @asteriskos for mapping out Maple Island",
+      "Map Links that are paired (e.g. A1 - A1) indicate bi-directional portals, while individual links refer to one-way portals",
+      "Map Links that start with M refer to portals that transition you to another town",
+      "Added images to find Hidden Streets more easily. PM me if you cannot find it"
+    ],
+    "links": {
+      "game": "https://maplestoryworlds.nexon.com/play/6697fa1ed9cd4de7bea6daffed99a637",
+      "discord": "https://discord.gg/Erkv7vSNZg",
+      "gachaDropList": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR_xZXUXsjc7kiktd4aAcNrvawk5sodq4gRxmz7Vt5gCK4xqwcHhPVHr1YJ57cUpnn0-trzKuEEFzyW/pubhtml",
+      "skillChanges": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQbiXUm7I36S4JtWrnja8GzlYmfa-PFMd-gXZOA9t16o6IFlG8K1gn6WvWh1-I2QHHdz7-46zRy7_8R/pubhtml",
+      "mobDropTable": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQwdsFFDzUkqYoVI4DmOOGlUbDZDwSI2k2ENe7Hvk8Z77Dls-Gt5PP08JwJlRolFqlIiJVtQDaMGrxX/pubhtml",
+      "kinslayDropTable": "https://chrono-story.vercel.app/"
+    }
+  },
+  "regions": {
+    "maple_island": {
+      "name": "Maple Island",
+      "sections": [
+        {
+          "name": "Maple Road - Mushroom Town",
+          "code": "A",
+          "maps": [
+            {
+              "name": "West Entrance to Mushroom Town",
+              "npcs": [
+                "Heena"
+              ],
+              "monsters": [],
+              "links": [
+                "A1"
+              ]
+            },
+            {
+              "name": "Mushroom Town 1",
+              "npcs": [
+                "Roger"
+              ],
+              "monsters": [],
+              "links": [
+                "A1"
+              ]
+            },
+            {
+              "name": "Mushroom Town 2",
+              "npcs": [
+                "Nina"
+              ],
+              "monsters": [],
+              "links": [
+                "A2"
+              ]
+            },
+            {
+              "name": "East Entrance to Mushroom Town",
+              "npcs": [
+                "Todd",
+                "Peter"
+              ],
+              "monsters": [
+                {
+                  "name": "Tutorial Jr. Sentinel",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": [
+                "A4",
+                "A5"
+              ]
+            },
+            {
+              "name": "Snail Hunting Ground I",
+              "npcs": [
+                "Robin",
+                "Sam"
+              ],
+              "monsters": [
+                {
+                  "name": "Snail",
+                  "level": 1,
+                  "baseXP": 3
+                }
+              ],
+              "links": [
+                "A5",
+                "A6"
+              ]
+            },
+            {
+              "name": "Snail Hunting Ground II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Snail",
+                  "level": 1,
+                  "baseXP": 3
+                },
+                {
+                  "name": "Blue Snail",
+                  "level": 2,
+                  "baseXP": 4
+                }
+              ],
+              "links": [
+                "A6",
+                "A7"
+              ]
+            },
+            {
+              "name": "Snail Hunting Ground III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Snail",
+                  "level": 1,
+                  "baseXP": 3
+                },
+                {
+                  "name": "Blue Snail",
+                  "level": 2,
+                  "baseXP": 4
+                },
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                }
+              ],
+              "links": [
+                "A7",
+                "A8"
+              ]
+            },
+            {
+              "name": "A Split Road",
+              "npcs": [
+                "Maria"
+              ],
+              "monsters": [
+                {
+                  "name": "Snail",
+                  "level": 1,
+                  "baseXP": 3
+                },
+                {
+                  "name": "Blue Snail",
+                  "level": 2,
+                  "baseXP": 4
+                },
+                {
+                  "name": "Shroom",
+                  "level": 2,
+                  "baseXP": 5
+                },
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                }
+              ],
+              "links": [
+                "A8",
+                "A9",
+                "A10"
+              ]
+            },
+            {
+              "name": "Mushroom Garden",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Shroom",
+                  "level": 2,
+                  "baseXP": 5
+                }
+              ],
+              "links": [
+                "A11"
+              ]
+            },
+            {
+              "name": "The Field West of Amherst",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Blue Snail",
+                  "level": 2,
+                  "baseXP": 4
+                },
+                {
+                  "name": "Shroom",
+                  "level": 2,
+                  "baseXP": 5
+                }
+              ],
+              "links": [
+                "A9",
+                "A11"
+              ]
+            },
+            {
+              "name": "Snail Garden",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Snail",
+                  "level": 1,
+                  "baseXP": 3
+                }
+              ],
+              "links": [
+                "A12"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Rainbow Street - Amherst",
+          "code": "B",
+          "maps": [
+            {
+              "name": "Amherst Townstreet",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Amherst Crate",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": [
+                "B3"
+              ]
+            },
+            {
+              "name": "Snail Field of Flowers",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Snail",
+                  "level": 1,
+                  "baseXP": 3
+                },
+                {
+                  "name": "#N/A",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": [
+                "B3a"
+              ]
+            },
+            {
+              "name": "Tomato Field",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Ribbon Pig",
+                  "level": 10,
+                  "baseXP": 20
+                }
+              ],
+              "links": [
+                "B6"
+              ]
+            },
+            {
+              "name": "The Field East of Amherst",
+              "npcs": [
+                "Mai"
+              ],
+              "monsters": [
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Slime",
+                  "level": 6,
+                  "baseXP": 10
+                },
+                {
+                  "name": "Pig",
+                  "level": 7,
+                  "baseXP": 15
+                },
+                {
+                  "name": "Ribbon Pig",
+                  "level": 10,
+                  "baseXP": 20
+                }
+              ],
+              "links": [
+                "B5",
+                "B6",
+                "B7",
+                "B8"
+              ]
+            },
+            {
+              "name": "Hunting Ground Middle of the Forest II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Slime",
+                  "level": 6,
+                  "baseXP": 10
+                }
+              ],
+              "links": [
+                "B8"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Maple Road - Southperry",
+          "code": "C",
+          "maps": [
+            {
+              "name": "In A Small Forest",
+              "npcs": [
+                "C4"
+              ],
+              "monsters": [
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                }
+              ],
+              "links": [
+                "C1"
+              ]
+            },
+            {
+              "name": "The Field West of Southperry",
+              "npcs": [
+                "Southperry",
+                "Shanks"
+              ],
+              "monsters": [
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Orange Mushroom",
+                  "level": 8,
+                  "baseXP": 15
+                },
+                {
+                  "name": "Green Mushroom",
+                  "level": 15,
+                  "baseXP": 26
+                }
+              ],
+              "links": [
+                "A10",
+                "C1",
+                "C2",
+                "C3",
+                "C4"
+              ]
+            },
+            {
+              "name": "Pirate's Hideout",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Southperry Pirate Lord",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": [
+                "C5"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "lith_harbor": {
+      "name": "Lith Harbor",
+      "sections": [
+        {
+          "name": "Victoria Road - Lith Harbor",
+          "code": "A",
+          "maps": [
+            {
+              "name": "Lith Harbor",
+              "npcs": [
+                "Teo",
+                "Phil (C)",
+                "Jane",
+                "Vikin",
+                "Chef",
+                "Cody",
+                "Pason",
+                "Spinel",
+                "John"
+              ],
+              "monsters": [],
+              "links": [
+                "A1",
+                "A2",
+                "A3",
+                "A4"
+              ]
+            },
+            {
+              "name": "VIP Cab",
+              "npcs": [
+                "Jean",
+                "Mr. Goldstein",
+                "Olaf",
+                "Chronostory Administrator",
+                "Duey"
+              ],
+              "monsters": [],
+              "links": []
+            }
+          ]
+        },
+        {
+          "name": "Mr. Kim",
+          "code": "S",
+          "maps": []
+        },
+        {
+          "name": "Victoria Road - Lith Harbor East",
+          "code": "B",
+          "maps": [
+            {
+              "name": "Right Around Lith Harbor",
+              "npcs": [
+                "Thicket Around the Beach I",
+                "Thicket Around the Beach II",
+                "Thicket Around the Beach III"
+              ],
+              "monsters": [
+                {
+                  "name": "Snail",
+                  "level": 1,
+                  "baseXP": 3
+                },
+                {
+                  "name": "Blue Snail",
+                  "level": 2,
+                  "baseXP": 4
+                },
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Ribbon Pig",
+                  "level": 10,
+                  "baseXP": 20
+                },
+                {
+                  "name": "Mano",
+                  "level": 20,
+                  "baseXP": 120
+                }
+              ],
+              "links": [
+                "A4",
+                "B1",
+                "B3",
+                "B4"
+              ]
+            },
+            {
+              "name": "3-Way Road-Split",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Shroom",
+                  "level": 2,
+                  "baseXP": 5
+                },
+                {
+                  "name": "Slime",
+                  "level": 6,
+                  "baseXP": 10
+                },
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Orange Mushroom",
+                  "level": 8,
+                  "baseXP": 15
+                },
+                {
+                  "name": "Pig",
+                  "level": 7,
+                  "baseXP": 15
+                },
+                {
+                  "name": "Ribbon Pig",
+                  "level": 10,
+                  "baseXP": 20
+                },
+                {
+                  "name": "Lorang",
+                  "level": 37,
+                  "baseXP": 80
+                }
+              ],
+              "links": [
+                "B4",
+                "B5",
+                "B6",
+                "M1 (To Kerning City)",
+                "M2 (To Henesys)"
+              ]
+            },
+            {
+              "name": "Hidden Street - Beach Hunting Ground",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Pig",
+                  "level": 7,
+                  "baseXP": 15
+                }
+              ],
+              "links": [
+                "B5"
+              ],
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    "kerning_city": {
+      "name": "Kerning City",
+      "sections": [
+        {
+          "name": "Victoria Road - Kerning City",
+          "code": "A",
+          "maps": [
+            {
+              "name": "Kerning City",
+              "npcs": [
+                "Regular Cab",
+                "Mong from Kong",
+                "Alex",
+                "Mr. Pickall",
+                "Spinel",
+                "Shumi",
+                "Cody",
+                "Nella"
+              ],
+              "monsters": [],
+              "links": [
+                "A1",
+                "A2",
+                "A3",
+                "A4",
+                "A5",
+                "A6",
+                "A7",
+                "A8"
+              ]
+            },
+            {
+              "name": "JM From tha Streetz",
+              "npcs": [
+                "A9",
+                "Icarus",
+                "Gachapon",
+                "Lakelis",
+                "Duey",
+                "Mr. Hong"
+              ],
+              "monsters": [],
+              "links": []
+            }
+          ]
+        },
+        {
+          "name": "Victoria Road - Kerning City Subway",
+          "code": "B",
+          "maps": [
+            {
+              "name": "Subway Ticketing Booth - Victoria Road",
+              "npcs": [
+                "Jake",
+                "The Ticket Gate"
+              ],
+              "monsters": [],
+              "links": [
+                "A6",
+                "B1"
+              ]
+            },
+            {
+              "name": "Line 1 <Area 1> - Kerning City Subway",
+              "npcs": [
+                "Transfer Area"
+              ],
+              "monsters": [
+                {
+                  "name": "Bubbling",
+                  "level": 15,
+                  "baseXP": 26
+                }
+              ],
+              "links": [
+                "B1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Victoria Road - Kerning City East",
+          "code": "C",
+          "maps": [
+            {
+              "name": "Construction Site North of Kerning City",
+              "npcs": [
+                "Thief Job Instructor"
+              ],
+              "monsters": [
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Orange Mushroom",
+                  "level": 8,
+                  "baseXP": 15
+                },
+                {
+                  "name": "Axe Stump",
+                  "level": 17,
+                  "baseXP": 30
+                }
+              ],
+              "links": [
+                "C1",
+                "C2",
+                "M3 (To Perion)"
+              ]
+            },
+            {
+              "name": "Hidden Street - Northern Top of Construction Site",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Octopus",
+                  "level": 12,
+                  "baseXP": 24
+                }
+              ],
+              "links": [
+                "C2"
+              ],
+              "hidden": true
+            }
+          ]
+        },
+        {
+          "name": "Warning Street - Kerning City Swamp",
+          "code": "D",
+          "maps": [
+            {
+              "name": "The Swamp of Despair I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Jr. Necki",
+                  "level": 21,
+                  "baseXP": 38
+                },
+                {
+                  "name": "Ligator",
+                  "level": 32,
+                  "baseXP": 60
+                }
+              ],
+              "links": [
+                "A8",
+                "D1"
+              ]
+            },
+            {
+              "name": "The Swamp of Despair II",
+              "npcs": [
+                "Tulcus"
+              ],
+              "monsters": [
+                {
+                  "name": "Jr. Necki",
+                  "level": 21,
+                  "baseXP": 38
+                },
+                {
+                  "name": "Ligator",
+                  "level": 32,
+                  "baseXP": 60
+                }
+              ],
+              "links": [
+                "D2",
+                "D3"
+              ]
+            },
+            {
+              "name": "The Swamp of Despair III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Jr. Necki",
+                  "level": 21,
+                  "baseXP": 38
+                },
+                {
+                  "name": "Ligator",
+                  "level": 32,
+                  "baseXP": 60
+                },
+                {
+                  "name": "Croco",
+                  "level": 52,
+                  "baseXP": 170
+                }
+              ],
+              "links": [
+                "D3",
+                "D4"
+              ]
+            },
+            {
+              "name": "Dangerous Croco I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Croco",
+                  "level": 52,
+                  "baseXP": 170
+                },
+                {
+                  "name": "Dyle",
+                  "level": 65,
+                  "baseXP": 810
+                }
+              ],
+              "links": [
+                "D4",
+                "D5"
+              ]
+            },
+            {
+              "name": "Hidden Street - Swamp of the Jr. Necki",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Jr. Necki",
+                  "level": 21,
+                  "baseXP": 38
+                }
+              ],
+              "links": [
+                "D1"
+              ],
+              "hidden": true
+            },
+            {
+              "name": "Hidden Street - Monkey Swamp I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Lupin",
+                  "level": 37,
+                  "baseXP": 77
+                },
+                {
+                  "name": "Lupin",
+                  "level": 37,
+                  "baseXP": 77
+                },
+                {
+                  "name": "Zombie Lupin",
+                  "level": 40,
+                  "baseXP": 90
+                }
+              ],
+              "links": [
+                "D6"
+              ],
+              "hidden": true
+            },
+            {
+              "name": "Dangerous Croco II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Jr. Necki",
+                  "level": 21,
+                  "baseXP": 38
+                },
+                {
+                  "name": "Clang",
+                  "level": 48,
+                  "baseXP": 128
+                },
+                {
+                  "name": "Croco",
+                  "level": 52,
+                  "baseXP": 170
+                },
+                {
+                  "name": "Lupin",
+                  "level": 37,
+                  "baseXP": 77
+                }
+              ],
+              "links": [
+                "D5",
+                "D6",
+                "M7 (To Sleepywood)"
+              ]
+            },
+            {
+              "name": "Hidden Street - Monkey Swamp III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Zombie Lupin",
+                  "level": 40,
+                  "baseXP": 90
+                }
+              ],
+              "links": [
+                "D6b"
+              ],
+              "hidden": true
+            }
+          ]
+        },
+        {
+          "name": "Victoria Road - Kerning City West",
+          "code": "E",
+          "maps": [
+            {
+              "name": "Kerning City Construction Site",
+              "npcs": [
+                "Chun Ji"
+              ],
+              "monsters": [
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Orange Mushroom",
+                  "level": 8,
+                  "baseXP": 15
+                },
+                {
+                  "name": "Octopus",
+                  "level": 12,
+                  "baseXP": 24
+                }
+              ],
+              "links": [
+                "A9",
+                "E1",
+                "E2"
+              ]
+            },
+            {
+              "name": "L Forest I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Slime",
+                  "level": 6,
+                  "baseXP": 10
+                },
+                {
+                  "name": "Orange Mushroom",
+                  "level": 8,
+                  "baseXP": 15
+                },
+                {
+                  "name": "Iron Hog",
+                  "level": 42,
+                  "baseXP": 99
+                },
+                {
+                  "name": "Green Mushroom",
+                  "level": 15,
+                  "baseXP": 26
+                }
+              ],
+              "links": [
+                "E2",
+                "E3"
+              ]
+            },
+            {
+              "name": "L Forest II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Slime",
+                  "level": 6,
+                  "baseXP": 10
+                },
+                {
+                  "name": "Orange Mushroom",
+                  "level": 8,
+                  "baseXP": 15
+                },
+                {
+                  "name": "Iron Hog",
+                  "level": 42,
+                  "baseXP": 99
+                },
+                {
+                  "name": "Green Mushroom",
+                  "level": 15,
+                  "baseXP": 26
+                }
+              ],
+              "links": [
+                "E3",
+                "E4"
+              ]
+            },
+            {
+              "name": "L Forest III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Orange Mushroom",
+                  "level": 8,
+                  "baseXP": 15
+                },
+                {
+                  "name": "Iron Hog",
+                  "level": 42,
+                  "baseXP": 99
+                },
+                {
+                  "name": "Green Mushroom",
+                  "level": 15,
+                  "baseXP": 26
+                },
+                {
+                  "name": "Horny Mushroom",
+                  "level": 22,
+                  "baseXP": 35
+                }
+              ],
+              "links": [
+                "E4",
+                "E5"
+              ]
+            },
+            {
+              "name": "Hidden Street - Caution Falling Down",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Octopus",
+                  "level": 12,
+                  "baseXP": 24
+                }
+              ],
+              "links": [
+                "E1"
+              ],
+              "hidden": true
+            },
+            {
+              "name": "Kerning City Middle Forest II",
+              "npcs": [
+                "E6a"
+              ],
+              "monsters": [
+                {
+                  "name": "Blue Mushroom",
+                  "level": 20,
+                  "baseXP": 32
+                }
+              ],
+              "links": [
+                "E6"
+              ]
+            },
+            {
+              "name": "Kerning City Middle Forest I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Orange Mushroom",
+                  "level": 8,
+                  "baseXP": 15
+                },
+                {
+                  "name": "Blue Mushroom",
+                  "level": 20,
+                  "baseXP": 32
+                },
+                {
+                  "name": "Horny Mushroom",
+                  "level": 22,
+                  "baseXP": 35
+                }
+              ],
+              "links": [
+                "E5",
+                "E6",
+                "M1 (To Lith Harbor)"
+              ]
+            },
+            {
+              "name": "Kerning City Middle Forest III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Iron Hog",
+                  "level": 42,
+                  "baseXP": 99
+                }
+              ],
+              "links": [
+                "E6a"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "henesys": {
+      "name": "Henesys",
+      "sections": [
+        {
+          "name": "Victoria Road - Henesys",
+          "code": "A",
+          "maps": [
+            {
+              "name": "Henesys",
+              "npcs": [
+                "Regular Cab",
+                "Cody",
+                "Rina",
+                "Mia",
+                "Spinel",
+                "Jay"
+              ],
+              "monsters": [],
+              "links": [
+                "A1",
+                "A2",
+                "A3",
+                "A4",
+                "A5",
+                "A6"
+              ]
+            },
+            {
+              "name": "Henesys Market",
+              "npcs": [
+                "Gachapon",
+                "A2a",
+                "A2b"
+              ],
+              "monsters": [],
+              "links": [
+                "A2"
+              ]
+            },
+            {
+              "name": "Henesys Weapon Store",
+              "npcs": [
+                "Karl"
+              ],
+              "monsters": [],
+              "links": [
+                "A2a"
+              ]
+            },
+            {
+              "name": "Henesys Department Store",
+              "npcs": [
+                "Luna"
+              ],
+              "monsters": [],
+              "links": [
+                "A2b"
+              ]
+            },
+            {
+              "name": "Chief Stan",
+              "npcs": [
+                "Maple Administrator",
+                "Mrs. Ming Ming",
+                "Cassandra",
+                "Bruce",
+                "Thomas Swift",
+                "Camila",
+                "Duey"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Henesys Park",
+              "npcs": [
+                "Mr. Lee",
+                "A3",
+                "A3a"
+              ],
+              "monsters": [],
+              "links": [
+                "A2c"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Victoria Road - Henesys West",
+          "code": "B",
+          "maps": [
+            {
+              "name": "Henesys Hunting Ground II",
+              "npcs": [
+                "B1a"
+              ],
+              "monsters": [
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                }
+              ],
+              "links": [
+                "B1"
+              ]
+            },
+            {
+              "name": "Henesys Hunting Ground I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Blue Snail",
+                  "level": 2,
+                  "baseXP": 4
+                },
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Slime",
+                  "level": 6,
+                  "baseXP": 10
+                },
+                {
+                  "name": "Orange Mushroom",
+                  "level": 8,
+                  "baseXP": 15
+                },
+                {
+                  "name": "Green Mushroom",
+                  "level": 15,
+                  "baseXP": 26
+                }
+              ],
+              "links": [
+                "A4",
+                "B1",
+                "B2"
+              ]
+            },
+            {
+              "name": "Henesys Hunting Ground III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Orange Mushroom",
+                  "level": 8,
+                  "baseXP": 15
+                }
+              ],
+              "links": [
+                "B1a"
+              ]
+            },
+            {
+              "name": "A Hill West of Henesys",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Shroom",
+                  "level": 2,
+                  "baseXP": 5
+                },
+                {
+                  "name": "Orange Mushroom",
+                  "level": 8,
+                  "baseXP": 15
+                },
+                {
+                  "name": "Pig",
+                  "level": 7,
+                  "baseXP": 15
+                },
+                {
+                  "name": "Ribbon Pig",
+                  "level": 10,
+                  "baseXP": 20
+                }
+              ],
+              "links": [
+                "B2",
+                "B3",
+                "B4"
+              ]
+            },
+            {
+              "name": "Forest West of Henesys",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Blue Snail",
+                  "level": 2,
+                  "baseXP": 4
+                },
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Slime",
+                  "level": 6,
+                  "baseXP": 10
+                },
+                {
+                  "name": "Pig",
+                  "level": 7,
+                  "baseXP": 15
+                },
+                {
+                  "name": "Ribbon Pig",
+                  "level": 10,
+                  "baseXP": 20
+                }
+              ],
+              "links": [
+                "B4",
+                "M2 (To Lith Harbor)"
+              ]
+            },
+            {
+              "name": "Hidden Street - Mushroom Garden",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Orange Mushroom",
+                  "level": 8,
+                  "baseXP": 15
+                }
+              ],
+              "links": [
+                "B3"
+              ],
+              "hidden": true
+            }
+          ]
+        },
+        {
+          "name": "Victoria Road - Henesys East",
+          "code": "C",
+          "maps": [
+            {
+              "name": "The Hill East of Henesys",
+              "npcs": [
+                "Anne"
+              ],
+              "monsters": [
+                {
+                  "name": "Shroom",
+                  "level": 2,
+                  "baseXP": 5
+                },
+                {
+                  "name": "Orange Mushroom",
+                  "level": 8,
+                  "baseXP": 15
+                }
+              ],
+              "links": [
+                "A5",
+                "C1"
+              ]
+            },
+            {
+              "name": "The Rain-Forest East of Henesys",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Pig",
+                  "level": 7,
+                  "baseXP": 15
+                }
+              ],
+              "links": [
+                "C1"
+              ]
+            },
+            {
+              "name": "Henesys Pig Farm",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Ribbon Pig",
+                  "level": 10,
+                  "baseXP": 20
+                }
+              ],
+              "links": [
+                "C2"
+              ]
+            },
+            {
+              "name": "The Forest East of Henesys",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Slime",
+                  "level": 6,
+                  "baseXP": 10
+                },
+                {
+                  "name": "Pig",
+                  "level": 7,
+                  "baseXP": 15
+                },
+                {
+                  "name": "Blue Mushroom",
+                  "level": 20,
+                  "baseXP": 32
+                },
+                {
+                  "name": "Ribbon Pig",
+                  "level": 10,
+                  "baseXP": 20
+                }
+              ],
+              "links": [
+                "C3",
+                "C4",
+                "C5",
+                "M5 (To Ellinia)",
+                "M6 (To Nautilus)"
+              ]
+            },
+            {
+              "name": "Hidden Street - The Blue Mushroom Forest",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Blue Mushroom",
+                  "level": 20,
+                  "baseXP": 32
+                },
+                {
+                  "name": "?",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": [
+                "C4"
+              ],
+              "hidden": true
+            }
+          ]
+        },
+        {
+          "name": "Warning Street - Henesys Dungeon Entrance",
+          "code": "D",
+          "maps": [
+            {
+              "name": "The Road to the Dungeon",
+              "npcs": [
+                "Bowman Job Instructor"
+              ],
+              "monsters": [
+                {
+                  "name": "Blue Mushroom",
+                  "level": 20,
+                  "baseXP": 32
+                },
+                {
+                  "name": "Horny Mushroom",
+                  "level": 22,
+                  "baseXP": 35
+                }
+              ],
+              "links": [
+                "A6",
+                "D1"
+              ]
+            },
+            {
+              "name": "Henesys Dungeon Entrance",
+              "npcs": [
+                "Luke"
+              ],
+              "monsters": [
+                {
+                  "name": "Horny Mushroom",
+                  "level": 22,
+                  "baseXP": 35
+                }
+              ],
+              "links": [
+                "D1"
+              ]
+            },
+            {
+              "name": "Hidden Street - The Breathing Rock",
+              "npcs": [
+                "D2a"
+              ],
+              "monsters": [
+                {
+                  "name": "Fairy",
+                  "level": 30,
+                  "baseXP": 120
+                }
+              ],
+              "links": [
+                "D2"
+              ],
+              "hidden": true
+            },
+            {
+              "name": "The Entrance of Golem's Temple",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Stone Golem",
+                  "level": 55,
+                  "baseXP": 170
+                }
+              ],
+              "links": [
+                "D2a"
+              ]
+            },
+            {
+              "name": "Dark Stone Golem",
+              "npcs": [],
+              "monsters": [],
+              "links": [
+                "D2b"
+              ]
+            },
+            {
+              "name": "Mixed Golem",
+              "npcs": [],
+              "monsters": [],
+              "links": [
+                "D2c"
+              ]
+            },
+            {
+              "name": "Golem's Temple I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Stone Golem",
+                  "level": 55,
+                  "baseXP": 170
+                }
+              ],
+              "links": [
+                "D2b"
+              ]
+            },
+            {
+              "name": "Golem's Temple II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Stone Golem",
+                  "level": 58,
+                  "baseXP": 200
+                }
+              ],
+              "links": [
+                "D2c"
+              ]
+            },
+            {
+              "name": "Golem's Temple III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Mixed Golem",
+                  "level": 59,
+                  "baseXP": 210
+                }
+              ],
+              "links": [
+                "D2d"
+              ]
+            },
+            {
+              "name": "Golem's Temple IV",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Hot Mixed Golem",
+                  "level": 68,
+                  "baseXP": 275
+                }
+              ],
+              "links": [
+                "D2e"
+              ]
+            },
+            {
+              "name": "Stone Golem",
+              "npcs": [],
+              "monsters": [],
+              "links": [
+                "D2"
+              ]
+            },
+            {
+              "name": "Golem's Temple V",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Cold Mixed Golem",
+                  "level": 68,
+                  "baseXP": 275
+                }
+              ],
+              "links": [
+                "D2f"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "perion": {
+      "name": "Perion",
+      "sections": [
+        {
+          "name": "Victoria Road - Perion",
+          "code": "A",
+          "maps": [
+            {
+              "name": "Perion",
+              "npcs": [
+                "Duey"
+              ],
+              "monsters": [],
+              "links": [
+                "A1"
+              ]
+            },
+            {
+              "name": "Regular Cab",
+              "npcs": [
+                "A2",
+                "Blackbull",
+                "Spinel",
+                "Mr. Wang",
+                "Cody",
+                "Ayan",
+                "Manji",
+                "Mr. Smith",
+                "Mr. Thunder",
+                "Gachapon"
+              ],
+              "monsters": [],
+              "links": [
+                "A3",
+                "A4",
+                "A5",
+                "A6"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Victoria Road - Perion West",
+          "code": "B",
+          "maps": [
+            {
+              "name": "West Street Corner of Perion",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Blue Snail",
+                  "level": 2,
+                  "baseXP": 4
+                },
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Dark Stump",
+                  "level": 10,
+                  "baseXP": 18
+                },
+                {
+                  "name": "Axe Stump",
+                  "level": 17,
+                  "baseXP": 30
+                },
+                {
+                  "name": "Dark Axe Stump",
+                  "level": 22,
+                  "baseXP": 38
+                }
+              ],
+              "links": [
+                "A4",
+                "B1"
+              ]
+            },
+            {
+              "name": "West Rocky Mountain II",
+              "npcs": [
+                "B2a"
+              ],
+              "monsters": [
+                {
+                  "name": "Dark Axe Stump",
+                  "level": 22,
+                  "baseXP": 38
+                },
+                {
+                  "name": "Dark Axe Stump",
+                  "level": 22,
+                  "baseXP": 38
+                },
+                {
+                  "name": "Wild Boar",
+                  "level": 25,
+                  "baseXP": 42
+                },
+                {
+                  "name": "Fire Boar",
+                  "level": 32,
+                  "baseXP": 60
+                },
+                {
+                  "name": "Lupin",
+                  "level": 37,
+                  "baseXP": 77
+                }
+              ],
+              "links": [
+                "B2"
+              ]
+            },
+            {
+              "name": "West Rocky Mountain I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Dark Stump",
+                  "level": 10,
+                  "baseXP": 18
+                },
+                {
+                  "name": "Dark Axe Stump",
+                  "level": 22,
+                  "baseXP": 38
+                },
+                {
+                  "name": "Wild Boar",
+                  "level": 25,
+                  "baseXP": 42
+                }
+              ],
+              "links": [
+                "B1",
+                "B2",
+                "B3"
+              ]
+            },
+            {
+              "name": "West Domain of Perion",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Octopus",
+                  "level": 12,
+                  "baseXP": 24
+                },
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Dark Stump",
+                  "level": 10,
+                  "baseXP": 18
+                }
+              ],
+              "links": [
+                "B3",
+                "M3 (To Kerning City)"
+              ]
+            },
+            {
+              "name": "West Rocky Mountain IV",
+              "npcs": [
+                "Warrior Job Instructor"
+              ],
+              "monsters": [
+                {
+                  "name": "Fire Boar",
+                  "level": 32,
+                  "baseXP": 60
+                },
+                {
+                  "name": "Lupin",
+                  "level": 37,
+                  "baseXP": 77
+                }
+              ],
+              "links": [
+                "B2b"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Victoria Road - Perion East",
+          "code": "C",
+          "maps": [
+            {
+              "name": "Hidden Street - Land of Wild Boar",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Wild Boar",
+                  "level": 25,
+                  "baseXP": 42
+                },
+                {
+                  "name": "Iron Boar",
+                  "level": 45,
+                  "baseXP": 115
+                }
+              ],
+              "links": [
+                "C1"
+              ],
+              "hidden": true
+            },
+            {
+              "name": "Perion Street Corner",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Snail",
+                  "level": 1,
+                  "baseXP": 3
+                },
+                {
+                  "name": "Blue Snail",
+                  "level": 2,
+                  "baseXP": 4
+                },
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Wild Boar",
+                  "level": 25,
+                  "baseXP": 42
+                }
+              ],
+              "links": [
+                "A5",
+                "C1",
+                "C2"
+              ]
+            },
+            {
+              "name": "Hidden Street - Over the Wall",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Jr. Boogie",
+                  "level": 35,
+                  "baseXP": 150
+                }
+              ],
+              "links": [
+                "C1b"
+              ],
+              "hidden": true
+            },
+            {
+              "name": "East Rocky Mountain II",
+              "npcs": [
+                "Winston"
+              ],
+              "monsters": [
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                }
+              ],
+              "links": [
+                "C3"
+              ]
+            },
+            {
+              "name": "East Rocky Mountain III",
+              "npcs": [
+                "Burnt Sword"
+              ],
+              "monsters": [
+                {
+                  "name": "Dark Stump",
+                  "level": 10,
+                  "baseXP": 18
+                }
+              ],
+              "links": [
+                "C3a"
+              ]
+            },
+            {
+              "name": "East Rocky Mountain IV",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Axe Stump",
+                  "level": 17,
+                  "baseXP": 30
+                }
+              ],
+              "links": [
+                "C3b"
+              ]
+            },
+            {
+              "name": "East Rocky Mountain V",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Axe Stump",
+                  "level": 17,
+                  "baseXP": 30
+                },
+                {
+                  "name": "Dark Stump",
+                  "level": 10,
+                  "baseXP": 18
+                },
+                {
+                  "name": "Stumpy",
+                  "level": 35,
+                  "baseXP": 205
+                },
+                {
+                  "name": "Copper Drake",
+                  "level": 45,
+                  "baseXP": 105
+                }
+              ],
+              "links": [
+                "C3c"
+              ]
+            },
+            {
+              "name": "East Rocky Mountain VI",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Copper Drake",
+                  "level": 45,
+                  "baseXP": 105
+                },
+                {
+                  "name": "Red Drake",
+                  "level": 60,
+                  "baseXP": 220
+                }
+              ],
+              "links": [
+                "C3d"
+              ]
+            },
+            {
+              "name": "East Rocky Mountain I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Dark Stump",
+                  "level": 10,
+                  "baseXP": 18
+                }
+              ],
+              "links": [
+                "C2",
+                "C3",
+                "C4"
+              ]
+            },
+            {
+              "name": "Rocky Road I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Dark Stump",
+                  "level": 10,
+                  "baseXP": 18
+                }
+              ],
+              "links": [
+                "C4",
+                "C5"
+              ]
+            },
+            {
+              "name": "Rocky Road II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Red Snail",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Dark Stump",
+                  "level": 10,
+                  "baseXP": 18
+                },
+                {
+                  "name": "Axe Stump",
+                  "level": 17,
+                  "baseXP": 30
+                }
+              ],
+              "links": [
+                "C5",
+                "C6"
+              ]
+            },
+            {
+              "name": "East Rocky Mountain VII",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Copper Drake",
+                  "level": 45,
+                  "baseXP": 105
+                },
+                {
+                  "name": "Red Drake",
+                  "level": 60,
+                  "baseXP": 220
+                }
+              ],
+              "links": [
+                "C3e"
+              ]
+            },
+            {
+              "name": "Excavation Site I",
+              "npcs": [
+                "C7a"
+              ],
+              "monsters": [
+                {
+                  "name": "Ghost Stump",
+                  "level": 19,
+                  "baseXP": 33
+                },
+                {
+                  "name": "Wooden Mask",
+                  "level": 23,
+                  "baseXP": 42
+                }
+              ],
+              "links": [
+                "C7"
+              ]
+            },
+            {
+              "name": "Rocky Mask",
+              "npcs": [],
+              "monsters": [],
+              "links": [
+                "C7b"
+              ]
+            },
+            {
+              "name": "Excavation Site III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Wooden Mask",
+                  "level": 23,
+                  "baseXP": 42
+                }
+              ],
+              "links": [
+                "C7b"
+              ]
+            },
+            {
+              "name": "Rocky Mask",
+              "npcs": [],
+              "monsters": [],
+              "links": [
+                "C7c"
+              ]
+            },
+            {
+              "name": "Excavation Site <Camp>",
+              "npcs": [
+                "Guild Rank Board",
+                "C7d"
+              ],
+              "monsters": [],
+              "links": [
+                "C7c"
+              ]
+            },
+            {
+              "name": "Remains <Tomb> I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Skeledog",
+                  "level": 44,
+                  "baseXP": 107
+                },
+                {
+                  "name": "Mummydog",
+                  "level": 47,
+                  "baseXP": 117
+                }
+              ],
+              "links": [
+                "C7d"
+              ]
+            },
+            {
+              "name": "Remains <Tomb> II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Skeledog",
+                  "level": 44,
+                  "baseXP": 107
+                },
+                {
+                  "name": "Mummydog",
+                  "level": 47,
+                  "baseXP": 117
+                }
+              ],
+              "links": [
+                "C7e"
+              ]
+            },
+            {
+              "name": "Camp 1",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Skeleton Soldier",
+                  "level": 57,
+                  "baseXP": 190
+                },
+                {
+                  "name": "Officer Skeleton",
+                  "level": 63,
+                  "baseXP": 240
+                }
+              ],
+              "links": [
+                "C7f"
+              ]
+            },
+            {
+              "name": "Remains <Tomb> III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Mummydog",
+                  "level": 47,
+                  "baseXP": 117
+                },
+                {
+                  "name": "Skeleton Soldier",
+                  "level": 57,
+                  "baseXP": 190
+                },
+                {
+                  "name": "Officer Skeleton",
+                  "level": 63,
+                  "baseXP": 240
+                }
+              ],
+              "links": [
+                "C7g"
+              ]
+            },
+            {
+              "name": "Camp 2",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Skeleton Soldier",
+                  "level": 57,
+                  "baseXP": 190
+                },
+                {
+                  "name": "Officer Skeleton",
+                  "level": 63,
+                  "baseXP": 240
+                }
+              ],
+              "links": [
+                "C7h"
+              ]
+            },
+            {
+              "name": "Remains <Tomb> IV",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Skeleton Soldier",
+                  "level": 57,
+                  "baseXP": 190
+                },
+                {
+                  "name": "Officer Skeleton",
+                  "level": 63,
+                  "baseXP": 240
+                },
+                {
+                  "name": "Commander Skeleton",
+                  "level": 73,
+                  "baseXP": 315
+                }
+              ],
+              "links": [
+                "C7i"
+              ]
+            },
+            {
+              "name": "Camp 3",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Officer Skeleton",
+                  "level": 63,
+                  "baseXP": 240
+                },
+                {
+                  "name": "Commander Skeleton",
+                  "level": 73,
+                  "baseXP": 315
+                }
+              ],
+              "links": [
+                "C7j"
+              ]
+            },
+            {
+              "name": "Rocky Road III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Axe Stump",
+                  "level": 17,
+                  "baseXP": 30
+                },
+                {
+                  "name": "Ghost Stump",
+                  "level": 19,
+                  "baseXP": 33
+                },
+                {
+                  "name": "Wild Boar",
+                  "level": 25,
+                  "baseXP": 42
+                }
+              ],
+              "links": [
+                "C6",
+                "C7",
+                "C8"
+              ]
+            },
+            {
+              "name": "Remains <Cliff>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Commander Skeleton",
+                  "level": 73,
+                  "baseXP": 315
+                }
+              ],
+              "links": [
+                "C7k"
+              ]
+            },
+            {
+              "name": "East Domain of Perion",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Dark Stump",
+                  "level": 10,
+                  "baseXP": 18
+                },
+                {
+                  "name": "Axe Stump",
+                  "level": 17,
+                  "baseXP": 30
+                },
+                {
+                  "name": "Dark Axe Stump",
+                  "level": 22,
+                  "baseXP": 38
+                },
+                {
+                  "name": "Wild Boar",
+                  "level": 25,
+                  "baseXP": 42
+                }
+              ],
+              "links": [
+                "C8",
+                "C9",
+                "M4 (To Ellinia)"
+              ]
+            },
+            {
+              "name": "Hidden Street - The Land of Wild Boar II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Wild Boar",
+                  "level": 25,
+                  "baseXP": 42
+                }
+              ],
+              "links": [
+                "C9"
+              ],
+              "hidden": true
+            }
+          ]
+        },
+        {
+          "name": "Warning Street - Perion Dungeon Entrance",
+          "code": "D",
+          "maps": [
+            {
+              "name": "Perion Dungeon Entrance",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Axe Stump",
+                  "level": 22,
+                  "baseXP": 38
+                },
+                {
+                  "name": "Fire Boar",
+                  "level": 32,
+                  "baseXP": 60
+                },
+                {
+                  "name": "Iron Boar",
+                  "level": 45,
+                  "baseXP": 115
+                }
+              ],
+              "links": [
+                "A6",
+                "D1"
+              ]
+            },
+            {
+              "name": "Deep Valley I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Axe Stump",
+                  "level": 17,
+                  "baseXP": 30
+                },
+                {
+                  "name": "Dark Axe Stump",
+                  "level": 22,
+                  "baseXP": 38
+                },
+                {
+                  "name": "Wild Boar",
+                  "level": 25,
+                  "baseXP": 42
+                },
+                {
+                  "name": "Fire Boar",
+                  "level": 32,
+                  "baseXP": 60
+                },
+                {
+                  "name": "Copper Drake",
+                  "level": 45,
+                  "baseXP": 105
+                }
+              ],
+              "links": [
+                "D1",
+                "D2",
+                "D3"
+              ]
+            },
+            {
+              "name": "Hidden Street - Dangerous Valley",
+              "npcs": [
+                "D2a"
+              ],
+              "monsters": [
+                {
+                  "name": "Copper Drake",
+                  "level": 45,
+                  "baseXP": 105
+                },
+                {
+                  "name": "Red Drake",
+                  "level": 60,
+                  "baseXP": 220
+                }
+              ],
+              "links": [
+                "D2"
+              ],
+              "hidden": true
+            },
+            {
+              "name": "The Burnt Land I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Fire Boar",
+                  "level": 32,
+                  "baseXP": 60
+                }
+              ],
+              "links": [
+                "D4"
+              ]
+            },
+            {
+              "name": "The Burnt Land II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Fire Boar",
+                  "level": 32,
+                  "baseXP": 60
+                },
+                {
+                  "name": "Iron Boar",
+                  "level": 45,
+                  "baseXP": 115
+                }
+              ],
+              "links": [
+                "D4a"
+              ]
+            },
+            {
+              "name": "The Burnt Land III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Iron Boar",
+                  "level": 45,
+                  "baseXP": 115
+                },
+                {
+                  "name": "Red Drake",
+                  "level": 60,
+                  "baseXP": 220
+                }
+              ],
+              "links": [
+                "D4b"
+              ]
+            },
+            {
+              "name": "The Burnt Land IV",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Red Drake",
+                  "level": 60,
+                  "baseXP": 220
+                }
+              ],
+              "links": [
+                "D4c"
+              ]
+            },
+            {
+              "name": "Hot Mixed Golem",
+              "npcs": [],
+              "monsters": [],
+              "links": [
+                "D4d"
+              ]
+            },
+            {
+              "name": "Deep Valley II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Axe Stump",
+                  "level": 22,
+                  "baseXP": 38
+                },
+                {
+                  "name": "Wild Boar",
+                  "level": 25,
+                  "baseXP": 42
+                },
+                {
+                  "name": "Fire Boar",
+                  "level": 32,
+                  "baseXP": 60
+                }
+              ],
+              "links": [
+                "D3",
+                "D4",
+                "D5"
+              ]
+            },
+            {
+              "name": "Deep Valley III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Axe Stump",
+                  "level": 22,
+                  "baseXP": 38
+                },
+                {
+                  "name": "Fire Boar",
+                  "level": 32,
+                  "baseXP": 60
+                },
+                {
+                  "name": "Iron Boar",
+                  "level": 45,
+                  "baseXP": 115
+                }
+              ],
+              "links": [
+                "D5",
+                "M9 (To Sleepywood)"
+              ]
+            },
+            {
+              "name": "The Burnt Land V",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Hot Mixed Golem",
+                  "level": 68,
+                  "baseXP": 275
+                }
+              ],
+              "links": [
+                "D4d"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ellinia": {
+      "name": "Ellinia",
+      "sections": [
+        {
+          "name": "Victoria Road - Ellinia",
+          "code": "A",
+          "maps": [
+            {
+              "name": "Ellinia",
+              "npcs": [
+                "Regular Cab",
+                "Wing the Fairy",
+                "Spinel",
+                "Duey",
+                "Mr. Park",
+                "Betty",
+                "Rowen the Fairy",
+                "Gachapon",
+                "Francois",
+                "Arwen the Fairy",
+                "Cody",
+                "Shane"
+              ],
+              "monsters": [],
+              "links": [
+                "A1",
+                "A2",
+                "A3",
+                "A4",
+                "A5",
+                "A6"
+              ]
+            },
+            {
+              "name": "VIP Cab",
+              "npcs": [],
+              "monsters": [],
+              "links": []
+            }
+          ]
+        },
+        {
+          "name": "Victoria Road - Ellinia North",
+          "code": "B",
+          "maps": [
+            {
+              "name": "The Field Up North of Ellinia",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Slime",
+                  "level": 6,
+                  "baseXP": 10
+                }
+              ],
+              "links": [
+                "A5",
+                "B1"
+              ]
+            },
+            {
+              "name": "The Tree That Grew II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Stump",
+                  "level": 10,
+                  "baseXP": 18
+                }
+              ],
+              "links": [
+                "B2"
+              ]
+            },
+            {
+              "name": "The Tree That Grew I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Slime",
+                  "level": 6,
+                  "baseXP": 10
+                }
+              ],
+              "links": [
+                "B1"
+              ]
+            },
+            {
+              "name": "The Forest North of Ellinia",
+              "npcs": [
+                "Fanzy"
+              ],
+              "monsters": [],
+              "links": [
+                "B3"
+              ]
+            },
+            {
+              "name": "The Tree That Grew III",
+              "npcs": [
+                "El Moth",
+                "B3"
+              ],
+              "monsters": [
+                {
+                  "name": "Green Mushroom",
+                  "level": 15,
+                  "baseXP": 26
+                }
+              ],
+              "links": [
+                "B2a"
+              ]
+            },
+            {
+              "name": "Tree Dungeon, Forest Up North I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Slime",
+                  "level": 6,
+                  "baseXP": 10
+                }
+              ],
+              "links": [
+                "B4"
+              ]
+            },
+            {
+              "name": "Tree Dungeon, Forest Up North II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Stump",
+                  "level": 10,
+                  "baseXP": 18
+                }
+              ],
+              "links": [
+                "B5"
+              ]
+            },
+            {
+              "name": "Tree Dungeon, Forest Up North III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Octopus",
+                  "level": 12,
+                  "baseXP": 24
+                }
+              ],
+              "links": [
+                "B6"
+              ]
+            },
+            {
+              "name": "Tree Dungeon, Forest Up North IV",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Green Mushroom",
+                  "level": 15,
+                  "baseXP": 26
+                }
+              ],
+              "links": [
+                "B7"
+              ]
+            },
+            {
+              "name": "Tree Dungeon, Forest Up North V",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Bubbling",
+                  "level": 15,
+                  "baseXP": 26
+                }
+              ],
+              "links": [
+                "B8"
+              ]
+            },
+            {
+              "name": "Tree Dungeon, Forest Up North VI",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Evil Eye",
+                  "level": 27,
+                  "baseXP": 50
+                }
+              ],
+              "links": [
+                "B9"
+              ]
+            },
+            {
+              "name": "Tree Dungeon, Forest Up North VII",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Curse Eye",
+                  "level": 35,
+                  "baseXP": 70
+                }
+              ],
+              "links": [
+                "B10"
+              ]
+            },
+            {
+              "name": "Tree Dungeon, Forest Up North VIII",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Cold Eye",
+                  "level": 40,
+                  "baseXP": 85
+                }
+              ],
+              "links": [
+                "B11"
+              ]
+            },
+            {
+              "name": "Magician Job Instructor",
+              "npcs": [
+                "B4"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Tree Dungeon, Forest Up North IX",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Fairy",
+                  "level": 30,
+                  "baseXP": 120
+                }
+              ],
+              "links": [
+                "B12"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Victoria Road - Ellinia South",
+          "code": "C",
+          "maps": [
+            {
+              "name": "The Field South of Ellinia",
+              "npcs": [
+                "Estelle"
+              ],
+              "monsters": [
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Slime",
+                  "level": 6,
+                  "baseXP": 10
+                }
+              ],
+              "links": [
+                "A6",
+                "C1"
+              ]
+            },
+            {
+              "name": "Hidden Street - Downstairs at the Forest",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Lupin",
+                  "level": 37,
+                  "baseXP": 77
+                },
+                {
+                  "name": "Lupin",
+                  "level": 37,
+                  "baseXP": 77
+                },
+                {
+                  "name": "Zombie Lupin",
+                  "level": 40,
+                  "baseXP": 90
+                }
+              ],
+              "links": [
+                "C2"
+              ],
+              "hidden": true
+            },
+            {
+              "name": "Hidden Street - Monkey Forest II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Lupin",
+                  "level": 37,
+                  "baseXP": 77
+                },
+                {
+                  "name": "Zombie Lupin",
+                  "level": 40,
+                  "baseXP": 90
+                }
+              ],
+              "links": [
+                "C3a"
+              ],
+              "hidden": true
+            },
+            {
+              "name": "Hidden Street - The Forest of Evil I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Malady",
+                  "level": 55,
+                  "baseXP": 170
+                }
+              ],
+              "links": [
+                "C3b"
+              ],
+              "hidden": true
+            },
+            {
+              "name": "The Forest of Wisdom",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Slime",
+                  "level": 6,
+                  "baseXP": 10
+                },
+                {
+                  "name": "Green Mushroom",
+                  "level": 15,
+                  "baseXP": 26
+                },
+                {
+                  "name": "Lupin",
+                  "level": 37,
+                  "baseXP": 77
+                }
+              ],
+              "links": [
+                "C1",
+                "C2",
+                "C3"
+              ]
+            },
+            {
+              "name": "Hidden Street - The Forest of Evil II",
+              "npcs": [
+                "Door of Dimension"
+              ],
+              "monsters": [
+                {
+                  "name": "Malady",
+                  "level": 55,
+                  "baseXP": 170
+                },
+                {
+                  "name": "Faust",
+                  "level": 50,
+                  "baseXP": 410
+                }
+              ],
+              "links": [
+                "C3c"
+              ],
+              "hidden": true
+            },
+            {
+              "name": "Dungeon, Southern Forest I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Slime",
+                  "level": 6,
+                  "baseXP": 10
+                },
+                {
+                  "name": "Dark Stump",
+                  "level": 10,
+                  "baseXP": 18
+                },
+                {
+                  "name": "Green Mushroom",
+                  "level": 15,
+                  "baseXP": 26
+                }
+              ],
+              "links": [
+                "C5"
+              ]
+            },
+            {
+              "name": "The Forest South of Ellinia",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Stump",
+                  "level": 4,
+                  "baseXP": 8
+                },
+                {
+                  "name": "Slime",
+                  "level": 6,
+                  "baseXP": 10
+                },
+                {
+                  "name": "Dark Stump",
+                  "level": 10,
+                  "baseXP": 18
+                },
+                {
+                  "name": "Green Mushroom",
+                  "level": 15,
+                  "baseXP": 26
+                },
+                {
+                  "name": "Horny Mushroom",
+                  "level": 22,
+                  "baseXP": 35
+                }
+              ],
+              "links": [
+                "C4",
+                "C5",
+                "C6",
+                "C7",
+                "C8"
+              ]
+            },
+            {
+              "name": "Dungeon, Southern Forest IV",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Horny Mushroom",
+                  "level": 22,
+                  "baseXP": 35
+                }
+              ],
+              "links": [
+                "C8"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "nautilus": {
+      "name": "Nautilus",
+      "sections": [
+        {
+          "name": "Victoria Road - Nautilus",
+          "code": "A",
+          "maps": [
+            {
+              "name": "Nautilus",
+              "npcs": [
+                "Abel",
+                "Pupa"
+              ],
+              "monsters": [],
+              "links": [
+                "A1",
+                "A2"
+              ]
+            },
+            {
+              "name": "Nautilus' Mid-Sized Taxi",
+              "npcs": [
+                "Bart"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Mid Floor Hallway",
+              "npcs": [
+                "Morgan (W)",
+                "Rodos (A)",
+                "Rolonay",
+                "Cassandra",
+                "Dondlass (S)",
+                "Bartol"
+              ],
+              "monsters": [],
+              "links": [
+                "A1",
+                "A1a",
+                "A1b",
+                "A1c",
+                "A1d"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gali",
+          "code": "G",
+          "maps": [
+            {
+              "name": "Bottom Floor Hallway",
+              "npcs": [
+                "Sharyl",
+                "Bonnie",
+                "Baine"
+              ],
+              "monsters": [],
+              "links": [
+                "A1c",
+                "A1c1"
+              ]
+            },
+            {
+              "name": "Top Floor Hallway",
+              "npcs": [
+                "Muirhat",
+                "Trash Can",
+                "Mrs. Reade",
+                "Jack"
+              ],
+              "monsters": [],
+              "links": [
+                "A1d",
+                "A1d1",
+                "A1d2",
+                "A1d3"
+              ]
+            },
+            {
+              "name": "On the Way to the Harbor",
+              "npcs": [],
+              "monsters": [],
+              "links": [
+                "A2"
+              ]
+            },
+            {
+              "name": "Cafeteria",
+              "npcs": [
+                "Tangyoon"
+              ],
+              "monsters": [],
+              "links": [
+                "A1d3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "sleepywood": {
+      "name": "Sleepywood",
+      "sections": [
+        {
+          "name": "Dungeon - Sleepywood",
+          "code": "A",
+          "maps": [
+            {
+              "name": "Sleepywood",
+              "npcs": [
+                "Regular Cab",
+                "The Rememberer",
+                "Mr. Oh",
+                "Cassandra",
+                "Gachapon",
+                "Mysterious Statue"
+              ],
+              "monsters": [],
+              "links": [
+                "A1",
+                "A2",
+                "A3",
+                "A4"
+              ]
+            },
+            {
+              "name": "Sleepy Dungeon II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Cold Eye",
+                  "level": 40,
+                  "baseXP": 85
+                }
+              ],
+              "links": [
+                "A2a"
+              ]
+            },
+            {
+              "name": "Sleepy Dungeon III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Stone Golem",
+                  "level": 55,
+                  "baseXP": 170
+                }
+              ],
+              "links": [
+                "A2b"
+              ]
+            },
+            {
+              "name": "Sleepy Dungeon IV",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Stone Golem",
+                  "level": 58,
+                  "baseXP": 200
+                }
+              ],
+              "links": [
+                "A2c"
+              ]
+            },
+            {
+              "name": "Golem's Castle Ruins",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Stone Golem",
+                  "level": 58,
+                  "baseXP": 200
+                }
+              ],
+              "links": [
+                "A2d"
+              ]
+            },
+            {
+              "name": "Sleepy Dungeon V",
+              "npcs": [
+                "Door of Dimension"
+              ],
+              "monsters": [
+                {
+                  "name": "Dark Stone Golem",
+                  "level": 58,
+                  "baseXP": 200
+                }
+              ],
+              "links": [
+                "A2e"
+              ]
+            },
+            {
+              "name": "Mixed Golem",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "210",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": [
+                "A2f"
+              ]
+            },
+            {
+              "name": "The Forest of Golem",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Stone Golem",
+                  "level": 58,
+                  "baseXP": 200
+                }
+              ],
+              "links": [
+                "A2f"
+              ]
+            },
+            {
+              "name": "VIP Cab",
+              "npcs": [
+                "Chrishrama",
+                "Sabitrama",
+                "Eurek the Alchemist"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Mixed Golem",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "210",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            }
+          ]
+        },
+        {
+          "name": "Dungeon - Outside Sleepywood",
+          "code": "B",
+          "maps": [
+            {
+              "name": "Damp Tree-Forest",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Bubbling",
+                  "level": 15,
+                  "baseXP": 26
+                },
+                {
+                  "name": "Lupin",
+                  "level": 37,
+                  "baseXP": 77
+                }
+              ],
+              "links": [
+                "B1",
+                "B2"
+              ]
+            },
+            {
+              "name": "Deep Forest",
+              "npcs": [
+                "Wanted: G.Mushroom"
+              ],
+              "monsters": [
+                {
+                  "name": "Bubbling",
+                  "level": 15,
+                  "baseXP": 26
+                },
+                {
+                  "name": "Dark Axe Stump",
+                  "level": 22,
+                  "baseXP": 38
+                },
+                {
+                  "name": "Lupin",
+                  "level": 37,
+                  "baseXP": 77
+                },
+                {
+                  "name": "Curse Eye",
+                  "level": 35,
+                  "baseXP": 70
+                },
+                {
+                  "name": "Green Mushroom",
+                  "level": 15,
+                  "baseXP": 26
+                }
+              ],
+              "links": [
+                "B2",
+                "B3",
+                "M9 (To Perion)"
+              ]
+            },
+            {
+              "name": "Damp Forest",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Bubbling",
+                  "level": 15,
+                  "baseXP": 26
+                }
+              ],
+              "links": [
+                "B1"
+              ]
+            },
+            {
+              "name": "Hunting Ground in the Deep Forest I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Curse Eye",
+                  "level": 35,
+                  "baseXP": 70
+                }
+              ],
+              "links": [
+                "B4"
+              ]
+            },
+            {
+              "name": "Swampy Land in a Deep Forest",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Green Mushroom",
+                  "level": 15,
+                  "baseXP": 26
+                },
+                {
+                  "name": "Horny Mushroom",
+                  "level": 22,
+                  "baseXP": 35
+                }
+              ],
+              "links": [
+                "A3",
+                "B3"
+              ]
+            },
+            {
+              "name": "Hunting Ground in the Deep Forest II",
+              "npcs": [
+                "Wanted : Curse Eye"
+              ],
+              "monsters": [
+                {
+                  "name": "Curse Eye",
+                  "level": 35,
+                  "baseXP": 70
+                },
+                {
+                  "name": "Lupin",
+                  "level": 37,
+                  "baseXP": 77
+                }
+              ],
+              "links": [
+                "B4a"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dungeon - Ant Tunnel",
+          "code": "C",
+          "maps": [
+            {
+              "name": "Ant Tunnel I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Horny Mushroom",
+                  "level": 22,
+                  "baseXP": 35
+                }
+              ],
+              "links": [
+                "A4"
+              ]
+            },
+            {
+              "name": "Ant Tunnel II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Horny Mushroom",
+                  "level": 22,
+                  "baseXP": 35
+                },
+                {
+                  "name": "Zombie Mushroom",
+                  "level": 24,
+                  "baseXP": 42
+                }
+              ],
+              "links": [
+                "C1",
+                "C2"
+              ]
+            },
+            {
+              "name": "Ant Tunnel III",
+              "npcs": [
+                "Wanted : H. Mushroom"
+              ],
+              "monsters": [
+                {
+                  "name": "Horny Mushroom",
+                  "level": 22,
+                  "baseXP": 35
+                },
+                {
+                  "name": "Zombie Mushroom",
+                  "level": 24,
+                  "baseXP": 42
+                }
+              ],
+              "links": [
+                "C3",
+                "C4"
+              ]
+            },
+            {
+              "name": "Ant Tunnel IV",
+              "npcs": [
+                "Wanted : Z. Mushroom"
+              ],
+              "monsters": [
+                {
+                  "name": "Horny Mushroom",
+                  "level": 22,
+                  "baseXP": 35
+                },
+                {
+                  "name": "Zombie Mushroom",
+                  "level": 24,
+                  "baseXP": 42
+                }
+              ],
+              "links": [
+                "C4",
+                "C5"
+              ]
+            },
+            {
+              "name": "Dark Cave",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Stirge",
+                  "level": 20,
+                  "baseXP": 33
+                }
+              ],
+              "links": [
+                "C5"
+              ]
+            },
+            {
+              "name": "Dangerous Steam",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Crimson Stirge",
+                  "level": 26,
+                  "baseXP": 66
+                }
+              ],
+              "links": [
+                "C6"
+              ]
+            },
+            {
+              "name": "Deep Ant Tunnel I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Zombie Mushroom",
+                  "level": 24,
+                  "baseXP": 42
+                }
+              ],
+              "links": [
+                "C7"
+              ]
+            },
+            {
+              "name": "Deep Ant Tunnel II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Zombie Mushroom",
+                  "level": 24,
+                  "baseXP": 42
+                },
+                {
+                  "name": "Evil Eye",
+                  "level": 27,
+                  "baseXP": 50
+                }
+              ],
+              "links": [
+                "C8",
+                "C9"
+              ]
+            },
+            {
+              "name": "Ant Tunnel Park",
+              "npcs": [
+                "Door of Dimension"
+              ],
+              "monsters": [
+                {
+                  "name": "Zombie Mushroom",
+                  "level": 24,
+                  "baseXP": 42
+                }
+              ],
+              "links": [
+                "C9"
+              ]
+            },
+            {
+              "name": "The Cave of Evil Eye",
+              "npcs": [
+                "Wanted : Evil Eye"
+              ],
+              "monsters": [
+                {
+                  "name": "Evil Eye",
+                  "level": 27,
+                  "baseXP": 50
+                }
+              ],
+              "links": [
+                "C11"
+              ]
+            },
+            {
+              "name": "The Cave of Curse Eye",
+              "npcs": [
+                "Door of Dimension"
+              ],
+              "monsters": [
+                {
+                  "name": "Curse Eye",
+                  "level": 35,
+                  "baseXP": 70
+                }
+              ],
+              "links": [
+                "C12"
+              ]
+            },
+            {
+              "name": "The Cave of Cold Eye",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Cold Eye",
+                  "level": 40,
+                  "baseXP": 85
+                }
+              ],
+              "links": [
+                "C13"
+              ]
+            },
+            {
+              "name": "The Cave of Dark Eye",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Eye",
+                  "level": 48,
+                  "baseXP": 160
+                }
+              ],
+              "links": [
+                "C14"
+              ]
+            },
+            {
+              "name": "Drake Hunting Ground",
+              "npcs": [
+                "The Tunnel That Lost Light I",
+                "The Tunnel That Lost Light II"
+              ],
+              "monsters": [
+                {
+                  "name": "Drake",
+                  "level": 50,
+                  "baseXP": 135
+                },
+                {
+                  "name": "Drake",
+                  "level": 50,
+                  "baseXP": 135
+                },
+                {
+                  "name": "Drake",
+                  "level": 50,
+                  "baseXP": 135
+                }
+              ],
+              "links": [
+                "C15",
+                "C17",
+                "C18"
+              ]
+            },
+            {
+              "name": "Cave of Mushrooms",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Zombie Mushroom",
+                  "level": 24,
+                  "baseXP": 42
+                },
+                {
+                  "name": "Zombie Mushmom",
+                  "level": 65,
+                  "baseXP": 1500
+                }
+              ],
+              "links": [
+                "C2"
+              ]
+            },
+            {
+              "name": "Cold Eye",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "85",
+                  "level": null,
+                  "baseXP": null
+                },
+                {
+                  "name": "Bob",
+                  "level": 69,
+                  "baseXP": 1400
+                }
+              ],
+              "links": [
+                "C19"
+              ]
+            },
+            {
+              "name": "Ice Drake",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "250",
+                  "level": null,
+                  "baseXP": null
+                },
+                {
+                  "name": "Wild Kargo",
+                  "level": 62,
+                  "baseXP": 240
+                },
+                {
+                  "name": "Wild Kargo",
+                  "level": 62,
+                  "baseXP": 240
+                },
+                {
+                  "name": "Wild Kargo",
+                  "level": 62,
+                  "baseXP": 240
+                },
+                {
+                  "name": "Drake",
+                  "level": 50,
+                  "baseXP": 135
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Ice Drake",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "250",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": [
+                "C19d"
+              ]
+            },
+            {
+              "name": "Cold Cradle",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Ice Drake",
+                  "level": 64,
+                  "baseXP": 250
+                },
+                {
+                  "name": "Dark Drake",
+                  "level": 68,
+                  "baseXP": 265
+                }
+              ],
+              "links": [
+                "C19d"
+              ]
+            },
+            {
+              "name": "Drake's Blue Cave",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Ice Drake",
+                  "level": 64,
+                  "baseXP": 250
+                },
+                {
+                  "name": "Dark Drake",
+                  "level": 68,
+                  "baseXP": 265
+                }
+              ],
+              "links": [
+                "C19e"
+              ]
+            },
+            {
+              "name": "Another Path",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Eye",
+                  "level": 48,
+                  "baseXP": 160
+                }
+              ],
+              "links": [
+                "C20"
+              ]
+            },
+            {
+              "name": "Sanctuary Entrance I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Cold Mixed Golem",
+                  "level": 68,
+                  "baseXP": 275
+                }
+              ],
+              "links": [
+                "C20a"
+              ]
+            },
+            {
+              "name": "Sanctuary Entrance II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Tauromacis",
+                  "level": 70,
+                  "baseXP": 270
+                }
+              ],
+              "links": [
+                "C20b"
+              ]
+            },
+            {
+              "name": "Sanctuary Entrance III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Taurospear",
+                  "level": 75,
+                  "baseXP": 350
+                }
+              ],
+              "links": [
+                "C20c"
+              ]
+            },
+            {
+              "name": "Sanctuary Entrance IV",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Tauroshield",
+                  "level": 80,
+                  "baseXP": 1200
+                }
+              ],
+              "links": [
+                "C20d"
+              ]
+            },
+            {
+              "name": "Another Entrance",
+              "npcs": [
+                "Gwin",
+                "Insignificant Being"
+              ],
+              "monsters": [],
+              "links": [
+                "C18",
+                "C19"
+              ]
+            },
+            {
+              "name": "The Cursed Sanctuary",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Jr. Balrog",
+                  "level": 80,
+                  "baseXP": 2000
+                }
+              ],
+              "links": [
+                "C20e"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "orbis": {
+      "name": "Orbis",
+      "sections": [
+        {
+          "name": "Ossyria - Orbis",
+          "code": "",
+          "maps": [
+            {
+              "name": "Orbis Park",
+              "npcs": [
+                "Ericsson"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Orbis Weapon Store",
+              "npcs": [
+                "Nuri the Fairy"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Orbis Department Store",
+              "npcs": [
+                "Kriel the Fairy"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Orbis",
+              "npcs": [
+                "Shuri"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Orbis Station Entrance",
+              "npcs": [
+                "Agatha"
+              ],
+              "monsters": [],
+              "links": []
+            }
+          ]
+        },
+        {
+          "name": "Orbis - Cloud Park",
+          "code": "",
+          "maps": [
+            {
+              "name": "The Road to Garden of 3 Colors",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Jr. Cellion",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Garden of Red I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Jr. Cellion",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Garden of Red II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Cellion",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Garden of Yellow I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Jr. Lionel",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Garden of Yellow II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Lionel",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Garden of Blue I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Jr. Grupin",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Garden of Blue II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Grupin",
+                  "level": null,
+                  "baseXP": null
+                },
+                {
+                  "name": "Cellion",
+                  "level": null,
+                  "baseXP": null
+                },
+                {
+                  "name": "Jr. Lucida",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Garden of Darkness I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Lucida",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Garden of Darkness II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Lucida",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Strolling Path",
+              "npcs": [
+                "Cloud Park III",
+                "Cloud Park IV"
+              ],
+              "monsters": [
+                {
+                  "name": "Nependeath",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Strolling Path II",
+              "npcs": [
+                "Cloud Park V",
+                "Cloud Park VI"
+              ],
+              "monsters": [
+                {
+                  "name": "Dark Nependeath",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Disposed Flower Garden",
+              "npcs": [
+                "Spiruna"
+              ],
+              "monsters": [
+                {
+                  "name": "Nependeath",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            }
+          ]
+        },
+        {
+          "name": "Orbis - Orbis Tower",
+          "code": "",
+          "maps": [
+            {
+              "name": "Entrance to Orbis Tower",
+              "npcs": [],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Orbis Tower <5th Floor>",
+              "npcs": [
+                "Orbis Magic Spot"
+              ],
+              "monsters": [
+                {
+                  "name": "Jr. Sentinel",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Orbis Tower <4th Floor>",
+              "npcs": [
+                "Barun"
+              ],
+              "monsters": [
+                {
+                  "name": "Sentinel",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Orbis Tower <3rd Floor>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Fire Sentinel",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Orbis Tower <2nd Floor>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Ice Sentinel",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Orbis Tower <1st Floor>",
+              "npcs": [
+                "El Nath Magic Spot"
+              ],
+              "monsters": [
+                {
+                  "name": "Leatty",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Orbis Tower <Hidden Room>",
+              "npcs": [
+                "Huckle"
+              ],
+              "monsters": [],
+              "links": [],
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    "el_nath": {
+      "name": "El Nath",
+      "sections": [
+        {
+          "name": "Ossyria - El Nath",
+          "code": "",
+          "maps": [
+            {
+              "name": "El Nath Market",
+              "npcs": [
+                "Mr. Mohammed"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "El Nath Weapon Store",
+              "npcs": [
+                "Scott"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "El Nath Department Store",
+              "npcs": [
+                "Hana"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "El Nath",
+              "npcs": [
+                "Duey"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Chief's Residence",
+              "npcs": [
+                "Rene"
+              ],
+              "monsters": [],
+              "links": []
+            }
+          ]
+        },
+        {
+          "name": "Ossyria - El Nath West",
+          "code": "",
+          "maps": [
+            {
+              "name": "Snowy Hill",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Leatty",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            }
+          ]
+        },
+        {
+          "name": "Ossyria - El Nath East",
+          "code": "",
+          "maps": [
+            {
+              "name": "Watch Out for Icy Path I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Jr. Yeti",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Watch Out for Icy Path II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Jr. Yeti",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Cold Field I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Hector",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Hidden Street - Chill Field",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Tortice",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": [],
+              "hidden": true
+            },
+            {
+              "name": "Hidden Street - The Crown-Flyer 1",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Pepe",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": [],
+              "hidden": true
+            },
+            {
+              "name": "Hidden Street - The Crown-Flyer 2",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Snowball Pepe",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": [],
+              "hidden": true
+            },
+            {
+              "name": "Cold Field II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "White Fang",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Icy Cold Field",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Pepe",
+                  "level": null,
+                  "baseXP": null
+                },
+                {
+                  "name": "Snow Witch",
+                  "level": 70,
+                  "baseXP": 2700
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Ice Valley I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Yeti",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Ice Valley II",
+              "npcs": [
+                "Glibber"
+              ],
+              "monsters": [
+                {
+                  "name": "Yeti",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Sharp Cliff I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Yeti",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Hidden Street - Valley of Snowman",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Yeti",
+                  "level": null,
+                  "baseXP": null
+                },
+                {
+                  "name": "Snowman",
+                  "level": 90,
+                  "baseXP": 5200
+                },
+                {
+                  "name": "Yeti and Pepe",
+                  "level": 82,
+                  "baseXP": 3500
+                }
+              ],
+              "links": [],
+              "hidden": true
+            },
+            {
+              "name": "Sharp Cliff II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Yeti and Pepe",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Wolf Territory I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Werewolf",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Wolf Territory II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Werewolf",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Dangerous Cliff",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Dark Yeti and Pepe",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Wolf Territory III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Werewolf",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Wolf Territory IV",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Lycanthrope",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Wolf Territory IV",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Lycanthrope",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Forest of Dead Trees I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Coolie Zombie",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Forest of Dead Trees II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Coolie Zombie",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Forest of Dead Trees III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Coolie Zombie",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Forest of Dead Trees IV",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Coolie Zombie",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Dead Mine I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Flyeye",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Dead Mine II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Flyeye",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Dead Mine III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Flyeye",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Dead Mine IV",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Flyeye",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "The Passage",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Flyeye",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "The Cave of Trial I",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Jr. Cerebes",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Hidden Street - Holy Ground at the Snowfield",
+              "npcs": [
+                "Holy Stone"
+              ],
+              "monsters": [],
+              "links": [],
+              "hidden": true
+            },
+            {
+              "name": "The Cave of Trial II",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Cerebes",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "The Cave of Trial III",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Bain",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Hidden Street - Cave Within the Cave",
+              "npcs": [
+                "Suspicious Lava"
+              ],
+              "monsters": [
+                {
+                  "name": "Bain",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": [],
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    "ludibrium": {
+      "name": "Ludibrium",
+      "sections": [
+        {
+          "name": "Ludibrium - Ludibrium",
+          "code": "",
+          "maps": [
+            {
+              "name": "Ludibrium Ticketing Place",
+              "npcs": [
+                "Mel"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Station<Orbis>",
+              "npcs": [
+                "Tian"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Ludibrium Pharmacy",
+              "npcs": [
+                "Misky"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Ludibrium",
+              "npcs": [
+                "Marcel"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Ludibrium Weapon Store",
+              "npcs": [
+                "Miru"
+              ],
+              "monsters": [],
+              "links": []
+            }
+          ]
+        },
+        {
+          "name": "Ludibrium - Ludibrium Village",
+          "code": "",
+          "maps": [
+            {
+              "name": "Ludibrium Village",
+              "npcs": [
+                "Pi"
+              ],
+              "monsters": [],
+              "links": []
+            }
+          ]
+        },
+        {
+          "name": "Ludibrium - Clock Tower",
+          "code": "",
+          "maps": [
+            {
+              "name": "Cloud Terrace<1>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Pink Teddy",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Cloud Terrace<2>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Roloduck",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Sky Terrace<1>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Panda Teddy",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Sky Terrace<2>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Toy Trojan",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Terrace Hall",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Brown Teddy",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Sky Terrace",
+              "npcs": [],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Toy Factory Processing Zone",
+              "npcs": [
+                "Assistant Cheng"
+              ],
+              "monsters": [
+                {
+                  "name": "Robo",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Toy Factory<Main Process 1>",
+              "npcs": [
+                "Manager Karl"
+              ],
+              "monsters": [
+                {
+                  "name": "Robo",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Toy Factory<Apparatus Room>",
+              "npcs": [
+                "Rydole"
+              ],
+              "monsters": [
+                {
+                  "name": "Robo",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "The Path of Time <2>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Chronos",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "The Path of Time <1>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Platoon Chronos",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "The Path of Time <3>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Chronos",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Toy Factory<Main Process 2>",
+              "npcs": [
+                "Crossroad of Time",
+                "Whirlpool of Time"
+              ],
+              "monsters": [
+                {
+                  "name": "Master Robo",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "The Path of Time <4>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Master Chronos",
+                  "level": null,
+                  "baseXP": null
+                },
+                {
+                  "name": "Platoon Chronos",
+                  "level": null,
+                  "baseXP": null
+                },
+                {
+                  "name": "Master Chronos",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Warped Path of Time<1>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Buffy",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Warped Path of Time<2>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Buffoon",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Warped Path of Time<3>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Ghost Pirate",
+                  "level": null,
+                  "baseXP": null
+                },
+                {
+                  "name": "Dual Ghost Pirate",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Warped Path of Time<4>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Spirit Viking",
+                  "level": null,
+                  "baseXP": null
+                },
+                {
+                  "name": "Gigantic Spirit Viking",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Warped Passage",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Gatekeeper",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Forgotten Path of Time<1>",
+              "npcs": [
+                "Ghosthunter Bob"
+              ],
+              "monsters": [
+                {
+                  "name": "Soul Teddy",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Forgotten Path of Time<2>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Klock",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Forgotten Path of Time<3>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Death Teddy",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Hidden Street - Lost Time",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Master Death Teddy",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": [],
+              "hidden": true
+            },
+            {
+              "name": "Forgotten Path of Time<4>",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Phantom Watch",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Hidden Street - Forbidden Time",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Grim Phantom Watch",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": [],
+              "hidden": true
+            },
+            {
+              "name": "Path of Time",
+              "npcs": [
+                "Flo"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Deep Inside the Clocktower",
+              "npcs": [
+                "Tombstone"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Forgotten Passage",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Thanatos",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            }
+          ]
+        },
+        {
+          "name": "Ludibrium - Eos Tower",
+          "code": "",
+          "maps": [
+            {
+              "name": "Eos Tower Entrance",
+              "npcs": [
+                "Tigun the Advisor"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 100th Floor",
+              "npcs": [
+                "First Eos Rock"
+              ],
+              "monsters": [
+                {
+                  "name": "Ratz",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 99th Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Ratz",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 98th Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Black Ratz",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 97th Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Black Ratz",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 96th Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Trixter",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 95th Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Green Trixter",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 60th ~ 94th Floor",
+              "npcs": [
+                "Second Eos Rock"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 59th Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Chirppy",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 58th Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Chirppy",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 57th Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Helly",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 56th Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Helly",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 25th ~ 55th Floor",
+              "npcs": [],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 24th Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Propelly",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 23rd Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Bloctopus",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 22nd Floor",
+              "npcs": [
+                "Third Eos Rock"
+              ],
+              "monsters": [
+                {
+                  "name": "Bloctopus",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 21st Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Planey",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 20th Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Planey",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 7th ~ 19th Floor",
+              "npcs": [],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 6th Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Planey",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 5th Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Tweeter",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 4th Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Block Golem",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Hidden Street - Drummer Bunny's Lair",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Drumming Bunny",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": [],
+              "hidden": true
+            },
+            {
+              "name": "Eos Tower 3rd Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Block Golem",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 2nd Floor",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "King Block Golem",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Eos Tower 1st Floor",
+              "npcs": [
+                "Fourth Eos Rock"
+              ],
+              "monsters": [
+                {
+                  "name": "King Block Golem",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Hidden Tower",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Block Golem",
+                  "level": null,
+                  "baseXP": null
+                },
+                {
+                  "name": "King Block Golem",
+                  "level": null,
+                  "baseXP": null
+                },
+                {
+                  "name": "Rombot",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": [],
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    "omega_sector": {
+      "name": "Omega Sector",
+      "sections": [
+        {
+          "name": "Omega Sector - Omega Sector",
+          "code": "",
+          "maps": [
+            {
+              "name": "Omega Sector",
+              "npcs": [
+                "Rice the Medic"
+              ],
+              "monsters": [],
+              "links": []
+            }
+          ]
+        },
+        {
+          "name": "Omega Sector - Omega Sector West",
+          "code": "",
+          "maps": [
+            {
+              "name": "Boswell Field I",
+              "npcs": [
+                "Hoony"
+              ],
+              "monsters": [
+                {
+                  "name": "Mateon",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Mateon Field",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Mateon",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Boswell Field II",
+              "npcs": [
+                "Green Mesoranger"
+              ],
+              "monsters": [
+                {
+                  "name": "Plateon",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Plateon Field",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Plateon",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Boswell Field III",
+              "npcs": [
+                "Gunny"
+              ],
+              "monsters": [
+                {
+                  "name": "Mecateon",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Mecateon Field",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Mecateon",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Boswell Field IV",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "MT-09",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "MT-09 Field",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "MT-09",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Kulan Field I",
+              "npcs": [
+                "Black Mesoranger"
+              ],
+              "monsters": [
+                {
+                  "name": "Barnard Gray",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Barnard Field",
+              "npcs": [
+                "Meteorite 5"
+              ],
+              "monsters": [
+                {
+                  "name": "Barnard Gray",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Kulan Field II",
+              "npcs": [
+                "Alien Gray"
+              ],
+              "monsters": [
+                {
+                  "name": "Zeta Gray",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Zeta Field",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Zeta Gray",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Kulan Field III",
+              "npcs": [
+                "Meteorite 2"
+              ],
+              "monsters": [
+                {
+                  "name": "Ultra Gray",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Ultra Field",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Ultra Gray",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Kulan Field IV",
+              "npcs": [
+                "Meteorite 3"
+              ],
+              "monsters": [
+                {
+                  "name": "Chief Gray",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Kulan Field V",
+              "npcs": [
+                "Mothership Teleporter"
+              ],
+              "monsters": [
+                {
+                  "name": "Zeno",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Chief's Prairie",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Chief Gray",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            }
+          ]
+        },
+        {
+          "name": "Omega Sector - Mothership",
+          "code": "",
+          "maps": [
+            {
+              "name": "Corridor 101",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Gray Commuter Saucer",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Corridor 102",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Gray Commuter Saucer",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Corridor 103",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Gray Luxury Saucer",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Corridor 201",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Gray Luxury Saucer",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Corridor 202",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "White Alien Drone",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Corridor 203",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "White Alien Drone",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Corridor 301",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Black Alien Drone",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Corridor 302",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Black Alien Drone",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Corridor 104",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "Gray Commuter Saucer",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            },
+            {
+              "name": "Corridor 303",
+              "npcs": [
+                "Dr. Gray"
+              ],
+              "monsters": [],
+              "links": []
+            },
+            {
+              "name": "Corridor 304",
+              "npcs": [],
+              "monsters": [
+                {
+                  "name": "White Alien Drone",
+                  "level": null,
+                  "baseXP": null
+                }
+              ],
+              "links": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
