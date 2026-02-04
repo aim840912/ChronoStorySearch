@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chronostory-database>
+  <metadata>
+    <title>ChronoStory Map and Monster Database</title>
+    <author>helloshorty</author>
+    <extracted-at>2026-02-03</extracted-at>
+    <source>https://docs.google.com/spreadsheets/d/e/2PACX-1vSIUj-72ADgwMqShxt4Dn7OP7dBN54l0wda1IPwlIVTZUN_ZtTlRx5DDidr43VXv2HYQ5RNqccLbbGS/pubhtml</source>
+    <total-sheets>14</total-sheets>
+    <description>Complete map and monster database for ChronoStory (MapleStory Worlds)</description>
+  </metadata>
+
+  <documentation>
+    <description>For ChronoStory - Created by helloshorty</description>
+    <notes>
+      <note>PM me in Discord (helloshorty) to request modifications or supplement missing information</note>
+      <note>Special thanks to @asteriskos for mapping out Maple Island</note>
+      <note>Map Links that are paired (e.g. A1 - A1) indicate bi-directional portals, while individual links refer to one-way portals</note>
+      <note>Map Links that start with M refer to portals that transition you to another town</note>
+      <note>Added images to find Hidden Streets more easily. PM me if you cannot find it</note>
+    </notes>
+    <links>
+      <link name="game">https://maplestoryworlds.nexon.com/play/6697fa1ed9cd4de7bea6daffed99a637</link>
+      <link name="discord">https://discord.gg/Erkv7vSNZg</link>
+      <link name="gachaDropList">https://docs.google.com/spreadsheets/d/e/2PACX-1vR_xZXUXsjc7kiktd4aAcNrvawk5sodq4gRxmz7Vt5gCK4xqwcHhPVHr1YJ57cUpnn0-trzKuEEFzyW/pubhtml</link>
+      <link name="skillChanges">https://docs.google.com/spreadsheets/d/e/2PACX-1vQbiXUm7I36S4JtWrnja8GzlYmfa-PFMd-gXZOA9t16o6IFlG8K1gn6WvWh1-I2QHHdz7-46zRy7_8R/pubhtml</link>
+      <link name="mobDropTable">https://docs.google.com/spreadsheets/d/e/2PACX-1vQwdsFFDzUkqYoVI4DmOOGlUbDZDwSI2k2ENe7Hvk8Z77Dls-Gt5PP08JwJlRolFqlIiJVtQDaMGrxX/pubhtml</link>
+      <link name="kinslayDropTable">https://chrono-story.vercel.app/</link>
+    </links>
+  </documentation>
+
+  <regions>
+    <!-- Maple Island -->
+    <region id="maple_island" name="Maple Island">
+      <section name="Maple Road - Mushroom Town" code="A">
+        <map name="West Entrance to Mushroom Town">
+          <npcs>
+            <npc>Heena</npc>
+            <npc>Sera</npc>
+            <npc>Chronostory Administrator</npc>
+          </npcs>
+          <links><link code="A1" type="local"/></links>
+        </map>
+        <map name="Mushroom Town 1">
+          <npcs><npc>Roger</npc></npcs>
+          <links>
+            <link code="A1" type="local"/>
+            <link code="A2" type="local"/>
+          </links>
+        </map>
+        <map name="Mushroom Town 2">
+          <npcs><npc>Nina</npc></npcs>
+          <links>
+            <link code="A2" type="local"/>
+            <link code="A3" type="local"/>
+            <link code="A4" type="local"/>
+          </links>
+        </map>
+        <map name="Snail Hunting Ground I">
+          <npcs>
+            <npc>Robin</npc>
+            <npc>Sam</npc>
+          </npcs>
+          <monsters>
+            <monster name="Snail" level="1" base-xp="3"/>
+          </monsters>
+          <links>
+            <link code="A5" type="local"/>
+            <link code="A6" type="local"/>
+          </links>
+        </map>
+        <map name="Snail Hunting Ground II">
+          <monsters>
+            <monster name="Snail" level="1" base-xp="3"/>
+            <monster name="Blue Snail" level="2" base-xp="4"/>
+          </monsters>
+          <links>
+            <link code="A6" type="local"/>
+            <link code="A7" type="local"/>
+          </links>
+        </map>
+        <map name="Snail Hunting Ground III">
+          <monsters>
+            <monster name="Snail" level="1" base-xp="3"/>
+            <monster name="Blue Snail" level="2" base-xp="4"/>
+            <monster name="Red Snail" level="4" base-xp="8"/>
+          </monsters>
+          <links>
+            <link code="A7" type="local"/>
+            <link code="A8" type="local"/>
+          </links>
+        </map>
+        <map name="A Split Road">
+          <npcs><npc>Maria</npc></npcs>
+          <monsters>
+            <monster name="Snail" level="1" base-xp="3"/>
+            <monster name="Blue Snail" level="2" base-xp="4"/>
+            <monster name="Shroom" level="2" base-xp="5"/>
+            <monster name="Red Snail" level="4" base-xp="8"/>
+          </monsters>
+          <links>
+            <link code="A8" type="local"/>
+            <link code="A9" type="local"/>
+            <link code="A10" type="local"/>
+          </links>
+        </map>
+      </section>
+
+      <section name="Rainbow Street - Amherst" code="B">
+        <map name="Amherst">
+          <npcs>
+            <npc>Rain</npc>
+            <npc>Pio</npc>
+            <npc>Lucas</npc>
+          </npcs>
+          <links>
+            <link code="A13" type="local"/>
+            <link code="B1" type="local"/>
+            <link code="B2" type="local"/>
+            <link code="B3" type="local"/>
+            <link code="B4" type="local"/>
+            <link code="B5" type="local"/>
+          </links>
+        </map>
+        <map name="The Field East of Amherst">
+          <npcs><npc>Mai</npc></npcs>
+          <monsters>
+            <monster name="Red Snail" level="4" base-xp="8"/>
+            <monster name="Stump" level="4" base-xp="8"/>
+            <monster name="Slime" level="6" base-xp="10"/>
+            <monster name="Pig" level="7" base-xp="15"/>
+            <monster name="Ribbon Pig" level="10" base-xp="20"/>
+          </monsters>
+          <links>
+            <link code="B5" type="local"/>
+            <link code="B6" type="local"/>
+            <link code="B7" type="local"/>
+            <link code="B8" type="local"/>
+          </links>
+        </map>
+      </section>
+
+      <section name="Maple Road - Southperry" code="C">
+        <map name="Southperry">
+          <npcs>
+            <npc>Biggs</npc>
+            <npc>Shanks</npc>
+          </npcs>
+          <links>
+            <link code="C3" type="local"/>
+            <link code="C4" type="local"/>
+            <link code="C5" type="local"/>
+            <link code="M0 (To Lith Harbor)" type="town_portal"/>
+          </links>
+        </map>
+      </section>
+    </region>
+
+    <!-- Lith Harbor -->
+    <region id="lith_harbor" name="Lith Harbor">
+      <section name="Victoria Road - Lith Harbor" code="A">
+        <map name="Lith Harbor">
+          <npcs>
+            <npc>Teo</npc>
+            <npc>Phil (C)</npc>
+            <npc>Jane</npc>
+            <npc>Vikin</npc>
+            <npc>Chef</npc>
+            <npc>Cody</npc>
+            <npc>Pason</npc>
+            <npc>Spinel</npc>
+            <npc>John</npc>
+            <npc>VIP Cab</npc>
+            <npc>Jean</npc>
+            <npc>Mr. Goldstein</npc>
+            <npc>Olaf</npc>
+            <npc>Chronostory Administrator</npc>
+            <npc>Duey</npc>
+            <npc>Mr. Kim (S)</npc>
+          </npcs>
+          <links>
+            <link code="A1" type="local"/>
+            <link code="A2" type="local"/>
+            <link code="A3" type="local"/>
+            <link code="A4" type="local"/>
+          </links>
+        </map>
+      </section>
+
+      <section name="Victoria Road - Lith Harbor East" code="B">
+        <map name="3-Way Road-Split">
+          <monsters>
+            <monster name="Shroom" level="2" base-xp="5"/>
+            <monster name="Slime" level="6" base-xp="10"/>
+            <monster name="Red Snail" level="4" base-xp="8"/>
+            <monster name="Orange Mushroom" level="8" base-xp="15"/>
+            <monster name="Pig" level="7" base-xp="15"/>
+            <monster name="Ribbon Pig" level="10" base-xp="20"/>
+            <monster name="Lorang" level="37" base-xp="80"/>
+          </monsters>
+          <links>
+            <link code="B4" type="local"/>
+            <link code="B5" type="local"/>
+            <link code="B6" type="local"/>
+            <link code="M1 (To Kerning City)" type="town_portal"/>
+            <link code="M2 (To Henesys)" type="town_portal"/>
+          </links>
+        </map>
+        <map name="Hidden Street - Beach Hunting Ground" hidden="true">
+          <monsters>
+            <monster name="Red Snail" level="4" base-xp="8"/>
+            <monster name="Lorang" level="37" base-xp="80"/>
+            <monster name="Clang" level="48" base-xp="128"/>
+          </monsters>
+          <links><link code="B5" type="local"/></links>
+        </map>
+        <map name="Hidden Street - The Pig Beach" hidden="true">
+          <monsters>
+            <monster name="Pig" level="7" base-xp="15"/>
+            <monster name="Ribbon Pig" level="10" base-xp="20"/>
+            <monster name="Iron Hog" level="42" base-xp="99"/>
+          </monsters>
+          <links><link code="B6" type="local"/></links>
+        </map>
+      </section>
+    </region>
+
+    <!-- Kerning City -->
+    <region id="kerning_city" name="Kerning City">
+      <section name="Victoria Road - Kerning City" code="A">
+        <map name="Kerning City">
+          <npcs>
+            <npc>Regular Cab</npc>
+            <npc>Mong from Kong</npc>
+            <npc>Alex</npc>
+            <npc>Mr. Pickall</npc>
+            <npc>Spinel</npc>
+            <npc>Shumi</npc>
+            <npc>Cody</npc>
+            <npc>Nella</npc>
+            <npc>JM From tha Streetz</npc>
+            <npc>Icarus</npc>
+            <npc>Gachapon</npc>
+            <npc>Lakelis</npc>
+            <npc>Duey</npc>
+            <npc>Mr. Hong</npc>
+          </npcs>
+        </map>
+        <map name="Thieves&apos; Hideout" job-advancement="Thief">
+          <npcs><npc>Dark Lord</npc></npcs>
+          <links><link code="A5" type="local"/></links>
+        </map>
+      </section>
+
+      <section name="Victoria Road - Kerning City Subway" code="B">
+        <map name="Line 1 &lt;Area 1&gt; - Kerning City Subway">
+          <monsters>
+            <monster name="Bubbling" level="15" base-xp="26"/>
+          </monsters>
+          <links>
+            <link code="B1" type="local"/>
+            <link code="B2" type="local"/>
+          </links>
+        </map>
+        <map name="Line 1 &lt;Area 4&gt;">
+          <monsters>
+            <monster name="Wraith" level="48" base-xp="120"/>
+            <monster name="Shade" level="56" base-xp="180"/>
+          </monsters>
+          <links><link code="B3b" type="local"/></links>
+        </map>
+        <map name="Line 2 &lt;Area 3&gt;">
+          <monsters>
+            <monster name="Miner Zombie" level="57" base-xp="190"/>
+          </monsters>
+          <links><link code="B4b" type="local"/></links>
+        </map>
+      </section>
+
+      <section name="Warning Street - Kerning City Swamp" code="D">
+        <map name="Dangerous Croco I">
+          <monsters>
+            <monster name="Croco" level="52" base-xp="170"/>
+            <monster name="Dyle" level="65" base-xp="810" boss="true"/>
+          </monsters>
+          <links>
+            <link code="D4" type="local"/>
+            <link code="D5" type="local"/>
+          </links>
+        </map>
+      </section>
+    </region>
+
+    <!-- Henesys -->
+    <region id="henesys" name="Henesys">
+      <section name="Victoria Road - Henesys" code="A">
+        <map name="Henesys">
+          <npcs>
+            <npc>Regular Cab</npc>
+            <npc>Cody</npc>
+            <npc>Rina</npc>
+            <npc>Mia</npc>
+            <npc>Spinel</npc>
+            <npc>Jay</npc>
+            <npc>Chief Stan</npc>
+            <npc>Maple Administrator</npc>
+            <npc>Mrs. Ming Ming</npc>
+            <npc>Cassandra</npc>
+            <npc>Bruce</npc>
+            <npc>Thomas Swift</npc>
+            <npc>Camila</npc>
+            <npc>Duey</npc>
+          </npcs>
+        </map>
+        <map name="Bowman Instructional School" job-advancement="Bowman">
+          <npcs><npc>Athena Pierce</npc></npcs>
+          <links><link code="A3a" type="local"/></links>
+        </map>
+        <map name="Hidden Street - Someone Else&apos;s House" hidden="true">
+          <monsters>
+            <monster name="Iron Hog" level="42" base-xp="99"/>
+            <monster name="Mushmom" level="60" base-xp="1200" boss="true"/>
+          </monsters>
+          <links><link code="A1d" type="local"/></links>
+        </map>
+      </section>
+
+      <section name="Warning Street - Henesys Dungeon Entrance" code="D">
+        <map name="Golem&apos;s Temple IV">
+          <monsters>
+            <monster name="Hot Mixed Golem" level="68" base-xp="275"/>
+          </monsters>
+          <links><link code="D2e" type="local"/></links>
+        </map>
+        <map name="Golem&apos;s Temple V">
+          <monsters>
+            <monster name="Cold Mixed Golem" level="68" base-xp="275"/>
+          </monsters>
+          <links><link code="D2f" type="local"/></links>
+        </map>
+      </section>
+    </region>
+
+    <!-- Perion -->
+    <region id="perion" name="Perion" job-advancement="Warrior" job-instructor="Dances with Balrog">
+      <section name="Victoria Road - Perion" code="A">
+        <map name="Warriors&apos; Sanctuary" job-advancement="Warrior">
+          <npcs><npc>Dances with Balrog</npc></npcs>
+          <links><link code="A3" type="local"/></links>
+        </map>
+      </section>
+    </region>
+
+    <!-- Ellinia -->
+    <region id="ellinia" name="Ellinia" job-advancement="Magician" job-instructor="Grendel the Really Old">
+      <section name="Victoria Road - Ellinia" code="A">
+        <map name="Magic Library" job-advancement="Magician">
+          <npcs><npc>Grendel the Really Old</npc></npcs>
+          <links><link code="A1" type="local"/></links>
+        </map>
+      </section>
+    </region>
+
+    <!-- Nautilus -->
+    <region id="nautilus" name="Nautilus" job-advancement="Pirate" job-instructor="Kyrin">
+      <description>Pirate airship interior layout</description>
+      <section name="Victoria Road - Nautilus" code="A">
+        <map name="Navigation Room" job-advancement="Pirate">
+          <npcs><npc>Kyrin</npc></npcs>
+          <links><link code="A1d1" type="local"/></links>
+        </map>
+        <map name="On the Way to the Harbor">
+          <links>
+            <link code="A2" type="local"/>
+            <link code="M6 (To Henesys)" type="town_portal"/>
+          </links>
+        </map>
+      </section>
+    </region>
+
+    <!-- Sleepywood -->
+    <region id="sleepywood" name="Sleepywood">
+      <section name="Dungeon - Sleepywood" code="A">
+        <map name="Sleepywood">
+          <npcs>
+            <npc>Regular Cab</npc>
+            <npc>The Rememberer</npc>
+            <npc>Mr. Oh</npc>
+            <npc>Cassandra</npc>
+            <npc>Gachapon</npc>
+            <npc>Mysterious Statue</npc>
+            <npc>VIP Cab</npc>
+            <npc>Chrishrama</npc>
+            <npc>Sabitrama</npc>
+            <npc>Eurek the Alchemist</npc>
+          </npcs>
+        </map>
+      </section>
+    </region>
+
+    <!-- Orbis -->
+    <region id="orbis" name="Orbis" continent="Ossyria">
+      <section name="Ossyria - Orbis" code="A">
+        <map name="Orbis">
+          <npcs>
+            <npc>Shuri</npc>
+            <npc>Staff Sergeant Charlie</npc>
+            <npc>Duey</npc>
+            <npc>Cody</npc>
+            <npc>Martin</npc>
+            <npc>Moppie</npc>
+            <npc>Spinel</npc>
+            <npc>Lisa</npc>
+            <npc>Trina</npc>
+            <npc>Chronostory Administrator</npc>
+          </npcs>
+        </map>
+      </section>
+    </region>
+
+    <!-- El Nath -->
+    <region id="el_nath" name="El Nath" continent="Ossyria">
+      <section name="Ossyria - El Nath" code="A">
+        <map name="El Nath">
+          <npcs>
+            <npc>Duey</npc>
+            <npc>Scadur</npc>
+            <npc>Spinel</npc>
+            <npc>Cassandra</npc>
+            <npc>Master Sergeant Fox</npc>
+            <npc>Chronostory Administrator</npc>
+            <npc>Jade</npc>
+            <npc>Cody</npc>
+            <npc>Danger Zone Taxi</npc>
+          </npcs>
+        </map>
+        <map name="Chief&apos;s Residence">
+          <npcs>
+            <npc>Rene</npc>
+            <npc>Arec</npc>
+            <npc>Robeira</npc>
+            <npc>Tylus</npc>
+            <npc>Pedro</npc>
+            <npc>Shammos</npc>
+          </npcs>
+        </map>
+      </section>
+    </region>
+
+    <!-- Ludibrium -->
+    <region id="ludibrium" name="Ludibrium" continent="Ossyria">
+      <section name="Ludibrium - Ludibrium" code="A">
+        <map name="Ludibrium">
+          <npcs>
+            <npc>Marcel</npc>
+            <npc>Tony</npc>
+            <npc>Spinel</npc>
+            <npc>Cassandra</npc>
+            <npc>Duey</npc>
+            <npc>Seppy</npc>
+            <npc>Eurek the Alchemist</npc>
+            <npc>Cody</npc>
+            <npc>Robert Holly</npc>
+            <npc>Danger Zone Taxi</npc>
+            <npc>Nara</npc>
+            <npc>Geanie</npc>
+            <npc>Patricia</npc>
+            <npc>Chronostory Administrator</npc>
+          </npcs>
+        </map>
+      </section>
+    </region>
+
+    <!-- Omega Sector -->
+    <region id="omega_sector" name="Omega Sector" continent="Ludibrium">
+      <section name="Omega Sector - Omega Sector" code="A">
+        <map name="Omega Sector">
+          <npcs>
+            <npc>Rice the Medic</npc>
+            <npc>Jr. Officer Medin</npc>
+            <npc>General Maestro</npc>
+            <npc>Cassandra</npc>
+            <npc>Danger Zone Taxi</npc>
+            <npc>Kevin the Soldier</npc>
+            <npc>Agent Marco</npc>
+            <npc>Duey</npc>
+          </npcs>
+        </map>
+      </section>
+      <section name="Omega Sector - Mothership" code="C">
+        <map name="Corridor 303">
+          <npcs><npc>Dr. Gray</npc></npcs>
+        </map>
+      </section>
+    </region>
+  </regions>
+
+  <reference>
+    <monsters>
+      <monster name="Snail" level="1" base-xp="3"/>
+      <monster name="Blue Snail" level="2" base-xp="4"/>
+      <monster name="Shroom" level="2" base-xp="5"/>
+      <monster name="Red Snail" level="4" base-xp="8"/>
+      <monster name="Stump" level="4" base-xp="8"/>
+      <monster name="Slime" level="6" base-xp="10"/>
+      <monster name="Pig" level="7" base-xp="15"/>
+      <monster name="Orange Mushroom" level="8" base-xp="15"/>
+      <monster name="Ribbon Pig" level="10" base-xp="20"/>
+      <monster name="Dark Stump" level="10" base-xp="18"/>
+      <monster name="Octopus" level="12" base-xp="24"/>
+      <monster name="Green Mushroom" level="15" base-xp="26"/>
+      <monster name="Bubbling" level="15" base-xp="26"/>
+      <monster name="Axe Stump" level="17" base-xp="30"/>
+      <monster name="Ghost Stump" level="19" base-xp="33"/>
+      <monster name="Blue Mushroom" level="20" base-xp="32"/>
+      <monster name="Stirge" level="20" base-xp="33"/>
+      <monster name="Jr. Necki" level="21" base-xp="38"/>
+      <monster name="Horny Mushroom" level="22" base-xp="35"/>
+      <monster name="Dark Axe Stump" level="22" base-xp="38"/>
+      <monster name="Wooden Mask" level="23" base-xp="42"/>
+      <monster name="Zombie Mushroom" level="24" base-xp="42"/>
+      <monster name="Rocky Mask" level="24" base-xp="45"/>
+      <monster name="Wild Boar" level="25" base-xp="42"/>
+      <monster name="Crimson Stirge" level="26" base-xp="66"/>
+      <monster name="Evil Eye" level="27" base-xp="50"/>
+      <monster name="Fairy" level="30" base-xp="120"/>
+      <monster name="Fire Boar" level="32" base-xp="60"/>
+      <monster name="Ligator" level="32" base-xp="60"/>
+      <monster name="Curse Eye" level="35" base-xp="70"/>
+      <monster name="Jr. Boogie" level="35" base-xp="150"/>
+      <monster name="Jr. Wraith" level="35" base-xp="70"/>
+      <monster name="Lorang" level="37" base-xp="80"/>
+      <monster name="Lupin" level="37" base-xp="77"/>
+      <monster name="Cold Eye" level="40" base-xp="85"/>
+      <monster name="Zombie Lupin" level="40" base-xp="90"/>
+      <monster name="Iron Hog" level="42" base-xp="99"/>
+      <monster name="Skeledog" level="44" base-xp="107"/>
+      <monster name="Copper Drake" level="45" base-xp="105"/>
+      <monster name="Iron Boar" level="45" base-xp="115"/>
+      <monster name="Tortie" level="46" base-xp="110"/>
+      <monster name="Mummydog" level="47" base-xp="117"/>
+      <monster name="Wraith" level="48" base-xp="120"/>
+      <monster name="Clang" level="48" base-xp="128"/>
+      <monster name="Dark Eye" level="48" base-xp="160"/>
+      <monster name="Drake" level="50" base-xp="135"/>
+      <monster name="Croco" level="52" base-xp="170"/>
+      <monster name="Stone Golem" level="55" base-xp="170"/>
+      <monster name="Malady" level="55" base-xp="170"/>
+      <monster name="Skeleton Soldier" level="57" base-xp="190"/>
+      <monster name="Miner Zombie" level="57" base-xp="190"/>
+      <monster name="Dark Stone Golem" level="58" base-xp="200"/>
+      <monster name="Mixed Golem" level="59" base-xp="210"/>
+      <monster name="Red Drake" level="60" base-xp="220"/>
+      <monster name="Wild Kargo" level="62" base-xp="240"/>
+      <monster name="Officer Skeleton" level="63" base-xp="240"/>
+      <monster name="Ice Drake" level="64" base-xp="250"/>
+      <monster name="Dark Drake" level="68" base-xp="265"/>
+      <monster name="Hot Mixed Golem" level="68" base-xp="275"/>
+      <monster name="Cold Mixed Golem" level="68" base-xp="275"/>
+      <monster name="Tauromacis" level="70" base-xp="270"/>
+      <monster name="Commander Skeleton" level="73" base-xp="315"/>
+      <monster name="Taurospear" level="75" base-xp="350"/>
+      <monster name="Tauroshield" level="80" base-xp="1200"/>
+    </monsters>
+    <bosses>
+      <boss name="Mano" level="20" base-xp="120"/>
+      <boss name="Stumpy" level="35" base-xp="205"/>
+      <boss name="Faust" level="50" base-xp="410"/>
+      <boss name="King Clang" level="55" base-xp="1210"/>
+      <boss name="Shade" level="56" base-xp="180"/>
+      <boss name="Mushmom" level="60" base-xp="1200"/>
+      <boss name="Dyle" level="65" base-xp="810"/>
+      <boss name="Zombie Mushmom" level="65" base-xp="1500"/>
+      <boss name="Bob" level="69" base-xp="1400"/>
+      <boss name="Jr. Balrog" level="80" base-xp="2000"/>
+    </bosses>
+  </reference>
+</chronostory-database>
