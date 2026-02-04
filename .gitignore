@@ -157,3 +157,19 @@ _to-delete/
 
 # 學習筆記（本地文檔，不上傳到 GitHub）
 learning-notes/
+
+# Auto-generated Claude-mem context files
+src/**/CLAUDE.md
+chronostoryData/**/CLAUDE.md
+
+# Generated verification and audit reports
+scripts/*-report.json
+scripts/*-audit*.json
+scripts/*-verify*.json
+
+# Local screenshots
+*-homepage.png
+
+# Claude tips (reference files, not project code)
+claude-tip.txt
+claude-tips-zh-tw.md
