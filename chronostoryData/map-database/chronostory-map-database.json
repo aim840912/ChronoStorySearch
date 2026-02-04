@@ -4597,6 +4597,11 @@
                   "name": "Coolie Zombie",
                   "level": null,
                   "baseXP": null
+                },
+                {
+                  "name": "Riche",
+                  "level": null,
+                  "baseXP": null
                 }
               ],
               "links": []
