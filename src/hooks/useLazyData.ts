@@ -278,6 +278,11 @@ export function useLazyDropsDetailed(mobId: number | null) {
         // 從 R2 CDN 載入 JSON（避免 Webpack chunk 版本不匹配問題）
         const response = await fetch(url)
         if (!response.ok) {
+          // 404 是正常情況（某些怪物沒有掉落資料）
+          if (response.status === 404) {
+            clientLogger.debug(`怪物 ${mobId} 無掉落資料檔案（404）`)
+            return
+          }
           throw new Error(`HTTP ${response.status}: ${response.statusText}`)
         }
         const rawData = await response.json()
