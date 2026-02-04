@@ -5,6 +5,7 @@ import type { DropsEssential, ItemAttributesEssential, JobClass } from '@/types'
 import { DropItemCard } from './DropItemCard'
 import { DropItemList } from './DropItemList'
 import { MonsterStatsCard } from './MonsterStatsCard'
+import { MonsterSpawnsCard } from './MonsterSpawnsCard'
 import { Toast } from './Toast'
 import { BaseModal } from './common/BaseModal'
 import { TipBubble } from '@/components/TipBubble'
@@ -353,6 +354,10 @@ export function MonsterModal({
                   : undefined
               }
             />
+            {/* 出沒地點卡片 - 僅開發模式或 Admin 可見 */}
+            {showDevInfo && monsterData?.mobName && (
+              <MonsterSpawnsCard monsterName={monsterData.mobName} />
+            )}
           </div>
 
           {/* 右側：掉落物品（>= 1120px 顯示 / < 1120px 根據 Tab 顯示） */}

@@ -61,3 +61,14 @@ export interface MapInfo {
   monsters: MonsterSpawn[]
   links: string[]
 }
+
+// 怪物出沒地點（反向索引用）
+export interface MonsterSpawnLocation {
+  region: string          // 區域名稱 (Maple Island, Kerning City...)
+  section: string         // 區段名稱 (Victoria Road - xxx)
+  map: string             // 地圖名稱
+  hidden: boolean         // 是否為隱藏地圖
+}
+
+// 怪物出沒地點索引
+export type MonsterSpawnsMap = Record<string, MonsterSpawnLocation[]>
