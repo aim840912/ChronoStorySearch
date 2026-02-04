@@ -354,8 +354,8 @@ export function MonsterModal({
                   : undefined
               }
             />
-            {/* 出沒地點卡片 */}
-            {monsterData?.mobName && (
+            {/* 出沒地點卡片 - 僅開發模式或 Admin 可見 */}
+            {showDevInfo && monsterData?.mobName && (
               <MonsterSpawnsCard monsterName={monsterData.mobName} />
             )}
           </div>
