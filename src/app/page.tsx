@@ -26,7 +26,6 @@ import { GachaDrawSection } from '@/components/gacha/GachaDrawSection'
 import { MerchantShopSection } from '@/components/merchant/MerchantShopSection'
 import { TradeSection } from '@/components/trade/TradeSection'
 import { ReportSection } from '@/components/report/ReportSection'
-import { AdSenseMultiplex } from '@/components/adsense/AdSenseMultiplex'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
 import { trackEvent } from '@/lib/analytics/ga4'
@@ -485,10 +484,6 @@ export default function Home() {
         />
         )}
 
-        {/* Multiplex 多重廣告 - 列表結束後顯示（交易/轉蛋/商人/檢舉模式時隱藏） */}
-        {!pageModes.isTradeMode && !pageModes.isReportMode && !(pageModes.isGachaMode && pageModes.selectedGachaMachineId !== null) && !pageModes.isMerchantMode && (
-          <AdSenseMultiplex className="mt-8" />
-        )}
       </div>
 
       {/* Modal 和浮動按鈕管理器 */}
