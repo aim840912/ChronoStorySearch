@@ -2389,6 +2389,14 @@
       "hidden": false
     }
   ],
+  "Riche": [
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Forest of Dead Trees III",
+      "hidden": false
+    }
+  ],
   "Flyeye": [
     {
       "region": "El Nath",
@@ -3030,6 +3038,212 @@
       "region": "Omega Sector",
       "section": "Omega Sector - Mothership",
       "map": "Corridor 302",
+      "hidden": false
+    }
+  ],
+  "Star Pixie": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Cloud Park I",
+      "hidden": false
+    },
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Cloud Park II",
+      "hidden": false
+    }
+  ],
+  "Lunar Pixie": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Cloud Park II",
+      "hidden": false
+    },
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Cloud Park III",
+      "hidden": false
+    },
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Cloud Park IV",
+      "hidden": false
+    }
+  ],
+  "Luster Pixie": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Cloud Park IV",
+      "hidden": false
+    },
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Cloud Park V",
+      "hidden": false
+    }
+  ],
+  "Ghost Pixie": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Cloud Park VI",
+      "hidden": false
+    }
+  ],
+  "Eliza": [
+    {
+      "region": "Orbis",
+      "section": "Orbis - Cloud Park",
+      "map": "Stairway to the Sky II",
+      "hidden": false
+    }
+  ],
+  "Lazy Buffy": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Warped Path of Time<1>",
+      "hidden": false
+    }
+  ],
+  "Deep Buffoon": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Warped Path of Time<2>",
+      "hidden": false
+    }
+  ],
+  "Master Soul Teddy": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Forgotten Path of Time<1>",
+      "hidden": false
+    }
+  ],
+  "Dark Klock": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Clock Tower",
+      "map": "Forgotten Path of Time<2>",
+      "hidden": false
+    }
+  ],
+  "King Bloctopus": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 22nd Floor",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 23rd Floor",
+      "hidden": false
+    }
+  ],
+  "Jr. Wraith": [
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City Subway",
+      "map": "Line 1 <Area 3>",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City Subway",
+      "map": "Line 2 <Area 1>",
+      "hidden": false
+    }
+  ],
+  "Wraith": [
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City Subway",
+      "map": "Line 1 <Area 4>",
+      "hidden": false
+    },
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City Subway",
+      "map": "Line 2 <Area 2>",
+      "hidden": false
+    }
+  ],
+  "Shade": [
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City Subway",
+      "map": "Line 1 <Area 4>",
+      "hidden": false
+    }
+  ],
+  "Miner Zombie": [
+    {
+      "region": "Kerning City",
+      "section": "Victoria Road - Kerning City Subway",
+      "map": "Line 2 <Area 3>",
+      "hidden": false
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Forest of Dead Trees IV",
+      "hidden": false
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Dead Mine I",
+      "hidden": false
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Dead Mine II",
+      "hidden": false
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Dead Mine III",
+      "hidden": false
+    },
+    {
+      "region": "El Nath",
+      "section": "Ossyria - El Nath East",
+      "map": "Dead Mine IV",
+      "hidden": false
+    }
+  ],
+  "Jr. Boogie 1": [
+    {
+      "region": "Perion",
+      "section": "Victoria Road - Perion East",
+      "map": "Hidden Street - Over the Wall",
+      "hidden": true
+    }
+  ],
+  "Retz": [
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 100th Floor",
+      "hidden": false
+    },
+    {
+      "region": "Ludibrium",
+      "section": "Ludibrium - Eos Tower",
+      "map": "Eos Tower 99th Floor",
       "hidden": false
     }
   ]
