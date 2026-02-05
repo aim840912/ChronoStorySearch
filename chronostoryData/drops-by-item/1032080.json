@@ -9,8 +9,8 @@
       "chineseMobName": "葛雷金剛",
       "isBoss": false,
       "inGame": true,
-      "chance": 0.1,
-      "displayChance": "0.10%",
+      "chance": 0.5,
+      "displayChance": "0.50%",
       "minQty": 1,
       "maxQty": 1
     }
