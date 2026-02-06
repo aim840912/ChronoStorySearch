@@ -179,7 +179,7 @@ export function useDataManagement() {
       clientLogger.info('開始懶加載轉蛋機資料（Enhanced JSON）...')
 
       // 使用動態 import 載入所有轉蛋機資料（Enhanced 版本，包含完整物品資料）
-      const [m1, m2, m3, m4, m5, m6, m7] = await Promise.all([
+      const [m1, m2, m3, m4, m5, m6, m7, m8] = await Promise.all([
         import('@/../chronostoryData/gacha/machine-1-enhanced.json'),
         import('@/../chronostoryData/gacha/machine-2-enhanced.json'),
         import('@/../chronostoryData/gacha/machine-3-enhanced.json'),
@@ -187,6 +187,7 @@ export function useDataManagement() {
         import('@/../chronostoryData/gacha/machine-5-enhanced.json'),
         import('@/../chronostoryData/gacha/machine-6-enhanced.json'),
         import('@/../chronostoryData/gacha/machine-7-enhanced.json'),
+        import('@/../chronostoryData/gacha/machine-8-enhanced.json'),
       ])
 
       // 正規化資料格式以符合 GachaMachine 型別
@@ -198,6 +199,7 @@ export function useDataManagement() {
         normalizeGachaMachine(m5.default),
         normalizeGachaMachine(m6.default),
         normalizeGachaMachine(m7.default),
+        normalizeGachaMachine(m8.default),
       ]
 
       setGachaMachines(machines)

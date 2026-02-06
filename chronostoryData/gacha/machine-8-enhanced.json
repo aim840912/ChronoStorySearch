@@ -1,0 +1,1053 @@
+{
+  "machineId": 8,
+  "machineName": "Omega Sector",
+  "chineseMachineName": "地球防衛本部",
+  "description": "地球防衛本部轉蛋機",
+  "totalItems": 116,
+  "items": [
+    {
+      "itemId": 4011000,
+      "itemName": "Bronze Plate",
+      "chineseName": "",
+      "probability": "6.953%",
+      "chance": 100000,
+      "type": "Etc",
+      "subType": "Ore"
+    },
+    {
+      "itemId": 4011004,
+      "itemName": "Silver Plate",
+      "chineseName": "",
+      "probability": "6.953%",
+      "chance": 100000,
+      "type": "Etc",
+      "subType": "Ore"
+    },
+    {
+      "itemId": 4011006,
+      "itemName": "Gold Plate",
+      "chineseName": "",
+      "probability": "6.953%",
+      "chance": 100000,
+      "type": "Etc",
+      "subType": "Ore"
+    },
+    {
+      "itemId": 4011011,
+      "itemName": "Alien Ingot",
+      "chineseName": "",
+      "probability": "6.953%",
+      "chance": 100000,
+      "type": "Etc",
+      "subType": "Ore"
+    },
+    {
+      "itemId": 4021000,
+      "itemName": "Garnet",
+      "chineseName": "",
+      "probability": "6.953%",
+      "chance": 100000,
+      "type": "Etc",
+      "subType": "Gem"
+    },
+    {
+      "itemId": 4021002,
+      "itemName": "AquaMarine",
+      "chineseName": "",
+      "probability": "6.953%",
+      "chance": 100000,
+      "type": "Etc",
+      "subType": "Gem"
+    },
+    {
+      "itemId": 4021005,
+      "itemName": "Sapphire",
+      "chineseName": "",
+      "probability": "6.953%",
+      "chance": 100000,
+      "type": "Etc",
+      "subType": "Gem"
+    },
+    {
+      "itemId": 4021008,
+      "itemName": "Black Crystal",
+      "chineseName": "黑水晶",
+      "probability": "6.953%",
+      "chance": 100000,
+      "type": "Etc",
+      "subType": "Gem"
+    },
+    {
+      "itemId": 4005000,
+      "itemName": "Power Crystal",
+      "chineseName": "",
+      "probability": "3.476%",
+      "chance": 50000,
+      "type": "Etc",
+      "subType": "Crystal"
+    },
+    {
+      "itemId": 4005001,
+      "itemName": "Wisdom Crystal",
+      "chineseName": "",
+      "probability": "3.476%",
+      "chance": 50000,
+      "type": "Etc",
+      "subType": "Crystal"
+    },
+    {
+      "itemId": 4005002,
+      "itemName": "Dexterous Crystal",
+      "chineseName": "敏捷水晶",
+      "probability": "3.476%",
+      "chance": 50000,
+      "type": "Etc",
+      "subType": "Crystal"
+    },
+    {
+      "itemId": 4005003,
+      "itemName": "Lucky Crystal",
+      "chineseName": "",
+      "probability": "3.476%",
+      "chance": 50000,
+      "type": "Etc",
+      "subType": "Crystal"
+    },
+    {
+      "itemId": 4005004,
+      "itemName": "Dark Crystal",
+      "chineseName": "黑暗水晶",
+      "probability": "3.476%",
+      "chance": 50000,
+      "type": "Etc",
+      "subType": "Crystal"
+    },
+    {
+      "itemId": 1092070,
+      "itemName": "1st Unwelcome Guest Warrior Shield",
+      "chineseName": "1st不速之客戰士盾牌",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1092075,
+      "itemName": "1st Unwelcome Guest Magician Shield",
+      "chineseName": "1st不速之客法師盾牌",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1092080,
+      "itemName": "1st Unwelcome Guest Thief Shield",
+      "chineseName": "1st不速之客盜賊盾牌",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1302143,
+      "itemName": "1st Unwelcome Guest Sword",
+      "chineseName": "1st不速之客單手劍",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Sword"
+    },
+    {
+      "itemId": 1312058,
+      "itemName": "1st Unwelcome Guest Hatchet",
+      "chineseName": "1st不速之客單手斧",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Axe"
+    },
+    {
+      "itemId": 1322086,
+      "itemName": "1st Unwelcome Guest Hammer",
+      "chineseName": "1st不速之客單手鈍器",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Hammer"
+    },
+    {
+      "itemId": 1332116,
+      "itemName": "1st Unwelcome Guest Dagger (LUK)",
+      "chineseName": "1st不速之客短劍(LUK)",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1332121,
+      "itemName": "1st Unwelcome Guest Dagger (STR)",
+      "chineseName": "1st不速之客短劍(STR)",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1372074,
+      "itemName": "1st Unwelcome Guest Wand",
+      "chineseName": "1st不速之客短杖",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Wand"
+    },
+    {
+      "itemId": 1382095,
+      "itemName": "1st Unwelcome Guest Staff",
+      "chineseName": "1st不速之客長杖",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Staff"
+    },
+    {
+      "itemId": 1402086,
+      "itemName": "1st Unwelcome Guest Greatsword",
+      "chineseName": "1st不速之客雙手劍",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "TwoHandedSword"
+    },
+    {
+      "itemId": 1412058,
+      "itemName": "1st Unwelcome Guest Greataxe",
+      "chineseName": "1st不速之客雙手斧",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "TwoHandedAxe"
+    },
+    {
+      "itemId": 1422059,
+      "itemName": "1st Unwelcome Guest Greathammer",
+      "chineseName": "1st不速之客雙手鈍器",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "TwoHandedHammer"
+    },
+    {
+      "itemId": 1432077,
+      "itemName": "1st Unwelcome Guest Spear",
+      "chineseName": "1st不速之客槍",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Spear"
+    },
+    {
+      "itemId": 1442107,
+      "itemName": "1st Unwelcome Guest Polearm",
+      "chineseName": "1st不速之客矛",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Polearm"
+    },
+    {
+      "itemId": 1452102,
+      "itemName": "1st Unwelcome Guest Bow",
+      "chineseName": "1st不速之客弓",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Bow"
+    },
+    {
+      "itemId": 1462087,
+      "itemName": "1st Unwelcome Guest Crossbow",
+      "chineseName": "1st不速之客弩",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Crossbow"
+    },
+    {
+      "itemId": 1472113,
+      "itemName": "1st Unwelcome Guest Claw",
+      "chineseName": "1st不速之客拳套",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1482075,
+      "itemName": "1st Unwelcome Guest Knuckle",
+      "chineseName": "1st不速之客指虎",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Knuckle"
+    },
+    {
+      "itemId": 1492075,
+      "itemName": "1st Unwelcome Guest Gun",
+      "chineseName": "1st不速之客火槍",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Eqp",
+      "subType": "Gun"
+    },
+    {
+      "itemId": 4005005,
+      "itemName": "Chaos Crystal",
+      "chineseName": "",
+      "probability": "0.695%",
+      "chance": 10000,
+      "type": "Etc",
+      "subType": "Crystal"
+    },
+    {
+      "itemId": 1092071,
+      "itemName": "2nd Unwelcome Guest Warrior Shield",
+      "chineseName": "2nd不速之客戰士盾牌",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1092076,
+      "itemName": "2nd Unwelcome Guest Magician Shield",
+      "chineseName": "2nd不速之客法師盾牌",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1092081,
+      "itemName": "2nd Unwelcome Guest Thief Shield",
+      "chineseName": "2nd不速之客盜賊盾牌",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1302144,
+      "itemName": "2nd Unwelcome Guest Sword",
+      "chineseName": "2nd不速之客單手劍",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Sword"
+    },
+    {
+      "itemId": 1312059,
+      "itemName": "2nd Unwelcome Guest Hatchet",
+      "chineseName": "2nd不速之客單手斧",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Axe"
+    },
+    {
+      "itemId": 1322087,
+      "itemName": "2nd Unwelcome Guest Hammer",
+      "chineseName": "2nd不速之客單手鈍器",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Hammer"
+    },
+    {
+      "itemId": 1332117,
+      "itemName": "2nd Unwelcome Guest Dagger (LUK)",
+      "chineseName": "2nd不速之客短劍(LUK)",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1332122,
+      "itemName": "2nd Unwelcome Guest Dagger (STR)",
+      "chineseName": "2nd不速之客短劍(STR)",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1372075,
+      "itemName": "2nd Unwelcome Guest Wand",
+      "chineseName": "2nd不速之客短杖",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Wand"
+    },
+    {
+      "itemId": 1382096,
+      "itemName": "2nd Unwelcome Guest Staff",
+      "chineseName": "2nd不速之客長杖",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Staff"
+    },
+    {
+      "itemId": 1402087,
+      "itemName": "2nd Unwelcome Guest Greatsword",
+      "chineseName": "2nd不速之客雙手劍",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "TwoHandedSword"
+    },
+    {
+      "itemId": 1412059,
+      "itemName": "2nd Unwelcome Guest Greataxe",
+      "chineseName": "2nd不速之客雙手斧",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "TwoHandedAxe"
+    },
+    {
+      "itemId": 1422060,
+      "itemName": "2nd Unwelcome Guest Greathammer",
+      "chineseName": "2nd不速之客雙手鈍器",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "TwoHandedHammer"
+    },
+    {
+      "itemId": 1432078,
+      "itemName": "2nd Unwelcome Guest Spear",
+      "chineseName": "2nd不速之客槍",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Spear"
+    },
+    {
+      "itemId": 1442108,
+      "itemName": "2nd Unwelcome Guest Polearm",
+      "chineseName": "2nd不速之客矛",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Polearm"
+    },
+    {
+      "itemId": 1452103,
+      "itemName": "2nd Unwelcome Guest Bow",
+      "chineseName": "2nd不速之客弓",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Bow"
+    },
+    {
+      "itemId": 1462088,
+      "itemName": "2nd Unwelcome Guest Crossbow",
+      "chineseName": "2nd不速之客弩",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Crossbow"
+    },
+    {
+      "itemId": 1472114,
+      "itemName": "2nd Unwelcome Guest Claw",
+      "chineseName": "2nd不速之客拳套",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1482076,
+      "itemName": "2nd Unwelcome Guest Knuckle",
+      "chineseName": "2nd不速之客指虎",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Knuckle"
+    },
+    {
+      "itemId": 1492076,
+      "itemName": "2nd Unwelcome Guest Gun",
+      "chineseName": "2nd不速之客火槍",
+      "probability": "0.348%",
+      "chance": 5000,
+      "type": "Eqp",
+      "subType": "Gun"
+    },
+    {
+      "itemId": 1092072,
+      "itemName": "3rd Unwelcome Guest Warrior Shield",
+      "chineseName": "3rd不速之客戰士盾牌",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1092077,
+      "itemName": "3rd Unwelcome Guest Magician Shield",
+      "chineseName": "3rd不速之客法師盾牌",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1092082,
+      "itemName": "3rd Unwelcome Guest Thief Shield",
+      "chineseName": "3rd不速之客盜賊盾牌",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1302145,
+      "itemName": "3rd Unwelcome Guest Sword",
+      "chineseName": "3rd不速之客單手劍",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Sword"
+    },
+    {
+      "itemId": 1312060,
+      "itemName": "3rd Unwelcome Guest Hatchet",
+      "chineseName": "3rd不速之客單手斧",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Axe"
+    },
+    {
+      "itemId": 1322088,
+      "itemName": "3rd Unwelcome Guest Hammer",
+      "chineseName": "3rd不速之客單手鈍器",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Hammer"
+    },
+    {
+      "itemId": 1332118,
+      "itemName": "3rd Unwelcome Guest Dagger (LUK)",
+      "chineseName": "3rd不速之客短劍(LUK)",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1332123,
+      "itemName": "3rd Unwelcome Guest Dagger (STR)",
+      "chineseName": "3rd不速之客短劍(STR)",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1372076,
+      "itemName": "3rd Unwelcome Guest Wand",
+      "chineseName": "3rd不速之客短杖",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Wand"
+    },
+    {
+      "itemId": 1382097,
+      "itemName": "3rd Unwelcome Guest Staff",
+      "chineseName": "3rd不速之客長杖",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Staff"
+    },
+    {
+      "itemId": 1402088,
+      "itemName": "3rd Unwelcome Guest Greatsword",
+      "chineseName": "3rd不速之客雙手劍",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "TwoHandedSword"
+    },
+    {
+      "itemId": 1412060,
+      "itemName": "3rd Unwelcome Guest Greataxe",
+      "chineseName": "3rd不速之客雙手斧",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "TwoHandedAxe"
+    },
+    {
+      "itemId": 1422061,
+      "itemName": "3rd Unwelcome Guest Greathammer",
+      "chineseName": "3rd不速之客雙手鈍器",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "TwoHandedHammer"
+    },
+    {
+      "itemId": 1432079,
+      "itemName": "3rd Unwelcome Guest Spear",
+      "chineseName": "3rd不速之客槍",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Spear"
+    },
+    {
+      "itemId": 1442109,
+      "itemName": "3rd Unwelcome Guest Polearm",
+      "chineseName": "3rd不速之客矛",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Polearm"
+    },
+    {
+      "itemId": 1452104,
+      "itemName": "3rd Unwelcome Guest Bow",
+      "chineseName": "3rd不速之客弓",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Bow"
+    },
+    {
+      "itemId": 1462089,
+      "itemName": "3rd Unwelcome Guest Crossbow",
+      "chineseName": "3rd不速之客弩",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Crossbow"
+    },
+    {
+      "itemId": 1472115,
+      "itemName": "3rd Unwelcome Guest Claw",
+      "chineseName": "3rd不速之客拳套",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1482077,
+      "itemName": "3rd Unwelcome Guest Knuckle",
+      "chineseName": "3rd不速之客指虎",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Knuckle"
+    },
+    {
+      "itemId": 1492077,
+      "itemName": "3rd Unwelcome Guest Gun",
+      "chineseName": "3rd不速之客火槍",
+      "probability": "0.174%",
+      "chance": 2500,
+      "type": "Eqp",
+      "subType": "Gun"
+    },
+    {
+      "itemId": 1092073,
+      "itemName": "Last Unwelcome Guest Warrior Shield",
+      "chineseName": "Last不速之客戰士盾牌",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1092078,
+      "itemName": "Last Unwelcome Guest Magician Shield",
+      "chineseName": "Last不速之客法師盾牌",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1092083,
+      "itemName": "Last Unwelcome Guest Thief Shield",
+      "chineseName": "Last不速之客盜賊盾牌",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Shield"
+    },
+    {
+      "itemId": 1302146,
+      "itemName": "Last Unwelcome Guest Sword",
+      "chineseName": "Last不速之客單手劍",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Sword"
+    },
+    {
+      "itemId": 1312061,
+      "itemName": "Last Unwelcome Guest Hatchet",
+      "chineseName": "Last不速之客單手斧",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Axe"
+    },
+    {
+      "itemId": 1322089,
+      "itemName": "Last Unwelcome Guest Hammer",
+      "chineseName": "Last不速之客單手鈍器",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Hammer"
+    },
+    {
+      "itemId": 1332119,
+      "itemName": "Last Unwelcome Guest Dagger (LUK)",
+      "chineseName": "Last不速之客短劍(LUK)",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1332124,
+      "itemName": "Last Unwelcome Guest Dagger (STR)",
+      "chineseName": "Last不速之客短劍(STR)",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Dagger"
+    },
+    {
+      "itemId": 1372077,
+      "itemName": "Last Unwelcome Guest Wand",
+      "chineseName": "Last不速之客短杖",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Wand"
+    },
+    {
+      "itemId": 1382098,
+      "itemName": "Last Unwelcome Guest Staff",
+      "chineseName": "Last不速之客長杖",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Staff"
+    },
+    {
+      "itemId": 1402089,
+      "itemName": "Last Unwelcome Guest Greatsword",
+      "chineseName": "Last不速之客雙手劍",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "TwoHandedSword"
+    },
+    {
+      "itemId": 1412061,
+      "itemName": "Last Unwelcome Guest Greataxe",
+      "chineseName": "Last不速之客雙手斧",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "TwoHandedAxe"
+    },
+    {
+      "itemId": 1422062,
+      "itemName": "Last Unwelcome Guest Greathammer",
+      "chineseName": "Last不速之客雙手鈍器",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "TwoHandedHammer"
+    },
+    {
+      "itemId": 1432080,
+      "itemName": "Last Unwelcome Guest Spear",
+      "chineseName": "Last不速之客槍",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Spear"
+    },
+    {
+      "itemId": 1442110,
+      "itemName": "Last Unwelcome Guest Polearm",
+      "chineseName": "Last不速之客矛",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Polearm"
+    },
+    {
+      "itemId": 1452105,
+      "itemName": "Last Unwelcome Guest Bow",
+      "chineseName": "Last不速之客弓",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Bow"
+    },
+    {
+      "itemId": 1462090,
+      "itemName": "Last Unwelcome Guest Crossbow",
+      "chineseName": "Last不速之客弩",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Crossbow"
+    },
+    {
+      "itemId": 1472116,
+      "itemName": "Last Unwelcome Guest Claw",
+      "chineseName": "Last不速之客拳套",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Claw"
+    },
+    {
+      "itemId": 1482078,
+      "itemName": "Last Unwelcome Guest Knuckle",
+      "chineseName": "Last不速之客指虎",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Knuckle"
+    },
+    {
+      "itemId": 1492078,
+      "itemName": "Last Unwelcome Guest Gun",
+      "chineseName": "Last不速之客火槍",
+      "probability": "0.087%",
+      "chance": 1250,
+      "type": "Eqp",
+      "subType": "Gun"
+    },
+    {
+      "itemId": 1032080,
+      "itemName": "1st Unwelcome Guest Earrings",
+      "chineseName": "1st不速之客耳環",
+      "probability": "0.056%",
+      "chance": 800,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1032081,
+      "itemName": "2nd Unwelcome Guest Earrings",
+      "chineseName": "2nd不速之客耳環",
+      "probability": "0.028%",
+      "chance": 400,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 1032082,
+      "itemName": "3rd Unwelcome Guest Earrings",
+      "chineseName": "3rd不速之客耳環",
+      "probability": "0.014%",
+      "chance": 200,
+      "type": "Eqp",
+      "subType": "Earrings"
+    },
+    {
+      "itemId": 6000009,
+      "itemName": "Mesoranger Red Helmet",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 6000010,
+      "itemName": "Mesoranger Blue Helmet",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 6000011,
+      "itemName": "Mesoranger Green Helmet",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 6000012,
+      "itemName": "Mesoranger Black Helmet (Panda)",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 6001014,
+      "itemName": "Mesoranger Pink Helmet",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 6001015,
+      "itemName": "Mesoranger Yellow Helmet",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 6001016,
+      "itemName": "Mesoranger Black Helmet (Cat)",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 6004935,
+      "itemName": "Mesoranger White Helmet",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Hat"
+    },
+    {
+      "itemId": 6050084,
+      "itemName": "Red Mesoranger",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 6050085,
+      "itemName": "Blue Mesoranger",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 6050086,
+      "itemName": "Mesoranger Green",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 6050087,
+      "itemName": "Black Mesoranger",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 6051087,
+      "itemName": "Pink Mesoranger (Skirted)",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 6051088,
+      "itemName": "Yellow Mesoranger",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 6051089,
+      "itemName": "Black Mesoranger (Skirted)",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 6053147,
+      "itemName": "White Mesoranger",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Overall"
+    },
+    {
+      "itemId": 6072202,
+      "itemName": "Mesoranger Boots",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Shoes"
+    },
+    {
+      "itemId": 6082124,
+      "itemName": "Mesoranger Gloves",
+      "chineseName": "",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Gloves"
+    },
+    {
+      "itemId": 1032083,
+      "itemName": "Last Unwelcome Guest Earrings",
+      "chineseName": "Last不速之客耳環",
+      "probability": "0.007%",
+      "chance": 100,
+      "type": "Eqp",
+      "subType": "Earrings"
+    }
+  ]
+}

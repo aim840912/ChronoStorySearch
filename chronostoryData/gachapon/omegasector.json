@@ -1,0 +1,703 @@
+{
+  "name": "Omega Sector Gachapon",
+  "location": "Omega Sector",
+  "totalItems": 116,
+  "items": [
+    {
+      "itemId": 4011000,
+      "name": "Bronze Plate",
+      "chance": 100000,
+      "percent": "6.953%"
+    },
+    {
+      "itemId": 4011004,
+      "name": "Silver Plate",
+      "chance": 100000,
+      "percent": "6.953%"
+    },
+    {
+      "itemId": 4011006,
+      "name": "Gold Plate",
+      "chance": 100000,
+      "percent": "6.953%"
+    },
+    {
+      "itemId": 4011011,
+      "name": "Alien Ingot",
+      "chance": 100000,
+      "percent": "6.953%"
+    },
+    {
+      "itemId": 4021000,
+      "name": "Garnet",
+      "chance": 100000,
+      "percent": "6.953%"
+    },
+    {
+      "itemId": 4021002,
+      "name": "AquaMarine",
+      "chance": 100000,
+      "percent": "6.953%"
+    },
+    {
+      "itemId": 4021005,
+      "name": "Sapphire",
+      "chance": 100000,
+      "percent": "6.953%"
+    },
+    {
+      "itemId": 4021008,
+      "name": "Black Crystal",
+      "chance": 100000,
+      "percent": "6.953%"
+    },
+    {
+      "itemId": 4005000,
+      "name": "Power Crystal",
+      "chance": 50000,
+      "percent": "3.476%"
+    },
+    {
+      "itemId": 4005001,
+      "name": "Wisdom Crystal",
+      "chance": 50000,
+      "percent": "3.476%"
+    },
+    {
+      "itemId": 4005002,
+      "name": "Dexterous Crystal",
+      "chance": 50000,
+      "percent": "3.476%"
+    },
+    {
+      "itemId": 4005003,
+      "name": "Lucky Crystal",
+      "chance": 50000,
+      "percent": "3.476%"
+    },
+    {
+      "itemId": 4005004,
+      "name": "Dark Crystal",
+      "chance": 50000,
+      "percent": "3.476%"
+    },
+    {
+      "itemId": 1092070,
+      "name": "1st Unwelcome Guest Warrior Shield",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1092075,
+      "name": "1st Unwelcome Guest Magician Shield",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1092080,
+      "name": "1st Unwelcome Guest Thief Shield",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1302143,
+      "name": "1st Unwelcome Guest Sword",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1312058,
+      "name": "1st Unwelcome Guest Hatchet",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1322086,
+      "name": "1st Unwelcome Guest Hammer",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1332116,
+      "name": "1st Unwelcome Guest Dagger (LUK)",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1332121,
+      "name": "1st Unwelcome Guest Dagger (STR)",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1372074,
+      "name": "1st Unwelcome Guest Wand",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1382095,
+      "name": "1st Unwelcome Guest Staff",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1402086,
+      "name": "1st Unwelcome Guest Greatsword",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1412058,
+      "name": "1st Unwelcome Guest Greataxe",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1422059,
+      "name": "1st Unwelcome Guest Greathammer",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1432077,
+      "name": "1st Unwelcome Guest Spear",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1442107,
+      "name": "1st Unwelcome Guest Polearm",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1452102,
+      "name": "1st Unwelcome Guest Bow",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1462087,
+      "name": "1st Unwelcome Guest Crossbow",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1472113,
+      "name": "1st Unwelcome Guest Claw",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1482075,
+      "name": "1st Unwelcome Guest Knuckle",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1492075,
+      "name": "1st Unwelcome Guest Gun",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 4005005,
+      "name": "Chaos Crystal",
+      "chance": 10000,
+      "percent": "0.695%"
+    },
+    {
+      "itemId": 1092071,
+      "name": "2nd Unwelcome Guest Warrior Shield",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1092076,
+      "name": "2nd Unwelcome Guest Magician Shield",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1092081,
+      "name": "2nd Unwelcome Guest Thief Shield",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1302144,
+      "name": "2nd Unwelcome Guest Sword",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1312059,
+      "name": "2nd Unwelcome Guest Hatchet",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1322087,
+      "name": "2nd Unwelcome Guest Hammer",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1332117,
+      "name": "2nd Unwelcome Guest Dagger (LUK)",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1332122,
+      "name": "2nd Unwelcome Guest Dagger (STR)",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1372075,
+      "name": "2nd Unwelcome Guest Wand",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1382096,
+      "name": "2nd Unwelcome Guest Staff",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1402087,
+      "name": "2nd Unwelcome Guest Greatsword",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1412059,
+      "name": "2nd Unwelcome Guest Greataxe",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1422060,
+      "name": "2nd Unwelcome Guest Greathammer",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1432078,
+      "name": "2nd Unwelcome Guest Spear",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1442108,
+      "name": "2nd Unwelcome Guest Polearm",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1452103,
+      "name": "2nd Unwelcome Guest Bow",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1462088,
+      "name": "2nd Unwelcome Guest Crossbow",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1472114,
+      "name": "2nd Unwelcome Guest Claw",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1482076,
+      "name": "2nd Unwelcome Guest Knuckle",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1492076,
+      "name": "2nd Unwelcome Guest Gun",
+      "chance": 5000,
+      "percent": "0.348%"
+    },
+    {
+      "itemId": 1092072,
+      "name": "3rd Unwelcome Guest Warrior Shield",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1092077,
+      "name": "3rd Unwelcome Guest Magician Shield",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1092082,
+      "name": "3rd Unwelcome Guest Thief Shield",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1302145,
+      "name": "3rd Unwelcome Guest Sword",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1312060,
+      "name": "3rd Unwelcome Guest Hatchet",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1322088,
+      "name": "3rd Unwelcome Guest Hammer",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1332118,
+      "name": "3rd Unwelcome Guest Dagger (LUK)",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1332123,
+      "name": "3rd Unwelcome Guest Dagger (STR)",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1372076,
+      "name": "3rd Unwelcome Guest Wand",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1382097,
+      "name": "3rd Unwelcome Guest Staff",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1402088,
+      "name": "3rd Unwelcome Guest Greatsword",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1412060,
+      "name": "3rd Unwelcome Guest Greataxe",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1422061,
+      "name": "3rd Unwelcome Guest Greathammer",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1432079,
+      "name": "3rd Unwelcome Guest Spear",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1442109,
+      "name": "3rd Unwelcome Guest Polearm",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1452104,
+      "name": "3rd Unwelcome Guest Bow",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1462089,
+      "name": "3rd Unwelcome Guest Crossbow",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1472115,
+      "name": "3rd Unwelcome Guest Claw",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1482077,
+      "name": "3rd Unwelcome Guest Knuckle",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1492077,
+      "name": "3rd Unwelcome Guest Gun",
+      "chance": 2500,
+      "percent": "0.174%"
+    },
+    {
+      "itemId": 1092073,
+      "name": "Last Unwelcome Guest Warrior Shield",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1092078,
+      "name": "Last Unwelcome Guest Magician Shield",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1092083,
+      "name": "Last Unwelcome Guest Thief Shield",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1302146,
+      "name": "Last Unwelcome Guest Sword",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1312061,
+      "name": "Last Unwelcome Guest Hatchet",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1322089,
+      "name": "Last Unwelcome Guest Hammer",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1332119,
+      "name": "Last Unwelcome Guest Dagger (LUK)",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1332124,
+      "name": "Last Unwelcome Guest Dagger (STR)",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1372077,
+      "name": "Last Unwelcome Guest Wand",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1382098,
+      "name": "Last Unwelcome Guest Staff",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1402089,
+      "name": "Last Unwelcome Guest Greatsword",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1412061,
+      "name": "Last Unwelcome Guest Greataxe",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1422062,
+      "name": "Last Unwelcome Guest Greathammer",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1432080,
+      "name": "Last Unwelcome Guest Spear",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1442110,
+      "name": "Last Unwelcome Guest Polearm",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1452105,
+      "name": "Last Unwelcome Guest Bow",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1462090,
+      "name": "Last Unwelcome Guest Crossbow",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1472116,
+      "name": "Last Unwelcome Guest Claw",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1482078,
+      "name": "Last Unwelcome Guest Knuckle",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1492078,
+      "name": "Last Unwelcome Guest Gun",
+      "chance": 1250,
+      "percent": "0.087%"
+    },
+    {
+      "itemId": 1032080,
+      "name": "1st Unwelcome Guest Earrings",
+      "chance": 800,
+      "percent": "0.056%"
+    },
+    {
+      "itemId": 1032081,
+      "name": "2nd Unwelcome Guest Earrings",
+      "chance": 400,
+      "percent": "0.028%"
+    },
+    {
+      "itemId": 1032082,
+      "name": "3rd Unwelcome Guest Earrings",
+      "chance": 200,
+      "percent": "0.014%"
+    },
+    {
+      "itemId": 6000009,
+      "name": "Mesoranger Red Helmet",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6000010,
+      "name": "Mesoranger Blue Helmet",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6000011,
+      "name": "Mesoranger Green Helmet",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6000012,
+      "name": "Mesoranger Black Helmet (Panda)",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6001014,
+      "name": "Mesoranger Pink Helmet",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6001015,
+      "name": "Mesoranger Yellow Helmet",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6001016,
+      "name": "Mesoranger Black Helmet (Cat)",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6004935,
+      "name": "Mesoranger White Helmet",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6050084,
+      "name": "Red Mesoranger",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6050085,
+      "name": "Blue Mesoranger",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6050086,
+      "name": "Mesoranger Green",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6050087,
+      "name": "Black Mesoranger",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6051087,
+      "name": "Pink Mesoranger (Skirted)",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6051088,
+      "name": "Yellow Mesoranger",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6051089,
+      "name": "Black Mesoranger (Skirted)",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6053147,
+      "name": "White Mesoranger",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6072202,
+      "name": "Mesoranger Boots",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 6082124,
+      "name": "Mesoranger Gloves",
+      "chance": 100,
+      "percent": "0.007%"
+    },
+    {
+      "itemId": 1032083,
+      "name": "Last Unwelcome Guest Earrings",
+      "chance": 100,
+      "percent": "0.007%"
+    }
+  ]
+}
