@@ -14,6 +14,7 @@ const GACHA_MACHINES = [
   { id: 5, zhName: '魔法森林', enName: 'Ellinia' },
   { id: 6, zhName: '鯨魚號', enName: 'Nautilus' },
   { id: 7, zhName: '卷軸轉蛋', enName: 'All Towns' },
+  { id: 8, zhName: '地球防衛本部', enName: 'Omega Sector' },
 ] as const
 
 interface GachaDropdownProps {

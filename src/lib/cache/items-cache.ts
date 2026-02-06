@@ -21,6 +21,7 @@ import gachaMachine4 from '@/../chronostoryData/gacha/machine-4-enhanced.json'
 import gachaMachine5 from '@/../chronostoryData/gacha/machine-5-enhanced.json'
 import gachaMachine6 from '@/../chronostoryData/gacha/machine-6-enhanced.json'
 import gachaMachine7 from '@/../chronostoryData/gacha/machine-7-enhanced.json'
+import gachaMachine8 from '@/../chronostoryData/gacha/machine-8-enhanced.json'
 import type { ItemAttributesEssential, GachaMachine, GachaItem, ItemIndex } from '@/types'
 import { apiLogger } from '@/lib/logger'
 
@@ -98,7 +99,8 @@ function initializeGachaItemsMap(): void {
     gachaMachine4,
     gachaMachine5,
     gachaMachine6,
-    gachaMachine7
+    gachaMachine7,
+    gachaMachine8
   ] as GachaMachine[]
 
   allGachaMachines.forEach((machine) => {
