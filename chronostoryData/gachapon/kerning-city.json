@@ -1,8 +1,14 @@
 {
   "name": "Kerning City Gachapon",
   "location": "Kerning City",
-  "totalItems": 241,
+  "totalItems": 242,
   "items": [
+    {
+      "itemId": 1092050,
+      "name": "Khanjar",
+      "chance": 21429,
+      "percent": "0.07%"
+    },
     {
       "itemId": 1203013,
       "name": "Hwabi Throwing-Stars",
