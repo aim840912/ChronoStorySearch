@@ -89,6 +89,18 @@ async function main() {
     const filePath = path.join(EQUIPMENT_DIR, file);
     const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
+    // 投射物（箭矢/子彈/飛鏢）沒有浮動值，清空 randomStats
+    if (data.typeInfo?.subCategory === 'Projectile') {
+      if (Object.keys(data.randomStats || {}).length > 0) {
+        data.randomStats = {};
+        fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf-8');
+        updated++;
+      } else {
+        unchanged++;
+      }
+      continue;
+    }
+
     const oldStats = JSON.stringify(data.randomStats);
     const newStats = calculateRandomStats(data.metaInfo, data.typeInfo);
     const newStatsStr = JSON.stringify(newStats);

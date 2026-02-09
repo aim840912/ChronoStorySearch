@@ -22,13 +22,7 @@
     "category": "Accessory",
     "subCategory": "Projectile"
   },
-  "randomStats": {
-    "incPAD": {
-      "base": 10,
-      "min": 10,
-      "max": 11
-    }
-  },
+  "randomStats": {},
   "fetchedFrom": "chronostory-api",
   "externalIds": {
     "mapleSaga": 2061004

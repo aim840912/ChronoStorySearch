@@ -159,7 +159,10 @@ async function fixEquipment(itemId) {
     return { id: itemId, status: 'no_changes' };
   }
 
-  localData.randomStats = calculateRandomStats(localData.metaInfo, localData.typeInfo);
+  // 投射物（箭矢/子彈/飛鏢）沒有浮動值
+  localData.randomStats = localData.typeInfo?.subCategory === 'Projectile'
+    ? {}
+    : calculateRandomStats(localData.metaInfo, localData.typeInfo);
 
   fs.writeFileSync(filePath, JSON.stringify(localData, null, 2) + '\n', 'utf-8');
 

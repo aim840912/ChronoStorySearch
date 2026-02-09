@@ -17,6 +17,9 @@ export function calculateEquipmentStatRange(
 ): number {
   if (!reqLevel || reqLevel <= 0) return 0
 
+  // 投射物（箭矢/子彈/飛鏢）沒有浮動值
+  if (category?.toLowerCase().includes('projectile')) return 0
+
   const baseRange = reqLevel / 10
   const isOverall = category?.toLowerCase().includes('overall') ?? false
 
