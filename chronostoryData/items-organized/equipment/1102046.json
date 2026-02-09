@@ -32,12 +32,12 @@
     "incDEX": {
       "base": 2,
       "min": 0,
-      "max": 6
+      "max": 7
     },
     "incLUK": {
       "base": 2,
       "min": 0,
-      "max": 6
+      "max": 7
     },
     "incPDD": {
       "base": 37,
