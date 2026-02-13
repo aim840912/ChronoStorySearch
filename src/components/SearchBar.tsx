@@ -41,6 +41,10 @@ interface SearchBarProps {
   selectedMerchantMapId?: string | null
   onMerchantSelect?: (mapId: string | null) => void
   onMerchantClose?: () => void
+  // 捲軸兌換相關
+  isScrollExchangeMode?: boolean
+  onScrollExchangeToggle?: () => void
+  onScrollExchangeClose?: () => void
 }
 
 /**
@@ -78,6 +82,10 @@ export function SearchBar({
   selectedMerchantMapId = null,
   onMerchantSelect,
   onMerchantClose,
+  // 捲軸兌換
+  isScrollExchangeMode = false,
+  onScrollExchangeToggle,
+  onScrollExchangeClose,
 }: SearchBarProps) {
   const { t } = useLanguage()
 
@@ -230,6 +238,9 @@ export function SearchBar({
           selectedMerchantMapId={selectedMerchantMapId ?? null}
           onMerchantSelect={onMerchantSelect}
           onMerchantClose={onMerchantClose}
+          isScrollExchangeMode={isScrollExchangeMode}
+          onScrollExchangeToggle={onScrollExchangeToggle}
+          onScrollExchangeClose={onScrollExchangeClose}
         />
       )}
     </div>

@@ -44,6 +44,10 @@ interface FilterTabsProps {
   selectedMerchantMapId?: string | null
   onMerchantSelect?: (mapId: string | null) => void
   onMerchantClose?: () => void
+  // 捲軸兌換相關
+  isScrollExchangeMode?: boolean
+  onScrollExchangeToggle?: () => void
+  onScrollExchangeClose?: () => void
 }
 
 /**
@@ -64,6 +68,10 @@ export function FilterTabs({
   selectedMerchantMapId: _selectedMerchantMapId,
   onMerchantSelect: _onMerchantSelect,
   onMerchantClose: _onMerchantClose,
+  // 捲軸兌換
+  isScrollExchangeMode = false,
+  onScrollExchangeToggle,
+  onScrollExchangeClose,
 }: FilterTabsProps) {
   // 暫時抑制 unused variable 警告
   void _selectedMerchantMapId
@@ -182,6 +190,7 @@ export function FilterTabs({
   const handleShowAll = () => {
     onFilterChange('all')
     onGachaClose?.()  // 同時關閉轉蛋模式
+    onScrollExchangeClose?.()  // 同時關閉捲軸兌換模式
   }
 
   return (
@@ -190,7 +199,7 @@ export function FilterTabs({
       <button
         onClick={handleShowAll}
         className={`flex-1 lg:flex-initial px-2 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center justify-center gap-1.5 ${
-          filterMode === 'all' && !isGachaMode && !isMerchantMode
+          filterMode === 'all' && !isGachaMode && !isMerchantMode && !isScrollExchangeMode
             ? 'bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 shadow-sm'
             : 'text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white/50 dark:hover:bg-gray-700/50'
         }`}
@@ -206,7 +215,7 @@ export function FilterTabs({
       <button
         onClick={() => onFilterChange('favorite-monsters')}
         className={`flex-1 lg:flex-initial px-2 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center justify-center gap-1.5 ${
-          filterMode === 'favorite-monsters' && !isGachaMode && !isMerchantMode
+          filterMode === 'favorite-monsters' && !isGachaMode && !isMerchantMode && !isScrollExchangeMode
             ? 'bg-white dark:bg-gray-700 text-red-600 dark:text-red-400 shadow-sm'
             : favoriteMonsterCount > 0
             ? 'text-red-500 dark:text-red-400 hover:text-red-600 dark:hover:text-red-300 hover:bg-white/50 dark:hover:bg-gray-700/50'
@@ -225,7 +234,7 @@ export function FilterTabs({
       <button
         onClick={() => onFilterChange('favorite-items')}
         className={`flex-1 lg:flex-initial px-2 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center justify-center gap-1.5 ${
-          filterMode === 'favorite-items' && !isGachaMode && !isMerchantMode
+          filterMode === 'favorite-items' && !isGachaMode && !isMerchantMode && !isScrollExchangeMode
             ? 'bg-white dark:bg-gray-700 text-green-600 dark:text-green-400 shadow-sm'
             : favoriteItemCount > 0
             ? 'text-green-500 dark:text-green-400 hover:text-green-600 dark:hover:text-green-300 hover:bg-white/50 dark:hover:bg-gray-700/50'
@@ -301,6 +310,24 @@ export function FilterTabs({
             </div>
           )}
         </div>
+      )}
+
+      {/* 捲軸兌換按鈕 */}
+      {onScrollExchangeToggle && (
+        <button
+          onClick={onScrollExchangeToggle}
+          className={`flex-1 lg:flex-initial px-2 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center justify-center lg:justify-start gap-1.5 ${
+            isScrollExchangeMode
+              ? 'bg-amber-600 text-white shadow-md'
+              : 'text-gray-600 dark:text-gray-400 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-white/50 dark:hover:bg-gray-700/50'
+          }`}
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+          </svg>
+          <span className="hidden min-[518px]:inline">{t('scrollExchange.button')}</span>
+          <span className="min-[518px]:hidden">{language === 'zh-TW' ? '兌' : 'Ex'}</span>
+        </button>
       )}
 
       {/* 商人下拉選單 - 暫時停用

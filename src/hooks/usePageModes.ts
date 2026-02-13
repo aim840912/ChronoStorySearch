@@ -29,6 +29,8 @@ export interface PageModesState {
   tradeStatsFilter: EquipmentStatsFilter
   // 檢舉模式
   isReportMode: boolean
+  // 捲軸兌換模式
+  isScrollExchangeMode: boolean
 }
 
 export interface PageModesActions {
@@ -46,6 +48,9 @@ export interface PageModesActions {
   resetTradeStatsFilter: () => void
   // 檢舉模式
   toggleReportMode: () => void
+  // 捲軸兌換模式
+  toggleScrollExchange: () => void
+  closeScrollExchange: () => void
   // 通用
   closeAllModes: () => void
 }
@@ -74,6 +79,9 @@ export function usePageModes(): UsePageModesReturn {
   // 檢舉模式狀態
   const [isReportMode, setIsReportMode] = useState(false)
 
+  // 捲軸兌換模式狀態
+  const [isScrollExchangeMode, setIsScrollExchangeMode] = useState(false)
+
   /**
    * 重置素質篩選
    */
@@ -99,6 +107,7 @@ export function usePageModes(): UsePageModesReturn {
     setSelectedMerchantMapId(null)
     setIsTradeMode(false)
     setIsReportMode(false)
+    setIsScrollExchangeMode(false)
   }, [])
 
   /**
@@ -111,6 +120,7 @@ export function usePageModes(): UsePageModesReturn {
     setSelectedMerchantMapId(null)
     setIsTradeMode(false)
     setIsReportMode(false)
+    setIsScrollExchangeMode(false)
     // 開啟轉蛋模式
     setIsGachaMode(true)
     setSelectedGachaMachineId(machineId)
@@ -136,6 +146,7 @@ export function usePageModes(): UsePageModesReturn {
     setSelectedGachaMachineId(null)
     setIsTradeMode(false)
     setIsReportMode(false)
+    setIsScrollExchangeMode(false)
     // 開啟商人模式
     setIsMerchantMode(true)
     setSelectedMerchantMapId(mapId)
@@ -168,6 +179,7 @@ export function usePageModes(): UsePageModesReturn {
         setIsMerchantMode(false)
         setSelectedMerchantMapId(null)
         setIsReportMode(false)
+        setIsScrollExchangeMode(false)
         // 滾動到頂部
         window.scrollTo({ top: 0, behavior: 'smooth' })
       }
@@ -189,11 +201,41 @@ export function usePageModes(): UsePageModesReturn {
         setIsMerchantMode(false)
         setSelectedMerchantMapId(null)
         setIsTradeMode(false)
+        setIsScrollExchangeMode(false)
         // 滾動到頂部
         window.scrollTo({ top: 0, behavior: 'smooth' })
       }
       return newValue
     })
+  }, [])
+
+  /**
+   * 切換捲軸兌換模式
+   * 進入時會關閉其他模式（互斥）
+   */
+  const toggleScrollExchange = useCallback(() => {
+    setIsScrollExchangeMode(prev => {
+      const newValue = !prev
+      if (newValue) {
+        // 進入捲軸兌換模式時關閉其他模式
+        setIsGachaMode(false)
+        setSelectedGachaMachineId(null)
+        setIsMerchantMode(false)
+        setSelectedMerchantMapId(null)
+        setIsTradeMode(false)
+        setIsReportMode(false)
+        // 滾動到頂部
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
+      return newValue
+    })
+  }, [])
+
+  /**
+   * 關閉捲軸兌換模式
+   */
+  const closeScrollExchange = useCallback(() => {
+    setIsScrollExchangeMode(false)
   }, [])
 
   return {
@@ -207,6 +249,7 @@ export function usePageModes(): UsePageModesReturn {
     tradeSearchQuery,
     tradeStatsFilter,
     isReportMode,
+    isScrollExchangeMode,
     // 操作
     selectGacha,
     closeGacha,
@@ -218,6 +261,8 @@ export function usePageModes(): UsePageModesReturn {
     setTradeStatsFilter,
     resetTradeStatsFilter,
     toggleReportMode,
+    toggleScrollExchange,
+    closeScrollExchange,
     closeAllModes,
   }
 }

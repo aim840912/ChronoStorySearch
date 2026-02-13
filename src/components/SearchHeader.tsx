@@ -74,6 +74,11 @@ interface SearchHeaderProps {
   // 交易搜尋自動完成
   searchItems?: (query: string, limit?: number) => ExtendedUniqueItem[]
 
+  // 捲軸兌換模式相關
+  isScrollExchangeMode?: boolean
+  onScrollExchangeToggle?: () => void
+  onScrollExchangeClose?: () => void
+
   // 檢舉模式相關
   isReportMode?: boolean
   onReportModeToggle?: () => void
@@ -142,6 +147,10 @@ export const SearchHeader = memo(function SearchHeader({
   onTradeStatsFilterReset,
   // 交易搜尋自動完成
   searchItems,
+  // 捲軸兌換模式相關
+  isScrollExchangeMode = false,
+  onScrollExchangeToggle,
+  onScrollExchangeClose,
   // 檢舉模式相關
   isReportMode = false,
   onReportModeToggle,
@@ -691,6 +700,9 @@ export const SearchHeader = memo(function SearchHeader({
             selectedMerchantMapId={selectedMerchantMapId}
             onMerchantSelect={onMerchantSelect}
             onMerchantClose={onMerchantClose}
+            isScrollExchangeMode={isScrollExchangeMode}
+            onScrollExchangeToggle={onScrollExchangeToggle}
+            onScrollExchangeClose={onScrollExchangeClose}
           />
           {/* 進階篩選面板 - 僅搜尋模式顯示 */}
           <AdvancedFilterPanel
