@@ -23,11 +23,9 @@ export function AnchorAd() {
     if (initialized.current) return
 
     try {
-      const adsbygoogle = (window as unknown as { adsbygoogle: unknown[] }).adsbygoogle
-      if (adsbygoogle) {
-        adsbygoogle.push({})
-        initialized.current = true
-      }
+      ((window as unknown as { adsbygoogle: unknown[] }).adsbygoogle =
+        (window as unknown as { adsbygoogle: unknown[] }).adsbygoogle || []).push({})
+      initialized.current = true
     } catch {
       // AdSense 尚未載入或被阻擋
     }
