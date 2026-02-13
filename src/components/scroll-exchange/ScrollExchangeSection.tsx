@@ -85,7 +85,7 @@ export function ScrollExchangeSection({
     return result
   }, [searchTerm, selectedCategory, selectedScrollType])
 
-  // 按 Category 分組
+  // 按 Category 分組（組內依排序狀態排列）
   const groupedData = useMemo(() => {
     const groups = new Map<string, ScrollExchangeItem[]>()
     for (const item of filteredData) {
@@ -96,27 +96,25 @@ export function ScrollExchangeSection({
         groups.set(item.Category, [item])
       }
     }
-    // 每組內按成功率降序排列
+    // 組內排序：有排序欄位時依該欄位，否則預設按成功率降序
     for (const items of groups.values()) {
-      items.sort((a, b) => b.ScrollPercent - a.ScrollPercent)
+      if (sortColumn) {
+        items.sort((a, b) => {
+          let cmp = 0
+          switch (sortColumn) {
+            case 'name': cmp = a.ItemName.localeCompare(b.ItemName); break
+            case 'type': cmp = a.ScrollType.localeCompare(b.ScrollType); break
+            case 'percent': cmp = a.ScrollPercent - b.ScrollPercent; break
+            case 'rate': cmp = a.ExchangeRate - b.ExchangeRate; break
+            case 'voucher': cmp = a.ScrollVoucherReq - b.ScrollVoucherReq; break
+          }
+          return sortDirection === 'asc' ? cmp : -cmp
+        })
+      } else {
+        items.sort((a, b) => b.ScrollPercent - a.ScrollPercent)
+      }
     }
     return groups
-  }, [filteredData])
-
-  // 排序後的扁平資料（排序啟用時取代分組）
-  const sortedData = useMemo(() => {
-    if (!sortColumn) return null
-    return [...filteredData].sort((a, b) => {
-      let cmp = 0
-      switch (sortColumn) {
-        case 'name': cmp = a.ItemName.localeCompare(b.ItemName); break
-        case 'type': cmp = a.ScrollType.localeCompare(b.ScrollType); break
-        case 'percent': cmp = a.ScrollPercent - b.ScrollPercent; break
-        case 'rate': cmp = a.ExchangeRate - b.ExchangeRate; break
-        case 'voucher': cmp = a.ScrollVoucherReq - b.ScrollVoucherReq; break
-      }
-      return sortDirection === 'asc' ? cmp : -cmp
-    })
   }, [filteredData, sortColumn, sortDirection])
 
   /** 排序指示器 SVG */
@@ -369,60 +367,42 @@ export function ScrollExchangeSection({
                   </tr>
                 </thead>
                 <tbody>
-                  {sortedData ? (
-                    /* 排序模式：扁平列表 */
-                    sortedData.map((item) => (
-                      <TableRow key={item.ItemID} item={item} />
-                    ))
-                  ) : (
-                    /* 預設模式：分組顯示 */
-                    Array.from(groupedData.entries()).map(([category, items]) => (
-                      <Fragment key={category}>
-                        <tr>
-                          <td colSpan={5} className="px-6 py-2 bg-gray-50 dark:bg-gray-750 border-b border-gray-200 dark:border-gray-700">
-                            <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-                              {category}
-                              <span className="ml-2 text-xs font-normal text-gray-400">({items.length})</span>
-                            </span>
-                          </td>
-                        </tr>
-                        {items.map((item) => (
-                          <TableRow key={item.ItemID} item={item} />
-                        ))}
-                      </Fragment>
-                    ))
-                  )}
+                  {Array.from(groupedData.entries()).map(([category, items]) => (
+                    <Fragment key={category}>
+                      <tr>
+                        <td colSpan={5} className="px-6 py-2 bg-gray-100 dark:bg-gray-700/60 border-b border-gray-200 dark:border-gray-600">
+                          <span className="text-sm font-semibold text-gray-800 dark:text-gray-100">
+                            {category}
+                            <span className="ml-2 text-xs font-normal text-gray-500 dark:text-gray-400">({items.length})</span>
+                          </span>
+                        </td>
+                      </tr>
+                      {items.map((item) => (
+                        <TableRow key={item.ItemID} item={item} />
+                      ))}
+                    </Fragment>
+                  ))}
                 </tbody>
               </table>
             </div>
 
             {/* 手機版：卡片 */}
             <div className="sm:hidden">
-              {sortedData ? (
-                /* 排序模式：扁平列表 */
-                <div className="divide-y divide-gray-100 dark:divide-gray-700/50">
-                  {sortedData.map((item) => (
-                    <MobileCard key={item.ItemID} item={item} />
-                  ))}
-                </div>
-              ) : (
-                /* 預設模式：分組顯示 */
-                Array.from(groupedData.entries()).map(([category, items]) => (
-                  <div key={category}>
-                    <div className="sticky top-0 px-4 py-2 bg-gray-50 dark:bg-gray-750 border-b border-gray-200 dark:border-gray-700 z-10">
-                      <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-                        {category}
-                        <span className="ml-2 text-xs font-normal text-gray-400">({items.length})</span>
-                      </h3>
-                    </div>
-                    <div className="divide-y divide-gray-100 dark:divide-gray-700/50">
-                      {items.map((item) => (
-                        <MobileCard key={item.ItemID} item={item} />
-                      ))}
-                    </div>
+              {Array.from(groupedData.entries()).map(([category, items]) => (
+                <div key={category}>
+                  <div className="sticky top-0 px-4 py-2 bg-gray-100 dark:bg-gray-700/60 border-b border-gray-200 dark:border-gray-600 z-10">
+                    <h3 className="text-sm font-semibold text-gray-800 dark:text-gray-100">
+                      {category}
+                      <span className="ml-2 text-xs font-normal text-gray-500 dark:text-gray-400">({items.length})</span>
+                    </h3>
                   </div>
-                ))
-              )}
+                  <div className="divide-y divide-gray-100 dark:divide-gray-700/50">
+                    {items.map((item) => (
+                      <MobileCard key={item.ItemID} item={item} />
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </>
         )}
