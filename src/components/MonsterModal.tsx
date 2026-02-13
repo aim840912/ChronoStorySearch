@@ -17,6 +17,7 @@ import { useScreenshot } from '@/hooks/useScreenshot'
 import { useLazyMobInfo, useLazyDropsDetailed } from '@/hooks/useLazyData'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { useShowDevInfo } from '@/hooks/useShowDevInfo'
+import { LanguageToggle } from './LanguageToggle'
 
 interface MonsterModalProps {
   isOpen: boolean
@@ -262,6 +263,8 @@ export function MonsterModal({
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
           </button>
+          {/* 語言切換按鈕 */}
+          <LanguageToggle />
         </>
       }
     >

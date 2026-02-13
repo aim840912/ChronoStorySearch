@@ -20,6 +20,7 @@ import { isUnwelcomeGuestItem, getMultiStageRecipe, getNextStageRecipe } from '@
 import { getScrollExchangeInfo } from '@/lib/scroll-exchange-utils'
 import { CraftingRecipeCard } from './CraftingRecipeCard'
 import { UpgradePathCard } from './UpgradePathCard'
+import { LanguageToggle } from './LanguageToggle'
 
 // 商人販售地點資料結構
 interface MerchantLocation {
@@ -392,6 +393,8 @@ export function ItemModal({
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
           </button>
+          {/* 語言切換按鈕 */}
+          <LanguageToggle />
         </>
       }
     >
@@ -616,22 +619,17 @@ export function ItemModal({
                     }}
                     className="bg-amber-50 dark:bg-amber-900/20 rounded-lg shadow-lg hover:shadow-xl p-5 border border-amber-200 dark:border-amber-700 cursor-pointer hover:scale-[1.02] transition-all duration-300 active:scale-[0.98]"
                   >
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="font-semibold text-gray-900 dark:text-white">
-                          {t('scrollExchange.col.rate')}: {scrollExchangeInfo.ExchangeRate}
+                    <div className="space-y-1">
+                      {scrollExchangeInfo.ScrollVoucherReq > 0 && (
+                        <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                          {t('scrollExchange.col.voucher')}: {scrollExchangeInfo.ScrollVoucherReq} {language === 'zh-TW' ? '張' : 'pcs'}
                         </p>
-                        {scrollExchangeInfo.ScrollVoucherReq > 0 && (
-                          <p className="text-xs text-gray-500 dark:text-gray-400">
-                            {t('scrollExchange.col.voucher')}: {scrollExchangeInfo.ScrollVoucherReq}
-                          </p>
-                        )}
-                      </div>
-                      <div className="bg-amber-100 dark:bg-amber-800 px-3 py-1 rounded-full">
-                        <span className="text-sm font-bold text-amber-700 dark:text-amber-200">
-                          {scrollExchangeInfo.ScrollPercent}%
-                        </span>
-                      </div>
+                      )}
+                      {scrollExchangeInfo.ExchangeRate > 0 && (
+                        <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                          {t('scrollExchange.col.rate')}: {scrollExchangeInfo.ExchangeRate} {language === 'zh-TW' ? '張' : 'pcs'}
+                        </p>
+                      )}
                     </div>
                   </div>
                 </div>
