@@ -320,8 +320,9 @@ export function ItemModal({
       // 再從 itemData 取（fallback）
       if (itemData?.chineseItemName) return itemData.chineseItemName
     }
-    // 英文名稱：優先從 items-organized 取
-    return itemOrganizedData?.description?.name || itemData?.itemName || itemName
+    // 英文名稱：優先使用已知的英文名稱來源（allDrops / prop）
+    // Note: itemOrganizedData?.description?.name 可能是中文，不可靠作為英文來源
+    return itemData?.itemName || itemName || itemOrganizedData?.description?.name
   }, [language, itemOrganizedData, itemData, itemName])
 
   // 當 Modal 開啟時載入物品屬性資料與怪物資訊資料
