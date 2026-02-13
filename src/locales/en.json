@@ -425,7 +425,6 @@
   "filter.elementWeakness.ice": "Ice",
   "filter.elementWeakness.lightning": "Lightning",
   "filter.elementWeakness.holy": "Holy",
-  "filter.elementWeakness.poison": "Poison",
   "filter.monsterType": "Monster Type",
   "filter.monsterType.boss": "Boss",
   "filter.monsterType.healable": "Healable",
