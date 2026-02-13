@@ -2026,6 +2026,7 @@
     4011004,
     4011006,
     4011010,
+    4011011,
     4020000,
     4020001,
     4020002,
@@ -2702,8 +2703,8 @@
     9834151,
     9834178
   ],
-  "generatedAt": "2026-02-06T05:03:46.507Z",
-  "totalItems": 2065,
+  "generatedAt": "2026-02-13T04:36:53.394Z",
+  "totalItems": 2066,
   "totalMonsters": 217,
   "totalMonstersGif": 161,
   "totalMonstersDie": 127,
