@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
-import { AdSenseScript } from '@/components/adsense';
+import { AdSenseScript, AnchorAd } from '@/components/adsense';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -52,6 +52,7 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
+        <AnchorAd />
       </body>
     </html>
   );

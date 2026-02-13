@@ -1,6 +1,7 @@
 'use client'
 
 import { MonsterCard } from '@/components/MonsterCard'
+import { MultiplexAd } from '@/components/adsense'
 import { EmptyState } from './EmptyState'
 
 type UniqueMonster = { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number }
@@ -73,6 +74,8 @@ export function FavoriteMonstersList({
           />
         ))}
       </div>
+
+      {monsters.length >= 4 && <MultiplexAd />}
     </div>
   )
 }
