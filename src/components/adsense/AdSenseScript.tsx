@@ -21,15 +21,14 @@ export function AdSenseScript() {
   useEffect(() => {
     if (!ADS_ENABLED || !ADSENSE_CLIENT_ID) return
 
-    // 防止重複載入
-    if (document.querySelector('script[data-adsense-loaded]')) return
+    // 防止重複載入（用 src 屬性檢查，避免在 AdSense script 上加自訂 data-* 屬性觸發警告）
+    if (document.querySelector('script[src*="adsbygoogle"]')) return
 
     // AdSense 基本腳本
     const adsenseScript = document.createElement('script')
     adsenseScript.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`
     adsenseScript.async = true
     adsenseScript.crossOrigin = 'anonymous'
-    adsenseScript.dataset.adsenseLoaded = 'true'
     document.head.appendChild(adsenseScript)
 
     // Funding Choices 腳本 - 廣告封鎖復原
