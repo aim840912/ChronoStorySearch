@@ -53,11 +53,11 @@ export function InFeedAd({ className = '' }: InFeedAdProps) {
   if (!ADSENSE_CLIENT_ID || !INFEED_SLOT) return null
 
   return (
-    <div className={`min-h-[140px] flex items-center justify-center ${className}`}>
+    <div className={`min-h-[140px] ${className}`}>
       <ins
         ref={adRef}
         className="adsbygoogle"
-        style={{ display: 'block' }}
+        style={{ display: 'block', width: '100%' }}
         data-ad-format="fluid"
         data-ad-layout-key="-6t+ed+2i-1n-4w"
         data-ad-client={ADSENSE_CLIENT_ID}
