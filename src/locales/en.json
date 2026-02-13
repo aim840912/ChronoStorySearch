@@ -536,7 +536,7 @@
   "merchant.mapCount": "maps",
   "merchant.itemUnit": "items",
   "scrollExchange.title": "Scroll Exchange",
-  "scrollExchange.button": "Scroll Exchange",
+  "scrollExchange.button": "Exchange",
   "scrollExchange.items": "items",
   "scrollExchange.searchPlaceholder": "Search scroll name...",
   "scrollExchange.allCategories": "All Categories",
