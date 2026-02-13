@@ -8,6 +8,7 @@ import { useShowDevInfo } from '@/hooks/useShowDevInfo'
 import { getItemDisplayName } from '@/lib/display-name'
 import { getItemImageUrl, getMonsterImageUrl } from '@/lib/image-utils'
 import type { ItemSource } from '@/types'
+import { scrollExchangeMap } from '@/lib/scroll-exchange-utils'
 import { BaseCard, CardHeader, CardImage, FavoriteButton, TypeBadge } from './cards'
 
 interface ItemCardProps {
@@ -102,6 +103,18 @@ export const ItemCard = memo(function ItemCard({
                 {t('search.type.merchant')}
               </span>
             )}
+            {(() => {
+              const voucherReq = scrollExchangeMap.get(itemId)?.ScrollVoucherReq
+              if (!voucherReq) return null
+              return (
+                <span
+                  className="inline-flex items-center px-2.5 py-1 rounded-full bg-amber-500 text-white text-xs font-bold"
+                  title={t('card.exchangeDrop')}
+                >
+                  {voucherReq}
+                </span>
+              )
+            })()}
           </>
         }
         allIcons={allIcons}
