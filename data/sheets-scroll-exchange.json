@@ -1,0 +1,3962 @@
+[
+  {
+    "ItemID": 2040343,
+    "ItemName": "Scroll for Accessory for DEX 100%",
+    "Category": "Accessory",
+    "ScrollType": "DEX",
+    "ScrollPercent": 100,
+    "RateMulitplier": 5,
+    "ExchangeRate": 20,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040344,
+    "ItemName": "Dark Scroll for Accessory for DEX 70%",
+    "Category": "Accessory",
+    "ScrollType": "DEX",
+    "ScrollPercent": 70,
+    "RateMulitplier": 5,
+    "ExchangeRate": 20,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040345,
+    "ItemName": "Scroll for Accessory for DEX 60%",
+    "Category": "Accessory",
+    "ScrollType": "DEX",
+    "ScrollPercent": 60,
+    "RateMulitplier": 0.5,
+    "ExchangeRate": 200,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040346,
+    "ItemName": "Dark Scroll for Accessory for DEX 30%",
+    "Category": "Accessory",
+    "ScrollType": "DEX",
+    "ScrollPercent": 30,
+    "RateMulitplier": 0.5,
+    "ExchangeRate": 200,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040348,
+    "ItemName": "Scroll for Accessory for DEX 15%",
+    "Category": "Accessory",
+    "ScrollType": "DEX",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040347,
+    "ItemName": "Scroll for Accessory for DEX 10%",
+    "Category": "Accessory",
+    "ScrollType": "DEX",
+    "ScrollPercent": 10,
+    "RateMulitplier": 0.5,
+    "ExchangeRate": 200,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040350,
+    "ItemName": "Scroll for Accessory for INT 100%",
+    "Category": "Accessory",
+    "ScrollType": "INT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 5,
+    "ExchangeRate": 20,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040351,
+    "ItemName": "Dark Scroll for Accessory for INT 70%",
+    "Category": "Accessory",
+    "ScrollType": "INT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040352,
+    "ItemName": "Scroll for Accessory for INT 60%",
+    "Category": "Accessory",
+    "ScrollType": "INT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 0.5,
+    "ExchangeRate": 200,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040353,
+    "ItemName": "Dark Scroll for Accessory for INT 30%",
+    "Category": "Accessory",
+    "ScrollType": "INT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 0.5,
+    "ExchangeRate": 200,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040355,
+    "ItemName": "Scroll for Accessory for INT 15%",
+    "Category": "Accessory",
+    "ScrollType": "INT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040354,
+    "ItemName": "Scroll for Accessory for INT 10%",
+    "Category": "Accessory",
+    "ScrollType": "INT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040357,
+    "ItemName": "Scroll for Accessory for LUK 100%",
+    "Category": "Accessory",
+    "ScrollType": "LUK",
+    "ScrollPercent": 100,
+    "RateMulitplier": 5,
+    "ExchangeRate": 20,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040358,
+    "ItemName": "Dark Scroll for Accessory for LUK 70%",
+    "Category": "Accessory",
+    "ScrollType": "LUK",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040359,
+    "ItemName": "Scroll for Accessory for LUK 60%",
+    "Category": "Accessory",
+    "ScrollType": "LUK",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040360,
+    "ItemName": "Dark Scroll for Accessory for LUK 30%",
+    "Category": "Accessory",
+    "ScrollType": "LUK",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040362,
+    "ItemName": "Scroll for Accessory for LUK 15%",
+    "Category": "Accessory",
+    "ScrollType": "LUK",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040361,
+    "ItemName": "Scroll for Accessory for LUK 10%",
+    "Category": "Accessory",
+    "ScrollType": "LUK",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040364,
+    "ItemName": "Scroll for Accessory for STR 100%",
+    "Category": "Accessory",
+    "ScrollType": "STR",
+    "ScrollPercent": 100,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040337,
+    "ItemName": "Dark Scroll for Accessory for STR 70%",
+    "Category": "Accessory",
+    "ScrollType": "STR",
+    "ScrollPercent": 70,
+    "RateMulitplier": 5,
+    "ExchangeRate": 20,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040365,
+    "ItemName": "Scroll for Accessory for STR 60%",
+    "Category": "Accessory",
+    "ScrollType": "STR",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040339,
+    "ItemName": "Dark Scroll for Accessory for STR 30%",
+    "Category": "Accessory",
+    "ScrollType": "STR",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040341,
+    "ItemName": "Scroll for Accessory for STR 15%",
+    "Category": "Accessory",
+    "ScrollType": "STR",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040340,
+    "ItemName": "Scroll for Accessory for STR 10%",
+    "Category": "Accessory",
+    "ScrollType": "STR",
+    "ScrollPercent": 10,
+    "RateMulitplier": 0.5,
+    "ExchangeRate": 200,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040600,
+    "ItemName": "Scroll for Bottomwear for Defense 100%",
+    "Category": "Bottomwear",
+    "ScrollType": "Defense",
+    "ScrollPercent": 100,
+    "RateMulitplier": 50,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 2
+  },
+  {
+    "ItemID": 2040604,
+    "ItemName": "Dark Scroll for Bottomwear for Defense 70%",
+    "Category": "Bottomwear",
+    "ScrollType": "Defense",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040601,
+    "ItemName": "Scroll for Bottomwear for Defense 60%",
+    "Category": "Bottomwear",
+    "ScrollType": "Defense",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.25,
+    "ExchangeRate": 80,
+    "ScrollVoucherReq": 80
+  },
+  {
+    "ItemID": 2040605,
+    "ItemName": "Dark Scroll for Bottomwear for Defense 30%",
+    "Category": "Bottomwear",
+    "ScrollType": "Defense",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 141
+  },
+  {
+    "ItemID": 2040616,
+    "ItemName": "Scroll for Bottomwear for Defense 15%",
+    "Category": "Bottomwear",
+    "ScrollType": "Defense",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040602,
+    "ItemName": "Scroll for Bottomwear for Defense 10%",
+    "Category": "Bottomwear",
+    "ScrollType": "Defense",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2.15,
+    "ExchangeRate": 47,
+    "ScrollVoucherReq": 47
+  },
+  {
+    "ItemID": 2040614,
+    "ItemName": "Scroll for Bottomwear for DEX 100%",
+    "Category": "Bottomwear",
+    "ScrollType": "DEX",
+    "ScrollPercent": 100,
+    "RateMulitplier": 3.87,
+    "ExchangeRate": 26,
+    "ScrollVoucherReq": 250
+  },
+  {
+    "ItemID": 2040610,
+    "ItemName": "Dark Scroll for Bottomwear for DEX 70%",
+    "Category": "Bottomwear",
+    "ScrollType": "DEX",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040613,
+    "ItemName": "Scroll for Bottomwear for DEX 60%",
+    "Category": "Bottomwear",
+    "ScrollType": "DEX",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 1000
+  },
+  {
+    "ItemID": 2040611,
+    "ItemName": "Dark Scroll for Bottomwear for DEX 30%",
+    "Category": "Bottomwear",
+    "ScrollType": "DEX",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1500
+  },
+  {
+    "ItemID": 2040615,
+    "ItemName": "Scroll for Bottomwear for DEX 15%",
+    "Category": "Bottomwear",
+    "ScrollType": "DEX",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040612,
+    "ItemName": "Scroll for Bottomwear for DEX 10%",
+    "Category": "Bottomwear",
+    "ScrollType": "DEX",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 500
+  },
+  {
+    "ItemID": 2040617,
+    "ItemName": "Scroll for Bottomwear for Mobility 100%",
+    "Category": "Bottomwear",
+    "ScrollType": "Mobility",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 50
+  },
+  {
+    "ItemID": 2040606,
+    "ItemName": "Dark Scroll for Bottomwear for Mobility 70%",
+    "Category": "Bottomwear",
+    "ScrollType": "Mobility",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040618,
+    "ItemName": "Scroll for Bottomwear for Mobility 60%",
+    "Category": "Bottomwear",
+    "ScrollType": "Mobility",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.63,
+    "ExchangeRate": 62,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040607,
+    "ItemName": "Dark Scroll for Bottomwear for Mobility 30%",
+    "Category": "Bottomwear",
+    "ScrollType": "Mobility",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 300
+  },
+  {
+    "ItemID": 2040620,
+    "ItemName": "Scroll for Bottomwear for Mobility 15%",
+    "Category": "Bottomwear",
+    "ScrollType": "Mobility",
+    "ScrollPercent": 15,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040619,
+    "ItemName": "Scroll for Bottomwear for Mobility 10%",
+    "Category": "Bottomwear",
+    "ScrollType": "Mobility",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.7,
+    "ExchangeRate": 59,
+    "ScrollVoucherReq": 100
+  },
+  {
+    "ItemID": 2044500,
+    "ItemName": "Scroll for Bow for ATT 100%",
+    "Category": "Bow",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2044504,
+    "ItemName": "Dark Scroll for Bow for ATT 70%",
+    "Category": "Bow",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044501,
+    "ItemName": "Scroll for Bow for ATT 60%",
+    "Category": "Bow",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 3.03,
+    "ExchangeRate": 33,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044505,
+    "ItemName": "Dark Scroll for Bow for ATT 30%",
+    "Category": "Bow",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044507,
+    "ItemName": "Scroll for Bow for ATT 15%",
+    "Category": "Bow",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044502,
+    "ItemName": "Scroll for Bow for ATT 10%",
+    "Category": "Bow",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.1,
+    "ExchangeRate": 91,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2041003,
+    "ItemName": "Scroll for Cape for Defense 100%",
+    "Category": "Cape",
+    "ScrollType": "Defense",
+    "ScrollPercent": 100,
+    "RateMulitplier": 50,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 2
+  },
+  {
+    "ItemID": 2041028,
+    "ItemName": "Dark Scroll for Cape for Defense 70%",
+    "Category": "Cape",
+    "ScrollType": "Defense",
+    "ScrollPercent": 70,
+    "RateMulitplier": 5.48,
+    "ExchangeRate": 19,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2041004,
+    "ItemName": "Scroll for Cape for Defense 60%",
+    "Category": "Cape",
+    "ScrollType": "Defense",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.5,
+    "ExchangeRate": 67,
+    "ScrollVoucherReq": 67
+  },
+  {
+    "ItemID": 2041029,
+    "ItemName": "Dark Scroll for Cape for Defense 30%",
+    "Category": "Cape",
+    "ScrollType": "Defense",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 201
+  },
+  {
+    "ItemID": 2041045,
+    "ItemName": "Scroll for Cape for Defense 15%",
+    "Category": "Cape",
+    "ScrollType": "Defense",
+    "ScrollPercent": 15,
+    "RateMulitplier": 5.63,
+    "ExchangeRate": 18,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2041005,
+    "ItemName": "Scroll for Cape for Defense 10%",
+    "Category": "Cape",
+    "ScrollType": "Defense",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.5,
+    "ExchangeRate": 67,
+    "ScrollVoucherReq": 67
+  },
+  {
+    "ItemID": 2041018,
+    "ItemName": "Scroll for Cape for DEX 100%",
+    "Category": "Cape",
+    "ScrollType": "DEX",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2041038,
+    "ItemName": "Dark Scroll for Cape for DEX 70%",
+    "Category": "Cape",
+    "ScrollType": "DEX",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2041019,
+    "ItemName": "Scroll for Cape for DEX 60%",
+    "Category": "Cape",
+    "ScrollType": "DEX",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.5,
+    "ExchangeRate": 67,
+    "ScrollVoucherReq": 800
+  },
+  {
+    "ItemID": 2041039,
+    "ItemName": "Dark Scroll for Cape for DEX 30%",
+    "Category": "Cape",
+    "ScrollType": "DEX",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1200
+  },
+  {
+    "ItemID": 2041055,
+    "ItemName": "Scroll for Cape for DEX 15%",
+    "Category": "Cape",
+    "ScrollType": "DEX",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2041020,
+    "ItemName": "Scroll for Cape for DEX 10%",
+    "Category": "Cape",
+    "ScrollType": "DEX",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2.5,
+    "ExchangeRate": 40,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2041015,
+    "ItemName": "Scroll for Cape for INT 100%",
+    "Category": "Cape",
+    "ScrollType": "INT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2041036,
+    "ItemName": "Dark Scroll for Cape for INT 70%",
+    "Category": "Cape",
+    "ScrollType": "INT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2041016,
+    "ItemName": "Scroll for Cape for INT 60%",
+    "Category": "Cape",
+    "ScrollType": "INT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 800
+  },
+  {
+    "ItemID": 2041037,
+    "ItemName": "Dark Scroll for Cape for INT 30%",
+    "Category": "Cape",
+    "ScrollType": "INT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1200
+  },
+  {
+    "ItemID": 2041053,
+    "ItemName": "Scroll for Cape for INT 15%",
+    "Category": "Cape",
+    "ScrollType": "INT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2041017,
+    "ItemName": "Scroll for Cape for INT 10%",
+    "Category": "Cape",
+    "ScrollType": "INT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.36,
+    "ExchangeRate": 74,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2041021,
+    "ItemName": "Scroll for Cape for LUK 100%",
+    "Category": "Cape",
+    "ScrollType": "LUK",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2041040,
+    "ItemName": "Dark Scroll for Cape for LUK 70%",
+    "Category": "Cape",
+    "ScrollType": "LUK",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2041022,
+    "ItemName": "Scroll for Cape for LUK 60%",
+    "Category": "Cape",
+    "ScrollType": "LUK",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 800
+  },
+  {
+    "ItemID": 2041041,
+    "ItemName": "Dark Scroll for Cape for LUK 30%",
+    "Category": "Cape",
+    "ScrollType": "LUK",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1200
+  },
+  {
+    "ItemID": 2041057,
+    "ItemName": "Scroll for Cape for LUK 15%",
+    "Category": "Cape",
+    "ScrollType": "LUK",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2041023,
+    "ItemName": "Scroll for Cape for LUK 10%",
+    "Category": "Cape",
+    "ScrollType": "LUK",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2041012,
+    "ItemName": "Scroll for Cape for STR 100%",
+    "Category": "Cape",
+    "ScrollType": "STR",
+    "ScrollPercent": 100,
+    "RateMulitplier": 3,
+    "ExchangeRate": 34,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2041034,
+    "ItemName": "Dark Scroll for Cape for STR 70%",
+    "Category": "Cape",
+    "ScrollType": "STR",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2041013,
+    "ItemName": "Scroll for Cape for STR 60%",
+    "Category": "Cape",
+    "ScrollType": "STR",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2.9,
+    "ExchangeRate": 35,
+    "ScrollVoucherReq": 800
+  },
+  {
+    "ItemID": 2041035,
+    "ItemName": "Dark Scroll for Cape for STR 30%",
+    "Category": "Cape",
+    "ScrollType": "STR",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1200
+  },
+  {
+    "ItemID": 2041051,
+    "ItemName": "Scroll for Cape for STR 15%",
+    "Category": "Cape",
+    "ScrollType": "STR",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2041014,
+    "ItemName": "Scroll for Cape for STR 10%",
+    "Category": "Cape",
+    "ScrollType": "STR",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044700,
+    "ItemName": "Scroll for Claw for ATT 100%",
+    "Category": "Claw",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2044704,
+    "ItemName": "Dark Scroll for Claw for ATT 70%",
+    "Category": "Claw",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044701,
+    "ItemName": "Scroll for Claw for ATT 60%",
+    "Category": "Claw",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.73,
+    "ExchangeRate": 58,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044705,
+    "ItemName": "Dark Scroll for Claw for ATT 30%",
+    "Category": "Claw",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044707,
+    "ItemName": "Scroll for Claw for ATT 15%",
+    "Category": "Claw",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044702,
+    "ItemName": "Scroll for Claw for ATT 10%",
+    "Category": "Claw",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2044600,
+    "ItemName": "Scroll for Crossbow for ATT 100%",
+    "Category": "Crossbow",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2044604,
+    "ItemName": "Dark Scroll for Crossbow for ATT 70%",
+    "Category": "Crossbow",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044601,
+    "ItemName": "Scroll for Crossbow for ATT 60%",
+    "Category": "Crossbow",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.14,
+    "ExchangeRate": 88,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044605,
+    "ItemName": "Dark Scroll for Crossbow for ATT 30%",
+    "Category": "Crossbow",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044607,
+    "ItemName": "Scroll for Crossbow for ATT 15%",
+    "Category": "Crossbow",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044602,
+    "ItemName": "Scroll for Crossbow for ATT 10%",
+    "Category": "Crossbow",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.97,
+    "ExchangeRate": 51,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2043300,
+    "ItemName": "Scroll for Dagger for ATT 100%",
+    "Category": "Dagger",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2043304,
+    "ItemName": "Dark Scroll for Dagger for ATT 70%",
+    "Category": "Dagger",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043301,
+    "ItemName": "Scroll for Dagger for ATT 60%",
+    "Category": "Dagger",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.5,
+    "ExchangeRate": 67,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2043305,
+    "ItemName": "Dark Scroll for Dagger for ATT 30%",
+    "Category": "Dagger",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2043307,
+    "ItemName": "Scroll for Dagger for ATT 15%",
+    "Category": "Dagger",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043302,
+    "ItemName": "Scroll for Dagger for ATT 10%",
+    "Category": "Dagger",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.1,
+    "ExchangeRate": 91,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040312,
+    "ItemName": "Scroll for Earring for Defense 100%",
+    "Category": "Earring",
+    "ScrollType": "Defense",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 50
+  },
+  {
+    "ItemID": 2040308,
+    "ItemName": "Dark Scroll for Earring for Defense 70%",
+    "Category": "Earring",
+    "ScrollType": "Defense",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040311,
+    "ItemName": "Scroll for Earring for Defense 60%",
+    "Category": "Earring",
+    "ScrollType": "Defense",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 50
+  },
+  {
+    "ItemID": 2040309,
+    "ItemName": "Dark Scroll for Earring for Defense 30%",
+    "Category": "Earring",
+    "ScrollType": "Defense",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 300
+  },
+  {
+    "ItemID": 2040313,
+    "ItemName": "Scroll for Earring for Defense 15%",
+    "Category": "Earring",
+    "ScrollType": "Defense",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040310,
+    "ItemName": "Scroll for Earring for Defense 10%",
+    "Category": "Earring",
+    "ScrollType": "Defense",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 100
+  },
+  {
+    "ItemID": 2040316,
+    "ItemName": "Scroll for Earring for DEX 100%",
+    "Category": "Earring",
+    "ScrollType": "DEX",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 250
+  },
+  {
+    "ItemID": 2040306,
+    "ItemName": "Dark Scroll for Earring for DEX 70%",
+    "Category": "Earring",
+    "ScrollType": "DEX",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040317,
+    "ItemName": "Scroll for Earring for DEX 60%",
+    "Category": "Earring",
+    "ScrollType": "DEX",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.7,
+    "ExchangeRate": 59,
+    "ScrollVoucherReq": 1000
+  },
+  {
+    "ItemID": 2040307,
+    "ItemName": "Dark Scroll for Earring for DEX 30%",
+    "Category": "Earring",
+    "ScrollType": "DEX",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1500
+  },
+  {
+    "ItemID": 2040336,
+    "ItemName": "Scroll for Earring for DEX 15%",
+    "Category": "Earring",
+    "ScrollType": "DEX",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040318,
+    "ItemName": "Scroll for Earring for DEX 10%",
+    "Category": "Earring",
+    "ScrollType": "DEX",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2.75,
+    "ExchangeRate": 37,
+    "ScrollVoucherReq": 500
+  },
+  {
+    "ItemID": 2040300,
+    "ItemName": "Scroll for Earring for INT 100%",
+    "Category": "Earring",
+    "ScrollType": "INT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 50,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 2
+  },
+  {
+    "ItemID": 2040304,
+    "ItemName": "Dark Scroll for Earring for INT 70%",
+    "Category": "Earring",
+    "ScrollType": "INT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040301,
+    "ItemName": "Scroll for Earring for INT 60%",
+    "Category": "Earring",
+    "ScrollType": "INT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.59,
+    "ExchangeRate": 63,
+    "ScrollVoucherReq": 1000
+  },
+  {
+    "ItemID": 2040305,
+    "ItemName": "Dark Scroll for Earring for INT 30%",
+    "Category": "Earring",
+    "ScrollType": "INT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1500
+  },
+  {
+    "ItemID": 2040314,
+    "ItemName": "Scroll for Earring for INT 15%",
+    "Category": "Earring",
+    "ScrollType": "INT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040302,
+    "ItemName": "Scroll for Earring for INT 10%",
+    "Category": "Earring",
+    "ScrollType": "INT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2.17,
+    "ExchangeRate": 47,
+    "ScrollVoucherReq": 500
+  },
+  {
+    "ItemID": 2040319,
+    "ItemName": "Scroll for Earring for LUK 100%",
+    "Category": "Earring",
+    "ScrollType": "LUK",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 250
+  },
+  {
+    "ItemID": 2040320,
+    "ItemName": "Dark Scroll for Earring for LUK 70%",
+    "Category": "Earring",
+    "ScrollType": "LUK",
+    "ScrollPercent": 70,
+    "RateMulitplier": 5,
+    "ExchangeRate": 20,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040321,
+    "ItemName": "Scroll for Earring for LUK 60%",
+    "Category": "Earring",
+    "ScrollType": "LUK",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.5,
+    "ExchangeRate": 67,
+    "ScrollVoucherReq": 1000
+  },
+  {
+    "ItemID": 2040322,
+    "ItemName": "Dark Scroll for Earring for LUK 30%",
+    "Category": "Earring",
+    "ScrollType": "LUK",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1500
+  },
+  {
+    "ItemID": 2040338,
+    "ItemName": "Scroll for Earring for LUK 15%",
+    "Category": "Earring",
+    "ScrollType": "LUK",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040323,
+    "ItemName": "Scroll for Earring for LUK 10%",
+    "Category": "Earring",
+    "ScrollType": "LUK",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.5,
+    "ExchangeRate": 67,
+    "ScrollVoucherReq": 500
+  },
+  {
+    "ItemID": 2040328,
+    "ItemName": "Scroll for Earring for STR 100%",
+    "Category": "Earring",
+    "ScrollType": "STR",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 250
+  },
+  {
+    "ItemID": 2040329,
+    "ItemName": "Dark Scroll for Earring for STR 70%",
+    "Category": "Earring",
+    "ScrollType": "STR",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040330,
+    "ItemName": "Scroll for Earring for STR 60%",
+    "Category": "Earring",
+    "ScrollType": "STR",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.25,
+    "ExchangeRate": 80,
+    "ScrollVoucherReq": 1000
+  },
+  {
+    "ItemID": 2040331,
+    "ItemName": "Dark Scroll for Earring for STR 30%",
+    "Category": "Earring",
+    "ScrollType": "STR",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1500
+  },
+  {
+    "ItemID": 2040333,
+    "ItemName": "Scroll for Earring for STR 15%",
+    "Category": "Earring",
+    "ScrollType": "STR",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040332,
+    "ItemName": "Scroll for Earring for STR 10%",
+    "Category": "Earring",
+    "ScrollType": "STR",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 500
+  },
+  {
+    "ItemID": 2040800,
+    "ItemName": "Scroll for Gloves for Accuracy 100%",
+    "Category": "Gloves",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 100,
+    "RateMulitplier": 50,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 2
+  },
+  {
+    "ItemID": 2040808,
+    "ItemName": "Dark Scroll for Gloves for Accuracy 70%",
+    "Category": "Gloves",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040801,
+    "ItemName": "Scroll for Gloves for Accuracy 60%",
+    "Category": "Gloves",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.78,
+    "ExchangeRate": 57,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2040809,
+    "ItemName": "Dark Scroll for Gloves for Accuracy 30%",
+    "Category": "Gloves",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2040829,
+    "ItemName": "Scroll for Gloves for Accuracy 15%",
+    "Category": "Gloves",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040802,
+    "ItemName": "Scroll for Gloves for Accuracy 10%",
+    "Category": "Gloves",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.7,
+    "ExchangeRate": 59,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040803,
+    "ItemName": "Scroll for Gloves for ATT 100%",
+    "Category": "Gloves",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040810,
+    "ItemName": "Dark Scroll for Gloves for ATT 70%",
+    "Category": "Gloves",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040804,
+    "ItemName": "Scroll for Gloves for ATT 60%",
+    "Category": "Gloves",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2.01,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 800
+  },
+  {
+    "ItemID": 2040811,
+    "ItemName": "Dark Scroll for Gloves for ATT 30%",
+    "Category": "Gloves",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1200
+  },
+  {
+    "ItemID": 2040822,
+    "ItemName": "Scroll for Gloves for ATT 15%",
+    "Category": "Gloves",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040805,
+    "ItemName": "Scroll for Gloves for ATT 10%",
+    "Category": "Gloves",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2.3,
+    "ExchangeRate": 44,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2040823,
+    "ItemName": "Scroll for Gloves for Defense 100%",
+    "Category": "Gloves",
+    "ScrollType": "Defense",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 50
+  },
+  {
+    "ItemID": 2040812,
+    "ItemName": "Dark Scroll for Gloves for Defense 70%",
+    "Category": "Gloves",
+    "ScrollType": "Defense",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040824,
+    "ItemName": "Scroll for Gloves for Defense 60%",
+    "Category": "Gloves",
+    "ScrollType": "Defense",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 50
+  },
+  {
+    "ItemID": 2040813,
+    "ItemName": "Dark Scroll for Gloves for Defense 30%",
+    "Category": "Gloves",
+    "ScrollType": "Defense",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 201
+  },
+  {
+    "ItemID": 2040826,
+    "ItemName": "Scroll for Gloves for Defense 15%",
+    "Category": "Gloves",
+    "ScrollType": "Defense",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040825,
+    "ItemName": "Scroll for Gloves for Defense 10%",
+    "Category": "Gloves",
+    "ScrollType": "Defense",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.5,
+    "ExchangeRate": 67,
+    "ScrollVoucherReq": 67
+  },
+  {
+    "ItemID": 2040818,
+    "ItemName": "Scroll for Gloves for Magic ATT 100%",
+    "Category": "Gloves",
+    "ScrollType": "Magic",
+    "ScrollPercent": 100,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040814,
+    "ItemName": "Dark Scroll for Gloves for Magic ATT 70%",
+    "Category": "Gloves",
+    "ScrollType": "Magic",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040817,
+    "ItemName": "Scroll for Gloves for Magic ATT 60%",
+    "Category": "Gloves",
+    "ScrollType": "Magic",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 800
+  },
+  {
+    "ItemID": 2040815,
+    "ItemName": "Dark Scroll for Gloves for Magic ATT 30%",
+    "Category": "Gloves",
+    "ScrollType": "Magic",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1200
+  },
+  {
+    "ItemID": 2040820,
+    "ItemName": "Scroll for Gloves for Magic ATT 15%",
+    "Category": "Gloves",
+    "ScrollType": "Magic",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040816,
+    "ItemName": "Scroll for Gloves for Magic ATT 10%",
+    "Category": "Gloves",
+    "ScrollType": "Magic",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044900,
+    "ItemName": "Scroll for Gun for ATT 100%",
+    "Category": "Gun",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2044903,
+    "ItemName": "Dark Scroll for Gun for ATT 70%",
+    "Category": "Gun",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044901,
+    "ItemName": "Scroll for Gun for ATT 60%",
+    "Category": "Gun",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.67,
+    "ExchangeRate": 60,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044904,
+    "ItemName": "Dark Scroll for Gun for ATT 30%",
+    "Category": "Gun",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 5.83,
+    "ExchangeRate": 18,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044905,
+    "ItemName": "Scroll for Gun for ATT 15%",
+    "Category": "Gun",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044902,
+    "ItemName": "Scroll for Gun for ATT 10%",
+    "Category": "Gun",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2.85,
+    "ExchangeRate": 36,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040018,
+    "ItemName": "Scroll for Helmet for Accuracy 100%",
+    "Category": "Helmet",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 100,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 250
+  },
+  {
+    "ItemID": 2040014,
+    "ItemName": "Dark Scroll for Helmet for Accuracy 70%",
+    "Category": "Helmet",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040017,
+    "ItemName": "Scroll for Helmet for Accuracy 60%",
+    "Category": "Helmet",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 1000
+  },
+  {
+    "ItemID": 2040015,
+    "ItemName": "Dark Scroll for Helmet for Accuracy 30%",
+    "Category": "Helmet",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1500
+  },
+  {
+    "ItemID": 2040034,
+    "ItemName": "Scroll for Helmet for Accuracy 15%",
+    "Category": "Helmet",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040016,
+    "ItemName": "Scroll for Helmet for Accuracy 10%",
+    "Category": "Helmet",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 500
+  },
+  {
+    "ItemID": 2040000,
+    "ItemName": "Scroll for Helmet for Defense 100%",
+    "Category": "Helmet",
+    "ScrollType": "Defense",
+    "ScrollPercent": 100,
+    "RateMulitplier": 50,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 2
+  },
+  {
+    "ItemID": 2040008,
+    "ItemName": "Dark Scroll for Helmet for Defense 70%",
+    "Category": "Helmet",
+    "ScrollType": "Defense",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040001,
+    "ItemName": "Scroll for Helmet for Defense 60%",
+    "Category": "Helmet",
+    "ScrollType": "Defense",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2.3,
+    "ExchangeRate": 44,
+    "ScrollVoucherReq": 44
+  },
+  {
+    "ItemID": 2040009,
+    "ItemName": "Dark Scroll for Helmet for Defense 30%",
+    "Category": "Helmet",
+    "ScrollType": "Defense",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 273
+  },
+  {
+    "ItemID": 2040020,
+    "ItemName": "Scroll for Helmet for Defense 15%",
+    "Category": "Helmet",
+    "ScrollType": "Defense",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040002,
+    "ItemName": "Scroll for Helmet for Defense 10%",
+    "Category": "Helmet",
+    "ScrollType": "Defense",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.1,
+    "ExchangeRate": 91,
+    "ScrollVoucherReq": 91
+  },
+  {
+    "ItemID": 2040027,
+    "ItemName": "Scroll for Helmet for DEX 100%",
+    "Category": "Helmet",
+    "ScrollType": "DEX",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040028,
+    "ItemName": "Dark Scroll for Helmet for DEX 70%",
+    "Category": "Helmet",
+    "ScrollType": "DEX",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040029,
+    "ItemName": "Scroll for Helmet for DEX 60%",
+    "Category": "Helmet",
+    "ScrollType": "DEX",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.7,
+    "ExchangeRate": 59,
+    "ScrollVoucherReq": 800
+  },
+  {
+    "ItemID": 2040030,
+    "ItemName": "Dark Scroll for Helmet for DEX 30%",
+    "Category": "Helmet",
+    "ScrollType": "DEX",
+    "ScrollPercent": 30,
+    "RateMulitplier": 6.67,
+    "ExchangeRate": 15,
+    "ScrollVoucherReq": 1200
+  },
+  {
+    "ItemID": 2040044,
+    "ItemName": "Scroll for Helmet for DEX 15%",
+    "Category": "Helmet",
+    "ScrollType": "DEX",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040031,
+    "ItemName": "Scroll for Helmet for DEX 10%",
+    "Category": "Helmet",
+    "ScrollType": "DEX",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.7,
+    "ExchangeRate": 59,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2040024,
+    "ItemName": "Scroll for Helmet for INT 100%",
+    "Category": "Helmet",
+    "ScrollType": "INT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 1.7,
+    "ExchangeRate": 59,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040012,
+    "ItemName": "Dark Scroll for Helmet for INT 70%",
+    "Category": "Helmet",
+    "ScrollType": "INT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040025,
+    "ItemName": "Scroll for Helmet for INT 60%",
+    "Category": "Helmet",
+    "ScrollType": "INT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 800
+  },
+  {
+    "ItemID": 2040013,
+    "ItemName": "Dark Scroll for Helmet for INT 30%",
+    "Category": "Helmet",
+    "ScrollType": "INT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1200
+  },
+  {
+    "ItemID": 2040036,
+    "ItemName": "Scroll for Helmet for INT 15%",
+    "Category": "Helmet",
+    "ScrollType": "INT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040026,
+    "ItemName": "Scroll for Helmet for INT 10%",
+    "Category": "Helmet",
+    "ScrollType": "INT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2.38,
+    "ExchangeRate": 43,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044805,
+    "ItemName": "Scroll for Knuckler for Accuracy 100%",
+    "Category": "Knuckler",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 100
+  },
+  {
+    "ItemID": 2044806,
+    "ItemName": "Dark Scroll for Knuckler for Accuracy 70%",
+    "Category": "Knuckler",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044807,
+    "ItemName": "Scroll for Knuckler for Accuracy 60%",
+    "Category": "Knuckler",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.25,
+    "ExchangeRate": 80,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044808,
+    "ItemName": "Dark Scroll for Knuckler for Accuracy 30%",
+    "Category": "Knuckler",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044810,
+    "ItemName": "Scroll for Knuckler for Accuracy 15%",
+    "Category": "Knuckler",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044809,
+    "ItemName": "Scroll for Knuckler for Accuracy 10%",
+    "Category": "Knuckler",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2044800,
+    "ItemName": "Scroll for Knuckler for ATT 100%",
+    "Category": "Knuckler",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2044803,
+    "ItemName": "Dark Scroll for Knuckler for ATT 70%",
+    "Category": "Knuckler",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 6.11,
+    "ExchangeRate": 17,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044801,
+    "ItemName": "Scroll for Knuckler for ATT 60%",
+    "Category": "Knuckler",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.25,
+    "ExchangeRate": 80,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044804,
+    "ItemName": "Dark Scroll for Knuckler for ATT 30%",
+    "Category": "Knuckler",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 6.67,
+    "ExchangeRate": 15,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044812,
+    "ItemName": "Scroll for Knuckler for ATT 15%",
+    "Category": "Knuckler",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044802,
+    "ItemName": "Scroll for Knuckler for ATT 10%",
+    "Category": "Knuckler",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2.02,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2043110,
+    "ItemName": "Scroll for One-Handed Axe for Accuracy 100%",
+    "Category": "One-Handed Axe",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 100
+  },
+  {
+    "ItemID": 2043111,
+    "ItemName": "Dark Scroll for One-Handed Axe for Accuracy 70%",
+    "Category": "One-Handed Axe",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043112,
+    "ItemName": "Scroll for One-Handed Axe for Accuracy 60%",
+    "Category": "One-Handed Axe",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2043113,
+    "ItemName": "Dark Scroll for One-Handed Axe for Accuracy 30%",
+    "Category": "One-Handed Axe",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2043115,
+    "ItemName": "Scroll for One-Handed Axe for Accuracy 15%",
+    "Category": "One-Handed Axe",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043114,
+    "ItemName": "Scroll for One-Handed Axe for Accuracy 10%",
+    "Category": "One-Handed Axe",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.5,
+    "ExchangeRate": 67,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2043100,
+    "ItemName": "Scroll for One-Handed Axe for ATT 100%",
+    "Category": "One-Handed Axe",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2043104,
+    "ItemName": "Dark Scroll for One-Handed Axe for ATT 70%",
+    "Category": "One-Handed Axe",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043101,
+    "ItemName": "Scroll for One-Handed Axe for ATT 60%",
+    "Category": "One-Handed Axe",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 0.8,
+    "ExchangeRate": 125,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2043105,
+    "ItemName": "Dark Scroll for One-Handed Axe for ATT 30%",
+    "Category": "One-Handed Axe",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2043107,
+    "ItemName": "Scroll for One-Handed Axe for ATT 15%",
+    "Category": "One-Handed Axe",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043102,
+    "ItemName": "Scroll for One-Handed Axe for ATT 10%",
+    "Category": "One-Handed Axe",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2.9,
+    "ExchangeRate": 35,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2043210,
+    "ItemName": "Scroll for One-Handed BW for Accuracy 100%",
+    "Category": "One-Handed BW",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 100,
+    "RateMulitplier": 1.7,
+    "ExchangeRate": 59,
+    "ScrollVoucherReq": 100
+  },
+  {
+    "ItemID": 2043211,
+    "ItemName": "Dark Scroll for One-Handed BW for Accuracy 70%",
+    "Category": "One-Handed BW",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043212,
+    "ItemName": "Scroll for One-Handed BW for Accuracy 60%",
+    "Category": "One-Handed BW",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.5,
+    "ExchangeRate": 67,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2043213,
+    "ItemName": "Dark Scroll for One-Handed BW for Accuracy 30%",
+    "Category": "One-Handed BW",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2043215,
+    "ItemName": "Scroll for One-Handed BW for Accuracy 15%",
+    "Category": "One-Handed BW",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043214,
+    "ItemName": "Scroll for One-Handed BW for Accuracy 10%",
+    "Category": "One-Handed BW",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.5,
+    "ExchangeRate": 67,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2043200,
+    "ItemName": "Scroll for One-Handed BW for ATT 100%",
+    "Category": "One-Handed BW",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2043204,
+    "ItemName": "Dark Scroll for One-Handed BW for ATT 70%",
+    "Category": "One-Handed BW",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043201,
+    "ItemName": "Scroll for One-Handed BW for ATT 60%",
+    "Category": "One-Handed BW",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2.49,
+    "ExchangeRate": 41,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2043205,
+    "ItemName": "Dark Scroll for One-Handed BW for ATT 30%",
+    "Category": "One-Handed BW",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2043207,
+    "ItemName": "Scroll for One-Handed BW for ATT 15%",
+    "Category": "One-Handed BW",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043202,
+    "ItemName": "Scroll for One-Handed BW for ATT 10%",
+    "Category": "One-Handed BW",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2.3,
+    "ExchangeRate": 44,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2043015,
+    "ItemName": "Scroll for One-Handed Sword for Accuracy 100%",
+    "Category": "One-Handed Sword",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 100
+  },
+  {
+    "ItemID": 2043016,
+    "ItemName": "Dark Scroll for One-Handed Sword for Accuracy 70%",
+    "Category": "One-Handed Sword",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043017,
+    "ItemName": "Scroll for One-Handed Sword for Accuracy 60%",
+    "Category": "One-Handed Sword",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.63,
+    "ExchangeRate": 62,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2043018,
+    "ItemName": "Dark Scroll for One-Handed Sword for Accuracy 30%",
+    "Category": "One-Handed Sword",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2043020,
+    "ItemName": "Scroll for One-Handed Sword for Accuracy 15%",
+    "Category": "One-Handed Sword",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043019,
+    "ItemName": "Scroll for One-Handed Sword for Accuracy 10%",
+    "Category": "One-Handed Sword",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.5,
+    "ExchangeRate": 67,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2043000,
+    "ItemName": "Scroll for One-Handed Sword for ATT 100%",
+    "Category": "One-Handed Sword",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2043004,
+    "ItemName": "Dark Scroll for One-Handed Sword for ATT 70%",
+    "Category": "One-Handed Sword",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043001,
+    "ItemName": "Scroll for One-Handed Sword for ATT 60%",
+    "Category": "One-Handed Sword",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2.6,
+    "ExchangeRate": 39,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2043005,
+    "ItemName": "Dark Scroll for One-Handed Sword for ATT 30%",
+    "Category": "One-Handed Sword",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2043012,
+    "ItemName": "Scroll for One-Handed Sword for ATT 15%",
+    "Category": "One-Handed Sword",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043002,
+    "ItemName": "Scroll for One-Handed Sword for ATT 10%",
+    "Category": "One-Handed Sword",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.63,
+    "ExchangeRate": 62,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040503,
+    "ItemName": "Scroll for Overall Armor for Defense 100%",
+    "Category": "Overall Armor",
+    "ScrollType": "Defense",
+    "ScrollPercent": 100,
+    "RateMulitplier": 50,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 2
+  },
+  {
+    "ItemID": 2040510,
+    "ItemName": "Dark Scroll for Overall Armor for Defense 70%",
+    "Category": "Overall Armor",
+    "ScrollType": "Defense",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040504,
+    "ItemName": "Scroll for Overall Armor for Defense 60%",
+    "Category": "Overall Armor",
+    "ScrollType": "Defense",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 50
+  },
+  {
+    "ItemID": 2040511,
+    "ItemName": "Dark Scroll for Overall Armor for Defense 30%",
+    "Category": "Overall Armor",
+    "ScrollType": "Defense",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 111
+  },
+  {
+    "ItemID": 2040525,
+    "ItemName": "Scroll for Overall Armor for Defense 15%",
+    "Category": "Overall Armor",
+    "ScrollType": "Defense",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040505,
+    "ItemName": "Scroll for Overall Armor for Defense 10%",
+    "Category": "Overall Armor",
+    "ScrollType": "Defense",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2.75,
+    "ExchangeRate": 37,
+    "ScrollVoucherReq": 37
+  },
+  {
+    "ItemID": 2040500,
+    "ItemName": "Scroll for Overall Armor for DEX 100%",
+    "Category": "Overall Armor",
+    "ScrollType": "DEX",
+    "ScrollPercent": 100,
+    "RateMulitplier": 50,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 2
+  },
+  {
+    "ItemID": 2040508,
+    "ItemName": "Dark Scroll for Overall Armor for DEX 70%",
+    "Category": "Overall Armor",
+    "ScrollType": "DEX",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040501,
+    "ItemName": "Scroll for Overall Armor for DEX 60%",
+    "Category": "Overall Armor",
+    "ScrollType": "DEX",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.5,
+    "ExchangeRate": 67,
+    "ScrollVoucherReq": 800
+  },
+  {
+    "ItemID": 2040509,
+    "ItemName": "Dark Scroll for Overall Armor for DEX 30%",
+    "Category": "Overall Armor",
+    "ScrollType": "DEX",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1200
+  },
+  {
+    "ItemID": 2040523,
+    "ItemName": "Scroll for Overall Armor for DEX 15%",
+    "Category": "Overall Armor",
+    "ScrollType": "DEX",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040502,
+    "ItemName": "Scroll for Overall Armor for DEX 10%",
+    "Category": "Overall Armor",
+    "ScrollType": "DEX",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.36,
+    "ExchangeRate": 74,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2040512,
+    "ItemName": "Scroll for Overall Armor for INT 100%",
+    "Category": "Overall Armor",
+    "ScrollType": "INT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040518,
+    "ItemName": "Dark Scroll for Overall Armor for INT 70%",
+    "Category": "Overall Armor",
+    "ScrollType": "INT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040513,
+    "ItemName": "Scroll for Overall Armor for INT 60%",
+    "Category": "Overall Armor",
+    "ScrollType": "INT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 3.56,
+    "ExchangeRate": 29,
+    "ScrollVoucherReq": 800
+  },
+  {
+    "ItemID": 2040519,
+    "ItemName": "Dark Scroll for Overall Armor for INT 30%",
+    "Category": "Overall Armor",
+    "ScrollType": "INT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1200
+  },
+  {
+    "ItemID": 2040527,
+    "ItemName": "Scroll for Overall Armor for INT 15%",
+    "Category": "Overall Armor",
+    "ScrollType": "INT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040514,
+    "ItemName": "Scroll for Overall Armor for INT 10%",
+    "Category": "Overall Armor",
+    "ScrollType": "INT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 0.5,
+    "ExchangeRate": 200,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2040515,
+    "ItemName": "Scroll for Overall Armor for LUK 100%",
+    "Category": "Overall Armor",
+    "ScrollType": "LUK",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040520,
+    "ItemName": "Dark Scroll for Overall Armor for LUK 70%",
+    "Category": "Overall Armor",
+    "ScrollType": "LUK",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040516,
+    "ItemName": "Scroll for Overall Armor for LUK 60%",
+    "Category": "Overall Armor",
+    "ScrollType": "LUK",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2.45,
+    "ExchangeRate": 41,
+    "ScrollVoucherReq": 800
+  },
+  {
+    "ItemID": 2040521,
+    "ItemName": "Dark Scroll for Overall Armor for LUK 30%",
+    "Category": "Overall Armor",
+    "ScrollType": "LUK",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1200
+  },
+  {
+    "ItemID": 2040529,
+    "ItemName": "Scroll for Overall Armor for LUK 15%",
+    "Category": "Overall Armor",
+    "ScrollType": "LUK",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040517,
+    "ItemName": "Scroll for Overall Armor for LUK 10%",
+    "Category": "Overall Armor",
+    "ScrollType": "LUK",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2040530,
+    "ItemName": "Scroll for Overall Armor for STR 100%",
+    "Category": "Overall Armor",
+    "ScrollType": "STR",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040531,
+    "ItemName": "Dark Scroll for Overall Armor for STR 70%",
+    "Category": "Overall Armor",
+    "ScrollType": "STR",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040532,
+    "ItemName": "Scroll for Overall Armor for STR 60%",
+    "Category": "Overall Armor",
+    "ScrollType": "STR",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 800
+  },
+  {
+    "ItemID": 2040533,
+    "ItemName": "Dark Scroll for Overall Armor for STR 30%",
+    "Category": "Overall Armor",
+    "ScrollType": "STR",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1200
+  },
+  {
+    "ItemID": 2040541,
+    "ItemName": "Scroll for Overall Armor for STR 15%",
+    "Category": "Overall Armor",
+    "ScrollType": "STR",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040534,
+    "ItemName": "Scroll for Overall Armor for STR 10%",
+    "Category": "Overall Armor",
+    "ScrollType": "STR",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044410,
+    "ItemName": "Scroll for Pole Arm for Accuracy 100%",
+    "Category": "Pole Arm",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 100,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 100
+  },
+  {
+    "ItemID": 2044411,
+    "ItemName": "Dark Scroll for Pole Arm for Accuracy 70%",
+    "Category": "Pole Arm",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044412,
+    "ItemName": "Scroll for Pole Arm for Accuracy 60%",
+    "Category": "Pole Arm",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.5,
+    "ExchangeRate": 67,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044413,
+    "ItemName": "Dark Scroll for Pole Arm for Accuracy 30%",
+    "Category": "Pole Arm",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044415,
+    "ItemName": "Scroll for Pole Arm for Accuracy 15%",
+    "Category": "Pole Arm",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044414,
+    "ItemName": "Scroll for Pole Arm for Accuracy 10%",
+    "Category": "Pole Arm",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.75,
+    "ExchangeRate": 58,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2044400,
+    "ItemName": "Scroll for Pole Arm for ATT 100%",
+    "Category": "Pole Arm",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2044404,
+    "ItemName": "Dark Scroll for Pole Arm for ATT 70%",
+    "Category": "Pole Arm",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044401,
+    "ItemName": "Scroll for Pole Arm for ATT 60%",
+    "Category": "Pole Arm",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.44,
+    "ExchangeRate": 70,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044405,
+    "ItemName": "Dark Scroll for Pole Arm for ATT 30%",
+    "Category": "Pole Arm",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044407,
+    "ItemName": "Scroll for Pole Arm for ATT 15%",
+    "Category": "Pole Arm",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044402,
+    "ItemName": "Scroll for Pole Arm for ATT 10%",
+    "Category": "Pole Arm",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040928,
+    "ItemName": "Scroll for Shield for ATT 100%",
+    "Category": "Shield",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 1.43,
+    "ExchangeRate": 70,
+    "ScrollVoucherReq": 250
+  },
+  {
+    "ItemID": 2040916,
+    "ItemName": "Dark Scroll for Shield for ATT 70%",
+    "Category": "Shield",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040914,
+    "ItemName": "Scroll for Shield for ATT 60%",
+    "Category": "Shield",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 0.5,
+    "ExchangeRate": 200,
+    "ScrollVoucherReq": 1000
+  },
+  {
+    "ItemID": 2040917,
+    "ItemName": "Dark Scroll for Shield for ATT 30%",
+    "Category": "Shield",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1500
+  },
+  {
+    "ItemID": 2040934,
+    "ItemName": "Scroll for Shield for ATT 15%",
+    "Category": "Shield",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040915,
+    "ItemName": "Scroll for Shield for ATT 10%",
+    "Category": "Shield",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 500
+  },
+  {
+    "ItemID": 2040900,
+    "ItemName": "Scroll for Shield for Defense 100%",
+    "Category": "Shield",
+    "ScrollType": "Defense",
+    "ScrollPercent": 100,
+    "RateMulitplier": 50,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 2
+  },
+  {
+    "ItemID": 2040904,
+    "ItemName": "Dark Scroll for Shield for Defense 70%",
+    "Category": "Shield",
+    "ScrollType": "Defense",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040901,
+    "ItemName": "Scroll for Shield for Defense 60%",
+    "Category": "Shield",
+    "ScrollType": "Defense",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2.02,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 50
+  },
+  {
+    "ItemID": 2040905,
+    "ItemName": "Dark Scroll for Shield for Defense 30%",
+    "Category": "Shield",
+    "ScrollType": "Defense",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 150
+  },
+  {
+    "ItemID": 2040911,
+    "ItemName": "Scroll for Shield for Defense 15%",
+    "Category": "Shield",
+    "ScrollType": "Defense",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040902,
+    "ItemName": "Scroll for Shield for Defense 10%",
+    "Category": "Shield",
+    "ScrollType": "Defense",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 50
+  },
+  {
+    "ItemID": 2040923,
+    "ItemName": "Scroll for Shield for LUK 100%",
+    "Category": "Shield",
+    "ScrollType": "LUK",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 100
+  },
+  {
+    "ItemID": 2040906,
+    "ItemName": "Dark Scroll for Shield for LUK 70%",
+    "Category": "Shield",
+    "ScrollType": "LUK",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040924,
+    "ItemName": "Scroll for Shield for LUK 60%",
+    "Category": "Shield",
+    "ScrollType": "LUK",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2040907,
+    "ItemName": "Dark Scroll for Shield for LUK 30%",
+    "Category": "Shield",
+    "ScrollType": "LUK",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2040938,
+    "ItemName": "Scroll for Shield for LUK 15%",
+    "Category": "Shield",
+    "ScrollType": "LUK",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040925,
+    "ItemName": "Scroll for Shield for LUK 10%",
+    "Category": "Shield",
+    "ScrollType": "LUK",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2.9,
+    "ExchangeRate": 35,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040918,
+    "ItemName": "Scroll for Shield for Magic ATT 100%",
+    "Category": "Shield",
+    "ScrollType": "Magic",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 250
+  },
+  {
+    "ItemID": 2040921,
+    "ItemName": "Dark Scroll for Shield for Magic ATT 70%",
+    "Category": "Shield",
+    "ScrollType": "Magic",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040919,
+    "ItemName": "Scroll for Shield for Magic ATT 60%",
+    "Category": "Shield",
+    "ScrollType": "Magic",
+    "ScrollPercent": 60,
+    "RateMulitplier": 0.5,
+    "ExchangeRate": 200,
+    "ScrollVoucherReq": 1000
+  },
+  {
+    "ItemID": 2040922,
+    "ItemName": "Dark Scroll for Shield for Magic ATT 30%",
+    "Category": "Shield",
+    "ScrollType": "Magic",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1500
+  },
+  {
+    "ItemID": 2040926,
+    "ItemName": "Scroll for Shield for Magic ATT 15%",
+    "Category": "Shield",
+    "ScrollType": "Magic",
+    "ScrollPercent": 15,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040920,
+    "ItemName": "Scroll for Shield for Magic ATT 10%",
+    "Category": "Shield",
+    "ScrollType": "Magic",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 500
+  },
+  {
+    "ItemID": 2040929,
+    "ItemName": "Scroll for Shield for STR 100%",
+    "Category": "Shield",
+    "ScrollType": "STR",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 100
+  },
+  {
+    "ItemID": 2040930,
+    "ItemName": "Dark Scroll for Shield for STR 70%",
+    "Category": "Shield",
+    "ScrollType": "STR",
+    "ScrollPercent": 70,
+    "RateMulitplier": 6.67,
+    "ExchangeRate": 15,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040931,
+    "ItemName": "Scroll for Shield for STR 60%",
+    "Category": "Shield",
+    "ScrollType": "STR",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.5,
+    "ExchangeRate": 67,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2040932,
+    "ItemName": "Dark Scroll for Shield for STR 30%",
+    "Category": "Shield",
+    "ScrollType": "STR",
+    "ScrollPercent": 30,
+    "RateMulitplier": 6.67,
+    "ExchangeRate": 15,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2040942,
+    "ItemName": "Scroll for Shield for STR 15%",
+    "Category": "Shield",
+    "ScrollType": "STR",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040933,
+    "ItemName": "Scroll for Shield for STR 10%",
+    "Category": "Shield",
+    "ScrollType": "STR",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.63,
+    "ExchangeRate": 62,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040700,
+    "ItemName": "Scroll for Shoes for Avoidability 100%",
+    "Category": "Shoes",
+    "ScrollType": "Avoidability",
+    "ScrollPercent": 100,
+    "RateMulitplier": 50,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 2
+  },
+  {
+    "ItemID": 2040712,
+    "ItemName": "Dark Scroll for Shoes for Avoidability 70%",
+    "Category": "Shoes",
+    "ScrollType": "Avoidability",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040701,
+    "ItemName": "Scroll for Shoes for Avoidability 60%",
+    "Category": "Shoes",
+    "ScrollType": "Avoidability",
+    "ScrollPercent": 60,
+    "RateMulitplier": 0.88,
+    "ExchangeRate": 115,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2040713,
+    "ItemName": "Dark Scroll for Shoes for Avoidability 30%",
+    "Category": "Shoes",
+    "ScrollType": "Avoidability",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2040719,
+    "ItemName": "Scroll for Shoes for Avoidability 15%",
+    "Category": "Shoes",
+    "ScrollType": "Avoidability",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040702,
+    "ItemName": "Scroll for Shoes for Avoidability 10%",
+    "Category": "Shoes",
+    "ScrollType": "Avoidability",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.25,
+    "ExchangeRate": 80,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040703,
+    "ItemName": "Scroll for Shoes for Jump 100%",
+    "Category": "Shoes",
+    "ScrollType": "Jump",
+    "ScrollPercent": 100,
+    "RateMulitplier": 50,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 2
+  },
+  {
+    "ItemID": 2040714,
+    "ItemName": "Dark Scroll for Shoes for Jump 70%",
+    "Category": "Shoes",
+    "ScrollType": "Jump",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040704,
+    "ItemName": "Scroll for Shoes for Jump 60%",
+    "Category": "Shoes",
+    "ScrollType": "Jump",
+    "ScrollPercent": 60,
+    "RateMulitplier": 3.17,
+    "ExchangeRate": 32,
+    "ScrollVoucherReq": 800
+  },
+  {
+    "ItemID": 2040715,
+    "ItemName": "Dark Scroll for Shoes for Jump 30%",
+    "Category": "Shoes",
+    "ScrollType": "Jump",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1200
+  },
+  {
+    "ItemID": 2040721,
+    "ItemName": "Scroll for Shoes for Jump 15%",
+    "Category": "Shoes",
+    "ScrollType": "Jump",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040705,
+    "ItemName": "Scroll for Shoes for Jump 10%",
+    "Category": "Shoes",
+    "ScrollType": "Jump",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2.21,
+    "ExchangeRate": 46,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2040706,
+    "ItemName": "Scroll for Shoes for Mobility 100%",
+    "Category": "Shoes",
+    "ScrollType": "Mobility",
+    "ScrollPercent": 100,
+    "RateMulitplier": 50,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 2
+  },
+  {
+    "ItemID": 2040716,
+    "ItemName": "Dark Scroll for Shoes for Mobility 70%",
+    "Category": "Shoes",
+    "ScrollType": "Mobility",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040707,
+    "ItemName": "Scroll for Shoes for Mobility 60%",
+    "Category": "Shoes",
+    "ScrollType": "Mobility",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.37,
+    "ExchangeRate": 74,
+    "ScrollVoucherReq": 800
+  },
+  {
+    "ItemID": 2040717,
+    "ItemName": "Dark Scroll for Shoes for Mobility 30%",
+    "Category": "Shoes",
+    "ScrollType": "Mobility",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 1200
+  },
+  {
+    "ItemID": 2040723,
+    "ItemName": "Scroll for Shoes for Mobility 15%",
+    "Category": "Shoes",
+    "ScrollType": "Mobility",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040708,
+    "ItemName": "Scroll for Shoes for Mobility 10%",
+    "Category": "Shoes",
+    "ScrollType": "Mobility",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044310,
+    "ItemName": "Scroll for Spear for Accuracy 100%",
+    "Category": "Spear",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 100,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 100
+  },
+  {
+    "ItemID": 2044311,
+    "ItemName": "Dark Scroll for Spear for Accuracy 70%",
+    "Category": "Spear",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044312,
+    "ItemName": "Scroll for Spear for Accuracy 60%",
+    "Category": "Spear",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.7,
+    "ExchangeRate": 59,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044313,
+    "ItemName": "Dark Scroll for Spear for Accuracy 30%",
+    "Category": "Spear",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 30,
+    "RateMulitplier": 6.67,
+    "ExchangeRate": 15,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044315,
+    "ItemName": "Scroll for Spear for Accuracy 15%",
+    "Category": "Spear",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044314,
+    "ItemName": "Scroll for Spear for Accuracy 10%",
+    "Category": "Spear",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.25,
+    "ExchangeRate": 80,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2044300,
+    "ItemName": "Scroll for Spear for ATT 100%",
+    "Category": "Spear",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2044304,
+    "ItemName": "Dark Scroll for Spear for ATT 70%",
+    "Category": "Spear",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044301,
+    "ItemName": "Scroll for Spear for ATT 60%",
+    "Category": "Spear",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.59,
+    "ExchangeRate": 63,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044305,
+    "ItemName": "Dark Scroll for Spear for ATT 30%",
+    "Category": "Spear",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044307,
+    "ItemName": "Scroll for Spear for ATT 15%",
+    "Category": "Spear",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044302,
+    "ItemName": "Scroll for Spear for ATT 10%",
+    "Category": "Spear",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.1,
+    "ExchangeRate": 91,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2043800,
+    "ItemName": "Scroll for Staff for Magic ATT 100%",
+    "Category": "Staff",
+    "ScrollType": "Magic",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2043804,
+    "ItemName": "Dark Scroll for Staff for Magic ATT 70%",
+    "Category": "Staff",
+    "ScrollType": "Magic",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043801,
+    "ItemName": "Scroll for Staff for Magic ATT 60%",
+    "Category": "Staff",
+    "ScrollType": "Magic",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.89,
+    "ExchangeRate": 53,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2043805,
+    "ItemName": "Dark Scroll for Staff for Magic ATT 30%",
+    "Category": "Staff",
+    "ScrollType": "Magic",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2043807,
+    "ItemName": "Scroll for Staff for Magic ATT 15%",
+    "Category": "Staff",
+    "ScrollType": "Magic",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043802,
+    "ItemName": "Scroll for Staff for Magic ATT 10%",
+    "Category": "Staff",
+    "ScrollType": "Magic",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.81,
+    "ExchangeRate": 56,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040400,
+    "ItemName": "Scroll for Topwear for Defense 100%",
+    "Category": "Topwear",
+    "ScrollType": "Defense",
+    "ScrollPercent": 100,
+    "RateMulitplier": 50,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 2
+  },
+  {
+    "ItemID": 2040404,
+    "ItemName": "Dark Scroll for Topwear for Defense 70%",
+    "Category": "Topwear",
+    "ScrollType": "Defense",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040401,
+    "ItemName": "Scroll for Topwear for Defense 60%",
+    "Category": "Topwear",
+    "ScrollType": "Defense",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.75,
+    "ExchangeRate": 58,
+    "ScrollVoucherReq": 58
+  },
+  {
+    "ItemID": 2040405,
+    "ItemName": "Dark Scroll for Topwear for Defense 30%",
+    "Category": "Topwear",
+    "ScrollType": "Defense",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 225
+  },
+  {
+    "ItemID": 2040416,
+    "ItemName": "Scroll for Topwear for Defense 15%",
+    "Category": "Topwear",
+    "ScrollType": "Defense",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040402,
+    "ItemName": "Scroll for Topwear for Defense 10%",
+    "Category": "Topwear",
+    "ScrollType": "Defense",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.33,
+    "ExchangeRate": 75,
+    "ScrollVoucherReq": 75
+  },
+  {
+    "ItemID": 2040414,
+    "ItemName": "Scroll for Topwear for LUK 100%",
+    "Category": "Topwear",
+    "ScrollType": "LUK",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 100
+  },
+  {
+    "ItemID": 2040410,
+    "ItemName": "Dark Scroll for Topwear for LUK 70%",
+    "Category": "Topwear",
+    "ScrollType": "LUK",
+    "ScrollPercent": 70,
+    "RateMulitplier": 5,
+    "ExchangeRate": 20,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040413,
+    "ItemName": "Scroll for Topwear for LUK 60%",
+    "Category": "Topwear",
+    "ScrollType": "LUK",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.25,
+    "ExchangeRate": 80,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2040411,
+    "ItemName": "Dark Scroll for Topwear for LUK 30%",
+    "Category": "Topwear",
+    "ScrollType": "LUK",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2040436,
+    "ItemName": "Scroll for Topwear for LUK 15%",
+    "Category": "Topwear",
+    "ScrollType": "LUK",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040412,
+    "ItemName": "Scroll for Topwear for LUK 10%",
+    "Category": "Topwear",
+    "ScrollType": "LUK",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2.25,
+    "ExchangeRate": 45,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2040417,
+    "ItemName": "Scroll for Topwear for STR 100%",
+    "Category": "Topwear",
+    "ScrollType": "STR",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 100
+  },
+  {
+    "ItemID": 2040406,
+    "ItemName": "Dark Scroll for Topwear for STR 70%",
+    "Category": "Topwear",
+    "ScrollType": "STR",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040418,
+    "ItemName": "Scroll for Topwear for STR 60%",
+    "Category": "Topwear",
+    "ScrollType": "STR",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.75,
+    "ExchangeRate": 58,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2040407,
+    "ItemName": "Dark Scroll for Topwear for STR 30%",
+    "Category": "Topwear",
+    "ScrollType": "STR",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2040432,
+    "ItemName": "Scroll for Topwear for STR 15%",
+    "Category": "Topwear",
+    "ScrollType": "STR",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2040419,
+    "ItemName": "Scroll for Topwear for STR 10%",
+    "Category": "Topwear",
+    "ScrollType": "STR",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.75,
+    "ExchangeRate": 58,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2044110,
+    "ItemName": "Scroll for Two-Handed Axe for Accuracy 100%",
+    "Category": "Two-Handed Axe",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 100
+  },
+  {
+    "ItemID": 2044111,
+    "ItemName": "Dark Scroll for Two-Handed Axe for Accuracy 70%",
+    "Category": "Two-Handed Axe",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044112,
+    "ItemName": "Scroll for Two-Handed Axe for Accuracy 60%",
+    "Category": "Two-Handed Axe",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.63,
+    "ExchangeRate": 62,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044113,
+    "ItemName": "Dark Scroll for Two-Handed Axe for Accuracy 30%",
+    "Category": "Two-Handed Axe",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044115,
+    "ItemName": "Scroll for Two-Handed Axe for Accuracy 15%",
+    "Category": "Two-Handed Axe",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044114,
+    "ItemName": "Scroll for Two-Handed Axe for Accuracy 10%",
+    "Category": "Two-Handed Axe",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.4,
+    "ExchangeRate": 72,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2044100,
+    "ItemName": "Scroll for Two-Handed Axe for ATT 100%",
+    "Category": "Two-Handed Axe",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2044104,
+    "ItemName": "Dark Scroll for Two-Handed Axe for ATT 70%",
+    "Category": "Two-Handed Axe",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044101,
+    "ItemName": "Scroll for Two-Handed Axe for ATT 60%",
+    "Category": "Two-Handed Axe",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2.44,
+    "ExchangeRate": 41,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044105,
+    "ItemName": "Dark Scroll for Two-Handed Axe for ATT 30%",
+    "Category": "Two-Handed Axe",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044107,
+    "ItemName": "Scroll for Two-Handed Axe for ATT 15%",
+    "Category": "Two-Handed Axe",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044102,
+    "ItemName": "Scroll for Two-Handed Axe for ATT 10%",
+    "Category": "Two-Handed Axe",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.63,
+    "ExchangeRate": 62,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2044210,
+    "ItemName": "Scroll for Two-Handed BW for Accuracy 100%",
+    "Category": "Two-Handed BW",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 100
+  },
+  {
+    "ItemID": 2044211,
+    "ItemName": "Dark Scroll for Two-Handed BW for Accuracy 70%",
+    "Category": "Two-Handed BW",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044212,
+    "ItemName": "Scroll for Two-Handed BW for Accuracy 60%",
+    "Category": "Two-Handed BW",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.7,
+    "ExchangeRate": 59,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044213,
+    "ItemName": "Dark Scroll for Two-Handed BW for Accuracy 30%",
+    "Category": "Two-Handed BW",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044215,
+    "ItemName": "Scroll for Two-Handed BW for Accuracy 15%",
+    "Category": "Two-Handed BW",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044214,
+    "ItemName": "Scroll for Two-Handed BW for Accuracy 10%",
+    "Category": "Two-Handed BW",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.7,
+    "ExchangeRate": 59,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2044200,
+    "ItemName": "Scroll for Two-Handed BW for ATT 100%",
+    "Category": "Two-Handed BW",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2044204,
+    "ItemName": "Dark Scroll for Two-Handed BW for ATT 70%",
+    "Category": "Two-Handed BW",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044201,
+    "ItemName": "Scroll for Two-Handed BW for ATT 60%",
+    "Category": "Two-Handed BW",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.69,
+    "ExchangeRate": 60,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044205,
+    "ItemName": "Dark Scroll for Two-Handed BW for ATT 30%",
+    "Category": "Two-Handed BW",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044207,
+    "ItemName": "Scroll for Two-Handed BW for ATT 15%",
+    "Category": "Two-Handed BW",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044202,
+    "ItemName": "Scroll for Two-Handed BW for ATT 10%",
+    "Category": "Two-Handed BW",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 1.25,
+    "ExchangeRate": 80,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2044010,
+    "ItemName": "Scroll for Two-Handed Sword for Accuracy 100%",
+    "Category": "Two-Handed Sword",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 100,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 100
+  },
+  {
+    "ItemID": 2044011,
+    "ItemName": "Dark Scroll for Two-Handed Sword for Accuracy 70%",
+    "Category": "Two-Handed Sword",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044012,
+    "ItemName": "Scroll for Two-Handed Sword for Accuracy 60%",
+    "Category": "Two-Handed Sword",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.63,
+    "ExchangeRate": 62,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044013,
+    "ItemName": "Dark Scroll for Two-Handed Sword for Accuracy 30%",
+    "Category": "Two-Handed Sword",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044015,
+    "ItemName": "Scroll for Two-Handed Sword for Accuracy 15%",
+    "Category": "Two-Handed Sword",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044014,
+    "ItemName": "Scroll for Two-Handed Sword for Accuracy 10%",
+    "Category": "Two-Handed Sword",
+    "ScrollType": "Accuracy",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2044000,
+    "ItemName": "Scroll for Two-Handed Sword for ATT 100%",
+    "Category": "Two-Handed Sword",
+    "ScrollType": "ATT",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2044004,
+    "ItemName": "Dark Scroll for Two-Handed Sword for ATT 70%",
+    "Category": "Two-Handed Sword",
+    "ScrollType": "ATT",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044001,
+    "ItemName": "Scroll for Two-Handed Sword for ATT 60%",
+    "Category": "Two-Handed Sword",
+    "ScrollType": "ATT",
+    "ScrollPercent": 60,
+    "RateMulitplier": 2,
+    "ExchangeRate": 50,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2044005,
+    "ItemName": "Dark Scroll for Two-Handed Sword for ATT 30%",
+    "Category": "Two-Handed Sword",
+    "ScrollType": "ATT",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2044007,
+    "ItemName": "Scroll for Two-Handed Sword for ATT 15%",
+    "Category": "Two-Handed Sword",
+    "ScrollType": "ATT",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2044002,
+    "ItemName": "Scroll for Two-Handed Sword for ATT 10%",
+    "Category": "Two-Handed Sword",
+    "ScrollType": "ATT",
+    "ScrollPercent": 10,
+    "RateMulitplier": 2.5,
+    "ExchangeRate": 40,
+    "ScrollVoucherReq": 200
+  },
+  {
+    "ItemID": 2043700,
+    "ItemName": "Scroll for Wand for Magic ATT 100%",
+    "Category": "Wand",
+    "ScrollType": "Magic",
+    "ScrollPercent": 100,
+    "RateMulitplier": 25,
+    "ExchangeRate": 0,
+    "ScrollVoucherReq": 4
+  },
+  {
+    "ItemID": 2043704,
+    "ItemName": "Dark Scroll for Wand for Magic ATT 70%",
+    "Category": "Wand",
+    "ScrollType": "Magic",
+    "ScrollPercent": 70,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043701,
+    "ItemName": "Scroll for Wand for Magic ATT 60%",
+    "Category": "Wand",
+    "ScrollType": "Magic",
+    "ScrollPercent": 60,
+    "RateMulitplier": 1.54,
+    "ExchangeRate": 65,
+    "ScrollVoucherReq": 400
+  },
+  {
+    "ItemID": 2043705,
+    "ItemName": "Dark Scroll for Wand for Magic ATT 30%",
+    "Category": "Wand",
+    "ScrollType": "Magic",
+    "ScrollPercent": 30,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 600
+  },
+  {
+    "ItemID": 2043707,
+    "ItemName": "Scroll for Wand for Magic ATT 15%",
+    "Category": "Wand",
+    "ScrollType": "Magic",
+    "ScrollPercent": 15,
+    "RateMulitplier": 1,
+    "ExchangeRate": 100,
+    "ScrollVoucherReq": 0
+  },
+  {
+    "ItemID": 2043702,
+    "ItemName": "Scroll for Wand for Magic ATT 10%",
+    "Category": "Wand",
+    "ScrollType": "Magic",
+    "ScrollPercent": 10,
+    "RateMulitplier": 0.8,
+    "ExchangeRate": 125,
+    "ScrollVoucherReq": 200
+  }
+]
