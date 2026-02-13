@@ -423,13 +423,12 @@ export function AdvancedFilterPanel({
                 </span>
               </h4>
               <div className="flex flex-wrap gap-2">
-                {(['fire', 'ice', 'lightning', 'holy', 'poison'] as const).map((element) => {
+                {(['fire', 'ice', 'lightning', 'holy'] as const).map((element) => {
                   const elementColors = {
                     fire: 'bg-red-500',
                     ice: 'bg-cyan-500',
                     lightning: 'bg-yellow-500',
                     holy: 'bg-purple-500',
-                    poison: 'bg-green-500',
                   }
                   return (
                     <button

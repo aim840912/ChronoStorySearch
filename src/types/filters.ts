@@ -66,8 +66,7 @@ export type ElementType =
   | 'fire'        // 火
   | 'ice'         // 冰
   | 'lightning'   // 雷
-  | 'holy'        // 神聖
-  | 'poison'      // 毒
+  | 'holy'        // 聖
 
 // 等級範圍
 export interface LevelRange {
