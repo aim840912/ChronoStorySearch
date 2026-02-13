@@ -118,38 +118,39 @@ export function useFilterLogic({
     } else {
       filtered = baseDrops.filter((drop) => {
         const trimmedSearch = debouncedSearchTerm.trim()
-        // 檢查是否為 ID 搜尋（純數字）
+        // 純數字時同時搜尋 ID 和名稱（例如 "60" 可匹配 ID=60 或名稱含 "60%" 的捲軸）
         const isIdSearch = /^\d+$/.test(trimmedSearch)
-        if (isIdSearch) {
-          return (
-            drop.mobId.toString() === trimmedSearch ||
-            drop.itemId.toString() === trimmedSearch
+        const matchesId = isIdSearch && (
+          drop.mobId.toString() === trimmedSearch ||
+          drop.itemId.toString() === trimmedSearch
+        )
+
+        // 根據 searchType 決定搜尋範圍（雙向搜尋）
+        let matchesName = false
+        if (searchType === 'monster') {
+          matchesName = (
+            matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
+            (!!drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm)) ||
+            matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
+            (!!drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
+          )
+        } else if (searchType === 'item') {
+          matchesName = (
+            matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
+            (!!drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm)) ||
+            matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
+            (!!drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm))
+          )
+        } else {
+          matchesName = (
+            matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
+            matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
+            (!!drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm)) ||
+            (!!drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
           )
         }
 
-        // 根據 searchType 決定搜尋範圍（雙向搜尋）
-        if (searchType === 'monster') {
-          return (
-            matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
-            (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm)) ||
-            matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
-            (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
-          )
-        } else if (searchType === 'item') {
-          return (
-            matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
-            (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm)) ||
-            matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
-            (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm))
-          )
-        } else {
-          return (
-            matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
-            matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
-            (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm)) ||
-            (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
-          )
-        }
+        return matchesId || matchesName
       })
     }
 
@@ -285,19 +286,19 @@ export function useFilterLogic({
         // 如果物品已在 itemMap 中，跳過
         if (itemMap.has(indexItem.itemId)) return
 
-        // 檢查是否匹配條件
+        // 檢查是否匹配條件（純數字時同時搜尋 ID 和名稱）
         let matches = false
 
         if (hasCategoryFilter && !hasSearchTerm) {
           // 純類別篩選模式：加入所有物品，讓 applyItemFilters 做篩選
           matches = true
-        } else if (isIdSearch) {
-          // ID 搜尋
-          matches = indexItem.itemId.toString() === trimmedSearch
         } else {
-          // 名稱搜尋
-          matches = matchesAllKeywords(indexItem.itemName, debouncedSearchTerm) ||
+          // ID 匹配（純數字時）
+          const matchesId = isIdSearch && indexItem.itemId.toString() === trimmedSearch
+          // 名稱匹配
+          const matchesName = matchesAllKeywords(indexItem.itemName, debouncedSearchTerm) ||
                    (indexItem.chineseItemName !== null && matchesAllKeywords(indexItem.chineseItemName, debouncedSearchTerm))
+          matches = matchesId || matchesName
         }
 
         if (matches) {

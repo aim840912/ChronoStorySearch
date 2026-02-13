@@ -61,49 +61,41 @@ export function useDisplayStrategy({
     const trimmedSearch = debouncedSearchTerm.trim()
     const isIdSearch = /^\d+$/.test(trimmedSearch)
 
-    // 檢查 drops 中是否有物品匹配（支援 ID 搜尋）
+    // 檢查 drops 中是否有物品匹配（純數字時同時搜尋 ID 和名稱）
     const hasDropMatch = filteredDrops.some(drop => {
-      if (isIdSearch) {
-        // 搜尋怪物 ID 時，該怪物的掉落物品也應該顯示
-        // 搜尋物品 ID 時，直接匹配物品 ID
-        return drop.itemId.toString() === trimmedSearch || drop.mobId.toString() === trimmedSearch
-      }
-      // 檢查物品名稱或怪物名稱是否匹配
-      // 當搜尋怪物名稱時，該怪物的掉落物品也應該顯示
-      return matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
-             (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm)) ||
+      const matchesId = isIdSearch && (
+        drop.itemId.toString() === trimmedSearch || drop.mobId.toString() === trimmedSearch
+      )
+      const matchesName = matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
+             (!!drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm)) ||
              matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
-             (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm))
+             (!!drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm))
+      return matchesId || matchesName
     })
 
     if (hasDropMatch) return true
 
-    // 檢查轉蛋機中是否有物品名匹配（支援純轉蛋物品搜尋和 ID 搜尋）
+    // 檢查轉蛋機中是否有物品名匹配（純數字時同時搜尋 ID 和名稱）
     const hasGachaMatch = gachaMachines.some(machine =>
       machine.items.some(item => {
-        if (isIdSearch) {
-          return item.itemId.toString() === trimmedSearch
-        }
+        const matchesId = isIdSearch && item.itemId.toString() === trimmedSearch
         const itemName = item.name || item.itemName || ''
         const chineseItemName = item.chineseName || ''
-        return matchesAllKeywords(itemName, debouncedSearchTerm) ||
+        const matchesName = matchesAllKeywords(itemName, debouncedSearchTerm) ||
                (chineseItemName && matchesAllKeywords(chineseItemName, debouncedSearchTerm))
+        return matchesId || matchesName
       })
     )
 
     if (hasGachaMatch) return true
 
-    // 檢查 item-index 中是否有物品匹配（補充沒有掉落的物品，如 Unwelcome Guest 武器）
+    // 檢查 item-index 中是否有物品匹配（純數字時同時搜尋 ID 和名稱）
     if (itemIndexMap) {
       for (const indexItem of itemIndexMap.values()) {
-        if (isIdSearch) {
-          if (indexItem.itemId.toString() === trimmedSearch) return true
-        } else {
-          if (matchesAllKeywords(indexItem.itemName, debouncedSearchTerm) ||
-              (indexItem.chineseItemName && matchesAllKeywords(indexItem.chineseItemName, debouncedSearchTerm))) {
-            return true
-          }
-        }
+        const matchesId = isIdSearch && indexItem.itemId.toString() === trimmedSearch
+        const matchesName = matchesAllKeywords(indexItem.itemName, debouncedSearchTerm) ||
+            (!!indexItem.chineseItemName && matchesAllKeywords(indexItem.chineseItemName, debouncedSearchTerm))
+        if (matchesId || matchesName) return true
       }
     }
 
@@ -121,19 +113,16 @@ export function useDisplayStrategy({
     const trimmedSearch = debouncedSearchTerm.trim()
     const isIdSearch = /^\d+$/.test(trimmedSearch)
 
-    // 檢查 drops 中是否有怪物匹配（支援 ID 搜尋）
+    // 檢查 drops 中是否有怪物匹配（純數字時同時搜尋 ID 和名稱）
     return filteredDrops.some(drop => {
-      if (isIdSearch) {
-        // 搜尋 mobId 直接匹配
-        // 搜尋 itemId 時，如果有怪物掉落該物品，也匹配（顯示掉落來源怪物）
-        return drop.mobId.toString() === trimmedSearch || drop.itemId.toString() === trimmedSearch
-      }
-      // 搜尋怪物名稱時，直接匹配
-      // 搜尋物品名稱時，如果有怪物掉落該物品，也匹配（顯示掉落來源怪物）
-      return matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
-             (drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm)) ||
+      const matchesId = isIdSearch && (
+        drop.mobId.toString() === trimmedSearch || drop.itemId.toString() === trimmedSearch
+      )
+      const matchesName = matchesAllKeywords(drop.mobName, debouncedSearchTerm) ||
+             (!!drop.chineseMobName && matchesAllKeywords(drop.chineseMobName, debouncedSearchTerm)) ||
              matchesAllKeywords(drop.itemName, debouncedSearchTerm) ||
-             (drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
+             (!!drop.chineseItemName && matchesAllKeywords(drop.chineseItemName, debouncedSearchTerm))
+      return matchesId || matchesName
     })
   }, [filterMode, debouncedSearchTerm, searchType, filteredDrops])
 
