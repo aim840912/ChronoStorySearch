@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import type { FilterMode, AdvancedFilterOptions, SuggestionItem, SearchTypeFilter } from '@/types'
 // TradeType 已移至 usePageModes hook 中管理
 import { useDebouncedValue } from '@/hooks/useDebouncedValue'
@@ -27,6 +27,7 @@ import { MerchantShopSection } from '@/components/merchant/MerchantShopSection'
 import { TradeSection } from '@/components/trade/TradeSection'
 import { ReportSection } from '@/components/report/ReportSection'
 import { ScrollExchangeSection } from '@/components/scroll-exchange/ScrollExchangeSection'
+import { exchangeableItemIds } from '@/lib/scroll-exchange-utils'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
 import { trackEvent } from '@/lib/analytics/ga4'
@@ -347,6 +348,17 @@ export default function Home() {
     handleGachaSelect(machineId)
   }, [modals, handleGachaSelect])
 
+  // ItemModal 中點擊「捲軸兌換」：進入捲軸兌換模式
+  const handleScrollExchangeClick = useCallback(() => {
+    pageModes.toggleScrollExchange()
+  }, [pageModes])
+
+  // 可掉落的兌換捲軸 ID 集合（allDrops 中出現的 itemId ∩ exchangeableItemIds）
+  const droppableItemIds = useMemo(() => {
+    if (!allDrops || allDrops.length === 0) return new Set<number>()
+    const droppedIds = new Set(allDrops.map(d => d.itemId))
+    return new Set([...exchangeableItemIds].filter(id => droppedIds.has(id)))
+  }, [allDrops])
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
@@ -457,6 +469,7 @@ export default function Home() {
           <ScrollExchangeSection
             onClose={pageModes.closeScrollExchange}
             onItemClick={modals.openItemModal}
+            droppableItemIds={droppableItemIds}
           />
         )}
 
@@ -538,6 +551,7 @@ export default function Home() {
         handleItemClickFromMonsterModal={handleItemClickFromMonsterModal}
         handleMonsterClickFromItemModal={handleMonsterClickFromItemModal}
         handleGachaMachineClick={handleGachaMachineClick}
+        handleScrollExchangeClick={handleScrollExchangeClick}
         handleClearConfirm={handleClearConfirm}
         isAccuracyCalcOpen={toolModals.isAccuracyCalcOpen}
         setIsAccuracyCalcOpen={toolModals.setAccuracyCalcOpen}

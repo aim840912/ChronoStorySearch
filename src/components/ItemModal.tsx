@@ -17,6 +17,7 @@ import { findGachaItemOrganized } from '@/lib/gacha-utils'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { useShowDevInfo } from '@/hooks/useShowDevInfo'
 import { isUnwelcomeGuestItem, getMultiStageRecipe, getNextStageRecipe } from '@/lib/crafting-utils'
+import { getScrollExchangeInfo } from '@/lib/scroll-exchange-utils'
 import { CraftingRecipeCard } from './CraftingRecipeCard'
 import { UpgradePathCard } from './UpgradePathCard'
 
@@ -47,6 +48,8 @@ interface ItemModalProps {
   onGachaMachineClick: (machineId: number) => void
   // 物品跳轉（用於製作配方點擊前階武器）
   onItemClick?: (itemId: number, itemName: string) => void
+  // 捲軸兌換跳轉
+  onScrollExchangeClick?: () => void
   // 導航相關 props
   hasPreviousModal?: boolean
   onGoBack?: () => void
@@ -72,6 +75,7 @@ export function ItemModal({
   onMonsterClick,
   onGachaMachineClick,
   onItemClick,
+  onScrollExchangeClick,
   hasPreviousModal,
   onGoBack,
 }: ItemModalProps) {
@@ -269,6 +273,12 @@ export function ItemModal({
     if (!itemId && itemId !== 0) return null
     if (!isUnwelcomeGuestItem(itemId)) return null
     return getNextStageRecipe(itemId)
+  }, [itemId])
+
+  // 查詢捲軸兌換資訊（O(1) Map 查詢）
+  const scrollExchangeInfo = useMemo(() => {
+    if (!itemId && itemId !== 0) return null
+    return getScrollExchangeInfo(itemId)
   }, [itemId])
 
   // 查找物品屬性資料（直接使用 ItemsOrganizedData 格式）
@@ -591,6 +601,42 @@ export function ItemModal({
               </div>
             )}
 
+            {/* 捲軸兌換資訊區塊（與轉蛋機來源卡片同格式） */}
+            {scrollExchangeInfo && (
+              <div className="mb-8">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden lg:block">
+                  {t('scrollExchange.title')}
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
+                  <div
+                    onClick={() => {
+                      onClose()
+                      onScrollExchangeClick?.()
+                    }}
+                    className="bg-amber-50 dark:bg-amber-900/20 rounded-lg shadow-lg hover:shadow-xl p-5 border border-amber-200 dark:border-amber-700 cursor-pointer hover:scale-[1.02] transition-all duration-300 active:scale-[0.98]"
+                  >
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="font-semibold text-gray-900 dark:text-white">
+                          {t('scrollExchange.col.rate')}: {scrollExchangeInfo.ExchangeRate}
+                        </p>
+                        {scrollExchangeInfo.ScrollVoucherReq > 0 && (
+                          <p className="text-xs text-gray-500 dark:text-gray-400">
+                            {t('scrollExchange.col.voucher')}: {scrollExchangeInfo.ScrollVoucherReq}
+                          </p>
+                        )}
+                      </div>
+                      <div className="bg-amber-100 dark:bg-amber-800 px-3 py-1 rounded-full">
+                        <span className="text-sm font-bold text-amber-700 dark:text-amber-200">
+                          {scrollExchangeInfo.ScrollPercent}%
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* 製作配方區塊（Unwelcome Guest 系列） */}
             {craftingRecipe && (
               <div className="mb-8">
@@ -695,7 +741,7 @@ export function ItemModal({
             )}
 
             {/* 當沒有任何來源時顯示提示 */}
-            {itemDrops.length === 0 && itemGachaSources.length === 0 && itemMerchantSources.length === 0 && (
+            {itemDrops.length === 0 && itemGachaSources.length === 0 && itemMerchantSources.length === 0 && !scrollExchangeInfo && (
               <div className="text-center py-8">
                 <p className="text-gray-500 dark:text-gray-400">
                   {t('item.noSources')}
