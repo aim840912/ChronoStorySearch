@@ -26,6 +26,7 @@ import { GachaDrawSection } from '@/components/gacha/GachaDrawSection'
 import { MerchantShopSection } from '@/components/merchant/MerchantShopSection'
 import { TradeSection } from '@/components/trade/TradeSection'
 import { ReportSection } from '@/components/report/ReportSection'
+import { ScrollExchangeSection } from '@/components/scroll-exchange/ScrollExchangeSection'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
 import { trackEvent } from '@/lib/analytics/ga4'
@@ -408,6 +409,10 @@ export default function Home() {
           // 檢舉模式
           isReportMode={pageModes.isReportMode}
           onReportModeToggle={pageModes.toggleReportMode}
+          // 捲軸兌換模式
+          isScrollExchangeMode={pageModes.isScrollExchangeMode}
+          onScrollExchangeToggle={pageModes.toggleScrollExchange}
+          onScrollExchangeClose={pageModes.closeScrollExchange}
         />
 
         {/* 檢舉系統區域 - 檢舉模式時顯示 */}
@@ -447,8 +452,16 @@ export default function Home() {
           />
         )}
 
-        {/* 內容顯示區域 - 轉蛋模式、商人模式、交易模式或檢舉模式時隱藏 */}
-        {!pageModes.isTradeMode && !pageModes.isReportMode && !(pageModes.isGachaMode && pageModes.selectedGachaMachineId !== null) && !pageModes.isMerchantMode && (
+        {/* 捲軸兌換區域 - 捲軸兌換模式時顯示（交易/檢舉模式時隱藏） */}
+        {!pageModes.isTradeMode && !pageModes.isReportMode && pageModes.isScrollExchangeMode && (
+          <ScrollExchangeSection
+            onClose={pageModes.closeScrollExchange}
+            onItemClick={modals.openItemModal}
+          />
+        )}
+
+        {/* 內容顯示區域 - 轉蛋模式、商人模式、交易模式、檢舉模式或捲軸兌換模式時隱藏 */}
+        {!pageModes.isTradeMode && !pageModes.isReportMode && !(pageModes.isGachaMode && pageModes.selectedGachaMachineId !== null) && !pageModes.isMerchantMode && !pageModes.isScrollExchangeMode && (
           <ContentDisplay
           isLoading={isLoading}
           filterMode={filterMode}
