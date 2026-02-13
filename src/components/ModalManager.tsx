@@ -208,6 +208,12 @@ export const ModalManager = memo(function ModalManager({
 
   return (
     <>
+      {/* 持久化背景遮罩：Modal 互相切換時（goBack），兩個 Portal 的 DOM 移除/插入之間
+          瀏覽器可能插入一幀 paint 導致閃爍。這層非 Portal 的遮罩填補那一幀的空隙。 */}
+      {(isMonsterModalOpen || isItemModalOpen) && (
+        <div className="fixed inset-0 z-[49] bg-black/90 pointer-events-none" />
+      )}
+
       {/* Monster Drops Modal */}
       <MonsterModal
         isOpen={isMonsterModalOpen}
