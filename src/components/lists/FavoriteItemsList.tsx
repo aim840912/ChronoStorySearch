@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import type { ItemAttributesEssential } from '@/types'
 import { ExpandableFavoriteItemCard } from '@/components/ExpandableFavoriteItemCard'
+import { MultiplexAd } from '@/components/adsense'
 import { EmptyState } from './EmptyState'
 
 type UniqueFavoriteItem = { itemId: number; itemName: string; chineseItemName?: string | null; monsterCount: number }
@@ -125,6 +126,8 @@ export function FavoriteItemsList({
           />
         ))}
       </div>
+
+      {items.length >= 4 && <MultiplexAd />}
     </div>
   )
 }

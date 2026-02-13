@@ -4,7 +4,13 @@ import type { ExtendedUniqueItem, ItemAttributesEssential, ViewHistoryItem, Drop
 import type { RefObject } from 'react'
 import { MonsterCard } from '@/components/MonsterCard'
 import { ItemCard } from '@/components/ItemCard'
+import { InFeedAd, DisplayAd, MultiplexAd } from '@/components/adsense'
 import { EmptyState } from './EmptyState'
+
+/** 每隔多少張卡片插入一個廣告 */
+const AD_INTERVAL = 12
+/** 每個區段最多插入的 InFeed 廣告數量 */
+const MAX_ADS_PER_SECTION = 3
 
 type UniqueMonster = { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number }
 
@@ -266,13 +272,33 @@ export function AllItemsView({
 
     // 有任何內容可顯示時渲染
     if (historyCount > 0 || randomCards.length > 0) {
+      // 合併所有卡片元素
+      const allCards: React.ReactNode[] = []
+      viewHistory.forEach((historyItem, index) => {
+        allCards.push(renderHistoryCard(historyItem, index))
+      })
+      randomCards.forEach((card, cardIndex) => {
+        allCards.push(renderRandomCard(card, cardIndex))
+      })
+
+      // 在卡片間穿插廣告（限制最多 MAX_ADS_PER_SECTION 個）
+      const cardsWithAds: React.ReactNode[] = []
+      let homeAdCount = 0
+      allCards.forEach((card, i) => {
+        cardsWithAds.push(card)
+        if ((i + 1) % AD_INTERVAL === 0 && i < allCards.length - 1 && homeAdCount < MAX_ADS_PER_SECTION) {
+          cardsWithAds.push(<InFeedAd key={`ad-home-${i}`} />)
+          homeAdCount++
+        }
+      })
+
       return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mx-auto mt-8">
-          {/* 先渲染瀏覽紀錄 */}
-          {viewHistory.map((historyItem, index) => renderHistoryCard(historyItem, index))}
-          {/* 再渲染隨機卡片補足到 40 個 */}
-          {randomCards.map((card, cardIndex) => renderRandomCard(card, cardIndex))}
-        </div>
+        <>
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mx-auto mt-8">
+            {cardsWithAds}
+          </div>
+          <MultiplexAd />
+        </>
       )
     }
   }
@@ -284,21 +310,31 @@ export function AllItemsView({
       {shouldShowMonsters && displayedMonsters.length > 0 && (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 mx-auto mt-6 sm:mt-8">
-            {displayedMonsters.map((monster, index) => (
-              <MonsterCard
-                key={monster.mobId}
-                mobId={monster.mobId}
-                mobName={monster.mobName}
-                chineseMobName={monster.chineseMobName}
-                dropCount={monster.dropCount}
-                onCardClick={onMonsterCardClick}
-                isFavorite={isFavorite(monster.mobId)}
-                onToggleFavorite={onToggleFavorite}
-                level={mobLevelMap.get(monster.mobId) ?? null}
-                index={index}
-                inGame={mobInGameMap.get(monster.mobId) ?? true}
-              />
-            ))}
+            {(() => {
+              let monsterAdCount = 0
+              return displayedMonsters.flatMap((monster, index) => {
+                const card = (
+                  <MonsterCard
+                    key={monster.mobId}
+                    mobId={monster.mobId}
+                    mobName={monster.mobName}
+                    chineseMobName={monster.chineseMobName}
+                    dropCount={monster.dropCount}
+                    onCardClick={onMonsterCardClick}
+                    isFavorite={isFavorite(monster.mobId)}
+                    onToggleFavorite={onToggleFavorite}
+                    level={mobLevelMap.get(monster.mobId) ?? null}
+                    index={index}
+                    inGame={mobInGameMap.get(monster.mobId) ?? true}
+                  />
+                )
+                if ((index + 1) % AD_INTERVAL === 0 && index < displayedMonsters.length - 1 && monsterAdCount < MAX_ADS_PER_SECTION) {
+                  monsterAdCount++
+                  return [card, <InFeedAd key={`ad-monster-${index}`} />]
+                }
+                return [card]
+              })
+            })()}
           </div>
 
           {/* 無限滾動觸發器 */}
@@ -309,6 +345,11 @@ export function AllItemsView({
             >
               <div className="text-gray-500 dark:text-gray-400 text-sm">載入更多怪物...</div>
             </div>
+          )}
+
+          {/* 無限滾動載入點廣告 */}
+          {!monstersInfiniteScroll.hasMore && !monstersInfiniteScroll.isMaxReached && displayedMonsters.length > AD_INTERVAL && (
+            <InFeedAd className="mt-4 max-w-7xl mx-auto" />
           )}
 
           {/* 上限提示訊息 */}
@@ -327,29 +368,44 @@ export function AllItemsView({
         </>
       )}
 
+      {/* 怪物區與物品區之間的展示廣告 */}
+      {shouldShowMonsters && displayedMonsters.length > 0 && shouldShowItems && displayedItems.length > 0 && (
+        <DisplayAd />
+      )}
+
       {/* 物品區塊 */}
       {shouldShowItems && displayedItems.length > 0 && (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 mx-auto mt-6 sm:mt-8">
-            {displayedItems.map((item, index) => (
-              <ItemCard
-                key={item.itemId}
-                itemId={item.itemId}
-                itemName={item.itemName}
-                chineseItemName={item.chineseItemName}
-                monsterCount={item.monsterCount}
-                onCardClick={onItemCardClick}
-                isFavorite={isItemFavorite(item.itemId)}
-                onToggleFavorite={onToggleItemFavorite}
-                source={item.source}
-                reqLevel={
-                  itemAttributesMap.get(item.itemId)?.req_level
-                  ?? (item.source.fromGacha ? getGachaItemReqLevel(gachaMachines, item.itemId) : null)
+            {(() => {
+              let itemAdCount = 0
+              return displayedItems.flatMap((item, index) => {
+                const card = (
+                  <ItemCard
+                    key={item.itemId}
+                    itemId={item.itemId}
+                    itemName={item.itemName}
+                    chineseItemName={item.chineseItemName}
+                    monsterCount={item.monsterCount}
+                    onCardClick={onItemCardClick}
+                    isFavorite={isItemFavorite(item.itemId)}
+                    onToggleFavorite={onToggleItemFavorite}
+                    source={item.source}
+                    reqLevel={
+                      itemAttributesMap.get(item.itemId)?.req_level
+                      ?? (item.source.fromGacha ? getGachaItemReqLevel(gachaMachines, item.itemId) : null)
+                    }
+                    index={index}
+                    fromMerchant={merchantItemIndex.has(item.itemName.toLowerCase())}
+                  />
+                )
+                if ((index + 1) % AD_INTERVAL === 0 && index < displayedItems.length - 1 && itemAdCount < MAX_ADS_PER_SECTION) {
+                  itemAdCount++
+                  return [card, <InFeedAd key={`ad-item-${index}`} />]
                 }
-                index={index}
-                fromMerchant={merchantItemIndex.has(item.itemName.toLowerCase())}
-              />
-            ))}
+                return [card]
+              })
+            })()}
           </div>
 
           {/* 無限滾動觸發器 */}
@@ -360,6 +416,11 @@ export function AllItemsView({
             >
               <div className="text-gray-500 dark:text-gray-400 text-sm">載入更多物品...</div>
             </div>
+          )}
+
+          {/* 無限滾動載入點廣告 */}
+          {!itemsInfiniteScroll.hasMore && !itemsInfiniteScroll.isMaxReached && displayedItems.length > AD_INTERVAL && (
+            <InFeedAd className="mt-4 max-w-7xl mx-auto" />
           )}
 
           {/* 上限提示訊息 */}
@@ -377,6 +438,9 @@ export function AllItemsView({
           )}
         </>
       )}
+
+      {/* 頁面底部 Multiplex 廣告 */}
+      <MultiplexAd />
     </>
   )
 }

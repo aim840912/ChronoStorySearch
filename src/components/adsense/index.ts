@@ -1,1 +1,5 @@
 export { AdSenseScript } from './AdSenseScript'
+export { AnchorAd } from './AnchorAd'
+export { DisplayAd } from './DisplayAd'
+export { InFeedAd } from './InFeedAd'
+export { MultiplexAd } from './MultiplexAd'
