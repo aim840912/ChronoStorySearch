@@ -45,8 +45,8 @@ export function useHashNavigation({
   showToast,
   t,
 }: UseHashNavigationOptions): UseHashNavigationReturn {
-  // 初始載入時處理分享連結（從 hash 參數開啟 modal）
-  useEffect(() => {
+  // 解析 hash 並開啟對應 Modal（抽成函數供初始載入 + hashchange 共用）
+  const handleHashNavigation = useCallback(() => {
     if (allDrops.length === 0) return // 等待資料載入完成
 
     const hash = window.location.hash
@@ -100,6 +100,14 @@ export function useHashNavigation({
       }
     }
   }, [allDrops, language, openMonsterModal, openItemModal, openGachaModal])
+
+  // 初始載入 + 監聽 hashchange（用戶在同頁面貼上分享連結時觸發）
+  useEffect(() => {
+    handleHashNavigation()
+
+    window.addEventListener('hashchange', handleHashNavigation)
+    return () => window.removeEventListener('hashchange', handleHashNavigation)
+  }, [handleHashNavigation])
 
   // 分享處理函數
   const handleShare = useCallback(async () => {

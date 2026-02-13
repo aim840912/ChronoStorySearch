@@ -398,13 +398,15 @@ export function useModalManager(options: UseModalManagerOptions = {}) {
     }
   }, [closeItemModal])
 
-  // 返回上一個 Modal
+  // 返回上一個 Modal（使用函數式更新，與 openItemModal/openMonsterModal 一致）
   const goBack = useCallback(() => {
-    if (history.previous !== null) {
-      setModal(history.previous)
-      setHistory({ previous: null })
-    }
-  }, [history])
+    setHistory(currentHistory => {
+      if (currentHistory.previous !== null) {
+        setModal(currentHistory.previous)
+      }
+      return { previous: null }
+    })
+  }, [])
 
   // 提取當前 Modal 資料（帶型別安全）
   const monsterData = modal.type === 'monster' ? (modal.data as MonsterModalData) : null
