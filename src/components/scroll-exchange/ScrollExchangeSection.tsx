@@ -1,20 +1,10 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useCallback, Fragment } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { matchesAllKeywords } from '@/lib/search-utils'
+import type { ScrollExchangeItem } from '@/lib/scroll-exchange-utils'
 import scrollExchangeData from '../../../data/sheets-scroll-exchange.json'
-
-interface ScrollExchangeItem {
-  ItemID: number
-  ItemName: string
-  Category: string
-  ScrollType: string
-  ScrollPercent: number
-  RateMulitplier: number
-  ExchangeRate: number
-  ScrollVoucherReq: number
-}
 
 const data = scrollExchangeData as ScrollExchangeItem[]
 
@@ -27,6 +17,8 @@ const ALL_SCROLL_TYPES = [...new Set(data.map(d => d.ScrollType))].sort()
 interface ScrollExchangeSectionProps {
   onClose: () => void
   onItemClick?: (itemId: number, itemName: string) => void
+  /** 可從怪物掉落的物品 ID 集合 */
+  droppableItemIds?: Set<number>
 }
 
 /**
@@ -36,6 +28,7 @@ interface ScrollExchangeSectionProps {
 export function ScrollExchangeSection({
   onClose,
   onItemClick,
+  droppableItemIds,
 }: ScrollExchangeSectionProps) {
   const { t, language } = useLanguage()
 
@@ -45,6 +38,26 @@ export function ScrollExchangeSection({
   // 篩選狀態
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
   const [selectedScrollType, setSelectedScrollType] = useState<string>('all')
+
+  // 排序狀態（null = 預設分組模式）
+  type SortColumn = 'name' | 'type' | 'percent' | 'rate' | 'voucher'
+  const [sortColumn, setSortColumn] = useState<SortColumn | null>(null)
+  const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc')
+
+  // 排序點擊（三態：升序 → 降序 → 回預設分組）
+  const handleSort = useCallback((column: SortColumn) => {
+    if (sortColumn === column) {
+      if (sortDirection === 'asc') {
+        setSortDirection('desc')
+      } else {
+        setSortColumn(null)
+        setSortDirection('asc')
+      }
+    } else {
+      setSortColumn(column)
+      setSortDirection('asc')
+    }
+  }, [sortColumn, sortDirection])
 
   // 篩選 + 搜尋
   const filteredData = useMemo(() => {
@@ -89,6 +102,121 @@ export function ScrollExchangeSection({
     }
     return groups
   }, [filteredData])
+
+  // 排序後的扁平資料（排序啟用時取代分組）
+  const sortedData = useMemo(() => {
+    if (!sortColumn) return null
+    return [...filteredData].sort((a, b) => {
+      let cmp = 0
+      switch (sortColumn) {
+        case 'name': cmp = a.ItemName.localeCompare(b.ItemName); break
+        case 'type': cmp = a.ScrollType.localeCompare(b.ScrollType); break
+        case 'percent': cmp = a.ScrollPercent - b.ScrollPercent; break
+        case 'rate': cmp = a.ExchangeRate - b.ExchangeRate; break
+        case 'voucher': cmp = a.ScrollVoucherReq - b.ScrollVoucherReq; break
+      }
+      return sortDirection === 'asc' ? cmp : -cmp
+    })
+  }, [filteredData, sortColumn, sortDirection])
+
+  /** 排序指示器 SVG */
+  const SortIcon = ({ column }: { column: SortColumn }) => {
+    const isActive = sortColumn === column
+    if (!isActive) {
+      return (
+        <svg className="w-3 h-3 ml-0.5 inline opacity-30" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M7 10l5-5 5 5H7zM7 14l5 5 5-5H7z" />
+        </svg>
+      )
+    }
+    return sortDirection === 'asc' ? (
+      <svg className="w-3 h-3 ml-0.5 inline text-amber-500" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M7 14l5-5 5 5H7z" />
+      </svg>
+    ) : (
+      <svg className="w-3 h-3 ml-0.5 inline text-amber-500" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M7 10l5 5 5-5H7z" />
+      </svg>
+    )
+  }
+
+  /** 桌面版表格行 */
+  const TableRow = ({ item }: { item: ScrollExchangeItem }) => (
+    <tr
+      className="border-b border-gray-50 dark:border-gray-700/50 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors cursor-pointer"
+      onClick={() => onItemClick?.(item.ItemID, item.ItemName)}
+    >
+      <td className="px-6 py-2.5 text-gray-900 dark:text-white">
+        <span className="inline-flex items-center gap-1.5">
+          {item.ItemName}
+          {droppableItemIds?.has(item.ItemID) && (
+            <span className="inline-block px-1.5 py-0.5 rounded text-[10px] font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300 whitespace-nowrap">
+              {t('scrollExchange.droppable')}
+            </span>
+          )}
+        </span>
+      </td>
+      <td className="px-3 py-2.5 text-center">
+        <span className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${getScrollTypeColor(item.ScrollType)}`}>
+          {item.ScrollType}
+        </span>
+      </td>
+      <td className="px-3 py-2.5 text-center">
+        <span className={`font-medium ${getPercentColor(item.ScrollPercent)}`}>
+          {item.ScrollPercent}%
+        </span>
+      </td>
+      <td className="px-3 py-2.5 text-center font-mono text-gray-700 dark:text-gray-300">
+        {item.ExchangeRate}
+      </td>
+      <td className="px-3 py-2.5 text-center">
+        {item.ScrollVoucherReq > 0 ? (
+          <span className="text-amber-600 dark:text-amber-400 font-medium">{item.ScrollVoucherReq}</span>
+        ) : (
+          <span className="text-gray-300 dark:text-gray-600">-</span>
+        )}
+      </td>
+    </tr>
+  )
+
+  /** 手機版卡片 */
+  const MobileCard = ({ item }: { item: ScrollExchangeItem }) => (
+    <button
+      className="w-full px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
+      onClick={() => onItemClick?.(item.ItemID, item.ItemName)}
+    >
+      <div className="flex items-start justify-between gap-2">
+        <div className="min-w-0 flex-1">
+          <p className="text-sm text-gray-900 dark:text-white truncate">
+            {item.ItemName}
+          </p>
+          <div className="flex items-center gap-2 mt-1 flex-wrap">
+            <span className={`inline-block px-1.5 py-0.5 rounded text-xs font-medium ${getScrollTypeColor(item.ScrollType)}`}>
+              {item.ScrollType}
+            </span>
+            <span className={`text-xs font-medium ${getPercentColor(item.ScrollPercent)}`}>
+              {item.ScrollPercent}%
+            </span>
+            {droppableItemIds?.has(item.ItemID) && (
+              <span className="inline-block px-1.5 py-0.5 rounded text-[10px] font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300">
+                {t('scrollExchange.droppable')}
+              </span>
+            )}
+          </div>
+        </div>
+        <div className="text-right shrink-0">
+          <p className="text-sm font-mono font-medium text-gray-700 dark:text-gray-300">
+            {language === 'zh-TW' ? '兌換' : 'Rate'}: {item.ExchangeRate}
+          </p>
+          {item.ScrollVoucherReq > 0 && (
+            <p className="text-xs text-amber-600 dark:text-amber-400 mt-0.5">
+              Voucher: {item.ScrollVoucherReq}
+            </p>
+          )}
+        </div>
+      </div>
+    </button>
+  )
 
   return (
     <div className="mt-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
@@ -173,12 +301,14 @@ export function ScrollExchangeSection({
           </select>
 
           {/* 重置按鈕（有篩選時顯示） */}
-          {(selectedCategory !== 'all' || selectedScrollType !== 'all' || searchTerm) && (
+          {(selectedCategory !== 'all' || selectedScrollType !== 'all' || searchTerm || sortColumn) && (
             <button
               onClick={() => {
                 setSelectedCategory('all')
                 setSelectedScrollType('all')
                 setSearchTerm('')
+                setSortColumn(null)
+                setSortDirection('asc')
               }}
               className="text-sm px-3 py-1.5 text-amber-600 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-lg transition-colors"
             >
@@ -195,102 +325,106 @@ export function ScrollExchangeSection({
             {t('scrollExchange.noResults')}
           </div>
         ) : (
-          Array.from(groupedData.entries()).map(([category, items]) => (
-            <div key={category}>
-              {/* Category 標頭 */}
-              <div className="sticky top-0 px-4 sm:px-6 py-2 bg-gray-50 dark:bg-gray-750 border-b border-gray-200 dark:border-gray-700 z-10">
-                <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-                  {category}
-                  <span className="ml-2 text-xs font-normal text-gray-400">({items.length})</span>
-                </h3>
-              </div>
-
-              {/* 桌面版：表格 */}
-              <div className="hidden sm:block">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="text-left text-xs text-gray-500 dark:text-gray-400 border-b border-gray-100 dark:border-gray-700">
-                      <th className="px-6 py-2 font-medium">{t('scrollExchange.col.name')}</th>
-                      <th className="px-3 py-2 font-medium text-center">{t('scrollExchange.col.type')}</th>
-                      <th className="px-3 py-2 font-medium text-center">{t('scrollExchange.col.percent')}</th>
-                      <th className="px-3 py-2 font-medium text-center">{t('scrollExchange.col.rate')}</th>
-                      <th className="px-3 py-2 font-medium text-center">{t('scrollExchange.col.voucher')}</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {items.map((item) => (
-                      <tr
-                        key={item.ItemID}
-                        className="border-b border-gray-50 dark:border-gray-700/50 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors cursor-pointer"
-                        onClick={() => onItemClick?.(item.ItemID, item.ItemName)}
-                      >
-                        <td className="px-6 py-2.5 text-gray-900 dark:text-white">
-                          {item.ItemName}
-                        </td>
-                        <td className="px-3 py-2.5 text-center">
-                          <span className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${getScrollTypeColor(item.ScrollType)}`}>
-                            {item.ScrollType}
-                          </span>
-                        </td>
-                        <td className="px-3 py-2.5 text-center">
-                          <span className={`font-medium ${getPercentColor(item.ScrollPercent)}`}>
-                            {item.ScrollPercent}%
-                          </span>
-                        </td>
-                        <td className="px-3 py-2.5 text-center font-mono text-gray-700 dark:text-gray-300">
-                          {item.ExchangeRate}
-                        </td>
-                        <td className="px-3 py-2.5 text-center">
-                          {item.ScrollVoucherReq > 0 ? (
-                            <span className="text-amber-600 dark:text-amber-400 font-medium">{item.ScrollVoucherReq}</span>
-                          ) : (
-                            <span className="text-gray-300 dark:text-gray-600">-</span>
-                          )}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-
-              {/* 手機版：卡片 */}
-              <div className="sm:hidden divide-y divide-gray-100 dark:divide-gray-700/50">
-                {items.map((item) => (
-                  <button
-                    key={item.ItemID}
-                    className="w-full px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
-                    onClick={() => onItemClick?.(item.ItemID, item.ItemName)}
-                  >
-                    <div className="flex items-start justify-between gap-2">
-                      <div className="min-w-0 flex-1">
-                        <p className="text-sm text-gray-900 dark:text-white truncate">
-                          {item.ItemName}
-                        </p>
-                        <div className="flex items-center gap-2 mt-1">
-                          <span className={`inline-block px-1.5 py-0.5 rounded text-xs font-medium ${getScrollTypeColor(item.ScrollType)}`}>
-                            {item.ScrollType}
-                          </span>
-                          <span className={`text-xs font-medium ${getPercentColor(item.ScrollPercent)}`}>
-                            {item.ScrollPercent}%
-                          </span>
-                        </div>
-                      </div>
-                      <div className="text-right shrink-0">
-                        <p className="text-sm font-mono font-medium text-gray-700 dark:text-gray-300">
-                          {language === 'zh-TW' ? '兌換' : 'Rate'}: {item.ExchangeRate}
-                        </p>
-                        {item.ScrollVoucherReq > 0 && (
-                          <p className="text-xs text-amber-600 dark:text-amber-400 mt-0.5">
-                            Voucher: {item.ScrollVoucherReq}
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                  </button>
-                ))}
-              </div>
+          <>
+            {/* 桌面版：單一表格 */}
+            <div className="hidden sm:block">
+              <table className="w-full text-sm">
+                <thead className="sticky top-0 z-20 bg-white dark:bg-gray-800">
+                  <tr className="text-left text-xs text-gray-500 dark:text-gray-400 border-b border-gray-200 dark:border-gray-700">
+                    <th
+                      className="px-6 py-2 font-medium cursor-pointer hover:text-amber-600 dark:hover:text-amber-400 select-none transition-colors"
+                      onClick={() => handleSort('name')}
+                    >
+                      {t('scrollExchange.col.name')}
+                      <SortIcon column="name" />
+                    </th>
+                    <th
+                      className="px-3 py-2 font-medium text-center cursor-pointer hover:text-amber-600 dark:hover:text-amber-400 select-none transition-colors"
+                      onClick={() => handleSort('type')}
+                    >
+                      {t('scrollExchange.col.type')}
+                      <SortIcon column="type" />
+                    </th>
+                    <th
+                      className="px-3 py-2 font-medium text-center cursor-pointer hover:text-amber-600 dark:hover:text-amber-400 select-none transition-colors"
+                      onClick={() => handleSort('percent')}
+                    >
+                      {t('scrollExchange.col.percent')}
+                      <SortIcon column="percent" />
+                    </th>
+                    <th
+                      className="px-3 py-2 font-medium text-center cursor-pointer hover:text-amber-600 dark:hover:text-amber-400 select-none transition-colors"
+                      onClick={() => handleSort('rate')}
+                    >
+                      {t('scrollExchange.col.rate')}
+                      <SortIcon column="rate" />
+                    </th>
+                    <th
+                      className="px-3 py-2 font-medium text-center cursor-pointer hover:text-amber-600 dark:hover:text-amber-400 select-none transition-colors"
+                      onClick={() => handleSort('voucher')}
+                    >
+                      {t('scrollExchange.col.voucher')}
+                      <SortIcon column="voucher" />
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {sortedData ? (
+                    /* 排序模式：扁平列表 */
+                    sortedData.map((item) => (
+                      <TableRow key={item.ItemID} item={item} />
+                    ))
+                  ) : (
+                    /* 預設模式：分組顯示 */
+                    Array.from(groupedData.entries()).map(([category, items]) => (
+                      <Fragment key={category}>
+                        <tr>
+                          <td colSpan={5} className="px-6 py-2 bg-gray-50 dark:bg-gray-750 border-b border-gray-200 dark:border-gray-700">
+                            <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                              {category}
+                              <span className="ml-2 text-xs font-normal text-gray-400">({items.length})</span>
+                            </span>
+                          </td>
+                        </tr>
+                        {items.map((item) => (
+                          <TableRow key={item.ItemID} item={item} />
+                        ))}
+                      </Fragment>
+                    ))
+                  )}
+                </tbody>
+              </table>
             </div>
-          ))
+
+            {/* 手機版：卡片 */}
+            <div className="sm:hidden">
+              {sortedData ? (
+                /* 排序模式：扁平列表 */
+                <div className="divide-y divide-gray-100 dark:divide-gray-700/50">
+                  {sortedData.map((item) => (
+                    <MobileCard key={item.ItemID} item={item} />
+                  ))}
+                </div>
+              ) : (
+                /* 預設模式：分組顯示 */
+                Array.from(groupedData.entries()).map(([category, items]) => (
+                  <div key={category}>
+                    <div className="sticky top-0 px-4 py-2 bg-gray-50 dark:bg-gray-750 border-b border-gray-200 dark:border-gray-700 z-10">
+                      <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                        {category}
+                        <span className="ml-2 text-xs font-normal text-gray-400">({items.length})</span>
+                      </h3>
+                    </div>
+                    <div className="divide-y divide-gray-100 dark:divide-gray-700/50">
+                      {items.map((item) => (
+                        <MobileCard key={item.ItemID} item={item} />
+                      ))}
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+          </>
         )}
       </div>
     </div>

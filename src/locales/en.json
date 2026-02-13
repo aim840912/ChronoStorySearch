@@ -548,6 +548,8 @@
   "scrollExchange.col.percent": "Rate",
   "scrollExchange.col.rate": "Exchange",
   "scrollExchange.col.voucher": "Voucher",
+  "scrollExchange.droppable": "Droppable",
+  "scrollExchange.exchangeAvailable": "Available via Scroll Exchange",
   "itemStats.title": "Item Stats",
   "itemStats.noStats": "No stats available",
   "itemStats.clearAll": "Clear All",

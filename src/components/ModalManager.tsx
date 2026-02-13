@@ -73,6 +73,7 @@ interface ModalManagerProps {
   handleItemClickFromMonsterModal: (itemId: number, itemName: string) => void
   handleMonsterClickFromItemModal: (mobId: number, mobName: string) => void
   handleGachaMachineClick: (machineId: number) => void
+  handleScrollExchangeClick: () => void
   handleClearConfirm: () => void
 
   // 工具 Modal 狀態（舊的，僅用於 GameCommands）
@@ -169,6 +170,7 @@ export const ModalManager = memo(function ModalManager({
   handleItemClickFromMonsterModal,
   handleMonsterClickFromItemModal,
   handleGachaMachineClick,
+  handleScrollExchangeClick,
   handleClearConfirm,
   isAccuracyCalcOpen: _isAccuracyCalcOpen,
   setIsAccuracyCalcOpen: _setIsAccuracyCalcOpen,
@@ -241,6 +243,7 @@ export const ModalManager = memo(function ModalManager({
         onMonsterClick={handleMonsterClickFromItemModal}
         onGachaMachineClick={handleGachaMachineClick}
         onItemClick={handleItemClickFromMonsterModal}
+        onScrollExchangeClick={handleScrollExchangeClick}
         hasPreviousModal={hasPreviousModal}
         onGoBack={goBack}
       />

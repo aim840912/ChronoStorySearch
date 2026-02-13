@@ -548,6 +548,8 @@
   "scrollExchange.col.percent": "成功率",
   "scrollExchange.col.rate": "兌換率",
   "scrollExchange.col.voucher": "兌換券",
+  "scrollExchange.droppable": "可掉落",
+  "scrollExchange.exchangeAvailable": "可透過捲軸兌換取得",
   "itemStats.title": "物品屬性",
   "itemStats.noStats": "無屬性資訊",
   "itemStats.clearAll": "清空全部",
