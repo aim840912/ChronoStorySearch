@@ -113,27 +113,18 @@ export function integrateGachaItems(
         const trimmedSearch = debouncedSearchTerm.trim()
         const isIdSearch = /^\d+$/.test(trimmedSearch)
 
-        if (isIdSearch) {
-          // ID 搜尋時：只整合已在 itemMap 中的物品（來自匹配怪物的掉落）
-          // 或者 itemId 直接匹配搜尋的 ID
-          const existing = itemMap.get(gachaItem.itemId)
-          if (!existing && gachaItem.itemId.toString() !== trimmedSearch) {
-            return
-          }
-        } else {
-          // 名稱搜尋：檢查物品名稱或是否為已匹配怪物的掉落物品
-          const existing = itemMap.get(gachaItem.itemId)
-          const itemName = gachaItem.name || gachaItem.itemName || ''
-          const chineseItemName = gachaItem.chineseName || ''
+        // 純數字時同時搜尋 ID 和名稱（例如 "60" 可匹配 ID=60 或名稱含 "60%" 的捲軸）
+        const existing = itemMap.get(gachaItem.itemId)
+        const itemName = gachaItem.name || gachaItem.itemName || ''
+        const chineseItemName = gachaItem.chineseName || ''
 
-          const matches = matchesAllKeywords(itemName, debouncedSearchTerm) ||
-                         (chineseItemName && matchesAllKeywords(chineseItemName, debouncedSearchTerm))
+        const matchesId = isIdSearch && gachaItem.itemId.toString() === trimmedSearch
+        const matchesName = matchesAllKeywords(itemName, debouncedSearchTerm) ||
+                       (chineseItemName && matchesAllKeywords(chineseItemName, debouncedSearchTerm))
 
-          // 如果物品名稱不匹配且物品不在 itemMap 中，跳過
-          // 如果物品已在 itemMap 中，表示它是匹配怪物的掉落物品，應該整合轉蛋資訊
-          if (!matches && !existing) {
-            return
-          }
+        // 如果不匹配 ID、不匹配名稱、且不在 itemMap 中（非已匹配怪物掉落），跳過
+        if (!matchesId && !matchesName && !existing) {
+          return
         }
       }
 
