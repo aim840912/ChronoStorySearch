@@ -23,13 +23,15 @@ interface ItemAttributesCardProps {
   showMaxOnly?: boolean
   /** 是否啟用設定面板（用於 ItemModal） */
   enableSettings?: boolean
+  /** 緊湊模式（用於 DropItemDetailModal 快速預覽） */
+  compact?: boolean
 }
 
 /**
  * 物品屬性卡片元件
  * 顯示物品的完整屬性資料（使用 ItemsOrganizedData 格式）
  */
-export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettings = false }: ItemAttributesCardProps) {
+export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettings = false, compact = false }: ItemAttributesCardProps) {
   const { t } = useLanguage()
 
   // 設定相關 state（僅在 enableSettings 時使用）
@@ -125,12 +127,12 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
   // 無資料時顯示空狀態
   if (!itemData) {
     return (
-      <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-        <h3 className="text-xl font-bold text-gray-700 dark:text-gray-300 mb-4">
+      <div className={`bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg ${compact ? 'p-3' : 'p-6'}`}>
+        <h3 className={`font-bold text-gray-700 dark:text-gray-300 ${compact ? 'text-sm mb-2' : 'text-xl mb-4'}`}>
           {t('item.attributes')}
         </h3>
-        <div className="flex flex-col items-center justify-center py-8 text-gray-500 dark:text-gray-400">
-          <p className="text-lg font-medium">{t('item.noAttributes')}</p>
+        <div className={`flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 ${compact ? 'py-4' : 'py-8'}`}>
+          <p className={`font-medium ${compact ? 'text-sm' : 'text-lg'}`}>{t('item.noAttributes')}</p>
         </div>
       </div>
     )
@@ -169,36 +171,36 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
     ].filter(stat => stat.value !== undefined && stat.value !== null && stat.value !== 0)
 
     return (
-      <div className="bg-purple-50 dark:bg-purple-900/20 rounded-xl p-6 shadow-lg border border-purple-200 dark:border-purple-800">
-        <h3 className="text-xl font-bold text-purple-900 dark:text-purple-100 mb-4">
+      <div className={`bg-purple-50 dark:bg-purple-900/20 rounded-xl shadow-lg border border-purple-200 dark:border-purple-800 ${compact ? 'p-3' : 'p-6'}`}>
+        <h3 className={`font-bold text-purple-900 dark:text-purple-100 ${compact ? 'text-sm mb-2' : 'text-xl mb-4'}`}>
           {t('item.scrollInfo')}
         </h3>
 
-        <div className="mb-4 bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
-          <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+        <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm ${compact ? 'mb-2 p-2.5' : 'mb-4 p-4'}`}>
+          <h4 className={`font-semibold text-gray-700 dark:text-gray-300 ${compact ? 'text-xs mb-1' : 'text-sm mb-2'}`}>
             {t('item.applicableEquipment')}
           </h4>
-          <div className="inline-block bg-purple-500 dark:bg-purple-600 text-white text-sm font-medium px-4 py-2 rounded-full">
+          <div className={`inline-block bg-purple-500 dark:bg-purple-600 text-white font-medium rounded-full ${compact ? 'text-xs px-2.5 py-1' : 'text-sm px-4 py-2'}`}>
             {t(`item.category.${typeInfo.subCategory || typeInfo.category}`)}
           </div>
         </div>
 
-        <div className="mb-4 bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
-          <div className="grid grid-cols-2 gap-4">
+        <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm ${compact ? 'mb-2 p-2.5' : 'mb-4 p-4'}`}>
+          <div className={`grid grid-cols-2 ${compact ? 'gap-2' : 'gap-4'}`}>
             <div>
-              <div className="text-sm text-gray-500 dark:text-gray-400 mb-1">
+              <div className={`text-gray-500 dark:text-gray-400 mb-1 ${compact ? 'text-xs' : 'text-sm'}`}>
                 {t('item.successRate')}
               </div>
-              <div className="text-2xl font-bold text-green-600 dark:text-green-400">
+              <div className={`font-bold text-green-600 dark:text-green-400 ${compact ? 'text-lg' : 'text-2xl'}`}>
                 {successRate}%
               </div>
             </div>
             {destroyRate > 0 && (
               <div>
-                <div className="text-sm text-gray-500 dark:text-gray-400 mb-1">
+                <div className={`text-gray-500 dark:text-gray-400 mb-1 ${compact ? 'text-xs' : 'text-sm'}`}>
                   {t('item.destroyRate')}
                 </div>
-                <div className="text-2xl font-bold text-red-600 dark:text-red-400">
+                <div className={`font-bold text-red-600 dark:text-red-400 ${compact ? 'text-lg' : 'text-2xl'}`}>
                   {destroyRate}%
                 </div>
               </div>
@@ -207,17 +209,17 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
         </div>
 
         {scrollStats.length > 0 && (
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
-            <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+          <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm ${compact ? 'p-2.5' : 'p-4'}`}>
+            <h4 className={`font-semibold text-gray-700 dark:text-gray-300 ${compact ? 'text-xs mb-1.5' : 'text-sm mb-3'}`}>
               {t('item.statBonus')}
             </h4>
-            <div className="grid grid-cols-2 gap-3">
+            <div className={`grid grid-cols-2 ${compact ? 'gap-1.5' : 'gap-3'}`}>
               {scrollStats.map(({ key, label, value }) => (
                 <div key={key} className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                  <span className={`text-gray-600 dark:text-gray-400 ${compact ? 'text-xs' : 'text-sm'}`}>
                     {label}:
                   </span>
-                  <span className="text-lg font-bold text-blue-600 dark:text-blue-400">
+                  <span className={`font-bold text-blue-600 dark:text-blue-400 ${compact ? 'text-sm' : 'text-lg'}`}>
                     {value}
                   </span>
                 </div>
@@ -227,8 +229,8 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
         )}
 
         {scrollStats.length === 0 && (
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
-            <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
+          <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm ${compact ? 'p-2.5' : 'p-4'}`}>
+            <p className={`text-gray-500 dark:text-gray-400 text-center ${compact ? 'text-xs' : 'text-sm'}`}>
               {t('item.noStatBonus')}
             </p>
           </div>
@@ -242,13 +244,13 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
     const effects = metaInfo.effects || []
 
     return (
-      <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-6 shadow-lg border border-green-200 dark:border-green-800">
-        <h3 className="text-xl font-bold text-green-900 dark:text-green-100 mb-4">
+      <div className={`bg-green-50 dark:bg-green-900/20 rounded-xl shadow-lg border border-green-200 dark:border-green-800 ${compact ? 'p-3' : 'p-6'}`}>
+        <h3 className={`font-bold text-green-900 dark:text-green-100 ${compact ? 'text-sm mb-2' : 'text-xl mb-4'}`}>
           {t('item.info')}
         </h3>
 
-        <div className="mb-4 bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
-          <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+        <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm ${compact ? 'mb-2 p-2.5' : 'mb-4 p-4'}`}>
+          <h4 className={`font-semibold text-gray-700 dark:text-gray-300 ${compact ? 'text-xs mb-1' : 'text-sm mb-2'}`}>
             {t('item.basicInfo')}
           </h4>
           <div className="space-y-2 text-sm">
@@ -362,8 +364,9 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
         onDragOver={isDraggable ? handleDragOver : undefined}
         onDrop={isDraggable ? (e) => handleDrop(e, key) : undefined}
         onDragEnd={isDraggable ? handleDragEnd : undefined}
-        className={`bg-white dark:bg-gray-800 rounded-lg px-4 py-2 shadow-sm transition-shadow transition-opacity transition-transform duration-200 ${
-          isDraggable ? 'cursor-grab active:cursor-grabbing hover:shadow-md' : 'hover:shadow-md'
+        className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm transition-shadow transition-opacity transition-transform duration-200 ${
+          compact ? 'px-2 py-1' : 'px-4 py-2'
+        } ${isDraggable ? 'cursor-grab active:cursor-grabbing hover:shadow-md' : 'hover:shadow-md'
         } ${isDragging ? 'opacity-50 scale-95' : ''}`}
       >
         <div className={isGridView ? "flex flex-col gap-1" : "flex justify-between items-center gap-4"}>
@@ -373,7 +376,7 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
 
           {effectiveShowMaxOnly ? (
             <div className="flex items-center gap-2">
-              <div className={`text-lg font-bold ${hasVariation ? 'text-green-500 dark:text-green-400' : 'text-gray-900 dark:text-gray-100'}`}>
+              <div className={`font-bold text-lg ${hasVariation ? 'text-green-500 dark:text-green-400' : 'text-gray-900 dark:text-gray-100'}`}>
                 {hasVariation ? maxValue : value}
               </div>
               {hasVariation && (
@@ -392,7 +395,7 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
                 <span className="text-green-500 dark:text-green-400">{maxValue}</span>
               </div>
             ) : (
-              <span className="text-lg font-bold text-gray-900 dark:text-gray-100">{value}</span>
+              <span className="font-bold text-lg text-gray-900 dark:text-gray-100">{value}</span>
             )
           )}
         </div>
@@ -401,25 +404,29 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
   }
 
   return (
-    <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-6 shadow-lg border border-green-200 dark:border-green-800">
-      <h3 className="text-xl font-bold text-green-900 dark:text-green-100 mb-4">
-        {t('item.attributes')}
-      </h3>
+    <div className={`bg-green-50 dark:bg-green-900/20 rounded-xl shadow-lg border border-green-200 dark:border-green-800 ${compact ? 'p-2' : 'p-6'}`}>
+      {!compact && (
+        <h3 className="font-bold text-green-900 dark:text-green-100 text-xl mb-4">
+          {t('item.attributes')}
+        </h3>
+      )}
 
       {/* 需求條件 */}
       {requirementStats.length > 0 && (
-        <div className="mb-4">
-          <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-            {t('item.requirements')}
-          </h4>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+        <div className={compact ? 'mb-1.5' : 'mb-4'}>
+          {!compact && (
+            <h4 className="font-semibold text-gray-700 dark:text-gray-300 text-sm mb-2">
+              {t('item.requirements')}
+            </h4>
+          )}
+          <div className={`grid grid-cols-2 sm:grid-cols-3 ${compact ? 'gap-1' : 'gap-2'}`}>
             {requirementStats.map(({ key, label, value, color }) => (
               <div
                 key={key}
-                className="bg-white dark:bg-gray-800 rounded-lg p-2 shadow-sm"
+                className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm ${compact ? 'p-1.5' : 'p-2'}`}
               >
                 <div className="text-xs text-gray-500 dark:text-gray-400">{label}</div>
-                <div className={`text-lg font-bold ${color}`}>{value}</div>
+                <div className={`font-bold ${color} text-lg`}>{value}</div>
               </div>
             ))}
           </div>
@@ -428,15 +435,17 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
 
       {/* 職業限制 */}
       {availableClasses.length > 0 && (
-        <div className="mb-4">
-          <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-            {t('item.jobRestrictions')}
-          </h4>
-          <div className="flex flex-wrap gap-2">
+        <div className={compact ? 'mb-1.5' : 'mb-4'}>
+          {!compact && (
+            <h4 className="font-semibold text-gray-700 dark:text-gray-300 text-sm mb-2">
+              {t('item.jobRestrictions')}
+            </h4>
+          )}
+          <div className={`flex flex-wrap ${compact ? 'gap-1' : 'gap-2'}`}>
             {availableClasses.map((className) => (
               <span
                 key={className}
-                className="bg-green-500 dark:bg-green-600 text-white text-xs font-medium px-3 py-1 rounded-full"
+                className={`bg-green-500 dark:bg-green-600 text-white font-medium rounded-full ${compact ? 'text-xs px-2.5 py-0.5' : 'text-xs px-3 py-1'}`}
               >
                 {t(`item.${className}`)}
               </span>
@@ -447,10 +456,12 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
 
       {/* 裝備屬性 */}
       <div>
-        <div className="flex items-center justify-between mb-2">
-          <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-            {t('item.stats')}
-          </h4>
+        <div className={`flex items-center justify-between ${compact ? 'mb-1' : 'mb-2'}`}>
+          {!compact && (
+            <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+              {t('item.stats')}
+            </h4>
+          )}
           {/* 設定按鈕 - 只在 enableSettings 時顯示 */}
           {enableSettings && (
             <div className="relative">
@@ -609,15 +620,16 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
                     onDragOver={enableSettings ? handleDragOver : undefined}
                     onDrop={enableSettings ? (e) => handleDrop(e, 'category') : undefined}
                     onDragEnd={enableSettings ? handleDragEnd : undefined}
-                    className={`bg-white dark:bg-gray-800 rounded-lg px-4 py-2 shadow-sm transition-shadow transition-opacity transition-transform duration-200 ${
-                      enableSettings ? 'cursor-grab active:cursor-grabbing hover:shadow-md' : ''
+                    className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm transition-shadow transition-opacity transition-transform duration-200 ${
+                      compact ? 'px-2 py-1' : 'px-4 py-2'
+                    } ${enableSettings ? 'cursor-grab active:cursor-grabbing hover:shadow-md' : ''
                     } ${draggedItem === 'category' ? 'opacity-50 scale-95' : ''}`}
                   >
                     <div className="flex flex-col gap-1">
                       <div className="text-sm text-gray-600 dark:text-gray-400 whitespace-nowrap">
                         {t('item.category')}
                       </div>
-                      <div className="text-lg font-bold text-gray-900 dark:text-gray-100 whitespace-nowrap">
+                      <div className="font-bold text-lg text-gray-900 dark:text-gray-100 whitespace-nowrap">
                         {t(`item.category.${typeInfo.subCategory || typeInfo.category}`)}
                       </div>
                     </div>
@@ -628,7 +640,7 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
             })}
           </div>
         ) : (
-          <div className="flex flex-col gap-2">
+          <div className={`flex flex-col ${compact ? 'gap-1' : 'gap-2'}`}>
             {sortedStats.map(stat => {
               // 分類項目特殊處理
               if (stat.key === 'category') {
@@ -640,15 +652,16 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
                     onDragOver={enableSettings ? handleDragOver : undefined}
                     onDrop={enableSettings ? (e) => handleDrop(e, 'category') : undefined}
                     onDragEnd={enableSettings ? handleDragEnd : undefined}
-                    className={`bg-white dark:bg-gray-800 rounded-lg px-4 py-2 shadow-sm transition-shadow transition-opacity transition-transform duration-200 ${
-                      enableSettings ? 'cursor-grab active:cursor-grabbing hover:shadow-md' : ''
+                    className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm transition-shadow transition-opacity transition-transform duration-200 ${
+                      compact ? 'px-2 py-1' : 'px-4 py-2'
+                    } ${enableSettings ? 'cursor-grab active:cursor-grabbing hover:shadow-md' : ''
                     } ${draggedItem === 'category' ? 'opacity-50 scale-95' : ''}`}
                   >
                     <div className="flex justify-between items-center gap-4">
                       <div className="text-sm text-gray-600 dark:text-gray-400 whitespace-nowrap flex-shrink-0">
                         {t('item.category')}
                       </div>
-                      <div className="text-lg font-bold text-gray-900 dark:text-gray-100 whitespace-nowrap">
+                      <div className="font-bold text-lg text-gray-900 dark:text-gray-100 whitespace-nowrap">
                         {t(`item.category.${typeInfo.subCategory || typeInfo.category}`)}
                       </div>
                     </div>

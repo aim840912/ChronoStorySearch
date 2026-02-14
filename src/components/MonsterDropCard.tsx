@@ -156,9 +156,9 @@ export const MonsterDropCard = memo(function MonsterDropCard({
         </div>
       </div>
 
-      {/* 掉落率和血量 */}
-      <div className="flex gap-3">
-        <div className="flex-1">
+      {/* 掉落率和血量（空間不足時自動垂直排列） */}
+      <div className="flex flex-wrap gap-2">
+        <div className="flex-1 min-w-[110px]">
           <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">
             {t('card.dropChance')}
           </div>
@@ -168,7 +168,7 @@ export const MonsterDropCard = memo(function MonsterDropCard({
             </span>
           </div>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 min-w-[110px]">
           <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">
             {t('card.hp')}
           </div>
