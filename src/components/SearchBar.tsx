@@ -45,6 +45,9 @@ interface SearchBarProps {
   isScrollExchangeMode?: boolean
   onScrollExchangeToggle?: () => void
   onScrollExchangeClose?: () => void
+  // SEO 頁面模式
+  isSeoPageMode?: boolean
+  onSeoPageModeToggle?: () => void
 }
 
 /**
@@ -86,6 +89,9 @@ export function SearchBar({
   isScrollExchangeMode = false,
   onScrollExchangeToggle,
   onScrollExchangeClose,
+  // SEO 頁面模式
+  isSeoPageMode = false,
+  onSeoPageModeToggle,
 }: SearchBarProps) {
   const { t } = useLanguage()
 
@@ -241,6 +247,8 @@ export function SearchBar({
           isScrollExchangeMode={isScrollExchangeMode}
           onScrollExchangeToggle={onScrollExchangeToggle}
           onScrollExchangeClose={onScrollExchangeClose}
+          isSeoPageMode={isSeoPageMode}
+          onSeoPageModeToggle={onSeoPageModeToggle}
         />
       )}
     </div>
