@@ -79,6 +79,10 @@ interface SearchHeaderProps {
   onScrollExchangeToggle?: () => void
   onScrollExchangeClose?: () => void
 
+  // SEO 頁面模式
+  isSeoPageMode?: boolean
+  onSeoPageModeToggle?: () => void
+
   // 檢舉模式相關
   isReportMode?: boolean
   onReportModeToggle?: () => void
@@ -151,6 +155,9 @@ export const SearchHeader = memo(function SearchHeader({
   isScrollExchangeMode = false,
   onScrollExchangeToggle,
   onScrollExchangeClose,
+  // SEO 頁面模式
+  isSeoPageMode = false,
+  onSeoPageModeToggle,
   // 檢舉模式相關
   isReportMode = false,
   onReportModeToggle,
@@ -703,6 +710,8 @@ export const SearchHeader = memo(function SearchHeader({
             isScrollExchangeMode={isScrollExchangeMode}
             onScrollExchangeToggle={onScrollExchangeToggle}
             onScrollExchangeClose={onScrollExchangeClose}
+            isSeoPageMode={isSeoPageMode}
+            onSeoPageModeToggle={onSeoPageModeToggle}
           />
           {/* 進階篩選面板 - 僅搜尋模式顯示 */}
           <AdvancedFilterPanel

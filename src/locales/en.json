@@ -556,6 +556,9 @@
   "scrollExchange.col.voucher": "Voucher",
   "scrollExchange.droppable": "Droppable",
   "scrollExchange.exchangeAvailable": "Available via Scroll Exchange",
+  "seoPageMode.button": "Page",
+  "seoPageMode.tooltip.on": "Click cards to open detail pages",
+  "seoPageMode.tooltip.off": "Click cards to open modals",
   "itemStats.title": "Item Stats",
   "itemStats.noStats": "No stats available",
   "itemStats.clearAll": "Clear All",
@@ -1026,5 +1029,9 @@
   "legal.terms.changes.title": "Changes to Terms",
   "legal.terms.changes.desc": "This website reserves the right to modify these terms at any time. Modified terms take effect immediately upon publication on the website. Continued use of this website constitutes acceptance of the modified terms.",
   "legal.terms.contact.title": "Contact",
-  "legal.terms.contact.desc": "If you have any questions about these terms of service, please contact us through the Discord community link on this website."
+  "legal.terms.contact.desc": "If you have any questions about these terms of service, please contact us through the Discord community link on this website.",
+  "seo.monsterStats": "Stats",
+  "seo.droppedItems": "Dropped Items",
+  "seo.dropSources": "Drop Sources",
+  "seo.attributes": "Attributes"
 }

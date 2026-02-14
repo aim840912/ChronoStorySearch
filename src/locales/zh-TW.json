@@ -556,6 +556,9 @@
   "scrollExchange.col.voucher": "兌換券",
   "scrollExchange.droppable": "可掉落",
   "scrollExchange.exchangeAvailable": "可透過捲軸兌換取得",
+  "seoPageMode.button": "頁面",
+  "seoPageMode.tooltip.on": "點擊卡片開啟詳細頁面",
+  "seoPageMode.tooltip.off": "點擊卡片開啟彈窗",
   "itemStats.title": "物品屬性",
   "itemStats.noStats": "無屬性資訊",
   "itemStats.clearAll": "清空全部",
@@ -1027,5 +1030,9 @@
   "legal.terms.changes.title": "條款變更",
   "legal.terms.changes.desc": "本網站保留隨時修改這些條款的權利。修改後的條款將在網站上公布後立即生效。繼續使用本網站即表示您同意修改後的條款。",
   "legal.terms.contact.title": "聯絡方式",
-  "legal.terms.contact.desc": "如果您對本服務條款有任何疑問，請透過網站上的 Discord 社群連結與我們聯繫。"
+  "legal.terms.contact.desc": "如果您對本服務條款有任何疑問，請透過網站上的 Discord 社群連結與我們聯繫。",
+  "seo.monsterStats": "怪物屬性",
+  "seo.droppedItems": "掉落物品",
+  "seo.dropSources": "掉落來源",
+  "seo.attributes": "物品屬性"
 }
