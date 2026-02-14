@@ -18,6 +18,14 @@ import { useLazyMobInfo, useLazyDropsDetailed } from '@/hooks/useLazyData'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { useShowDevInfo } from '@/hooks/useShowDevInfo'
 import { LanguageToggle } from './LanguageToggle'
+import { InFeedAd } from '@/components/adsense'
+
+/** Modal 內每隔多少張卡片插入一個廣告 */
+const MODAL_AD_INTERVAL = 10
+/** Modal 內最多插入的 InFeed 廣告數量 */
+const MODAL_MAX_ADS = 3
+/** 至少要有多少張卡片才插入廣告 */
+const MODAL_MIN_ITEMS_FOR_ADS = 10
 
 interface MonsterModalProps {
   isOpen: boolean
@@ -538,20 +546,35 @@ export function MonsterModal({
             {/* 根據視圖模式渲染不同的佈局 */}
             {viewMode === 'grid' ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
-                {filteredDrops.map((drop, index) => (
-                  <DropItemCard
-                    key={`${drop.itemId}-${index}`}
-                    drop={drop}
-                    itemAttributesMap={itemAttributesMap}
-                    isFavorite={isItemFavorite(drop.itemId)}
-                    onToggleFavorite={onToggleItemFavorite}
-                    onItemClick={onItemClick}
-                    showIcons={showDropIcons}
-                    showMaxOnly={showMaxOnly}
-                    onMonsterClick={handleMonsterClickFromDetail}
-                    showTip={index === 0}
-                  />
-                ))}
+                {(() => {
+                  let adCount = 0
+                  return filteredDrops.flatMap((drop, index) => {
+                    const card = (
+                      <DropItemCard
+                        key={`${drop.itemId}-${index}`}
+                        drop={drop}
+                        itemAttributesMap={itemAttributesMap}
+                        isFavorite={isItemFavorite(drop.itemId)}
+                        onToggleFavorite={onToggleItemFavorite}
+                        onItemClick={onItemClick}
+                        showIcons={showDropIcons}
+                        showMaxOnly={showMaxOnly}
+                        onMonsterClick={handleMonsterClickFromDetail}
+                        showTip={index === 0}
+                      />
+                    )
+                    if (
+                      filteredDrops.length >= MODAL_MIN_ITEMS_FOR_ADS &&
+                      (index + 1) % MODAL_AD_INTERVAL === 0 &&
+                      index < filteredDrops.length - 1 &&
+                      adCount < MODAL_MAX_ADS
+                    ) {
+                      adCount++
+                      return [card, <InFeedAd key={`ad-monster-modal-${index}`} className="col-span-full" />]
+                    }
+                    return [card]
+                  })
+                })()}
               </div>
             ) : viewMode === 'list' ? (
               <DropItemList
