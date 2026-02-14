@@ -175,6 +175,7 @@
   "modal.favoriteRemove": "取消收藏",
   "modal.share": "分享連結",
   "modal.close": "關閉",
+  "modal.openPage": "開啟詳細頁面",
   "modal.linkCopied": "連結已複製到剪貼簿",
   "modal.copyFailed": "複製失敗，請手動複製",
   "modal.goBack": "返回",

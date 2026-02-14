@@ -5,14 +5,12 @@ import type { DropsEssential, GachaMachine, ItemAttributesEssential, ItemsOrgani
 import { MonsterDropCard } from './MonsterDropCard'
 import { MonsterDropList } from './MonsterDropList'
 import { ItemAttributesCard } from './ItemAttributesCard'
-import { Toast } from './Toast'
 import { BaseModal } from './common/BaseModal'
 import { clientLogger } from '@/lib/logger'
 import { getItemImageUrl, getMonsterImageUrl } from '@/lib/image-utils'
 import { getMonsterDisplayName } from '@/lib/display-name'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { useToast } from '@/hooks/useToast'
 import { useLazyMobInfo, useLazyItemDetailed, useLazyDropsByItem } from '@/hooks/useLazyData'
 import { findGachaItemOrganized } from '@/lib/gacha-utils'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
@@ -91,7 +89,6 @@ export function ItemModal({
 }: ItemModalProps) {
   const { t, language } = useLanguage()
   const showDevInfo = useShowDevInfo()
-  const toast = useToast()
 
   // 手機版 Tab 狀態（'info' = 物品資訊, 'sources' = 掉落來源）
   const [mobileTab, setMobileTab] = useState<'info' | 'sources'>('info')
@@ -376,24 +373,18 @@ export function ItemModal({
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          {/* 分享按鈕 */}
+          {/* 開啟 SEO 頁面按鈕 */}
           <button
-            onClick={async () => {
+            onClick={() => {
               if (!itemId && itemId !== 0) return
-              const url = `${window.location.origin}/#item=${itemId}`
-              try {
-                await navigator.clipboard.writeText(url)
-                toast.showToast(t('share.success'), 'success')
-              } catch {
-                toast.showToast(t('share.error'), 'error')
-              }
+              window.open(`/item/${itemId}`, '_blank')
             }}
             className="p-3 min-h-[44px] min-w-[44px] transition-all duration-200 hover:scale-110 active:scale-95 flex items-center justify-center text-white dark:text-gray-300 hover:text-blue-500"
-            aria-label={t('share.button')}
-            title={t('share.button')}
+            aria-label={t('modal.openPage')}
+            title={t('modal.openPage')}
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </button>
           {/* 語言切換按鈕 */}
@@ -811,13 +802,6 @@ export function ItemModal({
         </div>
       </div>
 
-      {/* Toast 通知 */}
-      <Toast
-        message={toast.message}
-        isVisible={toast.isVisible}
-        onClose={toast.hideToast}
-        type={toast.type}
-      />
     </BaseModal>
   )
 }

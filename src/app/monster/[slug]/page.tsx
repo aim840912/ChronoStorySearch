@@ -9,6 +9,7 @@ import {
 import { MonsterStatsCard } from '@/components/MonsterStatsCard'
 import { MonsterDropsSection } from '@/components/seo/MonsterDropsSection'
 import { SeoText } from '@/components/seo/SeoText'
+import { SeoFavoriteButton } from '@/components/seo/SeoFavoriteButton'
 import { LanguageToggle } from '@/components/LanguageToggle'
 import { DisplayAd, MultiplexAd } from '@/components/adsense'
 
@@ -94,7 +95,7 @@ export default async function MonsterPage({
     <main className="min-h-screen bg-gray-950 text-gray-100">
       {/* Navigation */}
       <nav className="sticky top-0 z-10 bg-gray-900/80 backdrop-blur-sm border-b border-gray-800">
-        <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link
             href="/"
             className="text-sm text-gray-400 hover:text-white transition-colors"
@@ -105,54 +106,64 @@ export default async function MonsterPage({
         </div>
       </nav>
 
-      <div className="max-w-4xl mx-auto px-4 py-6 space-y-6">
-        {/* Monster Header */}
-        <header className="flex items-center gap-4">
-          <div className="w-20 h-20 flex-shrink-0 flex items-center justify-center bg-gray-800/50 rounded-xl border border-gray-700/50">
+      <div className="max-w-6xl mx-auto px-4 py-6 space-y-6">
+        {/* Monster Header — sticky below nav */}
+        <header className="flex items-center gap-3 sticky top-[53px] z-[9] bg-gray-950 -mx-4 px-4 py-3 border-b border-gray-800/50">
+          <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-gray-800/50 rounded-lg border border-gray-700/50">
             <img
               src={`${R2_URL}/images/monsters/${mobId}.png`}
               alt={mobName}
               className="max-w-full max-h-full object-contain"
             />
           </div>
-          <div>
-            <h1 className="text-2xl font-bold text-white">
-              {mobName}
-            </h1>
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center gap-2">
+              <h1 className="text-xl font-bold text-white truncate">
+                {mobName}
+              </h1>
+              {isBoss && (
+                <span className="flex-shrink-0 px-1.5 py-0.5 text-[10px] font-medium bg-red-500/20 text-red-400 rounded">
+                  BOSS
+                </span>
+              )}
+            </div>
             {chineseMobName && (
-              <p className="text-lg text-gray-400">{chineseMobName}</p>
-            )}
-            {isBoss && (
-              <span className="inline-block mt-1 px-2 py-0.5 text-xs font-medium bg-red-500/20 text-red-400 rounded">
-                BOSS
-              </span>
+              <p className="text-sm text-gray-400 truncate">{chineseMobName}</p>
             )}
           </div>
+          <SeoFavoriteButton type="monster" id={mobId} name={mobName} />
         </header>
 
-        {/* Monster Stats */}
-        {mobInfo && (
-          <section>
-            <h2 className="text-lg font-semibold text-gray-200 mb-3">
-              <SeoText textKey="seo.monsterStats" />
-            </h2>
-            <MonsterStatsCard mobInfo={mobInfo} />
-          </section>
-        )}
+        {/* Content — 大螢幕左右分欄 */}
+        <div className="flex flex-col lg:flex-row gap-6">
+          {/* 左側：怪物屬性 */}
+          {mobInfo && (
+            <div className="lg:w-[340px] lg:flex-shrink-0">
+              <section>
+                <h2 className="text-lg font-semibold text-gray-200 mb-3">
+                  <SeoText textKey="seo.monsterStats" />
+                </h2>
+                <MonsterStatsCard mobInfo={mobInfo} />
+              </section>
+            </div>
+          )}
 
-        <DisplayAd />
+          {/* 右側：掉落物品 */}
+          <div className="flex-1 min-w-0 space-y-6">
+            <DisplayAd />
 
-        {/* Drop List */}
-        <section>
-          <h2 className="text-lg font-semibold text-gray-200 mb-3">
-            <SeoText textKey="seo.droppedItems" /> ({drops.length})
-          </h2>
-          <div className="bg-gray-900/50 rounded-xl border border-gray-800/50 p-3">
-            <MonsterDropsSection drops={drops} />
+            <section>
+              <h2 className="text-lg font-semibold text-gray-200 mb-3">
+                <SeoText textKey="seo.droppedItems" /> ({drops.length})
+              </h2>
+              <div className="bg-gray-900/50 rounded-xl border border-gray-800/50 p-3">
+                <MonsterDropsSection drops={drops} />
+              </div>
+            </section>
+
+            <MultiplexAd />
           </div>
-        </section>
-
-        <MultiplexAd />
+        </div>
       </div>
     </main>
   )
