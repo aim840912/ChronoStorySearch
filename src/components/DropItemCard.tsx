@@ -8,6 +8,7 @@ import { getItemImageUrl, getMonsterImageUrl } from '@/lib/image-utils'
 import { useDropRelations } from '@/hooks/useDropRelations'
 import { useShowDevInfo } from '@/hooks/useShowDevInfo'
 import { DropItemDetailModal } from './DropItemDetailModal'
+import { TipBubble } from './TipBubble'
 
 interface DropItemCardProps {
   drop: DropItem
@@ -21,6 +22,8 @@ interface DropItemCardProps {
   showMaxOnly?: boolean
   /** 點擊怪物圖片時的回調（從 DropItemDetailModal 導航到怪物 Modal） */
   onMonsterClick?: (mobId: number) => void
+  /** 是否顯示 TipBubble（僅第一張卡片顯示） */
+  showTip?: boolean
 }
 
 /**
@@ -36,6 +39,7 @@ export function DropItemCard({
   showIcons = false,
   showMaxOnly = false,
   onMonsterClick,
+  showTip = false,
 }: DropItemCardProps) {
   const { language, t } = useLanguage()
   const showDevInfo = useShowDevInfo()
@@ -102,19 +106,31 @@ export function DropItemCard({
         className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-5 border border-gray-200 dark:border-gray-700 cursor-pointer active:scale-[0.98] relative"
       >
         {/* 查看詳細按鈕 - 愛心左邊 */}
-        <button
-          onClick={(e) => {
-            e.stopPropagation()
-            setIsDetailModalOpen(true)
-          }}
-          className="absolute top-12 right-3 p-2 transition-all duration-200 hover:scale-110 active:scale-95 text-gray-400 hover:text-blue-500"
-          aria-label={t('card.viewDetail')}
-          title={t('card.viewDetail')}
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </button>
+        <div className="absolute top-12 right-3">
+          <div className="relative">
+            <button
+              onClick={(e) => {
+                e.stopPropagation()
+                setIsDetailModalOpen(true)
+              }}
+              className="p-2 transition-all duration-200 hover:scale-110 active:scale-95 text-gray-400 hover:text-blue-500"
+              aria-label={t('card.viewDetail')}
+              title={t('card.viewDetail')}
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </button>
+            {showTip && (
+              <TipBubble
+                tipId="view-item-detail"
+                message={t('tip.viewItemDetail')}
+                prerequisiteTipId="monster-show-max-only"
+                position="right"
+              />
+            )}
+          </div>
+        </div>
 
         {/* 最愛按鈕 - 右上角 */}
         <button
@@ -174,8 +190,10 @@ export function DropItemCard({
             className="w-16 h-16 object-contain flex-shrink-0"
             loading="lazy"
           />
-          <div className="flex-1">
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+          <div className="flex-1 min-w-0 pr-8">
+            <h3 className={`font-bold text-gray-900 dark:text-white ${
+              displayItemName.length > 25 ? 'text-sm' : displayItemName.length > 18 ? 'text-base' : 'text-lg'
+            }`}>
               {displayItemName}
             </h3>
             {showDevInfo && (
@@ -186,9 +204,9 @@ export function DropItemCard({
           </div>
         </div>
 
-        {/* 掉落率和數量/等級/效果 */}
-        <div className="flex gap-3">
-          <div className="flex-1">
+        {/* 掉落率和數量/等級/效果（空間不足時自動垂直排列） */}
+        <div className="flex flex-wrap gap-2">
+          <div className="flex-1 min-w-[110px]">
             <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">
               {t('card.dropChance')}
             </div>
@@ -198,7 +216,7 @@ export function DropItemCard({
               </span>
             </div>
           </div>
-          <div className="flex-1">
+          <div className="flex-1 min-w-[110px]">
             <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">
               {label}
             </div>

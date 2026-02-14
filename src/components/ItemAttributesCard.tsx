@@ -365,18 +365,18 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
         onDrop={isDraggable ? (e) => handleDrop(e, key) : undefined}
         onDragEnd={isDraggable ? handleDragEnd : undefined}
         className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm transition-shadow transition-opacity transition-transform duration-200 ${
-          compact ? 'px-2.5 py-1.5' : 'px-4 py-2'
+          compact ? 'px-2 py-1' : 'px-4 py-2'
         } ${isDraggable ? 'cursor-grab active:cursor-grabbing hover:shadow-md' : 'hover:shadow-md'
         } ${isDragging ? 'opacity-50 scale-95' : ''}`}
       >
         <div className={isGridView ? "flex flex-col gap-1" : "flex justify-between items-center gap-4"}>
-          <div className={`text-gray-600 dark:text-gray-400 whitespace-nowrap ${compact ? 'text-xs' : 'text-sm'}`}>
+          <div className="text-sm text-gray-600 dark:text-gray-400 whitespace-nowrap">
             {label}
           </div>
 
           {effectiveShowMaxOnly ? (
             <div className="flex items-center gap-2">
-              <div className={`font-bold ${compact ? 'text-sm' : 'text-lg'} ${hasVariation ? 'text-green-500 dark:text-green-400' : 'text-gray-900 dark:text-gray-100'}`}>
+              <div className={`font-bold text-lg ${hasVariation ? 'text-green-500 dark:text-green-400' : 'text-gray-900 dark:text-gray-100'}`}>
                 {hasVariation ? maxValue : value}
               </div>
               {hasVariation && (
@@ -395,7 +395,7 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
                 <span className="text-green-500 dark:text-green-400">{maxValue}</span>
               </div>
             ) : (
-              <span className={`font-bold text-gray-900 dark:text-gray-100 ${compact ? 'text-sm' : 'text-lg'}`}>{value}</span>
+              <span className="font-bold text-lg text-gray-900 dark:text-gray-100">{value}</span>
             )
           )}
         </div>
@@ -404,25 +404,29 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
   }
 
   return (
-    <div className={`bg-green-50 dark:bg-green-900/20 rounded-xl shadow-lg border border-green-200 dark:border-green-800 ${compact ? 'p-3' : 'p-6'}`}>
-      <h3 className={`font-bold text-green-900 dark:text-green-100 ${compact ? 'text-sm mb-2' : 'text-xl mb-4'}`}>
-        {t('item.attributes')}
-      </h3>
+    <div className={`bg-green-50 dark:bg-green-900/20 rounded-xl shadow-lg border border-green-200 dark:border-green-800 ${compact ? 'p-2' : 'p-6'}`}>
+      {!compact && (
+        <h3 className="font-bold text-green-900 dark:text-green-100 text-xl mb-4">
+          {t('item.attributes')}
+        </h3>
+      )}
 
       {/* 需求條件 */}
       {requirementStats.length > 0 && (
-        <div className={compact ? 'mb-2' : 'mb-4'}>
-          <h4 className={`font-semibold text-gray-700 dark:text-gray-300 ${compact ? 'text-xs mb-1' : 'text-sm mb-2'}`}>
-            {t('item.requirements')}
-          </h4>
-          <div className={`grid grid-cols-2 sm:grid-cols-3 ${compact ? 'gap-1.5' : 'gap-2'}`}>
+        <div className={compact ? 'mb-1.5' : 'mb-4'}>
+          {!compact && (
+            <h4 className="font-semibold text-gray-700 dark:text-gray-300 text-sm mb-2">
+              {t('item.requirements')}
+            </h4>
+          )}
+          <div className={`grid grid-cols-2 sm:grid-cols-3 ${compact ? 'gap-1' : 'gap-2'}`}>
             {requirementStats.map(({ key, label, value, color }) => (
               <div
                 key={key}
                 className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm ${compact ? 'p-1.5' : 'p-2'}`}
               >
                 <div className="text-xs text-gray-500 dark:text-gray-400">{label}</div>
-                <div className={`font-bold ${color} ${compact ? 'text-sm' : 'text-lg'}`}>{value}</div>
+                <div className={`font-bold ${color} text-lg`}>{value}</div>
               </div>
             ))}
           </div>
@@ -431,15 +435,17 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
 
       {/* 職業限制 */}
       {availableClasses.length > 0 && (
-        <div className={compact ? 'mb-2' : 'mb-4'}>
-          <h4 className={`font-semibold text-gray-700 dark:text-gray-300 ${compact ? 'text-xs mb-1' : 'text-sm mb-2'}`}>
-            {t('item.jobRestrictions')}
-          </h4>
-          <div className={`flex flex-wrap ${compact ? 'gap-1.5' : 'gap-2'}`}>
+        <div className={compact ? 'mb-1.5' : 'mb-4'}>
+          {!compact && (
+            <h4 className="font-semibold text-gray-700 dark:text-gray-300 text-sm mb-2">
+              {t('item.jobRestrictions')}
+            </h4>
+          )}
+          <div className={`flex flex-wrap ${compact ? 'gap-1' : 'gap-2'}`}>
             {availableClasses.map((className) => (
               <span
                 key={className}
-                className={`bg-green-500 dark:bg-green-600 text-white font-medium rounded-full ${compact ? 'text-[10px] px-2 py-0.5' : 'text-xs px-3 py-1'}`}
+                className={`bg-green-500 dark:bg-green-600 text-white font-medium rounded-full ${compact ? 'text-xs px-2.5 py-0.5' : 'text-xs px-3 py-1'}`}
               >
                 {t(`item.${className}`)}
               </span>
@@ -450,10 +456,12 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
 
       {/* 裝備屬性 */}
       <div>
-        <div className="flex items-center justify-between mb-2">
-          <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-            {t('item.stats')}
-          </h4>
+        <div className={`flex items-center justify-between ${compact ? 'mb-1' : 'mb-2'}`}>
+          {!compact && (
+            <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+              {t('item.stats')}
+            </h4>
+          )}
           {/* 設定按鈕 - 只在 enableSettings 時顯示 */}
           {enableSettings && (
             <div className="relative">
@@ -613,15 +621,15 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
                     onDrop={enableSettings ? (e) => handleDrop(e, 'category') : undefined}
                     onDragEnd={enableSettings ? handleDragEnd : undefined}
                     className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm transition-shadow transition-opacity transition-transform duration-200 ${
-                      compact ? 'px-2.5 py-1.5' : 'px-4 py-2'
+                      compact ? 'px-2 py-1' : 'px-4 py-2'
                     } ${enableSettings ? 'cursor-grab active:cursor-grabbing hover:shadow-md' : ''
                     } ${draggedItem === 'category' ? 'opacity-50 scale-95' : ''}`}
                   >
                     <div className="flex flex-col gap-1">
-                      <div className={`text-gray-600 dark:text-gray-400 whitespace-nowrap ${compact ? 'text-xs' : 'text-sm'}`}>
+                      <div className="text-sm text-gray-600 dark:text-gray-400 whitespace-nowrap">
                         {t('item.category')}
                       </div>
-                      <div className={`font-bold text-gray-900 dark:text-gray-100 whitespace-nowrap ${compact ? 'text-sm' : 'text-lg'}`}>
+                      <div className="font-bold text-lg text-gray-900 dark:text-gray-100 whitespace-nowrap">
                         {t(`item.category.${typeInfo.subCategory || typeInfo.category}`)}
                       </div>
                     </div>
@@ -632,7 +640,7 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
             })}
           </div>
         ) : (
-          <div className="flex flex-col gap-2">
+          <div className={`flex flex-col ${compact ? 'gap-1' : 'gap-2'}`}>
             {sortedStats.map(stat => {
               // 分類項目特殊處理
               if (stat.key === 'category') {
@@ -645,15 +653,15 @@ export function ItemAttributesCard({ itemData, showMaxOnly = false, enableSettin
                     onDrop={enableSettings ? (e) => handleDrop(e, 'category') : undefined}
                     onDragEnd={enableSettings ? handleDragEnd : undefined}
                     className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm transition-shadow transition-opacity transition-transform duration-200 ${
-                      compact ? 'px-2.5 py-1.5' : 'px-4 py-2'
+                      compact ? 'px-2 py-1' : 'px-4 py-2'
                     } ${enableSettings ? 'cursor-grab active:cursor-grabbing hover:shadow-md' : ''
                     } ${draggedItem === 'category' ? 'opacity-50 scale-95' : ''}`}
                   >
                     <div className="flex justify-between items-center gap-4">
-                      <div className={`text-gray-600 dark:text-gray-400 whitespace-nowrap flex-shrink-0 ${compact ? 'text-xs' : 'text-sm'}`}>
+                      <div className="text-sm text-gray-600 dark:text-gray-400 whitespace-nowrap flex-shrink-0">
                         {t('item.category')}
                       </div>
-                      <div className={`font-bold text-gray-900 dark:text-gray-100 whitespace-nowrap ${compact ? 'text-sm' : 'text-lg'}`}>
+                      <div className="font-bold text-lg text-gray-900 dark:text-gray-100 whitespace-nowrap">
                         {t(`item.category.${typeInfo.subCategory || typeInfo.category}`)}
                       </div>
                     </div>
