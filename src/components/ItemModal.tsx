@@ -8,7 +8,9 @@ import { ItemAttributesCard } from './ItemAttributesCard'
 import { Toast } from './Toast'
 import { BaseModal } from './common/BaseModal'
 import { clientLogger } from '@/lib/logger'
-import { getItemImageUrl } from '@/lib/image-utils'
+import { getItemImageUrl, getMonsterImageUrl } from '@/lib/image-utils'
+import { getMonsterDisplayName } from '@/lib/display-name'
+import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useToast } from '@/hooks/useToast'
 import { useLazyMobInfo, useLazyItemDetailed, useLazyDropsByItem } from '@/hooks/useLazyData'
@@ -86,14 +88,16 @@ export function ItemModal({
   // 手機版 Tab 狀態（'info' = 物品資訊, 'sources' = 掉落來源）
   const [mobileTab, setMobileTab] = useState<'info' | 'sources'>('info')
 
-  // 視圖模式切換狀態（'grid' = 卡片視圖, 'list' = 列表視圖）
-  const [viewMode, setViewMode] = useLocalStorage<'grid' | 'list'>('item-sources-view', 'grid')
+  // 視圖模式切換狀態（'grid' = 卡片視圖, 'list' = 列表視圖, 'icons' = 圖示視圖）
+  const [viewMode, setViewMode] = useLocalStorage<'grid' | 'list' | 'icons'>('item-sources-view', 'grid')
 
   // 是否顯示掉落來源圖示（預設隱藏）
   const [showDropIcons, setShowDropIconsLocal] = useLocalStorage<boolean>('item-sources-show-icons', false)
 
+  const { format } = useImageFormat()
+
   // 包裝 setter 函數以觸發雲端同步
-  const setViewModeWithSync = (mode: 'grid' | 'list') => {
+  const setViewModeWithSync = (mode: 'grid' | 'list' | 'icons') => {
     setViewMode(mode)
     window.dispatchEvent(new CustomEvent('preference-changed', {
       detail: { field: 'itemSourcesViewMode', value: mode }
@@ -391,7 +395,7 @@ export function ItemModal({
     >
       <div className="bg-white dark:bg-gray-800 rounded-xl flex-1 flex flex-col min-h-0 overflow-hidden">
         {/* 手機版 Tab 切換（只在手機版顯示） */}
-        <div className="lg:hidden border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+        <div className="min-[1120px]:hidden border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
           <div className="flex">
             <button
               onClick={() => setMobileTab('info')}
@@ -418,11 +422,11 @@ export function ItemModal({
 
         {/* Modal Content - 左右分欄佈局（手機版上下堆疊） */}
         {/* 手機版移除上方 padding，讓按鈕列貼齊 Tab */}
-        <div className="px-3 pb-3 lg:p-6 flex flex-col lg:flex-row gap-3 sm:gap-6 flex-1 min-h-0 overflow-hidden">
+        <div className="px-3 pb-3 min-[1120px]:p-6 flex flex-col min-[1120px]:flex-row gap-3 sm:gap-6 flex-1 min-h-0 overflow-hidden">
           {/* 左側：物品屬性（桌面版顯示 / 手機版根據 Tab 顯示） */}
           {/* 手機版需要上方 padding，因為內容區域沒有 */}
-          <div className={`pt-3 lg:pt-0 lg:w-[320px] lg:flex-shrink-0 space-y-4 flex-1 lg:flex-none h-full overflow-y-auto scrollbar-hide ${
-            mobileTab === 'sources' ? 'hidden lg:block' : ''
+          <div className={`pt-3 min-[1120px]:pt-0 min-[1120px]:w-[320px] min-[1120px]:flex-shrink-0 space-y-4 flex-1 min-[1120px]:flex-none h-full overflow-y-auto scrollbar-hide ${
+            mobileTab === 'sources' ? 'hidden min-[1120px]:block' : ''
           }`}>
             {/* 物品圖示與收藏按鈕 */}
             <div className="relative mb-4">
@@ -506,16 +510,16 @@ export function ItemModal({
           </div>
 
           {/* 右側：轉蛋機來源 + 掉落來源怪物列表（桌面版顯示 / 手機版根據 Tab 顯示） */}
-          <div className={`flex-1 lg:w-2/3 h-full overflow-y-auto scrollbar-hide ${
-            mobileTab === 'info' ? 'hidden lg:block' : ''
+          <div className={`flex-1 min-[1120px]:w-2/3 h-full overflow-y-auto scrollbar-hide ${
+            mobileTab === 'info' ? 'hidden min-[1120px]:block' : ''
           }`}>
             {/* 轉蛋機來源區塊 */}
             {itemGachaSources.length > 0 && (
               <div className="mb-8">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden lg:block">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden min-[1120px]:block">
                   {t('item.gachaSources')}
                 </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
+                <div className="grid grid-cols-1 gap-3 sm:gap-4 p-1">
                   {itemGachaSources.map((source) => {
                     const displayMachineName = language === 'zh-TW' && source.chineseMachineName
                       ? source.chineseMachineName
@@ -527,12 +531,12 @@ export function ItemModal({
                         onClick={() => onGachaMachineClick(source.machineId)}
                         className="bg-purple-50 dark:bg-purple-900/20 rounded-lg shadow-lg hover:shadow-xl p-5 border border-purple-200 dark:border-purple-700 cursor-pointer hover:scale-[1.02] transition-all duration-300 active:scale-[0.98]"
                       >
-                        <div className="flex items-center justify-between">
-                          <div>
+                        <div className="flex items-center justify-between gap-2">
+                          <div className="min-w-0">
                             <p className="font-semibold text-gray-900 dark:text-white">
                               {displayMachineName}
                               {source.machineId === 7 && (
-                                <span className="text-red-500 dark:text-red-400 ml-1">
+                                <span className="text-red-500 dark:text-red-400 ml-1 whitespace-nowrap">
                                   {t('gacha.closed')}
                                 </span>
                               )}
@@ -543,7 +547,7 @@ export function ItemModal({
                               </p>
                             )}
                           </div>
-                          <div className="bg-purple-100 dark:bg-purple-800 px-3 py-1 rounded-full">
+                          <div className="bg-purple-100 dark:bg-purple-800 px-3 py-1 rounded-full flex-shrink-0">
                             <span className="text-sm font-bold text-purple-700 dark:text-purple-200">
                               {source.probability}
                             </span>
@@ -559,7 +563,7 @@ export function ItemModal({
             {/* 商人販售區塊 */}
             {itemMerchantSources.length > 0 && (
               <div className="mb-8">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden lg:block">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden min-[1120px]:block">
                   {t('item.merchantSources')}
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
@@ -598,7 +602,7 @@ export function ItemModal({
             {/* 捲軸兌換資訊區塊（與轉蛋機來源卡片同格式） */}
             {scrollExchangeInfo && (
               <div className="mb-8">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden lg:block">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden min-[1120px]:block">
                   {t('scrollExchange.title')}
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
@@ -629,7 +633,7 @@ export function ItemModal({
             {/* 製作配方區塊（Unwelcome Guest 系列） */}
             {craftingRecipe && (
               <div className="mb-8">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden lg:block">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 sm:mb-4 hidden min-[1120px]:block">
                   {language === 'zh-TW' ? '製作方法' : 'Crafting Recipe'}
                 </h3>
                 <CraftingRecipeCard
@@ -656,47 +660,64 @@ export function ItemModal({
               <div>
                 {/* 掉落來源標題和視圖切換 */}
                 <div className="flex items-center justify-between mb-3 sm:mb-4 sticky top-0 bg-white dark:bg-gray-800 z-10 py-2">
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 hidden lg:block">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 hidden min-[1120px]:block">
                     {t('card.droppedBy')} ({itemDrops.length})
                   </h3>
                   {/* 切換按鈕區域 */}
-                  <div className="flex gap-2 lg:ml-auto">
-                    {/* 顯示圖示切換按鈕 */}
+                  <div className="flex gap-2 min-[1120px]:ml-auto">
+                    {/* 顯示圖示切換按鈕（僅卡片/列表視圖顯示） */}
+                    {viewMode !== 'icons' && (
+                      <button
+                        onClick={() => setShowDropIconsWithSync(!showDropIcons)}
+                        className={`p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 ${
+                          showDropIcons
+                            ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400'
+                            : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                        }`}
+                        aria-label={showDropIcons ? t('card.hideDropIcons') : t('card.showDropIcons')}
+                        title={showDropIcons ? t('card.hideDropIcons') : t('card.showDropIcons')}
+                      >
+                        {showDropIcons ? (
+                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                          </svg>
+                        ) : (
+                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+                          </svg>
+                        )}
+                      </button>
+                    )}
+                    {/* 視圖切換按鈕（grid → list → icons 循環） */}
                     <button
-                      onClick={() => setShowDropIconsWithSync(!showDropIcons)}
-                      className={`p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 ${
-                        showDropIcons
-                          ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400'
-                          : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                      }`}
-                      aria-label={showDropIcons ? t('card.hideDropIcons') : t('card.showDropIcons')}
-                      title={showDropIcons ? t('card.hideDropIcons') : t('card.showDropIcons')}
-                    >
-                      {showDropIcons ? (
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                        </svg>
-                      ) : (
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
-                        </svg>
-                      )}
-                    </button>
-                    {/* 視圖切換按鈕 */}
-                    <button
-                      onClick={() => setViewModeWithSync(viewMode === 'grid' ? 'list' : 'grid')}
+                      onClick={() => {
+                        const next = viewMode === 'grid' ? 'list' : viewMode === 'list' ? 'icons' : 'grid'
+                        setViewModeWithSync(next)
+                      }}
                       className="p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600"
-                      aria-label={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
-                      title={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
+                      aria-label={t(viewMode === 'grid' ? 'item.switchToList' : viewMode === 'list' ? 'item.switchToIcons' : 'item.switchToGrid')}
+                      title={t(viewMode === 'grid' ? 'item.switchToList' : viewMode === 'list' ? 'item.switchToIcons' : 'item.switchToGrid')}
                     >
                       {viewMode === 'grid' ? (
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                         </svg>
-                      ) : (
+                      ) : viewMode === 'list' ? (
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                      ) : (
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                          <rect x="3" y="3" width="4.5" height="4.5" rx="1" />
+                          <rect x="9.75" y="3" width="4.5" height="4.5" rx="1" />
+                          <rect x="16.5" y="3" width="4.5" height="4.5" rx="1" />
+                          <rect x="3" y="9.75" width="4.5" height="4.5" rx="1" />
+                          <rect x="9.75" y="9.75" width="4.5" height="4.5" rx="1" />
+                          <rect x="16.5" y="9.75" width="4.5" height="4.5" rx="1" />
+                          <rect x="3" y="16.5" width="4.5" height="4.5" rx="1" />
+                          <rect x="9.75" y="16.5" width="4.5" height="4.5" rx="1" />
+                          <rect x="16.5" y="16.5" width="4.5" height="4.5" rx="1" />
                         </svg>
                       )}
                     </button>
@@ -717,7 +738,7 @@ export function ItemModal({
                       />
                     ))}
                   </div>
-                ) : (
+                ) : viewMode === 'list' ? (
                   <MonsterDropList
                     drops={itemDrops}
                     monsterHPMap={monsterHPMap}
@@ -725,6 +746,32 @@ export function ItemModal({
                     onToggleFavorite={onToggleMonsterFavorite}
                     onMonsterClick={onMonsterClick}
                   />
+                ) : (
+                  /* Icons-only view: 緊湊怪物圖示網格（含掉落率） */
+                  <div className="flex flex-wrap gap-2 p-1">
+                    {itemDrops.map((drop, idx) => {
+                      const mobName = getMonsterDisplayName(drop.mobName, drop.chineseMobName, language)
+                      const iconUrl = getMonsterImageUrl(drop.mobId, { format })
+                      return (
+                        <div
+                          key={`${drop.mobId}-${idx}`}
+                          onClick={() => onMonsterClick(drop.mobId, mobName)}
+                          className="w-[72px] h-[72px] rounded-lg bg-gray-50 dark:bg-gray-700/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 border border-gray-200 dark:border-gray-600 cursor-pointer transition-all duration-200 hover:scale-110 active:scale-95 flex flex-col items-center justify-center gap-0.5"
+                          title={mobName}
+                        >
+                          <img
+                            src={iconUrl}
+                            alt={mobName}
+                            className="w-11 h-11 monster-image"
+                            loading="lazy"
+                          />
+                          <span className="text-[10px] font-semibold text-purple-600 dark:text-purple-400 leading-tight">
+                            {drop.chance.toFixed(2)}%
+                          </span>
+                        </div>
+                      )
+                    })}
+                  </div>
                 )}
               </div>
             )}

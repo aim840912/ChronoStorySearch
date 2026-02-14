@@ -9,7 +9,8 @@ import { MonsterSpawnsCard } from './MonsterSpawnsCard'
 import { Toast } from './Toast'
 import { BaseModal } from './common/BaseModal'
 import { TipBubble } from '@/components/TipBubble'
-import { getMonsterImageUrl } from '@/lib/image-utils'
+import { getMonsterImageUrl, getItemImageUrl } from '@/lib/image-utils'
+import { getItemDisplayName } from '@/lib/display-name'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { useToast } from '@/hooks/useToast'
@@ -36,6 +37,8 @@ interface MonsterModalProps {
   onGoBack?: () => void
   // 命中率計算器相關 props
   onOpenAccuracyCalculator?: (monsterId: number) => void
+  // 怪物導航（從 DropItemDetailModal 點擊怪物圖片觸發）
+  onMonsterClick?: (mobId: number, mobName: string) => void
 }
 
 /**
@@ -57,6 +60,7 @@ export function MonsterModal({
   hasPreviousModal,
   onGoBack,
   onOpenAccuracyCalculator,
+  onMonsterClick,
 }: MonsterModalProps) {
   const { t, language } = useLanguage()
   const { format } = useImageFormat()
@@ -66,8 +70,8 @@ export function MonsterModal({
   // 手機版 Tab 狀態（'info' = 怪物資訊, 'drops' = 掉落物品）
   const [mobileTab, setMobileTab] = useState<'info' | 'drops'>('info')
 
-  // 視圖模式切換狀態（'grid' = 卡片視圖, 'list' = 列表視圖）
-  const [viewMode, setViewModeLocal] = useLocalStorage<'grid' | 'list'>('monster-drops-view', 'grid')
+  // 視圖模式切換狀態（'grid' = 卡片視圖, 'list' = 列表視圖, 'icons' = 圖示視圖）
+  const [viewMode, setViewModeLocal] = useLocalStorage<'grid' | 'list' | 'icons'>('monster-drops-view', 'grid')
 
   // 顯示掉落來源圖示狀態（預設隱藏）
   const [showDropIcons, setShowDropIconsLocal] = useLocalStorage<boolean>('monster-drops-show-icons', false)
@@ -76,7 +80,7 @@ export function MonsterModal({
   const [showMaxOnly, setShowMaxOnlyLocal] = useLocalStorage<boolean>('monster-drops-show-max-only', false)
 
   // 包裝 setter 函數以觸發雲端同步
-  const setViewMode = (mode: 'grid' | 'list') => {
+  const setViewMode = (mode: 'grid' | 'list' | 'icons') => {
     setViewModeLocal(mode)
     window.dispatchEvent(new CustomEvent('preference-changed', {
       detail: { field: 'monsterDropsViewMode', value: mode }
@@ -197,6 +201,14 @@ export function MonsterModal({
       loadMobInfo()
     }
   }, [isOpen, loadMobInfo])
+
+  // 從 DropItemDetailModal 點擊怪物圖片：解析名稱後導航
+  const handleMonsterClickFromDetail = useCallback((mobId: number) => {
+    if (!onMonsterClick) return
+    const mob = allDrops.find(d => d.mobId === mobId)
+    const name = mob?.mobName || String(mobId)
+    onMonsterClick(mobId, name)
+  }, [onMonsterClick, allDrops])
 
   if (!monsterId) return null
 
@@ -443,42 +455,59 @@ export function MonsterModal({
                     )}
                   </div>
                 )}
-                {/* 圖示顯示切換按鈕 */}
+                {/* 圖示顯示切換按鈕（僅卡片/列表視圖顯示） */}
+                {viewMode !== 'icons' && (
+                  <button
+                    onClick={() => setShowDropIcons(!showDropIcons)}
+                    className={`p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 ${
+                      showDropIcons
+                        ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                    }`}
+                    aria-label={showDropIcons ? t('card.hideDropIcons') : t('card.showDropIcons')}
+                    title={showDropIcons ? t('card.hideDropIcons') : t('card.showDropIcons')}
+                  >
+                    {showDropIcons ? (
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                      </svg>
+                    ) : (
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+                      </svg>
+                    )}
+                  </button>
+                )}
+                {/* 視圖切換按鈕（grid → list → icons 循環） */}
                 <button
-                  onClick={() => setShowDropIcons(!showDropIcons)}
-                  className={`p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 ${
-                    showDropIcons
-                      ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400'
-                      : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                  }`}
-                  aria-label={showDropIcons ? t('card.hideDropIcons') : t('card.showDropIcons')}
-                  title={showDropIcons ? t('card.hideDropIcons') : t('card.showDropIcons')}
-                >
-                  {showDropIcons ? (
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                    </svg>
-                  ) : (
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
-                    </svg>
-                  )}
-                </button>
-                {/* 視圖切換按鈕 */}
-                <button
-                  onClick={() => setViewMode(viewMode === 'grid' ? 'list' : 'grid')}
+                  onClick={() => {
+                    const next = viewMode === 'grid' ? 'list' : viewMode === 'list' ? 'icons' : 'grid'
+                    setViewMode(next)
+                  }}
                   className="p-2 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600"
-                  aria-label={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
-                  title={viewMode === 'grid' ? '切換為列表視圖' : '切換為卡片視圖'}
+                  aria-label={t(viewMode === 'grid' ? 'item.switchToList' : viewMode === 'list' ? 'item.switchToIcons' : 'item.switchToGrid')}
+                  title={t(viewMode === 'grid' ? 'item.switchToList' : viewMode === 'list' ? 'item.switchToIcons' : 'item.switchToGrid')}
                 >
                   {viewMode === 'grid' ? (
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                     </svg>
-                  ) : (
+                  ) : viewMode === 'list' ? (
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  ) : (
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <rect x="3" y="3" width="4.5" height="4.5" rx="1" />
+                      <rect x="9.75" y="3" width="4.5" height="4.5" rx="1" />
+                      <rect x="16.5" y="3" width="4.5" height="4.5" rx="1" />
+                      <rect x="3" y="9.75" width="4.5" height="4.5" rx="1" />
+                      <rect x="9.75" y="9.75" width="4.5" height="4.5" rx="1" />
+                      <rect x="16.5" y="9.75" width="4.5" height="4.5" rx="1" />
+                      <rect x="3" y="16.5" width="4.5" height="4.5" rx="1" />
+                      <rect x="9.75" y="16.5" width="4.5" height="4.5" rx="1" />
+                      <rect x="16.5" y="16.5" width="4.5" height="4.5" rx="1" />
                     </svg>
                   )}
                 </button>
@@ -519,10 +548,12 @@ export function MonsterModal({
                     onItemClick={onItemClick}
                     showIcons={showDropIcons}
                     showMaxOnly={showMaxOnly}
+                    onMonsterClick={handleMonsterClickFromDetail}
+                    showTip={index === 0}
                   />
                 ))}
               </div>
-            ) : (
+            ) : viewMode === 'list' ? (
               <DropItemList
                 drops={filteredDrops}
                 itemAttributesMap={itemAttributesMap}
@@ -530,6 +561,62 @@ export function MonsterModal({
                 onToggleFavorite={onToggleItemFavorite}
                 onItemClick={onItemClick}
               />
+            ) : (
+              /* Icons-only view: 緊湊物品圖示網格（捲軸顯示名稱） */
+              <div className="flex flex-wrap gap-2 p-1">
+                {filteredDrops.map((drop, idx) => {
+                  const displayName = getItemDisplayName(drop.itemName, drop.chineseItemName, language)
+                  const iconUrl = getItemImageUrl(drop.itemId, { itemName: drop.itemName })
+                  const isScroll = drop.itemName.toLowerCase().includes('scroll')
+
+                  if (isScroll) {
+                    // 捲軸：顯示圖示 + 名稱 + 掉落率
+                    return (
+                      <div
+                        key={`${drop.itemId}-${idx}`}
+                        onClick={() => onItemClick(drop.itemId, displayName)}
+                        className="h-[72px] rounded-lg bg-gray-50 dark:bg-gray-700/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 border border-gray-200 dark:border-gray-600 cursor-pointer transition-all duration-200 hover:scale-105 active:scale-95 flex items-center gap-2 px-3"
+                        title={displayName}
+                      >
+                        <img
+                          src={iconUrl}
+                          alt={displayName}
+                          className="w-10 h-10 object-contain flex-shrink-0"
+                          loading="lazy"
+                        />
+                        <div className="min-w-0">
+                          <p className="text-xs font-medium text-gray-800 dark:text-gray-200">
+                            {displayName}
+                          </p>
+                          <span className="text-[10px] font-semibold text-purple-600 dark:text-purple-400">
+                            {drop.chance.toFixed(2)}%
+                          </span>
+                        </div>
+                      </div>
+                    )
+                  }
+
+                  // 非捲軸：正方形圖示 + 掉落率
+                  return (
+                    <div
+                      key={`${drop.itemId}-${idx}`}
+                      onClick={() => onItemClick(drop.itemId, displayName)}
+                      className="w-[72px] h-[72px] rounded-lg bg-gray-50 dark:bg-gray-700/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 border border-gray-200 dark:border-gray-600 cursor-pointer transition-all duration-200 hover:scale-110 active:scale-95 flex flex-col items-center justify-center gap-0.5"
+                      title={displayName}
+                    >
+                      <img
+                        src={iconUrl}
+                        alt={displayName}
+                        className="w-11 h-11 object-contain"
+                        loading="lazy"
+                      />
+                      <span className="text-[10px] font-semibold text-purple-600 dark:text-purple-400 leading-tight">
+                        {drop.chance.toFixed(2)}%
+                      </span>
+                    </div>
+                  )
+                })}
+              </div>
             )}
           </div>
         </div>
