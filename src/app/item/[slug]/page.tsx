@@ -9,6 +9,7 @@ import {
 import { ItemAttributesCard } from '@/components/ItemAttributesCard'
 import { ItemSourcesSection } from '@/components/seo/ItemSourcesSection'
 import { SeoText } from '@/components/seo/SeoText'
+import { SeoFavoriteButton } from '@/components/seo/SeoFavoriteButton'
 import { LanguageToggle } from '@/components/LanguageToggle'
 import { DisplayAd, MultiplexAd } from '@/components/adsense'
 
@@ -101,7 +102,7 @@ export default async function ItemPage({
     <main className="min-h-screen bg-gray-950 text-gray-100">
       {/* Navigation */}
       <nav className="sticky top-0 z-10 bg-gray-900/80 backdrop-blur-sm border-b border-gray-800">
-        <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link
             href="/"
             className="text-sm text-gray-400 hover:text-white transition-colors"
@@ -112,52 +113,60 @@ export default async function ItemPage({
         </div>
       </nav>
 
-      <div className="max-w-4xl mx-auto px-4 py-6 space-y-6">
-        {/* Item Header */}
-        <header className="flex items-center gap-4">
-          <div className="w-16 h-16 flex-shrink-0 flex items-center justify-center bg-gray-800/50 rounded-xl border border-gray-700/50">
+      <div className="max-w-6xl mx-auto px-4 py-6 space-y-6">
+        {/* Item Header — sticky below nav */}
+        <header className="flex items-center gap-3 sticky top-[53px] z-[9] bg-gray-950 -mx-4 px-4 py-3 border-b border-gray-800/50">
+          <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-gray-800/50 rounded-lg border border-gray-700/50">
             <img
               src={`${R2_URL}/images/items/${itemId}.png`}
               alt={itemName}
               className="max-w-full max-h-full object-contain"
             />
           </div>
-          <div>
-            <h1 className="text-2xl font-bold text-white">
+          <div className="min-w-0 flex-1">
+            <h1 className="text-xl font-bold text-white truncate">
               {itemName}
             </h1>
             {chineseItemName && (
-              <p className="text-lg text-gray-400">{chineseItemName}</p>
+              <p className="text-sm text-gray-400 truncate">{chineseItemName}</p>
             )}
             {category && (
-              <p className="text-sm text-gray-500 mt-0.5">{category}</p>
+              <p className="text-xs text-gray-500 truncate">{category}</p>
             )}
           </div>
+          <SeoFavoriteButton type="item" id={itemId} name={itemName} />
         </header>
 
-        {/* Item Attributes */}
-        {itemDetails && (
-          <section>
-            <h2 className="text-lg font-semibold text-gray-200 mb-3">
-              <SeoText textKey="seo.attributes" />
-            </h2>
-            <ItemAttributesCard itemData={itemDetails} />
-          </section>
-        )}
+        {/* Content — 大螢幕左右分欄 */}
+        <div className="flex flex-col lg:flex-row gap-6">
+          {/* 左側：物品屬性 */}
+          {itemDetails && (
+            <div className="lg:w-[340px] lg:flex-shrink-0">
+              <section>
+                <h2 className="text-lg font-semibold text-gray-200 mb-3">
+                  <SeoText textKey="seo.attributes" />
+                </h2>
+                <ItemAttributesCard itemData={itemDetails} />
+              </section>
+            </div>
+          )}
 
-        <DisplayAd />
+          {/* 右側：掉落來源 */}
+          <div className="flex-1 min-w-0 space-y-6">
+            <DisplayAd />
 
-        {/* Drop Sources */}
-        <section>
-          <h2 className="text-lg font-semibold text-gray-200 mb-3">
-            <SeoText textKey="seo.dropSources" /> ({monsters.length})
-          </h2>
-          <div className="bg-gray-900/50 rounded-xl border border-gray-800/50 p-3">
-            <ItemSourcesSection monsters={monsters} />
+            <section>
+              <h2 className="text-lg font-semibold text-gray-200 mb-3">
+                <SeoText textKey="seo.dropSources" /> ({monsters.length})
+              </h2>
+              <div className="bg-gray-900/50 rounded-xl border border-gray-800/50 p-3">
+                <ItemSourcesSection monsters={monsters} />
+              </div>
+            </section>
+
+            <MultiplexAd />
           </div>
-        </section>
-
-        <MultiplexAd />
+        </div>
       </div>
     </main>
   )
