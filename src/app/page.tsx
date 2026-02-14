@@ -36,6 +36,9 @@ import { GA4_EVENTS } from '@/lib/analytics/events'
 export default function Home() {
   const { t, language } = useLanguage()
 
+  // ===== SEO 頁面模式 =====
+  const [seoPageMode, setSeoPageMode] = useState(false)
+
   // ===== 核心篩選狀態 =====
   const [filterMode, setFilterMode] = useState<FilterMode>('all')
   const [searchType, setSearchType] = useState<SearchTypeFilter>('all')
@@ -330,6 +333,28 @@ export default function Home() {
     })
   }, [search, suggestions, gachaMachines, modals])
 
+  // SEO 頁面模式切換
+  const handleSeoPageModeToggle = useCallback(() => {
+    setSeoPageMode(prev => !prev)
+  }, [])
+
+  // SEO 頁面模式：卡片點擊導向獨立頁面（新分頁）
+  const handleMonsterCardClick = useCallback((mobId: number, mobName: string) => {
+    if (seoPageMode) {
+      window.open(`/monster/${mobId}`, '_blank')
+    } else {
+      modals.openMonsterModal(mobId, mobName)
+    }
+  }, [seoPageMode, modals])
+
+  const handleItemCardClick = useCallback((itemId: number, itemName: string) => {
+    if (seoPageMode) {
+      window.open(`/item/${itemId}`, '_blank')
+    } else {
+      modals.openItemModal(itemId, itemName)
+    }
+  }, [seoPageMode, modals])
+
   // MonsterModal 中點擊裝備：不關閉 MonsterModal，直接在上方打開 ItemModal（保存導航歷史）
   const handleItemClickFromMonsterModal = useCallback((itemId: number, itemName: string) => {
     // 不調用 modals.closeMonsterModal()
@@ -425,6 +450,9 @@ export default function Home() {
           isScrollExchangeMode={pageModes.isScrollExchangeMode}
           onScrollExchangeToggle={pageModes.toggleScrollExchange}
           onScrollExchangeClose={pageModes.closeScrollExchange}
+          // SEO 頁面模式
+          isSeoPageMode={seoPageMode}
+          onSeoPageModeToggle={handleSeoPageModeToggle}
         />
 
         {/* 檢舉系統區域 - 檢舉模式時顯示 */}
@@ -482,14 +510,14 @@ export default function Home() {
           filteredUniqueMonsters={filteredUniqueMonsters}
           mobLevelMap={mobLevelMap}
           mobInGameMap={mobInGameMap}
-          onMonsterCardClick={modals.openMonsterModal}
+          onMonsterCardClick={handleMonsterCardClick}
           onToggleFavorite={favorites.monsters.toggle}
           isFavorite={favorites.monsters.isFavorite}
           onClearMonsters={() => modals.openClearModal('monsters')}
           filteredUniqueItems={filteredUniqueItems}
           itemAttributesMap={itemAttributesMap}
           merchantItemIndex={merchantItemIndex}
-          onItemCardClick={modals.openItemModal}
+          onItemCardClick={handleItemCardClick}
           onToggleItemFavorite={favorites.items.toggle}
           isItemFavorite={favorites.items.isFavorite}
           onClearItems={() => modals.openClearModal('items')}

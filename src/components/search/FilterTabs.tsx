@@ -48,6 +48,9 @@ interface FilterTabsProps {
   isScrollExchangeMode?: boolean
   onScrollExchangeToggle?: () => void
   onScrollExchangeClose?: () => void
+  // SEO 頁面模式
+  isSeoPageMode?: boolean
+  onSeoPageModeToggle?: () => void
 }
 
 /**
@@ -72,6 +75,9 @@ export function FilterTabs({
   isScrollExchangeMode = false,
   onScrollExchangeToggle,
   onScrollExchangeClose,
+  // SEO 頁面模式
+  isSeoPageMode = false,
+  onSeoPageModeToggle,
 }: FilterTabsProps) {
   // 暫時抑制 unused variable 警告
   void _selectedMerchantMapId
@@ -328,6 +334,28 @@ export function FilterTabs({
           <span className="hidden min-[518px]:inline">{t('scrollExchange.button')}</span>
           <span className="min-[518px]:hidden">{language === 'zh-TW' ? '兌' : 'Ex'}</span>
         </button>
+      )}
+
+      {/* SEO 頁面模式切換 */}
+      {onSeoPageModeToggle && (
+        <>
+          <div className="hidden min-[460px]:block w-px h-8 bg-gray-300 dark:bg-gray-600 mx-1 self-center" />
+          <button
+            onClick={onSeoPageModeToggle}
+            className={`flex-1 lg:flex-initial px-2 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap flex items-center justify-center lg:justify-start gap-1.5 ${
+              isSeoPageMode
+                ? 'bg-cyan-600 text-white shadow-md'
+                : 'text-gray-600 dark:text-gray-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-white/50 dark:hover:bg-gray-700/50'
+            }`}
+            title={isSeoPageMode ? t('seoPageMode.tooltip.on') : t('seoPageMode.tooltip.off')}
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            <span className="hidden min-[518px]:inline">{t('seoPageMode.button')}</span>
+            <span className="min-[518px]:hidden">{language === 'zh-TW' ? '頁' : 'P'}</span>
+          </button>
+        </>
       )}
 
       {/* 商人下拉選單 - 暫時停用
