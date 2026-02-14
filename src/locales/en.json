@@ -160,6 +160,8 @@
   "card.hideDropIcons": "Hide drop source icons",
   "card.expand": "Expand details",
   "card.collapse": "Collapse details",
+  "card.viewDetail": "View item details",
+  "card.dropSources": "Drop Sources",
   "card.unreleased": "Unreleased",
   "share.button": "Share",
   "share.success": "Link copied to clipboard!",

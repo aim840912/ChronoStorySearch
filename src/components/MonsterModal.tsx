@@ -36,6 +36,8 @@ interface MonsterModalProps {
   onGoBack?: () => void
   // 命中率計算器相關 props
   onOpenAccuracyCalculator?: (monsterId: number) => void
+  // 怪物導航（從 DropItemDetailModal 點擊怪物圖片觸發）
+  onMonsterClick?: (mobId: number, mobName: string) => void
 }
 
 /**
@@ -57,6 +59,7 @@ export function MonsterModal({
   hasPreviousModal,
   onGoBack,
   onOpenAccuracyCalculator,
+  onMonsterClick,
 }: MonsterModalProps) {
   const { t, language } = useLanguage()
   const { format } = useImageFormat()
@@ -197,6 +200,14 @@ export function MonsterModal({
       loadMobInfo()
     }
   }, [isOpen, loadMobInfo])
+
+  // 從 DropItemDetailModal 點擊怪物圖片：解析名稱後導航
+  const handleMonsterClickFromDetail = useCallback((mobId: number) => {
+    if (!onMonsterClick) return
+    const mob = allDrops.find(d => d.mobId === mobId)
+    const name = mob?.mobName || String(mobId)
+    onMonsterClick(mobId, name)
+  }, [onMonsterClick, allDrops])
 
   if (!monsterId) return null
 
@@ -519,6 +530,7 @@ export function MonsterModal({
                     onItemClick={onItemClick}
                     showIcons={showDropIcons}
                     showMaxOnly={showMaxOnly}
+                    onMonsterClick={handleMonsterClickFromDetail}
                   />
                 ))}
               </div>

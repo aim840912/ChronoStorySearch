@@ -160,6 +160,8 @@
   "card.hideDropIcons": "隱藏掉落來源圖示",
   "card.expand": "展開詳情",
   "card.collapse": "收合詳情",
+  "card.viewDetail": "查看詳細屬性",
+  "card.dropSources": "掉落來源",
   "card.unreleased": "未上線",
   "share.button": "分享",
   "share.success": "連結已複製到剪貼簿！",
