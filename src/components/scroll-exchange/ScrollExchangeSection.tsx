@@ -3,10 +3,16 @@
 import { useState, useMemo, useCallback, Fragment } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { matchesAllKeywords } from '@/lib/search-utils'
+import { InFeedAd, MultiplexAd } from '@/components/adsense'
 import type { ScrollExchangeItem } from '@/lib/scroll-exchange-utils'
 import scrollExchangeData from '../../../data/sheets-scroll-exchange.json'
 
 const data = scrollExchangeData as ScrollExchangeItem[]
+
+/** 每隔多少個分組插入一個廣告 */
+const GROUP_AD_INTERVAL = 3
+/** 最多插入的 InFeed 廣告數量 */
+const MAX_GROUP_ADS = 3
 
 /** 所有類別（排序） */
 const ALL_CATEGORIES = [...new Set(data.map(d => d.Category))].sort()
@@ -367,45 +373,78 @@ export function ScrollExchangeSection({
                   </tr>
                 </thead>
                 <tbody>
-                  {Array.from(groupedData.entries()).map(([category, items]) => (
-                    <Fragment key={category}>
-                      <tr>
-                        <td colSpan={5} className="px-6 py-2 bg-gray-100 dark:bg-gray-700/60 border-b border-gray-200 dark:border-gray-600">
-                          <span className="text-sm font-semibold text-gray-800 dark:text-gray-100">
-                            {category}
-                            <span className="ml-2 text-xs font-normal text-gray-500 dark:text-gray-400">({items.length})</span>
-                          </span>
-                        </td>
-                      </tr>
-                      {items.map((item) => (
-                        <TableRow key={item.ItemID} item={item} />
-                      ))}
-                    </Fragment>
-                  ))}
+                  {(() => {
+                    let adCount = 0
+                    return Array.from(groupedData.entries()).flatMap(([category, items], groupIndex) => {
+                      const elements: React.ReactNode[] = []
+                      // 每 GROUP_AD_INTERVAL 個分組插入一個廣告
+                      if (groupIndex > 0 && groupIndex % GROUP_AD_INTERVAL === 0 && adCount < MAX_GROUP_ADS) {
+                        adCount++
+                        elements.push(
+                          <tr key={`ad-desktop-${groupIndex}`}>
+                            <td colSpan={5} className="p-0 border-0">
+                              <InFeedAd />
+                            </td>
+                          </tr>
+                        )
+                      }
+                      elements.push(
+                        <Fragment key={category}>
+                          <tr>
+                            <td colSpan={5} className="px-6 py-2 bg-gray-100 dark:bg-gray-700/60 border-b border-gray-200 dark:border-gray-600">
+                              <span className="text-sm font-semibold text-gray-800 dark:text-gray-100">
+                                {category}
+                                <span className="ml-2 text-xs font-normal text-gray-500 dark:text-gray-400">({items.length})</span>
+                              </span>
+                            </td>
+                          </tr>
+                          {items.map((item) => (
+                            <TableRow key={item.ItemID} item={item} />
+                          ))}
+                        </Fragment>
+                      )
+                      return elements
+                    })
+                  })()}
                 </tbody>
               </table>
             </div>
 
             {/* 手機版：卡片 */}
             <div className="sm:hidden">
-              {Array.from(groupedData.entries()).map(([category, items]) => (
-                <div key={category}>
-                  <div className="sticky top-0 px-4 py-2 bg-gray-100 dark:bg-gray-700/60 border-b border-gray-200 dark:border-gray-600 z-10">
-                    <h3 className="text-sm font-semibold text-gray-800 dark:text-gray-100">
-                      {category}
-                      <span className="ml-2 text-xs font-normal text-gray-500 dark:text-gray-400">({items.length})</span>
-                    </h3>
-                  </div>
-                  <div className="divide-y divide-gray-100 dark:divide-gray-700/50">
-                    {items.map((item) => (
-                      <MobileCard key={item.ItemID} item={item} />
-                    ))}
-                  </div>
-                </div>
-              ))}
+              {(() => {
+                let adCount = 0
+                return Array.from(groupedData.entries()).flatMap(([category, items], groupIndex) => {
+                  const elements: React.ReactNode[] = []
+                  // 每 GROUP_AD_INTERVAL 個分組插入一個廣告
+                  if (groupIndex > 0 && groupIndex % GROUP_AD_INTERVAL === 0 && adCount < MAX_GROUP_ADS) {
+                    adCount++
+                    elements.push(<InFeedAd key={`ad-mobile-${groupIndex}`} />)
+                  }
+                  elements.push(
+                    <div key={category}>
+                      <div className="sticky top-0 px-4 py-2 bg-gray-100 dark:bg-gray-700/60 border-b border-gray-200 dark:border-gray-600 z-10">
+                        <h3 className="text-sm font-semibold text-gray-800 dark:text-gray-100">
+                          {category}
+                          <span className="ml-2 text-xs font-normal text-gray-500 dark:text-gray-400">({items.length})</span>
+                        </h3>
+                      </div>
+                      <div className="divide-y divide-gray-100 dark:divide-gray-700/50">
+                        {items.map((item) => (
+                          <MobileCard key={item.ItemID} item={item} />
+                        ))}
+                      </div>
+                    </div>
+                  )
+                  return elements
+                })
+              })()}
             </div>
           </>
         )}
+
+        {/* 底部 Multiplex 廣告 */}
+        {filteredData.length > 0 && <MultiplexAd />}
       </div>
     </div>
   )
