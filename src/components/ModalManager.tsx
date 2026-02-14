@@ -230,6 +230,7 @@ export const ModalManager = memo(function ModalManager({
         hasPreviousModal={hasPreviousModal}
         onGoBack={goBack}
         onOpenAccuracyCalculator={openAccuracyCalculator}
+        onMonsterClick={handleMonsterClickFromItemModal}
       />
 
       {/* Item Drops Modal */}
