@@ -8,9 +8,9 @@ import { InFeedAd, DisplayAd, MultiplexAd } from '@/components/adsense'
 import { EmptyState } from './EmptyState'
 
 /** 每隔多少張卡片插入一個廣告 */
-const AD_INTERVAL = 12
+const AD_INTERVAL = 8
 /** 每個區段最多插入的 InFeed 廣告數量 */
-const MAX_ADS_PER_SECTION = 3
+const MAX_ADS_PER_SECTION = 5
 
 type UniqueMonster = { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number }
 

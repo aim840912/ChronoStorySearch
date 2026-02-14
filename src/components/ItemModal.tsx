@@ -22,6 +22,14 @@ import { getScrollExchangeInfo } from '@/lib/scroll-exchange-utils'
 import { CraftingRecipeCard } from './CraftingRecipeCard'
 import { UpgradePathCard } from './UpgradePathCard'
 import { LanguageToggle } from './LanguageToggle'
+import { InFeedAd } from '@/components/adsense'
+
+/** Modal 內每隔多少張卡片插入一個廣告 */
+const MODAL_AD_INTERVAL = 10
+/** Modal 內最多插入的 InFeed 廣告數量 */
+const MODAL_MAX_ADS = 2
+/** 至少要有多少張卡片才插入廣告 */
+const MODAL_MIN_ITEMS_FOR_ADS = 10
 
 // 商人販售地點資料結構
 interface MerchantLocation {
@@ -726,17 +734,32 @@ export function ItemModal({
                 {/* 根據視圖模式渲染不同的佈局 */}
                 {viewMode === 'grid' ? (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 p-1">
-                    {itemDrops.map((drop, idx) => (
-                      <MonsterDropCard
-                        key={`${drop.mobId}-${idx}`}
-                        drop={drop}
-                        monsterHPMap={monsterHPMap}
-                        isFavorite={isMonsterFavorite(drop.mobId)}
-                        onToggleFavorite={onToggleMonsterFavorite}
-                        onMonsterClick={onMonsterClick}
-                        showIcons={showDropIcons}
-                      />
-                    ))}
+                    {(() => {
+                      let adCount = 0
+                      return itemDrops.flatMap((drop, idx) => {
+                        const card = (
+                          <MonsterDropCard
+                            key={`${drop.mobId}-${idx}`}
+                            drop={drop}
+                            monsterHPMap={monsterHPMap}
+                            isFavorite={isMonsterFavorite(drop.mobId)}
+                            onToggleFavorite={onToggleMonsterFavorite}
+                            onMonsterClick={onMonsterClick}
+                            showIcons={showDropIcons}
+                          />
+                        )
+                        if (
+                          itemDrops.length >= MODAL_MIN_ITEMS_FOR_ADS &&
+                          (idx + 1) % MODAL_AD_INTERVAL === 0 &&
+                          idx < itemDrops.length - 1 &&
+                          adCount < MODAL_MAX_ADS
+                        ) {
+                          adCount++
+                          return [card, <InFeedAd key={`ad-item-modal-${idx}`} className="col-span-full" />]
+                        }
+                        return [card]
+                      })
+                    })()}
                   </div>
                 ) : viewMode === 'list' ? (
                   <MonsterDropList
