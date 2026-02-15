@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     shortcut: "https://cdn.chronostorysearch.com/images/chrono.png",
     apple: "https://cdn.chronostorysearch.com/images/chrono.png",
   },
+  other: {
+    'theme-color': '#0a0a0a',
+  },
 };
 
 export default function RootLayout({
@@ -46,6 +49,17 @@ export default function RootLayout({
         />
         <GoogleAnalytics />
         <AdSenseScript />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                  navigator.serviceWorker.register('/sw.js')
+                })
+              }
+            `,
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
