@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "@/components/Providers";
 import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
 import { AdSenseScript, AnchorAd } from '@/components/adsense';
+
 import { Agentation } from 'agentation';
 
 const geistSans = Geist({
