@@ -87,10 +87,12 @@ playwright-report/
 test-*.js
 *-demo.js
 
-# 測試截圖和臨時圖片
-*-screenshot.png
+# 截圖目錄（Playwright 截圖統一存放）
+screenshots/
+!screenshots/.gitkeep
+
+# 臨時圖片
 *-demo.png
-*-full.png
 
 # 測試固定資料
 tests/fixtures/
@@ -167,8 +169,6 @@ scripts/*-report.json
 scripts/*-audit*.json
 scripts/*-verify*.json
 
-# Local screenshots
-*-homepage.png
 
 # Claude tips (reference files, not project code)
 claude-tip.txt
