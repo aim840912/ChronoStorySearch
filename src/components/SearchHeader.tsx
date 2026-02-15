@@ -14,6 +14,7 @@ import { LoginButton } from '@/components/auth/LoginButton'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useImageFormat } from '@/contexts/ImageFormatContext'
 import { useAuth } from '@/contexts/AuthContext'
+import { usePWAInstall } from '@/hooks/usePWAInstall'
 import type { ImageFormat } from '@/lib/image-utils'
 import { getItemImageUrl } from '@/lib/image-utils'
 
@@ -175,6 +176,7 @@ export const SearchHeader = memo(function SearchHeader({
   const { t, language } = useLanguage()
   const { format, toggleFormat } = useImageFormat()
   const { isAdmin } = useAuth()
+  const { canInstall, install: installPWA } = usePWAInstall()
 
   // 計算當前模式
   const currentMode: PageMode = isReportMode ? 'report' : isTradeMode ? 'trade' : 'search'
@@ -314,6 +316,17 @@ export const SearchHeader = memo(function SearchHeader({
           label: t('merchant.button'),
           onClick: () => onMerchantShopClick?.(),
         },
+        // PWA 安裝 - 僅在瀏覽器支援時顯示
+        ...(canInstall ? [{
+          id: 'pwa-install',
+          icon: (
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          ),
+          label: isZh ? '安裝 App' : 'Install App',
+          onClick: () => installPWA(),
+        }] : []),
         // API 測試工具 - 只有 admin 才能看到
         ...(isAdmin ? [{
           id: 'api-tester',
