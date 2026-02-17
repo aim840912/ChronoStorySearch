@@ -968,6 +968,12 @@
 
   "footer.privacy": "Privacy",
   "footer.terms": "Terms",
+  "footer.updates": "Site Updates",
+
+  "updates.title": "Site Updates",
+  "updates.tagNew": "New",
+  "updates.tagImprove": "Improved",
+  "updates.tagFix": "Fixed",
 
   "legal.privacy.title": "Privacy Policy",
   "legal.privacy.lastUpdated": "Last Updated",

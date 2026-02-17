@@ -969,6 +969,12 @@
 
   "footer.privacy": "隱私權",
   "footer.terms": "條款",
+  "footer.updates": "站務更新",
+
+  "updates.title": "站務更新",
+  "updates.tagNew": "新功能",
+  "updates.tagImprove": "改進",
+  "updates.tagFix": "修復",
 
   "legal.privacy.title": "隱私權政策",
   "legal.privacy.lastUpdated": "最後更新",

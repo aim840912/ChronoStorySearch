@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { AboutModal } from '@/components/AboutModal'
+import { SiteUpdatesModal } from '@/components/common/SiteUpdatesModal'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 // 連結常數
@@ -18,6 +19,7 @@ const KofiIcon = ({ className = 'w-5 h-5' }: { className?: string }) => (
 export default function Footer() {
   const { t } = useLanguage()
   const [isAboutOpen, setIsAboutOpen] = useState(false)
+  const [isUpdatesOpen, setIsUpdatesOpen] = useState(false)
   const coffeeChatUrl = 'https://ko-fi.com/chronostory'
 
   return (
@@ -70,6 +72,13 @@ export default function Footer() {
             <span className="sm:hidden">{t('footer.aboutShort')}</span>
           </button>
           <span className="text-slate-500 dark:text-slate-600">|</span>
+          <button
+            onClick={() => setIsUpdatesOpen(true)}
+            className="text-blue-400 hover:text-blue-300 dark:text-blue-500 dark:hover:text-blue-400 transition-colors font-medium"
+          >
+            {t('footer.updates')}
+          </button>
+          <span className="text-slate-500 dark:text-slate-600">|</span>
           <Link
             href="/privacy"
             className="text-slate-400 hover:text-slate-300 dark:text-slate-500 dark:hover:text-slate-400 transition-colors"
@@ -88,6 +97,8 @@ export default function Footer() {
 
       {/* 關於本站 Modal */}
       <AboutModal isOpen={isAboutOpen} onClose={() => setIsAboutOpen(false)} />
+      {/* 站務更新 Modal */}
+      <SiteUpdatesModal isOpen={isUpdatesOpen} onClose={() => setIsUpdatesOpen(false)} />
     </footer>
   )
 }
