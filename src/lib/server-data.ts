@@ -76,6 +76,57 @@ export async function getMobInfo(mobId: number): Promise<MobInfo | null> {
   return allMobInfo.find(m => parseInt(m.mob.id, 10) === mobId) ?? null
 }
 
+// ==================== 轉蛋機資料（本地 JSON） ====================
+
+export interface GachaSourceInfo {
+  machineId: number
+  machineName: string
+  chineseMachineName?: string
+  probability: string
+}
+
+interface RawGachaMachine {
+  machineId: number
+  machineName: string
+  chineseMachineName?: string
+  items: Array<{ itemId: number; probability: string }>
+}
+
+// 快取所有轉蛋機資料（8 台，只讀一次）
+let gachaCache: RawGachaMachine[] | null = null
+
+async function loadGachaMachines(): Promise<RawGachaMachine[]> {
+  if (gachaCache) return gachaCache
+  const dir = path.join(process.cwd(), 'chronostoryData', 'gacha')
+  const machines: RawGachaMachine[] = []
+  for (let i = 1; i <= 8; i++) {
+    const raw = await fs.readFile(path.join(dir, `machine-${i}-enhanced.json`), 'utf-8')
+    machines.push(JSON.parse(raw))
+  }
+  gachaCache = machines
+  return gachaCache
+}
+
+/**
+ * 查詢某物品來自哪些轉蛋機
+ */
+export async function getGachaSourcesForItem(itemId: number): Promise<GachaSourceInfo[]> {
+  const machines = await loadGachaMachines()
+  const sources: GachaSourceInfo[] = []
+  for (const machine of machines) {
+    const item = machine.items.find(i => i.itemId === itemId)
+    if (item) {
+      sources.push({
+        machineId: machine.machineId,
+        machineName: machine.machineName,
+        chineseMachineName: machine.chineseMachineName,
+        probability: item.probability,
+      })
+    }
+  }
+  return sources
+}
+
 // ==================== R2 CDN 資料抓取 ====================
 
 /**

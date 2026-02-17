@@ -289,7 +289,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
                   isDragging ? 'opacity-50 scale-95' : ''
                 } ${
                   isClickable
-                    ? 'hover:shadow-lg hover:ring-2 hover:ring-cyan-500 hover:bg-cyan-50 dark:hover:bg-cyan-900/20'
+                    ? 'animate-hint-pulse-blue hover:shadow-lg hover:ring-2 hover:ring-cyan-500 hover:bg-cyan-50 dark:hover:bg-cyan-900/20'
                     : 'hover:shadow-md'
                 }`}
                 onClick={isClickable ? onAccuracyClick : undefined}
@@ -342,7 +342,7 @@ export function MonsterStatsCard({ mobInfo, onAccuracyClick }: MonsterStatsCardP
                   isDragging ? 'opacity-50 scale-95' : ''
                 } ${
                   isClickable
-                    ? 'hover:bg-cyan-50 dark:hover:bg-cyan-900/20 hover:ring-2 hover:ring-cyan-500'
+                    ? 'animate-hint-pulse-blue hover:bg-cyan-50 dark:hover:bg-cyan-900/20 hover:ring-2 hover:ring-cyan-500'
                     : 'hover:bg-gray-50 dark:hover:bg-gray-700'
                 }`}
                 onClick={isClickable ? onAccuracyClick : undefined}

@@ -6,11 +6,13 @@ import {
   fetchMonsterDrops,
   getMobInfo,
 } from '@/lib/server-data'
-import { MonsterStatsCard } from '@/components/MonsterStatsCard'
+import { MonsterStatsWithCalculator } from '@/components/seo/MonsterStatsWithCalculator'
 import { MonsterDropsSection } from '@/components/seo/MonsterDropsSection'
 import { SeoText } from '@/components/seo/SeoText'
 import { SeoFavoriteButton } from '@/components/seo/SeoFavoriteButton'
 import { LanguageToggle } from '@/components/LanguageToggle'
+import { ThemeToggle } from '@/components/ThemeToggle'
+import { SeoSearchBar } from '@/components/seo/SeoSearchBar'
 import { DisplayAd, MultiplexAd } from '@/components/adsense'
 
 // ISR：每 24 小時 revalidate
@@ -92,24 +94,26 @@ export default async function MonsterPage({
   const R2_URL = process.env.NEXT_PUBLIC_R2_PUBLIC_URL || 'https://cdn.chronostorysearch.com'
 
   return (
-    <main className="min-h-screen bg-gray-950 text-gray-100">
+    <main className="min-h-screen bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100">
       {/* Navigation */}
-      <nav className="sticky top-0 z-10 bg-gray-900/80 backdrop-blur-sm border-b border-gray-800">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <nav className="sticky top-0 z-10 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-3">
           <Link
             href="/"
-            className="text-sm text-gray-400 hover:text-white transition-colors"
+            className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors flex-shrink-0"
           >
             &larr; ChronoStory Search
           </Link>
+          <SeoSearchBar />
+          <ThemeToggle />
           <LanguageToggle />
         </div>
       </nav>
 
       <div className="max-w-6xl mx-auto px-4 py-6 space-y-6">
         {/* Monster Header — sticky below nav */}
-        <header className="flex items-center gap-3 sticky top-[53px] z-[9] bg-gray-950 -mx-4 px-4 py-3 border-b border-gray-800/50">
-          <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-gray-800/50 rounded-lg border border-gray-700/50">
+        <header className="flex items-center gap-3 sticky top-[53px] z-[9] bg-gray-50 dark:bg-gray-950 -mx-4 px-4 py-3 border-b border-gray-200/50 dark:border-gray-800/50">
+          <div className="w-16 h-16 flex-shrink-0 flex items-center justify-center bg-gray-200/50 dark:bg-gray-800/50 rounded-lg border border-gray-300/50 dark:border-gray-700/50">
             <img
               src={`${R2_URL}/images/monsters/${mobId}.png`}
               alt={mobName}
@@ -118,7 +122,7 @@ export default async function MonsterPage({
           </div>
           <div className="min-w-0 flex-1">
             <div className="flex items-center gap-2">
-              <h1 className="text-xl font-bold text-white truncate">
+              <h1 className="text-xl font-bold text-gray-900 dark:text-white truncate">
                 {mobName}
               </h1>
               {isBoss && (
@@ -128,35 +132,35 @@ export default async function MonsterPage({
               )}
             </div>
             {chineseMobName && (
-              <p className="text-sm text-gray-400 truncate">{chineseMobName}</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 truncate">{chineseMobName}</p>
             )}
           </div>
           <SeoFavoriteButton type="monster" id={mobId} name={mobName} />
         </header>
 
-        {/* Content — 大螢幕左右分欄 */}
-        <div className="flex flex-col lg:flex-row gap-6">
+        {/* Content — 大螢幕左右分欄，各自獨立滾動 */}
+        <div className="flex flex-col lg:flex-row gap-6 lg:h-[calc(100vh-170px)]">
           {/* 左側：怪物屬性 */}
           {mobInfo && (
-            <div className="lg:w-[340px] lg:flex-shrink-0">
+            <div className="lg:w-[340px] lg:flex-shrink-0 lg:overflow-y-auto">
               <section>
-                <h2 className="text-lg font-semibold text-gray-200 mb-3">
+                <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">
                   <SeoText textKey="seo.monsterStats" />
                 </h2>
-                <MonsterStatsCard mobInfo={mobInfo} />
+                <MonsterStatsWithCalculator mobInfo={mobInfo} monsterId={mobId} />
               </section>
             </div>
           )}
 
           {/* 右側：掉落物品 */}
-          <div className="flex-1 min-w-0 space-y-6">
+          <div className="flex-1 min-w-0 space-y-6 lg:overflow-y-auto">
             <DisplayAd />
 
             <section>
-              <h2 className="text-lg font-semibold text-gray-200 mb-3">
+              <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">
                 <SeoText textKey="seo.droppedItems" /> ({drops.length})
               </h2>
-              <div className="bg-gray-900/50 rounded-xl border border-gray-800/50 p-3">
+              <div className="bg-white/50 dark:bg-gray-900/50 rounded-xl border border-gray-200/50 dark:border-gray-800/50 p-3">
                 <MonsterDropsSection drops={drops} />
               </div>
             </section>
