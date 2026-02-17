@@ -1040,5 +1040,7 @@
   "seo.monsterStats": "Stats",
   "seo.droppedItems": "Dropped Items",
   "seo.dropSources": "Drop Sources",
-  "seo.attributes": "Attributes"
+  "seo.attributes": "Attributes",
+  "viewHistory.title": "Recent Views",
+  "viewHistory.clear": "Clear history"
 }

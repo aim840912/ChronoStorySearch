@@ -1041,5 +1041,7 @@
   "seo.monsterStats": "怪物屬性",
   "seo.droppedItems": "掉落物品",
   "seo.dropSources": "掉落來源",
-  "seo.attributes": "物品屬性"
+  "seo.attributes": "物品屬性",
+  "viewHistory.title": "瀏覽紀錄",
+  "viewHistory.clear": "清除紀錄"
 }

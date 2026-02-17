@@ -531,10 +531,7 @@ export default function Home() {
           itemsInfiniteScroll={itemsInfiniteScroll}
           hasSearchOrFilter={debouncedSearchTerm.trim() !== '' || advancedFilter.enabled}
           hasAnyData={uniqueAllMonsters.length > 0 || uniqueAllItems.length > 0}
-          viewHistory={viewHistory.history}
-          allDrops={allDrops}
           gachaMachines={gachaMachines}
-          itemIndexMap={itemIndexMap}
         />
         )}
 

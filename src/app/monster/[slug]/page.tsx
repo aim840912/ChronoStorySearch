@@ -13,6 +13,7 @@ import { SeoFavoriteButton } from '@/components/seo/SeoFavoriteButton'
 import { LanguageToggle } from '@/components/LanguageToggle'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { SeoSearchBar } from '@/components/seo/SeoSearchBar'
+import { SeoViewHistoryStrip } from '@/components/seo/SeoViewHistoryStrip'
 import { DisplayAd, MultiplexAd } from '@/components/adsense'
 
 // ISR：每 24 小時 revalidate
@@ -137,6 +138,9 @@ export default async function MonsterPage({
           </div>
           <SeoFavoriteButton type="monster" id={mobId} name={mobName} />
         </header>
+
+        {/* 瀏覽紀錄圖示列 */}
+        <SeoViewHistoryStrip />
 
         {/* Content — 大螢幕左右分欄，各自獨立滾動 */}
         <div className="flex flex-col lg:flex-row gap-6 lg:h-[calc(100vh-170px)]">

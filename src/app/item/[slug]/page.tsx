@@ -15,6 +15,7 @@ import { SeoFavoriteButton } from '@/components/seo/SeoFavoriteButton'
 import { LanguageToggle } from '@/components/LanguageToggle'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { SeoSearchBar } from '@/components/seo/SeoSearchBar'
+import { SeoViewHistoryStrip } from '@/components/seo/SeoViewHistoryStrip'
 import { DisplayAd, MultiplexAd } from '@/components/adsense'
 
 // ISR：每 24 小時 revalidate
@@ -146,6 +147,9 @@ export default async function ItemPage({
           </div>
           <SeoFavoriteButton type="item" id={itemId} name={itemName} />
         </header>
+
+        {/* 瀏覽紀錄圖示列 */}
+        <SeoViewHistoryStrip />
 
         {/* Content — 大螢幕左右分欄 */}
         <div className="flex flex-col lg:flex-row gap-6">

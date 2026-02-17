@@ -1,6 +1,6 @@
 'use client'
 
-import type { ExtendedUniqueItem, ItemAttributesEssential, ViewHistoryItem, DropsEssential, GachaMachine, GachaItem, ItemIndexItem } from '@/types'
+import type { ExtendedUniqueItem, ItemAttributesEssential, GachaMachine } from '@/types'
 import type { RefObject } from 'react'
 import { MonsterCard } from '@/components/MonsterCard'
 import { ItemCard } from '@/components/ItemCard'
@@ -69,13 +69,7 @@ interface AllItemsViewProps {
   onToggleFavorite: (mobId: number, mobName: string) => void
   onToggleItemFavorite: (itemId: number, itemName: string) => void
 
-  // 瀏覽歷史（用於首頁顯示）
-  viewHistory: ViewHistoryItem[]
-  allDrops: DropsEssential[]
   gachaMachines: GachaMachine[]
-
-  // 物品索引（用於查詢中文名稱）
-  itemIndexMap: Map<number, ItemIndexItem>
 
   // 翻譯函數
   t: (key: string) => string
@@ -119,10 +113,7 @@ export function AllItemsView({
   isItemFavorite,
   onToggleFavorite,
   onToggleItemFavorite,
-  viewHistory,
-  allDrops,
   gachaMachines,
-  itemIndexMap,
   t,
 }: AllItemsViewProps) {
   // 沒有任何資料時顯示空狀態
@@ -136,105 +127,14 @@ export function AllItemsView({
     )
   }
 
-  // 無搜尋詞且無進階篩選：顯示瀏覽歷史 + 隨機混合卡片，共 40 個
+  // 無搜尋詞且無進階篩選：顯示瀏覽紀錄圖示列 + 隨機混合卡片
   if (!hasSearchOrFilter) {
-    const TOTAL_DISPLAY_COUNT = 40
-    const historyCount = viewHistory.length
-    const randomNeeded = Math.max(0, TOTAL_DISPLAY_COUNT - historyCount)
-
-    // 建立瀏覽紀錄的 ID Set 用於快速查詢（避免重複）
-    const historyIds = new Set(viewHistory.map(h => `${h.type}-${h.id}`))
-
-    // 過濾掉已在瀏覽紀錄中的隨機卡片
-    const filteredMixedCards = mixedCards.filter(card => {
-      const key = card.type === 'monster'
-        ? `monster-${card.data.mobId}`
-        : `item-${card.data.itemId}`
-      return !historyIds.has(key)
-    })
-
-    // 取得需要的隨機卡片數量
-    const randomCards = filteredMixedCards.slice(0, randomNeeded)
-
-    // 渲染瀏覽歷史卡片
-    const renderHistoryCard = (historyItem: ViewHistoryItem, index: number) => {
-      if (historyItem.type === 'monster') {
-        // 從 allDrops 查找怪物完整資料
-        const monsterData = allDrops.find(drop => drop.mobId === historyItem.id)
-        if (!monsterData) return null // 找不到資料時跳過
-
-        return (
-          <MonsterCard
-            key={`history-monster-${historyItem.id}-${index}`}
-            mobId={monsterData.mobId}
-            mobName={monsterData.mobName}
-            chineseMobName={monsterData.chineseMobName}
-            dropCount={1} // 瀏覽歷史不顯示 dropCount，設為 1
-            onCardClick={onMonsterCardClick}
-            isFavorite={isFavorite(monsterData.mobId)}
-            onToggleFavorite={onToggleFavorite}
-            level={mobLevelMap.get(monsterData.mobId) ?? null}
-            index={index}
-            inGame={mobInGameMap.get(monsterData.mobId) ?? true}
-          />
-        )
-      } else {
-        // 從 allDrops 查找物品完整資料
-        const itemData = allDrops.find(drop => drop.itemId === historyItem.id)
-
-        // 同時從轉蛋資料查找（不論 itemData 是否存在，因為物品可能同時在掉落和轉蛋中）
-        let gachaItemData: GachaItem | undefined
-        for (const machine of gachaMachines) {
-          gachaItemData = machine.items.find(item => item.itemId === historyItem.id)
-          if (gachaItemData) break
-        }
-
-        // 都找不到時跳過
-        if (!itemData && !gachaItemData) return null
-
-        // 根據資料來源選擇顯示內容
-        const displayItemId = itemData?.itemId ?? gachaItemData?.itemId
-        // 如果都沒有 itemId，跳過
-        if (!displayItemId) return null
-        // 轉蛋物品優先使用 name（英文），若無則使用 chineseName
-        const displayItemName = itemData?.itemName ?? gachaItemData?.name ?? gachaItemData?.chineseName ?? ''
-        // 中文名稱查詢順序：item-index.json > allDrops > gacha JSON
-        const displayChineseName = itemIndexMap.get(displayItemId)?.chineseItemName ?? itemData?.chineseItemName ?? gachaItemData?.chineseName ?? ''
-        // 只要在轉蛋中找到就標記為轉蛋物品（即使同時在掉落中）
-        const isFromGacha = !!gachaItemData
-        // 取得等級：優先從 itemAttributesMap，fallback 到轉蛋資料
-        // 注意：轉蛋資料的 equipment.requirements 使用 camelCase (reqLevel)
-        const reqLevel = itemAttributesMap.get(displayItemId)?.req_level
-          ?? gachaItemData?.requiredStats?.level
-          ?? (gachaItemData?.equipment?.requirements as { reqLevel?: number | null } | undefined)?.reqLevel
-          ?? null
-
-        return (
-          <ItemCard
-            key={`history-item-${historyItem.id}-${index}`}
-            itemId={displayItemId}
-            itemName={displayItemName}
-            chineseItemName={displayChineseName}
-            monsterCount={1} // 瀏覽歷史不顯示 monsterCount，設為 1
-            onCardClick={onItemCardClick}
-            isFavorite={isItemFavorite(displayItemId)}
-            onToggleFavorite={onToggleItemFavorite}
-            source={{ fromDrops: !!itemData, fromGacha: isFromGacha }}
-            reqLevel={reqLevel}
-            index={index}
-            fromMerchant={merchantItemIndex.has(displayItemName.toLowerCase())}
-          />
-        )
-      }
-    }
-
     // 渲染隨機卡片
-    const renderRandomCard = (card: MixedCard, cardIndex: number) => {
-      const index = historyCount + cardIndex // 繼續瀏覽紀錄的索引
+    const renderRandomCard = (card: MixedCard, index: number) => {
       if (card.type === 'monster') {
         return (
           <MonsterCard
-            key={`random-monster-${card.data.mobId}-${cardIndex}`}
+            key={`random-monster-${card.data.mobId}-${index}`}
             mobId={card.data.mobId}
             mobName={card.data.mobName}
             chineseMobName={card.data.chineseMobName}
@@ -250,7 +150,7 @@ export function AllItemsView({
       } else {
         return (
           <ItemCard
-            key={`random-item-${card.data.itemId}-${cardIndex}`}
+            key={`random-item-${card.data.itemId}-${index}`}
             itemId={card.data.itemId}
             itemName={card.data.itemName}
             chineseItemName={card.data.chineseItemName}
@@ -270,23 +170,13 @@ export function AllItemsView({
       }
     }
 
-    // 有任何內容可顯示時渲染
-    if (historyCount > 0 || randomCards.length > 0) {
-      // 合併所有卡片元素
-      const allCards: React.ReactNode[] = []
-      viewHistory.forEach((historyItem, index) => {
-        allCards.push(renderHistoryCard(historyItem, index))
-      })
-      randomCards.forEach((card, cardIndex) => {
-        allCards.push(renderRandomCard(card, cardIndex))
-      })
-
-      // 在卡片間穿插廣告（限制最多 MAX_ADS_PER_SECTION 個）
+    if (mixedCards.length > 0) {
+      // 在卡片間穿插廣告
       const cardsWithAds: React.ReactNode[] = []
       let homeAdCount = 0
-      allCards.forEach((card, i) => {
-        cardsWithAds.push(card)
-        if ((i + 1) % AD_INTERVAL === 0 && i < allCards.length - 1 && homeAdCount < MAX_ADS_PER_SECTION) {
+      mixedCards.forEach((card, i) => {
+        cardsWithAds.push(renderRandomCard(card, i))
+        if ((i + 1) % AD_INTERVAL === 0 && i < mixedCards.length - 1 && homeAdCount < MAX_ADS_PER_SECTION) {
           cardsWithAds.push(<InFeedAd key={`ad-home-${i}`} />)
           homeAdCount++
         }
@@ -294,7 +184,8 @@ export function AllItemsView({
 
       return (
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mx-auto mt-8">
+          {/* 隨機卡片 grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mx-auto mt-4">
             {cardsWithAds}
           </div>
           <MultiplexAd />
