@@ -139,8 +139,8 @@ export default async function MonsterPage({
           <SeoFavoriteButton type="monster" id={mobId} name={mobName} />
         </header>
 
-        {/* 瀏覽紀錄圖示列 */}
-        <SeoViewHistoryStrip />
+        {/* 瀏覽紀錄圖示列（自動記錄當前怪物到瀏覽歷史） */}
+        <SeoViewHistoryStrip currentPage={{ type: 'monster', id: mobId, name: mobName }} />
 
         {/* Content — 大螢幕左右分欄，各自獨立滾動 */}
         <div className="flex flex-col lg:flex-row gap-6 lg:h-[calc(100vh-170px)]">

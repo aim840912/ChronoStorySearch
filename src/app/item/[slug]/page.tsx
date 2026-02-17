@@ -148,8 +148,8 @@ export default async function ItemPage({
           <SeoFavoriteButton type="item" id={itemId} name={itemName} />
         </header>
 
-        {/* 瀏覽紀錄圖示列 */}
-        <SeoViewHistoryStrip />
+        {/* 瀏覽紀錄圖示列（自動記錄當前物品到瀏覽歷史） */}
+        <SeoViewHistoryStrip currentPage={{ type: 'item', id: itemId, name: itemName }} />
 
         {/* Content — 大螢幕左右分欄 */}
         <div className="flex flex-col lg:flex-row gap-6">
