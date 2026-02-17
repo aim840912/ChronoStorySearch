@@ -38,13 +38,13 @@ export function ItemSourcesSection({ monsters }: ItemSourcesSectionProps) {
     <div>
       {/* 視圖切換按鈕 */}
       <div className="flex justify-end mb-2">
-        <div className="flex items-center gap-1 bg-gray-800/50 rounded-lg p-0.5">
+        <div className="flex items-center gap-1 bg-gray-200/50 dark:bg-gray-800/50 rounded-lg p-0.5">
           <button
             onClick={() => setViewMode('list')}
             className={`p-1.5 rounded-md transition-colors ${
               viewMode === 'list'
-                ? 'bg-gray-700 text-white'
-                : 'text-gray-500 hover:text-gray-300'
+                ? 'bg-gray-300 text-gray-900 dark:bg-gray-700 dark:text-white'
+                : 'text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300'
             }`}
             aria-label={t('item.switchToList')}
             title={t('item.switchToList')}
@@ -57,8 +57,8 @@ export function ItemSourcesSection({ monsters }: ItemSourcesSectionProps) {
             onClick={() => setViewMode('grid')}
             className={`p-1.5 rounded-md transition-colors ${
               viewMode === 'grid'
-                ? 'bg-gray-700 text-white'
-                : 'text-gray-500 hover:text-gray-300'
+                ? 'bg-gray-300 text-gray-900 dark:bg-gray-700 dark:text-white'
+                : 'text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300'
             }`}
             aria-label={t('item.switchToGrid')}
             title={t('item.switchToGrid')}
@@ -86,7 +86,7 @@ export function ItemSourcesSection({ monsters }: ItemSourcesSectionProps) {
                 <Link
                   key={`source-grid-${monster.mobId}-${index}`}
                   href={`/monster/${monster.mobId}`}
-                  className="relative flex flex-col items-center gap-1 p-2 rounded-lg bg-gray-800/30 hover:bg-gray-800/60 border border-gray-700/30 hover:border-gray-600/50 transition-colors group"
+                  className="relative flex flex-col items-center gap-1 p-2 rounded-lg bg-gray-100/50 hover:bg-gray-200/60 border border-gray-300/30 hover:border-gray-400/50 dark:bg-gray-800/30 dark:hover:bg-gray-800/60 dark:border-gray-700/30 dark:hover:border-gray-600/50 transition-colors group"
                 >
                   {/* BOSS 標籤 */}
                   {monster.isBoss && (
@@ -128,12 +128,12 @@ export function ItemSourcesSection({ monsters }: ItemSourcesSectionProps) {
                   </div>
 
                   {/* 名稱 */}
-                  <span className="text-xs text-gray-300 group-hover:text-white text-center line-clamp-2 leading-tight w-full">
+                  <span className="text-xs text-gray-600 group-hover:text-gray-900 dark:text-gray-300 dark:group-hover:text-white text-center line-clamp-2 leading-tight w-full">
                     {mobName}
                   </span>
 
                   {/* 機率 */}
-                  <span className="text-xs font-mono text-amber-400">
+                  <span className="text-xs font-mono text-amber-600 dark:text-amber-400">
                     {monster.displayChance}
                   </span>
                 </Link>
@@ -175,7 +175,7 @@ export function ItemSourcesSection({ monsters }: ItemSourcesSectionProps) {
                 <Link
                   key={`source-${monster.mobId}-${index}`}
                   href={`/monster/${monster.mobId}`}
-                  className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors group"
+                  className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5 transition-colors group"
                 >
                   {/* 怪物圖片 */}
                   <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center">
@@ -190,7 +190,7 @@ export function ItemSourcesSection({ monsters }: ItemSourcesSectionProps) {
                   {/* 名稱 */}
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
-                      <span className="text-sm text-gray-200 group-hover:text-white truncate">
+                      <span className="text-sm text-gray-700 group-hover:text-gray-900 dark:text-gray-200 dark:group-hover:text-white truncate">
                         {mobName}
                       </span>
                       {monster.isBoss && (
@@ -208,7 +208,7 @@ export function ItemSourcesSection({ monsters }: ItemSourcesSectionProps) {
 
                   {/* 機率 + 數量 */}
                   <div className="flex-shrink-0 text-right">
-                    <span className="text-sm font-mono text-amber-400">
+                    <span className="text-sm font-mono text-amber-600 dark:text-amber-400">
                       {monster.displayChance}
                     </span>
                     {monster.maxQty > 1 && (

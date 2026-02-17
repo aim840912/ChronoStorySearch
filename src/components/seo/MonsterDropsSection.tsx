@@ -79,15 +79,15 @@ export function MonsterDropsSection({ drops }: MonsterDropsSectionProps) {
                 key={cat}
                 className={`flex items-center gap-1.5 cursor-pointer text-xs px-2 py-1 rounded-md transition-colors ${
                   categoryFilters[cat]
-                    ? 'bg-gray-700/60 text-gray-200'
-                    : 'bg-gray-800/30 text-gray-500'
+                    ? 'bg-gray-200/60 text-gray-700 dark:bg-gray-700/60 dark:text-gray-200'
+                    : 'bg-gray-100/30 text-gray-400 dark:bg-gray-800/30 dark:text-gray-500'
                 }`}
               >
                 <input
                   type="checkbox"
                   checked={categoryFilters[cat]}
                   onChange={() => toggleCategory(cat)}
-                  className="w-3 h-3 rounded border-gray-600 bg-gray-800 text-blue-500 focus:ring-blue-500/30 focus:ring-offset-0 cursor-pointer"
+                  className="w-3 h-3 rounded border-gray-300 bg-gray-100 dark:border-gray-600 dark:bg-gray-800 text-blue-500 focus:ring-blue-500/30 focus:ring-offset-0 cursor-pointer"
                 />
                 {t(`monster.dropFilter.${cat}`)}
                 <span className="text-gray-500">({categoryCounts[cat]})</span>
@@ -97,13 +97,13 @@ export function MonsterDropsSection({ drops }: MonsterDropsSectionProps) {
         </div>
 
         {/* 視圖切換 */}
-        <div className="flex items-center gap-1 bg-gray-800/50 rounded-lg p-0.5">
+        <div className="flex items-center gap-1 bg-gray-200/50 dark:bg-gray-800/50 rounded-lg p-0.5">
           <button
             onClick={() => setViewMode('list')}
             className={`p-1.5 rounded-md transition-colors ${
               viewMode === 'list'
-                ? 'bg-gray-700 text-white'
-                : 'text-gray-500 hover:text-gray-300'
+                ? 'bg-gray-300 text-gray-900 dark:bg-gray-700 dark:text-white'
+                : 'text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300'
             }`}
             aria-label={t('item.switchToList')}
             title={t('item.switchToList')}
@@ -116,8 +116,8 @@ export function MonsterDropsSection({ drops }: MonsterDropsSectionProps) {
             onClick={() => setViewMode('grid')}
             className={`p-1.5 rounded-md transition-colors ${
               viewMode === 'grid'
-                ? 'bg-gray-700 text-white'
-                : 'text-gray-500 hover:text-gray-300'
+                ? 'bg-gray-300 text-gray-900 dark:bg-gray-700 dark:text-white'
+                : 'text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300'
             }`}
             aria-label={t('item.switchToGrid')}
             title={t('item.switchToGrid')}
@@ -152,7 +152,7 @@ export function MonsterDropsSection({ drops }: MonsterDropsSectionProps) {
                 <Link
                   key={`drop-grid-${drop.itemId}-${index}`}
                   href={`/item/${drop.itemId}`}
-                  className="relative flex flex-col items-center gap-1 p-2 rounded-lg bg-gray-800/30 hover:bg-gray-800/60 border border-gray-700/30 hover:border-gray-600/50 transition-colors group"
+                  className="relative flex flex-col items-center gap-1 p-2 rounded-lg bg-gray-100/50 hover:bg-gray-200/60 border border-gray-300/30 hover:border-gray-400/50 dark:bg-gray-800/30 dark:hover:bg-gray-800/60 dark:border-gray-700/30 dark:hover:border-gray-600/50 transition-colors group"
                 >
                   {/* 收藏按鈕 */}
                   <button
@@ -187,12 +187,12 @@ export function MonsterDropsSection({ drops }: MonsterDropsSectionProps) {
                   </div>
 
                   {/* 名稱 */}
-                  <span className="text-xs text-gray-300 group-hover:text-white text-center line-clamp-2 leading-tight w-full">
+                  <span className="text-xs text-gray-600 group-hover:text-gray-900 dark:text-gray-300 dark:group-hover:text-white text-center line-clamp-2 leading-tight w-full">
                     {itemName}
                   </span>
 
                   {/* 機率 */}
-                  <span className="text-xs font-mono text-amber-400">
+                  <span className="text-xs font-mono text-amber-600 dark:text-amber-400">
                     {drop.chance != null ? `${drop.chance}%` : '—'}
                   </span>
                 </Link>
@@ -234,7 +234,7 @@ export function MonsterDropsSection({ drops }: MonsterDropsSectionProps) {
                 <Link
                   key={`drop-${drop.itemId}-${index}`}
                   href={`/item/${drop.itemId}`}
-                  className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors group"
+                  className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5 transition-colors group"
                 >
                   {/* 物品圖片 */}
                   <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center">
@@ -248,7 +248,7 @@ export function MonsterDropsSection({ drops }: MonsterDropsSectionProps) {
 
                   {/* 名稱 */}
                   <div className="flex-1 min-w-0">
-                    <span className="text-sm text-gray-200 group-hover:text-white truncate block">
+                    <span className="text-sm text-gray-700 group-hover:text-gray-900 dark:text-gray-200 dark:group-hover:text-white truncate block">
                       {itemName}
                     </span>
                     {language === 'zh-TW' && drop.chineseItemName && (
@@ -260,7 +260,7 @@ export function MonsterDropsSection({ drops }: MonsterDropsSectionProps) {
 
                   {/* 機率 + 數量 */}
                   <div className="flex-shrink-0 text-right">
-                    <span className="text-sm font-mono text-amber-400">
+                    <span className="text-sm font-mono text-amber-600 dark:text-amber-400">
                       {drop.chance != null ? `${drop.chance}%` : '—'}
                     </span>
                     {drop.maxQty > 1 && (

@@ -170,6 +170,36 @@ body {
 }
 
 /* ========================================
+   可點擊迴避率卡片的藍色脈衝提示
+   ======================================== */
+
+@keyframes hint-pulse-blue {
+  0%, 100% {
+    background-color: rgb(255, 255, 255);
+  }
+  50% {
+    background-color: rgb(219, 234, 254); /* blue-100 */
+  }
+}
+
+@keyframes hint-pulse-blue-dark {
+  0%, 100% {
+    background-color: rgb(31, 41, 55); /* gray-800 */
+  }
+  50% {
+    background-color: rgb(30, 58, 95); /* solid dark blue tint */
+  }
+}
+
+.animate-hint-pulse-blue {
+  animation: hint-pulse-blue 2.5s ease-in-out 3;
+}
+
+:is(.dark) .animate-hint-pulse-blue {
+  animation: hint-pulse-blue-dark 2.5s ease-in-out 3;
+}
+
+/* ========================================
    減少動畫偏好支援（系統設定）
    ======================================== */
 
@@ -184,6 +214,10 @@ body {
   }
 
   .animate-bounce-x {
+    animation: none;
+  }
+
+  .animate-hint-pulse-blue {
     animation: none;
   }
 
