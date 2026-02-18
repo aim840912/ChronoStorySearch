@@ -1,0 +1,19 @@
+# Gitleaks configuration
+# https://github.com/gitleaks/gitleaks
+# Prevents accidental secret commits
+
+title = "ChronoStory Gitleaks Config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+  # Files that may contain false positives (game data, lock files, docs)
+  paths = [
+    '''package-lock\.json''',
+    '''data/sheets-public-drop-table\.json''',
+    '''chronostoryData/.*\.json''',
+    '''docs/.*\.md''',
+    '''tests/concurrency/README\.md''',
+    '''src/locales/.*\.json''',
+  ]
