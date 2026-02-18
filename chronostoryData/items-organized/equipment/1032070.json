@@ -1,0 +1,42 @@
+{
+  "id": 1032070,
+  "description": {
+    "id": 1032070,
+    "name": "Shield Earrings",
+    "description": "",
+    "chineseItemName": ""
+  },
+  "metaInfo": {
+    "only": false,
+    "cash": false,
+    "reqLevel": 100,
+    "price": 200000,
+    "reqSTR": 0,
+    "reqDEX": 0,
+    "reqINT": 0,
+    "reqLUK": 0,
+    "reqJob": 0,
+    "reqLevelEquip": 100,
+    "tuc": 5,
+    "incMDD": 80,
+    "incACC": 1
+  },
+  "typeInfo": {
+    "overallCategory": "Equip",
+    "category": "Accessory",
+    "subCategory": "Earrings"
+  },
+  "randomStats": {
+    "incMDD": {
+      "base": 80,
+      "min": 30,
+      "max": 130
+    },
+    "incACC": {
+      "base": 1,
+      "min": 0,
+      "max": 11
+    }
+  },
+  "isGachapon": false
+}
