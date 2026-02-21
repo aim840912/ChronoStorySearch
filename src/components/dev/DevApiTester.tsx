@@ -25,16 +25,13 @@ const regionMeta = typedVersionsData._meta as {
   regions: Record<string, string>
 }
 
-interface DevApiTesterProps {
-  isOpen: boolean
-  onClose: () => void
-}
-
 /**
- * 開發者 API 測試工具
- * 只在開發環境顯示，用於測試 maplestory.io API
+ * 開發者 API 測試工具（獨立懸浮視窗）
+ * 僅在開發環境顯示，用於測試 maplestory.io API
+ * 不依賴外部 props，自行管理開關狀態
  */
-export function DevApiTester({ isOpen, onClose }: DevApiTesterProps) {
+export function DevApiTester() {
+  const [isOpen, setIsOpen] = useState(false)
   const [apiType, setApiType] = useState<ApiType>('item')
   const [region, setRegion] = useState('GMS')
   const [version, setVersion] = useState('83')
@@ -122,7 +119,25 @@ export function DevApiTester({ isOpen, onClose }: DevApiTesterProps) {
     }
   }
 
-  if (!isOpen) return null
+  // Non-development environment: render nothing
+  // (placed after all hooks to satisfy Rules of Hooks)
+  if (process.env.NODE_ENV !== 'development') return null
+
+  // Collapsed state: show a small toggle button
+  if (!isOpen) {
+    return (
+      <button
+        onClick={() => setIsOpen(true)}
+        className="fixed bottom-4 left-4 z-50 p-2.5 bg-orange-500 hover:bg-orange-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 active:scale-95"
+        aria-label="Open API Tester"
+        title="API Tester (DEV)"
+      >
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        </svg>
+      </button>
+    )
+  }
 
   return (
     <div className="fixed bottom-20 left-4 sm:left-6 z-50 bg-white dark:bg-gray-800 rounded-lg shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden">
@@ -130,7 +145,7 @@ export function DevApiTester({ isOpen, onClose }: DevApiTesterProps) {
       <div className="flex items-center justify-between px-4 py-3 bg-orange-500 text-white">
         <h3 className="font-semibold text-sm">MapleStory.io API 測試</h3>
         <button
-          onClick={onClose}
+          onClick={() => setIsOpen(false)}
           className="p-1 hover:bg-orange-600 rounded transition-colors"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

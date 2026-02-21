@@ -27,6 +27,7 @@ import { MerchantShopSection } from '@/components/merchant/MerchantShopSection'
 import { TradeSection } from '@/components/trade/TradeSection'
 import { ReportSection } from '@/components/report/ReportSection'
 import { ScrollExchangeSection } from '@/components/scroll-exchange/ScrollExchangeSection'
+import { DevApiTester } from '@/components/dev/DevApiTester'
 import { exchangeableItemIds } from '@/lib/scroll-exchange-utils'
 import { clientLogger } from '@/lib/logger'
 import { getDefaultAdvancedFilter } from '@/lib/filter-utils'
@@ -440,7 +441,6 @@ export default function Home() {
           onPrivacySettingsClick={toolModals.openPrivacyModal}
           onBugReportClick={modals.openBugReportModal}
           onAboutClick={toolModals.openAboutModal}
-          onApiTesterClick={toolModals.openApiTester}
           onGlobalSettingsClick={toolModals.openGlobalSettings}
           onMerchantShopClick={() => modals.openMerchantShopModal()}
           // 檢舉模式
@@ -603,9 +603,6 @@ export default function Home() {
         isGlobalSettingsOpen={toolModals.isGlobalSettingsOpen}
         openGlobalSettings={toolModals.openGlobalSettings}
         closeGlobalSettings={toolModals.closeGlobalSettings}
-        isApiTesterOpen={toolModals.isApiTesterOpen}
-        openApiTester={toolModals.openApiTester}
-        closeApiTester={toolModals.closeApiTester}
         showBackToTop={showBackToTop}
         scrollToTop={scrollToTop}
         toastMessage={toast.message}
@@ -614,6 +611,8 @@ export default function Home() {
         hideToast={toast.hideToast}
       />
 
+      {/* Dev API Tester — 僅開發環境顯示，自管理懸浮視窗 */}
+      {process.env.NODE_ENV === 'development' && <DevApiTester />}
     </div>
   )
 }

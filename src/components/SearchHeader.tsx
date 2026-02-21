@@ -97,7 +97,6 @@ interface SearchHeaderProps {
   onPrivacySettingsClick?: () => void
   onBugReportClick?: () => void
   onAboutClick?: () => void
-  onApiTesterClick?: () => void
   onGlobalSettingsClick?: () => void
   onMerchantShopClick?: () => void
 }
@@ -169,7 +168,6 @@ export const SearchHeader = memo(function SearchHeader({
   onPrivacySettingsClick,
   onBugReportClick,
   onAboutClick,
-  onApiTesterClick,
   onGlobalSettingsClick,
   onMerchantShopClick,
 }: SearchHeaderProps) {
@@ -326,17 +324,6 @@ export const SearchHeader = memo(function SearchHeader({
           ),
           label: isZh ? '安裝 App' : 'Install App',
           onClick: () => installPWA(),
-        }] : []),
-        // API 測試工具 - 只有 admin 才能看到
-        ...(isAdmin ? [{
-          id: 'api-tester',
-          icon: (
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-            </svg>
-          ),
-          label: t('toolbar.apiTester'),
-          onClick: () => onApiTesterClick?.(),
         }] : []),
       ],
     },

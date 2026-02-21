@@ -17,7 +17,6 @@ export interface ToolModalsState {
   isPrivacyModalOpen: boolean
   isAboutModalOpen: boolean
   isGlobalSettingsOpen: boolean
-  isApiTesterOpen: boolean
 }
 
 export interface ToolModalsActions {
@@ -38,9 +37,6 @@ export interface ToolModalsActions {
   // 全域設定
   openGlobalSettings: () => void
   closeGlobalSettings: () => void
-  // API 測試工具（開發環境）
-  openApiTester: () => void
-  closeApiTester: () => void
 }
 
 export type UseToolModalsReturn = ToolModalsState & ToolModalsActions
@@ -55,7 +51,6 @@ export function useToolModals(): UseToolModalsReturn {
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false)
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false)
   const [isGlobalSettingsOpen, setIsGlobalSettingsOpen] = useState(false)
-  const [isApiTesterOpen, setIsApiTesterOpen] = useState(false)
 
   // 命中率計算器
   const openAccuracyCalc = useCallback(() => setIsAccuracyCalcOpen(true), [])
@@ -79,10 +74,6 @@ export function useToolModals(): UseToolModalsReturn {
   const openGlobalSettings = useCallback(() => setIsGlobalSettingsOpen(true), [])
   const closeGlobalSettings = useCallback(() => setIsGlobalSettingsOpen(false), [])
 
-  // API 測試工具
-  const openApiTester = useCallback(() => setIsApiTesterOpen(true), [])
-  const closeApiTester = useCallback(() => setIsApiTesterOpen(false), [])
-
   return {
     // 狀態
     isAccuracyCalcOpen,
@@ -90,7 +81,6 @@ export function useToolModals(): UseToolModalsReturn {
     isPrivacyModalOpen,
     isAboutModalOpen,
     isGlobalSettingsOpen,
-    isApiTesterOpen,
     // 操作
     openAccuracyCalc,
     closeAccuracyCalc,
@@ -104,7 +94,5 @@ export function useToolModals(): UseToolModalsReturn {
     closeAboutModal,
     openGlobalSettings,
     closeGlobalSettings,
-    openApiTester,
-    closeApiTester,
   }
 }

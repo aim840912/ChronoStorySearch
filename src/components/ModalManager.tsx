@@ -12,7 +12,6 @@ import { MerchantShopModal } from '@/components/MerchantShopModal'
 import { PrivacySettingsModal } from '@/components/settings/PrivacySettingsModal'
 import { GlobalSettingsModal } from '@/components/settings/GlobalSettingsModal'
 import { AboutModal } from '@/components/AboutModal'
-import { DevApiTester } from '@/components/dev/DevApiTester'
 import { ScreenRecorderModal } from '@/components/tools/screen-recorder'
 import { ManualExpRecorderModal } from '@/components/tools/manual-exp-recorder'
 import { ExpTrackerFloating } from '@/components/tools/exp-tracker'
@@ -110,11 +109,6 @@ interface ModalManagerProps {
   openGlobalSettings: () => void
   closeGlobalSettings: () => void
 
-  // API Tester Modal（外部控制，僅開發環境）
-  isApiTesterOpen: boolean
-  openApiTester: () => void
-  closeApiTester: () => void
-
   // 浮動按鈕（僅保留回到頂部）
   showBackToTop: boolean
   scrollToTop: () => void
@@ -194,9 +188,6 @@ export const ModalManager = memo(function ModalManager({
   isGlobalSettingsOpen,
   openGlobalSettings: _openGlobalSettings,
   closeGlobalSettings,
-  isApiTesterOpen,
-  openApiTester: _openApiTester,
-  closeApiTester,
   showBackToTop,
   scrollToTop,
   toastMessage,
@@ -357,9 +348,6 @@ export const ModalManager = memo(function ModalManager({
           </svg>
         </button>
       )}
-
-      {/* 開發者 API 測試工具（只在開發環境顯示）*/}
-      <DevApiTester isOpen={isApiTesterOpen} onClose={closeApiTester} />
 
       {/* Toast 通知 */}
       <Toast
