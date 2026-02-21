@@ -108,7 +108,10 @@ function main() {
     const mobName = row.MobName || '';
     const isBoss = row.isBoss === 'TRUE';
     const itemId = parseInt(row.ItemID, 10);
-    const itemName = row.ItemName || row.ServerItemName || '';
+    const rawItemName = row.ItemName;
+    const itemName = (rawItemName && rawItemName !== '#N/A')
+      ? rawItemName
+      : (row.ServerItemName || '');
     const chance = convertChance(row.Chance);
     const minQty = parseInt(row.MinQTY, 10) || 1;
     const maxQty = parseInt(row.MaxQTY, 10) || 1;
