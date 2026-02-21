@@ -22,7 +22,8 @@ import type {
   ExtendedUniqueItem,
   SearchTypeFilter,
   MobInfo,
-  ItemIndexItem
+  ItemIndexItem,
+  MonsterIndexItem,
 } from '@/types'
 import { matchesAllKeywords } from '@/lib/search-utils'
 import {
@@ -51,7 +52,7 @@ interface UseFilterLogicParams {
   favoriteMonsters: FavoriteMonster[]
   favoriteItems: FavoriteItem[]
   allDrops: DropsEssential[]
-  initialRandomDrops: DropsEssential[]
+  initialNewestDrops: DropsEssential[]
   debouncedSearchTerm: string
   searchType: SearchTypeFilter
   advancedFilter: AdvancedFilterOptions
@@ -60,6 +61,7 @@ interface UseFilterLogicParams {
   mobInfoMap: Map<number, MobInfo>
   gachaMachines: GachaMachine[]
   itemIndexMap?: Map<number, ItemIndexItem>  // 物品索引（補充沒有掉落的物品）
+  monsterIndexMap: Map<number, MonsterIndexItem>  // 怪物索引（用於 addedDate 排序）
   initialRandomGachaItems: Array<{
     itemId: number
     name: string
@@ -76,7 +78,7 @@ export function useFilterLogic({
   favoriteMonsters,
   favoriteItems,
   allDrops,
-  initialRandomDrops,
+  initialNewestDrops,
   debouncedSearchTerm,
   searchType,
   advancedFilter,
@@ -85,6 +87,7 @@ export function useFilterLogic({
   mobInfoMap,
   gachaMachines,
   itemIndexMap,
+  monsterIndexMap,
   initialRandomGachaItems,
 }: UseFilterLogicParams) {
   // 使用最愛篩選 Hook
@@ -108,7 +111,7 @@ export function useFilterLogic({
 
     // 根據篩選模式選擇基礎資料
     const baseDrops = (debouncedSearchTerm.trim() === '' && !advancedFilter.enabled)
-      ? initialRandomDrops
+      ? initialNewestDrops
       : allDrops
 
     // 應用搜尋過濾
@@ -160,7 +163,7 @@ export function useFilterLogic({
     }
 
     return filtered
-  }, [filterMode, debouncedSearchTerm, searchType, allDrops, initialRandomDrops, advancedFilter, itemAttributesMap])
+  }, [filterMode, debouncedSearchTerm, searchType, allDrops, initialNewestDrops, advancedFilter, itemAttributesMap])
 
   // 計算「全部」模式的唯一怪物清單
   const uniqueAllMonsters = useMemo(() => {
@@ -350,16 +353,23 @@ export function useFilterLogic({
       | { type: 'monster'; data: { mobId: number; mobName: string; chineseMobName?: string | null; dropCount: number } }
       | { type: 'item'; data: ExtendedUniqueItem }
 
-    const includeMonsters = searchType === 'all' || searchType === 'monster'
-    const includeItems = searchType === 'all' || searchType === 'item' || searchType === 'gacha'
+    // Homepage: only show newest monsters (no item cards)
+    const mixed: MixedCard[] = uniqueAllMonsters.map((m): MixedCard => ({ type: 'monster', data: m }))
 
-    const mixed: MixedCard[] = [
-      ...(includeMonsters ? uniqueAllMonsters.map((m): MixedCard => ({ type: 'monster', data: m })) : []),
-      ...(includeItems ? uniqueAllItems.map((i): MixedCard => ({ type: 'item', data: i })) : [])
-    ]
-
-    // 按等級排序
+    // Sort: newest monsters first (by addedDate desc), then by level
     mixed.sort((a, b) => {
+      // 1. addedDate priority: monsters with addedDate come first
+      const dateA = a.type === 'monster' ? monsterIndexMap.get(a.data.mobId)?.addedDate : undefined
+      const dateB = b.type === 'monster' ? monsterIndexMap.get(b.data.mobId)?.addedDate : undefined
+
+      if (dateA && !dateB) return -1
+      if (!dateA && dateB) return 1
+      if (dateA && dateB) {
+        const cmp = dateB.localeCompare(dateA) // desc: newer first
+        if (cmp !== 0) return cmp
+      }
+
+      // 2. Same date or no date: sort by level
       let levelA: number | null = null
       let levelB: number | null = null
 
@@ -384,11 +394,9 @@ export function useFilterLogic({
       return levelA - levelB
     })
 
-    const monsterCount = includeMonsters ? uniqueAllMonsters.length : 0
-    const itemCount = includeItems ? uniqueAllItems.length : 0
-    clientLogger.info(`建立等級排序混合卡片: ${monsterCount} 怪物 + ${itemCount} 物品 = ${mixed.length} 張卡片`)
+    clientLogger.info(`建立首頁最新怪物卡片: ${mixed.length} 隻怪物`)
     return mixed
-  }, [filterMode, debouncedSearchTerm, searchType, uniqueAllMonsters, uniqueAllItems, mobLevelMap, itemAttributesMap])
+  }, [filterMode, debouncedSearchTerm, searchType, uniqueAllMonsters, uniqueAllItems, mobLevelMap, itemAttributesMap, monsterIndexMap])
 
   return {
     // 最愛模式資料

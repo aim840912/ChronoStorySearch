@@ -73,7 +73,7 @@ function normalizeGachaMachine(rawData: EnhancedGachaMachineRaw): GachaMachine {
  * 職責：
  * - 載入核心資料（drops essential - 僅搜尋索引）
  * - 提供轉蛋機按需載入功能
- * - 提供初始隨機資料
+ * - 提供初始最新怪物資料
  *
  * 優化：
  * - drops 拆分為 Essential（預載入，用於搜尋）+ Detailed（按需載入，用於 Modal）
@@ -209,21 +209,17 @@ export function useDataManagement() {
     }
   }, [gachaMachines.length])
 
-  // 隨機選擇 10 筆資料（初始顯示用）- Fisher-Yates shuffle
-  const initialRandomDrops = useMemo(() => {
+  // 取得最新怪物的掉落資料（首頁顯示用）
+  const initialNewestDrops = useMemo(() => {
     if (allDrops.length === 0) return []
 
-    // 複製陣列避免修改原始資料
-    const shuffled = [...allDrops]
+    const monsterIndex = monsterIndexData as MonsterIndex
+    const addedDateSet = new Set<number>()
+    monsterIndex.monsters.forEach(m => {
+      if (m.addedDate) addedDateSet.add(m.mobId)
+    })
 
-    // Fisher-Yates shuffle 演算法（只 shuffle 前 10 個）
-    const sampleSize = Math.min(10, allDrops.length)
-    for (let i = 0; i < sampleSize; i++) {
-      const randomIndex = i + Math.floor(Math.random() * (shuffled.length - i))
-      ;[shuffled[i], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[i]]
-    }
-
-    return shuffled.slice(0, sampleSize)
+    return allDrops.filter(drop => addedDateSet.has(drop.mobId))
   }, [allDrops])
 
   // 隨機選擇 15 個轉蛋物品（初始顯示用）- Fisher-Yates shuffle
@@ -417,8 +413,8 @@ export function useDataManagement() {
     quizQuestions,
     isLoading,
 
-    // 初始隨機資料
-    initialRandomDrops,
+    // 初始最新怪物資料
+    initialNewestDrops,
     initialRandomGachaItems,
 
     // 怪物與物品屬性資料

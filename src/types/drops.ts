@@ -59,6 +59,7 @@ export interface MonsterIndexItem {
   isBoss: boolean
   dropCount: number
   inGame?: boolean  // 是否已在遊戲中（undefined 視為 true）
+  addedDate?: string  // ISO date "2026-02-21", new monsters only
 }
 
 // 怪物索引資料結構

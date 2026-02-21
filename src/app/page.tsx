@@ -89,12 +89,13 @@ export default function Home() {
     merchantItemIndex,
     quizQuestions,
     isLoading,
-    initialRandomDrops,
+    initialNewestDrops,
     initialRandomGachaItems,
     mobLevelMap,
     mobInGameMap,
     mobInfoMap,
     itemAttributesMap,
+    monsterIndexMap,
     itemIndexMap,
     loadGachaMachines,
   } = useDataManagement()
@@ -133,7 +134,7 @@ export default function Home() {
     favoriteMonsters: favorites.monsters.list,
     favoriteItems: favorites.items.list,
     allDrops,
-    initialRandomDrops,
+    initialNewestDrops,
     debouncedSearchTerm, // 延遲搜尋詞（已 debounce）
     searchType,
     advancedFilter,
@@ -142,6 +143,7 @@ export default function Home() {
     mobInfoMap,
     gachaMachines,
     itemIndexMap,
+    monsterIndexMap,
     initialRandomGachaItems,
   })
 
@@ -531,10 +533,7 @@ export default function Home() {
           itemsInfiniteScroll={itemsInfiniteScroll}
           hasSearchOrFilter={debouncedSearchTerm.trim() !== '' || advancedFilter.enabled}
           hasAnyData={uniqueAllMonsters.length > 0 || uniqueAllItems.length > 0}
-          viewHistory={viewHistory.history}
-          allDrops={allDrops}
           gachaMachines={gachaMachines}
-          itemIndexMap={itemIndexMap}
         />
         )}
 
