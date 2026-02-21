@@ -84,7 +84,7 @@
     },
     {
       "itemId": 1112411,
-      "itemName": "#N/A",
+      "itemName": "Wisdom Pearl Ring",
       "chineseItemName": "",
       "chance": 5,
       "displayChance": "5.0%",
@@ -95,7 +95,7 @@
     },
     {
       "itemId": 1112412,
-      "itemName": "#N/A",
+      "itemName": "Lucky Pearl Ring",
       "chineseItemName": "",
       "chance": 5,
       "displayChance": "5.0%",
@@ -161,7 +161,7 @@
     },
     {
       "itemId": 6002015,
-      "itemName": "#N/A",
+      "itemName": "Red Swimming Goggle",
       "chineseItemName": "",
       "chance": 0.1,
       "displayChance": "0.10%",
@@ -172,7 +172,7 @@
     },
     {
       "itemId": 6002070,
-      "itemName": "#N/A",
+      "itemName": "Green Swimming Goggle",
       "chineseItemName": "",
       "chance": 0.1,
       "displayChance": "0.10%",
@@ -183,7 +183,7 @@
     },
     {
       "itemId": 6002071,
-      "itemName": "#N/A",
+      "itemName": "Blue Swimming Goggle",
       "chineseItemName": "",
       "chance": 0.1,
       "displayChance": "0.10%",
@@ -194,7 +194,7 @@
     },
     {
       "itemId": 6072093,
-      "itemName": "#N/A",
+      "itemName": "Blue Flippers",
       "chineseItemName": "",
       "chance": 0.1,
       "displayChance": "0.10%",
