@@ -127,6 +127,10 @@ function updateVersions(category, newHashes, oldHashes, versions) {
       updatedVersions[id] = String(currentVersion + 1)
       changedCount++
       console.log(`  📦 ${category}/${id} 變更 → v${currentVersion + 1}`)
+    } else if (!versions[id]) {
+      // 新檔案或尚未初始化版本號 → 設為 v1
+      updatedVersions[id] = '1'
+      changedCount++
     }
   }
 
