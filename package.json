@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"npm:dev:next\" \"npm:watch:images\"",
-    "dev:next": "next dev --turbopack",
+    "dev:next": "WATCHPACK_POLLING=true next dev --turbopack",
     "watch:images": "node scripts/watch-images.js",
     "build": "next build --turbopack",
     "start": "next start",
