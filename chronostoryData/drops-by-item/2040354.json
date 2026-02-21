@@ -1,0 +1,19 @@
+{
+  "itemId": 2040354,
+  "itemName": "Scroll for Accessory for INT 10%",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 8142100,
+      "mobName": "Risell Squid",
+      "chineseMobName": "致命烏賊怪",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

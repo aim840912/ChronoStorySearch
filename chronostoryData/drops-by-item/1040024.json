@@ -4,6 +4,17 @@
   "chineseItemName": "藍獵人服",
   "monsters": [
     {
+      "mobId": 2230107,
+      "mobName": "Krappy",
+      "chineseMobName": "獨角尼莫",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5200001,
       "mobName": "Ice Sentinel",
       "chineseMobName": "冰石球",
@@ -15,5 +26,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 1
+  "totalMonsters": 2
 }

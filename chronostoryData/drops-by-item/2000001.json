@@ -4,28 +4,6 @@
   "chineseItemName": "橘色藥水",
   "monsters": [
     {
-      "mobId": 2002011,
-      "mobName": "Orbis Crate",
-      "chineseMobName": "天空城箱",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 40,
-      "displayChance": "40.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 3220000,
-      "mobName": "Stumpy",
-      "chineseMobName": "樹妖王",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 20,
-      "displayChance": "20.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 1110100,
       "mobName": "Green Mushroom",
       "chineseMobName": "綠菇菇",
@@ -44,6 +22,17 @@
       "inGame": true,
       "chance": 2,
       "displayChance": "2.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2002011,
+      "mobName": "Orbis Crate",
+      "chineseMobName": "天空城箱",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -136,6 +125,50 @@
       "maxQty": 1
     },
     {
+      "mobId": 2230105,
+      "mobName": "Seacle",
+      "chineseMobName": "綠海馬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 2,
+      "displayChance": "2.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230106,
+      "mobName": "Cico",
+      "chineseMobName": "黃金海馬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 2,
+      "displayChance": "2.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230107,
+      "mobName": "Krappy",
+      "chineseMobName": "獨角尼莫",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 2,
+      "displayChance": "2.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230108,
+      "mobName": "Pinboom",
+      "chineseMobName": "海膽",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 2,
+      "displayChance": "2.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 2230110,
       "mobName": "Wooden Mask",
       "chineseMobName": "木面怪人",
@@ -150,6 +183,17 @@
       "mobId": 2230111,
       "mobName": "Rocky Mask",
       "chineseMobName": "石面怪人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 2,
+      "displayChance": "2.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230200,
+      "mobName": "Flower Fish",
+      "chineseMobName": "花鯰魚",
       "isBoss": false,
       "inGame": true,
       "chance": 2,
@@ -187,6 +231,17 @@
       "inGame": true,
       "chance": 2,
       "displayChance": "2.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3220000,
+      "mobName": "Stumpy",
+      "chineseMobName": "樹妖王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 20,
+      "displayChance": "20.0%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -235,5 +290,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 21
+  "totalMonsters": 26
 }

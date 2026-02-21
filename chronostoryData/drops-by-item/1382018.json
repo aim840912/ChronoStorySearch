@@ -26,6 +26,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 3230104,
+      "mobName": "Mask Fish",
+      "chineseMobName": "蒙面河豚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 3230304,
       "mobName": "Planey",
       "chineseMobName": "藍色戰鬥機",
@@ -35,7 +46,18 @@
       "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230124,
+      "mobName": "Freezer",
+      "chineseMobName": "短牙海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 5
 }

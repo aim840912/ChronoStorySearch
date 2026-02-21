@@ -1,0 +1,19 @@
+{
+  "itemId": 1072224,
+  "itemName": "Blue Varr Shoes",
+  "chineseItemName": "藍色巴爾鞋",
+  "monsters": [
+    {
+      "mobId": 8141300,
+      "mobName": "Squid",
+      "chineseMobName": "烏賊怪",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

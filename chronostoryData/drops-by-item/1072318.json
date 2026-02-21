@@ -1,0 +1,19 @@
+{
+  "itemId": 1072318,
+  "itemName": "Black Duke Barkin Shoes",
+  "chineseItemName": "黑色公爵靴",
+  "monsters": [
+    {
+      "mobId": 8150101,
+      "mobName": "Cold Shark",
+      "chineseMobName": "尖鼻鯊魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

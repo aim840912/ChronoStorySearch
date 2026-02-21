@@ -1,0 +1,19 @@
+{
+  "itemId": 4032474,
+  "itemName": "Seruf Pearl",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 20,
+      "displayChance": "20.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

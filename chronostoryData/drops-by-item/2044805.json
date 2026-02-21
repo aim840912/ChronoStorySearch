@@ -13,7 +13,18 @@
       "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230123,
+      "mobName": "Sparker",
+      "chineseMobName": "長牙海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 1
+  "totalMonsters": 2
 }

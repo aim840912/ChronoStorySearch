@@ -4,17 +4,6 @@
   "chineseItemName": "紫扣帶靴",
   "monsters": [
     {
-      "mobId": 8220000,
-      "mobName": "Eliza",
-      "chineseMobName": "艾利傑",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 4240000,
       "mobName": "Chief Gray",
       "chineseMobName": "葛雷元老",
@@ -24,7 +13,40 @@
       "displayChance": "0.16%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 7130020,
+      "mobName": "Goby",
+      "chineseMobName": "刺鰭魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8140600,
+      "mobName": "Bone Fish",
+      "chineseMobName": "骨骸魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8220000,
+      "mobName": "Eliza",
+      "chineseMobName": "艾利傑",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 2
+  "totalMonsters": 4
 }

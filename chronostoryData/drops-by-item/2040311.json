@@ -4,6 +4,17 @@
   "chineseItemName": "耳環防禦力卷軸60%",
   "monsters": [
     {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5100002,
       "mobName": "Firebomb",
       "chineseMobName": "火精靈",
@@ -26,5 +37,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 2
+  "totalMonsters": 3
 }

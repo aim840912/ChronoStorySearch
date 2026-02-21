@@ -1,0 +1,19 @@
+{
+  "itemId": 1002135,
+  "itemName": "Brown Pole-Feather Hat",
+  "chineseItemName": "褐羽翼三角帽",
+  "monsters": [
+    {
+      "mobId": 3230104,
+      "mobName": "Mask Fish",
+      "chineseMobName": "蒙面河豚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

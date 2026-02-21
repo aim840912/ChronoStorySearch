@@ -15,6 +15,39 @@
       "maxQty": 1
     },
     {
+      "mobId": 2230102,
+      "mobName": "Wild Boar",
+      "chineseMobName": "黑肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230108,
+      "mobName": "Pinboom",
+      "chineseMobName": "海膽",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3210100,
+      "mobName": "Fire Boar",
+      "chineseMobName": "火肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 3210201,
       "mobName": "Jr. Lioner",
       "chineseMobName": "幼黃獨角獅",
@@ -158,6 +191,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 5200001,
+      "mobName": "Ice Sentinel",
+      "chineseMobName": "冰石球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5300000,
       "mobName": "Leatty",
       "chineseMobName": "利堤",
@@ -194,6 +238,17 @@
       "mobId": 7130010,
       "mobName": "Death Teddy",
       "chineseMobName": "怨靈發條熊",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7130020,
+      "mobName": "Goby",
+      "chineseMobName": "刺鰭魚",
       "isBoss": false,
       "inGame": true,
       "chance": 1,
@@ -268,9 +323,31 @@
       "maxQty": 1
     },
     {
+      "mobId": 8140600,
+      "mobName": "Bone Fish",
+      "chineseMobName": "骨骸魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 8141100,
       "mobName": "Gigantic Spirit Viking",
       "chineseMobName": "巨人維京",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8142100,
+      "mobName": "Risell Squid",
+      "chineseMobName": "致命烏賊怪",
       "isBoss": false,
       "inGame": true,
       "chance": 1,
@@ -290,9 +367,9 @@
       "maxQty": 1
     },
     {
-      "mobId": 8170000,
-      "mobName": "Thanatos",
-      "chineseMobName": "達納托斯",
+      "mobId": 8150100,
+      "mobName": "Shark",
+      "chineseMobName": "鯊魚",
       "isBoss": false,
       "inGame": true,
       "chance": 1,
@@ -301,35 +378,24 @@
       "maxQty": 1
     },
     {
-      "mobId": 2230102,
-      "mobName": "Wild Boar",
-      "chineseMobName": "黑肥肥",
+      "mobId": 8150101,
+      "mobName": "Cold Shark",
+      "chineseMobName": "尖鼻鯊魚",
       "isBoss": false,
       "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
+      "chance": 1,
+      "displayChance": "1.0%",
       "minQty": 1,
       "maxQty": 1
     },
     {
-      "mobId": 3210100,
-      "mobName": "Fire Boar",
-      "chineseMobName": "火肥肥",
+      "mobId": 8170000,
+      "mobName": "Thanatos",
+      "chineseMobName": "達納托斯",
       "isBoss": false,
       "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 5200001,
-      "mobName": "Ice Sentinel",
-      "chineseMobName": "冰石球",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
+      "chance": 1,
+      "displayChance": "1.0%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -345,5 +411,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 31
+  "totalMonsters": 37
 }

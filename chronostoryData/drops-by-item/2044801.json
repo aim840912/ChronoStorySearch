@@ -15,42 +15,20 @@
       "maxQty": 1
     },
     {
-      "mobId": 5220003,
-      "mobName": "Timer",
-      "chineseMobName": "咕咕鐘",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 6300005,
-      "mobName": "Zombie Mushmom",
-      "chineseMobName": "殭屍蘑菇王",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 8130100,
-      "mobName": "Jr. Balrog",
-      "chineseMobName": "巴洛古",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 2300100,
       "mobName": "Stirge",
       "chineseMobName": "蝙蝠",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230123,
+      "mobName": "Sparker",
+      "chineseMobName": "長牙海豹",
       "isBoss": false,
       "inGame": true,
       "chance": 0.03,
@@ -66,6 +44,17 @@
       "inGame": true,
       "chance": 0.03,
       "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5220003,
+      "mobName": "Timer",
+      "chineseMobName": "咕咕鐘",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -90,7 +79,29 @@
       "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 6300005,
+      "mobName": "Zombie Mushmom",
+      "chineseMobName": "殭屍蘑菇王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8130100,
+      "mobName": "Jr. Balrog",
+      "chineseMobName": "巴洛古",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 8
+  "totalMonsters": 9
 }

@@ -4,13 +4,13 @@
   "chineseItemName": "黑綢緞長袍",
   "monsters": [
     {
-      "mobId": 8220000,
-      "mobName": "Eliza",
-      "chineseMobName": "艾利傑",
-      "isBoss": true,
+      "mobId": 8142100,
+      "mobName": "Risell Squid",
+      "chineseMobName": "致命烏賊怪",
+      "isBoss": false,
       "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
+      "chance": 0.07,
+      "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -24,7 +24,18 @@
       "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 8220000,
+      "mobName": "Eliza",
+      "chineseMobName": "艾利傑",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 2
+  "totalMonsters": 3
 }

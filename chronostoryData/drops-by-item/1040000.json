@@ -15,6 +15,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 3230304,
+      "mobName": "Planey",
+      "chineseMobName": "藍色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230101,
       "mobName": "Zombie Lupin",
       "chineseMobName": "天使猴",
@@ -26,16 +37,16 @@
       "maxQty": 1
     },
     {
-      "mobId": 3230304,
-      "mobName": "Planey",
-      "chineseMobName": "藍色戰鬥機",
+      "mobId": 4230200,
+      "mobName": "Poopa",
+      "chineseMobName": "河豚",
       "isBoss": false,
-      "inGame": false,
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 4
 }

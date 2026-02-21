@@ -4,35 +4,13 @@
   "chineseItemName": "褲裙防禦卷軸10%",
   "monsters": [
     {
-      "mobId": 3220000,
-      "mobName": "Stumpy",
-      "chineseMobName": "樹妖王",
-      "isBoss": true,
+      "mobId": 210100,
+      "mobName": "Slime",
+      "chineseMobName": "綠水靈",
+      "isBoss": false,
       "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 8130100,
-      "mobName": "Jr. Balrog",
-      "chineseMobName": "巴洛古",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 8150000,
-      "mobName": "Crimson Balrog",
-      "chineseMobName": "地獄巴洛古",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
+      "chance": 0.03,
+      "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -48,24 +26,13 @@
       "maxQty": 1
     },
     {
-      "mobId": 5130107,
-      "mobName": "Coolie Zombie",
-      "chineseMobName": "殭屍",
-      "isBoss": false,
+      "mobId": 3220000,
+      "mobName": "Stumpy",
+      "chineseMobName": "樹妖王",
+      "isBoss": true,
       "inGame": true,
-      "chance": 0.075,
-      "displayChance": "0.075%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 210100,
-      "mobName": "Slime",
-      "chineseMobName": "綠水靈",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.03,
-      "displayChance": "0.030%",
+      "chance": 0.3,
+      "displayChance": "0.30%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -81,6 +48,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 5130107,
+      "mobName": "Coolie Zombie",
+      "chineseMobName": "殭屍",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 6230300,
       "mobName": "Lazy Buffy",
       "chineseMobName": "小丑瑞奇",
@@ -88,6 +66,17 @@
       "inGame": true,
       "chance": 0.03,
       "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8130100,
+      "mobName": "Jr. Balrog",
+      "chineseMobName": "巴洛古",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -103,6 +92,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 8150000,
+      "mobName": "Crimson Balrog",
+      "chineseMobName": "地獄巴洛古",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 8160000,
       "mobName": "Gatekeeper",
       "chineseMobName": "通道守門人",
@@ -112,7 +112,29 @@
       "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 8510000,
+      "mobName": "Pianus (R)",
+      "chineseMobName": "海怒斯(右)",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 4
+    },
+    {
+      "mobId": 8520000,
+      "mobName": "Pianus (L)",
+      "chineseMobName": "海怒斯(左)",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 4
     }
   ],
-  "totalMonsters": 10
+  "totalMonsters": 12
 }

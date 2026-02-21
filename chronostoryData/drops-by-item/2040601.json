@@ -15,33 +15,22 @@
       "maxQty": 1
     },
     {
-      "mobId": 6130101,
-      "mobName": "Mushmom",
-      "chineseMobName": "蘑菇王",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 8220001,
-      "mobName": "Snowman",
-      "chineseMobName": "雪毛怪人",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 2230104,
       "mobName": "Green Trixter",
       "chineseMobName": "紅蜘蛛",
       "isBoss": false,
       "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3000006,
+      "mobName": "Krip",
+      "chineseMobName": "活跳蝦",
+      "isBoss": false,
+      "inGame": true,
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
@@ -59,6 +48,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 6130101,
+      "mobName": "Mushmom",
+      "chineseMobName": "蘑菇王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 7130010,
       "mobName": "Death Teddy",
       "chineseMobName": "怨靈發條熊",
@@ -68,7 +68,29 @@
       "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 8141300,
+      "mobName": "Squid",
+      "chineseMobName": "烏賊怪",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8220001,
+      "mobName": "Snowman",
+      "chineseMobName": "雪毛怪人",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 6
+  "totalMonsters": 8
 }

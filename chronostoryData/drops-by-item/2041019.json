@@ -4,13 +4,13 @@
   "chineseItemName": "披風敏捷卷軸60%",
   "monsters": [
     {
-      "mobId": 8220000,
-      "mobName": "Eliza",
-      "chineseMobName": "艾利傑",
-      "isBoss": true,
+      "mobId": 4230124,
+      "mobName": "Freezer",
+      "chineseMobName": "短牙海豹",
+      "isBoss": false,
       "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
+      "chance": 0.03,
+      "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -35,7 +35,18 @@
       "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 8220000,
+      "mobName": "Eliza",
+      "chineseMobName": "艾利傑",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 4
 }

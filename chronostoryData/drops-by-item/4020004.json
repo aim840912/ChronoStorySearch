@@ -4,13 +4,13 @@
   "chineseItemName": "蛋白石母礦",
   "monsters": [
     {
-      "mobId": 8220001,
-      "mobName": "Snowman",
-      "chineseMobName": "雪毛怪人",
-      "isBoss": true,
+      "mobId": 100101,
+      "mobName": "Blue Snail",
+      "chineseMobName": "藍寶",
+      "isBoss": false,
       "inGame": true,
-      "chance": 9,
-      "displayChance": "9.0%",
+      "chance": 0.7,
+      "displayChance": "0.70%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -40,6 +40,17 @@
       "mobId": 2230102,
       "mobName": "Wild Boar",
       "chineseMobName": "黑肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230106,
+      "mobName": "Cico",
+      "chineseMobName": "黃金海馬",
       "isBoss": false,
       "inGame": true,
       "chance": 0.9,
@@ -103,6 +114,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 9,
+      "displayChance": "9.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230107,
       "mobName": "Flyeye",
       "chineseMobName": "獨眼蝙蝠",
@@ -119,6 +141,17 @@
       "chineseMobName": "梅卡堤安",
       "isBoss": false,
       "inGame": false,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230123,
+      "mobName": "Sparker",
+      "chineseMobName": "長牙海豹",
+      "isBoss": false,
+      "inGame": true,
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -180,17 +213,6 @@
       "maxQty": 1
     },
     {
-      "mobId": 100101,
-      "mobName": "Blue Snail",
-      "chineseMobName": "藍寶",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 6230400,
       "mobName": "Soul Teddy",
       "chineseMobName": "幽魂發條熊",
@@ -200,7 +222,29 @@
       "displayChance": "0.70%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 8142100,
+      "mobName": "Risell Squid",
+      "chineseMobName": "致命烏賊怪",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8220001,
+      "mobName": "Snowman",
+      "chineseMobName": "雪毛怪人",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 9,
+      "displayChance": "9.0%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 18
+  "totalMonsters": 22
 }

@@ -4,6 +4,28 @@
   "chineseItemName": "冷凍金槍魚",
   "monsters": [
     {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 2.5,
+      "displayChance": "2.5%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 6090001,
       "mobName": "Snow Witch",
       "chineseMobName": "冰之女巫",
@@ -26,5 +48,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 2
+  "totalMonsters": 4
 }

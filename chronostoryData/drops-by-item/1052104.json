@@ -4,28 +4,6 @@
   "chineseItemName": "褐色海盜服",
   "monsters": [
     {
-      "mobId": 2220000,
-      "mobName": "Mano",
-      "chineseMobName": "紅寶王",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 2230113,
-      "mobName": "Dark Eye",
-      "chineseMobName": "黑獨眼獸",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.18,
-      "displayChance": "0.18%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 2110200,
       "mobName": "Horny Mushroom",
       "chineseMobName": "刺菇菇",
@@ -33,6 +11,17 @@
       "inGame": true,
       "chance": 0.07,
       "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2220000,
+      "mobName": "Mano",
+      "chineseMobName": "紅寶王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -46,7 +35,29 @@
       "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 2230106,
+      "mobName": "Cico",
+      "chineseMobName": "黃金海馬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230113,
+      "mobName": "Dark Eye",
+      "chineseMobName": "黑獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.18,
+      "displayChance": "0.18%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 4
+  "totalMonsters": 5
 }

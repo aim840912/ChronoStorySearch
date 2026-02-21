@@ -4,13 +4,24 @@
   "chineseItemName": "黑水晶母礦",
   "monsters": [
     {
-      "mobId": 8220000,
-      "mobName": "Eliza",
-      "chineseMobName": "艾利傑",
-      "isBoss": true,
+      "mobId": 2230113,
+      "mobName": "Dark Eye",
+      "chineseMobName": "黑獨眼獸",
+      "isBoss": false,
       "inGame": true,
-      "chance": 9,
-      "displayChance": "9.0%",
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3210206,
+      "mobName": "Helly",
+      "chineseMobName": "黃色戰鬥機",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.7,
+      "displayChance": "0.70%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -48,11 +59,33 @@
       "maxQty": 1
     },
     {
+      "mobId": 4130103,
+      "mobName": "Rombot",
+      "chineseMobName": "泥人領導者",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230110,
       "mobName": "King Block Golem",
       "chineseMobName": "積木泥人王",
       "isBoss": false,
       "inGame": false,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230123,
+      "mobName": "Sparker",
+      "chineseMobName": "長牙海豹",
+      "isBoss": false,
+      "inGame": true,
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -110,6 +143,17 @@
       "inGame": true,
       "chance": 0.9,
       "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5150000,
+      "mobName": "Mixed Golem",
+      "chineseMobName": "混種石巨人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -202,6 +246,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 7130020,
+      "mobName": "Goby",
+      "chineseMobName": "刺鰭魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 7130101,
       "mobName": "Taurospear",
       "chineseMobName": "長槍牛魔王",
@@ -279,46 +334,13 @@
       "maxQty": 1
     },
     {
-      "mobId": 3210206,
-      "mobName": "Helly",
-      "chineseMobName": "黃色戰鬥機",
-      "isBoss": false,
-      "inGame": false,
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4130103,
-      "mobName": "Rombot",
-      "chineseMobName": "泥人領導者",
+      "mobId": 8220000,
+      "mobName": "Eliza",
+      "chineseMobName": "艾利傑",
       "isBoss": true,
-      "inGame": false,
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 5150000,
-      "mobName": "Mixed Golem",
-      "chineseMobName": "混種石巨人",
-      "isBoss": false,
       "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 2230113,
-      "mobName": "Dark Eye",
-      "chineseMobName": "黑獨眼獸",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.03,
-      "displayChance": "0.030%",
+      "chance": 9,
+      "displayChance": "9.0%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -345,5 +367,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 31
+  "totalMonsters": 33
 }

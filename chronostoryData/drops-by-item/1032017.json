@@ -4,13 +4,13 @@
   "chineseItemName": "玫瑰耳環",
   "monsters": [
     {
-      "mobId": 8220001,
-      "mobName": "Snowman",
-      "chineseMobName": "雪毛怪人",
-      "isBoss": true,
+      "mobId": 4230131,
+      "mobName": "Gray Commuter Saucer",
+      "chineseMobName": "新葛雷白",
+      "isBoss": false,
       "inGame": true,
-      "chance": 1,
-      "displayChance": "1.0%",
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -18,6 +18,39 @@
       "mobId": 8140500,
       "mobName": "Bain",
       "chineseMobName": "煉獄獵犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8140600,
+      "mobName": "Bone Fish",
+      "chineseMobName": "骨骸魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8142100,
+      "mobName": "Risell Squid",
+      "chineseMobName": "致命烏賊怪",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8150100,
+      "mobName": "Shark",
+      "chineseMobName": "鯊魚",
       "isBoss": false,
       "inGame": true,
       "chance": 0.1,
@@ -37,16 +70,16 @@
       "maxQty": 1
     },
     {
-      "mobId": 4230131,
-      "mobName": "Gray Commuter Saucer",
-      "chineseMobName": "新葛雷白",
-      "isBoss": false,
+      "mobId": 8220001,
+      "mobName": "Snowman",
+      "chineseMobName": "雪毛怪人",
+      "isBoss": true,
       "inGame": true,
-      "chance": 0.08,
-      "displayChance": "0.080%",
+      "chance": 1,
+      "displayChance": "1.0%",
       "minQty": 1,
       "maxQty": 1
     }
   ],
-  "totalMonsters": 4
+  "totalMonsters": 7
 }

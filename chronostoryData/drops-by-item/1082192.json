@@ -26,6 +26,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 3230405,
+      "mobName": "Jr. Seal",
+      "chineseMobName": "粉紅小海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5400000,
       "mobName": "Jr. Pepe",
       "chineseMobName": "小企鵝王",
@@ -37,5 +48,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 4
 }

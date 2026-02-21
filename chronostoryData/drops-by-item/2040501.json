@@ -4,6 +4,17 @@
   "chineseItemName": "套服敏捷卷軸60%",
   "monsters": [
     {
+      "mobId": 1140100,
+      "mobName": "Ghost Stump",
+      "chineseMobName": "發芽木妖",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 2220000,
       "mobName": "Mano",
       "chineseMobName": "紅寶王",
@@ -11,6 +22,28 @@
       "inGame": true,
       "chance": 0.3,
       "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230110,
+      "mobName": "Wooden Mask",
+      "chineseMobName": "木面怪人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.075,
+      "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230200,
+      "mobName": "Flower Fish",
+      "chineseMobName": "花鯰魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -37,6 +70,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 8140600,
+      "mobName": "Bone Fish",
+      "chineseMobName": "骨骸魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 8220001,
       "mobName": "Snowman",
       "chineseMobName": "雪毛怪人",
@@ -48,27 +92,27 @@
       "maxQty": 1
     },
     {
-      "mobId": 2230110,
-      "mobName": "Wooden Mask",
-      "chineseMobName": "木面怪人",
-      "isBoss": false,
+      "mobId": 8510000,
+      "mobName": "Pianus (R)",
+      "chineseMobName": "海怒斯(右)",
+      "isBoss": true,
       "inGame": true,
-      "chance": 0.075,
-      "displayChance": "0.075%",
+      "chance": 0.3,
+      "displayChance": "0.30%",
       "minQty": 1,
       "maxQty": 1
     },
     {
-      "mobId": 1140100,
-      "mobName": "Ghost Stump",
-      "chineseMobName": "發芽木妖",
-      "isBoss": false,
+      "mobId": 8520000,
+      "mobName": "Pianus (L)",
+      "chineseMobName": "海怒斯(左)",
+      "isBoss": true,
       "inGame": true,
-      "chance": 0.03,
-      "displayChance": "0.030%",
+      "chance": 0.3,
+      "displayChance": "0.30%",
       "minQty": 1,
       "maxQty": 1
     }
   ],
-  "totalMonsters": 6
+  "totalMonsters": 10
 }

@@ -4,6 +4,17 @@
   "chineseItemName": "藍精靈手套",
   "monsters": [
     {
+      "mobId": 3210450,
+      "mobName": "Scuba Pepe",
+      "chineseMobName": "潛水企鵝王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4130102,
       "mobName": "Dark Nependeath",
       "chineseMobName": "黑食人花",
@@ -26,5 +37,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 2
+  "totalMonsters": 3
 }

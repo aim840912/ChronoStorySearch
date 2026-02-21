@@ -48,6 +48,28 @@
       "maxQty": 1
     },
     {
+      "mobId": 2230105,
+      "mobName": "Seacle",
+      "chineseMobName": "綠海馬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230109,
+      "mobName": "Bubble Fish",
+      "chineseMobName": "泡泡魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 2230111,
       "mobName": "Rocky Mask",
       "chineseMobName": "石面怪人",
@@ -114,6 +136,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 3230104,
+      "mobName": "Mask Fish",
+      "chineseMobName": "蒙面河豚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 3230200,
       "mobName": "Star Pixie",
       "chineseMobName": "星光精靈",
@@ -169,11 +202,33 @@
       "maxQty": 1
     },
     {
+      "mobId": 3230308,
+      "mobName": "Tweeter",
+      "chineseMobName": "特威德",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 3230400,
       "mobName": "Drumming Bunny",
       "chineseMobName": "兔子鼓手",
       "isBoss": false,
       "inGame": false,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230405,
+      "mobName": "Jr. Seal",
+      "chineseMobName": "粉紅小海豹",
+      "isBoss": false,
+      "inGame": true,
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -198,6 +253,17 @@
       "inGame": true,
       "chance": 0.9,
       "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230103,
+      "mobName": "Iron Hog",
+      "chineseMobName": "鋼之肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -334,6 +400,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 7130020,
+      "mobName": "Goby",
+      "chineseMobName": "刺鰭魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 7130102,
       "mobName": "Yeti & Pepe",
       "chineseMobName": "雪吉拉戰車",
@@ -411,28 +488,6 @@
       "maxQty": 1
     },
     {
-      "mobId": 3230308,
-      "mobName": "Tweeter",
-      "chineseMobName": "特威德",
-      "isBoss": false,
-      "inGame": false,
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4230103,
-      "mobName": "Iron Hog",
-      "chineseMobName": "鋼之肥肥",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 8645263,
       "mobName": "Turbo Robo",
       "chineseMobName": "守護者機器人",
@@ -444,5 +499,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 40
+  "totalMonsters": 45
 }

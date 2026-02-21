@@ -1,0 +1,19 @@
+{
+  "itemId": 1092030,
+  "itemName": "Maple Shield",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 2230107,
+      "mobName": "Krappy",
+      "chineseMobName": "獨角尼莫",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

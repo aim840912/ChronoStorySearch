@@ -15,6 +15,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 6230500,
+      "mobName": "Master Soul Teddy",
+      "chineseMobName": "幽魂發條熊隊長",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 6300000,
       "mobName": "Yeti",
       "chineseMobName": "雪吉拉",
@@ -59,16 +70,16 @@
       "maxQty": 1
     },
     {
-      "mobId": 6230500,
-      "mobName": "Master Soul Teddy",
-      "chineseMobName": "幽魂發條熊隊長",
+      "mobId": 8141300,
+      "mobName": "Squid",
+      "chineseMobName": "烏賊怪",
       "isBoss": false,
       "inGame": true,
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "chance": 0.1,
+      "displayChance": "0.10%",
       "minQty": 1,
       "maxQty": 1
     }
   ],
-  "totalMonsters": 6
+  "totalMonsters": 7
 }

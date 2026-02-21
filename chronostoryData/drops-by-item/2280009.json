@@ -1,0 +1,30 @@
+{
+  "itemId": 2280009,
+  "itemName": "[Skill Book] Angel Ray",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 8510000,
+      "mobName": "Pianus (R)",
+      "chineseMobName": "海怒斯(右)",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8520000,
+      "mobName": "Pianus (L)",
+      "chineseMobName": "海怒斯(左)",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 2
+}

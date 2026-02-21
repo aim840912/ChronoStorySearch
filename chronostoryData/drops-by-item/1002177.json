@@ -4,9 +4,9 @@
   "chineseItemName": "藍防風帽",
   "monsters": [
     {
-      "mobId": 5400000,
-      "mobName": "Jr. Pepe",
-      "chineseMobName": "小企鵝王",
+      "mobId": 3230405,
+      "mobName": "Jr. Seal",
+      "chineseMobName": "粉紅小海豹",
       "isBoss": false,
       "inGame": true,
       "chance": 0.1287,
@@ -24,7 +24,18 @@
       "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 5400000,
+      "mobName": "Jr. Pepe",
+      "chineseMobName": "小企鵝王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 2
+  "totalMonsters": 3
 }

@@ -1,0 +1,19 @@
+{
+  "itemId": 4130001,
+  "itemName": "Shoes Production Stimulator",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 8142100,
+      "mobName": "Risell Squid",
+      "chineseMobName": "致命烏賊怪",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

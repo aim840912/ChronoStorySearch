@@ -4,24 +4,13 @@
   "chineseItemName": "力量母礦",
   "monsters": [
     {
-      "mobId": 5120100,
-      "mobName": "MT-09",
-      "chineseMobName": "機器人堤安",
+      "mobId": 2230200,
+      "mobName": "Flower Fish",
+      "chineseMobName": "花鯰魚",
       "isBoss": false,
-      "inGame": false,
-      "chance": 10,
-      "displayChance": "10.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 6220001,
-      "mobName": "Zeno",
-      "chineseMobName": "葛雷金剛",
-      "isBoss": true,
-      "inGame": false,
-      "chance": 10,
-      "displayChance": "10.0%",
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -77,6 +66,17 @@
       "inGame": true,
       "chance": 1,
       "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230101,
+      "mobName": "Jr. Wraith",
+      "chineseMobName": "小幽靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -147,6 +147,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 4230120,
+      "mobName": "Plateon",
+      "chineseMobName": "培利堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230121,
       "mobName": "Mecateon",
       "chineseMobName": "梅卡堤安",
@@ -191,6 +202,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 5120100,
+      "mobName": "MT-09",
+      "chineseMobName": "機器人堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 10,
+      "displayChance": "10.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5130107,
       "mobName": "Coolie Zombie",
       "chineseMobName": "殭屍",
@@ -209,6 +231,17 @@
       "inGame": true,
       "chance": 1,
       "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6220001,
+      "mobName": "Zeno",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 10,
+      "displayChance": "10.0%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -301,6 +334,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 8140600,
+      "mobName": "Bone Fish",
+      "chineseMobName": "骨骸魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 8141000,
       "mobName": "Spirit Viking",
       "chineseMobName": "維京",
@@ -321,29 +365,7 @@
       "displayChance": "0.50%",
       "minQty": 1,
       "maxQty": 1
-    },
-    {
-      "mobId": 3230101,
-      "mobName": "Jr. Wraith",
-      "chineseMobName": "小幽靈",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4230120,
-      "mobName": "Plateon",
-      "chineseMobName": "培利堤安",
-      "isBoss": false,
-      "inGame": false,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
     }
   ],
-  "totalMonsters": 31
+  "totalMonsters": 33
 }

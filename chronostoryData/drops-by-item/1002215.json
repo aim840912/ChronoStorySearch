@@ -15,6 +15,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 4230200,
+      "mobName": "Poopa",
+      "chineseMobName": "河豚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5130104,
       "mobName": "Hector",
       "chineseMobName": "野狼",
@@ -26,5 +37,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 2
+  "totalMonsters": 3
 }

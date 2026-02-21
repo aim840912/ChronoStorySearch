@@ -1,0 +1,19 @@
+{
+  "itemId": 1061117,
+  "itemName": "Red Osfa Pants",
+  "chineseItemName": "紅色勇者褲",
+  "monsters": [
+    {
+      "mobId": 8142100,
+      "mobName": "Risell Squid",
+      "chineseMobName": "致命烏賊怪",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 1072223,
+  "itemName": "Green Varr Shoes",
+  "chineseItemName": "綠色巴爾鞋",
+  "monsters": [
+    {
+      "mobId": 8150101,
+      "mobName": "Cold Shark",
+      "chineseMobName": "尖鼻鯊魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

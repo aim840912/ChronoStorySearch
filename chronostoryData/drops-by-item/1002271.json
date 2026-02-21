@@ -4,6 +4,17 @@
   "chineseItemName": "綠十字帽",
   "monsters": [
     {
+      "mobId": 4230118,
+      "mobName": "Ultra Gray",
+      "chineseMobName": "葛雷隊長",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 6400000,
       "mobName": "Dark Yeti",
       "chineseMobName": "黑吉拉",
@@ -48,16 +59,16 @@
       "maxQty": 1
     },
     {
-      "mobId": 4230118,
-      "mobName": "Ultra Gray",
-      "chineseMobName": "葛雷隊長",
+      "mobId": 8141300,
+      "mobName": "Squid",
+      "chineseMobName": "烏賊怪",
       "isBoss": false,
-      "inGame": false,
-      "chance": 0.08,
-      "displayChance": "0.080%",
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
       "minQty": 1,
       "maxQty": 1
     }
   ],
-  "totalMonsters": 5
+  "totalMonsters": 6
 }

@@ -312,6 +312,61 @@
       "maxQty": 78
     },
     {
+      "mobId": 2230105,
+      "mobName": "Seacle",
+      "chineseMobName": "綠海馬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 64,
+      "maxQty": 94
+    },
+    {
+      "mobId": 2230106,
+      "mobName": "Cico",
+      "chineseMobName": "黃金海馬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 44,
+      "maxQty": 66
+    },
+    {
+      "mobId": 2230107,
+      "mobName": "Krappy",
+      "chineseMobName": "獨角尼莫",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 66,
+      "maxQty": 97
+    },
+    {
+      "mobId": 2230108,
+      "mobName": "Pinboom",
+      "chineseMobName": "海膽",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 40,
+      "maxQty": 60
+    },
+    {
+      "mobId": 2230109,
+      "mobName": "Bubble Fish",
+      "chineseMobName": "泡泡魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 52,
+      "maxQty": 78
+    },
+    {
       "mobId": 2230110,
       "mobName": "Wooden Mask",
       "chineseMobName": "木面怪人",
@@ -345,6 +400,17 @@
       "maxQty": 215
     },
     {
+      "mobId": 2230200,
+      "mobName": "Flower Fish",
+      "chineseMobName": "花鯰魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 52,
+      "maxQty": 78
+    },
+    {
       "mobId": 2300100,
       "mobName": "Stirge",
       "chineseMobName": "蝙蝠",
@@ -376,6 +442,17 @@
       "displayChance": "40.0%",
       "minQty": 81,
       "maxQty": 119
+    },
+    {
+      "mobId": 3000006,
+      "mobName": "Krip",
+      "chineseMobName": "活跳蝦",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 56,
+      "maxQty": 84
     },
     {
       "mobId": 3110100,
@@ -521,6 +598,17 @@
       "maxQty": 114
     },
     {
+      "mobId": 3210450,
+      "mobName": "Scuba Pepe",
+      "chineseMobName": "潛水企鵝王",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 75,
+      "maxQty": 114
+    },
+    {
       "mobId": 3210800,
       "mobName": "Lupin",
       "chineseMobName": "猴子",
@@ -585,6 +673,17 @@
       "displayChance": "40.0%",
       "minQty": 96,
       "maxQty": 144
+    },
+    {
+      "mobId": 3230104,
+      "mobName": "Mask Fish",
+      "chineseMobName": "蒙面河豚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 56,
+      "maxQty": 84
     },
     {
       "mobId": 3230200,
@@ -697,6 +796,17 @@
       "maxQty": 139
     },
     {
+      "mobId": 3230405,
+      "mobName": "Jr. Seal",
+      "chineseMobName": "粉紅小海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 96,
+      "maxQty": 114
+    },
+    {
       "mobId": 4130100,
       "mobName": "Copper Drake",
       "chineseMobName": "土龍",
@@ -728,6 +838,17 @@
       "displayChance": "40.0%",
       "minQty": 423,
       "maxQty": 2080
+    },
+    {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 396,
+      "maxQty": 1950
     },
     {
       "mobId": 4230100,
@@ -972,6 +1093,28 @@
       "maxQty": 758
     },
     {
+      "mobId": 4230123,
+      "mobName": "Sparker",
+      "chineseMobName": "長牙海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 132,
+      "maxQty": 198
+    },
+    {
+      "mobId": 4230124,
+      "mobName": "Freezer",
+      "chineseMobName": "短牙海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 120,
+      "maxQty": 180
+    },
+    {
       "mobId": 4230125,
       "mobName": "Skeledog",
       "chineseMobName": "骷髏犬",
@@ -1036,6 +1179,28 @@
       "displayChance": "40.0%",
       "minQty": 695,
       "maxQty": 985
+    },
+    {
+      "mobId": 4230200,
+      "mobName": "Poopa",
+      "chineseMobName": "河豚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 104,
+      "maxQty": 156
+    },
+    {
+      "mobId": 4230201,
+      "mobName": "Poison Poopa",
+      "chineseMobName": "毒河豚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 108,
+      "maxQty": 162
     },
     {
       "mobId": 4230400,
@@ -1731,6 +1896,17 @@
       "maxQty": 545
     },
     {
+      "mobId": 7130020,
+      "mobName": "Goby",
+      "chineseMobName": "刺鰭魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 300,
+      "maxQty": 450
+    },
+    {
       "mobId": 7130100,
       "mobName": "Tauromacis",
       "chineseMobName": "月牙牛魔王",
@@ -1885,6 +2061,17 @@
       "maxQty": 960
     },
     {
+      "mobId": 8140600,
+      "mobName": "Bone Fish",
+      "chineseMobName": "骨骸魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 594,
+      "maxQty": 889
+    },
+    {
       "mobId": 8141000,
       "mobName": "Spirit Viking",
       "chineseMobName": "維京",
@@ -1907,6 +2094,17 @@
       "maxQty": 959
     },
     {
+      "mobId": 8141300,
+      "mobName": "Squid",
+      "chineseMobName": "烏賊怪",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 622,
+      "maxQty": 927
+    },
+    {
       "mobId": 8142000,
       "mobName": "Phantom Watch",
       "chineseMobName": "幽魂女巫",
@@ -1916,6 +2114,17 @@
       "displayChance": "40.0%",
       "minQty": 622,
       "maxQty": 948
+    },
+    {
+      "mobId": 8142100,
+      "mobName": "Risell Squid",
+      "chineseMobName": "致命烏賊怪",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 638,
+      "maxQty": 944
     },
     {
       "mobId": 8143000,
@@ -1949,6 +2158,28 @@
       "displayChance": "40.0%",
       "minQty": 2142,
       "maxQty": 10490
+    },
+    {
+      "mobId": 8150100,
+      "mobName": "Shark",
+      "chineseMobName": "鯊魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 714,
+      "maxQty": 1049
+    },
+    {
+      "mobId": 8150101,
+      "mobName": "Cold Shark",
+      "chineseMobName": "尖鼻鯊魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 747,
+      "maxQty": 1093
     },
     {
       "mobId": 8160000,
@@ -1993,6 +2224,28 @@
       "displayChance": "40.0%",
       "minQty": 700,
       "maxQty": 900
+    },
+    {
+      "mobId": 8510000,
+      "mobName": "Pianus (R)",
+      "chineseMobName": "海怒斯(右)",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 10000,
+      "maxQty": 20000
+    },
+    {
+      "mobId": 8520000,
+      "mobName": "Pianus (L)",
+      "chineseMobName": "海怒斯(左)",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 10000,
+      "maxQty": 20000
     },
     {
       "mobId": 8645263,
@@ -2083,5 +2336,5 @@
       "maxQty": 482
     }
   ],
-  "totalMonsters": 189
+  "totalMonsters": 212
 }

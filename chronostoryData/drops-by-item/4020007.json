@@ -4,28 +4,6 @@
   "chineseItemName": "鑽石母礦",
   "monsters": [
     {
-      "mobId": 4130103,
-      "mobName": "Rombot",
-      "chineseMobName": "泥人領導者",
-      "isBoss": true,
-      "inGame": false,
-      "chance": 9,
-      "displayChance": "9.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 5120100,
-      "mobName": "MT-09",
-      "chineseMobName": "機器人堤安",
-      "isBoss": false,
-      "inGame": false,
-      "chance": 9,
-      "displayChance": "9.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 1140100,
       "mobName": "Ghost Stump",
       "chineseMobName": "發芽木妖",
@@ -62,6 +40,17 @@
       "mobId": 2230100,
       "mobName": "Evil Eye",
       "chineseMobName": "火獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230108,
+      "mobName": "Pinboom",
+      "chineseMobName": "海膽",
       "isBoss": false,
       "inGame": true,
       "chance": 0.9,
@@ -114,6 +103,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 4130103,
+      "mobName": "Rombot",
+      "chineseMobName": "泥人領導者",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 9,
+      "displayChance": "9.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230107,
       "mobName": "Flyeye",
       "chineseMobName": "獨眼蝙蝠",
@@ -158,6 +158,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 4230124,
+      "mobName": "Freezer",
+      "chineseMobName": "短牙海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230125,
       "mobName": "Skeledog",
       "chineseMobName": "骷髏犬",
@@ -187,6 +198,17 @@
       "inGame": true,
       "chance": 0.9,
       "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5120100,
+      "mobName": "MT-09",
+      "chineseMobName": "機器人堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 9,
+      "displayChance": "9.0%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -354,7 +376,29 @@
       "displayChance": "0.90%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 8140600,
+      "mobName": "Bone Fish",
+      "chineseMobName": "骨骸魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8150101,
+      "mobName": "Cold Shark",
+      "chineseMobName": "尖鼻鯊魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 32
+  "totalMonsters": 36
 }

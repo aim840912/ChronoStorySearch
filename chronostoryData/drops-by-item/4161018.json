@@ -1,0 +1,30 @@
+{
+  "itemId": 4161018,
+  "itemName": "[Storybook] Ancient Book",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 8150100,
+      "mobName": "Shark",
+      "chineseMobName": "鯊魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8150101,
+      "mobName": "Cold Shark",
+      "chineseMobName": "尖鼻鯊魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 2
+}

@@ -4,17 +4,6 @@
   "chineseItemName": "手套攻擊卷軸10%",
   "monsters": [
     {
-      "mobId": 8150000,
-      "mobName": "Crimson Balrog",
-      "chineseMobName": "地獄巴洛古",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 2230110,
       "mobName": "Wooden Mask",
       "chineseMobName": "木面怪人",
@@ -22,6 +11,17 @@
       "inGame": true,
       "chance": 0.075,
       "displayChance": "0.075%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -48,6 +48,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 8150000,
+      "mobName": "Crimson Balrog",
+      "chineseMobName": "地獄巴洛古",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 9834151,
       "mobName": "Tauroshield",
       "chineseMobName": "盾牌牛魔王",
@@ -59,5 +70,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 5
+  "totalMonsters": 6
 }

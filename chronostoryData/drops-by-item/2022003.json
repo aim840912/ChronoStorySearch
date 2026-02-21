@@ -103,6 +103,28 @@
       "maxQty": 1
     },
     {
+      "mobId": 8150100,
+      "mobName": "Shark",
+      "chineseMobName": "鯊魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 2,
+      "displayChance": "2.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8150101,
+      "mobName": "Cold Shark",
+      "chineseMobName": "尖鼻鯊魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 2,
+      "displayChance": "2.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 8160000,
       "mobName": "Gatekeeper",
       "chineseMobName": "通道守門人",
@@ -114,5 +136,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 10
+  "totalMonsters": 12
 }

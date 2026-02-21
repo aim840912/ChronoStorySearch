@@ -1,0 +1,30 @@
+{
+  "itemId": 1072086,
+  "itemName": "Green Lappy Boots",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 2230200,
+      "mobName": "Flower Fish",
+      "chineseMobName": "花鯰魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3000006,
+      "mobName": "Krip",
+      "chineseMobName": "活跳蝦",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 2
+}

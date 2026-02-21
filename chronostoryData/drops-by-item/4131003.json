@@ -1,0 +1,19 @@
+{
+  "itemId": 4131003,
+  "itemName": "Two-Handed Sword Forging Manual",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 3000006,
+      "mobName": "Krip",
+      "chineseMobName": "活跳蝦",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.6,
+      "displayChance": "0.60%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

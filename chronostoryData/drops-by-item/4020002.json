@@ -48,6 +48,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 2230200,
+      "mobName": "Flower Fish",
+      "chineseMobName": "花鯰魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 3110100,
       "mobName": "Ligator",
       "chineseMobName": "鱷魚",
@@ -81,6 +92,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 3230405,
+      "mobName": "Jr. Seal",
+      "chineseMobName": "粉紅小海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230104,
       "mobName": "Clang",
       "chineseMobName": "青螃蟹",
@@ -99,6 +121,17 @@
       "inGame": false,
       "chance": 0.9,
       "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230124,
+      "mobName": "Freezer",
+      "chineseMobName": "短牙海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -191,5 +224,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 17
+  "totalMonsters": 20
 }

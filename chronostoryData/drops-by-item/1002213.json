@@ -4,17 +4,6 @@
   "chineseItemName": "綠貴族軟帽",
   "monsters": [
     {
-      "mobId": 5130104,
-      "mobName": "Hector",
-      "chineseMobName": "野狼",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.1287,
-      "displayChance": "0.13%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 2230113,
       "mobName": "Dark Eye",
       "chineseMobName": "黑獨眼獸",
@@ -24,7 +13,29 @@
       "displayChance": "0.12%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230124,
+      "mobName": "Freezer",
+      "chineseMobName": "短牙海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5130104,
+      "mobName": "Hector",
+      "chineseMobName": "野狼",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 2
+  "totalMonsters": 3
 }

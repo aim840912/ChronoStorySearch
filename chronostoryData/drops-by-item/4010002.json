@@ -4,17 +4,6 @@
   "chineseItemName": "鋰礦石母礦",
   "monsters": [
     {
-      "mobId": 6220000,
-      "mobName": "Dyle\t",
-      "chineseMobName": "沼澤巨鱷",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 9,
-      "displayChance": "9.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 120100,
       "mobName": "Shroom",
       "chineseMobName": "菇菇仔",
@@ -75,6 +64,17 @@
       "chineseMobName": "紅蜘蛛",
       "isBoss": false,
       "inGame": false,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230107,
+      "mobName": "Krappy",
+      "chineseMobName": "獨角尼莫",
+      "isBoss": false,
+      "inGame": true,
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -147,6 +147,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230111,
       "mobName": "Robo",
       "chineseMobName": "藍色機器人",
@@ -163,6 +174,17 @@
       "chineseMobName": "葛雷隊長",
       "isBoss": false,
       "inGame": false,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230200,
+      "mobName": "Poopa",
+      "chineseMobName": "河豚",
+      "isBoss": false,
+      "inGame": true,
       "chance": 0.9,
       "displayChance": "0.90%",
       "minQty": 1,
@@ -202,6 +224,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 6220000,
+      "mobName": "Dyle\t",
+      "chineseMobName": "沼澤巨鱷",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 9,
+      "displayChance": "9.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 7140000,
       "mobName": "Ghost Pirate",
       "chineseMobName": "百烈",
@@ -222,7 +255,18 @@
       "displayChance": "0.90%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 8150101,
+      "mobName": "Cold Shark",
+      "chineseMobName": "尖鼻鯊魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 20
+  "totalMonsters": 24
 }

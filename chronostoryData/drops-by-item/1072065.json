@@ -1,0 +1,19 @@
+{
+  "itemId": 1072065,
+  "itemName": "Red Enamel Boots",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 2230108,
+      "mobName": "Pinboom",
+      "chineseMobName": "海膽",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

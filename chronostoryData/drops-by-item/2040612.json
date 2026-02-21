@@ -4,6 +4,17 @@
   "chineseItemName": "褲裙敏捷卷軸10%",
   "monsters": [
     {
+      "mobId": 4230110,
+      "mobName": "King Block Golem",
+      "chineseMobName": "積木泥人王",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5220003,
       "mobName": "Timer",
       "chineseMobName": "咕咕鐘",
@@ -26,16 +37,16 @@
       "maxQty": 1
     },
     {
-      "mobId": 4230110,
-      "mobName": "King Block Golem",
-      "chineseMobName": "積木泥人王",
+      "mobId": 8141300,
+      "mobName": "Squid",
+      "chineseMobName": "烏賊怪",
       "isBoss": false,
-      "inGame": false,
+      "inGame": true,
       "chance": 0.03,
       "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 4
 }

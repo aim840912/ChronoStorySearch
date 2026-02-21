@@ -4,6 +4,28 @@
   "chineseItemName": "紅色海盜帽",
   "monsters": [
     {
+      "mobId": 4230120,
+      "mobName": "Plateon",
+      "chineseMobName": "培利堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 7130020,
+      "mobName": "Goby",
+      "chineseMobName": "刺鰭魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.1287,
+      "displayChance": "0.13%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 8141100,
       "mobName": "Gigantic Spirit Viking",
       "chineseMobName": "巨人維京",
@@ -24,18 +46,7 @@
       "displayChance": "0.13%",
       "minQty": 1,
       "maxQty": 1
-    },
-    {
-      "mobId": 4230120,
-      "mobName": "Plateon",
-      "chineseMobName": "培利堤安",
-      "isBoss": false,
-      "inGame": false,
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 4
 }

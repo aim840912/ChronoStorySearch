@@ -26,6 +26,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 4230124,
+      "mobName": "Freezer",
+      "chineseMobName": "短牙海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 9300038,
       "mobName": "Ghost Pixie",
       "chineseMobName": "鬼精靈",
@@ -37,5 +48,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 4
 }

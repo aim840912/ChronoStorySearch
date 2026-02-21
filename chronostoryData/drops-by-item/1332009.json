@@ -4,6 +4,17 @@
   "chineseItemName": "偃月刃",
   "monsters": [
     {
+      "mobId": 2230106,
+      "mobName": "Cico",
+      "chineseMobName": "黃金海馬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 3110102,
       "mobName": "Ratz",
       "chineseMobName": "白色發條鼠",
@@ -15,5 +26,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 1
+  "totalMonsters": 2
 }

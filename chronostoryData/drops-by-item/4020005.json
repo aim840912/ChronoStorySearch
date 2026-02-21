@@ -4,17 +4,6 @@
   "chineseItemName": "藍寶石母礦",
   "monsters": [
     {
-      "mobId": 5220002,
-      "mobName": "Faust",
-      "chineseMobName": "殭屍猴王",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 9,
-      "displayChance": "9.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 210100,
       "mobName": "Slime",
       "chineseMobName": "綠水靈",
@@ -51,6 +40,17 @@
       "mobId": 2230100,
       "mobName": "Evil Eye",
       "chineseMobName": "火獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.9,
+      "displayChance": "0.90%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230107,
+      "mobName": "Krappy",
+      "chineseMobName": "獨角尼莫",
       "isBoss": false,
       "inGame": true,
       "chance": 0.9,
@@ -147,6 +147,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 5220002,
+      "mobName": "Faust",
+      "chineseMobName": "殭屍猴王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 9,
+      "displayChance": "9.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5400000,
       "mobName": "Jr. Pepe",
       "chineseMobName": "小企鵝王",
@@ -191,5 +202,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 17
+  "totalMonsters": 18
 }

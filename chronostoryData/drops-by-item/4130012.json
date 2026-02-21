@@ -1,0 +1,30 @@
+{
+  "itemId": 4130012,
+  "itemName": "Bow Production Stimulator",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 4230124,
+      "mobName": "Freezer",
+      "chineseMobName": "短牙海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.6,
+      "displayChance": "0.60%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8150101,
+      "mobName": "Cold Shark",
+      "chineseMobName": "尖鼻鯊魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 2
+}

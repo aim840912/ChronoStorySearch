@@ -1,0 +1,19 @@
+{
+  "itemId": 2382035,
+  "itemName": "Jr. Seal Card",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 3230405,
+      "mobName": "Jr. Seal",
+      "chineseMobName": "粉紅小海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

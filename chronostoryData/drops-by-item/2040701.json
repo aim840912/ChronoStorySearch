@@ -4,6 +4,28 @@
   "chineseItemName": "鞋子迴避卷軸60%",
   "monsters": [
     {
+      "mobId": 2230109,
+      "mobName": "Bubble Fish",
+      "chineseMobName": "泡泡魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3000005,
+      "mobName": "Brown Teddy",
+      "chineseMobName": "褐色發條熊",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 3220000,
       "mobName": "Stumpy",
       "chineseMobName": "樹妖王",
@@ -11,6 +33,17 @@
       "inGame": true,
       "chance": 0.3,
       "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230104,
+      "mobName": "Mask Fish",
+      "chineseMobName": "蒙面河豚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -26,6 +59,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 8141300,
+      "mobName": "Squid",
+      "chineseMobName": "烏賊怪",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 8220001,
       "mobName": "Snowman",
       "chineseMobName": "雪毛怪人",
@@ -35,18 +79,7 @@
       "displayChance": "0.30%",
       "minQty": 1,
       "maxQty": 1
-    },
-    {
-      "mobId": 3000005,
-      "mobName": "Brown Teddy",
-      "chineseMobName": "褐色發條熊",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.03,
-      "displayChance": "0.030%",
-      "minQty": 1,
-      "maxQty": 1
     }
   ],
-  "totalMonsters": 4
+  "totalMonsters": 7
 }

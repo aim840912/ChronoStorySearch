@@ -4,6 +4,17 @@
   "chineseItemName": "綠色虎雲裙",
   "monsters": [
     {
+      "mobId": 8141300,
+      "mobName": "Squid",
+      "chineseMobName": "烏賊怪",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 8143000,
       "mobName": "Grim Phantom Watch",
       "chineseMobName": "怨靈女巫",
@@ -15,5 +26,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 1
+  "totalMonsters": 2
 }

@@ -4,6 +4,17 @@
   "chineseItemName": "花靈之斧",
   "monsters": [
     {
+      "mobId": 4230118,
+      "mobName": "Ultra Gray",
+      "chineseMobName": "葛雷隊長",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 8140500,
       "mobName": "Bain",
       "chineseMobName": "煉獄獵犬",
@@ -15,16 +26,16 @@
       "maxQty": 1
     },
     {
-      "mobId": 4230118,
-      "mobName": "Ultra Gray",
-      "chineseMobName": "葛雷隊長",
+      "mobId": 8150101,
+      "mobName": "Cold Shark",
+      "chineseMobName": "尖鼻鯊魚",
       "isBoss": false,
-      "inGame": false,
-      "chance": 0.05,
-      "displayChance": "0.050%",
+      "inGame": true,
+      "chance": 0.07,
+      "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
     }
   ],
-  "totalMonsters": 2
+  "totalMonsters": 3
 }

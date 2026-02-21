@@ -1,0 +1,19 @@
+{
+  "itemId": 2388030,
+  "itemName": "Seruf Card",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 2.4,
+      "displayChance": "2.4%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

@@ -1,0 +1,19 @@
+{
+  "itemId": 2381017,
+  "itemName": "Krappy Card",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 2230107,
+      "mobName": "Krappy",
+      "chineseMobName": "獨角尼莫",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.8,
+      "displayChance": "0.80%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

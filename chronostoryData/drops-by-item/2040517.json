@@ -1,0 +1,19 @@
+{
+  "itemId": 2040517,
+  "itemName": "Scroll for Overall Armor for LUK 10%",
+  "chineseItemName": "套服幸運卷軸10%",
+  "monsters": [
+    {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

@@ -4,6 +4,17 @@
   "chineseItemName": "單手劍命中卷軸10%",
   "monsters": [
     {
+      "mobId": 5100000,
+      "mobName": "Jr. Yeti",
+      "chineseMobName": "小雪球",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 6300005,
       "mobName": "Zombie Mushmom",
       "chineseMobName": "殭屍蘑菇王",
@@ -15,9 +26,9 @@
       "maxQty": 1
     },
     {
-      "mobId": 5100000,
-      "mobName": "Jr. Yeti",
-      "chineseMobName": "小雪球",
+      "mobId": 8142100,
+      "mobName": "Risell Squid",
+      "chineseMobName": "致命烏賊怪",
       "isBoss": false,
       "inGame": true,
       "chance": 0.03,
@@ -37,5 +48,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 4
 }

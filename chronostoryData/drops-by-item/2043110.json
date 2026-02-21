@@ -4,6 +4,17 @@
   "chineseItemName": "單手斧命中卷軸100%",
   "monsters": [
     {
+      "mobId": 2230107,
+      "mobName": "Krappy",
+      "chineseMobName": "獨角尼莫",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 3210202,
       "mobName": "Jr. Grupin",
       "chineseMobName": "幼藍獨角獅",
@@ -37,5 +48,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 4
 }

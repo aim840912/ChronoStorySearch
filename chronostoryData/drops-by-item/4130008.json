@@ -1,0 +1,41 @@
+{
+  "itemId": 4130008,
+  "itemName": "Spear Forging Stimulator",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 4230123,
+      "mobName": "Sparker",
+      "chineseMobName": "長牙海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.6,
+      "displayChance": "0.60%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230124,
+      "mobName": "Freezer",
+      "chineseMobName": "短牙海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.6,
+      "displayChance": "0.60%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8141300,
+      "mobName": "Squid",
+      "chineseMobName": "烏賊怪",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.6,
+      "displayChance": "0.60%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 3
+}

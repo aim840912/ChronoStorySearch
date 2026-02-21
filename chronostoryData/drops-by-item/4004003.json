@@ -15,6 +15,28 @@
       "maxQty": 1
     },
     {
+      "mobId": 2230105,
+      "mobName": "Seacle",
+      "chineseMobName": "綠海馬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230106,
+      "mobName": "Cico",
+      "chineseMobName": "黃金海馬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 3210202,
       "mobName": "Jr. Grupin",
       "chineseMobName": "幼藍獨角獅",
@@ -136,6 +158,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 4230123,
+      "mobName": "Sparker",
+      "chineseMobName": "長牙海豹",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230132,
       "mobName": "Gray Luxury Saucer",
       "chineseMobName": "新葛雷黑",
@@ -246,6 +279,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 7130020,
+      "mobName": "Goby",
+      "chineseMobName": "刺鰭魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 8140100,
       "mobName": "Dark Yeti & Pepe",
       "chineseMobName": "黑吉拉戰車",
@@ -279,5 +323,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 25
+  "totalMonsters": 29
 }

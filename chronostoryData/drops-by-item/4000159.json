@@ -1,0 +1,19 @@
+{
+  "itemId": 4000159,
+  "itemName": "Poison Poopa's Poisonous Spikes",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 4230201,
+      "mobName": "Poison Poopa",
+      "chineseMobName": "毒河豚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 60,
+      "displayChance": "60.0%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

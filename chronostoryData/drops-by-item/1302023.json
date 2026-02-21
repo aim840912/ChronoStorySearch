@@ -4,6 +4,17 @@
   "chineseItemName": "坲羅劍",
   "monsters": [
     {
+      "mobId": 4230132,
+      "mobName": "Gray Luxury Saucer",
+      "chineseMobName": "新葛雷黑",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 8220001,
       "mobName": "Snowman",
       "chineseMobName": "雪毛怪人",
@@ -15,16 +26,27 @@
       "maxQty": 1
     },
     {
-      "mobId": 4230132,
-      "mobName": "Gray Luxury Saucer",
-      "chineseMobName": "新葛雷黑",
-      "isBoss": false,
+      "mobId": 8510000,
+      "mobName": "Pianus (R)",
+      "chineseMobName": "海怒斯(右)",
+      "isBoss": true,
       "inGame": true,
-      "chance": 0.05,
-      "displayChance": "0.050%",
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8520000,
+      "mobName": "Pianus (L)",
+      "chineseMobName": "海怒斯(左)",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
       "minQty": 1,
       "maxQty": 1
     }
   ],
-  "totalMonsters": 2
+  "totalMonsters": 4
 }
