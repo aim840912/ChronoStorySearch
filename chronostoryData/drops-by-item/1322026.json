@@ -4,9 +4,9 @@
   "chineseItemName": "彩虹游泳圈",
   "monsters": [
     {
-      "mobId": 3230104,
-      "mobName": "Mask Fish",
-      "chineseMobName": "蒙面河豚",
+      "mobId": 6230300,
+      "mobName": "Lazy Buffy",
+      "chineseMobName": "小丑瑞奇",
       "isBoss": false,
       "inGame": true,
       "chance": 0.07,
@@ -15,13 +15,13 @@
       "maxQty": 1
     },
     {
-      "mobId": 6230300,
-      "mobName": "Lazy Buffy",
-      "chineseMobName": "小丑瑞奇",
+      "mobId": 2230107,
+      "mobName": "Krappy",
+      "chineseMobName": "獨角尼莫",
       "isBoss": false,
       "inGame": true,
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "chance": 0.05,
+      "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1
     }

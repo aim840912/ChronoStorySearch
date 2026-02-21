@@ -4,17 +4,6 @@
   "chineseItemName": "紅神聖法衣",
   "monsters": [
     {
-      "mobId": 2230107,
-      "mobName": "Krappy",
-      "chineseMobName": "獨角尼莫",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 3110100,
       "mobName": "Ligator",
       "chineseMobName": "鱷魚",
@@ -37,5 +26,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 2
 }

@@ -94,17 +94,6 @@
       "enabled": true
     },
     {
-      "itemId": 4007001,
-      "itemName": "Magic Powder (White)",
-      "chineseItemName": "",
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4004004,
       "itemName": "Dark Crystal Ore",
       "chineseItemName": "黑暗母礦",
@@ -147,50 +136,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2386003,
-      "itemName": "Squid Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130006,
-      "itemName": "Two-Handed Axe Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130008,
-      "itemName": "Spear Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130014,
-      "itemName": "Dagger Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 1002271,
@@ -358,17 +303,6 @@
       "enabled": true
     },
     {
-      "itemId": 2290098,
-      "itemName": "[Mastery Book] Dragon Strike",
-      "chineseItemName": "",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1432007,
       "itemName": "Redemption",
       "chineseItemName": "銀龍槍",
@@ -457,5 +391,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 41
+  "totalDrops": 35
 }

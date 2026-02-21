@@ -46,7 +46,18 @@
       "displayChance": "0.10%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 2230109,
+      "mobName": "Bubble Fish",
+      "chineseMobName": "泡泡魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 4
+  "totalMonsters": 5
 }

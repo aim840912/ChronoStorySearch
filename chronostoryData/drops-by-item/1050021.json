@@ -4,17 +4,6 @@
   "chineseItemName": "藍十字鎖子甲",
   "monsters": [
     {
-      "mobId": 2230109,
-      "mobName": "Bubble Fish",
-      "chineseMobName": "泡泡魚",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 3210204,
       "mobName": "Roloduck",
       "chineseMobName": "玩具鴨",
@@ -37,5 +26,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 2
 }

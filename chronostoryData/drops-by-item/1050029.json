@@ -4,17 +4,6 @@
   "chineseItemName": "黑魔力長袍",
   "monsters": [
     {
-      "mobId": 2230107,
-      "mobName": "Krappy",
-      "chineseMobName": "獨角尼莫",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 5300000,
       "mobName": "Leatty",
       "chineseMobName": "利堤",
@@ -37,5 +26,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 2
 }

@@ -4,9 +4,20 @@
   "chineseItemName": "白龍之杖",
   "monsters": [
     {
-      "mobId": 4220000,
-      "mobName": "Seruf",
-      "chineseMobName": "火蚌殼",
+      "mobId": 5220002,
+      "mobName": "Faust",
+      "chineseMobName": "殭屍猴王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6130101,
+      "mobName": "Mushmom",
+      "chineseMobName": "蘑菇王",
       "isBoss": true,
       "inGame": true,
       "chance": 0.7,
@@ -48,28 +59,6 @@
       "maxQty": 1
     },
     {
-      "mobId": 5220002,
-      "mobName": "Faust",
-      "chineseMobName": "殭屍猴王",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 6130101,
-      "mobName": "Mushmom",
-      "chineseMobName": "蘑菇王",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 6230100,
       "mobName": "Wild Kargo",
       "chineseMobName": "魔龍",
@@ -81,5 +70,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 7
+  "totalMonsters": 6
 }

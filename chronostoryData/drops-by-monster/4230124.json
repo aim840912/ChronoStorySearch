@@ -17,17 +17,6 @@
       "enabled": true
     },
     {
-      "itemId": 4031209,
-      "itemName": "SOS Letter",
-      "chineseItemName": "",
-      "chance": 50,
-      "displayChance": "50.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 3072,
-      "enabled": false
-    },
-    {
       "itemId": 0,
       "itemName": "Meso",
       "chineseItemName": "楓幣",
@@ -37,17 +26,6 @@
       "maxQty": 180,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 4030012,
-      "itemName": "Monster Card",
-      "chineseItemName": "",
-      "chance": 12.5,
-      "displayChance": "12.5%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 4000157,
@@ -61,28 +39,6 @@
       "enabled": true
     },
     {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4031267,
       "itemName": "Freezer's DNA Sample",
       "chineseItemName": "",
@@ -91,7 +47,7 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 3082,
-      "enabled": false
+      "enabled": true
     },
     {
       "itemId": 2000002,
@@ -127,17 +83,6 @@
       "enabled": true
     },
     {
-      "itemId": 4007002,
-      "itemName": "Magic Powder (Blue)",
-      "chineseItemName": "",
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4004004,
       "itemName": "Dark Crystal Ore",
       "chineseItemName": "黑暗母礦",
@@ -171,17 +116,6 @@
       "enabled": true
     },
     {
-      "itemId": 2382056,
-      "itemName": "Freezer Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4020002,
       "itemName": "AquaMarine Ore",
       "chineseItemName": "海藍石母礦",
@@ -191,39 +125,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 4130008,
-      "itemName": "Spear Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130012,
-      "itemName": "Bow Production Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130014,
-      "itemName": "Dagger Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 1002045,
@@ -358,17 +259,6 @@
       "enabled": true
     },
     {
-      "itemId": 1302030,
-      "itemName": "Maple Soul Singer",
-      "chineseItemName": "",
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1040084,
       "itemName": "Dark Shadow",
       "chineseItemName": "黑暗之影",
@@ -435,5 +325,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 39
+  "totalDrops": 29
 }

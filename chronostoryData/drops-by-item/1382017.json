@@ -15,17 +15,6 @@
       "maxQty": 1
     },
     {
-      "mobId": 3000006,
-      "mobName": "Krip",
-      "chineseMobName": "活跳蝦",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 3230102,
       "mobName": "Lorang",
       "chineseMobName": "紅螃蟹",
@@ -59,5 +48,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 5
+  "totalMonsters": 4
 }

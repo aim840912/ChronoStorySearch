@@ -17,17 +17,6 @@
       "enabled": true
     },
     {
-      "itemId": 4031209,
-      "itemName": "SOS Letter",
-      "chineseItemName": "",
-      "chance": 50,
-      "displayChance": "50.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 3072,
-      "enabled": false
-    },
-    {
       "itemId": 0,
       "itemName": "Meso",
       "chineseItemName": "楓幣",
@@ -50,17 +39,6 @@
       "enabled": true
     },
     {
-      "itemId": 4030012,
-      "itemName": "Monster Card",
-      "chineseItemName": "",
-      "chance": 12.5,
-      "displayChance": "12.5%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4000157,
       "itemName": "Seal Meat",
       "chineseItemName": "",
@@ -72,28 +50,6 @@
       "enabled": true
     },
     {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4031266,
       "itemName": "Sparker's DNA Sample",
       "chineseItemName": "",
@@ -102,7 +58,7 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 3082,
-      "enabled": false
+      "enabled": true
     },
     {
       "itemId": 2000002,
@@ -171,39 +127,6 @@
       "enabled": true
     },
     {
-      "itemId": 2382059,
-      "itemName": "Sparker Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130008,
-      "itemName": "Spear Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130015,
-      "itemName": "Claw Production Stimulator",
-      "chineseItemName": "",
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1002024,
       "itemName": "Emerald Dome",
       "chineseItemName": "祖母綠武士頭盔",
@@ -257,17 +180,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 1382012,
-      "itemName": "Maple Lama Staff",
-      "chineseItemName": "",
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 1442009,
@@ -358,5 +270,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 32
+  "totalDrops": 24
 }

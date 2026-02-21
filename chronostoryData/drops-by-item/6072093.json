@@ -1,0 +1,19 @@
+{
+  "itemId": 6072093,
+  "itemName": "#N/A",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 8520000,
+      "mobName": "Pianus (L)",
+      "chineseMobName": "海怒斯(左)",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.1,
+      "displayChance": "0.10%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

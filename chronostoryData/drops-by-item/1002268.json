@@ -4,6 +4,17 @@
   "chineseItemName": "黃弓羽",
   "monsters": [
     {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.5,
+      "displayChance": "0.50%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 6230200,
       "mobName": "Dark Pepe",
       "chineseMobName": "黑企鵝王",
@@ -37,5 +48,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 4
 }

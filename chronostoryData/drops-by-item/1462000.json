@@ -4,17 +4,6 @@
   "chineseItemName": "山羊弩",
   "monsters": [
     {
-      "mobId": 2230200,
-      "mobName": "Flower Fish",
-      "chineseMobName": "花鯰魚",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 3000005,
       "mobName": "Brown Teddy",
       "chineseMobName": "褐色發條熊",
@@ -24,18 +13,7 @@
       "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1
-    },
-    {
-      "mobId": 3000006,
-      "mobName": "Krip",
-      "chineseMobName": "活跳蝦",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 1
 }

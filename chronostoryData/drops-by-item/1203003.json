@@ -15,31 +15,9 @@
       "maxQty": 1
     },
     {
-      "mobId": 2230109,
-      "mobName": "Bubble Fish",
-      "chineseMobName": "泡泡魚",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 3230101,
       "mobName": "Jr. Wraith",
       "chineseMobName": "小幽靈",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 3230104,
-      "mobName": "Mask Fish",
-      "chineseMobName": "蒙面河豚",
       "isBoss": false,
       "inGame": true,
       "chance": 0.05,
@@ -55,17 +33,6 @@
       "inGame": false,
       "chance": 0.05,
       "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4230100,
-      "mobName": "Cold Eye",
-      "chineseMobName": "冰獨眼獸",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.04,
-      "displayChance": "0.040%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -125,17 +92,6 @@
       "maxQty": 1
     },
     {
-      "mobId": 5130101,
-      "mobName": "Stone Golem",
-      "chineseMobName": "石巨人",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.04,
-      "displayChance": "0.040%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 5400000,
       "mobName": "Jr. Pepe",
       "chineseMobName": "小企鵝王",
@@ -145,7 +101,29 @@
       "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 4230100,
+      "mobName": "Cold Eye",
+      "chineseMobName": "冰獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.04,
+      "displayChance": "0.040%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5130101,
+      "mobName": "Stone Golem",
+      "chineseMobName": "石巨人",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.04,
+      "displayChance": "0.040%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 13
+  "totalMonsters": 11
 }

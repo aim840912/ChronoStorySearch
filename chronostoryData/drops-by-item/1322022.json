@@ -15,17 +15,6 @@
       "maxQty": 1
     },
     {
-      "mobId": 2230105,
-      "mobName": "Seacle",
-      "chineseMobName": "綠海馬",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 3230102,
       "mobName": "Lorang",
       "chineseMobName": "紅螃蟹",
@@ -37,5 +26,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 2
 }

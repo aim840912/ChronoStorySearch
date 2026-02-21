@@ -4,17 +4,6 @@
   "chineseItemName": "毀滅之鎚",
   "monsters": [
     {
-      "mobId": 4240000,
-      "mobName": "Chief Gray",
-      "chineseMobName": "葛雷元老",
-      "isBoss": false,
-      "inGame": false,
-      "chance": 0.1,
-      "displayChance": "0.10%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 8220001,
       "mobName": "Snowman",
       "chineseMobName": "雪毛怪人",
@@ -26,27 +15,16 @@
       "maxQty": 1
     },
     {
-      "mobId": 8510000,
-      "mobName": "Pianus (R)",
-      "chineseMobName": "海怒斯(右)",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 8520000,
-      "mobName": "Pianus (L)",
-      "chineseMobName": "海怒斯(左)",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
+      "mobId": 4240000,
+      "mobName": "Chief Gray",
+      "chineseMobName": "葛雷元老",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.1,
+      "displayChance": "0.10%",
       "minQty": 1,
       "maxQty": 1
     }
   ],
-  "totalMonsters": 4
+  "totalMonsters": 2
 }

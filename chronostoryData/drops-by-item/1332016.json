@@ -4,57 +4,13 @@
   "chineseItemName": "華氏短劍",
   "monsters": [
     {
-      "mobId": 4130100,
-      "mobName": "Copper Drake",
-      "chineseMobName": "土龍",
+      "mobId": 8645263,
+      "mobName": "Turbo Robo",
+      "chineseMobName": "守護者機器人",
       "isBoss": false,
       "inGame": true,
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4220000,
-      "mobName": "Seruf",
-      "chineseMobName": "火蚌殼",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.5,
-      "displayChance": "0.50%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4230113,
-      "mobName": "Tick-Tock",
-      "chineseMobName": "鼬鼠鬧鐘",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4230125,
-      "mobName": "Skeledog",
-      "chineseMobName": "骷髏犬",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 5100002,
-      "mobName": "Firebomb",
-      "chineseMobName": "火精靈",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.05,
-      "displayChance": "0.050%",
+      "chance": 0.1287,
+      "displayChance": "0.13%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -92,16 +48,49 @@
       "maxQty": 1
     },
     {
-      "mobId": 8645263,
-      "mobName": "Turbo Robo",
-      "chineseMobName": "守護者機器人",
+      "mobId": 4130100,
+      "mobName": "Copper Drake",
+      "chineseMobName": "土龍",
       "isBoss": false,
       "inGame": true,
-      "chance": 0.1287,
-      "displayChance": "0.13%",
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230113,
+      "mobName": "Tick-Tock",
+      "chineseMobName": "鼬鼠鬧鐘",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230125,
+      "mobName": "Skeledog",
+      "chineseMobName": "骷髏犬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 5100002,
+      "mobName": "Firebomb",
+      "chineseMobName": "火精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1
     }
   ],
-  "totalMonsters": 9
+  "totalMonsters": 8
 }

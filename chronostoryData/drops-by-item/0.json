@@ -319,8 +319,8 @@
       "inGame": true,
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 64,
-      "maxQty": 94
+      "minQty": 332,
+      "maxQty": 485
     },
     {
       "mobId": 2230106,
@@ -330,8 +330,8 @@
       "inGame": true,
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 44,
-      "maxQty": 66
+      "minQty": 375,
+      "maxQty": 547
     },
     {
       "mobId": 2230107,
@@ -341,8 +341,8 @@
       "inGame": true,
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 66,
-      "maxQty": 97
+      "minQty": 419,
+      "maxQty": 609
     },
     {
       "mobId": 2230108,
@@ -352,8 +352,8 @@
       "inGame": true,
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 40,
-      "maxQty": 60
+      "minQty": 437,
+      "maxQty": 634
     },
     {
       "mobId": 2230109,
@@ -363,8 +363,8 @@
       "inGame": true,
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 52,
-      "maxQty": 78
+      "minQty": 290,
+      "maxQty": 424
     },
     {
       "mobId": 2230110,
@@ -407,8 +407,8 @@
       "inGame": true,
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 52,
-      "maxQty": 78
+      "minQty": 249,
+      "maxQty": 366
     },
     {
       "mobId": 2300100,
@@ -442,17 +442,6 @@
       "displayChance": "40.0%",
       "minQty": 81,
       "maxQty": 119
-    },
-    {
-      "mobId": 3000006,
-      "mobName": "Krip",
-      "chineseMobName": "活跳蝦",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 40,
-      "displayChance": "40.0%",
-      "minQty": 56,
-      "maxQty": 84
     },
     {
       "mobId": 3110100,
@@ -682,8 +671,8 @@
       "inGame": true,
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 56,
-      "maxQty": 84
+      "minQty": 174,
+      "maxQty": 257
     },
     {
       "mobId": 3230200,
@@ -847,8 +836,8 @@
       "inGame": true,
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 396,
-      "maxQty": 1950
+      "minQty": 822,
+      "maxQty": 3987
     },
     {
       "mobId": 4230100,
@@ -2233,8 +2222,8 @@
       "inGame": true,
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 10000,
-      "maxQty": 20000
+      "minQty": 382500,
+      "maxQty": 1885000
     },
     {
       "mobId": 8520000,
@@ -2244,8 +2233,8 @@
       "inGame": true,
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 10000,
-      "maxQty": 20000
+      "minQty": 382500,
+      "maxQty": 1885000
     },
     {
       "mobId": 8645263,
@@ -2334,6 +2323,17 @@
       "displayChance": "40.0%",
       "minQty": 329,
       "maxQty": 482
+    },
+    {
+      "mobId": 9300437,
+      "mobName": "Jellyfish",
+      "chineseMobName": "水母",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 40,
+      "displayChance": "40.0%",
+      "minQty": 349,
+      "maxQty": 510
     }
   ],
   "totalMonsters": 212

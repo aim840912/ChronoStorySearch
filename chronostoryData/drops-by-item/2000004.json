@@ -4,6 +4,105 @@
   "chineseItemName": "特殊藥水",
   "monsters": [
     {
+      "mobId": 4130103,
+      "mobName": "Rombot",
+      "chineseMobName": "泥人領導者",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 99.9999,
+      "displayChance": "100.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8130100,
+      "mobName": "Jr. Balrog",
+      "chineseMobName": "巴洛古",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 99.9999,
+      "displayChance": "100.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8220000,
+      "mobName": "Eliza",
+      "chineseMobName": "艾利傑",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 99.9999,
+      "displayChance": "100.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8220001,
+      "mobName": "Snowman",
+      "chineseMobName": "雪毛怪人",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 99.9999,
+      "displayChance": "100.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8510000,
+      "mobName": "Pianus (R)",
+      "chineseMobName": "海怒斯(右)",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 99.9999,
+      "displayChance": "100.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 8520000,
+      "mobName": "Pianus (L)",
+      "chineseMobName": "海怒斯(左)",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 99.9999,
+      "displayChance": "100.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 6220001,
+      "mobName": "Zeno",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 20,
+      "displayChance": "20.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9300038,
+      "mobName": "Ghost Pixie",
+      "chineseMobName": "鬼精靈",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 4,
+      "displayChance": "4.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9300437,
+      "mobName": "Jellyfish",
+      "chineseMobName": "水母",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 4,
+      "displayChance": "4.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 2230113,
       "mobName": "Dark Eye",
       "chineseMobName": "黑獨眼獸",
@@ -44,17 +143,6 @@
       "inGame": true,
       "chance": 2,
       "displayChance": "2.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4130103,
-      "mobName": "Rombot",
-      "chineseMobName": "泥人領導者",
-      "isBoss": true,
-      "inGame": false,
-      "chance": 99.9999,
-      "displayChance": "100.0%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -121,61 +209,6 @@
       "inGame": true,
       "chance": 2,
       "displayChance": "2.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4230116,
-      "mobName": "Barnard Gray",
-      "chineseMobName": "葛雷族人",
-      "isBoss": false,
-      "inGame": false,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4230117,
-      "mobName": "Zeta Gray",
-      "chineseMobName": "葛雷士兵",
-      "isBoss": false,
-      "inGame": false,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4230118,
-      "mobName": "Ultra Gray",
-      "chineseMobName": "葛雷隊長",
-      "isBoss": false,
-      "inGame": false,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4230120,
-      "mobName": "Plateon",
-      "chineseMobName": "培利堤安",
-      "isBoss": false,
-      "inGame": false,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4230121,
-      "mobName": "Mecateon",
-      "chineseMobName": "梅卡堤安",
-      "isBoss": false,
-      "inGame": false,
-      "chance": 1,
-      "displayChance": "1.0%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -466,17 +499,6 @@
       "maxQty": 1
     },
     {
-      "mobId": 6220001,
-      "mobName": "Zeno",
-      "chineseMobName": "葛雷金剛",
-      "isBoss": true,
-      "inGame": false,
-      "chance": 20,
-      "displayChance": "20.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 6230200,
       "mobName": "Dark Pepe",
       "chineseMobName": "黑企鵝王",
@@ -697,17 +719,6 @@
       "maxQty": 1
     },
     {
-      "mobId": 8130100,
-      "mobName": "Jr. Balrog",
-      "chineseMobName": "巴洛古",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 99.9999,
-      "displayChance": "100.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 8140100,
       "mobName": "Dark Yeti & Pepe",
       "chineseMobName": "黑吉拉戰車",
@@ -741,60 +752,60 @@
       "maxQty": 1
     },
     {
-      "mobId": 8220000,
-      "mobName": "Eliza",
-      "chineseMobName": "艾利傑",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 99.9999,
-      "displayChance": "100.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 8220001,
-      "mobName": "Snowman",
-      "chineseMobName": "雪毛怪人",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 99.9999,
-      "displayChance": "100.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 8510000,
-      "mobName": "Pianus (R)",
-      "chineseMobName": "海怒斯(右)",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 99.9999,
-      "displayChance": "100.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 8520000,
-      "mobName": "Pianus (L)",
-      "chineseMobName": "海怒斯(左)",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 99.9999,
-      "displayChance": "100.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 9300038,
-      "mobName": "Ghost Pixie",
-      "chineseMobName": "鬼精靈",
+      "mobId": 4230116,
+      "mobName": "Barnard Gray",
+      "chineseMobName": "葛雷族人",
       "isBoss": false,
-      "inGame": true,
-      "chance": 4,
-      "displayChance": "4.0%",
+      "inGame": false,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230117,
+      "mobName": "Zeta Gray",
+      "chineseMobName": "葛雷士兵",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230118,
+      "mobName": "Ultra Gray",
+      "chineseMobName": "葛雷隊長",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230120,
+      "mobName": "Plateon",
+      "chineseMobName": "培利堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230121,
+      "mobName": "Mecateon",
+      "chineseMobName": "梅卡堤安",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 1,
+      "displayChance": "1.0%",
       "minQty": 1,
       "maxQty": 1
     }
   ],
-  "totalMonsters": 72
+  "totalMonsters": 73
 }

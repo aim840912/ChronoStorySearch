@@ -28,28 +28,6 @@
       "enabled": true
     },
     {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000002,
       "itemName": "White Potion",
       "chineseItemName": "白色藥水",
@@ -83,17 +61,6 @@
       "enabled": true
     },
     {
-      "itemId": 4007004,
-      "itemName": "Magic Powder (Yellow)",
-      "chineseItemName": "",
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4020000,
       "itemName": "Garnet Ore",
       "chineseItemName": "石榴石母礦",
@@ -114,61 +81,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2382027,
-      "itemName": "Scuba Pepe Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130000,
-      "itemName": "Gloves Production Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130014,
-      "itemName": "Dagger Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130017,
-      "itemName": "Gun Production Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4131008,
-      "itemName": "Wand Production Manual",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 1002023,
@@ -391,5 +303,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 35
+  "totalDrops": 27
 }

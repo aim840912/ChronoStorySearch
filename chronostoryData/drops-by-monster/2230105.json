@@ -22,43 +22,10 @@
       "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 64,
-      "maxQty": 94,
+      "minQty": 332,
+      "maxQty": 485,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 4030012,
-      "itemName": "Monster Card",
-      "chineseItemName": "",
-      "chance": 12.5,
-      "displayChance": "12.5%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 4031259,
@@ -69,12 +36,12 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 3080,
-      "enabled": false
+      "enabled": true
     },
     {
-      "itemId": 2000001,
-      "itemName": "Orange Potion",
-      "chineseItemName": "橘色藥水",
+      "itemId": 2022003,
+      "itemName": "Unagi",
+      "chineseItemName": "烤鰻魚",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -83,9 +50,9 @@
       "enabled": true
     },
     {
-      "itemId": 2000003,
-      "itemName": "Blue Potion",
-      "chineseItemName": "藍色藥水",
+      "itemId": 2000006,
+      "itemName": "Mana Elixir",
+      "chineseItemName": "活力藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -127,53 +94,9 @@
       "enabled": true
     },
     {
-      "itemId": 2381013,
-      "itemName": "Seacle Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4131000,
-      "itemName": "One-Handed Sword Forging Manual",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1032005,
-      "itemName": "Red Cross Earrings",
-      "chineseItemName": "",
-      "chance": 0.1,
-      "displayChance": "0.10%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1082016,
-      "itemName": "Blue Savata",
-      "chineseItemName": "藍命中手套",
-      "chance": 0.1,
-      "displayChance": "0.10%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1041042,
-      "itemName": "Green Fairy Top",
-      "chineseItemName": "",
+      "itemId": 1072145,
+      "itemName": "Blue Gore Boots",
+      "chineseItemName": "藍花精鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -182,9 +105,9 @@
       "enabled": true
     },
     {
-      "itemId": 1061035,
-      "itemName": "Green Fairy Skirt",
-      "chineseItemName": "",
+      "itemId": 1040100,
+      "itemName": "Dark Scorpio",
+      "chineseItemName": "黑飛影之服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -193,9 +116,9 @@
       "enabled": true
     },
     {
-      "itemId": 1072007,
-      "itemName": "Brown High Boots",
-      "chineseItemName": "褐旅行鞋",
+      "itemId": 1050055,
+      "itemName": "White Anakamoon",
+      "chineseItemName": "白神聖服",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -204,9 +127,9 @@
       "enabled": true
     },
     {
-      "itemId": 1072046,
-      "itemName": "Orange High Boots",
-      "chineseItemName": "黃旅行鞋",
+      "itemId": 1002247,
+      "itemName": "Bronze Identity",
+      "chineseItemName": "青銅忍者頭巾",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -215,64 +138,75 @@
       "enabled": true
     },
     {
-      "itemId": 1050011,
-      "itemName": "Black Dragon Robe",
-      "chineseItemName": "黑龍袍",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "itemId": 1050059,
+      "itemName": "Blue Tai",
+      "chineseItemName": "青旋風甲",
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 1312003,
-      "itemName": "Misthil Axe",
-      "chineseItemName": "鋰狂斧",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "itemId": 1041096,
+      "itemName": "Umber Mantis",
+      "chineseItemName": "黑飛影之服",
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 1322004,
-      "itemName": "Fusion Mace",
-      "chineseItemName": "白銀之錘",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "itemId": 1082059,
+      "itemName": "Bronze Clench",
+      "chineseItemName": "青銅戰鬥手套",
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 1322022,
-      "itemName": "Red Flowery Tube",
-      "chineseItemName": "紅花紋游泳圈",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "itemId": 1051042,
+      "itemName": "Blue Choro",
+      "chineseItemName": "藍草露",
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 1203000,
-      "itemName": "Subi Throwing-Stars",
-      "chineseItemName": "",
+      "itemId": 1332015,
+      "itemName": "Deadly Fin",
+      "chineseItemName": "雙翼刃",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
-      "enabled": false
+      "enabled": true
     },
     {
-      "itemId": 1492002,
-      "itemName": "The Negotiator",
-      "chineseItemName": "格蘭德火槍",
+      "itemId": 1472024,
+      "itemName": "Sapphire Gigantic",
+      "chineseItemName": "藍寶戰神拳套",
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1442010,
+      "itemName": "Skylar",
+      "chineseItemName": "方天戟",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -314,5 +248,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 28
+  "totalDrops": 22
 }

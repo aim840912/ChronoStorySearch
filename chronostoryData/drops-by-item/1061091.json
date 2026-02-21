@@ -4,6 +4,17 @@
   "chineseItemName": "紅鋼玉裙",
   "monsters": [
     {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 7130103,
       "mobName": "Commander Skeleton",
       "chineseMobName": "骷髏指揮官",
@@ -26,5 +37,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 2
+  "totalMonsters": 3
 }

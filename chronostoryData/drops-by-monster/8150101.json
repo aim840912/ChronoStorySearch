@@ -80,7 +80,7 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 3078,
-      "enabled": false
+      "enabled": true
     },
     {
       "itemId": 4031254,
@@ -91,7 +91,7 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 3078,
-      "enabled": false
+      "enabled": true
     },
     {
       "itemId": 4031255,
@@ -102,7 +102,7 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 3078,
-      "enabled": false
+      "enabled": true
     },
     {
       "itemId": 4006000,
@@ -147,83 +147,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2386014,
-      "itemName": "Cold Shark Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4161018,
-      "itemName": "[Storybook] Ancient Book",
-      "chineseItemName": "",
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 4130009,
-      "itemName": "Pole Arm Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130010,
-      "itemName": "Wand Production Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130006,
-      "itemName": "Two-Handed Axe Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130012,
-      "itemName": "Bow Production Stimulator",
-      "chineseItemName": "",
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130013,
-      "itemName": "Crossbow Production Stimulator",
-      "chineseItemName": "",
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 1002326,
@@ -391,72 +314,6 @@
       "enabled": true
     },
     {
-      "itemId": 2290017,
-      "itemName": "[Mastery Book] Enrage",
-      "chineseItemName": "",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 2290021,
-      "itemName": "[Mastery Book] Heaven's Hammer",
-      "chineseItemName": "",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 2290035,
-      "itemName": "[Mastery Book] Holy Shield",
-      "chineseItemName": "",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 2290042,
-      "itemName": "[Mastery Book] Ice Demon",
-      "chineseItemName": "",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 2290052,
-      "itemName": "[Mastery Book] Sharp Eyes",
-      "chineseItemName": "",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 2290102,
-      "itemName": "[Mastery Book] Demolition",
-      "chineseItemName": "",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2040301,
       "itemName": "Scroll for Earring for INT 60%",
       "chineseItemName": "耳環智力卷軸60%",
@@ -510,18 +367,7 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2049100,
-      "itemName": "Chaos Scroll 60%",
-      "chineseItemName": "",
-      "chance": 0.015,
-      "displayChance": "0.015%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     }
   ],
-  "totalDrops": 47
+  "totalDrops": 33
 }

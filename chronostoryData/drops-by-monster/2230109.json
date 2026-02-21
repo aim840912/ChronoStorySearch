@@ -17,48 +17,15 @@
       "enabled": true
     },
     {
-      "itemId": 4031209,
-      "itemName": "SOS Letter",
-      "chineseItemName": "",
-      "chance": 50,
-      "displayChance": "50.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 3072,
-      "enabled": false
-    },
-    {
       "itemId": 0,
       "itemName": "Meso",
       "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 52,
-      "maxQty": 78,
+      "minQty": 290,
+      "maxQty": 424,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 4031264,
@@ -69,12 +36,12 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 3081,
-      "enabled": false
+      "enabled": true
     },
     {
-      "itemId": 2000002,
-      "itemName": "White Potion",
-      "chineseItemName": "白色藥水",
+      "itemId": 2022003,
+      "itemName": "Unagi",
+      "chineseItemName": "烤鰻魚",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -83,9 +50,9 @@
       "enabled": true
     },
     {
-      "itemId": 2000003,
-      "itemName": "Blue Potion",
-      "chineseItemName": "藍色藥水",
+      "itemId": 2000006,
+      "itemName": "Mana Elixir",
+      "chineseItemName": "活力藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -138,17 +105,6 @@
       "enabled": true
     },
     {
-      "itemId": 2381026,
-      "itemName": "Bubble Fish Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4006000,
       "itemName": "The Magic Rock",
       "chineseItemName": "魔法石",
@@ -171,64 +127,9 @@
       "enabled": true
     },
     {
-      "itemId": 4131010,
-      "itemName": "Bow Production Manual",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1002034,
-      "itemName": "Blue Jester",
-      "chineseItemName": "",
-      "chance": 0.1287,
-      "displayChance": "0.13%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1002065,
-      "itemName": "Steel Pride",
-      "chineseItemName": "",
-      "chance": 0.1287,
-      "displayChance": "0.13%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1002619,
-      "itemName": "Brown Pitz Bandana",
-      "chineseItemName": "褐色皮茲頭巾",
-      "chance": 0.1287,
-      "displayChance": "0.13%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1032007,
-      "itemName": "Emerald Earrings",
-      "chineseItemName": "",
-      "chance": 0.1,
-      "displayChance": "0.10%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1040041,
-      "itemName": "Dark Master Sergeant",
-      "chineseItemName": "黑軍官鎧甲",
+      "itemId": 1002101,
+      "itemName": "Old Mithril Nordic Helm",
+      "chineseItemName": "舊鋰礦諾曼頭盔",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -237,9 +138,9 @@
       "enabled": true
     },
     {
-      "itemId": 1060030,
-      "itemName": "Dark Master Sergeant Kilt",
-      "chineseItemName": "",
+      "itemId": 1002022,
+      "itemName": "Old Steel Nordic Helm",
+      "chineseItemName": "舊諾曼頭盔",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -248,9 +149,9 @@
       "enabled": true
     },
     {
-      "itemId": 1072027,
-      "itemName": "Brown Jack Boots",
-      "chineseItemName": "",
+      "itemId": 1060077,
+      "itemName": "Oaker Shouldermail Pants",
+      "chineseItemName": "褐板金褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -259,9 +160,119 @@
       "enabled": true
     },
     {
-      "itemId": 1072054,
-      "itemName": "Orange Whitebottom Boots",
-      "chineseItemName": "朱紅皮鞋",
+      "itemId": 1102000,
+      "itemName": "Green Napoleon",
+      "chineseItemName": "綠色冒險披風",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072141,
+      "itemName": "Blue Goldwind Shoes",
+      "chineseItemName": "藍黃金風",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1082081,
+      "itemName": "Red Pennance",
+      "chineseItemName": "紅元素手套",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1002216,
+      "itemName": "Aqua Golden Circlet",
+      "chineseItemName": "水黃金法冠",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1082065,
+      "itemName": "Blue Moon Gloves",
+      "chineseItemName": "藍月手套",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072129,
+      "itemName": "Green Goni Shoes",
+      "chineseItemName": "綠雷電鞋",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1040088,
+      "itemName": "Oaker Shouldermail",
+      "chineseItemName": "褐板金鎧甲",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072133,
+      "itemName": "Mithril Hildon Boots",
+      "chineseItemName": "鋰礦藍將軍靴",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1050051,
+      "itemName": "Red-Lined Kismet",
+      "chineseItemName": "赤仙白宮",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072135,
+      "itemName": "Gold Hildon Boots",
+      "chineseItemName": "黃金將軍靴",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1050049,
+      "itemName": "Dark Calas",
+      "chineseItemName": "黑魔法戰士衣",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -292,75 +303,9 @@
       "enabled": true
     },
     {
-      "itemId": 1050021,
-      "itemName": "Blue Crusader Chainmail",
-      "chineseItemName": "藍十字鎖子甲",
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1051007,
-      "itemName": "Red Avenger",
-      "chineseItemName": "紅飛影甲",
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1060051,
-      "itemName": "Red Knucklevest Pants",
-      "chineseItemName": "紅暗影之褲",
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1322024,
-      "itemName": "Purple Tube",
-      "chineseItemName": "紫游泳圈",
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1372003,
-      "itemName": "Mithril Wand",
-      "chineseItemName": "鋰礦短杖",
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1442011,
-      "itemName": "Surfboard",
-      "chineseItemName": "滑水板",
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1203003,
-      "itemName": "Mokbi Throwing-Stars",
-      "chineseItemName": "黑色利刃",
+      "itemId": 1322021,
+      "itemName": "Black Tube",
+      "chineseItemName": "黑游泳圈",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -380,5 +325,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 34
+  "totalDrops": 29
 }

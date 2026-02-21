@@ -50,39 +50,6 @@
       "enabled": true
     },
     {
-      "itemId": 4007000,
-      "itemName": "Magic Powder (Brown)",
-      "chineseItemName": "",
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4007006,
-      "itemName": "Magic Powder (Red)",
-      "chineseItemName": "",
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4007007,
-      "itemName": "Magic Powder (Black)",
-      "chineseItemName": "",
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4004001,
       "itemName": "Wisdom Crystal Ore",
       "chineseItemName": "智慧母礦",
@@ -136,50 +103,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2386007,
-      "itemName": "Risell Squid Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130000,
-      "itemName": "Gloves Production Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130009,
-      "itemName": "Pole Arm Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130001,
-      "itemName": "Shoes Production Stimulator",
-      "chineseItemName": "",
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 1002325,
@@ -402,39 +325,6 @@
       "enabled": true
     },
     {
-      "itemId": 2290032,
-      "itemName": "[Mastery Book] Chain Lightning",
-      "chineseItemName": "",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 2290082,
-      "itemName": "[Mastery Book] Ninja Ambush",
-      "chineseItemName": "",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 2290114,
-      "itemName": "[Mastery Book] Wrath of the Octopi",
-      "chineseItemName": "",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2040318,
       "itemName": "Scroll for Earring for DEX 10%",
       "chineseItemName": "耳環敏捷卷軸10%",
@@ -479,5 +369,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 43
+  "totalDrops": 33
 }

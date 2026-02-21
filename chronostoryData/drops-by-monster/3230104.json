@@ -17,37 +17,15 @@
       "enabled": true
     },
     {
-      "itemId": 4031209,
-      "itemName": "SOS Letter",
-      "chineseItemName": "",
-      "chance": 50,
-      "displayChance": "50.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 3072,
-      "enabled": false
-    },
-    {
       "itemId": 0,
       "itemName": "Meso",
       "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 56,
-      "maxQty": 84,
+      "minQty": 174,
+      "maxQty": 257,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 4030012,
-      "itemName": "Monster Card",
-      "chineseItemName": "",
-      "chance": 12.5,
-      "displayChance": "12.5%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 4031263,
@@ -58,7 +36,7 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 3081,
-      "enabled": false
+      "enabled": true
     },
     {
       "itemId": 2000002,
@@ -94,50 +72,6 @@
       "enabled": true
     },
     {
-      "itemId": 2382007,
-      "itemName": "Mask Fish Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130000,
-      "itemName": "Gloves Production Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130003,
-      "itemName": "One-Handed Axe Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130005,
-      "itemName": "Two-Handed Sword Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2022040,
       "itemName": "Air Bubble",
       "chineseItemName": "",
@@ -149,154 +83,176 @@
       "enabled": true
     },
     {
-      "itemId": 1002023,
-      "itemName": "Jousting Helmet",
-      "chineseItemName": "",
-      "chance": 0.1287,
-      "displayChance": "0.13%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1002135,
-      "itemName": "Brown Pole-Feather Hat",
-      "chineseItemName": "褐羽翼三角帽",
-      "chance": 0.1287,
-      "displayChance": "0.13%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1002184,
-      "itemName": "Brown Pilfer",
-      "chineseItemName": "褐海盜頭巾",
-      "chance": 0.1287,
-      "displayChance": "0.13%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1082023,
-      "itemName": "Iron Knuckle",
-      "chineseItemName": "鋼鐵長手套",
-      "chance": 0.1,
-      "displayChance": "0.10%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1082073,
-      "itemName": "Dark Brace",
-      "chineseItemName": "黑勇氣手套",
-      "chance": 0.1,
-      "displayChance": "0.10%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1041050,
-      "itemName": "Purple Steal",
-      "chineseItemName": "紫寂靜之服",
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1041052,
-      "itemName": "Blue Amoria Top",
-      "chineseItemName": "藍神聖法衣",
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1041056,
-      "itemName": "Red Huntress Armor",
-      "chineseItemName": "",
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1061046,
-      "itemName": "Purple Steal Pants",
-      "chineseItemName": "紫寂靜裙",
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1061048,
-      "itemName": "Blue Amoria Skirt",
-      "chineseItemName": "藍神聖裙",
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1061052,
-      "itemName": "Red Huntress Pants",
-      "chineseItemName": "",
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1072114,
-      "itemName": "Red Moon Shoes",
-      "chineseItemName": "紅月鞋",
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
       "itemId": 1051014,
       "itemName": "Sapphire Fitted Mail",
       "chineseItemName": "藍寶石鎧甲",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 1322026,
-      "itemName": "Colorful Tube",
-      "chineseItemName": "彩虹游泳圈",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "itemId": 1082075,
+      "itemName": "Red Cleave",
+      "chineseItemName": "紅盜賊手套",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1051008,
+      "itemName": "Blue Avenger",
+      "chineseItemName": "藍飛影甲",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1051026,
+      "itemName": "Dark Moonlight",
+      "chineseItemName": "黑色月光服",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072002,
+      "itemName": "Steel Trigger",
+      "chineseItemName": "鐵頭皮鞋",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072119,
+      "itemName": "Yellow Pierre Shoes",
+      "chineseItemName": "黃精靈鞋",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1040061,
+      "itemName": "Green Knucklevest",
+      "chineseItemName": "綠暗影之服",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1002180,
+      "itemName": "Dark Burgler",
+      "chineseItemName": "黑防風帽",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1061064,
+      "itemName": "Brown Legolia Pants",
+      "chineseItemName": "褐守護褲",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1082035,
+      "itemName": "Yellow Briggon",
+      "chineseItemName": "黃輕便手套",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1050031,
+      "itemName": "White Chaos Robe",
+      "chineseItemName": "白魔力長袍",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072104,
+      "itemName": "Red White-Lined Boots",
+      "chineseItemName": "紅楊柳鞋",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1061063,
+      "itemName": "Dark Legolia Pants",
+      "chineseItemName": "黑守護褲",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1041085,
+      "itemName": "Brown Jangoon Armor",
+      "chineseItemName": "黃鎮月鎧甲",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072106,
+      "itemName": "Blue White-Lined Boots",
+      "chineseItemName": "藍楊柳鞋",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1052110,
+      "itemName": "Blue Brace Look",
+      "chineseItemName": "藍色緊身服",
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
@@ -314,9 +270,9 @@
       "enabled": true
     },
     {
-      "itemId": 1402006,
-      "itemName": "Lionheart",
-      "chineseItemName": "高原之劍",
+      "itemId": 1462006,
+      "itemName": "Silver Crow",
+      "chineseItemName": "白銀弩",
       "chance": 0.07,
       "displayChance": "0.070%",
       "minQty": 1,
@@ -325,33 +281,11 @@
       "enabled": true
     },
     {
-      "itemId": 1203003,
-      "itemName": "Mokbi Throwing-Stars",
-      "chineseItemName": "黑色利刃",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1332020,
-      "itemName": "Korean Fan",
-      "chineseItemName": "太極扇",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1482004,
-      "itemName": "Prime Hands",
-      "chineseItemName": "精鋼拳套",
-      "chance": 0.05,
-      "displayChance": "0.050%",
+      "itemId": 1472011,
+      "itemName": "Bronze Guardian",
+      "chineseItemName": "青銅守護拳套",
+      "chance": 0.07,
+      "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
@@ -391,5 +325,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 35
+  "totalDrops": 29
 }

@@ -1,0 +1,19 @@
+{
+  "itemId": 1302025,
+  "itemName": "Red Umbrella",
+  "chineseItemName": "紅色雨傘",
+  "monsters": [
+    {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.5,
+      "displayChance": "0.50%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

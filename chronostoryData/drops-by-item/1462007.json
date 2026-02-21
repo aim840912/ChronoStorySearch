@@ -4,6 +4,17 @@
   "chineseItemName": "炎弩",
   "monsters": [
     {
+      "mobId": 5220002,
+      "mobName": "Faust",
+      "chineseMobName": "殭屍猴王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.5,
+      "displayChance": "0.50%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 3230303,
       "mobName": "Propelly",
       "chineseMobName": "粉紅色戰鬥機",
@@ -11,17 +22,6 @@
       "inGame": false,
       "chance": 0.05,
       "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4220000,
-      "mobName": "Seruf",
-      "chineseMobName": "火蚌殼",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.5,
-      "displayChance": "0.50%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -48,13 +48,13 @@
       "maxQty": 1
     },
     {
-      "mobId": 5220002,
-      "mobName": "Faust",
-      "chineseMobName": "殭屍猴王",
-      "isBoss": true,
+      "mobId": 2230200,
+      "mobName": "Flower Fish",
+      "chineseMobName": "花鯰魚",
+      "isBoss": false,
       "inGame": true,
-      "chance": 0.5,
-      "displayChance": "0.50%",
+      "chance": 0.05,
+      "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1
     }

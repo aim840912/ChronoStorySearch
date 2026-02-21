@@ -9,8 +9,8 @@
       "chineseMobName": "海怒斯(右)",
       "isBoss": true,
       "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
+      "chance": 100,
+      "displayChance": "100.0%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -20,8 +20,8 @@
       "chineseMobName": "海怒斯(左)",
       "isBoss": true,
       "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
+      "chance": 100,
+      "displayChance": "100.0%",
       "minQty": 1,
       "maxQty": 1
     }

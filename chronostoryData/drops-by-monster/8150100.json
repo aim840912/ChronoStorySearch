@@ -28,17 +28,6 @@
       "enabled": true
     },
     {
-      "itemId": 4030012,
-      "itemName": "Monster Card",
-      "chineseItemName": "",
-      "chance": 12.5,
-      "displayChance": "12.5%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2000005,
       "itemName": "Power Elixir",
       "chineseItemName": "超級藥水",
@@ -91,7 +80,7 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 3078,
-      "enabled": false
+      "enabled": true
     },
     {
       "itemId": 4031254,
@@ -102,7 +91,7 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 3078,
-      "enabled": false
+      "enabled": true
     },
     {
       "itemId": 4031255,
@@ -113,7 +102,7 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 3078,
-      "enabled": false
+      "enabled": true
     },
     {
       "itemId": 4004002,
@@ -158,61 +147,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2386012,
-      "itemName": "Shark Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4161018,
-      "itemName": "[Storybook] Ancient Book",
-      "chineseItemName": "",
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 4130006,
-      "itemName": "Two-Handed Axe Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130007,
-      "itemName": "Two-Handed Mace Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130004,
-      "itemName": "One-Handed Blunt Weapon Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 1002366,
@@ -304,7 +238,7 @@
     },
     {
       "itemId": 1072214,
-      "itemName": "Blue Katina Boots",
+      "itemName": "Blue Katina Boots ",
       "chineseItemName": "藍色蒂娜長靴",
       "chance": 0.08,
       "displayChance": "0.080%",
@@ -380,61 +314,6 @@
       "enabled": true
     },
     {
-      "itemId": 2290042,
-      "itemName": "[Mastery Book] Ice Demon",
-      "chineseItemName": "",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 2290053,
-      "itemName": "[Mastery Book] Sharp Eyes",
-      "chineseItemName": "",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 2290073,
-      "itemName": "[Mastery Book] Frostprey",
-      "chineseItemName": "",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 2290102,
-      "itemName": "[Mastery Book] Demolition",
-      "chineseItemName": "",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 2290118,
-      "itemName": "[Mastery Book] Rapid Fire",
-      "chineseItemName": "",
-      "chance": 0.05,
-      "displayChance": "0.050%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1332022,
       "itemName": "Angelic Betrayal",
       "chineseItemName": "小妖精刀",
@@ -490,5 +369,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 44
+  "totalDrops": 33
 }

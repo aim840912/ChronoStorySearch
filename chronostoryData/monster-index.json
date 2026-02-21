@@ -247,7 +247,7 @@
       "mobName": "Seacle",
       "chineseMobName": "綠海馬",
       "isBoss": false,
-      "dropCount": 28,
+      "dropCount": 22,
       "inGame": true
     },
     {
@@ -255,7 +255,7 @@
       "mobName": "Cico",
       "chineseMobName": "黃金海馬",
       "isBoss": false,
-      "dropCount": 31,
+      "dropCount": 27,
       "inGame": true
     },
     {
@@ -263,7 +263,7 @@
       "mobName": "Krappy",
       "chineseMobName": "獨角尼莫",
       "isBoss": false,
-      "dropCount": 28,
+      "dropCount": 24,
       "inGame": true
     },
     {
@@ -271,7 +271,7 @@
       "mobName": "Pinboom",
       "chineseMobName": "海膽",
       "isBoss": false,
-      "dropCount": 25,
+      "dropCount": 22,
       "inGame": true
     },
     {
@@ -279,7 +279,7 @@
       "mobName": "Bubble Fish",
       "chineseMobName": "泡泡魚",
       "isBoss": false,
-      "dropCount": 34,
+      "dropCount": 29,
       "inGame": true
     },
     {
@@ -311,7 +311,7 @@
       "mobName": "Flower Fish",
       "chineseMobName": "花鯰魚",
       "isBoss": false,
-      "dropCount": 27,
+      "dropCount": 23,
       "inGame": true
     },
     {
@@ -351,8 +351,8 @@
       "mobName": "Krip",
       "chineseMobName": "活跳蝦",
       "isBoss": false,
-      "dropCount": 29,
-      "inGame": true
+      "dropCount": 0,
+      "inGame": false
     },
     {
       "mobId": 3110100,
@@ -463,7 +463,7 @@
       "mobName": "Scuba Pepe",
       "chineseMobName": "潛水企鵝王",
       "isBoss": false,
-      "dropCount": 35,
+      "dropCount": 27,
       "inGame": true
     },
     {
@@ -519,7 +519,7 @@
       "mobName": "Mask Fish",
       "chineseMobName": "蒙面河豚",
       "isBoss": false,
-      "dropCount": 35,
+      "dropCount": 29,
       "inGame": true
     },
     {
@@ -607,7 +607,7 @@
       "mobName": "Jr. Seal",
       "chineseMobName": "粉紅小海豹",
       "isBoss": false,
-      "dropCount": 33,
+      "dropCount": 26,
       "inGame": true
     },
     {
@@ -647,7 +647,7 @@
       "mobName": "Seruf",
       "chineseMobName": "火蚌殼",
       "isBoss": true,
-      "dropCount": 44,
+      "dropCount": 41,
       "inGame": true
     },
     {
@@ -839,7 +839,7 @@
       "mobName": "Sparker",
       "chineseMobName": "長牙海豹",
       "isBoss": false,
-      "dropCount": 32,
+      "dropCount": 24,
       "inGame": true
     },
     {
@@ -847,7 +847,7 @@
       "mobName": "Freezer",
       "chineseMobName": "短牙海豹",
       "isBoss": false,
-      "dropCount": 39,
+      "dropCount": 29,
       "inGame": true
     },
     {
@@ -903,7 +903,7 @@
       "mobName": "Poopa",
       "chineseMobName": "河豚",
       "isBoss": false,
-      "dropCount": 37,
+      "dropCount": 32,
       "inGame": true
     },
     {
@@ -911,7 +911,7 @@
       "mobName": "Poison Poopa",
       "chineseMobName": "毒河豚",
       "isBoss": false,
-      "dropCount": 34,
+      "dropCount": 28,
       "inGame": true
     },
     {
@@ -1495,7 +1495,7 @@
       "mobName": "Goby",
       "chineseMobName": "刺鰭魚",
       "isBoss": false,
-      "dropCount": 39,
+      "dropCount": 34,
       "inGame": true
     },
     {
@@ -1655,7 +1655,7 @@
       "mobName": "Bone Fish",
       "chineseMobName": "骨骸魚",
       "isBoss": false,
-      "dropCount": 41,
+      "dropCount": 33,
       "inGame": true
     },
     {
@@ -1679,7 +1679,7 @@
       "mobName": "Squid",
       "chineseMobName": "烏賊怪",
       "isBoss": false,
-      "dropCount": 41,
+      "dropCount": 35,
       "inGame": true
     },
     {
@@ -1695,7 +1695,7 @@
       "mobName": "Risell Squid",
       "chineseMobName": "致命烏賊怪",
       "isBoss": false,
-      "dropCount": 43,
+      "dropCount": 33,
       "inGame": true
     },
     {
@@ -1727,7 +1727,7 @@
       "mobName": "Shark",
       "chineseMobName": "鯊魚",
       "isBoss": false,
-      "dropCount": 44,
+      "dropCount": 33,
       "inGame": true
     },
     {
@@ -1735,7 +1735,7 @@
       "mobName": "Cold Shark",
       "chineseMobName": "尖鼻鯊魚",
       "isBoss": false,
-      "dropCount": 47,
+      "dropCount": 33,
       "inGame": true
     },
     {
@@ -1783,7 +1783,7 @@
       "mobName": "Pianus (R)",
       "chineseMobName": "海怒斯(右)",
       "isBoss": true,
-      "dropCount": 65,
+      "dropCount": 18,
       "inGame": true
     },
     {
@@ -1799,7 +1799,7 @@
       "mobName": "Pianus (L)",
       "chineseMobName": "海怒斯(左)",
       "isBoss": true,
-      "dropCount": 65,
+      "dropCount": 18,
       "inGame": true
     },
     {
@@ -1975,7 +1975,7 @@
       "mobName": "Jellyfish",
       "chineseMobName": "水母",
       "isBoss": false,
-      "dropCount": 3,
+      "dropCount": 18,
       "inGame": true
     },
     {

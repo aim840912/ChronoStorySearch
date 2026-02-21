@@ -4,9 +4,9 @@
   "chineseItemName": "紫寂靜之服",
   "monsters": [
     {
-      "mobId": 2230106,
-      "mobName": "Cico",
-      "chineseMobName": "黃金海馬",
+      "mobId": 3210800,
+      "mobName": "Lupin",
+      "chineseMobName": "猴子",
       "isBoss": false,
       "inGame": true,
       "chance": 0.08,
@@ -24,29 +24,7 @@
       "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
-    },
-    {
-      "mobId": 3210800,
-      "mobName": "Lupin",
-      "chineseMobName": "猴子",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 3230104,
-      "mobName": "Mask Fish",
-      "chineseMobName": "蒙面河豚",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1
     }
   ],
-  "totalMonsters": 4
+  "totalMonsters": 2
 }

@@ -48,6 +48,17 @@
       "maxQty": 1
     },
     {
+      "mobId": 2230109,
+      "mobName": "Bubble Fish",
+      "chineseMobName": "泡泡魚",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 6230200,
       "mobName": "Dark Pepe",
       "chineseMobName": "黑企鵝王",
@@ -70,5 +81,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 6
+  "totalMonsters": 7
 }

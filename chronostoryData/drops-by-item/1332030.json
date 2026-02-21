@@ -1,0 +1,19 @@
+{
+  "itemId": 1332030,
+  "itemName": "Fan",
+  "chineseItemName": "",
+  "monsters": [
+    {
+      "mobId": 2230108,
+      "mobName": "Pinboom",
+      "chineseMobName": "海膽",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "totalMonsters": 1
+}

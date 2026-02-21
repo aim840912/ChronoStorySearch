@@ -17,48 +17,15 @@
       "enabled": true
     },
     {
-      "itemId": 4031209,
-      "itemName": "SOS Letter",
-      "chineseItemName": "",
-      "chance": 50,
-      "displayChance": "50.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 3072,
-      "enabled": false
-    },
-    {
       "itemId": 0,
       "itemName": "Meso",
       "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 52,
-      "maxQty": 78,
+      "minQty": 249,
+      "maxQty": 366,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 4031262,
@@ -69,12 +36,12 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 3081,
-      "enabled": false
+      "enabled": true
     },
     {
-      "itemId": 2000001,
-      "itemName": "Orange Potion",
-      "chineseItemName": "橘色藥水",
+      "itemId": 2022003,
+      "itemName": "Unagi",
+      "chineseItemName": "烤鰻魚",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -83,9 +50,9 @@
       "enabled": true
     },
     {
-      "itemId": 2000003,
-      "itemName": "Blue Potion",
-      "chineseItemName": "藍色藥水",
+      "itemId": 2000006,
+      "itemName": "Mana Elixir",
+      "chineseItemName": "活力藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -138,31 +105,9 @@
       "enabled": true
     },
     {
-      "itemId": 2381029,
-      "itemName": "Flower Fish Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1002160,
-      "itemName": "Brown Hunter",
-      "chineseItemName": "",
-      "chance": 0.1287,
-      "displayChance": "0.13%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1040062,
-      "itemName": "Red Knucklevest",
-      "chineseItemName": "紅暗影之服",
+      "itemId": 1002211,
+      "itemName": "Blue Maro",
+      "chineseItemName": "藍貴族軟帽",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -171,9 +116,9 @@
       "enabled": true
     },
     {
-      "itemId": 1040072,
-      "itemName": "Red Legolier",
-      "chineseItemName": "紅守護之服",
+      "itemId": 1040097,
+      "itemName": "Green China",
+      "chineseItemName": "綠陽",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -182,9 +127,9 @@
       "enabled": true
     },
     {
-      "itemId": 1060051,
-      "itemName": "Red Knucklevest Pants",
-      "chineseItemName": "紅暗影之褲",
+      "itemId": 1082082,
+      "itemName": "Blue Pennance",
+      "chineseItemName": "藍元素手套",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -193,9 +138,9 @@
       "enabled": true
     },
     {
-      "itemId": 1060061,
-      "itemName": "Red Legolier Pants",
-      "chineseItemName": "紅守護之褲",
+      "itemId": 1072128,
+      "itemName": "Blue Goni Shoes",
+      "chineseItemName": "藍雷電鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -204,9 +149,9 @@
       "enabled": true
     },
     {
-      "itemId": 1072086,
-      "itemName": "Green Lappy Boots",
-      "chineseItemName": "",
+      "itemId": 1032018,
+      "itemName": "Pansy Earrings",
+      "chineseItemName": "紫荊花耳環",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -215,9 +160,9 @@
       "enabled": true
     },
     {
-      "itemId": 1072291,
-      "itemName": "Brown Wooden Krag",
-      "chineseItemName": "褐色木鞋",
+      "itemId": 1060083,
+      "itemName": "Red China Pants",
+      "chineseItemName": "赤陽褲",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -226,55 +171,66 @@
       "enabled": true
     },
     {
-      "itemId": 1322024,
-      "itemName": "Purple Tube",
-      "chineseItemName": "紫游泳圈",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "itemId": 1002209,
+      "itemName": "Green Sonata",
+      "chineseItemName": "綠黑太陽帽",
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 1412000,
-      "itemName": "Two-Handed Axe",
-      "chineseItemName": "",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "itemId": 1102001,
+      "itemName": "Blue Napoleon",
+      "chineseItemName": "藍色冒險披風",
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 1412006,
-      "itemName": "Blue Axe",
-      "chineseItemName": "重型巨斧",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "itemId": 1002086,
+      "itemName": "Bronze Crusader Helm",
+      "chineseItemName": "青銅十字軍帽",
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 1422001,
-      "itemName": "Mithril Maul",
-      "chineseItemName": "鋰礦錘",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "itemId": 1312008,
+      "itemName": "Buck",
+      "chineseItemName": "樹靈之斧",
+      "chance": 0.05,
+      "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 1462000,
-      "itemName": "Mountain Crossbow",
-      "chineseItemName": "山羊弩",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "itemId": 1472018,
+      "itemName": "Steel Slain",
+      "chineseItemName": "鋼鐵手甲",
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1462007,
+      "itemName": "Rower",
+      "chineseItemName": "炎弩",
+      "chance": 0.05,
+      "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
@@ -303,5 +259,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 27
+  "totalDrops": 23
 }

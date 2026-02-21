@@ -33,26 +33,26 @@
       "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 396,
-      "maxQty": 1950,
+      "minQty": 822,
+      "maxQty": 3987,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 2000002,
-      "itemName": "White Potion",
-      "chineseItemName": "白色藥水",
+      "itemId": 2022041,
+      "itemName": "Fried shrimp",
+      "chineseItemName": "",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
-      "maxQty": 1,
+      "maxQty": 5,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 2000003,
-      "itemName": "Blue Potion",
-      "chineseItemName": "藍色藥水",
+      "itemId": 2000005,
+      "itemName": "Power Elixir",
+      "chineseItemName": "超級藥水",
       "chance": 20,
       "displayChance": "20.0%",
       "minQty": 1,
@@ -97,39 +97,6 @@
       "itemId": 1442018,
       "itemName": "Frozen Tuna",
       "chineseItemName": "冷凍金槍魚",
-      "chance": 2.5,
-      "displayChance": "2.5%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 2388030,
-      "itemName": "Seruf Card",
-      "chineseItemName": "",
-      "chance": 2.4,
-      "displayChance": "2.4%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 2040320,
-      "itemName": "Dark Scroll for Earring for LUK 70%",
-      "chineseItemName": "耳環幸運詛咒卷軸70%",
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 4,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1302010,
-      "itemName": "Jeweled Katar",
-      "chineseItemName": "樹靈之劍",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -138,9 +105,9 @@
       "enabled": true
     },
     {
-      "itemId": 1312008,
-      "itemName": "Buck",
-      "chineseItemName": "樹靈之斧",
+      "itemId": 1040090,
+      "itemName": "Green Orientican",
+      "chineseItemName": "綠鋼玉鎧甲",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -149,9 +116,9 @@
       "enabled": true
     },
     {
-      "itemId": 1322017,
-      "itemName": "Knuckle Mace",
-      "chineseItemName": "旋風錘",
+      "itemId": 1061091,
+      "itemName": "Red Ice Queen Skirt",
+      "chineseItemName": "紅鋼玉裙",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -160,9 +127,9 @@
       "enabled": true
     },
     {
-      "itemId": 1372007,
-      "itemName": "Cromi",
-      "chineseItemName": "大魔法師短杖",
+      "itemId": 1082091,
+      "itemName": "Dark Garner",
+      "chineseItemName": "黑神功手套",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -171,9 +138,9 @@
       "enabled": true
     },
     {
-      "itemId": 1382006,
-      "itemName": "Thorns",
-      "chineseItemName": "白龍之杖",
+      "itemId": 1041094,
+      "itemName": "Light Mantis",
+      "chineseItemName": "灰飛影之服",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -182,9 +149,9 @@
       "enabled": true
     },
     {
-      "itemId": 1402003,
-      "itemName": "Lion's Fang",
-      "chineseItemName": "虎劍",
+      "itemId": 1032019,
+      "itemName": "Crystal Flower Earrings",
+      "chineseItemName": "水仙耳環",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -193,9 +160,9 @@
       "enabled": true
     },
     {
-      "itemId": 1412003,
-      "itemName": "The Rising",
-      "chineseItemName": "太陽之斧",
+      "itemId": 1072137,
+      "itemName": "Green Goldrunners",
+      "chineseItemName": "綠天使鞋",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -204,9 +171,9 @@
       "enabled": true
     },
     {
-      "itemId": 1422005,
-      "itemName": "Golden Mole",
-      "chineseItemName": "黃金錘",
+      "itemId": 1082089,
+      "itemName": "Oaker Garner",
+      "chineseItemName": "黃神功手套",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -215,9 +182,9 @@
       "enabled": true
     },
     {
-      "itemId": 1442005,
-      "itemName": "The Nine Dragons",
-      "chineseItemName": "九龍刀",
+      "itemId": 1082060,
+      "itemName": "Sapphire Clench",
+      "chineseItemName": "藍戰鬥手套",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -226,9 +193,86 @@
       "enabled": true
     },
     {
-      "itemId": 1442018,
-      "itemName": "Frozen Tuna",
-      "chineseItemName": "冷凍金槍魚",
+      "itemId": 1040098,
+      "itemName": "Light Scorpio",
+      "chineseItemName": "白飛影之服",
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1002029,
+      "itemName": "Red Oriental Helmet",
+      "chineseItemName": "將軍的紅頭盔",
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1051043,
+      "itemName": "Brown Choro",
+      "chineseItemName": "黃草露",
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1050054,
+      "itemName": "Red Anakamoon",
+      "chineseItemName": "紅神聖服",
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1041092,
+      "itemName": "Red Ice Queen",
+      "chineseItemName": "紅鋼玉鎧甲",
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072149,
+      "itemName": "Blood Camel Boots",
+      "chineseItemName": "紅十字鞋",
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1072136,
+      "itemName": "Pink Goldrunners",
+      "chineseItemName": "粉紅天使鞋",
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1061094,
+      "itemName": "Bloody Mantis Pants",
+      "chineseItemName": "赤飛影之褲",
       "chance": 0.7,
       "displayChance": "0.70%",
       "minQty": 1,
@@ -248,9 +292,9 @@
       "enabled": true
     },
     {
-      "itemId": 1332003,
-      "itemName": "Shinkita",
-      "chineseItemName": "破碎刃",
+      "itemId": 1002268,
+      "itemName": "Brown Polyfeather Hat",
+      "chineseItemName": "黃弓羽",
       "chance": 0.5,
       "displayChance": "0.50%",
       "minQty": 1,
@@ -259,92 +303,15 @@
       "enabled": true
     },
     {
-      "itemId": 1332016,
-      "itemName": "Sai",
-      "chineseItemName": "華氏短劍",
+      "itemId": 1302025,
+      "itemName": "Red Umbrella",
+      "chineseItemName": "紅色雨傘",
       "chance": 0.5,
       "displayChance": "0.50%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 1432004,
-      "itemName": "Serpent's Tongue",
-      "chineseItemName": "丈八蛇矛",
-      "chance": 0.5,
-      "displayChance": "0.50%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1452008,
-      "itemName": "Olympus",
-      "chineseItemName": "天弓",
-      "chance": 0.5,
-      "displayChance": "0.50%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1462007,
-      "itemName": "Rower",
-      "chineseItemName": "炎弩",
-      "chance": 0.5,
-      "displayChance": "0.50%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1472020,
-      "itemName": "Sapphire Slain",
-      "chineseItemName": "藍寶手甲",
-      "chance": 0.5,
-      "displayChance": "0.50%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1482007,
-      "itemName": "Fury Claw",
-      "chineseItemName": "惡魔之爪",
-      "chance": 0.5,
-      "displayChance": "0.50%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1492007,
-      "itemName": "Mr",
-      "chineseItemName": "拉斯菲特之槍",
-      "chance": 0.5,
-      "displayChance": "0.50%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 2049100,
-      "itemName": "Chaos Scroll 60%",
-      "chineseItemName": "",
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 2040029,
@@ -490,5 +457,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 44
+  "totalDrops": 41
 }

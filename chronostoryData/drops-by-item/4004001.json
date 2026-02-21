@@ -4,20 +4,31 @@
   "chineseItemName": "智慧母礦",
   "monsters": [
     {
-      "mobId": 3000005,
-      "mobName": "Brown Teddy",
-      "chineseMobName": "褐色發條熊",
-      "isBoss": false,
+      "mobId": 5220003,
+      "mobName": "Timer",
+      "chineseMobName": "咕咕鐘",
+      "isBoss": true,
       "inGame": true,
-      "chance": 1,
-      "displayChance": "1.0%",
+      "chance": 10,
+      "displayChance": "10.0%",
       "minQty": 1,
       "maxQty": 1
     },
     {
-      "mobId": 3000006,
-      "mobName": "Krip",
-      "chineseMobName": "活跳蝦",
+      "mobId": 6220001,
+      "mobName": "Zeno",
+      "chineseMobName": "葛雷金剛",
+      "isBoss": true,
+      "inGame": false,
+      "chance": 10,
+      "displayChance": "10.0%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3000005,
+      "mobName": "Brown Teddy",
+      "chineseMobName": "褐色發條熊",
       "isBoss": false,
       "inGame": true,
       "chance": 1,
@@ -48,17 +59,6 @@
       "maxQty": 1
     },
     {
-      "mobId": 3210202,
-      "mobName": "Jr. Grupin",
-      "chineseMobName": "幼藍獨角獅",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 3230200,
       "mobName": "Star Pixie",
       "chineseMobName": "星光精靈",
@@ -77,17 +77,6 @@
       "inGame": true,
       "chance": 1,
       "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 3230302,
-      "mobName": "Bloctopus",
-      "chineseMobName": "機器章魚",
-      "isBoss": false,
-      "inGame": false,
-      "chance": 0.3,
-      "displayChance": "0.30%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -202,28 +191,6 @@
       "maxQty": 1
     },
     {
-      "mobId": 4230400,
-      "mobName": "Iron Boar",
-      "chineseMobName": "鋼之黑肥肥",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4240000,
-      "mobName": "Chief Gray",
-      "chineseMobName": "葛雷元老",
-      "isBoss": false,
-      "inGame": false,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 5120002,
       "mobName": "Lioner",
       "chineseMobName": "黃獨角獅",
@@ -268,17 +235,6 @@
       "maxQty": 1
     },
     {
-      "mobId": 5220003,
-      "mobName": "Timer",
-      "chineseMobName": "咕咕鐘",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 10,
-      "displayChance": "10.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 5300001,
       "mobName": "Dark Leatty",
       "chineseMobName": "黑利堤",
@@ -297,17 +253,6 @@
       "inGame": true,
       "chance": 1,
       "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 6220001,
-      "mobName": "Zeno",
-      "chineseMobName": "葛雷金剛",
-      "isBoss": true,
-      "inGame": false,
-      "chance": 10,
-      "displayChance": "10.0%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -407,6 +352,61 @@
       "inGame": true,
       "chance": 0.5,
       "displayChance": "0.50%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3210202,
+      "mobName": "Jr. Grupin",
+      "chineseMobName": "幼藍獨角獅",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 3230302,
+      "mobName": "Bloctopus",
+      "chineseMobName": "機器章魚",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4230400,
+      "mobName": "Iron Boar",
+      "chineseMobName": "鋼之黑肥肥",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 4240000,
+      "mobName": "Chief Gray",
+      "chineseMobName": "葛雷元老",
+      "isBoss": false,
+      "inGame": false,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9300437,
+      "mobName": "Jellyfish",
+      "chineseMobName": "水母",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
       "minQty": 1,
       "maxQty": 1
     }

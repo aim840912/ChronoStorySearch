@@ -4,6 +4,17 @@
   "chineseItemName": "套服智力卷軸60%",
   "monsters": [
     {
+      "mobId": 8220001,
+      "mobName": "Snowman",
+      "chineseMobName": "雪毛怪人",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 1,
+      "displayChance": "1.0%",
+      "minQty": 1,
+      "maxQty": 4
+    },
+    {
       "mobId": 8140300,
       "mobName": "Dark Klock",
       "chineseMobName": "黑暗冥鐘",
@@ -26,39 +37,6 @@
       "maxQty": 1
     },
     {
-      "mobId": 8220001,
-      "mobName": "Snowman",
-      "chineseMobName": "雪毛怪人",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 4
-    },
-    {
-      "mobId": 8510000,
-      "mobName": "Pianus (R)",
-      "chineseMobName": "海怒斯(右)",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 8520000,
-      "mobName": "Pianus (L)",
-      "chineseMobName": "海怒斯(左)",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 9300038,
       "mobName": "Ghost Pixie",
       "chineseMobName": "鬼精靈",
@@ -70,5 +48,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 6
+  "totalMonsters": 4
 }

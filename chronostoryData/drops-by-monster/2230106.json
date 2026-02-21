@@ -6,17 +6,6 @@
   "inGame": true,
   "drops": [
     {
-      "itemId": 4031269,
-      "itemName": "Slippery Oil",
-      "chineseItemName": "",
-      "chance": 100,
-      "displayChance": "100.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 3629,
-      "enabled": false
-    },
-    {
       "itemId": 4000163,
       "itemName": "Sea Horse Horn",
       "chineseItemName": "",
@@ -33,32 +22,10 @@
       "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 44,
-      "maxQty": 66,
+      "minQty": 375,
+      "maxQty": 547,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 4031260,
@@ -69,12 +36,12 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 3080,
-      "enabled": false
+      "enabled": true
     },
     {
-      "itemId": 2000001,
-      "itemName": "Orange Potion",
-      "chineseItemName": "橘色藥水",
+      "itemId": 2022003,
+      "itemName": "Unagi",
+      "chineseItemName": "烤鰻魚",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -83,9 +50,9 @@
       "enabled": true
     },
     {
-      "itemId": 2000003,
-      "itemName": "Blue Potion",
-      "chineseItemName": "藍色藥水",
+      "itemId": 2000006,
+      "itemName": "Mana Elixir",
+      "chineseItemName": "活力藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -138,17 +105,6 @@
       "enabled": true
     },
     {
-      "itemId": 2381021,
-      "itemName": "Cico Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4004003,
       "itemName": "LUK Crystal Ore",
       "chineseItemName": "幸運母礦",
@@ -160,30 +116,8 @@
       "enabled": true
     },
     {
-      "itemId": 1002146,
-      "itemName": "Red Tiberian",
-      "chineseItemName": "",
-      "chance": 0.1287,
-      "displayChance": "0.13%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1002158,
-      "itemName": "Green Hunter",
-      "chineseItemName": "綠獵人帽",
-      "chance": 0.1287,
-      "displayChance": "0.13%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1040040,
-      "itemName": "Silver Master Sergeant",
+      "itemId": 1102087,
+      "itemName": "Green Gaia Cape",
       "chineseItemName": "",
       "chance": 0.08,
       "displayChance": "0.080%",
@@ -193,9 +127,9 @@
       "enabled": true
     },
     {
-      "itemId": 1041040,
-      "itemName": "Blue Qi Pao",
-      "chineseItemName": "",
+      "itemId": 1072151,
+      "itemName": "Gold Moss Boots",
+      "chineseItemName": "金無痕之鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -204,9 +138,9 @@
       "enabled": true
     },
     {
-      "itemId": 1041050,
-      "itemName": "Purple Steal",
-      "chineseItemName": "紫寂靜之服",
+      "itemId": 1050068,
+      "itemName": "Red Requiem",
+      "chineseItemName": "紅天上之衣",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -215,9 +149,9 @@
       "enabled": true
     },
     {
-      "itemId": 1060060,
-      "itemName": "Silver Master Sergeant Kilt",
-      "chineseItemName": "",
+      "itemId": 1072139,
+      "itemName": "Blue Goldrunners",
+      "chineseItemName": "藍天使鞋",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -226,9 +160,9 @@
       "enabled": true
     },
     {
-      "itemId": 1061033,
-      "itemName": "Blue Qi Pao Pants",
-      "chineseItemName": "",
+      "itemId": 1082088,
+      "itemName": "Dark Manute",
+      "chineseItemName": "黑封印手套",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -237,9 +171,9 @@
       "enabled": true
     },
     {
-      "itemId": 1061046,
-      "itemName": "Purple Steal Pants",
-      "chineseItemName": "紫寂靜裙",
+      "itemId": 1092010,
+      "itemName": "Silver Legend Shield",
+      "chineseItemName": "古老銀盾",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -248,53 +182,64 @@
       "enabled": true
     },
     {
-      "itemId": 1052104,
-      "itemName": "Brown Turk Gally",
-      "chineseItemName": "褐色海盜服",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "itemId": 1060082,
+      "itemName": "Dark Orientican Pants",
+      "chineseItemName": "黑鋼玉褲",
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 1072051,
-      "itemName": "Silver War Boots",
-      "chineseItemName": "",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "itemId": 1002270,
+      "itemName": "Black Polyfeather Hat",
+      "chineseItemName": "黑弓羽",
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 1322023,
-      "itemName": "Blue Flowery Tube",
-      "chineseItemName": "藍花紋游泳圈",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "itemId": 1102024,
+      "itemName": "Black Gaia Cape",
+      "chineseItemName": "黑鬥士披風",
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 1442014,
-      "itemName": "Silver Snowboard",
-      "chineseItemName": "銀雪板",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "itemId": 1051044,
+      "itemName": "Blue Anakarune",
+      "chineseItemName": "藍聖黨之服",
+      "chance": 0.08,
+      "displayChance": "0.080%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
       "enabled": true
     },
     {
-      "itemId": 1332009,
-      "itemName": "Cass",
-      "chineseItemName": "偃月刃",
+      "itemId": 1082092,
+      "itemName": "Bronze Pow",
+      "chineseItemName": "青銅柔絲手套",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1402011,
+      "itemName": "Sparta",
+      "chineseItemName": "無極劍",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -303,9 +248,20 @@
       "enabled": true
     },
     {
-      "itemId": 1332013,
-      "itemName": "Stinger",
-      "chineseItemName": "",
+      "itemId": 1482008,
+      "itemName": "Psycho Claw",
+      "chineseItemName": "塞爾拉利刃拳套",
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1472022,
+      "itemName": "Bronze Gigantic",
+      "chineseItemName": "青銅戰神拳套",
       "chance": 0.05,
       "displayChance": "0.050%",
       "minQty": 1,
@@ -347,5 +303,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 31
+  "totalDrops": 27
 }

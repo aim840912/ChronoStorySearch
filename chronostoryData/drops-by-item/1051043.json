@@ -4,6 +4,17 @@
   "chineseItemName": "黃草露",
   "monsters": [
     {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5130108,
       "mobName": "Miner Zombie",
       "chineseMobName": "礦山殭屍",
@@ -37,5 +48,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 4
 }

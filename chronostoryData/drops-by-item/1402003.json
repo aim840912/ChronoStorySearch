@@ -4,6 +4,17 @@
   "chineseItemName": "虎劍",
   "monsters": [
     {
+      "mobId": 5220002,
+      "mobName": "Faust",
+      "chineseMobName": "殭屍猴王",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 3230303,
       "mobName": "Propelly",
       "chineseMobName": "粉紅色戰鬥機",
@@ -11,17 +22,6 @@
       "inGame": false,
       "chance": 0.07,
       "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 4220000,
-      "mobName": "Seruf",
-      "chineseMobName": "火蚌殼",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -35,18 +35,7 @@
       "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
-    },
-    {
-      "mobId": 5220002,
-      "mobName": "Faust",
-      "chineseMobName": "殭屍猴王",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1
     }
   ],
-  "totalMonsters": 4
+  "totalMonsters": 3
 }

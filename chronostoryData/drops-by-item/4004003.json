@@ -26,17 +26,6 @@
       "maxQty": 1
     },
     {
-      "mobId": 2230106,
-      "mobName": "Cico",
-      "chineseMobName": "黃金海馬",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.3,
-      "displayChance": "0.30%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 3210202,
       "mobName": "Jr. Grupin",
       "chineseMobName": "幼藍獨角獅",
@@ -321,7 +310,29 @@
       "displayChance": "1.0%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 2230106,
+      "mobName": "Cico",
+      "chineseMobName": "黃金海馬",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9300437,
+      "mobName": "Jellyfish",
+      "chineseMobName": "水母",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 29
+  "totalMonsters": 30
 }

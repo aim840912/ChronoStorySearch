@@ -28,17 +28,6 @@
       "enabled": true
     },
     {
-      "itemId": 4030012,
-      "itemName": "Monster Card",
-      "chineseItemName": "",
-      "chance": 12.5,
-      "displayChance": "12.5%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 2050004,
       "itemName": "All Cure Potion",
       "chineseItemName": "萬能療傷藥",
@@ -147,39 +136,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2385013,
-      "itemName": "Goby Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130010,
-      "itemName": "Wand Production Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130013,
-      "itemName": "Crossbow Production Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 1002287,
@@ -314,17 +270,6 @@
       "enabled": true
     },
     {
-      "itemId": 1442030,
-      "itemName": "Maple Snowboard",
-      "chineseItemName": "",
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 1050093,
       "itemName": "Blue Oriental Fury Coat",
       "chineseItemName": "青綢緞長袍",
@@ -435,5 +380,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 39
+  "totalDrops": 34
 }

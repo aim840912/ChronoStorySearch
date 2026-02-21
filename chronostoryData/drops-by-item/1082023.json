@@ -4,17 +4,6 @@
   "chineseItemName": "鋼鐵長手套",
   "monsters": [
     {
-      "mobId": 3230104,
-      "mobName": "Mask Fish",
-      "chineseMobName": "蒙面河豚",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.1,
-      "displayChance": "0.10%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 3230307,
       "mobName": "Chirppy",
       "chineseMobName": "邱布",
@@ -37,5 +26,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 2
 }

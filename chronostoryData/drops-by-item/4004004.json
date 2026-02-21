@@ -4,13 +4,13 @@
   "chineseItemName": "黑暗母礦",
   "monsters": [
     {
-      "mobId": 2230113,
-      "mobName": "Dark Eye",
-      "chineseMobName": "黑獨眼獸",
-      "isBoss": false,
+      "mobId": 8220000,
+      "mobName": "Eliza",
+      "chineseMobName": "艾利傑",
+      "isBoss": true,
       "inGame": true,
-      "chance": 0.03,
-      "displayChance": "0.030%",
+      "chance": 10,
+      "displayChance": "10.0%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -279,17 +279,6 @@
       "maxQty": 1
     },
     {
-      "mobId": 8220000,
-      "mobName": "Eliza",
-      "chineseMobName": "艾利傑",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 10,
-      "displayChance": "10.0%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 9300038,
       "mobName": "Ghost Pixie",
       "chineseMobName": "鬼精靈",
@@ -299,7 +288,29 @@
       "displayChance": "0.50%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 9300437,
+      "mobName": "Jellyfish",
+      "chineseMobName": "水母",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.3,
+      "displayChance": "0.30%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 2230113,
+      "mobName": "Dark Eye",
+      "chineseMobName": "黑獨眼獸",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.03,
+      "displayChance": "0.030%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 27
+  "totalMonsters": 28
 }

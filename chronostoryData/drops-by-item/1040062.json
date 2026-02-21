@@ -4,17 +4,6 @@
   "chineseItemName": "紅暗影之服",
   "monsters": [
     {
-      "mobId": 2230200,
-      "mobName": "Flower Fish",
-      "chineseMobName": "花鯰魚",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 3110101,
       "mobName": "Pink Teddy",
       "chineseMobName": "粉紅發條熊",
@@ -37,5 +26,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 2
 }

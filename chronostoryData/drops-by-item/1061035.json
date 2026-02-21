@@ -4,17 +4,6 @@
   "chineseItemName": "",
   "monsters": [
     {
-      "mobId": 2230105,
-      "mobName": "Seacle",
-      "chineseMobName": "綠海馬",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 3210450,
       "mobName": "Scuba Pepe",
       "chineseMobName": "潛水企鵝王",
@@ -26,5 +15,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 2
+  "totalMonsters": 1
 }

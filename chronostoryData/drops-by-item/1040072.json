@@ -4,17 +4,6 @@
   "chineseItemName": "紅守護之服",
   "monsters": [
     {
-      "mobId": 2230200,
-      "mobName": "Flower Fish",
-      "chineseMobName": "花鯰魚",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 4230107,
       "mobName": "Flyeye",
       "chineseMobName": "獨眼蝙蝠",
@@ -26,5 +15,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 2
+  "totalMonsters": 1
 }

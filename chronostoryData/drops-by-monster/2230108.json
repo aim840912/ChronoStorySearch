@@ -22,32 +22,10 @@
       "chineseItemName": "楓幣",
       "chance": 40,
       "displayChance": "40.0%",
-      "minQty": 40,
-      "maxQty": 60,
+      "minQty": 437,
+      "maxQty": 634,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 1200000,
-      "itemName": "Arrow for Bow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1201000,
-      "itemName": "Arrow for Crossbow",
-      "chineseItemName": "",
-      "chance": 3,
-      "displayChance": "3.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 4031261,
@@ -58,12 +36,12 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 3080,
-      "enabled": false
+      "enabled": true
     },
     {
-      "itemId": 2000001,
-      "itemName": "Orange Potion",
-      "chineseItemName": "橘色藥水",
+      "itemId": 2022003,
+      "itemName": "Unagi",
+      "chineseItemName": "烤鰻魚",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -72,9 +50,9 @@
       "enabled": true
     },
     {
-      "itemId": 2000003,
-      "itemName": "Blue Potion",
-      "chineseItemName": "藍色藥水",
+      "itemId": 2000006,
+      "itemName": "Mana Elixir",
+      "chineseItemName": "活力藥水",
       "chance": 2,
       "displayChance": "2.0%",
       "minQty": 1,
@@ -127,53 +105,9 @@
       "enabled": true
     },
     {
-      "itemId": 2381009,
-      "itemName": "Pinboom Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 1002119,
-      "itemName": "Green Robin Hat",
-      "chineseItemName": "綠羽翼帽",
-      "chance": 0.1287,
-      "displayChance": "0.13%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1002131,
-      "itemName": "Green Loosecap",
-      "chineseItemName": "綠色自由帽",
-      "chance": 0.1287,
-      "displayChance": "0.13%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1032004,
-      "itemName": "Gold Earrings",
-      "chineseItemName": "金耳環",
-      "chance": 0.1,
-      "displayChance": "0.10%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1041027,
-      "itemName": "Red Shivermail",
-      "chineseItemName": "紅硬皮裝",
+      "itemId": 1082098,
+      "itemName": "Brown Lorin",
+      "chineseItemName": "褐戰魂手套",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -182,9 +116,9 @@
       "enabled": true
     },
     {
-      "itemId": 1061025,
-      "itemName": "Red Shivermail Skirt",
-      "chineseItemName": "紅硬皮裙",
+      "itemId": 1002281,
+      "itemName": "Brown Nightfox",
+      "chineseItemName": "褐天空之帽",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -193,9 +127,9 @@
       "enabled": true
     },
     {
-      "itemId": 1072054,
-      "itemName": "Orange Whitebottom Boots",
-      "chineseItemName": "朱紅皮鞋",
+      "itemId": 1002254,
+      "itemName": "Dark Infinium Circlet",
+      "chineseItemName": "黑神聖之冠",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -204,9 +138,9 @@
       "enabled": true
     },
     {
-      "itemId": 1072065,
-      "itemName": "Red Enamel Boots",
-      "chineseItemName": "",
+      "itemId": 1051053,
+      "itemName": "Red Requierre",
+      "chineseItemName": "紅天上之衣",
       "chance": 0.08,
       "displayChance": "0.080%",
       "minQty": 1,
@@ -215,44 +149,77 @@
       "enabled": true
     },
     {
-      "itemId": 1050024,
-      "itemName": "Yellow Doros Robe",
+      "itemId": 1002284,
+      "itemName": "White Nightfox",
+      "chineseItemName": "白天空之帽",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1041101,
+      "itemName": "Blue Mystique",
+      "chineseItemName": "藍朱雀之甲",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1102026,
+      "itemName": "Green Seraph Cape",
+      "chineseItemName": "綠妖精披風",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1050063,
+      "itemName": "Green Linnex",
+      "chineseItemName": "綠飄雲之衣",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1050067,
+      "itemName": "Blue Requiem",
+      "chineseItemName": "藍天上之衣",
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1422010,
+      "itemName": "Gigantic Sledge",
+      "chineseItemName": "封魂之錘",
+      "chance": 0.05,
+      "displayChance": "0.050%",
+      "minQty": 1,
+      "maxQty": 1,
+      "questId": 0,
+      "enabled": true
+    },
+    {
+      "itemId": 1332030,
+      "itemName": "Fan",
       "chineseItemName": "",
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1051005,
-      "itemName": "Red Doroness Robe",
-      "chineseItemName": "紅魔者之袍",
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1052101,
-      "itemName": "Beige Carribean",
-      "chineseItemName": "褐色加勒比套裝",
-      "chance": 0.07,
-      "displayChance": "0.070%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": true
-    },
-    {
-      "itemId": 1402000,
-      "itemName": "Two-Handed Sword",
-      "chineseItemName": "",
-      "chance": 0.07,
-      "displayChance": "0.070%",
+      "chance": 0.05,
+      "displayChance": "0.050%",
       "minQty": 1,
       "maxQty": 1,
       "questId": 0,
@@ -281,5 +248,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 25
+  "totalDrops": 22
 }

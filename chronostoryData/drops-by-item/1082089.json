@@ -4,6 +4,17 @@
   "chineseItemName": "黃神功手套",
   "monsters": [
     {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 4230126,
       "mobName": "Mummydog",
       "chineseMobName": "木乃伊犬",
@@ -15,5 +26,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 1
+  "totalMonsters": 2
 }

@@ -4,13 +4,24 @@
   "chineseItemName": "太陽之斧",
   "monsters": [
     {
-      "mobId": 4220000,
-      "mobName": "Seruf",
-      "chineseMobName": "火蚌殼",
+      "mobId": 5220002,
+      "mobName": "Faust",
+      "chineseMobName": "殭屍猴王",
       "isBoss": true,
       "inGame": true,
       "chance": 0.7,
       "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "mobId": 9500148,
+      "mobName": "Tortice",
+      "chineseMobName": "冰烏龜",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.18,
+      "displayChance": "0.18%",
       "minQty": 1,
       "maxQty": 1
     },
@@ -37,17 +48,6 @@
       "maxQty": 1
     },
     {
-      "mobId": 5220002,
-      "mobName": "Faust",
-      "chineseMobName": "殭屍猴王",
-      "isBoss": true,
-      "inGame": true,
-      "chance": 0.7,
-      "displayChance": "0.70%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 8140100,
       "mobName": "Dark Yeti & Pepe",
       "chineseMobName": "黑吉拉戰車",
@@ -57,18 +57,7 @@
       "displayChance": "0.070%",
       "minQty": 1,
       "maxQty": 1
-    },
-    {
-      "mobId": 9500148,
-      "mobName": "Tortice",
-      "chineseMobName": "冰烏龜",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.18,
-      "displayChance": "0.18%",
-      "minQty": 1,
-      "maxQty": 1
     }
   ],
-  "totalMonsters": 6
+  "totalMonsters": 5
 }

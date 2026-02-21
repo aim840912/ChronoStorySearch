@@ -28,28 +28,6 @@
       "enabled": true
     },
     {
-      "itemId": 4031251,
-      "itemName": "Sea Dust",
-      "chineseItemName": "",
-      "chance": 30,
-      "displayChance": "30.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 3076,
-      "enabled": false
-    },
-    {
-      "itemId": 4031256,
-      "itemName": "Cold Tear",
-      "chineseItemName": "",
-      "chance": 10,
-      "displayChance": "10.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 3076,
-      "enabled": false
-    },
-    {
       "itemId": 2000005,
       "itemName": "Power Elixir",
       "chineseItemName": "超級藥水",
@@ -127,17 +105,6 @@
       "enabled": true
     },
     {
-      "itemId": 2386000,
-      "itemName": "Bone Fish Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4006001,
       "itemName": "The Summoning Rock",
       "chineseItemName": "召喚石",
@@ -147,50 +114,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 4130010,
-      "itemName": "Wand Production Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130015,
-      "itemName": "Claw Production Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130016,
-      "itemName": "Knuckler Production Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 2290132,
-      "itemName": "[Mastery Book] Final Blow",
-      "chineseItemName": "",
-      "chance": 0.15,
-      "displayChance": "0.15%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 1002324,
@@ -444,18 +367,7 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2049100,
-      "itemName": "Chaos Scroll 60%",
-      "chineseItemName": "",
-      "chance": 0.015,
-      "displayChance": "0.015%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     }
   ],
-  "totalDrops": 41
+  "totalDrops": 33
 }

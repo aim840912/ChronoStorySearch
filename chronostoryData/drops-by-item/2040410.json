@@ -4,17 +4,6 @@
   "chineseItemName": "上衣幸運詛咒卷軸70%",
   "monsters": [
     {
-      "mobId": 3000006,
-      "mobName": "Krip",
-      "chineseMobName": "活跳蝦",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.075,
-      "displayChance": "0.075%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 6230400,
       "mobName": "Soul Teddy",
       "chineseMobName": "幽魂發條熊",
@@ -26,5 +15,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 2
+  "totalMonsters": 1
 }

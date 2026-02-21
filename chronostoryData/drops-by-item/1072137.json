@@ -4,6 +4,17 @@
   "chineseItemName": "綠天使鞋",
   "monsters": [
     {
+      "mobId": 4220000,
+      "mobName": "Seruf",
+      "chineseMobName": "火蚌殼",
+      "isBoss": true,
+      "inGame": true,
+      "chance": 0.7,
+      "displayChance": "0.70%",
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
       "mobId": 5300100,
       "mobName": "Malady",
       "chineseMobName": "巫婆",
@@ -26,5 +37,5 @@
       "maxQty": 1
     }
   ],
-  "totalMonsters": 2
+  "totalMonsters": 3
 }

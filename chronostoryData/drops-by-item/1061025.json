@@ -4,28 +4,6 @@
   "chineseItemName": "紅硬皮裙",
   "monsters": [
     {
-      "mobId": 2220100,
-      "mobName": "BlueMushroom",
-      "chineseMobName": "藍菇菇",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
-      "mobId": 2230108,
-      "mobName": "Pinboom",
-      "chineseMobName": "海膽",
-      "isBoss": false,
-      "inGame": true,
-      "chance": 0.08,
-      "displayChance": "0.080%",
-      "minQty": 1,
-      "maxQty": 1
-    },
-    {
       "mobId": 2230113,
       "mobName": "Dark Eye",
       "chineseMobName": "黑獨眼獸",
@@ -35,7 +13,18 @@
       "displayChance": "0.12%",
       "minQty": 1,
       "maxQty": 1
+    },
+    {
+      "mobId": 2220100,
+      "mobName": "BlueMushroom",
+      "chineseMobName": "藍菇菇",
+      "isBoss": false,
+      "inGame": true,
+      "chance": 0.08,
+      "displayChance": "0.080%",
+      "minQty": 1,
+      "maxQty": 1
     }
   ],
-  "totalMonsters": 3
+  "totalMonsters": 2
 }

@@ -17,17 +17,6 @@
       "enabled": true
     },
     {
-      "itemId": 4031209,
-      "itemName": "SOS Letter",
-      "chineseItemName": "",
-      "chance": 50,
-      "displayChance": "50.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 3072,
-      "enabled": false
-    },
-    {
       "itemId": 0,
       "itemName": "Meso",
       "chineseItemName": "楓幣",
@@ -47,7 +36,7 @@
       "minQty": 1,
       "maxQty": 1,
       "questId": 3082,
-      "enabled": false
+      "enabled": true
     },
     {
       "itemId": 2000002,
@@ -83,17 +72,6 @@
       "enabled": true
     },
     {
-      "itemId": 4007001,
-      "itemName": "Magic Powder (White)",
-      "chineseItemName": "",
-      "chance": 1,
-      "displayChance": "1.0%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
       "itemId": 4004001,
       "itemName": "Wisdom Crystal Ore",
       "chineseItemName": "智慧母礦",
@@ -125,39 +103,6 @@
       "maxQty": 1,
       "questId": 0,
       "enabled": true
-    },
-    {
-      "itemId": 2382043,
-      "itemName": "Poopa Card",
-      "chineseItemName": "",
-      "chance": 0.8,
-      "displayChance": "0.80%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130003,
-      "itemName": "One-Handed Axe Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
-    },
-    {
-      "itemId": 4130007,
-      "itemName": "Two-Handed Mace Forging Stimulator",
-      "chineseItemName": "",
-      "chance": 0.6,
-      "displayChance": "0.60%",
-      "minQty": 1,
-      "maxQty": 1,
-      "questId": 0,
-      "enabled": false
     },
     {
       "itemId": 1002170,
@@ -413,5 +358,5 @@
       "enabled": true
     }
   ],
-  "totalDrops": 37
+  "totalDrops": 32
 }
