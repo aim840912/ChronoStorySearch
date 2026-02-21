@@ -7,30 +7,31 @@ Updated: 2026-02-21
 | Category | Total in Data | Has Image | Missing |
 |----------|---------------|-----------|---------|
 | Monsters | 255 | 255 | 0 |
-| Items | 2107 | 2092 | 15 |
+| Items | 2107 | 2096 | 8 |
 
 > 46 item images were added on 2026-02-21 via MapleStory.io API (R2 totalItems: 2112).
 > 12 monster images were added on 2026-02-21 via MapleStory.io JMS/419 API (R2 monsters: 255).
-> Remaining 15 items return 404 from MapleStory.io API and need alternative sources.
+> 4 Pearl Ring images were added on 2026-02-21 via MapleStory.io JMS/419 API (R2 totalItems: 2116).
+> 3 Accessory Scrolls resolved — app uses scroll success rate icon fallback (/images/scrolls/{rate}.png).
+> Remaining 8 items (Swimming Equipment) return 404 from all API sources.
 
-## Missing Item Images (15)
+## Resolved Items
 
-### Pearl Rings (4) — MapleStory.io API 404
+### Pearl Rings (4) — Added via JMS/419 API
 
-| ID | Name |
-|----|------|
-| 1112409 | Power Pearl Ring |
-| 1112410 | Dexterous Pearl Ring |
-| 1112411 | Wisdom Pearl Ring |
-| 1112412 | Lucky Pearl Ring |
+Downloaded from `https://maplestory.io/api/JMS/419/item/{id}/icon` on 2026-02-21.
 
-### Accessory Scrolls (3) — MapleStory.io API 404
+### Accessory Scrolls (3) — Resolved via fallback
 
-| ID | Name |
-|----|------|
-| 2040354 | Scroll for Accessory for INT 10% |
-| 2040360 | Dark Scroll for Accessory for LUK 30% |
-| 2040364 | Scroll for Accessory for STR 100% |
+The app displays scroll success rate icons (`10.png`, `30.png`, `100.png`) as fallback when item-specific icons are unavailable. No R2 upload needed.
+
+| ID | Name | Fallback Icon |
+|----|------|---------------|
+| 2040354 | Scroll for Accessory for INT 10% | /images/scrolls/10.png |
+| 2040360 | Dark Scroll for Accessory for LUK 30% | /images/scrolls/30.png |
+| 2040364 | Scroll for Accessory for STR 100% | /images/scrolls/100.png |
+
+## Missing Item Images (8)
 
 ### Swimming Equipment (8) — MapleStory.io API 404
 
