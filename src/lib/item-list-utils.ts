@@ -63,7 +63,9 @@ export function buildItemMapFromDrops(
   const itemMap = new Map<number, ExtendedUniqueItem>()
 
   // 從 filteredDrops 統計每個物品
+  // Skip virtual placeholder records (itemId: -1) created for monsters with no drops
   filteredDrops.forEach((drop) => {
+    if (drop.itemId < 0) return
     if (!itemMap.has(drop.itemId)) {
       itemMap.set(drop.itemId, {
         itemId: drop.itemId,

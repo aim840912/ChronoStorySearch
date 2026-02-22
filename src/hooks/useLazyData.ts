@@ -15,6 +15,7 @@ import {
   getItemDropsUrl,
 } from '@/lib/json-utils'
 import essentialData from '@/../chronostoryData/item-attributes-essential.json'
+import dropRelationsData from '@/../chronostoryData/drop-relations.json'
 
 // ==================== Helper Functions ====================
 
@@ -257,6 +258,16 @@ export function useLazyDropsDetailed(mobId: number | null) {
   useEffect(() => {
     if (!mobId) {
       setData(null)
+      setError(null)
+      setIsLoading(false)
+      currentRequestRef.current = null
+      return
+    }
+
+    // Monster has no drops in drop-relations → skip CDN fetch entirely
+    const mobItems = (dropRelationsData as { mobToItems: Record<string, number[]> }).mobToItems[String(mobId)]
+    if (mobItems && mobItems.length === 0) {
+      setData([])
       setError(null)
       setIsLoading(false)
       currentRequestRef.current = null
