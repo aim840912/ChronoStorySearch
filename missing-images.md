@@ -4,36 +4,17 @@ Updated: 2026-02-21
 
 ## Summary
 
-| Category | Total in Data | Has Image | Missing |
-|----------|---------------|-----------|---------|
-| Monsters | 255 | 255 | 0 |
-| Items | 2107 | 2096 | 8 |
+| Category | Total | In R2 | Fallback | Missing |
+|----------|-------|-------|----------|---------|
+| Monsters | 255 | 255 | — | 0 |
+| Items | 2107 | 2096 | 3 | 8 |
 
-> 46 item images were added on 2026-02-21 via MapleStory.io API (R2 totalItems: 2112).
-> 12 monster images were added on 2026-02-21 via MapleStory.io JMS/419 API (R2 monsters: 255).
-> 4 Pearl Ring images were added on 2026-02-21 via MapleStory.io JMS/419 API (R2 totalItems: 2116).
-> 3 Accessory Scrolls resolved — app uses scroll success rate icon fallback (/images/scrolls/{rate}.png).
-> Remaining 8 items (Swimming Equipment) return 404 from all API sources.
+- **R2 items**: 2116 total (includes shared/extra icons)
+- **Fallback**: 3 Accessory Scrolls use rate icons (`/images/scrolls/{10,30,100}.png`)
 
-## Resolved Items
+## Missing Items (8) — Swimming Equipment
 
-### Pearl Rings (4) — Added via JMS/419 API
-
-Downloaded from `https://maplestory.io/api/JMS/419/item/{id}/icon` on 2026-02-21.
-
-### Accessory Scrolls (3) — Resolved via fallback
-
-The app displays scroll success rate icons (`10.png`, `30.png`, `100.png`) as fallback when item-specific icons are unavailable. No R2 upload needed.
-
-| ID | Name | Fallback Icon |
-|----|------|---------------|
-| 2040354 | Scroll for Accessory for INT 10% | /images/scrolls/10.png |
-| 2040360 | Dark Scroll for Accessory for LUK 30% | /images/scrolls/30.png |
-| 2040364 | Scroll for Accessory for STR 100% | /images/scrolls/100.png |
-
-## Missing Item Images (8)
-
-### Swimming Equipment (8) — MapleStory.io API 404
+All return 404 from MapleStory.io GMS/83 and JMS/419 APIs.
 
 | ID | Name |
 |----|------|
@@ -45,3 +26,12 @@ The app displays scroll success rate icons (`10.png`, `30.png`, `100.png`) as fa
 | 6052019 | Blue Life-Jacket |
 | 6072092 | Yellow Flippers |
 | 6072093 | Blue Flippers |
+
+## Changelog
+
+| Date | Action |
+|------|--------|
+| 2026-02-21 | +46 items via GMS/83 API |
+| 2026-02-21 | +12 monsters via JMS/419 API |
+| 2026-02-21 | +4 Pearl Rings via JMS/419 API |
+| 2026-02-21 | Resolved 3 Accessory Scrolls (fallback icons) |
