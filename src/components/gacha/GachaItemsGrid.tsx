@@ -4,6 +4,10 @@ import { memo } from 'react'
 import type { GachaItem } from '@/types'
 import { getItemImageUrl } from '@/lib/image-utils'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { InFeedAd } from '@/components/adsense'
+
+const GACHA_AD_INTERVAL = 12
+const GACHA_MAX_ADS = 2
 
 interface GachaItemsGridProps {
   items: GachaItem[]
@@ -36,13 +40,19 @@ export const GachaItemsGrid = memo(function GachaItemsGrid({
         {t('gacha.allItems')} ({items.length})
       </h3>
       <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 2xl:grid-cols-14 gap-2 max-h-[500px] overflow-y-auto scrollbar-hide p-2 pt-10">
-        {items.map((item) => {
+        {items.flatMap((item, index) => {
           const itemName = language === 'zh-TW'
             ? item.chineseName
             : (item.itemName || item.name || item.chineseName)
           const itemIconUrl = getItemImageUrl(item.itemId, { itemName: item.name || item.itemName })
 
-          return (
+          const adInsertIndex = Math.floor((index + 1) / GACHA_AD_INTERVAL)
+          const shouldInsertAd =
+            (index + 1) % GACHA_AD_INTERVAL === 0 &&
+            index < items.length - 1 &&
+            adInsertIndex <= GACHA_MAX_ADS
+
+          const elements = [
             <button
               key={item.itemId}
               onClick={() => onItemClick?.(item)}
@@ -68,8 +78,18 @@ export const GachaItemsGrid = memo(function GachaItemsGrid({
               <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 bg-gray-900 dark:bg-gray-700 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
                 {itemName}
               </div>
-            </button>
-          )
+            </button>,
+          ]
+
+          if (shouldInsertAd) {
+            elements.push(
+              <div key={`ad-gacha-${index}`} className="col-span-full">
+                <InFeedAd />
+              </div>
+            )
+          }
+
+          return elements
         })}
       </div>
     </div>

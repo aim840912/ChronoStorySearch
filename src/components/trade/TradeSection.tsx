@@ -9,6 +9,7 @@ import { tradeService } from '@/lib/supabase/trade-service'
 import { TradeListingList } from './TradeListingList'
 import { TradeListingForm } from './TradeListingForm'
 import { BlacklistModal } from './BlacklistModal'
+import { MultiplexAd } from '@/components/adsense'
 import type { TradeType, TradeListingWithFavorite, TradeListing, EquipmentStatsFilter, EquipmentStats } from '@/types/trade'
 import type { ExtendedUniqueItem, ItemAttributesEssential } from '@/types'
 
@@ -296,7 +297,8 @@ export function TradeSection({ searchItems, typeFilter, searchQuery, statsFilter
           />
         ) : (
           // 列表區
-          <TradeListingList
+          <>
+            <TradeListingList
               listings={filteredListings}
               isLoading={isLoading}
               hasMore={hasMore}
@@ -314,6 +316,9 @@ export function TradeSection({ searchItems, typeFilter, searchQuery, statsFilter
                   : undefined
               }
             />
+            {/* 列表底部廣告（有資料時顯示） */}
+            {filteredListings.length > 0 && <MultiplexAd />}
+          </>
         )}
       </div>
 

@@ -3,6 +3,10 @@
 import { useState, useEffect, useMemo } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { clientLogger } from '@/lib/logger'
+import { DisplayAd, MultiplexAd } from '@/components/adsense'
+
+const MAP_GROUP_AD_INTERVAL = 3
+const MAX_MAP_ADS = 2
 
 interface MerchantShopItem {
   itemName: string
@@ -116,10 +120,10 @@ export function MerchantShopSection({
           </div>
         ) : (
           <div className="space-y-6">
-            {displayMaps.map((map) => {
+            {displayMaps.flatMap((map, index) => {
               const displayMapName = language === 'zh-TW' ? map.chineseMapName : map.mapName
 
-              return (
+              const mapCard = (
                 <div key={map.mapId}>
                   {/* 地圖標題（只在顯示全部時顯示） */}
                   {mapId === null && (
@@ -135,12 +139,12 @@ export function MerchantShopSection({
 
                   {/* 物品網格 */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                    {map.drops.map((item, index) => {
+                    {map.drops.map((item, dropIndex) => {
                       const displayItemName = language === 'zh-TW' ? item.chineseItemName : item.itemName
 
                       return (
                         <div
-                          key={`${map.mapId}-${index}`}
+                          key={`${map.mapId}-${dropIndex}`}
                           className="p-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors"
                         >
                           <h4 className="font-medium text-gray-900 dark:text-white text-sm">
@@ -155,7 +159,24 @@ export function MerchantShopSection({
                   </div>
                 </div>
               )
+
+              // 顯示全部時，每 MAP_GROUP_AD_INTERVAL 個地圖後插入 DisplayAd（最多 MAX_MAP_ADS 個）
+              const adPosition = Math.floor((index + 1) / MAP_GROUP_AD_INTERVAL)
+              const shouldInsertAd =
+                mapId === null &&
+                (index + 1) % MAP_GROUP_AD_INTERVAL === 0 &&
+                index < displayMaps.length - 1 &&
+                adPosition <= MAX_MAP_ADS
+
+              if (shouldInsertAd) {
+                return [mapCard, <DisplayAd key={`ad-map-${index}`} />]
+              }
+
+              return [mapCard]
             })}
+
+            {/* 列表底部廣告 */}
+            {displayMaps.length > 0 && <MultiplexAd />}
           </div>
         )}
       </div>

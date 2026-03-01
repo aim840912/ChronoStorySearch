@@ -11,6 +11,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { weightedRandomDraw } from '@/lib/gacha-utils'
 import { calculateRandomStats } from '@/lib/random-equipment-stats'
 import { clientLogger } from '@/lib/logger'
+import { MultiplexAd } from '@/components/adsense'
 
 type ViewMode = 'grid' | 'list'
 type SectionMode = 'browse' | 'gacha'
@@ -192,6 +193,7 @@ export function GachaDrawSection({
             items={selectedMachine.items}
             onItemClick={handleBrowseItemClick}
           />
+          <MultiplexAd />
         </div>
       ) : (
         /* 抽獎模式：顯示抽獎控制和結果 */
@@ -266,6 +268,9 @@ export function GachaDrawSection({
                 onShowDetails={handleShowDetails}
               />
             )}
+
+            {/* 抽獎結果底部廣告 */}
+            {gachaResults.length > 0 && <MultiplexAd />}
           </div>
         </>
       )}
