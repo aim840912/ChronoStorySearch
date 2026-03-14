@@ -41,7 +41,6 @@
 |------|------|------|
 | **資料庫** | Supabase (PostgreSQL) | 用戶資料、交易系統、回報系統 |
 | **即時同步** | Supabase Realtime | 跨裝置偏好設定即時同步 |
-| **快取** | Upstash Redis | 伺服器端快取 |
 | **CDN** | Cloudflare R2 | 圖片與 JSON 靜態資源 |
 | **資料驗證** | Zod v4 | Schema 驗證（drops、items、preferences） |
 | **資料取得** | SWR | Client-side 資料快取與請求去重 |
@@ -101,10 +100,8 @@ src/
 ├── contexts/             # 5 個 React Context
 ├── lib/                  # 工具函數與服務層
 │   ├── supabase/         # Supabase 服務（5 個服務模組）
-│   ├── bot-detection/    # Bot 偵測系統
 │   ├── analytics/        # GA4 事件追蹤
 │   ├── ocr/              # OCR 文字辨識
-│   ├── redis/            # Redis 快取
 │   ├── cache/            # 資料快取策略
 │   └── swr/              # SWR 全域配置
 ├── providers/            # SWR Provider
@@ -129,7 +126,7 @@ src/
 | **ISR (Incremental Static Regeneration)** | [V] | 物品/怪物詳細頁 24hr revalidate，Top 50 預渲染 |
 | **Server-side Data Layer** | [V] | `server-data.ts` 統一管理 Server Component 資料抓取 |
 | **Tab Leader Pattern** | [V] | `tab-leader.ts` 實現多分頁協調，避免重複 Realtime 連線 |
-| **Bot Detection System** | [V] | 行為偵測 + User-Agent 分析 + Rate Limiting 三層防護 |
+| **Security Headers** | [V] | X-Content-Type-Options、X-Frame-Options、X-XSS-Protection、Referrer-Policy |
 | **Cache Busting Strategy** | [V] | `r2-versions.json` 版本號管理 CDN 快取失效 |
 | **BaseCard / BaseModal** | [V] | 共用基礎元件，統一卡片和 Modal 樣式 |
 
@@ -212,9 +209,8 @@ src/
 | 實踐 | 信心 | 說明 |
 |------|------|------|
 | [V] **安全標頭** | 高 | X-Content-Type-Options、X-Frame-Options、X-XSS-Protection、Referrer-Policy |
-| [V] **Bot 偵測** | 高 | 三層防護：行為偵測 + UA 分析 + Rate Limiting |
 | [V] **輸入驗證** | 高 | Zod v4 Schema 驗證 |
-| [V] **環境變數** | 高 | Supabase、Redis、R2 金鑰透過環境變數管理 |
+| [V] **環境變數** | 高 | Supabase、R2 金鑰透過環境變數管理 |
 | [V] **dangerouslySetInnerHTML** | 高 | 僅 1 處使用（SW 註冊腳本，安全） |
 
 ---
@@ -255,11 +251,6 @@ src/
 - 使用 Tesseract.js v7 辨識遊戲截圖中的經驗值數字
 - 自動偵測區域 + OCR 信心度顯示 + 歷史紀錄
 
-### 2. 三層 Bot 偵測防護系統
-- **稀有度**: 5 | **展示價值**: 5 | **商業價值**: 5 | **總分: 15**
-- 行為偵測（異常操作模式）+ User-Agent 分析 + 動態 Rate Limiting
-- 自建安全層，不依賴第三方服務
-
 ### 3. Supabase Realtime + Tab Leader 跨裝置同步
 - **稀有度**: 4 | **展示價值**: 5 | **商業價值**: 4 | **總分: 13**
 - 偏好設定即時同步到所有登入裝置
@@ -299,7 +290,7 @@ src/
 
 使用 Next.js 15 (App Router) 搭配 React 19 和 TypeScript 5.9 開發的遊戲資料庫搜尋引擎，
 服務於楓之谷懷舊社群，提供怪物掉落查詢、裝備屬性計算、交易系統等功能。
-後端使用 Supabase (PostgreSQL) + Upstash Redis，搭配 Cloudflare R2 CDN 存放 30,000+ 張遊戲圖片與 JSON 資料。
+後端使用 Supabase (PostgreSQL)，搭配 Cloudflare R2 CDN 存放 30,000+ 張遊戲圖片與 JSON 資料。
 
 技術架構採用 Server/Client Components 混合策略，SEO 頁面使用 ISR (24hr revalidate) 搭配動態 Sitemap。
 整合 Tesseract.js OCR 進行遊戲畫面經驗值辨識、Supabase Realtime 實現跨裝置偏好同步、
@@ -339,7 +330,7 @@ GitHub Actions CI/CD 自動同步資料至 Cloudflare R2。
 | **框架** | Next.js 15 (App Router), React 19 |
 | **語言** | TypeScript 5.9 (strict), HTML5, CSS3 |
 | **樣式** | Tailwind CSS v4 |
-| **資料庫** | Supabase (PostgreSQL), Upstash Redis |
+| **資料庫** | Supabase (PostgreSQL) |
 | **CDN** | Cloudflare R2 |
 | **即時通訊** | Supabase Realtime (WebSocket) |
 | **資料取得** | SWR, fetch (ISR/SSG) |
@@ -354,7 +345,7 @@ GitHub Actions CI/CD 自動同步資料至 Cloudflare R2。
 | **測試** | Playwright (E2E) |
 | **CI/CD** | GitHub Actions, Vercel |
 | **工具** | ESLint 9, Prettier, Turbopack, rclone, Wrangler |
-| **安全** | Bot Detection, Rate Limiting, Security Headers, Zod Validation |
+| **安全** | Security Headers, Zod Validation |
 
 ### 格式 4：面試談話要點（STAR 格式）
 
@@ -428,27 +419,6 @@ GitHub Actions CI/CD 自動同步資料至 Cloudflare R2。
 
 ---
 
-#### 故事 4：三層 Bot 偵測防護
-
-**Situation**: 網站公開 API 和資料，需要防止爬蟲大量抓取消耗資源
-
-**Task**: 在不影響正常用戶體驗的前提下，偵測並限制惡意機器人流量
-
-**Action**:
-- 第一層：User-Agent 分析（`user-agent-detector.ts`），偵測已知爬蟲
-- 第二層：行為偵測（`behavior-detector.ts`），分析請求頻率和操作模式
-- 第三層：動態 Rate Limiting（`rate-limiter.ts`），根據偵測結果調整限流策略
-- 定義常數和型別（`constants.ts`、`types.ts`）確保可維護性
-
-**Result**:
-- 程式碼證據：`src/lib/bot-detection/`（5 個模組）
-- 自建安全層，不依賴第三方付費服務
-
-**可能追問**:
-- 如何區分正常用戶的快速操作和機器人？
-- 誤判率如何監控和調整？
-- 為什麼不直接用 Cloudflare Bot Management？
-
 ### 格式 5：接案提案素材
 
 #### 已驗證的技術能力
@@ -456,14 +426,14 @@ GitHub Actions CI/CD 自動同步資料至 Cloudflare R2。
 | 能力領域 | 驗證 | 專案中的實踐 |
 |----------|------|--------------|
 | 現代前端框架 | [V] | Next.js 15 + React 19，App Router 架構，ISR 靜態生成 |
-| 全端開發 | [V] | Supabase PostgreSQL + Redis 快取 + R2 CDN + Vercel 部署 |
+| 全端開發 | [V] | Supabase PostgreSQL + R2 CDN + Vercel 部署 |
 | TypeScript | [V] | strict mode 全開（5/5），13 個型別定義檔，Zod 驗證 |
 | 響應式設計 | [V] | 320px-1280px+ 全裝置適配，自訂斷點系統 |
 | 國際化 | [V] | 完整 zh-TW/en 雙語切換，1,038 組翻譯鍵值 |
 | SEO 最佳化 | [V] | ISR + 動態 Sitemap + generateMetadata + OG Image |
 | 效能最佳化 | [V] | Service Worker 快取、Turbopack、gzip、懶載入、無限滾動 |
 | 即時功能 | [V] | Supabase Realtime + Tab Leader Pattern 跨裝置同步 |
-| 安全防護 | [V] | 三層 Bot 偵測 + 安全標頭 + Rate Limiting + 輸入驗證 |
+| 安全防護 | [V] | 安全標頭 + Zod 輸入驗證 |
 | CI/CD | [V] | GitHub Actions 自動部署 + R2 資料同步 |
 | AI/ML 整合 | [V] | Tesseract.js OCR 文字辨識 |
 | 廣告變現 | [V] | Google AdSense 5 種格式整合 |

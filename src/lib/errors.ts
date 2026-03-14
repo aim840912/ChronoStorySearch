@@ -147,7 +147,7 @@ export class RateLimitError extends BaseError {
  *
  * @example
  * ```ts
- * throw new DatabaseError('查詢失敗', { service: 'redis' })
+ * throw new DatabaseError('查詢失敗', { service: 'supabase' })
  * ```
  */
 export class DatabaseError extends BaseError {

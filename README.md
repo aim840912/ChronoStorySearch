@@ -28,7 +28,7 @@ A full-stack monster and item drop database for MapleStory, built with Next.js 1
 | Styling | Tailwind CSS 4 |
 | Database | Supabase (PostgreSQL) |
 | Auth | Supabase Auth + Discord OAuth |
-| Cache | Upstash Redis + SWR + LocalStorage |
+| Cache | SWR + LocalStorage |
 | Image CDN | Cloudflare R2 |
 | Hosting | Vercel (Edge Functions) |
 | Analytics | Vercel Analytics + Google Analytics 4 |
@@ -40,30 +40,28 @@ A full-stack monster and item drop database for MapleStory, built with Next.js 1
 ```
 Client Request
     |
-LocalStorage (user prefs, 5 min)
+LocalStorage (user prefs)
     | miss
-SWR (in-memory)
+SWR (in-memory, 60s dedup)
     | miss
-Redis (5-30 min TTL by data type)
+ISR / CDN (Cloudflare R2)
     | miss
 PostgreSQL
 ```
 
 ### Security
 
-- Bot detection with User-Agent filtering + behavioral analysis
-- SEO crawler allowlist (Googlebot, Bingbot, etc.)
-- Rate limiting with Redis Lua scripts (fixed + sliding window)
+- Security headers (X-Content-Type-Options, X-Frame-Options, X-XSS-Protection, Referrer-Policy)
+- Zod input validation on all API routes
 - Quota management via Supabase RPC atomic operations
 
 ### Performance
 
-| Metric | Before | After |
-|--------|--------|-------|
-| API latency (Edge) | 200-300ms | 60-100ms |
-| Cache hit rate | 0% | 65-75% |
-| DB queries | 100% | 60-70% |
-| Monthly cost | $45-65 | $0 (Hobby) |
+| Metric | Value |
+|--------|-------|
+| API latency (Edge) | 60-100ms |
+| SWR dedup window | 60s (reduces redundant API calls) |
+| Monthly cost | $0 (Hobby) |
 
 ## Getting Started
 
@@ -89,7 +87,7 @@ src/
 ├── components/    # React components (gacha, trade, auth, etc.)
 ├── contexts/      # Theme, Language, Auth, Favorites, ImageFormat
 ├── hooks/         # Custom hooks (search, filters, infinite scroll)
-├── lib/           # Utilities (cache, logger, bot-detection, analytics)
+├── lib/           # Utilities (cache, logger, analytics)
 ├── types/         # TypeScript type definitions
 ├── locales/       # i18n translations (zh-TW, en)
 data/              # Static game data (JSON)

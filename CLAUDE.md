@@ -12,7 +12,6 @@
 | **專案名稱** | ChronoStory Search |
 | **技術棧** | Next.js 15 + TypeScript + Tailwind CSS |
 | **資料庫** | Supabase (PostgreSQL) |
-| **快取** | Upstash Redis |
 | **圖片儲存** | Cloudflare R2 CDN |
 | **部署平台** | Vercel |
 | **專案類型** | 全端應用（含 API Routes） |
@@ -214,10 +213,6 @@ randomStats = { base, min: max(0, base-A), max: base+A }
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
 SUPABASE_SERVICE_ROLE_KEY=
-
-# Upstash Redis
-UPSTASH_REDIS_REST_URL=
-UPSTASH_REDIS_REST_TOKEN=
 
 # Cloudflare R2
 R2_ACCESS_KEY_ID=

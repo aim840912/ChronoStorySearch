@@ -8,7 +8,6 @@
  *
  * 優化目標：
  * - 減少 40-50% API 請求（透過前端快取）
- * - 降低 Upstash Redis 使用量
  */
 
 import type { SWRConfiguration } from 'swr'

@@ -74,7 +74,7 @@ GET /guilds/{guild_id}/members/{user_id}
 | Bot 加入目標伺服器 | 需要伺服器管理員權限 |
 | 環境變數 | `DISCORD_BOT_TOKEN`, `DISCORD_GUILD_ID` |
 | 新增 API Route | `/api/discord/check-membership` |
-| 快取機制 | Redis 快取減少 API 呼叫 |
+| 快取機制 | 可選：in-memory 或 Supabase 快取減少 API 呼叫 |
 
 | 優點 | 缺點 |
 |------|------|
@@ -123,8 +123,8 @@ GET /guilds/{guild_id}/members/{user_id}
 |------|--------|---------------------|
 | Discord API 呼叫 | 1,000 次/天 | 100-200 次/天 |
 | API Route 請求 | 1,000 次/天 | 1,000 次/天 |
-| Redis 讀取 | 0 | 800-900 次/天 |
-| Redis 寫入 | 0 | 100-200 次/天 |
+| 快取讀取 | 0 | 800-900 次/天 |
+| 快取寫入 | 0 | 100-200 次/天 |
 
 ### 對現有服務的影響
 
@@ -132,24 +132,23 @@ GET /guilds/{guild_id}/members/{user_id}
 |------|------|----------|
 | Vercel | 新增 API Route 請求 | 免費額度內 |
 | Supabase | 無直接影響 | 無 |
-| Redis (Upstash) | 若使用快取，增加少量讀寫 | 免費額度內 |
 | Discord API | 新增外部 API 呼叫 | 免費 |
 
 ---
 
 ## 建議實作方式
 
-### 推薦：Bot + Redis 快取
+### 推薦：Bot + 快取
 
 ```
 用戶登入
     ↓
-檢查 Redis 快取 (key: discord:member:{user_id}:{guild_id})
+檢查快取 (可用 in-memory 或 Supabase)
     ↓
 ├─ 有快取且未過期 → 直接回傳結果
 └─ 無快取或過期 → 呼叫 Discord API
     ↓
-更新 Redis 快取 (TTL: 5-30 分鐘)
+更新快取 (TTL: 5-30 分鐘)
     ↓
 回傳結果
 ```
@@ -159,7 +158,7 @@ GET /guilds/{guild_id}/members/{user_id}
 | 項目 | 建議值 | 說明 |
 |------|--------|------|
 | TTL | 5-30 分鐘 | 根據即時性需求調整 |
-| Key 格式 | `discord:member:{user_id}:{guild_id}` | 支援多伺服器 |
+| 快取方案 | in-memory Map 或 Supabase | 視流量規模選擇 |
 | 值格式 | `true` / `false` | 簡單布林值 |
 | 失敗處理 | 不快取錯誤 | 避免錯誤結果被快取 |
 
@@ -196,11 +195,13 @@ DISCORD_GUILD_IDS=id1,id2,id3
 // src/app/api/discord/check-membership/route.ts
 import { NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
-import { redis } from '@/lib/redis'
 
 const DISCORD_BOT_TOKEN = process.env.DISCORD_BOT_TOKEN
 const DISCORD_GUILD_ID = process.env.DISCORD_GUILD_ID
-const CACHE_TTL = 300 // 5 分鐘
+
+// 簡易 in-memory 快取（單一 Serverless instance 範圍內有效）
+const cache = new Map<string, { value: boolean; expiresAt: number }>()
+const CACHE_TTL_MS = 5 * 60 * 1000 // 5 分鐘
 
 export async function GET() {
   const supabase = await createClient()
@@ -219,10 +220,10 @@ export async function GET() {
 
   // 檢查快取
   const cacheKey = `discord:member:${discordUserId}:${DISCORD_GUILD_ID}`
-  const cached = await redis.get(cacheKey)
+  const cached = cache.get(cacheKey)
 
-  if (cached !== null) {
-    return NextResponse.json({ isMember: cached === 'true' })
+  if (cached && Date.now() < cached.expiresAt) {
+    return NextResponse.json({ isMember: cached.value })
   }
 
   // 呼叫 Discord API
@@ -238,7 +239,7 @@ export async function GET() {
   const isMember = response.ok
 
   // 更新快取
-  await redis.set(cacheKey, isMember.toString(), { ex: CACHE_TTL })
+  cache.set(cacheKey, { value: isMember, expiresAt: Date.now() + CACHE_TTL_MS })
 
   return NextResponse.json({ isMember })
 }

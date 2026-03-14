@@ -14,7 +14,6 @@
 |------|------|------|
 | SWR 快取策略 | `src/lib/swr/config.ts` | 客戶端請求去重、錯誤重試、60 秒快取視窗 |
 | LocalStorage 管理 | `src/lib/storage.ts` | 收藏、偏好設定、瀏覽紀錄持久化 |
-| 伺服器端快取 | `src/lib/cache/items-cache.ts` | Redis + 記憶體 Map 雙層快取 |
 | 基本 SEO Metadata | `src/app/layout.tsx` | 標題、描述、favicon |
 | 應用程式圖示 | `public/images/chrono.png` | 單一品牌圖示（5.1 KB） |
 
@@ -27,9 +26,7 @@ SWR Cache (60s 去重) ← 客戶端
     ↓
 localStorage (偏好設定) ← 持久化
     ↓
-Server API
-    ↓
-Redis Cache (Upstash)
+Server API / ISR
     ↓
 Database (Supabase)
 ```
