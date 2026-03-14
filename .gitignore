@@ -173,3 +173,6 @@ scripts/*-verify*.json
 # Claude tips (reference files, not project code)
 claude-tip.txt
 claude-tips-zh-tw.md
+
+# Windows crash dumps
+*.stackdump

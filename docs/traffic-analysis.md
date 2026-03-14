@@ -251,7 +251,7 @@ useInterval(() => {
 
 #### F. Edge Caching for Auth
 
-**建議**: 在 Vercel Edge Config 或 Redis 快取 session 驗證結果
+**建議**: 在 Vercel Edge Config 或記憶體快取 session 驗證結果
 - 減少對 Supabase Auth API 的直接調用
 - 適合高流量場景
 
