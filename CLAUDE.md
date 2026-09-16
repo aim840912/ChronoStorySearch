@@ -58,6 +58,8 @@ src/
 └── middleware.ts     # Next.js 中間件
 
 data/                 # 靜態資料 (JSON)
+├── chronostory/      # 遊戲資料主體，會同步到 R2 的 data/ prefix（見下方 GitHub Actions）
+└── *.json            # 本機專屬（R2 圖片清單、版本號等），不上傳
 public/images/        # 本地圖片資源
 ```
 
