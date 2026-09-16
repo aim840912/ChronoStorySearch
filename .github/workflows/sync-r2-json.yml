@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'chronostoryData/**/*.json'
+      - 'data/chronostory/**/*.json'
 
 permissions:
   contents: write
@@ -54,11 +54,11 @@ jobs:
           if [ "${{ github.event.before }}" = "0000000000000000000000000000000000000000" ]; then
             # 新分支的第一次 push，只能比較最新 commit
             echo "First push to branch, comparing HEAD~1"
-            CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- 'chronostoryData/**/*.json' | tr '\n' ' ')
+            CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- 'data/chronostory/**/*.json' | tr '\n' ' ')
           else
             # 正常 push，比較整個範圍（從上次 push 到現在）
             echo "Comparing ${{ github.event.before }}..${{ github.sha }}"
-            CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- 'chronostoryData/**/*.json' | tr '\n' ' ')
+            CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- 'data/chronostory/**/*.json' | tr '\n' ' ')
           fi
           echo "files=$CHANGED_FILES" >> $GITHUB_OUTPUT
           echo "Changed files: $CHANGED_FILES"
@@ -71,8 +71,8 @@ jobs:
           for file in $CHANGED_FILES; do
             if [ -f "$file" ]; then
               # Convert local path to R2 path
-              # chronostoryData/items-organized/equipment/1002004.json -> data/items-organized/equipment/1002004.json
-              R2_PATH=$(echo "$file" | sed 's|^chronostoryData/|data/|')
+              # data/chronostory/items-organized/equipment/1002004.json -> data/items-organized/equipment/1002004.json
+              R2_PATH=$(echo "$file" | sed 's|^data/chronostory/|data/|')
               R2_DIR=$(dirname "$R2_PATH")
 
               echo "Uploading $file to r2:maplestory-images/$R2_PATH"
@@ -96,7 +96,7 @@ jobs:
 
           for (const file of changedFiles) {
             // Parse file path to get category and ID
-            const match = file.match(/chronostoryData\/(items-organized|drops-by-monster|drops-by-item)\/(?:equipment|consumable|etc\/)?(\d+)\.json/);
+            const match = file.match(/data\/chronostory\/(items-organized|drops-by-monster|drops-by-item)\/(?:equipment|consumable|etc\/)?(\d+)\.json/);
             if (!match) continue;
 
             const [, category, id] = match;
