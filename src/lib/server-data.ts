@@ -5,7 +5,7 @@
  * 與 client-side 的 useLazyData.ts hooks 平行，但用純 async 函數實作。
  *
  * 資料來源：
- * - 本地 JSON：chronostoryData/ 下的 index 和 mob-info
+ * - 本地 JSON：data/chronostory/ 下的 index 和 mob-info
  * - R2 CDN：drops-by-monster, drops-by-item, items-organized
  */
 
@@ -29,26 +29,26 @@ import {
 
 /**
  * 讀取怪物索引（用於 generateStaticParams + sitemap）
- * 來源：chronostoryData/monster-index.json
+ * 來源：data/chronostory/monster-index.json
  */
 export async function getMonsterIndex(): Promise<{
   totalMonsters: number
   monsters: MonsterIndexItem[]
 }> {
-  const filePath = path.join(process.cwd(), 'chronostoryData', 'monster-index.json')
+  const filePath = path.join(process.cwd(), 'data', 'chronostory', 'monster-index.json')
   const raw = await fs.readFile(filePath, 'utf-8')
   return JSON.parse(raw)
 }
 
 /**
  * 讀取物品索引（用於 generateStaticParams + sitemap）
- * 來源：chronostoryData/item-index.json
+ * 來源：data/chronostory/item-index.json
  */
 export async function getItemIndex(): Promise<{
   totalItems: number
   items: ItemIndexItem[]
 }> {
-  const filePath = path.join(process.cwd(), 'chronostoryData', 'item-index.json')
+  const filePath = path.join(process.cwd(), 'data', 'chronostory', 'item-index.json')
   const raw = await fs.readFile(filePath, 'utf-8')
   return JSON.parse(raw)
 }
@@ -58,11 +58,11 @@ let mobInfoCache: MobInfo[] | null = null
 
 /**
  * 讀取怪物詳細資訊（用於 MonsterStatsCard）
- * 來源：chronostoryData/mob-info.json（228 筆，整份快取）
+ * 來源：data/chronostory/mob-info.json（228 筆，整份快取）
  */
 async function loadMobInfo(): Promise<MobInfo[]> {
   if (mobInfoCache) return mobInfoCache
-  const filePath = path.join(process.cwd(), 'chronostoryData', 'mob-info.json')
+  const filePath = path.join(process.cwd(), 'data', 'chronostory', 'mob-info.json')
   const raw = await fs.readFile(filePath, 'utf-8')
   mobInfoCache = JSON.parse(raw) as MobInfo[]
   return mobInfoCache
@@ -97,7 +97,7 @@ let gachaCache: RawGachaMachine[] | null = null
 
 async function loadGachaMachines(): Promise<RawGachaMachine[]> {
   if (gachaCache) return gachaCache
-  const dir = path.join(process.cwd(), 'chronostoryData', 'gacha')
+  const dir = path.join(process.cwd(), 'data', 'chronostory', 'gacha')
   const machines: RawGachaMachine[] = []
   for (let i = 1; i <= 8; i++) {
     const raw = await fs.readFile(path.join(dir, `machine-${i}-enhanced.json`), 'utf-8')

@@ -2,8 +2,8 @@
  * 同步 MobStats CSV 資料到 mob-info.json
  *
  * 功能：
- * 1. 讀取 chronostoryData/csv-data/mob-stats.csv（完整資料）
- * 2. 更新 chronostoryData/mob-info.json 中的怪物資料
+ * 1. 讀取 data/chronostory/csv-data/mob-stats.csv（完整資料）
+ * 2. 更新 data/chronostory/mob-info.json 中的怪物資料
  * 3. 保留 JSON 獨有的怪物（如 Amherst Crate）和中文名稱
  * 4. 新增 CSV 有但 JSON 沒有的欄位
  */
@@ -12,8 +12,8 @@ const fs = require('fs');
 const path = require('path');
 
 // 檔案路徑
-const CSV_PATH = path.join(__dirname, '../chronostoryData/csv-data/mob-stats.csv');
-const JSON_PATH = path.join(__dirname, '../chronostoryData/mob-info.json');
+const CSV_PATH = path.join(__dirname, '../data/chronostory/csv-data/mob-stats.csv');
+const JSON_PATH = path.join(__dirname, '../data/chronostory/mob-info.json');
 const OUTPUT_PATH = JSON_PATH; // 直接覆蓋原檔案
 
 // CSV 欄位到 JSON 欄位的對應表

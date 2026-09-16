@@ -6,7 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const CONSUMABLE_DIR = path.join(__dirname, '../chronostoryData/items-organized/consumable');
+const CONSUMABLE_DIR = path.join(__dirname, '../data/chronostory/items-organized/consumable');
 const OUTPUT_FILE = path.join(__dirname, '../docs/consumable-diff-report.md');
 const API_BASE = 'https://chronostory.onrender.com/api/item-info';
 const DELAY_MS = 100;

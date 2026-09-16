@@ -1,8 +1,8 @@
 /**
  * 從地圖資料庫建立怪物出沒地點反向索引
  *
- * 輸入：chronostoryData/map-database/chronostory-map-database.json
- * 輸出：chronostoryData/map-database/monster-spawns.json
+ * 輸入：data/chronostory/map-database/chronostory-map-database.json
+ * 輸出：data/chronostory/map-database/monster-spawns.json
  *
  * 輸出格式：
  * {
@@ -18,8 +18,8 @@ const fs = require('fs')
 const path = require('path')
 
 // 檔案路徑
-const MAP_DATABASE_PATH = path.join(__dirname, '../chronostoryData/map-database/chronostory-map-database.json')
-const OUTPUT_PATH = path.join(__dirname, '../chronostoryData/map-database/monster-spawns.json')
+const MAP_DATABASE_PATH = path.join(__dirname, '../data/chronostory/map-database/chronostory-map-database.json')
+const OUTPUT_PATH = path.join(__dirname, '../data/chronostory/map-database/monster-spawns.json')
 
 /**
  * 檢查地圖是否為隱藏地圖

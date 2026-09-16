@@ -13,7 +13,7 @@ export interface AccuracyCalculatorState {
   selectedMobId: number | null
 }
 
-// 怪物屬性資料類型（來自 chronostoryData/mob-info.json）
+// 怪物屬性資料類型（來自 data/chronostory/mob-info.json）
 export interface MonsterStats {
   id: string                      // was mob_id
   name: string | null             // was mob_name

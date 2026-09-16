@@ -18,7 +18,7 @@ const CHRONOSTORY_API = 'https://chronostory.onrender.com/api/item-info'
 const REQUEST_DELAY_MS = 1500
 
 // 輸出目錄
-const OUTPUT_BASE = path.join(process.cwd(), 'chronostoryData', 'items-organized')
+const OUTPUT_BASE = path.join(process.cwd(), 'data', 'chronostory', 'items-organized')
 
 // 缺少的物品 ID 清單
 const MISSING_EQUIPMENT_IDS = [
@@ -379,7 +379,7 @@ async function main() {
     console.log(allFailed.join(', '))
   }
 
-  console.log('\n📁 輸出目錄: chronostoryData/items-organized/')
+  console.log('\n📁 輸出目錄: data/chronostory/items-organized/')
 }
 
 // 執行

@@ -264,7 +264,7 @@ export interface EnhancedGachaItem {
   }
 }
 
-// ========== Items-Organized JSON 格式（chronostoryData/items-organized/） ==========
+// ========== Items-Organized JSON 格式（data/chronostory/items-organized/） ==========
 
 /**
  * 物品描述資訊
@@ -335,7 +335,7 @@ export interface ItemsOrganizedRandomStat {
 }
 
 /**
- * chronostoryData/items-organized/ 的物品資料格式
+ * data/chronostory/items-organized/ 的物品資料格式
  */
 export interface ItemsOrganizedData {
   id: number

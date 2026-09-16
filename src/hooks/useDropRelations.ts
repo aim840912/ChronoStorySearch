@@ -27,7 +27,7 @@ async function loadDropRelations(): Promise<DropRelations> {
   if (cachedData) return cachedData
 
   if (!loadPromise) {
-    loadPromise = import('@/../chronostoryData/drop-relations.json').then(
+    loadPromise = import('@/../data/chronostory/drop-relations.json').then(
       (module) => {
         cachedData = module.default as DropRelations
         return cachedData
@@ -43,7 +43,7 @@ async function loadScrollNames(): Promise<Map<number, string>> {
   if (scrollNamesMap) return scrollNamesMap
 
   if (!scrollNamesPromise) {
-    scrollNamesPromise = import('@/../chronostoryData/item-index.json').then(
+    scrollNamesPromise = import('@/../data/chronostory/item-index.json').then(
       (module) => {
         const data = module.default as {
           items: Array<{ itemId: number; itemName: string }>

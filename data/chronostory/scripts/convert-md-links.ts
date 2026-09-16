@@ -1,7 +1,7 @@
 /**
  * Markdown 檔案連結轉換腳本
  *
- * 將 chronostoryData/*.md 中的檔案引用（如 `file.json`）
+ * 將 data/chronostory/*.md 中的檔案引用（如 `file.json`）
  * 自動轉換成可點擊的 Markdown 連結
  *
  * 使用方式: npm run convert-md-links
@@ -11,7 +11,8 @@ import * as fs from "fs";
 import * as path from "path";
 
 const CHRONOSTORY_DIR = path.join(__dirname, "..");
-const DATA_DIR = path.join(__dirname, "..", "..", "data");
+// data/chronostory/scripts -> data/  (此腳本搬到 data/ 底下後少跳一層)
+const DATA_DIR = path.join(__dirname, "..", "..");
 
 interface ConversionResult {
   file: string;
@@ -53,7 +54,7 @@ function findFilePath(filename: string, mdFilePath: string): string | null {
 
   // 搜尋順序
   const searchPaths = [
-    // 1. chronostoryData 根目錄
+    // 1. data/chronostory 根目錄
     path.join(CHRONOSTORY_DIR, cleanName),
     // 2. data 根目錄
     path.join(DATA_DIR, cleanName),
@@ -162,7 +163,7 @@ function convertMarkdownFile(filePath: string): ConversionResult {
 function main() {
   console.log("🔗 Markdown 檔案連結轉換工具\n");
 
-  // 找出所有 chronostoryData/*.md 檔案
+  // 找出所有 data/chronostory/*.md 檔案
   const mdFiles = findMarkdownFiles(CHRONOSTORY_DIR);
 
   if (mdFiles.length === 0) {

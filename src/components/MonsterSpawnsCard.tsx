@@ -5,7 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import type { MonsterSpawnLocation } from '@/types/monster'
 
 // 直接 import 預處理的 JSON（build time 產生）
-import monsterSpawnsData from '@/chronostoryData/map-database/monster-spawns.json'
+import monsterSpawnsData from '@/data/chronostory/map-database/monster-spawns.json'
 
 interface MonsterSpawnsCardProps {
   monsterName: string  // 英文怪物名稱（來自 monsterData.mobName）

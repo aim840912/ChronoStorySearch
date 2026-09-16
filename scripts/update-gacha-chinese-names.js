@@ -9,8 +9,8 @@
 const fs = require('fs')
 const path = require('path')
 
-const ITEMS_ORGANIZED_DIR = path.join(__dirname, '../chronostoryData/items-organized')
-const GACHA_DIR = path.join(__dirname, '../chronostoryData/gacha')
+const ITEMS_ORGANIZED_DIR = path.join(__dirname, '../data/chronostory/items-organized')
+const GACHA_DIR = path.join(__dirname, '../data/chronostory/gacha')
 
 /**
  * 從 items-organized 建立 itemId → chineseItemName Map

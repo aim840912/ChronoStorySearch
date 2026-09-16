@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 /**
- * 轉蛋機靜態資料（來自 chronostoryData/gacha/）
+ * 轉蛋機靜態資料（來自 data/chronostory/gacha/）
  */
 const GACHA_MACHINES = [
   { id: 1, zhName: '維多利亞港', enName: 'Lith Harbor' },

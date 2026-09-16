@@ -5,12 +5,12 @@
 const fs = require('fs');
 const path = require('path');
 
-const baseDir = 'chronostoryData/items-organized';
+const baseDir = 'data/chronostory/items-organized';
 const folders = ['equipment', 'consumable', 'etc'];
 const hasChinese = /[\u4e00-\u9fff\u3400-\u4dbf]/;
 
 // 1. 建立 itemId → englishName 對照表
-const itemIndex = JSON.parse(fs.readFileSync('chronostoryData/item-index.json', 'utf8'));
+const itemIndex = JSON.parse(fs.readFileSync('data/chronostory/item-index.json', 'utf8'));
 const englishNameMap = new Map();
 for (const item of itemIndex.items) {
   if (item.itemId !== undefined && item.itemName) {

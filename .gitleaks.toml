@@ -12,7 +12,7 @@ useDefault = true
   paths = [
     '''package-lock\.json''',
     '''data/sheets-public-drop-table\.json''',
-    '''chronostoryData/.*\.json''',
+    '''data/chronostory/.*\.json''',
     '''docs/.*\.md''',
     '''tests/concurrency/README\.md''',
     '''src/locales/.*\.json''',

@@ -14,8 +14,8 @@ import {
   getMonsterDropsUrl,
   getItemDropsUrl,
 } from '@/lib/json-utils'
-import essentialData from '@/../chronostoryData/item-attributes-essential.json'
-import dropRelationsData from '@/../chronostoryData/drop-relations.json'
+import essentialData from '@/../data/chronostory/item-attributes-essential.json'
+import dropRelationsData from '@/../data/chronostory/drop-relations.json'
 
 // ==================== Helper Functions ====================
 
@@ -70,7 +70,7 @@ export function useItemAttributesEssential() {
  * - 每個物品的資料僅 ~1.53 KB
  * - 只在需要時載入，大幅減少流量（94.5% 節省）
  *
- * 資料來源：chronostoryData/items-organized/
+ * 資料來源：data/chronostory/items-organized/
  * - equipment/ → 物品 ID 1xxxxxx
  * - consumable/ → 物品 ID 2xxxxxx
  * - etc/ → 其他物品 ID
@@ -197,7 +197,7 @@ export function useLazyMobInfo() {
       clientLogger.info('開始懶加載怪物資訊資料...')
 
       // 動態 import JSON 資料
-      const dataModule = await import('@/../chronostoryData/mob-info.json')
+      const dataModule = await import('@/../data/chronostory/mob-info.json')
       const mobInfo = dataModule.default as MobInfo[]
 
       setData(mobInfo)
@@ -341,7 +341,7 @@ export function useLazyDropsDetailed(mobId: number | null) {
  * - 每個物品的掉落資料平均 ~2-5 KB
  * - 只在需要時載入，避免載入全部掉落資料
  *
- * 資料來源：chronostoryData/drops-by-item/{itemId}.json
+ * 資料來源：data/chronostory/drops-by-item/{itemId}.json
  *
  * @param itemId - 要載入的物品 ID（null 表示不載入）
  */

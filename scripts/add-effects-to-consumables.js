@@ -9,7 +9,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const CONSUMABLE_DIR = path.join(__dirname, '../chronostoryData/items-organized/consumable')
+const CONSUMABLE_DIR = path.join(__dirname, '../data/chronostory/items-organized/consumable')
 
 /**
  * 解析物品描述中的效果

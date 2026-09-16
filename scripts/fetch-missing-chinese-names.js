@@ -6,7 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const DROPS_DIR = path.join(__dirname, '../chronostoryData/unreleased/drops-by-monster');
+const DROPS_DIR = path.join(__dirname, '../data/chronostory/unreleased/drops-by-monster');
 const API_BASE = 'https://maplestory.io/api/TWMS/230/item';
 const DELAY_MS = 300; // API 請求間隔，避免過度請求
 

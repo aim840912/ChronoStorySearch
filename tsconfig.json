@@ -25,7 +25,7 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@/chronostoryData/*": ["./chronostoryData/*"]
+      "@/data/chronostory/*": ["./data/chronostory/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

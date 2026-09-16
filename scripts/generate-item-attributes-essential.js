@@ -1,5 +1,5 @@
 /**
- * 從 chronostoryData/items-organized/ 產生 item-attributes-essential.json
+ * 從 data/chronostory/items-organized/ 產生 item-attributes-essential.json
  *
  * 使用方式: node scripts/generate-item-attributes-essential.js
  */
@@ -7,12 +7,12 @@
 const fs = require('fs')
 const path = require('path')
 
-const ITEMS_ORGANIZED_DIR = path.join(__dirname, '../chronostoryData/items-organized')
-const OUTPUT_FILE = path.join(__dirname, '../chronostoryData/item-attributes-essential.json')
+const ITEMS_ORGANIZED_DIR = path.join(__dirname, '../data/chronostory/items-organized')
+const OUTPUT_FILE = path.join(__dirname, '../data/chronostory/item-attributes-essential.json')
 
 /**
  * 根據 reqJob 計算 equipment_classes
- * 參考: chronostoryData/REQJOB-REFERENCE.md
+ * 參考: data/chronostory/REQJOB-REFERENCE.md
  */
 function reqJobToClasses(reqJob) {
   // 0 或 -1 都表示全職業可用

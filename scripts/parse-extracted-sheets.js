@@ -6,7 +6,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const OUTPUT_PATH = path.join(__dirname, '../chronostoryData/map-database/chronostory-map-database.json')
+const OUTPUT_PATH = path.join(__dirname, '../data/chronostory/map-database/chronostory-map-database.json')
 
 /**
  * 已知的怪物名稱列表（容易被誤判為地圖的）

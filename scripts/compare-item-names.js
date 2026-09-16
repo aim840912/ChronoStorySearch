@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // 讀取 item-index
-const itemIndex = require('../chronostoryData/item-index.json');
+const itemIndex = require('../data/chronostory/item-index.json');
 
 // 判斷目錄
 function getFolder(itemId) {
@@ -19,7 +19,7 @@ const missingFiles = [];
 // 比對每個物品
 for (const item of itemIndex.items) {
   const folder = getFolder(item.itemId);
-  const filePath = path.join(__dirname, '..', 'chronostoryData', 'items-organized', folder, `${item.itemId}.json`);
+  const filePath = path.join(__dirname, '..', 'data', 'chronostory', 'items-organized', folder, `${item.itemId}.json`);
 
   if (!fs.existsSync(filePath)) {
     missingFiles.push(item.itemId);

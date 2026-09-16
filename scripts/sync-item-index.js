@@ -8,8 +8,8 @@
 const fs = require('fs')
 const path = require('path')
 
-const ITEMS_ORGANIZED_DIR = path.join(__dirname, '../chronostoryData/items-organized')
-const ITEM_INDEX_PATH = path.join(__dirname, '../chronostoryData/item-index.json')
+const ITEMS_ORGANIZED_DIR = path.join(__dirname, '../data/chronostory/items-organized')
+const ITEM_INDEX_PATH = path.join(__dirname, '../data/chronostory/item-index.json')
 
 /**
  * 從 items-organized 讀取所有物品

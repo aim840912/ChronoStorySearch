@@ -9,14 +9,14 @@ const path = require('path');
 // 讀取資料檔案
 const monsterIndex = JSON.parse(
   fs.readFileSync(
-    path.join(__dirname, '../chronostoryData/monster-index.json'),
+    path.join(__dirname, '../data/chronostory/monster-index.json'),
     'utf-8'
   )
 );
 
 const monsterSpawns = JSON.parse(
   fs.readFileSync(
-    path.join(__dirname, '../chronostoryData/map-database/monster-spawns.json'),
+    path.join(__dirname, '../data/chronostory/map-database/monster-spawns.json'),
     'utf-8'
   )
 );

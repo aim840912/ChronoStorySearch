@@ -11,7 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Configuration
-const EQUIPMENT_DIR = path.join(__dirname, '../chronostoryData/items-organized/equipment');
+const EQUIPMENT_DIR = path.join(__dirname, '../data/chronostory/items-organized/equipment');
 const OUTPUT_FILE = path.join(__dirname, '../random-stats-diff.md');
 const API_BASE = 'https://chronostory-pr-9.onrender.com/api/item-info';
 const DELAY_MS = 100; // Delay between API calls

@@ -551,7 +551,7 @@ async function main() {
   const jsonData = generateJSON(rawData);
 
   // 輸出目錄
-  const outputDir = path.join(__dirname, '..', 'chronostoryData', 'map-database');
+  const outputDir = path.join(__dirname, '..', 'data', 'chronostory', 'map-database');
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
   }

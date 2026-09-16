@@ -12,7 +12,7 @@ const path = require('path')
 const SHEETS_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSIUj-72ADgwMqShxt4Dn7OP7dBN54l0wda1IPwlIVTZUN_ZtTlRx5DDidr43VXv2HYQ5RNqccLbbGS/pubhtml'
 
 // 輸出路徑
-const OUTPUT_PATH = path.join(__dirname, '../chronostoryData/map-database/chronostory-map-database.json')
+const OUTPUT_PATH = path.join(__dirname, '../data/chronostory/map-database/chronostory-map-database.json')
 
 // 需要提取的標籤頁
 const SHEET_TABS = [

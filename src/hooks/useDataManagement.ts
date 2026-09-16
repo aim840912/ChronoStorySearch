@@ -17,14 +17,14 @@ import type {
   QuizData,
 } from '@/types'
 import { clientLogger } from '@/lib/logger'
-// 使用 chronostoryData 的索引檔案取代 drops-essential.json（節省 39% 載入大小）
-import monsterIndexData from '@/../chronostoryData/monster-index.json'
-import itemIndexData from '@/../chronostoryData/item-index.json'
-import dropRelationsData from '@/../chronostoryData/drop-relations.json'
-import mobInfoData from '@/../chronostoryData/mob-info.json'
-import itemAttributesEssentialData from '@/../chronostoryData/item-attributes-essential.json'
+// 使用 data/chronostory 的索引檔案取代 drops-essential.json（節省 39% 載入大小）
+import monsterIndexData from '@/../data/chronostory/monster-index.json'
+import itemIndexData from '@/../data/chronostory/item-index.json'
+import dropRelationsData from '@/../data/chronostory/drop-relations.json'
+import mobInfoData from '@/../data/chronostory/mob-info.json'
+import itemAttributesEssentialData from '@/../data/chronostory/item-attributes-essential.json'
 import merchantDropsData from '@/../data/drops-100-percent.json'
-import quizData from '@/../chronostoryData/csv-data/3rd/chronostory-quiz.json'
+import quizData from '@/../data/chronostory/csv-data/3rd/chronostory-quiz.json'
 
 /**
  * Enhanced JSON 的轉蛋機格式
@@ -180,14 +180,14 @@ export function useDataManagement() {
 
       // 使用動態 import 載入所有轉蛋機資料（Enhanced 版本，包含完整物品資料）
       const [m1, m2, m3, m4, m5, m6, m7, m8] = await Promise.all([
-        import('@/../chronostoryData/gacha/machine-1-enhanced.json'),
-        import('@/../chronostoryData/gacha/machine-2-enhanced.json'),
-        import('@/../chronostoryData/gacha/machine-3-enhanced.json'),
-        import('@/../chronostoryData/gacha/machine-4-enhanced.json'),
-        import('@/../chronostoryData/gacha/machine-5-enhanced.json'),
-        import('@/../chronostoryData/gacha/machine-6-enhanced.json'),
-        import('@/../chronostoryData/gacha/machine-7-enhanced.json'),
-        import('@/../chronostoryData/gacha/machine-8-enhanced.json'),
+        import('@/../data/chronostory/gacha/machine-1-enhanced.json'),
+        import('@/../data/chronostory/gacha/machine-2-enhanced.json'),
+        import('@/../data/chronostory/gacha/machine-3-enhanced.json'),
+        import('@/../data/chronostory/gacha/machine-4-enhanced.json'),
+        import('@/../data/chronostory/gacha/machine-5-enhanced.json'),
+        import('@/../data/chronostory/gacha/machine-6-enhanced.json'),
+        import('@/../data/chronostory/gacha/machine-7-enhanced.json'),
+        import('@/../data/chronostory/gacha/machine-8-enhanced.json'),
       ])
 
       // 正規化資料格式以符合 GachaMachine 型別
@@ -388,7 +388,7 @@ export function useDataManagement() {
     return index
   }, [])
 
-  // 怪物索引 Map（從 chronostoryData 載入）
+  // 怪物索引 Map（從 data/chronostory 載入）
   const monsterIndexMap = useMemo(() => {
     const monsterIndex = monsterIndexData as MonsterIndex
     const map = new Map<number, MonsterIndexItem>()
@@ -396,7 +396,7 @@ export function useDataManagement() {
     return map
   }, [])
 
-  // 物品索引 Map（從 chronostoryData 載入）
+  // 物品索引 Map（從 data/chronostory 載入）
   const itemIndexMap = useMemo(() => {
     const itemIndex = itemIndexData as ItemIndex
     const map = new Map<number, ItemIndexItem>()
@@ -423,7 +423,7 @@ export function useDataManagement() {
     mobInfoMap,
     itemAttributesMap,
 
-    // 索引資料（來自 chronostoryData）
+    // 索引資料（來自 data/chronostory）
     monsterIndexMap,
     itemIndexMap,
 

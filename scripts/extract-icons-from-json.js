@@ -9,7 +9,7 @@ const path = require('path')
  */
 
 // 路徑常數
-const EQUIPMENT_DIR = path.join(__dirname, '../chronostoryData/items-organized/equipment')
+const EQUIPMENT_DIR = path.join(__dirname, '../data/chronostory/items-organized/equipment')
 const OUTPUT_DIR = path.join(__dirname, '../public/images/items')
 const AVAILABLE_IMAGES_PATH = path.join(__dirname, '../data/available-images.json')
 

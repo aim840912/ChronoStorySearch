@@ -5,9 +5,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const CONSUMABLE_DIR = path.join(__dirname, '../chronostoryData/items-organized/consumable');
-const DROPS_BY_ITEM_DIR = path.join(__dirname, '../chronostoryData/drops-by-item');
-const DROPS_BY_MONSTER_DIR = path.join(__dirname, '../chronostoryData/drops-by-monster');
+const CONSUMABLE_DIR = path.join(__dirname, '../data/chronostory/items-organized/consumable');
+const DROPS_BY_ITEM_DIR = path.join(__dirname, '../data/chronostory/drops-by-item');
+const DROPS_BY_MONSTER_DIR = path.join(__dirname, '../data/chronostory/drops-by-monster');
 const OUTPUT_FILE = path.join(__dirname, '../docs/consumable-drops-diff-report.md');
 
 function loadConsumableItems() {

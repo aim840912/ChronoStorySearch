@@ -26,7 +26,7 @@
     "vercel:pause": "node scripts/vercel-manage.js pause",
     "vercel:unpause": "node scripts/vercel-manage.js unpause",
     "vercel:status": "node scripts/vercel-manage.js status",
-    "convert-md-links": "npx tsx chronostoryData/scripts/convert-md-links.ts"
+    "convert-md-links": "npx tsx data/chronostory/scripts/convert-md-links.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.8.0",

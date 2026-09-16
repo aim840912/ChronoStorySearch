@@ -15,8 +15,8 @@
 const fs = require('fs')
 const path = require('path')
 
-const CSV_FILE = path.join(__dirname, '../chronostoryData/csv-data/unwelcome-guest-weapons.csv')
-const EQUIPMENT_DIR = path.join(__dirname, '../chronostoryData/items-organized/equipment')
+const CSV_FILE = path.join(__dirname, '../data/chronostory/csv-data/unwelcome-guest-weapons.csv')
+const EQUIPMENT_DIR = path.join(__dirname, '../data/chronostory/items-organized/equipment')
 
 /**
  * 解析 CSV 檔案（簡易解析器，適用於此格式）

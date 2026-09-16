@@ -1,22 +1,22 @@
 /**
- * 從 chronostoryData/gachapon/ 產生 enhanced gacha JSON
+ * 從 data/chronostory/gachapon/ 產生 enhanced gacha JSON
  *
  * 使用方式: node scripts/generate-gacha-enhanced.js
  *
  * 功能：
- * 1. 讀取 chronostoryData/gachapon/*.json (7 個檔案)
- * 2. 讀取 chronostoryData/item-index.json 取得中文名稱
- * 3. 讀取 chronostoryData/item-attributes-essential.json 取得裝備類型
- * 4. 產生 chronostoryData/gacha/machine-{1-7}-enhanced.json
+ * 1. 讀取 data/chronostory/gachapon/*.json (7 個檔案)
+ * 2. 讀取 data/chronostory/item-index.json 取得中文名稱
+ * 3. 讀取 data/chronostory/item-attributes-essential.json 取得裝備類型
+ * 4. 產生 data/chronostory/gacha/machine-{1-7}-enhanced.json
  */
 
 const fs = require('fs')
 const path = require('path')
 
-const GACHAPON_DIR = path.join(__dirname, '../chronostoryData/gachapon')
-const OUTPUT_DIR = path.join(__dirname, '../chronostoryData/gacha')
-const ITEM_INDEX_PATH = path.join(__dirname, '../chronostoryData/item-index.json')
-const ITEM_ATTRIBUTES_PATH = path.join(__dirname, '../chronostoryData/item-attributes-essential.json')
+const GACHAPON_DIR = path.join(__dirname, '../data/chronostory/gachapon')
+const OUTPUT_DIR = path.join(__dirname, '../data/chronostory/gacha')
+const ITEM_INDEX_PATH = path.join(__dirname, '../data/chronostory/item-index.json')
+const ITEM_ATTRIBUTES_PATH = path.join(__dirname, '../data/chronostory/item-attributes-essential.json')
 
 /**
  * 機台對應表

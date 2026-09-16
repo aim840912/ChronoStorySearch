@@ -9,7 +9,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const EQUIPMENT_DIR = path.join(__dirname, '../chronostoryData/items-organized/equipment');
+const EQUIPMENT_DIR = path.join(__dirname, '../data/chronostory/items-organized/equipment');
 
 const FIELD_MAP = {
   str: 'incSTR',

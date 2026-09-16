@@ -9,8 +9,8 @@ import { matchesAllKeywords } from '@/lib/search-utils'
 import type { SuggestionItem, SearchTypeFilter, MonsterIndexItem, ItemIndexItem } from '@/types'
 
 // Same pattern as homepage: direct JSON imports for client-side search index
-import monsterIndexRaw from '@/../chronostoryData/monster-index.json'
-import itemIndexRaw from '@/../chronostoryData/item-index.json'
+import monsterIndexRaw from '@/../data/chronostory/monster-index.json'
+import itemIndexRaw from '@/../data/chronostory/item-index.json'
 
 const monsterIndex = monsterIndexRaw as { totalMonsters: number; monsters: MonsterIndexItem[] }
 const itemIndex = itemIndexRaw as { totalItems: number; items: ItemIndexItem[] }

@@ -11,17 +11,17 @@
  * - 查找效能 O(1)（使用 Map）
  */
 
-import itemsData from '@/../chronostoryData/item-attributes-essential.json'
-// 使用 chronostoryData 的 item-index.json 取代 drops-essential.json
-import itemIndexData from '@/../chronostoryData/item-index.json'
-import gachaMachine1 from '@/../chronostoryData/gacha/machine-1-enhanced.json'
-import gachaMachine2 from '@/../chronostoryData/gacha/machine-2-enhanced.json'
-import gachaMachine3 from '@/../chronostoryData/gacha/machine-3-enhanced.json'
-import gachaMachine4 from '@/../chronostoryData/gacha/machine-4-enhanced.json'
-import gachaMachine5 from '@/../chronostoryData/gacha/machine-5-enhanced.json'
-import gachaMachine6 from '@/../chronostoryData/gacha/machine-6-enhanced.json'
-import gachaMachine7 from '@/../chronostoryData/gacha/machine-7-enhanced.json'
-import gachaMachine8 from '@/../chronostoryData/gacha/machine-8-enhanced.json'
+import itemsData from '@/../data/chronostory/item-attributes-essential.json'
+// 使用 data/chronostory 的 item-index.json 取代 drops-essential.json
+import itemIndexData from '@/../data/chronostory/item-index.json'
+import gachaMachine1 from '@/../data/chronostory/gacha/machine-1-enhanced.json'
+import gachaMachine2 from '@/../data/chronostory/gacha/machine-2-enhanced.json'
+import gachaMachine3 from '@/../data/chronostory/gacha/machine-3-enhanced.json'
+import gachaMachine4 from '@/../data/chronostory/gacha/machine-4-enhanced.json'
+import gachaMachine5 from '@/../data/chronostory/gacha/machine-5-enhanced.json'
+import gachaMachine6 from '@/../data/chronostory/gacha/machine-6-enhanced.json'
+import gachaMachine7 from '@/../data/chronostory/gacha/machine-7-enhanced.json'
+import gachaMachine8 from '@/../data/chronostory/gacha/machine-8-enhanced.json'
 import type { ItemAttributesEssential, GachaMachine, GachaItem, ItemIndex } from '@/types'
 import { apiLogger } from '@/lib/logger'
 

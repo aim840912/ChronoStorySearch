@@ -5,8 +5,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const CONSUMABLE_DIR = path.join(__dirname, '../chronostoryData/items-organized/consumable');
-const CSV_FILE = path.join(__dirname, '../chronostoryData/csv-data/public-drop-table-enabled.csv');
+const CONSUMABLE_DIR = path.join(__dirname, '../data/chronostory/items-organized/consumable');
+const CSV_FILE = path.join(__dirname, '../data/chronostory/csv-data/public-drop-table-enabled.csv');
 const OUTPUT_FILE = path.join(__dirname, '../docs/consumable-csv-diff-report.md');
 
 function parseCSV(content) {

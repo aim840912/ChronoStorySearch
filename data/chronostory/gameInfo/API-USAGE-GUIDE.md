@@ -60,7 +60,7 @@
 | 關鍵字 | 說明 |
 |--------|------|
 | `API 測試 modal` | 使用專案內建的測試工具（非外部 Swagger UI） |
-| `items-organized` | 目標是更新 `chronostoryData/items-organized/` 的 JSON |
+| `items-organized` | 目標是更新 `data/chronostory/items-organized/` 的 JSON |
 | `TWMS` / `GMS` | 指定遊戲區域 |
 | `v217` / `v83` | 指定版本號 |
 

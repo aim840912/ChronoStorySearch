@@ -4,11 +4,11 @@ const path = require('path');
 const baseDir = path.join(__dirname, '..');
 
 // 讀取 monster-index.json
-const monsterIndexPath = path.join(baseDir, 'chronostoryData/monster-index.json');
+const monsterIndexPath = path.join(baseDir, 'data/chronostory/monster-index.json');
 const monsterIndex = JSON.parse(fs.readFileSync(monsterIndexPath, 'utf8'));
 
 // 讀取 mob-info.json 取得 inGame 狀態
-const mobInfoPath = path.join(baseDir, 'chronostoryData/mob-info.json');
+const mobInfoPath = path.join(baseDir, 'data/chronostory/mob-info.json');
 const mobInfo = JSON.parse(fs.readFileSync(mobInfoPath, 'utf8'));
 
 const mobInfoMap = new Map();

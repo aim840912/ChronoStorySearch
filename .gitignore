@@ -162,7 +162,7 @@ learning-notes/
 
 # Auto-generated Claude-mem context files
 src/**/CLAUDE.md
-chronostoryData/**/CLAUDE.md
+data/chronostory/**/CLAUDE.md
 
 # Generated verification and audit reports
 scripts/*-report.json

@@ -144,7 +144,7 @@ git commit -m "chore: sync R2 image manifest"
 
 **JSON 自動同步**（GitHub Actions）：
 
-當 push 到 `main` 分支時，若 `chronostoryData/` 目錄有 JSON 變更：
+當 push 到 `main` 分支時，若 `data/chronostory/` 目錄有 JSON 變更：
 1. 自動上傳變更的 JSON 到 R2
 2. 自動更新 `r2-versions.json` 版本號
 3. 自動 commit 回 repo
