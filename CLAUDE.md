@@ -86,9 +86,12 @@ public/images/        # 本地圖片資源
 
 | 資料類型 | 來源 |
 |---------|------|
-| 怪物資料 | `/data/monsters.json` |
-| 物品資料 | `/data/items.json` |
-| 物品屬性 | `/data/item-attributes-essential.json` |
+| 怪物索引 | `data/chronostory/monster-index.json` |
+| 怪物詳情 | `data/chronostory/mob-info.json` |
+| 物品索引 | `data/chronostory/item-index.json` |
+| 物品屬性 | `data/chronostory/item-attributes-essential.json` |
+| 掉落關聯 | `data/chronostory/drop-relations.json` |
+| 扭蛋機 | `data/chronostory/gacha/machine-{1..8}-enhanced.json` |
 | 圖片資源 | Cloudflare R2 CDN |
 
 ### 響應式設計
