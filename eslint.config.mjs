@@ -37,7 +37,8 @@ const eslintConfig = [
     },
   },
   {
-    files: ["scripts/**/*.js"],
+    // Node CommonJS utility scripts (run with `node`, not bundled)
+    files: ["scripts/**/*.js", "data/**/scripts/**/*.js"],
     rules: {
       "@typescript-eslint/no-require-imports": "off",
     },
