@@ -20,7 +20,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     getItemIndex(),
   ])
 
-  const baseUrl = 'https://chronostorysearch.com'
+  // VERCEL_PROJECT_PRODUCTION_URL = shortest production domain (custom domain if attached,
+  // otherwise *.vercel.app), so the sitemap follows whatever domain production actually uses.
+  const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  const baseUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (productionHost ? `https://${productionHost}` : 'https://chronostorysearch.com')
 
   const staticPages: MetadataRoute.Sitemap = [
     {

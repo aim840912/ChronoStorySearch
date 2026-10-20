@@ -40,7 +40,8 @@ self.addEventListener('fetch', (event) => {
   }
 
   // CDN 圖片 → cache-first（圖片不常變）
-  if (url.hostname === 'cdn.chronostorysearch.com') {
+  // R2 can be served from the custom domain or the bucket's r2.dev URL (domain expires 2026-10-28)
+  if (url.hostname === 'cdn.chronostorysearch.com' || url.hostname.endsWith('.r2.dev')) {
     event.respondWith(
       caches.match(request).then((cached) => {
         if (cached) return cached

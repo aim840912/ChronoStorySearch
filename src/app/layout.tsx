@@ -7,6 +7,9 @@ import { AdSenseScript, AnchorAd } from '@/components/adsense';
 
 import { Agentation } from 'agentation';
 
+const R2_URL = process.env.NEXT_PUBLIC_R2_PUBLIC_URL || "https://cdn.chronostorysearch.com";
+const SITE_ICON = `${R2_URL}/images/chrono.png`;
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,9 +30,9 @@ export const metadata: Metadata = {
     telephone: false,
   },
   icons: {
-    icon: "https://cdn.chronostorysearch.com/images/chrono.png",
-    shortcut: "https://cdn.chronostorysearch.com/images/chrono.png",
-    apple: "https://cdn.chronostorysearch.com/images/chrono.png",
+    icon: SITE_ICON,
+    shortcut: SITE_ICON,
+    apple: SITE_ICON,
   },
   other: {
     'theme-color': '#0a0a0a',

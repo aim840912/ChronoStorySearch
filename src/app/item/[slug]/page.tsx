@@ -17,6 +17,9 @@ import { ThemeToggle } from '@/components/ThemeToggle'
 import { SeoSearchBar } from '@/components/seo/SeoSearchBar'
 import { DisplayAd, MultiplexAd } from '@/components/adsense'
 
+// Single source for image URLs (page body + OG metadata), so switching CDN host is env-only
+const R2_URL = process.env.NEXT_PUBLIC_R2_PUBLIC_URL || 'https://cdn.chronostorysearch.com'
+
 // ISR：每 24 小時 revalidate
 export const revalidate = 86400
 
@@ -60,7 +63,7 @@ export async function generateMetadata({
       description: `Dropped by ${totalMonsters} monsters`,
       images: [
         {
-          url: `https://cdn.chronostorysearch.com/images/items/${itemId}.png`,
+          url: `${R2_URL}/images/items/${itemId}.png`,
           width: 50,
           height: 50,
           alt: itemName,
@@ -103,8 +106,6 @@ export default async function ItemPage({
         .filter(Boolean)
         .join(' > ')
     : null
-
-  const R2_URL = process.env.NEXT_PUBLIC_R2_PUBLIC_URL || 'https://cdn.chronostorysearch.com'
 
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100">
