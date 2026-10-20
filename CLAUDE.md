@@ -12,7 +12,13 @@
 | **專案名稱** | ChronoStory Search |
 | **技術棧** | Next.js 15 + TypeScript + Tailwind CSS |
 | **資料庫** | Supabase (PostgreSQL) |
-| **圖片儲存** | Cloudflare R2 CDN |
+| **圖片儲存** | Cloudflare R2（bucket `maplestory-images`，經 r2.dev 公開網址提供） |
+| **網域** | `chronostorysearch.com` 於 2026-10-28 到期、**不續約**；之後站台只剩 `chrono-story-search.vercel.app` |
+
+> **網域下線後的不變式**（2026-10-20）：
+> - 圖片 / JSON 的網址一律讀 `NEXT_PUBLIC_R2_PUBLIC_URL`（Vercel 已設為 r2.dev），**不要再寫死 `cdn.chronostorysearch.com`** —— 該網址過期後不會報錯，只會靜默破圖
+> - r2.dev 有速率限制、無 CDN 快取，僅適合作品集等級流量；若要恢復正式流量，需重新綁自訂網域
+> - R2 的 CORS 已允許 `chrono-story-search.vercel.app`；換 Vercel 網址時要同步改 R2 CORS
 | **部署平台** | Vercel |
 | **專案類型** | 全端應用（含 API Routes） |
 
@@ -174,7 +180,7 @@ rclone 已安裝於 `~/rclone`，設定檔位於 `~/.config/rclone/rclone.conf`�
 1. 下載正確圖片（例如從 [Hidden Street](https://bc.hidden-street.net)）
 2. 上傳到 R2：`~/rclone copy {file} r2:maplestory-images/images/{type}/ -v`
 3. 更新 `data/r2-versions.json` 版本號（+1 繞過 CDN 快取）
-4. 驗證：`curl -I "https://cdn.chronostorysearch.com/images/{type}/{id}.png?v=NEW"`
+4. 驗證：`curl -I "$NEXT_PUBLIC_R2_PUBLIC_URL/images/{type}/{id}.png?v=NEW"`（r2.dev 網址見 `src/lib/image-utils.ts`）
 5. 提交：`git commit -m "fix: replace broken image {id}"`
 
 **問題排查**：
