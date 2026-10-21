@@ -19,6 +19,7 @@
 > - 圖片 / JSON 的網址一律讀 `NEXT_PUBLIC_R2_PUBLIC_URL`（Vercel 已設為 r2.dev），**不要再寫死 `cdn.chronostorysearch.com`** —— 該網址過期後不會報錯，只會靜默破圖
 > - r2.dev 有速率限制、無 CDN 快取，僅適合作品集等級流量；若要恢復正式流量，需重新綁自訂網域
 > - R2 的 CORS 已允許 `chrono-story-search.vercel.app`；換 Vercel 網址時要同步改 R2 CORS
+> - Supabase Auth → URL Configuration（2026-10-22 改）：Site URL = `https://chrono-story-search.vercel.app`，Redirect URLs 含 `https://chrono-story-search.vercel.app/**`。登入的 `redirectTo` 帶當前網址（`AuthContext.tsx`），**不在允許清單時 Supabase 靜默改跳 Site URL、不報錯** —— 換網址時要同步改這兩項，萬用字元 `/**` 不可省（callback 帶 `?popup=true`）
 | **部署平台** | Vercel |
 | **專案類型** | 全端應用（含 API Routes） |
 
