@@ -173,3 +173,6 @@ claude-tips-zh-tw.md
 
 # Windows crash dumps
 *.stackdump
+
+# npm is the package manager (CI runs npm ci); a second lock file makes lockfile-based detection pick yarn
+yarn.lock
