@@ -7,7 +7,7 @@ import { AdSenseScript, AnchorAd } from '@/components/adsense';
 
 import { Agentation } from 'agentation';
 
-const R2_URL = process.env.NEXT_PUBLIC_R2_PUBLIC_URL || "https://cdn.chronostorysearch.com";
+import { R2_PUBLIC_URL as R2_URL } from "@/lib/r2-url";
 const SITE_ICON = `${R2_URL}/images/chrono.png`;
 
 const geistSans = Geist({

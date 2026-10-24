@@ -12,7 +12,7 @@
 import r2Versions from '@/../data/r2-versions.json'
 
 // Cloudflare R2 Public URL（從環境變數讀取）
-const R2_PUBLIC_URL = process.env.NEXT_PUBLIC_R2_PUBLIC_URL
+import { R2_PUBLIC_URL } from './r2-url'
 
 // R2 資料目錄
 const R2_DATA_PATH = R2_PUBLIC_URL ? `${R2_PUBLIC_URL}/data` : ''
@@ -52,7 +52,7 @@ function getItemFolder(itemId: number): string {
 /**
  * 取得物品詳細資料的 CDN URL
  * @param itemId - 物品 ID
- * @returns CDN URL，如：https://cdn.chronostorysearch.com/data/items-organized/equipment/1472021.json
+ * @returns CDN URL，如：{R2_PUBLIC_URL}/data/items-organized/equipment/1472021.json
  */
 export function getItemDataUrl(itemId: number): string {
   const folder = getItemFolder(itemId)
@@ -63,7 +63,7 @@ export function getItemDataUrl(itemId: number): string {
 /**
  * 取得怪物掉落資料的 CDN URL
  * @param mobId - 怪物 ID
- * @returns CDN URL，如：https://cdn.chronostorysearch.com/data/drops-by-monster/100100.json
+ * @returns CDN URL，如：{R2_PUBLIC_URL}/data/drops-by-monster/100100.json
  */
 export function getMonsterDropsUrl(mobId: number): string {
   const versionQuery = getJsonVersionQuery('drops-by-monster', mobId)
@@ -73,7 +73,7 @@ export function getMonsterDropsUrl(mobId: number): string {
 /**
  * 取得物品掉落來源的 CDN URL
  * @param itemId - 物品 ID
- * @returns CDN URL，如：https://cdn.chronostorysearch.com/data/drops-by-item/4000001.json
+ * @returns CDN URL，如：{R2_PUBLIC_URL}/data/drops-by-item/4000001.json
  */
 export function getItemDropsUrl(itemId: number): string {
   const versionQuery = getJsonVersionQuery('drops-by-item', itemId)

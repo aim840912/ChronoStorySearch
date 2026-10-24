@@ -34,7 +34,7 @@ function getImageVersionQuery(
 }
 
 // Cloudflare R2 Public URL（從環境變數讀取）
-const R2_PUBLIC_URL = process.env.NEXT_PUBLIC_R2_PUBLIC_URL
+import { R2_PUBLIC_URL } from './r2-url'
 
 // 檢查 R2 URL 是否已設置
 if (!R2_PUBLIC_URL) {

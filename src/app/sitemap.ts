@@ -25,7 +25,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL
   const baseUrl =
     process.env.NEXT_PUBLIC_SITE_URL ||
-    (productionHost ? `https://${productionHost}` : 'https://chronostorysearch.com')
+    (productionHost ? `https://${productionHost}` : 'https://chrono-story-search.vercel.app')
 
   const staticPages: MetadataRoute.Sitemap = [
     {

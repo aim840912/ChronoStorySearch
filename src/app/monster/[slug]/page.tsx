@@ -16,7 +16,7 @@ import { SeoSearchBar } from '@/components/seo/SeoSearchBar'
 import { DisplayAd, MultiplexAd } from '@/components/adsense'
 
 // Single source for image URLs (page body + OG metadata), so switching CDN host is env-only
-const R2_URL = process.env.NEXT_PUBLIC_R2_PUBLIC_URL || 'https://cdn.chronostorysearch.com'
+import { R2_PUBLIC_URL as R2_URL } from '@/lib/r2-url'
 
 // ISR：每 24 小時 revalidate
 export const revalidate = 86400
