@@ -21,7 +21,7 @@
 > - R2 的 CORS 已允許 `chrono-story-search.vercel.app`；換 Vercel 網址時要同步改 R2 CORS
 > - Supabase Auth → URL Configuration（2026-10-22 改）：Site URL = `https://chrono-story-search.vercel.app`，Redirect URLs 含 `https://chrono-story-search.vercel.app/**`。登入的 `redirectTo` 帶當前網址（`AuthContext.tsx`），**不在允許清單時 Supabase 靜默改跳 Site URL、不報錯** —— 換網址時要同步改這兩項，萬用字元 `/**` 不可省（callback 帶 `?popup=true`）
 | **部署平台** | Vercel |
-| **專案類型** | 全端應用（含 API Routes） |
+| **專案類型** | 前端為主的 Next.js 應用（僅 `auth/callback` 一個 route handler） |
 
 ---
 
@@ -37,7 +37,7 @@ npm run lint         # ESLint 檢查
 ### 開發伺服器規則
 
 - **假設開發伺服器已在 port 3000 運行**，不要自動執行 `npm run dev`
-- 如需啟動開發伺服器，使用 `/dev` skill（會自動清理佔用的 port）
+- 如需啟動開發伺服器，使用 `/system:preview`（只啟動還沒在跑的服務）
 - 遇到 port 3000 被佔用時，詢問用戶而不是自動清理
 
 ---
@@ -47,8 +47,7 @@ npm run lint         # ESLint 檢查
 ```
 src/
 ├── app/              # Next.js App Router
-│   ├── api/          # API Routes
-│   ├── admin/        # 管理後台
+│   ├── auth/callback/ # Supabase OAuth callback（唯一的 route handler）
 │   └── page.tsx      # 主頁面
 ├── components/       # React 元件
 │   ├── gacha/        # 扭蛋機相關
@@ -61,8 +60,7 @@ src/
 ├── contexts/         # React Context
 ├── types/            # TypeScript 類型定義
 ├── schemas/          # Zod 驗證 Schema
-├── locales/          # i18n 翻譯檔案 (zh-TW, en)
-└── middleware.ts     # Next.js 中間件
+└── locales/          # i18n 翻譯檔案 (zh-TW, en)
 
 data/                 # 靜態資料 (JSON)
 ├── chronostory/      # 遊戲資料主體，會同步到 R2 的 data/ prefix（見下方 GitHub Actions）
@@ -128,7 +126,7 @@ public/images/        # 本地圖片資源
 | `LanguageContext` | 多語系切換 |
 | `ImageFormatContext` | 圖片格式切換 |
 | `ThemeContext` | 深色/淺色主題 |
-| `FavoritesContext` | 收藏功能 |
+| `PreferencesSyncContext` | 登入後把偏好設定同步到雲端（多分頁由 tab leader 協調） |
 
 ---
 
