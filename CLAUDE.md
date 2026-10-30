@@ -13,7 +13,7 @@
 | **技術棧** | Next.js 15 + TypeScript + Tailwind CSS |
 | **資料庫** | Supabase (PostgreSQL) |
 | **圖片儲存** | Cloudflare R2（bucket `maplestory-images`，經 r2.dev 公開網址提供） |
-| **網域** | `chronostorysearch.com` 於 2026-10-28 到期、**不續約**；之後站台只剩 `chrono-story-search.vercel.app` |
+| **網域** | `chronostorysearch.com` 於 2026-10-28 到期、**不續約**，Cloudflare 排定 2026-12-07 刪除（在那之前網域可能仍有回應；registry 的 RDAP 顯示到期日 2027 不代表已續約，以 Cloudflare 通知或 Dashboard 為準）；之後站台只剩 `chrono-story-search.vercel.app` |
 
 > **網域下線後的不變式**（2026-10-20）：
 > - 圖片 / JSON 的網址一律讀 `NEXT_PUBLIC_R2_PUBLIC_URL`（Vercel 已設為 r2.dev），**不要再寫死 `cdn.chronostorysearch.com`** —— 該網址過期後不會報錯，只會靜默破圖
